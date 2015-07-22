@@ -19,9 +19,11 @@ Run the install script without arguments to install in the default location (`/u
 
     ./install.sh /home/my-username
 
-Note this script requires superuser permissions and will prompt for them as needed.
+Note:
 
-Also, if you install to a custom location, you may need to add the `bin`, `include`, and `lib` directories to your `PATH` in order to run cyclone and complete the installation.
+- This script requires superuser permissions and will prompt for them as needed.
+
+- When installing to a custom location, you may need to add the `bin`, `include`, and `lib` directories to your `PATH` in order to run cyclone and complete the installation.
 
 At the moment, Cyclone has only been tested on Linux using GCC. Other platforms may be added in the future.
 
