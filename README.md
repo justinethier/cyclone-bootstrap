@@ -33,9 +33,7 @@ At the moment, Cyclone has only been tested on Linux using GCC. Other platforms 
 
 Documentation
 -------------
-Run the `cyclone` command to compile a single Scheme file, and the `icyc` command to start the interactive interpreter.
-
-For more information about the Scheme language implemented by Cyclone, see the [R<sup>7</sup>RS Scheme Specification](http://trac.sacrideo.us/wg/wiki).
+For more information please return to the main [Cyclone](https://github.com/justinethier/cyclone) page.
 
 License
 -------
