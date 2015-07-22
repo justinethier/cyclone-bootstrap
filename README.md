@@ -1,4 +1,4 @@
-[<img src="docs/images/cyclone-logo-03-header.png" alt="cyclone-scheme">](http://justinethier.github.com/cyclone)
+[<img src="https://raw.githubusercontent.com/justinethier/cyclone/master/docs/images/cyclone-logo-03-header.png" alt="cyclone-scheme">](http://github.com/justinethier/cyclone)
 
 This repository may be used to build and install Cyclone Scheme on a fresh system.
 
