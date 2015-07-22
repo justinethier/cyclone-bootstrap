@@ -2,7 +2,7 @@
 
 This repository contains a copy of Cyclone already compiled to the necessary C code, which may be used to build and install Cyclone Scheme on a fresh system.
 
-Cyclone cannot be built directly on system without Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting).
+Cyclone cannot be built directly on a system that does not have Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting).
 
 Prerequisites
 -------------
