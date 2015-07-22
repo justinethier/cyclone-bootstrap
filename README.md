@@ -1,6 +1,8 @@
 [<img src="https://raw.githubusercontent.com/justinethier/cyclone/master/docs/images/cyclone-logo-03-header.png" alt="cyclone-scheme">](http://github.com/justinethier/cyclone)
 
-The Cyclone Scheme compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting) and is built using a compiled version of itself. This repository contains a copy of Cyclone already compiled to the necessary C code, which may be used to build and install Cyclone Scheme on a fresh system.
+This repository contains a copy of Cyclone already compiled to the necessary C code, which may be used to build and install Cyclone Scheme on a fresh system.
+
+Cyclone cannot be built directly on system without Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting).
 
 Prerequisites
 -------------
