@@ -33,10 +33,11 @@ fi
 
 sudo make $PREFIX install-deps && \
   make $PREFIX libcyclone.a && \
-  sudo make $PREFIX install-libs && \ 
+  sudo make $PREFIX install-libs && \
   make $PREFIX cyclone && \
   sudo make $PREFIX install-cyclone && \
   make $PREFIX icyc && \
   sudo make $PREFIX install-icyc && \
   make $PREFIX unit-tests && \
   sudo make $PREFIX install
+
