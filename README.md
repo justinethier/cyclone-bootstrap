@@ -1,6 +1,6 @@
 [<img src="https://raw.githubusercontent.com/justinethier/cyclone/master/docs/images/cyclone-logo-03-header.png" alt="cyclone-scheme">](http://github.com/justinethier/cyclone)
 
-This repository may be used to build and install Cyclone Scheme on a fresh system.
+The Cyclone Scheme compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting), and requires a fresh copy of itself to compiler. In order to get around that requirement when installing Cyclone for the first time, this repository contains a copy of Cyclone that is already compiled to the necessary C code. This copy may be used to build and install Cyclone Scheme.
 
 Prerequisites
 -------------
@@ -23,7 +23,7 @@ Note:
 
 - This script requires superuser permissions and will prompt for them as needed.
 
-- When installing to a custom location, you may need to add the `bin`, `include`, and `lib` directories to your `PATH` in order to run cyclone and complete the installation.
+- When installing to a custom location, you may need to add the corresponding `bin`, `include`, and `lib` directories to your `PATH` in order to run cyclone and complete the installation.
 
 At the moment, Cyclone has only been tested on Linux using GCC. Other platforms may be added in the future.
 
