@@ -1,6 +1,8 @@
 [<img src="https://raw.githubusercontent.com/justinethier/cyclone/master/docs/images/cyclone-logo-03-header.png" alt="cyclone-scheme">](http://github.com/justinethier/cyclone)
 
-This repository contains a copy of Cyclone already compiled to the necessary C code, which may be used to build and install Cyclone Scheme on a fresh system.
+Cyclone is an experimental Scheme-to-C compiler that uses the [Cheney on the MTA](http://www.pipeline.com/~hbaker1/CheneyMTA.html) technique to implement full tail recursion, continuations, and generational garbage collection.
+
+This repository contains a copy of Cyclone already compiled to C which may be used to build and install Cyclone Scheme on a fresh system.
 
 Cyclone cannot be built directly on a system that does not have Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting).
 
