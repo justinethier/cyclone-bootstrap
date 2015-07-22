@@ -37,7 +37,6 @@ sudo make $PREFIX install-deps && \
   make $PREFIX cyclone && \
   sudo make $PREFIX install-cyclone && \
   make $PREFIX icyc && \
-  sudo make $PREFIX install-icyc && \
-  make $PREFIX unit-tests && \
-  sudo make $PREFIX install
+  sudo make $PREFIX install && \
+  make $PREFIX unit-tests
 
