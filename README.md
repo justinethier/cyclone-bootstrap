@@ -41,4 +41,4 @@ License
 -------
 Copyright (C) 2014 [Justin Ethier](http://github.com/justinethier)
 
-License terms TBD
+Cyclone is available under the [MIT license](http://www.opensource.org/licenses/mit-license.php).
