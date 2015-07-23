@@ -1127,7 +1127,7 @@ return_funcall1(  ((closureN)self_73284)->elts[0],  global_set(__glo__85trace_91
 }
 
 static void __lambda_200(int argc, closure _,object k_7380, object args_737, object cc_127_736) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731192;
 c_731192.tag = closureN_tag;
@@ -1142,7 +1142,7 @@ return_funcall1((closure)&c_731192,  car(args_737));;
 }
 
 static void __lambda_199(int argc, object self_73285, object r_7381) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731194;
 c_731194.tag = closureN_tag;
@@ -1157,7 +1157,7 @@ return_funcall1((closure)&c_731194,  r_7381);;
 }
 
 static void __lambda_198(int argc, object self_73286, object in_91file_738) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731196;
 c_731196.tag = closureN_tag;
@@ -1173,7 +1173,7 @@ return_funcall2(  __glo_read_91file,  &c_731196, in_91file_738);;
 }
 
 static void __lambda_197(int argc, object self_73287, object r_7382) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731198;
 c_731198.tag = closureN_tag;
@@ -1189,7 +1189,7 @@ return_funcall1((closure)&c_731198,  r_7382);;
 }
 
 static void __lambda_196(int argc, object self_73288, object in_91prog_739) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731200;
 c_731200.tag = closureN_tag;
@@ -1206,7 +1206,7 @@ return_funcall1((closure)&c_731200,  car(in_91prog_739));;
 }
 
 static void __lambda_195(int argc, object self_73289, object r_73113) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731202;
 c_731202.tag = closureN_tag;
@@ -1223,7 +1223,7 @@ return_funcall2(  __glo_library_127,  &c_731202, r_73113);;
 }
 
 static void __lambda_194(int argc, object self_73290, object r_73112) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731204;
 c_731204.tag = closureN_tag;
@@ -1240,7 +1240,7 @@ return_funcall2(  __glo_not,  &c_731204, r_73112);;
 }
 
 static void __lambda_193(int argc, object self_73291, object r_7383) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731206;
 c_731206.tag = closureN_tag;
@@ -1257,7 +1257,7 @@ return_funcall1((closure)&c_731206,  r_7383);;
 }
 
 static void __lambda_192(int argc, object self_73292, object program_127_7310) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731208;
 c_731208.tag = closureN_tag;
@@ -1285,7 +1285,7 @@ return_funcall1((closure)&c_731208,  &c_731233);;
 }
 
 static void __lambda_191(int argc, object self_73293, object r_7384) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731235;
 c_731235.tag = closureN_tag;
@@ -1303,7 +1303,7 @@ return_funcall1((closure)&c_731235,  r_7384);;
 }
 
 static void __lambda_190(int argc, object self_73294, object lib_91deps_7311) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731237;
 c_731237.tag = closureN_tag;
@@ -1321,7 +1321,7 @@ return_funcall2(  __glo_basename,  &c_731237, ((closureN)self_73294)->elts[1]);;
 }
 
 static void __lambda_189(int argc, object self_73295, object r_7385) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731239;
 c_731239.tag = closureN_tag;
@@ -1339,7 +1339,7 @@ return_funcall1((closure)&c_731239,  r_7385);;
 }
 
 static void __lambda_188(int argc, object self_73296, object exec_91file_7312) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731241;
 c_731241.tag = closureN_tag;
@@ -1362,7 +1362,7 @@ return_funcall1((closure)&c_731241,  &c_731405);;
 }
 
 static void __lambda_187(int argc, object self_73297, object r_7386) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731243;
 c_731243.tag = closureN_tag;
@@ -1381,7 +1381,7 @@ return_funcall1((closure)&c_731243,  r_7386);;
 }
 
 static void __lambda_186(int argc, object self_73298, object src_91file_7313) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731245;
 c_731245.tag = closureN_tag;
@@ -1411,7 +1411,7 @@ return_funcall1((closure)&c_731245,  &c_731392);;
 }
 
 static void __lambda_185(int argc, object self_73299, object k_73103, object program_7314) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731394;
 c_731394.tag = closureN_tag;
@@ -1437,17 +1437,17 @@ return_funcall1((closure)&c_731394,  &c_731398);;
 }
 
 static void __lambda_184(int argc, object self_73300, object k_73105) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 return_funcall4(  __glo_c_91compile_91and_91emit,  k_73105, ((closureN)self_73300)->elts[1], ((closureN)self_73300)->elts[0], ((closureN)self_73300)->elts[2]);; 
 }
 
 static void __lambda_183(int argc, object self_73301, object r_73104) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 return_funcall3(  __glo_with_91output_91to_91file,  ((closureN)self_73301)->elts[0], ((closureN)self_73301)->elts[1], r_73104);; 
 }
 
 static void __lambda_182(int argc, object self_73302, object r_7387) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731247;
 c_731247.tag = closureN_tag;
@@ -1467,7 +1467,7 @@ return_funcall1((closure)&c_731247,  r_7387);;
 }
 
 static void __lambda_181(int argc, object self_73303, object create_91c_91file_7315) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731249;
 c_731249.tag = closureN_tag;
@@ -1486,7 +1486,7 @@ return_funcall2(  create_91c_91file_7315,  &c_731249, ((closureN)self_73303)->el
 }
 
 static void __lambda_180(int argc, object self_73304, object r_7388) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731251;
 c_731251.tag = closureN_tag;
@@ -1505,7 +1505,7 @@ return_funcall1((closure)&c_731251,  r_7388);;
 }
 
 static void __lambda_179(int argc, object self_73305, object result_7316) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731253;
 c_731253.tag = closureN_tag;
@@ -1524,7 +1524,7 @@ return_funcall0((closure)&c_731253);;
 }
 
 static void __lambda_178(int argc, object self_73306) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73306)->elts[4]) ){ 
   
 closureN_type c_731256;
@@ -1564,7 +1564,7 @@ return_funcall1((closure)&c_731372,  &c_731385);}
 }
 
 static void __lambda_177(int argc, object self_73307, object r_73102) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731374;
 c_731374.tag = closureN_tag;
@@ -1579,7 +1579,7 @@ return_funcall1((closure)&c_731374,  r_73102);;
 }
 
 static void __lambda_176(int argc, object self_73308, object comp_91lib_91cmd_7317) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73308)->elts[0]) ){ 
   
 integer_type c_731380 = Cyc_system(comp_91lib_91cmd_7317);
@@ -1590,7 +1590,7 @@ return_funcall1(  ((closureN)self_73308)->elts[1],  &c_731380);
 }
 
 static void __lambda_175(int argc, object self_73309, object objs_91str_7320, object comp_91prog_91cmd_7319, object comp_91objs_91cmd_7318) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731258;
 c_731258.tag = closureN_tag;
@@ -1612,7 +1612,7 @@ return_funcall1((closure)&c_731258,  &c_731370);;
 }
 
 static void __lambda_174(int argc, object self_73310, object objs_91str_7320) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731260;
 c_731260.tag = closureN_tag;
@@ -1634,7 +1634,7 @@ return_funcall1((closure)&c_731260,  &c_731366);;
 }
 
 static void __lambda_173(int argc, object self_73311, object comp_91prog_91cmd_7319) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731262;
 c_731262.tag = closureN_tag;
@@ -1656,7 +1656,7 @@ return_funcall1((closure)&c_731262,  &c_731362);;
 }
 
 static void __lambda_172(int argc, object self_73312, object comp_91objs_91cmd_7318) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731264;
 c_731264.tag = closureN_tag;
@@ -1677,7 +1677,7 @@ return_funcall0((closure)&c_731264);;
 }
 
 static void __lambda_171(int argc, object self_73313) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731266;
 c_731266.tag = closureN_tag;
@@ -1700,7 +1700,7 @@ return_funcall1((closure)&c_731266,  &c_731349);;
 }
 
 static void __lambda_170(int argc, object self_73314, object k_73100, object i_7321) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731351;
 c_731351.tag = closureN_tag;
@@ -1716,7 +1716,7 @@ return_funcall3(  __glo_lib_117import_91_125filename,  &c_731351, i_7321, &c_731
 }
 
 static void __lambda_169(int argc, object self_73315, object r_73101) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 make_string(c_731357, " ");
 
@@ -1727,7 +1727,7 @@ return_funcall1(  ((closureN)self_73315)->elts[0],  &c_731356);;
 }
 
 static void __lambda_168(int argc, object self_73316, object r_7399) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731268;
 c_731268.tag = closureN_tag;
@@ -1747,7 +1747,7 @@ return_funcall3(  __glo_map,  &c_731268, r_7399, ((closureN)self_73316)->elts[5]
 }
 
 static void __lambda_167(int argc, object self_73317, object r_7398) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731270;
 c_731270.tag = closureN_tag;
@@ -1769,7 +1769,7 @@ return_funcall1((closure)&c_731270,  c_731347);;
 }
 
 static void __lambda_166(int argc, object self_73318, object r_7397) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731272;
 c_731272.tag = closureN_tag;
@@ -1789,7 +1789,7 @@ return_funcall1((closure)&c_731272,  Cyc_set_car(((closureN)self_73318)->elts[5]
 }
 
 static void __lambda_165(int argc, object self_73319, object r_7389) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731274;
 c_731274.tag = closureN_tag;
@@ -1816,7 +1816,7 @@ return_funcall1((closure)&c_731274,  &c_731336);;
 }
 
 static void __lambda_164(int argc, object self_73320, object r_7396) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731276;
 c_731276.tag = closureN_tag;
@@ -1835,7 +1835,7 @@ return_funcall1((closure)&c_731276,  Cyc_set_car(((closureN)self_73320)->elts[2]
 }
 
 static void __lambda_163(int argc, object self_73321, object r_7390) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731278;
 c_731278.tag = closureN_tag;
@@ -1860,7 +1860,7 @@ return_funcall1((closure)&c_731278,  &c_731322);;
 }
 
 static void __lambda_162(int argc, object self_73322, object r_7395) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731280;
 c_731280.tag = closureN_tag;
@@ -1877,7 +1877,7 @@ return_funcall1((closure)&c_731280,  Cyc_set_car(((closureN)self_73322)->elts[1]
 }
 
 static void __lambda_161(int argc, object self_73323, object r_7391) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73323)->elts[0]) ){ 
   
 closureN_type c_731283;
@@ -1909,7 +1909,7 @@ return_funcall0((closure)&c_731306);}
 }
 
 static void __lambda_160(int argc, object self_73324) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731308;
 c_731308.tag = closureN_tag;
@@ -1924,12 +1924,12 @@ return_funcall2(  __glo_write,  &c_731308, cell_get(((closureN)self_73324)->elts
 }
 
 static void __lambda_159(int argc, object self_73325, object r_7394) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 return_funcall2(  __glo_write,  ((closureN)self_73325)->elts[1], cell_get(((closureN)self_73325)->elts[0]));; 
 }
 
 static void __lambda_158(int argc, object self_73326, object r_7393) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731285;
 c_731285.tag = closureN_tag;
@@ -1946,7 +1946,7 @@ return_funcall1((closure)&c_731285,  equalp(&c_731298, r_7393));;
 }
 
 static void __lambda_157(int argc, object self_73327, object r_7392) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, r_7392) ){ 
   
 integer_type c_731290 = Cyc_system(cell_get(((closureN)self_73327)->elts[0]));
@@ -1957,7 +1957,7 @@ return_funcall1(  ((closureN)self_73327)->elts[1],  &c_731290);
 }
 
 static void __lambda_156(int argc, object self_73328, object k_73106) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731210;
 c_731210.tag = closureN_tag;
@@ -1982,7 +1982,7 @@ return_funcall1((closure)&c_731210,  &c_731223);;
 }
 
 static void __lambda_155(int argc, object self_73329, object r_73107) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, r_73107) ){ 
   
 closureN_type c_731225;
@@ -2000,12 +2000,12 @@ return_funcall1((closure)&c_731225,  cdar(((closureN)self_73329)->elts[0]));
 }
 
 static void __lambda_154(int argc, object self_73330, object r_73108) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 return_funcall2(  __glo_lib_117get_91all_91import_91deps,  ((closureN)self_73330)->elts[0], r_73108);; 
 }
 
 static void __lambda_153(int argc, object self_73331, object k_73109) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73331)->elts[1]) ){ 
   
 closureN_type c_731213;
@@ -2024,7 +2024,7 @@ return_funcall1((closure)&c_731213,  quote_import);
 }
 
 static void __lambda_152(int argc, object self_73332, object r_73110) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 
 closureN_type c_731215;
 c_731215.tag = closureN_tag;
@@ -2039,12 +2039,12 @@ return_funcall1((closure)&c_731215,  car(((closureN)self_73332)->elts[0]));;
 }
 
 static void __lambda_151(int argc, object self_73333, object r_73111) {
-  Cyc_st_add("cyclone-self.c:run-compiler");
+  Cyc_st_add("cyclone.c:run-compiler");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73333)->elts[0], ((closureN)self_73333)->elts[1], r_73111);; 
 }
 
 static void __lambda_150(int argc, closure _,object k_73116, object filename_7322) {
-  Cyc_st_add("cyclone-self.c:read-file");
+  Cyc_st_add("cyclone.c:read-file");
 
 closureN_type c_731184;
 c_731184.tag = closureN_tag;
@@ -2061,17 +2061,17 @@ return_funcall1((closure)&c_731184,  &c_731188);;
 }
 
 static void __lambda_149(int argc, object self_73334, object k_73118, object port_7323) {
-  Cyc_st_add("cyclone-self.c:read-file");
+  Cyc_st_add("cyclone.c:read-file");
 return_funcall2(  __glo_read_91all,  k_73118, port_7323);; 
 }
 
 static void __lambda_148(int argc, object self_73335, object r_73117) {
-  Cyc_st_add("cyclone-self.c:read-file");
+  Cyc_st_add("cyclone.c:read-file");
 return_funcall3(  __glo_call_91with_91input_91file,  ((closureN)self_73335)->elts[1], ((closureN)self_73335)->elts[0], r_73117);; 
 }
 
 static void __lambda_147(int argc, closure _,object k_73121, object input_91program_7326, object lib_91deps_7325, object src_91file_7324) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73484;
 c_73484.tag = closureN_tag;
@@ -2089,7 +2089,7 @@ return_funcall1((closure)&c_73484,  &c_731181);;
 }
 
 static void __lambda_146(int argc, object self_73336, object input_91program_7326) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73486;
 c_73486.tag = closureN_tag;
@@ -2106,7 +2106,7 @@ return_funcall7((closure)&c_73486,  boolean_f, boolean_f, boolean_f, boolean_f, 
 }
 
 static void __lambda_145(int argc, object self_73337, object globals_7333, object imported_91vars_7332, object imports_7331, object lib_91exports_7330, object lib_91name_7329, object module_91globals_7328, object program_127_7327) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73488;
 c_73488.tag = closureN_tag;
@@ -2131,7 +2131,7 @@ return_funcall1((closure)&c_73488,  &c_73491);;
 }
 
 static void __lambda_144(int argc, object self_73338, object k_73123, object return_7334) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73493;
 c_73493.tag = closureN_tag;
@@ -2149,7 +2149,7 @@ return_funcall7((closure)&c_73493,  boolean_f, boolean_f, boolean_f, boolean_f, 
 }
 
 static void __lambda_143(int argc, object self_73339, object globals_7341, object module_91globals_7340, object program_127_7339, object imports_7338, object imported_91vars_7337, object lib_91name_7336, object lib_91exports_7335) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73495;
 c_73495.tag = closureN_tag;
@@ -2175,7 +2175,7 @@ return_funcall1((closure)&c_73495,  &c_731178);;
 }
 
 static void __lambda_142(int argc, object self_73340, object globals_7341) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73497;
 c_73497.tag = closureN_tag;
@@ -2201,7 +2201,7 @@ return_funcall1((closure)&c_73497,  &c_731174);;
 }
 
 static void __lambda_141(int argc, object self_73341, object module_91globals_7340) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73499;
 c_73499.tag = closureN_tag;
@@ -2227,7 +2227,7 @@ return_funcall1((closure)&c_73499,  &c_731170);;
 }
 
 static void __lambda_140(int argc, object self_73342, object program_127_7339) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73501;
 c_73501.tag = closureN_tag;
@@ -2253,7 +2253,7 @@ return_funcall1((closure)&c_73501,  &c_731166);;
 }
 
 static void __lambda_139(int argc, object self_73343, object imports_7338) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73503;
 c_73503.tag = closureN_tag;
@@ -2279,7 +2279,7 @@ return_funcall1((closure)&c_73503,  &c_731162);;
 }
 
 static void __lambda_138(int argc, object self_73344, object imported_91vars_7337) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73505;
 c_73505.tag = closureN_tag;
@@ -2305,7 +2305,7 @@ return_funcall1((closure)&c_73505,  &c_731158);;
 }
 
 static void __lambda_137(int argc, object self_73345, object lib_91name_7336) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73507;
 c_73507.tag = closureN_tag;
@@ -2331,7 +2331,7 @@ return_funcall1((closure)&c_73507,  &c_731154);;
 }
 
 static void __lambda_136(int argc, object self_73346, object lib_91exports_7335) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73509;
 c_73509.tag = closureN_tag;
@@ -2356,7 +2356,7 @@ return_funcall1((closure)&c_73509,  nil);;
 }
 
 static void __lambda_135(int argc, object self_73347, object r_73253) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73511;
 c_73511.tag = closureN_tag;
@@ -2381,7 +2381,7 @@ return_funcall1((closure)&c_73511,  Cyc_set_car(((closureN)self_73347)->elts[0],
 }
 
 static void __lambda_134(int argc, object self_73348, object r_73124) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73513;
 c_73513.tag = closureN_tag;
@@ -2406,7 +2406,7 @@ return_funcall1((closure)&c_73513,  nil);;
 }
 
 static void __lambda_133(int argc, object self_73349, object r_73252) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73515;
 c_73515.tag = closureN_tag;
@@ -2431,7 +2431,7 @@ return_funcall1((closure)&c_73515,  Cyc_set_car(((closureN)self_73349)->elts[8],
 }
 
 static void __lambda_132(int argc, object self_73350, object r_73125) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73517;
 c_73517.tag = closureN_tag;
@@ -2456,7 +2456,7 @@ return_funcall1((closure)&c_73517,  Cyc_set_car(((closureN)self_73350)->elts[9],
 }
 
 static void __lambda_131(int argc, object self_73351, object r_73126) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73519;
 c_73519.tag = closureN_tag;
@@ -2481,7 +2481,7 @@ return_funcall1((closure)&c_73519,  nil);;
 }
 
 static void __lambda_130(int argc, object self_73352, object r_73251) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73521;
 c_73521.tag = closureN_tag;
@@ -2506,7 +2506,7 @@ return_funcall1((closure)&c_73521,  Cyc_set_car(((closureN)self_73352)->elts[2],
 }
 
 static void __lambda_129(int argc, object self_73353, object r_73127) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73523;
 c_73523.tag = closureN_tag;
@@ -2531,7 +2531,7 @@ return_funcall1((closure)&c_73523,  nil);;
 }
 
 static void __lambda_128(int argc, object self_73354, object r_73250) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73525;
 c_73525.tag = closureN_tag;
@@ -2556,7 +2556,7 @@ return_funcall1((closure)&c_73525,  Cyc_set_car(((closureN)self_73354)->elts[1],
 }
 
 static void __lambda_127(int argc, object self_73355, object r_73128) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73527;
 c_73527.tag = closureN_tag;
@@ -2581,7 +2581,7 @@ return_funcall1((closure)&c_73527,  nil);;
 }
 
 static void __lambda_126(int argc, object self_73356, object r_73249) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73529;
 c_73529.tag = closureN_tag;
@@ -2606,7 +2606,7 @@ return_funcall1((closure)&c_73529,  Cyc_set_car(((closureN)self_73356)->elts[7],
 }
 
 static void __lambda_125(int argc, object self_73357, object r_73129) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73531;
 c_73531.tag = closureN_tag;
@@ -2631,7 +2631,7 @@ return_funcall1((closure)&c_73531,  nil);;
 }
 
 static void __lambda_124(int argc, object self_73358, object r_73248) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73533;
 c_73533.tag = closureN_tag;
@@ -2656,7 +2656,7 @@ return_funcall1((closure)&c_73533,  Cyc_set_car(((closureN)self_73358)->elts[6],
 }
 
 static void __lambda_123(int argc, object self_73359, object r_73130) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73535;
 c_73535.tag = closureN_tag;
@@ -2681,7 +2681,7 @@ return_funcall2(  __glo_emit,  &c_73535, __glo__85c_91file_91header_91comment_85
 }
 
 static void __lambda_122(int argc, object self_73360, object r_73131) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73537;
 c_73537.tag = closureN_tag;
@@ -2708,7 +2708,7 @@ return_funcall2(  __glo_trace_117info,  &c_73537, &c_731130);;
 }
 
 static void __lambda_121(int argc, object self_73361, object r_73132) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73539;
 c_73539.tag = closureN_tag;
@@ -2733,7 +2733,7 @@ return_funcall2(  __glo_trace_117info,  &c_73539, cell_get(((closureN)self_73361
 }
 
 static void __lambda_120(int argc, object self_73362, object r_73133) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73541;
 c_73541.tag = closureN_tag;
@@ -2771,7 +2771,7 @@ return_funcall1((closure)&c_73541,  &c_73712);;
 }
 
 static void __lambda_119(int argc, object self_73363, object r_73134) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73714;
 c_73714.tag = closureN_tag;
@@ -2798,7 +2798,7 @@ return_funcall2(  __glo_trace_117info,  &c_73714, &c_731126);;
 }
 
 static void __lambda_118(int argc, object self_73364, object r_73135) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73716;
 c_73716.tag = closureN_tag;
@@ -2823,7 +2823,7 @@ return_funcall2(  __glo_trace_117info,  &c_73716, cell_get(((closureN)self_73364
 }
 
 static void __lambda_117(int argc, object self_73365, object r_73136) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73718;
 c_73718.tag = closureN_tag;
@@ -2847,7 +2847,7 @@ return_funcall2(  __glo_lib_117resolve_91imports,  &c_73718, cell_get(((closureN
 }
 
 static void __lambda_116(int argc, object self_73366, object r_73213) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73720;
 c_73720.tag = closureN_tag;
@@ -2871,7 +2871,7 @@ return_funcall1((closure)&c_73720,  Cyc_set_car(((closureN)self_73366)->elts[1],
 }
 
 static void __lambda_115(int argc, object self_73367, object r_73137) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73722;
 c_73722.tag = closureN_tag;
@@ -2897,7 +2897,7 @@ return_funcall2(  __glo_trace_117info,  &c_73722, &c_731116);;
 }
 
 static void __lambda_114(int argc, object self_73368, object r_73138) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73724;
 c_73724.tag = closureN_tag;
@@ -2921,7 +2921,7 @@ return_funcall2(  __glo_trace_117info,  &c_73724, cell_get(((closureN)self_73368
 }
 
 static void __lambda_113(int argc, object self_73369, object r_73139) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73726;
 c_73726.tag = closureN_tag;
@@ -2945,7 +2945,7 @@ return_funcall2(  __glo_expand,  &c_73726, cell_get(((closureN)self_73369)->elts
 }
 
 static void __lambda_112(int argc, object self_73370, object r_73212) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73728;
 c_73728.tag = closureN_tag;
@@ -2969,7 +2969,7 @@ return_funcall1((closure)&c_73728,  Cyc_set_car(((closureN)self_73370)->elts[2],
 }
 
 static void __lambda_111(int argc, object self_73371, object r_73140) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73730;
 c_73730.tag = closureN_tag;
@@ -2995,7 +2995,7 @@ return_funcall2(  __glo_trace_117info,  &c_73730, &c_731106);;
 }
 
 static void __lambda_110(int argc, object self_73372, object r_73141) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73732;
 c_73732.tag = closureN_tag;
@@ -3019,7 +3019,7 @@ return_funcall2(  __glo_trace_117info,  &c_73732, cell_get(((closureN)self_73372
 }
 
 static void __lambda_109(int argc, object self_73373, object r_73142) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73734;
 c_73734.tag = closureN_tag;
@@ -3043,7 +3043,7 @@ return_funcall4(  __glo_isolate_91globals,  &c_73734, cell_get(((closureN)self_7
 }
 
 static void __lambda_108(int argc, object self_73374, object r_73211) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73736;
 c_73736.tag = closureN_tag;
@@ -3067,7 +3067,7 @@ return_funcall1((closure)&c_73736,  Cyc_set_car(((closureN)self_73374)->elts[2],
 }
 
 static void __lambda_107(int argc, object self_73375, object r_73143) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73738;
 c_73738.tag = closureN_tag;
@@ -3101,7 +3101,7 @@ return_funcall1((closure)&c_73738,  &c_73763);;
 }
 
 static void __lambda_106(int argc, object self_73376, object r_73144) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73765;
 c_73765.tag = closureN_tag;
@@ -3127,7 +3127,7 @@ return_funcall2(  __glo_trace_117info,  &c_73765, &c_731090);;
 }
 
 static void __lambda_105(int argc, object self_73377, object r_73145) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73767;
 c_73767.tag = closureN_tag;
@@ -3151,7 +3151,7 @@ return_funcall2(  __glo_trace_117info,  &c_73767, cell_get(((closureN)self_73377
 }
 
 static void __lambda_104(int argc, object self_73378, object r_73146) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73769;
 c_73769.tag = closureN_tag;
@@ -3175,7 +3175,7 @@ return_funcall2(  __glo_global_91vars,  &c_73769, cell_get(((closureN)self_73378
 }
 
 static void __lambda_103(int argc, object self_73379, object r_73205) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73771;
 c_73771.tag = closureN_tag;
@@ -3199,7 +3199,7 @@ return_funcall1((closure)&c_73771,  Cyc_set_car(((closureN)self_73379)->elts[7],
 }
 
 static void __lambda_102(int argc, object self_73380, object r_73147) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73773;
 c_73773.tag = closureN_tag;
@@ -3223,7 +3223,7 @@ return_funcall3(  __glo_append,  &c_73773, cell_get(((closureN)self_73380)->elts
 }
 
 static void __lambda_101(int argc, object self_73381, object r_73204) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73775;
 c_73775.tag = closureN_tag;
@@ -3247,7 +3247,7 @@ return_funcall1((closure)&c_73775,  Cyc_set_car(((closureN)self_73381)->elts[0],
 }
 
 static void __lambda_100(int argc, object self_73382, object r_73148) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73777;
 c_73777.tag = closureN_tag;
@@ -3281,12 +3281,12 @@ return_funcall1((closure)&c_73777,  &c_731066);;
 }
 
 static void __lambda_99(int argc, object self_73383, object k_73203, object expr_7346) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall4(  __glo_alpha_91convert,  k_73203, expr_7346, cell_get(((closureN)self_73383)->elts[0]), ((closureN)self_73383)->elts[1]);; 
 }
 
 static void __lambda_98(int argc, object self_73384, object r_73202) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73779;
 c_73779.tag = closureN_tag;
@@ -3310,7 +3310,7 @@ return_funcall3(  __glo_map,  &c_73779, r_73202, cell_get(((closureN)self_73384)
 }
 
 static void __lambda_97(int argc, object self_73385, object r_73201) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73781;
 c_73781.tag = closureN_tag;
@@ -3334,7 +3334,7 @@ return_funcall1((closure)&c_73781,  Cyc_set_car(((closureN)self_73385)->elts[2],
 }
 
 static void __lambda_96(int argc, object self_73386, object r_73149) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73783;
 c_73783.tag = closureN_tag;
@@ -3360,7 +3360,7 @@ return_funcall2(  __glo_trace_117info,  &c_73783, &c_731059);;
 }
 
 static void __lambda_95(int argc, object self_73387, object r_73150) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73785;
 c_73785.tag = closureN_tag;
@@ -3384,7 +3384,7 @@ return_funcall2(  __glo_trace_117info,  &c_73785, cell_get(((closureN)self_73387
 }
 
 static void __lambda_94(int argc, object self_73388, object r_73151) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73787;
 c_73787.tag = closureN_tag;
@@ -3410,12 +3410,12 @@ return_funcall1((closure)&c_73787,  &c_731054);;
 }
 
 static void __lambda_93(int argc, object self_73389, object k_73200, object expr_7344) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall2(  __glo_cps_91convert,  k_73200, expr_7344);; 
 }
 
 static void __lambda_92(int argc, object self_73390, object r_73199) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73789;
 c_73789.tag = closureN_tag;
@@ -3439,7 +3439,7 @@ return_funcall3(  __glo_map,  &c_73789, r_73199, cell_get(((closureN)self_73390)
 }
 
 static void __lambda_91(int argc, object self_73391, object r_73184) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73791;
 c_73791.tag = closureN_tag;
@@ -3463,7 +3463,7 @@ return_funcall1((closure)&c_73791,  r_73184);;
 }
 
 static void __lambda_90(int argc, object self_73392, object cps_7345) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73793;
 c_73793.tag = closureN_tag;
@@ -3500,7 +3500,7 @@ return_funcall1((closure)&c_73793,  &c_73902);;
 }
 
 static void __lambda_89(int argc, object self_73393, object r_73152) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73904;
 c_73904.tag = closureN_tag;
@@ -3526,7 +3526,7 @@ return_funcall2(  __glo_trace_117info,  &c_73904, &c_731050);;
 }
 
 static void __lambda_88(int argc, object self_73394, object r_73153) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73906;
 c_73906.tag = closureN_tag;
@@ -3550,7 +3550,7 @@ return_funcall2(  __glo_trace_117info,  &c_73906, cell_get(((closureN)self_73394
 }
 
 static void __lambda_87(int argc, object self_73395, object r_73154) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73908;
 c_73908.tag = closureN_tag;
@@ -3583,7 +3583,7 @@ return_funcall1((closure)&c_73908,  &c_731035);;
 }
 
 static void __lambda_86(int argc, object self_73396, object k_73181, object expr_7343) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_731037;
 c_731037.tag = closureN_tag;
@@ -3599,7 +3599,7 @@ return_funcall1(  __glo_clear_91mutables,  &c_731037);;
 }
 
 static void __lambda_85(int argc, object self_73397, object r_73182) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_731039;
 c_731039.tag = closureN_tag;
@@ -3615,12 +3615,12 @@ return_funcall2(  __glo_analyze_91mutable_91variables,  &c_731039, ((closureN)se
 }
 
 static void __lambda_84(int argc, object self_73398, object r_73183) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall3(  __glo_wrap_91mutables,  ((closureN)self_73398)->elts[2], ((closureN)self_73398)->elts[0], cell_get(((closureN)self_73398)->elts[1]));; 
 }
 
 static void __lambda_83(int argc, object self_73399, object r_73180) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73910;
 c_73910.tag = closureN_tag;
@@ -3644,7 +3644,7 @@ return_funcall3(  __glo_map,  &c_73910, r_73180, cell_get(((closureN)self_73399)
 }
 
 static void __lambda_82(int argc, object self_73400, object r_73179) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73912;
 c_73912.tag = closureN_tag;
@@ -3668,7 +3668,7 @@ return_funcall1((closure)&c_73912,  Cyc_set_car(((closureN)self_73400)->elts[2],
 }
 
 static void __lambda_81(int argc, object self_73401, object r_73155) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73914;
 c_73914.tag = closureN_tag;
@@ -3694,7 +3694,7 @@ return_funcall2(  __glo_trace_117info,  &c_73914, &c_731028);;
 }
 
 static void __lambda_80(int argc, object self_73402, object r_73156) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73916;
 c_73916.tag = closureN_tag;
@@ -3718,7 +3718,7 @@ return_funcall2(  __glo_trace_117info,  &c_73916, cell_get(((closureN)self_73402
 }
 
 static void __lambda_79(int argc, object self_73403, object r_73157) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73918;
 c_73918.tag = closureN_tag;
@@ -3750,7 +3750,7 @@ return_funcall1((closure)&c_73918,  &c_73983);;
 }
 
 static void __lambda_78(int argc, object self_73404, object k_73170, object expr_7342) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73985;
 c_73985.tag = closureN_tag;
@@ -3766,7 +3766,7 @@ return_funcall2(  __glo_define_127,  &c_73985, expr_7342);;
 }
 
 static void __lambda_77(int argc, object self_73405, object r_73171) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73171) ){ 
   
 closureN_type c_73987;
@@ -3795,12 +3795,12 @@ return_funcall3(  __glo_closure_91convert,  &c_731016, ((closureN)self_73405)->e
 }
 
 static void __lambda_76(int argc, object self_73406, object r_73178) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73406)->elts[0],  caddr(r_73178));; 
 }
 
 static void __lambda_75(int argc, object self_73407, object r_73172) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73989;
 c_73989.tag = closureN_tag;
@@ -3817,7 +3817,7 @@ return_funcall2(  __glo_define_91_125var,  &c_73989, ((closureN)self_73407)->elt
 }
 
 static void __lambda_74(int argc, object self_73408, object r_73174) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73991;
 c_73991.tag = closureN_tag;
@@ -3834,7 +3834,7 @@ return_funcall2(  __glo_define_91_125exp,  &c_73991, ((closureN)self_73408)->elt
 }
 
 static void __lambda_73(int argc, object self_73409, object r_73177) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73993;
 c_73993.tag = closureN_tag;
@@ -3850,7 +3850,7 @@ return_funcall3(  __glo_closure_91convert,  &c_73993, r_73177, cell_get(((closur
 }
 
 static void __lambda_72(int argc, object self_73410, object r_73176) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73995;
 c_73995.tag = closureN_tag;
@@ -3866,7 +3866,7 @@ return_funcall1((closure)&c_73995,  caddr(r_73176));;
 }
 
 static void __lambda_71(int argc, object self_73411, object r_73175) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73997;
 c_73997.tag = closureN_tag;
@@ -3883,14 +3883,14 @@ return_funcall1((closure)&c_73997,  &c_731006);;
 }
 
 static void __lambda_70(int argc, object self_73412, object r_73173) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 make_cons(c_731002,((closureN)self_73412)->elts[1], r_73173);
 return_funcall1(  ((closureN)self_73412)->elts[0],  &c_731002);; 
 }
 
 static void __lambda_69(int argc, object self_73413, object r_73169) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73920;
 c_73920.tag = closureN_tag;
@@ -3913,7 +3913,7 @@ return_funcall3(  __glo_map,  &c_73920, r_73169, cell_get(((closureN)self_73413)
 }
 
 static void __lambda_68(int argc, object self_73414, object r_73168) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73922;
 c_73922.tag = closureN_tag;
@@ -3936,7 +3936,7 @@ return_funcall1((closure)&c_73922,  Cyc_set_car(((closureN)self_73414)->elts[1],
 }
 
 static void __lambda_67(int argc, object self_73415, object r_73158) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73924;
 c_73924.tag = closureN_tag;
@@ -3961,7 +3961,7 @@ return_funcall2(  __glo_trace_117info,  &c_73924, &c_73976);;
 }
 
 static void __lambda_66(int argc, object self_73416, object r_73159) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73926;
 c_73926.tag = closureN_tag;
@@ -3984,7 +3984,7 @@ return_funcall2(  __glo_trace_117info,  &c_73926, cell_get(((closureN)self_73416
 }
 
 static void __lambda_65(int argc, object self_73417, object r_73160) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 closureN_type c_73942;
 c_73942.tag = closureN_tag;
  c_73942.fn = (function_type)__lambda_64;
@@ -4006,7 +4006,7 @@ return_check1(__lambda_60,&c_73942);;
 }
 
 static void __lambda_64(int argc, object self_73418, object r_73161) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73944;
 c_73944.tag = closureN_tag;
@@ -4031,7 +4031,7 @@ return_funcall2(  __glo_trace_117info,  &c_73944, &c_73972);;
 }
 
 static void __lambda_63(int argc, object self_73419, object r_73162) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73946;
 c_73946.tag = closureN_tag;
@@ -4046,7 +4046,7 @@ return_funcall9(  __glo_mta_117code_91gen,  &c_73946, cell_get(((closureN)self_7
 }
 
 static void __lambda_62(int argc, object self_73420, object r_73163) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73948;
 c_73948.tag = closureN_tag;
@@ -4061,12 +4061,12 @@ return_funcall1((closure)&c_73948,  nil);;
 }
 
 static void __lambda_61(int argc, object self_73421, object r_73164) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall2(  ((closureN)self_73421)->elts[1],  ((closureN)self_73421)->elts[0], r_73164);; 
 }
 
 static void __lambda_60(int argc, closure _,object k_73165) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73929;
 c_73929.tag = closureN_tag;
@@ -4080,7 +4080,7 @@ return_funcall2(  __glo_not,  &c_73929, __glo__85do_91code_91gen_85);;
 }
 
 static void __lambda_59(int argc, object self_73422, object r_73166) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73166) ){ 
   
 closureN_type c_73931;
@@ -4098,7 +4098,7 @@ return_funcall0((closure)&c_73931);
 }
 
 static void __lambda_58(int argc, object self_73423) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73933;
 c_73933.tag = closureN_tag;
@@ -4114,14 +4114,14 @@ return_funcall2(  __glo_trace_117error,  &c_73933, &c_73939);;
 }
 
 static void __lambda_57(int argc, object self_73424, object r_73167) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 make_int(c_73938, 0);
 return_funcall1(  ((closureN)self_73424)->elts[0],  __halt(&c_73938));; 
 }
 
 static void __lambda_56(int argc, object self_73425, object k_73185) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73795;
 c_73795.tag = closureN_tag;
@@ -4148,7 +4148,7 @@ return_funcall1((closure)&c_73795,  &c_73808);;
 }
 
 static void __lambda_55(int argc, object self_73426, object r_73186) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73186) ){ 
   
 closureN_type c_73810;
@@ -4170,7 +4170,7 @@ return_funcall0((closure)&c_73810);
 }
 
 static void __lambda_54(int argc, object self_73427) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73812;
 c_73812.tag = closureN_tag;
@@ -4192,7 +4192,7 @@ return_funcall1((closure)&c_73812,  &c_73894);;
 }
 
 static void __lambda_53(int argc, object self_73428, object r_73196) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73814;
 c_73814.tag = closureN_tag;
@@ -4210,7 +4210,7 @@ return_funcall3(  __glo_append,  &c_73814, r_73196, cell_get(((closureN)self_734
 }
 
 static void __lambda_52(int argc, object self_73429, object r_73195) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73816;
 c_73816.tag = closureN_tag;
@@ -4227,7 +4227,7 @@ return_funcall1((closure)&c_73816,  Cyc_set_car(((closureN)self_73429)->elts[1],
 }
 
 static void __lambda_51(int argc, object self_73430, object r_73187) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73818;
 c_73818.tag = closureN_tag;
@@ -4248,7 +4248,7 @@ return_funcall1((closure)&c_73818,  &c_73886);;
 }
 
 static void __lambda_50(int argc, object self_73431, object r_73194) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73820;
 c_73820.tag = closureN_tag;
@@ -4265,7 +4265,7 @@ return_funcall3(  __glo_append,  &c_73820, r_73194, cell_get(((closureN)self_734
 }
 
 static void __lambda_49(int argc, object self_73432, object r_73193) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73822;
 c_73822.tag = closureN_tag;
@@ -4281,7 +4281,7 @@ return_funcall1((closure)&c_73822,  Cyc_set_car(((closureN)self_73432)->elts[3],
 }
 
 static void __lambda_48(int argc, object self_73433, object r_73188) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73824;
 c_73824.tag = closureN_tag;
@@ -4333,7 +4333,7 @@ return_funcall1((closure)&c_73824,  &c_73862);;
 }
 
 static void __lambda_47(int argc, object self_73434, object r_73190) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73826;
 c_73826.tag = closureN_tag;
@@ -4386,7 +4386,7 @@ return_funcall1((closure)&c_73826,  &c_73844);;
 }
 
 static void __lambda_46(int argc, object self_73435, object r_73192) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73828;
 c_73828.tag = closureN_tag;
@@ -4404,7 +4404,7 @@ return_funcall1((closure)&c_73828,  &c_73842);;
 }
 
 static void __lambda_45(int argc, object self_73436, object r_73191) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73830;
 c_73830.tag = closureN_tag;
@@ -4421,12 +4421,12 @@ return_funcall1((closure)&c_73830,  &c_73838);;
 }
 
 static void __lambda_44(int argc, object self_73437, object r_73189) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73437)->elts[1],  Cyc_set_car(((closureN)self_73437)->elts[0], r_73189));; 
 }
 
 static void __lambda_43(int argc, object self_73438, object k_73197) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, __glo_library_127) ){ 
   
 closureN_type c_73797;
@@ -4449,12 +4449,12 @@ return_funcall1((closure)&c_73797,  &c_73805);
 }
 
 static void __lambda_42(int argc, object self_73439, object r_73198) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73439)->elts[0],  equalp(cell_get(((closureN)self_73439)->elts[1]), r_73198));; 
 }
 
 static void __lambda_41(int argc, object self_73440, object k_73206) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73740;
 c_73740.tag = closureN_tag;
@@ -4470,7 +4470,7 @@ return_funcall1((closure)&c_73740,  quote_eval);;
 }
 
 static void __lambda_40(int argc, object self_73441, object r_73210) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73742;
 c_73742.tag = closureN_tag;
@@ -4486,7 +4486,7 @@ return_funcall3(  __glo_has_91global_127,  &c_73742, cell_get(((closureN)self_73
 }
 
 static void __lambda_39(int argc, object self_73442, object r_73209) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73744;
 c_73744.tag = closureN_tag;
@@ -4502,7 +4502,7 @@ return_funcall2(  __glo_not,  &c_73744, r_73209);;
 }
 
 static void __lambda_38(int argc, object self_73443, object r_73207) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73207) ){ 
   
 closureN_type c_73746;
@@ -4521,12 +4521,12 @@ return_funcall3(  __glo_filter_91unused_91variables,  &c_73746, cell_get(((closu
 }
 
 static void __lambda_37(int argc, object self_73444, object r_73208) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73444)->elts[1],  Cyc_set_car(((closureN)self_73444)->elts[0], r_73208));; 
 }
 
 static void __lambda_36(int argc, object self_73445, object k_73214) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73543;
 c_73543.tag = closureN_tag;
@@ -4545,7 +4545,7 @@ return_funcall1((closure)&c_73543,  car(cell_get(((closureN)self_73445)->elts[1]
 }
 
 static void __lambda_35(int argc, object self_73446, object r_73247) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73545;
 c_73545.tag = closureN_tag;
@@ -4564,7 +4564,7 @@ return_funcall2(  __glo_library_127,  &c_73545, r_73247);;
 }
 
 static void __lambda_34(int argc, object self_73447, object r_73215) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73215) ){ 
   
 closureN_type c_73547;
@@ -4598,7 +4598,7 @@ return_funcall1((closure)&c_73668,  quote_import);}
 }
 
 static void __lambda_33(int argc, object self_73448, object r_73245) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73670;
 c_73670.tag = closureN_tag;
@@ -4615,7 +4615,7 @@ return_funcall1((closure)&c_73670,  car(cell_get(((closureN)self_73448)->elts[1]
 }
 
 static void __lambda_32(int argc, object self_73449, object r_73246) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73672;
 c_73672.tag = closureN_tag;
@@ -4631,7 +4631,7 @@ return_funcall3(  __glo_tagged_91list_127,  &c_73672, ((closureN)self_73449)->el
 }
 
 static void __lambda_31(int argc, object self_73450, object r_73241) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73241) ){ 
   
 closureN_type c_73674;
@@ -4651,7 +4651,7 @@ return_funcall0((closure)&c_73674);
 }
 
 static void __lambda_30(int argc, object self_73451) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73676;
 c_73676.tag = closureN_tag;
@@ -4667,7 +4667,7 @@ return_funcall1((closure)&c_73676,  cdar(cell_get(((closureN)self_73451)->elts[1
 }
 
 static void __lambda_29(int argc, object self_73452, object r_73244) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73678;
 c_73678.tag = closureN_tag;
@@ -4682,7 +4682,7 @@ return_funcall1((closure)&c_73678,  Cyc_set_car(((closureN)self_73452)->elts[0],
 }
 
 static void __lambda_28(int argc, object self_73453, object r_73242) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73680;
 c_73680.tag = closureN_tag;
@@ -4697,12 +4697,12 @@ return_funcall1((closure)&c_73680,  cdr(cell_get(((closureN)self_73453)->elts[0]
 }
 
 static void __lambda_27(int argc, object self_73454, object r_73243) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73454)->elts[1],  Cyc_set_car(((closureN)self_73454)->elts[0], r_73243));; 
 }
 
 static void __lambda_26(int argc, object self_73455, object r_73240) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73549;
 c_73549.tag = closureN_tag;
@@ -4721,7 +4721,7 @@ return_funcall2(  __glo_lib_117includes,  &c_73549, r_73240);;
 }
 
 static void __lambda_25(int argc, object self_73456, object r_73216) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73551;
 c_73551.tag = closureN_tag;
@@ -4740,7 +4740,7 @@ return_funcall1((closure)&c_73551,  r_73216);;
 }
 
 static void __lambda_24(int argc, object self_73457, object includes_7347) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73553;
 c_73553.tag = closureN_tag;
@@ -4759,7 +4759,7 @@ return_funcall1((closure)&c_73553,  Cyc_set_car(((closureN)self_73457)->elts[5],
 }
 
 static void __lambda_23(int argc, object self_73458, object r_73217) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73555;
 c_73555.tag = closureN_tag;
@@ -4778,7 +4778,7 @@ return_funcall1((closure)&c_73555,  car(cell_get(((closureN)self_73458)->elts[2]
 }
 
 static void __lambda_22(int argc, object self_73459, object r_73239) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73557;
 c_73557.tag = closureN_tag;
@@ -4797,7 +4797,7 @@ return_funcall2(  __glo_lib_117name,  &c_73557, r_73239);;
 }
 
 static void __lambda_21(int argc, object self_73460, object r_73238) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73559;
 c_73559.tag = closureN_tag;
@@ -4816,7 +4816,7 @@ return_funcall1((closure)&c_73559,  Cyc_set_car(((closureN)self_73460)->elts[5],
 }
 
 static void __lambda_20(int argc, object self_73461, object r_73218) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73561;
 c_73561.tag = closureN_tag;
@@ -4835,7 +4835,7 @@ return_funcall2(  __glo_lib_117name_91_125symbol,  &c_73561, cell_get(((closureN
 }
 
 static void __lambda_19(int argc, object self_73462, object r_73235) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73563;
 c_73563.tag = closureN_tag;
@@ -4855,7 +4855,7 @@ return_funcall1((closure)&c_73563,  car(cell_get(((closureN)self_73462)->elts[2]
 }
 
 static void __lambda_18(int argc, object self_73463, object r_73237) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73565;
 c_73565.tag = closureN_tag;
@@ -4875,7 +4875,7 @@ return_funcall2(  __glo_lib_117exports,  &c_73565, r_73237);;
 }
 
 static void __lambda_17(int argc, object self_73464, object r_73236) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73567;
 c_73567.tag = closureN_tag;
@@ -4896,7 +4896,7 @@ return_funcall1((closure)&c_73567,  &c_73641);;
 }
 
 static void __lambda_16(int argc, object self_73465, object r_73234) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73569;
 c_73569.tag = closureN_tag;
@@ -4914,7 +4914,7 @@ return_funcall1((closure)&c_73569,  Cyc_set_car(((closureN)self_73465)->elts[4],
 }
 
 static void __lambda_15(int argc, object self_73466, object r_73219) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73571;
 c_73571.tag = closureN_tag;
@@ -4932,7 +4932,7 @@ return_funcall1((closure)&c_73571,  car(cell_get(((closureN)self_73466)->elts[2]
 }
 
 static void __lambda_14(int argc, object self_73467, object r_73233) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73573;
 c_73573.tag = closureN_tag;
@@ -4950,7 +4950,7 @@ return_funcall2(  __glo_lib_117imports,  &c_73573, r_73233);;
 }
 
 static void __lambda_13(int argc, object self_73468, object r_73232) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73575;
 c_73575.tag = closureN_tag;
@@ -4967,7 +4967,7 @@ return_funcall1((closure)&c_73575,  Cyc_set_car(((closureN)self_73468)->elts[0],
 }
 
 static void __lambda_12(int argc, object self_73469, object r_73220) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73577;
 c_73577.tag = closureN_tag;
@@ -4984,7 +4984,7 @@ return_funcall1((closure)&c_73577,  car(cell_get(((closureN)self_73469)->elts[1]
 }
 
 static void __lambda_11(int argc, object self_73470, object r_73231) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73579;
 c_73579.tag = closureN_tag;
@@ -5001,7 +5001,7 @@ return_funcall2(  __glo_lib_117body,  &c_73579, r_73231);;
 }
 
 static void __lambda_10(int argc, object self_73471, object r_73230) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73581;
 c_73581.tag = closureN_tag;
@@ -5018,7 +5018,7 @@ return_funcall1((closure)&c_73581,  Cyc_set_car(((closureN)self_73471)->elts[1],
 }
 
 static void __lambda_9(int argc, object self_73472, object r_73221) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73583;
 c_73583.tag = closureN_tag;
@@ -5035,7 +5035,7 @@ return_funcall1((closure)&c_73583,  Cyc_is_null(((closureN)self_73472)->elts[0])
 }
 
 static void __lambda_8(int argc, object self_73473, object r_73229) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73585;
 c_73585.tag = closureN_tag;
@@ -5052,7 +5052,7 @@ return_funcall2(  __glo_not,  &c_73585, r_73229);;
 }
 
 static void __lambda_7(int argc, object self_73474, object r_73222) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 if( !eq(boolean_f, r_73222) ){ 
   
 closureN_type c_73587;
@@ -5081,7 +5081,7 @@ return_funcall1((closure)&c_73587,  &c_73591);
 }
 
 static void __lambda_6(int argc, object self_73475, object k_73224, object include_7348) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73593;
 c_73593.tag = closureN_tag;
@@ -5097,7 +5097,7 @@ return_funcall2(  __glo_lib_117import_91_125path,  &c_73593, cell_get(((closureN
 }
 
 static void __lambda_5(int argc, object self_73476, object r_73228) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73595;
 c_73595.tag = closureN_tag;
@@ -5114,7 +5114,7 @@ return_funcall1((closure)&c_73595,  &c_73610);;
 }
 
 static void __lambda_4(int argc, object self_73477, object r_73227) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73597;
 c_73597.tag = closureN_tag;
@@ -5129,7 +5129,7 @@ return_funcall2(  __glo_read_91file,  &c_73597, r_73227);;
 }
 
 static void __lambda_3(int argc, object self_73478, object r_73226) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 
 closureN_type c_73599;
 c_73599.tag = closureN_tag;
@@ -5144,17 +5144,17 @@ return_funcall3(  __glo_append,  &c_73599, r_73226, cell_get(((closureN)self_734
 }
 
 static void __lambda_2(int argc, object self_73479, object r_73225) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall1(  ((closureN)self_73479)->elts[1],  Cyc_set_car(((closureN)self_73479)->elts[0], r_73225));; 
 }
 
 static void __lambda_1(int argc, object self_73480, object r_73223) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall3(  __glo_for_91each,  ((closureN)self_73480)->elts[1], r_73223, ((closureN)self_73480)->elts[0]);; 
 }
 
 static void __lambda_0(int argc, object self_73481, object r_73122) {
-  Cyc_st_add("cyclone-self.c:c-compile-and-emit");
+  Cyc_st_add("cyclone.c:c-compile-and-emit");
 return_funcall2(  __glo_call_95cc,  ((closureN)self_73481)->elts[0], r_73122);; 
 }
 
