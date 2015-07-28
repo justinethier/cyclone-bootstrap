@@ -9,6 +9,33 @@
 #ifndef CYCLONE_RUNTIME_H
 #define CYCLONE_RUNTIME_H
 
+/* Error checking definitions */
+#define Cyc_check_num_args(fnc_name, num_args, args) { \
+  integer_type l = Cyc_length(args); \
+  if (num_args > l.value) { \
+    char buf[128]; \
+    snprintf(buf, 127, "Expected %d arguments but received %d.", num_args, l.value);  \
+    Cyc_rt_raise_msg(buf); \
+  } \
+}
+
+#define Cyc_check_type(fnc_test, tag, obj) { \
+  if (eq(boolean_f, fnc_test(obj))) Cyc_invalid_type_error(tag, obj); }
+
+#define Cyc_check_cons_or_nil(obj) { if (!nullp(obj)) { Cyc_check_cons(obj); }}
+#define Cyc_check_cons(obj) Cyc_check_type(Cyc_is_cons, cons_tag, obj);
+#define Cyc_check_num(obj) Cyc_check_type(Cyc_is_number, integer_tag, obj);
+#define Cyc_check_int(obj) Cyc_check_type(Cyc_is_integer, integer_tag, obj);
+#define Cyc_check_str(obj) Cyc_check_type(Cyc_is_string, string_tag, obj);
+#define Cyc_check_sym(obj) Cyc_check_type(Cyc_is_symbol, symbol_tag, obj);
+#define Cyc_check_vec(obj) Cyc_check_type(Cyc_is_vector, vector_tag, obj);
+#define Cyc_check_port(obj) Cyc_check_type(Cyc_is_port, port_tag, obj);
+#define Cyc_check_fnc(obj) Cyc_check_type(Cyc_is_procedure, closure2_tag, obj);
+void Cyc_invalid_type_error(int tag, object found);
+void Cyc_check_obj(int tag, object obj);
+void Cyc_check_bounds(const char *label, int len, int index);
+/* END error checking */
+
 extern long global_stack_size;
 extern long global_heap_size;
 extern const object Cyc_EOF;
@@ -181,8 +208,11 @@ void do_dispatch(int argc, function_type func, object clo, object *buffer);
 
 // Note: below is OK since alloca memory is not freed until function exits
 #define string2list(c,s) object c = nil; { \
-  char *str = ((string_type *)s)->str; \
-  int len = strlen(str); \
+  char *str; \
+  int len; \
+  Cyc_check_str(s); \
+  str = ((string_type *)s)->str; \
+  len = strlen(str); \
   cons_type *buf; \
   if (len > 0) { \
       buf = alloca(sizeof(cons_type) * len); \
@@ -192,7 +222,9 @@ void do_dispatch(int argc, function_type func, object clo, object *buffer);
 }
 
 #define list2vector(v, l) object v = nil; { \
-  integer_type len = Cyc_length(l); \
+  integer_type len; \
+  Cyc_check_cons_or_nil(l); \
+  len = Cyc_length(l); \
   v = alloca(sizeof(vector_type)); \
   ((vector)v)->tag = vector_tag; \
   ((vector)v)->num_elt = len.value; \
@@ -206,6 +238,7 @@ void do_dispatch(int argc, function_type func, object clo, object *buffer);
 }
 
 #define make_vector(v, len, fill) object v = nil; { \
+ Cyc_check_int(len); \
  v = alloca(sizeof(vector_type)); \
  ((vector)v)->tag = vector_tag; \
  ((vector)v)->num_elt = ((integer_type *)len)->value; \

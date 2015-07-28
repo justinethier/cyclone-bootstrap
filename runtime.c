@@ -9,15 +9,51 @@
 #include "cyclone/types.h"
 #include "cyclone/runtime.h"
 
-/* TODO: working on validation for applying functions */
-#define Cyc_check_num_args(fnc_name, num_args, args) { \
-  integer_type l = Cyc_length(args); \
-  if (num_args > l.value) { \
-    char buf[128]; \
-    snprintf(buf, 127, "Expected %d arguments but received %d.", num_args, l.value);  \
-    Cyc_rt_raise_msg(buf); \
-  } \
+/* Error checking section - type mismatch, num args, etc */
+/* Type names to use for error messages */
+const char *tag_names[20] = { \
+   "pair" \
+ , "symbol" \
+ , "" \
+ , "procedure" \
+ , "procedure" \
+ , "procedure" \
+ , "procedure" \
+ , "procedure" \
+ , "procedure" \
+ , "number" \
+ , "number" \
+ , "string" \
+ , "primitive" \
+ , "eof" \
+ , "port" \
+ , "boolean" \
+ , "C primitive" \
+ , "vector" \
+ , "TODO: add missing type" \
+ , "TODO: add missing type" };
+
+void Cyc_invalid_type_error(int tag, object found) {
+  char buf[256];
+  snprintf(buf, 255, "Invalid type: expected %s, found", tag_names[tag]);
+  Cyc_rt_raise2(buf, found);
 }
+
+void Cyc_check_obj(int tag, object obj) {
+  if (!is_object_type(obj)) {
+    Cyc_invalid_type_error(tag, obj);
+  }
+}
+
+void Cyc_check_bounds(const char *label, int len, int index) {
+  if (index < 0 || index >= len) {
+    char buf[128];
+    snprintf(buf, 127, "%s - invalid index %d", label, index);
+    Cyc_rt_raise_msg(buf);
+  }
+}
+
+/* END error checking */
 
 /* Funcall section, these are hardcoded here to support
    functions in this module. */
@@ -553,11 +589,13 @@ object Cyc_write_char(object c, object port)
 
 // TODO: should not be a predicate, may end up moving these to Scheme code
 object memberp(x,l) object x; list l;
-{for (; !nullp(l); l = cdr(l)) if (boolean_f != equalp(x,car(l))) return boolean_t;
+{Cyc_check_cons_or_nil(l);
+ for (; !nullp(l); l = cdr(l)) if (boolean_f != equalp(x,car(l))) return boolean_t;
  return boolean_f;}
 
 object memqp(x,l) object x; list l;
-{for (; !nullp(l); l = cdr(l)) if (eq(x,car(l))) return boolean_t;
+{Cyc_check_cons_or_nil(l);
+ for (; !nullp(l); l = cdr(l)) if (eq(x,car(l))) return boolean_t;
  return boolean_f;}
 
 object get(x,i) object x,i;
@@ -579,45 +617,55 @@ object equalp(x,y) object x,y;
     if (boolean_f == equalp(car(x),car(y))) return boolean_f;}}
 
 list assq(x,l) object x; list l;
-{for (; !nullp(l); l = cdr(l))
-   {register list la = car(l); if (eq(x,car(la))) return la;}
+{if (nullp(l) || is_value_type(l) || type_of(l) != cons_tag) return boolean_f;
+ for (; !nullp(l); l = cdr(l))
+   {register list la = car(l); 
+    Cyc_check_cons(la);
+    if (eq(x,car(la))) return la;}
  return boolean_f;}
 
 list assoc(x,l) object x; list l;
 {if (nullp(l) || is_value_type(l) || type_of(l) != cons_tag) return boolean_f;
  for (; !nullp(l); l = cdr(l))
-   {register list la = car(l); if (boolean_f != equalp(x,car(la))) return la;}
+   {register list la = car(l); 
+    Cyc_check_cons(la);
+    if (boolean_f != equalp(x,car(la))) return la;}
  return boolean_f;}
 
 
 // TODO: generate these using macros???
 object __num_eq(x, y) object x, y;
-{if (x && y && ((integer_type *)x)->value == ((integer_type *)y)->value)
+{Cyc_check_num(x);
+ Cyc_check_num(y);
+ if (((integer_type *)x)->value == ((integer_type *)y)->value)
     return boolean_t;
  return boolean_f;}
 
 object __num_gt(x, y) object x, y;
-{//printf("DEBUG cmp %d, x %d, y %d, x tag %d, y tag %d\n", 
- //   (((integer_type *)x)->value > ((integer_type *)y)->value),
- //   ((integer_type *)x)->value, ((integer_type *)y)->value,
- //   ((list)x)->tag, ((list)y)->tag);
- //exit(1);
+{Cyc_check_num(x);
+ Cyc_check_num(y);
  if (((integer_type *)x)->value > ((integer_type *)y)->value)
     return boolean_t;
  return boolean_f;}
 
 object __num_lt(x, y) object x, y;
-{if (((integer_type *)x)->value < ((integer_type *)y)->value)
+{Cyc_check_num(x);
+ Cyc_check_num(y);
+ if (((integer_type *)x)->value < ((integer_type *)y)->value)
     return boolean_t;
  return boolean_f;}
 
 object __num_gte(x, y) object x, y;
-{if (((integer_type *)x)->value >= ((integer_type *)y)->value)
+{Cyc_check_num(x);
+ Cyc_check_num(y);
+ if (((integer_type *)x)->value >= ((integer_type *)y)->value)
     return boolean_t;
  return boolean_f;}
 
 object __num_lte(x, y) object x, y;
-{if (((integer_type *)x)->value <= ((integer_type *)y)->value)
+{Cyc_check_num(x);
+ Cyc_check_num(y);
+ if (((integer_type *)x)->value <= ((integer_type *)y)->value)
     return boolean_t;
  return boolean_f;}
 
@@ -713,20 +761,29 @@ object Cyc_eq(object x, object y) {
 }
 
 object Cyc_set_car(object l, object val) {
+    if (Cyc_is_cons(l) == boolean_f) Cyc_invalid_type_error(cons_tag, l);
     car(l) = val;
     add_mutation(l, val);
     return l;
 }
 
 object Cyc_set_cdr(object l, object val) {
+    if (Cyc_is_cons(l) == boolean_f) Cyc_invalid_type_error(cons_tag, l);
     cdr(l) = val;
     add_mutation(l, val);
     return l;
 }
 
 object Cyc_vector_set(object v, object k, object obj) {
-  // TODO: bounds checking? do eventually need to figure out where that should go
-  int idx = ((integer_type *)k)->value;
+  int idx;
+  Cyc_check_vec(v);
+  Cyc_check_int(k);
+  idx = ((integer_type *)k)->value;
+
+  if (idx < 0 || idx >= ((vector)v)->num_elt) {
+    Cyc_rt_raise2("vector-set! - invalid index", k);
+  }
+
   ((vector)v)->elts[idx] = obj;
   // TODO: probably could be more efficient here and also pass
   //       index, so only that one entry needs GC.
@@ -735,14 +792,17 @@ object Cyc_vector_set(object v, object k, object obj) {
 }
 
 object Cyc_vector_ref(object v, object k) {
-    if (nullp(v) || is_value_type(v) || ((list)v)->tag != vector_tag) {
-      Cyc_rt_raise_msg("vector-ref - invalid parameter, expected vector\n"); 
-    }
-    if (nullp(k) || is_value_type(k) || ((list)k)->tag != integer_tag) {
-      Cyc_rt_raise_msg("vector-ref - invalid parameter, expected integer\n"); 
-    }
+  if (nullp(v) || is_value_type(v) || ((list)v)->tag != vector_tag) {
+    Cyc_rt_raise_msg("vector-ref - invalid parameter, expected vector\n"); 
+  }
+  if (nullp(k) || is_value_type(k) || ((list)k)->tag != integer_tag) {
+    Cyc_rt_raise_msg("vector-ref - invalid parameter, expected integer\n"); 
+  }
+  if (integer_value(k) < 0 || integer_value(k) >= ((vector)v)->num_elt) {
+    Cyc_rt_raise2("vector-ref - invalid index", k);
+  }
 
-    return ((vector)v)->elts[((integer_type *)k)->value];
+  return ((vector)v)->elts[((integer_type *)k)->value];
 }
 
 integer_type Cyc_vector_length(object v) {
@@ -755,7 +815,7 @@ integer_type Cyc_vector_length(object v) {
 integer_type Cyc_length(object l){
     make_int(len, 0);
     while(!nullp(l)){
-        if (((list)l)->tag != cons_tag){
+        if (is_value_type(l) || ((list)l)->tag != cons_tag){
             Cyc_rt_raise_msg("length - invalid parameter, expected list\n");
         }
         l = cdr(l);
@@ -766,24 +826,27 @@ integer_type Cyc_length(object l){
 
 string_type Cyc_number2string(object n) {
     char buffer[1024];
+    Cyc_check_num(n);
     if (type_of(n) == integer_tag) {
         snprintf(buffer, 1024, "%d", ((integer_type *)n)->value);
     } else if (type_of(n) == double_tag) {
         snprintf(buffer, 1024, "%lf", ((double_type *)n)->value);
     } else {
-        buffer[0] = '\0'; // TODO: throw error instead
+        Cyc_rt_raise2("number->string - Unexpected object", n);
     }
     make_string(str, buffer);
     return str;
 }
 
 string_type Cyc_symbol2string(object sym) {
-    make_string(str, symbol_pname(sym));
-    return str;
-}
+  Cyc_check_sym(sym);
+  { make_string(str, symbol_pname(sym));
+    return str; }}
 
 object Cyc_string2symbol(object str) {
-    object sym = find_symbol_by_name(symbol_pname(str));
+    object sym;
+    Cyc_check_str(str);
+    sym = find_symbol_by_name(symbol_pname(str));
     if (!sym) {
         sym = add_symbol_by_name(symbol_pname(str));
     }
@@ -793,9 +856,12 @@ object Cyc_string2symbol(object str) {
 string_type Cyc_list2string(object lst){
     char *buf;
     int i = 0;
-    integer_type len = Cyc_length(lst); // Inefficient, walks whole list
-    buf = alloca(sizeof(char) * (len.value + 1));
+    integer_type len;
 
+    Cyc_check_cons_or_nil(lst);
+    
+    len = Cyc_length(lst); // Inefficient, walks whole list
+    buf = alloca(sizeof(char) * (len.value + 1));
     while(!nullp(lst)){
         buf[i++] = obj_obj2char(car(lst));
         lst = cdr(lst);
@@ -819,6 +885,8 @@ void __string2list(const char *str, cons_type *buf, int buflen){
 common_type Cyc_string2number(object str){
     common_type result;
     double n;
+    Cyc_check_obj(string_tag, str);
+    Cyc_check_str(str);
     if (type_of(str) == string_tag &&
         ((string_type *) str)->str){
         n = atof(((string_type *) str)->str);
@@ -840,10 +908,13 @@ common_type Cyc_string2number(object str){
 }
 
 integer_type Cyc_string_cmp(object str1, object str2) {
-  // TODO: check types of str1, str2
-  make_int(cmp, strcmp(((string_type *)str1)->str,
-                       ((string_type *)str2)->str));
-  return cmp;
+  Cyc_check_str(str1);
+  Cyc_check_str(str2);
+  {
+    make_int(cmp, strcmp(((string_type *)str1)->str,
+                        ((string_type *)str2)->str));
+    return cmp;
+  }
 }
 
 void dispatch_string_91append(int argc, object clo, object cont, object str1, ...) {
@@ -877,16 +948,18 @@ string_type Cyc_string_append_va_list(int argc, object str1, va_list ap) {
     object tmp;
     
     if (argc > 0) {
+      Cyc_check_str(str1);
       str[i] = ((string_type *)str1)->str;
       len[i] = strlen(str[i]);
       total_len += len[i];
     }
 
     for (i = 1; i < argc; i++) {
-        tmp = va_arg(ap, object);
-        str[i] = ((string_type *)tmp)->str;
-        len[i] = strlen(str[i]);
-        total_len += len[i];
+      tmp = va_arg(ap, object);
+      Cyc_check_str(tmp);
+      str[i] = ((string_type *)tmp)->str;
+      len[i] = strlen(str[i]);
+      total_len += len[i];
     }
 
     buffer = bufferp = alloca(sizeof(char) * total_len);
@@ -900,14 +973,21 @@ string_type Cyc_string_append_va_list(int argc, object str1, va_list ap) {
 }
 
 integer_type Cyc_string_length(object str) {
-  make_int(len, strlen(string_str(str)));
-  return len;
-}
+  Cyc_check_obj(string_tag, str);
+  Cyc_check_str(str);
+  { make_int(len, strlen(string_str(str)));
+    return len; }}
 
 object Cyc_string_ref(object str, object k) {
-  const char *raw = string_str(str);
-  int idx = integer_value(k),
-      len = strlen(raw);
+  const char *raw;
+  int idx, len;
+
+  Cyc_check_str(str);
+  Cyc_check_int(k);
+
+  raw = string_str(str);
+  idx = integer_value(k),
+  len = strlen(raw);
 
   if (idx < 0 || idx >= len) {
     Cyc_rt_raise2("string-ref - invalid index", k);
@@ -917,10 +997,17 @@ object Cyc_string_ref(object str, object k) {
 }
 
 string_type Cyc_substring(object str, object start, object end) {
-  const char *raw = string_str(str);
-  int s = integer_value(start),
-      e = integer_value(end),
-      len = strlen(raw);
+  const char *raw;
+  int s, e, len;
+
+  Cyc_check_str(str);
+  Cyc_check_int(start);
+  Cyc_check_int(end);
+
+  raw = string_str(str);
+  s = integer_value(start),
+  e = integer_value(end),
+  len = strlen(raw);
 
   if (s > e) {
     Cyc_rt_raise2("substring - start cannot be greater than end", start);
@@ -1010,6 +1097,7 @@ integer_type Cyc_char2integer(object chr){
 object Cyc_integer2char(object n){
     int val = 0;
 
+    Cyc_check_int(n);
     if (!nullp(n)) {
         val = ((integer_type *) n)->value;
     }
@@ -1031,6 +1119,9 @@ object __halt(object obj) {
     printf("\nhalt: ");
     Cyc_display(obj, stdout);
     printf("\n");
+    printf("my_exit: heap bytes allocated=%d  time=%ld ticks  no_gcs=%ld no_m_gcs=%ld\n",
+        allocp-bottom,clock()-start,no_gcs,no_major_gcs);
+    printf("my_exit: ticks/second=%ld\n",(long) CLOCKS_PER_SEC);
 #endif
     my_exit(obj);
     return nil;
@@ -1141,7 +1232,9 @@ port_type Cyc_stderr() {
 }
 
 port_type Cyc_io_open_input_file(object str) {
-    const char *fname = ((string_type *)str)->str;
+    const char *fname;
+    Cyc_check_str(str);
+    fname = ((string_type *)str)->str;
     make_port(p, NULL, 1);
     p.fp = fopen(fname, "r");
     if (p.fp == NULL) { Cyc_rt_raise2("Unable to open file", str); }
@@ -1149,7 +1242,9 @@ port_type Cyc_io_open_input_file(object str) {
 }
 
 port_type Cyc_io_open_output_file(object str) {
-    const char *fname = ((string_type *)str)->str;
+    const char *fname;
+    Cyc_check_str(str);
+    fname = ((string_type *)str)->str;
     make_port(p, NULL, 0);
     p.fp = fopen(fname, "w");
     if (p.fp == NULL) { Cyc_rt_raise2("Unable to open file", str); }
@@ -1163,7 +1258,8 @@ object Cyc_io_close_output_port(object port) {
   return Cyc_io_close_port(port); }
 
 object Cyc_io_close_port(object port) {
-    if (port && type_of(port) == port_tag) {
+    Cyc_check_port(port);
+    {
        FILE *stream = ((port_type *)port)->fp;
        if (stream) fclose(stream);
        ((port_type *)port)->fp = NULL;
@@ -1172,14 +1268,18 @@ object Cyc_io_close_port(object port) {
 }
 
 object Cyc_io_delete_file(object filename) {
-  const char *fname = ((string_type *)filename)->str;
+  const char *fname;
+  Cyc_check_str(filename);
+  fname = ((string_type *)filename)->str;
   if (remove(fname) == 0)
     return boolean_t; // Success
   return boolean_f;
 }
 
 object Cyc_io_file_exists(object filename) {
-  const char *fname = ((string_type *)filename)->str;
+  const char *fname;
+  Cyc_check_str(filename);
+  fname = ((string_type *)filename)->str;
   FILE *file;
   // Possibly overkill, but portable
   if (file = fopen(fname, "r")) {
@@ -1191,7 +1291,8 @@ object Cyc_io_file_exists(object filename) {
 
 //  TODO: port arg is optional! (maybe handle that in expansion section??)
 object Cyc_io_read_char(object port) {
-    if (type_of(port) == port_tag) {
+    Cyc_check_port(port);
+    {
         int c = fgetc(((port_type *) port)->fp);
         if (c != EOF) {
             return obj_char2obj(c);
@@ -1204,7 +1305,8 @@ object Cyc_io_peek_char(object port) {
     FILE *stream;
     int c;
 
-    if (type_of(port) == port_tag) {
+    Cyc_check_port(port);
+    {
         stream = ((port_type *) port)->fp;
         c = fgetc(stream);
         ungetc(c, stream);
@@ -1231,94 +1333,124 @@ void _Cyc_91global_91vars(object cont, object args){
     return_funcall1(cont, Cyc_global_variables); } 
 void _car(object cont, object args) { 
     Cyc_check_num_args("car", 1, args);
-    //Cyc_check_type("car", 
-    return_funcall1(cont, car(car(args))); }
+    { object var = car(args);
+      Cyc_check_cons(var);
+      return_funcall1(cont, car(var)); }}
 void _cdr(object cont, object args) { 
     Cyc_check_num_args("cdr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdr(car(args))); }
 void _caar(object cont, object args) { 
     Cyc_check_num_args("caar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caar(car(args))); }
 void _cadr(object cont, object args) { 
     Cyc_check_num_args("cadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cadr(car(args))); }
 void _cdar(object cont, object args) { 
     Cyc_check_num_args("cdar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdar(car(args))); }
 void _cddr(object cont, object args) { 
     Cyc_check_num_args("cddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cddr(car(args))); }
 void _caaar(object cont, object args) { 
     Cyc_check_num_args("caaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caaar(car(args))); }
 void _caadr(object cont, object args) { 
     Cyc_check_num_args("caadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caadr(car(args))); }
 void _cadar(object cont, object args) { 
     Cyc_check_num_args("cadar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cadar(car(args))); }
 void _caddr(object cont, object args) { 
     Cyc_check_num_args("caddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caddr(car(args))); }
 void _cdaar(object cont, object args) { 
     Cyc_check_num_args("cdaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdaar(car(args))); }
 void _cdadr(object cont, object args) { 
     Cyc_check_num_args("cdadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdadr(car(args))); }
 void _cddar(object cont, object args) { 
     Cyc_check_num_args("cddar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cddar(car(args))); }
 void _cdddr(object cont, object args) { 
     Cyc_check_num_args("cdddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdddr(car(args))); }
 void _caaaar(object cont, object args) { 
     Cyc_check_num_args("caaaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caaaar(car(args))); }
 void _caaadr(object cont, object args) { 
     Cyc_check_num_args("caaadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caaadr(car(args))); }
 void _caadar(object cont, object args) { 
     Cyc_check_num_args("caadar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caadar(car(args))); }
 void _caaddr(object cont, object args) { 
     Cyc_check_num_args("caaddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caaddr(car(args))); }
 void _cadaar(object cont, object args) { 
     Cyc_check_num_args("cadaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cadaar(car(args))); }
 void _cadadr(object cont, object args) { 
     Cyc_check_num_args("cadadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cadadr(car(args))); }
 void _caddar(object cont, object args) { 
     Cyc_check_num_args("caddar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, caddar(car(args))); }
 void _cadddr(object cont, object args) { 
     Cyc_check_num_args("cadddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cadddr(car(args))); }
 void _cdaaar(object cont, object args) { 
     Cyc_check_num_args("cdaaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdaaar(car(args))); }
 void _cdaadr(object cont, object args) { 
     Cyc_check_num_args("cdaadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdaadr(car(args))); }
 void _cdadar(object cont, object args) { 
     Cyc_check_num_args("cdadar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdadar(car(args))); }
 void _cdaddr(object cont, object args) { 
     Cyc_check_num_args("cdaddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdaddr(car(args))); }
 void _cddaar(object cont, object args) { 
     Cyc_check_num_args("cddaar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cddaar(car(args))); }
 void _cddadr(object cont, object args) { 
     Cyc_check_num_args("cddadr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cddadr(car(args))); }
 void _cdddar(object cont, object args) { 
     Cyc_check_num_args("cdddar", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cdddar(car(args))); }
 void _cddddr(object cont, object args) { 
     Cyc_check_num_args("cddddr", 1, args);
+    Cyc_check_cons(car(args));
     return_funcall1(cont, cddddr(car(args))); }
 void _cons(object cont, object args) { 
     Cyc_check_num_args("cons", 2, args);
@@ -1598,6 +1730,7 @@ void _display(object cont, object args) {
       dispatch(argc.value, (function_type)dispatch_display_va, cont, cont, args); }}
 void _call_95cc(object cont, object args){
     Cyc_check_num_args("call/cc", 1, args);
+    Cyc_check_fnc(car(args));
     return_funcall2(__glo_call_95cc, cont, car(args));
 }
 
@@ -1615,6 +1748,9 @@ object apply(object cont, object func, object args){
   if (!is_object_type(func)) {
      Cyc_rt_raise2("Call of non-procedure: ", func);
   }
+
+  // Causes problems...
+  //Cyc_check_cons_or_nil(args);
 
   switch(type_of(func)) {
     case primitive_tag:
