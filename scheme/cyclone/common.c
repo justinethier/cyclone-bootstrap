@@ -88,7 +88,7 @@ c_7333.elts = (object *)alloca(sizeof(object) * 1);
 c_7333.elts[0] = ((closureN)self_7321)->elts[0];
 
 
-make_string(c_7363, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     An experimental Scheme compiler\n      ,@             https://github.com/justinethier/cyclone\n      '@        \n      .@        \n       @@     #@     (c) 2014 Justin Ethier\n       `@@@#@@@.     Version ");
+make_string(c_7363, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     Scheme-to-C compiler\n      ,@             https://github.com/justinethier/cyclone\n      '@        \n      .@        \n       @@     #@     (c) 2014 Justin Ethier\n       `@@@#@@@.     Version ");
 
 make_string(c_7364, "\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
 

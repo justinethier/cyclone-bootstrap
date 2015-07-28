@@ -120,6 +120,7 @@ integer_type Cyc_length(object l);
 integer_type Cyc_vector_length(object v);
 object Cyc_vector_ref(object v, object k);
 object Cyc_vector_set(object v, object k, object obj);
+object Cyc_make_vector(object cont, object len, object fill);
 string_type Cyc_number2string(object n) ;
 string_type Cyc_symbol2string(object sym) ;
 object Cyc_string2symbol(object str);
@@ -132,6 +133,7 @@ string_type Cyc_string_append_va_list(int argc, object str1, va_list ap);
 integer_type Cyc_string_length(object str);
 string_type Cyc_substring(object str, object start, object end);
 object Cyc_string_ref(object str, object k);
+object Cyc_string_set(object str, object k, object chr);
 string_type Cyc_installation_dir();
 object Cyc_command_line_arguments(object cont);
 integer_type Cyc_system(object cmd);
@@ -235,18 +237,6 @@ void do_dispatch(int argc, function_type func, object clo, object *buffer);
     ((vector)v)->elts[i++] = car(lst); \
     lst = cdr(lst); \
   } \
-}
-
-#define make_vector(v, len, fill) object v = nil; { \
- Cyc_check_int(len); \
- v = alloca(sizeof(vector_type)); \
- ((vector)v)->tag = vector_tag; \
- ((vector)v)->num_elt = ((integer_type *)len)->value; \
- ((vector)v)->elts = (((vector)v)->num_elt > 0) ? (object *)alloca(sizeof(object) * ((vector)v)->num_elt): NULL; \
- int i; \
- for (i = 0; i < ((vector)v)->num_elt; i++) { \
-   ((vector)v)->elts[i] = fill; \
- } \
 }
 
 /* Global variables. */
@@ -361,6 +351,7 @@ extern const object primitive_list_91_125vector;
 extern const object primitive_vector_91ref;
 extern const object primitive_vector_91set_67;
 extern const object primitive_string_91ref;
+extern const object primitive_string_91set_67;
 extern const object primitive_Cyc_91installation_91dir;
 extern const object primitive_command_91line_91arguments;
 extern const object primitive_system;

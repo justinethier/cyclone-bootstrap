@@ -150,6 +150,7 @@ extern object __glo_boolean_123_127;
 extern object __glo_symbol_123_127;
 extern object __glo_Cyc_91obj_123_127;
 extern object __glo_make_91string;
+extern object __glo_string;
 extern object __glo_vector;
 extern object __glo_vector_91append;
 extern object __glo_vector_91copy;
