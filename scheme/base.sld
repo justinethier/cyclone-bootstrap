@@ -40,8 +40,6 @@
     boolean=?
     symbol=?
     Cyc-obj=?
-    make-string
-    string
     vector
     vector-append
     vector-copy
@@ -49,7 +47,17 @@
     vector-fill!
     vector->list
     vector->string
+    make-string
+    string
+    string-copy
+    string-copy!
+    string-fill!
+    my-string->list
     string->vector
+    ; TODO:
+    ;string-upcase
+    ;string-downcase
+    ;string-foldcase
     make-parameter
     current-output-port
     current-input-port
@@ -216,11 +224,49 @@
     (define (vector->string vec . opts)
       (let ((lst (apply vector->list (cons vec opts))))
         (list->string lst)))
+    ;; TODO: change to string->list
+    (define (my-string->list str . opts)
+      (letrec ((len (string-length str))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len))
+               (loop (lambda (i lst)
+                       (if (= i end)
+                           (reverse lst)
+                           (loop (+ i 1) 
+                                 (cons (string-ref str i) lst))))))
+        (loop start '())))
     ;; TODO: need to extend string->list to take optional start/end args, 
     ;; then modify this function to work with optional args, too
     (define (string->vector str . opts)
       (list->vector
         (string->list str)))
+    (define (string-copy str . opts)
+      (letrec ((len (string-length str))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len)))
+        (substring str start end)))
+    (define (string-copy! to at from . opts)
+      (letrec ((len (string-length from))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len))
+               (loop (lambda (i-at i-from)
+                       (cond
+                        ((= i-from end) to)
+                        (else
+                          (string-set! to i-at (string-ref from i-from))
+                          (loop (+ i-at 1) (+ i-from 1)))))))
+        (loop at start)))
+    (define (string-fill! str fill . opts)
+      (letrec ((len (string-length str))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len))
+               (loop (lambda (i)
+                       (cond
+                        ((= i end) str)
+                        (else
+                          (string-set! str i fill)
+                          (loop (+ i 1)))))))
+        (loop start)))
     (define (vector-append . vecs)
       (list->vector
         (apply append (map vector->list vecs))))
