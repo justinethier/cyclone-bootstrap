@@ -180,6 +180,7 @@ extern object __glo_Cyc_91add_91exception_91handler;
 extern object __glo_Cyc_91remove_91exception_91handler;
 extern object __glo_newline;
 extern object __glo_write_91char;
+extern object __glo_flush_91output_91port;
 extern object __glo_char_91alphabetic_127;
 extern object __glo_char_91downcase;
 extern object __glo_char_91lower_91case_127;

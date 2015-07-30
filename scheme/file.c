@@ -151,6 +151,7 @@ extern object __glo_Cyc_91add_91exception_91handler;
 extern object __glo_Cyc_91remove_91exception_91handler;
 extern object __glo_newline;
 extern object __glo_write_91char;
+extern object __glo_flush_91output_91port;
 #include "cyclone/runtime.h"
 defsymbol(_121param_91convert_125);
 defsymbol(_121param_91set_67_125);

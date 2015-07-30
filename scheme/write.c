@@ -113,6 +113,7 @@ extern object __glo_Cyc_91add_91exception_91handler;
 extern object __glo_Cyc_91remove_91exception_91handler;
 extern object __glo_newline;
 extern object __glo_write_91char;
+extern object __glo_flush_91output_91port;
 #include "cyclone/runtime.h"
 static void __lambda_8(int argc, closure _,object k_737) ;
 static void __lambda_7(int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) ;
