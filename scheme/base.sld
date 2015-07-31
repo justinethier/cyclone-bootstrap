@@ -78,11 +78,12 @@
     newline
     write-char
     flush-output-port
+    read-line
     features
   )
   (begin
     ;; Features implemented by this Scheme
-    (define (features) '(cyclone))
+    (define (features) '(cyclone r7rs exact-closed))
 
     ;; TODO: The whitespace characters are space, tab, line feed, form feed (not in parser yet), and carriage return.
     (define call-with-current-continuation call/cc)
@@ -139,6 +140,10 @@
       (if (null? lst)
         end
         (func (car lst) (foldr func end (cdr lst)))))
+    (define (read-line . port)
+      (if (null? port)
+        (Cyc-read-line (current-output-port))
+        (Cyc-read-line (car port))))
     (define (flush-output-port . port)
       (if (null? port)
         (Cyc-flush-output-port (current-output-port))
