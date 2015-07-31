@@ -4147,7 +4147,7 @@ c_732028.elts[1] = ((closureN)self_73654)->elts[1];
 return_funcall2(  __glo_in_91port_117get_91lnum,  &c_732028, ((closureN)self_73654)->elts[1]);
 } else { 
   
-list2vector(c_732041,((closureN)self_73654)->elts[2]);
+object c_732041 = Cyc_list2vector(  ((closureN)self_73654)->elts[0], ((closureN)self_73654)->elts[2]);
 return_funcall1(  ((closureN)self_73654)->elts[0],  c_732041);}
 ; 
 }

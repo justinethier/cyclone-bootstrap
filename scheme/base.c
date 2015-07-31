@@ -3622,7 +3622,7 @@ return_funcall1((closure)&c_732529,  c_732537);;
 static void __lambda_283(int argc, object self_73896, object r_73401) {
   Cyc_st_add("scheme/base.c:vector-append");
 
-list2vector(c_732534,r_73401);
+object c_732534 = Cyc_list2vector(  ((closureN)self_73896)->elts[0], r_73401);
 return_funcall1(  ((closureN)self_73896)->elts[0],  c_732534);; 
 }
 
@@ -3678,7 +3678,7 @@ return_funcall3(  __glo_map,  &c_732512, ((closureN)self_73898)->elts[0], r_7341
 static void __lambda_278(int argc, object self_73899, object r_73410) {
   Cyc_st_add("scheme/base.c:vector-map");
 
-list2vector(c_732517,r_73410);
+object c_732517 = Cyc_list2vector(  ((closureN)self_73899)->elts[0], r_73410);
 return_funcall1(  ((closureN)self_73899)->elts[0],  c_732517);; 
 }
 
@@ -5114,7 +5114,7 @@ return_funcall2(  __glo_string_91_125list,  &c_732086, str_7393);;
 static void __lambda_199(int argc, object self_73972, object r_73483) {
   Cyc_st_add("scheme/base.c:string->vector");
 
-list2vector(c_732091,r_73483);
+object c_732091 = Cyc_list2vector(  ((closureN)self_73972)->elts[0], r_73483);
 return_funcall1(  ((closureN)self_73972)->elts[0],  c_732091);; 
 }
 
@@ -6168,7 +6168,7 @@ static void __lambda_140(int argc, closure _,object k_73537, object objs_73113_r
 load_varargs(objs_73113, objs_73113_raw, argc - 1);
   Cyc_st_add("scheme/base.c:vector");
 
-list2vector(c_731769,objs_73113);
+object c_731769 = Cyc_list2vector(  k_73537, objs_73113);
 return_funcall1(  k_73537,  c_731769);; 
 }
 
