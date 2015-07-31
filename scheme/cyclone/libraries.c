@@ -182,6 +182,7 @@ extern object __glo_Cyc_91remove_91exception_91handler;
 extern object __glo_newline;
 extern object __glo_write_91char;
 extern object __glo_flush_91output_91port;
+extern object __glo_features;
 extern object __glo_read;
 extern object __glo_read_91all;
 extern object __glo_tagged_91list_127;
