@@ -157,7 +157,7 @@ void c_schemecyclonecommon_entry_pt(argc, cont,value) int argc; closure cont; ob
   __glo__85Cyc_91version_91banner_85 = boolean_f; 
   __glo__85c_91file_91header_91comment_85 = boolean_f; 
   __glo__85version_91banner_85 = boolean_f; 
-  make_string(c_7322, "0.0.1 (Pre-release)"); 
+  make_string(c_7322, "0.0.2 (Pre-release)"); 
   __glo__85version_85 = &c_7322; 
 
   make_cvar(cvar_7353, (object *)&__glo_lib_91init_117schemecyclonecommon);make_cons(pair_7354, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7353);
