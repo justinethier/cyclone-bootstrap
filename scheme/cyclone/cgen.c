@@ -428,8 +428,6 @@ extern object __glo_cell_127;
 extern object __glo_cell_91_125value;
 extern object __glo_cell_91get_127;
 extern object __glo_cell_91get_91_125cell;
-extern object __glo_macro_127;
-extern object __glo_macro_91expand;
 extern object __glo_expand;
 extern object __glo_let_123_125lambda;
 extern object __glo_letrec_123_125lets_87sets;
