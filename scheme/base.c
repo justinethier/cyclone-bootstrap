@@ -649,7 +649,7 @@ static void __lambda_1(int argc, closure _,object k, object producer, object con
 static void __lambda_0(int argc, object self_731143, object result) ;
 
 static void __lambda_468(int argc, closure _,object k_73213) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733389;
 c_733389.tag = closureN_tag;
@@ -665,7 +665,7 @@ return_funcall1((closure)&c_733389,  &c_733433);;
 }
 
 static void __lambda_467(int argc, object self_73743, object r_73214) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733391;
 c_733391.tag = closureN_tag;
@@ -679,7 +679,7 @@ return_funcall1((closure)&c_733391,  global_set(__glo_call_91with_91current_91co
 }
 
 static void __lambda_466(int argc, object self_73744, object r_73215) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733393;
 c_733393.tag = closureN_tag;
@@ -695,7 +695,7 @@ return_funcall1((closure)&c_733393,  &c_733430);;
 }
 
 static void __lambda_465(int argc, object self_73745, object r_73225) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733395;
 c_733395.tag = closureN_tag;
@@ -709,7 +709,7 @@ return_funcall2(  __glo_make_91parameter,  &c_733395, r_73225);;
 }
 
 static void __lambda_464(int argc, object self_73746, object r_73224) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733397;
 c_733397.tag = closureN_tag;
@@ -723,7 +723,7 @@ return_funcall1((closure)&c_733397,  global_set(__glo_current_91output_91port, r
 }
 
 static void __lambda_463(int argc, object self_73747, object r_73216) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733399;
 c_733399.tag = closureN_tag;
@@ -739,7 +739,7 @@ return_funcall1((closure)&c_733399,  &c_733425);;
 }
 
 static void __lambda_462(int argc, object self_73748, object r_73223) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733401;
 c_733401.tag = closureN_tag;
@@ -753,7 +753,7 @@ return_funcall2(  __glo_make_91parameter,  &c_733401, r_73223);;
 }
 
 static void __lambda_461(int argc, object self_73749, object r_73222) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733403;
 c_733403.tag = closureN_tag;
@@ -767,7 +767,7 @@ return_funcall1((closure)&c_733403,  global_set(__glo_current_91input_91port, r_
 }
 
 static void __lambda_460(int argc, object self_73750, object r_73217) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733405;
 c_733405.tag = closureN_tag;
@@ -783,7 +783,7 @@ return_funcall1((closure)&c_733405,  &c_733420);;
 }
 
 static void __lambda_459(int argc, object self_73751, object r_73221) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733407;
 c_733407.tag = closureN_tag;
@@ -797,7 +797,7 @@ return_funcall2(  __glo_make_91parameter,  &c_733407, r_73221);;
 }
 
 static void __lambda_458(int argc, object self_73752, object r_73220) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733409;
 c_733409.tag = closureN_tag;
@@ -811,7 +811,7 @@ return_funcall1((closure)&c_733409,  global_set(__glo_current_91error_91port, r_
 }
 
 static void __lambda_457(int argc, object self_73753, object r_73218) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_733411;
 c_733411.tag = closureN_tag;
@@ -825,12 +825,12 @@ return_funcall1((closure)&c_733411,  nil);;
 }
 
 static void __lambda_456(int argc, object self_73754, object r_73219) {
-  Cyc_st_add("scheme/base.c:lib-init:schemebase");
+  Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 return_funcall1(  ((closureN)self_73754)->elts[0],  global_set(__glo__85exception_91handler_91stack_85, r_73219));; 
 }
 
 static void __lambda_455(int argc, closure _,object k_73228) {
-  Cyc_st_add("scheme/base.c:Cyc-remove-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 
 closureN_type c_733372;
 c_733372.tag = closureN_tag;
@@ -844,7 +844,7 @@ return_funcall1((closure)&c_733372,  Cyc_is_null(__glo__85exception_91handler_91
 }
 
 static void __lambda_454(int argc, object self_73755, object r_73231) {
-  Cyc_st_add("scheme/base.c:Cyc-remove-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 
 closureN_type c_733374;
 c_733374.tag = closureN_tag;
@@ -858,7 +858,7 @@ return_funcall2(  __glo_not,  &c_733374, r_73231);;
 }
 
 static void __lambda_453(int argc, object self_73756, object r_73229) {
-  Cyc_st_add("scheme/base.c:Cyc-remove-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 if( !eq(boolean_f, r_73229) ){ 
   
 closureN_type c_733376;
@@ -876,12 +876,12 @@ return_funcall1((closure)&c_733376,  cdr(__glo__85exception_91handler_91stack_85
 }
 
 static void __lambda_452(int argc, object self_73757, object r_73230) {
-  Cyc_st_add("scheme/base.c:Cyc-remove-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 return_funcall1(  ((closureN)self_73757)->elts[0],  global_set(__glo__85exception_91handler_91stack_85, r_73230));; 
 }
 
 static void __lambda_451(int argc, closure _,object k_73234, object h_731) {
-  Cyc_st_add("scheme/base.c:Cyc-add-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-add-exception-handler");
 
 closureN_type c_733362;
 c_733362.tag = closureN_tag;
@@ -897,12 +897,12 @@ return_funcall1((closure)&c_733362,  &c_733369);;
 }
 
 static void __lambda_450(int argc, object self_73758, object r_73235) {
-  Cyc_st_add("scheme/base.c:Cyc-add-exception-handler");
+  Cyc_st_add("scheme/base.sld:Cyc-add-exception-handler");
 return_funcall1(  ((closureN)self_73758)->elts[0],  global_set(__glo__85exception_91handler_91stack_85, r_73235));; 
 }
 
 static void __lambda_449(int argc, closure _,object k_73240, object handler_733, object thunk_732) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733280;
 c_733280.tag = closureN_tag;
@@ -926,7 +926,7 @@ return_funcall1((closure)&c_733280,  &c_733306);;
 }
 
 static void __lambda_448(int argc, object self_73759, object k_73246, object obj_734) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733308;
 c_733308.tag = closureN_tag;
@@ -951,7 +951,7 @@ return_funcall1((closure)&c_733308,  &c_733328);;
 }
 
 static void __lambda_447(int argc, object self_73760, object r_73247) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733330;
 c_733330.tag = closureN_tag;
@@ -967,7 +967,7 @@ return_funcall2((closure)&c_733330,  boolean_f, r_73247);;
 }
 
 static void __lambda_446(int argc, object self_73761, object result_736, object continuable_127_735) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733332;
 c_733332.tag = closureN_tag;
@@ -986,7 +986,7 @@ return_funcall1((closure)&c_733332,  &c_733359);;
 }
 
 static void __lambda_445(int argc, object self_73762, object result_736) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733334;
 c_733334.tag = closureN_tag;
@@ -1004,7 +1004,7 @@ return_funcall1(  __glo_Cyc_91remove_91exception_91handler,  &c_733334);;
 }
 
 static void __lambda_444(int argc, object self_73763, object r_73248) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733336;
 c_733336.tag = closureN_tag;
@@ -1021,7 +1021,7 @@ return_funcall1((closure)&c_733336,  cdr(((closureN)self_73763)->elts[3]));;
 }
 
 static void __lambda_443(int argc, object self_73764, object r_73251) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733339;
 c_733339.tag = closureN_tag;
@@ -1037,7 +1037,7 @@ return_funcall2(  ((closureN)self_73764)->elts[1],  &c_733339, r_73251);;
 }
 
 static void __lambda_442(int argc, object self_73765, object r_73250) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733341;
 c_733341.tag = closureN_tag;
@@ -1053,7 +1053,7 @@ return_funcall1((closure)&c_733341,  Cyc_set_car(((closureN)self_73765)->elts[2]
 }
 
 static void __lambda_441(int argc, object self_73766, object r_73249) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 if( !eq(boolean_f, ((closureN)self_73766)->elts[0]) ){ 
   return_funcall1(  ((closureN)self_73766)->elts[1],  cell_get(((closureN)self_73766)->elts[2]));
 } else { 
@@ -1064,7 +1064,7 @@ return_funcall2(  __glo_error,  ((closureN)self_73766)->elts[1], &c_733350);}
 }
 
 static void __lambda_440(int argc, object self_73767, object k_73252) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733310;
 c_733310.tag = closureN_tag;
@@ -1079,7 +1079,7 @@ return_funcall1((closure)&c_733310,  Cyc_is_cons(((closureN)self_73767)->elts[0]
 }
 
 static void __lambda_439(int argc, object self_73768, object r_73253) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 if( !eq(boolean_f, r_73253) ){ 
   
 closureN_type c_733312;
@@ -1097,7 +1097,7 @@ return_funcall1((closure)&c_733312,  car(((closureN)self_73768)->elts[1]));
 }
 
 static void __lambda_438(int argc, object self_73769, object r_73254) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733314;
 c_733314.tag = closureN_tag;
@@ -1112,12 +1112,12 @@ return_funcall1((closure)&c_733314,  quote_continuable);;
 }
 
 static void __lambda_437(int argc, object self_73770, object r_73255) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 return_funcall1(  ((closureN)self_73770)->elts[0],  equalp(((closureN)self_73770)->elts[1], r_73255));; 
 }
 
 static void __lambda_436(int argc, object self_73771, object r_73241) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733282;
 c_733282.tag = closureN_tag;
@@ -1132,7 +1132,7 @@ return_funcall2((closure)&c_733282,  boolean_f, r_73241);;
 }
 
 static void __lambda_435(int argc, object self_73772, object result_738, object my_91handler_737) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733284;
 c_733284.tag = closureN_tag;
@@ -1150,7 +1150,7 @@ return_funcall1((closure)&c_733284,  &c_733305);;
 }
 
 static void __lambda_434(int argc, object self_73773, object result_738) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733286;
 c_733286.tag = closureN_tag;
@@ -1166,7 +1166,7 @@ return_funcall2(  __glo_Cyc_91add_91exception_91handler,  &c_733286, ((closureN)
 }
 
 static void __lambda_433(int argc, object self_73774, object r_73242) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733289;
 c_733289.tag = closureN_tag;
@@ -1181,7 +1181,7 @@ return_funcall1(  ((closureN)self_73774)->elts[2],  &c_733289);;
 }
 
 static void __lambda_432(int argc, object self_73775, object r_73245) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733291;
 c_733291.tag = closureN_tag;
@@ -1196,7 +1196,7 @@ return_funcall1((closure)&c_733291,  Cyc_set_car(((closureN)self_73775)->elts[1]
 }
 
 static void __lambda_431(int argc, object self_73776, object r_73243) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_733293;
 c_733293.tag = closureN_tag;
@@ -1211,12 +1211,12 @@ return_funcall1(  __glo_Cyc_91remove_91exception_91handler,  &c_733293);;
 }
 
 static void __lambda_430(int argc, object self_73777, object r_73244) {
-  Cyc_st_add("scheme/base.c:with-exception-handler");
+  Cyc_st_add("scheme/base.sld:with-exception-handler");
 return_funcall1(  ((closureN)self_73777)->elts[0],  cell_get(((closureN)self_73777)->elts[1]));; 
 }
 
 static void __lambda_429(int argc, closure _,object k_73258, object obj_739) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_733250;
 c_733250.tag = closureN_tag;
@@ -1231,7 +1231,7 @@ return_funcall1((closure)&c_733250,  Cyc_current_exception_handler());;
 }
 
 static void __lambda_428(int argc, object self_73778, object r_73259) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_733252;
 c_733252.tag = closureN_tag;
@@ -1247,7 +1247,7 @@ return_funcall1((closure)&c_733252,  quote_continuable);;
 }
 
 static void __lambda_427(int argc, object self_73779, object r_73261) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_733254;
 c_733254.tag = closureN_tag;
@@ -1272,7 +1272,7 @@ return_funcall1((closure)&c_733254,  &c_733266);;
 }
 
 static void __lambda_426(int argc, object self_73780, object r_73262) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_733268;
 c_733268.tag = closureN_tag;
@@ -1289,12 +1289,12 @@ return_funcall1((closure)&c_733268,  &c_733274);;
 }
 
 static void __lambda_425(int argc, object self_73781, object r_73260) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 return_funcall2(  ((closureN)self_73781)->elts[1],  ((closureN)self_73781)->elts[0], r_73260);; 
 }
 
 static void __lambda_424(int argc, object self_73782, object k_73263) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_733256;
 c_733256.tag = closureN_tag;
@@ -1309,7 +1309,7 @@ return_funcall1((closure)&c_733256,  Cyc_is_cons(((closureN)self_73782)->elts[0]
 }
 
 static void __lambda_423(int argc, object self_73783, object r_73264) {
-  Cyc_st_add("scheme/base.c:raise-continuable");
+  Cyc_st_add("scheme/base.sld:raise-continuable");
 if( !eq(boolean_f, r_73264) ){ 
   return_funcall1(  ((closureN)self_73783)->elts[0],  ((closureN)self_73783)->elts[1]);
 } else { 
@@ -1318,7 +1318,7 @@ if( !eq(boolean_f, r_73264) ){
 }
 
 static void __lambda_422(int argc, closure _,object k_73267, object obj_7310) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_733220;
 c_733220.tag = closureN_tag;
@@ -1333,7 +1333,7 @@ return_funcall1((closure)&c_733220,  Cyc_current_exception_handler());;
 }
 
 static void __lambda_421(int argc, object self_73784, object r_73268) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_733222;
 c_733222.tag = closureN_tag;
@@ -1349,7 +1349,7 @@ return_funcall1((closure)&c_733222,  quote_raised);;
 }
 
 static void __lambda_420(int argc, object self_73785, object r_73270) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_733224;
 c_733224.tag = closureN_tag;
@@ -1374,7 +1374,7 @@ return_funcall1((closure)&c_733224,  &c_733236);;
 }
 
 static void __lambda_419(int argc, object self_73786, object r_73271) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_733238;
 c_733238.tag = closureN_tag;
@@ -1391,12 +1391,12 @@ return_funcall1((closure)&c_733238,  &c_733244);;
 }
 
 static void __lambda_418(int argc, object self_73787, object r_73269) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 return_funcall2(  ((closureN)self_73787)->elts[1],  ((closureN)self_73787)->elts[0], r_73269);; 
 }
 
 static void __lambda_417(int argc, object self_73788, object k_73272) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_733226;
 c_733226.tag = closureN_tag;
@@ -1411,7 +1411,7 @@ return_funcall1((closure)&c_733226,  Cyc_is_cons(((closureN)self_73788)->elts[0]
 }
 
 static void __lambda_416(int argc, object self_73789, object r_73273) {
-  Cyc_st_add("scheme/base.c:raise");
+  Cyc_st_add("scheme/base.sld:raise");
 if( !eq(boolean_f, r_73273) ){ 
   return_funcall1(  ((closureN)self_73789)->elts[0],  ((closureN)self_73789)->elts[1]);
 } else { 
@@ -1421,7 +1421,7 @@ if( !eq(boolean_f, r_73273) ){
 
 static void __lambda_415(int argc, closure _,object k_73276, object msg_7312, object args_7311_raw, ...) {
 load_varargs(args_7311, args_7311_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:error");
+  Cyc_st_add("scheme/base.sld:error");
 
 closureN_type c_733212;
 c_733212.tag = closureN_tag;
@@ -1437,13 +1437,13 @@ return_funcall1((closure)&c_733212,  &c_733217);;
 }
 
 static void __lambda_414(int argc, object self_73790, object r_73277) {
-  Cyc_st_add("scheme/base.c:error");
+  Cyc_st_add("scheme/base.sld:error");
 return_funcall2(  __glo_raise,  ((closureN)self_73790)->elts[0], r_73277);; 
 }
 
 static void __lambda_413(int argc, closure _,object k_73286, object init_7314, object o_7313_raw, ...) {
 load_varargs(o_7313, o_7313_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733128;
 c_733128.tag = closureN_tag;
@@ -1467,7 +1467,7 @@ return_funcall1((closure)&c_733128,  &c_733143);;
 }
 
 static void __lambda_412(int argc, object self_73791, object r_73287) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733145;
 c_733145.tag = closureN_tag;
@@ -1482,7 +1482,7 @@ return_funcall1((closure)&c_733145,  r_73287);;
 }
 
 static void __lambda_411(int argc, object self_73792, object converter_7316) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733147;
 c_733147.tag = closureN_tag;
@@ -1497,7 +1497,7 @@ return_funcall2(  converter_7316,  &c_733147, ((closureN)self_73792)->elts[0]);;
 }
 
 static void __lambda_410(int argc, object self_73793, object r_73288) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733149;
 c_733149.tag = closureN_tag;
@@ -1512,7 +1512,7 @@ return_funcall1((closure)&c_733149,  r_73288);;
 }
 
 static void __lambda_409(int argc, object self_73794, object value_7317) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733151;
 c_733151.tag = closureN_tag;
@@ -1529,7 +1529,7 @@ return_funcall1((closure)&c_733151,  &c_733208);;
 }
 
 static void __lambda_408(int argc, object self_73795, object value_7317) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733153;
 c_733153.tag = closureN_tag;
@@ -1545,7 +1545,7 @@ return_funcall0((closure)&c_733153);;
 }
 
 static void __lambda_407(int argc, object self_73796) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733156;
 c_733156.tag = closureN_tag;
@@ -1561,7 +1561,7 @@ return_funcall1(  ((closureN)self_73796)->elts[1],  &c_733156);;
 
 static void __lambda_406(int argc, object self_73797, object k_73289, object args_7318_raw, ...) {
 load_varargs(args_7318, args_7318_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733158;
 c_733158.tag = closureN_tag;
@@ -1578,7 +1578,7 @@ return_funcall1((closure)&c_733158,  Cyc_is_null(args_7318));;
 }
 
 static void __lambda_405(int argc, object self_73798, object r_73290) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 if( !eq(boolean_f, r_73290) ){ 
   return_funcall1(  ((closureN)self_73798)->elts[2],  cell_get(((closureN)self_73798)->elts[3]));
 } else { 
@@ -1599,7 +1599,7 @@ return_funcall1((closure)&c_733165,  car(((closureN)self_73798)->elts[0]));}
 }
 
 static void __lambda_404(int argc, object self_73799, object r_73296) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733167;
 c_733167.tag = closureN_tag;
@@ -1617,7 +1617,7 @@ return_funcall1((closure)&c_733167,  quote__121param_91set_67_125);;
 }
 
 static void __lambda_403(int argc, object self_73800, object r_73297) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733169;
 c_733169.tag = closureN_tag;
@@ -1634,7 +1634,7 @@ return_funcall1((closure)&c_733169,  Cyc_eq(((closureN)self_73800)->elts[3], r_7
 }
 
 static void __lambda_402(int argc, object self_73801, object r_73291) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 if( !eq(boolean_f, r_73291) ){ 
   
 closureN_type c_733171;
@@ -1663,7 +1663,7 @@ return_funcall1((closure)&c_733181,  car(((closureN)self_73801)->elts[0]));}
 }
 
 static void __lambda_401(int argc, object self_73802, object r_73294) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733183;
 c_733183.tag = closureN_tag;
@@ -1679,7 +1679,7 @@ return_funcall1((closure)&c_733183,  quote__121param_91convert_125);;
 }
 
 static void __lambda_400(int argc, object self_73803, object r_73295) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733185;
 c_733185.tag = closureN_tag;
@@ -1694,7 +1694,7 @@ return_funcall1((closure)&c_733185,  Cyc_eq(((closureN)self_73803)->elts[2], r_7
 }
 
 static void __lambda_399(int argc, object self_73804, object r_73293) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 if( !eq(boolean_f, r_73293) ){ 
   return_funcall1(  ((closureN)self_73804)->elts[1],  ((closureN)self_73804)->elts[0]);
 } else { 
@@ -1705,12 +1705,12 @@ return_funcall2(  __glo_error,  ((closureN)self_73804)->elts[1], &c_733191);}
 }
 
 static void __lambda_398(int argc, object self_73805, object r_73292) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 return_funcall1(  ((closureN)self_73805)->elts[0],  Cyc_set_car(((closureN)self_73805)->elts[1], r_73292));; 
 }
 
 static void __lambda_397(int argc, object self_73806, object k_73298) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_733130;
 c_733130.tag = closureN_tag;
@@ -1725,7 +1725,7 @@ return_funcall1((closure)&c_733130,  Cyc_is_cons(((closureN)self_73806)->elts[0]
 }
 
 static void __lambda_396(int argc, object self_73807, object r_73299) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 if( !eq(boolean_f, r_73299) ){ 
   return_funcall1(  ((closureN)self_73807)->elts[0],  car(((closureN)self_73807)->elts[1]));
 } else { 
@@ -1736,13 +1736,13 @@ return_funcall1(  ((closureN)self_73807)->elts[0],  &c_733138);}
 }
 
 static void __lambda_395(int argc, object self_73808, object k_73300, object x_7315) {
-  Cyc_st_add("scheme/base.c:make-parameter");
+  Cyc_st_add("scheme/base.sld:make-parameter");
 return_funcall1(  k_73300,  x_7315);; 
 }
 
 static void __lambda_394(int argc, closure _,object k_73303, object k_7320, object fill_7319_raw, ...) {
 load_varargs(fill_7319, fill_7319_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_733095;
 c_733095.tag = closureN_tag;
@@ -1766,7 +1766,7 @@ return_funcall1((closure)&c_733095,  &c_733107);;
 }
 
 static void __lambda_393(int argc, object self_73809, object r_73304) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_733109;
 c_733109.tag = closureN_tag;
@@ -1781,7 +1781,7 @@ return_funcall1((closure)&c_733109,  r_73304);;
 }
 
 static void __lambda_392(int argc, object self_73810, object fill_85_7321) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_733111;
 c_733111.tag = closureN_tag;
@@ -1797,7 +1797,7 @@ return_funcall1((closure)&c_733111,  &c_733124);;
 }
 
 static void __lambda_391(int argc, object self_73811, object r_73306) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_733113;
 c_733113.tag = closureN_tag;
@@ -1813,14 +1813,14 @@ return_funcall1((closure)&c_733113,  c_733121);;
 }
 
 static void __lambda_390(int argc, object self_73812, object r_73305) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 string_type c_733118 = Cyc_list2string(r_73305);
 return_funcall1(  ((closureN)self_73812)->elts[0],  &c_733118);; 
 }
 
 static void __lambda_389(int argc, object self_73813, object k_73307) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_733097;
 c_733097.tag = closureN_tag;
@@ -1835,7 +1835,7 @@ return_funcall1((closure)&c_733097,  Cyc_is_null(((closureN)self_73813)->elts[0]
 }
 
 static void __lambda_388(int argc, object self_73814, object r_73308) {
-  Cyc_st_add("scheme/base.c:make-string");
+  Cyc_st_add("scheme/base.sld:make-string");
 if( !eq(boolean_f, r_73308) ){ 
   
 make_cons(c_733100,obj_char2obj(32),nil);
@@ -1847,14 +1847,14 @@ return_funcall1(  ((closureN)self_73814)->elts[1],  &c_733100);
 
 static void __lambda_387(int argc, closure _,object k_73311, object chars_7322_raw, ...) {
 load_varargs(chars_7322, chars_7322_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:string");
+  Cyc_st_add("scheme/base.sld:string");
 
 string_type c_733092 = Cyc_list2string(chars_7322);
 return_funcall1(  k_73311,  &c_733092);; 
 }
 
 static void __lambda_386(int argc, closure _,object k_73314, object type_127_7325, object obj_7324, object objs_7323) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_733060;
 c_733060.tag = closureN_tag;
@@ -1870,7 +1870,7 @@ return_funcall2(  type_127_7325,  &c_733060, obj_7324);;
 }
 
 static void __lambda_385(int argc, object self_73815, object r_73315) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 if( !eq(boolean_f, r_73315) ){ 
   
 closureN_type c_733062;
@@ -1898,7 +1898,7 @@ return_funcall1((closure)&c_733062,  &c_733065);
 }
 
 static void __lambda_384(int argc, object self_73816, object k_73317, object return_7326) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_733067;
 c_733067.tag = closureN_tag;
@@ -1923,7 +1923,7 @@ return_funcall1((closure)&c_733067,  &c_733073);;
 }
 
 static void __lambda_383(int argc, object self_73817, object k_73320, object o_7327) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_733075;
 c_733075.tag = closureN_tag;
@@ -1938,7 +1938,7 @@ return_funcall1((closure)&c_733075,  Cyc_eq(o_7327, ((closureN)self_73817)->elts
 }
 
 static void __lambda_382(int argc, object self_73818, object r_73322) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_733077;
 c_733077.tag = closureN_tag;
@@ -1953,7 +1953,7 @@ return_funcall2(  __glo_not,  &c_733077, r_73322);;
 }
 
 static void __lambda_381(int argc, object self_73819, object r_73321) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 if( !eq(boolean_f, r_73321) ){ 
   return_funcall2(  ((closureN)self_73819)->elts[1],  ((closureN)self_73819)->elts[0], boolean_f);
 } else { 
@@ -1962,7 +1962,7 @@ if( !eq(boolean_f, r_73321) ){
 }
 
 static void __lambda_380(int argc, object self_73820, object r_73319) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_733069;
 c_733069.tag = closureN_tag;
@@ -1976,18 +1976,18 @@ return_funcall3(  __glo_for_91each,  &c_733069, r_73319, ((closureN)self_73820)-
 }
 
 static void __lambda_379(int argc, object self_73821, object r_73318) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 return_funcall1(  ((closureN)self_73821)->elts[0],  boolean_t);; 
 }
 
 static void __lambda_378(int argc, object self_73822, object r_73316) {
-  Cyc_st_add("scheme/base.c:Cyc-obj=?");
+  Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 return_funcall2(  __glo_call_95cc,  ((closureN)self_73822)->elts[0], r_73316);; 
 }
 
 static void __lambda_377(int argc, closure _,object k_73325, object sym1_7330, object sym2_7329, object syms_7328_raw, ...) {
 load_varargs(syms_7328, syms_7328_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:symbol=?");
+  Cyc_st_add("scheme/base.sld:symbol=?");
 
 closureN_type c_733051;
 c_733051.tag = closureN_tag;
@@ -2004,13 +2004,13 @@ return_funcall1((closure)&c_733051,  &c_733057);;
 }
 
 static void __lambda_376(int argc, object self_73823, object r_73326) {
-  Cyc_st_add("scheme/base.c:symbol=?");
+  Cyc_st_add("scheme/base.sld:symbol=?");
 return_funcall4(  __glo_Cyc_91obj_123_127,  ((closureN)self_73823)->elts[0], primitive_symbol_127, ((closureN)self_73823)->elts[1], r_73326);; 
 }
 
 static void __lambda_375(int argc, closure _,object k_73329, object b1_7333, object b2_7332, object bs_7331_raw, ...) {
 load_varargs(bs_7331, bs_7331_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:boolean=?");
+  Cyc_st_add("scheme/base.sld:boolean=?");
 
 closureN_type c_733042;
 c_733042.tag = closureN_tag;
@@ -2027,13 +2027,13 @@ return_funcall1((closure)&c_733042,  &c_733048);;
 }
 
 static void __lambda_374(int argc, object self_73824, object r_73330) {
-  Cyc_st_add("scheme/base.c:boolean=?");
+  Cyc_st_add("scheme/base.sld:boolean=?");
 return_funcall4(  __glo_Cyc_91obj_123_127,  ((closureN)self_73824)->elts[1], primitive_boolean_127, ((closureN)self_73824)->elts[0], r_73330);; 
 }
 
 static void __lambda_373(int argc, closure _,object k_73333, object vec_7336, object fill_7335, object opts_7334_raw, ...) {
 load_varargs(opts_7334, opts_7334_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732900;
 c_732900.tag = closureN_tag;
@@ -2050,7 +2050,7 @@ return_funcall4((closure)&c_732900,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_372(int argc, object self_73825, object len_7340, object start_7339, object end_7338, object loop_7337) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732902;
 c_732902.tag = closureN_tag;
@@ -2072,7 +2072,7 @@ return_funcall1((closure)&c_732902,  &c_733039);;
 }
 
 static void __lambda_371(int argc, object self_73826, object len_7340) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732904;
 c_732904.tag = closureN_tag;
@@ -2094,7 +2094,7 @@ return_funcall1((closure)&c_732904,  &c_733035);;
 }
 
 static void __lambda_370(int argc, object self_73827, object start_7339) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732906;
 c_732906.tag = closureN_tag;
@@ -2116,7 +2116,7 @@ return_funcall1((closure)&c_732906,  &c_733031);;
 }
 
 static void __lambda_369(int argc, object self_73828, object end_7338) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732908;
 c_732908.tag = closureN_tag;
@@ -2138,7 +2138,7 @@ return_funcall1((closure)&c_732908,  &c_733027);;
 }
 
 static void __lambda_368(int argc, object self_73829, object loop_7337) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732910;
 c_732910.tag = closureN_tag;
@@ -2159,7 +2159,7 @@ return_funcall0((closure)&c_732910);;
 }
 
 static void __lambda_367(int argc, object self_73830) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732912;
 c_732912.tag = closureN_tag;
@@ -2182,7 +2182,7 @@ return_funcall1((closure)&c_732912,  &c_733023);;
 }
 
 static void __lambda_366(int argc, object self_73831, object r_73351) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732914;
 c_732914.tag = closureN_tag;
@@ -2203,7 +2203,7 @@ return_funcall1((closure)&c_732914,  Cyc_set_car(((closureN)self_73831)->elts[3]
 }
 
 static void __lambda_365(int argc, object self_73832, object r_73334) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732916;
 c_732916.tag = closureN_tag;
@@ -2233,7 +2233,7 @@ return_funcall1((closure)&c_732916,  &c_732936);;
 }
 
 static void __lambda_364(int argc, object self_73833, object r_73347) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732938;
 c_732938.tag = closureN_tag;
@@ -2254,7 +2254,7 @@ return_funcall1((closure)&c_732938,  Cyc_set_car(((closureN)self_73833)->elts[6]
 }
 
 static void __lambda_363(int argc, object self_73834, object r_73335) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732940;
 c_732940.tag = closureN_tag;
@@ -2283,7 +2283,7 @@ return_funcall1((closure)&c_732940,  &c_732962);;
 }
 
 static void __lambda_362(int argc, object self_73835, object r_73343) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732964;
 c_732964.tag = closureN_tag;
@@ -2302,7 +2302,7 @@ return_funcall1((closure)&c_732964,  Cyc_set_car(((closureN)self_73835)->elts[0]
 }
 
 static void __lambda_361(int argc, object self_73836, object r_73336) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732966;
 c_732966.tag = closureN_tag;
@@ -2330,7 +2330,7 @@ return_funcall1((closure)&c_732966,  &c_732980);;
 }
 
 static void __lambda_360(int argc, object self_73837, object k_73339, object i_7341) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732982;
 c_732982.tag = closureN_tag;
@@ -2348,7 +2348,7 @@ return_funcall1((closure)&c_732982,  __num_eq(i_7341, cell_get(((closureN)self_7
 }
 
 static void __lambda_359(int argc, object self_73838, object r_73340) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 if( !eq(boolean_f, r_73340) ){ 
   return_funcall1(  ((closureN)self_73838)->elts[2],  ((closureN)self_73838)->elts[4]);
 } else { 
@@ -2370,7 +2370,7 @@ return_funcall0((closure)&c_732987);}
 }
 
 static void __lambda_358(int argc, object self_73839) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732989;
 c_732989.tag = closureN_tag;
@@ -2386,7 +2386,7 @@ return_funcall1((closure)&c_732989,  Cyc_vector_set(((closureN)self_73839)->elts
 }
 
 static void __lambda_357(int argc, object self_73840, object r_73341) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732991;
 c_732991.tag = closureN_tag;
@@ -2405,12 +2405,12 @@ return_funcall1((closure)&c_732991,  &c_732999);;
 }
 
 static void __lambda_356(int argc, object self_73841, object r_73342) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 return_funcall2(  cell_get(((closureN)self_73841)->elts[1]),  ((closureN)self_73841)->elts[0], r_73342);; 
 }
 
 static void __lambda_355(int argc, object self_73842, object r_73338) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732968;
 c_732968.tag = closureN_tag;
@@ -2426,12 +2426,12 @@ return_funcall1((closure)&c_732968,  Cyc_set_car(((closureN)self_73842)->elts[1]
 }
 
 static void __lambda_354(int argc, object self_73843, object r_73337) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 return_funcall2(  cell_get(((closureN)self_73843)->elts[1]),  ((closureN)self_73843)->elts[0], cell_get(((closureN)self_73843)->elts[2]));; 
 }
 
 static void __lambda_353(int argc, object self_73844, object k_73344) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732942;
 c_732942.tag = closureN_tag;
@@ -2449,7 +2449,7 @@ return_funcall1((closure)&c_732942,  &c_732960);;
 }
 
 static void __lambda_352(int argc, object self_73845, object r_73346) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732944;
 c_732944.tag = closureN_tag;
@@ -2467,7 +2467,7 @@ return_funcall1((closure)&c_732944,  __num_gt(r_73346, &c_732957));;
 }
 
 static void __lambda_351(int argc, object self_73846, object r_73345) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 if( !eq(boolean_f, r_73345) ){ 
   return_funcall1(  ((closureN)self_73846)->elts[0],  cadr(((closureN)self_73846)->elts[2]));
 } else { 
@@ -2476,7 +2476,7 @@ if( !eq(boolean_f, r_73345) ){
 }
 
 static void __lambda_350(int argc, object self_73847, object k_73348) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732918;
 c_732918.tag = closureN_tag;
@@ -2493,7 +2493,7 @@ return_funcall1((closure)&c_732918,  &c_732934);;
 }
 
 static void __lambda_349(int argc, object self_73848, object r_73350) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_732920;
 c_732920.tag = closureN_tag;
@@ -2510,7 +2510,7 @@ return_funcall1((closure)&c_732920,  __num_gt(r_73350, &c_732931));;
 }
 
 static void __lambda_348(int argc, object self_73849, object r_73349) {
-  Cyc_st_add("scheme/base.c:vector-fill!");
+  Cyc_st_add("scheme/base.sld:vector-fill!");
 if( !eq(boolean_f, r_73349) ){ 
   return_funcall1(  ((closureN)self_73849)->elts[0],  car(((closureN)self_73849)->elts[1]));
 } else { 
@@ -2522,7 +2522,7 @@ return_funcall1(  ((closureN)self_73849)->elts[0],  &c_732928);}
 
 static void __lambda_347(int argc, closure _,object k_73354, object to_7345, object at_7344, object from_7343, object opts_7342_raw, ...) {
 load_varargs(opts_7342, opts_7342_raw, argc - 4);
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732744;
 c_732744.tag = closureN_tag;
@@ -2540,7 +2540,7 @@ return_funcall4((closure)&c_732744,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_346(int argc, object self_73850, object len_7349, object start_7348, object end_7347, object loop_7346) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732746;
 c_732746.tag = closureN_tag;
@@ -2563,7 +2563,7 @@ return_funcall1((closure)&c_732746,  &c_732897);;
 }
 
 static void __lambda_345(int argc, object self_73851, object len_7349) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732748;
 c_732748.tag = closureN_tag;
@@ -2586,7 +2586,7 @@ return_funcall1((closure)&c_732748,  &c_732893);;
 }
 
 static void __lambda_344(int argc, object self_73852, object start_7348) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732750;
 c_732750.tag = closureN_tag;
@@ -2609,7 +2609,7 @@ return_funcall1((closure)&c_732750,  &c_732889);;
 }
 
 static void __lambda_343(int argc, object self_73853, object end_7347) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732752;
 c_732752.tag = closureN_tag;
@@ -2632,7 +2632,7 @@ return_funcall1((closure)&c_732752,  &c_732885);;
 }
 
 static void __lambda_342(int argc, object self_73854, object loop_7346) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732754;
 c_732754.tag = closureN_tag;
@@ -2654,7 +2654,7 @@ return_funcall0((closure)&c_732754);;
 }
 
 static void __lambda_341(int argc, object self_73855) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732756;
 c_732756.tag = closureN_tag;
@@ -2678,7 +2678,7 @@ return_funcall1((closure)&c_732756,  &c_732881);;
 }
 
 static void __lambda_340(int argc, object self_73856, object r_73374) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732758;
 c_732758.tag = closureN_tag;
@@ -2700,7 +2700,7 @@ return_funcall1((closure)&c_732758,  Cyc_set_car(((closureN)self_73856)->elts[4]
 }
 
 static void __lambda_339(int argc, object self_73857, object r_73355) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732760;
 c_732760.tag = closureN_tag;
@@ -2731,7 +2731,7 @@ return_funcall1((closure)&c_732760,  &c_732780);;
 }
 
 static void __lambda_338(int argc, object self_73858, object r_73370) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732782;
 c_732782.tag = closureN_tag;
@@ -2753,7 +2753,7 @@ return_funcall1((closure)&c_732782,  Cyc_set_car(((closureN)self_73858)->elts[7]
 }
 
 static void __lambda_337(int argc, object self_73859, object r_73356) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732784;
 c_732784.tag = closureN_tag;
@@ -2783,7 +2783,7 @@ return_funcall1((closure)&c_732784,  &c_732806);;
 }
 
 static void __lambda_336(int argc, object self_73860, object r_73366) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732808;
 c_732808.tag = closureN_tag;
@@ -2803,7 +2803,7 @@ return_funcall1((closure)&c_732808,  Cyc_set_car(((closureN)self_73860)->elts[1]
 }
 
 static void __lambda_335(int argc, object self_73861, object r_73357) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732810;
 c_732810.tag = closureN_tag;
@@ -2832,7 +2832,7 @@ return_funcall1((closure)&c_732810,  &c_732825);;
 }
 
 static void __lambda_334(int argc, object self_73862, object k_73360, object i_91at_7351, object i_91from_7350) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732827;
 c_732827.tag = closureN_tag;
@@ -2851,7 +2851,7 @@ return_funcall1((closure)&c_732827,  __num_eq(i_91from_7350, cell_get(((closureN
 }
 
 static void __lambda_333(int argc, object self_73863, object r_73361) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 if( !eq(boolean_f, r_73361) ){ 
   return_funcall1(  ((closureN)self_73863)->elts[3],  ((closureN)self_73863)->elts[5]);
 } else { 
@@ -2874,7 +2874,7 @@ return_funcall0((closure)&c_732832);}
 }
 
 static void __lambda_332(int argc, object self_73864) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732834;
 c_732834.tag = closureN_tag;
@@ -2892,7 +2892,7 @@ return_funcall1((closure)&c_732834,  Cyc_vector_ref(((closureN)self_73864)->elts
 }
 
 static void __lambda_331(int argc, object self_73865, object r_73365) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732836;
 c_732836.tag = closureN_tag;
@@ -2909,7 +2909,7 @@ return_funcall1((closure)&c_732836,  Cyc_vector_set(((closureN)self_73865)->elts
 }
 
 static void __lambda_330(int argc, object self_73866, object r_73362) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732838;
 c_732838.tag = closureN_tag;
@@ -2929,7 +2929,7 @@ return_funcall1((closure)&c_732838,  &c_732854);;
 }
 
 static void __lambda_329(int argc, object self_73867, object r_73363) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732840;
 c_732840.tag = closureN_tag;
@@ -2949,12 +2949,12 @@ return_funcall1((closure)&c_732840,  &c_732849);;
 }
 
 static void __lambda_328(int argc, object self_73868, object r_73364) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 return_funcall3(  cell_get(((closureN)self_73868)->elts[1]),  ((closureN)self_73868)->elts[0], ((closureN)self_73868)->elts[2], r_73364);; 
 }
 
 static void __lambda_327(int argc, object self_73869, object r_73359) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732812;
 c_732812.tag = closureN_tag;
@@ -2971,12 +2971,12 @@ return_funcall1((closure)&c_732812,  Cyc_set_car(((closureN)self_73869)->elts[2]
 }
 
 static void __lambda_326(int argc, object self_73870, object r_73358) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 return_funcall3(  cell_get(((closureN)self_73870)->elts[2]),  ((closureN)self_73870)->elts[1], ((closureN)self_73870)->elts[0], cell_get(((closureN)self_73870)->elts[3]));; 
 }
 
 static void __lambda_325(int argc, object self_73871, object k_73367) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732786;
 c_732786.tag = closureN_tag;
@@ -2994,7 +2994,7 @@ return_funcall1((closure)&c_732786,  &c_732804);;
 }
 
 static void __lambda_324(int argc, object self_73872, object r_73369) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732788;
 c_732788.tag = closureN_tag;
@@ -3012,7 +3012,7 @@ return_funcall1((closure)&c_732788,  __num_gt(r_73369, &c_732801));;
 }
 
 static void __lambda_323(int argc, object self_73873, object r_73368) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 if( !eq(boolean_f, r_73368) ){ 
   return_funcall1(  ((closureN)self_73873)->elts[0],  cadr(((closureN)self_73873)->elts[2]));
 } else { 
@@ -3021,7 +3021,7 @@ if( !eq(boolean_f, r_73368) ){
 }
 
 static void __lambda_322(int argc, object self_73874, object k_73371) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732762;
 c_732762.tag = closureN_tag;
@@ -3038,7 +3038,7 @@ return_funcall1((closure)&c_732762,  &c_732778);;
 }
 
 static void __lambda_321(int argc, object self_73875, object r_73373) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_732764;
 c_732764.tag = closureN_tag;
@@ -3055,7 +3055,7 @@ return_funcall1((closure)&c_732764,  __num_gt(r_73373, &c_732775));;
 }
 
 static void __lambda_320(int argc, object self_73876, object r_73372) {
-  Cyc_st_add("scheme/base.c:vector-copy!");
+  Cyc_st_add("scheme/base.sld:vector-copy!");
 if( !eq(boolean_f, r_73372) ){ 
   return_funcall1(  ((closureN)self_73876)->elts[0],  car(((closureN)self_73876)->elts[1]));
 } else { 
@@ -3067,7 +3067,7 @@ return_funcall1(  ((closureN)self_73876)->elts[0],  &c_732772);}
 
 static void __lambda_319(int argc, closure _,object k_73377, object vec_7353, object opts_7352_raw, ...) {
 load_varargs(opts_7352, opts_7352_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732580;
 c_732580.tag = closureN_tag;
@@ -3083,7 +3083,7 @@ return_funcall4((closure)&c_732580,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_318(int argc, object self_73877, object len_7357, object start_7356, object end_7355, object loop_7354) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732582;
 c_732582.tag = closureN_tag;
@@ -3104,7 +3104,7 @@ return_funcall1((closure)&c_732582,  &c_732741);;
 }
 
 static void __lambda_317(int argc, object self_73878, object len_7357) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732584;
 c_732584.tag = closureN_tag;
@@ -3125,7 +3125,7 @@ return_funcall1((closure)&c_732584,  &c_732737);;
 }
 
 static void __lambda_316(int argc, object self_73879, object start_7356) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732586;
 c_732586.tag = closureN_tag;
@@ -3146,7 +3146,7 @@ return_funcall1((closure)&c_732586,  &c_732733);;
 }
 
 static void __lambda_315(int argc, object self_73880, object end_7355) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732588;
 c_732588.tag = closureN_tag;
@@ -3167,7 +3167,7 @@ return_funcall1((closure)&c_732588,  &c_732729);;
 }
 
 static void __lambda_314(int argc, object self_73881, object loop_7354) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732590;
 c_732590.tag = closureN_tag;
@@ -3187,7 +3187,7 @@ return_funcall0((closure)&c_732590);;
 }
 
 static void __lambda_313(int argc, object self_73882) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732592;
 c_732592.tag = closureN_tag;
@@ -3209,7 +3209,7 @@ return_funcall1((closure)&c_732592,  &c_732725);;
 }
 
 static void __lambda_312(int argc, object self_73883, object r_73398) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732594;
 c_732594.tag = closureN_tag;
@@ -3229,7 +3229,7 @@ return_funcall1((closure)&c_732594,  Cyc_set_car(((closureN)self_73883)->elts[2]
 }
 
 static void __lambda_311(int argc, object self_73884, object r_73378) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732596;
 c_732596.tag = closureN_tag;
@@ -3258,7 +3258,7 @@ return_funcall1((closure)&c_732596,  &c_732616);;
 }
 
 static void __lambda_310(int argc, object self_73885, object r_73394) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732618;
 c_732618.tag = closureN_tag;
@@ -3278,7 +3278,7 @@ return_funcall1((closure)&c_732618,  Cyc_set_car(((closureN)self_73885)->elts[5]
 }
 
 static void __lambda_309(int argc, object self_73886, object r_73379) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732620;
 c_732620.tag = closureN_tag;
@@ -3306,7 +3306,7 @@ return_funcall1((closure)&c_732620,  &c_732642);;
 }
 
 static void __lambda_308(int argc, object self_73887, object r_73390) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732644;
 c_732644.tag = closureN_tag;
@@ -3324,7 +3324,7 @@ return_funcall1((closure)&c_732644,  Cyc_set_car(((closureN)self_73887)->elts[0]
 }
 
 static void __lambda_307(int argc, object self_73888, object r_73380) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732646;
 c_732646.tag = closureN_tag;
@@ -3352,7 +3352,7 @@ return_funcall1((closure)&c_732646,  &c_732676);;
 }
 
 static void __lambda_306(int argc, object self_73889, object k_73385, object i_7359, object new_91vec_7358) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732678;
 c_732678.tag = closureN_tag;
@@ -3370,7 +3370,7 @@ return_funcall1((closure)&c_732678,  __num_eq(i_7359, cell_get(((closureN)self_7
 }
 
 static void __lambda_305(int argc, object self_73890, object r_73386) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 if( !eq(boolean_f, r_73386) ){ 
   return_funcall1(  ((closureN)self_73890)->elts[1],  ((closureN)self_73890)->elts[3]);
 } else { 
@@ -3392,7 +3392,7 @@ return_funcall0((closure)&c_732683);}
 }
 
 static void __lambda_304(int argc, object self_73891) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732685;
 c_732685.tag = closureN_tag;
@@ -3409,7 +3409,7 @@ return_funcall1((closure)&c_732685,  Cyc_vector_ref(((closureN)self_73891)->elts
 }
 
 static void __lambda_303(int argc, object self_73892, object r_73389) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732687;
 c_732687.tag = closureN_tag;
@@ -3426,7 +3426,7 @@ return_funcall1((closure)&c_732687,  Cyc_vector_set(((closureN)self_73892)->elts
 }
 
 static void __lambda_302(int argc, object self_73893, object r_73387) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732689;
 c_732689.tag = closureN_tag;
@@ -3446,12 +3446,12 @@ return_funcall1((closure)&c_732689,  &c_732698);;
 }
 
 static void __lambda_301(int argc, object self_73894, object r_73388) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 return_funcall3(  cell_get(((closureN)self_73894)->elts[1]),  ((closureN)self_73894)->elts[0], r_73388, ((closureN)self_73894)->elts[2]);; 
 }
 
 static void __lambda_300(int argc, object self_73895, object r_73384) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732648;
 c_732648.tag = closureN_tag;
@@ -3468,7 +3468,7 @@ return_funcall1((closure)&c_732648,  Cyc_set_car(((closureN)self_73895)->elts[2]
 }
 
 static void __lambda_299(int argc, object self_73896, object r_73381) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732650;
 c_732650.tag = closureN_tag;
@@ -3486,7 +3486,7 @@ return_funcall1((closure)&c_732650,  &c_732666);;
 }
 
 static void __lambda_298(int argc, object self_73897, object r_73383) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732652;
 c_732652.tag = closureN_tag;
@@ -3504,12 +3504,12 @@ return_funcall1((closure)&c_732652,  c_732663);;
 }
 
 static void __lambda_297(int argc, object self_73898, object r_73382) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 return_funcall3(  cell_get(((closureN)self_73898)->elts[1]),  ((closureN)self_73898)->elts[0], cell_get(((closureN)self_73898)->elts[2]), r_73382);; 
 }
 
 static void __lambda_296(int argc, object self_73899, object k_73391) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732622;
 c_732622.tag = closureN_tag;
@@ -3527,7 +3527,7 @@ return_funcall1((closure)&c_732622,  &c_732640);;
 }
 
 static void __lambda_295(int argc, object self_73900, object r_73393) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732624;
 c_732624.tag = closureN_tag;
@@ -3545,7 +3545,7 @@ return_funcall1((closure)&c_732624,  __num_gt(r_73393, &c_732637));;
 }
 
 static void __lambda_294(int argc, object self_73901, object r_73392) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 if( !eq(boolean_f, r_73392) ){ 
   return_funcall1(  ((closureN)self_73901)->elts[0],  cadr(((closureN)self_73901)->elts[2]));
 } else { 
@@ -3554,7 +3554,7 @@ if( !eq(boolean_f, r_73392) ){
 }
 
 static void __lambda_293(int argc, object self_73902, object k_73395) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732598;
 c_732598.tag = closureN_tag;
@@ -3571,7 +3571,7 @@ return_funcall1((closure)&c_732598,  &c_732614);;
 }
 
 static void __lambda_292(int argc, object self_73903, object r_73397) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_732600;
 c_732600.tag = closureN_tag;
@@ -3588,7 +3588,7 @@ return_funcall1((closure)&c_732600,  __num_gt(r_73397, &c_732611));;
 }
 
 static void __lambda_291(int argc, object self_73904, object r_73396) {
-  Cyc_st_add("scheme/base.c:vector-copy");
+  Cyc_st_add("scheme/base.sld:vector-copy");
 if( !eq(boolean_f, r_73396) ){ 
   return_funcall1(  ((closureN)self_73904)->elts[0],  car(((closureN)self_73904)->elts[1]));
 } else { 
@@ -3600,7 +3600,7 @@ return_funcall1(  ((closureN)self_73904)->elts[0],  &c_732608);}
 
 static void __lambda_290(int argc, closure _,object k_73401, object vecs_7360_raw, ...) {
 load_varargs(vecs_7360, vecs_7360_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:vector-append");
+  Cyc_st_add("scheme/base.sld:vector-append");
 
 closureN_type c_732567;
 c_732567.tag = closureN_tag;
@@ -3614,7 +3614,7 @@ return_funcall3(  __glo_map,  &c_732567, __glo_vector_91_125list, vecs_7360);;
 }
 
 static void __lambda_289(int argc, object self_73905, object r_73403) {
-  Cyc_st_add("scheme/base.c:vector-append");
+  Cyc_st_add("scheme/base.sld:vector-append");
 
 closureN_type c_732569;
 c_732569.tag = closureN_tag;
@@ -3630,14 +3630,14 @@ return_funcall1((closure)&c_732569,  c_732577);;
 }
 
 static void __lambda_288(int argc, object self_73906, object r_73402) {
-  Cyc_st_add("scheme/base.c:vector-append");
+  Cyc_st_add("scheme/base.sld:vector-append");
 
 object c_732574 = Cyc_list2vector(  ((closureN)self_73906)->elts[0], r_73402);
 return_funcall1(  ((closureN)self_73906)->elts[0],  c_732574);; 
 }
 
 static void __lambda_287(int argc, closure _,object k_73406, object func_7362, object vec_7361) {
-  Cyc_st_add("scheme/base.c:vector-for-each");
+  Cyc_st_add("scheme/base.sld:vector-for-each");
 
 closureN_type c_732561;
 c_732561.tag = closureN_tag;
@@ -3652,12 +3652,12 @@ return_funcall2(  __glo_vector_91_125list,  &c_732561, vec_7361);;
 }
 
 static void __lambda_286(int argc, object self_73907, object r_73407) {
-  Cyc_st_add("scheme/base.c:vector-for-each");
+  Cyc_st_add("scheme/base.sld:vector-for-each");
 return_funcall3(  __glo_for_91each,  ((closureN)self_73907)->elts[1], ((closureN)self_73907)->elts[0], r_73407);; 
 }
 
 static void __lambda_285(int argc, closure _,object k_73410, object func_7364, object vec_7363) {
-  Cyc_st_add("scheme/base.c:vector-map");
+  Cyc_st_add("scheme/base.sld:vector-map");
 
 closureN_type c_732550;
 c_732550.tag = closureN_tag;
@@ -3672,7 +3672,7 @@ return_funcall2(  __glo_vector_91_125list,  &c_732550, vec_7363);;
 }
 
 static void __lambda_284(int argc, object self_73908, object r_73412) {
-  Cyc_st_add("scheme/base.c:vector-map");
+  Cyc_st_add("scheme/base.sld:vector-map");
 
 closureN_type c_732552;
 c_732552.tag = closureN_tag;
@@ -3686,14 +3686,14 @@ return_funcall3(  __glo_map,  &c_732552, ((closureN)self_73908)->elts[0], r_7341
 }
 
 static void __lambda_283(int argc, object self_73909, object r_73411) {
-  Cyc_st_add("scheme/base.c:vector-map");
+  Cyc_st_add("scheme/base.sld:vector-map");
 
 object c_732557 = Cyc_list2vector(  ((closureN)self_73909)->elts[0], r_73411);
 return_funcall1(  ((closureN)self_73909)->elts[0],  c_732557);; 
 }
 
 static void __lambda_282(int argc, closure _,object k_73415, object func_7366, object str_7365) {
-  Cyc_st_add("scheme/base.c:string-for-each");
+  Cyc_st_add("scheme/base.sld:string-for-each");
 
 closureN_type c_732544;
 c_732544.tag = closureN_tag;
@@ -3708,12 +3708,12 @@ return_funcall2(  __glo_string_91_125list,  &c_732544, str_7365);;
 }
 
 static void __lambda_281(int argc, object self_73910, object r_73416) {
-  Cyc_st_add("scheme/base.c:string-for-each");
+  Cyc_st_add("scheme/base.sld:string-for-each");
 return_funcall3(  __glo_for_91each,  ((closureN)self_73910)->elts[1], ((closureN)self_73910)->elts[0], r_73416);; 
 }
 
 static void __lambda_280(int argc, closure _,object k_73419, object func_7368, object str_7367) {
-  Cyc_st_add("scheme/base.c:string-map");
+  Cyc_st_add("scheme/base.sld:string-map");
 
 closureN_type c_732533;
 c_732533.tag = closureN_tag;
@@ -3728,7 +3728,7 @@ return_funcall2(  __glo_string_91_125list,  &c_732533, str_7367);;
 }
 
 static void __lambda_279(int argc, object self_73911, object r_73421) {
-  Cyc_st_add("scheme/base.c:string-map");
+  Cyc_st_add("scheme/base.sld:string-map");
 
 closureN_type c_732535;
 c_732535.tag = closureN_tag;
@@ -3742,7 +3742,7 @@ return_funcall3(  __glo_map,  &c_732535, ((closureN)self_73911)->elts[0], r_7342
 }
 
 static void __lambda_278(int argc, object self_73912, object r_73420) {
-  Cyc_st_add("scheme/base.c:string-map");
+  Cyc_st_add("scheme/base.sld:string-map");
 
 string_type c_732540 = Cyc_list2string(r_73420);
 return_funcall1(  ((closureN)self_73912)->elts[0],  &c_732540);; 
@@ -3750,7 +3750,7 @@ return_funcall1(  ((closureN)self_73912)->elts[0],  &c_732540);;
 
 static void __lambda_277(int argc, closure _,object k_73424, object str_7371, object fill_7370, object opts_7369_raw, ...) {
 load_varargs(opts_7369, opts_7369_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732391;
 c_732391.tag = closureN_tag;
@@ -3767,7 +3767,7 @@ return_funcall4((closure)&c_732391,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_276(int argc, object self_73913, object len_7375, object start_7374, object end_7373, object loop_7372) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732393;
 c_732393.tag = closureN_tag;
@@ -3789,7 +3789,7 @@ return_funcall1((closure)&c_732393,  &c_732530);;
 }
 
 static void __lambda_275(int argc, object self_73914, object len_7375) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732395;
 c_732395.tag = closureN_tag;
@@ -3811,7 +3811,7 @@ return_funcall1((closure)&c_732395,  &c_732526);;
 }
 
 static void __lambda_274(int argc, object self_73915, object start_7374) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732397;
 c_732397.tag = closureN_tag;
@@ -3833,7 +3833,7 @@ return_funcall1((closure)&c_732397,  &c_732522);;
 }
 
 static void __lambda_273(int argc, object self_73916, object end_7373) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732399;
 c_732399.tag = closureN_tag;
@@ -3855,7 +3855,7 @@ return_funcall1((closure)&c_732399,  &c_732518);;
 }
 
 static void __lambda_272(int argc, object self_73917, object loop_7372) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732401;
 c_732401.tag = closureN_tag;
@@ -3876,7 +3876,7 @@ return_funcall0((closure)&c_732401);;
 }
 
 static void __lambda_271(int argc, object self_73918) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732403;
 c_732403.tag = closureN_tag;
@@ -3899,7 +3899,7 @@ return_funcall1((closure)&c_732403,  &c_732514);;
 }
 
 static void __lambda_270(int argc, object self_73919, object r_73442) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732405;
 c_732405.tag = closureN_tag;
@@ -3920,7 +3920,7 @@ return_funcall1((closure)&c_732405,  Cyc_set_car(((closureN)self_73919)->elts[3]
 }
 
 static void __lambda_269(int argc, object self_73920, object r_73425) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732407;
 c_732407.tag = closureN_tag;
@@ -3950,7 +3950,7 @@ return_funcall1((closure)&c_732407,  &c_732427);;
 }
 
 static void __lambda_268(int argc, object self_73921, object r_73438) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732429;
 c_732429.tag = closureN_tag;
@@ -3971,7 +3971,7 @@ return_funcall1((closure)&c_732429,  Cyc_set_car(((closureN)self_73921)->elts[6]
 }
 
 static void __lambda_267(int argc, object self_73922, object r_73426) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732431;
 c_732431.tag = closureN_tag;
@@ -4000,7 +4000,7 @@ return_funcall1((closure)&c_732431,  &c_732453);;
 }
 
 static void __lambda_266(int argc, object self_73923, object r_73434) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732455;
 c_732455.tag = closureN_tag;
@@ -4019,7 +4019,7 @@ return_funcall1((closure)&c_732455,  Cyc_set_car(((closureN)self_73923)->elts[0]
 }
 
 static void __lambda_265(int argc, object self_73924, object r_73427) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732457;
 c_732457.tag = closureN_tag;
@@ -4047,7 +4047,7 @@ return_funcall1((closure)&c_732457,  &c_732471);;
 }
 
 static void __lambda_264(int argc, object self_73925, object k_73430, object i_7376) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732473;
 c_732473.tag = closureN_tag;
@@ -4065,7 +4065,7 @@ return_funcall1((closure)&c_732473,  __num_eq(i_7376, cell_get(((closureN)self_7
 }
 
 static void __lambda_263(int argc, object self_73926, object r_73431) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 if( !eq(boolean_f, r_73431) ){ 
   return_funcall1(  ((closureN)self_73926)->elts[2],  ((closureN)self_73926)->elts[4]);
 } else { 
@@ -4087,7 +4087,7 @@ return_funcall0((closure)&c_732478);}
 }
 
 static void __lambda_262(int argc, object self_73927) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732480;
 c_732480.tag = closureN_tag;
@@ -4103,7 +4103,7 @@ return_funcall1((closure)&c_732480,  Cyc_string_set(((closureN)self_73927)->elts
 }
 
 static void __lambda_261(int argc, object self_73928, object r_73432) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732482;
 c_732482.tag = closureN_tag;
@@ -4122,12 +4122,12 @@ return_funcall1((closure)&c_732482,  &c_732490);;
 }
 
 static void __lambda_260(int argc, object self_73929, object r_73433) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 return_funcall2(  cell_get(((closureN)self_73929)->elts[1]),  ((closureN)self_73929)->elts[0], r_73433);; 
 }
 
 static void __lambda_259(int argc, object self_73930, object r_73429) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732459;
 c_732459.tag = closureN_tag;
@@ -4143,12 +4143,12 @@ return_funcall1((closure)&c_732459,  Cyc_set_car(((closureN)self_73930)->elts[1]
 }
 
 static void __lambda_258(int argc, object self_73931, object r_73428) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 return_funcall2(  cell_get(((closureN)self_73931)->elts[1]),  ((closureN)self_73931)->elts[0], cell_get(((closureN)self_73931)->elts[2]));; 
 }
 
 static void __lambda_257(int argc, object self_73932, object k_73435) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732433;
 c_732433.tag = closureN_tag;
@@ -4166,7 +4166,7 @@ return_funcall1((closure)&c_732433,  &c_732451);;
 }
 
 static void __lambda_256(int argc, object self_73933, object r_73437) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732435;
 c_732435.tag = closureN_tag;
@@ -4184,7 +4184,7 @@ return_funcall1((closure)&c_732435,  __num_gt(r_73437, &c_732448));;
 }
 
 static void __lambda_255(int argc, object self_73934, object r_73436) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 if( !eq(boolean_f, r_73436) ){ 
   return_funcall1(  ((closureN)self_73934)->elts[0],  cadr(((closureN)self_73934)->elts[2]));
 } else { 
@@ -4193,7 +4193,7 @@ if( !eq(boolean_f, r_73436) ){
 }
 
 static void __lambda_254(int argc, object self_73935, object k_73439) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732409;
 c_732409.tag = closureN_tag;
@@ -4210,7 +4210,7 @@ return_funcall1((closure)&c_732409,  &c_732425);;
 }
 
 static void __lambda_253(int argc, object self_73936, object r_73441) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_732411;
 c_732411.tag = closureN_tag;
@@ -4227,7 +4227,7 @@ return_funcall1((closure)&c_732411,  __num_gt(r_73441, &c_732422));;
 }
 
 static void __lambda_252(int argc, object self_73937, object r_73440) {
-  Cyc_st_add("scheme/base.c:string-fill!");
+  Cyc_st_add("scheme/base.sld:string-fill!");
 if( !eq(boolean_f, r_73440) ){ 
   return_funcall1(  ((closureN)self_73937)->elts[0],  car(((closureN)self_73937)->elts[1]));
 } else { 
@@ -4239,7 +4239,7 @@ return_funcall1(  ((closureN)self_73937)->elts[0],  &c_732419);}
 
 static void __lambda_251(int argc, closure _,object k_73445, object to_7380, object at_7379, object from_7378, object opts_7377_raw, ...) {
 load_varargs(opts_7377, opts_7377_raw, argc - 4);
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732235;
 c_732235.tag = closureN_tag;
@@ -4257,7 +4257,7 @@ return_funcall4((closure)&c_732235,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_250(int argc, object self_73938, object len_7384, object start_7383, object end_7382, object loop_7381) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732237;
 c_732237.tag = closureN_tag;
@@ -4280,7 +4280,7 @@ return_funcall1((closure)&c_732237,  &c_732388);;
 }
 
 static void __lambda_249(int argc, object self_73939, object len_7384) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732239;
 c_732239.tag = closureN_tag;
@@ -4303,7 +4303,7 @@ return_funcall1((closure)&c_732239,  &c_732384);;
 }
 
 static void __lambda_248(int argc, object self_73940, object start_7383) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732241;
 c_732241.tag = closureN_tag;
@@ -4326,7 +4326,7 @@ return_funcall1((closure)&c_732241,  &c_732380);;
 }
 
 static void __lambda_247(int argc, object self_73941, object end_7382) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732243;
 c_732243.tag = closureN_tag;
@@ -4349,7 +4349,7 @@ return_funcall1((closure)&c_732243,  &c_732376);;
 }
 
 static void __lambda_246(int argc, object self_73942, object loop_7381) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732245;
 c_732245.tag = closureN_tag;
@@ -4371,7 +4371,7 @@ return_funcall0((closure)&c_732245);;
 }
 
 static void __lambda_245(int argc, object self_73943) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732247;
 c_732247.tag = closureN_tag;
@@ -4395,7 +4395,7 @@ return_funcall1((closure)&c_732247,  &c_732372);;
 }
 
 static void __lambda_244(int argc, object self_73944, object r_73465) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732249;
 c_732249.tag = closureN_tag;
@@ -4417,7 +4417,7 @@ return_funcall1((closure)&c_732249,  Cyc_set_car(((closureN)self_73944)->elts[4]
 }
 
 static void __lambda_243(int argc, object self_73945, object r_73446) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732251;
 c_732251.tag = closureN_tag;
@@ -4448,7 +4448,7 @@ return_funcall1((closure)&c_732251,  &c_732271);;
 }
 
 static void __lambda_242(int argc, object self_73946, object r_73461) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732273;
 c_732273.tag = closureN_tag;
@@ -4470,7 +4470,7 @@ return_funcall1((closure)&c_732273,  Cyc_set_car(((closureN)self_73946)->elts[7]
 }
 
 static void __lambda_241(int argc, object self_73947, object r_73447) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732275;
 c_732275.tag = closureN_tag;
@@ -4500,7 +4500,7 @@ return_funcall1((closure)&c_732275,  &c_732297);;
 }
 
 static void __lambda_240(int argc, object self_73948, object r_73457) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732299;
 c_732299.tag = closureN_tag;
@@ -4520,7 +4520,7 @@ return_funcall1((closure)&c_732299,  Cyc_set_car(((closureN)self_73948)->elts[1]
 }
 
 static void __lambda_239(int argc, object self_73949, object r_73448) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732301;
 c_732301.tag = closureN_tag;
@@ -4549,7 +4549,7 @@ return_funcall1((closure)&c_732301,  &c_732316);;
 }
 
 static void __lambda_238(int argc, object self_73950, object k_73451, object i_91at_7386, object i_91from_7385) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732318;
 c_732318.tag = closureN_tag;
@@ -4568,7 +4568,7 @@ return_funcall1((closure)&c_732318,  __num_eq(i_91from_7385, cell_get(((closureN
 }
 
 static void __lambda_237(int argc, object self_73951, object r_73452) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 if( !eq(boolean_f, r_73452) ){ 
   return_funcall1(  ((closureN)self_73951)->elts[3],  ((closureN)self_73951)->elts[5]);
 } else { 
@@ -4591,7 +4591,7 @@ return_funcall0((closure)&c_732323);}
 }
 
 static void __lambda_236(int argc, object self_73952) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732325;
 c_732325.tag = closureN_tag;
@@ -4609,7 +4609,7 @@ return_funcall1((closure)&c_732325,  Cyc_string_ref(((closureN)self_73952)->elts
 }
 
 static void __lambda_235(int argc, object self_73953, object r_73456) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732327;
 c_732327.tag = closureN_tag;
@@ -4626,7 +4626,7 @@ return_funcall1((closure)&c_732327,  Cyc_string_set(((closureN)self_73953)->elts
 }
 
 static void __lambda_234(int argc, object self_73954, object r_73453) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732329;
 c_732329.tag = closureN_tag;
@@ -4646,7 +4646,7 @@ return_funcall1((closure)&c_732329,  &c_732345);;
 }
 
 static void __lambda_233(int argc, object self_73955, object r_73454) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732331;
 c_732331.tag = closureN_tag;
@@ -4666,12 +4666,12 @@ return_funcall1((closure)&c_732331,  &c_732340);;
 }
 
 static void __lambda_232(int argc, object self_73956, object r_73455) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 return_funcall3(  cell_get(((closureN)self_73956)->elts[1]),  ((closureN)self_73956)->elts[0], ((closureN)self_73956)->elts[2], r_73455);; 
 }
 
 static void __lambda_231(int argc, object self_73957, object r_73450) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732303;
 c_732303.tag = closureN_tag;
@@ -4688,12 +4688,12 @@ return_funcall1((closure)&c_732303,  Cyc_set_car(((closureN)self_73957)->elts[2]
 }
 
 static void __lambda_230(int argc, object self_73958, object r_73449) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 return_funcall3(  cell_get(((closureN)self_73958)->elts[2]),  ((closureN)self_73958)->elts[1], ((closureN)self_73958)->elts[0], cell_get(((closureN)self_73958)->elts[3]));; 
 }
 
 static void __lambda_229(int argc, object self_73959, object k_73458) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732277;
 c_732277.tag = closureN_tag;
@@ -4711,7 +4711,7 @@ return_funcall1((closure)&c_732277,  &c_732295);;
 }
 
 static void __lambda_228(int argc, object self_73960, object r_73460) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732279;
 c_732279.tag = closureN_tag;
@@ -4729,7 +4729,7 @@ return_funcall1((closure)&c_732279,  __num_gt(r_73460, &c_732292));;
 }
 
 static void __lambda_227(int argc, object self_73961, object r_73459) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 if( !eq(boolean_f, r_73459) ){ 
   return_funcall1(  ((closureN)self_73961)->elts[0],  cadr(((closureN)self_73961)->elts[2]));
 } else { 
@@ -4738,7 +4738,7 @@ if( !eq(boolean_f, r_73459) ){
 }
 
 static void __lambda_226(int argc, object self_73962, object k_73462) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732253;
 c_732253.tag = closureN_tag;
@@ -4755,7 +4755,7 @@ return_funcall1((closure)&c_732253,  &c_732269);;
 }
 
 static void __lambda_225(int argc, object self_73963, object r_73464) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_732255;
 c_732255.tag = closureN_tag;
@@ -4772,7 +4772,7 @@ return_funcall1((closure)&c_732255,  __num_gt(r_73464, &c_732266));;
 }
 
 static void __lambda_224(int argc, object self_73964, object r_73463) {
-  Cyc_st_add("scheme/base.c:string-copy!");
+  Cyc_st_add("scheme/base.sld:string-copy!");
 if( !eq(boolean_f, r_73463) ){ 
   return_funcall1(  ((closureN)self_73964)->elts[0],  car(((closureN)self_73964)->elts[1]));
 } else { 
@@ -4784,7 +4784,7 @@ return_funcall1(  ((closureN)self_73964)->elts[0],  &c_732263);}
 
 static void __lambda_223(int argc, closure _,object k_73468, object str_7388, object opts_7387_raw, ...) {
 load_varargs(opts_7387, opts_7387_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732134;
 c_732134.tag = closureN_tag;
@@ -4800,7 +4800,7 @@ return_funcall3((closure)&c_732134,  boolean_f, boolean_f, boolean_f);;
 }
 
 static void __lambda_222(int argc, object self_73965, object len_7391, object start_7390, object end_7389) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732136;
 c_732136.tag = closureN_tag;
@@ -4820,7 +4820,7 @@ return_funcall1((closure)&c_732136,  &c_732232);;
 }
 
 static void __lambda_221(int argc, object self_73966, object len_7391) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732138;
 c_732138.tag = closureN_tag;
@@ -4840,7 +4840,7 @@ return_funcall1((closure)&c_732138,  &c_732228);;
 }
 
 static void __lambda_220(int argc, object self_73967, object start_7390) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732140;
 c_732140.tag = closureN_tag;
@@ -4860,7 +4860,7 @@ return_funcall1((closure)&c_732140,  &c_732224);;
 }
 
 static void __lambda_219(int argc, object self_73968, object end_7389) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732142;
 c_732142.tag = closureN_tag;
@@ -4879,7 +4879,7 @@ return_funcall0((closure)&c_732142);;
 }
 
 static void __lambda_218(int argc, object self_73969) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732144;
 c_732144.tag = closureN_tag;
@@ -4900,7 +4900,7 @@ return_funcall1((closure)&c_732144,  &c_732220);;
 }
 
 static void __lambda_217(int argc, object self_73970, object r_73480) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732146;
 c_732146.tag = closureN_tag;
@@ -4919,7 +4919,7 @@ return_funcall1((closure)&c_732146,  Cyc_set_car(((closureN)self_73970)->elts[2]
 }
 
 static void __lambda_216(int argc, object self_73971, object r_73469) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732148;
 c_732148.tag = closureN_tag;
@@ -4947,7 +4947,7 @@ return_funcall1((closure)&c_732148,  &c_732168);;
 }
 
 static void __lambda_215(int argc, object self_73972, object r_73476) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732170;
 c_732170.tag = closureN_tag;
@@ -4966,7 +4966,7 @@ return_funcall1((closure)&c_732170,  Cyc_set_car(((closureN)self_73972)->elts[4]
 }
 
 static void __lambda_214(int argc, object self_73973, object r_73470) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732172;
 c_732172.tag = closureN_tag;
@@ -4993,7 +4993,7 @@ return_funcall1((closure)&c_732172,  &c_732194);;
 }
 
 static void __lambda_213(int argc, object self_73974, object r_73472) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732196;
 c_732196.tag = closureN_tag;
@@ -5010,14 +5010,14 @@ return_funcall1((closure)&c_732196,  Cyc_set_car(((closureN)self_73974)->elts[0]
 }
 
 static void __lambda_212(int argc, object self_73975, object r_73471) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 string_type c_732201 = Cyc_substring(((closureN)self_73975)->elts[3], cell_get(((closureN)self_73975)->elts[2]), cell_get(((closureN)self_73975)->elts[0]));
 return_funcall1(  ((closureN)self_73975)->elts[1],  &c_732201);; 
 }
 
 static void __lambda_211(int argc, object self_73976, object k_73473) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732174;
 c_732174.tag = closureN_tag;
@@ -5035,7 +5035,7 @@ return_funcall1((closure)&c_732174,  &c_732192);;
 }
 
 static void __lambda_210(int argc, object self_73977, object r_73475) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732176;
 c_732176.tag = closureN_tag;
@@ -5053,7 +5053,7 @@ return_funcall1((closure)&c_732176,  __num_gt(r_73475, &c_732189));;
 }
 
 static void __lambda_209(int argc, object self_73978, object r_73474) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 if( !eq(boolean_f, r_73474) ){ 
   return_funcall1(  ((closureN)self_73978)->elts[0],  cadr(((closureN)self_73978)->elts[2]));
 } else { 
@@ -5062,7 +5062,7 @@ if( !eq(boolean_f, r_73474) ){
 }
 
 static void __lambda_208(int argc, object self_73979, object k_73477) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732150;
 c_732150.tag = closureN_tag;
@@ -5079,7 +5079,7 @@ return_funcall1((closure)&c_732150,  &c_732166);;
 }
 
 static void __lambda_207(int argc, object self_73980, object r_73479) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_732152;
 c_732152.tag = closureN_tag;
@@ -5096,7 +5096,7 @@ return_funcall1((closure)&c_732152,  __num_gt(r_73479, &c_732163));;
 }
 
 static void __lambda_206(int argc, object self_73981, object r_73478) {
-  Cyc_st_add("scheme/base.c:string-copy");
+  Cyc_st_add("scheme/base.sld:string-copy");
 if( !eq(boolean_f, r_73478) ){ 
   return_funcall1(  ((closureN)self_73981)->elts[0],  car(((closureN)self_73981)->elts[1]));
 } else { 
@@ -5108,7 +5108,7 @@ return_funcall1(  ((closureN)self_73981)->elts[0],  &c_732160);}
 
 static void __lambda_205(int argc, closure _,object k_73483, object str_7393, object opts_7392_raw, ...) {
 load_varargs(opts_7392, opts_7392_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:string->vector");
+  Cyc_st_add("scheme/base.sld:string->vector");
 
 closureN_type c_732126;
 c_732126.tag = closureN_tag;
@@ -5122,7 +5122,7 @@ return_funcall2(  __glo_string_91_125list,  &c_732126, str_7393);;
 }
 
 static void __lambda_204(int argc, object self_73982, object r_73484) {
-  Cyc_st_add("scheme/base.c:string->vector");
+  Cyc_st_add("scheme/base.sld:string->vector");
 
 object c_732131 = Cyc_list2vector(  ((closureN)self_73982)->elts[0], r_73484);
 return_funcall1(  ((closureN)self_73982)->elts[0],  c_732131);; 
@@ -5130,7 +5130,7 @@ return_funcall1(  ((closureN)self_73982)->elts[0],  c_732131);;
 
 static void __lambda_203(int argc, closure _,object k_73487, object str_7395, object opts_7394_raw, ...) {
 load_varargs(opts_7394, opts_7394_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731978;
 c_731978.tag = closureN_tag;
@@ -5146,7 +5146,7 @@ return_funcall4((closure)&c_731978,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_202(int argc, object self_73983, object len_7399, object start_7398, object end_7397, object loop_7396) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731980;
 c_731980.tag = closureN_tag;
@@ -5167,7 +5167,7 @@ return_funcall1((closure)&c_731980,  &c_732123);;
 }
 
 static void __lambda_201(int argc, object self_73984, object len_7399) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731982;
 c_731982.tag = closureN_tag;
@@ -5188,7 +5188,7 @@ return_funcall1((closure)&c_731982,  &c_732119);;
 }
 
 static void __lambda_200(int argc, object self_73985, object start_7398) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731984;
 c_731984.tag = closureN_tag;
@@ -5209,7 +5209,7 @@ return_funcall1((closure)&c_731984,  &c_732115);;
 }
 
 static void __lambda_199(int argc, object self_73986, object end_7397) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731986;
 c_731986.tag = closureN_tag;
@@ -5230,7 +5230,7 @@ return_funcall1((closure)&c_731986,  &c_732111);;
 }
 
 static void __lambda_198(int argc, object self_73987, object loop_7396) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731988;
 c_731988.tag = closureN_tag;
@@ -5250,7 +5250,7 @@ return_funcall0((closure)&c_731988);;
 }
 
 static void __lambda_197(int argc, object self_73988) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731990;
 c_731990.tag = closureN_tag;
@@ -5272,7 +5272,7 @@ return_funcall1((closure)&c_731990,  &c_732107);;
 }
 
 static void __lambda_196(int argc, object self_73989, object r_73507) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731992;
 c_731992.tag = closureN_tag;
@@ -5292,7 +5292,7 @@ return_funcall1((closure)&c_731992,  Cyc_set_car(((closureN)self_73989)->elts[2]
 }
 
 static void __lambda_195(int argc, object self_73990, object r_73488) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731994;
 c_731994.tag = closureN_tag;
@@ -5321,7 +5321,7 @@ return_funcall1((closure)&c_731994,  &c_732014);;
 }
 
 static void __lambda_194(int argc, object self_73991, object r_73503) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732016;
 c_732016.tag = closureN_tag;
@@ -5341,7 +5341,7 @@ return_funcall1((closure)&c_732016,  Cyc_set_car(((closureN)self_73991)->elts[5]
 }
 
 static void __lambda_193(int argc, object self_73992, object r_73489) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732018;
 c_732018.tag = closureN_tag;
@@ -5369,7 +5369,7 @@ return_funcall1((closure)&c_732018,  &c_732040);;
 }
 
 static void __lambda_192(int argc, object self_73993, object r_73499) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732042;
 c_732042.tag = closureN_tag;
@@ -5387,7 +5387,7 @@ return_funcall1((closure)&c_732042,  Cyc_set_car(((closureN)self_73993)->elts[0]
 }
 
 static void __lambda_191(int argc, object self_73994, object r_73490) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732044;
 c_732044.tag = closureN_tag;
@@ -5414,7 +5414,7 @@ return_funcall1((closure)&c_732044,  &c_732060);;
 }
 
 static void __lambda_190(int argc, object self_73995, object k_73494, object i_73101, object lst_73100) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732062;
 c_732062.tag = closureN_tag;
@@ -5432,7 +5432,7 @@ return_funcall1((closure)&c_732062,  __num_eq(i_73101, cell_get(((closureN)self_
 }
 
 static void __lambda_189(int argc, object self_73996, object r_73495) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 if( !eq(boolean_f, r_73495) ){ 
   return_funcall2(  __glo_reverse,  ((closureN)self_73996)->elts[1], ((closureN)self_73996)->elts[3]);
 } else { 
@@ -5458,7 +5458,7 @@ return_funcall1((closure)&c_732067,  &c_732088);}
 }
 
 static void __lambda_188(int argc, object self_73997, object r_73496) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732069;
 c_732069.tag = closureN_tag;
@@ -5475,7 +5475,7 @@ return_funcall1((closure)&c_732069,  Cyc_string_ref(((closureN)self_73997)->elts
 }
 
 static void __lambda_187(int argc, object self_73998, object r_73498) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732071;
 c_732071.tag = closureN_tag;
@@ -5493,12 +5493,12 @@ return_funcall1((closure)&c_732071,  &c_732080);;
 }
 
 static void __lambda_186(int argc, object self_73999, object r_73497) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 return_funcall3(  cell_get(((closureN)self_73999)->elts[1]),  ((closureN)self_73999)->elts[0], ((closureN)self_73999)->elts[2], r_73497);; 
 }
 
 static void __lambda_185(int argc, object self_731000, object r_73493) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732046;
 c_732046.tag = closureN_tag;
@@ -5514,7 +5514,7 @@ return_funcall1((closure)&c_732046,  Cyc_set_car(((closureN)self_731000)->elts[1
 }
 
 static void __lambda_184(int argc, object self_731001, object r_73491) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732048;
 c_732048.tag = closureN_tag;
@@ -5530,12 +5530,12 @@ return_funcall1((closure)&c_732048,  nil);;
 }
 
 static void __lambda_183(int argc, object self_731002, object r_73492) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 return_funcall3(  cell_get(((closureN)self_731002)->elts[1]),  ((closureN)self_731002)->elts[0], cell_get(((closureN)self_731002)->elts[2]), r_73492);; 
 }
 
 static void __lambda_182(int argc, object self_731003, object k_73500) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732020;
 c_732020.tag = closureN_tag;
@@ -5553,7 +5553,7 @@ return_funcall1((closure)&c_732020,  &c_732038);;
 }
 
 static void __lambda_181(int argc, object self_731004, object r_73502) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_732022;
 c_732022.tag = closureN_tag;
@@ -5571,7 +5571,7 @@ return_funcall1((closure)&c_732022,  __num_gt(r_73502, &c_732035));;
 }
 
 static void __lambda_180(int argc, object self_731005, object r_73501) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 if( !eq(boolean_f, r_73501) ){ 
   return_funcall1(  ((closureN)self_731005)->elts[0],  cadr(((closureN)self_731005)->elts[2]));
 } else { 
@@ -5580,7 +5580,7 @@ if( !eq(boolean_f, r_73501) ){
 }
 
 static void __lambda_179(int argc, object self_731006, object k_73504) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731996;
 c_731996.tag = closureN_tag;
@@ -5597,7 +5597,7 @@ return_funcall1((closure)&c_731996,  &c_732012);;
 }
 
 static void __lambda_178(int argc, object self_731007, object r_73506) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_731998;
 c_731998.tag = closureN_tag;
@@ -5614,7 +5614,7 @@ return_funcall1((closure)&c_731998,  __num_gt(r_73506, &c_732009));;
 }
 
 static void __lambda_177(int argc, object self_731008, object r_73505) {
-  Cyc_st_add("scheme/base.c:string->list");
+  Cyc_st_add("scheme/base.sld:string->list");
 if( !eq(boolean_f, r_73505) ){ 
   return_funcall1(  ((closureN)self_731008)->elts[0],  car(((closureN)self_731008)->elts[1]));
 } else { 
@@ -5626,7 +5626,7 @@ return_funcall1(  ((closureN)self_731008)->elts[0],  &c_732006);}
 
 static void __lambda_176(int argc, closure _,object k_73510, object vec_73103, object opts_73102_raw, ...) {
 load_varargs(opts_73102, opts_73102_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:vector->string");
+  Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_731960;
 c_731960.tag = closureN_tag;
@@ -5642,7 +5642,7 @@ return_funcall1((closure)&c_731960,  &c_731975);;
 }
 
 static void __lambda_175(int argc, object self_731009, object r_73512) {
-  Cyc_st_add("scheme/base.c:vector->string");
+  Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_731962;
 c_731962.tag = closureN_tag;
@@ -5658,7 +5658,7 @@ return_funcall1((closure)&c_731962,  c_731972);;
 }
 
 static void __lambda_174(int argc, object self_731010, object r_73511) {
-  Cyc_st_add("scheme/base.c:vector->string");
+  Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_731964;
 c_731964.tag = closureN_tag;
@@ -5672,7 +5672,7 @@ return_funcall1((closure)&c_731964,  r_73511);;
 }
 
 static void __lambda_173(int argc, object self_731011, object lst_73104) {
-  Cyc_st_add("scheme/base.c:vector->string");
+  Cyc_st_add("scheme/base.sld:vector->string");
 
 string_type c_731969 = Cyc_list2string(lst_73104);
 return_funcall1(  ((closureN)self_731011)->elts[0],  &c_731969);; 
@@ -5680,7 +5680,7 @@ return_funcall1(  ((closureN)self_731011)->elts[0],  &c_731969);;
 
 static void __lambda_172(int argc, closure _,object k_73515, object vec_73106, object opts_73105_raw, ...) {
 load_varargs(opts_73105, opts_73105_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731812;
 c_731812.tag = closureN_tag;
@@ -5696,7 +5696,7 @@ return_funcall4((closure)&c_731812,  boolean_f, boolean_f, boolean_f, boolean_f)
 }
 
 static void __lambda_171(int argc, object self_731012, object len_73110, object start_73109, object end_73108, object loop_73107) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731814;
 c_731814.tag = closureN_tag;
@@ -5717,7 +5717,7 @@ return_funcall1((closure)&c_731814,  &c_731957);;
 }
 
 static void __lambda_170(int argc, object self_731013, object len_73110) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731816;
 c_731816.tag = closureN_tag;
@@ -5738,7 +5738,7 @@ return_funcall1((closure)&c_731816,  &c_731953);;
 }
 
 static void __lambda_169(int argc, object self_731014, object start_73109) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731818;
 c_731818.tag = closureN_tag;
@@ -5759,7 +5759,7 @@ return_funcall1((closure)&c_731818,  &c_731949);;
 }
 
 static void __lambda_168(int argc, object self_731015, object end_73108) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731820;
 c_731820.tag = closureN_tag;
@@ -5780,7 +5780,7 @@ return_funcall1((closure)&c_731820,  &c_731945);;
 }
 
 static void __lambda_167(int argc, object self_731016, object loop_73107) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731822;
 c_731822.tag = closureN_tag;
@@ -5800,7 +5800,7 @@ return_funcall0((closure)&c_731822);;
 }
 
 static void __lambda_166(int argc, object self_731017) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731824;
 c_731824.tag = closureN_tag;
@@ -5822,7 +5822,7 @@ return_funcall1((closure)&c_731824,  &c_731941);;
 }
 
 static void __lambda_165(int argc, object self_731018, object r_73535) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731826;
 c_731826.tag = closureN_tag;
@@ -5842,7 +5842,7 @@ return_funcall1((closure)&c_731826,  Cyc_set_car(((closureN)self_731018)->elts[2
 }
 
 static void __lambda_164(int argc, object self_731019, object r_73516) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731828;
 c_731828.tag = closureN_tag;
@@ -5871,7 +5871,7 @@ return_funcall1((closure)&c_731828,  &c_731848);;
 }
 
 static void __lambda_163(int argc, object self_731020, object r_73531) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731850;
 c_731850.tag = closureN_tag;
@@ -5891,7 +5891,7 @@ return_funcall1((closure)&c_731850,  Cyc_set_car(((closureN)self_731020)->elts[5
 }
 
 static void __lambda_162(int argc, object self_731021, object r_73517) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731852;
 c_731852.tag = closureN_tag;
@@ -5919,7 +5919,7 @@ return_funcall1((closure)&c_731852,  &c_731874);;
 }
 
 static void __lambda_161(int argc, object self_731022, object r_73527) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731876;
 c_731876.tag = closureN_tag;
@@ -5937,7 +5937,7 @@ return_funcall1((closure)&c_731876,  Cyc_set_car(((closureN)self_731022)->elts[0
 }
 
 static void __lambda_160(int argc, object self_731023, object r_73518) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731878;
 c_731878.tag = closureN_tag;
@@ -5964,7 +5964,7 @@ return_funcall1((closure)&c_731878,  &c_731894);;
 }
 
 static void __lambda_159(int argc, object self_731024, object k_73522, object i_73112, object lst_73111) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731896;
 c_731896.tag = closureN_tag;
@@ -5982,7 +5982,7 @@ return_funcall1((closure)&c_731896,  __num_eq(i_73112, cell_get(((closureN)self_
 }
 
 static void __lambda_158(int argc, object self_731025, object r_73523) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 if( !eq(boolean_f, r_73523) ){ 
   return_funcall2(  __glo_reverse,  ((closureN)self_731025)->elts[1], ((closureN)self_731025)->elts[3]);
 } else { 
@@ -6008,7 +6008,7 @@ return_funcall1((closure)&c_731901,  &c_731922);}
 }
 
 static void __lambda_157(int argc, object self_731026, object r_73524) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731903;
 c_731903.tag = closureN_tag;
@@ -6025,7 +6025,7 @@ return_funcall1((closure)&c_731903,  Cyc_vector_ref(((closureN)self_731026)->elt
 }
 
 static void __lambda_156(int argc, object self_731027, object r_73526) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731905;
 c_731905.tag = closureN_tag;
@@ -6043,12 +6043,12 @@ return_funcall1((closure)&c_731905,  &c_731914);;
 }
 
 static void __lambda_155(int argc, object self_731028, object r_73525) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 return_funcall3(  cell_get(((closureN)self_731028)->elts[1]),  ((closureN)self_731028)->elts[0], ((closureN)self_731028)->elts[2], r_73525);; 
 }
 
 static void __lambda_154(int argc, object self_731029, object r_73521) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731880;
 c_731880.tag = closureN_tag;
@@ -6064,7 +6064,7 @@ return_funcall1((closure)&c_731880,  Cyc_set_car(((closureN)self_731029)->elts[1
 }
 
 static void __lambda_153(int argc, object self_731030, object r_73519) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731882;
 c_731882.tag = closureN_tag;
@@ -6080,12 +6080,12 @@ return_funcall1((closure)&c_731882,  nil);;
 }
 
 static void __lambda_152(int argc, object self_731031, object r_73520) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 return_funcall3(  cell_get(((closureN)self_731031)->elts[1]),  ((closureN)self_731031)->elts[0], cell_get(((closureN)self_731031)->elts[2]), r_73520);; 
 }
 
 static void __lambda_151(int argc, object self_731032, object k_73528) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731854;
 c_731854.tag = closureN_tag;
@@ -6103,7 +6103,7 @@ return_funcall1((closure)&c_731854,  &c_731872);;
 }
 
 static void __lambda_150(int argc, object self_731033, object r_73530) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731856;
 c_731856.tag = closureN_tag;
@@ -6121,7 +6121,7 @@ return_funcall1((closure)&c_731856,  __num_gt(r_73530, &c_731869));;
 }
 
 static void __lambda_149(int argc, object self_731034, object r_73529) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 if( !eq(boolean_f, r_73529) ){ 
   return_funcall1(  ((closureN)self_731034)->elts[0],  cadr(((closureN)self_731034)->elts[2]));
 } else { 
@@ -6130,7 +6130,7 @@ if( !eq(boolean_f, r_73529) ){
 }
 
 static void __lambda_148(int argc, object self_731035, object k_73532) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731830;
 c_731830.tag = closureN_tag;
@@ -6147,7 +6147,7 @@ return_funcall1((closure)&c_731830,  &c_731846);;
 }
 
 static void __lambda_147(int argc, object self_731036, object r_73534) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_731832;
 c_731832.tag = closureN_tag;
@@ -6164,7 +6164,7 @@ return_funcall1((closure)&c_731832,  __num_gt(r_73534, &c_731843));;
 }
 
 static void __lambda_146(int argc, object self_731037, object r_73533) {
-  Cyc_st_add("scheme/base.c:vector->list");
+  Cyc_st_add("scheme/base.sld:vector->list");
 if( !eq(boolean_f, r_73533) ){ 
   return_funcall1(  ((closureN)self_731037)->elts[0],  car(((closureN)self_731037)->elts[1]));
 } else { 
@@ -6176,14 +6176,14 @@ return_funcall1(  ((closureN)self_731037)->elts[0],  &c_731840);}
 
 static void __lambda_145(int argc, closure _,object k_73538, object objs_73113_raw, ...) {
 load_varargs(objs_73113, objs_73113_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:vector");
+  Cyc_st_add("scheme/base.sld:vector");
 
 object c_731809 = Cyc_list2vector(  k_73538, objs_73113);
 return_funcall1(  k_73538,  c_731809);; 
 }
 
 static void __lambda_144(int argc, closure _,object k_73541, object lst_73114) {
-  Cyc_st_add("scheme/base.c:reverse");
+  Cyc_st_add("scheme/base.sld:reverse");
 
 closureN_type c_731801;
 c_731801.tag = closureN_tag;
@@ -6198,12 +6198,12 @@ return_funcall1((closure)&c_731801,  nil);;
 }
 
 static void __lambda_143(int argc, object self_731038, object r_73542) {
-  Cyc_st_add("scheme/base.c:reverse");
+  Cyc_st_add("scheme/base.sld:reverse");
 return_funcall4(  __glo_foldl,  ((closureN)self_731038)->elts[0], primitive_cons, r_73542, ((closureN)self_731038)->elts[1]);; 
 }
 
 static void __lambda_142(int argc, closure _,object k_73545, object lst_73117, object k_73116, object obj_73115) {
-  Cyc_st_add("scheme/base.c:list-set!");
+  Cyc_st_add("scheme/base.sld:list-set!");
 
 closureN_type c_731791;
 c_731791.tag = closureN_tag;
@@ -6218,7 +6218,7 @@ return_funcall3(  __glo_list_91tail,  &c_731791, lst_73117, k_73116);;
 }
 
 static void __lambda_141(int argc, object self_731039, object r_73546) {
-  Cyc_st_add("scheme/base.c:list-set!");
+  Cyc_st_add("scheme/base.sld:list-set!");
 
 closureN_type c_731793;
 c_731793.tag = closureN_tag;
@@ -6233,12 +6233,12 @@ return_funcall1((closure)&c_731793,  r_73546);;
 }
 
 static void __lambda_140(int argc, object self_731040, object kth_73118) {
-  Cyc_st_add("scheme/base.c:list-set!");
+  Cyc_st_add("scheme/base.sld:list-set!");
 return_funcall1(  ((closureN)self_731040)->elts[0],  Cyc_set_car(kth_73118, ((closureN)self_731040)->elts[1]));; 
 }
 
 static void __lambda_139(int argc, closure _,object k_73549, object lst_73120, object k_73119) {
-  Cyc_st_add("scheme/base.c:list-ref");
+  Cyc_st_add("scheme/base.sld:list-ref");
 
 closureN_type c_731784;
 c_731784.tag = closureN_tag;
@@ -6252,12 +6252,12 @@ return_funcall3(  __glo_list_91tail,  &c_731784, lst_73120, k_73119);;
 }
 
 static void __lambda_138(int argc, object self_731041, object r_73550) {
-  Cyc_st_add("scheme/base.c:list-ref");
+  Cyc_st_add("scheme/base.sld:list-ref");
 return_funcall1(  ((closureN)self_731041)->elts[0],  car(r_73550));; 
 }
 
 static void __lambda_137(int argc, closure _,object k_73553, object lst_73122, object k_73121) {
-  Cyc_st_add("scheme/base.c:list-tail");
+  Cyc_st_add("scheme/base.sld:list-tail");
 
 closureN_type c_731763;
 c_731763.tag = closureN_tag;
@@ -6273,7 +6273,7 @@ return_funcall2(  __glo_zero_127,  &c_731763, k_73121);;
 }
 
 static void __lambda_136(int argc, object self_731042, object r_73554) {
-  Cyc_st_add("scheme/base.c:list-tail");
+  Cyc_st_add("scheme/base.sld:list-tail");
 if( !eq(boolean_f, r_73554) ){ 
   return_funcall1(  ((closureN)self_731042)->elts[1],  ((closureN)self_731042)->elts[2]);
 } else { 
@@ -6292,7 +6292,7 @@ return_funcall1((closure)&c_731768,  cdr(((closureN)self_731042)->elts[2]));}
 }
 
 static void __lambda_135(int argc, object self_731043, object r_73555) {
-  Cyc_st_add("scheme/base.c:list-tail");
+  Cyc_st_add("scheme/base.sld:list-tail");
 
 closureN_type c_731770;
 c_731770.tag = closureN_tag;
@@ -6311,12 +6311,12 @@ return_funcall1((closure)&c_731770,  &c_731776);;
 }
 
 static void __lambda_134(int argc, object self_731044, object r_73556) {
-  Cyc_st_add("scheme/base.c:list-tail");
+  Cyc_st_add("scheme/base.sld:list-tail");
 return_funcall3(  __glo_list_91tail,  ((closureN)self_731044)->elts[0], ((closureN)self_731044)->elts[1], r_73556);; 
 }
 
 static void __lambda_133(int argc, closure _,object k_73559, object f_73124, object lst_73123) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_731738;
 c_731738.tag = closureN_tag;
@@ -6332,7 +6332,7 @@ return_funcall1((closure)&c_731738,  Cyc_is_null(lst_73123));;
 }
 
 static void __lambda_132(int argc, object self_731045, object r_73560) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 if( !eq(boolean_f, r_73560) ){ 
   return_funcall1(  ((closureN)self_731045)->elts[1],  boolean_t);
 } else { 
@@ -6352,7 +6352,7 @@ return_funcall0((closure)&c_731742);}
 }
 
 static void __lambda_131(int argc, object self_731046) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_731744;
 c_731744.tag = closureN_tag;
@@ -6368,7 +6368,7 @@ return_funcall1((closure)&c_731744,  car(((closureN)self_731046)->elts[2]));;
 }
 
 static void __lambda_130(int argc, object self_731047, object r_73563) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_731747;
 c_731747.tag = closureN_tag;
@@ -6384,7 +6384,7 @@ return_funcall2(  ((closureN)self_731047)->elts[0],  &c_731747, r_73563);;
 }
 
 static void __lambda_129(int argc, object self_731048, object r_73561) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_731749;
 c_731749.tag = closureN_tag;
@@ -6399,12 +6399,12 @@ return_funcall1((closure)&c_731749,  cdr(((closureN)self_731048)->elts[2]));;
 }
 
 static void __lambda_128(int argc, object self_731049, object r_73562) {
-  Cyc_st_add("scheme/base.c:for-each");
+  Cyc_st_add("scheme/base.sld:for-each");
 return_funcall3(  __glo_for_91each,  ((closureN)self_731049)->elts[1], ((closureN)self_731049)->elts[0], r_73562);; 
 }
 
 static void __lambda_127(int argc, closure _,object k_73566, object func_73126, object lst_73125) {
-  Cyc_st_add("scheme/base.c:map");
+  Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_731719;
 c_731719.tag = closureN_tag;
@@ -6428,7 +6428,7 @@ return_funcall1((closure)&c_731719,  &c_731726);;
 }
 
 static void __lambda_126(int argc, object self_731050, object k_73569, object x_73128, object y_73127) {
-  Cyc_st_add("scheme/base.c:map");
+  Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_731729;
 c_731729.tag = closureN_tag;
@@ -6443,14 +6443,14 @@ return_funcall2(  ((closureN)self_731050)->elts[0],  &c_731729, x_73128);;
 }
 
 static void __lambda_125(int argc, object self_731051, object r_73570) {
-  Cyc_st_add("scheme/base.c:map");
+  Cyc_st_add("scheme/base.sld:map");
 
 make_cons(c_731734,r_73570, ((closureN)self_731051)->elts[1]);
 return_funcall1(  ((closureN)self_731051)->elts[0],  &c_731734);; 
 }
 
 static void __lambda_124(int argc, object self_731052, object r_73567) {
-  Cyc_st_add("scheme/base.c:map");
+  Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_731721;
 c_731721.tag = closureN_tag;
@@ -6466,12 +6466,12 @@ return_funcall1((closure)&c_731721,  nil);;
 }
 
 static void __lambda_123(int argc, object self_731053, object r_73568) {
-  Cyc_st_add("scheme/base.c:map");
+  Cyc_st_add("scheme/base.sld:map");
 return_funcall4(  __glo_foldr,  ((closureN)self_731053)->elts[0], ((closureN)self_731053)->elts[2], r_73568, ((closureN)self_731053)->elts[1]);; 
 }
 
 static void __lambda_122(int argc, closure _,object k_73573, object lst_73129) {
-  Cyc_st_add("scheme/base.c:list-copy");
+  Cyc_st_add("scheme/base.sld:list-copy");
 
 closureN_type c_731705;
 c_731705.tag = closureN_tag;
@@ -6488,14 +6488,14 @@ return_funcall1((closure)&c_731705,  &c_731712);;
 }
 
 static void __lambda_121(int argc, object self_731054, object k_73576, object x_73131, object y_73130) {
-  Cyc_st_add("scheme/base.c:list-copy");
+  Cyc_st_add("scheme/base.sld:list-copy");
 
 make_cons(c_731716,x_73131, y_73130);
 return_funcall1(  k_73576,  &c_731716);; 
 }
 
 static void __lambda_120(int argc, object self_731055, object r_73574) {
-  Cyc_st_add("scheme/base.c:list-copy");
+  Cyc_st_add("scheme/base.sld:list-copy");
 
 closureN_type c_731707;
 c_731707.tag = closureN_tag;
@@ -6511,13 +6511,13 @@ return_funcall1((closure)&c_731707,  nil);;
 }
 
 static void __lambda_119(int argc, object self_731056, object r_73575) {
-  Cyc_st_add("scheme/base.c:list-copy");
+  Cyc_st_add("scheme/base.sld:list-copy");
 return_funcall4(  __glo_foldr,  ((closureN)self_731056)->elts[0], ((closureN)self_731056)->elts[2], r_73575, ((closureN)self_731056)->elts[1]);; 
 }
 
 static void __lambda_118(int argc, closure _,object k_73579, object k_73133, object fill_73132_raw, ...) {
 load_varargs(fill_73132, fill_73132_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731629;
 c_731629.tag = closureN_tag;
@@ -6533,7 +6533,7 @@ return_funcall2((closure)&c_731629,  boolean_f, boolean_f);;
 }
 
 static void __lambda_117(int argc, object self_731057, object x_73135, object make_73134) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731631;
 c_731631.tag = closureN_tag;
@@ -6552,7 +6552,7 @@ return_funcall1((closure)&c_731631,  &c_731702);;
 }
 
 static void __lambda_116(int argc, object self_731058, object x_73135) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731633;
 c_731633.tag = closureN_tag;
@@ -6571,7 +6571,7 @@ return_funcall1((closure)&c_731633,  &c_731698);;
 }
 
 static void __lambda_115(int argc, object self_731059, object make_73134) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731635;
 c_731635.tag = closureN_tag;
@@ -6589,7 +6589,7 @@ return_funcall0((closure)&c_731635);;
 }
 
 static void __lambda_114(int argc, object self_731060) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731637;
 c_731637.tag = closureN_tag;
@@ -6615,7 +6615,7 @@ return_funcall1((closure)&c_731637,  &c_731650);;
 }
 
 static void __lambda_113(int argc, object self_731061, object r_73587) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731652;
 c_731652.tag = closureN_tag;
@@ -6632,7 +6632,7 @@ return_funcall1((closure)&c_731652,  Cyc_set_car(((closureN)self_731061)->elts[3
 }
 
 static void __lambda_112(int argc, object self_731062, object r_73580) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731654;
 c_731654.tag = closureN_tag;
@@ -6658,7 +6658,7 @@ return_funcall1((closure)&c_731654,  &c_731669);;
 }
 
 static void __lambda_111(int argc, object self_731063, object k_73583, object n_73137, object obj_73136) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731671;
 c_731671.tag = closureN_tag;
@@ -6675,7 +6675,7 @@ return_funcall2(  __glo_zero_127,  &c_731671, n_73137);;
 }
 
 static void __lambda_110(int argc, object self_731064, object r_73584) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 if( !eq(boolean_f, r_73584) ){ 
   return_funcall1(  ((closureN)self_731064)->elts[0],  nil);
 } else { 
@@ -6699,7 +6699,7 @@ return_funcall1((closure)&c_731675,  &c_731690);}
 }
 
 static void __lambda_109(int argc, object self_731065, object r_73586) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731680;
 c_731680.tag = closureN_tag;
@@ -6714,14 +6714,14 @@ return_funcall3(  cell_get(((closureN)self_731065)->elts[1]),  &c_731680, r_7358
 }
 
 static void __lambda_108(int argc, object self_731066, object r_73585) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 make_cons(c_731685,((closureN)self_731066)->elts[1], r_73585);
 return_funcall1(  ((closureN)self_731066)->elts[0],  &c_731685);; 
 }
 
 static void __lambda_107(int argc, object self_731067, object r_73582) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731656;
 c_731656.tag = closureN_tag;
@@ -6738,12 +6738,12 @@ return_funcall1((closure)&c_731656,  Cyc_set_car(((closureN)self_731067)->elts[2
 }
 
 static void __lambda_106(int argc, object self_731068, object r_73581) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 return_funcall3(  cell_get(((closureN)self_731068)->elts[2]),  ((closureN)self_731068)->elts[1], ((closureN)self_731068)->elts[0], cell_get(((closureN)self_731068)->elts[3]));; 
 }
 
 static void __lambda_105(int argc, object self_731069, object k_73588) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_731639;
 c_731639.tag = closureN_tag;
@@ -6758,7 +6758,7 @@ return_funcall1((closure)&c_731639,  Cyc_is_null(((closureN)self_731069)->elts[0
 }
 
 static void __lambda_104(int argc, object self_731070, object r_73589) {
-  Cyc_st_add("scheme/base.c:make-list");
+  Cyc_st_add("scheme/base.sld:make-list");
 if( !eq(boolean_f, r_73589) ){ 
   return_funcall1(  ((closureN)self_731070)->elts[1],  boolean_f);
 } else { 
@@ -6768,13 +6768,13 @@ if( !eq(boolean_f, r_73589) ){
 
 static void __lambda_103(int argc, closure _,object k_73592, object objs_73138_raw, ...) {
 load_varargs(objs_73138, objs_73138_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:list");
+  Cyc_st_add("scheme/base.sld:list");
 return_funcall1(  k_73592,  objs_73138);; 
 }
 
 static void __lambda_102(int argc, closure _,object k_73595, object lst_73139_raw, ...) {
 load_varargs(lst_73139, lst_73139_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731555;
 c_731555.tag = closureN_tag;
@@ -6789,7 +6789,7 @@ return_funcall1((closure)&c_731555,  boolean_f);;
 }
 
 static void __lambda_101(int argc, object self_731071, object append_912_73141) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731557;
 c_731557.tag = closureN_tag;
@@ -6806,7 +6806,7 @@ return_funcall1((closure)&c_731557,  &c_731624);;
 }
 
 static void __lambda_100(int argc, object self_731072, object append_912_73141) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731559;
 c_731559.tag = closureN_tag;
@@ -6822,7 +6822,7 @@ return_funcall1((closure)&c_731559,  boolean_f);;
 }
 
 static void __lambda_99(int argc, object self_731073, object append_912_73142) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731561;
 c_731561.tag = closureN_tag;
@@ -6840,7 +6840,7 @@ return_funcall1((closure)&c_731561,  &c_731610);;
 }
 
 static void __lambda_98(int argc, object self_731074, object k_73605, object inlist_73146, object alist_73145) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731612;
 c_731612.tag = closureN_tag;
@@ -6858,19 +6858,19 @@ return_funcall1((closure)&c_731612,  &c_731617);;
 }
 
 static void __lambda_97(int argc, object self_731075, object k_73607, object ap_73148, object in_73147) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 make_cons(c_731621,ap_73148, in_73147);
 return_funcall1(  k_73607,  &c_731621);; 
 }
 
 static void __lambda_96(int argc, object self_731076, object r_73606) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 return_funcall4(  __glo_foldr,  ((closureN)self_731076)->elts[2], r_73606, ((closureN)self_731076)->elts[0], ((closureN)self_731076)->elts[1]);; 
 }
 
 static void __lambda_95(int argc, object self_731077, object r_73604) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731563;
 c_731563.tag = closureN_tag;
@@ -6886,7 +6886,7 @@ return_funcall1((closure)&c_731563,  Cyc_set_car(((closureN)self_731077)->elts[0
 }
 
 static void __lambda_94(int argc, object self_731078, object r_73596) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731565;
 c_731565.tag = closureN_tag;
@@ -6902,7 +6902,7 @@ return_funcall1((closure)&c_731565,  Cyc_is_null(((closureN)self_731078)->elts[2
 }
 
 static void __lambda_93(int argc, object self_731079, object r_73597) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 if( !eq(boolean_f, r_73597) ){ 
   return_funcall1(  ((closureN)self_731079)->elts[1],  ((closureN)self_731079)->elts[2]);
 } else { 
@@ -6922,7 +6922,7 @@ return_funcall1((closure)&c_731570,  cdr(((closureN)self_731079)->elts[2]));}
 }
 
 static void __lambda_92(int argc, object self_731080, object r_73603) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731572;
 c_731572.tag = closureN_tag;
@@ -6938,7 +6938,7 @@ return_funcall1((closure)&c_731572,  Cyc_is_null(r_73603));;
 }
 
 static void __lambda_91(int argc, object self_731081, object r_73598) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 if( !eq(boolean_f, r_73598) ){ 
   return_funcall1(  ((closureN)self_731081)->elts[1],  car(((closureN)self_731081)->elts[2]));
 } else { 
@@ -6966,12 +6966,12 @@ return_funcall1((closure)&c_731579,  &c_731594);}
 }
 
 static void __lambda_90(int argc, object self_731082, object k_73602, object a_73144, object b_73143) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 return_funcall3(  cell_get(((closureN)self_731082)->elts[0]),  k_73602, b_73143, a_73144);; 
 }
 
 static void __lambda_89(int argc, object self_731083, object r_73599) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731581;
 c_731581.tag = closureN_tag;
@@ -6987,7 +6987,7 @@ return_funcall1((closure)&c_731581,  car(((closureN)self_731083)->elts[1]));;
 }
 
 static void __lambda_88(int argc, object self_731084, object r_73600) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_731583;
 c_731583.tag = closureN_tag;
@@ -7003,33 +7003,33 @@ return_funcall1((closure)&c_731583,  cdr(((closureN)self_731084)->elts[1]));;
 }
 
 static void __lambda_87(int argc, object self_731085, object r_73601) {
-  Cyc_st_add("scheme/base.c:append");
+  Cyc_st_add("scheme/base.sld:append");
 return_funcall4(  __glo_foldl,  ((closureN)self_731085)->elts[0], ((closureN)self_731085)->elts[1], ((closureN)self_731085)->elts[2], r_73601);; 
 }
 
 static void __lambda_86(int argc, closure _,object k_73610, object n_73149) {
-  Cyc_st_add("scheme/base.c:negative?");
+  Cyc_st_add("scheme/base.sld:negative?");
 
 make_int(c_731552, 0);
 return_funcall1(  k_73610,  __num_lt(n_73149, &c_731552));; 
 }
 
 static void __lambda_85(int argc, closure _,object k_73613, object n_73150) {
-  Cyc_st_add("scheme/base.c:positive?");
+  Cyc_st_add("scheme/base.sld:positive?");
 
 make_int(c_731547, 0);
 return_funcall1(  k_73613,  __num_gt(n_73150, &c_731547));; 
 }
 
 static void __lambda_84(int argc, closure _,object k_73616, object n_73151) {
-  Cyc_st_add("scheme/base.c:zero?");
+  Cyc_st_add("scheme/base.sld:zero?");
 
 make_int(c_731542, 0);
 return_funcall1(  k_73616,  __num_eq(n_73151, &c_731542));; 
 }
 
 static void __lambda_83(int argc, closure _,object k_73619, object o_73152) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731486;
 c_731486.tag = closureN_tag;
@@ -7044,7 +7044,7 @@ return_funcall1((closure)&c_731486,  boolean_f);;
 }
 
 static void __lambda_82(int argc, object self_731086, object _191list_127_73154) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731488;
 c_731488.tag = closureN_tag;
@@ -7061,7 +7061,7 @@ return_funcall1((closure)&c_731488,  &c_731537);;
 }
 
 static void __lambda_81(int argc, object self_731087, object _191list_127_73154) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731490;
 c_731490.tag = closureN_tag;
@@ -7077,7 +7077,7 @@ return_funcall1((closure)&c_731490,  boolean_f);;
 }
 
 static void __lambda_80(int argc, object self_731088, object _191list_127_73155) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731492;
 c_731492.tag = closureN_tag;
@@ -7102,7 +7102,7 @@ return_funcall1((closure)&c_731492,  &c_731511);;
 }
 
 static void __lambda_79(int argc, object self_731089, object k_73623, object obj_73156) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731513;
 c_731513.tag = closureN_tag;
@@ -7118,7 +7118,7 @@ return_funcall1((closure)&c_731513,  Cyc_is_null(obj_73156));;
 }
 
 static void __lambda_78(int argc, object self_731090, object r_73624) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 if( !eq(boolean_f, r_73624) ){ 
   return_funcall1(  ((closureN)self_731090)->elts[1],  boolean_t);
 } else { 
@@ -7138,7 +7138,7 @@ return_funcall1((closure)&c_731517,  Cyc_is_cons(((closureN)self_731090)->elts[2
 }
 
 static void __lambda_77(int argc, object self_731091, object r_73625) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 if( !eq(boolean_f, r_73625) ){ 
   
 closureN_type c_731519;
@@ -7157,12 +7157,12 @@ return_funcall1((closure)&c_731519,  cdr(((closureN)self_731091)->elts[2]));
 }
 
 static void __lambda_76(int argc, object self_731092, object r_73626) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 return_funcall2(  cell_get(((closureN)self_731092)->elts[0]),  ((closureN)self_731092)->elts[1], r_73626);; 
 }
 
 static void __lambda_75(int argc, object self_731093, object r_73622) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731494;
 c_731494.tag = closureN_tag;
@@ -7178,7 +7178,7 @@ return_funcall1((closure)&c_731494,  Cyc_set_car(((closureN)self_731093)->elts[0
 }
 
 static void __lambda_74(int argc, object self_731094, object r_73620) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_731496;
 c_731496.tag = closureN_tag;
@@ -7194,7 +7194,7 @@ return_funcall1((closure)&c_731496,  Cyc_has_cycle(((closureN)self_731094)->elts
 }
 
 static void __lambda_73(int argc, object self_731095, object r_73621) {
-  Cyc_st_add("scheme/base.c:list?");
+  Cyc_st_add("scheme/base.sld:list?");
 if( !eq(boolean_f, r_73621) ){ 
   return_funcall1(  ((closureN)self_731095)->elts[1],  boolean_t);
 } else { 
@@ -7203,7 +7203,7 @@ if( !eq(boolean_f, r_73621) ){
 }
 
 static void __lambda_72(int argc, closure _,object k_73629, object x_73157) {
-  Cyc_st_add("scheme/base.c:not");
+  Cyc_st_add("scheme/base.sld:not");
 if( !eq(boolean_f, x_73157) ){ 
   return_funcall1(  k_73629,  boolean_f);
 } else { 
@@ -7213,7 +7213,7 @@ if( !eq(boolean_f, x_73157) ){
 
 static void __lambda_71(int argc, closure _,object k_73632, object port_73158_raw, ...) {
 load_varargs(port_73158, port_73158_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:newline");
+  Cyc_st_add("scheme/base.sld:newline");
 
 closureN_type c_731472;
 c_731472.tag = closureN_tag;
@@ -7229,7 +7229,7 @@ return_funcall1((closure)&c_731472,  &c_731480);;
 }
 
 static void __lambda_70(int argc, object self_731096, object r_73633) {
-  Cyc_st_add("scheme/base.c:newline");
+  Cyc_st_add("scheme/base.sld:newline");
 
 object c_731477 = apply(  ((closureN)self_731096)->elts[0], __glo_write_91char, r_73633);
 return_funcall1(  ((closureN)self_731096)->elts[0],  c_731477);; 
@@ -7237,7 +7237,7 @@ return_funcall1(  ((closureN)self_731096)->elts[0],  c_731477);;
 
 static void __lambda_69(int argc, closure _,object k_73636, object char_73160, object port_73159_raw, ...) {
 load_varargs(port_73159, port_73159_raw, argc - 2);
-  Cyc_st_add("scheme/base.c:write-char");
+  Cyc_st_add("scheme/base.sld:write-char");
 
 closureN_type c_731450;
 c_731450.tag = closureN_tag;
@@ -7253,7 +7253,7 @@ return_funcall1((closure)&c_731450,  Cyc_is_null(port_73159));;
 }
 
 static void __lambda_68(int argc, object self_731097, object r_73637) {
-  Cyc_st_add("scheme/base.c:write-char");
+  Cyc_st_add("scheme/base.sld:write-char");
 if( !eq(boolean_f, r_73637) ){ 
   
 closureN_type c_731452;
@@ -7282,18 +7282,18 @@ return_funcall1((closure)&c_731459,  car(((closureN)self_731097)->elts[2]));}
 }
 
 static void __lambda_67(int argc, object self_731098, object r_73639) {
-  Cyc_st_add("scheme/base.c:write-char");
+  Cyc_st_add("scheme/base.sld:write-char");
 return_funcall1(  ((closureN)self_731098)->elts[1],  Cyc_write_char(((closureN)self_731098)->elts[0], r_73639));; 
 }
 
 static void __lambda_66(int argc, object self_731099, object r_73638) {
-  Cyc_st_add("scheme/base.c:write-char");
+  Cyc_st_add("scheme/base.sld:write-char");
 return_funcall1(  ((closureN)self_731099)->elts[1],  Cyc_write_char(((closureN)self_731099)->elts[0], r_73638));; 
 }
 
 static void __lambda_65(int argc, closure _,object k_73642, object port_73161_raw, ...) {
 load_varargs(port_73161, port_73161_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:flush-output-port");
+  Cyc_st_add("scheme/base.sld:flush-output-port");
 
 closureN_type c_731430;
 c_731430.tag = closureN_tag;
@@ -7308,7 +7308,7 @@ return_funcall1((closure)&c_731430,  Cyc_is_null(port_73161));;
 }
 
 static void __lambda_64(int argc, object self_731100, object r_73643) {
-  Cyc_st_add("scheme/base.c:flush-output-port");
+  Cyc_st_add("scheme/base.sld:flush-output-port");
 if( !eq(boolean_f, r_73643) ){ 
   
 closureN_type c_731432;
@@ -7335,18 +7335,18 @@ return_funcall1((closure)&c_731438,  car(((closureN)self_731100)->elts[1]));}
 }
 
 static void __lambda_63(int argc, object self_731101, object r_73645) {
-  Cyc_st_add("scheme/base.c:flush-output-port");
+  Cyc_st_add("scheme/base.sld:flush-output-port");
 return_funcall1(  ((closureN)self_731101)->elts[0],  Cyc_io_flush_output_port(r_73645));; 
 }
 
 static void __lambda_62(int argc, object self_731102, object r_73644) {
-  Cyc_st_add("scheme/base.c:flush-output-port");
+  Cyc_st_add("scheme/base.sld:flush-output-port");
 return_funcall1(  ((closureN)self_731102)->elts[0],  Cyc_io_flush_output_port(r_73644));; 
 }
 
 static void __lambda_61(int argc, closure _,object k_73648, object port_73162_raw, ...) {
 load_varargs(port_73162, port_73162_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:read-line");
+  Cyc_st_add("scheme/base.sld:read-line");
 
 closureN_type c_731408;
 c_731408.tag = closureN_tag;
@@ -7361,7 +7361,7 @@ return_funcall1((closure)&c_731408,  Cyc_is_null(port_73162));;
 }
 
 static void __lambda_60(int argc, object self_731103, object r_73649) {
-  Cyc_st_add("scheme/base.c:read-line");
+  Cyc_st_add("scheme/base.sld:read-line");
 if( !eq(boolean_f, r_73649) ){ 
   
 closureN_type c_731410;
@@ -7388,21 +7388,21 @@ return_funcall1((closure)&c_731417,  car(((closureN)self_731103)->elts[1]));}
 }
 
 static void __lambda_59(int argc, object self_731104, object r_73651) {
-  Cyc_st_add("scheme/base.c:read-line");
+  Cyc_st_add("scheme/base.sld:read-line");
 
 object c_731422 = Cyc_io_read_line(  ((closureN)self_731104)->elts[0], r_73651);
 return_funcall1(  ((closureN)self_731104)->elts[0],  c_731422);; 
 }
 
 static void __lambda_58(int argc, object self_731105, object r_73650) {
-  Cyc_st_add("scheme/base.c:read-line");
+  Cyc_st_add("scheme/base.sld:read-line");
 
 object c_731415 = Cyc_io_read_line(  ((closureN)self_731105)->elts[0], r_73650);
 return_funcall1(  ((closureN)self_731105)->elts[0],  c_731415);; 
 }
 
 static void __lambda_57(int argc, closure _,object k_73654, object func_73165, object end_73164, object lst_73163) {
-  Cyc_st_add("scheme/base.c:foldr");
+  Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_731382;
 c_731382.tag = closureN_tag;
@@ -7419,7 +7419,7 @@ return_funcall1((closure)&c_731382,  Cyc_is_null(lst_73163));;
 }
 
 static void __lambda_56(int argc, object self_731106, object r_73655) {
-  Cyc_st_add("scheme/base.c:foldr");
+  Cyc_st_add("scheme/base.sld:foldr");
 if( !eq(boolean_f, r_73655) ){ 
   return_funcall1(  ((closureN)self_731106)->elts[2],  ((closureN)self_731106)->elts[0]);
 } else { 
@@ -7440,7 +7440,7 @@ return_funcall1((closure)&c_731387,  car(((closureN)self_731106)->elts[3]));}
 }
 
 static void __lambda_55(int argc, object self_731107, object r_73656) {
-  Cyc_st_add("scheme/base.c:foldr");
+  Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_731389;
 c_731389.tag = closureN_tag;
@@ -7457,7 +7457,7 @@ return_funcall1((closure)&c_731389,  cdr(((closureN)self_731107)->elts[3]));;
 }
 
 static void __lambda_54(int argc, object self_731108, object r_73658) {
-  Cyc_st_add("scheme/base.c:foldr");
+  Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_731391;
 c_731391.tag = closureN_tag;
@@ -7473,12 +7473,12 @@ return_funcall4(  __glo_foldr,  &c_731391, ((closureN)self_731108)->elts[1], ((c
 }
 
 static void __lambda_53(int argc, object self_731109, object r_73657) {
-  Cyc_st_add("scheme/base.c:foldr");
+  Cyc_st_add("scheme/base.sld:foldr");
 return_funcall3(  ((closureN)self_731109)->elts[0],  ((closureN)self_731109)->elts[1], ((closureN)self_731109)->elts[2], r_73657);; 
 }
 
 static void __lambda_52(int argc, closure _,object k_73661, object func_73168, object accum_73167, object lst_73166) {
-  Cyc_st_add("scheme/base.c:foldl");
+  Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_731356;
 c_731356.tag = closureN_tag;
@@ -7495,7 +7495,7 @@ return_funcall1((closure)&c_731356,  Cyc_is_null(lst_73166));;
 }
 
 static void __lambda_51(int argc, object self_731110, object r_73662) {
-  Cyc_st_add("scheme/base.c:foldl");
+  Cyc_st_add("scheme/base.sld:foldl");
 if( !eq(boolean_f, r_73662) ){ 
   return_funcall1(  ((closureN)self_731110)->elts[2],  ((closureN)self_731110)->elts[0]);
 } else { 
@@ -7516,7 +7516,7 @@ return_funcall1((closure)&c_731361,  car(((closureN)self_731110)->elts[3]));}
 }
 
 static void __lambda_50(int argc, object self_731111, object r_73665) {
-  Cyc_st_add("scheme/base.c:foldl");
+  Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_731364;
 c_731364.tag = closureN_tag;
@@ -7532,7 +7532,7 @@ return_funcall3(  ((closureN)self_731111)->elts[1],  &c_731364, r_73665, ((closu
 }
 
 static void __lambda_49(int argc, object self_731112, object r_73663) {
-  Cyc_st_add("scheme/base.c:foldl");
+  Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_731366;
 c_731366.tag = closureN_tag;
@@ -7548,12 +7548,12 @@ return_funcall1((closure)&c_731366,  cdr(((closureN)self_731112)->elts[2]));;
 }
 
 static void __lambda_48(int argc, object self_731113, object r_73664) {
-  Cyc_st_add("scheme/base.c:foldl");
+  Cyc_st_add("scheme/base.sld:foldl");
 return_funcall4(  __glo_foldl,  ((closureN)self_731113)->elts[1], ((closureN)self_731113)->elts[0], ((closureN)self_731113)->elts[2], r_73664);; 
 }
 
 static void __lambda_47(int argc, closure _,object k_73668, object str1_73170, object str2_73169) {
-  Cyc_st_add("scheme/base.c:string>=?");
+  Cyc_st_add("scheme/base.sld:string>=?");
 
 closureN_type c_731345;
 c_731345.tag = closureN_tag;
@@ -7569,14 +7569,14 @@ return_funcall1((closure)&c_731345,  &c_731353);;
 }
 
 static void __lambda_46(int argc, object self_731114, object r_73669) {
-  Cyc_st_add("scheme/base.c:string>=?");
+  Cyc_st_add("scheme/base.sld:string>=?");
 
 make_int(c_731350, 0);
 return_funcall1(  ((closureN)self_731114)->elts[0],  __num_gte(r_73669, &c_731350));; 
 }
 
 static void __lambda_45(int argc, closure _,object k_73672, object str1_73172, object str2_73171) {
-  Cyc_st_add("scheme/base.c:string>?");
+  Cyc_st_add("scheme/base.sld:string>?");
 
 closureN_type c_731334;
 c_731334.tag = closureN_tag;
@@ -7592,14 +7592,14 @@ return_funcall1((closure)&c_731334,  &c_731342);;
 }
 
 static void __lambda_44(int argc, object self_731115, object r_73673) {
-  Cyc_st_add("scheme/base.c:string>?");
+  Cyc_st_add("scheme/base.sld:string>?");
 
 make_int(c_731339, 0);
 return_funcall1(  ((closureN)self_731115)->elts[0],  __num_gt(r_73673, &c_731339));; 
 }
 
 static void __lambda_43(int argc, closure _,object k_73676, object str1_73174, object str2_73173) {
-  Cyc_st_add("scheme/base.c:string<=?");
+  Cyc_st_add("scheme/base.sld:string<=?");
 
 closureN_type c_731323;
 c_731323.tag = closureN_tag;
@@ -7615,14 +7615,14 @@ return_funcall1((closure)&c_731323,  &c_731331);;
 }
 
 static void __lambda_42(int argc, object self_731116, object r_73677) {
-  Cyc_st_add("scheme/base.c:string<=?");
+  Cyc_st_add("scheme/base.sld:string<=?");
 
 make_int(c_731328, 0);
 return_funcall1(  ((closureN)self_731116)->elts[0],  __num_lte(r_73677, &c_731328));; 
 }
 
 static void __lambda_41(int argc, closure _,object k_73680, object str1_73176, object str2_73175) {
-  Cyc_st_add("scheme/base.c:string<?");
+  Cyc_st_add("scheme/base.sld:string<?");
 
 closureN_type c_731312;
 c_731312.tag = closureN_tag;
@@ -7638,14 +7638,14 @@ return_funcall1((closure)&c_731312,  &c_731320);;
 }
 
 static void __lambda_40(int argc, object self_731117, object r_73681) {
-  Cyc_st_add("scheme/base.c:string<?");
+  Cyc_st_add("scheme/base.sld:string<?");
 
 make_int(c_731317, 0);
 return_funcall1(  ((closureN)self_731117)->elts[0],  __num_lt(r_73681, &c_731317));; 
 }
 
 static void __lambda_39(int argc, closure _,object k_73684, object str1_73178, object str2_73177) {
-  Cyc_st_add("scheme/base.c:string=?");
+  Cyc_st_add("scheme/base.sld:string=?");
 
 closureN_type c_731301;
 c_731301.tag = closureN_tag;
@@ -7661,7 +7661,7 @@ return_funcall1((closure)&c_731301,  &c_731309);;
 }
 
 static void __lambda_38(int argc, object self_731118, object r_73685) {
-  Cyc_st_add("scheme/base.c:string=?");
+  Cyc_st_add("scheme/base.sld:string=?");
 
 make_int(c_731306, 0);
 return_funcall1(  ((closureN)self_731118)->elts[0],  equalp(r_73685, &c_731306));; 
@@ -7669,7 +7669,7 @@ return_funcall1(  ((closureN)self_731118)->elts[0],  equalp(r_73685, &c_731306))
 
 static void __lambda_37(int argc, closure _,object k_73688, object c1_73181, object c2_73180, object cs_73179_raw, ...) {
 load_varargs(cs_73179, cs_73179_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:char>=?");
+  Cyc_st_add("scheme/base.sld:char>=?");
 
 closureN_type c_731292;
 c_731292.tag = closureN_tag;
@@ -7686,13 +7686,13 @@ return_funcall1((closure)&c_731292,  &c_731298);;
 }
 
 static void __lambda_36(int argc, object self_731119, object r_73689) {
-  Cyc_st_add("scheme/base.c:char>=?");
+  Cyc_st_add("scheme/base.sld:char>=?");
 return_funcall4(  __glo_Cyc_91bin_91op_91char,  ((closureN)self_731119)->elts[1], primitive__125_123, ((closureN)self_731119)->elts[0], r_73689);; 
 }
 
 static void __lambda_35(int argc, closure _,object k_73692, object c1_73184, object c2_73183, object cs_73182_raw, ...) {
 load_varargs(cs_73182, cs_73182_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:char<=?");
+  Cyc_st_add("scheme/base.sld:char<=?");
 
 closureN_type c_731283;
 c_731283.tag = closureN_tag;
@@ -7709,13 +7709,13 @@ return_funcall1((closure)&c_731283,  &c_731289);;
 }
 
 static void __lambda_34(int argc, object self_731120, object r_73693) {
-  Cyc_st_add("scheme/base.c:char<=?");
+  Cyc_st_add("scheme/base.sld:char<=?");
 return_funcall4(  __glo_Cyc_91bin_91op_91char,  ((closureN)self_731120)->elts[1], primitive__121_123, ((closureN)self_731120)->elts[0], r_73693);; 
 }
 
 static void __lambda_33(int argc, closure _,object k_73696, object c1_73187, object c2_73186, object cs_73185_raw, ...) {
 load_varargs(cs_73185, cs_73185_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:char>?");
+  Cyc_st_add("scheme/base.sld:char>?");
 
 closureN_type c_731274;
 c_731274.tag = closureN_tag;
@@ -7732,13 +7732,13 @@ return_funcall1((closure)&c_731274,  &c_731280);;
 }
 
 static void __lambda_32(int argc, object self_731121, object r_73697) {
-  Cyc_st_add("scheme/base.c:char>?");
+  Cyc_st_add("scheme/base.sld:char>?");
 return_funcall4(  __glo_Cyc_91bin_91op_91char,  ((closureN)self_731121)->elts[1], primitive__125, ((closureN)self_731121)->elts[0], r_73697);; 
 }
 
 static void __lambda_31(int argc, closure _,object k_73700, object c1_73190, object c2_73189, object cs_73188_raw, ...) {
 load_varargs(cs_73188, cs_73188_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:char<?");
+  Cyc_st_add("scheme/base.sld:char<?");
 
 closureN_type c_731265;
 c_731265.tag = closureN_tag;
@@ -7755,13 +7755,13 @@ return_funcall1((closure)&c_731265,  &c_731271);;
 }
 
 static void __lambda_30(int argc, object self_731122, object r_73701) {
-  Cyc_st_add("scheme/base.c:char<?");
+  Cyc_st_add("scheme/base.sld:char<?");
 return_funcall4(  __glo_Cyc_91bin_91op_91char,  ((closureN)self_731122)->elts[1], primitive__121, ((closureN)self_731122)->elts[0], r_73701);; 
 }
 
 static void __lambda_29(int argc, closure _,object k_73704, object c1_73193, object c2_73192, object cs_73191_raw, ...) {
 load_varargs(cs_73191, cs_73191_raw, argc - 3);
-  Cyc_st_add("scheme/base.c:char=?");
+  Cyc_st_add("scheme/base.sld:char=?");
 
 closureN_type c_731256;
 c_731256.tag = closureN_tag;
@@ -7778,12 +7778,12 @@ return_funcall1((closure)&c_731256,  &c_731262);;
 }
 
 static void __lambda_28(int argc, object self_731123, object r_73705) {
-  Cyc_st_add("scheme/base.c:char=?");
+  Cyc_st_add("scheme/base.sld:char=?");
 return_funcall4(  __glo_Cyc_91bin_91op_91char,  ((closureN)self_731123)->elts[1], primitive__123, ((closureN)self_731123)->elts[0], r_73705);; 
 }
 
 static void __lambda_27(int argc, closure _,object k_73708, object cmp_73196, object c_73195, object cs_73194) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op-char");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_731233;
 c_731233.tag = closureN_tag;
@@ -7808,7 +7808,7 @@ return_funcall1((closure)&c_731233,  &c_731238);;
 }
 
 static void __lambda_26(int argc, object self_731124, object k_73710, object x_73198, object y_73197) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op-char");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_731240;
 c_731240.tag = closureN_tag;
@@ -7826,7 +7826,7 @@ return_funcall1((closure)&c_731240,  &c_731253);;
 }
 
 static void __lambda_25(int argc, object self_731125, object r_73711) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op-char");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_731242;
 c_731242.tag = closureN_tag;
@@ -7844,17 +7844,17 @@ return_funcall1((closure)&c_731242,  &c_731249);;
 }
 
 static void __lambda_24(int argc, object self_731126, object r_73712) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op-char");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 return_funcall3(  ((closureN)self_731126)->elts[0],  ((closureN)self_731126)->elts[1], ((closureN)self_731126)->elts[2], r_73712);; 
 }
 
 static void __lambda_23(int argc, object self_731127, object r_73709) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op-char");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 return_funcall4(  __glo_Cyc_91bin_91op,  ((closureN)self_731127)->elts[2], r_73709, ((closureN)self_731127)->elts[0], ((closureN)self_731127)->elts[1]);; 
 }
 
 static void __lambda_22(int argc, closure _,object k_73715, object cmp_73201, object x_73200, object lst_73199) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_731201;
 c_731201.tag = closureN_tag;
@@ -7871,7 +7871,7 @@ return_funcall1((closure)&c_731201,  Cyc_is_null(lst_73199));;
 }
 
 static void __lambda_21(int argc, object self_731128, object r_73716) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 if( !eq(boolean_f, r_73716) ){ 
   return_funcall1(  ((closureN)self_731128)->elts[1],  boolean_t);
 } else { 
@@ -7892,7 +7892,7 @@ return_funcall1((closure)&c_731205,  car(((closureN)self_731128)->elts[2]));}
 }
 
 static void __lambda_20(int argc, object self_731129, object r_73720) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_731208;
 c_731208.tag = closureN_tag;
@@ -7908,7 +7908,7 @@ return_funcall3(  ((closureN)self_731129)->elts[0],  &c_731208, ((closureN)self_
 }
 
 static void __lambda_19(int argc, object self_731130, object r_73717) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 if( !eq(boolean_f, r_73717) ){ 
   
 closureN_type c_731210;
@@ -7928,7 +7928,7 @@ return_funcall1((closure)&c_731210,  car(((closureN)self_731130)->elts[2]));
 }
 
 static void __lambda_18(int argc, object self_731131, object r_73718) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_731212;
 c_731212.tag = closureN_tag;
@@ -7944,12 +7944,12 @@ return_funcall1((closure)&c_731212,  cdr(((closureN)self_731131)->elts[2]));;
 }
 
 static void __lambda_17(int argc, object self_731132, object r_73719) {
-  Cyc_st_add("scheme/base.c:Cyc-bin-op");
+  Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 return_funcall4(  __glo_Cyc_91bin_91op,  ((closureN)self_731132)->elts[1], ((closureN)self_731132)->elts[0], ((closureN)self_731132)->elts[2], r_73719);; 
 }
 
 static void __lambda_16(int argc, closure _,object k_73723, object port_73203, object proc_73202) {
-  Cyc_st_add("scheme/base.c:call-with-port");
+  Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_731188;
 c_731188.tag = closureN_tag;
@@ -7964,7 +7964,7 @@ return_funcall2(  proc_73202,  &c_731188, port_73203);;
 }
 
 static void __lambda_15(int argc, object self_731133, object r_73724) {
-  Cyc_st_add("scheme/base.c:call-with-port");
+  Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_731190;
 c_731190.tag = closureN_tag;
@@ -7979,7 +7979,7 @@ return_funcall1((closure)&c_731190,  r_73724);;
 }
 
 static void __lambda_14(int argc, object self_731134, object result_73204) {
-  Cyc_st_add("scheme/base.c:call-with-port");
+  Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_731192;
 c_731192.tag = closureN_tag;
@@ -7994,12 +7994,12 @@ return_funcall1((closure)&c_731192,  Cyc_io_close_port(((closureN)self_731134)->
 }
 
 static void __lambda_13(int argc, object self_731135, object r_73725) {
-  Cyc_st_add("scheme/base.c:call-with-port");
+  Cyc_st_add("scheme/base.sld:call-with-port");
 return_funcall1(  ((closureN)self_731135)->elts[0],  ((closureN)self_731135)->elts[1]);; 
 }
 
 static void __lambda_12(int argc, closure _,object k_73728, object before_73207, object thunk_73206, object after_73205) {
-  Cyc_st_add("scheme/base.c:dynamic-wind");
+  Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_731173;
 c_731173.tag = closureN_tag;
@@ -8015,7 +8015,7 @@ return_funcall1(  before_73207,  &c_731173);;
 }
 
 static void __lambda_11(int argc, object self_731136, object r_73729) {
-  Cyc_st_add("scheme/base.c:dynamic-wind");
+  Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_731175;
 c_731175.tag = closureN_tag;
@@ -8039,7 +8039,7 @@ return_funcall1((closure)&c_731175,  &c_731179);;
 }
 
 static void __lambda_10(int argc, object self_731137, object k_73731, object result_73208) {
-  Cyc_st_add("scheme/base.c:dynamic-wind");
+  Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_731182;
 c_731182.tag = closureN_tag;
@@ -8054,18 +8054,18 @@ return_funcall1(  ((closureN)self_731137)->elts[0],  &c_731182);;
 }
 
 static void __lambda_9(int argc, object self_731138, object r_73732) {
-  Cyc_st_add("scheme/base.c:dynamic-wind");
+  Cyc_st_add("scheme/base.sld:dynamic-wind");
 return_funcall1(  ((closureN)self_731138)->elts[0],  ((closureN)self_731138)->elts[1]);; 
 }
 
 static void __lambda_8(int argc, object self_731139, object r_73730) {
-  Cyc_st_add("scheme/base.c:dynamic-wind");
+  Cyc_st_add("scheme/base.sld:dynamic-wind");
 return_funcall3(  __glo_call_91with_91values,  ((closureN)self_731139)->elts[0], ((closureN)self_731139)->elts[1], r_73730);; 
 }
 
 static void __lambda_7(int argc, closure _,object k_73735, object things_73209_raw, ...) {
 load_varargs(things_73209, things_73209_raw, argc - 1);
-  Cyc_st_add("scheme/base.c:values");
+  Cyc_st_add("scheme/base.sld:values");
 
 closureN_type c_731162;
 c_731162.tag = closureN_tag;
@@ -8088,19 +8088,19 @@ return_funcall1((closure)&c_731162,  &c_731165);;
 }
 
 static void __lambda_6(int argc, object self_731140, object k_73737, object cont_73210) {
-  Cyc_st_add("scheme/base.c:values");
+  Cyc_st_add("scheme/base.sld:values");
 
 object c_731169 = apply(  k_73737, cont_73210, ((closureN)self_731140)->elts[0]);
 return_funcall1(  k_73737,  c_731169);; 
 }
 
 static void __lambda_5(int argc, object self_731141, object r_73736) {
-  Cyc_st_add("scheme/base.c:values");
+  Cyc_st_add("scheme/base.sld:values");
 return_funcall2(  __glo_call_95cc,  ((closureN)self_731141)->elts[0], r_73736);; 
 }
 
 static void __lambda_4(int argc, closure _,object k_73742) {
-  Cyc_st_add("scheme/base.c:features");
+  Cyc_st_add("scheme/base.sld:features");
 
 make_cons(c_731159,quote_exact_91closed,nil);
 
@@ -8111,7 +8111,7 @@ return_funcall1(  k_73742,  &c_731157);;
 }
 
 static void __lambda_3(int argc, closure _,object k, object f) {
-  Cyc_st_add("scheme/base.c:call/cc");
+  Cyc_st_add("scheme/base.sld:call/cc");
 
 closureN_type c_731152;
 c_731152.tag = closureN_tag;
@@ -8125,12 +8125,12 @@ return_funcall2(  f,  k, &c_731152);;
 }
 
 static void __lambda_2(int argc, object self_731142, object _191, object result) {
-  Cyc_st_add("scheme/base.c:call/cc");
+  Cyc_st_add("scheme/base.sld:call/cc");
 return_funcall1(  ((closureN)self_731142)->elts[0],  result);; 
 }
 
 static void __lambda_1(int argc, closure _,object k, object producer, object consumer) {
-  Cyc_st_add("scheme/base.c:call-with-values");
+  Cyc_st_add("scheme/base.sld:call-with-values");
 
 closureN_type c_731146;
 c_731146.tag = closureN_tag;
@@ -8145,7 +8145,7 @@ return_funcall1(  producer,  &c_731146);;
 }
 
 static void __lambda_0(int argc, object self_731143, object result) {
-  Cyc_st_add("scheme/base.c:call-with-values");
+  Cyc_st_add("scheme/base.sld:call-with-values");
 return_funcall2(  ((closureN)self_731143)->elts[0],  ((closureN)self_731143)->elts[1], result);; 
 }
 

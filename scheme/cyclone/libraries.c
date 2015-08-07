@@ -378,14 +378,14 @@ static void __lambda_1(int argc, closure _,object k_73218, object ast_7350) ;
 static void __lambda_0(int argc, object self_73371, object r_73219) ;
 
 static void __lambda_168(int argc, closure _,object k_7353) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib-init:schemecyclonelibraries");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib-init:schemecyclonelibraries");
 
 make_int(c_731082, 0);
 return_funcall1(  k_7353,  &c_731082);; 
 }
 
 static void __lambda_167(int argc, closure _,object k_7356, object libs_95deps_731) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73833;
 c_73833.tag = closureN_tag;
@@ -400,7 +400,7 @@ return_funcall1((closure)&c_73833,  boolean_f);;
 }
 
 static void __lambda_166(int argc, object self_73220, object loop_732) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73835;
 c_73835.tag = closureN_tag;
@@ -415,7 +415,7 @@ return_funcall1((closure)&c_73835,  nil);;
 }
 
 static void __lambda_165(int argc, object self_73221, object r_7357) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73837;
 c_73837.tag = closureN_tag;
@@ -430,7 +430,7 @@ return_funcall1((closure)&c_73837,  r_7357);;
 }
 
 static void __lambda_164(int argc, object self_73222, object result_733) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73839;
 c_73839.tag = closureN_tag;
@@ -447,7 +447,7 @@ return_funcall1((closure)&c_73839,  &c_731079);;
 }
 
 static void __lambda_163(int argc, object self_73223, object result_733) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73841;
 c_73841.tag = closureN_tag;
@@ -472,7 +472,7 @@ return_funcall1((closure)&c_73841,  &c_73850);;
 }
 
 static void __lambda_162(int argc, object self_73224, object k_7360, object lib_95dep_734) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73852;
 c_73852.tag = closureN_tag;
@@ -488,7 +488,7 @@ return_funcall1((closure)&c_73852,  Cyc_is_null(cell_get(((closureN)self_73224)-
 }
 
 static void __lambda_161(int argc, object self_73225, object r_7361) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7361) ){ 
   
 closureN_type c_73854;
@@ -521,7 +521,7 @@ return_funcall1((closure)&c_73867,  &c_731068);}
 }
 
 static void __lambda_160(int argc, object self_73226, object r_7364) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73869;
 c_73869.tag = closureN_tag;
@@ -539,7 +539,7 @@ return_funcall2((closure)&c_73869,  &c_731065, r_7364);;
 }
 
 static void __lambda_159(int argc, object self_73227, object idx_91my_91imports_736, object idx_91imports_91me_735) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73871;
 c_73871.tag = closureN_tag;
@@ -558,7 +558,7 @@ return_funcall1((closure)&c_73871,  &c_731064);;
 }
 
 static void __lambda_158(int argc, object self_73228, object idx_91my_91imports_736) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73873;
 c_73873.tag = closureN_tag;
@@ -577,7 +577,7 @@ return_funcall1((closure)&c_73873,  &c_731060);;
 }
 
 static void __lambda_157(int argc, object self_73229, object idx_91imports_91me_735) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73875;
 c_73875.tag = closureN_tag;
@@ -595,7 +595,7 @@ return_funcall1((closure)&c_73875,  boolean_f);;
 }
 
 static void __lambda_156(int argc, object self_73230, object loop_737) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73877;
 c_73877.tag = closureN_tag;
@@ -615,7 +615,7 @@ return_funcall1((closure)&c_73877,  &c_731057);;
 }
 
 static void __lambda_155(int argc, object self_73231, object loop_737) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73879;
 c_73879.tag = closureN_tag;
@@ -647,7 +647,7 @@ return_funcall1((closure)&c_73879,  &c_73937);;
 }
 
 static void __lambda_154(int argc, object self_73232, object k_7372, object i_738) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73939;
 c_73939.tag = closureN_tag;
@@ -669,7 +669,7 @@ return_funcall1((closure)&c_73939,  &c_731051);;
 }
 
 static void __lambda_153(int argc, object self_73233, object r_7391) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73941;
 c_73941.tag = closureN_tag;
@@ -689,7 +689,7 @@ return_funcall1((closure)&c_73941,  __num_eq(((closureN)self_73233)->elts[0], r_
 }
 
 static void __lambda_152(int argc, object self_73234, object r_7373) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7373) ){ 
   return_funcall1(  ((closureN)self_73234)->elts[3],  quote_done);
 } else { 
@@ -713,7 +713,7 @@ return_funcall0((closure)&c_73945);}
 }
 
 static void __lambda_151(int argc, object self_73235) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73947;
 c_73947.tag = closureN_tag;
@@ -744,7 +744,7 @@ return_funcall1((closure)&c_73947,  &c_73989);;
 }
 
 static void __lambda_150(int argc, object self_73236, object r_7374) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73991;
 c_73991.tag = closureN_tag;
@@ -772,7 +772,7 @@ return_funcall1((closure)&c_73991,  &c_731033);;
 }
 
 static void __lambda_149(int argc, object self_73237, object r_7375) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731035;
 c_731035.tag = closureN_tag;
@@ -791,12 +791,12 @@ return_funcall1((closure)&c_731035,  &c_731043);;
 }
 
 static void __lambda_148(int argc, object self_73238, object r_7376) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall2(  cell_get(((closureN)self_73238)->elts[1]),  ((closureN)self_73238)->elts[0], r_7376);; 
 }
 
 static void __lambda_147(int argc, object self_73239, object k_7377) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73993;
 c_73993.tag = closureN_tag;
@@ -824,7 +824,7 @@ return_funcall1((closure)&c_73993,  &c_731024);;
 }
 
 static void __lambda_146(int argc, object self_73240, object r_7378) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7378) ){ 
   return_funcall1(  ((closureN)self_73240)->elts[2],  Cyc_set_car(((closureN)self_73240)->elts[1], ((closureN)self_73240)->elts[0]));
 } else { 
@@ -833,7 +833,7 @@ if( !eq(boolean_f, r_7378) ){
 }
 
 static void __lambda_145(int argc, object self_73241, object k_7379) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73995;
 c_73995.tag = closureN_tag;
@@ -850,7 +850,7 @@ return_funcall1((closure)&c_73995,  __num_lt(((closureN)self_73241)->elts[0], ce
 }
 
 static void __lambda_144(int argc, object self_73242, object r_7380) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7380) ){ 
   
 closureN_type c_73997;
@@ -870,7 +870,7 @@ return_funcall1((closure)&c_73997,  car(((closureN)self_73242)->elts[2]));
 }
 
 static void __lambda_143(int argc, object self_73243, object r_7381) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73999;
 c_73999.tag = closureN_tag;
@@ -885,7 +885,7 @@ return_funcall3(  __glo_list_91ref,  &c_73999, cell_get(((closureN)self_73243)->
 }
 
 static void __lambda_142(int argc, object self_73244, object r_7383) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731001;
 c_731001.tag = closureN_tag;
@@ -900,12 +900,12 @@ return_funcall1((closure)&c_731001,  cdr(r_7383));;
 }
 
 static void __lambda_141(int argc, object self_73245, object r_7382) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall1(  ((closureN)self_73245)->elts[0],  memberp(((closureN)self_73245)->elts[1], r_7382));; 
 }
 
 static void __lambda_140(int argc, object self_73246, object k_7384) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73949;
 c_73949.tag = closureN_tag;
@@ -933,7 +933,7 @@ return_funcall1((closure)&c_73949,  &c_73980);;
 }
 
 static void __lambda_139(int argc, object self_73247, object r_7385) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7385) ){ 
   return_funcall1(  ((closureN)self_73247)->elts[2],  Cyc_set_car(((closureN)self_73247)->elts[1], ((closureN)self_73247)->elts[0]));
 } else { 
@@ -942,7 +942,7 @@ if( !eq(boolean_f, r_7385) ){
 }
 
 static void __lambda_138(int argc, object self_73248, object k_7386) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73951;
 c_73951.tag = closureN_tag;
@@ -959,7 +959,7 @@ return_funcall1((closure)&c_73951,  __num_gt(((closureN)self_73248)->elts[0], ce
 }
 
 static void __lambda_137(int argc, object self_73249, object r_7387) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7387) ){ 
   
 closureN_type c_73953;
@@ -978,7 +978,7 @@ return_funcall3(  __glo_list_91ref,  &c_73953, cell_get(((closureN)self_73249)->
 }
 
 static void __lambda_136(int argc, object self_73250, object r_7390) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73955;
 c_73955.tag = closureN_tag;
@@ -993,7 +993,7 @@ return_funcall1((closure)&c_73955,  car(r_7390));;
 }
 
 static void __lambda_135(int argc, object self_73251, object r_7388) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73957;
 c_73957.tag = closureN_tag;
@@ -1008,12 +1008,12 @@ return_funcall1((closure)&c_73957,  cdr(((closureN)self_73251)->elts[1]));;
 }
 
 static void __lambda_134(int argc, object self_73252, object r_7389) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall1(  ((closureN)self_73252)->elts[0],  memberp(((closureN)self_73252)->elts[1], r_7389));; 
 }
 
 static void __lambda_133(int argc, object self_73253, object r_7371) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73881;
 c_73881.tag = closureN_tag;
@@ -1032,7 +1032,7 @@ return_funcall1((closure)&c_73881,  Cyc_set_car(((closureN)self_73253)->elts[4],
 }
 
 static void __lambda_132(int argc, object self_73254, object r_7365) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73886;
 c_73886.tag = closureN_tag;
@@ -1052,7 +1052,7 @@ return_funcall2(  cell_get(((closureN)self_73254)->elts[4]),  &c_73886, &c_73933
 }
 
 static void __lambda_131(int argc, object self_73255, object r_7366) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73888;
 c_73888.tag = closureN_tag;
@@ -1070,7 +1070,7 @@ return_funcall1((closure)&c_73888,  __num_lte(cell_get(((closureN)self_73255)->e
 }
 
 static void __lambda_130(int argc, object self_73256, object r_7367) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7367) ){ 
   
 closureN_type c_73890;
@@ -1102,12 +1102,12 @@ return_funcall2(  __glo_error,  ((closureN)self_73256)->elts[2], &c_73924);}
 }
 
 static void __lambda_129(int argc, object self_73257, object r_7368) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall4(  __glo_list_91insert_91at_67,  ((closureN)self_73257)->elts[0], cell_get(((closureN)self_73257)->elts[2]), ((closureN)self_73257)->elts[1], r_7368);; 
 }
 
 static void __lambda_128(int argc, object self_73258, object k_7369) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73892;
 c_73892.tag = closureN_tag;
@@ -1122,7 +1122,7 @@ return_funcall1((closure)&c_73892,  __num_eq(cell_get(((closureN)self_73258)->el
 }
 
 static void __lambda_127(int argc, object self_73259, object r_7370) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_7370) ){ 
   return_funcall1(  ((closureN)self_73259)->elts[1],  cell_get(((closureN)self_73259)->elts[0]));
 } else { 
@@ -1135,7 +1135,7 @@ return_funcall1(  ((closureN)self_73259)->elts[1],  &c_73902);}
 }
 
 static void __lambda_126(int argc, object self_73260, object r_7363) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73856;
 c_73856.tag = closureN_tag;
@@ -1152,12 +1152,12 @@ return_funcall1((closure)&c_73856,  &c_73864);;
 }
 
 static void __lambda_125(int argc, object self_73261, object r_7362) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall1(  ((closureN)self_73261)->elts[0],  Cyc_set_car(((closureN)self_73261)->elts[1], r_7362));; 
 }
 
 static void __lambda_124(int argc, object self_73262, object r_7359) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73843;
 c_73843.tag = closureN_tag;
@@ -1172,12 +1172,12 @@ return_funcall3(  __glo_for_91each,  &c_73843, r_7359, ((closureN)self_73262)->e
 }
 
 static void __lambda_123(int argc, object self_73263, object r_7358) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-dep-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_funcall3(  __glo_map,  ((closureN)self_73263)->elts[0], primitive_car, cell_get(((closureN)self_73263)->elts[1]));; 
 }
 
 static void __lambda_122(int argc, closure _,object k_7394, object imports_739) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73744;
 c_73744.tag = closureN_tag;
@@ -1192,7 +1192,7 @@ return_funcall2((closure)&c_73744,  boolean_f, boolean_f);;
 }
 
 static void __lambda_121(int argc, object self_73264, object libraries_95deps_7311, object find_91deps_67_7310) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73746;
 c_73746.tag = closureN_tag;
@@ -1210,7 +1210,7 @@ return_funcall1((closure)&c_73746,  &c_73830);;
 }
 
 static void __lambda_120(int argc, object self_73265, object libraries_95deps_7311) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73748;
 c_73748.tag = closureN_tag;
@@ -1228,7 +1228,7 @@ return_funcall1((closure)&c_73748,  &c_73826);;
 }
 
 static void __lambda_119(int argc, object self_73266, object find_91deps_67_7310) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73750;
 c_73750.tag = closureN_tag;
@@ -1245,7 +1245,7 @@ return_funcall0((closure)&c_73750);;
 }
 
 static void __lambda_118(int argc, object self_73267) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73752;
 c_73752.tag = closureN_tag;
@@ -1262,7 +1262,7 @@ return_funcall1((closure)&c_73752,  nil);;
 }
 
 static void __lambda_117(int argc, object self_73268, object r_73108) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73754;
 c_73754.tag = closureN_tag;
@@ -1279,7 +1279,7 @@ return_funcall1((closure)&c_73754,  Cyc_set_car(((closureN)self_73268)->elts[3],
 }
 
 static void __lambda_116(int argc, object self_73269, object r_7395) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73756;
 c_73756.tag = closureN_tag;
@@ -1306,7 +1306,7 @@ return_funcall1((closure)&c_73756,  &c_73773);;
 }
 
 static void __lambda_115(int argc, object self_73270, object k_7399, object import_91set_7312) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73775;
 c_73775.tag = closureN_tag;
@@ -1331,7 +1331,7 @@ return_funcall1((closure)&c_73775,  &c_73779);;
 }
 
 static void __lambda_114(int argc, object self_73271, object k_73101, object i_7313) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73781;
 c_73781.tag = closureN_tag;
@@ -1348,7 +1348,7 @@ return_funcall1((closure)&c_73781,  assoc(i_7313, cell_get(((closureN)self_73271
 }
 
 static void __lambda_113(int argc, object self_73272, object r_73107) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73783;
 c_73783.tag = closureN_tag;
@@ -1365,7 +1365,7 @@ return_funcall2(  __glo_not,  &c_73783, r_73107);;
 }
 
 static void __lambda_112(int argc, object self_73273, object r_73102) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 if( !eq(boolean_f, r_73102) ){ 
   
 closureN_type c_73785;
@@ -1386,7 +1386,7 @@ return_funcall2(  __glo_lib_117read_91imports,  &c_73785, ((closureN)self_73273)
 }
 
 static void __lambda_111(int argc, object self_73274, object r_73103) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73787;
 c_73787.tag = closureN_tag;
@@ -1403,7 +1403,7 @@ return_funcall1((closure)&c_73787,  r_73103);;
 }
 
 static void __lambda_110(int argc, object self_73275, object deps_7314) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73789;
 c_73789.tag = closureN_tag;
@@ -1422,7 +1422,7 @@ return_funcall1((closure)&c_73789,  &c_73811);;
 }
 
 static void __lambda_109(int argc, object self_73276, object r_73106) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73791;
 c_73791.tag = closureN_tag;
@@ -1441,7 +1441,7 @@ return_funcall1((closure)&c_73791,  &c_73805);;
 }
 
 static void __lambda_108(int argc, object self_73277, object r_73105) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73793;
 c_73793.tag = closureN_tag;
@@ -1457,17 +1457,17 @@ return_funcall1((closure)&c_73793,  Cyc_set_car(((closureN)self_73277)->elts[3],
 }
 
 static void __lambda_107(int argc, object self_73278, object r_73104) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_funcall2(  cell_get(((closureN)self_73278)->elts[1]),  ((closureN)self_73278)->elts[2], ((closureN)self_73278)->elts[0]);; 
 }
 
 static void __lambda_106(int argc, object self_73279, object r_73100) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_funcall3(  __glo_for_91each,  ((closureN)self_73279)->elts[1], r_73100, ((closureN)self_73279)->elts[0]);; 
 }
 
 static void __lambda_105(int argc, object self_73280, object r_7398) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73758;
 c_73758.tag = closureN_tag;
@@ -1484,7 +1484,7 @@ return_funcall1((closure)&c_73758,  Cyc_set_car(((closureN)self_73280)->elts[0],
 }
 
 static void __lambda_104(int argc, object self_73281, object r_7396) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73763;
 c_73763.tag = closureN_tag;
@@ -1499,12 +1499,12 @@ return_funcall2(  cell_get(((closureN)self_73281)->elts[0]),  &c_73763, ((closur
 }
 
 static void __lambda_103(int argc, object self_73282, object r_7397) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:get-all-import-deps");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_funcall2(  __glo_lib_117get_91dep_91list,  ((closureN)self_73282)->elts[0], cell_get(((closureN)self_73282)->elts[1]));; 
 }
 
 static void __lambda_102(int argc, closure _,object k_73111, object imports_7315) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:resolve-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 closureN_type c_73731;
 c_73731.tag = closureN_tag;
@@ -1521,12 +1521,12 @@ return_funcall1((closure)&c_73731,  &c_73740);;
 }
 
 static void __lambda_101(int argc, object self_73283, object k_73114, object import_7316) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:resolve-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:resolve-imports");
 return_funcall2(  __glo_lib_117import_91_125export_91list,  k_73114, import_7316);; 
 }
 
 static void __lambda_100(int argc, object self_73284, object r_73113) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:resolve-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 closureN_type c_73733;
 c_73733.tag = closureN_tag;
@@ -1540,14 +1540,14 @@ return_funcall3(  __glo_map,  &c_73733, r_73113, ((closureN)self_73284)->elts[0]
 }
 
 static void __lambda_99(int argc, object self_73285, object r_73112) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:resolve-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 object c_73738 = apply(  ((closureN)self_73285)->elts[0], __glo_append, r_73112);
 return_funcall1(  ((closureN)self_73285)->elts[0],  c_73738);; 
 }
 
 static void __lambda_98(int argc, closure _,object k_73117, object import_7317) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73692;
 c_73692.tag = closureN_tag;
@@ -1561,7 +1561,7 @@ return_funcall2(  __glo_lib_117import_91_125filename,  &c_73692, import_7317);;
 }
 
 static void __lambda_97(int argc, object self_73286, object r_73124) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73694;
 c_73694.tag = closureN_tag;
@@ -1577,7 +1577,7 @@ return_funcall1((closure)&c_73694,  &c_73728);;
 }
 
 static void __lambda_96(int argc, object self_73287, object r_73118) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73696;
 c_73696.tag = closureN_tag;
@@ -1591,7 +1591,7 @@ return_funcall1((closure)&c_73696,  r_73118);;
 }
 
 static void __lambda_95(int argc, object self_73288, object dir_7318) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73698;
 c_73698.tag = closureN_tag;
@@ -1607,7 +1607,7 @@ return_funcall1((closure)&c_73698,  &c_73725);;
 }
 
 static void __lambda_94(int argc, object self_73289, object r_73119) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73700;
 c_73700.tag = closureN_tag;
@@ -1621,7 +1621,7 @@ return_funcall1((closure)&c_73700,  r_73119);;
 }
 
 static void __lambda_93(int argc, object self_73290, object fp_7319) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73702;
 c_73702.tag = closureN_tag;
@@ -1636,7 +1636,7 @@ return_funcall2(  __glo_read_91all,  &c_73702, fp_7319);;
 }
 
 static void __lambda_92(int argc, object self_73291, object r_73120) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73704;
 c_73704.tag = closureN_tag;
@@ -1651,7 +1651,7 @@ return_funcall1((closure)&c_73704,  r_73120);;
 }
 
 static void __lambda_91(int argc, object self_73292, object lib_7320) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73706;
 c_73706.tag = closureN_tag;
@@ -1666,7 +1666,7 @@ return_funcall1((closure)&c_73706,  car(lib_7320));;
 }
 
 static void __lambda_90(int argc, object self_73293, object r_73123) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73708;
 c_73708.tag = closureN_tag;
@@ -1681,7 +1681,7 @@ return_funcall2(  __glo_lib_117exports,  &c_73708, r_73123);;
 }
 
 static void __lambda_89(int argc, object self_73294, object r_73121) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73710;
 c_73710.tag = closureN_tag;
@@ -1696,7 +1696,7 @@ return_funcall1((closure)&c_73710,  r_73121);;
 }
 
 static void __lambda_88(int argc, object self_73295, object exports_7321) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73712;
 c_73712.tag = closureN_tag;
@@ -1712,7 +1712,7 @@ return_funcall0((closure)&c_73712);;
 }
 
 static void __lambda_87(int argc, object self_73296) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73714;
 c_73714.tag = closureN_tag;
@@ -1727,12 +1727,12 @@ return_funcall1((closure)&c_73714,  Cyc_io_close_input_port(((closureN)self_7329
 }
 
 static void __lambda_86(int argc, object self_73297, object r_73122) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->export-list");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->export-list");
 return_funcall1(  ((closureN)self_73297)->elts[1],  ((closureN)self_73297)->elts[0]);; 
 }
 
 static void __lambda_85(int argc, closure _,object k_73127, object import_7322) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73658;
 c_73658.tag = closureN_tag;
@@ -1746,7 +1746,7 @@ return_funcall2(  __glo_lib_117import_91_125filename,  &c_73658, import_7322);;
 }
 
 static void __lambda_84(int argc, object self_73298, object r_73128) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73660;
 c_73660.tag = closureN_tag;
@@ -1760,7 +1760,7 @@ return_funcall1((closure)&c_73660,  r_73128);;
 }
 
 static void __lambda_83(int argc, object self_73299, object dir_7323) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73662;
 c_73662.tag = closureN_tag;
@@ -1776,7 +1776,7 @@ return_funcall1((closure)&c_73662,  &c_73689);;
 }
 
 static void __lambda_82(int argc, object self_73300, object r_73129) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73664;
 c_73664.tag = closureN_tag;
@@ -1790,7 +1790,7 @@ return_funcall1((closure)&c_73664,  r_73129);;
 }
 
 static void __lambda_81(int argc, object self_73301, object fp_7324) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73666;
 c_73666.tag = closureN_tag;
@@ -1805,7 +1805,7 @@ return_funcall2(  __glo_read_91all,  &c_73666, fp_7324);;
 }
 
 static void __lambda_80(int argc, object self_73302, object r_73130) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73668;
 c_73668.tag = closureN_tag;
@@ -1820,7 +1820,7 @@ return_funcall1((closure)&c_73668,  r_73130);;
 }
 
 static void __lambda_79(int argc, object self_73303, object lib_7325) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73670;
 c_73670.tag = closureN_tag;
@@ -1835,7 +1835,7 @@ return_funcall1((closure)&c_73670,  car(lib_7325));;
 }
 
 static void __lambda_78(int argc, object self_73304, object r_73133) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73672;
 c_73672.tag = closureN_tag;
@@ -1850,7 +1850,7 @@ return_funcall2(  __glo_lib_117imports,  &c_73672, r_73133);;
 }
 
 static void __lambda_77(int argc, object self_73305, object r_73131) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73674;
 c_73674.tag = closureN_tag;
@@ -1865,7 +1865,7 @@ return_funcall1((closure)&c_73674,  r_73131);;
 }
 
 static void __lambda_76(int argc, object self_73306, object imports_7326) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73676;
 c_73676.tag = closureN_tag;
@@ -1881,7 +1881,7 @@ return_funcall0((closure)&c_73676);;
 }
 
 static void __lambda_75(int argc, object self_73307) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73678;
 c_73678.tag = closureN_tag;
@@ -1896,12 +1896,12 @@ return_funcall1((closure)&c_73678,  Cyc_io_close_input_port(((closureN)self_7330
 }
 
 static void __lambda_74(int argc, object self_73308, object r_73132) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:read-imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:read-imports");
 return_funcall1(  ((closureN)self_73308)->elts[1],  ((closureN)self_73308)->elts[0]);; 
 }
 
 static void __lambda_73(int argc, closure _,object k_73136, object import_7327) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73599;
 c_73599.tag = closureN_tag;
@@ -1916,7 +1916,7 @@ return_funcall2(  __glo_reverse,  &c_73599, import_7327);;
 }
 
 static void __lambda_72(int argc, object self_73309, object r_73148) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73601;
 c_73601.tag = closureN_tag;
@@ -1931,7 +1931,7 @@ return_funcall1((closure)&c_73601,  cdr(r_73148));;
 }
 
 static void __lambda_71(int argc, object self_73310, object r_73147) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73603;
 c_73603.tag = closureN_tag;
@@ -1946,7 +1946,7 @@ return_funcall2(  __glo_reverse,  &c_73603, r_73147);;
 }
 
 static void __lambda_70(int argc, object self_73311, object r_73137) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73605;
 c_73605.tag = closureN_tag;
@@ -1961,7 +1961,7 @@ return_funcall1((closure)&c_73605,  r_73137);;
 }
 
 static void __lambda_69(int argc, object self_73312, object import_91path_7328) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73607;
 c_73607.tag = closureN_tag;
@@ -1979,7 +1979,7 @@ return_funcall1((closure)&c_73607,  &c_73642);;
 }
 
 static void __lambda_68(int argc, object self_73313, object k_73145, object i_7329) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73644;
 c_73644.tag = closureN_tag;
@@ -1995,7 +1995,7 @@ return_funcall1((closure)&c_73644,  &c_73653);;
 }
 
 static void __lambda_67(int argc, object self_73314, object r_73146) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 make_string(c_73650, "/");
 
@@ -2004,7 +2004,7 @@ return_funcall1(  ((closureN)self_73314)->elts[0],  &c_73649);;
 }
 
 static void __lambda_66(int argc, object self_73315, object r_73144) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73609;
 c_73609.tag = closureN_tag;
@@ -2019,7 +2019,7 @@ return_funcall3(  __glo_map,  &c_73609, r_73144, ((closureN)self_73315)->elts[1]
 }
 
 static void __lambda_65(int argc, object self_73316, object r_73143) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73611;
 c_73611.tag = closureN_tag;
@@ -2036,7 +2036,7 @@ return_funcall1((closure)&c_73611,  c_73640);;
 }
 
 static void __lambda_64(int argc, object self_73317, object r_73138) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73613;
 c_73613.tag = closureN_tag;
@@ -2051,7 +2051,7 @@ return_funcall1((closure)&c_73613,  r_73138);;
 }
 
 static void __lambda_63(int argc, object self_73318, object path_7330) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73615;
 c_73615.tag = closureN_tag;
@@ -2067,7 +2067,7 @@ return_funcall0((closure)&c_73615);;
 }
 
 static void __lambda_62(int argc, object self_73319) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73617;
 c_73617.tag = closureN_tag;
@@ -2083,7 +2083,7 @@ return_funcall1((closure)&c_73617,  quote_scheme);;
 }
 
 static void __lambda_61(int argc, object self_73320, object r_73142) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73619;
 c_73619.tag = closureN_tag;
@@ -2098,7 +2098,7 @@ return_funcall3(  __glo_tagged_91list_127,  &c_73619, r_73142, ((closureN)self_7
 }
 
 static void __lambda_60(int argc, object self_73321, object r_73139) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 if( !eq(boolean_f, r_73139) ){ 
   
 closureN_type c_73621;
@@ -2117,7 +2117,7 @@ return_funcall1((closure)&c_73621,  quote_sld);
 }
 
 static void __lambda_59(int argc, object self_73322, object r_73141) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73623;
 c_73623.tag = closureN_tag;
@@ -2134,7 +2134,7 @@ return_funcall1((closure)&c_73623,  &c_73633);;
 }
 
 static void __lambda_58(int argc, object self_73323, object r_73140) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->path");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->path");
 
 make_string(c_73629, "/");
 
@@ -2144,7 +2144,7 @@ return_funcall1(  ((closureN)self_73323)->elts[0],  &c_73628);;
 
 static void __lambda_57(int argc, closure _,object k_73151, object import_7332, object ext_7331_raw, ...) {
 load_varargs(ext_7331, ext_7331_raw, argc - 2);
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73512;
 c_73512.tag = closureN_tag;
@@ -2168,7 +2168,7 @@ return_funcall1((closure)&c_73512,  &c_73526);;
 }
 
 static void __lambda_56(int argc, object self_73324, object r_73152) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73528;
 c_73528.tag = closureN_tag;
@@ -2183,7 +2183,7 @@ return_funcall1((closure)&c_73528,  r_73152);;
 }
 
 static void __lambda_55(int argc, object self_73325, object file_91ext_7333) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73530;
 c_73530.tag = closureN_tag;
@@ -2201,7 +2201,7 @@ return_funcall1((closure)&c_73530,  &c_73585);;
 }
 
 static void __lambda_54(int argc, object self_73326, object k_73163, object i_7334) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73587;
 c_73587.tag = closureN_tag;
@@ -2217,7 +2217,7 @@ return_funcall1((closure)&c_73587,  &c_73596);;
 }
 
 static void __lambda_53(int argc, object self_73327, object r_73164) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 make_string(c_73593, "/");
 
@@ -2226,7 +2226,7 @@ return_funcall1(  ((closureN)self_73327)->elts[0],  &c_73592);;
 }
 
 static void __lambda_52(int argc, object self_73328, object r_73162) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73532;
 c_73532.tag = closureN_tag;
@@ -2242,7 +2242,7 @@ return_funcall3(  __glo_map,  &c_73532, r_73162, ((closureN)self_73328)->elts[1]
 }
 
 static void __lambda_51(int argc, object self_73329, object r_73161) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73534;
 c_73534.tag = closureN_tag;
@@ -2260,7 +2260,7 @@ return_funcall1((closure)&c_73534,  c_73583);;
 }
 
 static void __lambda_50(int argc, object self_73330, object r_73160) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73536;
 c_73536.tag = closureN_tag;
@@ -2277,7 +2277,7 @@ return_funcall1((closure)&c_73536,  &c_73579);;
 }
 
 static void __lambda_49(int argc, object self_73331, object r_73153) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73538;
 c_73538.tag = closureN_tag;
@@ -2292,7 +2292,7 @@ return_funcall1((closure)&c_73538,  r_73153);;
 }
 
 static void __lambda_48(int argc, object self_73332, object filename_85_7335) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73540;
 c_73540.tag = closureN_tag;
@@ -2310,7 +2310,7 @@ return_funcall1((closure)&c_73540,  &c_73576);;
 }
 
 static void __lambda_47(int argc, object self_73333, object r_73159) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73542;
 c_73542.tag = closureN_tag;
@@ -2329,7 +2329,7 @@ return_funcall1((closure)&c_73542,  &c_73571);;
 }
 
 static void __lambda_46(int argc, object self_73334, object r_73154) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73544;
 c_73544.tag = closureN_tag;
@@ -2344,7 +2344,7 @@ return_funcall1((closure)&c_73544,  r_73154);;
 }
 
 static void __lambda_45(int argc, object self_73335, object filename_7336) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73546;
 c_73546.tag = closureN_tag;
@@ -2360,7 +2360,7 @@ return_funcall0((closure)&c_73546);;
 }
 
 static void __lambda_44(int argc, object self_73336) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73548;
 c_73548.tag = closureN_tag;
@@ -2376,7 +2376,7 @@ return_funcall1((closure)&c_73548,  quote_scheme);;
 }
 
 static void __lambda_43(int argc, object self_73337, object r_73158) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73550;
 c_73550.tag = closureN_tag;
@@ -2391,7 +2391,7 @@ return_funcall3(  __glo_tagged_91list_127,  &c_73550, r_73158, ((closureN)self_7
 }
 
 static void __lambda_42(int argc, object self_73338, object r_73155) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 if( !eq(boolean_f, r_73155) ){ 
   
 closureN_type c_73552;
@@ -2410,7 +2410,7 @@ return_funcall1((closure)&c_73552,  quote_sld);
 }
 
 static void __lambda_41(int argc, object self_73339, object r_73157) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73554;
 c_73554.tag = closureN_tag;
@@ -2427,7 +2427,7 @@ return_funcall1((closure)&c_73554,  &c_73564);;
 }
 
 static void __lambda_40(int argc, object self_73340, object r_73156) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 make_string(c_73560, "/");
 
@@ -2436,7 +2436,7 @@ return_funcall1(  ((closureN)self_73340)->elts[1],  &c_73559);;
 }
 
 static void __lambda_39(int argc, object self_73341, object k_73165) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73514;
 c_73514.tag = closureN_tag;
@@ -2451,7 +2451,7 @@ return_funcall1((closure)&c_73514,  Cyc_is_null(((closureN)self_73341)->elts[0])
 }
 
 static void __lambda_38(int argc, object self_73342, object r_73166) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:import->filename");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:import->filename");
 if( !eq(boolean_f, r_73166) ){ 
   
 make_string(c_73517, ".sld");
@@ -2462,7 +2462,7 @@ return_funcall1(  ((closureN)self_73342)->elts[1],  &c_73517);
 }
 
 static void __lambda_37(int argc, closure _,object k_73169, object ast_7337) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73486;
 c_73486.tag = closureN_tag;
@@ -2479,12 +2479,12 @@ return_funcall1((closure)&c_73486,  &c_73506);;
 }
 
 static void __lambda_36(int argc, object self_73343, object k_73176, object inc_91lst_7339) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 return_funcall1(  k_73176,  cadr(inc_91lst_7339));; 
 }
 
 static void __lambda_35(int argc, object self_73344, object r_73170) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73488;
 c_73488.tag = closureN_tag;
@@ -2502,7 +2502,7 @@ return_funcall1((closure)&c_73488,  &c_73500);;
 }
 
 static void __lambda_34(int argc, object self_73345, object k_73174, object code_7338) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73502;
 c_73502.tag = closureN_tag;
@@ -2517,12 +2517,12 @@ return_funcall1((closure)&c_73502,  quote_include);;
 }
 
 static void __lambda_33(int argc, object self_73346, object r_73175) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73346)->elts[1], r_73175, ((closureN)self_73346)->elts[0]);; 
 }
 
 static void __lambda_32(int argc, object self_73347, object r_73172) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73490;
 c_73490.tag = closureN_tag;
@@ -2538,7 +2538,7 @@ return_funcall1((closure)&c_73490,  cddr(((closureN)self_73347)->elts[0]));;
 }
 
 static void __lambda_31(int argc, object self_73348, object r_73173) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73492;
 c_73492.tag = closureN_tag;
@@ -2553,12 +2553,12 @@ return_funcall3(  __glo_filter,  &c_73492, ((closureN)self_73348)->elts[2], r_73
 }
 
 static void __lambda_30(int argc, object self_73349, object r_73171) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:includes");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:includes");
 return_funcall3(  __glo_map,  ((closureN)self_73349)->elts[0], ((closureN)self_73349)->elts[1], r_73171);; 
 }
 
 static void __lambda_29(int argc, closure _,object k_73179, object ast_7340) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73460;
 c_73460.tag = closureN_tag;
@@ -2573,7 +2573,7 @@ return_funcall1((closure)&c_73460,  quote_begin);;
 }
 
 static void __lambda_28(int argc, object self_73350, object r_73183) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73462;
 c_73462.tag = closureN_tag;
@@ -2588,7 +2588,7 @@ return_funcall1((closure)&c_73462,  cddr(((closureN)self_73350)->elts[0]));;
 }
 
 static void __lambda_27(int argc, object self_73351, object r_73184) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73464;
 c_73464.tag = closureN_tag;
@@ -2602,7 +2602,7 @@ return_funcall1((closure)&c_73464,  assoc(((closureN)self_73351)->elts[1], r_731
 }
 
 static void __lambda_26(int argc, object self_73352, object r_73181) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73466;
 c_73466.tag = closureN_tag;
@@ -2616,7 +2616,7 @@ return_funcall1((closure)&c_73466,  r_73181);;
 }
 
 static void __lambda_25(int argc, object self_73353, object code_7341) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73468;
 c_73468.tag = closureN_tag;
@@ -2639,12 +2639,12 @@ return_funcall1((closure)&c_73468,  &c_73475);;
 }
 
 static void __lambda_24(int argc, object self_73354, object r_73180) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 return_funcall2(  __glo_lib_117result,  ((closureN)self_73354)->elts[0], r_73180);; 
 }
 
 static void __lambda_23(int argc, object self_73355, object k_73182) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:body");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:body");
 if( !eq(boolean_f, ((closureN)self_73355)->elts[0]) ){ 
   return_funcall1(  k_73182,  cdr(((closureN)self_73355)->elts[0]));
 } else { 
@@ -2653,7 +2653,7 @@ if( !eq(boolean_f, ((closureN)self_73355)->elts[0]) ){
 }
 
 static void __lambda_22(int argc, closure _,object k_73187, object ast_7342) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73434;
 c_73434.tag = closureN_tag;
@@ -2668,7 +2668,7 @@ return_funcall1((closure)&c_73434,  quote_import);;
 }
 
 static void __lambda_21(int argc, object self_73356, object r_73191) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73436;
 c_73436.tag = closureN_tag;
@@ -2683,7 +2683,7 @@ return_funcall1((closure)&c_73436,  cddr(((closureN)self_73356)->elts[0]));;
 }
 
 static void __lambda_20(int argc, object self_73357, object r_73192) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73438;
 c_73438.tag = closureN_tag;
@@ -2697,7 +2697,7 @@ return_funcall1((closure)&c_73438,  assoc(((closureN)self_73357)->elts[1], r_731
 }
 
 static void __lambda_19(int argc, object self_73358, object r_73189) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73440;
 c_73440.tag = closureN_tag;
@@ -2711,7 +2711,7 @@ return_funcall1((closure)&c_73440,  r_73189);;
 }
 
 static void __lambda_18(int argc, object self_73359, object code_7343) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73442;
 c_73442.tag = closureN_tag;
@@ -2734,12 +2734,12 @@ return_funcall1((closure)&c_73442,  &c_73449);;
 }
 
 static void __lambda_17(int argc, object self_73360, object r_73188) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 return_funcall2(  __glo_lib_117result,  ((closureN)self_73360)->elts[0], r_73188);; 
 }
 
 static void __lambda_16(int argc, object self_73361, object k_73190) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:imports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:imports");
 if( !eq(boolean_f, ((closureN)self_73361)->elts[0]) ){ 
   return_funcall1(  k_73190,  cdr(((closureN)self_73361)->elts[0]));
 } else { 
@@ -2748,7 +2748,7 @@ if( !eq(boolean_f, ((closureN)self_73361)->elts[0]) ){
 }
 
 static void __lambda_15(int argc, closure _,object k_73195, object ast_7344) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73408;
 c_73408.tag = closureN_tag;
@@ -2763,7 +2763,7 @@ return_funcall1((closure)&c_73408,  quote_export);;
 }
 
 static void __lambda_14(int argc, object self_73362, object r_73199) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73410;
 c_73410.tag = closureN_tag;
@@ -2778,7 +2778,7 @@ return_funcall1((closure)&c_73410,  cddr(((closureN)self_73362)->elts[0]));;
 }
 
 static void __lambda_13(int argc, object self_73363, object r_73200) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73412;
 c_73412.tag = closureN_tag;
@@ -2792,7 +2792,7 @@ return_funcall1((closure)&c_73412,  assoc(((closureN)self_73363)->elts[1], r_732
 }
 
 static void __lambda_12(int argc, object self_73364, object r_73197) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73414;
 c_73414.tag = closureN_tag;
@@ -2806,7 +2806,7 @@ return_funcall1((closure)&c_73414,  r_73197);;
 }
 
 static void __lambda_11(int argc, object self_73365, object code_7345) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73416;
 c_73416.tag = closureN_tag;
@@ -2829,12 +2829,12 @@ return_funcall1((closure)&c_73416,  &c_73423);;
 }
 
 static void __lambda_10(int argc, object self_73366, object r_73196) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 return_funcall2(  __glo_lib_117result,  ((closureN)self_73366)->elts[0], r_73196);; 
 }
 
 static void __lambda_9(int argc, object self_73367, object k_73198) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:exports");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:exports");
 if( !eq(boolean_f, ((closureN)self_73367)->elts[0]) ){ 
   return_funcall1(  k_73198,  cdr(((closureN)self_73367)->elts[0]));
 } else { 
@@ -2843,7 +2843,7 @@ if( !eq(boolean_f, ((closureN)self_73367)->elts[0]) ){
 }
 
 static void __lambda_8(int argc, closure _,object k_73203, object result_7346) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:result");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:result");
 if( !eq(boolean_f, result_7346) ){ 
   return_funcall1(  k_73203,  result_7346);
 } else { 
@@ -2852,7 +2852,7 @@ if( !eq(boolean_f, result_7346) ){
 }
 
 static void __lambda_7(int argc, closure _,object k_73206, object name_7347) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name->symbol");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name->symbol");
 
 closureN_type c_73392;
 c_73392.tag = closureN_tag;
@@ -2866,7 +2866,7 @@ return_funcall2(  __glo_lib_117name_91_125string,  &c_73392, name_7347);;
 }
 
 static void __lambda_6(int argc, object self_73368, object r_73208) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name->symbol");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name->symbol");
 
 closureN_type c_73394;
 c_73394.tag = closureN_tag;
@@ -2884,12 +2884,12 @@ return_funcall1((closure)&c_73394,  &c_73401);;
 }
 
 static void __lambda_5(int argc, object self_73369, object r_73207) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name->symbol");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name->symbol");
 return_funcall1(  ((closureN)self_73369)->elts[0],  Cyc_string2symbol(r_73207));; 
 }
 
 static void __lambda_4(int argc, closure _,object k_73211, object name_7348) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name->string");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name->string");
 
 closureN_type c_73384;
 c_73384.tag = closureN_tag;
@@ -2903,19 +2903,19 @@ return_funcall3(  __glo_map,  &c_73384, __glo_mangle, name_7348);;
 }
 
 static void __lambda_3(int argc, object self_73370, object r_73212) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name->string");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name->string");
 
 object c_73389 = apply(  ((closureN)self_73370)->elts[0], primitive_string_91append, r_73212);
 return_funcall1(  ((closureN)self_73370)->elts[0],  c_73389);; 
 }
 
 static void __lambda_2(int argc, closure _,object k_73215, object ast_7349) {
-  Cyc_st_add("scheme/cyclone/libraries.c:lib:name");
+  Cyc_st_add("scheme/cyclone/libraries.sld:lib:name");
 return_funcall1(  k_73215,  cadr(ast_7349));; 
 }
 
 static void __lambda_1(int argc, closure _,object k_73218, object ast_7350) {
-  Cyc_st_add("scheme/cyclone/libraries.c:library?");
+  Cyc_st_add("scheme/cyclone/libraries.sld:library?");
 
 closureN_type c_73374;
 c_73374.tag = closureN_tag;
@@ -2930,7 +2930,7 @@ return_funcall1((closure)&c_73374,  quote_define_91library);;
 }
 
 static void __lambda_0(int argc, object self_73371, object r_73219) {
-  Cyc_st_add("scheme/cyclone/libraries.c:library?");
+  Cyc_st_add("scheme/cyclone/libraries.sld:library?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73371)->elts[1], r_73219, ((closureN)self_73371)->elts[0]);; 
 }
 

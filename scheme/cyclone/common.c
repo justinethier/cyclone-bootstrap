@@ -57,7 +57,7 @@ static void __lambda_1(int argc, object self_7320, object r_737) ;
 static void __lambda_0(int argc, object self_7321, object r_736) ;
 
 static void __lambda_5(int argc, closure _,object k_733) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7325;
 c_7325.tag = closureN_tag;
@@ -73,7 +73,7 @@ return_funcall1((closure)&c_7325,  &c_7352);;
 }
 
 static void __lambda_4(int argc, object self_7317, object r_734) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7327;
 c_7327.tag = closureN_tag;
@@ -93,7 +93,7 @@ return_funcall1((closure)&c_7327,  &c_7349);;
 }
 
 static void __lambda_3(int argc, object self_7318, object r_738) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7329;
 c_7329.tag = closureN_tag;
@@ -107,7 +107,7 @@ return_funcall1((closure)&c_7329,  global_set(__glo__85version_91banner_85, r_73
 }
 
 static void __lambda_2(int argc, object self_7319, object r_735) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7331;
 c_7331.tag = closureN_tag;
@@ -127,7 +127,7 @@ return_funcall1((closure)&c_7331,  &c_7342);;
 }
 
 static void __lambda_1(int argc, object self_7320, object r_737) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7333;
 c_7333.tag = closureN_tag;
@@ -141,7 +141,7 @@ return_funcall1((closure)&c_7333,  global_set(__glo__85c_91file_91header_91comme
 }
 
 static void __lambda_0(int argc, object self_7321, object r_736) {
-  Cyc_st_add("scheme/cyclone/common.c:lib-init:schemecyclonecommon");
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 return_funcall1(  ((closureN)self_7321)->elts[0],  global_set(__glo__85Cyc_91version_91banner_85, __glo__85version_91banner_85));; 
 }
 

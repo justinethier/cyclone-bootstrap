@@ -368,7 +368,7 @@ static void __lambda_1(int argc, object self_73299, object r_73182) ;
 static void __lambda_0(int argc, object self_73300, object r_73183) ;
 
 static void __lambda_131(int argc, closure _,object k_7349) {
-  Cyc_st_add("scheme/cyclone/util.c:lib-init:schemecycloneutil");
+  Cyc_st_add("scheme/cyclone/util.sld:lib-init:schemecycloneutil");
 
 closureN_type c_73904;
 c_73904.tag = closureN_tag;
@@ -384,7 +384,7 @@ return_funcall1((closure)&c_73904,  &c_73949);;
 }
 
 static void __lambda_130(int argc, object self_73184, object r_7350) {
-  Cyc_st_add("scheme/cyclone/util.c:lib-init:schemecycloneutil");
+  Cyc_st_add("scheme/cyclone/util.sld:lib-init:schemecycloneutil");
 
 closureN_type c_73906;
 c_73906.tag = closureN_tag;
@@ -474,12 +474,12 @@ return_funcall1((closure)&c_73906,  &c_73911);;
 }
 
 static void __lambda_129(int argc, object self_73185, object r_7351) {
-  Cyc_st_add("scheme/cyclone/util.c:lib-init:schemecycloneutil");
+  Cyc_st_add("scheme/cyclone/util.sld:lib-init:schemecycloneutil");
 return_funcall1(  ((closureN)self_73185)->elts[0],  global_set(__glo__85c_91keywords_85, r_7351));; 
 }
 
 static void __lambda_128(int argc, closure _,object k_7354, object pred_732, object lst_731) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73853;
 c_73853.tag = closureN_tag;
@@ -493,7 +493,7 @@ return_funcall3(  __glo_map,  &c_73853, pred_732, lst_731);;
 }
 
 static void __lambda_127(int argc, object self_73186, object r_7355) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73855;
 c_73855.tag = closureN_tag;
@@ -507,7 +507,7 @@ return_funcall1((closure)&c_73855,  r_7355);;
 }
 
 static void __lambda_126(int argc, object self_73187, object l_733) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73857;
 c_73857.tag = closureN_tag;
@@ -522,7 +522,7 @@ return_funcall1((closure)&c_73857,  boolean_f);;
 }
 
 static void __lambda_125(int argc, object self_73188, object every_85_734) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73859;
 c_73859.tag = closureN_tag;
@@ -539,7 +539,7 @@ return_funcall1((closure)&c_73859,  &c_73901);;
 }
 
 static void __lambda_124(int argc, object self_73189, object every_85_734) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73861;
 c_73861.tag = closureN_tag;
@@ -555,7 +555,7 @@ return_funcall0((closure)&c_73861);;
 }
 
 static void __lambda_123(int argc, object self_73190) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73863;
 c_73863.tag = closureN_tag;
@@ -580,7 +580,7 @@ return_funcall1((closure)&c_73863,  &c_73875);;
 }
 
 static void __lambda_122(int argc, object self_73191, object k_7358, object l_735) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73877;
 c_73877.tag = closureN_tag;
@@ -596,7 +596,7 @@ return_funcall1((closure)&c_73877,  Cyc_is_null(l_735));;
 }
 
 static void __lambda_121(int argc, object self_73192, object r_7359) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 if( !eq(boolean_f, r_7359) ){ 
   return_funcall1(  ((closureN)self_73192)->elts[1],  boolean_t);
 } else { 
@@ -616,7 +616,7 @@ return_funcall1((closure)&c_73881,  car(((closureN)self_73192)->elts[2]));}
 }
 
 static void __lambda_120(int argc, object self_73193, object r_7360) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 if( !eq(boolean_f, r_7360) ){ 
   
 closureN_type c_73883;
@@ -635,12 +635,12 @@ return_funcall1((closure)&c_73883,  cdr(((closureN)self_73193)->elts[2]));
 }
 
 static void __lambda_119(int argc, object self_73194, object r_7361) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 return_funcall2(  cell_get(((closureN)self_73194)->elts[0]),  ((closureN)self_73194)->elts[1], r_7361);; 
 }
 
 static void __lambda_118(int argc, object self_73195, object r_7357) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 
 closureN_type c_73865;
 c_73865.tag = closureN_tag;
@@ -656,12 +656,12 @@ return_funcall1((closure)&c_73865,  Cyc_set_car(((closureN)self_73195)->elts[0],
 }
 
 static void __lambda_117(int argc, object self_73196, object r_7356) {
-  Cyc_st_add("scheme/cyclone/util.c:every");
+  Cyc_st_add("scheme/cyclone/util.sld:every");
 return_funcall2(  cell_get(((closureN)self_73196)->elts[0]),  ((closureN)self_73196)->elts[1], ((closureN)self_73196)->elts[2]);; 
 }
 
 static void __lambda_116(int argc, closure _,object k_7364, object pred_737, object lst_736) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73802;
 c_73802.tag = closureN_tag;
@@ -675,7 +675,7 @@ return_funcall3(  __glo_map,  &c_73802, pred_737, lst_736);;
 }
 
 static void __lambda_115(int argc, object self_73197, object r_7365) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73804;
 c_73804.tag = closureN_tag;
@@ -689,7 +689,7 @@ return_funcall1((closure)&c_73804,  r_7365);;
 }
 
 static void __lambda_114(int argc, object self_73198, object l_738) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73806;
 c_73806.tag = closureN_tag;
@@ -704,7 +704,7 @@ return_funcall1((closure)&c_73806,  boolean_f);;
 }
 
 static void __lambda_113(int argc, object self_73199, object any_85_739) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73808;
 c_73808.tag = closureN_tag;
@@ -721,7 +721,7 @@ return_funcall1((closure)&c_73808,  &c_73850);;
 }
 
 static void __lambda_112(int argc, object self_73200, object any_85_739) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73810;
 c_73810.tag = closureN_tag;
@@ -737,7 +737,7 @@ return_funcall0((closure)&c_73810);;
 }
 
 static void __lambda_111(int argc, object self_73201) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73812;
 c_73812.tag = closureN_tag;
@@ -762,7 +762,7 @@ return_funcall1((closure)&c_73812,  &c_73824);;
 }
 
 static void __lambda_110(int argc, object self_73202, object k_7368, object l_7310) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73826;
 c_73826.tag = closureN_tag;
@@ -778,7 +778,7 @@ return_funcall1((closure)&c_73826,  Cyc_is_null(l_7310));;
 }
 
 static void __lambda_109(int argc, object self_73203, object r_7369) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 if( !eq(boolean_f, r_7369) ){ 
   return_funcall1(  ((closureN)self_73203)->elts[1],  boolean_f);
 } else { 
@@ -798,7 +798,7 @@ return_funcall1((closure)&c_73830,  car(((closureN)self_73203)->elts[2]));}
 }
 
 static void __lambda_108(int argc, object self_73204, object r_7370) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 if( !eq(boolean_f, r_7370) ){ 
   return_funcall1(  ((closureN)self_73204)->elts[1],  boolean_t);
 } else { 
@@ -817,12 +817,12 @@ return_funcall1((closure)&c_73834,  cdr(((closureN)self_73204)->elts[2]));}
 }
 
 static void __lambda_107(int argc, object self_73205, object r_7371) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 return_funcall2(  cell_get(((closureN)self_73205)->elts[0]),  ((closureN)self_73205)->elts[1], r_7371);; 
 }
 
 static void __lambda_106(int argc, object self_73206, object r_7367) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 
 closureN_type c_73814;
 c_73814.tag = closureN_tag;
@@ -838,12 +838,12 @@ return_funcall1((closure)&c_73814,  Cyc_set_car(((closureN)self_73206)->elts[0],
 }
 
 static void __lambda_105(int argc, object self_73207, object r_7366) {
-  Cyc_st_add("scheme/cyclone/util.c:any");
+  Cyc_st_add("scheme/cyclone/util.sld:any");
 return_funcall2(  cell_get(((closureN)self_73207)->elts[0]),  ((closureN)self_73207)->elts[1], ((closureN)self_73207)->elts[2]);; 
 }
 
 static void __lambda_104(int argc, closure _,object k_7376, object symbol_7311) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle-global");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle-global");
 
 closureN_type c_73793;
 c_73793.tag = closureN_tag;
@@ -857,7 +857,7 @@ return_funcall2(  __glo_mangle,  &c_73793, symbol_7311);;
 }
 
 static void __lambda_103(int argc, object self_73208, object r_7377) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle-global");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle-global");
 
 make_string(c_73799, "__glo_");
 
@@ -866,7 +866,7 @@ return_funcall1(  ((closureN)self_73208)->elts[0],  &c_73798);;
 }
 
 static void __lambda_102(int argc, closure _,object k_7380, object symbol_7312) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73631;
 c_73631.tag = closureN_tag;
@@ -881,7 +881,7 @@ return_funcall2((closure)&c_73631,  boolean_f, boolean_f);;
 }
 
 static void __lambda_101(int argc, object self_73209, object m_7314, object ident_7313) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73633;
 c_73633.tag = closureN_tag;
@@ -899,7 +899,7 @@ return_funcall1((closure)&c_73633,  &c_73790);;
 }
 
 static void __lambda_100(int argc, object self_73210, object m_7314) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73635;
 c_73635.tag = closureN_tag;
@@ -917,7 +917,7 @@ return_funcall1((closure)&c_73635,  &c_73786);;
 }
 
 static void __lambda_99(int argc, object self_73211, object ident_7313) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73637;
 c_73637.tag = closureN_tag;
@@ -934,7 +934,7 @@ return_funcall0((closure)&c_73637);;
 }
 
 static void __lambda_98(int argc, object self_73212) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73639;
 c_73639.tag = closureN_tag;
@@ -960,7 +960,7 @@ return_funcall1((closure)&c_73639,  &c_73693);;
 }
 
 static void __lambda_97(int argc, object self_73213, object k_7390, object chars_7315) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73695;
 c_73695.tag = closureN_tag;
@@ -976,7 +976,7 @@ return_funcall1((closure)&c_73695,  Cyc_is_null(chars_7315));;
 }
 
 static void __lambda_96(int argc, object self_73214, object r_7391) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 if( !eq(boolean_f, r_7391) ){ 
   return_funcall1(  ((closureN)self_73214)->elts[1],  nil);
 } else { 
@@ -1005,7 +1005,7 @@ return_funcall1((closure)&c_73699,  &c_73718);}
 }
 
 static void __lambda_95(int argc, object self_73215, object r_73102) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73720;
 c_73720.tag = closureN_tag;
@@ -1021,7 +1021,7 @@ return_funcall1((closure)&c_73720,  r_73102);;
 }
 
 static void __lambda_94(int argc, object self_73216, object tmp_7316) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73722;
 c_73722.tag = closureN_tag;
@@ -1047,7 +1047,7 @@ return_funcall1((closure)&c_73722,  &c_73733);;
 }
 
 static void __lambda_93(int argc, object self_73217, object r_7392) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 if( !eq(boolean_f, r_7392) ){ 
   
 closureN_type c_73735;
@@ -1078,7 +1078,7 @@ return_funcall1((closure)&c_73756,  car(((closureN)self_73217)->elts[0]));}
 }
 
 static void __lambda_92(int argc, object self_73218, object r_73101) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73758;
 c_73758.tag = closureN_tag;
@@ -1094,7 +1094,7 @@ return_funcall2(  __glo_char_91_125natural,  &c_73758, r_73101);;
 }
 
 static void __lambda_91(int argc, object self_73219, object r_73100) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73760;
 c_73760.tag = closureN_tag;
@@ -1110,7 +1110,7 @@ return_funcall2(  __glo_integer_91_125char_91list,  &c_73760, r_73100);;
 }
 
 static void __lambda_90(int argc, object self_73220, object r_7397) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73762;
 c_73762.tag = closureN_tag;
@@ -1126,7 +1126,7 @@ return_funcall1((closure)&c_73762,  cdr(((closureN)self_73220)->elts[0]));;
 }
 
 static void __lambda_89(int argc, object self_73221, object r_7399) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73767;
 c_73767.tag = closureN_tag;
@@ -1141,7 +1141,7 @@ return_funcall2(  cell_get(((closureN)self_73221)->elts[1]),  &c_73767, r_7399);
 }
 
 static void __lambda_88(int argc, object self_73222, object r_7398) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73769;
 c_73769.tag = closureN_tag;
@@ -1155,14 +1155,14 @@ return_funcall3(  __glo_append,  &c_73769, ((closureN)self_73222)->elts[1], r_73
 }
 
 static void __lambda_87(int argc, object self_73223, object r_7396) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 make_cons(c_73774,obj_char2obj(95), r_7396);
 return_funcall1(  ((closureN)self_73223)->elts[0],  &c_73774);; 
 }
 
 static void __lambda_86(int argc, object self_73224, object r_7393) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73737;
 c_73737.tag = closureN_tag;
@@ -1178,7 +1178,7 @@ return_funcall1((closure)&c_73737,  cdr(((closureN)self_73224)->elts[0]));;
 }
 
 static void __lambda_85(int argc, object self_73225, object r_7395) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73742;
 c_73742.tag = closureN_tag;
@@ -1193,14 +1193,14 @@ return_funcall2(  cell_get(((closureN)self_73225)->elts[1]),  &c_73742, r_7395);
 }
 
 static void __lambda_84(int argc, object self_73226, object r_7394) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 make_cons(c_73747,((closureN)self_73226)->elts[1], r_7394);
 return_funcall1(  ((closureN)self_73226)->elts[0],  &c_73747);; 
 }
 
 static void __lambda_83(int argc, object self_73227, object k_73103) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 if( !eq(boolean_f, ((closureN)self_73227)->elts[1]) ){ 
   return_funcall1(  k_73103,  ((closureN)self_73227)->elts[1]);
 } else { 
@@ -1218,12 +1218,12 @@ return_funcall1((closure)&c_73727,  car(((closureN)self_73227)->elts[0]));}
 }
 
 static void __lambda_82(int argc, object self_73228, object r_73104) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 return_funcall2(  __glo_char_91numeric_127,  ((closureN)self_73228)->elts[0], r_73104);; 
 }
 
 static void __lambda_81(int argc, object self_73229, object k_73105) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73701;
 c_73701.tag = closureN_tag;
@@ -1238,7 +1238,7 @@ return_funcall1((closure)&c_73701,  car(((closureN)self_73229)->elts[0]));;
 }
 
 static void __lambda_80(int argc, object self_73230, object r_73109) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73703;
 c_73703.tag = closureN_tag;
@@ -1253,7 +1253,7 @@ return_funcall2(  __glo_char_91alphabetic_127,  &c_73703, r_73109);;
 }
 
 static void __lambda_79(int argc, object self_73231, object r_73106) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 if( !eq(boolean_f, r_73106) ){ 
   
 closureN_type c_73705;
@@ -1271,7 +1271,7 @@ return_funcall1((closure)&c_73705,  car(((closureN)self_73231)->elts[0]));
 }
 
 static void __lambda_78(int argc, object self_73232, object r_73108) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73707;
 c_73707.tag = closureN_tag;
@@ -1285,12 +1285,12 @@ return_funcall3(  __glo_char_123_127,  &c_73707, r_73108, obj_char2obj(95));;
 }
 
 static void __lambda_77(int argc, object self_73233, object r_73107) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 return_funcall2(  __glo_not,  ((closureN)self_73233)->elts[0], r_73107);; 
 }
 
 static void __lambda_76(int argc, object self_73234, object r_7389) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73641;
 c_73641.tag = closureN_tag;
@@ -1307,7 +1307,7 @@ return_funcall1((closure)&c_73641,  Cyc_set_car(((closureN)self_73234)->elts[2],
 }
 
 static void __lambda_75(int argc, object self_73235, object r_7381) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73643;
 c_73643.tag = closureN_tag;
@@ -1325,7 +1325,7 @@ return_funcall1((closure)&c_73643,  &c_73688);;
 }
 
 static void __lambda_74(int argc, object self_73236, object r_7388) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73645;
 c_73645.tag = closureN_tag;
@@ -1341,7 +1341,7 @@ return_funcall2(  __glo_string_91_125list,  &c_73645, r_7388);;
 }
 
 static void __lambda_73(int argc, object self_73237, object r_7387) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73650;
 c_73650.tag = closureN_tag;
@@ -1356,7 +1356,7 @@ return_funcall2(  cell_get(((closureN)self_73237)->elts[2]),  &c_73650, r_7387);
 }
 
 static void __lambda_72(int argc, object self_73238, object r_7386) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73652;
 c_73652.tag = closureN_tag;
@@ -1373,7 +1373,7 @@ return_funcall1((closure)&c_73652,  &c_73685);;
 }
 
 static void __lambda_71(int argc, object self_73239, object r_7385) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73654;
 c_73654.tag = closureN_tag;
@@ -1388,7 +1388,7 @@ return_funcall1((closure)&c_73654,  Cyc_set_car(((closureN)self_73239)->elts[0],
 }
 
 static void __lambda_70(int argc, object self_73240, object r_7382) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73656;
 c_73656.tag = closureN_tag;
@@ -1403,7 +1403,7 @@ return_funcall1((closure)&c_73656,  Cyc_string2symbol(cell_get(((closureN)self_7
 }
 
 static void __lambda_69(int argc, object self_73241, object r_7384) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 
 closureN_type c_73658;
 c_73658.tag = closureN_tag;
@@ -1418,7 +1418,7 @@ return_funcall1((closure)&c_73658,  memberp(r_7384, __glo__85c_91keywords_85));;
 }
 
 static void __lambda_68(int argc, object self_73242, object r_7383) {
-  Cyc_st_add("scheme/cyclone/util.c:mangle");
+  Cyc_st_add("scheme/cyclone/util.sld:mangle");
 if( !eq(boolean_f, r_7383) ){ 
   
 make_string(c_73664, "_");
@@ -1431,7 +1431,7 @@ return_funcall1(  ((closureN)self_73242)->elts[1],  &c_73663);
 }
 
 static void __lambda_67(int argc, closure _,object k_73112, object lis_7319, object obj_7318, object k_7317) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73542;
 c_73542.tag = closureN_tag;
@@ -1448,7 +1448,7 @@ return_funcall1((closure)&c_73542,  Cyc_is_null(lis_7319));;
 }
 
 static void __lambda_66(int argc, object self_73243, object r_73113) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 if( !eq(boolean_f, r_73113) ){ 
   
 make_string(c_73545, "list-insert-at!, lis cannot be null");
@@ -1481,7 +1481,7 @@ return_funcall1((closure)&c_73547,  &c_73565);}
 }
 
 static void __lambda_65(int argc, object self_73244, object r_73114) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 if( !eq(boolean_f, r_73114) ){ 
   
 closureN_type c_73567;
@@ -1513,7 +1513,7 @@ return_funcall2(  __glo_zero_127,  &c_73580, ((closureN)self_73244)->elts[1]);}
 }
 
 static void __lambda_64(int argc, object self_73245, object r_73117) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 if( !eq(boolean_f, r_73117) ){ 
   
 closureN_type c_73582;
@@ -1544,7 +1544,7 @@ return_funcall1((closure)&c_73611,  cdr(((closureN)self_73245)->elts[2]));}
 }
 
 static void __lambda_63(int argc, object self_73246, object r_73122) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73613;
 c_73613.tag = closureN_tag;
@@ -1564,12 +1564,12 @@ return_funcall1((closure)&c_73613,  &c_73620);;
 }
 
 static void __lambda_62(int argc, object self_73247, object r_73123) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 return_funcall4(  __glo_list_91insert_91at_67,  ((closureN)self_73247)->elts[0], ((closureN)self_73247)->elts[2], ((closureN)self_73247)->elts[1], r_73123);; 
 }
 
 static void __lambda_61(int argc, object self_73248, object r_73118) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73584;
 c_73584.tag = closureN_tag;
@@ -1585,7 +1585,7 @@ return_funcall1((closure)&c_73584,  r_73118);;
 }
 
 static void __lambda_60(int argc, object self_73249, object old_91car_7320) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73586;
 c_73586.tag = closureN_tag;
@@ -1601,7 +1601,7 @@ return_funcall1((closure)&c_73586,  Cyc_set_car(((closureN)self_73249)->elts[1],
 }
 
 static void __lambda_59(int argc, object self_73250, object r_73119) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73588;
 c_73588.tag = closureN_tag;
@@ -1617,7 +1617,7 @@ return_funcall1((closure)&c_73588,  cdr(((closureN)self_73250)->elts[1]));;
 }
 
 static void __lambda_58(int argc, object self_73251, object r_73121) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73590;
 c_73590.tag = closureN_tag;
@@ -1634,12 +1634,12 @@ return_funcall1((closure)&c_73590,  &c_73598);;
 }
 
 static void __lambda_57(int argc, object self_73252, object r_73120) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 return_funcall1(  ((closureN)self_73252)->elts[0],  Cyc_set_cdr(((closureN)self_73252)->elts[1], r_73120));; 
 }
 
 static void __lambda_56(int argc, object self_73253, object r_73116) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73569;
 c_73569.tag = closureN_tag;
@@ -1656,12 +1656,12 @@ return_funcall1((closure)&c_73569,  &c_73577);;
 }
 
 static void __lambda_55(int argc, object self_73254, object r_73115) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 return_funcall1(  ((closureN)self_73254)->elts[0],  Cyc_set_cdr(((closureN)self_73254)->elts[1], r_73115));; 
 }
 
 static void __lambda_54(int argc, object self_73255, object k_73124) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 
 closureN_type c_73549;
 c_73549.tag = closureN_tag;
@@ -1678,7 +1678,7 @@ return_funcall1((closure)&c_73549,  __num_gt(((closureN)self_73255)->elts[0], &c
 }
 
 static void __lambda_53(int argc, object self_73256, object r_73125) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 if( !eq(boolean_f, r_73125) ){ 
   
 closureN_type c_73551;
@@ -1696,12 +1696,12 @@ return_funcall1((closure)&c_73551,  cdr(((closureN)self_73256)->elts[1]));
 }
 
 static void __lambda_52(int argc, object self_73257, object r_73126) {
-  Cyc_st_add("scheme/cyclone/util.c:list-insert-at!");
+  Cyc_st_add("scheme/cyclone/util.sld:list-insert-at!");
 return_funcall1(  ((closureN)self_73257)->elts[0],  Cyc_is_null(r_73126));; 
 }
 
 static void __lambda_51(int argc, closure _,object k_73129, object lis_7321) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73469;
 c_73469.tag = closureN_tag;
@@ -1716,7 +1716,7 @@ return_funcall1((closure)&c_73469,  boolean_f);;
 }
 
 static void __lambda_50(int argc, object self_73258, object recur_7323) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73471;
 c_73471.tag = closureN_tag;
@@ -1733,7 +1733,7 @@ return_funcall1((closure)&c_73471,  &c_73539);;
 }
 
 static void __lambda_49(int argc, object self_73259, object recur_7323) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73473;
 c_73473.tag = closureN_tag;
@@ -1749,7 +1749,7 @@ return_funcall1((closure)&c_73473,  boolean_f);;
 }
 
 static void __lambda_48(int argc, object self_73260, object recur_7324) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73475;
 c_73475.tag = closureN_tag;
@@ -1774,7 +1774,7 @@ return_funcall1((closure)&c_73475,  &c_73487);;
 }
 
 static void __lambda_47(int argc, object self_73261, object k_73132, object lis_7325) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73489;
 c_73489.tag = closureN_tag;
@@ -1790,7 +1790,7 @@ return_funcall1((closure)&c_73489,  Cyc_is_null(lis_7325));;
 }
 
 static void __lambda_46(int argc, object self_73262, object r_73133) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 if( !eq(boolean_f, r_73133) ){ 
   return_funcall1(  ((closureN)self_73262)->elts[0],  ((closureN)self_73262)->elts[1]);
 } else { 
@@ -1810,7 +1810,7 @@ return_funcall1((closure)&c_73494,  car(((closureN)self_73262)->elts[1]));}
 }
 
 static void __lambda_45(int argc, object self_73263, object r_73134) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73496;
 c_73496.tag = closureN_tag;
@@ -1826,7 +1826,7 @@ return_funcall1((closure)&c_73496,  r_73134);;
 }
 
 static void __lambda_44(int argc, object self_73264, object x_7326) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73498;
 c_73498.tag = closureN_tag;
@@ -1843,7 +1843,7 @@ return_funcall1((closure)&c_73498,  cdr(((closureN)self_73264)->elts[1]));;
 }
 
 static void __lambda_43(int argc, object self_73265, object r_73135) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73500;
 c_73500.tag = closureN_tag;
@@ -1860,7 +1860,7 @@ return_funcall1((closure)&c_73500,  r_73135);;
 }
 
 static void __lambda_42(int argc, object self_73266, object tail_7327) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73502;
 c_73502.tag = closureN_tag;
@@ -1878,7 +1878,7 @@ return_funcall3(  __glo_delete,  &c_73502, ((closureN)self_73266)->elts[3], tail
 }
 
 static void __lambda_41(int argc, object self_73267, object r_73138) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73507;
 c_73507.tag = closureN_tag;
@@ -1895,7 +1895,7 @@ return_funcall2(  cell_get(((closureN)self_73267)->elts[2]),  &c_73507, r_73138)
 }
 
 static void __lambda_40(int argc, object self_73268, object r_73136) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73509;
 c_73509.tag = closureN_tag;
@@ -1912,7 +1912,7 @@ return_funcall1((closure)&c_73509,  r_73136);;
 }
 
 static void __lambda_39(int argc, object self_73269, object new_91tail_7328) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73511;
 c_73511.tag = closureN_tag;
@@ -1930,7 +1930,7 @@ return_funcall0((closure)&c_73511);;
 }
 
 static void __lambda_38(int argc, object self_73270) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73513;
 c_73513.tag = closureN_tag;
@@ -1947,7 +1947,7 @@ return_funcall1((closure)&c_73513,  Cyc_eq(((closureN)self_73270)->elts[3], ((cl
 }
 
 static void __lambda_37(int argc, object self_73271, object r_73137) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 if( !eq(boolean_f, r_73137) ){ 
   return_funcall1(  ((closureN)self_73271)->elts[0],  ((closureN)self_73271)->elts[1]);
 } else { 
@@ -1958,7 +1958,7 @@ return_funcall1(  ((closureN)self_73271)->elts[0],  &c_73521);}
 }
 
 static void __lambda_36(int argc, object self_73272, object r_73131) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 
 closureN_type c_73477;
 c_73477.tag = closureN_tag;
@@ -1974,12 +1974,12 @@ return_funcall1((closure)&c_73477,  Cyc_set_car(((closureN)self_73272)->elts[2],
 }
 
 static void __lambda_35(int argc, object self_73273, object r_73130) {
-  Cyc_st_add("scheme/cyclone/util.c:delete-duplicates");
+  Cyc_st_add("scheme/cyclone/util.sld:delete-duplicates");
 return_funcall2(  cell_get(((closureN)self_73273)->elts[2]),  ((closureN)self_73273)->elts[0], ((closureN)self_73273)->elts[1]);; 
 }
 
 static void __lambda_34(int argc, closure _,object k_73141, object x_7330, object lis_7329) {
-  Cyc_st_add("scheme/cyclone/util.c:delete");
+  Cyc_st_add("scheme/cyclone/util.sld:delete");
 
 closureN_type c_73455;
 c_73455.tag = closureN_tag;
@@ -2003,7 +2003,7 @@ return_funcall1((closure)&c_73455,  &c_73459);;
 }
 
 static void __lambda_33(int argc, object self_73274, object k_73143, object y_7331) {
-  Cyc_st_add("scheme/cyclone/util.c:delete");
+  Cyc_st_add("scheme/cyclone/util.sld:delete");
 
 closureN_type c_73461;
 c_73461.tag = closureN_tag;
@@ -2017,17 +2017,17 @@ return_funcall1((closure)&c_73461,  equalp(((closureN)self_73274)->elts[0], y_73
 }
 
 static void __lambda_32(int argc, object self_73275, object r_73144) {
-  Cyc_st_add("scheme/cyclone/util.c:delete");
+  Cyc_st_add("scheme/cyclone/util.sld:delete");
 return_funcall2(  __glo_not,  ((closureN)self_73275)->elts[0], r_73144);; 
 }
 
 static void __lambda_31(int argc, object self_73276, object r_73142) {
-  Cyc_st_add("scheme/cyclone/util.c:delete");
+  Cyc_st_add("scheme/cyclone/util.sld:delete");
 return_funcall3(  __glo_filter,  ((closureN)self_73276)->elts[0], r_73142, ((closureN)self_73276)->elts[1]);; 
 }
 
 static void __lambda_30(int argc, closure _,object k_73147, object pred_7333, object lis_7332) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73379;
 c_73379.tag = closureN_tag;
@@ -2043,7 +2043,7 @@ return_funcall1((closure)&c_73379,  boolean_f);;
 }
 
 static void __lambda_29(int argc, object self_73277, object recur_7334) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73381;
 c_73381.tag = closureN_tag;
@@ -2061,7 +2061,7 @@ return_funcall1((closure)&c_73381,  &c_73452);;
 }
 
 static void __lambda_28(int argc, object self_73278, object recur_7334) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73383;
 c_73383.tag = closureN_tag;
@@ -2078,7 +2078,7 @@ return_funcall0((closure)&c_73383);;
 }
 
 static void __lambda_27(int argc, object self_73279) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73385;
 c_73385.tag = closureN_tag;
@@ -2104,7 +2104,7 @@ return_funcall1((closure)&c_73385,  &c_73397);;
 }
 
 static void __lambda_26(int argc, object self_73280, object k_73150, object lis_7335) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73399;
 c_73399.tag = closureN_tag;
@@ -2121,7 +2121,7 @@ return_funcall1((closure)&c_73399,  Cyc_is_null(lis_7335));;
 }
 
 static void __lambda_25(int argc, object self_73281, object r_73151) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 if( !eq(boolean_f, r_73151) ){ 
   return_funcall1(  ((closureN)self_73281)->elts[0],  ((closureN)self_73281)->elts[1]);
 } else { 
@@ -2142,7 +2142,7 @@ return_funcall1((closure)&c_73404,  car(((closureN)self_73281)->elts[1]));}
 }
 
 static void __lambda_24(int argc, object self_73282, object r_73152) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73406;
 c_73406.tag = closureN_tag;
@@ -2160,7 +2160,7 @@ return_funcall1((closure)&c_73406,  cdr(((closureN)self_73282)->elts[1]));;
 }
 
 static void __lambda_23(int argc, object self_73283, object r_73153) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73408;
 c_73408.tag = closureN_tag;
@@ -2177,7 +2177,7 @@ return_funcall2((closure)&c_73408,  ((closureN)self_73283)->elts[3], r_73153);;
 }
 
 static void __lambda_22(int argc, object self_73284, object head_7337, object tail_7336) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73411;
 c_73411.tag = closureN_tag;
@@ -2195,7 +2195,7 @@ return_funcall2(  ((closureN)self_73284)->elts[2],  &c_73411, head_7337);;
 }
 
 static void __lambda_21(int argc, object self_73285, object r_73154) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 if( !eq(boolean_f, r_73154) ){ 
   
 closureN_type c_73416;
@@ -2216,7 +2216,7 @@ return_funcall2(  cell_get(((closureN)self_73285)->elts[3]),  &c_73416, ((closur
 }
 
 static void __lambda_20(int argc, object self_73286, object r_73155) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73418;
 c_73418.tag = closureN_tag;
@@ -2233,7 +2233,7 @@ return_funcall1((closure)&c_73418,  r_73155);;
 }
 
 static void __lambda_19(int argc, object self_73287, object new_91tail_7338) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73420;
 c_73420.tag = closureN_tag;
@@ -2250,7 +2250,7 @@ return_funcall1((closure)&c_73420,  Cyc_eq(((closureN)self_73287)->elts[3], new_
 }
 
 static void __lambda_18(int argc, object self_73288, object r_73156) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 if( !eq(boolean_f, r_73156) ){ 
   return_funcall1(  ((closureN)self_73288)->elts[1],  ((closureN)self_73288)->elts[2]);
 } else { 
@@ -2261,7 +2261,7 @@ return_funcall1(  ((closureN)self_73288)->elts[1],  &c_73428);}
 }
 
 static void __lambda_17(int argc, object self_73289, object r_73149) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 
 closureN_type c_73387;
 c_73387.tag = closureN_tag;
@@ -2277,12 +2277,12 @@ return_funcall1((closure)&c_73387,  Cyc_set_car(((closureN)self_73289)->elts[2],
 }
 
 static void __lambda_16(int argc, object self_73290, object r_73148) {
-  Cyc_st_add("scheme/cyclone/util.c:filter");
+  Cyc_st_add("scheme/cyclone/util.sld:filter");
 return_funcall2(  cell_get(((closureN)self_73290)->elts[2]),  ((closureN)self_73290)->elts[0], ((closureN)self_73290)->elts[1]);; 
 }
 
 static void __lambda_15(int argc, closure _,object k_73159, object n_7339) {
-  Cyc_st_add("scheme/cyclone/util.c:integer->char-list");
+  Cyc_st_add("scheme/cyclone/util.sld:integer->char-list");
 
 closureN_type c_73371;
 c_73371.tag = closureN_tag;
@@ -2298,12 +2298,12 @@ return_funcall1((closure)&c_73371,  &c_73376);;
 }
 
 static void __lambda_14(int argc, object self_73291, object r_73160) {
-  Cyc_st_add("scheme/cyclone/util.c:integer->char-list");
+  Cyc_st_add("scheme/cyclone/util.sld:integer->char-list");
 return_funcall2(  __glo_string_91_125list,  ((closureN)self_73291)->elts[0], r_73160);; 
 }
 
 static void __lambda_13(int argc, closure _,object k_73163, object c_7340) {
-  Cyc_st_add("scheme/cyclone/util.c:char->natural");
+  Cyc_st_add("scheme/cyclone/util.sld:char->natural");
 
 closureN_type c_73338;
 c_73338.tag = closureN_tag;
@@ -2319,7 +2319,7 @@ return_funcall1((closure)&c_73338,  &c_73368);;
 }
 
 static void __lambda_12(int argc, object self_73292, object r_73164) {
-  Cyc_st_add("scheme/cyclone/util.c:char->natural");
+  Cyc_st_add("scheme/cyclone/util.sld:char->natural");
 
 closureN_type c_73340;
 c_73340.tag = closureN_tag;
@@ -2333,7 +2333,7 @@ return_funcall1((closure)&c_73340,  r_73164);;
 }
 
 static void __lambda_11(int argc, object self_73293, object i_7341) {
-  Cyc_st_add("scheme/cyclone/util.c:char->natural");
+  Cyc_st_add("scheme/cyclone/util.sld:char->natural");
 
 closureN_type c_73342;
 c_73342.tag = closureN_tag;
@@ -2350,7 +2350,7 @@ return_funcall1((closure)&c_73342,  __num_lt(i_7341, &c_73365));;
 }
 
 static void __lambda_10(int argc, object self_73294, object r_73165) {
-  Cyc_st_add("scheme/cyclone/util.c:char->natural");
+  Cyc_st_add("scheme/cyclone/util.sld:char->natural");
 if( !eq(boolean_f, r_73165) ){ 
   
 make_int(c_73348, -2);
@@ -2376,7 +2376,7 @@ return_funcall1((closure)&c_73351,  &c_73360);}
 }
 
 static void __lambda_9(int argc, object self_73295, object r_73166) {
-  Cyc_st_add("scheme/cyclone/util.c:char->natural");
+  Cyc_st_add("scheme/cyclone/util.sld:char->natural");
 
 make_int(c_73357, 1);
 
@@ -2385,7 +2385,7 @@ return_funcall1(  ((closureN)self_73295)->elts[0],  &c_73356);;
 }
 
 static void __lambda_8(int argc, closure _,object k_73169, object exp_7342) {
-  Cyc_st_add("scheme/cyclone/util.c:lambda?");
+  Cyc_st_add("scheme/cyclone/util.sld:lambda?");
 
 closureN_type c_73332;
 c_73332.tag = closureN_tag;
@@ -2400,12 +2400,12 @@ return_funcall1((closure)&c_73332,  quote_lambda);;
 }
 
 static void __lambda_7(int argc, object self_73296, object r_73170) {
-  Cyc_st_add("scheme/cyclone/util.c:lambda?");
+  Cyc_st_add("scheme/cyclone/util.sld:lambda?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73296)->elts[1], r_73170, ((closureN)self_73296)->elts[0]);; 
 }
 
 static void __lambda_6(int argc, closure _,object k_73173, object exp_7343) {
-  Cyc_st_add("scheme/cyclone/util.c:begin?");
+  Cyc_st_add("scheme/cyclone/util.sld:begin?");
 
 closureN_type c_73326;
 c_73326.tag = closureN_tag;
@@ -2420,12 +2420,12 @@ return_funcall1((closure)&c_73326,  quote_begin);;
 }
 
 static void __lambda_5(int argc, object self_73297, object r_73174) {
-  Cyc_st_add("scheme/cyclone/util.c:begin?");
+  Cyc_st_add("scheme/cyclone/util.sld:begin?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73297)->elts[1], r_73174, ((closureN)self_73297)->elts[0]);; 
 }
 
 static void __lambda_4(int argc, closure _,object k_73177, object exp_7344) {
-  Cyc_st_add("scheme/cyclone/util.c:if?");
+  Cyc_st_add("scheme/cyclone/util.sld:if?");
 
 closureN_type c_73320;
 c_73320.tag = closureN_tag;
@@ -2440,12 +2440,12 @@ return_funcall1((closure)&c_73320,  quote__if);;
 }
 
 static void __lambda_3(int argc, object self_73298, object r_73178) {
-  Cyc_st_add("scheme/cyclone/util.c:if?");
+  Cyc_st_add("scheme/cyclone/util.sld:if?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73298)->elts[1], r_73178, ((closureN)self_73298)->elts[0]);; 
 }
 
 static void __lambda_2(int argc, closure _,object k_73181, object tag_7346, object exp_7345) {
-  Cyc_st_add("scheme/cyclone/util.c:tagged-list?");
+  Cyc_st_add("scheme/cyclone/util.sld:tagged-list?");
 
 closureN_type c_73303;
 c_73303.tag = closureN_tag;
@@ -2461,7 +2461,7 @@ return_funcall1((closure)&c_73303,  Cyc_is_cons(exp_7345));;
 }
 
 static void __lambda_1(int argc, object self_73299, object r_73182) {
-  Cyc_st_add("scheme/cyclone/util.c:tagged-list?");
+  Cyc_st_add("scheme/cyclone/util.sld:tagged-list?");
 if( !eq(boolean_f, r_73182) ){ 
   
 closureN_type c_73305;
@@ -2480,7 +2480,7 @@ return_funcall1((closure)&c_73305,  car(((closureN)self_73299)->elts[0]));
 }
 
 static void __lambda_0(int argc, object self_73300, object r_73183) {
-  Cyc_st_add("scheme/cyclone/util.c:tagged-list?");
+  Cyc_st_add("scheme/cyclone/util.sld:tagged-list?");
 return_funcall1(  ((closureN)self_73300)->elts[0],  equalp(r_73183, ((closureN)self_73300)->elts[1]));; 
 }
 

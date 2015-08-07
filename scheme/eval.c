@@ -962,7 +962,7 @@ static void __lambda_1(int argc, object self_731301, object r_73817) ;
 static void __lambda_0(int argc, object self_731302, object r_73815) ;
 
 static void __lambda_552(int argc, closure _,object k_73153) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732627;
 c_732627.tag = closureN_tag;
@@ -978,7 +978,7 @@ return_funcall1((closure)&c_732627,  &c_733231);;
 }
 
 static void __lambda_551(int argc, object self_73818, object r_73154) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732629;
 c_732629.tag = closureN_tag;
@@ -992,7 +992,7 @@ return_funcall1((closure)&c_732629,  quote_procedure);;
 }
 
 static void __lambda_550(int argc, object self_73819, object r_73393) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732631;
 c_732631.tag = closureN_tag;
@@ -1006,7 +1006,7 @@ return_funcall1((closure)&c_732631,  global_set(__glo_procedure_91tag, r_73393))
 }
 
 static void __lambda_549(int argc, object self_73820, object r_73155) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732633;
 c_732633.tag = closureN_tag;
@@ -1020,7 +1020,7 @@ return_funcall1((closure)&c_732633,  nil);;
 }
 
 static void __lambda_548(int argc, object self_73821, object r_73392) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732635;
 c_732635.tag = closureN_tag;
@@ -1034,7 +1034,7 @@ return_funcall1((closure)&c_732635,  global_set(__glo_the_91empty_91environment,
 }
 
 static void __lambda_547(int argc, object self_73822, object r_73156) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732637;
 c_732637.tag = closureN_tag;
@@ -1048,7 +1048,7 @@ return_funcall1((closure)&c_732637,  quote_call_95cc);;
 }
 
 static void __lambda_546(int argc, object self_73823, object r_73391) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732639;
 c_732639.tag = closureN_tag;
@@ -1062,7 +1062,7 @@ return_funcall3(  __glo__list,  &c_732639, r_73391, __glo_call_95cc);;
 }
 
 static void __lambda_545(int argc, object self_73824, object r_73160) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732641;
 c_732641.tag = closureN_tag;
@@ -1077,7 +1077,7 @@ return_funcall1((closure)&c_732641,  quote_call_91with_91values);;
 }
 
 static void __lambda_544(int argc, object self_73825, object r_73390) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732643;
 c_732643.tag = closureN_tag;
@@ -1092,7 +1092,7 @@ return_funcall3(  __glo__list,  &c_732643, r_73390, __glo_call_91with_91values);
 }
 
 static void __lambda_543(int argc, object self_73826, object r_73161) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732645;
 c_732645.tag = closureN_tag;
@@ -1108,7 +1108,7 @@ return_funcall1((closure)&c_732645,  quote_Cyc_91global_91vars);;
 }
 
 static void __lambda_542(int argc, object self_73827, object r_73389) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732647;
 c_732647.tag = closureN_tag;
@@ -1124,7 +1124,7 @@ return_funcall3(  __glo__list,  &c_732647, r_73389, primitive_Cyc_91global_91var
 }
 
 static void __lambda_541(int argc, object self_73828, object r_73162) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732649;
 c_732649.tag = closureN_tag;
@@ -1141,7 +1141,7 @@ return_funcall1((closure)&c_732649,  quote_Cyc_91get_91cvar);;
 }
 
 static void __lambda_540(int argc, object self_73829, object r_73388) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732651;
 c_732651.tag = closureN_tag;
@@ -1158,7 +1158,7 @@ return_funcall3(  __glo__list,  &c_732651, r_73388, primitive_Cyc_91get_91cvar);
 }
 
 static void __lambda_539(int argc, object self_73830, object r_73163) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732653;
 c_732653.tag = closureN_tag;
@@ -1176,7 +1176,7 @@ return_funcall1((closure)&c_732653,  quote_Cyc_91set_91cvar_67);;
 }
 
 static void __lambda_538(int argc, object self_73831, object r_73387) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732655;
 c_732655.tag = closureN_tag;
@@ -1194,7 +1194,7 @@ return_funcall3(  __glo__list,  &c_732655, r_73387, primitive_Cyc_91set_91cvar_6
 }
 
 static void __lambda_537(int argc, object self_73832, object r_73164) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732657;
 c_732657.tag = closureN_tag;
@@ -1213,7 +1213,7 @@ return_funcall1((closure)&c_732657,  quote_Cyc_91cvar_127);;
 }
 
 static void __lambda_536(int argc, object self_73833, object r_73386) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732659;
 c_732659.tag = closureN_tag;
@@ -1232,7 +1232,7 @@ return_funcall3(  __glo__list,  &c_732659, r_73386, primitive_Cyc_91cvar_127);;
 }
 
 static void __lambda_535(int argc, object self_73834, object r_73165) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732661;
 c_732661.tag = closureN_tag;
@@ -1252,7 +1252,7 @@ return_funcall1((closure)&c_732661,  quote_Cyc_91has_91cycle_127);;
 }
 
 static void __lambda_534(int argc, object self_73835, object r_73385) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732663;
 c_732663.tag = closureN_tag;
@@ -1272,7 +1272,7 @@ return_funcall3(  __glo__list,  &c_732663, r_73385, primitive_Cyc_91has_91cycle_
 }
 
 static void __lambda_533(int argc, object self_73836, object r_73166) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732665;
 c_732665.tag = closureN_tag;
@@ -1293,7 +1293,7 @@ return_funcall1((closure)&c_732665,  quote_Cyc_91default_91exception_91handler);
 }
 
 static void __lambda_532(int argc, object self_73837, object r_73384) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732667;
 c_732667.tag = closureN_tag;
@@ -1314,7 +1314,7 @@ return_funcall3(  __glo__list,  &c_732667, r_73384, primitive_Cyc_91default_91ex
 }
 
 static void __lambda_531(int argc, object self_73838, object r_73167) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732669;
 c_732669.tag = closureN_tag;
@@ -1336,7 +1336,7 @@ return_funcall1((closure)&c_732669,  quote_Cyc_91current_91exception_91handler);
 }
 
 static void __lambda_530(int argc, object self_73839, object r_73383) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732671;
 c_732671.tag = closureN_tag;
@@ -1358,7 +1358,7 @@ return_funcall3(  __glo__list,  &c_732671, r_73383, primitive_Cyc_91current_91ex
 }
 
 static void __lambda_529(int argc, object self_73840, object r_73168) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732673;
 c_732673.tag = closureN_tag;
@@ -1381,7 +1381,7 @@ return_funcall1((closure)&c_732673,  quote__87);;
 }
 
 static void __lambda_528(int argc, object self_73841, object r_73382) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732675;
 c_732675.tag = closureN_tag;
@@ -1404,7 +1404,7 @@ return_funcall3(  __glo__list,  &c_732675, r_73382, primitive__87);;
 }
 
 static void __lambda_527(int argc, object self_73842, object r_73169) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732677;
 c_732677.tag = closureN_tag;
@@ -1428,7 +1428,7 @@ return_funcall1((closure)&c_732677,  quote__91);;
 }
 
 static void __lambda_526(int argc, object self_73843, object r_73381) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732679;
 c_732679.tag = closureN_tag;
@@ -1452,7 +1452,7 @@ return_funcall3(  __glo__list,  &c_732679, r_73381, primitive__91);;
 }
 
 static void __lambda_525(int argc, object self_73844, object r_73170) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732681;
 c_732681.tag = closureN_tag;
@@ -1477,7 +1477,7 @@ return_funcall1((closure)&c_732681,  quote__85);;
 }
 
 static void __lambda_524(int argc, object self_73845, object r_73380) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732683;
 c_732683.tag = closureN_tag;
@@ -1502,7 +1502,7 @@ return_funcall3(  __glo__list,  &c_732683, r_73380, primitive__85);;
 }
 
 static void __lambda_523(int argc, object self_73846, object r_73171) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732685;
 c_732685.tag = closureN_tag;
@@ -1528,7 +1528,7 @@ return_funcall1((closure)&c_732685,  quote__95);;
 }
 
 static void __lambda_522(int argc, object self_73847, object r_73379) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732687;
 c_732687.tag = closureN_tag;
@@ -1554,7 +1554,7 @@ return_funcall3(  __glo__list,  &c_732687, r_73379, primitive__95);;
 }
 
 static void __lambda_521(int argc, object self_73848, object r_73172) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732689;
 c_732689.tag = closureN_tag;
@@ -1581,7 +1581,7 @@ return_funcall1((closure)&c_732689,  quote__123);;
 }
 
 static void __lambda_520(int argc, object self_73849, object r_73378) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732691;
 c_732691.tag = closureN_tag;
@@ -1608,7 +1608,7 @@ return_funcall3(  __glo__list,  &c_732691, r_73378, primitive__123);;
 }
 
 static void __lambda_519(int argc, object self_73850, object r_73173) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732693;
 c_732693.tag = closureN_tag;
@@ -1636,7 +1636,7 @@ return_funcall1((closure)&c_732693,  quote__125);;
 }
 
 static void __lambda_518(int argc, object self_73851, object r_73377) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732695;
 c_732695.tag = closureN_tag;
@@ -1664,7 +1664,7 @@ return_funcall3(  __glo__list,  &c_732695, r_73377, primitive__125);;
 }
 
 static void __lambda_517(int argc, object self_73852, object r_73174) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732697;
 c_732697.tag = closureN_tag;
@@ -1693,7 +1693,7 @@ return_funcall1((closure)&c_732697,  quote__121);;
 }
 
 static void __lambda_516(int argc, object self_73853, object r_73376) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732699;
 c_732699.tag = closureN_tag;
@@ -1722,7 +1722,7 @@ return_funcall3(  __glo__list,  &c_732699, r_73376, primitive__121);;
 }
 
 static void __lambda_515(int argc, object self_73854, object r_73175) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732701;
 c_732701.tag = closureN_tag;
@@ -1752,7 +1752,7 @@ return_funcall1((closure)&c_732701,  quote__125_123);;
 }
 
 static void __lambda_514(int argc, object self_73855, object r_73375) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732703;
 c_732703.tag = closureN_tag;
@@ -1782,7 +1782,7 @@ return_funcall3(  __glo__list,  &c_732703, r_73375, primitive__125_123);;
 }
 
 static void __lambda_513(int argc, object self_73856, object r_73176) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732705;
 c_732705.tag = closureN_tag;
@@ -1813,7 +1813,7 @@ return_funcall1((closure)&c_732705,  quote__121_123);;
 }
 
 static void __lambda_512(int argc, object self_73857, object r_73374) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732707;
 c_732707.tag = closureN_tag;
@@ -1844,7 +1844,7 @@ return_funcall3(  __glo__list,  &c_732707, r_73374, primitive__121_123);;
 }
 
 static void __lambda_511(int argc, object self_73858, object r_73177) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732709;
 c_732709.tag = closureN_tag;
@@ -1876,7 +1876,7 @@ return_funcall1((closure)&c_732709,  quote_apply);;
 }
 
 static void __lambda_510(int argc, object self_73859, object r_73373) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732711;
 c_732711.tag = closureN_tag;
@@ -1908,7 +1908,7 @@ return_funcall3(  __glo__list,  &c_732711, r_73373, primitive_apply);;
 }
 
 static void __lambda_509(int argc, object self_73860, object r_73178) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732713;
 c_732713.tag = closureN_tag;
@@ -1941,7 +1941,7 @@ return_funcall1((closure)&c_732713,  quote__75halt);;
 }
 
 static void __lambda_508(int argc, object self_73861, object r_73372) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732715;
 c_732715.tag = closureN_tag;
@@ -1974,7 +1974,7 @@ return_funcall3(  __glo__list,  &c_732715, r_73372, primitive__75halt);;
 }
 
 static void __lambda_507(int argc, object self_73862, object r_73179) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732717;
 c_732717.tag = closureN_tag;
@@ -2008,7 +2008,7 @@ return_funcall1((closure)&c_732717,  quote_exit);;
 }
 
 static void __lambda_506(int argc, object self_73863, object r_73371) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732719;
 c_732719.tag = closureN_tag;
@@ -2042,7 +2042,7 @@ return_funcall3(  __glo__list,  &c_732719, r_73371, primitive_exit);;
 }
 
 static void __lambda_505(int argc, object self_73864, object r_73180) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732721;
 c_732721.tag = closureN_tag;
@@ -2077,7 +2077,7 @@ return_funcall1((closure)&c_732721,  quote_Cyc_91installation_91dir);;
 }
 
 static void __lambda_504(int argc, object self_73865, object r_73370) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732723;
 c_732723.tag = closureN_tag;
@@ -2112,7 +2112,7 @@ return_funcall3(  __glo__list,  &c_732723, r_73370, primitive_Cyc_91installation
 }
 
 static void __lambda_503(int argc, object self_73866, object r_73181) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732725;
 c_732725.tag = closureN_tag;
@@ -2148,7 +2148,7 @@ return_funcall1((closure)&c_732725,  quote_system);;
 }
 
 static void __lambda_502(int argc, object self_73867, object r_73369) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732727;
 c_732727.tag = closureN_tag;
@@ -2184,7 +2184,7 @@ return_funcall3(  __glo__list,  &c_732727, r_73369, primitive_system);;
 }
 
 static void __lambda_501(int argc, object self_73868, object r_73182) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732729;
 c_732729.tag = closureN_tag;
@@ -2221,7 +2221,7 @@ return_funcall1((closure)&c_732729,  quote_command_91line_91arguments);;
 }
 
 static void __lambda_500(int argc, object self_73869, object r_73368) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732731;
 c_732731.tag = closureN_tag;
@@ -2258,7 +2258,7 @@ return_funcall3(  __glo__list,  &c_732731, r_73368, primitive_command_91line_91a
 }
 
 static void __lambda_499(int argc, object self_73870, object r_73183) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732733;
 c_732733.tag = closureN_tag;
@@ -2296,7 +2296,7 @@ return_funcall1((closure)&c_732733,  quote_error);;
 }
 
 static void __lambda_498(int argc, object self_73871, object r_73367) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732735;
 c_732735.tag = closureN_tag;
@@ -2334,7 +2334,7 @@ return_funcall3(  __glo__list,  &c_732735, r_73367, __glo_error);;
 }
 
 static void __lambda_497(int argc, object self_73872, object r_73184) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732737;
 c_732737.tag = closureN_tag;
@@ -2373,7 +2373,7 @@ return_funcall1((closure)&c_732737,  quote_cons);;
 }
 
 static void __lambda_496(int argc, object self_73873, object r_73366) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732739;
 c_732739.tag = closureN_tag;
@@ -2412,7 +2412,7 @@ return_funcall3(  __glo__list,  &c_732739, r_73366, primitive_cons);;
 }
 
 static void __lambda_495(int argc, object self_73874, object r_73185) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732741;
 c_732741.tag = closureN_tag;
@@ -2452,7 +2452,7 @@ return_funcall1((closure)&c_732741,  quote_cell_91get);;
 }
 
 static void __lambda_494(int argc, object self_73875, object r_73365) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732743;
 c_732743.tag = closureN_tag;
@@ -2492,7 +2492,7 @@ return_funcall3(  __glo__list,  &c_732743, r_73365, primitive_cell_91get);;
 }
 
 static void __lambda_493(int argc, object self_73876, object r_73186) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732745;
 c_732745.tag = closureN_tag;
@@ -2533,7 +2533,7 @@ return_funcall1((closure)&c_732745,  quote_set_91global_67);;
 }
 
 static void __lambda_492(int argc, object self_73877, object r_73364) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732747;
 c_732747.tag = closureN_tag;
@@ -2574,7 +2574,7 @@ return_funcall3(  __glo__list,  &c_732747, r_73364, primitive_set_91global_67);;
 }
 
 static void __lambda_491(int argc, object self_73878, object r_73187) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732749;
 c_732749.tag = closureN_tag;
@@ -2616,7 +2616,7 @@ return_funcall1((closure)&c_732749,  quote_set_91cell_67);;
 }
 
 static void __lambda_490(int argc, object self_73879, object r_73363) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732751;
 c_732751.tag = closureN_tag;
@@ -2658,7 +2658,7 @@ return_funcall3(  __glo__list,  &c_732751, r_73363, primitive_set_91cell_67);;
 }
 
 static void __lambda_489(int argc, object self_73880, object r_73188) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732753;
 c_732753.tag = closureN_tag;
@@ -2701,7 +2701,7 @@ return_funcall1((closure)&c_732753,  quote_cell);;
 }
 
 static void __lambda_488(int argc, object self_73881, object r_73362) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732755;
 c_732755.tag = closureN_tag;
@@ -2744,7 +2744,7 @@ return_funcall3(  __glo__list,  &c_732755, r_73362, primitive_cell);;
 }
 
 static void __lambda_487(int argc, object self_73882, object r_73189) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732757;
 c_732757.tag = closureN_tag;
@@ -2788,7 +2788,7 @@ return_funcall1((closure)&c_732757,  quote_eq_127);;
 }
 
 static void __lambda_486(int argc, object self_73883, object r_73361) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732759;
 c_732759.tag = closureN_tag;
@@ -2832,7 +2832,7 @@ return_funcall3(  __glo__list,  &c_732759, r_73361, primitive_eq_127);;
 }
 
 static void __lambda_485(int argc, object self_73884, object r_73190) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732761;
 c_732761.tag = closureN_tag;
@@ -2877,7 +2877,7 @@ return_funcall1((closure)&c_732761,  quote_eqv_127);;
 }
 
 static void __lambda_484(int argc, object self_73885, object r_73360) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732763;
 c_732763.tag = closureN_tag;
@@ -2922,7 +2922,7 @@ return_funcall3(  __glo__list,  &c_732763, r_73360, primitive_eqv_127);;
 }
 
 static void __lambda_483(int argc, object self_73886, object r_73191) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732765;
 c_732765.tag = closureN_tag;
@@ -2968,7 +2968,7 @@ return_funcall1((closure)&c_732765,  quote_equal_127);;
 }
 
 static void __lambda_482(int argc, object self_73887, object r_73359) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732767;
 c_732767.tag = closureN_tag;
@@ -3014,7 +3014,7 @@ return_funcall3(  __glo__list,  &c_732767, r_73359, primitive_equal_127);;
 }
 
 static void __lambda_481(int argc, object self_73888, object r_73192) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732769;
 c_732769.tag = closureN_tag;
@@ -3061,7 +3061,7 @@ return_funcall1((closure)&c_732769,  quote_assoc);;
 }
 
 static void __lambda_480(int argc, object self_73889, object r_73358) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732771;
 c_732771.tag = closureN_tag;
@@ -3108,7 +3108,7 @@ return_funcall3(  __glo__list,  &c_732771, r_73358, primitive_assoc);;
 }
 
 static void __lambda_479(int argc, object self_73890, object r_73193) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732773;
 c_732773.tag = closureN_tag;
@@ -3156,7 +3156,7 @@ return_funcall1((closure)&c_732773,  quote_assq);;
 }
 
 static void __lambda_478(int argc, object self_73891, object r_73357) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732775;
 c_732775.tag = closureN_tag;
@@ -3204,7 +3204,7 @@ return_funcall3(  __glo__list,  &c_732775, r_73357, primitive_assq);;
 }
 
 static void __lambda_477(int argc, object self_73892, object r_73194) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732777;
 c_732777.tag = closureN_tag;
@@ -3253,7 +3253,7 @@ return_funcall1((closure)&c_732777,  quote_assv);;
 }
 
 static void __lambda_476(int argc, object self_73893, object r_73356) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732779;
 c_732779.tag = closureN_tag;
@@ -3302,7 +3302,7 @@ return_funcall3(  __glo__list,  &c_732779, r_73356, primitive_assv);;
 }
 
 static void __lambda_475(int argc, object self_73894, object r_73195) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732781;
 c_732781.tag = closureN_tag;
@@ -3352,7 +3352,7 @@ return_funcall1((closure)&c_732781,  quote_memq);;
 }
 
 static void __lambda_474(int argc, object self_73895, object r_73355) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732783;
 c_732783.tag = closureN_tag;
@@ -3402,7 +3402,7 @@ return_funcall3(  __glo__list,  &c_732783, r_73355, primitive_memq);;
 }
 
 static void __lambda_473(int argc, object self_73896, object r_73196) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732785;
 c_732785.tag = closureN_tag;
@@ -3453,7 +3453,7 @@ return_funcall1((closure)&c_732785,  quote_memv);;
 }
 
 static void __lambda_472(int argc, object self_73897, object r_73354) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732787;
 c_732787.tag = closureN_tag;
@@ -3504,7 +3504,7 @@ return_funcall3(  __glo__list,  &c_732787, r_73354, primitive_memv);;
 }
 
 static void __lambda_471(int argc, object self_73898, object r_73197) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732789;
 c_732789.tag = closureN_tag;
@@ -3556,7 +3556,7 @@ return_funcall1((closure)&c_732789,  quote_member);;
 }
 
 static void __lambda_470(int argc, object self_73899, object r_73353) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732791;
 c_732791.tag = closureN_tag;
@@ -3608,7 +3608,7 @@ return_funcall3(  __glo__list,  &c_732791, r_73353, primitive_member);;
 }
 
 static void __lambda_469(int argc, object self_73900, object r_73198) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732793;
 c_732793.tag = closureN_tag;
@@ -3661,7 +3661,7 @@ return_funcall1((closure)&c_732793,  quote_length);;
 }
 
 static void __lambda_468(int argc, object self_73901, object r_73352) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732795;
 c_732795.tag = closureN_tag;
@@ -3714,7 +3714,7 @@ return_funcall3(  __glo__list,  &c_732795, r_73352, primitive_length);;
 }
 
 static void __lambda_467(int argc, object self_73902, object r_73199) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732797;
 c_732797.tag = closureN_tag;
@@ -3768,7 +3768,7 @@ return_funcall1((closure)&c_732797,  quote_set_91car_67);;
 }
 
 static void __lambda_466(int argc, object self_73903, object r_73351) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732799;
 c_732799.tag = closureN_tag;
@@ -3822,7 +3822,7 @@ return_funcall3(  __glo__list,  &c_732799, r_73351, primitive_set_91car_67);;
 }
 
 static void __lambda_465(int argc, object self_73904, object r_73200) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732801;
 c_732801.tag = closureN_tag;
@@ -3877,7 +3877,7 @@ return_funcall1((closure)&c_732801,  quote_set_91cdr_67);;
 }
 
 static void __lambda_464(int argc, object self_73905, object r_73350) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732803;
 c_732803.tag = closureN_tag;
@@ -3932,7 +3932,7 @@ return_funcall3(  __glo__list,  &c_732803, r_73350, primitive_set_91cdr_67);;
 }
 
 static void __lambda_463(int argc, object self_73906, object r_73201) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732805;
 c_732805.tag = closureN_tag;
@@ -3988,7 +3988,7 @@ return_funcall1((closure)&c_732805,  quote_car);;
 }
 
 static void __lambda_462(int argc, object self_73907, object r_73349) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732807;
 c_732807.tag = closureN_tag;
@@ -4044,7 +4044,7 @@ return_funcall3(  __glo__list,  &c_732807, r_73349, primitive_car);;
 }
 
 static void __lambda_461(int argc, object self_73908, object r_73202) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732809;
 c_732809.tag = closureN_tag;
@@ -4101,7 +4101,7 @@ return_funcall1((closure)&c_732809,  quote_cdr);;
 }
 
 static void __lambda_460(int argc, object self_73909, object r_73348) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732811;
 c_732811.tag = closureN_tag;
@@ -4158,7 +4158,7 @@ return_funcall3(  __glo__list,  &c_732811, r_73348, primitive_cdr);;
 }
 
 static void __lambda_459(int argc, object self_73910, object r_73203) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732813;
 c_732813.tag = closureN_tag;
@@ -4216,7 +4216,7 @@ return_funcall1((closure)&c_732813,  quote_caar);;
 }
 
 static void __lambda_458(int argc, object self_73911, object r_73347) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732815;
 c_732815.tag = closureN_tag;
@@ -4274,7 +4274,7 @@ return_funcall3(  __glo__list,  &c_732815, r_73347, primitive_caar);;
 }
 
 static void __lambda_457(int argc, object self_73912, object r_73204) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732817;
 c_732817.tag = closureN_tag;
@@ -4333,7 +4333,7 @@ return_funcall1((closure)&c_732817,  quote_cadr);;
 }
 
 static void __lambda_456(int argc, object self_73913, object r_73346) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732819;
 c_732819.tag = closureN_tag;
@@ -4392,7 +4392,7 @@ return_funcall3(  __glo__list,  &c_732819, r_73346, primitive_cadr);;
 }
 
 static void __lambda_455(int argc, object self_73914, object r_73205) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732821;
 c_732821.tag = closureN_tag;
@@ -4452,7 +4452,7 @@ return_funcall1((closure)&c_732821,  quote_cdar);;
 }
 
 static void __lambda_454(int argc, object self_73915, object r_73345) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732823;
 c_732823.tag = closureN_tag;
@@ -4512,7 +4512,7 @@ return_funcall3(  __glo__list,  &c_732823, r_73345, primitive_cdar);;
 }
 
 static void __lambda_453(int argc, object self_73916, object r_73206) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732825;
 c_732825.tag = closureN_tag;
@@ -4573,7 +4573,7 @@ return_funcall1((closure)&c_732825,  quote_cddr);;
 }
 
 static void __lambda_452(int argc, object self_73917, object r_73344) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732827;
 c_732827.tag = closureN_tag;
@@ -4634,7 +4634,7 @@ return_funcall3(  __glo__list,  &c_732827, r_73344, primitive_cddr);;
 }
 
 static void __lambda_451(int argc, object self_73918, object r_73207) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732829;
 c_732829.tag = closureN_tag;
@@ -4696,7 +4696,7 @@ return_funcall1((closure)&c_732829,  quote_caaar);;
 }
 
 static void __lambda_450(int argc, object self_73919, object r_73343) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732831;
 c_732831.tag = closureN_tag;
@@ -4758,7 +4758,7 @@ return_funcall3(  __glo__list,  &c_732831, r_73343, primitive_caaar);;
 }
 
 static void __lambda_449(int argc, object self_73920, object r_73208) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732833;
 c_732833.tag = closureN_tag;
@@ -4821,7 +4821,7 @@ return_funcall1((closure)&c_732833,  quote_caadr);;
 }
 
 static void __lambda_448(int argc, object self_73921, object r_73342) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732835;
 c_732835.tag = closureN_tag;
@@ -4884,7 +4884,7 @@ return_funcall3(  __glo__list,  &c_732835, r_73342, primitive_caadr);;
 }
 
 static void __lambda_447(int argc, object self_73922, object r_73209) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732837;
 c_732837.tag = closureN_tag;
@@ -4948,7 +4948,7 @@ return_funcall1((closure)&c_732837,  quote_cadar);;
 }
 
 static void __lambda_446(int argc, object self_73923, object r_73341) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732839;
 c_732839.tag = closureN_tag;
@@ -5012,7 +5012,7 @@ return_funcall3(  __glo__list,  &c_732839, r_73341, primitive_cadar);;
 }
 
 static void __lambda_445(int argc, object self_73924, object r_73210) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732841;
 c_732841.tag = closureN_tag;
@@ -5077,7 +5077,7 @@ return_funcall1((closure)&c_732841,  quote_caddr);;
 }
 
 static void __lambda_444(int argc, object self_73925, object r_73340) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732843;
 c_732843.tag = closureN_tag;
@@ -5142,7 +5142,7 @@ return_funcall3(  __glo__list,  &c_732843, r_73340, primitive_caddr);;
 }
 
 static void __lambda_443(int argc, object self_73926, object r_73211) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732845;
 c_732845.tag = closureN_tag;
@@ -5208,7 +5208,7 @@ return_funcall1((closure)&c_732845,  quote_cdaar);;
 }
 
 static void __lambda_442(int argc, object self_73927, object r_73339) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732847;
 c_732847.tag = closureN_tag;
@@ -5274,7 +5274,7 @@ return_funcall3(  __glo__list,  &c_732847, r_73339, primitive_cdaar);;
 }
 
 static void __lambda_441(int argc, object self_73928, object r_73212) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732849;
 c_732849.tag = closureN_tag;
@@ -5341,7 +5341,7 @@ return_funcall1((closure)&c_732849,  quote_cdadr);;
 }
 
 static void __lambda_440(int argc, object self_73929, object r_73338) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732851;
 c_732851.tag = closureN_tag;
@@ -5408,7 +5408,7 @@ return_funcall3(  __glo__list,  &c_732851, r_73338, primitive_cdadr);;
 }
 
 static void __lambda_439(int argc, object self_73930, object r_73213) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732853;
 c_732853.tag = closureN_tag;
@@ -5476,7 +5476,7 @@ return_funcall1((closure)&c_732853,  quote_cddar);;
 }
 
 static void __lambda_438(int argc, object self_73931, object r_73337) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732855;
 c_732855.tag = closureN_tag;
@@ -5544,7 +5544,7 @@ return_funcall3(  __glo__list,  &c_732855, r_73337, primitive_cddar);;
 }
 
 static void __lambda_437(int argc, object self_73932, object r_73214) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732857;
 c_732857.tag = closureN_tag;
@@ -5613,7 +5613,7 @@ return_funcall1((closure)&c_732857,  quote_cdddr);;
 }
 
 static void __lambda_436(int argc, object self_73933, object r_73336) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732859;
 c_732859.tag = closureN_tag;
@@ -5682,7 +5682,7 @@ return_funcall3(  __glo__list,  &c_732859, r_73336, primitive_cdddr);;
 }
 
 static void __lambda_435(int argc, object self_73934, object r_73215) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732861;
 c_732861.tag = closureN_tag;
@@ -5752,7 +5752,7 @@ return_funcall1((closure)&c_732861,  quote_caaaar);;
 }
 
 static void __lambda_434(int argc, object self_73935, object r_73335) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732863;
 c_732863.tag = closureN_tag;
@@ -5822,7 +5822,7 @@ return_funcall3(  __glo__list,  &c_732863, r_73335, primitive_caaaar);;
 }
 
 static void __lambda_433(int argc, object self_73936, object r_73216) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732865;
 c_732865.tag = closureN_tag;
@@ -5893,7 +5893,7 @@ return_funcall1((closure)&c_732865,  quote_caaadr);;
 }
 
 static void __lambda_432(int argc, object self_73937, object r_73334) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732867;
 c_732867.tag = closureN_tag;
@@ -5964,7 +5964,7 @@ return_funcall3(  __glo__list,  &c_732867, r_73334, primitive_caaadr);;
 }
 
 static void __lambda_431(int argc, object self_73938, object r_73217) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732869;
 c_732869.tag = closureN_tag;
@@ -6036,7 +6036,7 @@ return_funcall1((closure)&c_732869,  quote_caadar);;
 }
 
 static void __lambda_430(int argc, object self_73939, object r_73333) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732871;
 c_732871.tag = closureN_tag;
@@ -6108,7 +6108,7 @@ return_funcall3(  __glo__list,  &c_732871, r_73333, primitive_caadar);;
 }
 
 static void __lambda_429(int argc, object self_73940, object r_73218) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732873;
 c_732873.tag = closureN_tag;
@@ -6181,7 +6181,7 @@ return_funcall1((closure)&c_732873,  quote_caaddr);;
 }
 
 static void __lambda_428(int argc, object self_73941, object r_73332) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732875;
 c_732875.tag = closureN_tag;
@@ -6254,7 +6254,7 @@ return_funcall3(  __glo__list,  &c_732875, r_73332, primitive_caaddr);;
 }
 
 static void __lambda_427(int argc, object self_73942, object r_73219) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732877;
 c_732877.tag = closureN_tag;
@@ -6328,7 +6328,7 @@ return_funcall1((closure)&c_732877,  quote_cadaar);;
 }
 
 static void __lambda_426(int argc, object self_73943, object r_73331) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732879;
 c_732879.tag = closureN_tag;
@@ -6402,7 +6402,7 @@ return_funcall3(  __glo__list,  &c_732879, r_73331, primitive_cadaar);;
 }
 
 static void __lambda_425(int argc, object self_73944, object r_73220) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732881;
 c_732881.tag = closureN_tag;
@@ -6477,7 +6477,7 @@ return_funcall1((closure)&c_732881,  quote_cadadr);;
 }
 
 static void __lambda_424(int argc, object self_73945, object r_73330) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732883;
 c_732883.tag = closureN_tag;
@@ -6552,7 +6552,7 @@ return_funcall3(  __glo__list,  &c_732883, r_73330, primitive_cadadr);;
 }
 
 static void __lambda_423(int argc, object self_73946, object r_73221) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732885;
 c_732885.tag = closureN_tag;
@@ -6628,7 +6628,7 @@ return_funcall1((closure)&c_732885,  quote_caddar);;
 }
 
 static void __lambda_422(int argc, object self_73947, object r_73329) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732887;
 c_732887.tag = closureN_tag;
@@ -6704,7 +6704,7 @@ return_funcall3(  __glo__list,  &c_732887, r_73329, primitive_caddar);;
 }
 
 static void __lambda_421(int argc, object self_73948, object r_73222) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732889;
 c_732889.tag = closureN_tag;
@@ -6781,7 +6781,7 @@ return_funcall1((closure)&c_732889,  quote_cadddr);;
 }
 
 static void __lambda_420(int argc, object self_73949, object r_73328) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732891;
 c_732891.tag = closureN_tag;
@@ -6858,7 +6858,7 @@ return_funcall3(  __glo__list,  &c_732891, r_73328, primitive_cadddr);;
 }
 
 static void __lambda_419(int argc, object self_73950, object r_73223) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732893;
 c_732893.tag = closureN_tag;
@@ -6936,7 +6936,7 @@ return_funcall1((closure)&c_732893,  quote_cdaaar);;
 }
 
 static void __lambda_418(int argc, object self_73951, object r_73327) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732895;
 c_732895.tag = closureN_tag;
@@ -7014,7 +7014,7 @@ return_funcall3(  __glo__list,  &c_732895, r_73327, primitive_cdaaar);;
 }
 
 static void __lambda_417(int argc, object self_73952, object r_73224) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732897;
 c_732897.tag = closureN_tag;
@@ -7093,7 +7093,7 @@ return_funcall1((closure)&c_732897,  quote_cdaadr);;
 }
 
 static void __lambda_416(int argc, object self_73953, object r_73326) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732899;
 c_732899.tag = closureN_tag;
@@ -7172,7 +7172,7 @@ return_funcall3(  __glo__list,  &c_732899, r_73326, primitive_cdaadr);;
 }
 
 static void __lambda_415(int argc, object self_73954, object r_73225) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732901;
 c_732901.tag = closureN_tag;
@@ -7252,7 +7252,7 @@ return_funcall1((closure)&c_732901,  quote_cdadar);;
 }
 
 static void __lambda_414(int argc, object self_73955, object r_73325) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732903;
 c_732903.tag = closureN_tag;
@@ -7332,7 +7332,7 @@ return_funcall3(  __glo__list,  &c_732903, r_73325, primitive_cdadar);;
 }
 
 static void __lambda_413(int argc, object self_73956, object r_73226) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732905;
 c_732905.tag = closureN_tag;
@@ -7413,7 +7413,7 @@ return_funcall1((closure)&c_732905,  quote_cdaddr);;
 }
 
 static void __lambda_412(int argc, object self_73957, object r_73324) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732907;
 c_732907.tag = closureN_tag;
@@ -7494,7 +7494,7 @@ return_funcall3(  __glo__list,  &c_732907, r_73324, primitive_cdaddr);;
 }
 
 static void __lambda_411(int argc, object self_73958, object r_73227) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732909;
 c_732909.tag = closureN_tag;
@@ -7576,7 +7576,7 @@ return_funcall1((closure)&c_732909,  quote_cddaar);;
 }
 
 static void __lambda_410(int argc, object self_73959, object r_73323) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732911;
 c_732911.tag = closureN_tag;
@@ -7658,7 +7658,7 @@ return_funcall3(  __glo__list,  &c_732911, r_73323, primitive_cddaar);;
 }
 
 static void __lambda_409(int argc, object self_73960, object r_73228) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732913;
 c_732913.tag = closureN_tag;
@@ -7741,7 +7741,7 @@ return_funcall1((closure)&c_732913,  quote_cddadr);;
 }
 
 static void __lambda_408(int argc, object self_73961, object r_73322) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732915;
 c_732915.tag = closureN_tag;
@@ -7824,7 +7824,7 @@ return_funcall3(  __glo__list,  &c_732915, r_73322, primitive_cddadr);;
 }
 
 static void __lambda_407(int argc, object self_73962, object r_73229) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732917;
 c_732917.tag = closureN_tag;
@@ -7908,7 +7908,7 @@ return_funcall1((closure)&c_732917,  quote_cdddar);;
 }
 
 static void __lambda_406(int argc, object self_73963, object r_73321) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732919;
 c_732919.tag = closureN_tag;
@@ -7992,7 +7992,7 @@ return_funcall3(  __glo__list,  &c_732919, r_73321, primitive_cdddar);;
 }
 
 static void __lambda_405(int argc, object self_73964, object r_73230) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732921;
 c_732921.tag = closureN_tag;
@@ -8077,7 +8077,7 @@ return_funcall1((closure)&c_732921,  quote_cddddr);;
 }
 
 static void __lambda_404(int argc, object self_73965, object r_73320) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732923;
 c_732923.tag = closureN_tag;
@@ -8162,7 +8162,7 @@ return_funcall3(  __glo__list,  &c_732923, r_73320, primitive_cddddr);;
 }
 
 static void __lambda_403(int argc, object self_73966, object r_73231) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732925;
 c_732925.tag = closureN_tag;
@@ -8248,7 +8248,7 @@ return_funcall1((closure)&c_732925,  quote_char_91_125integer);;
 }
 
 static void __lambda_402(int argc, object self_73967, object r_73319) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732927;
 c_732927.tag = closureN_tag;
@@ -8334,7 +8334,7 @@ return_funcall3(  __glo__list,  &c_732927, r_73319, primitive_char_91_125integer
 }
 
 static void __lambda_401(int argc, object self_73968, object r_73232) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732929;
 c_732929.tag = closureN_tag;
@@ -8421,7 +8421,7 @@ return_funcall1((closure)&c_732929,  quote_integer_91_125char);;
 }
 
 static void __lambda_400(int argc, object self_73969, object r_73318) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732931;
 c_732931.tag = closureN_tag;
@@ -8508,7 +8508,7 @@ return_funcall3(  __glo__list,  &c_732931, r_73318, primitive_integer_91_125char
 }
 
 static void __lambda_399(int argc, object self_73970, object r_73233) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732933;
 c_732933.tag = closureN_tag;
@@ -8596,7 +8596,7 @@ return_funcall1((closure)&c_732933,  quote_string_91_125number);;
 }
 
 static void __lambda_398(int argc, object self_73971, object r_73317) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732935;
 c_732935.tag = closureN_tag;
@@ -8684,7 +8684,7 @@ return_funcall3(  __glo__list,  &c_732935, r_73317, primitive_string_91_125numbe
 }
 
 static void __lambda_397(int argc, object self_73972, object r_73234) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732937;
 c_732937.tag = closureN_tag;
@@ -8773,7 +8773,7 @@ return_funcall1((closure)&c_732937,  quote_string_91cmp);;
 }
 
 static void __lambda_396(int argc, object self_73973, object r_73316) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732939;
 c_732939.tag = closureN_tag;
@@ -8862,7 +8862,7 @@ return_funcall3(  __glo__list,  &c_732939, r_73316, primitive_string_91cmp);;
 }
 
 static void __lambda_395(int argc, object self_73974, object r_73235) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732941;
 c_732941.tag = closureN_tag;
@@ -8952,7 +8952,7 @@ return_funcall1((closure)&c_732941,  quote_string_91append);;
 }
 
 static void __lambda_394(int argc, object self_73975, object r_73315) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732943;
 c_732943.tag = closureN_tag;
@@ -9042,7 +9042,7 @@ return_funcall3(  __glo__list,  &c_732943, r_73315, primitive_string_91append);;
 }
 
 static void __lambda_393(int argc, object self_73976, object r_73236) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732945;
 c_732945.tag = closureN_tag;
@@ -9133,7 +9133,7 @@ return_funcall1((closure)&c_732945,  quote_list_91_125string);;
 }
 
 static void __lambda_392(int argc, object self_73977, object r_73314) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732947;
 c_732947.tag = closureN_tag;
@@ -9224,7 +9224,7 @@ return_funcall3(  __glo__list,  &c_732947, r_73314, primitive_list_91_125string)
 }
 
 static void __lambda_391(int argc, object self_73978, object r_73237) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732949;
 c_732949.tag = closureN_tag;
@@ -9316,7 +9316,7 @@ return_funcall1((closure)&c_732949,  quote_string_91_125symbol);;
 }
 
 static void __lambda_390(int argc, object self_73979, object r_73313) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732951;
 c_732951.tag = closureN_tag;
@@ -9408,7 +9408,7 @@ return_funcall3(  __glo__list,  &c_732951, r_73313, primitive_string_91_125symbo
 }
 
 static void __lambda_389(int argc, object self_73980, object r_73238) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732953;
 c_732953.tag = closureN_tag;
@@ -9501,7 +9501,7 @@ return_funcall1((closure)&c_732953,  quote_symbol_91_125string);;
 }
 
 static void __lambda_388(int argc, object self_73981, object r_73312) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732955;
 c_732955.tag = closureN_tag;
@@ -9594,7 +9594,7 @@ return_funcall3(  __glo__list,  &c_732955, r_73312, primitive_symbol_91_125strin
 }
 
 static void __lambda_387(int argc, object self_73982, object r_73239) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732957;
 c_732957.tag = closureN_tag;
@@ -9688,7 +9688,7 @@ return_funcall1((closure)&c_732957,  quote_number_91_125string);;
 }
 
 static void __lambda_386(int argc, object self_73983, object r_73311) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732959;
 c_732959.tag = closureN_tag;
@@ -9782,7 +9782,7 @@ return_funcall3(  __glo__list,  &c_732959, r_73311, primitive_number_91_125strin
 }
 
 static void __lambda_385(int argc, object self_73984, object r_73240) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732961;
 c_732961.tag = closureN_tag;
@@ -9877,7 +9877,7 @@ return_funcall1((closure)&c_732961,  quote_string_91length);;
 }
 
 static void __lambda_384(int argc, object self_73985, object r_73310) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732963;
 c_732963.tag = closureN_tag;
@@ -9972,7 +9972,7 @@ return_funcall3(  __glo__list,  &c_732963, r_73310, primitive_string_91length);;
 }
 
 static void __lambda_383(int argc, object self_73986, object r_73241) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732965;
 c_732965.tag = closureN_tag;
@@ -10068,7 +10068,7 @@ return_funcall1((closure)&c_732965,  quote_string_91ref);;
 }
 
 static void __lambda_382(int argc, object self_73987, object r_73309) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732967;
 c_732967.tag = closureN_tag;
@@ -10164,7 +10164,7 @@ return_funcall3(  __glo__list,  &c_732967, r_73309, primitive_string_91ref);;
 }
 
 static void __lambda_381(int argc, object self_73988, object r_73242) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732969;
 c_732969.tag = closureN_tag;
@@ -10261,7 +10261,7 @@ return_funcall1((closure)&c_732969,  quote_string_91set_67);;
 }
 
 static void __lambda_380(int argc, object self_73989, object r_73308) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732971;
 c_732971.tag = closureN_tag;
@@ -10358,7 +10358,7 @@ return_funcall3(  __glo__list,  &c_732971, r_73308, primitive_string_91set_67);;
 }
 
 static void __lambda_379(int argc, object self_73990, object r_73243) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732973;
 c_732973.tag = closureN_tag;
@@ -10456,7 +10456,7 @@ return_funcall1((closure)&c_732973,  quote_substring);;
 }
 
 static void __lambda_378(int argc, object self_73991, object r_73307) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732975;
 c_732975.tag = closureN_tag;
@@ -10554,7 +10554,7 @@ return_funcall3(  __glo__list,  &c_732975, r_73307, primitive_substring);;
 }
 
 static void __lambda_377(int argc, object self_73992, object r_73244) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732977;
 c_732977.tag = closureN_tag;
@@ -10653,7 +10653,7 @@ return_funcall1((closure)&c_732977,  quote_make_91vector);;
 }
 
 static void __lambda_376(int argc, object self_73993, object r_73306) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732979;
 c_732979.tag = closureN_tag;
@@ -10752,7 +10752,7 @@ return_funcall3(  __glo__list,  &c_732979, r_73306, primitive_make_91vector);;
 }
 
 static void __lambda_375(int argc, object self_73994, object r_73245) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732981;
 c_732981.tag = closureN_tag;
@@ -10852,7 +10852,7 @@ return_funcall1((closure)&c_732981,  quote_list_91_125vector);;
 }
 
 static void __lambda_374(int argc, object self_73995, object r_73305) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732983;
 c_732983.tag = closureN_tag;
@@ -10952,7 +10952,7 @@ return_funcall3(  __glo__list,  &c_732983, r_73305, primitive_list_91_125vector)
 }
 
 static void __lambda_373(int argc, object self_73996, object r_73246) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732985;
 c_732985.tag = closureN_tag;
@@ -11053,7 +11053,7 @@ return_funcall1((closure)&c_732985,  quote_vector_91length);;
 }
 
 static void __lambda_372(int argc, object self_73997, object r_73304) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732987;
 c_732987.tag = closureN_tag;
@@ -11154,7 +11154,7 @@ return_funcall3(  __glo__list,  &c_732987, r_73304, primitive_vector_91length);;
 }
 
 static void __lambda_371(int argc, object self_73998, object r_73247) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732989;
 c_732989.tag = closureN_tag;
@@ -11256,7 +11256,7 @@ return_funcall1((closure)&c_732989,  quote_vector_91ref);;
 }
 
 static void __lambda_370(int argc, object self_73999, object r_73303) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732991;
 c_732991.tag = closureN_tag;
@@ -11358,7 +11358,7 @@ return_funcall3(  __glo__list,  &c_732991, r_73303, primitive_vector_91ref);;
 }
 
 static void __lambda_369(int argc, object self_731000, object r_73248) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732993;
 c_732993.tag = closureN_tag;
@@ -11461,7 +11461,7 @@ return_funcall1((closure)&c_732993,  quote_vector_91set_67);;
 }
 
 static void __lambda_368(int argc, object self_731001, object r_73302) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732995;
 c_732995.tag = closureN_tag;
@@ -11564,7 +11564,7 @@ return_funcall3(  __glo__list,  &c_732995, r_73302, primitive_vector_91set_67);;
 }
 
 static void __lambda_367(int argc, object self_731002, object r_73249) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732997;
 c_732997.tag = closureN_tag;
@@ -11668,7 +11668,7 @@ return_funcall1((closure)&c_732997,  quote_boolean_127);;
 }
 
 static void __lambda_366(int argc, object self_731003, object r_73301) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_732999;
 c_732999.tag = closureN_tag;
@@ -11772,7 +11772,7 @@ return_funcall3(  __glo__list,  &c_732999, r_73301, primitive_boolean_127);;
 }
 
 static void __lambda_365(int argc, object self_731004, object r_73250) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733001;
 c_733001.tag = closureN_tag;
@@ -11877,7 +11877,7 @@ return_funcall1((closure)&c_733001,  quote_char_127);;
 }
 
 static void __lambda_364(int argc, object self_731005, object r_73300) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733003;
 c_733003.tag = closureN_tag;
@@ -11982,7 +11982,7 @@ return_funcall3(  __glo__list,  &c_733003, r_73300, primitive_char_127);;
 }
 
 static void __lambda_363(int argc, object self_731006, object r_73251) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733005;
 c_733005.tag = closureN_tag;
@@ -12088,7 +12088,7 @@ return_funcall1((closure)&c_733005,  quote_eof_91object_127);;
 }
 
 static void __lambda_362(int argc, object self_731007, object r_73299) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733007;
 c_733007.tag = closureN_tag;
@@ -12194,7 +12194,7 @@ return_funcall3(  __glo__list,  &c_733007, r_73299, primitive_eof_91object_127);
 }
 
 static void __lambda_361(int argc, object self_731008, object r_73252) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733009;
 c_733009.tag = closureN_tag;
@@ -12301,7 +12301,7 @@ return_funcall1((closure)&c_733009,  quote_null_127);;
 }
 
 static void __lambda_360(int argc, object self_731009, object r_73298) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733011;
 c_733011.tag = closureN_tag;
@@ -12408,7 +12408,7 @@ return_funcall3(  __glo__list,  &c_733011, r_73298, primitive_null_127);;
 }
 
 static void __lambda_359(int argc, object self_731010, object r_73253) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733013;
 c_733013.tag = closureN_tag;
@@ -12516,7 +12516,7 @@ return_funcall1((closure)&c_733013,  quote_number_127);;
 }
 
 static void __lambda_358(int argc, object self_731011, object r_73297) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733015;
 c_733015.tag = closureN_tag;
@@ -12624,7 +12624,7 @@ return_funcall3(  __glo__list,  &c_733015, r_73297, primitive_number_127);;
 }
 
 static void __lambda_357(int argc, object self_731012, object r_73254) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733017;
 c_733017.tag = closureN_tag;
@@ -12733,7 +12733,7 @@ return_funcall1((closure)&c_733017,  quote_real_127);;
 }
 
 static void __lambda_356(int argc, object self_731013, object r_73296) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733019;
 c_733019.tag = closureN_tag;
@@ -12842,7 +12842,7 @@ return_funcall3(  __glo__list,  &c_733019, r_73296, primitive_real_127);;
 }
 
 static void __lambda_355(int argc, object self_731014, object r_73255) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733021;
 c_733021.tag = closureN_tag;
@@ -12952,7 +12952,7 @@ return_funcall1((closure)&c_733021,  quote_integer_127);;
 }
 
 static void __lambda_354(int argc, object self_731015, object r_73295) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733023;
 c_733023.tag = closureN_tag;
@@ -13062,7 +13062,7 @@ return_funcall3(  __glo__list,  &c_733023, r_73295, primitive_integer_127);;
 }
 
 static void __lambda_353(int argc, object self_731016, object r_73256) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733025;
 c_733025.tag = closureN_tag;
@@ -13173,7 +13173,7 @@ return_funcall1((closure)&c_733025,  quote_pair_127);;
 }
 
 static void __lambda_352(int argc, object self_731017, object r_73294) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733027;
 c_733027.tag = closureN_tag;
@@ -13284,7 +13284,7 @@ return_funcall3(  __glo__list,  &c_733027, r_73294, primitive_pair_127);;
 }
 
 static void __lambda_351(int argc, object self_731018, object r_73257) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733029;
 c_733029.tag = closureN_tag;
@@ -13396,7 +13396,7 @@ return_funcall1((closure)&c_733029,  quote_port_127);;
 }
 
 static void __lambda_350(int argc, object self_731019, object r_73293) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733031;
 c_733031.tag = closureN_tag;
@@ -13508,7 +13508,7 @@ return_funcall3(  __glo__list,  &c_733031, r_73293, primitive_port_127);;
 }
 
 static void __lambda_349(int argc, object self_731020, object r_73258) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733033;
 c_733033.tag = closureN_tag;
@@ -13621,7 +13621,7 @@ return_funcall1((closure)&c_733033,  quote_procedure_127);;
 }
 
 static void __lambda_348(int argc, object self_731021, object r_73292) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733035;
 c_733035.tag = closureN_tag;
@@ -13734,7 +13734,7 @@ return_funcall3(  __glo__list,  &c_733035, r_73292, primitive_procedure_127);;
 }
 
 static void __lambda_347(int argc, object self_731022, object r_73259) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733037;
 c_733037.tag = closureN_tag;
@@ -13848,7 +13848,7 @@ return_funcall1((closure)&c_733037,  quote_vector_127);;
 }
 
 static void __lambda_346(int argc, object self_731023, object r_73291) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733039;
 c_733039.tag = closureN_tag;
@@ -13962,7 +13962,7 @@ return_funcall3(  __glo__list,  &c_733039, r_73291, primitive_vector_127);;
 }
 
 static void __lambda_345(int argc, object self_731024, object r_73260) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733041;
 c_733041.tag = closureN_tag;
@@ -14077,7 +14077,7 @@ return_funcall1((closure)&c_733041,  quote_string_127);;
 }
 
 static void __lambda_344(int argc, object self_731025, object r_73290) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733043;
 c_733043.tag = closureN_tag;
@@ -14192,7 +14192,7 @@ return_funcall3(  __glo__list,  &c_733043, r_73290, primitive_string_127);;
 }
 
 static void __lambda_343(int argc, object self_731026, object r_73261) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733045;
 c_733045.tag = closureN_tag;
@@ -14308,7 +14308,7 @@ return_funcall1((closure)&c_733045,  quote_symbol_127);;
 }
 
 static void __lambda_342(int argc, object self_731027, object r_73289) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733047;
 c_733047.tag = closureN_tag;
@@ -14424,7 +14424,7 @@ return_funcall3(  __glo__list,  &c_733047, r_73289, primitive_symbol_127);;
 }
 
 static void __lambda_341(int argc, object self_731028, object r_73262) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733049;
 c_733049.tag = closureN_tag;
@@ -14541,7 +14541,7 @@ return_funcall1((closure)&c_733049,  quote_open_91input_91file);;
 }
 
 static void __lambda_340(int argc, object self_731029, object r_73288) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733051;
 c_733051.tag = closureN_tag;
@@ -14658,7 +14658,7 @@ return_funcall3(  __glo__list,  &c_733051, r_73288, primitive_open_91input_91fil
 }
 
 static void __lambda_339(int argc, object self_731030, object r_73263) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733053;
 c_733053.tag = closureN_tag;
@@ -14776,7 +14776,7 @@ return_funcall1((closure)&c_733053,  quote_open_91output_91file);;
 }
 
 static void __lambda_338(int argc, object self_731031, object r_73287) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733055;
 c_733055.tag = closureN_tag;
@@ -14894,7 +14894,7 @@ return_funcall3(  __glo__list,  &c_733055, r_73287, primitive_open_91output_91fi
 }
 
 static void __lambda_337(int argc, object self_731032, object r_73264) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733057;
 c_733057.tag = closureN_tag;
@@ -15013,7 +15013,7 @@ return_funcall1((closure)&c_733057,  quote_close_91port);;
 }
 
 static void __lambda_336(int argc, object self_731033, object r_73286) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733059;
 c_733059.tag = closureN_tag;
@@ -15132,7 +15132,7 @@ return_funcall3(  __glo__list,  &c_733059, r_73286, primitive_close_91port);;
 }
 
 static void __lambda_335(int argc, object self_731034, object r_73265) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733061;
 c_733061.tag = closureN_tag;
@@ -15252,7 +15252,7 @@ return_funcall1((closure)&c_733061,  quote_close_91input_91port);;
 }
 
 static void __lambda_334(int argc, object self_731035, object r_73285) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733063;
 c_733063.tag = closureN_tag;
@@ -15372,7 +15372,7 @@ return_funcall3(  __glo__list,  &c_733063, r_73285, primitive_close_91input_91po
 }
 
 static void __lambda_333(int argc, object self_731036, object r_73266) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733065;
 c_733065.tag = closureN_tag;
@@ -15493,7 +15493,7 @@ return_funcall1((closure)&c_733065,  quote_close_91output_91port);;
 }
 
 static void __lambda_332(int argc, object self_731037, object r_73284) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733067;
 c_733067.tag = closureN_tag;
@@ -15614,7 +15614,7 @@ return_funcall3(  __glo__list,  &c_733067, r_73284, primitive_close_91output_91p
 }
 
 static void __lambda_331(int argc, object self_731038, object r_73267) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733069;
 c_733069.tag = closureN_tag;
@@ -15736,7 +15736,7 @@ return_funcall1((closure)&c_733069,  quote_file_91exists_127);;
 }
 
 static void __lambda_330(int argc, object self_731039, object r_73283) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733071;
 c_733071.tag = closureN_tag;
@@ -15858,7 +15858,7 @@ return_funcall3(  __glo__list,  &c_733071, r_73283, primitive_file_91exists_127)
 }
 
 static void __lambda_329(int argc, object self_731040, object r_73268) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733073;
 c_733073.tag = closureN_tag;
@@ -15981,7 +15981,7 @@ return_funcall1((closure)&c_733073,  quote_delete_91file);;
 }
 
 static void __lambda_328(int argc, object self_731041, object r_73282) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733075;
 c_733075.tag = closureN_tag;
@@ -16104,7 +16104,7 @@ return_funcall3(  __glo__list,  &c_733075, r_73282, primitive_delete_91file);;
 }
 
 static void __lambda_327(int argc, object self_731042, object r_73269) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733077;
 c_733077.tag = closureN_tag;
@@ -16228,7 +16228,7 @@ return_funcall1((closure)&c_733077,  quote_read_91char);;
 }
 
 static void __lambda_326(int argc, object self_731043, object r_73281) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733079;
 c_733079.tag = closureN_tag;
@@ -16352,7 +16352,7 @@ return_funcall3(  __glo__list,  &c_733079, r_73281, primitive_read_91char);;
 }
 
 static void __lambda_325(int argc, object self_731044, object r_73270) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733081;
 c_733081.tag = closureN_tag;
@@ -16477,7 +16477,7 @@ return_funcall1((closure)&c_733081,  quote_peek_91char);;
 }
 
 static void __lambda_324(int argc, object self_731045, object r_73280) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733083;
 c_733083.tag = closureN_tag;
@@ -16602,7 +16602,7 @@ return_funcall3(  __glo__list,  &c_733083, r_73280, primitive_peek_91char);;
 }
 
 static void __lambda_323(int argc, object self_731046, object r_73271) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733085;
 c_733085.tag = closureN_tag;
@@ -16728,7 +16728,7 @@ return_funcall1((closure)&c_733085,  quote_Cyc_91read_91line);;
 }
 
 static void __lambda_322(int argc, object self_731047, object r_73279) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733087;
 c_733087.tag = closureN_tag;
@@ -16854,7 +16854,7 @@ return_funcall3(  __glo__list,  &c_733087, r_73279, primitive_Cyc_91read_91line)
 }
 
 static void __lambda_321(int argc, object self_731048, object r_73272) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733089;
 c_733089.tag = closureN_tag;
@@ -16981,7 +16981,7 @@ return_funcall1((closure)&c_733089,  quote_Cyc_91write_91char);;
 }
 
 static void __lambda_320(int argc, object self_731049, object r_73278) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733091;
 c_733091.tag = closureN_tag;
@@ -17108,7 +17108,7 @@ return_funcall3(  __glo__list,  &c_733091, r_73278, primitive_Cyc_91write_91char
 }
 
 static void __lambda_319(int argc, object self_731050, object r_73273) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733093;
 c_733093.tag = closureN_tag;
@@ -17236,7 +17236,7 @@ return_funcall1((closure)&c_733093,  quote_Cyc_91write);;
 }
 
 static void __lambda_318(int argc, object self_731051, object r_73277) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733095;
 c_733095.tag = closureN_tag;
@@ -17364,7 +17364,7 @@ return_funcall3(  __glo__list,  &c_733095, r_73277, primitive_Cyc_91write);;
 }
 
 static void __lambda_317(int argc, object self_731052, object r_73274) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733097;
 c_733097.tag = closureN_tag;
@@ -17493,7 +17493,7 @@ return_funcall1((closure)&c_733097,  quote_Cyc_91display);;
 }
 
 static void __lambda_316(int argc, object self_731053, object r_73276) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733099;
 c_733099.tag = closureN_tag;
@@ -17622,7 +17622,7 @@ return_funcall3(  __glo__list,  &c_733099, r_73276, primitive_Cyc_91display);;
 }
 
 static void __lambda_315(int argc, object self_731054, object r_73275) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733101;
 c_733101.tag = closureN_tag;
@@ -17636,7 +17636,7 @@ return_funcall117(  __glo__list,  &c_733101, ((closureN)self_731054)->elts[1], (
 }
 
 static void __lambda_314(int argc, object self_731055, object r_73159) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733103;
 c_733103.tag = closureN_tag;
@@ -17650,7 +17650,7 @@ return_funcall1((closure)&c_733103,  global_set(__glo_primitive_91procedures, r_
 }
 
 static void __lambda_313(int argc, object self_731056, object r_73157) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 
 closureN_type c_733105;
 c_733105.tag = closureN_tag;
@@ -17664,12 +17664,12 @@ return_funcall1(  __glo_setup_91environment,  &c_733105);;
 }
 
 static void __lambda_312(int argc, object self_731057, object r_73158) {
-  Cyc_st_add("scheme/eval.c:lib-init:schemeeval");
+  Cyc_st_add("scheme/eval.sld:lib-init:schemeeval");
 return_funcall1(  ((closureN)self_731057)->elts[0],  global_set(__glo__85global_91environment_85, r_73158));; 
 }
 
 static void __lambda_311(int argc, closure _,object k_73396, object proc_732, object args_731) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732572;
 c_732572.tag = closureN_tag;
@@ -17685,7 +17685,7 @@ return_funcall2(  __glo_primitive_91procedure_127,  &c_732572, proc_732);;
 }
 
 static void __lambda_310(int argc, object self_731058, object r_73397) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 if( !eq(boolean_f, r_73397) ){ 
   return_funcall3(  __glo_apply_91primitive_91procedure,  ((closureN)self_731058)->elts[1], ((closureN)self_731058)->elts[2], ((closureN)self_731058)->elts[0]);
 } else { 
@@ -17705,7 +17705,7 @@ return_funcall2(  __glo_compound_91procedure_127,  &c_732578, ((closureN)self_73
 }
 
 static void __lambda_309(int argc, object self_731059, object r_73398) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 if( !eq(boolean_f, r_73398) ){ 
   
 closureN_type c_732580;
@@ -17736,7 +17736,7 @@ return_funcall1((closure)&c_732596,  Cyc_is_procedure(((closureN)self_731059)->e
 }
 
 static void __lambda_308(int argc, object self_731060, object r_73403) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 if( !eq(boolean_f, r_73403) ){ 
   
 closureN_type c_732598;
@@ -17760,7 +17760,7 @@ return_funcall3(  __glo_error,  ((closureN)self_731060)->elts[1], &c_732619, ((c
 }
 
 static void __lambda_307(int argc, object self_731061, object k_73406, object a_733) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732610;
 c_732610.tag = closureN_tag;
@@ -17775,7 +17775,7 @@ return_funcall2(  __glo_primitive_91procedure_127,  &c_732610, a_733);;
 }
 
 static void __lambda_306(int argc, object self_731062, object r_73407) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 if( !eq(boolean_f, r_73407) ){ 
   return_funcall2(  __glo_primitive_91implementation,  ((closureN)self_731062)->elts[1], ((closureN)self_731062)->elts[0]);
 } else { 
@@ -17784,7 +17784,7 @@ if( !eq(boolean_f, r_73407) ){
 }
 
 static void __lambda_305(int argc, object self_731063, object r_73405) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732600;
 c_732600.tag = closureN_tag;
@@ -17799,14 +17799,14 @@ return_funcall3(  __glo_map,  &c_732600, r_73405, ((closureN)self_731063)->elts[
 }
 
 static void __lambda_304(int argc, object self_731064, object r_73404) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 object c_732605 = apply(  ((closureN)self_731064)->elts[0], ((closureN)self_731064)->elts[1], r_73404);
 return_funcall1(  ((closureN)self_731064)->elts[0],  c_732605);; 
 }
 
 static void __lambda_303(int argc, object self_731065, object r_73399) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732582;
 c_732582.tag = closureN_tag;
@@ -17823,7 +17823,7 @@ return_funcall2(  __glo_procedure_91parameters,  &c_732582, ((closureN)self_7310
 }
 
 static void __lambda_302(int argc, object self_731066, object r_73401) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732584;
 c_732584.tag = closureN_tag;
@@ -17840,7 +17840,7 @@ return_funcall2(  __glo_procedure_91environment,  &c_732584, ((closureN)self_731
 }
 
 static void __lambda_301(int argc, object self_731067, object r_73402) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 
 closureN_type c_732586;
 c_732586.tag = closureN_tag;
@@ -17855,12 +17855,12 @@ return_funcall4(  __glo_extend_91environment,  &c_732586, ((closureN)self_731067
 }
 
 static void __lambda_300(int argc, object self_731068, object r_73400) {
-  Cyc_st_add("scheme/eval.c:execute-application");
+  Cyc_st_add("scheme/eval.sld:execute-application");
 return_funcall2(  ((closureN)self_731068)->elts[1],  ((closureN)self_731068)->elts[0], r_73400);; 
 }
 
 static void __lambda_299(int argc, closure _,object k_73410, object exp_734) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732542;
 c_732542.tag = closureN_tag;
@@ -17875,7 +17875,7 @@ return_funcall2(  __glo_operator,  &c_732542, exp_734);;
 }
 
 static void __lambda_298(int argc, object self_731069, object r_73419) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732544;
 c_732544.tag = closureN_tag;
@@ -17890,7 +17890,7 @@ return_funcall2(  __glo_analyze,  &c_732544, r_73419);;
 }
 
 static void __lambda_297(int argc, object self_731070, object r_73411) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732546;
 c_732546.tag = closureN_tag;
@@ -17905,7 +17905,7 @@ return_funcall2(  __glo_operands,  &c_732546, ((closureN)self_731070)->elts[0]);
 }
 
 static void __lambda_296(int argc, object self_731071, object r_73418) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732548;
 c_732548.tag = closureN_tag;
@@ -17920,7 +17920,7 @@ return_funcall3(  __glo_map,  &c_732548, __glo_analyze, r_73418);;
 }
 
 static void __lambda_295(int argc, object self_731072, object r_73412) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732550;
 c_732550.tag = closureN_tag;
@@ -17934,7 +17934,7 @@ return_funcall2((closure)&c_732550,  ((closureN)self_731072)->elts[1], r_73412);
 }
 
 static void __lambda_294(int argc, object self_731073, object fproc_736, object aprocs_735) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732553;
 c_732553.tag = closureN_tag;
@@ -17949,7 +17949,7 @@ return_funcall1(  ((closureN)self_731073)->elts[0],  &c_732553);;
 }
 
 static void __lambda_293(int argc, object self_731074, object k_73413, object env_737) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732556;
 c_732556.tag = closureN_tag;
@@ -17965,7 +17965,7 @@ return_funcall2(  ((closureN)self_731074)->elts[1],  &c_732556, env_737);;
 }
 
 static void __lambda_292(int argc, object self_731075, object r_73414) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732558;
 c_732558.tag = closureN_tag;
@@ -17990,12 +17990,12 @@ return_funcall1((closure)&c_732558,  &c_732565);;
 }
 
 static void __lambda_291(int argc, object self_731076, object k_73417, object aproc_738) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 return_funcall2(  aproc_738,  k_73417, ((closureN)self_731076)->elts[0]);; 
 }
 
 static void __lambda_290(int argc, object self_731077, object r_73416) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 
 closureN_type c_732560;
 c_732560.tag = closureN_tag;
@@ -18010,12 +18010,12 @@ return_funcall3(  __glo_map,  &c_732560, r_73416, ((closureN)self_731077)->elts[
 }
 
 static void __lambda_289(int argc, object self_731078, object r_73415) {
-  Cyc_st_add("scheme/eval.c:analyze-application");
+  Cyc_st_add("scheme/eval.sld:analyze-application");
 return_funcall3(  __glo_execute_91application,  ((closureN)self_731078)->elts[0], ((closureN)self_731078)->elts[1], r_73415);; 
 }
 
 static void __lambda_288(int argc, closure _,object k_73422, object exps_739) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732438;
 c_732438.tag = closureN_tag;
@@ -18030,7 +18030,7 @@ return_funcall2((closure)&c_732438,  boolean_f, boolean_f);;
 }
 
 static void __lambda_287(int argc, object self_731079, object loop_7313, object sequentially_7312) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732440;
 c_732440.tag = closureN_tag;
@@ -18048,7 +18048,7 @@ return_funcall1((closure)&c_732440,  &c_732539);;
 }
 
 static void __lambda_286(int argc, object self_731080, object loop_7313) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732442;
 c_732442.tag = closureN_tag;
@@ -18066,7 +18066,7 @@ return_funcall1((closure)&c_732442,  &c_732535);;
 }
 
 static void __lambda_285(int argc, object self_731081, object sequentially_7312) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732444;
 c_732444.tag = closureN_tag;
@@ -18083,7 +18083,7 @@ return_funcall2((closure)&c_732444,  boolean_f, boolean_f);;
 }
 
 static void __lambda_284(int argc, object self_731082, object sequentially_7315, object loop_7314) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732446;
 c_732446.tag = closureN_tag;
@@ -18102,7 +18102,7 @@ return_funcall1((closure)&c_732446,  &c_732523);;
 }
 
 static void __lambda_283(int argc, object self_731083, object k_73438, object proc1_7320, object proc2_7319) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732525;
 c_732525.tag = closureN_tag;
@@ -18117,7 +18117,7 @@ return_funcall1(  k_73438,  &c_732525);;
 }
 
 static void __lambda_282(int argc, object self_731084, object k_73439, object env_7321) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732528;
 c_732528.tag = closureN_tag;
@@ -18133,12 +18133,12 @@ return_funcall2(  ((closureN)self_731084)->elts[0],  &c_732528, env_7321);;
 }
 
 static void __lambda_281(int argc, object self_731085, object r_73440) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 return_funcall2(  ((closureN)self_731085)->elts[2],  ((closureN)self_731085)->elts[1], ((closureN)self_731085)->elts[0]);; 
 }
 
 static void __lambda_280(int argc, object self_731086, object r_73437) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732448;
 c_732448.tag = closureN_tag;
@@ -18155,7 +18155,7 @@ return_funcall1((closure)&c_732448,  Cyc_set_car(((closureN)self_731086)->elts[3
 }
 
 static void __lambda_279(int argc, object self_731087, object r_73423) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732450;
 c_732450.tag = closureN_tag;
@@ -18181,7 +18181,7 @@ return_funcall1((closure)&c_732450,  &c_732490);;
 }
 
 static void __lambda_278(int argc, object self_731088, object k_73432, object first_91proc_7318, object rest_91procs_7317) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732492;
 c_732492.tag = closureN_tag;
@@ -18199,7 +18199,7 @@ return_funcall1((closure)&c_732492,  Cyc_is_null(rest_91procs_7317));;
 }
 
 static void __lambda_277(int argc, object self_731089, object r_73433) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 if( !eq(boolean_f, r_73433) ){ 
   return_funcall1(  ((closureN)self_731089)->elts[1],  ((closureN)self_731089)->elts[0]);
 } else { 
@@ -18221,7 +18221,7 @@ return_funcall1((closure)&c_732497,  car(((closureN)self_731089)->elts[3]));}
 }
 
 static void __lambda_276(int argc, object self_731090, object r_73436) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732502;
 c_732502.tag = closureN_tag;
@@ -18237,7 +18237,7 @@ return_funcall3(  cell_get(((closureN)self_731090)->elts[4]),  &c_732502, ((clos
 }
 
 static void __lambda_275(int argc, object self_731091, object r_73434) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732504;
 c_732504.tag = closureN_tag;
@@ -18253,12 +18253,12 @@ return_funcall1((closure)&c_732504,  cdr(((closureN)self_731091)->elts[2]));;
 }
 
 static void __lambda_274(int argc, object self_731092, object r_73435) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 return_funcall3(  cell_get(((closureN)self_731092)->elts[1]),  ((closureN)self_731092)->elts[0], ((closureN)self_731092)->elts[2], r_73435);; 
 }
 
 static void __lambda_273(int argc, object self_731093, object r_73431) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732452;
 c_732452.tag = closureN_tag;
@@ -18274,7 +18274,7 @@ return_funcall1((closure)&c_732452,  Cyc_set_car(((closureN)self_731093)->elts[2
 }
 
 static void __lambda_272(int argc, object self_731094, object r_73424) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732454;
 c_732454.tag = closureN_tag;
@@ -18289,7 +18289,7 @@ return_funcall3(  __glo_map,  &c_732454, __glo_analyze, ((closureN)self_731094)-
 }
 
 static void __lambda_271(int argc, object self_731095, object r_73425) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732456;
 c_732456.tag = closureN_tag;
@@ -18304,7 +18304,7 @@ return_funcall1((closure)&c_732456,  r_73425);;
 }
 
 static void __lambda_270(int argc, object self_731096, object procs_7316) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732458;
 c_732458.tag = closureN_tag;
@@ -18329,7 +18329,7 @@ return_funcall1((closure)&c_732458,  &c_732469);;
 }
 
 static void __lambda_269(int argc, object self_731097, object r_73426) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732471;
 c_732471.tag = closureN_tag;
@@ -18345,7 +18345,7 @@ return_funcall1((closure)&c_732471,  car(((closureN)self_731097)->elts[2]));;
 }
 
 static void __lambda_268(int argc, object self_731098, object r_73427) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732473;
 c_732473.tag = closureN_tag;
@@ -18361,12 +18361,12 @@ return_funcall1((closure)&c_732473,  cdr(((closureN)self_731098)->elts[2]));;
 }
 
 static void __lambda_267(int argc, object self_731099, object r_73428) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 return_funcall3(  cell_get(((closureN)self_731099)->elts[1]),  ((closureN)self_731099)->elts[0], ((closureN)self_731099)->elts[2], r_73428);; 
 }
 
 static void __lambda_266(int argc, object self_731100, object k_73429) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 
 closureN_type c_732460;
 c_732460.tag = closureN_tag;
@@ -18380,7 +18380,7 @@ return_funcall1((closure)&c_732460,  Cyc_is_null(((closureN)self_731100)->elts[0
 }
 
 static void __lambda_265(int argc, object self_731101, object r_73430) {
-  Cyc_st_add("scheme/eval.c:analyze-sequence");
+  Cyc_st_add("scheme/eval.sld:analyze-sequence");
 if( !eq(boolean_f, r_73430) ){ 
   
 make_string(c_732463, "Empty sequence -- ANALYZE");
@@ -18391,7 +18391,7 @@ return_funcall2(  __glo_error,  ((closureN)self_731101)->elts[0], &c_732463);
 }
 
 static void __lambda_264(int argc, closure _,object k_73443, object exp_7322) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 
 closureN_type c_732421;
 c_732421.tag = closureN_tag;
@@ -18406,7 +18406,7 @@ return_funcall2(  __glo_lambda_91parameters,  &c_732421, exp_7322);;
 }
 
 static void __lambda_263(int argc, object self_731102, object r_73444) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 
 closureN_type c_732423;
 c_732423.tag = closureN_tag;
@@ -18421,7 +18421,7 @@ return_funcall2(  __glo_lambda_91body,  &c_732423, ((closureN)self_731102)->elts
 }
 
 static void __lambda_262(int argc, object self_731103, object r_73447) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 
 closureN_type c_732425;
 c_732425.tag = closureN_tag;
@@ -18436,7 +18436,7 @@ return_funcall2(  __glo_analyze_91sequence,  &c_732425, r_73447);;
 }
 
 static void __lambda_261(int argc, object self_731104, object r_73445) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 
 closureN_type c_732427;
 c_732427.tag = closureN_tag;
@@ -18450,7 +18450,7 @@ return_funcall2((closure)&c_732427,  ((closureN)self_731104)->elts[1], r_73445);
 }
 
 static void __lambda_260(int argc, object self_731105, object vars_7324, object bproc_7323) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 
 closureN_type c_732430;
 c_732430.tag = closureN_tag;
@@ -18465,12 +18465,12 @@ return_funcall1(  ((closureN)self_731105)->elts[0],  &c_732430);;
 }
 
 static void __lambda_259(int argc, object self_731106, object k_73446, object env_7325) {
-  Cyc_st_add("scheme/eval.c:analyze-lambda");
+  Cyc_st_add("scheme/eval.sld:analyze-lambda");
 return_funcall4(  __glo_make_91procedure,  k_73446, ((closureN)self_731106)->elts[1], ((closureN)self_731106)->elts[0], env_7325);; 
 }
 
 static void __lambda_258(int argc, closure _,object k_73450, object exp_7326) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732388;
 c_732388.tag = closureN_tag;
@@ -18485,7 +18485,7 @@ return_funcall2(  __glo_if_91predicate,  &c_732388, exp_7326);;
 }
 
 static void __lambda_257(int argc, object self_731107, object r_73458) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732390;
 c_732390.tag = closureN_tag;
@@ -18500,7 +18500,7 @@ return_funcall2(  __glo_analyze,  &c_732390, r_73458);;
 }
 
 static void __lambda_256(int argc, object self_731108, object r_73451) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732392;
 c_732392.tag = closureN_tag;
@@ -18516,7 +18516,7 @@ return_funcall2(  __glo_if_91consequent,  &c_732392, ((closureN)self_731108)->el
 }
 
 static void __lambda_255(int argc, object self_731109, object r_73457) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732394;
 c_732394.tag = closureN_tag;
@@ -18532,7 +18532,7 @@ return_funcall2(  __glo_analyze,  &c_732394, r_73457);;
 }
 
 static void __lambda_254(int argc, object self_731110, object r_73452) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732396;
 c_732396.tag = closureN_tag;
@@ -18548,7 +18548,7 @@ return_funcall2(  __glo_if_91alternative,  &c_732396, ((closureN)self_731110)->e
 }
 
 static void __lambda_253(int argc, object self_731111, object r_73456) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732398;
 c_732398.tag = closureN_tag;
@@ -18564,7 +18564,7 @@ return_funcall2(  __glo_analyze,  &c_732398, r_73456);;
 }
 
 static void __lambda_252(int argc, object self_731112, object r_73453) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732400;
 c_732400.tag = closureN_tag;
@@ -18578,7 +18578,7 @@ return_funcall3((closure)&c_732400,  ((closureN)self_731112)->elts[1], ((closure
 }
 
 static void __lambda_251(int argc, object self_731113, object pproc_7329, object cproc_7328, object aproc_7327) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732403;
 c_732403.tag = closureN_tag;
@@ -18594,7 +18594,7 @@ return_funcall1(  ((closureN)self_731113)->elts[0],  &c_732403);;
 }
 
 static void __lambda_250(int argc, object self_731114, object k_73454, object env_7330) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 
 closureN_type c_732406;
 c_732406.tag = closureN_tag;
@@ -18611,7 +18611,7 @@ return_funcall2(  ((closureN)self_731114)->elts[2],  &c_732406, env_7330);;
 }
 
 static void __lambda_249(int argc, object self_731115, object r_73455) {
-  Cyc_st_add("scheme/eval.c:analyze-if");
+  Cyc_st_add("scheme/eval.sld:analyze-if");
 if( !eq(boolean_f, r_73455) ){ 
   return_funcall2(  ((closureN)self_731115)->elts[1],  ((closureN)self_731115)->elts[3], ((closureN)self_731115)->elts[2]);
 } else { 
@@ -18620,7 +18620,7 @@ if( !eq(boolean_f, r_73455) ){
 }
 
 static void __lambda_248(int argc, closure _,object k_73461, object exp_7331) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732365;
 c_732365.tag = closureN_tag;
@@ -18635,7 +18635,7 @@ return_funcall2(  __glo_definition_91variable,  &c_732365, exp_7331);;
 }
 
 static void __lambda_247(int argc, object self_731116, object r_73462) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732367;
 c_732367.tag = closureN_tag;
@@ -18650,7 +18650,7 @@ return_funcall2(  __glo_definition_91value,  &c_732367, ((closureN)self_731116)-
 }
 
 static void __lambda_246(int argc, object self_731117, object r_73467) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732369;
 c_732369.tag = closureN_tag;
@@ -18665,7 +18665,7 @@ return_funcall2(  __glo_analyze,  &c_732369, r_73467);;
 }
 
 static void __lambda_245(int argc, object self_731118, object r_73463) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732371;
 c_732371.tag = closureN_tag;
@@ -18679,7 +18679,7 @@ return_funcall2((closure)&c_732371,  ((closureN)self_731118)->elts[1], r_73463);
 }
 
 static void __lambda_244(int argc, object self_731119, object var_7333, object vproc_7332) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732374;
 c_732374.tag = closureN_tag;
@@ -18694,7 +18694,7 @@ return_funcall1(  ((closureN)self_731119)->elts[0],  &c_732374);;
 }
 
 static void __lambda_243(int argc, object self_731120, object k_73464, object env_7334) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732377;
 c_732377.tag = closureN_tag;
@@ -18710,7 +18710,7 @@ return_funcall2(  ((closureN)self_731120)->elts[1],  &c_732377, env_7334);;
 }
 
 static void __lambda_242(int argc, object self_731121, object r_73466) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 
 closureN_type c_732379;
 c_732379.tag = closureN_tag;
@@ -18724,12 +18724,12 @@ return_funcall4(  __glo_define_91variable_67,  &c_732379, ((closureN)self_731121
 }
 
 static void __lambda_241(int argc, object self_731122, object r_73465) {
-  Cyc_st_add("scheme/eval.c:analyze-definition");
+  Cyc_st_add("scheme/eval.sld:analyze-definition");
 return_funcall1(  ((closureN)self_731122)->elts[0],  quote_ok);; 
 }
 
 static void __lambda_240(int argc, closure _,object k_73470, object exp_7335) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732342;
 c_732342.tag = closureN_tag;
@@ -18744,7 +18744,7 @@ return_funcall2(  __glo_assignment_91variable,  &c_732342, exp_7335);;
 }
 
 static void __lambda_239(int argc, object self_731123, object r_73471) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732344;
 c_732344.tag = closureN_tag;
@@ -18759,7 +18759,7 @@ return_funcall2(  __glo_assignment_91value,  &c_732344, ((closureN)self_731123)-
 }
 
 static void __lambda_238(int argc, object self_731124, object r_73476) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732346;
 c_732346.tag = closureN_tag;
@@ -18774,7 +18774,7 @@ return_funcall2(  __glo_analyze,  &c_732346, r_73476);;
 }
 
 static void __lambda_237(int argc, object self_731125, object r_73472) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732348;
 c_732348.tag = closureN_tag;
@@ -18788,7 +18788,7 @@ return_funcall2((closure)&c_732348,  ((closureN)self_731125)->elts[1], r_73472);
 }
 
 static void __lambda_236(int argc, object self_731126, object var_7337, object vproc_7336) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732351;
 c_732351.tag = closureN_tag;
@@ -18803,7 +18803,7 @@ return_funcall1(  ((closureN)self_731126)->elts[0],  &c_732351);;
 }
 
 static void __lambda_235(int argc, object self_731127, object k_73473, object env_7338) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732354;
 c_732354.tag = closureN_tag;
@@ -18819,7 +18819,7 @@ return_funcall2(  ((closureN)self_731127)->elts[1],  &c_732354, env_7338);;
 }
 
 static void __lambda_234(int argc, object self_731128, object r_73475) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 
 closureN_type c_732356;
 c_732356.tag = closureN_tag;
@@ -18833,12 +18833,12 @@ return_funcall4(  __glo_set_91variable_91value_67,  &c_732356, ((closureN)self_7
 }
 
 static void __lambda_233(int argc, object self_731129, object r_73474) {
-  Cyc_st_add("scheme/eval.c:analyze-assignment");
+  Cyc_st_add("scheme/eval.sld:analyze-assignment");
 return_funcall1(  ((closureN)self_731129)->elts[0],  quote_ok);; 
 }
 
 static void __lambda_232(int argc, closure _,object k_73479, object exp_7339) {
-  Cyc_st_add("scheme/eval.c:analyze-variable");
+  Cyc_st_add("scheme/eval.sld:analyze-variable");
 
 closureN_type c_732337;
 c_732337.tag = closureN_tag;
@@ -18852,19 +18852,19 @@ return_funcall1(  k_73479,  &c_732337);;
 }
 
 static void __lambda_231(int argc, object self_731130, object k_73480, object env_7340) {
-  Cyc_st_add("scheme/eval.c:analyze-variable");
+  Cyc_st_add("scheme/eval.sld:analyze-variable");
 return_funcall3(  __glo_lookup_91variable_91value,  k_73480, ((closureN)self_731130)->elts[0], env_7340);; 
 }
 
 static void __lambda_230(int argc, closure _,object k_73483, object exp_7341) {
-  Cyc_st_add("scheme/eval.c:analyze-quasiquoted");
+  Cyc_st_add("scheme/eval.sld:analyze-quasiquoted");
 
 make_string(c_732334, "quasiquote not supported yet by eval");
 return_funcall2(  __glo_error,  k_73483, &c_732334);; 
 }
 
 static void __lambda_229(int argc, closure _,object k_73486, object exp_7342) {
-  Cyc_st_add("scheme/eval.c:analyze-quoted");
+  Cyc_st_add("scheme/eval.sld:analyze-quoted");
 
 closureN_type c_732322;
 c_732322.tag = closureN_tag;
@@ -18878,7 +18878,7 @@ return_funcall1((closure)&c_732322,  cadr(exp_7342));;
 }
 
 static void __lambda_228(int argc, object self_731131, object r_73487) {
-  Cyc_st_add("scheme/eval.c:analyze-quoted");
+  Cyc_st_add("scheme/eval.sld:analyze-quoted");
 
 closureN_type c_732324;
 c_732324.tag = closureN_tag;
@@ -18892,7 +18892,7 @@ return_funcall1((closure)&c_732324,  r_73487);;
 }
 
 static void __lambda_227(int argc, object self_731132, object qval_7343) {
-  Cyc_st_add("scheme/eval.c:analyze-quoted");
+  Cyc_st_add("scheme/eval.sld:analyze-quoted");
 
 closureN_type c_732327;
 c_732327.tag = closureN_tag;
@@ -18906,12 +18906,12 @@ return_funcall1(  ((closureN)self_731132)->elts[0],  &c_732327);;
 }
 
 static void __lambda_226(int argc, object self_731133, object k_73488, object env_7344) {
-  Cyc_st_add("scheme/eval.c:analyze-quoted");
+  Cyc_st_add("scheme/eval.sld:analyze-quoted");
 return_funcall1(  k_73488,  ((closureN)self_731133)->elts[0]);; 
 }
 
 static void __lambda_225(int argc, closure _,object k_73491, object exp_7345) {
-  Cyc_st_add("scheme/eval.c:analyze-self-evaluating");
+  Cyc_st_add("scheme/eval.sld:analyze-self-evaluating");
 
 closureN_type c_732317;
 c_732317.tag = closureN_tag;
@@ -18925,12 +18925,12 @@ return_funcall1(  k_73491,  &c_732317);;
 }
 
 static void __lambda_224(int argc, object self_731134, object k_73492, object env_7346) {
-  Cyc_st_add("scheme/eval.c:analyze-self-evaluating");
+  Cyc_st_add("scheme/eval.sld:analyze-self-evaluating");
 return_funcall1(  k_73492,  ((closureN)self_731134)->elts[0]);; 
 }
 
 static void __lambda_223(int argc, closure _,object k_73495, object exp_7347) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732174;
 c_732174.tag = closureN_tag;
@@ -18945,7 +18945,7 @@ return_funcall2(  __glo_self_91evaluating_127,  &c_732174, exp_7347);;
 }
 
 static void __lambda_222(int argc, object self_731135, object r_73496) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73496) ){ 
   return_funcall2(  __glo_analyze_91self_91evaluating,  ((closureN)self_731135)->elts[1], ((closureN)self_731135)->elts[0]);
 } else { 
@@ -18964,7 +18964,7 @@ return_funcall2(  __glo_quoted_127,  &c_732179, ((closureN)self_731135)->elts[0]
 }
 
 static void __lambda_221(int argc, object self_731136, object r_73497) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73497) ){ 
   return_funcall2(  __glo_analyze_91quoted,  ((closureN)self_731136)->elts[1], ((closureN)self_731136)->elts[0]);
 } else { 
@@ -18983,7 +18983,7 @@ return_funcall2(  __glo_quasiquoted_127,  &c_732184, ((closureN)self_731136)->el
 }
 
 static void __lambda_220(int argc, object self_731137, object r_73498) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73498) ){ 
   return_funcall2(  __glo_analyze_91quasiquoted,  ((closureN)self_731137)->elts[1], ((closureN)self_731137)->elts[0]);
 } else { 
@@ -19002,7 +19002,7 @@ return_funcall2(  __glo_variable_127,  &c_732189, ((closureN)self_731137)->elts[
 }
 
 static void __lambda_219(int argc, object self_731138, object r_73499) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73499) ){ 
   return_funcall2(  __glo_analyze_91variable,  ((closureN)self_731138)->elts[1], ((closureN)self_731138)->elts[0]);
 } else { 
@@ -19021,7 +19021,7 @@ return_funcall2(  __glo_assignment_127,  &c_732194, ((closureN)self_731138)->elt
 }
 
 static void __lambda_218(int argc, object self_731139, object r_73500) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73500) ){ 
   return_funcall2(  __glo_analyze_91assignment,  ((closureN)self_731139)->elts[1], ((closureN)self_731139)->elts[0]);
 } else { 
@@ -19040,7 +19040,7 @@ return_funcall2(  __glo_definition_127,  &c_732199, ((closureN)self_731139)->elt
 }
 
 static void __lambda_217(int argc, object self_731140, object r_73501) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73501) ){ 
   return_funcall2(  __glo_analyze_91definition,  ((closureN)self_731140)->elts[1], ((closureN)self_731140)->elts[0]);
 } else { 
@@ -19059,7 +19059,7 @@ return_funcall2(  __glo_if_127,  &c_732204, ((closureN)self_731140)->elts[0]);}
 }
 
 static void __lambda_216(int argc, object self_731141, object r_73502) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73502) ){ 
   return_funcall2(  __glo_analyze_91if,  ((closureN)self_731141)->elts[1], ((closureN)self_731141)->elts[0]);
 } else { 
@@ -19078,7 +19078,7 @@ return_funcall2(  __glo_lambda_127,  &c_732209, ((closureN)self_731141)->elts[0]
 }
 
 static void __lambda_215(int argc, object self_731142, object r_73503) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73503) ){ 
   return_funcall2(  __glo_analyze_91lambda,  ((closureN)self_731142)->elts[1], ((closureN)self_731142)->elts[0]);
 } else { 
@@ -19097,7 +19097,7 @@ return_funcall1((closure)&c_732214,  quote_let);}
 }
 
 static void __lambda_214(int argc, object self_731143, object r_73523) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732216;
 c_732216.tag = closureN_tag;
@@ -19112,7 +19112,7 @@ return_funcall3(  __glo_tagged_91list_127,  &c_732216, r_73523, ((closureN)self_
 }
 
 static void __lambda_213(int argc, object self_731144, object r_73504) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73504) ){ 
   
 closureN_type c_732218;
@@ -19141,7 +19141,7 @@ return_funcall2(  __glo_begin_127,  &c_732264, ((closureN)self_731144)->elts[0])
 }
 
 static void __lambda_212(int argc, object self_731145, object r_73514) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73514) ){ 
   
 closureN_type c_732266;
@@ -19169,7 +19169,7 @@ return_funcall2(  __glo_cond_127,  &c_732271, ((closureN)self_731145)->elts[0]);
 }
 
 static void __lambda_211(int argc, object self_731146, object r_73516) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73516) ){ 
   
 closureN_type c_732273;
@@ -19197,7 +19197,7 @@ return_funcall2(  __glo_compound_91procedure_127,  &c_732278, ((closureN)self_73
 }
 
 static void __lambda_210(int argc, object self_731147, object r_73518) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73518) ){ 
   
 closureN_type c_732281;
@@ -19225,7 +19225,7 @@ return_funcall1((closure)&c_732285,  Cyc_is_procedure(((closureN)self_731147)->e
 }
 
 static void __lambda_209(int argc, object self_731148, object r_73520) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73520) ){ 
   
 closureN_type c_732288;
@@ -19253,7 +19253,7 @@ return_funcall2(  __glo_application_127,  &c_732292, ((closureN)self_731148)->el
 }
 
 static void __lambda_208(int argc, object self_731149, object r_73522) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 if( !eq(boolean_f, r_73522) ){ 
   return_funcall2(  __glo_analyze_91application,  ((closureN)self_731149)->elts[1], ((closureN)self_731149)->elts[0]);
 } else { 
@@ -19264,27 +19264,27 @@ return_funcall3(  __glo_error,  ((closureN)self_731149)->elts[1], &c_732298, ((c
 }
 
 static void __lambda_207(int argc, object self_731150, object k_73521, object env_7348) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 return_funcall1(  k_73521,  ((closureN)self_731150)->elts[0]);; 
 }
 
 static void __lambda_206(int argc, object self_731151, object k_73519, object env_7349) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 return_funcall1(  k_73519,  ((closureN)self_731151)->elts[0]);; 
 }
 
 static void __lambda_205(int argc, object self_731152, object r_73517) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 return_funcall2(  __glo_analyze,  ((closureN)self_731152)->elts[0], r_73517);; 
 }
 
 static void __lambda_204(int argc, object self_731153, object r_73515) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 return_funcall2(  __glo_analyze_91sequence,  ((closureN)self_731153)->elts[0], r_73515);; 
 }
 
 static void __lambda_203(int argc, object self_731154, object r_73513) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732220;
 c_732220.tag = closureN_tag;
@@ -19299,7 +19299,7 @@ return_funcall3(  __glo_map,  &c_732220, primitive_car, r_73513);;
 }
 
 static void __lambda_202(int argc, object self_731155, object r_73505) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732222;
 c_732222.tag = closureN_tag;
@@ -19315,7 +19315,7 @@ return_funcall1((closure)&c_732222,  cadr(((closureN)self_731155)->elts[0]));;
 }
 
 static void __lambda_201(int argc, object self_731156, object r_73512) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732224;
 c_732224.tag = closureN_tag;
@@ -19331,7 +19331,7 @@ return_funcall3(  __glo_map,  &c_732224, primitive_cadr, r_73512);;
 }
 
 static void __lambda_200(int argc, object self_731157, object r_73506) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732226;
 c_732226.tag = closureN_tag;
@@ -19347,7 +19347,7 @@ return_funcall1((closure)&c_732226,  cddr(((closureN)self_731157)->elts[0]));;
 }
 
 static void __lambda_199(int argc, object self_731158, object r_73507) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732228;
 c_732228.tag = closureN_tag;
@@ -19361,7 +19361,7 @@ return_funcall3((closure)&c_732228,  ((closureN)self_731158)->elts[1], ((closure
 }
 
 static void __lambda_198(int argc, object self_731159, object vars_7352, object args_7351, object body_7350) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732230;
 c_732230.tag = closureN_tag;
@@ -19378,7 +19378,7 @@ return_funcall1((closure)&c_732230,  quote_lambda);;
 }
 
 static void __lambda_197(int argc, object self_731160, object r_73510) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732232;
 c_732232.tag = closureN_tag;
@@ -19396,7 +19396,7 @@ return_funcall1((closure)&c_732232,  &c_732249);;
 }
 
 static void __lambda_196(int argc, object self_731161, object r_73511) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732234;
 c_732234.tag = closureN_tag;
@@ -19413,7 +19413,7 @@ return_funcall1((closure)&c_732234,  &c_732245);;
 }
 
 static void __lambda_195(int argc, object self_731162, object r_73509) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 
 closureN_type c_732236;
 c_732236.tag = closureN_tag;
@@ -19429,12 +19429,12 @@ return_funcall1((closure)&c_732236,  &c_732241);;
 }
 
 static void __lambda_194(int argc, object self_731163, object r_73508) {
-  Cyc_st_add("scheme/eval.c:analyze");
+  Cyc_st_add("scheme/eval.sld:analyze");
 return_funcall2(  __glo_analyze,  ((closureN)self_731163)->elts[0], r_73508);; 
 }
 
 static void __lambda_193(int argc, closure _,object k_73526, object clauses_7353) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732123;
 c_732123.tag = closureN_tag;
@@ -19449,7 +19449,7 @@ return_funcall1((closure)&c_732123,  Cyc_is_null(clauses_7353));;
 }
 
 static void __lambda_192(int argc, object self_731164, object r_73527) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 if( !eq(boolean_f, r_73527) ){ 
   return_funcall1(  ((closureN)self_731164)->elts[1],  boolean_f);
 } else { 
@@ -19468,7 +19468,7 @@ return_funcall1((closure)&c_732127,  car(((closureN)self_731164)->elts[0]));}
 }
 
 static void __lambda_191(int argc, object self_731165, object r_73528) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732129;
 c_732129.tag = closureN_tag;
@@ -19484,7 +19484,7 @@ return_funcall1((closure)&c_732129,  cdr(((closureN)self_731165)->elts[0]));;
 }
 
 static void __lambda_190(int argc, object self_731166, object r_73529) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732131;
 c_732131.tag = closureN_tag;
@@ -19499,7 +19499,7 @@ return_funcall2((closure)&c_732131,  ((closureN)self_731166)->elts[2], r_73529);
 }
 
 static void __lambda_189(int argc, object self_731167, object first_7355, object rest_7354) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732133;
 c_732133.tag = closureN_tag;
@@ -19516,7 +19516,7 @@ return_funcall2(  __glo_cond_91else_91clause_127,  &c_732133, first_7355);;
 }
 
 static void __lambda_188(int argc, object self_731168, object r_73530) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 if( !eq(boolean_f, r_73530) ){ 
   
 closureN_type c_732135;
@@ -19547,7 +19547,7 @@ return_funcall2(  __glo_cond_91predicate,  &c_732149, ((closureN)self_731168)->e
 }
 
 static void __lambda_187(int argc, object self_731169, object r_73533) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732151;
 c_732151.tag = closureN_tag;
@@ -19563,7 +19563,7 @@ return_funcall2(  __glo_cond_91actions,  &c_732151, ((closureN)self_731169)->elt
 }
 
 static void __lambda_186(int argc, object self_731170, object r_73536) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732153;
 c_732153.tag = closureN_tag;
@@ -19579,7 +19579,7 @@ return_funcall2(  __glo_sequence_91_125exp,  &c_732153, r_73536);;
 }
 
 static void __lambda_185(int argc, object self_731171, object r_73534) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 
 closureN_type c_732155;
 c_732155.tag = closureN_tag;
@@ -19595,12 +19595,12 @@ return_funcall2(  __glo_expand_91clauses,  &c_732155, ((closureN)self_731171)->e
 }
 
 static void __lambda_184(int argc, object self_731172, object r_73535) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 return_funcall4(  __glo_make_91if,  ((closureN)self_731172)->elts[0], ((closureN)self_731172)->elts[1], ((closureN)self_731172)->elts[2], r_73535);; 
 }
 
 static void __lambda_183(int argc, object self_731173, object r_73531) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 if( !eq(boolean_f, r_73531) ){ 
   
 closureN_type c_732137;
@@ -19620,12 +19620,12 @@ return_funcall3(  __glo_error,  ((closureN)self_731173)->elts[2], &c_732143, ((c
 }
 
 static void __lambda_182(int argc, object self_731174, object r_73532) {
-  Cyc_st_add("scheme/eval.c:expand-clauses");
+  Cyc_st_add("scheme/eval.sld:expand-clauses");
 return_funcall2(  __glo_sequence_91_125exp,  ((closureN)self_731174)->elts[0], r_73532);; 
 }
 
 static void __lambda_181(int argc, closure _,object k_73539, object exp_7356) {
-  Cyc_st_add("scheme/eval.c:cond->if");
+  Cyc_st_add("scheme/eval.sld:cond->if");
 
 closureN_type c_732118;
 c_732118.tag = closureN_tag;
@@ -19639,22 +19639,22 @@ return_funcall2(  __glo_cond_91clauses,  &c_732118, exp_7356);;
 }
 
 static void __lambda_180(int argc, object self_731175, object r_73540) {
-  Cyc_st_add("scheme/eval.c:cond->if");
+  Cyc_st_add("scheme/eval.sld:cond->if");
 return_funcall2(  __glo_expand_91clauses,  ((closureN)self_731175)->elts[0], r_73540);; 
 }
 
 static void __lambda_179(int argc, closure _,object k_73543, object clause_7357) {
-  Cyc_st_add("scheme/eval.c:cond-actions");
+  Cyc_st_add("scheme/eval.sld:cond-actions");
 return_funcall1(  k_73543,  cdr(clause_7357));; 
 }
 
 static void __lambda_178(int argc, closure _,object k_73546, object clause_7358) {
-  Cyc_st_add("scheme/eval.c:cond-predicate");
+  Cyc_st_add("scheme/eval.sld:cond-predicate");
 return_funcall1(  k_73546,  car(clause_7358));; 
 }
 
 static void __lambda_177(int argc, closure _,object k_73549, object clause_7359) {
-  Cyc_st_add("scheme/eval.c:cond-else-clause?");
+  Cyc_st_add("scheme/eval.sld:cond-else-clause?");
 
 closureN_type c_732100;
 c_732100.tag = closureN_tag;
@@ -19668,7 +19668,7 @@ return_funcall2(  __glo_cond_91predicate,  &c_732100, clause_7359);;
 }
 
 static void __lambda_176(int argc, object self_731176, object r_73550) {
-  Cyc_st_add("scheme/eval.c:cond-else-clause?");
+  Cyc_st_add("scheme/eval.sld:cond-else-clause?");
 
 closureN_type c_732102;
 c_732102.tag = closureN_tag;
@@ -19683,17 +19683,17 @@ return_funcall1((closure)&c_732102,  quote__else);;
 }
 
 static void __lambda_175(int argc, object self_731177, object r_73551) {
-  Cyc_st_add("scheme/eval.c:cond-else-clause?");
+  Cyc_st_add("scheme/eval.sld:cond-else-clause?");
 return_funcall1(  ((closureN)self_731177)->elts[0],  Cyc_eq(((closureN)self_731177)->elts[1], r_73551));; 
 }
 
 static void __lambda_174(int argc, closure _,object k_73554, object exp_7360) {
-  Cyc_st_add("scheme/eval.c:cond-clauses");
+  Cyc_st_add("scheme/eval.sld:cond-clauses");
 return_funcall1(  k_73554,  cdr(exp_7360));; 
 }
 
 static void __lambda_173(int argc, closure _,object k_73557, object exp_7361) {
-  Cyc_st_add("scheme/eval.c:cond?");
+  Cyc_st_add("scheme/eval.sld:cond?");
 
 closureN_type c_732090;
 c_732090.tag = closureN_tag;
@@ -19708,12 +19708,12 @@ return_funcall1((closure)&c_732090,  quote_cond);;
 }
 
 static void __lambda_172(int argc, object self_731178, object r_73558) {
-  Cyc_st_add("scheme/eval.c:cond?");
+  Cyc_st_add("scheme/eval.sld:cond?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731178)->elts[1], r_73558, ((closureN)self_731178)->elts[0]);; 
 }
 
 static void __lambda_171(int argc, closure _,object k_73563) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732050;
 c_732050.tag = closureN_tag;
@@ -19727,7 +19727,7 @@ return_funcall1(  __glo_primitive_91procedure_91names,  &c_732050);;
 }
 
 static void __lambda_170(int argc, object self_731179, object r_73573) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732052;
 c_732052.tag = closureN_tag;
@@ -19742,7 +19742,7 @@ return_funcall1(  __glo_primitive_91procedure_91objects,  &c_732052);;
 }
 
 static void __lambda_169(int argc, object self_731180, object r_73574) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732054;
 c_732054.tag = closureN_tag;
@@ -19756,7 +19756,7 @@ return_funcall4(  __glo_extend_91environment,  &c_732054, ((closureN)self_731180
 }
 
 static void __lambda_168(int argc, object self_731181, object r_73564) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732056;
 c_732056.tag = closureN_tag;
@@ -19770,7 +19770,7 @@ return_funcall1((closure)&c_732056,  r_73564);;
 }
 
 static void __lambda_167(int argc, object self_731182, object initial_91env_7362) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732058;
 c_732058.tag = closureN_tag;
@@ -19787,12 +19787,12 @@ return_funcall1((closure)&c_732058,  &c_732083);;
 }
 
 static void __lambda_166(int argc, object self_731183, object k_73572, object v_7364) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 return_funcall1(  k_73572,  car(v_7364));; 
 }
 
 static void __lambda_165(int argc, object self_731184, object r_73570) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732060;
 c_732060.tag = closureN_tag;
@@ -19808,7 +19808,7 @@ return_funcall1((closure)&c_732060,  Cyc_get_global_variables());;
 }
 
 static void __lambda_164(int argc, object self_731185, object r_73571) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732062;
 c_732062.tag = closureN_tag;
@@ -19823,7 +19823,7 @@ return_funcall3(  __glo_map,  &c_732062, ((closureN)self_731185)->elts[2], r_735
 }
 
 static void __lambda_163(int argc, object self_731186, object r_73565) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732064;
 c_732064.tag = closureN_tag;
@@ -19841,12 +19841,12 @@ return_funcall1((closure)&c_732064,  &c_732076);;
 }
 
 static void __lambda_162(int argc, object self_731187, object k_73569, object v_7363) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 return_funcall1(  k_73569,  cdr(v_7363));; 
 }
 
 static void __lambda_161(int argc, object self_731188, object r_73567) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732066;
 c_732066.tag = closureN_tag;
@@ -19863,7 +19863,7 @@ return_funcall1((closure)&c_732066,  Cyc_get_global_variables());;
 }
 
 static void __lambda_160(int argc, object self_731189, object r_73568) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 
 closureN_type c_732068;
 c_732068.tag = closureN_tag;
@@ -19879,12 +19879,12 @@ return_funcall3(  __glo_map,  &c_732068, ((closureN)self_731189)->elts[3], r_735
 }
 
 static void __lambda_159(int argc, object self_731190, object r_73566) {
-  Cyc_st_add("scheme/eval.c:setup-environment");
+  Cyc_st_add("scheme/eval.sld:setup-environment");
 return_funcall4(  __glo_extend_91environment,  ((closureN)self_731190)->elts[1], ((closureN)self_731190)->elts[2], r_73566, ((closureN)self_731190)->elts[0]);; 
 }
 
 static void __lambda_158(int argc, closure _,object k_73577, object proc_7366, object args_7365) {
-  Cyc_st_add("scheme/eval.c:apply-primitive-procedure");
+  Cyc_st_add("scheme/eval.sld:apply-primitive-procedure");
 
 closureN_type c_732041;
 c_732041.tag = closureN_tag;
@@ -19899,14 +19899,14 @@ return_funcall2(  __glo_primitive_91implementation,  &c_732041, proc_7366);;
 }
 
 static void __lambda_157(int argc, object self_731191, object r_73578) {
-  Cyc_st_add("scheme/eval.c:apply-primitive-procedure");
+  Cyc_st_add("scheme/eval.sld:apply-primitive-procedure");
 
 object c_732046 = apply(  ((closureN)self_731191)->elts[1], r_73578, ((closureN)self_731191)->elts[0]);
 return_funcall1(  ((closureN)self_731191)->elts[1],  c_732046);; 
 }
 
 static void __lambda_156(int argc, closure _,object k_73581) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-objects");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-objects");
 
 closureN_type c_732025;
 c_732025.tag = closureN_tag;
@@ -19922,7 +19922,7 @@ return_funcall1((closure)&c_732025,  &c_732028);;
 }
 
 static void __lambda_155(int argc, object self_731192, object k_73583, object proc_7367) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-objects");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-objects");
 
 closureN_type c_732030;
 c_732030.tag = closureN_tag;
@@ -19937,7 +19937,7 @@ return_funcall1((closure)&c_732030,  quote_primitive);;
 }
 
 static void __lambda_154(int argc, object self_731193, object r_73584) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-objects");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-objects");
 
 closureN_type c_732032;
 c_732032.tag = closureN_tag;
@@ -19952,27 +19952,27 @@ return_funcall1((closure)&c_732032,  cadr(((closureN)self_731193)->elts[1]));;
 }
 
 static void __lambda_153(int argc, object self_731194, object r_73585) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-objects");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-objects");
 return_funcall3(  __glo__list,  ((closureN)self_731194)->elts[0], ((closureN)self_731194)->elts[1], r_73585);; 
 }
 
 static void __lambda_152(int argc, object self_731195, object r_73582) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-objects");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-objects");
 return_funcall3(  __glo_map,  ((closureN)self_731195)->elts[0], r_73582, __glo_primitive_91procedures);; 
 }
 
 static void __lambda_151(int argc, closure _,object k_73588) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure-names");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure-names");
 return_funcall3(  __glo_map,  k_73588, primitive_car, __glo_primitive_91procedures);; 
 }
 
 static void __lambda_150(int argc, closure _,object k_73593, object proc_7368) {
-  Cyc_st_add("scheme/eval.c:primitive-implementation");
+  Cyc_st_add("scheme/eval.sld:primitive-implementation");
 return_funcall1(  k_73593,  cadr(proc_7368));; 
 }
 
 static void __lambda_149(int argc, closure _,object k_73596, object proc_7369) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure?");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure?");
 
 closureN_type c_732013;
 c_732013.tag = closureN_tag;
@@ -19987,12 +19987,12 @@ return_funcall1((closure)&c_732013,  quote_primitive);;
 }
 
 static void __lambda_148(int argc, object self_731196, object r_73597) {
-  Cyc_st_add("scheme/eval.c:primitive-procedure?");
+  Cyc_st_add("scheme/eval.sld:primitive-procedure?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731196)->elts[0], r_73597, ((closureN)self_731196)->elts[1]);; 
 }
 
 static void __lambda_147(int argc, closure _,object k_73600, object var_7372, object val_7371, object env_7370) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731937;
 c_731937.tag = closureN_tag;
@@ -20009,7 +20009,7 @@ return_funcall1((closure)&c_731937,  boolean_f);;
 }
 
 static void __lambda_146(int argc, object self_731197, object scan_7373) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731939;
 c_731939.tag = closureN_tag;
@@ -20025,7 +20025,7 @@ return_funcall2(  __glo_first_91frame,  &c_731939, ((closureN)self_731197)->elts
 }
 
 static void __lambda_145(int argc, object self_731198, object r_73601) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731941;
 c_731941.tag = closureN_tag;
@@ -20041,7 +20041,7 @@ return_funcall1((closure)&c_731941,  r_73601);;
 }
 
 static void __lambda_144(int argc, object self_731199, object frame_7374) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731943;
 c_731943.tag = closureN_tag;
@@ -20058,7 +20058,7 @@ return_funcall1((closure)&c_731943,  boolean_f);;
 }
 
 static void __lambda_143(int argc, object self_731200, object scan_7375) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731945;
 c_731945.tag = closureN_tag;
@@ -20077,7 +20077,7 @@ return_funcall1((closure)&c_731945,  &c_732009);;
 }
 
 static void __lambda_142(int argc, object self_731201, object scan_7375) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731947;
 c_731947.tag = closureN_tag;
@@ -20105,7 +20105,7 @@ return_funcall1((closure)&c_731947,  &c_731965);;
 }
 
 static void __lambda_141(int argc, object self_731202, object k_73606, object vars_7377, object vals_7376) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731967;
 c_731967.tag = closureN_tag;
@@ -20125,7 +20125,7 @@ return_funcall1((closure)&c_731967,  Cyc_is_null(vars_7377));;
 }
 
 static void __lambda_140(int argc, object self_731203, object r_73607) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 if( !eq(boolean_f, r_73607) ){ 
   return_funcall4(  __glo_add_91binding_91to_91frame_67,  ((closureN)self_731203)->elts[1], ((closureN)self_731203)->elts[5], ((closureN)self_731203)->elts[3], ((closureN)self_731203)->elts[0]);
 } else { 
@@ -20148,7 +20148,7 @@ return_funcall1((closure)&c_731974,  car(((closureN)self_731203)->elts[6]));}
 }
 
 static void __lambda_139(int argc, object self_731204, object r_73611) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731976;
 c_731976.tag = closureN_tag;
@@ -20166,7 +20166,7 @@ return_funcall1((closure)&c_731976,  Cyc_eq(((closureN)self_731204)->elts[4], r_
 }
 
 static void __lambda_138(int argc, object self_731205, object r_73608) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 if( !eq(boolean_f, r_73608) ){ 
   return_funcall1(  ((closureN)self_731205)->elts[0],  Cyc_set_car(((closureN)self_731205)->elts[3], ((closureN)self_731205)->elts[2]));
 } else { 
@@ -20186,7 +20186,7 @@ return_funcall1((closure)&c_731984,  cdr(((closureN)self_731205)->elts[4]));}
 }
 
 static void __lambda_137(int argc, object self_731206, object r_73609) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731986;
 c_731986.tag = closureN_tag;
@@ -20202,12 +20202,12 @@ return_funcall1((closure)&c_731986,  cdr(((closureN)self_731206)->elts[2]));;
 }
 
 static void __lambda_136(int argc, object self_731207, object r_73610) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 return_funcall3(  cell_get(((closureN)self_731207)->elts[2]),  ((closureN)self_731207)->elts[0], ((closureN)self_731207)->elts[1], r_73610);; 
 }
 
 static void __lambda_135(int argc, object self_731208, object r_73605) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731949;
 c_731949.tag = closureN_tag;
@@ -20223,7 +20223,7 @@ return_funcall1((closure)&c_731949,  Cyc_set_car(((closureN)self_731208)->elts[2
 }
 
 static void __lambda_134(int argc, object self_731209, object r_73602) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731951;
 c_731951.tag = closureN_tag;
@@ -20239,7 +20239,7 @@ return_funcall2(  __glo_frame_91variables,  &c_731951, ((closureN)self_731209)->
 }
 
 static void __lambda_133(int argc, object self_731210, object r_73603) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 
 closureN_type c_731953;
 c_731953.tag = closureN_tag;
@@ -20255,12 +20255,12 @@ return_funcall2(  __glo_frame_91values,  &c_731953, ((closureN)self_731210)->elt
 }
 
 static void __lambda_132(int argc, object self_731211, object r_73604) {
-  Cyc_st_add("scheme/eval.c:define-variable!");
+  Cyc_st_add("scheme/eval.sld:define-variable!");
 return_funcall3(  cell_get(((closureN)self_731211)->elts[2]),  ((closureN)self_731211)->elts[0], ((closureN)self_731211)->elts[1], r_73604);; 
 }
 
 static void __lambda_131(int argc, closure _,object k_73614, object var_7380, object val_7379, object env_7378) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731810;
 c_731810.tag = closureN_tag;
@@ -20277,7 +20277,7 @@ return_funcall2((closure)&c_731810,  boolean_f, boolean_f);;
 }
 
 static void __lambda_130(int argc, object self_731212, object env_91loop_7383, object scan_7382) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731812;
 c_731812.tag = closureN_tag;
@@ -20296,7 +20296,7 @@ return_funcall1((closure)&c_731812,  &c_731934);;
 }
 
 static void __lambda_129(int argc, object self_731213, object env_91loop_7383) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731814;
 c_731814.tag = closureN_tag;
@@ -20314,7 +20314,7 @@ return_funcall1((closure)&c_731814,  boolean_f);;
 }
 
 static void __lambda_128(int argc, object self_731214, object env_91loop_7384) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731816;
 c_731816.tag = closureN_tag;
@@ -20341,7 +20341,7 @@ return_funcall1((closure)&c_731816,  &c_731828);;
 }
 
 static void __lambda_127(int argc, object self_731215, object k_73617, object env_7385) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731830;
 c_731830.tag = closureN_tag;
@@ -20359,7 +20359,7 @@ return_funcall1((closure)&c_731830,  boolean_f);;
 }
 
 static void __lambda_126(int argc, object self_731216, object scan_7386) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731832;
 c_731832.tag = closureN_tag;
@@ -20379,7 +20379,7 @@ return_funcall1((closure)&c_731832,  &c_731931);;
 }
 
 static void __lambda_125(int argc, object self_731217, object scan_7386) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731834;
 c_731834.tag = closureN_tag;
@@ -20409,7 +20409,7 @@ return_funcall1((closure)&c_731834,  &c_731865);;
 }
 
 static void __lambda_124(int argc, object self_731218, object k_73624, object vars_7389, object vals_7388) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731867;
 c_731867.tag = closureN_tag;
@@ -20430,7 +20430,7 @@ return_funcall1((closure)&c_731867,  Cyc_is_null(vars_7389));;
 }
 
 static void __lambda_123(int argc, object self_731219, object r_73625) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 if( !eq(boolean_f, r_73625) ){ 
   
 closureN_type c_731869;
@@ -20463,7 +20463,7 @@ return_funcall1((closure)&c_731877,  car(((closureN)self_731219)->elts[7]));}
 }
 
 static void __lambda_122(int argc, object self_731220, object r_73633) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731879;
 c_731879.tag = closureN_tag;
@@ -20481,7 +20481,7 @@ return_funcall1((closure)&c_731879,  Cyc_eq(((closureN)self_731220)->elts[4], r_
 }
 
 static void __lambda_121(int argc, object self_731221, object r_73627) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 if( !eq(boolean_f, r_73627) ){ 
   
 closureN_type c_731881;
@@ -20512,7 +20512,7 @@ return_funcall1((closure)&c_731906,  cdr(((closureN)self_731221)->elts[4]));}
 }
 
 static void __lambda_120(int argc, object self_731222, object r_73631) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731908;
 c_731908.tag = closureN_tag;
@@ -20528,12 +20528,12 @@ return_funcall1((closure)&c_731908,  cdr(((closureN)self_731222)->elts[2]));;
 }
 
 static void __lambda_119(int argc, object self_731223, object r_73632) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 return_funcall3(  cell_get(((closureN)self_731223)->elts[2]),  ((closureN)self_731223)->elts[0], ((closureN)self_731223)->elts[1], r_73632);; 
 }
 
 static void __lambda_118(int argc, object self_731224, object r_73630) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731883;
 c_731883.tag = closureN_tag;
@@ -20549,7 +20549,7 @@ return_funcall1((closure)&c_731883,  Cyc_is_cvar(r_73630));;
 }
 
 static void __lambda_117(int argc, object self_731225, object r_73628) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 if( !eq(boolean_f, r_73628) ){ 
   
 closureN_type c_731885;
@@ -20568,17 +20568,17 @@ return_funcall1((closure)&c_731885,  car(((closureN)self_731225)->elts[2]));
 }
 
 static void __lambda_116(int argc, object self_731226, object r_73629) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 return_funcall1(  ((closureN)self_731226)->elts[0],  Cyc_set_cvar(r_73629, ((closureN)self_731226)->elts[1]));; 
 }
 
 static void __lambda_115(int argc, object self_731227, object r_73626) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 return_funcall2(  cell_get(((closureN)self_731227)->elts[0]),  ((closureN)self_731227)->elts[1], r_73626);; 
 }
 
 static void __lambda_114(int argc, object self_731228, object r_73623) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731836;
 c_731836.tag = closureN_tag;
@@ -20595,7 +20595,7 @@ return_funcall1((closure)&c_731836,  Cyc_set_car(((closureN)self_731228)->elts[2
 }
 
 static void __lambda_113(int argc, object self_731229, object r_73618) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731838;
 c_731838.tag = closureN_tag;
@@ -20612,7 +20612,7 @@ return_funcall1((closure)&c_731838,  Cyc_eq(((closureN)self_731229)->elts[0], __
 }
 
 static void __lambda_112(int argc, object self_731230, object r_73619) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 if( !eq(boolean_f, r_73619) ){ 
   
 make_string(c_731841, "Unbound variable -- SET!");
@@ -20633,7 +20633,7 @@ return_funcall2(  __glo_first_91frame,  &c_731844, ((closureN)self_731230)->elts
 }
 
 static void __lambda_111(int argc, object self_731231, object r_73620) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731846;
 c_731846.tag = closureN_tag;
@@ -20648,7 +20648,7 @@ return_funcall1((closure)&c_731846,  r_73620);;
 }
 
 static void __lambda_110(int argc, object self_731232, object frame_7387) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731848;
 c_731848.tag = closureN_tag;
@@ -20664,7 +20664,7 @@ return_funcall2(  __glo_frame_91variables,  &c_731848, frame_7387);;
 }
 
 static void __lambda_109(int argc, object self_731233, object r_73621) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731850;
 c_731850.tag = closureN_tag;
@@ -20680,12 +20680,12 @@ return_funcall2(  __glo_frame_91values,  &c_731850, ((closureN)self_731233)->elt
 }
 
 static void __lambda_108(int argc, object self_731234, object r_73622) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 return_funcall3(  cell_get(((closureN)self_731234)->elts[2]),  ((closureN)self_731234)->elts[0], ((closureN)self_731234)->elts[1], r_73622);; 
 }
 
 static void __lambda_107(int argc, object self_731235, object r_73616) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 
 closureN_type c_731818;
 c_731818.tag = closureN_tag;
@@ -20701,12 +20701,12 @@ return_funcall1((closure)&c_731818,  Cyc_set_car(((closureN)self_731235)->elts[1
 }
 
 static void __lambda_106(int argc, object self_731236, object r_73615) {
-  Cyc_st_add("scheme/eval.c:set-variable-value!");
+  Cyc_st_add("scheme/eval.sld:set-variable-value!");
 return_funcall2(  cell_get(((closureN)self_731236)->elts[1]),  ((closureN)self_731236)->elts[2], ((closureN)self_731236)->elts[0]);; 
 }
 
 static void __lambda_105(int argc, closure _,object k_73636, object var_7391, object env_7390) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731699;
 c_731699.tag = closureN_tag;
@@ -20722,7 +20722,7 @@ return_funcall2((closure)&c_731699,  boolean_f, boolean_f);;
 }
 
 static void __lambda_104(int argc, object self_731237, object env_91loop_7394, object scan_7393) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731701;
 c_731701.tag = closureN_tag;
@@ -20740,7 +20740,7 @@ return_funcall1((closure)&c_731701,  &c_731807);;
 }
 
 static void __lambda_103(int argc, object self_731238, object env_91loop_7394) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731703;
 c_731703.tag = closureN_tag;
@@ -20757,7 +20757,7 @@ return_funcall1((closure)&c_731703,  boolean_f);;
 }
 
 static void __lambda_102(int argc, object self_731239, object env_91loop_7395) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731705;
 c_731705.tag = closureN_tag;
@@ -20783,7 +20783,7 @@ return_funcall1((closure)&c_731705,  &c_731717);;
 }
 
 static void __lambda_101(int argc, object self_731240, object k_73639, object env_7396) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731719;
 c_731719.tag = closureN_tag;
@@ -20800,7 +20800,7 @@ return_funcall1((closure)&c_731719,  boolean_f);;
 }
 
 static void __lambda_100(int argc, object self_731241, object scan_7397) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731721;
 c_731721.tag = closureN_tag;
@@ -20819,7 +20819,7 @@ return_funcall1((closure)&c_731721,  &c_731804);;
 }
 
 static void __lambda_99(int argc, object self_731242, object scan_7397) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731723;
 c_731723.tag = closureN_tag;
@@ -20848,7 +20848,7 @@ return_funcall1((closure)&c_731723,  &c_731754);;
 }
 
 static void __lambda_98(int argc, object self_731243, object k_73646, object vars_73100, object vals_7399) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731756;
 c_731756.tag = closureN_tag;
@@ -20868,7 +20868,7 @@ return_funcall1((closure)&c_731756,  Cyc_is_null(vars_73100));;
 }
 
 static void __lambda_97(int argc, object self_731244, object r_73647) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 if( !eq(boolean_f, r_73647) ){ 
   
 closureN_type c_731758;
@@ -20900,7 +20900,7 @@ return_funcall1((closure)&c_731766,  car(((closureN)self_731244)->elts[6]));}
 }
 
 static void __lambda_96(int argc, object self_731245, object r_73653) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731768;
 c_731768.tag = closureN_tag;
@@ -20917,7 +20917,7 @@ return_funcall1((closure)&c_731768,  Cyc_eq(((closureN)self_731245)->elts[3], r_
 }
 
 static void __lambda_95(int argc, object self_731246, object r_73649) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 if( !eq(boolean_f, r_73649) ){ 
   
 closureN_type c_731770;
@@ -20946,7 +20946,7 @@ return_funcall1((closure)&c_731779,  cdr(((closureN)self_731246)->elts[3]));}
 }
 
 static void __lambda_94(int argc, object self_731247, object r_73651) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731781;
 c_731781.tag = closureN_tag;
@@ -20962,22 +20962,22 @@ return_funcall1((closure)&c_731781,  cdr(((closureN)self_731247)->elts[2]));;
 }
 
 static void __lambda_93(int argc, object self_731248, object r_73652) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 return_funcall3(  cell_get(((closureN)self_731248)->elts[2]),  ((closureN)self_731248)->elts[0], ((closureN)self_731248)->elts[1], r_73652);; 
 }
 
 static void __lambda_92(int argc, object self_731249, object r_73650) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 return_funcall1(  ((closureN)self_731249)->elts[0],  Cyc_get_cvar(r_73650));; 
 }
 
 static void __lambda_91(int argc, object self_731250, object r_73648) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 return_funcall2(  cell_get(((closureN)self_731250)->elts[0]),  ((closureN)self_731250)->elts[1], r_73648);; 
 }
 
 static void __lambda_90(int argc, object self_731251, object r_73645) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731725;
 c_731725.tag = closureN_tag;
@@ -20994,7 +20994,7 @@ return_funcall1((closure)&c_731725,  Cyc_set_car(((closureN)self_731251)->elts[2
 }
 
 static void __lambda_89(int argc, object self_731252, object r_73640) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731727;
 c_731727.tag = closureN_tag;
@@ -21011,7 +21011,7 @@ return_funcall1((closure)&c_731727,  Cyc_eq(((closureN)self_731252)->elts[0], __
 }
 
 static void __lambda_88(int argc, object self_731253, object r_73641) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 if( !eq(boolean_f, r_73641) ){ 
   
 make_string(c_731730, "Unbound variable");
@@ -21032,7 +21032,7 @@ return_funcall2(  __glo_first_91frame,  &c_731733, ((closureN)self_731253)->elts
 }
 
 static void __lambda_87(int argc, object self_731254, object r_73642) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731735;
 c_731735.tag = closureN_tag;
@@ -21047,7 +21047,7 @@ return_funcall1((closure)&c_731735,  r_73642);;
 }
 
 static void __lambda_86(int argc, object self_731255, object frame_7398) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731737;
 c_731737.tag = closureN_tag;
@@ -21063,7 +21063,7 @@ return_funcall2(  __glo_frame_91variables,  &c_731737, frame_7398);;
 }
 
 static void __lambda_85(int argc, object self_731256, object r_73643) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731739;
 c_731739.tag = closureN_tag;
@@ -21079,12 +21079,12 @@ return_funcall2(  __glo_frame_91values,  &c_731739, ((closureN)self_731256)->elt
 }
 
 static void __lambda_84(int argc, object self_731257, object r_73644) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 return_funcall3(  cell_get(((closureN)self_731257)->elts[2]),  ((closureN)self_731257)->elts[0], ((closureN)self_731257)->elts[1], r_73644);; 
 }
 
 static void __lambda_83(int argc, object self_731258, object r_73638) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 
 closureN_type c_731707;
 c_731707.tag = closureN_tag;
@@ -21100,12 +21100,12 @@ return_funcall1((closure)&c_731707,  Cyc_set_car(((closureN)self_731258)->elts[1
 }
 
 static void __lambda_82(int argc, object self_731259, object r_73637) {
-  Cyc_st_add("scheme/eval.c:lookup-variable-value");
+  Cyc_st_add("scheme/eval.sld:lookup-variable-value");
 return_funcall2(  cell_get(((closureN)self_731259)->elts[1]),  ((closureN)self_731259)->elts[2], ((closureN)self_731259)->elts[0]);; 
 }
 
 static void __lambda_81(int argc, closure _,object k_73656, object vars_73103, object vals_73102, object base_91env_73101) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 closureN_type c_731645;
 c_731645.tag = closureN_tag;
@@ -21124,7 +21124,7 @@ return_funcall1((closure)&c_731645,  &c_731696);;
 }
 
 static void __lambda_80(int argc, object self_731260, object r_73662) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 closureN_type c_731647;
 c_731647.tag = closureN_tag;
@@ -21144,7 +21144,7 @@ return_funcall1((closure)&c_731647,  &c_731692);;
 }
 
 static void __lambda_79(int argc, object self_731261, object r_73663) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 closureN_type c_731649;
 c_731649.tag = closureN_tag;
@@ -21161,7 +21161,7 @@ return_funcall1((closure)&c_731649,  __num_eq(((closureN)self_731261)->elts[2], 
 }
 
 static void __lambda_78(int argc, object self_731262, object r_73657) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 if( !eq(boolean_f, r_73657) ){ 
   
 closureN_type c_731651;
@@ -21193,7 +21193,7 @@ return_funcall1((closure)&c_731661,  &c_731685);}
 }
 
 static void __lambda_77(int argc, object self_731263, object r_73660) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 closureN_type c_731663;
 c_731663.tag = closureN_tag;
@@ -21212,7 +21212,7 @@ return_funcall1((closure)&c_731663,  &c_731681);;
 }
 
 static void __lambda_76(int argc, object self_731264, object r_73661) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 closureN_type c_731665;
 c_731665.tag = closureN_tag;
@@ -21228,7 +21228,7 @@ return_funcall1((closure)&c_731665,  __num_lt(((closureN)self_731264)->elts[1], 
 }
 
 static void __lambda_75(int argc, object self_731265, object r_73659) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 if( !eq(boolean_f, r_73659) ){ 
   
 make_string(c_731668, "Too many arguments supplied");
@@ -21241,14 +21241,14 @@ return_funcall4(  __glo_error,  ((closureN)self_731265)->elts[0], &c_731673, ((c
 }
 
 static void __lambda_74(int argc, object self_731266, object r_73658) {
-  Cyc_st_add("scheme/eval.c:extend-environment");
+  Cyc_st_add("scheme/eval.sld:extend-environment");
 
 make_cons(c_731656,r_73658, ((closureN)self_731266)->elts[0]);
 return_funcall1(  ((closureN)self_731266)->elts[1],  &c_731656);; 
 }
 
 static void __lambda_73(int argc, closure _,object k_73666, object var_73106, object val_73105, object frame_73104) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 
 closureN_type c_731613;
 c_731613.tag = closureN_tag;
@@ -21265,7 +21265,7 @@ return_funcall1((closure)&c_731613,  car(frame_73104));;
 }
 
 static void __lambda_72(int argc, object self_731267, object r_73671) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 
 closureN_type c_731615;
 c_731615.tag = closureN_tag;
@@ -21283,7 +21283,7 @@ return_funcall1((closure)&c_731615,  &c_731639);;
 }
 
 static void __lambda_71(int argc, object self_731268, object r_73670) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 
 closureN_type c_731617;
 c_731617.tag = closureN_tag;
@@ -21299,7 +21299,7 @@ return_funcall1((closure)&c_731617,  Cyc_set_car(((closureN)self_731268)->elts[0
 }
 
 static void __lambda_70(int argc, object self_731269, object r_73667) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 
 closureN_type c_731619;
 c_731619.tag = closureN_tag;
@@ -21315,7 +21315,7 @@ return_funcall1((closure)&c_731619,  cdr(((closureN)self_731269)->elts[0]));;
 }
 
 static void __lambda_69(int argc, object self_731270, object r_73669) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 
 closureN_type c_731621;
 c_731621.tag = closureN_tag;
@@ -21332,79 +21332,79 @@ return_funcall1((closure)&c_731621,  &c_731629);;
 }
 
 static void __lambda_68(int argc, object self_731271, object r_73668) {
-  Cyc_st_add("scheme/eval.c:add-binding-to-frame!");
+  Cyc_st_add("scheme/eval.sld:add-binding-to-frame!");
 return_funcall1(  ((closureN)self_731271)->elts[1],  Cyc_set_cdr(((closureN)self_731271)->elts[0], r_73668));; 
 }
 
 static void __lambda_67(int argc, closure _,object k_73674, object frame_73107) {
-  Cyc_st_add("scheme/eval.c:frame-values");
+  Cyc_st_add("scheme/eval.sld:frame-values");
 return_funcall1(  k_73674,  cdr(frame_73107));; 
 }
 
 static void __lambda_66(int argc, closure _,object k_73677, object frame_73108) {
-  Cyc_st_add("scheme/eval.c:frame-variables");
+  Cyc_st_add("scheme/eval.sld:frame-variables");
 return_funcall1(  k_73677,  car(frame_73108));; 
 }
 
 static void __lambda_65(int argc, closure _,object k_73680, object variables_73110, object values_73109) {
-  Cyc_st_add("scheme/eval.c:make-frame");
+  Cyc_st_add("scheme/eval.sld:make-frame");
 
 make_cons(c_731602,variables_73110, values_73109);
 return_funcall1(  k_73680,  &c_731602);; 
 }
 
 static void __lambda_64(int argc, closure _,object k_73685, object env_73111) {
-  Cyc_st_add("scheme/eval.c:first-frame");
+  Cyc_st_add("scheme/eval.sld:first-frame");
 return_funcall1(  k_73685,  car(env_73111));; 
 }
 
 static void __lambda_63(int argc, closure _,object k_73688, object env_73112) {
-  Cyc_st_add("scheme/eval.c:enclosing-environment");
+  Cyc_st_add("scheme/eval.sld:enclosing-environment");
 return_funcall1(  k_73688,  cdr(env_73112));; 
 }
 
 static void __lambda_62(int argc, closure _,object k_73691, object p_73113) {
-  Cyc_st_add("scheme/eval.c:procedure-environment");
+  Cyc_st_add("scheme/eval.sld:procedure-environment");
 return_funcall1(  k_73691,  cadddr(p_73113));; 
 }
 
 static void __lambda_61(int argc, closure _,object k_73694, object p_73114) {
-  Cyc_st_add("scheme/eval.c:procedure-body");
+  Cyc_st_add("scheme/eval.sld:procedure-body");
 return_funcall1(  k_73694,  caddr(p_73114));; 
 }
 
 static void __lambda_60(int argc, closure _,object k_73697, object p_73115) {
-  Cyc_st_add("scheme/eval.c:procedure-parameters");
+  Cyc_st_add("scheme/eval.sld:procedure-parameters");
 return_funcall1(  k_73697,  cadr(p_73115));; 
 }
 
 static void __lambda_59(int argc, closure _,object k_73700, object p_73116) {
-  Cyc_st_add("scheme/eval.c:compound-procedure?");
+  Cyc_st_add("scheme/eval.sld:compound-procedure?");
 return_funcall3(  __glo_tagged_91list_127,  k_73700, __glo_procedure_91tag, p_73116);; 
 }
 
 static void __lambda_58(int argc, closure _,object k_73703, object parameters_73119, object body_73118, object env_73117) {
-  Cyc_st_add("scheme/eval.c:make-procedure");
+  Cyc_st_add("scheme/eval.sld:make-procedure");
 return_funcall5(  __glo__list,  k_73703, __glo_procedure_91tag, parameters_73119, body_73118, env_73117);; 
 }
 
 static void __lambda_57(int argc, closure _,object k_73708, object exp_73120) {
-  Cyc_st_add("scheme/eval.c:operands");
+  Cyc_st_add("scheme/eval.sld:operands");
 return_funcall1(  k_73708,  cdr(exp_73120));; 
 }
 
 static void __lambda_56(int argc, closure _,object k_73711, object exp_73121) {
-  Cyc_st_add("scheme/eval.c:operator");
+  Cyc_st_add("scheme/eval.sld:operator");
 return_funcall1(  k_73711,  car(exp_73121));; 
 }
 
 static void __lambda_55(int argc, closure _,object k_73714, object exp_73122) {
-  Cyc_st_add("scheme/eval.c:application?");
+  Cyc_st_add("scheme/eval.sld:application?");
 return_funcall1(  k_73714,  Cyc_is_cons(exp_73122));; 
 }
 
 static void __lambda_54(int argc, closure _,object k_73717, object seq_73123) {
-  Cyc_st_add("scheme/eval.c:make-begin");
+  Cyc_st_add("scheme/eval.sld:make-begin");
 
 closureN_type c_731555;
 c_731555.tag = closureN_tag;
@@ -21419,14 +21419,14 @@ return_funcall1((closure)&c_731555,  quote_begin);;
 }
 
 static void __lambda_53(int argc, object self_731272, object r_73718) {
-  Cyc_st_add("scheme/eval.c:make-begin");
+  Cyc_st_add("scheme/eval.sld:make-begin");
 
 make_cons(c_731560,r_73718, ((closureN)self_731272)->elts[1]);
 return_funcall1(  ((closureN)self_731272)->elts[0],  &c_731560);; 
 }
 
 static void __lambda_52(int argc, closure _,object k_73721, object seq_73124) {
-  Cyc_st_add("scheme/eval.c:sequence->exp");
+  Cyc_st_add("scheme/eval.sld:sequence->exp");
 
 closureN_type c_731538;
 c_731538.tag = closureN_tag;
@@ -21441,7 +21441,7 @@ return_funcall1((closure)&c_731538,  Cyc_is_null(seq_73124));;
 }
 
 static void __lambda_51(int argc, object self_731273, object r_73722) {
-  Cyc_st_add("scheme/eval.c:sequence->exp");
+  Cyc_st_add("scheme/eval.sld:sequence->exp");
 if( !eq(boolean_f, r_73722) ){ 
   return_funcall1(  ((closureN)self_731273)->elts[0],  ((closureN)self_731273)->elts[1]);
 } else { 
@@ -21460,7 +21460,7 @@ return_funcall2(  __glo_last_91exp_127,  &c_731543, ((closureN)self_731273)->elt
 }
 
 static void __lambda_50(int argc, object self_731274, object r_73723) {
-  Cyc_st_add("scheme/eval.c:sequence->exp");
+  Cyc_st_add("scheme/eval.sld:sequence->exp");
 if( !eq(boolean_f, r_73723) ){ 
   return_funcall2(  __glo_first_91exp,  ((closureN)self_731274)->elts[0], ((closureN)self_731274)->elts[1]);
 } else { 
@@ -21469,17 +21469,17 @@ if( !eq(boolean_f, r_73723) ){
 }
 
 static void __lambda_49(int argc, closure _,object k_73726, object seq_73125) {
-  Cyc_st_add("scheme/eval.c:rest-exps");
+  Cyc_st_add("scheme/eval.sld:rest-exps");
 return_funcall1(  k_73726,  cdr(seq_73125));; 
 }
 
 static void __lambda_48(int argc, closure _,object k_73729, object seq_73126) {
-  Cyc_st_add("scheme/eval.c:first-exp");
+  Cyc_st_add("scheme/eval.sld:first-exp");
 return_funcall1(  k_73729,  car(seq_73126));; 
 }
 
 static void __lambda_47(int argc, closure _,object k_73732, object seq_73127) {
-  Cyc_st_add("scheme/eval.c:last-exp?");
+  Cyc_st_add("scheme/eval.sld:last-exp?");
 
 closureN_type c_731521;
 c_731521.tag = closureN_tag;
@@ -21493,17 +21493,17 @@ return_funcall1((closure)&c_731521,  cdr(seq_73127));;
 }
 
 static void __lambda_46(int argc, object self_731275, object r_73733) {
-  Cyc_st_add("scheme/eval.c:last-exp?");
+  Cyc_st_add("scheme/eval.sld:last-exp?");
 return_funcall1(  ((closureN)self_731275)->elts[0],  Cyc_is_null(r_73733));; 
 }
 
 static void __lambda_45(int argc, closure _,object k_73736, object exp_73128) {
-  Cyc_st_add("scheme/eval.c:begin-actions");
+  Cyc_st_add("scheme/eval.sld:begin-actions");
 return_funcall1(  k_73736,  cdr(exp_73128));; 
 }
 
 static void __lambda_44(int argc, closure _,object k_73739, object predicate_73131, object consequent_73130, object alternative_73129) {
-  Cyc_st_add("scheme/eval.c:make-if");
+  Cyc_st_add("scheme/eval.sld:make-if");
 
 closureN_type c_731509;
 c_731509.tag = closureN_tag;
@@ -21520,12 +21520,12 @@ return_funcall1((closure)&c_731509,  quote__if);;
 }
 
 static void __lambda_43(int argc, object self_731276, object r_73740) {
-  Cyc_st_add("scheme/eval.c:make-if");
+  Cyc_st_add("scheme/eval.sld:make-if");
 return_funcall5(  __glo__list,  ((closureN)self_731276)->elts[2], r_73740, ((closureN)self_731276)->elts[3], ((closureN)self_731276)->elts[1], ((closureN)self_731276)->elts[0]);; 
 }
 
 static void __lambda_42(int argc, closure _,object k_73743, object exp_73132) {
-  Cyc_st_add("scheme/eval.c:if-alternative");
+  Cyc_st_add("scheme/eval.sld:if-alternative");
 
 closureN_type c_731491;
 c_731491.tag = closureN_tag;
@@ -21540,7 +21540,7 @@ return_funcall1((closure)&c_731491,  cdddr(exp_73132));;
 }
 
 static void __lambda_41(int argc, object self_731277, object r_73746) {
-  Cyc_st_add("scheme/eval.c:if-alternative");
+  Cyc_st_add("scheme/eval.sld:if-alternative");
 
 closureN_type c_731493;
 c_731493.tag = closureN_tag;
@@ -21555,7 +21555,7 @@ return_funcall1((closure)&c_731493,  Cyc_is_null(r_73746));;
 }
 
 static void __lambda_40(int argc, object self_731278, object r_73745) {
-  Cyc_st_add("scheme/eval.c:if-alternative");
+  Cyc_st_add("scheme/eval.sld:if-alternative");
 
 closureN_type c_731495;
 c_731495.tag = closureN_tag;
@@ -21570,7 +21570,7 @@ return_funcall2(  __glo_not,  &c_731495, r_73745);;
 }
 
 static void __lambda_39(int argc, object self_731279, object r_73744) {
-  Cyc_st_add("scheme/eval.c:if-alternative");
+  Cyc_st_add("scheme/eval.sld:if-alternative");
 if( !eq(boolean_f, r_73744) ){ 
   return_funcall1(  ((closureN)self_731279)->elts[1],  cadddr(((closureN)self_731279)->elts[0]));
 } else { 
@@ -21579,17 +21579,17 @@ if( !eq(boolean_f, r_73744) ){
 }
 
 static void __lambda_38(int argc, closure _,object k_73749, object exp_73133) {
-  Cyc_st_add("scheme/eval.c:if-consequent");
+  Cyc_st_add("scheme/eval.sld:if-consequent");
 return_funcall1(  k_73749,  caddr(exp_73133));; 
 }
 
 static void __lambda_37(int argc, closure _,object k_73752, object exp_73134) {
-  Cyc_st_add("scheme/eval.c:if-predicate");
+  Cyc_st_add("scheme/eval.sld:if-predicate");
 return_funcall1(  k_73752,  cadr(exp_73134));; 
 }
 
 static void __lambda_36(int argc, closure _,object k_73755, object parameters_73136, object body_73135) {
-  Cyc_st_add("scheme/eval.c:make-lambda");
+  Cyc_st_add("scheme/eval.sld:make-lambda");
 
 closureN_type c_731467;
 c_731467.tag = closureN_tag;
@@ -21605,7 +21605,7 @@ return_funcall1((closure)&c_731467,  quote_lambda);;
 }
 
 static void __lambda_35(int argc, object self_731280, object r_73756) {
-  Cyc_st_add("scheme/eval.c:make-lambda");
+  Cyc_st_add("scheme/eval.sld:make-lambda");
 
 closureN_type c_731469;
 c_731469.tag = closureN_tag;
@@ -21622,24 +21622,24 @@ return_funcall1((closure)&c_731469,  &c_731478);;
 }
 
 static void __lambda_34(int argc, object self_731281, object r_73757) {
-  Cyc_st_add("scheme/eval.c:make-lambda");
+  Cyc_st_add("scheme/eval.sld:make-lambda");
 
 make_cons(c_731474,((closureN)self_731281)->elts[1], r_73757);
 return_funcall1(  ((closureN)self_731281)->elts[0],  &c_731474);; 
 }
 
 static void __lambda_33(int argc, closure _,object k_73760, object exp_73137) {
-  Cyc_st_add("scheme/eval.c:lambda-body");
+  Cyc_st_add("scheme/eval.sld:lambda-body");
 return_funcall1(  k_73760,  cddr(exp_73137));; 
 }
 
 static void __lambda_32(int argc, closure _,object k_73763, object exp_73138) {
-  Cyc_st_add("scheme/eval.c:lambda-parameters");
+  Cyc_st_add("scheme/eval.sld:lambda-parameters");
 return_funcall1(  k_73763,  cadr(exp_73138));; 
 }
 
 static void __lambda_31(int argc, closure _,object k_73766, object exp_73139) {
-  Cyc_st_add("scheme/eval.c:definition-value");
+  Cyc_st_add("scheme/eval.sld:definition-value");
 
 closureN_type c_731432;
 c_731432.tag = closureN_tag;
@@ -21654,7 +21654,7 @@ return_funcall1((closure)&c_731432,  cadr(exp_73139));;
 }
 
 static void __lambda_30(int argc, object self_731282, object r_73770) {
-  Cyc_st_add("scheme/eval.c:definition-value");
+  Cyc_st_add("scheme/eval.sld:definition-value");
 
 closureN_type c_731434;
 c_731434.tag = closureN_tag;
@@ -21669,7 +21669,7 @@ return_funcall1((closure)&c_731434,  Cyc_is_symbol(r_73770));;
 }
 
 static void __lambda_29(int argc, object self_731283, object r_73767) {
-  Cyc_st_add("scheme/eval.c:definition-value");
+  Cyc_st_add("scheme/eval.sld:definition-value");
 if( !eq(boolean_f, r_73767) ){ 
   return_funcall1(  ((closureN)self_731283)->elts[1],  caddr(((closureN)self_731283)->elts[0]));
 } else { 
@@ -21688,7 +21688,7 @@ return_funcall1((closure)&c_731441,  cdadr(((closureN)self_731283)->elts[0]));}
 }
 
 static void __lambda_28(int argc, object self_731284, object r_73768) {
-  Cyc_st_add("scheme/eval.c:definition-value");
+  Cyc_st_add("scheme/eval.sld:definition-value");
 
 closureN_type c_731443;
 c_731443.tag = closureN_tag;
@@ -21703,12 +21703,12 @@ return_funcall1((closure)&c_731443,  cddr(((closureN)self_731284)->elts[0]));;
 }
 
 static void __lambda_27(int argc, object self_731285, object r_73769) {
-  Cyc_st_add("scheme/eval.c:definition-value");
+  Cyc_st_add("scheme/eval.sld:definition-value");
 return_funcall3(  __glo_make_91lambda,  ((closureN)self_731285)->elts[0], ((closureN)self_731285)->elts[1], r_73769);; 
 }
 
 static void __lambda_26(int argc, closure _,object k_73773, object exp_73140) {
-  Cyc_st_add("scheme/eval.c:definition-variable");
+  Cyc_st_add("scheme/eval.sld:definition-variable");
 
 closureN_type c_731413;
 c_731413.tag = closureN_tag;
@@ -21723,7 +21723,7 @@ return_funcall1((closure)&c_731413,  cadr(exp_73140));;
 }
 
 static void __lambda_25(int argc, object self_731286, object r_73775) {
-  Cyc_st_add("scheme/eval.c:definition-variable");
+  Cyc_st_add("scheme/eval.sld:definition-variable");
 
 closureN_type c_731415;
 c_731415.tag = closureN_tag;
@@ -21738,7 +21738,7 @@ return_funcall1((closure)&c_731415,  Cyc_is_symbol(r_73775));;
 }
 
 static void __lambda_24(int argc, object self_731287, object r_73774) {
-  Cyc_st_add("scheme/eval.c:definition-variable");
+  Cyc_st_add("scheme/eval.sld:definition-variable");
 if( !eq(boolean_f, r_73774) ){ 
   return_funcall1(  ((closureN)self_731287)->elts[1],  cadr(((closureN)self_731287)->elts[0]));
 } else { 
@@ -21747,7 +21747,7 @@ if( !eq(boolean_f, r_73774) ){
 }
 
 static void __lambda_23(int argc, closure _,object k_73778, object exp_73141) {
-  Cyc_st_add("scheme/eval.c:definition?");
+  Cyc_st_add("scheme/eval.sld:definition?");
 
 closureN_type c_731407;
 c_731407.tag = closureN_tag;
@@ -21762,22 +21762,22 @@ return_funcall1((closure)&c_731407,  quote_define);;
 }
 
 static void __lambda_22(int argc, object self_731288, object r_73779) {
-  Cyc_st_add("scheme/eval.c:definition?");
+  Cyc_st_add("scheme/eval.sld:definition?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731288)->elts[1], r_73779, ((closureN)self_731288)->elts[0]);; 
 }
 
 static void __lambda_21(int argc, closure _,object k_73782, object exp_73142) {
-  Cyc_st_add("scheme/eval.c:assignment-value");
+  Cyc_st_add("scheme/eval.sld:assignment-value");
 return_funcall1(  k_73782,  caddr(exp_73142));; 
 }
 
 static void __lambda_20(int argc, closure _,object k_73785, object exp_73143) {
-  Cyc_st_add("scheme/eval.c:assignment-variable");
+  Cyc_st_add("scheme/eval.sld:assignment-variable");
 return_funcall1(  k_73785,  cadr(exp_73143));; 
 }
 
 static void __lambda_19(int argc, closure _,object k_73788, object exp_73144) {
-  Cyc_st_add("scheme/eval.c:assignment?");
+  Cyc_st_add("scheme/eval.sld:assignment?");
 
 closureN_type c_731393;
 c_731393.tag = closureN_tag;
@@ -21792,12 +21792,12 @@ return_funcall1((closure)&c_731393,  quote_set_67);;
 }
 
 static void __lambda_18(int argc, object self_731289, object r_73789) {
-  Cyc_st_add("scheme/eval.c:assignment?");
+  Cyc_st_add("scheme/eval.sld:assignment?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731289)->elts[1], r_73789, ((closureN)self_731289)->elts[0]);; 
 }
 
 static void __lambda_17(int argc, closure _,object k_73792, object exp_73145) {
-  Cyc_st_add("scheme/eval.c:quasiquoted?");
+  Cyc_st_add("scheme/eval.sld:quasiquoted?");
 
 closureN_type c_731387;
 c_731387.tag = closureN_tag;
@@ -21812,12 +21812,12 @@ return_funcall1((closure)&c_731387,  quote_quasiquote);;
 }
 
 static void __lambda_16(int argc, object self_731290, object r_73793) {
-  Cyc_st_add("scheme/eval.c:quasiquoted?");
+  Cyc_st_add("scheme/eval.sld:quasiquoted?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731290)->elts[1], r_73793, ((closureN)self_731290)->elts[0]);; 
 }
 
 static void __lambda_15(int argc, closure _,object k_73796, object exp_73146) {
-  Cyc_st_add("scheme/eval.c:quoted?");
+  Cyc_st_add("scheme/eval.sld:quoted?");
 
 closureN_type c_731381;
 c_731381.tag = closureN_tag;
@@ -21832,17 +21832,17 @@ return_funcall1((closure)&c_731381,  quote_quote);;
 }
 
 static void __lambda_14(int argc, object self_731291, object r_73797) {
-  Cyc_st_add("scheme/eval.c:quoted?");
+  Cyc_st_add("scheme/eval.sld:quoted?");
 return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_731291)->elts[1], r_73797, ((closureN)self_731291)->elts[0]);; 
 }
 
 static void __lambda_13(int argc, closure _,object k_73800, object exp_73147) {
-  Cyc_st_add("scheme/eval.c:variable?");
+  Cyc_st_add("scheme/eval.sld:variable?");
 return_funcall1(  k_73800,  Cyc_is_symbol(exp_73147));; 
 }
 
 static void __lambda_12(int argc, closure _,object k_73803, object exp_73148) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 
 closureN_type c_731326;
 c_731326.tag = closureN_tag;
@@ -21857,7 +21857,7 @@ return_funcall1((closure)&c_731326,  Cyc_is_number(exp_73148));;
 }
 
 static void __lambda_11(int argc, object self_731292, object r_73804) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73804) ){ 
   return_funcall1(  ((closureN)self_731292)->elts[1],  boolean_t);
 } else { 
@@ -21876,7 +21876,7 @@ return_funcall1((closure)&c_731330,  Cyc_is_boolean(((closureN)self_731292)->elt
 }
 
 static void __lambda_10(int argc, object self_731293, object r_73805) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73805) ){ 
   return_funcall1(  ((closureN)self_731293)->elts[1],  boolean_t);
 } else { 
@@ -21895,7 +21895,7 @@ return_funcall1((closure)&c_731334,  Cyc_is_string(((closureN)self_731293)->elts
 }
 
 static void __lambda_9(int argc, object self_731294, object r_73806) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73806) ){ 
   return_funcall1(  ((closureN)self_731294)->elts[1],  boolean_t);
 } else { 
@@ -21914,7 +21914,7 @@ return_funcall1((closure)&c_731338,  Cyc_is_vector(((closureN)self_731294)->elts
 }
 
 static void __lambda_8(int argc, object self_731295, object r_73807) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73807) ){ 
   return_funcall1(  ((closureN)self_731295)->elts[1],  boolean_t);
 } else { 
@@ -21933,7 +21933,7 @@ return_funcall1((closure)&c_731342,  Cyc_is_char(((closureN)self_731295)->elts[0
 }
 
 static void __lambda_7(int argc, object self_731296, object r_73808) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73808) ){ 
   return_funcall1(  ((closureN)self_731296)->elts[1],  boolean_t);
 } else { 
@@ -21952,7 +21952,7 @@ return_funcall1((closure)&c_731346,  Cyc_is_port(((closureN)self_731296)->elts[0
 }
 
 static void __lambda_6(int argc, object self_731297, object r_73809) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73809) ){ 
   return_funcall1(  ((closureN)self_731297)->elts[1],  boolean_t);
 } else { 
@@ -21970,7 +21970,7 @@ return_funcall1((closure)&c_731350,  Cyc_is_eof_object(((closureN)self_731297)->
 }
 
 static void __lambda_5(int argc, object self_731298, object r_73810) {
-  Cyc_st_add("scheme/eval.c:self-evaluating?");
+  Cyc_st_add("scheme/eval.sld:self-evaluating?");
 if( !eq(boolean_f, r_73810) ){ 
   return_funcall1(  ((closureN)self_731298)->elts[0],  boolean_t);
 } else { 
@@ -21980,7 +21980,7 @@ if( !eq(boolean_f, r_73810) ){
 
 static void __lambda_4(int argc, closure _,object k_73813, object exp_73150, object env_73149_raw, ...) {
 load_varargs(env_73149, env_73149_raw, argc - 2);
-  Cyc_st_add("scheme/eval.c:eval");
+  Cyc_st_add("scheme/eval.sld:eval");
 
 closureN_type c_731305;
 c_731305.tag = closureN_tag;
@@ -21996,7 +21996,7 @@ return_funcall1((closure)&c_731305,  Cyc_is_null(env_73149));;
 }
 
 static void __lambda_3(int argc, object self_731299, object r_73814) {
-  Cyc_st_add("scheme/eval.c:eval");
+  Cyc_st_add("scheme/eval.sld:eval");
 if( !eq(boolean_f, r_73814) ){ 
   
 closureN_type c_731307;
@@ -22024,7 +22024,7 @@ return_funcall2(  __glo_analyze,  &c_731312, ((closureN)self_731299)->elts[1]);}
 }
 
 static void __lambda_2(int argc, object self_731300, object r_73816) {
-  Cyc_st_add("scheme/eval.c:eval");
+  Cyc_st_add("scheme/eval.sld:eval");
 
 closureN_type c_731314;
 c_731314.tag = closureN_tag;
@@ -22039,12 +22039,12 @@ return_funcall1((closure)&c_731314,  car(((closureN)self_731300)->elts[0]));;
 }
 
 static void __lambda_1(int argc, object self_731301, object r_73817) {
-  Cyc_st_add("scheme/eval.c:eval");
+  Cyc_st_add("scheme/eval.sld:eval");
 return_funcall2(  ((closureN)self_731301)->elts[1],  ((closureN)self_731301)->elts[0], r_73817);; 
 }
 
 static void __lambda_0(int argc, object self_731302, object r_73815) {
-  Cyc_st_add("scheme/eval.c:eval");
+  Cyc_st_add("scheme/eval.sld:eval");
 return_funcall2(  r_73815,  ((closureN)self_731302)->elts[0], __glo__85global_91environment_85);; 
 }
 

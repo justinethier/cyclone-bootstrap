@@ -169,24 +169,24 @@ static void __lambda_1(int argc, object self_7368, object r_7356) ;
 static void __lambda_0(int argc, object self_7369, object r_7355) ;
 
 static void __lambda_23(int argc, closure _,object k_7313) {
-  Cyc_st_add("scheme/char.c:lib-init:scheme_char");
+  Cyc_st_add("scheme/char.sld:lib-init:scheme_char");
 
 make_int(c_73191, 0);
 return_funcall1(  k_7313,  &c_73191);; 
 }
 
 static void __lambda_22(int argc, closure _,object k_7316, object str_731) {
-  Cyc_st_add("scheme/char.c:string-downcase");
+  Cyc_st_add("scheme/char.sld:string-downcase");
 return_funcall3(  __glo_string_91map,  k_7316, __glo_char_91downcase, str_731);; 
 }
 
 static void __lambda_21(int argc, closure _,object k_7319, object str_732) {
-  Cyc_st_add("scheme/char.c:string-upcase");
+  Cyc_st_add("scheme/char.sld:string-upcase");
 return_funcall3(  __glo_string_91map,  k_7319, __glo_char_91upcase, str_732);; 
 }
 
 static void __lambda_20(int argc, closure _,object k_7322, object c_733) {
-  Cyc_st_add("scheme/char.c:digit-value");
+  Cyc_st_add("scheme/char.sld:digit-value");
 
 closureN_type c_73170;
 c_73170.tag = closureN_tag;
@@ -201,7 +201,7 @@ return_funcall2(  __glo_char_91numeric_127,  &c_73170, c_733);;
 }
 
 static void __lambda_19(int argc, object self_7357, object r_7323) {
-  Cyc_st_add("scheme/char.c:digit-value");
+  Cyc_st_add("scheme/char.sld:digit-value");
 if( !eq(boolean_f, r_7323) ){ 
   
 closureN_type c_73172;
@@ -221,7 +221,7 @@ return_funcall1((closure)&c_73172,  &c_73181);
 }
 
 static void __lambda_18(int argc, object self_7358, object r_7324) {
-  Cyc_st_add("scheme/char.c:digit-value");
+  Cyc_st_add("scheme/char.sld:digit-value");
 
 make_int(c_73178, 48);
 
@@ -230,7 +230,7 @@ return_funcall1(  ((closureN)self_7358)->elts[0],  &c_73177);;
 }
 
 static void __lambda_17(int argc, closure _,object k_7327, object c_734) {
-  Cyc_st_add("scheme/char.c:char-whitespace?");
+  Cyc_st_add("scheme/char.sld:char-whitespace?");
 
 closureN_type c_73158;
 c_73158.tag = closureN_tag;
@@ -253,12 +253,12 @@ return_funcall1((closure)&c_73158,  &c_73164);;
 }
 
 static void __lambda_16(int argc, object self_7359, object r_7328) {
-  Cyc_st_add("scheme/char.c:char-whitespace?");
+  Cyc_st_add("scheme/char.sld:char-whitespace?");
 return_funcall1(  ((closureN)self_7359)->elts[1],  memberp(((closureN)self_7359)->elts[0], r_7328));; 
 }
 
 static void __lambda_15(int argc, closure _,object k_7331, object c_735) {
-  Cyc_st_add("scheme/char.c:char-numeric?");
+  Cyc_st_add("scheme/char.sld:char-numeric?");
 
 closureN_type c_73140;
 c_73140.tag = closureN_tag;
@@ -293,12 +293,12 @@ return_funcall1((closure)&c_73140,  &c_73146);;
 }
 
 static void __lambda_14(int argc, object self_7360, object r_7332) {
-  Cyc_st_add("scheme/char.c:char-numeric?");
+  Cyc_st_add("scheme/char.sld:char-numeric?");
 return_funcall1(  ((closureN)self_7360)->elts[1],  memberp(((closureN)self_7360)->elts[0], r_7332));; 
 }
 
 static void __lambda_13(int argc, closure _,object k_7335, object c_736) {
-  Cyc_st_add("scheme/char.c:char-lower-case?");
+  Cyc_st_add("scheme/char.sld:char-lower-case?");
 
 closureN_type c_73132;
 c_73132.tag = closureN_tag;
@@ -313,7 +313,7 @@ return_funcall3(  __glo_char_125_123_127,  &c_73132, c_736, obj_char2obj(97));;
 }
 
 static void __lambda_12(int argc, object self_7361, object r_7336) {
-  Cyc_st_add("scheme/char.c:char-lower-case?");
+  Cyc_st_add("scheme/char.sld:char-lower-case?");
 if( !eq(boolean_f, r_7336) ){ 
   return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7361)->elts[1], ((closureN)self_7361)->elts[0], obj_char2obj(122));
 } else { 
@@ -322,7 +322,7 @@ if( !eq(boolean_f, r_7336) ){
 }
 
 static void __lambda_11(int argc, closure _,object k_7339, object c_737) {
-  Cyc_st_add("scheme/char.c:char-upper-case?");
+  Cyc_st_add("scheme/char.sld:char-upper-case?");
 
 closureN_type c_73124;
 c_73124.tag = closureN_tag;
@@ -337,7 +337,7 @@ return_funcall3(  __glo_char_125_123_127,  &c_73124, c_737, obj_char2obj(65));;
 }
 
 static void __lambda_10(int argc, object self_7362, object r_7340) {
-  Cyc_st_add("scheme/char.c:char-upper-case?");
+  Cyc_st_add("scheme/char.sld:char-upper-case?");
 if( !eq(boolean_f, r_7340) ){ 
   return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7362)->elts[1], ((closureN)self_7362)->elts[0], obj_char2obj(90));
 } else { 
@@ -346,7 +346,7 @@ if( !eq(boolean_f, r_7340) ){
 }
 
 static void __lambda_9(int argc, closure _,object k_7343, object c_738) {
-  Cyc_st_add("scheme/char.c:char-alphabetic?");
+  Cyc_st_add("scheme/char.sld:char-alphabetic?");
 
 closureN_type c_73116;
 c_73116.tag = closureN_tag;
@@ -361,7 +361,7 @@ return_funcall3(  __glo_char_125_123_127,  &c_73116, c_738, obj_char2obj(65));;
 }
 
 static void __lambda_8(int argc, object self_7363, object r_7344) {
-  Cyc_st_add("scheme/char.c:char-alphabetic?");
+  Cyc_st_add("scheme/char.sld:char-alphabetic?");
 if( !eq(boolean_f, r_7344) ){ 
   return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7363)->elts[1], ((closureN)self_7363)->elts[0], obj_char2obj(122));
 } else { 
@@ -370,7 +370,7 @@ if( !eq(boolean_f, r_7344) ){
 }
 
 static void __lambda_7(int argc, closure _,object k_7347, object c_739) {
-  Cyc_st_add("scheme/char.c:char-downcase");
+  Cyc_st_add("scheme/char.sld:char-downcase");
 
 closureN_type c_7394;
 c_7394.tag = closureN_tag;
@@ -385,7 +385,7 @@ return_funcall2(  __glo_char_91upper_91case_127,  &c_7394, c_739);;
 }
 
 static void __lambda_6(int argc, object self_7364, object r_7348) {
-  Cyc_st_add("scheme/char.c:char-downcase");
+  Cyc_st_add("scheme/char.sld:char-downcase");
 if( !eq(boolean_f, r_7348) ){ 
   
 closureN_type c_7396;
@@ -405,7 +405,7 @@ return_funcall1((closure)&c_7396,  &c_73109);
 }
 
 static void __lambda_5(int argc, object self_7365, object r_7350) {
-  Cyc_st_add("scheme/char.c:char-downcase");
+  Cyc_st_add("scheme/char.sld:char-downcase");
 
 closureN_type c_7398;
 c_7398.tag = closureN_tag;
@@ -423,12 +423,12 @@ return_funcall1((closure)&c_7398,  &c_73105);;
 }
 
 static void __lambda_4(int argc, object self_7366, object r_7349) {
-  Cyc_st_add("scheme/char.c:char-downcase");
+  Cyc_st_add("scheme/char.sld:char-downcase");
 return_funcall1(  ((closureN)self_7366)->elts[0],  Cyc_integer2char(r_7349));; 
 }
 
 static void __lambda_3(int argc, closure _,object k_7353, object c_7310) {
-  Cyc_st_add("scheme/char.c:char-upcase");
+  Cyc_st_add("scheme/char.sld:char-upcase");
 
 closureN_type c_7372;
 c_7372.tag = closureN_tag;
@@ -443,7 +443,7 @@ return_funcall2(  __glo_char_91lower_91case_127,  &c_7372, c_7310);;
 }
 
 static void __lambda_2(int argc, object self_7367, object r_7354) {
-  Cyc_st_add("scheme/char.c:char-upcase");
+  Cyc_st_add("scheme/char.sld:char-upcase");
 if( !eq(boolean_f, r_7354) ){ 
   
 closureN_type c_7374;
@@ -463,7 +463,7 @@ return_funcall1((closure)&c_7374,  &c_7387);
 }
 
 static void __lambda_1(int argc, object self_7368, object r_7356) {
-  Cyc_st_add("scheme/char.c:char-upcase");
+  Cyc_st_add("scheme/char.sld:char-upcase");
 
 closureN_type c_7376;
 c_7376.tag = closureN_tag;
@@ -481,7 +481,7 @@ return_funcall1((closure)&c_7376,  &c_7383);;
 }
 
 static void __lambda_0(int argc, object self_7369, object r_7355) {
-  Cyc_st_add("scheme/char.c:char-upcase");
+  Cyc_st_add("scheme/char.sld:char-upcase");
 return_funcall1(  ((closureN)self_7369)->elts[0],  Cyc_integer2char(r_7355));; 
 }
 
