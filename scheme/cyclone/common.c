@@ -49,100 +49,189 @@ object __glo__85c_91file_91header_91comment_85 = nil;
 object __glo__85version_91banner_85 = nil;
 object __glo__85version_85 = nil;
 #include "cyclone/runtime.h"
-static void __lambda_5(int argc, closure _,object k_733) ;
-static void __lambda_4(int argc, object self_7317, object r_734) ;
-static void __lambda_3(int argc, object self_7318, object r_738) ;
-static void __lambda_2(int argc, object self_7319, object r_735) ;
-static void __lambda_1(int argc, object self_7320, object r_737) ;
-static void __lambda_0(int argc, object self_7321, object r_736) ;
+static void __lambda_10(int argc, closure _,object k_733) ;
+static void __lambda_9(int argc, object self_7322, object r_734) ;
+static void __lambda_8(int argc, object self_7323, object r_7313) ;
+static void __lambda_7(int argc, object self_7324, object r_735) ;
+static void __lambda_6(int argc, object self_7325, object r_7312) ;
+static void __lambda_5(int argc, object self_7326, object r_736) ;
+static void __lambda_4(int argc, object self_7327, object r_737) ;
+static void __lambda_3(int argc, object self_7328, object r_738) ;
+static void __lambda_2(int argc, object self_7329, object r_7311) ;
+static void __lambda_1(int argc, object self_7330, object r_739) ;
+static void __lambda_0(int argc, object self_7331, object r_7310) ;
 
-static void __lambda_5(int argc, closure _,object k_733) {
+static void __lambda_10(int argc, closure _,object k_733) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
-closureN_type c_7325;
-c_7325.tag = closureN_tag;
- c_7325.fn = (function_type)__lambda_4;
-c_7325.num_args = 1;
-c_7325.num_elt = 1;
-c_7325.elts = (object *)alloca(sizeof(object) * 1);
-c_7325.elts[0] = k_733;
+closureN_type c_7335;
+c_7335.tag = closureN_tag;
+ c_7335.fn = (function_type)__lambda_9;
+c_7335.num_args = 1;
+c_7335.num_elt = 1;
+c_7335.elts = (object *)alloca(sizeof(object) * 1);
+c_7335.elts[0] = k_733;
 
 
-make_int(c_7352, 0);
-return_funcall1((closure)&c_7325,  &c_7352);; 
+make_int(c_7389, 0);
+return_funcall1((closure)&c_7335,  &c_7389);; 
 }
 
-static void __lambda_4(int argc, object self_7317, object r_734) {
+static void __lambda_9(int argc, object self_7322, object r_734) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
-closureN_type c_7327;
-c_7327.tag = closureN_tag;
- c_7327.fn = (function_type)__lambda_3;
-c_7327.num_args = 1;
-c_7327.num_elt = 1;
-c_7327.elts = (object *)alloca(sizeof(object) * 1);
-c_7327.elts[0] = ((closureN)self_7317)->elts[0];
+closureN_type c_7337;
+c_7337.tag = closureN_tag;
+ c_7337.fn = (function_type)__lambda_8;
+c_7337.num_args = 1;
+c_7337.num_elt = 1;
+c_7337.elts = (object *)alloca(sizeof(object) * 1);
+c_7337.elts[0] = ((closureN)self_7322)->elts[0];
 
 
-make_string(c_7350, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     Scheme-to-C compiler\n      ,@             https://github.com/justinethier/cyclone\n      '@        \n      .@        \n       @@     #@     (c) 2014 Justin Ethier\n       `@@@#@@@.     Version ");
+make_string(c_7387, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     Scheme-to-C compiler\n      ,@             https://github.com/justinethier/cyclone\n      '@        \n      .@        \n       @@     #@     (c) 2014 Justin Ethier\n       `@@@#@@@.     Version ");
 
-make_string(c_7351, "\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
+make_string(c_7388, "\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
 
-string_type c_7349 = Cyc_string_append(3,&c_7350, __glo__85version_85, &c_7351);
-return_funcall1((closure)&c_7327,  &c_7349);; 
+string_type c_7386 = Cyc_string_append(3,&c_7387, __glo__85version_85, &c_7388);
+return_funcall1((closure)&c_7337,  &c_7386);; 
 }
 
-static void __lambda_3(int argc, object self_7318, object r_738) {
+static void __lambda_8(int argc, object self_7323, object r_7313) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
-closureN_type c_7329;
-c_7329.tag = closureN_tag;
- c_7329.fn = (function_type)__lambda_2;
-c_7329.num_args = 1;
-c_7329.num_elt = 1;
-c_7329.elts = (object *)alloca(sizeof(object) * 1);
-c_7329.elts[0] = ((closureN)self_7318)->elts[0];
+closureN_type c_7339;
+c_7339.tag = closureN_tag;
+ c_7339.fn = (function_type)__lambda_7;
+c_7339.num_args = 1;
+c_7339.num_elt = 1;
+c_7339.elts = (object *)alloca(sizeof(object) * 1);
+c_7339.elts[0] = ((closureN)self_7323)->elts[0];
 
-return_funcall1((closure)&c_7329,  global_set(__glo__85version_91banner_85, r_738));; 
+return_funcall1((closure)&c_7339,  global_set(__glo__85version_91banner_85, r_7313));; 
 }
 
-static void __lambda_2(int argc, object self_7319, object r_735) {
+static void __lambda_7(int argc, object self_7324, object r_735) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
-closureN_type c_7331;
-c_7331.tag = closureN_tag;
- c_7331.fn = (function_type)__lambda_1;
-c_7331.num_args = 1;
-c_7331.num_elt = 1;
-c_7331.elts = (object *)alloca(sizeof(object) * 1);
-c_7331.elts[0] = ((closureN)self_7319)->elts[0];
+closureN_type c_7341;
+c_7341.tag = closureN_tag;
+ c_7341.fn = (function_type)__lambda_6;
+c_7341.num_args = 1;
+c_7341.num_elt = 1;
+c_7341.elts = (object *)alloca(sizeof(object) * 1);
+c_7341.elts[0] = ((closureN)self_7324)->elts[0];
 
 
-make_string(c_7343, "/**\n ** This file was automatically generated by the Cyclone scheme compiler\n **\n ** (c) 2014 Justin Ethier\n ** Version ");
+make_string(c_7380, "/**\n ** This file was automatically generated by the Cyclone scheme compiler\n **\n ** (c) 2014 Justin Ethier\n ** Version ");
 
-make_string(c_7344, "\n **\n **/\n");
+make_string(c_7381, "\n **\n **/\n");
 
-string_type c_7342 = Cyc_string_append(3,&c_7343, __glo__85version_85, &c_7344);
-return_funcall1((closure)&c_7331,  &c_7342);; 
+string_type c_7379 = Cyc_string_append(3,&c_7380, __glo__85version_85, &c_7381);
+return_funcall1((closure)&c_7341,  &c_7379);; 
 }
 
-static void __lambda_1(int argc, object self_7320, object r_737) {
+static void __lambda_6(int argc, object self_7325, object r_7312) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
-closureN_type c_7333;
-c_7333.tag = closureN_tag;
- c_7333.fn = (function_type)__lambda_0;
-c_7333.num_args = 1;
-c_7333.num_elt = 1;
-c_7333.elts = (object *)alloca(sizeof(object) * 1);
-c_7333.elts[0] = ((closureN)self_7320)->elts[0];
+closureN_type c_7343;
+c_7343.tag = closureN_tag;
+ c_7343.fn = (function_type)__lambda_5;
+c_7343.num_args = 1;
+c_7343.num_elt = 1;
+c_7343.elts = (object *)alloca(sizeof(object) * 1);
+c_7343.elts[0] = ((closureN)self_7325)->elts[0];
 
-return_funcall1((closure)&c_7333,  global_set(__glo__85c_91file_91header_91comment_85, r_737));; 
+return_funcall1((closure)&c_7343,  global_set(__glo__85c_91file_91header_91comment_85, r_7312));; 
 }
 
-static void __lambda_0(int argc, object self_7321, object r_736) {
+static void __lambda_5(int argc, object self_7326, object r_736) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
-return_funcall1(  ((closureN)self_7321)->elts[0],  global_set(__glo__85Cyc_91version_91banner_85, __glo__85version_91banner_85));; 
+
+closureN_type c_7345;
+c_7345.tag = closureN_tag;
+ c_7345.fn = (function_type)__lambda_4;
+c_7345.num_args = 1;
+c_7345.num_elt = 1;
+c_7345.elts = (object *)alloca(sizeof(object) * 1);
+c_7345.elts[0] = ((closureN)self_7326)->elts[0];
+
+return_funcall1((closure)&c_7345,  global_set(__glo__85Cyc_91version_91banner_85, __glo__85version_91banner_85));; 
+}
+
+static void __lambda_4(int argc, object self_7327, object r_737) {
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+
+closureN_type c_7347;
+c_7347.tag = closureN_tag;
+ c_7347.fn = (function_type)__lambda_3;
+c_7347.num_args = 1;
+c_7347.num_elt = 1;
+c_7347.elts = (object *)alloca(sizeof(object) * 1);
+c_7347.elts[0] = ((closureN)self_7327)->elts[0];
+
+
+make_string(c_7372, "0.0.2 (Pre-release)");
+return_funcall1((closure)&c_7347,  global_set(__glo__85version_85, &c_7372));; 
+}
+
+static void __lambda_3(int argc, object self_7328, object r_738) {
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+
+closureN_type c_7349;
+c_7349.tag = closureN_tag;
+ c_7349.fn = (function_type)__lambda_2;
+c_7349.num_args = 1;
+c_7349.num_elt = 1;
+c_7349.elts = (object *)alloca(sizeof(object) * 1);
+c_7349.elts[0] = ((closureN)self_7328)->elts[0];
+
+
+make_string(c_7368, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     Scheme-to-C compiler\n      ,@             https://github.com/justinethier/cyclone\n      '@        \n      .@        \n       @@     #@     (c) 2014 Justin Ethier\n       `@@@#@@@.     Version ");
+
+make_string(c_7369, "\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
+
+string_type c_7367 = Cyc_string_append(3,&c_7368, __glo__85version_85, &c_7369);
+return_funcall1((closure)&c_7349,  &c_7367);; 
+}
+
+static void __lambda_2(int argc, object self_7329, object r_7311) {
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+
+closureN_type c_7351;
+c_7351.tag = closureN_tag;
+ c_7351.fn = (function_type)__lambda_1;
+c_7351.num_args = 1;
+c_7351.num_elt = 1;
+c_7351.elts = (object *)alloca(sizeof(object) * 1);
+c_7351.elts[0] = ((closureN)self_7329)->elts[0];
+
+return_funcall1((closure)&c_7351,  global_set(__glo__85version_91banner_85, r_7311));; 
+}
+
+static void __lambda_1(int argc, object self_7330, object r_739) {
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+
+closureN_type c_7353;
+c_7353.tag = closureN_tag;
+ c_7353.fn = (function_type)__lambda_0;
+c_7353.num_args = 1;
+c_7353.num_elt = 1;
+c_7353.elts = (object *)alloca(sizeof(object) * 1);
+c_7353.elts[0] = ((closureN)self_7330)->elts[0];
+
+
+make_string(c_7361, "/**\n ** This file was automatically generated by the Cyclone scheme compiler\n **\n ** (c) 2014 Justin Ethier\n ** Version ");
+
+make_string(c_7362, "\n **\n **/\n");
+
+string_type c_7360 = Cyc_string_append(3,&c_7361, __glo__85version_85, &c_7362);
+return_funcall1((closure)&c_7353,  &c_7360);; 
+}
+
+static void __lambda_0(int argc, object self_7331, object r_7310) {
+  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+return_funcall1(  ((closureN)self_7331)->elts[0],  global_set(__glo__85c_91file_91header_91comment_85, r_7310));; 
 }
 
 void c_schemecyclonecommon_entry_pt(argc, cont,value) int argc; closure cont; object value;{ 
@@ -152,25 +241,25 @@ void c_schemecyclonecommon_entry_pt(argc, cont,value) int argc; closure cont; ob
   add_global((object *) &__glo__85c_91file_91header_91comment_85);
   add_global((object *) &__glo__85version_91banner_85);
   add_global((object *) &__glo__85version_85);
-  mclosure0(c_7323, (function_type)__lambda_5);c_7323.num_args = 0; 
-  __glo_lib_91init_117schemecyclonecommon = &c_7323; 
+  mclosure0(c_7333, (function_type)__lambda_10);c_7333.num_args = 0; 
+  __glo_lib_91init_117schemecyclonecommon = &c_7333; 
   __glo__85Cyc_91version_91banner_85 = boolean_f; 
   __glo__85c_91file_91header_91comment_85 = boolean_f; 
   __glo__85version_91banner_85 = boolean_f; 
-  make_string(c_7322, "0.0.2 (Pre-release)"); 
-  __glo__85version_85 = &c_7322; 
+  make_string(c_7332, "0.0.2 (Pre-release)"); 
+  __glo__85version_85 = &c_7332; 
 
-  make_cvar(cvar_7353, (object *)&__glo_lib_91init_117schemecyclonecommon);make_cons(pair_7354, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7353);
-  make_cvar(cvar_7355, (object *)&__glo__85Cyc_91version_91banner_85);make_cons(pair_7356, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7355);
-  make_cvar(cvar_7357, (object *)&__glo__85c_91file_91header_91comment_85);make_cons(pair_7358, find_or_add_symbol("*c-file-header-comment*"), &cvar_7357);
-  make_cvar(cvar_7359, (object *)&__glo__85version_91banner_85);make_cons(pair_7360, find_or_add_symbol("*version-banner*"), &cvar_7359);
-  make_cvar(cvar_7361, (object *)&__glo__85version_85);make_cons(pair_7362, find_or_add_symbol("*version*"), &cvar_7361);
-make_cons(c_7363, &pair_7354,Cyc_global_variables);
-make_cons(c_7364, &pair_7356, &c_7363);
-make_cons(c_7365, &pair_7358, &c_7364);
-make_cons(c_7366, &pair_7360, &c_7365);
-make_cons(c_7367, &pair_7362, &c_7366);
-Cyc_global_variables = &c_7367;
+  make_cvar(cvar_7390, (object *)&__glo_lib_91init_117schemecyclonecommon);make_cons(pair_7391, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7390);
+  make_cvar(cvar_7392, (object *)&__glo__85Cyc_91version_91banner_85);make_cons(pair_7393, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7392);
+  make_cvar(cvar_7394, (object *)&__glo__85c_91file_91header_91comment_85);make_cons(pair_7395, find_or_add_symbol("*c-file-header-comment*"), &cvar_7394);
+  make_cvar(cvar_7396, (object *)&__glo__85version_91banner_85);make_cons(pair_7397, find_or_add_symbol("*version-banner*"), &cvar_7396);
+  make_cvar(cvar_7398, (object *)&__glo__85version_85);make_cons(pair_7399, find_or_add_symbol("*version*"), &cvar_7398);
+make_cons(c_73100, &pair_7391,Cyc_global_variables);
+make_cons(c_73101, &pair_7393, &c_73100);
+make_cons(c_73102, &pair_7395, &c_73101);
+make_cons(c_73103, &pair_7397, &c_73102);
+make_cons(c_73104, &pair_7399, &c_73103);
+Cyc_global_variables = &c_73104;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonecommon)->fn)(1, cont, cont);
 }
