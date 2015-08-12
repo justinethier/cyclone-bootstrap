@@ -344,6 +344,7 @@ extern object __glo_write;
 extern object __glo__85do_91code_91gen_85;
 extern object __glo__85trace_91level_85;
 extern object __glo__85primitives_85;
+extern object __glo_get_91macros;
 extern object __glo_built_91in_91syms;
 extern object __glo_trace;
 extern object __glo_trace_117error;

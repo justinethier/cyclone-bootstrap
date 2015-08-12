@@ -44,7 +44,6 @@ install-deps:
 	$(MKDIR) $(DESTDIR)$(DATADIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
-	$(INSTALL) -m0644 scheme/*.scm $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/*.sld $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
 
@@ -70,7 +69,6 @@ install:
 	$(INSTALL) -m0755 icyc $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
-	$(INSTALL) -m0644 scheme/*.scm $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/*.sld $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/*.o $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
