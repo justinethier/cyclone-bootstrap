@@ -24,6 +24,7 @@
     *do-code-gen*
     *trace-level*
     *primitives*
+    get-macros
     built-in-syms
     trace
     trace:error
@@ -135,6 +136,7 @@
 ;; Built-in macros
 ;; TODO: just a stub, real code would read (define-syntax) 
 ;;       from a lib file or such
+(define (get-macros) *defined-macros*)
 (define *defined-macros* 
   (list 
     (cons 'and 
@@ -1025,7 +1027,17 @@
              (trans (caddr exp))
              (body (cadr trans)))
         (set! *defined-macros* (cons (cons name body) *defined-macros*))
-        #t))
+        ;; Keep as a 'define' form so available at runtime
+        ;; TODO: may run into issues with expanding now, before some
+        ;; of the macros are defined. may need to make a special pass
+        ;; to do loading or expansion of macro bodies
+        ;; TODO: would it be better to use *define-macros* directly instead
+        ;; of trying to define it here? that might help prevent issues where
+        ;; an expand is called here before all macros are defined yet
+        ;;  - no, we need to do this here so code is carried though all transforms
+        ;;    (alpha, cps, closure, etc). otherwise code has to be interpreted during expansion
+        ;;
+        `(define ,name ,(expand body))))
      ((macro? exp *defined-macros*)
        (expand ;; Could expand into another macro
          (macro-expand exp *defined-macros*)))
@@ -1204,7 +1216,8 @@
         (lambda (ast)
           (or (not (define? ast))
               (member (define->var ast) all-fv)
-              (member (define->var ast) lib-exports)))
+              (member (define->var ast) lib-exports)
+              (assoc (define->var ast) (get-macros))))
         code)))
   ;; Keep filtering until no more vars are removed
   (define (loop code)
