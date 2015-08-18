@@ -156,8 +156,8 @@ extern object __glo_write_91char;
 extern object __glo_flush_91output_91port;
 extern object __glo_read_91line;
 extern object __glo_features;
-extern object __glo_and;
-extern object __glo_or;
+extern object __glo_my_91and;
+extern object __glo_my_91or;
 extern object __glo_tagged_91list_127;
 extern object __glo_if_127;
 extern object __glo_begin_127;
@@ -173,359 +173,386 @@ extern object __glo_filter;
 #include "cyclone/runtime.h"
 defsymbol(quote);
 defsymbol(define_91syntax);
-static void __lambda_25(int argc, closure _,object k_7314) ;
-static void __lambda_24(int argc, object self_7351, object r_7315) ;
-static void __lambda_23(int argc, object self_7352, object r_7316) ;
-static void __lambda_22(int argc, closure _,object k_7319, object exp_732, object defined_91macros_731) ;
-static void __lambda_21(int argc, object self_7353, object r_7331) ;
-static void __lambda_20(int argc, object self_7354, object r_7320) ;
-static void __lambda_19(int argc, object self_7355, object macro_733) ;
-static void __lambda_18(int argc, object self_7356, object r_7321) ;
-static void __lambda_17(int argc, object self_7357, object r_7322) ;
-static void __lambda_16(int argc, object self_7358, object k_7326, object sym_736) ;
-static void __lambda_15(int argc, object self_7359, object r_7323) ;
-static void __lambda_14(int argc, object self_7360, object k_7325, object sym_91a_735, object sym_91b_734) ;
-static void __lambda_13(int argc, object self_7361, object r_7324) ;
-static void __lambda_12(int argc, object self_7362, object k_7327) ;
-static void __lambda_11(int argc, object self_7363, object r_7330) ;
-static void __lambda_10(int argc, object self_7364, object r_7328) ;
-static void __lambda_9(int argc, object self_7365, object r_7329) ;
-static void __lambda_8(int argc, closure _,object k_7334, object exp_738, object defined_91macros_737) ;
-static void __lambda_7(int argc, object self_7366, object r_7335) ;
-static void __lambda_6(int argc, closure _,object k_7338, object exp_739) ;
-static void __lambda_5(int argc, object self_7367, object r_7339) ;
-static void __lambda_4(int argc, closure _,object k_7342) ;
-static void __lambda_3(int argc, closure _,object k_7345, object name_7311, object body_7310) ;
-static void __lambda_2(int argc, object self_7368, object r_7348) ;
-static void __lambda_1(int argc, object self_7369, object r_7347) ;
-static void __lambda_0(int argc, object self_7370, object r_7346) ;
+static void __lambda_26(int argc, closure _,object k_7316) ;
+static void __lambda_25(int argc, object self_7353, object r_7317) ;
+static void __lambda_24(int argc, object self_7354, object r_7318) ;
+static void __lambda_23(int argc, closure _,object k_7321, object exp_732, object defined_91macros_731) ;
+static void __lambda_22(int argc, object self_7355, object k_7333, object sym_735) ;
+static void __lambda_21(int argc, object self_7356, object r_7322) ;
+static void __lambda_20(int argc, object self_7357, object k_7332, object sym_91a_734, object sym_91b_733) ;
+static void __lambda_19(int argc, object self_7358, object r_7323) ;
+static void __lambda_18(int argc, object self_7359, object rename_737, object compare_127_736) ;
+static void __lambda_17(int argc, object self_7360, object r_7331) ;
+static void __lambda_16(int argc, object self_7361, object r_7324) ;
+static void __lambda_15(int argc, object self_7362, object macro_738) ;
+static void __lambda_14(int argc, object self_7363, object r_7325) ;
+static void __lambda_13(int argc, object self_7364, object r_7326) ;
+static void __lambda_12(int argc, object self_7365, object k_7327) ;
+static void __lambda_11(int argc, object self_7366, object r_7330) ;
+static void __lambda_10(int argc, object self_7367, object r_7328) ;
+static void __lambda_9(int argc, object self_7368, object r_7329) ;
+static void __lambda_8(int argc, closure _,object k_7336, object exp_7310, object defined_91macros_739) ;
+static void __lambda_7(int argc, object self_7369, object r_7337) ;
+static void __lambda_6(int argc, closure _,object k_7340, object exp_7311) ;
+static void __lambda_5(int argc, object self_7370, object r_7341) ;
+static void __lambda_4(int argc, closure _,object k_7344) ;
+static void __lambda_3(int argc, closure _,object k_7347, object name_7313, object body_7312) ;
+static void __lambda_2(int argc, object self_7371, object r_7350) ;
+static void __lambda_1(int argc, object self_7372, object r_7349) ;
+static void __lambda_0(int argc, object self_7373, object r_7348) ;
 
-static void __lambda_25(int argc, closure _,object k_7314) {
+static void __lambda_26(int argc, closure _,object k_7316) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
-closureN_type c_73162;
-c_73162.tag = closureN_tag;
- c_73162.fn = (function_type)__lambda_24;
-c_73162.num_args = 1;
-c_73162.num_elt = 1;
-c_73162.elts = (object *)alloca(sizeof(object) * 1);
-c_73162.elts[0] = k_7314;
+closureN_type c_73169;
+c_73169.tag = closureN_tag;
+ c_73169.fn = (function_type)__lambda_25;
+c_73169.num_args = 1;
+c_73169.num_elt = 1;
+c_73169.elts = (object *)alloca(sizeof(object) * 1);
+c_73169.elts[0] = k_7316;
 
 
-make_int(c_73169, 0);
-return_funcall1((closure)&c_73162,  &c_73169);; 
+make_int(c_73176, 0);
+return_funcall1((closure)&c_73169,  &c_73176);; 
 }
 
-static void __lambda_24(int argc, object self_7351, object r_7315) {
+static void __lambda_25(int argc, object self_7353, object r_7317) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
-closureN_type c_73164;
-c_73164.tag = closureN_tag;
- c_73164.fn = (function_type)__lambda_23;
-c_73164.num_args = 1;
-c_73164.num_elt = 1;
-c_73164.elts = (object *)alloca(sizeof(object) * 1);
-c_73164.elts[0] = ((closureN)self_7351)->elts[0];
+closureN_type c_73171;
+c_73171.tag = closureN_tag;
+ c_73171.fn = (function_type)__lambda_24;
+c_73171.num_args = 1;
+c_73171.num_elt = 1;
+c_73171.elts = (object *)alloca(sizeof(object) * 1);
+c_73171.elts[0] = ((closureN)self_7353)->elts[0];
 
-return_funcall1((closure)&c_73164,  nil);; 
+return_funcall1((closure)&c_73171,  nil);; 
 }
 
-static void __lambda_23(int argc, object self_7352, object r_7316) {
+static void __lambda_24(int argc, object self_7354, object r_7318) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
-return_funcall1(  ((closureN)self_7352)->elts[0],  global_set(__glo__85macro_117defined_91macros_85, r_7316));; 
+return_funcall1(  ((closureN)self_7354)->elts[0],  global_set(__glo__85macro_117defined_91macros_85, r_7318));; 
 }
 
-static void __lambda_22(int argc, closure _,object k_7319, object exp_732, object defined_91macros_731) {
+static void __lambda_23(int argc, closure _,object k_7321, object exp_732, object defined_91macros_731) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
-closureN_type c_73108;
-c_73108.tag = closureN_tag;
- c_73108.fn = (function_type)__lambda_21;
-c_73108.num_args = 1;
-c_73108.num_elt = 3;
-c_73108.elts = (object *)alloca(sizeof(object) * 3);
-c_73108.elts[0] = defined_91macros_731;
-c_73108.elts[1] = exp_732;
-c_73108.elts[2] = k_7319;
+closureN_type c_73111;
+c_73111.tag = closureN_tag;
+ c_73111.fn = (function_type)__lambda_21;
+c_73111.num_args = 1;
+c_73111.num_elt = 3;
+c_73111.elts = (object *)alloca(sizeof(object) * 3);
+c_73111.elts[0] = defined_91macros_731;
+c_73111.elts[1] = exp_732;
+c_73111.elts[2] = k_7321;
 
-return_funcall1((closure)&c_73108,  car(exp_732));; 
+
+mclosure0(c_73165, (function_type)__lambda_22);c_73165.num_args = 1;
+return_funcall1((closure)&c_73111,  &c_73165);; 
 }
 
-static void __lambda_21(int argc, object self_7353, object r_7331) {
+static void __lambda_22(int argc, object self_7355, object k_7333, object sym_735) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-
-closureN_type c_73110;
-c_73110.tag = closureN_tag;
- c_73110.fn = (function_type)__lambda_20;
-c_73110.num_args = 1;
-c_73110.num_elt = 2;
-c_73110.elts = (object *)alloca(sizeof(object) * 2);
-c_73110.elts[0] = ((closureN)self_7353)->elts[1];
-c_73110.elts[1] = ((closureN)self_7353)->elts[2];
-
-return_funcall1((closure)&c_73110,  assoc(r_7331, ((closureN)self_7353)->elts[0]));; 
+return_funcall1(  k_7333,  sym_735);; 
 }
 
-static void __lambda_20(int argc, object self_7354, object r_7320) {
+static void __lambda_21(int argc, object self_7356, object r_7322) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
-closureN_type c_73112;
-c_73112.tag = closureN_tag;
- c_73112.fn = (function_type)__lambda_19;
-c_73112.num_args = 1;
-c_73112.num_elt = 2;
-c_73112.elts = (object *)alloca(sizeof(object) * 2);
-c_73112.elts[0] = ((closureN)self_7354)->elts[0];
-c_73112.elts[1] = ((closureN)self_7354)->elts[1];
+closureN_type c_73113;
+c_73113.tag = closureN_tag;
+ c_73113.fn = (function_type)__lambda_19;
+c_73113.num_args = 1;
+c_73113.num_elt = 4;
+c_73113.elts = (object *)alloca(sizeof(object) * 4);
+c_73113.elts[0] = ((closureN)self_7356)->elts[0];
+c_73113.elts[1] = ((closureN)self_7356)->elts[1];
+c_73113.elts[2] = ((closureN)self_7356)->elts[2];
+c_73113.elts[3] = r_7322;
 
-return_funcall1((closure)&c_73112,  r_7320);; 
+
+mclosure0(c_73161, (function_type)__lambda_20);c_73161.num_args = 2;
+return_funcall1((closure)&c_73113,  &c_73161);; 
 }
 
-static void __lambda_19(int argc, object self_7355, object macro_733) {
+static void __lambda_20(int argc, object self_7357, object k_7332, object sym_91a_734, object sym_91b_733) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-if( !eq(boolean_f, macro_733) ){ 
+return_funcall1(  k_7332,  Cyc_eq(sym_91a_734, sym_91b_733));; 
+}
+
+static void __lambda_19(int argc, object self_7358, object r_7323) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73115;
+c_73115.tag = closureN_tag;
+ c_73115.fn = (function_type)__lambda_18;
+c_73115.num_args = 2;
+c_73115.num_elt = 3;
+c_73115.elts = (object *)alloca(sizeof(object) * 3);
+c_73115.elts[0] = ((closureN)self_7358)->elts[0];
+c_73115.elts[1] = ((closureN)self_7358)->elts[1];
+c_73115.elts[2] = ((closureN)self_7358)->elts[2];
+
+return_funcall2((closure)&c_73115,  ((closureN)self_7358)->elts[3], r_7323);; 
+}
+
+static void __lambda_18(int argc, object self_7359, object rename_737, object compare_127_736) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73117;
+c_73117.tag = closureN_tag;
+ c_73117.fn = (function_type)__lambda_17;
+c_73117.num_args = 1;
+c_73117.num_elt = 5;
+c_73117.elts = (object *)alloca(sizeof(object) * 5);
+c_73117.elts[0] = compare_127_736;
+c_73117.elts[1] = ((closureN)self_7359)->elts[0];
+c_73117.elts[2] = ((closureN)self_7359)->elts[1];
+c_73117.elts[3] = ((closureN)self_7359)->elts[2];
+c_73117.elts[4] = rename_737;
+
+return_funcall1((closure)&c_73117,  car(((closureN)self_7359)->elts[1]));; 
+}
+
+static void __lambda_17(int argc, object self_7360, object r_7331) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73119;
+c_73119.tag = closureN_tag;
+ c_73119.fn = (function_type)__lambda_16;
+c_73119.num_args = 1;
+c_73119.num_elt = 4;
+c_73119.elts = (object *)alloca(sizeof(object) * 4);
+c_73119.elts[0] = ((closureN)self_7360)->elts[0];
+c_73119.elts[1] = ((closureN)self_7360)->elts[2];
+c_73119.elts[2] = ((closureN)self_7360)->elts[3];
+c_73119.elts[3] = ((closureN)self_7360)->elts[4];
+
+return_funcall1((closure)&c_73119,  assoc(r_7331, ((closureN)self_7360)->elts[1]));; 
+}
+
+static void __lambda_16(int argc, object self_7361, object r_7324) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73121;
+c_73121.tag = closureN_tag;
+ c_73121.fn = (function_type)__lambda_15;
+c_73121.num_args = 1;
+c_73121.num_elt = 4;
+c_73121.elts = (object *)alloca(sizeof(object) * 4);
+c_73121.elts[0] = ((closureN)self_7361)->elts[0];
+c_73121.elts[1] = ((closureN)self_7361)->elts[1];
+c_73121.elts[2] = ((closureN)self_7361)->elts[2];
+c_73121.elts[3] = ((closureN)self_7361)->elts[3];
+
+return_funcall1((closure)&c_73121,  r_7324);; 
+}
+
+static void __lambda_15(int argc, object self_7362, object macro_738) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+if( !eq(boolean_f, macro_738) ){ 
   
-closureN_type c_73114;
-c_73114.tag = closureN_tag;
- c_73114.fn = (function_type)__lambda_18;
-c_73114.num_args = 1;
-c_73114.num_elt = 3;
-c_73114.elts = (object *)alloca(sizeof(object) * 3);
-c_73114.elts[0] = ((closureN)self_7355)->elts[0];
-c_73114.elts[1] = ((closureN)self_7355)->elts[1];
-c_73114.elts[2] = macro_733;
+closureN_type c_73123;
+c_73123.tag = closureN_tag;
+ c_73123.fn = (function_type)__lambda_14;
+c_73123.num_args = 1;
+c_73123.num_elt = 5;
+c_73123.elts = (object *)alloca(sizeof(object) * 5);
+c_73123.elts[0] = ((closureN)self_7362)->elts[0];
+c_73123.elts[1] = ((closureN)self_7362)->elts[1];
+c_73123.elts[2] = ((closureN)self_7362)->elts[2];
+c_73123.elts[3] = macro_738;
+c_73123.elts[4] = ((closureN)self_7362)->elts[3];
 
-return_funcall1((closure)&c_73114,  cdr(macro_733));
+return_funcall1((closure)&c_73123,  cdr(macro_738));
 } else { 
-  return_funcall1(  ((closureN)self_7355)->elts[1],  ((closureN)self_7355)->elts[0]);}
+  return_funcall1(  ((closureN)self_7362)->elts[2],  ((closureN)self_7362)->elts[1]);}
 ; 
 }
 
-static void __lambda_18(int argc, object self_7356, object r_7321) {
+static void __lambda_14(int argc, object self_7363, object r_7325) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
-closureN_type c_73116;
-c_73116.tag = closureN_tag;
- c_73116.fn = (function_type)__lambda_12;
-c_73116.num_args = 0;
-c_73116.num_elt = 2;
-c_73116.elts = (object *)alloca(sizeof(object) * 2);
-c_73116.elts[0] = ((closureN)self_7356)->elts[0];
-c_73116.elts[1] = ((closureN)self_7356)->elts[2];
+closureN_type c_73125;
+c_73125.tag = closureN_tag;
+ c_73125.fn = (function_type)__lambda_12;
+c_73125.num_args = 0;
+c_73125.num_elt = 2;
+c_73125.elts = (object *)alloca(sizeof(object) * 2);
+c_73125.elts[0] = ((closureN)self_7363)->elts[1];
+c_73125.elts[1] = ((closureN)self_7363)->elts[3];
 
 
+closureN_type c_73143;
+c_73143.tag = closureN_tag;
+ c_73143.fn = (function_type)__lambda_13;
+c_73143.num_args = 1;
+c_73143.num_elt = 4;
+c_73143.elts = (object *)alloca(sizeof(object) * 4);
+c_73143.elts[0] = ((closureN)self_7363)->elts[0];
+c_73143.elts[1] = ((closureN)self_7363)->elts[2];
+c_73143.elts[2] = r_7325;
+c_73143.elts[3] = ((closureN)self_7363)->elts[4];
+
+return_funcall1((closure)&c_73125,  &c_73143);; 
+}
+
+static void __lambda_13(int argc, object self_7364, object r_7326) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+return_funcall4(  ((closureN)self_7364)->elts[2],  ((closureN)self_7364)->elts[1], r_7326, ((closureN)self_7364)->elts[3], ((closureN)self_7364)->elts[0]);; 
+}
+
+static void __lambda_12(int argc, object self_7365, object k_7327) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73127;
+c_73127.tag = closureN_tag;
+ c_73127.fn = (function_type)__lambda_11;
+c_73127.num_args = 1;
+c_73127.num_elt = 2;
+c_73127.elts = (object *)alloca(sizeof(object) * 2);
+c_73127.elts[0] = ((closureN)self_7365)->elts[0];
+c_73127.elts[1] = k_7327;
+
+return_funcall1((closure)&c_73127,  cdr(((closureN)self_7365)->elts[1]));; 
+}
+
+static void __lambda_11(int argc, object self_7366, object r_7330) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+
+closureN_type c_73129;
+c_73129.tag = closureN_tag;
+ c_73129.fn = (function_type)__lambda_10;
+c_73129.num_args = 1;
+c_73129.num_elt = 2;
+c_73129.elts = (object *)alloca(sizeof(object) * 2);
+c_73129.elts[0] = ((closureN)self_7366)->elts[0];
+c_73129.elts[1] = ((closureN)self_7366)->elts[1];
+
+return_funcall1((closure)&c_73129,  Cyc_is_procedure(r_7330));; 
+}
+
+static void __lambda_10(int argc, object self_7367, object r_7328) {
+  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
+if( !eq(boolean_f, r_7328) ){ 
+  return_funcall1(  ((closureN)self_7367)->elts[1],  ((closureN)self_7367)->elts[0]);
+} else { 
+  
 closureN_type c_73134;
 c_73134.tag = closureN_tag;
- c_73134.fn = (function_type)__lambda_17;
+ c_73134.fn = (function_type)__lambda_9;
 c_73134.num_args = 1;
 c_73134.num_elt = 2;
 c_73134.elts = (object *)alloca(sizeof(object) * 2);
-c_73134.elts[0] = ((closureN)self_7356)->elts[1];
-c_73134.elts[1] = r_7321;
+c_73134.elts[0] = ((closureN)self_7367)->elts[0];
+c_73134.elts[1] = ((closureN)self_7367)->elts[1];
 
-return_funcall1((closure)&c_73116,  &c_73134);; 
-}
-
-static void __lambda_17(int argc, object self_7357, object r_7322) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-
-closureN_type c_73136;
-c_73136.tag = closureN_tag;
- c_73136.fn = (function_type)__lambda_15;
-c_73136.num_args = 1;
-c_73136.num_elt = 3;
-c_73136.elts = (object *)alloca(sizeof(object) * 3);
-c_73136.elts[0] = ((closureN)self_7357)->elts[0];
-c_73136.elts[1] = ((closureN)self_7357)->elts[1];
-c_73136.elts[2] = r_7322;
-
-
-mclosure0(c_73148, (function_type)__lambda_16);c_73148.num_args = 1;
-return_funcall1((closure)&c_73136,  &c_73148);; 
-}
-
-static void __lambda_16(int argc, object self_7358, object k_7326, object sym_736) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-return_funcall1(  k_7326,  sym_736);; 
-}
-
-static void __lambda_15(int argc, object self_7359, object r_7323) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-
-closureN_type c_73138;
-c_73138.tag = closureN_tag;
- c_73138.fn = (function_type)__lambda_13;
-c_73138.num_args = 1;
-c_73138.num_elt = 4;
-c_73138.elts = (object *)alloca(sizeof(object) * 4);
-c_73138.elts[0] = ((closureN)self_7359)->elts[0];
-c_73138.elts[1] = ((closureN)self_7359)->elts[1];
-c_73138.elts[2] = ((closureN)self_7359)->elts[2];
-c_73138.elts[3] = r_7323;
-
-
-mclosure0(c_73144, (function_type)__lambda_14);c_73144.num_args = 2;
-return_funcall1((closure)&c_73138,  &c_73144);; 
-}
-
-static void __lambda_14(int argc, object self_7360, object k_7325, object sym_91a_735, object sym_91b_734) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-return_funcall1(  k_7325,  Cyc_eq(sym_91a_735, sym_91b_734));; 
-}
-
-static void __lambda_13(int argc, object self_7361, object r_7324) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-return_funcall4(  ((closureN)self_7361)->elts[1],  ((closureN)self_7361)->elts[0], ((closureN)self_7361)->elts[2], ((closureN)self_7361)->elts[3], r_7324);; 
-}
-
-static void __lambda_12(int argc, object self_7362, object k_7327) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-
-closureN_type c_73118;
-c_73118.tag = closureN_tag;
- c_73118.fn = (function_type)__lambda_11;
-c_73118.num_args = 1;
-c_73118.num_elt = 2;
-c_73118.elts = (object *)alloca(sizeof(object) * 2);
-c_73118.elts[0] = ((closureN)self_7362)->elts[0];
-c_73118.elts[1] = k_7327;
-
-return_funcall1((closure)&c_73118,  cdr(((closureN)self_7362)->elts[1]));; 
-}
-
-static void __lambda_11(int argc, object self_7363, object r_7330) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-
-closureN_type c_73120;
-c_73120.tag = closureN_tag;
- c_73120.fn = (function_type)__lambda_10;
-c_73120.num_args = 1;
-c_73120.num_elt = 2;
-c_73120.elts = (object *)alloca(sizeof(object) * 2);
-c_73120.elts[0] = ((closureN)self_7363)->elts[0];
-c_73120.elts[1] = ((closureN)self_7363)->elts[1];
-
-return_funcall1((closure)&c_73120,  Cyc_is_procedure(r_7330));; 
-}
-
-static void __lambda_10(int argc, object self_7364, object r_7328) {
-  Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-if( !eq(boolean_f, r_7328) ){ 
-  return_funcall1(  ((closureN)self_7364)->elts[1],  ((closureN)self_7364)->elts[0]);
-} else { 
-  
-closureN_type c_73125;
-c_73125.tag = closureN_tag;
- c_73125.fn = (function_type)__lambda_9;
-c_73125.num_args = 1;
-c_73125.num_elt = 2;
-c_73125.elts = (object *)alloca(sizeof(object) * 2);
-c_73125.elts[0] = ((closureN)self_7364)->elts[0];
-c_73125.elts[1] = ((closureN)self_7364)->elts[1];
-
-return_funcall1((closure)&c_73125,  quote_quote);}
+return_funcall1((closure)&c_73134,  quote_quote);}
 ; 
 }
 
-static void __lambda_9(int argc, object self_7365, object r_7329) {
+static void __lambda_9(int argc, object self_7368, object r_7329) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
-return_funcall3(  __glo__list,  ((closureN)self_7365)->elts[1], r_7329, ((closureN)self_7365)->elts[0]);; 
+return_funcall3(  __glo__list,  ((closureN)self_7368)->elts[1], r_7329, ((closureN)self_7368)->elts[0]);; 
 }
 
-static void __lambda_8(int argc, closure _,object k_7334, object exp_738, object defined_91macros_737) {
+static void __lambda_8(int argc, closure _,object k_7336, object exp_7310, object defined_91macros_739) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:macro?");
 
-closureN_type c_7398;
-c_7398.tag = closureN_tag;
- c_7398.fn = (function_type)__lambda_7;
-c_7398.num_args = 1;
-c_7398.num_elt = 2;
-c_7398.elts = (object *)alloca(sizeof(object) * 2);
-c_7398.elts[0] = defined_91macros_737;
-c_7398.elts[1] = k_7334;
+closureN_type c_73101;
+c_73101.tag = closureN_tag;
+ c_73101.fn = (function_type)__lambda_7;
+c_73101.num_args = 1;
+c_73101.num_elt = 2;
+c_73101.elts = (object *)alloca(sizeof(object) * 2);
+c_73101.elts[0] = defined_91macros_739;
+c_73101.elts[1] = k_7336;
 
-return_funcall1((closure)&c_7398,  car(exp_738));; 
+return_funcall1((closure)&c_73101,  car(exp_7310));; 
 }
 
-static void __lambda_7(int argc, object self_7366, object r_7335) {
+static void __lambda_7(int argc, object self_7369, object r_7337) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:macro?");
-return_funcall1(  ((closureN)self_7366)->elts[1],  assoc(r_7335, ((closureN)self_7366)->elts[0]));; 
+return_funcall1(  ((closureN)self_7369)->elts[1],  assoc(r_7337, ((closureN)self_7369)->elts[0]));; 
 }
 
-static void __lambda_6(int argc, closure _,object k_7338, object exp_739) {
+static void __lambda_6(int argc, closure _,object k_7340, object exp_7311) {
   Cyc_st_add("scheme/cyclone/macros.sld:define-syntax?");
 
-closureN_type c_7392;
-c_7392.tag = closureN_tag;
- c_7392.fn = (function_type)__lambda_5;
-c_7392.num_args = 1;
-c_7392.num_elt = 2;
-c_7392.elts = (object *)alloca(sizeof(object) * 2);
-c_7392.elts[0] = exp_739;
-c_7392.elts[1] = k_7338;
+closureN_type c_7395;
+c_7395.tag = closureN_tag;
+ c_7395.fn = (function_type)__lambda_5;
+c_7395.num_args = 1;
+c_7395.num_elt = 2;
+c_7395.elts = (object *)alloca(sizeof(object) * 2);
+c_7395.elts[0] = exp_7311;
+c_7395.elts[1] = k_7340;
 
-return_funcall1((closure)&c_7392,  quote_define_91syntax);; 
+return_funcall1((closure)&c_7395,  quote_define_91syntax);; 
 }
 
-static void __lambda_5(int argc, object self_7367, object r_7339) {
+static void __lambda_5(int argc, object self_7370, object r_7341) {
   Cyc_st_add("scheme/cyclone/macros.sld:define-syntax?");
-return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_7367)->elts[1], r_7339, ((closureN)self_7367)->elts[0]);; 
+return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_7370)->elts[1], r_7341, ((closureN)self_7370)->elts[0]);; 
 }
 
-static void __lambda_4(int argc, closure _,object k_7342) {
+static void __lambda_4(int argc, closure _,object k_7344) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:get-defined-macros");
-return_funcall1(  k_7342,  __glo__85macro_117defined_91macros_85);; 
+return_funcall1(  k_7344,  __glo__85macro_117defined_91macros_85);; 
 }
 
-static void __lambda_3(int argc, closure _,object k_7345, object name_7311, object body_7310) {
+static void __lambda_3(int argc, closure _,object k_7347, object name_7313, object body_7312) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
-closureN_type c_7373;
-c_7373.tag = closureN_tag;
- c_7373.fn = (function_type)__lambda_2;
-c_7373.num_args = 1;
-c_7373.num_elt = 1;
-c_7373.elts = (object *)alloca(sizeof(object) * 1);
-c_7373.elts[0] = k_7345;
+closureN_type c_7376;
+c_7376.tag = closureN_tag;
+ c_7376.fn = (function_type)__lambda_2;
+c_7376.num_args = 1;
+c_7376.num_elt = 1;
+c_7376.elts = (object *)alloca(sizeof(object) * 1);
+c_7376.elts[0] = k_7347;
 
 
-make_cons(c_7387,name_7311, body_7310);
-return_funcall1((closure)&c_7373,  &c_7387);; 
+make_cons(c_7390,name_7313, body_7312);
+return_funcall1((closure)&c_7376,  &c_7390);; 
 }
 
-static void __lambda_2(int argc, object self_7368, object r_7348) {
+static void __lambda_2(int argc, object self_7371, object r_7350) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
-closureN_type c_7375;
-c_7375.tag = closureN_tag;
- c_7375.fn = (function_type)__lambda_1;
-c_7375.num_args = 1;
-c_7375.num_elt = 1;
-c_7375.elts = (object *)alloca(sizeof(object) * 1);
-c_7375.elts[0] = ((closureN)self_7368)->elts[0];
+closureN_type c_7378;
+c_7378.tag = closureN_tag;
+ c_7378.fn = (function_type)__lambda_1;
+c_7378.num_args = 1;
+c_7378.num_elt = 1;
+c_7378.elts = (object *)alloca(sizeof(object) * 1);
+c_7378.elts[0] = ((closureN)self_7371)->elts[0];
 
 
-make_cons(c_7384,r_7348, __glo__85macro_117defined_91macros_85);
-return_funcall1((closure)&c_7375,  &c_7384);; 
+make_cons(c_7387,r_7350, __glo__85macro_117defined_91macros_85);
+return_funcall1((closure)&c_7378,  &c_7387);; 
 }
 
-static void __lambda_1(int argc, object self_7369, object r_7347) {
+static void __lambda_1(int argc, object self_7372, object r_7349) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
-closureN_type c_7377;
-c_7377.tag = closureN_tag;
- c_7377.fn = (function_type)__lambda_0;
-c_7377.num_args = 1;
-c_7377.num_elt = 1;
-c_7377.elts = (object *)alloca(sizeof(object) * 1);
-c_7377.elts[0] = ((closureN)self_7369)->elts[0];
+closureN_type c_7380;
+c_7380.tag = closureN_tag;
+ c_7380.fn = (function_type)__lambda_0;
+c_7380.num_args = 1;
+c_7380.num_elt = 1;
+c_7380.elts = (object *)alloca(sizeof(object) * 1);
+c_7380.elts[0] = ((closureN)self_7372)->elts[0];
 
-return_funcall1((closure)&c_7377,  global_set(__glo__85macro_117defined_91macros_85, r_7347));; 
+return_funcall1((closure)&c_7380,  global_set(__glo__85macro_117defined_91macros_85, r_7349));; 
 }
 
-static void __lambda_0(int argc, object self_7370, object r_7346) {
+static void __lambda_0(int argc, object self_7373, object r_7348) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
-return_funcall1(  ((closureN)self_7370)->elts[0],  boolean_t);; 
+return_funcall1(  ((closureN)self_7373)->elts[0],  boolean_t);; 
 }
 
 void c_schemecyclonemacros_entry_pt(argc, cont,value) int argc; closure cont; object value;{ 
@@ -541,35 +568,35 @@ void c_schemecyclonemacros_entry_pt(argc, cont,value) int argc; closure cont; ob
   add_global((object *) &__glo__85macro_117defined_91macros_85);
   add_symbol(quote_quote);
   add_symbol(quote_define_91syntax);
-  mclosure0(c_73160, (function_type)__lambda_25);c_73160.num_args = 0; 
-  __glo_lib_91init_117schemecyclonemacros = &c_73160; 
-  mclosure0(c_73106, (function_type)__lambda_22);c_73106.num_args = 2; 
-  __glo_macro_117expand = &c_73106; 
-  mclosure0(c_7396, (function_type)__lambda_8);c_7396.num_args = 2; 
-  __glo_macro_117macro_127 = &c_7396; 
-  mclosure0(c_7390, (function_type)__lambda_6);c_7390.num_args = 1; 
-  __glo_define_91syntax_127 = &c_7390; 
-  mclosure0(c_7388, (function_type)__lambda_4);c_7388.num_args = 0; 
-  __glo_macro_117get_91defined_91macros = &c_7388; 
-  mclosure0(c_7371, (function_type)__lambda_3);c_7371.num_args = 2; 
-  __glo_macro_117add_67 = &c_7371; 
+  mclosure0(c_73167, (function_type)__lambda_26);c_73167.num_args = 0; 
+  __glo_lib_91init_117schemecyclonemacros = &c_73167; 
+  mclosure0(c_73109, (function_type)__lambda_23);c_73109.num_args = 2; 
+  __glo_macro_117expand = &c_73109; 
+  mclosure0(c_7399, (function_type)__lambda_8);c_7399.num_args = 2; 
+  __glo_macro_117macro_127 = &c_7399; 
+  mclosure0(c_7393, (function_type)__lambda_6);c_7393.num_args = 1; 
+  __glo_define_91syntax_127 = &c_7393; 
+  mclosure0(c_7391, (function_type)__lambda_4);c_7391.num_args = 0; 
+  __glo_macro_117get_91defined_91macros = &c_7391; 
+  mclosure0(c_7374, (function_type)__lambda_3);c_7374.num_args = 2; 
+  __glo_macro_117add_67 = &c_7374; 
   __glo__85macro_117defined_91macros_85 = boolean_f; 
 
-  make_cvar(cvar_73170, (object *)&__glo_lib_91init_117schemecyclonemacros);make_cons(pair_73171, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73170);
-  make_cvar(cvar_73172, (object *)&__glo_macro_117expand);make_cons(pair_73173, find_or_add_symbol("macro:expand"), &cvar_73172);
-  make_cvar(cvar_73174, (object *)&__glo_macro_117macro_127);make_cons(pair_73175, find_or_add_symbol("macro:macro?"), &cvar_73174);
-  make_cvar(cvar_73176, (object *)&__glo_define_91syntax_127);make_cons(pair_73177, find_or_add_symbol("define-syntax?"), &cvar_73176);
-  make_cvar(cvar_73178, (object *)&__glo_macro_117get_91defined_91macros);make_cons(pair_73179, find_or_add_symbol("macro:get-defined-macros"), &cvar_73178);
-  make_cvar(cvar_73180, (object *)&__glo_macro_117add_67);make_cons(pair_73181, find_or_add_symbol("macro:add!"), &cvar_73180);
-  make_cvar(cvar_73182, (object *)&__glo__85macro_117defined_91macros_85);make_cons(pair_73183, find_or_add_symbol("*macro:defined-macros*"), &cvar_73182);
-make_cons(c_73184, &pair_73171,Cyc_global_variables);
-make_cons(c_73185, &pair_73173, &c_73184);
-make_cons(c_73186, &pair_73175, &c_73185);
-make_cons(c_73187, &pair_73177, &c_73186);
-make_cons(c_73188, &pair_73179, &c_73187);
-make_cons(c_73189, &pair_73181, &c_73188);
-make_cons(c_73190, &pair_73183, &c_73189);
-Cyc_global_variables = &c_73190;
+  make_cvar(cvar_73177, (object *)&__glo_lib_91init_117schemecyclonemacros);make_cons(pair_73178, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73177);
+  make_cvar(cvar_73179, (object *)&__glo_macro_117expand);make_cons(pair_73180, find_or_add_symbol("macro:expand"), &cvar_73179);
+  make_cvar(cvar_73181, (object *)&__glo_macro_117macro_127);make_cons(pair_73182, find_or_add_symbol("macro:macro?"), &cvar_73181);
+  make_cvar(cvar_73183, (object *)&__glo_define_91syntax_127);make_cons(pair_73184, find_or_add_symbol("define-syntax?"), &cvar_73183);
+  make_cvar(cvar_73185, (object *)&__glo_macro_117get_91defined_91macros);make_cons(pair_73186, find_or_add_symbol("macro:get-defined-macros"), &cvar_73185);
+  make_cvar(cvar_73187, (object *)&__glo_macro_117add_67);make_cons(pair_73188, find_or_add_symbol("macro:add!"), &cvar_73187);
+  make_cvar(cvar_73189, (object *)&__glo__85macro_117defined_91macros_85);make_cons(pair_73190, find_or_add_symbol("*macro:defined-macros*"), &cvar_73189);
+make_cons(c_73191, &pair_73178,Cyc_global_variables);
+make_cons(c_73192, &pair_73180, &c_73191);
+make_cons(c_73193, &pair_73182, &c_73192);
+make_cons(c_73194, &pair_73184, &c_73193);
+make_cons(c_73195, &pair_73186, &c_73194);
+make_cons(c_73196, &pair_73188, &c_73195);
+make_cons(c_73197, &pair_73190, &c_73196);
+Cyc_global_variables = &c_73197;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonemacros)->fn)(1, cont, cont);
 }
