@@ -185,8 +185,8 @@ object __glo_call_91with_91port = nil;
 object __glo_dynamic_91wind = nil;
 object __glo_values = nil;
 object __glo_call_91with_91current_91continuation = nil;
-object __glo_my_91or = nil;
-object __glo_my_91and = nil;
+object __glo_or = nil;
+object __glo_and = nil;
 object __glo_features = nil;
 object __glo_call_95cc = nil;
 object __glo_call_91with_91values = nil;
@@ -8160,7 +8160,7 @@ return_funcall2(  __glo_call_95cc,  ((closureN)self_731186)->elts[0], r_73742);;
 }
 
 static void __lambda_39(int argc, closure _,object k_73748, object expr_73213, object rename_73212, object compare_73211) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731295;
 c_731295.tag = closureN_tag;
@@ -8176,7 +8176,7 @@ return_funcall1((closure)&c_731295,  cdr(expr_73213));;
 }
 
 static void __lambda_38(int argc, object self_731187, object r_73770) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731297;
 c_731297.tag = closureN_tag;
@@ -8192,7 +8192,7 @@ return_funcall1((closure)&c_731297,  Cyc_is_null(r_73770));;
 }
 
 static void __lambda_37(int argc, object self_731188, object r_73749) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 if( !eq(boolean_f, r_73749) ){ 
   return_funcall1(  ((closureN)self_731188)->elts[1],  boolean_f);
 } else { 
@@ -8212,7 +8212,7 @@ return_funcall1((closure)&c_731301,  cddr(((closureN)self_731188)->elts[0]));}
 }
 
 static void __lambda_36(int argc, object self_731189, object r_73769) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731303;
 c_731303.tag = closureN_tag;
@@ -8228,7 +8228,7 @@ return_funcall1((closure)&c_731303,  Cyc_is_null(r_73769));;
 }
 
 static void __lambda_35(int argc, object self_731190, object r_73750) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 if( !eq(boolean_f, r_73750) ){ 
   return_funcall1(  ((closureN)self_731190)->elts[1],  cadr(((closureN)self_731190)->elts[0]));
 } else { 
@@ -8248,7 +8248,7 @@ return_funcall1((closure)&c_731310,  quote_let);}
 }
 
 static void __lambda_34(int argc, object self_731191, object r_73768) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731313;
 c_731313.tag = closureN_tag;
@@ -8264,7 +8264,7 @@ return_funcall2(  ((closureN)self_731191)->elts[2],  &c_731313, r_73768);;
 }
 
 static void __lambda_33(int argc, object self_731192, object r_73751) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731315;
 c_731315.tag = closureN_tag;
@@ -8281,7 +8281,7 @@ return_funcall1((closure)&c_731315,  quote_tmp);;
 }
 
 static void __lambda_32(int argc, object self_731193, object r_73767) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731318;
 c_731318.tag = closureN_tag;
@@ -8298,7 +8298,7 @@ return_funcall2(  ((closureN)self_731193)->elts[3],  &c_731318, r_73767);;
 }
 
 static void __lambda_31(int argc, object self_731194, object r_73765) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731320;
 c_731320.tag = closureN_tag;
@@ -8316,7 +8316,7 @@ return_funcall1((closure)&c_731320,  cadr(((closureN)self_731194)->elts[0]));;
 }
 
 static void __lambda_30(int argc, object self_731195, object r_73766) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731322;
 c_731322.tag = closureN_tag;
@@ -8333,7 +8333,7 @@ return_funcall3(  __glo__list,  &c_731322, ((closureN)self_731195)->elts[3], r_7
 }
 
 static void __lambda_29(int argc, object self_731196, object r_73764) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731324;
 c_731324.tag = closureN_tag;
@@ -8350,7 +8350,7 @@ return_funcall2(  __glo__list,  &c_731324, r_73764);;
 }
 
 static void __lambda_28(int argc, object self_731197, object r_73752) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731326;
 c_731326.tag = closureN_tag;
@@ -8368,7 +8368,7 @@ return_funcall1((closure)&c_731326,  quote__if);;
 }
 
 static void __lambda_27(int argc, object self_731198, object r_73763) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731329;
 c_731329.tag = closureN_tag;
@@ -8386,7 +8386,7 @@ return_funcall2(  ((closureN)self_731198)->elts[4],  &c_731329, r_73763);;
 }
 
 static void __lambda_26(int argc, object self_731199, object r_73754) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731331;
 c_731331.tag = closureN_tag;
@@ -8405,7 +8405,7 @@ return_funcall1((closure)&c_731331,  quote_tmp);;
 }
 
 static void __lambda_25(int argc, object self_731200, object r_73762) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731334;
 c_731334.tag = closureN_tag;
@@ -8424,7 +8424,7 @@ return_funcall2(  ((closureN)self_731200)->elts[5],  &c_731334, r_73762);;
 }
 
 static void __lambda_24(int argc, object self_731201, object r_73755) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731336;
 c_731336.tag = closureN_tag;
@@ -8444,7 +8444,7 @@ return_funcall1((closure)&c_731336,  quote_tmp);;
 }
 
 static void __lambda_23(int argc, object self_731202, object r_73761) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731339;
 c_731339.tag = closureN_tag;
@@ -8464,7 +8464,7 @@ return_funcall2(  ((closureN)self_731202)->elts[6],  &c_731339, r_73761);;
 }
 
 static void __lambda_22(int argc, object self_731203, object r_73756) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731341;
 c_731341.tag = closureN_tag;
@@ -8485,7 +8485,7 @@ return_funcall1((closure)&c_731341,  quote_or);;
 }
 
 static void __lambda_21(int argc, object self_731204, object r_73760) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731344;
 c_731344.tag = closureN_tag;
@@ -8505,7 +8505,7 @@ return_funcall2(  ((closureN)self_731204)->elts[7],  &c_731344, r_73760);;
 }
 
 static void __lambda_20(int argc, object self_731205, object r_73758) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731346;
 c_731346.tag = closureN_tag;
@@ -8525,7 +8525,7 @@ return_funcall1((closure)&c_731346,  cddr(((closureN)self_731205)->elts[0]));;
 }
 
 static void __lambda_19(int argc, object self_731206, object r_73759) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731348;
 c_731348.tag = closureN_tag;
@@ -8546,7 +8546,7 @@ return_funcall1((closure)&c_731348,  &c_731360);;
 }
 
 static void __lambda_18(int argc, object self_731207, object r_73757) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_731350;
 c_731350.tag = closureN_tag;
@@ -8562,12 +8562,12 @@ return_funcall5(  __glo__list,  &c_731350, ((closureN)self_731207)->elts[3], ((c
 }
 
 static void __lambda_17(int argc, object self_731208, object r_73753) {
-  Cyc_st_add("scheme/base.sld:my-or");
+  Cyc_st_add("scheme/base.sld:or");
 return_funcall4(  __glo__list,  ((closureN)self_731208)->elts[0], ((closureN)self_731208)->elts[1], ((closureN)self_731208)->elts[2], r_73753);; 
 }
 
 static void __lambda_16(int argc, closure _,object k_73773, object expr_73216, object rename_73215, object compare_73214) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731240;
 c_731240.tag = closureN_tag;
@@ -8583,7 +8583,7 @@ return_funcall1((closure)&c_731240,  cdr(expr_73216));;
 }
 
 static void __lambda_15(int argc, object self_731209, object r_73784) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731242;
 c_731242.tag = closureN_tag;
@@ -8599,7 +8599,7 @@ return_funcall1((closure)&c_731242,  Cyc_is_null(r_73784));;
 }
 
 static void __lambda_14(int argc, object self_731210, object r_73774) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 if( !eq(boolean_f, r_73774) ){ 
   return_funcall1(  ((closureN)self_731210)->elts[1],  boolean_t);
 } else { 
@@ -8619,7 +8619,7 @@ return_funcall1((closure)&c_731246,  cddr(((closureN)self_731210)->elts[0]));}
 }
 
 static void __lambda_13(int argc, object self_731211, object r_73783) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731248;
 c_731248.tag = closureN_tag;
@@ -8635,7 +8635,7 @@ return_funcall1((closure)&c_731248,  Cyc_is_null(r_73783));;
 }
 
 static void __lambda_12(int argc, object self_731212, object r_73775) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 if( !eq(boolean_f, r_73775) ){ 
   return_funcall1(  ((closureN)self_731212)->elts[1],  cadr(((closureN)self_731212)->elts[0]));
 } else { 
@@ -8655,7 +8655,7 @@ return_funcall1((closure)&c_731255,  quote__if);}
 }
 
 static void __lambda_11(int argc, object self_731213, object r_73782) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731258;
 c_731258.tag = closureN_tag;
@@ -8671,7 +8671,7 @@ return_funcall2(  ((closureN)self_731213)->elts[2],  &c_731258, r_73782);;
 }
 
 static void __lambda_10(int argc, object self_731214, object r_73776) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731260;
 c_731260.tag = closureN_tag;
@@ -8688,7 +8688,7 @@ return_funcall1((closure)&c_731260,  cadr(((closureN)self_731214)->elts[0]));;
 }
 
 static void __lambda_9(int argc, object self_731215, object r_73777) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731262;
 c_731262.tag = closureN_tag;
@@ -8706,7 +8706,7 @@ return_funcall1((closure)&c_731262,  quote_and);;
 }
 
 static void __lambda_8(int argc, object self_731216, object r_73781) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731265;
 c_731265.tag = closureN_tag;
@@ -8723,7 +8723,7 @@ return_funcall2(  ((closureN)self_731216)->elts[4],  &c_731265, r_73781);;
 }
 
 static void __lambda_7(int argc, object self_731217, object r_73779) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731267;
 c_731267.tag = closureN_tag;
@@ -8740,7 +8740,7 @@ return_funcall1((closure)&c_731267,  cddr(((closureN)self_731217)->elts[0]));;
 }
 
 static void __lambda_6(int argc, object self_731218, object r_73780) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_731269;
 c_731269.tag = closureN_tag;
@@ -8758,7 +8758,7 @@ return_funcall1((closure)&c_731269,  &c_731276);;
 }
 
 static void __lambda_5(int argc, object self_731219, object r_73778) {
-  Cyc_st_add("scheme/base.sld:my-and");
+  Cyc_st_add("scheme/base.sld:and");
 return_funcall5(  __glo__list,  ((closureN)self_731219)->elts[0], ((closureN)self_731219)->elts[1], ((closureN)self_731219)->elts[2], r_73778, boolean_f);; 
 }
 
@@ -8896,8 +8896,8 @@ void c_schemebase_entry_pt(argc, cont,value) int argc; closure cont; object valu
   add_global((object *) &__glo_dynamic_91wind);
   add_global((object *) &__glo_values);
   add_global((object *) &__glo_call_91with_91current_91continuation);
-  add_global((object *) &__glo_my_91or);
-  add_global((object *) &__glo_my_91and);
+  add_global((object *) &__glo_or);
+  add_global((object *) &__glo_and);
   add_global((object *) &__glo_features);
   add_global((object *) &__glo_call_95cc);
   add_global((object *) &__glo_call_91with_91values);
@@ -9044,9 +9044,9 @@ void c_schemebase_entry_pt(argc, cont,value) int argc; closure cont; object valu
   mclosure0(c_731378, (function_type)__lambda_42);c_731378.num_args = 0; 
   __glo_values = &c_731378; 
   mmacro(c_731293, (function_type)__lambda_39);c_731293.num_args = 3; 
-  __glo_my_91or = &c_731293; 
+  __glo_or = &c_731293; 
   mmacro(c_731238, (function_type)__lambda_16);c_731238.num_args = 3; 
-  __glo_my_91and = &c_731238; 
+  __glo_and = &c_731238; 
   mclosure0(c_731233, (function_type)__lambda_4);c_731233.num_args = 0; 
   __glo_features = &c_731233; 
   mclosure0(c_731228, (function_type)__lambda_3);c_731228.num_args = 2; 
@@ -9129,8 +9129,8 @@ void c_schemebase_entry_pt(argc, cont,value) int argc; closure cont; object valu
   make_cvar(cvar_733786, (object *)&__glo_dynamic_91wind);make_cons(pair_733787, find_or_add_symbol("dynamic-wind"), &cvar_733786);
   make_cvar(cvar_733788, (object *)&__glo_values);make_cons(pair_733789, find_or_add_symbol("values"), &cvar_733788);
   make_cvar(cvar_733790, (object *)&__glo_call_91with_91current_91continuation);make_cons(pair_733791, find_or_add_symbol("call-with-current-continuation"), &cvar_733790);
-  make_cvar(cvar_733792, (object *)&__glo_my_91or);make_cons(pair_733793, find_or_add_symbol("my-or"), &cvar_733792);
-  make_cvar(cvar_733794, (object *)&__glo_my_91and);make_cons(pair_733795, find_or_add_symbol("my-and"), &cvar_733794);
+  make_cvar(cvar_733792, (object *)&__glo_or);make_cons(pair_733793, find_or_add_symbol("or"), &cvar_733792);
+  make_cvar(cvar_733794, (object *)&__glo_and);make_cons(pair_733795, find_or_add_symbol("and"), &cvar_733794);
   make_cvar(cvar_733796, (object *)&__glo_features);make_cons(pair_733797, find_or_add_symbol("features"), &cvar_733796);
   make_cvar(cvar_733798, (object *)&__glo_call_95cc);make_cons(pair_733799, find_or_add_symbol("call/cc"), &cvar_733798);
   make_cvar(cvar_733800, (object *)&__glo_call_91with_91values);make_cons(pair_733801, find_or_add_symbol("call-with-values"), &cvar_733800);

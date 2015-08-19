@@ -154,8 +154,8 @@ extern object __glo_write_91char;
 extern object __glo_flush_91output_91port;
 extern object __glo_read_91line;
 extern object __glo_features;
-extern object __glo_my_91and;
-extern object __glo_my_91or;
+extern object __glo_and;
+extern object __glo_or;
 #include "cyclone/runtime.h"
 defsymbol(_121param_91convert_125);
 defsymbol(_121param_91set_67_125);

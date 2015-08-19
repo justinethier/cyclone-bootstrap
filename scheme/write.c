@@ -116,8 +116,8 @@ extern object __glo_write_91char;
 extern object __glo_flush_91output_91port;
 extern object __glo_read_91line;
 extern object __glo_features;
-extern object __glo_my_91and;
-extern object __glo_my_91or;
+extern object __glo_and;
+extern object __glo_or;
 #include "cyclone/runtime.h"
 static void __lambda_8(int argc, closure _,object k_737) ;
 static void __lambda_7(int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) ;
