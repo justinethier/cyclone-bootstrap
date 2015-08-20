@@ -188,6 +188,7 @@ extern object __glo_read_91line;
 extern object __glo_features;
 extern object __glo_and;
 extern object __glo_or;
+extern object __glo_quasiquote;
 extern object __glo_read;
 extern object __glo_read_91all;
 extern object __glo_tagged_91list_127;

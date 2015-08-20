@@ -156,6 +156,7 @@ extern object __glo_read_91line;
 extern object __glo_features;
 extern object __glo_and;
 extern object __glo_or;
+extern object __glo_quasiquote;
 #include "cyclone/runtime.h"
 defsymbol(_121param_91convert_125);
 defsymbol(_121param_91set_67_125);

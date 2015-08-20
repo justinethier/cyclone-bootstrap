@@ -226,6 +226,7 @@ extern object __glo_read_91line;
 extern object __glo_features;
 extern object __glo_and;
 extern object __glo_or;
+extern object __glo_quasiquote;
 extern object __glo_call_91with_91input_91file;
 extern object __glo_call_91with_91output_91file;
 extern object __glo_with_91input_91from_91file;

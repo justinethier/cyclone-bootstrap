@@ -332,6 +332,7 @@ extern object __glo_read_91line;
 extern object __glo_features;
 extern object __glo_and;
 extern object __glo_or;
+extern object __glo_quasiquote;
 extern object __glo_char_91alphabetic_127;
 extern object __glo_char_91downcase;
 extern object __glo_char_91lower_91case_127;
