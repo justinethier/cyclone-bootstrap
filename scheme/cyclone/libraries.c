@@ -192,6 +192,7 @@ extern object __glo_and;
 extern object __glo_or;
 extern object __glo_let;
 extern object __glo_let_85;
+extern object __glo_letrec;
 extern object __glo_begin;
 extern object __glo__case;
 extern object __glo_cond;

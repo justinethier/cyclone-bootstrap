@@ -138,7 +138,6 @@
 (define (get-macros) *defined-macros*)
 (define *defined-macros* 
   (list 
-    (cons 'letrec (lambda (exp rename compare) (letrec=>lets+sets exp)))
     (cons 'cond-expand
       ;; Based on the cond-expand macro from Chibi scheme
       (lambda (expr rename compare)
@@ -366,11 +365,11 @@
 (define (letrec->exp exp)
   (cddr exp))
 
-; letrec->exp : letrec-exp -> list[symbol]
+; letrec->bound-vars : letrec-exp -> list[symbol]
 (define (letrec->bound-vars exp)
   (map car (cadr exp)))
 
-; letrec->exp : letrec-exp -> list[exp]
+; letrec->args : letrec-exp -> list[exp]
 (define (letrec->args exp)
   (map cadr (cadr exp)))
 
