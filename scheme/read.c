@@ -257,6 +257,7 @@ extern object __glo_letrec;
 extern object __glo_begin;
 extern object __glo__case;
 extern object __glo_cond;
+extern object __glo_cond_91expand;
 extern object __glo_when;
 extern object __glo_quasiquote;
 extern object __glo_char_91alphabetic_127;
