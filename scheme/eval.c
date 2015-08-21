@@ -280,6 +280,7 @@ extern object __glo_or;
 extern object __glo_let;
 extern object __glo_let_85;
 extern object __glo_begin;
+extern object __glo__case;
 extern object __glo_cond;
 extern object __glo_when;
 extern object __glo_quasiquote;
