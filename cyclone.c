@@ -6,17 +6,17 @@
  **
  **/
 
-#define funcall0(cfn) ((cfn)->fn)(0,cfn)
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall0(cfn) \
+#define closcall0(cfn) ((cfn)->fn)(0,cfn)
+/* Check for GC, then call given continuation closure */
+#define return_closcall0(cfn) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[0]; \
      GC(cfn,buf,0); return; \
- } else {funcall0((closure) (cfn)); return;}}
+ } else {closcall0((closure) (cfn)); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check0(_fn) { \
+/* Check for GC, then call C function directly */
+#define return_direct0(_fn) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[0];  \
@@ -24,17 +24,17 @@
      GC(&c1, buf, 0); return; \
  } else { (_fn)(0,(closure)_fn); }}
 
-#define funcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall1(cfn,a1) \
+#define closcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall1(cfn,a1) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1;\
      GC(cfn,buf,1); return; \
- } else {funcall1((closure) (cfn),a1); return;}}
+ } else {closcall1((closure) (cfn),a1); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check1(_fn,a1) { \
+/* Check for GC, then call C function directly */
+#define return_direct1(_fn,a1) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1; \
@@ -42,17 +42,17 @@
      GC(&c1, buf, 1); return; \
  } else { (_fn)(1,(closure)_fn,a1); }}
 
-#define funcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall2(cfn,a1,a2) \
+#define closcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall2(cfn,a1,a2) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(cfn,buf,2); return; \
- } else {funcall2((closure) (cfn),a1,a2); return;}}
+ } else {closcall2((closure) (cfn),a1,a2); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check2(_fn,a1,a2) { \
+/* Check for GC, then call C function directly */
+#define return_direct2(_fn,a1,a2) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
@@ -60,17 +60,17 @@
      GC(&c1, buf, 2); return; \
  } else { (_fn)(2,(closure)_fn,a1,a2); }}
 
-#define funcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall3(cfn,a1,a2,a3) \
+#define closcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall3(cfn,a1,a2,a3) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(cfn,buf,3); return; \
- } else {funcall3((closure) (cfn),a1,a2,a3); return;}}
+ } else {closcall3((closure) (cfn),a1,a2,a3); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check3(_fn,a1,a2,a3) { \
+/* Check for GC, then call C function directly */
+#define return_direct3(_fn,a1,a2,a3) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
@@ -78,17 +78,17 @@
      GC(&c1, buf, 3); return; \
  } else { (_fn)(3,(closure)_fn,a1,a2,a3); }}
 
-#define funcall4(cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(3, (closure)a1, cfn,a2,a3,a4); } else { ((cfn)->fn)(4,cfn,a1,a2,a3,a4);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall4(cfn,a1,a2,a3,a4) \
+#define closcall4(cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(3, (closure)a1, cfn,a2,a3,a4); } else { ((cfn)->fn)(4,cfn,a1,a2,a3,a4);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall4(cfn,a1,a2,a3,a4) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(cfn,buf,4); return; \
- } else {funcall4((closure) (cfn),a1,a2,a3,a4); return;}}
+ } else {closcall4((closure) (cfn),a1,a2,a3,a4); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check4(_fn,a1,a2,a3,a4) { \
+/* Check for GC, then call C function directly */
+#define return_direct4(_fn,a1,a2,a3,a4) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
@@ -96,17 +96,17 @@
      GC(&c1, buf, 4); return; \
  } else { (_fn)(4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define funcall5(cfn,a1,a2,a3,a4,a5) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(4, (closure)a1, cfn,a2,a3,a4,a5); } else { ((cfn)->fn)(5,cfn,a1,a2,a3,a4,a5);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall5(cfn,a1,a2,a3,a4,a5) \
+#define closcall5(cfn,a1,a2,a3,a4,a5) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(4, (closure)a1, cfn,a2,a3,a4,a5); } else { ((cfn)->fn)(5,cfn,a1,a2,a3,a4,a5);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall5(cfn,a1,a2,a3,a4,a5) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
      GC(cfn,buf,5); return; \
- } else {funcall5((closure) (cfn),a1,a2,a3,a4,a5); return;}}
+ } else {closcall5((closure) (cfn),a1,a2,a3,a4,a5); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check5(_fn,a1,a2,a3,a4,a5) { \
+/* Check for GC, then call C function directly */
+#define return_direct5(_fn,a1,a2,a3,a4,a5) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5; \
@@ -114,17 +114,17 @@
      GC(&c1, buf, 5); return; \
  } else { (_fn)(5,(closure)_fn,a1,a2,a3,a4,a5); }}
 
-#define funcall7(cfn,a1,a2,a3,a4,a5,a6,a7) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(6, (closure)a1, cfn,a2,a3,a4,a5,a6,a7); } else { ((cfn)->fn)(7,cfn,a1,a2,a3,a4,a5,a6,a7);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall7(cfn,a1,a2,a3,a4,a5,a6,a7) \
+#define closcall7(cfn,a1,a2,a3,a4,a5,a6,a7) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(6, (closure)a1, cfn,a2,a3,a4,a5,a6,a7); } else { ((cfn)->fn)(7,cfn,a1,a2,a3,a4,a5,a6,a7);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall7(cfn,a1,a2,a3,a4,a5,a6,a7) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
      GC(cfn,buf,7); return; \
- } else {funcall7((closure) (cfn),a1,a2,a3,a4,a5,a6,a7); return;}}
+ } else {closcall7((closure) (cfn),a1,a2,a3,a4,a5,a6,a7); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check7(_fn,a1,a2,a3,a4,a5,a6,a7) { \
+/* Check for GC, then call C function directly */
+#define return_direct7(_fn,a1,a2,a3,a4,a5,a6,a7) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7; \
@@ -132,17 +132,17 @@
      GC(&c1, buf, 7); return; \
  } else { (_fn)(7,(closure)_fn,a1,a2,a3,a4,a5,a6,a7); }}
 
-#define funcall9(cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(8, (closure)a1, cfn,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((cfn)->fn)(9,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall9(cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
+#define closcall9(cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(8, (closure)a1, cfn,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((cfn)->fn)(9,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall9(cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;\
      GC(cfn,buf,9); return; \
- } else {funcall9((closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8,a9); return;}}
+ } else {closcall9((closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8,a9); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check9(_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
+/* Check for GC, then call C function directly */
+#define return_direct9(_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9; \
@@ -700,20 +700,20 @@ static void __lambda_0(int argc, object self_73567, object r_73134) ;
 
 static void __lambda_282(int argc, closure _) {
   make_int(c_731802, 0);
-return_check1(__lambda_281,&c_731802);; 
+return_direct1(__lambda_281,&c_731802);; 
 }
 
 static void __lambda_281(int argc, closure _,object r_7354) {
-  return_check1(__lambda_280,boolean_f);; 
+  return_direct1(__lambda_280,boolean_f);; 
 }
 
 static void __lambda_280(int argc, closure _,object r_7355) {
   mclosure0(c_731800,__lambda_279); object c_731801 = Cyc_command_line_arguments(&c_731800);
-return_check1(__lambda_279,c_731801);; 
+return_direct1(__lambda_279,c_731801);; 
 }
 
 static void __lambda_279(int argc, closure _,object r_7356) {
-  return_check1(__lambda_278,r_7356);; 
+  return_direct1(__lambda_278,r_7356);; 
 }
 
 static void __lambda_278(int argc, closure _,object args_731) {
@@ -728,7 +728,7 @@ c_731645.elts[0] = args_731;
 
 
 mclosure0(c_731770, (function_type)__lambda_277);c_731770.num_args = 1;
-return_funcall1((closure)&c_731645,  &c_731770);; 
+return_closcall1((closure)&c_731645,  &c_731770);; 
 }
 
 static void __lambda_277(int argc, object self_73297, object k_7377, object arg_732) {
@@ -750,11 +750,11 @@ c_731796.num_elt = 1;
 c_731796.elts = (object *)alloca(sizeof(object) * 1);
 c_731796.elts[0] = k_7377;
 
-return_funcall1((closure)&c_731772,  &c_731796);; 
+return_closcall1((closure)&c_731772,  &c_731796);; 
 }
 
 static void __lambda_276(int argc, object self_73298, object r_7378) {
-  return_funcall2(  __glo_not,  ((closureN)self_73298)->elts[0], r_7378);; 
+  return_closcall2(  __glo_not,  ((closureN)self_73298)->elts[0], r_7378);; 
 }
 
 static void __lambda_275(int argc, object self_73299, object k_7379) {
@@ -770,7 +770,7 @@ c_731774.elts[1] = k_7379;
 
 
 integer_type c_731794 = Cyc_string_length(((closureN)self_73299)->elts[0]);
-return_funcall1((closure)&c_731774,  &c_731794);; 
+return_closcall1((closure)&c_731774,  &c_731794);; 
 }
 
 static void __lambda_274(int argc, object self_73300, object r_7382) {
@@ -786,7 +786,7 @@ c_731776.elts[1] = ((closureN)self_73300)->elts[1];
 
 
 make_int(c_731791, 1);
-return_funcall1((closure)&c_731776,  __num_gt(r_7382, &c_731791));; 
+return_closcall1((closure)&c_731776,  __num_gt(r_7382, &c_731791));; 
 }
 
 static void __lambda_273(int argc, object self_73301, object r_7380) {
@@ -802,14 +802,14 @@ c_731778.elts[0] = ((closureN)self_73301)->elts[1];
 
 
 make_int(c_731786, 0);
-return_funcall1((closure)&c_731778,  Cyc_string_ref(((closureN)self_73301)->elts[0], &c_731786));
+return_closcall1((closure)&c_731778,  Cyc_string_ref(((closureN)self_73301)->elts[0], &c_731786));
 } else { 
-  return_funcall1(  ((closureN)self_73301)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_73301)->elts[1],  boolean_f);}
 ; 
 }
 
 static void __lambda_272(int argc, object self_73302, object r_7381) {
-  return_funcall1(  ((closureN)self_73302)->elts[0],  equalp(obj_char2obj(45), r_7381));; 
+  return_closcall1(  ((closureN)self_73302)->elts[0],  equalp(obj_char2obj(45), r_7381));; 
 }
 
 static void __lambda_271(int argc, object self_73303, object r_7376) {
@@ -822,7 +822,7 @@ c_731647.num_elt = 1;
 c_731647.elts = (object *)alloca(sizeof(object) * 1);
 c_731647.elts[0] = ((closureN)self_73303)->elts[0];
 
-return_funcall3(  __glo_filter,  &c_731647, r_7376, ((closureN)self_73303)->elts[0]);; 
+return_closcall3(  __glo_filter,  &c_731647, r_7376, ((closureN)self_73303)->elts[0]);; 
 }
 
 static void __lambda_270(int argc, object self_73304, object r_7357) {
@@ -835,7 +835,7 @@ c_731649.num_elt = 1;
 c_731649.elts = (object *)alloca(sizeof(object) * 1);
 c_731649.elts[0] = ((closureN)self_73304)->elts[0];
 
-return_funcall1((closure)&c_731649,  r_7357);; 
+return_closcall1((closure)&c_731649,  r_7357);; 
 }
 
 static void __lambda_269(int argc, object self_73305, object non_91opts_733) {
@@ -849,7 +849,7 @@ c_731651.elts = (object *)alloca(sizeof(object) * 2);
 c_731651.elts[0] = ((closureN)self_73305)->elts[0];
 c_731651.elts[1] = non_91opts_733;
 
-return_funcall1((closure)&c_731651,  boolean_t);; 
+return_closcall1((closure)&c_731651,  boolean_t);; 
 }
 
 static void __lambda_268(int argc, object self_73306, object compile_127_734) {
@@ -865,7 +865,7 @@ c_731653.elts[1] = ((closureN)self_73306)->elts[1];
 
 
 make_cell(c_731768,compile_127_734);
-return_funcall1((closure)&c_731653,  &c_731768);; 
+return_closcall1((closure)&c_731653,  &c_731768);; 
 }
 
 static void __lambda_267(int argc, object self_73307, object compile_127_734) {
@@ -880,7 +880,7 @@ c_731655.elts[0] = ((closureN)self_73307)->elts[0];
 c_731655.elts[1] = compile_127_734;
 c_731655.elts[2] = ((closureN)self_73307)->elts[1];
 
-return_funcall0((closure)&c_731655);; 
+return_closcall0((closure)&c_731655);; 
 }
 
 static void __lambda_266(int argc, object self_73308) {
@@ -904,7 +904,7 @@ c_731671.elts[0] = ((closureN)self_73308)->elts[0];
 c_731671.elts[1] = ((closureN)self_73308)->elts[1];
 c_731671.elts[2] = ((closureN)self_73308)->elts[2];
 
-return_funcall1((closure)&c_731657,  &c_731671);; 
+return_closcall1((closure)&c_731657,  &c_731671);; 
 }
 
 static void __lambda_265(int argc, object self_73309, object r_7358) {
@@ -929,7 +929,7 @@ c_731687.elts[0] = ((closureN)self_73309)->elts[0];
 c_731687.elts[1] = ((closureN)self_73309)->elts[1];
 c_731687.elts[2] = ((closureN)self_73309)->elts[2];
 
-return_funcall1((closure)&c_731673,  &c_731687);; 
+return_closcall1((closure)&c_731673,  &c_731687);; 
 }
 
 static void __lambda_264(int argc, object self_73310, object r_7359) {
@@ -946,7 +946,7 @@ c_731689.elts[2] = ((closureN)self_73310)->elts[2];
 
 
 integer_type c_731764 = Cyc_length(((closureN)self_73310)->elts[0]);
-return_funcall1((closure)&c_731689,  &c_731764);; 
+return_closcall1((closure)&c_731689,  &c_731764);; 
 }
 
 static void __lambda_263(int argc, object self_73311, object r_7371) {
@@ -963,12 +963,12 @@ c_731691.elts[2] = ((closureN)self_73311)->elts[2];
 
 
 make_int(c_731761, 1);
-return_funcall1((closure)&c_731691,  __num_lt(r_7371, &c_731761));; 
+return_closcall1((closure)&c_731691,  __num_lt(r_7371, &c_731761));; 
 }
 
 static void __lambda_262(int argc, object self_73312, object r_7360) {
   if( !eq(boolean_f, r_7360) ){ 
-  return_check0(__lambda_249);
+  return_direct0(__lambda_249);
 } else { 
   
 closureN_type c_731698;
@@ -983,7 +983,7 @@ c_731698.elts[2] = ((closureN)self_73312)->elts[2];
 
 
 make_string(c_731757, "-h");
-return_funcall1((closure)&c_731698,  memberp(&c_731757, ((closureN)self_73312)->elts[0]));}
+return_closcall1((closure)&c_731698,  memberp(&c_731757, ((closureN)self_73312)->elts[0]));}
 ; 
 }
 
@@ -999,7 +999,7 @@ c_731700.elts[0] = ((closureN)self_73313)->elts[0];
 c_731700.elts[1] = ((closureN)self_73313)->elts[1];
 c_731700.elts[2] = ((closureN)self_73313)->elts[2];
 
-return_funcall1((closure)&c_731700,  r_7369);; 
+return_closcall1((closure)&c_731700,  r_7369);; 
 }
 
 static void __lambda_260(int argc, object self_73314, object tmp_735) {
@@ -1024,12 +1024,12 @@ c_731711.elts[0] = ((closureN)self_73314)->elts[0];
 c_731711.elts[1] = ((closureN)self_73314)->elts[1];
 c_731711.elts[2] = ((closureN)self_73314)->elts[2];
 
-return_funcall1((closure)&c_731702,  &c_731711);; 
+return_closcall1((closure)&c_731702,  &c_731711);; 
 }
 
 static void __lambda_259(int argc, object self_73315, object r_7362) {
   if( !eq(boolean_f, r_7362) ){ 
-  return_check0(__lambda_252);
+  return_direct0(__lambda_252);
 } else { 
   
 closureN_type c_731718;
@@ -1044,13 +1044,13 @@ c_731718.elts[2] = ((closureN)self_73315)->elts[2];
 
 
 make_string(c_731753, "-v");
-return_funcall1((closure)&c_731718,  memberp(&c_731753, ((closureN)self_73315)->elts[0]));}
+return_closcall1((closure)&c_731718,  memberp(&c_731753, ((closureN)self_73315)->elts[0]));}
 ; 
 }
 
 static void __lambda_258(int argc, object self_73316, object r_7364) {
   if( !eq(boolean_f, r_7364) ){ 
-  return_funcall2(  __glo_display,  primitive__75halt, __glo__85version_91banner_85);
+  return_closcall2(  __glo_display,  primitive__75halt, __glo__85version_91banner_85);
 } else { 
   
 closureN_type c_731721;
@@ -1065,13 +1065,13 @@ c_731721.elts[2] = ((closureN)self_73316)->elts[2];
 
 
 make_string(c_731749, "--autogen");
-return_funcall1((closure)&c_731721,  memberp(&c_731749, ((closureN)self_73316)->elts[0]));}
+return_closcall1((closure)&c_731721,  memberp(&c_731749, ((closureN)self_73316)->elts[0]));}
 ; 
 }
 
 static void __lambda_257(int argc, object self_73317, object r_7365) {
   if( !eq(boolean_f, r_7365) ){ 
-  return_check0(__lambda_254);
+  return_direct0(__lambda_254);
 } else { 
   
 closureN_type c_731728;
@@ -1086,13 +1086,13 @@ c_731728.elts[2] = ((closureN)self_73317)->elts[2];
 
 
 make_string(c_731745, "-v");
-return_funcall1((closure)&c_731728,  memberp(&c_731745, ((closureN)self_73317)->elts[0]));}
+return_closcall1((closure)&c_731728,  memberp(&c_731745, ((closureN)self_73317)->elts[0]));}
 ; 
 }
 
 static void __lambda_256(int argc, object self_73318, object r_7367) {
   if( !eq(boolean_f, r_7367) ){ 
-  return_funcall2(  __glo_display,  primitive__75halt, __glo__85version_91banner_85);
+  return_closcall2(  __glo_display,  primitive__75halt, __glo__85version_91banner_85);
 } else { 
   
 closureN_type c_731731;
@@ -1106,7 +1106,7 @@ c_731731.elts[1] = ((closureN)self_73318)->elts[2];
 
 
 make_string(c_731741, "--autogen");
-return_funcall1((closure)&c_731731,  memberp(&c_731741, ((closureN)self_73318)->elts[0]));}
+return_closcall1((closure)&c_731731,  memberp(&c_731741, ((closureN)self_73318)->elts[0]));}
 ; 
 }
 
@@ -1114,9 +1114,9 @@ static void __lambda_255(int argc, object self_73319, object r_7368) {
   if( !eq(boolean_f, r_7368) ){ 
   
 make_string(c_731733, "autogen.out");
-return_funcall2(  __glo_autogen,  primitive__75halt, &c_731733);
+return_closcall2(  __glo_autogen,  primitive__75halt, &c_731733);
 } else { 
-  return_funcall3(  __glo_run_91compiler,  primitive__75halt, ((closureN)self_73319)->elts[1], cell_get(((closureN)self_73319)->elts[0]));}
+  return_closcall3(  __glo_run_91compiler,  primitive__75halt, ((closureN)self_73319)->elts[1], cell_get(((closureN)self_73319)->elts[0]));}
 ; 
 }
 
@@ -1125,11 +1125,11 @@ static void __lambda_254(int argc, closure _) {
 mclosure0(c_731724, (function_type)__lambda_253);c_731724.num_args = 1;
 
 make_string(c_731726, "autogen.out");
-return_funcall2(  __glo_autogen,  &c_731724, &c_731726);; 
+return_closcall2(  __glo_autogen,  &c_731724, &c_731726);; 
 }
 
 static void __lambda_253(int argc, object self_73320, object r_7366) {
-  return_funcall1(  __glo_newline,  primitive__75halt);; 
+  return_closcall1(  __glo_newline,  primitive__75halt);; 
 }
 
 static void __lambda_252(int argc, closure _) {
@@ -1137,20 +1137,20 @@ static void __lambda_252(int argc, closure _) {
 mclosure0(c_731714, (function_type)__lambda_251);c_731714.num_args = 1;
 
 make_string(c_731716, "\n -t              Show intermediate trace output in generated C files\n -d              Only generate intermediate C files, do not compile them\n -h, --help      Display usage information\n -v              Display version information\n --autogen       Cyclone developer use only, create autogen.out file\n");
-return_funcall2(  __glo_display,  &c_731714, &c_731716);; 
+return_closcall2(  __glo_display,  &c_731714, &c_731716);; 
 }
 
 static void __lambda_251(int argc, object self_73321, object r_7363) {
-  return_funcall1(  __glo_newline,  primitive__75halt);; 
+  return_closcall1(  __glo_newline,  primitive__75halt);; 
 }
 
 static void __lambda_250(int argc, object self_73322, object k_7370) {
   if( !eq(boolean_f, ((closureN)self_73322)->elts[1]) ){ 
-  return_funcall1(  k_7370,  ((closureN)self_73322)->elts[1]);
+  return_closcall1(  k_7370,  ((closureN)self_73322)->elts[1]);
 } else { 
   
 make_string(c_731709, "--help");
-return_funcall1(  k_7370,  memberp(&c_731709, ((closureN)self_73322)->elts[0]));}
+return_closcall1(  k_7370,  memberp(&c_731709, ((closureN)self_73322)->elts[0]));}
 ; 
 }
 
@@ -1159,11 +1159,11 @@ static void __lambda_249(int argc, closure _) {
 mclosure0(c_731694, (function_type)__lambda_248);c_731694.num_args = 1;
 
 make_string(c_731696, "cyclone: no input file");
-return_funcall2(  __glo_display,  &c_731694, &c_731696);; 
+return_closcall2(  __glo_display,  &c_731694, &c_731696);; 
 }
 
 static void __lambda_248(int argc, object self_73323, object r_7361) {
-  return_funcall1(  __glo_newline,  primitive__75halt);; 
+  return_closcall1(  __glo_newline,  primitive__75halt);; 
 }
 
 static void __lambda_247(int argc, object self_73324, object k_7372) {
@@ -1179,14 +1179,14 @@ c_731675.elts[1] = k_7372;
 
 
 make_string(c_731685, "-d");
-return_funcall1((closure)&c_731675,  memberp(&c_731685, ((closureN)self_73324)->elts[0]));; 
+return_closcall1((closure)&c_731675,  memberp(&c_731685, ((closureN)self_73324)->elts[0]));; 
 }
 
 static void __lambda_246(int argc, object self_73325, object r_7373) {
   if( !eq(boolean_f, r_7373) ){ 
-  return_funcall1(  ((closureN)self_73325)->elts[1],  Cyc_set_car(((closureN)self_73325)->elts[0], boolean_f));
+  return_closcall1(  ((closureN)self_73325)->elts[1],  Cyc_set_car(((closureN)self_73325)->elts[0], boolean_f));
 } else { 
-  return_funcall1(  ((closureN)self_73325)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_73325)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -1202,16 +1202,16 @@ c_731659.elts[0] = k_7374;
 
 
 make_string(c_731669, "-t");
-return_funcall1((closure)&c_731659,  memberp(&c_731669, ((closureN)self_73326)->elts[0]));; 
+return_closcall1((closure)&c_731659,  memberp(&c_731669, ((closureN)self_73326)->elts[0]));; 
 }
 
 static void __lambda_244(int argc, object self_73327, object r_7375) {
   if( !eq(boolean_f, r_7375) ){ 
   
 make_int(c_731664, 4);
-return_funcall1(  ((closureN)self_73327)->elts[0],  global_set(__glo__85trace_91level_85, &c_731664));
+return_closcall1(  ((closureN)self_73327)->elts[0],  global_set(__glo__85trace_91level_85, &c_731664));
 } else { 
-  return_funcall1(  ((closureN)self_73327)->elts[0],  boolean_f);}
+  return_closcall1(  ((closureN)self_73327)->elts[0],  boolean_f);}
 ; 
 }
 
@@ -1227,7 +1227,7 @@ c_731393.elts = (object *)alloca(sizeof(object) * 2);
 c_731393.elts[0] = cc_127_736;
 c_731393.elts[1] = k_7385;
 
-return_funcall1((closure)&c_731393,  car(args_737));; 
+return_closcall1((closure)&c_731393,  car(args_737));; 
 }
 
 static void __lambda_242(int argc, object self_73328, object r_7386) {
@@ -1242,7 +1242,7 @@ c_731395.elts = (object *)alloca(sizeof(object) * 2);
 c_731395.elts[0] = ((closureN)self_73328)->elts[0];
 c_731395.elts[1] = ((closureN)self_73328)->elts[1];
 
-return_funcall1((closure)&c_731395,  r_7386);; 
+return_closcall1((closure)&c_731395,  r_7386);; 
 }
 
 static void __lambda_241(int argc, object self_73329, object in_91file_738) {
@@ -1258,7 +1258,7 @@ c_731397.elts[0] = ((closureN)self_73329)->elts[0];
 c_731397.elts[1] = in_91file_738;
 c_731397.elts[2] = ((closureN)self_73329)->elts[1];
 
-return_funcall2(  __glo_read_91file,  &c_731397, in_91file_738);; 
+return_closcall2(  __glo_read_91file,  &c_731397, in_91file_738);; 
 }
 
 static void __lambda_240(int argc, object self_73330, object r_7387) {
@@ -1274,7 +1274,7 @@ c_731399.elts[0] = ((closureN)self_73330)->elts[0];
 c_731399.elts[1] = ((closureN)self_73330)->elts[1];
 c_731399.elts[2] = ((closureN)self_73330)->elts[2];
 
-return_funcall1((closure)&c_731399,  r_7387);; 
+return_closcall1((closure)&c_731399,  r_7387);; 
 }
 
 static void __lambda_239(int argc, object self_73331, object in_91prog_739) {
@@ -1291,7 +1291,7 @@ c_731401.elts[1] = ((closureN)self_73331)->elts[1];
 c_731401.elts[2] = in_91prog_739;
 c_731401.elts[3] = ((closureN)self_73331)->elts[2];
 
-return_funcall1((closure)&c_731401,  car(in_91prog_739));; 
+return_closcall1((closure)&c_731401,  car(in_91prog_739));; 
 }
 
 static void __lambda_238(int argc, object self_73332, object r_73125) {
@@ -1308,7 +1308,7 @@ c_731403.elts[1] = ((closureN)self_73332)->elts[1];
 c_731403.elts[2] = ((closureN)self_73332)->elts[2];
 c_731403.elts[3] = ((closureN)self_73332)->elts[3];
 
-return_funcall2(  __glo_library_127,  &c_731403, r_73125);; 
+return_closcall2(  __glo_library_127,  &c_731403, r_73125);; 
 }
 
 static void __lambda_237(int argc, object self_73333, object r_73124) {
@@ -1325,7 +1325,7 @@ c_731405.elts[1] = ((closureN)self_73333)->elts[1];
 c_731405.elts[2] = ((closureN)self_73333)->elts[2];
 c_731405.elts[3] = ((closureN)self_73333)->elts[3];
 
-return_funcall2(  __glo_not,  &c_731405, r_73124);; 
+return_closcall2(  __glo_not,  &c_731405, r_73124);; 
 }
 
 static void __lambda_236(int argc, object self_73334, object r_7388) {
@@ -1342,7 +1342,7 @@ c_731407.elts[1] = ((closureN)self_73334)->elts[1];
 c_731407.elts[2] = ((closureN)self_73334)->elts[2];
 c_731407.elts[3] = ((closureN)self_73334)->elts[3];
 
-return_funcall1((closure)&c_731407,  r_7388);; 
+return_closcall1((closure)&c_731407,  r_7388);; 
 }
 
 static void __lambda_235(int argc, object self_73335, object program_127_7310) {
@@ -1370,7 +1370,7 @@ c_731434.elts[2] = ((closureN)self_73335)->elts[2];
 c_731434.elts[3] = ((closureN)self_73335)->elts[3];
 c_731434.elts[4] = program_127_7310;
 
-return_funcall1((closure)&c_731409,  &c_731434);; 
+return_closcall1((closure)&c_731409,  &c_731434);; 
 }
 
 static void __lambda_234(int argc, object self_73336, object r_7389) {
@@ -1388,7 +1388,7 @@ c_731436.elts[2] = ((closureN)self_73336)->elts[2];
 c_731436.elts[3] = ((closureN)self_73336)->elts[3];
 c_731436.elts[4] = ((closureN)self_73336)->elts[4];
 
-return_funcall1((closure)&c_731436,  r_7389);; 
+return_closcall1((closure)&c_731436,  r_7389);; 
 }
 
 static void __lambda_233(int argc, object self_73337, object lib_91deps_7311) {
@@ -1407,7 +1407,7 @@ c_731438.elts[3] = ((closureN)self_73337)->elts[3];
 c_731438.elts[4] = lib_91deps_7311;
 c_731438.elts[5] = ((closureN)self_73337)->elts[4];
 
-return_funcall2(  __glo_basename,  &c_731438, ((closureN)self_73337)->elts[1]);; 
+return_closcall2(  __glo_basename,  &c_731438, ((closureN)self_73337)->elts[1]);; 
 }
 
 static void __lambda_232(int argc, object self_73338, object r_7390) {
@@ -1426,7 +1426,7 @@ c_731440.elts[3] = ((closureN)self_73338)->elts[3];
 c_731440.elts[4] = ((closureN)self_73338)->elts[4];
 c_731440.elts[5] = ((closureN)self_73338)->elts[5];
 
-return_funcall1((closure)&c_731440,  r_7390);; 
+return_closcall1((closure)&c_731440,  r_7390);; 
 }
 
 static void __lambda_231(int argc, object self_73339, object exec_91file_7312) {
@@ -1450,7 +1450,7 @@ c_731442.elts[6] = ((closureN)self_73339)->elts[5];
 make_string(c_731633, ".c");
 
 string_type c_731632 = Cyc_string_append(2,exec_91file_7312, &c_731633);
-return_funcall1((closure)&c_731442,  &c_731632);; 
+return_closcall1((closure)&c_731442,  &c_731632);; 
 }
 
 static void __lambda_230(int argc, object self_73340, object r_7391) {
@@ -1470,7 +1470,7 @@ c_731444.elts[4] = ((closureN)self_73340)->elts[4];
 c_731444.elts[5] = ((closureN)self_73340)->elts[5];
 c_731444.elts[6] = ((closureN)self_73340)->elts[6];
 
-return_funcall1((closure)&c_731444,  r_7391);; 
+return_closcall1((closure)&c_731444,  r_7391);; 
 }
 
 static void __lambda_229(int argc, object self_73341, object src_91file_7313) {
@@ -1495,7 +1495,7 @@ c_731446.elts[7] = src_91file_7313;
 make_string(c_731629, ".meta");
 
 string_type c_731627 = Cyc_string_append(2,((closureN)self_73341)->elts[1], &c_731629);
-return_funcall1((closure)&c_731446,  &c_731627);; 
+return_closcall1((closure)&c_731446,  &c_731627);; 
 }
 
 static void __lambda_228(int argc, object self_73342, object r_7392) {
@@ -1516,7 +1516,7 @@ c_731448.elts[5] = ((closureN)self_73342)->elts[5];
 c_731448.elts[6] = ((closureN)self_73342)->elts[6];
 c_731448.elts[7] = ((closureN)self_73342)->elts[7];
 
-return_funcall1((closure)&c_731448,  r_7392);; 
+return_closcall1((closure)&c_731448,  r_7392);; 
 }
 
 static void __lambda_227(int argc, object self_73343, object meta_91file_7314) {
@@ -1548,7 +1548,7 @@ c_731614.elts[0] = ((closureN)self_73343)->elts[2];
 c_731614.elts[1] = ((closureN)self_73343)->elts[5];
 c_731614.elts[2] = ((closureN)self_73343)->elts[7];
 
-return_funcall1((closure)&c_731450,  &c_731614);; 
+return_closcall1((closure)&c_731450,  &c_731614);; 
 }
 
 static void __lambda_226(int argc, object self_73344, object k_73115, object program_7315) {
@@ -1574,17 +1574,17 @@ c_731620.elts[0] = ((closureN)self_73344)->elts[0];
 c_731620.elts[1] = ((closureN)self_73344)->elts[1];
 c_731620.elts[2] = program_7315;
 
-return_funcall1((closure)&c_731616,  &c_731620);; 
+return_closcall1((closure)&c_731616,  &c_731620);; 
 }
 
 static void __lambda_225(int argc, object self_73345, object k_73117) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall4(  __glo_c_91compile_91and_91emit,  k_73117, ((closureN)self_73345)->elts[2], ((closureN)self_73345)->elts[1], ((closureN)self_73345)->elts[0]);; 
+return_closcall4(  __glo_c_91compile_91and_91emit,  k_73117, ((closureN)self_73345)->elts[2], ((closureN)self_73345)->elts[1], ((closureN)self_73345)->elts[0]);; 
 }
 
 static void __lambda_224(int argc, object self_73346, object r_73116) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall3(  __glo_with_91output_91to_91file,  ((closureN)self_73346)->elts[0], ((closureN)self_73346)->elts[1], r_73116);; 
+return_closcall3(  __glo_with_91output_91to_91file,  ((closureN)self_73346)->elts[0], ((closureN)self_73346)->elts[1], r_73116);; 
 }
 
 static void __lambda_223(int argc, object self_73347, object r_7393) {
@@ -1605,7 +1605,7 @@ c_731452.elts[5] = ((closureN)self_73347)->elts[5];
 c_731452.elts[6] = ((closureN)self_73347)->elts[6];
 c_731452.elts[7] = ((closureN)self_73347)->elts[7];
 
-return_funcall1((closure)&c_731452,  r_7393);; 
+return_closcall1((closure)&c_731452,  r_7393);; 
 }
 
 static void __lambda_222(int argc, object self_73348, object create_91c_91file_7316) {
@@ -1625,7 +1625,7 @@ c_731454.elts[4] = ((closureN)self_73348)->elts[5];
 c_731454.elts[5] = ((closureN)self_73348)->elts[6];
 c_731454.elts[6] = ((closureN)self_73348)->elts[7];
 
-return_funcall2(  create_91c_91file_7316,  &c_731454, ((closureN)self_73348)->elts[2]);; 
+return_closcall2(  create_91c_91file_7316,  &c_731454, ((closureN)self_73348)->elts[2]);; 
 }
 
 static void __lambda_221(int argc, object self_73349, object r_7394) {
@@ -1645,7 +1645,7 @@ c_731456.elts[4] = ((closureN)self_73349)->elts[4];
 c_731456.elts[5] = ((closureN)self_73349)->elts[5];
 c_731456.elts[6] = ((closureN)self_73349)->elts[6];
 
-return_funcall1((closure)&c_731456,  r_7394);; 
+return_closcall1((closure)&c_731456,  r_7394);; 
 }
 
 static void __lambda_220(int argc, object self_73350, object result_7317) {
@@ -1665,7 +1665,7 @@ c_731458.elts[4] = ((closureN)self_73350)->elts[4];
 c_731458.elts[5] = ((closureN)self_73350)->elts[5];
 c_731458.elts[6] = ((closureN)self_73350)->elts[6];
 
-return_funcall0((closure)&c_731458);; 
+return_closcall0((closure)&c_731458);; 
 }
 
 static void __lambda_219(int argc, object self_73351) {
@@ -1684,7 +1684,7 @@ c_731461.elts[2] = ((closureN)self_73351)->elts[2];
 c_731461.elts[3] = ((closureN)self_73351)->elts[3];
 c_731461.elts[4] = ((closureN)self_73351)->elts[6];
 
-return_funcall3((closure)&c_731461,  boolean_f, boolean_f, boolean_f);
+return_closcall3((closure)&c_731461,  boolean_f, boolean_f, boolean_f);
 } else { 
   
 closureN_type c_731577;
@@ -1699,7 +1699,7 @@ c_731577.elts[2] = ((closureN)self_73351)->elts[2];
 c_731577.elts[3] = ((closureN)self_73351)->elts[4];
 c_731577.elts[4] = ((closureN)self_73351)->elts[6];
 
-return_funcall0((closure)&c_731577);}
+return_closcall0((closure)&c_731577);}
 ; 
 }
 
@@ -1720,7 +1720,7 @@ c_731579.elts[4] = ((closureN)self_73352)->elts[4];
 
 
 mclosure0(c_731603, (function_type)__lambda_217);c_731603.num_args = 0;
-return_funcall1((closure)&c_731579,  &c_731603);; 
+return_closcall1((closure)&c_731579,  &c_731603);; 
 }
 
 static void __lambda_217(int argc, object self_73353, object k_73111) {
@@ -1736,7 +1736,7 @@ c_731605.elts[0] = k_73111;
 
 
 make_string(c_731612, ";; This file was automatically generated by the Cyclone Scheme compiler");
-return_funcall2(  __glo_display,  &c_731605, &c_731612);; 
+return_closcall2(  __glo_display,  &c_731605, &c_731612);; 
 }
 
 static void __lambda_216(int argc, object self_73354, object r_73112) {
@@ -1750,7 +1750,7 @@ c_731607.num_elt = 1;
 c_731607.elts = (object *)alloca(sizeof(object) * 1);
 c_731607.elts[0] = ((closureN)self_73354)->elts[0];
 
-return_funcall1(  __glo_newline,  &c_731607);; 
+return_closcall1(  __glo_newline,  &c_731607);; 
 }
 
 static void __lambda_215(int argc, object self_73355, object r_73113) {
@@ -1764,12 +1764,12 @@ c_731609.num_elt = 1;
 c_731609.elts = (object *)alloca(sizeof(object) * 1);
 c_731609.elts[0] = ((closureN)self_73355)->elts[0];
 
-return_funcall1(  __glo_macro_117get_91defined_91macros,  &c_731609);; 
+return_closcall1(  __glo_macro_117get_91defined_91macros,  &c_731609);; 
 }
 
 static void __lambda_214(int argc, object self_73356, object r_73114) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall2(  __glo_write,  ((closureN)self_73356)->elts[0], r_73114);; 
+return_closcall2(  __glo_write,  ((closureN)self_73356)->elts[0], r_73114);; 
 }
 
 static void __lambda_213(int argc, object self_73357, object r_73110) {
@@ -1786,7 +1786,7 @@ c_731581.elts[1] = ((closureN)self_73357)->elts[1];
 c_731581.elts[2] = ((closureN)self_73357)->elts[2];
 c_731581.elts[3] = ((closureN)self_73357)->elts[4];
 
-return_funcall3(  __glo_with_91output_91to_91file,  &c_731581, ((closureN)self_73357)->elts[3], r_73110);; 
+return_closcall3(  __glo_with_91output_91to_91file,  &c_731581, ((closureN)self_73357)->elts[3], r_73110);; 
 }
 
 static void __lambda_212(int argc, object self_73358, object r_73108) {
@@ -1809,7 +1809,7 @@ make_string(c_731599, " -g -c -o ");
 make_string(c_731601, ".o");
 
 string_type c_731596 = Cyc_string_append(5,&c_731597, ((closureN)self_73358)->elts[3], &c_731599, ((closureN)self_73358)->elts[1], &c_731601);
-return_funcall1((closure)&c_731583,  &c_731596);; 
+return_closcall1((closure)&c_731583,  &c_731596);; 
 }
 
 static void __lambda_211(int argc, object self_73359, object r_73109) {
@@ -1824,7 +1824,7 @@ c_731585.elts = (object *)alloca(sizeof(object) * 2);
 c_731585.elts[0] = ((closureN)self_73359)->elts[0];
 c_731585.elts[1] = ((closureN)self_73359)->elts[1];
 
-return_funcall1((closure)&c_731585,  r_73109);; 
+return_closcall1((closure)&c_731585,  r_73109);; 
 }
 
 static void __lambda_210(int argc, object self_73360, object comp_91lib_91cmd_7318) {
@@ -1832,9 +1832,9 @@ static void __lambda_210(int argc, object self_73360, object comp_91lib_91cmd_73
 if( !eq(boolean_f, ((closureN)self_73360)->elts[0]) ){ 
   
 integer_type c_731591 = Cyc_system(comp_91lib_91cmd_7318);
-return_funcall1(  ((closureN)self_73360)->elts[1],  &c_731591);
+return_closcall1(  ((closureN)self_73360)->elts[1],  &c_731591);
 } else { 
-  return_funcall2(  __glo_write,  ((closureN)self_73360)->elts[1], comp_91lib_91cmd_7318);}
+  return_closcall2(  __glo_write,  ((closureN)self_73360)->elts[1], comp_91lib_91cmd_7318);}
 ; 
 }
 
@@ -1857,7 +1857,7 @@ c_731463.elts[6] = ((closureN)self_73361)->elts[4];
 
 
 make_cell(c_731575,objs_91str_7321);
-return_funcall1((closure)&c_731463,  &c_731575);; 
+return_closcall1((closure)&c_731463,  &c_731575);; 
 }
 
 static void __lambda_208(int argc, object self_73362, object objs_91str_7321) {
@@ -1879,7 +1879,7 @@ c_731465.elts[6] = ((closureN)self_73362)->elts[6];
 
 
 make_cell(c_731571,((closureN)self_73362)->elts[2]);
-return_funcall1((closure)&c_731465,  &c_731571);; 
+return_closcall1((closure)&c_731465,  &c_731571);; 
 }
 
 static void __lambda_207(int argc, object self_73363, object comp_91prog_91cmd_7320) {
@@ -1901,7 +1901,7 @@ c_731467.elts[6] = ((closureN)self_73363)->elts[6];
 
 
 make_cell(c_731567,((closureN)self_73363)->elts[1]);
-return_funcall1((closure)&c_731467,  &c_731567);; 
+return_closcall1((closure)&c_731467,  &c_731567);; 
 }
 
 static void __lambda_206(int argc, object self_73364, object comp_91objs_91cmd_7319) {
@@ -1922,7 +1922,7 @@ c_731469.elts[5] = ((closureN)self_73364)->elts[4];
 c_731469.elts[6] = ((closureN)self_73364)->elts[5];
 c_731469.elts[7] = ((closureN)self_73364)->elts[6];
 
-return_funcall0((closure)&c_731469);; 
+return_closcall0((closure)&c_731469);; 
 }
 
 static void __lambda_205(int argc, object self_73365) {
@@ -1945,7 +1945,7 @@ c_731471.elts[7] = ((closureN)self_73365)->elts[7];
 
 
 mclosure0(c_731554, (function_type)__lambda_204);c_731554.num_args = 1;
-return_funcall1((closure)&c_731471,  &c_731554);; 
+return_closcall1((closure)&c_731471,  &c_731554);; 
 }
 
 static void __lambda_204(int argc, object self_73366, object k_73106, object i_7322) {
@@ -1961,7 +1961,7 @@ c_731556.elts[0] = k_73106;
 
 
 make_string(c_731564, ".o");
-return_funcall3(  __glo_lib_117import_91_125filename,  &c_731556, i_7322, &c_731564);; 
+return_closcall3(  __glo_lib_117import_91_125filename,  &c_731556, i_7322, &c_731564);; 
 }
 
 static void __lambda_203(int argc, object self_73367, object r_73107) {
@@ -1972,7 +1972,7 @@ make_string(c_731562, " ");
 make_string(c_731563, " ");
 
 string_type c_731561 = Cyc_string_append(3,&c_731562, r_73107, &c_731563);
-return_funcall1(  ((closureN)self_73367)->elts[0],  &c_731561);; 
+return_closcall1(  ((closureN)self_73367)->elts[0],  &c_731561);; 
 }
 
 static void __lambda_202(int argc, object self_73368, object r_73105) {
@@ -1992,7 +1992,7 @@ c_731473.elts[4] = ((closureN)self_73368)->elts[4];
 c_731473.elts[5] = ((closureN)self_73368)->elts[6];
 c_731473.elts[6] = ((closureN)self_73368)->elts[7];
 
-return_funcall3(  __glo_map,  &c_731473, r_73105, ((closureN)self_73368)->elts[5]);; 
+return_closcall3(  __glo_map,  &c_731473, r_73105, ((closureN)self_73368)->elts[5]);; 
 }
 
 static void __lambda_201(int argc, object self_73369, object r_73104) {
@@ -2014,7 +2014,7 @@ c_731475.elts[6] = ((closureN)self_73369)->elts[6];
 
 
 object c_731552 = apply((closure)&c_731475, primitive_string_91append, r_73104);
-return_funcall1((closure)&c_731475,  c_731552);; 
+return_closcall1((closure)&c_731475,  c_731552);; 
 }
 
 static void __lambda_200(int argc, object self_73370, object r_73103) {
@@ -2034,7 +2034,7 @@ c_731477.elts[4] = ((closureN)self_73370)->elts[4];
 c_731477.elts[5] = ((closureN)self_73370)->elts[5];
 c_731477.elts[6] = ((closureN)self_73370)->elts[6];
 
-return_funcall1((closure)&c_731477,  Cyc_set_car(((closureN)self_73370)->elts[5], r_73103));; 
+return_closcall1((closure)&c_731477,  Cyc_set_car(((closureN)self_73370)->elts[5], r_73103));; 
 }
 
 static void __lambda_199(int argc, object self_73371, object r_7395) {
@@ -2061,7 +2061,7 @@ make_string(c_731544, " -g -c -o ");
 make_string(c_731546, ".o");
 
 string_type c_731541 = Cyc_string_append(5,&c_731542, ((closureN)self_73371)->elts[6], &c_731544, ((closureN)self_73371)->elts[3], &c_731546);
-return_funcall1((closure)&c_731479,  &c_731541);; 
+return_closcall1((closure)&c_731479,  &c_731541);; 
 }
 
 static void __lambda_198(int argc, object self_73372, object r_73102) {
@@ -2080,7 +2080,7 @@ c_731481.elts[3] = ((closureN)self_73372)->elts[3];
 c_731481.elts[4] = ((closureN)self_73372)->elts[4];
 c_731481.elts[5] = ((closureN)self_73372)->elts[5];
 
-return_funcall1((closure)&c_731481,  Cyc_set_car(((closureN)self_73372)->elts[2], r_73102));; 
+return_closcall1((closure)&c_731481,  Cyc_set_car(((closureN)self_73372)->elts[2], r_73102));; 
 }
 
 static void __lambda_197(int argc, object self_73373, object r_7396) {
@@ -2105,7 +2105,7 @@ make_string(c_731530, ".o ");
 make_string(c_731534, " -lcyclone -lm -g -o ");
 
 string_type c_731527 = Cyc_string_append(6,&c_731528, ((closureN)self_73373)->elts[3], &c_731530, cell_get(((closureN)self_73373)->elts[5]), &c_731534, ((closureN)self_73373)->elts[3]);
-return_funcall1((closure)&c_731483,  &c_731527);; 
+return_closcall1((closure)&c_731483,  &c_731527);; 
 }
 
 static void __lambda_196(int argc, object self_73374, object r_73101) {
@@ -2122,7 +2122,7 @@ c_731485.elts[1] = ((closureN)self_73374)->elts[1];
 c_731485.elts[2] = ((closureN)self_73374)->elts[2];
 c_731485.elts[3] = ((closureN)self_73374)->elts[3];
 
-return_funcall1((closure)&c_731485,  Cyc_set_car(((closureN)self_73374)->elts[1], r_73101));; 
+return_closcall1((closure)&c_731485,  Cyc_set_car(((closureN)self_73374)->elts[1], r_73101));; 
 }
 
 static void __lambda_195(int argc, object self_73375, object r_7397) {
@@ -2140,7 +2140,7 @@ c_731488.elts[1] = ((closureN)self_73375)->elts[3];
 
 
 integer_type c_731506 = Cyc_system(cell_get(((closureN)self_73375)->elts[2]));
-return_funcall1((closure)&c_731488,  &c_731506);
+return_closcall1((closure)&c_731488,  &c_731506);
 } else { 
   
 closureN_type c_731511;
@@ -2153,7 +2153,7 @@ c_731511.elts[0] = ((closureN)self_73375)->elts[1];
 c_731511.elts[1] = ((closureN)self_73375)->elts[2];
 c_731511.elts[2] = ((closureN)self_73375)->elts[3];
 
-return_funcall0((closure)&c_731511);}
+return_closcall0((closure)&c_731511);}
 ; 
 }
 
@@ -2169,12 +2169,12 @@ c_731513.elts = (object *)alloca(sizeof(object) * 2);
 c_731513.elts[0] = ((closureN)self_73376)->elts[0];
 c_731513.elts[1] = ((closureN)self_73376)->elts[2];
 
-return_funcall2(  __glo_write,  &c_731513, cell_get(((closureN)self_73376)->elts[1]));; 
+return_closcall2(  __glo_write,  &c_731513, cell_get(((closureN)self_73376)->elts[1]));; 
 }
 
 static void __lambda_193(int argc, object self_73377, object r_73100) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall2(  __glo_write,  ((closureN)self_73377)->elts[1], cell_get(((closureN)self_73377)->elts[0]));; 
+return_closcall2(  __glo_write,  ((closureN)self_73377)->elts[1], cell_get(((closureN)self_73377)->elts[0]));; 
 }
 
 static void __lambda_192(int argc, object self_73378, object r_7399) {
@@ -2191,7 +2191,7 @@ c_731490.elts[1] = ((closureN)self_73378)->elts[1];
 
 
 make_int(c_731503, 0);
-return_funcall1((closure)&c_731490,  equalp(&c_731503, r_7399));; 
+return_closcall1((closure)&c_731490,  equalp(&c_731503, r_7399));; 
 }
 
 static void __lambda_191(int argc, object self_73379, object r_7398) {
@@ -2199,9 +2199,9 @@ static void __lambda_191(int argc, object self_73379, object r_7398) {
 if( !eq(boolean_f, r_7398) ){ 
   
 integer_type c_731495 = Cyc_system(cell_get(((closureN)self_73379)->elts[0]));
-return_funcall1(  ((closureN)self_73379)->elts[1],  &c_731495);
+return_closcall1(  ((closureN)self_73379)->elts[1],  &c_731495);
 } else { 
-  return_funcall1(  ((closureN)self_73379)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_73379)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -2227,7 +2227,7 @@ c_731424.elts = (object *)alloca(sizeof(object) * 2);
 c_731424.elts[0] = ((closureN)self_73380)->elts[0];
 c_731424.elts[1] = k_73118;
 
-return_funcall1((closure)&c_731411,  &c_731424);; 
+return_closcall1((closure)&c_731411,  &c_731424);; 
 }
 
 static void __lambda_189(int argc, object self_73381, object r_73119) {
@@ -2242,15 +2242,15 @@ c_731426.num_elt = 1;
 c_731426.elts = (object *)alloca(sizeof(object) * 1);
 c_731426.elts[0] = ((closureN)self_73381)->elts[1];
 
-return_funcall1((closure)&c_731426,  cdar(((closureN)self_73381)->elts[0]));
+return_closcall1((closure)&c_731426,  cdar(((closureN)self_73381)->elts[0]));
 } else { 
-  return_funcall1(  ((closureN)self_73381)->elts[1],  nil);}
+  return_closcall1(  ((closureN)self_73381)->elts[1],  nil);}
 ; 
 }
 
 static void __lambda_188(int argc, object self_73382, object r_73120) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall2(  __glo_lib_117get_91all_91import_91deps,  ((closureN)self_73382)->elts[0], r_73120);; 
+return_closcall2(  __glo_lib_117get_91all_91import_91deps,  ((closureN)self_73382)->elts[0], r_73120);; 
 }
 
 static void __lambda_187(int argc, object self_73383, object k_73121) {
@@ -2266,9 +2266,9 @@ c_731414.elts = (object *)alloca(sizeof(object) * 2);
 c_731414.elts[0] = ((closureN)self_73383)->elts[0];
 c_731414.elts[1] = k_73121;
 
-return_funcall1((closure)&c_731414,  quote_import);
+return_closcall1((closure)&c_731414,  quote_import);
 } else { 
-  return_funcall1(  k_73121,  boolean_f);}
+  return_closcall1(  k_73121,  boolean_f);}
 ; 
 }
 
@@ -2284,12 +2284,12 @@ c_731416.elts = (object *)alloca(sizeof(object) * 2);
 c_731416.elts[0] = ((closureN)self_73384)->elts[1];
 c_731416.elts[1] = r_73122;
 
-return_funcall1((closure)&c_731416,  car(((closureN)self_73384)->elts[0]));; 
+return_closcall1((closure)&c_731416,  car(((closureN)self_73384)->elts[0]));; 
 }
 
 static void __lambda_185(int argc, object self_73385, object r_73123) {
   Cyc_st_add("cyclone.scm:run-compiler");
-return_funcall3(  __glo_tagged_91list_127,  ((closureN)self_73385)->elts[0], ((closureN)self_73385)->elts[1], r_73123);; 
+return_closcall3(  __glo_tagged_91list_127,  ((closureN)self_73385)->elts[0], ((closureN)self_73385)->elts[1], r_73123);; 
 }
 
 static void __lambda_184(int argc, closure _,object k_73128, object filename_7323) {
@@ -2306,17 +2306,17 @@ c_731385.elts[1] = k_73128;
 
 
 mclosure0(c_731389, (function_type)__lambda_183);c_731389.num_args = 1;
-return_funcall1((closure)&c_731385,  &c_731389);; 
+return_closcall1((closure)&c_731385,  &c_731389);; 
 }
 
 static void __lambda_183(int argc, object self_73386, object k_73130, object port_7324) {
   Cyc_st_add("cyclone.scm:read-file");
-return_funcall2(  __glo_read_91all,  k_73130, port_7324);; 
+return_closcall2(  __glo_read_91all,  k_73130, port_7324);; 
 }
 
 static void __lambda_182(int argc, object self_73387, object r_73129) {
   Cyc_st_add("cyclone.scm:read-file");
-return_funcall3(  __glo_call_91with_91input_91file,  ((closureN)self_73387)->elts[1], ((closureN)self_73387)->elts[0], r_73129);; 
+return_closcall3(  __glo_call_91with_91input_91file,  ((closureN)self_73387)->elts[1], ((closureN)self_73387)->elts[0], r_73129);; 
 }
 
 static void __lambda_181(int argc, closure _,object k_73133, object input_91program_7327, object lib_91deps_7326, object src_91file_7325) {
@@ -2334,7 +2334,7 @@ c_73570.elts[2] = src_91file_7325;
 
 
 make_cell(c_731382,input_91program_7327);
-return_funcall1((closure)&c_73570,  &c_731382);; 
+return_closcall1((closure)&c_73570,  &c_731382);; 
 }
 
 static void __lambda_180(int argc, object self_73388, object input_91program_7327) {
@@ -2351,7 +2351,7 @@ c_73572.elts[1] = ((closureN)self_73388)->elts[0];
 c_73572.elts[2] = ((closureN)self_73388)->elts[1];
 c_73572.elts[3] = ((closureN)self_73388)->elts[2];
 
-return_funcall7((closure)&c_73572,  boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f);; 
+return_closcall7((closure)&c_73572,  boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f);; 
 }
 
 static void __lambda_179(int argc, object self_73389, object globals_7334, object imported_91vars_7333, object imports_7332, object lib_91exports_7331, object lib_91name_7330, object module_91globals_7329, object program_127_7328) {
@@ -2376,7 +2376,7 @@ c_73577.elts[0] = ((closureN)self_73389)->elts[0];
 c_73577.elts[1] = ((closureN)self_73389)->elts[2];
 c_73577.elts[2] = ((closureN)self_73389)->elts[3];
 
-return_funcall1((closure)&c_73574,  &c_73577);; 
+return_closcall1((closure)&c_73574,  &c_73577);; 
 }
 
 static void __lambda_178(int argc, object self_73390, object k_73135, object return_7335) {
@@ -2394,7 +2394,7 @@ c_73579.elts[2] = ((closureN)self_73390)->elts[1];
 c_73579.elts[3] = return_7335;
 c_73579.elts[4] = ((closureN)self_73390)->elts[2];
 
-return_funcall7((closure)&c_73579,  boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f);; 
+return_closcall7((closure)&c_73579,  boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f);; 
 }
 
 static void __lambda_177(int argc, object self_73391, object globals_7342, object module_91globals_7341, object program_127_7340, object imports_7339, object imported_91vars_7338, object lib_91name_7337, object lib_91exports_7336) {
@@ -2420,7 +2420,7 @@ c_73581.elts[10] = ((closureN)self_73391)->elts[4];
 
 
 make_cell(c_731379,globals_7342);
-return_funcall1((closure)&c_73581,  &c_731379);; 
+return_closcall1((closure)&c_73581,  &c_731379);; 
 }
 
 static void __lambda_176(int argc, object self_73392, object globals_7342) {
@@ -2446,7 +2446,7 @@ c_73583.elts[10] = ((closureN)self_73392)->elts[10];
 
 
 make_cell(c_731375,((closureN)self_73392)->elts[7]);
-return_funcall1((closure)&c_73583,  &c_731375);; 
+return_closcall1((closure)&c_73583,  &c_731375);; 
 }
 
 static void __lambda_175(int argc, object self_73393, object module_91globals_7341) {
@@ -2472,7 +2472,7 @@ c_73585.elts[10] = ((closureN)self_73393)->elts[10];
 
 
 make_cell(c_731371,((closureN)self_73393)->elts[8]);
-return_funcall1((closure)&c_73585,  &c_731371);; 
+return_closcall1((closure)&c_73585,  &c_731371);; 
 }
 
 static void __lambda_174(int argc, object self_73394, object program_127_7340) {
@@ -2498,7 +2498,7 @@ c_73587.elts[10] = ((closureN)self_73394)->elts[10];
 
 
 make_cell(c_731367,((closureN)self_73394)->elts[2]);
-return_funcall1((closure)&c_73587,  &c_731367);; 
+return_closcall1((closure)&c_73587,  &c_731367);; 
 }
 
 static void __lambda_173(int argc, object self_73395, object imports_7339) {
@@ -2524,7 +2524,7 @@ c_73589.elts[10] = ((closureN)self_73395)->elts[10];
 
 
 make_cell(c_731363,((closureN)self_73395)->elts[1]);
-return_funcall1((closure)&c_73589,  &c_731363);; 
+return_closcall1((closure)&c_73589,  &c_731363);; 
 }
 
 static void __lambda_172(int argc, object self_73396, object imported_91vars_7338) {
@@ -2550,7 +2550,7 @@ c_73591.elts[10] = ((closureN)self_73396)->elts[10];
 
 
 make_cell(c_731359,((closureN)self_73396)->elts[6]);
-return_funcall1((closure)&c_73591,  &c_731359);; 
+return_closcall1((closure)&c_73591,  &c_731359);; 
 }
 
 static void __lambda_171(int argc, object self_73397, object lib_91name_7337) {
@@ -2576,7 +2576,7 @@ c_73593.elts[10] = ((closureN)self_73397)->elts[10];
 
 
 make_cell(c_731355,((closureN)self_73397)->elts[6]);
-return_funcall1((closure)&c_73593,  &c_731355);; 
+return_closcall1((closure)&c_73593,  &c_731355);; 
 }
 
 static void __lambda_170(int argc, object self_73398, object lib_91exports_7336) {
@@ -2601,7 +2601,7 @@ c_73595.elts[9] = ((closureN)self_73398)->elts[8];
 c_73595.elts[10] = ((closureN)self_73398)->elts[9];
 c_73595.elts[11] = ((closureN)self_73398)->elts[10];
 
-return_funcall1((closure)&c_73595,  nil);; 
+return_closcall1((closure)&c_73595,  nil);; 
 }
 
 static void __lambda_169(int argc, object self_73399, object r_73296) {
@@ -2626,7 +2626,7 @@ c_73597.elts[9] = ((closureN)self_73399)->elts[9];
 c_73597.elts[10] = ((closureN)self_73399)->elts[10];
 c_73597.elts[11] = ((closureN)self_73399)->elts[11];
 
-return_funcall1((closure)&c_73597,  Cyc_set_car(((closureN)self_73399)->elts[0], r_73296));; 
+return_closcall1((closure)&c_73597,  Cyc_set_car(((closureN)self_73399)->elts[0], r_73296));; 
 }
 
 static void __lambda_168(int argc, object self_73400, object r_73136) {
@@ -2651,7 +2651,7 @@ c_73599.elts[9] = ((closureN)self_73400)->elts[9];
 c_73599.elts[10] = ((closureN)self_73400)->elts[10];
 c_73599.elts[11] = ((closureN)self_73400)->elts[11];
 
-return_funcall1((closure)&c_73599,  nil);; 
+return_closcall1((closure)&c_73599,  nil);; 
 }
 
 static void __lambda_167(int argc, object self_73401, object r_73295) {
@@ -2676,7 +2676,7 @@ c_73601.elts[9] = ((closureN)self_73401)->elts[9];
 c_73601.elts[10] = ((closureN)self_73401)->elts[10];
 c_73601.elts[11] = ((closureN)self_73401)->elts[11];
 
-return_funcall1((closure)&c_73601,  Cyc_set_car(((closureN)self_73401)->elts[8], r_73295));; 
+return_closcall1((closure)&c_73601,  Cyc_set_car(((closureN)self_73401)->elts[8], r_73295));; 
 }
 
 static void __lambda_166(int argc, object self_73402, object r_73137) {
@@ -2701,7 +2701,7 @@ c_73603.elts[9] = ((closureN)self_73402)->elts[9];
 c_73603.elts[10] = ((closureN)self_73402)->elts[10];
 c_73603.elts[11] = ((closureN)self_73402)->elts[11];
 
-return_funcall1((closure)&c_73603,  Cyc_set_car(((closureN)self_73402)->elts[9], boolean_t));; 
+return_closcall1((closure)&c_73603,  Cyc_set_car(((closureN)self_73402)->elts[9], boolean_t));; 
 }
 
 static void __lambda_165(int argc, object self_73403, object r_73138) {
@@ -2726,7 +2726,7 @@ c_73605.elts[9] = ((closureN)self_73403)->elts[9];
 c_73605.elts[10] = ((closureN)self_73403)->elts[10];
 c_73605.elts[11] = ((closureN)self_73403)->elts[11];
 
-return_funcall1((closure)&c_73605,  nil);; 
+return_closcall1((closure)&c_73605,  nil);; 
 }
 
 static void __lambda_164(int argc, object self_73404, object r_73294) {
@@ -2751,7 +2751,7 @@ c_73607.elts[9] = ((closureN)self_73404)->elts[9];
 c_73607.elts[10] = ((closureN)self_73404)->elts[10];
 c_73607.elts[11] = ((closureN)self_73404)->elts[11];
 
-return_funcall1((closure)&c_73607,  Cyc_set_car(((closureN)self_73404)->elts[2], r_73294));; 
+return_closcall1((closure)&c_73607,  Cyc_set_car(((closureN)self_73404)->elts[2], r_73294));; 
 }
 
 static void __lambda_163(int argc, object self_73405, object r_73139) {
@@ -2776,7 +2776,7 @@ c_73609.elts[9] = ((closureN)self_73405)->elts[9];
 c_73609.elts[10] = ((closureN)self_73405)->elts[10];
 c_73609.elts[11] = ((closureN)self_73405)->elts[11];
 
-return_funcall1((closure)&c_73609,  nil);; 
+return_closcall1((closure)&c_73609,  nil);; 
 }
 
 static void __lambda_162(int argc, object self_73406, object r_73293) {
@@ -2801,7 +2801,7 @@ c_73611.elts[9] = ((closureN)self_73406)->elts[9];
 c_73611.elts[10] = ((closureN)self_73406)->elts[10];
 c_73611.elts[11] = ((closureN)self_73406)->elts[11];
 
-return_funcall1((closure)&c_73611,  Cyc_set_car(((closureN)self_73406)->elts[1], r_73293));; 
+return_closcall1((closure)&c_73611,  Cyc_set_car(((closureN)self_73406)->elts[1], r_73293));; 
 }
 
 static void __lambda_161(int argc, object self_73407, object r_73140) {
@@ -2826,7 +2826,7 @@ c_73613.elts[9] = ((closureN)self_73407)->elts[9];
 c_73613.elts[10] = ((closureN)self_73407)->elts[10];
 c_73613.elts[11] = ((closureN)self_73407)->elts[11];
 
-return_funcall1((closure)&c_73613,  nil);; 
+return_closcall1((closure)&c_73613,  nil);; 
 }
 
 static void __lambda_160(int argc, object self_73408, object r_73292) {
@@ -2851,7 +2851,7 @@ c_73615.elts[9] = ((closureN)self_73408)->elts[9];
 c_73615.elts[10] = ((closureN)self_73408)->elts[10];
 c_73615.elts[11] = ((closureN)self_73408)->elts[11];
 
-return_funcall1((closure)&c_73615,  Cyc_set_car(((closureN)self_73408)->elts[7], r_73292));; 
+return_closcall1((closure)&c_73615,  Cyc_set_car(((closureN)self_73408)->elts[7], r_73292));; 
 }
 
 static void __lambda_159(int argc, object self_73409, object r_73141) {
@@ -2876,7 +2876,7 @@ c_73617.elts[9] = ((closureN)self_73409)->elts[9];
 c_73617.elts[10] = ((closureN)self_73409)->elts[10];
 c_73617.elts[11] = ((closureN)self_73409)->elts[11];
 
-return_funcall1((closure)&c_73617,  nil);; 
+return_closcall1((closure)&c_73617,  nil);; 
 }
 
 static void __lambda_158(int argc, object self_73410, object r_73291) {
@@ -2901,7 +2901,7 @@ c_73619.elts[9] = ((closureN)self_73410)->elts[9];
 c_73619.elts[10] = ((closureN)self_73410)->elts[10];
 c_73619.elts[11] = ((closureN)self_73410)->elts[11];
 
-return_funcall1((closure)&c_73619,  Cyc_set_car(((closureN)self_73410)->elts[6], r_73291));; 
+return_closcall1((closure)&c_73619,  Cyc_set_car(((closureN)self_73410)->elts[6], r_73291));; 
 }
 
 static void __lambda_157(int argc, object self_73411, object r_73142) {
@@ -2926,7 +2926,7 @@ c_73621.elts[9] = ((closureN)self_73411)->elts[9];
 c_73621.elts[10] = ((closureN)self_73411)->elts[10];
 c_73621.elts[11] = ((closureN)self_73411)->elts[11];
 
-return_funcall2(  __glo_emit,  &c_73621, __glo__85c_91file_91header_91comment_85);; 
+return_closcall2(  __glo_emit,  &c_73621, __glo__85c_91file_91header_91comment_85);; 
 }
 
 static void __lambda_156(int argc, object self_73412, object r_73143) {
@@ -2953,7 +2953,7 @@ c_73623.elts[11] = ((closureN)self_73412)->elts[11];
 
 
 make_string(c_731331, "---------------- input program:");
-return_funcall2(  __glo_trace_117info,  &c_73623, &c_731331);; 
+return_closcall2(  __glo_trace_117info,  &c_73623, &c_731331);; 
 }
 
 static void __lambda_155(int argc, object self_73413, object r_73144) {
@@ -2978,7 +2978,7 @@ c_73625.elts[9] = ((closureN)self_73413)->elts[9];
 c_73625.elts[10] = ((closureN)self_73413)->elts[10];
 c_73625.elts[11] = ((closureN)self_73413)->elts[11];
 
-return_funcall2(  __glo_trace_117info,  &c_73625, cell_get(((closureN)self_73413)->elts[3]));; 
+return_closcall2(  __glo_trace_117info,  &c_73625, cell_get(((closureN)self_73413)->elts[3]));; 
 }
 
 static void __lambda_154(int argc, object self_73414, object r_73145) {
@@ -3016,7 +3016,7 @@ c_73798.elts[9] = ((closureN)self_73414)->elts[9];
 c_73798.elts[10] = ((closureN)self_73414)->elts[10];
 c_73798.elts[11] = ((closureN)self_73414)->elts[11];
 
-return_funcall1((closure)&c_73627,  &c_73798);; 
+return_closcall1((closure)&c_73627,  &c_73798);; 
 }
 
 static void __lambda_153(int argc, object self_73415, object r_73146) {
@@ -3043,7 +3043,7 @@ c_73800.elts[11] = ((closureN)self_73415)->elts[11];
 
 
 make_string(c_731327, "imports:");
-return_funcall2(  __glo_trace_117info,  &c_73800, &c_731327);; 
+return_closcall2(  __glo_trace_117info,  &c_73800, &c_731327);; 
 }
 
 static void __lambda_152(int argc, object self_73416, object r_73147) {
@@ -3068,7 +3068,7 @@ c_73802.elts[9] = ((closureN)self_73416)->elts[9];
 c_73802.elts[10] = ((closureN)self_73416)->elts[10];
 c_73802.elts[11] = ((closureN)self_73416)->elts[11];
 
-return_funcall2(  __glo_trace_117info,  &c_73802, cell_get(((closureN)self_73416)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_73802, cell_get(((closureN)self_73416)->elts[2]));; 
 }
 
 static void __lambda_151(int argc, object self_73417, object r_73148) {
@@ -3093,7 +3093,7 @@ c_73804.elts[9] = ((closureN)self_73417)->elts[9];
 c_73804.elts[10] = ((closureN)self_73417)->elts[10];
 c_73804.elts[11] = ((closureN)self_73417)->elts[11];
 
-return_funcall2(  __glo_lib_117resolve_91imports,  &c_73804, cell_get(((closureN)self_73417)->elts[2]));; 
+return_closcall2(  __glo_lib_117resolve_91imports,  &c_73804, cell_get(((closureN)self_73417)->elts[2]));; 
 }
 
 static void __lambda_150(int argc, object self_73418, object r_73256) {
@@ -3118,7 +3118,7 @@ c_73806.elts[9] = ((closureN)self_73418)->elts[9];
 c_73806.elts[10] = ((closureN)self_73418)->elts[10];
 c_73806.elts[11] = ((closureN)self_73418)->elts[11];
 
-return_funcall1((closure)&c_73806,  Cyc_set_car(((closureN)self_73418)->elts[1], r_73256));; 
+return_closcall1((closure)&c_73806,  Cyc_set_car(((closureN)self_73418)->elts[1], r_73256));; 
 }
 
 static void __lambda_149(int argc, object self_73419, object r_73149) {
@@ -3145,7 +3145,7 @@ c_73808.elts[11] = ((closureN)self_73419)->elts[11];
 
 
 make_string(c_731317, "resolved imports:");
-return_funcall2(  __glo_trace_117info,  &c_73808, &c_731317);; 
+return_closcall2(  __glo_trace_117info,  &c_73808, &c_731317);; 
 }
 
 static void __lambda_148(int argc, object self_73420, object r_73150) {
@@ -3170,7 +3170,7 @@ c_73810.elts[9] = ((closureN)self_73420)->elts[9];
 c_73810.elts[10] = ((closureN)self_73420)->elts[10];
 c_73810.elts[11] = ((closureN)self_73420)->elts[11];
 
-return_funcall2(  __glo_trace_117info,  &c_73810, cell_get(((closureN)self_73420)->elts[1]));; 
+return_closcall2(  __glo_trace_117info,  &c_73810, cell_get(((closureN)self_73420)->elts[1]));; 
 }
 
 static void __lambda_147(int argc, object self_73421, object r_73151) {
@@ -3194,7 +3194,7 @@ c_73812.elts[8] = ((closureN)self_73421)->elts[9];
 c_73812.elts[9] = ((closureN)self_73421)->elts[10];
 c_73812.elts[10] = ((closureN)self_73421)->elts[11];
 
-return_funcall2(  __glo_lib_117resolve_91meta,  &c_73812, cell_get(((closureN)self_73421)->elts[2]));; 
+return_closcall2(  __glo_lib_117resolve_91meta,  &c_73812, cell_get(((closureN)self_73421)->elts[2]));; 
 }
 
 static void __lambda_146(int argc, object self_73422, object r_73252) {
@@ -3218,7 +3218,7 @@ c_73814.elts[8] = ((closureN)self_73422)->elts[8];
 c_73814.elts[9] = ((closureN)self_73422)->elts[9];
 c_73814.elts[10] = ((closureN)self_73422)->elts[10];
 
-return_funcall1((closure)&c_73814,  r_73252);; 
+return_closcall1((closure)&c_73814,  r_73252);; 
 }
 
 static void __lambda_145(int argc, object self_73423, object meta_7351) {
@@ -3243,7 +3243,7 @@ c_73816.elts[9] = ((closureN)self_73423)->elts[8];
 c_73816.elts[10] = ((closureN)self_73423)->elts[9];
 c_73816.elts[11] = ((closureN)self_73423)->elts[10];
 
-return_funcall3(  __glo_append,  &c_73816, meta_7351, __glo__85defined_91macros_85);; 
+return_closcall3(  __glo_append,  &c_73816, meta_7351, __glo__85defined_91macros_85);; 
 }
 
 static void __lambda_144(int argc, object self_73424, object r_73255) {
@@ -3268,7 +3268,7 @@ c_73818.elts[9] = ((closureN)self_73424)->elts[9];
 c_73818.elts[10] = ((closureN)self_73424)->elts[10];
 c_73818.elts[11] = ((closureN)self_73424)->elts[11];
 
-return_funcall1((closure)&c_73818,  global_set(__glo__85defined_91macros_85, r_73255));; 
+return_closcall1((closure)&c_73818,  global_set(__glo__85defined_91macros_85, r_73255));; 
 }
 
 static void __lambda_143(int argc, object self_73425, object r_73253) {
@@ -3295,7 +3295,7 @@ c_73820.elts[11] = ((closureN)self_73425)->elts[11];
 
 
 make_string(c_731308, "resolved macros:");
-return_funcall2(  __glo_trace_117info,  &c_73820, &c_731308);; 
+return_closcall2(  __glo_trace_117info,  &c_73820, &c_731308);; 
 }
 
 static void __lambda_142(int argc, object self_73426, object r_73254) {
@@ -3319,7 +3319,7 @@ c_73822.elts[8] = ((closureN)self_73426)->elts[9];
 c_73822.elts[9] = ((closureN)self_73426)->elts[10];
 c_73822.elts[10] = ((closureN)self_73426)->elts[11];
 
-return_funcall2(  __glo_trace_117info,  &c_73822, ((closureN)self_73426)->elts[7]);; 
+return_closcall2(  __glo_trace_117info,  &c_73822, ((closureN)self_73426)->elts[7]);; 
 }
 
 static void __lambda_141(int argc, object self_73427, object r_73152) {
@@ -3345,7 +3345,7 @@ c_73824.elts[10] = ((closureN)self_73427)->elts[10];
 
 
 make_string(c_731306, "JAE DEBUG - compiled macros");
-return_funcall2(  __glo_trace_117info,  &c_73824, &c_731306);; 
+return_closcall2(  __glo_trace_117info,  &c_73824, &c_731306);; 
 }
 
 static void __lambda_140(int argc, object self_73428, object r_73153) {
@@ -3371,7 +3371,7 @@ c_73826.elts[10] = ((closureN)self_73428)->elts[10];
 
 
 mclosure0(c_731256, (function_type)__lambda_139);c_731256.num_args = 1;
-return_funcall1((closure)&c_73826,  &c_731256);; 
+return_closcall1((closure)&c_73826,  &c_731256);; 
 }
 
 static void __lambda_139(int argc, object self_73429, object k_73240, object v_7350) {
@@ -3386,7 +3386,7 @@ c_731258.elts = (object *)alloca(sizeof(object) * 2);
 c_731258.elts[0] = k_73240;
 c_731258.elts[1] = v_7350;
 
-return_funcall1((closure)&c_731258,  car(v_7350));; 
+return_closcall1((closure)&c_731258,  car(v_7350));; 
 }
 
 static void __lambda_138(int argc, object self_73430, object r_73250) {
@@ -3402,7 +3402,7 @@ c_731260.elts[0] = ((closureN)self_73430)->elts[0];
 c_731260.elts[1] = r_73250;
 c_731260.elts[2] = ((closureN)self_73430)->elts[1];
 
-return_funcall1((closure)&c_731260,  quote_my_91or);; 
+return_closcall1((closure)&c_731260,  quote_my_91or);; 
 }
 
 static void __lambda_137(int argc, object self_73431, object r_73251) {
@@ -3417,7 +3417,7 @@ c_731262.elts = (object *)alloca(sizeof(object) * 2);
 c_731262.elts[0] = ((closureN)self_73431)->elts[0];
 c_731262.elts[1] = ((closureN)self_73431)->elts[2];
 
-return_funcall1((closure)&c_731262,  equalp(((closureN)self_73431)->elts[1], r_73251));; 
+return_closcall1((closure)&c_731262,  equalp(((closureN)self_73431)->elts[1], r_73251));; 
 }
 
 static void __lambda_136(int argc, object self_73432, object r_73241) {
@@ -3433,9 +3433,9 @@ c_731264.elts = (object *)alloca(sizeof(object) * 2);
 c_731264.elts[0] = ((closureN)self_73432)->elts[0];
 c_731264.elts[1] = ((closureN)self_73432)->elts[1];
 
-return_funcall0((closure)&c_731264);
+return_closcall0((closure)&c_731264);
 } else { 
-  return_funcall1(  ((closureN)self_73432)->elts[0],  boolean_f);}
+  return_closcall1(  ((closureN)self_73432)->elts[0],  boolean_f);}
 ; 
 }
 
@@ -3451,7 +3451,7 @@ c_731266.elts = (object *)alloca(sizeof(object) * 2);
 c_731266.elts[0] = ((closureN)self_73433)->elts[0];
 c_731266.elts[1] = ((closureN)self_73433)->elts[1];
 
-return_funcall1((closure)&c_731266,  quote_my_91or);; 
+return_closcall1((closure)&c_731266,  quote_my_91or);; 
 }
 
 static void __lambda_134(int argc, object self_73434, object r_73244) {
@@ -3467,7 +3467,7 @@ c_731268.elts[0] = ((closureN)self_73434)->elts[0];
 c_731268.elts[1] = r_73244;
 c_731268.elts[2] = ((closureN)self_73434)->elts[1];
 
-return_funcall1((closure)&c_731268,  car(((closureN)self_73434)->elts[1]));; 
+return_closcall1((closure)&c_731268,  car(((closureN)self_73434)->elts[1]));; 
 }
 
 static void __lambda_133(int argc, object self_73435, object r_73245) {
@@ -3484,7 +3484,7 @@ c_731270.elts[1] = ((closureN)self_73435)->elts[1];
 c_731270.elts[2] = r_73245;
 c_731270.elts[3] = ((closureN)self_73435)->elts[2];
 
-return_funcall1((closure)&c_731270,  cdr(((closureN)self_73435)->elts[2]));; 
+return_closcall1((closure)&c_731270,  cdr(((closureN)self_73435)->elts[2]));; 
 }
 
 static void __lambda_132(int argc, object self_73436, object r_73246) {
@@ -3501,7 +3501,7 @@ c_731272.elts[1] = ((closureN)self_73436)->elts[1];
 c_731272.elts[2] = ((closureN)self_73436)->elts[2];
 c_731272.elts[3] = r_73246;
 
-return_funcall1((closure)&c_731272,  cdr(((closureN)self_73436)->elts[3]));; 
+return_closcall1((closure)&c_731272,  cdr(((closureN)self_73436)->elts[3]));; 
 }
 
 static void __lambda_131(int argc, object self_73437, object r_73249) {
@@ -3518,7 +3518,7 @@ c_731274.elts[1] = ((closureN)self_73437)->elts[1];
 c_731274.elts[2] = ((closureN)self_73437)->elts[2];
 c_731274.elts[3] = ((closureN)self_73437)->elts[3];
 
-return_funcall1((closure)&c_731274,  Cyc_get_cvar(r_73249));; 
+return_closcall1((closure)&c_731274,  Cyc_get_cvar(r_73249));; 
 }
 
 static void __lambda_130(int argc, object self_73438, object r_73248) {
@@ -3535,7 +3535,7 @@ c_731276.elts[1] = ((closureN)self_73438)->elts[1];
 c_731276.elts[2] = ((closureN)self_73438)->elts[2];
 c_731276.elts[3] = ((closureN)self_73438)->elts[3];
 
-return_funcall1((closure)&c_731276,  Cyc_is_macro(r_73248));; 
+return_closcall1((closure)&c_731276,  Cyc_is_macro(r_73248));; 
 }
 
 static void __lambda_129(int argc, object self_73439, object r_73247) {
@@ -3549,7 +3549,7 @@ c_731278.num_elt = 1;
 c_731278.elts = (object *)alloca(sizeof(object) * 1);
 c_731278.elts[0] = ((closureN)self_73439)->elts[0];
 
-return_funcall5(  __glo__list,  &c_731278, ((closureN)self_73439)->elts[1], ((closureN)self_73439)->elts[2], ((closureN)self_73439)->elts[3], r_73247);; 
+return_closcall5(  __glo__list,  &c_731278, ((closureN)self_73439)->elts[1], ((closureN)self_73439)->elts[2], ((closureN)self_73439)->elts[3], r_73247);; 
 }
 
 static void __lambda_128(int argc, object self_73440, object r_73243) {
@@ -3563,12 +3563,12 @@ c_731280.num_elt = 1;
 c_731280.elts = (object *)alloca(sizeof(object) * 1);
 c_731280.elts[0] = ((closureN)self_73440)->elts[0];
 
-return_funcall2(  __glo_trace_117info,  &c_731280, r_73243);; 
+return_closcall2(  __glo_trace_117info,  &c_731280, r_73243);; 
 }
 
 static void __lambda_127(int argc, object self_73441, object r_73242) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73441)->elts[0],  boolean_t);; 
+return_closcall1(  ((closureN)self_73441)->elts[0],  boolean_t);; 
 }
 
 static void __lambda_126(int argc, object self_73442, object r_73238) {
@@ -3593,7 +3593,7 @@ c_73828.elts[9] = r_73238;
 c_73828.elts[10] = ((closureN)self_73442)->elts[9];
 c_73828.elts[11] = ((closureN)self_73442)->elts[10];
 
-return_funcall1((closure)&c_73828,  Cyc_get_global_variables());; 
+return_closcall1((closure)&c_73828,  Cyc_get_global_variables());; 
 }
 
 static void __lambda_125(int argc, object self_73443, object r_73239) {
@@ -3617,7 +3617,7 @@ c_73830.elts[8] = ((closureN)self_73443)->elts[8];
 c_73830.elts[9] = ((closureN)self_73443)->elts[10];
 c_73830.elts[10] = ((closureN)self_73443)->elts[11];
 
-return_funcall3(  __glo_filter,  &c_73830, ((closureN)self_73443)->elts[9], r_73239);; 
+return_closcall3(  __glo_filter,  &c_73830, ((closureN)self_73443)->elts[9], r_73239);; 
 }
 
 static void __lambda_124(int argc, object self_73444, object r_73237) {
@@ -3641,7 +3641,7 @@ c_73832.elts[8] = ((closureN)self_73444)->elts[8];
 c_73832.elts[9] = ((closureN)self_73444)->elts[9];
 c_73832.elts[10] = ((closureN)self_73444)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_73832, r_73237);; 
+return_closcall2(  __glo_trace_117info,  &c_73832, r_73237);; 
 }
 
 static void __lambda_123(int argc, object self_73445, object r_73154) {
@@ -3667,7 +3667,7 @@ c_73834.elts[10] = ((closureN)self_73445)->elts[10];
 
 
 mclosure0(c_731240, (function_type)__lambda_122);c_731240.num_args = 1;
-return_funcall1((closure)&c_73834,  &c_731240);; 
+return_closcall1((closure)&c_73834,  &c_731240);; 
 }
 
 static void __lambda_122(int argc, object self_73446, object k_73234, object v_7348) {
@@ -3681,7 +3681,7 @@ c_731242.num_elt = 1;
 c_731242.elts = (object *)alloca(sizeof(object) * 1);
 c_731242.elts[0] = k_73234;
 
-return_funcall1((closure)&c_731242,  cdr(v_7348));; 
+return_closcall1((closure)&c_731242,  cdr(v_7348));; 
 }
 
 static void __lambda_121(int argc, object self_73447, object r_73236) {
@@ -3695,12 +3695,12 @@ c_731244.num_elt = 1;
 c_731244.elts = (object *)alloca(sizeof(object) * 1);
 c_731244.elts[0] = ((closureN)self_73447)->elts[0];
 
-return_funcall1((closure)&c_731244,  Cyc_get_cvar(r_73236));; 
+return_closcall1((closure)&c_731244,  Cyc_get_cvar(r_73236));; 
 }
 
 static void __lambda_120(int argc, object self_73448, object r_73235) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73448)->elts[0],  Cyc_is_macro(r_73235));; 
+return_closcall1(  ((closureN)self_73448)->elts[0],  Cyc_is_macro(r_73235));; 
 }
 
 static void __lambda_119(int argc, object self_73449, object r_73232) {
@@ -3725,7 +3725,7 @@ c_73836.elts[9] = r_73232;
 c_73836.elts[10] = ((closureN)self_73449)->elts[9];
 c_73836.elts[11] = ((closureN)self_73449)->elts[10];
 
-return_funcall1((closure)&c_73836,  Cyc_get_global_variables());; 
+return_closcall1((closure)&c_73836,  Cyc_get_global_variables());; 
 }
 
 static void __lambda_118(int argc, object self_73450, object r_73233) {
@@ -3749,7 +3749,7 @@ c_73838.elts[8] = ((closureN)self_73450)->elts[8];
 c_73838.elts[9] = ((closureN)self_73450)->elts[10];
 c_73838.elts[10] = ((closureN)self_73450)->elts[11];
 
-return_funcall3(  __glo_filter,  &c_73838, ((closureN)self_73450)->elts[9], r_73233);; 
+return_closcall3(  __glo_filter,  &c_73838, ((closureN)self_73450)->elts[9], r_73233);; 
 }
 
 static void __lambda_117(int argc, object self_73451, object r_73230) {
@@ -3773,7 +3773,7 @@ c_73840.elts[8] = ((closureN)self_73451)->elts[8];
 c_73840.elts[9] = ((closureN)self_73451)->elts[9];
 c_73840.elts[10] = ((closureN)self_73451)->elts[10];
 
-return_funcall1((closure)&c_73840,  r_73230);; 
+return_closcall1((closure)&c_73840,  r_73230);; 
 }
 
 static void __lambda_116(int argc, object self_73452, object macros_7349) {
@@ -3797,7 +3797,7 @@ c_73842.elts[8] = ((closureN)self_73452)->elts[8];
 c_73842.elts[9] = ((closureN)self_73452)->elts[9];
 c_73842.elts[10] = ((closureN)self_73452)->elts[10];
 
-return_funcall3(  __glo_append,  &c_73842, macros_7349, __glo__85defined_91macros_85);; 
+return_closcall3(  __glo_append,  &c_73842, macros_7349, __glo__85defined_91macros_85);; 
 }
 
 static void __lambda_115(int argc, object self_73453, object r_73231) {
@@ -3821,7 +3821,7 @@ c_73844.elts[8] = ((closureN)self_73453)->elts[8];
 c_73844.elts[9] = ((closureN)self_73453)->elts[9];
 c_73844.elts[10] = ((closureN)self_73453)->elts[10];
 
-return_funcall1((closure)&c_73844,  global_set(__glo__85defined_91macros_85, r_73231));; 
+return_closcall1((closure)&c_73844,  global_set(__glo__85defined_91macros_85, r_73231));; 
 }
 
 static void __lambda_114(int argc, object self_73454, object r_73155) {
@@ -3845,7 +3845,7 @@ c_73846.elts[8] = ((closureN)self_73454)->elts[8];
 c_73846.elts[9] = ((closureN)self_73454)->elts[9];
 c_73846.elts[10] = ((closureN)self_73454)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_73846, __glo__85defined_91macros_85);; 
+return_closcall2(  __glo_trace_117info,  &c_73846, __glo__85defined_91macros_85);; 
 }
 
 static void __lambda_113(int argc, object self_73455, object r_73156) {
@@ -3869,7 +3869,7 @@ c_73848.elts[8] = ((closureN)self_73455)->elts[8];
 c_73848.elts[9] = ((closureN)self_73455)->elts[9];
 c_73848.elts[10] = ((closureN)self_73455)->elts[10];
 
-return_funcall2(  __glo_expand,  &c_73848, cell_get(((closureN)self_73455)->elts[2]));; 
+return_closcall2(  __glo_expand,  &c_73848, cell_get(((closureN)self_73455)->elts[2]));; 
 }
 
 static void __lambda_112(int argc, object self_73456, object r_73229) {
@@ -3893,7 +3893,7 @@ c_73850.elts[8] = ((closureN)self_73456)->elts[8];
 c_73850.elts[9] = ((closureN)self_73456)->elts[9];
 c_73850.elts[10] = ((closureN)self_73456)->elts[10];
 
-return_funcall1((closure)&c_73850,  Cyc_set_car(((closureN)self_73456)->elts[2], r_73229));; 
+return_closcall1((closure)&c_73850,  Cyc_set_car(((closureN)self_73456)->elts[2], r_73229));; 
 }
 
 static void __lambda_111(int argc, object self_73457, object r_73157) {
@@ -3919,7 +3919,7 @@ c_73852.elts[10] = ((closureN)self_73457)->elts[10];
 
 
 make_string(c_731228, "---------------- after macro expansion:");
-return_funcall2(  __glo_trace_117info,  &c_73852, &c_731228);; 
+return_closcall2(  __glo_trace_117info,  &c_73852, &c_731228);; 
 }
 
 static void __lambda_110(int argc, object self_73458, object r_73158) {
@@ -3943,7 +3943,7 @@ c_73854.elts[8] = ((closureN)self_73458)->elts[8];
 c_73854.elts[9] = ((closureN)self_73458)->elts[9];
 c_73854.elts[10] = ((closureN)self_73458)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_73854, cell_get(((closureN)self_73458)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_73854, cell_get(((closureN)self_73458)->elts[2]));; 
 }
 
 static void __lambda_109(int argc, object self_73459, object r_73159) {
@@ -3967,7 +3967,7 @@ c_73856.elts[8] = ((closureN)self_73459)->elts[8];
 c_73856.elts[9] = ((closureN)self_73459)->elts[9];
 c_73856.elts[10] = ((closureN)self_73459)->elts[10];
 
-return_funcall4(  __glo_isolate_91globals,  &c_73856, cell_get(((closureN)self_73459)->elts[2]), cell_get(((closureN)self_73459)->elts[8]), cell_get(((closureN)self_73459)->elts[6]));; 
+return_closcall4(  __glo_isolate_91globals,  &c_73856, cell_get(((closureN)self_73459)->elts[2]), cell_get(((closureN)self_73459)->elts[8]), cell_get(((closureN)self_73459)->elts[6]));; 
 }
 
 static void __lambda_108(int argc, object self_73460, object r_73228) {
@@ -3991,7 +3991,7 @@ c_73858.elts[8] = ((closureN)self_73460)->elts[8];
 c_73858.elts[9] = ((closureN)self_73460)->elts[9];
 c_73858.elts[10] = ((closureN)self_73460)->elts[10];
 
-return_funcall1((closure)&c_73858,  Cyc_set_car(((closureN)self_73460)->elts[2], r_73228));; 
+return_closcall1((closure)&c_73858,  Cyc_set_car(((closureN)self_73460)->elts[2], r_73228));; 
 }
 
 static void __lambda_107(int argc, object self_73461, object r_73160) {
@@ -4025,7 +4025,7 @@ c_73885.elts[8] = ((closureN)self_73461)->elts[8];
 c_73885.elts[9] = ((closureN)self_73461)->elts[9];
 c_73885.elts[10] = ((closureN)self_73461)->elts[10];
 
-return_funcall1((closure)&c_73860,  &c_73885);; 
+return_closcall1((closure)&c_73860,  &c_73885);; 
 }
 
 static void __lambda_106(int argc, object self_73462, object r_73161) {
@@ -4051,7 +4051,7 @@ c_73887.elts[10] = ((closureN)self_73462)->elts[10];
 
 
 make_string(c_731212, "---------------- after processing globals");
-return_funcall2(  __glo_trace_117info,  &c_73887, &c_731212);; 
+return_closcall2(  __glo_trace_117info,  &c_73887, &c_731212);; 
 }
 
 static void __lambda_105(int argc, object self_73463, object r_73162) {
@@ -4075,7 +4075,7 @@ c_73889.elts[8] = ((closureN)self_73463)->elts[8];
 c_73889.elts[9] = ((closureN)self_73463)->elts[9];
 c_73889.elts[10] = ((closureN)self_73463)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_73889, cell_get(((closureN)self_73463)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_73889, cell_get(((closureN)self_73463)->elts[2]));; 
 }
 
 static void __lambda_104(int argc, object self_73464, object r_73163) {
@@ -4099,7 +4099,7 @@ c_73891.elts[8] = ((closureN)self_73464)->elts[8];
 c_73891.elts[9] = ((closureN)self_73464)->elts[9];
 c_73891.elts[10] = ((closureN)self_73464)->elts[10];
 
-return_funcall2(  __glo_global_91vars,  &c_73891, cell_get(((closureN)self_73464)->elts[2]));; 
+return_closcall2(  __glo_global_91vars,  &c_73891, cell_get(((closureN)self_73464)->elts[2]));; 
 }
 
 static void __lambda_103(int argc, object self_73465, object r_73222) {
@@ -4123,7 +4123,7 @@ c_73893.elts[8] = ((closureN)self_73465)->elts[8];
 c_73893.elts[9] = ((closureN)self_73465)->elts[9];
 c_73893.elts[10] = ((closureN)self_73465)->elts[10];
 
-return_funcall1((closure)&c_73893,  Cyc_set_car(((closureN)self_73465)->elts[7], r_73222));; 
+return_closcall1((closure)&c_73893,  Cyc_set_car(((closureN)self_73465)->elts[7], r_73222));; 
 }
 
 static void __lambda_102(int argc, object self_73466, object r_73164) {
@@ -4147,7 +4147,7 @@ c_73895.elts[8] = ((closureN)self_73466)->elts[8];
 c_73895.elts[9] = ((closureN)self_73466)->elts[9];
 c_73895.elts[10] = ((closureN)self_73466)->elts[10];
 
-return_funcall3(  __glo_append,  &c_73895, cell_get(((closureN)self_73466)->elts[1]), cell_get(((closureN)self_73466)->elts[7]));; 
+return_closcall3(  __glo_append,  &c_73895, cell_get(((closureN)self_73466)->elts[1]), cell_get(((closureN)self_73466)->elts[7]));; 
 }
 
 static void __lambda_101(int argc, object self_73467, object r_73221) {
@@ -4171,7 +4171,7 @@ c_73897.elts[8] = ((closureN)self_73467)->elts[8];
 c_73897.elts[9] = ((closureN)self_73467)->elts[9];
 c_73897.elts[10] = ((closureN)self_73467)->elts[10];
 
-return_funcall1((closure)&c_73897,  Cyc_set_car(((closureN)self_73467)->elts[0], r_73221));; 
+return_closcall1((closure)&c_73897,  Cyc_set_car(((closureN)self_73467)->elts[0], r_73221));; 
 }
 
 static void __lambda_100(int argc, object self_73468, object r_73165) {
@@ -4205,12 +4205,12 @@ c_731188.elts = (object *)alloca(sizeof(object) * 2);
 c_731188.elts[0] = ((closureN)self_73468)->elts[0];
 c_731188.elts[1] = ((closureN)self_73468)->elts[9];
 
-return_funcall1((closure)&c_73899,  &c_731188);; 
+return_closcall1((closure)&c_73899,  &c_731188);; 
 }
 
 static void __lambda_99(int argc, object self_73469, object k_73220, object expr_7347) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall4(  __glo_alpha_91convert,  k_73220, expr_7347, cell_get(((closureN)self_73469)->elts[0]), ((closureN)self_73469)->elts[1]);; 
+return_closcall4(  __glo_alpha_91convert,  k_73220, expr_7347, cell_get(((closureN)self_73469)->elts[0]), ((closureN)self_73469)->elts[1]);; 
 }
 
 static void __lambda_98(int argc, object self_73470, object r_73219) {
@@ -4234,7 +4234,7 @@ c_73901.elts[8] = ((closureN)self_73470)->elts[8];
 c_73901.elts[9] = ((closureN)self_73470)->elts[9];
 c_73901.elts[10] = ((closureN)self_73470)->elts[10];
 
-return_funcall3(  __glo_map,  &c_73901, r_73219, cell_get(((closureN)self_73470)->elts[2]));; 
+return_closcall3(  __glo_map,  &c_73901, r_73219, cell_get(((closureN)self_73470)->elts[2]));; 
 }
 
 static void __lambda_97(int argc, object self_73471, object r_73218) {
@@ -4258,7 +4258,7 @@ c_73903.elts[8] = ((closureN)self_73471)->elts[8];
 c_73903.elts[9] = ((closureN)self_73471)->elts[9];
 c_73903.elts[10] = ((closureN)self_73471)->elts[10];
 
-return_funcall1((closure)&c_73903,  Cyc_set_car(((closureN)self_73471)->elts[2], r_73218));; 
+return_closcall1((closure)&c_73903,  Cyc_set_car(((closureN)self_73471)->elts[2], r_73218));; 
 }
 
 static void __lambda_96(int argc, object self_73472, object r_73166) {
@@ -4284,7 +4284,7 @@ c_73905.elts[10] = ((closureN)self_73472)->elts[10];
 
 
 make_string(c_731181, "---------------- after alpha conversion:");
-return_funcall2(  __glo_trace_117info,  &c_73905, &c_731181);; 
+return_closcall2(  __glo_trace_117info,  &c_73905, &c_731181);; 
 }
 
 static void __lambda_95(int argc, object self_73473, object r_73167) {
@@ -4308,7 +4308,7 @@ c_73907.elts[8] = ((closureN)self_73473)->elts[8];
 c_73907.elts[9] = ((closureN)self_73473)->elts[9];
 c_73907.elts[10] = ((closureN)self_73473)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_73907, cell_get(((closureN)self_73473)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_73907, cell_get(((closureN)self_73473)->elts[2]));; 
 }
 
 static void __lambda_94(int argc, object self_73474, object r_73168) {
@@ -4334,12 +4334,12 @@ c_73909.elts[10] = ((closureN)self_73474)->elts[10];
 
 
 mclosure0(c_731176, (function_type)__lambda_93);c_731176.num_args = 1;
-return_funcall1((closure)&c_73909,  &c_731176);; 
+return_closcall1((closure)&c_73909,  &c_731176);; 
 }
 
 static void __lambda_93(int argc, object self_73475, object k_73217, object expr_7345) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall2(  __glo_cps_91convert,  k_73217, expr_7345);; 
+return_closcall2(  __glo_cps_91convert,  k_73217, expr_7345);; 
 }
 
 static void __lambda_92(int argc, object self_73476, object r_73216) {
@@ -4363,7 +4363,7 @@ c_73911.elts[8] = ((closureN)self_73476)->elts[8];
 c_73911.elts[9] = ((closureN)self_73476)->elts[9];
 c_73911.elts[10] = ((closureN)self_73476)->elts[10];
 
-return_funcall3(  __glo_map,  &c_73911, r_73216, cell_get(((closureN)self_73476)->elts[2]));; 
+return_closcall3(  __glo_map,  &c_73911, r_73216, cell_get(((closureN)self_73476)->elts[2]));; 
 }
 
 static void __lambda_91(int argc, object self_73477, object r_73201) {
@@ -4387,7 +4387,7 @@ c_73913.elts[8] = ((closureN)self_73477)->elts[8];
 c_73913.elts[9] = ((closureN)self_73477)->elts[9];
 c_73913.elts[10] = ((closureN)self_73477)->elts[10];
 
-return_funcall1((closure)&c_73913,  r_73201);; 
+return_closcall1((closure)&c_73913,  r_73201);; 
 }
 
 static void __lambda_90(int argc, object self_73478, object cps_7346) {
@@ -4424,7 +4424,7 @@ c_731024.elts[8] = ((closureN)self_73478)->elts[8];
 c_731024.elts[9] = ((closureN)self_73478)->elts[9];
 c_731024.elts[10] = ((closureN)self_73478)->elts[10];
 
-return_funcall1((closure)&c_73915,  &c_731024);; 
+return_closcall1((closure)&c_73915,  &c_731024);; 
 }
 
 static void __lambda_89(int argc, object self_73479, object r_73169) {
@@ -4450,7 +4450,7 @@ c_731026.elts[10] = ((closureN)self_73479)->elts[10];
 
 
 make_string(c_731172, "---------------- after CPS:");
-return_funcall2(  __glo_trace_117info,  &c_731026, &c_731172);; 
+return_closcall2(  __glo_trace_117info,  &c_731026, &c_731172);; 
 }
 
 static void __lambda_88(int argc, object self_73480, object r_73170) {
@@ -4474,7 +4474,7 @@ c_731028.elts[8] = ((closureN)self_73480)->elts[8];
 c_731028.elts[9] = ((closureN)self_73480)->elts[9];
 c_731028.elts[10] = ((closureN)self_73480)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_731028, cell_get(((closureN)self_73480)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_731028, cell_get(((closureN)self_73480)->elts[2]));; 
 }
 
 static void __lambda_87(int argc, object self_73481, object r_73171) {
@@ -4507,7 +4507,7 @@ c_731157.num_elt = 1;
 c_731157.elts = (object *)alloca(sizeof(object) * 1);
 c_731157.elts[0] = ((closureN)self_73481)->elts[0];
 
-return_funcall1((closure)&c_731030,  &c_731157);; 
+return_closcall1((closure)&c_731030,  &c_731157);; 
 }
 
 static void __lambda_86(int argc, object self_73482, object k_73198, object expr_7344) {
@@ -4523,7 +4523,7 @@ c_731159.elts[0] = expr_7344;
 c_731159.elts[1] = ((closureN)self_73482)->elts[0];
 c_731159.elts[2] = k_73198;
 
-return_funcall1(  __glo_clear_91mutables,  &c_731159);; 
+return_closcall1(  __glo_clear_91mutables,  &c_731159);; 
 }
 
 static void __lambda_85(int argc, object self_73483, object r_73199) {
@@ -4539,12 +4539,12 @@ c_731161.elts[0] = ((closureN)self_73483)->elts[0];
 c_731161.elts[1] = ((closureN)self_73483)->elts[1];
 c_731161.elts[2] = ((closureN)self_73483)->elts[2];
 
-return_funcall2(  __glo_analyze_91mutable_91variables,  &c_731161, ((closureN)self_73483)->elts[0]);; 
+return_closcall2(  __glo_analyze_91mutable_91variables,  &c_731161, ((closureN)self_73483)->elts[0]);; 
 }
 
 static void __lambda_84(int argc, object self_73484, object r_73200) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall3(  __glo_wrap_91mutables,  ((closureN)self_73484)->elts[2], ((closureN)self_73484)->elts[0], cell_get(((closureN)self_73484)->elts[1]));; 
+return_closcall3(  __glo_wrap_91mutables,  ((closureN)self_73484)->elts[2], ((closureN)self_73484)->elts[0], cell_get(((closureN)self_73484)->elts[1]));; 
 }
 
 static void __lambda_83(int argc, object self_73485, object r_73197) {
@@ -4568,7 +4568,7 @@ c_731032.elts[8] = ((closureN)self_73485)->elts[8];
 c_731032.elts[9] = ((closureN)self_73485)->elts[9];
 c_731032.elts[10] = ((closureN)self_73485)->elts[10];
 
-return_funcall3(  __glo_map,  &c_731032, r_73197, cell_get(((closureN)self_73485)->elts[2]));; 
+return_closcall3(  __glo_map,  &c_731032, r_73197, cell_get(((closureN)self_73485)->elts[2]));; 
 }
 
 static void __lambda_82(int argc, object self_73486, object r_73196) {
@@ -4592,7 +4592,7 @@ c_731034.elts[8] = ((closureN)self_73486)->elts[8];
 c_731034.elts[9] = ((closureN)self_73486)->elts[9];
 c_731034.elts[10] = ((closureN)self_73486)->elts[10];
 
-return_funcall1((closure)&c_731034,  Cyc_set_car(((closureN)self_73486)->elts[2], r_73196));; 
+return_closcall1((closure)&c_731034,  Cyc_set_car(((closureN)self_73486)->elts[2], r_73196));; 
 }
 
 static void __lambda_81(int argc, object self_73487, object r_73172) {
@@ -4618,7 +4618,7 @@ c_731036.elts[10] = ((closureN)self_73487)->elts[10];
 
 
 make_string(c_731150, "---------------- after wrap-mutables:");
-return_funcall2(  __glo_trace_117info,  &c_731036, &c_731150);; 
+return_closcall2(  __glo_trace_117info,  &c_731036, &c_731150);; 
 }
 
 static void __lambda_80(int argc, object self_73488, object r_73173) {
@@ -4642,7 +4642,7 @@ c_731038.elts[8] = ((closureN)self_73488)->elts[8];
 c_731038.elts[9] = ((closureN)self_73488)->elts[9];
 c_731038.elts[10] = ((closureN)self_73488)->elts[10];
 
-return_funcall2(  __glo_trace_117info,  &c_731038, cell_get(((closureN)self_73488)->elts[2]));; 
+return_closcall2(  __glo_trace_117info,  &c_731038, cell_get(((closureN)self_73488)->elts[2]));; 
 }
 
 static void __lambda_79(int argc, object self_73489, object r_73174) {
@@ -4674,7 +4674,7 @@ c_731105.num_elt = 1;
 c_731105.elts = (object *)alloca(sizeof(object) * 1);
 c_731105.elts[0] = ((closureN)self_73489)->elts[0];
 
-return_funcall1((closure)&c_731040,  &c_731105);; 
+return_closcall1((closure)&c_731040,  &c_731105);; 
 }
 
 static void __lambda_78(int argc, object self_73490, object k_73187, object expr_7343) {
@@ -4690,7 +4690,7 @@ c_731107.elts[0] = expr_7343;
 c_731107.elts[1] = ((closureN)self_73490)->elts[0];
 c_731107.elts[2] = k_73187;
 
-return_funcall2(  __glo_define_127,  &c_731107, expr_7343);; 
+return_closcall2(  __glo_define_127,  &c_731107, expr_7343);; 
 }
 
 static void __lambda_77(int argc, object self_73491, object r_73188) {
@@ -4707,7 +4707,7 @@ c_731109.elts[0] = ((closureN)self_73491)->elts[0];
 c_731109.elts[1] = ((closureN)self_73491)->elts[1];
 c_731109.elts[2] = ((closureN)self_73491)->elts[2];
 
-return_funcall1((closure)&c_731109,  quote_define);
+return_closcall1((closure)&c_731109,  quote_define);
 } else { 
   
 closureN_type c_731138;
@@ -4718,13 +4718,13 @@ c_731138.num_elt = 1;
 c_731138.elts = (object *)alloca(sizeof(object) * 1);
 c_731138.elts[0] = ((closureN)self_73491)->elts[2];
 
-return_funcall3(  __glo_closure_91convert,  &c_731138, ((closureN)self_73491)->elts[0], cell_get(((closureN)self_73491)->elts[1]));}
+return_closcall3(  __glo_closure_91convert,  &c_731138, ((closureN)self_73491)->elts[0], cell_get(((closureN)self_73491)->elts[1]));}
 ; 
 }
 
 static void __lambda_76(int argc, object self_73492, object r_73195) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73492)->elts[0],  caddr(r_73195));; 
+return_closcall1(  ((closureN)self_73492)->elts[0],  caddr(r_73195));; 
 }
 
 static void __lambda_75(int argc, object self_73493, object r_73189) {
@@ -4741,7 +4741,7 @@ c_731111.elts[1] = ((closureN)self_73493)->elts[1];
 c_731111.elts[2] = ((closureN)self_73493)->elts[2];
 c_731111.elts[3] = r_73189;
 
-return_funcall2(  __glo_define_91_125var,  &c_731111, ((closureN)self_73493)->elts[0]);; 
+return_closcall2(  __glo_define_91_125var,  &c_731111, ((closureN)self_73493)->elts[0]);; 
 }
 
 static void __lambda_74(int argc, object self_73494, object r_73191) {
@@ -4758,7 +4758,7 @@ c_731113.elts[1] = ((closureN)self_73494)->elts[2];
 c_731113.elts[2] = ((closureN)self_73494)->elts[3];
 c_731113.elts[3] = r_73191;
 
-return_funcall2(  __glo_define_91_125exp,  &c_731113, ((closureN)self_73494)->elts[0]);; 
+return_closcall2(  __glo_define_91_125exp,  &c_731113, ((closureN)self_73494)->elts[0]);; 
 }
 
 static void __lambda_73(int argc, object self_73495, object r_73194) {
@@ -4774,7 +4774,7 @@ c_731115.elts[0] = ((closureN)self_73495)->elts[1];
 c_731115.elts[1] = ((closureN)self_73495)->elts[2];
 c_731115.elts[2] = ((closureN)self_73495)->elts[3];
 
-return_funcall3(  __glo_closure_91convert,  &c_731115, r_73194, cell_get(((closureN)self_73495)->elts[0]));; 
+return_closcall3(  __glo_closure_91convert,  &c_731115, r_73194, cell_get(((closureN)self_73495)->elts[0]));; 
 }
 
 static void __lambda_72(int argc, object self_73496, object r_73193) {
@@ -4790,7 +4790,7 @@ c_731117.elts[0] = ((closureN)self_73496)->elts[0];
 c_731117.elts[1] = ((closureN)self_73496)->elts[1];
 c_731117.elts[2] = ((closureN)self_73496)->elts[2];
 
-return_funcall1((closure)&c_731117,  caddr(r_73193));; 
+return_closcall1((closure)&c_731117,  caddr(r_73193));; 
 }
 
 static void __lambda_71(int argc, object self_73497, object r_73192) {
@@ -4807,14 +4807,14 @@ c_731119.elts[1] = ((closureN)self_73497)->elts[1];
 
 
 make_cons(c_731128,((closureN)self_73497)->elts[2], r_73192);
-return_funcall1((closure)&c_731119,  &c_731128);; 
+return_closcall1((closure)&c_731119,  &c_731128);; 
 }
 
 static void __lambda_70(int argc, object self_73498, object r_73190) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 make_cons(c_731124,((closureN)self_73498)->elts[1], r_73190);
-return_funcall1(  ((closureN)self_73498)->elts[0],  &c_731124);; 
+return_closcall1(  ((closureN)self_73498)->elts[0],  &c_731124);; 
 }
 
 static void __lambda_69(int argc, object self_73499, object r_73186) {
@@ -4837,7 +4837,7 @@ c_731042.elts[7] = ((closureN)self_73499)->elts[7];
 c_731042.elts[8] = ((closureN)self_73499)->elts[8];
 c_731042.elts[9] = ((closureN)self_73499)->elts[9];
 
-return_funcall3(  __glo_map,  &c_731042, r_73186, cell_get(((closureN)self_73499)->elts[1]));; 
+return_closcall3(  __glo_map,  &c_731042, r_73186, cell_get(((closureN)self_73499)->elts[1]));; 
 }
 
 static void __lambda_68(int argc, object self_73500, object r_73185) {
@@ -4860,7 +4860,7 @@ c_731044.elts[7] = ((closureN)self_73500)->elts[7];
 c_731044.elts[8] = ((closureN)self_73500)->elts[8];
 c_731044.elts[9] = ((closureN)self_73500)->elts[9];
 
-return_funcall1((closure)&c_731044,  Cyc_set_car(((closureN)self_73500)->elts[1], r_73185));; 
+return_closcall1((closure)&c_731044,  Cyc_set_car(((closureN)self_73500)->elts[1], r_73185));; 
 }
 
 static void __lambda_67(int argc, object self_73501, object r_73175) {
@@ -4885,7 +4885,7 @@ c_731046.elts[9] = ((closureN)self_73501)->elts[9];
 
 
 make_string(c_731098, "---------------- after closure-convert:");
-return_funcall2(  __glo_trace_117info,  &c_731046, &c_731098);; 
+return_closcall2(  __glo_trace_117info,  &c_731046, &c_731098);; 
 }
 
 static void __lambda_66(int argc, object self_73502, object r_73176) {
@@ -4908,7 +4908,7 @@ c_731048.elts[7] = ((closureN)self_73502)->elts[7];
 c_731048.elts[8] = ((closureN)self_73502)->elts[8];
 c_731048.elts[9] = ((closureN)self_73502)->elts[9];
 
-return_funcall2(  __glo_trace_117info,  &c_731048, cell_get(((closureN)self_73502)->elts[1]));; 
+return_closcall2(  __glo_trace_117info,  &c_731048, cell_get(((closureN)self_73502)->elts[1]));; 
 }
 
 static void __lambda_65(int argc, object self_73503, object r_73177) {
@@ -4930,7 +4930,7 @@ c_731064.elts[7] = ((closureN)self_73503)->elts[7];
 c_731064.elts[8] = ((closureN)self_73503)->elts[8];
 c_731064.elts[9] = ((closureN)self_73503)->elts[9];
 
-return_check1(__lambda_60,&c_731064);; 
+return_direct1(__lambda_60,&c_731064);; 
 }
 
 static void __lambda_64(int argc, object self_73504, object r_73178) {
@@ -4955,7 +4955,7 @@ c_731066.elts[9] = ((closureN)self_73504)->elts[9];
 
 
 make_string(c_731094, "---------------- C code:");
-return_funcall2(  __glo_trace_117info,  &c_731066, &c_731094);; 
+return_closcall2(  __glo_trace_117info,  &c_731066, &c_731094);; 
 }
 
 static void __lambda_63(int argc, object self_73505, object r_73179) {
@@ -4970,7 +4970,7 @@ c_731068.elts = (object *)alloca(sizeof(object) * 2);
 c_731068.elts[0] = ((closureN)self_73505)->elts[2];
 c_731068.elts[1] = ((closureN)self_73505)->elts[8];
 
-return_funcall9(  __glo_mta_117code_91gen,  &c_731068, cell_get(((closureN)self_73505)->elts[1]), cell_get(((closureN)self_73505)->elts[7]), cell_get(((closureN)self_73505)->elts[5]), cell_get(((closureN)self_73505)->elts[4]), cell_get(((closureN)self_73505)->elts[0]), cell_get(((closureN)self_73505)->elts[6]), ((closureN)self_73505)->elts[3], ((closureN)self_73505)->elts[9]);; 
+return_closcall9(  __glo_mta_117code_91gen,  &c_731068, cell_get(((closureN)self_73505)->elts[1]), cell_get(((closureN)self_73505)->elts[7]), cell_get(((closureN)self_73505)->elts[5]), cell_get(((closureN)self_73505)->elts[4]), cell_get(((closureN)self_73505)->elts[0]), cell_get(((closureN)self_73505)->elts[6]), ((closureN)self_73505)->elts[3], ((closureN)self_73505)->elts[9]);; 
 }
 
 static void __lambda_62(int argc, object self_73506, object r_73180) {
@@ -4985,12 +4985,12 @@ c_731070.elts = (object *)alloca(sizeof(object) * 2);
 c_731070.elts[0] = ((closureN)self_73506)->elts[0];
 c_731070.elts[1] = ((closureN)self_73506)->elts[1];
 
-return_funcall1((closure)&c_731070,  nil);; 
+return_closcall1((closure)&c_731070,  nil);; 
 }
 
 static void __lambda_61(int argc, object self_73507, object r_73181) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall2(  ((closureN)self_73507)->elts[1],  ((closureN)self_73507)->elts[0], r_73181);; 
+return_closcall2(  ((closureN)self_73507)->elts[1],  ((closureN)self_73507)->elts[0], r_73181);; 
 }
 
 static void __lambda_60(int argc, closure _,object k_73182) {
@@ -5004,7 +5004,7 @@ c_731051.num_elt = 1;
 c_731051.elts = (object *)alloca(sizeof(object) * 1);
 c_731051.elts[0] = k_73182;
 
-return_funcall2(  __glo_not,  &c_731051, __glo__85do_91code_91gen_85);; 
+return_closcall2(  __glo_not,  &c_731051, __glo__85do_91code_91gen_85);; 
 }
 
 static void __lambda_59(int argc, object self_73508, object r_73183) {
@@ -5019,9 +5019,9 @@ c_731053.num_elt = 1;
 c_731053.elts = (object *)alloca(sizeof(object) * 1);
 c_731053.elts[0] = ((closureN)self_73508)->elts[0];
 
-return_funcall0((closure)&c_731053);
+return_closcall0((closure)&c_731053);
 } else { 
-  return_funcall1(  ((closureN)self_73508)->elts[0],  boolean_f);}
+  return_closcall1(  ((closureN)self_73508)->elts[0],  boolean_f);}
 ; 
 }
 
@@ -5038,14 +5038,14 @@ c_731055.elts[0] = ((closureN)self_73509)->elts[0];
 
 
 make_string(c_731061, "DEBUG, existing program");
-return_funcall2(  __glo_trace_117error,  &c_731055, &c_731061);; 
+return_closcall2(  __glo_trace_117error,  &c_731055, &c_731061);; 
 }
 
 static void __lambda_57(int argc, object self_73510, object r_73184) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 make_int(c_731060, 0);
-return_funcall1(  ((closureN)self_73510)->elts[0],  __halt(&c_731060));; 
+return_closcall1(  ((closureN)self_73510)->elts[0],  __halt(&c_731060));; 
 }
 
 static void __lambda_56(int argc, object self_73511, object k_73202) {
@@ -5072,7 +5072,7 @@ c_73930.elts[2] = ((closureN)self_73511)->elts[2];
 c_73930.elts[3] = k_73202;
 c_73930.elts[4] = ((closureN)self_73511)->elts[4];
 
-return_funcall1((closure)&c_73917,  &c_73930);; 
+return_closcall1((closure)&c_73917,  &c_73930);; 
 }
 
 static void __lambda_55(int argc, object self_73512, object r_73203) {
@@ -5091,9 +5091,9 @@ c_73932.elts[2] = ((closureN)self_73512)->elts[2];
 c_73932.elts[3] = ((closureN)self_73512)->elts[3];
 c_73932.elts[4] = ((closureN)self_73512)->elts[4];
 
-return_funcall0((closure)&c_73932);
+return_closcall0((closure)&c_73932);
 } else { 
-  return_funcall1(  ((closureN)self_73512)->elts[3],  Cyc_set_car(((closureN)self_73512)->elts[2], ((closureN)self_73512)->elts[0]));}
+  return_closcall1(  ((closureN)self_73512)->elts[3],  Cyc_set_car(((closureN)self_73512)->elts[2], ((closureN)self_73512)->elts[0]));}
 ; 
 }
 
@@ -5116,7 +5116,7 @@ c_73934.elts[4] = ((closureN)self_73513)->elts[4];
 make_cons(c_731017,quote_call_95cc,nil);
 
 make_cons(c_731016,quote_call_91with_91values,&c_731017);
-return_funcall1((closure)&c_73934,  &c_731016);; 
+return_closcall1((closure)&c_73934,  &c_731016);; 
 }
 
 static void __lambda_53(int argc, object self_73514, object r_73213) {
@@ -5134,7 +5134,7 @@ c_73936.elts[2] = ((closureN)self_73514)->elts[2];
 c_73936.elts[3] = ((closureN)self_73514)->elts[3];
 c_73936.elts[4] = ((closureN)self_73514)->elts[4];
 
-return_funcall3(  __glo_append,  &c_73936, r_73213, cell_get(((closureN)self_73514)->elts[1]));; 
+return_closcall3(  __glo_append,  &c_73936, r_73213, cell_get(((closureN)self_73514)->elts[1]));; 
 }
 
 static void __lambda_52(int argc, object self_73515, object r_73212) {
@@ -5151,7 +5151,7 @@ c_73938.elts[1] = ((closureN)self_73515)->elts[2];
 c_73938.elts[2] = ((closureN)self_73515)->elts[3];
 c_73938.elts[3] = ((closureN)self_73515)->elts[4];
 
-return_funcall1((closure)&c_73938,  Cyc_set_car(((closureN)self_73515)->elts[1], r_73212));; 
+return_closcall1((closure)&c_73938,  Cyc_set_car(((closureN)self_73515)->elts[1], r_73212));; 
 }
 
 static void __lambda_51(int argc, object self_73516, object r_73204) {
@@ -5172,7 +5172,7 @@ c_73940.elts[3] = ((closureN)self_73516)->elts[3];
 make_cons(c_731009,quote_call_95cc,nil);
 
 make_cons(c_731008,quote_call_91with_91values,&c_731009);
-return_funcall1((closure)&c_73940,  &c_731008);; 
+return_closcall1((closure)&c_73940,  &c_731008);; 
 }
 
 static void __lambda_50(int argc, object self_73517, object r_73211) {
@@ -5189,7 +5189,7 @@ c_73942.elts[1] = ((closureN)self_73517)->elts[1];
 c_73942.elts[2] = ((closureN)self_73517)->elts[2];
 c_73942.elts[3] = ((closureN)self_73517)->elts[3];
 
-return_funcall3(  __glo_append,  &c_73942, r_73211, cell_get(((closureN)self_73517)->elts[3]));; 
+return_closcall3(  __glo_append,  &c_73942, r_73211, cell_get(((closureN)self_73517)->elts[3]));; 
 }
 
 static void __lambda_49(int argc, object self_73518, object r_73210) {
@@ -5205,7 +5205,7 @@ c_73944.elts[0] = ((closureN)self_73518)->elts[0];
 c_73944.elts[1] = ((closureN)self_73518)->elts[1];
 c_73944.elts[2] = ((closureN)self_73518)->elts[2];
 
-return_funcall1((closure)&c_73944,  Cyc_set_car(((closureN)self_73518)->elts[3], r_73210));; 
+return_closcall1((closure)&c_73944,  Cyc_set_car(((closureN)self_73518)->elts[3], r_73210));; 
 }
 
 static void __lambda_48(int argc, object self_73519, object r_73205) {
@@ -5257,7 +5257,7 @@ make_cons(c_73986,&c_73987,nil);
 make_cons(c_73985,quote_call_91with_91values,&c_73986);
 
 make_cons(c_73984,quote_define,&c_73985);
-return_funcall1((closure)&c_73946,  &c_73984);; 
+return_closcall1((closure)&c_73946,  &c_73984);; 
 }
 
 static void __lambda_47(int argc, object self_73520, object r_73207) {
@@ -5310,7 +5310,7 @@ make_cons(c_73968,&c_73969,nil);
 make_cons(c_73967,quote_call_95cc,&c_73968);
 
 make_cons(c_73966,quote_define,&c_73967);
-return_funcall1((closure)&c_73948,  &c_73966);; 
+return_closcall1((closure)&c_73948,  &c_73966);; 
 }
 
 static void __lambda_46(int argc, object self_73521, object r_73209) {
@@ -5328,7 +5328,7 @@ c_73950.elts[2] = ((closureN)self_73521)->elts[3];
 
 
 make_cons(c_73964,r_73209, ((closureN)self_73521)->elts[0]);
-return_funcall1((closure)&c_73950,  &c_73964);; 
+return_closcall1((closure)&c_73950,  &c_73964);; 
 }
 
 static void __lambda_45(int argc, object self_73522, object r_73208) {
@@ -5345,12 +5345,12 @@ c_73952.elts[1] = ((closureN)self_73522)->elts[1];
 
 
 make_cons(c_73960,((closureN)self_73522)->elts[2], r_73208);
-return_funcall1((closure)&c_73952,  &c_73960);; 
+return_closcall1((closure)&c_73952,  &c_73960);; 
 }
 
 static void __lambda_44(int argc, object self_73523, object r_73206) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73523)->elts[1],  Cyc_set_car(((closureN)self_73523)->elts[0], r_73206));; 
+return_closcall1(  ((closureN)self_73523)->elts[1],  Cyc_set_car(((closureN)self_73523)->elts[0], r_73206));; 
 }
 
 static void __lambda_43(int argc, object self_73524, object k_73214) {
@@ -5370,15 +5370,15 @@ c_73919.elts[1] = ((closureN)self_73524)->elts[0];
 make_cons(c_73928,quote_base,nil);
 
 make_cons(c_73927,quote_scheme,&c_73928);
-return_funcall1((closure)&c_73919,  &c_73927);
+return_closcall1((closure)&c_73919,  &c_73927);
 } else { 
-  return_funcall1(  k_73214,  boolean_f);}
+  return_closcall1(  k_73214,  boolean_f);}
 ; 
 }
 
 static void __lambda_42(int argc, object self_73525, object r_73215) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73525)->elts[0],  equalp(cell_get(((closureN)self_73525)->elts[1]), r_73215));; 
+return_closcall1(  ((closureN)self_73525)->elts[0],  equalp(cell_get(((closureN)self_73525)->elts[1]), r_73215));; 
 }
 
 static void __lambda_41(int argc, object self_73526, object k_73223) {
@@ -5394,7 +5394,7 @@ c_73862.elts[0] = ((closureN)self_73526)->elts[0];
 c_73862.elts[1] = k_73223;
 c_73862.elts[2] = ((closureN)self_73526)->elts[1];
 
-return_funcall1((closure)&c_73862,  quote_eval);; 
+return_closcall1((closure)&c_73862,  quote_eval);; 
 }
 
 static void __lambda_40(int argc, object self_73527, object r_73227) {
@@ -5410,7 +5410,7 @@ c_73864.elts[0] = ((closureN)self_73527)->elts[0];
 c_73864.elts[1] = ((closureN)self_73527)->elts[1];
 c_73864.elts[2] = ((closureN)self_73527)->elts[2];
 
-return_funcall3(  __glo_has_91global_127,  &c_73864, cell_get(((closureN)self_73527)->elts[0]), r_73227);; 
+return_closcall3(  __glo_has_91global_127,  &c_73864, cell_get(((closureN)self_73527)->elts[0]), r_73227);; 
 }
 
 static void __lambda_39(int argc, object self_73528, object r_73226) {
@@ -5426,7 +5426,7 @@ c_73866.elts[0] = ((closureN)self_73528)->elts[0];
 c_73866.elts[1] = ((closureN)self_73528)->elts[1];
 c_73866.elts[2] = ((closureN)self_73528)->elts[2];
 
-return_funcall2(  __glo_not,  &c_73866, r_73226);; 
+return_closcall2(  __glo_not,  &c_73866, r_73226);; 
 }
 
 static void __lambda_38(int argc, object self_73529, object r_73224) {
@@ -5442,15 +5442,15 @@ c_73868.elts = (object *)alloca(sizeof(object) * 2);
 c_73868.elts[0] = ((closureN)self_73529)->elts[0];
 c_73868.elts[1] = ((closureN)self_73529)->elts[1];
 
-return_funcall3(  __glo_filter_91unused_91variables,  &c_73868, cell_get(((closureN)self_73529)->elts[0]), cell_get(((closureN)self_73529)->elts[2]));
+return_closcall3(  __glo_filter_91unused_91variables,  &c_73868, cell_get(((closureN)self_73529)->elts[0]), cell_get(((closureN)self_73529)->elts[2]));
 } else { 
-  return_funcall1(  ((closureN)self_73529)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_73529)->elts[1],  boolean_f);}
 ; 
 }
 
 static void __lambda_37(int argc, object self_73530, object r_73225) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73530)->elts[1],  Cyc_set_car(((closureN)self_73530)->elts[0], r_73225));; 
+return_closcall1(  ((closureN)self_73530)->elts[1],  Cyc_set_car(((closureN)self_73530)->elts[0], r_73225));; 
 }
 
 static void __lambda_36(int argc, object self_73531, object k_73257) {
@@ -5469,7 +5469,7 @@ c_73629.elts[3] = ((closureN)self_73531)->elts[2];
 c_73629.elts[4] = ((closureN)self_73531)->elts[3];
 c_73629.elts[5] = ((closureN)self_73531)->elts[4];
 
-return_funcall1((closure)&c_73629,  car(cell_get(((closureN)self_73531)->elts[1])));; 
+return_closcall1((closure)&c_73629,  car(cell_get(((closureN)self_73531)->elts[1])));; 
 }
 
 static void __lambda_35(int argc, object self_73532, object r_73290) {
@@ -5488,7 +5488,7 @@ c_73631.elts[3] = ((closureN)self_73532)->elts[3];
 c_73631.elts[4] = ((closureN)self_73532)->elts[4];
 c_73631.elts[5] = ((closureN)self_73532)->elts[5];
 
-return_funcall2(  __glo_library_127,  &c_73631, r_73290);; 
+return_closcall2(  __glo_library_127,  &c_73631, r_73290);; 
 }
 
 static void __lambda_34(int argc, object self_73533, object r_73258) {
@@ -5508,7 +5508,7 @@ c_73633.elts[3] = ((closureN)self_73533)->elts[3];
 c_73633.elts[4] = ((closureN)self_73533)->elts[4];
 c_73633.elts[5] = ((closureN)self_73533)->elts[5];
 
-return_funcall1((closure)&c_73633,  car(cell_get(((closureN)self_73533)->elts[1])));
+return_closcall1((closure)&c_73633,  car(cell_get(((closureN)self_73533)->elts[1])));
 } else { 
   
 closureN_type c_73754;
@@ -5521,7 +5521,7 @@ c_73754.elts[0] = ((closureN)self_73533)->elts[0];
 c_73754.elts[1] = ((closureN)self_73533)->elts[1];
 c_73754.elts[2] = ((closureN)self_73533)->elts[2];
 
-return_funcall1((closure)&c_73754,  quote_import);}
+return_closcall1((closure)&c_73754,  quote_import);}
 ; 
 }
 
@@ -5539,7 +5539,7 @@ c_73756.elts[1] = ((closureN)self_73534)->elts[1];
 c_73756.elts[2] = ((closureN)self_73534)->elts[2];
 c_73756.elts[3] = r_73288;
 
-return_funcall1((closure)&c_73756,  car(cell_get(((closureN)self_73534)->elts[1])));; 
+return_closcall1((closure)&c_73756,  car(cell_get(((closureN)self_73534)->elts[1])));; 
 }
 
 static void __lambda_32(int argc, object self_73535, object r_73289) {
@@ -5555,7 +5555,7 @@ c_73758.elts[0] = ((closureN)self_73535)->elts[0];
 c_73758.elts[1] = ((closureN)self_73535)->elts[1];
 c_73758.elts[2] = ((closureN)self_73535)->elts[2];
 
-return_funcall3(  __glo_tagged_91list_127,  &c_73758, ((closureN)self_73535)->elts[3], r_73289);; 
+return_closcall3(  __glo_tagged_91list_127,  &c_73758, ((closureN)self_73535)->elts[3], r_73289);; 
 }
 
 static void __lambda_31(int argc, object self_73536, object r_73284) {
@@ -5572,9 +5572,9 @@ c_73760.elts[0] = ((closureN)self_73536)->elts[0];
 c_73760.elts[1] = ((closureN)self_73536)->elts[1];
 c_73760.elts[2] = ((closureN)self_73536)->elts[2];
 
-return_funcall0((closure)&c_73760);
+return_closcall0((closure)&c_73760);
 } else { 
-  return_funcall1(  ((closureN)self_73536)->elts[2],  boolean_f);}
+  return_closcall1(  ((closureN)self_73536)->elts[2],  boolean_f);}
 ; 
 }
 
@@ -5591,7 +5591,7 @@ c_73762.elts[0] = ((closureN)self_73537)->elts[0];
 c_73762.elts[1] = ((closureN)self_73537)->elts[1];
 c_73762.elts[2] = ((closureN)self_73537)->elts[2];
 
-return_funcall1((closure)&c_73762,  cdar(cell_get(((closureN)self_73537)->elts[1])));; 
+return_closcall1((closure)&c_73762,  cdar(cell_get(((closureN)self_73537)->elts[1])));; 
 }
 
 static void __lambda_29(int argc, object self_73538, object r_73287) {
@@ -5606,7 +5606,7 @@ c_73764.elts = (object *)alloca(sizeof(object) * 2);
 c_73764.elts[0] = ((closureN)self_73538)->elts[1];
 c_73764.elts[1] = ((closureN)self_73538)->elts[2];
 
-return_funcall1((closure)&c_73764,  Cyc_set_car(((closureN)self_73538)->elts[0], r_73287));; 
+return_closcall1((closure)&c_73764,  Cyc_set_car(((closureN)self_73538)->elts[0], r_73287));; 
 }
 
 static void __lambda_28(int argc, object self_73539, object r_73285) {
@@ -5621,12 +5621,12 @@ c_73766.elts = (object *)alloca(sizeof(object) * 2);
 c_73766.elts[0] = ((closureN)self_73539)->elts[0];
 c_73766.elts[1] = ((closureN)self_73539)->elts[1];
 
-return_funcall1((closure)&c_73766,  cdr(cell_get(((closureN)self_73539)->elts[0])));; 
+return_closcall1((closure)&c_73766,  cdr(cell_get(((closureN)self_73539)->elts[0])));; 
 }
 
 static void __lambda_27(int argc, object self_73540, object r_73286) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73540)->elts[1],  Cyc_set_car(((closureN)self_73540)->elts[0], r_73286));; 
+return_closcall1(  ((closureN)self_73540)->elts[1],  Cyc_set_car(((closureN)self_73540)->elts[0], r_73286));; 
 }
 
 static void __lambda_26(int argc, object self_73541, object r_73283) {
@@ -5645,7 +5645,7 @@ c_73635.elts[3] = ((closureN)self_73541)->elts[3];
 c_73635.elts[4] = ((closureN)self_73541)->elts[4];
 c_73635.elts[5] = ((closureN)self_73541)->elts[5];
 
-return_funcall2(  __glo_lib_117includes,  &c_73635, r_73283);; 
+return_closcall2(  __glo_lib_117includes,  &c_73635, r_73283);; 
 }
 
 static void __lambda_25(int argc, object self_73542, object r_73259) {
@@ -5664,7 +5664,7 @@ c_73637.elts[3] = ((closureN)self_73542)->elts[3];
 c_73637.elts[4] = ((closureN)self_73542)->elts[4];
 c_73637.elts[5] = ((closureN)self_73542)->elts[5];
 
-return_funcall1((closure)&c_73637,  r_73259);; 
+return_closcall1((closure)&c_73637,  r_73259);; 
 }
 
 static void __lambda_24(int argc, object self_73543, object includes_7352) {
@@ -5683,7 +5683,7 @@ c_73639.elts[3] = ((closureN)self_73543)->elts[2];
 c_73639.elts[4] = ((closureN)self_73543)->elts[3];
 c_73639.elts[5] = ((closureN)self_73543)->elts[4];
 
-return_funcall1((closure)&c_73639,  Cyc_set_car(((closureN)self_73543)->elts[5], boolean_f));; 
+return_closcall1((closure)&c_73639,  Cyc_set_car(((closureN)self_73543)->elts[5], boolean_f));; 
 }
 
 static void __lambda_23(int argc, object self_73544, object r_73260) {
@@ -5702,7 +5702,7 @@ c_73641.elts[3] = ((closureN)self_73544)->elts[3];
 c_73641.elts[4] = ((closureN)self_73544)->elts[4];
 c_73641.elts[5] = ((closureN)self_73544)->elts[5];
 
-return_funcall1((closure)&c_73641,  car(cell_get(((closureN)self_73544)->elts[2])));; 
+return_closcall1((closure)&c_73641,  car(cell_get(((closureN)self_73544)->elts[2])));; 
 }
 
 static void __lambda_22(int argc, object self_73545, object r_73282) {
@@ -5721,7 +5721,7 @@ c_73643.elts[3] = ((closureN)self_73545)->elts[3];
 c_73643.elts[4] = ((closureN)self_73545)->elts[4];
 c_73643.elts[5] = ((closureN)self_73545)->elts[5];
 
-return_funcall2(  __glo_lib_117name,  &c_73643, r_73282);; 
+return_closcall2(  __glo_lib_117name,  &c_73643, r_73282);; 
 }
 
 static void __lambda_21(int argc, object self_73546, object r_73281) {
@@ -5740,7 +5740,7 @@ c_73645.elts[3] = ((closureN)self_73546)->elts[3];
 c_73645.elts[4] = ((closureN)self_73546)->elts[4];
 c_73645.elts[5] = ((closureN)self_73546)->elts[5];
 
-return_funcall1((closure)&c_73645,  Cyc_set_car(((closureN)self_73546)->elts[5], r_73281));; 
+return_closcall1((closure)&c_73645,  Cyc_set_car(((closureN)self_73546)->elts[5], r_73281));; 
 }
 
 static void __lambda_20(int argc, object self_73547, object r_73261) {
@@ -5759,7 +5759,7 @@ c_73647.elts[3] = ((closureN)self_73547)->elts[3];
 c_73647.elts[4] = ((closureN)self_73547)->elts[4];
 c_73647.elts[5] = ((closureN)self_73547)->elts[5];
 
-return_funcall2(  __glo_lib_117name_91_125symbol,  &c_73647, cell_get(((closureN)self_73547)->elts[5]));; 
+return_closcall2(  __glo_lib_117name_91_125symbol,  &c_73647, cell_get(((closureN)self_73547)->elts[5]));; 
 }
 
 static void __lambda_19(int argc, object self_73548, object r_73278) {
@@ -5779,7 +5779,7 @@ c_73649.elts[4] = ((closureN)self_73548)->elts[4];
 c_73649.elts[5] = ((closureN)self_73548)->elts[5];
 c_73649.elts[6] = r_73278;
 
-return_funcall1((closure)&c_73649,  car(cell_get(((closureN)self_73548)->elts[2])));; 
+return_closcall1((closure)&c_73649,  car(cell_get(((closureN)self_73548)->elts[2])));; 
 }
 
 static void __lambda_18(int argc, object self_73549, object r_73280) {
@@ -5799,7 +5799,7 @@ c_73651.elts[4] = ((closureN)self_73549)->elts[4];
 c_73651.elts[5] = ((closureN)self_73549)->elts[5];
 c_73651.elts[6] = ((closureN)self_73549)->elts[6];
 
-return_funcall2(  __glo_lib_117exports,  &c_73651, r_73280);; 
+return_closcall2(  __glo_lib_117exports,  &c_73651, r_73280);; 
 }
 
 static void __lambda_17(int argc, object self_73550, object r_73279) {
@@ -5820,7 +5820,7 @@ c_73653.elts[5] = ((closureN)self_73550)->elts[5];
 
 
 make_cons(c_73727,((closureN)self_73550)->elts[6], r_73279);
-return_funcall1((closure)&c_73653,  &c_73727);; 
+return_closcall1((closure)&c_73653,  &c_73727);; 
 }
 
 static void __lambda_16(int argc, object self_73551, object r_73277) {
@@ -5838,7 +5838,7 @@ c_73655.elts[2] = ((closureN)self_73551)->elts[2];
 c_73655.elts[3] = ((closureN)self_73551)->elts[3];
 c_73655.elts[4] = ((closureN)self_73551)->elts[5];
 
-return_funcall1((closure)&c_73655,  Cyc_set_car(((closureN)self_73551)->elts[4], r_73277));; 
+return_closcall1((closure)&c_73655,  Cyc_set_car(((closureN)self_73551)->elts[4], r_73277));; 
 }
 
 static void __lambda_15(int argc, object self_73552, object r_73262) {
@@ -5856,7 +5856,7 @@ c_73657.elts[2] = ((closureN)self_73552)->elts[2];
 c_73657.elts[3] = ((closureN)self_73552)->elts[3];
 c_73657.elts[4] = ((closureN)self_73552)->elts[4];
 
-return_funcall1((closure)&c_73657,  car(cell_get(((closureN)self_73552)->elts[2])));; 
+return_closcall1((closure)&c_73657,  car(cell_get(((closureN)self_73552)->elts[2])));; 
 }
 
 static void __lambda_14(int argc, object self_73553, object r_73276) {
@@ -5874,7 +5874,7 @@ c_73659.elts[2] = ((closureN)self_73553)->elts[2];
 c_73659.elts[3] = ((closureN)self_73553)->elts[3];
 c_73659.elts[4] = ((closureN)self_73553)->elts[4];
 
-return_funcall2(  __glo_lib_117imports,  &c_73659, r_73276);; 
+return_closcall2(  __glo_lib_117imports,  &c_73659, r_73276);; 
 }
 
 static void __lambda_13(int argc, object self_73554, object r_73275) {
@@ -5891,7 +5891,7 @@ c_73661.elts[1] = ((closureN)self_73554)->elts[2];
 c_73661.elts[2] = ((closureN)self_73554)->elts[3];
 c_73661.elts[3] = ((closureN)self_73554)->elts[4];
 
-return_funcall1((closure)&c_73661,  Cyc_set_car(((closureN)self_73554)->elts[0], r_73275));; 
+return_closcall1((closure)&c_73661,  Cyc_set_car(((closureN)self_73554)->elts[0], r_73275));; 
 }
 
 static void __lambda_12(int argc, object self_73555, object r_73263) {
@@ -5908,7 +5908,7 @@ c_73663.elts[1] = ((closureN)self_73555)->elts[1];
 c_73663.elts[2] = ((closureN)self_73555)->elts[2];
 c_73663.elts[3] = ((closureN)self_73555)->elts[3];
 
-return_funcall1((closure)&c_73663,  car(cell_get(((closureN)self_73555)->elts[1])));; 
+return_closcall1((closure)&c_73663,  car(cell_get(((closureN)self_73555)->elts[1])));; 
 }
 
 static void __lambda_11(int argc, object self_73556, object r_73274) {
@@ -5925,7 +5925,7 @@ c_73665.elts[1] = ((closureN)self_73556)->elts[1];
 c_73665.elts[2] = ((closureN)self_73556)->elts[2];
 c_73665.elts[3] = ((closureN)self_73556)->elts[3];
 
-return_funcall2(  __glo_lib_117body,  &c_73665, r_73274);; 
+return_closcall2(  __glo_lib_117body,  &c_73665, r_73274);; 
 }
 
 static void __lambda_10(int argc, object self_73557, object r_73273) {
@@ -5942,7 +5942,7 @@ c_73667.elts[1] = ((closureN)self_73557)->elts[1];
 c_73667.elts[2] = ((closureN)self_73557)->elts[2];
 c_73667.elts[3] = ((closureN)self_73557)->elts[3];
 
-return_funcall1((closure)&c_73667,  Cyc_set_car(((closureN)self_73557)->elts[1], r_73273));; 
+return_closcall1((closure)&c_73667,  Cyc_set_car(((closureN)self_73557)->elts[1], r_73273));; 
 }
 
 static void __lambda_9(int argc, object self_73558, object r_73264) {
@@ -5959,7 +5959,7 @@ c_73669.elts[1] = ((closureN)self_73558)->elts[1];
 c_73669.elts[2] = ((closureN)self_73558)->elts[2];
 c_73669.elts[3] = ((closureN)self_73558)->elts[3];
 
-return_funcall1((closure)&c_73669,  Cyc_is_null(((closureN)self_73558)->elts[0]));; 
+return_closcall1((closure)&c_73669,  Cyc_is_null(((closureN)self_73558)->elts[0]));; 
 }
 
 static void __lambda_8(int argc, object self_73559, object r_73272) {
@@ -5976,7 +5976,7 @@ c_73671.elts[1] = ((closureN)self_73559)->elts[1];
 c_73671.elts[2] = ((closureN)self_73559)->elts[2];
 c_73671.elts[3] = ((closureN)self_73559)->elts[3];
 
-return_funcall2(  __glo_not,  &c_73671, r_73272);; 
+return_closcall2(  __glo_not,  &c_73671, r_73272);; 
 }
 
 static void __lambda_7(int argc, object self_73560, object r_73265) {
@@ -6002,9 +6002,9 @@ c_73677.elts = (object *)alloca(sizeof(object) * 2);
 c_73677.elts[0] = ((closureN)self_73560)->elts[1];
 c_73677.elts[1] = ((closureN)self_73560)->elts[3];
 
-return_funcall1((closure)&c_73673,  &c_73677);
+return_closcall1((closure)&c_73673,  &c_73677);
 } else { 
-  return_funcall1(  ((closureN)self_73560)->elts[2],  boolean_f);}
+  return_closcall1(  ((closureN)self_73560)->elts[2],  boolean_f);}
 ; 
 }
 
@@ -6021,7 +6021,7 @@ c_73679.elts[0] = include_7353;
 c_73679.elts[1] = ((closureN)self_73561)->elts[0];
 c_73679.elts[2] = k_73267;
 
-return_funcall2(  __glo_lib_117import_91_125path,  &c_73679, cell_get(((closureN)self_73561)->elts[1]));; 
+return_closcall2(  __glo_lib_117import_91_125path,  &c_73679, cell_get(((closureN)self_73561)->elts[1]));; 
 }
 
 static void __lambda_5(int argc, object self_73562, object r_73271) {
@@ -6038,7 +6038,7 @@ c_73681.elts[1] = ((closureN)self_73562)->elts[2];
 
 
 string_type c_73696 = Cyc_string_append(2,r_73271, ((closureN)self_73562)->elts[0]);
-return_funcall1((closure)&c_73681,  &c_73696);; 
+return_closcall1((closure)&c_73681,  &c_73696);; 
 }
 
 static void __lambda_4(int argc, object self_73563, object r_73270) {
@@ -6053,7 +6053,7 @@ c_73683.elts = (object *)alloca(sizeof(object) * 2);
 c_73683.elts[0] = ((closureN)self_73563)->elts[0];
 c_73683.elts[1] = ((closureN)self_73563)->elts[1];
 
-return_funcall2(  __glo_read_91file,  &c_73683, r_73270);; 
+return_closcall2(  __glo_read_91file,  &c_73683, r_73270);; 
 }
 
 static void __lambda_3(int argc, object self_73564, object r_73269) {
@@ -6068,22 +6068,22 @@ c_73685.elts = (object *)alloca(sizeof(object) * 2);
 c_73685.elts[0] = ((closureN)self_73564)->elts[0];
 c_73685.elts[1] = ((closureN)self_73564)->elts[1];
 
-return_funcall3(  __glo_append,  &c_73685, r_73269, cell_get(((closureN)self_73564)->elts[0]));; 
+return_closcall3(  __glo_append,  &c_73685, r_73269, cell_get(((closureN)self_73564)->elts[0]));; 
 }
 
 static void __lambda_2(int argc, object self_73565, object r_73268) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall1(  ((closureN)self_73565)->elts[1],  Cyc_set_car(((closureN)self_73565)->elts[0], r_73268));; 
+return_closcall1(  ((closureN)self_73565)->elts[1],  Cyc_set_car(((closureN)self_73565)->elts[0], r_73268));; 
 }
 
 static void __lambda_1(int argc, object self_73566, object r_73266) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall3(  __glo_for_91each,  ((closureN)self_73566)->elts[1], r_73266, ((closureN)self_73566)->elts[0]);; 
+return_closcall3(  __glo_for_91each,  ((closureN)self_73566)->elts[1], r_73266, ((closureN)self_73566)->elts[0]);; 
 }
 
 static void __lambda_0(int argc, object self_73567, object r_73134) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
-return_funcall2(  __glo_call_95cc,  ((closureN)self_73567)->elts[0], r_73134);; 
+return_closcall2(  __glo_call_95cc,  ((closureN)self_73567)->elts[0], r_73134);; 
 }
 
 static void c_entry_pt_first_lambda();
@@ -6094,8 +6094,8 @@ extern void c_schemeread_entry_pt(int argc, closure cont, object value);
 extern void c_schemecycloneutil_entry_pt(int argc, closure cont, object value);
 extern void c_schemewrite_entry_pt(int argc, closure cont, object value);
 extern void c_schemecyclonecommon_entry_pt(int argc, closure cont, object value);
-extern void c_schemecyclonemacros_entry_pt(int argc, closure cont, object value);
 extern void c_schemeeval_entry_pt(int argc, closure cont, object value);
+extern void c_schemecyclonemacros_entry_pt(int argc, closure cont, object value);
 extern void c_schemecyclonelibraries_entry_pt(int argc, closure cont, object value);
 extern void c_schemecyclonetransforms_entry_pt(int argc, closure cont, object value);
 extern void c_schemecyclonecgen_entry_pt(int argc, closure cont, object value);
@@ -6152,8 +6152,8 @@ mclosure1(c_done, c_entry_pt_first_lambda, &c_done);
 mclosure1(c_731812, c_schemecyclonecgen_entry_pt, &c_done);
 mclosure1(c_731813, c_schemecyclonetransforms_entry_pt, &c_731812);
 mclosure1(c_731814, c_schemecyclonelibraries_entry_pt, &c_731813);
-mclosure1(c_731815, c_schemeeval_entry_pt, &c_731814);
-mclosure1(c_731816, c_schemecyclonemacros_entry_pt, &c_731815);
+mclosure1(c_731815, c_schemecyclonemacros_entry_pt, &c_731814);
+mclosure1(c_731816, c_schemeeval_entry_pt, &c_731815);
 mclosure1(c_731817, c_schemecyclonecommon_entry_pt, &c_731816);
 mclosure1(c_731818, c_schemewrite_entry_pt, &c_731817);
 mclosure1(c_731819, c_schemecycloneutil_entry_pt, &c_731818);
@@ -6167,7 +6167,7 @@ static void c_entry_pt_first_lambda(int argc, closure cont, object value) {
   
     
     
-    return_check0(__lambda_282);
+    return_direct0(__lambda_282);
 }
 main(int argc,char **argv)
 {long stack_size = long_arg(argc,argv,"-s",STACK_SIZE);

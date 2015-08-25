@@ -6,17 +6,17 @@
  **
  **/
 
-#define funcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall1(cfn,a1) \
+#define closcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall1(cfn,a1) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1;\
      GC(cfn,buf,1); return; \
- } else {funcall1((closure) (cfn),a1); return;}}
+ } else {closcall1((closure) (cfn),a1); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check1(_fn,a1) { \
+/* Check for GC, then call C function directly */
+#define return_direct1(_fn,a1) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1; \
@@ -24,17 +24,17 @@
      GC(&c1, buf, 1); return; \
  } else { (_fn)(1,(closure)_fn,a1); }}
 
-#define funcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall2(cfn,a1,a2) \
+#define closcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall2(cfn,a1,a2) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(cfn,buf,2); return; \
- } else {funcall2((closure) (cfn),a1,a2); return;}}
+ } else {closcall2((closure) (cfn),a1,a2); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check2(_fn,a1,a2) { \
+/* Check for GC, then call C function directly */
+#define return_direct2(_fn,a1,a2) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
@@ -42,17 +42,17 @@
      GC(&c1, buf, 2); return; \
  } else { (_fn)(2,(closure)_fn,a1,a2); }}
 
-#define funcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall3(cfn,a1,a2,a3) \
+#define closcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall3(cfn,a1,a2,a3) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(cfn,buf,3); return; \
- } else {funcall3((closure) (cfn),a1,a2,a3); return;}}
+ } else {closcall3((closure) (cfn),a1,a2,a3); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check3(_fn,a1,a2,a3) { \
+/* Check for GC, then call C function directly */
+#define return_direct3(_fn,a1,a2,a3) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
@@ -60,17 +60,17 @@
      GC(&c1, buf, 3); return; \
  } else { (_fn)(3,(closure)_fn,a1,a2,a3); }}
 
-#define funcall4(cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(3, (closure)a1, cfn,a2,a3,a4); } else { ((cfn)->fn)(4,cfn,a1,a2,a3,a4);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall4(cfn,a1,a2,a3,a4) \
+#define closcall4(cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(3, (closure)a1, cfn,a2,a3,a4); } else { ((cfn)->fn)(4,cfn,a1,a2,a3,a4);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall4(cfn,a1,a2,a3,a4) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(cfn,buf,4); return; \
- } else {funcall4((closure) (cfn),a1,a2,a3,a4); return;}}
+ } else {closcall4((closure) (cfn),a1,a2,a3,a4); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check4(_fn,a1,a2,a3,a4) { \
+/* Check for GC, then call C function directly */
+#define return_direct4(_fn,a1,a2,a3,a4) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
@@ -210,7 +210,7 @@ static void __lambda_34(int argc, closure _,object k_7315) {
   Cyc_st_add("scheme/file.sld:lib-init:schemefile");
 
 make_int(c_73196, 0);
-return_funcall1(  k_7315,  &c_73196);; 
+return_closcall1(  k_7315,  &c_73196);; 
 }
 
 static void __lambda_33(int argc, closure _,object k_7318, object string_732, object thunk_731) {
@@ -226,7 +226,7 @@ c_73151.elts[0] = k_7318;
 c_73151.elts[1] = string_732;
 c_73151.elts[2] = thunk_731;
 
-return_funcall1(  __glo_current_91output_91port,  &c_73151);; 
+return_closcall1(  __glo_current_91output_91port,  &c_73151);; 
 }
 
 static void __lambda_32(int argc, object self_7356, object r_7319) {
@@ -243,7 +243,7 @@ c_73153.elts[1] = r_7319;
 c_73153.elts[2] = ((closureN)self_7356)->elts[1];
 c_73153.elts[3] = ((closureN)self_7356)->elts[2];
 
-return_funcall1((closure)&c_73153,  quote__121param_91convert_125);; 
+return_closcall1((closure)&c_73153,  quote__121param_91convert_125);; 
 }
 
 static void __lambda_31(int argc, object self_7357, object r_7331) {
@@ -260,7 +260,7 @@ c_73155.elts[1] = ((closureN)self_7357)->elts[1];
 c_73155.elts[2] = ((closureN)self_7357)->elts[2];
 c_73155.elts[3] = ((closureN)self_7357)->elts[3];
 
-return_funcall2(  __glo_current_91output_91port,  &c_73155, r_7331);; 
+return_closcall2(  __glo_current_91output_91port,  &c_73155, r_7331);; 
 }
 
 static void __lambda_30(int argc, object self_7358, object r_7329) {
@@ -279,7 +279,7 @@ c_73157.elts[3] = ((closureN)self_7358)->elts[3];
 
 
 port_type c_73192 = Cyc_io_open_output_file(((closureN)self_7358)->elts[2]);
-return_funcall1((closure)&c_73157,  &c_73192);; 
+return_closcall1((closure)&c_73157,  &c_73192);; 
 }
 
 static void __lambda_29(int argc, object self_7359, object r_7330) {
@@ -295,7 +295,7 @@ c_73160.elts[0] = ((closureN)self_7359)->elts[0];
 c_73160.elts[1] = ((closureN)self_7359)->elts[1];
 c_73160.elts[2] = ((closureN)self_7359)->elts[3];
 
-return_funcall2(  ((closureN)self_7359)->elts[2],  &c_73160, r_7330);; 
+return_closcall2(  ((closureN)self_7359)->elts[2],  &c_73160, r_7330);; 
 }
 
 static void __lambda_28(int argc, object self_7360, object r_7320) {
@@ -310,7 +310,7 @@ c_73162.elts = (object *)alloca(sizeof(object) * 2);
 c_73162.elts[0] = ((closureN)self_7360)->elts[0];
 c_73162.elts[1] = ((closureN)self_7360)->elts[2];
 
-return_funcall2((closure)&c_73162,  ((closureN)self_7360)->elts[1], r_7320);; 
+return_closcall2((closure)&c_73162,  ((closureN)self_7360)->elts[1], r_7320);; 
 }
 
 static void __lambda_27(int argc, object self_7361, object old_734, object new_733) {
@@ -335,7 +335,7 @@ c_73183.num_elt = 1;
 c_73183.elts = (object *)alloca(sizeof(object) * 1);
 c_73183.elts[0] = new_733;
 
-return_funcall1((closure)&c_73164,  &c_73183);; 
+return_closcall1((closure)&c_73164,  &c_73183);; 
 }
 
 static void __lambda_26(int argc, object self_7362, object k_7327) {
@@ -350,12 +350,12 @@ c_73185.elts = (object *)alloca(sizeof(object) * 2);
 c_73185.elts[0] = k_7327;
 c_73185.elts[1] = ((closureN)self_7362)->elts[0];
 
-return_funcall1((closure)&c_73185,  quote__121param_91set_67_125);; 
+return_closcall1((closure)&c_73185,  quote__121param_91set_67_125);; 
 }
 
 static void __lambda_25(int argc, object self_7363, object r_7328) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
-return_funcall3(  __glo_current_91output_91port,  ((closureN)self_7363)->elts[0], r_7328, ((closureN)self_7363)->elts[1]);; 
+return_closcall3(  __glo_current_91output_91port,  ((closureN)self_7363)->elts[0], r_7328, ((closureN)self_7363)->elts[1]);; 
 }
 
 static void __lambda_24(int argc, object self_7364, object r_7321) {
@@ -380,7 +380,7 @@ c_73171.num_elt = 1;
 c_73171.elts = (object *)alloca(sizeof(object) * 1);
 c_73171.elts[0] = ((closureN)self_7364)->elts[1];
 
-return_funcall1((closure)&c_73166,  &c_73171);; 
+return_closcall1((closure)&c_73166,  &c_73171);; 
 }
 
 static void __lambda_23(int argc, object self_7365, object k_7323) {
@@ -395,7 +395,7 @@ c_73173.elts = (object *)alloca(sizeof(object) * 2);
 c_73173.elts[0] = k_7323;
 c_73173.elts[1] = ((closureN)self_7365)->elts[0];
 
-return_funcall1(  __glo_current_91output_91port,  &c_73173);; 
+return_closcall1(  __glo_current_91output_91port,  &c_73173);; 
 }
 
 static void __lambda_22(int argc, object self_7366, object r_7326) {
@@ -410,7 +410,7 @@ c_73175.elts = (object *)alloca(sizeof(object) * 2);
 c_73175.elts[0] = ((closureN)self_7366)->elts[0];
 c_73175.elts[1] = ((closureN)self_7366)->elts[1];
 
-return_funcall1((closure)&c_73175,  Cyc_io_close_port(r_7326));; 
+return_closcall1((closure)&c_73175,  Cyc_io_close_port(r_7326));; 
 }
 
 static void __lambda_21(int argc, object self_7367, object r_7324) {
@@ -425,17 +425,17 @@ c_73177.elts = (object *)alloca(sizeof(object) * 2);
 c_73177.elts[0] = ((closureN)self_7367)->elts[0];
 c_73177.elts[1] = ((closureN)self_7367)->elts[1];
 
-return_funcall1((closure)&c_73177,  quote__121param_91set_67_125);; 
+return_closcall1((closure)&c_73177,  quote__121param_91set_67_125);; 
 }
 
 static void __lambda_20(int argc, object self_7368, object r_7325) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
-return_funcall3(  __glo_current_91output_91port,  ((closureN)self_7368)->elts[0], r_7325, ((closureN)self_7368)->elts[1]);; 
+return_closcall3(  __glo_current_91output_91port,  ((closureN)self_7368)->elts[0], r_7325, ((closureN)self_7368)->elts[1]);; 
 }
 
 static void __lambda_19(int argc, object self_7369, object r_7322) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
-return_funcall4(  __glo_dynamic_91wind,  ((closureN)self_7369)->elts[0], ((closureN)self_7369)->elts[1], ((closureN)self_7369)->elts[2], r_7322);; 
+return_closcall4(  __glo_dynamic_91wind,  ((closureN)self_7369)->elts[0], ((closureN)self_7369)->elts[1], ((closureN)self_7369)->elts[2], r_7322);; 
 }
 
 static void __lambda_18(int argc, closure _,object k_7334, object string_736, object thunk_735) {
@@ -451,7 +451,7 @@ c_73106.elts[0] = k_7334;
 c_73106.elts[1] = string_736;
 c_73106.elts[2] = thunk_735;
 
-return_funcall1(  __glo_current_91input_91port,  &c_73106);; 
+return_closcall1(  __glo_current_91input_91port,  &c_73106);; 
 }
 
 static void __lambda_17(int argc, object self_7370, object r_7335) {
@@ -468,7 +468,7 @@ c_73108.elts[1] = r_7335;
 c_73108.elts[2] = ((closureN)self_7370)->elts[1];
 c_73108.elts[3] = ((closureN)self_7370)->elts[2];
 
-return_funcall1((closure)&c_73108,  quote__121param_91convert_125);; 
+return_closcall1((closure)&c_73108,  quote__121param_91convert_125);; 
 }
 
 static void __lambda_16(int argc, object self_7371, object r_7347) {
@@ -485,7 +485,7 @@ c_73110.elts[1] = ((closureN)self_7371)->elts[1];
 c_73110.elts[2] = ((closureN)self_7371)->elts[2];
 c_73110.elts[3] = ((closureN)self_7371)->elts[3];
 
-return_funcall2(  __glo_current_91input_91port,  &c_73110, r_7347);; 
+return_closcall2(  __glo_current_91input_91port,  &c_73110, r_7347);; 
 }
 
 static void __lambda_15(int argc, object self_7372, object r_7345) {
@@ -504,7 +504,7 @@ c_73112.elts[3] = ((closureN)self_7372)->elts[3];
 
 
 port_type c_73147 = Cyc_io_open_input_file(((closureN)self_7372)->elts[2]);
-return_funcall1((closure)&c_73112,  &c_73147);; 
+return_closcall1((closure)&c_73112,  &c_73147);; 
 }
 
 static void __lambda_14(int argc, object self_7373, object r_7346) {
@@ -520,7 +520,7 @@ c_73115.elts[0] = ((closureN)self_7373)->elts[0];
 c_73115.elts[1] = ((closureN)self_7373)->elts[1];
 c_73115.elts[2] = ((closureN)self_7373)->elts[3];
 
-return_funcall2(  ((closureN)self_7373)->elts[2],  &c_73115, r_7346);; 
+return_closcall2(  ((closureN)self_7373)->elts[2],  &c_73115, r_7346);; 
 }
 
 static void __lambda_13(int argc, object self_7374, object r_7336) {
@@ -535,7 +535,7 @@ c_73117.elts = (object *)alloca(sizeof(object) * 2);
 c_73117.elts[0] = ((closureN)self_7374)->elts[0];
 c_73117.elts[1] = ((closureN)self_7374)->elts[2];
 
-return_funcall2((closure)&c_73117,  ((closureN)self_7374)->elts[1], r_7336);; 
+return_closcall2((closure)&c_73117,  ((closureN)self_7374)->elts[1], r_7336);; 
 }
 
 static void __lambda_12(int argc, object self_7375, object old_738, object new_737) {
@@ -560,7 +560,7 @@ c_73138.num_elt = 1;
 c_73138.elts = (object *)alloca(sizeof(object) * 1);
 c_73138.elts[0] = new_737;
 
-return_funcall1((closure)&c_73119,  &c_73138);; 
+return_closcall1((closure)&c_73119,  &c_73138);; 
 }
 
 static void __lambda_11(int argc, object self_7376, object k_7343) {
@@ -575,12 +575,12 @@ c_73140.elts = (object *)alloca(sizeof(object) * 2);
 c_73140.elts[0] = k_7343;
 c_73140.elts[1] = ((closureN)self_7376)->elts[0];
 
-return_funcall1((closure)&c_73140,  quote__121param_91set_67_125);; 
+return_closcall1((closure)&c_73140,  quote__121param_91set_67_125);; 
 }
 
 static void __lambda_10(int argc, object self_7377, object r_7344) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
-return_funcall3(  __glo_current_91input_91port,  ((closureN)self_7377)->elts[0], r_7344, ((closureN)self_7377)->elts[1]);; 
+return_closcall3(  __glo_current_91input_91port,  ((closureN)self_7377)->elts[0], r_7344, ((closureN)self_7377)->elts[1]);; 
 }
 
 static void __lambda_9(int argc, object self_7378, object r_7337) {
@@ -605,7 +605,7 @@ c_73126.num_elt = 1;
 c_73126.elts = (object *)alloca(sizeof(object) * 1);
 c_73126.elts[0] = ((closureN)self_7378)->elts[1];
 
-return_funcall1((closure)&c_73121,  &c_73126);; 
+return_closcall1((closure)&c_73121,  &c_73126);; 
 }
 
 static void __lambda_8(int argc, object self_7379, object k_7339) {
@@ -620,7 +620,7 @@ c_73128.elts = (object *)alloca(sizeof(object) * 2);
 c_73128.elts[0] = k_7339;
 c_73128.elts[1] = ((closureN)self_7379)->elts[0];
 
-return_funcall1(  __glo_current_91input_91port,  &c_73128);; 
+return_closcall1(  __glo_current_91input_91port,  &c_73128);; 
 }
 
 static void __lambda_7(int argc, object self_7380, object r_7342) {
@@ -635,7 +635,7 @@ c_73130.elts = (object *)alloca(sizeof(object) * 2);
 c_73130.elts[0] = ((closureN)self_7380)->elts[0];
 c_73130.elts[1] = ((closureN)self_7380)->elts[1];
 
-return_funcall1((closure)&c_73130,  Cyc_io_close_port(r_7342));; 
+return_closcall1((closure)&c_73130,  Cyc_io_close_port(r_7342));; 
 }
 
 static void __lambda_6(int argc, object self_7381, object r_7340) {
@@ -650,17 +650,17 @@ c_73132.elts = (object *)alloca(sizeof(object) * 2);
 c_73132.elts[0] = ((closureN)self_7381)->elts[0];
 c_73132.elts[1] = ((closureN)self_7381)->elts[1];
 
-return_funcall1((closure)&c_73132,  quote__121param_91set_67_125);; 
+return_closcall1((closure)&c_73132,  quote__121param_91set_67_125);; 
 }
 
 static void __lambda_5(int argc, object self_7382, object r_7341) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
-return_funcall3(  __glo_current_91input_91port,  ((closureN)self_7382)->elts[0], r_7341, ((closureN)self_7382)->elts[1]);; 
+return_closcall3(  __glo_current_91input_91port,  ((closureN)self_7382)->elts[0], r_7341, ((closureN)self_7382)->elts[1]);; 
 }
 
 static void __lambda_4(int argc, object self_7383, object r_7338) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
-return_funcall4(  __glo_dynamic_91wind,  ((closureN)self_7383)->elts[0], ((closureN)self_7383)->elts[1], ((closureN)self_7383)->elts[2], r_7338);; 
+return_closcall4(  __glo_dynamic_91wind,  ((closureN)self_7383)->elts[0], ((closureN)self_7383)->elts[1], ((closureN)self_7383)->elts[2], r_7338);; 
 }
 
 static void __lambda_3(int argc, closure _,object k_7350, object string_7310, object proc_739) {
@@ -677,12 +677,12 @@ c_7397.elts[1] = proc_739;
 
 
 port_type c_73103 = Cyc_io_open_output_file(string_7310);
-return_funcall1((closure)&c_7397,  &c_73103);; 
+return_closcall1((closure)&c_7397,  &c_73103);; 
 }
 
 static void __lambda_2(int argc, object self_7384, object r_7351) {
   Cyc_st_add("scheme/file.sld:call-with-output-file");
-return_funcall3(  __glo_call_91with_91port,  ((closureN)self_7384)->elts[0], r_7351, ((closureN)self_7384)->elts[1]);; 
+return_closcall3(  __glo_call_91with_91port,  ((closureN)self_7384)->elts[0], r_7351, ((closureN)self_7384)->elts[1]);; 
 }
 
 static void __lambda_1(int argc, closure _,object k_7354, object string_7312, object proc_7311) {
@@ -699,12 +699,12 @@ c_7388.elts[1] = proc_7311;
 
 
 port_type c_7394 = Cyc_io_open_input_file(string_7312);
-return_funcall1((closure)&c_7388,  &c_7394);; 
+return_closcall1((closure)&c_7388,  &c_7394);; 
 }
 
 static void __lambda_0(int argc, object self_7385, object r_7355) {
   Cyc_st_add("scheme/file.sld:call-with-input-file");
-return_funcall3(  __glo_call_91with_91port,  ((closureN)self_7385)->elts[0], r_7355, ((closureN)self_7385)->elts[1]);; 
+return_closcall3(  __glo_call_91with_91port,  ((closureN)self_7385)->elts[0], r_7355, ((closureN)self_7385)->elts[1]);; 
 }
 
 void c_schemefile_entry_pt(argc, cont,value) int argc; closure cont; object value;{ 

@@ -6,17 +6,17 @@
  **
  **/
 
-#define funcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall1(cfn,a1) \
+#define closcall1(cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(0, (closure)a1, cfn); } else { ((cfn)->fn)(1,cfn,a1);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall1(cfn,a1) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1;\
      GC(cfn,buf,1); return; \
- } else {funcall1((closure) (cfn),a1); return;}}
+ } else {closcall1((closure) (cfn),a1); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check1(_fn,a1) { \
+/* Check for GC, then call C function directly */
+#define return_direct1(_fn,a1) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[1]; buf[0] = a1; \
@@ -24,17 +24,17 @@
      GC(&c1, buf, 1); return; \
  } else { (_fn)(1,(closure)_fn,a1); }}
 
-#define funcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall2(cfn,a1,a2) \
+#define closcall2(cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(2,cfn,a1,a2);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall2(cfn,a1,a2) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(cfn,buf,2); return; \
- } else {funcall2((closure) (cfn),a1,a2); return;}}
+ } else {closcall2((closure) (cfn),a1,a2); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check2(_fn,a1,a2) { \
+/* Check for GC, then call C function directly */
+#define return_direct2(_fn,a1,a2) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
@@ -42,17 +42,17 @@
      GC(&c1, buf, 2); return; \
  } else { (_fn)(2,(closure)_fn,a1,a2); }}
 
-#define funcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
-/* Return to continuation after checking for stack overflow. */
-#define return_funcall3(cfn,a1,a2,a3) \
+#define closcall3(cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(3,cfn,a1,a2,a3);}
+/* Check for GC, then call given continuation closure */
+#define return_closcall3(cfn,a1,a2,a3) \
 {char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(cfn,buf,3); return; \
- } else {funcall3((closure) (cfn),a1,a2,a3); return;}}
+ } else {closcall3((closure) (cfn),a1,a2,a3); return;}}
 
-/* Evaluate an expression after checking for stack overflow. */
-#define return_check3(_fn,a1,a2,a3) { \
+/* Check for GC, then call C function directly */
+#define return_direct3(_fn,a1,a2,a3) { \
  char stack; \
  if (check_overflow(&stack,stack_limit1)) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
@@ -185,17 +185,17 @@ static void __lambda_23(int argc, closure _,object k_7313) {
   Cyc_st_add("scheme/char.sld:lib-init:scheme_char");
 
 make_int(c_73191, 0);
-return_funcall1(  k_7313,  &c_73191);; 
+return_closcall1(  k_7313,  &c_73191);; 
 }
 
 static void __lambda_22(int argc, closure _,object k_7316, object str_731) {
   Cyc_st_add("scheme/char.sld:string-downcase");
-return_funcall3(  __glo_string_91map,  k_7316, __glo_char_91downcase, str_731);; 
+return_closcall3(  __glo_string_91map,  k_7316, __glo_char_91downcase, str_731);; 
 }
 
 static void __lambda_21(int argc, closure _,object k_7319, object str_732) {
   Cyc_st_add("scheme/char.sld:string-upcase");
-return_funcall3(  __glo_string_91map,  k_7319, __glo_char_91upcase, str_732);; 
+return_closcall3(  __glo_string_91map,  k_7319, __glo_char_91upcase, str_732);; 
 }
 
 static void __lambda_20(int argc, closure _,object k_7322, object c_733) {
@@ -210,7 +210,7 @@ c_73170.elts = (object *)alloca(sizeof(object) * 2);
 c_73170.elts[0] = c_733;
 c_73170.elts[1] = k_7322;
 
-return_funcall2(  __glo_char_91numeric_127,  &c_73170, c_733);; 
+return_closcall2(  __glo_char_91numeric_127,  &c_73170, c_733);; 
 }
 
 static void __lambda_19(int argc, object self_7357, object r_7323) {
@@ -227,9 +227,9 @@ c_73172.elts[0] = ((closureN)self_7357)->elts[1];
 
 
 integer_type c_73181 = Cyc_char2integer(((closureN)self_7357)->elts[0]);
-return_funcall1((closure)&c_73172,  &c_73181);
+return_closcall1((closure)&c_73172,  &c_73181);
 } else { 
-  return_funcall1(  ((closureN)self_7357)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_7357)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -239,7 +239,7 @@ static void __lambda_18(int argc, object self_7358, object r_7324) {
 make_int(c_73178, 48);
 
 common_type c_73177 = Cyc_sub(2,r_7324, &c_73178);
-return_funcall1(  ((closureN)self_7358)->elts[0],  &c_73177);; 
+return_closcall1(  ((closureN)self_7358)->elts[0],  &c_73177);; 
 }
 
 static void __lambda_17(int argc, closure _,object k_7327, object c_734) {
@@ -262,12 +262,12 @@ make_cons(c_73166,obj_char2obj(13),&c_73167);
 make_cons(c_73165,obj_char2obj(32),&c_73166);
 
 make_cons(c_73164,obj_char2obj(9),&c_73165);
-return_funcall1((closure)&c_73158,  &c_73164);; 
+return_closcall1((closure)&c_73158,  &c_73164);; 
 }
 
 static void __lambda_16(int argc, object self_7359, object r_7328) {
   Cyc_st_add("scheme/char.sld:char-whitespace?");
-return_funcall1(  ((closureN)self_7359)->elts[1],  memberp(((closureN)self_7359)->elts[0], r_7328));; 
+return_closcall1(  ((closureN)self_7359)->elts[1],  memberp(((closureN)self_7359)->elts[0], r_7328));; 
 }
 
 static void __lambda_15(int argc, closure _,object k_7331, object c_735) {
@@ -302,12 +302,12 @@ make_cons(c_73148,obj_char2obj(50),&c_73149);
 make_cons(c_73147,obj_char2obj(49),&c_73148);
 
 make_cons(c_73146,obj_char2obj(48),&c_73147);
-return_funcall1((closure)&c_73140,  &c_73146);; 
+return_closcall1((closure)&c_73140,  &c_73146);; 
 }
 
 static void __lambda_14(int argc, object self_7360, object r_7332) {
   Cyc_st_add("scheme/char.sld:char-numeric?");
-return_funcall1(  ((closureN)self_7360)->elts[1],  memberp(((closureN)self_7360)->elts[0], r_7332));; 
+return_closcall1(  ((closureN)self_7360)->elts[1],  memberp(((closureN)self_7360)->elts[0], r_7332));; 
 }
 
 static void __lambda_13(int argc, closure _,object k_7335, object c_736) {
@@ -322,15 +322,15 @@ c_73132.elts = (object *)alloca(sizeof(object) * 2);
 c_73132.elts[0] = c_736;
 c_73132.elts[1] = k_7335;
 
-return_funcall3(  __glo_char_125_123_127,  &c_73132, c_736, obj_char2obj(97));; 
+return_closcall3(  __glo_char_125_123_127,  &c_73132, c_736, obj_char2obj(97));; 
 }
 
 static void __lambda_12(int argc, object self_7361, object r_7336) {
   Cyc_st_add("scheme/char.sld:char-lower-case?");
 if( !eq(boolean_f, r_7336) ){ 
-  return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7361)->elts[1], ((closureN)self_7361)->elts[0], obj_char2obj(122));
+  return_closcall3(  __glo_char_121_123_127,  ((closureN)self_7361)->elts[1], ((closureN)self_7361)->elts[0], obj_char2obj(122));
 } else { 
-  return_funcall1(  ((closureN)self_7361)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_7361)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -346,15 +346,15 @@ c_73124.elts = (object *)alloca(sizeof(object) * 2);
 c_73124.elts[0] = c_737;
 c_73124.elts[1] = k_7339;
 
-return_funcall3(  __glo_char_125_123_127,  &c_73124, c_737, obj_char2obj(65));; 
+return_closcall3(  __glo_char_125_123_127,  &c_73124, c_737, obj_char2obj(65));; 
 }
 
 static void __lambda_10(int argc, object self_7362, object r_7340) {
   Cyc_st_add("scheme/char.sld:char-upper-case?");
 if( !eq(boolean_f, r_7340) ){ 
-  return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7362)->elts[1], ((closureN)self_7362)->elts[0], obj_char2obj(90));
+  return_closcall3(  __glo_char_121_123_127,  ((closureN)self_7362)->elts[1], ((closureN)self_7362)->elts[0], obj_char2obj(90));
 } else { 
-  return_funcall1(  ((closureN)self_7362)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_7362)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -370,15 +370,15 @@ c_73116.elts = (object *)alloca(sizeof(object) * 2);
 c_73116.elts[0] = c_738;
 c_73116.elts[1] = k_7343;
 
-return_funcall3(  __glo_char_125_123_127,  &c_73116, c_738, obj_char2obj(65));; 
+return_closcall3(  __glo_char_125_123_127,  &c_73116, c_738, obj_char2obj(65));; 
 }
 
 static void __lambda_8(int argc, object self_7363, object r_7344) {
   Cyc_st_add("scheme/char.sld:char-alphabetic?");
 if( !eq(boolean_f, r_7344) ){ 
-  return_funcall3(  __glo_char_121_123_127,  ((closureN)self_7363)->elts[1], ((closureN)self_7363)->elts[0], obj_char2obj(122));
+  return_closcall3(  __glo_char_121_123_127,  ((closureN)self_7363)->elts[1], ((closureN)self_7363)->elts[0], obj_char2obj(122));
 } else { 
-  return_funcall1(  ((closureN)self_7363)->elts[1],  boolean_f);}
+  return_closcall1(  ((closureN)self_7363)->elts[1],  boolean_f);}
 ; 
 }
 
@@ -394,7 +394,7 @@ c_7394.elts = (object *)alloca(sizeof(object) * 2);
 c_7394.elts[0] = c_739;
 c_7394.elts[1] = k_7347;
 
-return_funcall2(  __glo_char_91upper_91case_127,  &c_7394, c_739);; 
+return_closcall2(  __glo_char_91upper_91case_127,  &c_7394, c_739);; 
 }
 
 static void __lambda_6(int argc, object self_7364, object r_7348) {
@@ -411,9 +411,9 @@ c_7396.elts[0] = ((closureN)self_7364)->elts[1];
 
 
 integer_type c_73109 = Cyc_char2integer(((closureN)self_7364)->elts[0]);
-return_funcall1((closure)&c_7396,  &c_73109);
+return_closcall1((closure)&c_7396,  &c_73109);
 } else { 
-  return_funcall1(  ((closureN)self_7364)->elts[1],  ((closureN)self_7364)->elts[0]);}
+  return_closcall1(  ((closureN)self_7364)->elts[1],  ((closureN)self_7364)->elts[0]);}
 ; 
 }
 
@@ -432,12 +432,12 @@ c_7398.elts[0] = ((closureN)self_7365)->elts[0];
 make_int(c_73106, 32);
 
 common_type c_73105 = Cyc_sum(2,r_7350, &c_73106);
-return_funcall1((closure)&c_7398,  &c_73105);; 
+return_closcall1((closure)&c_7398,  &c_73105);; 
 }
 
 static void __lambda_4(int argc, object self_7366, object r_7349) {
   Cyc_st_add("scheme/char.sld:char-downcase");
-return_funcall1(  ((closureN)self_7366)->elts[0],  Cyc_integer2char(r_7349));; 
+return_closcall1(  ((closureN)self_7366)->elts[0],  Cyc_integer2char(r_7349));; 
 }
 
 static void __lambda_3(int argc, closure _,object k_7353, object c_7310) {
@@ -452,7 +452,7 @@ c_7372.elts = (object *)alloca(sizeof(object) * 2);
 c_7372.elts[0] = c_7310;
 c_7372.elts[1] = k_7353;
 
-return_funcall2(  __glo_char_91lower_91case_127,  &c_7372, c_7310);; 
+return_closcall2(  __glo_char_91lower_91case_127,  &c_7372, c_7310);; 
 }
 
 static void __lambda_2(int argc, object self_7367, object r_7354) {
@@ -469,9 +469,9 @@ c_7374.elts[0] = ((closureN)self_7367)->elts[1];
 
 
 integer_type c_7387 = Cyc_char2integer(((closureN)self_7367)->elts[0]);
-return_funcall1((closure)&c_7374,  &c_7387);
+return_closcall1((closure)&c_7374,  &c_7387);
 } else { 
-  return_funcall1(  ((closureN)self_7367)->elts[1],  ((closureN)self_7367)->elts[0]);}
+  return_closcall1(  ((closureN)self_7367)->elts[1],  ((closureN)self_7367)->elts[0]);}
 ; 
 }
 
@@ -490,12 +490,12 @@ c_7376.elts[0] = ((closureN)self_7368)->elts[0];
 make_int(c_7384, 32);
 
 common_type c_7383 = Cyc_sub(2,r_7356, &c_7384);
-return_funcall1((closure)&c_7376,  &c_7383);; 
+return_closcall1((closure)&c_7376,  &c_7383);; 
 }
 
 static void __lambda_0(int argc, object self_7369, object r_7355) {
   Cyc_st_add("scheme/char.sld:char-upcase");
-return_funcall1(  ((closureN)self_7369)->elts[0],  Cyc_integer2char(r_7355));; 
+return_closcall1(  ((closureN)self_7369)->elts[0],  Cyc_integer2char(r_7355));; 
 }
 
 void c_scheme_char_entry_pt(argc, cont,value) int argc; closure cont; object value;{ 
