@@ -6326,5 +6326,5 @@ main(int argc,char **argv)
  global_heap_size = heap_size;
  _cyc_argc = argc;
  _cyc_argv = argv;
- main_main(stack_size,heap_size,(char *) &stack_size);
+ Cyc_main(stack_size,heap_size,(char *) &stack_size);
  return 0;}
