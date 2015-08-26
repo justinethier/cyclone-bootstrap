@@ -11,7 +11,7 @@
     ;(scheme cyclone libraries) ;; for handling import sets
     (scheme base)
     (scheme file)
-    (scheme write)
+    ;(scheme write) ;; Only used for debugging
     (scheme read))
   (export
     ;environment
@@ -367,6 +367,10 @@
 ;; - env => Environment used to expand macros
 ;;
 (define (analyze exp env)
+;(newline)
+;(display "/* ")
+;(display (list 'analyze exp))
+;(display " */")
   (cond ((self-evaluating? exp) 
          (analyze-self-evaluating exp))
         ((quoted? exp) (analyze-quoted exp))
@@ -441,36 +445,50 @@
 
 (define (pre-analyze-application exp a-env)
   ;; Notes:
-  ;;
   ;; look up symbol in env, and expand if it is a macro
   ;; Adds some extra overhead into eval, which is not ideal. may need to 
   ;; reduce that overhead later...
-  ;;(write (list 'JAE-DEBUG 'expanding exp)) ;; DEBUG-only
 
-  ;; TODO: need to use common rename/compare functions
-  ;; instead of fudging them here. maybe keep common
-  ;; functions in the macros module and hook into them???
-
-  ;; see macro-expand in that module. believe these are the only
-  ;; two places so far that introduce instances of rename/compare?
   (let* ((op (operator exp))
          (var (if (symbol? op)
                   (_lookup-variable-value op a-env
                     (lambda () #f)) ; Not found
                   #f))
-         (expand (lambda (macro-op)
-                   (analyze (apply macro-op
-                                  (list (cons macro-op (operands exp))
-                                        (lambda (sym) sym)
-                                        (lambda (a b) (eq? a b)))) 
-                            a-env))))
+;; TODO: need to use common rename/compare functions
+;; instead of fudging them here. maybe keep common
+;; functions in the macros module and hook into them???
+;;
+;; see macro-expand in that module. believe these are the only
+;; two places so far that introduce instances of rename/compare?
+         (rename (lambda (sym) sym))
+         (compare? (lambda (a b) (eq? a b))) 
+         (expand 
+           (lambda (macro-op)
+             (if (macro? macro-op)
+               ;; Compiled macro, call directly
+               (analyze (apply macro-op
+                              (list (cons (car exp) (operands exp))
+                                    rename
+                                    compare?)) 
+                        a-env)
+               ;; Interpreted macro, build expression and eval
+               (let ((expr (cons macro-op 
+                             (list (cons 'quote 
+                                         (list (cons (car exp) 
+                                                     (operands exp))))
+                                   rename
+                                   compare?))))
+                 (analyze
+                   (eval expr a-env) ;; Expand macro
+                   a-env))))))
     (cond
       ;; compiled macro
       ((macro? var)
        (expand var))
-      ;; compiled macro in compound form
+      ;; compiled or interpreted macro in compound form
       ((compound-macro? var)
-       (expand (Cyc-get-cvar (cadr var))))
+       (let ((macro (Cyc-get-cvar (cadr var))))
+         (expand macro)))
       ;; standard interpreted macro
       ((compound-macro? op)
        (expand (cdr op)))
