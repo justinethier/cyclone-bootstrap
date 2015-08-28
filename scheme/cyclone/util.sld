@@ -15,6 +15,20 @@
     if?
     begin?
     lambda?
+    ;; Environments
+    env:enclosing-environment
+    env:first-frame
+    env:the-empty-environment
+    env:make-frame
+    env:frame-variables
+    env:frame-values 
+    env:add-binding-to-frame! 
+    env:extend-environment 
+    env:lookup
+    env:lookup-variable-value 
+    env:_lookup-variable-value 
+    env:set-variable-value! 
+    env:define-variable! 
     ;; ER macro supporting functions
     Cyc-er-rename
     Cyc-er-compare?
@@ -118,14 +132,134 @@
                                         "$"
                                         (number->string gensym-count)))))))
 
+;;;; Environments
+;;;; TODO: longer-term, move these into their own module
+(define (env:enclosing-environment env) (cdr env))
+(define (env:first-frame env) (car env))
+(define env:the-empty-environment '())
+
+(define (env:make-frame variables values)
+  (cons variables values))
+(define (env:frame-variables frame) (car frame))
+(define (env:frame-values frame) (cdr frame))
+(define (env:add-binding-to-frame! var val frame)
+  (set-car! frame (cons var (car frame)))
+  (set-cdr! frame (cons val (cdr frame))))
+
+(define (env:extend-environment vars vals base-env)
+  (if (= (length vars) (length vals))
+      (cons (env:make-frame vars vals) base-env)
+      (if (< (length vars) (length vals))
+          (error "Too many arguments supplied" vars vals)
+          (error "Too few arguments supplied" vars vals))))
+
+(define (env:lookup-variable-value var env)
+  (env:_lookup-variable-value var env 
+    (lambda ()
+      (error "Unbound variable" var))))
+
+(define (env:_lookup-variable-value var env not-found)
+  (define (env-loop env)
+    (define (scan vars vals)
+      (cond ((null? vars)
+             (env-loop (env:enclosing-environment env)))
+            ((eq? var (car vars))
+             (cond-expand
+               (cyclone
+                 (Cyc-get-cvar (car vals)))
+               (else 
+                 (car vals))))
+            (else (scan (cdr vars) (cdr vals)))))
+    (if (eq? env env:the-empty-environment)
+        (not-found)
+        (let ((frame (env:first-frame env)))
+          (scan (env:frame-variables frame)
+                (env:frame-values frame)))))
+  (env-loop env))
+
+(define (env:lookup var env default-value)
+  (env:_lookup-variable-value var env (lambda () default-value)))
+
+(define (env:set-variable-value! var val env)
+  (define (env-loop env)
+    (define (scan vars vals)
+      (cond ((null? vars)
+             (env-loop (env:enclosing-environment env)))
+            ((eq? var (car vars))
+             (cond-expand
+               (cyclone
+                 (if (Cyc-cvar? (car vals))
+                   (Cyc-set-cvar! (car vals) val)
+                   (set-car! vals val)))
+               (else
+                 (set-car! vals val))))
+            (else (scan (cdr vars) (cdr vals)))))
+    (if (eq? env env:the-empty-environment)
+        (error "Unbound variable -- SET!" var)
+        (let ((frame (env:first-frame env)))
+          (scan (env:frame-variables frame)
+                (env:frame-values frame)))))
+  (env-loop env))
+
+(define (env:define-variable! var val env)
+  (let ((frame (env:first-frame env)))
+    (define (scan vars vals)
+      (cond ((null? vars)
+             (env:add-binding-to-frame! var val frame))
+            ((eq? var (car vars))
+             ;; TODO: update compiled var
+             ;; cond-expand
+             ;;  if cvar
+             ;;     set-cvar
+             (set-car! vals val))
+            (else (scan (cdr vars) (cdr vals)))))
+    (scan (env:frame-variables frame)
+          (env:frame-values frame))))
+;;;; END Environments
+
+
 ;;; Explicit renaming macros
 
 ;; ER macro rename function, based on code from Chibi scheme
 (define Cyc-er-rename
-  (lambda (sym) sym)) ; placeholder
-; TODO:
-;  ;; TODO: this is not good enough, need to take macro environment
-;  ;; into account
+  (lambda (sym) sym)) ; TODO: temporary placeholder, see below
+; Notes:
+;
+; need to figure out what to return from this function so that renaming
+; actually does what it is supposed to do (or a close approximation).
+; then need to figure out what needs to change in the rest of the code to
+; support that.
+; 
+; how renaming should work:
+;
+;  - ideally, add a closure from the macro-env for identifier
+;  - practically, if identifier is defined in mac-env, gensym but
+;    update mac-env so renamed variable points to original.
+;    if not defined, is it the same as a gensym? or nothing at all???
+;
+;in order for this to work:
+;
+; - compiler needs to maintain env consisting of at least macros,
+;   and pass this along. presumably this env would be used instead of
+;   *defined-macros*.
+; - interpreter can use a-env and global-env??????
+;   there are open questions about extending a-env, but without eval being
+;   able to define-syntax (yet), I think we can defer that until later.
+; - environment code needs to be added to a common place, away from eval.sld
+;
+;   can pass mac-env, useenv in to this guy (and compare as well), and possibly add renamed bindings to it.
+;
+; mac-env is 
+;  - global env for interpreted macros, at least for now until
+;    they can be recognized by eval
+;  - ?? for compiled macros
+;
+; use-env is:
+;  - current env for eval, can be passed in.
+;    is this really a-env though? or do we need to extend it when
+;    a new lambda scope is introduced?
+;  - need to keep track of it for compiled macro expansion
+;
 ;  ((lambda (renames)
 ;     (lambda (identifier)
 ;       ((lambda (cell)
@@ -135,6 +269,12 @@
 ;                 (set! renames (cons (cons identifier name) renames))
 ;                 name)
 ;               (gensym identifier)
+;               ; gensym not good enough, need to also preserve ref trans.
+;               ; also note that an identifier can be an object, it does not
+;               ; just have to be a symbol. although, of course, the rest
+;               ; of the code needs to be able to handle identifiers in
+;               ; forms other than symbols, if that is done.
+;               ;
 ;               ;(make-syntactic-closure mac-env '() identifier)
 ;              )))
 ;        (assq identifier renames))))
@@ -148,6 +288,7 @@
 ;     (quote . quote)
 ;     (set! . set!)
 ;    )))
+
 (define (Cyc-er-compare? a b)
   ;; TODO: this is not good enough, need to determine if these symbols
   ;; are the same identifier in their *environment of use*
