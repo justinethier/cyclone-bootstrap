@@ -730,97 +730,31 @@
   (cadr exp))
 
 
-
-;; Syntax manipulation.
-
-;; ; substitute-var : alist[var,exp] ref-exp -> exp
-;; (define (substitute-var env var)
-;;   (let ((sub (assq var env)))
-;;     (if sub
-;;         (cadr sub)
-;;         var)))
-;; 
-;; ; substitute : alist[var,exp] exp -> exp
-;; (define (substitute env exp)
-;;   
-;;   (define (substitute-with env)
-;;     (lambda (exp)
-;;       (substitute env exp)))
-;; 
-;;   (cond
-;;     ; Core forms:    
-;;     ((null? env)        exp)
-;;     ((const? exp)       exp)
-;;     ((prim? exp)        exp)
-;;     ((ref? exp)         (substitute-var env exp))
-;;     ((lambda? exp)      `(lambda ,(lambda->formals exp)
-;;                            ,@(map (lambda (body-exp) 
-;;                                     ;; TODO: could be more efficient
-;;                                     (substitute 
-;;                                         (assq-remove-keys env (lambda->formals exp)) 
-;;                                         body-exp))
-;;                                  (lambda->exp exp))))
-;;     ((set!? exp)        `(set! ,(substitute-var env (set!->var exp))
-;;                                ,(substitute env (set!->exp exp))))
-;;     ((if? exp)          `(if ,(substitute env (if->condition exp))
-;;                              ,(substitute env (if->then exp))
-;;                              ,(substitute env (if->else exp))))
-;;     
-;;     ; Sugar:
-;;     ((let? exp)         `(let ,(azip (let->bound-vars exp)
-;;                                      (map (substitute-with env) (let->args exp)))
-;;                            ,(substitute (assq-remove-keys env (let->bound-vars exp))
-;;                                         (car (let->exp exp)))))
-;;     ((letrec? exp)      (let ((new-env (assq-remove-keys env (letrec->bound-vars exp))))
-;;                           `(letrec ,(azip (letrec->bound-vars exp) 
-;;                                           (map (substitute-with new-env) 
-;;                                                (letrec->args exp)))
-;;                              ,(substitute new-env (car (letrec->exp exp))))))
-;;     ((begin? exp)       (cons 'begin (map (substitute-with env) (begin->exps exp))))
-;; 
-;;     ; IR (1):
-;;     ((cell? exp)        `(cell ,(substitute env (cell->value exp))))
-;;     ((cell-get? exp)    `(cell-get ,(substitute env (cell-get->cell exp))))
-;;     ((set-cell!? exp)   `(set-cell! ,(substitute env (set-cell!->cell exp))
-;;                                     ,(substitute env (set-cell!->value exp))))
-;;     
-;;     ; IR (2):
-;;     ((closure? exp)     `(closure ,(substitute env (closure->lam exp))
-;;                                   ,(substitute env (closure->env exp))))
-;;     ((env-make? exp)    `(env-make ,(env-make->id exp) 
-;;                                    ,@(azip (env-make->fields exp)
-;;                                            (map (substitute-with env)
-;;                                                 (env-make->values exp)))))
-;;     ((env-get? exp)     `(env-get ,(env-get->id exp)
-;;                                   ,(env-get->field exp)
-;;                                   ,(substitute env (env-get->env exp))))
-;;     
-;;     ; Application:
-;;     ((app? exp)         (map (substitute-with env) exp))
-;;     (else               (error "unhandled expression type in substitution: " exp))))
-;; 
-
 ;; Macro expansion
 
+;TODO: modify this whole section to use macros:get-env instead of *defined-macros*. macro:get-env becomes the mac-env. any new scopes need to extend that env, and an env parameter needs to be added to (expand). any macros defined with define-syntax use that env as their mac-env (how to store that)?
 ; expand : exp -> exp
-(define (expand exp)
+(define (expand exp env)
   (cond
     ((const? exp)      exp)
     ((prim? exp)       exp)
     ((ref? exp)        exp)
     ((quote? exp)      exp)
     ((lambda? exp)     `(lambda ,(lambda->formals exp)
-                          ,@(map expand (lambda->exp exp))))
+                          ,@(map 
+                            ;; TODO: use extend env here?
+                            (lambda (expr) (expand expr env))
+                            (lambda->exp exp))))
     ((define? exp)     (if (define-lambda? exp)
-                           (expand (define->lambda exp))
-                          `(define ,(expand (define->var exp))
-                                ,@(expand (define->exp exp)))))
-    ((set!? exp)       `(set! ,(expand (set!->var exp))
-                              ,(expand (set!->exp exp))))
-    ((if? exp)         `(if ,(expand (if->condition exp))
-                            ,(expand (if->then exp))
+                           (expand (define->lambda exp) env)
+                          `(define ,(expand (define->var exp) env)
+                                ,@(expand (define->exp exp) env))))
+    ((set!? exp)       `(set! ,(expand (set!->var exp) env)
+                              ,(expand (set!->exp exp) env)))
+    ((if? exp)         `(if ,(expand (if->condition exp) env)
+                            ,(expand (if->then exp) env)
                             ,(if (if-else? exp)
-                                 (expand (if->else exp))
+                                 (expand (if->else exp) env)
                                  ;; Insert default value for missing else clause
                                  ;; FUTURE: append the empty (unprinted) value
                                  ;; instead of #f
@@ -851,19 +785,18 @@
         ;;  - no, we need to do this here so code is carried though all transforms
         ;;    (alpha, cps, closure, etc). otherwise code has to be interpreted during expansion
         ;;
-        `(define ,name ,(expand body))))
+        `(define ,name ,(expand body env))))
 
-;TODO: this is not working (I think) because we get "symbol and" and not "compiled macro and".
-;would have to look up symbol to see if it is a macro, and then get the macro that way...
-;may need to have a *define-macros* equivalent but in the compiled code, similar to globals.
-;need to be able to look up var in a list and get the (macro?) instance.
-     ((or ;(macro? exp)
-          (macro:macro? exp *defined-macros*))
-       (trace:info (list 'expanding exp))
+; TODO: need to change below to use the env
+     ((macro:macro? exp *defined-macros*)
+       ;(trace:info (list 'expanding exp))
        (expand ;; Could expand into another macro
-         (macro:expand exp *defined-macros*)))
+         (macro:expand exp *defined-macros*)
+         env))
      (else
-       (map expand exp))))
+       (map 
+        (lambda (expr) (expand expr env))
+        exp))))
     (else
       (error "unknown exp: " exp))))
 
@@ -893,7 +826,7 @@
                ;; This is a library, keep inits in their own function
                `((define ,(lib:name->symbol lib-name)
                   (lambda () 0 ,@(reverse exprs))))))
-           )))
+           (macro:get-env))))
       (else
        (cond
          ((define? (car top-lvl))
