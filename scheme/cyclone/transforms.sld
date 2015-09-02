@@ -775,6 +775,7 @@
         ;; Previous list should eventually go away once macros are
         ;; moved from that static list to libraries
         (macro:add! name body)
+        (env:define-variable! name (list 'macro body) env)
         ;; Keep as a 'define' form so available at runtime
         ;; TODO: may run into issues with expanding now, before some
         ;; of the macros are defined. may need to make a special pass
@@ -787,12 +788,25 @@
         ;;
         `(define ,name ,(expand body env))))
 
-; TODO: need to change below to use the env
-     ((macro:macro? exp *defined-macros*)
-       ;(trace:info (list 'expanding exp))
-       (expand ;; Could expand into another macro
-         (macro:expand exp *defined-macros*)
-         env))
+; Newer macro expansion code, but not ready yet
+     ((symbol? (car exp))
+      (let ((val (env:lookup (car exp) env #f)))
+        (if (tagged-list? 'macro val)
+          (expand ; Could expand into another macro
+            ;(macro:expand 'val exp env *defined-macros*)
+            (macro:expand2 exp val env)
+            env)
+          (map
+            (lambda (expr) (expand expr env))
+            exp))))
+
+;; Older *define-macro* code:
+;((macro:macro? exp *defined-macros*)
+;  ;(trace:info (list 'expanding exp))
+;  (expand ;; Could expand into another macro
+;    (macro:expand 'TODO-val exp env *defined-macros*)
+;    env))
+
      (else
        (map 
         (lambda (expr) (expand expr env))
