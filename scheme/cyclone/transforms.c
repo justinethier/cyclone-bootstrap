@@ -19969,7 +19969,7 @@ c_734836.elts = (object *)alloca(sizeof(object) * 2);
 c_734836.elts[0] = ((closureN)self_732696)->elts[0];
 c_734836.elts[1] = ((closureN)self_732696)->elts[2];
 
-return_closcall4(  __glo_macro_117expand2,  &c_734836, ((closureN)self_732696)->elts[1], ((closureN)self_732696)->elts[3], ((closureN)self_732696)->elts[0]);
+return_closcall4(  __glo_macro_117expand,  &c_734836, ((closureN)self_732696)->elts[1], ((closureN)self_732696)->elts[3], ((closureN)self_732696)->elts[0]);
 } else { 
   
 closureN_type c_734844;
