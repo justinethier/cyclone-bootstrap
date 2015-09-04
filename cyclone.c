@@ -6064,10 +6064,8 @@ static void c_entry_pt_first_lambda(int argc, closure cont, object value) {
     return_direct0(__lambda_278);
 }
 main(int argc,char **argv)
-{long stack_size = long_arg(argc,argv,"-s",STACK_SIZE);
- long heap_size = long_arg(argc,argv,"-h",HEAP_SIZE);
- global_stack_size = stack_size;
- global_heap_size = heap_size;
+{long stack_size = global_stack_size = STACK_SIZE;
+ long heap_size = global_heap_size = HEAP_SIZE;
  _cyc_argc = argc;
  _cyc_argv = argv;
  Cyc_main(stack_size,heap_size,(char *) &stack_size);
