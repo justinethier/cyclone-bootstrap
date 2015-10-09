@@ -868,9 +868,9 @@ string_type Cyc_symbol2string(object sym) {
 object Cyc_string2symbol(object str) {
     object sym;
     Cyc_check_str(str);
-    sym = find_symbol_by_name(symbol_pname(str));
+    sym = find_symbol_by_name(string_str(str));
     if (!sym) {
-        sym = add_symbol_by_name(symbol_pname(str));
+        sym = add_symbol_by_name(string_str(str));
     }
     return sym;
 }
@@ -2065,7 +2065,7 @@ char *transport(x, gcgen) char *x; int gcgen;
          dhallocp += len + 1;
        }
        forward(x) = nx; type_of(x) = forward_tag;
-       x = (char *) nx; allocp = ((char *) nx)+sizeof(integer_type);
+       x = (char *) nx; allocp = ((char *) nx)+sizeof(string_type);
        return (char *) nx;}
     case integer_tag:
       {register integer_type *nx = (integer_type *) allocp;
