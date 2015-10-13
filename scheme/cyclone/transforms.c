@@ -25489,8 +25489,8 @@ c_733446.elts[0] = k_731899;
 c_733446.elts[1] = sym2_73577;
 
 
-string_type c_733458 = Cyc_symbol2string(sym1_73578);
-return_closcall1((closure)&c_733446,  &c_733458);; 
+object c_733458 = Cyc_symbol2string((closure)&c_733446, sym1_73578);
+return_closcall1((closure)&c_733446,  c_733458);; 
 }
 
 static void __lambda_35(int argc, object self_733270, object r_731900) {
@@ -25506,8 +25506,8 @@ c_733448.elts[0] = ((closureN)self_733270)->elts[0];
 c_733448.elts[1] = r_731900;
 
 
-string_type c_733454 = Cyc_symbol2string(((closureN)self_733270)->elts[1]);
-return_closcall1((closure)&c_733448,  &c_733454);; 
+object c_733454 = Cyc_symbol2string((closure)&c_733448, ((closureN)self_733270)->elts[1]);
+return_closcall1((closure)&c_733448,  c_733454);; 
 }
 
 static void __lambda_34(int argc, object self_733271, object r_731901) {
@@ -25802,8 +25802,8 @@ static void __lambda_16(int argc, object self_733286, object r_731921) {
 
 make_int(c_733377, 0);
 
-string_type c_733375 = Cyc_substring(((closureN)self_733286)->elts[0], &c_733377, r_731921);
-return_closcall1(  ((closureN)self_733286)->elts[1],  &c_733375);; 
+object c_733375 = Cyc_substring(  ((closureN)self_733286)->elts[1], ((closureN)self_733286)->elts[0], &c_733377, r_731921);
+return_closcall1(  ((closureN)self_733286)->elts[1],  c_733375);; 
 }
 
 static void __lambda_15(int argc, closure _,object k_731927, object msg_73583) {

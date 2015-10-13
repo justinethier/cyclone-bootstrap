@@ -1146,8 +1146,8 @@ c_731632.elts[1] = ((closureN)self_73416)->elts[1];
 c_731632.elts[2] = ((closureN)self_73416)->elts[2];
 
 
-string_type c_731677 = Cyc_symbol2string(((closureN)self_73416)->elts[3]);
-return_closcall1((closure)&c_731632,  &c_731677);; 
+object c_731677 = Cyc_symbol2string((closure)&c_731632, ((closureN)self_73416)->elts[3]);
+return_closcall1((closure)&c_731632,  c_731677);; 
 }
 
 static void __lambda_224(int argc, object self_73417, object r_73145) {
@@ -1194,8 +1194,8 @@ c_731641.elts[0] = ((closureN)self_73419)->elts[0];
 c_731641.elts[1] = ((closureN)self_73419)->elts[1];
 
 
-string_type c_731674 = Cyc_list2string(r_73143);
-return_closcall1((closure)&c_731641,  &c_731674);; 
+object c_731674 = Cyc_list2string((closure)&c_731641, r_73143);
+return_closcall1((closure)&c_731641,  c_731674);; 
 }
 
 static void __lambda_221(int argc, object self_73420, object r_73142) {
@@ -3451,8 +3451,8 @@ c_731018.elts[0] = ((closureN)self_73543)->elts[0];
 c_731018.elts[1] = r_73302;
 
 
-string_type c_731032 = Cyc_number2string(__glo_gensym_91count);
-return_closcall1((closure)&c_731018,  &c_731032);; 
+object c_731032 = Cyc_number2string((closure)&c_731018, __glo_gensym_91count);
+return_closcall1((closure)&c_731018,  c_731032);; 
 }
 
 static void __lambda_82(int argc, object self_73544, object r_73303) {
@@ -3529,8 +3529,8 @@ return_closcall1((closure)&c_73997,  car(((closureN)self_73548)->elts[1]));
 static void __lambda_77(int argc, object self_73549, object r_73306) {
   Cyc_st_add("scheme/cyclone/util.sld:gensym");
 
-string_type c_731002 = Cyc_symbol2string(r_73306);
-return_closcall1(  ((closureN)self_73549)->elts[0],  &c_731002);; 
+object c_731002 = Cyc_symbol2string(  ((closureN)self_73549)->elts[0], r_73306);
+return_closcall1(  ((closureN)self_73549)->elts[0],  c_731002);; 
 }
 
 static void __lambda_76(int argc, object self_73550) {
@@ -3577,8 +3577,8 @@ c_73964.elts = (object *)alloca(sizeof(object) * 1);
 c_73964.elts[0] = ((closureN)self_73552)->elts[0];
 
 
-string_type c_73977 = Cyc_number2string(__glo_gensym_91count);
-return_closcall1((closure)&c_73964,  &c_73977);; 
+object c_73977 = Cyc_number2string((closure)&c_73964, __glo_gensym_91count);
+return_closcall1((closure)&c_73964,  c_73977);; 
 }
 
 static void __lambda_73(int argc, object self_73553, object r_73298) {
@@ -4530,8 +4530,8 @@ c_73687.elts = (object *)alloca(sizeof(object) * 1);
 c_73687.elts[0] = k_73360;
 
 
-string_type c_73692 = Cyc_number2string(n_73114);
-return_closcall1((closure)&c_73687,  &c_73692);; 
+object c_73692 = Cyc_number2string((closure)&c_73687, n_73114);
+return_closcall1((closure)&c_73687,  c_73692);; 
 }
 
 static void __lambda_14(int argc, object self_73607, object r_73361) {

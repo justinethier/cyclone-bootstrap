@@ -846,7 +846,7 @@ integer_type Cyc_length(object l){
     return len;
 }
 
-string_type Cyc_number2string(object n) {
+object Cyc_number2string(object cont, object n) {
     char buffer[1024];
     Cyc_check_num(n);
     if (type_of(n) == integer_tag) {
@@ -856,14 +856,15 @@ string_type Cyc_number2string(object n) {
     } else {
         Cyc_rt_raise2("number->string - Unexpected object", n);
     }
-    make_string(str, buffer);
-    return str;
+    make_string_noalloc(str, buffer, strlen(buffer));
+    return_closcall1(cont, &str);
 }
 
-string_type Cyc_symbol2string(object sym) {
+object Cyc_symbol2string(object cont, object sym) {
   Cyc_check_sym(sym);
-  { make_string(str, symbol_pname(sym));
-    return str; }}
+  { const char *pname = symbol_pname(sym);
+    make_string(str, pname);
+    return_closcall1(cont, &str); }}
 
 object Cyc_string2symbol(object str) {
     object sym;
@@ -875,7 +876,7 @@ object Cyc_string2symbol(object str) {
     return sym;
 }
 
-string_type Cyc_list2string(object lst){
+object Cyc_list2string(object cont, object lst){
     char *buf;
     int i = 0;
     integer_type len;
@@ -890,8 +891,8 @@ string_type Cyc_list2string(object lst){
     }
     buf[i] = '\0';
 
-    make_string(str, buf);
-    return str;
+    { make_string_noalloc(str, buf, i);
+      return_closcall1(cont, &str);}
 }
 
 common_type Cyc_string2number(object str){
@@ -1028,7 +1029,7 @@ object Cyc_string_ref(object str, object k) {
   return obj_char2obj(raw[idx]);
 }
 
-string_type Cyc_substring(object str, object start, object end) {
+object Cyc_substring(object cont, object str, object start, object end) {
   const char *raw;
   int s, e, len;
 
@@ -1052,8 +1053,8 @@ string_type Cyc_substring(object str, object start, object end) {
   }
 
   {
-    make_stringn(sub, raw + s, e - s);
-    return sub;
+    make_string_with_len(sub, raw + s, e - s);
+    return_closcall1(cont, &sub);
   }
 }
 
@@ -1061,28 +1062,28 @@ string_type Cyc_substring(object str, object start, object end) {
  * Return directory where cyclone is installed.
  * This is configured via the makefile during a build.
  */
-string_type Cyc_installation_dir(object type) {
+object Cyc_installation_dir(object cont, object type) {
   if (Cyc_is_symbol(type) == boolean_t &&
       strncmp(((symbol)type)->pname, "sld", 5) == 0) {
     char buf[1024];
     snprintf(buf, sizeof(buf), "%s", CYC_INSTALL_SLD);
     make_string(str, buf);
-    return str;
+    return_closcall1(cont, &str);
   } else if (Cyc_is_symbol(type) == boolean_t &&
       strncmp(((symbol)type)->pname, "lib", 5) == 0) {
     char buf[1024];
     snprintf(buf, sizeof(buf), "%s", CYC_INSTALL_LIB);
     make_string(str, buf);
-    return str;
+    return_closcall1(cont, &str);
   } else if (Cyc_is_symbol(type) == boolean_t &&
       strncmp(((symbol)type)->pname, "inc", 5) == 0) {
     char buf[1024];
     snprintf(buf, sizeof(buf), "%s", CYC_INSTALL_INC);
     make_string(str, buf);
-    return str;
+    return_closcall1(cont, &str);
   } else {
     make_string(str, CYC_INSTALL_DIR);
-    return str;
+    return_closcall1(cont, &str);
   }
 }
 
@@ -1715,8 +1716,7 @@ void _string_91length(object cont, object args) {
       return_closcall1(cont, &i);}}
 void _cyc_substring(object cont, object args) {
     Cyc_check_num_args("substring", 3, args);
-    { string_type s = Cyc_substring(car(args), cadr(args), caddr(args));
-      return_closcall1(cont, &s);}}
+    Cyc_substring(cont, car(args), cadr(args), caddr(args));}
 void _cyc_string_91set_67(object cont, object args) {
     Cyc_check_num_args("string-set!", 3, args);
     { object s = Cyc_string_set(car(args), cadr(args), caddr(args));
@@ -1727,8 +1727,7 @@ void _cyc_string_91ref(object cont, object args) {
       return_closcall1(cont, c); }}
 void _Cyc_91installation_91dir(object cont, object args) {
     Cyc_check_num_args("Cyc-installation-dir", 1, args);
-    { string_type dir = Cyc_installation_dir(car(args));
-      return_closcall1(cont, &dir);}}
+    Cyc_installation_dir(cont, car(args));}
 void _command_91line_91arguments(object cont, object args) {
     object cmdline = Cyc_command_line_arguments(cont);
     return_closcall1(cont, cmdline); }
@@ -1773,19 +1772,16 @@ void _list_91_125vector(object cont, object args) {
     Cyc_list2vector(cont, car(args));}
 void _list_91_125string(object cont, object args) {  
     Cyc_check_num_args("list->string", 1, args);
-    { string_type s = Cyc_list2string(car(args));
-      return_closcall1(cont, &s);}}
+    Cyc_list2string(cont, car(args));}
 void _string_91_125symbol(object cont, object args) {  
     Cyc_check_num_args("string->symbol", 1, args);
     return_closcall1(cont, Cyc_string2symbol(car(args)));}
 void _symbol_91_125string(object cont, object args) {  
     Cyc_check_num_args("symbol->string", 1, args);
-    { string_type s = Cyc_symbol2string(car(args));
-      return_closcall1(cont, &s);}}
+    Cyc_symbol2string(cont, car(args));}
 void _number_91_125string(object cont, object args) {  
     Cyc_check_num_args("number->string", 1, args);
-    { string_type s = Cyc_number2string(car(args));
-      return_closcall1(cont, &s);}}
+    Cyc_number2string(cont, car(args));}
 void _open_91input_91file(object cont, object args) {  
     Cyc_check_num_args("open-input-file", 1, args);
     { port_type p = Cyc_io_open_input_file(car(args));

@@ -2968,8 +2968,8 @@ return_closcall1((closure)&c_736842,  c_736850);;
 static void __lambda_942(int argc, object self_731716, object r_73672) {
   Cyc_st_add("scheme/base.sld:make-string");
 
-string_type c_736847 = Cyc_list2string(r_73672);
-return_closcall1(  ((closureN)self_731716)->elts[0],  &c_736847);; 
+object c_736847 = Cyc_list2string(  ((closureN)self_731716)->elts[0], r_73672);
+return_closcall1(  ((closureN)self_731716)->elts[0],  c_736847);; 
 }
 
 static void __lambda_941(int argc, object self_731717, object k_73674) {
@@ -3002,8 +3002,8 @@ static void __lambda_939(int argc, closure _,object k_73678, object chars_73293_
 load_varargs(chars_73293, chars_73293_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:string");
 
-string_type c_736821 = Cyc_list2string(chars_73293);
-return_closcall1(  k_73678,  &c_736821);; 
+object c_736821 = Cyc_list2string(  k_73678, chars_73293);
+return_closcall1(  k_73678,  c_736821);; 
 }
 
 static void __lambda_938(int argc, closure _,object k_73681, object type_127_73296, object obj_73295, object objs_73294) {
@@ -4942,8 +4942,8 @@ return_closcall3(  __glo_map,  &c_736258, ((closureN)self_731818)->elts[0], r_73
 static void __lambda_827(int argc, object self_731819, object r_73787) {
   Cyc_st_add("scheme/base.sld:string-map");
 
-string_type c_736263 = Cyc_list2string(r_73787);
-return_closcall1(  ((closureN)self_731819)->elts[0],  &c_736263);; 
+object c_736263 = Cyc_list2string(  ((closureN)self_731819)->elts[0], r_73787);
+return_closcall1(  ((closureN)self_731819)->elts[0],  c_736263);; 
 }
 
 static void __lambda_826(int argc, closure _,object k_73791, object str_73342, object fill_73341, object opts_73340_raw, ...) {
@@ -6240,8 +6240,8 @@ return_closcall1((closure)&c_735915,  Cyc_set_car(((closureN)self_731883)->elts[
 static void __lambda_759(int argc, object self_731884, object r_73838) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
-string_type c_735920 = Cyc_substring(((closureN)self_731884)->elts[3], cell_get(((closureN)self_731884)->elts[2]), cell_get(((closureN)self_731884)->elts[0]));
-return_closcall1(  ((closureN)self_731884)->elts[1],  &c_735920);; 
+object c_735920 = Cyc_substring(  ((closureN)self_731884)->elts[1], ((closureN)self_731884)->elts[3], cell_get(((closureN)self_731884)->elts[2]), cell_get(((closureN)self_731884)->elts[0]));
+return_closcall1(  ((closureN)self_731884)->elts[1],  c_735920);; 
 }
 
 static void __lambda_758(int argc, object self_731885, object k_73840) {
@@ -6902,8 +6902,8 @@ return_closcall1((closure)&c_735683,  r_73878);;
 static void __lambda_720(int argc, object self_731920, object lst_73375) {
   Cyc_st_add("scheme/base.sld:vector->string");
 
-string_type c_735688 = Cyc_list2string(lst_73375);
-return_closcall1(  ((closureN)self_731920)->elts[0],  &c_735688);; 
+object c_735688 = Cyc_list2string(  ((closureN)self_731920)->elts[0], lst_73375);
+return_closcall1(  ((closureN)self_731920)->elts[0],  c_735688);; 
 }
 
 static void __lambda_719(int argc, closure _,object k_73882, object vec_73377, object opts_73376_raw, ...) {

@@ -2384,8 +2384,8 @@ c_73726.elts = (object *)alloca(sizeof(object) * 1);
 c_73726.elts[0] = k_73206;
 
 
-string_type c_73735 = Cyc_symbol2string(i_7371);
-return_closcall1((closure)&c_73726,  &c_73735);; 
+object c_73735 = Cyc_symbol2string((closure)&c_73726, i_7371);
+return_closcall1((closure)&c_73726,  c_73735);; 
 }
 
 static void __lambda_67(int argc, object self_73396, object r_73207) {
@@ -2523,8 +2523,8 @@ c_73705.elts[0] = ((closureN)self_73404)->elts[0];
 c_73705.elts[1] = ((closureN)self_73404)->elts[1];
 
 
-string_type c_73715 = Cyc_installation_dir(r_73202);
-return_closcall1((closure)&c_73705,  &c_73715);; 
+object c_73715 = Cyc_installation_dir((closure)&c_73705, r_73202);
+return_closcall1((closure)&c_73705,  c_73715);; 
 }
 
 static void __lambda_58(int argc, object self_73405, object r_73201) {
@@ -2606,8 +2606,8 @@ c_73669.elts = (object *)alloca(sizeof(object) * 1);
 c_73669.elts[0] = k_73224;
 
 
-string_type c_73678 = Cyc_symbol2string(i_7376);
-return_closcall1((closure)&c_73669,  &c_73678);; 
+object c_73678 = Cyc_symbol2string((closure)&c_73669, i_7376);
+return_closcall1((closure)&c_73669,  c_73678);; 
 }
 
 static void __lambda_53(int argc, object self_73409, object r_73225) {
@@ -2718,8 +2718,8 @@ c_73624.elts[1] = ((closureN)self_73415)->elts[2];
 
 make_int(c_73655, 1);
 
-string_type c_73653 = Cyc_substring(((closureN)self_73415)->elts[0], &c_73655, r_73220);
-return_closcall1((closure)&c_73624,  &c_73653);; 
+object c_73653 = Cyc_substring((closure)&c_73624, ((closureN)self_73415)->elts[0], &c_73655, r_73220);
+return_closcall1((closure)&c_73624,  c_73653);; 
 }
 
 static void __lambda_46(int argc, object self_73416, object r_73215) {
@@ -2816,8 +2816,8 @@ c_73636.elts[0] = ((closureN)self_73421)->elts[0];
 c_73636.elts[1] = ((closureN)self_73421)->elts[1];
 
 
-string_type c_73646 = Cyc_installation_dir(r_73218);
-return_closcall1((closure)&c_73636,  &c_73646);; 
+object c_73646 = Cyc_installation_dir((closure)&c_73636, r_73218);
+return_closcall1((closure)&c_73636,  c_73646);; 
 }
 
 static void __lambda_40(int argc, object self_73422, object r_73217) {
