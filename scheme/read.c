@@ -1657,8 +1657,8 @@ make_string(c_732856, "invalid escape character [");
 
 make_string(c_732857, "] in string");
 
-string_type c_732855 = Cyc_string_append(3,&c_732856, r_73224, &c_732857);
-return_closcall1((closure)&c_732842,  &c_732855);; 
+object c_732855 = Cyc_string_append((closure)&c_732842, 3,&c_732856, r_73224, &c_732857);
+return_closcall1((closure)&c_732842,  c_732855);; 
 }
 
 static void __lambda_395(int argc, object self_73610, object r_73221) {
@@ -2793,8 +2793,8 @@ c_732599.elts[1] = ((closureN)self_73663)->elts[1];
 
 make_string(c_732613, "unable to parse character: ");
 
-string_type c_732612 = Cyc_string_append(2,&c_732613, r_73276);
-return_closcall1((closure)&c_732599,  &c_732612);; 
+object c_732612 = Cyc_string_append((closure)&c_732599, 2,&c_732613, r_73276);
+return_closcall1((closure)&c_732599,  c_732612);; 
 }
 
 static void __lambda_339(int argc, object self_73664, object r_73273) {
@@ -8268,8 +8268,8 @@ make_string(c_731214, ", char ");
 
 make_string(c_731215, "): ");
 
-string_type c_731211 = Cyc_string_append(6,&c_731212, ((closureN)self_73952)->elts[2], &c_731214, r_73489, &c_731215, ((closureN)self_73952)->elts[1]);
-return_closcall1((closure)&c_731206,  &c_731211);; 
+object c_731211 = Cyc_string_append((closure)&c_731206, 6,&c_731212, ((closureN)self_73952)->elts[2], &c_731214, r_73489, &c_731215, ((closureN)self_73952)->elts[1]);
+return_closcall1((closure)&c_731206,  c_731211);; 
 }
 
 static void __lambda_47(int argc, object self_73953, object r_73487) {

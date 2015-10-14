@@ -687,8 +687,8 @@ static void __lambda_253(int argc, object self_73389, object r_73134) {
 
 make_string(c_731788, "__glo_");
 
-string_type c_731787 = Cyc_string_append(2,&c_731788, r_73134);
-return_closcall1(  ((closureN)self_73389)->elts[0],  &c_731787);; 
+object c_731787 = Cyc_string_append(  ((closureN)self_73389)->elts[0], 2,&c_731788, r_73134);
+return_closcall1(  ((closureN)self_73389)->elts[0],  c_731787);; 
 }
 
 static void __lambda_252(int argc, closure _,object k_73137, object symbol_7327) {
@@ -1249,8 +1249,8 @@ if( !eq(boolean_f, r_73140) ){
   
 make_string(c_731653, "_");
 
-string_type c_731652 = Cyc_string_append(2,&c_731653, cell_get(((closureN)self_73423)->elts[0]));
-return_closcall1(  ((closureN)self_73423)->elts[1],  &c_731652);
+object c_731652 = Cyc_string_append(  ((closureN)self_73423)->elts[1], 2,&c_731653, cell_get(((closureN)self_73423)->elts[0]));
+return_closcall1(  ((closureN)self_73423)->elts[1],  c_731652);
 } else { 
   return_closcall1(  ((closureN)self_73423)->elts[1],  cell_get(((closureN)self_73423)->elts[0]));}
 ; 
@@ -3469,8 +3469,8 @@ c_731020.elts[0] = ((closureN)self_73544)->elts[0];
 
 make_string(c_731029, "$");
 
-string_type c_731027 = Cyc_string_append(3,((closureN)self_73544)->elts[1], &c_731029, r_73303);
-return_closcall1((closure)&c_731020,  &c_731027);; 
+object c_731027 = Cyc_string_append((closure)&c_731020, 3,((closureN)self_73544)->elts[1], &c_731029, r_73303);
+return_closcall1((closure)&c_731020,  c_731027);; 
 }
 
 static void __lambda_81(int argc, object self_73545, object r_73301) {
@@ -3595,8 +3595,8 @@ c_73966.elts[0] = ((closureN)self_73553)->elts[0];
 
 make_string(c_73974, "$");
 
-string_type c_73973 = Cyc_string_append(2,&c_73974, r_73298);
-return_closcall1((closure)&c_73966,  &c_73973);; 
+object c_73973 = Cyc_string_append((closure)&c_73966, 2,&c_73974, r_73298);
+return_closcall1((closure)&c_73966,  c_73973);; 
 }
 
 static void __lambda_72(int argc, object self_73554, object r_73297) {
