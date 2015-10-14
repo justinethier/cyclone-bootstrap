@@ -949,6 +949,9 @@ integer_type Cyc_string_cmp(object str1, object str2) {
       str[i] = ((string_type *)tmp)->str; \
       len[i] = strlen(str[i]); \
       total_len += len[i]; \
+printf("DEBUG append arg: "); \
+Cyc_display(str[i], stdout); \
+printf("\n"); \
     } \
     buffer = bufferp = alloca(sizeof(char) * total_len); \
     for (i = 0; i < argc; i++) { \
@@ -957,6 +960,9 @@ integer_type Cyc_string_cmp(object str1, object str2) {
     } \
     *bufferp = '\0'; \
     make_string(result, buffer); \
+printf("DEBUG append: "); \
+Cyc_display(&result, stdout); \
+printf("\n"); \
     va_end(ap); \
     return_closcall1(cont, &result); \
 }
