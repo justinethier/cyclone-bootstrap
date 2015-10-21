@@ -18,10 +18,11 @@ COBJECTS=$(CFILES:.c=.o)
 
 all: cyclone icyc unit-tests
 
-libcyclone.a: runtime.c include/cyclone/runtime.h dispatch.c
+libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(CC) -g -c -Iinclude dispatch.c -o dispatch.o
-	$(CC) -g -c -Iinclude -DCYC_INSTALL_DIR=\"$(PREFIX)\" -DCYC_INSTALL_LIB=\"$(LIBDIR)\" -DCYC_INSTALL_INC=\"$(INCDIR)\" -DCYC_INSTALL_SLD=\"$(DATADIR)\" runtime.c -o runtime.o
-	$(AR) rcs libcyclone.a runtime.o dispatch.o
+	$(CC) -g -c -Iinclude gc.c -o gc.o
+	$(CC) -g -c -Iinclude -DCYC_INSTALL_DIR=\"$(PREFIX)\" -DCYC_INSTALL_LIB=\"$(LIBDIR)\" -DCYC_INSTALL_INC=\"$(INCDIR)\" -DCYC_INSTALL_SLD=\"$(DATADIR)\" runtime.c -o gc.o runtime.o
+	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
 
 cyclone: $(COBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
