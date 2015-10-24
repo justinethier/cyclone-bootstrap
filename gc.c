@@ -17,14 +17,14 @@ gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size)
   gc_free_list *free, *next;
   gc_heap *h;
   // TODO: mmap?
-  h = malloc(size);
+  h = malloc(gc_heap_pad_size(size));
   if (!h) return NULL;
   h->size = size;
   h->chunk_size = chunk_size;
   h->max_size = max_size;
-printf("DEBUG h->data addr: %p\n", &(h->data));
+//printf("DEBUG h->data addr: %p\n", &(h->data));
   h->data = (char *) gc_heap_align(sizeof(h->data) + (uint)&(h->data)); 
-printf("DEBUG h->data addr: %p\n", h->data);
+//printf("DEBUG h->data addr: %p\n", h->data);
   h->next = NULL;
   free = h->free_list = (gc_free_list *)h->data;
   next = (gc_free_list *)(((char *) free) + gc_heap_align(gc_free_chunk_size));
@@ -32,6 +32,14 @@ printf("DEBUG h->data addr: %p\n", h->data);
   free->next = next;
   next->size = size - gc_heap_align(gc_free_chunk_size);
   next->next = NULL;
+#if GC_DEBUG_PRINTFS
+  fprintf(stderr, ("heap: %p-%p data: %p-%p size: %d\n"),
+          h, ((char*)h)+gc_heap_pad_size(size), h->data, h->data + size, size);
+  fprintf(stderr, ("first: %p end: %p\n"),
+          (object)gc_heap_first_block(h), (object)gc_heap_end(h));
+  fprintf(stderr, ("free1: %p-%p free2: %p-%p\n"),
+          free, ((char*)free)+free->size, next, ((char*)next)+next->size);
+#endif
   return h;
 }
 
@@ -40,9 +48,10 @@ int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size)
   size_t cur_size, new_size;
   gc_heap *h_last = gc_heap_last(h);
   cur_size = h_last->size;
-  new_size = gc_heap_align(((cur_size > size) ? cur_size : size) * 2);
-  h->next = gc_heap_create(new_size, h->max_size, chunk_size);
-  return (h->next != NULL);
+  // JAE - For now, just add a new page
+  new_size = cur_size; //gc_heap_align(((cur_size > size) ? cur_size : size) * 2);
+  h_last->next = gc_heap_create(new_size, h_last->max_size, chunk_size);
+  return (h_last->next != NULL);
 }
 
 void *gc_try_alloc(gc_heap *h, size_t size) 
@@ -52,7 +61,7 @@ void *gc_try_alloc(gc_heap *h, size_t size)
     // TODO: chunk size (ignoring for now)
 
     for (f1 = h->free_list, f2 = f1->next; f2; f1 = f2, f2 = f2->next) { // all free in this heap
-      if (f2->size > size) { // Big enough for request
+      if (f2->size >= size) { // Big enough for request
         // TODO: take whole chunk or divide up f2 (using f3)?
         if (f2->size >= (size + gc_heap_align(1) /* min obj size */)) {
           f3 = (gc_free_list *) (((char *)f2) + size);
@@ -63,7 +72,7 @@ void *gc_try_alloc(gc_heap *h, size_t size)
           f1->next = f2->next;
         }
         // zero-out the header
-        memset((object)f2, 0, sizeof(gc_header_type));
+        //memset((object)f2, 0, sizeof(gc_header_type));
         return f2;
       }
     }
@@ -74,29 +83,27 @@ void *gc_try_alloc(gc_heap *h, size_t size)
 void *gc_alloc(gc_heap *h, size_t size, int *heap_grown) 
 {
   void *result = NULL;
-  size_t max_freed, sum_freed, total_size;
+  size_t max_freed = 0, sum_freed = 0, total_size;
   // TODO: check return value, if null (could not alloc) then 
   // run a collection and check how much free space there is. if less
   // the allowed ratio, try growing heap.
   // then try realloc. if cannot alloc now, then throw out of memory error
   size = gc_heap_align(size);
-  //return gc_try_alloc(h, size);
   result = gc_try_alloc(h, size);
   if (!result) {
     // TODO: may want to consider not doing this now, and implementing gc_collect as
     // part of the runtime, since we would have all of the roots, stack args, 
     // etc available there.
 //    max_freed = gc_collect(h); TODO: this does not work yet!
-max_freed = 0;
-
-    total_size = gc_heap_total_size(h);
-    if (((max_freed < size) ||
-         ((total_size > sum_freed) &&
-          (total_size - sum_freed) > (total_size * 0.75))) // Grow ratio
-        && ((!h->max_size) || (total_size < h->max_size))) {
+//
+//    total_size = gc_heap_total_size(h);
+//    if (((max_freed < size) ||
+//         ((total_size > sum_freed) &&
+//          (total_size - sum_freed) > (total_size * 0.75))) // Grow ratio
+//        && ((!h->max_size) || (total_size < h->max_size))) {
       gc_grow_heap(h, size, 0);
       *heap_grown = 1;
-    }
+//    }
     result = gc_try_alloc(h, size);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %d bytes\n", size);
@@ -104,7 +111,7 @@ max_freed = 0;
     }
   }
 #if GC_DEBUG_PRINTFS
-  fprintf(stdout, "alloc %p\n", result);
+  fprintf(stdout, "alloc %p size = %d\n", result, size);
 #endif
   return result;
 }
@@ -136,9 +143,10 @@ size_t gc_allocated_bytes(object obj)
   if (t == port_tag) return gc_heap_align(sizeof(port_type));
   if (t == cvar_tag) return gc_heap_align(sizeof(cvar_type));
   
-#if GC_DEBUG_PRINTFS
+//#if GC_DEBUG_PRINTFS
   fprintf(stderr, "gc_allocated_bytes: unexpected object %p of type %ld\n", obj, t);
-#endif
+  exit(1);
+//#endif
   return 0;
 }
 
@@ -161,11 +169,11 @@ size_t gc_heap_total_size(gc_heap *h)
 
 void gc_mark(gc_heap *h, object obj)
 {
-  if (!obj || is_marked(obj))
+  if (nullp(obj) || is_value_type(obj) || mark(obj))
     return;
 
 #if GC_DEBUG_PRINTFS
-  fprintf(stdout, "gc_mark %p\n", obj);
+//  fprintf(stdout, "gc_mark %p\n", obj);
 #endif
   ((list)obj)->hdr.mark = 1;
  // TODO: mark heap saves (??) 
@@ -208,6 +216,7 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
   object p, end;
   gc_free_list *q, *r, *s;
   for (; h; h = h->next) { // All heaps
+fprintf(stdout, "sweep heap %p, size = %d\n", h, h->size);
     p = gc_heap_first_block(h);
     q = h->free_list;
     end = gc_heap_end(h);
@@ -217,11 +226,15 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
 
       if ((char *)r == (char *)p) { // this is a free block, skip it
         p = (object) (((char *)p) + r->size);
+#if GC_DEBUG_PRINTFS
+        fprintf(stdout, "skip free block %p size = %d\n", p, r->size);
+#endif
         continue;
       }
       size = gc_heap_align(gc_allocated_bytes(p));
+//fprintf(stdout, "check object %p, size = %d\n", p, size);
       
-#if GC_DEBUG_PRINTFS
+//#if GC_DEBUG_PRINTFS
       // DEBUG
       if (!is_object_type(p))
         fprintf(stderr, "sweep: invalid object at %p", p);
@@ -230,9 +243,9 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
       if (r && ((char *)p) + size > (char *)r)
         fprintf(stderr, "sweep: bad size at %p + %d > %p", p, size, r);
       // END DEBUG
-#endif
+//#endif
 
-      if (!is_marked(p)) {
+      if (!mark(p)) {
 #if GC_DEBUG_PRINTFS
         fprintf(stdout, "sweep: object is not marked %p\n", p);
 #endif
@@ -270,8 +283,13 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
           max_freed = freed;
       } else {
 #if GC_DEBUG_PRINTFS
-        fprintf(stdout, "sweep: object is marked %p\n", p);
+//        fprintf(stdout, "sweep: object is marked %p\n", p);
 #endif
+        //if (mark(p) != 1) {
+        //  printf("unexpected mark value %d\n", mark(p));
+        //  exit(1);
+        //}
+
         ((list)p)->hdr.mark = 0;
         p = (object)(((char *)p) + size);
       }
@@ -293,6 +311,7 @@ void gc_thr_grow_move_buffer(gc_thread_data *d)
   }
 
   d->moveBuf = realloc(d->moveBuf, d->moveBufLen * sizeof(void *));
+  printf("grew moveBuffer, len = %d\n", d->moveBufLen);
 }
 
 void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj)

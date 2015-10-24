@@ -20,6 +20,13 @@
 /* Define general object type. */
 typedef void *object;
 
+/* Thread data structures */
+typedef struct gc_thread_data_t gc_thread_data;
+struct gc_thread_data_t {
+  void **moveBuf; /* list of objects moved to heap during GC */
+  int moveBufLen;
+};
+
 /* GC data structures */
 
 typedef struct gc_free_list_t gc_free_list;
@@ -44,13 +51,14 @@ struct gc_header_type_t {
   unsigned int mark; // mark bits (only need 2)
   // TODO: forwarding address (probably not needed for mark/sweep), anything else???
 };
-#define is_marked(x) (is_object_type(x) && ((list)x)->hdr.mark)
+#define mark(x) (((list) x)->hdr.mark)
 
 /* HEAP definitions */
 // experimenting with a heap based off of the one in Chibi scheme
 #define gc_heap_first_block(h) ((object)(h->data + gc_heap_align(gc_free_chunk_size)))
 #define gc_heap_last_block(h) ((object)((char*)h->data + h->size - gc_heap_align(gc_free_chunk_size)))
 #define gc_heap_end(h) ((object)((char*)h->data + h->size))
+#define gc_heap_pad_size(s) (sizeof(struct gc_heap_t) + (s) + gc_heap_align(1))
 #define gc_free_chunk_size (sizeof(gc_free_list))
 
 #define gc_align(n, bits) (((n)+(1<<(bits))-1)&(((unsigned int)-1)-((1<<(bits))-1)))
@@ -62,13 +70,15 @@ struct gc_header_type_t {
 gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size);
 int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size);
 void *gc_try_alloc(gc_heap *h, size_t size);
-void *gc_alloc(gc_heap *h, size_t size);
+void *gc_alloc(gc_heap *h, size_t size, int *heap_grown);
 size_t gc_allocated_bytes(object obj);
 gc_heap *gc_heap_last(gc_heap *h);
 size_t gc_heap_total_size(gc_heap *h);
 void gc_mark(gc_heap *h, object obj);
 size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr);
-//void gc_collect(gc_heap *h, size_t *sum_freed) 
+size_t gc_collect(gc_heap *h, size_t *sum_freed);
+void gc_thr_grow_move_buffer(gc_thread_data *d);
+void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj);
 
 /* GC debugging flags */
 //#define DEBUG_GC 0
@@ -84,7 +94,7 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr);
 #define STACK_GROWS_DOWNWARD 1
 
 /* Size of the stack buffer, in bytes.           */
-#define STACK_SIZE 100000
+#define STACK_SIZE 250000
 
 /* Size of the 2nd generation, in bytes. */
 #define HEAP_SIZE 6000000

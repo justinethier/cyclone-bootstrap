@@ -56,6 +56,15 @@ static void Cyc_main (stack_size,heap_size,stack_base)
 #if DEBUG_SHOW_DIAG
   printf("main: Allocating and initializing heap...\n");
 #endif
+
+  Cyc_heap = gc_heap_create(heap_size / 2, 0, 0);
+  //Cyc_heap = gc_heap_create(1024, 0, 0);
+  Cyc_thread = (gc_thread_data *)malloc(sizeof(gc_thread_data));
+  Cyc_thread->moveBufLen = 0;
+  gc_thr_grow_move_buffer(Cyc_thread); // Initialize the buffer
+  
+
+  // JAE TODO: clean up below (and all of this old code, really)
   bottom = calloc(1,heap_size);
   allocp = (char *) ((((long) bottom)+7) & -8);
   alloc_end = allocp + heap_size - 8;
