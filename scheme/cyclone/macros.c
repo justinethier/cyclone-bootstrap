@@ -293,7 +293,8 @@ static void __lambda_45(int argc, closure _,object k_7323) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
 closureN_type c_73273;
-c_73273.tag = closureN_tag;
+c_73273.hdr.mark = 4;
+ c_73273.tag = closureN_tag;
  c_73273.fn = (function_type)__lambda_44;
 c_73273.num_args = 1;
 c_73273.num_elt = 1;
@@ -309,7 +310,8 @@ static void __lambda_44(int argc, object self_7381, object r_7324) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
 closureN_type c_73275;
-c_73275.tag = closureN_tag;
+c_73275.hdr.mark = 4;
+ c_73275.tag = closureN_tag;
  c_73275.fn = (function_type)__lambda_43;
 c_73275.num_args = 1;
 c_73275.num_elt = 1;
@@ -323,7 +325,8 @@ static void __lambda_43(int argc, object self_7382, object r_7327) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
 closureN_type c_73277;
-c_73277.tag = closureN_tag;
+c_73277.hdr.mark = 4;
+ c_73277.tag = closureN_tag;
  c_73277.fn = (function_type)__lambda_42;
 c_73277.num_args = 1;
 c_73277.num_elt = 1;
@@ -337,7 +340,8 @@ static void __lambda_42(int argc, object self_7383, object r_7325) {
   Cyc_st_add("scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 
 closureN_type c_73279;
-c_73279.tag = closureN_tag;
+c_73279.hdr.mark = 4;
+ c_73279.tag = closureN_tag;
  c_73279.fn = (function_type)__lambda_41;
 c_73279.num_args = 1;
 c_73279.num_elt = 1;
@@ -356,7 +360,8 @@ static void __lambda_40(int argc, closure _,object k_7330, object exp_7310, obje
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73185;
-c_73185.tag = closureN_tag;
+c_73185.hdr.mark = 4;
+ c_73185.tag = closureN_tag;
  c_73185.fn = (function_type)__lambda_39;
 c_73185.num_args = 1;
 c_73185.num_elt = 4;
@@ -373,7 +378,8 @@ static void __lambda_39(int argc, object self_7385, object r_7346) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73187;
-c_73187.tag = closureN_tag;
+c_73187.hdr.mark = 4;
+ c_73187.tag = closureN_tag;
  c_73187.fn = (function_type)__lambda_38;
 c_73187.num_args = 1;
 c_73187.num_elt = 4;
@@ -390,7 +396,8 @@ static void __lambda_38(int argc, object self_7386, object r_7345) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73189;
-c_73189.tag = closureN_tag;
+c_73189.hdr.mark = 4;
+ c_73189.tag = closureN_tag;
  c_73189.fn = (function_type)__lambda_37;
 c_73189.num_args = 1;
 c_73189.num_elt = 4;
@@ -407,7 +414,8 @@ static void __lambda_37(int argc, object self_7387, object r_7342) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73191;
-c_73191.tag = closureN_tag;
+c_73191.hdr.mark = 4;
+ c_73191.tag = closureN_tag;
  c_73191.fn = (function_type)__lambda_36;
 c_73191.num_args = 1;
 c_73191.num_elt = 4;
@@ -424,7 +432,8 @@ static void __lambda_36(int argc, object self_7388, object tmp_7311) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73193;
-c_73193.tag = closureN_tag;
+c_73193.hdr.mark = 4;
+ c_73193.tag = closureN_tag;
  c_73193.fn = (function_type)__lambda_19;
 c_73193.num_args = 0;
 c_73193.num_elt = 2;
@@ -434,7 +443,8 @@ c_73193.elts[1] = tmp_7311;
 
 
 closureN_type c_73206;
-c_73206.tag = closureN_tag;
+c_73206.hdr.mark = 4;
+ c_73206.tag = closureN_tag;
  c_73206.fn = (function_type)__lambda_35;
 c_73206.num_args = 1;
 c_73206.num_elt = 4;
@@ -451,7 +461,8 @@ static void __lambda_35(int argc, object self_7389, object r_7331) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73208;
-c_73208.tag = closureN_tag;
+c_73208.hdr.mark = 4;
+ c_73208.tag = closureN_tag;
  c_73208.fn = (function_type)__lambda_34;
 c_73208.num_args = 1;
 c_73208.num_elt = 4;
@@ -468,7 +479,8 @@ static void __lambda_34(int argc, object self_7390, object compiled_91macro_127_
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73210;
-c_73210.tag = closureN_tag;
+c_73210.hdr.mark = 4;
+ c_73210.tag = closureN_tag;
  c_73210.fn = (function_type)__lambda_33;
 c_73210.num_args = 0;
 c_73210.num_elt = 5;
@@ -486,7 +498,8 @@ static void __lambda_33(int argc, object self_7391) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73212;
-c_73212.tag = closureN_tag;
+c_73212.hdr.mark = 4;
+ c_73212.tag = closureN_tag;
  c_73212.fn = (function_type)__lambda_32;
 c_73212.num_args = 1;
 c_73212.num_elt = 5;
@@ -505,7 +518,8 @@ static void __lambda_32(int argc, object self_7392, object r_7332) {
 if( !eq(boolean_f, r_7332) ){ 
   
 closureN_type c_73214;
-c_73214.tag = closureN_tag;
+c_73214.hdr.mark = 4;
+ c_73214.tag = closureN_tag;
  c_73214.fn = (function_type)__lambda_20;
 c_73214.num_args = 0;
 c_73214.num_elt = 2;
@@ -518,7 +532,8 @@ return_closcall0((closure)&c_73214);
   if( !eq(boolean_f, ((closureN)self_7392)->elts[0]) ){ 
   
 closureN_type c_73221;
-c_73221.tag = closureN_tag;
+c_73221.hdr.mark = 4;
+ c_73221.tag = closureN_tag;
  c_73221.fn = (function_type)__lambda_24;
 c_73221.num_args = 0;
 c_73221.num_elt = 4;
@@ -532,7 +547,8 @@ return_closcall0((closure)&c_73221);
 } else { 
   
 closureN_type c_73239;
-c_73239.tag = closureN_tag;
+c_73239.hdr.mark = 4;
+ c_73239.tag = closureN_tag;
  c_73239.fn = (function_type)__lambda_31;
 c_73239.num_args = 0;
 c_73239.num_elt = 4;
@@ -551,7 +567,8 @@ static void __lambda_31(int argc, object self_7393) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73241;
-c_73241.tag = closureN_tag;
+c_73241.hdr.mark = 4;
+ c_73241.tag = closureN_tag;
  c_73241.fn = (function_type)__lambda_30;
 c_73241.num_args = 1;
 c_73241.num_elt = 3;
@@ -567,7 +584,8 @@ static void __lambda_30(int argc, object self_7394, object r_7341) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73243;
-c_73243.tag = closureN_tag;
+c_73243.hdr.mark = 4;
+ c_73243.tag = closureN_tag;
  c_73243.fn = (function_type)__lambda_29;
 c_73243.num_args = 1;
 c_73243.num_elt = 3;
@@ -583,7 +601,8 @@ static void __lambda_29(int argc, object self_7395, object r_7337) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73245;
-c_73245.tag = closureN_tag;
+c_73245.hdr.mark = 4;
+ c_73245.tag = closureN_tag;
  c_73245.fn = (function_type)__lambda_28;
 c_73245.num_args = 1;
 c_73245.num_elt = 4;
@@ -600,7 +619,8 @@ static void __lambda_28(int argc, object self_7396, object r_7340) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73247;
-c_73247.tag = closureN_tag;
+c_73247.hdr.mark = 4;
+ c_73247.tag = closureN_tag;
  c_73247.fn = (function_type)__lambda_27;
 c_73247.num_args = 1;
 c_73247.num_elt = 3;
@@ -616,7 +636,8 @@ static void __lambda_27(int argc, object self_7397, object r_7338) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73249;
-c_73249.tag = closureN_tag;
+c_73249.hdr.mark = 4;
+ c_73249.tag = closureN_tag;
  c_73249.fn = (function_type)__lambda_26;
 c_73249.num_args = 1;
 c_73249.num_elt = 4;
@@ -633,7 +654,8 @@ static void __lambda_26(int argc, object self_7398, object r_7339) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73251;
-c_73251.tag = closureN_tag;
+c_73251.hdr.mark = 4;
+ c_73251.tag = closureN_tag;
  c_73251.fn = (function_type)__lambda_25;
 c_73251.num_args = 1;
 c_73251.num_elt = 2;
@@ -653,7 +675,8 @@ static void __lambda_24(int argc, object self_73100) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73223;
-c_73223.tag = closureN_tag;
+c_73223.hdr.mark = 4;
+ c_73223.tag = closureN_tag;
  c_73223.fn = (function_type)__lambda_23;
 c_73223.num_args = 1;
 c_73223.num_elt = 3;
@@ -669,7 +692,8 @@ static void __lambda_23(int argc, object self_73101, object r_7335) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73225;
-c_73225.tag = closureN_tag;
+c_73225.hdr.mark = 4;
+ c_73225.tag = closureN_tag;
  c_73225.fn = (function_type)__lambda_22;
 c_73225.num_args = 1;
 c_73225.num_elt = 3;
@@ -685,7 +709,8 @@ static void __lambda_22(int argc, object self_73102, object r_7333) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:expand");
 
 closureN_type c_73227;
-c_73227.tag = closureN_tag;
+c_73227.hdr.mark = 4;
+ c_73227.tag = closureN_tag;
  c_73227.fn = (function_type)__lambda_21;
 c_73227.num_args = 1;
 c_73227.num_elt = 3;
@@ -716,7 +741,8 @@ if( !eq(boolean_f, ((closureN)self_73105)->elts[1]) ){
 } else { 
   
 closureN_type c_73198;
-c_73198.tag = closureN_tag;
+c_73198.hdr.mark = 4;
+ c_73198.tag = closureN_tag;
  c_73198.fn = (function_type)__lambda_18;
 c_73198.num_args = 1;
 c_73198.num_elt = 1;
@@ -736,7 +762,8 @@ static void __lambda_17(int argc, closure _,object k_7349, object exp_7314, obje
   Cyc_st_add("scheme/cyclone/macros.sld:macro:macro?");
 
 closureN_type c_73175;
-c_73175.tag = closureN_tag;
+c_73175.hdr.mark = 4;
+ c_73175.tag = closureN_tag;
  c_73175.fn = (function_type)__lambda_16;
 c_73175.num_args = 1;
 c_73175.num_elt = 2;
@@ -756,7 +783,8 @@ static void __lambda_15(int argc, closure _,object k_7353, object exp_7315) {
   Cyc_st_add("scheme/cyclone/macros.sld:define-syntax?");
 
 closureN_type c_73169;
-c_73169.tag = closureN_tag;
+c_73169.hdr.mark = 4;
+ c_73169.tag = closureN_tag;
  c_73169.fn = (function_type)__lambda_14;
 c_73169.num_args = 1;
 c_73169.num_elt = 2;
@@ -786,7 +814,8 @@ static void __lambda_11(int argc, closure _,object k_7363, object defined_91macr
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73138;
-c_73138.tag = closureN_tag;
+c_73138.hdr.mark = 4;
+ c_73138.tag = closureN_tag;
  c_73138.fn = (function_type)__lambda_10;
 c_73138.num_args = 1;
 c_73138.num_elt = 3;
@@ -802,7 +831,8 @@ static void __lambda_10(int argc, object self_73109, object r_7365) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73140;
-c_73140.tag = closureN_tag;
+c_73140.hdr.mark = 4;
+ c_73140.tag = closureN_tag;
  c_73140.fn = (function_type)__lambda_6;
 c_73140.num_args = 1;
 c_73140.num_elt = 4;
@@ -821,7 +851,8 @@ static void __lambda_9(int argc, object self_73110, object k_7368, object v_7318
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73154;
-c_73154.tag = closureN_tag;
+c_73154.hdr.mark = 4;
+ c_73154.tag = closureN_tag;
  c_73154.fn = (function_type)__lambda_8;
 c_73154.num_args = 1;
 c_73154.num_elt = 2;
@@ -836,7 +867,8 @@ static void __lambda_8(int argc, object self_73111, object r_7369) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73156;
-c_73156.tag = closureN_tag;
+c_73156.hdr.mark = 4;
+ c_73156.tag = closureN_tag;
  c_73156.fn = (function_type)__lambda_7;
 c_73156.num_args = 1;
 c_73156.num_elt = 2;
@@ -856,7 +888,8 @@ static void __lambda_6(int argc, object self_73113, object r_7367) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73142;
-c_73142.tag = closureN_tag;
+c_73142.hdr.mark = 4;
+ c_73142.tag = closureN_tag;
  c_73142.fn = (function_type)__lambda_5;
 c_73142.num_args = 1;
 c_73142.num_elt = 3;
@@ -872,7 +905,8 @@ static void __lambda_5(int argc, object self_73114, object r_7366) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:load-env!");
 
 closureN_type c_73144;
-c_73144.tag = closureN_tag;
+c_73144.hdr.mark = 4;
+ c_73144.tag = closureN_tag;
  c_73144.fn = (function_type)__lambda_4;
 c_73144.num_args = 1;
 c_73144.num_elt = 1;
@@ -891,7 +925,8 @@ static void __lambda_3(int argc, closure _,object k_7373, object name_7320, obje
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
 closureN_type c_73121;
-c_73121.tag = closureN_tag;
+c_73121.hdr.mark = 4;
+ c_73121.tag = closureN_tag;
  c_73121.fn = (function_type)__lambda_2;
 c_73121.num_args = 1;
 c_73121.num_elt = 1;
@@ -907,7 +942,8 @@ static void __lambda_2(int argc, object self_73116, object r_7376) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
 closureN_type c_73123;
-c_73123.tag = closureN_tag;
+c_73123.hdr.mark = 4;
+ c_73123.tag = closureN_tag;
  c_73123.fn = (function_type)__lambda_1;
 c_73123.num_args = 1;
 c_73123.num_elt = 1;
@@ -923,7 +959,8 @@ static void __lambda_1(int argc, object self_73117, object r_7375) {
   Cyc_st_add("scheme/cyclone/macros.sld:macro:add!");
 
 closureN_type c_73125;
-c_73125.tag = closureN_tag;
+c_73125.hdr.mark = 4;
+ c_73125.tag = closureN_tag;
  c_73125.fn = (function_type)__lambda_0;
 c_73125.num_args = 1;
 c_73125.num_elt = 1;

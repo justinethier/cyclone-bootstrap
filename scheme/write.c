@@ -152,7 +152,8 @@ load_varargs(port_731, port_731_raw, argc - 2);
   Cyc_st_add("scheme/write.sld:write");
 
 closureN_type c_7350;
-c_7350.tag = closureN_tag;
+c_7350.hdr.mark = 4;
+ c_7350.tag = closureN_tag;
  c_7350.fn = (function_type)__lambda_6;
 c_7350.num_args = 1;
 c_7350.num_elt = 3;
@@ -169,7 +170,8 @@ static void __lambda_6(int argc, object self_7320, object r_7311) {
 if( !eq(boolean_f, r_7311) ){ 
   
 closureN_type c_7352;
-c_7352.tag = closureN_tag;
+c_7352.hdr.mark = 4;
+ c_7352.tag = closureN_tag;
  c_7352.fn = (function_type)__lambda_4;
 c_7352.num_args = 1;
 c_7352.num_elt = 2;
@@ -181,7 +183,8 @@ return_closcall1(  __glo_current_91output_91port,  &c_7352);
 } else { 
   
 closureN_type c_7359;
-c_7359.tag = closureN_tag;
+c_7359.hdr.mark = 4;
+ c_7359.tag = closureN_tag;
  c_7359.fn = (function_type)__lambda_5;
 c_7359.num_args = 1;
 c_7359.num_elt = 2;
@@ -208,7 +211,8 @@ load_varargs(port_733, port_733_raw, argc - 2);
   Cyc_st_add("scheme/write.sld:display");
 
 closureN_type c_7328;
-c_7328.tag = closureN_tag;
+c_7328.hdr.mark = 4;
+ c_7328.tag = closureN_tag;
  c_7328.fn = (function_type)__lambda_2;
 c_7328.num_args = 1;
 c_7328.num_elt = 3;
@@ -225,7 +229,8 @@ static void __lambda_2(int argc, object self_7323, object r_7317) {
 if( !eq(boolean_f, r_7317) ){ 
   
 closureN_type c_7330;
-c_7330.tag = closureN_tag;
+c_7330.hdr.mark = 4;
+ c_7330.tag = closureN_tag;
  c_7330.fn = (function_type)__lambda_0;
 c_7330.num_args = 1;
 c_7330.num_elt = 2;
@@ -237,7 +242,8 @@ return_closcall1(  __glo_current_91output_91port,  &c_7330);
 } else { 
   
 closureN_type c_7337;
-c_7337.tag = closureN_tag;
+c_7337.hdr.mark = 4;
+ c_7337.tag = closureN_tag;
  c_7337.fn = (function_type)__lambda_1;
 c_7337.num_args = 1;
 c_7337.num_elt = 2;

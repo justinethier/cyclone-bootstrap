@@ -1293,7 +1293,8 @@ static void __lambda_1054(int argc, closure _,object k_73560) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737240;
-c_737240.tag = closureN_tag;
+c_737240.hdr.mark = 4;
+ c_737240.tag = closureN_tag;
  c_737240.fn = (function_type)__lambda_1053;
 c_737240.num_args = 1;
 c_737240.num_elt = 1;
@@ -1309,7 +1310,8 @@ static void __lambda_1053(int argc, object self_731615, object r_73561) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737242;
-c_737242.tag = closureN_tag;
+c_737242.hdr.mark = 4;
+ c_737242.tag = closureN_tag;
  c_737242.fn = (function_type)__lambda_1052;
 c_737242.num_args = 1;
 c_737242.num_elt = 1;
@@ -1323,7 +1325,8 @@ static void __lambda_1052(int argc, object self_731616, object r_73562) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737244;
-c_737244.tag = closureN_tag;
+c_737244.hdr.mark = 4;
+ c_737244.tag = closureN_tag;
  c_737244.fn = (function_type)__lambda_1051;
 c_737244.num_args = 1;
 c_737244.num_elt = 1;
@@ -1339,7 +1342,8 @@ static void __lambda_1051(int argc, object self_731617, object r_73572) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737246;
-c_737246.tag = closureN_tag;
+c_737246.hdr.mark = 4;
+ c_737246.tag = closureN_tag;
  c_737246.fn = (function_type)__lambda_1050;
 c_737246.num_args = 1;
 c_737246.num_elt = 1;
@@ -1353,7 +1357,8 @@ static void __lambda_1050(int argc, object self_731618, object r_73571) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737248;
-c_737248.tag = closureN_tag;
+c_737248.hdr.mark = 4;
+ c_737248.tag = closureN_tag;
  c_737248.fn = (function_type)__lambda_1049;
 c_737248.num_args = 1;
 c_737248.num_elt = 1;
@@ -1367,7 +1372,8 @@ static void __lambda_1049(int argc, object self_731619, object r_73563) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737250;
-c_737250.tag = closureN_tag;
+c_737250.hdr.mark = 4;
+ c_737250.tag = closureN_tag;
  c_737250.fn = (function_type)__lambda_1048;
 c_737250.num_args = 1;
 c_737250.num_elt = 1;
@@ -1383,7 +1389,8 @@ static void __lambda_1048(int argc, object self_731620, object r_73570) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737252;
-c_737252.tag = closureN_tag;
+c_737252.hdr.mark = 4;
+ c_737252.tag = closureN_tag;
  c_737252.fn = (function_type)__lambda_1047;
 c_737252.num_args = 1;
 c_737252.num_elt = 1;
@@ -1397,7 +1404,8 @@ static void __lambda_1047(int argc, object self_731621, object r_73569) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737254;
-c_737254.tag = closureN_tag;
+c_737254.hdr.mark = 4;
+ c_737254.tag = closureN_tag;
  c_737254.fn = (function_type)__lambda_1046;
 c_737254.num_args = 1;
 c_737254.num_elt = 1;
@@ -1411,7 +1419,8 @@ static void __lambda_1046(int argc, object self_731622, object r_73564) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737256;
-c_737256.tag = closureN_tag;
+c_737256.hdr.mark = 4;
+ c_737256.tag = closureN_tag;
  c_737256.fn = (function_type)__lambda_1045;
 c_737256.num_args = 1;
 c_737256.num_elt = 1;
@@ -1427,7 +1436,8 @@ static void __lambda_1045(int argc, object self_731623, object r_73568) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737258;
-c_737258.tag = closureN_tag;
+c_737258.hdr.mark = 4;
+ c_737258.tag = closureN_tag;
  c_737258.fn = (function_type)__lambda_1044;
 c_737258.num_args = 1;
 c_737258.num_elt = 1;
@@ -1441,7 +1451,8 @@ static void __lambda_1044(int argc, object self_731624, object r_73567) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737260;
-c_737260.tag = closureN_tag;
+c_737260.hdr.mark = 4;
+ c_737260.tag = closureN_tag;
  c_737260.fn = (function_type)__lambda_1043;
 c_737260.num_args = 1;
 c_737260.num_elt = 1;
@@ -1455,7 +1466,8 @@ static void __lambda_1043(int argc, object self_731625, object r_73565) {
   Cyc_st_add("scheme/base.sld:lib-init:schemebase");
 
 closureN_type c_737262;
-c_737262.tag = closureN_tag;
+c_737262.hdr.mark = 4;
+ c_737262.tag = closureN_tag;
  c_737262.fn = (function_type)__lambda_1042;
 c_737262.num_args = 1;
 c_737262.num_elt = 1;
@@ -1474,7 +1486,8 @@ static void __lambda_1041(int argc, closure _,object k_73575, object pred_73263,
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737183;
-c_737183.tag = closureN_tag;
+c_737183.hdr.mark = 4;
+ c_737183.tag = closureN_tag;
  c_737183.fn = (function_type)__lambda_1040;
 c_737183.num_args = 1;
 c_737183.num_elt = 1;
@@ -1488,7 +1501,8 @@ static void __lambda_1040(int argc, object self_731627, object r_73576) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737185;
-c_737185.tag = closureN_tag;
+c_737185.hdr.mark = 4;
+ c_737185.tag = closureN_tag;
  c_737185.fn = (function_type)__lambda_1039;
 c_737185.num_args = 1;
 c_737185.num_elt = 1;
@@ -1502,7 +1516,8 @@ static void __lambda_1039(int argc, object self_731628, object l_73264) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737187;
-c_737187.tag = closureN_tag;
+c_737187.hdr.mark = 4;
+ c_737187.tag = closureN_tag;
  c_737187.fn = (function_type)__lambda_1038;
 c_737187.num_args = 1;
 c_737187.num_elt = 2;
@@ -1517,7 +1532,8 @@ static void __lambda_1038(int argc, object self_731629, object every_85_73265) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737189;
-c_737189.tag = closureN_tag;
+c_737189.hdr.mark = 4;
+ c_737189.tag = closureN_tag;
  c_737189.fn = (function_type)__lambda_1037;
 c_737189.num_args = 1;
 c_737189.num_elt = 2;
@@ -1534,7 +1550,8 @@ static void __lambda_1037(int argc, object self_731630, object every_85_73265) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737191;
-c_737191.tag = closureN_tag;
+c_737191.hdr.mark = 4;
+ c_737191.tag = closureN_tag;
  c_737191.fn = (function_type)__lambda_1036;
 c_737191.num_args = 0;
 c_737191.num_elt = 3;
@@ -1550,7 +1567,8 @@ static void __lambda_1036(int argc, object self_731631) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737193;
-c_737193.tag = closureN_tag;
+c_737193.hdr.mark = 4;
+ c_737193.tag = closureN_tag;
  c_737193.fn = (function_type)__lambda_1028;
 c_737193.num_args = 1;
 c_737193.num_elt = 3;
@@ -1561,7 +1579,8 @@ c_737193.elts[2] = ((closureN)self_731631)->elts[2];
 
 
 closureN_type c_737205;
-c_737205.tag = closureN_tag;
+c_737205.hdr.mark = 4;
+ c_737205.tag = closureN_tag;
  c_737205.fn = (function_type)__lambda_1035;
 c_737205.num_args = 1;
 c_737205.num_elt = 1;
@@ -1575,7 +1594,8 @@ static void __lambda_1035(int argc, object self_731632, object k_73579, object l
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737207;
-c_737207.tag = closureN_tag;
+c_737207.hdr.mark = 4;
+ c_737207.tag = closureN_tag;
  c_737207.fn = (function_type)__lambda_1034;
 c_737207.num_args = 1;
 c_737207.num_elt = 3;
@@ -1592,7 +1612,8 @@ static void __lambda_1034(int argc, object self_731633, object r_73580) {
 if( !eq(boolean_f, r_73580) ){ 
   
 closureN_type c_737209;
-c_737209.tag = closureN_tag;
+c_737209.hdr.mark = 4;
+ c_737209.tag = closureN_tag;
  c_737209.fn = (function_type)__lambda_1029;
 c_737209.num_args = 0;
 c_737209.num_elt = 1;
@@ -1603,7 +1624,8 @@ return_closcall0((closure)&c_737209);
 } else { 
   
 closureN_type c_737213;
-c_737213.tag = closureN_tag;
+c_737213.hdr.mark = 4;
+ c_737213.tag = closureN_tag;
  c_737213.fn = (function_type)__lambda_1033;
 c_737213.num_args = 1;
 c_737213.num_elt = 3;
@@ -1621,7 +1643,8 @@ static void __lambda_1033(int argc, object self_731634, object r_73581) {
 if( !eq(boolean_f, r_73581) ){ 
   
 closureN_type c_737215;
-c_737215.tag = closureN_tag;
+c_737215.hdr.mark = 4;
+ c_737215.tag = closureN_tag;
  c_737215.fn = (function_type)__lambda_1031;
 c_737215.num_args = 0;
 c_737215.num_elt = 3;
@@ -1634,7 +1657,8 @@ return_closcall0((closure)&c_737215);
 } else { 
   
 closureN_type c_737227;
-c_737227.tag = closureN_tag;
+c_737227.hdr.mark = 4;
+ c_737227.tag = closureN_tag;
  c_737227.fn = (function_type)__lambda_1032;
 c_737227.num_args = 0;
 c_737227.num_elt = 1;
@@ -1654,7 +1678,8 @@ static void __lambda_1031(int argc, object self_731636) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737217;
-c_737217.tag = closureN_tag;
+c_737217.hdr.mark = 4;
+ c_737217.tag = closureN_tag;
  c_737217.fn = (function_type)__lambda_1030;
 c_737217.num_args = 1;
 c_737217.num_elt = 2;
@@ -1679,7 +1704,8 @@ static void __lambda_1028(int argc, object self_731639, object r_73578) {
   Cyc_st_add("scheme/base.sld:every");
 
 closureN_type c_737195;
-c_737195.tag = closureN_tag;
+c_737195.hdr.mark = 4;
+ c_737195.tag = closureN_tag;
  c_737195.fn = (function_type)__lambda_1027;
 c_737195.num_args = 1;
 c_737195.num_elt = 3;
@@ -1700,7 +1726,8 @@ static void __lambda_1026(int argc, closure _,object k_73585, object pred_73268,
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737126;
-c_737126.tag = closureN_tag;
+c_737126.hdr.mark = 4;
+ c_737126.tag = closureN_tag;
  c_737126.fn = (function_type)__lambda_1025;
 c_737126.num_args = 1;
 c_737126.num_elt = 1;
@@ -1714,7 +1741,8 @@ static void __lambda_1025(int argc, object self_731641, object r_73586) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737128;
-c_737128.tag = closureN_tag;
+c_737128.hdr.mark = 4;
+ c_737128.tag = closureN_tag;
  c_737128.fn = (function_type)__lambda_1024;
 c_737128.num_args = 1;
 c_737128.num_elt = 1;
@@ -1728,7 +1756,8 @@ static void __lambda_1024(int argc, object self_731642, object l_73269) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737130;
-c_737130.tag = closureN_tag;
+c_737130.hdr.mark = 4;
+ c_737130.tag = closureN_tag;
  c_737130.fn = (function_type)__lambda_1023;
 c_737130.num_args = 1;
 c_737130.num_elt = 2;
@@ -1743,7 +1772,8 @@ static void __lambda_1023(int argc, object self_731643, object any_85_73270) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737132;
-c_737132.tag = closureN_tag;
+c_737132.hdr.mark = 4;
+ c_737132.tag = closureN_tag;
  c_737132.fn = (function_type)__lambda_1022;
 c_737132.num_args = 1;
 c_737132.num_elt = 2;
@@ -1760,7 +1790,8 @@ static void __lambda_1022(int argc, object self_731644, object any_85_73270) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737134;
-c_737134.tag = closureN_tag;
+c_737134.hdr.mark = 4;
+ c_737134.tag = closureN_tag;
  c_737134.fn = (function_type)__lambda_1021;
 c_737134.num_args = 0;
 c_737134.num_elt = 3;
@@ -1776,7 +1807,8 @@ static void __lambda_1021(int argc, object self_731645) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737136;
-c_737136.tag = closureN_tag;
+c_737136.hdr.mark = 4;
+ c_737136.tag = closureN_tag;
  c_737136.fn = (function_type)__lambda_1013;
 c_737136.num_args = 1;
 c_737136.num_elt = 3;
@@ -1787,7 +1819,8 @@ c_737136.elts[2] = ((closureN)self_731645)->elts[2];
 
 
 closureN_type c_737148;
-c_737148.tag = closureN_tag;
+c_737148.hdr.mark = 4;
+ c_737148.tag = closureN_tag;
  c_737148.fn = (function_type)__lambda_1020;
 c_737148.num_args = 1;
 c_737148.num_elt = 1;
@@ -1801,7 +1834,8 @@ static void __lambda_1020(int argc, object self_731646, object k_73589, object l
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737150;
-c_737150.tag = closureN_tag;
+c_737150.hdr.mark = 4;
+ c_737150.tag = closureN_tag;
  c_737150.fn = (function_type)__lambda_1019;
 c_737150.num_args = 1;
 c_737150.num_elt = 3;
@@ -1818,7 +1852,8 @@ static void __lambda_1019(int argc, object self_731647, object r_73590) {
 if( !eq(boolean_f, r_73590) ){ 
   
 closureN_type c_737152;
-c_737152.tag = closureN_tag;
+c_737152.hdr.mark = 4;
+ c_737152.tag = closureN_tag;
  c_737152.fn = (function_type)__lambda_1014;
 c_737152.num_args = 0;
 c_737152.num_elt = 1;
@@ -1829,7 +1864,8 @@ return_closcall0((closure)&c_737152);
 } else { 
   
 closureN_type c_737156;
-c_737156.tag = closureN_tag;
+c_737156.hdr.mark = 4;
+ c_737156.tag = closureN_tag;
  c_737156.fn = (function_type)__lambda_1018;
 c_737156.num_args = 1;
 c_737156.num_elt = 3;
@@ -1847,7 +1883,8 @@ static void __lambda_1018(int argc, object self_731648, object r_73591) {
 if( !eq(boolean_f, r_73591) ){ 
   
 closureN_type c_737158;
-c_737158.tag = closureN_tag;
+c_737158.hdr.mark = 4;
+ c_737158.tag = closureN_tag;
  c_737158.fn = (function_type)__lambda_1015;
 c_737158.num_args = 0;
 c_737158.num_elt = 1;
@@ -1858,7 +1895,8 @@ return_closcall0((closure)&c_737158);
 } else { 
   
 closureN_type c_737162;
-c_737162.tag = closureN_tag;
+c_737162.hdr.mark = 4;
+ c_737162.tag = closureN_tag;
  c_737162.fn = (function_type)__lambda_1017;
 c_737162.num_args = 0;
 c_737162.num_elt = 3;
@@ -1875,7 +1913,8 @@ static void __lambda_1017(int argc, object self_731649) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737164;
-c_737164.tag = closureN_tag;
+c_737164.hdr.mark = 4;
+ c_737164.tag = closureN_tag;
  c_737164.fn = (function_type)__lambda_1016;
 c_737164.num_args = 1;
 c_737164.num_elt = 2;
@@ -1905,7 +1944,8 @@ static void __lambda_1013(int argc, object self_731653, object r_73588) {
   Cyc_st_add("scheme/base.sld:any");
 
 closureN_type c_737138;
-c_737138.tag = closureN_tag;
+c_737138.hdr.mark = 4;
+ c_737138.tag = closureN_tag;
  c_737138.fn = (function_type)__lambda_1012;
 c_737138.num_args = 1;
 c_737138.num_elt = 3;
@@ -1926,7 +1966,8 @@ static void __lambda_1011(int argc, closure _,object k_73595) {
   Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 
 closureN_type c_737109;
-c_737109.tag = closureN_tag;
+c_737109.hdr.mark = 4;
+ c_737109.tag = closureN_tag;
  c_737109.fn = (function_type)__lambda_1010;
 c_737109.num_args = 1;
 c_737109.num_elt = 1;
@@ -1940,7 +1981,8 @@ static void __lambda_1010(int argc, object self_731655, object r_73598) {
   Cyc_st_add("scheme/base.sld:Cyc-remove-exception-handler");
 
 closureN_type c_737111;
-c_737111.tag = closureN_tag;
+c_737111.hdr.mark = 4;
+ c_737111.tag = closureN_tag;
  c_737111.fn = (function_type)__lambda_1009;
 c_737111.num_args = 1;
 c_737111.num_elt = 1;
@@ -1955,7 +1997,8 @@ static void __lambda_1009(int argc, object self_731656, object r_73596) {
 if( !eq(boolean_f, r_73596) ){ 
   
 closureN_type c_737113;
-c_737113.tag = closureN_tag;
+c_737113.hdr.mark = 4;
+ c_737113.tag = closureN_tag;
  c_737113.fn = (function_type)__lambda_1008;
 c_737113.num_args = 1;
 c_737113.num_elt = 1;
@@ -1977,7 +2020,8 @@ static void __lambda_1007(int argc, closure _,object k_73601, object h_73272) {
   Cyc_st_add("scheme/base.sld:Cyc-add-exception-handler");
 
 closureN_type c_737099;
-c_737099.tag = closureN_tag;
+c_737099.hdr.mark = 4;
+ c_737099.tag = closureN_tag;
  c_737099.fn = (function_type)__lambda_1006;
 c_737099.num_args = 1;
 c_737099.num_elt = 1;
@@ -1998,7 +2042,8 @@ static void __lambda_1005(int argc, closure _,object k_73607, object handler_732
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737017;
-c_737017.tag = closureN_tag;
+c_737017.hdr.mark = 4;
+ c_737017.tag = closureN_tag;
  c_737017.fn = (function_type)__lambda_992;
 c_737017.num_args = 1;
 c_737017.num_elt = 2;
@@ -2008,7 +2053,8 @@ c_737017.elts[1] = thunk_73273;
 
 
 closureN_type c_737043;
-c_737043.tag = closureN_tag;
+c_737043.hdr.mark = 4;
+ c_737043.tag = closureN_tag;
  c_737043.fn = (function_type)__lambda_1004;
 c_737043.num_args = 1;
 c_737043.num_elt = 1;
@@ -2022,7 +2068,8 @@ static void __lambda_1004(int argc, object self_731659, object k_73613, object o
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737045;
-c_737045.tag = closureN_tag;
+c_737045.hdr.mark = 4;
+ c_737045.tag = closureN_tag;
  c_737045.fn = (function_type)__lambda_996;
 c_737045.num_args = 0;
 c_737045.num_elt = 1;
@@ -2031,7 +2078,8 @@ c_737045.elts[0] = obj_73275;
 
 
 closureN_type c_737065;
-c_737065.tag = closureN_tag;
+c_737065.hdr.mark = 4;
+ c_737065.tag = closureN_tag;
  c_737065.fn = (function_type)__lambda_1003;
 c_737065.num_args = 1;
 c_737065.num_elt = 3;
@@ -2047,7 +2095,8 @@ static void __lambda_1003(int argc, object self_731660, object r_73614) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737067;
-c_737067.tag = closureN_tag;
+c_737067.hdr.mark = 4;
+ c_737067.tag = closureN_tag;
  c_737067.fn = (function_type)__lambda_1002;
 c_737067.num_args = 2;
 c_737067.num_elt = 3;
@@ -2063,7 +2112,8 @@ static void __lambda_1002(int argc, object self_731661, object result_73277, obj
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737069;
-c_737069.tag = closureN_tag;
+c_737069.hdr.mark = 4;
+ c_737069.tag = closureN_tag;
  c_737069.fn = (function_type)__lambda_1001;
 c_737069.num_args = 1;
 c_737069.num_elt = 4;
@@ -2082,7 +2132,8 @@ static void __lambda_1001(int argc, object self_731662, object result_73277) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737071;
-c_737071.tag = closureN_tag;
+c_737071.hdr.mark = 4;
+ c_737071.tag = closureN_tag;
  c_737071.fn = (function_type)__lambda_1000;
 c_737071.num_args = 1;
 c_737071.num_elt = 5;
@@ -2100,7 +2151,8 @@ static void __lambda_1000(int argc, object self_731663, object r_73615) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737073;
-c_737073.tag = closureN_tag;
+c_737073.hdr.mark = 4;
+ c_737073.tag = closureN_tag;
  c_737073.fn = (function_type)__lambda_999;
 c_737073.num_args = 1;
 c_737073.num_elt = 4;
@@ -2117,7 +2169,8 @@ static void __lambda_999(int argc, object self_731664, object r_73618) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737076;
-c_737076.tag = closureN_tag;
+c_737076.hdr.mark = 4;
+ c_737076.tag = closureN_tag;
  c_737076.fn = (function_type)__lambda_998;
 c_737076.num_args = 1;
 c_737076.num_elt = 3;
@@ -2133,7 +2186,8 @@ static void __lambda_998(int argc, object self_731665, object r_73617) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737078;
-c_737078.tag = closureN_tag;
+c_737078.hdr.mark = 4;
+ c_737078.tag = closureN_tag;
  c_737078.fn = (function_type)__lambda_997;
 c_737078.num_args = 1;
 c_737078.num_elt = 3;
@@ -2160,7 +2214,8 @@ static void __lambda_996(int argc, object self_731667, object k_73619) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737047;
-c_737047.tag = closureN_tag;
+c_737047.hdr.mark = 4;
+ c_737047.tag = closureN_tag;
  c_737047.fn = (function_type)__lambda_995;
 c_737047.num_args = 1;
 c_737047.num_elt = 2;
@@ -2176,7 +2231,8 @@ static void __lambda_995(int argc, object self_731668, object r_73620) {
 if( !eq(boolean_f, r_73620) ){ 
   
 closureN_type c_737049;
-c_737049.tag = closureN_tag;
+c_737049.hdr.mark = 4;
+ c_737049.tag = closureN_tag;
  c_737049.fn = (function_type)__lambda_994;
 c_737049.num_args = 1;
 c_737049.num_elt = 1;
@@ -2193,7 +2249,8 @@ static void __lambda_994(int argc, object self_731669, object r_73621) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737051;
-c_737051.tag = closureN_tag;
+c_737051.hdr.mark = 4;
+ c_737051.tag = closureN_tag;
  c_737051.fn = (function_type)__lambda_993;
 c_737051.num_args = 1;
 c_737051.num_elt = 2;
@@ -2213,7 +2270,8 @@ static void __lambda_992(int argc, object self_731671, object r_73608) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737019;
-c_737019.tag = closureN_tag;
+c_737019.hdr.mark = 4;
+ c_737019.tag = closureN_tag;
  c_737019.fn = (function_type)__lambda_991;
 c_737019.num_args = 2;
 c_737019.num_elt = 2;
@@ -2228,7 +2286,8 @@ static void __lambda_991(int argc, object self_731672, object result_73279, obje
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737021;
-c_737021.tag = closureN_tag;
+c_737021.hdr.mark = 4;
+ c_737021.tag = closureN_tag;
  c_737021.fn = (function_type)__lambda_990;
 c_737021.num_args = 1;
 c_737021.num_elt = 3;
@@ -2246,7 +2305,8 @@ static void __lambda_990(int argc, object self_731673, object result_73279) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737023;
-c_737023.tag = closureN_tag;
+c_737023.hdr.mark = 4;
+ c_737023.tag = closureN_tag;
  c_737023.fn = (function_type)__lambda_989;
 c_737023.num_args = 1;
 c_737023.num_elt = 3;
@@ -2262,7 +2322,8 @@ static void __lambda_989(int argc, object self_731674, object r_73609) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737026;
-c_737026.tag = closureN_tag;
+c_737026.hdr.mark = 4;
+ c_737026.tag = closureN_tag;
  c_737026.fn = (function_type)__lambda_988;
 c_737026.num_args = 1;
 c_737026.num_elt = 2;
@@ -2277,7 +2338,8 @@ static void __lambda_988(int argc, object self_731675, object r_73612) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737028;
-c_737028.tag = closureN_tag;
+c_737028.hdr.mark = 4;
+ c_737028.tag = closureN_tag;
  c_737028.fn = (function_type)__lambda_987;
 c_737028.num_args = 1;
 c_737028.num_elt = 2;
@@ -2292,7 +2354,8 @@ static void __lambda_987(int argc, object self_731676, object r_73610) {
   Cyc_st_add("scheme/base.sld:with-exception-handler");
 
 closureN_type c_737030;
-c_737030.tag = closureN_tag;
+c_737030.hdr.mark = 4;
+ c_737030.tag = closureN_tag;
  c_737030.fn = (function_type)__lambda_986;
 c_737030.num_args = 1;
 c_737030.num_elt = 2;
@@ -2312,7 +2375,8 @@ static void __lambda_985(int argc, closure _,object k_73625, object obj_73280) {
   Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_736987;
-c_736987.tag = closureN_tag;
+c_736987.hdr.mark = 4;
+ c_736987.tag = closureN_tag;
  c_736987.fn = (function_type)__lambda_984;
 c_736987.num_args = 1;
 c_736987.num_elt = 2;
@@ -2327,7 +2391,8 @@ static void __lambda_984(int argc, object self_731678, object r_73626) {
   Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_736989;
-c_736989.tag = closureN_tag;
+c_736989.hdr.mark = 4;
+ c_736989.tag = closureN_tag;
  c_736989.fn = (function_type)__lambda_983;
 c_736989.num_args = 1;
 c_736989.num_elt = 3;
@@ -2343,7 +2408,8 @@ static void __lambda_983(int argc, object self_731679, object r_73628) {
   Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_736991;
-c_736991.tag = closureN_tag;
+c_736991.hdr.mark = 4;
+ c_736991.tag = closureN_tag;
  c_736991.fn = (function_type)__lambda_980;
 c_736991.num_args = 0;
 c_736991.num_elt = 1;
@@ -2352,7 +2418,8 @@ c_736991.elts[0] = ((closureN)self_731679)->elts[1];
 
 
 closureN_type c_737003;
-c_737003.tag = closureN_tag;
+c_737003.hdr.mark = 4;
+ c_737003.tag = closureN_tag;
  c_737003.fn = (function_type)__lambda_982;
 c_737003.num_args = 1;
 c_737003.num_elt = 3;
@@ -2368,7 +2435,8 @@ static void __lambda_982(int argc, object self_731680, object r_73629) {
   Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_737005;
-c_737005.tag = closureN_tag;
+c_737005.hdr.mark = 4;
+ c_737005.tag = closureN_tag;
  c_737005.fn = (function_type)__lambda_981;
 c_737005.num_args = 1;
 c_737005.num_elt = 2;
@@ -2390,7 +2458,8 @@ static void __lambda_980(int argc, object self_731682, object k_73630) {
   Cyc_st_add("scheme/base.sld:raise-continuable");
 
 closureN_type c_736993;
-c_736993.tag = closureN_tag;
+c_736993.hdr.mark = 4;
+ c_736993.tag = closureN_tag;
  c_736993.fn = (function_type)__lambda_979;
 c_736993.num_args = 1;
 c_736993.num_elt = 2;
@@ -2414,7 +2483,8 @@ static void __lambda_978(int argc, closure _,object k_73634, object obj_73281) {
   Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_736957;
-c_736957.tag = closureN_tag;
+c_736957.hdr.mark = 4;
+ c_736957.tag = closureN_tag;
  c_736957.fn = (function_type)__lambda_977;
 c_736957.num_args = 1;
 c_736957.num_elt = 2;
@@ -2429,7 +2499,8 @@ static void __lambda_977(int argc, object self_731684, object r_73635) {
   Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_736959;
-c_736959.tag = closureN_tag;
+c_736959.hdr.mark = 4;
+ c_736959.tag = closureN_tag;
  c_736959.fn = (function_type)__lambda_976;
 c_736959.num_args = 1;
 c_736959.num_elt = 3;
@@ -2445,7 +2516,8 @@ static void __lambda_976(int argc, object self_731685, object r_73637) {
   Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_736961;
-c_736961.tag = closureN_tag;
+c_736961.hdr.mark = 4;
+ c_736961.tag = closureN_tag;
  c_736961.fn = (function_type)__lambda_973;
 c_736961.num_args = 0;
 c_736961.num_elt = 1;
@@ -2454,7 +2526,8 @@ c_736961.elts[0] = ((closureN)self_731685)->elts[1];
 
 
 closureN_type c_736973;
-c_736973.tag = closureN_tag;
+c_736973.hdr.mark = 4;
+ c_736973.tag = closureN_tag;
  c_736973.fn = (function_type)__lambda_975;
 c_736973.num_args = 1;
 c_736973.num_elt = 3;
@@ -2470,7 +2543,8 @@ static void __lambda_975(int argc, object self_731686, object r_73638) {
   Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_736975;
-c_736975.tag = closureN_tag;
+c_736975.hdr.mark = 4;
+ c_736975.tag = closureN_tag;
  c_736975.fn = (function_type)__lambda_974;
 c_736975.num_args = 1;
 c_736975.num_elt = 2;
@@ -2492,7 +2566,8 @@ static void __lambda_973(int argc, object self_731688, object k_73639) {
   Cyc_st_add("scheme/base.sld:raise");
 
 closureN_type c_736963;
-c_736963.tag = closureN_tag;
+c_736963.hdr.mark = 4;
+ c_736963.tag = closureN_tag;
  c_736963.fn = (function_type)__lambda_972;
 c_736963.num_args = 1;
 c_736963.num_elt = 2;
@@ -2517,7 +2592,8 @@ load_varargs(args_73282, args_73282_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:error");
 
 closureN_type c_736949;
-c_736949.tag = closureN_tag;
+c_736949.hdr.mark = 4;
+ c_736949.tag = closureN_tag;
  c_736949.fn = (function_type)__lambda_970;
 c_736949.num_args = 1;
 c_736949.num_elt = 1;
@@ -2539,7 +2615,8 @@ load_varargs(o_73284, o_73284_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736857;
-c_736857.tag = closureN_tag;
+c_736857.hdr.mark = 4;
+ c_736857.tag = closureN_tag;
  c_736857.fn = (function_type)__lambda_949;
 c_736857.num_args = 0;
 c_736857.num_elt = 1;
@@ -2548,7 +2625,8 @@ c_736857.elts[0] = o_73284;
 
 
 closureN_type c_736872;
-c_736872.tag = closureN_tag;
+c_736872.hdr.mark = 4;
+ c_736872.tag = closureN_tag;
  c_736872.fn = (function_type)__lambda_968;
 c_736872.num_args = 1;
 c_736872.num_elt = 2;
@@ -2563,7 +2641,8 @@ static void __lambda_968(int argc, object self_731691, object r_73654) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736874;
-c_736874.tag = closureN_tag;
+c_736874.hdr.mark = 4;
+ c_736874.tag = closureN_tag;
  c_736874.fn = (function_type)__lambda_967;
 c_736874.num_args = 1;
 c_736874.num_elt = 2;
@@ -2578,7 +2657,8 @@ static void __lambda_967(int argc, object self_731692, object converter_73287) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736876;
-c_736876.tag = closureN_tag;
+c_736876.hdr.mark = 4;
+ c_736876.tag = closureN_tag;
  c_736876.fn = (function_type)__lambda_966;
 c_736876.num_args = 1;
 c_736876.num_elt = 2;
@@ -2593,7 +2673,8 @@ static void __lambda_966(int argc, object self_731693, object r_73655) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736878;
-c_736878.tag = closureN_tag;
+c_736878.hdr.mark = 4;
+ c_736878.tag = closureN_tag;
  c_736878.fn = (function_type)__lambda_965;
 c_736878.num_args = 1;
 c_736878.num_elt = 2;
@@ -2608,7 +2689,8 @@ static void __lambda_965(int argc, object self_731694, object value_73288) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736880;
-c_736880.tag = closureN_tag;
+c_736880.hdr.mark = 4;
+ c_736880.tag = closureN_tag;
  c_736880.fn = (function_type)__lambda_964;
 c_736880.num_args = 1;
 c_736880.num_elt = 2;
@@ -2625,7 +2707,8 @@ static void __lambda_964(int argc, object self_731695, object value_73288) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736882;
-c_736882.tag = closureN_tag;
+c_736882.hdr.mark = 4;
+ c_736882.tag = closureN_tag;
  c_736882.fn = (function_type)__lambda_963;
 c_736882.num_args = 0;
 c_736882.num_elt = 3;
@@ -2641,7 +2724,8 @@ static void __lambda_963(int argc, object self_731696) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736885;
-c_736885.tag = closureN_tag;
+c_736885.hdr.mark = 4;
+ c_736885.tag = closureN_tag;
  c_736885.fn = (function_type)__lambda_962;
 c_736885.num_args = 0;
 c_736885.num_elt = 2;
@@ -2657,7 +2741,8 @@ load_varargs(args_73289, args_73289_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736887;
-c_736887.tag = closureN_tag;
+c_736887.hdr.mark = 4;
+ c_736887.tag = closureN_tag;
  c_736887.fn = (function_type)__lambda_961;
 c_736887.num_args = 1;
 c_736887.num_elt = 4;
@@ -2675,7 +2760,8 @@ static void __lambda_961(int argc, object self_731698, object r_73657) {
 if( !eq(boolean_f, r_73657) ){ 
   
 closureN_type c_736889;
-c_736889.tag = closureN_tag;
+c_736889.hdr.mark = 4;
+ c_736889.tag = closureN_tag;
  c_736889.fn = (function_type)__lambda_950;
 c_736889.num_args = 0;
 c_736889.num_elt = 2;
@@ -2687,7 +2773,8 @@ return_closcall0((closure)&c_736889);
 } else { 
   
 closureN_type c_736896;
-c_736896.tag = closureN_tag;
+c_736896.hdr.mark = 4;
+ c_736896.tag = closureN_tag;
  c_736896.fn = (function_type)__lambda_960;
 c_736896.num_args = 1;
 c_736896.num_elt = 4;
@@ -2705,7 +2792,8 @@ static void __lambda_960(int argc, object self_731699, object r_73663) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736898;
-c_736898.tag = closureN_tag;
+c_736898.hdr.mark = 4;
+ c_736898.tag = closureN_tag;
  c_736898.fn = (function_type)__lambda_959;
 c_736898.num_args = 1;
 c_736898.num_elt = 5;
@@ -2723,7 +2811,8 @@ static void __lambda_959(int argc, object self_731700, object r_73664) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736900;
-c_736900.tag = closureN_tag;
+c_736900.hdr.mark = 4;
+ c_736900.tag = closureN_tag;
  c_736900.fn = (function_type)__lambda_958;
 c_736900.num_args = 1;
 c_736900.num_elt = 4;
@@ -2741,7 +2830,8 @@ static void __lambda_958(int argc, object self_731701, object r_73658) {
 if( !eq(boolean_f, r_73658) ){ 
   
 closureN_type c_736902;
-c_736902.tag = closureN_tag;
+c_736902.hdr.mark = 4;
+ c_736902.tag = closureN_tag;
  c_736902.fn = (function_type)__lambda_952;
 c_736902.num_args = 0;
 c_736902.num_elt = 3;
@@ -2754,7 +2844,8 @@ return_closcall0((closure)&c_736902);
 } else { 
   
 closureN_type c_736914;
-c_736914.tag = closureN_tag;
+c_736914.hdr.mark = 4;
+ c_736914.tag = closureN_tag;
  c_736914.fn = (function_type)__lambda_957;
 c_736914.num_args = 1;
 c_736914.num_elt = 2;
@@ -2770,7 +2861,8 @@ static void __lambda_957(int argc, object self_731702, object r_73661) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736916;
-c_736916.tag = closureN_tag;
+c_736916.hdr.mark = 4;
+ c_736916.tag = closureN_tag;
  c_736916.fn = (function_type)__lambda_956;
 c_736916.num_args = 1;
 c_736916.num_elt = 3;
@@ -2786,7 +2878,8 @@ static void __lambda_956(int argc, object self_731703, object r_73662) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736918;
-c_736918.tag = closureN_tag;
+c_736918.hdr.mark = 4;
+ c_736918.tag = closureN_tag;
  c_736918.fn = (function_type)__lambda_955;
 c_736918.num_args = 1;
 c_736918.num_elt = 2;
@@ -2802,7 +2895,8 @@ static void __lambda_955(int argc, object self_731704, object r_73660) {
 if( !eq(boolean_f, r_73660) ){ 
   
 closureN_type c_736920;
-c_736920.tag = closureN_tag;
+c_736920.hdr.mark = 4;
+ c_736920.tag = closureN_tag;
  c_736920.fn = (function_type)__lambda_953;
 c_736920.num_args = 0;
 c_736920.num_elt = 2;
@@ -2814,7 +2908,8 @@ return_closcall0((closure)&c_736920);
 } else { 
   
 closureN_type c_736925;
-c_736925.tag = closureN_tag;
+c_736925.hdr.mark = 4;
+ c_736925.tag = closureN_tag;
  c_736925.fn = (function_type)__lambda_954;
 c_736925.num_args = 0;
 c_736925.num_elt = 1;
@@ -2841,7 +2936,8 @@ static void __lambda_952(int argc, object self_731707) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736904;
-c_736904.tag = closureN_tag;
+c_736904.hdr.mark = 4;
+ c_736904.tag = closureN_tag;
  c_736904.fn = (function_type)__lambda_951;
 c_736904.num_args = 1;
 c_736904.num_elt = 2;
@@ -2866,7 +2962,8 @@ static void __lambda_949(int argc, object self_731710, object k_73665) {
   Cyc_st_add("scheme/base.sld:make-parameter");
 
 closureN_type c_736859;
-c_736859.tag = closureN_tag;
+c_736859.hdr.mark = 4;
+ c_736859.tag = closureN_tag;
  c_736859.fn = (function_type)__lambda_948;
 c_736859.num_args = 1;
 c_736859.num_elt = 2;
@@ -2898,7 +2995,8 @@ load_varargs(fill_73290, fill_73290_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_736824;
-c_736824.tag = closureN_tag;
+c_736824.hdr.mark = 4;
+ c_736824.tag = closureN_tag;
  c_736824.fn = (function_type)__lambda_941;
 c_736824.num_args = 0;
 c_736824.num_elt = 1;
@@ -2907,7 +3005,8 @@ c_736824.elts[0] = fill_73290;
 
 
 closureN_type c_736836;
-c_736836.tag = closureN_tag;
+c_736836.hdr.mark = 4;
+ c_736836.tag = closureN_tag;
  c_736836.fn = (function_type)__lambda_945;
 c_736836.num_args = 1;
 c_736836.num_elt = 2;
@@ -2922,7 +3021,8 @@ static void __lambda_945(int argc, object self_731713, object r_73671) {
   Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_736838;
-c_736838.tag = closureN_tag;
+c_736838.hdr.mark = 4;
+ c_736838.tag = closureN_tag;
  c_736838.fn = (function_type)__lambda_944;
 c_736838.num_args = 1;
 c_736838.num_elt = 2;
@@ -2937,7 +3037,8 @@ static void __lambda_944(int argc, object self_731714, object fill_85_73292) {
   Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_736840;
-c_736840.tag = closureN_tag;
+c_736840.hdr.mark = 4;
+ c_736840.tag = closureN_tag;
  c_736840.fn = (function_type)__lambda_943;
 c_736840.num_args = 1;
 c_736840.num_elt = 1;
@@ -2953,7 +3054,8 @@ static void __lambda_943(int argc, object self_731715, object r_73673) {
   Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_736842;
-c_736842.tag = closureN_tag;
+c_736842.hdr.mark = 4;
+ c_736842.tag = closureN_tag;
  c_736842.fn = (function_type)__lambda_942;
 c_736842.num_args = 1;
 c_736842.num_elt = 1;
@@ -2976,7 +3078,8 @@ static void __lambda_941(int argc, object self_731717, object k_73674) {
   Cyc_st_add("scheme/base.sld:make-string");
 
 closureN_type c_736826;
-c_736826.tag = closureN_tag;
+c_736826.hdr.mark = 4;
+ c_736826.tag = closureN_tag;
  c_736826.fn = (function_type)__lambda_940;
 c_736826.num_args = 1;
 c_736826.num_elt = 2;
@@ -3010,7 +3113,8 @@ static void __lambda_938(int argc, closure _,object k_73681, object type_127_732
   Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_736789;
-c_736789.tag = closureN_tag;
+c_736789.hdr.mark = 4;
+ c_736789.tag = closureN_tag;
  c_736789.fn = (function_type)__lambda_937;
 c_736789.num_args = 1;
 c_736789.num_elt = 3;
@@ -3027,7 +3131,8 @@ static void __lambda_937(int argc, object self_731719, object r_73682) {
 if( !eq(boolean_f, r_73682) ){ 
   
 closureN_type c_736791;
-c_736791.tag = closureN_tag;
+c_736791.hdr.mark = 4;
+ c_736791.tag = closureN_tag;
  c_736791.fn = (function_type)__lambda_930;
 c_736791.num_args = 1;
 c_736791.num_elt = 1;
@@ -3036,7 +3141,8 @@ c_736791.elts[0] = ((closureN)self_731719)->elts[0];
 
 
 closureN_type c_736794;
-c_736794.tag = closureN_tag;
+c_736794.hdr.mark = 4;
+ c_736794.tag = closureN_tag;
  c_736794.fn = (function_type)__lambda_936;
 c_736794.num_args = 1;
 c_736794.num_elt = 2;
@@ -3054,7 +3160,8 @@ static void __lambda_936(int argc, object self_731720, object k_73684, object re
   Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_736796;
-c_736796.tag = closureN_tag;
+c_736796.hdr.mark = 4;
+ c_736796.tag = closureN_tag;
  c_736796.fn = (function_type)__lambda_932;
 c_736796.num_args = 1;
 c_736796.num_elt = 2;
@@ -3064,7 +3171,8 @@ c_736796.elts[1] = ((closureN)self_731720)->elts[1];
 
 
 closureN_type c_736802;
-c_736802.tag = closureN_tag;
+c_736802.hdr.mark = 4;
+ c_736802.tag = closureN_tag;
  c_736802.fn = (function_type)__lambda_935;
 c_736802.num_args = 1;
 c_736802.num_elt = 2;
@@ -3079,7 +3187,8 @@ static void __lambda_935(int argc, object self_731721, object k_73687, object o_
   Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_736804;
-c_736804.tag = closureN_tag;
+c_736804.hdr.mark = 4;
+ c_736804.tag = closureN_tag;
  c_736804.fn = (function_type)__lambda_934;
 c_736804.num_args = 1;
 c_736804.num_elt = 2;
@@ -3094,7 +3203,8 @@ static void __lambda_934(int argc, object self_731722, object r_73689) {
   Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_736806;
-c_736806.tag = closureN_tag;
+c_736806.hdr.mark = 4;
+ c_736806.tag = closureN_tag;
  c_736806.fn = (function_type)__lambda_933;
 c_736806.num_args = 1;
 c_736806.num_elt = 2;
@@ -3118,7 +3228,8 @@ static void __lambda_932(int argc, object self_731724, object r_73686) {
   Cyc_st_add("scheme/base.sld:Cyc-obj=?");
 
 closureN_type c_736798;
-c_736798.tag = closureN_tag;
+c_736798.hdr.mark = 4;
+ c_736798.tag = closureN_tag;
  c_736798.fn = (function_type)__lambda_931;
 c_736798.num_args = 1;
 c_736798.num_elt = 1;
@@ -3143,7 +3254,8 @@ load_varargs(syms_73299, syms_73299_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:symbol=?");
 
 closureN_type c_736780;
-c_736780.tag = closureN_tag;
+c_736780.hdr.mark = 4;
+ c_736780.tag = closureN_tag;
  c_736780.fn = (function_type)__lambda_928;
 c_736780.num_args = 1;
 c_736780.num_elt = 2;
@@ -3166,7 +3278,8 @@ load_varargs(bs_73302, bs_73302_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:boolean=?");
 
 closureN_type c_736771;
-c_736771.tag = closureN_tag;
+c_736771.hdr.mark = 4;
+ c_736771.tag = closureN_tag;
  c_736771.fn = (function_type)__lambda_926;
 c_736771.num_args = 1;
 c_736771.num_elt = 2;
@@ -3189,7 +3302,8 @@ load_varargs(opts_73305, opts_73305_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736627;
-c_736627.tag = closureN_tag;
+c_736627.hdr.mark = 4;
+ c_736627.tag = closureN_tag;
  c_736627.fn = (function_type)__lambda_924;
 c_736627.num_args = 4;
 c_736627.num_elt = 4;
@@ -3206,7 +3320,8 @@ static void __lambda_924(int argc, object self_731729, object len_73311, object 
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736629;
-c_736629.tag = closureN_tag;
+c_736629.hdr.mark = 4;
+ c_736629.tag = closureN_tag;
  c_736629.fn = (function_type)__lambda_923;
 c_736629.num_args = 1;
 c_736629.num_elt = 7;
@@ -3228,7 +3343,8 @@ static void __lambda_923(int argc, object self_731730, object len_73311) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736631;
-c_736631.tag = closureN_tag;
+c_736631.hdr.mark = 4;
+ c_736631.tag = closureN_tag;
  c_736631.fn = (function_type)__lambda_922;
 c_736631.num_args = 1;
 c_736631.num_elt = 7;
@@ -3250,7 +3366,8 @@ static void __lambda_922(int argc, object self_731731, object start_73310) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736633;
-c_736633.tag = closureN_tag;
+c_736633.hdr.mark = 4;
+ c_736633.tag = closureN_tag;
  c_736633.fn = (function_type)__lambda_921;
 c_736633.num_args = 1;
 c_736633.num_elt = 7;
@@ -3272,7 +3389,8 @@ static void __lambda_921(int argc, object self_731732, object end_73309) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736635;
-c_736635.tag = closureN_tag;
+c_736635.hdr.mark = 4;
+ c_736635.tag = closureN_tag;
  c_736635.fn = (function_type)__lambda_920;
 c_736635.num_args = 1;
 c_736635.num_elt = 7;
@@ -3294,7 +3412,8 @@ static void __lambda_920(int argc, object self_731733, object loop_73308) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736637;
-c_736637.tag = closureN_tag;
+c_736637.hdr.mark = 4;
+ c_736637.tag = closureN_tag;
  c_736637.fn = (function_type)__lambda_919;
 c_736637.num_args = 0;
 c_736637.num_elt = 8;
@@ -3315,7 +3434,8 @@ static void __lambda_919(int argc, object self_731734) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736639;
-c_736639.tag = closureN_tag;
+c_736639.hdr.mark = 4;
+ c_736639.tag = closureN_tag;
  c_736639.fn = (function_type)__lambda_918;
 c_736639.num_args = 1;
 c_736639.num_elt = 8;
@@ -3338,7 +3458,8 @@ static void __lambda_918(int argc, object self_731735, object r_73718) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736641;
-c_736641.tag = closureN_tag;
+c_736641.hdr.mark = 4;
+ c_736641.tag = closureN_tag;
  c_736641.fn = (function_type)__lambda_917;
 c_736641.num_args = 1;
 c_736641.num_elt = 8;
@@ -3359,7 +3480,8 @@ static void __lambda_917(int argc, object self_731736, object r_73701) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736643;
-c_736643.tag = closureN_tag;
+c_736643.hdr.mark = 4;
+ c_736643.tag = closureN_tag;
  c_736643.fn = (function_type)__lambda_901;
 c_736643.num_args = 0;
 c_736643.num_elt = 1;
@@ -3368,7 +3490,8 @@ c_736643.elts[0] = ((closureN)self_731736)->elts[5];
 
 
 closureN_type c_736663;
-c_736663.tag = closureN_tag;
+c_736663.hdr.mark = 4;
+ c_736663.tag = closureN_tag;
  c_736663.fn = (function_type)__lambda_916;
 c_736663.num_args = 1;
 c_736663.num_elt = 8;
@@ -3389,7 +3512,8 @@ static void __lambda_916(int argc, object self_731737, object r_73714) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736665;
-c_736665.tag = closureN_tag;
+c_736665.hdr.mark = 4;
+ c_736665.tag = closureN_tag;
  c_736665.fn = (function_type)__lambda_915;
 c_736665.num_args = 1;
 c_736665.num_elt = 8;
@@ -3410,7 +3534,8 @@ static void __lambda_915(int argc, object self_731738, object r_73702) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736667;
-c_736667.tag = closureN_tag;
+c_736667.hdr.mark = 4;
+ c_736667.tag = closureN_tag;
  c_736667.fn = (function_type)__lambda_904;
 c_736667.num_args = 0;
 c_736667.num_elt = 2;
@@ -3420,7 +3545,8 @@ c_736667.elts[1] = ((closureN)self_731738)->elts[5];
 
 
 closureN_type c_736689;
-c_736689.tag = closureN_tag;
+c_736689.hdr.mark = 4;
+ c_736689.tag = closureN_tag;
  c_736689.fn = (function_type)__lambda_914;
 c_736689.num_args = 1;
 c_736689.num_elt = 6;
@@ -3439,7 +3565,8 @@ static void __lambda_914(int argc, object self_731739, object r_73710) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736691;
-c_736691.tag = closureN_tag;
+c_736691.hdr.mark = 4;
+ c_736691.tag = closureN_tag;
  c_736691.fn = (function_type)__lambda_913;
 c_736691.num_args = 1;
 c_736691.num_elt = 6;
@@ -3458,7 +3585,8 @@ static void __lambda_913(int argc, object self_731740, object r_73703) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736693;
-c_736693.tag = closureN_tag;
+c_736693.hdr.mark = 4;
+ c_736693.tag = closureN_tag;
  c_736693.fn = (function_type)__lambda_906;
 c_736693.num_args = 1;
 c_736693.num_elt = 3;
@@ -3469,7 +3597,8 @@ c_736693.elts[2] = ((closureN)self_731740)->elts[4];
 
 
 closureN_type c_736707;
-c_736707.tag = closureN_tag;
+c_736707.hdr.mark = 4;
+ c_736707.tag = closureN_tag;
  c_736707.fn = (function_type)__lambda_912;
 c_736707.num_args = 1;
 c_736707.num_elt = 4;
@@ -3486,7 +3615,8 @@ static void __lambda_912(int argc, object self_731741, object k_73706, object i_
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736709;
-c_736709.tag = closureN_tag;
+c_736709.hdr.mark = 4;
+ c_736709.tag = closureN_tag;
  c_736709.fn = (function_type)__lambda_911;
 c_736709.num_args = 1;
 c_736709.num_elt = 5;
@@ -3505,7 +3635,8 @@ static void __lambda_911(int argc, object self_731742, object r_73707) {
 if( !eq(boolean_f, r_73707) ){ 
   
 closureN_type c_736711;
-c_736711.tag = closureN_tag;
+c_736711.hdr.mark = 4;
+ c_736711.tag = closureN_tag;
  c_736711.fn = (function_type)__lambda_907;
 c_736711.num_args = 0;
 c_736711.num_elt = 2;
@@ -3517,7 +3648,8 @@ return_closcall0((closure)&c_736711);
 } else { 
   
 closureN_type c_736716;
-c_736716.tag = closureN_tag;
+c_736716.hdr.mark = 4;
+ c_736716.tag = closureN_tag;
  c_736716.fn = (function_type)__lambda_910;
 c_736716.num_args = 0;
 c_736716.num_elt = 5;
@@ -3536,7 +3668,8 @@ static void __lambda_910(int argc, object self_731743) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736718;
-c_736718.tag = closureN_tag;
+c_736718.hdr.mark = 4;
+ c_736718.tag = closureN_tag;
  c_736718.fn = (function_type)__lambda_909;
 c_736718.num_args = 1;
 c_736718.num_elt = 3;
@@ -3552,7 +3685,8 @@ static void __lambda_909(int argc, object self_731744, object r_73708) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736720;
-c_736720.tag = closureN_tag;
+c_736720.hdr.mark = 4;
+ c_736720.tag = closureN_tag;
  c_736720.fn = (function_type)__lambda_908;
 c_736720.num_args = 1;
 c_736720.num_elt = 2;
@@ -3581,7 +3715,8 @@ static void __lambda_906(int argc, object self_731747, object r_73705) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736695;
-c_736695.tag = closureN_tag;
+c_736695.hdr.mark = 4;
+ c_736695.tag = closureN_tag;
  c_736695.fn = (function_type)__lambda_905;
 c_736695.num_args = 1;
 c_736695.num_elt = 3;
@@ -3602,7 +3737,8 @@ static void __lambda_904(int argc, object self_731749, object k_73711) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736669;
-c_736669.tag = closureN_tag;
+c_736669.hdr.mark = 4;
+ c_736669.tag = closureN_tag;
  c_736669.fn = (function_type)__lambda_903;
 c_736669.num_args = 1;
 c_736669.num_elt = 3;
@@ -3620,7 +3756,8 @@ static void __lambda_903(int argc, object self_731750, object r_73713) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736671;
-c_736671.tag = closureN_tag;
+c_736671.hdr.mark = 4;
+ c_736671.tag = closureN_tag;
  c_736671.fn = (function_type)__lambda_902;
 c_736671.num_args = 1;
 c_736671.num_elt = 3;
@@ -3647,7 +3784,8 @@ static void __lambda_901(int argc, object self_731752, object k_73715) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736645;
-c_736645.tag = closureN_tag;
+c_736645.hdr.mark = 4;
+ c_736645.tag = closureN_tag;
  c_736645.fn = (function_type)__lambda_900;
 c_736645.num_args = 1;
 c_736645.num_elt = 2;
@@ -3664,7 +3802,8 @@ static void __lambda_900(int argc, object self_731753, object r_73717) {
   Cyc_st_add("scheme/base.sld:vector-fill!");
 
 closureN_type c_736647;
-c_736647.tag = closureN_tag;
+c_736647.hdr.mark = 4;
+ c_736647.tag = closureN_tag;
  c_736647.fn = (function_type)__lambda_899;
 c_736647.num_args = 1;
 c_736647.num_elt = 2;
@@ -3693,7 +3832,8 @@ load_varargs(opts_73313, opts_73313_raw, argc - 4);
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736469;
-c_736469.tag = closureN_tag;
+c_736469.hdr.mark = 4;
+ c_736469.tag = closureN_tag;
  c_736469.fn = (function_type)__lambda_897;
 c_736469.num_args = 4;
 c_736469.num_elt = 5;
@@ -3711,7 +3851,8 @@ static void __lambda_897(int argc, object self_731755, object len_73320, object 
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736471;
-c_736471.tag = closureN_tag;
+c_736471.hdr.mark = 4;
+ c_736471.tag = closureN_tag;
  c_736471.fn = (function_type)__lambda_896;
 c_736471.num_args = 1;
 c_736471.num_elt = 8;
@@ -3734,7 +3875,8 @@ static void __lambda_896(int argc, object self_731756, object len_73320) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736473;
-c_736473.tag = closureN_tag;
+c_736473.hdr.mark = 4;
+ c_736473.tag = closureN_tag;
  c_736473.fn = (function_type)__lambda_895;
 c_736473.num_args = 1;
 c_736473.num_elt = 8;
@@ -3757,7 +3899,8 @@ static void __lambda_895(int argc, object self_731757, object start_73319) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736475;
-c_736475.tag = closureN_tag;
+c_736475.hdr.mark = 4;
+ c_736475.tag = closureN_tag;
  c_736475.fn = (function_type)__lambda_894;
 c_736475.num_args = 1;
 c_736475.num_elt = 8;
@@ -3780,7 +3923,8 @@ static void __lambda_894(int argc, object self_731758, object end_73318) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736477;
-c_736477.tag = closureN_tag;
+c_736477.hdr.mark = 4;
+ c_736477.tag = closureN_tag;
  c_736477.fn = (function_type)__lambda_893;
 c_736477.num_args = 1;
 c_736477.num_elt = 8;
@@ -3803,7 +3947,8 @@ static void __lambda_893(int argc, object self_731759, object loop_73317) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736479;
-c_736479.tag = closureN_tag;
+c_736479.hdr.mark = 4;
+ c_736479.tag = closureN_tag;
  c_736479.fn = (function_type)__lambda_892;
 c_736479.num_args = 0;
 c_736479.num_elt = 9;
@@ -3825,7 +3970,8 @@ static void __lambda_892(int argc, object self_731760) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736481;
-c_736481.tag = closureN_tag;
+c_736481.hdr.mark = 4;
+ c_736481.tag = closureN_tag;
  c_736481.fn = (function_type)__lambda_891;
 c_736481.num_args = 1;
 c_736481.num_elt = 9;
@@ -3849,7 +3995,8 @@ static void __lambda_891(int argc, object self_731761, object r_73741) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736483;
-c_736483.tag = closureN_tag;
+c_736483.hdr.mark = 4;
+ c_736483.tag = closureN_tag;
  c_736483.fn = (function_type)__lambda_890;
 c_736483.num_args = 1;
 c_736483.num_elt = 9;
@@ -3871,7 +4018,8 @@ static void __lambda_890(int argc, object self_731762, object r_73722) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736485;
-c_736485.tag = closureN_tag;
+c_736485.hdr.mark = 4;
+ c_736485.tag = closureN_tag;
  c_736485.fn = (function_type)__lambda_872;
 c_736485.num_args = 0;
 c_736485.num_elt = 1;
@@ -3880,7 +4028,8 @@ c_736485.elts[0] = ((closureN)self_731762)->elts[6];
 
 
 closureN_type c_736505;
-c_736505.tag = closureN_tag;
+c_736505.hdr.mark = 4;
+ c_736505.tag = closureN_tag;
  c_736505.fn = (function_type)__lambda_889;
 c_736505.num_args = 1;
 c_736505.num_elt = 9;
@@ -3902,7 +4051,8 @@ static void __lambda_889(int argc, object self_731763, object r_73737) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736507;
-c_736507.tag = closureN_tag;
+c_736507.hdr.mark = 4;
+ c_736507.tag = closureN_tag;
  c_736507.fn = (function_type)__lambda_888;
 c_736507.num_args = 1;
 c_736507.num_elt = 9;
@@ -3924,7 +4074,8 @@ static void __lambda_888(int argc, object self_731764, object r_73723) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736509;
-c_736509.tag = closureN_tag;
+c_736509.hdr.mark = 4;
+ c_736509.tag = closureN_tag;
  c_736509.fn = (function_type)__lambda_875;
 c_736509.num_args = 0;
 c_736509.num_elt = 2;
@@ -3934,7 +4085,8 @@ c_736509.elts[1] = ((closureN)self_731764)->elts[6];
 
 
 closureN_type c_736531;
-c_736531.tag = closureN_tag;
+c_736531.hdr.mark = 4;
+ c_736531.tag = closureN_tag;
  c_736531.fn = (function_type)__lambda_887;
 c_736531.num_args = 1;
 c_736531.num_elt = 7;
@@ -3954,7 +4106,8 @@ static void __lambda_887(int argc, object self_731765, object r_73733) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736533;
-c_736533.tag = closureN_tag;
+c_736533.hdr.mark = 4;
+ c_736533.tag = closureN_tag;
  c_736533.fn = (function_type)__lambda_886;
 c_736533.num_args = 1;
 c_736533.num_elt = 7;
@@ -3974,7 +4127,8 @@ static void __lambda_886(int argc, object self_731766, object r_73724) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736535;
-c_736535.tag = closureN_tag;
+c_736535.hdr.mark = 4;
+ c_736535.tag = closureN_tag;
  c_736535.fn = (function_type)__lambda_877;
 c_736535.num_args = 1;
 c_736535.num_elt = 4;
@@ -3986,7 +4140,8 @@ c_736535.elts[3] = ((closureN)self_731766)->elts[5];
 
 
 closureN_type c_736550;
-c_736550.tag = closureN_tag;
+c_736550.hdr.mark = 4;
+ c_736550.tag = closureN_tag;
  c_736550.fn = (function_type)__lambda_885;
 c_736550.num_args = 2;
 c_736550.num_elt = 4;
@@ -4003,7 +4158,8 @@ static void __lambda_885(int argc, object self_731767, object k_73727, object i_
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736552;
-c_736552.tag = closureN_tag;
+c_736552.hdr.mark = 4;
+ c_736552.tag = closureN_tag;
  c_736552.fn = (function_type)__lambda_884;
 c_736552.num_args = 1;
 c_736552.num_elt = 6;
@@ -4023,7 +4179,8 @@ static void __lambda_884(int argc, object self_731768, object r_73728) {
 if( !eq(boolean_f, r_73728) ){ 
   
 closureN_type c_736554;
-c_736554.tag = closureN_tag;
+c_736554.hdr.mark = 4;
+ c_736554.tag = closureN_tag;
  c_736554.fn = (function_type)__lambda_878;
 c_736554.num_args = 0;
 c_736554.num_elt = 2;
@@ -4035,7 +4192,8 @@ return_closcall0((closure)&c_736554);
 } else { 
   
 closureN_type c_736559;
-c_736559.tag = closureN_tag;
+c_736559.hdr.mark = 4;
+ c_736559.tag = closureN_tag;
  c_736559.fn = (function_type)__lambda_883;
 c_736559.num_args = 0;
 c_736559.num_elt = 6;
@@ -4055,7 +4213,8 @@ static void __lambda_883(int argc, object self_731769) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736561;
-c_736561.tag = closureN_tag;
+c_736561.hdr.mark = 4;
+ c_736561.tag = closureN_tag;
  c_736561.fn = (function_type)__lambda_882;
 c_736561.num_args = 1;
 c_736561.num_elt = 5;
@@ -4073,7 +4232,8 @@ static void __lambda_882(int argc, object self_731770, object r_73732) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736563;
-c_736563.tag = closureN_tag;
+c_736563.hdr.mark = 4;
+ c_736563.tag = closureN_tag;
  c_736563.fn = (function_type)__lambda_881;
 c_736563.num_args = 1;
 c_736563.num_elt = 4;
@@ -4090,7 +4250,8 @@ static void __lambda_881(int argc, object self_731771, object r_73729) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736565;
-c_736565.tag = closureN_tag;
+c_736565.hdr.mark = 4;
+ c_736565.tag = closureN_tag;
  c_736565.fn = (function_type)__lambda_880;
 c_736565.num_args = 1;
 c_736565.num_elt = 3;
@@ -4110,7 +4271,8 @@ static void __lambda_880(int argc, object self_731772, object r_73730) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736567;
-c_736567.tag = closureN_tag;
+c_736567.hdr.mark = 4;
+ c_736567.tag = closureN_tag;
  c_736567.fn = (function_type)__lambda_879;
 c_736567.num_args = 1;
 c_736567.num_elt = 3;
@@ -4140,7 +4302,8 @@ static void __lambda_877(int argc, object self_731775, object r_73726) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736537;
-c_736537.tag = closureN_tag;
+c_736537.hdr.mark = 4;
+ c_736537.tag = closureN_tag;
  c_736537.fn = (function_type)__lambda_876;
 c_736537.num_args = 1;
 c_736537.num_elt = 4;
@@ -4162,7 +4325,8 @@ static void __lambda_875(int argc, object self_731777, object k_73734) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736511;
-c_736511.tag = closureN_tag;
+c_736511.hdr.mark = 4;
+ c_736511.tag = closureN_tag;
  c_736511.fn = (function_type)__lambda_874;
 c_736511.num_args = 1;
 c_736511.num_elt = 3;
@@ -4180,7 +4344,8 @@ static void __lambda_874(int argc, object self_731778, object r_73736) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736513;
-c_736513.tag = closureN_tag;
+c_736513.hdr.mark = 4;
+ c_736513.tag = closureN_tag;
  c_736513.fn = (function_type)__lambda_873;
 c_736513.num_args = 1;
 c_736513.num_elt = 3;
@@ -4207,7 +4372,8 @@ static void __lambda_872(int argc, object self_731780, object k_73738) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736487;
-c_736487.tag = closureN_tag;
+c_736487.hdr.mark = 4;
+ c_736487.tag = closureN_tag;
  c_736487.fn = (function_type)__lambda_871;
 c_736487.num_args = 1;
 c_736487.num_elt = 2;
@@ -4224,7 +4390,8 @@ static void __lambda_871(int argc, object self_731781, object r_73740) {
   Cyc_st_add("scheme/base.sld:vector-copy!");
 
 closureN_type c_736489;
-c_736489.tag = closureN_tag;
+c_736489.hdr.mark = 4;
+ c_736489.tag = closureN_tag;
  c_736489.fn = (function_type)__lambda_870;
 c_736489.num_args = 1;
 c_736489.num_elt = 2;
@@ -4253,7 +4420,8 @@ load_varargs(opts_73323, opts_73323_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736303;
-c_736303.tag = closureN_tag;
+c_736303.hdr.mark = 4;
+ c_736303.tag = closureN_tag;
  c_736303.fn = (function_type)__lambda_868;
 c_736303.num_args = 4;
 c_736303.num_elt = 3;
@@ -4269,7 +4437,8 @@ static void __lambda_868(int argc, object self_731783, object len_73328, object 
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736305;
-c_736305.tag = closureN_tag;
+c_736305.hdr.mark = 4;
+ c_736305.tag = closureN_tag;
  c_736305.fn = (function_type)__lambda_867;
 c_736305.num_args = 1;
 c_736305.num_elt = 6;
@@ -4290,7 +4459,8 @@ static void __lambda_867(int argc, object self_731784, object len_73328) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736307;
-c_736307.tag = closureN_tag;
+c_736307.hdr.mark = 4;
+ c_736307.tag = closureN_tag;
  c_736307.fn = (function_type)__lambda_866;
 c_736307.num_args = 1;
 c_736307.num_elt = 6;
@@ -4311,7 +4481,8 @@ static void __lambda_866(int argc, object self_731785, object start_73327) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736309;
-c_736309.tag = closureN_tag;
+c_736309.hdr.mark = 4;
+ c_736309.tag = closureN_tag;
  c_736309.fn = (function_type)__lambda_865;
 c_736309.num_args = 1;
 c_736309.num_elt = 6;
@@ -4332,7 +4503,8 @@ static void __lambda_865(int argc, object self_731786, object end_73326) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736311;
-c_736311.tag = closureN_tag;
+c_736311.hdr.mark = 4;
+ c_736311.tag = closureN_tag;
  c_736311.fn = (function_type)__lambda_864;
 c_736311.num_args = 1;
 c_736311.num_elt = 6;
@@ -4353,7 +4525,8 @@ static void __lambda_864(int argc, object self_731787, object loop_73325) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736313;
-c_736313.tag = closureN_tag;
+c_736313.hdr.mark = 4;
+ c_736313.tag = closureN_tag;
  c_736313.fn = (function_type)__lambda_863;
 c_736313.num_args = 0;
 c_736313.num_elt = 7;
@@ -4373,7 +4546,8 @@ static void __lambda_863(int argc, object self_731788) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736315;
-c_736315.tag = closureN_tag;
+c_736315.hdr.mark = 4;
+ c_736315.tag = closureN_tag;
  c_736315.fn = (function_type)__lambda_862;
 c_736315.num_args = 1;
 c_736315.num_elt = 7;
@@ -4395,7 +4569,8 @@ static void __lambda_862(int argc, object self_731789, object r_73765) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736317;
-c_736317.tag = closureN_tag;
+c_736317.hdr.mark = 4;
+ c_736317.tag = closureN_tag;
  c_736317.fn = (function_type)__lambda_861;
 c_736317.num_args = 1;
 c_736317.num_elt = 7;
@@ -4415,7 +4590,8 @@ static void __lambda_861(int argc, object self_731790, object r_73745) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736319;
-c_736319.tag = closureN_tag;
+c_736319.hdr.mark = 4;
+ c_736319.tag = closureN_tag;
  c_736319.fn = (function_type)__lambda_842;
 c_736319.num_args = 0;
 c_736319.num_elt = 1;
@@ -4424,7 +4600,8 @@ c_736319.elts[0] = ((closureN)self_731790)->elts[4];
 
 
 closureN_type c_736339;
-c_736339.tag = closureN_tag;
+c_736339.hdr.mark = 4;
+ c_736339.tag = closureN_tag;
  c_736339.fn = (function_type)__lambda_860;
 c_736339.num_args = 1;
 c_736339.num_elt = 7;
@@ -4444,7 +4621,8 @@ static void __lambda_860(int argc, object self_731791, object r_73761) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736341;
-c_736341.tag = closureN_tag;
+c_736341.hdr.mark = 4;
+ c_736341.tag = closureN_tag;
  c_736341.fn = (function_type)__lambda_859;
 c_736341.num_args = 1;
 c_736341.num_elt = 7;
@@ -4464,7 +4642,8 @@ static void __lambda_859(int argc, object self_731792, object r_73746) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736343;
-c_736343.tag = closureN_tag;
+c_736343.hdr.mark = 4;
+ c_736343.tag = closureN_tag;
  c_736343.fn = (function_type)__lambda_845;
 c_736343.num_args = 0;
 c_736343.num_elt = 2;
@@ -4474,7 +4653,8 @@ c_736343.elts[1] = ((closureN)self_731792)->elts[4];
 
 
 closureN_type c_736365;
-c_736365.tag = closureN_tag;
+c_736365.hdr.mark = 4;
+ c_736365.tag = closureN_tag;
  c_736365.fn = (function_type)__lambda_858;
 c_736365.num_args = 1;
 c_736365.num_elt = 5;
@@ -4492,7 +4672,8 @@ static void __lambda_858(int argc, object self_731793, object r_73757) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736367;
-c_736367.tag = closureN_tag;
+c_736367.hdr.mark = 4;
+ c_736367.tag = closureN_tag;
  c_736367.fn = (function_type)__lambda_857;
 c_736367.num_args = 1;
 c_736367.num_elt = 5;
@@ -4510,7 +4691,8 @@ static void __lambda_857(int argc, object self_731794, object r_73747) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736369;
-c_736369.tag = closureN_tag;
+c_736369.hdr.mark = 4;
+ c_736369.tag = closureN_tag;
  c_736369.fn = (function_type)__lambda_849;
 c_736369.num_args = 1;
 c_736369.num_elt = 4;
@@ -4522,7 +4704,8 @@ c_736369.elts[3] = ((closureN)self_731794)->elts[3];
 
 
 closureN_type c_736399;
-c_736399.tag = closureN_tag;
+c_736399.hdr.mark = 4;
+ c_736399.tag = closureN_tag;
  c_736399.fn = (function_type)__lambda_856;
 c_736399.num_args = 2;
 c_736399.num_elt = 3;
@@ -4538,7 +4721,8 @@ static void __lambda_856(int argc, object self_731795, object k_73752, object i_
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736401;
-c_736401.tag = closureN_tag;
+c_736401.hdr.mark = 4;
+ c_736401.tag = closureN_tag;
  c_736401.fn = (function_type)__lambda_855;
 c_736401.num_args = 1;
 c_736401.num_elt = 5;
@@ -4557,7 +4741,8 @@ static void __lambda_855(int argc, object self_731796, object r_73753) {
 if( !eq(boolean_f, r_73753) ){ 
   
 closureN_type c_736403;
-c_736403.tag = closureN_tag;
+c_736403.hdr.mark = 4;
+ c_736403.tag = closureN_tag;
  c_736403.fn = (function_type)__lambda_850;
 c_736403.num_args = 0;
 c_736403.num_elt = 2;
@@ -4569,7 +4754,8 @@ return_closcall0((closure)&c_736403);
 } else { 
   
 closureN_type c_736408;
-c_736408.tag = closureN_tag;
+c_736408.hdr.mark = 4;
+ c_736408.tag = closureN_tag;
  c_736408.fn = (function_type)__lambda_854;
 c_736408.num_args = 0;
 c_736408.num_elt = 5;
@@ -4588,7 +4774,8 @@ static void __lambda_854(int argc, object self_731797) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736410;
-c_736410.tag = closureN_tag;
+c_736410.hdr.mark = 4;
+ c_736410.tag = closureN_tag;
  c_736410.fn = (function_type)__lambda_853;
 c_736410.num_args = 1;
 c_736410.num_elt = 4;
@@ -4605,7 +4792,8 @@ static void __lambda_853(int argc, object self_731798, object r_73756) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736412;
-c_736412.tag = closureN_tag;
+c_736412.hdr.mark = 4;
+ c_736412.tag = closureN_tag;
  c_736412.fn = (function_type)__lambda_852;
 c_736412.num_args = 1;
 c_736412.num_elt = 4;
@@ -4622,7 +4810,8 @@ static void __lambda_852(int argc, object self_731799, object r_73754) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736414;
-c_736414.tag = closureN_tag;
+c_736414.hdr.mark = 4;
+ c_736414.tag = closureN_tag;
  c_736414.fn = (function_type)__lambda_851;
 c_736414.num_args = 1;
 c_736414.num_elt = 3;
@@ -4652,7 +4841,8 @@ static void __lambda_849(int argc, object self_731802, object r_73751) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736371;
-c_736371.tag = closureN_tag;
+c_736371.hdr.mark = 4;
+ c_736371.tag = closureN_tag;
  c_736371.fn = (function_type)__lambda_848;
 c_736371.num_args = 1;
 c_736371.num_elt = 4;
@@ -4669,7 +4859,8 @@ static void __lambda_848(int argc, object self_731803, object r_73748) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736373;
-c_736373.tag = closureN_tag;
+c_736373.hdr.mark = 4;
+ c_736373.tag = closureN_tag;
  c_736373.fn = (function_type)__lambda_847;
 c_736373.num_args = 1;
 c_736373.num_elt = 3;
@@ -4687,7 +4878,8 @@ static void __lambda_847(int argc, object self_731804, object r_73750) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736375;
-c_736375.tag = closureN_tag;
+c_736375.hdr.mark = 4;
+ c_736375.tag = closureN_tag;
  c_736375.fn = (function_type)__lambda_846;
 c_736375.num_args = 1;
 c_736375.num_elt = 3;
@@ -4710,7 +4902,8 @@ static void __lambda_845(int argc, object self_731806, object k_73758) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736345;
-c_736345.tag = closureN_tag;
+c_736345.hdr.mark = 4;
+ c_736345.tag = closureN_tag;
  c_736345.fn = (function_type)__lambda_844;
 c_736345.num_args = 1;
 c_736345.num_elt = 3;
@@ -4728,7 +4921,8 @@ static void __lambda_844(int argc, object self_731807, object r_73760) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736347;
-c_736347.tag = closureN_tag;
+c_736347.hdr.mark = 4;
+ c_736347.tag = closureN_tag;
  c_736347.fn = (function_type)__lambda_843;
 c_736347.num_args = 1;
 c_736347.num_elt = 3;
@@ -4755,7 +4949,8 @@ static void __lambda_842(int argc, object self_731809, object k_73762) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736321;
-c_736321.tag = closureN_tag;
+c_736321.hdr.mark = 4;
+ c_736321.tag = closureN_tag;
  c_736321.fn = (function_type)__lambda_841;
 c_736321.num_args = 1;
 c_736321.num_elt = 2;
@@ -4772,7 +4967,8 @@ static void __lambda_841(int argc, object self_731810, object r_73764) {
   Cyc_st_add("scheme/base.sld:vector-copy");
 
 closureN_type c_736323;
-c_736323.tag = closureN_tag;
+c_736323.hdr.mark = 4;
+ c_736323.tag = closureN_tag;
  c_736323.fn = (function_type)__lambda_840;
 c_736323.num_args = 1;
 c_736323.num_elt = 2;
@@ -4801,7 +4997,8 @@ load_varargs(vecs_73331, vecs_73331_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:vector-append");
 
 closureN_type c_736290;
-c_736290.tag = closureN_tag;
+c_736290.hdr.mark = 4;
+ c_736290.tag = closureN_tag;
  c_736290.fn = (function_type)__lambda_838;
 c_736290.num_args = 1;
 c_736290.num_elt = 1;
@@ -4815,7 +5012,8 @@ static void __lambda_838(int argc, object self_731812, object r_73770) {
   Cyc_st_add("scheme/base.sld:vector-append");
 
 closureN_type c_736292;
-c_736292.tag = closureN_tag;
+c_736292.hdr.mark = 4;
+ c_736292.tag = closureN_tag;
  c_736292.fn = (function_type)__lambda_837;
 c_736292.num_args = 1;
 c_736292.num_elt = 1;
@@ -4838,7 +5036,8 @@ static void __lambda_836(int argc, closure _,object k_73773, object func_73333, 
   Cyc_st_add("scheme/base.sld:vector-for-each");
 
 closureN_type c_736284;
-c_736284.tag = closureN_tag;
+c_736284.hdr.mark = 4;
+ c_736284.tag = closureN_tag;
  c_736284.fn = (function_type)__lambda_835;
 c_736284.num_args = 1;
 c_736284.num_elt = 2;
@@ -4858,7 +5057,8 @@ static void __lambda_834(int argc, closure _,object k_73777, object func_73335, 
   Cyc_st_add("scheme/base.sld:vector-map");
 
 closureN_type c_736273;
-c_736273.tag = closureN_tag;
+c_736273.hdr.mark = 4;
+ c_736273.tag = closureN_tag;
  c_736273.fn = (function_type)__lambda_833;
 c_736273.num_args = 1;
 c_736273.num_elt = 2;
@@ -4873,7 +5073,8 @@ static void __lambda_833(int argc, object self_731815, object r_73779) {
   Cyc_st_add("scheme/base.sld:vector-map");
 
 closureN_type c_736275;
-c_736275.tag = closureN_tag;
+c_736275.hdr.mark = 4;
+ c_736275.tag = closureN_tag;
  c_736275.fn = (function_type)__lambda_832;
 c_736275.num_args = 1;
 c_736275.num_elt = 1;
@@ -4894,7 +5095,8 @@ static void __lambda_831(int argc, closure _,object k_73782, object func_73337, 
   Cyc_st_add("scheme/base.sld:string-for-each");
 
 closureN_type c_736267;
-c_736267.tag = closureN_tag;
+c_736267.hdr.mark = 4;
+ c_736267.tag = closureN_tag;
  c_736267.fn = (function_type)__lambda_830;
 c_736267.num_args = 1;
 c_736267.num_elt = 2;
@@ -4914,7 +5116,8 @@ static void __lambda_829(int argc, closure _,object k_73786, object func_73339, 
   Cyc_st_add("scheme/base.sld:string-map");
 
 closureN_type c_736256;
-c_736256.tag = closureN_tag;
+c_736256.hdr.mark = 4;
+ c_736256.tag = closureN_tag;
  c_736256.fn = (function_type)__lambda_828;
 c_736256.num_args = 1;
 c_736256.num_elt = 2;
@@ -4929,7 +5132,8 @@ static void __lambda_828(int argc, object self_731818, object r_73788) {
   Cyc_st_add("scheme/base.sld:string-map");
 
 closureN_type c_736258;
-c_736258.tag = closureN_tag;
+c_736258.hdr.mark = 4;
+ c_736258.tag = closureN_tag;
  c_736258.fn = (function_type)__lambda_827;
 c_736258.num_args = 1;
 c_736258.num_elt = 1;
@@ -4951,7 +5155,8 @@ load_varargs(opts_73340, opts_73340_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736112;
-c_736112.tag = closureN_tag;
+c_736112.hdr.mark = 4;
+ c_736112.tag = closureN_tag;
  c_736112.fn = (function_type)__lambda_825;
 c_736112.num_args = 4;
 c_736112.num_elt = 4;
@@ -4968,7 +5173,8 @@ static void __lambda_825(int argc, object self_731820, object len_73346, object 
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736114;
-c_736114.tag = closureN_tag;
+c_736114.hdr.mark = 4;
+ c_736114.tag = closureN_tag;
  c_736114.fn = (function_type)__lambda_824;
 c_736114.num_args = 1;
 c_736114.num_elt = 7;
@@ -4990,7 +5196,8 @@ static void __lambda_824(int argc, object self_731821, object len_73346) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736116;
-c_736116.tag = closureN_tag;
+c_736116.hdr.mark = 4;
+ c_736116.tag = closureN_tag;
  c_736116.fn = (function_type)__lambda_823;
 c_736116.num_args = 1;
 c_736116.num_elt = 7;
@@ -5012,7 +5219,8 @@ static void __lambda_823(int argc, object self_731822, object start_73345) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736118;
-c_736118.tag = closureN_tag;
+c_736118.hdr.mark = 4;
+ c_736118.tag = closureN_tag;
  c_736118.fn = (function_type)__lambda_822;
 c_736118.num_args = 1;
 c_736118.num_elt = 7;
@@ -5034,7 +5242,8 @@ static void __lambda_822(int argc, object self_731823, object end_73344) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736120;
-c_736120.tag = closureN_tag;
+c_736120.hdr.mark = 4;
+ c_736120.tag = closureN_tag;
  c_736120.fn = (function_type)__lambda_821;
 c_736120.num_args = 1;
 c_736120.num_elt = 7;
@@ -5056,7 +5265,8 @@ static void __lambda_821(int argc, object self_731824, object loop_73343) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736122;
-c_736122.tag = closureN_tag;
+c_736122.hdr.mark = 4;
+ c_736122.tag = closureN_tag;
  c_736122.fn = (function_type)__lambda_820;
 c_736122.num_args = 0;
 c_736122.num_elt = 8;
@@ -5077,7 +5287,8 @@ static void __lambda_820(int argc, object self_731825) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736124;
-c_736124.tag = closureN_tag;
+c_736124.hdr.mark = 4;
+ c_736124.tag = closureN_tag;
  c_736124.fn = (function_type)__lambda_819;
 c_736124.num_args = 1;
 c_736124.num_elt = 8;
@@ -5100,7 +5311,8 @@ static void __lambda_819(int argc, object self_731826, object r_73809) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736126;
-c_736126.tag = closureN_tag;
+c_736126.hdr.mark = 4;
+ c_736126.tag = closureN_tag;
  c_736126.fn = (function_type)__lambda_818;
 c_736126.num_args = 1;
 c_736126.num_elt = 8;
@@ -5121,7 +5333,8 @@ static void __lambda_818(int argc, object self_731827, object r_73792) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736128;
-c_736128.tag = closureN_tag;
+c_736128.hdr.mark = 4;
+ c_736128.tag = closureN_tag;
  c_736128.fn = (function_type)__lambda_802;
 c_736128.num_args = 0;
 c_736128.num_elt = 1;
@@ -5130,7 +5343,8 @@ c_736128.elts[0] = ((closureN)self_731827)->elts[5];
 
 
 closureN_type c_736148;
-c_736148.tag = closureN_tag;
+c_736148.hdr.mark = 4;
+ c_736148.tag = closureN_tag;
  c_736148.fn = (function_type)__lambda_817;
 c_736148.num_args = 1;
 c_736148.num_elt = 8;
@@ -5151,7 +5365,8 @@ static void __lambda_817(int argc, object self_731828, object r_73805) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736150;
-c_736150.tag = closureN_tag;
+c_736150.hdr.mark = 4;
+ c_736150.tag = closureN_tag;
  c_736150.fn = (function_type)__lambda_816;
 c_736150.num_args = 1;
 c_736150.num_elt = 8;
@@ -5172,7 +5387,8 @@ static void __lambda_816(int argc, object self_731829, object r_73793) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736152;
-c_736152.tag = closureN_tag;
+c_736152.hdr.mark = 4;
+ c_736152.tag = closureN_tag;
  c_736152.fn = (function_type)__lambda_805;
 c_736152.num_args = 0;
 c_736152.num_elt = 2;
@@ -5182,7 +5398,8 @@ c_736152.elts[1] = ((closureN)self_731829)->elts[5];
 
 
 closureN_type c_736174;
-c_736174.tag = closureN_tag;
+c_736174.hdr.mark = 4;
+ c_736174.tag = closureN_tag;
  c_736174.fn = (function_type)__lambda_815;
 c_736174.num_args = 1;
 c_736174.num_elt = 6;
@@ -5201,7 +5418,8 @@ static void __lambda_815(int argc, object self_731830, object r_73801) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736176;
-c_736176.tag = closureN_tag;
+c_736176.hdr.mark = 4;
+ c_736176.tag = closureN_tag;
  c_736176.fn = (function_type)__lambda_814;
 c_736176.num_args = 1;
 c_736176.num_elt = 6;
@@ -5220,7 +5438,8 @@ static void __lambda_814(int argc, object self_731831, object r_73794) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736178;
-c_736178.tag = closureN_tag;
+c_736178.hdr.mark = 4;
+ c_736178.tag = closureN_tag;
  c_736178.fn = (function_type)__lambda_807;
 c_736178.num_args = 1;
 c_736178.num_elt = 3;
@@ -5231,7 +5450,8 @@ c_736178.elts[2] = ((closureN)self_731831)->elts[4];
 
 
 closureN_type c_736192;
-c_736192.tag = closureN_tag;
+c_736192.hdr.mark = 4;
+ c_736192.tag = closureN_tag;
  c_736192.fn = (function_type)__lambda_813;
 c_736192.num_args = 1;
 c_736192.num_elt = 4;
@@ -5248,7 +5468,8 @@ static void __lambda_813(int argc, object self_731832, object k_73797, object i_
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736194;
-c_736194.tag = closureN_tag;
+c_736194.hdr.mark = 4;
+ c_736194.tag = closureN_tag;
  c_736194.fn = (function_type)__lambda_812;
 c_736194.num_args = 1;
 c_736194.num_elt = 5;
@@ -5267,7 +5488,8 @@ static void __lambda_812(int argc, object self_731833, object r_73798) {
 if( !eq(boolean_f, r_73798) ){ 
   
 closureN_type c_736196;
-c_736196.tag = closureN_tag;
+c_736196.hdr.mark = 4;
+ c_736196.tag = closureN_tag;
  c_736196.fn = (function_type)__lambda_808;
 c_736196.num_args = 0;
 c_736196.num_elt = 2;
@@ -5279,7 +5501,8 @@ return_closcall0((closure)&c_736196);
 } else { 
   
 closureN_type c_736201;
-c_736201.tag = closureN_tag;
+c_736201.hdr.mark = 4;
+ c_736201.tag = closureN_tag;
  c_736201.fn = (function_type)__lambda_811;
 c_736201.num_args = 0;
 c_736201.num_elt = 5;
@@ -5298,7 +5521,8 @@ static void __lambda_811(int argc, object self_731834) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736203;
-c_736203.tag = closureN_tag;
+c_736203.hdr.mark = 4;
+ c_736203.tag = closureN_tag;
  c_736203.fn = (function_type)__lambda_810;
 c_736203.num_args = 1;
 c_736203.num_elt = 3;
@@ -5314,7 +5538,8 @@ static void __lambda_810(int argc, object self_731835, object r_73799) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736205;
-c_736205.tag = closureN_tag;
+c_736205.hdr.mark = 4;
+ c_736205.tag = closureN_tag;
  c_736205.fn = (function_type)__lambda_809;
 c_736205.num_args = 1;
 c_736205.num_elt = 2;
@@ -5343,7 +5568,8 @@ static void __lambda_807(int argc, object self_731838, object r_73796) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736180;
-c_736180.tag = closureN_tag;
+c_736180.hdr.mark = 4;
+ c_736180.tag = closureN_tag;
  c_736180.fn = (function_type)__lambda_806;
 c_736180.num_args = 1;
 c_736180.num_elt = 3;
@@ -5364,7 +5590,8 @@ static void __lambda_805(int argc, object self_731840, object k_73802) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736154;
-c_736154.tag = closureN_tag;
+c_736154.hdr.mark = 4;
+ c_736154.tag = closureN_tag;
  c_736154.fn = (function_type)__lambda_804;
 c_736154.num_args = 1;
 c_736154.num_elt = 3;
@@ -5382,7 +5609,8 @@ static void __lambda_804(int argc, object self_731841, object r_73804) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736156;
-c_736156.tag = closureN_tag;
+c_736156.hdr.mark = 4;
+ c_736156.tag = closureN_tag;
  c_736156.fn = (function_type)__lambda_803;
 c_736156.num_args = 1;
 c_736156.num_elt = 3;
@@ -5409,7 +5637,8 @@ static void __lambda_802(int argc, object self_731843, object k_73806) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736130;
-c_736130.tag = closureN_tag;
+c_736130.hdr.mark = 4;
+ c_736130.tag = closureN_tag;
  c_736130.fn = (function_type)__lambda_801;
 c_736130.num_args = 1;
 c_736130.num_elt = 2;
@@ -5426,7 +5655,8 @@ static void __lambda_801(int argc, object self_731844, object r_73808) {
   Cyc_st_add("scheme/base.sld:string-fill!");
 
 closureN_type c_736132;
-c_736132.tag = closureN_tag;
+c_736132.hdr.mark = 4;
+ c_736132.tag = closureN_tag;
  c_736132.fn = (function_type)__lambda_800;
 c_736132.num_args = 1;
 c_736132.num_elt = 2;
@@ -5455,7 +5685,8 @@ load_varargs(opts_73348, opts_73348_raw, argc - 4);
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735954;
-c_735954.tag = closureN_tag;
+c_735954.hdr.mark = 4;
+ c_735954.tag = closureN_tag;
  c_735954.fn = (function_type)__lambda_798;
 c_735954.num_args = 4;
 c_735954.num_elt = 5;
@@ -5473,7 +5704,8 @@ static void __lambda_798(int argc, object self_731846, object len_73355, object 
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735956;
-c_735956.tag = closureN_tag;
+c_735956.hdr.mark = 4;
+ c_735956.tag = closureN_tag;
  c_735956.fn = (function_type)__lambda_797;
 c_735956.num_args = 1;
 c_735956.num_elt = 8;
@@ -5496,7 +5728,8 @@ static void __lambda_797(int argc, object self_731847, object len_73355) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735958;
-c_735958.tag = closureN_tag;
+c_735958.hdr.mark = 4;
+ c_735958.tag = closureN_tag;
  c_735958.fn = (function_type)__lambda_796;
 c_735958.num_args = 1;
 c_735958.num_elt = 8;
@@ -5519,7 +5752,8 @@ static void __lambda_796(int argc, object self_731848, object start_73354) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735960;
-c_735960.tag = closureN_tag;
+c_735960.hdr.mark = 4;
+ c_735960.tag = closureN_tag;
  c_735960.fn = (function_type)__lambda_795;
 c_735960.num_args = 1;
 c_735960.num_elt = 8;
@@ -5542,7 +5776,8 @@ static void __lambda_795(int argc, object self_731849, object end_73353) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735962;
-c_735962.tag = closureN_tag;
+c_735962.hdr.mark = 4;
+ c_735962.tag = closureN_tag;
  c_735962.fn = (function_type)__lambda_794;
 c_735962.num_args = 1;
 c_735962.num_elt = 8;
@@ -5565,7 +5800,8 @@ static void __lambda_794(int argc, object self_731850, object loop_73352) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735964;
-c_735964.tag = closureN_tag;
+c_735964.hdr.mark = 4;
+ c_735964.tag = closureN_tag;
  c_735964.fn = (function_type)__lambda_793;
 c_735964.num_args = 0;
 c_735964.num_elt = 9;
@@ -5587,7 +5823,8 @@ static void __lambda_793(int argc, object self_731851) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735966;
-c_735966.tag = closureN_tag;
+c_735966.hdr.mark = 4;
+ c_735966.tag = closureN_tag;
  c_735966.fn = (function_type)__lambda_792;
 c_735966.num_args = 1;
 c_735966.num_elt = 9;
@@ -5611,7 +5848,8 @@ static void __lambda_792(int argc, object self_731852, object r_73832) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735968;
-c_735968.tag = closureN_tag;
+c_735968.hdr.mark = 4;
+ c_735968.tag = closureN_tag;
  c_735968.fn = (function_type)__lambda_791;
 c_735968.num_args = 1;
 c_735968.num_elt = 9;
@@ -5633,7 +5871,8 @@ static void __lambda_791(int argc, object self_731853, object r_73813) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735970;
-c_735970.tag = closureN_tag;
+c_735970.hdr.mark = 4;
+ c_735970.tag = closureN_tag;
  c_735970.fn = (function_type)__lambda_773;
 c_735970.num_args = 0;
 c_735970.num_elt = 1;
@@ -5642,7 +5881,8 @@ c_735970.elts[0] = ((closureN)self_731853)->elts[6];
 
 
 closureN_type c_735990;
-c_735990.tag = closureN_tag;
+c_735990.hdr.mark = 4;
+ c_735990.tag = closureN_tag;
  c_735990.fn = (function_type)__lambda_790;
 c_735990.num_args = 1;
 c_735990.num_elt = 9;
@@ -5664,7 +5904,8 @@ static void __lambda_790(int argc, object self_731854, object r_73828) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735992;
-c_735992.tag = closureN_tag;
+c_735992.hdr.mark = 4;
+ c_735992.tag = closureN_tag;
  c_735992.fn = (function_type)__lambda_789;
 c_735992.num_args = 1;
 c_735992.num_elt = 9;
@@ -5686,7 +5927,8 @@ static void __lambda_789(int argc, object self_731855, object r_73814) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735994;
-c_735994.tag = closureN_tag;
+c_735994.hdr.mark = 4;
+ c_735994.tag = closureN_tag;
  c_735994.fn = (function_type)__lambda_776;
 c_735994.num_args = 0;
 c_735994.num_elt = 2;
@@ -5696,7 +5938,8 @@ c_735994.elts[1] = ((closureN)self_731855)->elts[6];
 
 
 closureN_type c_736016;
-c_736016.tag = closureN_tag;
+c_736016.hdr.mark = 4;
+ c_736016.tag = closureN_tag;
  c_736016.fn = (function_type)__lambda_788;
 c_736016.num_args = 1;
 c_736016.num_elt = 7;
@@ -5716,7 +5959,8 @@ static void __lambda_788(int argc, object self_731856, object r_73824) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736018;
-c_736018.tag = closureN_tag;
+c_736018.hdr.mark = 4;
+ c_736018.tag = closureN_tag;
  c_736018.fn = (function_type)__lambda_787;
 c_736018.num_args = 1;
 c_736018.num_elt = 7;
@@ -5736,7 +5980,8 @@ static void __lambda_787(int argc, object self_731857, object r_73815) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736020;
-c_736020.tag = closureN_tag;
+c_736020.hdr.mark = 4;
+ c_736020.tag = closureN_tag;
  c_736020.fn = (function_type)__lambda_778;
 c_736020.num_args = 1;
 c_736020.num_elt = 4;
@@ -5748,7 +5993,8 @@ c_736020.elts[3] = ((closureN)self_731857)->elts[5];
 
 
 closureN_type c_736035;
-c_736035.tag = closureN_tag;
+c_736035.hdr.mark = 4;
+ c_736035.tag = closureN_tag;
  c_736035.fn = (function_type)__lambda_786;
 c_736035.num_args = 2;
 c_736035.num_elt = 4;
@@ -5765,7 +6011,8 @@ static void __lambda_786(int argc, object self_731858, object k_73818, object i_
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736037;
-c_736037.tag = closureN_tag;
+c_736037.hdr.mark = 4;
+ c_736037.tag = closureN_tag;
  c_736037.fn = (function_type)__lambda_785;
 c_736037.num_args = 1;
 c_736037.num_elt = 6;
@@ -5785,7 +6032,8 @@ static void __lambda_785(int argc, object self_731859, object r_73819) {
 if( !eq(boolean_f, r_73819) ){ 
   
 closureN_type c_736039;
-c_736039.tag = closureN_tag;
+c_736039.hdr.mark = 4;
+ c_736039.tag = closureN_tag;
  c_736039.fn = (function_type)__lambda_779;
 c_736039.num_args = 0;
 c_736039.num_elt = 2;
@@ -5797,7 +6045,8 @@ return_closcall0((closure)&c_736039);
 } else { 
   
 closureN_type c_736044;
-c_736044.tag = closureN_tag;
+c_736044.hdr.mark = 4;
+ c_736044.tag = closureN_tag;
  c_736044.fn = (function_type)__lambda_784;
 c_736044.num_args = 0;
 c_736044.num_elt = 6;
@@ -5817,7 +6066,8 @@ static void __lambda_784(int argc, object self_731860) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736046;
-c_736046.tag = closureN_tag;
+c_736046.hdr.mark = 4;
+ c_736046.tag = closureN_tag;
  c_736046.fn = (function_type)__lambda_783;
 c_736046.num_args = 1;
 c_736046.num_elt = 5;
@@ -5835,7 +6085,8 @@ static void __lambda_783(int argc, object self_731861, object r_73823) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736048;
-c_736048.tag = closureN_tag;
+c_736048.hdr.mark = 4;
+ c_736048.tag = closureN_tag;
  c_736048.fn = (function_type)__lambda_782;
 c_736048.num_args = 1;
 c_736048.num_elt = 4;
@@ -5852,7 +6103,8 @@ static void __lambda_782(int argc, object self_731862, object r_73820) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736050;
-c_736050.tag = closureN_tag;
+c_736050.hdr.mark = 4;
+ c_736050.tag = closureN_tag;
  c_736050.fn = (function_type)__lambda_781;
 c_736050.num_args = 1;
 c_736050.num_elt = 3;
@@ -5872,7 +6124,8 @@ static void __lambda_781(int argc, object self_731863, object r_73821) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736052;
-c_736052.tag = closureN_tag;
+c_736052.hdr.mark = 4;
+ c_736052.tag = closureN_tag;
  c_736052.fn = (function_type)__lambda_780;
 c_736052.num_args = 1;
 c_736052.num_elt = 3;
@@ -5902,7 +6155,8 @@ static void __lambda_778(int argc, object self_731866, object r_73817) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_736022;
-c_736022.tag = closureN_tag;
+c_736022.hdr.mark = 4;
+ c_736022.tag = closureN_tag;
  c_736022.fn = (function_type)__lambda_777;
 c_736022.num_args = 1;
 c_736022.num_elt = 4;
@@ -5924,7 +6178,8 @@ static void __lambda_776(int argc, object self_731868, object k_73825) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735996;
-c_735996.tag = closureN_tag;
+c_735996.hdr.mark = 4;
+ c_735996.tag = closureN_tag;
  c_735996.fn = (function_type)__lambda_775;
 c_735996.num_args = 1;
 c_735996.num_elt = 3;
@@ -5942,7 +6197,8 @@ static void __lambda_775(int argc, object self_731869, object r_73827) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735998;
-c_735998.tag = closureN_tag;
+c_735998.hdr.mark = 4;
+ c_735998.tag = closureN_tag;
  c_735998.fn = (function_type)__lambda_774;
 c_735998.num_args = 1;
 c_735998.num_elt = 3;
@@ -5969,7 +6225,8 @@ static void __lambda_773(int argc, object self_731871, object k_73829) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735972;
-c_735972.tag = closureN_tag;
+c_735972.hdr.mark = 4;
+ c_735972.tag = closureN_tag;
  c_735972.fn = (function_type)__lambda_772;
 c_735972.num_args = 1;
 c_735972.num_elt = 2;
@@ -5986,7 +6243,8 @@ static void __lambda_772(int argc, object self_731872, object r_73831) {
   Cyc_st_add("scheme/base.sld:string-copy!");
 
 closureN_type c_735974;
-c_735974.tag = closureN_tag;
+c_735974.hdr.mark = 4;
+ c_735974.tag = closureN_tag;
  c_735974.fn = (function_type)__lambda_771;
 c_735974.num_args = 1;
 c_735974.num_elt = 2;
@@ -6015,7 +6273,8 @@ load_varargs(opts_73358, opts_73358_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735853;
-c_735853.tag = closureN_tag;
+c_735853.hdr.mark = 4;
+ c_735853.tag = closureN_tag;
  c_735853.fn = (function_type)__lambda_769;
 c_735853.num_args = 3;
 c_735853.num_elt = 3;
@@ -6031,7 +6290,8 @@ static void __lambda_769(int argc, object self_731874, object len_73362, object 
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735855;
-c_735855.tag = closureN_tag;
+c_735855.hdr.mark = 4;
+ c_735855.tag = closureN_tag;
  c_735855.fn = (function_type)__lambda_768;
 c_735855.num_args = 1;
 c_735855.num_elt = 5;
@@ -6051,7 +6311,8 @@ static void __lambda_768(int argc, object self_731875, object len_73362) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735857;
-c_735857.tag = closureN_tag;
+c_735857.hdr.mark = 4;
+ c_735857.tag = closureN_tag;
  c_735857.fn = (function_type)__lambda_767;
 c_735857.num_args = 1;
 c_735857.num_elt = 5;
@@ -6071,7 +6332,8 @@ static void __lambda_767(int argc, object self_731876, object start_73361) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735859;
-c_735859.tag = closureN_tag;
+c_735859.hdr.mark = 4;
+ c_735859.tag = closureN_tag;
  c_735859.fn = (function_type)__lambda_766;
 c_735859.num_args = 1;
 c_735859.num_elt = 5;
@@ -6091,7 +6353,8 @@ static void __lambda_766(int argc, object self_731877, object end_73360) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735861;
-c_735861.tag = closureN_tag;
+c_735861.hdr.mark = 4;
+ c_735861.tag = closureN_tag;
  c_735861.fn = (function_type)__lambda_765;
 c_735861.num_args = 0;
 c_735861.num_elt = 6;
@@ -6110,7 +6373,8 @@ static void __lambda_765(int argc, object self_731878) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735863;
-c_735863.tag = closureN_tag;
+c_735863.hdr.mark = 4;
+ c_735863.tag = closureN_tag;
  c_735863.fn = (function_type)__lambda_764;
 c_735863.num_args = 1;
 c_735863.num_elt = 6;
@@ -6131,7 +6395,8 @@ static void __lambda_764(int argc, object self_731879, object r_73847) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735865;
-c_735865.tag = closureN_tag;
+c_735865.hdr.mark = 4;
+ c_735865.tag = closureN_tag;
  c_735865.fn = (function_type)__lambda_763;
 c_735865.num_args = 1;
 c_735865.num_elt = 6;
@@ -6150,7 +6415,8 @@ static void __lambda_763(int argc, object self_731880, object r_73836) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735867;
-c_735867.tag = closureN_tag;
+c_735867.hdr.mark = 4;
+ c_735867.tag = closureN_tag;
  c_735867.fn = (function_type)__lambda_755;
 c_735867.num_args = 0;
 c_735867.num_elt = 1;
@@ -6159,7 +6425,8 @@ c_735867.elts[0] = ((closureN)self_731880)->elts[3];
 
 
 closureN_type c_735887;
-c_735887.tag = closureN_tag;
+c_735887.hdr.mark = 4;
+ c_735887.tag = closureN_tag;
  c_735887.fn = (function_type)__lambda_762;
 c_735887.num_args = 1;
 c_735887.num_elt = 6;
@@ -6178,7 +6445,8 @@ static void __lambda_762(int argc, object self_731881, object r_73843) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735889;
-c_735889.tag = closureN_tag;
+c_735889.hdr.mark = 4;
+ c_735889.tag = closureN_tag;
  c_735889.fn = (function_type)__lambda_761;
 c_735889.num_args = 1;
 c_735889.num_elt = 6;
@@ -6197,7 +6465,8 @@ static void __lambda_761(int argc, object self_731882, object r_73837) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735891;
-c_735891.tag = closureN_tag;
+c_735891.hdr.mark = 4;
+ c_735891.tag = closureN_tag;
  c_735891.fn = (function_type)__lambda_758;
 c_735891.num_args = 0;
 c_735891.num_elt = 2;
@@ -6207,7 +6476,8 @@ c_735891.elts[1] = ((closureN)self_731882)->elts[3];
 
 
 closureN_type c_735913;
-c_735913.tag = closureN_tag;
+c_735913.hdr.mark = 4;
+ c_735913.tag = closureN_tag;
  c_735913.fn = (function_type)__lambda_760;
 c_735913.num_args = 1;
 c_735913.num_elt = 4;
@@ -6224,7 +6494,8 @@ static void __lambda_760(int argc, object self_731883, object r_73839) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735915;
-c_735915.tag = closureN_tag;
+c_735915.hdr.mark = 4;
+ c_735915.tag = closureN_tag;
  c_735915.fn = (function_type)__lambda_759;
 c_735915.num_args = 1;
 c_735915.num_elt = 4;
@@ -6248,7 +6519,8 @@ static void __lambda_758(int argc, object self_731885, object k_73840) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735893;
-c_735893.tag = closureN_tag;
+c_735893.hdr.mark = 4;
+ c_735893.tag = closureN_tag;
  c_735893.fn = (function_type)__lambda_757;
 c_735893.num_args = 1;
 c_735893.num_elt = 3;
@@ -6266,7 +6538,8 @@ static void __lambda_757(int argc, object self_731886, object r_73842) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735895;
-c_735895.tag = closureN_tag;
+c_735895.hdr.mark = 4;
+ c_735895.tag = closureN_tag;
  c_735895.fn = (function_type)__lambda_756;
 c_735895.num_args = 1;
 c_735895.num_elt = 3;
@@ -6293,7 +6566,8 @@ static void __lambda_755(int argc, object self_731888, object k_73844) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735869;
-c_735869.tag = closureN_tag;
+c_735869.hdr.mark = 4;
+ c_735869.tag = closureN_tag;
  c_735869.fn = (function_type)__lambda_754;
 c_735869.num_args = 1;
 c_735869.num_elt = 2;
@@ -6310,7 +6584,8 @@ static void __lambda_754(int argc, object self_731889, object r_73846) {
   Cyc_st_add("scheme/base.sld:string-copy");
 
 closureN_type c_735871;
-c_735871.tag = closureN_tag;
+c_735871.hdr.mark = 4;
+ c_735871.tag = closureN_tag;
  c_735871.fn = (function_type)__lambda_753;
 c_735871.num_args = 1;
 c_735871.num_elt = 2;
@@ -6339,7 +6614,8 @@ load_varargs(opts_73363, opts_73363_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:string->vector");
 
 closureN_type c_735845;
-c_735845.tag = closureN_tag;
+c_735845.hdr.mark = 4;
+ c_735845.tag = closureN_tag;
  c_735845.fn = (function_type)__lambda_751;
 c_735845.num_args = 1;
 c_735845.num_elt = 1;
@@ -6361,7 +6637,8 @@ load_varargs(opts_73365, opts_73365_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735697;
-c_735697.tag = closureN_tag;
+c_735697.hdr.mark = 4;
+ c_735697.tag = closureN_tag;
  c_735697.fn = (function_type)__lambda_749;
 c_735697.num_args = 4;
 c_735697.num_elt = 3;
@@ -6377,7 +6654,8 @@ static void __lambda_749(int argc, object self_731892, object len_73370, object 
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735699;
-c_735699.tag = closureN_tag;
+c_735699.hdr.mark = 4;
+ c_735699.tag = closureN_tag;
  c_735699.fn = (function_type)__lambda_748;
 c_735699.num_args = 1;
 c_735699.num_elt = 6;
@@ -6398,7 +6676,8 @@ static void __lambda_748(int argc, object self_731893, object len_73370) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735701;
-c_735701.tag = closureN_tag;
+c_735701.hdr.mark = 4;
+ c_735701.tag = closureN_tag;
  c_735701.fn = (function_type)__lambda_747;
 c_735701.num_args = 1;
 c_735701.num_elt = 6;
@@ -6419,7 +6698,8 @@ static void __lambda_747(int argc, object self_731894, object start_73369) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735703;
-c_735703.tag = closureN_tag;
+c_735703.hdr.mark = 4;
+ c_735703.tag = closureN_tag;
  c_735703.fn = (function_type)__lambda_746;
 c_735703.num_args = 1;
 c_735703.num_elt = 6;
@@ -6440,7 +6720,8 @@ static void __lambda_746(int argc, object self_731895, object end_73368) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735705;
-c_735705.tag = closureN_tag;
+c_735705.hdr.mark = 4;
+ c_735705.tag = closureN_tag;
  c_735705.fn = (function_type)__lambda_745;
 c_735705.num_args = 1;
 c_735705.num_elt = 6;
@@ -6461,7 +6742,8 @@ static void __lambda_745(int argc, object self_731896, object loop_73367) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735707;
-c_735707.tag = closureN_tag;
+c_735707.hdr.mark = 4;
+ c_735707.tag = closureN_tag;
  c_735707.fn = (function_type)__lambda_744;
 c_735707.num_args = 0;
 c_735707.num_elt = 7;
@@ -6481,7 +6763,8 @@ static void __lambda_744(int argc, object self_731897) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735709;
-c_735709.tag = closureN_tag;
+c_735709.hdr.mark = 4;
+ c_735709.tag = closureN_tag;
  c_735709.fn = (function_type)__lambda_743;
 c_735709.num_args = 1;
 c_735709.num_elt = 7;
@@ -6503,7 +6786,8 @@ static void __lambda_743(int argc, object self_731898, object r_73874) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735711;
-c_735711.tag = closureN_tag;
+c_735711.hdr.mark = 4;
+ c_735711.tag = closureN_tag;
  c_735711.fn = (function_type)__lambda_742;
 c_735711.num_args = 1;
 c_735711.num_elt = 7;
@@ -6523,7 +6807,8 @@ static void __lambda_742(int argc, object self_731899, object r_73855) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735713;
-c_735713.tag = closureN_tag;
+c_735713.hdr.mark = 4;
+ c_735713.tag = closureN_tag;
  c_735713.fn = (function_type)__lambda_726;
 c_735713.num_args = 0;
 c_735713.num_elt = 1;
@@ -6532,7 +6817,8 @@ c_735713.elts[0] = ((closureN)self_731899)->elts[4];
 
 
 closureN_type c_735733;
-c_735733.tag = closureN_tag;
+c_735733.hdr.mark = 4;
+ c_735733.tag = closureN_tag;
  c_735733.fn = (function_type)__lambda_741;
 c_735733.num_args = 1;
 c_735733.num_elt = 7;
@@ -6552,7 +6838,8 @@ static void __lambda_741(int argc, object self_731900, object r_73870) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735735;
-c_735735.tag = closureN_tag;
+c_735735.hdr.mark = 4;
+ c_735735.tag = closureN_tag;
  c_735735.fn = (function_type)__lambda_740;
 c_735735.num_args = 1;
 c_735735.num_elt = 7;
@@ -6572,7 +6859,8 @@ static void __lambda_740(int argc, object self_731901, object r_73856) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735737;
-c_735737.tag = closureN_tag;
+c_735737.hdr.mark = 4;
+ c_735737.tag = closureN_tag;
  c_735737.fn = (function_type)__lambda_729;
 c_735737.num_args = 0;
 c_735737.num_elt = 2;
@@ -6582,7 +6870,8 @@ c_735737.elts[1] = ((closureN)self_731901)->elts[4];
 
 
 closureN_type c_735759;
-c_735759.tag = closureN_tag;
+c_735759.hdr.mark = 4;
+ c_735759.tag = closureN_tag;
  c_735759.fn = (function_type)__lambda_739;
 c_735759.num_args = 1;
 c_735759.num_elt = 5;
@@ -6600,7 +6889,8 @@ static void __lambda_739(int argc, object self_731902, object r_73866) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735761;
-c_735761.tag = closureN_tag;
+c_735761.hdr.mark = 4;
+ c_735761.tag = closureN_tag;
  c_735761.fn = (function_type)__lambda_738;
 c_735761.num_args = 1;
 c_735761.num_elt = 5;
@@ -6618,7 +6908,8 @@ static void __lambda_738(int argc, object self_731903, object r_73857) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735763;
-c_735763.tag = closureN_tag;
+c_735763.hdr.mark = 4;
+ c_735763.tag = closureN_tag;
  c_735763.fn = (function_type)__lambda_732;
 c_735763.num_args = 1;
 c_735763.num_elt = 3;
@@ -6629,7 +6920,8 @@ c_735763.elts[2] = ((closureN)self_731903)->elts[3];
 
 
 closureN_type c_735779;
-c_735779.tag = closureN_tag;
+c_735779.hdr.mark = 4;
+ c_735779.tag = closureN_tag;
  c_735779.fn = (function_type)__lambda_737;
 c_735779.num_args = 2;
 c_735779.num_elt = 3;
@@ -6645,7 +6937,8 @@ static void __lambda_737(int argc, object self_731904, object k_73861, object i_
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735781;
-c_735781.tag = closureN_tag;
+c_735781.hdr.mark = 4;
+ c_735781.tag = closureN_tag;
  c_735781.fn = (function_type)__lambda_736;
 c_735781.num_args = 1;
 c_735781.num_elt = 5;
@@ -6666,7 +6959,8 @@ if( !eq(boolean_f, r_73862) ){
 } else { 
   
 closureN_type c_735786;
-c_735786.tag = closureN_tag;
+c_735786.hdr.mark = 4;
+ c_735786.tag = closureN_tag;
  c_735786.fn = (function_type)__lambda_735;
 c_735786.num_args = 1;
 c_735786.num_elt = 5;
@@ -6689,7 +6983,8 @@ static void __lambda_735(int argc, object self_731906, object r_73863) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735788;
-c_735788.tag = closureN_tag;
+c_735788.hdr.mark = 4;
+ c_735788.tag = closureN_tag;
  c_735788.fn = (function_type)__lambda_734;
 c_735788.num_args = 1;
 c_735788.num_elt = 4;
@@ -6706,7 +7001,8 @@ static void __lambda_734(int argc, object self_731907, object r_73865) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735790;
-c_735790.tag = closureN_tag;
+c_735790.hdr.mark = 4;
+ c_735790.tag = closureN_tag;
  c_735790.fn = (function_type)__lambda_733;
 c_735790.num_args = 1;
 c_735790.num_elt = 3;
@@ -6729,7 +7025,8 @@ static void __lambda_732(int argc, object self_731909, object r_73860) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735765;
-c_735765.tag = closureN_tag;
+c_735765.hdr.mark = 4;
+ c_735765.tag = closureN_tag;
  c_735765.fn = (function_type)__lambda_731;
 c_735765.num_args = 1;
 c_735765.num_elt = 3;
@@ -6745,7 +7042,8 @@ static void __lambda_731(int argc, object self_731910, object r_73858) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735767;
-c_735767.tag = closureN_tag;
+c_735767.hdr.mark = 4;
+ c_735767.tag = closureN_tag;
  c_735767.fn = (function_type)__lambda_730;
 c_735767.num_args = 1;
 c_735767.num_elt = 3;
@@ -6766,7 +7064,8 @@ static void __lambda_729(int argc, object self_731912, object k_73867) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735739;
-c_735739.tag = closureN_tag;
+c_735739.hdr.mark = 4;
+ c_735739.tag = closureN_tag;
  c_735739.fn = (function_type)__lambda_728;
 c_735739.num_args = 1;
 c_735739.num_elt = 3;
@@ -6784,7 +7083,8 @@ static void __lambda_728(int argc, object self_731913, object r_73869) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735741;
-c_735741.tag = closureN_tag;
+c_735741.hdr.mark = 4;
+ c_735741.tag = closureN_tag;
  c_735741.fn = (function_type)__lambda_727;
 c_735741.num_args = 1;
 c_735741.num_elt = 3;
@@ -6811,7 +7111,8 @@ static void __lambda_726(int argc, object self_731915, object k_73871) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735715;
-c_735715.tag = closureN_tag;
+c_735715.hdr.mark = 4;
+ c_735715.tag = closureN_tag;
  c_735715.fn = (function_type)__lambda_725;
 c_735715.num_args = 1;
 c_735715.num_elt = 2;
@@ -6828,7 +7129,8 @@ static void __lambda_725(int argc, object self_731916, object r_73873) {
   Cyc_st_add("scheme/base.sld:string->list");
 
 closureN_type c_735717;
-c_735717.tag = closureN_tag;
+c_735717.hdr.mark = 4;
+ c_735717.tag = closureN_tag;
  c_735717.fn = (function_type)__lambda_724;
 c_735717.num_args = 1;
 c_735717.num_elt = 2;
@@ -6857,7 +7159,8 @@ load_varargs(opts_73373, opts_73373_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_735679;
-c_735679.tag = closureN_tag;
+c_735679.hdr.mark = 4;
+ c_735679.tag = closureN_tag;
  c_735679.fn = (function_type)__lambda_722;
 c_735679.num_args = 1;
 c_735679.num_elt = 1;
@@ -6873,7 +7176,8 @@ static void __lambda_722(int argc, object self_731918, object r_73879) {
   Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_735681;
-c_735681.tag = closureN_tag;
+c_735681.hdr.mark = 4;
+ c_735681.tag = closureN_tag;
  c_735681.fn = (function_type)__lambda_721;
 c_735681.num_args = 1;
 c_735681.num_elt = 1;
@@ -6889,7 +7193,8 @@ static void __lambda_721(int argc, object self_731919, object r_73878) {
   Cyc_st_add("scheme/base.sld:vector->string");
 
 closureN_type c_735683;
-c_735683.tag = closureN_tag;
+c_735683.hdr.mark = 4;
+ c_735683.tag = closureN_tag;
  c_735683.fn = (function_type)__lambda_720;
 c_735683.num_args = 1;
 c_735683.num_elt = 1;
@@ -6911,7 +7216,8 @@ load_varargs(opts_73376, opts_73376_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735531;
-c_735531.tag = closureN_tag;
+c_735531.hdr.mark = 4;
+ c_735531.tag = closureN_tag;
  c_735531.fn = (function_type)__lambda_718;
 c_735531.num_args = 4;
 c_735531.num_elt = 3;
@@ -6927,7 +7233,8 @@ static void __lambda_718(int argc, object self_731921, object len_73381, object 
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735533;
-c_735533.tag = closureN_tag;
+c_735533.hdr.mark = 4;
+ c_735533.tag = closureN_tag;
  c_735533.fn = (function_type)__lambda_717;
 c_735533.num_args = 1;
 c_735533.num_elt = 6;
@@ -6948,7 +7255,8 @@ static void __lambda_717(int argc, object self_731922, object len_73381) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735535;
-c_735535.tag = closureN_tag;
+c_735535.hdr.mark = 4;
+ c_735535.tag = closureN_tag;
  c_735535.fn = (function_type)__lambda_716;
 c_735535.num_args = 1;
 c_735535.num_elt = 6;
@@ -6969,7 +7277,8 @@ static void __lambda_716(int argc, object self_731923, object start_73380) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735537;
-c_735537.tag = closureN_tag;
+c_735537.hdr.mark = 4;
+ c_735537.tag = closureN_tag;
  c_735537.fn = (function_type)__lambda_715;
 c_735537.num_args = 1;
 c_735537.num_elt = 6;
@@ -6990,7 +7299,8 @@ static void __lambda_715(int argc, object self_731924, object end_73379) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735539;
-c_735539.tag = closureN_tag;
+c_735539.hdr.mark = 4;
+ c_735539.tag = closureN_tag;
  c_735539.fn = (function_type)__lambda_714;
 c_735539.num_args = 1;
 c_735539.num_elt = 6;
@@ -7011,7 +7321,8 @@ static void __lambda_714(int argc, object self_731925, object loop_73378) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735541;
-c_735541.tag = closureN_tag;
+c_735541.hdr.mark = 4;
+ c_735541.tag = closureN_tag;
  c_735541.fn = (function_type)__lambda_713;
 c_735541.num_args = 0;
 c_735541.num_elt = 7;
@@ -7031,7 +7342,8 @@ static void __lambda_713(int argc, object self_731926) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735543;
-c_735543.tag = closureN_tag;
+c_735543.hdr.mark = 4;
+ c_735543.tag = closureN_tag;
  c_735543.fn = (function_type)__lambda_712;
 c_735543.num_args = 1;
 c_735543.num_elt = 7;
@@ -7053,7 +7365,8 @@ static void __lambda_712(int argc, object self_731927, object r_73902) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735545;
-c_735545.tag = closureN_tag;
+c_735545.hdr.mark = 4;
+ c_735545.tag = closureN_tag;
  c_735545.fn = (function_type)__lambda_711;
 c_735545.num_args = 1;
 c_735545.num_elt = 7;
@@ -7073,7 +7386,8 @@ static void __lambda_711(int argc, object self_731928, object r_73883) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735547;
-c_735547.tag = closureN_tag;
+c_735547.hdr.mark = 4;
+ c_735547.tag = closureN_tag;
  c_735547.fn = (function_type)__lambda_695;
 c_735547.num_args = 0;
 c_735547.num_elt = 1;
@@ -7082,7 +7396,8 @@ c_735547.elts[0] = ((closureN)self_731928)->elts[4];
 
 
 closureN_type c_735567;
-c_735567.tag = closureN_tag;
+c_735567.hdr.mark = 4;
+ c_735567.tag = closureN_tag;
  c_735567.fn = (function_type)__lambda_710;
 c_735567.num_args = 1;
 c_735567.num_elt = 7;
@@ -7102,7 +7417,8 @@ static void __lambda_710(int argc, object self_731929, object r_73898) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735569;
-c_735569.tag = closureN_tag;
+c_735569.hdr.mark = 4;
+ c_735569.tag = closureN_tag;
  c_735569.fn = (function_type)__lambda_709;
 c_735569.num_args = 1;
 c_735569.num_elt = 7;
@@ -7122,7 +7438,8 @@ static void __lambda_709(int argc, object self_731930, object r_73884) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735571;
-c_735571.tag = closureN_tag;
+c_735571.hdr.mark = 4;
+ c_735571.tag = closureN_tag;
  c_735571.fn = (function_type)__lambda_698;
 c_735571.num_args = 0;
 c_735571.num_elt = 2;
@@ -7132,7 +7449,8 @@ c_735571.elts[1] = ((closureN)self_731930)->elts[4];
 
 
 closureN_type c_735593;
-c_735593.tag = closureN_tag;
+c_735593.hdr.mark = 4;
+ c_735593.tag = closureN_tag;
  c_735593.fn = (function_type)__lambda_708;
 c_735593.num_args = 1;
 c_735593.num_elt = 5;
@@ -7150,7 +7468,8 @@ static void __lambda_708(int argc, object self_731931, object r_73894) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735595;
-c_735595.tag = closureN_tag;
+c_735595.hdr.mark = 4;
+ c_735595.tag = closureN_tag;
  c_735595.fn = (function_type)__lambda_707;
 c_735595.num_args = 1;
 c_735595.num_elt = 5;
@@ -7168,7 +7487,8 @@ static void __lambda_707(int argc, object self_731932, object r_73885) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735597;
-c_735597.tag = closureN_tag;
+c_735597.hdr.mark = 4;
+ c_735597.tag = closureN_tag;
  c_735597.fn = (function_type)__lambda_701;
 c_735597.num_args = 1;
 c_735597.num_elt = 3;
@@ -7179,7 +7499,8 @@ c_735597.elts[2] = ((closureN)self_731932)->elts[3];
 
 
 closureN_type c_735613;
-c_735613.tag = closureN_tag;
+c_735613.hdr.mark = 4;
+ c_735613.tag = closureN_tag;
  c_735613.fn = (function_type)__lambda_706;
 c_735613.num_args = 2;
 c_735613.num_elt = 3;
@@ -7195,7 +7516,8 @@ static void __lambda_706(int argc, object self_731933, object k_73889, object i_
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735615;
-c_735615.tag = closureN_tag;
+c_735615.hdr.mark = 4;
+ c_735615.tag = closureN_tag;
  c_735615.fn = (function_type)__lambda_705;
 c_735615.num_args = 1;
 c_735615.num_elt = 5;
@@ -7216,7 +7538,8 @@ if( !eq(boolean_f, r_73890) ){
 } else { 
   
 closureN_type c_735620;
-c_735620.tag = closureN_tag;
+c_735620.hdr.mark = 4;
+ c_735620.tag = closureN_tag;
  c_735620.fn = (function_type)__lambda_704;
 c_735620.num_args = 1;
 c_735620.num_elt = 5;
@@ -7239,7 +7562,8 @@ static void __lambda_704(int argc, object self_731935, object r_73891) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735622;
-c_735622.tag = closureN_tag;
+c_735622.hdr.mark = 4;
+ c_735622.tag = closureN_tag;
  c_735622.fn = (function_type)__lambda_703;
 c_735622.num_args = 1;
 c_735622.num_elt = 4;
@@ -7256,7 +7580,8 @@ static void __lambda_703(int argc, object self_731936, object r_73893) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735624;
-c_735624.tag = closureN_tag;
+c_735624.hdr.mark = 4;
+ c_735624.tag = closureN_tag;
  c_735624.fn = (function_type)__lambda_702;
 c_735624.num_args = 1;
 c_735624.num_elt = 3;
@@ -7279,7 +7604,8 @@ static void __lambda_701(int argc, object self_731938, object r_73888) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735599;
-c_735599.tag = closureN_tag;
+c_735599.hdr.mark = 4;
+ c_735599.tag = closureN_tag;
  c_735599.fn = (function_type)__lambda_700;
 c_735599.num_args = 1;
 c_735599.num_elt = 3;
@@ -7295,7 +7621,8 @@ static void __lambda_700(int argc, object self_731939, object r_73886) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735601;
-c_735601.tag = closureN_tag;
+c_735601.hdr.mark = 4;
+ c_735601.tag = closureN_tag;
  c_735601.fn = (function_type)__lambda_699;
 c_735601.num_args = 1;
 c_735601.num_elt = 3;
@@ -7316,7 +7643,8 @@ static void __lambda_698(int argc, object self_731941, object k_73895) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735573;
-c_735573.tag = closureN_tag;
+c_735573.hdr.mark = 4;
+ c_735573.tag = closureN_tag;
  c_735573.fn = (function_type)__lambda_697;
 c_735573.num_args = 1;
 c_735573.num_elt = 3;
@@ -7334,7 +7662,8 @@ static void __lambda_697(int argc, object self_731942, object r_73897) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735575;
-c_735575.tag = closureN_tag;
+c_735575.hdr.mark = 4;
+ c_735575.tag = closureN_tag;
  c_735575.fn = (function_type)__lambda_696;
 c_735575.num_args = 1;
 c_735575.num_elt = 3;
@@ -7361,7 +7690,8 @@ static void __lambda_695(int argc, object self_731944, object k_73899) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735549;
-c_735549.tag = closureN_tag;
+c_735549.hdr.mark = 4;
+ c_735549.tag = closureN_tag;
  c_735549.fn = (function_type)__lambda_694;
 c_735549.num_args = 1;
 c_735549.num_elt = 2;
@@ -7378,7 +7708,8 @@ static void __lambda_694(int argc, object self_731945, object r_73901) {
   Cyc_st_add("scheme/base.sld:vector->list");
 
 closureN_type c_735551;
-c_735551.tag = closureN_tag;
+c_735551.hdr.mark = 4;
+ c_735551.tag = closureN_tag;
  c_735551.fn = (function_type)__lambda_693;
 c_735551.num_args = 1;
 c_735551.num_elt = 2;
@@ -7414,7 +7745,8 @@ static void __lambda_691(int argc, closure _,object k_73908, object lst_73385) {
   Cyc_st_add("scheme/base.sld:reverse");
 
 closureN_type c_735520;
-c_735520.tag = closureN_tag;
+c_735520.hdr.mark = 4;
+ c_735520.tag = closureN_tag;
  c_735520.fn = (function_type)__lambda_690;
 c_735520.num_args = 1;
 c_735520.num_elt = 2;
@@ -7434,7 +7766,8 @@ static void __lambda_689(int argc, closure _,object k_73912, object lst_73388, o
   Cyc_st_add("scheme/base.sld:list-set!");
 
 closureN_type c_735510;
-c_735510.tag = closureN_tag;
+c_735510.hdr.mark = 4;
+ c_735510.tag = closureN_tag;
  c_735510.fn = (function_type)__lambda_688;
 c_735510.num_args = 1;
 c_735510.num_elt = 2;
@@ -7449,7 +7782,8 @@ static void __lambda_688(int argc, object self_731948, object r_73913) {
   Cyc_st_add("scheme/base.sld:list-set!");
 
 closureN_type c_735512;
-c_735512.tag = closureN_tag;
+c_735512.hdr.mark = 4;
+ c_735512.tag = closureN_tag;
  c_735512.fn = (function_type)__lambda_687;
 c_735512.num_args = 1;
 c_735512.num_elt = 2;
@@ -7469,7 +7803,8 @@ static void __lambda_686(int argc, closure _,object k_73916, object lst_73391, o
   Cyc_st_add("scheme/base.sld:list-ref");
 
 closureN_type c_735503;
-c_735503.tag = closureN_tag;
+c_735503.hdr.mark = 4;
+ c_735503.tag = closureN_tag;
  c_735503.fn = (function_type)__lambda_685;
 c_735503.num_args = 1;
 c_735503.num_elt = 1;
@@ -7488,7 +7823,8 @@ static void __lambda_684(int argc, closure _,object k_73920, object lst_73393, o
   Cyc_st_add("scheme/base.sld:list-tail");
 
 closureN_type c_735482;
-c_735482.tag = closureN_tag;
+c_735482.hdr.mark = 4;
+ c_735482.tag = closureN_tag;
  c_735482.fn = (function_type)__lambda_683;
 c_735482.num_args = 1;
 c_735482.num_elt = 3;
@@ -7507,7 +7843,8 @@ if( !eq(boolean_f, r_73921) ){
 } else { 
   
 closureN_type c_735487;
-c_735487.tag = closureN_tag;
+c_735487.hdr.mark = 4;
+ c_735487.tag = closureN_tag;
  c_735487.fn = (function_type)__lambda_682;
 c_735487.num_args = 1;
 c_735487.num_elt = 2;
@@ -7523,7 +7860,8 @@ static void __lambda_682(int argc, object self_731952, object r_73922) {
   Cyc_st_add("scheme/base.sld:list-tail");
 
 closureN_type c_735489;
-c_735489.tag = closureN_tag;
+c_735489.hdr.mark = 4;
+ c_735489.tag = closureN_tag;
  c_735489.fn = (function_type)__lambda_681;
 c_735489.num_args = 1;
 c_735489.num_elt = 2;
@@ -7547,7 +7885,8 @@ static void __lambda_680(int argc, closure _,object k_73926, object f_73395, obj
   Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_735455;
-c_735455.tag = closureN_tag;
+c_735455.hdr.mark = 4;
+ c_735455.tag = closureN_tag;
  c_735455.fn = (function_type)__lambda_679;
 c_735455.num_args = 1;
 c_735455.num_elt = 3;
@@ -7564,7 +7903,8 @@ static void __lambda_679(int argc, object self_731954, object r_73927) {
 if( !eq(boolean_f, r_73927) ){ 
   
 closureN_type c_735457;
-c_735457.tag = closureN_tag;
+c_735457.hdr.mark = 4;
+ c_735457.tag = closureN_tag;
  c_735457.fn = (function_type)__lambda_674;
 c_735457.num_args = 0;
 c_735457.num_elt = 1;
@@ -7575,7 +7915,8 @@ return_closcall0((closure)&c_735457);
 } else { 
   
 closureN_type c_735461;
-c_735461.tag = closureN_tag;
+c_735461.hdr.mark = 4;
+ c_735461.tag = closureN_tag;
  c_735461.fn = (function_type)__lambda_678;
 c_735461.num_args = 0;
 c_735461.num_elt = 3;
@@ -7592,7 +7933,8 @@ static void __lambda_678(int argc, object self_731955) {
   Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_735463;
-c_735463.tag = closureN_tag;
+c_735463.hdr.mark = 4;
+ c_735463.tag = closureN_tag;
  c_735463.fn = (function_type)__lambda_677;
 c_735463.num_args = 1;
 c_735463.num_elt = 3;
@@ -7608,7 +7950,8 @@ static void __lambda_677(int argc, object self_731956, object r_73930) {
   Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_735466;
-c_735466.tag = closureN_tag;
+c_735466.hdr.mark = 4;
+ c_735466.tag = closureN_tag;
  c_735466.fn = (function_type)__lambda_676;
 c_735466.num_args = 1;
 c_735466.num_elt = 3;
@@ -7624,7 +7967,8 @@ static void __lambda_676(int argc, object self_731957, object r_73928) {
   Cyc_st_add("scheme/base.sld:for-each");
 
 closureN_type c_735468;
-c_735468.tag = closureN_tag;
+c_735468.hdr.mark = 4;
+ c_735468.tag = closureN_tag;
  c_735468.fn = (function_type)__lambda_675;
 c_735468.num_args = 1;
 c_735468.num_elt = 2;
@@ -7649,7 +7993,8 @@ static void __lambda_673(int argc, closure _,object k_73933, object func_73397, 
   Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_735436;
-c_735436.tag = closureN_tag;
+c_735436.hdr.mark = 4;
+ c_735436.tag = closureN_tag;
  c_735436.fn = (function_type)__lambda_670;
 c_735436.num_args = 1;
 c_735436.num_elt = 2;
@@ -7659,7 +8004,8 @@ c_735436.elts[1] = lst_73396;
 
 
 closureN_type c_735443;
-c_735443.tag = closureN_tag;
+c_735443.hdr.mark = 4;
+ c_735443.tag = closureN_tag;
  c_735443.fn = (function_type)__lambda_672;
 c_735443.num_args = 2;
 c_735443.num_elt = 1;
@@ -7673,7 +8019,8 @@ static void __lambda_672(int argc, object self_731960, object k_73936, object x_
   Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_735446;
-c_735446.tag = closureN_tag;
+c_735446.hdr.mark = 4;
+ c_735446.tag = closureN_tag;
  c_735446.fn = (function_type)__lambda_671;
 c_735446.num_args = 1;
 c_735446.num_elt = 2;
@@ -7695,7 +8042,8 @@ static void __lambda_670(int argc, object self_731962, object r_73934) {
   Cyc_st_add("scheme/base.sld:map");
 
 closureN_type c_735438;
-c_735438.tag = closureN_tag;
+c_735438.hdr.mark = 4;
+ c_735438.tag = closureN_tag;
  c_735438.fn = (function_type)__lambda_669;
 c_735438.num_args = 1;
 c_735438.num_elt = 3;
@@ -7716,7 +8064,8 @@ static void __lambda_668(int argc, closure _,object k_73940, object lst_73400) {
   Cyc_st_add("scheme/base.sld:list-copy");
 
 closureN_type c_735422;
-c_735422.tag = closureN_tag;
+c_735422.hdr.mark = 4;
+ c_735422.tag = closureN_tag;
  c_735422.fn = (function_type)__lambda_666;
 c_735422.num_args = 1;
 c_735422.num_elt = 2;
@@ -7740,7 +8089,8 @@ static void __lambda_666(int argc, object self_731965, object r_73941) {
   Cyc_st_add("scheme/base.sld:list-copy");
 
 closureN_type c_735424;
-c_735424.tag = closureN_tag;
+c_735424.hdr.mark = 4;
+ c_735424.tag = closureN_tag;
  c_735424.fn = (function_type)__lambda_665;
 c_735424.num_args = 1;
 c_735424.num_elt = 3;
@@ -7762,7 +8112,8 @@ load_varargs(fill_73403, fill_73403_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735346;
-c_735346.tag = closureN_tag;
+c_735346.hdr.mark = 4;
+ c_735346.tag = closureN_tag;
  c_735346.fn = (function_type)__lambda_663;
 c_735346.num_args = 2;
 c_735346.num_elt = 3;
@@ -7778,7 +8129,8 @@ static void __lambda_663(int argc, object self_731967, object x_73406, object ma
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735348;
-c_735348.tag = closureN_tag;
+c_735348.hdr.mark = 4;
+ c_735348.tag = closureN_tag;
  c_735348.fn = (function_type)__lambda_662;
 c_735348.num_args = 1;
 c_735348.num_elt = 4;
@@ -7797,7 +8149,8 @@ static void __lambda_662(int argc, object self_731968, object x_73406) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735350;
-c_735350.tag = closureN_tag;
+c_735350.hdr.mark = 4;
+ c_735350.tag = closureN_tag;
  c_735350.fn = (function_type)__lambda_661;
 c_735350.num_args = 1;
 c_735350.num_elt = 4;
@@ -7816,7 +8169,8 @@ static void __lambda_661(int argc, object self_731969, object make_73405) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735352;
-c_735352.tag = closureN_tag;
+c_735352.hdr.mark = 4;
+ c_735352.tag = closureN_tag;
  c_735352.fn = (function_type)__lambda_660;
 c_735352.num_args = 0;
 c_735352.num_elt = 5;
@@ -7834,7 +8188,8 @@ static void __lambda_660(int argc, object self_731970) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735354;
-c_735354.tag = closureN_tag;
+c_735354.hdr.mark = 4;
+ c_735354.tag = closureN_tag;
  c_735354.fn = (function_type)__lambda_651;
 c_735354.num_args = 0;
 c_735354.num_elt = 1;
@@ -7843,7 +8198,8 @@ c_735354.elts[0] = ((closureN)self_731970)->elts[0];
 
 
 closureN_type c_735367;
-c_735367.tag = closureN_tag;
+c_735367.hdr.mark = 4;
+ c_735367.tag = closureN_tag;
  c_735367.fn = (function_type)__lambda_659;
 c_735367.num_args = 1;
 c_735367.num_elt = 4;
@@ -7860,7 +8216,8 @@ static void __lambda_659(int argc, object self_731971, object r_73954) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735369;
-c_735369.tag = closureN_tag;
+c_735369.hdr.mark = 4;
+ c_735369.tag = closureN_tag;
  c_735369.fn = (function_type)__lambda_658;
 c_735369.num_args = 1;
 c_735369.num_elt = 4;
@@ -7877,7 +8234,8 @@ static void __lambda_658(int argc, object self_731972, object r_73947) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735371;
-c_735371.tag = closureN_tag;
+c_735371.hdr.mark = 4;
+ c_735371.tag = closureN_tag;
  c_735371.fn = (function_type)__lambda_653;
 c_735371.num_args = 1;
 c_735371.num_elt = 4;
@@ -7889,7 +8247,8 @@ c_735371.elts[3] = ((closureN)self_731972)->elts[3];
 
 
 closureN_type c_735386;
-c_735386.tag = closureN_tag;
+c_735386.hdr.mark = 4;
+ c_735386.tag = closureN_tag;
  c_735386.fn = (function_type)__lambda_657;
 c_735386.num_args = 2;
 c_735386.num_elt = 1;
@@ -7903,7 +8262,8 @@ static void __lambda_657(int argc, object self_731973, object k_73950, object n_
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735388;
-c_735388.tag = closureN_tag;
+c_735388.hdr.mark = 4;
+ c_735388.tag = closureN_tag;
  c_735388.fn = (function_type)__lambda_656;
 c_735388.num_args = 1;
 c_735388.num_elt = 4;
@@ -7923,7 +8283,8 @@ if( !eq(boolean_f, r_73951) ){
 } else { 
   
 closureN_type c_735392;
-c_735392.tag = closureN_tag;
+c_735392.hdr.mark = 4;
+ c_735392.tag = closureN_tag;
  c_735392.fn = (function_type)__lambda_655;
 c_735392.num_args = 1;
 c_735392.num_elt = 3;
@@ -7944,7 +8305,8 @@ static void __lambda_655(int argc, object self_731975, object r_73953) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735397;
-c_735397.tag = closureN_tag;
+c_735397.hdr.mark = 4;
+ c_735397.tag = closureN_tag;
  c_735397.fn = (function_type)__lambda_654;
 c_735397.num_args = 1;
 c_735397.num_elt = 2;
@@ -7966,7 +8328,8 @@ static void __lambda_653(int argc, object self_731977, object r_73949) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735373;
-c_735373.tag = closureN_tag;
+c_735373.hdr.mark = 4;
+ c_735373.tag = closureN_tag;
  c_735373.fn = (function_type)__lambda_652;
 c_735373.num_args = 1;
 c_735373.num_elt = 4;
@@ -7988,7 +8351,8 @@ static void __lambda_651(int argc, object self_731979, object k_73955) {
   Cyc_st_add("scheme/base.sld:make-list");
 
 closureN_type c_735356;
-c_735356.tag = closureN_tag;
+c_735356.hdr.mark = 4;
+ c_735356.tag = closureN_tag;
  c_735356.fn = (function_type)__lambda_650;
 c_735356.num_args = 1;
 c_735356.num_elt = 2;
@@ -8019,7 +8383,8 @@ load_varargs(lst_73410, lst_73410_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735272;
-c_735272.tag = closureN_tag;
+c_735272.hdr.mark = 4;
+ c_735272.tag = closureN_tag;
  c_735272.fn = (function_type)__lambda_647;
 c_735272.num_args = 1;
 c_735272.num_elt = 2;
@@ -8034,7 +8399,8 @@ static void __lambda_647(int argc, object self_731981, object append_912_73412) 
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735274;
-c_735274.tag = closureN_tag;
+c_735274.hdr.mark = 4;
+ c_735274.tag = closureN_tag;
  c_735274.fn = (function_type)__lambda_646;
 c_735274.num_args = 1;
 c_735274.num_elt = 2;
@@ -8051,7 +8417,8 @@ static void __lambda_646(int argc, object self_731982, object append_912_73412) 
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735276;
-c_735276.tag = closureN_tag;
+c_735276.hdr.mark = 4;
+ c_735276.tag = closureN_tag;
  c_735276.fn = (function_type)__lambda_645;
 c_735276.num_args = 1;
 c_735276.num_elt = 3;
@@ -8067,7 +8434,8 @@ static void __lambda_645(int argc, object self_731983, object append_912_73413) 
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735278;
-c_735278.tag = closureN_tag;
+c_735278.hdr.mark = 4;
+ c_735278.tag = closureN_tag;
  c_735278.fn = (function_type)__lambda_641;
 c_735278.num_args = 1;
 c_735278.num_elt = 3;
@@ -8085,7 +8453,8 @@ static void __lambda_644(int argc, object self_731984, object k_73972, object in
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735329;
-c_735329.tag = closureN_tag;
+c_735329.hdr.mark = 4;
+ c_735329.tag = closureN_tag;
  c_735329.fn = (function_type)__lambda_642;
 c_735329.num_args = 1;
 c_735329.num_elt = 3;
@@ -8115,7 +8484,8 @@ static void __lambda_641(int argc, object self_731987, object r_73971) {
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735280;
-c_735280.tag = closureN_tag;
+c_735280.hdr.mark = 4;
+ c_735280.tag = closureN_tag;
  c_735280.fn = (function_type)__lambda_640;
 c_735280.num_args = 1;
 c_735280.num_elt = 3;
@@ -8131,7 +8501,8 @@ static void __lambda_640(int argc, object self_731988, object r_73963) {
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735282;
-c_735282.tag = closureN_tag;
+c_735282.hdr.mark = 4;
+ c_735282.tag = closureN_tag;
  c_735282.fn = (function_type)__lambda_639;
 c_735282.num_args = 1;
 c_735282.num_elt = 3;
@@ -8150,7 +8521,8 @@ if( !eq(boolean_f, r_73964) ){
 } else { 
   
 closureN_type c_735287;
-c_735287.tag = closureN_tag;
+c_735287.hdr.mark = 4;
+ c_735287.tag = closureN_tag;
  c_735287.fn = (function_type)__lambda_638;
 c_735287.num_args = 1;
 c_735287.num_elt = 3;
@@ -8167,7 +8539,8 @@ static void __lambda_638(int argc, object self_731990, object r_73970) {
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735289;
-c_735289.tag = closureN_tag;
+c_735289.hdr.mark = 4;
+ c_735289.tag = closureN_tag;
  c_735289.fn = (function_type)__lambda_637;
 c_735289.num_args = 1;
 c_735289.num_elt = 3;
@@ -8186,7 +8559,8 @@ if( !eq(boolean_f, r_73965) ){
 } else { 
   
 closureN_type c_735296;
-c_735296.tag = closureN_tag;
+c_735296.hdr.mark = 4;
+ c_735296.tag = closureN_tag;
  c_735296.fn = (function_type)__lambda_635;
 c_735296.num_args = 1;
 c_735296.num_elt = 2;
@@ -8196,7 +8570,8 @@ c_735296.elts[1] = ((closureN)self_731991)->elts[2];
 
 
 closureN_type c_735311;
-c_735311.tag = closureN_tag;
+c_735311.hdr.mark = 4;
+ c_735311.tag = closureN_tag;
  c_735311.fn = (function_type)__lambda_636;
 c_735311.num_args = 2;
 c_735311.num_elt = 1;
@@ -8216,7 +8591,8 @@ static void __lambda_635(int argc, object self_731993, object r_73966) {
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735298;
-c_735298.tag = closureN_tag;
+c_735298.hdr.mark = 4;
+ c_735298.tag = closureN_tag;
  c_735298.fn = (function_type)__lambda_634;
 c_735298.num_args = 1;
 c_735298.num_elt = 3;
@@ -8232,7 +8608,8 @@ static void __lambda_634(int argc, object self_731994, object r_73967) {
   Cyc_st_add("scheme/base.sld:append");
 
 closureN_type c_735300;
-c_735300.tag = closureN_tag;
+c_735300.hdr.mark = 4;
+ c_735300.tag = closureN_tag;
  c_735300.fn = (function_type)__lambda_633;
 c_735300.num_args = 1;
 c_735300.num_elt = 3;
@@ -8274,7 +8651,8 @@ static void __lambda_629(int argc, closure _,object k_73986, object o_73423) {
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735197;
-c_735197.tag = closureN_tag;
+c_735197.hdr.mark = 4;
+ c_735197.tag = closureN_tag;
  c_735197.fn = (function_type)__lambda_628;
 c_735197.num_args = 1;
 c_735197.num_elt = 2;
@@ -8289,7 +8667,8 @@ static void __lambda_628(int argc, object self_731996, object _191list_127_73425
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735199;
-c_735199.tag = closureN_tag;
+c_735199.hdr.mark = 4;
+ c_735199.tag = closureN_tag;
  c_735199.fn = (function_type)__lambda_627;
 c_735199.num_args = 1;
 c_735199.num_elt = 2;
@@ -8306,7 +8685,8 @@ static void __lambda_627(int argc, object self_731997, object _191list_127_73425
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735201;
-c_735201.tag = closureN_tag;
+c_735201.hdr.mark = 4;
+ c_735201.tag = closureN_tag;
  c_735201.fn = (function_type)__lambda_626;
 c_735201.num_args = 1;
 c_735201.num_elt = 3;
@@ -8322,7 +8702,8 @@ static void __lambda_626(int argc, object self_731998, object _191list_127_73426
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735203;
-c_735203.tag = closureN_tag;
+c_735203.hdr.mark = 4;
+ c_735203.tag = closureN_tag;
  c_735203.fn = (function_type)__lambda_618;
 c_735203.num_args = 1;
 c_735203.num_elt = 3;
@@ -8333,7 +8714,8 @@ c_735203.elts[2] = ((closureN)self_731998)->elts[2];
 
 
 closureN_type c_735222;
-c_735222.tag = closureN_tag;
+c_735222.hdr.mark = 4;
+ c_735222.tag = closureN_tag;
  c_735222.fn = (function_type)__lambda_625;
 c_735222.num_args = 1;
 c_735222.num_elt = 1;
@@ -8347,7 +8729,8 @@ static void __lambda_625(int argc, object self_731999, object k_73990, object ob
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735224;
-c_735224.tag = closureN_tag;
+c_735224.hdr.mark = 4;
+ c_735224.tag = closureN_tag;
  c_735224.fn = (function_type)__lambda_624;
 c_735224.num_args = 1;
 c_735224.num_elt = 3;
@@ -8364,7 +8747,8 @@ static void __lambda_624(int argc, object self_732000, object r_73991) {
 if( !eq(boolean_f, r_73991) ){ 
   
 closureN_type c_735226;
-c_735226.tag = closureN_tag;
+c_735226.hdr.mark = 4;
+ c_735226.tag = closureN_tag;
  c_735226.fn = (function_type)__lambda_619;
 c_735226.num_args = 0;
 c_735226.num_elt = 1;
@@ -8375,7 +8759,8 @@ return_closcall0((closure)&c_735226);
 } else { 
   
 closureN_type c_735230;
-c_735230.tag = closureN_tag;
+c_735230.hdr.mark = 4;
+ c_735230.tag = closureN_tag;
  c_735230.fn = (function_type)__lambda_623;
 c_735230.num_args = 1;
 c_735230.num_elt = 3;
@@ -8393,7 +8778,8 @@ static void __lambda_623(int argc, object self_732001, object r_73992) {
 if( !eq(boolean_f, r_73992) ){ 
   
 closureN_type c_735232;
-c_735232.tag = closureN_tag;
+c_735232.hdr.mark = 4;
+ c_735232.tag = closureN_tag;
  c_735232.fn = (function_type)__lambda_621;
 c_735232.num_args = 0;
 c_735232.num_elt = 3;
@@ -8406,7 +8792,8 @@ return_closcall0((closure)&c_735232);
 } else { 
   
 closureN_type c_735244;
-c_735244.tag = closureN_tag;
+c_735244.hdr.mark = 4;
+ c_735244.tag = closureN_tag;
  c_735244.fn = (function_type)__lambda_622;
 c_735244.num_args = 0;
 c_735244.num_elt = 1;
@@ -8426,7 +8813,8 @@ static void __lambda_621(int argc, object self_732003) {
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735234;
-c_735234.tag = closureN_tag;
+c_735234.hdr.mark = 4;
+ c_735234.tag = closureN_tag;
  c_735234.fn = (function_type)__lambda_620;
 c_735234.num_args = 1;
 c_735234.num_elt = 2;
@@ -8451,7 +8839,8 @@ static void __lambda_618(int argc, object self_732006, object r_73989) {
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735205;
-c_735205.tag = closureN_tag;
+c_735205.hdr.mark = 4;
+ c_735205.tag = closureN_tag;
  c_735205.fn = (function_type)__lambda_617;
 c_735205.num_args = 1;
 c_735205.num_elt = 3;
@@ -8467,7 +8856,8 @@ static void __lambda_617(int argc, object self_732007, object r_73987) {
   Cyc_st_add("scheme/base.sld:list?");
 
 closureN_type c_735207;
-c_735207.tag = closureN_tag;
+c_735207.hdr.mark = 4;
+ c_735207.tag = closureN_tag;
  c_735207.fn = (function_type)__lambda_616;
 c_735207.num_args = 1;
 c_735207.num_elt = 3;
@@ -8502,7 +8892,8 @@ load_varargs(port_73429, port_73429_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:newline");
 
 closureN_type c_735183;
-c_735183.tag = closureN_tag;
+c_735183.hdr.mark = 4;
+ c_735183.tag = closureN_tag;
  c_735183.fn = (function_type)__lambda_613;
 c_735183.num_args = 1;
 c_735183.num_elt = 1;
@@ -8526,7 +8917,8 @@ load_varargs(port_73430, port_73430_raw, argc - 2);
   Cyc_st_add("scheme/base.sld:write-char");
 
 closureN_type c_735161;
-c_735161.tag = closureN_tag;
+c_735161.hdr.mark = 4;
+ c_735161.tag = closureN_tag;
  c_735161.fn = (function_type)__lambda_611;
 c_735161.num_args = 1;
 c_735161.num_elt = 3;
@@ -8543,7 +8935,8 @@ static void __lambda_611(int argc, object self_732010, object r_731004) {
 if( !eq(boolean_f, r_731004) ){ 
   
 closureN_type c_735163;
-c_735163.tag = closureN_tag;
+c_735163.hdr.mark = 4;
+ c_735163.tag = closureN_tag;
  c_735163.fn = (function_type)__lambda_609;
 c_735163.num_args = 1;
 c_735163.num_elt = 2;
@@ -8555,7 +8948,8 @@ return_closcall1(  __glo_current_91output_91port,  &c_735163);
 } else { 
   
 closureN_type c_735170;
-c_735170.tag = closureN_tag;
+c_735170.hdr.mark = 4;
+ c_735170.tag = closureN_tag;
  c_735170.fn = (function_type)__lambda_610;
 c_735170.num_args = 1;
 c_735170.num_elt = 2;
@@ -8582,7 +8976,8 @@ load_varargs(port_73432, port_73432_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:flush-output-port");
 
 closureN_type c_735141;
-c_735141.tag = closureN_tag;
+c_735141.hdr.mark = 4;
+ c_735141.tag = closureN_tag;
  c_735141.fn = (function_type)__lambda_607;
 c_735141.num_args = 1;
 c_735141.num_elt = 2;
@@ -8598,7 +8993,8 @@ static void __lambda_607(int argc, object self_732013, object r_731010) {
 if( !eq(boolean_f, r_731010) ){ 
   
 closureN_type c_735143;
-c_735143.tag = closureN_tag;
+c_735143.hdr.mark = 4;
+ c_735143.tag = closureN_tag;
  c_735143.fn = (function_type)__lambda_605;
 c_735143.num_args = 1;
 c_735143.num_elt = 1;
@@ -8609,7 +9005,8 @@ return_closcall1(  __glo_current_91output_91port,  &c_735143);
 } else { 
   
 closureN_type c_735149;
-c_735149.tag = closureN_tag;
+c_735149.hdr.mark = 4;
+ c_735149.tag = closureN_tag;
  c_735149.fn = (function_type)__lambda_606;
 c_735149.num_args = 1;
 c_735149.num_elt = 1;
@@ -8635,7 +9032,8 @@ load_varargs(port_73433, port_73433_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:read-line");
 
 closureN_type c_735119;
-c_735119.tag = closureN_tag;
+c_735119.hdr.mark = 4;
+ c_735119.tag = closureN_tag;
  c_735119.fn = (function_type)__lambda_603;
 c_735119.num_args = 1;
 c_735119.num_elt = 2;
@@ -8651,7 +9049,8 @@ static void __lambda_603(int argc, object self_732016, object r_731016) {
 if( !eq(boolean_f, r_731016) ){ 
   
 closureN_type c_735121;
-c_735121.tag = closureN_tag;
+c_735121.hdr.mark = 4;
+ c_735121.tag = closureN_tag;
  c_735121.fn = (function_type)__lambda_601;
 c_735121.num_args = 1;
 c_735121.num_elt = 1;
@@ -8662,7 +9061,8 @@ return_closcall1(  __glo_current_91output_91port,  &c_735121);
 } else { 
   
 closureN_type c_735128;
-c_735128.tag = closureN_tag;
+c_735128.hdr.mark = 4;
+ c_735128.tag = closureN_tag;
  c_735128.fn = (function_type)__lambda_602;
 c_735128.num_args = 1;
 c_735128.num_elt = 1;
@@ -8691,7 +9091,8 @@ static void __lambda_600(int argc, closure _,object k_731021, object func_73436,
   Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_735093;
-c_735093.tag = closureN_tag;
+c_735093.hdr.mark = 4;
+ c_735093.tag = closureN_tag;
  c_735093.fn = (function_type)__lambda_599;
 c_735093.num_args = 1;
 c_735093.num_elt = 4;
@@ -8711,7 +9112,8 @@ if( !eq(boolean_f, r_731022) ){
 } else { 
   
 closureN_type c_735098;
-c_735098.tag = closureN_tag;
+c_735098.hdr.mark = 4;
+ c_735098.tag = closureN_tag;
  c_735098.fn = (function_type)__lambda_598;
 c_735098.num_args = 1;
 c_735098.num_elt = 4;
@@ -8729,7 +9131,8 @@ static void __lambda_598(int argc, object self_732020, object r_731023) {
   Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_735100;
-c_735100.tag = closureN_tag;
+c_735100.hdr.mark = 4;
+ c_735100.tag = closureN_tag;
  c_735100.fn = (function_type)__lambda_597;
 c_735100.num_args = 1;
 c_735100.num_elt = 4;
@@ -8746,7 +9149,8 @@ static void __lambda_597(int argc, object self_732021, object r_731025) {
   Cyc_st_add("scheme/base.sld:foldr");
 
 closureN_type c_735102;
-c_735102.tag = closureN_tag;
+c_735102.hdr.mark = 4;
+ c_735102.tag = closureN_tag;
  c_735102.fn = (function_type)__lambda_596;
 c_735102.num_args = 1;
 c_735102.num_elt = 3;
@@ -8767,7 +9171,8 @@ static void __lambda_595(int argc, closure _,object k_731028, object func_73439,
   Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_735067;
-c_735067.tag = closureN_tag;
+c_735067.hdr.mark = 4;
+ c_735067.tag = closureN_tag;
  c_735067.fn = (function_type)__lambda_594;
 c_735067.num_args = 1;
 c_735067.num_elt = 4;
@@ -8787,7 +9192,8 @@ if( !eq(boolean_f, r_731029) ){
 } else { 
   
 closureN_type c_735072;
-c_735072.tag = closureN_tag;
+c_735072.hdr.mark = 4;
+ c_735072.tag = closureN_tag;
  c_735072.fn = (function_type)__lambda_593;
 c_735072.num_args = 1;
 c_735072.num_elt = 4;
@@ -8805,7 +9211,8 @@ static void __lambda_593(int argc, object self_732024, object r_731032) {
   Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_735075;
-c_735075.tag = closureN_tag;
+c_735075.hdr.mark = 4;
+ c_735075.tag = closureN_tag;
  c_735075.fn = (function_type)__lambda_592;
 c_735075.num_args = 1;
 c_735075.num_elt = 3;
@@ -8821,7 +9228,8 @@ static void __lambda_592(int argc, object self_732025, object r_731030) {
   Cyc_st_add("scheme/base.sld:foldl");
 
 closureN_type c_735077;
-c_735077.tag = closureN_tag;
+c_735077.hdr.mark = 4;
+ c_735077.tag = closureN_tag;
  c_735077.fn = (function_type)__lambda_591;
 c_735077.num_args = 1;
 c_735077.num_elt = 3;
@@ -8842,7 +9250,8 @@ static void __lambda_590(int argc, closure _,object k_731035, object str1_73441,
   Cyc_st_add("scheme/base.sld:string>=?");
 
 closureN_type c_735056;
-c_735056.tag = closureN_tag;
+c_735056.hdr.mark = 4;
+ c_735056.tag = closureN_tag;
  c_735056.fn = (function_type)__lambda_589;
 c_735056.num_args = 1;
 c_735056.num_elt = 1;
@@ -8865,7 +9274,8 @@ static void __lambda_588(int argc, closure _,object k_731039, object str1_73443,
   Cyc_st_add("scheme/base.sld:string>?");
 
 closureN_type c_735045;
-c_735045.tag = closureN_tag;
+c_735045.hdr.mark = 4;
+ c_735045.tag = closureN_tag;
  c_735045.fn = (function_type)__lambda_587;
 c_735045.num_args = 1;
 c_735045.num_elt = 1;
@@ -8888,7 +9298,8 @@ static void __lambda_586(int argc, closure _,object k_731043, object str1_73445,
   Cyc_st_add("scheme/base.sld:string<=?");
 
 closureN_type c_735034;
-c_735034.tag = closureN_tag;
+c_735034.hdr.mark = 4;
+ c_735034.tag = closureN_tag;
  c_735034.fn = (function_type)__lambda_585;
 c_735034.num_args = 1;
 c_735034.num_elt = 1;
@@ -8911,7 +9322,8 @@ static void __lambda_584(int argc, closure _,object k_731047, object str1_73447,
   Cyc_st_add("scheme/base.sld:string<?");
 
 closureN_type c_735023;
-c_735023.tag = closureN_tag;
+c_735023.hdr.mark = 4;
+ c_735023.tag = closureN_tag;
  c_735023.fn = (function_type)__lambda_583;
 c_735023.num_args = 1;
 c_735023.num_elt = 1;
@@ -8934,7 +9346,8 @@ static void __lambda_582(int argc, closure _,object k_731051, object str1_73449,
   Cyc_st_add("scheme/base.sld:string=?");
 
 closureN_type c_735012;
-c_735012.tag = closureN_tag;
+c_735012.hdr.mark = 4;
+ c_735012.tag = closureN_tag;
  c_735012.fn = (function_type)__lambda_581;
 c_735012.num_args = 1;
 c_735012.num_elt = 1;
@@ -8958,7 +9371,8 @@ load_varargs(cs_73450, cs_73450_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:char>=?");
 
 closureN_type c_735003;
-c_735003.tag = closureN_tag;
+c_735003.hdr.mark = 4;
+ c_735003.tag = closureN_tag;
  c_735003.fn = (function_type)__lambda_579;
 c_735003.num_args = 1;
 c_735003.num_elt = 2;
@@ -8981,7 +9395,8 @@ load_varargs(cs_73453, cs_73453_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:char<=?");
 
 closureN_type c_734994;
-c_734994.tag = closureN_tag;
+c_734994.hdr.mark = 4;
+ c_734994.tag = closureN_tag;
  c_734994.fn = (function_type)__lambda_577;
 c_734994.num_args = 1;
 c_734994.num_elt = 2;
@@ -9004,7 +9419,8 @@ load_varargs(cs_73456, cs_73456_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:char>?");
 
 closureN_type c_734985;
-c_734985.tag = closureN_tag;
+c_734985.hdr.mark = 4;
+ c_734985.tag = closureN_tag;
  c_734985.fn = (function_type)__lambda_575;
 c_734985.num_args = 1;
 c_734985.num_elt = 2;
@@ -9027,7 +9443,8 @@ load_varargs(cs_73459, cs_73459_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:char<?");
 
 closureN_type c_734976;
-c_734976.tag = closureN_tag;
+c_734976.hdr.mark = 4;
+ c_734976.tag = closureN_tag;
  c_734976.fn = (function_type)__lambda_573;
 c_734976.num_args = 1;
 c_734976.num_elt = 2;
@@ -9050,7 +9467,8 @@ load_varargs(cs_73462, cs_73462_raw, argc - 3);
   Cyc_st_add("scheme/base.sld:char=?");
 
 closureN_type c_734967;
-c_734967.tag = closureN_tag;
+c_734967.hdr.mark = 4;
+ c_734967.tag = closureN_tag;
  c_734967.fn = (function_type)__lambda_571;
 c_734967.num_args = 1;
 c_734967.num_elt = 2;
@@ -9072,7 +9490,8 @@ static void __lambda_570(int argc, closure _,object k_731075, object cmp_73467, 
   Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_734944;
-c_734944.tag = closureN_tag;
+c_734944.hdr.mark = 4;
+ c_734944.tag = closureN_tag;
  c_734944.fn = (function_type)__lambda_566;
 c_734944.num_args = 1;
 c_734944.num_elt = 3;
@@ -9083,7 +9502,8 @@ c_734944.elts[2] = k_731075;
 
 
 closureN_type c_734949;
-c_734949.tag = closureN_tag;
+c_734949.hdr.mark = 4;
+ c_734949.tag = closureN_tag;
  c_734949.fn = (function_type)__lambda_569;
 c_734949.num_args = 2;
 c_734949.num_elt = 1;
@@ -9097,7 +9517,8 @@ static void __lambda_569(int argc, object self_732037, object k_731077, object x
   Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_734951;
-c_734951.tag = closureN_tag;
+c_734951.hdr.mark = 4;
+ c_734951.tag = closureN_tag;
  c_734951.fn = (function_type)__lambda_568;
 c_734951.num_args = 1;
 c_734951.num_elt = 3;
@@ -9115,7 +9536,8 @@ static void __lambda_568(int argc, object self_732038, object r_731078) {
   Cyc_st_add("scheme/base.sld:Cyc-bin-op-char");
 
 closureN_type c_734953;
-c_734953.tag = closureN_tag;
+c_734953.hdr.mark = 4;
+ c_734953.tag = closureN_tag;
  c_734953.fn = (function_type)__lambda_567;
 c_734953.num_args = 1;
 c_734953.num_elt = 3;
@@ -9143,7 +9565,8 @@ static void __lambda_565(int argc, closure _,object k_731082, object cmp_73472, 
   Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_734906;
-c_734906.tag = closureN_tag;
+c_734906.hdr.mark = 4;
+ c_734906.tag = closureN_tag;
  c_734906.fn = (function_type)__lambda_564;
 c_734906.num_args = 1;
 c_734906.num_elt = 4;
@@ -9161,7 +9584,8 @@ static void __lambda_564(int argc, object self_732041, object r_731083) {
 if( !eq(boolean_f, r_731083) ){ 
   
 closureN_type c_734908;
-c_734908.tag = closureN_tag;
+c_734908.hdr.mark = 4;
+ c_734908.tag = closureN_tag;
  c_734908.fn = (function_type)__lambda_557;
 c_734908.num_args = 0;
 c_734908.num_elt = 1;
@@ -9172,7 +9596,8 @@ return_closcall0((closure)&c_734908);
 } else { 
   
 closureN_type c_734912;
-c_734912.tag = closureN_tag;
+c_734912.hdr.mark = 4;
+ c_734912.tag = closureN_tag;
  c_734912.fn = (function_type)__lambda_563;
 c_734912.num_args = 1;
 c_734912.num_elt = 4;
@@ -9190,7 +9615,8 @@ static void __lambda_563(int argc, object self_732042, object r_731087) {
   Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_734915;
-c_734915.tag = closureN_tag;
+c_734915.hdr.mark = 4;
+ c_734915.tag = closureN_tag;
  c_734915.fn = (function_type)__lambda_562;
 c_734915.num_args = 1;
 c_734915.num_elt = 3;
@@ -9207,7 +9633,8 @@ static void __lambda_562(int argc, object self_732043, object r_731084) {
 if( !eq(boolean_f, r_731084) ){ 
   
 closureN_type c_734917;
-c_734917.tag = closureN_tag;
+c_734917.hdr.mark = 4;
+ c_734917.tag = closureN_tag;
  c_734917.fn = (function_type)__lambda_560;
 c_734917.num_args = 0;
 c_734917.num_elt = 3;
@@ -9220,7 +9647,8 @@ return_closcall0((closure)&c_734917);
 } else { 
   
 closureN_type c_734933;
-c_734933.tag = closureN_tag;
+c_734933.hdr.mark = 4;
+ c_734933.tag = closureN_tag;
  c_734933.fn = (function_type)__lambda_561;
 c_734933.num_args = 0;
 c_734933.num_elt = 1;
@@ -9240,7 +9668,8 @@ static void __lambda_560(int argc, object self_732045) {
   Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_734919;
-c_734919.tag = closureN_tag;
+c_734919.hdr.mark = 4;
+ c_734919.tag = closureN_tag;
  c_734919.fn = (function_type)__lambda_559;
 c_734919.num_args = 1;
 c_734919.num_elt = 3;
@@ -9256,7 +9685,8 @@ static void __lambda_559(int argc, object self_732046, object r_731085) {
   Cyc_st_add("scheme/base.sld:Cyc-bin-op");
 
 closureN_type c_734921;
-c_734921.tag = closureN_tag;
+c_734921.hdr.mark = 4;
+ c_734921.tag = closureN_tag;
  c_734921.fn = (function_type)__lambda_558;
 c_734921.num_args = 1;
 c_734921.num_elt = 3;
@@ -9282,7 +9712,8 @@ static void __lambda_556(int argc, closure _,object k_731090, object port_73474,
   Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_734893;
-c_734893.tag = closureN_tag;
+c_734893.hdr.mark = 4;
+ c_734893.tag = closureN_tag;
  c_734893.fn = (function_type)__lambda_555;
 c_734893.num_args = 1;
 c_734893.num_elt = 2;
@@ -9297,7 +9728,8 @@ static void __lambda_555(int argc, object self_732049, object r_731091) {
   Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_734895;
-c_734895.tag = closureN_tag;
+c_734895.hdr.mark = 4;
+ c_734895.tag = closureN_tag;
  c_734895.fn = (function_type)__lambda_554;
 c_734895.num_args = 1;
 c_734895.num_elt = 2;
@@ -9312,7 +9744,8 @@ static void __lambda_554(int argc, object self_732050, object result_73475) {
   Cyc_st_add("scheme/base.sld:call-with-port");
 
 closureN_type c_734897;
-c_734897.tag = closureN_tag;
+c_734897.hdr.mark = 4;
+ c_734897.tag = closureN_tag;
  c_734897.fn = (function_type)__lambda_553;
 c_734897.num_args = 1;
 c_734897.num_elt = 2;
@@ -9332,7 +9765,8 @@ static void __lambda_552(int argc, closure _,object k_731095, object before_7347
   Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_734878;
-c_734878.tag = closureN_tag;
+c_734878.hdr.mark = 4;
+ c_734878.tag = closureN_tag;
  c_734878.fn = (function_type)__lambda_551;
 c_734878.num_args = 1;
 c_734878.num_elt = 3;
@@ -9348,7 +9782,8 @@ static void __lambda_551(int argc, object self_732052, object r_731096) {
   Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_734880;
-c_734880.tag = closureN_tag;
+c_734880.hdr.mark = 4;
+ c_734880.tag = closureN_tag;
  c_734880.fn = (function_type)__lambda_548;
 c_734880.num_args = 1;
 c_734880.num_elt = 2;
@@ -9358,7 +9793,8 @@ c_734880.elts[1] = ((closureN)self_732052)->elts[2];
 
 
 closureN_type c_734884;
-c_734884.tag = closureN_tag;
+c_734884.hdr.mark = 4;
+ c_734884.tag = closureN_tag;
  c_734884.fn = (function_type)__lambda_550;
 c_734884.num_args = 1;
 c_734884.num_elt = 1;
@@ -9372,7 +9808,8 @@ static void __lambda_550(int argc, object self_732053, object k_731098, object r
   Cyc_st_add("scheme/base.sld:dynamic-wind");
 
 closureN_type c_734887;
-c_734887.tag = closureN_tag;
+c_734887.hdr.mark = 4;
+ c_734887.tag = closureN_tag;
  c_734887.fn = (function_type)__lambda_549;
 c_734887.num_args = 1;
 c_734887.num_elt = 2;
@@ -9398,7 +9835,8 @@ load_varargs(things_73480, things_73480_raw, argc - 1);
   Cyc_st_add("scheme/base.sld:values");
 
 closureN_type c_734867;
-c_734867.tag = closureN_tag;
+c_734867.hdr.mark = 4;
+ c_734867.tag = closureN_tag;
  c_734867.fn = (function_type)__lambda_545;
 c_734867.num_args = 1;
 c_734867.num_elt = 1;
@@ -9407,7 +9845,8 @@ c_734867.elts[0] = k_731102;
 
 
 closureN_type c_734870;
-c_734870.tag = closureN_tag;
+c_734870.hdr.mark = 4;
+ c_734870.tag = closureN_tag;
  c_734870.fn = (function_type)__lambda_546;
 c_734870.num_args = 1;
 c_734870.num_elt = 1;
@@ -9433,7 +9872,8 @@ static void __lambda_544(int argc, closure _,object k_731109, object expr_73484,
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734453;
-c_734453.tag = closureN_tag;
+c_734453.hdr.mark = 4;
+ c_734453.tag = closureN_tag;
  c_734453.fn = (function_type)__lambda_543;
 c_734453.num_args = 1;
 c_734453.num_elt = 4;
@@ -9450,7 +9890,8 @@ static void __lambda_543(int argc, object self_732058, object qq_73486) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734455;
-c_734455.tag = closureN_tag;
+c_734455.hdr.mark = 4;
+ c_734455.tag = closureN_tag;
  c_734455.fn = (function_type)__lambda_542;
 c_734455.num_args = 1;
 c_734455.num_elt = 4;
@@ -9469,7 +9910,8 @@ static void __lambda_542(int argc, object self_732059, object qq_73486) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734457;
-c_734457.tag = closureN_tag;
+c_734457.hdr.mark = 4;
+ c_734457.tag = closureN_tag;
  c_734457.fn = (function_type)__lambda_541;
 c_734457.num_args = 1;
 c_734457.num_elt = 5;
@@ -9487,7 +9929,8 @@ static void __lambda_541(int argc, object self_732060, object qq_73487) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734459;
-c_734459.tag = closureN_tag;
+c_734459.hdr.mark = 4;
+ c_734459.tag = closureN_tag;
  c_734459.fn = (function_type)__lambda_449;
 c_734459.num_args = 1;
 c_734459.num_elt = 3;
@@ -9498,7 +9941,8 @@ c_734459.elts[2] = ((closureN)self_732060)->elts[3];
 
 
 closureN_type c_734476;
-c_734476.tag = closureN_tag;
+c_734476.hdr.mark = 4;
+ c_734476.tag = closureN_tag;
  c_734476.fn = (function_type)__lambda_540;
 c_734476.num_args = 2;
 c_734476.num_elt = 3;
@@ -9514,7 +9958,8 @@ static void __lambda_540(int argc, object self_732061, object k_731113, object x
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734478;
-c_734478.tag = closureN_tag;
+c_734478.hdr.mark = 4;
+ c_734478.tag = closureN_tag;
  c_734478.fn = (function_type)__lambda_539;
 c_734478.num_args = 1;
 c_734478.num_elt = 6;
@@ -9534,7 +9979,8 @@ static void __lambda_539(int argc, object self_732062, object r_731114) {
 if( !eq(boolean_f, r_731114) ){ 
   
 closureN_type c_734480;
-c_734480.tag = closureN_tag;
+c_734480.hdr.mark = 4;
+ c_734480.tag = closureN_tag;
  c_734480.fn = (function_type)__lambda_525;
 c_734480.num_args = 0;
 c_734480.num_elt = 6;
@@ -9550,7 +9996,8 @@ return_closcall0((closure)&c_734480);
 } else { 
   
 closureN_type c_734807;
-c_734807.tag = closureN_tag;
+c_734807.hdr.mark = 4;
+ c_734807.tag = closureN_tag;
  c_734807.fn = (function_type)__lambda_538;
 c_734807.num_args = 1;
 c_734807.num_elt = 5;
@@ -9570,7 +10017,8 @@ static void __lambda_538(int argc, object self_732063, object r_731185) {
 if( !eq(boolean_f, r_731185) ){ 
   
 closureN_type c_734809;
-c_734809.tag = closureN_tag;
+c_734809.hdr.mark = 4;
+ c_734809.tag = closureN_tag;
  c_734809.fn = (function_type)__lambda_530;
 c_734809.num_args = 0;
 c_734809.num_elt = 5;
@@ -9585,7 +10033,8 @@ return_closcall0((closure)&c_734809);
 } else { 
   
 closureN_type c_734828;
-c_734828.tag = closureN_tag;
+c_734828.hdr.mark = 4;
+ c_734828.tag = closureN_tag;
  c_734828.fn = (function_type)__lambda_532;
 c_734828.num_args = 0;
 c_734828.num_elt = 1;
@@ -9594,7 +10043,8 @@ c_734828.elts[0] = ((closureN)self_732063)->elts[4];
 
 
 closureN_type c_734841;
-c_734841.tag = closureN_tag;
+c_734841.hdr.mark = 4;
+ c_734841.tag = closureN_tag;
  c_734841.fn = (function_type)__lambda_537;
 c_734841.num_args = 1;
 c_734841.num_elt = 3;
@@ -9612,7 +10062,8 @@ static void __lambda_537(int argc, object self_732064, object r_731190) {
 if( !eq(boolean_f, r_731190) ){ 
   
 closureN_type c_734843;
-c_734843.tag = closureN_tag;
+c_734843.hdr.mark = 4;
+ c_734843.tag = closureN_tag;
  c_734843.fn = (function_type)__lambda_535;
 c_734843.num_args = 0;
 c_734843.num_elt = 3;
@@ -9625,7 +10076,8 @@ return_closcall0((closure)&c_734843);
 } else { 
   
 closureN_type c_734853;
-c_734853.tag = closureN_tag;
+c_734853.hdr.mark = 4;
+ c_734853.tag = closureN_tag;
  c_734853.fn = (function_type)__lambda_536;
 c_734853.num_args = 0;
 c_734853.num_elt = 2;
@@ -9646,7 +10098,8 @@ static void __lambda_535(int argc, object self_732066) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734845;
-c_734845.tag = closureN_tag;
+c_734845.hdr.mark = 4;
+ c_734845.tag = closureN_tag;
  c_734845.fn = (function_type)__lambda_534;
 c_734845.num_args = 1;
 c_734845.num_elt = 3;
@@ -9662,7 +10115,8 @@ static void __lambda_534(int argc, object self_732067, object r_731192) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734848;
-c_734848.tag = closureN_tag;
+c_734848.hdr.mark = 4;
+ c_734848.tag = closureN_tag;
  c_734848.fn = (function_type)__lambda_533;
 c_734848.num_args = 1;
 c_734848.num_elt = 2;
@@ -9682,7 +10136,8 @@ static void __lambda_532(int argc, object self_732069, object k_731193) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734830;
-c_734830.tag = closureN_tag;
+c_734830.hdr.mark = 4;
+ c_734830.tag = closureN_tag;
  c_734830.fn = (function_type)__lambda_531;
 c_734830.num_args = 1;
 c_734830.num_elt = 2;
@@ -9706,7 +10161,8 @@ static void __lambda_530(int argc, object self_732071) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734811;
-c_734811.tag = closureN_tag;
+c_734811.hdr.mark = 4;
+ c_734811.tag = closureN_tag;
  c_734811.fn = (function_type)__lambda_529;
 c_734811.num_args = 1;
 c_734811.num_elt = 5;
@@ -9724,7 +10180,8 @@ static void __lambda_529(int argc, object self_732072, object r_731189) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734814;
-c_734814.tag = closureN_tag;
+c_734814.hdr.mark = 4;
+ c_734814.tag = closureN_tag;
  c_734814.fn = (function_type)__lambda_528;
 c_734814.num_args = 1;
 c_734814.num_elt = 4;
@@ -9741,7 +10198,8 @@ static void __lambda_528(int argc, object self_732073, object r_731186) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734816;
-c_734816.tag = closureN_tag;
+c_734816.hdr.mark = 4;
+ c_734816.tag = closureN_tag;
  c_734816.fn = (function_type)__lambda_527;
 c_734816.num_args = 1;
 c_734816.num_elt = 4;
@@ -9758,7 +10216,8 @@ static void __lambda_527(int argc, object self_732074, object r_731188) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734821;
-c_734821.tag = closureN_tag;
+c_734821.hdr.mark = 4;
+ c_734821.tag = closureN_tag;
  c_734821.fn = (function_type)__lambda_526;
 c_734821.num_args = 1;
 c_734821.num_elt = 2;
@@ -9778,7 +10237,8 @@ static void __lambda_525(int argc, object self_732076) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734482;
-c_734482.tag = closureN_tag;
+c_734482.hdr.mark = 4;
+ c_734482.tag = closureN_tag;
  c_734482.fn = (function_type)__lambda_524;
 c_734482.num_args = 1;
 c_734482.num_elt = 6;
@@ -9797,7 +10257,8 @@ static void __lambda_524(int argc, object self_732077, object r_731184) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734485;
-c_734485.tag = closureN_tag;
+c_734485.hdr.mark = 4;
+ c_734485.tag = closureN_tag;
  c_734485.fn = (function_type)__lambda_523;
 c_734485.num_args = 1;
 c_734485.num_elt = 6;
@@ -9816,7 +10277,8 @@ static void __lambda_523(int argc, object self_732078, object r_731182) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734487;
-c_734487.tag = closureN_tag;
+c_734487.hdr.mark = 4;
+ c_734487.tag = closureN_tag;
  c_734487.fn = (function_type)__lambda_522;
 c_734487.num_args = 1;
 c_734487.num_elt = 7;
@@ -9836,7 +10298,8 @@ static void __lambda_522(int argc, object self_732079, object r_731183) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734490;
-c_734490.tag = closureN_tag;
+c_734490.hdr.mark = 4;
+ c_734490.tag = closureN_tag;
  c_734490.fn = (function_type)__lambda_521;
 c_734490.num_args = 1;
 c_734490.num_elt = 6;
@@ -9856,7 +10319,8 @@ static void __lambda_521(int argc, object self_732080, object r_731115) {
 if( !eq(boolean_f, r_731115) ){ 
   
 closureN_type c_734492;
-c_734492.tag = closureN_tag;
+c_734492.hdr.mark = 4;
+ c_734492.tag = closureN_tag;
  c_734492.fn = (function_type)__lambda_460;
 c_734492.num_args = 0;
 c_734492.num_elt = 5;
@@ -9871,7 +10335,8 @@ return_closcall0((closure)&c_734492);
 } else { 
   
 closureN_type c_734542;
-c_734542.tag = closureN_tag;
+c_734542.hdr.mark = 4;
+ c_734542.tag = closureN_tag;
  c_734542.fn = (function_type)__lambda_520;
 c_734542.num_args = 1;
 c_734542.num_elt = 6;
@@ -9891,7 +10356,8 @@ static void __lambda_520(int argc, object self_732081, object r_731181) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734545;
-c_734545.tag = closureN_tag;
+c_734545.hdr.mark = 4;
+ c_734545.tag = closureN_tag;
  c_734545.fn = (function_type)__lambda_519;
 c_734545.num_args = 1;
 c_734545.num_elt = 6;
@@ -9910,7 +10376,8 @@ static void __lambda_519(int argc, object self_732082, object r_731179) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734547;
-c_734547.tag = closureN_tag;
+c_734547.hdr.mark = 4;
+ c_734547.tag = closureN_tag;
  c_734547.fn = (function_type)__lambda_518;
 c_734547.num_args = 1;
 c_734547.num_elt = 7;
@@ -9930,7 +10397,8 @@ static void __lambda_518(int argc, object self_732083, object r_731180) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734550;
-c_734550.tag = closureN_tag;
+c_734550.hdr.mark = 4;
+ c_734550.tag = closureN_tag;
  c_734550.fn = (function_type)__lambda_517;
 c_734550.num_args = 1;
 c_734550.num_elt = 6;
@@ -9950,7 +10418,8 @@ static void __lambda_517(int argc, object self_732084, object r_731126) {
 if( !eq(boolean_f, r_731126) ){ 
   
 closureN_type c_734552;
-c_734552.tag = closureN_tag;
+c_734552.hdr.mark = 4;
+ c_734552.tag = closureN_tag;
  c_734552.fn = (function_type)__lambda_477;
 c_734552.num_args = 0;
 c_734552.num_elt = 5;
@@ -9965,7 +10434,8 @@ return_closcall0((closure)&c_734552);
 } else { 
   
 closureN_type c_734628;
-c_734628.tag = closureN_tag;
+c_734628.hdr.mark = 4;
+ c_734628.tag = closureN_tag;
  c_734628.fn = (function_type)__lambda_516;
 c_734628.num_args = 1;
 c_734628.num_elt = 6;
@@ -9985,7 +10455,8 @@ static void __lambda_516(int argc, object self_732085, object r_731178) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734631;
-c_734631.tag = closureN_tag;
+c_734631.hdr.mark = 4;
+ c_734631.tag = closureN_tag;
  c_734631.fn = (function_type)__lambda_515;
 c_734631.num_args = 1;
 c_734631.num_elt = 6;
@@ -10004,7 +10475,8 @@ static void __lambda_515(int argc, object self_732086, object r_731176) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734633;
-c_734633.tag = closureN_tag;
+c_734633.hdr.mark = 4;
+ c_734633.tag = closureN_tag;
  c_734633.fn = (function_type)__lambda_514;
 c_734633.num_args = 1;
 c_734633.num_elt = 7;
@@ -10024,7 +10496,8 @@ static void __lambda_514(int argc, object self_732087, object r_731177) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734636;
-c_734636.tag = closureN_tag;
+c_734636.hdr.mark = 4;
+ c_734636.tag = closureN_tag;
  c_734636.fn = (function_type)__lambda_513;
 c_734636.num_args = 1;
 c_734636.num_elt = 6;
@@ -10044,7 +10517,8 @@ static void __lambda_513(int argc, object self_732088, object r_731143) {
 if( !eq(boolean_f, r_731143) ){ 
   
 closureN_type c_734638;
-c_734638.tag = closureN_tag;
+c_734638.hdr.mark = 4;
+ c_734638.tag = closureN_tag;
  c_734638.fn = (function_type)__lambda_487;
 c_734638.num_args = 0;
 c_734638.num_elt = 5;
@@ -10059,7 +10533,8 @@ return_closcall0((closure)&c_734638);
 } else { 
   
 closureN_type c_734677;
-c_734677.tag = closureN_tag;
+c_734677.hdr.mark = 4;
+ c_734677.tag = closureN_tag;
  c_734677.fn = (function_type)__lambda_494;
 c_734677.num_args = 0;
 c_734677.num_elt = 4;
@@ -10071,7 +10546,8 @@ c_734677.elts[3] = ((closureN)self_732088)->elts[5];
 
 
 closureN_type c_734711;
-c_734711.tag = closureN_tag;
+c_734711.hdr.mark = 4;
+ c_734711.tag = closureN_tag;
  c_734711.fn = (function_type)__lambda_512;
 c_734711.num_args = 1;
 c_734711.num_elt = 5;
@@ -10091,7 +10567,8 @@ static void __lambda_512(int argc, object self_732089, object r_731153) {
 if( !eq(boolean_f, r_731153) ){ 
   
 closureN_type c_734713;
-c_734713.tag = closureN_tag;
+c_734713.hdr.mark = 4;
+ c_734713.tag = closureN_tag;
  c_734713.fn = (function_type)__lambda_504;
 c_734713.num_args = 0;
 c_734713.num_elt = 5;
@@ -10106,7 +10583,8 @@ return_closcall0((closure)&c_734713);
 } else { 
   
 closureN_type c_734762;
-c_734762.tag = closureN_tag;
+c_734762.hdr.mark = 4;
+ c_734762.tag = closureN_tag;
  c_734762.fn = (function_type)__lambda_511;
 c_734762.num_args = 0;
 c_734762.num_elt = 5;
@@ -10125,7 +10603,8 @@ static void __lambda_511(int argc, object self_732090) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734764;
-c_734764.tag = closureN_tag;
+c_734764.hdr.mark = 4;
+ c_734764.tag = closureN_tag;
  c_734764.fn = (function_type)__lambda_510;
 c_734764.num_args = 1;
 c_734764.num_elt = 5;
@@ -10143,7 +10622,8 @@ static void __lambda_510(int argc, object self_732091, object r_731168) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734767;
-c_734767.tag = closureN_tag;
+c_734767.hdr.mark = 4;
+ c_734767.tag = closureN_tag;
  c_734767.fn = (function_type)__lambda_509;
 c_734767.num_args = 1;
 c_734767.num_elt = 4;
@@ -10160,7 +10640,8 @@ static void __lambda_509(int argc, object self_732092, object r_731163) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734769;
-c_734769.tag = closureN_tag;
+c_734769.hdr.mark = 4;
+ c_734769.tag = closureN_tag;
  c_734769.fn = (function_type)__lambda_508;
 c_734769.num_args = 1;
 c_734769.num_elt = 5;
@@ -10178,7 +10659,8 @@ static void __lambda_508(int argc, object self_732093, object r_731167) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734774;
-c_734774.tag = closureN_tag;
+c_734774.hdr.mark = 4;
+ c_734774.tag = closureN_tag;
  c_734774.fn = (function_type)__lambda_507;
 c_734774.num_args = 1;
 c_734774.num_elt = 5;
@@ -10196,7 +10678,8 @@ static void __lambda_507(int argc, object self_732094, object r_731164) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734776;
-c_734776.tag = closureN_tag;
+c_734776.hdr.mark = 4;
+ c_734776.tag = closureN_tag;
  c_734776.fn = (function_type)__lambda_506;
 c_734776.num_args = 1;
 c_734776.num_elt = 5;
@@ -10214,7 +10697,8 @@ static void __lambda_506(int argc, object self_732095, object r_731166) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734781;
-c_734781.tag = closureN_tag;
+c_734781.hdr.mark = 4;
+ c_734781.tag = closureN_tag;
  c_734781.fn = (function_type)__lambda_505;
 c_734781.num_args = 1;
 c_734781.num_elt = 3;
@@ -10235,7 +10719,8 @@ static void __lambda_504(int argc, object self_732097) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734715;
-c_734715.tag = closureN_tag;
+c_734715.hdr.mark = 4;
+ c_734715.tag = closureN_tag;
  c_734715.fn = (function_type)__lambda_503;
 c_734715.num_args = 1;
 c_734715.num_elt = 5;
@@ -10253,7 +10738,8 @@ static void __lambda_503(int argc, object self_732098, object r_731162) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734717;
-c_734717.tag = closureN_tag;
+c_734717.hdr.mark = 4;
+ c_734717.tag = closureN_tag;
  c_734717.fn = (function_type)__lambda_502;
 c_734717.num_args = 1;
 c_734717.num_elt = 5;
@@ -10272,7 +10758,8 @@ static void __lambda_502(int argc, object self_732099, object r_731154) {
 if( !eq(boolean_f, r_731154) ){ 
   
 closureN_type c_734719;
-c_734719.tag = closureN_tag;
+c_734719.hdr.mark = 4;
+ c_734719.tag = closureN_tag;
  c_734719.fn = (function_type)__lambda_495;
 c_734719.num_args = 1;
 c_734719.num_elt = 1;
@@ -10283,7 +10770,8 @@ return_closcall1((closure)&c_734719,  car(((closureN)self_732099)->elts[4]));
 } else { 
   
 closureN_type c_734728;
-c_734728.tag = closureN_tag;
+c_734728.hdr.mark = 4;
+ c_734728.tag = closureN_tag;
  c_734728.fn = (function_type)__lambda_501;
 c_734728.num_args = 1;
 c_734728.num_elt = 5;
@@ -10302,7 +10790,8 @@ static void __lambda_501(int argc, object self_732100, object r_731161) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734731;
-c_734731.tag = closureN_tag;
+c_734731.hdr.mark = 4;
+ c_734731.tag = closureN_tag;
  c_734731.fn = (function_type)__lambda_500;
 c_734731.num_args = 1;
 c_734731.num_elt = 4;
@@ -10319,7 +10808,8 @@ static void __lambda_500(int argc, object self_732101, object r_731156) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734733;
-c_734733.tag = closureN_tag;
+c_734733.hdr.mark = 4;
+ c_734733.tag = closureN_tag;
  c_734733.fn = (function_type)__lambda_499;
 c_734733.num_args = 1;
 c_734733.num_elt = 5;
@@ -10337,7 +10827,8 @@ static void __lambda_499(int argc, object self_732102, object r_731160) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734735;
-c_734735.tag = closureN_tag;
+c_734735.hdr.mark = 4;
+ c_734735.tag = closureN_tag;
  c_734735.fn = (function_type)__lambda_498;
 c_734735.num_args = 1;
 c_734735.num_elt = 5;
@@ -10355,7 +10846,8 @@ static void __lambda_498(int argc, object self_732103, object r_731157) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734737;
-c_734737.tag = closureN_tag;
+c_734737.hdr.mark = 4;
+ c_734737.tag = closureN_tag;
  c_734737.fn = (function_type)__lambda_497;
 c_734737.num_args = 1;
 c_734737.num_elt = 5;
@@ -10373,7 +10865,8 @@ static void __lambda_497(int argc, object self_732104, object r_731159) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734742;
-c_734742.tag = closureN_tag;
+c_734742.hdr.mark = 4;
+ c_734742.tag = closureN_tag;
  c_734742.fn = (function_type)__lambda_496;
 c_734742.num_args = 1;
 c_734742.num_elt = 3;
@@ -10399,7 +10892,8 @@ static void __lambda_494(int argc, object self_732107, object k_731169) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734679;
-c_734679.tag = closureN_tag;
+c_734679.hdr.mark = 4;
+ c_734679.tag = closureN_tag;
  c_734679.fn = (function_type)__lambda_493;
 c_734679.num_args = 1;
 c_734679.num_elt = 4;
@@ -10419,7 +10913,8 @@ static void __lambda_493(int argc, object self_732108, object r_731170) {
 if( !eq(boolean_f, r_731170) ){ 
   
 closureN_type c_734681;
-c_734681.tag = closureN_tag;
+c_734681.hdr.mark = 4;
+ c_734681.tag = closureN_tag;
  c_734681.fn = (function_type)__lambda_492;
 c_734681.num_args = 1;
 c_734681.num_elt = 4;
@@ -10439,7 +10934,8 @@ static void __lambda_492(int argc, object self_732109, object r_731175) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734683;
-c_734683.tag = closureN_tag;
+c_734683.hdr.mark = 4;
+ c_734683.tag = closureN_tag;
  c_734683.fn = (function_type)__lambda_491;
 c_734683.num_args = 1;
 c_734683.num_elt = 4;
@@ -10457,7 +10953,8 @@ static void __lambda_491(int argc, object self_732110, object r_731171) {
 if( !eq(boolean_f, r_731171) ){ 
   
 closureN_type c_734685;
-c_734685.tag = closureN_tag;
+c_734685.hdr.mark = 4;
+ c_734685.tag = closureN_tag;
  c_734685.fn = (function_type)__lambda_490;
 c_734685.num_args = 1;
 c_734685.num_elt = 4;
@@ -10477,7 +10974,8 @@ static void __lambda_490(int argc, object self_732111, object r_731174) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734688;
-c_734688.tag = closureN_tag;
+c_734688.hdr.mark = 4;
+ c_734688.tag = closureN_tag;
  c_734688.fn = (function_type)__lambda_489;
 c_734688.num_args = 1;
 c_734688.num_elt = 3;
@@ -10493,7 +10991,8 @@ static void __lambda_489(int argc, object self_732112, object r_731172) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734690;
-c_734690.tag = closureN_tag;
+c_734690.hdr.mark = 4;
+ c_734690.tag = closureN_tag;
  c_734690.fn = (function_type)__lambda_488;
 c_734690.num_args = 1;
 c_734690.num_elt = 3;
@@ -10514,7 +11013,8 @@ static void __lambda_487(int argc, object self_732114) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734640;
-c_734640.tag = closureN_tag;
+c_734640.hdr.mark = 4;
+ c_734640.tag = closureN_tag;
  c_734640.fn = (function_type)__lambda_486;
 c_734640.num_args = 1;
 c_734640.num_elt = 5;
@@ -10532,7 +11032,8 @@ static void __lambda_486(int argc, object self_732115, object r_731152) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734643;
-c_734643.tag = closureN_tag;
+c_734643.hdr.mark = 4;
+ c_734643.tag = closureN_tag;
  c_734643.fn = (function_type)__lambda_485;
 c_734643.num_args = 1;
 c_734643.num_elt = 5;
@@ -10550,7 +11051,8 @@ static void __lambda_485(int argc, object self_732116, object r_731144) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734645;
-c_734645.tag = closureN_tag;
+c_734645.hdr.mark = 4;
+ c_734645.tag = closureN_tag;
  c_734645.fn = (function_type)__lambda_484;
 c_734645.num_args = 1;
 c_734645.num_elt = 6;
@@ -10569,7 +11071,8 @@ static void __lambda_484(int argc, object self_732117, object r_731151) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734648;
-c_734648.tag = closureN_tag;
+c_734648.hdr.mark = 4;
+ c_734648.tag = closureN_tag;
  c_734648.fn = (function_type)__lambda_483;
 c_734648.num_args = 1;
 c_734648.num_elt = 5;
@@ -10587,7 +11090,8 @@ static void __lambda_483(int argc, object self_732118, object r_731149) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734650;
-c_734650.tag = closureN_tag;
+c_734650.hdr.mark = 4;
+ c_734650.tag = closureN_tag;
  c_734650.fn = (function_type)__lambda_482;
 c_734650.num_args = 1;
 c_734650.num_elt = 6;
@@ -10606,7 +11110,8 @@ static void __lambda_482(int argc, object self_732119, object r_731150) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734652;
-c_734652.tag = closureN_tag;
+c_734652.hdr.mark = 4;
+ c_734652.tag = closureN_tag;
  c_734652.fn = (function_type)__lambda_481;
 c_734652.num_args = 1;
 c_734652.num_elt = 5;
@@ -10624,7 +11129,8 @@ static void __lambda_481(int argc, object self_732120, object r_731145) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734654;
-c_734654.tag = closureN_tag;
+c_734654.hdr.mark = 4;
+ c_734654.tag = closureN_tag;
  c_734654.fn = (function_type)__lambda_480;
 c_734654.num_args = 1;
 c_734654.num_elt = 5;
@@ -10642,7 +11148,8 @@ static void __lambda_480(int argc, object self_732121, object r_731147) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734656;
-c_734656.tag = closureN_tag;
+c_734656.hdr.mark = 4;
+ c_734656.tag = closureN_tag;
  c_734656.fn = (function_type)__lambda_479;
 c_734656.num_args = 1;
 c_734656.num_elt = 5;
@@ -10664,7 +11171,8 @@ static void __lambda_479(int argc, object self_732122, object r_731148) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734661;
-c_734661.tag = closureN_tag;
+c_734661.hdr.mark = 4;
+ c_734661.tag = closureN_tag;
  c_734661.fn = (function_type)__lambda_478;
 c_734661.num_args = 1;
 c_734661.num_elt = 3;
@@ -10685,7 +11193,8 @@ static void __lambda_477(int argc, object self_732124) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734554;
-c_734554.tag = closureN_tag;
+c_734554.hdr.mark = 4;
+ c_734554.tag = closureN_tag;
  c_734554.fn = (function_type)__lambda_476;
 c_734554.num_args = 1;
 c_734554.num_elt = 5;
@@ -10706,7 +11215,8 @@ static void __lambda_476(int argc, object self_732125, object r_731127) {
 if( !eq(boolean_f, r_731127) ){ 
   
 closureN_type c_734556;
-c_734556.tag = closureN_tag;
+c_734556.hdr.mark = 4;
+ c_734556.tag = closureN_tag;
  c_734556.fn = (function_type)__lambda_466;
 c_734556.num_args = 1;
 c_734556.num_elt = 5;
@@ -10721,7 +11231,8 @@ return_closcall1((closure)&c_734556,  quote_cons);
 } else { 
   
 closureN_type c_734587;
-c_734587.tag = closureN_tag;
+c_734587.hdr.mark = 4;
+ c_734587.tag = closureN_tag;
  c_734587.fn = (function_type)__lambda_475;
 c_734587.num_args = 1;
 c_734587.num_elt = 5;
@@ -10740,7 +11251,8 @@ static void __lambda_475(int argc, object self_732126, object r_731142) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734590;
-c_734590.tag = closureN_tag;
+c_734590.hdr.mark = 4;
+ c_734590.tag = closureN_tag;
  c_734590.fn = (function_type)__lambda_474;
 c_734590.num_args = 1;
 c_734590.num_elt = 5;
@@ -10758,7 +11270,8 @@ static void __lambda_474(int argc, object self_732127, object r_731134) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734592;
-c_734592.tag = closureN_tag;
+c_734592.hdr.mark = 4;
+ c_734592.tag = closureN_tag;
  c_734592.fn = (function_type)__lambda_473;
 c_734592.num_args = 1;
 c_734592.num_elt = 6;
@@ -10777,7 +11290,8 @@ static void __lambda_473(int argc, object self_732128, object r_731141) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734595;
-c_734595.tag = closureN_tag;
+c_734595.hdr.mark = 4;
+ c_734595.tag = closureN_tag;
  c_734595.fn = (function_type)__lambda_472;
 c_734595.num_args = 1;
 c_734595.num_elt = 5;
@@ -10795,7 +11309,8 @@ static void __lambda_472(int argc, object self_732129, object r_731139) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734597;
-c_734597.tag = closureN_tag;
+c_734597.hdr.mark = 4;
+ c_734597.tag = closureN_tag;
  c_734597.fn = (function_type)__lambda_471;
 c_734597.num_args = 1;
 c_734597.num_elt = 6;
@@ -10814,7 +11329,8 @@ static void __lambda_471(int argc, object self_732130, object r_731140) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734599;
-c_734599.tag = closureN_tag;
+c_734599.hdr.mark = 4;
+ c_734599.tag = closureN_tag;
  c_734599.fn = (function_type)__lambda_470;
 c_734599.num_args = 1;
 c_734599.num_elt = 5;
@@ -10832,7 +11348,8 @@ static void __lambda_470(int argc, object self_732131, object r_731135) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734601;
-c_734601.tag = closureN_tag;
+c_734601.hdr.mark = 4;
+ c_734601.tag = closureN_tag;
  c_734601.fn = (function_type)__lambda_469;
 c_734601.num_args = 1;
 c_734601.num_elt = 5;
@@ -10850,7 +11367,8 @@ static void __lambda_469(int argc, object self_732132, object r_731137) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734603;
-c_734603.tag = closureN_tag;
+c_734603.hdr.mark = 4;
+ c_734603.tag = closureN_tag;
  c_734603.fn = (function_type)__lambda_468;
 c_734603.num_args = 1;
 c_734603.num_elt = 5;
@@ -10872,7 +11390,8 @@ static void __lambda_468(int argc, object self_732133, object r_731138) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734608;
-c_734608.tag = closureN_tag;
+c_734608.hdr.mark = 4;
+ c_734608.tag = closureN_tag;
  c_734608.fn = (function_type)__lambda_467;
 c_734608.num_args = 1;
 c_734608.num_elt = 3;
@@ -10893,7 +11412,8 @@ static void __lambda_466(int argc, object self_732135, object r_731133) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734559;
-c_734559.tag = closureN_tag;
+c_734559.hdr.mark = 4;
+ c_734559.tag = closureN_tag;
  c_734559.fn = (function_type)__lambda_465;
 c_734559.num_args = 1;
 c_734559.num_elt = 4;
@@ -10910,7 +11430,8 @@ static void __lambda_465(int argc, object self_732136, object r_731128) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734561;
-c_734561.tag = closureN_tag;
+c_734561.hdr.mark = 4;
+ c_734561.tag = closureN_tag;
  c_734561.fn = (function_type)__lambda_464;
 c_734561.num_args = 1;
 c_734561.num_elt = 5;
@@ -10928,7 +11449,8 @@ static void __lambda_464(int argc, object self_732137, object r_731132) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734566;
-c_734566.tag = closureN_tag;
+c_734566.hdr.mark = 4;
+ c_734566.tag = closureN_tag;
  c_734566.fn = (function_type)__lambda_463;
 c_734566.num_args = 1;
 c_734566.num_elt = 5;
@@ -10946,7 +11468,8 @@ static void __lambda_463(int argc, object self_732138, object r_731129) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734568;
-c_734568.tag = closureN_tag;
+c_734568.hdr.mark = 4;
+ c_734568.tag = closureN_tag;
  c_734568.fn = (function_type)__lambda_462;
 c_734568.num_args = 1;
 c_734568.num_elt = 5;
@@ -10964,7 +11487,8 @@ static void __lambda_462(int argc, object self_732139, object r_731131) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734573;
-c_734573.tag = closureN_tag;
+c_734573.hdr.mark = 4;
+ c_734573.tag = closureN_tag;
  c_734573.fn = (function_type)__lambda_461;
 c_734573.num_args = 1;
 c_734573.num_elt = 3;
@@ -10985,7 +11509,8 @@ static void __lambda_460(int argc, object self_732141) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734494;
-c_734494.tag = closureN_tag;
+c_734494.hdr.mark = 4;
+ c_734494.tag = closureN_tag;
  c_734494.fn = (function_type)__lambda_459;
 c_734494.num_args = 1;
 c_734494.num_elt = 5;
@@ -11008,7 +11533,8 @@ if( !eq(boolean_f, r_731116) ){
 } else { 
   
 closureN_type c_734501;
-c_734501.tag = closureN_tag;
+c_734501.hdr.mark = 4;
+ c_734501.tag = closureN_tag;
  c_734501.fn = (function_type)__lambda_458;
 c_734501.num_args = 1;
 c_734501.num_elt = 5;
@@ -11027,7 +11553,8 @@ static void __lambda_458(int argc, object self_732143, object r_731125) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734504;
-c_734504.tag = closureN_tag;
+c_734504.hdr.mark = 4;
+ c_734504.tag = closureN_tag;
  c_734504.fn = (function_type)__lambda_457;
 c_734504.num_args = 1;
 c_734504.num_elt = 5;
@@ -11045,7 +11572,8 @@ static void __lambda_457(int argc, object self_732144, object r_731117) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734506;
-c_734506.tag = closureN_tag;
+c_734506.hdr.mark = 4;
+ c_734506.tag = closureN_tag;
  c_734506.fn = (function_type)__lambda_456;
 c_734506.num_args = 1;
 c_734506.num_elt = 6;
@@ -11064,7 +11592,8 @@ static void __lambda_456(int argc, object self_732145, object r_731124) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734509;
-c_734509.tag = closureN_tag;
+c_734509.hdr.mark = 4;
+ c_734509.tag = closureN_tag;
  c_734509.fn = (function_type)__lambda_455;
 c_734509.num_args = 1;
 c_734509.num_elt = 5;
@@ -11082,7 +11611,8 @@ static void __lambda_455(int argc, object self_732146, object r_731122) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734511;
-c_734511.tag = closureN_tag;
+c_734511.hdr.mark = 4;
+ c_734511.tag = closureN_tag;
  c_734511.fn = (function_type)__lambda_454;
 c_734511.num_args = 1;
 c_734511.num_elt = 6;
@@ -11101,7 +11631,8 @@ static void __lambda_454(int argc, object self_732147, object r_731123) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734513;
-c_734513.tag = closureN_tag;
+c_734513.hdr.mark = 4;
+ c_734513.tag = closureN_tag;
  c_734513.fn = (function_type)__lambda_453;
 c_734513.num_args = 1;
 c_734513.num_elt = 5;
@@ -11119,7 +11650,8 @@ static void __lambda_453(int argc, object self_732148, object r_731118) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734515;
-c_734515.tag = closureN_tag;
+c_734515.hdr.mark = 4;
+ c_734515.tag = closureN_tag;
  c_734515.fn = (function_type)__lambda_452;
 c_734515.num_args = 1;
 c_734515.num_elt = 5;
@@ -11137,7 +11669,8 @@ static void __lambda_452(int argc, object self_732149, object r_731120) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734517;
-c_734517.tag = closureN_tag;
+c_734517.hdr.mark = 4;
+ c_734517.tag = closureN_tag;
  c_734517.fn = (function_type)__lambda_451;
 c_734517.num_args = 1;
 c_734517.num_elt = 5;
@@ -11159,7 +11692,8 @@ static void __lambda_451(int argc, object self_732150, object r_731121) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734522;
-c_734522.tag = closureN_tag;
+c_734522.hdr.mark = 4;
+ c_734522.tag = closureN_tag;
  c_734522.fn = (function_type)__lambda_450;
 c_734522.num_args = 1;
 c_734522.num_elt = 3;
@@ -11180,7 +11714,8 @@ static void __lambda_449(int argc, object self_732152, object r_731112) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734461;
-c_734461.tag = closureN_tag;
+c_734461.hdr.mark = 4;
+ c_734461.tag = closureN_tag;
  c_734461.fn = (function_type)__lambda_448;
 c_734461.num_args = 1;
 c_734461.num_elt = 3;
@@ -11196,7 +11731,8 @@ static void __lambda_448(int argc, object self_732153, object r_731110) {
   Cyc_st_add("scheme/base.sld:quasiquote");
 
 closureN_type c_734463;
-c_734463.tag = closureN_tag;
+c_734463.hdr.mark = 4;
+ c_734463.tag = closureN_tag;
  c_734463.fn = (function_type)__lambda_447;
 c_734463.num_args = 1;
 c_734463.num_elt = 2;
@@ -11218,7 +11754,8 @@ static void __lambda_446(int argc, closure _,object k_731197, object exp_73492, 
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734355;
-c_734355.tag = closureN_tag;
+c_734355.hdr.mark = 4;
+ c_734355.tag = closureN_tag;
  c_734355.fn = (function_type)__lambda_427;
 c_734355.num_args = 0;
 c_734355.num_elt = 1;
@@ -11227,7 +11764,8 @@ c_734355.elts[0] = exp_73492;
 
 
 closureN_type c_734371;
-c_734371.tag = closureN_tag;
+c_734371.hdr.mark = 4;
+ c_734371.tag = closureN_tag;
  c_734371.fn = (function_type)__lambda_445;
 c_734371.num_args = 1;
 c_734371.num_elt = 2;
@@ -11242,7 +11780,8 @@ static void __lambda_445(int argc, object self_732155, object r_731198) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734373;
-c_734373.tag = closureN_tag;
+c_734373.hdr.mark = 4;
+ c_734373.tag = closureN_tag;
  c_734373.fn = (function_type)__lambda_430;
 c_734373.num_args = 0;
 c_734373.num_elt = 1;
@@ -11251,7 +11790,8 @@ c_734373.elts[0] = ((closureN)self_732155)->elts[0];
 
 
 closureN_type c_734389;
-c_734389.tag = closureN_tag;
+c_734389.hdr.mark = 4;
+ c_734389.tag = closureN_tag;
  c_734389.fn = (function_type)__lambda_444;
 c_734389.num_args = 1;
 c_734389.num_elt = 2;
@@ -11266,7 +11806,8 @@ static void __lambda_444(int argc, object self_732156, object r_731199) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734391;
-c_734391.tag = closureN_tag;
+c_734391.hdr.mark = 4;
+ c_734391.tag = closureN_tag;
  c_734391.fn = (function_type)__lambda_443;
 c_734391.num_args = 1;
 c_734391.num_elt = 2;
@@ -11281,7 +11822,8 @@ static void __lambda_443(int argc, object self_732157, object r_731200) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734393;
-c_734393.tag = closureN_tag;
+c_734393.hdr.mark = 4;
+ c_734393.tag = closureN_tag;
  c_734393.fn = (function_type)__lambda_442;
 c_734393.num_args = 1;
 c_734393.num_elt = 3;
@@ -11297,7 +11839,8 @@ static void __lambda_442(int argc, object self_732158, object r_731202) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734395;
-c_734395.tag = closureN_tag;
+c_734395.hdr.mark = 4;
+ c_734395.tag = closureN_tag;
  c_734395.fn = (function_type)__lambda_441;
 c_734395.num_args = 1;
 c_734395.num_elt = 4;
@@ -11314,7 +11857,8 @@ static void __lambda_441(int argc, object self_732159, object r_731209) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734397;
-c_734397.tag = closureN_tag;
+c_734397.hdr.mark = 4;
+ c_734397.tag = closureN_tag;
  c_734397.fn = (function_type)__lambda_440;
 c_734397.num_args = 1;
 c_734397.num_elt = 5;
@@ -11332,7 +11876,8 @@ static void __lambda_440(int argc, object self_732160, object r_731211) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734399;
-c_734399.tag = closureN_tag;
+c_734399.hdr.mark = 4;
+ c_734399.tag = closureN_tag;
  c_734399.fn = (function_type)__lambda_439;
 c_734399.num_args = 1;
 c_734399.num_elt = 5;
@@ -11350,7 +11895,8 @@ static void __lambda_439(int argc, object self_732161, object r_731212) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734401;
-c_734401.tag = closureN_tag;
+c_734401.hdr.mark = 4;
+ c_734401.tag = closureN_tag;
  c_734401.fn = (function_type)__lambda_438;
 c_734401.num_args = 1;
 c_734401.num_elt = 4;
@@ -11369,7 +11915,8 @@ static void __lambda_438(int argc, object self_732162, object r_731210) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734403;
-c_734403.tag = closureN_tag;
+c_734403.hdr.mark = 4;
+ c_734403.tag = closureN_tag;
  c_734403.fn = (function_type)__lambda_437;
 c_734403.num_args = 1;
 c_734403.num_elt = 3;
@@ -11387,7 +11934,8 @@ static void __lambda_437(int argc, object self_732163, object r_731207) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734405;
-c_734405.tag = closureN_tag;
+c_734405.hdr.mark = 4;
+ c_734405.tag = closureN_tag;
  c_734405.fn = (function_type)__lambda_436;
 c_734405.num_args = 1;
 c_734405.num_elt = 4;
@@ -11404,7 +11952,8 @@ static void __lambda_436(int argc, object self_732164, object r_731208) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734407;
-c_734407.tag = closureN_tag;
+c_734407.hdr.mark = 4;
+ c_734407.tag = closureN_tag;
  c_734407.fn = (function_type)__lambda_435;
 c_734407.num_args = 1;
 c_734407.num_elt = 3;
@@ -11422,7 +11971,8 @@ static void __lambda_435(int argc, object self_732165, object r_731204) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734409;
-c_734409.tag = closureN_tag;
+c_734409.hdr.mark = 4;
+ c_734409.tag = closureN_tag;
  c_734409.fn = (function_type)__lambda_434;
 c_734409.num_args = 1;
 c_734409.num_elt = 4;
@@ -11439,7 +11989,8 @@ static void __lambda_434(int argc, object self_732166, object r_731206) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734411;
-c_734411.tag = closureN_tag;
+c_734411.hdr.mark = 4;
+ c_734411.tag = closureN_tag;
  c_734411.fn = (function_type)__lambda_433;
 c_734411.num_args = 1;
 c_734411.num_elt = 4;
@@ -11458,7 +12009,8 @@ static void __lambda_433(int argc, object self_732167, object r_731205) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734413;
-c_734413.tag = closureN_tag;
+c_734413.hdr.mark = 4;
+ c_734413.tag = closureN_tag;
  c_734413.fn = (function_type)__lambda_432;
 c_734413.num_args = 1;
 c_734413.num_elt = 3;
@@ -11476,7 +12028,8 @@ static void __lambda_432(int argc, object self_732168, object r_731203) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734415;
-c_734415.tag = closureN_tag;
+c_734415.hdr.mark = 4;
+ c_734415.tag = closureN_tag;
  c_734415.fn = (function_type)__lambda_431;
 c_734415.num_args = 1;
 c_734415.num_elt = 2;
@@ -11500,7 +12053,8 @@ static void __lambda_430(int argc, object self_732170, object k_731213) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734375;
-c_734375.tag = closureN_tag;
+c_734375.hdr.mark = 4;
+ c_734375.tag = closureN_tag;
  c_734375.fn = (function_type)__lambda_429;
 c_734375.num_args = 1;
 c_734375.num_elt = 2;
@@ -11515,7 +12069,8 @@ static void __lambda_429(int argc, object self_732171, object r_731215) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734377;
-c_734377.tag = closureN_tag;
+c_734377.hdr.mark = 4;
+ c_734377.tag = closureN_tag;
  c_734377.fn = (function_type)__lambda_428;
 c_734377.num_args = 1;
 c_734377.num_elt = 2;
@@ -11541,7 +12096,8 @@ static void __lambda_427(int argc, object self_732173, object k_731216) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734357;
-c_734357.tag = closureN_tag;
+c_734357.hdr.mark = 4;
+ c_734357.tag = closureN_tag;
  c_734357.fn = (function_type)__lambda_426;
 c_734357.num_args = 1;
 c_734357.num_elt = 2;
@@ -11556,7 +12112,8 @@ static void __lambda_426(int argc, object self_732174, object r_731218) {
   Cyc_st_add("scheme/base.sld:when");
 
 closureN_type c_734359;
-c_734359.tag = closureN_tag;
+c_734359.hdr.mark = 4;
+ c_734359.tag = closureN_tag;
  c_734359.fn = (function_type)__lambda_425;
 c_734359.num_args = 1;
 c_734359.num_elt = 2;
@@ -11582,7 +12139,8 @@ static void __lambda_424(int argc, closure _,object k_731221, object expr_73495,
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733908;
-c_733908.tag = closureN_tag;
+c_733908.hdr.mark = 4;
+ c_733908.tag = closureN_tag;
  c_733908.fn = (function_type)__lambda_423;
 c_733908.num_args = 2;
 c_733908.num_elt = 4;
@@ -11599,7 +12157,8 @@ static void __lambda_423(int argc, object self_732176, object body_73499, object
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733910;
-c_733910.tag = closureN_tag;
+c_733910.hdr.mark = 4;
+ c_733910.tag = closureN_tag;
  c_733910.fn = (function_type)__lambda_422;
 c_733910.num_args = 1;
 c_733910.num_elt = 5;
@@ -11619,7 +12178,8 @@ static void __lambda_422(int argc, object self_732177, object body_73499) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733912;
-c_733912.tag = closureN_tag;
+c_733912.hdr.mark = 4;
+ c_733912.tag = closureN_tag;
  c_733912.fn = (function_type)__lambda_421;
 c_733912.num_args = 1;
 c_733912.num_elt = 5;
@@ -11639,7 +12199,8 @@ static void __lambda_421(int argc, object self_732178, object clause_73498) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733914;
-c_733914.tag = closureN_tag;
+c_733914.hdr.mark = 4;
+ c_733914.tag = closureN_tag;
  c_733914.fn = (function_type)__lambda_420;
 c_733914.num_args = 2;
 c_733914.num_elt = 6;
@@ -11658,7 +12219,8 @@ static void __lambda_420(int argc, object self_732179, object body_73501, object
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733916;
-c_733916.tag = closureN_tag;
+c_733916.hdr.mark = 4;
+ c_733916.tag = closureN_tag;
  c_733916.fn = (function_type)__lambda_402;
 c_733916.num_args = 1;
 c_733916.num_elt = 6;
@@ -11672,7 +12234,8 @@ c_733916.elts[5] = ((closureN)self_732179)->elts[5];
 
 
 closureN_type c_734281;
-c_734281.tag = closureN_tag;
+c_734281.hdr.mark = 4;
+ c_734281.tag = closureN_tag;
  c_734281.fn = (function_type)__lambda_419;
 c_734281.num_args = 1;
 c_734281.num_elt = 2;
@@ -11687,7 +12250,8 @@ static void __lambda_419(int argc, object self_732180, object k_731304, object e
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734283;
-c_734283.tag = closureN_tag;
+c_734283.hdr.mark = 4;
+ c_734283.tag = closureN_tag;
  c_734283.fn = (function_type)__lambda_418;
 c_734283.num_args = 1;
 c_734283.num_elt = 4;
@@ -11705,7 +12269,8 @@ static void __lambda_418(int argc, object self_732181, object r_731305) {
 if( !eq(boolean_f, r_731305) ){ 
   
 closureN_type c_734285;
-c_734285.tag = closureN_tag;
+c_734285.hdr.mark = 4;
+ c_734285.tag = closureN_tag;
  c_734285.fn = (function_type)__lambda_404;
 c_734285.num_args = 0;
 c_734285.num_elt = 2;
@@ -11717,7 +12282,8 @@ return_closcall0((closure)&c_734285);
 } else { 
   
 closureN_type c_734292;
-c_734292.tag = closureN_tag;
+c_734292.hdr.mark = 4;
+ c_734292.tag = closureN_tag;
  c_734292.fn = (function_type)__lambda_417;
 c_734292.num_args = 1;
 c_734292.num_elt = 4;
@@ -11735,7 +12301,8 @@ static void __lambda_417(int argc, object self_732182, object r_731317) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734295;
-c_734295.tag = closureN_tag;
+c_734295.hdr.mark = 4;
+ c_734295.tag = closureN_tag;
  c_734295.fn = (function_type)__lambda_416;
 c_734295.num_args = 1;
 c_734295.num_elt = 4;
@@ -11752,7 +12319,8 @@ static void __lambda_416(int argc, object self_732183, object r_731315) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734297;
-c_734297.tag = closureN_tag;
+c_734297.hdr.mark = 4;
+ c_734297.tag = closureN_tag;
  c_734297.fn = (function_type)__lambda_415;
 c_734297.num_args = 1;
 c_734297.num_elt = 5;
@@ -11770,7 +12338,8 @@ static void __lambda_415(int argc, object self_732184, object r_731316) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734300;
-c_734300.tag = closureN_tag;
+c_734300.hdr.mark = 4;
+ c_734300.tag = closureN_tag;
  c_734300.fn = (function_type)__lambda_414;
 c_734300.num_args = 1;
 c_734300.num_elt = 3;
@@ -11787,7 +12356,8 @@ static void __lambda_414(int argc, object self_732185, object r_731307) {
 if( !eq(boolean_f, r_731307) ){ 
   
 closureN_type c_734302;
-c_734302.tag = closureN_tag;
+c_734302.hdr.mark = 4;
+ c_734302.tag = closureN_tag;
  c_734302.fn = (function_type)__lambda_410;
 c_734302.num_args = 0;
 c_734302.num_elt = 3;
@@ -11800,7 +12370,8 @@ return_closcall0((closure)&c_734302);
 } else { 
   
 closureN_type c_734328;
-c_734328.tag = closureN_tag;
+c_734328.hdr.mark = 4;
+ c_734328.tag = closureN_tag;
  c_734328.fn = (function_type)__lambda_413;
 c_734328.num_args = 0;
 c_734328.num_elt = 3;
@@ -11817,7 +12388,8 @@ static void __lambda_413(int argc, object self_732186) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734330;
-c_734330.tag = closureN_tag;
+c_734330.hdr.mark = 4;
+ c_734330.tag = closureN_tag;
  c_734330.fn = (function_type)__lambda_412;
 c_734330.num_args = 1;
 c_734330.num_elt = 3;
@@ -11833,7 +12405,8 @@ static void __lambda_412(int argc, object self_732187, object r_731314) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734333;
-c_734333.tag = closureN_tag;
+c_734333.hdr.mark = 4;
+ c_734333.tag = closureN_tag;
  c_734333.fn = (function_type)__lambda_411;
 c_734333.num_args = 1;
 c_734333.num_elt = 2;
@@ -11855,7 +12428,8 @@ static void __lambda_410(int argc, object self_732189) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734304;
-c_734304.tag = closureN_tag;
+c_734304.hdr.mark = 4;
+ c_734304.tag = closureN_tag;
  c_734304.fn = (function_type)__lambda_409;
 c_734304.num_args = 1;
 c_734304.num_elt = 2;
@@ -11870,7 +12444,8 @@ static void __lambda_409(int argc, object self_732190, object r_731308) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734306;
-c_734306.tag = closureN_tag;
+c_734306.hdr.mark = 4;
+ c_734306.tag = closureN_tag;
  c_734306.fn = (function_type)__lambda_408;
 c_734306.num_args = 1;
 c_734306.num_elt = 3;
@@ -11886,7 +12461,8 @@ static void __lambda_408(int argc, object self_732191, object r_731312) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734309;
-c_734309.tag = closureN_tag;
+c_734309.hdr.mark = 4;
+ c_734309.tag = closureN_tag;
  c_734309.fn = (function_type)__lambda_407;
 c_734309.num_args = 1;
 c_734309.num_elt = 2;
@@ -11901,7 +12477,8 @@ static void __lambda_407(int argc, object self_732192, object r_731310) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734311;
-c_734311.tag = closureN_tag;
+c_734311.hdr.mark = 4;
+ c_734311.tag = closureN_tag;
  c_734311.fn = (function_type)__lambda_406;
 c_734311.num_args = 1;
 c_734311.num_elt = 3;
@@ -11917,7 +12494,8 @@ static void __lambda_406(int argc, object self_732193, object r_731311) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734313;
-c_734313.tag = closureN_tag;
+c_734313.hdr.mark = 4;
+ c_734313.tag = closureN_tag;
  c_734313.fn = (function_type)__lambda_405;
 c_734313.num_args = 1;
 c_734313.num_elt = 2;
@@ -11941,7 +12519,8 @@ static void __lambda_404(int argc, object self_732195) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734287;
-c_734287.tag = closureN_tag;
+c_734287.hdr.mark = 4;
+ c_734287.tag = closureN_tag;
  c_734287.fn = (function_type)__lambda_403;
 c_734287.num_args = 1;
 c_734287.num_elt = 2;
@@ -11961,7 +12540,8 @@ static void __lambda_402(int argc, object self_732197, object r_731303) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733918;
-c_733918.tag = closureN_tag;
+c_733918.hdr.mark = 4;
+ c_733918.tag = closureN_tag;
  c_733918.fn = (function_type)__lambda_401;
 c_733918.num_args = 1;
 c_733918.num_elt = 6;
@@ -11980,7 +12560,8 @@ static void __lambda_401(int argc, object self_732198, object r_731222) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733920;
-c_733920.tag = closureN_tag;
+c_733920.hdr.mark = 4;
+ c_733920.tag = closureN_tag;
  c_733920.fn = (function_type)__lambda_332;
 c_733920.num_args = 1;
 c_733920.num_elt = 4;
@@ -11992,7 +12573,8 @@ c_733920.elts[3] = ((closureN)self_732198)->elts[5];
 
 
 closureN_type c_733990;
-c_733990.tag = closureN_tag;
+c_733990.hdr.mark = 4;
+ c_733990.tag = closureN_tag;
  c_733990.fn = (function_type)__lambda_400;
 c_733990.num_args = 1;
 c_733990.num_elt = 4;
@@ -12009,7 +12591,8 @@ static void __lambda_400(int argc, object self_732199, object k_731239, object l
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733992;
-c_733992.tag = closureN_tag;
+c_733992.hdr.mark = 4;
+ c_733992.tag = closureN_tag;
  c_733992.fn = (function_type)__lambda_399;
 c_733992.num_args = 1;
 c_733992.num_elt = 6;
@@ -12029,7 +12612,8 @@ static void __lambda_399(int argc, object self_732200, object r_731240) {
 if( !eq(boolean_f, r_731240) ){ 
   
 closureN_type c_733994;
-c_733994.tag = closureN_tag;
+c_733994.hdr.mark = 4;
+ c_733994.tag = closureN_tag;
  c_733994.fn = (function_type)__lambda_333;
 c_733994.num_args = 0;
 c_733994.num_elt = 1;
@@ -12040,7 +12624,8 @@ return_closcall0((closure)&c_733994);
 } else { 
   
 closureN_type c_733998;
-c_733998.tag = closureN_tag;
+c_733998.hdr.mark = 4;
+ c_733998.tag = closureN_tag;
  c_733998.fn = (function_type)__lambda_398;
 c_733998.num_args = 1;
 c_733998.num_elt = 6;
@@ -12060,7 +12645,8 @@ static void __lambda_398(int argc, object self_732201, object r_731302) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734001;
-c_734001.tag = closureN_tag;
+c_734001.hdr.mark = 4;
+ c_734001.tag = closureN_tag;
  c_734001.fn = (function_type)__lambda_397;
 c_734001.num_args = 1;
 c_734001.num_elt = 6;
@@ -12079,7 +12665,8 @@ static void __lambda_397(int argc, object self_732202, object r_731300) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734003;
-c_734003.tag = closureN_tag;
+c_734003.hdr.mark = 4;
+ c_734003.tag = closureN_tag;
  c_734003.fn = (function_type)__lambda_396;
 c_734003.num_args = 1;
 c_734003.num_elt = 7;
@@ -12099,7 +12686,8 @@ static void __lambda_396(int argc, object self_732203, object r_731301) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734006;
-c_734006.tag = closureN_tag;
+c_734006.hdr.mark = 4;
+ c_734006.tag = closureN_tag;
  c_734006.fn = (function_type)__lambda_395;
 c_734006.num_args = 1;
 c_734006.num_elt = 5;
@@ -12118,7 +12706,8 @@ static void __lambda_395(int argc, object self_732204, object r_731241) {
 if( !eq(boolean_f, r_731241) ){ 
   
 closureN_type c_734008;
-c_734008.tag = closureN_tag;
+c_734008.hdr.mark = 4;
+ c_734008.tag = closureN_tag;
  c_734008.fn = (function_type)__lambda_335;
 c_734008.num_args = 0;
 c_734008.num_elt = 3;
@@ -12131,7 +12720,8 @@ return_closcall0((closure)&c_734008);
 } else { 
   
 closureN_type c_734020;
-c_734020.tag = closureN_tag;
+c_734020.hdr.mark = 4;
+ c_734020.tag = closureN_tag;
  c_734020.fn = (function_type)__lambda_342;
 c_734020.num_args = 0;
 c_734020.num_elt = 1;
@@ -12140,7 +12730,8 @@ c_734020.elts[0] = ((closureN)self_732204)->elts[3];
 
 
 closureN_type c_734053;
-c_734053.tag = closureN_tag;
+c_734053.hdr.mark = 4;
+ c_734053.tag = closureN_tag;
  c_734053.fn = (function_type)__lambda_394;
 c_734053.num_args = 1;
 c_734053.num_elt = 5;
@@ -12160,7 +12751,8 @@ static void __lambda_394(int argc, object self_732205, object r_731243) {
 if( !eq(boolean_f, r_731243) ){ 
   
 closureN_type c_734055;
-c_734055.tag = closureN_tag;
+c_734055.hdr.mark = 4;
+ c_734055.tag = closureN_tag;
  c_734055.fn = (function_type)__lambda_368;
 c_734055.num_args = 0;
 c_734055.num_elt = 5;
@@ -12175,7 +12767,8 @@ return_closcall0((closure)&c_734055);
 } else { 
   
 closureN_type c_734166;
-c_734166.tag = closureN_tag;
+c_734166.hdr.mark = 4;
+ c_734166.tag = closureN_tag;
  c_734166.fn = (function_type)__lambda_393;
 c_734166.num_args = 0;
 c_734166.num_elt = 5;
@@ -12194,7 +12787,8 @@ static void __lambda_393(int argc, object self_732206) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734168;
-c_734168.tag = closureN_tag;
+c_734168.hdr.mark = 4;
+ c_734168.tag = closureN_tag;
  c_734168.fn = (function_type)__lambda_392;
 c_734168.num_args = 1;
 c_734168.num_elt = 5;
@@ -12212,7 +12806,8 @@ static void __lambda_392(int argc, object self_732207, object r_731292) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734171;
-c_734171.tag = closureN_tag;
+c_734171.hdr.mark = 4;
+ c_734171.tag = closureN_tag;
  c_734171.fn = (function_type)__lambda_391;
 c_734171.num_args = 1;
 c_734171.num_elt = 5;
@@ -12230,7 +12825,8 @@ static void __lambda_391(int argc, object self_732208, object r_731269) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734173;
-c_734173.tag = closureN_tag;
+c_734173.hdr.mark = 4;
+ c_734173.tag = closureN_tag;
  c_734173.fn = (function_type)__lambda_390;
 c_734173.num_args = 1;
 c_734173.num_elt = 6;
@@ -12249,7 +12845,8 @@ static void __lambda_390(int argc, object self_732209, object r_731291) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734176;
-c_734176.tag = closureN_tag;
+c_734176.hdr.mark = 4;
+ c_734176.tag = closureN_tag;
  c_734176.fn = (function_type)__lambda_389;
 c_734176.num_args = 1;
 c_734176.num_elt = 6;
@@ -12268,7 +12865,8 @@ static void __lambda_389(int argc, object self_732210, object r_731279) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734178;
-c_734178.tag = closureN_tag;
+c_734178.hdr.mark = 4;
+ c_734178.tag = closureN_tag;
  c_734178.fn = (function_type)__lambda_388;
 c_734178.num_args = 1;
 c_734178.num_elt = 7;
@@ -12288,7 +12886,8 @@ static void __lambda_388(int argc, object self_732211, object r_731290) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734181;
-c_734181.tag = closureN_tag;
+c_734181.hdr.mark = 4;
+ c_734181.tag = closureN_tag;
  c_734181.fn = (function_type)__lambda_387;
 c_734181.num_args = 1;
 c_734181.num_elt = 7;
@@ -12308,7 +12907,8 @@ static void __lambda_387(int argc, object self_732212, object r_731281) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734183;
-c_734183.tag = closureN_tag;
+c_734183.hdr.mark = 4;
+ c_734183.tag = closureN_tag;
  c_734183.fn = (function_type)__lambda_386;
 c_734183.num_args = 1;
 c_734183.num_elt = 8;
@@ -12329,7 +12929,8 @@ static void __lambda_386(int argc, object self_732213, object r_731289) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734186;
-c_734186.tag = closureN_tag;
+c_734186.hdr.mark = 4;
+ c_734186.tag = closureN_tag;
  c_734186.fn = (function_type)__lambda_385;
 c_734186.num_args = 1;
 c_734186.num_elt = 7;
@@ -12349,7 +12950,8 @@ static void __lambda_385(int argc, object self_732214, object r_731285) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734188;
-c_734188.tag = closureN_tag;
+c_734188.hdr.mark = 4;
+ c_734188.tag = closureN_tag;
  c_734188.fn = (function_type)__lambda_384;
 c_734188.num_args = 1;
 c_734188.num_elt = 8;
@@ -12370,7 +12972,8 @@ static void __lambda_384(int argc, object self_732215, object r_731287) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734190;
-c_734190.tag = closureN_tag;
+c_734190.hdr.mark = 4;
+ c_734190.tag = closureN_tag;
  c_734190.fn = (function_type)__lambda_383;
 c_734190.num_args = 1;
 c_734190.num_elt = 9;
@@ -12392,7 +12995,8 @@ static void __lambda_383(int argc, object self_732216, object r_731288) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734192;
-c_734192.tag = closureN_tag;
+c_734192.hdr.mark = 4;
+ c_734192.tag = closureN_tag;
  c_734192.fn = (function_type)__lambda_382;
 c_734192.num_args = 1;
 c_734192.num_elt = 8;
@@ -12415,7 +13019,8 @@ static void __lambda_382(int argc, object self_732217, object r_731286) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734194;
-c_734194.tag = closureN_tag;
+c_734194.hdr.mark = 4;
+ c_734194.tag = closureN_tag;
  c_734194.fn = (function_type)__lambda_381;
 c_734194.num_args = 1;
 c_734194.num_elt = 7;
@@ -12437,7 +13042,8 @@ static void __lambda_381(int argc, object self_732218, object r_731283) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734196;
-c_734196.tag = closureN_tag;
+c_734196.hdr.mark = 4;
+ c_734196.tag = closureN_tag;
  c_734196.fn = (function_type)__lambda_380;
 c_734196.num_args = 1;
 c_734196.num_elt = 8;
@@ -12458,7 +13064,8 @@ static void __lambda_380(int argc, object self_732219, object r_731284) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734198;
-c_734198.tag = closureN_tag;
+c_734198.hdr.mark = 4;
+ c_734198.tag = closureN_tag;
  c_734198.fn = (function_type)__lambda_379;
 c_734198.num_args = 1;
 c_734198.num_elt = 7;
@@ -12480,7 +13087,8 @@ static void __lambda_379(int argc, object self_732220, object r_731282) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734200;
-c_734200.tag = closureN_tag;
+c_734200.hdr.mark = 4;
+ c_734200.tag = closureN_tag;
  c_734200.fn = (function_type)__lambda_378;
 c_734200.num_args = 1;
 c_734200.num_elt = 6;
@@ -12501,7 +13109,8 @@ static void __lambda_378(int argc, object self_732221, object r_731280) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734202;
-c_734202.tag = closureN_tag;
+c_734202.hdr.mark = 4;
+ c_734202.tag = closureN_tag;
  c_734202.fn = (function_type)__lambda_377;
 c_734202.num_args = 1;
 c_734202.num_elt = 5;
@@ -12521,7 +13130,8 @@ static void __lambda_377(int argc, object self_732222, object r_731271) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734204;
-c_734204.tag = closureN_tag;
+c_734204.hdr.mark = 4;
+ c_734204.tag = closureN_tag;
  c_734204.fn = (function_type)__lambda_376;
 c_734204.num_args = 1;
 c_734204.num_elt = 6;
@@ -12540,7 +13150,8 @@ static void __lambda_376(int argc, object self_732223, object r_731278) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734209;
-c_734209.tag = closureN_tag;
+c_734209.hdr.mark = 4;
+ c_734209.tag = closureN_tag;
  c_734209.fn = (function_type)__lambda_375;
 c_734209.num_args = 1;
 c_734209.num_elt = 5;
@@ -12558,7 +13169,8 @@ static void __lambda_375(int argc, object self_732224, object r_731273) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734211;
-c_734211.tag = closureN_tag;
+c_734211.hdr.mark = 4;
+ c_734211.tag = closureN_tag;
  c_734211.fn = (function_type)__lambda_374;
 c_734211.num_args = 1;
 c_734211.num_elt = 5;
@@ -12576,7 +13188,8 @@ static void __lambda_374(int argc, object self_732225, object r_731277) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734216;
-c_734216.tag = closureN_tag;
+c_734216.hdr.mark = 4;
+ c_734216.tag = closureN_tag;
  c_734216.fn = (function_type)__lambda_373;
 c_734216.num_args = 1;
 c_734216.num_elt = 4;
@@ -12593,7 +13206,8 @@ static void __lambda_373(int argc, object self_732226, object r_731275) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734218;
-c_734218.tag = closureN_tag;
+c_734218.hdr.mark = 4;
+ c_734218.tag = closureN_tag;
  c_734218.fn = (function_type)__lambda_372;
 c_734218.num_args = 1;
 c_734218.num_elt = 5;
@@ -12611,7 +13225,8 @@ static void __lambda_372(int argc, object self_732227, object r_731276) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734220;
-c_734220.tag = closureN_tag;
+c_734220.hdr.mark = 4;
+ c_734220.tag = closureN_tag;
  c_734220.fn = (function_type)__lambda_371;
 c_734220.num_args = 1;
 c_734220.num_elt = 4;
@@ -12630,7 +13245,8 @@ static void __lambda_371(int argc, object self_732228, object r_731274) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734222;
-c_734222.tag = closureN_tag;
+c_734222.hdr.mark = 4;
+ c_734222.tag = closureN_tag;
  c_734222.fn = (function_type)__lambda_370;
 c_734222.num_args = 1;
 c_734222.num_elt = 3;
@@ -12648,7 +13264,8 @@ static void __lambda_370(int argc, object self_732229, object r_731272) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734224;
-c_734224.tag = closureN_tag;
+c_734224.hdr.mark = 4;
+ c_734224.tag = closureN_tag;
  c_734224.fn = (function_type)__lambda_369;
 c_734224.num_args = 1;
 c_734224.num_elt = 2;
@@ -12672,7 +13289,8 @@ static void __lambda_368(int argc, object self_732231) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734057;
-c_734057.tag = closureN_tag;
+c_734057.hdr.mark = 4;
+ c_734057.tag = closureN_tag;
  c_734057.fn = (function_type)__lambda_367;
 c_734057.num_args = 1;
 c_734057.num_elt = 5;
@@ -12690,7 +13308,8 @@ static void __lambda_367(int argc, object self_732232, object r_731268) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734060;
-c_734060.tag = closureN_tag;
+c_734060.hdr.mark = 4;
+ c_734060.tag = closureN_tag;
  c_734060.fn = (function_type)__lambda_366;
 c_734060.num_args = 1;
 c_734060.num_elt = 5;
@@ -12708,7 +13327,8 @@ static void __lambda_366(int argc, object self_732233, object r_731244) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734062;
-c_734062.tag = closureN_tag;
+c_734062.hdr.mark = 4;
+ c_734062.tag = closureN_tag;
  c_734062.fn = (function_type)__lambda_365;
 c_734062.num_args = 1;
 c_734062.num_elt = 6;
@@ -12727,7 +13347,8 @@ static void __lambda_365(int argc, object self_732234, object r_731267) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734065;
-c_734065.tag = closureN_tag;
+c_734065.hdr.mark = 4;
+ c_734065.tag = closureN_tag;
  c_734065.fn = (function_type)__lambda_364;
 c_734065.num_args = 1;
 c_734065.num_elt = 6;
@@ -12746,7 +13367,8 @@ static void __lambda_364(int argc, object self_732235, object r_731254) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734067;
-c_734067.tag = closureN_tag;
+c_734067.hdr.mark = 4;
+ c_734067.tag = closureN_tag;
  c_734067.fn = (function_type)__lambda_363;
 c_734067.num_args = 1;
 c_734067.num_elt = 7;
@@ -12766,7 +13388,8 @@ static void __lambda_363(int argc, object self_732236, object r_731266) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734070;
-c_734070.tag = closureN_tag;
+c_734070.hdr.mark = 4;
+ c_734070.tag = closureN_tag;
  c_734070.fn = (function_type)__lambda_362;
 c_734070.num_args = 1;
 c_734070.num_elt = 7;
@@ -12786,7 +13409,8 @@ static void __lambda_362(int argc, object self_732237, object r_731256) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734072;
-c_734072.tag = closureN_tag;
+c_734072.hdr.mark = 4;
+ c_734072.tag = closureN_tag;
  c_734072.fn = (function_type)__lambda_361;
 c_734072.num_args = 1;
 c_734072.num_elt = 8;
@@ -12807,7 +13431,8 @@ static void __lambda_361(int argc, object self_732238, object r_731265) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734075;
-c_734075.tag = closureN_tag;
+c_734075.hdr.mark = 4;
+ c_734075.tag = closureN_tag;
  c_734075.fn = (function_type)__lambda_360;
 c_734075.num_args = 1;
 c_734075.num_elt = 7;
@@ -12827,7 +13452,8 @@ static void __lambda_360(int argc, object self_732239, object r_731260) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734077;
-c_734077.tag = closureN_tag;
+c_734077.hdr.mark = 4;
+ c_734077.tag = closureN_tag;
  c_734077.fn = (function_type)__lambda_359;
 c_734077.num_args = 1;
 c_734077.num_elt = 8;
@@ -12848,7 +13474,8 @@ static void __lambda_359(int argc, object self_732240, object r_731264) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734079;
-c_734079.tag = closureN_tag;
+c_734079.hdr.mark = 4;
+ c_734079.tag = closureN_tag;
  c_734079.fn = (function_type)__lambda_358;
 c_734079.num_args = 1;
 c_734079.num_elt = 8;
@@ -12869,7 +13496,8 @@ static void __lambda_358(int argc, object self_732241, object r_731262) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734081;
-c_734081.tag = closureN_tag;
+c_734081.hdr.mark = 4;
+ c_734081.tag = closureN_tag;
  c_734081.fn = (function_type)__lambda_357;
 c_734081.num_args = 1;
 c_734081.num_elt = 9;
@@ -12891,7 +13519,8 @@ static void __lambda_357(int argc, object self_732242, object r_731263) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734083;
-c_734083.tag = closureN_tag;
+c_734083.hdr.mark = 4;
+ c_734083.tag = closureN_tag;
  c_734083.fn = (function_type)__lambda_356;
 c_734083.num_args = 1;
 c_734083.num_elt = 8;
@@ -12914,7 +13543,8 @@ static void __lambda_356(int argc, object self_732243, object r_731261) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734085;
-c_734085.tag = closureN_tag;
+c_734085.hdr.mark = 4;
+ c_734085.tag = closureN_tag;
  c_734085.fn = (function_type)__lambda_355;
 c_734085.num_args = 1;
 c_734085.num_elt = 7;
@@ -12936,7 +13566,8 @@ static void __lambda_355(int argc, object self_732244, object r_731258) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734087;
-c_734087.tag = closureN_tag;
+c_734087.hdr.mark = 4;
+ c_734087.tag = closureN_tag;
  c_734087.fn = (function_type)__lambda_354;
 c_734087.num_args = 1;
 c_734087.num_elt = 8;
@@ -12957,7 +13588,8 @@ static void __lambda_354(int argc, object self_732245, object r_731259) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734089;
-c_734089.tag = closureN_tag;
+c_734089.hdr.mark = 4;
+ c_734089.tag = closureN_tag;
  c_734089.fn = (function_type)__lambda_353;
 c_734089.num_args = 1;
 c_734089.num_elt = 7;
@@ -12979,7 +13611,8 @@ static void __lambda_353(int argc, object self_732246, object r_731257) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734091;
-c_734091.tag = closureN_tag;
+c_734091.hdr.mark = 4;
+ c_734091.tag = closureN_tag;
  c_734091.fn = (function_type)__lambda_352;
 c_734091.num_args = 1;
 c_734091.num_elt = 6;
@@ -13000,7 +13633,8 @@ static void __lambda_352(int argc, object self_732247, object r_731255) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734093;
-c_734093.tag = closureN_tag;
+c_734093.hdr.mark = 4;
+ c_734093.tag = closureN_tag;
  c_734093.fn = (function_type)__lambda_351;
 c_734093.num_args = 1;
 c_734093.num_elt = 5;
@@ -13020,7 +13654,8 @@ static void __lambda_351(int argc, object self_732248, object r_731246) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734095;
-c_734095.tag = closureN_tag;
+c_734095.hdr.mark = 4;
+ c_734095.tag = closureN_tag;
  c_734095.fn = (function_type)__lambda_350;
 c_734095.num_args = 1;
 c_734095.num_elt = 6;
@@ -13039,7 +13674,8 @@ static void __lambda_350(int argc, object self_732249, object r_731253) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734100;
-c_734100.tag = closureN_tag;
+c_734100.hdr.mark = 4;
+ c_734100.tag = closureN_tag;
  c_734100.fn = (function_type)__lambda_349;
 c_734100.num_args = 1;
 c_734100.num_elt = 5;
@@ -13057,7 +13693,8 @@ static void __lambda_349(int argc, object self_732250, object r_731248) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734102;
-c_734102.tag = closureN_tag;
+c_734102.hdr.mark = 4;
+ c_734102.tag = closureN_tag;
  c_734102.fn = (function_type)__lambda_348;
 c_734102.num_args = 1;
 c_734102.num_elt = 5;
@@ -13075,7 +13712,8 @@ static void __lambda_348(int argc, object self_732251, object r_731252) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734107;
-c_734107.tag = closureN_tag;
+c_734107.hdr.mark = 4;
+ c_734107.tag = closureN_tag;
  c_734107.fn = (function_type)__lambda_347;
 c_734107.num_args = 1;
 c_734107.num_elt = 4;
@@ -13092,7 +13730,8 @@ static void __lambda_347(int argc, object self_732252, object r_731250) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734109;
-c_734109.tag = closureN_tag;
+c_734109.hdr.mark = 4;
+ c_734109.tag = closureN_tag;
  c_734109.fn = (function_type)__lambda_346;
 c_734109.num_args = 1;
 c_734109.num_elt = 5;
@@ -13110,7 +13749,8 @@ static void __lambda_346(int argc, object self_732253, object r_731251) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734111;
-c_734111.tag = closureN_tag;
+c_734111.hdr.mark = 4;
+ c_734111.tag = closureN_tag;
  c_734111.fn = (function_type)__lambda_345;
 c_734111.num_args = 1;
 c_734111.num_elt = 4;
@@ -13129,7 +13769,8 @@ static void __lambda_345(int argc, object self_732254, object r_731249) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734113;
-c_734113.tag = closureN_tag;
+c_734113.hdr.mark = 4;
+ c_734113.tag = closureN_tag;
  c_734113.fn = (function_type)__lambda_344;
 c_734113.num_args = 1;
 c_734113.num_elt = 3;
@@ -13147,7 +13788,8 @@ static void __lambda_344(int argc, object self_732255, object r_731247) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734115;
-c_734115.tag = closureN_tag;
+c_734115.hdr.mark = 4;
+ c_734115.tag = closureN_tag;
  c_734115.fn = (function_type)__lambda_343;
 c_734115.num_args = 1;
 c_734115.num_elt = 2;
@@ -13171,7 +13813,8 @@ static void __lambda_342(int argc, object self_732257, object k_731293) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734022;
-c_734022.tag = closureN_tag;
+c_734022.hdr.mark = 4;
+ c_734022.tag = closureN_tag;
  c_734022.fn = (function_type)__lambda_341;
 c_734022.num_args = 1;
 c_734022.num_elt = 2;
@@ -13186,7 +13829,8 @@ static void __lambda_341(int argc, object self_732258, object r_731299) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734024;
-c_734024.tag = closureN_tag;
+c_734024.hdr.mark = 4;
+ c_734024.tag = closureN_tag;
  c_734024.fn = (function_type)__lambda_340;
 c_734024.num_args = 1;
 c_734024.num_elt = 2;
@@ -13201,7 +13845,8 @@ static void __lambda_340(int argc, object self_732259, object r_731298) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734026;
-c_734026.tag = closureN_tag;
+c_734026.hdr.mark = 4;
+ c_734026.tag = closureN_tag;
  c_734026.fn = (function_type)__lambda_339;
 c_734026.num_args = 1;
 c_734026.num_elt = 2;
@@ -13217,7 +13862,8 @@ static void __lambda_339(int argc, object self_732260, object r_731294) {
 if( !eq(boolean_f, r_731294) ){ 
   
 closureN_type c_734028;
-c_734028.tag = closureN_tag;
+c_734028.hdr.mark = 4;
+ c_734028.tag = closureN_tag;
  c_734028.fn = (function_type)__lambda_338;
 c_734028.num_args = 1;
 c_734028.num_elt = 1;
@@ -13234,7 +13880,8 @@ static void __lambda_338(int argc, object self_732261, object r_731297) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734030;
-c_734030.tag = closureN_tag;
+c_734030.hdr.mark = 4;
+ c_734030.tag = closureN_tag;
  c_734030.fn = (function_type)__lambda_337;
 c_734030.num_args = 1;
 c_734030.num_elt = 1;
@@ -13248,7 +13895,8 @@ static void __lambda_337(int argc, object self_732262, object r_731296) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734032;
-c_734032.tag = closureN_tag;
+c_734032.hdr.mark = 4;
+ c_734032.tag = closureN_tag;
  c_734032.fn = (function_type)__lambda_336;
 c_734032.num_args = 1;
 c_734032.num_elt = 1;
@@ -13267,7 +13915,8 @@ static void __lambda_335(int argc, object self_732264) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_734010;
-c_734010.tag = closureN_tag;
+c_734010.hdr.mark = 4;
+ c_734010.tag = closureN_tag;
  c_734010.fn = (function_type)__lambda_334;
 c_734010.num_args = 1;
 c_734010.num_elt = 2;
@@ -13292,7 +13941,8 @@ static void __lambda_332(int argc, object self_732267, object r_731238) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733922;
-c_733922.tag = closureN_tag;
+c_733922.hdr.mark = 4;
+ c_733922.tag = closureN_tag;
  c_733922.fn = (function_type)__lambda_331;
 c_733922.num_args = 1;
 c_733922.num_elt = 4;
@@ -13309,7 +13959,8 @@ static void __lambda_331(int argc, object self_732268, object r_731223) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733924;
-c_733924.tag = closureN_tag;
+c_733924.hdr.mark = 4;
+ c_733924.tag = closureN_tag;
  c_733924.fn = (function_type)__lambda_330;
 c_733924.num_args = 1;
 c_733924.num_elt = 4;
@@ -13326,7 +13977,8 @@ static void __lambda_330(int argc, object self_732269, object r_731224) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733926;
-c_733926.tag = closureN_tag;
+c_733926.hdr.mark = 4;
+ c_733926.tag = closureN_tag;
  c_733926.fn = (function_type)__lambda_329;
 c_733926.num_args = 1;
 c_733926.num_elt = 5;
@@ -13344,7 +13996,8 @@ static void __lambda_329(int argc, object self_732270, object r_731237) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733929;
-c_733929.tag = closureN_tag;
+c_733929.hdr.mark = 4;
+ c_733929.tag = closureN_tag;
  c_733929.fn = (function_type)__lambda_328;
 c_733929.num_args = 1;
 c_733929.num_elt = 4;
@@ -13361,7 +14014,8 @@ static void __lambda_328(int argc, object self_732271, object r_731233) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733931;
-c_733931.tag = closureN_tag;
+c_733931.hdr.mark = 4;
+ c_733931.tag = closureN_tag;
  c_733931.fn = (function_type)__lambda_327;
 c_733931.num_args = 1;
 c_733931.num_elt = 5;
@@ -13379,7 +14033,8 @@ static void __lambda_327(int argc, object self_732272, object r_731235) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733933;
-c_733933.tag = closureN_tag;
+c_733933.hdr.mark = 4;
+ c_733933.tag = closureN_tag;
  c_733933.fn = (function_type)__lambda_326;
 c_733933.num_args = 1;
 c_733933.num_elt = 6;
@@ -13398,7 +14053,8 @@ static void __lambda_326(int argc, object self_732273, object r_731236) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733935;
-c_733935.tag = closureN_tag;
+c_733935.hdr.mark = 4;
+ c_733935.tag = closureN_tag;
  c_733935.fn = (function_type)__lambda_325;
 c_733935.num_args = 1;
 c_733935.num_elt = 5;
@@ -13418,7 +14074,8 @@ static void __lambda_325(int argc, object self_732274, object r_731234) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733937;
-c_733937.tag = closureN_tag;
+c_733937.hdr.mark = 4;
+ c_733937.tag = closureN_tag;
  c_733937.fn = (function_type)__lambda_324;
 c_733937.num_args = 1;
 c_733937.num_elt = 4;
@@ -13437,7 +14094,8 @@ static void __lambda_324(int argc, object self_732275, object r_731231) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733939;
-c_733939.tag = closureN_tag;
+c_733939.hdr.mark = 4;
+ c_733939.tag = closureN_tag;
  c_733939.fn = (function_type)__lambda_323;
 c_733939.num_args = 1;
 c_733939.num_elt = 5;
@@ -13455,7 +14113,8 @@ static void __lambda_323(int argc, object self_732276, object r_731232) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733941;
-c_733941.tag = closureN_tag;
+c_733941.hdr.mark = 4;
+ c_733941.tag = closureN_tag;
  c_733941.fn = (function_type)__lambda_322;
 c_733941.num_args = 1;
 c_733941.num_elt = 4;
@@ -13474,7 +14133,8 @@ static void __lambda_322(int argc, object self_732277, object r_731226) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733943;
-c_733943.tag = closureN_tag;
+c_733943.hdr.mark = 4;
+ c_733943.tag = closureN_tag;
  c_733943.fn = (function_type)__lambda_321;
 c_733943.num_args = 1;
 c_733943.num_elt = 4;
@@ -13491,7 +14151,8 @@ static void __lambda_321(int argc, object self_732278, object r_731230) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733948;
-c_733948.tag = closureN_tag;
+c_733948.hdr.mark = 4;
+ c_733948.tag = closureN_tag;
  c_733948.fn = (function_type)__lambda_320;
 c_733948.num_args = 1;
 c_733948.num_elt = 3;
@@ -13507,7 +14168,8 @@ static void __lambda_320(int argc, object self_732279, object r_731228) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733950;
-c_733950.tag = closureN_tag;
+c_733950.hdr.mark = 4;
+ c_733950.tag = closureN_tag;
  c_733950.fn = (function_type)__lambda_319;
 c_733950.num_args = 1;
 c_733950.num_elt = 4;
@@ -13524,7 +14186,8 @@ static void __lambda_319(int argc, object self_732280, object r_731229) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733952;
-c_733952.tag = closureN_tag;
+c_733952.hdr.mark = 4;
+ c_733952.tag = closureN_tag;
  c_733952.fn = (function_type)__lambda_318;
 c_733952.num_args = 1;
 c_733952.num_elt = 3;
@@ -13542,7 +14205,8 @@ static void __lambda_318(int argc, object self_732281, object r_731227) {
   Cyc_st_add("scheme/base.sld:case");
 
 closureN_type c_733954;
-c_733954.tag = closureN_tag;
+c_733954.hdr.mark = 4;
+ c_733954.tag = closureN_tag;
  c_733954.fn = (function_type)__lambda_317;
 c_733954.num_args = 1;
 c_733954.num_elt = 2;
@@ -13566,7 +14230,8 @@ static void __lambda_316(int argc, closure _,object k_731320, object expr_73506,
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733663;
-c_733663.tag = closureN_tag;
+c_733663.hdr.mark = 4;
+ c_733663.tag = closureN_tag;
  c_733663.fn = (function_type)__lambda_315;
 c_733663.num_args = 1;
 c_733663.num_elt = 4;
@@ -13583,7 +14248,8 @@ static void __lambda_315(int argc, object self_732283, object r_731381) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733665;
-c_733665.tag = closureN_tag;
+c_733665.hdr.mark = 4;
+ c_733665.tag = closureN_tag;
  c_733665.fn = (function_type)__lambda_314;
 c_733665.num_args = 1;
 c_733665.num_elt = 4;
@@ -13603,7 +14269,8 @@ if( !eq(boolean_f, r_731321) ){
 } else { 
   
 closureN_type c_733669;
-c_733669.tag = closureN_tag;
+c_733669.hdr.mark = 4;
+ c_733669.tag = closureN_tag;
  c_733669.fn = (function_type)__lambda_313;
 c_733669.num_args = 1;
 c_733669.num_elt = 4;
@@ -13621,7 +14288,8 @@ static void __lambda_313(int argc, object self_732285, object r_731322) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733671;
-c_733671.tag = closureN_tag;
+c_733671.hdr.mark = 4;
+ c_733671.tag = closureN_tag;
  c_733671.fn = (function_type)__lambda_312;
 c_733671.num_args = 1;
 c_733671.num_elt = 4;
@@ -13638,7 +14306,8 @@ static void __lambda_312(int argc, object self_732286, object cl_73507) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733673;
-c_733673.tag = closureN_tag;
+c_733673.hdr.mark = 4;
+ c_733673.tag = closureN_tag;
  c_733673.fn = (function_type)__lambda_311;
 c_733673.num_args = 1;
 c_733673.num_elt = 5;
@@ -13656,7 +14325,8 @@ static void __lambda_311(int argc, object self_732287, object r_731380) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733676;
-c_733676.tag = closureN_tag;
+c_733676.hdr.mark = 4;
+ c_733676.tag = closureN_tag;
  c_733676.fn = (function_type)__lambda_310;
 c_733676.num_args = 1;
 c_733676.num_elt = 5;
@@ -13674,7 +14344,8 @@ static void __lambda_310(int argc, object self_732288, object r_731378) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733678;
-c_733678.tag = closureN_tag;
+c_733678.hdr.mark = 4;
+ c_733678.tag = closureN_tag;
  c_733678.fn = (function_type)__lambda_309;
 c_733678.num_args = 1;
 c_733678.num_elt = 6;
@@ -13693,7 +14364,8 @@ static void __lambda_309(int argc, object self_732289, object r_731379) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733681;
-c_733681.tag = closureN_tag;
+c_733681.hdr.mark = 4;
+ c_733681.tag = closureN_tag;
  c_733681.fn = (function_type)__lambda_308;
 c_733681.num_args = 1;
 c_733681.num_elt = 5;
@@ -13712,7 +14384,8 @@ static void __lambda_308(int argc, object self_732290, object r_731323) {
 if( !eq(boolean_f, r_731323) ){ 
   
 closureN_type c_733683;
-c_733683.tag = closureN_tag;
+c_733683.hdr.mark = 4;
+ c_733683.tag = closureN_tag;
  c_733683.fn = (function_type)__lambda_261;
 c_733683.num_args = 1;
 c_733683.num_elt = 4;
@@ -13726,7 +14399,8 @@ return_closcall1((closure)&c_733683,  cddr(((closureN)self_732290)->elts[2]));
 } else { 
   
 closureN_type c_733722;
-c_733722.tag = closureN_tag;
+c_733722.hdr.mark = 4;
+ c_733722.tag = closureN_tag;
  c_733722.fn = (function_type)__lambda_267;
 c_733722.num_args = 0;
 c_733722.num_elt = 3;
@@ -13737,7 +14411,8 @@ c_733722.elts[2] = ((closureN)self_732290)->elts[4];
 
 
 closureN_type c_733748;
-c_733748.tag = closureN_tag;
+c_733748.hdr.mark = 4;
+ c_733748.tag = closureN_tag;
  c_733748.fn = (function_type)__lambda_307;
 c_733748.num_args = 1;
 c_733748.num_elt = 4;
@@ -13756,7 +14431,8 @@ static void __lambda_307(int argc, object self_732291, object r_731332) {
 if( !eq(boolean_f, r_731332) ){ 
   
 closureN_type c_733750;
-c_733750.tag = closureN_tag;
+c_733750.hdr.mark = 4;
+ c_733750.tag = closureN_tag;
  c_733750.fn = (function_type)__lambda_292;
 c_733750.num_args = 1;
 c_733750.num_elt = 4;
@@ -13770,7 +14446,8 @@ return_closcall1((closure)&c_733750,  quote_lambda);
 } else { 
   
 closureN_type c_733839;
-c_733839.tag = closureN_tag;
+c_733839.hdr.mark = 4;
+ c_733839.tag = closureN_tag;
  c_733839.fn = (function_type)__lambda_306;
 c_733839.num_args = 1;
 c_733839.num_elt = 4;
@@ -13788,7 +14465,8 @@ static void __lambda_306(int argc, object self_732292, object r_731371) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733842;
-c_733842.tag = closureN_tag;
+c_733842.hdr.mark = 4;
+ c_733842.tag = closureN_tag;
  c_733842.fn = (function_type)__lambda_305;
 c_733842.num_args = 1;
 c_733842.num_elt = 4;
@@ -13805,7 +14483,8 @@ static void __lambda_305(int argc, object self_732293, object r_731358) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733844;
-c_733844.tag = closureN_tag;
+c_733844.hdr.mark = 4;
+ c_733844.tag = closureN_tag;
  c_733844.fn = (function_type)__lambda_304;
 c_733844.num_args = 1;
 c_733844.num_elt = 5;
@@ -13823,7 +14502,8 @@ static void __lambda_304(int argc, object self_732294, object r_731359) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733846;
-c_733846.tag = closureN_tag;
+c_733846.hdr.mark = 4;
+ c_733846.tag = closureN_tag;
  c_733846.fn = (function_type)__lambda_303;
 c_733846.num_args = 1;
 c_733846.num_elt = 6;
@@ -13842,7 +14522,8 @@ static void __lambda_303(int argc, object self_732295, object r_731370) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733849;
-c_733849.tag = closureN_tag;
+c_733849.hdr.mark = 4;
+ c_733849.tag = closureN_tag;
  c_733849.fn = (function_type)__lambda_302;
 c_733849.num_args = 1;
 c_733849.num_elt = 6;
@@ -13861,7 +14542,8 @@ static void __lambda_302(int argc, object self_732296, object r_731366) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733851;
-c_733851.tag = closureN_tag;
+c_733851.hdr.mark = 4;
+ c_733851.tag = closureN_tag;
  c_733851.fn = (function_type)__lambda_301;
 c_733851.num_args = 1;
 c_733851.num_elt = 7;
@@ -13881,7 +14563,8 @@ static void __lambda_301(int argc, object self_732297, object r_731368) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733853;
-c_733853.tag = closureN_tag;
+c_733853.hdr.mark = 4;
+ c_733853.tag = closureN_tag;
  c_733853.fn = (function_type)__lambda_300;
 c_733853.num_args = 1;
 c_733853.num_elt = 7;
@@ -13901,7 +14584,8 @@ static void __lambda_300(int argc, object self_732298, object r_731369) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733855;
-c_733855.tag = closureN_tag;
+c_733855.hdr.mark = 4;
+ c_733855.tag = closureN_tag;
  c_733855.fn = (function_type)__lambda_299;
 c_733855.num_args = 1;
 c_733855.num_elt = 6;
@@ -13922,7 +14606,8 @@ static void __lambda_299(int argc, object self_732299, object r_731367) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733857;
-c_733857.tag = closureN_tag;
+c_733857.hdr.mark = 4;
+ c_733857.tag = closureN_tag;
  c_733857.fn = (function_type)__lambda_298;
 c_733857.num_args = 1;
 c_733857.num_elt = 5;
@@ -13942,7 +14627,8 @@ static void __lambda_298(int argc, object self_732300, object r_731365) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733859;
-c_733859.tag = closureN_tag;
+c_733859.hdr.mark = 4;
+ c_733859.tag = closureN_tag;
  c_733859.fn = (function_type)__lambda_297;
 c_733859.num_args = 1;
 c_733859.num_elt = 5;
@@ -13960,7 +14646,8 @@ static void __lambda_297(int argc, object self_732301, object r_731360) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733861;
-c_733861.tag = closureN_tag;
+c_733861.hdr.mark = 4;
+ c_733861.tag = closureN_tag;
  c_733861.fn = (function_type)__lambda_296;
 c_733861.num_args = 1;
 c_733861.num_elt = 6;
@@ -13979,7 +14666,8 @@ static void __lambda_296(int argc, object self_732302, object r_731364) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733864;
-c_733864.tag = closureN_tag;
+c_733864.hdr.mark = 4;
+ c_733864.tag = closureN_tag;
  c_733864.fn = (function_type)__lambda_295;
 c_733864.num_args = 1;
 c_733864.num_elt = 5;
@@ -13997,7 +14685,8 @@ static void __lambda_295(int argc, object self_732303, object r_731362) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733866;
-c_733866.tag = closureN_tag;
+c_733866.hdr.mark = 4;
+ c_733866.tag = closureN_tag;
  c_733866.fn = (function_type)__lambda_294;
 c_733866.num_args = 1;
 c_733866.num_elt = 5;
@@ -14015,7 +14704,8 @@ static void __lambda_294(int argc, object self_732304, object r_731363) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733868;
-c_733868.tag = closureN_tag;
+c_733868.hdr.mark = 4;
+ c_733868.tag = closureN_tag;
  c_733868.fn = (function_type)__lambda_293;
 c_733868.num_args = 1;
 c_733868.num_elt = 4;
@@ -14039,7 +14729,8 @@ static void __lambda_292(int argc, object self_732306, object r_731357) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733753;
-c_733753.tag = closureN_tag;
+c_733753.hdr.mark = 4;
+ c_733753.tag = closureN_tag;
  c_733753.fn = (function_type)__lambda_291;
 c_733753.num_args = 1;
 c_733753.num_elt = 4;
@@ -14056,7 +14747,8 @@ static void __lambda_291(int argc, object self_732307, object r_731335) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733755;
-c_733755.tag = closureN_tag;
+c_733755.hdr.mark = 4;
+ c_733755.tag = closureN_tag;
  c_733755.fn = (function_type)__lambda_290;
 c_733755.num_args = 1;
 c_733755.num_elt = 5;
@@ -14074,7 +14766,8 @@ static void __lambda_290(int argc, object self_732308, object r_731356) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733758;
-c_733758.tag = closureN_tag;
+c_733758.hdr.mark = 4;
+ c_733758.tag = closureN_tag;
  c_733758.fn = (function_type)__lambda_289;
 c_733758.num_args = 1;
 c_733758.num_elt = 5;
@@ -14092,7 +14785,8 @@ static void __lambda_289(int argc, object self_732309, object r_731355) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733760;
-c_733760.tag = closureN_tag;
+c_733760.hdr.mark = 4;
+ c_733760.tag = closureN_tag;
  c_733760.fn = (function_type)__lambda_288;
 c_733760.num_args = 1;
 c_733760.num_elt = 5;
@@ -14110,7 +14804,8 @@ static void __lambda_288(int argc, object self_732310, object r_731336) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733762;
-c_733762.tag = closureN_tag;
+c_733762.hdr.mark = 4;
+ c_733762.tag = closureN_tag;
  c_733762.fn = (function_type)__lambda_287;
 c_733762.num_args = 1;
 c_733762.num_elt = 6;
@@ -14129,7 +14824,8 @@ static void __lambda_287(int argc, object self_732311, object r_731354) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733765;
-c_733765.tag = closureN_tag;
+c_733765.hdr.mark = 4;
+ c_733765.tag = closureN_tag;
  c_733765.fn = (function_type)__lambda_286;
 c_733765.num_args = 1;
 c_733765.num_elt = 6;
@@ -14148,7 +14844,8 @@ static void __lambda_286(int argc, object self_732312, object r_731338) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733767;
-c_733767.tag = closureN_tag;
+c_733767.hdr.mark = 4;
+ c_733767.tag = closureN_tag;
  c_733767.fn = (function_type)__lambda_285;
 c_733767.num_args = 1;
 c_733767.num_elt = 7;
@@ -14168,7 +14865,8 @@ static void __lambda_285(int argc, object self_732313, object r_731353) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733770;
-c_733770.tag = closureN_tag;
+c_733770.hdr.mark = 4;
+ c_733770.tag = closureN_tag;
  c_733770.fn = (function_type)__lambda_284;
 c_733770.num_args = 1;
 c_733770.num_elt = 7;
@@ -14188,7 +14886,8 @@ static void __lambda_284(int argc, object self_732314, object r_731339) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733772;
-c_733772.tag = closureN_tag;
+c_733772.hdr.mark = 4;
+ c_733772.tag = closureN_tag;
  c_733772.fn = (function_type)__lambda_275;
 c_733772.num_args = 0;
 c_733772.num_elt = 2;
@@ -14198,7 +14897,8 @@ c_733772.elts[1] = ((closureN)self_732314)->elts[6];
 
 
 closureN_type c_733804;
-c_733804.tag = closureN_tag;
+c_733804.hdr.mark = 4;
+ c_733804.tag = closureN_tag;
  c_733804.fn = (function_type)__lambda_283;
 c_733804.num_args = 1;
 c_733804.num_elt = 8;
@@ -14219,7 +14919,8 @@ static void __lambda_283(int argc, object self_732315, object r_731340) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733806;
-c_733806.tag = closureN_tag;
+c_733806.hdr.mark = 4;
+ c_733806.tag = closureN_tag;
  c_733806.fn = (function_type)__lambda_282;
 c_733806.num_args = 1;
 c_733806.num_elt = 9;
@@ -14241,7 +14942,8 @@ static void __lambda_282(int argc, object self_732316, object r_731344) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733809;
-c_733809.tag = closureN_tag;
+c_733809.hdr.mark = 4;
+ c_733809.tag = closureN_tag;
  c_733809.fn = (function_type)__lambda_281;
 c_733809.num_args = 1;
 c_733809.num_elt = 8;
@@ -14262,7 +14964,8 @@ static void __lambda_281(int argc, object self_732317, object r_731342) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733811;
-c_733811.tag = closureN_tag;
+c_733811.hdr.mark = 4;
+ c_733811.tag = closureN_tag;
  c_733811.fn = (function_type)__lambda_280;
 c_733811.num_args = 1;
 c_733811.num_elt = 8;
@@ -14283,7 +14986,8 @@ static void __lambda_280(int argc, object self_732318, object r_731343) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733813;
-c_733813.tag = closureN_tag;
+c_733813.hdr.mark = 4;
+ c_733813.tag = closureN_tag;
  c_733813.fn = (function_type)__lambda_279;
 c_733813.num_args = 1;
 c_733813.num_elt = 7;
@@ -14305,7 +15009,8 @@ static void __lambda_279(int argc, object self_732319, object r_731341) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733815;
-c_733815.tag = closureN_tag;
+c_733815.hdr.mark = 4;
+ c_733815.tag = closureN_tag;
  c_733815.fn = (function_type)__lambda_278;
 c_733815.num_args = 1;
 c_733815.num_elt = 4;
@@ -14322,7 +15027,8 @@ static void __lambda_278(int argc, object self_732320, object r_731337) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733817;
-c_733817.tag = closureN_tag;
+c_733817.hdr.mark = 4;
+ c_733817.tag = closureN_tag;
  c_733817.fn = (function_type)__lambda_277;
 c_733817.num_args = 1;
 c_733817.num_elt = 2;
@@ -14337,7 +15043,8 @@ static void __lambda_277(int argc, object self_732321, object r_731333) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733819;
-c_733819.tag = closureN_tag;
+c_733819.hdr.mark = 4;
+ c_733819.tag = closureN_tag;
  c_733819.fn = (function_type)__lambda_276;
 c_733819.num_args = 1;
 c_733819.num_elt = 2;
@@ -14357,7 +15064,8 @@ static void __lambda_275(int argc, object self_732323, object k_731345) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733774;
-c_733774.tag = closureN_tag;
+c_733774.hdr.mark = 4;
+ c_733774.tag = closureN_tag;
  c_733774.fn = (function_type)__lambda_274;
 c_733774.num_args = 1;
 c_733774.num_elt = 3;
@@ -14373,7 +15081,8 @@ static void __lambda_274(int argc, object self_732324, object r_731352) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733776;
-c_733776.tag = closureN_tag;
+c_733776.hdr.mark = 4;
+ c_733776.tag = closureN_tag;
  c_733776.fn = (function_type)__lambda_273;
 c_733776.num_args = 1;
 c_733776.num_elt = 3;
@@ -14390,7 +15099,8 @@ static void __lambda_273(int argc, object self_732325, object r_731346) {
 if( !eq(boolean_f, r_731346) ){ 
   
 closureN_type c_733778;
-c_733778.tag = closureN_tag;
+c_733778.hdr.mark = 4;
+ c_733778.tag = closureN_tag;
  c_733778.fn = (function_type)__lambda_268;
 c_733778.num_args = 1;
 c_733778.num_elt = 2;
@@ -14402,7 +15112,8 @@ return_closcall1((closure)&c_733778,  quote_tmp);
 } else { 
   
 closureN_type c_733783;
-c_733783.tag = closureN_tag;
+c_733783.hdr.mark = 4;
+ c_733783.tag = closureN_tag;
  c_733783.fn = (function_type)__lambda_272;
 c_733783.num_args = 1;
 c_733783.num_elt = 2;
@@ -14418,7 +15129,8 @@ static void __lambda_272(int argc, object self_732326, object r_731351) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733785;
-c_733785.tag = closureN_tag;
+c_733785.hdr.mark = 4;
+ c_733785.tag = closureN_tag;
  c_733785.fn = (function_type)__lambda_271;
 c_733785.num_args = 1;
 c_733785.num_elt = 2;
@@ -14433,7 +15145,8 @@ static void __lambda_271(int argc, object self_732327, object r_731348) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733787;
-c_733787.tag = closureN_tag;
+c_733787.hdr.mark = 4;
+ c_733787.tag = closureN_tag;
  c_733787.fn = (function_type)__lambda_270;
 c_733787.num_args = 1;
 c_733787.num_elt = 3;
@@ -14449,7 +15162,8 @@ static void __lambda_270(int argc, object self_732328, object r_731350) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733790;
-c_733790.tag = closureN_tag;
+c_733790.hdr.mark = 4;
+ c_733790.tag = closureN_tag;
  c_733790.fn = (function_type)__lambda_269;
 c_733790.num_args = 1;
 c_733790.num_elt = 2;
@@ -14474,7 +15188,8 @@ static void __lambda_267(int argc, object self_732331, object k_731372) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733724;
-c_733724.tag = closureN_tag;
+c_733724.hdr.mark = 4;
+ c_733724.tag = closureN_tag;
  c_733724.fn = (function_type)__lambda_266;
 c_733724.num_args = 1;
 c_733724.num_elt = 4;
@@ -14491,7 +15206,8 @@ static void __lambda_266(int argc, object self_732332, object r_731377) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733726;
-c_733726.tag = closureN_tag;
+c_733726.hdr.mark = 4;
+ c_733726.tag = closureN_tag;
  c_733726.fn = (function_type)__lambda_265;
 c_733726.num_args = 1;
 c_733726.num_elt = 4;
@@ -14511,7 +15227,8 @@ if( !eq(boolean_f, r_731373) ){
 } else { 
   
 closureN_type c_733730;
-c_733730.tag = closureN_tag;
+c_733730.hdr.mark = 4;
+ c_733730.tag = closureN_tag;
  c_733730.fn = (function_type)__lambda_264;
 c_733730.num_args = 1;
 c_733730.num_elt = 4;
@@ -14529,7 +15246,8 @@ static void __lambda_264(int argc, object self_732334, object r_731376) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733733;
-c_733733.tag = closureN_tag;
+c_733733.hdr.mark = 4;
+ c_733733.tag = closureN_tag;
  c_733733.fn = (function_type)__lambda_263;
 c_733733.num_args = 1;
 c_733733.num_elt = 3;
@@ -14545,7 +15263,8 @@ static void __lambda_263(int argc, object self_732335, object r_731374) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733735;
-c_733735.tag = closureN_tag;
+c_733735.hdr.mark = 4;
+ c_733735.tag = closureN_tag;
  c_733735.fn = (function_type)__lambda_262;
 c_733735.num_args = 1;
 c_733735.num_elt = 3;
@@ -14566,7 +15285,8 @@ static void __lambda_261(int argc, object self_732337, object r_731331) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733685;
-c_733685.tag = closureN_tag;
+c_733685.hdr.mark = 4;
+ c_733685.tag = closureN_tag;
  c_733685.fn = (function_type)__lambda_260;
 c_733685.num_args = 1;
 c_733685.num_elt = 4;
@@ -14588,7 +15308,8 @@ return_closcall3(  __glo_error,  ((closureN)self_732338)->elts[2], &c_733688, ((
 } else { 
   
 closureN_type c_733691;
-c_733691.tag = closureN_tag;
+c_733691.hdr.mark = 4;
+ c_733691.tag = closureN_tag;
  c_733691.fn = (function_type)__lambda_259;
 c_733691.num_args = 1;
 c_733691.num_elt = 3;
@@ -14605,7 +15326,8 @@ static void __lambda_259(int argc, object self_732339, object r_731330) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733694;
-c_733694.tag = closureN_tag;
+c_733694.hdr.mark = 4;
+ c_733694.tag = closureN_tag;
  c_733694.fn = (function_type)__lambda_258;
 c_733694.num_args = 1;
 c_733694.num_elt = 2;
@@ -14620,7 +15342,8 @@ static void __lambda_258(int argc, object self_732340, object r_731326) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733696;
-c_733696.tag = closureN_tag;
+c_733696.hdr.mark = 4;
+ c_733696.tag = closureN_tag;
  c_733696.fn = (function_type)__lambda_257;
 c_733696.num_args = 1;
 c_733696.num_elt = 3;
@@ -14636,7 +15359,8 @@ static void __lambda_257(int argc, object self_732341, object r_731328) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733698;
-c_733698.tag = closureN_tag;
+c_733698.hdr.mark = 4;
+ c_733698.tag = closureN_tag;
  c_733698.fn = (function_type)__lambda_256;
 c_733698.num_args = 1;
 c_733698.num_elt = 3;
@@ -14652,7 +15376,8 @@ static void __lambda_256(int argc, object self_732342, object r_731329) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733700;
-c_733700.tag = closureN_tag;
+c_733700.hdr.mark = 4;
+ c_733700.tag = closureN_tag;
  c_733700.fn = (function_type)__lambda_255;
 c_733700.num_args = 1;
 c_733700.num_elt = 2;
@@ -14669,7 +15394,8 @@ static void __lambda_255(int argc, object self_732343, object r_731327) {
   Cyc_st_add("scheme/base.sld:cond");
 
 closureN_type c_733702;
-c_733702.tag = closureN_tag;
+c_733702.hdr.mark = 4;
+ c_733702.tag = closureN_tag;
  c_733702.fn = (function_type)__lambda_254;
 c_733702.num_args = 1;
 c_733702.num_elt = 1;
@@ -14690,7 +15416,8 @@ static void __lambda_253(int argc, closure _,object k_731384, object expr_73510,
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733429;
-c_733429.tag = closureN_tag;
+c_733429.hdr.mark = 4;
+ c_733429.tag = closureN_tag;
  c_733429.fn = (function_type)__lambda_252;
 c_733429.num_args = 1;
 c_733429.num_elt = 3;
@@ -14706,7 +15433,8 @@ static void __lambda_252(int argc, object self_732345, object check_73512) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733431;
-c_733431.tag = closureN_tag;
+c_733431.hdr.mark = 4;
+ c_733431.tag = closureN_tag;
  c_733431.fn = (function_type)__lambda_251;
 c_733431.num_args = 1;
 c_733431.num_elt = 3;
@@ -14724,7 +15452,8 @@ static void __lambda_251(int argc, object self_732346, object check_73512) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733433;
-c_733433.tag = closureN_tag;
+c_733433.hdr.mark = 4;
+ c_733433.tag = closureN_tag;
  c_733433.fn = (function_type)__lambda_250;
 c_733433.num_args = 1;
 c_733433.num_elt = 4;
@@ -14741,7 +15470,8 @@ static void __lambda_250(int argc, object self_732347, object check_73513) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733435;
-c_733435.tag = closureN_tag;
+c_733435.hdr.mark = 4;
+ c_733435.tag = closureN_tag;
  c_733435.fn = (function_type)__lambda_234;
 c_733435.num_args = 1;
 c_733435.num_elt = 4;
@@ -14753,7 +15483,8 @@ c_733435.elts[3] = ((closureN)self_732347)->elts[3];
 
 
 closureN_type c_733582;
-c_733582.tag = closureN_tag;
+c_733582.hdr.mark = 4;
+ c_733582.tag = closureN_tag;
  c_733582.fn = (function_type)__lambda_249;
 c_733582.num_args = 1;
 c_733582.num_elt = 1;
@@ -14767,7 +15498,8 @@ static void __lambda_249(int argc, object self_732348, object k_731410, object x
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733584;
-c_733584.tag = closureN_tag;
+c_733584.hdr.mark = 4;
+ c_733584.tag = closureN_tag;
  c_733584.fn = (function_type)__lambda_248;
 c_733584.num_args = 1;
 c_733584.num_elt = 3;
@@ -14784,7 +15516,8 @@ static void __lambda_248(int argc, object self_732349, object r_731411) {
 if( !eq(boolean_f, r_731411) ){ 
   
 closureN_type c_733586;
-c_733586.tag = closureN_tag;
+c_733586.hdr.mark = 4;
+ c_733586.tag = closureN_tag;
  c_733586.fn = (function_type)__lambda_246;
 c_733586.num_args = 1;
 c_733586.num_elt = 3;
@@ -14797,7 +15530,8 @@ return_closcall1((closure)&c_733586,  car(((closureN)self_732349)->elts[2]));
 } else { 
   
 closureN_type c_733650;
-c_733650.tag = closureN_tag;
+c_733650.hdr.mark = 4;
+ c_733650.tag = closureN_tag;
  c_733650.fn = (function_type)__lambda_247;
 c_733650.num_args = 1;
 c_733650.num_elt = 2;
@@ -14818,7 +15552,8 @@ static void __lambda_246(int argc, object self_732351, object r_731412) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733588;
-c_733588.tag = closureN_tag;
+c_733588.hdr.mark = 4;
+ c_733588.tag = closureN_tag;
  c_733588.fn = (function_type)__lambda_245;
 c_733588.num_args = 1;
 c_733588.num_elt = 3;
@@ -14834,7 +15569,8 @@ static void __lambda_245(int argc, object self_732352, object tmp_73519) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733590;
-c_733590.tag = closureN_tag;
+c_733590.hdr.mark = 4;
+ c_733590.tag = closureN_tag;
  c_733590.fn = (function_type)__lambda_244;
 c_733590.num_args = 1;
 c_733590.num_elt = 4;
@@ -14851,7 +15587,8 @@ static void __lambda_244(int argc, object self_732353, object r_731422) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733592;
-c_733592.tag = closureN_tag;
+c_733592.hdr.mark = 4;
+ c_733592.tag = closureN_tag;
  c_733592.fn = (function_type)__lambda_243;
 c_733592.num_args = 1;
 c_733592.num_elt = 4;
@@ -14869,7 +15606,8 @@ static void __lambda_243(int argc, object self_732354, object r_731413) {
 if( !eq(boolean_f, r_731413) ){ 
   
 closureN_type c_733594;
-c_733594.tag = closureN_tag;
+c_733594.hdr.mark = 4;
+ c_733594.tag = closureN_tag;
  c_733594.fn = (function_type)__lambda_235;
 c_733594.num_args = 1;
 c_733594.num_elt = 2;
@@ -14881,7 +15619,8 @@ return_closcall1((closure)&c_733594,  cdr(((closureN)self_732354)->elts[3]));
 } else { 
   
 closureN_type c_733604;
-c_733604.tag = closureN_tag;
+c_733604.hdr.mark = 4;
+ c_733604.tag = closureN_tag;
  c_733604.fn = (function_type)__lambda_242;
 c_733604.num_args = 1;
 c_733604.num_elt = 4;
@@ -14899,7 +15638,8 @@ static void __lambda_242(int argc, object self_732355, object r_731421) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733606;
-c_733606.tag = closureN_tag;
+c_733606.hdr.mark = 4;
+ c_733606.tag = closureN_tag;
  c_733606.fn = (function_type)__lambda_241;
 c_733606.num_args = 1;
 c_733606.num_elt = 4;
@@ -14917,7 +15657,8 @@ static void __lambda_241(int argc, object self_732356, object r_731415) {
 if( !eq(boolean_f, r_731415) ){ 
   
 closureN_type c_733608;
-c_733608.tag = closureN_tag;
+c_733608.hdr.mark = 4;
+ c_733608.tag = closureN_tag;
  c_733608.fn = (function_type)__lambda_236;
 c_733608.num_args = 1;
 c_733608.num_elt = 2;
@@ -14929,7 +15670,8 @@ return_closcall1((closure)&c_733608,  cdr(((closureN)self_732356)->elts[3]));
 } else { 
   
 closureN_type c_733618;
-c_733618.tag = closureN_tag;
+c_733618.hdr.mark = 4;
+ c_733618.tag = closureN_tag;
  c_733618.fn = (function_type)__lambda_240;
 c_733618.num_args = 1;
 c_733618.num_elt = 4;
@@ -14947,7 +15689,8 @@ static void __lambda_240(int argc, object self_732357, object r_731420) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733620;
-c_733620.tag = closureN_tag;
+c_733620.hdr.mark = 4;
+ c_733620.tag = closureN_tag;
  c_733620.fn = (function_type)__lambda_239;
 c_733620.num_args = 1;
 c_733620.num_elt = 3;
@@ -14964,7 +15707,8 @@ static void __lambda_239(int argc, object self_732358, object r_731417) {
 if( !eq(boolean_f, r_731417) ){ 
   
 closureN_type c_733622;
-c_733622.tag = closureN_tag;
+c_733622.hdr.mark = 4;
+ c_733622.tag = closureN_tag;
  c_733622.fn = (function_type)__lambda_238;
 c_733622.num_args = 1;
 c_733622.num_elt = 2;
@@ -14984,7 +15728,8 @@ static void __lambda_238(int argc, object self_732359, object r_731419) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733627;
-c_733627.tag = closureN_tag;
+c_733627.hdr.mark = 4;
+ c_733627.tag = closureN_tag;
  c_733627.fn = (function_type)__lambda_237;
 c_733627.num_args = 1;
 c_733627.num_elt = 1;
@@ -15013,7 +15758,8 @@ static void __lambda_234(int argc, object self_732363, object r_731409) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733437;
-c_733437.tag = closureN_tag;
+c_733437.hdr.mark = 4;
+ c_733437.tag = closureN_tag;
  c_733437.fn = (function_type)__lambda_233;
 c_733437.num_args = 1;
 c_733437.num_elt = 4;
@@ -15030,7 +15776,8 @@ static void __lambda_233(int argc, object self_732364, object r_731385) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733439;
-c_733439.tag = closureN_tag;
+c_733439.hdr.mark = 4;
+ c_733439.tag = closureN_tag;
  c_733439.fn = (function_type)__lambda_232;
 c_733439.num_args = 1;
 c_733439.num_elt = 3;
@@ -15046,7 +15793,8 @@ static void __lambda_232(int argc, object self_732365, object r_731386) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733441;
-c_733441.tag = closureN_tag;
+c_733441.hdr.mark = 4;
+ c_733441.tag = closureN_tag;
  c_733441.fn = (function_type)__lambda_231;
 c_733441.num_args = 1;
 c_733441.num_elt = 3;
@@ -15062,7 +15810,8 @@ static void __lambda_231(int argc, object self_732366, object ls_73514) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733443;
-c_733443.tag = closureN_tag;
+c_733443.hdr.mark = 4;
+ c_733443.tag = closureN_tag;
  c_733443.fn = (function_type)__lambda_230;
 c_733443.num_args = 1;
 c_733443.num_elt = 4;
@@ -15079,7 +15828,8 @@ static void __lambda_230(int argc, object self_732367, object expand_73515) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733445;
-c_733445.tag = closureN_tag;
+c_733445.hdr.mark = 4;
+ c_733445.tag = closureN_tag;
  c_733445.fn = (function_type)__lambda_229;
 c_733445.num_args = 1;
 c_733445.num_elt = 4;
@@ -15098,7 +15848,8 @@ static void __lambda_229(int argc, object self_732368, object expand_73515) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733447;
-c_733447.tag = closureN_tag;
+c_733447.hdr.mark = 4;
+ c_733447.tag = closureN_tag;
  c_733447.fn = (function_type)__lambda_228;
 c_733447.num_args = 0;
 c_733447.num_elt = 5;
@@ -15116,7 +15867,8 @@ static void __lambda_228(int argc, object self_732369) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733449;
-c_733449.tag = closureN_tag;
+c_733449.hdr.mark = 4;
+ c_733449.tag = closureN_tag;
  c_733449.fn = (function_type)__lambda_202;
 c_733449.num_args = 1;
 c_733449.num_elt = 3;
@@ -15127,7 +15879,8 @@ c_733449.elts[2] = ((closureN)self_732369)->elts[3];
 
 
 closureN_type c_733461;
-c_733461.tag = closureN_tag;
+c_733461.hdr.mark = 4;
+ c_733461.tag = closureN_tag;
  c_733461.fn = (function_type)__lambda_227;
 c_733461.num_args = 1;
 c_733461.num_elt = 3;
@@ -15143,7 +15896,8 @@ static void __lambda_227(int argc, object self_732370, object k_731389, object l
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733463;
-c_733463.tag = closureN_tag;
+c_733463.hdr.mark = 4;
+ c_733463.tag = closureN_tag;
  c_733463.fn = (function_type)__lambda_226;
 c_733463.num_args = 1;
 c_733463.num_elt = 5;
@@ -15161,7 +15915,8 @@ static void __lambda_226(int argc, object self_732371, object r_731390) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733465;
-c_733465.tag = closureN_tag;
+c_733465.hdr.mark = 4;
+ c_733465.tag = closureN_tag;
  c_733465.fn = (function_type)__lambda_225;
 c_733465.num_args = 1;
 c_733465.num_elt = 5;
@@ -15182,7 +15937,8 @@ if( !eq(boolean_f, tmp_73517) ){
 } else { 
   
 closureN_type c_733469;
-c_733469.tag = closureN_tag;
+c_733469.hdr.mark = 4;
+ c_733469.tag = closureN_tag;
  c_733469.fn = (function_type)__lambda_224;
 c_733469.num_args = 1;
 c_733469.num_elt = 5;
@@ -15201,7 +15957,8 @@ static void __lambda_224(int argc, object self_732373, object r_731408) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733471;
-c_733471.tag = closureN_tag;
+c_733471.hdr.mark = 4;
+ c_733471.tag = closureN_tag;
  c_733471.fn = (function_type)__lambda_223;
 c_733471.num_args = 1;
 c_733471.num_elt = 5;
@@ -15219,7 +15976,8 @@ static void __lambda_223(int argc, object self_732374, object r_731407) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733473;
-c_733473.tag = closureN_tag;
+c_733473.hdr.mark = 4;
+ c_733473.tag = closureN_tag;
  c_733473.fn = (function_type)__lambda_222;
 c_733473.num_args = 1;
 c_733473.num_elt = 5;
@@ -15238,7 +15996,8 @@ static void __lambda_222(int argc, object self_732375, object r_731391) {
 if( !eq(boolean_f, r_731391) ){ 
   
 closureN_type c_733475;
-c_733475.tag = closureN_tag;
+c_733475.hdr.mark = 4;
+ c_733475.tag = closureN_tag;
  c_733475.fn = (function_type)__lambda_204;
 c_733475.num_args = 0;
 c_733475.num_elt = 2;
@@ -15250,7 +16009,8 @@ return_closcall0((closure)&c_733475);
 } else { 
   
 closureN_type c_733485;
-c_733485.tag = closureN_tag;
+c_733485.hdr.mark = 4;
+ c_733485.tag = closureN_tag;
  c_733485.fn = (function_type)__lambda_221;
 c_733485.num_args = 1;
 c_733485.num_elt = 5;
@@ -15269,7 +16029,8 @@ static void __lambda_221(int argc, object self_732376, object r_731405) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733487;
-c_733487.tag = closureN_tag;
+c_733487.hdr.mark = 4;
+ c_733487.tag = closureN_tag;
  c_733487.fn = (function_type)__lambda_220;
 c_733487.num_args = 1;
 c_733487.num_elt = 6;
@@ -15288,7 +16049,8 @@ static void __lambda_220(int argc, object self_732377, object r_731406) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733489;
-c_733489.tag = closureN_tag;
+c_733489.hdr.mark = 4;
+ c_733489.tag = closureN_tag;
  c_733489.fn = (function_type)__lambda_219;
 c_733489.num_args = 1;
 c_733489.num_elt = 5;
@@ -15307,7 +16069,8 @@ static void __lambda_219(int argc, object self_732378, object r_731393) {
 if( !eq(boolean_f, r_731393) ){ 
   
 closureN_type c_733491;
-c_733491.tag = closureN_tag;
+c_733491.hdr.mark = 4;
+ c_733491.tag = closureN_tag;
  c_733491.fn = (function_type)__lambda_210;
 c_733491.num_args = 0;
 c_733491.num_elt = 3;
@@ -15320,7 +16083,8 @@ return_closcall0((closure)&c_733491);
 } else { 
   
 closureN_type c_733521;
-c_733521.tag = closureN_tag;
+c_733521.hdr.mark = 4;
+ c_733521.tag = closureN_tag;
  c_733521.fn = (function_type)__lambda_218;
 c_733521.num_args = 1;
 c_733521.num_elt = 5;
@@ -15339,7 +16103,8 @@ static void __lambda_218(int argc, object self_732379, object r_731404) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733526;
-c_733526.tag = closureN_tag;
+c_733526.hdr.mark = 4;
+ c_733526.tag = closureN_tag;
  c_733526.fn = (function_type)__lambda_217;
 c_733526.num_args = 1;
 c_733526.num_elt = 4;
@@ -15357,7 +16122,8 @@ static void __lambda_217(int argc, object self_732380, object r_731399) {
 if( !eq(boolean_f, r_731399) ){ 
   
 closureN_type c_733528;
-c_733528.tag = closureN_tag;
+c_733528.hdr.mark = 4;
+ c_733528.tag = closureN_tag;
  c_733528.fn = (function_type)__lambda_214;
 c_733528.num_args = 0;
 c_733528.num_elt = 3;
@@ -15370,7 +16136,8 @@ return_closcall0((closure)&c_733528);
 } else { 
   
 closureN_type c_733546;
-c_733546.tag = closureN_tag;
+c_733546.hdr.mark = 4;
+ c_733546.tag = closureN_tag;
  c_733546.fn = (function_type)__lambda_216;
 c_733546.num_args = 0;
 c_733546.num_elt = 3;
@@ -15387,7 +16154,8 @@ static void __lambda_216(int argc, object self_732381) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733548;
-c_733548.tag = closureN_tag;
+c_733548.hdr.mark = 4;
+ c_733548.tag = closureN_tag;
  c_733548.fn = (function_type)__lambda_215;
 c_733548.num_args = 1;
 c_733548.num_elt = 2;
@@ -15407,7 +16175,8 @@ static void __lambda_214(int argc, object self_732383) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733530;
-c_733530.tag = closureN_tag;
+c_733530.hdr.mark = 4;
+ c_733530.tag = closureN_tag;
  c_733530.fn = (function_type)__lambda_213;
 c_733530.num_args = 1;
 c_733530.num_elt = 3;
@@ -15423,7 +16192,8 @@ static void __lambda_213(int argc, object self_732384, object r_731402) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733533;
-c_733533.tag = closureN_tag;
+c_733533.hdr.mark = 4;
+ c_733533.tag = closureN_tag;
  c_733533.fn = (function_type)__lambda_212;
 c_733533.num_args = 1;
 c_733533.num_elt = 2;
@@ -15438,7 +16208,8 @@ static void __lambda_212(int argc, object self_732385, object r_731400) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733535;
-c_733535.tag = closureN_tag;
+c_733535.hdr.mark = 4;
+ c_733535.tag = closureN_tag;
  c_733535.fn = (function_type)__lambda_211;
 c_733535.num_args = 1;
 c_733535.num_elt = 2;
@@ -15460,7 +16231,8 @@ static void __lambda_210(int argc, object self_732387) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733493;
-c_733493.tag = closureN_tag;
+c_733493.hdr.mark = 4;
+ c_733493.tag = closureN_tag;
  c_733493.fn = (function_type)__lambda_209;
 c_733493.num_args = 1;
 c_733493.num_elt = 3;
@@ -15476,7 +16248,8 @@ static void __lambda_209(int argc, object self_732388, object r_731398) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733495;
-c_733495.tag = closureN_tag;
+c_733495.hdr.mark = 4;
+ c_733495.tag = closureN_tag;
  c_733495.fn = (function_type)__lambda_208;
 c_733495.num_args = 1;
 c_733495.num_elt = 3;
@@ -15497,7 +16270,8 @@ return_closcall2(  __glo_error,  ((closureN)self_732389)->elts[0], &c_733498);
 } else { 
   
 closureN_type c_733500;
-c_733500.tag = closureN_tag;
+c_733500.hdr.mark = 4;
+ c_733500.tag = closureN_tag;
  c_733500.fn = (function_type)__lambda_207;
 c_733500.num_args = 1;
 c_733500.num_elt = 3;
@@ -15514,7 +16288,8 @@ static void __lambda_207(int argc, object self_732390, object r_731397) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733503;
-c_733503.tag = closureN_tag;
+c_733503.hdr.mark = 4;
+ c_733503.tag = closureN_tag;
  c_733503.fn = (function_type)__lambda_206;
 c_733503.num_args = 1;
 c_733503.num_elt = 2;
@@ -15529,7 +16304,8 @@ static void __lambda_206(int argc, object self_732391, object r_731395) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733505;
-c_733505.tag = closureN_tag;
+c_733505.hdr.mark = 4;
+ c_733505.tag = closureN_tag;
  c_733505.fn = (function_type)__lambda_205;
 c_733505.num_args = 1;
 c_733505.num_elt = 2;
@@ -15551,7 +16327,8 @@ static void __lambda_204(int argc, object self_732393) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733477;
-c_733477.tag = closureN_tag;
+c_733477.hdr.mark = 4;
+ c_733477.tag = closureN_tag;
  c_733477.fn = (function_type)__lambda_203;
 c_733477.num_args = 1;
 c_733477.num_elt = 1;
@@ -15572,7 +16349,8 @@ static void __lambda_202(int argc, object self_732395, object r_731388) {
   Cyc_st_add("scheme/base.sld:cond-expand");
 
 closureN_type c_733451;
-c_733451.tag = closureN_tag;
+c_733451.hdr.mark = 4;
+ c_733451.tag = closureN_tag;
  c_733451.fn = (function_type)__lambda_201;
 c_733451.num_args = 1;
 c_733451.num_elt = 3;
@@ -15593,7 +16371,8 @@ static void __lambda_200(int argc, closure _,object k_731426, object exp_73522, 
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733327;
-c_733327.tag = closureN_tag;
+c_733327.hdr.mark = 4;
+ c_733327.tag = closureN_tag;
  c_733327.fn = (function_type)__lambda_199;
 c_733327.num_args = 2;
 c_733327.num_elt = 2;
@@ -15608,7 +16387,8 @@ static void __lambda_199(int argc, object self_732397, object dummy_91bind_73526
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733329;
-c_733329.tag = closureN_tag;
+c_733329.hdr.mark = 4;
+ c_733329.tag = closureN_tag;
  c_733329.fn = (function_type)__lambda_198;
 c_733329.num_args = 1;
 c_733329.num_elt = 3;
@@ -15626,7 +16406,8 @@ static void __lambda_198(int argc, object self_732398, object dummy_91bind_73526
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733331;
-c_733331.tag = closureN_tag;
+c_733331.hdr.mark = 4;
+ c_733331.tag = closureN_tag;
  c_733331.fn = (function_type)__lambda_197;
 c_733331.num_args = 1;
 c_733331.num_elt = 3;
@@ -15644,7 +16425,8 @@ static void __lambda_197(int argc, object self_732399, object singlet_127_73525)
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733333;
-c_733333.tag = closureN_tag;
+c_733333.hdr.mark = 4;
+ c_733333.tag = closureN_tag;
  c_733333.fn = (function_type)__lambda_196;
 c_733333.num_args = 2;
 c_733333.num_elt = 4;
@@ -15661,7 +16443,8 @@ static void __lambda_196(int argc, object self_732400, object singlet_127_73528,
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733335;
-c_733335.tag = closureN_tag;
+c_733335.hdr.mark = 4;
+ c_733335.tag = closureN_tag;
  c_733335.fn = (function_type)__lambda_192;
 c_733335.num_args = 1;
 c_733335.num_elt = 4;
@@ -15680,7 +16463,8 @@ static void __lambda_195(int argc, object self_732401, object k_731440, object l
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733406;
-c_733406.tag = closureN_tag;
+c_733406.hdr.mark = 4;
+ c_733406.tag = closureN_tag;
  c_733406.fn = (function_type)__lambda_194;
 c_733406.num_args = 1;
 c_733406.num_elt = 2;
@@ -15696,7 +16480,8 @@ static void __lambda_194(int argc, object self_732402, object r_731441) {
 if( !eq(boolean_f, r_731441) ){ 
   
 closureN_type c_733408;
-c_733408.tag = closureN_tag;
+c_733408.hdr.mark = 4;
+ c_733408.tag = closureN_tag;
  c_733408.fn = (function_type)__lambda_193;
 c_733408.num_args = 1;
 c_733408.num_elt = 1;
@@ -15722,7 +16507,8 @@ static void __lambda_192(int argc, object self_732404, object r_731439) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733337;
-c_733337.tag = closureN_tag;
+c_733337.hdr.mark = 4;
+ c_733337.tag = closureN_tag;
  c_733337.fn = (function_type)__lambda_191;
 c_733337.num_args = 1;
 c_733337.num_elt = 4;
@@ -15739,7 +16525,8 @@ static void __lambda_191(int argc, object self_732405, object r_731427) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733339;
-c_733339.tag = closureN_tag;
+c_733339.hdr.mark = 4;
+ c_733339.tag = closureN_tag;
  c_733339.fn = (function_type)__lambda_180;
 c_733339.num_args = 1;
 c_733339.num_elt = 3;
@@ -15750,7 +16537,8 @@ c_733339.elts[2] = ((closureN)self_732405)->elts[2];
 
 
 closureN_type c_733355;
-c_733355.tag = closureN_tag;
+c_733355.hdr.mark = 4;
+ c_733355.tag = closureN_tag;
  c_733355.fn = (function_type)__lambda_190;
 c_733355.num_args = 1;
 c_733355.num_elt = 1;
@@ -15764,7 +16552,8 @@ static void __lambda_190(int argc, object self_732406, object k_731431, object e
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733360;
-c_733360.tag = closureN_tag;
+c_733360.hdr.mark = 4;
+ c_733360.tag = closureN_tag;
  c_733360.fn = (function_type)__lambda_189;
 c_733360.num_args = 1;
 c_733360.num_elt = 2;
@@ -15780,7 +16569,8 @@ static void __lambda_189(int argc, object self_732407, object r_731432) {
 if( !eq(boolean_f, r_731432) ){ 
   
 closureN_type c_733362;
-c_733362.tag = closureN_tag;
+c_733362.hdr.mark = 4;
+ c_733362.tag = closureN_tag;
  c_733362.fn = (function_type)__lambda_181;
 c_733362.num_args = 0;
 c_733362.num_elt = 2;
@@ -15792,7 +16582,8 @@ return_closcall0((closure)&c_733362);
 } else { 
   
 closureN_type c_733369;
-c_733369.tag = closureN_tag;
+c_733369.hdr.mark = 4;
+ c_733369.tag = closureN_tag;
  c_733369.fn = (function_type)__lambda_188;
 c_733369.num_args = 1;
 c_733369.num_elt = 2;
@@ -15809,7 +16600,8 @@ static void __lambda_188(int argc, object self_732408, object r_731433) {
 if( !eq(boolean_f, r_731433) ){ 
   
 closureN_type c_733371;
-c_733371.tag = closureN_tag;
+c_733371.hdr.mark = 4;
+ c_733371.tag = closureN_tag;
  c_733371.fn = (function_type)__lambda_187;
 c_733371.num_args = 0;
 c_733371.num_elt = 2;
@@ -15827,7 +16619,8 @@ static void __lambda_187(int argc, object self_732409) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733373;
-c_733373.tag = closureN_tag;
+c_733373.hdr.mark = 4;
+ c_733373.tag = closureN_tag;
  c_733373.fn = (function_type)__lambda_186;
 c_733373.num_args = 1;
 c_733373.num_elt = 2;
@@ -15842,7 +16635,8 @@ static void __lambda_186(int argc, object self_732410, object r_731436) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733375;
-c_733375.tag = closureN_tag;
+c_733375.hdr.mark = 4;
+ c_733375.tag = closureN_tag;
  c_733375.fn = (function_type)__lambda_185;
 c_733375.num_args = 1;
 c_733375.num_elt = 3;
@@ -15858,7 +16652,8 @@ static void __lambda_185(int argc, object self_732411, object r_731438) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733377;
-c_733377.tag = closureN_tag;
+c_733377.hdr.mark = 4;
+ c_733377.tag = closureN_tag;
  c_733377.fn = (function_type)__lambda_184;
 c_733377.num_args = 1;
 c_733377.num_elt = 2;
@@ -15875,7 +16670,8 @@ static void __lambda_184(int argc, object self_732412, object r_731437) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733379;
-c_733379.tag = closureN_tag;
+c_733379.hdr.mark = 4;
+ c_733379.tag = closureN_tag;
  c_733379.fn = (function_type)__lambda_183;
 c_733379.num_args = 1;
 c_733379.num_elt = 1;
@@ -15891,7 +16687,8 @@ static void __lambda_183(int argc, object self_732413, object r_731434) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733381;
-c_733381.tag = closureN_tag;
+c_733381.hdr.mark = 4;
+ c_733381.tag = closureN_tag;
  c_733381.fn = (function_type)__lambda_182;
 c_733381.num_args = 1;
 c_733381.num_elt = 2;
@@ -15918,7 +16715,8 @@ static void __lambda_180(int argc, object self_732416, object r_731430) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733341;
-c_733341.tag = closureN_tag;
+c_733341.hdr.mark = 4;
+ c_733341.tag = closureN_tag;
  c_733341.fn = (function_type)__lambda_179;
 c_733341.num_args = 1;
 c_733341.num_elt = 3;
@@ -15934,7 +16732,8 @@ static void __lambda_179(int argc, object self_732417, object r_731428) {
   Cyc_st_add("scheme/base.sld:begin");
 
 closureN_type c_733343;
-c_733343.tag = closureN_tag;
+c_733343.hdr.mark = 4;
+ c_733343.tag = closureN_tag;
  c_733343.fn = (function_type)__lambda_178;
 c_733343.num_args = 1;
 c_733343.num_elt = 2;
@@ -15954,7 +16753,8 @@ static void __lambda_177(int argc, closure _,object k_731445, object exp_73533, 
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733232;
-c_733232.tag = closureN_tag;
+c_733232.hdr.mark = 4;
+ c_733232.tag = closureN_tag;
  c_733232.fn = (function_type)__lambda_176;
 c_733232.num_args = 1;
 c_733232.num_elt = 2;
@@ -15969,7 +16769,8 @@ static void __lambda_176(int argc, object self_732419, object r_731446) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733234;
-c_733234.tag = closureN_tag;
+c_733234.hdr.mark = 4;
+ c_733234.tag = closureN_tag;
  c_733234.fn = (function_type)__lambda_175;
 c_733234.num_args = 1;
 c_733234.num_elt = 2;
@@ -15984,7 +16785,8 @@ static void __lambda_175(int argc, object self_732420, object bindings_73534) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733236;
-c_733236.tag = closureN_tag;
+c_733236.hdr.mark = 4;
+ c_733236.tag = closureN_tag;
  c_733236.fn = (function_type)__lambda_172;
 c_733236.num_args = 1;
 c_733236.num_elt = 3;
@@ -16002,7 +16804,8 @@ static void __lambda_174(int argc, object self_732421, object k_731465, object b
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733318;
-c_733318.tag = closureN_tag;
+c_733318.hdr.mark = 4;
+ c_733318.tag = closureN_tag;
  c_733318.fn = (function_type)__lambda_173;
 c_733318.num_args = 1;
 c_733318.num_elt = 1;
@@ -16021,7 +16824,8 @@ static void __lambda_172(int argc, object self_732423, object r_731464) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733238;
-c_733238.tag = closureN_tag;
+c_733238.hdr.mark = 4;
+ c_733238.tag = closureN_tag;
  c_733238.fn = (function_type)__lambda_171;
 c_733238.num_args = 1;
 c_733238.num_elt = 3;
@@ -16037,7 +16841,8 @@ static void __lambda_171(int argc, object self_732424, object r_731447) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733240;
-c_733240.tag = closureN_tag;
+c_733240.hdr.mark = 4;
+ c_733240.tag = closureN_tag;
  c_733240.fn = (function_type)__lambda_170;
 c_733240.num_args = 1;
 c_733240.num_elt = 3;
@@ -16053,7 +16858,8 @@ static void __lambda_170(int argc, object self_732425, object namings_73536) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733242;
-c_733242.tag = closureN_tag;
+c_733242.hdr.mark = 4;
+ c_733242.tag = closureN_tag;
  c_733242.fn = (function_type)__lambda_169;
 c_733242.num_args = 1;
 c_733242.num_elt = 4;
@@ -16070,7 +16876,8 @@ static void __lambda_169(int argc, object self_732426, object r_731463) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733244;
-c_733244.tag = closureN_tag;
+c_733244.hdr.mark = 4;
+ c_733244.tag = closureN_tag;
  c_733244.fn = (function_type)__lambda_168;
 c_733244.num_args = 1;
 c_733244.num_elt = 4;
@@ -16087,7 +16894,8 @@ static void __lambda_168(int argc, object self_732427, object r_731448) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733246;
-c_733246.tag = closureN_tag;
+c_733246.hdr.mark = 4;
+ c_733246.tag = closureN_tag;
  c_733246.fn = (function_type)__lambda_167;
 c_733246.num_args = 1;
 c_733246.num_elt = 4;
@@ -16104,7 +16912,8 @@ static void __lambda_167(int argc, object self_732428, object names_73537) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733248;
-c_733248.tag = closureN_tag;
+c_733248.hdr.mark = 4;
+ c_733248.tag = closureN_tag;
  c_733248.fn = (function_type)__lambda_164;
 c_733248.num_args = 1;
 c_733248.num_elt = 4;
@@ -16123,7 +16932,8 @@ static void __lambda_166(int argc, object self_732429, object k_731461, object b
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733305;
-c_733305.tag = closureN_tag;
+c_733305.hdr.mark = 4;
+ c_733305.tag = closureN_tag;
  c_733305.fn = (function_type)__lambda_165;
 c_733305.num_args = 1;
 c_733305.num_elt = 2;
@@ -16145,7 +16955,8 @@ static void __lambda_164(int argc, object self_732431, object r_731460) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733250;
-c_733250.tag = closureN_tag;
+c_733250.hdr.mark = 4;
+ c_733250.tag = closureN_tag;
  c_733250.fn = (function_type)__lambda_163;
 c_733250.num_args = 1;
 c_733250.num_elt = 3;
@@ -16161,7 +16972,8 @@ static void __lambda_163(int argc, object self_732432, object r_731449) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733252;
-c_733252.tag = closureN_tag;
+c_733252.hdr.mark = 4;
+ c_733252.tag = closureN_tag;
  c_733252.fn = (function_type)__lambda_162;
 c_733252.num_args = 1;
 c_733252.num_elt = 3;
@@ -16177,7 +16989,8 @@ static void __lambda_162(int argc, object self_732433, object sets_73539) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733254;
-c_733254.tag = closureN_tag;
+c_733254.hdr.mark = 4;
+ c_733254.tag = closureN_tag;
  c_733254.fn = (function_type)__lambda_161;
 c_733254.num_args = 1;
 c_733254.num_elt = 4;
@@ -16194,7 +17007,8 @@ static void __lambda_161(int argc, object self_732434, object r_731459) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733256;
-c_733256.tag = closureN_tag;
+c_733256.hdr.mark = 4;
+ c_733256.tag = closureN_tag;
  c_733256.fn = (function_type)__lambda_160;
 c_733256.num_args = 1;
 c_733256.num_elt = 4;
@@ -16211,7 +17025,8 @@ static void __lambda_160(int argc, object self_732435, object r_731450) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733258;
-c_733258.tag = closureN_tag;
+c_733258.hdr.mark = 4;
+ c_733258.tag = closureN_tag;
  c_733258.fn = (function_type)__lambda_159;
 c_733258.num_args = 1;
 c_733258.num_elt = 4;
@@ -16228,7 +17043,8 @@ static void __lambda_159(int argc, object self_732436, object args_73540) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733260;
-c_733260.tag = closureN_tag;
+c_733260.hdr.mark = 4;
+ c_733260.tag = closureN_tag;
  c_733260.fn = (function_type)__lambda_158;
 c_733260.num_args = 0;
 c_733260.num_elt = 4;
@@ -16245,7 +17061,8 @@ static void __lambda_158(int argc, object self_732437) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733262;
-c_733262.tag = closureN_tag;
+c_733262.hdr.mark = 4;
+ c_733262.tag = closureN_tag;
  c_733262.fn = (function_type)__lambda_157;
 c_733262.num_args = 1;
 c_733262.num_elt = 4;
@@ -16262,7 +17079,8 @@ static void __lambda_157(int argc, object self_732438, object r_731451) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733264;
-c_733264.tag = closureN_tag;
+c_733264.hdr.mark = 4;
+ c_733264.tag = closureN_tag;
  c_733264.fn = (function_type)__lambda_156;
 c_733264.num_args = 1;
 c_733264.num_elt = 5;
@@ -16280,7 +17098,8 @@ static void __lambda_156(int argc, object self_732439, object r_731456) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733266;
-c_733266.tag = closureN_tag;
+c_733266.hdr.mark = 4;
+ c_733266.tag = closureN_tag;
  c_733266.fn = (function_type)__lambda_155;
 c_733266.num_args = 1;
 c_733266.num_elt = 5;
@@ -16298,7 +17117,8 @@ static void __lambda_155(int argc, object self_732440, object r_731458) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733268;
-c_733268.tag = closureN_tag;
+c_733268.hdr.mark = 4;
+ c_733268.tag = closureN_tag;
  c_733268.fn = (function_type)__lambda_154;
 c_733268.num_args = 1;
 c_733268.num_elt = 4;
@@ -16315,7 +17135,8 @@ static void __lambda_154(int argc, object self_732441, object r_731457) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733270;
-c_733270.tag = closureN_tag;
+c_733270.hdr.mark = 4;
+ c_733270.tag = closureN_tag;
  c_733270.fn = (function_type)__lambda_153;
 c_733270.num_args = 1;
 c_733270.num_elt = 3;
@@ -16333,7 +17154,8 @@ static void __lambda_153(int argc, object self_732442, object r_731454) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733272;
-c_733272.tag = closureN_tag;
+c_733272.hdr.mark = 4;
+ c_733272.tag = closureN_tag;
  c_733272.fn = (function_type)__lambda_152;
 c_733272.num_args = 1;
 c_733272.num_elt = 4;
@@ -16350,7 +17172,8 @@ static void __lambda_152(int argc, object self_732443, object r_731455) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733274;
-c_733274.tag = closureN_tag;
+c_733274.hdr.mark = 4;
+ c_733274.tag = closureN_tag;
  c_733274.fn = (function_type)__lambda_151;
 c_733274.num_args = 1;
 c_733274.num_elt = 3;
@@ -16368,7 +17191,8 @@ static void __lambda_151(int argc, object self_732444, object r_731453) {
   Cyc_st_add("scheme/base.sld:letrec");
 
 closureN_type c_733276;
-c_733276.tag = closureN_tag;
+c_733276.hdr.mark = 4;
+ c_733276.tag = closureN_tag;
  c_733276.fn = (function_type)__lambda_150;
 c_733276.num_args = 1;
 c_733276.num_elt = 2;
@@ -16392,7 +17216,8 @@ static void __lambda_149(int argc, closure _,object k_731469, object expr_73543,
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733037;
-c_733037.tag = closureN_tag;
+c_733037.hdr.mark = 4;
+ c_733037.tag = closureN_tag;
  c_733037.fn = (function_type)__lambda_109;
 c_733037.num_args = 0;
 c_733037.num_elt = 1;
@@ -16401,7 +17226,8 @@ c_733037.elts[0] = expr_73543;
 
 
 closureN_type c_733053;
-c_733053.tag = closureN_tag;
+c_733053.hdr.mark = 4;
+ c_733053.tag = closureN_tag;
  c_733053.fn = (function_type)__lambda_148;
 c_733053.num_args = 1;
 c_733053.num_elt = 3;
@@ -16417,7 +17243,8 @@ static void __lambda_148(int argc, object self_732446, object r_731470) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733055;
-c_733055.tag = closureN_tag;
+c_733055.hdr.mark = 4;
+ c_733055.tag = closureN_tag;
  c_733055.fn = (function_type)__lambda_112;
 c_733055.num_args = 0;
 c_733055.num_elt = 1;
@@ -16426,7 +17253,8 @@ c_733055.elts[0] = ((closureN)self_732446)->elts[0];
 
 
 closureN_type c_733071;
-c_733071.tag = closureN_tag;
+c_733071.hdr.mark = 4;
+ c_733071.tag = closureN_tag;
  c_733071.fn = (function_type)__lambda_147;
 c_733071.num_args = 1;
 c_733071.num_elt = 3;
@@ -16442,7 +17270,8 @@ static void __lambda_147(int argc, object self_732447, object r_731471) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733073;
-c_733073.tag = closureN_tag;
+c_733073.hdr.mark = 4;
+ c_733073.tag = closureN_tag;
  c_733073.fn = (function_type)__lambda_146;
 c_733073.num_args = 1;
 c_733073.num_elt = 3;
@@ -16458,7 +17287,8 @@ static void __lambda_146(int argc, object self_732448, object r_731505) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733075;
-c_733075.tag = closureN_tag;
+c_733075.hdr.mark = 4;
+ c_733075.tag = closureN_tag;
  c_733075.fn = (function_type)__lambda_145;
 c_733075.num_args = 1;
 c_733075.num_elt = 3;
@@ -16475,7 +17305,8 @@ static void __lambda_145(int argc, object self_732449, object r_731472) {
 if( !eq(boolean_f, r_731472) ){ 
   
 closureN_type c_733077;
-c_733077.tag = closureN_tag;
+c_733077.hdr.mark = 4;
+ c_733077.tag = closureN_tag;
  c_733077.fn = (function_type)__lambda_117;
 c_733077.num_args = 1;
 c_733077.num_elt = 3;
@@ -16488,7 +17319,8 @@ return_closcall1((closure)&c_733077,  quote_let);
 } else { 
   
 closureN_type c_733101;
-c_733101.tag = closureN_tag;
+c_733101.hdr.mark = 4;
+ c_733101.tag = closureN_tag;
  c_733101.fn = (function_type)__lambda_127;
 c_733101.num_args = 0;
 c_733101.num_elt = 1;
@@ -16497,7 +17329,8 @@ c_733101.elts[0] = ((closureN)self_732449)->elts[0];
 
 
 closureN_type c_733148;
-c_733148.tag = closureN_tag;
+c_733148.hdr.mark = 4;
+ c_733148.tag = closureN_tag;
  c_733148.fn = (function_type)__lambda_144;
 c_733148.num_args = 1;
 c_733148.num_elt = 3;
@@ -16515,7 +17348,8 @@ static void __lambda_144(int argc, object self_732450, object r_731478) {
 if( !eq(boolean_f, r_731478) ){ 
   
 closureN_type c_733150;
-c_733150.tag = closureN_tag;
+c_733150.hdr.mark = 4;
+ c_733150.tag = closureN_tag;
  c_733150.fn = (function_type)__lambda_143;
 c_733150.num_args = 1;
 c_733150.num_elt = 3;
@@ -16536,7 +17370,8 @@ static void __lambda_143(int argc, object self_732451, object r_731494) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733153;
-c_733153.tag = closureN_tag;
+c_733153.hdr.mark = 4;
+ c_733153.tag = closureN_tag;
  c_733153.fn = (function_type)__lambda_142;
 c_733153.num_args = 1;
 c_733153.num_elt = 3;
@@ -16552,7 +17387,8 @@ static void __lambda_142(int argc, object self_732452, object r_731479) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733155;
-c_733155.tag = closureN_tag;
+c_733155.hdr.mark = 4;
+ c_733155.tag = closureN_tag;
  c_733155.fn = (function_type)__lambda_141;
 c_733155.num_args = 1;
 c_733155.num_elt = 4;
@@ -16569,7 +17405,8 @@ static void __lambda_141(int argc, object self_732453, object r_731493) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733157;
-c_733157.tag = closureN_tag;
+c_733157.hdr.mark = 4;
+ c_733157.tag = closureN_tag;
  c_733157.fn = (function_type)__lambda_140;
 c_733157.num_args = 1;
 c_733157.num_elt = 4;
@@ -16586,7 +17423,8 @@ static void __lambda_140(int argc, object self_732454, object r_731491) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733159;
-c_733159.tag = closureN_tag;
+c_733159.hdr.mark = 4;
+ c_733159.tag = closureN_tag;
  c_733159.fn = (function_type)__lambda_139;
 c_733159.num_args = 1;
 c_733159.num_elt = 5;
@@ -16604,7 +17442,8 @@ static void __lambda_139(int argc, object self_732455, object r_731492) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733161;
-c_733161.tag = closureN_tag;
+c_733161.hdr.mark = 4;
+ c_733161.tag = closureN_tag;
  c_733161.fn = (function_type)__lambda_138;
 c_733161.num_args = 1;
 c_733161.num_elt = 4;
@@ -16623,7 +17462,8 @@ static void __lambda_138(int argc, object self_732456, object r_731481) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733163;
-c_733163.tag = closureN_tag;
+c_733163.hdr.mark = 4;
+ c_733163.tag = closureN_tag;
  c_733163.fn = (function_type)__lambda_137;
 c_733163.num_args = 1;
 c_733163.num_elt = 5;
@@ -16641,7 +17481,8 @@ static void __lambda_137(int argc, object self_732457, object r_731490) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733166;
-c_733166.tag = closureN_tag;
+c_733166.hdr.mark = 4;
+ c_733166.tag = closureN_tag;
  c_733166.fn = (function_type)__lambda_136;
 c_733166.num_args = 1;
 c_733166.num_elt = 4;
@@ -16658,7 +17499,8 @@ static void __lambda_136(int argc, object self_732458, object r_731485) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733168;
-c_733168.tag = closureN_tag;
+c_733168.hdr.mark = 4;
+ c_733168.tag = closureN_tag;
  c_733168.fn = (function_type)__lambda_135;
 c_733168.num_args = 1;
 c_733168.num_elt = 5;
@@ -16676,7 +17518,8 @@ static void __lambda_135(int argc, object self_732459, object r_731489) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733170;
-c_733170.tag = closureN_tag;
+c_733170.hdr.mark = 4;
+ c_733170.tag = closureN_tag;
  c_733170.fn = (function_type)__lambda_134;
 c_733170.num_args = 1;
 c_733170.num_elt = 5;
@@ -16694,7 +17537,8 @@ static void __lambda_134(int argc, object self_732460, object r_731487) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733172;
-c_733172.tag = closureN_tag;
+c_733172.hdr.mark = 4;
+ c_733172.tag = closureN_tag;
  c_733172.fn = (function_type)__lambda_133;
 c_733172.num_args = 1;
 c_733172.num_elt = 5;
@@ -16712,7 +17556,8 @@ static void __lambda_133(int argc, object self_732461, object r_731488) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733174;
-c_733174.tag = closureN_tag;
+c_733174.hdr.mark = 4;
+ c_733174.tag = closureN_tag;
  c_733174.fn = (function_type)__lambda_132;
 c_733174.num_args = 1;
 c_733174.num_elt = 4;
@@ -16731,7 +17576,8 @@ static void __lambda_132(int argc, object self_732462, object r_731486) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733176;
-c_733176.tag = closureN_tag;
+c_733176.hdr.mark = 4;
+ c_733176.tag = closureN_tag;
  c_733176.fn = (function_type)__lambda_131;
 c_733176.num_args = 1;
 c_733176.num_elt = 3;
@@ -16749,7 +17595,8 @@ static void __lambda_131(int argc, object self_732463, object r_731483) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733178;
-c_733178.tag = closureN_tag;
+c_733178.hdr.mark = 4;
+ c_733178.tag = closureN_tag;
  c_733178.fn = (function_type)__lambda_130;
 c_733178.num_args = 1;
 c_733178.num_elt = 4;
@@ -16766,7 +17613,8 @@ static void __lambda_130(int argc, object self_732464, object r_731484) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733180;
-c_733180.tag = closureN_tag;
+c_733180.hdr.mark = 4;
+ c_733180.tag = closureN_tag;
  c_733180.fn = (function_type)__lambda_129;
 c_733180.num_args = 1;
 c_733180.num_elt = 3;
@@ -16784,7 +17632,8 @@ static void __lambda_129(int argc, object self_732465, object r_731482) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733182;
-c_733182.tag = closureN_tag;
+c_733182.hdr.mark = 4;
+ c_733182.tag = closureN_tag;
  c_733182.fn = (function_type)__lambda_128;
 c_733182.num_args = 1;
 c_733182.num_elt = 2;
@@ -16808,7 +17657,8 @@ static void __lambda_127(int argc, object self_732467, object k_731495) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733103;
-c_733103.tag = closureN_tag;
+c_733103.hdr.mark = 4;
+ c_733103.tag = closureN_tag;
  c_733103.fn = (function_type)__lambda_126;
 c_733103.num_args = 1;
 c_733103.num_elt = 2;
@@ -16823,7 +17673,8 @@ static void __lambda_126(int argc, object self_732468, object r_731504) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733105;
-c_733105.tag = closureN_tag;
+c_733105.hdr.mark = 4;
+ c_733105.tag = closureN_tag;
  c_733105.fn = (function_type)__lambda_125;
 c_733105.num_args = 1;
 c_733105.num_elt = 2;
@@ -16839,7 +17690,8 @@ static void __lambda_125(int argc, object self_732469, object r_731496) {
 if( !eq(boolean_f, r_731496) ){ 
   
 closureN_type c_733107;
-c_733107.tag = closureN_tag;
+c_733107.hdr.mark = 4;
+ c_733107.tag = closureN_tag;
  c_733107.fn = (function_type)__lambda_119;
 c_733107.num_args = 1;
 c_733107.num_elt = 2;
@@ -16859,7 +17711,8 @@ static void __lambda_124(int argc, object self_732470, object k_731499, object x
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733118;
-c_733118.tag = closureN_tag;
+c_733118.hdr.mark = 4;
+ c_733118.tag = closureN_tag;
  c_733118.fn = (function_type)__lambda_123;
 c_733118.num_args = 1;
 c_733118.num_elt = 2;
@@ -16875,7 +17728,8 @@ static void __lambda_123(int argc, object self_732471, object r_731500) {
 if( !eq(boolean_f, r_731500) ){ 
   
 closureN_type c_733120;
-c_733120.tag = closureN_tag;
+c_733120.hdr.mark = 4;
+ c_733120.tag = closureN_tag;
  c_733120.fn = (function_type)__lambda_122;
 c_733120.num_args = 1;
 c_733120.num_elt = 2;
@@ -16893,7 +17747,8 @@ static void __lambda_122(int argc, object self_732472, object r_731503) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733122;
-c_733122.tag = closureN_tag;
+c_733122.hdr.mark = 4;
+ c_733122.tag = closureN_tag;
  c_733122.fn = (function_type)__lambda_121;
 c_733122.num_args = 1;
 c_733122.num_elt = 2;
@@ -16909,7 +17764,8 @@ static void __lambda_121(int argc, object self_732473, object r_731501) {
 if( !eq(boolean_f, r_731501) ){ 
   
 closureN_type c_733124;
-c_733124.tag = closureN_tag;
+c_733124.hdr.mark = 4;
+ c_733124.tag = closureN_tag;
  c_733124.fn = (function_type)__lambda_120;
 c_733124.num_args = 1;
 c_733124.num_elt = 1;
@@ -16931,7 +17787,8 @@ static void __lambda_119(int argc, object self_732475, object r_731497) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733109;
-c_733109.tag = closureN_tag;
+c_733109.hdr.mark = 4;
+ c_733109.tag = closureN_tag;
  c_733109.fn = (function_type)__lambda_118;
 c_733109.num_args = 1;
 c_733109.num_elt = 2;
@@ -16951,7 +17808,8 @@ static void __lambda_117(int argc, object self_732477, object r_731477) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733080;
-c_733080.tag = closureN_tag;
+c_733080.hdr.mark = 4;
+ c_733080.tag = closureN_tag;
  c_733080.fn = (function_type)__lambda_116;
 c_733080.num_args = 1;
 c_733080.num_elt = 2;
@@ -16966,7 +17824,8 @@ static void __lambda_116(int argc, object self_732478, object r_731473) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733082;
-c_733082.tag = closureN_tag;
+c_733082.hdr.mark = 4;
+ c_733082.tag = closureN_tag;
  c_733082.fn = (function_type)__lambda_115;
 c_733082.num_args = 1;
 c_733082.num_elt = 3;
@@ -16982,7 +17841,8 @@ static void __lambda_115(int argc, object self_732479, object r_731475) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733084;
-c_733084.tag = closureN_tag;
+c_733084.hdr.mark = 4;
+ c_733084.tag = closureN_tag;
  c_733084.fn = (function_type)__lambda_114;
 c_733084.num_args = 1;
 c_733084.num_elt = 3;
@@ -16998,7 +17858,8 @@ static void __lambda_114(int argc, object self_732480, object r_731476) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733086;
-c_733086.tag = closureN_tag;
+c_733086.hdr.mark = 4;
+ c_733086.tag = closureN_tag;
  c_733086.fn = (function_type)__lambda_113;
 c_733086.num_args = 1;
 c_733086.num_elt = 2;
@@ -17022,7 +17883,8 @@ static void __lambda_112(int argc, object self_732482, object k_731506) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733057;
-c_733057.tag = closureN_tag;
+c_733057.hdr.mark = 4;
+ c_733057.tag = closureN_tag;
  c_733057.fn = (function_type)__lambda_111;
 c_733057.num_args = 1;
 c_733057.num_elt = 2;
@@ -17037,7 +17899,8 @@ static void __lambda_111(int argc, object self_732483, object r_731508) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733059;
-c_733059.tag = closureN_tag;
+c_733059.hdr.mark = 4;
+ c_733059.tag = closureN_tag;
  c_733059.fn = (function_type)__lambda_110;
 c_733059.num_args = 1;
 c_733059.num_elt = 2;
@@ -17063,7 +17926,8 @@ static void __lambda_109(int argc, object self_732485, object k_731509) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733039;
-c_733039.tag = closureN_tag;
+c_733039.hdr.mark = 4;
+ c_733039.tag = closureN_tag;
  c_733039.fn = (function_type)__lambda_108;
 c_733039.num_args = 1;
 c_733039.num_elt = 2;
@@ -17078,7 +17942,8 @@ static void __lambda_108(int argc, object self_732486, object r_731511) {
   Cyc_st_add("scheme/base.sld:let*");
 
 closureN_type c_733041;
-c_733041.tag = closureN_tag;
+c_733041.hdr.mark = 4;
+ c_733041.tag = closureN_tag;
  c_733041.fn = (function_type)__lambda_107;
 c_733041.num_args = 1;
 c_733041.num_elt = 2;
@@ -17104,7 +17969,8 @@ static void __lambda_106(int argc, closure _,object k_731514, object expr_73547,
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732759;
-c_732759.tag = closureN_tag;
+c_732759.hdr.mark = 4;
+ c_732759.tag = closureN_tag;
  c_732759.fn = (function_type)__lambda_48;
 c_732759.num_args = 0;
 c_732759.num_elt = 1;
@@ -17113,7 +17979,8 @@ c_732759.elts[0] = expr_73547;
 
 
 closureN_type c_732775;
-c_732775.tag = closureN_tag;
+c_732775.hdr.mark = 4;
+ c_732775.tag = closureN_tag;
  c_732775.fn = (function_type)__lambda_105;
 c_732775.num_args = 1;
 c_732775.num_elt = 3;
@@ -17129,7 +17996,8 @@ static void __lambda_105(int argc, object self_732488, object r_731515) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732777;
-c_732777.tag = closureN_tag;
+c_732777.hdr.mark = 4;
+ c_732777.tag = closureN_tag;
  c_732777.fn = (function_type)__lambda_51;
 c_732777.num_args = 0;
 c_732777.num_elt = 1;
@@ -17138,7 +18006,8 @@ c_732777.elts[0] = ((closureN)self_732488)->elts[0];
 
 
 closureN_type c_732793;
-c_732793.tag = closureN_tag;
+c_732793.hdr.mark = 4;
+ c_732793.tag = closureN_tag;
  c_732793.fn = (function_type)__lambda_104;
 c_732793.num_args = 1;
 c_732793.num_elt = 3;
@@ -17154,7 +18023,8 @@ static void __lambda_104(int argc, object self_732489, object r_731516) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732795;
-c_732795.tag = closureN_tag;
+c_732795.hdr.mark = 4;
+ c_732795.tag = closureN_tag;
  c_732795.fn = (function_type)__lambda_55;
 c_732795.num_args = 0;
 c_732795.num_elt = 1;
@@ -17163,7 +18033,8 @@ c_732795.elts[0] = ((closureN)self_732489)->elts[0];
 
 
 closureN_type c_732819;
-c_732819.tag = closureN_tag;
+c_732819.hdr.mark = 4;
+ c_732819.tag = closureN_tag;
  c_732819.fn = (function_type)__lambda_103;
 c_732819.num_args = 1;
 c_732819.num_elt = 3;
@@ -17179,7 +18050,8 @@ static void __lambda_103(int argc, object self_732490, object r_731517) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732821;
-c_732821.tag = closureN_tag;
+c_732821.hdr.mark = 4;
+ c_732821.tag = closureN_tag;
  c_732821.fn = (function_type)__lambda_102;
 c_732821.num_args = 1;
 c_732821.num_elt = 3;
@@ -17195,7 +18067,8 @@ static void __lambda_102(int argc, object self_732491, object bindings_73548) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732823;
-c_732823.tag = closureN_tag;
+c_732823.hdr.mark = 4;
+ c_732823.tag = closureN_tag;
  c_732823.fn = (function_type)__lambda_57;
 c_732823.num_args = 0;
 c_732823.num_elt = 1;
@@ -17204,7 +18077,8 @@ c_732823.elts[0] = bindings_73548;
 
 
 closureN_type c_732832;
-c_732832.tag = closureN_tag;
+c_732832.hdr.mark = 4;
+ c_732832.tag = closureN_tag;
  c_732832.fn = (function_type)__lambda_101;
 c_732832.num_args = 1;
 c_732832.num_elt = 4;
@@ -17221,7 +18095,8 @@ static void __lambda_101(int argc, object self_732492, object r_731518) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732834;
-c_732834.tag = closureN_tag;
+c_732834.hdr.mark = 4;
+ c_732834.tag = closureN_tag;
  c_732834.fn = (function_type)__lambda_95;
 c_732834.num_args = 1;
 c_732834.num_elt = 4;
@@ -17240,7 +18115,8 @@ static void __lambda_100(int argc, object self_732493, object k_731556, object x
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_733010;
-c_733010.tag = closureN_tag;
+c_733010.hdr.mark = 4;
+ c_733010.tag = closureN_tag;
  c_733010.fn = (function_type)__lambda_99;
 c_733010.num_args = 1;
 c_733010.num_elt = 2;
@@ -17256,7 +18132,8 @@ static void __lambda_99(int argc, object self_732494, object r_731557) {
 if( !eq(boolean_f, r_731557) ){ 
   
 closureN_type c_733012;
-c_733012.tag = closureN_tag;
+c_733012.hdr.mark = 4;
+ c_733012.tag = closureN_tag;
  c_733012.fn = (function_type)__lambda_98;
 c_733012.num_args = 1;
 c_733012.num_elt = 2;
@@ -17274,7 +18151,8 @@ static void __lambda_98(int argc, object self_732495, object r_731560) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_733014;
-c_733014.tag = closureN_tag;
+c_733014.hdr.mark = 4;
+ c_733014.tag = closureN_tag;
  c_733014.fn = (function_type)__lambda_97;
 c_733014.num_args = 1;
 c_733014.num_elt = 2;
@@ -17290,7 +18168,8 @@ static void __lambda_97(int argc, object self_732496, object r_731558) {
 if( !eq(boolean_f, r_731558) ){ 
   
 closureN_type c_733016;
-c_733016.tag = closureN_tag;
+c_733016.hdr.mark = 4;
+ c_733016.tag = closureN_tag;
  c_733016.fn = (function_type)__lambda_96;
 c_733016.num_args = 1;
 c_733016.num_elt = 1;
@@ -17312,7 +18191,8 @@ static void __lambda_95(int argc, object self_732498, object r_731555) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732836;
-c_732836.tag = closureN_tag;
+c_732836.hdr.mark = 4;
+ c_732836.tag = closureN_tag;
  c_732836.fn = (function_type)__lambda_94;
 c_732836.num_args = 1;
 c_732836.num_elt = 4;
@@ -17330,7 +18210,8 @@ static void __lambda_94(int argc, object self_732499, object r_731519) {
 if( !eq(boolean_f, r_731519) ){ 
   
 closureN_type c_732838;
-c_732838.tag = closureN_tag;
+c_732838.hdr.mark = 4;
+ c_732838.tag = closureN_tag;
  c_732838.fn = (function_type)__lambda_93;
 c_732838.num_args = 1;
 c_732838.num_elt = 4;
@@ -17352,7 +18233,8 @@ static void __lambda_93(int argc, object self_732500, object r_731520) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732840;
-c_732840.tag = closureN_tag;
+c_732840.hdr.mark = 4;
+ c_732840.tag = closureN_tag;
  c_732840.fn = (function_type)__lambda_92;
 c_732840.num_args = 1;
 c_732840.num_elt = 4;
@@ -17369,7 +18251,8 @@ static void __lambda_92(int argc, object self_732501, object r_731521) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732842;
-c_732842.tag = closureN_tag;
+c_732842.hdr.mark = 4;
+ c_732842.tag = closureN_tag;
  c_732842.fn = (function_type)__lambda_91;
 c_732842.num_args = 2;
 c_732842.num_elt = 3;
@@ -17385,7 +18268,8 @@ static void __lambda_91(int argc, object self_732502, object vars_73550, object 
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732844;
-c_732844.tag = closureN_tag;
+c_732844.hdr.mark = 4;
+ c_732844.tag = closureN_tag;
  c_732844.fn = (function_type)__lambda_90;
 c_732844.num_args = 1;
 c_732844.num_elt = 5;
@@ -17403,7 +18287,8 @@ static void __lambda_90(int argc, object self_732503, object r_731554) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732846;
-c_732846.tag = closureN_tag;
+c_732846.hdr.mark = 4;
+ c_732846.tag = closureN_tag;
  c_732846.fn = (function_type)__lambda_89;
 c_732846.num_args = 1;
 c_732846.num_elt = 5;
@@ -17422,7 +18307,8 @@ static void __lambda_89(int argc, object self_732504, object r_731522) {
 if( !eq(boolean_f, r_731522) ){ 
   
 closureN_type c_732848;
-c_732848.tag = closureN_tag;
+c_732848.hdr.mark = 4;
+ c_732848.tag = closureN_tag;
  c_732848.fn = (function_type)__lambda_83;
 c_732848.num_args = 1;
 c_732848.num_elt = 5;
@@ -17437,7 +18323,8 @@ return_closcall1((closure)&c_732848,  quote_lambda);
 } else { 
   
 closureN_type c_732968;
-c_732968.tag = closureN_tag;
+c_732968.hdr.mark = 4;
+ c_732968.tag = closureN_tag;
  c_732968.fn = (function_type)__lambda_88;
 c_732968.num_args = 1;
 c_732968.num_elt = 5;
@@ -17456,7 +18343,8 @@ static void __lambda_88(int argc, object self_732505, object r_731553) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732971;
-c_732971.tag = closureN_tag;
+c_732971.hdr.mark = 4;
+ c_732971.tag = closureN_tag;
  c_732971.fn = (function_type)__lambda_87;
 c_732971.num_args = 1;
 c_732971.num_elt = 4;
@@ -17473,7 +18361,8 @@ static void __lambda_87(int argc, object self_732506, object r_731550) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732973;
-c_732973.tag = closureN_tag;
+c_732973.hdr.mark = 4;
+ c_732973.tag = closureN_tag;
  c_732973.fn = (function_type)__lambda_86;
 c_732973.num_args = 1;
 c_732973.num_elt = 4;
@@ -17490,7 +18379,8 @@ static void __lambda_86(int argc, object self_732507, object r_731552) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732975;
-c_732975.tag = closureN_tag;
+c_732975.hdr.mark = 4;
+ c_732975.tag = closureN_tag;
  c_732975.fn = (function_type)__lambda_85;
 c_732975.num_args = 1;
 c_732975.num_elt = 3;
@@ -17508,7 +18398,8 @@ static void __lambda_85(int argc, object self_732508, object r_731551) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732977;
-c_732977.tag = closureN_tag;
+c_732977.hdr.mark = 4;
+ c_732977.tag = closureN_tag;
  c_732977.fn = (function_type)__lambda_84;
 c_732977.num_args = 1;
 c_732977.num_elt = 2;
@@ -17532,7 +18423,8 @@ static void __lambda_83(int argc, object self_732510, object r_731548) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732851;
-c_732851.tag = closureN_tag;
+c_732851.hdr.mark = 4;
+ c_732851.tag = closureN_tag;
  c_732851.fn = (function_type)__lambda_82;
 c_732851.num_args = 1;
 c_732851.num_elt = 5;
@@ -17550,7 +18442,8 @@ static void __lambda_82(int argc, object self_732511, object r_731524) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732853;
-c_732853.tag = closureN_tag;
+c_732853.hdr.mark = 4;
+ c_732853.tag = closureN_tag;
  c_732853.fn = (function_type)__lambda_81;
 c_732853.num_args = 1;
 c_732853.num_elt = 6;
@@ -17569,7 +18462,8 @@ static void __lambda_81(int argc, object self_732512, object r_731547) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732856;
-c_732856.tag = closureN_tag;
+c_732856.hdr.mark = 4;
+ c_732856.tag = closureN_tag;
  c_732856.fn = (function_type)__lambda_80;
 c_732856.num_args = 1;
 c_732856.num_elt = 6;
@@ -17588,7 +18482,8 @@ static void __lambda_80(int argc, object self_732513, object r_731529) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732858;
-c_732858.tag = closureN_tag;
+c_732858.hdr.mark = 4;
+ c_732858.tag = closureN_tag;
  c_732858.fn = (function_type)__lambda_79;
 c_732858.num_args = 1;
 c_732858.num_elt = 7;
@@ -17608,7 +18503,8 @@ static void __lambda_79(int argc, object self_732514, object r_731538) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732860;
-c_732860.tag = closureN_tag;
+c_732860.hdr.mark = 4;
+ c_732860.tag = closureN_tag;
  c_732860.fn = (function_type)__lambda_78;
 c_732860.num_args = 1;
 c_732860.num_elt = 8;
@@ -17629,7 +18525,8 @@ static void __lambda_78(int argc, object self_732515, object r_731546) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732863;
-c_732863.tag = closureN_tag;
+c_732863.hdr.mark = 4;
+ c_732863.tag = closureN_tag;
  c_732863.fn = (function_type)__lambda_77;
 c_732863.num_args = 1;
 c_732863.num_elt = 7;
@@ -17649,7 +18546,8 @@ static void __lambda_77(int argc, object self_732516, object r_731542) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732865;
-c_732865.tag = closureN_tag;
+c_732865.hdr.mark = 4;
+ c_732865.tag = closureN_tag;
  c_732865.fn = (function_type)__lambda_76;
 c_732865.num_args = 1;
 c_732865.num_elt = 8;
@@ -17670,7 +18568,8 @@ static void __lambda_76(int argc, object self_732517, object r_731545) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732867;
-c_732867.tag = closureN_tag;
+c_732867.hdr.mark = 4;
+ c_732867.tag = closureN_tag;
  c_732867.fn = (function_type)__lambda_75;
 c_732867.num_args = 1;
 c_732867.num_elt = 8;
@@ -17691,7 +18590,8 @@ static void __lambda_75(int argc, object self_732518, object r_731544) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732869;
-c_732869.tag = closureN_tag;
+c_732869.hdr.mark = 4;
+ c_732869.tag = closureN_tag;
  c_732869.fn = (function_type)__lambda_74;
 c_732869.num_args = 1;
 c_732869.num_elt = 8;
@@ -17714,7 +18614,8 @@ static void __lambda_74(int argc, object self_732519, object r_731543) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732871;
-c_732871.tag = closureN_tag;
+c_732871.hdr.mark = 4;
+ c_732871.tag = closureN_tag;
  c_732871.fn = (function_type)__lambda_73;
 c_732871.num_args = 1;
 c_732871.num_elt = 7;
@@ -17736,7 +18637,8 @@ static void __lambda_73(int argc, object self_732520, object r_731540) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732873;
-c_732873.tag = closureN_tag;
+c_732873.hdr.mark = 4;
+ c_732873.tag = closureN_tag;
  c_732873.fn = (function_type)__lambda_72;
 c_732873.num_args = 1;
 c_732873.num_elt = 8;
@@ -17757,7 +18659,8 @@ static void __lambda_72(int argc, object self_732521, object r_731541) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732875;
-c_732875.tag = closureN_tag;
+c_732875.hdr.mark = 4;
+ c_732875.tag = closureN_tag;
  c_732875.fn = (function_type)__lambda_71;
 c_732875.num_args = 1;
 c_732875.num_elt = 7;
@@ -17779,7 +18682,8 @@ static void __lambda_71(int argc, object self_732522, object r_731539) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732877;
-c_732877.tag = closureN_tag;
+c_732877.hdr.mark = 4;
+ c_732877.tag = closureN_tag;
  c_732877.fn = (function_type)__lambda_70;
 c_732877.num_args = 1;
 c_732877.num_elt = 6;
@@ -17800,7 +18704,8 @@ static void __lambda_70(int argc, object self_732523, object r_731536) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732879;
-c_732879.tag = closureN_tag;
+c_732879.hdr.mark = 4;
+ c_732879.tag = closureN_tag;
  c_732879.fn = (function_type)__lambda_69;
 c_732879.num_args = 1;
 c_732879.num_elt = 7;
@@ -17820,7 +18725,8 @@ static void __lambda_69(int argc, object self_732524, object r_731537) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732881;
-c_732881.tag = closureN_tag;
+c_732881.hdr.mark = 4;
+ c_732881.tag = closureN_tag;
  c_732881.fn = (function_type)__lambda_68;
 c_732881.num_args = 1;
 c_732881.num_elt = 6;
@@ -17841,7 +18747,8 @@ static void __lambda_68(int argc, object self_732525, object r_731531) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732883;
-c_732883.tag = closureN_tag;
+c_732883.hdr.mark = 4;
+ c_732883.tag = closureN_tag;
  c_732883.fn = (function_type)__lambda_67;
 c_732883.num_args = 1;
 c_732883.num_elt = 6;
@@ -17860,7 +18767,8 @@ static void __lambda_67(int argc, object self_732526, object r_731535) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732885;
-c_732885.tag = closureN_tag;
+c_732885.hdr.mark = 4;
+ c_732885.tag = closureN_tag;
  c_732885.fn = (function_type)__lambda_66;
 c_732885.num_args = 1;
 c_732885.num_elt = 6;
@@ -17881,7 +18789,8 @@ static void __lambda_66(int argc, object self_732527, object r_731533) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732887;
-c_732887.tag = closureN_tag;
+c_732887.hdr.mark = 4;
+ c_732887.tag = closureN_tag;
  c_732887.fn = (function_type)__lambda_65;
 c_732887.num_args = 1;
 c_732887.num_elt = 7;
@@ -17901,7 +18810,8 @@ static void __lambda_65(int argc, object self_732528, object r_731534) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732889;
-c_732889.tag = closureN_tag;
+c_732889.hdr.mark = 4;
+ c_732889.tag = closureN_tag;
  c_732889.fn = (function_type)__lambda_64;
 c_732889.num_args = 1;
 c_732889.num_elt = 6;
@@ -17922,7 +18832,8 @@ static void __lambda_64(int argc, object self_732529, object r_731532) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732891;
-c_732891.tag = closureN_tag;
+c_732891.hdr.mark = 4;
+ c_732891.tag = closureN_tag;
  c_732891.fn = (function_type)__lambda_63;
 c_732891.num_args = 1;
 c_732891.num_elt = 5;
@@ -17942,7 +18853,8 @@ static void __lambda_63(int argc, object self_732530, object r_731530) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732893;
-c_732893.tag = closureN_tag;
+c_732893.hdr.mark = 4;
+ c_732893.tag = closureN_tag;
  c_732893.fn = (function_type)__lambda_62;
 c_732893.num_args = 1;
 c_732893.num_elt = 4;
@@ -17961,7 +18873,8 @@ static void __lambda_62(int argc, object self_732531, object r_731527) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732895;
-c_732895.tag = closureN_tag;
+c_732895.hdr.mark = 4;
+ c_732895.tag = closureN_tag;
  c_732895.fn = (function_type)__lambda_61;
 c_732895.num_args = 1;
 c_732895.num_elt = 5;
@@ -17979,7 +18892,8 @@ static void __lambda_61(int argc, object self_732532, object r_731528) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732897;
-c_732897.tag = closureN_tag;
+c_732897.hdr.mark = 4;
+ c_732897.tag = closureN_tag;
  c_732897.fn = (function_type)__lambda_60;
 c_732897.num_args = 1;
 c_732897.num_elt = 4;
@@ -17998,7 +18912,8 @@ static void __lambda_60(int argc, object self_732533, object r_731526) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732899;
-c_732899.tag = closureN_tag;
+c_732899.hdr.mark = 4;
+ c_732899.tag = closureN_tag;
  c_732899.fn = (function_type)__lambda_59;
 c_732899.num_args = 1;
 c_732899.num_elt = 3;
@@ -18016,7 +18931,8 @@ static void __lambda_59(int argc, object self_732534, object r_731525) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732901;
-c_732901.tag = closureN_tag;
+c_732901.hdr.mark = 4;
+ c_732901.tag = closureN_tag;
  c_732901.fn = (function_type)__lambda_58;
 c_732901.num_args = 1;
 c_732901.num_elt = 2;
@@ -18040,7 +18956,8 @@ static void __lambda_57(int argc, object self_732536, object k_731561) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732825;
-c_732825.tag = closureN_tag;
+c_732825.hdr.mark = 4;
+ c_732825.tag = closureN_tag;
  c_732825.fn = (function_type)__lambda_56;
 c_732825.num_args = 1;
 c_732825.num_elt = 1;
@@ -18065,7 +18982,8 @@ static void __lambda_55(int argc, object self_732538, object k_731563) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732797;
-c_732797.tag = closureN_tag;
+c_732797.hdr.mark = 4;
+ c_732797.tag = closureN_tag;
  c_732797.fn = (function_type)__lambda_54;
 c_732797.num_args = 1;
 c_732797.num_elt = 2;
@@ -18080,7 +18998,8 @@ static void __lambda_54(int argc, object self_732539, object r_731566) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732799;
-c_732799.tag = closureN_tag;
+c_732799.hdr.mark = 4;
+ c_732799.tag = closureN_tag;
  c_732799.fn = (function_type)__lambda_53;
 c_732799.num_args = 1;
 c_732799.num_elt = 2;
@@ -18096,7 +19015,8 @@ static void __lambda_53(int argc, object self_732540, object r_731564) {
 if( !eq(boolean_f, r_731564) ){ 
   
 closureN_type c_732801;
-c_732801.tag = closureN_tag;
+c_732801.hdr.mark = 4;
+ c_732801.tag = closureN_tag;
  c_732801.fn = (function_type)__lambda_52;
 c_732801.num_args = 1;
 c_732801.num_elt = 1;
@@ -18118,7 +19038,8 @@ static void __lambda_51(int argc, object self_732542, object k_731567) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732779;
-c_732779.tag = closureN_tag;
+c_732779.hdr.mark = 4;
+ c_732779.tag = closureN_tag;
  c_732779.fn = (function_type)__lambda_50;
 c_732779.num_args = 1;
 c_732779.num_elt = 2;
@@ -18133,7 +19054,8 @@ static void __lambda_50(int argc, object self_732543, object r_731569) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732781;
-c_732781.tag = closureN_tag;
+c_732781.hdr.mark = 4;
+ c_732781.tag = closureN_tag;
  c_732781.fn = (function_type)__lambda_49;
 c_732781.num_args = 1;
 c_732781.num_elt = 2;
@@ -18159,7 +19081,8 @@ static void __lambda_48(int argc, object self_732545, object k_731570) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732761;
-c_732761.tag = closureN_tag;
+c_732761.hdr.mark = 4;
+ c_732761.tag = closureN_tag;
  c_732761.fn = (function_type)__lambda_47;
 c_732761.num_args = 1;
 c_732761.num_elt = 2;
@@ -18174,7 +19097,8 @@ static void __lambda_47(int argc, object self_732546, object r_731572) {
   Cyc_st_add("scheme/base.sld:let");
 
 closureN_type c_732763;
-c_732763.tag = closureN_tag;
+c_732763.hdr.mark = 4;
+ c_732763.tag = closureN_tag;
  c_732763.fn = (function_type)__lambda_46;
 c_732763.num_args = 1;
 c_732763.num_elt = 2;
@@ -18200,7 +19124,8 @@ static void __lambda_45(int argc, closure _,object k_731575, object expr_73554, 
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732668;
-c_732668.tag = closureN_tag;
+c_732668.hdr.mark = 4;
+ c_732668.tag = closureN_tag;
  c_732668.fn = (function_type)__lambda_44;
 c_732668.num_args = 1;
 c_732668.num_elt = 3;
@@ -18216,7 +19141,8 @@ static void __lambda_44(int argc, object self_732548, object r_731597) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732670;
-c_732670.tag = closureN_tag;
+c_732670.hdr.mark = 4;
+ c_732670.tag = closureN_tag;
  c_732670.fn = (function_type)__lambda_43;
 c_732670.num_args = 1;
 c_732670.num_elt = 3;
@@ -18233,7 +19159,8 @@ static void __lambda_43(int argc, object self_732549, object r_731576) {
 if( !eq(boolean_f, r_731576) ){ 
   
 closureN_type c_732672;
-c_732672.tag = closureN_tag;
+c_732672.hdr.mark = 4;
+ c_732672.tag = closureN_tag;
  c_732672.fn = (function_type)__lambda_20;
 c_732672.num_args = 0;
 c_732672.num_elt = 1;
@@ -18244,7 +19171,8 @@ return_closcall0((closure)&c_732672);
 } else { 
   
 closureN_type c_732676;
-c_732676.tag = closureN_tag;
+c_732676.hdr.mark = 4;
+ c_732676.tag = closureN_tag;
  c_732676.fn = (function_type)__lambda_42;
 c_732676.num_args = 1;
 c_732676.num_elt = 3;
@@ -18261,7 +19189,8 @@ static void __lambda_42(int argc, object self_732550, object r_731596) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732678;
-c_732678.tag = closureN_tag;
+c_732678.hdr.mark = 4;
+ c_732678.tag = closureN_tag;
  c_732678.fn = (function_type)__lambda_41;
 c_732678.num_args = 1;
 c_732678.num_elt = 3;
@@ -18278,7 +19207,8 @@ static void __lambda_41(int argc, object self_732551, object r_731577) {
 if( !eq(boolean_f, r_731577) ){ 
   
 closureN_type c_732680;
-c_732680.tag = closureN_tag;
+c_732680.hdr.mark = 4;
+ c_732680.tag = closureN_tag;
  c_732680.fn = (function_type)__lambda_21;
 c_732680.num_args = 0;
 c_732680.num_elt = 2;
@@ -18290,7 +19220,8 @@ return_closcall0((closure)&c_732680);
 } else { 
   
 closureN_type c_732687;
-c_732687.tag = closureN_tag;
+c_732687.hdr.mark = 4;
+ c_732687.tag = closureN_tag;
  c_732687.fn = (function_type)__lambda_40;
 c_732687.num_args = 0;
 c_732687.num_elt = 3;
@@ -18307,7 +19238,8 @@ static void __lambda_40(int argc, object self_732552) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732689;
-c_732689.tag = closureN_tag;
+c_732689.hdr.mark = 4;
+ c_732689.tag = closureN_tag;
  c_732689.fn = (function_type)__lambda_39;
 c_732689.num_args = 1;
 c_732689.num_elt = 3;
@@ -18323,7 +19255,8 @@ static void __lambda_39(int argc, object self_732553, object r_731595) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732692;
-c_732692.tag = closureN_tag;
+c_732692.hdr.mark = 4;
+ c_732692.tag = closureN_tag;
  c_732692.fn = (function_type)__lambda_38;
 c_732692.num_args = 1;
 c_732692.num_elt = 3;
@@ -18339,7 +19272,8 @@ static void __lambda_38(int argc, object self_732554, object r_731578) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732694;
-c_732694.tag = closureN_tag;
+c_732694.hdr.mark = 4;
+ c_732694.tag = closureN_tag;
  c_732694.fn = (function_type)__lambda_37;
 c_732694.num_args = 1;
 c_732694.num_elt = 4;
@@ -18356,7 +19290,8 @@ static void __lambda_37(int argc, object self_732555, object r_731594) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732697;
-c_732697.tag = closureN_tag;
+c_732697.hdr.mark = 4;
+ c_732697.tag = closureN_tag;
  c_732697.fn = (function_type)__lambda_36;
 c_732697.num_args = 1;
 c_732697.num_elt = 4;
@@ -18373,7 +19308,8 @@ static void __lambda_36(int argc, object self_732556, object r_731592) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732699;
-c_732699.tag = closureN_tag;
+c_732699.hdr.mark = 4;
+ c_732699.tag = closureN_tag;
  c_732699.fn = (function_type)__lambda_35;
 c_732699.num_args = 1;
 c_732699.num_elt = 5;
@@ -18391,7 +19327,8 @@ static void __lambda_35(int argc, object self_732557, object r_731593) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732701;
-c_732701.tag = closureN_tag;
+c_732701.hdr.mark = 4;
+ c_732701.tag = closureN_tag;
  c_732701.fn = (function_type)__lambda_34;
 c_732701.num_args = 1;
 c_732701.num_elt = 4;
@@ -18408,7 +19345,8 @@ static void __lambda_34(int argc, object self_732558, object r_731591) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732703;
-c_732703.tag = closureN_tag;
+c_732703.hdr.mark = 4;
+ c_732703.tag = closureN_tag;
  c_732703.fn = (function_type)__lambda_33;
 c_732703.num_args = 1;
 c_732703.num_elt = 4;
@@ -18425,7 +19363,8 @@ static void __lambda_33(int argc, object self_732559, object r_731579) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732705;
-c_732705.tag = closureN_tag;
+c_732705.hdr.mark = 4;
+ c_732705.tag = closureN_tag;
  c_732705.fn = (function_type)__lambda_32;
 c_732705.num_args = 1;
 c_732705.num_elt = 5;
@@ -18443,7 +19382,8 @@ static void __lambda_32(int argc, object self_732560, object r_731590) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732708;
-c_732708.tag = closureN_tag;
+c_732708.hdr.mark = 4;
+ c_732708.tag = closureN_tag;
  c_732708.fn = (function_type)__lambda_31;
 c_732708.num_args = 1;
 c_732708.num_elt = 5;
@@ -18461,7 +19401,8 @@ static void __lambda_31(int argc, object self_732561, object r_731581) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732710;
-c_732710.tag = closureN_tag;
+c_732710.hdr.mark = 4;
+ c_732710.tag = closureN_tag;
  c_732710.fn = (function_type)__lambda_30;
 c_732710.num_args = 1;
 c_732710.num_elt = 6;
@@ -18480,7 +19421,8 @@ static void __lambda_30(int argc, object self_732562, object r_731589) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732713;
-c_732713.tag = closureN_tag;
+c_732713.hdr.mark = 4;
+ c_732713.tag = closureN_tag;
  c_732713.fn = (function_type)__lambda_29;
 c_732713.num_args = 1;
 c_732713.num_elt = 6;
@@ -18499,7 +19441,8 @@ static void __lambda_29(int argc, object self_732563, object r_731582) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732715;
-c_732715.tag = closureN_tag;
+c_732715.hdr.mark = 4;
+ c_732715.tag = closureN_tag;
  c_732715.fn = (function_type)__lambda_28;
 c_732715.num_args = 1;
 c_732715.num_elt = 7;
@@ -18519,7 +19462,8 @@ static void __lambda_28(int argc, object self_732564, object r_731588) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732718;
-c_732718.tag = closureN_tag;
+c_732718.hdr.mark = 4;
+ c_732718.tag = closureN_tag;
  c_732718.fn = (function_type)__lambda_27;
 c_732718.num_args = 1;
 c_732718.num_elt = 7;
@@ -18539,7 +19483,8 @@ static void __lambda_27(int argc, object self_732565, object r_731583) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732720;
-c_732720.tag = closureN_tag;
+c_732720.hdr.mark = 4;
+ c_732720.tag = closureN_tag;
  c_732720.fn = (function_type)__lambda_26;
 c_732720.num_args = 1;
 c_732720.num_elt = 8;
@@ -18560,7 +19505,8 @@ static void __lambda_26(int argc, object self_732566, object r_731587) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732723;
-c_732723.tag = closureN_tag;
+c_732723.hdr.mark = 4;
+ c_732723.tag = closureN_tag;
  c_732723.fn = (function_type)__lambda_25;
 c_732723.num_args = 1;
 c_732723.num_elt = 7;
@@ -18580,7 +19526,8 @@ static void __lambda_25(int argc, object self_732567, object r_731585) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732725;
-c_732725.tag = closureN_tag;
+c_732725.hdr.mark = 4;
+ c_732725.tag = closureN_tag;
  c_732725.fn = (function_type)__lambda_24;
 c_732725.num_args = 1;
 c_732725.num_elt = 7;
@@ -18600,7 +19547,8 @@ static void __lambda_24(int argc, object self_732568, object r_731586) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732727;
-c_732727.tag = closureN_tag;
+c_732727.hdr.mark = 4;
+ c_732727.tag = closureN_tag;
  c_732727.fn = (function_type)__lambda_23;
 c_732727.num_args = 1;
 c_732727.num_elt = 6;
@@ -18621,7 +19569,8 @@ static void __lambda_23(int argc, object self_732569, object r_731584) {
   Cyc_st_add("scheme/base.sld:or");
 
 closureN_type c_732729;
-c_732729.tag = closureN_tag;
+c_732729.hdr.mark = 4;
+ c_732729.tag = closureN_tag;
  c_732729.fn = (function_type)__lambda_22;
 c_732729.num_args = 1;
 c_732729.num_elt = 3;
@@ -18652,7 +19601,8 @@ static void __lambda_19(int argc, closure _,object k_731600, object expr_73557, 
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732607;
-c_732607.tag = closureN_tag;
+c_732607.hdr.mark = 4;
+ c_732607.tag = closureN_tag;
  c_732607.fn = (function_type)__lambda_18;
 c_732607.num_args = 1;
 c_732607.num_elt = 3;
@@ -18668,7 +19618,8 @@ static void __lambda_18(int argc, object self_732573, object r_731611) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732609;
-c_732609.tag = closureN_tag;
+c_732609.hdr.mark = 4;
+ c_732609.tag = closureN_tag;
  c_732609.fn = (function_type)__lambda_17;
 c_732609.num_args = 1;
 c_732609.num_elt = 3;
@@ -18685,7 +19636,8 @@ static void __lambda_17(int argc, object self_732574, object r_731601) {
 if( !eq(boolean_f, r_731601) ){ 
   
 closureN_type c_732611;
-c_732611.tag = closureN_tag;
+c_732611.hdr.mark = 4;
+ c_732611.tag = closureN_tag;
  c_732611.fn = (function_type)__lambda_5;
 c_732611.num_args = 0;
 c_732611.num_elt = 1;
@@ -18696,7 +19648,8 @@ return_closcall0((closure)&c_732611);
 } else { 
   
 closureN_type c_732615;
-c_732615.tag = closureN_tag;
+c_732615.hdr.mark = 4;
+ c_732615.tag = closureN_tag;
  c_732615.fn = (function_type)__lambda_16;
 c_732615.num_args = 1;
 c_732615.num_elt = 3;
@@ -18713,7 +19666,8 @@ static void __lambda_16(int argc, object self_732575, object r_731610) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732617;
-c_732617.tag = closureN_tag;
+c_732617.hdr.mark = 4;
+ c_732617.tag = closureN_tag;
  c_732617.fn = (function_type)__lambda_15;
 c_732617.num_args = 1;
 c_732617.num_elt = 3;
@@ -18730,7 +19684,8 @@ static void __lambda_15(int argc, object self_732576, object r_731602) {
 if( !eq(boolean_f, r_731602) ){ 
   
 closureN_type c_732619;
-c_732619.tag = closureN_tag;
+c_732619.hdr.mark = 4;
+ c_732619.tag = closureN_tag;
  c_732619.fn = (function_type)__lambda_6;
 c_732619.num_args = 0;
 c_732619.num_elt = 2;
@@ -18742,7 +19697,8 @@ return_closcall0((closure)&c_732619);
 } else { 
   
 closureN_type c_732626;
-c_732626.tag = closureN_tag;
+c_732626.hdr.mark = 4;
+ c_732626.tag = closureN_tag;
  c_732626.fn = (function_type)__lambda_14;
 c_732626.num_args = 0;
 c_732626.num_elt = 3;
@@ -18759,7 +19715,8 @@ static void __lambda_14(int argc, object self_732577) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732628;
-c_732628.tag = closureN_tag;
+c_732628.hdr.mark = 4;
+ c_732628.tag = closureN_tag;
  c_732628.fn = (function_type)__lambda_13;
 c_732628.num_args = 1;
 c_732628.num_elt = 3;
@@ -18775,7 +19732,8 @@ static void __lambda_13(int argc, object self_732578, object r_731609) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732631;
-c_732631.tag = closureN_tag;
+c_732631.hdr.mark = 4;
+ c_732631.tag = closureN_tag;
  c_732631.fn = (function_type)__lambda_12;
 c_732631.num_args = 1;
 c_732631.num_elt = 3;
@@ -18791,7 +19749,8 @@ static void __lambda_12(int argc, object self_732579, object r_731603) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732633;
-c_732633.tag = closureN_tag;
+c_732633.hdr.mark = 4;
+ c_732633.tag = closureN_tag;
  c_732633.fn = (function_type)__lambda_11;
 c_732633.num_args = 1;
 c_732633.num_elt = 4;
@@ -18808,7 +19767,8 @@ static void __lambda_11(int argc, object self_732580, object r_731604) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732635;
-c_732635.tag = closureN_tag;
+c_732635.hdr.mark = 4;
+ c_732635.tag = closureN_tag;
  c_732635.fn = (function_type)__lambda_10;
 c_732635.num_args = 1;
 c_732635.num_elt = 5;
@@ -18826,7 +19786,8 @@ static void __lambda_10(int argc, object self_732581, object r_731608) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732638;
-c_732638.tag = closureN_tag;
+c_732638.hdr.mark = 4;
+ c_732638.tag = closureN_tag;
  c_732638.fn = (function_type)__lambda_9;
 c_732638.num_args = 1;
 c_732638.num_elt = 4;
@@ -18843,7 +19804,8 @@ static void __lambda_9(int argc, object self_732582, object r_731606) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732640;
-c_732640.tag = closureN_tag;
+c_732640.hdr.mark = 4;
+ c_732640.tag = closureN_tag;
  c_732640.fn = (function_type)__lambda_8;
 c_732640.num_args = 1;
 c_732640.num_elt = 4;
@@ -18860,7 +19822,8 @@ static void __lambda_8(int argc, object self_732583, object r_731607) {
   Cyc_st_add("scheme/base.sld:and");
 
 closureN_type c_732642;
-c_732642.tag = closureN_tag;
+c_732642.hdr.mark = 4;
+ c_732642.tag = closureN_tag;
  c_732642.fn = (function_type)__lambda_7;
 c_732642.num_args = 1;
 c_732642.num_elt = 3;
@@ -18904,7 +19867,8 @@ static void __lambda_3(int argc, closure _,object k, object f) {
   Cyc_st_add("scheme/base.sld:call/cc");
 
 closureN_type c_732597;
-c_732597.tag = closureN_tag;
+c_732597.hdr.mark = 4;
+ c_732597.tag = closureN_tag;
  c_732597.fn = (function_type)__lambda_2;
 c_732597.num_args = 2;
 c_732597.num_elt = 1;
@@ -18923,7 +19887,8 @@ static void __lambda_1(int argc, closure _,object k, object producer, object con
   Cyc_st_add("scheme/base.sld:call-with-values");
 
 closureN_type c_732591;
-c_732591.tag = closureN_tag;
+c_732591.hdr.mark = 4;
+ c_732591.tag = closureN_tag;
  c_732591.fn = (function_type)__lambda_0;
 c_732591.num_args = 1;
 c_732591.num_elt = 2;

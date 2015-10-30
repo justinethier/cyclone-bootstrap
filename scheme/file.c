@@ -217,7 +217,8 @@ static void __lambda_33(int argc, closure _,object k_7318, object string_732, ob
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73151;
-c_73151.tag = closureN_tag;
+c_73151.hdr.mark = 4;
+ c_73151.tag = closureN_tag;
  c_73151.fn = (function_type)__lambda_32;
 c_73151.num_args = 1;
 c_73151.num_elt = 3;
@@ -233,7 +234,8 @@ static void __lambda_32(int argc, object self_7356, object r_7319) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73153;
-c_73153.tag = closureN_tag;
+c_73153.hdr.mark = 4;
+ c_73153.tag = closureN_tag;
  c_73153.fn = (function_type)__lambda_31;
 c_73153.num_args = 1;
 c_73153.num_elt = 4;
@@ -250,7 +252,8 @@ static void __lambda_31(int argc, object self_7357, object r_7331) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73155;
-c_73155.tag = closureN_tag;
+c_73155.hdr.mark = 4;
+ c_73155.tag = closureN_tag;
  c_73155.fn = (function_type)__lambda_30;
 c_73155.num_args = 1;
 c_73155.num_elt = 4;
@@ -267,7 +270,8 @@ static void __lambda_30(int argc, object self_7358, object r_7329) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73157;
-c_73157.tag = closureN_tag;
+c_73157.hdr.mark = 4;
+ c_73157.tag = closureN_tag;
  c_73157.fn = (function_type)__lambda_29;
 c_73157.num_args = 1;
 c_73157.num_elt = 4;
@@ -286,7 +290,8 @@ static void __lambda_29(int argc, object self_7359, object r_7330) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73160;
-c_73160.tag = closureN_tag;
+c_73160.hdr.mark = 4;
+ c_73160.tag = closureN_tag;
  c_73160.fn = (function_type)__lambda_28;
 c_73160.num_args = 1;
 c_73160.num_elt = 3;
@@ -302,7 +307,8 @@ static void __lambda_28(int argc, object self_7360, object r_7320) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73162;
-c_73162.tag = closureN_tag;
+c_73162.hdr.mark = 4;
+ c_73162.tag = closureN_tag;
  c_73162.fn = (function_type)__lambda_27;
 c_73162.num_args = 2;
 c_73162.num_elt = 2;
@@ -317,7 +323,8 @@ static void __lambda_27(int argc, object self_7361, object old_734, object new_7
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73164;
-c_73164.tag = closureN_tag;
+c_73164.hdr.mark = 4;
+ c_73164.tag = closureN_tag;
  c_73164.fn = (function_type)__lambda_24;
 c_73164.num_args = 1;
 c_73164.num_elt = 3;
@@ -328,7 +335,8 @@ c_73164.elts[2] = ((closureN)self_7361)->elts[1];
 
 
 closureN_type c_73183;
-c_73183.tag = closureN_tag;
+c_73183.hdr.mark = 4;
+ c_73183.tag = closureN_tag;
  c_73183.fn = (function_type)__lambda_26;
 c_73183.num_args = 0;
 c_73183.num_elt = 1;
@@ -342,7 +350,8 @@ static void __lambda_26(int argc, object self_7362, object k_7327) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73185;
-c_73185.tag = closureN_tag;
+c_73185.hdr.mark = 4;
+ c_73185.tag = closureN_tag;
  c_73185.fn = (function_type)__lambda_25;
 c_73185.num_args = 1;
 c_73185.num_elt = 2;
@@ -362,7 +371,8 @@ static void __lambda_24(int argc, object self_7364, object r_7321) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73166;
-c_73166.tag = closureN_tag;
+c_73166.hdr.mark = 4;
+ c_73166.tag = closureN_tag;
  c_73166.fn = (function_type)__lambda_19;
 c_73166.num_args = 1;
 c_73166.num_elt = 3;
@@ -373,7 +383,8 @@ c_73166.elts[2] = ((closureN)self_7364)->elts[2];
 
 
 closureN_type c_73171;
-c_73171.tag = closureN_tag;
+c_73171.hdr.mark = 4;
+ c_73171.tag = closureN_tag;
  c_73171.fn = (function_type)__lambda_23;
 c_73171.num_args = 0;
 c_73171.num_elt = 1;
@@ -387,7 +398,8 @@ static void __lambda_23(int argc, object self_7365, object k_7323) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73173;
-c_73173.tag = closureN_tag;
+c_73173.hdr.mark = 4;
+ c_73173.tag = closureN_tag;
  c_73173.fn = (function_type)__lambda_22;
 c_73173.num_args = 1;
 c_73173.num_elt = 2;
@@ -402,7 +414,8 @@ static void __lambda_22(int argc, object self_7366, object r_7326) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73175;
-c_73175.tag = closureN_tag;
+c_73175.hdr.mark = 4;
+ c_73175.tag = closureN_tag;
  c_73175.fn = (function_type)__lambda_21;
 c_73175.num_args = 1;
 c_73175.num_elt = 2;
@@ -417,7 +430,8 @@ static void __lambda_21(int argc, object self_7367, object r_7324) {
   Cyc_st_add("scheme/file.sld:with-output-to-file");
 
 closureN_type c_73177;
-c_73177.tag = closureN_tag;
+c_73177.hdr.mark = 4;
+ c_73177.tag = closureN_tag;
  c_73177.fn = (function_type)__lambda_20;
 c_73177.num_args = 1;
 c_73177.num_elt = 2;
@@ -442,7 +456,8 @@ static void __lambda_18(int argc, closure _,object k_7334, object string_736, ob
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73106;
-c_73106.tag = closureN_tag;
+c_73106.hdr.mark = 4;
+ c_73106.tag = closureN_tag;
  c_73106.fn = (function_type)__lambda_17;
 c_73106.num_args = 1;
 c_73106.num_elt = 3;
@@ -458,7 +473,8 @@ static void __lambda_17(int argc, object self_7370, object r_7335) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73108;
-c_73108.tag = closureN_tag;
+c_73108.hdr.mark = 4;
+ c_73108.tag = closureN_tag;
  c_73108.fn = (function_type)__lambda_16;
 c_73108.num_args = 1;
 c_73108.num_elt = 4;
@@ -475,7 +491,8 @@ static void __lambda_16(int argc, object self_7371, object r_7347) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73110;
-c_73110.tag = closureN_tag;
+c_73110.hdr.mark = 4;
+ c_73110.tag = closureN_tag;
  c_73110.fn = (function_type)__lambda_15;
 c_73110.num_args = 1;
 c_73110.num_elt = 4;
@@ -492,7 +509,8 @@ static void __lambda_15(int argc, object self_7372, object r_7345) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73112;
-c_73112.tag = closureN_tag;
+c_73112.hdr.mark = 4;
+ c_73112.tag = closureN_tag;
  c_73112.fn = (function_type)__lambda_14;
 c_73112.num_args = 1;
 c_73112.num_elt = 4;
@@ -511,7 +529,8 @@ static void __lambda_14(int argc, object self_7373, object r_7346) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73115;
-c_73115.tag = closureN_tag;
+c_73115.hdr.mark = 4;
+ c_73115.tag = closureN_tag;
  c_73115.fn = (function_type)__lambda_13;
 c_73115.num_args = 1;
 c_73115.num_elt = 3;
@@ -527,7 +546,8 @@ static void __lambda_13(int argc, object self_7374, object r_7336) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73117;
-c_73117.tag = closureN_tag;
+c_73117.hdr.mark = 4;
+ c_73117.tag = closureN_tag;
  c_73117.fn = (function_type)__lambda_12;
 c_73117.num_args = 2;
 c_73117.num_elt = 2;
@@ -542,7 +562,8 @@ static void __lambda_12(int argc, object self_7375, object old_738, object new_7
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73119;
-c_73119.tag = closureN_tag;
+c_73119.hdr.mark = 4;
+ c_73119.tag = closureN_tag;
  c_73119.fn = (function_type)__lambda_9;
 c_73119.num_args = 1;
 c_73119.num_elt = 3;
@@ -553,7 +574,8 @@ c_73119.elts[2] = ((closureN)self_7375)->elts[1];
 
 
 closureN_type c_73138;
-c_73138.tag = closureN_tag;
+c_73138.hdr.mark = 4;
+ c_73138.tag = closureN_tag;
  c_73138.fn = (function_type)__lambda_11;
 c_73138.num_args = 0;
 c_73138.num_elt = 1;
@@ -567,7 +589,8 @@ static void __lambda_11(int argc, object self_7376, object k_7343) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73140;
-c_73140.tag = closureN_tag;
+c_73140.hdr.mark = 4;
+ c_73140.tag = closureN_tag;
  c_73140.fn = (function_type)__lambda_10;
 c_73140.num_args = 1;
 c_73140.num_elt = 2;
@@ -587,7 +610,8 @@ static void __lambda_9(int argc, object self_7378, object r_7337) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73121;
-c_73121.tag = closureN_tag;
+c_73121.hdr.mark = 4;
+ c_73121.tag = closureN_tag;
  c_73121.fn = (function_type)__lambda_4;
 c_73121.num_args = 1;
 c_73121.num_elt = 3;
@@ -598,7 +622,8 @@ c_73121.elts[2] = ((closureN)self_7378)->elts[2];
 
 
 closureN_type c_73126;
-c_73126.tag = closureN_tag;
+c_73126.hdr.mark = 4;
+ c_73126.tag = closureN_tag;
  c_73126.fn = (function_type)__lambda_8;
 c_73126.num_args = 0;
 c_73126.num_elt = 1;
@@ -612,7 +637,8 @@ static void __lambda_8(int argc, object self_7379, object k_7339) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73128;
-c_73128.tag = closureN_tag;
+c_73128.hdr.mark = 4;
+ c_73128.tag = closureN_tag;
  c_73128.fn = (function_type)__lambda_7;
 c_73128.num_args = 1;
 c_73128.num_elt = 2;
@@ -627,7 +653,8 @@ static void __lambda_7(int argc, object self_7380, object r_7342) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73130;
-c_73130.tag = closureN_tag;
+c_73130.hdr.mark = 4;
+ c_73130.tag = closureN_tag;
  c_73130.fn = (function_type)__lambda_6;
 c_73130.num_args = 1;
 c_73130.num_elt = 2;
@@ -642,7 +669,8 @@ static void __lambda_6(int argc, object self_7381, object r_7340) {
   Cyc_st_add("scheme/file.sld:with-input-from-file");
 
 closureN_type c_73132;
-c_73132.tag = closureN_tag;
+c_73132.hdr.mark = 4;
+ c_73132.tag = closureN_tag;
  c_73132.fn = (function_type)__lambda_5;
 c_73132.num_args = 1;
 c_73132.num_elt = 2;
@@ -667,7 +695,8 @@ static void __lambda_3(int argc, closure _,object k_7350, object string_7310, ob
   Cyc_st_add("scheme/file.sld:call-with-output-file");
 
 closureN_type c_7397;
-c_7397.tag = closureN_tag;
+c_7397.hdr.mark = 4;
+ c_7397.tag = closureN_tag;
  c_7397.fn = (function_type)__lambda_2;
 c_7397.num_args = 1;
 c_7397.num_elt = 2;
@@ -689,7 +718,8 @@ static void __lambda_1(int argc, closure _,object k_7354, object string_7312, ob
   Cyc_st_add("scheme/file.sld:call-with-input-file");
 
 closureN_type c_7388;
-c_7388.tag = closureN_tag;
+c_7388.hdr.mark = 4;
+ c_7388.tag = closureN_tag;
  c_7388.fn = (function_type)__lambda_0;
 c_7388.num_args = 1;
 c_7388.num_elt = 2;

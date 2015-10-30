@@ -60,7 +60,8 @@ static void __lambda_5(int argc, closure _,object k_733) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7325;
-c_7325.tag = closureN_tag;
+c_7325.hdr.mark = 4;
+ c_7325.tag = closureN_tag;
  c_7325.fn = (function_type)__lambda_4;
 c_7325.num_args = 1;
 c_7325.num_elt = 1;
@@ -76,7 +77,8 @@ static void __lambda_4(int argc, object self_7317, object r_734) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7327;
-c_7327.tag = closureN_tag;
+c_7327.hdr.mark = 4;
+ c_7327.tag = closureN_tag;
  c_7327.fn = (function_type)__lambda_3;
 c_7327.num_args = 1;
 c_7327.num_elt = 1;
@@ -96,7 +98,8 @@ static void __lambda_3(int argc, object self_7318, object r_738) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7329;
-c_7329.tag = closureN_tag;
+c_7329.hdr.mark = 4;
+ c_7329.tag = closureN_tag;
  c_7329.fn = (function_type)__lambda_2;
 c_7329.num_args = 1;
 c_7329.num_elt = 1;
@@ -110,7 +113,8 @@ static void __lambda_2(int argc, object self_7319, object r_735) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7331;
-c_7331.tag = closureN_tag;
+c_7331.hdr.mark = 4;
+ c_7331.tag = closureN_tag;
  c_7331.fn = (function_type)__lambda_1;
 c_7331.num_args = 1;
 c_7331.num_elt = 1;
@@ -124,7 +128,8 @@ static void __lambda_1(int argc, object self_7320, object r_736) {
   Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7333;
-c_7333.tag = closureN_tag;
+c_7333.hdr.mark = 4;
+ c_7333.tag = closureN_tag;
  c_7333.fn = (function_type)__lambda_0;
 c_7333.num_args = 1;
 c_7333.num_elt = 1;

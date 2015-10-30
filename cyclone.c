@@ -715,7 +715,8 @@ static void __lambda_275(int argc, closure _,object r_73100) {
 static void __lambda_274(int argc, closure _,object args_7346) {
   
 closureN_type c_731628;
-c_731628.tag = closureN_tag;
+c_731628.hdr.mark = 4;
+ c_731628.tag = closureN_tag;
  c_731628.fn = (function_type)__lambda_267;
 c_731628.num_args = 1;
 c_731628.num_elt = 1;
@@ -730,7 +731,8 @@ return_closcall1((closure)&c_731628,  &c_731758);;
 static void __lambda_273(int argc, object self_73328, object k_73121, object arg_7347) {
   
 closureN_type c_731760;
-c_731760.tag = closureN_tag;
+c_731760.hdr.mark = 4;
+ c_731760.tag = closureN_tag;
  c_731760.fn = (function_type)__lambda_271;
 c_731760.num_args = 0;
 c_731760.num_elt = 1;
@@ -739,7 +741,8 @@ c_731760.elts[0] = arg_7347;
 
 
 closureN_type c_731784;
-c_731784.tag = closureN_tag;
+c_731784.hdr.mark = 4;
+ c_731784.tag = closureN_tag;
  c_731784.fn = (function_type)__lambda_272;
 c_731784.num_args = 1;
 c_731784.num_elt = 1;
@@ -756,7 +759,8 @@ static void __lambda_272(int argc, object self_73329, object r_73122) {
 static void __lambda_271(int argc, object self_73330, object k_73123) {
   
 closureN_type c_731762;
-c_731762.tag = closureN_tag;
+c_731762.hdr.mark = 4;
+ c_731762.tag = closureN_tag;
  c_731762.fn = (function_type)__lambda_270;
 c_731762.num_args = 1;
 c_731762.num_elt = 2;
@@ -772,7 +776,8 @@ return_closcall1((closure)&c_731762,  &c_731782);;
 static void __lambda_270(int argc, object self_73331, object r_73126) {
   
 closureN_type c_731764;
-c_731764.tag = closureN_tag;
+c_731764.hdr.mark = 4;
+ c_731764.tag = closureN_tag;
  c_731764.fn = (function_type)__lambda_269;
 c_731764.num_args = 1;
 c_731764.num_elt = 2;
@@ -789,7 +794,8 @@ static void __lambda_269(int argc, object self_73332, object r_73124) {
   if( !eq(boolean_f, r_73124) ){ 
   
 closureN_type c_731766;
-c_731766.tag = closureN_tag;
+c_731766.hdr.mark = 4;
+ c_731766.tag = closureN_tag;
  c_731766.fn = (function_type)__lambda_268;
 c_731766.num_args = 1;
 c_731766.num_elt = 1;
@@ -811,7 +817,8 @@ static void __lambda_268(int argc, object self_73333, object r_73125) {
 static void __lambda_267(int argc, object self_73334, object r_73120) {
   
 closureN_type c_731630;
-c_731630.tag = closureN_tag;
+c_731630.hdr.mark = 4;
+ c_731630.tag = closureN_tag;
  c_731630.fn = (function_type)__lambda_266;
 c_731630.num_args = 1;
 c_731630.num_elt = 1;
@@ -824,7 +831,8 @@ return_closcall3(  __glo_filter,  &c_731630, r_73120, ((closureN)self_73334)->el
 static void __lambda_266(int argc, object self_73335, object r_73101) {
   
 closureN_type c_731632;
-c_731632.tag = closureN_tag;
+c_731632.hdr.mark = 4;
+ c_731632.tag = closureN_tag;
  c_731632.fn = (function_type)__lambda_265;
 c_731632.num_args = 1;
 c_731632.num_elt = 1;
@@ -837,7 +845,8 @@ return_closcall1((closure)&c_731632,  r_73101);;
 static void __lambda_265(int argc, object self_73336, object non_91opts_7348) {
   
 closureN_type c_731634;
-c_731634.tag = closureN_tag;
+c_731634.hdr.mark = 4;
+ c_731634.tag = closureN_tag;
  c_731634.fn = (function_type)__lambda_264;
 c_731634.num_args = 1;
 c_731634.num_elt = 2;
@@ -851,7 +860,8 @@ return_closcall1((closure)&c_731634,  boolean_t);;
 static void __lambda_264(int argc, object self_73337, object compile_127_7349) {
   
 closureN_type c_731636;
-c_731636.tag = closureN_tag;
+c_731636.hdr.mark = 4;
+ c_731636.tag = closureN_tag;
  c_731636.fn = (function_type)__lambda_263;
 c_731636.num_args = 1;
 c_731636.num_elt = 2;
@@ -867,7 +877,8 @@ return_closcall1((closure)&c_731636,  &c_731756);;
 static void __lambda_263(int argc, object self_73338, object compile_127_7349) {
   
 closureN_type c_731638;
-c_731638.tag = closureN_tag;
+c_731638.hdr.mark = 4;
+ c_731638.tag = closureN_tag;
  c_731638.fn = (function_type)__lambda_262;
 c_731638.num_args = 0;
 c_731638.num_elt = 3;
@@ -882,7 +893,8 @@ return_closcall0((closure)&c_731638);;
 static void __lambda_262(int argc, object self_73339) {
   
 closureN_type c_731640;
-c_731640.tag = closureN_tag;
+c_731640.hdr.mark = 4;
+ c_731640.tag = closureN_tag;
  c_731640.fn = (function_type)__lambda_237;
 c_731640.num_args = 0;
 c_731640.num_elt = 1;
@@ -891,7 +903,8 @@ c_731640.elts[0] = ((closureN)self_73339)->elts[0];
 
 
 closureN_type c_731654;
-c_731654.tag = closureN_tag;
+c_731654.hdr.mark = 4;
+ c_731654.tag = closureN_tag;
  c_731654.fn = (function_type)__lambda_261;
 c_731654.num_args = 1;
 c_731654.num_elt = 3;
@@ -906,7 +919,8 @@ return_closcall1((closure)&c_731640,  &c_731654);;
 static void __lambda_261(int argc, object self_73340, object r_73102) {
   
 closureN_type c_731656;
-c_731656.tag = closureN_tag;
+c_731656.hdr.mark = 4;
+ c_731656.tag = closureN_tag;
  c_731656.fn = (function_type)__lambda_239;
 c_731656.num_args = 0;
 c_731656.num_elt = 2;
@@ -916,7 +930,8 @@ c_731656.elts[1] = ((closureN)self_73340)->elts[1];
 
 
 closureN_type c_731670;
-c_731670.tag = closureN_tag;
+c_731670.hdr.mark = 4;
+ c_731670.tag = closureN_tag;
  c_731670.fn = (function_type)__lambda_260;
 c_731670.num_args = 1;
 c_731670.num_elt = 3;
@@ -931,7 +946,8 @@ return_closcall1((closure)&c_731656,  &c_731670);;
 static void __lambda_260(int argc, object self_73341, object r_73103) {
   
 closureN_type c_731672;
-c_731672.tag = closureN_tag;
+c_731672.hdr.mark = 4;
+ c_731672.tag = closureN_tag;
  c_731672.fn = (function_type)__lambda_259;
 c_731672.num_args = 1;
 c_731672.num_elt = 3;
@@ -948,7 +964,8 @@ return_closcall1((closure)&c_731672,  &c_731752);;
 static void __lambda_259(int argc, object self_73342, object r_73115) {
   
 closureN_type c_731674;
-c_731674.tag = closureN_tag;
+c_731674.hdr.mark = 4;
+ c_731674.tag = closureN_tag;
  c_731674.fn = (function_type)__lambda_258;
 c_731674.num_args = 1;
 c_731674.num_elt = 3;
@@ -968,7 +985,8 @@ static void __lambda_258(int argc, object self_73343, object r_73104) {
 } else { 
   
 closureN_type c_731681;
-c_731681.tag = closureN_tag;
+c_731681.hdr.mark = 4;
+ c_731681.tag = closureN_tag;
  c_731681.fn = (function_type)__lambda_257;
 c_731681.num_args = 1;
 c_731681.num_elt = 3;
@@ -986,7 +1004,8 @@ return_closcall1((closure)&c_731681,  memberp(&c_731745, ((closureN)self_73343)-
 static void __lambda_257(int argc, object self_73344, object r_73113) {
   
 closureN_type c_731683;
-c_731683.tag = closureN_tag;
+c_731683.hdr.mark = 4;
+ c_731683.tag = closureN_tag;
  c_731683.fn = (function_type)__lambda_256;
 c_731683.num_args = 1;
 c_731683.num_elt = 3;
@@ -1001,7 +1020,8 @@ return_closcall1((closure)&c_731683,  r_73113);;
 static void __lambda_256(int argc, object self_73345, object tmp_7350) {
   
 closureN_type c_731685;
-c_731685.tag = closureN_tag;
+c_731685.hdr.mark = 4;
+ c_731685.tag = closureN_tag;
  c_731685.fn = (function_type)__lambda_242;
 c_731685.num_args = 0;
 c_731685.num_elt = 2;
@@ -1011,7 +1031,8 @@ c_731685.elts[1] = tmp_7350;
 
 
 closureN_type c_731694;
-c_731694.tag = closureN_tag;
+c_731694.hdr.mark = 4;
+ c_731694.tag = closureN_tag;
  c_731694.fn = (function_type)__lambda_255;
 c_731694.num_args = 1;
 c_731694.num_elt = 3;
@@ -1029,7 +1050,8 @@ static void __lambda_255(int argc, object self_73346, object r_73106) {
 } else { 
   
 closureN_type c_731701;
-c_731701.tag = closureN_tag;
+c_731701.hdr.mark = 4;
+ c_731701.tag = closureN_tag;
  c_731701.fn = (function_type)__lambda_254;
 c_731701.num_args = 1;
 c_731701.num_elt = 3;
@@ -1050,7 +1072,8 @@ static void __lambda_254(int argc, object self_73347, object r_73108) {
 } else { 
   
 closureN_type c_731705;
-c_731705.tag = closureN_tag;
+c_731705.hdr.mark = 4;
+ c_731705.tag = closureN_tag;
  c_731705.fn = (function_type)__lambda_253;
 c_731705.num_args = 1;
 c_731705.num_elt = 3;
@@ -1071,7 +1094,8 @@ static void __lambda_253(int argc, object self_73348, object r_73109) {
 } else { 
   
 closureN_type c_731712;
-c_731712.tag = closureN_tag;
+c_731712.hdr.mark = 4;
+ c_731712.tag = closureN_tag;
  c_731712.fn = (function_type)__lambda_252;
 c_731712.num_args = 1;
 c_731712.num_elt = 3;
@@ -1092,7 +1116,8 @@ static void __lambda_252(int argc, object self_73349, object r_73111) {
 } else { 
   
 closureN_type c_731716;
-c_731716.tag = closureN_tag;
+c_731716.hdr.mark = 4;
+ c_731716.tag = closureN_tag;
  c_731716.fn = (function_type)__lambda_251;
 c_731716.num_args = 1;
 c_731716.num_elt = 2;
@@ -1112,7 +1137,8 @@ static void __lambda_251(int argc, object self_73350, object r_73112) {
 } else { 
   
 closureN_type c_731721;
-c_731721.tag = closureN_tag;
+c_731721.hdr.mark = 4;
+ c_731721.tag = closureN_tag;
  c_731721.fn = (function_type)__lambda_250;
 c_731721.num_args = 0;
 c_731721.num_elt = 2;
@@ -1191,7 +1217,8 @@ static void __lambda_240(int argc, object self_73355, object r_73105) {
 static void __lambda_239(int argc, object self_73356, object k_73116) {
   
 closureN_type c_731658;
-c_731658.tag = closureN_tag;
+c_731658.hdr.mark = 4;
+ c_731658.tag = closureN_tag;
  c_731658.fn = (function_type)__lambda_238;
 c_731658.num_args = 1;
 c_731658.num_elt = 2;
@@ -1215,7 +1242,8 @@ static void __lambda_238(int argc, object self_73357, object r_73117) {
 static void __lambda_237(int argc, object self_73358, object k_73118) {
   
 closureN_type c_731642;
-c_731642.tag = closureN_tag;
+c_731642.hdr.mark = 4;
+ c_731642.tag = closureN_tag;
  c_731642.fn = (function_type)__lambda_236;
 c_731642.num_args = 1;
 c_731642.num_elt = 1;
@@ -1241,7 +1269,8 @@ static void __lambda_235(int argc, closure _,object k_73129, object args_7352, o
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731366;
-c_731366.tag = closureN_tag;
+c_731366.hdr.mark = 4;
+ c_731366.tag = closureN_tag;
  c_731366.fn = (function_type)__lambda_234;
 c_731366.num_args = 1;
 c_731366.num_elt = 2;
@@ -1256,7 +1285,8 @@ static void __lambda_234(int argc, object self_73360, object r_73130) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731368;
-c_731368.tag = closureN_tag;
+c_731368.hdr.mark = 4;
+ c_731368.tag = closureN_tag;
  c_731368.fn = (function_type)__lambda_233;
 c_731368.num_args = 1;
 c_731368.num_elt = 2;
@@ -1271,7 +1301,8 @@ static void __lambda_233(int argc, object self_73361, object in_91file_7353) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731370;
-c_731370.tag = closureN_tag;
+c_731370.hdr.mark = 4;
+ c_731370.tag = closureN_tag;
  c_731370.fn = (function_type)__lambda_232;
 c_731370.num_args = 1;
 c_731370.num_elt = 3;
@@ -1287,7 +1318,8 @@ static void __lambda_232(int argc, object self_73362, object r_73131) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731372;
-c_731372.tag = closureN_tag;
+c_731372.hdr.mark = 4;
+ c_731372.tag = closureN_tag;
  c_731372.fn = (function_type)__lambda_231;
 c_731372.num_args = 1;
 c_731372.num_elt = 3;
@@ -1303,7 +1335,8 @@ static void __lambda_231(int argc, object self_73363, object in_91prog_7354) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731374;
-c_731374.tag = closureN_tag;
+c_731374.hdr.mark = 4;
+ c_731374.tag = closureN_tag;
  c_731374.fn = (function_type)__lambda_230;
 c_731374.num_args = 1;
 c_731374.num_elt = 4;
@@ -1320,7 +1353,8 @@ static void __lambda_230(int argc, object self_73364, object r_73169) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731376;
-c_731376.tag = closureN_tag;
+c_731376.hdr.mark = 4;
+ c_731376.tag = closureN_tag;
  c_731376.fn = (function_type)__lambda_229;
 c_731376.num_args = 1;
 c_731376.num_elt = 4;
@@ -1337,7 +1371,8 @@ static void __lambda_229(int argc, object self_73365, object r_73168) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731378;
-c_731378.tag = closureN_tag;
+c_731378.hdr.mark = 4;
+ c_731378.tag = closureN_tag;
  c_731378.fn = (function_type)__lambda_228;
 c_731378.num_args = 1;
 c_731378.num_elt = 4;
@@ -1354,7 +1389,8 @@ static void __lambda_228(int argc, object self_73366, object r_73132) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731380;
-c_731380.tag = closureN_tag;
+c_731380.hdr.mark = 4;
+ c_731380.tag = closureN_tag;
  c_731380.fn = (function_type)__lambda_227;
 c_731380.num_args = 1;
 c_731380.num_elt = 4;
@@ -1371,7 +1407,8 @@ static void __lambda_227(int argc, object self_73367, object program_127_7355) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731382;
-c_731382.tag = closureN_tag;
+c_731382.hdr.mark = 4;
+ c_731382.tag = closureN_tag;
  c_731382.fn = (function_type)__lambda_178;
 c_731382.num_args = 0;
 c_731382.num_elt = 2;
@@ -1381,7 +1418,8 @@ c_731382.elts[1] = program_127_7355;
 
 
 closureN_type c_731407;
-c_731407.tag = closureN_tag;
+c_731407.hdr.mark = 4;
+ c_731407.tag = closureN_tag;
  c_731407.fn = (function_type)__lambda_226;
 c_731407.num_args = 1;
 c_731407.num_elt = 5;
@@ -1399,7 +1437,8 @@ static void __lambda_226(int argc, object self_73368, object r_73133) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731409;
-c_731409.tag = closureN_tag;
+c_731409.hdr.mark = 4;
+ c_731409.tag = closureN_tag;
  c_731409.fn = (function_type)__lambda_225;
 c_731409.num_args = 1;
 c_731409.num_elt = 5;
@@ -1417,7 +1456,8 @@ static void __lambda_225(int argc, object self_73369, object lib_91deps_7356) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731411;
-c_731411.tag = closureN_tag;
+c_731411.hdr.mark = 4;
+ c_731411.tag = closureN_tag;
  c_731411.fn = (function_type)__lambda_224;
 c_731411.num_args = 1;
 c_731411.num_elt = 6;
@@ -1436,7 +1476,8 @@ static void __lambda_224(int argc, object self_73370, object r_73134) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731413;
-c_731413.tag = closureN_tag;
+c_731413.hdr.mark = 4;
+ c_731413.tag = closureN_tag;
  c_731413.fn = (function_type)__lambda_223;
 c_731413.num_args = 1;
 c_731413.num_elt = 6;
@@ -1455,7 +1496,8 @@ static void __lambda_223(int argc, object self_73371, object exec_91file_7357) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731415;
-c_731415.tag = closureN_tag;
+c_731415.hdr.mark = 4;
+ c_731415.tag = closureN_tag;
  c_731415.fn = (function_type)__lambda_222;
 c_731415.num_args = 1;
 c_731415.num_elt = 7;
@@ -1479,7 +1521,8 @@ static void __lambda_222(int argc, object self_73372, object r_73135) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731417;
-c_731417.tag = closureN_tag;
+c_731417.hdr.mark = 4;
+ c_731417.tag = closureN_tag;
  c_731417.fn = (function_type)__lambda_221;
 c_731417.num_args = 1;
 c_731417.num_elt = 7;
@@ -1499,7 +1542,8 @@ static void __lambda_221(int argc, object self_73373, object src_91file_7358) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731419;
-c_731419.tag = closureN_tag;
+c_731419.hdr.mark = 4;
+ c_731419.tag = closureN_tag;
  c_731419.fn = (function_type)__lambda_220;
 c_731419.num_args = 1;
 c_731419.num_elt = 8;
@@ -1524,7 +1568,8 @@ static void __lambda_220(int argc, object self_73374, object r_73136) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731421;
-c_731421.tag = closureN_tag;
+c_731421.hdr.mark = 4;
+ c_731421.tag = closureN_tag;
  c_731421.fn = (function_type)__lambda_219;
 c_731421.num_args = 1;
 c_731421.num_elt = 8;
@@ -1545,7 +1590,8 @@ static void __lambda_219(int argc, object self_73375, object meta_91file_7359) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731423;
-c_731423.tag = closureN_tag;
+c_731423.hdr.mark = 4;
+ c_731423.tag = closureN_tag;
  c_731423.fn = (function_type)__lambda_215;
 c_731423.num_args = 1;
 c_731423.num_elt = 8;
@@ -1561,7 +1607,8 @@ c_731423.elts[7] = ((closureN)self_73375)->elts[7];
 
 
 closureN_type c_731597;
-c_731597.tag = closureN_tag;
+c_731597.hdr.mark = 4;
+ c_731597.tag = closureN_tag;
  c_731597.fn = (function_type)__lambda_218;
 c_731597.num_args = 1;
 c_731597.num_elt = 3;
@@ -1577,7 +1624,8 @@ static void __lambda_218(int argc, object self_73376, object k_73159, object pro
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731599;
-c_731599.tag = closureN_tag;
+c_731599.hdr.mark = 4;
+ c_731599.tag = closureN_tag;
  c_731599.fn = (function_type)__lambda_216;
 c_731599.num_args = 1;
 c_731599.num_elt = 2;
@@ -1587,7 +1635,8 @@ c_731599.elts[1] = ((closureN)self_73376)->elts[2];
 
 
 closureN_type c_731603;
-c_731603.tag = closureN_tag;
+c_731603.hdr.mark = 4;
+ c_731603.tag = closureN_tag;
  c_731603.fn = (function_type)__lambda_217;
 c_731603.num_args = 0;
 c_731603.num_elt = 3;
@@ -1613,7 +1662,8 @@ static void __lambda_215(int argc, object self_73379, object r_73137) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731425;
-c_731425.tag = closureN_tag;
+c_731425.hdr.mark = 4;
+ c_731425.tag = closureN_tag;
  c_731425.fn = (function_type)__lambda_214;
 c_731425.num_args = 1;
 c_731425.num_elt = 8;
@@ -1634,7 +1684,8 @@ static void __lambda_214(int argc, object self_73380, object create_91c_91file_7
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731427;
-c_731427.tag = closureN_tag;
+c_731427.hdr.mark = 4;
+ c_731427.tag = closureN_tag;
  c_731427.fn = (function_type)__lambda_213;
 c_731427.num_args = 1;
 c_731427.num_elt = 7;
@@ -1654,7 +1705,8 @@ static void __lambda_213(int argc, object self_73381, object r_73138) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731429;
-c_731429.tag = closureN_tag;
+c_731429.hdr.mark = 4;
+ c_731429.tag = closureN_tag;
  c_731429.fn = (function_type)__lambda_212;
 c_731429.num_args = 1;
 c_731429.num_elt = 7;
@@ -1674,7 +1726,8 @@ static void __lambda_212(int argc, object self_73382, object result_7362) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731431;
-c_731431.tag = closureN_tag;
+c_731431.hdr.mark = 4;
+ c_731431.tag = closureN_tag;
  c_731431.fn = (function_type)__lambda_211;
 c_731431.num_args = 0;
 c_731431.num_elt = 7;
@@ -1695,7 +1748,8 @@ static void __lambda_211(int argc, object self_73383) {
 if( !eq(boolean_f, ((closureN)self_73383)->elts[5]) ){ 
   
 closureN_type c_731434;
-c_731434.tag = closureN_tag;
+c_731434.hdr.mark = 4;
+ c_731434.tag = closureN_tag;
  c_731434.fn = (function_type)__lambda_199;
 c_731434.num_args = 0;
 c_731434.num_elt = 5;
@@ -1710,7 +1764,8 @@ return_closcall0((closure)&c_731434);
 } else { 
   
 closureN_type c_731554;
-c_731554.tag = closureN_tag;
+c_731554.hdr.mark = 4;
+ c_731554.tag = closureN_tag;
  c_731554.fn = (function_type)__lambda_210;
 c_731554.num_args = 0;
 c_731554.num_elt = 5;
@@ -1729,7 +1784,8 @@ static void __lambda_210(int argc, object self_73384) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731556;
-c_731556.tag = closureN_tag;
+c_731556.hdr.mark = 4;
+ c_731556.tag = closureN_tag;
  c_731556.fn = (function_type)__lambda_205;
 c_731556.num_args = 1;
 c_731556.num_elt = 5;
@@ -1749,7 +1805,8 @@ static void __lambda_209(int argc, object self_73385, object k_73155) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731588;
-c_731588.tag = closureN_tag;
+c_731588.hdr.mark = 4;
+ c_731588.tag = closureN_tag;
  c_731588.fn = (function_type)__lambda_208;
 c_731588.num_args = 1;
 c_731588.num_elt = 1;
@@ -1765,7 +1822,8 @@ static void __lambda_208(int argc, object self_73386, object r_73156) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731590;
-c_731590.tag = closureN_tag;
+c_731590.hdr.mark = 4;
+ c_731590.tag = closureN_tag;
  c_731590.fn = (function_type)__lambda_207;
 c_731590.num_args = 1;
 c_731590.num_elt = 1;
@@ -1779,7 +1837,8 @@ static void __lambda_207(int argc, object self_73387, object r_73157) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731592;
-c_731592.tag = closureN_tag;
+c_731592.hdr.mark = 4;
+ c_731592.tag = closureN_tag;
  c_731592.fn = (function_type)__lambda_206;
 c_731592.num_args = 1;
 c_731592.num_elt = 1;
@@ -1798,7 +1857,8 @@ static void __lambda_205(int argc, object self_73389, object r_73154) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731558;
-c_731558.tag = closureN_tag;
+c_731558.hdr.mark = 4;
+ c_731558.tag = closureN_tag;
  c_731558.fn = (function_type)__lambda_204;
 c_731558.num_args = 1;
 c_731558.num_elt = 4;
@@ -1815,7 +1875,8 @@ static void __lambda_204(int argc, object self_73390, object r_73152) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731560;
-c_731560.tag = closureN_tag;
+c_731560.hdr.mark = 4;
+ c_731560.tag = closureN_tag;
  c_731560.fn = (function_type)__lambda_203;
 c_731560.num_args = 1;
 c_731560.num_elt = 2;
@@ -1838,7 +1899,8 @@ static void __lambda_203(int argc, object self_73391, object r_73153) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731562;
-c_731562.tag = closureN_tag;
+c_731562.hdr.mark = 4;
+ c_731562.tag = closureN_tag;
  c_731562.fn = (function_type)__lambda_202;
 c_731562.num_args = 1;
 c_731562.num_elt = 2;
@@ -1854,7 +1916,8 @@ static void __lambda_202(int argc, object self_73392, object comp_91lib_91cmd_73
 if( !eq(boolean_f, ((closureN)self_73392)->elts[0]) ){ 
   
 closureN_type c_731565;
-c_731565.tag = closureN_tag;
+c_731565.hdr.mark = 4;
+ c_731565.tag = closureN_tag;
  c_731565.fn = (function_type)__lambda_200;
 c_731565.num_args = 0;
 c_731565.num_elt = 2;
@@ -1866,7 +1929,8 @@ return_closcall0((closure)&c_731565);
 } else { 
   
 closureN_type c_731573;
-c_731573.tag = closureN_tag;
+c_731573.hdr.mark = 4;
+ c_731573.tag = closureN_tag;
  c_731573.fn = (function_type)__lambda_201;
 c_731573.num_args = 0;
 c_731573.num_elt = 2;
@@ -1894,7 +1958,8 @@ static void __lambda_199(int argc, object self_73395) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731436;
-c_731436.tag = closureN_tag;
+c_731436.hdr.mark = 4;
+ c_731436.tag = closureN_tag;
  c_731436.fn = (function_type)__lambda_198;
 c_731436.num_args = 3;
 c_731436.num_elt = 5;
@@ -1912,7 +1977,8 @@ static void __lambda_198(int argc, object self_73396, object objs_91str_7366, ob
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731438;
-c_731438.tag = closureN_tag;
+c_731438.hdr.mark = 4;
+ c_731438.tag = closureN_tag;
  c_731438.fn = (function_type)__lambda_197;
 c_731438.num_args = 1;
 c_731438.num_elt = 7;
@@ -1934,7 +2000,8 @@ static void __lambda_197(int argc, object self_73397, object objs_91str_7366) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731440;
-c_731440.tag = closureN_tag;
+c_731440.hdr.mark = 4;
+ c_731440.tag = closureN_tag;
  c_731440.fn = (function_type)__lambda_196;
 c_731440.num_args = 1;
 c_731440.num_elt = 7;
@@ -1956,7 +2023,8 @@ static void __lambda_196(int argc, object self_73398, object comp_91prog_91cmd_7
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731442;
-c_731442.tag = closureN_tag;
+c_731442.hdr.mark = 4;
+ c_731442.tag = closureN_tag;
  c_731442.fn = (function_type)__lambda_195;
 c_731442.num_args = 1;
 c_731442.num_elt = 7;
@@ -1978,7 +2046,8 @@ static void __lambda_195(int argc, object self_73399, object comp_91objs_91cmd_7
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731444;
-c_731444.tag = closureN_tag;
+c_731444.hdr.mark = 4;
+ c_731444.tag = closureN_tag;
  c_731444.fn = (function_type)__lambda_194;
 c_731444.num_args = 0;
 c_731444.num_elt = 8;
@@ -1999,7 +2068,8 @@ static void __lambda_194(int argc, object self_73400) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731446;
-c_731446.tag = closureN_tag;
+c_731446.hdr.mark = 4;
+ c_731446.tag = closureN_tag;
  c_731446.fn = (function_type)__lambda_191;
 c_731446.num_args = 1;
 c_731446.num_elt = 8;
@@ -2022,7 +2092,8 @@ static void __lambda_193(int argc, object self_73401, object k_73150, object i_7
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731533;
-c_731533.tag = closureN_tag;
+c_731533.hdr.mark = 4;
+ c_731533.tag = closureN_tag;
  c_731533.fn = (function_type)__lambda_192;
 c_731533.num_args = 1;
 c_731533.num_elt = 1;
@@ -2049,7 +2120,8 @@ static void __lambda_191(int argc, object self_73403, object r_73149) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731448;
-c_731448.tag = closureN_tag;
+c_731448.hdr.mark = 4;
+ c_731448.tag = closureN_tag;
  c_731448.fn = (function_type)__lambda_190;
 c_731448.num_args = 1;
 c_731448.num_elt = 7;
@@ -2069,7 +2141,8 @@ static void __lambda_190(int argc, object self_73404, object r_73148) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731450;
-c_731450.tag = closureN_tag;
+c_731450.hdr.mark = 4;
+ c_731450.tag = closureN_tag;
  c_731450.fn = (function_type)__lambda_189;
 c_731450.num_args = 1;
 c_731450.num_elt = 7;
@@ -2091,7 +2164,8 @@ static void __lambda_189(int argc, object self_73405, object r_73147) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731452;
-c_731452.tag = closureN_tag;
+c_731452.hdr.mark = 4;
+ c_731452.tag = closureN_tag;
  c_731452.fn = (function_type)__lambda_188;
 c_731452.num_args = 1;
 c_731452.num_elt = 7;
@@ -2111,7 +2185,8 @@ static void __lambda_188(int argc, object self_73406, object r_73139) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731454;
-c_731454.tag = closureN_tag;
+c_731454.hdr.mark = 4;
+ c_731454.tag = closureN_tag;
  c_731454.fn = (function_type)__lambda_187;
 c_731454.num_args = 1;
 c_731454.num_elt = 6;
@@ -2138,7 +2213,8 @@ static void __lambda_187(int argc, object self_73407, object r_73146) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731456;
-c_731456.tag = closureN_tag;
+c_731456.hdr.mark = 4;
+ c_731456.tag = closureN_tag;
  c_731456.fn = (function_type)__lambda_186;
 c_731456.num_args = 1;
 c_731456.num_elt = 6;
@@ -2157,7 +2233,8 @@ static void __lambda_186(int argc, object self_73408, object r_73140) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731458;
-c_731458.tag = closureN_tag;
+c_731458.hdr.mark = 4;
+ c_731458.tag = closureN_tag;
  c_731458.fn = (function_type)__lambda_185;
 c_731458.num_args = 1;
 c_731458.num_elt = 4;
@@ -2182,7 +2259,8 @@ static void __lambda_185(int argc, object self_73409, object r_73145) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731460;
-c_731460.tag = closureN_tag;
+c_731460.hdr.mark = 4;
+ c_731460.tag = closureN_tag;
  c_731460.fn = (function_type)__lambda_184;
 c_731460.num_args = 1;
 c_731460.num_elt = 4;
@@ -2200,7 +2278,8 @@ static void __lambda_184(int argc, object self_73410, object r_73141) {
 if( !eq(boolean_f, ((closureN)self_73410)->elts[0]) ){ 
   
 closureN_type c_731463;
-c_731463.tag = closureN_tag;
+c_731463.hdr.mark = 4;
+ c_731463.tag = closureN_tag;
  c_731463.fn = (function_type)__lambda_181;
 c_731463.num_args = 0;
 c_731463.num_elt = 3;
@@ -2213,7 +2292,8 @@ return_closcall0((closure)&c_731463);
 } else { 
   
 closureN_type c_731488;
-c_731488.tag = closureN_tag;
+c_731488.hdr.mark = 4;
+ c_731488.tag = closureN_tag;
  c_731488.fn = (function_type)__lambda_183;
 c_731488.num_args = 0;
 c_731488.num_elt = 3;
@@ -2230,7 +2310,8 @@ static void __lambda_183(int argc, object self_73411) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731490;
-c_731490.tag = closureN_tag;
+c_731490.hdr.mark = 4;
+ c_731490.tag = closureN_tag;
  c_731490.fn = (function_type)__lambda_182;
 c_731490.num_args = 1;
 c_731490.num_elt = 2;
@@ -2250,7 +2331,8 @@ static void __lambda_181(int argc, object self_73413) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731465;
-c_731465.tag = closureN_tag;
+c_731465.hdr.mark = 4;
+ c_731465.tag = closureN_tag;
  c_731465.fn = (function_type)__lambda_180;
 c_731465.num_args = 1;
 c_731465.num_elt = 2;
@@ -2267,7 +2349,8 @@ static void __lambda_180(int argc, object self_73414, object r_73143) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731467;
-c_731467.tag = closureN_tag;
+c_731467.hdr.mark = 4;
+ c_731467.tag = closureN_tag;
  c_731467.fn = (function_type)__lambda_179;
 c_731467.num_args = 1;
 c_731467.num_elt = 2;
@@ -2295,7 +2378,8 @@ static void __lambda_178(int argc, object self_73416, object k_73162) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731384;
-c_731384.tag = closureN_tag;
+c_731384.hdr.mark = 4;
+ c_731384.tag = closureN_tag;
  c_731384.fn = (function_type)__lambda_175;
 c_731384.num_args = 0;
 c_731384.num_elt = 2;
@@ -2305,7 +2389,8 @@ c_731384.elts[1] = ((closureN)self_73416)->elts[1];
 
 
 closureN_type c_731397;
-c_731397.tag = closureN_tag;
+c_731397.hdr.mark = 4;
+ c_731397.tag = closureN_tag;
  c_731397.fn = (function_type)__lambda_177;
 c_731397.num_args = 1;
 c_731397.num_elt = 2;
@@ -2321,7 +2406,8 @@ static void __lambda_177(int argc, object self_73417, object r_73163) {
 if( !eq(boolean_f, r_73163) ){ 
   
 closureN_type c_731399;
-c_731399.tag = closureN_tag;
+c_731399.hdr.mark = 4;
+ c_731399.tag = closureN_tag;
  c_731399.fn = (function_type)__lambda_176;
 c_731399.num_args = 1;
 c_731399.num_elt = 1;
@@ -2344,7 +2430,8 @@ static void __lambda_175(int argc, object self_73419, object k_73165) {
 if( !eq(boolean_f, ((closureN)self_73419)->elts[1]) ){ 
   
 closureN_type c_731387;
-c_731387.tag = closureN_tag;
+c_731387.hdr.mark = 4;
+ c_731387.tag = closureN_tag;
  c_731387.fn = (function_type)__lambda_174;
 c_731387.num_args = 1;
 c_731387.num_elt = 2;
@@ -2362,7 +2449,8 @@ static void __lambda_174(int argc, object self_73420, object r_73166) {
   Cyc_st_add("cyclone.scm:run-compiler");
 
 closureN_type c_731389;
-c_731389.tag = closureN_tag;
+c_731389.hdr.mark = 4;
+ c_731389.tag = closureN_tag;
  c_731389.fn = (function_type)__lambda_173;
 c_731389.num_args = 1;
 c_731389.num_elt = 2;
@@ -2382,7 +2470,8 @@ static void __lambda_172(int argc, closure _,object k_73172, object filename_736
   Cyc_st_add("cyclone.scm:read-file");
 
 closureN_type c_731358;
-c_731358.tag = closureN_tag;
+c_731358.hdr.mark = 4;
+ c_731358.tag = closureN_tag;
  c_731358.fn = (function_type)__lambda_170;
 c_731358.num_args = 1;
 c_731358.num_elt = 2;
@@ -2409,7 +2498,8 @@ static void __lambda_169(int argc, closure _,object k_73177, object input_91prog
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73594;
-c_73594.tag = closureN_tag;
+c_73594.hdr.mark = 4;
+ c_73594.tag = closureN_tag;
  c_73594.fn = (function_type)__lambda_168;
 c_73594.num_args = 1;
 c_73594.num_elt = 3;
@@ -2427,7 +2517,8 @@ static void __lambda_168(int argc, object self_73424, object input_91program_737
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73596;
-c_73596.tag = closureN_tag;
+c_73596.hdr.mark = 4;
+ c_73596.tag = closureN_tag;
  c_73596.fn = (function_type)__lambda_167;
 c_73596.num_args = 7;
 c_73596.num_elt = 4;
@@ -2444,7 +2535,8 @@ static void __lambda_167(int argc, object self_73425, object globals_7379, objec
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73598;
-c_73598.tag = closureN_tag;
+c_73598.hdr.mark = 4;
+ c_73598.tag = closureN_tag;
  c_73598.fn = (function_type)__lambda_0;
 c_73598.num_args = 1;
 c_73598.num_elt = 1;
@@ -2453,7 +2545,8 @@ c_73598.elts[0] = ((closureN)self_73425)->elts[1];
 
 
 closureN_type c_73601;
-c_73601.tag = closureN_tag;
+c_73601.hdr.mark = 4;
+ c_73601.tag = closureN_tag;
  c_73601.fn = (function_type)__lambda_166;
 c_73601.num_args = 1;
 c_73601.num_elt = 3;
@@ -2469,7 +2562,8 @@ static void __lambda_166(int argc, object self_73426, object k_73179, object ret
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73603;
-c_73603.tag = closureN_tag;
+c_73603.hdr.mark = 4;
+ c_73603.tag = closureN_tag;
  c_73603.fn = (function_type)__lambda_165;
 c_73603.num_args = 7;
 c_73603.num_elt = 5;
@@ -2487,7 +2581,8 @@ static void __lambda_165(int argc, object self_73427, object globals_7387, objec
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73605;
-c_73605.tag = closureN_tag;
+c_73605.hdr.mark = 4;
+ c_73605.tag = closureN_tag;
  c_73605.fn = (function_type)__lambda_164;
 c_73605.num_args = 1;
 c_73605.num_elt = 11;
@@ -2513,7 +2608,8 @@ static void __lambda_164(int argc, object self_73428, object globals_7387) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73607;
-c_73607.tag = closureN_tag;
+c_73607.hdr.mark = 4;
+ c_73607.tag = closureN_tag;
  c_73607.fn = (function_type)__lambda_163;
 c_73607.num_args = 1;
 c_73607.num_elt = 11;
@@ -2539,7 +2635,8 @@ static void __lambda_163(int argc, object self_73429, object module_91globals_73
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73609;
-c_73609.tag = closureN_tag;
+c_73609.hdr.mark = 4;
+ c_73609.tag = closureN_tag;
  c_73609.fn = (function_type)__lambda_162;
 c_73609.num_args = 1;
 c_73609.num_elt = 11;
@@ -2565,7 +2662,8 @@ static void __lambda_162(int argc, object self_73430, object program_127_7385) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73611;
-c_73611.tag = closureN_tag;
+c_73611.hdr.mark = 4;
+ c_73611.tag = closureN_tag;
  c_73611.fn = (function_type)__lambda_161;
 c_73611.num_args = 1;
 c_73611.num_elt = 11;
@@ -2591,7 +2689,8 @@ static void __lambda_161(int argc, object self_73431, object imports_7384) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73613;
-c_73613.tag = closureN_tag;
+c_73613.hdr.mark = 4;
+ c_73613.tag = closureN_tag;
  c_73613.fn = (function_type)__lambda_160;
 c_73613.num_args = 1;
 c_73613.num_elt = 11;
@@ -2617,7 +2716,8 @@ static void __lambda_160(int argc, object self_73432, object imported_91vars_738
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73615;
-c_73615.tag = closureN_tag;
+c_73615.hdr.mark = 4;
+ c_73615.tag = closureN_tag;
  c_73615.fn = (function_type)__lambda_159;
 c_73615.num_args = 1;
 c_73615.num_elt = 11;
@@ -2643,7 +2743,8 @@ static void __lambda_159(int argc, object self_73433, object lib_91name_7382) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73617;
-c_73617.tag = closureN_tag;
+c_73617.hdr.mark = 4;
+ c_73617.tag = closureN_tag;
  c_73617.fn = (function_type)__lambda_158;
 c_73617.num_args = 1;
 c_73617.num_elt = 11;
@@ -2669,7 +2770,8 @@ static void __lambda_158(int argc, object self_73434, object lib_91exports_7381)
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73619;
-c_73619.tag = closureN_tag;
+c_73619.hdr.mark = 4;
+ c_73619.tag = closureN_tag;
  c_73619.fn = (function_type)__lambda_157;
 c_73619.num_args = 1;
 c_73619.num_elt = 12;
@@ -2694,7 +2796,8 @@ static void __lambda_157(int argc, object self_73435, object r_73327) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73621;
-c_73621.tag = closureN_tag;
+c_73621.hdr.mark = 4;
+ c_73621.tag = closureN_tag;
  c_73621.fn = (function_type)__lambda_156;
 c_73621.num_args = 1;
 c_73621.num_elt = 12;
@@ -2719,7 +2822,8 @@ static void __lambda_156(int argc, object self_73436, object r_73180) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73623;
-c_73623.tag = closureN_tag;
+c_73623.hdr.mark = 4;
+ c_73623.tag = closureN_tag;
  c_73623.fn = (function_type)__lambda_155;
 c_73623.num_args = 1;
 c_73623.num_elt = 12;
@@ -2744,7 +2848,8 @@ static void __lambda_155(int argc, object self_73437, object r_73326) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73625;
-c_73625.tag = closureN_tag;
+c_73625.hdr.mark = 4;
+ c_73625.tag = closureN_tag;
  c_73625.fn = (function_type)__lambda_154;
 c_73625.num_args = 1;
 c_73625.num_elt = 12;
@@ -2769,7 +2874,8 @@ static void __lambda_154(int argc, object self_73438, object r_73181) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73627;
-c_73627.tag = closureN_tag;
+c_73627.hdr.mark = 4;
+ c_73627.tag = closureN_tag;
  c_73627.fn = (function_type)__lambda_153;
 c_73627.num_args = 1;
 c_73627.num_elt = 12;
@@ -2794,7 +2900,8 @@ static void __lambda_153(int argc, object self_73439, object r_73182) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73629;
-c_73629.tag = closureN_tag;
+c_73629.hdr.mark = 4;
+ c_73629.tag = closureN_tag;
  c_73629.fn = (function_type)__lambda_152;
 c_73629.num_args = 1;
 c_73629.num_elt = 12;
@@ -2819,7 +2926,8 @@ static void __lambda_152(int argc, object self_73440, object r_73325) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73631;
-c_73631.tag = closureN_tag;
+c_73631.hdr.mark = 4;
+ c_73631.tag = closureN_tag;
  c_73631.fn = (function_type)__lambda_151;
 c_73631.num_args = 1;
 c_73631.num_elt = 12;
@@ -2844,7 +2952,8 @@ static void __lambda_151(int argc, object self_73441, object r_73183) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73633;
-c_73633.tag = closureN_tag;
+c_73633.hdr.mark = 4;
+ c_73633.tag = closureN_tag;
  c_73633.fn = (function_type)__lambda_150;
 c_73633.num_args = 1;
 c_73633.num_elt = 12;
@@ -2869,7 +2978,8 @@ static void __lambda_150(int argc, object self_73442, object r_73324) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73635;
-c_73635.tag = closureN_tag;
+c_73635.hdr.mark = 4;
+ c_73635.tag = closureN_tag;
  c_73635.fn = (function_type)__lambda_149;
 c_73635.num_args = 1;
 c_73635.num_elt = 12;
@@ -2894,7 +3004,8 @@ static void __lambda_149(int argc, object self_73443, object r_73184) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73637;
-c_73637.tag = closureN_tag;
+c_73637.hdr.mark = 4;
+ c_73637.tag = closureN_tag;
  c_73637.fn = (function_type)__lambda_148;
 c_73637.num_args = 1;
 c_73637.num_elt = 12;
@@ -2919,7 +3030,8 @@ static void __lambda_148(int argc, object self_73444, object r_73323) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73639;
-c_73639.tag = closureN_tag;
+c_73639.hdr.mark = 4;
+ c_73639.tag = closureN_tag;
  c_73639.fn = (function_type)__lambda_147;
 c_73639.num_args = 1;
 c_73639.num_elt = 12;
@@ -2944,7 +3056,8 @@ static void __lambda_147(int argc, object self_73445, object r_73185) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73641;
-c_73641.tag = closureN_tag;
+c_73641.hdr.mark = 4;
+ c_73641.tag = closureN_tag;
  c_73641.fn = (function_type)__lambda_146;
 c_73641.num_args = 1;
 c_73641.num_elt = 12;
@@ -2969,7 +3082,8 @@ static void __lambda_146(int argc, object self_73446, object r_73322) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73643;
-c_73643.tag = closureN_tag;
+c_73643.hdr.mark = 4;
+ c_73643.tag = closureN_tag;
  c_73643.fn = (function_type)__lambda_145;
 c_73643.num_args = 1;
 c_73643.num_elt = 12;
@@ -2994,7 +3108,8 @@ static void __lambda_145(int argc, object self_73447, object r_73186) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73645;
-c_73645.tag = closureN_tag;
+c_73645.hdr.mark = 4;
+ c_73645.tag = closureN_tag;
  c_73645.fn = (function_type)__lambda_144;
 c_73645.num_args = 1;
 c_73645.num_elt = 12;
@@ -3019,7 +3134,8 @@ static void __lambda_144(int argc, object self_73448, object r_73187) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73647;
-c_73647.tag = closureN_tag;
+c_73647.hdr.mark = 4;
+ c_73647.tag = closureN_tag;
  c_73647.fn = (function_type)__lambda_143;
 c_73647.num_args = 1;
 c_73647.num_elt = 12;
@@ -3046,7 +3162,8 @@ static void __lambda_143(int argc, object self_73449, object r_73188) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73649;
-c_73649.tag = closureN_tag;
+c_73649.hdr.mark = 4;
+ c_73649.tag = closureN_tag;
  c_73649.fn = (function_type)__lambda_142;
 c_73649.num_args = 1;
 c_73649.num_elt = 12;
@@ -3071,7 +3188,8 @@ static void __lambda_142(int argc, object self_73450, object r_73189) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73651;
-c_73651.tag = closureN_tag;
+c_73651.hdr.mark = 4;
+ c_73651.tag = closureN_tag;
  c_73651.fn = (function_type)__lambda_37;
 c_73651.num_args = 0;
 c_73651.num_elt = 5;
@@ -3084,7 +3202,8 @@ c_73651.elts[4] = ((closureN)self_73450)->elts[9];
 
 
 closureN_type c_73824;
-c_73824.tag = closureN_tag;
+c_73824.hdr.mark = 4;
+ c_73824.tag = closureN_tag;
  c_73824.fn = (function_type)__lambda_141;
 c_73824.num_args = 1;
 c_73824.num_elt = 12;
@@ -3109,7 +3228,8 @@ static void __lambda_141(int argc, object self_73451, object r_73190) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73826;
-c_73826.tag = closureN_tag;
+c_73826.hdr.mark = 4;
+ c_73826.tag = closureN_tag;
  c_73826.fn = (function_type)__lambda_140;
 c_73826.num_args = 1;
 c_73826.num_elt = 12;
@@ -3136,7 +3256,8 @@ static void __lambda_140(int argc, object self_73452, object r_73191) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73828;
-c_73828.tag = closureN_tag;
+c_73828.hdr.mark = 4;
+ c_73828.tag = closureN_tag;
  c_73828.fn = (function_type)__lambda_139;
 c_73828.num_args = 1;
 c_73828.num_elt = 12;
@@ -3161,7 +3282,8 @@ static void __lambda_139(int argc, object self_73453, object r_73192) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73830;
-c_73830.tag = closureN_tag;
+c_73830.hdr.mark = 4;
+ c_73830.tag = closureN_tag;
  c_73830.fn = (function_type)__lambda_138;
 c_73830.num_args = 1;
 c_73830.num_elt = 12;
@@ -3186,7 +3308,8 @@ static void __lambda_138(int argc, object self_73454, object r_73287) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73832;
-c_73832.tag = closureN_tag;
+c_73832.hdr.mark = 4;
+ c_73832.tag = closureN_tag;
  c_73832.fn = (function_type)__lambda_137;
 c_73832.num_args = 1;
 c_73832.num_elt = 12;
@@ -3211,7 +3334,8 @@ static void __lambda_137(int argc, object self_73455, object r_73193) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73834;
-c_73834.tag = closureN_tag;
+c_73834.hdr.mark = 4;
+ c_73834.tag = closureN_tag;
  c_73834.fn = (function_type)__lambda_136;
 c_73834.num_args = 1;
 c_73834.num_elt = 12;
@@ -3238,7 +3362,8 @@ static void __lambda_136(int argc, object self_73456, object r_73194) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73836;
-c_73836.tag = closureN_tag;
+c_73836.hdr.mark = 4;
+ c_73836.tag = closureN_tag;
  c_73836.fn = (function_type)__lambda_135;
 c_73836.num_args = 1;
 c_73836.num_elt = 12;
@@ -3263,7 +3388,8 @@ static void __lambda_135(int argc, object self_73457, object r_73195) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73838;
-c_73838.tag = closureN_tag;
+c_73838.hdr.mark = 4;
+ c_73838.tag = closureN_tag;
  c_73838.fn = (function_type)__lambda_134;
 c_73838.num_args = 1;
 c_73838.num_elt = 11;
@@ -3287,7 +3413,8 @@ static void __lambda_134(int argc, object self_73458, object r_73283) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73840;
-c_73840.tag = closureN_tag;
+c_73840.hdr.mark = 4;
+ c_73840.tag = closureN_tag;
  c_73840.fn = (function_type)__lambda_133;
 c_73840.num_args = 1;
 c_73840.num_elt = 11;
@@ -3311,7 +3438,8 @@ static void __lambda_133(int argc, object self_73459, object meta_7395) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73842;
-c_73842.tag = closureN_tag;
+c_73842.hdr.mark = 4;
+ c_73842.tag = closureN_tag;
  c_73842.fn = (function_type)__lambda_132;
 c_73842.num_args = 1;
 c_73842.num_elt = 12;
@@ -3336,7 +3464,8 @@ static void __lambda_132(int argc, object self_73460, object r_73286) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73844;
-c_73844.tag = closureN_tag;
+c_73844.hdr.mark = 4;
+ c_73844.tag = closureN_tag;
  c_73844.fn = (function_type)__lambda_131;
 c_73844.num_args = 1;
 c_73844.num_elt = 12;
@@ -3361,7 +3490,8 @@ static void __lambda_131(int argc, object self_73461, object r_73284) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73846;
-c_73846.tag = closureN_tag;
+c_73846.hdr.mark = 4;
+ c_73846.tag = closureN_tag;
  c_73846.fn = (function_type)__lambda_130;
 c_73846.num_args = 1;
 c_73846.num_elt = 12;
@@ -3388,7 +3518,8 @@ static void __lambda_130(int argc, object self_73462, object r_73285) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73848;
-c_73848.tag = closureN_tag;
+c_73848.hdr.mark = 4;
+ c_73848.tag = closureN_tag;
  c_73848.fn = (function_type)__lambda_129;
 c_73848.num_args = 1;
 c_73848.num_elt = 11;
@@ -3412,7 +3543,8 @@ static void __lambda_129(int argc, object self_73463, object r_73196) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73850;
-c_73850.tag = closureN_tag;
+c_73850.hdr.mark = 4;
+ c_73850.tag = closureN_tag;
  c_73850.fn = (function_type)__lambda_125;
 c_73850.num_args = 1;
 c_73850.num_elt = 11;
@@ -3438,7 +3570,8 @@ static void __lambda_128(int argc, object self_73464, object k_73280, object v_7
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731269;
-c_731269.tag = closureN_tag;
+c_731269.hdr.mark = 4;
+ c_731269.tag = closureN_tag;
  c_731269.fn = (function_type)__lambda_127;
 c_731269.num_args = 1;
 c_731269.num_elt = 1;
@@ -3452,7 +3585,8 @@ static void __lambda_127(int argc, object self_73465, object r_73282) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731271;
-c_731271.tag = closureN_tag;
+c_731271.hdr.mark = 4;
+ c_731271.tag = closureN_tag;
  c_731271.fn = (function_type)__lambda_126;
 c_731271.num_args = 1;
 c_731271.num_elt = 1;
@@ -3471,7 +3605,8 @@ static void __lambda_125(int argc, object self_73467, object r_73278) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73852;
-c_73852.tag = closureN_tag;
+c_73852.hdr.mark = 4;
+ c_73852.tag = closureN_tag;
  c_73852.fn = (function_type)__lambda_124;
 c_73852.num_args = 1;
 c_73852.num_elt = 12;
@@ -3496,7 +3631,8 @@ static void __lambda_124(int argc, object self_73468, object r_73279) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73854;
-c_73854.tag = closureN_tag;
+c_73854.hdr.mark = 4;
+ c_73854.tag = closureN_tag;
  c_73854.fn = (function_type)__lambda_123;
 c_73854.num_args = 1;
 c_73854.num_elt = 11;
@@ -3520,7 +3656,8 @@ static void __lambda_123(int argc, object self_73469, object r_73276) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73856;
-c_73856.tag = closureN_tag;
+c_73856.hdr.mark = 4;
+ c_73856.tag = closureN_tag;
  c_73856.fn = (function_type)__lambda_122;
 c_73856.num_args = 1;
 c_73856.num_elt = 11;
@@ -3544,7 +3681,8 @@ static void __lambda_122(int argc, object self_73470, object macros_7394) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73858;
-c_73858.tag = closureN_tag;
+c_73858.hdr.mark = 4;
+ c_73858.tag = closureN_tag;
  c_73858.fn = (function_type)__lambda_121;
 c_73858.num_args = 1;
 c_73858.num_elt = 11;
@@ -3568,7 +3706,8 @@ static void __lambda_121(int argc, object self_73471, object r_73277) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73860;
-c_73860.tag = closureN_tag;
+c_73860.hdr.mark = 4;
+ c_73860.tag = closureN_tag;
  c_73860.fn = (function_type)__lambda_120;
 c_73860.num_args = 1;
 c_73860.num_elt = 11;
@@ -3592,7 +3731,8 @@ static void __lambda_120(int argc, object self_73472, object r_73197) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73862;
-c_73862.tag = closureN_tag;
+c_73862.hdr.mark = 4;
+ c_73862.tag = closureN_tag;
  c_73862.fn = (function_type)__lambda_119;
 c_73862.num_args = 1;
 c_73862.num_elt = 11;
@@ -3616,7 +3756,8 @@ static void __lambda_119(int argc, object self_73473, object r_73274) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73864;
-c_73864.tag = closureN_tag;
+c_73864.hdr.mark = 4;
+ c_73864.tag = closureN_tag;
  c_73864.fn = (function_type)__lambda_118;
 c_73864.num_args = 1;
 c_73864.num_elt = 12;
@@ -3641,7 +3782,8 @@ static void __lambda_118(int argc, object self_73474, object r_73275) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73866;
-c_73866.tag = closureN_tag;
+c_73866.hdr.mark = 4;
+ c_73866.tag = closureN_tag;
  c_73866.fn = (function_type)__lambda_117;
 c_73866.num_args = 1;
 c_73866.num_elt = 11;
@@ -3665,7 +3807,8 @@ static void __lambda_117(int argc, object self_73475, object r_73273) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73868;
-c_73868.tag = closureN_tag;
+c_73868.hdr.mark = 4;
+ c_73868.tag = closureN_tag;
  c_73868.fn = (function_type)__lambda_116;
 c_73868.num_args = 1;
 c_73868.num_elt = 11;
@@ -3689,7 +3832,8 @@ static void __lambda_116(int argc, object self_73476, object r_73198) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73870;
-c_73870.tag = closureN_tag;
+c_73870.hdr.mark = 4;
+ c_73870.tag = closureN_tag;
  c_73870.fn = (function_type)__lambda_115;
 c_73870.num_args = 1;
 c_73870.num_elt = 11;
@@ -3713,7 +3857,8 @@ static void __lambda_115(int argc, object self_73477, object r_73272) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73872;
-c_73872.tag = closureN_tag;
+c_73872.hdr.mark = 4;
+ c_73872.tag = closureN_tag;
  c_73872.fn = (function_type)__lambda_114;
 c_73872.num_args = 1;
 c_73872.num_elt = 11;
@@ -3737,7 +3882,8 @@ static void __lambda_114(int argc, object self_73478, object r_73271) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73874;
-c_73874.tag = closureN_tag;
+c_73874.hdr.mark = 4;
+ c_73874.tag = closureN_tag;
  c_73874.fn = (function_type)__lambda_113;
 c_73874.num_args = 1;
 c_73874.num_elt = 11;
@@ -3761,7 +3907,8 @@ static void __lambda_113(int argc, object self_73479, object r_73199) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73876;
-c_73876.tag = closureN_tag;
+c_73876.hdr.mark = 4;
+ c_73876.tag = closureN_tag;
  c_73876.fn = (function_type)__lambda_112;
 c_73876.num_args = 1;
 c_73876.num_elt = 11;
@@ -3787,7 +3934,8 @@ static void __lambda_112(int argc, object self_73480, object r_73200) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73878;
-c_73878.tag = closureN_tag;
+c_73878.hdr.mark = 4;
+ c_73878.tag = closureN_tag;
  c_73878.fn = (function_type)__lambda_111;
 c_73878.num_args = 1;
 c_73878.num_elt = 11;
@@ -3811,7 +3959,8 @@ static void __lambda_111(int argc, object self_73481, object r_73201) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73880;
-c_73880.tag = closureN_tag;
+c_73880.hdr.mark = 4;
+ c_73880.tag = closureN_tag;
  c_73880.fn = (function_type)__lambda_110;
 c_73880.num_args = 1;
 c_73880.num_elt = 11;
@@ -3835,7 +3984,8 @@ static void __lambda_110(int argc, object self_73482, object r_73270) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73882;
-c_73882.tag = closureN_tag;
+c_73882.hdr.mark = 4;
+ c_73882.tag = closureN_tag;
  c_73882.fn = (function_type)__lambda_109;
 c_73882.num_args = 1;
 c_73882.num_elt = 11;
@@ -3859,7 +4009,8 @@ static void __lambda_109(int argc, object self_73483, object r_73202) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73884;
-c_73884.tag = closureN_tag;
+c_73884.hdr.mark = 4;
+ c_73884.tag = closureN_tag;
  c_73884.fn = (function_type)__lambda_42;
 c_73884.num_args = 0;
 c_73884.num_elt = 2;
@@ -3869,7 +4020,8 @@ c_73884.elts[1] = ((closureN)self_73483)->elts[5];
 
 
 closureN_type c_73909;
-c_73909.tag = closureN_tag;
+c_73909.hdr.mark = 4;
+ c_73909.tag = closureN_tag;
  c_73909.fn = (function_type)__lambda_108;
 c_73909.num_args = 1;
 c_73909.num_elt = 11;
@@ -3893,7 +4045,8 @@ static void __lambda_108(int argc, object self_73484, object r_73203) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73911;
-c_73911.tag = closureN_tag;
+c_73911.hdr.mark = 4;
+ c_73911.tag = closureN_tag;
  c_73911.fn = (function_type)__lambda_107;
 c_73911.num_args = 1;
 c_73911.num_elt = 11;
@@ -3919,7 +4072,8 @@ static void __lambda_107(int argc, object self_73485, object r_73204) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73913;
-c_73913.tag = closureN_tag;
+c_73913.hdr.mark = 4;
+ c_73913.tag = closureN_tag;
  c_73913.fn = (function_type)__lambda_106;
 c_73913.num_args = 1;
 c_73913.num_elt = 11;
@@ -3943,7 +4097,8 @@ static void __lambda_106(int argc, object self_73486, object r_73205) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73915;
-c_73915.tag = closureN_tag;
+c_73915.hdr.mark = 4;
+ c_73915.tag = closureN_tag;
  c_73915.fn = (function_type)__lambda_105;
 c_73915.num_args = 1;
 c_73915.num_elt = 11;
@@ -3967,7 +4122,8 @@ static void __lambda_105(int argc, object self_73487, object r_73264) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73917;
-c_73917.tag = closureN_tag;
+c_73917.hdr.mark = 4;
+ c_73917.tag = closureN_tag;
  c_73917.fn = (function_type)__lambda_104;
 c_73917.num_args = 1;
 c_73917.num_elt = 11;
@@ -3991,7 +4147,8 @@ static void __lambda_104(int argc, object self_73488, object r_73206) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73919;
-c_73919.tag = closureN_tag;
+c_73919.hdr.mark = 4;
+ c_73919.tag = closureN_tag;
  c_73919.fn = (function_type)__lambda_103;
 c_73919.num_args = 1;
 c_73919.num_elt = 11;
@@ -4015,7 +4172,8 @@ static void __lambda_103(int argc, object self_73489, object r_73263) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73921;
-c_73921.tag = closureN_tag;
+c_73921.hdr.mark = 4;
+ c_73921.tag = closureN_tag;
  c_73921.fn = (function_type)__lambda_102;
 c_73921.num_args = 1;
 c_73921.num_elt = 11;
@@ -4039,7 +4197,8 @@ static void __lambda_102(int argc, object self_73490, object r_73207) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73923;
-c_73923.tag = closureN_tag;
+c_73923.hdr.mark = 4;
+ c_73923.tag = closureN_tag;
  c_73923.fn = (function_type)__lambda_100;
 c_73923.num_args = 1;
 c_73923.num_elt = 11;
@@ -4058,7 +4217,8 @@ c_73923.elts[10] = ((closureN)self_73490)->elts[10];
 
 
 closureN_type c_731214;
-c_731214.tag = closureN_tag;
+c_731214.hdr.mark = 4;
+ c_731214.tag = closureN_tag;
  c_731214.fn = (function_type)__lambda_101;
 c_731214.num_args = 1;
 c_731214.num_elt = 2;
@@ -4078,7 +4238,8 @@ static void __lambda_100(int argc, object self_73492, object r_73261) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73925;
-c_73925.tag = closureN_tag;
+c_73925.hdr.mark = 4;
+ c_73925.tag = closureN_tag;
  c_73925.fn = (function_type)__lambda_99;
 c_73925.num_args = 1;
 c_73925.num_elt = 11;
@@ -4102,7 +4263,8 @@ static void __lambda_99(int argc, object self_73493, object r_73260) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73927;
-c_73927.tag = closureN_tag;
+c_73927.hdr.mark = 4;
+ c_73927.tag = closureN_tag;
  c_73927.fn = (function_type)__lambda_98;
 c_73927.num_args = 1;
 c_73927.num_elt = 11;
@@ -4126,7 +4288,8 @@ static void __lambda_98(int argc, object self_73494, object r_73208) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73929;
-c_73929.tag = closureN_tag;
+c_73929.hdr.mark = 4;
+ c_73929.tag = closureN_tag;
  c_73929.fn = (function_type)__lambda_97;
 c_73929.num_args = 1;
 c_73929.num_elt = 11;
@@ -4152,7 +4315,8 @@ static void __lambda_97(int argc, object self_73495, object r_73209) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73931;
-c_73931.tag = closureN_tag;
+c_73931.hdr.mark = 4;
+ c_73931.tag = closureN_tag;
  c_73931.fn = (function_type)__lambda_96;
 c_73931.num_args = 1;
 c_73931.num_elt = 11;
@@ -4176,7 +4340,8 @@ static void __lambda_96(int argc, object self_73496, object r_73210) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73933;
-c_73933.tag = closureN_tag;
+c_73933.hdr.mark = 4;
+ c_73933.tag = closureN_tag;
  c_73933.fn = (function_type)__lambda_94;
 c_73933.num_args = 1;
 c_73933.num_elt = 11;
@@ -4207,7 +4372,8 @@ static void __lambda_94(int argc, object self_73498, object r_73258) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73935;
-c_73935.tag = closureN_tag;
+c_73935.hdr.mark = 4;
+ c_73935.tag = closureN_tag;
  c_73935.fn = (function_type)__lambda_93;
 c_73935.num_args = 1;
 c_73935.num_elt = 11;
@@ -4231,7 +4397,8 @@ static void __lambda_93(int argc, object self_73499, object r_73243) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73937;
-c_73937.tag = closureN_tag;
+c_73937.hdr.mark = 4;
+ c_73937.tag = closureN_tag;
  c_73937.fn = (function_type)__lambda_92;
 c_73937.num_args = 1;
 c_73937.num_elt = 11;
@@ -4255,7 +4422,8 @@ static void __lambda_92(int argc, object self_73500, object cps_7391) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73939;
-c_73939.tag = closureN_tag;
+c_73939.hdr.mark = 4;
+ c_73939.tag = closureN_tag;
  c_73939.fn = (function_type)__lambda_58;
 c_73939.num_args = 0;
 c_73939.num_elt = 5;
@@ -4268,7 +4436,8 @@ c_73939.elts[4] = ((closureN)self_73500)->elts[7];
 
 
 closureN_type c_731050;
-c_731050.tag = closureN_tag;
+c_731050.hdr.mark = 4;
+ c_731050.tag = closureN_tag;
  c_731050.fn = (function_type)__lambda_91;
 c_731050.num_args = 1;
 c_731050.num_elt = 11;
@@ -4292,7 +4461,8 @@ static void __lambda_91(int argc, object self_73501, object r_73211) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731052;
-c_731052.tag = closureN_tag;
+c_731052.hdr.mark = 4;
+ c_731052.tag = closureN_tag;
  c_731052.fn = (function_type)__lambda_90;
 c_731052.num_args = 1;
 c_731052.num_elt = 11;
@@ -4318,7 +4488,8 @@ static void __lambda_90(int argc, object self_73502, object r_73212) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731054;
-c_731054.tag = closureN_tag;
+c_731054.hdr.mark = 4;
+ c_731054.tag = closureN_tag;
  c_731054.fn = (function_type)__lambda_89;
 c_731054.num_args = 1;
 c_731054.num_elt = 11;
@@ -4342,7 +4513,8 @@ static void __lambda_89(int argc, object self_73503, object r_73213) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731056;
-c_731056.tag = closureN_tag;
+c_731056.hdr.mark = 4;
+ c_731056.tag = closureN_tag;
  c_731056.fn = (function_type)__lambda_85;
 c_731056.num_args = 1;
 c_731056.num_elt = 11;
@@ -4361,7 +4533,8 @@ c_731056.elts[10] = ((closureN)self_73503)->elts[10];
 
 
 closureN_type c_731183;
-c_731183.tag = closureN_tag;
+c_731183.hdr.mark = 4;
+ c_731183.tag = closureN_tag;
  c_731183.fn = (function_type)__lambda_88;
 c_731183.num_args = 1;
 c_731183.num_elt = 1;
@@ -4375,7 +4548,8 @@ static void __lambda_88(int argc, object self_73504, object k_73240, object expr
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731185;
-c_731185.tag = closureN_tag;
+c_731185.hdr.mark = 4;
+ c_731185.tag = closureN_tag;
  c_731185.fn = (function_type)__lambda_87;
 c_731185.num_args = 1;
 c_731185.num_elt = 3;
@@ -4391,7 +4565,8 @@ static void __lambda_87(int argc, object self_73505, object r_73241) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731187;
-c_731187.tag = closureN_tag;
+c_731187.hdr.mark = 4;
+ c_731187.tag = closureN_tag;
  c_731187.fn = (function_type)__lambda_86;
 c_731187.num_args = 1;
 c_731187.num_elt = 3;
@@ -4412,7 +4587,8 @@ static void __lambda_85(int argc, object self_73507, object r_73239) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731058;
-c_731058.tag = closureN_tag;
+c_731058.hdr.mark = 4;
+ c_731058.tag = closureN_tag;
  c_731058.fn = (function_type)__lambda_84;
 c_731058.num_args = 1;
 c_731058.num_elt = 11;
@@ -4436,7 +4612,8 @@ static void __lambda_84(int argc, object self_73508, object r_73238) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731060;
-c_731060.tag = closureN_tag;
+c_731060.hdr.mark = 4;
+ c_731060.tag = closureN_tag;
  c_731060.fn = (function_type)__lambda_83;
 c_731060.num_args = 1;
 c_731060.num_elt = 11;
@@ -4460,7 +4637,8 @@ static void __lambda_83(int argc, object self_73509, object r_73214) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731062;
-c_731062.tag = closureN_tag;
+c_731062.hdr.mark = 4;
+ c_731062.tag = closureN_tag;
  c_731062.fn = (function_type)__lambda_82;
 c_731062.num_args = 1;
 c_731062.num_elt = 11;
@@ -4486,7 +4664,8 @@ static void __lambda_82(int argc, object self_73510, object r_73215) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731064;
-c_731064.tag = closureN_tag;
+c_731064.hdr.mark = 4;
+ c_731064.tag = closureN_tag;
  c_731064.fn = (function_type)__lambda_81;
 c_731064.num_args = 1;
 c_731064.num_elt = 11;
@@ -4510,7 +4689,8 @@ static void __lambda_81(int argc, object self_73511, object r_73216) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731066;
-c_731066.tag = closureN_tag;
+c_731066.hdr.mark = 4;
+ c_731066.tag = closureN_tag;
  c_731066.fn = (function_type)__lambda_71;
 c_731066.num_args = 1;
 c_731066.num_elt = 10;
@@ -4528,7 +4708,8 @@ c_731066.elts[9] = ((closureN)self_73511)->elts[10];
 
 
 closureN_type c_731131;
-c_731131.tag = closureN_tag;
+c_731131.hdr.mark = 4;
+ c_731131.tag = closureN_tag;
  c_731131.fn = (function_type)__lambda_80;
 c_731131.num_args = 1;
 c_731131.num_elt = 1;
@@ -4542,7 +4723,8 @@ static void __lambda_80(int argc, object self_73512, object k_73229, object expr
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731133;
-c_731133.tag = closureN_tag;
+c_731133.hdr.mark = 4;
+ c_731133.tag = closureN_tag;
  c_731133.fn = (function_type)__lambda_79;
 c_731133.num_args = 1;
 c_731133.num_elt = 3;
@@ -4559,7 +4741,8 @@ static void __lambda_79(int argc, object self_73513, object r_73230) {
 if( !eq(boolean_f, r_73230) ){ 
   
 closureN_type c_731135;
-c_731135.tag = closureN_tag;
+c_731135.hdr.mark = 4;
+ c_731135.tag = closureN_tag;
  c_731135.fn = (function_type)__lambda_77;
 c_731135.num_args = 1;
 c_731135.num_elt = 3;
@@ -4572,7 +4755,8 @@ return_closcall1((closure)&c_731135,  quote_define);
 } else { 
   
 closureN_type c_731164;
-c_731164.tag = closureN_tag;
+c_731164.hdr.mark = 4;
+ c_731164.tag = closureN_tag;
  c_731164.fn = (function_type)__lambda_78;
 c_731164.num_args = 1;
 c_731164.num_elt = 1;
@@ -4592,7 +4776,8 @@ static void __lambda_77(int argc, object self_73515, object r_73231) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731137;
-c_731137.tag = closureN_tag;
+c_731137.hdr.mark = 4;
+ c_731137.tag = closureN_tag;
  c_731137.fn = (function_type)__lambda_76;
 c_731137.num_args = 1;
 c_731137.num_elt = 4;
@@ -4609,7 +4794,8 @@ static void __lambda_76(int argc, object self_73516, object r_73233) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731139;
-c_731139.tag = closureN_tag;
+c_731139.hdr.mark = 4;
+ c_731139.tag = closureN_tag;
  c_731139.fn = (function_type)__lambda_75;
 c_731139.num_args = 1;
 c_731139.num_elt = 4;
@@ -4626,7 +4812,8 @@ static void __lambda_75(int argc, object self_73517, object r_73236) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731141;
-c_731141.tag = closureN_tag;
+c_731141.hdr.mark = 4;
+ c_731141.tag = closureN_tag;
  c_731141.fn = (function_type)__lambda_74;
 c_731141.num_args = 1;
 c_731141.num_elt = 3;
@@ -4642,7 +4829,8 @@ static void __lambda_74(int argc, object self_73518, object r_73235) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731143;
-c_731143.tag = closureN_tag;
+c_731143.hdr.mark = 4;
+ c_731143.tag = closureN_tag;
  c_731143.fn = (function_type)__lambda_73;
 c_731143.num_args = 1;
 c_731143.num_elt = 3;
@@ -4658,7 +4846,8 @@ static void __lambda_73(int argc, object self_73519, object r_73234) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731145;
-c_731145.tag = closureN_tag;
+c_731145.hdr.mark = 4;
+ c_731145.tag = closureN_tag;
  c_731145.fn = (function_type)__lambda_72;
 c_731145.num_args = 1;
 c_731145.num_elt = 2;
@@ -4682,7 +4871,8 @@ static void __lambda_71(int argc, object self_73521, object r_73228) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731068;
-c_731068.tag = closureN_tag;
+c_731068.hdr.mark = 4;
+ c_731068.tag = closureN_tag;
  c_731068.fn = (function_type)__lambda_70;
 c_731068.num_args = 1;
 c_731068.num_elt = 10;
@@ -4705,7 +4895,8 @@ static void __lambda_70(int argc, object self_73522, object r_73227) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731070;
-c_731070.tag = closureN_tag;
+c_731070.hdr.mark = 4;
+ c_731070.tag = closureN_tag;
  c_731070.fn = (function_type)__lambda_69;
 c_731070.num_args = 1;
 c_731070.num_elt = 10;
@@ -4728,7 +4919,8 @@ static void __lambda_69(int argc, object self_73523, object r_73217) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731072;
-c_731072.tag = closureN_tag;
+c_731072.hdr.mark = 4;
+ c_731072.tag = closureN_tag;
  c_731072.fn = (function_type)__lambda_68;
 c_731072.num_args = 1;
 c_731072.num_elt = 10;
@@ -4753,7 +4945,8 @@ static void __lambda_68(int argc, object self_73524, object r_73218) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731074;
-c_731074.tag = closureN_tag;
+c_731074.hdr.mark = 4;
+ c_731074.tag = closureN_tag;
  c_731074.fn = (function_type)__lambda_67;
 c_731074.num_args = 1;
 c_731074.num_elt = 10;
@@ -4775,7 +4968,8 @@ return_closcall2(  __glo_trace_117info,  &c_731074, cell_get(((closureN)self_735
 static void __lambda_67(int argc, object self_73525, object r_73219) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 closureN_type c_731090;
-c_731090.tag = closureN_tag;
+c_731090.hdr.mark = 4;
+ c_731090.tag = closureN_tag;
  c_731090.fn = (function_type)__lambda_66;
 c_731090.num_args = 1;
 c_731090.num_elt = 10;
@@ -4798,7 +4992,8 @@ static void __lambda_66(int argc, object self_73526, object r_73220) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731092;
-c_731092.tag = closureN_tag;
+c_731092.hdr.mark = 4;
+ c_731092.tag = closureN_tag;
  c_731092.fn = (function_type)__lambda_65;
 c_731092.num_args = 1;
 c_731092.num_elt = 10;
@@ -4823,7 +5018,8 @@ static void __lambda_65(int argc, object self_73527, object r_73221) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731094;
-c_731094.tag = closureN_tag;
+c_731094.hdr.mark = 4;
+ c_731094.tag = closureN_tag;
  c_731094.fn = (function_type)__lambda_64;
 c_731094.num_args = 1;
 c_731094.num_elt = 2;
@@ -4838,7 +5034,8 @@ static void __lambda_64(int argc, object self_73528, object r_73222) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731096;
-c_731096.tag = closureN_tag;
+c_731096.hdr.mark = 4;
+ c_731096.tag = closureN_tag;
  c_731096.fn = (function_type)__lambda_63;
 c_731096.num_args = 1;
 c_731096.num_elt = 2;
@@ -4858,7 +5055,8 @@ static void __lambda_62(int argc, closure _,object k_73224) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731077;
-c_731077.tag = closureN_tag;
+c_731077.hdr.mark = 4;
+ c_731077.tag = closureN_tag;
  c_731077.fn = (function_type)__lambda_61;
 c_731077.num_args = 1;
 c_731077.num_elt = 1;
@@ -4873,7 +5071,8 @@ static void __lambda_61(int argc, object self_73530, object r_73225) {
 if( !eq(boolean_f, r_73225) ){ 
   
 closureN_type c_731079;
-c_731079.tag = closureN_tag;
+c_731079.hdr.mark = 4;
+ c_731079.tag = closureN_tag;
  c_731079.fn = (function_type)__lambda_60;
 c_731079.num_args = 0;
 c_731079.num_elt = 1;
@@ -4890,7 +5089,8 @@ static void __lambda_60(int argc, object self_73531) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731081;
-c_731081.tag = closureN_tag;
+c_731081.hdr.mark = 4;
+ c_731081.tag = closureN_tag;
  c_731081.fn = (function_type)__lambda_59;
 c_731081.num_args = 1;
 c_731081.num_elt = 1;
@@ -4913,7 +5113,8 @@ static void __lambda_58(int argc, object self_73533, object k_73244) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73941;
-c_73941.tag = closureN_tag;
+c_73941.hdr.mark = 4;
+ c_73941.tag = closureN_tag;
  c_73941.fn = (function_type)__lambda_44;
 c_73941.num_args = 0;
 c_73941.num_elt = 1;
@@ -4922,7 +5123,8 @@ c_73941.elts[0] = ((closureN)self_73533)->elts[3];
 
 
 closureN_type c_73954;
-c_73954.tag = closureN_tag;
+c_73954.hdr.mark = 4;
+ c_73954.tag = closureN_tag;
  c_73954.fn = (function_type)__lambda_57;
 c_73954.num_args = 1;
 c_73954.num_elt = 5;
@@ -4941,7 +5143,8 @@ static void __lambda_57(int argc, object self_73534, object r_73245) {
 if( !eq(boolean_f, r_73245) ){ 
   
 closureN_type c_73956;
-c_73956.tag = closureN_tag;
+c_73956.hdr.mark = 4;
+ c_73956.tag = closureN_tag;
  c_73956.fn = (function_type)__lambda_55;
 c_73956.num_args = 0;
 c_73956.num_elt = 5;
@@ -4956,7 +5159,8 @@ return_closcall0((closure)&c_73956);
 } else { 
   
 closureN_type c_731043;
-c_731043.tag = closureN_tag;
+c_731043.hdr.mark = 4;
+ c_731043.tag = closureN_tag;
  c_731043.fn = (function_type)__lambda_56;
 c_731043.num_args = 0;
 c_731043.num_elt = 3;
@@ -4978,7 +5182,8 @@ static void __lambda_55(int argc, object self_73536) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73958;
-c_73958.tag = closureN_tag;
+c_73958.hdr.mark = 4;
+ c_73958.tag = closureN_tag;
  c_73958.fn = (function_type)__lambda_54;
 c_73958.num_args = 1;
 c_73958.num_elt = 5;
@@ -5000,7 +5205,8 @@ static void __lambda_54(int argc, object self_73537, object r_73255) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73960;
-c_73960.tag = closureN_tag;
+c_73960.hdr.mark = 4;
+ c_73960.tag = closureN_tag;
  c_73960.fn = (function_type)__lambda_53;
 c_73960.num_args = 1;
 c_73960.num_elt = 5;
@@ -5018,7 +5224,8 @@ static void __lambda_53(int argc, object self_73538, object r_73254) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73962;
-c_73962.tag = closureN_tag;
+c_73962.hdr.mark = 4;
+ c_73962.tag = closureN_tag;
  c_73962.fn = (function_type)__lambda_52;
 c_73962.num_args = 1;
 c_73962.num_elt = 4;
@@ -5035,7 +5242,8 @@ static void __lambda_52(int argc, object self_73539, object r_73246) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73964;
-c_73964.tag = closureN_tag;
+c_73964.hdr.mark = 4;
+ c_73964.tag = closureN_tag;
  c_73964.fn = (function_type)__lambda_51;
 c_73964.num_args = 1;
 c_73964.num_elt = 4;
@@ -5056,7 +5264,8 @@ static void __lambda_51(int argc, object self_73540, object r_73253) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73966;
-c_73966.tag = closureN_tag;
+c_73966.hdr.mark = 4;
+ c_73966.tag = closureN_tag;
  c_73966.fn = (function_type)__lambda_50;
 c_73966.num_args = 1;
 c_73966.num_elt = 4;
@@ -5073,7 +5282,8 @@ static void __lambda_50(int argc, object self_73541, object r_73252) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73968;
-c_73968.tag = closureN_tag;
+c_73968.hdr.mark = 4;
+ c_73968.tag = closureN_tag;
  c_73968.fn = (function_type)__lambda_49;
 c_73968.num_args = 1;
 c_73968.num_elt = 3;
@@ -5089,7 +5299,8 @@ static void __lambda_49(int argc, object self_73542, object r_73247) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73970;
-c_73970.tag = closureN_tag;
+c_73970.hdr.mark = 4;
+ c_73970.tag = closureN_tag;
  c_73970.fn = (function_type)__lambda_48;
 c_73970.num_args = 1;
 c_73970.num_elt = 3;
@@ -5141,7 +5352,8 @@ static void __lambda_48(int argc, object self_73543, object r_73249) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73972;
-c_73972.tag = closureN_tag;
+c_73972.hdr.mark = 4;
+ c_73972.tag = closureN_tag;
  c_73972.fn = (function_type)__lambda_47;
 c_73972.num_args = 1;
 c_73972.num_elt = 4;
@@ -5194,7 +5406,8 @@ static void __lambda_47(int argc, object self_73544, object r_73251) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73974;
-c_73974.tag = closureN_tag;
+c_73974.hdr.mark = 4;
+ c_73974.tag = closureN_tag;
  c_73974.fn = (function_type)__lambda_46;
 c_73974.num_args = 1;
 c_73974.num_elt = 3;
@@ -5212,7 +5425,8 @@ static void __lambda_46(int argc, object self_73545, object r_73250) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73976;
-c_73976.tag = closureN_tag;
+c_73976.hdr.mark = 4;
+ c_73976.tag = closureN_tag;
  c_73976.fn = (function_type)__lambda_45;
 c_73976.num_args = 1;
 c_73976.num_elt = 2;
@@ -5235,7 +5449,8 @@ static void __lambda_44(int argc, object self_73547, object k_73256) {
 if( !eq(boolean_f, __glo_library_127) ){ 
   
 closureN_type c_73943;
-c_73943.tag = closureN_tag;
+c_73943.hdr.mark = 4;
+ c_73943.tag = closureN_tag;
  c_73943.fn = (function_type)__lambda_43;
 c_73943.num_args = 1;
 c_73943.num_elt = 2;
@@ -5262,7 +5477,8 @@ static void __lambda_42(int argc, object self_73549, object k_73265) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73886;
-c_73886.tag = closureN_tag;
+c_73886.hdr.mark = 4;
+ c_73886.tag = closureN_tag;
  c_73886.fn = (function_type)__lambda_41;
 c_73886.num_args = 1;
 c_73886.num_elt = 3;
@@ -5278,7 +5494,8 @@ static void __lambda_41(int argc, object self_73550, object r_73269) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73888;
-c_73888.tag = closureN_tag;
+c_73888.hdr.mark = 4;
+ c_73888.tag = closureN_tag;
  c_73888.fn = (function_type)__lambda_40;
 c_73888.num_args = 1;
 c_73888.num_elt = 3;
@@ -5294,7 +5511,8 @@ static void __lambda_40(int argc, object self_73551, object r_73268) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73890;
-c_73890.tag = closureN_tag;
+c_73890.hdr.mark = 4;
+ c_73890.tag = closureN_tag;
  c_73890.fn = (function_type)__lambda_39;
 c_73890.num_args = 1;
 c_73890.num_elt = 3;
@@ -5311,7 +5529,8 @@ static void __lambda_39(int argc, object self_73552, object r_73266) {
 if( !eq(boolean_f, r_73266) ){ 
   
 closureN_type c_73892;
-c_73892.tag = closureN_tag;
+c_73892.hdr.mark = 4;
+ c_73892.tag = closureN_tag;
  c_73892.fn = (function_type)__lambda_38;
 c_73892.num_args = 1;
 c_73892.num_elt = 2;
@@ -5334,7 +5553,8 @@ static void __lambda_37(int argc, object self_73554, object k_73288) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73653;
-c_73653.tag = closureN_tag;
+c_73653.hdr.mark = 4;
+ c_73653.tag = closureN_tag;
  c_73653.fn = (function_type)__lambda_36;
 c_73653.num_args = 1;
 c_73653.num_elt = 6;
@@ -5353,7 +5573,8 @@ static void __lambda_36(int argc, object self_73555, object r_73321) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73655;
-c_73655.tag = closureN_tag;
+c_73655.hdr.mark = 4;
+ c_73655.tag = closureN_tag;
  c_73655.fn = (function_type)__lambda_35;
 c_73655.num_args = 1;
 c_73655.num_elt = 6;
@@ -5373,7 +5594,8 @@ static void __lambda_35(int argc, object self_73556, object r_73289) {
 if( !eq(boolean_f, r_73289) ){ 
   
 closureN_type c_73657;
-c_73657.tag = closureN_tag;
+c_73657.hdr.mark = 4;
+ c_73657.tag = closureN_tag;
  c_73657.fn = (function_type)__lambda_27;
 c_73657.num_args = 0;
 c_73657.num_elt = 6;
@@ -5389,7 +5611,8 @@ return_closcall0((closure)&c_73657);
 } else { 
   
 closureN_type c_73780;
-c_73780.tag = closureN_tag;
+c_73780.hdr.mark = 4;
+ c_73780.tag = closureN_tag;
  c_73780.fn = (function_type)__lambda_34;
 c_73780.num_args = 1;
 c_73780.num_elt = 3;
@@ -5406,7 +5629,8 @@ static void __lambda_34(int argc, object self_73557, object r_73319) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73782;
-c_73782.tag = closureN_tag;
+c_73782.hdr.mark = 4;
+ c_73782.tag = closureN_tag;
  c_73782.fn = (function_type)__lambda_33;
 c_73782.num_args = 1;
 c_73782.num_elt = 4;
@@ -5423,7 +5647,8 @@ static void __lambda_33(int argc, object self_73558, object r_73320) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73784;
-c_73784.tag = closureN_tag;
+c_73784.hdr.mark = 4;
+ c_73784.tag = closureN_tag;
  c_73784.fn = (function_type)__lambda_32;
 c_73784.num_args = 1;
 c_73784.num_elt = 3;
@@ -5440,7 +5665,8 @@ static void __lambda_32(int argc, object self_73559, object r_73315) {
 if( !eq(boolean_f, r_73315) ){ 
   
 closureN_type c_73786;
-c_73786.tag = closureN_tag;
+c_73786.hdr.mark = 4;
+ c_73786.tag = closureN_tag;
  c_73786.fn = (function_type)__lambda_31;
 c_73786.num_args = 0;
 c_73786.num_elt = 3;
@@ -5459,7 +5685,8 @@ static void __lambda_31(int argc, object self_73560) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73788;
-c_73788.tag = closureN_tag;
+c_73788.hdr.mark = 4;
+ c_73788.tag = closureN_tag;
  c_73788.fn = (function_type)__lambda_30;
 c_73788.num_args = 1;
 c_73788.num_elt = 3;
@@ -5475,7 +5702,8 @@ static void __lambda_30(int argc, object self_73561, object r_73318) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73790;
-c_73790.tag = closureN_tag;
+c_73790.hdr.mark = 4;
+ c_73790.tag = closureN_tag;
  c_73790.fn = (function_type)__lambda_29;
 c_73790.num_args = 1;
 c_73790.num_elt = 2;
@@ -5490,7 +5718,8 @@ static void __lambda_29(int argc, object self_73562, object r_73316) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73792;
-c_73792.tag = closureN_tag;
+c_73792.hdr.mark = 4;
+ c_73792.tag = closureN_tag;
  c_73792.fn = (function_type)__lambda_28;
 c_73792.num_args = 1;
 c_73792.num_elt = 2;
@@ -5510,7 +5739,8 @@ static void __lambda_27(int argc, object self_73564) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73659;
-c_73659.tag = closureN_tag;
+c_73659.hdr.mark = 4;
+ c_73659.tag = closureN_tag;
  c_73659.fn = (function_type)__lambda_26;
 c_73659.num_args = 1;
 c_73659.num_elt = 6;
@@ -5529,7 +5759,8 @@ static void __lambda_26(int argc, object self_73565, object r_73314) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73661;
-c_73661.tag = closureN_tag;
+c_73661.hdr.mark = 4;
+ c_73661.tag = closureN_tag;
  c_73661.fn = (function_type)__lambda_25;
 c_73661.num_args = 1;
 c_73661.num_elt = 6;
@@ -5548,7 +5779,8 @@ static void __lambda_25(int argc, object self_73566, object r_73290) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73663;
-c_73663.tag = closureN_tag;
+c_73663.hdr.mark = 4;
+ c_73663.tag = closureN_tag;
  c_73663.fn = (function_type)__lambda_24;
 c_73663.num_args = 1;
 c_73663.num_elt = 6;
@@ -5567,7 +5799,8 @@ static void __lambda_24(int argc, object self_73567, object includes_7396) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73665;
-c_73665.tag = closureN_tag;
+c_73665.hdr.mark = 4;
+ c_73665.tag = closureN_tag;
  c_73665.fn = (function_type)__lambda_23;
 c_73665.num_args = 1;
 c_73665.num_elt = 6;
@@ -5586,7 +5819,8 @@ static void __lambda_23(int argc, object self_73568, object r_73291) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73667;
-c_73667.tag = closureN_tag;
+c_73667.hdr.mark = 4;
+ c_73667.tag = closureN_tag;
  c_73667.fn = (function_type)__lambda_22;
 c_73667.num_args = 1;
 c_73667.num_elt = 6;
@@ -5605,7 +5839,8 @@ static void __lambda_22(int argc, object self_73569, object r_73313) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73669;
-c_73669.tag = closureN_tag;
+c_73669.hdr.mark = 4;
+ c_73669.tag = closureN_tag;
  c_73669.fn = (function_type)__lambda_21;
 c_73669.num_args = 1;
 c_73669.num_elt = 6;
@@ -5624,7 +5859,8 @@ static void __lambda_21(int argc, object self_73570, object r_73312) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73671;
-c_73671.tag = closureN_tag;
+c_73671.hdr.mark = 4;
+ c_73671.tag = closureN_tag;
  c_73671.fn = (function_type)__lambda_20;
 c_73671.num_args = 1;
 c_73671.num_elt = 6;
@@ -5643,7 +5879,8 @@ static void __lambda_20(int argc, object self_73571, object r_73292) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73673;
-c_73673.tag = closureN_tag;
+c_73673.hdr.mark = 4;
+ c_73673.tag = closureN_tag;
  c_73673.fn = (function_type)__lambda_19;
 c_73673.num_args = 1;
 c_73673.num_elt = 6;
@@ -5662,7 +5899,8 @@ static void __lambda_19(int argc, object self_73572, object r_73309) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73675;
-c_73675.tag = closureN_tag;
+c_73675.hdr.mark = 4;
+ c_73675.tag = closureN_tag;
  c_73675.fn = (function_type)__lambda_18;
 c_73675.num_args = 1;
 c_73675.num_elt = 7;
@@ -5682,7 +5920,8 @@ static void __lambda_18(int argc, object self_73573, object r_73311) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73677;
-c_73677.tag = closureN_tag;
+c_73677.hdr.mark = 4;
+ c_73677.tag = closureN_tag;
  c_73677.fn = (function_type)__lambda_17;
 c_73677.num_args = 1;
 c_73677.num_elt = 7;
@@ -5702,7 +5941,8 @@ static void __lambda_17(int argc, object self_73574, object r_73310) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73679;
-c_73679.tag = closureN_tag;
+c_73679.hdr.mark = 4;
+ c_73679.tag = closureN_tag;
  c_73679.fn = (function_type)__lambda_16;
 c_73679.num_args = 1;
 c_73679.num_elt = 6;
@@ -5723,7 +5963,8 @@ static void __lambda_16(int argc, object self_73575, object r_73308) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73681;
-c_73681.tag = closureN_tag;
+c_73681.hdr.mark = 4;
+ c_73681.tag = closureN_tag;
  c_73681.fn = (function_type)__lambda_15;
 c_73681.num_args = 1;
 c_73681.num_elt = 5;
@@ -5741,7 +5982,8 @@ static void __lambda_15(int argc, object self_73576, object r_73293) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73683;
-c_73683.tag = closureN_tag;
+c_73683.hdr.mark = 4;
+ c_73683.tag = closureN_tag;
  c_73683.fn = (function_type)__lambda_14;
 c_73683.num_args = 1;
 c_73683.num_elt = 5;
@@ -5759,7 +6001,8 @@ static void __lambda_14(int argc, object self_73577, object r_73307) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73685;
-c_73685.tag = closureN_tag;
+c_73685.hdr.mark = 4;
+ c_73685.tag = closureN_tag;
  c_73685.fn = (function_type)__lambda_13;
 c_73685.num_args = 1;
 c_73685.num_elt = 5;
@@ -5777,7 +6020,8 @@ static void __lambda_13(int argc, object self_73578, object r_73306) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73687;
-c_73687.tag = closureN_tag;
+c_73687.hdr.mark = 4;
+ c_73687.tag = closureN_tag;
  c_73687.fn = (function_type)__lambda_12;
 c_73687.num_args = 1;
 c_73687.num_elt = 4;
@@ -5794,7 +6038,8 @@ static void __lambda_12(int argc, object self_73579, object r_73294) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73689;
-c_73689.tag = closureN_tag;
+c_73689.hdr.mark = 4;
+ c_73689.tag = closureN_tag;
  c_73689.fn = (function_type)__lambda_11;
 c_73689.num_args = 1;
 c_73689.num_elt = 4;
@@ -5811,7 +6056,8 @@ static void __lambda_11(int argc, object self_73580, object r_73305) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73691;
-c_73691.tag = closureN_tag;
+c_73691.hdr.mark = 4;
+ c_73691.tag = closureN_tag;
  c_73691.fn = (function_type)__lambda_10;
 c_73691.num_args = 1;
 c_73691.num_elt = 4;
@@ -5828,7 +6074,8 @@ static void __lambda_10(int argc, object self_73581, object r_73304) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73693;
-c_73693.tag = closureN_tag;
+c_73693.hdr.mark = 4;
+ c_73693.tag = closureN_tag;
  c_73693.fn = (function_type)__lambda_9;
 c_73693.num_args = 1;
 c_73693.num_elt = 4;
@@ -5845,7 +6092,8 @@ static void __lambda_9(int argc, object self_73582, object r_73295) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73695;
-c_73695.tag = closureN_tag;
+c_73695.hdr.mark = 4;
+ c_73695.tag = closureN_tag;
  c_73695.fn = (function_type)__lambda_8;
 c_73695.num_args = 1;
 c_73695.num_elt = 4;
@@ -5862,7 +6110,8 @@ static void __lambda_8(int argc, object self_73583, object r_73303) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73697;
-c_73697.tag = closureN_tag;
+c_73697.hdr.mark = 4;
+ c_73697.tag = closureN_tag;
  c_73697.fn = (function_type)__lambda_7;
 c_73697.num_args = 1;
 c_73697.num_elt = 4;
@@ -5880,7 +6129,8 @@ static void __lambda_7(int argc, object self_73584, object r_73296) {
 if( !eq(boolean_f, r_73296) ){ 
   
 closureN_type c_73699;
-c_73699.tag = closureN_tag;
+c_73699.hdr.mark = 4;
+ c_73699.tag = closureN_tag;
  c_73699.fn = (function_type)__lambda_1;
 c_73699.num_args = 1;
 c_73699.num_elt = 2;
@@ -5890,7 +6140,8 @@ c_73699.elts[1] = ((closureN)self_73584)->elts[2];
 
 
 closureN_type c_73703;
-c_73703.tag = closureN_tag;
+c_73703.hdr.mark = 4;
+ c_73703.tag = closureN_tag;
  c_73703.fn = (function_type)__lambda_6;
 c_73703.num_args = 1;
 c_73703.num_elt = 2;
@@ -5908,7 +6159,8 @@ static void __lambda_6(int argc, object self_73585, object k_73298, object inclu
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73705;
-c_73705.tag = closureN_tag;
+c_73705.hdr.mark = 4;
+ c_73705.tag = closureN_tag;
  c_73705.fn = (function_type)__lambda_5;
 c_73705.num_args = 1;
 c_73705.num_elt = 3;
@@ -5924,7 +6176,8 @@ static void __lambda_5(int argc, object self_73586, object r_73302) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73707;
-c_73707.tag = closureN_tag;
+c_73707.hdr.mark = 4;
+ c_73707.tag = closureN_tag;
  c_73707.fn = (function_type)__lambda_4;
 c_73707.num_args = 1;
 c_73707.num_elt = 2;
@@ -5941,7 +6194,8 @@ static void __lambda_4(int argc, object self_73587, object r_73301) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73709;
-c_73709.tag = closureN_tag;
+c_73709.hdr.mark = 4;
+ c_73709.tag = closureN_tag;
  c_73709.fn = (function_type)__lambda_3;
 c_73709.num_args = 1;
 c_73709.num_elt = 2;
@@ -5956,7 +6210,8 @@ static void __lambda_3(int argc, object self_73588, object r_73300) {
   Cyc_st_add("cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73711;
-c_73711.tag = closureN_tag;
+c_73711.hdr.mark = 4;
+ c_73711.tag = closureN_tag;
  c_73711.fn = (function_type)__lambda_2;
 c_73711.num_args = 1;
 c_73711.num_elt = 2;

@@ -202,7 +202,8 @@ static void __lambda_20(int argc, closure _,object k_7325, object c_736) {
   Cyc_st_add("scheme/char.sld:digit-value");
 
 closureN_type c_73173;
-c_73173.tag = closureN_tag;
+c_73173.hdr.mark = 4;
+ c_73173.tag = closureN_tag;
  c_73173.fn = (function_type)__lambda_19;
 c_73173.num_args = 1;
 c_73173.num_elt = 2;
@@ -218,7 +219,8 @@ static void __lambda_19(int argc, object self_7360, object r_7326) {
 if( !eq(boolean_f, r_7326) ){ 
   
 closureN_type c_73175;
-c_73175.tag = closureN_tag;
+c_73175.hdr.mark = 4;
+ c_73175.tag = closureN_tag;
  c_73175.fn = (function_type)__lambda_18;
 c_73175.num_args = 1;
 c_73175.num_elt = 1;
@@ -246,7 +248,8 @@ static void __lambda_17(int argc, closure _,object k_7330, object c_737) {
   Cyc_st_add("scheme/char.sld:char-whitespace?");
 
 closureN_type c_73161;
-c_73161.tag = closureN_tag;
+c_73161.hdr.mark = 4;
+ c_73161.tag = closureN_tag;
  c_73161.fn = (function_type)__lambda_16;
 c_73161.num_args = 1;
 c_73161.num_elt = 2;
@@ -274,7 +277,8 @@ static void __lambda_15(int argc, closure _,object k_7334, object c_738) {
   Cyc_st_add("scheme/char.sld:char-numeric?");
 
 closureN_type c_73143;
-c_73143.tag = closureN_tag;
+c_73143.hdr.mark = 4;
+ c_73143.tag = closureN_tag;
  c_73143.fn = (function_type)__lambda_14;
 c_73143.num_args = 1;
 c_73143.num_elt = 2;
@@ -314,7 +318,8 @@ static void __lambda_13(int argc, closure _,object k_7338, object c_739) {
   Cyc_st_add("scheme/char.sld:char-lower-case?");
 
 closureN_type c_73135;
-c_73135.tag = closureN_tag;
+c_73135.hdr.mark = 4;
+ c_73135.tag = closureN_tag;
  c_73135.fn = (function_type)__lambda_12;
 c_73135.num_args = 1;
 c_73135.num_elt = 2;
@@ -338,7 +343,8 @@ static void __lambda_11(int argc, closure _,object k_7342, object c_7310) {
   Cyc_st_add("scheme/char.sld:char-upper-case?");
 
 closureN_type c_73127;
-c_73127.tag = closureN_tag;
+c_73127.hdr.mark = 4;
+ c_73127.tag = closureN_tag;
  c_73127.fn = (function_type)__lambda_10;
 c_73127.num_args = 1;
 c_73127.num_elt = 2;
@@ -362,7 +368,8 @@ static void __lambda_9(int argc, closure _,object k_7346, object c_7311) {
   Cyc_st_add("scheme/char.sld:char-alphabetic?");
 
 closureN_type c_73119;
-c_73119.tag = closureN_tag;
+c_73119.hdr.mark = 4;
+ c_73119.tag = closureN_tag;
  c_73119.fn = (function_type)__lambda_8;
 c_73119.num_args = 1;
 c_73119.num_elt = 2;
@@ -386,7 +393,8 @@ static void __lambda_7(int argc, closure _,object k_7350, object c_7312) {
   Cyc_st_add("scheme/char.sld:char-downcase");
 
 closureN_type c_7397;
-c_7397.tag = closureN_tag;
+c_7397.hdr.mark = 4;
+ c_7397.tag = closureN_tag;
  c_7397.fn = (function_type)__lambda_6;
 c_7397.num_args = 1;
 c_7397.num_elt = 2;
@@ -402,7 +410,8 @@ static void __lambda_6(int argc, object self_7367, object r_7351) {
 if( !eq(boolean_f, r_7351) ){ 
   
 closureN_type c_7399;
-c_7399.tag = closureN_tag;
+c_7399.hdr.mark = 4;
+ c_7399.tag = closureN_tag;
  c_7399.fn = (function_type)__lambda_5;
 c_7399.num_args = 1;
 c_7399.num_elt = 1;
@@ -421,7 +430,8 @@ static void __lambda_5(int argc, object self_7368, object r_7353) {
   Cyc_st_add("scheme/char.sld:char-downcase");
 
 closureN_type c_73101;
-c_73101.tag = closureN_tag;
+c_73101.hdr.mark = 4;
+ c_73101.tag = closureN_tag;
  c_73101.fn = (function_type)__lambda_4;
 c_73101.num_args = 1;
 c_73101.num_elt = 1;
@@ -444,7 +454,8 @@ static void __lambda_3(int argc, closure _,object k_7356, object c_7313) {
   Cyc_st_add("scheme/char.sld:char-upcase");
 
 closureN_type c_7375;
-c_7375.tag = closureN_tag;
+c_7375.hdr.mark = 4;
+ c_7375.tag = closureN_tag;
  c_7375.fn = (function_type)__lambda_2;
 c_7375.num_args = 1;
 c_7375.num_elt = 2;
@@ -460,7 +471,8 @@ static void __lambda_2(int argc, object self_7370, object r_7357) {
 if( !eq(boolean_f, r_7357) ){ 
   
 closureN_type c_7377;
-c_7377.tag = closureN_tag;
+c_7377.hdr.mark = 4;
+ c_7377.tag = closureN_tag;
  c_7377.fn = (function_type)__lambda_1;
 c_7377.num_args = 1;
 c_7377.num_elt = 1;
@@ -479,7 +491,8 @@ static void __lambda_1(int argc, object self_7371, object r_7359) {
   Cyc_st_add("scheme/char.sld:char-upcase");
 
 closureN_type c_7379;
-c_7379.tag = closureN_tag;
+c_7379.hdr.mark = 4;
+ c_7379.tag = closureN_tag;
  c_7379.fn = (function_type)__lambda_0;
 c_7379.num_args = 1;
 c_7379.num_elt = 1;
