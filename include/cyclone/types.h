@@ -16,6 +16,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <math.h>
+// TODO: #include <pthread.h>
 
 /* Define general object type. */
 typedef void *object;
@@ -25,6 +26,14 @@ typedef struct gc_thread_data_t gc_thread_data;
 struct gc_thread_data_t {
   void **moveBuf; /* list of objects moved to heap during GC */
   int moveBufLen;
+  // Data needed for tri-color marking 
+  int gc_alloc_color;
+  int gc_mut_status;
+  int last_write;
+  int last_read;
+  void **mark_buffer;
+  int mark_buffer_len;
+// TODO:   pthread_mutex_t lock;
 };
 
 /* GC data structures */
@@ -66,6 +75,30 @@ struct gc_header_type_t {
 #define gc_word_align(n) gc_align((n), 2)
 #define gc_heap_align(n) gc_align(n, 5)
 
+/* Enums for tri-color marking */
+typedef enum { STATUS_ASYNC 
+             , STATUS_SYNC1 
+             , STATUS_SYNC2 
+             } gc_status_type;
+
+typedef enum { STAGE_CLEAR_OR_MARKING 
+             , STAGE_TRACING 
+             , STAGE_REF_PROCESSING 
+             , STAGE_SWEEPING 
+             , STAGE_RESTING
+             } gc_stage_type;
+
+// Constant colors are defined here.
+// The mark/clear colors are defined in the gc module because
+// the collector swaps their values as an optimization.
+#define gc_color_red  0 // Memory not to be GC'd, such as on the stack
+#define gc_color_blue 1 // Unallocated memory
+
+/* Utility functions */
+void **vpbuffer_realloc(void **buf, int *len);
+void **vpbuffer_add(void **buf, int *len, int i, void *obj);
+void vpbuffer_free(void **buf);
+
 /* GC prototypes */
 gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size);
 int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size);
@@ -79,6 +112,22 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr);
 size_t gc_collect(gc_heap *h, size_t *sum_freed);
 void gc_thr_grow_move_buffer(gc_thread_data *d);
 void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj);
+void gc_thread_data_init(gc_thread_data *thd);
+// Prototypes for mutator/collector:
+void gc_mark_gray(gc_thread_data *thd, object obj);
+void gc_collector_trace();
+void gc_mark_black(object obj);
+void gc_collector_mark_gray(object obj);
+void gc_empty_collector_stack();
+void gc_handshake(gc_status_type s);
+void gc_post_handshake(gc_status_type s);
+void gc_wait_handshake();
+
+/////////////////////////////////////////////
+// GC Collection cycle
+
+// TODO:
+//void gc_collector()
 
 /* GC debugging flags */
 //#define DEBUG_GC 0
@@ -169,7 +218,7 @@ typedef void (*function_type_va)(int, object, object, object, ...);
 /* Define C-variable integration type */
 typedef struct {gc_header_type hdr; tag_type tag; object *pvar;} cvar_type;
 typedef cvar_type *cvar;
-#define make_cvar(n,v) cvar_type n; n.tag = cvar_tag; n.pvar = v;
+#define make_cvar(n,v) cvar_type n; n.hdr.mark = gc_color_red; n.tag = cvar_tag; n.pvar = v;
 
 /* Define boolean type. */
 typedef struct {gc_header_type hdr; const tag_type tag; const char *pname;} boolean_type;
@@ -190,9 +239,9 @@ static object quote_##name = nil;
 
 /* Define numeric types */
 typedef struct {gc_header_type hdr; tag_type tag; int value;} integer_type;
-#define make_int(n,v) integer_type n; n.tag = integer_tag; n.value = v;
+#define make_int(n,v) integer_type n; n.hdr.mark = gc_color_red; n.tag = integer_tag; n.value = v;
 typedef struct {gc_header_type hdr; tag_type tag; double value;} double_type;
-#define make_double(n,v) double_type n; n.tag = double_tag; n.value = v;
+#define make_double(n,v) double_type n; n.hdr.mark = gc_color_red; n.tag = double_tag; n.value = v;
 
 #define integer_value(x) (((integer_type *) x)->value)
 #define double_value(x) (((double_type *) x)->value)
@@ -203,30 +252,18 @@ typedef struct {gc_header_type hdr; tag_type tag; int len; char *str;} string_ty
 //// all functions that allocate strings, the GC, cgen, and maybe more.
 //// Because these strings are (at least for now) allocaed on the stack.
 #define make_string(cs, s) string_type cs; \
-{ int len = strlen(s); cs.tag = string_tag; cs.len = len; \
+{ int len = strlen(s); cs.tag = string_tag; cs.len = len; cs.hdr.mark = gc_color_red; \
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len + 1);}
-#define make_string_with_len(cs, s, length) string_type cs; \
+#define make_string_with_len(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; \
 { int len = length; \
   cs.tag = string_tag; cs.len = len; \
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len); \
   cs.str[len] = '\0';}
-#define make_string_noalloc(cs, s, length) string_type cs; \
+#define make_string_noalloc(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; \
 { cs.tag = string_tag; cs.len = length; \
   cs.str = s; }
-// TODO: all of the dhalloc below needs to go away...
-//#define make_string(cv,s) string_type cv; cv.tag = string_tag; \
-//{ int len = strlen(s); cv.str = dhallocp; \
-//  if ((dhallocp + len + 1) >= dhbottom + global_heap_size) { \
-//      printf("Fatal error: data heap overflow\n"); exit(1); } \
-//  memcpy(dhallocp, s, len + 1); dhallocp += len + 1; }
-//#define make_stringn(cv,s,len) string_type cv; cv.tag = string_tag; \
-//{ cv.str = dhallocp; \
-//  if ((dhallocp + len + 1) >= dhbottom + global_heap_size) { \
-//      printf("Fatal error: data heap overflow\n"); exit(1); } \
-//  memcpy(dhallocp, s, len); dhallocp += len; \
-//  *dhallocp = '\0'; dhallocp += 1;}
 
 #define string_len(x) (((string_type *) x)->len)
 #define string_str(x) (((string_type *) x)->str)
@@ -238,14 +275,14 @@ typedef struct {gc_header_type hdr; tag_type tag; int len; char *str;} string_ty
 // TODO: a simple wrapper around FILE may not be good enough long-term
 // TODO: how exactly mode will be used. need to know r/w, bin/txt
 typedef struct {gc_header_type hdr; tag_type tag; FILE *fp; int mode;} port_type;
-#define make_port(p,f,m) port_type p; p.tag = port_tag; p.fp = f; p.mode = m;
+#define make_port(p,f,m) port_type p; p.hdr.mark = gc_color_red; p.tag = port_tag; p.fp = f; p.mode = m;
 
 /* Vector type */
 
 typedef struct {gc_header_type hdr; tag_type tag; int num_elt; object *elts;} vector_type;
 typedef vector_type *vector;
 
-#define make_empty_vector(v) vector_type v; v.tag = vector_tag; v.num_elt = 0; v.elts = NULL;
+#define make_empty_vector(v) vector_type v; v.hdr.mark = gc_color_red; v.tag = vector_tag; v.num_elt = 0; v.elts = NULL;
 
 /* Define cons type. */
 
@@ -305,15 +342,15 @@ typedef closureN_type *closureN;
 typedef closure0_type *closure;
 typedef closure0_type *macro;
 
-#define mmacro(c,f) macro_type c; c.tag = macro_tag; c.fn = f; c.num_args = -1;
-#define mclosure0(c,f) closure0_type c; c.tag = closure0_tag; c.fn = f; c.num_args = -1;
-#define mclosure1(c,f,a) closure1_type c; c.tag = closure1_tag; \
+#define mmacro(c,f) macro_type c; c.hdr.mark = gc_color_red; c.tag = macro_tag; c.fn = f; c.num_args = -1;
+#define mclosure0(c,f) closure0_type c; c.hdr.mark = gc_color_red; c.tag = closure0_tag; c.fn = f; c.num_args = -1;
+#define mclosure1(c,f,a) closure1_type c; c.hdr.mark = gc_color_red; c.tag = closure1_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a;
-#define mclosure2(c,f,a1,a2) closure2_type c; c.tag = closure2_tag; \
+#define mclosure2(c,f,a1,a2) closure2_type c; c.hdr.mark = gc_color_red; c.tag = closure2_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2;
-#define mclosure3(c,f,a1,a2,a3) closure3_type c; c.tag = closure3_tag; \
+#define mclosure3(c,f,a1,a2,a3) closure3_type c; c.hdr.mark = gc_color_red; c.tag = closure3_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2; c.elt3 = a3;
-#define mclosure4(c,f,a1,a2,a3,a4) closure4_type c; c.tag = closure4_tag; \
+#define mclosure4(c,f,a1,a2,a3,a4) closure4_type c; c.hdr.mark = gc_color_red; c.tag = closure4_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2; c.elt3 = a3; c.elt4 = a4;
 
 #define mlist1(e1) (mcons(e1,nil))
@@ -347,5 +384,13 @@ typedef union {
   double_type double_t;
 } common_type;
 
+// Atomics section
+// TODO: this is all compiler dependent, need to use different macros depending
+//       upon the compiler (and arch)
+// TODO: relocate this to its own header?
+#define ATOMIC_INC(ptr) __sync_fetch_and_add((ptr),1)
+#define ATOMIC_DEC(ptr) __sync_fetch_and_sub((ptr),1)
+#define ATOMIC_GET(ptr) __sync_fetch_and_add((ptr),0)
+#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_val_compare_and_swap(ptr, oldv, newv)
 
 #endif /* CYCLONE_TYPES_H */

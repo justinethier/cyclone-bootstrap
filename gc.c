@@ -326,71 +326,381 @@ void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj)
   (*alloci)++;
 }
 
+// Generic buffer functions
+void **vpbuffer_realloc(void **buf, int *len)
+{
+  return realloc(buf, (*len) * sizeof(void *));
+}
+
+void **vpbuffer_add(void **buf, int *len, int i, void *obj)
+{
+  if (i == *len) {
+    *len *= 2;
+    buf = vpbuffer_realloc(buf, len);
+  }
+  buf[i] = obj;
+  return buf;
+}
+
+void vpbuffer_free(void **buf)
+{
+  free(buf);
+}
+
+
 // void gc_init()
 // {
 // }
 // END heap definitions
 
-/* tri-color GC stuff, we will care about this later...
-int colorWhite = 0;
-int colorGray  = 1;
-int colorBlack = 2;
-int colorBlue  = 3;
 
-typedef enum {STATUS_ASYNC, STATUS_SYNC1, STATUS_SYNC2} status_type;
+/*
+Rough plan for how to implement new GC algorithm. We need to do this in
+phases in order to have any hope of getting everything working. Let's prove
+the algorithm out, then extend support to multiple mutators if everything
+looks good.
 
-// DLG globals
-static void *swept;
-static int dirty;
-static void *scanned;
+PHASE 1 - separation of mutator and collector into separate threads
 
-// TODO: mutator actions
-// TODO: collector
-// TODO: extentions
-// TODO: proofs, etc
-// TODO: revist design using content from kolodner
+need to syncronize access (preferably via atomics) for anything shared between the 
+collector and mutator threads.
+
+can cooperate be part of a minor gc? in that case, the 
+marking could be done as part of allocation
+
+but then what exactly does that mean, to mark gray? because
+objects moved to the heap will be set to mark color at that 
+point (until collector thread finishes). but would want
+objects on the heap referenced by them to be traced, so 
+I suppose that is the purpose of the gray, to indicate
+those still need to be traced. but need to think this through,
+do we need the markbuffer and last read/write? do those make
+  sense with mta approach (assume so)???
+
+ONLY CONCERN - what happens if an object on the stack 
+has a reference to an object on the heap that is collected?
+but how would this happen? collector marks global roots before
+telling mutators to go to async, and once mutators go async
+any allocations will not be collected. also once collectors go
+async they have a chance to markgray, which will include the write
+barrier. so given that, is it still possible for an old heap ref to 
+sneak into a stack object during the async phase?
+
+more questions on above point:
+- figure out how/if after cooperation/async, can a stack object pick
+  up a reference to a heap object that will be collected during that GC cycle?
+  need to be able to prevent this somehow...
+
+- need to figure out real world use case(s) where this could happen, to try and
+  figure out how to address this problem
+
+from my understanding of the paper, the write barrier prevents this. consider, at the
+start of async, the mutator's roots, global roots, and anything on the write barrier
+have been marked. any new objects will be allocated as marked. that way, anything the
+mutator could later access is either marked or will be after tracing. the only exception
+is if the mutator changes a reference such that tracing will no longer find an object.
+but the write barrier prevents this - during tracing a heap update causes the old
+object to be marked as well. so it will eventually be traced, and there should be no
+dangling objects after GC completes.
+
+PHASE 2 - multi-threaded mutator (IE, more than one stack thread):
+
+- how does the collector handle stack objects that reference objects from 
+  another thread's stack?
+  * minor GC will only relocate that thread's objects, so another thread's would not
+    be moved. however, if another thread references one of the GC'd thread's
+    stack objects, it will now get a forwarding pointer. even worse, what if the
+    other thread is blocked and the reference becomes corrupt due to the stack
+    longjmp? there are major issues with one thread referencing another thread's
+    objects.
+  * had considered adding a stack bit to the object header. if we do this and
+    initialize it during object creation, a thread could in theory detect
+    if an object belongs to another thread. but it might be expensive because
+    a read barrier would have to be used to check the object's stack bit and
+    address (to see if it is on this heap).
+  * alternatively, how would one thread pick up a reference to another one's
+    objects? are there any ways to detect these events and deal with them?
+    it might be possible to detect such a case and allocate the object on the heap,
+    replacing it with a fwd pointer. unfortunately that means we need a read 
+    barrier (ick) to handle forwarding pointers in arbitrary places
+  * but does that mean we need a fwd pointer to be live for awhile? do we need
+    a read barrier to get this to work? obviously we want to avoid a read barrier
+    at all costs.
+- what are the real costs of allowing forwarding pointers to exist outside of just
+  minor GC? assume each runtime primitive would need to be updated to handle the
+  case where the obj is a fwd pointer - is it just a matter of each function 
+  detecting this and (possibly) calling itself again with the 'real' address?
+  obviously that makes the runtime slower due to more checks, but maybe it is
+  not *so* bad?
 */
 
-// int main(int argc, char **argv) {
-//   int i;
-//   size_t freed = 0, max_freed = 0;
-//   gc_heap *h = gc_heap_create(8 * 1024 * 1024, 0, 0);
-//   void *obj1 = gc_alloc(h, sizeof(cons_type));
-//   void *obj2 = gc_alloc(h, sizeof(cons_type));
-//   void *objI = gc_alloc(h, sizeof(integer_type));
-// 
-//   for (i = 0; i < 1000000; i++) {
-//     gc_alloc(h, sizeof(integer_type));
-//     gc_alloc(h, sizeof(integer_type));
-//   }
-// 
-//   // Build up an object graph to test collection...
-//   ((integer_type *)objI)->hdr.mark = 0;
-//   ((integer_type *)objI)->tag = integer_tag;
-//   ((integer_type *)objI)->value = 42;
-// 
-//   ((list)obj2)->hdr.mark = 0;
-//   ((list)obj2)->tag = cons_tag;
-//   ((list)obj2)->cons_car = objI;
-//   ((list)obj2)->cons_cdr = NULL;
-// 
-//   ((list)obj1)->hdr.mark = 0;
-//   ((list)obj1)->tag = cons_tag;
-//   ((list)obj1)->cons_car = obj2;
-//   ((list)obj1)->cons_cdr = NULL;
-// 
-//   printf("(heap: %p size: %d)", h, (unsigned int)gc_heap_total_size(h));
-//   gc_mark(h, obj1);
-//   max_freed = gc_sweep(h, &freed);
-//   printf("done, freed = %d, max_freed = %d\n", freed, max_freed);
-//   for (i = 0; i < 10; i++) {
-//     gc_alloc(h, sizeof(integer_type));
-//     gc_alloc(h, sizeof(integer_type));
-//   }
-//   printf("(heap: %p size: %d)", h, (unsigned int)gc_heap_total_size(h));
-//   gc_mark(h, obj1);
-//   max_freed = gc_sweep(h, &freed);
-//   printf("done, freed = %d, max_freed = %d\n", freed, max_freed);
-// 
-//   return 0;
-// }
+// tri-color GC section, WIP
+//
+// Note: will need to use atomics and/or locking to access any
+// variables shared between threads
+static int        gc_color_mark = 2; // Black, is swapped during GC
+static int        gc_color_clear = 3; // White, is swapped during GC
+//static const int  gc_color_grey = 4; // TODO: appears unused, clean up
+// unfortunately this had to be split up; const colors are located in types.h
+
+static int gc_status_col;
+static int gc_stage;
+
+// Does not need sync, only used by collector thread
+static void **mark_stack = NULL;
+static int mark_stack_len = 128;
+static int mark_stack_i = 0;
+
+/////////////////////////////////////////////
+// GC functions called by the Mutator threads
+
+void gc_mut_update()
+{
+  // TODO: how does this fit in with the write buffer?
+  // this part is important, especially during tracing
+}
+
+// Done as part of gc_move
+// ideally want to do this without needing sync. we need to sync to get markColor in coop, though
+//void gc_mut_create()
+
+// TODO: when is this called, is this good enough, etc??
+void gc_mut_cooperate(gc_thread_data *thd)
+{
+  if (thd->gc_mut_status == gc_status_col) { // TODO: synchronization of var access
+    if (thd->gc_mut_status == STATUS_SYNC2) { // TODO: more sync??
+      // Since everything is on the stack, at this point probably only need
+      // to worry about anything on the stack that is referencing a heap object
+      //  For each x in roots:
+      //  MarkGray(x)
+      thd->gc_alloc_color = gc_color_mark; // TODO: synchronization for global??
+    }
+    thd->gc_mut_status = gc_status_col; // TODO: syncronization??
+  }
+}
+
+/////////////////////////////////////////////
+// Collector functions
+
+void gc_mark_gray(gc_thread_data *thd, object obj)
+{
+  // From what I can tell, no other thread would be modifying
+  // either object type or mark. Both should be stable once the object is placed
+  // into the heap, with the collector being the only thread that changes marks.
+  if (is_object_type(obj) && mark(obj) == gc_color_clear) { // TODO: sync??
+//TODO:    // TODO: lock mark buffer (not ideal, but a possible first step)?
+//TODO:    pthread_mutex_lock(&(thd->lock));
+//TODO:    thd->mark_buffer = vpbuffer_add(thd->mark_buffer, 
+//TODO:                                    &(thd->mark_buffer_len),
+//TODO:                                    thd->last_write,
+//TODO:                                    obj);
+//TODO:    pthread_mutex_unlock(&(thd->lock));
+//TODO:    ATOMIC_INC(&(thd->last_write));
+  }
+}
+
+void gc_collector_trace()
+{
+  int clean = 0;
+//  while (!clean) {
+//    clean = 1;
+//  }
+//  TODO: need a list of mutators.
+//  could keep a buffer or linked list of them. a list may be more efficient
+//  also need to consider how to map thread back to its gc_thread_data,
+//  which we will need during GC (cooperate). maybe use a (platform-specific)
+//  call like below to get a unique ID for the thread, and then use a
+//  hashtable to get the thread info. how often will we be accessing this data?
+//  seems we will need to be able to access it from 2 places:
+//   - from mutator (can compute thread id here)
+//   - from collector (need to be able to iterate across all mutators)
+//   #include <syscall.h>
+//   printf("tid = %d\n", syscall(SYS_gettid));
+//
+// TODO:
+// ACTION - I think the most efficient solution is to have each thread pass around
+//          the pointer to it's thread data. this param would have to be passed to all
+//          continuation calls made by the thread.
+//          the collector/runtime will need to maintain a list of the thread data structures,
+//          and will need to maintain it when a thread is created or terminated (either
+//          explicitly or when it returns).
+//          practically the required changes are:
+//          - stabilize this branch so it builds and runs (hope this just means commenting out
+//            the pthread calls for right now)
+//          - extend the runtime and compiled code to have a new thread_data (sp?) param
+//            also need to judge if there are issues that would prevent being able to add
+//            one, but it seems like it should be no problem
+//          - build the code and test that the value is actually maintained across calls
+//            (maybe assign it to a global at start and exit from GC if cur val != global val)
+
+// note - can atomic operations be used for last read/write, to prevent
+//        coarser-grained synchronization there?
+// TODO:
+//  clean = FALSE
+//  while (!(clean))
+//    clean = TRUE
+//    For each m in mutators
+//    while (lastread[m] < lastwrite[m]) // TODO: use atomic sub to compare?
+//      clean = FALSE
+//      lastread[m] = lastread[m] + 1 // TODO: atomic increment
+//      markBlack(markbuffer[m][lastread[m]])
+//      EmptyCollectorStack()
+}
+
+// TODO: seriously consider changing the mark() macro to color(),
+// and sync up the header variable. that would make all of this code
+// bit clearer...
+
+void gc_mark_black(object obj) 
+{
+  // TODO: is sync required to get colors? probably not on the collector
+  // thread (at least) since colors are only changed once during the clear
+  // phase and before the first handshake.
+  int markColor = gc_color_mark; //TODO: is atomic require here?? ATOMIC_GET(&gc_color_mark);
+  if (is_object_type(obj) && mark(obj) != markColor) {
+    // Gray any child objects
+    // Note we probably should use some form of atomics/synchronization
+    // for cons and vector types, as these pointers could change.
+    switch(type_of(obj)) {
+      case cons_tag: {
+        gc_collector_mark_gray(car(obj));
+        gc_collector_mark_gray(cdr(obj));
+        break;
+      }
+      case closure1_tag:
+        gc_collector_mark_gray(((closure1) obj)->elt1);
+        break;
+      case closure2_tag:
+        gc_collector_mark_gray(((closure2) obj)->elt1);
+        gc_collector_mark_gray(((closure2) obj)->elt2);
+      case closure3_tag:
+        gc_collector_mark_gray(((closure3) obj)->elt1);
+        gc_collector_mark_gray(((closure3) obj)->elt2);
+        gc_collector_mark_gray(((closure3) obj)->elt3);
+      case closure4_tag:
+        gc_collector_mark_gray(((closure4) obj)->elt1);
+        gc_collector_mark_gray(((closure4) obj)->elt2);
+        gc_collector_mark_gray(((closure4) obj)->elt3);
+        gc_collector_mark_gray(((closure4) obj)->elt4);
+        break;
+      case closureN_tag: {
+        int i, n = ((closureN) obj)->num_elt;
+        for (i = 0; i < n; i++) {
+          gc_collector_mark_gray(((closureN) obj)->elts[i]);
+        }
+        break;
+      }
+      case vector_tag: {
+        int i, n = ((vector) obj)->num_elt;
+        for (i = 0; i < n; i++) {
+          gc_collector_mark_gray(((vector) obj)->elts[i]);
+        }
+        break;
+      }
+      default:
+      break;
+    }
+    mark(obj) = markColor;
+  }
+}
+
+void gc_collector_mark_gray(object obj)
+{
+  // "Color" objects gray by adding them to the mark stack for further processing.
+  //
+  // Note that stack objects are always colored red during creation, so
+  // they should never be added to the mark stack. Which would be bad because it
+  // could lead to stack corruption.
+  if (is_object_type(obj) && mark(obj) == gc_color_clear) {
+    mark_stack = vpbuffer_add(mark_stack, &mark_stack_len, mark_stack_i++, obj);
+  }
+}
+
+void gc_empty_collector_stack()
+{
+  // Mark stack is only used by the collector thread, so no sync needed
+  while (mark_stack_i > 0) { // not empty
+    mark_stack--;
+    gc_mark_black(mark_stack[mark_stack_i]);
+  }
+}
+
+// TODO:
+//void gc_handshake(gc_status_type s)
+//{
+//  gc_post_handshake(s);
+//  gc_wait_handshake();
+//}
+
+//void gc_post_handshake(gc_status_type s)
+//{
+//  TODO: use atomic to change value of gc_status_col
+//}
+
+//void gc_wait_handshake()
+//{
+//  // TODO:
+//  for each m in mutators
+//    wait for statusm = statusc
+//}
+
+/////////////////////////////////////////////
+// GC Collection cycle
+
+// TODO:
+//void gc_collector()
+//{
+//}
+
+/////////////////////////////////////////////
+// END tri-color marking section
+/////////////////////////////////////////////
+
+
+// Initialize a thread from scratch
+void gc_thread_data_init(gc_thread_data *thd)
+{
+  thd->moveBufLen = 0;
+  gc_thr_grow_move_buffer(thd);
+// TODO: depends on collector state:  thd->gc_alloc_color = ATOMIC_GET(&gc_;
+// TODO: depends on collector state:  thd->gc_mut_status;
+  thd->last_write = 0;
+  thd->last_read = 0;
+  thd->mark_buffer_len = 128;
+  thd->mark_buffer = vpbuffer_realloc(thd->mark_buffer, &(thd->mark_buffer_len));
+// TODO:  if (pthread_mutex(&(thd->lock), NULL) != 0) {
+// TODO:    fprintf(stderr, "Unable to initialize thread mutex\n");
+// TODO:    exit(1);
+// TODO:  }
+}
+
+//// Unit testing:
+//int main(int argc, char **argv) {
+//  int a = 1, b = 2, c = 3, i;
+//  void **buf = NULL;
+//  int size = 1;
+//
+//  buf = vpbuffer_realloc(buf, &size);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  buf = vpbuffer_add(buf, &size, 0, &a);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  buf = vpbuffer_add(buf, &size, 1, &b);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  buf = vpbuffer_add(buf, &size, 2, &c);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  buf = vpbuffer_add(buf, &size, 3, &a);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  buf = vpbuffer_add(buf, &size, 4, &b);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  for (i = 5; i < 20; i++) {
+//    buf = vpbuffer_add(buf, &size, i, &c);
+//  }
+//
+//  for (i = 0; i < 20; i++){
+//    printf("%d\n", *((int *) buf[i]));
+//  }
+//  vpbuffer_free(buf);
+//  printf("buf = %p, size = %d\n", buf, size);
+//  return 0;
+//}
+//
