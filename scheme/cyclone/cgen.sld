@@ -110,12 +110,12 @@
         (arry-assign (c-macro-array-assign num-args "buf" "a")))
     (string-append
       "/* Check for GC, then call given continuation closure */\n"
-      "#define return_closcall" n "(cfn" args ") \\\n"
+      "#define return_closcall" n "(td,cfn" args ") \\\n"
       "{char stack; \\\n"
       " if (check_overflow(&stack,stack_limit1)) { \\\n"
       "     object buf[" n "]; " arry-assign "\\\n"
-      "     GC(cfn,buf," n "); return; \\\n"
-      " } else {closcall" n "((closure) (cfn)" args "); return;}}\n")))
+      "     GC(td,cfn,buf," n "); return; \\\n"
+      " } else {closcall" n "(td,(closure) (cfn)" args "); return;}}\n")))
 
 (define (c-macro-return-direct num-args)
   (let ((args (c-macro-n-prefix num-args ",a"))
@@ -123,13 +123,13 @@
         (arry-assign (c-macro-array-assign num-args "buf" "a")))
     (string-append
       "/* Check for GC, then call C function directly */\n"
-      "#define return_direct" n "(_fn" args ") { \\\n"
+      "#define return_direct" n "(td,_fn" args ") { \\\n"
       " char stack; \\\n"
       " if (check_overflow(&stack,stack_limit1)) { \\\n"
       "     object buf[" n "]; " arry-assign " \\\n"
       "     mclosure0(c1, _fn); \\\n"
-      "     GC(&c1, buf, " n "); return; \\\n"
-      " } else { (_fn)(" n ",(closure)_fn" args "); }}\n")))
+      "     GC(td,&c1, buf, " n "); return; \\\n"
+      " } else { (_fn)(td," n ",(closure)_fn" args "); }}\n")))
 
 (define (c-macro-closcall num-args)
   (let ((args (c-macro-n-prefix num-args ",a"))
@@ -137,10 +137,10 @@
         (n-1 (number->string (if (> num-args 0) (- num-args 1) 0)))
         (wrap (lambda (s) (if (> num-args 0) s ""))))
     (string-append
-      "#define closcall" n "(cfn" args ") "
-        (wrap (string-append "if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(" n-1 ", (closure)a1, cfn" (if (> num-args 1) (substring args 3 (string-length args)) "") "); }"))
+      "#define closcall" n "(td,cfn" args ") "
+        (wrap (string-append "if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td," n-1 ", (closure)a1, cfn" (if (> num-args 1) (substring args 3 (string-length args)) "") "); }"))
         (wrap " else { ")
-        "((cfn)->fn)(" n ",cfn" args ")"
+        "((cfn)->fn)(td," n ",cfn" args ")"
         (wrap ";}")
         )))
 
@@ -555,6 +555,63 @@
      (else
        (error "unhandled primitive: " p))))
 
+;; Does the primitive require passing thread data as its first argument?
+(define (prim/data-arg? p)
+  (member p '(
+    +
+    -
+    *
+    /
+    =
+    >
+    <
+    >=
+    <=
+    apply
+    Cyc-default-exception-handler
+    open-input-file
+    open-output-file
+    close-port
+    close-input-port
+    close-output-port
+    Cyc-flush-output-port
+    file-exists?
+    delete-file
+    read-char
+    peek-char
+    Cyc-read-line
+    Cyc-write-char
+    integer->char
+    string->number
+    list->string
+    make-vector
+    list->vector
+    vector-length
+    vector-ref
+    vector-set!
+    string-append
+    string-cmp
+    string->symbol
+    symbol->string
+    number->string
+    string-length
+    string-ref
+    string-set!
+    substring
+    Cyc-installation-dir
+    command-line-arguments
+    assq
+    assv
+    assoc
+    memq
+    memv
+    member
+    length
+    set-car!
+    set-cdr!
+    procedure?
+    set-cell!)))
+
 ;; Determine if primitive assigns (allocates) a C variable
 ;; EG: int v = prim();
 (define (prim/c-var-assign p)
@@ -616,13 +673,11 @@
        (member exp '(Cyc-read-line apply command-line-arguments number->string 
                      symbol->string list->string substring string-append
                      make-vector list->vector Cyc-installation-dir))))
-;; TODO: this is a hack, right answer is to include information about
-;;  how many args each primitive is supposed to take
-(define (prim:cont-has-args? exp)
+
+;; Primitive functions that pass a continuation but have no other arguments
+(define (prim:cont/no-args? exp)
   (and (prim? exp)
-       (member exp '(Cyc-read-line apply number->string symbol->string 
-                     list->string substring string-append
-                     make-vector list->vector Cyc-installation-dir))))
+       (member exp '(command-line-arguments))))
 
 ;; Pass an integer arg count as the function's first parameter?
 (define (prim:arg-count? exp)
@@ -635,6 +690,13 @@
 (define (prim:allocates-object? exp)
     (and  (prim? exp)
           (member exp '())))
+
+;; Does string end with the given substring?
+;; EG: ("test(" "(") ==> #t
+(define (str-ending? str end)
+  (let ((len (string-length str)))
+    (and (> len 0)
+         (equal? end (substring str (- len 1) len)))))
 
 ;; c-compile-prim : prim-exp -> string -> string
 (define (c-compile-prim p cont)
@@ -656,6 +718,10 @@
                 "," cont "); "))
              (else #f)))
          ;; END apply defs
+         (tdata (cond
+                 ((prim/data-arg? p) "data")
+                 (else "")))
+         (tdata-comma (if (> (string-length tdata) 0) "," ""))
          (c-var-assign 
             (lambda (type)
               (let ((cv-name (mangle (gensym 'c))))
@@ -674,12 +740,14 @@
                       ;; Emit closure as first arg, if necessary (apply only)
                       (cond
                        (closure-def
-                        (string-append "&" closure-sym 
-                          (if (prim:cont-has-args? p) ", " "")))
+                        (string-append 
+                          tdata ","
+                          "&" closure-sym))
                        ((prim:cont? p) 
-                        (string-append cont
-                          (if (prim:cont-has-args? p) ", " "")))
-                       (else "")))))))))
+                        (string-append 
+                          tdata ","
+                          cont))
+                       (else tdata)))))))))
     (cond
      ((prim/c-var-assign p)
       (c-var-assign (prim/c-var-assign p)))
@@ -696,9 +764,9 @@
                 cv-name ;; Already a pointer
                 (string-append "&" cv-name)) ;; Point to data
             (list
-                (string-append c-func "(" cv-name)))))
+                (string-append c-func "(" cv-name tdata-comma tdata)))))
      (else
-        (c-code (string-append c-func "("))))))
+        (c-code (string-append c-func "(" tdata))))))
 
 ;; END primitives
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
@@ -755,7 +823,7 @@
              (string-append
                (c:allocs->str (c:allocs cgen))
                "return_direct" (number->string num-cargs) 
-               "(" this-cont
+               "(data," this-cont
                (if (> num-cargs 0) "," "") ; TODO: how to propagate continuation - cont " "
                   (c:body cgen) ");"))))
 
@@ -780,11 +848,23 @@
                   (c:allocs c-args*) ;; fun alloc depends upon arg allocs
                   (list (string-append 
                     (car (c:allocs c-fun)) 
-                         (if (prim/c-var-assign fun) "" ",") ; Allocating C var
-                         (c:body c-args*) ");"))))
+                    (if (prim/c-var-assign fun)
+                      ;; Add a comma if there were any args to the func added by comp-prim
+                      (if (or (str-ending? (car (c:allocs c-fun)) "(") 
+                              (prim:cont/no-args? fun))
+                        "" 
+                        ",")
+                      ",")
+                    (c:body c-args*) ");"))))
               ;; Args stay with body
               (c:append
-                (c:append c-fun c-args*)
+                (c:append 
+                  (let ()
+                    ;; Add a comma if necessary
+                    (if (str-ending? (c:body c-fun) "(")
+                      c-fun
+                      (c:append c-fun (c-code ", "))))
+                  c-args*)
                 (c-code ")")))))
 
         ((equal? '%closure-ref fun)
@@ -807,7 +887,7 @@
                (c:allocs->str (c:allocs cfun) "\n")
                (c:allocs->str (c:allocs cargs) "\n")
                "return_closcall" (number->string (c:num-args cargs))
-               "("
+               "(data,"
                this-cont
                (if (> (c:num-args cargs) 0) "," "")
                (c:body cargs)
@@ -826,7 +906,7 @@
                 (c:allocs->str (c:allocs cfun) "\n")
                 (c:allocs->str (c:allocs cargs) "\n")
                 "return_closcall" (number->string num-cargs)
-                "("
+                "(data,"
                 this-cont
                 (if (> num-cargs 0) "," "")
                 (c:body cargs)
@@ -1088,7 +1168,7 @@
      (cons 
       (lambda (name)
         (string-append "static void " name 
-                       "(int argc, " 
+                       "(void *data, int argc, " 
                         formals*
                        ") {\n"
                        preamble
@@ -1174,7 +1254,7 @@
      (lambda (l)
        (emit*
          "static void __lambda_" 
-         (number->string (car l)) "(int argc, "
+         (number->string (car l)) "(void *data, int argc, "
          (cdadr l)
          ") ;"))
      lambdas)
@@ -1190,14 +1270,14 @@
     ; Emit entry point
     (cond
       (program?
-        (emit "static void c_entry_pt_first_lambda();")
+        (emit "static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value);")
         (for-each
           (lambda (lib-name)
-            (emit* "extern void c_" (lib:name->string lib-name) "_entry_pt(int argc, closure cont, object value);"))
+            (emit* "extern void c_" (lib:name->string lib-name) "_entry_pt(void *data, int argc, closure cont, object value);"))
           required-libs)
-        (emit "static void c_entry_pt(argc, env,cont) int argc; closure env,cont; { "))
+        (emit "static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { "))
       (else
-        (emit* "void c_" (lib:name->string lib-name) "_entry_pt(argc, cont,value) int argc; closure cont; object value;{ ")
+        (emit* "void c_" (lib:name->string lib-name) "_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ ")
         ; DEBUG (emit (string-append "printf(\"init " (lib:name->string lib-name) "\\n\");"))
       ))
 
@@ -1300,9 +1380,9 @@
             (reverse required-libs)) ;; Init each lib's dependencies 1st
           (emit* 
             ;; Start cont chain, but do not assume closcall1 macro was defined
-            "(" this-clo ".fn)(0, &" this-clo ", &" this-clo ");")
+            "(" this-clo ".fn)(data, 0, &" this-clo ", &" this-clo ");")
           (emit "}")
-          (emit "static void c_entry_pt_first_lambda(int argc, closure cont, object value) {")
+          (emit "static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {")
           ; DEBUG (emit (string-append "printf(\"init first lambda\\n\");"))
           (emit compiled-program)))
       (else
@@ -1312,7 +1392,7 @@
         (emit* 
             "(((closure)"
             (mangle-global (lib:name->symbol lib-name)) 
-            ")->fn)(1, cont, cont);")
+            ")->fn)(data, 1, cont, cont);")
       ))
 
     (emit "}")
