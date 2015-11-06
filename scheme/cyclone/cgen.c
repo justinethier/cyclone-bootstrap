@@ -10,7 +10,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall0(td,cfn) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[0]; \
      GC(td,cfn,buf,0); return; \
  } else {closcall0(td,(closure) (cfn)); return;}}
@@ -18,7 +18,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct0(td,_fn) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[0];  \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 0); return; \
@@ -28,7 +28,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall1(td,cfn,a1) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1;\
      GC(td,cfn,buf,1); return; \
  } else {closcall1(td,(closure) (cfn),a1); return;}}
@@ -36,7 +36,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct1(td,_fn,a1) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 1); return; \
@@ -46,7 +46,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall2(td,cfn,a1,a2) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td,cfn,buf,2); return; \
  } else {closcall2(td,(closure) (cfn),a1,a2); return;}}
@@ -54,7 +54,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct2(td,_fn,a1,a2) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 2); return; \
@@ -64,7 +64,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall3(td,cfn,a1,a2,a3) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td,cfn,buf,3); return; \
  } else {closcall3(td,(closure) (cfn),a1,a2,a3); return;}}
@@ -72,7 +72,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct3(td,_fn,a1,a2,a3) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 3); return; \
@@ -82,7 +82,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall4(td,cfn,a1,a2,a3,a4) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(td,cfn,buf,4); return; \
  } else {closcall4(td,(closure) (cfn),a1,a2,a3,a4); return;}}
@@ -90,7 +90,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct4(td,_fn,a1,a2,a3,a4) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 4); return; \
@@ -100,7 +100,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall5(td,cfn,a1,a2,a3,a4,a5) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
      GC(td,cfn,buf,5); return; \
  } else {closcall5(td,(closure) (cfn),a1,a2,a3,a4,a5); return;}}
@@ -108,7 +108,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct5(td,_fn,a1,a2,a3,a4,a5) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 5); return; \
@@ -118,7 +118,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall6(td,cfn,a1,a2,a3,a4,a5,a6) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;\
      GC(td,cfn,buf,6); return; \
  } else {closcall6(td,(closure) (cfn),a1,a2,a3,a4,a5,a6); return;}}
@@ -126,7 +126,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct6(td,_fn,a1,a2,a3,a4,a5,a6) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 6); return; \
@@ -136,7 +136,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall7(td,cfn,a1,a2,a3,a4,a5,a6,a7) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
      GC(td,cfn,buf,7); return; \
  } else {closcall7(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7); return;}}
@@ -144,7 +144,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct7(td,_fn,a1,a2,a3,a4,a5,a6,a7) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 7); return; \
@@ -154,7 +154,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
      GC(td,cfn,buf,8); return; \
  } else {closcall8(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8); return;}}
@@ -162,7 +162,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct8(td,_fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 8); return; \
@@ -172,7 +172,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;\
      GC(td,cfn,buf,9); return; \
  } else {closcall9(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8,a9); return;}}
@@ -180,7 +180,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct9(td,_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 9); return; \
@@ -28524,7 +28524,7 @@ make_string(c_733868, ") { \\\n");
 
 make_string(c_733869, " char stack; \\\n");
 
-make_string(c_733870, " if (check_overflow(&stack,stack_limit1)) { \\\n");
+make_string(c_733870, " if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \\\n");
 
 make_string(c_733871, "     object buf[");
 
@@ -28634,7 +28634,7 @@ make_string(c_733830, ") \\\n");
 
 make_string(c_733831, "{char stack; \\\n");
 
-make_string(c_733832, " if (check_overflow(&stack,stack_limit1)) { \\\n");
+make_string(c_733832, " if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \\\n");
 
 make_string(c_733833, "     object buf[");
 

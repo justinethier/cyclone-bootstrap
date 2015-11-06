@@ -64,7 +64,7 @@ void Cyc_check_bounds(void *data, const char *label, int len, int index) {
 /* Return to continuation after checking for stack overflow. */
 #define return_closcall1(td,cfn,a1) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1;\
      GC(td,cfn,buf,1); return; \
  } else {closcall1(td,(closure) (cfn),a1); return;}}
@@ -72,7 +72,7 @@ void Cyc_check_bounds(void *data, const char *label, int len, int index) {
 /* Return to continuation after checking for stack overflow. */
 #define return_closcall2(td,cfn,a1,a2) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td,cfn,buf,2); return; \
  } else {closcall2(td,(closure) (cfn),a1,a2); return;}}
@@ -82,9 +82,6 @@ void Cyc_check_bounds(void *data, const char *label, int len, int index) {
 gc_heap *Cyc_heap;
 gc_thread_data *Cyc_thread;
 clock_t start;   /* Starting time. */
-char *stack_begin;   /* Initialized by main. */
-char *stack_limit1;  /* Initialized by main. */
-char *stack_limit2;
 char *bottom;    /* Bottom of tospace. */
 char *allocp;    /* Cheney allocate pointer. */
 char *alloc_end;
@@ -2594,7 +2591,7 @@ char *gc_move(char *obj, gc_thread_data *thd, int *alloci, int *heap_grown) {
   temp = obj; \
   if (check_overflow(low_limit, temp) && \
       check_overflow(temp, high_limit)){ \
-    (obj) = (object) gc_move(temp, Cyc_thread, &alloci, &heap_grown); \
+    (obj) = (object) gc_move(temp, (gc_thread_data *)data, &alloci, &heap_grown); \
   } \
 }
 
@@ -2603,7 +2600,7 @@ void GC(void *data, closure cont, object *args, int num_args)
   char tmp;
   object temp;
   object low_limit = &tmp; // This is one end of the stack...
-  object high_limit = stack_begin; // TODO: move to thread-specific struct
+  object high_limit = ((gc_thread_data *)data)->stack_start;
   int i;
   int scani = 0, alloci = 0; // TODO: not quite sure how to do this yet, want to user pointers but realloc can move them... need to think about how this will work
   int heap_grown = 0;
@@ -2660,7 +2657,7 @@ void GC(void *data, closure cont, object *args, int num_args)
 
   // Check allocated objects, moving additional objects as needed
   while (scani < alloci) {
-    object obj = Cyc_thread->moveBuf[scani];
+    object obj = ((gc_thread_data *)data)->moveBuf[scani];
     switch(type_of(obj)) {
       case cons_tag: {
         gc_move2heap(car(obj));
@@ -2743,7 +2740,7 @@ void GC(void *data, closure cont, object *args, int num_args)
 #endif
   }
 
-//fprintf(stdout, "DEBUG, finished minor GC\n"); // JAE DEBUG
+  /* Let it all go, Neo... */
   longjmp(jmp_main, (int)(&data)); // Return globals gc_cont, gc_ans
 }
 

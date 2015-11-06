@@ -10,7 +10,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall0(td,cfn) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[0]; \
      GC(td,cfn,buf,0); return; \
  } else {closcall0(td,(closure) (cfn)); return;}}
@@ -18,7 +18,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct0(td,_fn) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[0];  \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 0); return; \
@@ -28,7 +28,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall1(td,cfn,a1) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1;\
      GC(td,cfn,buf,1); return; \
  } else {closcall1(td,(closure) (cfn),a1); return;}}
@@ -36,7 +36,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct1(td,_fn,a1) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 1); return; \
@@ -46,7 +46,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall2(td,cfn,a1,a2) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td,cfn,buf,2); return; \
  } else {closcall2(td,(closure) (cfn),a1,a2); return;}}
@@ -54,7 +54,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct2(td,_fn,a1,a2) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 2); return; \
@@ -64,7 +64,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall3(td,cfn,a1,a2,a3) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td,cfn,buf,3); return; \
  } else {closcall3(td,(closure) (cfn),a1,a2,a3); return;}}
@@ -72,7 +72,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct3(td,_fn,a1,a2,a3) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 3); return; \
@@ -82,7 +82,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall4(td,cfn,a1,a2,a3,a4) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(td,cfn,buf,4); return; \
  } else {closcall4(td,(closure) (cfn),a1,a2,a3,a4); return;}}
@@ -90,7 +90,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct4(td,_fn,a1,a2,a3,a4) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 4); return; \
@@ -100,7 +100,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall5(td,cfn,a1,a2,a3,a4,a5) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
      GC(td,cfn,buf,5); return; \
  } else {closcall5(td,(closure) (cfn),a1,a2,a3,a4,a5); return;}}
@@ -108,7 +108,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct5(td,_fn,a1,a2,a3,a4,a5) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 5); return; \
@@ -118,7 +118,7 @@
 /* Check for GC, then call given continuation closure */
 #define return_closcall118(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74,a75,a76,a77,a78,a79,a80,a81,a82,a83,a84,a85,a86,a87,a88,a89,a90,a91,a92,a93,a94,a95,a96,a97,a98,a99,a100,a101,a102,a103,a104,a105,a106,a107,a108,a109,a110,a111,a112,a113,a114,a115,a116,a117,a118) \
 {char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[118]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;buf[13] = a14;buf[14] = a15;buf[15] = a16;buf[16] = a17;buf[17] = a18;buf[18] = a19;buf[19] = a20;buf[20] = a21;buf[21] = a22;buf[22] = a23;buf[23] = a24;buf[24] = a25;buf[25] = a26;buf[26] = a27;buf[27] = a28;buf[28] = a29;buf[29] = a30;buf[30] = a31;buf[31] = a32;buf[32] = a33;buf[33] = a34;buf[34] = a35;buf[35] = a36;buf[36] = a37;buf[37] = a38;buf[38] = a39;buf[39] = a40;buf[40] = a41;buf[41] = a42;buf[42] = a43;buf[43] = a44;buf[44] = a45;buf[45] = a46;buf[46] = a47;buf[47] = a48;buf[48] = a49;buf[49] = a50;buf[50] = a51;buf[51] = a52;buf[52] = a53;buf[53] = a54;buf[54] = a55;buf[55] = a56;buf[56] = a57;buf[57] = a58;buf[58] = a59;buf[59] = a60;buf[60] = a61;buf[61] = a62;buf[62] = a63;buf[63] = a64;buf[64] = a65;buf[65] = a66;buf[66] = a67;buf[67] = a68;buf[68] = a69;buf[69] = a70;buf[70] = a71;buf[71] = a72;buf[72] = a73;buf[73] = a74;buf[74] = a75;buf[75] = a76;buf[76] = a77;buf[77] = a78;buf[78] = a79;buf[79] = a80;buf[80] = a81;buf[81] = a82;buf[82] = a83;buf[83] = a84;buf[84] = a85;buf[85] = a86;buf[86] = a87;buf[87] = a88;buf[88] = a89;buf[89] = a90;buf[90] = a91;buf[91] = a92;buf[92] = a93;buf[93] = a94;buf[94] = a95;buf[95] = a96;buf[96] = a97;buf[97] = a98;buf[98] = a99;buf[99] = a100;buf[100] = a101;buf[101] = a102;buf[102] = a103;buf[103] = a104;buf[104] = a105;buf[105] = a106;buf[106] = a107;buf[107] = a108;buf[108] = a109;buf[109] = a110;buf[110] = a111;buf[111] = a112;buf[112] = a113;buf[113] = a114;buf[114] = a115;buf[115] = a116;buf[116] = a117;buf[117] = a118;\
      GC(td,cfn,buf,118); return; \
  } else {closcall118(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74,a75,a76,a77,a78,a79,a80,a81,a82,a83,a84,a85,a86,a87,a88,a89,a90,a91,a92,a93,a94,a95,a96,a97,a98,a99,a100,a101,a102,a103,a104,a105,a106,a107,a108,a109,a110,a111,a112,a113,a114,a115,a116,a117,a118); return;}}
@@ -126,7 +126,7 @@
 /* Check for GC, then call C function directly */
 #define return_direct118(td,_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74,a75,a76,a77,a78,a79,a80,a81,a82,a83,a84,a85,a86,a87,a88,a89,a90,a91,a92,a93,a94,a95,a96,a97,a98,a99,a100,a101,a102,a103,a104,a105,a106,a107,a108,a109,a110,a111,a112,a113,a114,a115,a116,a117,a118) { \
  char stack; \
- if (check_overflow(&stack,stack_limit1)) { \
+ if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
      object buf[118]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;buf[13] = a14;buf[14] = a15;buf[15] = a16;buf[16] = a17;buf[17] = a18;buf[18] = a19;buf[19] = a20;buf[20] = a21;buf[21] = a22;buf[22] = a23;buf[23] = a24;buf[24] = a25;buf[25] = a26;buf[26] = a27;buf[27] = a28;buf[28] = a29;buf[29] = a30;buf[30] = a31;buf[31] = a32;buf[32] = a33;buf[33] = a34;buf[34] = a35;buf[35] = a36;buf[36] = a37;buf[37] = a38;buf[38] = a39;buf[39] = a40;buf[40] = a41;buf[41] = a42;buf[42] = a43;buf[43] = a44;buf[44] = a45;buf[45] = a46;buf[46] = a47;buf[47] = a48;buf[48] = a49;buf[49] = a50;buf[50] = a51;buf[51] = a52;buf[52] = a53;buf[53] = a54;buf[54] = a55;buf[55] = a56;buf[56] = a57;buf[57] = a58;buf[58] = a59;buf[59] = a60;buf[60] = a61;buf[61] = a62;buf[62] = a63;buf[63] = a64;buf[64] = a65;buf[65] = a66;buf[66] = a67;buf[67] = a68;buf[68] = a69;buf[69] = a70;buf[70] = a71;buf[71] = a72;buf[72] = a73;buf[73] = a74;buf[74] = a75;buf[75] = a76;buf[76] = a77;buf[77] = a78;buf[78] = a79;buf[79] = a80;buf[80] = a81;buf[81] = a82;buf[82] = a83;buf[83] = a84;buf[84] = a85;buf[85] = a86;buf[86] = a87;buf[87] = a88;buf[88] = a89;buf[89] = a90;buf[90] = a91;buf[91] = a92;buf[92] = a93;buf[93] = a94;buf[94] = a95;buf[95] = a96;buf[96] = a97;buf[97] = a98;buf[98] = a99;buf[99] = a100;buf[100] = a101;buf[101] = a102;buf[102] = a103;buf[103] = a104;buf[104] = a105;buf[105] = a106;buf[106] = a107;buf[107] = a108;buf[108] = a109;buf[109] = a110;buf[110] = a111;buf[111] = a112;buf[112] = a113;buf[113] = a114;buf[114] = a115;buf[115] = a116;buf[116] = a117;buf[117] = a118; \
      mclosure0(c1, _fn); \
      GC(td,&c1, buf, 118); return; \
