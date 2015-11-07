@@ -30624,7 +30624,7 @@ void c_schemecyclonecgen_entry_pt(data, argc, cont,value) void *data; int argc; 
   __glo__85c_91call_91arity_85 = boolean_f; 
   make_int(c_733666, 128); 
   __glo__85c_91call_91max_91args_85 = &c_733666; 
-  make_string(c_733665, "main(int argc,char **argv)\n{long stack_size = global_stack_size = STACK_SIZE;\n long heap_size = global_heap_size = HEAP_SIZE;\n _cyc_argc = argc;\n _cyc_argv = argv;\n Cyc_main(stack_size,heap_size,(char *) &stack_size);\n return 0;}"); 
+  make_string(c_733665, "main(int argc,char **argv)\n{long stack_size = global_stack_size = STACK_SIZE;\n long heap_size = global_heap_size = HEAP_SIZE;\n _cyc_argc = argc;\n _cyc_argv = argv;\n Cyc_heap_init(heap_size);\n Cyc_main(stack_size, (char *) &stack_size);\n return 0;}"); 
   __glo__85c_91main_91function_85 = &c_733665; 
 
   make_cvar(cvar_7310005, (object *)&__glo_lib_91init_117schemecyclonecgen);make_cons(pair_7310006, find_or_add_symbol("lib-init:schemecyclonecgen"), &cvar_7310005);
