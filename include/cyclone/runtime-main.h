@@ -28,37 +28,12 @@ static void Cyc_heap_init(long heap_size)
   printf("main: Allocating and initializing heap...\n");
 #endif
   Cyc_heap = gc_heap_create(heap_size / 2, 0, 0);
-  Cyc_mutators = malloc(sizeof(gc_thread_data *) * Cyc_num_mutators);
-  Cyc_num_mutators = 1; // TODO: alloca this using a vpbuffer, or maybe another type of data structure
+  // TODO: alloca this using a vpbuffer, or maybe another type of data structure??
+  // Will need this list for later use, but only by the collector thread. so it would be
+  // nice if there was a way to allocate mutators that avoids expensive synchronization...
+  // need to think on this when adding thread support, after upgrading the collector
+  Cyc_num_mutators = 1; 
+  Cyc_mutators = calloc(Cyc_num_mutators, sizeof(gc_thread_data *));
 }
-
-//static void Cyc_main (long stack_size, char *stack_base)
-//{
-//  mclosure0(clos_halt,&Cyc_halt);  // Halt if final closure is reached
-//  mclosure0(entry_pt,&c_entry_pt); // First function to execute
-//  Cyc_mutators[0] = malloc(sizeof(gc_thread_data));
-//  gc_thread_data_init(Cyc_mutators[0], 0, stack_base, stack_size);
-//  
-//  Cyc_mutators[0]->gc_cont = &entry_pt;
-//  Cyc_mutators[0]->gc_args[0] = &clos_halt;
-//  Cyc_mutators[0]->gc_num_args = 1;
-//
-//  /* Tank, load the jump program... */
-//  setjmp(*(Cyc_mutators[0]->jmp_start));
-//// TODO: note, if longjmp is passed 0 it will return 1. need to
-//// account for that there (add one to mut_num) and here (subtract 1 unless 0)
-//#if DEBUG_GC
-//  printf("Done with GC\n");
-//#endif
-//
-//// JAE - note for the general case, setjmp will return the data pointer's addy
-//  if (type_of(Cyc_mutators[0]->gc_cont) == cons_tag || prim(Cyc_mutators[0]->gc_cont)) {
-//    Cyc_apply_from_buf(Cyc_mutators[0], Cyc_mutators[0]->gc_num_args, Cyc_mutators[0]->gc_cont, Cyc_mutators[0]->gc_args);
-//  } else {
-//    do_dispatch(Cyc_mutators[0], Cyc_mutators[0]->gc_num_args, ((closure)(Cyc_mutators[0]->gc_cont))->fn, Cyc_mutators[0]->gc_cont, Cyc_mutators[0]->gc_args);
-//  }
-//
-//  printf("Internal error: should never have reached this line\n"); exit(0);
-//}
 
 #endif /* CYCLONE_RUNTIME_MAIN_H */
