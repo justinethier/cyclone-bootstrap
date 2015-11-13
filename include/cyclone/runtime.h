@@ -84,6 +84,7 @@ object cell_get(object cell);
 extern object Cyc_global_variables;
 int _cyc_argc;
 char **_cyc_argv;
+void Cyc_init_heap(long heap_size);
 object Cyc_get_global_variables();
 object Cyc_get_cvar(object var);
 object Cyc_set_cvar(object var, object value);
@@ -208,9 +209,6 @@ void dispatch_va(void *data, int argc, function_type_va func, object clo, object
 void do_dispatch(void *data, int argc, function_type func, object clo, object *buffer);
 
 /* Global variables. */
-extern gc_heap *Cyc_heap;
-extern gc_thread_data **Cyc_mutators;
-extern int Cyc_num_mutators;
 extern long no_gcs; /* Count the number of GC's. */
 extern long no_major_gcs; /* Count the number of GC's. */
 

@@ -16,7 +16,7 @@
 #include <stdarg.h>
 #include <string.h>
 #include <math.h>
-// TODO: #include <pthread.h>
+#include <pthread.h>
 
 // Maximum number of args that GC will accept
 #define NUM_GC_ANS 128
@@ -53,12 +53,12 @@ struct gc_thread_data_t {
   short gc_num_args;
   // Data needed for heap GC
   int gc_alloc_color;
-  int gc_mut_status;
+  int gc_status;
   int last_write;
   int last_read;
   void **mark_buffer;
   int mark_buffer_len;
-// TODO:   pthread_mutex_t lock;
+  pthread_mutex_t lock;
 };
 
 /* GC data structures */
@@ -108,7 +108,7 @@ typedef enum { STATUS_ASYNC
 
 typedef enum { STAGE_CLEAR_OR_MARKING 
              , STAGE_TRACING 
-             , STAGE_REF_PROCESSING 
+             //, STAGE_REF_PROCESSING 
              , STAGE_SWEEPING 
              , STAGE_RESTING
              } gc_stage_type;
@@ -125,6 +125,8 @@ void **vpbuffer_add(void **buf, int *len, int i, void *obj);
 void vpbuffer_free(void **buf);
 
 /* GC prototypes */
+void gc_init_mutators();
+void gc_add_mutator(gc_thread_data *thd);
 gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size);
 int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size);
 void *gc_try_alloc(gc_heap *h, size_t size);
@@ -132,14 +134,17 @@ void *gc_alloc(gc_heap *h, size_t size, int *heap_grown);
 size_t gc_allocated_bytes(object obj);
 gc_heap *gc_heap_last(gc_heap *h);
 size_t gc_heap_total_size(gc_heap *h);
-void gc_mark(gc_heap *h, object obj);
+//size_t gc_collect(gc_heap *h, size_t *sum_freed);
+//void gc_mark(gc_heap *h, object obj);
+void gc_mark_globals(void);
 size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr);
-size_t gc_collect(gc_heap *h, size_t *sum_freed);
 void gc_thr_grow_move_buffer(gc_thread_data *d);
 void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj);
 void gc_thread_data_init(gc_thread_data *thd, int mut_num, char *stack_base, long stack_size);
 void gc_thread_data_free(gc_thread_data *thd);
 // Prototypes for mutator/collector:
+void gc_mut_update(gc_thread_data *thd, object old_obj, object value);
+void gc_mut_cooperate(gc_thread_data *thd);
 void gc_mark_gray(gc_thread_data *thd, object obj);
 void gc_collector_trace();
 void gc_mark_black(object obj);
@@ -148,6 +153,8 @@ void gc_empty_collector_stack();
 void gc_handshake(gc_status_type s);
 void gc_post_handshake(gc_status_type s);
 void gc_wait_handshake();
+void gc_start_collector();
+gc_heap *Cyc_get_heap();
 
 /////////////////////////////////////////////
 // GC Collection cycle
@@ -404,6 +411,6 @@ typedef union {
 #define ATOMIC_INC(ptr) __sync_fetch_and_add((ptr),1)
 #define ATOMIC_DEC(ptr) __sync_fetch_and_sub((ptr),1)
 #define ATOMIC_GET(ptr) __sync_fetch_and_add((ptr),0)
-#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_val_compare_and_swap(ptr, oldv, newv)
+#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_bool_compare_and_swap(ptr, oldv, newv)
 
 #endif /* CYCLONE_TYPES_H */

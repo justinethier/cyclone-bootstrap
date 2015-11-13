@@ -79,9 +79,7 @@ void Cyc_check_bounds(void *data, const char *label, int len, int index) {
 /*END closcall section */
 
 /* Global variables. */
-gc_heap *Cyc_heap;
-gc_thread_data **Cyc_mutators;
-int Cyc_num_mutators;
+static gc_heap *Cyc_heap;
 long no_gcs = 0; /* Count the number of GC's. */
 long no_major_gcs = 0; /* Count the number of GC's. */
 
@@ -91,6 +89,16 @@ char **_cyc_argv = NULL;
 
 static symbol_type __EOF = {{0}, eof_tag, "", nil}; // symbol_type in lieu of custom type
 const object Cyc_EOF = &__EOF;
+
+void Cyc_init_heap(long heap_size)
+{
+  Cyc_heap = gc_heap_create(heap_size, 0, 0);
+}
+
+gc_heap *Cyc_get_heap()
+{
+  return Cyc_heap;
+}
 
 object cell_get(object cell){
     return car(cell);
@@ -772,6 +780,7 @@ object Cyc_eq(object x, object y) {
 
 object Cyc_set_car(void *data, object l, object val) {
     if (Cyc_is_cons(l) == boolean_f) Cyc_invalid_type_error(data, cons_tag, l);
+    gc_mut_update((gc_thread_data *)data, car(l), val);
     car(l) = val;
     add_mutation(l, val);
     return l;
@@ -779,6 +788,7 @@ object Cyc_set_car(void *data, object l, object val) {
 
 object Cyc_set_cdr(void *data, object l, object val) {
     if (Cyc_is_cons(l) == boolean_f) Cyc_invalid_type_error(data, cons_tag, l);
+    gc_mut_update((gc_thread_data *)data, cdr(l), val);
     cdr(l) = val;
     add_mutation(l, val);
     return l;
@@ -793,6 +803,10 @@ object Cyc_vector_set(void *data, object v, object k, object obj) {
   if (idx < 0 || idx >= ((vector)v)->num_elt) {
     Cyc_rt_raise2(data, "vector-set! - invalid index", k);
   }
+
+  gc_mut_update((gc_thread_data *)data, 
+                ((vector)v)->elts[idx],
+                obj);
 
   ((vector)v)->elts[idx] = obj;
   // TODO: probably could be more efficient here and also pass
@@ -2362,33 +2376,49 @@ void Cyc_start_thread(gc_thread_data *thd)
   exit(0);
 }
 
-// Collect garbage using mark&sweep algorithm
-// Note non-global roots should be marked prior to calling this function.
-size_t gc_collect(gc_heap *h, size_t *sum_freed) 
+//// Collect garbage using mark&sweep algorithm
+//// Note non-global roots should be marked prior to calling this function.
+//size_t gc_collect(gc_heap *h, size_t *sum_freed) 
+//{
+//#if GC_DEBUG_CONCISE_PRINTFS
+//  printf("(heap: %p size: %d)\n", h, (unsigned int)gc_heap_total_size(h));
+//#endif
+//  // Mark global variables
+//  gc_mark(h, Cyc_global_variables); // Internal global used by the runtime
+//                                    // Marking it ensures all glos are marked
+//  {
+//    list l = global_table;
+//    for(; !nullp(l); l = cdr(l)){
+//     cvar_type *c = (cvar_type *)car(l);
+//     gc_mark(h, *(c->pvar)); // Mark actual object the global points to
+//    }
+//  }
+//  // TODO: what else to mark? gc_mark(
+//  // conservative mark?
+//  // weak refs?
+//  // finalize?
+//  return gc_sweep(h, sum_freed);
+//  // debug print free stats?
+//}
+
+// Mark globals as part of the tracing collector
+// This is called by the collector thread
+void gc_mark_globals()
 {
 #if GC_DEBUG_CONCISE_PRINTFS
-  printf("(heap: %p size: %d)\n", h, (unsigned int)gc_heap_total_size(h));
+  printf("(gc_mark_globals heap: %p size: %d)\n", h, (unsigned int)gc_heap_total_size(h));
 #endif
   // Mark global variables
-  gc_mark(h, Cyc_global_variables); // Internal global used by the runtime
-                                    // Marking it ensures all glos are marked
+  gc_mark_black(Cyc_global_variables); // Internal global used by the runtime
+                                       // Marking it ensures all glos are marked
   {
     list l = global_table;
     for(; !nullp(l); l = cdr(l)){
      cvar_type *c = (cvar_type *)car(l);
-     gc_mark(h, *(c->pvar)); // Mark actual object the global points to
+     gc_mark_black(*(c->pvar)); // Mark actual object the global points to
     }
   }
-  // TODO: what else to mark? gc_mark(
-  // conservative mark?
-  // weak refs?
-  // finalize?
-  return gc_sweep(h, sum_freed);
-  // debug print free stats?
 }
-
-// TODO: move globals to thread-specific structures.
-// for example - gc_cont, gc_ans, gc_num_ans
 
 char *gc_move(char *obj, gc_thread_data *thd, int *alloci, int *heap_grown) {
   if (!is_object_type(obj)) return obj;
@@ -2723,29 +2753,32 @@ void GC(void *data, closure cont, object *args, int num_args)
 
 //fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
 
-  // Check if we need to do a major GC
-  if (heap_grown) {
-    size_t freed = 0, max_freed = 0;
-#if GC_DEBUG_CONCISE_PRINTFS
-    time_t majorStart = time(NULL);
-    fprintf(stdout, "DEBUG, starting major mark/sweep GC\n"); // JAE DEBUG
-#endif
-    gc_mark(Cyc_heap, cont);
-    for (i = 0; i < num_args; i++){ 
-      gc_mark(Cyc_heap, args[i]);
-    }
-    max_freed = gc_collect(Cyc_heap, &freed);
-#if GC_DEBUG_CONCISE_PRINTFS
-    printf("done, freed = %d, max_freed = %d, elapsed = %ld\n", freed, max_freed, time(NULL) - majorStart);
-    //JAE_DEBUG++;
-    //if (JAE_DEBUG == 2) exit(1); // JAE DEBUG
-    for (i = 0; i < 20; i++){
-      printf("gcMoveCountsDEBUG[%d] = %d\n", i, gcMoveCountsDEBUG[i]);
-    }
-#endif
-  }
+//  // Check if we need to do a major GC
+//  if (heap_grown) {
+//    size_t freed = 0, max_freed = 0;
+//#if GC_DEBUG_CONCISE_PRINTFS
+//    time_t majorStart = time(NULL);
+//    fprintf(stdout, "DEBUG, starting major mark/sweep GC\n"); // JAE DEBUG
+//#endif
+//    gc_mark(Cyc_heap, cont);
+//    for (i = 0; i < num_args; i++){ 
+//      gc_mark(Cyc_heap, args[i]);
+//    }
+//    max_freed = gc_collect(Cyc_heap, &freed);
+//#if GC_DEBUG_CONCISE_PRINTFS
+//    printf("done, freed = %d, max_freed = %d, elapsed = %ld\n", freed, max_freed, time(NULL) - majorStart);
+//    //JAE_DEBUG++;
+//    //if (JAE_DEBUG == 2) exit(1); // JAE DEBUG
+//    for (i = 0; i < 20; i++){
+//      printf("gcMoveCountsDEBUG[%d] = %d\n", i, gcMoveCountsDEBUG[i]);
+//    }
+//#endif
+//  }
 
-  /* Let it all go, Neo... */
+  // Cooperate with the collector thread
+  gc_mut_cooperate((gc_thread_data *)data);
+
+  // Let it all go, Neo...
   longjmp(*(((gc_thread_data *)data)->jmp_start), 1);
 }
 
