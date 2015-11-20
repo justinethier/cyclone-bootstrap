@@ -129,8 +129,9 @@ void gc_initialize();
 void gc_add_mutator(gc_thread_data *thd);
 gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size);
 int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size);
-void *gc_try_alloc(gc_heap *h, size_t size);
-void *gc_alloc(gc_heap *h, size_t size, int *heap_grown);
+char *gc_copy_obj(object hp, char *obj, gc_thread_data *thd);
+void *gc_try_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd);
+void *gc_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd, int *heap_grown);
 size_t gc_allocated_bytes(object obj);
 gc_heap *gc_heap_last(gc_heap *h);
 size_t gc_heap_total_size(gc_heap *h);
@@ -145,6 +146,8 @@ void gc_thread_data_free(gc_thread_data *thd);
 // Prototypes for mutator/collector:
 void gc_mut_update(gc_thread_data *thd, object old_obj, object value);
 void gc_mut_cooperate(gc_thread_data *thd);
+void gc_stack_mark_refs_gray(gc_thread_data *thd, object obj);
+void gc_stack_mark_gray(gc_thread_data *thd, object obj);
 void gc_mark_gray(gc_thread_data *thd, object obj);
 void gc_collector_trace();
 void gc_mark_black(object obj);
@@ -341,7 +344,7 @@ typedef cons_type *list;
 #define cddddr(x) (cdr(cdr(cdr(cdr(x)))))
 
 #define make_cons(n,a,d) \
-cons_type n; n.tag = cons_tag; n.cons_car = a; n.cons_cdr = d;
+cons_type n; n.hdr.mark = gc_color_red; n.tag = cons_tag; n.cons_car = a; n.cons_cdr = d;
 
 /* Closure types */
 

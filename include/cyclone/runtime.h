@@ -41,7 +41,8 @@ extern const object Cyc_EOF;
 
 object cell_get(object cell);
 
-#define global_set(glo,value) (glo=value)
+#define global_set(glo,value) Cyc_global_set(data, (object *)&glo, value)
+object Cyc_global_set(void *thd, object *glo, object value);
 
 /* Variable argument count support 
 
@@ -71,6 +72,7 @@ object cell_get(object cell);
         } else { \
             tmp = arg_var; \
         } \
+        var[i].hdr.mark = gc_color_red; \
         var[i].tag = cons_tag; \
         var[i].cons_car = tmp; \
         var[i].cons_cdr = (i == (count-1)) ? nil : &var[i + 1]; \

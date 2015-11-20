@@ -109,6 +109,159 @@ gc_heap *gc_heap_create(size_t size, size_t max_size, size_t chunk_size)
   return h;
 }
 
+// Copy given object into given heap object
+char *gc_copy_obj(object dest, char *obj, gc_thread_data *thd)
+{
+  // NOTE: no additional type checking because this is called from gc_move
+  // which already does that
+
+  switch(type_of(obj)){
+    case cons_tag: {
+      list hp = dest;
+      hp->hdr.mark = thd->gc_alloc_color;
+      type_of(hp) = cons_tag;
+      car(hp) = car(obj);
+      cdr(hp) = cdr(obj);
+      return (char *)hp;
+    }
+    case macro_tag: {
+      macro_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = macro_tag;
+      hp->fn = ((macro) obj)->fn;
+      hp->num_args = ((macro) obj)->num_args;
+      return (char *)hp;
+    }
+    case closure0_tag: {
+      closure0_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closure0_tag;
+      hp->fn = ((closure0) obj)->fn;
+      hp->num_args = ((closure0) obj)->num_args;
+      return (char *)hp;
+    }
+    case closure1_tag: {
+      closure1_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closure1_tag;
+      hp->fn = ((closure1) obj)->fn;
+      hp->num_args = ((closure1) obj)->num_args;
+      hp->elt1 = ((closure1) obj)->elt1;
+      return (char *)hp;
+    }
+    case closure2_tag: {
+      closure2_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closure2_tag;
+      hp->fn = ((closure2) obj)->fn;
+      hp->num_args = ((closure2) obj)->num_args;
+      hp->elt1 = ((closure2) obj)->elt1;
+      hp->elt2 = ((closure2) obj)->elt2;
+      return (char *)hp;
+    }
+    case closure3_tag: {
+      closure3_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closure3_tag;
+      hp->fn = ((closure3) obj)->fn;
+      hp->num_args = ((closure3) obj)->num_args;
+      hp->elt1 = ((closure3) obj)->elt1;
+      hp->elt2 = ((closure3) obj)->elt2;
+      hp->elt3 = ((closure3) obj)->elt3;
+      return (char *)hp;
+    }
+    case closure4_tag: {
+      closure4_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closure4_tag;
+      hp->fn = ((closure4) obj)->fn;
+      hp->num_args = ((closure4) obj)->num_args;
+      hp->elt1 = ((closure4) obj)->elt1;
+      hp->elt2 = ((closure4) obj)->elt2;
+      hp->elt3 = ((closure4) obj)->elt3;
+      hp->elt4 = ((closure4) obj)->elt4;
+      return (char *)hp;
+    }
+    case closureN_tag: {
+      int i;
+      closureN_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = closureN_tag;
+      hp->fn = ((closureN) obj)->fn;
+      hp->num_args = ((closureN) obj)->num_args;
+      hp->num_elt = ((closureN) obj)-> num_elt;
+      hp->elts = (object *)(((char *)hp) + sizeof(closureN_type));
+      for (i = 0; i < hp->num_elt; i++) {
+        hp->elts[i] = ((closureN) obj)->elts[i];
+      }
+      return (char *)hp;
+    }
+    case vector_tag: {
+      int i;
+      vector_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = vector_tag;
+      hp->num_elt = ((vector) obj)-> num_elt;
+      hp->elts = (object *)(((char *)hp) + sizeof(vector_type));
+      for (i = 0; i < hp->num_elt; i++) {
+        hp->elts[i] = ((vector) obj)->elts[i];
+      }
+      return (char *)hp;
+    }
+    case string_tag: {
+      char *s;
+      string_type *hp = dest;
+      s = ((char *)hp) + sizeof(string_type);
+      memcpy(s, string_str(obj), string_len(obj) + 1);
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = string_tag;
+      string_len(hp) = string_len(obj);
+      string_str(hp) = s;
+      return (char *)hp;
+    }
+    case integer_tag: {
+      integer_type *hp = dest; 
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = integer_tag;
+      hp->value = ((integer_type *) obj)->value;
+      return (char *)hp;
+    }
+    case double_tag: {
+      double_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = double_tag;
+      hp->value = ((double_type *) obj)->value;
+      return (char *)hp;
+    }
+    case port_tag: {
+      port_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = port_tag;
+      hp->fp = ((port_type *) obj)->fp;
+      hp->mode = ((port_type *) obj)->mode;
+      return (char *)hp;
+    }
+    case cvar_tag: {
+      cvar_type *hp = dest;
+      mark(hp) = thd->gc_alloc_color;
+      type_of(hp) = cvar_tag;
+      hp->pvar = ((cvar_type *) obj)->pvar;
+      return (char *)hp;
+    }
+    case forward_tag:
+      return (char *)forward(obj);
+    case eof_tag:
+    case primitive_tag:
+    case boolean_tag:
+    case symbol_tag:
+      break;
+    default:
+      fprintf(stderr, "gc_copy_obj: bad tag obj=%p obj.tag=%ld\n",(object) obj, type_of(obj));
+      exit(1);
+  }
+  return (char *)obj;
+}
+
 int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size)
 {
   size_t cur_size, new_size;
@@ -125,7 +278,7 @@ printf("DEBUG - grew heap\n");
   return (h_new != NULL);
 }
 
-void *gc_try_alloc(gc_heap *h, size_t size) 
+void *gc_try_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd) 
 {
   gc_free_list *f1, *f2, *f3;
   pthread_mutex_lock(&heap_lock);
@@ -143,6 +296,8 @@ void *gc_try_alloc(gc_heap *h, size_t size)
         } else { /* Take the whole chunk */
           f1->next = f2->next;
         }
+        // Copy object into heap now to avoid any uninitialized memory issues
+        gc_copy_obj(f2, obj, thd);
         pthread_mutex_unlock(&heap_lock);
         return f2;
       }
@@ -157,7 +312,7 @@ void *gc_try_alloc(gc_heap *h, size_t size)
 // maybe only lock during each individual operation, not for a whole
 // sweep or alloc
 
-void *gc_alloc(gc_heap *h, size_t size, int *heap_grown) 
+void *gc_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd, int *heap_grown) 
 {
   void *result = NULL;
   size_t max_freed = 0, sum_freed = 0, total_size;
@@ -166,7 +321,7 @@ void *gc_alloc(gc_heap *h, size_t size, int *heap_grown)
   // the allowed ratio, try growing heap.
   // then try realloc. if cannot alloc now, then throw out of memory error
   size = gc_heap_align(size);
-  result = gc_try_alloc(h, size);
+  result = gc_try_alloc(h, size, obj, thd);
   if (!result) {
     // TODO: may want to consider not doing this now, and implementing gc_collect as
     // part of the runtime, since we would have all of the roots, stack args, 
@@ -181,7 +336,7 @@ void *gc_alloc(gc_heap *h, size_t size, int *heap_grown)
       gc_grow_heap(h, size, 0);
       *heap_grown = 1;
 //    }
-    result = gc_try_alloc(h, size);
+    result = gc_try_alloc(h, size, obj, thd);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %d bytes\n", size);
       exit(1); // TODO: throw error???
@@ -325,16 +480,22 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
       size = gc_heap_align(gc_allocated_bytes(p));
 //fprintf(stdout, "check object %p, size = %d\n", p, size);
       
-#if GC_DEBUG_CONCISE_PRINTFS
+//#if GC_DEBUG_CONCISE_PRINTFS
       // DEBUG
-      if (!is_object_type(p))
+      if (!is_object_type(p)) {
         fprintf(stderr, "sweep: invalid object at %p", p);
-      if ((char *)q + q->size > (char *)p)
+        exit(1);
+      }
+      if ((char *)q + q->size > (char *)p) {
         fprintf(stderr, "bad size at %p < %p + %u", p, q, q->size);
-      if (r && ((char *)p) + size > (char *)r)
+        exit(1);
+      }
+      if (r && ((char *)p) + size > (char *)r) {
         fprintf(stderr, "sweep: bad size at %p + %d > %p", p, size, r);
+        exit(1);
+      }
       // END DEBUG
-#endif
+//#endif
 
       if (mark(p) == gc_color_clear) {
 #if GC_DEBUG_PRINTFS
@@ -526,15 +687,109 @@ PHASE 2 - multi-threaded mutator (IE, more than one stack thread):
 /////////////////////////////////////////////
 // GC functions called by the Mutator threads
 
-// Write barrier for updates to heap-allocated objects
+// Scan the given object and its refs, marking all heap objects. The issue
+// here is that the heap's write barrier can be invoked at any time and
+// we need to ensure any heap objects affected are traced
+void gc_stack_mark_gray(gc_thread_data *thd, object obj)
+{
+  char tmp;
+  object low_limit = &tmp;
+  object high_limit = ((gc_thread_data *)thd)->stack_start;
+  int color;
+
+  if (is_object_type(obj)) {
+    color = mark(obj);
+if (check_overflow(low_limit, obj) && 
+    check_overflow(obj, high_limit) &&
+    color != gc_color_red){ 
+  printf("stack object has wrong color %d!\n", color);
+  Cyc_display(obj, stdout);
+  printf("\n");
+  exit(1);
+}
+    if (color == gc_color_clear) {
+      gc_mark_gray(thd, obj);
+    } else if (color == gc_color_red) {
+      gc_stack_mark_refs_gray(thd, obj);
+    }
+  }
+}
+
+// Should only be called from above function as a helper
+//
+// TODO: this will probably hang procssing circular
+// references!!!! need to extend this once the concept is proven
+//
+// ideally would need some way of recording which nodes have
+// been visited. trick is that, unlike in other places, the
+// nodes may be visited multiple times so cannot destructively
+// alter them.
+void gc_stack_mark_refs_gray(gc_thread_data *thd, object obj)
+{
+  switch(type_of(obj)) {
+    case cons_tag: {
+      gc_stack_mark_gray(thd, car(obj));
+      gc_stack_mark_gray(thd, cdr(obj));
+      break;
+    }
+    case closure1_tag:
+      gc_stack_mark_gray(thd, ((closure1) obj)->elt1);
+      break;
+    case closure2_tag:
+      gc_stack_mark_gray(thd, ((closure2) obj)->elt1);
+      gc_stack_mark_gray(thd, ((closure2) obj)->elt2);
+    case closure3_tag:
+      gc_stack_mark_gray(thd, ((closure3) obj)->elt1);
+      gc_stack_mark_gray(thd, ((closure3) obj)->elt2);
+      gc_stack_mark_gray(thd, ((closure3) obj)->elt3);
+    case closure4_tag:
+      gc_stack_mark_gray(thd, ((closure4) obj)->elt1);
+      gc_stack_mark_gray(thd, ((closure4) obj)->elt2);
+      gc_stack_mark_gray(thd, ((closure4) obj)->elt3);
+      gc_stack_mark_gray(thd, ((closure4) obj)->elt4);
+      break;
+    case closureN_tag: {
+      int i, n = ((closureN) obj)->num_elt;
+      for (i = 0; i < n; i++) {
+        gc_stack_mark_gray(thd, ((closureN) obj)->elts[i]);
+      }
+      break;
+    }
+    case vector_tag: {
+      int i, n = ((vector) obj)->num_elt;
+      for (i = 0; i < n; i++) {
+        gc_stack_mark_gray(thd, ((vector) obj)->elts[i]);
+      }
+      break;
+    }
+    default:
+    break;
+  }
+}
+
+/**
+Write barrier for updates to heap-allocated objects
+Plans:
+The key for this barrier is to identify stack objects that contain
+heap references, so they can be marked to avoid collection.
+*/
 void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 {
   int status = ATOMIC_GET(&gc_status_col),
       stage = ATOMIC_GET(&gc_stage);
   if (thd->gc_status != STATUS_ASYNC) {
+//printf("DEBUG - GC sync marking heap obj %p ", old_obj);
+//Cyc_display(old_obj, stdout);
+//printf(" and new value %p ", value);
+//Cyc_display(value, stdout);
+////printf(" for heap object ");
+//printf("\n");
     gc_mark_gray(thd, old_obj);
-    gc_mark_gray(thd, value);
+    gc_stack_mark_gray(thd, value);
   } else if (stage == STAGE_TRACING) {
+//printf("DEBUG - GC async tracing marking heap obj %p ", old_obj);
+//Cyc_display(old_obj, stdout);
+//printf("\n");
     gc_mark_gray(thd, old_obj);
   }
 // TODO: concerned there may be an issue here with a stack object
@@ -574,8 +829,10 @@ void gc_mut_cooperate(gc_thread_data *thd)
   if (thd->gc_status != status) {
     if (thd->gc_status == STATUS_ASYNC) {
       // Async is done, so clean up old mark data from the last collection
+      pthread_mutex_lock(&(thd->lock));
       thd->last_write = 0;
       thd->last_read = 0;
+      pthread_mutex_unlock(&(thd->lock));
     }
     else if (thd->gc_status == STATUS_SYNC2) {
       // Mark thread "roots"
@@ -612,6 +869,27 @@ void gc_mark_gray(gc_thread_data *thd, object obj)
     pthread_mutex_unlock(&(thd->lock));
   }
 }
+
+// TODO: before doing this, may want to debug a bit and see what is
+// being passed to gc_mut_update. see if those objects tend to have
+// any heap refs. may need to add debug code to do that...
+//
+//
+//// This is called from the heap write barrier. The issue here is that
+//// this is not called during GC, so obj and some of its refs may be
+//// on the stack. So scan all refs and mark the ones that are on the heap
+//void gc_mark_gray_rec(gc_thread_data *thd, object obj)
+//{
+//  int mark;
+//
+//  if (is_object_type(obj)) {
+//    mark = mark(obj);
+//
+//// TODO: if we leave red as red and keep going, this could hang
+//// if there is a cycle!!
+//  }&& mark(obj) == gc_color_clear) { // TODO: sync??
+//
+//}
 
 void gc_collector_trace()
 {
@@ -688,10 +966,17 @@ void gc_mark_black(object obj)
         }
         break;
       }
+      //case cvar_tag: {
+      //  gc_collector_mark_gray( *(((cvar_type *)obj)->pvar) );
+      //  break;
+      //}
       default:
       break;
     }
-    mark(obj) = markColor;
+    if (mark(obj) != gc_color_red) {
+      // Only blacken objects on the heap
+      mark(obj) = markColor;
+    }
   }
 }
 
@@ -738,9 +1023,14 @@ void gc_wait_handshake()
   // TODO: same as in other places, need to either sync access to
   // mutator vars, or ensure only the collector uses them
   for (i = 0; i < Cyc_num_mutators; i++) {
-    statusc = ATOMIC_GET(&gc_status_col);
-    statusm = ATOMIC_GET(&(Cyc_mutators[i]->gc_status));
-    if (statusc != statusm) {
+    while (1) {
+      statusc = ATOMIC_GET(&gc_status_col);
+      statusm = ATOMIC_GET(&(Cyc_mutators[i]->gc_status));
+      if (statusc == statusm) {
+        // Handshake succeeded, check next mutator
+        break;
+      }
+
       // At least for now, just give up quantum and come back to
       // this quickly to test again. This probably could be more
       // efficient.
@@ -753,6 +1043,11 @@ void gc_wait_handshake()
 
 /////////////////////////////////////////////
 // GC Collection cycle
+
+//TODO: create function to print globals, ideally want names and the mark flag.
+//then call before/after tracing to see if we can catch a global not being marked.
+//want to rule out an issue here, since we have seen globals that were corrupted (IE, appears they were collected)
+void debug_dump_globals();
 
 // Main collector function
 void gc_collector()
@@ -773,23 +1068,24 @@ void gc_collector()
   while(!ATOMIC_SET_IF_EQ(&gc_color_mark, old_mark, old_clear)){}
 printf("DEBUG - swap clear %d / mark %d\n", gc_color_clear, gc_color_mark);
   gc_handshake(STATUS_SYNC1);
-printf("DEBUG - after handshake sync 1\n");
+//printf("DEBUG - after handshake sync 1\n");
   //mark : 
   gc_handshake(STATUS_SYNC2);
-printf("DEBUG - after handshake sync 2\n");
+//printf("DEBUG - after handshake sync 2\n");
   gc_stage = STAGE_TRACING;
   gc_post_handshake(STATUS_ASYNC);
-printf("DEBUG - after post_handshake aync\n");
+//printf("DEBUG - after post_handshake aync\n");
   gc_mark_globals();
   gc_wait_handshake();
-printf("DEBUG - after wait_handshake aync\n");
+//printf("DEBUG - after wait_handshake aync\n");
   //trace : 
   gc_collector_trace();
-printf("DEBUG - after trace\n");
+//printf("DEBUG - after trace\n");
+//debug_dump_globals();
   gc_stage = STAGE_SWEEPING;
   //
   //sweep : 
-  max_freed = gc_sweep(gc_get_heap(), &freed);
+  //max_freed = gc_sweep(gc_get_heap(), &freed);
   // TODO: grow heap if it is mostly full after collection??
 //#if GC_DEBUG_CONCISE_PRINTFS
     printf("sweep done, freed = %d, max_freed = %d, elapsed = %ld\n", 
@@ -806,7 +1102,14 @@ void *collector_main(void *arg)
     // this is inefficient but it should be good enough to 
     // at least stand up this collector. then we'll have to
     // come back and improve it
-    sleep(1);
+//
+//    some ideas:
+//    - maybe check amount of free space in heap, and collect if less than a certain amount/percentage.
+//      otherwise just sleep for awhile and check again.
+//      once that works, might consider a way to let a mutator alert the collector that it should kick off
+//    - after collection, maybe grow heap if usage is above a certain percentage
+//
+//    sleep(1);
   }
 }
 

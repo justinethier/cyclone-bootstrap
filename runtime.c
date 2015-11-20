@@ -12,6 +12,13 @@
 //int JAE_DEBUG = 0;
 //int gcMoveCountsDEBUG[20] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
 
+object Cyc_global_set(void *thd, object *glo, object value)
+{
+  gc_mut_update((gc_thread_data *)thd, *glo, value);
+  *(glo) = value;
+  return value;
+}
+
 /* Error checking section - type mismatch, num args, etc */
 /* Type names to use for error messages */
 const char *tag_names[21] = { \
@@ -206,6 +213,27 @@ void add_global(object *glo) {
   // this is more expedient
   global_table = mcons(mcvar(glo), global_table);
 }
+
+void debug_dump_globals()
+{
+  list l = global_table;
+  for(; !nullp(l); l = cdr(l)){
+   cvar_type *c = (cvar_type *)car(l);
+   //gc_mark(h, *(c->pvar)); // Mark actual object the global points to
+   printf("DEBUG %p ", c->pvar);
+   if (*c->pvar){
+     printf("mark = %d ", mark(*c->pvar));
+     if (mark(*c->pvar) == gc_color_red) {
+       printf("obj = ");
+       Cyc_display(*c->pvar, stdout);
+     }
+     printf("\n");
+   } else { 
+     printf(" is NULL\n");
+   }
+  }
+}
+
 /* END Global table */
 
 /* Mutation table
@@ -911,10 +939,12 @@ common_type Cyc_string2number(void *data, object str){
         n = atof(((string_type *) str)->str);
 
         if (ceilf(n) == n) {
+            result.integer_t.hdr.mark = gc_color_red;
             result.integer_t.tag = integer_tag;
             result.integer_t.value = (int)n;
         }
         else {
+            result.double_t.hdr.mark = gc_color_red;
             result.double_t.tag = double_tag;
             result.double_t.value = n;
         }
@@ -2417,7 +2447,10 @@ void gc_mark_globals()
     list l = global_table;
     for(; !nullp(l); l = cdr(l)){
      cvar_type *c = (cvar_type *)car(l);
-     gc_mark_black(*(c->pvar)); // Mark actual object the global points to
+     object glo =  *(c->pvar);
+     if (!nullp(glo)) {
+       gc_mark_black(glo); // Mark actual object the global points to
+     }
     }
   }
 }
@@ -2425,16 +2458,17 @@ void gc_mark_globals()
 char *gc_move(char *obj, gc_thread_data *thd, int *alloci, int *heap_grown) {
   if (!is_object_type(obj)) return obj;
 
-//gcMoveCountsDEBUG[type_of(obj)]++;
 
+// !!!
+// TODO: clean up code below and consolidate with gc_copy_obj in gc.c:
+// !!!
+
+
+//gcMoveCountsDEBUG[type_of(obj)]++;
 //printf("DEBUG gc_move type = %ld\n", type_of(obj)); // JAE DEBUG
   switch(type_of(obj)){
     case cons_tag: {
-      list hp = gc_alloc(Cyc_heap, sizeof(cons_type), heap_grown); // hp ==> new heap object
-      hp->hdr.mark = thd->gc_alloc_color;
-      type_of(hp) = cons_tag;
-      car(hp) = car(obj);
-      cdr(hp) = cdr(obj);
+      list hp = gc_alloc(Cyc_heap, sizeof(cons_type), obj, thd, heap_grown); // hp ==> new heap object
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       // keep track of each allocation so we can scan/move 
@@ -2443,169 +2477,97 @@ char *gc_move(char *obj, gc_thread_data *thd, int *alloci, int *heap_grown) {
       return (char *)hp;
     }
     case macro_tag: {
-      macro_type *hp = gc_alloc(Cyc_heap, sizeof(macro_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = macro_tag;
-      hp->fn = ((macro) obj)->fn;
-      hp->num_args = ((macro) obj)->num_args;
+      macro_type *hp = gc_alloc(Cyc_heap, sizeof(macro_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closure0_tag: {
-      closure0_type *hp = gc_alloc(Cyc_heap, sizeof(closure0_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closure0_tag;
-      hp->fn = ((closure0) obj)->fn;
-      hp->num_args = ((closure0) obj)->num_args;
+      closure0_type *hp = gc_alloc(Cyc_heap, sizeof(closure0_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closure1_tag: {
-      closure1_type *hp = gc_alloc(Cyc_heap, sizeof(closure1_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closure1_tag;
-      hp->fn = ((closure1) obj)->fn;
-      hp->num_args = ((closure1) obj)->num_args;
-      hp->elt1 = ((closure1) obj)->elt1;
+      closure1_type *hp = gc_alloc(Cyc_heap, sizeof(closure1_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closure2_tag: {
-      closure2_type *hp = gc_alloc(Cyc_heap, sizeof(closure2_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closure2_tag;
-      hp->fn = ((closure2) obj)->fn;
-      hp->num_args = ((closure2) obj)->num_args;
-      hp->elt1 = ((closure2) obj)->elt1;
-      hp->elt2 = ((closure2) obj)->elt2;
+      closure2_type *hp = gc_alloc(Cyc_heap, sizeof(closure2_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closure3_tag: {
-      closure3_type *hp = gc_alloc(Cyc_heap, sizeof(closure3_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closure3_tag;
-      hp->fn = ((closure3) obj)->fn;
-      hp->num_args = ((closure3) obj)->num_args;
-      hp->elt1 = ((closure3) obj)->elt1;
-      hp->elt2 = ((closure3) obj)->elt2;
-      hp->elt3 = ((closure3) obj)->elt3;
+      closure3_type *hp = gc_alloc(Cyc_heap, sizeof(closure3_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closure4_tag: {
-      closure4_type *hp = gc_alloc(Cyc_heap, sizeof(closure4_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closure4_tag;
-      hp->fn = ((closure4) obj)->fn;
-      hp->num_args = ((closure4) obj)->num_args;
-      hp->elt1 = ((closure4) obj)->elt1;
-      hp->elt2 = ((closure4) obj)->elt2;
-      hp->elt3 = ((closure4) obj)->elt3;
-      hp->elt4 = ((closure4) obj)->elt4;
+      closure4_type *hp = gc_alloc(Cyc_heap, sizeof(closure4_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case closureN_tag: {
-      int i;
       closureN_type *hp = gc_alloc(Cyc_heap, 
                             sizeof(closureN_type) + sizeof(object) * (((closureN) obj)->num_elt), 
-                            heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = closureN_tag;
-      hp->fn = ((closureN) obj)->fn;
-      hp->num_args = ((closureN) obj)->num_args;
-      hp->num_elt = ((closureN) obj)-> num_elt;
-      hp->elts = (object *)(((char *)hp) + sizeof(closureN_type));
-      for (i = 0; i < hp->num_elt; i++) {
-        hp->elts[i] = ((closureN) obj)->elts[i];
-      }
+                            obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case vector_tag: {
-      int i;
       vector_type *hp = gc_alloc(Cyc_heap, 
                             sizeof(vector_type) + sizeof(object) * (((vector) obj)->num_elt), 
-                            heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = vector_tag;
-      hp->num_elt = ((vector) obj)-> num_elt;
-      hp->elts = (object *)(((char *)hp) + sizeof(vector_type));
-      for (i = 0; i < hp->num_elt; i++) {
-        hp->elts[i] = ((vector) obj)->elts[i];
-      }
+                            obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case string_tag: {
-      char *s;
       string_type *hp = gc_alloc(Cyc_heap, 
         sizeof(string_type) + ((string_len(obj) + 1)), 
-        heap_grown);
-      s = ((char *)hp) + sizeof(string_type);
-      memcpy(s, string_str(obj), string_len(obj) + 1);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = string_tag;
-      string_len(hp) = string_len(obj);
-      string_str(hp) = s;
+        obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case integer_tag: {
-      integer_type *hp = gc_alloc(Cyc_heap, sizeof(integer_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = integer_tag;
-      hp->value = ((integer_type *) obj)->value;
+      integer_type *hp = gc_alloc(Cyc_heap, sizeof(integer_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case double_tag: {
-      double_type *hp = gc_alloc(Cyc_heap, sizeof(double_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = double_tag;
-      hp->value = ((double_type *) obj)->value;
+      double_type *hp = gc_alloc(Cyc_heap, sizeof(double_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case port_tag: {
-      port_type *hp = gc_alloc(Cyc_heap, sizeof(port_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = port_tag;
-      hp->fp = ((port_type *) obj)->fp;
-      hp->mode = ((port_type *) obj)->mode;
+      port_type *hp = gc_alloc(Cyc_heap, sizeof(port_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
       return (char *)hp;
     }
     case cvar_tag: {
-      cvar_type *hp = gc_alloc(Cyc_heap, sizeof(cvar_type), heap_grown);
-      mark(hp) = thd->gc_alloc_color;
-      type_of(hp) = cvar_tag;
-      hp->pvar = ((cvar_type *) obj)->pvar;
+      cvar_type *hp = gc_alloc(Cyc_heap, sizeof(cvar_type), obj, thd, heap_grown);
       forward(obj) = hp;
       type_of(obj) = forward_tag;
       gc_thr_add_to_move_buffer(thd, alloci, hp);
@@ -2618,7 +2580,7 @@ char *gc_move(char *obj, gc_thread_data *thd, int *alloci, int *heap_grown) {
     case boolean_tag: break;
     case symbol_tag: break; // JAE TODO: raise an error here? Should not be possible in real code, though (IE, without GC DEBUG flag)
     default:
-      fprintf(stderr, "gc_move: bad tag x=%p x.tag=%ld\n",(object) obj, type_of(obj));
+      fprintf(stderr, "gc_move: bad tag obj=%p obj.tag=%ld\n",(object) obj, type_of(obj));
       exit(1);
   }
   return (char *)obj;
@@ -2753,7 +2715,7 @@ void GC(void *data, closure cont, object *args, int num_args)
     scani++;
   }
 
-//fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
+fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
 
 //  // Check if we need to do a major GC
 //  if (heap_grown) {
