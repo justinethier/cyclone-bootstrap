@@ -65,6 +65,20 @@ struct gc_thread_data_t {
 
 typedef struct gc_free_list_t gc_free_list;
 struct gc_free_list_t {
+//  somehow this size param is being overwritten by a "mark() =".
+//  how could that happen?
+//somehow it appears free list pointers are being used where heap objects are
+//expected. could this be as simple as objects being sweeped that should not
+//have been? unfortunately it is harder to figure how why the objects were 
+//sweeped. were they not marked properly? is there a race condition? maybe
+//more than one issue? what is going on?
+//
+// the following line does not solve the problem. in fact, with this in
+// place there are still cases where the tag is a multiple of 32, implying
+// again that a free list node is being used as a heap object. IE, the
+// size value is being read into the tag field by code expecting a heap obj.
+//
+//unsigned int dummy; // just for testing/evaluation, this line is NOT a fix!!
   unsigned int size;
   gc_free_list *next;
 };
@@ -117,7 +131,7 @@ typedef enum { STAGE_CLEAR_OR_MARKING
 // The mark/clear colors are defined in the gc module because
 // the collector swaps their values as an optimization.
 #define gc_color_red  0 // Memory not to be GC'd, such as on the stack
-#define gc_color_blue 1 // Unallocated memory
+#define gc_color_blue 2 // Unallocated memory
 
 /* Utility functions */
 void **vpbuffer_realloc(void **buf, int *len);
@@ -132,7 +146,7 @@ int gc_grow_heap(gc_heap *h, size_t size, size_t chunk_size);
 char *gc_copy_obj(object hp, char *obj, gc_thread_data *thd);
 void *gc_try_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd);
 void *gc_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd, int *heap_grown);
-size_t gc_allocated_bytes(object obj);
+size_t gc_allocated_bytes(object obj, gc_free_list *q, gc_free_list *r);
 gc_heap *gc_heap_last(gc_heap *h);
 size_t gc_heap_total_size(gc_heap *h);
 //size_t gc_collect(gc_heap *h, size_t *sum_freed);

@@ -17,7 +17,7 @@
 
 // Note: will need to use atomics and/or locking to access any
 // variables shared between threads
-static int        gc_color_mark = 2; // Black, is swapped during GC
+static int        gc_color_mark = 1; // Black, is swapped during GC
 static int        gc_color_clear = 3; // White, is swapped during GC
 //static const int  gc_color_grey = 4; // TODO: appears unused, clean up
 // unfortunately this had to be split up; const colors are located in types.h
@@ -342,17 +342,28 @@ void *gc_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd, int *hea
       exit(1); // TODO: throw error???
     }
   }
-#if GC_DEBUG_PRINTFS
+//#if GC_DEBUG_PRINTFS
   fprintf(stdout, "alloc %p size = %d\n", result, size);
-#endif
+//#endif
+
+// TODO: Debug check, remove (ifdef it) once GC is stabilized
+if (is_value_type(result)) {
+  printf("Invalid allocated address - is a value type %p\n", result);
+}
+
   return result;
 }
 
-size_t gc_allocated_bytes(object obj)
+size_t gc_allocated_bytes(object obj, gc_free_list *q, gc_free_list *r)
 {
   tag_type t;
-  if (is_value_type(obj))
-    return gc_heap_align(1);
+  if (is_value_type(obj)) {
+    fprintf(stdout, 
+      "gc_allocated_bytes - passed value type %p q=[%p, %d] r=[%p, %d]\n", 
+      obj, q, q->size, r, r->size);
+    exit(1);
+    //return gc_heap_align(1);
+  }
   t = type_of(obj); 
   if (t == cons_tag) return gc_heap_align(sizeof(cons_type));
   if (t == macro_tag) return gc_heap_align(sizeof(macro_type));
@@ -472,12 +483,12 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
 
       if ((char *)r == (char *)p) { // this is a free block, skip it
         p = (object) (((char *)p) + r->size);
-#if GC_DEBUG_PRINTFS
+//#if GC_DEBUG_PRINTFS
         fprintf(stdout, "skip free block %p size = %d\n", p, r->size);
-#endif
+//#endif
         continue;
       }
-      size = gc_heap_align(gc_allocated_bytes(p));
+      size = gc_heap_align(gc_allocated_bytes(p, q, r));
 //fprintf(stdout, "check object %p, size = %d\n", p, size);
       
 //#if GC_DEBUG_CONCISE_PRINTFS
@@ -498,9 +509,10 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
 //#endif
 
       if (mark(p) == gc_color_clear) {
-#if GC_DEBUG_PRINTFS
-        fprintf(stdout, "sweep: object is not marked %p\n", p);
-#endif
+//#if GC_DEBUG_PRINTFS
+        //fprintf(stdout, "sweep: object is not marked %p\n", p);
+        fprintf(stdout, "sweep is freeing obj: %p with tag %ld\n", p, type_of(p));
+//#endif
         mark(p) = gc_color_blue; // Needed?
         // free p
         sum_freed += size;
@@ -699,6 +711,8 @@ void gc_stack_mark_gray(gc_thread_data *thd, object obj)
 
   if (is_object_type(obj)) {
     color = mark(obj);
+// TODO: no need to run this all the time. enclose in an "ifdef DEBUG" once
+// the GC is stabilized
 if (check_overflow(low_limit, obj) && 
     check_overflow(obj, high_limit) &&
     color != gc_color_red){ 
@@ -785,12 +799,16 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 ////printf(" for heap object ");
 //printf("\n");
     gc_mark_gray(thd, old_obj);
-    gc_stack_mark_gray(thd, value);
+    // TODO: need this too???
+    //gc_stack_mark_gray(thd, value);
   } else if (stage == STAGE_TRACING) {
 //printf("DEBUG - GC async tracing marking heap obj %p ", old_obj);
 //Cyc_display(old_obj, stdout);
 //printf("\n");
     gc_mark_gray(thd, old_obj);
+    printf("added to mark buffer (trace) from write barrier %p:", old_obj);
+    Cyc_display(old_obj, stdout);
+    printf("\n");
   }
 // TODO: concerned there may be an issue here with a stack object
 // having a 'tree' of references that contains heap objects. these
@@ -966,16 +984,21 @@ void gc_mark_black(object obj)
         }
         break;
       }
-      //case cvar_tag: {
-      //  gc_collector_mark_gray( *(((cvar_type *)obj)->pvar) );
-      //  break;
-      //}
+      case cvar_tag: {
+        cvar_type *c = (cvar_type *)obj;
+        object pvar = *(c->pvar);
+        if (pvar) {
+          gc_collector_mark_gray(pvar);
+        }
+        break;
+      }
       default:
       break;
     }
     if (mark(obj) != gc_color_red) {
       // Only blacken objects on the heap
       mark(obj) = markColor;
+      printf("marked %p %d\n", obj, markColor);
     }
   }
 }
@@ -1080,12 +1103,12 @@ printf("DEBUG - swap clear %d / mark %d\n", gc_color_clear, gc_color_mark);
 //printf("DEBUG - after wait_handshake aync\n");
   //trace : 
   gc_collector_trace();
-//printf("DEBUG - after trace\n");
+printf("DEBUG - after trace\n");
 //debug_dump_globals();
   gc_stage = STAGE_SWEEPING;
   //
   //sweep : 
-  //max_freed = gc_sweep(gc_get_heap(), &freed);
+  max_freed = gc_sweep(gc_get_heap(), &freed);
   // TODO: grow heap if it is mostly full after collection??
 //#if GC_DEBUG_CONCISE_PRINTFS
     printf("sweep done, freed = %d, max_freed = %d, elapsed = %ld\n", 

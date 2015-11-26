@@ -2715,7 +2715,7 @@ void GC(void *data, closure cont, object *args, int num_args)
     scani++;
   }
 
-fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
+//fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
 
 //  // Check if we need to do a major GC
 //  if (heap_grown) {
@@ -2742,6 +2742,7 @@ fprintf(stdout, "DEBUG done minor GC, alloci = %d\n", alloci);
   // Cooperate with the collector thread
   gc_mut_cooperate((gc_thread_data *)data);
 
+printf("done with minor GC\n");
   // Let it all go, Neo...
   longjmp(*(((gc_thread_data *)data)->jmp_start), 1);
 }
