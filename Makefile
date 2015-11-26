@@ -87,3 +87,7 @@ uninstall:
 	$(RMDIR) $(DESTDIR)$(DATADIR)/scheme
 	$(RMDIR) $(DESTDIR)$(DATADIR)
 
+.PHONY: debug
+debug:
+	./cyclone icyc.scm >> debug.out 2>&1
+
