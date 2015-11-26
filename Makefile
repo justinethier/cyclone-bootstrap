@@ -89,5 +89,5 @@ uninstall:
 
 .PHONY: debug
 debug:
-	./cyclone icyc.scm >> debug.out 2>&1
+	./cyclone icyc.scm > debug.out 2>&1
 
