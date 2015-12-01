@@ -858,8 +858,10 @@ void gc_mut_cooperate(gc_thread_data *thd)
     }
     else if (thd->gc_status == STATUS_SYNC2) {
       // Mark thread "roots"
+printf("gc_cont %p\n", thd->gc_cont);
       gc_mark_gray(thd, thd->gc_cont);
       for (i = 0; i < thd->gc_num_args; i++) {
+printf("gc_args[%d] %p\n", i, thd->gc_args[i]);
         gc_mark_gray(thd, thd->gc_args[i]);
       }
       thd->gc_alloc_color = ATOMIC_GET(&gc_color_mark);
@@ -929,9 +931,18 @@ void gc_collector_trace()
       pthread_mutex_lock(&(m->lock));
       while (m->last_read < m->last_write) {
         clean = 0;
-        (m->last_read)++;
+//TODO: I think there is an off-by-one error here. inspect last read/write.
+//is the code going one too many? per paper it is not, but based on
+//logs it looks like it is reading past end of buffer. (ie, errors always seem
+//to be on the last object traced, and checking the history, an object
+//incorrectly marked at position X can be seen to have been stored at position
+//X in a previous collection.
+printf("gc_mark_black mark buffer %p, last_read = %d last_write = %d\n", 
+(m->mark_buffer)[m->last_read],
+m->last_read, m->last_write);
         gc_mark_black((m->mark_buffer)[m->last_read]);
         gc_empty_collector_stack();
+        (m->last_read)++; // Inc here to try to prevent off-by-one errors
       }
       pthread_mutex_unlock(&(m->lock));
     }
@@ -1004,6 +1015,9 @@ void gc_mark_black(object obj)
       mark(obj) = markColor;
       printf("marked %p %d\n", obj, markColor);
     }
+    else {
+      printf("not marking stack obj %p %d\n", obj, markColor);
+    }
   }
 }
 
@@ -1016,7 +1030,7 @@ void gc_collector_mark_gray(object parent, object obj)
   // could lead to stack corruption.
   if (is_object_type(obj) && mark(obj) == gc_color_clear) {
     mark_stack = vpbuffer_add(mark_stack, &mark_stack_len, mark_stack_i++, obj);
-printf("mark gray parent = %p obj = %p\n", parent, obj);
+printf("mark gray parent = %p (%ld) obj = %p\n", parent, type_of(parent), obj);
   }
 }
 
