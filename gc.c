@@ -795,7 +795,7 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 //printf("\n");
     gc_mark_gray(thd, old_obj);
     // TODO: need this too???
-    //gc_stack_mark_gray(thd, value);
+    gc_stack_mark_gray(thd, value);
   } else if (stage == STAGE_TRACING) {
 //printf("DEBUG - GC async tracing marking heap obj %p ", old_obj);
 //Cyc_display(old_obj, stdout);

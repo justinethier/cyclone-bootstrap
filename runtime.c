@@ -8,6 +8,7 @@
 
 #include "cyclone/types.h"
 #include "cyclone/runtime.h"
+#include <signal.h> // TODO: only used for debugging!
 
 //int JAE_DEBUG = 0;
 //int gcMoveCountsDEBUG[20] = {0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0,0};
@@ -287,6 +288,7 @@ object Cyc_default_exception_handler(void *data, int argc, closure _, object err
     fprintf(stderr, "\nCall history:\n");
     Cyc_st_print(stderr);
     fprintf(stderr, "\n");
+raise(SIGINT); // break into debugger, unix only
     exit(1);
     return nil;
 }
@@ -2697,7 +2699,7 @@ void GC(void *data, closure cont, object *args, int num_args)
   // Cooperate with the collector thread
   gc_mut_cooperate((gc_thread_data *)data);
 
-#ifdef GC_DEBUG_TRACE
+#if GC_DEBUG_TRACE
   printf("done with minor GC\n");
 #endif
   // Let it all go, Neo...
