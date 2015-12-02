@@ -2249,7 +2249,7 @@ make_string(c_731505, "gcc ");
 
 make_string(c_731507, ".o ");
 
-make_string(c_731511, " -lcyclone -lm -g -o ");
+make_string(c_731511, " -pthread -lcyclone -lm -g -o ");
 
 object c_731504 = Cyc_string_append(data,(closure)&c_731458,6,&c_731505, ((closureN)self_73408)->elts[3], &c_731507, cell_get(((closureN)self_73408)->elts[5]), &c_731511, ((closureN)self_73408)->elts[3]);
 return_closcall1(data,(closure)&c_731458,  c_731504);; 
