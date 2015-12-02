@@ -704,7 +704,7 @@ void gc_stack_mark_gray3(gc_thread_data *thd, object obj, int depth)
   object high_limit = ((gc_thread_data *)thd)->stack_start;
   int color;
 
-  if (is_object_type(obj) && depth < 10) {
+  if (is_object_type(obj) && depth < 100) {
     color = mark(obj);
 #if GC_SAFETY_CHECKS
     if (check_overflow(low_limit, obj) && 
