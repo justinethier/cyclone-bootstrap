@@ -3548,6 +3548,12 @@ c_739747.elts = (object *)alloca(sizeof(object) * 2);
 c_739747.elts[0] = k_73795;
 c_739747.elts[1] = l_73378;
 
+// JAE - examine contents of each l
+TODO: print lambdas out before this. need to figure out which function to do that from though
+fprintf(stdout, "l = ");
+Cyc_display(l_73378, stdout);
+fprintf(stdout, "\n");
+// END
 return_closcall1(data,(closure)&c_739747,  car(l_73378));; 
 }
 
