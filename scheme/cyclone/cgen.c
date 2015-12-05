@@ -3189,9 +3189,9 @@ c_739119.elts[5] = ((closureN)self_732004)->elts[5];
 
 
 // JAE - examine contents of each global
-fprintf(stdout, "globals = ");
-Cyc_display(__glo__85globals_85, stdout);
-fprintf(stdout, "\n");
+fprintf(stderr, "globals = ");
+Cyc_display(__glo__85globals_85, stderr);
+fprintf(stderr, "\n");
 // END
 make_string(c_739803, "#include \"cyclone/types.h\"");
 return_closcall2(data,  __glo_emit,  &c_739119, &c_739803);; 
@@ -3423,9 +3423,9 @@ c_739129.elts[4] = ((closureN)self_732018)->elts[4];
 
 
 // JAE - examine contents of each l
-fprintf(stdout, "global lambdas = ");
-Cyc_display(__glo_lambdas, stdout);
-fprintf(stdout, "\n");
+fprintf(stderr, "global lambdas = ");
+Cyc_display(__glo_lambdas, stderr);
+fprintf(stderr, "\n");
 // END
 make_string(c_739773, "#include \"cyclone/runtime.h\"");
 return_closcall2(data,  __glo_emit,  &c_739129, &c_739773);; 
@@ -3559,9 +3559,9 @@ c_739747.elts[0] = k_73795;
 c_739747.elts[1] = l_73378;
 
 // JAE - examine contents of each l
-fprintf(stdout, "l = ");
-Cyc_display(l_73378, stdout);
-fprintf(stdout, "\n");
+fprintf(stderr, "l = ");
+Cyc_display(l_73378, stderr);
+fprintf(stderr, "\n");
 // END
 return_closcall1(data,(closure)&c_739747,  car(l_73378));; 
 }
@@ -10101,7 +10101,7 @@ make_int(c_738215, 1);
 
 common_type c_738214 = Cyc_sum(data,2,&c_738215, __glo_num_91lambdas);
 // JAE
-fprintf(stdout, "set num lambdas to %d\n", c_738214.integer_t.value);
+fprintf(stderr, "set num lambdas to %d\n", c_738214.integer_t.value);
 //END
 return_closcall1(data,(closure)&c_738191,  &c_738214);; 
 }
@@ -10171,7 +10171,7 @@ c_738199.elts[0] = ((closureN)self_732374)->elts[0];
 c_738199.elts[1] = ((closureN)self_732374)->elts[1];
 
 // JAE
-fprintf(stdout, "set lambdas from %p to %p\n", *(&__glo_lambdas), r_73997);
+fprintf(stderr, "set lambdas from %p to %p\n", *(&__glo_lambdas), r_73997);
 //END
 return_closcall1(data,(closure)&c_738199,  global_set(__glo_lambdas, r_73997));; 
 }
