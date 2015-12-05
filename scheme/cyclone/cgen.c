@@ -10100,6 +10100,9 @@ c_738191.elts[2] = ((closureN)self_732370)->elts[1];
 make_int(c_738215, 1);
 
 common_type c_738214 = Cyc_sum(data,2,&c_738215, __glo_num_91lambdas);
+// JAE
+fprintf(stdout, "set num lambdas to %d\n", c_738214.integer_t.value);
+//END
 return_closcall1(data,(closure)&c_738191,  &c_738214);; 
 }
 
@@ -10167,6 +10170,9 @@ c_738199.elts = (object *)alloca(sizeof(object) * 2);
 c_738199.elts[0] = ((closureN)self_732374)->elts[0];
 c_738199.elts[1] = ((closureN)self_732374)->elts[1];
 
+// JAE
+fprintf(stdout, "set lambdas from %p to %p\n", *(&glo), r_73997);
+//END
 return_closcall1(data,(closure)&c_738199,  global_set(__glo_lambdas, r_73997));; 
 }
 
