@@ -3417,6 +3417,11 @@ c_739129.elts[3] = ((closureN)self_732018)->elts[3];
 c_739129.elts[4] = ((closureN)self_732018)->elts[4];
 
 
+// JAE - examine contents of each l
+fprintf(stdout, "global lambdas = ");
+Cyc_display(__glo_lambdas, stdout);
+fprintf(stdout, "\n");
+// END
 make_string(c_739773, "#include \"cyclone/runtime.h\"");
 return_closcall2(data,  __glo_emit,  &c_739129, &c_739773);; 
 }
@@ -3549,7 +3554,6 @@ c_739747.elts[0] = k_73795;
 c_739747.elts[1] = l_73378;
 
 // JAE - examine contents of each l
-TODO: print lambdas out before this. need to figure out which function to do that from though
 fprintf(stdout, "l = ");
 Cyc_display(l_73378, stdout);
 fprintf(stdout, "\n");
