@@ -3188,6 +3188,11 @@ c_739119.elts[4] = ((closureN)self_732004)->elts[4];
 c_739119.elts[5] = ((closureN)self_732004)->elts[5];
 
 
+// JAE - examine contents of each global
+fprintf(stdout, "globals = ");
+Cyc_display(__glo__85globals_85, stdout);
+fprintf(stdout, "\n");
+// END
 make_string(c_739803, "#include \"cyclone/types.h\"");
 return_closcall2(data,  __glo_emit,  &c_739119, &c_739803);; 
 }
