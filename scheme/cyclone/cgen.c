@@ -10171,7 +10171,7 @@ c_738199.elts[0] = ((closureN)self_732374)->elts[0];
 c_738199.elts[1] = ((closureN)self_732374)->elts[1];
 
 // JAE
-fprintf(stdout, "set lambdas from %p to %p\n", *(&glo), r_73997);
+fprintf(stdout, "set lambdas from %p to %p\n", *(&__glo_lambdas), r_73997);
 //END
 return_closcall1(data,(closure)&c_738199,  global_set(__glo_lambdas, r_73997));; 
 }
