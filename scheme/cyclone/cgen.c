@@ -8857,6 +8857,7 @@ make_string(c_738598, ";\n");
 
 make_string(c_738600, ".hdr.mark = gc_color_red;\n ");
 
+make_string(c_tmp, ".hdr.grayed = 0;\n");
 make_string(c_738602, ".tag = closureN_tag;\n ");
 
 make_string(c_738604, ".fn = (function_type)__lambda_");
@@ -8875,7 +8876,11 @@ make_string(c_738616, ".elts = (object *)alloca(sizeof(object) * ");
 
 make_string(c_738618, ");\n");
 
-object c_738595 = Cyc_string_append(data,  ((closureN)self_732305)->elts[1],24,&c_738596, ((closureN)self_732305)->elts[0], &c_738598, ((closureN)self_732305)->elts[0], &c_738600, ((closureN)self_732305)->elts[0], &c_738602, ((closureN)self_732305)->elts[0], &c_738604, ((closureN)self_732305)->elts[2], &c_738606, ((closureN)self_732305)->elts[0], &c_738608, ((closureN)self_732305)->elts[3], &c_738610, ((closureN)self_732305)->elts[0], &c_738612, ((closureN)self_732305)->elts[4], &c_738614, ((closureN)self_732305)->elts[0], &c_738616, ((closureN)self_732305)->elts[5], &c_738618, r_73925);
+object c_738595 = Cyc_string_append(data,  ((closureN)self_732305)->elts[1],26,&c_738596, 
+((closureN)self_732305)->elts[0], &c_738598, 
+((closureN)self_732305)->elts[0], &c_738600, 
+((closureN)self_732305)->elts[0], &c_tmp, 
+((closureN)self_732305)->elts[0], &c_738602, ((closureN)self_732305)->elts[0], &c_738604, ((closureN)self_732305)->elts[2], &c_738606, ((closureN)self_732305)->elts[0], &c_738608, ((closureN)self_732305)->elts[3], &c_738610, ((closureN)self_732305)->elts[0], &c_738612, ((closureN)self_732305)->elts[4], &c_738614, ((closureN)self_732305)->elts[0], &c_738616, ((closureN)self_732305)->elts[5], &c_738618, r_73925);
 return_closcall1(data,  ((closureN)self_732305)->elts[1],  c_738595);; 
 }
 
