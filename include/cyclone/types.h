@@ -56,6 +56,7 @@ struct gc_thread_data_t {
   int gc_status;
   int last_write;
   int last_read;
+  int pending_writes;
   void **mark_buffer;
   int mark_buffer_len;
   pthread_mutex_t lock;
@@ -95,11 +96,11 @@ struct gc_heap_t {
 
 typedef struct gc_header_type_t gc_header_type;
 struct gc_header_type_t {
-  //unsigned char mark; // mark bits (only need 2)
   unsigned int mark; // mark bits (only need 2)
-  // TODO: forwarding address (probably not needed for mark/sweep), anything else???
+  unsigned char grayed; // stack object to be grayed when moved to heap
 };
 #define mark(x) (((list) x)->hdr.mark)
+#define grayed(x) (((list) x)->hdr.grayed)
 
 /* HEAP definitions */
 // experimenting with a heap based off of the one in Chibi scheme
@@ -158,11 +159,13 @@ void gc_thr_add_to_move_buffer(gc_thread_data *d, int *alloci, object obj);
 void gc_thread_data_init(gc_thread_data *thd, int mut_num, char *stack_base, long stack_size);
 void gc_thread_data_free(gc_thread_data *thd);
 // Prototypes for mutator/collector:
+int gc_is_stack_obj(gc_thread_data *thd, object obj);
 void gc_mut_update(gc_thread_data *thd, object old_obj, object value);
 void gc_mut_cooperate(gc_thread_data *thd, int buf_len);
 void gc_stack_mark_refs_gray(gc_thread_data *thd, object obj, int depth);
 void gc_stack_mark_gray(gc_thread_data *thd, object obj);
 void gc_mark_gray(gc_thread_data *thd, object obj);
+void gc_mark_gray2(gc_thread_data *thd, object obj);
 void gc_collector_trace();
 void gc_mark_black(object obj);
 void gc_collector_mark_gray(object parent, object obj);
@@ -259,7 +262,7 @@ typedef void (*function_type_va)(int, object, object, object, ...);
 /* Define C-variable integration type */
 typedef struct {gc_header_type hdr; tag_type tag; object *pvar;} cvar_type;
 typedef cvar_type *cvar;
-#define make_cvar(n,v) cvar_type n; n.hdr.mark = gc_color_red; n.tag = cvar_tag; n.pvar = v;
+#define make_cvar(n,v) cvar_type n; n.hdr.mark = gc_color_red; n.hdr.grayed = 0; n.tag = cvar_tag; n.pvar = v;
 
 /* Define boolean type. */
 typedef struct {gc_header_type hdr; const tag_type tag; const char *pname;} boolean_type;
@@ -280,9 +283,9 @@ static object quote_##name = nil;
 
 /* Define numeric types */
 typedef struct {gc_header_type hdr; tag_type tag; int value;} integer_type;
-#define make_int(n,v) integer_type n; n.hdr.mark = gc_color_red; n.tag = integer_tag; n.value = v;
+#define make_int(n,v) integer_type n; n.hdr.mark = gc_color_red; n.hdr.grayed = 0; n.tag = integer_tag; n.value = v;
 typedef struct {gc_header_type hdr; tag_type tag; double value;} double_type;
-#define make_double(n,v) double_type n; n.hdr.mark = gc_color_red; n.tag = double_tag; n.value = v;
+#define make_double(n,v) double_type n; n.hdr.mark = gc_color_red; n.hdr.grayed = 0; n.tag = double_tag; n.value = v;
 
 #define integer_value(x) (((integer_type *) x)->value)
 #define double_value(x) (((double_type *) x)->value)
@@ -293,16 +296,16 @@ typedef struct {gc_header_type hdr; tag_type tag; int len; char *str;} string_ty
 //// all functions that allocate strings, the GC, cgen, and maybe more.
 //// Because these strings are (at least for now) allocaed on the stack.
 #define make_string(cs, s) string_type cs; \
-{ int len = strlen(s); cs.tag = string_tag; cs.len = len; cs.hdr.mark = gc_color_red; \
+{ int len = strlen(s); cs.tag = string_tag; cs.len = len; cs.hdr.mark = gc_color_red; cs.hdr.grayed = 0; \
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len + 1);}
-#define make_string_with_len(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; \
+#define make_string_with_len(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; cs.hdr.grayed = 0; \
 { int len = length; \
   cs.tag = string_tag; cs.len = len; \
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len); \
   cs.str[len] = '\0';}
-#define make_string_noalloc(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; \
+#define make_string_noalloc(cs, s, length) string_type cs; cs.hdr.mark = gc_color_red; cs.hdr.grayed = 0; \
 { cs.tag = string_tag; cs.len = length; \
   cs.str = s; }
 
@@ -316,14 +319,14 @@ typedef struct {gc_header_type hdr; tag_type tag; int len; char *str;} string_ty
 // TODO: a simple wrapper around FILE may not be good enough long-term
 // TODO: how exactly mode will be used. need to know r/w, bin/txt
 typedef struct {gc_header_type hdr; tag_type tag; FILE *fp; int mode;} port_type;
-#define make_port(p,f,m) port_type p; p.hdr.mark = gc_color_red; p.tag = port_tag; p.fp = f; p.mode = m;
+#define make_port(p,f,m) port_type p; p.hdr.mark = gc_color_red; p.hdr.grayed = 0; p.tag = port_tag; p.fp = f; p.mode = m;
 
 /* Vector type */
 
 typedef struct {gc_header_type hdr; tag_type tag; int num_elt; object *elts;} vector_type;
 typedef vector_type *vector;
 
-#define make_empty_vector(v) vector_type v; v.hdr.mark = gc_color_red; v.tag = vector_tag; v.num_elt = 0; v.elts = NULL;
+#define make_empty_vector(v) vector_type v; v.hdr.mark = gc_color_red; v.hdr.grayed = 0; v.tag = vector_tag; v.num_elt = 0; v.elts = NULL;
 
 /* Define cons type. */
 
@@ -362,7 +365,7 @@ typedef cons_type *list;
 #define cddddr(x) (cdr(cdr(cdr(cdr(x)))))
 
 #define make_cons(n,a,d) \
-cons_type n; n.hdr.mark = gc_color_red; n.tag = cons_tag; n.cons_car = a; n.cons_cdr = d;
+cons_type n; n.hdr.mark = gc_color_red; n.hdr.grayed = 0; n.tag = cons_tag; n.cons_car = a; n.cons_cdr = d;
 
 /* Closure types */
 
@@ -383,15 +386,15 @@ typedef closureN_type *closureN;
 typedef closure0_type *closure;
 typedef closure0_type *macro;
 
-#define mmacro(c,f) macro_type c; c.hdr.mark = gc_color_red; c.tag = macro_tag; c.fn = f; c.num_args = -1;
-#define mclosure0(c,f) closure0_type c; c.hdr.mark = gc_color_red; c.tag = closure0_tag; c.fn = f; c.num_args = -1;
-#define mclosure1(c,f,a) closure1_type c; c.hdr.mark = gc_color_red; c.tag = closure1_tag; \
+#define mmacro(c,f) macro_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = macro_tag; c.fn = f; c.num_args = -1;
+#define mclosure0(c,f) closure0_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = closure0_tag; c.fn = f; c.num_args = -1;
+#define mclosure1(c,f,a) closure1_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = closure1_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a;
-#define mclosure2(c,f,a1,a2) closure2_type c; c.hdr.mark = gc_color_red; c.tag = closure2_tag; \
+#define mclosure2(c,f,a1,a2) closure2_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = closure2_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2;
-#define mclosure3(c,f,a1,a2,a3) closure3_type c; c.hdr.mark = gc_color_red; c.tag = closure3_tag; \
+#define mclosure3(c,f,a1,a2,a3) closure3_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = closure3_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2; c.elt3 = a3;
-#define mclosure4(c,f,a1,a2,a3,a4) closure4_type c; c.hdr.mark = gc_color_red; c.tag = closure4_tag; \
+#define mclosure4(c,f,a1,a2,a3,a4) closure4_type c; c.hdr.mark = gc_color_red; c.hdr.grayed = 0; c.tag = closure4_tag; \
    c.fn = f; c.num_args = -1; c.elt1 = a1; c.elt2 = a2; c.elt3 = a3; c.elt4 = a4;
 
 #define mlist1(e1) (mcons(e1,nil))

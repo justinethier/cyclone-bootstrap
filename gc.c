@@ -721,7 +721,9 @@ void gc_stack_mark_gray3(gc_thread_data *thd, object obj, int depth)
     }
 #endif
     if (color == gc_color_clear) {
+      pthread_mutex_lock(&(thd->lock));
       gc_mark_gray(thd, obj);
+      pthread_mutex_unlock(&(thd->lock));
       //fprintf(stderr, "marked heap obj from stack barrier %p %d\n", obj, color);
     } else if (color == gc_color_red) {
       gc_stack_mark_refs_gray(thd, obj, depth + 1);
@@ -787,6 +789,18 @@ void gc_stack_mark_refs_gray(gc_thread_data *thd, object obj, int depth)
 }
 
 /**
+ * Determine if object lives on the thread's stack
+ */
+int gc_is_stack_obj(gc_thread_data *thd, object obj)
+{
+  char tmp;
+  object low_limit = &tmp;
+  object high_limit = thd->stack_start;
+  return (check_overflow(low_limit, obj) && 
+          check_overflow(obj, high_limit));
+}
+
+/**
 Write barrier for updates to heap-allocated objects
 Plans:
 The key for this barrier is to identify stack objects that contain
@@ -803,14 +817,23 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 //Cyc_display(value, stderr);
 ////fprintf(stderr, " for heap object ");
 //fprintf(stderr, "\n");
+    pthread_mutex_lock(&(thd->lock));
     gc_mark_gray(thd, old_obj);
-    // TODO: need this too???
-    gc_stack_mark_gray(thd, value);
+    // Check if value is on the heap. If so, mark gray right now,
+    // otherwise set it to be marked after moved to heap by next GC
+    if (gc_is_stack_obj(thd, value)) {
+      grayed(value) = 1;
+    } else {
+      gc_mark_gray(thd, value);
+    }
+    pthread_mutex_unlock(&(thd->lock));
   } else if (stage == STAGE_TRACING) {
 //fprintf(stderr, "DEBUG - GC async tracing marking heap obj %p ", old_obj);
 //Cyc_display(old_obj, stderr);
 //fprintf(stderr, "\n");
+    pthread_mutex_lock(&(thd->lock));
     gc_mark_gray(thd, old_obj);
+    pthread_mutex_unlock(&(thd->lock));
 #if GC_DEBUG_VERBOSE
     if (is_object_type(old_obj) && mark(old_obj) == gc_color_clear) {
       fprintf(stderr, "added to mark buffer (trace) from write barrier %p:mark %d:", old_obj, mark(old_obj));
@@ -853,23 +876,33 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
 {
   int i, status = ATOMIC_GET(&gc_status_col);
+
+  // Handle any pending marks from write barrier
+  pthread_mutex_lock(&(thd->lock));
+  thd->last_write += thd->pending_writes;
+  thd->pending_writes = 0;
+  pthread_mutex_unlock(&(thd->lock));
+
   if (thd->gc_status != status) {
     if (thd->gc_status == STATUS_ASYNC) {
       // Async is done, so clean up old mark data from the last collection
       pthread_mutex_lock(&(thd->lock));
       thd->last_write = 0;
       thd->last_read = 0;
+      thd->pending_writes = 0;
       pthread_mutex_unlock(&(thd->lock));
     }
     else if (thd->gc_status == STATUS_SYNC2) {
       // Mark thread "roots"
       // In this case, mark everything the collector moved to the heap
+      pthread_mutex_lock(&(thd->lock));
       for (i = 0; i < buf_len; i++) {
         gc_mark_gray(thd, thd->moveBuf[i]);
 #if GC_DEBUG_VERBOSE
         fprintf(stderr, "mark from move buf %i %p\n", i, thd->moveBuf[i]);
 #endif
       }
+      pthread_mutex_unlock(&(thd->lock));
 //#if GC_DEBUG_VERBOSE
 //fprintf(stderr, "gc_cont %p\n", thd->gc_cont);
 //#endif
@@ -889,6 +922,13 @@ void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
 /////////////////////////////////////////////
 // Collector functions
 
+/**
+ * Mark the given object gray if it is on the heap.
+ * Note marking is done implicitly by placing it in a buffer,
+ * to avoid repeated re-scanning.
+ *
+ * This function must be executed once the thread lock has been acquired.
+ */
 void gc_mark_gray(gc_thread_data *thd, object obj)
 {
   // From what I can tell, no other thread would be modifying
@@ -900,13 +940,22 @@ void gc_mark_gray(gc_thread_data *thd, object obj)
 // Note that ideally this should be a lock-free data structure to make the
 // algorithm more efficient. So this code (and the corresponding collector
 // trace code) should be converted at some point.
-    pthread_mutex_lock(&(thd->lock));
     thd->mark_buffer = vpbuffer_add(thd->mark_buffer, 
                                     &(thd->mark_buffer_len),
                                     thd->last_write,
                                     obj);
     (thd->last_write)++; // Already locked, just do it...
-    pthread_mutex_unlock(&(thd->lock));
+  }
+}
+
+void gc_mark_gray2(gc_thread_data *thd, object obj)
+{
+  if (is_object_type(obj) && mark(obj) == gc_color_clear) {
+    thd->mark_buffer = vpbuffer_add(thd->mark_buffer, 
+                                    &(thd->mark_buffer_len),
+                                    (thd->last_write + thd->pending_writes),
+                                    obj);
+    thd->pending_writes++;
   }
 }
 
@@ -944,6 +993,14 @@ void gc_collector_trace()
       m = Cyc_mutators[i];
 // TODO: ideally, want to use a lock-free data structure to prevent
 // having to use a mutex here. see corresponding code in gc_mark_gray
+
+//TODO: I think this locking is too coarse. observing immediate failures with the recent change to g_mark_gray locking and
+//wonder if the problem is that this locking will prevent a batch of changes from being seen.
+//you know, do we really need locking here? the last read/write can be made atomic, and any reads/writes to mark buffer can
+//be made atomic as well. I think we may need a dirty flag to let the collector know something is happening when the mark buffer
+//needs to be resized, but other than that it this good enough?
+//on the other hand, a central issue with this collector is when can we be sure that we are existing tracing at the right time, and
+//not too early? because an early exit here will surely mean that objects are incorrectly freed 
       pthread_mutex_lock(&(m->lock));
       while (m->last_read < m->last_write) {
         clean = 0;
@@ -957,6 +1014,21 @@ void gc_collector_trace()
         (m->last_read)++; // Inc here to prevent off-by-one error
       }
       pthread_mutex_unlock(&(m->lock));
+
+      // Try checking the condition once more after giving the
+      // mutator a chance to respond, to prevent exiting early.
+      // This is experimental, not sure if it is necessary
+      if (clean) {
+        pthread_mutex_lock(&(m->lock));
+        if (m->last_read < m->last_write) {
+          fprintf(stderr, "JAE DEBUG - might have exited trace early\n");
+          clean = 0;
+        }
+        else if (m->pending_writes) {
+          clean = 0;
+        }
+        pthread_mutex_unlock(&(m->lock));
+      }
     }
   }
 }
