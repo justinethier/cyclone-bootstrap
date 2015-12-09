@@ -694,100 +694,6 @@ PHASE 2 - multi-threaded mutator (IE, more than one stack thread):
 /////////////////////////////////////////////
 // GC functions called by the Mutator threads
 
-// Scan the given object and its refs, marking all heap objects. The issue
-// here is that the heap's write barrier can be invoked at any time and
-// we need to ensure any heap objects affected are traced
-void gc_stack_mark_gray3(gc_thread_data *thd, object obj, int depth)
-{
-  char tmp;
-  object low_limit = &tmp;
-  object high_limit = ((gc_thread_data *)thd)->stack_start;
-  int color;
-
-// TODO: is it just a coincidence that a corrupted lambda list element
-// was at 15? this approach may not work for deep lists, and may not
-// work at all. may need to replace with another method that is complete
-// but also handles circular references...
-  if (is_object_type(obj) && depth < 15) {
-    color = mark(obj);
-#if GC_SAFETY_CHECKS
-    if (check_overflow(low_limit, obj) && 
-        check_overflow(obj, high_limit) &&
-        color != gc_color_red){ 
-      fprintf(stderr, "stack object has wrong color %d!\n", color);
-      Cyc_display(obj, stderr);
-      fprintf(stderr, "\n");
-      exit(1);
-    }
-#endif
-    if (color == gc_color_clear) {
-      pthread_mutex_lock(&(thd->lock));
-      gc_mark_gray(thd, obj);
-      pthread_mutex_unlock(&(thd->lock));
-      //fprintf(stderr, "marked heap obj from stack barrier %p %d\n", obj, color);
-    } else if (color == gc_color_red) {
-      gc_stack_mark_refs_gray(thd, obj, depth + 1);
-    }
-  }
-}
-
-void gc_stack_mark_gray(gc_thread_data *thd, object obj)
-{
-  gc_stack_mark_gray3(thd, obj, 0);
-}
-
-// Should only be called from above function as a helper
-//
-// TODO: this will probably hang procssing circular
-// references!!!! need to extend this once the concept is proven
-//
-// ideally would need some way of recording which nodes have
-// been visited. trick is that, unlike in other places, the
-// nodes may be visited multiple times so cannot destructively
-// alter them.
-void gc_stack_mark_refs_gray(gc_thread_data *thd, object obj, int depth)
-{
-  switch(type_of(obj)) {
-    case cons_tag: {
-      gc_stack_mark_gray3(thd, car(obj), depth);
-      gc_stack_mark_gray3(thd, cdr(obj), depth);
-      break;
-    }
-    case closure1_tag:
-      gc_stack_mark_gray3(thd, ((closure1) obj)->elt1, depth);
-      break;
-    case closure2_tag:
-      gc_stack_mark_gray3(thd, ((closure2) obj)->elt1, depth);
-      gc_stack_mark_gray3(thd, ((closure2) obj)->elt2, depth);
-    case closure3_tag:
-      gc_stack_mark_gray3(thd, ((closure3) obj)->elt1, depth);
-      gc_stack_mark_gray3(thd, ((closure3) obj)->elt2, depth);
-      gc_stack_mark_gray3(thd, ((closure3) obj)->elt3, depth);
-    case closure4_tag:
-      gc_stack_mark_gray3(thd, ((closure4) obj)->elt1, depth);
-      gc_stack_mark_gray3(thd, ((closure4) obj)->elt2, depth);
-      gc_stack_mark_gray3(thd, ((closure4) obj)->elt3, depth);
-      gc_stack_mark_gray3(thd, ((closure4) obj)->elt4, depth);
-      break;
-    case closureN_tag: {
-      int i, n = ((closureN) obj)->num_elt;
-      for (i = 0; i < n; i++) {
-        gc_stack_mark_gray3(thd, ((closureN) obj)->elts[i], depth);
-      }
-      break;
-    }
-    case vector_tag: {
-      int i, n = ((vector) obj)->num_elt;
-      for (i = 0; i < n; i++) {
-        gc_stack_mark_gray3(thd, ((vector) obj)->elts[i], depth);
-      }
-      break;
-    }
-    default:
-    break;
-  }
-}
-
 /**
  * Determine if object lives on the thread's stack
  */
@@ -876,6 +782,9 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
 {
   int i, status = ATOMIC_GET(&gc_status_col);
+#if GC_DEBUG_VERBOSE
+  int debug_print = 0;
+#endif
 
   // Handle any pending marks from write barrier
   pthread_mutex_lock(&(thd->lock));
@@ -899,24 +808,22 @@ void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
       for (i = 0; i < buf_len; i++) {
         gc_mark_gray(thd, thd->moveBuf[i]);
 #if GC_DEBUG_VERBOSE
-        fprintf(stderr, "mark from move buf %i %p\n", i, thd->moveBuf[i]);
+        debug_print = 1;
 #endif
       }
       pthread_mutex_unlock(&(thd->lock));
-//#if GC_DEBUG_VERBOSE
-//fprintf(stderr, "gc_cont %p\n", thd->gc_cont);
-//#endif
-//      gc_mark_gray(thd, thd->gc_cont);
-//      for (i = 0; i < thd->gc_num_args; i++) {
-//#if GC_DEBUG_VERBOSE
-//fprintf(stderr, "gc_args[%d] %p\n", i, thd->gc_args[i]);
-//#endif
-//        gc_mark_gray(thd, thd->gc_args[i]);
-//      }
       thd->gc_alloc_color = ATOMIC_GET(&gc_color_mark);
     }
     thd->gc_status = status;
   }
+#if GC_DEBUG_VERBOSE
+  if (debug_print) {
+    for (i = 0; i < buf_len; i++) {
+      gc_mark_gray(thd, thd->moveBuf[i]);
+      fprintf(stderr, "mark from move buf %i %p\n", i, thd->moveBuf[i]);
+    }
+  }
+#endif
 }
 
 /////////////////////////////////////////////
