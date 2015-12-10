@@ -441,7 +441,8 @@ static void __lambda_190(void *data, int argc, closure _,object k_7398, object l
 
 closureN_type c_73999;
 c_73999.hdr.mark = gc_color_red;
- c_73999.tag = closureN_tag;
+ c_73999.hdr.grayed = 0;
+c_73999.tag = closureN_tag;
  c_73999.fn = (function_type)__lambda_189;
 c_73999.num_args = 1;
 c_73999.num_elt = 2;
@@ -457,7 +458,8 @@ static void __lambda_189(void *data, int argc, object self_73281, object loop_73
 
 closureN_type c_731001;
 c_731001.hdr.mark = gc_color_red;
- c_731001.tag = closureN_tag;
+ c_731001.hdr.grayed = 0;
+c_731001.tag = closureN_tag;
  c_731001.fn = (function_type)__lambda_188;
 c_731001.num_args = 1;
 c_731001.num_elt = 2;
@@ -473,7 +475,8 @@ static void __lambda_188(void *data, int argc, object self_73282, object r_7399)
 
 closureN_type c_731003;
 c_731003.hdr.mark = gc_color_red;
- c_731003.tag = closureN_tag;
+ c_731003.hdr.grayed = 0;
+c_731003.tag = closureN_tag;
  c_731003.fn = (function_type)__lambda_187;
 c_731003.num_args = 1;
 c_731003.num_elt = 2;
@@ -489,7 +492,8 @@ static void __lambda_187(void *data, int argc, object self_73283, object result_
 
 closureN_type c_731005;
 c_731005.hdr.mark = gc_color_red;
- c_731005.tag = closureN_tag;
+ c_731005.hdr.grayed = 0;
+c_731005.tag = closureN_tag;
  c_731005.fn = (function_type)__lambda_186;
 c_731005.num_args = 1;
 c_731005.num_elt = 2;
@@ -507,7 +511,8 @@ static void __lambda_186(void *data, int argc, object self_73284, object result_
 
 closureN_type c_731007;
 c_731007.hdr.mark = gc_color_red;
- c_731007.tag = closureN_tag;
+ c_731007.hdr.grayed = 0;
+c_731007.tag = closureN_tag;
  c_731007.fn = (function_type)__lambda_144;
 c_731007.num_args = 1;
 c_731007.num_elt = 3;
@@ -519,7 +524,8 @@ c_731007.elts[2] = result_7339;
 
 closureN_type c_731016;
 c_731016.hdr.mark = gc_color_red;
- c_731016.tag = closureN_tag;
+ c_731016.hdr.grayed = 0;
+c_731016.tag = closureN_tag;
  c_731016.fn = (function_type)__lambda_185;
 c_731016.num_args = 1;
 c_731016.num_elt = 1;
@@ -534,7 +540,8 @@ static void __lambda_185(void *data, int argc, object self_73285, object k_73102
 
 closureN_type c_731018;
 c_731018.hdr.mark = gc_color_red;
- c_731018.tag = closureN_tag;
+ c_731018.hdr.grayed = 0;
+c_731018.tag = closureN_tag;
  c_731018.fn = (function_type)__lambda_184;
 c_731018.num_args = 1;
 c_731018.num_elt = 3;
@@ -552,7 +559,8 @@ if( !eq(boolean_f, r_73103) ){
   
 closureN_type c_731020;
 c_731020.hdr.mark = gc_color_red;
- c_731020.tag = closureN_tag;
+ c_731020.hdr.grayed = 0;
+c_731020.tag = closureN_tag;
  c_731020.fn = (function_type)__lambda_147;
 c_731020.num_args = 0;
 c_731020.num_elt = 3;
@@ -566,7 +574,8 @@ return_closcall0(data,(closure)&c_731020);
   
 closureN_type c_731035;
 c_731035.hdr.mark = gc_color_red;
- c_731035.tag = closureN_tag;
+ c_731035.hdr.grayed = 0;
+c_731035.tag = closureN_tag;
  c_731035.fn = (function_type)__lambda_183;
 c_731035.num_args = 0;
 c_731035.num_elt = 3;
@@ -584,7 +593,8 @@ static void __lambda_183(void *data, int argc, object self_73287) {
 
 closureN_type c_731037;
 c_731037.hdr.mark = gc_color_red;
- c_731037.tag = closureN_tag;
+ c_731037.hdr.grayed = 0;
+c_731037.tag = closureN_tag;
  c_731037.fn = (function_type)__lambda_182;
 c_731037.num_args = 1;
 c_731037.num_elt = 3;
@@ -603,7 +613,8 @@ static void __lambda_182(void *data, int argc, object self_73288, object r_73106
 
 closureN_type c_731039;
 c_731039.hdr.mark = gc_color_red;
- c_731039.tag = closureN_tag;
+ c_731039.hdr.grayed = 0;
+c_731039.tag = closureN_tag;
  c_731039.fn = (function_type)__lambda_181;
 c_731039.num_args = 2;
 c_731039.num_elt = 3;
@@ -622,7 +633,8 @@ static void __lambda_181(void *data, int argc, object self_73289, object idx_91m
 
 closureN_type c_731041;
 c_731041.hdr.mark = gc_color_red;
- c_731041.tag = closureN_tag;
+ c_731041.hdr.grayed = 0;
+c_731041.tag = closureN_tag;
  c_731041.fn = (function_type)__lambda_180;
 c_731041.num_args = 1;
 c_731041.num_elt = 4;
@@ -642,7 +654,8 @@ static void __lambda_180(void *data, int argc, object self_73290, object idx_91m
 
 closureN_type c_731043;
 c_731043.hdr.mark = gc_color_red;
- c_731043.tag = closureN_tag;
+ c_731043.hdr.grayed = 0;
+c_731043.tag = closureN_tag;
  c_731043.fn = (function_type)__lambda_179;
 c_731043.num_args = 1;
 c_731043.num_elt = 4;
@@ -662,7 +675,8 @@ static void __lambda_179(void *data, int argc, object self_73291, object idx_91i
 
 closureN_type c_731045;
 c_731045.hdr.mark = gc_color_red;
- c_731045.tag = closureN_tag;
+ c_731045.hdr.grayed = 0;
+c_731045.tag = closureN_tag;
  c_731045.fn = (function_type)__lambda_178;
 c_731045.num_args = 1;
 c_731045.num_elt = 5;
@@ -681,7 +695,8 @@ static void __lambda_178(void *data, int argc, object self_73292, object loop_73
 
 closureN_type c_731047;
 c_731047.hdr.mark = gc_color_red;
- c_731047.tag = closureN_tag;
+ c_731047.hdr.grayed = 0;
+c_731047.tag = closureN_tag;
  c_731047.fn = (function_type)__lambda_177;
 c_731047.num_args = 1;
 c_731047.num_elt = 5;
@@ -702,7 +717,8 @@ static void __lambda_177(void *data, int argc, object self_73293, object loop_73
 
 closureN_type c_731049;
 c_731049.hdr.mark = gc_color_red;
- c_731049.tag = closureN_tag;
+ c_731049.hdr.grayed = 0;
+c_731049.tag = closureN_tag;
  c_731049.fn = (function_type)__lambda_154;
 c_731049.num_args = 1;
 c_731049.num_elt = 6;
@@ -717,7 +733,8 @@ c_731049.elts[5] = ((closureN)self_73293)->elts[4];
 
 closureN_type c_731107;
 c_731107.hdr.mark = gc_color_red;
- c_731107.tag = closureN_tag;
+ c_731107.hdr.grayed = 0;
+c_731107.tag = closureN_tag;
  c_731107.fn = (function_type)__lambda_176;
 c_731107.num_args = 1;
 c_731107.num_elt = 5;
@@ -736,7 +753,8 @@ static void __lambda_176(void *data, int argc, object self_73294, object k_73114
 
 closureN_type c_731109;
 c_731109.hdr.mark = gc_color_red;
- c_731109.tag = closureN_tag;
+ c_731109.hdr.grayed = 0;
+c_731109.tag = closureN_tag;
  c_731109.fn = (function_type)__lambda_175;
 c_731109.num_args = 1;
 c_731109.num_elt = 7;
@@ -759,7 +777,8 @@ static void __lambda_175(void *data, int argc, object self_73295, object r_73133
 
 closureN_type c_731111;
 c_731111.hdr.mark = gc_color_red;
- c_731111.tag = closureN_tag;
+ c_731111.hdr.grayed = 0;
+c_731111.tag = closureN_tag;
  c_731111.fn = (function_type)__lambda_174;
 c_731111.num_args = 1;
 c_731111.num_elt = 7;
@@ -781,7 +800,8 @@ if( !eq(boolean_f, r_73115) ){
   
 closureN_type c_731113;
 c_731113.hdr.mark = gc_color_red;
- c_731113.tag = closureN_tag;
+ c_731113.hdr.grayed = 0;
+c_731113.tag = closureN_tag;
  c_731113.fn = (function_type)__lambda_155;
 c_731113.num_args = 0;
 c_731113.num_elt = 1;
@@ -793,7 +813,8 @@ return_closcall0(data,(closure)&c_731113);
   
 closureN_type c_731117;
 c_731117.hdr.mark = gc_color_red;
- c_731117.tag = closureN_tag;
+ c_731117.hdr.grayed = 0;
+c_731117.tag = closureN_tag;
  c_731117.fn = (function_type)__lambda_173;
 c_731117.num_args = 0;
 c_731117.num_elt = 7;
@@ -815,7 +836,8 @@ static void __lambda_173(void *data, int argc, object self_73297) {
 
 closureN_type c_731119;
 c_731119.hdr.mark = gc_color_red;
- c_731119.tag = closureN_tag;
+ c_731119.hdr.grayed = 0;
+c_731119.tag = closureN_tag;
  c_731119.fn = (function_type)__lambda_162;
 c_731119.num_args = 0;
 c_731119.num_elt = 4;
@@ -828,7 +850,8 @@ c_731119.elts[3] = ((closureN)self_73297)->elts[6];
 
 closureN_type c_731161;
 c_731161.hdr.mark = gc_color_red;
- c_731161.tag = closureN_tag;
+ c_731161.hdr.grayed = 0;
+c_731161.tag = closureN_tag;
  c_731161.fn = (function_type)__lambda_172;
 c_731161.num_args = 1;
 c_731161.num_elt = 6;
@@ -848,7 +871,8 @@ static void __lambda_172(void *data, int argc, object self_73298, object r_73116
 
 closureN_type c_731163;
 c_731163.hdr.mark = gc_color_red;
- c_731163.tag = closureN_tag;
+ c_731163.hdr.grayed = 0;
+c_731163.tag = closureN_tag;
  c_731163.fn = (function_type)__lambda_169;
 c_731163.num_args = 0;
 c_731163.num_elt = 4;
@@ -861,7 +885,8 @@ c_731163.elts[3] = ((closureN)self_73298)->elts[5];
 
 closureN_type c_731205;
 c_731205.hdr.mark = gc_color_red;
- c_731205.tag = closureN_tag;
+ c_731205.hdr.grayed = 0;
+c_731205.tag = closureN_tag;
  c_731205.fn = (function_type)__lambda_171;
 c_731205.num_args = 1;
 c_731205.num_elt = 3;
@@ -878,7 +903,8 @@ static void __lambda_171(void *data, int argc, object self_73299, object r_73117
 
 closureN_type c_731207;
 c_731207.hdr.mark = gc_color_red;
- c_731207.tag = closureN_tag;
+ c_731207.hdr.grayed = 0;
+c_731207.tag = closureN_tag;
  c_731207.fn = (function_type)__lambda_170;
 c_731207.num_args = 1;
 c_731207.num_elt = 2;
@@ -903,7 +929,8 @@ static void __lambda_169(void *data, int argc, object self_73301, object k_73119
 
 closureN_type c_731165;
 c_731165.hdr.mark = gc_color_red;
- c_731165.tag = closureN_tag;
+ c_731165.hdr.grayed = 0;
+c_731165.tag = closureN_tag;
  c_731165.fn = (function_type)__lambda_167;
 c_731165.num_args = 0;
 c_731165.num_elt = 4;
@@ -916,7 +943,8 @@ c_731165.elts[3] = ((closureN)self_73301)->elts[3];
 
 closureN_type c_731196;
 c_731196.hdr.mark = gc_color_red;
- c_731196.tag = closureN_tag;
+ c_731196.hdr.grayed = 0;
+c_731196.tag = closureN_tag;
  c_731196.fn = (function_type)__lambda_168;
 c_731196.num_args = 1;
 c_731196.num_elt = 3;
@@ -942,7 +970,8 @@ static void __lambda_167(void *data, int argc, object self_73303, object k_73121
 
 closureN_type c_731167;
 c_731167.hdr.mark = gc_color_red;
- c_731167.tag = closureN_tag;
+ c_731167.hdr.grayed = 0;
+c_731167.tag = closureN_tag;
  c_731167.fn = (function_type)__lambda_166;
 c_731167.num_args = 1;
 c_731167.num_elt = 4;
@@ -961,7 +990,8 @@ if( !eq(boolean_f, r_73122) ){
   
 closureN_type c_731169;
 c_731169.hdr.mark = gc_color_red;
- c_731169.tag = closureN_tag;
+ c_731169.hdr.grayed = 0;
+c_731169.tag = closureN_tag;
  c_731169.fn = (function_type)__lambda_165;
 c_731169.num_args = 1;
 c_731169.num_elt = 3;
@@ -981,7 +1011,8 @@ static void __lambda_165(void *data, int argc, object self_73305, object r_73123
 
 closureN_type c_731171;
 c_731171.hdr.mark = gc_color_red;
- c_731171.tag = closureN_tag;
+ c_731171.hdr.grayed = 0;
+c_731171.tag = closureN_tag;
  c_731171.fn = (function_type)__lambda_164;
 c_731171.num_args = 1;
 c_731171.num_elt = 2;
@@ -997,7 +1028,8 @@ static void __lambda_164(void *data, int argc, object self_73306, object r_73125
 
 closureN_type c_731173;
 c_731173.hdr.mark = gc_color_red;
- c_731173.tag = closureN_tag;
+ c_731173.hdr.grayed = 0;
+c_731173.tag = closureN_tag;
  c_731173.fn = (function_type)__lambda_163;
 c_731173.num_args = 1;
 c_731173.num_elt = 2;
@@ -1018,7 +1050,8 @@ static void __lambda_162(void *data, int argc, object self_73308, object k_73126
 
 closureN_type c_731121;
 c_731121.hdr.mark = gc_color_red;
- c_731121.tag = closureN_tag;
+ c_731121.hdr.grayed = 0;
+c_731121.tag = closureN_tag;
  c_731121.fn = (function_type)__lambda_160;
 c_731121.num_args = 0;
 c_731121.num_elt = 4;
@@ -1031,7 +1064,8 @@ c_731121.elts[3] = ((closureN)self_73308)->elts[3];
 
 closureN_type c_731152;
 c_731152.hdr.mark = gc_color_red;
- c_731152.tag = closureN_tag;
+ c_731152.hdr.grayed = 0;
+c_731152.tag = closureN_tag;
  c_731152.fn = (function_type)__lambda_161;
 c_731152.num_args = 1;
 c_731152.num_elt = 3;
@@ -1057,7 +1091,8 @@ static void __lambda_160(void *data, int argc, object self_73310, object k_73128
 
 closureN_type c_731123;
 c_731123.hdr.mark = gc_color_red;
- c_731123.tag = closureN_tag;
+ c_731123.hdr.grayed = 0;
+c_731123.tag = closureN_tag;
  c_731123.fn = (function_type)__lambda_159;
 c_731123.num_args = 1;
 c_731123.num_elt = 4;
@@ -1076,7 +1111,8 @@ if( !eq(boolean_f, r_73129) ){
   
 closureN_type c_731125;
 c_731125.hdr.mark = gc_color_red;
- c_731125.tag = closureN_tag;
+ c_731125.hdr.grayed = 0;
+c_731125.tag = closureN_tag;
  c_731125.fn = (function_type)__lambda_158;
 c_731125.num_args = 1;
 c_731125.num_elt = 2;
@@ -1095,7 +1131,8 @@ static void __lambda_158(void *data, int argc, object self_73312, object r_73132
 
 closureN_type c_731127;
 c_731127.hdr.mark = gc_color_red;
- c_731127.tag = closureN_tag;
+ c_731127.hdr.grayed = 0;
+c_731127.tag = closureN_tag;
  c_731127.fn = (function_type)__lambda_157;
 c_731127.num_args = 1;
 c_731127.num_elt = 2;
@@ -1111,7 +1148,8 @@ static void __lambda_157(void *data, int argc, object self_73313, object r_73130
 
 closureN_type c_731129;
 c_731129.hdr.mark = gc_color_red;
- c_731129.tag = closureN_tag;
+ c_731129.hdr.grayed = 0;
+c_731129.tag = closureN_tag;
  c_731129.fn = (function_type)__lambda_156;
 c_731129.num_args = 1;
 c_731129.num_elt = 2;
@@ -1137,7 +1175,8 @@ static void __lambda_154(void *data, int argc, object self_73316, object r_73113
 
 closureN_type c_731051;
 c_731051.hdr.mark = gc_color_red;
- c_731051.tag = closureN_tag;
+ c_731051.hdr.grayed = 0;
+c_731051.tag = closureN_tag;
  c_731051.fn = (function_type)__lambda_153;
 c_731051.num_args = 1;
 c_731051.num_elt = 6;
@@ -1157,7 +1196,8 @@ static void __lambda_153(void *data, int argc, object self_73317, object r_73107
 
 closureN_type c_731056;
 c_731056.hdr.mark = gc_color_red;
- c_731056.tag = closureN_tag;
+ c_731056.hdr.grayed = 0;
+c_731056.tag = closureN_tag;
  c_731056.fn = (function_type)__lambda_152;
 c_731056.num_args = 1;
 c_731056.num_elt = 5;
@@ -1178,7 +1218,8 @@ static void __lambda_152(void *data, int argc, object self_73318, object r_73108
 
 closureN_type c_731058;
 c_731058.hdr.mark = gc_color_red;
- c_731058.tag = closureN_tag;
+ c_731058.hdr.grayed = 0;
+c_731058.tag = closureN_tag;
  c_731058.fn = (function_type)__lambda_151;
 c_731058.num_args = 1;
 c_731058.num_elt = 5;
@@ -1198,7 +1239,8 @@ if( !eq(boolean_f, r_73109) ){
   
 closureN_type c_731060;
 c_731060.hdr.mark = gc_color_red;
- c_731060.tag = closureN_tag;
+ c_731060.hdr.grayed = 0;
+c_731060.tag = closureN_tag;
  c_731060.fn = (function_type)__lambda_149;
 c_731060.num_args = 0;
 c_731060.num_elt = 2;
@@ -1209,7 +1251,8 @@ c_731060.elts[1] = ((closureN)self_73319)->elts[1];
 
 closureN_type c_731085;
 c_731085.hdr.mark = gc_color_red;
- c_731085.tag = closureN_tag;
+ c_731085.hdr.grayed = 0;
+c_731085.tag = closureN_tag;
  c_731085.fn = (function_type)__lambda_150;
 c_731085.num_args = 1;
 c_731085.num_elt = 3;
@@ -1236,7 +1279,8 @@ static void __lambda_149(void *data, int argc, object self_73321, object k_73111
 
 closureN_type c_731062;
 c_731062.hdr.mark = gc_color_red;
- c_731062.tag = closureN_tag;
+ c_731062.hdr.grayed = 0;
+c_731062.tag = closureN_tag;
  c_731062.fn = (function_type)__lambda_148;
 c_731062.num_args = 1;
 c_731062.num_elt = 2;
@@ -1265,7 +1309,8 @@ static void __lambda_147(void *data, int argc, object self_73323) {
 
 closureN_type c_731022;
 c_731022.hdr.mark = gc_color_red;
- c_731022.tag = closureN_tag;
+ c_731022.hdr.grayed = 0;
+c_731022.tag = closureN_tag;
  c_731022.fn = (function_type)__lambda_146;
 c_731022.num_args = 1;
 c_731022.num_elt = 3;
@@ -1282,7 +1327,8 @@ static void __lambda_146(void *data, int argc, object self_73324, object r_73105
 
 closureN_type c_731024;
 c_731024.hdr.mark = gc_color_red;
- c_731024.tag = closureN_tag;
+ c_731024.hdr.grayed = 0;
+c_731024.tag = closureN_tag;
  c_731024.fn = (function_type)__lambda_145;
 c_731024.num_args = 1;
 c_731024.num_elt = 2;
@@ -1305,7 +1351,8 @@ static void __lambda_144(void *data, int argc, object self_73326, object r_73101
 
 closureN_type c_731009;
 c_731009.hdr.mark = gc_color_red;
- c_731009.tag = closureN_tag;
+ c_731009.hdr.grayed = 0;
+c_731009.tag = closureN_tag;
  c_731009.fn = (function_type)__lambda_143;
 c_731009.num_args = 1;
 c_731009.num_elt = 2;
@@ -1326,7 +1373,8 @@ static void __lambda_142(void *data, int argc, closure _,object k_73136, object 
 
 closureN_type c_73908;
 c_73908.hdr.mark = gc_color_red;
- c_73908.tag = closureN_tag;
+ c_73908.hdr.grayed = 0;
+c_73908.tag = closureN_tag;
  c_73908.fn = (function_type)__lambda_141;
 c_73908.num_args = 2;
 c_73908.num_elt = 2;
@@ -1342,7 +1390,8 @@ static void __lambda_141(void *data, int argc, object self_73328, object librari
 
 closureN_type c_73910;
 c_73910.hdr.mark = gc_color_red;
- c_73910.tag = closureN_tag;
+ c_73910.hdr.grayed = 0;
+c_73910.tag = closureN_tag;
  c_73910.fn = (function_type)__lambda_140;
 c_73910.num_args = 1;
 c_73910.num_elt = 3;
@@ -1361,7 +1410,8 @@ static void __lambda_140(void *data, int argc, object self_73329, object librari
 
 closureN_type c_73912;
 c_73912.hdr.mark = gc_color_red;
- c_73912.tag = closureN_tag;
+ c_73912.hdr.grayed = 0;
+c_73912.tag = closureN_tag;
  c_73912.fn = (function_type)__lambda_139;
 c_73912.num_args = 1;
 c_73912.num_elt = 3;
@@ -1380,7 +1430,8 @@ static void __lambda_139(void *data, int argc, object self_73330, object find_91
 
 closureN_type c_73914;
 c_73914.hdr.mark = gc_color_red;
- c_73914.tag = closureN_tag;
+ c_73914.hdr.grayed = 0;
+c_73914.tag = closureN_tag;
  c_73914.fn = (function_type)__lambda_138;
 c_73914.num_args = 0;
 c_73914.num_elt = 4;
@@ -1398,7 +1449,8 @@ static void __lambda_138(void *data, int argc, object self_73331) {
 
 closureN_type c_73916;
 c_73916.hdr.mark = gc_color_red;
- c_73916.tag = closureN_tag;
+ c_73916.hdr.grayed = 0;
+c_73916.tag = closureN_tag;
  c_73916.fn = (function_type)__lambda_137;
 c_73916.num_args = 1;
 c_73916.num_elt = 4;
@@ -1416,7 +1468,8 @@ static void __lambda_137(void *data, int argc, object self_73332, object r_73150
 
 closureN_type c_73918;
 c_73918.hdr.mark = gc_color_red;
- c_73918.tag = closureN_tag;
+ c_73918.hdr.grayed = 0;
+c_73918.tag = closureN_tag;
  c_73918.fn = (function_type)__lambda_136;
 c_73918.num_args = 1;
 c_73918.num_elt = 4;
@@ -1434,7 +1487,8 @@ static void __lambda_136(void *data, int argc, object self_73333, object r_73137
 
 closureN_type c_73920;
 c_73920.hdr.mark = gc_color_red;
- c_73920.tag = closureN_tag;
+ c_73920.hdr.grayed = 0;
+c_73920.tag = closureN_tag;
  c_73920.fn = (function_type)__lambda_124;
 c_73920.num_args = 1;
 c_73920.num_elt = 4;
@@ -1447,7 +1501,8 @@ c_73920.elts[3] = ((closureN)self_73333)->elts[3];
 
 closureN_type c_73937;
 c_73937.hdr.mark = gc_color_red;
- c_73937.tag = closureN_tag;
+ c_73937.hdr.grayed = 0;
+c_73937.tag = closureN_tag;
  c_73937.fn = (function_type)__lambda_135;
 c_73937.num_args = 1;
 c_73937.num_elt = 2;
@@ -1463,7 +1518,8 @@ static void __lambda_135(void *data, int argc, object self_73334, object k_73141
 
 closureN_type c_73939;
 c_73939.hdr.mark = gc_color_red;
- c_73939.tag = closureN_tag;
+ c_73939.hdr.grayed = 0;
+c_73939.tag = closureN_tag;
  c_73939.fn = (function_type)__lambda_125;
 c_73939.num_args = 1;
 c_73939.num_elt = 2;
@@ -1474,7 +1530,8 @@ c_73939.elts[1] = k_73141;
 
 closureN_type c_73943;
 c_73943.hdr.mark = gc_color_red;
- c_73943.tag = closureN_tag;
+ c_73943.hdr.grayed = 0;
+c_73943.tag = closureN_tag;
  c_73943.fn = (function_type)__lambda_134;
 c_73943.num_args = 1;
 c_73943.num_elt = 2;
@@ -1490,7 +1547,8 @@ static void __lambda_134(void *data, int argc, object self_73335, object k_73143
 
 closureN_type c_73945;
 c_73945.hdr.mark = gc_color_red;
- c_73945.tag = closureN_tag;
+ c_73945.hdr.grayed = 0;
+c_73945.tag = closureN_tag;
  c_73945.fn = (function_type)__lambda_133;
 c_73945.num_args = 1;
 c_73945.num_elt = 4;
@@ -1508,7 +1566,8 @@ static void __lambda_133(void *data, int argc, object self_73336, object r_73149
 
 closureN_type c_73947;
 c_73947.hdr.mark = gc_color_red;
- c_73947.tag = closureN_tag;
+ c_73947.hdr.grayed = 0;
+c_73947.tag = closureN_tag;
  c_73947.fn = (function_type)__lambda_132;
 c_73947.num_args = 1;
 c_73947.num_elt = 4;
@@ -1527,7 +1586,8 @@ if( !eq(boolean_f, r_73144) ){
   
 closureN_type c_73949;
 c_73949.hdr.mark = gc_color_red;
- c_73949.tag = closureN_tag;
+ c_73949.hdr.grayed = 0;
+c_73949.tag = closureN_tag;
  c_73949.fn = (function_type)__lambda_131;
 c_73949.num_args = 0;
 c_73949.num_elt = 4;
@@ -1548,7 +1608,8 @@ static void __lambda_131(void *data, int argc, object self_73338) {
 
 closureN_type c_73951;
 c_73951.hdr.mark = gc_color_red;
- c_73951.tag = closureN_tag;
+ c_73951.hdr.grayed = 0;
+c_73951.tag = closureN_tag;
  c_73951.fn = (function_type)__lambda_130;
 c_73951.num_args = 1;
 c_73951.num_elt = 4;
@@ -1566,7 +1627,8 @@ static void __lambda_130(void *data, int argc, object self_73339, object r_73145
 
 closureN_type c_73953;
 c_73953.hdr.mark = gc_color_red;
- c_73953.tag = closureN_tag;
+ c_73953.hdr.grayed = 0;
+c_73953.tag = closureN_tag;
  c_73953.fn = (function_type)__lambda_129;
 c_73953.num_args = 1;
 c_73953.num_elt = 4;
@@ -1584,7 +1646,8 @@ static void __lambda_129(void *data, int argc, object self_73340, object deps_73
 
 closureN_type c_73955;
 c_73955.hdr.mark = gc_color_red;
- c_73955.tag = closureN_tag;
+ c_73955.hdr.grayed = 0;
+c_73955.tag = closureN_tag;
  c_73955.fn = (function_type)__lambda_128;
 c_73955.num_args = 1;
 c_73955.num_elt = 4;
@@ -1604,7 +1667,8 @@ static void __lambda_128(void *data, int argc, object self_73341, object r_73148
 
 closureN_type c_73957;
 c_73957.hdr.mark = gc_color_red;
- c_73957.tag = closureN_tag;
+ c_73957.hdr.grayed = 0;
+c_73957.tag = closureN_tag;
  c_73957.fn = (function_type)__lambda_127;
 c_73957.num_args = 1;
 c_73957.num_elt = 4;
@@ -1624,7 +1688,8 @@ static void __lambda_127(void *data, int argc, object self_73342, object r_73147
 
 closureN_type c_73959;
 c_73959.hdr.mark = gc_color_red;
- c_73959.tag = closureN_tag;
+ c_73959.hdr.grayed = 0;
+c_73959.tag = closureN_tag;
  c_73959.fn = (function_type)__lambda_126;
 c_73959.num_args = 1;
 c_73959.num_elt = 3;
@@ -1651,7 +1716,8 @@ static void __lambda_124(void *data, int argc, object self_73345, object r_73140
 
 closureN_type c_73922;
 c_73922.hdr.mark = gc_color_red;
- c_73922.tag = closureN_tag;
+ c_73922.hdr.grayed = 0;
+c_73922.tag = closureN_tag;
  c_73922.fn = (function_type)__lambda_123;
 c_73922.num_args = 1;
 c_73922.num_elt = 4;
@@ -1669,7 +1735,8 @@ static void __lambda_123(void *data, int argc, object self_73346, object r_73138
 
 closureN_type c_73927;
 c_73927.hdr.mark = gc_color_red;
- c_73927.tag = closureN_tag;
+ c_73927.hdr.grayed = 0;
+c_73927.tag = closureN_tag;
  c_73927.fn = (function_type)__lambda_122;
 c_73927.num_args = 1;
 c_73927.num_elt = 2;
@@ -1690,7 +1757,8 @@ static void __lambda_121(void *data, int argc, closure _,object k_73153, object 
 
 closureN_type c_73895;
 c_73895.hdr.mark = gc_color_red;
- c_73895.tag = closureN_tag;
+ c_73895.hdr.grayed = 0;
+c_73895.tag = closureN_tag;
  c_73895.fn = (function_type)__lambda_119;
 c_73895.num_args = 1;
 c_73895.num_elt = 2;
@@ -1713,7 +1781,8 @@ static void __lambda_119(void *data, int argc, object self_73349, object r_73155
 
 closureN_type c_73897;
 c_73897.hdr.mark = gc_color_red;
- c_73897.tag = closureN_tag;
+ c_73897.hdr.grayed = 0;
+c_73897.tag = closureN_tag;
  c_73897.fn = (function_type)__lambda_118;
 c_73897.num_args = 1;
 c_73897.num_elt = 1;
@@ -1735,7 +1804,8 @@ static void __lambda_117(void *data, int argc, closure _,object k_73159, object 
 
 closureN_type c_73826;
 c_73826.hdr.mark = gc_color_red;
- c_73826.tag = closureN_tag;
+ c_73826.hdr.grayed = 0;
+c_73826.tag = closureN_tag;
  c_73826.fn = (function_type)__lambda_116;
 c_73826.num_args = 1;
 c_73826.num_elt = 1;
@@ -1752,7 +1822,8 @@ static void __lambda_116(void *data, int argc, object self_73351, object r_73160
 
 closureN_type c_73828;
 c_73828.hdr.mark = gc_color_red;
- c_73828.tag = closureN_tag;
+ c_73828.hdr.grayed = 0;
+c_73828.tag = closureN_tag;
  c_73828.fn = (function_type)__lambda_115;
 c_73828.num_args = 1;
 c_73828.num_elt = 2;
@@ -1768,7 +1839,8 @@ static void __lambda_115(void *data, int argc, object self_73352, object r_73161
 
 closureN_type c_73830;
 c_73830.hdr.mark = gc_color_red;
- c_73830.tag = closureN_tag;
+ c_73830.hdr.grayed = 0;
+c_73830.tag = closureN_tag;
  c_73830.fn = (function_type)__lambda_114;
 c_73830.num_args = 3;
 c_73830.num_elt = 1;
@@ -1783,7 +1855,8 @@ static void __lambda_114(void *data, int argc, object self_73353, object file_73
 
 closureN_type c_73832;
 c_73832.hdr.mark = gc_color_red;
- c_73832.tag = closureN_tag;
+ c_73832.hdr.grayed = 0;
+c_73832.tag = closureN_tag;
  c_73832.fn = (function_type)__lambda_113;
 c_73832.num_args = 1;
 c_73832.num_elt = 3;
@@ -1802,7 +1875,8 @@ static void __lambda_113(void *data, int argc, object self_73354, object fp_7355
 
 closureN_type c_73834;
 c_73834.hdr.mark = gc_color_red;
- c_73834.tag = closureN_tag;
+ c_73834.hdr.grayed = 0;
+c_73834.tag = closureN_tag;
  c_73834.fn = (function_type)__lambda_112;
 c_73834.num_args = 1;
 c_73834.num_elt = 3;
@@ -1821,7 +1895,8 @@ static void __lambda_112(void *data, int argc, object self_73355, object result_
 
 closureN_type c_73836;
 c_73836.hdr.mark = gc_color_red;
- c_73836.tag = closureN_tag;
+ c_73836.hdr.grayed = 0;
+c_73836.tag = closureN_tag;
  c_73836.fn = (function_type)__lambda_110;
 c_73836.num_args = 0;
 c_73836.num_elt = 3;
@@ -1833,7 +1908,8 @@ c_73836.elts[2] = result_7354;
 
 closureN_type c_73878;
 c_73878.hdr.mark = gc_color_red;
- c_73878.tag = closureN_tag;
+ c_73878.hdr.grayed = 0;
+c_73878.tag = closureN_tag;
  c_73878.fn = (function_type)__lambda_111;
 c_73878.num_args = 1;
 c_73878.num_elt = 2;
@@ -1854,7 +1930,8 @@ static void __lambda_110(void *data, int argc, object self_73357, object k_73163
 
 closureN_type c_73838;
 c_73838.hdr.mark = gc_color_red;
- c_73838.tag = closureN_tag;
+ c_73838.hdr.grayed = 0;
+c_73838.tag = closureN_tag;
  c_73838.fn = (function_type)__lambda_109;
 c_73838.num_args = 1;
 c_73838.num_elt = 4;
@@ -1873,7 +1950,8 @@ if( !eq(boolean_f, r_73164) ){
   
 closureN_type c_73840;
 c_73840.hdr.mark = gc_color_red;
- c_73840.tag = closureN_tag;
+ c_73840.hdr.grayed = 0;
+c_73840.tag = closureN_tag;
  c_73840.fn = (function_type)__lambda_108;
 c_73840.num_args = 0;
 c_73840.num_elt = 4;
@@ -1894,7 +1972,8 @@ static void __lambda_108(void *data, int argc, object self_73359) {
 
 closureN_type c_73842;
 c_73842.hdr.mark = gc_color_red;
- c_73842.tag = closureN_tag;
+ c_73842.hdr.grayed = 0;
+c_73842.tag = closureN_tag;
  c_73842.fn = (function_type)__lambda_107;
 c_73842.num_args = 1;
 c_73842.num_elt = 3;
@@ -1913,7 +1992,8 @@ static void __lambda_107(void *data, int argc, object self_73360, object r_73169
 
 closureN_type c_73844;
 c_73844.hdr.mark = gc_color_red;
- c_73844.tag = closureN_tag;
+ c_73844.hdr.grayed = 0;
+c_73844.tag = closureN_tag;
  c_73844.fn = (function_type)__lambda_106;
 c_73844.num_args = 1;
 c_73844.num_elt = 3;
@@ -1930,7 +2010,8 @@ static void __lambda_106(void *data, int argc, object self_73361, object r_73165
 
 closureN_type c_73846;
 c_73846.hdr.mark = gc_color_red;
- c_73846.tag = closureN_tag;
+ c_73846.hdr.grayed = 0;
+c_73846.tag = closureN_tag;
  c_73846.fn = (function_type)__lambda_105;
 c_73846.num_args = 1;
 c_73846.num_elt = 3;
@@ -1947,7 +2028,8 @@ static void __lambda_105(void *data, int argc, object self_73362, object r_73168
 
 closureN_type c_73848;
 c_73848.hdr.mark = gc_color_red;
- c_73848.tag = closureN_tag;
+ c_73848.hdr.grayed = 0;
+c_73848.tag = closureN_tag;
  c_73848.fn = (function_type)__lambda_104;
 c_73848.num_args = 1;
 c_73848.num_elt = 3;
@@ -1964,7 +2046,8 @@ static void __lambda_104(void *data, int argc, object self_73363, object r_73167
 
 closureN_type c_73850;
 c_73850.hdr.mark = gc_color_red;
- c_73850.tag = closureN_tag;
+ c_73850.hdr.grayed = 0;
+c_73850.tag = closureN_tag;
  c_73850.fn = (function_type)__lambda_103;
 c_73850.num_args = 1;
 c_73850.num_elt = 2;
@@ -1985,7 +2068,8 @@ static void __lambda_102(void *data, int argc, closure _,object k_73172, object 
 
 closureN_type c_73813;
 c_73813.hdr.mark = gc_color_red;
- c_73813.tag = closureN_tag;
+ c_73813.hdr.grayed = 0;
+c_73813.tag = closureN_tag;
  c_73813.fn = (function_type)__lambda_100;
 c_73813.num_args = 1;
 c_73813.num_elt = 2;
@@ -2008,7 +2092,8 @@ static void __lambda_100(void *data, int argc, object self_73366, object r_73174
 
 closureN_type c_73815;
 c_73815.hdr.mark = gc_color_red;
- c_73815.tag = closureN_tag;
+ c_73815.hdr.grayed = 0;
+c_73815.tag = closureN_tag;
  c_73815.fn = (function_type)__lambda_99;
 c_73815.num_args = 1;
 c_73815.num_elt = 1;
@@ -2030,7 +2115,8 @@ static void __lambda_98(void *data, int argc, closure _,object k_73178, object i
 
 closureN_type c_73774;
 c_73774.hdr.mark = gc_color_red;
- c_73774.tag = closureN_tag;
+ c_73774.hdr.grayed = 0;
+c_73774.tag = closureN_tag;
  c_73774.fn = (function_type)__lambda_97;
 c_73774.num_args = 1;
 c_73774.num_elt = 1;
@@ -2045,7 +2131,8 @@ static void __lambda_97(void *data, int argc, object self_73368, object r_73185)
 
 closureN_type c_73776;
 c_73776.hdr.mark = gc_color_red;
- c_73776.tag = closureN_tag;
+ c_73776.hdr.grayed = 0;
+c_73776.tag = closureN_tag;
  c_73776.fn = (function_type)__lambda_96;
 c_73776.num_args = 1;
 c_73776.num_elt = 1;
@@ -2062,7 +2149,8 @@ static void __lambda_96(void *data, int argc, object self_73369, object r_73179)
 
 closureN_type c_73778;
 c_73778.hdr.mark = gc_color_red;
- c_73778.tag = closureN_tag;
+ c_73778.hdr.grayed = 0;
+c_73778.tag = closureN_tag;
  c_73778.fn = (function_type)__lambda_95;
 c_73778.num_args = 1;
 c_73778.num_elt = 1;
@@ -2077,7 +2165,8 @@ static void __lambda_95(void *data, int argc, object self_73370, object dir_7360
 
 closureN_type c_73780;
 c_73780.hdr.mark = gc_color_red;
- c_73780.tag = closureN_tag;
+ c_73780.hdr.grayed = 0;
+c_73780.tag = closureN_tag;
  c_73780.fn = (function_type)__lambda_94;
 c_73780.num_args = 1;
 c_73780.num_elt = 1;
@@ -2094,7 +2183,8 @@ static void __lambda_94(void *data, int argc, object self_73371, object r_73180)
 
 closureN_type c_73782;
 c_73782.hdr.mark = gc_color_red;
- c_73782.tag = closureN_tag;
+ c_73782.hdr.grayed = 0;
+c_73782.tag = closureN_tag;
  c_73782.fn = (function_type)__lambda_93;
 c_73782.num_args = 1;
 c_73782.num_elt = 1;
@@ -2109,7 +2199,8 @@ static void __lambda_93(void *data, int argc, object self_73372, object fp_7361)
 
 closureN_type c_73784;
 c_73784.hdr.mark = gc_color_red;
- c_73784.tag = closureN_tag;
+ c_73784.hdr.grayed = 0;
+c_73784.tag = closureN_tag;
  c_73784.fn = (function_type)__lambda_92;
 c_73784.num_args = 1;
 c_73784.num_elt = 2;
@@ -2125,7 +2216,8 @@ static void __lambda_92(void *data, int argc, object self_73373, object r_73181)
 
 closureN_type c_73786;
 c_73786.hdr.mark = gc_color_red;
- c_73786.tag = closureN_tag;
+ c_73786.hdr.grayed = 0;
+c_73786.tag = closureN_tag;
  c_73786.fn = (function_type)__lambda_91;
 c_73786.num_args = 1;
 c_73786.num_elt = 2;
@@ -2141,7 +2233,8 @@ static void __lambda_91(void *data, int argc, object self_73374, object lib_7362
 
 closureN_type c_73788;
 c_73788.hdr.mark = gc_color_red;
- c_73788.tag = closureN_tag;
+ c_73788.hdr.grayed = 0;
+c_73788.tag = closureN_tag;
  c_73788.fn = (function_type)__lambda_90;
 c_73788.num_args = 1;
 c_73788.num_elt = 2;
@@ -2157,7 +2250,8 @@ static void __lambda_90(void *data, int argc, object self_73375, object r_73184)
 
 closureN_type c_73790;
 c_73790.hdr.mark = gc_color_red;
- c_73790.tag = closureN_tag;
+ c_73790.hdr.grayed = 0;
+c_73790.tag = closureN_tag;
  c_73790.fn = (function_type)__lambda_89;
 c_73790.num_args = 1;
 c_73790.num_elt = 2;
@@ -2173,7 +2267,8 @@ static void __lambda_89(void *data, int argc, object self_73376, object r_73182)
 
 closureN_type c_73792;
 c_73792.hdr.mark = gc_color_red;
- c_73792.tag = closureN_tag;
+ c_73792.hdr.grayed = 0;
+c_73792.tag = closureN_tag;
  c_73792.fn = (function_type)__lambda_88;
 c_73792.num_args = 1;
 c_73792.num_elt = 2;
@@ -2189,7 +2284,8 @@ static void __lambda_88(void *data, int argc, object self_73377, object exports_
 
 closureN_type c_73794;
 c_73794.hdr.mark = gc_color_red;
- c_73794.tag = closureN_tag;
+ c_73794.hdr.grayed = 0;
+c_73794.tag = closureN_tag;
  c_73794.fn = (function_type)__lambda_87;
 c_73794.num_args = 0;
 c_73794.num_elt = 3;
@@ -2206,7 +2302,8 @@ static void __lambda_87(void *data, int argc, object self_73378) {
 
 closureN_type c_73796;
 c_73796.hdr.mark = gc_color_red;
- c_73796.tag = closureN_tag;
+ c_73796.hdr.grayed = 0;
+c_73796.tag = closureN_tag;
  c_73796.fn = (function_type)__lambda_86;
 c_73796.num_args = 1;
 c_73796.num_elt = 2;
@@ -2227,7 +2324,8 @@ static void __lambda_85(void *data, int argc, closure _,object k_73188, object i
 
 closureN_type c_73740;
 c_73740.hdr.mark = gc_color_red;
- c_73740.tag = closureN_tag;
+ c_73740.hdr.grayed = 0;
+c_73740.tag = closureN_tag;
  c_73740.fn = (function_type)__lambda_84;
 c_73740.num_args = 1;
 c_73740.num_elt = 1;
@@ -2242,7 +2340,8 @@ static void __lambda_84(void *data, int argc, object self_73380, object r_73189)
 
 closureN_type c_73742;
 c_73742.hdr.mark = gc_color_red;
- c_73742.tag = closureN_tag;
+ c_73742.hdr.grayed = 0;
+c_73742.tag = closureN_tag;
  c_73742.fn = (function_type)__lambda_83;
 c_73742.num_args = 1;
 c_73742.num_elt = 1;
@@ -2257,7 +2356,8 @@ static void __lambda_83(void *data, int argc, object self_73381, object dir_7365
 
 closureN_type c_73744;
 c_73744.hdr.mark = gc_color_red;
- c_73744.tag = closureN_tag;
+ c_73744.hdr.grayed = 0;
+c_73744.tag = closureN_tag;
  c_73744.fn = (function_type)__lambda_82;
 c_73744.num_args = 1;
 c_73744.num_elt = 1;
@@ -2274,7 +2374,8 @@ static void __lambda_82(void *data, int argc, object self_73382, object r_73190)
 
 closureN_type c_73746;
 c_73746.hdr.mark = gc_color_red;
- c_73746.tag = closureN_tag;
+ c_73746.hdr.grayed = 0;
+c_73746.tag = closureN_tag;
  c_73746.fn = (function_type)__lambda_81;
 c_73746.num_args = 1;
 c_73746.num_elt = 1;
@@ -2289,7 +2390,8 @@ static void __lambda_81(void *data, int argc, object self_73383, object fp_7366)
 
 closureN_type c_73748;
 c_73748.hdr.mark = gc_color_red;
- c_73748.tag = closureN_tag;
+ c_73748.hdr.grayed = 0;
+c_73748.tag = closureN_tag;
  c_73748.fn = (function_type)__lambda_80;
 c_73748.num_args = 1;
 c_73748.num_elt = 2;
@@ -2305,7 +2407,8 @@ static void __lambda_80(void *data, int argc, object self_73384, object r_73191)
 
 closureN_type c_73750;
 c_73750.hdr.mark = gc_color_red;
- c_73750.tag = closureN_tag;
+ c_73750.hdr.grayed = 0;
+c_73750.tag = closureN_tag;
  c_73750.fn = (function_type)__lambda_79;
 c_73750.num_args = 1;
 c_73750.num_elt = 2;
@@ -2321,7 +2424,8 @@ static void __lambda_79(void *data, int argc, object self_73385, object lib_7367
 
 closureN_type c_73752;
 c_73752.hdr.mark = gc_color_red;
- c_73752.tag = closureN_tag;
+ c_73752.hdr.grayed = 0;
+c_73752.tag = closureN_tag;
  c_73752.fn = (function_type)__lambda_78;
 c_73752.num_args = 1;
 c_73752.num_elt = 2;
@@ -2337,7 +2441,8 @@ static void __lambda_78(void *data, int argc, object self_73386, object r_73194)
 
 closureN_type c_73754;
 c_73754.hdr.mark = gc_color_red;
- c_73754.tag = closureN_tag;
+ c_73754.hdr.grayed = 0;
+c_73754.tag = closureN_tag;
  c_73754.fn = (function_type)__lambda_77;
 c_73754.num_args = 1;
 c_73754.num_elt = 2;
@@ -2353,7 +2458,8 @@ static void __lambda_77(void *data, int argc, object self_73387, object r_73192)
 
 closureN_type c_73756;
 c_73756.hdr.mark = gc_color_red;
- c_73756.tag = closureN_tag;
+ c_73756.hdr.grayed = 0;
+c_73756.tag = closureN_tag;
  c_73756.fn = (function_type)__lambda_76;
 c_73756.num_args = 1;
 c_73756.num_elt = 2;
@@ -2369,7 +2475,8 @@ static void __lambda_76(void *data, int argc, object self_73388, object imports_
 
 closureN_type c_73758;
 c_73758.hdr.mark = gc_color_red;
- c_73758.tag = closureN_tag;
+ c_73758.hdr.grayed = 0;
+c_73758.tag = closureN_tag;
  c_73758.fn = (function_type)__lambda_75;
 c_73758.num_args = 0;
 c_73758.num_elt = 3;
@@ -2386,7 +2493,8 @@ static void __lambda_75(void *data, int argc, object self_73389) {
 
 closureN_type c_73760;
 c_73760.hdr.mark = gc_color_red;
- c_73760.tag = closureN_tag;
+ c_73760.hdr.grayed = 0;
+c_73760.tag = closureN_tag;
  c_73760.fn = (function_type)__lambda_74;
 c_73760.num_args = 1;
 c_73760.num_elt = 2;
@@ -2407,7 +2515,8 @@ static void __lambda_73(void *data, int argc, closure _,object k_73197, object i
 
 closureN_type c_73681;
 c_73681.hdr.mark = gc_color_red;
- c_73681.tag = closureN_tag;
+ c_73681.hdr.grayed = 0;
+c_73681.tag = closureN_tag;
  c_73681.fn = (function_type)__lambda_72;
 c_73681.num_args = 1;
 c_73681.num_elt = 2;
@@ -2423,7 +2532,8 @@ static void __lambda_72(void *data, int argc, object self_73391, object r_73209)
 
 closureN_type c_73683;
 c_73683.hdr.mark = gc_color_red;
- c_73683.tag = closureN_tag;
+ c_73683.hdr.grayed = 0;
+c_73683.tag = closureN_tag;
  c_73683.fn = (function_type)__lambda_71;
 c_73683.num_args = 1;
 c_73683.num_elt = 2;
@@ -2439,7 +2549,8 @@ static void __lambda_71(void *data, int argc, object self_73392, object r_73208)
 
 closureN_type c_73685;
 c_73685.hdr.mark = gc_color_red;
- c_73685.tag = closureN_tag;
+ c_73685.hdr.grayed = 0;
+c_73685.tag = closureN_tag;
  c_73685.fn = (function_type)__lambda_70;
 c_73685.num_args = 1;
 c_73685.num_elt = 2;
@@ -2455,7 +2566,8 @@ static void __lambda_70(void *data, int argc, object self_73393, object r_73198)
 
 closureN_type c_73687;
 c_73687.hdr.mark = gc_color_red;
- c_73687.tag = closureN_tag;
+ c_73687.hdr.grayed = 0;
+c_73687.tag = closureN_tag;
  c_73687.fn = (function_type)__lambda_69;
 c_73687.num_args = 1;
 c_73687.num_elt = 2;
@@ -2471,7 +2583,8 @@ static void __lambda_69(void *data, int argc, object self_73394, object import_9
 
 closureN_type c_73689;
 c_73689.hdr.mark = gc_color_red;
- c_73689.tag = closureN_tag;
+ c_73689.hdr.grayed = 0;
+c_73689.tag = closureN_tag;
  c_73689.fn = (function_type)__lambda_66;
 c_73689.num_args = 1;
 c_73689.num_elt = 3;
@@ -2490,7 +2603,8 @@ static void __lambda_68(void *data, int argc, object self_73395, object k_73206,
 
 closureN_type c_73726;
 c_73726.hdr.mark = gc_color_red;
- c_73726.tag = closureN_tag;
+ c_73726.hdr.grayed = 0;
+c_73726.tag = closureN_tag;
  c_73726.fn = (function_type)__lambda_67;
 c_73726.num_args = 1;
 c_73726.num_elt = 1;
@@ -2516,7 +2630,8 @@ static void __lambda_66(void *data, int argc, object self_73397, object r_73205)
 
 closureN_type c_73691;
 c_73691.hdr.mark = gc_color_red;
- c_73691.tag = closureN_tag;
+ c_73691.hdr.grayed = 0;
+c_73691.tag = closureN_tag;
  c_73691.fn = (function_type)__lambda_65;
 c_73691.num_args = 1;
 c_73691.num_elt = 2;
@@ -2532,7 +2647,8 @@ static void __lambda_65(void *data, int argc, object self_73398, object r_73204)
 
 closureN_type c_73693;
 c_73693.hdr.mark = gc_color_red;
- c_73693.tag = closureN_tag;
+ c_73693.hdr.grayed = 0;
+c_73693.tag = closureN_tag;
  c_73693.fn = (function_type)__lambda_64;
 c_73693.num_args = 1;
 c_73693.num_elt = 2;
@@ -2550,7 +2666,8 @@ static void __lambda_64(void *data, int argc, object self_73399, object r_73199)
 
 closureN_type c_73695;
 c_73695.hdr.mark = gc_color_red;
- c_73695.tag = closureN_tag;
+ c_73695.hdr.grayed = 0;
+c_73695.tag = closureN_tag;
  c_73695.fn = (function_type)__lambda_63;
 c_73695.num_args = 1;
 c_73695.num_elt = 2;
@@ -2566,7 +2683,8 @@ static void __lambda_63(void *data, int argc, object self_73400, object path_737
 
 closureN_type c_73697;
 c_73697.hdr.mark = gc_color_red;
- c_73697.tag = closureN_tag;
+ c_73697.hdr.grayed = 0;
+c_73697.tag = closureN_tag;
  c_73697.fn = (function_type)__lambda_62;
 c_73697.num_args = 0;
 c_73697.num_elt = 3;
@@ -2583,7 +2701,8 @@ static void __lambda_62(void *data, int argc, object self_73401) {
 
 closureN_type c_73699;
 c_73699.hdr.mark = gc_color_red;
- c_73699.tag = closureN_tag;
+ c_73699.hdr.grayed = 0;
+c_73699.tag = closureN_tag;
  c_73699.fn = (function_type)__lambda_61;
 c_73699.num_args = 1;
 c_73699.num_elt = 3;
@@ -2600,7 +2719,8 @@ static void __lambda_61(void *data, int argc, object self_73402, object r_73203)
 
 closureN_type c_73701;
 c_73701.hdr.mark = gc_color_red;
- c_73701.tag = closureN_tag;
+ c_73701.hdr.grayed = 0;
+c_73701.tag = closureN_tag;
  c_73701.fn = (function_type)__lambda_60;
 c_73701.num_args = 1;
 c_73701.num_elt = 2;
@@ -2617,7 +2737,8 @@ if( !eq(boolean_f, r_73200) ){
   
 closureN_type c_73703;
 c_73703.hdr.mark = gc_color_red;
- c_73703.tag = closureN_tag;
+ c_73703.hdr.grayed = 0;
+c_73703.tag = closureN_tag;
  c_73703.fn = (function_type)__lambda_59;
 c_73703.num_args = 1;
 c_73703.num_elt = 2;
@@ -2636,7 +2757,8 @@ static void __lambda_59(void *data, int argc, object self_73404, object r_73202)
 
 closureN_type c_73705;
 c_73705.hdr.mark = gc_color_red;
- c_73705.tag = closureN_tag;
+ c_73705.hdr.grayed = 0;
+c_73705.tag = closureN_tag;
  c_73705.fn = (function_type)__lambda_58;
 c_73705.num_args = 1;
 c_73705.num_elt = 2;
@@ -2664,7 +2786,8 @@ load_varargs(ext_7373, ext_7373_raw, argc - 2);
 
 closureN_type c_73594;
 c_73594.hdr.mark = gc_color_red;
- c_73594.tag = closureN_tag;
+ c_73594.hdr.grayed = 0;
+c_73594.tag = closureN_tag;
  c_73594.fn = (function_type)__lambda_39;
 c_73594.num_args = 0;
 c_73594.num_elt = 1;
@@ -2674,7 +2797,8 @@ c_73594.elts[0] = ext_7373;
 
 closureN_type c_73608;
 c_73608.hdr.mark = gc_color_red;
- c_73608.tag = closureN_tag;
+ c_73608.hdr.grayed = 0;
+c_73608.tag = closureN_tag;
  c_73608.fn = (function_type)__lambda_56;
 c_73608.num_args = 1;
 c_73608.num_elt = 2;
@@ -2690,7 +2814,8 @@ static void __lambda_56(void *data, int argc, object self_73406, object r_73213)
 
 closureN_type c_73610;
 c_73610.hdr.mark = gc_color_red;
- c_73610.tag = closureN_tag;
+ c_73610.hdr.grayed = 0;
+c_73610.tag = closureN_tag;
  c_73610.fn = (function_type)__lambda_55;
 c_73610.num_args = 1;
 c_73610.num_elt = 2;
@@ -2706,7 +2831,8 @@ static void __lambda_55(void *data, int argc, object self_73407, object file_91e
 
 closureN_type c_73612;
 c_73612.hdr.mark = gc_color_red;
- c_73612.tag = closureN_tag;
+ c_73612.hdr.grayed = 0;
+c_73612.tag = closureN_tag;
  c_73612.fn = (function_type)__lambda_52;
 c_73612.num_args = 1;
 c_73612.num_elt = 3;
@@ -2725,7 +2851,8 @@ static void __lambda_54(void *data, int argc, object self_73408, object k_73224,
 
 closureN_type c_73669;
 c_73669.hdr.mark = gc_color_red;
- c_73669.tag = closureN_tag;
+ c_73669.hdr.grayed = 0;
+c_73669.tag = closureN_tag;
  c_73669.fn = (function_type)__lambda_53;
 c_73669.num_args = 1;
 c_73669.num_elt = 1;
@@ -2751,7 +2878,8 @@ static void __lambda_52(void *data, int argc, object self_73410, object r_73223)
 
 closureN_type c_73614;
 c_73614.hdr.mark = gc_color_red;
- c_73614.tag = closureN_tag;
+ c_73614.hdr.grayed = 0;
+c_73614.tag = closureN_tag;
  c_73614.fn = (function_type)__lambda_51;
 c_73614.num_args = 1;
 c_73614.num_elt = 3;
@@ -2768,7 +2896,8 @@ static void __lambda_51(void *data, int argc, object self_73411, object r_73222)
 
 closureN_type c_73616;
 c_73616.hdr.mark = gc_color_red;
- c_73616.tag = closureN_tag;
+ c_73616.hdr.grayed = 0;
+c_73616.tag = closureN_tag;
  c_73616.fn = (function_type)__lambda_50;
 c_73616.num_args = 1;
 c_73616.num_elt = 3;
@@ -2787,7 +2916,8 @@ static void __lambda_50(void *data, int argc, object self_73412, object r_73221)
 
 closureN_type c_73618;
 c_73618.hdr.mark = gc_color_red;
- c_73618.tag = closureN_tag;
+ c_73618.hdr.grayed = 0;
+c_73618.tag = closureN_tag;
  c_73618.fn = (function_type)__lambda_49;
 c_73618.num_args = 1;
 c_73618.num_elt = 2;
@@ -2805,7 +2935,8 @@ static void __lambda_49(void *data, int argc, object self_73413, object r_73214)
 
 closureN_type c_73620;
 c_73620.hdr.mark = gc_color_red;
- c_73620.tag = closureN_tag;
+ c_73620.hdr.grayed = 0;
+c_73620.tag = closureN_tag;
  c_73620.fn = (function_type)__lambda_48;
 c_73620.num_args = 1;
 c_73620.num_elt = 2;
@@ -2821,7 +2952,8 @@ static void __lambda_48(void *data, int argc, object self_73414, object filename
 
 closureN_type c_73622;
 c_73622.hdr.mark = gc_color_red;
- c_73622.tag = closureN_tag;
+ c_73622.hdr.grayed = 0;
+c_73622.tag = closureN_tag;
  c_73622.fn = (function_type)__lambda_47;
 c_73622.num_args = 1;
 c_73622.num_elt = 3;
@@ -2840,7 +2972,8 @@ static void __lambda_47(void *data, int argc, object self_73415, object r_73220)
 
 closureN_type c_73624;
 c_73624.hdr.mark = gc_color_red;
- c_73624.tag = closureN_tag;
+ c_73624.hdr.grayed = 0;
+c_73624.tag = closureN_tag;
  c_73624.fn = (function_type)__lambda_46;
 c_73624.num_args = 1;
 c_73624.num_elt = 2;
@@ -2860,7 +2993,8 @@ static void __lambda_46(void *data, int argc, object self_73416, object r_73215)
 
 closureN_type c_73626;
 c_73626.hdr.mark = gc_color_red;
- c_73626.tag = closureN_tag;
+ c_73626.hdr.grayed = 0;
+c_73626.tag = closureN_tag;
  c_73626.fn = (function_type)__lambda_45;
 c_73626.num_args = 1;
 c_73626.num_elt = 2;
@@ -2876,7 +3010,8 @@ static void __lambda_45(void *data, int argc, object self_73417, object filename
 
 closureN_type c_73628;
 c_73628.hdr.mark = gc_color_red;
- c_73628.tag = closureN_tag;
+ c_73628.hdr.grayed = 0;
+c_73628.tag = closureN_tag;
  c_73628.fn = (function_type)__lambda_44;
 c_73628.num_args = 0;
 c_73628.num_elt = 3;
@@ -2893,7 +3028,8 @@ static void __lambda_44(void *data, int argc, object self_73418) {
 
 closureN_type c_73630;
 c_73630.hdr.mark = gc_color_red;
- c_73630.tag = closureN_tag;
+ c_73630.hdr.grayed = 0;
+c_73630.tag = closureN_tag;
  c_73630.fn = (function_type)__lambda_43;
 c_73630.num_args = 1;
 c_73630.num_elt = 3;
@@ -2910,7 +3046,8 @@ static void __lambda_43(void *data, int argc, object self_73419, object r_73219)
 
 closureN_type c_73632;
 c_73632.hdr.mark = gc_color_red;
- c_73632.tag = closureN_tag;
+ c_73632.hdr.grayed = 0;
+c_73632.tag = closureN_tag;
  c_73632.fn = (function_type)__lambda_42;
 c_73632.num_args = 1;
 c_73632.num_elt = 2;
@@ -2927,7 +3064,8 @@ if( !eq(boolean_f, r_73216) ){
   
 closureN_type c_73634;
 c_73634.hdr.mark = gc_color_red;
- c_73634.tag = closureN_tag;
+ c_73634.hdr.grayed = 0;
+c_73634.tag = closureN_tag;
  c_73634.fn = (function_type)__lambda_41;
 c_73634.num_args = 1;
 c_73634.num_elt = 2;
@@ -2946,7 +3084,8 @@ static void __lambda_41(void *data, int argc, object self_73421, object r_73218)
 
 closureN_type c_73636;
 c_73636.hdr.mark = gc_color_red;
- c_73636.tag = closureN_tag;
+ c_73636.hdr.grayed = 0;
+c_73636.tag = closureN_tag;
  c_73636.fn = (function_type)__lambda_40;
 c_73636.num_args = 1;
 c_73636.num_elt = 2;
@@ -2973,7 +3112,8 @@ static void __lambda_39(void *data, int argc, object self_73423, object k_73226)
 
 closureN_type c_73596;
 c_73596.hdr.mark = gc_color_red;
- c_73596.tag = closureN_tag;
+ c_73596.hdr.grayed = 0;
+c_73596.tag = closureN_tag;
  c_73596.fn = (function_type)__lambda_38;
 c_73596.num_args = 1;
 c_73596.num_elt = 2;
@@ -3000,7 +3140,8 @@ static void __lambda_37(void *data, int argc, closure _,object k_73230, object a
 
 closureN_type c_73568;
 c_73568.hdr.mark = gc_color_red;
- c_73568.tag = closureN_tag;
+ c_73568.hdr.grayed = 0;
+c_73568.tag = closureN_tag;
  c_73568.fn = (function_type)__lambda_35;
 c_73568.num_args = 1;
 c_73568.num_elt = 2;
@@ -3023,7 +3164,8 @@ static void __lambda_35(void *data, int argc, object self_73426, object r_73231)
 
 closureN_type c_73570;
 c_73570.hdr.mark = gc_color_red;
- c_73570.tag = closureN_tag;
+ c_73570.hdr.grayed = 0;
+c_73570.tag = closureN_tag;
  c_73570.fn = (function_type)__lambda_32;
 c_73570.num_args = 1;
 c_73570.num_elt = 3;
@@ -3042,7 +3184,8 @@ static void __lambda_34(void *data, int argc, object self_73427, object k_73235,
 
 closureN_type c_73584;
 c_73584.hdr.mark = gc_color_red;
- c_73584.tag = closureN_tag;
+ c_73584.hdr.grayed = 0;
+c_73584.tag = closureN_tag;
  c_73584.fn = (function_type)__lambda_33;
 c_73584.num_args = 1;
 c_73584.num_elt = 2;
@@ -3063,7 +3206,8 @@ static void __lambda_32(void *data, int argc, object self_73429, object r_73233)
 
 closureN_type c_73572;
 c_73572.hdr.mark = gc_color_red;
- c_73572.tag = closureN_tag;
+ c_73572.hdr.grayed = 0;
+c_73572.tag = closureN_tag;
  c_73572.fn = (function_type)__lambda_31;
 c_73572.num_args = 1;
 c_73572.num_elt = 3;
@@ -3080,7 +3224,8 @@ static void __lambda_31(void *data, int argc, object self_73430, object r_73234)
 
 closureN_type c_73574;
 c_73574.hdr.mark = gc_color_red;
- c_73574.tag = closureN_tag;
+ c_73574.hdr.grayed = 0;
+c_73574.tag = closureN_tag;
  c_73574.fn = (function_type)__lambda_30;
 c_73574.num_args = 1;
 c_73574.num_elt = 2;
@@ -3101,7 +3246,8 @@ static void __lambda_29(void *data, int argc, closure _,object k_73240, object a
 
 closureN_type c_73542;
 c_73542.hdr.mark = gc_color_red;
- c_73542.tag = closureN_tag;
+ c_73542.hdr.grayed = 0;
+c_73542.tag = closureN_tag;
  c_73542.fn = (function_type)__lambda_28;
 c_73542.num_args = 1;
 c_73542.num_elt = 2;
@@ -3117,7 +3263,8 @@ static void __lambda_28(void *data, int argc, object self_73432, object r_73244)
 
 closureN_type c_73544;
 c_73544.hdr.mark = gc_color_red;
- c_73544.tag = closureN_tag;
+ c_73544.hdr.grayed = 0;
+c_73544.tag = closureN_tag;
  c_73544.fn = (function_type)__lambda_27;
 c_73544.num_args = 1;
 c_73544.num_elt = 2;
@@ -3133,7 +3280,8 @@ static void __lambda_27(void *data, int argc, object self_73433, object r_73245)
 
 closureN_type c_73546;
 c_73546.hdr.mark = gc_color_red;
- c_73546.tag = closureN_tag;
+ c_73546.hdr.grayed = 0;
+c_73546.tag = closureN_tag;
  c_73546.fn = (function_type)__lambda_26;
 c_73546.num_args = 1;
 c_73546.num_elt = 1;
@@ -3148,7 +3296,8 @@ static void __lambda_26(void *data, int argc, object self_73434, object r_73242)
 
 closureN_type c_73548;
 c_73548.hdr.mark = gc_color_red;
- c_73548.tag = closureN_tag;
+ c_73548.hdr.grayed = 0;
+c_73548.tag = closureN_tag;
  c_73548.fn = (function_type)__lambda_25;
 c_73548.num_args = 1;
 c_73548.num_elt = 1;
@@ -3163,7 +3312,8 @@ static void __lambda_25(void *data, int argc, object self_73435, object code_738
 
 closureN_type c_73550;
 c_73550.hdr.mark = gc_color_red;
- c_73550.tag = closureN_tag;
+ c_73550.hdr.grayed = 0;
+c_73550.tag = closureN_tag;
  c_73550.fn = (function_type)__lambda_23;
 c_73550.num_args = 0;
 c_73550.num_elt = 1;
@@ -3173,7 +3323,8 @@ c_73550.elts[0] = code_7383;
 
 closureN_type c_73557;
 c_73557.hdr.mark = gc_color_red;
- c_73557.tag = closureN_tag;
+ c_73557.hdr.grayed = 0;
+c_73557.tag = closureN_tag;
  c_73557.fn = (function_type)__lambda_24;
 c_73557.num_args = 1;
 c_73557.num_elt = 1;
@@ -3202,7 +3353,8 @@ static void __lambda_22(void *data, int argc, closure _,object k_73248, object a
 
 closureN_type c_73516;
 c_73516.hdr.mark = gc_color_red;
- c_73516.tag = closureN_tag;
+ c_73516.hdr.grayed = 0;
+c_73516.tag = closureN_tag;
  c_73516.fn = (function_type)__lambda_21;
 c_73516.num_args = 1;
 c_73516.num_elt = 2;
@@ -3218,7 +3370,8 @@ static void __lambda_21(void *data, int argc, object self_73438, object r_73252)
 
 closureN_type c_73518;
 c_73518.hdr.mark = gc_color_red;
- c_73518.tag = closureN_tag;
+ c_73518.hdr.grayed = 0;
+c_73518.tag = closureN_tag;
  c_73518.fn = (function_type)__lambda_20;
 c_73518.num_args = 1;
 c_73518.num_elt = 2;
@@ -3234,7 +3387,8 @@ static void __lambda_20(void *data, int argc, object self_73439, object r_73253)
 
 closureN_type c_73520;
 c_73520.hdr.mark = gc_color_red;
- c_73520.tag = closureN_tag;
+ c_73520.hdr.grayed = 0;
+c_73520.tag = closureN_tag;
  c_73520.fn = (function_type)__lambda_19;
 c_73520.num_args = 1;
 c_73520.num_elt = 1;
@@ -3249,7 +3403,8 @@ static void __lambda_19(void *data, int argc, object self_73440, object r_73250)
 
 closureN_type c_73522;
 c_73522.hdr.mark = gc_color_red;
- c_73522.tag = closureN_tag;
+ c_73522.hdr.grayed = 0;
+c_73522.tag = closureN_tag;
  c_73522.fn = (function_type)__lambda_18;
 c_73522.num_args = 1;
 c_73522.num_elt = 1;
@@ -3264,7 +3419,8 @@ static void __lambda_18(void *data, int argc, object self_73441, object code_738
 
 closureN_type c_73524;
 c_73524.hdr.mark = gc_color_red;
- c_73524.tag = closureN_tag;
+ c_73524.hdr.grayed = 0;
+c_73524.tag = closureN_tag;
  c_73524.fn = (function_type)__lambda_16;
 c_73524.num_args = 0;
 c_73524.num_elt = 1;
@@ -3274,7 +3430,8 @@ c_73524.elts[0] = code_7385;
 
 closureN_type c_73531;
 c_73531.hdr.mark = gc_color_red;
- c_73531.tag = closureN_tag;
+ c_73531.hdr.grayed = 0;
+c_73531.tag = closureN_tag;
  c_73531.fn = (function_type)__lambda_17;
 c_73531.num_args = 1;
 c_73531.num_elt = 1;
@@ -3303,7 +3460,8 @@ static void __lambda_15(void *data, int argc, closure _,object k_73256, object a
 
 closureN_type c_73490;
 c_73490.hdr.mark = gc_color_red;
- c_73490.tag = closureN_tag;
+ c_73490.hdr.grayed = 0;
+c_73490.tag = closureN_tag;
  c_73490.fn = (function_type)__lambda_14;
 c_73490.num_args = 1;
 c_73490.num_elt = 2;
@@ -3319,7 +3477,8 @@ static void __lambda_14(void *data, int argc, object self_73444, object r_73260)
 
 closureN_type c_73492;
 c_73492.hdr.mark = gc_color_red;
- c_73492.tag = closureN_tag;
+ c_73492.hdr.grayed = 0;
+c_73492.tag = closureN_tag;
  c_73492.fn = (function_type)__lambda_13;
 c_73492.num_args = 1;
 c_73492.num_elt = 2;
@@ -3335,7 +3494,8 @@ static void __lambda_13(void *data, int argc, object self_73445, object r_73261)
 
 closureN_type c_73494;
 c_73494.hdr.mark = gc_color_red;
- c_73494.tag = closureN_tag;
+ c_73494.hdr.grayed = 0;
+c_73494.tag = closureN_tag;
  c_73494.fn = (function_type)__lambda_12;
 c_73494.num_args = 1;
 c_73494.num_elt = 1;
@@ -3350,7 +3510,8 @@ static void __lambda_12(void *data, int argc, object self_73446, object r_73258)
 
 closureN_type c_73496;
 c_73496.hdr.mark = gc_color_red;
- c_73496.tag = closureN_tag;
+ c_73496.hdr.grayed = 0;
+c_73496.tag = closureN_tag;
  c_73496.fn = (function_type)__lambda_11;
 c_73496.num_args = 1;
 c_73496.num_elt = 1;
@@ -3365,7 +3526,8 @@ static void __lambda_11(void *data, int argc, object self_73447, object code_738
 
 closureN_type c_73498;
 c_73498.hdr.mark = gc_color_red;
- c_73498.tag = closureN_tag;
+ c_73498.hdr.grayed = 0;
+c_73498.tag = closureN_tag;
  c_73498.fn = (function_type)__lambda_9;
 c_73498.num_args = 0;
 c_73498.num_elt = 1;
@@ -3375,7 +3537,8 @@ c_73498.elts[0] = code_7387;
 
 closureN_type c_73505;
 c_73505.hdr.mark = gc_color_red;
- c_73505.tag = closureN_tag;
+ c_73505.hdr.grayed = 0;
+c_73505.tag = closureN_tag;
  c_73505.fn = (function_type)__lambda_10;
 c_73505.num_args = 1;
 c_73505.num_elt = 1;
@@ -3413,7 +3576,8 @@ static void __lambda_7(void *data, int argc, closure _,object k_73267, object na
 
 closureN_type c_73474;
 c_73474.hdr.mark = gc_color_red;
- c_73474.tag = closureN_tag;
+ c_73474.hdr.grayed = 0;
+c_73474.tag = closureN_tag;
  c_73474.fn = (function_type)__lambda_6;
 c_73474.num_args = 1;
 c_73474.num_elt = 1;
@@ -3428,7 +3592,8 @@ static void __lambda_6(void *data, int argc, object self_73450, object r_73269) 
 
 closureN_type c_73476;
 c_73476.hdr.mark = gc_color_red;
- c_73476.tag = closureN_tag;
+ c_73476.hdr.grayed = 0;
+c_73476.tag = closureN_tag;
  c_73476.fn = (function_type)__lambda_5;
 c_73476.num_args = 1;
 c_73476.num_elt = 1;
@@ -3452,7 +3617,8 @@ static void __lambda_4(void *data, int argc, closure _,object k_73272, object na
 
 closureN_type c_73466;
 c_73466.hdr.mark = gc_color_red;
- c_73466.tag = closureN_tag;
+ c_73466.hdr.grayed = 0;
+c_73466.tag = closureN_tag;
  c_73466.fn = (function_type)__lambda_3;
 c_73466.num_args = 1;
 c_73466.num_elt = 1;
@@ -3479,7 +3645,8 @@ static void __lambda_1(void *data, int argc, closure _,object k_73279, object as
 
 closureN_type c_73456;
 c_73456.hdr.mark = gc_color_red;
- c_73456.tag = closureN_tag;
+ c_73456.hdr.grayed = 0;
+c_73456.tag = closureN_tag;
  c_73456.fn = (function_type)__lambda_0;
 c_73456.num_args = 1;
 c_73456.num_elt = 2;

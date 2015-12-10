@@ -203,7 +203,8 @@ static void __lambda_20(void *data, int argc, closure _,object k_7325, object c_
 
 closureN_type c_73173;
 c_73173.hdr.mark = gc_color_red;
- c_73173.tag = closureN_tag;
+ c_73173.hdr.grayed = 0;
+c_73173.tag = closureN_tag;
  c_73173.fn = (function_type)__lambda_19;
 c_73173.num_args = 1;
 c_73173.num_elt = 2;
@@ -220,7 +221,8 @@ if( !eq(boolean_f, r_7326) ){
   
 closureN_type c_73175;
 c_73175.hdr.mark = gc_color_red;
- c_73175.tag = closureN_tag;
+ c_73175.hdr.grayed = 0;
+c_73175.tag = closureN_tag;
  c_73175.fn = (function_type)__lambda_18;
 c_73175.num_args = 1;
 c_73175.num_elt = 1;
@@ -249,7 +251,8 @@ static void __lambda_17(void *data, int argc, closure _,object k_7330, object c_
 
 closureN_type c_73161;
 c_73161.hdr.mark = gc_color_red;
- c_73161.tag = closureN_tag;
+ c_73161.hdr.grayed = 0;
+c_73161.tag = closureN_tag;
  c_73161.fn = (function_type)__lambda_16;
 c_73161.num_args = 1;
 c_73161.num_elt = 2;
@@ -278,7 +281,8 @@ static void __lambda_15(void *data, int argc, closure _,object k_7334, object c_
 
 closureN_type c_73143;
 c_73143.hdr.mark = gc_color_red;
- c_73143.tag = closureN_tag;
+ c_73143.hdr.grayed = 0;
+c_73143.tag = closureN_tag;
  c_73143.fn = (function_type)__lambda_14;
 c_73143.num_args = 1;
 c_73143.num_elt = 2;
@@ -319,7 +323,8 @@ static void __lambda_13(void *data, int argc, closure _,object k_7338, object c_
 
 closureN_type c_73135;
 c_73135.hdr.mark = gc_color_red;
- c_73135.tag = closureN_tag;
+ c_73135.hdr.grayed = 0;
+c_73135.tag = closureN_tag;
  c_73135.fn = (function_type)__lambda_12;
 c_73135.num_args = 1;
 c_73135.num_elt = 2;
@@ -344,7 +349,8 @@ static void __lambda_11(void *data, int argc, closure _,object k_7342, object c_
 
 closureN_type c_73127;
 c_73127.hdr.mark = gc_color_red;
- c_73127.tag = closureN_tag;
+ c_73127.hdr.grayed = 0;
+c_73127.tag = closureN_tag;
  c_73127.fn = (function_type)__lambda_10;
 c_73127.num_args = 1;
 c_73127.num_elt = 2;
@@ -369,7 +375,8 @@ static void __lambda_9(void *data, int argc, closure _,object k_7346, object c_7
 
 closureN_type c_73119;
 c_73119.hdr.mark = gc_color_red;
- c_73119.tag = closureN_tag;
+ c_73119.hdr.grayed = 0;
+c_73119.tag = closureN_tag;
  c_73119.fn = (function_type)__lambda_8;
 c_73119.num_args = 1;
 c_73119.num_elt = 2;
@@ -394,7 +401,8 @@ static void __lambda_7(void *data, int argc, closure _,object k_7350, object c_7
 
 closureN_type c_7397;
 c_7397.hdr.mark = gc_color_red;
- c_7397.tag = closureN_tag;
+ c_7397.hdr.grayed = 0;
+c_7397.tag = closureN_tag;
  c_7397.fn = (function_type)__lambda_6;
 c_7397.num_args = 1;
 c_7397.num_elt = 2;
@@ -411,7 +419,8 @@ if( !eq(boolean_f, r_7351) ){
   
 closureN_type c_7399;
 c_7399.hdr.mark = gc_color_red;
- c_7399.tag = closureN_tag;
+ c_7399.hdr.grayed = 0;
+c_7399.tag = closureN_tag;
  c_7399.fn = (function_type)__lambda_5;
 c_7399.num_args = 1;
 c_7399.num_elt = 1;
@@ -431,7 +440,8 @@ static void __lambda_5(void *data, int argc, object self_7368, object r_7353) {
 
 closureN_type c_73101;
 c_73101.hdr.mark = gc_color_red;
- c_73101.tag = closureN_tag;
+ c_73101.hdr.grayed = 0;
+c_73101.tag = closureN_tag;
  c_73101.fn = (function_type)__lambda_4;
 c_73101.num_args = 1;
 c_73101.num_elt = 1;
@@ -455,7 +465,8 @@ static void __lambda_3(void *data, int argc, closure _,object k_7356, object c_7
 
 closureN_type c_7375;
 c_7375.hdr.mark = gc_color_red;
- c_7375.tag = closureN_tag;
+ c_7375.hdr.grayed = 0;
+c_7375.tag = closureN_tag;
  c_7375.fn = (function_type)__lambda_2;
 c_7375.num_args = 1;
 c_7375.num_elt = 2;
@@ -472,7 +483,8 @@ if( !eq(boolean_f, r_7357) ){
   
 closureN_type c_7377;
 c_7377.hdr.mark = gc_color_red;
- c_7377.tag = closureN_tag;
+ c_7377.hdr.grayed = 0;
+c_7377.tag = closureN_tag;
  c_7377.fn = (function_type)__lambda_1;
 c_7377.num_args = 1;
 c_7377.num_elt = 1;
@@ -492,7 +504,8 @@ static void __lambda_1(void *data, int argc, object self_7371, object r_7359) {
 
 closureN_type c_7379;
 c_7379.hdr.mark = gc_color_red;
- c_7379.tag = closureN_tag;
+ c_7379.hdr.grayed = 0;
+c_7379.tag = closureN_tag;
  c_7379.fn = (function_type)__lambda_0;
 c_7379.num_args = 1;
 c_7379.num_elt = 1;

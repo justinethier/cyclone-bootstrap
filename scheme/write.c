@@ -153,7 +153,8 @@ load_varargs(port_731, port_731_raw, argc - 2);
 
 closureN_type c_7350;
 c_7350.hdr.mark = gc_color_red;
- c_7350.tag = closureN_tag;
+ c_7350.hdr.grayed = 0;
+c_7350.tag = closureN_tag;
  c_7350.fn = (function_type)__lambda_6;
 c_7350.num_args = 1;
 c_7350.num_elt = 3;
@@ -171,7 +172,8 @@ if( !eq(boolean_f, r_7311) ){
   
 closureN_type c_7352;
 c_7352.hdr.mark = gc_color_red;
- c_7352.tag = closureN_tag;
+ c_7352.hdr.grayed = 0;
+c_7352.tag = closureN_tag;
  c_7352.fn = (function_type)__lambda_4;
 c_7352.num_args = 1;
 c_7352.num_elt = 2;
@@ -184,7 +186,8 @@ return_closcall1(data,  __glo_current_91output_91port,  &c_7352);
   
 closureN_type c_7359;
 c_7359.hdr.mark = gc_color_red;
- c_7359.tag = closureN_tag;
+ c_7359.hdr.grayed = 0;
+c_7359.tag = closureN_tag;
  c_7359.fn = (function_type)__lambda_5;
 c_7359.num_args = 1;
 c_7359.num_elt = 2;
@@ -212,7 +215,8 @@ load_varargs(port_733, port_733_raw, argc - 2);
 
 closureN_type c_7328;
 c_7328.hdr.mark = gc_color_red;
- c_7328.tag = closureN_tag;
+ c_7328.hdr.grayed = 0;
+c_7328.tag = closureN_tag;
  c_7328.fn = (function_type)__lambda_2;
 c_7328.num_args = 1;
 c_7328.num_elt = 3;
@@ -230,7 +234,8 @@ if( !eq(boolean_f, r_7317) ){
   
 closureN_type c_7330;
 c_7330.hdr.mark = gc_color_red;
- c_7330.tag = closureN_tag;
+ c_7330.hdr.grayed = 0;
+c_7330.tag = closureN_tag;
  c_7330.fn = (function_type)__lambda_0;
 c_7330.num_args = 1;
 c_7330.num_elt = 2;
@@ -243,7 +248,8 @@ return_closcall1(data,  __glo_current_91output_91port,  &c_7330);
   
 closureN_type c_7337;
 c_7337.hdr.mark = gc_color_red;
- c_7337.tag = closureN_tag;
+ c_7337.hdr.grayed = 0;
+c_7337.tag = closureN_tag;
  c_7337.fn = (function_type)__lambda_1;
 c_7337.num_args = 1;
 c_7337.num_elt = 2;
