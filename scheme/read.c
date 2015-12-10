@@ -3385,10 +3385,10 @@ c_731278.elts[5] = ptbl_73106;
 c_731278.elts[6] = tok_73111;
 c_731278.elts[7] = toks_73110;
 
-  // JAE
-  fprintf(stderr, "Calling scheme/read.sld:parse parens=%p clo=%p\n",
-    parens_73107, &c_731278);
-  // END
+//  // JAE
+//  fprintf(stderr, "Calling scheme/read.sld:parse parens=%p clo=%p\n",
+//    parens_73107, &c_731278);
+//  // END
 return_closcall1(data,(closure)&c_731278,  boolean_f);; 
 }
 
