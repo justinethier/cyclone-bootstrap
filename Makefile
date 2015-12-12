@@ -6,6 +6,8 @@
 
 include Makefile.config
 
+# Use this line for profiling
+#CFLAGS = -g -pg
 CFLAGS = -g
 LIBS = -pthread -lcyclone -lck -lm
 
