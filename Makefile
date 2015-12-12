@@ -7,7 +7,7 @@
 include Makefile.config
 
 CFLAGS = -g
-LIBS = -pthread -lcyclone -lm
+LIBS = -pthread -lcyclone -lck -lm
 
 COBJ = scheme/base scheme/read scheme/write scheme/char scheme/eval scheme/file scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/cgen scheme/cyclone/util
 CFILES = $(addsuffix .c, $(COBJ))
