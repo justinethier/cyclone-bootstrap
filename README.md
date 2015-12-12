@@ -7,6 +7,7 @@ Cyclone cannot be built directly on a system that does not have Cyclone binaries
 Prerequisites
 -------------
 
+- [Concurrency Kit](http://concurrencykit.org/)
 - make
 - gcc
 
