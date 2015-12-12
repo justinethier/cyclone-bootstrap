@@ -6581,7 +6581,7 @@ main(int argc,char **argv)
  mclosure0(entry_pt,&c_entry_pt); // First function to execute
  _cyc_argc = argc;
  _cyc_argv = argv;
- gc_initialize(); 
+ gc_initialize();
  thd = malloc(sizeof(gc_thread_data));
  gc_thread_data_init(thd, 0, (char *) &stack_size, stack_size);
  thd->gc_cont = &entry_pt;
