@@ -57,7 +57,7 @@ static void __lambda_1(void *data, int argc, object self_7320, object r_736) ;
 static void __lambda_0(void *data, int argc, object self_7321, object r_737) ;
 
 static void __lambda_5(void *data, int argc, closure _,object k_733) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7325;
 c_7325.hdr.mark = gc_color_red;
@@ -75,7 +75,7 @@ return_closcall1(data,(closure)&c_7325,  &c_7352);;
 }
 
 static void __lambda_4(void *data, int argc, object self_7317, object r_734) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7327;
 c_7327.hdr.mark = gc_color_red;
@@ -97,7 +97,7 @@ return_closcall1(data,(closure)&c_7327,  c_7349);;
 }
 
 static void __lambda_3(void *data, int argc, object self_7318, object r_738) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7329;
 c_7329.hdr.mark = gc_color_red;
@@ -113,7 +113,7 @@ return_closcall1(data,(closure)&c_7329,  global_set(__glo__85version_91banner_85
 }
 
 static void __lambda_2(void *data, int argc, object self_7319, object r_735) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7331;
 c_7331.hdr.mark = gc_color_red;
@@ -129,7 +129,7 @@ return_closcall1(data,(closure)&c_7331,  global_set(__glo__85Cyc_91version_91ban
 }
 
 static void __lambda_1(void *data, int argc, object self_7320, object r_736) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7333;
 c_7333.hdr.mark = gc_color_red;
@@ -151,7 +151,7 @@ return_closcall1(data,(closure)&c_7333,  c_7340);;
 }
 
 static void __lambda_0(void *data, int argc, object self_7321, object r_737) {
-  Cyc_st_add("scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
+  Cyc_st_add2(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 return_closcall1(data,  ((closureN)self_7321)->elts[0],  global_set(__glo__85c_91file_91header_91comment_85, r_737));; 
 }
 

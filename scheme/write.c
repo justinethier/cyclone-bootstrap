@@ -141,7 +141,7 @@ static void __lambda_1(void *data, int argc, object self_7324, object r_7319) ;
 static void __lambda_0(void *data, int argc, object self_7325, object r_7318) ;
 
 static void __lambda_8(void *data, int argc, closure _,object k_737) {
-  Cyc_st_add("scheme/write.sld:lib-init:schemewrite");
+  Cyc_st_add2(data, "scheme/write.sld:lib-init:schemewrite");
 
 make_int(c_7372, 0);
 return_closcall1(data,  k_737,  &c_7372);; 
@@ -149,7 +149,7 @@ return_closcall1(data,  k_737,  &c_7372);;
 
 static void __lambda_7(void *data, int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) {
 load_varargs(port_731, port_731_raw, argc - 2);
-  Cyc_st_add("scheme/write.sld:write");
+  Cyc_st_add2(data, "scheme/write.sld:write");
 
 closureN_type c_7350;
 c_7350.hdr.mark = gc_color_red;
@@ -167,7 +167,7 @@ return_closcall1(data,(closure)&c_7350,  Cyc_is_null(port_731));;
 }
 
 static void __lambda_6(void *data, int argc, object self_7320, object r_7311) {
-  Cyc_st_add("scheme/write.sld:write");
+  Cyc_st_add2(data, "scheme/write.sld:write");
 if( !eq(boolean_f, r_7311) ){ 
   
 closureN_type c_7352;
@@ -200,18 +200,18 @@ return_closcall1(data,(closure)&c_7359,  car(((closureN)self_7320)->elts[2]));}
 }
 
 static void __lambda_5(void *data, int argc, object self_7321, object r_7313) {
-  Cyc_st_add("scheme/write.sld:write");
+  Cyc_st_add2(data, "scheme/write.sld:write");
 return_closcall1(data,  ((closureN)self_7321)->elts[0],  Cyc_write_va(2,((closureN)self_7321)->elts[1], r_7313));; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7322, object r_7312) {
-  Cyc_st_add("scheme/write.sld:write");
+  Cyc_st_add2(data, "scheme/write.sld:write");
 return_closcall1(data,  ((closureN)self_7322)->elts[0],  Cyc_write_va(2,((closureN)self_7322)->elts[1], r_7312));; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_7316, object obj_734, object port_733_raw, ...) {
 load_varargs(port_733, port_733_raw, argc - 2);
-  Cyc_st_add("scheme/write.sld:display");
+  Cyc_st_add2(data, "scheme/write.sld:display");
 
 closureN_type c_7328;
 c_7328.hdr.mark = gc_color_red;
@@ -229,7 +229,7 @@ return_closcall1(data,(closure)&c_7328,  Cyc_is_null(port_733));;
 }
 
 static void __lambda_2(void *data, int argc, object self_7323, object r_7317) {
-  Cyc_st_add("scheme/write.sld:display");
+  Cyc_st_add2(data, "scheme/write.sld:display");
 if( !eq(boolean_f, r_7317) ){ 
   
 closureN_type c_7330;
@@ -262,12 +262,12 @@ return_closcall1(data,(closure)&c_7337,  car(((closureN)self_7323)->elts[2]));}
 }
 
 static void __lambda_1(void *data, int argc, object self_7324, object r_7319) {
-  Cyc_st_add("scheme/write.sld:display");
+  Cyc_st_add2(data, "scheme/write.sld:display");
 return_closcall1(data,  ((closureN)self_7324)->elts[0],  Cyc_display_va(2,((closureN)self_7324)->elts[1], r_7319));; 
 }
 
 static void __lambda_0(void *data, int argc, object self_7325, object r_7318) {
-  Cyc_st_add("scheme/write.sld:display");
+  Cyc_st_add2(data, "scheme/write.sld:display");
 return_closcall1(data,  ((closureN)self_7325)->elts[0],  Cyc_display_va(2,((closureN)self_7325)->elts[1], r_7318));; 
 }
 

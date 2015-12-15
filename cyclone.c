@@ -1294,7 +1294,7 @@ return_closcall1(data,  ((closureN)self_73359)->elts[0],  global_set(__glo__85tr
 }
 
 static void __lambda_235(void *data, int argc, closure _,object k_73129, object args_7352, object cc_127_7351) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731366;
 c_731366.hdr.mark = gc_color_red;
@@ -1311,7 +1311,7 @@ return_closcall1(data,(closure)&c_731366,  car(args_7352));;
 }
 
 static void __lambda_234(void *data, int argc, object self_73360, object r_73130) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731368;
 c_731368.hdr.mark = gc_color_red;
@@ -1328,7 +1328,7 @@ return_closcall1(data,(closure)&c_731368,  r_73130);;
 }
 
 static void __lambda_233(void *data, int argc, object self_73361, object in_91file_7353) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731370;
 c_731370.hdr.mark = gc_color_red;
@@ -1346,7 +1346,7 @@ return_closcall2(data,  __glo_read_91file,  &c_731370, in_91file_7353);;
 }
 
 static void __lambda_232(void *data, int argc, object self_73362, object r_73131) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731372;
 c_731372.hdr.mark = gc_color_red;
@@ -1364,7 +1364,7 @@ return_closcall1(data,(closure)&c_731372,  r_73131);;
 }
 
 static void __lambda_231(void *data, int argc, object self_73363, object in_91prog_7354) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731374;
 c_731374.hdr.mark = gc_color_red;
@@ -1383,7 +1383,7 @@ return_closcall1(data,(closure)&c_731374,  car(in_91prog_7354));;
 }
 
 static void __lambda_230(void *data, int argc, object self_73364, object r_73169) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731376;
 c_731376.hdr.mark = gc_color_red;
@@ -1402,7 +1402,7 @@ return_closcall2(data,  __glo_library_127,  &c_731376, r_73169);;
 }
 
 static void __lambda_229(void *data, int argc, object self_73365, object r_73168) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731378;
 c_731378.hdr.mark = gc_color_red;
@@ -1421,7 +1421,7 @@ return_closcall2(data,  __glo_not,  &c_731378, r_73168);;
 }
 
 static void __lambda_228(void *data, int argc, object self_73366, object r_73132) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731380;
 c_731380.hdr.mark = gc_color_red;
@@ -1440,7 +1440,7 @@ return_closcall1(data,(closure)&c_731380,  r_73132);;
 }
 
 static void __lambda_227(void *data, int argc, object self_73367, object program_127_7355) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731382;
 c_731382.hdr.mark = gc_color_red;
@@ -1472,7 +1472,7 @@ return_closcall1(data,(closure)&c_731382,  &c_731407);;
 }
 
 static void __lambda_226(void *data, int argc, object self_73368, object r_73133) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731409;
 c_731409.hdr.mark = gc_color_red;
@@ -1492,7 +1492,7 @@ return_closcall1(data,(closure)&c_731409,  r_73133);;
 }
 
 static void __lambda_225(void *data, int argc, object self_73369, object lib_91deps_7356) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731411;
 c_731411.hdr.mark = gc_color_red;
@@ -1513,7 +1513,7 @@ return_closcall2(data,  __glo_basename,  &c_731411, ((closureN)self_73369)->elts
 }
 
 static void __lambda_224(void *data, int argc, object self_73370, object r_73134) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731413;
 c_731413.hdr.mark = gc_color_red;
@@ -1534,7 +1534,7 @@ return_closcall1(data,(closure)&c_731413,  r_73134);;
 }
 
 static void __lambda_223(void *data, int argc, object self_73371, object exec_91file_7357) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731415;
 c_731415.hdr.mark = gc_color_red;
@@ -1560,7 +1560,7 @@ return_closcall1(data,(closure)&c_731415,  c_731615);;
 }
 
 static void __lambda_222(void *data, int argc, object self_73372, object r_73135) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731417;
 c_731417.hdr.mark = gc_color_red;
@@ -1582,7 +1582,7 @@ return_closcall1(data,(closure)&c_731417,  r_73135);;
 }
 
 static void __lambda_221(void *data, int argc, object self_73373, object src_91file_7358) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731419;
 c_731419.hdr.mark = gc_color_red;
@@ -1609,7 +1609,7 @@ return_closcall1(data,(closure)&c_731419,  c_731610);;
 }
 
 static void __lambda_220(void *data, int argc, object self_73374, object r_73136) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731421;
 c_731421.hdr.mark = gc_color_red;
@@ -1632,7 +1632,7 @@ return_closcall1(data,(closure)&c_731421,  r_73136);;
 }
 
 static void __lambda_219(void *data, int argc, object self_73375, object meta_91file_7359) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731423;
 c_731423.hdr.mark = gc_color_red;
@@ -1668,7 +1668,7 @@ return_closcall1(data,(closure)&c_731423,  &c_731597);;
 }
 
 static void __lambda_218(void *data, int argc, object self_73376, object k_73159, object program_7360) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731599;
 c_731599.hdr.mark = gc_color_red;
@@ -1698,17 +1698,17 @@ return_closcall1(data,(closure)&c_731599,  &c_731603);;
 }
 
 static void __lambda_217(void *data, int argc, object self_73377, object k_73161) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall4(data,  __glo_c_91compile_91and_91emit,  k_73161, ((closureN)self_73377)->elts[2], ((closureN)self_73377)->elts[1], ((closureN)self_73377)->elts[0]);; 
 }
 
 static void __lambda_216(void *data, int argc, object self_73378, object r_73160) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall3(data,  __glo_with_91output_91to_91file,  ((closureN)self_73378)->elts[0], ((closureN)self_73378)->elts[1], r_73160);; 
 }
 
 static void __lambda_215(void *data, int argc, object self_73379, object r_73137) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731425;
 c_731425.hdr.mark = gc_color_red;
@@ -1731,7 +1731,7 @@ return_closcall1(data,(closure)&c_731425,  r_73137);;
 }
 
 static void __lambda_214(void *data, int argc, object self_73380, object create_91c_91file_7361) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731427;
 c_731427.hdr.mark = gc_color_red;
@@ -1753,7 +1753,7 @@ return_closcall2(data,  create_91c_91file_7361,  &c_731427, ((closureN)self_7338
 }
 
 static void __lambda_213(void *data, int argc, object self_73381, object r_73138) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731429;
 c_731429.hdr.mark = gc_color_red;
@@ -1775,7 +1775,7 @@ return_closcall1(data,(closure)&c_731429,  r_73138);;
 }
 
 static void __lambda_212(void *data, int argc, object self_73382, object result_7362) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731431;
 c_731431.hdr.mark = gc_color_red;
@@ -1797,7 +1797,7 @@ return_closcall0(data,(closure)&c_731431);;
 }
 
 static void __lambda_211(void *data, int argc, object self_73383) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73383)->elts[5]) ){ 
   
 closureN_type c_731434;
@@ -1836,7 +1836,7 @@ return_closcall0(data,(closure)&c_731554);}
 }
 
 static void __lambda_210(void *data, int argc, object self_73384) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731556;
 c_731556.hdr.mark = gc_color_red;
@@ -1858,7 +1858,7 @@ return_closcall1(data,(closure)&c_731556,  &c_731586);;
 }
 
 static void __lambda_209(void *data, int argc, object self_73385, object k_73155) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731588;
 c_731588.hdr.mark = gc_color_red;
@@ -1876,7 +1876,7 @@ return_closcall2(data,  __glo_display,  &c_731588, &c_731595);;
 }
 
 static void __lambda_208(void *data, int argc, object self_73386, object r_73156) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731590;
 c_731590.hdr.mark = gc_color_red;
@@ -1892,7 +1892,7 @@ return_closcall1(data,  __glo_newline,  &c_731590);;
 }
 
 static void __lambda_207(void *data, int argc, object self_73387, object r_73157) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731592;
 c_731592.hdr.mark = gc_color_red;
@@ -1908,12 +1908,12 @@ return_closcall1(data,  __glo_macro_117get_91defined_91macros,  &c_731592);;
 }
 
 static void __lambda_206(void *data, int argc, object self_73388, object r_73158) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall2(data,  __glo_write,  ((closureN)self_73388)->elts[0], r_73158);; 
 }
 
 static void __lambda_205(void *data, int argc, object self_73389, object r_73154) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731558;
 c_731558.hdr.mark = gc_color_red;
@@ -1932,7 +1932,7 @@ return_closcall3(data,  __glo_with_91output_91to_91file,  &c_731558, ((closureN)
 }
 
 static void __lambda_204(void *data, int argc, object self_73390, object r_73152) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731560;
 c_731560.hdr.mark = gc_color_red;
@@ -1957,7 +1957,7 @@ return_closcall1(data,(closure)&c_731560,  c_731579);;
 }
 
 static void __lambda_203(void *data, int argc, object self_73391, object r_73153) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731562;
 c_731562.hdr.mark = gc_color_red;
@@ -1974,7 +1974,7 @@ return_closcall1(data,(closure)&c_731562,  r_73153);;
 }
 
 static void __lambda_202(void *data, int argc, object self_73392, object comp_91lib_91cmd_7363) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73392)->elts[0]) ){ 
   
 closureN_type c_731565;
@@ -2007,19 +2007,19 @@ return_closcall0(data,(closure)&c_731573);}
 }
 
 static void __lambda_201(void *data, int argc, object self_73393) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall2(data,  __glo_write,  ((closureN)self_73393)->elts[1], ((closureN)self_73393)->elts[0]);; 
 }
 
 static void __lambda_200(void *data, int argc, object self_73394) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 integer_type c_731570 = Cyc_system(((closureN)self_73394)->elts[0]);
 return_closcall1(data,  ((closureN)self_73394)->elts[1],  &c_731570);; 
 }
 
 static void __lambda_199(void *data, int argc, object self_73395) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731436;
 c_731436.hdr.mark = gc_color_red;
@@ -2039,7 +2039,7 @@ return_closcall3(data,(closure)&c_731436,  boolean_f, boolean_f, boolean_f);;
 }
 
 static void __lambda_198(void *data, int argc, object self_73396, object objs_91str_7366, object comp_91prog_91cmd_7365, object comp_91objs_91cmd_7364) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731438;
 c_731438.hdr.mark = gc_color_red;
@@ -2063,7 +2063,7 @@ return_closcall1(data,(closure)&c_731438,  &c_731552);;
 }
 
 static void __lambda_197(void *data, int argc, object self_73397, object objs_91str_7366) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731440;
 c_731440.hdr.mark = gc_color_red;
@@ -2087,7 +2087,7 @@ return_closcall1(data,(closure)&c_731440,  &c_731548);;
 }
 
 static void __lambda_196(void *data, int argc, object self_73398, object comp_91prog_91cmd_7365) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731442;
 c_731442.hdr.mark = gc_color_red;
@@ -2111,7 +2111,7 @@ return_closcall1(data,(closure)&c_731442,  &c_731544);;
 }
 
 static void __lambda_195(void *data, int argc, object self_73399, object comp_91objs_91cmd_7364) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731444;
 c_731444.hdr.mark = gc_color_red;
@@ -2134,7 +2134,7 @@ return_closcall0(data,(closure)&c_731444);;
 }
 
 static void __lambda_194(void *data, int argc, object self_73400) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731446;
 c_731446.hdr.mark = gc_color_red;
@@ -2159,7 +2159,7 @@ return_closcall1(data,(closure)&c_731446,  &c_731531);;
 }
 
 static void __lambda_193(void *data, int argc, object self_73401, object k_73150, object i_7367) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731533;
 c_731533.hdr.mark = gc_color_red;
@@ -2177,7 +2177,7 @@ return_closcall3(data,  __glo_lib_117import_91_125filename,  &c_731533, i_7367, 
 }
 
 static void __lambda_192(void *data, int argc, object self_73402, object r_73151) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 make_string(c_731539, " ");
 
@@ -2188,7 +2188,7 @@ return_closcall1(data,  ((closureN)self_73402)->elts[0],  c_731538);;
 }
 
 static void __lambda_191(void *data, int argc, object self_73403, object r_73149) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731448;
 c_731448.hdr.mark = gc_color_red;
@@ -2210,7 +2210,7 @@ return_closcall3(data,  __glo_map,  &c_731448, r_73149, ((closureN)self_73403)->
 }
 
 static void __lambda_190(void *data, int argc, object self_73404, object r_73148) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731450;
 c_731450.hdr.mark = gc_color_red;
@@ -2234,7 +2234,7 @@ return_closcall1(data,(closure)&c_731450,  c_731529);;
 }
 
 static void __lambda_189(void *data, int argc, object self_73405, object r_73147) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731452;
 c_731452.hdr.mark = gc_color_red;
@@ -2256,7 +2256,7 @@ return_closcall1(data,(closure)&c_731452,  Cyc_set_car(data, ((closureN)self_734
 }
 
 static void __lambda_188(void *data, int argc, object self_73406, object r_73139) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731454;
 c_731454.hdr.mark = gc_color_red;
@@ -2285,7 +2285,7 @@ return_closcall1(data,(closure)&c_731454,  c_731518);;
 }
 
 static void __lambda_187(void *data, int argc, object self_73407, object r_73146) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731456;
 c_731456.hdr.mark = gc_color_red;
@@ -2306,7 +2306,7 @@ return_closcall1(data,(closure)&c_731456,  Cyc_set_car(data, ((closureN)self_734
 }
 
 static void __lambda_186(void *data, int argc, object self_73408, object r_73140) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731458;
 c_731458.hdr.mark = gc_color_red;
@@ -2333,7 +2333,7 @@ return_closcall1(data,(closure)&c_731458,  c_731504);;
 }
 
 static void __lambda_185(void *data, int argc, object self_73409, object r_73145) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731460;
 c_731460.hdr.mark = gc_color_red;
@@ -2352,7 +2352,7 @@ return_closcall1(data,(closure)&c_731460,  Cyc_set_car(data, ((closureN)self_734
 }
 
 static void __lambda_184(void *data, int argc, object self_73410, object r_73141) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73410)->elts[0]) ){ 
   
 closureN_type c_731463;
@@ -2387,7 +2387,7 @@ return_closcall0(data,(closure)&c_731488);}
 }
 
 static void __lambda_183(void *data, int argc, object self_73411) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731490;
 c_731490.hdr.mark = gc_color_red;
@@ -2404,12 +2404,12 @@ return_closcall2(data,  __glo_write,  &c_731490, cell_get(((closureN)self_73411)
 }
 
 static void __lambda_182(void *data, int argc, object self_73412, object r_73144) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall2(data,  __glo_write,  ((closureN)self_73412)->elts[1], cell_get(((closureN)self_73412)->elts[0]));; 
 }
 
 static void __lambda_181(void *data, int argc, object self_73413) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731465;
 c_731465.hdr.mark = gc_color_red;
@@ -2428,7 +2428,7 @@ return_closcall1(data,(closure)&c_731465,  &c_731483);;
 }
 
 static void __lambda_180(void *data, int argc, object self_73414, object r_73143) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731467;
 c_731467.hdr.mark = gc_color_red;
@@ -2447,7 +2447,7 @@ return_closcall1(data,(closure)&c_731467,  equalp(&c_731480, r_73143));;
 }
 
 static void __lambda_179(void *data, int argc, object self_73415, object r_73142) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, r_73142) ){ 
   
 integer_type c_731472 = Cyc_system(cell_get(((closureN)self_73415)->elts[0]));
@@ -2458,7 +2458,7 @@ return_closcall1(data,  ((closureN)self_73415)->elts[1],  &c_731472);
 }
 
 static void __lambda_178(void *data, int argc, object self_73416, object k_73162) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731384;
 c_731384.hdr.mark = gc_color_red;
@@ -2487,7 +2487,7 @@ return_closcall1(data,(closure)&c_731384,  &c_731397);;
 }
 
 static void __lambda_177(void *data, int argc, object self_73417, object r_73163) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, r_73163) ){ 
   
 closureN_type c_731399;
@@ -2507,12 +2507,12 @@ return_closcall1(data,(closure)&c_731399,  cdar(((closureN)self_73417)->elts[0])
 }
 
 static void __lambda_176(void *data, int argc, object self_73418, object r_73164) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall2(data,  __glo_lib_117get_91all_91import_91deps,  ((closureN)self_73418)->elts[0], r_73164);; 
 }
 
 static void __lambda_175(void *data, int argc, object self_73419, object k_73165) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 if( !eq(boolean_f, ((closureN)self_73419)->elts[1]) ){ 
   
 closureN_type c_731387;
@@ -2533,7 +2533,7 @@ return_closcall1(data,(closure)&c_731387,  quote_import);
 }
 
 static void __lambda_174(void *data, int argc, object self_73420, object r_73166) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 
 closureN_type c_731389;
 c_731389.hdr.mark = gc_color_red;
@@ -2550,12 +2550,12 @@ return_closcall1(data,(closure)&c_731389,  car(((closureN)self_73420)->elts[0]))
 }
 
 static void __lambda_173(void *data, int argc, object self_73421, object r_73167) {
-  Cyc_st_add("cyclone.scm:run-compiler");
+  Cyc_st_add2(data, "cyclone.scm:run-compiler");
 return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_73421)->elts[0], ((closureN)self_73421)->elts[1], r_73167);; 
 }
 
 static void __lambda_172(void *data, int argc, closure _,object k_73172, object filename_7368) {
-  Cyc_st_add("cyclone.scm:read-file");
+  Cyc_st_add2(data, "cyclone.scm:read-file");
 
 closureN_type c_731358;
 c_731358.hdr.mark = gc_color_red;
@@ -2574,17 +2574,17 @@ return_closcall1(data,(closure)&c_731358,  &c_731362);;
 }
 
 static void __lambda_171(void *data, int argc, object self_73422, object k_73174, object port_7369) {
-  Cyc_st_add("cyclone.scm:read-file");
+  Cyc_st_add2(data, "cyclone.scm:read-file");
 return_closcall2(data,  __glo_read_91all,  k_73174, port_7369);; 
 }
 
 static void __lambda_170(void *data, int argc, object self_73423, object r_73173) {
-  Cyc_st_add("cyclone.scm:read-file");
+  Cyc_st_add2(data, "cyclone.scm:read-file");
 return_closcall3(data,  __glo_call_91with_91input_91file,  ((closureN)self_73423)->elts[1], ((closureN)self_73423)->elts[0], r_73173);; 
 }
 
 static void __lambda_169(void *data, int argc, closure _,object k_73177, object input_91program_7372, object lib_91deps_7371, object src_91file_7370) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73594;
 c_73594.hdr.mark = gc_color_red;
@@ -2604,7 +2604,7 @@ return_closcall1(data,(closure)&c_73594,  &c_731355);;
 }
 
 static void __lambda_168(void *data, int argc, object self_73424, object input_91program_7372) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73596;
 c_73596.hdr.mark = gc_color_red;
@@ -2623,7 +2623,7 @@ return_closcall7(data,(closure)&c_73596,  boolean_f, boolean_f, boolean_f, boole
 }
 
 static void __lambda_167(void *data, int argc, object self_73425, object globals_7379, object imported_91vars_7378, object imports_7377, object lib_91exports_7376, object lib_91name_7375, object module_91globals_7374, object program_127_7373) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73598;
 c_73598.hdr.mark = gc_color_red;
@@ -2652,7 +2652,7 @@ return_closcall1(data,(closure)&c_73598,  &c_73601);;
 }
 
 static void __lambda_166(void *data, int argc, object self_73426, object k_73179, object return_7380) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73603;
 c_73603.hdr.mark = gc_color_red;
@@ -2672,7 +2672,7 @@ return_closcall7(data,(closure)&c_73603,  boolean_f, boolean_f, boolean_f, boole
 }
 
 static void __lambda_165(void *data, int argc, object self_73427, object globals_7387, object module_91globals_7386, object program_127_7385, object imports_7384, object imported_91vars_7383, object lib_91name_7382, object lib_91exports_7381) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73605;
 c_73605.hdr.mark = gc_color_red;
@@ -2700,7 +2700,7 @@ return_closcall1(data,(closure)&c_73605,  &c_731352);;
 }
 
 static void __lambda_164(void *data, int argc, object self_73428, object globals_7387) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73607;
 c_73607.hdr.mark = gc_color_red;
@@ -2728,7 +2728,7 @@ return_closcall1(data,(closure)&c_73607,  &c_731348);;
 }
 
 static void __lambda_163(void *data, int argc, object self_73429, object module_91globals_7386) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73609;
 c_73609.hdr.mark = gc_color_red;
@@ -2756,7 +2756,7 @@ return_closcall1(data,(closure)&c_73609,  &c_731344);;
 }
 
 static void __lambda_162(void *data, int argc, object self_73430, object program_127_7385) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73611;
 c_73611.hdr.mark = gc_color_red;
@@ -2784,7 +2784,7 @@ return_closcall1(data,(closure)&c_73611,  &c_731340);;
 }
 
 static void __lambda_161(void *data, int argc, object self_73431, object imports_7384) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73613;
 c_73613.hdr.mark = gc_color_red;
@@ -2812,7 +2812,7 @@ return_closcall1(data,(closure)&c_73613,  &c_731336);;
 }
 
 static void __lambda_160(void *data, int argc, object self_73432, object imported_91vars_7383) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73615;
 c_73615.hdr.mark = gc_color_red;
@@ -2840,7 +2840,7 @@ return_closcall1(data,(closure)&c_73615,  &c_731332);;
 }
 
 static void __lambda_159(void *data, int argc, object self_73433, object lib_91name_7382) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73617;
 c_73617.hdr.mark = gc_color_red;
@@ -2868,7 +2868,7 @@ return_closcall1(data,(closure)&c_73617,  &c_731328);;
 }
 
 static void __lambda_158(void *data, int argc, object self_73434, object lib_91exports_7381) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73619;
 c_73619.hdr.mark = gc_color_red;
@@ -2895,7 +2895,7 @@ return_closcall1(data,(closure)&c_73619,  nil);;
 }
 
 static void __lambda_157(void *data, int argc, object self_73435, object r_73327) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73621;
 c_73621.hdr.mark = gc_color_red;
@@ -2922,7 +2922,7 @@ return_closcall1(data,(closure)&c_73621,  Cyc_set_car(data, ((closureN)self_7343
 }
 
 static void __lambda_156(void *data, int argc, object self_73436, object r_73180) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73623;
 c_73623.hdr.mark = gc_color_red;
@@ -2949,7 +2949,7 @@ return_closcall1(data,(closure)&c_73623,  nil);;
 }
 
 static void __lambda_155(void *data, int argc, object self_73437, object r_73326) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73625;
 c_73625.hdr.mark = gc_color_red;
@@ -2976,7 +2976,7 @@ return_closcall1(data,(closure)&c_73625,  Cyc_set_car(data, ((closureN)self_7343
 }
 
 static void __lambda_154(void *data, int argc, object self_73438, object r_73181) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73627;
 c_73627.hdr.mark = gc_color_red;
@@ -3003,7 +3003,7 @@ return_closcall1(data,(closure)&c_73627,  Cyc_set_car(data, ((closureN)self_7343
 }
 
 static void __lambda_153(void *data, int argc, object self_73439, object r_73182) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73629;
 c_73629.hdr.mark = gc_color_red;
@@ -3030,7 +3030,7 @@ return_closcall1(data,(closure)&c_73629,  nil);;
 }
 
 static void __lambda_152(void *data, int argc, object self_73440, object r_73325) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73631;
 c_73631.hdr.mark = gc_color_red;
@@ -3057,7 +3057,7 @@ return_closcall1(data,(closure)&c_73631,  Cyc_set_car(data, ((closureN)self_7344
 }
 
 static void __lambda_151(void *data, int argc, object self_73441, object r_73183) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73633;
 c_73633.hdr.mark = gc_color_red;
@@ -3084,7 +3084,7 @@ return_closcall1(data,(closure)&c_73633,  nil);;
 }
 
 static void __lambda_150(void *data, int argc, object self_73442, object r_73324) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73635;
 c_73635.hdr.mark = gc_color_red;
@@ -3111,7 +3111,7 @@ return_closcall1(data,(closure)&c_73635,  Cyc_set_car(data, ((closureN)self_7344
 }
 
 static void __lambda_149(void *data, int argc, object self_73443, object r_73184) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73637;
 c_73637.hdr.mark = gc_color_red;
@@ -3138,7 +3138,7 @@ return_closcall1(data,(closure)&c_73637,  nil);;
 }
 
 static void __lambda_148(void *data, int argc, object self_73444, object r_73323) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73639;
 c_73639.hdr.mark = gc_color_red;
@@ -3165,7 +3165,7 @@ return_closcall1(data,(closure)&c_73639,  Cyc_set_car(data, ((closureN)self_7344
 }
 
 static void __lambda_147(void *data, int argc, object self_73445, object r_73185) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73641;
 c_73641.hdr.mark = gc_color_red;
@@ -3192,7 +3192,7 @@ return_closcall1(data,(closure)&c_73641,  nil);;
 }
 
 static void __lambda_146(void *data, int argc, object self_73446, object r_73322) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73643;
 c_73643.hdr.mark = gc_color_red;
@@ -3219,7 +3219,7 @@ return_closcall1(data,(closure)&c_73643,  Cyc_set_car(data, ((closureN)self_7344
 }
 
 static void __lambda_145(void *data, int argc, object self_73447, object r_73186) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73645;
 c_73645.hdr.mark = gc_color_red;
@@ -3246,7 +3246,7 @@ return_closcall2(data,  __glo_emit,  &c_73645, __glo__85c_91file_91header_91comm
 }
 
 static void __lambda_144(void *data, int argc, object self_73448, object r_73187) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73647;
 c_73647.hdr.mark = gc_color_red;
@@ -3275,7 +3275,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73647, &c_731304);;
 }
 
 static void __lambda_143(void *data, int argc, object self_73449, object r_73188) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73649;
 c_73649.hdr.mark = gc_color_red;
@@ -3302,7 +3302,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73649, cell_get(((closureN)self
 }
 
 static void __lambda_142(void *data, int argc, object self_73450, object r_73189) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73651;
 c_73651.hdr.mark = gc_color_red;
@@ -3344,7 +3344,7 @@ return_closcall1(data,(closure)&c_73651,  &c_73824);;
 }
 
 static void __lambda_141(void *data, int argc, object self_73451, object r_73190) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73826;
 c_73826.hdr.mark = gc_color_red;
@@ -3373,7 +3373,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73826, &c_731300);;
 }
 
 static void __lambda_140(void *data, int argc, object self_73452, object r_73191) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73828;
 c_73828.hdr.mark = gc_color_red;
@@ -3400,7 +3400,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73828, cell_get(((closureN)self
 }
 
 static void __lambda_139(void *data, int argc, object self_73453, object r_73192) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73830;
 c_73830.hdr.mark = gc_color_red;
@@ -3427,7 +3427,7 @@ return_closcall2(data,  __glo_lib_117resolve_91imports,  &c_73830, cell_get(((cl
 }
 
 static void __lambda_138(void *data, int argc, object self_73454, object r_73287) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73832;
 c_73832.hdr.mark = gc_color_red;
@@ -3454,7 +3454,7 @@ return_closcall1(data,(closure)&c_73832,  Cyc_set_car(data, ((closureN)self_7345
 }
 
 static void __lambda_137(void *data, int argc, object self_73455, object r_73193) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73834;
 c_73834.hdr.mark = gc_color_red;
@@ -3483,7 +3483,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73834, &c_731290);;
 }
 
 static void __lambda_136(void *data, int argc, object self_73456, object r_73194) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73836;
 c_73836.hdr.mark = gc_color_red;
@@ -3510,7 +3510,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73836, cell_get(((closureN)self
 }
 
 static void __lambda_135(void *data, int argc, object self_73457, object r_73195) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73838;
 c_73838.hdr.mark = gc_color_red;
@@ -3536,7 +3536,7 @@ return_closcall2(data,  __glo_lib_117resolve_91meta,  &c_73838, cell_get(((closu
 }
 
 static void __lambda_134(void *data, int argc, object self_73458, object r_73283) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73840;
 c_73840.hdr.mark = gc_color_red;
@@ -3562,7 +3562,7 @@ return_closcall1(data,(closure)&c_73840,  r_73283);;
 }
 
 static void __lambda_133(void *data, int argc, object self_73459, object meta_7395) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73842;
 c_73842.hdr.mark = gc_color_red;
@@ -3589,7 +3589,7 @@ return_closcall3(data,  __glo_append,  &c_73842, meta_7395, __glo__85defined_91m
 }
 
 static void __lambda_132(void *data, int argc, object self_73460, object r_73286) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73844;
 c_73844.hdr.mark = gc_color_red;
@@ -3616,7 +3616,7 @@ return_closcall1(data,(closure)&c_73844,  global_set(__glo__85defined_91macros_8
 }
 
 static void __lambda_131(void *data, int argc, object self_73461, object r_73284) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73846;
 c_73846.hdr.mark = gc_color_red;
@@ -3645,7 +3645,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73846, &c_731281);;
 }
 
 static void __lambda_130(void *data, int argc, object self_73462, object r_73285) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73848;
 c_73848.hdr.mark = gc_color_red;
@@ -3671,7 +3671,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73848, ((closureN)self_73462)->
 }
 
 static void __lambda_129(void *data, int argc, object self_73463, object r_73196) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73850;
 c_73850.hdr.mark = gc_color_red;
@@ -3699,7 +3699,7 @@ return_closcall1(data,(closure)&c_73850,  &c_731267);;
 }
 
 static void __lambda_128(void *data, int argc, object self_73464, object k_73280, object v_7393) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731269;
 c_731269.hdr.mark = gc_color_red;
@@ -3715,7 +3715,7 @@ return_closcall1(data,(closure)&c_731269,  cdr(v_7393));;
 }
 
 static void __lambda_127(void *data, int argc, object self_73465, object r_73282) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731271;
 c_731271.hdr.mark = gc_color_red;
@@ -3731,12 +3731,12 @@ return_closcall1(data,(closure)&c_731271,  Cyc_get_cvar(r_73282));;
 }
 
 static void __lambda_126(void *data, int argc, object self_73466, object r_73281) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73466)->elts[0],  Cyc_is_macro(r_73281));; 
 }
 
 static void __lambda_125(void *data, int argc, object self_73467, object r_73278) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73852;
 c_73852.hdr.mark = gc_color_red;
@@ -3763,7 +3763,7 @@ return_closcall1(data,(closure)&c_73852,  Cyc_get_global_variables());;
 }
 
 static void __lambda_124(void *data, int argc, object self_73468, object r_73279) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73854;
 c_73854.hdr.mark = gc_color_red;
@@ -3789,7 +3789,7 @@ return_closcall3(data,  __glo_filter,  &c_73854, ((closureN)self_73468)->elts[9]
 }
 
 static void __lambda_123(void *data, int argc, object self_73469, object r_73276) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73856;
 c_73856.hdr.mark = gc_color_red;
@@ -3815,7 +3815,7 @@ return_closcall1(data,(closure)&c_73856,  r_73276);;
 }
 
 static void __lambda_122(void *data, int argc, object self_73470, object macros_7394) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73858;
 c_73858.hdr.mark = gc_color_red;
@@ -3841,7 +3841,7 @@ return_closcall3(data,  __glo_append,  &c_73858, macros_7394, __glo__85defined_9
 }
 
 static void __lambda_121(void *data, int argc, object self_73471, object r_73277) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73860;
 c_73860.hdr.mark = gc_color_red;
@@ -3867,7 +3867,7 @@ return_closcall1(data,(closure)&c_73860,  global_set(__glo__85defined_91macros_8
 }
 
 static void __lambda_120(void *data, int argc, object self_73472, object r_73197) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73862;
 c_73862.hdr.mark = gc_color_red;
@@ -3893,7 +3893,7 @@ return_closcall1(data,(closure)&c_73862,  nil);;
 }
 
 static void __lambda_119(void *data, int argc, object self_73473, object r_73274) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73864;
 c_73864.hdr.mark = gc_color_red;
@@ -3920,7 +3920,7 @@ return_closcall1(data,(closure)&c_73864,  nil);;
 }
 
 static void __lambda_118(void *data, int argc, object self_73474, object r_73275) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73866;
 c_73866.hdr.mark = gc_color_red;
@@ -3946,7 +3946,7 @@ return_closcall3(data,  __glo_create_91environment,  &c_73866, ((closureN)self_7
 }
 
 static void __lambda_117(void *data, int argc, object self_73475, object r_73273) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73868;
 c_73868.hdr.mark = gc_color_red;
@@ -3972,7 +3972,7 @@ return_closcall3(data,  __glo_macro_117load_91env_67,  &c_73868, __glo__85define
 }
 
 static void __lambda_116(void *data, int argc, object self_73476, object r_73198) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73870;
 c_73870.hdr.mark = gc_color_red;
@@ -3998,7 +3998,7 @@ return_closcall1(data,  __glo_macro_117get_91env,  &c_73870);;
 }
 
 static void __lambda_115(void *data, int argc, object self_73477, object r_73272) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73872;
 c_73872.hdr.mark = gc_color_red;
@@ -4024,7 +4024,7 @@ return_closcall3(data,  __glo_expand,  &c_73872, cell_get(((closureN)self_73477)
 }
 
 static void __lambda_114(void *data, int argc, object self_73478, object r_73271) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73874;
 c_73874.hdr.mark = gc_color_red;
@@ -4050,7 +4050,7 @@ return_closcall1(data,(closure)&c_73874,  Cyc_set_car(data, ((closureN)self_7347
 }
 
 static void __lambda_113(void *data, int argc, object self_73479, object r_73199) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73876;
 c_73876.hdr.mark = gc_color_red;
@@ -4078,7 +4078,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73876, &c_731254);;
 }
 
 static void __lambda_112(void *data, int argc, object self_73480, object r_73200) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73878;
 c_73878.hdr.mark = gc_color_red;
@@ -4104,7 +4104,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73878, cell_get(((closureN)self
 }
 
 static void __lambda_111(void *data, int argc, object self_73481, object r_73201) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73880;
 c_73880.hdr.mark = gc_color_red;
@@ -4130,7 +4130,7 @@ return_closcall4(data,  __glo_isolate_91globals,  &c_73880, cell_get(((closureN)
 }
 
 static void __lambda_110(void *data, int argc, object self_73482, object r_73270) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73882;
 c_73882.hdr.mark = gc_color_red;
@@ -4156,7 +4156,7 @@ return_closcall1(data,(closure)&c_73882,  Cyc_set_car(data, ((closureN)self_7348
 }
 
 static void __lambda_109(void *data, int argc, object self_73483, object r_73202) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73884;
 c_73884.hdr.mark = gc_color_red;
@@ -4194,7 +4194,7 @@ return_closcall1(data,(closure)&c_73884,  &c_73909);;
 }
 
 static void __lambda_108(void *data, int argc, object self_73484, object r_73203) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73911;
 c_73911.hdr.mark = gc_color_red;
@@ -4222,7 +4222,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73911, &c_731238);;
 }
 
 static void __lambda_107(void *data, int argc, object self_73485, object r_73204) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73913;
 c_73913.hdr.mark = gc_color_red;
@@ -4248,7 +4248,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73913, cell_get(((closureN)self
 }
 
 static void __lambda_106(void *data, int argc, object self_73486, object r_73205) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73915;
 c_73915.hdr.mark = gc_color_red;
@@ -4274,7 +4274,7 @@ return_closcall2(data,  __glo_global_91vars,  &c_73915, cell_get(((closureN)self
 }
 
 static void __lambda_105(void *data, int argc, object self_73487, object r_73264) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73917;
 c_73917.hdr.mark = gc_color_red;
@@ -4300,7 +4300,7 @@ return_closcall1(data,(closure)&c_73917,  Cyc_set_car(data, ((closureN)self_7348
 }
 
 static void __lambda_104(void *data, int argc, object self_73488, object r_73206) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73919;
 c_73919.hdr.mark = gc_color_red;
@@ -4326,7 +4326,7 @@ return_closcall3(data,  __glo_append,  &c_73919, cell_get(((closureN)self_73488)
 }
 
 static void __lambda_103(void *data, int argc, object self_73489, object r_73263) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73921;
 c_73921.hdr.mark = gc_color_red;
@@ -4352,7 +4352,7 @@ return_closcall1(data,(closure)&c_73921,  Cyc_set_car(data, ((closureN)self_7348
 }
 
 static void __lambda_102(void *data, int argc, object self_73490, object r_73207) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73923;
 c_73923.hdr.mark = gc_color_red;
@@ -4390,12 +4390,12 @@ return_closcall1(data,(closure)&c_73923,  &c_731214);;
 }
 
 static void __lambda_101(void *data, int argc, object self_73491, object k_73262, object expr_7392) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall4(data,  __glo_alpha_91convert,  k_73262, expr_7392, cell_get(((closureN)self_73491)->elts[0]), ((closureN)self_73491)->elts[1]);; 
 }
 
 static void __lambda_100(void *data, int argc, object self_73492, object r_73261) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73925;
 c_73925.hdr.mark = gc_color_red;
@@ -4421,7 +4421,7 @@ return_closcall3(data,  __glo_map,  &c_73925, r_73261, cell_get(((closureN)self_
 }
 
 static void __lambda_99(void *data, int argc, object self_73493, object r_73260) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73927;
 c_73927.hdr.mark = gc_color_red;
@@ -4447,7 +4447,7 @@ return_closcall1(data,(closure)&c_73927,  Cyc_set_car(data, ((closureN)self_7349
 }
 
 static void __lambda_98(void *data, int argc, object self_73494, object r_73208) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73929;
 c_73929.hdr.mark = gc_color_red;
@@ -4475,7 +4475,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73929, &c_731207);;
 }
 
 static void __lambda_97(void *data, int argc, object self_73495, object r_73209) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73931;
 c_73931.hdr.mark = gc_color_red;
@@ -4501,7 +4501,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_73931, cell_get(((closureN)self
 }
 
 static void __lambda_96(void *data, int argc, object self_73496, object r_73210) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73933;
 c_73933.hdr.mark = gc_color_red;
@@ -4529,12 +4529,12 @@ return_closcall1(data,(closure)&c_73933,  &c_731202);;
 }
 
 static void __lambda_95(void *data, int argc, object self_73497, object k_73259, object expr_7390) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall2(data,  __glo_cps_91convert,  k_73259, expr_7390);; 
 }
 
 static void __lambda_94(void *data, int argc, object self_73498, object r_73258) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73935;
 c_73935.hdr.mark = gc_color_red;
@@ -4560,7 +4560,7 @@ return_closcall3(data,  __glo_map,  &c_73935, r_73258, cell_get(((closureN)self_
 }
 
 static void __lambda_93(void *data, int argc, object self_73499, object r_73243) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73937;
 c_73937.hdr.mark = gc_color_red;
@@ -4586,7 +4586,7 @@ return_closcall1(data,(closure)&c_73937,  r_73243);;
 }
 
 static void __lambda_92(void *data, int argc, object self_73500, object cps_7391) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73939;
 c_73939.hdr.mark = gc_color_red;
@@ -4627,7 +4627,7 @@ return_closcall1(data,(closure)&c_73939,  &c_731050);;
 }
 
 static void __lambda_91(void *data, int argc, object self_73501, object r_73211) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731052;
 c_731052.hdr.mark = gc_color_red;
@@ -4655,7 +4655,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731052, &c_731198);;
 }
 
 static void __lambda_90(void *data, int argc, object self_73502, object r_73212) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731054;
 c_731054.hdr.mark = gc_color_red;
@@ -4681,7 +4681,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731054, cell_get(((closureN)sel
 }
 
 static void __lambda_89(void *data, int argc, object self_73503, object r_73213) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731056;
 c_731056.hdr.mark = gc_color_red;
@@ -4718,7 +4718,7 @@ return_closcall1(data,(closure)&c_731056,  &c_731183);;
 }
 
 static void __lambda_88(void *data, int argc, object self_73504, object k_73240, object expr_7389) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731185;
 c_731185.hdr.mark = gc_color_red;
@@ -4736,7 +4736,7 @@ return_closcall1(data,  __glo_clear_91mutables,  &c_731185);;
 }
 
 static void __lambda_87(void *data, int argc, object self_73505, object r_73241) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731187;
 c_731187.hdr.mark = gc_color_red;
@@ -4754,12 +4754,12 @@ return_closcall2(data,  __glo_analyze_91mutable_91variables,  &c_731187, ((closu
 }
 
 static void __lambda_86(void *data, int argc, object self_73506, object r_73242) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall3(data,  __glo_wrap_91mutables,  ((closureN)self_73506)->elts[2], ((closureN)self_73506)->elts[0], cell_get(((closureN)self_73506)->elts[1]));; 
 }
 
 static void __lambda_85(void *data, int argc, object self_73507, object r_73239) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731058;
 c_731058.hdr.mark = gc_color_red;
@@ -4785,7 +4785,7 @@ return_closcall3(data,  __glo_map,  &c_731058, r_73239, cell_get(((closureN)self
 }
 
 static void __lambda_84(void *data, int argc, object self_73508, object r_73238) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731060;
 c_731060.hdr.mark = gc_color_red;
@@ -4811,7 +4811,7 @@ return_closcall1(data,(closure)&c_731060,  Cyc_set_car(data, ((closureN)self_735
 }
 
 static void __lambda_83(void *data, int argc, object self_73509, object r_73214) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731062;
 c_731062.hdr.mark = gc_color_red;
@@ -4839,7 +4839,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731062, &c_731176);;
 }
 
 static void __lambda_82(void *data, int argc, object self_73510, object r_73215) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731064;
 c_731064.hdr.mark = gc_color_red;
@@ -4865,7 +4865,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731064, cell_get(((closureN)sel
 }
 
 static void __lambda_81(void *data, int argc, object self_73511, object r_73216) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731066;
 c_731066.hdr.mark = gc_color_red;
@@ -4901,7 +4901,7 @@ return_closcall1(data,(closure)&c_731066,  &c_731131);;
 }
 
 static void __lambda_80(void *data, int argc, object self_73512, object k_73229, object expr_7388) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731133;
 c_731133.hdr.mark = gc_color_red;
@@ -4919,7 +4919,7 @@ return_closcall2(data,  __glo_define_127,  &c_731133, expr_7388);;
 }
 
 static void __lambda_79(void *data, int argc, object self_73513, object r_73230) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73230) ){ 
   
 closureN_type c_731135;
@@ -4952,12 +4952,12 @@ return_closcall3(data,  __glo_closure_91convert,  &c_731164, ((closureN)self_735
 }
 
 static void __lambda_78(void *data, int argc, object self_73514, object r_73237) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73514)->elts[0],  caddr(r_73237));; 
 }
 
 static void __lambda_77(void *data, int argc, object self_73515, object r_73231) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731137;
 c_731137.hdr.mark = gc_color_red;
@@ -4976,7 +4976,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_731137, ((closureN)self_7351
 }
 
 static void __lambda_76(void *data, int argc, object self_73516, object r_73233) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731139;
 c_731139.hdr.mark = gc_color_red;
@@ -4995,7 +4995,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_731139, ((closureN)self_7351
 }
 
 static void __lambda_75(void *data, int argc, object self_73517, object r_73236) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731141;
 c_731141.hdr.mark = gc_color_red;
@@ -5013,7 +5013,7 @@ return_closcall3(data,  __glo_closure_91convert,  &c_731141, r_73236, cell_get((
 }
 
 static void __lambda_74(void *data, int argc, object self_73518, object r_73235) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731143;
 c_731143.hdr.mark = gc_color_red;
@@ -5031,7 +5031,7 @@ return_closcall1(data,(closure)&c_731143,  caddr(r_73235));;
 }
 
 static void __lambda_73(void *data, int argc, object self_73519, object r_73234) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731145;
 c_731145.hdr.mark = gc_color_red;
@@ -5050,14 +5050,14 @@ return_closcall1(data,(closure)&c_731145,  &c_731154);;
 }
 
 static void __lambda_72(void *data, int argc, object self_73520, object r_73232) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 make_cons(c_731150,((closureN)self_73520)->elts[1], r_73232);
 return_closcall1(data,  ((closureN)self_73520)->elts[0],  &c_731150);; 
 }
 
 static void __lambda_71(void *data, int argc, object self_73521, object r_73228) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731068;
 c_731068.hdr.mark = gc_color_red;
@@ -5082,7 +5082,7 @@ return_closcall3(data,  __glo_map,  &c_731068, r_73228, cell_get(((closureN)self
 }
 
 static void __lambda_70(void *data, int argc, object self_73522, object r_73227) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731070;
 c_731070.hdr.mark = gc_color_red;
@@ -5107,7 +5107,7 @@ return_closcall1(data,(closure)&c_731070,  Cyc_set_car(data, ((closureN)self_735
 }
 
 static void __lambda_69(void *data, int argc, object self_73523, object r_73217) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731072;
 c_731072.hdr.mark = gc_color_red;
@@ -5134,7 +5134,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731072, &c_731124);;
 }
 
 static void __lambda_68(void *data, int argc, object self_73524, object r_73218) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731074;
 c_731074.hdr.mark = gc_color_red;
@@ -5159,7 +5159,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731074, cell_get(((closureN)sel
 }
 
 static void __lambda_67(void *data, int argc, object self_73525, object r_73219) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 closureN_type c_731090;
 c_731090.hdr.mark = gc_color_red;
  c_731090.hdr.grayed = 0;
@@ -5183,7 +5183,7 @@ return_direct1(data,__lambda_62,&c_731090);;
 }
 
 static void __lambda_66(void *data, int argc, object self_73526, object r_73220) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731092;
 c_731092.hdr.mark = gc_color_red;
@@ -5210,7 +5210,7 @@ return_closcall2(data,  __glo_trace_117info,  &c_731092, &c_731120);;
 }
 
 static void __lambda_65(void *data, int argc, object self_73527, object r_73221) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731094;
 c_731094.hdr.mark = gc_color_red;
@@ -5227,7 +5227,7 @@ return_closcall9(data,  __glo_mta_117code_91gen,  &c_731094, cell_get(((closureN
 }
 
 static void __lambda_64(void *data, int argc, object self_73528, object r_73222) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731096;
 c_731096.hdr.mark = gc_color_red;
@@ -5244,12 +5244,12 @@ return_closcall1(data,(closure)&c_731096,  nil);;
 }
 
 static void __lambda_63(void *data, int argc, object self_73529, object r_73223) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall2(data,  ((closureN)self_73529)->elts[1],  ((closureN)self_73529)->elts[0], r_73223);; 
 }
 
 static void __lambda_62(void *data, int argc, closure _,object k_73224) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731077;
 c_731077.hdr.mark = gc_color_red;
@@ -5265,7 +5265,7 @@ return_closcall2(data,  __glo_not,  &c_731077, __glo__85do_91code_91gen_85);;
 }
 
 static void __lambda_61(void *data, int argc, object self_73530, object r_73225) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73225) ){ 
   
 closureN_type c_731079;
@@ -5285,7 +5285,7 @@ return_closcall0(data,(closure)&c_731079);
 }
 
 static void __lambda_60(void *data, int argc, object self_73531) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_731081;
 c_731081.hdr.mark = gc_color_red;
@@ -5303,14 +5303,14 @@ return_closcall2(data,  __glo_trace_117error,  &c_731081, &c_731087);;
 }
 
 static void __lambda_59(void *data, int argc, object self_73532, object r_73226) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 make_int(c_731086, 0);
 return_closcall1(data,  ((closureN)self_73532)->elts[0],  __halt(&c_731086));; 
 }
 
 static void __lambda_58(void *data, int argc, object self_73533, object k_73244) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73941;
 c_73941.hdr.mark = gc_color_red;
@@ -5341,7 +5341,7 @@ return_closcall1(data,(closure)&c_73941,  &c_73954);;
 }
 
 static void __lambda_57(void *data, int argc, object self_73534, object r_73245) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73245) ){ 
   
 closureN_type c_73956;
@@ -5378,12 +5378,12 @@ return_closcall0(data,(closure)&c_731043);}
 }
 
 static void __lambda_56(void *data, int argc, object self_73535) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73535)->elts[2],  Cyc_set_car(data, ((closureN)self_73535)->elts[1], ((closureN)self_73535)->elts[0]));; 
 }
 
 static void __lambda_55(void *data, int argc, object self_73536) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73958;
 c_73958.hdr.mark = gc_color_red;
@@ -5407,7 +5407,7 @@ return_closcall1(data,(closure)&c_73958,  &c_731040);;
 }
 
 static void __lambda_54(void *data, int argc, object self_73537, object r_73255) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73960;
 c_73960.hdr.mark = gc_color_red;
@@ -5427,7 +5427,7 @@ return_closcall3(data,  __glo_append,  &c_73960, r_73255, cell_get(((closureN)se
 }
 
 static void __lambda_53(void *data, int argc, object self_73538, object r_73254) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73962;
 c_73962.hdr.mark = gc_color_red;
@@ -5446,7 +5446,7 @@ return_closcall1(data,(closure)&c_73962,  Cyc_set_car(data, ((closureN)self_7353
 }
 
 static void __lambda_52(void *data, int argc, object self_73539, object r_73246) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73964;
 c_73964.hdr.mark = gc_color_red;
@@ -5469,7 +5469,7 @@ return_closcall1(data,(closure)&c_73964,  &c_731032);;
 }
 
 static void __lambda_51(void *data, int argc, object self_73540, object r_73253) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73966;
 c_73966.hdr.mark = gc_color_red;
@@ -5488,7 +5488,7 @@ return_closcall3(data,  __glo_append,  &c_73966, r_73253, cell_get(((closureN)se
 }
 
 static void __lambda_50(void *data, int argc, object self_73541, object r_73252) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73968;
 c_73968.hdr.mark = gc_color_red;
@@ -5506,7 +5506,7 @@ return_closcall1(data,(closure)&c_73968,  Cyc_set_car(data, ((closureN)self_7354
 }
 
 static void __lambda_49(void *data, int argc, object self_73542, object r_73247) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73970;
 c_73970.hdr.mark = gc_color_red;
@@ -5560,7 +5560,7 @@ return_closcall1(data,(closure)&c_73970,  &c_731008);;
 }
 
 static void __lambda_48(void *data, int argc, object self_73543, object r_73249) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73972;
 c_73972.hdr.mark = gc_color_red;
@@ -5615,7 +5615,7 @@ return_closcall1(data,(closure)&c_73972,  &c_73990);;
 }
 
 static void __lambda_47(void *data, int argc, object self_73544, object r_73251) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73974;
 c_73974.hdr.mark = gc_color_red;
@@ -5635,7 +5635,7 @@ return_closcall1(data,(closure)&c_73974,  &c_73988);;
 }
 
 static void __lambda_46(void *data, int argc, object self_73545, object r_73250) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73976;
 c_73976.hdr.mark = gc_color_red;
@@ -5654,12 +5654,12 @@ return_closcall1(data,(closure)&c_73976,  &c_73984);;
 }
 
 static void __lambda_45(void *data, int argc, object self_73546, object r_73248) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73546)->elts[1],  Cyc_set_car(data, ((closureN)self_73546)->elts[0], r_73248));; 
 }
 
 static void __lambda_44(void *data, int argc, object self_73547, object k_73256) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, __glo_library_127) ){ 
   
 closureN_type c_73943;
@@ -5684,12 +5684,12 @@ return_closcall1(data,(closure)&c_73943,  &c_73951);
 }
 
 static void __lambda_43(void *data, int argc, object self_73548, object r_73257) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73548)->elts[0],  equalp(cell_get(((closureN)self_73548)->elts[1]), r_73257));; 
 }
 
 static void __lambda_42(void *data, int argc, object self_73549, object k_73265) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73886;
 c_73886.hdr.mark = gc_color_red;
@@ -5707,7 +5707,7 @@ return_closcall1(data,(closure)&c_73886,  quote_eval);;
 }
 
 static void __lambda_41(void *data, int argc, object self_73550, object r_73269) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73888;
 c_73888.hdr.mark = gc_color_red;
@@ -5725,7 +5725,7 @@ return_closcall3(data,  __glo_has_91global_127,  &c_73888, cell_get(((closureN)s
 }
 
 static void __lambda_40(void *data, int argc, object self_73551, object r_73268) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73890;
 c_73890.hdr.mark = gc_color_red;
@@ -5743,7 +5743,7 @@ return_closcall2(data,  __glo_not,  &c_73890, r_73268);;
 }
 
 static void __lambda_39(void *data, int argc, object self_73552, object r_73266) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73266) ){ 
   
 closureN_type c_73892;
@@ -5764,12 +5764,12 @@ return_closcall3(data,  __glo_filter_91unused_91variables,  &c_73892, cell_get((
 }
 
 static void __lambda_38(void *data, int argc, object self_73553, object r_73267) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73553)->elts[1],  Cyc_set_car(data, ((closureN)self_73553)->elts[0], r_73267));; 
 }
 
 static void __lambda_37(void *data, int argc, object self_73554, object k_73288) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73653;
 c_73653.hdr.mark = gc_color_red;
@@ -5790,7 +5790,7 @@ return_closcall1(data,(closure)&c_73653,  car(cell_get(((closureN)self_73554)->e
 }
 
 static void __lambda_36(void *data, int argc, object self_73555, object r_73321) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73655;
 c_73655.hdr.mark = gc_color_red;
@@ -5811,7 +5811,7 @@ return_closcall2(data,  __glo_library_127,  &c_73655, r_73321);;
 }
 
 static void __lambda_35(void *data, int argc, object self_73556, object r_73289) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73289) ){ 
   
 closureN_type c_73657;
@@ -5849,7 +5849,7 @@ return_closcall1(data,(closure)&c_73780,  quote_import);}
 }
 
 static void __lambda_34(void *data, int argc, object self_73557, object r_73319) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73782;
 c_73782.hdr.mark = gc_color_red;
@@ -5868,7 +5868,7 @@ return_closcall1(data,(closure)&c_73782,  car(cell_get(((closureN)self_73557)->e
 }
 
 static void __lambda_33(void *data, int argc, object self_73558, object r_73320) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73784;
 c_73784.hdr.mark = gc_color_red;
@@ -5886,7 +5886,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_73784, ((closureN)self_7355
 }
 
 static void __lambda_32(void *data, int argc, object self_73559, object r_73315) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73315) ){ 
   
 closureN_type c_73786;
@@ -5908,7 +5908,7 @@ return_closcall0(data,(closure)&c_73786);
 }
 
 static void __lambda_31(void *data, int argc, object self_73560) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73788;
 c_73788.hdr.mark = gc_color_red;
@@ -5926,7 +5926,7 @@ return_closcall1(data,(closure)&c_73788,  cdar(cell_get(((closureN)self_73560)->
 }
 
 static void __lambda_30(void *data, int argc, object self_73561, object r_73318) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73790;
 c_73790.hdr.mark = gc_color_red;
@@ -5943,7 +5943,7 @@ return_closcall1(data,(closure)&c_73790,  Cyc_set_car(data, ((closureN)self_7356
 }
 
 static void __lambda_29(void *data, int argc, object self_73562, object r_73316) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73792;
 c_73792.hdr.mark = gc_color_red;
@@ -5960,12 +5960,12 @@ return_closcall1(data,(closure)&c_73792,  cdr(cell_get(((closureN)self_73562)->e
 }
 
 static void __lambda_28(void *data, int argc, object self_73563, object r_73317) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73563)->elts[1],  Cyc_set_car(data, ((closureN)self_73563)->elts[0], r_73317));; 
 }
 
 static void __lambda_27(void *data, int argc, object self_73564) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73659;
 c_73659.hdr.mark = gc_color_red;
@@ -5986,7 +5986,7 @@ return_closcall1(data,(closure)&c_73659,  car(cell_get(((closureN)self_73564)->e
 }
 
 static void __lambda_26(void *data, int argc, object self_73565, object r_73314) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73661;
 c_73661.hdr.mark = gc_color_red;
@@ -6007,7 +6007,7 @@ return_closcall2(data,  __glo_lib_117includes,  &c_73661, r_73314);;
 }
 
 static void __lambda_25(void *data, int argc, object self_73566, object r_73290) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73663;
 c_73663.hdr.mark = gc_color_red;
@@ -6028,7 +6028,7 @@ return_closcall1(data,(closure)&c_73663,  r_73290);;
 }
 
 static void __lambda_24(void *data, int argc, object self_73567, object includes_7396) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73665;
 c_73665.hdr.mark = gc_color_red;
@@ -6049,7 +6049,7 @@ return_closcall1(data,(closure)&c_73665,  Cyc_set_car(data, ((closureN)self_7356
 }
 
 static void __lambda_23(void *data, int argc, object self_73568, object r_73291) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73667;
 c_73667.hdr.mark = gc_color_red;
@@ -6070,7 +6070,7 @@ return_closcall1(data,(closure)&c_73667,  car(cell_get(((closureN)self_73568)->e
 }
 
 static void __lambda_22(void *data, int argc, object self_73569, object r_73313) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73669;
 c_73669.hdr.mark = gc_color_red;
@@ -6091,7 +6091,7 @@ return_closcall2(data,  __glo_lib_117name,  &c_73669, r_73313);;
 }
 
 static void __lambda_21(void *data, int argc, object self_73570, object r_73312) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73671;
 c_73671.hdr.mark = gc_color_red;
@@ -6112,7 +6112,7 @@ return_closcall1(data,(closure)&c_73671,  Cyc_set_car(data, ((closureN)self_7357
 }
 
 static void __lambda_20(void *data, int argc, object self_73571, object r_73292) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73673;
 c_73673.hdr.mark = gc_color_red;
@@ -6133,7 +6133,7 @@ return_closcall2(data,  __glo_lib_117name_91_125symbol,  &c_73673, cell_get(((cl
 }
 
 static void __lambda_19(void *data, int argc, object self_73572, object r_73309) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73675;
 c_73675.hdr.mark = gc_color_red;
@@ -6155,7 +6155,7 @@ return_closcall1(data,(closure)&c_73675,  car(cell_get(((closureN)self_73572)->e
 }
 
 static void __lambda_18(void *data, int argc, object self_73573, object r_73311) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73677;
 c_73677.hdr.mark = gc_color_red;
@@ -6177,7 +6177,7 @@ return_closcall2(data,  __glo_lib_117exports,  &c_73677, r_73311);;
 }
 
 static void __lambda_17(void *data, int argc, object self_73574, object r_73310) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73679;
 c_73679.hdr.mark = gc_color_red;
@@ -6200,7 +6200,7 @@ return_closcall1(data,(closure)&c_73679,  &c_73753);;
 }
 
 static void __lambda_16(void *data, int argc, object self_73575, object r_73308) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73681;
 c_73681.hdr.mark = gc_color_red;
@@ -6220,7 +6220,7 @@ return_closcall1(data,(closure)&c_73681,  Cyc_set_car(data, ((closureN)self_7357
 }
 
 static void __lambda_15(void *data, int argc, object self_73576, object r_73293) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73683;
 c_73683.hdr.mark = gc_color_red;
@@ -6240,7 +6240,7 @@ return_closcall1(data,(closure)&c_73683,  car(cell_get(((closureN)self_73576)->e
 }
 
 static void __lambda_14(void *data, int argc, object self_73577, object r_73307) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73685;
 c_73685.hdr.mark = gc_color_red;
@@ -6260,7 +6260,7 @@ return_closcall2(data,  __glo_lib_117imports,  &c_73685, r_73307);;
 }
 
 static void __lambda_13(void *data, int argc, object self_73578, object r_73306) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73687;
 c_73687.hdr.mark = gc_color_red;
@@ -6279,7 +6279,7 @@ return_closcall1(data,(closure)&c_73687,  Cyc_set_car(data, ((closureN)self_7357
 }
 
 static void __lambda_12(void *data, int argc, object self_73579, object r_73294) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73689;
 c_73689.hdr.mark = gc_color_red;
@@ -6298,7 +6298,7 @@ return_closcall1(data,(closure)&c_73689,  car(cell_get(((closureN)self_73579)->e
 }
 
 static void __lambda_11(void *data, int argc, object self_73580, object r_73305) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73691;
 c_73691.hdr.mark = gc_color_red;
@@ -6317,7 +6317,7 @@ return_closcall2(data,  __glo_lib_117body,  &c_73691, r_73305);;
 }
 
 static void __lambda_10(void *data, int argc, object self_73581, object r_73304) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73693;
 c_73693.hdr.mark = gc_color_red;
@@ -6336,7 +6336,7 @@ return_closcall1(data,(closure)&c_73693,  Cyc_set_car(data, ((closureN)self_7358
 }
 
 static void __lambda_9(void *data, int argc, object self_73582, object r_73295) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73695;
 c_73695.hdr.mark = gc_color_red;
@@ -6355,7 +6355,7 @@ return_closcall1(data,(closure)&c_73695,  Cyc_is_null(((closureN)self_73582)->el
 }
 
 static void __lambda_8(void *data, int argc, object self_73583, object r_73303) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73697;
 c_73697.hdr.mark = gc_color_red;
@@ -6374,7 +6374,7 @@ return_closcall2(data,  __glo_not,  &c_73697, r_73303);;
 }
 
 static void __lambda_7(void *data, int argc, object self_73584, object r_73296) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 if( !eq(boolean_f, r_73296) ){ 
   
 closureN_type c_73699;
@@ -6407,7 +6407,7 @@ return_closcall1(data,(closure)&c_73699,  &c_73703);
 }
 
 static void __lambda_6(void *data, int argc, object self_73585, object k_73298, object include_7397) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73705;
 c_73705.hdr.mark = gc_color_red;
@@ -6425,7 +6425,7 @@ return_closcall2(data,  __glo_lib_117import_91_125path,  &c_73705, cell_get(((cl
 }
 
 static void __lambda_5(void *data, int argc, object self_73586, object r_73302) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73707;
 c_73707.hdr.mark = gc_color_red;
@@ -6444,7 +6444,7 @@ return_closcall1(data,(closure)&c_73707,  c_73722);;
 }
 
 static void __lambda_4(void *data, int argc, object self_73587, object r_73301) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73709;
 c_73709.hdr.mark = gc_color_red;
@@ -6461,7 +6461,7 @@ return_closcall2(data,  __glo_read_91file,  &c_73709, r_73301);;
 }
 
 static void __lambda_3(void *data, int argc, object self_73588, object r_73300) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 
 closureN_type c_73711;
 c_73711.hdr.mark = gc_color_red;
@@ -6478,17 +6478,17 @@ return_closcall3(data,  __glo_append,  &c_73711, r_73300, cell_get(((closureN)se
 }
 
 static void __lambda_2(void *data, int argc, object self_73589, object r_73299) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall1(data,  ((closureN)self_73589)->elts[1],  Cyc_set_car(data, ((closureN)self_73589)->elts[0], r_73299));; 
 }
 
 static void __lambda_1(void *data, int argc, object self_73590, object r_73297) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall3(data,  __glo_for_91each,  ((closureN)self_73590)->elts[1], r_73297, ((closureN)self_73590)->elts[0]);; 
 }
 
 static void __lambda_0(void *data, int argc, object self_73591, object r_73178) {
-  Cyc_st_add("cyclone.scm:c-compile-and-emit");
+  Cyc_st_add2(data, "cyclone.scm:c-compile-and-emit");
 return_closcall2(data,  __glo_call_95cc,  ((closureN)self_73591)->elts[0], r_73178);; 
 }
 
