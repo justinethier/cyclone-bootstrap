@@ -2195,7 +2195,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_731950, object l
 static void __lambda_0(void *data, int argc, object self_733432, object r_731951) ;
 
 static void __lambda_1547(void *data, int argc, closure _,object k_73606) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739966;
 c_739966.hdr.mark = gc_color_red;
@@ -2213,7 +2213,7 @@ return_closcall1(data,(closure)&c_739966,  &c_7310006);;
 }
 
 static void __lambda_1546(void *data, int argc, object self_731952, object r_73607) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739968;
 c_739968.hdr.mark = gc_color_red;
@@ -2233,7 +2233,7 @@ return_closcall1(data,(closure)&c_739968,  &c_7310004);;
 }
 
 static void __lambda_1545(void *data, int argc, object self_731953, object r_73617) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739970;
 c_739970.hdr.mark = gc_color_red;
@@ -2251,7 +2251,7 @@ return_closcall1(data,(closure)&c_739970,  c_7310001);;
 }
 
 static void __lambda_1544(void *data, int argc, object self_731954, object r_73616) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739972;
 c_739972.hdr.mark = gc_color_red;
@@ -2267,7 +2267,7 @@ return_closcall1(data,(closure)&c_739972,  global_set(__glo__85c_91call_91arity_
 }
 
 static void __lambda_1543(void *data, int argc, object self_731955, object r_73608) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739974;
 c_739974.hdr.mark = gc_color_red;
@@ -2283,7 +2283,7 @@ return_closcall1(data,(closure)&c_739974,  nil);;
 }
 
 static void __lambda_1542(void *data, int argc, object self_731956, object r_73615) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739976;
 c_739976.hdr.mark = gc_color_red;
@@ -2299,7 +2299,7 @@ return_closcall1(data,(closure)&c_739976,  global_set(__glo__85globals_85, r_736
 }
 
 static void __lambda_1541(void *data, int argc, object self_731957, object r_73609) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739978;
 c_739978.hdr.mark = gc_color_red;
@@ -2315,7 +2315,7 @@ return_closcall1(data,(closure)&c_739978,  nil);;
 }
 
 static void __lambda_1540(void *data, int argc, object self_731958, object r_73614) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739980;
 c_739980.hdr.mark = gc_color_red;
@@ -2331,7 +2331,7 @@ return_closcall1(data,(closure)&c_739980,  global_set(__glo__85global_91syms_85,
 }
 
 static void __lambda_1539(void *data, int argc, object self_731959, object r_73610) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739982;
 c_739982.hdr.mark = gc_color_red;
@@ -2347,7 +2347,7 @@ return_closcall1(data,(closure)&c_739982,  nil);;
 }
 
 static void __lambda_1538(void *data, int argc, object self_731960, object r_73613) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739984;
 c_739984.hdr.mark = gc_color_red;
@@ -2363,7 +2363,7 @@ return_closcall1(data,(closure)&c_739984,  global_set(__glo__85symbols_85, r_736
 }
 
 static void __lambda_1537(void *data, int argc, object self_731961, object r_73611) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 
 closureN_type c_739986;
 c_739986.hdr.mark = gc_color_red;
@@ -2379,12 +2379,12 @@ return_closcall1(data,(closure)&c_739986,  nil);;
 }
 
 static void __lambda_1536(void *data, int argc, object self_731962, object r_73612) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lib-init:schemecyclonecgen");
 return_closcall1(data,  ((closureN)self_731962)->elts[0],  global_set(__glo_lambdas, r_73612));; 
 }
 
 static void __lambda_1535(void *data, int argc, closure _,object k_73620, object fp_73336) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739909;
 c_739909.hdr.mark = gc_color_red;
@@ -2401,7 +2401,7 @@ return_closcall1(data,(closure)&c_739909,  quote__list);;
 }
 
 static void __lambda_1534(void *data, int argc, object self_731963, object r_73622) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739911;
 c_739911.hdr.mark = gc_color_red;
@@ -2421,7 +2421,7 @@ return_closcall1(data,(closure)&c_739911,  &c_739925);;
 }
 
 static void __lambda_1533(void *data, int argc, object self_731964, object k_73625, object p_73337) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739927;
 c_739927.hdr.mark = gc_color_red;
@@ -2438,7 +2438,7 @@ return_closcall1(data,(closure)&c_739927,  quote__list);;
 }
 
 static void __lambda_1532(void *data, int argc, object self_731965, object r_73626) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739929;
 c_739929.hdr.mark = gc_color_red;
@@ -2456,7 +2456,7 @@ return_closcall1(data,(closure)&c_739929,  quote_quote);;
 }
 
 static void __lambda_1531(void *data, int argc, object self_731966, object r_73631) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739931;
 c_739931.hdr.mark = gc_color_red;
@@ -2475,7 +2475,7 @@ return_closcall1(data,(closure)&c_739931,  nil);;
 }
 
 static void __lambda_1530(void *data, int argc, object self_731967, object r_73633) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739933;
 c_739933.hdr.mark = gc_color_red;
@@ -2496,7 +2496,7 @@ return_closcall1(data,(closure)&c_739933,  &c_739962);;
 }
 
 static void __lambda_1529(void *data, int argc, object self_731968, object r_73632) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739935;
 c_739935.hdr.mark = gc_color_red;
@@ -2516,7 +2516,7 @@ return_closcall1(data,(closure)&c_739935,  &c_739958);;
 }
 
 static void __lambda_1528(void *data, int argc, object self_731969, object r_73628) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739937;
 c_739937.hdr.mark = gc_color_red;
@@ -2535,7 +2535,7 @@ return_closcall1(data,(closure)&c_739937,  nil);;
 }
 
 static void __lambda_1527(void *data, int argc, object self_731970, object r_73630) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739939;
 c_739939.hdr.mark = gc_color_red;
@@ -2555,7 +2555,7 @@ return_closcall1(data,(closure)&c_739939,  &c_739954);;
 }
 
 static void __lambda_1526(void *data, int argc, object self_731971, object r_73629) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739941;
 c_739941.hdr.mark = gc_color_red;
@@ -2574,14 +2574,14 @@ return_closcall1(data,(closure)&c_739941,  &c_739950);;
 }
 
 static void __lambda_1525(void *data, int argc, object self_731972, object r_73627) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 make_cons(c_739946,((closureN)self_731972)->elts[1], r_73627);
 return_closcall1(data,  ((closureN)self_731972)->elts[0],  &c_739946);; 
 }
 
 static void __lambda_1524(void *data, int argc, object self_731973, object r_73624) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739913;
 c_739913.hdr.mark = gc_color_red;
@@ -2599,7 +2599,7 @@ return_closcall3(data,  __glo_map,  &c_739913, r_73624, __glo__85primitives_85);
 }
 
 static void __lambda_1523(void *data, int argc, object self_731974, object r_73623) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739915;
 c_739915.hdr.mark = gc_color_red;
@@ -2618,7 +2618,7 @@ return_closcall1(data,(closure)&c_739915,  &c_739923);;
 }
 
 static void __lambda_1522(void *data, int argc, object self_731975, object r_73621) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 
 closureN_type c_739917;
 c_739917.hdr.mark = gc_color_red;
@@ -2635,12 +2635,12 @@ return_closcall1(data,(closure)&c_739917,  r_73621);;
 }
 
 static void __lambda_1521(void *data, int argc, object self_731976, object code_73338) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:primitive-procedures");
 return_closcall3(data,  __glo_write,  ((closureN)self_731976)->elts[1], code_73338, ((closureN)self_731976)->elts[0]);; 
 }
 
 static void __lambda_1520(void *data, int argc, closure _,object k_73636, object fp_73339) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739863;
 c_739863.hdr.mark = gc_color_red;
@@ -2659,7 +2659,7 @@ return_closcall3(data,  __glo_display,  &c_739863, &c_739906, fp_73339);;
 }
 
 static void __lambda_1519(void *data, int argc, object self_731977, object r_73637) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739865;
 c_739865.hdr.mark = gc_color_red;
@@ -2687,7 +2687,7 @@ return_closcall1(data,(closure)&c_739865,  &c_739872);;
 }
 
 static void __lambda_1518(void *data, int argc, object self_731978, object k_73640, object p_73340) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739874;
 c_739874.hdr.mark = gc_color_red;
@@ -2705,7 +2705,7 @@ return_closcall2(data,  __glo_mangle,  &c_739874, p_73340);;
 }
 
 static void __lambda_1517(void *data, int argc, object self_731979, object r_73642) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739876;
 c_739876.hdr.mark = gc_color_red;
@@ -2726,7 +2726,7 @@ return_closcall1(data,(closure)&c_739876,  c_739904);;
 }
 
 static void __lambda_1516(void *data, int argc, object self_731980, object r_73643) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739878;
 c_739878.hdr.mark = gc_color_red;
@@ -2746,7 +2746,7 @@ return_closcall2(data,  __glo_mangle,  &c_739878, ((closureN)self_731980)->elts[
 }
 
 static void __lambda_1515(void *data, int argc, object self_731981, object r_73644) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739880;
 c_739880.hdr.mark = gc_color_red;
@@ -2768,7 +2768,7 @@ return_closcall1(data,(closure)&c_739880,  c_739899);;
 }
 
 static void __lambda_1514(void *data, int argc, object self_731982, object r_73645) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739882;
 c_739882.hdr.mark = gc_color_red;
@@ -2797,12 +2797,12 @@ return_closcall1(data,(closure)&c_739882,  c_739888);;
 }
 
 static void __lambda_1513(void *data, int argc, object self_731983, object r_73641) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 return_closcall3(data,  __glo_display,  ((closureN)self_731983)->elts[1], r_73641, ((closureN)self_731983)->elts[0]);; 
 }
 
 static void __lambda_1512(void *data, int argc, object self_731984, object r_73639) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 closureN_type c_739867;
 c_739867.hdr.mark = gc_color_red;
@@ -2819,14 +2819,14 @@ return_closcall3(data,  __glo_for_91each,  &c_739867, r_73639, __glo__85primitiv
 }
 
 static void __lambda_1511(void *data, int argc, object self_731985, object r_73638) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen:defprimitives");
 
 make_string(c_739870, "/* -------------------------------------------- */\n");
 return_closcall3(data,  __glo_display,  ((closureN)self_731985)->elts[1], &c_739870, ((closureN)self_731985)->elts[0]);; 
 }
 
 static void __lambda_1510(void *data, int argc, closure _,object k_73648, object filename_73341) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen");
 
 closureN_type c_739845;
 c_739845.hdr.mark = gc_color_red;
@@ -2844,7 +2844,7 @@ return_closcall1(data,(closure)&c_739845,  &c_739860);;
 }
 
 static void __lambda_1509(void *data, int argc, object self_731986, object r_73649) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen");
 
 closureN_type c_739847;
 c_739847.hdr.mark = gc_color_red;
@@ -2860,7 +2860,7 @@ return_closcall1(data,(closure)&c_739847,  r_73649);;
 }
 
 static void __lambda_1508(void *data, int argc, object self_731987, object fp_73342) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen");
 
 closureN_type c_739849;
 c_739849.hdr.mark = gc_color_red;
@@ -2877,7 +2877,7 @@ return_closcall2(data,  __glo_autogen_117defprimitives,  &c_739849, fp_73342);;
 }
 
 static void __lambda_1507(void *data, int argc, object self_731988, object r_73650) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen");
 
 closureN_type c_739851;
 c_739851.hdr.mark = gc_color_red;
@@ -2894,12 +2894,12 @@ return_closcall2(data,  __glo_autogen_117primitive_91procedures,  &c_739851, ((c
 }
 
 static void __lambda_1506(void *data, int argc, object self_731989, object r_73651) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:autogen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:autogen");
 return_closcall1(data,  ((closureN)self_731989)->elts[1],  Cyc_io_close_output_port(data, ((closureN)self_731989)->elts[0]));; 
 }
 
 static void __lambda_1505(void *data, int argc, closure _,object k_73654, object input_91program_73350, object program_127_73349, object lib_91name_73348, object lib_91exports_73347, object imported_91globals_73346, object globals_73345, object required_91libs_73344, object src_91file_73343) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739097;
 c_739097.hdr.mark = gc_color_red;
@@ -2921,7 +2921,7 @@ return_closcall3(data,  __glo_append,  &c_739097, globals_73345, imported_91glob
 }
 
 static void __lambda_1504(void *data, int argc, object self_731990, object r_73820) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739099;
 c_739099.hdr.mark = gc_color_red;
@@ -2943,7 +2943,7 @@ return_closcall1(data,(closure)&c_739099,  global_set(__glo__85global_91syms_85,
 }
 
 static void __lambda_1503(void *data, int argc, object self_731991, object r_73655) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739101;
 c_739101.hdr.mark = gc_color_red;
@@ -2965,7 +2965,7 @@ return_closcall1(data,(closure)&c_739101,  nil);;
 }
 
 static void __lambda_1502(void *data, int argc, object self_731992, object r_73656) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739103;
 c_739103.hdr.mark = gc_color_red;
@@ -2987,7 +2987,7 @@ return_closcall2(data,(closure)&c_739103,  r_73656, boolean_f);;
 }
 
 static void __lambda_1501(void *data, int argc, object self_731993, object compiled_91program_91lst_73352, object compiled_91program_73351) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739105;
 c_739105.hdr.mark = gc_color_red;
@@ -3012,7 +3012,7 @@ return_closcall1(data,(closure)&c_739105,  &c_739840);;
 }
 
 static void __lambda_1500(void *data, int argc, object self_731994, object compiled_91program_91lst_73352) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739107;
 c_739107.hdr.mark = gc_color_red;
@@ -3037,7 +3037,7 @@ return_closcall1(data,(closure)&c_739107,  &c_739836);;
 }
 
 static void __lambda_1499(void *data, int argc, object self_731995, object compiled_91program_73351) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739109;
 c_739109.hdr.mark = gc_color_red;
@@ -3072,7 +3072,7 @@ return_closcall1(data,(closure)&c_739109,  &c_739817);;
 }
 
 static void __lambda_1498(void *data, int argc, object self_731996, object k_73817, object expr_73382) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739819;
 c_739819.hdr.mark = gc_color_red;
@@ -3089,7 +3089,7 @@ return_closcall3(data,  __glo_c_91compile_91program,  &c_739819, expr_73382, ((c
 }
 
 static void __lambda_1497(void *data, int argc, object self_731997, object r_73819) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739821;
 c_739821.hdr.mark = gc_color_red;
@@ -3108,12 +3108,12 @@ return_closcall1(data,(closure)&c_739821,  &c_739829);;
 }
 
 static void __lambda_1496(void *data, int argc, object self_731998, object r_73818) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall1(data,  ((closureN)self_731998)->elts[1],  Cyc_set_car(data, ((closureN)self_731998)->elts[0], r_73818));; 
 }
 
 static void __lambda_1495(void *data, int argc, object self_731999, object r_73816) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739111;
 c_739111.hdr.mark = gc_color_red;
@@ -3135,7 +3135,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739111, r_73816, ((closureN)self_7
 }
 
 static void __lambda_1494(void *data, int argc, object self_732000, object r_73657) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739113;
 c_739113.hdr.mark = gc_color_red;
@@ -3156,7 +3156,7 @@ return_closcall2(data,  __glo_reverse,  &c_739113, cell_get(((closureN)self_7320
 }
 
 static void __lambda_1493(void *data, int argc, object self_732001, object r_73815) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739115;
 c_739115.hdr.mark = gc_color_red;
@@ -3179,7 +3179,7 @@ return_closcall1(data,(closure)&c_739115,  c_739812);;
 }
 
 static void __lambda_1492(void *data, int argc, object self_732002, object r_73814) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739117;
 c_739117.hdr.mark = gc_color_red;
@@ -3200,7 +3200,7 @@ return_closcall1(data,(closure)&c_739117,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1491(void *data, int argc, object self_732003, object r_73658) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739119;
 c_739119.hdr.mark = gc_color_red;
@@ -3223,7 +3223,7 @@ return_closcall2(data,  __glo_emit_91c_91arity_91macros,  &c_739119, &c_739806);
 }
 
 static void __lambda_1490(void *data, int argc, object self_732004, object r_73659) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739121;
 c_739121.hdr.mark = gc_color_red;
@@ -3246,7 +3246,7 @@ return_closcall2(data,  __glo_emit,  &c_739121, &c_739805);;
 }
 
 static void __lambda_1489(void *data, int argc, object self_732005, object r_73660) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739123;
 c_739123.hdr.mark = gc_color_red;
@@ -3269,7 +3269,7 @@ return_closcall1(data,(closure)&c_739123,  &c_739789);;
 }
 
 static void __lambda_1488(void *data, int argc, object self_732006, object k_73809, object global_73381) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739791;
 c_739791.hdr.mark = gc_color_red;
@@ -3288,7 +3288,7 @@ return_closcall2(data,  __glo_emits,  &c_739791, &c_739804);;
 }
 
 static void __lambda_1487(void *data, int argc, object self_732007, object r_73810) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739793;
 c_739793.hdr.mark = gc_color_red;
@@ -3304,7 +3304,7 @@ return_closcall1(data,(closure)&c_739793,  car(((closureN)self_732007)->elts[0])
 }
 
 static void __lambda_1486(void *data, int argc, object self_732008, object r_73813) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739795;
 c_739795.hdr.mark = gc_color_red;
@@ -3320,7 +3320,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739795, r_73813);;
 }
 
 static void __lambda_1485(void *data, int argc, object self_732009, object r_73812) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739797;
 c_739797.hdr.mark = gc_color_red;
@@ -3336,14 +3336,14 @@ return_closcall2(data,  __glo_emits,  &c_739797, r_73812);;
 }
 
 static void __lambda_1484(void *data, int argc, object self_732010, object r_73811) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739800, " = nil;\n");
 return_closcall2(data,  __glo_emits,  ((closureN)self_732010)->elts[0], &c_739800);; 
 }
 
 static void __lambda_1483(void *data, int argc, object self_732011, object r_73808) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739125;
 c_739125.hdr.mark = gc_color_red;
@@ -3364,7 +3364,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739125, r_73808, __glo__85globals_
 }
 
 static void __lambda_1482(void *data, int argc, object self_732012, object r_73661) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739127;
 c_739127.hdr.mark = gc_color_red;
@@ -3387,7 +3387,7 @@ return_closcall1(data,(closure)&c_739127,  &c_739777);;
 }
 
 static void __lambda_1481(void *data, int argc, object self_732013, object k_73804, object global_73380) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739779;
 c_739779.hdr.mark = gc_color_red;
@@ -3406,7 +3406,7 @@ return_closcall2(data,  __glo_emits,  &c_739779, &c_739788);;
 }
 
 static void __lambda_1480(void *data, int argc, object self_732014, object r_73805) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739781;
 c_739781.hdr.mark = gc_color_red;
@@ -3422,7 +3422,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739781, ((closureN)self_73201
 }
 
 static void __lambda_1479(void *data, int argc, object self_732015, object r_73807) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739783;
 c_739783.hdr.mark = gc_color_red;
@@ -3438,14 +3438,14 @@ return_closcall2(data,  __glo_emits,  &c_739783, r_73807);;
 }
 
 static void __lambda_1478(void *data, int argc, object self_732016, object r_73806) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739786, ";\n");
 return_closcall2(data,  __glo_emits,  ((closureN)self_732016)->elts[0], &c_739786);; 
 }
 
 static void __lambda_1477(void *data, int argc, object self_732017, object r_73803) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739129;
 c_739129.hdr.mark = gc_color_red;
@@ -3465,7 +3465,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739129, r_73803, ((closureN)self_7
 }
 
 static void __lambda_1476(void *data, int argc, object self_732018, object r_73662) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739131;
 c_739131.hdr.mark = gc_color_red;
@@ -3487,7 +3487,7 @@ return_closcall2(data,  __glo_emit,  &c_739131, &c_739775);;
 }
 
 static void __lambda_1475(void *data, int argc, object self_732019, object r_73663) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739133;
 c_739133.hdr.mark = gc_color_red;
@@ -3518,7 +3518,7 @@ return_closcall1(data,(closure)&c_739133,  &c_739138);;
 }
 
 static void __lambda_1474(void *data, int argc, object self_732020, object r_73664) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739140;
 c_739140.hdr.mark = gc_color_red;
@@ -3540,7 +3540,7 @@ return_closcall1(data,(closure)&c_739140,  &c_739768);;
 }
 
 static void __lambda_1473(void *data, int argc, object self_732021, object k_73800, object sym_73379) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739770;
 c_739770.hdr.mark = gc_color_red;
@@ -3556,7 +3556,7 @@ return_closcall2(data,  __glo_mangle,  &c_739770, sym_73379);;
 }
 
 static void __lambda_1472(void *data, int argc, object self_732022, object r_73801) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739773, "defsymbol(");
 
@@ -3565,7 +3565,7 @@ return_closcall4(data,  __glo_emit_85,  ((closureN)self_732022)->elts[0], &c_739
 }
 
 static void __lambda_1471(void *data, int argc, object self_732023, object r_73799) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739142;
 c_739142.hdr.mark = gc_color_red;
@@ -3585,7 +3585,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739142, r_73799, __glo__85symbols_
 }
 
 static void __lambda_1470(void *data, int argc, object self_732024, object r_73665) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739144;
 c_739144.hdr.mark = gc_color_red;
@@ -3607,7 +3607,7 @@ return_closcall1(data,(closure)&c_739144,  &c_739747);;
 }
 
 static void __lambda_1469(void *data, int argc, object self_732025, object k_73795, object l_73378) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739749;
 c_739749.hdr.mark = gc_color_red;
@@ -3624,7 +3624,7 @@ return_closcall1(data,(closure)&c_739749,  car(l_73378));;
 }
 
 static void __lambda_1468(void *data, int argc, object self_732026, object r_73798) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739751;
 c_739751.hdr.mark = gc_color_red;
@@ -3643,7 +3643,7 @@ return_closcall1(data,(closure)&c_739751,  c_739765);;
 }
 
 static void __lambda_1467(void *data, int argc, object self_732027, object r_73796) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739753;
 c_739753.hdr.mark = gc_color_red;
@@ -3660,7 +3660,7 @@ return_closcall1(data,(closure)&c_739753,  cdadr(((closureN)self_732027)->elts[1
 }
 
 static void __lambda_1466(void *data, int argc, object self_732028, object r_73797) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739756, "static void __lambda_");
 
@@ -3671,7 +3671,7 @@ return_closcall6(data,  __glo_emit_85,  ((closureN)self_732028)->elts[0], &c_739
 }
 
 static void __lambda_1465(void *data, int argc, object self_732029, object r_73794) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739146;
 c_739146.hdr.mark = gc_color_red;
@@ -3691,7 +3691,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739146, r_73794, __glo_lambdas);;
 }
 
 static void __lambda_1464(void *data, int argc, object self_732030, object r_73666) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739148;
 c_739148.hdr.mark = gc_color_red;
@@ -3713,7 +3713,7 @@ return_closcall2(data,  __glo_emit,  &c_739148, &c_739746);;
 }
 
 static void __lambda_1463(void *data, int argc, object self_732031, object r_73667) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739150;
 c_739150.hdr.mark = gc_color_red;
@@ -3735,7 +3735,7 @@ return_closcall1(data,(closure)&c_739150,  &c_739720);;
 }
 
 static void __lambda_1462(void *data, int argc, object self_732032, object k_73788, object l_73377) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739722;
 c_739722.hdr.mark = gc_color_red;
@@ -3752,7 +3752,7 @@ return_closcall1(data,(closure)&c_739722,  caadr(l_73377));;
 }
 
 static void __lambda_1461(void *data, int argc, object self_732033, object r_73790) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739724;
 c_739724.hdr.mark = gc_color_red;
@@ -3769,7 +3769,7 @@ return_closcall1(data,(closure)&c_739724,  car(((closureN)self_732033)->elts[1])
 }
 
 static void __lambda_1460(void *data, int argc, object self_732034, object r_73793) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739726;
 c_739726.hdr.mark = gc_color_red;
@@ -3788,7 +3788,7 @@ return_closcall1(data,(closure)&c_739726,  c_739740);;
 }
 
 static void __lambda_1459(void *data, int argc, object self_732035, object r_73792) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739728;
 c_739728.hdr.mark = gc_color_red;
@@ -3809,7 +3809,7 @@ return_closcall1(data,(closure)&c_739728,  c_739736);;
 }
 
 static void __lambda_1458(void *data, int argc, object self_732036, object r_73791) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739731;
 c_739731.hdr.mark = gc_color_red;
@@ -3825,12 +3825,12 @@ return_closcall2(data,  ((closureN)self_732036)->elts[1],  &c_739731, r_73791);;
 }
 
 static void __lambda_1457(void *data, int argc, object self_732037, object r_73789) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall2(data,  __glo_emit,  ((closureN)self_732037)->elts[0], r_73789);; 
 }
 
 static void __lambda_1456(void *data, int argc, object self_732038, object r_73787) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739152;
 c_739152.hdr.mark = gc_color_red;
@@ -3850,7 +3850,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739152, r_73787, __glo_lambdas);;
 }
 
 static void __lambda_1455(void *data, int argc, object self_732039, object r_73668) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739154;
 c_739154.hdr.mark = gc_color_red;
@@ -3883,7 +3883,7 @@ return_closcall1(data,(closure)&c_739154,  &c_739185);;
 }
 
 static void __lambda_1454(void *data, int argc, object self_732040, object r_73669) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739187;
 c_739187.hdr.mark = gc_color_red;
@@ -3905,7 +3905,7 @@ return_closcall1(data,(closure)&c_739187,  &c_739705);;
 }
 
 static void __lambda_1453(void *data, int argc, object self_732041, object k_73777, object sym_73375) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739707;
 c_739707.hdr.mark = gc_color_red;
@@ -3922,7 +3922,7 @@ return_closcall2(data,  __glo_mangle,  &c_739707, sym_73375);;
 }
 
 static void __lambda_1452(void *data, int argc, object self_732042, object r_73778) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739709;
 c_739709.hdr.mark = gc_color_red;
@@ -3941,7 +3941,7 @@ return_closcall1(data,(closure)&c_739709,  c_739718);;
 }
 
 static void __lambda_1451(void *data, int argc, object self_732043, object r_73779) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739712, "  quote_");
 
@@ -3952,7 +3952,7 @@ return_closcall6(data,  __glo_emit_85,  ((closureN)self_732043)->elts[0], &c_739
 }
 
 static void __lambda_1450(void *data, int argc, object self_732044, object r_73776) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739189;
 c_739189.hdr.mark = gc_color_red;
@@ -3972,7 +3972,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739189, r_73776, __glo__85symbols_
 }
 
 static void __lambda_1449(void *data, int argc, object self_732045, object r_73670) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739191;
 c_739191.hdr.mark = gc_color_red;
@@ -3994,7 +3994,7 @@ return_closcall1(data,(closure)&c_739191,  &c_739689);;
 }
 
 static void __lambda_1448(void *data, int argc, object self_732046, object k_73771, object global_73374) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739691;
 c_739691.hdr.mark = gc_color_red;
@@ -4013,7 +4013,7 @@ return_closcall2(data,  __glo_emits,  &c_739691, &c_739704);;
 }
 
 static void __lambda_1447(void *data, int argc, object self_732047, object r_73772) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739693;
 c_739693.hdr.mark = gc_color_red;
@@ -4029,7 +4029,7 @@ return_closcall1(data,(closure)&c_739693,  car(((closureN)self_732047)->elts[0])
 }
 
 static void __lambda_1446(void *data, int argc, object self_732048, object r_73775) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739695;
 c_739695.hdr.mark = gc_color_red;
@@ -4045,7 +4045,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739695, r_73775);;
 }
 
 static void __lambda_1445(void *data, int argc, object self_732049, object r_73774) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739697;
 c_739697.hdr.mark = gc_color_red;
@@ -4061,14 +4061,14 @@ return_closcall2(data,  __glo_emits,  &c_739697, r_73774);;
 }
 
 static void __lambda_1444(void *data, int argc, object self_732050, object r_73773) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739700, ");");
 return_closcall2(data,  __glo_emits,  ((closureN)self_732050)->elts[0], &c_739700);; 
 }
 
 static void __lambda_1443(void *data, int argc, object self_732051, object r_73770) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739193;
 c_739193.hdr.mark = gc_color_red;
@@ -4088,7 +4088,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739193, r_73770, __glo__85globals_
 }
 
 static void __lambda_1442(void *data, int argc, object self_732052, object r_73671) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739195;
 c_739195.hdr.mark = gc_color_red;
@@ -4110,7 +4110,7 @@ return_closcall2(data,  __glo_emit,  &c_739195, &c_739688);;
 }
 
 static void __lambda_1441(void *data, int argc, object self_732053, object r_73672) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739197;
 c_739197.hdr.mark = gc_color_red;
@@ -4132,7 +4132,7 @@ return_closcall1(data,(closure)&c_739197,  &c_739681);;
 }
 
 static void __lambda_1440(void *data, int argc, object self_732054, object k_73768, object sym_73373) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739683;
 c_739683.hdr.mark = gc_color_red;
@@ -4148,7 +4148,7 @@ return_closcall2(data,  __glo_mangle,  &c_739683, sym_73373);;
 }
 
 static void __lambda_1439(void *data, int argc, object self_732055, object r_73769) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739686, "  add_symbol(quote_");
 
@@ -4157,7 +4157,7 @@ return_closcall4(data,  __glo_emit_85,  ((closureN)self_732055)->elts[0], &c_739
 }
 
 static void __lambda_1438(void *data, int argc, object self_732056, object r_73767) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739199;
 c_739199.hdr.mark = gc_color_red;
@@ -4177,7 +4177,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739199, r_73767, __glo__85symbols_
 }
 
 static void __lambda_1437(void *data, int argc, object self_732057, object r_73673) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739201;
 c_739201.hdr.mark = gc_color_red;
@@ -4199,7 +4199,7 @@ return_closcall1(data,(closure)&c_739201,  &c_739680);;
 }
 
 static void __lambda_1436(void *data, int argc, object self_732058, object prefix_73370) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739203;
 c_739203.hdr.mark = gc_color_red;
@@ -4230,7 +4230,7 @@ return_closcall1(data,(closure)&c_739203,  &c_739640);;
 }
 
 static void __lambda_1435(void *data, int argc, object self_732059, object k_73754, object global_73371) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739642;
 c_739642.hdr.mark = gc_color_red;
@@ -4248,7 +4248,7 @@ return_closcall1(data,(closure)&c_739642,  caddr(global_73371));;
 }
 
 static void __lambda_1434(void *data, int argc, object self_732060, object r_73766) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739644;
 c_739644.hdr.mark = gc_color_red;
@@ -4266,7 +4266,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_739644, r_73766);;
 }
 
 static void __lambda_1433(void *data, int argc, object self_732061, object r_73765) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739646;
 c_739646.hdr.mark = gc_color_red;
@@ -4286,7 +4286,7 @@ return_closcall4(data,  __glo_c_117allocs_91_125str2,  &c_739646, r_73765, ((clo
 }
 
 static void __lambda_1432(void *data, int argc, object self_732062, object r_73764) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739648;
 c_739648.hdr.mark = gc_color_red;
@@ -4304,7 +4304,7 @@ return_closcall2(data,  __glo_emits,  &c_739648, r_73764);;
 }
 
 static void __lambda_1431(void *data, int argc, object self_732063, object r_73755) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739650;
 c_739650.hdr.mark = gc_color_red;
@@ -4321,7 +4321,7 @@ return_closcall2(data,  __glo_emits,  &c_739650, ((closureN)self_732063)->elts[2
 }
 
 static void __lambda_1430(void *data, int argc, object self_732064, object r_73756) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739652;
 c_739652.hdr.mark = gc_color_red;
@@ -4338,7 +4338,7 @@ return_closcall1(data,(closure)&c_739652,  car(((closureN)self_732064)->elts[0])
 }
 
 static void __lambda_1429(void *data, int argc, object self_732065, object r_73763) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739654;
 c_739654.hdr.mark = gc_color_red;
@@ -4355,7 +4355,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739654, r_73763);;
 }
 
 static void __lambda_1428(void *data, int argc, object self_732066, object r_73762) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739656;
 c_739656.hdr.mark = gc_color_red;
@@ -4372,7 +4372,7 @@ return_closcall2(data,  __glo_emits,  &c_739656, r_73762);;
 }
 
 static void __lambda_1427(void *data, int argc, object self_732067, object r_73757) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739658;
 c_739658.hdr.mark = gc_color_red;
@@ -4391,7 +4391,7 @@ return_closcall2(data,  __glo_emits,  &c_739658, &c_739671);;
 }
 
 static void __lambda_1426(void *data, int argc, object self_732068, object r_73758) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739660;
 c_739660.hdr.mark = gc_color_red;
@@ -4407,7 +4407,7 @@ return_closcall1(data,(closure)&c_739660,  caddr(((closureN)self_732068)->elts[0
 }
 
 static void __lambda_1425(void *data, int argc, object self_732069, object r_73761) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739662;
 c_739662.hdr.mark = gc_color_red;
@@ -4423,7 +4423,7 @@ return_closcall2(data,  __glo_c_117body,  &c_739662, r_73761);;
 }
 
 static void __lambda_1424(void *data, int argc, object self_732070, object r_73760) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739664;
 c_739664.hdr.mark = gc_color_red;
@@ -4439,14 +4439,14 @@ return_closcall2(data,  __glo_emits,  &c_739664, r_73760);;
 }
 
 static void __lambda_1423(void *data, int argc, object self_732071, object r_73759) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739667, "; ");
 return_closcall2(data,  __glo_emit,  ((closureN)self_732071)->elts[0], &c_739667);; 
 }
 
 static void __lambda_1422(void *data, int argc, object self_732072, object r_73749) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739205;
 c_739205.hdr.mark = gc_color_red;
@@ -4466,7 +4466,7 @@ return_closcall1(data,(closure)&c_739205,  r_73749);;
 }
 
 static void __lambda_1421(void *data, int argc, object self_732073, object emit_91global_73372) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739207;
 c_739207.hdr.mark = gc_color_red;
@@ -4487,7 +4487,7 @@ return_closcall0(data,(closure)&c_739207);;
 }
 
 static void __lambda_1420(void *data, int argc, object self_732074) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739209;
 c_739209.hdr.mark = gc_color_red;
@@ -4508,7 +4508,7 @@ return_closcall3(data,  __glo_filter,  &c_739209, __glo_global_91lambda_127, __g
 }
 
 static void __lambda_1419(void *data, int argc, object self_732075, object r_73753) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739211;
 c_739211.hdr.mark = gc_color_red;
@@ -4529,7 +4529,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739211, ((closureN)self_732075)->e
 }
 
 static void __lambda_1418(void *data, int argc, object self_732076, object r_73750) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739213;
 c_739213.hdr.mark = gc_color_red;
@@ -4550,7 +4550,7 @@ return_closcall3(data,  __glo_filter,  &c_739213, __glo_global_91not_91lambda_12
 }
 
 static void __lambda_1417(void *data, int argc, object self_732077, object r_73752) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739215;
 c_739215.hdr.mark = gc_color_red;
@@ -4570,7 +4570,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739215, ((closureN)self_732077)->e
 }
 
 static void __lambda_1416(void *data, int argc, object self_732078, object r_73751) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739217;
 c_739217.hdr.mark = gc_color_red;
@@ -4592,7 +4592,7 @@ return_closcall2(data,  __glo_emit,  &c_739217, &c_739637);;
 }
 
 static void __lambda_1415(void *data, int argc, object self_732079, object r_73674) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739219;
 c_739219.hdr.mark = gc_color_red;
@@ -4612,7 +4612,7 @@ return_closcall1(data,(closure)&c_739219,  nil);;
 }
 
 static void __lambda_1414(void *data, int argc, object self_732080, object r_73695) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739221;
 c_739221.hdr.mark = gc_color_red;
@@ -4632,7 +4632,7 @@ return_closcall2(data,(closure)&c_739221,  r_73695, boolean_f);;
 }
 
 static void __lambda_1413(void *data, int argc, object self_732081, object pairs_73357, object head_91pair_73356) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739223;
 c_739223.hdr.mark = gc_color_red;
@@ -4655,7 +4655,7 @@ return_closcall1(data,(closure)&c_739223,  &c_739636);;
 }
 
 static void __lambda_1412(void *data, int argc, object self_732082, object pairs_73357) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739225;
 c_739225.hdr.mark = gc_color_red;
@@ -4678,7 +4678,7 @@ return_closcall1(data,(closure)&c_739225,  &c_739632);;
 }
 
 static void __lambda_1411(void *data, int argc, object self_732083, object head_91pair_73356) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739227;
 c_739227.hdr.mark = gc_color_red;
@@ -4711,7 +4711,7 @@ return_closcall1(data,(closure)&c_739227,  &c_739569);;
 }
 
 static void __lambda_1410(void *data, int argc, object self_732084, object k_73735, object g_73367) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739571;
 c_739571.hdr.mark = gc_color_red;
@@ -4729,7 +4729,7 @@ return_closcall1(data,(closure)&c_739571,  quote_cvar);;
 }
 
 static void __lambda_1409(void *data, int argc, object self_732085, object r_73748) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739573;
 c_739573.hdr.mark = gc_color_red;
@@ -4747,7 +4747,7 @@ return_closcall2(data,  __glo_gensym,  &c_739573, r_73748);;
 }
 
 static void __lambda_1408(void *data, int argc, object self_732086, object r_73747) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739575;
 c_739575.hdr.mark = gc_color_red;
@@ -4765,7 +4765,7 @@ return_closcall2(data,  __glo_mangle,  &c_739575, r_73747);;
 }
 
 static void __lambda_1407(void *data, int argc, object self_732087, object r_73736) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739577;
 c_739577.hdr.mark = gc_color_red;
@@ -4784,7 +4784,7 @@ return_closcall1(data,(closure)&c_739577,  quote_pair);;
 }
 
 static void __lambda_1406(void *data, int argc, object self_732088, object r_73746) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739579;
 c_739579.hdr.mark = gc_color_red;
@@ -4803,7 +4803,7 @@ return_closcall2(data,  __glo_gensym,  &c_739579, r_73746);;
 }
 
 static void __lambda_1405(void *data, int argc, object self_732089, object r_73745) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739581;
 c_739581.hdr.mark = gc_color_red;
@@ -4822,7 +4822,7 @@ return_closcall2(data,  __glo_mangle,  &c_739581, r_73745);;
 }
 
 static void __lambda_1404(void *data, int argc, object self_732090, object r_73737) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739583;
 c_739583.hdr.mark = gc_color_red;
@@ -4840,7 +4840,7 @@ return_closcall2(data,(closure)&c_739583,  ((closureN)self_732090)->elts[3], r_7
 }
 
 static void __lambda_1403(void *data, int argc, object self_732091, object cvar_91sym_73369, object pair_91sym_73368) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739585;
 c_739585.hdr.mark = gc_color_red;
@@ -4860,7 +4860,7 @@ return_closcall1(data,(closure)&c_739585,  car(((closureN)self_732091)->elts[0])
 }
 
 static void __lambda_1402(void *data, int argc, object self_732092, object r_73744) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739587;
 c_739587.hdr.mark = gc_color_red;
@@ -4880,7 +4880,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739587, r_73744);;
 }
 
 static void __lambda_1401(void *data, int argc, object self_732093, object r_73743) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739589;
 c_739589.hdr.mark = gc_color_red;
@@ -4906,7 +4906,7 @@ return_closcall6(data,  __glo_emits_85,  &c_739589, &c_739622, ((closureN)self_7
 }
 
 static void __lambda_1400(void *data, int argc, object self_732094, object r_73738) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739591;
 c_739591.hdr.mark = gc_color_red;
@@ -4925,7 +4925,7 @@ return_closcall1(data,(closure)&c_739591,  car(((closureN)self_732094)->elts[1])
 }
 
 static void __lambda_1399(void *data, int argc, object self_732095, object r_73742) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739593;
 c_739593.hdr.mark = gc_color_red;
@@ -4946,7 +4946,7 @@ return_closcall1(data,(closure)&c_739593,  c_739618);;
 }
 
 static void __lambda_1398(void *data, int argc, object self_732096, object r_73741) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739595;
 c_739595.hdr.mark = gc_color_red;
@@ -4972,7 +4972,7 @@ return_closcall8(data,  __glo_emits_85,  &c_739595, &c_739610, ((closureN)self_7
 }
 
 static void __lambda_1397(void *data, int argc, object self_732097, object r_73739) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739597;
 c_739597.hdr.mark = gc_color_red;
@@ -4991,12 +4991,12 @@ return_closcall1(data,(closure)&c_739597,  &c_739605);;
 }
 
 static void __lambda_1396(void *data, int argc, object self_732098, object r_73740) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall1(data,  ((closureN)self_732098)->elts[0],  Cyc_set_car(data, ((closureN)self_732098)->elts[1], r_73740));; 
 }
 
 static void __lambda_1395(void *data, int argc, object self_732099, object r_73734) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739229;
 c_739229.hdr.mark = gc_color_red;
@@ -5018,7 +5018,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739229, r_73734, __glo__85globals_
 }
 
 static void __lambda_1394(void *data, int argc, object self_732100, object r_73696) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739231;
 c_739231.hdr.mark = gc_color_red;
@@ -5040,7 +5040,7 @@ return_closcall1(data,(closure)&c_739231,  nil);;
 }
 
 static void __lambda_1393(void *data, int argc, object self_732101, object r_73699) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739233;
 c_739233.hdr.mark = gc_color_red;
@@ -5065,7 +5065,7 @@ return_closcall1(data,(closure)&c_739233,  &c_739562);;
 }
 
 static void __lambda_1392(void *data, int argc, object self_732102, object k_73731, object _191_73358) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739564;
 c_739564.hdr.mark = gc_color_red;
@@ -5081,7 +5081,7 @@ return_closcall1(data,(closure)&c_739564,  quote_c);;
 }
 
 static void __lambda_1391(void *data, int argc, object self_732103, object r_73733) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739566;
 c_739566.hdr.mark = gc_color_red;
@@ -5097,12 +5097,12 @@ return_closcall2(data,  __glo_gensym,  &c_739566, r_73733);;
 }
 
 static void __lambda_1390(void *data, int argc, object self_732104, object r_73732) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall2(data,  __glo_mangle,  ((closureN)self_732104)->elts[0], r_73732);; 
 }
 
 static void __lambda_1389(void *data, int argc, object self_732105, object r_73730) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739235;
 c_739235.hdr.mark = gc_color_red;
@@ -5125,7 +5125,7 @@ return_closcall3(data,  __glo_map,  &c_739235, r_73730, cell_get(((closureN)self
 }
 
 static void __lambda_1388(void *data, int argc, object self_732106, object r_73700) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739237;
 c_739237.hdr.mark = gc_color_red;
@@ -5146,7 +5146,7 @@ return_closcall3(data,(closure)&c_739237,  ((closureN)self_732106)->elts[6], cel
 }
 
 static void __lambda_1387(void *data, int argc, object self_732107, object code_73361, object ps_73360, object cs_73359) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739239;
 c_739239.hdr.mark = gc_color_red;
@@ -5170,7 +5170,7 @@ return_closcall1(data,(closure)&c_739239,  boolean_f);;
 }
 
 static void __lambda_1386(void *data, int argc, object self_732108, object loop_73362) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739241;
 c_739241.hdr.mark = gc_color_red;
@@ -5196,7 +5196,7 @@ return_closcall1(data,(closure)&c_739241,  &c_739554);;
 }
 
 static void __lambda_1385(void *data, int argc, object self_732109, object loop_73362) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739243;
 c_739243.hdr.mark = gc_color_red;
@@ -5221,7 +5221,7 @@ return_closcall0(data,(closure)&c_739243);;
 }
 
 static void __lambda_1384(void *data, int argc, object self_732110) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739245;
 c_739245.hdr.mark = gc_color_red;
@@ -5258,7 +5258,7 @@ return_closcall1(data,(closure)&c_739245,  &c_739394);;
 }
 
 static void __lambda_1383(void *data, int argc, object self_732111, object k_73703, object code_73365, object ps_73364, object cs_73363) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739396;
 c_739396.hdr.mark = gc_color_red;
@@ -5279,7 +5279,7 @@ return_closcall1(data,(closure)&c_739396,  Cyc_is_null(ps_73364));;
 }
 
 static void __lambda_1382(void *data, int argc, object self_732112, object r_73704) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, r_73704) ){ 
   
 closureN_type c_739398;
@@ -5316,7 +5316,7 @@ return_closcall1(data,(closure)&c_739407,  cdr(((closureN)self_732112)->elts[5])
 }
 
 static void __lambda_1381(void *data, int argc, object self_732113, object r_73729) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739409;
 c_739409.hdr.mark = gc_color_red;
@@ -5337,7 +5337,7 @@ return_closcall1(data,(closure)&c_739409,  Cyc_is_null(r_73729));;
 }
 
 static void __lambda_1380(void *data, int argc, object self_732114, object r_73707) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, r_73707) ){ 
   
 closureN_type c_739411;
@@ -5378,7 +5378,7 @@ return_closcall0(data,(closure)&c_739475);}
 }
 
 static void __lambda_1379(void *data, int argc, object self_732115) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739477;
 c_739477.hdr.mark = gc_color_red;
@@ -5410,7 +5410,7 @@ return_closcall1(data,(closure)&c_739477,  &c_739495);;
 }
 
 static void __lambda_1378(void *data, int argc, object self_732116, object r_73718) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739497;
 c_739497.hdr.mark = gc_color_red;
@@ -5430,7 +5430,7 @@ return_closcall1(data,(closure)&c_739497,  car(((closureN)self_732116)->elts[1])
 }
 
 static void __lambda_1377(void *data, int argc, object self_732117, object r_73723) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739499;
 c_739499.hdr.mark = gc_color_red;
@@ -5451,7 +5451,7 @@ return_closcall1(data,(closure)&c_739499,  car(((closureN)self_732117)->elts[4])
 }
 
 static void __lambda_1376(void *data, int argc, object self_732118, object r_73724) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739501;
 c_739501.hdr.mark = gc_color_red;
@@ -5473,7 +5473,7 @@ return_closcall1(data,(closure)&c_739501,  cadr(((closureN)self_732118)->elts[1]
 }
 
 static void __lambda_1375(void *data, int argc, object self_732119, object r_73725) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739503;
 c_739503.hdr.mark = gc_color_red;
@@ -5503,7 +5503,7 @@ return_closcall1(data,(closure)&c_739503,  c_739529);;
 }
 
 static void __lambda_1374(void *data, int argc, object self_732120, object r_73722) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739505;
 c_739505.hdr.mark = gc_color_red;
@@ -5524,7 +5524,7 @@ return_closcall1(data,(closure)&c_739505,  &c_739525);;
 }
 
 static void __lambda_1373(void *data, int argc, object self_732121, object r_73719) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739507;
 c_739507.hdr.mark = gc_color_red;
@@ -5543,7 +5543,7 @@ return_closcall1(data,(closure)&c_739507,  cdr(((closureN)self_732121)->elts[3])
 }
 
 static void __lambda_1372(void *data, int argc, object self_732122, object r_73720) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739509;
 c_739509.hdr.mark = gc_color_red;
@@ -5562,12 +5562,12 @@ return_closcall1(data,(closure)&c_739509,  cdr(((closureN)self_732122)->elts[0])
 }
 
 static void __lambda_1371(void *data, int argc, object self_732123, object r_73721) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall4(data,  cell_get(((closureN)self_732123)->elts[1]),  ((closureN)self_732123)->elts[0], ((closureN)self_732123)->elts[2], ((closureN)self_732123)->elts[3], r_73721);; 
 }
 
 static void __lambda_1370(void *data, int argc, object self_732124, object k_73726) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739479;
 c_739479.hdr.mark = gc_color_red;
@@ -5585,7 +5585,7 @@ return_closcall2(data,  __glo_not,  &c_739479, cell_get(((closureN)self_732124)-
 }
 
 static void __lambda_1369(void *data, int argc, object self_732125, object r_73727) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, r_73727) ){ 
   
 closureN_type c_739481;
@@ -5606,12 +5606,12 @@ return_closcall1(data,(closure)&c_739481,  car(((closureN)self_732125)->elts[0])
 }
 
 static void __lambda_1368(void *data, int argc, object self_732126, object r_73728) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall1(data,  ((closureN)self_732126)->elts[1],  Cyc_set_car(data, ((closureN)self_732126)->elts[0], r_73728));; 
 }
 
 static void __lambda_1367(void *data, int argc, object self_732127) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739413;
 c_739413.hdr.mark = gc_color_red;
@@ -5643,7 +5643,7 @@ return_closcall1(data,(closure)&c_739413,  &c_739431);;
 }
 
 static void __lambda_1366(void *data, int argc, object self_732128, object r_73708) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739433;
 c_739433.hdr.mark = gc_color_red;
@@ -5663,7 +5663,7 @@ return_closcall1(data,(closure)&c_739433,  car(((closureN)self_732128)->elts[1])
 }
 
 static void __lambda_1365(void *data, int argc, object self_732129, object r_73713) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739435;
 c_739435.hdr.mark = gc_color_red;
@@ -5684,7 +5684,7 @@ return_closcall1(data,(closure)&c_739435,  car(((closureN)self_732129)->elts[4])
 }
 
 static void __lambda_1364(void *data, int argc, object self_732130, object r_73714) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739437;
 c_739437.hdr.mark = gc_color_red;
@@ -5712,7 +5712,7 @@ return_closcall1(data,(closure)&c_739437,  c_739463);;
 }
 
 static void __lambda_1363(void *data, int argc, object self_732131, object r_73712) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739439;
 c_739439.hdr.mark = gc_color_red;
@@ -5733,7 +5733,7 @@ return_closcall1(data,(closure)&c_739439,  &c_739459);;
 }
 
 static void __lambda_1362(void *data, int argc, object self_732132, object r_73709) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739441;
 c_739441.hdr.mark = gc_color_red;
@@ -5752,7 +5752,7 @@ return_closcall1(data,(closure)&c_739441,  cdr(((closureN)self_732132)->elts[3])
 }
 
 static void __lambda_1361(void *data, int argc, object self_732133, object r_73710) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739443;
 c_739443.hdr.mark = gc_color_red;
@@ -5771,12 +5771,12 @@ return_closcall1(data,(closure)&c_739443,  cdr(((closureN)self_732133)->elts[0])
 }
 
 static void __lambda_1360(void *data, int argc, object self_732134, object r_73711) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall4(data,  cell_get(((closureN)self_732134)->elts[1]),  ((closureN)self_732134)->elts[0], ((closureN)self_732134)->elts[2], ((closureN)self_732134)->elts[3], r_73711);; 
 }
 
 static void __lambda_1359(void *data, int argc, object self_732135, object k_73715) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739415;
 c_739415.hdr.mark = gc_color_red;
@@ -5794,7 +5794,7 @@ return_closcall2(data,  __glo_not,  &c_739415, cell_get(((closureN)self_732135)-
 }
 
 static void __lambda_1358(void *data, int argc, object self_732136, object r_73716) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, r_73716) ){ 
   
 closureN_type c_739417;
@@ -5815,12 +5815,12 @@ return_closcall1(data,(closure)&c_739417,  car(((closureN)self_732136)->elts[0])
 }
 
 static void __lambda_1357(void *data, int argc, object self_732137, object r_73717) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall1(data,  ((closureN)self_732137)->elts[1],  Cyc_set_car(data, ((closureN)self_732137)->elts[0], r_73717));; 
 }
 
 static void __lambda_1356(void *data, int argc, object self_732138) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739400;
 c_739400.hdr.mark = gc_color_red;
@@ -5839,17 +5839,17 @@ return_closcall1(data,(closure)&c_739400,  &c_739404);;
 }
 
 static void __lambda_1355(void *data, int argc, object self_732139, object k_73706, object str_73366) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall2(data,  __glo_emits,  k_73706, str_73366);; 
 }
 
 static void __lambda_1354(void *data, int argc, object self_732140, object r_73705) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall3(data,  __glo_for_91each,  ((closureN)self_732140)->elts[1], r_73705, ((closureN)self_732140)->elts[0]);; 
 }
 
 static void __lambda_1353(void *data, int argc, object self_732141, object r_73702) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739247;
 c_739247.hdr.mark = gc_color_red;
@@ -5874,7 +5874,7 @@ return_closcall1(data,(closure)&c_739247,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1352(void *data, int argc, object self_732142, object r_73701) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739252;
 c_739252.hdr.mark = gc_color_red;
@@ -5895,7 +5895,7 @@ return_closcall4(data,  cell_get(((closureN)self_732142)->elts[6]),  &c_739252, 
 }
 
 static void __lambda_1351(void *data, int argc, object self_732143, object r_73697) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739254;
 c_739254.hdr.mark = gc_color_red;
@@ -5926,7 +5926,7 @@ return_closcall1(data,(closure)&c_739254,  &c_739265);;
 }
 
 static void __lambda_1350(void *data, int argc, object self_732144, object r_73675) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739267;
 c_739267.hdr.mark = gc_color_red;
@@ -5957,7 +5957,7 @@ return_closcall1(data,(closure)&c_739267,  &c_739379);;
 }
 
 static void __lambda_1349(void *data, int argc, object self_732145, object r_73676) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739381;
 c_739381.hdr.mark = gc_color_red;
@@ -5976,7 +5976,7 @@ return_closcall2(data,  __glo_emit,  &c_739381, &c_739387);;
 }
 
 static void __lambda_1348(void *data, int argc, object self_732146, object r_73677) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, ((closureN)self_732146)->elts[1]) ){ 
   return_closcall2(data,  __glo_emit,  ((closureN)self_732146)->elts[0], __glo__85c_91main_91function_85);
 } else { 
@@ -5985,7 +5985,7 @@ if( !eq(boolean_f, ((closureN)self_732146)->elts[1]) ){
 }
 
 static void __lambda_1347(void *data, int argc, object self_732147, object k_73678) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, ((closureN)self_732147)->elts[2]) ){ 
   
 closureN_type c_739270;
@@ -6019,7 +6019,7 @@ return_closcall0(data,(closure)&c_739366);}
 }
 
 static void __lambda_1346(void *data, int argc, object self_732148) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739368;
 c_739368.hdr.mark = gc_color_red;
@@ -6038,7 +6038,7 @@ return_closcall2(data,  __glo_emit,  &c_739368, &c_739378);;
 }
 
 static void __lambda_1345(void *data, int argc, object self_732149, object r_73692) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739370;
 c_739370.hdr.mark = gc_color_red;
@@ -6054,7 +6054,7 @@ return_closcall2(data,  __glo_lib_117name_91_125symbol,  &c_739370, ((closureN)s
 }
 
 static void __lambda_1344(void *data, int argc, object self_732150, object r_73694) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739372;
 c_739372.hdr.mark = gc_color_red;
@@ -6070,7 +6070,7 @@ return_closcall2(data,  __glo_mangle_91global,  &c_739372, r_73694);;
 }
 
 static void __lambda_1343(void *data, int argc, object self_732151, object r_73693) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739375, "(((closure)");
 
@@ -6079,7 +6079,7 @@ return_closcall4(data,  __glo_emit_85,  ((closureN)self_732151)->elts[0], &c_739
 }
 
 static void __lambda_1342(void *data, int argc, object self_732152) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739272;
 c_739272.hdr.mark = gc_color_red;
@@ -6101,7 +6101,7 @@ return_closcall2(data,(closure)&c_739272,  &c_739363, &c_739364);;
 }
 
 static void __lambda_1341(void *data, int argc, object self_732153, object this_91clo_73354, object prev_91clo_73353) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739274;
 c_739274.hdr.mark = gc_color_red;
@@ -6122,7 +6122,7 @@ return_closcall1(data,(closure)&c_739274,  &c_739362);;
 }
 
 static void __lambda_1340(void *data, int argc, object self_732154, object this_91clo_73354) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739276;
 c_739276.hdr.mark = gc_color_red;
@@ -6143,7 +6143,7 @@ return_closcall1(data,(closure)&c_739276,  &c_739358);;
 }
 
 static void __lambda_1339(void *data, int argc, object self_732155, object prev_91clo_73353) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739278;
 c_739278.hdr.mark = gc_color_red;
@@ -6169,7 +6169,7 @@ return_closcall6(data,  __glo_emit_85,  &c_739278, &c_739348, cell_get(((closure
 }
 
 static void __lambda_1338(void *data, int argc, object self_732156, object r_73679) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739280;
 c_739280.hdr.mark = gc_color_red;
@@ -6200,7 +6200,7 @@ return_closcall1(data,(closure)&c_739280,  &c_739313);;
 }
 
 static void __lambda_1337(void *data, int argc, object self_732157, object k_73686, object lib_91name_73355) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739315;
 c_739315.hdr.mark = gc_color_red;
@@ -6219,7 +6219,7 @@ return_closcall1(data,(closure)&c_739315,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1336(void *data, int argc, object self_732158, object r_73687) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739317;
 c_739317.hdr.mark = gc_color_red;
@@ -6240,7 +6240,7 @@ return_closcall2(data,  __glo_gensym,  &c_739317, &c_739341);;
 }
 
 static void __lambda_1335(void *data, int argc, object self_732159, object r_73691) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739319;
 c_739319.hdr.mark = gc_color_red;
@@ -6259,7 +6259,7 @@ return_closcall2(data,  __glo_mangle,  &c_739319, r_73691);;
 }
 
 static void __lambda_1334(void *data, int argc, object self_732160, object r_73690) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739321;
 c_739321.hdr.mark = gc_color_red;
@@ -6278,7 +6278,7 @@ return_closcall1(data,(closure)&c_739321,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1333(void *data, int argc, object self_732161, object r_73688) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739323;
 c_739323.hdr.mark = gc_color_red;
@@ -6296,7 +6296,7 @@ return_closcall2(data,  __glo_lib_117name_91_125string,  &c_739323, ((closureN)s
 }
 
 static void __lambda_1332(void *data, int argc, object self_732162, object r_73689) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739326, "mclosure1(");
 
@@ -6311,7 +6311,7 @@ return_closcall9(data,  __glo_emit_85,  ((closureN)self_732162)->elts[0], &c_739
 }
 
 static void __lambda_1331(void *data, int argc, object self_732163, object r_73684) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739282;
 c_739282.hdr.mark = gc_color_red;
@@ -6330,7 +6330,7 @@ return_closcall2(data,  __glo_reverse,  &c_739282, ((closureN)self_732163)->elts
 }
 
 static void __lambda_1330(void *data, int argc, object self_732164, object r_73685) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739284;
 c_739284.hdr.mark = gc_color_red;
@@ -6348,7 +6348,7 @@ return_closcall3(data,  __glo_for_91each,  &c_739284, ((closureN)self_732164)->e
 }
 
 static void __lambda_1329(void *data, int argc, object self_732165, object r_73680) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739286;
 c_739286.hdr.mark = gc_color_red;
@@ -6373,7 +6373,7 @@ return_closcall8(data,  __glo_emit_85,  &c_739286, &c_739298, cell_get(((closure
 }
 
 static void __lambda_1328(void *data, int argc, object self_732166, object r_73681) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739288;
 c_739288.hdr.mark = gc_color_red;
@@ -6392,7 +6392,7 @@ return_closcall2(data,  __glo_emit,  &c_739288, &c_739297);;
 }
 
 static void __lambda_1327(void *data, int argc, object self_732167, object r_73682) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739290;
 c_739290.hdr.mark = gc_color_red;
@@ -6411,12 +6411,12 @@ return_closcall2(data,  __glo_emit,  &c_739290, &c_739296);;
 }
 
 static void __lambda_1326(void *data, int argc, object self_732168, object r_73683) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 return_closcall2(data,  __glo_emit,  ((closureN)self_732168)->elts[1], cell_get(((closureN)self_732168)->elts[0]));; 
 }
 
 static void __lambda_1325(void *data, int argc, object self_732169, object k_73698) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, cell_get(((closureN)self_732169)->elts[0])) ){ 
   
 make_string(c_739259, "Cyc_global_variables = &");
@@ -6429,7 +6429,7 @@ return_closcall4(data,  __glo_emit_85,  k_73698, &c_739259, cell_get(((closureN)
 }
 
 static void __lambda_1324(void *data, int argc, object self_732170, object k_73780) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, ((closureN)self_732170)->elts[1]) ){ 
   
 closureN_type c_739157;
@@ -6462,7 +6462,7 @@ return_closcall0(data,(closure)&c_739177);}
 }
 
 static void __lambda_1323(void *data, int argc, object self_732171) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739179;
 c_739179.hdr.mark = gc_color_red;
@@ -6478,7 +6478,7 @@ return_closcall2(data,  __glo_lib_117name_91_125string,  &c_739179, ((closureN)s
 }
 
 static void __lambda_1322(void *data, int argc, object self_732172, object r_73786) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739182, "void c_");
 
@@ -6487,7 +6487,7 @@ return_closcall4(data,  __glo_emit_85,  ((closureN)self_732172)->elts[0], &c_739
 }
 
 static void __lambda_1321(void *data, int argc, object self_732173) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739159;
 c_739159.hdr.mark = gc_color_red;
@@ -6506,7 +6506,7 @@ return_closcall2(data,  __glo_emit,  &c_739159, &c_739175);;
 }
 
 static void __lambda_1320(void *data, int argc, object self_732174, object r_73781) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739161;
 c_739161.hdr.mark = gc_color_red;
@@ -6525,7 +6525,7 @@ return_closcall1(data,(closure)&c_739161,  &c_739168);;
 }
 
 static void __lambda_1319(void *data, int argc, object self_732175, object k_73784, object lib_91name_73376) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739170;
 c_739170.hdr.mark = gc_color_red;
@@ -6541,7 +6541,7 @@ return_closcall2(data,  __glo_lib_117name_91_125string,  &c_739170, lib_91name_7
 }
 
 static void __lambda_1318(void *data, int argc, object self_732176, object r_73785) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739173, "extern void c_");
 
@@ -6550,7 +6550,7 @@ return_closcall4(data,  __glo_emit_85,  ((closureN)self_732176)->elts[0], &c_739
 }
 
 static void __lambda_1317(void *data, int argc, object self_732177, object r_73783) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 closureN_type c_739163;
 c_739163.hdr.mark = gc_color_red;
@@ -6566,14 +6566,14 @@ return_closcall3(data,  __glo_for_91each,  &c_739163, r_73783, ((closureN)self_7
 }
 
 static void __lambda_1316(void *data, int argc, object self_732178, object r_73782) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 
 make_string(c_739166, "static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { ");
 return_closcall2(data,  __glo_emit,  ((closureN)self_732178)->elts[0], &c_739166);; 
 }
 
 static void __lambda_1315(void *data, int argc, object self_732179, object k_73802) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:mta:code-gen");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:mta:code-gen");
 if( !eq(boolean_f, ((closureN)self_732179)->elts[0]) ){ 
   
 make_string(c_739136, "#include \"cyclone/runtime-main.h\"");
@@ -6584,7 +6584,7 @@ return_closcall2(data,  __glo_emit,  k_73802, &c_739136);
 }
 
 static void __lambda_1314(void *data, int argc, closure _,object k_73823, object exp_73384, object trace_73383) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738837;
 c_738837.hdr.mark = gc_color_red;
@@ -6604,7 +6604,7 @@ return_closcall1(data,(closure)&c_738837,  &c_739094);;
 }
 
 static void __lambda_1313(void *data, int argc, object self_732180, object preamble_73385) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738839;
 c_738839.hdr.mark = gc_color_red;
@@ -6624,7 +6624,7 @@ return_closcall1(data,(closure)&c_738839,  &c_739093);;
 }
 
 static void __lambda_1312(void *data, int argc, object self_732181, object preamble_73385) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738841;
 c_738841.hdr.mark = gc_color_red;
@@ -6654,7 +6654,7 @@ return_closcall1(data,(closure)&c_738841,  &c_739075);;
 }
 
 static void __lambda_1311(void *data, int argc, object self_732182, object k_73871, object s_73386) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739077;
 c_739077.hdr.mark = gc_color_red;
@@ -6677,12 +6677,12 @@ return_closcall1(data,(closure)&c_739077,  c_739085);;
 }
 
 static void __lambda_1310(void *data, int argc, object self_732183, object r_73872) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 return_closcall1(data,  ((closureN)self_732183)->elts[0],  Cyc_set_car(data, ((closureN)self_732183)->elts[1], r_73872));; 
 }
 
 static void __lambda_1309(void *data, int argc, object self_732184, object r_73824) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738843;
 c_738843.hdr.mark = gc_color_red;
@@ -6701,7 +6701,7 @@ return_closcall1(data,(closure)&c_738843,  r_73824);;
 }
 
 static void __lambda_1308(void *data, int argc, object self_732185, object append_91preamble_73387) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738845;
 c_738845.hdr.mark = gc_color_red;
@@ -6721,7 +6721,7 @@ return_closcall0(data,(closure)&c_738845);;
 }
 
 static void __lambda_1307(void *data, int argc, object self_732186) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738847;
 c_738847.hdr.mark = gc_color_red;
@@ -6741,7 +6741,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_738847, ((closureN)self_
 }
 
 static void __lambda_1306(void *data, int argc, object self_732187, object r_73869) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738849;
 c_738849.hdr.mark = gc_color_red;
@@ -6762,7 +6762,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_738849, ((closureN)se
 }
 
 static void __lambda_1305(void *data, int argc, object self_732188, object r_73870) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738851;
 c_738851.hdr.mark = gc_color_red;
@@ -6782,7 +6782,7 @@ return_closcall3(data,  __glo_c_91compile_91formals,  &c_738851, ((closureN)self
 }
 
 static void __lambda_1304(void *data, int argc, object self_732189, object r_73825) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738853;
 c_738853.hdr.mark = gc_color_red;
@@ -6802,7 +6802,7 @@ return_closcall1(data,(closure)&c_738853,  r_73825);;
 }
 
 static void __lambda_1303(void *data, int argc, object self_732190, object formals_73388) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738855;
 c_738855.hdr.mark = gc_color_red;
@@ -6834,7 +6834,7 @@ return_closcall1(data,(closure)&c_738855,  &c_738894);;
 }
 
 static void __lambda_1302(void *data, int argc, object self_732191, object r_73826) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738896;
 c_738896.hdr.mark = gc_color_red;
@@ -6855,7 +6855,7 @@ return_closcall1(data,(closure)&c_738896,  r_73826);;
 }
 
 static void __lambda_1301(void *data, int argc, object self_732192, object tmp_91ident_73389) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738898;
 c_738898.hdr.mark = gc_color_red;
@@ -6887,7 +6887,7 @@ return_closcall1(data,(closure)&c_738898,  &c_738925);;
 }
 
 static void __lambda_1300(void *data, int argc, object self_732193, object r_73827) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738927;
 c_738927.hdr.mark = gc_color_red;
@@ -6908,7 +6908,7 @@ return_closcall1(data,(closure)&c_738927,  r_73827);;
 }
 
 static void __lambda_1299(void *data, int argc, object self_732194, object has_91closure_127_73390) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738929;
 c_738929.hdr.mark = gc_color_red;
@@ -6942,7 +6942,7 @@ return_closcall1(data,(closure)&c_738929,  &c_738945);;
 }
 
 static void __lambda_1298(void *data, int argc, object self_732195, object r_73853) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738947;
 c_738947.hdr.mark = gc_color_red;
@@ -6965,7 +6965,7 @@ return_closcall1(data,(closure)&c_738947,  c_739070);;
 }
 
 static void __lambda_1297(void *data, int argc, object self_732196, object r_73828) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738949;
 c_738949.hdr.mark = gc_color_red;
@@ -6986,7 +6986,7 @@ return_closcall1(data,(closure)&c_738949,  r_73828);;
 }
 
 static void __lambda_1296(void *data, int argc, object self_732197, object formals_85_73391) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738951;
 c_738951.hdr.mark = gc_color_red;
@@ -7008,7 +7008,7 @@ return_closcall2(data,  __glo_lambda_91_125env,  &c_738951, ((closureN)self_7321
 }
 
 static void __lambda_1295(void *data, int argc, object self_732198, object r_73829) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738953;
 c_738953.hdr.mark = gc_color_red;
@@ -7030,7 +7030,7 @@ return_closcall1(data,(closure)&c_738953,  r_73829);;
 }
 
 static void __lambda_1294(void *data, int argc, object self_732199, object env_91closure_73392) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738955;
 c_738955.hdr.mark = gc_color_red;
@@ -7053,7 +7053,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_738955, ((closureN)self_7321
 }
 
 static void __lambda_1293(void *data, int argc, object self_732200, object r_73852) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738957;
 c_738957.hdr.mark = gc_color_red;
@@ -7076,7 +7076,7 @@ return_closcall1(data,(closure)&c_738957,  car(r_73852));;
 }
 
 static void __lambda_1292(void *data, int argc, object self_732201, object r_73850) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738959;
 c_738959.hdr.mark = gc_color_red;
@@ -7099,7 +7099,7 @@ return_closcall2(data,  __glo_mangle,  &c_738959, ((closureN)self_732201)->elts[
 }
 
 static void __lambda_1291(void *data, int argc, object self_732202, object r_73851) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738961;
 c_738961.hdr.mark = gc_color_red;
@@ -7120,7 +7120,7 @@ return_closcall5(data,  __glo_c_91compile_91exp,  &c_738961, ((closureN)self_732
 }
 
 static void __lambda_1290(void *data, int argc, object self_732203, object r_73830) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738963;
 c_738963.hdr.mark = gc_color_red;
@@ -7141,7 +7141,7 @@ return_closcall1(data,(closure)&c_738963,  r_73830);;
 }
 
 static void __lambda_1289(void *data, int argc, object self_732204, object body_73393) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738965;
 c_738965.hdr.mark = gc_color_red;
@@ -7163,7 +7163,7 @@ return_closcall0(data,(closure)&c_738965);;
 }
 
 static void __lambda_1288(void *data, int argc, object self_732205) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738967;
 c_738967.hdr.mark = gc_color_red;
@@ -7196,7 +7196,7 @@ return_closcall1(data,(closure)&c_738967,  &c_738974);;
 }
 
 static void __lambda_1287(void *data, int argc, object self_732206, object k_73832, object name_73394) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738976;
 c_738976.hdr.mark = gc_color_red;
@@ -7229,7 +7229,7 @@ return_closcall1(data,(closure)&c_738976,  &c_739032);;
 }
 
 static void __lambda_1286(void *data, int argc, object self_732207, object r_73833) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739034;
 c_739034.hdr.mark = gc_color_red;
@@ -7250,7 +7250,7 @@ return_closcall2(data,  __glo_st_117_91_125code,  &c_739034, ((closureN)self_732
 }
 
 static void __lambda_1285(void *data, int argc, object self_732208, object r_73837) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739036;
 c_739036.hdr.mark = gc_color_red;
@@ -7271,7 +7271,7 @@ return_closcall2(data,  __glo_c_91code,  &c_739036, r_73837);;
 }
 
 static void __lambda_1284(void *data, int argc, object self_732209, object r_73836) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739038;
 c_739038.hdr.mark = gc_color_red;
@@ -7291,7 +7291,7 @@ return_closcall3(data,  __glo_c_117append,  &c_739038, r_73836, ((closureN)self_
 }
 
 static void __lambda_1283(void *data, int argc, object self_732210, object r_73835) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739040;
 c_739040.hdr.mark = gc_color_red;
@@ -7313,7 +7313,7 @@ return_closcall3(data,  __glo_c_117serialize,  &c_739040, r_73835, &c_739057);;
 }
 
 static void __lambda_1282(void *data, int argc, object self_732211, object r_73834) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 make_string(c_739046, "static void ");
 
@@ -7330,7 +7330,7 @@ return_closcall1(data,  ((closureN)self_732211)->elts[1],  c_739045);;
 }
 
 static void __lambda_1281(void *data, int argc, object self_732212, object k_73838) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738978;
 c_738978.hdr.mark = gc_color_red;
@@ -7348,7 +7348,7 @@ return_closcall2(data,  __glo_lambda_91varargs_127,  &c_738978, ((closureN)self_
 }
 
 static void __lambda_1280(void *data, int argc, object self_732213, object r_73839) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, r_73839) ){ 
   
 closureN_type c_738980;
@@ -7372,7 +7372,7 @@ return_closcall1(data,  ((closureN)self_732213)->elts[2],  &c_739030);}
 }
 
 static void __lambda_1279(void *data, int argc, object self_732214, object r_73849) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738982;
 c_738982.hdr.mark = gc_color_red;
@@ -7390,7 +7390,7 @@ return_closcall2(data,  __glo_mangle,  &c_738982, r_73849);;
 }
 
 static void __lambda_1278(void *data, int argc, object self_732215, object r_73840) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738984;
 c_738984.hdr.mark = gc_color_red;
@@ -7409,7 +7409,7 @@ return_closcall2(data,  __glo_lambda_91varargs_91var,  &c_738984, ((closureN)sel
 }
 
 static void __lambda_1277(void *data, int argc, object self_732216, object r_73848) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738986;
 c_738986.hdr.mark = gc_color_red;
@@ -7428,7 +7428,7 @@ return_closcall2(data,  __glo_mangle,  &c_738986, r_73848);;
 }
 
 static void __lambda_1276(void *data, int argc, object self_732217, object r_73841) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738988;
 c_738988.hdr.mark = gc_color_red;
@@ -7447,7 +7447,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738988, ((closure
 }
 
 static void __lambda_1275(void *data, int argc, object self_732218, object r_73847) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738990;
 c_738990.hdr.mark = gc_color_red;
@@ -7468,7 +7468,7 @@ return_closcall1(data,(closure)&c_738990,  &c_739024);;
 }
 
 static void __lambda_1274(void *data, int argc, object self_732219, object r_73844) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738992;
 c_738992.hdr.mark = gc_color_red;
@@ -7498,7 +7498,7 @@ return_closcall1(data,(closure)&c_738992,  &c_738998);;
 }
 
 static void __lambda_1273(void *data, int argc, object self_732220, object r_73845) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739000;
 c_739000.hdr.mark = gc_color_red;
@@ -7520,7 +7520,7 @@ return_closcall1(data,(closure)&c_739000,  &c_739019);;
 }
 
 static void __lambda_1272(void *data, int argc, object self_732221, object r_73843) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_739002;
 c_739002.hdr.mark = gc_color_red;
@@ -7540,7 +7540,7 @@ return_closcall1(data,(closure)&c_739002,  c_739016);;
 }
 
 static void __lambda_1271(void *data, int argc, object self_732222, object r_73842) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 make_string(c_739008, "load_varargs(");
 
@@ -7555,7 +7555,7 @@ return_closcall1(data,  ((closureN)self_732222)->elts[0],  c_739007);;
 }
 
 static void __lambda_1270(void *data, int argc, object self_732223, object k_73846) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, ((closureN)self_732223)->elts[0]) ){ 
   
 make_int(c_738995, 1);
@@ -7568,14 +7568,14 @@ return_closcall1(data,  k_73846,  &c_738997);}
 }
 
 static void __lambda_1269(void *data, int argc, object self_732224, object r_73831) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 make_cons(c_738972,r_73831, ((closureN)self_732224)->elts[0]);
 return_closcall1(data,  ((closureN)self_732224)->elts[1],  &c_738972);; 
 }
 
 static void __lambda_1268(void *data, int argc, object self_732225, object k_73854) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, ((closureN)self_732225)->elts[1]) ){ 
   
 make_string(c_738932, "");
@@ -7599,7 +7599,7 @@ return_closcall1(data,(closure)&c_738934,  equalp(&c_738943, ((closureN)self_732
 }
 
 static void __lambda_1267(void *data, int argc, object self_732226, object r_73855) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, r_73855) ){ 
   
 make_string(c_738937, "closure _");
@@ -7612,7 +7612,7 @@ return_closcall1(data,  ((closureN)self_732226)->elts[0],  &c_738940);}
 }
 
 static void __lambda_1266(void *data, int argc, object self_732227, object k_73856) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738900;
 c_738900.hdr.mark = gc_color_red;
@@ -7631,7 +7631,7 @@ return_closcall1(data,(closure)&c_738900,  &c_738923);;
 }
 
 static void __lambda_1265(void *data, int argc, object self_732228, object r_73859) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738902;
 c_738902.hdr.mark = gc_color_red;
@@ -7650,7 +7650,7 @@ return_closcall1(data,(closure)&c_738902,  __num_gt(data, r_73859, &c_738920));;
 }
 
 static void __lambda_1264(void *data, int argc, object self_732229, object r_73857) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, r_73857) ){ 
   
 closureN_type c_738904;
@@ -7676,14 +7676,14 @@ return_closcall1(data,(closure)&c_738904,  c_738912);
 }
 
 static void __lambda_1263(void *data, int argc, object self_732230, object r_73858) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 make_string(c_738909, "self");
 return_closcall1(data,  ((closureN)self_732230)->elts[0],  equalp(&c_738909, r_73858));; 
 }
 
 static void __lambda_1262(void *data, int argc, object self_732231, object k_73860) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738857;
 c_738857.hdr.mark = gc_color_red;
@@ -7700,7 +7700,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738857, ((closure
 }
 
 static void __lambda_1261(void *data, int argc, object self_732232, object r_73868) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738859;
 c_738859.hdr.mark = gc_color_red;
@@ -7719,7 +7719,7 @@ return_closcall1(data,(closure)&c_738859,  &c_738892);;
 }
 
 static void __lambda_1260(void *data, int argc, object self_732233, object r_73867) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738861;
 c_738861.hdr.mark = gc_color_red;
@@ -7738,7 +7738,7 @@ return_closcall1(data,(closure)&c_738861,  __num_gt(data, r_73867, &c_738889));;
 }
 
 static void __lambda_1259(void *data, int argc, object self_732234, object r_73861) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, r_73861) ){ 
   
 closureN_type c_738863;
@@ -7771,12 +7771,12 @@ return_closcall1(data,  ((closureN)self_732234)->elts[1],  &c_738886);}
 }
 
 static void __lambda_1258(void *data, int argc, object self_732235, object r_73862) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 return_closcall2(data,  __glo_mangle,  ((closureN)self_732235)->elts[0], r_73862);; 
 }
 
 static void __lambda_1257(void *data, int argc, object self_732236, object k_73863) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738865;
 c_738865.hdr.mark = gc_color_red;
@@ -7793,7 +7793,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_738865, ((closureN)self_
 }
 
 static void __lambda_1256(void *data, int argc, object self_732237, object r_73866) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 
 closureN_type c_738867;
 c_738867.hdr.mark = gc_color_red;
@@ -7810,7 +7810,7 @@ return_closcall1(data,(closure)&c_738867,  Cyc_is_cons(r_73866));;
 }
 
 static void __lambda_1255(void *data, int argc, object self_732238, object r_73864) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 if( !eq(boolean_f, r_73864) ){ 
   
 closureN_type c_738869;
@@ -7830,12 +7830,12 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_738869, ((closureN)self_
 }
 
 static void __lambda_1254(void *data, int argc, object self_732239, object r_73865) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-lambda");
 return_closcall1(data,  ((closureN)self_732239)->elts[0],  car(r_73865));; 
 }
 
 static void __lambda_1253(void *data, int argc, closure _,object k_73875, object formals_73396, object type_73395) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738755;
 c_738755.hdr.mark = gc_color_red;
@@ -7853,7 +7853,7 @@ return_closcall1(data,(closure)&c_738755,  Cyc_is_cons(formals_73396));;
 }
 
 static void __lambda_1252(void *data, int argc, object self_732240, object r_73890) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738757;
 c_738757.hdr.mark = gc_color_red;
@@ -7871,7 +7871,7 @@ return_closcall2(data,  __glo_not,  &c_738757, r_73890);;
 }
 
 static void __lambda_1251(void *data, int argc, object self_732241, object r_73876) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 if( !eq(boolean_f, r_73876) ){ 
   
 make_string(c_738760, "");
@@ -7895,7 +7895,7 @@ return_closcall1(data,(closure)&c_738762,  car(((closureN)self_732241)->elts[0])
 }
 
 static void __lambda_1250(void *data, int argc, object self_732242, object r_73889) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738764;
 c_738764.hdr.mark = gc_color_red;
@@ -7913,7 +7913,7 @@ return_closcall2(data,  __glo_mangle,  &c_738764, r_73889);;
 }
 
 static void __lambda_1249(void *data, int argc, object self_732243, object r_73877) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738766;
 c_738766.hdr.mark = gc_color_red;
@@ -7942,7 +7942,7 @@ return_closcall1(data,(closure)&c_738766,  &c_738822);;
 }
 
 static void __lambda_1248(void *data, int argc, object self_732244, object r_73878) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 make_string(c_738828, "object ");
 
@@ -7951,7 +7951,7 @@ return_closcall1(data,  ((closureN)self_732244)->elts[0],  c_738827);;
 }
 
 static void __lambda_1247(void *data, int argc, object self_732245, object k_73879) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738768;
 c_738768.hdr.mark = gc_color_red;
@@ -7969,7 +7969,7 @@ return_closcall1(data,(closure)&c_738768,  cdr(((closureN)self_732245)->elts[0])
 }
 
 static void __lambda_1246(void *data, int argc, object self_732246, object r_73888) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738770;
 c_738770.hdr.mark = gc_color_red;
@@ -7987,7 +7987,7 @@ return_closcall1(data,(closure)&c_738770,  Cyc_is_cons(r_73888));;
 }
 
 static void __lambda_1245(void *data, int argc, object self_732247, object r_73880) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 if( !eq(boolean_f, r_73880) ){ 
   
 closureN_type c_738772;
@@ -8022,7 +8022,7 @@ return_closcall1(data,(closure)&c_738788,  quote_args_117fixed);}
 }
 
 static void __lambda_1244(void *data, int argc, object self_732248, object r_73887) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738790;
 c_738790.hdr.mark = gc_color_red;
@@ -8039,7 +8039,7 @@ return_closcall1(data,(closure)&c_738790,  equalp(r_73887, ((closureN)self_73224
 }
 
 static void __lambda_1243(void *data, int argc, object self_732249, object r_73886) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738792;
 c_738792.hdr.mark = gc_color_red;
@@ -8056,7 +8056,7 @@ return_closcall2(data,  __glo_not,  &c_738792, r_73886);;
 }
 
 static void __lambda_1242(void *data, int argc, object self_732250, object r_73883) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 if( !eq(boolean_f, r_73883) ){ 
   
 closureN_type c_738794;
@@ -8088,14 +8088,14 @@ return_closcall0(data,(closure)&c_738810);}
 }
 
 static void __lambda_1241(void *data, int argc, object self_732251) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 make_string(c_738813, "");
 return_closcall1(data,  ((closureN)self_732251)->elts[0],  &c_738813);; 
 }
 
 static void __lambda_1240(void *data, int argc, object self_732252) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738796;
 c_738796.hdr.mark = gc_color_red;
@@ -8111,7 +8111,7 @@ return_closcall1(data,(closure)&c_738796,  cdr(((closureN)self_732252)->elts[0])
 }
 
 static void __lambda_1239(void *data, int argc, object self_732253, object r_73885) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738798;
 c_738798.hdr.mark = gc_color_red;
@@ -8127,7 +8127,7 @@ return_closcall2(data,  __glo_mangle,  &c_738798, r_73885);;
 }
 
 static void __lambda_1238(void *data, int argc, object self_732254, object r_73884) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 make_string(c_738804, ", object ");
 
@@ -8138,7 +8138,7 @@ return_closcall1(data,  ((closureN)self_732254)->elts[0],  c_738803);;
 }
 
 static void __lambda_1237(void *data, int argc, object self_732255) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738774;
 c_738774.hdr.mark = gc_color_red;
@@ -8155,7 +8155,7 @@ return_closcall1(data,(closure)&c_738774,  cdr(((closureN)self_732255)->elts[0])
 }
 
 static void __lambda_1236(void *data, int argc, object self_732256, object r_73882) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 closureN_type c_738776;
 c_738776.hdr.mark = gc_color_red;
@@ -8171,7 +8171,7 @@ return_closcall3(data,  __glo_c_91compile_91formals,  &c_738776, r_73882, ((clos
 }
 
 static void __lambda_1235(void *data, int argc, object self_732257, object r_73881) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-formals");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-formals");
 
 make_string(c_738782, ", ");
 
@@ -8180,7 +8180,7 @@ return_closcall1(data,  ((closureN)self_732257)->elts[0],  c_738781);;
 }
 
 static void __lambda_1234(void *data, int argc, closure _,object k_73893, object exp_73400, object append_91preamble_73399, object cont_73398, object trace_73397) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738403;
 c_738403.hdr.mark = gc_color_red;
@@ -8198,7 +8198,7 @@ return_closcall2(data,  __glo_closure_91_125lam,  &c_738403, exp_73400);;
 }
 
 static void __lambda_1233(void *data, int argc, object self_732258, object r_73894) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738405;
 c_738405.hdr.mark = gc_color_red;
@@ -8216,7 +8216,7 @@ return_closcall1(data,(closure)&c_738405,  r_73894);;
 }
 
 static void __lambda_1232(void *data, int argc, object self_732259, object lam_73401) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738407;
 c_738407.hdr.mark = gc_color_red;
@@ -8237,7 +8237,7 @@ return_closcall1(data,(closure)&c_738407,  &c_738709);;
 }
 
 static void __lambda_1231(void *data, int argc, object self_732260, object k_73945, object free_91var_73402) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738711;
 c_738711.hdr.mark = gc_color_red;
@@ -8254,7 +8254,7 @@ return_closcall1(data,(closure)&c_738711,  quote__75closure_91ref);;
 }
 
 static void __lambda_1230(void *data, int argc, object self_732261, object r_73952) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738713;
 c_738713.hdr.mark = gc_color_red;
@@ -8271,7 +8271,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_738713, r_73952, ((closureN
 }
 
 static void __lambda_1229(void *data, int argc, object self_732262, object r_73946) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 if( !eq(boolean_f, r_73946) ){ 
   
 closureN_type c_738715;
@@ -8292,7 +8292,7 @@ return_closcall1(data,(closure)&c_738715,  cadr(((closureN)self_732262)->elts[0]
 }
 
 static void __lambda_1228(void *data, int argc, object self_732263, object r_73947) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738717;
 c_738717.hdr.mark = gc_color_red;
@@ -8309,7 +8309,7 @@ return_closcall1(data,(closure)&c_738717,  caddr(((closureN)self_732263)->elts[0
 }
 
 static void __lambda_1227(void *data, int argc, object self_732264, object r_73951) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738719;
 c_738719.hdr.mark = gc_color_red;
@@ -8330,7 +8330,7 @@ return_closcall1(data,(closure)&c_738719,  &c_738741);;
 }
 
 static void __lambda_1226(void *data, int argc, object self_732265, object r_73950) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738721;
 c_738721.hdr.mark = gc_color_red;
@@ -8349,7 +8349,7 @@ return_closcall1(data,(closure)&c_738721,  c_738738);;
 }
 
 static void __lambda_1225(void *data, int argc, object self_732266, object r_73948) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738723;
 c_738723.hdr.mark = gc_color_red;
@@ -8365,7 +8365,7 @@ return_closcall2(data,(closure)&c_738723,  ((closureN)self_732266)->elts[1], r_7
 }
 
 static void __lambda_1224(void *data, int argc, object self_732267, object var_73404, object idx_73403) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738725;
 c_738725.hdr.mark = gc_color_red;
@@ -8382,7 +8382,7 @@ return_closcall2(data,  __glo_mangle,  &c_738725, var_73404);;
 }
 
 static void __lambda_1223(void *data, int argc, object self_732268, object r_73949) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 make_string(c_738731, "((closureN)");
 
@@ -8395,7 +8395,7 @@ return_closcall1(data,  ((closureN)self_732268)->elts[1],  c_738730);;
 }
 
 static void __lambda_1222(void *data, int argc, object self_732269, object r_73943) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738409;
 c_738409.hdr.mark = gc_color_red;
@@ -8414,7 +8414,7 @@ return_closcall2(data,  __glo_closure_91_125fv,  &c_738409, ((closureN)self_7322
 }
 
 static void __lambda_1221(void *data, int argc, object self_732270, object r_73944) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738411;
 c_738411.hdr.mark = gc_color_red;
@@ -8432,7 +8432,7 @@ return_closcall3(data,  __glo_map,  &c_738411, ((closureN)self_732270)->elts[2],
 }
 
 static void __lambda_1220(void *data, int argc, object self_732271, object r_73895) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738413;
 c_738413.hdr.mark = gc_color_red;
@@ -8450,7 +8450,7 @@ return_closcall1(data,(closure)&c_738413,  r_73895);;
 }
 
 static void __lambda_1219(void *data, int argc, object self_732272, object free_91vars_73405) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738415;
 c_738415.hdr.mark = gc_color_red;
@@ -8469,7 +8469,7 @@ return_closcall1(data,(closure)&c_738415,  quote_c);;
 }
 
 static void __lambda_1218(void *data, int argc, object self_732273, object r_73942) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738417;
 c_738417.hdr.mark = gc_color_red;
@@ -8488,7 +8488,7 @@ return_closcall2(data,  __glo_gensym,  &c_738417, r_73942);;
 }
 
 static void __lambda_1217(void *data, int argc, object self_732274, object r_73941) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738419;
 c_738419.hdr.mark = gc_color_red;
@@ -8507,7 +8507,7 @@ return_closcall2(data,  __glo_mangle,  &c_738419, r_73941);;
 }
 
 static void __lambda_1216(void *data, int argc, object self_732275, object r_73896) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738421;
 c_738421.hdr.mark = gc_color_red;
@@ -8526,7 +8526,7 @@ return_closcall1(data,(closure)&c_738421,  r_73896);;
 }
 
 static void __lambda_1215(void *data, int argc, object self_732276, object cv_91name_73406) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738423;
 c_738423.hdr.mark = gc_color_red;
@@ -8546,7 +8546,7 @@ return_closcall3(data,  __glo_c_91compile_91lambda,  &c_738423, ((closureN)self_
 }
 
 static void __lambda_1214(void *data, int argc, object self_732277, object r_73940) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738425;
 c_738425.hdr.mark = gc_color_red;
@@ -8566,7 +8566,7 @@ return_closcall2(data,  __glo_allocate_91lambda,  &c_738425, r_73940);;
 }
 
 static void __lambda_1213(void *data, int argc, object self_732278, object r_73897) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738427;
 c_738427.hdr.mark = gc_color_red;
@@ -8586,7 +8586,7 @@ return_closcall1(data,(closure)&c_738427,  r_73897);;
 }
 
 static void __lambda_1212(void *data, int argc, object self_732279, object lid_73407) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738429;
 c_738429.hdr.mark = gc_color_red;
@@ -8606,7 +8606,7 @@ return_closcall2(data,  __glo_st_117_91_125var,  &c_738429, ((closureN)self_7322
 }
 
 static void __lambda_1211(void *data, int argc, object self_732280, object r_73938) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738431;
 c_738431.hdr.mark = gc_color_red;
@@ -8627,7 +8627,7 @@ return_closcall1(data,  __glo_get_91macros,  &c_738431);;
 }
 
 static void __lambda_1210(void *data, int argc, object self_732281, object r_73939) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738433;
 c_738433.hdr.mark = gc_color_red;
@@ -8647,7 +8647,7 @@ return_closcall1(data,(closure)&c_738433,  assoc(data, ((closureN)self_732281)->
 }
 
 static void __lambda_1209(void *data, int argc, object self_732282, object r_73898) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738435;
 c_738435.hdr.mark = gc_color_red;
@@ -8667,7 +8667,7 @@ return_closcall1(data,(closure)&c_738435,  r_73898);;
 }
 
 static void __lambda_1208(void *data, int argc, object self_732283, object macro_127_73408) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738437;
 c_738437.hdr.mark = gc_color_red;
@@ -8702,7 +8702,7 @@ return_closcall1(data,(closure)&c_738437,  &c_738559);;
 }
 
 static void __lambda_1207(void *data, int argc, object self_732284, object k_73920) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738561;
 c_738561.hdr.mark = gc_color_red;
@@ -8723,7 +8723,7 @@ return_closcall1(data,(closure)&c_738561,  c_738699);;
 }
 
 static void __lambda_1206(void *data, int argc, object self_732285, object r_73921) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738563;
 c_738563.hdr.mark = gc_color_red;
@@ -8742,7 +8742,7 @@ return_closcall2(data,  __glo_compute_91num_91args,  &c_738563, ((closureN)self_
 }
 
 static void __lambda_1205(void *data, int argc, object self_732286, object r_73937) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738565;
 c_738565.hdr.mark = gc_color_red;
@@ -8763,7 +8763,7 @@ return_closcall1(data,(closure)&c_738565,  c_738695);;
 }
 
 static void __lambda_1204(void *data, int argc, object self_732287, object r_73922) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738567;
 c_738567.hdr.mark = gc_color_red;
@@ -8785,7 +8785,7 @@ return_closcall1(data,(closure)&c_738567,  &c_738691);;
 }
 
 static void __lambda_1203(void *data, int argc, object self_732288, object r_73936) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738569;
 c_738569.hdr.mark = gc_color_red;
@@ -8807,7 +8807,7 @@ return_closcall1(data,(closure)&c_738569,  c_738688);;
 }
 
 static void __lambda_1202(void *data, int argc, object self_732289, object r_73923) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738571;
 c_738571.hdr.mark = gc_color_red;
@@ -8830,7 +8830,7 @@ return_closcall1(data,(closure)&c_738571,  &c_738684);;
 }
 
 static void __lambda_1201(void *data, int argc, object self_732290, object r_73935) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738573;
 c_738573.hdr.mark = gc_color_red;
@@ -8853,7 +8853,7 @@ return_closcall1(data,(closure)&c_738573,  c_738681);;
 }
 
 static void __lambda_1200(void *data, int argc, object self_732291, object r_73924) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738575;
 c_738575.hdr.mark = gc_color_red;
@@ -8876,7 +8876,7 @@ return_closcall2(data,(closure)&c_738575,  &c_738677, ((closureN)self_732291)->e
 }
 
 static void __lambda_1199(void *data, int argc, object self_732292, object i_73410, object vars_73409) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738577;
 c_738577.hdr.mark = gc_color_red;
@@ -8899,7 +8899,7 @@ return_closcall1(data,(closure)&c_738577,  boolean_f);;
 }
 
 static void __lambda_1198(void *data, int argc, object self_732293, object loop_73411) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738579;
 c_738579.hdr.mark = gc_color_red;
@@ -8924,7 +8924,7 @@ return_closcall1(data,(closure)&c_738579,  &c_738676);;
 }
 
 static void __lambda_1197(void *data, int argc, object self_732294, object loop_73411) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738581;
 c_738581.hdr.mark = gc_color_red;
@@ -8948,7 +8948,7 @@ return_closcall0(data,(closure)&c_738581);;
 }
 
 static void __lambda_1196(void *data, int argc, object self_732295) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738583;
 c_738583.hdr.mark = gc_color_red;
@@ -8984,7 +8984,7 @@ return_closcall1(data,(closure)&c_738583,  &c_738626);;
 }
 
 static void __lambda_1195(void *data, int argc, object self_732296, object k_73928, object i_73413, object vars_73412) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738628;
 c_738628.hdr.mark = gc_color_red;
@@ -9004,7 +9004,7 @@ return_closcall1(data,(closure)&c_738628,  Cyc_is_null(vars_73412));;
 }
 
 static void __lambda_1194(void *data, int argc, object self_732297, object r_73929) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 if( !eq(boolean_f, r_73929) ){ 
   
 make_string(c_738631, "");
@@ -9032,7 +9032,7 @@ return_closcall1(data,(closure)&c_738633,  c_738670);}
 }
 
 static void __lambda_1193(void *data, int argc, object self_732298, object r_73930) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738635;
 c_738635.hdr.mark = gc_color_red;
@@ -9053,7 +9053,7 @@ return_closcall1(data,(closure)&c_738635,  car(((closureN)self_732298)->elts[4])
 }
 
 static void __lambda_1192(void *data, int argc, object self_732299, object r_73931) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738637;
 c_738637.hdr.mark = gc_color_red;
@@ -9078,7 +9078,7 @@ return_closcall1(data,(closure)&c_738637,  &c_738662);;
 }
 
 static void __lambda_1191(void *data, int argc, object self_732300, object r_73933) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738639;
 c_738639.hdr.mark = gc_color_red;
@@ -9099,7 +9099,7 @@ return_closcall1(data,(closure)&c_738639,  cdr(((closureN)self_732300)->elts[5])
 }
 
 static void __lambda_1190(void *data, int argc, object self_732301, object r_73934) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738644;
 c_738644.hdr.mark = gc_color_red;
@@ -9118,7 +9118,7 @@ return_closcall3(data,  cell_get(((closureN)self_732301)->elts[2]),  &c_738644, 
 }
 
 static void __lambda_1189(void *data, int argc, object self_732302, object r_73932) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 make_string(c_738651, ".elts[");
 
@@ -9131,7 +9131,7 @@ return_closcall1(data,  ((closureN)self_732302)->elts[1],  c_738649);;
 }
 
 static void __lambda_1188(void *data, int argc, object self_732303, object r_73927) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738585;
 c_738585.hdr.mark = gc_color_red;
@@ -9155,7 +9155,7 @@ return_closcall1(data,(closure)&c_738585,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1187(void *data, int argc, object self_732304, object r_73926) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738590;
 c_738590.hdr.mark = gc_color_red;
@@ -9176,7 +9176,7 @@ return_closcall3(data,  cell_get(((closureN)self_732304)->elts[3]),  &c_738590, 
 }
 
 static void __lambda_1186(void *data, int argc, object self_732305, object r_73925) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 make_string(c_738596, "closureN_type ");
 
@@ -9209,7 +9209,7 @@ return_closcall1(data,  ((closureN)self_732305)->elts[1],  c_738595);;
 }
 
 static void __lambda_1185(void *data, int argc, object self_732306, object r_73899) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738439;
 c_738439.hdr.mark = gc_color_red;
@@ -9230,7 +9230,7 @@ return_closcall1(data,(closure)&c_738439,  r_73899);;
 }
 
 static void __lambda_1184(void *data, int argc, object self_732307, object create_91nclosure_73414) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738441;
 c_738441.hdr.mark = gc_color_red;
@@ -9264,7 +9264,7 @@ return_closcall1(data,(closure)&c_738441,  &c_738478);;
 }
 
 static void __lambda_1183(void *data, int argc, object self_732308, object k_73907) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738480;
 c_738480.hdr.mark = gc_color_red;
@@ -9296,7 +9296,7 @@ return_closcall1(data,(closure)&c_738480,  &c_738501);;
 }
 
 static void __lambda_1182(void *data, int argc, object self_732309, object r_73908) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738503;
 c_738503.hdr.mark = gc_color_red;
@@ -9316,7 +9316,7 @@ return_closcall1(data,(closure)&c_738503,  r_73908);;
 }
 
 static void __lambda_1181(void *data, int argc, object self_732310, object prefix_73415) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738505;
 c_738505.hdr.mark = gc_color_red;
@@ -9338,7 +9338,7 @@ return_closcall1(data,(closure)&c_738505,  c_738557);;
 }
 
 static void __lambda_1180(void *data, int argc, object self_732311, object r_73909) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738507;
 c_738507.hdr.mark = gc_color_red;
@@ -9370,7 +9370,7 @@ return_closcall1(data,(closure)&c_738507,  &c_738525);;
 }
 
 static void __lambda_1179(void *data, int argc, object self_732312, object r_73910) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738527;
 c_738527.hdr.mark = gc_color_red;
@@ -9393,7 +9393,7 @@ return_closcall3(data,  __glo_string_91join,  &c_738527, ((closureN)self_732312)
 }
 
 static void __lambda_1178(void *data, int argc, object self_732313, object r_73911) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738529;
 c_738529.hdr.mark = gc_color_red;
@@ -9414,7 +9414,7 @@ return_closcall2(data,  __glo_compute_91num_91args,  &c_738529, ((closureN)self_
 }
 
 static void __lambda_1177(void *data, int argc, object self_732314, object r_73913) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738531;
 c_738531.hdr.mark = gc_color_red;
@@ -9437,7 +9437,7 @@ return_closcall1(data,(closure)&c_738531,  c_738551);;
 }
 
 static void __lambda_1176(void *data, int argc, object self_732315, object r_73912) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 make_string(c_738538, "(");
 
@@ -9456,7 +9456,7 @@ return_closcall1(data,  ((closureN)self_732315)->elts[1],  c_738536);;
 }
 
 static void __lambda_1175(void *data, int argc, object self_732316, object k_73914) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738509;
 c_738509.hdr.mark = gc_color_red;
@@ -9474,7 +9474,7 @@ return_closcall1(data,(closure)&c_738509,  &c_738523);;
 }
 
 static void __lambda_1174(void *data, int argc, object self_732317, object r_73916) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738511;
 c_738511.hdr.mark = gc_color_red;
@@ -9492,7 +9492,7 @@ return_closcall1(data,(closure)&c_738511,  __num_gt(data, r_73916, &c_738520));;
 }
 
 static void __lambda_1173(void *data, int argc, object self_732318, object r_73915) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 if( !eq(boolean_f, r_73915) ){ 
   
 make_string(c_738514, ",");
@@ -9505,7 +9505,7 @@ return_closcall1(data,  ((closureN)self_732318)->elts[0],  &c_738517);}
 }
 
 static void __lambda_1172(void *data, int argc, object self_732319, object k_73917) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 if( !eq(boolean_f, ((closureN)self_732319)->elts[1]) ){ 
   
 make_string(c_738483, "mmacro");
@@ -9529,7 +9529,7 @@ return_closcall1(data,(closure)&c_738485,  &c_738499);}
 }
 
 static void __lambda_1171(void *data, int argc, object self_732320, object r_73919) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738487;
 c_738487.hdr.mark = gc_color_red;
@@ -9547,7 +9547,7 @@ return_closcall1(data,(closure)&c_738487,  c_738496);;
 }
 
 static void __lambda_1170(void *data, int argc, object self_732321, object r_73918) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 make_string(c_738493, "mclosure");
 
@@ -9556,7 +9556,7 @@ return_closcall1(data,  ((closureN)self_732321)->elts[0],  c_738492);;
 }
 
 static void __lambda_1169(void *data, int argc, object self_732322, object r_73900) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738443;
 c_738443.hdr.mark = gc_color_red;
@@ -9575,7 +9575,7 @@ return_closcall1(data,(closure)&c_738443,  r_73900);;
 }
 
 static void __lambda_1168(void *data, int argc, object self_732323, object create_91mclosure_73416) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738445;
 c_738445.hdr.mark = gc_color_red;
@@ -9595,7 +9595,7 @@ return_closcall0(data,(closure)&c_738445);;
 }
 
 static void __lambda_1167(void *data, int argc, object self_732324) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738447;
 c_738447.hdr.mark = gc_color_red;
@@ -9618,7 +9618,7 @@ return_closcall1(data,(closure)&c_738447,  c_738475);;
 }
 
 static void __lambda_1166(void *data, int argc, object self_732325, object r_73901) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738449;
 c_738449.hdr.mark = gc_color_red;
@@ -9648,7 +9648,7 @@ return_closcall1(data,(closure)&c_738449,  &c_738467);;
 }
 
 static void __lambda_1165(void *data, int argc, object self_732326, object r_73903) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738469;
 c_738469.hdr.mark = gc_color_red;
@@ -9665,12 +9665,12 @@ return_closcall2(data,  __glo__list,  &c_738469, r_73903);;
 }
 
 static void __lambda_1164(void *data, int argc, object self_732327, object r_73902) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_732327)->elts[0], ((closureN)self_732327)->elts[1], r_73902);; 
 }
 
 static void __lambda_1163(void *data, int argc, object self_732328, object k_73904) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738451;
 c_738451.hdr.mark = gc_color_red;
@@ -9690,7 +9690,7 @@ return_closcall1(data,(closure)&c_738451,  &c_738465);;
 }
 
 static void __lambda_1162(void *data, int argc, object self_732329, object r_73906) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 
 closureN_type c_738453;
 c_738453.hdr.mark = gc_color_red;
@@ -9710,7 +9710,7 @@ return_closcall1(data,(closure)&c_738453,  __num_gt(data, r_73906, &c_738462));;
 }
 
 static void __lambda_1161(void *data, int argc, object self_732330, object r_73905) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-closure");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-closure");
 if( !eq(boolean_f, r_73905) ){ 
   return_closcall1(data,  ((closureN)self_732330)->elts[1],  ((closureN)self_732330)->elts[2]);
 } else { 
@@ -9719,7 +9719,7 @@ if( !eq(boolean_f, r_73905) ){
 }
 
 static void __lambda_1160(void *data, int argc, closure _,object k_73955, object lis_73417) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738335;
 c_738335.hdr.mark = gc_color_red;
@@ -9738,7 +9738,7 @@ return_closcall1(data,(closure)&c_738335,  &c_738353);;
 }
 
 static void __lambda_1159(void *data, int argc, object self_732331, object k_73959, object lis_73418) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738355;
 c_738355.hdr.mark = gc_color_red;
@@ -9755,7 +9755,7 @@ return_closcall1(data,(closure)&c_738355,  Cyc_is_null(lis_73418));;
 }
 
 static void __lambda_1158(void *data, int argc, object self_732332, object r_73960) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 if( !eq(boolean_f, r_73960) ){ 
   
 closureN_type c_738357;
@@ -9787,7 +9787,7 @@ return_closcall0(data,(closure)&c_738361);}
 }
 
 static void __lambda_1157(void *data, int argc, object self_732333) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738363;
 c_738363.hdr.mark = gc_color_red;
@@ -9803,7 +9803,7 @@ return_closcall1(data,(closure)&c_738363,  car(((closureN)self_732333)->elts[1])
 }
 
 static void __lambda_1156(void *data, int argc, object self_732334, object r_73965) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738365;
 c_738365.hdr.mark = gc_color_red;
@@ -9821,7 +9821,7 @@ return_closcall1(data,(closure)&c_738365,  c_738395);;
 }
 
 static void __lambda_1155(void *data, int argc, object self_732335, object r_73961) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738367;
 c_738367.hdr.mark = gc_color_red;
@@ -9837,7 +9837,7 @@ return_closcall1(data,(closure)&c_738367,  r_73961);;
 }
 
 static void __lambda_1154(void *data, int argc, object self_732336, object arg_73419) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738369;
 c_738369.hdr.mark = gc_color_red;
@@ -9856,7 +9856,7 @@ return_closcall1(data,(closure)&c_738369,  &c_738392);;
 }
 
 static void __lambda_1153(void *data, int argc, object self_732337, object r_73964) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738371;
 c_738371.hdr.mark = gc_color_red;
@@ -9875,7 +9875,7 @@ return_closcall1(data,(closure)&c_738371,  __num_gt(data, r_73964, &c_738389));;
 }
 
 static void __lambda_1152(void *data, int argc, object self_732338, object r_73962) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 if( !eq(boolean_f, r_73962) ){ 
   
 closureN_type c_738373;
@@ -9901,19 +9901,19 @@ return_closcall1(data,(closure)&c_738373,  c_738381);
 }
 
 static void __lambda_1151(void *data, int argc, object self_732339, object r_73963) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 make_string(c_738378, "k$");
 return_closcall1(data,  ((closureN)self_732339)->elts[0],  equalp(&c_738378, r_73963));; 
 }
 
 static void __lambda_1150(void *data, int argc, object self_732340) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 return_closcall1(data,  ((closureN)self_732340)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_1149(void *data, int argc, object self_732341, object r_73956) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738337;
 c_738337.hdr.mark = gc_color_red;
@@ -9930,7 +9930,7 @@ return_closcall1(data,(closure)&c_738337,  r_73956);;
 }
 
 static void __lambda_1148(void *data, int argc, object self_732342, object check_73420) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 
 closureN_type c_738339;
 c_738339.hdr.mark = gc_color_red;
@@ -9948,7 +9948,7 @@ return_closcall2(data,  __glo_fl_95closure_127,  &c_738339, ((closureN)self_7323
 }
 
 static void __lambda_1147(void *data, int argc, object self_732343, object r_73957) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 if( !eq(boolean_f, r_73957) ){ 
   
 closureN_type c_738341;
@@ -9969,12 +9969,12 @@ return_closcall1(data,(closure)&c_738341,  cdr(((closureN)self_732343)->elts[2])
 }
 
 static void __lambda_1146(void *data, int argc, object self_732344, object r_73958) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/cont?");
 return_closcall2(data,  ((closureN)self_732344)->elts[0],  ((closureN)self_732344)->elts[1], r_73958);; 
 }
 
 static void __lambda_1145(void *data, int argc, closure _,object k_73968, object lis_73421) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738287;
 c_738287.hdr.mark = gc_color_red;
@@ -9991,7 +9991,7 @@ return_closcall1(data,(closure)&c_738287,  Cyc_is_null(lis_73421));;
 }
 
 static void __lambda_1144(void *data, int argc, object self_732345, object r_73969) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 if( !eq(boolean_f, r_73969) ){ 
   
 closureN_type c_738289;
@@ -10023,7 +10023,7 @@ return_closcall0(data,(closure)&c_738293);}
 }
 
 static void __lambda_1143(void *data, int argc, object self_732346) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738295;
 c_738295.hdr.mark = gc_color_red;
@@ -10039,7 +10039,7 @@ return_closcall1(data,(closure)&c_738295,  car(((closureN)self_732346)->elts[1])
 }
 
 static void __lambda_1142(void *data, int argc, object self_732347, object r_73974) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738297;
 c_738297.hdr.mark = gc_color_red;
@@ -10057,7 +10057,7 @@ return_closcall1(data,(closure)&c_738297,  c_738327);;
 }
 
 static void __lambda_1141(void *data, int argc, object self_732348, object r_73970) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738299;
 c_738299.hdr.mark = gc_color_red;
@@ -10073,7 +10073,7 @@ return_closcall1(data,(closure)&c_738299,  r_73970);;
 }
 
 static void __lambda_1140(void *data, int argc, object self_732349, object arg_73422) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738301;
 c_738301.hdr.mark = gc_color_red;
@@ -10092,7 +10092,7 @@ return_closcall1(data,(closure)&c_738301,  &c_738324);;
 }
 
 static void __lambda_1139(void *data, int argc, object self_732350, object r_73973) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 closureN_type c_738303;
 c_738303.hdr.mark = gc_color_red;
@@ -10111,7 +10111,7 @@ return_closcall1(data,(closure)&c_738303,  __num_gt(data, r_73973, &c_738321));;
 }
 
 static void __lambda_1138(void *data, int argc, object self_732351, object r_73971) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 if( !eq(boolean_f, r_73971) ){ 
   
 closureN_type c_738305;
@@ -10137,19 +10137,19 @@ return_closcall1(data,(closure)&c_738305,  c_738313);
 }
 
 static void __lambda_1137(void *data, int argc, object self_732352, object r_73972) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 
 make_string(c_738310, "self$");
 return_closcall1(data,  ((closureN)self_732352)->elts[0],  equalp(&c_738310, r_73972));; 
 }
 
 static void __lambda_1136(void *data, int argc, object self_732353) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:fl/closure?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:fl/closure?");
 return_closcall1(data,  ((closureN)self_732353)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_1135(void *data, int argc, closure _,object k_73977, object lam_73423) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738234;
 c_738234.hdr.mark = gc_color_red;
@@ -10166,7 +10166,7 @@ return_closcall2(data,  __glo_lambda_91num_91args,  &c_738234, lam_73423);;
 }
 
 static void __lambda_1134(void *data, int argc, object self_732354, object r_73978) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738236;
 c_738236.hdr.mark = gc_color_red;
@@ -10183,7 +10183,7 @@ return_closcall1(data,(closure)&c_738236,  r_73978);;
 }
 
 static void __lambda_1133(void *data, int argc, object self_732355, object count_73424) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738238;
 c_738238.hdr.mark = gc_color_red;
@@ -10203,7 +10203,7 @@ return_closcall1(data,(closure)&c_738238,  __num_lt(data, count_73424, &c_738284
 }
 
 static void __lambda_1132(void *data, int argc, object self_732356, object r_73979) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 if( !eq(boolean_f, r_73979) ){ 
   
 closureN_type c_738240;
@@ -10236,7 +10236,7 @@ return_closcall0(data,(closure)&c_738245);}
 }
 
 static void __lambda_1131(void *data, int argc, object self_732357) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738247;
 c_738247.hdr.mark = gc_color_red;
@@ -10253,7 +10253,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738247, ((closure
 }
 
 static void __lambda_1130(void *data, int argc, object self_732358, object r_73980) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738249;
 c_738249.hdr.mark = gc_color_red;
@@ -10270,7 +10270,7 @@ return_closcall1(data,(closure)&c_738249,  r_73980);;
 }
 
 static void __lambda_1129(void *data, int argc, object self_732359, object formals_73425) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738251;
 c_738251.hdr.mark = gc_color_red;
@@ -10299,7 +10299,7 @@ return_closcall1(data,(closure)&c_738251,  &c_738261);;
 }
 
 static void __lambda_1128(void *data, int argc, object self_732360, object r_73981) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738263;
 c_738263.hdr.mark = gc_color_red;
@@ -10328,14 +10328,14 @@ return_closcall1(data,(closure)&c_738263,  &c_738273);;
 }
 
 static void __lambda_1127(void *data, int argc, object self_732361, object r_73982) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 common_type c_738278 = Cyc_sub(data,3,((closureN)self_732361)->elts[0], ((closureN)self_732361)->elts[2], r_73982);
 return_closcall1(data,  ((closureN)self_732361)->elts[1],  &c_738278);; 
 }
 
 static void __lambda_1126(void *data, int argc, object self_732362, object k_73983) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738265;
 c_738265.hdr.mark = gc_color_red;
@@ -10351,7 +10351,7 @@ return_closcall2(data,  __glo_fl_95cont_127,  &c_738265, ((closureN)self_732362)
 }
 
 static void __lambda_1125(void *data, int argc, object self_732363, object r_73984) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 if( !eq(boolean_f, r_73984) ){ 
   
 make_int(c_738268, 1);
@@ -10364,7 +10364,7 @@ return_closcall1(data,  ((closureN)self_732363)->elts[0],  &c_738271);}
 }
 
 static void __lambda_1124(void *data, int argc, object self_732364, object k_73985) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 closureN_type c_738253;
 c_738253.hdr.mark = gc_color_red;
@@ -10380,7 +10380,7 @@ return_closcall2(data,  __glo_fl_95closure_127,  &c_738253, ((closureN)self_7323
 }
 
 static void __lambda_1123(void *data, int argc, object self_732365, object r_73986) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 if( !eq(boolean_f, r_73986) ){ 
   
 make_int(c_738256, 1);
@@ -10393,14 +10393,14 @@ return_closcall1(data,  ((closureN)self_732365)->elts[0],  &c_738259);}
 }
 
 static void __lambda_1122(void *data, int argc, object self_732366) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:compute-num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:compute-num-args");
 
 make_int(c_738243, -1);
 return_closcall1(data,  ((closureN)self_732366)->elts[0],  &c_738243);; 
 }
 
 static void __lambda_1121(void *data, int argc, closure _,object k_73989, object exp_73426) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lambda->env");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lambda->env");
 
 closureN_type c_738218;
 c_738218.hdr.mark = gc_color_red;
@@ -10416,7 +10416,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738218, exp_73426
 }
 
 static void __lambda_1120(void *data, int argc, object self_732367, object r_73990) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lambda->env");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lambda->env");
 
 closureN_type c_738220;
 c_738220.hdr.mark = gc_color_red;
@@ -10432,7 +10432,7 @@ return_closcall1(data,(closure)&c_738220,  r_73990);;
 }
 
 static void __lambda_1119(void *data, int argc, object self_732368, object formals_73427) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lambda->env");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lambda->env");
 
 closureN_type c_738222;
 c_738222.hdr.mark = gc_color_red;
@@ -10449,7 +10449,7 @@ return_closcall1(data,(closure)&c_738222,  Cyc_is_cons(formals_73427));;
 }
 
 static void __lambda_1118(void *data, int argc, object self_732369, object r_73991) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:lambda->env");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:lambda->env");
 if( !eq(boolean_f, r_73991) ){ 
   return_closcall1(data,  ((closureN)self_732369)->elts[1],  car(((closureN)self_732369)->elts[0]));
 } else { 
@@ -10458,7 +10458,7 @@ if( !eq(boolean_f, r_73991) ){
 }
 
 static void __lambda_1117(void *data, int argc, closure _,object k_73994, object lam_73428) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738189;
 c_738189.hdr.mark = gc_color_red;
@@ -10475,7 +10475,7 @@ return_closcall1(data,(closure)&c_738189,  __glo_num_91lambdas);;
 }
 
 static void __lambda_1116(void *data, int argc, object self_732370, object id_73429) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738191;
 c_738191.hdr.mark = gc_color_red;
@@ -10497,7 +10497,7 @@ return_closcall1(data,(closure)&c_738191,  &c_738214);;
 }
 
 static void __lambda_1115(void *data, int argc, object self_732371, object r_73999) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738193;
 c_738193.hdr.mark = gc_color_red;
@@ -10515,7 +10515,7 @@ return_closcall1(data,(closure)&c_738193,  global_set(__glo_num_91lambdas, r_739
 }
 
 static void __lambda_1114(void *data, int argc, object self_732372, object r_73995) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738195;
 c_738195.hdr.mark = gc_color_red;
@@ -10532,7 +10532,7 @@ return_closcall3(data,  __glo__list,  &c_738195, ((closureN)self_732372)->elts[0
 }
 
 static void __lambda_1113(void *data, int argc, object self_732373, object r_73998) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738197;
 c_738197.hdr.mark = gc_color_red;
@@ -10551,7 +10551,7 @@ return_closcall1(data,(closure)&c_738197,  &c_738207);;
 }
 
 static void __lambda_1112(void *data, int argc, object self_732374, object r_73997) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 
 closureN_type c_738199;
 c_738199.hdr.mark = gc_color_red;
@@ -10568,12 +10568,12 @@ return_closcall1(data,(closure)&c_738199,  global_set(__glo_lambdas, r_73997));;
 }
 
 static void __lambda_1111(void *data, int argc, object self_732375, object r_73996) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-lambda");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-lambda");
 return_closcall1(data,  ((closureN)self_732375)->elts[1],  ((closureN)self_732375)->elts[0]);; 
 }
 
 static void __lambda_1110(void *data, int argc, closure _,object k_731006, object sym_73430) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-symbol");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-symbol");
 
 closureN_type c_738169;
 c_738169.hdr.mark = gc_color_red;
@@ -10590,7 +10590,7 @@ return_closcall1(data,(closure)&c_738169,  memberp(data, sym_73430, __glo__85sym
 }
 
 static void __lambda_1109(void *data, int argc, object self_732376, object r_731009) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-symbol");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-symbol");
 
 closureN_type c_738171;
 c_738171.hdr.mark = gc_color_red;
@@ -10607,7 +10607,7 @@ return_closcall2(data,  __glo_not,  &c_738171, r_731009);;
 }
 
 static void __lambda_1108(void *data, int argc, object self_732377, object r_731007) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-symbol");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-symbol");
 if( !eq(boolean_f, r_731007) ){ 
   
 closureN_type c_738173;
@@ -10629,12 +10629,12 @@ return_closcall1(data,(closure)&c_738173,  &c_738180);
 }
 
 static void __lambda_1107(void *data, int argc, object self_732378, object r_731008) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:allocate-symbol");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:allocate-symbol");
 return_closcall1(data,  ((closureN)self_732378)->elts[0],  global_set(__glo__85symbols_85, r_731008));; 
 }
 
 static void __lambda_1106(void *data, int argc, closure _,object k_731014, object exp_73434, object append_91preamble_73433, object cont_73432, object trace_73431) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738116;
 c_738116.hdr.mark = gc_color_red;
@@ -10654,7 +10654,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_738116, exp_73434);;
 }
 
 static void __lambda_1105(void *data, int argc, object self_732379, object r_731015) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738118;
 c_738118.hdr.mark = gc_color_red;
@@ -10685,7 +10685,7 @@ return_closcall1(data,(closure)&c_738118,  &c_738142);;
 }
 
 static void __lambda_1104(void *data, int argc, object self_732380, object r_731016) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738144;
 c_738144.hdr.mark = gc_color_red;
@@ -10704,7 +10704,7 @@ return_closcall2(data,(closure)&c_738144,  ((closureN)self_732380)->elts[3], r_7
 }
 
 static void __lambda_1103(void *data, int argc, object self_732381, object var_73436, object body_73435) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738146;
 c_738146.hdr.mark = gc_color_red;
@@ -10725,7 +10725,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_738146, body_73435);;
 }
 
 static void __lambda_1102(void *data, int argc, object self_732382, object r_731019) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738148;
 c_738148.hdr.mark = gc_color_red;
@@ -10746,7 +10746,7 @@ return_closcall3(data,  __glo_st_117add_91function_67,  &c_738148, ((closureN)se
 }
 
 static void __lambda_1101(void *data, int argc, object self_732383, object r_731021) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738150;
 c_738150.hdr.mark = gc_color_red;
@@ -10764,7 +10764,7 @@ return_closcall5(data,  __glo_c_91compile_91exp,  &c_738150, ((closureN)self_732
 }
 
 static void __lambda_1100(void *data, int argc, object self_732384, object r_731020) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738152;
 c_738152.hdr.mark = gc_color_red;
@@ -10780,7 +10780,7 @@ return_closcall4(data,  __glo_add_91global,  &c_738152, ((closureN)self_732384)-
 }
 
 static void __lambda_1099(void *data, int argc, object self_732385, object r_731017) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738154;
 c_738154.hdr.mark = gc_color_red;
@@ -10798,14 +10798,14 @@ return_closcall2(data,  __glo__list,  &c_738154, &c_738158);;
 }
 
 static void __lambda_1098(void *data, int argc, object self_732386, object r_731018) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 make_string(c_738157, "");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_732386)->elts[0], &c_738157, r_731018);; 
 }
 
 static void __lambda_1097(void *data, int argc, object self_732387, object k_731022) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738120;
 c_738120.hdr.mark = gc_color_red;
@@ -10824,7 +10824,7 @@ return_closcall1(data,(closure)&c_738120,  &c_738140);;
 }
 
 static void __lambda_1096(void *data, int argc, object self_732388, object r_731025) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 
 closureN_type c_738122;
 c_738122.hdr.mark = gc_color_red;
@@ -10843,7 +10843,7 @@ return_closcall1(data,(closure)&c_738122,  equalp(&c_738137, r_731025));;
 }
 
 static void __lambda_1095(void *data, int argc, object self_732389, object r_731023) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 if( !eq(boolean_f, r_731023) ){ 
   return_closcall1(data,  ((closureN)self_732389)->elts[1],  cadddr(((closureN)self_732389)->elts[0]));
 } else { 
@@ -10863,12 +10863,12 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_738129, ((closureN)self_7323
 }
 
 static void __lambda_1094(void *data, int argc, object self_732390, object r_731024) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-global");
 return_closcall1(data,  ((closureN)self_732390)->elts[0],  car(r_731024));; 
 }
 
 static void __lambda_1093(void *data, int argc, closure _,object k_731028, object var_91sym_73439, object lambda_127_73438, object code_73437) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:add-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:add-global");
 
 closureN_type c_738104;
 c_738104.hdr.mark = gc_color_red;
@@ -10884,7 +10884,7 @@ return_closcall4(data,  __glo__list,  &c_738104, var_91sym_73439, lambda_127_734
 }
 
 static void __lambda_1092(void *data, int argc, object self_732391, object r_731030) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:add-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:add-global");
 
 closureN_type c_738106;
 c_738106.hdr.mark = gc_color_red;
@@ -10902,12 +10902,12 @@ return_closcall1(data,(closure)&c_738106,  &c_738113);;
 }
 
 static void __lambda_1091(void *data, int argc, object self_732392, object r_731029) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:add-global");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:add-global");
 return_closcall1(data,  ((closureN)self_732392)->elts[0],  global_set(__glo__85globals_85, r_731029));; 
 }
 
 static void __lambda_1090(void *data, int argc, closure _,object k_731033, object global_73440) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:global-not-lambda?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:global-not-lambda?");
 
 closureN_type c_738097;
 c_738097.hdr.mark = gc_color_red;
@@ -10923,17 +10923,17 @@ return_closcall1(data,(closure)&c_738097,  cadr(global_73440));;
 }
 
 static void __lambda_1089(void *data, int argc, object self_732393, object r_731034) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:global-not-lambda?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:global-not-lambda?");
 return_closcall2(data,  __glo_not,  ((closureN)self_732393)->elts[0], r_731034);; 
 }
 
 static void __lambda_1088(void *data, int argc, closure _,object k_731037, object global_73441) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:global-lambda?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:global-lambda?");
 return_closcall1(data,  k_731037,  cadr(global_73441));; 
 }
 
 static void __lambda_1087(void *data, int argc, closure _,object k_731044, object exp_73445, object append_91preamble_73444, object cont_73443, object trace_73442) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738026;
 c_738026.hdr.mark = gc_color_red;
@@ -10963,12 +10963,12 @@ return_closcall1(data,(closure)&c_738026,  &c_738086);;
 }
 
 static void __lambda_1086(void *data, int argc, object self_732394, object k_731058, object exp_73446) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 return_closcall5(data,  __glo_c_91compile_91exp,  k_731058, exp_73446, ((closureN)self_732394)->elts[0], ((closureN)self_732394)->elts[1], ((closureN)self_732394)->elts[2]);; 
 }
 
 static void __lambda_1085(void *data, int argc, object self_732395, object r_731045) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738028;
 c_738028.hdr.mark = gc_color_red;
@@ -10985,7 +10985,7 @@ return_closcall1(data,(closure)&c_738028,  r_731045);;
 }
 
 static void __lambda_1084(void *data, int argc, object self_732396, object compile_73447) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738030;
 c_738030.hdr.mark = gc_color_red;
@@ -11003,7 +11003,7 @@ return_closcall2(data,  __glo_if_91_125condition,  &c_738030, ((closureN)self_73
 }
 
 static void __lambda_1083(void *data, int argc, object self_732397, object r_731057) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738033;
 c_738033.hdr.mark = gc_color_red;
@@ -11021,7 +11021,7 @@ return_closcall2(data,  ((closureN)self_732397)->elts[0],  &c_738033, r_731057);
 }
 
 static void __lambda_1082(void *data, int argc, object self_732398, object r_731046) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738035;
 c_738035.hdr.mark = gc_color_red;
@@ -11039,7 +11039,7 @@ return_closcall1(data,(closure)&c_738035,  r_731046);;
 }
 
 static void __lambda_1081(void *data, int argc, object self_732399, object test_73448) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738037;
 c_738037.hdr.mark = gc_color_red;
@@ -11058,7 +11058,7 @@ return_closcall2(data,  __glo_if_91_125then,  &c_738037, ((closureN)self_732399)
 }
 
 static void __lambda_1080(void *data, int argc, object self_732400, object r_731056) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738040;
 c_738040.hdr.mark = gc_color_red;
@@ -11077,7 +11077,7 @@ return_closcall2(data,  ((closureN)self_732400)->elts[0],  &c_738040, r_731056);
 }
 
 static void __lambda_1079(void *data, int argc, object self_732401, object r_731047) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738042;
 c_738042.hdr.mark = gc_color_red;
@@ -11096,7 +11096,7 @@ return_closcall1(data,(closure)&c_738042,  r_731047);;
 }
 
 static void __lambda_1078(void *data, int argc, object self_732402, object then_73449) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738044;
 c_738044.hdr.mark = gc_color_red;
@@ -11115,7 +11115,7 @@ return_closcall2(data,  __glo_if_91_125else,  &c_738044, ((closureN)self_732402)
 }
 
 static void __lambda_1077(void *data, int argc, object self_732403, object r_731055) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738047;
 c_738047.hdr.mark = gc_color_red;
@@ -11133,7 +11133,7 @@ return_closcall2(data,  ((closureN)self_732403)->elts[0],  &c_738047, r_731055);
 }
 
 static void __lambda_1076(void *data, int argc, object self_732404, object r_731048) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738049;
 c_738049.hdr.mark = gc_color_red;
@@ -11151,7 +11151,7 @@ return_closcall1(data,(closure)&c_738049,  r_731048);;
 }
 
 static void __lambda_1075(void *data, int argc, object self_732405, object els_73450) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738051;
 c_738051.hdr.mark = gc_color_red;
@@ -11170,7 +11170,7 @@ return_closcall0(data,(closure)&c_738051);;
 }
 
 static void __lambda_1074(void *data, int argc, object self_732406) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738053;
 c_738053.hdr.mark = gc_color_red;
@@ -11189,7 +11189,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_738053, ((closureN)self_732406)->
 }
 
 static void __lambda_1073(void *data, int argc, object self_732407, object r_731054) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738055;
 c_738055.hdr.mark = gc_color_red;
@@ -11210,7 +11210,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_738055, r_731054, &c_73
 }
 
 static void __lambda_1072(void *data, int argc, object self_732408, object r_731050) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738057;
 c_738057.hdr.mark = gc_color_red;
@@ -11229,7 +11229,7 @@ return_closcall2(data,  __glo_c_117body,  &c_738057, ((closureN)self_732408)->el
 }
 
 static void __lambda_1071(void *data, int argc, object self_732409, object r_731051) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738059;
 c_738059.hdr.mark = gc_color_red;
@@ -11250,7 +11250,7 @@ return_closcall3(data,  __glo_c_117serialize,  &c_738059, ((closureN)self_732409
 }
 
 static void __lambda_1070(void *data, int argc, object self_732410, object r_731052) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738061;
 c_738061.hdr.mark = gc_color_red;
@@ -11271,7 +11271,7 @@ return_closcall3(data,  __glo_c_117serialize,  &c_738061, ((closureN)self_732410
 }
 
 static void __lambda_1069(void *data, int argc, object self_732411, object r_731053) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 
 closureN_type c_738063;
 c_738063.hdr.mark = gc_color_red;
@@ -11297,12 +11297,12 @@ return_closcall1(data,(closure)&c_738063,  c_738068);;
 }
 
 static void __lambda_1068(void *data, int argc, object self_732412, object r_731049) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-if");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-if");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732412)->elts[0], r_731049);; 
 }
 
 static void __lambda_1067(void *data, int argc, closure _,object k_731061, object exp_73454, object append_91preamble_73453, object cont_73452, object trace_73451) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737469;
 c_737469.hdr.mark = gc_color_red;
@@ -11322,7 +11322,7 @@ return_closcall1(data,(closure)&c_737469,  quote_tmp);;
 }
 
 static void __lambda_1066(void *data, int argc, object self_732413, object r_731176) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737471;
 c_737471.hdr.mark = gc_color_red;
@@ -11342,7 +11342,7 @@ return_closcall2(data,  __glo_gensym,  &c_737471, r_731176);;
 }
 
 static void __lambda_1065(void *data, int argc, object self_732414, object r_731175) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737473;
 c_737473.hdr.mark = gc_color_red;
@@ -11362,7 +11362,7 @@ return_closcall2(data,  __glo_mangle,  &c_737473, r_731175);;
 }
 
 static void __lambda_1064(void *data, int argc, object self_732415, object r_731062) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737475;
 c_737475.hdr.mark = gc_color_red;
@@ -11382,7 +11382,7 @@ return_closcall1(data,(closure)&c_737475,  r_731062);;
 }
 
 static void __lambda_1063(void *data, int argc, object self_732416, object _73tmp_73455) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737477;
 c_737477.hdr.mark = gc_color_red;
@@ -11402,7 +11402,7 @@ return_closcall2(data,  __glo_app_91_125args,  &c_737477, ((closureN)self_732416
 }
 
 static void __lambda_1062(void *data, int argc, object self_732417, object r_731063) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737479;
 c_737479.hdr.mark = gc_color_red;
@@ -11422,7 +11422,7 @@ return_closcall1(data,(closure)&c_737479,  r_731063);;
 }
 
 static void __lambda_1061(void *data, int argc, object self_732418, object args_73456) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737481;
 c_737481.hdr.mark = gc_color_red;
@@ -11443,7 +11443,7 @@ return_closcall2(data,  __glo_app_91_125fun,  &c_737481, ((closureN)self_732418)
 }
 
 static void __lambda_1060(void *data, int argc, object self_732419, object r_731064) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737483;
 c_737483.hdr.mark = gc_color_red;
@@ -11464,7 +11464,7 @@ return_closcall1(data,(closure)&c_737483,  r_731064);;
 }
 
 static void __lambda_1059(void *data, int argc, object self_732420, object fun_73457) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737485;
 c_737485.hdr.mark = gc_color_red;
@@ -11486,7 +11486,7 @@ return_closcall0(data,(closure)&c_737485);;
 }
 
 static void __lambda_1058(void *data, int argc, object self_732421) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737487;
 c_737487.hdr.mark = gc_color_red;
@@ -11508,7 +11508,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_737487, ((closureN)self_732421)->e
 }
 
 static void __lambda_1057(void *data, int argc, object self_732422, object r_731065) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731065) ){ 
   
 closureN_type c_737489;
@@ -11549,7 +11549,7 @@ return_closcall2(data,  __glo_prim_127,  &c_737572, ((closureN)self_732422)->elt
 }
 
 static void __lambda_1056(void *data, int argc, object self_732423, object r_731081) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731081) ){ 
   
 closureN_type c_737574;
@@ -11591,7 +11591,7 @@ return_closcall1(data,(closure)&c_737745,  quote__75closure_91ref);}
 }
 
 static void __lambda_1055(void *data, int argc, object self_732424, object r_731174) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737747;
 c_737747.hdr.mark = gc_color_red;
@@ -11613,7 +11613,7 @@ return_closcall1(data,(closure)&c_737747,  equalp(r_731174, ((closureN)self_7324
 }
 
 static void __lambda_1054(void *data, int argc, object self_732425, object r_731118) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731118) ){ 
   
 closureN_type c_737749;
@@ -11651,7 +11651,7 @@ return_closcall1(data,(closure)&c_737788,  quote__75closure_91ref);}
 }
 
 static void __lambda_1053(void *data, int argc, object self_732426, object r_731173) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737790;
 c_737790.hdr.mark = gc_color_red;
@@ -11673,7 +11673,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_737790, r_731173, ((closure
 }
 
 static void __lambda_1052(void *data, int argc, object self_732427, object r_731126) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731126) ){ 
   
 closureN_type c_737792;
@@ -11714,7 +11714,7 @@ return_closcall1(data,(closure)&c_737888,  quote__75closure);}
 }
 
 static void __lambda_1051(void *data, int argc, object self_732428, object r_731172) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737890;
 c_737890.hdr.mark = gc_color_red;
@@ -11736,7 +11736,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_737890, r_731172, ((closure
 }
 
 static void __lambda_1050(void *data, int argc, object self_732429, object r_731147) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731147) ){ 
   
 closureN_type c_737892;
@@ -11773,7 +11773,7 @@ return_closcall0(data,(closure)&c_737980);}
 }
 
 static void __lambda_1049(void *data, int argc, object self_732430) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737982;
 c_737982.hdr.mark = gc_color_red;
@@ -11790,7 +11790,7 @@ return_closcall1(data,(closure)&c_737982,  quote_Unsupported);;
 }
 
 static void __lambda_1048(void *data, int argc, object self_732431, object r_731165) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737984;
 c_737984.hdr.mark = gc_color_red;
@@ -11808,7 +11808,7 @@ return_closcall1(data,(closure)&c_737984,  quote_function);;
 }
 
 static void __lambda_1047(void *data, int argc, object self_732432, object r_731167) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737986;
 c_737986.hdr.mark = gc_color_red;
@@ -11827,7 +11827,7 @@ return_closcall1(data,(closure)&c_737986,  quote_application);;
 }
 
 static void __lambda_1046(void *data, int argc, object self_732433, object r_731169) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737988;
 c_737988.hdr.mark = gc_color_red;
@@ -11847,7 +11847,7 @@ return_closcall1(data,(closure)&c_737988,  nil);;
 }
 
 static void __lambda_1045(void *data, int argc, object self_732434, object r_731171) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737990;
 c_737990.hdr.mark = gc_color_red;
@@ -11868,7 +11868,7 @@ return_closcall1(data,(closure)&c_737990,  &c_738013);;
 }
 
 static void __lambda_1044(void *data, int argc, object self_732435, object r_731170) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737992;
 c_737992.hdr.mark = gc_color_red;
@@ -11888,7 +11888,7 @@ return_closcall1(data,(closure)&c_737992,  &c_738009);;
 }
 
 static void __lambda_1043(void *data, int argc, object self_732436, object r_731168) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737994;
 c_737994.hdr.mark = gc_color_red;
@@ -11907,7 +11907,7 @@ return_closcall1(data,(closure)&c_737994,  &c_738005);;
 }
 
 static void __lambda_1042(void *data, int argc, object self_732437, object r_731166) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737996;
 c_737996.hdr.mark = gc_color_red;
@@ -11925,12 +11925,12 @@ return_closcall1(data,(closure)&c_737996,  &c_738001);;
 }
 
 static void __lambda_1041(void *data, int argc, object self_732438, object r_731164) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall2(data,  __glo_error,  ((closureN)self_732438)->elts[0], r_731164);; 
 }
 
 static void __lambda_1040(void *data, int argc, object self_732439) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737894;
 c_737894.hdr.mark = gc_color_red;
@@ -11949,7 +11949,7 @@ return_closcall5(data,  __glo_c_91compile_91closure,  &c_737894, ((closureN)self
 }
 
 static void __lambda_1039(void *data, int argc, object self_732440, object r_731148) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737896;
 c_737896.hdr.mark = gc_color_red;
@@ -11968,7 +11968,7 @@ return_closcall1(data,(closure)&c_737896,  r_731148);;
 }
 
 static void __lambda_1038(void *data, int argc, object self_732441, object cfun_73458) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737898;
 c_737898.hdr.mark = gc_color_red;
@@ -11988,7 +11988,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737898, cfun_73458);;
 }
 
 static void __lambda_1037(void *data, int argc, object self_732442, object r_731163) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737900;
 c_737900.hdr.mark = gc_color_red;
@@ -12012,7 +12012,7 @@ return_closcall1(data,(closure)&c_737900,  c_737973);;
 }
 
 static void __lambda_1036(void *data, int argc, object self_732443, object r_731149) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737902;
 c_737902.hdr.mark = gc_color_red;
@@ -12032,7 +12032,7 @@ return_closcall1(data,(closure)&c_737902,  r_731149);;
 }
 
 static void __lambda_1035(void *data, int argc, object self_732444, object this_91cont_73459) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737904;
 c_737904.hdr.mark = gc_color_red;
@@ -12052,7 +12052,7 @@ return_closcall6(data,  __glo_c_91compile_91args,  &c_737904, ((closureN)self_73
 }
 
 static void __lambda_1034(void *data, int argc, object self_732445, object r_731150) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737906;
 c_737906.hdr.mark = gc_color_red;
@@ -12070,7 +12070,7 @@ return_closcall1(data,(closure)&c_737906,  r_731150);;
 }
 
 static void __lambda_1033(void *data, int argc, object self_732446, object cargs_73460) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737908;
 c_737908.hdr.mark = gc_color_red;
@@ -12089,7 +12089,7 @@ return_closcall2(data,  __glo_c_117num_91args,  &c_737908, cargs_73460);;
 }
 
 static void __lambda_1032(void *data, int argc, object self_732447, object r_731151) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737910;
 c_737910.hdr.mark = gc_color_red;
@@ -12108,7 +12108,7 @@ return_closcall1(data,(closure)&c_737910,  r_731151);;
 }
 
 static void __lambda_1031(void *data, int argc, object self_732448, object num_91cargs_73461) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737912;
 c_737912.hdr.mark = gc_color_red;
@@ -12128,7 +12128,7 @@ return_closcall0(data,(closure)&c_737912);;
 }
 
 static void __lambda_1030(void *data, int argc, object self_732449) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737914;
 c_737914.hdr.mark = gc_color_red;
@@ -12148,7 +12148,7 @@ return_closcall2(data,  __glo_set_91c_91call_91arity_67,  &c_737914, ((closureN)
 }
 
 static void __lambda_1029(void *data, int argc, object self_732450, object r_731152) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737916;
 c_737916.hdr.mark = gc_color_red;
@@ -12167,7 +12167,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737916, ((closureN)self_732450)->
 }
 
 static void __lambda_1028(void *data, int argc, object self_732451, object r_731162) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737918;
 c_737918.hdr.mark = gc_color_red;
@@ -12188,7 +12188,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_737918, r_731162, &c_73
 }
 
 static void __lambda_1027(void *data, int argc, object self_732452, object r_731154) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737920;
 c_737920.hdr.mark = gc_color_red;
@@ -12208,7 +12208,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737920, ((closureN)self_732452)->
 }
 
 static void __lambda_1026(void *data, int argc, object self_732453, object r_731161) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737922;
 c_737922.hdr.mark = gc_color_red;
@@ -12230,7 +12230,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_737922, r_731161, &c_73
 }
 
 static void __lambda_1025(void *data, int argc, object self_732454, object r_731155) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737924;
 c_737924.hdr.mark = gc_color_red;
@@ -12253,7 +12253,7 @@ return_closcall1(data,(closure)&c_737924,  c_737960);;
 }
 
 static void __lambda_1024(void *data, int argc, object self_732455, object r_731156) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737926;
 c_737926.hdr.mark = gc_color_red;
@@ -12285,7 +12285,7 @@ return_closcall1(data,(closure)&c_737926,  &c_737939);;
 }
 
 static void __lambda_1023(void *data, int argc, object self_732456, object r_731157) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737941;
 c_737941.hdr.mark = gc_color_red;
@@ -12306,7 +12306,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737941, ((closureN)self_732456)->el
 }
 
 static void __lambda_1022(void *data, int argc, object self_732457, object r_731158) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737943;
 c_737943.hdr.mark = gc_color_red;
@@ -12330,12 +12330,12 @@ return_closcall1(data,(closure)&c_737943,  c_737948);;
 }
 
 static void __lambda_1021(void *data, int argc, object self_732458, object r_731153) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732458)->elts[0], r_731153);; 
 }
 
 static void __lambda_1020(void *data, int argc, object self_732459, object k_731159) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737928;
 c_737928.hdr.mark = gc_color_red;
@@ -12353,7 +12353,7 @@ return_closcall1(data,(closure)&c_737928,  __num_gt(data, ((closureN)self_732459
 }
 
 static void __lambda_1019(void *data, int argc, object self_732460, object r_731160) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731160) ){ 
   
 make_string(c_737931, ",");
@@ -12366,7 +12366,7 @@ return_closcall1(data,  ((closureN)self_732460)->elts[0],  &c_737934);}
 }
 
 static void __lambda_1018(void *data, int argc, object self_732461) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737794;
 c_737794.hdr.mark = gc_color_red;
@@ -12386,7 +12386,7 @@ return_closcall1(data,(closure)&c_737794,  car(((closureN)self_732461)->elts[1])
 }
 
 static void __lambda_1017(void *data, int argc, object self_732462, object r_731146) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737796;
 c_737796.hdr.mark = gc_color_red;
@@ -12406,7 +12406,7 @@ return_closcall2(data,  __glo__list,  &c_737796, r_731146);;
 }
 
 static void __lambda_1016(void *data, int argc, object self_732463, object r_731145) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737798;
 c_737798.hdr.mark = gc_color_red;
@@ -12427,7 +12427,7 @@ return_closcall6(data,  __glo_c_91compile_91args,  &c_737798, r_731145, ((closur
 }
 
 static void __lambda_1015(void *data, int argc, object self_732464, object r_731127) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737800;
 c_737800.hdr.mark = gc_color_red;
@@ -12446,7 +12446,7 @@ return_closcall1(data,(closure)&c_737800,  r_731127);;
 }
 
 static void __lambda_1014(void *data, int argc, object self_732465, object cfun_73462) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737802;
 c_737802.hdr.mark = gc_color_red;
@@ -12466,7 +12466,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737802, cfun_73462);;
 }
 
 static void __lambda_1013(void *data, int argc, object self_732466, object r_731128) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737804;
 c_737804.hdr.mark = gc_color_red;
@@ -12486,7 +12486,7 @@ return_closcall1(data,(closure)&c_737804,  r_731128);;
 }
 
 static void __lambda_1012(void *data, int argc, object self_732467, object this_91cont_73463) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737806;
 c_737806.hdr.mark = gc_color_red;
@@ -12506,7 +12506,7 @@ return_closcall1(data,(closure)&c_737806,  cdr(((closureN)self_732467)->elts[1])
 }
 
 static void __lambda_1011(void *data, int argc, object self_732468, object r_731144) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737808;
 c_737808.hdr.mark = gc_color_red;
@@ -12526,7 +12526,7 @@ return_closcall6(data,  __glo_c_91compile_91args,  &c_737808, r_731144, ((closur
 }
 
 static void __lambda_1010(void *data, int argc, object self_732469, object r_731129) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737810;
 c_737810.hdr.mark = gc_color_red;
@@ -12544,7 +12544,7 @@ return_closcall1(data,(closure)&c_737810,  r_731129);;
 }
 
 static void __lambda_1009(void *data, int argc, object self_732470, object cargs_73464) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737812;
 c_737812.hdr.mark = gc_color_red;
@@ -12563,7 +12563,7 @@ return_closcall0(data,(closure)&c_737812);;
 }
 
 static void __lambda_1008(void *data, int argc, object self_732471) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737814;
 c_737814.hdr.mark = gc_color_red;
@@ -12582,7 +12582,7 @@ return_closcall2(data,  __glo_c_117num_91args,  &c_737814, ((closureN)self_73247
 }
 
 static void __lambda_1007(void *data, int argc, object self_732472, object r_731143) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737816;
 c_737816.hdr.mark = gc_color_red;
@@ -12601,7 +12601,7 @@ return_closcall2(data,  __glo_set_91c_91call_91arity_67,  &c_737816, r_731143);;
 }
 
 static void __lambda_1006(void *data, int argc, object self_732473, object r_731130) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737818;
 c_737818.hdr.mark = gc_color_red;
@@ -12619,7 +12619,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737818, ((closureN)self_732473)->
 }
 
 static void __lambda_1005(void *data, int argc, object self_732474, object r_731142) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737820;
 c_737820.hdr.mark = gc_color_red;
@@ -12639,7 +12639,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_737820, r_731142, &c_73
 }
 
 static void __lambda_1004(void *data, int argc, object self_732475, object r_731132) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737822;
 c_737822.hdr.mark = gc_color_red;
@@ -12658,7 +12658,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737822, ((closureN)self_732475)->
 }
 
 static void __lambda_1003(void *data, int argc, object self_732476, object r_731141) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737824;
 c_737824.hdr.mark = gc_color_red;
@@ -12679,7 +12679,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_737824, r_731141, &c_73
 }
 
 static void __lambda_1002(void *data, int argc, object self_732477, object r_731133) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737826;
 c_737826.hdr.mark = gc_color_red;
@@ -12699,7 +12699,7 @@ return_closcall2(data,  __glo_c_117num_91args,  &c_737826, ((closureN)self_73247
 }
 
 static void __lambda_1001(void *data, int argc, object self_732478, object r_731140) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737828;
 c_737828.hdr.mark = gc_color_red;
@@ -12721,7 +12721,7 @@ return_closcall1(data,(closure)&c_737828,  c_737866);;
 }
 
 static void __lambda_1000(void *data, int argc, object self_732479, object r_731134) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737830;
 c_737830.hdr.mark = gc_color_red;
@@ -12753,7 +12753,7 @@ return_closcall1(data,(closure)&c_737830,  &c_737845);;
 }
 
 static void __lambda_999(void *data, int argc, object self_732480, object r_731135) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737847;
 c_737847.hdr.mark = gc_color_red;
@@ -12774,7 +12774,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737847, ((closureN)self_732480)->el
 }
 
 static void __lambda_998(void *data, int argc, object self_732481, object r_731136) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737849;
 c_737849.hdr.mark = gc_color_red;
@@ -12798,12 +12798,12 @@ return_closcall1(data,(closure)&c_737849,  c_737854);;
 }
 
 static void __lambda_997(void *data, int argc, object self_732482, object r_731131) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732482)->elts[0], r_731131);; 
 }
 
 static void __lambda_996(void *data, int argc, object self_732483, object k_731137) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737832;
 c_737832.hdr.mark = gc_color_red;
@@ -12819,7 +12819,7 @@ return_closcall2(data,  __glo_c_117num_91args,  &c_737832, ((closureN)self_73248
 }
 
 static void __lambda_995(void *data, int argc, object self_732484, object r_731139) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737834;
 c_737834.hdr.mark = gc_color_red;
@@ -12837,7 +12837,7 @@ return_closcall1(data,(closure)&c_737834,  __num_gt(data, r_731139, &c_737843));
 }
 
 static void __lambda_994(void *data, int argc, object self_732485, object r_731138) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731138) ){ 
   
 make_string(c_737837, ",");
@@ -12850,7 +12850,7 @@ return_closcall1(data,  ((closureN)self_732485)->elts[0],  &c_737840);}
 }
 
 static void __lambda_993(void *data, int argc, object self_732486) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737751;
 c_737751.hdr.mark = gc_color_red;
@@ -12867,7 +12867,7 @@ return_closcall1(data,(closure)&c_737751,  car(((closureN)self_732486)->elts[0])
 }
 
 static void __lambda_992(void *data, int argc, object self_732487, object r_731125) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737753;
 c_737753.hdr.mark = gc_color_red;
@@ -12884,7 +12884,7 @@ return_closcall2(data,  __glo_mangle,  &c_737753, r_731125);;
 }
 
 static void __lambda_991(void *data, int argc, object self_732488, object r_731121) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737755;
 c_737755.hdr.mark = gc_color_red;
@@ -12901,7 +12901,7 @@ return_closcall1(data,(closure)&c_737755,  cadr(((closureN)self_732488)->elts[0]
 }
 
 static void __lambda_990(void *data, int argc, object self_732489, object r_731124) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737757;
 c_737757.hdr.mark = gc_color_red;
@@ -12922,7 +12922,7 @@ return_closcall1(data,(closure)&c_737757,  &c_737779);;
 }
 
 static void __lambda_989(void *data, int argc, object self_732490, object r_731123) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737759;
 c_737759.hdr.mark = gc_color_red;
@@ -12941,7 +12941,7 @@ return_closcall1(data,(closure)&c_737759,  c_737776);;
 }
 
 static void __lambda_988(void *data, int argc, object self_732491, object r_731122) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737761;
 c_737761.hdr.mark = gc_color_red;
@@ -12965,7 +12965,7 @@ return_closcall7(data,  __glo__list,  &c_737761, &c_737769, &c_737770, ((closure
 }
 
 static void __lambda_987(void *data, int argc, object self_732492, object r_731120) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737763;
 c_737763.hdr.mark = gc_color_red;
@@ -12983,12 +12983,12 @@ return_closcall1(data,(closure)&c_737763,  c_737768);;
 }
 
 static void __lambda_986(void *data, int argc, object self_732493, object r_731119) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732493)->elts[0], r_731119);; 
 }
 
 static void __lambda_985(void *data, int argc, object self_732494) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737576;
 c_737576.hdr.mark = gc_color_red;
@@ -13008,7 +13008,7 @@ return_closcall3(data,  __glo_c_91compile_91prim,  &c_737576, ((closureN)self_73
 }
 
 static void __lambda_984(void *data, int argc, object self_732495, object r_731082) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737578;
 c_737578.hdr.mark = gc_color_red;
@@ -13028,7 +13028,7 @@ return_closcall1(data,(closure)&c_737578,  r_731082);;
 }
 
 static void __lambda_983(void *data, int argc, object self_732496, object c_91fun_73465) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737580;
 c_737580.hdr.mark = gc_color_red;
@@ -13051,7 +13051,7 @@ return_closcall6(data,  __glo_c_91compile_91args,  &c_737580, ((closureN)self_73
 }
 
 static void __lambda_982(void *data, int argc, object self_732497, object r_731083) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737582;
 c_737582.hdr.mark = gc_color_red;
@@ -13070,7 +13070,7 @@ return_closcall1(data,(closure)&c_737582,  r_731083);;
 }
 
 static void __lambda_981(void *data, int argc, object self_732498, object c_91args_73466) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737584;
 c_737584.hdr.mark = gc_color_red;
@@ -13091,7 +13091,7 @@ return_closcall1(data,(closure)&c_737584,  &c_737735);;
 }
 
 static void __lambda_980(void *data, int argc, object self_732499, object r_731084) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737586;
 c_737586.hdr.mark = gc_color_red;
@@ -13110,7 +13110,7 @@ return_closcall1(data,(closure)&c_737586,  r_731084);;
 }
 
 static void __lambda_979(void *data, int argc, object self_732500, object num_91args_73467) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737588;
 c_737588.hdr.mark = gc_color_red;
@@ -13132,7 +13132,7 @@ return_closcall1(data,(closure)&c_737588,  c_737732);;
 }
 
 static void __lambda_978(void *data, int argc, object self_732501, object r_731114) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737590;
 c_737590.hdr.mark = gc_color_red;
@@ -13163,7 +13163,7 @@ return_closcall1(data,(closure)&c_737590,  &c_737603);;
 }
 
 static void __lambda_977(void *data, int argc, object self_732502, object r_731115) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737605;
 c_737605.hdr.mark = gc_color_red;
@@ -13184,7 +13184,7 @@ return_closcall1(data,(closure)&c_737605,  c_737728);;
 }
 
 static void __lambda_976(void *data, int argc, object self_732503, object r_731085) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737607;
 c_737607.hdr.mark = gc_color_red;
@@ -13203,7 +13203,7 @@ return_closcall1(data,(closure)&c_737607,  r_731085);;
 }
 
 static void __lambda_975(void *data, int argc, object self_732504, object num_91args_91str_73468) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737609;
 c_737609.hdr.mark = gc_color_red;
@@ -13234,7 +13234,7 @@ return_closcall1(data,(closure)&c_737609,  &c_737622);;
 }
 
 static void __lambda_974(void *data, int argc, object self_732505, object r_731086) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737624;
 c_737624.hdr.mark = gc_color_red;
@@ -13252,7 +13252,7 @@ return_closcall1(data,(closure)&c_737624,  r_731086);;
 }
 
 static void __lambda_973(void *data, int argc, object self_732506, object c_91args_85_73469) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737626;
 c_737626.hdr.mark = gc_color_red;
@@ -13271,7 +13271,7 @@ return_closcall0(data,(closure)&c_737626);;
 }
 
 static void __lambda_972(void *data, int argc, object self_732507) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737628;
 c_737628.hdr.mark = gc_color_red;
@@ -13290,7 +13290,7 @@ return_closcall2(data,  __glo_prim_95cvar_127,  &c_737628, ((closureN)self_73250
 }
 
 static void __lambda_971(void *data, int argc, object self_732508, object r_731087) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731087) ){ 
   
 closureN_type c_737630;
@@ -13326,7 +13326,7 @@ return_closcall0(data,(closure)&c_737697);}
 }
 
 static void __lambda_970(void *data, int argc, object self_732509) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737699;
 c_737699.hdr.mark = gc_color_red;
@@ -13354,7 +13354,7 @@ return_closcall1(data,(closure)&c_737699,  &c_737715);;
 }
 
 static void __lambda_969(void *data, int argc, object self_732510, object r_731106) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737717;
 c_737717.hdr.mark = gc_color_red;
@@ -13370,7 +13370,7 @@ return_closcall3(data,  __glo_c_117append,  &c_737717, r_731106, ((closureN)self
 }
 
 static void __lambda_968(void *data, int argc, object self_732511, object r_731104) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737719;
 c_737719.hdr.mark = gc_color_red;
@@ -13389,12 +13389,12 @@ return_closcall2(data,  __glo_c_91code,  &c_737719, &c_737723);;
 }
 
 static void __lambda_967(void *data, int argc, object self_732512, object r_731105) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall3(data,  __glo_c_117append,  ((closureN)self_732512)->elts[0], ((closureN)self_732512)->elts[1], r_731105);; 
 }
 
 static void __lambda_966(void *data, int argc, object self_732513, object k_731107) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737701;
 c_737701.hdr.mark = gc_color_red;
@@ -13411,7 +13411,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737701, ((closureN)self_732513)->el
 }
 
 static void __lambda_965(void *data, int argc, object self_732514, object r_731110) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737703;
 c_737703.hdr.mark = gc_color_red;
@@ -13430,7 +13430,7 @@ return_closcall3(data,  __glo_str_91ending_127,  &c_737703, r_731110, &c_737713)
 }
 
 static void __lambda_964(void *data, int argc, object self_732515, object r_731108) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731108) ){ 
   return_closcall1(data,  ((closureN)self_732515)->elts[1],  ((closureN)self_732515)->elts[0]);
 } else { 
@@ -13453,12 +13453,12 @@ return_closcall2(data,  __glo_c_91code,  &c_737708, &c_737712);}
 }
 
 static void __lambda_963(void *data, int argc, object self_732516, object r_731109) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall3(data,  __glo_c_117append,  ((closureN)self_732516)->elts[1], ((closureN)self_732516)->elts[0], r_731109);; 
 }
 
 static void __lambda_962(void *data, int argc, object self_732517, object r_731088) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737632;
 c_737632.hdr.mark = gc_color_red;
@@ -13478,7 +13478,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737632, ((closureN)self_732517)->
 }
 
 static void __lambda_961(void *data, int argc, object self_732518, object r_731090) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737634;
 c_737634.hdr.mark = gc_color_red;
@@ -13499,7 +13499,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737634, ((closureN)self_732518)->
 }
 
 static void __lambda_960(void *data, int argc, object self_732519, object r_731103) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737636;
 c_737636.hdr.mark = gc_color_red;
@@ -13520,7 +13520,7 @@ return_closcall1(data,(closure)&c_737636,  car(r_731103));;
 }
 
 static void __lambda_959(void *data, int argc, object self_732520, object r_731093) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737638;
 c_737638.hdr.mark = gc_color_red;
@@ -13552,7 +13552,7 @@ return_closcall1(data,(closure)&c_737638,  &c_737671);;
 }
 
 static void __lambda_958(void *data, int argc, object self_732521, object r_731094) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737673;
 c_737673.hdr.mark = gc_color_red;
@@ -13572,7 +13572,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737673, ((closureN)self_732521)->el
 }
 
 static void __lambda_957(void *data, int argc, object self_732522, object r_731095) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737675;
 c_737675.hdr.mark = gc_color_red;
@@ -13594,7 +13594,7 @@ return_closcall1(data,(closure)&c_737675,  c_737686);;
 }
 
 static void __lambda_956(void *data, int argc, object self_732523, object r_731092) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737677;
 c_737677.hdr.mark = gc_color_red;
@@ -13612,7 +13612,7 @@ return_closcall2(data,  __glo__list,  &c_737677, r_731092);;
 }
 
 static void __lambda_955(void *data, int argc, object self_732524, object r_731091) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737679;
 c_737679.hdr.mark = gc_color_red;
@@ -13629,12 +13629,12 @@ return_closcall3(data,  __glo_append,  &c_737679, ((closureN)self_732524)->elts[
 }
 
 static void __lambda_954(void *data, int argc, object self_732525, object r_731089) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_732525)->elts[0], ((closureN)self_732525)->elts[1], r_731089);; 
 }
 
 static void __lambda_953(void *data, int argc, object self_732526, object k_731096) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737640;
 c_737640.hdr.mark = gc_color_red;
@@ -13652,7 +13652,7 @@ return_closcall2(data,  __glo_prim_95c_91var_91assign,  &c_737640, ((closureN)se
 }
 
 static void __lambda_952(void *data, int argc, object self_732527, object r_731097) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731097) ){ 
   
 closureN_type c_737642;
@@ -13675,7 +13675,7 @@ return_closcall1(data,  ((closureN)self_732527)->elts[2],  &c_737669);}
 }
 
 static void __lambda_951(void *data, int argc, object self_732528, object r_731102) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737644;
 c_737644.hdr.mark = gc_color_red;
@@ -13692,7 +13692,7 @@ return_closcall1(data,(closure)&c_737644,  car(r_731102));;
 }
 
 static void __lambda_950(void *data, int argc, object self_732529, object r_731101) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737646;
 c_737646.hdr.mark = gc_color_red;
@@ -13711,7 +13711,7 @@ return_closcall3(data,  __glo_str_91ending_127,  &c_737646, r_731101, &c_737663)
 }
 
 static void __lambda_949(void *data, int argc, object self_732530, object r_731099) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737648;
 c_737648.hdr.mark = gc_color_red;
@@ -13728,7 +13728,7 @@ return_closcall1(data,(closure)&c_737648,  r_731099);;
 }
 
 static void __lambda_948(void *data, int argc, object self_732531, object tmp_73470) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737650;
 c_737650.hdr.mark = gc_color_red;
@@ -13756,7 +13756,7 @@ return_closcall1(data,(closure)&c_737650,  &c_737656);;
 }
 
 static void __lambda_947(void *data, int argc, object self_732532, object r_731098) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731098) ){ 
   
 make_string(c_737659, "");
@@ -13769,7 +13769,7 @@ return_closcall1(data,  ((closureN)self_732532)->elts[0],  &c_737662);}
 }
 
 static void __lambda_946(void *data, int argc, object self_732533, object k_731100) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, ((closureN)self_732533)->elts[1]) ){ 
   return_closcall1(data,  k_731100,  ((closureN)self_732533)->elts[1]);
 } else { 
@@ -13778,7 +13778,7 @@ if( !eq(boolean_f, ((closureN)self_732533)->elts[1]) ){
 }
 
 static void __lambda_945(void *data, int argc, object self_732534, object k_731111) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737611;
 c_737611.hdr.mark = gc_color_red;
@@ -13796,7 +13796,7 @@ return_closcall2(data,  __glo_prim_117arg_91count_127,  &c_737611, ((closureN)se
 }
 
 static void __lambda_944(void *data, int argc, object self_732535, object r_731112) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731112) ){ 
   
 closureN_type c_737613;
@@ -13817,12 +13817,12 @@ return_closcall2(data,  __glo_c_91code,  &c_737613, ((closureN)self_732535)->elt
 }
 
 static void __lambda_943(void *data, int argc, object self_732536, object r_731113) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall3(data,  __glo_c_117append,  ((closureN)self_732536)->elts[1], r_731113, ((closureN)self_732536)->elts[0]);; 
 }
 
 static void __lambda_942(void *data, int argc, object self_732537, object k_731116) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737592;
 c_737592.hdr.mark = gc_color_red;
@@ -13840,7 +13840,7 @@ return_closcall1(data,(closure)&c_737592,  __num_gt(data, ((closureN)self_732537
 }
 
 static void __lambda_941(void *data, int argc, object self_732538, object r_731117) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731117) ){ 
   
 make_string(c_737595, ",");
@@ -13853,7 +13853,7 @@ return_closcall1(data,  ((closureN)self_732538)->elts[0],  &c_737598);}
 }
 
 static void __lambda_940(void *data, int argc, object self_732539) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737491;
 c_737491.hdr.mark = gc_color_red;
@@ -13872,7 +13872,7 @@ return_closcall3(data,  __glo_c_91compile_91lambda,  &c_737491, ((closureN)self_
 }
 
 static void __lambda_939(void *data, int argc, object self_732540, object r_731080) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737493;
 c_737493.hdr.mark = gc_color_red;
@@ -13891,7 +13891,7 @@ return_closcall2(data,  __glo_allocate_91lambda,  &c_737493, r_731080);;
 }
 
 static void __lambda_938(void *data, int argc, object self_732541, object r_731066) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737495;
 c_737495.hdr.mark = gc_color_red;
@@ -13910,7 +13910,7 @@ return_closcall1(data,(closure)&c_737495,  r_731066);;
 }
 
 static void __lambda_937(void *data, int argc, object self_732542, object lid_73471) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737497;
 c_737497.hdr.mark = gc_color_red;
@@ -13931,7 +13931,7 @@ return_closcall1(data,(closure)&c_737497,  c_737568);;
 }
 
 static void __lambda_936(void *data, int argc, object self_732543, object r_731079) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737499;
 c_737499.hdr.mark = gc_color_red;
@@ -13954,7 +13954,7 @@ return_closcall1(data,(closure)&c_737499,  c_737564);;
 }
 
 static void __lambda_935(void *data, int argc, object self_732544, object r_731067) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737501;
 c_737501.hdr.mark = gc_color_red;
@@ -13973,7 +13973,7 @@ return_closcall1(data,(closure)&c_737501,  r_731067);;
 }
 
 static void __lambda_934(void *data, int argc, object self_732545, object this_91cont_73472) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737503;
 c_737503.hdr.mark = gc_color_red;
@@ -13992,7 +13992,7 @@ return_closcall6(data,  __glo_c_91compile_91args,  &c_737503, ((closureN)self_73
 }
 
 static void __lambda_933(void *data, int argc, object self_732546, object r_731068) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737505;
 c_737505.hdr.mark = gc_color_red;
@@ -14009,7 +14009,7 @@ return_closcall1(data,(closure)&c_737505,  r_731068);;
 }
 
 static void __lambda_932(void *data, int argc, object self_732547, object cgen_73473) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737507;
 c_737507.hdr.mark = gc_color_red;
@@ -14027,7 +14027,7 @@ return_closcall2(data,  __glo_c_117num_91args,  &c_737507, cgen_73473);;
 }
 
 static void __lambda_931(void *data, int argc, object self_732548, object r_731069) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737509;
 c_737509.hdr.mark = gc_color_red;
@@ -14045,7 +14045,7 @@ return_closcall1(data,(closure)&c_737509,  r_731069);;
 }
 
 static void __lambda_930(void *data, int argc, object self_732549, object num_91cargs_73474) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737511;
 c_737511.hdr.mark = gc_color_red;
@@ -14064,7 +14064,7 @@ return_closcall0(data,(closure)&c_737511);;
 }
 
 static void __lambda_929(void *data, int argc, object self_732550) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737513;
 c_737513.hdr.mark = gc_color_red;
@@ -14083,7 +14083,7 @@ return_closcall2(data,  __glo_set_91c_91call_91arity_67,  &c_737513, ((closureN)
 }
 
 static void __lambda_928(void *data, int argc, object self_732551, object r_731070) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737515;
 c_737515.hdr.mark = gc_color_red;
@@ -14102,7 +14102,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_737515, ((closureN)self_732551)->
 }
 
 static void __lambda_927(void *data, int argc, object self_732552, object r_731078) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737517;
 c_737517.hdr.mark = gc_color_red;
@@ -14121,7 +14121,7 @@ return_closcall2(data,  __glo_c_117allocs_91_125str,  &c_737517, r_731078);;
 }
 
 static void __lambda_926(void *data, int argc, object self_732553, object r_731072) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737519;
 c_737519.hdr.mark = gc_color_red;
@@ -14143,7 +14143,7 @@ return_closcall1(data,(closure)&c_737519,  c_737554);;
 }
 
 static void __lambda_925(void *data, int argc, object self_732554, object r_731073) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737521;
 c_737521.hdr.mark = gc_color_red;
@@ -14174,7 +14174,7 @@ return_closcall1(data,(closure)&c_737521,  &c_737534);;
 }
 
 static void __lambda_924(void *data, int argc, object self_732555, object r_731074) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737536;
 c_737536.hdr.mark = gc_color_red;
@@ -14194,7 +14194,7 @@ return_closcall2(data,  __glo_c_117body,  &c_737536, ((closureN)self_732555)->el
 }
 
 static void __lambda_923(void *data, int argc, object self_732556, object r_731075) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737538;
 c_737538.hdr.mark = gc_color_red;
@@ -14218,12 +14218,12 @@ return_closcall1(data,(closure)&c_737538,  c_737543);;
 }
 
 static void __lambda_922(void *data, int argc, object self_732557, object r_731071) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732557)->elts[0], r_731071);; 
 }
 
 static void __lambda_921(void *data, int argc, object self_732558, object k_731076) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 
 closureN_type c_737523;
 c_737523.hdr.mark = gc_color_red;
@@ -14241,7 +14241,7 @@ return_closcall1(data,(closure)&c_737523,  __num_gt(data, ((closureN)self_732558
 }
 
 static void __lambda_920(void *data, int argc, object self_732559, object r_731077) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-app");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-app");
 if( !eq(boolean_f, r_731077) ){ 
   
 make_string(c_737526, ",");
@@ -14254,7 +14254,7 @@ return_closcall1(data,  ((closureN)self_732559)->elts[0],  &c_737529);}
 }
 
 static void __lambda_919(void *data, int argc, closure _,object k_731179, object args_73479, object append_91preamble_73478, object prefix_73477, object cont_73476, object trace_73475) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737373;
 c_737373.hdr.mark = gc_color_red;
@@ -14275,7 +14275,7 @@ return_closcall2(data,(closure)&c_737373,  boolean_f, boolean_f);;
 }
 
 static void __lambda_918(void *data, int argc, object self_732560, object num_91args_73481, object _191c_91compile_91args_73480) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737375;
 c_737375.hdr.mark = gc_color_red;
@@ -14299,7 +14299,7 @@ return_closcall1(data,(closure)&c_737375,  &c_737466);;
 }
 
 static void __lambda_917(void *data, int argc, object self_732561, object num_91args_73481) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737377;
 c_737377.hdr.mark = gc_color_red;
@@ -14323,7 +14323,7 @@ return_closcall1(data,(closure)&c_737377,  &c_737462);;
 }
 
 static void __lambda_916(void *data, int argc, object self_732562, object _191c_91compile_91args_73480) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737379;
 c_737379.hdr.mark = gc_color_red;
@@ -14346,7 +14346,7 @@ return_closcall0(data,(closure)&c_737379);;
 }
 
 static void __lambda_915(void *data, int argc, object self_732563) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737381;
 c_737381.hdr.mark = gc_color_red;
@@ -14371,7 +14371,7 @@ return_closcall1(data,(closure)&c_737381,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_914(void *data, int argc, object self_732564, object r_731180) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737383;
 c_737383.hdr.mark = gc_color_red;
@@ -14406,7 +14406,7 @@ return_closcall1(data,(closure)&c_737383,  &c_737403);;
 }
 
 static void __lambda_913(void *data, int argc, object self_732565, object k_731184, object args_73485, object append_91preamble_73484, object prefix_73483, object cont_73482) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737405;
 c_737405.hdr.mark = gc_color_red;
@@ -14429,7 +14429,7 @@ return_closcall1(data,(closure)&c_737405,  Cyc_is_cons(args_73485));;
 }
 
 static void __lambda_912(void *data, int argc, object self_732566, object r_731192) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737407;
 c_737407.hdr.mark = gc_color_red;
@@ -14452,7 +14452,7 @@ return_closcall2(data,  __glo_not,  &c_737407, r_731192);;
 }
 
 static void __lambda_911(void *data, int argc, object self_732567, object r_731185) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 if( !eq(boolean_f, r_731185) ){ 
   
 make_string(c_737410, "");
@@ -14481,7 +14481,7 @@ return_closcall0(data,(closure)&c_737412);}
 }
 
 static void __lambda_910(void *data, int argc, object self_732568) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737414;
 c_737414.hdr.mark = gc_color_red;
@@ -14508,7 +14508,7 @@ return_closcall1(data,(closure)&c_737414,  &c_737449);;
 }
 
 static void __lambda_909(void *data, int argc, object self_732569, object r_731191) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737416;
 c_737416.hdr.mark = gc_color_red;
@@ -14530,7 +14530,7 @@ return_closcall1(data,(closure)&c_737416,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_908(void *data, int argc, object self_732570, object r_731186) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737418;
 c_737418.hdr.mark = gc_color_red;
@@ -14552,7 +14552,7 @@ return_closcall1(data,(closure)&c_737418,  car(((closureN)self_732570)->elts[2])
 }
 
 static void __lambda_907(void *data, int argc, object self_732571, object r_731190) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737420;
 c_737420.hdr.mark = gc_color_red;
@@ -14573,7 +14573,7 @@ return_closcall5(data,  __glo_c_91compile_91exp,  &c_737420, r_731190, ((closure
 }
 
 static void __lambda_906(void *data, int argc, object self_732572, object r_731187) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737422;
 c_737422.hdr.mark = gc_color_red;
@@ -14594,7 +14594,7 @@ return_closcall1(data,(closure)&c_737422,  cdr(((closureN)self_732572)->elts[2])
 }
 
 static void __lambda_905(void *data, int argc, object self_732573, object r_731189) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737427;
 c_737427.hdr.mark = gc_color_red;
@@ -14614,12 +14614,12 @@ return_closcall5(data,  cell_get(((closureN)self_732573)->elts[0]),  &c_737427, 
 }
 
 static void __lambda_904(void *data, int argc, object self_732574, object r_731188) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 return_closcall4(data,  __glo_c_117append_95prefix,  ((closureN)self_732574)->elts[0], ((closureN)self_732574)->elts[1], ((closureN)self_732574)->elts[2], r_731188);; 
 }
 
 static void __lambda_903(void *data, int argc, object self_732575, object r_731183) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737385;
 c_737385.hdr.mark = gc_color_red;
@@ -14641,7 +14641,7 @@ return_closcall1(data,(closure)&c_737385,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_902(void *data, int argc, object self_732576, object r_731181) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 
 closureN_type c_737390;
 c_737390.hdr.mark = gc_color_red;
@@ -14658,12 +14658,12 @@ return_closcall5(data,  cell_get(((closureN)self_732576)->elts[0]),  &c_737390, 
 }
 
 static void __lambda_901(void *data, int argc, object self_732577, object r_731182) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-args");
 return_closcall3(data,  __glo_c_117tuple_95args,  ((closureN)self_732577)->elts[0], r_731182, cell_get(((closureN)self_732577)->elts[1]));; 
 }
 
 static void __lambda_900(void *data, int argc, closure _,object k_731195, object exp_73486) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-ref");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-ref");
 
 closureN_type c_737356;
 c_737356.hdr.mark = gc_color_red;
@@ -14690,12 +14690,12 @@ return_closcall1(data,(closure)&c_737356,  &c_737368);;
 }
 
 static void __lambda_899(void *data, int argc, object self_732578, object r_731196) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-ref");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-ref");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732578)->elts[0], r_731196);; 
 }
 
 static void __lambda_898(void *data, int argc, object self_732579, object k_731197) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-ref");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-ref");
 
 closureN_type c_737358;
 c_737358.hdr.mark = gc_color_red;
@@ -14712,7 +14712,7 @@ return_closcall1(data,(closure)&c_737358,  memberp(data, ((closureN)self_732579)
 }
 
 static void __lambda_897(void *data, int argc, object self_732580, object r_731198) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-ref");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-ref");
 if( !eq(boolean_f, r_731198) ){ 
   return_closcall2(data,  __glo_mangle_91global,  ((closureN)self_732580)->elts[1], ((closureN)self_732580)->elts[0]);
 } else { 
@@ -14721,7 +14721,7 @@ if( !eq(boolean_f, r_731198) ){
 }
 
 static void __lambda_896(void *data, int argc, closure _,object k_731201, object p_73488, object cont_73487) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737084;
 c_737084.hdr.mark = gc_color_red;
@@ -14739,7 +14739,7 @@ return_closcall2(data,  __glo_prim_91_125c_91func,  &c_737084, p_73488);;
 }
 
 static void __lambda_895(void *data, int argc, object self_732581, object r_731202) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737086;
 c_737086.hdr.mark = gc_color_red;
@@ -14757,7 +14757,7 @@ return_closcall1(data,(closure)&c_737086,  r_731202);;
 }
 
 static void __lambda_894(void *data, int argc, object self_732582, object c_91func_73489) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737088;
 c_737088.hdr.mark = gc_color_red;
@@ -14776,7 +14776,7 @@ return_closcall1(data,(closure)&c_737088,  quote_c);;
 }
 
 static void __lambda_893(void *data, int argc, object self_732583, object r_731248) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737090;
 c_737090.hdr.mark = gc_color_red;
@@ -14795,7 +14795,7 @@ return_closcall2(data,  __glo_gensym,  &c_737090, r_731248);;
 }
 
 static void __lambda_892(void *data, int argc, object self_732584, object r_731247) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737092;
 c_737092.hdr.mark = gc_color_red;
@@ -14814,7 +14814,7 @@ return_closcall2(data,  __glo_mangle,  &c_737092, r_731247);;
 }
 
 static void __lambda_891(void *data, int argc, object self_732585, object r_731203) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737094;
 c_737094.hdr.mark = gc_color_red;
@@ -14833,7 +14833,7 @@ return_closcall1(data,(closure)&c_737094,  r_731203);;
 }
 
 static void __lambda_890(void *data, int argc, object self_732586, object closure_91sym_73490) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737096;
 c_737096.hdr.mark = gc_color_red;
@@ -14866,7 +14866,7 @@ return_closcall1(data,(closure)&c_737096,  &c_737147);;
 }
 
 static void __lambda_889(void *data, int argc, object self_732587, object r_731204) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737149;
 c_737149.hdr.mark = gc_color_red;
@@ -14886,7 +14886,7 @@ return_closcall1(data,(closure)&c_737149,  r_731204);;
 }
 
 static void __lambda_888(void *data, int argc, object self_732588, object closure_91def_73491) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737151;
 c_737151.hdr.mark = gc_color_red;
@@ -14918,7 +14918,7 @@ return_closcall1(data,(closure)&c_737151,  &c_737165);;
 }
 
 static void __lambda_887(void *data, int argc, object self_732589, object r_731205) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737167;
 c_737167.hdr.mark = gc_color_red;
@@ -14939,7 +14939,7 @@ return_closcall1(data,(closure)&c_737167,  r_731205);;
 }
 
 static void __lambda_886(void *data, int argc, object self_732590, object tdata_73492) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737169;
 c_737169.hdr.mark = gc_color_red;
@@ -14972,7 +14972,7 @@ return_closcall1(data,(closure)&c_737169,  &c_737187);;
 }
 
 static void __lambda_885(void *data, int argc, object self_732591, object r_731206) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737189;
 c_737189.hdr.mark = gc_color_red;
@@ -14994,7 +14994,7 @@ return_closcall1(data,(closure)&c_737189,  r_731206);;
 }
 
 static void __lambda_884(void *data, int argc, object self_732592, object tdata_91comma_73493) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737191;
 c_737191.hdr.mark = gc_color_red;
@@ -15030,7 +15030,7 @@ return_closcall1(data,(closure)&c_737191,  &c_737263);;
 }
 
 static void __lambda_883(void *data, int argc, object self_732593, object k_731220, object type_73494) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737265;
 c_737265.hdr.mark = gc_color_red;
@@ -15053,7 +15053,7 @@ return_closcall1(data,(closure)&c_737265,  quote_c);;
 }
 
 static void __lambda_882(void *data, int argc, object self_732594, object r_731234) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737267;
 c_737267.hdr.mark = gc_color_red;
@@ -15076,7 +15076,7 @@ return_closcall2(data,  __glo_gensym,  &c_737267, r_731234);;
 }
 
 static void __lambda_881(void *data, int argc, object self_732595, object r_731233) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737269;
 c_737269.hdr.mark = gc_color_red;
@@ -15099,7 +15099,7 @@ return_closcall2(data,  __glo_mangle,  &c_737269, r_731233);;
 }
 
 static void __lambda_880(void *data, int argc, object self_732596, object r_731221) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737271;
 c_737271.hdr.mark = gc_color_red;
@@ -15122,7 +15122,7 @@ return_closcall1(data,(closure)&c_737271,  r_731221);;
 }
 
 static void __lambda_879(void *data, int argc, object self_732597, object cv_91name_73495) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737273;
 c_737273.hdr.mark = gc_color_red;
@@ -15157,7 +15157,7 @@ return_closcall1(data,(closure)&c_737273,  &c_737283);;
 }
 
 static void __lambda_878(void *data, int argc, object self_732598, object r_731230) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737285;
 c_737285.hdr.mark = gc_color_red;
@@ -15183,7 +15183,7 @@ return_closcall1(data,(closure)&c_737285,  c_737352);;
 }
 
 static void __lambda_877(void *data, int argc, object self_732599, object r_731222) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737287;
 c_737287.hdr.mark = gc_color_red;
@@ -15219,7 +15219,7 @@ return_closcall1(data,(closure)&c_737287,  &c_737299);;
 }
 
 static void __lambda_876(void *data, int argc, object self_732600, object r_731225) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737301;
 c_737301.hdr.mark = gc_color_red;
@@ -15255,7 +15255,7 @@ return_closcall1(data,(closure)&c_737301,  &c_737332);;
 }
 
 static void __lambda_875(void *data, int argc, object self_732601, object r_731226) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737334;
 c_737334.hdr.mark = gc_color_red;
@@ -15280,7 +15280,7 @@ return_closcall1(data,(closure)&c_737334,  c_737342);;
 }
 
 static void __lambda_874(void *data, int argc, object self_732602, object r_731224) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737336;
 c_737336.hdr.mark = gc_color_red;
@@ -15297,12 +15297,12 @@ return_closcall2(data,  __glo__list,  &c_737336, r_731224);;
 }
 
 static void __lambda_873(void *data, int argc, object self_732603, object r_731223) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_732603)->elts[0], ((closureN)self_732603)->elts[1], r_731223);; 
 }
 
 static void __lambda_872(void *data, int argc, object self_732604, object k_731227) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, ((closureN)self_732604)->elts[0]) ){ 
   
 closureN_type c_737304;
@@ -15337,7 +15337,7 @@ return_closcall2(data,  __glo_prim_117cont_127,  &c_737315, ((closureN)self_7326
 }
 
 static void __lambda_871(void *data, int argc, object self_732605, object r_731228) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731228) ){ 
   
 closureN_type c_737317;
@@ -15371,12 +15371,12 @@ return_closcall0(data,(closure)&c_737327);}
 }
 
 static void __lambda_870(void *data, int argc, object self_732606) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall1(data,  ((closureN)self_732606)->elts[0],  ((closureN)self_732606)->elts[1]);; 
 }
 
 static void __lambda_869(void *data, int argc, object self_732607) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737324, ",");
 
@@ -15385,7 +15385,7 @@ return_closcall1(data,  ((closureN)self_732607)->elts[1],  c_737322);;
 }
 
 static void __lambda_868(void *data, int argc, object self_732608) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737311, ",");
 
@@ -15396,7 +15396,7 @@ return_closcall1(data,  ((closureN)self_732608)->elts[1],  c_737309);;
 }
 
 static void __lambda_867(void *data, int argc, object self_732609, object k_731229) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, ((closureN)self_732609)->elts[0]) ){ 
   
 closureN_type c_737290;
@@ -15428,19 +15428,19 @@ return_closcall0(data,(closure)&c_737295);}
 }
 
 static void __lambda_866(void *data, int argc, object self_732610) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737298, "");
 return_closcall1(data,  ((closureN)self_732610)->elts[0],  &c_737298);; 
 }
 
 static void __lambda_865(void *data, int argc, object self_732611) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall1(data,  ((closureN)self_732611)->elts[1],  ((closureN)self_732611)->elts[0]);; 
 }
 
 static void __lambda_864(void *data, int argc, object self_732612, object k_731231) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737275;
 c_737275.hdr.mark = gc_color_red;
@@ -15456,7 +15456,7 @@ return_closcall2(data,  __glo_prim_117cont_127,  &c_737275, ((closureN)self_7326
 }
 
 static void __lambda_863(void *data, int argc, object self_732613, object r_731232) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731232) ){ 
   
 make_string(c_737278, "");
@@ -15469,7 +15469,7 @@ return_closcall1(data,  ((closureN)self_732613)->elts[0],  &c_737281);}
 }
 
 static void __lambda_862(void *data, int argc, object self_732614, object r_731207) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737193;
 c_737193.hdr.mark = gc_color_red;
@@ -15489,7 +15489,7 @@ return_closcall1(data,(closure)&c_737193,  r_731207);;
 }
 
 static void __lambda_861(void *data, int argc, object self_732615, object c_91var_91assign_73496) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737195;
 c_737195.hdr.mark = gc_color_red;
@@ -15510,7 +15510,7 @@ return_closcall0(data,(closure)&c_737195);;
 }
 
 static void __lambda_860(void *data, int argc, object self_732616) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737197;
 c_737197.hdr.mark = gc_color_red;
@@ -15531,7 +15531,7 @@ return_closcall2(data,  __glo_prim_95c_91var_91assign,  &c_737197, ((closureN)se
 }
 
 static void __lambda_859(void *data, int argc, object self_732617, object r_731208) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731208) ){ 
   
 closureN_type c_737199;
@@ -15568,7 +15568,7 @@ return_closcall2(data,  __glo_prim_95cvar_127,  &c_737207, ((closureN)self_73261
 }
 
 static void __lambda_858(void *data, int argc, object self_732618, object r_731210) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731210) ){ 
   
 closureN_type c_737209;
@@ -15605,7 +15605,7 @@ return_closcall0(data,(closure)&c_737250);}
 }
 
 static void __lambda_857(void *data, int argc, object self_732619) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737252;
 c_737252.hdr.mark = gc_color_red;
@@ -15625,12 +15625,12 @@ return_closcall1(data,(closure)&c_737252,  c_737257);;
 }
 
 static void __lambda_856(void *data, int argc, object self_732620, object r_731219) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_732620)->elts[0], r_731219);; 
 }
 
 static void __lambda_855(void *data, int argc, object self_732621) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737211;
 c_737211.hdr.mark = gc_color_red;
@@ -15650,7 +15650,7 @@ return_closcall1(data,(closure)&c_737211,  quote_c);;
 }
 
 static void __lambda_854(void *data, int argc, object self_732622, object r_731218) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737213;
 c_737213.hdr.mark = gc_color_red;
@@ -15670,7 +15670,7 @@ return_closcall2(data,  __glo_gensym,  &c_737213, r_731218);;
 }
 
 static void __lambda_853(void *data, int argc, object self_732623, object r_731217) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737215;
 c_737215.hdr.mark = gc_color_red;
@@ -15690,7 +15690,7 @@ return_closcall2(data,  __glo_mangle,  &c_737215, r_731217);;
 }
 
 static void __lambda_852(void *data, int argc, object self_732624, object r_731211) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737217;
 c_737217.hdr.mark = gc_color_red;
@@ -15710,7 +15710,7 @@ return_closcall1(data,(closure)&c_737217,  r_731211);;
 }
 
 static void __lambda_851(void *data, int argc, object self_732625, object cv_91name_73497) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737219;
 c_737219.hdr.mark = gc_color_red;
@@ -15742,7 +15742,7 @@ return_closcall1(data,(closure)&c_737219,  &c_737233);;
 }
 
 static void __lambda_850(void *data, int argc, object self_732626, object r_731212) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737235;
 c_737235.hdr.mark = gc_color_red;
@@ -15763,7 +15763,7 @@ return_closcall1(data,(closure)&c_737235,  c_737243);;
 }
 
 static void __lambda_849(void *data, int argc, object self_732627, object r_731214) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737237;
 c_737237.hdr.mark = gc_color_red;
@@ -15780,12 +15780,12 @@ return_closcall2(data,  __glo__list,  &c_737237, r_731214);;
 }
 
 static void __lambda_848(void *data, int argc, object self_732628, object r_731213) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_732628)->elts[0], ((closureN)self_732628)->elts[1], r_731213);; 
 }
 
 static void __lambda_847(void *data, int argc, object self_732629, object k_731215) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737221;
 c_737221.hdr.mark = gc_color_red;
@@ -15802,7 +15802,7 @@ return_closcall2(data,  __glo_prim_117allocates_91object_127,  &c_737221, ((clos
 }
 
 static void __lambda_846(void *data, int argc, object self_732630, object r_731216) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731216) ){ 
   return_closcall1(data,  ((closureN)self_732630)->elts[1],  ((closureN)self_732630)->elts[0]);
 } else { 
@@ -15815,7 +15815,7 @@ return_closcall1(data,  ((closureN)self_732630)->elts[1],  c_737229);}
 }
 
 static void __lambda_845(void *data, int argc, object self_732631) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737201;
 c_737201.hdr.mark = gc_color_red;
@@ -15832,12 +15832,12 @@ return_closcall2(data,  __glo_prim_95c_91var_91assign,  &c_737201, ((closureN)se
 }
 
 static void __lambda_844(void *data, int argc, object self_732632, object r_731209) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall2(data,  ((closureN)self_732632)->elts[0],  ((closureN)self_732632)->elts[1], r_731209);; 
 }
 
 static void __lambda_843(void *data, int argc, object self_732633, object k_731235) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737171;
 c_737171.hdr.mark = gc_color_red;
@@ -15855,7 +15855,7 @@ return_closcall1(data,(closure)&c_737171,  &c_737185);;
 }
 
 static void __lambda_842(void *data, int argc, object self_732634, object r_731237) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737173;
 c_737173.hdr.mark = gc_color_red;
@@ -15873,7 +15873,7 @@ return_closcall1(data,(closure)&c_737173,  __num_gt(data, r_731237, &c_737182));
 }
 
 static void __lambda_841(void *data, int argc, object self_732635, object r_731236) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731236) ){ 
   
 make_string(c_737176, ",");
@@ -15886,7 +15886,7 @@ return_closcall1(data,  ((closureN)self_732635)->elts[0],  &c_737179);}
 }
 
 static void __lambda_840(void *data, int argc, object self_732636, object k_731238) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737153;
 c_737153.hdr.mark = gc_color_red;
@@ -15902,7 +15902,7 @@ return_closcall2(data,  __glo_prim_95data_91arg_127,  &c_737153, ((closureN)self
 }
 
 static void __lambda_839(void *data, int argc, object self_732637, object r_731239) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731239) ){ 
   
 closureN_type c_737155;
@@ -15933,21 +15933,21 @@ return_closcall0(data,(closure)&c_737160);}
 }
 
 static void __lambda_838(void *data, int argc, object self_732638) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737163, "");
 return_closcall1(data,  ((closureN)self_732638)->elts[0],  &c_737163);; 
 }
 
 static void __lambda_837(void *data, int argc, object self_732639) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737158, "data");
 return_closcall1(data,  ((closureN)self_732639)->elts[0],  &c_737158);; 
 }
 
 static void __lambda_836(void *data, int argc, object self_732640, object k_731240) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737098;
 c_737098.hdr.mark = gc_color_red;
@@ -15977,7 +15977,7 @@ return_closcall1(data,(closure)&c_737098,  &c_737130);;
 }
 
 static void __lambda_835(void *data, int argc, object self_732641, object r_731241) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731241) ){ 
   
 closureN_type c_737132;
@@ -16010,12 +16010,12 @@ return_closcall0(data,(closure)&c_737144);}
 }
 
 static void __lambda_834(void *data, int argc, object self_732642) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 return_closcall1(data,  ((closureN)self_732642)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_833(void *data, int argc, object self_732643) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737138, "mclosure0(");
 
@@ -16028,7 +16028,7 @@ return_closcall1(data,  ((closureN)self_732643)->elts[2],  c_737137);;
 }
 
 static void __lambda_832(void *data, int argc, object self_732644, object k_731242) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737100;
 c_737100.hdr.mark = gc_color_red;
@@ -16045,7 +16045,7 @@ return_closcall2(data,  __glo_prim_117cont_127,  &c_737100, ((closureN)self_7326
 }
 
 static void __lambda_831(void *data, int argc, object self_732645, object r_731243) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731243) ){ 
   
 closureN_type c_737102;
@@ -16068,7 +16068,7 @@ return_closcall1(data,(closure)&c_737102,  &c_737125);
 }
 
 static void __lambda_830(void *data, int argc, object self_732646, object r_731246) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 closureN_type c_737104;
 c_737104.hdr.mark = gc_color_red;
@@ -16087,7 +16087,7 @@ return_closcall1(data,(closure)&c_737104,  __num_gt(data, r_731246, &c_737122));
 }
 
 static void __lambda_829(void *data, int argc, object self_732647, object r_731244) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 if( !eq(boolean_f, r_731244) ){ 
   
 closureN_type c_737106;
@@ -16113,14 +16113,14 @@ return_closcall1(data,(closure)&c_737106,  c_737114);
 }
 
 static void __lambda_828(void *data, int argc, object self_732648, object r_731245) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-prim");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-prim");
 
 make_string(c_737111, "__lambda_");
 return_closcall1(data,  ((closureN)self_732648)->elts[0],  equalp(r_731245, &c_737111));; 
 }
 
 static void __lambda_827(void *data, int argc, closure _,object k_731251, object str_73499, object end_73498) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 
 closureN_type c_737050;
 c_737050.hdr.mark = gc_color_red;
@@ -16140,7 +16140,7 @@ return_closcall1(data,(closure)&c_737050,  &c_737081);;
 }
 
 static void __lambda_826(void *data, int argc, object self_732649, object r_731252) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 
 closureN_type c_737052;
 c_737052.hdr.mark = gc_color_red;
@@ -16158,7 +16158,7 @@ return_closcall1(data,(closure)&c_737052,  r_731252);;
 }
 
 static void __lambda_825(void *data, int argc, object self_732650, object len_73500) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 
 closureN_type c_737054;
 c_737054.hdr.mark = gc_color_red;
@@ -16179,7 +16179,7 @@ return_closcall1(data,(closure)&c_737054,  __num_gt(data, len_73500, &c_737078))
 }
 
 static void __lambda_824(void *data, int argc, object self_732651, object r_731253) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 if( !eq(boolean_f, r_731253) ){ 
   
 closureN_type c_737056;
@@ -16206,7 +16206,7 @@ return_closcall1(data,(closure)&c_737056,  &c_737071);
 }
 
 static void __lambda_823(void *data, int argc, object self_732652, object r_731255) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 
 closureN_type c_737058;
 c_737058.hdr.mark = gc_color_red;
@@ -16225,12 +16225,12 @@ return_closcall1(data,(closure)&c_737058,  c_737066);;
 }
 
 static void __lambda_822(void *data, int argc, object self_732653, object r_731254) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:str-ending?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:str-ending?");
 return_closcall1(data,  ((closureN)self_732653)->elts[1],  equalp(((closureN)self_732653)->elts[0], r_731254));; 
 }
 
 static void __lambda_821(void *data, int argc, closure _,object k_731258, object exp_73501) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
 
 closureN_type c_737038;
 c_737038.hdr.mark = gc_color_red;
@@ -16247,7 +16247,7 @@ return_closcall2(data,  __glo_prim_127,  &c_737038, exp_73501);;
 }
 
 static void __lambda_820(void *data, int argc, object self_732654, object r_731259) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
 if( !eq(boolean_f, r_731259) ){ 
   
 closureN_type c_737040;
@@ -16268,12 +16268,12 @@ return_closcall1(data,(closure)&c_737040,  nil);
 }
 
 static void __lambda_819(void *data, int argc, object self_732655, object r_731260) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:allocates-object?");
 return_closcall1(data,  ((closureN)self_732655)->elts[1],  memberp(data, ((closureN)self_732655)->elts[0], r_731260));; 
 }
 
 static void __lambda_818(void *data, int argc, closure _,object k_731263, object exp_73502) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
 
 closureN_type c_737018;
 c_737018.hdr.mark = gc_color_red;
@@ -16290,7 +16290,7 @@ return_closcall2(data,  __glo_prim_127,  &c_737018, exp_73502);;
 }
 
 static void __lambda_817(void *data, int argc, object self_732656, object r_731264) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
 if( !eq(boolean_f, r_731264) ){ 
   
 closureN_type c_737020;
@@ -16327,12 +16327,12 @@ return_closcall1(data,(closure)&c_737020,  &c_737026);
 }
 
 static void __lambda_816(void *data, int argc, object self_732657, object r_731265) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:arg-count?");
 return_closcall1(data,  ((closureN)self_732657)->elts[1],  memberp(data, ((closureN)self_732657)->elts[0], r_731265));; 
 }
 
 static void __lambda_815(void *data, int argc, closure _,object k_731268, object exp_73503) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
 
 closureN_type c_737005;
 c_737005.hdr.mark = gc_color_red;
@@ -16349,7 +16349,7 @@ return_closcall2(data,  __glo_prim_127,  &c_737005, exp_73503);;
 }
 
 static void __lambda_814(void *data, int argc, object self_732658, object r_731269) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
 if( !eq(boolean_f, r_731269) ){ 
   
 closureN_type c_737007;
@@ -16372,12 +16372,12 @@ return_closcall1(data,(closure)&c_737007,  &c_737013);
 }
 
 static void __lambda_813(void *data, int argc, object self_732659, object r_731270) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont/no-args?");
 return_closcall1(data,  ((closureN)self_732659)->elts[1],  memberp(data, ((closureN)self_732659)->elts[0], r_731270));; 
 }
 
 static void __lambda_812(void *data, int argc, closure _,object k_731273, object exp_73504) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont?");
 
 closureN_type c_736982;
 c_736982.hdr.mark = gc_color_red;
@@ -16394,7 +16394,7 @@ return_closcall2(data,  __glo_prim_127,  &c_736982, exp_73504);;
 }
 
 static void __lambda_811(void *data, int argc, object self_732660, object r_731274) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont?");
 if( !eq(boolean_f, r_731274) ){ 
   
 closureN_type c_736984;
@@ -16437,12 +16437,12 @@ return_closcall1(data,(closure)&c_736984,  &c_736990);
 }
 
 static void __lambda_810(void *data, int argc, object self_732661, object r_731275) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim:cont?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim:cont?");
 return_closcall1(data,  ((closureN)self_732661)->elts[1],  memberp(data, ((closureN)self_732661)->elts[0], r_731275));; 
 }
 
 static void __lambda_809(void *data, int argc, closure _,object k_731278, object exp_73505) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/cvar?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/cvar?");
 
 closureN_type c_736941;
 c_736941.hdr.mark = gc_color_red;
@@ -16459,7 +16459,7 @@ return_closcall2(data,  __glo_prim_127,  &c_736941, exp_73505);;
 }
 
 static void __lambda_808(void *data, int argc, object self_732662, object r_731279) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/cvar?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/cvar?");
 if( !eq(boolean_f, r_731279) ){ 
   
 closureN_type c_736943;
@@ -16538,12 +16538,12 @@ return_closcall1(data,(closure)&c_736943,  &c_736949);
 }
 
 static void __lambda_807(void *data, int argc, object self_732663, object r_731280) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/cvar?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/cvar?");
 return_closcall1(data,  ((closureN)self_732663)->elts[1],  memberp(data, ((closureN)self_732663)->elts[0], r_731280));; 
 }
 
 static void __lambda_806(void *data, int argc, closure _,object k_731283, object p_73506) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736612;
 c_736612.hdr.mark = gc_color_red;
@@ -16560,7 +16560,7 @@ return_closcall1(data,(closure)&c_736612,  quote_Cyc_91stdout);;
 }
 
 static void __lambda_805(void *data, int argc, object self_732664, object r_731337) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736614;
 c_736614.hdr.mark = gc_color_red;
@@ -16577,7 +16577,7 @@ return_closcall1(data,(closure)&c_736614,  Cyc_eq(((closureN)self_732664)->elts[
 }
 
 static void __lambda_804(void *data, int argc, object self_732665, object r_731284) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731284) ){ 
   
 closureN_type c_736616;
@@ -16609,7 +16609,7 @@ return_closcall1(data,(closure)&c_736621,  quote_Cyc_91stdin);}
 }
 
 static void __lambda_803(void *data, int argc, object self_732666, object r_731336) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736623;
 c_736623.hdr.mark = gc_color_red;
@@ -16626,7 +16626,7 @@ return_closcall1(data,(closure)&c_736623,  Cyc_eq(((closureN)self_732666)->elts[
 }
 
 static void __lambda_802(void *data, int argc, object self_732667, object r_731285) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731285) ){ 
   
 closureN_type c_736625;
@@ -16658,7 +16658,7 @@ return_closcall1(data,(closure)&c_736630,  quote_Cyc_91stderr);}
 }
 
 static void __lambda_801(void *data, int argc, object self_732668, object r_731335) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736632;
 c_736632.hdr.mark = gc_color_red;
@@ -16675,7 +16675,7 @@ return_closcall1(data,(closure)&c_736632,  Cyc_eq(((closureN)self_732668)->elts[
 }
 
 static void __lambda_800(void *data, int argc, object self_732669, object r_731286) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731286) ){ 
   
 closureN_type c_736634;
@@ -16707,7 +16707,7 @@ return_closcall1(data,(closure)&c_736639,  quote_open_91input_91file);}
 }
 
 static void __lambda_799(void *data, int argc, object self_732670, object r_731334) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736641;
 c_736641.hdr.mark = gc_color_red;
@@ -16724,7 +16724,7 @@ return_closcall1(data,(closure)&c_736641,  Cyc_eq(((closureN)self_732670)->elts[
 }
 
 static void __lambda_798(void *data, int argc, object self_732671, object r_731287) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731287) ){ 
   
 closureN_type c_736643;
@@ -16756,7 +16756,7 @@ return_closcall1(data,(closure)&c_736648,  quote_open_91output_91file);}
 }
 
 static void __lambda_797(void *data, int argc, object self_732672, object r_731333) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736650;
 c_736650.hdr.mark = gc_color_red;
@@ -16773,7 +16773,7 @@ return_closcall1(data,(closure)&c_736650,  Cyc_eq(((closureN)self_732672)->elts[
 }
 
 static void __lambda_796(void *data, int argc, object self_732673, object r_731288) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731288) ){ 
   
 closureN_type c_736652;
@@ -16805,7 +16805,7 @@ return_closcall1(data,(closure)&c_736657,  quote_length);}
 }
 
 static void __lambda_795(void *data, int argc, object self_732674, object r_731332) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736659;
 c_736659.hdr.mark = gc_color_red;
@@ -16822,7 +16822,7 @@ return_closcall1(data,(closure)&c_736659,  Cyc_eq(((closureN)self_732674)->elts[
 }
 
 static void __lambda_794(void *data, int argc, object self_732675, object r_731289) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731289) ){ 
   
 closureN_type c_736661;
@@ -16854,7 +16854,7 @@ return_closcall1(data,(closure)&c_736666,  quote_vector_91length);}
 }
 
 static void __lambda_793(void *data, int argc, object self_732676, object r_731331) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736668;
 c_736668.hdr.mark = gc_color_red;
@@ -16871,7 +16871,7 @@ return_closcall1(data,(closure)&c_736668,  Cyc_eq(((closureN)self_732676)->elts[
 }
 
 static void __lambda_792(void *data, int argc, object self_732677, object r_731290) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731290) ){ 
   
 closureN_type c_736670;
@@ -16903,7 +16903,7 @@ return_closcall1(data,(closure)&c_736675,  quote_char_91_125integer);}
 }
 
 static void __lambda_791(void *data, int argc, object self_732678, object r_731330) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736677;
 c_736677.hdr.mark = gc_color_red;
@@ -16920,7 +16920,7 @@ return_closcall1(data,(closure)&c_736677,  Cyc_eq(((closureN)self_732678)->elts[
 }
 
 static void __lambda_790(void *data, int argc, object self_732679, object r_731291) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731291) ){ 
   
 closureN_type c_736679;
@@ -16952,7 +16952,7 @@ return_closcall1(data,(closure)&c_736684,  quote_system);}
 }
 
 static void __lambda_789(void *data, int argc, object self_732680, object r_731329) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736686;
 c_736686.hdr.mark = gc_color_red;
@@ -16969,7 +16969,7 @@ return_closcall1(data,(closure)&c_736686,  Cyc_eq(((closureN)self_732680)->elts[
 }
 
 static void __lambda_788(void *data, int argc, object self_732681, object r_731292) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731292) ){ 
   
 closureN_type c_736688;
@@ -17001,7 +17001,7 @@ return_closcall1(data,(closure)&c_736693,  quote__87);}
 }
 
 static void __lambda_787(void *data, int argc, object self_732682, object r_731328) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736695;
 c_736695.hdr.mark = gc_color_red;
@@ -17018,7 +17018,7 @@ return_closcall1(data,(closure)&c_736695,  Cyc_eq(((closureN)self_732682)->elts[
 }
 
 static void __lambda_786(void *data, int argc, object self_732683, object r_731293) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731293) ){ 
   
 closureN_type c_736697;
@@ -17050,7 +17050,7 @@ return_closcall1(data,(closure)&c_736702,  quote__91);}
 }
 
 static void __lambda_785(void *data, int argc, object self_732684, object r_731327) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736704;
 c_736704.hdr.mark = gc_color_red;
@@ -17067,7 +17067,7 @@ return_closcall1(data,(closure)&c_736704,  Cyc_eq(((closureN)self_732684)->elts[
 }
 
 static void __lambda_784(void *data, int argc, object self_732685, object r_731294) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731294) ){ 
   
 closureN_type c_736706;
@@ -17099,7 +17099,7 @@ return_closcall1(data,(closure)&c_736711,  quote__85);}
 }
 
 static void __lambda_783(void *data, int argc, object self_732686, object r_731326) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736713;
 c_736713.hdr.mark = gc_color_red;
@@ -17116,7 +17116,7 @@ return_closcall1(data,(closure)&c_736713,  Cyc_eq(((closureN)self_732686)->elts[
 }
 
 static void __lambda_782(void *data, int argc, object self_732687, object r_731295) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731295) ){ 
   
 closureN_type c_736715;
@@ -17148,7 +17148,7 @@ return_closcall1(data,(closure)&c_736720,  quote__95);}
 }
 
 static void __lambda_781(void *data, int argc, object self_732688, object r_731325) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736722;
 c_736722.hdr.mark = gc_color_red;
@@ -17165,7 +17165,7 @@ return_closcall1(data,(closure)&c_736722,  Cyc_eq(((closureN)self_732688)->elts[
 }
 
 static void __lambda_780(void *data, int argc, object self_732689, object r_731296) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731296) ){ 
   
 closureN_type c_736724;
@@ -17197,7 +17197,7 @@ return_closcall1(data,(closure)&c_736729,  quote_string_91_125number);}
 }
 
 static void __lambda_779(void *data, int argc, object self_732690, object r_731324) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736731;
 c_736731.hdr.mark = gc_color_red;
@@ -17214,7 +17214,7 @@ return_closcall1(data,(closure)&c_736731,  Cyc_eq(((closureN)self_732690)->elts[
 }
 
 static void __lambda_778(void *data, int argc, object self_732691, object r_731297) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731297) ){ 
   
 closureN_type c_736733;
@@ -17246,7 +17246,7 @@ return_closcall1(data,(closure)&c_736738,  quote_string_91cmp);}
 }
 
 static void __lambda_777(void *data, int argc, object self_732692, object r_731323) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736740;
 c_736740.hdr.mark = gc_color_red;
@@ -17263,7 +17263,7 @@ return_closcall1(data,(closure)&c_736740,  Cyc_eq(((closureN)self_732692)->elts[
 }
 
 static void __lambda_776(void *data, int argc, object self_732693, object r_731298) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731298) ){ 
   
 closureN_type c_736742;
@@ -17295,7 +17295,7 @@ return_closcall1(data,(closure)&c_736747,  quote_string_91append);}
 }
 
 static void __lambda_775(void *data, int argc, object self_732694, object r_731322) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736749;
 c_736749.hdr.mark = gc_color_red;
@@ -17312,7 +17312,7 @@ return_closcall1(data,(closure)&c_736749,  Cyc_eq(((closureN)self_732694)->elts[
 }
 
 static void __lambda_774(void *data, int argc, object self_732695, object r_731299) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731299) ){ 
   
 closureN_type c_736751;
@@ -17344,7 +17344,7 @@ return_closcall1(data,(closure)&c_736756,  quote_string_91length);}
 }
 
 static void __lambda_773(void *data, int argc, object self_732696, object r_731321) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736758;
 c_736758.hdr.mark = gc_color_red;
@@ -17361,7 +17361,7 @@ return_closcall1(data,(closure)&c_736758,  Cyc_eq(((closureN)self_732696)->elts[
 }
 
 static void __lambda_772(void *data, int argc, object self_732697, object r_731300) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731300) ){ 
   
 closureN_type c_736760;
@@ -17393,7 +17393,7 @@ return_closcall1(data,(closure)&c_736765,  quote_apply);}
 }
 
 static void __lambda_771(void *data, int argc, object self_732698, object r_731320) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736767;
 c_736767.hdr.mark = gc_color_red;
@@ -17410,7 +17410,7 @@ return_closcall1(data,(closure)&c_736767,  Cyc_eq(((closureN)self_732698)->elts[
 }
 
 static void __lambda_770(void *data, int argc, object self_732699, object r_731301) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731301) ){ 
   
 closureN_type c_736769;
@@ -17442,7 +17442,7 @@ return_closcall1(data,(closure)&c_736774,  quote_Cyc_91read_91line);}
 }
 
 static void __lambda_769(void *data, int argc, object self_732700, object r_731319) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736776;
 c_736776.hdr.mark = gc_color_red;
@@ -17459,7 +17459,7 @@ return_closcall1(data,(closure)&c_736776,  Cyc_eq(((closureN)self_732700)->elts[
 }
 
 static void __lambda_768(void *data, int argc, object self_732701, object r_731302) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731302) ){ 
   
 closureN_type c_736778;
@@ -17491,7 +17491,7 @@ return_closcall1(data,(closure)&c_736783,  quote_command_91line_91arguments);}
 }
 
 static void __lambda_767(void *data, int argc, object self_732702, object r_731318) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736785;
 c_736785.hdr.mark = gc_color_red;
@@ -17508,7 +17508,7 @@ return_closcall1(data,(closure)&c_736785,  Cyc_eq(((closureN)self_732702)->elts[
 }
 
 static void __lambda_766(void *data, int argc, object self_732703, object r_731303) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731303) ){ 
   
 closureN_type c_736787;
@@ -17540,7 +17540,7 @@ return_closcall1(data,(closure)&c_736792,  quote_number_91_125string);}
 }
 
 static void __lambda_765(void *data, int argc, object self_732704, object r_731317) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736794;
 c_736794.hdr.mark = gc_color_red;
@@ -17557,7 +17557,7 @@ return_closcall1(data,(closure)&c_736794,  Cyc_eq(((closureN)self_732704)->elts[
 }
 
 static void __lambda_764(void *data, int argc, object self_732705, object r_731304) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731304) ){ 
   
 closureN_type c_736796;
@@ -17589,7 +17589,7 @@ return_closcall1(data,(closure)&c_736801,  quote_symbol_91_125string);}
 }
 
 static void __lambda_763(void *data, int argc, object self_732706, object r_731316) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736803;
 c_736803.hdr.mark = gc_color_red;
@@ -17606,7 +17606,7 @@ return_closcall1(data,(closure)&c_736803,  Cyc_eq(((closureN)self_732706)->elts[
 }
 
 static void __lambda_762(void *data, int argc, object self_732707, object r_731305) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731305) ){ 
   
 closureN_type c_736805;
@@ -17638,7 +17638,7 @@ return_closcall1(data,(closure)&c_736810,  quote_substring);}
 }
 
 static void __lambda_761(void *data, int argc, object self_732708, object r_731315) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736812;
 c_736812.hdr.mark = gc_color_red;
@@ -17655,7 +17655,7 @@ return_closcall1(data,(closure)&c_736812,  Cyc_eq(((closureN)self_732708)->elts[
 }
 
 static void __lambda_760(void *data, int argc, object self_732709, object r_731306) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731306) ){ 
   
 closureN_type c_736814;
@@ -17687,7 +17687,7 @@ return_closcall1(data,(closure)&c_736819,  quote_make_91vector);}
 }
 
 static void __lambda_759(void *data, int argc, object self_732710, object r_731314) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736821;
 c_736821.hdr.mark = gc_color_red;
@@ -17704,7 +17704,7 @@ return_closcall1(data,(closure)&c_736821,  Cyc_eq(((closureN)self_732710)->elts[
 }
 
 static void __lambda_758(void *data, int argc, object self_732711, object r_731307) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731307) ){ 
   
 closureN_type c_736823;
@@ -17736,7 +17736,7 @@ return_closcall1(data,(closure)&c_736828,  quote_list_91_125string);}
 }
 
 static void __lambda_757(void *data, int argc, object self_732712, object r_731313) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736830;
 c_736830.hdr.mark = gc_color_red;
@@ -17753,7 +17753,7 @@ return_closcall1(data,(closure)&c_736830,  Cyc_eq(((closureN)self_732712)->elts[
 }
 
 static void __lambda_756(void *data, int argc, object self_732713, object r_731308) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731308) ){ 
   
 closureN_type c_736832;
@@ -17785,7 +17785,7 @@ return_closcall1(data,(closure)&c_736837,  quote_list_91_125vector);}
 }
 
 static void __lambda_755(void *data, int argc, object self_732714, object r_731312) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736839;
 c_736839.hdr.mark = gc_color_red;
@@ -17802,7 +17802,7 @@ return_closcall1(data,(closure)&c_736839,  Cyc_eq(((closureN)self_732714)->elts[
 }
 
 static void __lambda_754(void *data, int argc, object self_732715, object r_731309) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731309) ){ 
   
 closureN_type c_736841;
@@ -17834,7 +17834,7 @@ return_closcall1(data,(closure)&c_736846,  quote_Cyc_91installation_91dir);}
 }
 
 static void __lambda_753(void *data, int argc, object self_732716, object r_731311) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 closureN_type c_736848;
 c_736848.hdr.mark = gc_color_red;
@@ -17850,7 +17850,7 @@ return_closcall1(data,(closure)&c_736848,  Cyc_eq(((closureN)self_732716)->elts[
 }
 
 static void __lambda_752(void *data, int argc, object self_732717, object r_731310) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 if( !eq(boolean_f, r_731310) ){ 
   
 closureN_type c_736850;
@@ -17881,201 +17881,201 @@ return_closcall0(data,(closure)&c_736855);}
 }
 
 static void __lambda_751(void *data, int argc, object self_732718) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 return_closcall1(data,  ((closureN)self_732718)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_750(void *data, int argc, object self_732719) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736853, "object");
 return_closcall1(data,  ((closureN)self_732719)->elts[0],  &c_736853);; 
 }
 
 static void __lambda_749(void *data, int argc, object self_732720) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736844, "object");
 return_closcall1(data,  ((closureN)self_732720)->elts[0],  &c_736844);; 
 }
 
 static void __lambda_748(void *data, int argc, object self_732721) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736835, "object");
 return_closcall1(data,  ((closureN)self_732721)->elts[0],  &c_736835);; 
 }
 
 static void __lambda_747(void *data, int argc, object self_732722) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736826, "object");
 return_closcall1(data,  ((closureN)self_732722)->elts[0],  &c_736826);; 
 }
 
 static void __lambda_746(void *data, int argc, object self_732723) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736817, "object");
 return_closcall1(data,  ((closureN)self_732723)->elts[0],  &c_736817);; 
 }
 
 static void __lambda_745(void *data, int argc, object self_732724) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736808, "object");
 return_closcall1(data,  ((closureN)self_732724)->elts[0],  &c_736808);; 
 }
 
 static void __lambda_744(void *data, int argc, object self_732725) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736799, "object");
 return_closcall1(data,  ((closureN)self_732725)->elts[0],  &c_736799);; 
 }
 
 static void __lambda_743(void *data, int argc, object self_732726) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736790, "object");
 return_closcall1(data,  ((closureN)self_732726)->elts[0],  &c_736790);; 
 }
 
 static void __lambda_742(void *data, int argc, object self_732727) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736781, "object");
 return_closcall1(data,  ((closureN)self_732727)->elts[0],  &c_736781);; 
 }
 
 static void __lambda_741(void *data, int argc, object self_732728) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736772, "object");
 return_closcall1(data,  ((closureN)self_732728)->elts[0],  &c_736772);; 
 }
 
 static void __lambda_740(void *data, int argc, object self_732729) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736763, "integer_type");
 return_closcall1(data,  ((closureN)self_732729)->elts[0],  &c_736763);; 
 }
 
 static void __lambda_739(void *data, int argc, object self_732730) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736754, "object");
 return_closcall1(data,  ((closureN)self_732730)->elts[0],  &c_736754);; 
 }
 
 static void __lambda_738(void *data, int argc, object self_732731) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736745, "integer_type");
 return_closcall1(data,  ((closureN)self_732731)->elts[0],  &c_736745);; 
 }
 
 static void __lambda_737(void *data, int argc, object self_732732) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736736, "common_type");
 return_closcall1(data,  ((closureN)self_732732)->elts[0],  &c_736736);; 
 }
 
 static void __lambda_736(void *data, int argc, object self_732733) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736727, "common_type");
 return_closcall1(data,  ((closureN)self_732733)->elts[0],  &c_736727);; 
 }
 
 static void __lambda_735(void *data, int argc, object self_732734) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736718, "common_type");
 return_closcall1(data,  ((closureN)self_732734)->elts[0],  &c_736718);; 
 }
 
 static void __lambda_734(void *data, int argc, object self_732735) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736709, "common_type");
 return_closcall1(data,  ((closureN)self_732735)->elts[0],  &c_736709);; 
 }
 
 static void __lambda_733(void *data, int argc, object self_732736) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736700, "common_type");
 return_closcall1(data,  ((closureN)self_732736)->elts[0],  &c_736700);; 
 }
 
 static void __lambda_732(void *data, int argc, object self_732737) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736691, "integer_type");
 return_closcall1(data,  ((closureN)self_732737)->elts[0],  &c_736691);; 
 }
 
 static void __lambda_731(void *data, int argc, object self_732738) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736682, "integer_type");
 return_closcall1(data,  ((closureN)self_732738)->elts[0],  &c_736682);; 
 }
 
 static void __lambda_730(void *data, int argc, object self_732739) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736673, "integer_type");
 return_closcall1(data,  ((closureN)self_732739)->elts[0],  &c_736673);; 
 }
 
 static void __lambda_729(void *data, int argc, object self_732740) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736664, "integer_type");
 return_closcall1(data,  ((closureN)self_732740)->elts[0],  &c_736664);; 
 }
 
 static void __lambda_728(void *data, int argc, object self_732741) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736655, "port_type");
 return_closcall1(data,  ((closureN)self_732741)->elts[0],  &c_736655);; 
 }
 
 static void __lambda_727(void *data, int argc, object self_732742) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736646, "port_type");
 return_closcall1(data,  ((closureN)self_732742)->elts[0],  &c_736646);; 
 }
 
 static void __lambda_726(void *data, int argc, object self_732743) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736637, "port_type");
 return_closcall1(data,  ((closureN)self_732743)->elts[0],  &c_736637);; 
 }
 
 static void __lambda_725(void *data, int argc, object self_732744) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736628, "port_type");
 return_closcall1(data,  ((closureN)self_732744)->elts[0],  &c_736628);; 
 }
 
 static void __lambda_724(void *data, int argc, object self_732745) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/c-var-assign");
 
 make_string(c_736619, "port_type");
 return_closcall1(data,  ((closureN)self_732745)->elts[0],  &c_736619);; 
 }
 
 static void __lambda_723(void *data, int argc, closure _,object k_731340, object p_73507) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/data-arg?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/data-arg?");
 
 closureN_type c_736551;
 c_736551.hdr.mark = gc_color_red;
@@ -18198,12 +18198,12 @@ return_closcall1(data,(closure)&c_736551,  &c_736557);;
 }
 
 static void __lambda_722(void *data, int argc, object self_732746, object r_731341) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim/data-arg?");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim/data-arg?");
 return_closcall1(data,  ((closureN)self_732746)->elts[0],  memberp(data, ((closureN)self_732746)->elts[1], r_731341));; 
 }
 
 static void __lambda_721(void *data, int argc, closure _,object k_731344, object p_73508) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735128;
 c_735128.hdr.mark = gc_color_red;
@@ -18220,7 +18220,7 @@ return_closcall1(data,(closure)&c_735128,  quote_Cyc_91global_91vars);;
 }
 
 static void __lambda_720(void *data, int argc, object self_732747, object r_731580) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735130;
 c_735130.hdr.mark = gc_color_red;
@@ -18237,7 +18237,7 @@ return_closcall1(data,(closure)&c_735130,  Cyc_eq(((closureN)self_732747)->elts[
 }
 
 static void __lambda_719(void *data, int argc, object self_732748, object r_731345) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731345) ){ 
   
 closureN_type c_735132;
@@ -18269,7 +18269,7 @@ return_closcall1(data,(closure)&c_735137,  quote_Cyc_91get_91cvar);}
 }
 
 static void __lambda_718(void *data, int argc, object self_732749, object r_731579) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735139;
 c_735139.hdr.mark = gc_color_red;
@@ -18286,7 +18286,7 @@ return_closcall1(data,(closure)&c_735139,  Cyc_eq(((closureN)self_732749)->elts[
 }
 
 static void __lambda_717(void *data, int argc, object self_732750, object r_731346) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731346) ){ 
   
 closureN_type c_735141;
@@ -18318,7 +18318,7 @@ return_closcall1(data,(closure)&c_735146,  quote_Cyc_91set_91cvar_67);}
 }
 
 static void __lambda_716(void *data, int argc, object self_732751, object r_731578) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735148;
 c_735148.hdr.mark = gc_color_red;
@@ -18335,7 +18335,7 @@ return_closcall1(data,(closure)&c_735148,  Cyc_eq(((closureN)self_732751)->elts[
 }
 
 static void __lambda_715(void *data, int argc, object self_732752, object r_731347) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731347) ){ 
   
 closureN_type c_735150;
@@ -18367,7 +18367,7 @@ return_closcall1(data,(closure)&c_735155,  quote_Cyc_91cvar_127);}
 }
 
 static void __lambda_714(void *data, int argc, object self_732753, object r_731577) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735157;
 c_735157.hdr.mark = gc_color_red;
@@ -18384,7 +18384,7 @@ return_closcall1(data,(closure)&c_735157,  Cyc_eq(((closureN)self_732753)->elts[
 }
 
 static void __lambda_713(void *data, int argc, object self_732754, object r_731348) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731348) ){ 
   
 closureN_type c_735159;
@@ -18416,7 +18416,7 @@ return_closcall1(data,(closure)&c_735164,  quote_Cyc_91has_91cycle_127);}
 }
 
 static void __lambda_712(void *data, int argc, object self_732755, object r_731576) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735166;
 c_735166.hdr.mark = gc_color_red;
@@ -18433,7 +18433,7 @@ return_closcall1(data,(closure)&c_735166,  Cyc_eq(((closureN)self_732755)->elts[
 }
 
 static void __lambda_711(void *data, int argc, object self_732756, object r_731349) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731349) ){ 
   
 closureN_type c_735168;
@@ -18465,7 +18465,7 @@ return_closcall1(data,(closure)&c_735173,  quote_Cyc_91stdout);}
 }
 
 static void __lambda_710(void *data, int argc, object self_732757, object r_731575) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735175;
 c_735175.hdr.mark = gc_color_red;
@@ -18482,7 +18482,7 @@ return_closcall1(data,(closure)&c_735175,  Cyc_eq(((closureN)self_732757)->elts[
 }
 
 static void __lambda_709(void *data, int argc, object self_732758, object r_731350) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731350) ){ 
   
 closureN_type c_735177;
@@ -18514,7 +18514,7 @@ return_closcall1(data,(closure)&c_735182,  quote_Cyc_91stdin);}
 }
 
 static void __lambda_708(void *data, int argc, object self_732759, object r_731574) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735184;
 c_735184.hdr.mark = gc_color_red;
@@ -18531,7 +18531,7 @@ return_closcall1(data,(closure)&c_735184,  Cyc_eq(((closureN)self_732759)->elts[
 }
 
 static void __lambda_707(void *data, int argc, object self_732760, object r_731351) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731351) ){ 
   
 closureN_type c_735186;
@@ -18563,7 +18563,7 @@ return_closcall1(data,(closure)&c_735191,  quote_Cyc_91stderr);}
 }
 
 static void __lambda_706(void *data, int argc, object self_732761, object r_731573) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735193;
 c_735193.hdr.mark = gc_color_red;
@@ -18580,7 +18580,7 @@ return_closcall1(data,(closure)&c_735193,  Cyc_eq(((closureN)self_732761)->elts[
 }
 
 static void __lambda_705(void *data, int argc, object self_732762, object r_731352) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731352) ){ 
   
 closureN_type c_735195;
@@ -18612,7 +18612,7 @@ return_closcall1(data,(closure)&c_735200,  quote__87);}
 }
 
 static void __lambda_704(void *data, int argc, object self_732763, object r_731572) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735202;
 c_735202.hdr.mark = gc_color_red;
@@ -18629,7 +18629,7 @@ return_closcall1(data,(closure)&c_735202,  Cyc_eq(((closureN)self_732763)->elts[
 }
 
 static void __lambda_703(void *data, int argc, object self_732764, object r_731353) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731353) ){ 
   
 closureN_type c_735204;
@@ -18661,7 +18661,7 @@ return_closcall1(data,(closure)&c_735209,  quote__91);}
 }
 
 static void __lambda_702(void *data, int argc, object self_732765, object r_731571) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735211;
 c_735211.hdr.mark = gc_color_red;
@@ -18678,7 +18678,7 @@ return_closcall1(data,(closure)&c_735211,  Cyc_eq(((closureN)self_732765)->elts[
 }
 
 static void __lambda_701(void *data, int argc, object self_732766, object r_731354) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731354) ){ 
   
 closureN_type c_735213;
@@ -18710,7 +18710,7 @@ return_closcall1(data,(closure)&c_735218,  quote__85);}
 }
 
 static void __lambda_700(void *data, int argc, object self_732767, object r_731570) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735220;
 c_735220.hdr.mark = gc_color_red;
@@ -18727,7 +18727,7 @@ return_closcall1(data,(closure)&c_735220,  Cyc_eq(((closureN)self_732767)->elts[
 }
 
 static void __lambda_699(void *data, int argc, object self_732768, object r_731355) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731355) ){ 
   
 closureN_type c_735222;
@@ -18759,7 +18759,7 @@ return_closcall1(data,(closure)&c_735227,  quote__95);}
 }
 
 static void __lambda_698(void *data, int argc, object self_732769, object r_731569) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735229;
 c_735229.hdr.mark = gc_color_red;
@@ -18776,7 +18776,7 @@ return_closcall1(data,(closure)&c_735229,  Cyc_eq(((closureN)self_732769)->elts[
 }
 
 static void __lambda_697(void *data, int argc, object self_732770, object r_731356) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731356) ){ 
   
 closureN_type c_735231;
@@ -18808,7 +18808,7 @@ return_closcall1(data,(closure)&c_735236,  quote__123);}
 }
 
 static void __lambda_696(void *data, int argc, object self_732771, object r_731568) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735238;
 c_735238.hdr.mark = gc_color_red;
@@ -18825,7 +18825,7 @@ return_closcall1(data,(closure)&c_735238,  Cyc_eq(((closureN)self_732771)->elts[
 }
 
 static void __lambda_695(void *data, int argc, object self_732772, object r_731357) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731357) ){ 
   
 closureN_type c_735240;
@@ -18857,7 +18857,7 @@ return_closcall1(data,(closure)&c_735245,  quote__125);}
 }
 
 static void __lambda_694(void *data, int argc, object self_732773, object r_731567) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735247;
 c_735247.hdr.mark = gc_color_red;
@@ -18874,7 +18874,7 @@ return_closcall1(data,(closure)&c_735247,  Cyc_eq(((closureN)self_732773)->elts[
 }
 
 static void __lambda_693(void *data, int argc, object self_732774, object r_731358) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731358) ){ 
   
 closureN_type c_735249;
@@ -18906,7 +18906,7 @@ return_closcall1(data,(closure)&c_735254,  quote__121);}
 }
 
 static void __lambda_692(void *data, int argc, object self_732775, object r_731566) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735256;
 c_735256.hdr.mark = gc_color_red;
@@ -18923,7 +18923,7 @@ return_closcall1(data,(closure)&c_735256,  Cyc_eq(((closureN)self_732775)->elts[
 }
 
 static void __lambda_691(void *data, int argc, object self_732776, object r_731359) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731359) ){ 
   
 closureN_type c_735258;
@@ -18955,7 +18955,7 @@ return_closcall1(data,(closure)&c_735263,  quote__125_123);}
 }
 
 static void __lambda_690(void *data, int argc, object self_732777, object r_731565) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735265;
 c_735265.hdr.mark = gc_color_red;
@@ -18972,7 +18972,7 @@ return_closcall1(data,(closure)&c_735265,  Cyc_eq(((closureN)self_732777)->elts[
 }
 
 static void __lambda_689(void *data, int argc, object self_732778, object r_731360) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731360) ){ 
   
 closureN_type c_735267;
@@ -19004,7 +19004,7 @@ return_closcall1(data,(closure)&c_735272,  quote__121_123);}
 }
 
 static void __lambda_688(void *data, int argc, object self_732779, object r_731564) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735274;
 c_735274.hdr.mark = gc_color_red;
@@ -19021,7 +19021,7 @@ return_closcall1(data,(closure)&c_735274,  Cyc_eq(((closureN)self_732779)->elts[
 }
 
 static void __lambda_687(void *data, int argc, object self_732780, object r_731361) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731361) ){ 
   
 closureN_type c_735276;
@@ -19053,7 +19053,7 @@ return_closcall1(data,(closure)&c_735281,  quote_apply);}
 }
 
 static void __lambda_686(void *data, int argc, object self_732781, object r_731563) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735283;
 c_735283.hdr.mark = gc_color_red;
@@ -19070,7 +19070,7 @@ return_closcall1(data,(closure)&c_735283,  Cyc_eq(((closureN)self_732781)->elts[
 }
 
 static void __lambda_685(void *data, int argc, object self_732782, object r_731362) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731362) ){ 
   
 closureN_type c_735285;
@@ -19102,7 +19102,7 @@ return_closcall1(data,(closure)&c_735290,  quote__75halt);}
 }
 
 static void __lambda_684(void *data, int argc, object self_732783, object r_731562) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735292;
 c_735292.hdr.mark = gc_color_red;
@@ -19119,7 +19119,7 @@ return_closcall1(data,(closure)&c_735292,  Cyc_eq(((closureN)self_732783)->elts[
 }
 
 static void __lambda_683(void *data, int argc, object self_732784, object r_731363) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731363) ){ 
   
 closureN_type c_735294;
@@ -19151,7 +19151,7 @@ return_closcall1(data,(closure)&c_735299,  quote_exit);}
 }
 
 static void __lambda_682(void *data, int argc, object self_732785, object r_731561) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735301;
 c_735301.hdr.mark = gc_color_red;
@@ -19168,7 +19168,7 @@ return_closcall1(data,(closure)&c_735301,  Cyc_eq(((closureN)self_732785)->elts[
 }
 
 static void __lambda_681(void *data, int argc, object self_732786, object r_731364) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731364) ){ 
   
 closureN_type c_735303;
@@ -19200,7 +19200,7 @@ return_closcall1(data,(closure)&c_735308,  quote_Cyc_91default_91exception_91han
 }
 
 static void __lambda_680(void *data, int argc, object self_732787, object r_731560) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735310;
 c_735310.hdr.mark = gc_color_red;
@@ -19217,7 +19217,7 @@ return_closcall1(data,(closure)&c_735310,  Cyc_eq(((closureN)self_732787)->elts[
 }
 
 static void __lambda_679(void *data, int argc, object self_732788, object r_731365) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731365) ){ 
   
 closureN_type c_735312;
@@ -19249,7 +19249,7 @@ return_closcall1(data,(closure)&c_735317,  quote_Cyc_91current_91exception_91han
 }
 
 static void __lambda_678(void *data, int argc, object self_732789, object r_731559) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735319;
 c_735319.hdr.mark = gc_color_red;
@@ -19266,7 +19266,7 @@ return_closcall1(data,(closure)&c_735319,  Cyc_eq(((closureN)self_732789)->elts[
 }
 
 static void __lambda_677(void *data, int argc, object self_732790, object r_731366) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731366) ){ 
   
 closureN_type c_735321;
@@ -19298,7 +19298,7 @@ return_closcall1(data,(closure)&c_735326,  quote_open_91input_91file);}
 }
 
 static void __lambda_676(void *data, int argc, object self_732791, object r_731558) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735328;
 c_735328.hdr.mark = gc_color_red;
@@ -19315,7 +19315,7 @@ return_closcall1(data,(closure)&c_735328,  Cyc_eq(((closureN)self_732791)->elts[
 }
 
 static void __lambda_675(void *data, int argc, object self_732792, object r_731367) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731367) ){ 
   
 closureN_type c_735330;
@@ -19347,7 +19347,7 @@ return_closcall1(data,(closure)&c_735335,  quote_open_91output_91file);}
 }
 
 static void __lambda_674(void *data, int argc, object self_732793, object r_731557) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735337;
 c_735337.hdr.mark = gc_color_red;
@@ -19364,7 +19364,7 @@ return_closcall1(data,(closure)&c_735337,  Cyc_eq(((closureN)self_732793)->elts[
 }
 
 static void __lambda_673(void *data, int argc, object self_732794, object r_731368) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731368) ){ 
   
 closureN_type c_735339;
@@ -19396,7 +19396,7 @@ return_closcall1(data,(closure)&c_735344,  quote_close_91port);}
 }
 
 static void __lambda_672(void *data, int argc, object self_732795, object r_731556) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735346;
 c_735346.hdr.mark = gc_color_red;
@@ -19413,7 +19413,7 @@ return_closcall1(data,(closure)&c_735346,  Cyc_eq(((closureN)self_732795)->elts[
 }
 
 static void __lambda_671(void *data, int argc, object self_732796, object r_731369) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731369) ){ 
   
 closureN_type c_735348;
@@ -19445,7 +19445,7 @@ return_closcall1(data,(closure)&c_735353,  quote_close_91input_91port);}
 }
 
 static void __lambda_670(void *data, int argc, object self_732797, object r_731555) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735355;
 c_735355.hdr.mark = gc_color_red;
@@ -19462,7 +19462,7 @@ return_closcall1(data,(closure)&c_735355,  Cyc_eq(((closureN)self_732797)->elts[
 }
 
 static void __lambda_669(void *data, int argc, object self_732798, object r_731370) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731370) ){ 
   
 closureN_type c_735357;
@@ -19494,7 +19494,7 @@ return_closcall1(data,(closure)&c_735362,  quote_close_91output_91port);}
 }
 
 static void __lambda_668(void *data, int argc, object self_732799, object r_731554) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735364;
 c_735364.hdr.mark = gc_color_red;
@@ -19511,7 +19511,7 @@ return_closcall1(data,(closure)&c_735364,  Cyc_eq(((closureN)self_732799)->elts[
 }
 
 static void __lambda_667(void *data, int argc, object self_732800, object r_731371) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731371) ){ 
   
 closureN_type c_735366;
@@ -19543,7 +19543,7 @@ return_closcall1(data,(closure)&c_735371,  quote_Cyc_91flush_91output_91port);}
 }
 
 static void __lambda_666(void *data, int argc, object self_732801, object r_731553) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735373;
 c_735373.hdr.mark = gc_color_red;
@@ -19560,7 +19560,7 @@ return_closcall1(data,(closure)&c_735373,  Cyc_eq(((closureN)self_732801)->elts[
 }
 
 static void __lambda_665(void *data, int argc, object self_732802, object r_731372) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731372) ){ 
   
 closureN_type c_735375;
@@ -19592,7 +19592,7 @@ return_closcall1(data,(closure)&c_735380,  quote_file_91exists_127);}
 }
 
 static void __lambda_664(void *data, int argc, object self_732803, object r_731552) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735382;
 c_735382.hdr.mark = gc_color_red;
@@ -19609,7 +19609,7 @@ return_closcall1(data,(closure)&c_735382,  Cyc_eq(((closureN)self_732803)->elts[
 }
 
 static void __lambda_663(void *data, int argc, object self_732804, object r_731373) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731373) ){ 
   
 closureN_type c_735384;
@@ -19641,7 +19641,7 @@ return_closcall1(data,(closure)&c_735389,  quote_delete_91file);}
 }
 
 static void __lambda_662(void *data, int argc, object self_732805, object r_731551) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735391;
 c_735391.hdr.mark = gc_color_red;
@@ -19658,7 +19658,7 @@ return_closcall1(data,(closure)&c_735391,  Cyc_eq(((closureN)self_732805)->elts[
 }
 
 static void __lambda_661(void *data, int argc, object self_732806, object r_731374) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731374) ){ 
   
 closureN_type c_735393;
@@ -19690,7 +19690,7 @@ return_closcall1(data,(closure)&c_735398,  quote_read_91char);}
 }
 
 static void __lambda_660(void *data, int argc, object self_732807, object r_731550) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735400;
 c_735400.hdr.mark = gc_color_red;
@@ -19707,7 +19707,7 @@ return_closcall1(data,(closure)&c_735400,  Cyc_eq(((closureN)self_732807)->elts[
 }
 
 static void __lambda_659(void *data, int argc, object self_732808, object r_731375) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731375) ){ 
   
 closureN_type c_735402;
@@ -19739,7 +19739,7 @@ return_closcall1(data,(closure)&c_735407,  quote_peek_91char);}
 }
 
 static void __lambda_658(void *data, int argc, object self_732809, object r_731549) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735409;
 c_735409.hdr.mark = gc_color_red;
@@ -19756,7 +19756,7 @@ return_closcall1(data,(closure)&c_735409,  Cyc_eq(((closureN)self_732809)->elts[
 }
 
 static void __lambda_657(void *data, int argc, object self_732810, object r_731376) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731376) ){ 
   
 closureN_type c_735411;
@@ -19788,7 +19788,7 @@ return_closcall1(data,(closure)&c_735416,  quote_Cyc_91read_91line);}
 }
 
 static void __lambda_656(void *data, int argc, object self_732811, object r_731548) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735418;
 c_735418.hdr.mark = gc_color_red;
@@ -19805,7 +19805,7 @@ return_closcall1(data,(closure)&c_735418,  Cyc_eq(((closureN)self_732811)->elts[
 }
 
 static void __lambda_655(void *data, int argc, object self_732812, object r_731377) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731377) ){ 
   
 closureN_type c_735420;
@@ -19837,7 +19837,7 @@ return_closcall1(data,(closure)&c_735425,  quote_Cyc_91display);}
 }
 
 static void __lambda_654(void *data, int argc, object self_732813, object r_731547) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735427;
 c_735427.hdr.mark = gc_color_red;
@@ -19854,7 +19854,7 @@ return_closcall1(data,(closure)&c_735427,  Cyc_eq(((closureN)self_732813)->elts[
 }
 
 static void __lambda_653(void *data, int argc, object self_732814, object r_731378) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731378) ){ 
   
 closureN_type c_735429;
@@ -19886,7 +19886,7 @@ return_closcall1(data,(closure)&c_735434,  quote_Cyc_91write);}
 }
 
 static void __lambda_652(void *data, int argc, object self_732815, object r_731546) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735436;
 c_735436.hdr.mark = gc_color_red;
@@ -19903,7 +19903,7 @@ return_closcall1(data,(closure)&c_735436,  Cyc_eq(((closureN)self_732815)->elts[
 }
 
 static void __lambda_651(void *data, int argc, object self_732816, object r_731379) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731379) ){ 
   
 closureN_type c_735438;
@@ -19935,7 +19935,7 @@ return_closcall1(data,(closure)&c_735443,  quote_Cyc_91write_91char);}
 }
 
 static void __lambda_650(void *data, int argc, object self_732817, object r_731545) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735445;
 c_735445.hdr.mark = gc_color_red;
@@ -19952,7 +19952,7 @@ return_closcall1(data,(closure)&c_735445,  Cyc_eq(((closureN)self_732817)->elts[
 }
 
 static void __lambda_649(void *data, int argc, object self_732818, object r_731380) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731380) ){ 
   
 closureN_type c_735447;
@@ -19984,7 +19984,7 @@ return_closcall1(data,(closure)&c_735452,  quote_car);}
 }
 
 static void __lambda_648(void *data, int argc, object self_732819, object r_731544) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735454;
 c_735454.hdr.mark = gc_color_red;
@@ -20001,7 +20001,7 @@ return_closcall1(data,(closure)&c_735454,  Cyc_eq(((closureN)self_732819)->elts[
 }
 
 static void __lambda_647(void *data, int argc, object self_732820, object r_731381) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731381) ){ 
   
 closureN_type c_735456;
@@ -20033,7 +20033,7 @@ return_closcall1(data,(closure)&c_735461,  quote_cdr);}
 }
 
 static void __lambda_646(void *data, int argc, object self_732821, object r_731543) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735463;
 c_735463.hdr.mark = gc_color_red;
@@ -20050,7 +20050,7 @@ return_closcall1(data,(closure)&c_735463,  Cyc_eq(((closureN)self_732821)->elts[
 }
 
 static void __lambda_645(void *data, int argc, object self_732822, object r_731382) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731382) ){ 
   
 closureN_type c_735465;
@@ -20082,7 +20082,7 @@ return_closcall1(data,(closure)&c_735470,  quote_caar);}
 }
 
 static void __lambda_644(void *data, int argc, object self_732823, object r_731542) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735472;
 c_735472.hdr.mark = gc_color_red;
@@ -20099,7 +20099,7 @@ return_closcall1(data,(closure)&c_735472,  Cyc_eq(((closureN)self_732823)->elts[
 }
 
 static void __lambda_643(void *data, int argc, object self_732824, object r_731383) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731383) ){ 
   
 closureN_type c_735474;
@@ -20131,7 +20131,7 @@ return_closcall1(data,(closure)&c_735479,  quote_cadr);}
 }
 
 static void __lambda_642(void *data, int argc, object self_732825, object r_731541) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735481;
 c_735481.hdr.mark = gc_color_red;
@@ -20148,7 +20148,7 @@ return_closcall1(data,(closure)&c_735481,  Cyc_eq(((closureN)self_732825)->elts[
 }
 
 static void __lambda_641(void *data, int argc, object self_732826, object r_731384) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731384) ){ 
   
 closureN_type c_735483;
@@ -20180,7 +20180,7 @@ return_closcall1(data,(closure)&c_735488,  quote_cdar);}
 }
 
 static void __lambda_640(void *data, int argc, object self_732827, object r_731540) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735490;
 c_735490.hdr.mark = gc_color_red;
@@ -20197,7 +20197,7 @@ return_closcall1(data,(closure)&c_735490,  Cyc_eq(((closureN)self_732827)->elts[
 }
 
 static void __lambda_639(void *data, int argc, object self_732828, object r_731385) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731385) ){ 
   
 closureN_type c_735492;
@@ -20229,7 +20229,7 @@ return_closcall1(data,(closure)&c_735497,  quote_cddr);}
 }
 
 static void __lambda_638(void *data, int argc, object self_732829, object r_731539) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735499;
 c_735499.hdr.mark = gc_color_red;
@@ -20246,7 +20246,7 @@ return_closcall1(data,(closure)&c_735499,  Cyc_eq(((closureN)self_732829)->elts[
 }
 
 static void __lambda_637(void *data, int argc, object self_732830, object r_731386) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731386) ){ 
   
 closureN_type c_735501;
@@ -20278,7 +20278,7 @@ return_closcall1(data,(closure)&c_735506,  quote_caaar);}
 }
 
 static void __lambda_636(void *data, int argc, object self_732831, object r_731538) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735508;
 c_735508.hdr.mark = gc_color_red;
@@ -20295,7 +20295,7 @@ return_closcall1(data,(closure)&c_735508,  Cyc_eq(((closureN)self_732831)->elts[
 }
 
 static void __lambda_635(void *data, int argc, object self_732832, object r_731387) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731387) ){ 
   
 closureN_type c_735510;
@@ -20327,7 +20327,7 @@ return_closcall1(data,(closure)&c_735515,  quote_caadr);}
 }
 
 static void __lambda_634(void *data, int argc, object self_732833, object r_731537) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735517;
 c_735517.hdr.mark = gc_color_red;
@@ -20344,7 +20344,7 @@ return_closcall1(data,(closure)&c_735517,  Cyc_eq(((closureN)self_732833)->elts[
 }
 
 static void __lambda_633(void *data, int argc, object self_732834, object r_731388) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731388) ){ 
   
 closureN_type c_735519;
@@ -20376,7 +20376,7 @@ return_closcall1(data,(closure)&c_735524,  quote_cadar);}
 }
 
 static void __lambda_632(void *data, int argc, object self_732835, object r_731536) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735526;
 c_735526.hdr.mark = gc_color_red;
@@ -20393,7 +20393,7 @@ return_closcall1(data,(closure)&c_735526,  Cyc_eq(((closureN)self_732835)->elts[
 }
 
 static void __lambda_631(void *data, int argc, object self_732836, object r_731389) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731389) ){ 
   
 closureN_type c_735528;
@@ -20425,7 +20425,7 @@ return_closcall1(data,(closure)&c_735533,  quote_caddr);}
 }
 
 static void __lambda_630(void *data, int argc, object self_732837, object r_731535) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735535;
 c_735535.hdr.mark = gc_color_red;
@@ -20442,7 +20442,7 @@ return_closcall1(data,(closure)&c_735535,  Cyc_eq(((closureN)self_732837)->elts[
 }
 
 static void __lambda_629(void *data, int argc, object self_732838, object r_731390) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731390) ){ 
   
 closureN_type c_735537;
@@ -20474,7 +20474,7 @@ return_closcall1(data,(closure)&c_735542,  quote_cdaar);}
 }
 
 static void __lambda_628(void *data, int argc, object self_732839, object r_731534) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735544;
 c_735544.hdr.mark = gc_color_red;
@@ -20491,7 +20491,7 @@ return_closcall1(data,(closure)&c_735544,  Cyc_eq(((closureN)self_732839)->elts[
 }
 
 static void __lambda_627(void *data, int argc, object self_732840, object r_731391) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731391) ){ 
   
 closureN_type c_735546;
@@ -20523,7 +20523,7 @@ return_closcall1(data,(closure)&c_735551,  quote_cdadr);}
 }
 
 static void __lambda_626(void *data, int argc, object self_732841, object r_731533) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735553;
 c_735553.hdr.mark = gc_color_red;
@@ -20540,7 +20540,7 @@ return_closcall1(data,(closure)&c_735553,  Cyc_eq(((closureN)self_732841)->elts[
 }
 
 static void __lambda_625(void *data, int argc, object self_732842, object r_731392) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731392) ){ 
   
 closureN_type c_735555;
@@ -20572,7 +20572,7 @@ return_closcall1(data,(closure)&c_735560,  quote_cddar);}
 }
 
 static void __lambda_624(void *data, int argc, object self_732843, object r_731532) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735562;
 c_735562.hdr.mark = gc_color_red;
@@ -20589,7 +20589,7 @@ return_closcall1(data,(closure)&c_735562,  Cyc_eq(((closureN)self_732843)->elts[
 }
 
 static void __lambda_623(void *data, int argc, object self_732844, object r_731393) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731393) ){ 
   
 closureN_type c_735564;
@@ -20621,7 +20621,7 @@ return_closcall1(data,(closure)&c_735569,  quote_cdddr);}
 }
 
 static void __lambda_622(void *data, int argc, object self_732845, object r_731531) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735571;
 c_735571.hdr.mark = gc_color_red;
@@ -20638,7 +20638,7 @@ return_closcall1(data,(closure)&c_735571,  Cyc_eq(((closureN)self_732845)->elts[
 }
 
 static void __lambda_621(void *data, int argc, object self_732846, object r_731394) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731394) ){ 
   
 closureN_type c_735573;
@@ -20670,7 +20670,7 @@ return_closcall1(data,(closure)&c_735578,  quote_caaaar);}
 }
 
 static void __lambda_620(void *data, int argc, object self_732847, object r_731530) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735580;
 c_735580.hdr.mark = gc_color_red;
@@ -20687,7 +20687,7 @@ return_closcall1(data,(closure)&c_735580,  Cyc_eq(((closureN)self_732847)->elts[
 }
 
 static void __lambda_619(void *data, int argc, object self_732848, object r_731395) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731395) ){ 
   
 closureN_type c_735582;
@@ -20719,7 +20719,7 @@ return_closcall1(data,(closure)&c_735587,  quote_caaadr);}
 }
 
 static void __lambda_618(void *data, int argc, object self_732849, object r_731529) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735589;
 c_735589.hdr.mark = gc_color_red;
@@ -20736,7 +20736,7 @@ return_closcall1(data,(closure)&c_735589,  Cyc_eq(((closureN)self_732849)->elts[
 }
 
 static void __lambda_617(void *data, int argc, object self_732850, object r_731396) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731396) ){ 
   
 closureN_type c_735591;
@@ -20768,7 +20768,7 @@ return_closcall1(data,(closure)&c_735596,  quote_caadar);}
 }
 
 static void __lambda_616(void *data, int argc, object self_732851, object r_731528) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735598;
 c_735598.hdr.mark = gc_color_red;
@@ -20785,7 +20785,7 @@ return_closcall1(data,(closure)&c_735598,  Cyc_eq(((closureN)self_732851)->elts[
 }
 
 static void __lambda_615(void *data, int argc, object self_732852, object r_731397) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731397) ){ 
   
 closureN_type c_735600;
@@ -20817,7 +20817,7 @@ return_closcall1(data,(closure)&c_735605,  quote_caaddr);}
 }
 
 static void __lambda_614(void *data, int argc, object self_732853, object r_731527) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735607;
 c_735607.hdr.mark = gc_color_red;
@@ -20834,7 +20834,7 @@ return_closcall1(data,(closure)&c_735607,  Cyc_eq(((closureN)self_732853)->elts[
 }
 
 static void __lambda_613(void *data, int argc, object self_732854, object r_731398) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731398) ){ 
   
 closureN_type c_735609;
@@ -20866,7 +20866,7 @@ return_closcall1(data,(closure)&c_735614,  quote_cadaar);}
 }
 
 static void __lambda_612(void *data, int argc, object self_732855, object r_731526) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735616;
 c_735616.hdr.mark = gc_color_red;
@@ -20883,7 +20883,7 @@ return_closcall1(data,(closure)&c_735616,  Cyc_eq(((closureN)self_732855)->elts[
 }
 
 static void __lambda_611(void *data, int argc, object self_732856, object r_731399) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731399) ){ 
   
 closureN_type c_735618;
@@ -20915,7 +20915,7 @@ return_closcall1(data,(closure)&c_735623,  quote_cadadr);}
 }
 
 static void __lambda_610(void *data, int argc, object self_732857, object r_731525) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735625;
 c_735625.hdr.mark = gc_color_red;
@@ -20932,7 +20932,7 @@ return_closcall1(data,(closure)&c_735625,  Cyc_eq(((closureN)self_732857)->elts[
 }
 
 static void __lambda_609(void *data, int argc, object self_732858, object r_731400) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731400) ){ 
   
 closureN_type c_735627;
@@ -20964,7 +20964,7 @@ return_closcall1(data,(closure)&c_735632,  quote_caddar);}
 }
 
 static void __lambda_608(void *data, int argc, object self_732859, object r_731524) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735634;
 c_735634.hdr.mark = gc_color_red;
@@ -20981,7 +20981,7 @@ return_closcall1(data,(closure)&c_735634,  Cyc_eq(((closureN)self_732859)->elts[
 }
 
 static void __lambda_607(void *data, int argc, object self_732860, object r_731401) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731401) ){ 
   
 closureN_type c_735636;
@@ -21013,7 +21013,7 @@ return_closcall1(data,(closure)&c_735641,  quote_cadddr);}
 }
 
 static void __lambda_606(void *data, int argc, object self_732861, object r_731523) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735643;
 c_735643.hdr.mark = gc_color_red;
@@ -21030,7 +21030,7 @@ return_closcall1(data,(closure)&c_735643,  Cyc_eq(((closureN)self_732861)->elts[
 }
 
 static void __lambda_605(void *data, int argc, object self_732862, object r_731402) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731402) ){ 
   
 closureN_type c_735645;
@@ -21062,7 +21062,7 @@ return_closcall1(data,(closure)&c_735650,  quote_cdaaar);}
 }
 
 static void __lambda_604(void *data, int argc, object self_732863, object r_731522) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735652;
 c_735652.hdr.mark = gc_color_red;
@@ -21079,7 +21079,7 @@ return_closcall1(data,(closure)&c_735652,  Cyc_eq(((closureN)self_732863)->elts[
 }
 
 static void __lambda_603(void *data, int argc, object self_732864, object r_731403) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731403) ){ 
   
 closureN_type c_735654;
@@ -21111,7 +21111,7 @@ return_closcall1(data,(closure)&c_735659,  quote_cdaadr);}
 }
 
 static void __lambda_602(void *data, int argc, object self_732865, object r_731521) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735661;
 c_735661.hdr.mark = gc_color_red;
@@ -21128,7 +21128,7 @@ return_closcall1(data,(closure)&c_735661,  Cyc_eq(((closureN)self_732865)->elts[
 }
 
 static void __lambda_601(void *data, int argc, object self_732866, object r_731404) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731404) ){ 
   
 closureN_type c_735663;
@@ -21160,7 +21160,7 @@ return_closcall1(data,(closure)&c_735668,  quote_cdadar);}
 }
 
 static void __lambda_600(void *data, int argc, object self_732867, object r_731520) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735670;
 c_735670.hdr.mark = gc_color_red;
@@ -21177,7 +21177,7 @@ return_closcall1(data,(closure)&c_735670,  Cyc_eq(((closureN)self_732867)->elts[
 }
 
 static void __lambda_599(void *data, int argc, object self_732868, object r_731405) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731405) ){ 
   
 closureN_type c_735672;
@@ -21209,7 +21209,7 @@ return_closcall1(data,(closure)&c_735677,  quote_cdaddr);}
 }
 
 static void __lambda_598(void *data, int argc, object self_732869, object r_731519) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735679;
 c_735679.hdr.mark = gc_color_red;
@@ -21226,7 +21226,7 @@ return_closcall1(data,(closure)&c_735679,  Cyc_eq(((closureN)self_732869)->elts[
 }
 
 static void __lambda_597(void *data, int argc, object self_732870, object r_731406) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731406) ){ 
   
 closureN_type c_735681;
@@ -21258,7 +21258,7 @@ return_closcall1(data,(closure)&c_735686,  quote_cddaar);}
 }
 
 static void __lambda_596(void *data, int argc, object self_732871, object r_731518) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735688;
 c_735688.hdr.mark = gc_color_red;
@@ -21275,7 +21275,7 @@ return_closcall1(data,(closure)&c_735688,  Cyc_eq(((closureN)self_732871)->elts[
 }
 
 static void __lambda_595(void *data, int argc, object self_732872, object r_731407) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731407) ){ 
   
 closureN_type c_735690;
@@ -21307,7 +21307,7 @@ return_closcall1(data,(closure)&c_735695,  quote_cddadr);}
 }
 
 static void __lambda_594(void *data, int argc, object self_732873, object r_731517) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735697;
 c_735697.hdr.mark = gc_color_red;
@@ -21324,7 +21324,7 @@ return_closcall1(data,(closure)&c_735697,  Cyc_eq(((closureN)self_732873)->elts[
 }
 
 static void __lambda_593(void *data, int argc, object self_732874, object r_731408) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731408) ){ 
   
 closureN_type c_735699;
@@ -21356,7 +21356,7 @@ return_closcall1(data,(closure)&c_735704,  quote_cdddar);}
 }
 
 static void __lambda_592(void *data, int argc, object self_732875, object r_731516) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735706;
 c_735706.hdr.mark = gc_color_red;
@@ -21373,7 +21373,7 @@ return_closcall1(data,(closure)&c_735706,  Cyc_eq(((closureN)self_732875)->elts[
 }
 
 static void __lambda_591(void *data, int argc, object self_732876, object r_731409) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731409) ){ 
   
 closureN_type c_735708;
@@ -21405,7 +21405,7 @@ return_closcall1(data,(closure)&c_735713,  quote_cddddr);}
 }
 
 static void __lambda_590(void *data, int argc, object self_732877, object r_731515) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735715;
 c_735715.hdr.mark = gc_color_red;
@@ -21422,7 +21422,7 @@ return_closcall1(data,(closure)&c_735715,  Cyc_eq(((closureN)self_732877)->elts[
 }
 
 static void __lambda_589(void *data, int argc, object self_732878, object r_731410) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731410) ){ 
   
 closureN_type c_735717;
@@ -21454,7 +21454,7 @@ return_closcall1(data,(closure)&c_735722,  quote_char_91_125integer);}
 }
 
 static void __lambda_588(void *data, int argc, object self_732879, object r_731514) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735724;
 c_735724.hdr.mark = gc_color_red;
@@ -21471,7 +21471,7 @@ return_closcall1(data,(closure)&c_735724,  Cyc_eq(((closureN)self_732879)->elts[
 }
 
 static void __lambda_587(void *data, int argc, object self_732880, object r_731411) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731411) ){ 
   
 closureN_type c_735726;
@@ -21503,7 +21503,7 @@ return_closcall1(data,(closure)&c_735731,  quote_integer_91_125char);}
 }
 
 static void __lambda_586(void *data, int argc, object self_732881, object r_731513) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735733;
 c_735733.hdr.mark = gc_color_red;
@@ -21520,7 +21520,7 @@ return_closcall1(data,(closure)&c_735733,  Cyc_eq(((closureN)self_732881)->elts[
 }
 
 static void __lambda_585(void *data, int argc, object self_732882, object r_731412) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731412) ){ 
   
 closureN_type c_735735;
@@ -21552,7 +21552,7 @@ return_closcall1(data,(closure)&c_735740,  quote_string_91_125number);}
 }
 
 static void __lambda_584(void *data, int argc, object self_732883, object r_731512) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735742;
 c_735742.hdr.mark = gc_color_red;
@@ -21569,7 +21569,7 @@ return_closcall1(data,(closure)&c_735742,  Cyc_eq(((closureN)self_732883)->elts[
 }
 
 static void __lambda_583(void *data, int argc, object self_732884, object r_731413) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731413) ){ 
   
 closureN_type c_735744;
@@ -21601,7 +21601,7 @@ return_closcall1(data,(closure)&c_735749,  quote_list_91_125string);}
 }
 
 static void __lambda_582(void *data, int argc, object self_732885, object r_731511) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735751;
 c_735751.hdr.mark = gc_color_red;
@@ -21618,7 +21618,7 @@ return_closcall1(data,(closure)&c_735751,  Cyc_eq(((closureN)self_732885)->elts[
 }
 
 static void __lambda_581(void *data, int argc, object self_732886, object r_731414) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731414) ){ 
   
 closureN_type c_735753;
@@ -21650,7 +21650,7 @@ return_closcall1(data,(closure)&c_735758,  quote_make_91vector);}
 }
 
 static void __lambda_580(void *data, int argc, object self_732887, object r_731510) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735760;
 c_735760.hdr.mark = gc_color_red;
@@ -21667,7 +21667,7 @@ return_closcall1(data,(closure)&c_735760,  Cyc_eq(((closureN)self_732887)->elts[
 }
 
 static void __lambda_579(void *data, int argc, object self_732888, object r_731415) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731415) ){ 
   
 closureN_type c_735762;
@@ -21699,7 +21699,7 @@ return_closcall1(data,(closure)&c_735767,  quote_list_91_125vector);}
 }
 
 static void __lambda_578(void *data, int argc, object self_732889, object r_731509) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735769;
 c_735769.hdr.mark = gc_color_red;
@@ -21716,7 +21716,7 @@ return_closcall1(data,(closure)&c_735769,  Cyc_eq(((closureN)self_732889)->elts[
 }
 
 static void __lambda_577(void *data, int argc, object self_732890, object r_731416) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731416) ){ 
   
 closureN_type c_735771;
@@ -21748,7 +21748,7 @@ return_closcall1(data,(closure)&c_735776,  quote_vector_91length);}
 }
 
 static void __lambda_576(void *data, int argc, object self_732891, object r_731508) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735778;
 c_735778.hdr.mark = gc_color_red;
@@ -21765,7 +21765,7 @@ return_closcall1(data,(closure)&c_735778,  Cyc_eq(((closureN)self_732891)->elts[
 }
 
 static void __lambda_575(void *data, int argc, object self_732892, object r_731417) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731417) ){ 
   
 closureN_type c_735780;
@@ -21797,7 +21797,7 @@ return_closcall1(data,(closure)&c_735785,  quote_vector_91ref);}
 }
 
 static void __lambda_574(void *data, int argc, object self_732893, object r_731507) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735787;
 c_735787.hdr.mark = gc_color_red;
@@ -21814,7 +21814,7 @@ return_closcall1(data,(closure)&c_735787,  Cyc_eq(((closureN)self_732893)->elts[
 }
 
 static void __lambda_573(void *data, int argc, object self_732894, object r_731418) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731418) ){ 
   
 closureN_type c_735789;
@@ -21846,7 +21846,7 @@ return_closcall1(data,(closure)&c_735794,  quote_vector_91set_67);}
 }
 
 static void __lambda_572(void *data, int argc, object self_732895, object r_731506) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735796;
 c_735796.hdr.mark = gc_color_red;
@@ -21863,7 +21863,7 @@ return_closcall1(data,(closure)&c_735796,  Cyc_eq(((closureN)self_732895)->elts[
 }
 
 static void __lambda_571(void *data, int argc, object self_732896, object r_731419) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731419) ){ 
   
 closureN_type c_735798;
@@ -21895,7 +21895,7 @@ return_closcall1(data,(closure)&c_735803,  quote_string_91append);}
 }
 
 static void __lambda_570(void *data, int argc, object self_732897, object r_731505) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735805;
 c_735805.hdr.mark = gc_color_red;
@@ -21912,7 +21912,7 @@ return_closcall1(data,(closure)&c_735805,  Cyc_eq(((closureN)self_732897)->elts[
 }
 
 static void __lambda_569(void *data, int argc, object self_732898, object r_731420) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731420) ){ 
   
 closureN_type c_735807;
@@ -21944,7 +21944,7 @@ return_closcall1(data,(closure)&c_735812,  quote_string_91cmp);}
 }
 
 static void __lambda_568(void *data, int argc, object self_732899, object r_731504) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735814;
 c_735814.hdr.mark = gc_color_red;
@@ -21961,7 +21961,7 @@ return_closcall1(data,(closure)&c_735814,  Cyc_eq(((closureN)self_732899)->elts[
 }
 
 static void __lambda_567(void *data, int argc, object self_732900, object r_731421) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731421) ){ 
   
 closureN_type c_735816;
@@ -21993,7 +21993,7 @@ return_closcall1(data,(closure)&c_735821,  quote_string_91_125symbol);}
 }
 
 static void __lambda_566(void *data, int argc, object self_732901, object r_731503) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735823;
 c_735823.hdr.mark = gc_color_red;
@@ -22010,7 +22010,7 @@ return_closcall1(data,(closure)&c_735823,  Cyc_eq(((closureN)self_732901)->elts[
 }
 
 static void __lambda_565(void *data, int argc, object self_732902, object r_731422) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731422) ){ 
   
 closureN_type c_735825;
@@ -22042,7 +22042,7 @@ return_closcall1(data,(closure)&c_735830,  quote_symbol_91_125string);}
 }
 
 static void __lambda_564(void *data, int argc, object self_732903, object r_731502) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735832;
 c_735832.hdr.mark = gc_color_red;
@@ -22059,7 +22059,7 @@ return_closcall1(data,(closure)&c_735832,  Cyc_eq(((closureN)self_732903)->elts[
 }
 
 static void __lambda_563(void *data, int argc, object self_732904, object r_731423) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731423) ){ 
   
 closureN_type c_735834;
@@ -22091,7 +22091,7 @@ return_closcall1(data,(closure)&c_735839,  quote_number_91_125string);}
 }
 
 static void __lambda_562(void *data, int argc, object self_732905, object r_731501) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735841;
 c_735841.hdr.mark = gc_color_red;
@@ -22108,7 +22108,7 @@ return_closcall1(data,(closure)&c_735841,  Cyc_eq(((closureN)self_732905)->elts[
 }
 
 static void __lambda_561(void *data, int argc, object self_732906, object r_731424) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731424) ){ 
   
 closureN_type c_735843;
@@ -22140,7 +22140,7 @@ return_closcall1(data,(closure)&c_735848,  quote_string_91length);}
 }
 
 static void __lambda_560(void *data, int argc, object self_732907, object r_731500) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735850;
 c_735850.hdr.mark = gc_color_red;
@@ -22157,7 +22157,7 @@ return_closcall1(data,(closure)&c_735850,  Cyc_eq(((closureN)self_732907)->elts[
 }
 
 static void __lambda_559(void *data, int argc, object self_732908, object r_731425) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731425) ){ 
   
 closureN_type c_735852;
@@ -22189,7 +22189,7 @@ return_closcall1(data,(closure)&c_735857,  quote_string_91ref);}
 }
 
 static void __lambda_558(void *data, int argc, object self_732909, object r_731499) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735859;
 c_735859.hdr.mark = gc_color_red;
@@ -22206,7 +22206,7 @@ return_closcall1(data,(closure)&c_735859,  Cyc_eq(((closureN)self_732909)->elts[
 }
 
 static void __lambda_557(void *data, int argc, object self_732910, object r_731426) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731426) ){ 
   
 closureN_type c_735861;
@@ -22238,7 +22238,7 @@ return_closcall1(data,(closure)&c_735866,  quote_string_91set_67);}
 }
 
 static void __lambda_556(void *data, int argc, object self_732911, object r_731498) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735868;
 c_735868.hdr.mark = gc_color_red;
@@ -22255,7 +22255,7 @@ return_closcall1(data,(closure)&c_735868,  Cyc_eq(((closureN)self_732911)->elts[
 }
 
 static void __lambda_555(void *data, int argc, object self_732912, object r_731427) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731427) ){ 
   
 closureN_type c_735870;
@@ -22287,7 +22287,7 @@ return_closcall1(data,(closure)&c_735875,  quote_substring);}
 }
 
 static void __lambda_554(void *data, int argc, object self_732913, object r_731497) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735877;
 c_735877.hdr.mark = gc_color_red;
@@ -22304,7 +22304,7 @@ return_closcall1(data,(closure)&c_735877,  Cyc_eq(((closureN)self_732913)->elts[
 }
 
 static void __lambda_553(void *data, int argc, object self_732914, object r_731428) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731428) ){ 
   
 closureN_type c_735879;
@@ -22336,7 +22336,7 @@ return_closcall1(data,(closure)&c_735884,  quote_Cyc_91installation_91dir);}
 }
 
 static void __lambda_552(void *data, int argc, object self_732915, object r_731496) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735886;
 c_735886.hdr.mark = gc_color_red;
@@ -22353,7 +22353,7 @@ return_closcall1(data,(closure)&c_735886,  Cyc_eq(((closureN)self_732915)->elts[
 }
 
 static void __lambda_551(void *data, int argc, object self_732916, object r_731429) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731429) ){ 
   
 closureN_type c_735888;
@@ -22385,7 +22385,7 @@ return_closcall1(data,(closure)&c_735893,  quote_command_91line_91arguments);}
 }
 
 static void __lambda_550(void *data, int argc, object self_732917, object r_731495) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735895;
 c_735895.hdr.mark = gc_color_red;
@@ -22402,7 +22402,7 @@ return_closcall1(data,(closure)&c_735895,  Cyc_eq(((closureN)self_732917)->elts[
 }
 
 static void __lambda_549(void *data, int argc, object self_732918, object r_731430) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731430) ){ 
   
 closureN_type c_735897;
@@ -22434,7 +22434,7 @@ return_closcall1(data,(closure)&c_735902,  quote_system);}
 }
 
 static void __lambda_548(void *data, int argc, object self_732919, object r_731494) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735904;
 c_735904.hdr.mark = gc_color_red;
@@ -22451,7 +22451,7 @@ return_closcall1(data,(closure)&c_735904,  Cyc_eq(((closureN)self_732919)->elts[
 }
 
 static void __lambda_547(void *data, int argc, object self_732920, object r_731431) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731431) ){ 
   
 closureN_type c_735906;
@@ -22483,7 +22483,7 @@ return_closcall1(data,(closure)&c_735911,  quote_assq);}
 }
 
 static void __lambda_546(void *data, int argc, object self_732921, object r_731493) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735913;
 c_735913.hdr.mark = gc_color_red;
@@ -22500,7 +22500,7 @@ return_closcall1(data,(closure)&c_735913,  Cyc_eq(((closureN)self_732921)->elts[
 }
 
 static void __lambda_545(void *data, int argc, object self_732922, object r_731432) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731432) ){ 
   
 closureN_type c_735915;
@@ -22532,7 +22532,7 @@ return_closcall1(data,(closure)&c_735920,  quote_assv);}
 }
 
 static void __lambda_544(void *data, int argc, object self_732923, object r_731492) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735922;
 c_735922.hdr.mark = gc_color_red;
@@ -22549,7 +22549,7 @@ return_closcall1(data,(closure)&c_735922,  Cyc_eq(((closureN)self_732923)->elts[
 }
 
 static void __lambda_543(void *data, int argc, object self_732924, object r_731433) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731433) ){ 
   
 closureN_type c_735924;
@@ -22581,7 +22581,7 @@ return_closcall1(data,(closure)&c_735929,  quote_assoc);}
 }
 
 static void __lambda_542(void *data, int argc, object self_732925, object r_731491) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735931;
 c_735931.hdr.mark = gc_color_red;
@@ -22598,7 +22598,7 @@ return_closcall1(data,(closure)&c_735931,  Cyc_eq(((closureN)self_732925)->elts[
 }
 
 static void __lambda_541(void *data, int argc, object self_732926, object r_731434) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731434) ){ 
   
 closureN_type c_735933;
@@ -22630,7 +22630,7 @@ return_closcall1(data,(closure)&c_735938,  quote_memq);}
 }
 
 static void __lambda_540(void *data, int argc, object self_732927, object r_731490) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735940;
 c_735940.hdr.mark = gc_color_red;
@@ -22647,7 +22647,7 @@ return_closcall1(data,(closure)&c_735940,  Cyc_eq(((closureN)self_732927)->elts[
 }
 
 static void __lambda_539(void *data, int argc, object self_732928, object r_731435) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731435) ){ 
   
 closureN_type c_735942;
@@ -22679,7 +22679,7 @@ return_closcall1(data,(closure)&c_735947,  quote_memv);}
 }
 
 static void __lambda_538(void *data, int argc, object self_732929, object r_731489) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735949;
 c_735949.hdr.mark = gc_color_red;
@@ -22696,7 +22696,7 @@ return_closcall1(data,(closure)&c_735949,  Cyc_eq(((closureN)self_732929)->elts[
 }
 
 static void __lambda_537(void *data, int argc, object self_732930, object r_731436) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731436) ){ 
   
 closureN_type c_735951;
@@ -22728,7 +22728,7 @@ return_closcall1(data,(closure)&c_735956,  quote_member);}
 }
 
 static void __lambda_536(void *data, int argc, object self_732931, object r_731488) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735958;
 c_735958.hdr.mark = gc_color_red;
@@ -22745,7 +22745,7 @@ return_closcall1(data,(closure)&c_735958,  Cyc_eq(((closureN)self_732931)->elts[
 }
 
 static void __lambda_535(void *data, int argc, object self_732932, object r_731437) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731437) ){ 
   
 closureN_type c_735960;
@@ -22777,7 +22777,7 @@ return_closcall1(data,(closure)&c_735965,  quote_length);}
 }
 
 static void __lambda_534(void *data, int argc, object self_732933, object r_731487) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735967;
 c_735967.hdr.mark = gc_color_red;
@@ -22794,7 +22794,7 @@ return_closcall1(data,(closure)&c_735967,  Cyc_eq(((closureN)self_732933)->elts[
 }
 
 static void __lambda_533(void *data, int argc, object self_732934, object r_731438) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731438) ){ 
   
 closureN_type c_735969;
@@ -22826,7 +22826,7 @@ return_closcall1(data,(closure)&c_735974,  quote_set_91car_67);}
 }
 
 static void __lambda_532(void *data, int argc, object self_732935, object r_731486) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735976;
 c_735976.hdr.mark = gc_color_red;
@@ -22843,7 +22843,7 @@ return_closcall1(data,(closure)&c_735976,  Cyc_eq(((closureN)self_732935)->elts[
 }
 
 static void __lambda_531(void *data, int argc, object self_732936, object r_731439) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731439) ){ 
   
 closureN_type c_735978;
@@ -22875,7 +22875,7 @@ return_closcall1(data,(closure)&c_735983,  quote_set_91cdr_67);}
 }
 
 static void __lambda_530(void *data, int argc, object self_732937, object r_731485) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735985;
 c_735985.hdr.mark = gc_color_red;
@@ -22892,7 +22892,7 @@ return_closcall1(data,(closure)&c_735985,  Cyc_eq(((closureN)self_732937)->elts[
 }
 
 static void __lambda_529(void *data, int argc, object self_732938, object r_731440) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731440) ){ 
   
 closureN_type c_735987;
@@ -22924,7 +22924,7 @@ return_closcall1(data,(closure)&c_735992,  quote_eq_127);}
 }
 
 static void __lambda_528(void *data, int argc, object self_732939, object r_731484) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_735994;
 c_735994.hdr.mark = gc_color_red;
@@ -22941,7 +22941,7 @@ return_closcall1(data,(closure)&c_735994,  Cyc_eq(((closureN)self_732939)->elts[
 }
 
 static void __lambda_527(void *data, int argc, object self_732940, object r_731441) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731441) ){ 
   
 closureN_type c_735996;
@@ -22973,7 +22973,7 @@ return_closcall1(data,(closure)&c_736001,  quote_eqv_127);}
 }
 
 static void __lambda_526(void *data, int argc, object self_732941, object r_731483) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736003;
 c_736003.hdr.mark = gc_color_red;
@@ -22990,7 +22990,7 @@ return_closcall1(data,(closure)&c_736003,  Cyc_eq(((closureN)self_732941)->elts[
 }
 
 static void __lambda_525(void *data, int argc, object self_732942, object r_731442) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731442) ){ 
   
 closureN_type c_736005;
@@ -23022,7 +23022,7 @@ return_closcall1(data,(closure)&c_736010,  quote_equal_127);}
 }
 
 static void __lambda_524(void *data, int argc, object self_732943, object r_731482) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736012;
 c_736012.hdr.mark = gc_color_red;
@@ -23039,7 +23039,7 @@ return_closcall1(data,(closure)&c_736012,  Cyc_eq(((closureN)self_732943)->elts[
 }
 
 static void __lambda_523(void *data, int argc, object self_732944, object r_731443) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731443) ){ 
   
 closureN_type c_736014;
@@ -23071,7 +23071,7 @@ return_closcall1(data,(closure)&c_736019,  quote_boolean_127);}
 }
 
 static void __lambda_522(void *data, int argc, object self_732945, object r_731481) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736021;
 c_736021.hdr.mark = gc_color_red;
@@ -23088,7 +23088,7 @@ return_closcall1(data,(closure)&c_736021,  Cyc_eq(((closureN)self_732945)->elts[
 }
 
 static void __lambda_521(void *data, int argc, object self_732946, object r_731444) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731444) ){ 
   
 closureN_type c_736023;
@@ -23120,7 +23120,7 @@ return_closcall1(data,(closure)&c_736028,  quote_char_127);}
 }
 
 static void __lambda_520(void *data, int argc, object self_732947, object r_731480) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736030;
 c_736030.hdr.mark = gc_color_red;
@@ -23137,7 +23137,7 @@ return_closcall1(data,(closure)&c_736030,  Cyc_eq(((closureN)self_732947)->elts[
 }
 
 static void __lambda_519(void *data, int argc, object self_732948, object r_731445) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731445) ){ 
   
 closureN_type c_736032;
@@ -23169,7 +23169,7 @@ return_closcall1(data,(closure)&c_736037,  quote_null_127);}
 }
 
 static void __lambda_518(void *data, int argc, object self_732949, object r_731479) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736039;
 c_736039.hdr.mark = gc_color_red;
@@ -23186,7 +23186,7 @@ return_closcall1(data,(closure)&c_736039,  Cyc_eq(((closureN)self_732949)->elts[
 }
 
 static void __lambda_517(void *data, int argc, object self_732950, object r_731446) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731446) ){ 
   
 closureN_type c_736041;
@@ -23218,7 +23218,7 @@ return_closcall1(data,(closure)&c_736046,  quote_number_127);}
 }
 
 static void __lambda_516(void *data, int argc, object self_732951, object r_731478) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736048;
 c_736048.hdr.mark = gc_color_red;
@@ -23235,7 +23235,7 @@ return_closcall1(data,(closure)&c_736048,  Cyc_eq(((closureN)self_732951)->elts[
 }
 
 static void __lambda_515(void *data, int argc, object self_732952, object r_731447) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731447) ){ 
   
 closureN_type c_736050;
@@ -23267,7 +23267,7 @@ return_closcall1(data,(closure)&c_736055,  quote_real_127);}
 }
 
 static void __lambda_514(void *data, int argc, object self_732953, object r_731477) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736057;
 c_736057.hdr.mark = gc_color_red;
@@ -23284,7 +23284,7 @@ return_closcall1(data,(closure)&c_736057,  Cyc_eq(((closureN)self_732953)->elts[
 }
 
 static void __lambda_513(void *data, int argc, object self_732954, object r_731448) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731448) ){ 
   
 closureN_type c_736059;
@@ -23316,7 +23316,7 @@ return_closcall1(data,(closure)&c_736064,  quote_integer_127);}
 }
 
 static void __lambda_512(void *data, int argc, object self_732955, object r_731476) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736066;
 c_736066.hdr.mark = gc_color_red;
@@ -23333,7 +23333,7 @@ return_closcall1(data,(closure)&c_736066,  Cyc_eq(((closureN)self_732955)->elts[
 }
 
 static void __lambda_511(void *data, int argc, object self_732956, object r_731449) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731449) ){ 
   
 closureN_type c_736068;
@@ -23365,7 +23365,7 @@ return_closcall1(data,(closure)&c_736073,  quote_pair_127);}
 }
 
 static void __lambda_510(void *data, int argc, object self_732957, object r_731475) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736075;
 c_736075.hdr.mark = gc_color_red;
@@ -23382,7 +23382,7 @@ return_closcall1(data,(closure)&c_736075,  Cyc_eq(((closureN)self_732957)->elts[
 }
 
 static void __lambda_509(void *data, int argc, object self_732958, object r_731450) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731450) ){ 
   
 closureN_type c_736077;
@@ -23414,7 +23414,7 @@ return_closcall1(data,(closure)&c_736082,  quote_procedure_127);}
 }
 
 static void __lambda_508(void *data, int argc, object self_732959, object r_731474) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736084;
 c_736084.hdr.mark = gc_color_red;
@@ -23431,7 +23431,7 @@ return_closcall1(data,(closure)&c_736084,  Cyc_eq(((closureN)self_732959)->elts[
 }
 
 static void __lambda_507(void *data, int argc, object self_732960, object r_731451) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731451) ){ 
   
 closureN_type c_736086;
@@ -23463,7 +23463,7 @@ return_closcall1(data,(closure)&c_736091,  quote_macro_127);}
 }
 
 static void __lambda_506(void *data, int argc, object self_732961, object r_731473) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736093;
 c_736093.hdr.mark = gc_color_red;
@@ -23480,7 +23480,7 @@ return_closcall1(data,(closure)&c_736093,  Cyc_eq(((closureN)self_732961)->elts[
 }
 
 static void __lambda_505(void *data, int argc, object self_732962, object r_731452) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731452) ){ 
   
 closureN_type c_736095;
@@ -23512,7 +23512,7 @@ return_closcall1(data,(closure)&c_736100,  quote_port_127);}
 }
 
 static void __lambda_504(void *data, int argc, object self_732963, object r_731472) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736102;
 c_736102.hdr.mark = gc_color_red;
@@ -23529,7 +23529,7 @@ return_closcall1(data,(closure)&c_736102,  Cyc_eq(((closureN)self_732963)->elts[
 }
 
 static void __lambda_503(void *data, int argc, object self_732964, object r_731453) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731453) ){ 
   
 closureN_type c_736104;
@@ -23561,7 +23561,7 @@ return_closcall1(data,(closure)&c_736109,  quote_vector_127);}
 }
 
 static void __lambda_502(void *data, int argc, object self_732965, object r_731471) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736111;
 c_736111.hdr.mark = gc_color_red;
@@ -23578,7 +23578,7 @@ return_closcall1(data,(closure)&c_736111,  Cyc_eq(((closureN)self_732965)->elts[
 }
 
 static void __lambda_501(void *data, int argc, object self_732966, object r_731454) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731454) ){ 
   
 closureN_type c_736113;
@@ -23610,7 +23610,7 @@ return_closcall1(data,(closure)&c_736118,  quote_string_127);}
 }
 
 static void __lambda_500(void *data, int argc, object self_732967, object r_731470) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736120;
 c_736120.hdr.mark = gc_color_red;
@@ -23627,7 +23627,7 @@ return_closcall1(data,(closure)&c_736120,  Cyc_eq(((closureN)self_732967)->elts[
 }
 
 static void __lambda_499(void *data, int argc, object self_732968, object r_731455) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731455) ){ 
   
 closureN_type c_736122;
@@ -23659,7 +23659,7 @@ return_closcall1(data,(closure)&c_736127,  quote_eof_91object_127);}
 }
 
 static void __lambda_498(void *data, int argc, object self_732969, object r_731469) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736129;
 c_736129.hdr.mark = gc_color_red;
@@ -23676,7 +23676,7 @@ return_closcall1(data,(closure)&c_736129,  Cyc_eq(((closureN)self_732969)->elts[
 }
 
 static void __lambda_497(void *data, int argc, object self_732970, object r_731456) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731456) ){ 
   
 closureN_type c_736131;
@@ -23708,7 +23708,7 @@ return_closcall1(data,(closure)&c_736136,  quote_symbol_127);}
 }
 
 static void __lambda_496(void *data, int argc, object self_732971, object r_731468) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736138;
 c_736138.hdr.mark = gc_color_red;
@@ -23725,7 +23725,7 @@ return_closcall1(data,(closure)&c_736138,  Cyc_eq(((closureN)self_732971)->elts[
 }
 
 static void __lambda_495(void *data, int argc, object self_732972, object r_731457) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731457) ){ 
   
 closureN_type c_736140;
@@ -23757,7 +23757,7 @@ return_closcall1(data,(closure)&c_736145,  quote_cons);}
 }
 
 static void __lambda_494(void *data, int argc, object self_732973, object r_731467) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736147;
 c_736147.hdr.mark = gc_color_red;
@@ -23774,7 +23774,7 @@ return_closcall1(data,(closure)&c_736147,  Cyc_eq(((closureN)self_732973)->elts[
 }
 
 static void __lambda_493(void *data, int argc, object self_732974, object r_731458) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731458) ){ 
   
 closureN_type c_736149;
@@ -23806,7 +23806,7 @@ return_closcall1(data,(closure)&c_736154,  quote_cell);}
 }
 
 static void __lambda_492(void *data, int argc, object self_732975, object r_731466) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736156;
 c_736156.hdr.mark = gc_color_red;
@@ -23823,7 +23823,7 @@ return_closcall1(data,(closure)&c_736156,  Cyc_eq(((closureN)self_732975)->elts[
 }
 
 static void __lambda_491(void *data, int argc, object self_732976, object r_731459) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731459) ){ 
   
 closureN_type c_736158;
@@ -23855,7 +23855,7 @@ return_closcall1(data,(closure)&c_736163,  quote_cell_91get);}
 }
 
 static void __lambda_490(void *data, int argc, object self_732977, object r_731465) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736165;
 c_736165.hdr.mark = gc_color_red;
@@ -23872,7 +23872,7 @@ return_closcall1(data,(closure)&c_736165,  Cyc_eq(((closureN)self_732977)->elts[
 }
 
 static void __lambda_489(void *data, int argc, object self_732978, object r_731460) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731460) ){ 
   
 closureN_type c_736167;
@@ -23904,7 +23904,7 @@ return_closcall1(data,(closure)&c_736172,  quote_set_91cell_67);}
 }
 
 static void __lambda_488(void *data, int argc, object self_732979, object r_731464) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736174;
 c_736174.hdr.mark = gc_color_red;
@@ -23921,7 +23921,7 @@ return_closcall1(data,(closure)&c_736174,  Cyc_eq(((closureN)self_732979)->elts[
 }
 
 static void __lambda_487(void *data, int argc, object self_732980, object r_731461) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731461) ){ 
   
 closureN_type c_736176;
@@ -23953,7 +23953,7 @@ return_closcall1(data,(closure)&c_736181,  quote_set_91global_67);}
 }
 
 static void __lambda_486(void *data, int argc, object self_732981, object r_731463) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 closureN_type c_736183;
 c_736183.hdr.mark = gc_color_red;
@@ -23970,7 +23970,7 @@ return_closcall1(data,(closure)&c_736183,  Cyc_eq(((closureN)self_732981)->elts[
 }
 
 static void __lambda_485(void *data, int argc, object self_732982, object r_731462) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 if( !eq(boolean_f, r_731462) ){ 
   
 closureN_type c_736185;
@@ -24002,840 +24002,840 @@ return_closcall0(data,(closure)&c_736190);}
 }
 
 static void __lambda_484(void *data, int argc, object self_732983) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736193, "unhandled primitive: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732983)->elts[0], &c_736193, ((closureN)self_732983)->elts[1]);; 
 }
 
 static void __lambda_483(void *data, int argc, object self_732984) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736188, "global_set");
 return_closcall1(data,  ((closureN)self_732984)->elts[0],  &c_736188);; 
 }
 
 static void __lambda_482(void *data, int argc, object self_732985) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736179, "Cyc_set_car");
 return_closcall1(data,  ((closureN)self_732985)->elts[0],  &c_736179);; 
 }
 
 static void __lambda_481(void *data, int argc, object self_732986) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736170, "cell_get");
 return_closcall1(data,  ((closureN)self_732986)->elts[0],  &c_736170);; 
 }
 
 static void __lambda_480(void *data, int argc, object self_732987) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736161, "make_cell");
 return_closcall1(data,  ((closureN)self_732987)->elts[0],  &c_736161);; 
 }
 
 static void __lambda_479(void *data, int argc, object self_732988) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736152, "make_cons");
 return_closcall1(data,  ((closureN)self_732988)->elts[0],  &c_736152);; 
 }
 
 static void __lambda_478(void *data, int argc, object self_732989) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736143, "Cyc_is_symbol");
 return_closcall1(data,  ((closureN)self_732989)->elts[0],  &c_736143);; 
 }
 
 static void __lambda_477(void *data, int argc, object self_732990) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736134, "Cyc_is_eof_object");
 return_closcall1(data,  ((closureN)self_732990)->elts[0],  &c_736134);; 
 }
 
 static void __lambda_476(void *data, int argc, object self_732991) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736125, "Cyc_is_string");
 return_closcall1(data,  ((closureN)self_732991)->elts[0],  &c_736125);; 
 }
 
 static void __lambda_475(void *data, int argc, object self_732992) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736116, "Cyc_is_vector");
 return_closcall1(data,  ((closureN)self_732992)->elts[0],  &c_736116);; 
 }
 
 static void __lambda_474(void *data, int argc, object self_732993) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736107, "Cyc_is_port");
 return_closcall1(data,  ((closureN)self_732993)->elts[0],  &c_736107);; 
 }
 
 static void __lambda_473(void *data, int argc, object self_732994) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736098, "Cyc_is_macro");
 return_closcall1(data,  ((closureN)self_732994)->elts[0],  &c_736098);; 
 }
 
 static void __lambda_472(void *data, int argc, object self_732995) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736089, "Cyc_is_procedure");
 return_closcall1(data,  ((closureN)self_732995)->elts[0],  &c_736089);; 
 }
 
 static void __lambda_471(void *data, int argc, object self_732996) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736080, "Cyc_is_cons");
 return_closcall1(data,  ((closureN)self_732996)->elts[0],  &c_736080);; 
 }
 
 static void __lambda_470(void *data, int argc, object self_732997) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736071, "Cyc_is_integer");
 return_closcall1(data,  ((closureN)self_732997)->elts[0],  &c_736071);; 
 }
 
 static void __lambda_469(void *data, int argc, object self_732998) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736062, "Cyc_is_real");
 return_closcall1(data,  ((closureN)self_732998)->elts[0],  &c_736062);; 
 }
 
 static void __lambda_468(void *data, int argc, object self_732999) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736053, "Cyc_is_number");
 return_closcall1(data,  ((closureN)self_732999)->elts[0],  &c_736053);; 
 }
 
 static void __lambda_467(void *data, int argc, object self_733000) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736044, "Cyc_is_null");
 return_closcall1(data,  ((closureN)self_733000)->elts[0],  &c_736044);; 
 }
 
 static void __lambda_466(void *data, int argc, object self_733001) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736035, "Cyc_is_char");
 return_closcall1(data,  ((closureN)self_733001)->elts[0],  &c_736035);; 
 }
 
 static void __lambda_465(void *data, int argc, object self_733002) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736026, "Cyc_is_boolean");
 return_closcall1(data,  ((closureN)self_733002)->elts[0],  &c_736026);; 
 }
 
 static void __lambda_464(void *data, int argc, object self_733003) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736017, "equalp");
 return_closcall1(data,  ((closureN)self_733003)->elts[0],  &c_736017);; 
 }
 
 static void __lambda_463(void *data, int argc, object self_733004) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_736008, "Cyc_eq");
 return_closcall1(data,  ((closureN)self_733004)->elts[0],  &c_736008);; 
 }
 
 static void __lambda_462(void *data, int argc, object self_733005) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735999, "Cyc_eq");
 return_closcall1(data,  ((closureN)self_733005)->elts[0],  &c_735999);; 
 }
 
 static void __lambda_461(void *data, int argc, object self_733006) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735990, "Cyc_set_cdr");
 return_closcall1(data,  ((closureN)self_733006)->elts[0],  &c_735990);; 
 }
 
 static void __lambda_460(void *data, int argc, object self_733007) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735981, "Cyc_set_car");
 return_closcall1(data,  ((closureN)self_733007)->elts[0],  &c_735981);; 
 }
 
 static void __lambda_459(void *data, int argc, object self_733008) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735972, "Cyc_length");
 return_closcall1(data,  ((closureN)self_733008)->elts[0],  &c_735972);; 
 }
 
 static void __lambda_458(void *data, int argc, object self_733009) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735963, "memberp");
 return_closcall1(data,  ((closureN)self_733009)->elts[0],  &c_735963);; 
 }
 
 static void __lambda_457(void *data, int argc, object self_733010) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735954, "memqp");
 return_closcall1(data,  ((closureN)self_733010)->elts[0],  &c_735954);; 
 }
 
 static void __lambda_456(void *data, int argc, object self_733011) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735945, "memqp");
 return_closcall1(data,  ((closureN)self_733011)->elts[0],  &c_735945);; 
 }
 
 static void __lambda_455(void *data, int argc, object self_733012) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735936, "assoc");
 return_closcall1(data,  ((closureN)self_733012)->elts[0],  &c_735936);; 
 }
 
 static void __lambda_454(void *data, int argc, object self_733013) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735927, "assq");
 return_closcall1(data,  ((closureN)self_733013)->elts[0],  &c_735927);; 
 }
 
 static void __lambda_453(void *data, int argc, object self_733014) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735918, "assq");
 return_closcall1(data,  ((closureN)self_733014)->elts[0],  &c_735918);; 
 }
 
 static void __lambda_452(void *data, int argc, object self_733015) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735909, "Cyc_system");
 return_closcall1(data,  ((closureN)self_733015)->elts[0],  &c_735909);; 
 }
 
 static void __lambda_451(void *data, int argc, object self_733016) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735900, "Cyc_command_line_arguments");
 return_closcall1(data,  ((closureN)self_733016)->elts[0],  &c_735900);; 
 }
 
 static void __lambda_450(void *data, int argc, object self_733017) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735891, "Cyc_installation_dir");
 return_closcall1(data,  ((closureN)self_733017)->elts[0],  &c_735891);; 
 }
 
 static void __lambda_449(void *data, int argc, object self_733018) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735882, "Cyc_substring");
 return_closcall1(data,  ((closureN)self_733018)->elts[0],  &c_735882);; 
 }
 
 static void __lambda_448(void *data, int argc, object self_733019) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735873, "Cyc_string_set");
 return_closcall1(data,  ((closureN)self_733019)->elts[0],  &c_735873);; 
 }
 
 static void __lambda_447(void *data, int argc, object self_733020) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735864, "Cyc_string_ref");
 return_closcall1(data,  ((closureN)self_733020)->elts[0],  &c_735864);; 
 }
 
 static void __lambda_446(void *data, int argc, object self_733021) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735855, "Cyc_string_length");
 return_closcall1(data,  ((closureN)self_733021)->elts[0],  &c_735855);; 
 }
 
 static void __lambda_445(void *data, int argc, object self_733022) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735846, "Cyc_number2string");
 return_closcall1(data,  ((closureN)self_733022)->elts[0],  &c_735846);; 
 }
 
 static void __lambda_444(void *data, int argc, object self_733023) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735837, "Cyc_symbol2string");
 return_closcall1(data,  ((closureN)self_733023)->elts[0],  &c_735837);; 
 }
 
 static void __lambda_443(void *data, int argc, object self_733024) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735828, "Cyc_string2symbol");
 return_closcall1(data,  ((closureN)self_733024)->elts[0],  &c_735828);; 
 }
 
 static void __lambda_442(void *data, int argc, object self_733025) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735819, "Cyc_string_cmp");
 return_closcall1(data,  ((closureN)self_733025)->elts[0],  &c_735819);; 
 }
 
 static void __lambda_441(void *data, int argc, object self_733026) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735810, "Cyc_string_append");
 return_closcall1(data,  ((closureN)self_733026)->elts[0],  &c_735810);; 
 }
 
 static void __lambda_440(void *data, int argc, object self_733027) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735801, "Cyc_vector_set");
 return_closcall1(data,  ((closureN)self_733027)->elts[0],  &c_735801);; 
 }
 
 static void __lambda_439(void *data, int argc, object self_733028) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735792, "Cyc_vector_ref");
 return_closcall1(data,  ((closureN)self_733028)->elts[0],  &c_735792);; 
 }
 
 static void __lambda_438(void *data, int argc, object self_733029) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735783, "Cyc_vector_length");
 return_closcall1(data,  ((closureN)self_733029)->elts[0],  &c_735783);; 
 }
 
 static void __lambda_437(void *data, int argc, object self_733030) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735774, "Cyc_list2vector");
 return_closcall1(data,  ((closureN)self_733030)->elts[0],  &c_735774);; 
 }
 
 static void __lambda_436(void *data, int argc, object self_733031) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735765, "Cyc_make_vector");
 return_closcall1(data,  ((closureN)self_733031)->elts[0],  &c_735765);; 
 }
 
 static void __lambda_435(void *data, int argc, object self_733032) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735756, "Cyc_list2string");
 return_closcall1(data,  ((closureN)self_733032)->elts[0],  &c_735756);; 
 }
 
 static void __lambda_434(void *data, int argc, object self_733033) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735747, "Cyc_string2number");
 return_closcall1(data,  ((closureN)self_733033)->elts[0],  &c_735747);; 
 }
 
 static void __lambda_433(void *data, int argc, object self_733034) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735738, "Cyc_integer2char");
 return_closcall1(data,  ((closureN)self_733034)->elts[0],  &c_735738);; 
 }
 
 static void __lambda_432(void *data, int argc, object self_733035) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735729, "Cyc_char2integer");
 return_closcall1(data,  ((closureN)self_733035)->elts[0],  &c_735729);; 
 }
 
 static void __lambda_431(void *data, int argc, object self_733036) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735720, "cddddr");
 return_closcall1(data,  ((closureN)self_733036)->elts[0],  &c_735720);; 
 }
 
 static void __lambda_430(void *data, int argc, object self_733037) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735711, "cdddar");
 return_closcall1(data,  ((closureN)self_733037)->elts[0],  &c_735711);; 
 }
 
 static void __lambda_429(void *data, int argc, object self_733038) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735702, "cddadr");
 return_closcall1(data,  ((closureN)self_733038)->elts[0],  &c_735702);; 
 }
 
 static void __lambda_428(void *data, int argc, object self_733039) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735693, "cddaar");
 return_closcall1(data,  ((closureN)self_733039)->elts[0],  &c_735693);; 
 }
 
 static void __lambda_427(void *data, int argc, object self_733040) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735684, "cdaddr");
 return_closcall1(data,  ((closureN)self_733040)->elts[0],  &c_735684);; 
 }
 
 static void __lambda_426(void *data, int argc, object self_733041) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735675, "cdadar");
 return_closcall1(data,  ((closureN)self_733041)->elts[0],  &c_735675);; 
 }
 
 static void __lambda_425(void *data, int argc, object self_733042) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735666, "cdaadr");
 return_closcall1(data,  ((closureN)self_733042)->elts[0],  &c_735666);; 
 }
 
 static void __lambda_424(void *data, int argc, object self_733043) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735657, "cdaaar");
 return_closcall1(data,  ((closureN)self_733043)->elts[0],  &c_735657);; 
 }
 
 static void __lambda_423(void *data, int argc, object self_733044) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735648, "cadddr");
 return_closcall1(data,  ((closureN)self_733044)->elts[0],  &c_735648);; 
 }
 
 static void __lambda_422(void *data, int argc, object self_733045) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735639, "caddar");
 return_closcall1(data,  ((closureN)self_733045)->elts[0],  &c_735639);; 
 }
 
 static void __lambda_421(void *data, int argc, object self_733046) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735630, "cadadr");
 return_closcall1(data,  ((closureN)self_733046)->elts[0],  &c_735630);; 
 }
 
 static void __lambda_420(void *data, int argc, object self_733047) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735621, "cadaar");
 return_closcall1(data,  ((closureN)self_733047)->elts[0],  &c_735621);; 
 }
 
 static void __lambda_419(void *data, int argc, object self_733048) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735612, "caaddr");
 return_closcall1(data,  ((closureN)self_733048)->elts[0],  &c_735612);; 
 }
 
 static void __lambda_418(void *data, int argc, object self_733049) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735603, "caadar");
 return_closcall1(data,  ((closureN)self_733049)->elts[0],  &c_735603);; 
 }
 
 static void __lambda_417(void *data, int argc, object self_733050) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735594, "caaadr");
 return_closcall1(data,  ((closureN)self_733050)->elts[0],  &c_735594);; 
 }
 
 static void __lambda_416(void *data, int argc, object self_733051) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735585, "caaaar");
 return_closcall1(data,  ((closureN)self_733051)->elts[0],  &c_735585);; 
 }
 
 static void __lambda_415(void *data, int argc, object self_733052) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735576, "cdddr");
 return_closcall1(data,  ((closureN)self_733052)->elts[0],  &c_735576);; 
 }
 
 static void __lambda_414(void *data, int argc, object self_733053) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735567, "cddar");
 return_closcall1(data,  ((closureN)self_733053)->elts[0],  &c_735567);; 
 }
 
 static void __lambda_413(void *data, int argc, object self_733054) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735558, "cdadr");
 return_closcall1(data,  ((closureN)self_733054)->elts[0],  &c_735558);; 
 }
 
 static void __lambda_412(void *data, int argc, object self_733055) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735549, "cdaar");
 return_closcall1(data,  ((closureN)self_733055)->elts[0],  &c_735549);; 
 }
 
 static void __lambda_411(void *data, int argc, object self_733056) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735540, "caddr");
 return_closcall1(data,  ((closureN)self_733056)->elts[0],  &c_735540);; 
 }
 
 static void __lambda_410(void *data, int argc, object self_733057) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735531, "cadar");
 return_closcall1(data,  ((closureN)self_733057)->elts[0],  &c_735531);; 
 }
 
 static void __lambda_409(void *data, int argc, object self_733058) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735522, "caadr");
 return_closcall1(data,  ((closureN)self_733058)->elts[0],  &c_735522);; 
 }
 
 static void __lambda_408(void *data, int argc, object self_733059) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735513, "caaar");
 return_closcall1(data,  ((closureN)self_733059)->elts[0],  &c_735513);; 
 }
 
 static void __lambda_407(void *data, int argc, object self_733060) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735504, "cddr");
 return_closcall1(data,  ((closureN)self_733060)->elts[0],  &c_735504);; 
 }
 
 static void __lambda_406(void *data, int argc, object self_733061) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735495, "cdar");
 return_closcall1(data,  ((closureN)self_733061)->elts[0],  &c_735495);; 
 }
 
 static void __lambda_405(void *data, int argc, object self_733062) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735486, "cadr");
 return_closcall1(data,  ((closureN)self_733062)->elts[0],  &c_735486);; 
 }
 
 static void __lambda_404(void *data, int argc, object self_733063) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735477, "caar");
 return_closcall1(data,  ((closureN)self_733063)->elts[0],  &c_735477);; 
 }
 
 static void __lambda_403(void *data, int argc, object self_733064) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735468, "cdr");
 return_closcall1(data,  ((closureN)self_733064)->elts[0],  &c_735468);; 
 }
 
 static void __lambda_402(void *data, int argc, object self_733065) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735459, "car");
 return_closcall1(data,  ((closureN)self_733065)->elts[0],  &c_735459);; 
 }
 
 static void __lambda_401(void *data, int argc, object self_733066) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735450, "Cyc_write_char");
 return_closcall1(data,  ((closureN)self_733066)->elts[0],  &c_735450);; 
 }
 
 static void __lambda_400(void *data, int argc, object self_733067) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735441, "Cyc_write_va");
 return_closcall1(data,  ((closureN)self_733067)->elts[0],  &c_735441);; 
 }
 
 static void __lambda_399(void *data, int argc, object self_733068) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735432, "Cyc_display_va");
 return_closcall1(data,  ((closureN)self_733068)->elts[0],  &c_735432);; 
 }
 
 static void __lambda_398(void *data, int argc, object self_733069) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735423, "Cyc_io_read_line");
 return_closcall1(data,  ((closureN)self_733069)->elts[0],  &c_735423);; 
 }
 
 static void __lambda_397(void *data, int argc, object self_733070) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735414, "Cyc_io_peek_char");
 return_closcall1(data,  ((closureN)self_733070)->elts[0],  &c_735414);; 
 }
 
 static void __lambda_396(void *data, int argc, object self_733071) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735405, "Cyc_io_read_char");
 return_closcall1(data,  ((closureN)self_733071)->elts[0],  &c_735405);; 
 }
 
 static void __lambda_395(void *data, int argc, object self_733072) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735396, "Cyc_io_delete_file");
 return_closcall1(data,  ((closureN)self_733072)->elts[0],  &c_735396);; 
 }
 
 static void __lambda_394(void *data, int argc, object self_733073) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735387, "Cyc_io_file_exists");
 return_closcall1(data,  ((closureN)self_733073)->elts[0],  &c_735387);; 
 }
 
 static void __lambda_393(void *data, int argc, object self_733074) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735378, "Cyc_io_flush_output_port");
 return_closcall1(data,  ((closureN)self_733074)->elts[0],  &c_735378);; 
 }
 
 static void __lambda_392(void *data, int argc, object self_733075) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735369, "Cyc_io_close_output_port");
 return_closcall1(data,  ((closureN)self_733075)->elts[0],  &c_735369);; 
 }
 
 static void __lambda_391(void *data, int argc, object self_733076) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735360, "Cyc_io_close_input_port");
 return_closcall1(data,  ((closureN)self_733076)->elts[0],  &c_735360);; 
 }
 
 static void __lambda_390(void *data, int argc, object self_733077) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735351, "Cyc_io_close_port");
 return_closcall1(data,  ((closureN)self_733077)->elts[0],  &c_735351);; 
 }
 
 static void __lambda_389(void *data, int argc, object self_733078) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735342, "Cyc_io_open_output_file");
 return_closcall1(data,  ((closureN)self_733078)->elts[0],  &c_735342);; 
 }
 
 static void __lambda_388(void *data, int argc, object self_733079) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735333, "Cyc_io_open_input_file");
 return_closcall1(data,  ((closureN)self_733079)->elts[0],  &c_735333);; 
 }
 
 static void __lambda_387(void *data, int argc, object self_733080) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735324, "Cyc_current_exception_handler");
 return_closcall1(data,  ((closureN)self_733080)->elts[0],  &c_735324);; 
 }
 
 static void __lambda_386(void *data, int argc, object self_733081) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735315, "Cyc_default_exception_handler");
 return_closcall1(data,  ((closureN)self_733081)->elts[0],  &c_735315);; 
 }
 
 static void __lambda_385(void *data, int argc, object self_733082) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735306, "__halt");
 return_closcall1(data,  ((closureN)self_733082)->elts[0],  &c_735306);; 
 }
 
 static void __lambda_384(void *data, int argc, object self_733083) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735297, "__halt");
 return_closcall1(data,  ((closureN)self_733083)->elts[0],  &c_735297);; 
 }
 
 static void __lambda_383(void *data, int argc, object self_733084) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735288, "apply");
 return_closcall1(data,  ((closureN)self_733084)->elts[0],  &c_735288);; 
 }
 
 static void __lambda_382(void *data, int argc, object self_733085) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735279, "__num_lte");
 return_closcall1(data,  ((closureN)self_733085)->elts[0],  &c_735279);; 
 }
 
 static void __lambda_381(void *data, int argc, object self_733086) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735270, "__num_gte");
 return_closcall1(data,  ((closureN)self_733086)->elts[0],  &c_735270);; 
 }
 
 static void __lambda_380(void *data, int argc, object self_733087) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735261, "__num_lt");
 return_closcall1(data,  ((closureN)self_733087)->elts[0],  &c_735261);; 
 }
 
 static void __lambda_379(void *data, int argc, object self_733088) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735252, "__num_gt");
 return_closcall1(data,  ((closureN)self_733088)->elts[0],  &c_735252);; 
 }
 
 static void __lambda_378(void *data, int argc, object self_733089) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735243, "__num_eq");
 return_closcall1(data,  ((closureN)self_733089)->elts[0],  &c_735243);; 
 }
 
 static void __lambda_377(void *data, int argc, object self_733090) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735234, "Cyc_div");
 return_closcall1(data,  ((closureN)self_733090)->elts[0],  &c_735234);; 
 }
 
 static void __lambda_376(void *data, int argc, object self_733091) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735225, "Cyc_mul");
 return_closcall1(data,  ((closureN)self_733091)->elts[0],  &c_735225);; 
 }
 
 static void __lambda_375(void *data, int argc, object self_733092) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735216, "Cyc_sub");
 return_closcall1(data,  ((closureN)self_733092)->elts[0],  &c_735216);; 
 }
 
 static void __lambda_374(void *data, int argc, object self_733093) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735207, "Cyc_sum");
 return_closcall1(data,  ((closureN)self_733093)->elts[0],  &c_735207);; 
 }
 
 static void __lambda_373(void *data, int argc, object self_733094) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735198, "Cyc_stderr");
 return_closcall1(data,  ((closureN)self_733094)->elts[0],  &c_735198);; 
 }
 
 static void __lambda_372(void *data, int argc, object self_733095) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735189, "Cyc_stdin");
 return_closcall1(data,  ((closureN)self_733095)->elts[0],  &c_735189);; 
 }
 
 static void __lambda_371(void *data, int argc, object self_733096) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735180, "Cyc_stdout");
 return_closcall1(data,  ((closureN)self_733096)->elts[0],  &c_735180);; 
 }
 
 static void __lambda_370(void *data, int argc, object self_733097) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735171, "Cyc_has_cycle");
 return_closcall1(data,  ((closureN)self_733097)->elts[0],  &c_735171);; 
 }
 
 static void __lambda_369(void *data, int argc, object self_733098) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735162, "Cyc_is_cvar");
 return_closcall1(data,  ((closureN)self_733098)->elts[0],  &c_735162);; 
 }
 
 static void __lambda_368(void *data, int argc, object self_733099) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735153, "Cyc_set_cvar");
 return_closcall1(data,  ((closureN)self_733099)->elts[0],  &c_735153);; 
 }
 
 static void __lambda_367(void *data, int argc, object self_733100) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735144, "Cyc_get_cvar");
 return_closcall1(data,  ((closureN)self_733100)->elts[0],  &c_735144);; 
 }
 
 static void __lambda_366(void *data, int argc, object self_733101) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:prim->c-func");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
 make_string(c_735135, "Cyc_get_global_variables");
 return_closcall1(data,  ((closureN)self_733101)->elts[0],  &c_735135);; 
 }
 
 static void __lambda_365(void *data, int argc, closure _,object k_731583, object str_73509) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:->cstr");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:->cstr");
 
 closureN_type c_735118;
 c_735118.hdr.mark = gc_color_red;
@@ -24851,7 +24851,7 @@ return_closcall2(data,  __glo_cstr_117escape_91chars,  &c_735118, str_73509);;
 }
 
 static void __lambda_364(void *data, int argc, object self_733102, object r_731584) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:->cstr");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:->cstr");
 
 make_string(c_735124, "\"");
 
@@ -24862,7 +24862,7 @@ return_closcall1(data,  ((closureN)self_733102)->elts[0],  c_735123);;
 }
 
 static void __lambda_363(void *data, int argc, closure _,object k_731587, object exp_73510) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734892;
 c_734892.hdr.mark = gc_color_red;
@@ -24879,7 +24879,7 @@ return_closcall1(data,(closure)&c_734892,  Cyc_is_null(exp_73510));;
 }
 
 static void __lambda_362(void *data, int argc, object self_733103, object r_731588) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731588) ){ 
   
 closureN_type c_734894;
@@ -24911,7 +24911,7 @@ return_closcall1(data,(closure)&c_734899,  Cyc_is_cons(((closureN)self_733103)->
 }
 
 static void __lambda_361(void *data, int argc, object self_733104, object r_731589) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731589) ){ 
   
 closureN_type c_734901;
@@ -24944,7 +24944,7 @@ return_closcall1(data,(closure)&c_734906,  Cyc_is_vector(((closureN)self_733104)
 }
 
 static void __lambda_360(void *data, int argc, object self_733105, object r_731590) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731590) ){ 
   
 closureN_type c_734908;
@@ -24977,7 +24977,7 @@ return_closcall1(data,(closure)&c_734913,  Cyc_is_integer(((closureN)self_733105
 }
 
 static void __lambda_359(void *data, int argc, object self_733106, object r_731591) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731591) ){ 
   
 closureN_type c_734915;
@@ -25010,7 +25010,7 @@ return_closcall1(data,(closure)&c_734951,  Cyc_is_real(((closureN)self_733106)->
 }
 
 static void __lambda_358(void *data, int argc, object self_733107, object r_731599) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731599) ){ 
   
 closureN_type c_734953;
@@ -25043,7 +25043,7 @@ return_closcall1(data,(closure)&c_734989,  Cyc_is_boolean(((closureN)self_733107
 }
 
 static void __lambda_357(void *data, int argc, object self_733108, object r_731607) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731607) ){ 
   
 closureN_type c_734991;
@@ -25076,7 +25076,7 @@ return_closcall1(data,(closure)&c_735008,  Cyc_is_char(((closureN)self_733108)->
 }
 
 static void __lambda_356(void *data, int argc, object self_733109, object r_731611) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731611) ){ 
   
 closureN_type c_735010;
@@ -25109,7 +25109,7 @@ return_closcall1(data,(closure)&c_735032,  Cyc_is_string(((closureN)self_733109)
 }
 
 static void __lambda_355(void *data, int argc, object self_733110, object r_731615) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731615) ){ 
   
 closureN_type c_735034;
@@ -25142,7 +25142,7 @@ return_closcall1(data,(closure)&c_735067,  Cyc_is_symbol(((closureN)self_733110)
 }
 
 static void __lambda_354(void *data, int argc, object self_733111, object r_731623) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, r_731623) ){ 
   
 closureN_type c_735069;
@@ -25175,14 +25175,14 @@ return_closcall0(data,(closure)&c_735085);}
 }
 
 static void __lambda_353(void *data, int argc, object self_733112) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 make_string(c_735088, "unknown constant: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_733112)->elts[1], &c_735088, ((closureN)self_733112)->elts[0]);; 
 }
 
 static void __lambda_352(void *data, int argc, object self_733113) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735071;
 c_735071.hdr.mark = gc_color_red;
@@ -25199,7 +25199,7 @@ return_closcall2(data,  __glo_allocate_91symbol,  &c_735071, ((closureN)self_733
 }
 
 static void __lambda_351(void *data, int argc, object self_733114, object r_731624) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735073;
 c_735073.hdr.mark = gc_color_red;
@@ -25215,7 +25215,7 @@ return_closcall2(data,  __glo_mangle,  &c_735073, ((closureN)self_733114)->elts[
 }
 
 static void __lambda_350(void *data, int argc, object self_733115, object r_731626) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735075;
 c_735075.hdr.mark = gc_color_red;
@@ -25235,12 +25235,12 @@ return_closcall1(data,(closure)&c_735075,  c_735080);;
 }
 
 static void __lambda_349(void *data, int argc, object self_733116, object r_731625) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733116)->elts[0], r_731625);; 
 }
 
 static void __lambda_348(void *data, int argc, object self_733117) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735036;
 c_735036.hdr.mark = gc_color_red;
@@ -25257,7 +25257,7 @@ return_closcall1(data,(closure)&c_735036,  quote_c);;
 }
 
 static void __lambda_347(void *data, int argc, object self_733118, object r_731622) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735038;
 c_735038.hdr.mark = gc_color_red;
@@ -25274,7 +25274,7 @@ return_closcall2(data,  __glo_gensym,  &c_735038, r_731622);;
 }
 
 static void __lambda_346(void *data, int argc, object self_733119, object r_731621) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735040;
 c_735040.hdr.mark = gc_color_red;
@@ -25291,7 +25291,7 @@ return_closcall2(data,  __glo_mangle,  &c_735040, r_731621);;
 }
 
 static void __lambda_345(void *data, int argc, object self_733120, object r_731616) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735042;
 c_735042.hdr.mark = gc_color_red;
@@ -25308,7 +25308,7 @@ return_closcall1(data,(closure)&c_735042,  r_731616);;
 }
 
 static void __lambda_344(void *data, int argc, object self_733121, object cvar_91name_73511) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735044;
 c_735044.hdr.mark = gc_color_red;
@@ -25330,7 +25330,7 @@ return_closcall1(data,(closure)&c_735044,  c_735064);;
 }
 
 static void __lambda_343(void *data, int argc, object self_733122, object r_731617) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735046;
 c_735046.hdr.mark = gc_color_red;
@@ -25348,7 +25348,7 @@ return_closcall2(data,  __glo__91_125cstr,  &c_735046, ((closureN)self_733122)->
 }
 
 static void __lambda_342(void *data, int argc, object self_733123, object r_731620) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735048;
 c_735048.hdr.mark = gc_color_red;
@@ -25373,7 +25373,7 @@ return_closcall1(data,(closure)&c_735048,  c_735056);;
 }
 
 static void __lambda_341(void *data, int argc, object self_733124, object r_731619) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735050;
 c_735050.hdr.mark = gc_color_red;
@@ -25390,12 +25390,12 @@ return_closcall2(data,  __glo__list,  &c_735050, r_731619);;
 }
 
 static void __lambda_340(void *data, int argc, object self_733125, object r_731618) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733125)->elts[0], ((closureN)self_733125)->elts[1], r_731618);; 
 }
 
 static void __lambda_339(void *data, int argc, object self_733126) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735012;
 c_735012.hdr.mark = gc_color_red;
@@ -25413,7 +25413,7 @@ return_closcall1(data,(closure)&c_735012,  &c_735029);;
 }
 
 static void __lambda_338(void *data, int argc, object self_733127, object r_731614) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735014;
 c_735014.hdr.mark = gc_color_red;
@@ -25431,7 +25431,7 @@ return_closcall1(data,(closure)&c_735014,  c_735026);;
 }
 
 static void __lambda_337(void *data, int argc, object self_733128, object r_731613) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735016;
 c_735016.hdr.mark = gc_color_red;
@@ -25453,12 +25453,12 @@ return_closcall1(data,(closure)&c_735016,  c_735021);;
 }
 
 static void __lambda_336(void *data, int argc, object self_733129, object r_731612) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733129)->elts[0], r_731612);; 
 }
 
 static void __lambda_335(void *data, int argc, object self_733130) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734993;
 c_734993.hdr.mark = gc_color_red;
@@ -25485,7 +25485,7 @@ return_closcall1(data,(closure)&c_734993,  &c_734999);;
 }
 
 static void __lambda_334(void *data, int argc, object self_733131, object r_731609) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_735001;
 c_735001.hdr.mark = gc_color_red;
@@ -25503,12 +25503,12 @@ return_closcall1(data,(closure)&c_735001,  c_735006);;
 }
 
 static void __lambda_333(void *data, int argc, object self_733132, object r_731608) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733132)->elts[0], r_731608);; 
 }
 
 static void __lambda_332(void *data, int argc, object self_733133, object k_731610) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 if( !eq(boolean_f, ((closureN)self_733133)->elts[0]) ){ 
   
 make_string(c_734996, "boolean_t");
@@ -25521,7 +25521,7 @@ return_closcall1(data,  k_731610,  &c_734998);}
 }
 
 static void __lambda_331(void *data, int argc, object self_733134) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734955;
 c_734955.hdr.mark = gc_color_red;
@@ -25538,7 +25538,7 @@ return_closcall1(data,(closure)&c_734955,  quote_c);;
 }
 
 static void __lambda_330(void *data, int argc, object self_733135, object r_731606) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734957;
 c_734957.hdr.mark = gc_color_red;
@@ -25555,7 +25555,7 @@ return_closcall2(data,  __glo_gensym,  &c_734957, r_731606);;
 }
 
 static void __lambda_329(void *data, int argc, object self_733136, object r_731605) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734959;
 c_734959.hdr.mark = gc_color_red;
@@ -25572,7 +25572,7 @@ return_closcall2(data,  __glo_mangle,  &c_734959, r_731605);;
 }
 
 static void __lambda_328(void *data, int argc, object self_733137, object r_731600) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734961;
 c_734961.hdr.mark = gc_color_red;
@@ -25589,7 +25589,7 @@ return_closcall1(data,(closure)&c_734961,  r_731600);;
 }
 
 static void __lambda_327(void *data, int argc, object self_733138, object cvar_91name_73512) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734963;
 c_734963.hdr.mark = gc_color_red;
@@ -25611,7 +25611,7 @@ return_closcall1(data,(closure)&c_734963,  c_734986);;
 }
 
 static void __lambda_326(void *data, int argc, object self_733139, object r_731601) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734965;
 c_734965.hdr.mark = gc_color_red;
@@ -25631,7 +25631,7 @@ return_closcall1(data,(closure)&c_734965,  c_734982);;
 }
 
 static void __lambda_325(void *data, int argc, object self_733140, object r_731604) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734967;
 c_734967.hdr.mark = gc_color_red;
@@ -25656,7 +25656,7 @@ return_closcall1(data,(closure)&c_734967,  c_734975);;
 }
 
 static void __lambda_324(void *data, int argc, object self_733141, object r_731603) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734969;
 c_734969.hdr.mark = gc_color_red;
@@ -25673,12 +25673,12 @@ return_closcall2(data,  __glo__list,  &c_734969, r_731603);;
 }
 
 static void __lambda_323(void *data, int argc, object self_733142, object r_731602) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733142)->elts[0], ((closureN)self_733142)->elts[1], r_731602);; 
 }
 
 static void __lambda_322(void *data, int argc, object self_733143) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734917;
 c_734917.hdr.mark = gc_color_red;
@@ -25695,7 +25695,7 @@ return_closcall1(data,(closure)&c_734917,  quote_c);;
 }
 
 static void __lambda_321(void *data, int argc, object self_733144, object r_731598) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734919;
 c_734919.hdr.mark = gc_color_red;
@@ -25712,7 +25712,7 @@ return_closcall2(data,  __glo_gensym,  &c_734919, r_731598);;
 }
 
 static void __lambda_320(void *data, int argc, object self_733145, object r_731597) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734921;
 c_734921.hdr.mark = gc_color_red;
@@ -25729,7 +25729,7 @@ return_closcall2(data,  __glo_mangle,  &c_734921, r_731597);;
 }
 
 static void __lambda_319(void *data, int argc, object self_733146, object r_731592) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734923;
 c_734923.hdr.mark = gc_color_red;
@@ -25746,7 +25746,7 @@ return_closcall1(data,(closure)&c_734923,  r_731592);;
 }
 
 static void __lambda_318(void *data, int argc, object self_733147, object cvar_91name_73513) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734925;
 c_734925.hdr.mark = gc_color_red;
@@ -25768,7 +25768,7 @@ return_closcall1(data,(closure)&c_734925,  c_734948);;
 }
 
 static void __lambda_317(void *data, int argc, object self_733148, object r_731593) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734927;
 c_734927.hdr.mark = gc_color_red;
@@ -25788,7 +25788,7 @@ return_closcall1(data,(closure)&c_734927,  c_734944);;
 }
 
 static void __lambda_316(void *data, int argc, object self_733149, object r_731596) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734929;
 c_734929.hdr.mark = gc_color_red;
@@ -25813,7 +25813,7 @@ return_closcall1(data,(closure)&c_734929,  c_734937);;
 }
 
 static void __lambda_315(void *data, int argc, object self_733150, object r_731595) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 closureN_type c_734931;
 c_734931.hdr.mark = gc_color_red;
@@ -25830,29 +25830,29 @@ return_closcall2(data,  __glo__list,  &c_734931, r_731595);;
 }
 
 static void __lambda_314(void *data, int argc, object self_733151, object r_731594) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733151)->elts[0], ((closureN)self_733151)->elts[1], r_731594);; 
 }
 
 static void __lambda_313(void *data, int argc, object self_733152) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall2(data,  __glo_c_91compile_91vector,  ((closureN)self_733152)->elts[1], ((closureN)self_733152)->elts[0]);; 
 }
 
 static void __lambda_312(void *data, int argc, object self_733153) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 return_closcall2(data,  __glo_c_91compile_91scalars,  ((closureN)self_733153)->elts[1], ((closureN)self_733153)->elts[0]);; 
 }
 
 static void __lambda_311(void *data, int argc, object self_733154) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-const");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-const");
 
 make_string(c_734897, "nil");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733154)->elts[0], &c_734897);; 
 }
 
 static void __lambda_310(void *data, int argc, closure _,object k_731629, object exp_73514) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734676;
 c_734676.hdr.mark = gc_color_red;
@@ -25869,7 +25869,7 @@ return_closcall3(data,(closure)&c_734676,  boolean_f, boolean_f, boolean_f);;
 }
 
 static void __lambda_309(void *data, int argc, object self_733155, object cvar_91name_73517, object len_73516, object loop_73515) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734678;
 c_734678.hdr.mark = gc_color_red;
@@ -25890,7 +25890,7 @@ return_closcall1(data,(closure)&c_734678,  &c_734889);;
 }
 
 static void __lambda_308(void *data, int argc, object self_733156, object cvar_91name_73517) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734680;
 c_734680.hdr.mark = gc_color_red;
@@ -25911,7 +25911,7 @@ return_closcall1(data,(closure)&c_734680,  &c_734885);;
 }
 
 static void __lambda_307(void *data, int argc, object self_733157, object len_73516) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734682;
 c_734682.hdr.mark = gc_color_red;
@@ -25932,7 +25932,7 @@ return_closcall1(data,(closure)&c_734682,  &c_734881);;
 }
 
 static void __lambda_306(void *data, int argc, object self_733158, object loop_73515) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734684;
 c_734684.hdr.mark = gc_color_red;
@@ -25952,7 +25952,7 @@ return_closcall0(data,(closure)&c_734684);;
 }
 
 static void __lambda_305(void *data, int argc, object self_733159) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734686;
 c_734686.hdr.mark = gc_color_red;
@@ -25972,7 +25972,7 @@ return_closcall1(data,(closure)&c_734686,  quote_vec);;
 }
 
 static void __lambda_304(void *data, int argc, object self_733160, object r_731661) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734688;
 c_734688.hdr.mark = gc_color_red;
@@ -25992,7 +25992,7 @@ return_closcall2(data,  __glo_gensym,  &c_734688, r_731661);;
 }
 
 static void __lambda_303(void *data, int argc, object self_733161, object r_731660) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734690;
 c_734690.hdr.mark = gc_color_red;
@@ -26012,7 +26012,7 @@ return_closcall2(data,  __glo_mangle,  &c_734690, r_731660);;
 }
 
 static void __lambda_302(void *data, int argc, object self_733162, object r_731659) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734692;
 c_734692.hdr.mark = gc_color_red;
@@ -26032,7 +26032,7 @@ return_closcall1(data,(closure)&c_734692,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_301(void *data, int argc, object self_733163, object r_731630) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734694;
 c_734694.hdr.mark = gc_color_red;
@@ -26054,7 +26054,7 @@ return_closcall1(data,(closure)&c_734694,  &c_734874);;
 }
 
 static void __lambda_300(void *data, int argc, object self_733164, object r_731658) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734696;
 c_734696.hdr.mark = gc_color_red;
@@ -26074,7 +26074,7 @@ return_closcall1(data,(closure)&c_734696,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_299(void *data, int argc, object self_733165, object r_731631) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734698;
 c_734698.hdr.mark = gc_color_red;
@@ -26107,7 +26107,7 @@ return_closcall1(data,(closure)&c_734698,  &c_734796);;
 }
 
 static void __lambda_298(void *data, int argc, object self_733166, object k_731644, object i_73520, object code_73519) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734798;
 c_734798.hdr.mark = gc_color_red;
@@ -26128,7 +26128,7 @@ return_closcall1(data,(closure)&c_734798,  __num_eq(data, i_73520, cell_get(((cl
 }
 
 static void __lambda_297(void *data, int argc, object self_733167, object r_731645) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 if( !eq(boolean_f, r_731645) ){ 
   return_closcall1(data,  ((closureN)self_733167)->elts[4],  ((closureN)self_733167)->elts[0]);
 } else { 
@@ -26152,7 +26152,7 @@ return_closcall1(data,(closure)&c_734803,  Cyc_vector_ref(data, ((closureN)self_
 }
 
 static void __lambda_296(void *data, int argc, object self_733168, object r_731657) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734805;
 c_734805.hdr.mark = gc_color_red;
@@ -26172,7 +26172,7 @@ return_closcall2(data,  __glo_c_91compile_91const,  &c_734805, r_731657);;
 }
 
 static void __lambda_295(void *data, int argc, object self_733169, object r_731646) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734807;
 c_734807.hdr.mark = gc_color_red;
@@ -26192,7 +26192,7 @@ return_closcall1(data,(closure)&c_734807,  r_731646);;
 }
 
 static void __lambda_294(void *data, int argc, object self_733170, object idx_91code_73521) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734809;
 c_734809.hdr.mark = gc_color_red;
@@ -26217,7 +26217,7 @@ return_closcall1(data,(closure)&c_734809,  &c_734857);;
 }
 
 static void __lambda_293(void *data, int argc, object self_733171, object r_731647) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734811;
 c_734811.hdr.mark = gc_color_red;
@@ -26239,7 +26239,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734811, ((closureN)self_733171)->el
 }
 
 static void __lambda_292(void *data, int argc, object self_733172, object r_731649) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734813;
 c_734813.hdr.mark = gc_color_red;
@@ -26261,7 +26261,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734813, ((closureN)self_733172)->
 }
 
 static void __lambda_291(void *data, int argc, object self_733173, object r_731651) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734815;
 c_734815.hdr.mark = gc_color_red;
@@ -26284,7 +26284,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734815, ((closureN)self_733173)->
 }
 
 static void __lambda_290(void *data, int argc, object self_733174, object r_731652) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734817;
 c_734817.hdr.mark = gc_color_red;
@@ -26309,7 +26309,7 @@ return_closcall1(data,(closure)&c_734817,  c_734850);;
 }
 
 static void __lambda_289(void *data, int argc, object self_733175, object r_731655) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734819;
 c_734819.hdr.mark = gc_color_red;
@@ -26332,7 +26332,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734819, ((closureN)self_733175)->el
 }
 
 static void __lambda_288(void *data, int argc, object self_733176, object r_731656) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734821;
 c_734821.hdr.mark = gc_color_red;
@@ -26361,7 +26361,7 @@ return_closcall1(data,(closure)&c_734821,  c_734839);;
 }
 
 static void __lambda_287(void *data, int argc, object self_733177, object r_731654) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734823;
 c_734823.hdr.mark = gc_color_red;
@@ -26382,7 +26382,7 @@ return_closcall2(data,  __glo__list,  &c_734823, r_731654);;
 }
 
 static void __lambda_286(void *data, int argc, object self_733178, object r_731653) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734825;
 c_734825.hdr.mark = gc_color_red;
@@ -26401,7 +26401,7 @@ return_closcall4(data,  __glo_append,  &c_734825, ((closureN)self_733178)->elts[
 }
 
 static void __lambda_285(void *data, int argc, object self_733179, object r_731650) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734827;
 c_734827.hdr.mark = gc_color_red;
@@ -26419,12 +26419,12 @@ return_closcall3(data,  __glo_c_91code_95vars,  &c_734827, ((closureN)self_73317
 }
 
 static void __lambda_284(void *data, int argc, object self_733180, object r_731648) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 return_closcall3(data,  cell_get(((closureN)self_733180)->elts[1]),  ((closureN)self_733180)->elts[0], ((closureN)self_733180)->elts[2], r_731648);; 
 }
 
 static void __lambda_283(void *data, int argc, object self_733181, object r_731643) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734700;
 c_734700.hdr.mark = gc_color_red;
@@ -26443,7 +26443,7 @@ return_closcall1(data,(closure)&c_734700,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_282(void *data, int argc, object self_733182, object r_731632) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734702;
 c_734702.hdr.mark = gc_color_red;
@@ -26462,7 +26462,7 @@ return_closcall2(data,  __glo_zero_127,  &c_734702, cell_get(((closureN)self_733
 }
 
 static void __lambda_281(void *data, int argc, object self_733183, object r_731633) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 if( !eq(boolean_f, r_731633) ){ 
   
 closureN_type c_734704;
@@ -26497,7 +26497,7 @@ return_closcall0(data,(closure)&c_734730);}
 }
 
 static void __lambda_280(void *data, int argc, object self_733184) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734732;
 c_734732.hdr.mark = gc_color_red;
@@ -26520,7 +26520,7 @@ return_closcall1(data,(closure)&c_734732,  c_734785);;
 }
 
 static void __lambda_279(void *data, int argc, object self_733185, object r_731638) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734734;
 c_734734.hdr.mark = gc_color_red;
@@ -26542,7 +26542,7 @@ return_closcall1(data,(closure)&c_734734,  c_734779);;
 }
 
 static void __lambda_278(void *data, int argc, object self_733186, object r_731641) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734736;
 c_734736.hdr.mark = gc_color_red;
@@ -26564,7 +26564,7 @@ return_closcall1(data,(closure)&c_734736,  c_734773);;
 }
 
 static void __lambda_277(void *data, int argc, object self_733187, object r_731642) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734738;
 c_734738.hdr.mark = gc_color_red;
@@ -26596,7 +26596,7 @@ return_closcall1(data,(closure)&c_734738,  c_734754);;
 }
 
 static void __lambda_276(void *data, int argc, object self_733188, object r_731640) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734740;
 c_734740.hdr.mark = gc_color_red;
@@ -26614,7 +26614,7 @@ return_closcall2(data,  __glo__list,  &c_734740, r_731640);;
 }
 
 static void __lambda_275(void *data, int argc, object self_733189, object r_731639) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734742;
 c_734742.hdr.mark = gc_color_red;
@@ -26631,7 +26631,7 @@ return_closcall3(data,  __glo_c_91code_95vars,  &c_734742, ((closureN)self_73318
 }
 
 static void __lambda_274(void *data, int argc, object self_733190, object r_731637) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734744;
 c_734744.hdr.mark = gc_color_red;
@@ -26648,14 +26648,14 @@ return_closcall1(data,(closure)&c_734744,  r_731637);;
 }
 
 static void __lambda_273(void *data, int argc, object self_733191, object code_73518) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 make_int(c_734750, 0);
 return_closcall3(data,  cell_get(((closureN)self_733191)->elts[1]),  ((closureN)self_733191)->elts[0], &c_734750, code_73518);; 
 }
 
 static void __lambda_272(void *data, int argc, object self_733192) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734706;
 c_734706.hdr.mark = gc_color_red;
@@ -26676,7 +26676,7 @@ return_closcall1(data,(closure)&c_734706,  c_734724);;
 }
 
 static void __lambda_271(void *data, int argc, object self_733193, object r_731634) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734708;
 c_734708.hdr.mark = gc_color_red;
@@ -26699,7 +26699,7 @@ return_closcall1(data,(closure)&c_734708,  c_734716);;
 }
 
 static void __lambda_270(void *data, int argc, object self_733194, object r_731636) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 
 closureN_type c_734710;
 c_734710.hdr.mark = gc_color_red;
@@ -26716,12 +26716,12 @@ return_closcall2(data,  __glo__list,  &c_734710, r_731636);;
 }
 
 static void __lambda_269(void *data, int argc, object self_733195, object r_731635) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-vector");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-vector");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733195)->elts[0], ((closureN)self_733195)->elts[1], r_731635);; 
 }
 
 static void __lambda_268(void *data, int argc, closure _,object k_731664, object args_73522) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734499;
 c_734499.hdr.mark = gc_color_red;
@@ -26738,7 +26738,7 @@ return_closcall3(data,(closure)&c_734499,  boolean_f, boolean_f, boolean_f);;
 }
 
 static void __lambda_267(void *data, int argc, object self_733196, object num_91args_73525, object create_91cons_73524, object _191c_91compile_91scalars_73523) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734501;
 c_734501.hdr.mark = gc_color_red;
@@ -26759,7 +26759,7 @@ return_closcall1(data,(closure)&c_734501,  &c_734673);;
 }
 
 static void __lambda_266(void *data, int argc, object self_733197, object num_91args_73525) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734503;
 c_734503.hdr.mark = gc_color_red;
@@ -26780,7 +26780,7 @@ return_closcall1(data,(closure)&c_734503,  &c_734669);;
 }
 
 static void __lambda_265(void *data, int argc, object self_733198, object create_91cons_73524) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734505;
 c_734505.hdr.mark = gc_color_red;
@@ -26801,7 +26801,7 @@ return_closcall1(data,(closure)&c_734505,  &c_734665);;
 }
 
 static void __lambda_264(void *data, int argc, object self_733199, object _191c_91compile_91scalars_73523) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734507;
 c_734507.hdr.mark = gc_color_red;
@@ -26821,7 +26821,7 @@ return_closcall0(data,(closure)&c_734507);;
 }
 
 static void __lambda_263(void *data, int argc, object self_733200) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734509;
 c_734509.hdr.mark = gc_color_red;
@@ -26843,7 +26843,7 @@ return_closcall1(data,(closure)&c_734509,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_262(void *data, int argc, object self_733201, object r_731665) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734511;
 c_734511.hdr.mark = gc_color_red;
@@ -26865,7 +26865,7 @@ return_closcall1(data,(closure)&c_734511,  &c_734630);;
 }
 
 static void __lambda_261(void *data, int argc, object self_733202, object k_731690, object cvar_73531, object a_73530, object b_73529) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734632;
 c_734632.hdr.mark = gc_color_red;
@@ -26884,7 +26884,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734632, a_73530);;
 }
 
 static void __lambda_260(void *data, int argc, object self_733203, object r_731695) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734634;
 c_734634.hdr.mark = gc_color_red;
@@ -26904,7 +26904,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734634, ((closureN)self_733203)->el
 }
 
 static void __lambda_259(void *data, int argc, object self_733204, object r_731696) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734636;
 c_734636.hdr.mark = gc_color_red;
@@ -26932,7 +26932,7 @@ return_closcall1(data,(closure)&c_734636,  c_734651);;
 }
 
 static void __lambda_258(void *data, int argc, object self_733205, object r_731691) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734638;
 c_734638.hdr.mark = gc_color_red;
@@ -26950,7 +26950,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734638, ((closureN)self_733205)->
 }
 
 static void __lambda_257(void *data, int argc, object self_733206, object r_731693) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734640;
 c_734640.hdr.mark = gc_color_red;
@@ -26968,7 +26968,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734640, ((closureN)self_733206)->
 }
 
 static void __lambda_256(void *data, int argc, object self_733207, object r_731694) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734642;
 c_734642.hdr.mark = gc_color_red;
@@ -26985,12 +26985,12 @@ return_closcall3(data,  __glo_append,  &c_734642, ((closureN)self_733207)->elts[
 }
 
 static void __lambda_255(void *data, int argc, object self_733208, object r_731692) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733208)->elts[0], ((closureN)self_733208)->elts[1], r_731692);; 
 }
 
 static void __lambda_254(void *data, int argc, object self_733209, object r_731689) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734513;
 c_734513.hdr.mark = gc_color_red;
@@ -27010,7 +27010,7 @@ return_closcall1(data,(closure)&c_734513,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_253(void *data, int argc, object self_733210, object r_731666) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734515;
 c_734515.hdr.mark = gc_color_red;
@@ -27042,7 +27042,7 @@ return_closcall1(data,(closure)&c_734515,  &c_734532);;
 }
 
 static void __lambda_252(void *data, int argc, object self_733211, object k_731670, object args_73526) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734534;
 c_734534.hdr.mark = gc_color_red;
@@ -27062,7 +27062,7 @@ return_closcall1(data,(closure)&c_734534,  Cyc_is_null(args_73526));;
 }
 
 static void __lambda_251(void *data, int argc, object self_733212, object r_731671) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 if( !eq(boolean_f, r_731671) ){ 
   
 closureN_type c_734536;
@@ -27097,7 +27097,7 @@ return_closcall1(data,(closure)&c_734541,  Cyc_is_cons(((closureN)self_733212)->
 }
 
 static void __lambda_250(void *data, int argc, object self_733213, object r_731688) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734543;
 c_734543.hdr.mark = gc_color_red;
@@ -27117,7 +27117,7 @@ return_closcall2(data,  __glo_not,  &c_734543, r_731688);;
 }
 
 static void __lambda_249(void *data, int argc, object self_733214, object r_731672) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 if( !eq(boolean_f, r_731672) ){ 
   
 closureN_type c_734545;
@@ -27153,7 +27153,7 @@ return_closcall0(data,(closure)&c_734550);}
 }
 
 static void __lambda_248(void *data, int argc, object self_733215) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734552;
 c_734552.hdr.mark = gc_color_red;
@@ -27173,7 +27173,7 @@ return_closcall1(data,(closure)&c_734552,  quote_c);;
 }
 
 static void __lambda_247(void *data, int argc, object self_733216, object r_731687) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734554;
 c_734554.hdr.mark = gc_color_red;
@@ -27193,7 +27193,7 @@ return_closcall2(data,  __glo_gensym,  &c_734554, r_731687);;
 }
 
 static void __lambda_246(void *data, int argc, object self_733217, object r_731686) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734556;
 c_734556.hdr.mark = gc_color_red;
@@ -27213,7 +27213,7 @@ return_closcall2(data,  __glo_mangle,  &c_734556, r_731686);;
 }
 
 static void __lambda_245(void *data, int argc, object self_733218, object r_731673) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734558;
 c_734558.hdr.mark = gc_color_red;
@@ -27233,7 +27233,7 @@ return_closcall1(data,(closure)&c_734558,  r_731673);;
 }
 
 static void __lambda_244(void *data, int argc, object self_733219, object cvar_91name_73527) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734560;
 c_734560.hdr.mark = gc_color_red;
@@ -27254,7 +27254,7 @@ return_closcall1(data,(closure)&c_734560,  car(((closureN)self_733219)->elts[1])
 }
 
 static void __lambda_243(void *data, int argc, object self_733220, object r_731685) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734562;
 c_734562.hdr.mark = gc_color_red;
@@ -27275,7 +27275,7 @@ return_closcall2(data,  __glo_c_91compile_91const,  &c_734562, r_731685);;
 }
 
 static void __lambda_242(void *data, int argc, object self_733221, object r_731682) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734564;
 c_734564.hdr.mark = gc_color_red;
@@ -27296,7 +27296,7 @@ return_closcall1(data,(closure)&c_734564,  cdr(((closureN)self_733221)->elts[1])
 }
 
 static void __lambda_241(void *data, int argc, object self_733222, object r_731684) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734569;
 c_734569.hdr.mark = gc_color_red;
@@ -27316,7 +27316,7 @@ return_closcall2(data,  cell_get(((closureN)self_733222)->elts[0]),  &c_734569, 
 }
 
 static void __lambda_240(void *data, int argc, object self_733223, object r_731683) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734574;
 c_734574.hdr.mark = gc_color_red;
@@ -27334,7 +27334,7 @@ return_closcall4(data,  cell_get(((closureN)self_733223)->elts[0]),  &c_734574, 
 }
 
 static void __lambda_239(void *data, int argc, object self_733224, object r_731674) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734576;
 c_734576.hdr.mark = gc_color_red;
@@ -27352,7 +27352,7 @@ return_closcall1(data,(closure)&c_734576,  r_731674);;
 }
 
 static void __lambda_238(void *data, int argc, object self_733225, object cell_73528) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734578;
 c_734578.hdr.mark = gc_color_red;
@@ -27371,7 +27371,7 @@ return_closcall0(data,(closure)&c_734578);;
 }
 
 static void __lambda_237(void *data, int argc, object self_733226) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734580;
 c_734580.hdr.mark = gc_color_red;
@@ -27394,7 +27394,7 @@ return_closcall1(data,(closure)&c_734580,  &c_734609);;
 }
 
 static void __lambda_236(void *data, int argc, object self_733227, object r_731681) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734582;
 c_734582.hdr.mark = gc_color_red;
@@ -27412,7 +27412,7 @@ return_closcall1(data,(closure)&c_734582,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_235(void *data, int argc, object self_733228, object r_731675) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734584;
 c_734584.hdr.mark = gc_color_red;
@@ -27433,7 +27433,7 @@ return_closcall1(data,(closure)&c_734584,  c_734601);;
 }
 
 static void __lambda_234(void *data, int argc, object self_733229, object r_731676) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734586;
 c_734586.hdr.mark = gc_color_red;
@@ -27451,7 +27451,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734586, ((closureN)self_733229)->
 }
 
 static void __lambda_233(void *data, int argc, object self_733230, object r_731678) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734588;
 c_734588.hdr.mark = gc_color_red;
@@ -27469,7 +27469,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734588, ((closureN)self_733230)->el
 }
 
 static void __lambda_232(void *data, int argc, object self_733231, object r_731680) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734590;
 c_734590.hdr.mark = gc_color_red;
@@ -27487,7 +27487,7 @@ return_closcall2(data,  __glo__list,  &c_734590, r_731680);;
 }
 
 static void __lambda_231(void *data, int argc, object self_733232, object r_731679) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734592;
 c_734592.hdr.mark = gc_color_red;
@@ -27504,24 +27504,24 @@ return_closcall3(data,  __glo_append,  &c_734592, ((closureN)self_733232)->elts[
 }
 
 static void __lambda_230(void *data, int argc, object self_733233, object r_731677) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733233)->elts[0], ((closureN)self_733233)->elts[1], r_731677);; 
 }
 
 static void __lambda_229(void *data, int argc, object self_733234) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 return_closcall2(data,  __glo_c_91compile_91const,  ((closureN)self_733234)->elts[1], ((closureN)self_733234)->elts[0]);; 
 }
 
 static void __lambda_228(void *data, int argc, object self_733235) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 make_string(c_734539, "nil");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733235)->elts[0], &c_734539);; 
 }
 
 static void __lambda_227(void *data, int argc, object self_733236, object r_731669) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734517;
 c_734517.hdr.mark = gc_color_red;
@@ -27540,7 +27540,7 @@ return_closcall1(data,(closure)&c_734517,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_226(void *data, int argc, object self_733237, object r_731667) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 
 closureN_type c_734522;
 c_734522.hdr.mark = gc_color_red;
@@ -27557,12 +27557,12 @@ return_closcall2(data,  cell_get(((closureN)self_733237)->elts[0]),  &c_734522, 
 }
 
 static void __lambda_225(void *data, int argc, object self_733238, object r_731668) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-scalars");
 return_closcall3(data,  __glo_c_117tuple_95args,  ((closureN)self_733238)->elts[0], r_731668, cell_get(((closureN)self_733238)->elts[1]));; 
 }
 
 static void __lambda_224(void *data, int argc, closure _,object k_731699, object qexp_73532) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-quote");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-quote");
 
 closureN_type c_734490;
 c_734490.hdr.mark = gc_color_red;
@@ -27578,7 +27578,7 @@ return_closcall1(data,(closure)&c_734490,  cadr(qexp_73532));;
 }
 
 static void __lambda_223(void *data, int argc, object self_733239, object r_731700) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-quote");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-quote");
 
 closureN_type c_734492;
 c_734492.hdr.mark = gc_color_red;
@@ -27594,12 +27594,12 @@ return_closcall1(data,(closure)&c_734492,  r_731700);;
 }
 
 static void __lambda_222(void *data, int argc, object self_733240, object exp_73533) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-quote");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-quote");
 return_closcall2(data,  __glo_c_91compile_91scalars,  ((closureN)self_733240)->elts[0], exp_73533);; 
 }
 
 static void __lambda_221(void *data, int argc, closure _,object k_731703, object exp_73537, object append_91preamble_73536, object cont_73535, object trace_73534) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734370;
 c_734370.hdr.mark = gc_color_red;
@@ -27619,7 +27619,7 @@ return_closcall2(data,  __glo_const_127,  &c_734370, exp_73537);;
 }
 
 static void __lambda_220(void *data, int argc, object self_733241, object r_731704) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731704) ){ 
   
 closureN_type c_734372;
@@ -27655,7 +27655,7 @@ return_closcall2(data,  __glo_prim_127,  &c_734377, ((closureN)self_733241)->elt
 }
 
 static void __lambda_219(void *data, int argc, object self_733242, object r_731705) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731705) ){ 
   
 closureN_type c_734379;
@@ -27691,7 +27691,7 @@ return_closcall2(data,  __glo_ref_127,  &c_734392, ((closureN)self_733242)->elts
 }
 
 static void __lambda_218(void *data, int argc, object self_733243, object r_731708) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731708) ){ 
   
 closureN_type c_734394;
@@ -27727,7 +27727,7 @@ return_closcall2(data,  __glo_quote_127,  &c_734399, ((closureN)self_733243)->el
 }
 
 static void __lambda_217(void *data, int argc, object self_733244, object r_731709) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731709) ){ 
   
 closureN_type c_734401;
@@ -27763,7 +27763,7 @@ return_closcall2(data,  __glo_if_127,  &c_734406, ((closureN)self_733244)->elts[
 }
 
 static void __lambda_216(void *data, int argc, object self_733245, object r_731710) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731710) ){ 
   
 closureN_type c_734408;
@@ -27802,7 +27802,7 @@ return_closcall1(data,(closure)&c_734416,  quote__75closure);}
 }
 
 static void __lambda_215(void *data, int argc, object self_733246, object r_731720) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734418;
 c_734418.hdr.mark = gc_color_red;
@@ -27822,7 +27822,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_734418, r_731720, ((closure
 }
 
 static void __lambda_214(void *data, int argc, object self_733247, object r_731711) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731711) ){ 
   
 closureN_type c_734420;
@@ -27861,7 +27861,7 @@ return_closcall2(data,  __glo_define_127,  &c_734428, ((closureN)self_733247)->e
 }
 
 static void __lambda_213(void *data, int argc, object self_733248, object r_731712) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731712) ){ 
   
 closureN_type c_734430;
@@ -27900,7 +27900,7 @@ return_closcall1(data,(closure)&c_734438,  quote_lambda);}
 }
 
 static void __lambda_212(void *data, int argc, object self_733249, object r_731719) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734440;
 c_734440.hdr.mark = gc_color_red;
@@ -27920,7 +27920,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_734440, r_731719, ((closure
 }
 
 static void __lambda_211(void *data, int argc, object self_733250, object r_731713) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731713) ){ 
   
 closureN_type c_734442;
@@ -27959,7 +27959,7 @@ return_closcall2(data,  __glo_app_127,  &c_734465, ((closureN)self_733250)->elts
 }
 
 static void __lambda_210(void *data, int argc, object self_733251, object r_731718) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 if( !eq(boolean_f, r_731718) ){ 
   
 closureN_type c_734467;
@@ -27995,19 +27995,19 @@ return_closcall0(data,(closure)&c_734475);}
 }
 
 static void __lambda_209(void *data, int argc, object self_733252) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 make_string(c_734478, "unknown exp in c-compile-exp: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_733252)->elts[1], &c_734478, ((closureN)self_733252)->elts[0]);; 
 }
 
 static void __lambda_208(void *data, int argc, object self_733253) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall5(data,  __glo_c_91compile_91app,  ((closureN)self_733253)->elts[3], ((closureN)self_733253)->elts[2], ((closureN)self_733253)->elts[0], ((closureN)self_733253)->elts[1], ((closureN)self_733253)->elts[4]);; 
 }
 
 static void __lambda_207(void *data, int argc, object self_733254) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734444;
 c_734444.hdr.mark = gc_color_red;
@@ -28027,7 +28027,7 @@ return_closcall1(data,(closure)&c_734444,  quote__75closure);;
 }
 
 static void __lambda_206(void *data, int argc, object self_733255, object r_731715) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734446;
 c_734446.hdr.mark = gc_color_red;
@@ -28048,7 +28048,7 @@ return_closcall1(data,(closure)&c_734446,  nil);;
 }
 
 static void __lambda_205(void *data, int argc, object self_733256, object r_731717) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734448;
 c_734448.hdr.mark = gc_color_red;
@@ -28070,7 +28070,7 @@ return_closcall1(data,(closure)&c_734448,  &c_734462);;
 }
 
 static void __lambda_204(void *data, int argc, object self_733257, object r_731716) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734450;
 c_734450.hdr.mark = gc_color_red;
@@ -28091,37 +28091,37 @@ return_closcall1(data,(closure)&c_734450,  &c_734458);;
 }
 
 static void __lambda_203(void *data, int argc, object self_733258, object r_731714) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall5(data,  __glo_c_91compile_91exp,  ((closureN)self_733258)->elts[2], r_731714, ((closureN)self_733258)->elts[0], ((closureN)self_733258)->elts[1], ((closureN)self_733258)->elts[3]);; 
 }
 
 static void __lambda_202(void *data, int argc, object self_733259) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall5(data,  __glo_c_91compile_91global,  ((closureN)self_733259)->elts[3], ((closureN)self_733259)->elts[2], ((closureN)self_733259)->elts[0], ((closureN)self_733259)->elts[1], ((closureN)self_733259)->elts[4]);; 
 }
 
 static void __lambda_201(void *data, int argc, object self_733260) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall5(data,  __glo_c_91compile_91closure,  ((closureN)self_733260)->elts[3], ((closureN)self_733260)->elts[2], ((closureN)self_733260)->elts[0], ((closureN)self_733260)->elts[1], ((closureN)self_733260)->elts[4]);; 
 }
 
 static void __lambda_200(void *data, int argc, object self_733261) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall5(data,  __glo_c_91compile_91if,  ((closureN)self_733261)->elts[3], ((closureN)self_733261)->elts[2], ((closureN)self_733261)->elts[0], ((closureN)self_733261)->elts[1], ((closureN)self_733261)->elts[4]);; 
 }
 
 static void __lambda_199(void *data, int argc, object self_733262) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall2(data,  __glo_c_91compile_91quote,  ((closureN)self_733262)->elts[1], ((closureN)self_733262)->elts[0]);; 
 }
 
 static void __lambda_198(void *data, int argc, object self_733263) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall2(data,  __glo_c_91compile_91ref,  ((closureN)self_733263)->elts[1], ((closureN)self_733263)->elts[0]);; 
 }
 
 static void __lambda_197(void *data, int argc, object self_733264) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734381;
 c_734381.hdr.mark = gc_color_red;
@@ -28137,7 +28137,7 @@ return_closcall2(data,  __glo_mangle,  &c_734381, ((closureN)self_733264)->elts[
 }
 
 static void __lambda_196(void *data, int argc, object self_733265, object r_731707) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 
 closureN_type c_734383;
 c_734383.hdr.mark = gc_color_red;
@@ -28157,17 +28157,17 @@ return_closcall1(data,(closure)&c_734383,  c_734388);;
 }
 
 static void __lambda_195(void *data, int argc, object self_733266, object r_731706) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall2(data,  __glo_c_91code,  ((closureN)self_733266)->elts[0], r_731706);; 
 }
 
 static void __lambda_194(void *data, int argc, object self_733267) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-exp");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-exp");
 return_closcall2(data,  __glo_c_91compile_91const,  ((closureN)self_733267)->elts[1], ((closureN)self_733267)->elts[0]);; 
 }
 
 static void __lambda_193(void *data, int argc, closure _,object k_731723, object exp_73539, object src_91file_73538) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734317;
 c_734317.hdr.mark = gc_color_red;
@@ -28187,7 +28187,7 @@ return_closcall1(data,(closure)&c_734317,  &c_734367);;
 }
 
 static void __lambda_192(void *data, int argc, object self_733268, object preamble_73540) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734319;
 c_734319.hdr.mark = gc_color_red;
@@ -28207,7 +28207,7 @@ return_closcall1(data,(closure)&c_734319,  &c_734366);;
 }
 
 static void __lambda_191(void *data, int argc, object self_733269, object preamble_73540) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734321;
 c_734321.hdr.mark = gc_color_red;
@@ -28237,7 +28237,7 @@ return_closcall1(data,(closure)&c_734321,  &c_734348);;
 }
 
 static void __lambda_190(void *data, int argc, object self_733270, object k_731728, object s_73541) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734350;
 c_734350.hdr.mark = gc_color_red;
@@ -28260,12 +28260,12 @@ return_closcall1(data,(closure)&c_734350,  c_734358);;
 }
 
 static void __lambda_189(void *data, int argc, object self_733271, object r_731729) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 return_closcall1(data,  ((closureN)self_733271)->elts[0],  Cyc_set_car(data, ((closureN)self_733271)->elts[1], r_731729));; 
 }
 
 static void __lambda_188(void *data, int argc, object self_733272, object r_731724) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734323;
 c_734323.hdr.mark = gc_color_red;
@@ -28284,7 +28284,7 @@ return_closcall1(data,(closure)&c_734323,  r_731724);;
 }
 
 static void __lambda_187(void *data, int argc, object self_733273, object append_91preamble_73542) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734325;
 c_734325.hdr.mark = gc_color_red;
@@ -28303,7 +28303,7 @@ return_closcall2(data,  __glo__list,  &c_734325, ((closureN)self_733273)->elts[3
 }
 
 static void __lambda_186(void *data, int argc, object self_733274, object r_731727) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734327;
 c_734327.hdr.mark = gc_color_red;
@@ -28322,7 +28322,7 @@ return_closcall5(data,  __glo_c_91compile_91exp,  &c_734327, ((closureN)self_733
 }
 
 static void __lambda_185(void *data, int argc, object self_733275, object r_731725) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734329;
 c_734329.hdr.mark = gc_color_red;
@@ -28339,7 +28339,7 @@ return_closcall1(data,(closure)&c_734329,  r_731725);;
 }
 
 static void __lambda_184(void *data, int argc, object self_733276, object body_73543) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734331;
 c_734331.hdr.mark = gc_color_red;
@@ -28357,7 +28357,7 @@ return_closcall0(data,(closure)&c_734331);;
 }
 
 static void __lambda_183(void *data, int argc, object self_733277) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 closureN_type c_734333;
 c_734333.hdr.mark = gc_color_red;
@@ -28376,14 +28376,14 @@ return_closcall3(data,  __glo_c_117serialize,  &c_734333, ((closureN)self_733277
 }
 
 static void __lambda_182(void *data, int argc, object self_733278, object r_731726) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-compile-program");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-program");
 
 object c_734338 = Cyc_string_append(data,  ((closureN)self_733278)->elts[0],2,cell_get(((closureN)self_733278)->elts[1]), r_731726);
 return_closcall1(data,  ((closureN)self_733278)->elts[0],  c_734338);; 
 }
 
 static void __lambda_181(void *data, int argc, closure _,object k_731732, object cp_73545, object prefix_73544) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:serialize");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:serialize");
 
 closureN_type c_734301;
 c_734301.hdr.mark = gc_color_red;
@@ -28401,7 +28401,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734301, cp_73545);;
 }
 
 static void __lambda_180(void *data, int argc, object self_733279, object r_731735) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:serialize");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:serialize");
 
 closureN_type c_734303;
 c_734303.hdr.mark = gc_color_red;
@@ -28419,7 +28419,7 @@ return_closcall3(data,  __glo_c_117allocs_91_125str,  &c_734303, r_731735, ((clo
 }
 
 static void __lambda_179(void *data, int argc, object self_733280, object r_731733) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:serialize");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:serialize");
 
 closureN_type c_734305;
 c_734305.hdr.mark = gc_color_red;
@@ -28437,14 +28437,14 @@ return_closcall2(data,  __glo_c_117body,  &c_734305, ((closureN)self_733280)->el
 }
 
 static void __lambda_178(void *data, int argc, object self_733281, object r_731734) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:serialize");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:serialize");
 
 object c_734310 = Cyc_string_append(data,  ((closureN)self_733281)->elts[0],3,((closureN)self_733281)->elts[2], ((closureN)self_733281)->elts[1], r_731734);
 return_closcall1(data,  ((closureN)self_733281)->elts[0],  c_734310);; 
 }
 
 static void __lambda_177(void *data, int argc, closure _,object k_731738, object prefix_73548, object cp1_73547, object cp2_73546) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734276;
 c_734276.hdr.mark = gc_color_red;
@@ -28463,7 +28463,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734276, cp1_73547);;
 }
 
 static void __lambda_176(void *data, int argc, object self_733282, object r_731743) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734278;
 c_734278.hdr.mark = gc_color_red;
@@ -28483,7 +28483,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734278, ((closureN)self_733282)->el
 }
 
 static void __lambda_175(void *data, int argc, object self_733283, object r_731744) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734280;
 c_734280.hdr.mark = gc_color_red;
@@ -28503,7 +28503,7 @@ return_closcall1(data,(closure)&c_734280,  c_734295);;
 }
 
 static void __lambda_174(void *data, int argc, object self_733284, object r_731739) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734282;
 c_734282.hdr.mark = gc_color_red;
@@ -28521,7 +28521,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734282, ((closureN)self_733284)->
 }
 
 static void __lambda_173(void *data, int argc, object self_733285, object r_731741) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734284;
 c_734284.hdr.mark = gc_color_red;
@@ -28539,7 +28539,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734284, ((closureN)self_733285)->
 }
 
 static void __lambda_172(void *data, int argc, object self_733286, object r_731742) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 
 closureN_type c_734286;
 c_734286.hdr.mark = gc_color_red;
@@ -28556,12 +28556,12 @@ return_closcall3(data,  __glo_append,  &c_734286, ((closureN)self_733286)->elts[
 }
 
 static void __lambda_171(void *data, int argc, object self_733287, object r_731740) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append/prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append/prefix");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733287)->elts[0], ((closureN)self_733287)->elts[1], r_731740);; 
 }
 
 static void __lambda_170(void *data, int argc, closure _,object k_731747, object cp1_73550, object cp2_73549) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734252;
 c_734252.hdr.mark = gc_color_red;
@@ -28579,7 +28579,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734252, cp1_73550);;
 }
 
 static void __lambda_169(void *data, int argc, object self_733288, object r_731752) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734254;
 c_734254.hdr.mark = gc_color_red;
@@ -28598,7 +28598,7 @@ return_closcall2(data,  __glo_c_117body,  &c_734254, ((closureN)self_733288)->el
 }
 
 static void __lambda_168(void *data, int argc, object self_733289, object r_731753) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734256;
 c_734256.hdr.mark = gc_color_red;
@@ -28618,7 +28618,7 @@ return_closcall1(data,(closure)&c_734256,  c_734271);;
 }
 
 static void __lambda_167(void *data, int argc, object self_733290, object r_731748) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734258;
 c_734258.hdr.mark = gc_color_red;
@@ -28636,7 +28636,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734258, ((closureN)self_733290)->
 }
 
 static void __lambda_166(void *data, int argc, object self_733291, object r_731750) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734260;
 c_734260.hdr.mark = gc_color_red;
@@ -28654,7 +28654,7 @@ return_closcall2(data,  __glo_c_117allocs,  &c_734260, ((closureN)self_733291)->
 }
 
 static void __lambda_165(void *data, int argc, object self_733292, object r_731751) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 
 closureN_type c_734262;
 c_734262.hdr.mark = gc_color_red;
@@ -28671,12 +28671,12 @@ return_closcall3(data,  __glo_append,  &c_734262, ((closureN)self_733292)->elts[
 }
 
 static void __lambda_164(void *data, int argc, object self_733293, object r_731749) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:append");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:append");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733293)->elts[0], ((closureN)self_733293)->elts[1], r_731749);; 
 }
 
 static void __lambda_163(void *data, int argc, closure _,object k_731756, object c_91allocs_73553, object prefix_73552, object suffix_73551) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
 
 closureN_type c_734234;
 c_734234.hdr.mark = gc_color_red;
@@ -28705,14 +28705,14 @@ return_closcall1(data,(closure)&c_734234,  &c_734243);;
 }
 
 static void __lambda_162(void *data, int argc, object self_733294, object k_731759, object c_73554) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
 
 object c_734247 = Cyc_string_append(data,  k_731759,3,((closureN)self_733294)->elts[0], c_73554, ((closureN)self_733294)->elts[1]);
 return_closcall1(data,  k_731759,  c_734247);; 
 }
 
 static void __lambda_161(void *data, int argc, object self_733295, object r_731758) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
 
 closureN_type c_734236;
 c_734236.hdr.mark = gc_color_red;
@@ -28728,7 +28728,7 @@ return_closcall3(data,  __glo_map,  &c_734236, r_731758, ((closureN)self_733295)
 }
 
 static void __lambda_160(void *data, int argc, object self_733296, object r_731757) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str2");
 
 object c_734241 = apply(data,  ((closureN)self_733296)->elts[0],primitive_string_91append, r_731757);
 return_closcall1(data,  ((closureN)self_733296)->elts[0],  c_734241);; 
@@ -28736,7 +28736,7 @@ return_closcall1(data,  ((closureN)self_733296)->elts[0],  c_734241);;
 
 static void __lambda_159(void *data, int argc, closure _,object k_731762, object c_91allocs_73556, object prefix_73555_raw, ...) {
 load_varargs(prefix_73555, prefix_73555_raw, argc - 2);
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 closureN_type c_734199;
 c_734199.hdr.mark = gc_color_red;
@@ -28764,7 +28764,7 @@ return_closcall1(data,(closure)&c_734199,  &c_734208);;
 }
 
 static void __lambda_158(void *data, int argc, object self_733297, object k_731765, object c_73557) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 closureN_type c_734210;
 c_734210.hdr.mark = gc_color_red;
@@ -28792,7 +28792,7 @@ return_closcall1(data,(closure)&c_734210,  &c_734224);;
 }
 
 static void __lambda_157(void *data, int argc, object self_733298, object r_731766) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 make_string(c_734231, "\n");
 
@@ -28801,7 +28801,7 @@ return_closcall1(data,  ((closureN)self_733298)->elts[1],  c_734229);;
 }
 
 static void __lambda_156(void *data, int argc, object self_733299, object k_731767) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 closureN_type c_734212;
 c_734212.hdr.mark = gc_color_red;
@@ -28818,7 +28818,7 @@ return_closcall1(data,(closure)&c_734212,  Cyc_is_null(((closureN)self_733299)->
 }
 
 static void __lambda_155(void *data, int argc, object self_733300, object r_731768) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 if( !eq(boolean_f, r_731768) ){ 
   
 make_string(c_734215, "");
@@ -28829,7 +28829,7 @@ return_closcall1(data,  ((closureN)self_733300)->elts[0],  &c_734215);
 }
 
 static void __lambda_154(void *data, int argc, object self_733301, object r_731764) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 closureN_type c_734201;
 c_734201.hdr.mark = gc_color_red;
@@ -28845,29 +28845,29 @@ return_closcall3(data,  __glo_map,  &c_734201, r_731764, ((closureN)self_733301)
 }
 
 static void __lambda_153(void *data, int argc, object self_733302, object r_731763) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs->str");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs->str");
 
 object c_734206 = apply(data,  ((closureN)self_733302)->elts[0],primitive_string_91append, r_731763);
 return_closcall1(data,  ((closureN)self_733302)->elts[0],  c_734206);; 
 }
 
 static void __lambda_152(void *data, int argc, closure _,object k_731771, object c_91tuple_73558) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:num-args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:num-args");
 return_closcall1(data,  k_731771,  caddr(c_91tuple_73558));; 
 }
 
 static void __lambda_151(void *data, int argc, closure _,object k_731774, object c_91pair_73559) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:allocs");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:allocs");
 return_closcall1(data,  k_731774,  cadr(c_91pair_73559));; 
 }
 
 static void __lambda_150(void *data, int argc, closure _,object k_731777, object c_91pair_73560) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:body");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:body");
 return_closcall1(data,  k_731777,  car(c_91pair_73560));; 
 }
 
 static void __lambda_149(void *data, int argc, closure _,object k_731780, object cp_73562, object num_91args_73561) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:tuple/args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:tuple/args");
 
 closureN_type c_734181;
 c_734181.hdr.mark = gc_color_red;
@@ -28884,12 +28884,12 @@ return_closcall2(data,  __glo__list,  &c_734181, num_91args_73561);;
 }
 
 static void __lambda_148(void *data, int argc, object self_733303, object r_731781) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c:tuple/args");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c:tuple/args");
 return_closcall3(data,  __glo_append,  ((closureN)self_733303)->elts[1], ((closureN)self_733303)->elts[0], r_731781);; 
 }
 
 static void __lambda_147(void *data, int argc, closure _,object k_731784, object str_73563) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-code");
 
 closureN_type c_734175;
 c_734175.hdr.mark = gc_color_red;
@@ -28906,22 +28906,22 @@ return_closcall1(data,  __glo__list,  &c_734175);;
 }
 
 static void __lambda_146(void *data, int argc, object self_733304, object r_731785) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-code");
 return_closcall3(data,  __glo_c_91code_95vars,  ((closureN)self_733304)->elts[0], ((closureN)self_733304)->elts[1], r_731785);; 
 }
 
 static void __lambda_145(void *data, int argc, closure _,object k_731788, object str_73565, object cvars_73564) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-code/vars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-code/vars");
 return_closcall3(data,  __glo__list,  k_731788, str_73565, cvars_73564);; 
 }
 
 static void __lambda_144(void *data, int argc, closure _,object k_731791, object trace_73566) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->var");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->var");
 return_closcall1(data,  k_731791,  cdr(trace_73566));; 
 }
 
 static void __lambda_143(void *data, int argc, closure _,object k_731794, object trace_73567) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734118;
 c_734118.hdr.mark = gc_color_red;
@@ -28938,7 +28938,7 @@ return_closcall1(data,(closure)&c_734118,  Cyc_is_cons(trace_73567));;
 }
 
 static void __lambda_142(void *data, int argc, object self_733305, object r_731802) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734120;
 c_734120.hdr.mark = gc_color_red;
@@ -28955,7 +28955,7 @@ return_closcall2(data,  __glo_not,  &c_734120, r_731802);;
 }
 
 static void __lambda_141(void *data, int argc, object self_733306, object r_731799) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734122;
 c_734122.hdr.mark = gc_color_red;
@@ -28972,7 +28972,7 @@ return_closcall1(data,(closure)&c_734122,  r_731799);;
 }
 
 static void __lambda_140(void *data, int argc, object self_733307, object tmp_73568) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734124;
 c_734124.hdr.mark = gc_color_red;
@@ -29001,7 +29001,7 @@ return_closcall1(data,(closure)&c_734124,  &c_734137);;
 }
 
 static void __lambda_139(void *data, int argc, object self_733308, object r_731795) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 if( !eq(boolean_f, r_731795) ){ 
   
 make_string(c_734140, "");
@@ -29024,7 +29024,7 @@ return_closcall1(data,(closure)&c_734142,  car(((closureN)self_733308)->elts[1])
 }
 
 static void __lambda_138(void *data, int argc, object self_733309, object r_731796) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734144;
 c_734144.hdr.mark = gc_color_red;
@@ -29041,7 +29041,7 @@ return_closcall1(data,(closure)&c_734144,  cdr(((closureN)self_733309)->elts[1])
 }
 
 static void __lambda_137(void *data, int argc, object self_733310, object r_731798) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
 closureN_type c_734146;
 c_734146.hdr.mark = gc_color_red;
@@ -29060,9 +29060,9 @@ return_closcall1(data,(closure)&c_734146,  c_734158);;
 }
 
 static void __lambda_136(void *data, int argc, object self_733311, object r_731797) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 
-make_string(c_734152, "Cyc_st_add2(data, \"");
+make_string(c_734152, "Cyc_st_add(data, \"");
 
 make_string(c_734154, ":");
 
@@ -29073,7 +29073,7 @@ return_closcall1(data,  ((closureN)self_733311)->elts[0],  c_734151);;
 }
 
 static void __lambda_135(void *data, int argc, object self_733312, object k_731800) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 if( !eq(boolean_f, ((closureN)self_733312)->elts[0]) ){ 
   return_closcall1(data,  k_731800,  ((closureN)self_733312)->elts[0]);
 } else { 
@@ -29093,12 +29093,12 @@ return_closcall1(data,(closure)&c_734129,  cdr(((closureN)self_733312)->elts[1])
 }
 
 static void __lambda_134(void *data, int argc, object self_733313, object r_731801) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:->code");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:->code");
 return_closcall1(data,  ((closureN)self_733313)->elts[0],  Cyc_is_null(r_731801));; 
 }
 
 static void __lambda_133(void *data, int argc, closure _,object k_731805, object trace_73570, object fnc_73569) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:add-function!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:add-function!");
 
 closureN_type c_734095;
 c_734095.hdr.mark = gc_color_red;
@@ -29116,7 +29116,7 @@ return_closcall1(data,(closure)&c_734095,  cdr(trace_73570));;
 }
 
 static void __lambda_132(void *data, int argc, object self_733314, object r_731808) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:add-function!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:add-function!");
 
 closureN_type c_734097;
 c_734097.hdr.mark = gc_color_red;
@@ -29134,7 +29134,7 @@ return_closcall1(data,(closure)&c_734097,  Cyc_is_null(r_731808));;
 }
 
 static void __lambda_131(void *data, int argc, object self_733315, object r_731806) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:add-function!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:add-function!");
 if( !eq(boolean_f, r_731806) ){ 
   
 closureN_type c_734099;
@@ -29155,14 +29155,14 @@ return_closcall1(data,(closure)&c_734099,  car(((closureN)self_733315)->elts[2])
 }
 
 static void __lambda_130(void *data, int argc, object self_733316, object r_731807) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:st:add-function!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:st:add-function!");
 
 make_cons(c_734104,r_731807, ((closureN)self_733316)->elts[0]);
 return_closcall1(data,  ((closureN)self_733316)->elts[1],  &c_734104);; 
 }
 
 static void __lambda_129(void *data, int argc, closure _,object k_731811, object n_73573, object prefix_73572, object assign_73571) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 closureN_type c_734045;
 c_734045.hdr.mark = gc_color_red;
@@ -29183,7 +29183,7 @@ return_closcall1(data,(closure)&c_734045,  __num_gt(data, n_73573, &c_734092));;
 }
 
 static void __lambda_128(void *data, int argc, object self_733317, object r_731812) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 if( !eq(boolean_f, r_731812) ){ 
   
 closureN_type c_734047;
@@ -29212,7 +29212,7 @@ return_closcall1(data,  ((closureN)self_733317)->elts[1],  &c_734089);}
 }
 
 static void __lambda_127(void *data, int argc, object self_733318, object r_731817) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 closureN_type c_734049;
 c_734049.hdr.mark = gc_color_red;
@@ -29231,7 +29231,7 @@ return_closcall4(data,  __glo_c_91macro_91array_91assign,  &c_734049, r_731817, 
 }
 
 static void __lambda_126(void *data, int argc, object self_733319, object r_731813) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 closureN_type c_734051;
 c_734051.hdr.mark = gc_color_red;
@@ -29255,7 +29255,7 @@ return_closcall1(data,(closure)&c_734051,  &c_734077);;
 }
 
 static void __lambda_125(void *data, int argc, object self_733320, object r_731816) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 closureN_type c_734053;
 c_734053.hdr.mark = gc_color_red;
@@ -29277,7 +29277,7 @@ return_closcall1(data,(closure)&c_734053,  c_734074);;
 }
 
 static void __lambda_124(void *data, int argc, object self_733321, object r_731814) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 closureN_type c_734055;
 c_734055.hdr.mark = gc_color_red;
@@ -29299,7 +29299,7 @@ return_closcall1(data,(closure)&c_734055,  c_734070);;
 }
 
 static void __lambda_123(void *data, int argc, object self_733322, object r_731815) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-array-assign");
 
 make_string(c_734063, "[");
 
@@ -29312,7 +29312,7 @@ return_closcall1(data,  ((closureN)self_733322)->elts[1],  c_734060);;
 }
 
 static void __lambda_122(void *data, int argc, closure _,object k_731820, object n_73575, object prefix_73574) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 
 closureN_type c_734008;
 c_734008.hdr.mark = gc_color_red;
@@ -29332,7 +29332,7 @@ return_closcall1(data,(closure)&c_734008,  __num_gt(data, n_73575, &c_734042));;
 }
 
 static void __lambda_121(void *data, int argc, object self_733323, object r_731821) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 if( !eq(boolean_f, r_731821) ){ 
   
 closureN_type c_734010;
@@ -29360,7 +29360,7 @@ return_closcall1(data,  ((closureN)self_733323)->elts[0],  &c_734039);}
 }
 
 static void __lambda_120(void *data, int argc, object self_733324, object r_731825) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 
 closureN_type c_734012;
 c_734012.hdr.mark = gc_color_red;
@@ -29378,7 +29378,7 @@ return_closcall3(data,  __glo_c_91macro_91n_91prefix,  &c_734012, r_731825, ((cl
 }
 
 static void __lambda_119(void *data, int argc, object self_733325, object r_731822) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 
 closureN_type c_734014;
 c_734014.hdr.mark = gc_color_red;
@@ -29398,7 +29398,7 @@ return_closcall1(data,(closure)&c_734014,  c_734029);;
 }
 
 static void __lambda_118(void *data, int argc, object self_733326, object r_731824) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 
 closureN_type c_734016;
 c_734016.hdr.mark = gc_color_red;
@@ -29417,14 +29417,14 @@ return_closcall1(data,(closure)&c_734016,  c_734025);;
 }
 
 static void __lambda_117(void *data, int argc, object self_733327, object r_731823) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-n-prefix");
 
 object c_734021 = Cyc_string_append(data,  ((closureN)self_733327)->elts[0],2,((closureN)self_733327)->elts[1], r_731823);
 return_closcall1(data,  ((closureN)self_733327)->elts[0],  c_734021);; 
 }
 
 static void __lambda_116(void *data, int argc, closure _,object k_731828, object num_91args_73576) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733892;
 c_733892.hdr.mark = gc_color_red;
@@ -29443,7 +29443,7 @@ return_closcall3(data,  __glo_c_91macro_91n_91prefix,  &c_733892, num_91args_735
 }
 
 static void __lambda_115(void *data, int argc, object self_733328, object r_731829) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733894;
 c_733894.hdr.mark = gc_color_red;
@@ -29463,7 +29463,7 @@ return_closcall1(data,(closure)&c_733894,  c_734003);;
 }
 
 static void __lambda_114(void *data, int argc, object self_733329, object r_731830) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733896;
 c_733896.hdr.mark = gc_color_red;
@@ -29493,7 +29493,7 @@ return_closcall1(data,(closure)&c_733896,  &c_733913);;
 }
 
 static void __lambda_113(void *data, int argc, object self_733330, object r_731843) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733915;
 c_733915.hdr.mark = gc_color_red;
@@ -29514,7 +29514,7 @@ return_closcall1(data,(closure)&c_733915,  c_734000);;
 }
 
 static void __lambda_112(void *data, int argc, object self_733331, object r_731831) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733917;
 c_733917.hdr.mark = gc_color_red;
@@ -29545,7 +29545,7 @@ return_closcall1(data,(closure)&c_733917,  &c_733985);;
 }
 
 static void __lambda_111(void *data, int argc, object self_733332, object k_731841, object s_73577) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733987;
 c_733987.hdr.mark = gc_color_red;
@@ -29564,7 +29564,7 @@ return_closcall1(data,(closure)&c_733987,  __num_gt(data, ((closureN)self_733332
 }
 
 static void __lambda_110(void *data, int argc, object self_733333, object r_731842) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 if( !eq(boolean_f, r_731842) ){ 
   return_closcall1(data,  ((closureN)self_733333)->elts[0],  ((closureN)self_733333)->elts[1]);
 } else { 
@@ -29575,7 +29575,7 @@ return_closcall1(data,  ((closureN)self_733333)->elts[0],  &c_733993);}
 }
 
 static void __lambda_109(void *data, int argc, object self_733334, object r_731832) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733919;
 c_733919.hdr.mark = gc_color_red;
@@ -29592,7 +29592,7 @@ return_closcall4(data,(closure)&c_733919,  ((closureN)self_733334)->elts[2], ((c
 }
 
 static void __lambda_108(void *data, int argc, object self_733335, object args_73581, object n_73580, object n_911_73579, object wrap_73578) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733921;
 c_733921.hdr.mark = gc_color_red;
@@ -29624,7 +29624,7 @@ return_closcall1(data,(closure)&c_733921,  &c_733944);;
 }
 
 static void __lambda_107(void *data, int argc, object self_733336, object r_731837) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733946;
 c_733946.hdr.mark = gc_color_red;
@@ -29651,7 +29651,7 @@ return_closcall1(data,(closure)&c_733946,  c_733977);;
 }
 
 static void __lambda_106(void *data, int argc, object self_733337, object r_731836) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733949;
 c_733949.hdr.mark = gc_color_red;
@@ -29670,7 +29670,7 @@ return_closcall2(data,  ((closureN)self_733337)->elts[3],  &c_733949, r_731836);
 }
 
 static void __lambda_105(void *data, int argc, object self_733338, object r_731833) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733952;
 c_733952.hdr.mark = gc_color_red;
@@ -29692,7 +29692,7 @@ return_closcall2(data,  ((closureN)self_733338)->elts[3],  &c_733952, &c_733974)
 }
 
 static void __lambda_104(void *data, int argc, object self_733339, object r_731834) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733955;
 c_733955.hdr.mark = gc_color_red;
@@ -29714,7 +29714,7 @@ return_closcall2(data,  ((closureN)self_733339)->elts[4],  &c_733955, &c_733973)
 }
 
 static void __lambda_103(void *data, int argc, object self_733340, object r_731835) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 make_string(c_733961, "#define closcall");
 
@@ -29733,7 +29733,7 @@ return_closcall1(data,  ((closureN)self_733340)->elts[1],  c_733960);;
 }
 
 static void __lambda_102(void *data, int argc, object self_733341, object k_731838) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733923;
 c_733923.hdr.mark = gc_color_red;
@@ -29752,7 +29752,7 @@ return_closcall1(data,(closure)&c_733923,  __num_gt(data, ((closureN)self_733341
 }
 
 static void __lambda_101(void *data, int argc, object self_733342, object r_731839) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 if( !eq(boolean_f, r_731839) ){ 
   
 closureN_type c_733925;
@@ -29777,7 +29777,7 @@ return_closcall1(data,  ((closureN)self_733342)->elts[1],  &c_733939);}
 }
 
 static void __lambda_100(void *data, int argc, object self_733343, object r_731840) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 make_int(c_733932, 3);
 
@@ -29786,7 +29786,7 @@ return_closcall1(data,  ((closureN)self_733343)->elts[1],  c_733930);;
 }
 
 static void __lambda_99(void *data, int argc, object self_733344, object k_731844) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 
 closureN_type c_733898;
 c_733898.hdr.mark = gc_color_red;
@@ -29805,7 +29805,7 @@ return_closcall1(data,(closure)&c_733898,  __num_gt(data, ((closureN)self_733344
 }
 
 static void __lambda_98(void *data, int argc, object self_733345, object r_731845) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-closcall");
 if( !eq(boolean_f, r_731845) ){ 
   
 make_int(c_733905, 1);
@@ -29820,7 +29820,7 @@ return_closcall1(data,  ((closureN)self_733345)->elts[0],  &c_733908);}
 }
 
 static void __lambda_97(void *data, int argc, closure _,object k_731848, object num_91args_73582) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
 
 closureN_type c_733853;
 c_733853.hdr.mark = gc_color_red;
@@ -29839,7 +29839,7 @@ return_closcall3(data,  __glo_c_91macro_91n_91prefix,  &c_733853, num_91args_735
 }
 
 static void __lambda_96(void *data, int argc, object self_733346, object r_731849) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
 
 closureN_type c_733855;
 c_733855.hdr.mark = gc_color_red;
@@ -29859,7 +29859,7 @@ return_closcall1(data,(closure)&c_733855,  c_733887);;
 }
 
 static void __lambda_95(void *data, int argc, object self_733347, object r_731850) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
 
 closureN_type c_733857;
 c_733857.hdr.mark = gc_color_red;
@@ -29881,7 +29881,7 @@ return_closcall4(data,  __glo_c_91macro_91array_91assign,  &c_733857, ((closureN
 }
 
 static void __lambda_94(void *data, int argc, object self_733348, object r_731851) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
 
 closureN_type c_733859;
 c_733859.hdr.mark = gc_color_red;
@@ -29897,7 +29897,7 @@ return_closcall3(data,(closure)&c_733859,  ((closureN)self_733348)->elts[1], ((c
 }
 
 static void __lambda_93(void *data, int argc, object self_733349, object args_73585, object n_73584, object arry_91assign_73583) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-direct");
 
 make_string(c_733865, "/* Check for GC, then call C function directly */\n");
 
@@ -29934,7 +29934,7 @@ return_closcall1(data,  ((closureN)self_733349)->elts[0],  c_733864);;
 }
 
 static void __lambda_92(void *data, int argc, closure _,object k_731854, object num_91args_73586) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
 
 closureN_type c_733815;
 c_733815.hdr.mark = gc_color_red;
@@ -29953,7 +29953,7 @@ return_closcall3(data,  __glo_c_91macro_91n_91prefix,  &c_733815, num_91args_735
 }
 
 static void __lambda_91(void *data, int argc, object self_733350, object r_731855) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
 
 closureN_type c_733817;
 c_733817.hdr.mark = gc_color_red;
@@ -29973,7 +29973,7 @@ return_closcall1(data,(closure)&c_733817,  c_733848);;
 }
 
 static void __lambda_90(void *data, int argc, object self_733351, object r_731856) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
 
 closureN_type c_733819;
 c_733819.hdr.mark = gc_color_red;
@@ -29995,7 +29995,7 @@ return_closcall4(data,  __glo_c_91macro_91array_91assign,  &c_733819, ((closureN
 }
 
 static void __lambda_89(void *data, int argc, object self_733352, object r_731857) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
 
 closureN_type c_733821;
 c_733821.hdr.mark = gc_color_red;
@@ -30011,7 +30011,7 @@ return_closcall3(data,(closure)&c_733821,  ((closureN)self_733352)->elts[1], ((c
 }
 
 static void __lambda_88(void *data, int argc, object self_733353, object args_73589, object n_73588, object arry_91assign_73587) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-macro-return-closcall");
 
 make_string(c_733827, "/* Check for GC, then call given continuation closure */\n");
 
@@ -30046,7 +30046,7 @@ return_closcall1(data,  ((closureN)self_733353)->elts[0],  c_733826);;
 }
 
 static void __lambda_87(void *data, int argc, closure _,object k_731860, object arity_73590) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733746;
 c_733746.hdr.mark = gc_color_red;
@@ -30063,7 +30063,7 @@ return_closcall1(data,(closure)&c_733746,  __num_lte(data, arity_73590, __glo__8
 }
 
 static void __lambda_86(void *data, int argc, object self_733354, object r_731861) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 if( !eq(boolean_f, r_731861) ){ 
   
 closureN_type c_733748;
@@ -30084,7 +30084,7 @@ return_closcall0(data,(closure)&c_733748);
 }
 
 static void __lambda_85(void *data, int argc, object self_733355) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733750;
 c_733750.hdr.mark = gc_color_red;
@@ -30112,7 +30112,7 @@ return_closcall1(data,(closure)&c_733750,  &c_733799);;
 }
 
 static void __lambda_84(void *data, int argc, object self_733356, object r_731862) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733801;
 c_733801.hdr.mark = gc_color_red;
@@ -30132,12 +30132,12 @@ return_closcall1(data,(closure)&c_733801,  &c_733806);;
 }
 
 static void __lambda_83(void *data, int argc, object self_733357, object r_731863) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 return_closcall2(data,  __glo_emit_91c_91arity_91macros,  ((closureN)self_733357)->elts[0], r_731863);; 
 }
 
 static void __lambda_82(void *data, int argc, object self_733358, object k_731864) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733752;
 c_733752.hdr.mark = gc_color_red;
@@ -30156,7 +30156,7 @@ return_closcall1(data,(closure)&c_733752,  __num_eq(data, ((closureN)self_733358
 }
 
 static void __lambda_81(void *data, int argc, object self_733359, object r_731871) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733754;
 c_733754.hdr.mark = gc_color_red;
@@ -30173,7 +30173,7 @@ return_closcall1(data,(closure)&c_733754,  r_731871);;
 }
 
 static void __lambda_80(void *data, int argc, object self_733360, object tmp_73591) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733756;
 c_733756.hdr.mark = gc_color_red;
@@ -30202,7 +30202,7 @@ return_closcall1(data,(closure)&c_733756,  &c_733775);;
 }
 
 static void __lambda_79(void *data, int argc, object self_733361, object r_731865) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 if( !eq(boolean_f, r_731865) ){ 
   
 closureN_type c_733777;
@@ -30223,7 +30223,7 @@ return_closcall0(data,(closure)&c_733777);
 }
 
 static void __lambda_78(void *data, int argc, object self_733362) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733779;
 c_733779.hdr.mark = gc_color_red;
@@ -30240,7 +30240,7 @@ return_closcall2(data,  __glo_c_91macro_91closcall,  &c_733779, ((closureN)self_
 }
 
 static void __lambda_77(void *data, int argc, object self_733363, object r_731870) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733781;
 c_733781.hdr.mark = gc_color_red;
@@ -30257,7 +30257,7 @@ return_closcall2(data,  __glo_emit,  &c_733781, r_731870);;
 }
 
 static void __lambda_76(void *data, int argc, object self_733364, object r_731866) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733783;
 c_733783.hdr.mark = gc_color_red;
@@ -30274,7 +30274,7 @@ return_closcall2(data,  __glo_c_91macro_91return_91closcall,  &c_733783, ((closu
 }
 
 static void __lambda_75(void *data, int argc, object self_733365, object r_731869) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733785;
 c_733785.hdr.mark = gc_color_red;
@@ -30291,7 +30291,7 @@ return_closcall2(data,  __glo_emit,  &c_733785, r_731869);;
 }
 
 static void __lambda_74(void *data, int argc, object self_733366, object r_731867) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733787;
 c_733787.hdr.mark = gc_color_red;
@@ -30307,12 +30307,12 @@ return_closcall2(data,  __glo_c_91macro_91return_91direct,  &c_733787, ((closure
 }
 
 static void __lambda_73(void *data, int argc, object self_733367, object r_731868) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 return_closcall2(data,  __glo_emit,  ((closureN)self_733367)->elts[0], r_731868);; 
 }
 
 static void __lambda_72(void *data, int argc, object self_733368, object k_731872) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 if( !eq(boolean_f, ((closureN)self_733368)->elts[1]) ){ 
   return_closcall1(data,  k_731872,  ((closureN)self_733368)->elts[1]);
 } else { 
@@ -30335,7 +30335,7 @@ return_closcall1(data,(closure)&c_733761,  __num_eq(data, ((closureN)self_733368
 }
 
 static void __lambda_71(void *data, int argc, object self_733369, object r_731873) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 
 closureN_type c_733763;
 c_733763.hdr.mark = gc_color_red;
@@ -30352,7 +30352,7 @@ return_closcall1(data,(closure)&c_733763,  r_731873);;
 }
 
 static void __lambda_70(void *data, int argc, object self_733370, object tmp_73592) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-c-arity-macros");
 if( !eq(boolean_f, tmp_73592) ){ 
   return_closcall1(data,  ((closureN)self_733370)->elts[1],  tmp_73592);
 } else { 
@@ -30361,7 +30361,7 @@ if( !eq(boolean_f, tmp_73592) ){
 }
 
 static void __lambda_69(void *data, int argc, closure _,object k_731876, object arity_73593) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733669;
 c_733669.hdr.mark = gc_color_red;
@@ -30378,7 +30378,7 @@ return_closcall1(data,(closure)&c_733669,  Cyc_is_number(arity_73593));;
 }
 
 static void __lambda_68(void *data, int argc, object self_733371, object r_731891) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733671;
 c_733671.hdr.mark = gc_color_red;
@@ -30395,7 +30395,7 @@ return_closcall2(data,  __glo_not,  &c_733671, r_731891);;
 }
 
 static void __lambda_67(void *data, int argc, object self_733372, object r_731877) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 if( !eq(boolean_f, r_731877) ){ 
   
 closureN_type c_733673;
@@ -30428,7 +30428,7 @@ return_closcall1(data,(closure)&c_733725,  __num_gt(data, ((closureN)self_733372
 }
 
 static void __lambda_66(void *data, int argc, object self_733373, object r_731890) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 if( !eq(boolean_f, r_731890) ){ 
   
 closureN_type c_733727;
@@ -30461,19 +30461,19 @@ return_closcall0(data,(closure)&c_733733);}
 }
 
 static void __lambda_65(void *data, int argc, object self_733374) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 return_closcall1(data,  ((closureN)self_733374)->elts[1],  Cyc_vector_set(data, __glo__85c_91call_91arity_85, ((closureN)self_733374)->elts[0], boolean_t));; 
 }
 
 static void __lambda_64(void *data, int argc, object self_733375) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 make_string(c_733730, "Only support up to 128 arguments. Received: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_733375)->elts[1], &c_733730, ((closureN)self_733375)->elts[0]);; 
 }
 
 static void __lambda_63(void *data, int argc, object self_733376) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733675;
 c_733675.hdr.mark = gc_color_red;
@@ -30490,7 +30490,7 @@ return_closcall1(data,(closure)&c_733675,  quote_Non_91numeric);;
 }
 
 static void __lambda_62(void *data, int argc, object self_733377, object r_731879) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733677;
 c_733677.hdr.mark = gc_color_red;
@@ -30508,7 +30508,7 @@ return_closcall1(data,(closure)&c_733677,  quote_number);;
 }
 
 static void __lambda_61(void *data, int argc, object self_733378, object r_731881) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733679;
 c_733679.hdr.mark = gc_color_red;
@@ -30527,7 +30527,7 @@ return_closcall1(data,(closure)&c_733679,  quote_of);;
 }
 
 static void __lambda_60(void *data, int argc, object self_733379, object r_731883) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733681;
 c_733681.hdr.mark = gc_color_red;
@@ -30547,7 +30547,7 @@ return_closcall1(data,(closure)&c_733681,  quote_arguments);;
 }
 
 static void __lambda_59(void *data, int argc, object self_733380, object r_731885) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733683;
 c_733683.hdr.mark = gc_color_red;
@@ -30568,7 +30568,7 @@ return_closcall1(data,(closure)&c_733683,  quote_received);;
 }
 
 static void __lambda_58(void *data, int argc, object self_733381, object r_731887) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733685;
 c_733685.hdr.mark = gc_color_red;
@@ -30590,7 +30590,7 @@ return_closcall1(data,(closure)&c_733685,  nil);;
 }
 
 static void __lambda_57(void *data, int argc, object self_733382, object r_731889) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733687;
 c_733687.hdr.mark = gc_color_red;
@@ -30613,7 +30613,7 @@ return_closcall1(data,(closure)&c_733687,  &c_733722);;
 }
 
 static void __lambda_56(void *data, int argc, object self_733383, object r_731888) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733689;
 c_733689.hdr.mark = gc_color_red;
@@ -30635,7 +30635,7 @@ return_closcall1(data,(closure)&c_733689,  &c_733718);;
 }
 
 static void __lambda_55(void *data, int argc, object self_733384, object r_731886) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733691;
 c_733691.hdr.mark = gc_color_red;
@@ -30656,7 +30656,7 @@ return_closcall1(data,(closure)&c_733691,  &c_733714);;
 }
 
 static void __lambda_54(void *data, int argc, object self_733385, object r_731884) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733693;
 c_733693.hdr.mark = gc_color_red;
@@ -30676,7 +30676,7 @@ return_closcall1(data,(closure)&c_733693,  &c_733710);;
 }
 
 static void __lambda_53(void *data, int argc, object self_733386, object r_731882) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733695;
 c_733695.hdr.mark = gc_color_red;
@@ -30695,7 +30695,7 @@ return_closcall1(data,(closure)&c_733695,  &c_733706);;
 }
 
 static void __lambda_52(void *data, int argc, object self_733387, object r_731880) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 
 closureN_type c_733697;
 c_733697.hdr.mark = gc_color_red;
@@ -30713,12 +30713,12 @@ return_closcall1(data,(closure)&c_733697,  &c_733702);;
 }
 
 static void __lambda_51(void *data, int argc, object self_733388, object r_731878) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:set-c-call-arity!");
 return_closcall2(data,  __glo_error,  ((closureN)self_733388)->elts[0], r_731878);; 
 }
 
 static void __lambda_50(void *data, int argc, closure _,object k_731900, object str_73594) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733501;
 c_733501.hdr.mark = gc_color_red;
@@ -30735,7 +30735,7 @@ return_closcall1(data,(closure)&c_733501,  boolean_f);;
 }
 
 static void __lambda_49(void *data, int argc, object self_733389, object next_73595) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733503;
 c_733503.hdr.mark = gc_color_red;
@@ -30754,7 +30754,7 @@ return_closcall1(data,(closure)&c_733503,  &c_733664);;
 }
 
 static void __lambda_48(void *data, int argc, object self_733390, object next_73595) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733505;
 c_733505.hdr.mark = gc_color_red;
@@ -30772,7 +30772,7 @@ return_closcall0(data,(closure)&c_733505);;
 }
 
 static void __lambda_47(void *data, int argc, object self_733391) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733507;
 c_733507.hdr.mark = gc_color_red;
@@ -30801,7 +30801,7 @@ return_closcall1(data,(closure)&c_733507,  &c_733524);;
 }
 
 static void __lambda_46(void *data, int argc, object self_733392, object k_731905, object head_73597, object tail_73596) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733526;
 c_733526.hdr.mark = gc_color_red;
@@ -30820,7 +30820,7 @@ return_closcall1(data,(closure)&c_733526,  Cyc_is_null(head_73597));;
 }
 
 static void __lambda_45(void *data, int argc, object self_733393, object r_731906) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 if( !eq(boolean_f, r_731906) ){ 
   
 closureN_type c_733528;
@@ -30855,7 +30855,7 @@ return_closcall1(data,(closure)&c_733538,  car(((closureN)self_733393)->elts[0])
 }
 
 static void __lambda_44(void *data, int argc, object self_733394, object r_731925) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733540;
 c_733540.hdr.mark = gc_color_red;
@@ -30874,7 +30874,7 @@ return_closcall1(data,(closure)&c_733540,  equalp(r_731925, obj_char2obj(34)));;
 }
 
 static void __lambda_43(void *data, int argc, object self_733395, object r_731908) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 if( !eq(boolean_f, r_731908) ){ 
   
 closureN_type c_733542;
@@ -30911,7 +30911,7 @@ return_closcall1(data,(closure)&c_733566,  car(((closureN)self_733395)->elts[0])
 }
 
 static void __lambda_42(void *data, int argc, object self_733396, object r_731924) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733568;
 c_733568.hdr.mark = gc_color_red;
@@ -30930,7 +30930,7 @@ return_closcall1(data,(closure)&c_733568,  equalp(r_731924, obj_char2obj(92)));;
 }
 
 static void __lambda_41(void *data, int argc, object self_733397, object r_731912) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 if( !eq(boolean_f, r_731912) ){ 
   
 closureN_type c_733570;
@@ -30967,7 +30967,7 @@ return_closcall1(data,(closure)&c_733594,  car(((closureN)self_733397)->elts[0])
 }
 
 static void __lambda_40(void *data, int argc, object self_733398, object r_731923) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733596;
 c_733596.hdr.mark = gc_color_red;
@@ -30986,7 +30986,7 @@ return_closcall1(data,(closure)&c_733596,  equalp(r_731923, obj_char2obj(10)));;
 }
 
 static void __lambda_39(void *data, int argc, object self_733399, object r_731916) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 if( !eq(boolean_f, r_731916) ){ 
   
 closureN_type c_733598;
@@ -31023,7 +31023,7 @@ return_closcall0(data,(closure)&c_733622);}
 }
 
 static void __lambda_38(void *data, int argc, object self_733400) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733624;
 c_733624.hdr.mark = gc_color_red;
@@ -31042,7 +31042,7 @@ return_closcall1(data,(closure)&c_733624,  cdr(((closureN)self_733400)->elts[0])
 }
 
 static void __lambda_37(void *data, int argc, object self_733401, object r_731920) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733626;
 c_733626.hdr.mark = gc_color_red;
@@ -31061,7 +31061,7 @@ return_closcall1(data,(closure)&c_733626,  car(((closureN)self_733401)->elts[0])
 }
 
 static void __lambda_36(void *data, int argc, object self_733402, object r_731922) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733628;
 c_733628.hdr.mark = gc_color_red;
@@ -31081,12 +31081,12 @@ return_closcall1(data,(closure)&c_733628,  &c_733637);;
 }
 
 static void __lambda_35(void *data, int argc, object self_733403, object r_731921) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 return_closcall3(data,  cell_get(((closureN)self_733403)->elts[1]),  ((closureN)self_733403)->elts[0], ((closureN)self_733403)->elts[2], r_731921);; 
 }
 
 static void __lambda_34(void *data, int argc, object self_733404) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733600;
 c_733600.hdr.mark = gc_color_red;
@@ -31104,7 +31104,7 @@ return_closcall1(data,(closure)&c_733600,  cdr(((closureN)self_733404)->elts[0])
 }
 
 static void __lambda_33(void *data, int argc, object self_733405, object r_731917) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733602;
 c_733602.hdr.mark = gc_color_red;
@@ -31124,7 +31124,7 @@ return_closcall1(data,(closure)&c_733602,  &c_733616);;
 }
 
 static void __lambda_32(void *data, int argc, object self_733406, object r_731919) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733604;
 c_733604.hdr.mark = gc_color_red;
@@ -31144,12 +31144,12 @@ return_closcall1(data,(closure)&c_733604,  &c_733613);;
 }
 
 static void __lambda_31(void *data, int argc, object self_733407, object r_731918) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 return_closcall3(data,  cell_get(((closureN)self_733407)->elts[1]),  ((closureN)self_733407)->elts[0], ((closureN)self_733407)->elts[2], r_731918);; 
 }
 
 static void __lambda_30(void *data, int argc, object self_733408) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733572;
 c_733572.hdr.mark = gc_color_red;
@@ -31167,7 +31167,7 @@ return_closcall1(data,(closure)&c_733572,  cdr(((closureN)self_733408)->elts[0])
 }
 
 static void __lambda_29(void *data, int argc, object self_733409, object r_731913) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733574;
 c_733574.hdr.mark = gc_color_red;
@@ -31187,7 +31187,7 @@ return_closcall1(data,(closure)&c_733574,  &c_733588);;
 }
 
 static void __lambda_28(void *data, int argc, object self_733410, object r_731915) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733576;
 c_733576.hdr.mark = gc_color_red;
@@ -31207,12 +31207,12 @@ return_closcall1(data,(closure)&c_733576,  &c_733585);;
 }
 
 static void __lambda_27(void *data, int argc, object self_733411, object r_731914) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 return_closcall3(data,  cell_get(((closureN)self_733411)->elts[1]),  ((closureN)self_733411)->elts[0], ((closureN)self_733411)->elts[2], r_731914);; 
 }
 
 static void __lambda_26(void *data, int argc, object self_733412) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733544;
 c_733544.hdr.mark = gc_color_red;
@@ -31230,7 +31230,7 @@ return_closcall1(data,(closure)&c_733544,  cdr(((closureN)self_733412)->elts[0])
 }
 
 static void __lambda_25(void *data, int argc, object self_733413, object r_731909) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733546;
 c_733546.hdr.mark = gc_color_red;
@@ -31250,7 +31250,7 @@ return_closcall1(data,(closure)&c_733546,  &c_733560);;
 }
 
 static void __lambda_24(void *data, int argc, object self_733414, object r_731911) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733548;
 c_733548.hdr.mark = gc_color_red;
@@ -31270,12 +31270,12 @@ return_closcall1(data,(closure)&c_733548,  &c_733557);;
 }
 
 static void __lambda_23(void *data, int argc, object self_733415, object r_731910) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 return_closcall3(data,  cell_get(((closureN)self_733415)->elts[1]),  ((closureN)self_733415)->elts[0], ((closureN)self_733415)->elts[2], r_731910);; 
 }
 
 static void __lambda_22(void *data, int argc, object self_733416) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733530;
 c_733530.hdr.mark = gc_color_red;
@@ -31291,14 +31291,14 @@ return_closcall2(data,  __glo_reverse,  &c_733530, ((closureN)self_733416)->elts
 }
 
 static void __lambda_21(void *data, int argc, object self_733417, object r_731907) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 object c_733535 = Cyc_list2string(data,  ((closureN)self_733417)->elts[0],r_731907);
 return_closcall1(data,  ((closureN)self_733417)->elts[0],  c_733535);; 
 }
 
 static void __lambda_20(void *data, int argc, object self_733418, object r_731904) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733509;
 c_733509.hdr.mark = gc_color_red;
@@ -31316,7 +31316,7 @@ return_closcall1(data,(closure)&c_733509,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_19(void *data, int argc, object self_733419, object r_731901) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733511;
 c_733511.hdr.mark = gc_color_red;
@@ -31333,7 +31333,7 @@ return_closcall2(data,  __glo_string_91_125list,  &c_733511, ((closureN)self_733
 }
 
 static void __lambda_18(void *data, int argc, object self_733420, object r_731902) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 
 closureN_type c_733513;
 c_733513.hdr.mark = gc_color_red;
@@ -31351,12 +31351,12 @@ return_closcall1(data,(closure)&c_733513,  nil);;
 }
 
 static void __lambda_17(void *data, int argc, object self_733421, object r_731903) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:cstr:escape-chars");
 return_closcall3(data,  cell_get(((closureN)self_733421)->elts[1]),  ((closureN)self_733421)->elts[0], ((closureN)self_733421)->elts[2], r_731903);; 
 }
 
 static void __lambda_16(void *data, int argc, closure _,object k_731928, object lst_73599, object delim_73598) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 closureN_type c_733451;
 c_733451.hdr.mark = gc_color_red;
@@ -31374,7 +31374,7 @@ return_closcall1(data,(closure)&c_733451,  Cyc_is_null(lst_73599));;
 }
 
 static void __lambda_15(void *data, int argc, object self_733422, object r_731929) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 if( !eq(boolean_f, r_731929) ){ 
   
 closureN_type c_733453;
@@ -31409,7 +31409,7 @@ return_closcall1(data,(closure)&c_733458,  &c_733495);}
 }
 
 static void __lambda_14(void *data, int argc, object self_733423, object r_731934) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 closureN_type c_733460;
 c_733460.hdr.mark = gc_color_red;
@@ -31429,7 +31429,7 @@ return_closcall1(data,(closure)&c_733460,  __num_eq(data, r_731934, &c_733492));
 }
 
 static void __lambda_13(void *data, int argc, object self_733424, object r_731930) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 if( !eq(boolean_f, r_731930) ){ 
   
 closureN_type c_733462;
@@ -31463,7 +31463,7 @@ return_closcall0(data,(closure)&c_733469);}
 }
 
 static void __lambda_12(void *data, int argc, object self_733425) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 closureN_type c_733471;
 c_733471.hdr.mark = gc_color_red;
@@ -31481,7 +31481,7 @@ return_closcall1(data,(closure)&c_733471,  car(((closureN)self_733425)->elts[2])
 }
 
 static void __lambda_11(void *data, int argc, object self_733426, object r_731931) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 closureN_type c_733473;
 c_733473.hdr.mark = gc_color_red;
@@ -31499,7 +31499,7 @@ return_closcall1(data,(closure)&c_733473,  cdr(((closureN)self_733426)->elts[2])
 }
 
 static void __lambda_10(void *data, int argc, object self_733427, object r_731933) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 closureN_type c_733475;
 c_733475.hdr.mark = gc_color_red;
@@ -31517,43 +31517,43 @@ return_closcall3(data,  __glo_string_91join,  &c_733475, r_731933, ((closureN)se
 }
 
 static void __lambda_9(void *data, int argc, object self_733428, object r_731932) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 object c_733480 = Cyc_string_append(data,  ((closureN)self_733428)->elts[1],3,((closureN)self_733428)->elts[2], ((closureN)self_733428)->elts[0], r_731932);
 return_closcall1(data,  ((closureN)self_733428)->elts[1],  c_733480);; 
 }
 
 static void __lambda_8(void *data, int argc, object self_733429) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 return_closcall1(data,  ((closureN)self_733429)->elts[0],  car(((closureN)self_733429)->elts[1]));; 
 }
 
 static void __lambda_7(void *data, int argc, object self_733430) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:string-join");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:string-join");
 
 make_string(c_733456, "");
 return_closcall1(data,  ((closureN)self_733430)->elts[0],  &c_733456);; 
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_731937) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit-newline");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit-newline");
 return_closcall1(data,  __glo_newline,  k_731937);; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_731940, object strs_73600_raw, ...) {
 load_varargs(strs_73600, strs_73600_raw, argc - 1);
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emits*");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emits*");
 return_closcall3(data,  __glo_for_91each,  k_731940, __glo_emits, strs_73600);; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_731943, object str_73601) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emits");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emits");
 return_closcall2(data,  __glo_display,  k_731943, str_73601);; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_731946, object strs_73602_raw, ...) {
 load_varargs(strs_73602, strs_73602_raw, argc - 1);
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit*");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit*");
 
 closureN_type c_733440;
 c_733440.hdr.mark = gc_color_red;
@@ -31569,12 +31569,12 @@ return_closcall3(data,  __glo_for_91each,  &c_733440, __glo_emits, strs_73602);;
 }
 
 static void __lambda_2(void *data, int argc, object self_733431, object r_731947) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit*");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit*");
 return_closcall1(data,  __glo_newline,  ((closureN)self_733431)->elts[0]);; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_731950, object line_73603) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit");
 
 closureN_type c_733435;
 c_733435.hdr.mark = gc_color_red;
@@ -31590,7 +31590,7 @@ return_closcall2(data,  __glo_display,  &c_733435, line_73603);;
 }
 
 static void __lambda_0(void *data, int argc, object self_733432, object r_731951) {
-  Cyc_st_add2(data, "scheme/cyclone/cgen.sld:emit");
+  Cyc_st_add(data, "scheme/cyclone/cgen.sld:emit");
 return_closcall1(data,  __glo_newline,  ((closureN)self_733432)->elts[0]);; 
 }
 

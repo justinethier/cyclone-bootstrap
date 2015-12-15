@@ -430,14 +430,14 @@ static void __lambda_1(void *data, int argc, closure _,object k_73279, object as
 static void __lambda_0(void *data, int argc, object self_73453, object r_73280) ;
 
 static void __lambda_191(void *data, int argc, closure _,object k_7395) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib-init:schemecyclonelibraries");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib-init:schemecyclonelibraries");
 
 make_int(c_731254, 0);
 return_closcall1(data,  k_7395,  &c_731254);; 
 }
 
 static void __lambda_190(void *data, int argc, closure _,object k_7398, object libs_95deps_7337) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_73999;
 c_73999.hdr.mark = gc_color_red;
@@ -454,7 +454,7 @@ return_closcall1(data,(closure)&c_73999,  boolean_f);;
 }
 
 static void __lambda_189(void *data, int argc, object self_73281, object loop_7338) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731001;
 c_731001.hdr.mark = gc_color_red;
@@ -471,7 +471,7 @@ return_closcall1(data,(closure)&c_731001,  nil);;
 }
 
 static void __lambda_188(void *data, int argc, object self_73282, object r_7399) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731003;
 c_731003.hdr.mark = gc_color_red;
@@ -488,7 +488,7 @@ return_closcall1(data,(closure)&c_731003,  r_7399);;
 }
 
 static void __lambda_187(void *data, int argc, object self_73283, object result_7339) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731005;
 c_731005.hdr.mark = gc_color_red;
@@ -507,7 +507,7 @@ return_closcall1(data,(closure)&c_731005,  &c_731251);;
 }
 
 static void __lambda_186(void *data, int argc, object self_73284, object result_7339) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731007;
 c_731007.hdr.mark = gc_color_red;
@@ -536,7 +536,7 @@ return_closcall1(data,(closure)&c_731007,  &c_731016);;
 }
 
 static void __lambda_185(void *data, int argc, object self_73285, object k_73102, object lib_95dep_7340) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731018;
 c_731018.hdr.mark = gc_color_red;
@@ -554,7 +554,7 @@ return_closcall1(data,(closure)&c_731018,  Cyc_is_null(cell_get(((closureN)self_
 }
 
 static void __lambda_184(void *data, int argc, object self_73286, object r_73103) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73103) ){ 
   
 closureN_type c_731020;
@@ -589,7 +589,7 @@ return_closcall0(data,(closure)&c_731035);}
 }
 
 static void __lambda_183(void *data, int argc, object self_73287) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731037;
 c_731037.hdr.mark = gc_color_red;
@@ -609,7 +609,7 @@ return_closcall1(data,(closure)&c_731037,  &c_731240);;
 }
 
 static void __lambda_182(void *data, int argc, object self_73288, object r_73106) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731039;
 c_731039.hdr.mark = gc_color_red;
@@ -629,7 +629,7 @@ return_closcall2(data,(closure)&c_731039,  &c_731237, r_73106);;
 }
 
 static void __lambda_181(void *data, int argc, object self_73289, object idx_91my_91imports_7342, object idx_91imports_91me_7341) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731041;
 c_731041.hdr.mark = gc_color_red;
@@ -650,7 +650,7 @@ return_closcall1(data,(closure)&c_731041,  &c_731236);;
 }
 
 static void __lambda_180(void *data, int argc, object self_73290, object idx_91my_91imports_7342) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731043;
 c_731043.hdr.mark = gc_color_red;
@@ -671,7 +671,7 @@ return_closcall1(data,(closure)&c_731043,  &c_731232);;
 }
 
 static void __lambda_179(void *data, int argc, object self_73291, object idx_91imports_91me_7341) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731045;
 c_731045.hdr.mark = gc_color_red;
@@ -691,7 +691,7 @@ return_closcall1(data,(closure)&c_731045,  boolean_f);;
 }
 
 static void __lambda_178(void *data, int argc, object self_73292, object loop_7343) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731047;
 c_731047.hdr.mark = gc_color_red;
@@ -713,7 +713,7 @@ return_closcall1(data,(closure)&c_731047,  &c_731229);;
 }
 
 static void __lambda_177(void *data, int argc, object self_73293, object loop_7343) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731049;
 c_731049.hdr.mark = gc_color_red;
@@ -749,7 +749,7 @@ return_closcall1(data,(closure)&c_731049,  &c_731107);;
 }
 
 static void __lambda_176(void *data, int argc, object self_73294, object k_73114, object i_7344) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731109;
 c_731109.hdr.mark = gc_color_red;
@@ -773,7 +773,7 @@ return_closcall1(data,(closure)&c_731109,  &c_731223);;
 }
 
 static void __lambda_175(void *data, int argc, object self_73295, object r_73133) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731111;
 c_731111.hdr.mark = gc_color_red;
@@ -795,7 +795,7 @@ return_closcall1(data,(closure)&c_731111,  __num_eq(data, ((closureN)self_73295)
 }
 
 static void __lambda_174(void *data, int argc, object self_73296, object r_73115) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73115) ){ 
   
 closureN_type c_731113;
@@ -832,7 +832,7 @@ return_closcall0(data,(closure)&c_731117);}
 }
 
 static void __lambda_173(void *data, int argc, object self_73297) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731119;
 c_731119.hdr.mark = gc_color_red;
@@ -867,7 +867,7 @@ return_closcall1(data,(closure)&c_731119,  &c_731161);;
 }
 
 static void __lambda_172(void *data, int argc, object self_73298, object r_73116) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731163;
 c_731163.hdr.mark = gc_color_red;
@@ -899,7 +899,7 @@ return_closcall1(data,(closure)&c_731163,  &c_731205);;
 }
 
 static void __lambda_171(void *data, int argc, object self_73299, object r_73117) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731207;
 c_731207.hdr.mark = gc_color_red;
@@ -920,12 +920,12 @@ return_closcall1(data,(closure)&c_731207,  &c_731215);;
 }
 
 static void __lambda_170(void *data, int argc, object self_73300, object r_73118) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall2(data,  cell_get(((closureN)self_73300)->elts[1]),  ((closureN)self_73300)->elts[0], r_73118);; 
 }
 
 static void __lambda_169(void *data, int argc, object self_73301, object k_73119) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731165;
 c_731165.hdr.mark = gc_color_red;
@@ -957,7 +957,7 @@ return_closcall1(data,(closure)&c_731165,  &c_731196);;
 }
 
 static void __lambda_168(void *data, int argc, object self_73302, object r_73120) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73120) ){ 
   return_closcall1(data,  ((closureN)self_73302)->elts[2],  Cyc_set_car(data, ((closureN)self_73302)->elts[1], ((closureN)self_73302)->elts[0]));
 } else { 
@@ -966,7 +966,7 @@ if( !eq(boolean_f, r_73120) ){
 }
 
 static void __lambda_167(void *data, int argc, object self_73303, object k_73121) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731167;
 c_731167.hdr.mark = gc_color_red;
@@ -985,7 +985,7 @@ return_closcall1(data,(closure)&c_731167,  __num_lt(data, ((closureN)self_73303)
 }
 
 static void __lambda_166(void *data, int argc, object self_73304, object r_73122) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73122) ){ 
   
 closureN_type c_731169;
@@ -1007,7 +1007,7 @@ return_closcall1(data,(closure)&c_731169,  car(((closureN)self_73304)->elts[2]))
 }
 
 static void __lambda_165(void *data, int argc, object self_73305, object r_73123) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731171;
 c_731171.hdr.mark = gc_color_red;
@@ -1024,7 +1024,7 @@ return_closcall3(data,  __glo_list_91ref,  &c_731171, cell_get(((closureN)self_7
 }
 
 static void __lambda_164(void *data, int argc, object self_73306, object r_73125) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731173;
 c_731173.hdr.mark = gc_color_red;
@@ -1041,12 +1041,12 @@ return_closcall1(data,(closure)&c_731173,  cdr(r_73125));;
 }
 
 static void __lambda_163(void *data, int argc, object self_73307, object r_73124) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall1(data,  ((closureN)self_73307)->elts[0],  memberp(data, ((closureN)self_73307)->elts[1], r_73124));; 
 }
 
 static void __lambda_162(void *data, int argc, object self_73308, object k_73126) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731121;
 c_731121.hdr.mark = gc_color_red;
@@ -1078,7 +1078,7 @@ return_closcall1(data,(closure)&c_731121,  &c_731152);;
 }
 
 static void __lambda_161(void *data, int argc, object self_73309, object r_73127) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73127) ){ 
   return_closcall1(data,  ((closureN)self_73309)->elts[2],  Cyc_set_car(data, ((closureN)self_73309)->elts[1], ((closureN)self_73309)->elts[0]));
 } else { 
@@ -1087,7 +1087,7 @@ if( !eq(boolean_f, r_73127) ){
 }
 
 static void __lambda_160(void *data, int argc, object self_73310, object k_73128) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731123;
 c_731123.hdr.mark = gc_color_red;
@@ -1106,7 +1106,7 @@ return_closcall1(data,(closure)&c_731123,  __num_gt(data, ((closureN)self_73310)
 }
 
 static void __lambda_159(void *data, int argc, object self_73311, object r_73129) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73129) ){ 
   
 closureN_type c_731125;
@@ -1127,7 +1127,7 @@ return_closcall3(data,  __glo_list_91ref,  &c_731125, cell_get(((closureN)self_7
 }
 
 static void __lambda_158(void *data, int argc, object self_73312, object r_73132) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731127;
 c_731127.hdr.mark = gc_color_red;
@@ -1144,7 +1144,7 @@ return_closcall1(data,(closure)&c_731127,  car(r_73132));;
 }
 
 static void __lambda_157(void *data, int argc, object self_73313, object r_73130) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731129;
 c_731129.hdr.mark = gc_color_red;
@@ -1161,17 +1161,17 @@ return_closcall1(data,(closure)&c_731129,  cdr(((closureN)self_73313)->elts[1]))
 }
 
 static void __lambda_156(void *data, int argc, object self_73314, object r_73131) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall1(data,  ((closureN)self_73314)->elts[0],  memberp(data, ((closureN)self_73314)->elts[1], r_73131));; 
 }
 
 static void __lambda_155(void *data, int argc, object self_73315) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall1(data,  ((closureN)self_73315)->elts[0],  quote_done);; 
 }
 
 static void __lambda_154(void *data, int argc, object self_73316, object r_73113) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731051;
 c_731051.hdr.mark = gc_color_red;
@@ -1192,7 +1192,7 @@ return_closcall1(data,(closure)&c_731051,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_153(void *data, int argc, object self_73317, object r_73107) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731056;
 c_731056.hdr.mark = gc_color_red;
@@ -1214,7 +1214,7 @@ return_closcall2(data,  cell_get(((closureN)self_73317)->elts[4]),  &c_731056, &
 }
 
 static void __lambda_152(void *data, int argc, object self_73318, object r_73108) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731058;
 c_731058.hdr.mark = gc_color_red;
@@ -1234,7 +1234,7 @@ return_closcall1(data,(closure)&c_731058,  __num_lte(data, cell_get(((closureN)s
 }
 
 static void __lambda_151(void *data, int argc, object self_73319, object r_73109) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73109) ){ 
   
 closureN_type c_731060;
@@ -1270,12 +1270,12 @@ return_closcall2(data,  __glo_error,  ((closureN)self_73319)->elts[2], &c_731094
 }
 
 static void __lambda_150(void *data, int argc, object self_73320, object r_73110) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall4(data,  __glo_list_91insert_91at_67,  ((closureN)self_73320)->elts[0], cell_get(((closureN)self_73320)->elts[2]), ((closureN)self_73320)->elts[1], r_73110);; 
 }
 
 static void __lambda_149(void *data, int argc, object self_73321, object k_73111) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731062;
 c_731062.hdr.mark = gc_color_red;
@@ -1292,7 +1292,7 @@ return_closcall1(data,(closure)&c_731062,  __num_eq(data, cell_get(((closureN)se
 }
 
 static void __lambda_148(void *data, int argc, object self_73322, object r_73112) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 if( !eq(boolean_f, r_73112) ){ 
   return_closcall1(data,  ((closureN)self_73322)->elts[1],  cell_get(((closureN)self_73322)->elts[0]));
 } else { 
@@ -1305,7 +1305,7 @@ return_closcall1(data,  ((closureN)self_73322)->elts[1],  &c_731072);}
 }
 
 static void __lambda_147(void *data, int argc, object self_73323) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731022;
 c_731022.hdr.mark = gc_color_red;
@@ -1323,7 +1323,7 @@ return_closcall1(data,(closure)&c_731022,  nil);;
 }
 
 static void __lambda_146(void *data, int argc, object self_73324, object r_73105) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731024;
 c_731024.hdr.mark = gc_color_red;
@@ -1342,12 +1342,12 @@ return_closcall1(data,(closure)&c_731024,  &c_731032);;
 }
 
 static void __lambda_145(void *data, int argc, object self_73325, object r_73104) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall1(data,  ((closureN)self_73325)->elts[0],  Cyc_set_car(data, ((closureN)self_73325)->elts[1], r_73104));; 
 }
 
 static void __lambda_144(void *data, int argc, object self_73326, object r_73101) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 
 closureN_type c_731009;
 c_731009.hdr.mark = gc_color_red;
@@ -1364,12 +1364,12 @@ return_closcall3(data,  __glo_for_91each,  &c_731009, r_73101, ((closureN)self_7
 }
 
 static void __lambda_143(void *data, int argc, object self_73327, object r_73100) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-dep-list");
 return_closcall3(data,  __glo_map,  ((closureN)self_73327)->elts[0], primitive_car, cell_get(((closureN)self_73327)->elts[1]));; 
 }
 
 static void __lambda_142(void *data, int argc, closure _,object k_73136, object imports_7345) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73908;
 c_73908.hdr.mark = gc_color_red;
@@ -1386,7 +1386,7 @@ return_closcall2(data,(closure)&c_73908,  boolean_f, boolean_f);;
 }
 
 static void __lambda_141(void *data, int argc, object self_73328, object libraries_95deps_7347, object find_91deps_67_7346) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73910;
 c_73910.hdr.mark = gc_color_red;
@@ -1406,7 +1406,7 @@ return_closcall1(data,(closure)&c_73910,  &c_73996);;
 }
 
 static void __lambda_140(void *data, int argc, object self_73329, object libraries_95deps_7347) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73912;
 c_73912.hdr.mark = gc_color_red;
@@ -1426,7 +1426,7 @@ return_closcall1(data,(closure)&c_73912,  &c_73992);;
 }
 
 static void __lambda_139(void *data, int argc, object self_73330, object find_91deps_67_7346) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73914;
 c_73914.hdr.mark = gc_color_red;
@@ -1445,7 +1445,7 @@ return_closcall0(data,(closure)&c_73914);;
 }
 
 static void __lambda_138(void *data, int argc, object self_73331) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73916;
 c_73916.hdr.mark = gc_color_red;
@@ -1464,7 +1464,7 @@ return_closcall1(data,(closure)&c_73916,  nil);;
 }
 
 static void __lambda_137(void *data, int argc, object self_73332, object r_73150) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73918;
 c_73918.hdr.mark = gc_color_red;
@@ -1483,7 +1483,7 @@ return_closcall1(data,(closure)&c_73918,  Cyc_set_car(data, ((closureN)self_7333
 }
 
 static void __lambda_136(void *data, int argc, object self_73333, object r_73137) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73920;
 c_73920.hdr.mark = gc_color_red;
@@ -1514,7 +1514,7 @@ return_closcall1(data,(closure)&c_73920,  &c_73937);;
 }
 
 static void __lambda_135(void *data, int argc, object self_73334, object k_73141, object import_91set_7348) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73939;
 c_73939.hdr.mark = gc_color_red;
@@ -1543,7 +1543,7 @@ return_closcall1(data,(closure)&c_73939,  &c_73943);;
 }
 
 static void __lambda_134(void *data, int argc, object self_73335, object k_73143, object i_7349) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73945;
 c_73945.hdr.mark = gc_color_red;
@@ -1562,7 +1562,7 @@ return_closcall1(data,(closure)&c_73945,  assoc(data, i_7349, cell_get(((closure
 }
 
 static void __lambda_133(void *data, int argc, object self_73336, object r_73149) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73947;
 c_73947.hdr.mark = gc_color_red;
@@ -1581,7 +1581,7 @@ return_closcall2(data,  __glo_not,  &c_73947, r_73149);;
 }
 
 static void __lambda_132(void *data, int argc, object self_73337, object r_73144) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 if( !eq(boolean_f, r_73144) ){ 
   
 closureN_type c_73949;
@@ -1604,7 +1604,7 @@ return_closcall0(data,(closure)&c_73949);
 }
 
 static void __lambda_131(void *data, int argc, object self_73338) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73951;
 c_73951.hdr.mark = gc_color_red;
@@ -1623,7 +1623,7 @@ return_closcall2(data,  __glo_lib_117read_91imports,  &c_73951, ((closureN)self_
 }
 
 static void __lambda_130(void *data, int argc, object self_73339, object r_73145) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73953;
 c_73953.hdr.mark = gc_color_red;
@@ -1642,7 +1642,7 @@ return_closcall1(data,(closure)&c_73953,  r_73145);;
 }
 
 static void __lambda_129(void *data, int argc, object self_73340, object deps_7350) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73955;
 c_73955.hdr.mark = gc_color_red;
@@ -1663,7 +1663,7 @@ return_closcall1(data,(closure)&c_73955,  &c_73977);;
 }
 
 static void __lambda_128(void *data, int argc, object self_73341, object r_73148) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73957;
 c_73957.hdr.mark = gc_color_red;
@@ -1684,7 +1684,7 @@ return_closcall1(data,(closure)&c_73957,  &c_73971);;
 }
 
 static void __lambda_127(void *data, int argc, object self_73342, object r_73147) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73959;
 c_73959.hdr.mark = gc_color_red;
@@ -1702,17 +1702,17 @@ return_closcall1(data,(closure)&c_73959,  Cyc_set_car(data, ((closureN)self_7334
 }
 
 static void __lambda_126(void *data, int argc, object self_73343, object r_73146) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_closcall2(data,  cell_get(((closureN)self_73343)->elts[1]),  ((closureN)self_73343)->elts[2], ((closureN)self_73343)->elts[0]);; 
 }
 
 static void __lambda_125(void *data, int argc, object self_73344, object r_73142) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_closcall3(data,  __glo_for_91each,  ((closureN)self_73344)->elts[1], r_73142, ((closureN)self_73344)->elts[0]);; 
 }
 
 static void __lambda_124(void *data, int argc, object self_73345, object r_73140) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73922;
 c_73922.hdr.mark = gc_color_red;
@@ -1731,7 +1731,7 @@ return_closcall1(data,(closure)&c_73922,  Cyc_set_car(data, ((closureN)self_7334
 }
 
 static void __lambda_123(void *data, int argc, object self_73346, object r_73138) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 
 closureN_type c_73927;
 c_73927.hdr.mark = gc_color_red;
@@ -1748,12 +1748,12 @@ return_closcall2(data,  cell_get(((closureN)self_73346)->elts[0]),  &c_73927, ((
 }
 
 static void __lambda_122(void *data, int argc, object self_73347, object r_73139) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:get-all-import-deps");
 return_closcall2(data,  __glo_lib_117get_91dep_91list,  ((closureN)self_73347)->elts[0], cell_get(((closureN)self_73347)->elts[1]));; 
 }
 
 static void __lambda_121(void *data, int argc, closure _,object k_73153, object imports_7351) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
 
 closureN_type c_73895;
 c_73895.hdr.mark = gc_color_red;
@@ -1772,12 +1772,12 @@ return_closcall1(data,(closure)&c_73895,  &c_73904);;
 }
 
 static void __lambda_120(void *data, int argc, object self_73348, object k_73156, object import_7352) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
 return_closcall2(data,  __glo_lib_117import_91_125metalist,  k_73156, import_7352);; 
 }
 
 static void __lambda_119(void *data, int argc, object self_73349, object r_73155) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
 
 closureN_type c_73897;
 c_73897.hdr.mark = gc_color_red;
@@ -1793,14 +1793,14 @@ return_closcall3(data,  __glo_map,  &c_73897, r_73155, ((closureN)self_73349)->e
 }
 
 static void __lambda_118(void *data, int argc, object self_73350, object r_73154) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-meta");
 
 object c_73902 = apply(data,  ((closureN)self_73350)->elts[0],__glo_append, r_73154);
 return_closcall1(data,  ((closureN)self_73350)->elts[0],  c_73902);; 
 }
 
 static void __lambda_117(void *data, int argc, closure _,object k_73159, object import_7353) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73826;
 c_73826.hdr.mark = gc_color_red;
@@ -1818,7 +1818,7 @@ return_closcall3(data,  __glo_lib_117import_91_125filename,  &c_73826, import_73
 }
 
 static void __lambda_116(void *data, int argc, object self_73351, object r_73160) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73828;
 c_73828.hdr.mark = gc_color_red;
@@ -1835,7 +1835,7 @@ return_closcall1(data,(closure)&c_73828,  nil);;
 }
 
 static void __lambda_115(void *data, int argc, object self_73352, object r_73161) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73830;
 c_73830.hdr.mark = gc_color_red;
@@ -1851,7 +1851,7 @@ return_closcall3(data,(closure)&c_73830,  ((closureN)self_73352)->elts[1], boole
 }
 
 static void __lambda_114(void *data, int argc, object self_73353, object file_7356, object fp_7355, object result_7354) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73832;
 c_73832.hdr.mark = gc_color_red;
@@ -1871,7 +1871,7 @@ return_closcall1(data,(closure)&c_73832,  &c_73890);;
 }
 
 static void __lambda_113(void *data, int argc, object self_73354, object fp_7355) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73834;
 c_73834.hdr.mark = gc_color_red;
@@ -1891,7 +1891,7 @@ return_closcall1(data,(closure)&c_73834,  &c_73886);;
 }
 
 static void __lambda_112(void *data, int argc, object self_73355, object result_7354) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73836;
 c_73836.hdr.mark = gc_color_red;
@@ -1921,12 +1921,12 @@ return_closcall1(data,(closure)&c_73836,  &c_73878);;
 }
 
 static void __lambda_111(void *data, int argc, object self_73356, object r_73162) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 return_closcall1(data,  ((closureN)self_73356)->elts[0],  cell_get(((closureN)self_73356)->elts[1]));; 
 }
 
 static void __lambda_110(void *data, int argc, object self_73357, object k_73163) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73838;
 c_73838.hdr.mark = gc_color_red;
@@ -1945,7 +1945,7 @@ return_closcall1(data,(closure)&c_73838,  Cyc_io_file_exists(data, ((closureN)se
 }
 
 static void __lambda_109(void *data, int argc, object self_73358, object r_73164) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 if( !eq(boolean_f, r_73164) ){ 
   
 closureN_type c_73840;
@@ -1968,7 +1968,7 @@ return_closcall0(data,(closure)&c_73840);
 }
 
 static void __lambda_108(void *data, int argc, object self_73359) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73842;
 c_73842.hdr.mark = gc_color_red;
@@ -1988,7 +1988,7 @@ return_closcall1(data,(closure)&c_73842,  &c_73871);;
 }
 
 static void __lambda_107(void *data, int argc, object self_73360, object r_73169) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73844;
 c_73844.hdr.mark = gc_color_red;
@@ -2006,7 +2006,7 @@ return_closcall1(data,(closure)&c_73844,  Cyc_set_car(data, ((closureN)self_7336
 }
 
 static void __lambda_106(void *data, int argc, object self_73361, object r_73165) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73846;
 c_73846.hdr.mark = gc_color_red;
@@ -2024,7 +2024,7 @@ return_closcall2(data,  __glo_read_91all,  &c_73846, cell_get(((closureN)self_73
 }
 
 static void __lambda_105(void *data, int argc, object self_73362, object r_73168) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73848;
 c_73848.hdr.mark = gc_color_red;
@@ -2042,7 +2042,7 @@ return_closcall1(data,(closure)&c_73848,  car(r_73168));;
 }
 
 static void __lambda_104(void *data, int argc, object self_73363, object r_73167) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 
 closureN_type c_73850;
 c_73850.hdr.mark = gc_color_red;
@@ -2059,12 +2059,12 @@ return_closcall1(data,(closure)&c_73850,  Cyc_set_car(data, ((closureN)self_7336
 }
 
 static void __lambda_103(void *data, int argc, object self_73364, object r_73166) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->metalist");
 return_closcall1(data,  ((closureN)self_73364)->elts[1],  Cyc_io_close_input_port(data, cell_get(((closureN)self_73364)->elts[0])));; 
 }
 
 static void __lambda_102(void *data, int argc, closure _,object k_73172, object imports_7357) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 closureN_type c_73813;
 c_73813.hdr.mark = gc_color_red;
@@ -2083,12 +2083,12 @@ return_closcall1(data,(closure)&c_73813,  &c_73822);;
 }
 
 static void __lambda_101(void *data, int argc, object self_73365, object k_73175, object import_7358) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
 return_closcall2(data,  __glo_lib_117import_91_125export_91list,  k_73175, import_7358);; 
 }
 
 static void __lambda_100(void *data, int argc, object self_73366, object r_73174) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 closureN_type c_73815;
 c_73815.hdr.mark = gc_color_red;
@@ -2104,14 +2104,14 @@ return_closcall3(data,  __glo_map,  &c_73815, r_73174, ((closureN)self_73366)->e
 }
 
 static void __lambda_99(void *data, int argc, object self_73367, object r_73173) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:resolve-imports");
 
 object c_73820 = apply(data,  ((closureN)self_73367)->elts[0],__glo_append, r_73173);
 return_closcall1(data,  ((closureN)self_73367)->elts[0],  c_73820);; 
 }
 
 static void __lambda_98(void *data, int argc, closure _,object k_73178, object import_7359) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73774;
 c_73774.hdr.mark = gc_color_red;
@@ -2127,7 +2127,7 @@ return_closcall2(data,  __glo_lib_117import_91_125filename,  &c_73774, import_73
 }
 
 static void __lambda_97(void *data, int argc, object self_73368, object r_73185) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73776;
 c_73776.hdr.mark = gc_color_red;
@@ -2145,7 +2145,7 @@ return_closcall1(data,(closure)&c_73776,  c_73810);;
 }
 
 static void __lambda_96(void *data, int argc, object self_73369, object r_73179) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73778;
 c_73778.hdr.mark = gc_color_red;
@@ -2161,7 +2161,7 @@ return_closcall1(data,(closure)&c_73778,  r_73179);;
 }
 
 static void __lambda_95(void *data, int argc, object self_73370, object dir_7360) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73780;
 c_73780.hdr.mark = gc_color_red;
@@ -2179,7 +2179,7 @@ return_closcall1(data,(closure)&c_73780,  &c_73807);;
 }
 
 static void __lambda_94(void *data, int argc, object self_73371, object r_73180) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73782;
 c_73782.hdr.mark = gc_color_red;
@@ -2195,7 +2195,7 @@ return_closcall1(data,(closure)&c_73782,  r_73180);;
 }
 
 static void __lambda_93(void *data, int argc, object self_73372, object fp_7361) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73784;
 c_73784.hdr.mark = gc_color_red;
@@ -2212,7 +2212,7 @@ return_closcall2(data,  __glo_read_91all,  &c_73784, fp_7361);;
 }
 
 static void __lambda_92(void *data, int argc, object self_73373, object r_73181) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73786;
 c_73786.hdr.mark = gc_color_red;
@@ -2229,7 +2229,7 @@ return_closcall1(data,(closure)&c_73786,  r_73181);;
 }
 
 static void __lambda_91(void *data, int argc, object self_73374, object lib_7362) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73788;
 c_73788.hdr.mark = gc_color_red;
@@ -2246,7 +2246,7 @@ return_closcall1(data,(closure)&c_73788,  car(lib_7362));;
 }
 
 static void __lambda_90(void *data, int argc, object self_73375, object r_73184) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73790;
 c_73790.hdr.mark = gc_color_red;
@@ -2263,7 +2263,7 @@ return_closcall2(data,  __glo_lib_117exports,  &c_73790, r_73184);;
 }
 
 static void __lambda_89(void *data, int argc, object self_73376, object r_73182) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73792;
 c_73792.hdr.mark = gc_color_red;
@@ -2280,7 +2280,7 @@ return_closcall1(data,(closure)&c_73792,  r_73182);;
 }
 
 static void __lambda_88(void *data, int argc, object self_73377, object exports_7363) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73794;
 c_73794.hdr.mark = gc_color_red;
@@ -2298,7 +2298,7 @@ return_closcall0(data,(closure)&c_73794);;
 }
 
 static void __lambda_87(void *data, int argc, object self_73378) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 
 closureN_type c_73796;
 c_73796.hdr.mark = gc_color_red;
@@ -2315,12 +2315,12 @@ return_closcall1(data,(closure)&c_73796,  Cyc_io_close_input_port(data, ((closur
 }
 
 static void __lambda_86(void *data, int argc, object self_73379, object r_73183) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->export-list");
 return_closcall1(data,  ((closureN)self_73379)->elts[1],  ((closureN)self_73379)->elts[0]);; 
 }
 
 static void __lambda_85(void *data, int argc, closure _,object k_73188, object import_7364) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73740;
 c_73740.hdr.mark = gc_color_red;
@@ -2336,7 +2336,7 @@ return_closcall2(data,  __glo_lib_117import_91_125filename,  &c_73740, import_73
 }
 
 static void __lambda_84(void *data, int argc, object self_73380, object r_73189) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73742;
 c_73742.hdr.mark = gc_color_red;
@@ -2352,7 +2352,7 @@ return_closcall1(data,(closure)&c_73742,  r_73189);;
 }
 
 static void __lambda_83(void *data, int argc, object self_73381, object dir_7365) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73744;
 c_73744.hdr.mark = gc_color_red;
@@ -2370,7 +2370,7 @@ return_closcall1(data,(closure)&c_73744,  &c_73771);;
 }
 
 static void __lambda_82(void *data, int argc, object self_73382, object r_73190) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73746;
 c_73746.hdr.mark = gc_color_red;
@@ -2386,7 +2386,7 @@ return_closcall1(data,(closure)&c_73746,  r_73190);;
 }
 
 static void __lambda_81(void *data, int argc, object self_73383, object fp_7366) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73748;
 c_73748.hdr.mark = gc_color_red;
@@ -2403,7 +2403,7 @@ return_closcall2(data,  __glo_read_91all,  &c_73748, fp_7366);;
 }
 
 static void __lambda_80(void *data, int argc, object self_73384, object r_73191) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73750;
 c_73750.hdr.mark = gc_color_red;
@@ -2420,7 +2420,7 @@ return_closcall1(data,(closure)&c_73750,  r_73191);;
 }
 
 static void __lambda_79(void *data, int argc, object self_73385, object lib_7367) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73752;
 c_73752.hdr.mark = gc_color_red;
@@ -2437,7 +2437,7 @@ return_closcall1(data,(closure)&c_73752,  car(lib_7367));;
 }
 
 static void __lambda_78(void *data, int argc, object self_73386, object r_73194) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73754;
 c_73754.hdr.mark = gc_color_red;
@@ -2454,7 +2454,7 @@ return_closcall2(data,  __glo_lib_117imports,  &c_73754, r_73194);;
 }
 
 static void __lambda_77(void *data, int argc, object self_73387, object r_73192) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73756;
 c_73756.hdr.mark = gc_color_red;
@@ -2471,7 +2471,7 @@ return_closcall1(data,(closure)&c_73756,  r_73192);;
 }
 
 static void __lambda_76(void *data, int argc, object self_73388, object imports_7368) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73758;
 c_73758.hdr.mark = gc_color_red;
@@ -2489,7 +2489,7 @@ return_closcall0(data,(closure)&c_73758);;
 }
 
 static void __lambda_75(void *data, int argc, object self_73389) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 
 closureN_type c_73760;
 c_73760.hdr.mark = gc_color_red;
@@ -2506,12 +2506,12 @@ return_closcall1(data,(closure)&c_73760,  Cyc_io_close_input_port(data, ((closur
 }
 
 static void __lambda_74(void *data, int argc, object self_73390, object r_73193) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:read-imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:read-imports");
 return_closcall1(data,  ((closureN)self_73390)->elts[1],  ((closureN)self_73390)->elts[0]);; 
 }
 
 static void __lambda_73(void *data, int argc, closure _,object k_73197, object import_7369) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73681;
 c_73681.hdr.mark = gc_color_red;
@@ -2528,7 +2528,7 @@ return_closcall2(data,  __glo_reverse,  &c_73681, import_7369);;
 }
 
 static void __lambda_72(void *data, int argc, object self_73391, object r_73209) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73683;
 c_73683.hdr.mark = gc_color_red;
@@ -2545,7 +2545,7 @@ return_closcall1(data,(closure)&c_73683,  cdr(r_73209));;
 }
 
 static void __lambda_71(void *data, int argc, object self_73392, object r_73208) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73685;
 c_73685.hdr.mark = gc_color_red;
@@ -2562,7 +2562,7 @@ return_closcall2(data,  __glo_reverse,  &c_73685, r_73208);;
 }
 
 static void __lambda_70(void *data, int argc, object self_73393, object r_73198) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73687;
 c_73687.hdr.mark = gc_color_red;
@@ -2579,7 +2579,7 @@ return_closcall1(data,(closure)&c_73687,  r_73198);;
 }
 
 static void __lambda_69(void *data, int argc, object self_73394, object import_91path_7370) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73689;
 c_73689.hdr.mark = gc_color_red;
@@ -2599,7 +2599,7 @@ return_closcall1(data,(closure)&c_73689,  &c_73724);;
 }
 
 static void __lambda_68(void *data, int argc, object self_73395, object k_73206, object i_7371) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73726;
 c_73726.hdr.mark = gc_color_red;
@@ -2617,7 +2617,7 @@ return_closcall1(data,(closure)&c_73726,  c_73735);;
 }
 
 static void __lambda_67(void *data, int argc, object self_73396, object r_73207) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 make_string(c_73732, "/");
 
@@ -2626,7 +2626,7 @@ return_closcall1(data,  ((closureN)self_73396)->elts[0],  c_73731);;
 }
 
 static void __lambda_66(void *data, int argc, object self_73397, object r_73205) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73691;
 c_73691.hdr.mark = gc_color_red;
@@ -2643,7 +2643,7 @@ return_closcall3(data,  __glo_map,  &c_73691, r_73205, ((closureN)self_73397)->e
 }
 
 static void __lambda_65(void *data, int argc, object self_73398, object r_73204) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73693;
 c_73693.hdr.mark = gc_color_red;
@@ -2662,7 +2662,7 @@ return_closcall1(data,(closure)&c_73693,  c_73722);;
 }
 
 static void __lambda_64(void *data, int argc, object self_73399, object r_73199) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73695;
 c_73695.hdr.mark = gc_color_red;
@@ -2679,7 +2679,7 @@ return_closcall1(data,(closure)&c_73695,  r_73199);;
 }
 
 static void __lambda_63(void *data, int argc, object self_73400, object path_7372) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73697;
 c_73697.hdr.mark = gc_color_red;
@@ -2697,7 +2697,7 @@ return_closcall0(data,(closure)&c_73697);;
 }
 
 static void __lambda_62(void *data, int argc, object self_73401) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73699;
 c_73699.hdr.mark = gc_color_red;
@@ -2715,7 +2715,7 @@ return_closcall1(data,(closure)&c_73699,  quote_scheme);;
 }
 
 static void __lambda_61(void *data, int argc, object self_73402, object r_73203) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73701;
 c_73701.hdr.mark = gc_color_red;
@@ -2732,7 +2732,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_73701, r_73203, ((closureN)
 }
 
 static void __lambda_60(void *data, int argc, object self_73403, object r_73200) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 if( !eq(boolean_f, r_73200) ){ 
   
 closureN_type c_73703;
@@ -2753,7 +2753,7 @@ return_closcall1(data,(closure)&c_73703,  quote_sld);
 }
 
 static void __lambda_59(void *data, int argc, object self_73404, object r_73202) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 closureN_type c_73705;
 c_73705.hdr.mark = gc_color_red;
@@ -2772,7 +2772,7 @@ return_closcall1(data,(closure)&c_73705,  c_73715);;
 }
 
 static void __lambda_58(void *data, int argc, object self_73405, object r_73201) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->path");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->path");
 
 make_string(c_73711, "/");
 
@@ -2782,7 +2782,7 @@ return_closcall1(data,  ((closureN)self_73405)->elts[0],  c_73710);;
 
 static void __lambda_57(void *data, int argc, closure _,object k_73212, object import_7374, object ext_7373_raw, ...) {
 load_varargs(ext_7373, ext_7373_raw, argc - 2);
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73594;
 c_73594.hdr.mark = gc_color_red;
@@ -2810,7 +2810,7 @@ return_closcall1(data,(closure)&c_73594,  &c_73608);;
 }
 
 static void __lambda_56(void *data, int argc, object self_73406, object r_73213) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73610;
 c_73610.hdr.mark = gc_color_red;
@@ -2827,7 +2827,7 @@ return_closcall1(data,(closure)&c_73610,  r_73213);;
 }
 
 static void __lambda_55(void *data, int argc, object self_73407, object file_91ext_7375) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73612;
 c_73612.hdr.mark = gc_color_red;
@@ -2847,7 +2847,7 @@ return_closcall1(data,(closure)&c_73612,  &c_73667);;
 }
 
 static void __lambda_54(void *data, int argc, object self_73408, object k_73224, object i_7376) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73669;
 c_73669.hdr.mark = gc_color_red;
@@ -2865,7 +2865,7 @@ return_closcall1(data,(closure)&c_73669,  c_73678);;
 }
 
 static void __lambda_53(void *data, int argc, object self_73409, object r_73225) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 make_string(c_73675, "/");
 
@@ -2874,7 +2874,7 @@ return_closcall1(data,  ((closureN)self_73409)->elts[0],  c_73674);;
 }
 
 static void __lambda_52(void *data, int argc, object self_73410, object r_73223) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73614;
 c_73614.hdr.mark = gc_color_red;
@@ -2892,7 +2892,7 @@ return_closcall3(data,  __glo_map,  &c_73614, r_73223, ((closureN)self_73410)->e
 }
 
 static void __lambda_51(void *data, int argc, object self_73411, object r_73222) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73616;
 c_73616.hdr.mark = gc_color_red;
@@ -2912,7 +2912,7 @@ return_closcall1(data,(closure)&c_73616,  c_73665);;
 }
 
 static void __lambda_50(void *data, int argc, object self_73412, object r_73221) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73618;
 c_73618.hdr.mark = gc_color_red;
@@ -2931,7 +2931,7 @@ return_closcall1(data,(closure)&c_73618,  c_73661);;
 }
 
 static void __lambda_49(void *data, int argc, object self_73413, object r_73214) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73620;
 c_73620.hdr.mark = gc_color_red;
@@ -2948,7 +2948,7 @@ return_closcall1(data,(closure)&c_73620,  r_73214);;
 }
 
 static void __lambda_48(void *data, int argc, object self_73414, object filename_85_7377) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73622;
 c_73622.hdr.mark = gc_color_red;
@@ -2968,7 +2968,7 @@ return_closcall1(data,(closure)&c_73622,  &c_73658);;
 }
 
 static void __lambda_47(void *data, int argc, object self_73415, object r_73220) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73624;
 c_73624.hdr.mark = gc_color_red;
@@ -2989,7 +2989,7 @@ return_closcall1(data,(closure)&c_73624,  c_73653);;
 }
 
 static void __lambda_46(void *data, int argc, object self_73416, object r_73215) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73626;
 c_73626.hdr.mark = gc_color_red;
@@ -3006,7 +3006,7 @@ return_closcall1(data,(closure)&c_73626,  r_73215);;
 }
 
 static void __lambda_45(void *data, int argc, object self_73417, object filename_7378) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73628;
 c_73628.hdr.mark = gc_color_red;
@@ -3024,7 +3024,7 @@ return_closcall0(data,(closure)&c_73628);;
 }
 
 static void __lambda_44(void *data, int argc, object self_73418) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73630;
 c_73630.hdr.mark = gc_color_red;
@@ -3042,7 +3042,7 @@ return_closcall1(data,(closure)&c_73630,  quote_scheme);;
 }
 
 static void __lambda_43(void *data, int argc, object self_73419, object r_73219) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73632;
 c_73632.hdr.mark = gc_color_red;
@@ -3059,7 +3059,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_73632, r_73219, ((closureN)
 }
 
 static void __lambda_42(void *data, int argc, object self_73420, object r_73216) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 if( !eq(boolean_f, r_73216) ){ 
   
 closureN_type c_73634;
@@ -3080,7 +3080,7 @@ return_closcall1(data,(closure)&c_73634,  quote_sld);
 }
 
 static void __lambda_41(void *data, int argc, object self_73421, object r_73218) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73636;
 c_73636.hdr.mark = gc_color_red;
@@ -3099,7 +3099,7 @@ return_closcall1(data,(closure)&c_73636,  c_73646);;
 }
 
 static void __lambda_40(void *data, int argc, object self_73422, object r_73217) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 make_string(c_73642, "/");
 
@@ -3108,7 +3108,7 @@ return_closcall1(data,  ((closureN)self_73422)->elts[1],  c_73641);;
 }
 
 static void __lambda_39(void *data, int argc, object self_73423, object k_73226) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 
 closureN_type c_73596;
 c_73596.hdr.mark = gc_color_red;
@@ -3125,7 +3125,7 @@ return_closcall1(data,(closure)&c_73596,  Cyc_is_null(((closureN)self_73423)->el
 }
 
 static void __lambda_38(void *data, int argc, object self_73424, object r_73227) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:import->filename");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:import->filename");
 if( !eq(boolean_f, r_73227) ){ 
   
 make_string(c_73599, ".sld");
@@ -3136,7 +3136,7 @@ return_closcall1(data,  ((closureN)self_73424)->elts[1],  &c_73599);
 }
 
 static void __lambda_37(void *data, int argc, closure _,object k_73230, object ast_7379) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73568;
 c_73568.hdr.mark = gc_color_red;
@@ -3155,12 +3155,12 @@ return_closcall1(data,(closure)&c_73568,  &c_73588);;
 }
 
 static void __lambda_36(void *data, int argc, object self_73425, object k_73237, object inc_91lst_7381) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 return_closcall1(data,  k_73237,  cadr(inc_91lst_7381));; 
 }
 
 static void __lambda_35(void *data, int argc, object self_73426, object r_73231) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73570;
 c_73570.hdr.mark = gc_color_red;
@@ -3180,7 +3180,7 @@ return_closcall1(data,(closure)&c_73570,  &c_73582);;
 }
 
 static void __lambda_34(void *data, int argc, object self_73427, object k_73235, object code_7380) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73584;
 c_73584.hdr.mark = gc_color_red;
@@ -3197,12 +3197,12 @@ return_closcall1(data,(closure)&c_73584,  quote_include);;
 }
 
 static void __lambda_33(void *data, int argc, object self_73428, object r_73236) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_73428)->elts[1], r_73236, ((closureN)self_73428)->elts[0]);; 
 }
 
 static void __lambda_32(void *data, int argc, object self_73429, object r_73233) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73572;
 c_73572.hdr.mark = gc_color_red;
@@ -3220,7 +3220,7 @@ return_closcall1(data,(closure)&c_73572,  cddr(((closureN)self_73429)->elts[0]))
 }
 
 static void __lambda_31(void *data, int argc, object self_73430, object r_73234) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 
 closureN_type c_73574;
 c_73574.hdr.mark = gc_color_red;
@@ -3237,12 +3237,12 @@ return_closcall3(data,  __glo_filter,  &c_73574, ((closureN)self_73430)->elts[2]
 }
 
 static void __lambda_30(void *data, int argc, object self_73431, object r_73232) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:includes");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:includes");
 return_closcall3(data,  __glo_map,  ((closureN)self_73431)->elts[0], ((closureN)self_73431)->elts[1], r_73232);; 
 }
 
 static void __lambda_29(void *data, int argc, closure _,object k_73240, object ast_7382) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73542;
 c_73542.hdr.mark = gc_color_red;
@@ -3259,7 +3259,7 @@ return_closcall1(data,(closure)&c_73542,  quote_begin);;
 }
 
 static void __lambda_28(void *data, int argc, object self_73432, object r_73244) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73544;
 c_73544.hdr.mark = gc_color_red;
@@ -3276,7 +3276,7 @@ return_closcall1(data,(closure)&c_73544,  cddr(((closureN)self_73432)->elts[0]))
 }
 
 static void __lambda_27(void *data, int argc, object self_73433, object r_73245) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73546;
 c_73546.hdr.mark = gc_color_red;
@@ -3292,7 +3292,7 @@ return_closcall1(data,(closure)&c_73546,  assoc(data, ((closureN)self_73433)->el
 }
 
 static void __lambda_26(void *data, int argc, object self_73434, object r_73242) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73548;
 c_73548.hdr.mark = gc_color_red;
@@ -3308,7 +3308,7 @@ return_closcall1(data,(closure)&c_73548,  r_73242);;
 }
 
 static void __lambda_25(void *data, int argc, object self_73435, object code_7383) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 
 closureN_type c_73550;
 c_73550.hdr.mark = gc_color_red;
@@ -3335,12 +3335,12 @@ return_closcall1(data,(closure)&c_73550,  &c_73557);;
 }
 
 static void __lambda_24(void *data, int argc, object self_73436, object r_73241) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 return_closcall2(data,  __glo_lib_117result,  ((closureN)self_73436)->elts[0], r_73241);; 
 }
 
 static void __lambda_23(void *data, int argc, object self_73437, object k_73243) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:body");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:body");
 if( !eq(boolean_f, ((closureN)self_73437)->elts[0]) ){ 
   return_closcall1(data,  k_73243,  cdr(((closureN)self_73437)->elts[0]));
 } else { 
@@ -3349,7 +3349,7 @@ if( !eq(boolean_f, ((closureN)self_73437)->elts[0]) ){
 }
 
 static void __lambda_22(void *data, int argc, closure _,object k_73248, object ast_7384) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73516;
 c_73516.hdr.mark = gc_color_red;
@@ -3366,7 +3366,7 @@ return_closcall1(data,(closure)&c_73516,  quote_import);;
 }
 
 static void __lambda_21(void *data, int argc, object self_73438, object r_73252) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73518;
 c_73518.hdr.mark = gc_color_red;
@@ -3383,7 +3383,7 @@ return_closcall1(data,(closure)&c_73518,  cddr(((closureN)self_73438)->elts[0]))
 }
 
 static void __lambda_20(void *data, int argc, object self_73439, object r_73253) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73520;
 c_73520.hdr.mark = gc_color_red;
@@ -3399,7 +3399,7 @@ return_closcall1(data,(closure)&c_73520,  assoc(data, ((closureN)self_73439)->el
 }
 
 static void __lambda_19(void *data, int argc, object self_73440, object r_73250) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73522;
 c_73522.hdr.mark = gc_color_red;
@@ -3415,7 +3415,7 @@ return_closcall1(data,(closure)&c_73522,  r_73250);;
 }
 
 static void __lambda_18(void *data, int argc, object self_73441, object code_7385) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 
 closureN_type c_73524;
 c_73524.hdr.mark = gc_color_red;
@@ -3442,12 +3442,12 @@ return_closcall1(data,(closure)&c_73524,  &c_73531);;
 }
 
 static void __lambda_17(void *data, int argc, object self_73442, object r_73249) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 return_closcall2(data,  __glo_lib_117result,  ((closureN)self_73442)->elts[0], r_73249);; 
 }
 
 static void __lambda_16(void *data, int argc, object self_73443, object k_73251) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:imports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:imports");
 if( !eq(boolean_f, ((closureN)self_73443)->elts[0]) ){ 
   return_closcall1(data,  k_73251,  cdr(((closureN)self_73443)->elts[0]));
 } else { 
@@ -3456,7 +3456,7 @@ if( !eq(boolean_f, ((closureN)self_73443)->elts[0]) ){
 }
 
 static void __lambda_15(void *data, int argc, closure _,object k_73256, object ast_7386) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73490;
 c_73490.hdr.mark = gc_color_red;
@@ -3473,7 +3473,7 @@ return_closcall1(data,(closure)&c_73490,  quote_export);;
 }
 
 static void __lambda_14(void *data, int argc, object self_73444, object r_73260) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73492;
 c_73492.hdr.mark = gc_color_red;
@@ -3490,7 +3490,7 @@ return_closcall1(data,(closure)&c_73492,  cddr(((closureN)self_73444)->elts[0]))
 }
 
 static void __lambda_13(void *data, int argc, object self_73445, object r_73261) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73494;
 c_73494.hdr.mark = gc_color_red;
@@ -3506,7 +3506,7 @@ return_closcall1(data,(closure)&c_73494,  assoc(data, ((closureN)self_73445)->el
 }
 
 static void __lambda_12(void *data, int argc, object self_73446, object r_73258) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73496;
 c_73496.hdr.mark = gc_color_red;
@@ -3522,7 +3522,7 @@ return_closcall1(data,(closure)&c_73496,  r_73258);;
 }
 
 static void __lambda_11(void *data, int argc, object self_73447, object code_7387) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 
 closureN_type c_73498;
 c_73498.hdr.mark = gc_color_red;
@@ -3549,12 +3549,12 @@ return_closcall1(data,(closure)&c_73498,  &c_73505);;
 }
 
 static void __lambda_10(void *data, int argc, object self_73448, object r_73257) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 return_closcall2(data,  __glo_lib_117result,  ((closureN)self_73448)->elts[0], r_73257);; 
 }
 
 static void __lambda_9(void *data, int argc, object self_73449, object k_73259) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:exports");
 if( !eq(boolean_f, ((closureN)self_73449)->elts[0]) ){ 
   return_closcall1(data,  k_73259,  cdr(((closureN)self_73449)->elts[0]));
 } else { 
@@ -3563,7 +3563,7 @@ if( !eq(boolean_f, ((closureN)self_73449)->elts[0]) ){
 }
 
 static void __lambda_8(void *data, int argc, closure _,object k_73264, object result_7388) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:result");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:result");
 if( !eq(boolean_f, result_7388) ){ 
   return_closcall1(data,  k_73264,  result_7388);
 } else { 
@@ -3572,7 +3572,7 @@ if( !eq(boolean_f, result_7388) ){
 }
 
 static void __lambda_7(void *data, int argc, closure _,object k_73267, object name_7389) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
 
 closureN_type c_73474;
 c_73474.hdr.mark = gc_color_red;
@@ -3588,7 +3588,7 @@ return_closcall2(data,  __glo_lib_117name_91_125string,  &c_73474, name_7389);;
 }
 
 static void __lambda_6(void *data, int argc, object self_73450, object r_73269) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
 
 closureN_type c_73476;
 c_73476.hdr.mark = gc_color_red;
@@ -3608,12 +3608,12 @@ return_closcall1(data,(closure)&c_73476,  c_73483);;
 }
 
 static void __lambda_5(void *data, int argc, object self_73451, object r_73268) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name->symbol");
 return_closcall1(data,  ((closureN)self_73451)->elts[0],  Cyc_string2symbol(data, r_73268));; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_73272, object name_7390) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name->string");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name->string");
 
 closureN_type c_73466;
 c_73466.hdr.mark = gc_color_red;
@@ -3629,19 +3629,19 @@ return_closcall3(data,  __glo_map,  &c_73466, __glo_mangle, name_7390);;
 }
 
 static void __lambda_3(void *data, int argc, object self_73452, object r_73273) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name->string");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name->string");
 
 object c_73471 = apply(data,  ((closureN)self_73452)->elts[0],primitive_string_91append, r_73273);
 return_closcall1(data,  ((closureN)self_73452)->elts[0],  c_73471);; 
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_73276, object ast_7391) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:lib:name");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name");
 return_closcall1(data,  k_73276,  cadr(ast_7391));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73279, object ast_7392) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:library?");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:library?");
 
 closureN_type c_73456;
 c_73456.hdr.mark = gc_color_red;
@@ -3658,7 +3658,7 @@ return_closcall1(data,(closure)&c_73456,  quote_define_91library);;
 }
 
 static void __lambda_0(void *data, int argc, object self_73453, object r_73280) {
-  Cyc_st_add2(data, "scheme/cyclone/libraries.sld:library?");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:library?");
 return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_73453)->elts[1], r_73280, ((closureN)self_73453)->elts[0]);; 
 }
 
