@@ -1702,6 +1702,14 @@ void _set_91cdr_67(void *data, object cont, object args) {
 void _Cyc_91has_91cycle_127(void *data, object cont, object args) { 
     Cyc_check_num_args(data, "Cyc-has-cycle?", 1, args);
     return_closcall1(data, cont, Cyc_has_cycle(car(args))); }
+void _Cyc_91spawn_91thread_67(void *data, object cont, object args) {
+    Cyc_check_num_args(data, "Cyc-spawn-thread!", 1, args);
+    // TODO: validate argument type?
+    return_closcall1(data, cont, Cyc_spawn_thread(car(args))); }
+void _Cyc_91end_91thread_67(void *data, object cont, object args) {
+    Cyc_check_num_args(data, "Cyc-end-thread!", 0, args);
+    Cyc_end_thread((gc_thread_data *)data);
+    return_closcall1(data, cont, boolean_f); }
 void __87(void *data, object cont, object args) {
     integer_type argc = Cyc_length(data, args);
     dispatch(data, argc.value, (function_type)dispatch_sum, cont, cont, args); }
@@ -2475,6 +2483,12 @@ void Cyc_apply_from_buf(void *data, int argc, object prim, object *buf) {
 // longjmp(jmp_main,1); /* Return globals gc_cont, gc_ans. */
 //}
 
+/**
+ * Start a thread's trampoline
+
+TODO: should rename this function to make it more clear what is really going on
+
+ */
 void Cyc_start_thread(gc_thread_data *thd)
 {
   /* Tank, load the jump program... */
@@ -2492,12 +2506,6 @@ void Cyc_start_thread(gc_thread_data *thd)
 
   printf("Internal error: should never have reached this line\n"); 
   exit(0);
-}
-
-void Cyc_end_thread(gc_thread_data *thd) {
-  // TODO:  call pthread_exit?
-  // alternatively could call longjmp with a null continuation, but that seems
-  // more complicated than necessary
 }
 
 // Mark globals as part of the tracing collector
@@ -2888,6 +2896,8 @@ static primitive_type Cyc_91get_91cvar_primitive = {{0}, primitive_tag, "Cyc-get
 static primitive_type Cyc_91set_91cvar_67_primitive = {{0}, primitive_tag, "Cyc-set-cvar!", &_Cyc_91set_91cvar_67};
 static primitive_type Cyc_91cvar_127_primitive = {{0}, primitive_tag, "Cyc-cvar?", &_Cyc_91cvar_127};
 static primitive_type Cyc_91has_91cycle_127_primitive = {{0}, primitive_tag, "Cyc-has-cycle?", &_Cyc_91has_91cycle_127};
+static primitive_type Cyc_91spawn_91thread_67_primitive = {{0}, primitive_tag, "Cyc-spawn-thread!", &_Cyc_91spawn_91thread_67};
+static primitive_type Cyc_91end_91thread_67_primitive = {{0}, primitive_tag, "Cyc-end-thread!", &_Cyc_91end_91thread_67};
 static primitive_type _87_primitive = {{0}, primitive_tag, "+", &__87};
 static primitive_type _91_primitive = {{0}, primitive_tag, "-", &__91};
 static primitive_type _85_primitive = {{0}, primitive_tag, "*", &__85};
@@ -3005,6 +3015,8 @@ const object primitive_Cyc_91get_91cvar = &Cyc_91get_91cvar_primitive;
 const object primitive_Cyc_91set_91cvar_67 = &Cyc_91set_91cvar_67_primitive;
 const object primitive_Cyc_91cvar_127 = &Cyc_91cvar_127_primitive;
 const object primitive_Cyc_91has_91cycle_127 = &Cyc_91has_91cycle_127_primitive;
+const object primitive_Cyc_91spawn_91thread_67 = &Cyc_91spawn_91thread_67_primitive;
+const object primitive_Cyc_91end_91thread_67 = &Cyc_91end_91thread_67_primitive;
 const object primitive__87 = &_87_primitive;
 const object primitive__91 = &_91_primitive;
 const object primitive__85 = &_85_primitive;
@@ -3116,4 +3128,58 @@ const object primitive_Cyc_91write_91char = &Cyc_91write_91char_primitive;
 const object primitive_Cyc_91write = &Cyc_91write_primitive;
 const object primitive_Cyc_91display = &Cyc_91display_primitive;
 const object primitive_call_95cc = &call_95cc_primitive;
+
+/**
+ * Thread initialization function only called from within the runtime
+ */
+void *Cyc_init_thread(object thunk)
+{
+  long stack_start;
+  gc_thread_data *thd;
+  thd = malloc(sizeof(gc_thread_data));
+  gc_thread_data_init(thd, 0, (char *) &stack_start, global_stack_size);
+  thd->gc_cont = thunk;
+  thd->gc_num_args = 1;
+  thd->gc_args[0] = &Cyc_91end_91thread_67_primitive;
+  gc_add_mutator(thd);
+  Cyc_start_thread(thd);
+  return NULL;
+}
+
+/**
+ * Spawn a new thread to execute the given thunk
+ */
+object Cyc_spawn_thread(object thunk)
+{
+// TODO: if we want to return mutator number to the caller, we need
+// to reserve a number here. need to figure out how we are going to
+// synchronize access to GC mutator fields, and then reserve one
+// here. will need to pass it, along with thunk, to Cyc_init_thread.
+// Then can use a new function up there to add the mutator, since we
+// already have the number.
+  pthread_t thread;
+  pthread_attr_t attr;
+  pthread_attr_init(&attr);
+  pthread_attr_setdetachstate(&attr, PTHREAD_CREATE_DETACHED);
+  if (pthread_create(&thread, NULL, Cyc_init_thread, thunk)) {
+    fprintf(stderr, "Error creating a new thread\n");
+    exit(1);
+  }
+  return boolean_t;
+}
+
+/**
+ * Terminate a thread
+ */
+void Cyc_end_thread(gc_thread_data *thd) 
+{
+  // alternatively could call longjmp with a null continuation, but that seems
+  // more complicated than necessary. or does it... see next comment:
+  
+  // TODO: what if there are any locals from the thread's stack still being
+  // referenced? might want to do one more minor GC to clear the stack before
+  // terminating the thread
+
+  pthread_exit(NULL); // For now, just a proof of concept
+}
 

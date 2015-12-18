@@ -186,7 +186,9 @@ object equalp(object,object);
 object memberp(void *,object,list);
 object memqp(void *,object,list);
 
+object Cyc_spawn_thread(object thunk);
 void Cyc_start_thread(gc_thread_data *thd);
+void Cyc_end_thread(gc_thread_data *thd);
 void GC(void *,closure,object*,int);
 
 void Cyc_st_add(void *data, char *frame);
@@ -224,6 +226,8 @@ extern const object primitive_Cyc_91get_91cvar;
 extern const object primitive_Cyc_91set_91cvar_67;
 extern const object primitive_Cyc_91cvar_127;
 extern const object primitive_Cyc_91has_91cycle_127;
+extern const object primitive_Cyc_91spawn_91thread_67;
+extern const object primitive_Cyc_91end_91thread_67;
 extern const object primitive__87;
 extern const object primitive__91;
 extern const object primitive__85;
