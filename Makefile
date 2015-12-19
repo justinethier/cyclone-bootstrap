@@ -22,7 +22,7 @@ all: cyclone icyc unit-tests
 
 libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(CC) $(CFLAGS) -c -Iinclude dispatch.c -o dispatch.o
-	$(CC) $(CFLAGS) -c -Iinclude gc.c -o gc.o
+	$(CC) $(CFLAGS) -c -Iinclude -std=gnu99 gc.c -o gc.o
 	$(CC) $(CFLAGS) -c -Iinclude -DCYC_INSTALL_DIR=\"$(PREFIX)\" -DCYC_INSTALL_LIB=\"$(LIBDIR)\" -DCYC_INSTALL_INC=\"$(INCDIR)\" -DCYC_INSTALL_SLD=\"$(DATADIR)\" runtime.c -o runtime.o
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
 
