@@ -513,7 +513,7 @@ defsymbol(system);
 defsymbol(exit);
 defsymbol(_75halt);
 defsymbol(apply);
-defsymbol(Cyc_91thread_91sleep_67);
+defsymbol(thread_91sleep_67);
 defsymbol(Cyc_91end_91thread_67);
 defsymbol(Cyc_91spawn_91thread_67);
 defsymbol(Cyc_91cvar_127);
@@ -2419,7 +2419,7 @@ make_cons(c_739026,quote_Cyc_91stdin,&c_739027);
 
 make_cons(c_739025,quote_Cyc_91stdout,&c_739026);
 
-make_cons(c_739024,quote_Cyc_91thread_91sleep_67,&c_739025);
+make_cons(c_739024,quote_thread_91sleep_67,&c_739025);
 
 make_cons(c_739023,quote_Cyc_91end_91thread_67,&c_739024);
 
@@ -24125,7 +24125,7 @@ make_cons(c_734483,quote__75halt,&c_734484);
 
 make_cons(c_734482,quote_apply,&c_734483);
 
-make_cons(c_734481,quote_Cyc_91thread_91sleep_67,&c_734482);
+make_cons(c_734481,quote_thread_91sleep_67,&c_734482);
 
 make_cons(c_734480,quote_Cyc_91end_91thread_67,&c_734481);
 
@@ -28782,7 +28782,7 @@ void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int 
   quote_exit = find_or_add_symbol("exit");
   quote__75halt = find_or_add_symbol("%halt");
   quote_apply = find_or_add_symbol("apply");
-  quote_Cyc_91thread_91sleep_67 = find_or_add_symbol("Cyc-thread-sleep!");
+  quote_thread_91sleep_67 = find_or_add_symbol("thread-sleep!");
   quote_Cyc_91end_91thread_67 = find_or_add_symbol("Cyc-end-thread!");
   quote_Cyc_91spawn_91thread_67 = find_or_add_symbol("Cyc-spawn-thread!");
   quote_Cyc_91cvar_127 = find_or_add_symbol("Cyc-cvar?");
@@ -29044,7 +29044,7 @@ void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int 
   add_symbol(quote_exit);
   add_symbol(quote__75halt);
   add_symbol(quote_apply);
-  add_symbol(quote_Cyc_91thread_91sleep_67);
+  add_symbol(quote_thread_91sleep_67);
   add_symbol(quote_Cyc_91end_91thread_67);
   add_symbol(quote_Cyc_91spawn_91thread_67);
   add_symbol(quote_Cyc_91cvar_127);

@@ -531,7 +531,7 @@ defsymbol(Cyc_91cvar_127);
 defsymbol(Cyc_91has_91cycle_127);
 defsymbol(Cyc_91spawn_91thread_67);
 defsymbol(Cyc_91end_91thread_67);
-defsymbol(Cyc_91thread_91sleep_67);
+defsymbol(thread_91sleep_67);
 defsymbol(Cyc_91stdout);
 defsymbol(Cyc_91stdin);
 defsymbol(Cyc_91stderr);
@@ -18191,7 +18191,7 @@ make_cons(c_736625,quote_open_91output_91file,&c_736626);
 
 make_cons(c_736624,quote_open_91input_91file,&c_736625);
 
-make_cons(c_736623,quote_Cyc_91thread_91sleep_67,&c_736624);
+make_cons(c_736623,quote_thread_91sleep_67,&c_736624);
 
 make_cons(c_736622,quote_Cyc_91end_91thread_67,&c_736623);
 
@@ -18580,7 +18580,7 @@ c_735209.elts = (object *)alloca(sizeof(object) * 2);
 c_735209.elts[0] = ((closureN)self_732769)->elts[0];
 c_735209.elts[1] = ((closureN)self_732769)->elts[1];
 
-return_closcall1(data,(closure)&c_735209,  quote_Cyc_91thread_91sleep_67);}
+return_closcall1(data,(closure)&c_735209,  quote_thread_91sleep_67);}
 ; 
 }
 
@@ -31804,7 +31804,7 @@ void c_schemecyclonecgen_entry_pt(data, argc, cont,value) void *data; int argc; 
   quote_Cyc_91has_91cycle_127 = find_or_add_symbol("Cyc-has-cycle?");
   quote_Cyc_91spawn_91thread_67 = find_or_add_symbol("Cyc-spawn-thread!");
   quote_Cyc_91end_91thread_67 = find_or_add_symbol("Cyc-end-thread!");
-  quote_Cyc_91thread_91sleep_67 = find_or_add_symbol("Cyc-thread-sleep!");
+  quote_thread_91sleep_67 = find_or_add_symbol("thread-sleep!");
   quote_Cyc_91stdout = find_or_add_symbol("Cyc-stdout");
   quote_Cyc_91stdin = find_or_add_symbol("Cyc-stdin");
   quote_Cyc_91stderr = find_or_add_symbol("Cyc-stderr");
@@ -32022,7 +32022,7 @@ void c_schemecyclonecgen_entry_pt(data, argc, cont,value) void *data; int argc; 
   add_symbol(quote_Cyc_91has_91cycle_127);
   add_symbol(quote_Cyc_91spawn_91thread_67);
   add_symbol(quote_Cyc_91end_91thread_67);
-  add_symbol(quote_Cyc_91thread_91sleep_67);
+  add_symbol(quote_thread_91sleep_67);
   add_symbol(quote_Cyc_91stdout);
   add_symbol(quote_Cyc_91stdin);
   add_symbol(quote_Cyc_91stderr);

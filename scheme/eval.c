@@ -316,7 +316,7 @@ defsymbol(Cyc_91cvar_127);
 defsymbol(Cyc_91has_91cycle_127);
 defsymbol(Cyc_91spawn_91thread_67);
 defsymbol(Cyc_91end_91thread_67);
-defsymbol(Cyc_91thread_91sleep_67);
+defsymbol(thread_91sleep_67);
 defsymbol(Cyc_91default_91exception_91handler);
 defsymbol(Cyc_91current_91exception_91handler);
 defsymbol(_87);
@@ -1397,7 +1397,7 @@ c_732119.elts[7] = ((closureN)self_73713)->elts[7];
 c_732119.elts[8] = ((closureN)self_73713)->elts[8];
 c_732119.elts[9] = r_73157;
 
-return_closcall1(data,(closure)&c_732119,  quote_Cyc_91thread_91sleep_67);; 
+return_closcall1(data,(closure)&c_732119,  quote_thread_91sleep_67);; 
 }
 
 static void __lambda_473(void *data, int argc, object self_73714, object r_73379) {
@@ -1422,7 +1422,7 @@ c_732121.elts[7] = ((closureN)self_73714)->elts[7];
 c_732121.elts[8] = ((closureN)self_73714)->elts[8];
 c_732121.elts[9] = ((closureN)self_73714)->elts[9];
 
-return_closcall3(data,  __glo__list,  &c_732121, r_73379, primitive_Cyc_91thread_91sleep_67);; 
+return_closcall3(data,  __glo__list,  &c_732121, r_73379, primitive_thread_91sleep_67);; 
 }
 
 static void __lambda_472(void *data, int argc, object self_73715, object r_73158) {
@@ -23114,7 +23114,7 @@ void c_schemeeval_entry_pt(data, argc, cont,value) void *data; int argc; closure
   quote_Cyc_91has_91cycle_127 = find_or_add_symbol("Cyc-has-cycle?");
   quote_Cyc_91spawn_91thread_67 = find_or_add_symbol("Cyc-spawn-thread!");
   quote_Cyc_91end_91thread_67 = find_or_add_symbol("Cyc-end-thread!");
-  quote_Cyc_91thread_91sleep_67 = find_or_add_symbol("Cyc-thread-sleep!");
+  quote_thread_91sleep_67 = find_or_add_symbol("thread-sleep!");
   quote_Cyc_91default_91exception_91handler = find_or_add_symbol("Cyc-default-exception-handler");
   quote_Cyc_91current_91exception_91handler = find_or_add_symbol("Cyc-current-exception-handler");
   quote__87 = find_or_add_symbol("+");
@@ -23294,7 +23294,7 @@ void c_schemeeval_entry_pt(data, argc, cont,value) void *data; int argc; closure
   add_symbol(quote_Cyc_91has_91cycle_127);
   add_symbol(quote_Cyc_91spawn_91thread_67);
   add_symbol(quote_Cyc_91end_91thread_67);
-  add_symbol(quote_Cyc_91thread_91sleep_67);
+  add_symbol(quote_thread_91sleep_67);
   add_symbol(quote_Cyc_91default_91exception_91handler);
   add_symbol(quote_Cyc_91current_91exception_91handler);
   add_symbol(quote__87);
