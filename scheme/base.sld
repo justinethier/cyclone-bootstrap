@@ -1,12 +1,15 @@
 (define-library (scheme base)
   (export
     ;; Thread functions. these are not standard, and may be relocated
+    ;; TODO: relocate to (scheme srfi 18) or such
     thread?
     make-thread
     thread-name
     thread-specific
     thread-specific-set!
     thread-start!
+    thread-yield!
+;    thread-terminate!
     ;; END threads
     ; TODO: need filter for the next two. also, they really belong in SRFI-1, not here
     ;delete
@@ -681,4 +684,7 @@
       (let* ((thunk (vector-ref t 1)) 
              (mutator-id (Cyc-spawn-thread! thunk)))
         (vector-set! t 2 mutator-id)))
+    (define (thread-yield!) (thread-sleep! 1))
+;    (define (thread-terminate!) (Cyc-end-thread!))
+    ;; TODO: thread-join!
 ))
