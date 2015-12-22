@@ -110,6 +110,10 @@ void gc_add_mutator(gc_thread_data *thd)
   pthread_mutex_unlock(&mutators_lock);
 }
 
+// Remove selected mutator from the mutator list.
+// This is done for terminated threads. Note data is queued to be
+// freed, to prevent accidentally freeing it while the collector
+// thread is potentially accessing it.
 void gc_remove_mutator(gc_thread_data *thd)
 {
   pthread_mutex_lock(&mutators_lock);
@@ -832,8 +836,7 @@ void gc_mut_update(gc_thread_data *thd, object old_obj, object value)
 // TODO: still need to handle case where a mutator is blocked
 void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
 {
-  int i, status = ATOMIC_GET(&gc_status_col),
-      stage = ATOMIC_GET(&gc_stage);
+  int i, status;
 #if GC_DEBUG_VERBOSE
   int debug_print = 0;
 #endif
@@ -844,6 +847,7 @@ void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
   thd->pending_writes = 0;
   pthread_mutex_unlock(&(thd->lock));
 
+  status = ATOMIC_GET(&gc_status_col);
   if (thd->gc_status != status) {
     if (thd->gc_status == STATUS_ASYNC) {
       // Async is done, so clean up old mark data from the last collection
@@ -889,7 +893,7 @@ void gc_mut_cooperate(gc_thread_data *thd, int buf_len)
   // Initiate collection cycle if free space is too low.
   // Threshold is intentially low because we have to go through an
   // entire handshake/trace/sweep cycle, ideally without growing heap.
-  if (stage == STAGE_RESTING &&
+  if (ATOMIC_GET(&gc_stage) == STAGE_RESTING &&
       (cached_heap_free_size < (cached_heap_total_size * 0.50))){
 #if GC_DEBUG_TRACE
     fprintf(stdout, "Less than 50%% of the heap is free, initiating collector\n");
@@ -1330,6 +1334,19 @@ void gc_thread_data_free(gc_thread_data *thd)
     if (thd->stack_traces) free(thd->stack_traces);
     free(thd);
   }
+}
+
+void gc_set_thread_state_blocked(gc_thread_data *thd)
+{
+  ATOMIC_SET_IF_EQ(&(thd->thread_state), 
+                   CYC_THREAD_STATE_RUNNABLE,
+                   CYC_THREAD_STATE_BLOCKED);
+}
+void gc_set_thread_state_runnable(gc_thread_data *thd)
+{
+  ATOMIC_SET_IF_EQ(&(thd->thread_state), 
+                   CYC_THREAD_STATE_BLOCKED, 
+                   CYC_THREAD_STATE_RUNNABLE);
 }
 
 //// Unit testing:
