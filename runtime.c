@@ -102,6 +102,7 @@ static symbol_type __EOF = {{0}, eof_tag, "", nil}; // symbol_type in lieu of cu
 const object Cyc_EOF = &__EOF;
 static ck_hs_t symbol_table;
 static int symbol_table_size = 65536;
+static pthread_mutex_t symbol_table_lock;
 
 // Functions to support concurrency kit hashset
 // These are specifically for a table of symbols
@@ -166,6 +167,10 @@ void gc_init_heap(long heap_size)
                   symbol_table_size, 
                   43423)){
     fprintf(stderr, "Unable to initialize symbol table\n");
+    exit(1);
+  }
+  if (pthread_mutex_init(&(symbol_table_lock), NULL) != 0) {
+    fprintf(stderr, "Unable to initialize symbol_table_lock mutex\n");
     exit(1);
   }
 }
@@ -245,13 +250,14 @@ object find_symbol_by_name(const char *name) {
 
 object add_symbol(symbol_type *psym) {
   //printf("Adding symbol %s, table size = %ld\n", symbol_pname(psym), ck_hs_count(&symbol_table));
-  // TODO: lock table here, only allow one writer at a time
-  // TODO: grow table if it is not big enough
+  pthread_mutex_lock(&symbol_table_lock); // Only 1 "writer" allowed
   if (ck_hs_count(&symbol_table) == symbol_table_size) {
+    // TODO: grow table if it is not big enough
     fprintf(stderr, "Ran out of symbol table entries\n");
     exit(1);
   }
   set_insert(&symbol_table, psym);
+  pthread_mutex_unlock(&symbol_table_lock);
   return psym;
 }
 
@@ -2798,9 +2804,8 @@ void Cyc_end_thread(gc_thread_data *thd)
   // TODO: should we consider passing the current continuation (and args)
   // as an argument? if we don't, will objects be collected that are still
   // being used by active threads??
-//  mclosure0(clo, Cyc_exit_thread);
-//  GC(thd, &clo, thd->gc_args, 0);
-  Cyc_exit_thread(thd);
+  mclosure0(clo, Cyc_exit_thread);
+  GC(thd, &clo, thd->gc_args, 0);
 }
 
 void Cyc_exit_thread(gc_thread_data *thd)
@@ -2812,13 +2817,10 @@ void Cyc_exit_thread(gc_thread_data *thd)
   // referenced? might want to do one more minor GC to clear the stack before
   // terminating the thread
 
-printf("DEBUG - exiting thread\n");
-// TODO: race condition, cannot free thread data if the collector is using it
+//printf("DEBUG - exiting thread\n");
+  // Remove thread from the list of mutators, and mark its data to be freed
   gc_remove_mutator(thd);
   ATOMIC_SET_IF_EQ(&(thd->thread_state), CYC_THREAD_STATE_RUNNABLE, CYC_THREAD_STATE_TERMINATED);
-// TODO: could maintain a dedicated list of old thread data to clean up...
-//  collector could do it at a time that is safe
-//  gc_thread_data_free(thd);
   pthread_exit(NULL); // For now, just a proof of concept
 }
 
