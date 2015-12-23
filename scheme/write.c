@@ -46,6 +46,13 @@
 object __glo_lib_91init_117schemewrite = nil;
 object __glo_write = nil;
 object __glo_display = nil;
+extern object __glo_thread_127;
+extern object __glo_make_91thread;
+extern object __glo_thread_91name;
+extern object __glo_thread_91specific;
+extern object __glo_thread_91specific_91set_67;
+extern object __glo_thread_91start_67;
+extern object __glo_thread_91yield_67;
 extern object __glo_call_91with_91current_91continuation;
 extern object __glo_call_95cc;
 extern object __glo_call_91with_91values;
