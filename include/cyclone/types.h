@@ -451,9 +451,9 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont, obje
 // TODO: this is all compiler dependent, need to use different macros depending
 //       upon the compiler (and arch)
 // TODO: relocate this to its own header?
-#define ATOMIC_INC(ptr) __sync_fetch_and_add((ptr),1)
-#define ATOMIC_DEC(ptr) __sync_fetch_and_sub((ptr),1)
-#define ATOMIC_GET(ptr) __sync_fetch_and_add((ptr),0)
-#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_bool_compare_and_swap(ptr, oldv, newv)
+//#define ATOMIC_INC(ptr) __sync_fetch_and_add((ptr),1)
+//#define ATOMIC_DEC(ptr) __sync_fetch_and_sub((ptr),1)
+//#define ATOMIC_GET(ptr) __sync_fetch_and_add((ptr),0)
+//#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_bool_compare_and_swap(ptr, oldv, newv)
 
 #endif /* CYCLONE_TYPES_H */
