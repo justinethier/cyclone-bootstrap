@@ -8,6 +8,13 @@ Prerequisites
 -------------
 
 - [Concurrency Kit](http://concurrencykit.org/)
+
+    The best way to install libck is via a package manager such as `apt-get`. But if a package is not available for this library it can also be built from source. Just replace `0.5.0` below with the latest version available from their website above:
+    
+        wget http://concurrencykit.org/releases/ck-0.5.0.tar.gz
+        tar xfz ck-0.5.0.tar.gz ; cd ck-0.5.0 ; ./configure && make all && sudo make install
+        sudo ldconfig
+    
 - make
 - gcc
 
