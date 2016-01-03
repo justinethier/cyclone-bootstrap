@@ -206,6 +206,7 @@ typedef long tag_type;
 #define cvar_tag 16
 #define vector_tag 17
 #define macro_tag 18
+#define mutex_tag 19
 
 #define nil NULL
 #define eq(x,y) (x == y)
@@ -237,6 +238,10 @@ typedef void (*function_type_va)(int, object, object, object, ...);
 typedef struct {gc_header_type hdr; tag_type tag; object *pvar;} cvar_type;
 typedef cvar_type *cvar;
 #define make_cvar(n,v) cvar_type n; n.hdr.mark = gc_color_red; n.hdr.grayed = 0; n.tag = cvar_tag; n.pvar = v;
+
+/* Define mutex type */
+typedef struct {gc_header_type hdr; tag_type tag; pthread_mutex_t lock;} mutex_type;
+typedef mutex_type *mutex;
 
 /* Define boolean type. */
 typedef struct {gc_header_type hdr; const tag_type tag; const char *pname;} boolean_type;
@@ -446,14 +451,5 @@ void gc_mutator_thread_blocked(gc_thread_data *thd, object cont);
 void gc_mutator_thread_runnable(gc_thread_data *thd, object result);
 gc_heap *gc_get_heap();
 int gc_minor(void *data, object low_limit, object high_limit, closure cont, object *args, int num_args);
-
-// Atomics section
-// TODO: this is all compiler dependent, need to use different macros depending
-//       upon the compiler (and arch)
-// TODO: relocate this to its own header?
-//#define ATOMIC_INC(ptr) __sync_fetch_and_add((ptr),1)
-//#define ATOMIC_DEC(ptr) __sync_fetch_and_sub((ptr),1)
-//#define ATOMIC_GET(ptr) __sync_fetch_and_add((ptr),0)
-//#define ATOMIC_SET_IF_EQ(ptr, oldv, newv) __sync_bool_compare_and_swap(ptr, oldv, newv)
 
 #endif /* CYCLONE_TYPES_H */
