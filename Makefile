@@ -25,7 +25,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(CC) $(CFLAGS) -c -Iinclude -DCYC_INSTALL_DIR=\"$(PREFIX)\" -DCYC_INSTALL_LIB=\"$(LIBDIR)\" -DCYC_INSTALL_INC=\"$(INCDIR)\" -DCYC_INSTALL_SLD=\"$(DATADIR)\" runtime.c -o runtime.o
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
 
-cyclone: $(COBJECTS) libcyclone.a
+cyclone: $(CFILES) $(COBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
 
