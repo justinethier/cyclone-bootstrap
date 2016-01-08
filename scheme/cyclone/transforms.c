@@ -317,6 +317,7 @@ extern object __glo_with_91input_91from_91file;
 extern object __glo_with_91output_91to_91file;
 extern object __glo_eval;
 extern object __glo_create_91environment;
+extern object __glo_setup_91environment;
 extern object __glo_read;
 extern object __glo_read_91all;
 extern object __glo_display;

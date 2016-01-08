@@ -86,6 +86,7 @@
     define->lambda 
     define->var 
     define->exp 
+    define-c
     set!? 
     set!->var 
     set!->exp 
@@ -657,6 +658,9 @@
 ; define->exp : define-exp -> exp
 (define (define->exp exp)
   (cddr exp))
+
+(define (define-c? exp)
+  (tagged-list? 'define-c exp))
 
 ; set! : exp -> boolean
 (define (set!? exp)
