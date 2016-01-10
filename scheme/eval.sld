@@ -17,7 +17,7 @@
     ;environment
     eval
     create-environment ; non-standard
-    setup-environment
+    setup-environment ; non-standard
   )
   (begin
 

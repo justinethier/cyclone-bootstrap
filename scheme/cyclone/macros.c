@@ -212,6 +212,7 @@ extern object __glo_display;
 extern object __glo_write;
 extern object __glo_eval;
 extern object __glo_create_91environment;
+extern object __glo_setup_91environment;
 extern object __glo_tagged_91list_127;
 extern object __glo_if_127;
 extern object __glo_begin_127;

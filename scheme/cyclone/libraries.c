@@ -1289,7 +1289,7 @@ c_731213.elts[2] = ((closureN)self_73348)->elts[4];
 return_closcall1(data,(closure)&c_731188,  &c_731213);
 } else { 
   
-make_string(c_731222, "Internal error: unable to import library");
+make_string(c_731222, "Unable to import library, possibly due to a circular dependency:");
 return_closcall3(data,  __glo_error,  ((closureN)self_73348)->elts[2], &c_731222, ((closureN)self_73348)->elts[3]);}
 ; 
 }
