@@ -26636,7 +26636,7 @@ return_closcall1(data,  ((closureN)self_733286)->elts[0],  &c_735583);;
 static void __lambda_392(void *data, int argc, object self_733287) {
   Cyc_st_add(data, "scheme/cyclone/cgen.sld:prim->c-func");
 
-make_string(c_735574, "Cyc_current_exception_handler2");
+make_string(c_735574, "Cyc_current_exception_handler");
 return_closcall1(data,  ((closureN)self_733287)->elts[0],  &c_735574);; 
 }
 
