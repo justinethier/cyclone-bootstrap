@@ -2448,7 +2448,7 @@ c_736987.elts = (object *)alloca(sizeof(object) * 2);
 c_736987.elts[0] = k_73625;
 c_736987.elts[1] = obj_73280;
 
-return_closcall1(data,(closure)&c_736987,  Cyc_current_exception_handler());; 
+return_closcall1(data,(closure)&c_736987,  Cyc_current_exception_handler2(data));; 
 }
 
 static void __lambda_984(void *data, int argc, object self_731678, object r_73626) {
@@ -2562,7 +2562,7 @@ c_736957.elts = (object *)alloca(sizeof(object) * 2);
 c_736957.elts[0] = k_73634;
 c_736957.elts[1] = obj_73281;
 
-return_closcall1(data,(closure)&c_736957,  Cyc_current_exception_handler());; 
+return_closcall1(data,(closure)&c_736957,  Cyc_current_exception_handler2(data));; 
 }
 
 static void __lambda_977(void *data, int argc, object self_731684, object r_73635) {
