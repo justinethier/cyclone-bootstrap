@@ -7,9 +7,13 @@
     thread-specific
     thread-specific-set!
     thread-start!
+    thread-sleep!
     thread-yield!
 ;    thread-terminate!
     ; For now, these are built-ins. No need for them here: make-mutex mutex-lock! mutex-unlock!
+    ;; TODO: consolidate built-ins, and convert them from primitives to FFI functions
+    ;;       in this module.
+    ;; Non-standard functions:
     ->heap
   )
   (begin
@@ -46,6 +50,15 @@
     (define (thread-yield!) (thread-sleep! 1))
 ;    (define (thread-terminate!) (Cyc-end-thread!))
     ;; TODO: thread-join!
+
+    (define-c thread-sleep!
+      "(void *data, int argc, closure _, object k, object timeout)"
+      " return_closcall1(data, k, Cyc_thread_sleep(data, timeout)); ")
+
+    ;; Take a single object and if it is on the stack, return a copy
+    ;; of it that is allocated on the heap. NOTE the original object
+    ;; will still live on the stack, and will eventually be moved
+    ;; itself to the heap if it is referenced during minor GC.
     (define-c ->heap
       "(void *data, int argc, closure _, object k, object obj)"
       " object heap_obj = copy2heap(data, obj);
