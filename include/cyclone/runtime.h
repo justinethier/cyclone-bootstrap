@@ -83,6 +83,16 @@ object Cyc_global_set(void *thd, object *glo, object value);
     } \
   }
 
+#define return_inexact_double_op(data, cont, OP, z) \
+  make_double(d, 0.0); \
+  Cyc_check_num(data, z); \
+  if (type_of(z) == integer_tag) { \
+    d.value = OP(((integer_type *)z)->value); \
+  } else { \
+    d.value = OP(((double_type *)z)->value); \
+  } \
+  return_closcall1(data, cont, &d)
+
 /* Prototypes for primitive functions. */
 
 extern object Cyc_global_variables;
@@ -233,8 +243,6 @@ extern const object primitive_Cyc_91cvar_127;
 extern const object primitive_Cyc_91has_91cycle_127;
 extern const object primitive_Cyc_91spawn_91thread_67;
 extern const object primitive_Cyc_91end_91thread_67;
-extern const object primitive_thread_91sleep_67;
-extern const object primitive_Cyc_91minor_91gc;
 extern const object primitive__87;
 extern const object primitive__91;
 extern const object primitive__85;

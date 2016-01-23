@@ -44,7 +44,6 @@
 
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemetime = nil;
-object __glo_sin = nil;
 object __glo_jiffies_91per_91second = nil;
 object __glo_current_91jiffy = nil;
 object __glo_current_91second = nil;
@@ -131,27 +130,18 @@ extern object __glo_cond_91expand;
 extern object __glo_when;
 extern object __glo_quasiquote;
 #include "cyclone/runtime.h"
-static void __lambda_4(void *data, int argc, closure _,object k_733) ;
-static void __lambda_3(void *data, int argc, closure _, object k, object z) ;
+static void __lambda_3(void *data, int argc, closure _,object k_733) ;
 static void __lambda_2(void *data, int argc, closure _, object k) ;
 static void __lambda_1(void *data, int argc, closure _, object k) ;
 static void __lambda_0(void *data, int argc, closure _, object k) ;
 
-static void __lambda_4(void *data, int argc, closure _,object k_733) {
+static void __lambda_3(void *data, int argc, closure _,object k_733) {
   Cyc_st_add(data, "scheme/time.sld:lib-init:schemetime");
 
-make_int(c_7310, 0);
-return_closcall1(data,  k_733,  &c_7310);; 
+make_int(c_739, 0);
+return_closcall1(data,  k_733,  &c_739);; 
 }
 
-static void __lambda_3(void *data, int argc, closure _, object k, object z) { make_double(d, 0.0);
-        Cyc_check_num(data, z);
-        if (type_of(z) == integer_tag) {
-          d.value = sin(((integer_type *)z)->value);
-        } else {
-          d.value = sin(((double_type *)z)->value);
-        }
-        return_closcall1(data, k, &d);  }
 static void __lambda_2(void *data, int argc, closure _, object k) { make_int(box, CLOCKS_PER_SEC);
         return_closcall1(data, k, &box);  }
 static void __lambda_1(void *data, int argc, closure _, object k) { make_double(box, 0.0);
@@ -165,14 +155,11 @@ static void __lambda_0(void *data, int argc, closure _, object k) { make_double(
 void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemetime);
-  add_global((object *) &__glo_sin);
   add_global((object *) &__glo_jiffies_91per_91second);
   add_global((object *) &__glo_current_91jiffy);
   add_global((object *) &__glo_current_91second);
-  mclosure0(c_738, (function_type)__lambda_4);c_738.num_args = 0; 
-  __glo_lib_91init_117schemetime = &c_738; 
-  mclosure0(c_737, (function_type)__lambda_3);c_737.num_args = 1; 
-  __glo_sin = &c_737; 
+  mclosure0(c_737, (function_type)__lambda_3);c_737.num_args = 0; 
+  __glo_lib_91init_117schemetime = &c_737; 
   mclosure0(c_736, (function_type)__lambda_2);c_736.num_args = 0; 
   __glo_jiffies_91per_91second = &c_736; 
   mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 0; 
@@ -180,17 +167,15 @@ void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_734, (function_type)__lambda_0);c_734.num_args = 0; 
   __glo_current_91second = &c_734; 
 
-  make_cvar(cvar_7311, (object *)&__glo_lib_91init_117schemetime);make_cons(pair_7312, find_or_add_symbol("lib-init:schemetime"), &cvar_7311);
-  make_cvar(cvar_7313, (object *)&__glo_sin);make_cons(pair_7314, find_or_add_symbol("sin"), &cvar_7313);
-  make_cvar(cvar_7315, (object *)&__glo_jiffies_91per_91second);make_cons(pair_7316, find_or_add_symbol("jiffies-per-second"), &cvar_7315);
-  make_cvar(cvar_7317, (object *)&__glo_current_91jiffy);make_cons(pair_7318, find_or_add_symbol("current-jiffy"), &cvar_7317);
-  make_cvar(cvar_7319, (object *)&__glo_current_91second);make_cons(pair_7320, find_or_add_symbol("current-second"), &cvar_7319);
-make_cons(c_7321, &pair_7312,Cyc_global_variables);
-make_cons(c_7322, &pair_7314, &c_7321);
-make_cons(c_7323, &pair_7316, &c_7322);
-make_cons(c_7324, &pair_7318, &c_7323);
-make_cons(c_7325, &pair_7320, &c_7324);
-Cyc_global_variables = &c_7325;
+  make_cvar(cvar_7310, (object *)&__glo_lib_91init_117schemetime);make_cons(pair_7311, find_or_add_symbol("lib-init:schemetime"), &cvar_7310);
+  make_cvar(cvar_7312, (object *)&__glo_jiffies_91per_91second);make_cons(pair_7313, find_or_add_symbol("jiffies-per-second"), &cvar_7312);
+  make_cvar(cvar_7314, (object *)&__glo_current_91jiffy);make_cons(pair_7315, find_or_add_symbol("current-jiffy"), &cvar_7314);
+  make_cvar(cvar_7316, (object *)&__glo_current_91second);make_cons(pair_7317, find_or_add_symbol("current-second"), &cvar_7316);
+make_cons(c_7318, &pair_7311,Cyc_global_variables);
+make_cons(c_7319, &pair_7313, &c_7318);
+make_cons(c_7320, &pair_7315, &c_7319);
+make_cons(c_7321, &pair_7317, &c_7320);
+Cyc_global_variables = &c_7321;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemetime)->fn)(data, 1, cont, cont);
 }
