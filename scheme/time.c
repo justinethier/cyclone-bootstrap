@@ -129,6 +129,12 @@ extern object __glo_cond;
 extern object __glo_cond_91expand;
 extern object __glo_when;
 extern object __glo_quasiquote;
+extern object __glo_floor;
+extern object __glo_ceiling;
+extern object __glo_truncate;
+extern object __glo_round;
+extern object __glo_exact;
+extern object __glo_inexact;
 #include "cyclone/runtime.h"
 static void __lambda_3(void *data, int argc, closure _,object k_733) ;
 static void __lambda_2(void *data, int argc, closure _, object k) ;

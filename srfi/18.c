@@ -172,6 +172,12 @@ extern object __glo_cond;
 extern object __glo_cond_91expand;
 extern object __glo_when;
 extern object __glo_quasiquote;
+extern object __glo_floor;
+extern object __glo_ceiling;
+extern object __glo_truncate;
+extern object __glo_round;
+extern object __glo_exact;
+extern object __glo_inexact;
 #include "cyclone/runtime.h"
 defsymbol(cyc_91thread_91obj);
 static void __lambda_26(void *data, int argc, closure _,object k_7321) ;
@@ -205,8 +211,8 @@ static void __lambda_0(void *data, int argc, object self_7370, object r_7353) ;
 static void __lambda_26(void *data, int argc, closure _,object k_7321) {
   Cyc_st_add(data, "srfi/18.sld:lib-init:srfi18");
 
-make_int(c_73181, 0);
-return_closcall1(data,  k_7321,  &c_73181);; 
+make_int(c_73178, 0);
+return_closcall1(data,  k_7321,  &c_73178);; 
 }
 
 static void __lambda_25(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
@@ -216,8 +222,8 @@ static void __lambda_23(void *data, int argc, closure _, object k, object timeou
 static void __lambda_22(void *data, int argc, closure _,object k_7324) {
   Cyc_st_add(data, "srfi/18.sld:thread-yield!");
 
-make_int(c_73175, 1);
-return_closcall2(data,  __glo_thread_91sleep_67,  k_7324, &c_73175);; 
+make_int(c_73172, 1);
+return_closcall2(data,  __glo_thread_91sleep_67,  k_7324, &c_73172);; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_7327, object t_738) {
@@ -234,9 +240,7 @@ c_73146.elts = (object *)alloca(sizeof(object) * 2);
 c_73146.elts[0] = k_7327;
 c_73146.elts[1] = t_738;
 
-
-object c_73172 = Cyc_trigger_minor_gc(data,(closure)&c_73146);
-return_closcall1(data,(closure)&c_73146,  c_73172);; 
+return_closcall1(data,  __glo_Cyc_91minor_91gc,  &c_73146);; 
 }
 
 static void __lambda_20(void *data, int argc, object self_7355, object r_7328) {
@@ -571,16 +575,16 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   add_global((object *) &__glo_make_91thread);
   add_global((object *) &__glo_thread_127);
   add_symbol(quote_cyc_91thread_91obj);
-  mclosure0(c_73179, (function_type)__lambda_26);c_73179.num_args = 0; 
-  __glo_lib_91init_117srfi18 = &c_73179; 
-  mclosure0(c_73178, (function_type)__lambda_25);c_73178.num_args = 0; 
-  __glo_Cyc_91minor_91gc = &c_73178; 
-  mclosure0(c_73177, (function_type)__lambda_24);c_73177.num_args = 1; 
-  __glo__91_125heap = &c_73177; 
-  mclosure0(c_73176, (function_type)__lambda_23);c_73176.num_args = 1; 
-  __glo_thread_91sleep_67 = &c_73176; 
-  mclosure0(c_73173, (function_type)__lambda_22);c_73173.num_args = 0; 
-  __glo_thread_91yield_67 = &c_73173; 
+  mclosure0(c_73176, (function_type)__lambda_26);c_73176.num_args = 0; 
+  __glo_lib_91init_117srfi18 = &c_73176; 
+  mclosure0(c_73175, (function_type)__lambda_25);c_73175.num_args = 0; 
+  __glo_Cyc_91minor_91gc = &c_73175; 
+  mclosure0(c_73174, (function_type)__lambda_24);c_73174.num_args = 1; 
+  __glo__91_125heap = &c_73174; 
+  mclosure0(c_73173, (function_type)__lambda_23);c_73173.num_args = 1; 
+  __glo_thread_91sleep_67 = &c_73173; 
+  mclosure0(c_73170, (function_type)__lambda_22);c_73170.num_args = 0; 
+  __glo_thread_91yield_67 = &c_73170; 
   mclosure0(c_73144, (function_type)__lambda_21);c_73144.num_args = 1; 
   __glo_thread_91start_67 = &c_73144; 
   mclosure0(c_73139, (function_type)__lambda_14);c_73139.num_args = 2; 
@@ -594,29 +598,29 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   mclosure0(c_7371, (function_type)__lambda_5);c_7371.num_args = 1; 
   __glo_thread_127 = &c_7371; 
 
-  make_cvar(cvar_73182, (object *)&__glo_lib_91init_117srfi18);make_cons(pair_73183, find_or_add_symbol("lib-init:srfi18"), &cvar_73182);
-  make_cvar(cvar_73184, (object *)&__glo_Cyc_91minor_91gc);make_cons(pair_73185, find_or_add_symbol("Cyc-minor-gc"), &cvar_73184);
-  make_cvar(cvar_73186, (object *)&__glo__91_125heap);make_cons(pair_73187, find_or_add_symbol("->heap"), &cvar_73186);
-  make_cvar(cvar_73188, (object *)&__glo_thread_91sleep_67);make_cons(pair_73189, find_or_add_symbol("thread-sleep!"), &cvar_73188);
-  make_cvar(cvar_73190, (object *)&__glo_thread_91yield_67);make_cons(pair_73191, find_or_add_symbol("thread-yield!"), &cvar_73190);
-  make_cvar(cvar_73192, (object *)&__glo_thread_91start_67);make_cons(pair_73193, find_or_add_symbol("thread-start!"), &cvar_73192);
-  make_cvar(cvar_73194, (object *)&__glo_thread_91specific_91set_67);make_cons(pair_73195, find_or_add_symbol("thread-specific-set!"), &cvar_73194);
-  make_cvar(cvar_73196, (object *)&__glo_thread_91specific);make_cons(pair_73197, find_or_add_symbol("thread-specific"), &cvar_73196);
-  make_cvar(cvar_73198, (object *)&__glo_thread_91name);make_cons(pair_73199, find_or_add_symbol("thread-name"), &cvar_73198);
-  make_cvar(cvar_73200, (object *)&__glo_make_91thread);make_cons(pair_73201, find_or_add_symbol("make-thread"), &cvar_73200);
-  make_cvar(cvar_73202, (object *)&__glo_thread_127);make_cons(pair_73203, find_or_add_symbol("thread?"), &cvar_73202);
-make_cons(c_73204, &pair_73183,Cyc_global_variables);
-make_cons(c_73205, &pair_73185, &c_73204);
-make_cons(c_73206, &pair_73187, &c_73205);
-make_cons(c_73207, &pair_73189, &c_73206);
-make_cons(c_73208, &pair_73191, &c_73207);
-make_cons(c_73209, &pair_73193, &c_73208);
-make_cons(c_73210, &pair_73195, &c_73209);
-make_cons(c_73211, &pair_73197, &c_73210);
-make_cons(c_73212, &pair_73199, &c_73211);
-make_cons(c_73213, &pair_73201, &c_73212);
-make_cons(c_73214, &pair_73203, &c_73213);
-Cyc_global_variables = &c_73214;
+  make_cvar(cvar_73179, (object *)&__glo_lib_91init_117srfi18);make_cons(pair_73180, find_or_add_symbol("lib-init:srfi18"), &cvar_73179);
+  make_cvar(cvar_73181, (object *)&__glo_Cyc_91minor_91gc);make_cons(pair_73182, find_or_add_symbol("Cyc-minor-gc"), &cvar_73181);
+  make_cvar(cvar_73183, (object *)&__glo__91_125heap);make_cons(pair_73184, find_or_add_symbol("->heap"), &cvar_73183);
+  make_cvar(cvar_73185, (object *)&__glo_thread_91sleep_67);make_cons(pair_73186, find_or_add_symbol("thread-sleep!"), &cvar_73185);
+  make_cvar(cvar_73187, (object *)&__glo_thread_91yield_67);make_cons(pair_73188, find_or_add_symbol("thread-yield!"), &cvar_73187);
+  make_cvar(cvar_73189, (object *)&__glo_thread_91start_67);make_cons(pair_73190, find_or_add_symbol("thread-start!"), &cvar_73189);
+  make_cvar(cvar_73191, (object *)&__glo_thread_91specific_91set_67);make_cons(pair_73192, find_or_add_symbol("thread-specific-set!"), &cvar_73191);
+  make_cvar(cvar_73193, (object *)&__glo_thread_91specific);make_cons(pair_73194, find_or_add_symbol("thread-specific"), &cvar_73193);
+  make_cvar(cvar_73195, (object *)&__glo_thread_91name);make_cons(pair_73196, find_or_add_symbol("thread-name"), &cvar_73195);
+  make_cvar(cvar_73197, (object *)&__glo_make_91thread);make_cons(pair_73198, find_or_add_symbol("make-thread"), &cvar_73197);
+  make_cvar(cvar_73199, (object *)&__glo_thread_127);make_cons(pair_73200, find_or_add_symbol("thread?"), &cvar_73199);
+make_cons(c_73201, &pair_73180,Cyc_global_variables);
+make_cons(c_73202, &pair_73182, &c_73201);
+make_cons(c_73203, &pair_73184, &c_73202);
+make_cons(c_73204, &pair_73186, &c_73203);
+make_cons(c_73205, &pair_73188, &c_73204);
+make_cons(c_73206, &pair_73190, &c_73205);
+make_cons(c_73207, &pair_73192, &c_73206);
+make_cons(c_73208, &pair_73194, &c_73207);
+make_cons(c_73209, &pair_73196, &c_73208);
+make_cons(c_73210, &pair_73198, &c_73209);
+make_cons(c_73211, &pair_73200, &c_73210);
+Cyc_global_variables = &c_73211;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117srfi18)->fn)(data, 1, cont, cont);
 }

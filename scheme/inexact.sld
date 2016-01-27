@@ -29,7 +29,6 @@
     (define-c exp
       "(void *data, int argc, closure _, object k, object z)"
       " return_inexact_double_op(data, k, exp, z);")
-    ;; TODO: can take an optional second argument
     (define (log z1 . z2)
       (if (null? z2)
           (c-log z1)

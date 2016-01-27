@@ -826,6 +826,14 @@ void gc_mark_gray(gc_thread_data *thd, object obj)
   }
 }
 
+/**
+ * Add a pending write to the mark buffer.
+ * These are pended because they are written in a batch during minor GC.
+ * To prevent race conditions we wait until all of the writes are made before
+ * updating last write.
+ *
+ * TODO: figure out a new name for this function.
+ */
 void gc_mark_gray2(gc_thread_data *thd, object obj)
 {
   if (is_object_type(obj) && mark(obj) == gc_color_clear) {
@@ -1248,6 +1256,9 @@ void gc_thread_data_free(gc_thread_data *thd)
 /**
  * Called explicitly from a mutator thread to let the collector know
  * it (may) block for an unknown period of time.
+ *
+ * The current continuation is required so that we can trace over it 
+ * in case the collector has to cooperate for the mutator.
  */
 void gc_mutator_thread_blocked(gc_thread_data *thd, object cont)
 {
