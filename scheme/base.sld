@@ -13,6 +13,8 @@
     exact?
     inexact?
     odd?
+    gcd
+    lcm
     call-with-current-continuation
     call/cc
     call-with-values
@@ -98,6 +100,7 @@
     case
     cond
     cond-expand
+    do
     when
     quasiquote
     floor
@@ -120,10 +123,7 @@
 ;    ;=>
 ;    ;bytevector-u8-set!
 ;    ;current-error-port
-;    ;define
-;    ;define-syntax
 ;    ;define-values
-;    ;else
 ;    ;error-object-irritants
 ;    ;error-object-message
 ;    ;error-object?
@@ -143,7 +143,6 @@
 ;    ;read-bytevector!
 ;    ;read-error?
 ;    ;read-u8
-;    ;string-set!
 ;    ;symbol=?
 ;    ;syntax-rules
 ;    ;truncate-quotient
@@ -153,9 +152,7 @@
 ;    ;unquote
 ;    ;unquote-splicing
 ;    ;write-u8
-;    apply
 ;    binary-port?
-;    boolean?
 ;    bytevector
 ;    bytevector-append
 ;    bytevector-copy
@@ -172,7 +169,6 @@
 ;    current-error-port
 ;    define-record-type
 ;    denominator
-;    do
 ;    eof-object
 ;    eof-object?
 ;    eq?
@@ -182,7 +178,6 @@
 ;    expt
 ;    foldl
 ;    foldr
-;    gcd
 ;    get-output-bytevector
 ;    get-output-string
 ;    include
@@ -190,7 +185,6 @@
 ;    input-port?
 ;    integer->char
 ;    integer?
-;    lcm
 ;    length
 ;    let*-values
 ;    let-values
@@ -426,6 +420,33 @@
           `(if ,(cadr exp)
                ((lambda () ,@(cddr exp)))
                #f))))
+  (define-syntax do
+    (er-macro-transformer
+     (lambda (expr rename compare)
+       (let* ((body
+               `(,(rename 'begin)
+                 ,@(cdr (cddr expr))
+                 (,(rename 'lp)
+                  ,@(map (lambda (x)
+                           (if (pair? (cddr x))
+                               (if (pair? (cdr (cddr x)))
+                                   (error "too many forms in do iterator" x)
+                                   (car (cddr x)))
+                               (car x)))
+                         (cadr expr)))))
+              (check (car (cddr expr)))
+              (wrap
+               (if (null? (cdr check))
+                   `(,(rename 'let) ((,(rename 'tmp) ,(car check)))
+                     (,(rename 'if) ,(rename 'tmp)
+                      ,(rename 'tmp)
+                      ,body))
+                   `(,(rename 'if) ,(car check)
+                     (,(rename 'begin) ,@(cdr check))
+                     ,body))))
+         `(,(rename 'let) ,(rename 'lp)
+           ,(map (lambda (x) (list (car x) (cadr x))) (cadr expr))
+           ,wrap)))))
     (define-syntax quasiquote
       (er-macro-transformer
         ;; Based on the quasiquote macro from Chibi scheme
@@ -878,4 +899,34 @@
   (define (inexact? num) (not (exact? num)))
   (define (max first . rest) (foldl (lambda (old new) (if (> old new) old new)) first rest))
   (define (min first . rest) (foldl (lambda (old new) (if (< old new) old new)) first rest))
+  ; Implementations of gcd and lcm using Euclid's algorithm
+  ;
+  ; Also note that each form is written to accept either 0 or
+  ; 2 arguments, per R5RS. This could probably be generalized
+  ; even further, if necessary.
+  ;
+  (define gcd gcd/entry)
+  (define lcm lcm/entry)
+  ; Main GCD algorithm
+  (define (gcd/main a b)
+    (if (= b 0)
+      (abs a)
+      (gcd/main b (modulo a b))))
+
+  ; A helper function to reduce the input list
+  (define (gcd/entry . nums)
+    (if (eqv? nums '())
+      0
+      (foldl gcd/main (car nums) (cdr nums))))
+
+  ; Main LCM algorithm
+  (define (lcm/main a b)
+    (abs (/ (* a b) (gcd/main a b))))
+
+  ; A helper function to reduce the input list
+  (define (lcm/entry . nums)
+    (if (eqv? nums '())
+      1
+      (foldl lcm/main (car nums) (cdr nums))))
+  ;; END gcd lcm
 ))
