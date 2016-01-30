@@ -112,6 +112,7 @@
     cond-expand
     do
     when
+    unless
     quasiquote
     floor
     ceiling
@@ -119,128 +120,68 @@
     round
     exact
     inexact
+    eof-object
 
 ;;;;
 ; Possibly missing functions:
 ;
-;    ; TODO: error-object-irritants
-;    ; TODO: error-object-message
-;    ; TODO: error-object?
-;    ; TODO: file-error?
-;    ; TODO: read-error?
-;    ;(Cyc-bin-op cmp x lst)
-;    ;(Cyc-bin-op-char cmp c cs)
-;    ;=>
-;    ;bytevector-u8-set!
-;    ;current-error-port
-;    ;define-values
-;    ;error-object-irritants
-;    ;error-object-message
-;    ;error-object?
-;    ;file-error?
-;    ;guard
-;    ;import
-;    ;include-ci
-;    ;let-syntax
-;    ;letrec-syntax
-;    ;list-set!
-;    ;peek-u8
-;    ;port?
-;    ;raise
-;    ;raise-continuable
-;    ;read-bytevector!
-;    ;read-error?
-;    ;read-u8
-;    ;symbol=?
-;    ;syntax-rules
-;    ;u8-ready?
-;    ;unquote
-;    ;unquote-splicing
-;    ;write-u8
-;    binary-port?
+;    ; byte vectors are not implemented yet:
 ;    bytevector
 ;    bytevector-append
 ;    bytevector-copy
 ;    bytevector-copy!
 ;    bytevector-length
 ;    bytevector-u8-ref
+;    bytevector-u8-set!
 ;    bytevector?
-;    char->integer
-;    char-ready?
-;    close-input-port
-;    close-output-port
-;    close-port
-;    complex?
-;    current-error-port
-;    define-record-type
-;    denominator
-;    eof-object
-;    eof-object?
-;    eq?
-;    equal?
-;    eqv?
-;    exact-integer-sqrt
-;    foldl
-;    foldr
 ;    get-output-bytevector
+;    make-bytevector
+;    open-input-bytevector
+;    open-output-bytevector
+;    read-bytevector
+;    read-bytevector!
+;    write-bytevector
+;
+;    : No unicode support at this time
+;    peek-u8
+;    string->utf8
+;    read-u8
+;    u8-ready?
+;    utf8->string
+;    write-u8
+;
+;    ; No complex or rational numbers at this time
+;    complex?
+;    rational?
+;    rationalize
+;
+;    binary-port?
+;    define-record-type
+;    define-values
+;    denominator
 ;    get-output-string
+;    guard
+;    import
 ;    include
 ;    input-port-open?
 ;    input-port?
-;    integer->char
-;    integer?
-;    length
 ;    let*-values
+;    let-syntax
 ;    let-values
 ;    letrec*
-;    list->string
-;    list->vector
+;    letrec-syntax
 ;    list-set!
-;    make-bytevector
-;    make-vector
-;    number->string
-;    number?
 ;    numerator
-;    open-input-bytevector
 ;    open-input-string
-;    open-output-bytevector
 ;    open-output-string
 ;    output-port-open?
 ;    output-port?
-;    pair?
 ;    parameterize
-;    peek-char
-;    procedure?
-;    quotient
-;    raise
-;    raise-continuable
-;    rational?
-;    rationalize
-;    read-bytevector
-;    read-char
 ;    read-string
-;    real?
 ;    record?
-;    remainder
-;    string->number
-;    string->symbol
-;    string->utf8
-;    string-append
-;    string-length
-;    string-ref
-;    string?
-;    substring
-;    symbol->string
-;    symbol=?
-;    symbol?
 ;    syntax-error
+;    syntax-rules
 ;    textual-port?
-;    unless
-;    utf8->string
-;    vector-length
-;    vector-ref
-;    vector?
-;    write-bytevector
 ;    write-string
 ;;;;
   )
@@ -423,6 +364,14 @@
           `(if ,(cadr exp)
                ((lambda () ,@(cddr exp)))
                #f))))
+    (define-syntax unless
+      (er-macro-transformer
+        (lambda (exp rename compare)
+          (if (null? (cdr exp)) (error "empty unless" exp))
+          (if (null? (cddr exp)) (error "no unless body" exp))
+          `(if ,(cadr exp)
+               #f
+               ((lambda () ,@(cddr exp)))))))
   (define-syntax do
     (er-macro-transformer
      (lambda (expr rename compare)
@@ -964,4 +913,7 @@
       Cyc_check_num(data, z2);
       d.value = pow( unbox_number(z1), unbox_number(z2) );
       return_closcall1(data, k, &d); ")
+  (define-c eof-object
+    "(void *data, int argc, closure _, object k)"
+    " return_closcall1(data, k, Cyc_EOF); ")
 ))
