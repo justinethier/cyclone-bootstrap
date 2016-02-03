@@ -29,14 +29,19 @@
     (define (make-constructor make name)
       (lambda ()
         (let* ((field-tags (vector-ref name 2))
-               (new (make-vector (length field-tags) #f)))
+               (field-values (make-vector (length field-tags) #f))
+               (new (make-vector 3 #f))
+              )
+          (vector-set! new 0 record-marker)
+          (vector-set! new 1 name)
+          (vector-set! new 2 field-values)
           new)))
     (define (type-slot-offset name sym)
       (let ((field-tags (vector-ref name 2)))
         (list-index2 sym field-tags)))
     (define (slot-set! name obj idx val)
       (let ((vec obj)) ;; TODO: get actual slots from obj
-        (vector-set! vec idx val)))
+        (vector-set! (vector-ref vec 2) idx val)))
 
     (define-syntax define-record-type
       (er-macro-transformer
@@ -81,17 +86,17 @@
 ;                               ,name
 ;                               (,_type_slot_offset ,name ',(car f))))))
 ;                    fields)
-;             ,@(map (lambda (f)
-;                      (and (pair? f) (pair? (cdr f)) (pair? (cddr f))
-;                           `(,_define ,(car (cddr f))
-;                              (,(rename 'make-setter)
-;                               ,(symbol->string
-;                                 (car (cddr f))
-;                                 ;(identifier->symbol (car (cddr f)))
-;                                )
-;                               ,name
-;                               (,_type_slot_offset ,name ',(car f))))))
-;                    fields)
+             ,@(map (lambda (f)
+                      (and (pair? f) (pair? (cdr f)) (pair? (cddr f))
+                           `(,_define ,(car (cddr f))
+                              (,(rename 'make-setter)
+                               ,(symbol->string
+                                 (car (cddr f))
+                                 ;(identifier->symbol (car (cddr f)))
+                                )
+                               ,name
+                               (,_type_slot_offset ,name ',(car f))))))
+                    fields)
              ;; constructor
              (,_define ,make
                ,(let lp ((ls make-fields) (sets '()))
