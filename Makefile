@@ -81,6 +81,7 @@ install:
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
+	$(INSTALL) -m0644 srfi/*.meta $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.o $(DESTDIR)$(DATADIR)/srfi
 
 uninstall:
