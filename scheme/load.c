@@ -178,6 +178,7 @@ extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
 extern object __glo_eval;
+extern object __glo_eval_91from_91c;
 extern object __glo_create_91environment;
 extern object __glo_setup_91environment;
 extern object __glo_call_91with_91input_91file;

@@ -242,6 +242,7 @@ extern object __glo_eof_91object;
 extern object __glo_display;
 extern object __glo_write;
 extern object __glo_eval;
+extern object __glo_eval_91from_91c;
 extern object __glo_create_91environment;
 extern object __glo_setup_91environment;
 extern object __glo_tagged_91list_127;
@@ -269,6 +270,7 @@ extern object __glo_gensym;
 extern object __glo_delete;
 extern object __glo_delete_91duplicates;
 extern object __glo_list_91insert_91at_67;
+extern object __glo_list_91index2;
 extern object __glo_filter;
 #include "cyclone/runtime.h"
 defsymbol(quote);

@@ -259,6 +259,7 @@ extern object __glo_gensym;
 extern object __glo_delete;
 extern object __glo_delete_91duplicates;
 extern object __glo_list_91insert_91at_67;
+extern object __glo_list_91index2;
 extern object __glo_filter;
 #include "cyclone/runtime.h"
 defsymbol(done);
