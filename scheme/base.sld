@@ -1,8 +1,18 @@
 (define-library (scheme base)
+  ;; In the future, may include this here: (include "../srfi/9.scm")
   (export
     ; TODO: need filter for the next two. also, they really belong in SRFI-1, not here
     ;delete
     ;delete-duplicates
+    ;; TODO: possibly relocating here in the future
+    ;define-record-type
+    ;  register-simple-type
+    ;  make-type-predicate
+    ;  make-constructor
+    ;  make-getter
+    ;  make-setter
+    ;  slot-set!
+    ;  type-slot-offset
     abs
     max
     min
@@ -99,6 +109,10 @@
     write-string
     flush-output-port
     read-line
+    input-port?
+    output-port?
+    input-port-open?
+    output-port-open?
     features
     any
     every
@@ -167,15 +181,8 @@
 ;    open-input-string
 ;    open-output-string
 ;
-;    ; it seems like these should be very do-able??
-;    input-port-open?
-;    input-port?
-;    output-port-open?
-;    output-port?
-;
 ; for a lot of the following, need begin-splicing, or syntax-rules
 ;    binary-port?
-;    define-record-type
 ;    define-values
 ;    guard
 ;    import
@@ -928,4 +935,36 @@
   (define-c eof-object
     "(void *data, int argc, closure _, object k)"
     " return_closcall1(data, k, Cyc_EOF); ")
+  (define-c input-port?
+    "(void *data, int argc, closure _, object k, object port)"
+    " port_type *p = (port_type *)port;
+      Cyc_check_port(data, port);
+      return_closcall1(
+        data, 
+        k, 
+       (p->mode == 1) ? boolean_t : boolean_f); ")
+  (define-c output-port?
+    "(void *data, int argc, closure _, object k, object port)"
+    " port_type *p = (port_type *)port;
+      Cyc_check_port(data, port);
+      return_closcall1(
+        data, 
+        k, 
+       (p->mode == 0) ? boolean_t : boolean_f); ")
+  (define-c input-port-open?
+    "(void *data, int argc, closure _, object k, object port)"
+    " port_type *p = (port_type *)port;
+      Cyc_check_port(data, port);
+      return_closcall1(
+        data, 
+        k, 
+       (p->mode == 1 && p->fp != NULL) ? boolean_t : boolean_f); ")
+  (define-c output-port-open?
+    "(void *data, int argc, closure _, object k, object port)"
+    " port_type *p = (port_type *)port;
+      Cyc_check_port(data, port);
+      return_closcall1(
+        data, 
+        k, 
+       (p->mode == 0 && p->fp != NULL) ? boolean_t : boolean_f); ")
 ))
