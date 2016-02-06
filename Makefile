@@ -10,7 +10,7 @@ include Makefile.config
 #CFLAGS = -g -pg
 LIBS = -pthread -lcyclone -lck -lm
 
-COBJ = scheme/base scheme/read scheme/write scheme/char scheme/cxr scheme/eval scheme/file scheme/inexact scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/cgen scheme/cyclone/util srfi/9 srfi/18
+COBJ = scheme/base scheme/read scheme/write scheme/char scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/cgen scheme/cyclone/util srfi/9 srfi/18
 CFILES = $(addsuffix .c, $(COBJ))
 COBJECTS=$(CFILES:.c=.o)
 
