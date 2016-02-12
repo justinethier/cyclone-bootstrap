@@ -137,6 +137,7 @@
     exact
     inexact
     eof-object
+    syntax-error
 
 ;;;;
 ; Possibly missing functions:
@@ -182,22 +183,24 @@
 ;    open-input-string
 ;    open-output-string
 ;
-; for a lot of the following, need begin-splicing, or syntax-rules
+;    ;; no binary/text ports yet
 ;    binary-port?
+;    textual-port?
+;
+;    ;; syntax-rules
+;    syntax-rules
+;    parameterize
 ;    define-values
 ;    guard
+;    letrec*
+;
+; unclassified TODO's:
 ;    import
 ;    include
 ;    let*-values
-;    let-syntax
 ;    let-values
-;    letrec*
+;    let-syntax
 ;    letrec-syntax
-;    parameterize
-;    record?
-;    syntax-error
-;    syntax-rules
-;    textual-port?
 ;;;;
   )
   (begin
@@ -447,6 +450,11 @@
              (else x)))
           (qq (cadr expr) 0))))
 
+    (define-syntax syntax-error
+      (er-macro-transformer
+        (lambda (expr rename compare)
+          (apply error (cdr expr)))))
+
     ;; TODO: The whitespace characters are space, tab, line feed, form feed (not in parser yet), and carriage return.
     (define call-with-current-continuation call/cc)
     ;; TODO: this is from r7rs, but is not really good enough by itself
@@ -532,12 +540,12 @@
                    (chr #f))
           (cond
             ((eof-object? chr)
-             (list->string (reverse acc)))
+             (list->string 
+               (reverse acc)))
             ((zero? i)
              (list->string 
-               (reverse (if chr 
-                            (cons chr acc)
-                            acc))))
+               (reverse 
+                 (if chr (cons chr acc) acc))))
             (else
              (loop (if chr (cons chr acc) acc)
                    (- i 1)
