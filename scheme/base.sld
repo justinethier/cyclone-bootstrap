@@ -13,6 +13,7 @@
     ;  make-setter
     ;  slot-set!
     ;  type-slot-offset
+    receive
     abs
     max
     min
@@ -468,13 +469,13 @@
             (cons (cons 'multiple 'values) args)))) 
     ;; TODO: just need something good enough for bootstrapping (for now)
     ;; does not have to be perfect (this is not, does not handle call/cc or exceptions)
-;    (define call-with-values
-;      (lambda (producer consumer)
-;        (let ((x (producer)))
-;          (if ;(magic? x)
-;              (and (pair? x) (equal? (car x) (cons 'multiple 'values)))
-;              (apply consumer (cdr x))
-;              (consumer x)))))
+    (define call-with-values
+      (lambda (producer consumer)
+        (let ((x (producer)))
+          (if ;(magic? x)
+              (and (pair? x) (equal? (car x) (cons 'multiple 'values)))
+              (apply consumer (cdr x))
+              (consumer x)))))
 
     (define (dynamic-wind before thunk after)
       (before)
@@ -605,25 +606,77 @@
       (make k x)))
     (define (list-copy lst)
       (foldr (lambda (x y) (cons x y)) '() lst))
-    (define (map func lst)
-      (foldr (lambda (x y) (cons (func x) y)) '() lst))
+;    (define (map func lst)
+;      (foldr (lambda (x y) (cons (func x) y)) '() lst))
     (define (for-each f lst)
       (cond
        ((null? lst) #t)
        (else
          (f (car lst))
          (for-each f (cdr lst)))))
-; TODO:
-;(define (vector-map fnc . vargs)
-;    (let ((ls (map vector->list v vargs)))
-;        (list->vector
-;            (apply map
-;                   (cons fnc ls)))))
+    ;; Implementation of receive from SRFI 8
+    (define-syntax receive
+      (er-macro-transformer
+       (lambda (expr rename compare)
+        ;(if (or (not (pair? expr))
+        ;        (< (length expr) 3))
+        ;    (syntax-error "Invalid syntax for receive" expr))
+        (let ((formals (cadr expr))
+              (val-expr (caddr expr))
+              (body (cdddr expr)))
+          `(call-with-values 
+             (lambda () ,val-expr)
+             (lambda ,formals ,@body))))))
 ;
-;(define (vector-for-each fnc . vargs)
-;    (let ((ls (map vector->list vargs)))
-;        (apply for-each
-;               (cons fnc ls))))
+; for example:
+; (call-with-values (lambda () (values 1 2)) (lambda (x y) (write `(,x ,y))))
+; ==>(1 2)
+;
+;(receive (x y) (values 1 2) (write `(,x ,y)))
+; ==>(1 2)
+;
+
+; Added the following support functions from SRFI 1
+(define (car+cdr pair) (values (car pair) (cdr pair)))
+(define (%cars+cdrs lists)
+  (call-with-current-continuation
+    (lambda (abort)
+      (let recur ((lists lists))
+        (if (pair? lists)
+          (receive (list other-lists) (car+cdr lists)
+            (if (null? list) (abort '() '()) ; LIST is empty -- bail out
+              (receive (a d) (car+cdr list)
+                (receive (cars cdrs) (recur other-lists)
+                  (values (cons a cars) (cons d cdrs))))))
+          (values '() '()))))))
+; END support functions
+
+(define (map f lis1 . lists)
+;  (check-arg procedure? f map-in-order)
+  (if (pair? lists)
+      (let recur ((lists (cons lis1 lists)))
+        (receive (cars cdrs) (%cars+cdrs lists)
+          (if (pair? cars)
+              (let ((x (apply f cars)))		; Do head first,
+                (cons x (recur cdrs)))		; then tail.
+              '())))
+      ;; Fast path.
+     (foldr (lambda (x y) (cons (f x) y)) '() lis1)))
+
+;;(define (for-each f lis1 . lists)
+;;  (if (not (null? lis1))
+;;    (if (pair? lists)
+;;      (let recur ((lists (cons lis1 lists)))
+;;        (receive (cars cdrs) (%cars+cdrs lists)
+;;          (if (pair? cars)
+;;              (begin
+;;                (apply f cars)
+;;                (recur cdrs)))))
+;;      ;; Fast path.
+;;      (if (eq? 1 (length lis1))
+;;        (f (car lis1))
+;;        (begin (f (car lis1))
+;;               (for-each f (cdr lis1)))))))
     (define (list-tail lst k) 
       (if (zero? k)
         lst
