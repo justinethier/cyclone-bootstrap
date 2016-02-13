@@ -67,6 +67,7 @@ object __glo_make_91promise = nil;
 object __glo_delay_91force = nil;
 object __glo_delay = nil;
 object __glo_force = nil;
+extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;
 extern object __glo_min;
@@ -186,6 +187,7 @@ extern object __glo_round;
 extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
+extern object __glo_syntax_91error;
 #include "cyclone/runtime.h"
 defsymbol(make_91promise);
 defsymbol(lambda);

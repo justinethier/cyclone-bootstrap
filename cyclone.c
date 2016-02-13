@@ -136,6 +136,7 @@
 object __glo_run_91compiler = nil;
 object __glo_read_91file = nil;
 object __glo_c_91compile_91and_91emit = nil;
+extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;
 extern object __glo_min;
@@ -255,6 +256,7 @@ extern object __glo_round;
 extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
+extern object __glo_syntax_91error;
 extern object __glo_eval;
 extern object __glo_eval_91from_91c;
 extern object __glo_create_91environment;

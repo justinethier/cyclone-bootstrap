@@ -46,6 +46,7 @@
 object __glo_lib_91init_117schemewrite = nil;
 object __glo_write = nil;
 object __glo_display = nil;
+extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;
 extern object __glo_min;
@@ -137,6 +138,11 @@ extern object __glo_write_91char;
 extern object __glo_write_91string;
 extern object __glo_flush_91output_91port;
 extern object __glo_read_91line;
+extern object __glo_read_91string;
+extern object __glo_input_91port_127;
+extern object __glo_output_91port_127;
+extern object __glo_input_91port_91open_127;
+extern object __glo_output_91port_91open_127;
 extern object __glo_features;
 extern object __glo_any;
 extern object __glo_every;
@@ -160,6 +166,7 @@ extern object __glo_round;
 extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
+extern object __glo_syntax_91error;
 #include "cyclone/runtime.h"
 static void __lambda_8(void *data, int argc, closure _,object k_737) ;
 static void __lambda_7(void *data, int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) ;
