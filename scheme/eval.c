@@ -212,6 +212,8 @@ extern object __glo_delete_91duplicates;
 extern object __glo_list_91insert_91at_67;
 extern object __glo_list_91index2;
 extern object __glo_filter;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;

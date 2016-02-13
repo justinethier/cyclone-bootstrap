@@ -118,6 +118,8 @@ object __glo_lib_117name_91_125string = nil;
 object __glo_lib_117name = nil;
 object __glo_lib_117list_91_125import_91set = nil;
 object __glo_library_127 = nil;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;

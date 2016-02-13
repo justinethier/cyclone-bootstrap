@@ -46,6 +46,8 @@
 object __glo_lib_91init_117schemewrite = nil;
 object __glo_write = nil;
 object __glo_display = nil;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;

@@ -177,6 +177,8 @@ object __glo_in_91port_117read_91buf_67 = nil;
 object __glo_reg_91port = nil;
 object __glo__85in_91port_91table_85 = nil;
 object __glo_read = nil;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;

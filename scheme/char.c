@@ -72,6 +72,8 @@ object __glo_char_91upper_91case_127 = nil;
 object __glo_char_91alphabetic_127 = nil;
 object __glo_char_91downcase = nil;
 object __glo_char_91upcase = nil;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;

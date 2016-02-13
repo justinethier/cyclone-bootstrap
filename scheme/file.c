@@ -84,6 +84,8 @@ object __glo_with_91output_91to_91file = nil;
 object __glo_with_91input_91from_91file = nil;
 object __glo_call_91with_91output_91file = nil;
 object __glo_call_91with_91input_91file = nil;
+extern object __glo_cons_91source;
+extern object __glo_syntax_91rules;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;
