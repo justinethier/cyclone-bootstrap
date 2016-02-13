@@ -1,6 +1,8 @@
 (define-library (scheme base)
   ;; In the future, may include this here: (include "../srfi/9.scm")
   (export
+;    cons-source
+;    syntax-rules
     ; TODO: need filter for the next two. also, they really belong in SRFI-1, not here
     ;delete
     ;delete-duplicates
@@ -13,6 +15,7 @@
     ;  make-setter
     ;  slot-set!
     ;  type-slot-offset
+    receive
     abs
     max
     min
@@ -188,7 +191,6 @@
 ;    textual-port?
 ;
 ;    ;; syntax-rules
-;    syntax-rules
 ;    parameterize
 ;    define-values
 ;    guard
@@ -468,13 +470,13 @@
             (cons (cons 'multiple 'values) args)))) 
     ;; TODO: just need something good enough for bootstrapping (for now)
     ;; does not have to be perfect (this is not, does not handle call/cc or exceptions)
-;    (define call-with-values
-;      (lambda (producer consumer)
-;        (let ((x (producer)))
-;          (if ;(magic? x)
-;              (and (pair? x) (equal? (car x) (cons 'multiple 'values)))
-;              (apply consumer (cdr x))
-;              (consumer x)))))
+    (define call-with-values
+      (lambda (producer consumer)
+        (let ((x (producer)))
+          (if ;(magic? x)
+              (and (pair? x) (equal? (car x) (cons 'multiple 'values)))
+              (apply consumer (cdr x))
+              (consumer x)))))
 
     (define (dynamic-wind before thunk after)
       (before)
@@ -605,25 +607,69 @@
       (make k x)))
     (define (list-copy lst)
       (foldr (lambda (x y) (cons x y)) '() lst))
-    (define (map func lst)
-      (foldr (lambda (x y) (cons (func x) y)) '() lst))
-    (define (for-each f lst)
-      (cond
-       ((null? lst) #t)
-       (else
-         (f (car lst))
-         (for-each f (cdr lst)))))
-; TODO:
-;(define (vector-map fnc . vargs)
-;    (let ((ls (map vector->list v vargs)))
-;        (list->vector
-;            (apply map
-;                   (cons fnc ls)))))
+    ;; Implementation of receive from SRFI 8
+    (define-syntax receive
+      (er-macro-transformer
+       (lambda (expr rename compare)
+        ;(if (or (not (pair? expr))
+        ;        (< (length expr) 3))
+        ;    (syntax-error "Invalid syntax for receive" expr))
+        (let ((formals (cadr expr))
+              (val-expr (caddr expr))
+              (body (cdddr expr)))
+          `(call-with-values 
+             (lambda () ,val-expr)
+             (lambda ,formals ,@body))))))
 ;
-;(define (vector-for-each fnc . vargs)
-;    (let ((ls (map vector->list vargs)))
-;        (apply for-each
-;               (cons fnc ls))))
+; for example:
+; (call-with-values (lambda () (values 1 2)) (lambda (x y) (write `(,x ,y))))
+; ==>(1 2)
+;
+;(receive (x y) (values 1 2) (write `(,x ,y)))
+; ==>(1 2)
+;
+
+; Added the following support functions from SRFI 1
+(define (car+cdr pair) (values (car pair) (cdr pair)))
+(define (%cars+cdrs lists)
+  (call-with-current-continuation
+    (lambda (abort)
+      (let recur ((lists lists))
+        (if (pair? lists)
+          (receive (list other-lists) (car+cdr lists)
+            (if (null? list) (abort '() '()) ; LIST is empty -- bail out
+              (receive (a d) (car+cdr list)
+                (receive (cars cdrs) (recur other-lists)
+                  (values (cons a cars) (cons d cdrs))))))
+          (values '() '()))))))
+; END support functions
+
+    (define (map f lis1 . lists)
+    ;  (check-arg procedure? f map-in-order)
+      (if (pair? lists)
+          (let recur ((lists (cons lis1 lists)))
+            (receive (cars cdrs) (%cars+cdrs lists)
+              (if (pair? cars)
+                  (let ((x (apply f cars)))		; Do head first,
+                    (cons x (recur cdrs)))		; then tail.
+                  '())))
+          ;; Fast path.
+         (foldr (lambda (x y) (cons (f x) y)) '() lis1)))
+
+    (define (for-each f lis1 . lists)
+      (if (not (null? lis1))
+        (if (pair? lists)
+          (let recur ((lists (cons lis1 lists)))
+            (receive (cars cdrs) (%cars+cdrs lists)
+              (if (pair? cars)
+                  (begin
+                    (apply f cars)
+                    (recur cdrs)))))
+          ;; Fast path.
+          (if (eq? 1 (length lis1))
+            (f (car lis1))
+            (begin (f (car lis1))
+                   (for-each f (cdr lis1)))))))
     (define (list-tail lst k) 
       (if (zero? k)
         lst
@@ -690,14 +736,16 @@
                           (string-set! str i fill)
                           (loop (+ i 1)))))))
         (loop start)))
-    (define (string-map func str)
-      (list->string (map func (string->list str))))
-    (define (string-for-each func str)
-      (for-each func (string->list str)))
-    (define (vector-map func vec)
-      (list->vector (map func (vector->list vec)))) 
-    (define (vector-for-each func vec)
-      (for-each func (vector->list vec)))
+    (define (string-map func str1 . strs)
+      (list->string
+        (apply map `(,func ,(string->list str1) ,@(map string->list strs)))))
+    (define (string-for-each func str1 . strs)
+      (apply for-each `(,func ,(string->list str1) ,@(map string->list strs))))
+    (define (vector-map func vec1 . vecs)
+      (list->vector
+        (apply map `(,func ,(vector->list vec1) ,@(map vector->list vecs)))))
+    (define (vector-for-each func vec1 . vecs)
+      (apply for-each `(,func ,(vector->list vec1) ,@(map vector->list vecs))))
     (define (vector-append . vecs)
       (list->vector
         (apply append (map vector->list vecs))))
@@ -994,4 +1042,243 @@
         data, 
         k, 
        (p->mode == 0 && p->fp != NULL) ? boolean_t : boolean_f); ")
+;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+;; syntax-rules
+;(define identifier? symbol?)
+;(define (identifier->symbol obj) obj)
+;(define (find-tail pred ls)
+;  (and (pair? ls) (if (pred (car ls)) ls (find-tail pred (cdr ls)))))
+;
+;(define (find pred ls)
+;  (cond ((find-tail pred ls) => car) (else #f)))
+;(define (cons-source kar kdr source)
+;  (cons kar kdr))
+;
+;(define-syntax syntax-rules
+;  (er-macro-transformer
+;   (lambda (expr rename compare)
+;     (let ((ellipsis-specified? (identifier? (cadr expr)))
+;           (count 0)
+;           (_er-macro-transformer (rename 'er-macro-transformer))
+;           (_lambda (rename 'lambda))      (_let (rename 'let))
+;           (_begin (rename 'begin))        (_if (rename 'if))
+;           (_and (rename 'and))            (_or (rename 'or))
+;           (_eq? (rename 'eq?))            (_equal? (rename 'equal?))
+;           (_car (rename 'car))            (_cdr (rename 'cdr))
+;           (_cons (rename 'cons))          (_pair? (rename 'pair?))
+;           (_null? (rename 'null?))        (_expr (rename 'expr))
+;           (_rename (rename 'rename))      (_compare (rename 'compare))
+;           (_quote (rename 'quote)) (_apply (rename 'apply))
+;           ;(_quote (rename 'syntax-quote)) (_apply (rename 'apply))
+;           (_append (rename 'append))      (_map (rename 'map))
+;           (_vector? (rename 'vector?))    (_list? (rename 'list?))
+;           (_len (rename'len))             (_length (rename 'length))
+;           (_- (rename '-))   (_>= (rename '>=))   (_error (rename 'error))
+;           (_ls (rename 'ls)) (_res (rename 'res)) (_i (rename 'i))
+;           (_reverse (rename 'reverse))
+;           (_vector->list (rename 'vector->list))
+;           (_list->vector (rename 'list->vector))
+;           (_cons3 (rename 'cons-source)))
+;       (define ellipsis (rename (if ellipsis-specified? (cadr expr) '...)))
+;       (define lits (if ellipsis-specified? (car (cddr expr)) (cadr expr)))
+;       (define forms (if ellipsis-specified? (cdr (cddr expr)) (cddr expr)))
+;       (define (next-symbol s)
+;         (set! count (+ count 1))
+;         (rename (string->symbol (string-append s (number->string count)))))
+;       (define (expand-pattern pat tmpl)
+;         (let lp ((p (cdr pat))
+;                  (x (list _cdr _expr))
+;                  (dim 0)
+;                  (vars '())
+;                  (k (lambda (vars)
+;                       (list _cons (expand-template tmpl vars) #f))))
+;           (let ((v (next-symbol "v.")))
+;             (list
+;              _let (list (list v x))
+;              (cond
+;               ((identifier? p)
+;                (if (any (lambda (l) (compare p l)) lits)
+;                    (list _and
+;                          (list _compare v (list _rename (list _quote p)))
+;                          (k vars))
+;                    (list _let (list (list p v)) (k (cons (cons p dim) vars)))))
+;               ((ellipsis? p)
+;                (cond
+;                 ((not (null? (cdr (cdr p))))
+;                  (cond
+;                   ((any (lambda (x) (and (identifier? x) (compare x ellipsis)))
+;                         (cddr p))
+;                    (error "multiple ellipses" p))
+;                   (else
+;                    (let ((len (length (cdr (cdr p))))
+;                          (_lp (next-symbol "lp.")))
+;                      `(,_let ((,_len (,_length ,v)))
+;                         (,_and (,_>= ,_len ,len)
+;                                (,_let ,_lp ((,_ls ,v)
+;                                             (,_i (,_- ,_len ,len))
+;                                             (,_res (,_quote ())))
+;                                  (,_if (,_>= 0 ,_i)
+;                                      ,(lp `(,(cddr p) 
+;                                             (,(car p) ,(car (cdr p))))
+;                                           `(,_cons ,_ls
+;                                                    (,_cons (,_reverse ,_res)
+;                                                            (,_quote ())))
+;                                           dim
+;                                           vars
+;                                           k)
+;                                      (,_lp (,_cdr ,_ls)
+;                                            (,_- ,_i 1)
+;                                            (,_cons3 (,_car ,_ls)
+;                                                     ,_res
+;                                                     ,_ls))))))))))
+;                 ((identifier? (car p))
+;                  (list _and (list _list? v)
+;                        (list _let (list (list (car p) v))
+;                              (k (cons (cons (car p) (+ 1 dim)) vars)))))
+;                 (else
+;                  (let* ((w (next-symbol "w."))
+;                         (_lp (next-symbol "lp."))
+;                         (new-vars (all-vars (car p) (+ dim 1)))
+;                         (ls-vars (map (lambda (x)
+;                                         (next-symbol
+;                                          (string-append
+;                                           (symbol->string
+;                                            (identifier->symbol (car x)))
+;                                           "-ls")))
+;                                       new-vars))
+;                         (once
+;                          (lp (car p) (list _car w) (+ dim 1) '()
+;                              (lambda (_)
+;                                (cons
+;                                 _lp
+;                                 (cons
+;                                  (list _cdr w)
+;                                  (map (lambda (x l)
+;                                         (list _cons (car x) l))
+;                                       new-vars
+;                                       ls-vars)))))))
+;                    (list
+;                     _let
+;                     _lp (cons (list w v)
+;                               (map (lambda (x) (list x (list _quote '()))) ls-vars))
+;                     (list _if (list _null? w)
+;                           (list _let (map (lambda (x l)
+;                                             (list (car x) (list _reverse l)))
+;                                           new-vars
+;                                           ls-vars)
+;                                 (k (append new-vars vars)))
+;                           (list _and (list _pair? w) once)))))))
+;               ((pair? p)
+;                (list _and (list _pair? v)
+;                      (lp (car p)
+;                          (list _car v)
+;                          dim
+;                          vars
+;                          (lambda (vars)
+;                            (lp (cdr p) (list _cdr v) dim vars k)))))
+;               ((vector? p)
+;                (list _and
+;                      (list _vector? v)
+;                      (lp (vector->list p) (list _vector->list v) dim vars k)))
+;               ((null? p) (list _and (list _null? v) (k vars)))
+;               (else (list _and (list _equal? v p) (k vars))))))))
+;       (define (ellipsis-escape? x) (and (pair? x) (compare ellipsis (car x))))
+;       (define (ellipsis? x)
+;         (and (pair? x) (pair? (cdr x)) (compare ellipsis (cadr x))))
+;       (define (ellipsis-depth x)
+;         (if (ellipsis? x)
+;             (+ 1 (ellipsis-depth (cdr x)))
+;             0))
+;       (define (ellipsis-tail x)
+;         (if (ellipsis? x)
+;             (ellipsis-tail (cdr x))
+;             (cdr x)))
+;       (define (all-vars x dim)
+;         (let lp ((x x) (dim dim) (vars '()))
+;           (cond ((identifier? x)
+;                  (if (any (lambda (lit) (compare x lit)) lits)
+;                      vars
+;                      (cons (cons x dim) vars)))
+;                 ((ellipsis? x) (lp (car x) (+ dim 1) (lp (cddr x) dim vars)))
+;                 ((pair? x) (lp (car x) dim (lp (cdr x) dim vars)))
+;                 ((vector? x) (lp (vector->list x) dim vars))
+;                 (else vars))))
+;       (define (free-vars x vars dim)
+;         (let lp ((x x) (free '()))
+;           (cond
+;            ((identifier? x)
+;             (if (and (not (memq x free))
+;                      (cond ((assq x vars) => (lambda (cell) (>= (cdr cell) dim)))
+;                            (else #f)))
+;                 (cons x free)
+;                 free))
+;            ((pair? x) (lp (car x) (lp (cdr x) free)))
+;            ((vector? x) (lp (vector->list x) free))
+;            (else free))))
+;       (define (expand-template tmpl vars)
+;         (let lp ((t tmpl) (dim 0))
+;           (cond
+;            ((identifier? t)
+;             (cond
+;              ((find (lambda (v) (compare t (car v))) vars)
+;               => (lambda (cell)
+;                    (if (<= (cdr cell) dim)
+;                        t
+;                        (error "too few ...'s"))))
+;              (else
+;               (list _rename (list _quote t)))))
+;            ((pair? t)
+;             (cond
+;              ((ellipsis-escape? t)
+;               (list _quote
+;                     (if (pair? (cdr t))
+;                         (if (pair? (cddr t)) (cddr t) (cadr t))
+;                         (cdr t))))
+;              ((ellipsis? t)
+;               (let* ((depth (ellipsis-depth t))
+;                      (ell-dim (+ dim depth))
+;                      (ell-vars (free-vars (car t) vars ell-dim)))
+;                 (cond
+;                  ((null? ell-vars)
+;                   (error "too many ...'s"))
+;                  ((and (null? (cdr (cdr t))) (identifier? (car t)))
+;                   ;; shortcut for (var ...)
+;                   (lp (car t) ell-dim))
+;                  (else
+;                   (let* ((once (lp (car t) ell-dim))
+;                          (nest (if (and (null? (cdr ell-vars))
+;                                         (identifier? once)
+;                                         (eq? once (car vars)))
+;                                    once ;; shortcut
+;                                    (cons _map
+;                                          (cons (list _lambda ell-vars once)
+;                                                ell-vars))))
+;                          (many (do ((d depth (- d 1))
+;                                     (many nest
+;                                           (list _apply _append many)))
+;                                    ((= d 1) many))))
+;                     (if (null? (ellipsis-tail t))
+;                         many ;; shortcut
+;                         (list _append many (lp (ellipsis-tail t) dim))))))))
+;              (else (list _cons3 (lp (car t) dim) (lp (cdr t) dim) (list _quote t)))))
+;            ((vector? t) (list _list->vector (lp (vector->list t) dim)))
+;            ((null? t) (list _quote '()))
+;            (else t))))
+;       (list
+;        _er-macro-transformer
+;        (list _lambda (list _expr _rename _compare)
+;              (list
+;               _car
+;               (cons
+;                _or
+;                (append
+;                 (map
+;                  (lambda (clause) (expand-pattern (car clause) (cadr clause)))
+;                  forms)
+;                 (list
+;                  (list _cons
+;                        (list _error "no expansion for"
+;                             _expr ; (list (rename 'strip-syntactic-closures) _expr)
+;                              )
+;                        #f)))))))))))
 ))
