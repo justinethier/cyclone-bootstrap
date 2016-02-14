@@ -138,6 +138,9 @@ object __glo_read_91file = nil;
 object __glo_c_91compile_91and_91emit = nil;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
+extern object __glo_letrec_85;
+extern object __glo_guard;
+extern object __glo_guard_91aux;
 extern object __glo_receive;
 extern object __glo_abs;
 extern object __glo_max;
@@ -259,6 +262,8 @@ extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
 extern object __glo_syntax_91error;
+extern object __glo_case_91lambda;
+extern object __glo__75case;
 extern object __glo_eval;
 extern object __glo_eval_91from_91c;
 extern object __glo_create_91environment;
@@ -6566,6 +6571,7 @@ return_closcall2(data,  __glo_call_95cc,  ((closureN)self_73596)->elts[0], r_731
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value);
 extern void c_schemebase_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_schemecase_91lambda_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_scheme_char_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneutil_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemefile_entry_pt(void *data, int argc, closure cont, object value);
@@ -6630,9 +6636,10 @@ mclosure1(c_731803, c_schemeread_entry_pt, &c_731802);
 mclosure1(c_731804, c_schemefile_entry_pt, &c_731803);
 mclosure1(c_731805, c_schemecycloneutil_entry_pt, &c_731804);
 mclosure1(c_731806, c_scheme_char_entry_pt, &c_731805);
-mclosure1(c_731807, c_schemewrite_entry_pt, &c_731806);
-mclosure1(c_731808, c_schemebase_entry_pt, &c_731807);
-(c_731808.fn)(data, 0, &c_731808, &c_731808);
+mclosure1(c_731807, c_schemecase_91lambda_entry_pt, &c_731806);
+mclosure1(c_731808, c_schemewrite_entry_pt, &c_731807);
+mclosure1(c_731809, c_schemebase_entry_pt, &c_731808);
+(c_731809.fn)(data, 0, &c_731809, &c_731809);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
   
