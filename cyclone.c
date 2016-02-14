@@ -263,7 +263,6 @@ extern object __glo_inexact;
 extern object __glo_eof_91object;
 extern object __glo_syntax_91error;
 extern object __glo_case_91lambda;
-extern object __glo__75case;
 extern object __glo_eval;
 extern object __glo_eval_91from_91c;
 extern object __glo_create_91environment;
