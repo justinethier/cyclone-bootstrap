@@ -80,6 +80,14 @@
 
 #include "cyclone/types.h"
 object __glo_lib_91init_117srfi18 = nil;
+object __glo_condition_91variable_91broadcast_67 = nil;
+object __glo_condition_91variable_91signal_67 = nil;
+object __glo_make_91condition_91variable = nil;
+object __glo_condition_91variable_127 = nil;
+object __glo_mutex_91unlock_67 = nil;
+object __glo_mutex_91lock_67 = nil;
+object __glo_make_91mutex = nil;
+object __glo_mutex_127 = nil;
 object __glo_Cyc_91minor_91gc = nil;
 object __glo__91_125heap = nil;
 object __glo_thread_91sleep_67 = nil;
@@ -218,7 +226,15 @@ extern object __glo_eof_91object;
 extern object __glo_syntax_91error;
 #include "cyclone/runtime.h"
 defsymbol(cyc_91thread_91obj);
-static void __lambda_26(void *data, int argc, closure _,object k_7321) ;
+static void __lambda_34(void *data, int argc, closure _,object k_7321) ;
+static void __lambda_33(void *data, int argc, closure _, object k, object cond) ;
+static void __lambda_32(void *data, int argc, closure _, object k, object cond) ;
+static void __lambda_31(void *data, int argc, closure _, object k) ;
+static void __lambda_30(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_29(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_28(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_27(void *data, int argc, closure _, object k) ;
+static void __lambda_26(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_25(void *data, int argc, closure _, object k) ;
 static void __lambda_24(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_23(void *data, int argc, closure _, object k, object timeout) ;
@@ -246,13 +262,68 @@ static void __lambda_2(void *data, int argc, object self_7368, object r_7351) ;
 static void __lambda_1(void *data, int argc, object self_7369, object r_7352) ;
 static void __lambda_0(void *data, int argc, object self_7370, object r_7353) ;
 
-static void __lambda_26(void *data, int argc, closure _,object k_7321) {
+static void __lambda_34(void *data, int argc, closure _,object k_7321) {
   Cyc_st_add(data, "srfi/18.sld:lib-init:srfi18");
 
-make_int(c_73178, 0);
-return_closcall1(data,  k_7321,  &c_73178);; 
+make_int(c_73186, 0);
+return_closcall1(data,  k_7321,  &c_73186);; 
 }
 
+static void __lambda_33(void *data, int argc, closure _, object k, object cond) { Cyc_check_cond_var(data, cond);
+        if (pthread_cond_broadcast(&(((cond_var)cond)->cond)) != 0) {
+          fprintf(stderr, "Unable to broadcast condition variable\n");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t);  }
+static void __lambda_32(void *data, int argc, closure _, object k, object cond) { Cyc_check_cond_var(data, cond);
+        if (pthread_cond_signal(&(((cond_var)cond)->cond)) != 0) {
+          fprintf(stderr, "Unable to signal condition variable\n");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t);  }
+static void __lambda_31(void *data, int argc, closure _, object k) { int heap_grown;
+        cond_var cond;
+        cond_var_type tmp;
+        tmp.hdr.mark = gc_color_red;
+        tmp.hdr.grayed = 0;
+        tmp.tag = cond_var_tag;
+        cond = gc_alloc(gc_get_heap(), sizeof(cond_var_type), (char *)(&tmp), (gc_thread_data *)data, &heap_grown);
+        if (pthread_cond_init(&(cond->cond), NULL) != 0) {
+          fprintf(stderr, "Unable to make condition variable\n");
+          exit(1);
+        }
+        return_closcall1(data, k, cond);  }
+static void __lambda_30(void *data, int argc, closure _, object k, object obj) { object result = Cyc_is_cond_var(obj);
+        return_closcall1(data, k, result);  }
+static void __lambda_29(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
+        Cyc_check_mutex(data, obj);
+        if (pthread_mutex_unlock(&(m->lock)) != 0) {
+          fprintf(stderr, "Error unlocking mutex\n");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t);  }
+static void __lambda_28(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
+        Cyc_check_mutex(data, obj);
+        set_thread_blocked(data, k);
+        if (pthread_mutex_lock(&(m->lock)) != 0) {
+          fprintf(stderr, "Error locking mutex\n");
+          exit(1);
+        }
+        return_thread_runnable(data, boolean_t);  }
+static void __lambda_27(void *data, int argc, closure _, object k) { int heap_grown;
+        mutex lock;
+        mutex_type tmp;
+        tmp.hdr.mark = gc_color_red;
+        tmp.hdr.grayed = 0;
+        tmp.tag = mutex_tag;
+        lock = gc_alloc(gc_get_heap(), sizeof(mutex_type), (char *)(&tmp), (gc_thread_data *)data, &heap_grown);
+        if (pthread_mutex_init(&(lock->lock), NULL) != 0) {
+          fprintf(stderr, "Unable to make mutex\n");
+          exit(1);
+        }
+        return_closcall1(data, k, lock);  }
+static void __lambda_26(void *data, int argc, closure _, object k, object obj) { object result = Cyc_is_mutex(obj);
+        return_closcall1(data, k, result);  }
 static void __lambda_25(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
 static void __lambda_24(void *data, int argc, closure _, object k, object obj) { object heap_obj = copy2heap(data, obj);
         return_closcall1(data, k, heap_obj);  }
@@ -602,6 +673,14 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   quote_cyc_91thread_91obj = find_or_add_symbol("cyc-thread-obj");
 
   add_global((object *) &__glo_lib_91init_117srfi18);
+  add_global((object *) &__glo_condition_91variable_91broadcast_67);
+  add_global((object *) &__glo_condition_91variable_91signal_67);
+  add_global((object *) &__glo_make_91condition_91variable);
+  add_global((object *) &__glo_condition_91variable_127);
+  add_global((object *) &__glo_mutex_91unlock_67);
+  add_global((object *) &__glo_mutex_91lock_67);
+  add_global((object *) &__glo_make_91mutex);
+  add_global((object *) &__glo_mutex_127);
   add_global((object *) &__glo_Cyc_91minor_91gc);
   add_global((object *) &__glo__91_125heap);
   add_global((object *) &__glo_thread_91sleep_67);
@@ -613,8 +692,24 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   add_global((object *) &__glo_make_91thread);
   add_global((object *) &__glo_thread_127);
   add_symbol(quote_cyc_91thread_91obj);
-  mclosure0(c_73176, (function_type)__lambda_26);c_73176.num_args = 0; 
-  __glo_lib_91init_117srfi18 = &c_73176; 
+  mclosure0(c_73184, (function_type)__lambda_34);c_73184.num_args = 0; 
+  __glo_lib_91init_117srfi18 = &c_73184; 
+  mclosure0(c_73183, (function_type)__lambda_33);c_73183.num_args = 1; 
+  __glo_condition_91variable_91broadcast_67 = &c_73183; 
+  mclosure0(c_73182, (function_type)__lambda_32);c_73182.num_args = 1; 
+  __glo_condition_91variable_91signal_67 = &c_73182; 
+  mclosure0(c_73181, (function_type)__lambda_31);c_73181.num_args = 0; 
+  __glo_make_91condition_91variable = &c_73181; 
+  mclosure0(c_73180, (function_type)__lambda_30);c_73180.num_args = 1; 
+  __glo_condition_91variable_127 = &c_73180; 
+  mclosure0(c_73179, (function_type)__lambda_29);c_73179.num_args = 1; 
+  __glo_mutex_91unlock_67 = &c_73179; 
+  mclosure0(c_73178, (function_type)__lambda_28);c_73178.num_args = 1; 
+  __glo_mutex_91lock_67 = &c_73178; 
+  mclosure0(c_73177, (function_type)__lambda_27);c_73177.num_args = 0; 
+  __glo_make_91mutex = &c_73177; 
+  mclosure0(c_73176, (function_type)__lambda_26);c_73176.num_args = 1; 
+  __glo_mutex_127 = &c_73176; 
   mclosure0(c_73175, (function_type)__lambda_25);c_73175.num_args = 0; 
   __glo_Cyc_91minor_91gc = &c_73175; 
   mclosure0(c_73174, (function_type)__lambda_24);c_73174.num_args = 1; 
@@ -636,29 +731,45 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   mclosure0(c_7371, (function_type)__lambda_5);c_7371.num_args = 1; 
   __glo_thread_127 = &c_7371; 
 
-  make_cvar(cvar_73179, (object *)&__glo_lib_91init_117srfi18);make_cons(pair_73180, find_or_add_symbol("lib-init:srfi18"), &cvar_73179);
-  make_cvar(cvar_73181, (object *)&__glo_Cyc_91minor_91gc);make_cons(pair_73182, find_or_add_symbol("Cyc-minor-gc"), &cvar_73181);
-  make_cvar(cvar_73183, (object *)&__glo__91_125heap);make_cons(pair_73184, find_or_add_symbol("->heap"), &cvar_73183);
-  make_cvar(cvar_73185, (object *)&__glo_thread_91sleep_67);make_cons(pair_73186, find_or_add_symbol("thread-sleep!"), &cvar_73185);
-  make_cvar(cvar_73187, (object *)&__glo_thread_91yield_67);make_cons(pair_73188, find_or_add_symbol("thread-yield!"), &cvar_73187);
-  make_cvar(cvar_73189, (object *)&__glo_thread_91start_67);make_cons(pair_73190, find_or_add_symbol("thread-start!"), &cvar_73189);
-  make_cvar(cvar_73191, (object *)&__glo_thread_91specific_91set_67);make_cons(pair_73192, find_or_add_symbol("thread-specific-set!"), &cvar_73191);
-  make_cvar(cvar_73193, (object *)&__glo_thread_91specific);make_cons(pair_73194, find_or_add_symbol("thread-specific"), &cvar_73193);
-  make_cvar(cvar_73195, (object *)&__glo_thread_91name);make_cons(pair_73196, find_or_add_symbol("thread-name"), &cvar_73195);
-  make_cvar(cvar_73197, (object *)&__glo_make_91thread);make_cons(pair_73198, find_or_add_symbol("make-thread"), &cvar_73197);
-  make_cvar(cvar_73199, (object *)&__glo_thread_127);make_cons(pair_73200, find_or_add_symbol("thread?"), &cvar_73199);
-make_cons(c_73201, &pair_73180,Cyc_global_variables);
-make_cons(c_73202, &pair_73182, &c_73201);
-make_cons(c_73203, &pair_73184, &c_73202);
-make_cons(c_73204, &pair_73186, &c_73203);
-make_cons(c_73205, &pair_73188, &c_73204);
-make_cons(c_73206, &pair_73190, &c_73205);
-make_cons(c_73207, &pair_73192, &c_73206);
-make_cons(c_73208, &pair_73194, &c_73207);
-make_cons(c_73209, &pair_73196, &c_73208);
-make_cons(c_73210, &pair_73198, &c_73209);
-make_cons(c_73211, &pair_73200, &c_73210);
-Cyc_global_variables = &c_73211;
+  make_cvar(cvar_73187, (object *)&__glo_lib_91init_117srfi18);make_cons(pair_73188, find_or_add_symbol("lib-init:srfi18"), &cvar_73187);
+  make_cvar(cvar_73189, (object *)&__glo_condition_91variable_91broadcast_67);make_cons(pair_73190, find_or_add_symbol("condition-variable-broadcast!"), &cvar_73189);
+  make_cvar(cvar_73191, (object *)&__glo_condition_91variable_91signal_67);make_cons(pair_73192, find_or_add_symbol("condition-variable-signal!"), &cvar_73191);
+  make_cvar(cvar_73193, (object *)&__glo_make_91condition_91variable);make_cons(pair_73194, find_or_add_symbol("make-condition-variable"), &cvar_73193);
+  make_cvar(cvar_73195, (object *)&__glo_condition_91variable_127);make_cons(pair_73196, find_or_add_symbol("condition-variable?"), &cvar_73195);
+  make_cvar(cvar_73197, (object *)&__glo_mutex_91unlock_67);make_cons(pair_73198, find_or_add_symbol("mutex-unlock!"), &cvar_73197);
+  make_cvar(cvar_73199, (object *)&__glo_mutex_91lock_67);make_cons(pair_73200, find_or_add_symbol("mutex-lock!"), &cvar_73199);
+  make_cvar(cvar_73201, (object *)&__glo_make_91mutex);make_cons(pair_73202, find_or_add_symbol("make-mutex"), &cvar_73201);
+  make_cvar(cvar_73203, (object *)&__glo_mutex_127);make_cons(pair_73204, find_or_add_symbol("mutex?"), &cvar_73203);
+  make_cvar(cvar_73205, (object *)&__glo_Cyc_91minor_91gc);make_cons(pair_73206, find_or_add_symbol("Cyc-minor-gc"), &cvar_73205);
+  make_cvar(cvar_73207, (object *)&__glo__91_125heap);make_cons(pair_73208, find_or_add_symbol("->heap"), &cvar_73207);
+  make_cvar(cvar_73209, (object *)&__glo_thread_91sleep_67);make_cons(pair_73210, find_or_add_symbol("thread-sleep!"), &cvar_73209);
+  make_cvar(cvar_73211, (object *)&__glo_thread_91yield_67);make_cons(pair_73212, find_or_add_symbol("thread-yield!"), &cvar_73211);
+  make_cvar(cvar_73213, (object *)&__glo_thread_91start_67);make_cons(pair_73214, find_or_add_symbol("thread-start!"), &cvar_73213);
+  make_cvar(cvar_73215, (object *)&__glo_thread_91specific_91set_67);make_cons(pair_73216, find_or_add_symbol("thread-specific-set!"), &cvar_73215);
+  make_cvar(cvar_73217, (object *)&__glo_thread_91specific);make_cons(pair_73218, find_or_add_symbol("thread-specific"), &cvar_73217);
+  make_cvar(cvar_73219, (object *)&__glo_thread_91name);make_cons(pair_73220, find_or_add_symbol("thread-name"), &cvar_73219);
+  make_cvar(cvar_73221, (object *)&__glo_make_91thread);make_cons(pair_73222, find_or_add_symbol("make-thread"), &cvar_73221);
+  make_cvar(cvar_73223, (object *)&__glo_thread_127);make_cons(pair_73224, find_or_add_symbol("thread?"), &cvar_73223);
+make_cons(c_73225, &pair_73188,Cyc_global_variables);
+make_cons(c_73226, &pair_73190, &c_73225);
+make_cons(c_73227, &pair_73192, &c_73226);
+make_cons(c_73228, &pair_73194, &c_73227);
+make_cons(c_73229, &pair_73196, &c_73228);
+make_cons(c_73230, &pair_73198, &c_73229);
+make_cons(c_73231, &pair_73200, &c_73230);
+make_cons(c_73232, &pair_73202, &c_73231);
+make_cons(c_73233, &pair_73204, &c_73232);
+make_cons(c_73234, &pair_73206, &c_73233);
+make_cons(c_73235, &pair_73208, &c_73234);
+make_cons(c_73236, &pair_73210, &c_73235);
+make_cons(c_73237, &pair_73212, &c_73236);
+make_cons(c_73238, &pair_73214, &c_73237);
+make_cons(c_73239, &pair_73216, &c_73238);
+make_cons(c_73240, &pair_73218, &c_73239);
+make_cons(c_73241, &pair_73220, &c_73240);
+make_cons(c_73242, &pair_73222, &c_73241);
+make_cons(c_73243, &pair_73224, &c_73242);
+Cyc_global_variables = &c_73243;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117srfi18)->fn)(data, 1, cont, cont);
 }

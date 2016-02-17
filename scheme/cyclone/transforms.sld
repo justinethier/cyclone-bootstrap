@@ -1,11 +1,12 @@
-;;
-;; Cyclone Scheme
-;; Copyright (c) 2014, Justin Ethier
-;; All rights reserved.
-;;
-;; This module performs Scheme-to-Scheme transformations, and also contains
-;; various utility functions used by the compiler.
-;;
+;;;; Cyclone Scheme
+;;;; https://github.com/justinethier/cyclone
+;;;;
+;;;; Copyright (c) 2014-2016, Justin Ethier
+;;;; All rights reserved.
+;;;;
+;;;; This module performs Scheme-to-Scheme transformations, and also contains
+;;;; various utility functions used by the compiler.
+;;;;
 
 (define-library (scheme cyclone transforms)
   (import (scheme base)
@@ -515,10 +516,6 @@
      vector-length
      vector-ref
      vector-set!
-     make-mutex
-     mutex-lock!
-     mutex-unlock!
-     mutex?
      boolean?
      char?
      eof-object?
@@ -581,10 +578,6 @@
                   string-set!
                   string->symbol ;; Could be mistaken for an identifier
                   make-vector
-                  make-mutex
-                  mutex-lock!
-                  mutex-unlock!
-                  mutex?
                   ;; I/O must be done at runtime for side effects:
                   Cyc-stdout
                   Cyc-stdin

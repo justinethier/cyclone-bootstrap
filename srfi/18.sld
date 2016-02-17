@@ -1,3 +1,11 @@
+;;;; Cyclone Scheme
+;;;; https://github.com/justinethier/cyclone
+;;;;
+;;;; Copyright (c) 2014-2016, Justin Ethier
+;;;; All rights reserved.
+;;;;
+;;;; This module implements the multithreading API from SRFI 18.
+;;;;
 (define-library (srfi 18)
   (import (scheme base))
   (export
@@ -13,11 +21,10 @@
     ;; TODO: thread-terminate!
     ;; TODO: thread-join!
 
-    ;; For now, these are built-ins. No need to export them here: 
-    ;; mutex?
-    ;; make-mutex 
-    ;; mutex-lock! 
-    ;; mutex-unlock!
+    mutex?
+    make-mutex 
+    mutex-lock! 
+    mutex-unlock!
 
     ;; For now, these are not implemented:
     ;; mutex-name
@@ -26,13 +33,13 @@
     ;; mutex-state
 
     ;; TODO: condition variables are not implemented yet
-    ;; (condition-variable? obj)                             ;procedure
-    ;; (make-condition-variable [name])                      ;procedure
+    condition-variable?
+    make-condition-variable
     ;; (condition-variable-name condition-variable)          ;procedure
     ;; (condition-variable-specific condition-variable)      ;procedure
     ;; (condition-variable-specific-set! condition-variable obj) ;procedure
-    ;; (condition-variable-signal! condition-variable)       ;procedure
-    ;; (condition-variable-broadcast! condition-variable)    ;procedure
+    condition-variable-signal!
+    condition-variable-broadcast!
 
     ;; Time functions are not implemented here, see (scheme time) instead
    
@@ -97,4 +104,90 @@
     (define-c Cyc-minor-gc
       "(void *data, int argc, closure _, object k)"
       " Cyc_trigger_minor_gc(data, k); ")
+
+    ;; Mutexes
+    (define-c mutex?
+      "(void *data, int argc, closure _, object k, object obj)"
+      " object result = Cyc_is_mutex(obj);
+        return_closcall1(data, k, result); ")
+    ;; 
+    ;; Create a new mutex by allocating it on the heap. This is different than 
+    ;; other types of objects because by definition a mutex will be used by
+    ;; multiple threads, so no need to risk having the non-creating thread pick
+    ;; up a stack object ref by mistake.
+    ;; 
+    (define-c make-mutex
+      "(void *data, int argc, closure _, object k)"
+      " int heap_grown;
+        mutex lock;
+        mutex_type tmp;
+        tmp.hdr.mark = gc_color_red;
+        tmp.hdr.grayed = 0;
+        tmp.tag = mutex_tag;
+        lock = gc_alloc(gc_get_heap(), sizeof(mutex_type), (char *)(&tmp), (gc_thread_data *)data, &heap_grown);
+        if (pthread_mutex_init(&(lock->lock), NULL) != 0) {
+          fprintf(stderr, \"Unable to make mutex\\n\");
+          exit(1);
+        }
+        return_closcall1(data, k, lock); ")
+
+    (define-c mutex-lock!
+      "(void *data, int argc, closure _, object k, object obj)"
+      " mutex m = (mutex) obj;
+        Cyc_check_mutex(data, obj);
+        set_thread_blocked(data, k);
+        if (pthread_mutex_lock(&(m->lock)) != 0) {
+          fprintf(stderr, \"Error locking mutex\\n\");
+          exit(1);
+        }
+        return_thread_runnable(data, boolean_t); ")
+
+    (define-c mutex-unlock!
+      "(void *data, int argc, closure _, object k, object obj)"
+      " mutex m = (mutex) obj;
+        Cyc_check_mutex(data, obj);
+        if (pthread_mutex_unlock(&(m->lock)) != 0) {
+          fprintf(stderr, \"Error unlocking mutex\\n\");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t); ")
+
+    ;;;; Condition Variables
+    (define-c condition-variable?
+      "(void *data, int argc, closure _, object k, object obj)"
+      " object result = Cyc_is_cond_var(obj);
+        return_closcall1(data, k, result); ")
+    ;; (make-condition-variable [name])                      ;procedure
+    (define-c make-condition-variable
+      "(void *data, int argc, closure _, object k)"
+      " int heap_grown;
+        cond_var cond;
+        cond_var_type tmp;
+        tmp.hdr.mark = gc_color_red;
+        tmp.hdr.grayed = 0;
+        tmp.tag = cond_var_tag;
+        cond = gc_alloc(gc_get_heap(), sizeof(cond_var_type), (char *)(&tmp), (gc_thread_data *)data, &heap_grown);
+        if (pthread_cond_init(&(cond->cond), NULL) != 0) {
+          fprintf(stderr, \"Unable to make condition variable\\n\");
+          exit(1);
+        }
+        return_closcall1(data, k, cond); ")
+    ;; (condition-variable-signal! condition-variable)       ;procedure
+    ;; (condition-variable-broadcast! condition-variable)    ;procedure
+    (define-c condition-variable-signal!
+      "(void *data, int argc, closure _, object k, object cond)"
+      " Cyc_check_cond_var(data, cond);
+        if (pthread_cond_signal(&(((cond_var)cond)->cond)) != 0) {
+          fprintf(stderr, \"Unable to signal condition variable\\n\");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t); ")
+    (define-c condition-variable-broadcast!
+      "(void *data, int argc, closure _, object k, object cond)"
+      " Cyc_check_cond_var(data, cond);
+        if (pthread_cond_broadcast(&(((cond_var)cond)->cond)) != 0) {
+          fprintf(stderr, \"Unable to broadcast condition variable\\n\");
+          exit(1);
+        }
+        return_closcall1(data, k, boolean_t); ")
 ))
