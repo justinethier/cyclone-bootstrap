@@ -38377,25 +38377,25 @@ static void __lambda_1340(void *data, int argc, closure _, object k, object port
       return_closcall1(
         data, 
         k, 
-       (p->mode == 0 && p->fp != NULL) ? boolean_t : boolean_f);  }
+       ((p->mode == 0 && p->fp != NULL) ? boolean_t : boolean_f));  }
 static void __lambda_1339(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
       Cyc_check_port(data, port);
       return_closcall1(
         data, 
         k, 
-       (p->mode == 1 && p->fp != NULL) ? boolean_t : boolean_f);  }
+       ((p->mode == 1 && p->fp != NULL) ? boolean_t : boolean_f));  }
 static void __lambda_1338(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
       Cyc_check_port(data, port);
       return_closcall1(
         data, 
         k, 
-       (p->mode == 0) ? boolean_t : boolean_f);  }
+       ((p->mode == 0) ? boolean_t : boolean_f));  }
 static void __lambda_1337(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
       Cyc_check_port(data, port);
       return_closcall1(
         data, 
         k, 
-       (p->mode == 1) ? boolean_t : boolean_f);  }
+       ((p->mode == 1) ? boolean_t : boolean_f));  }
 static void __lambda_1336(void *data, int argc, closure _, object k) { return_closcall1(data, k, Cyc_EOF);  }
 static void __lambda_1335(void *data, int argc, closure _, object k, object z1, object z2) { make_double(d, 0.0);
       Cyc_check_num(data, z1);
