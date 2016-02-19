@@ -24,7 +24,7 @@
      GC(td,&c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,0, (closure)a1, cfn); } else { ((cfn)->fn)(td,1,cfn,a1);}
+#define closcall1(td,cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,0, (closure)(a1), cfn); } else { ((cfn)->fn)(td,1,cfn,a1);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall1(td,cfn,a1) \
 {char stack; \
@@ -42,7 +42,7 @@
      GC(td,&c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,1, (closure)a1, cfn,a2); } else { ((cfn)->fn)(td,2,cfn,a1,a2);}
+#define closcall2(td,cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,1, (closure)(a1), cfn,a2); } else { ((cfn)->fn)(td,2,cfn,a1,a2);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall2(td,cfn,a1,a2) \
 {char stack; \
@@ -60,7 +60,7 @@
      GC(td,&c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,2, (closure)a1, cfn,a2,a3); } else { ((cfn)->fn)(td,3,cfn,a1,a2,a3);}
+#define closcall3(td,cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,2, (closure)(a1), cfn,a2,a3); } else { ((cfn)->fn)(td,3,cfn,a1,a2,a3);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall3(td,cfn,a1,a2,a3) \
 {char stack; \
@@ -78,7 +78,7 @@
      GC(td,&c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,3, (closure)a1, cfn,a2,a3,a4); } else { ((cfn)->fn)(td,4,cfn,a1,a2,a3,a4);}
+#define closcall4(td,cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,3, (closure)(a1), cfn,a2,a3,a4); } else { ((cfn)->fn)(td,4,cfn,a1,a2,a3,a4);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall4(td,cfn,a1,a2,a3,a4) \
 {char stack; \
@@ -96,7 +96,7 @@
      GC(td,&c1, buf, 4); return; \
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define closcall5(td,cfn,a1,a2,a3,a4,a5) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,4, (closure)a1, cfn,a2,a3,a4,a5); } else { ((cfn)->fn)(td,5,cfn,a1,a2,a3,a4,a5);}
+#define closcall5(td,cfn,a1,a2,a3,a4,a5) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,4, (closure)(a1), cfn,a2,a3,a4,a5); } else { ((cfn)->fn)(td,5,cfn,a1,a2,a3,a4,a5);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall5(td,cfn,a1,a2,a3,a4,a5) \
 {char stack; \
@@ -114,7 +114,7 @@
      GC(td,&c1, buf, 5); return; \
  } else { (_fn)(td,5,(closure)_fn,a1,a2,a3,a4,a5); }}
 
-#define closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,7, (closure)a1, cfn,a2,a3,a4,a5,a6,a7,a8); } else { ((cfn)->fn)(td,8,cfn,a1,a2,a3,a4,a5,a6,a7,a8);}
+#define closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,7, (closure)(a1), cfn,a2,a3,a4,a5,a6,a7,a8); } else { ((cfn)->fn)(td,8,cfn,a1,a2,a3,a4,a5,a6,a7,a8);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) \
 {char stack; \
@@ -132,7 +132,7 @@
      GC(td,&c1, buf, 8); return; \
  } else { (_fn)(td,8,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8); }}
 
-#define closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,8, (closure)a1, cfn,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((cfn)->fn)(td,9,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
+#define closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,8, (closure)(a1), cfn,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((cfn)->fn)(td,9,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
 /* Check for GC, then call given continuation closure */
 #define return_closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
 {char stack; \
