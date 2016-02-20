@@ -9,7 +9,6 @@
 (define-library (srfi 18)
   (import (scheme base))
   (export
-    ;; TODO: current-thread
     thread?
     make-thread
     thread-name
@@ -19,28 +18,28 @@
     thread-sleep!
     thread-yield!
     thread-terminate!
+    ;; TODO: current-thread
     ;; TODO: thread-join!
 
     mutex?
     make-mutex 
     mutex-lock! 
     mutex-unlock!
-
     ;; For now, these are not implemented:
     ;; mutex-name
     ;; mutex-specific
     ;; mutex-specific-set!
     ;; mutex-state
 
-    ;; TODO: condition variables are not implemented yet
     condition-variable?
     make-condition-variable
-    ;; (condition-variable-name condition-variable)          ;procedure
-    ;; (condition-variable-specific condition-variable)      ;procedure
-    ;; (condition-variable-specific-set! condition-variable obj) ;procedure
     condition-variable-wait! ;; Non-standard
     condition-variable-signal!
     condition-variable-broadcast!
+    ;; Not implemented yet:
+    ;; (condition-variable-name condition-variable)          ;procedure
+    ;; (condition-variable-specific condition-variable)      ;procedure
+    ;; (condition-variable-specific-set! condition-variable obj) ;procedure
 
     ;; Time functions are not implemented here, see (scheme time) instead
    
@@ -88,6 +87,7 @@
       "(void *data, int argc, closure _, object k)"
       " Cyc_end_thread(data); ")
     ;; TODO: thread-join!
+    ;; TODO: possible to do this using mutator ID to get the pthread_t ??
 
     (define-c thread-sleep!
       "(void *data, int argc, closure _, object k, object timeout)"
@@ -151,7 +151,8 @@
          (Cyc-mutex-unlock! mutex))
         ((condition-variable? (car opts))
          (let ((cond-var (car opts)))
-           (condition-variable-wait! cond-var mutex)))
+           (condition-variable-wait! cond-var mutex)
+           (Cyc-mutex-unlock! mutex))) ;; Per SRFI, leave mutex unlocked
         (else
          (error "mutex-unlock! - unhandled args" mutex opts))))
 
