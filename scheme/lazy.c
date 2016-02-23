@@ -67,7 +67,6 @@ object __glo_make_91promise = nil;
 object __glo_delay_91force = nil;
 object __glo_delay = nil;
 object __glo_force = nil;
-extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;

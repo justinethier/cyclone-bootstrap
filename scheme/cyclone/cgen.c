@@ -263,7 +263,6 @@ object __glo_emits_85 = nil;
 object __glo_emits = nil;
 object __glo_emit_85 = nil;
 object __glo_emit = nil;
-extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;
