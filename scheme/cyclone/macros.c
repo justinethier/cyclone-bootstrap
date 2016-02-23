@@ -125,6 +125,7 @@ object __glo_macro_117load_91env_67 = nil;
 object __glo_macro_117add_67 = nil;
 object __glo__85macro_117defined_91macros_85 = nil;
 object __glo__85macro_117env_85 = nil;
+extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;

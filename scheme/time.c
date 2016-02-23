@@ -47,6 +47,7 @@ object __glo_lib_91init_117schemetime = nil;
 object __glo_jiffies_91per_91second = nil;
 object __glo_current_91jiffy = nil;
 object __glo_current_91second = nil;
+extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;

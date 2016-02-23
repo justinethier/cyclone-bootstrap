@@ -82,6 +82,7 @@
 object __glo_lib_91init_117schemecase_19191lambda = nil;
 object __glo_case_91lambda = nil;
 object __glo__75case = nil;
+extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;

@@ -2568,7 +2568,7 @@ return_closcall1(data,(closure)&c_733265,  c_733273);;
 static void __lambda_443(void *data, int argc, object self_73771, object r_73304) {
   Cyc_st_add(data, "scheme/read.sld:parse-atom");
 
-common_type c_733270 = Cyc_string2number(data,r_73304);
+common_type c_733270 = Cyc_string2number2(data,1,r_73304);
 return_closcall1(data,  ((closureN)self_73771)->elts[0],  &c_733270);; 
 }
 

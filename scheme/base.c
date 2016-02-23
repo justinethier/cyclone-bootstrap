@@ -38463,7 +38463,7 @@ static void __lambda_1355(void *data, int argc, object self_734894, object r_732
   Cyc_st_add(data, "scheme/base.sld:string->number2");
 if( !eq(boolean_f, r_732258) ){ 
   
-common_type c_7312111 = Cyc_string2number(data,((closureN)self_734894)->elts[2]);
+common_type c_7312111 = Cyc_string2number2(data,1,((closureN)self_734894)->elts[2]);
 return_closcall1(data,  ((closureN)self_734894)->elts[1],  &c_7312111);
 } else { 
   
@@ -38604,7 +38604,7 @@ return_closcall0(data,(closure)&c_7312150);}
 static void __lambda_1349(void *data, int argc, object self_734900) {
   Cyc_st_add(data, "scheme/base.sld:string->number2");
 
-common_type c_7312155 = Cyc_string2number(data,((closureN)self_734900)->elts[1]);
+common_type c_7312155 = Cyc_string2number2(data,1,((closureN)self_734900)->elts[1]);
 return_closcall1(data,  ((closureN)self_734900)->elts[0],  &c_7312155);; 
 }
 

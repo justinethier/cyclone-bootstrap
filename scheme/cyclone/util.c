@@ -129,6 +129,7 @@ object __glo_lambda_127 = nil;
 object __glo_begin_127 = nil;
 object __glo_if_127 = nil;
 object __glo_tagged_91list_127 = nil;
+extern object __glo_string_91_125number2;
 extern object __glo_cons_91source;
 extern object __glo_syntax_91rules;
 extern object __glo_letrec_85;
