@@ -334,13 +334,14 @@ static void __lambda_44(void *data, int argc, closure _, object k, object cond) 
         return_closcall1(data, k, boolean_t);  }
 static void __lambda_43(void *data, int argc, closure _, object k, object cond, object lock) { Cyc_check_cond_var(data, cond);
         Cyc_check_mutex(data, lock);
+        set_thread_blocked(data, k);
         if (pthread_cond_wait(
             &(((cond_var)cond)->cond),
             &(((mutex)lock)->lock)) != 0) {
           fprintf(stderr, "Unable to wait for condition variable\n");
           exit(1);
         }
-        return_closcall1(data, k, boolean_t);  }
+        return_thread_runnable(data, boolean_t);  }
 static void __lambda_42(void *data, int argc, closure _, object k) { int heap_grown;
         cond_var cond;
         cond_var_type tmp;
@@ -561,8 +562,9 @@ static void __lambda_27(void *data, int argc, closure _, object k, object obj) {
 static void __lambda_26(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
 static void __lambda_25(void *data, int argc, closure _, object k, object obj) { object heap_obj = copy2heap(data, obj);
         return_closcall1(data, k, heap_obj);  }
-static void __lambda_24(void *data, int argc, closure _, object k, object timeout) { Cyc_thread_sleep(data, timeout);
-        return_closcall1(data, k, boolean_t);  }
+static void __lambda_24(void *data, int argc, closure _, object k, object timeout) { set_thread_blocked(data, k);
+        Cyc_thread_sleep(data, timeout);
+        return_thread_runnable(data, boolean_t);  }
 static void __lambda_23(void *data, int argc, closure _, object k) { Cyc_end_thread(data);  }
 static void __lambda_22(void *data, int argc, closure _,object k_7337) {
   Cyc_st_add(data, "srfi/18.sld:thread-yield!");
