@@ -446,7 +446,7 @@ void *gc_alloc(gc_heap *h, size_t size, char *obj, gc_thread_data *thd, int *hea
       exit(1); // could throw error, but OOM is a major issue, so...
     }
   }
-#if GC_DEBUG_TRACE
+#if GC_DEBUG_VERBOSE
   fprintf(stderr, "alloc %p size = %zu, obj=%p, tag=%ld, mark=%d\n", result, size, obj, type_of(obj), mark(((object)result)));
   // Debug check, should no longer be necessary
   //if (is_value_type(result)) {
@@ -907,7 +907,9 @@ void gc_collector_trace()
       if (clean) {
         pthread_mutex_lock(&(m->lock));
         if (m->last_read < m->last_write) {
+#if GC_SAFETY_CHECKS
           fprintf(stderr, "JAE DEBUG - might have exited trace early\n");
+#endif
           clean = 0;
         }
         else if (m->pending_writes) {
@@ -1339,9 +1341,8 @@ void gc_mutator_thread_runnable(gc_thread_data *thd, object result)
   } else {
     // Collector didn't do anything; make a normal continuation call
     if (type_of(thd->gc_cont) == cons_tag || prim(thd->gc_cont)) {
-      object buf[1];
-      buf[0] = result;
-      Cyc_apply_from_buf(thd, 1, thd->gc_cont, buf);
+      thd->gc_args[0] = result;
+      Cyc_apply_from_buf(thd, 1, thd->gc_cont, thd->gc_args);
     } else {
       (((closure)(thd->gc_cont))->fn)(thd, 1, thd->gc_cont, result);
     }
