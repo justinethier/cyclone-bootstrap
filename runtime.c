@@ -2227,7 +2227,7 @@ void gc_mark_globals()
      cvar_type *c = (cvar_type *)car(l);
      object glo =  *(c->pvar);
      if (!nullp(glo)) {
-#if GC_DEBUG_TRACE
+#if GC_DEBUG_VERBOSE
        fprintf(stderr, "global pvar %p\n", glo);
 #endif
        gc_mark_black(glo); // Mark actual object the global points to
@@ -2361,7 +2361,7 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont, obje
   int scani = 0, alloci = 0;
   int heap_grown = 0;
 
-#if GC_DEBUG_TRACE
+#if GC_DEBUG_VERBOSE
   fprintf(stderr, "started minor GC\n");
 #endif
 
@@ -2478,7 +2478,7 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont, obje
     }
     scani++;
   }
-#if GC_DEBUG_TRACE
+#if GC_DEBUG_VERBOSE
   fprintf(stderr, "done with minor GC\n");
 #endif
   return alloci;
