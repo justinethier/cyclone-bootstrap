@@ -251,8 +251,7 @@ return_closcall1(data,(closure)&c_73237,  &c_73242);;
 }
 
 static void __lambda_33(void *data, int argc, object self_7356, object r_7317) {
-  Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
-return_closcall1(data,  ((closureN)self_7356)->elts[0],  global_set(__glo_promise_127, primitive_procedure_127));; 
+  return_closcall1(data,  ((closureN)self_7356)->elts[0],  global_set(__glo_promise_127, primitive_procedure_127));; 
 }
 
 static void __lambda_32(void *data, int argc, closure _,object k_7322, object proc_733) {
@@ -273,8 +272,7 @@ return_closcall2(data,(closure)&c_73182,  boolean_f, boolean_f);;
 }
 
 static void __lambda_31(void *data, int argc, object self_7357, object result_91ready_127_735, object result_734) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73184;
 c_73184.hdr.mark = gc_color_red;
  c_73184.hdr.grayed = 0;
@@ -293,8 +291,7 @@ return_closcall1(data,(closure)&c_73184,  &c_73234);;
 }
 
 static void __lambda_30(void *data, int argc, object self_7358, object result_91ready_127_735) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73186;
 c_73186.hdr.mark = gc_color_red;
  c_73186.hdr.grayed = 0;
@@ -313,8 +310,7 @@ return_closcall1(data,(closure)&c_73186,  &c_73230);;
 }
 
 static void __lambda_29(void *data, int argc, object self_7359, object result_734) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73189;
 c_73189.hdr.mark = gc_color_red;
  c_73189.hdr.grayed = 0;
@@ -331,8 +327,7 @@ return_closcall1(data,  ((closureN)self_7359)->elts[0],  &c_73189);;
 }
 
 static void __lambda_28(void *data, int argc, object self_7360, object k_7323) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-if( !eq(boolean_f, cell_get(((closureN)self_7360)->elts[2])) ){ 
+  if( !eq(boolean_f, cell_get(((closureN)self_7360)->elts[2])) ){ 
   return_closcall1(data,  k_7323,  cell_get(((closureN)self_7360)->elts[1]));
 } else { 
   
@@ -353,8 +348,7 @@ return_closcall1(data,  ((closureN)self_7360)->elts[0],  &c_73199);}
 }
 
 static void __lambda_27(void *data, int argc, object self_7361, object r_7324) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73201;
 c_73201.hdr.mark = gc_color_red;
  c_73201.hdr.grayed = 0;
@@ -371,8 +365,7 @@ return_closcall1(data,(closure)&c_73201,  r_7324);;
 }
 
 static void __lambda_26(void *data, int argc, object self_7362, object x_736) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-if( !eq(boolean_f, cell_get(((closureN)self_7362)->elts[2])) ){ 
+  if( !eq(boolean_f, cell_get(((closureN)self_7362)->elts[2])) ){ 
   return_closcall1(data,  ((closureN)self_7362)->elts[0],  cell_get(((closureN)self_7362)->elts[1]));
 } else { 
   
@@ -394,8 +387,7 @@ return_closcall0(data,(closure)&c_73211);}
 }
 
 static void __lambda_25(void *data, int argc, object self_7363) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73213;
 c_73213.hdr.mark = gc_color_red;
  c_73213.hdr.grayed = 0;
@@ -412,8 +404,7 @@ return_closcall1(data,(closure)&c_73213,  Cyc_set_car(data, ((closureN)self_7363
 }
 
 static void __lambda_24(void *data, int argc, object self_7364, object r_7325) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-
+  
 closureN_type c_73215;
 c_73215.hdr.mark = gc_color_red;
  c_73215.hdr.grayed = 0;
@@ -429,8 +420,7 @@ return_closcall1(data,(closure)&c_73215,  Cyc_set_car(data, ((closureN)self_7364
 }
 
 static void __lambda_23(void *data, int argc, object self_7365, object r_7326) {
-  Cyc_st_add(data, "scheme/lazy.sld:make-promise");
-return_closcall1(data,  ((closureN)self_7365)->elts[0],  cell_get(((closureN)self_7365)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_7365)->elts[0],  cell_get(((closureN)self_7365)->elts[1]));; 
 }
 
 static void __lambda_22(void *data, int argc, closure _,object k_7329, object expr_739, object rename_738, object compare_737) {
@@ -451,8 +441,7 @@ return_closcall1(data,(closure)&c_73136,  quote_make_91promise);;
 }
 
 static void __lambda_21(void *data, int argc, object self_7366, object r_7330) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73138;
 c_73138.hdr.mark = gc_color_red;
  c_73138.hdr.grayed = 0;
@@ -469,8 +458,7 @@ return_closcall1(data,(closure)&c_73138,  quote_lambda);;
 }
 
 static void __lambda_20(void *data, int argc, object self_7367, object r_7334) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73140;
 c_73140.hdr.mark = gc_color_red;
  c_73140.hdr.grayed = 0;
@@ -488,8 +476,7 @@ return_closcall1(data,(closure)&c_73140,  nil);;
 }
 
 static void __lambda_19(void *data, int argc, object self_7368, object r_7336) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73142;
 c_73142.hdr.mark = gc_color_red;
  c_73142.hdr.grayed = 0;
@@ -507,8 +494,7 @@ return_closcall1(data,(closure)&c_73142,  cadr(((closureN)self_7368)->elts[0]));
 }
 
 static void __lambda_18(void *data, int argc, object self_7369, object r_7338) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73144;
 c_73144.hdr.mark = gc_color_red;
  c_73144.hdr.grayed = 0;
@@ -527,8 +513,7 @@ return_closcall1(data,(closure)&c_73144,  nil);;
 }
 
 static void __lambda_17(void *data, int argc, object self_7370, object r_7339) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73146;
 c_73146.hdr.mark = gc_color_red;
  c_73146.hdr.grayed = 0;
@@ -548,8 +533,7 @@ return_closcall1(data,(closure)&c_73146,  &c_73175);;
 }
 
 static void __lambda_16(void *data, int argc, object self_7371, object r_7337) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73148;
 c_73148.hdr.mark = gc_color_red;
  c_73148.hdr.grayed = 0;
@@ -568,8 +552,7 @@ return_closcall1(data,(closure)&c_73148,  &c_73171);;
 }
 
 static void __lambda_15(void *data, int argc, object self_7372, object r_7335) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73150;
 c_73150.hdr.mark = gc_color_red;
  c_73150.hdr.grayed = 0;
@@ -587,8 +570,7 @@ return_closcall1(data,(closure)&c_73150,  &c_73167);;
 }
 
 static void __lambda_14(void *data, int argc, object self_7373, object r_7332) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73152;
 c_73152.hdr.mark = gc_color_red;
  c_73152.hdr.grayed = 0;
@@ -605,8 +587,7 @@ return_closcall1(data,(closure)&c_73152,  nil);;
 }
 
 static void __lambda_13(void *data, int argc, object self_7374, object r_7333) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 closureN_type c_73154;
 c_73154.hdr.mark = gc_color_red;
  c_73154.hdr.grayed = 0;
@@ -624,8 +605,7 @@ return_closcall1(data,(closure)&c_73154,  &c_73163);;
 }
 
 static void __lambda_12(void *data, int argc, object self_7375, object r_7331) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay-force");
-
+  
 make_cons(c_73159,((closureN)self_7375)->elts[1], r_7331);
 return_closcall1(data,  ((closureN)self_7375)->elts[0],  &c_73159);; 
 }
@@ -648,8 +628,7 @@ return_closcall1(data,(closure)&c_7390,  quote_make_91promise);;
 }
 
 static void __lambda_10(void *data, int argc, object self_7376, object r_7343) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_7392;
 c_7392.hdr.mark = gc_color_red;
  c_7392.hdr.grayed = 0;
@@ -666,8 +645,7 @@ return_closcall1(data,(closure)&c_7392,  quote_lambda);;
 }
 
 static void __lambda_9(void *data, int argc, object self_7377, object r_7347) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_7394;
 c_7394.hdr.mark = gc_color_red;
  c_7394.hdr.grayed = 0;
@@ -685,8 +663,7 @@ return_closcall1(data,(closure)&c_7394,  nil);;
 }
 
 static void __lambda_8(void *data, int argc, object self_7378, object r_7349) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_7396;
 c_7396.hdr.mark = gc_color_red;
  c_7396.hdr.grayed = 0;
@@ -704,8 +681,7 @@ return_closcall1(data,(closure)&c_7396,  cadr(((closureN)self_7378)->elts[0]));;
 }
 
 static void __lambda_7(void *data, int argc, object self_7379, object r_7351) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_7398;
 c_7398.hdr.mark = gc_color_red;
  c_7398.hdr.grayed = 0;
@@ -724,8 +700,7 @@ return_closcall1(data,(closure)&c_7398,  nil);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7380, object r_7352) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_73100;
 c_73100.hdr.mark = gc_color_red;
  c_73100.hdr.grayed = 0;
@@ -745,8 +720,7 @@ return_closcall1(data,(closure)&c_73100,  &c_73129);;
 }
 
 static void __lambda_5(void *data, int argc, object self_7381, object r_7350) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_73102;
 c_73102.hdr.mark = gc_color_red;
  c_73102.hdr.grayed = 0;
@@ -765,8 +739,7 @@ return_closcall1(data,(closure)&c_73102,  &c_73125);;
 }
 
 static void __lambda_4(void *data, int argc, object self_7382, object r_7348) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_73104;
 c_73104.hdr.mark = gc_color_red;
  c_73104.hdr.grayed = 0;
@@ -784,8 +757,7 @@ return_closcall1(data,(closure)&c_73104,  &c_73121);;
 }
 
 static void __lambda_3(void *data, int argc, object self_7383, object r_7345) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_73106;
 c_73106.hdr.mark = gc_color_red;
  c_73106.hdr.grayed = 0;
@@ -802,8 +774,7 @@ return_closcall1(data,(closure)&c_73106,  nil);;
 }
 
 static void __lambda_2(void *data, int argc, object self_7384, object r_7346) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 closureN_type c_73108;
 c_73108.hdr.mark = gc_color_red;
  c_73108.hdr.grayed = 0;
@@ -821,8 +792,7 @@ return_closcall1(data,(closure)&c_73108,  &c_73117);;
 }
 
 static void __lambda_1(void *data, int argc, object self_7385, object r_7344) {
-  Cyc_st_add(data, "scheme/lazy.sld:delay");
-
+  
 make_cons(c_73113,((closureN)self_7385)->elts[1], r_7344);
 return_closcall1(data,  ((closureN)self_7385)->elts[0],  &c_73113);; 
 }

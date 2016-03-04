@@ -77,8 +77,7 @@ return_closcall1(data,(closure)&c_7318,  car(lis_731));;
 }
 
 static void __lambda_3(void *data, int argc, object self_7312, object r_7311) {
-  Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-
+  
 closureN_type c_7320;
 c_7320.hdr.mark = gc_color_red;
  c_7320.hdr.grayed = 0;
@@ -93,8 +92,7 @@ return_closcall1(data,(closure)&c_7320,  car(r_7311));;
 }
 
 static void __lambda_2(void *data, int argc, object self_7313, object r_7310) {
-  Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-
+  
 closureN_type c_7322;
 c_7322.hdr.mark = gc_color_red;
  c_7322.hdr.grayed = 0;
@@ -109,8 +107,7 @@ return_closcall1(data,(closure)&c_7322,  car(r_7310));;
 }
 
 static void __lambda_1(void *data, int argc, object self_7314, object r_739) {
-  Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-
+  
 closureN_type c_7324;
 c_7324.hdr.mark = gc_color_red;
  c_7324.hdr.grayed = 0;
@@ -125,8 +122,7 @@ return_closcall1(data,(closure)&c_7324,  car(r_739));;
 }
 
 static void __lambda_0(void *data, int argc, object self_7315, object r_738) {
-  Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-return_closcall1(data,  ((closureN)self_7315)->elts[0],  car(r_738));; 
+  return_closcall1(data,  ((closureN)self_7315)->elts[0],  car(r_738));; 
 }
 
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

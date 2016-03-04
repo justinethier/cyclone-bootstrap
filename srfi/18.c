@@ -383,8 +383,7 @@ return_closcall1(data,(closure)&c_73204,  Cyc_is_null(opts_7310));;
 }
 
 static void __lambda_38(void *data, int argc, object self_7368, object r_7330) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-if( !eq(boolean_f, r_7330) ){ 
+  if( !eq(boolean_f, r_7330) ){ 
   
 closureN_type c_73206;
 c_73206.hdr.mark = gc_color_red;
@@ -417,8 +416,7 @@ return_closcall1(data,(closure)&c_73211,  car(((closureN)self_7368)->elts[2]));}
 }
 
 static void __lambda_37(void *data, int argc, object self_7369, object r_7334) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-
+  
 closureN_type c_73213;
 c_73213.hdr.mark = gc_color_red;
  c_73213.hdr.grayed = 0;
@@ -435,8 +433,7 @@ return_closcall2(data,  __glo_condition_91variable_127,  &c_73213, r_7334);;
 }
 
 static void __lambda_36(void *data, int argc, object self_7370, object r_7331) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-if( !eq(boolean_f, r_7331) ){ 
+  if( !eq(boolean_f, r_7331) ){ 
   
 closureN_type c_73215;
 c_73215.hdr.mark = gc_color_red;
@@ -470,15 +467,13 @@ return_closcall0(data,(closure)&c_73230);}
 }
 
 static void __lambda_35(void *data, int argc, object self_7371) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-
+  
 make_string(c_73233, "mutex-unlock! - unhandled args");
 return_closcall4(data,  __glo_error,  ((closureN)self_7371)->elts[0], &c_73233, ((closureN)self_7371)->elts[1], ((closureN)self_7371)->elts[2]);; 
 }
 
 static void __lambda_34(void *data, int argc, object self_7372) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-
+  
 closureN_type c_73217;
 c_73217.hdr.mark = gc_color_red;
  c_73217.hdr.grayed = 0;
@@ -494,8 +489,7 @@ return_closcall1(data,(closure)&c_73217,  car(((closureN)self_7372)->elts[2]));;
 }
 
 static void __lambda_33(void *data, int argc, object self_7373, object r_7332) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-
+  
 closureN_type c_73219;
 c_73219.hdr.mark = gc_color_red;
  c_73219.hdr.grayed = 0;
@@ -511,8 +505,7 @@ return_closcall1(data,(closure)&c_73219,  r_7332);;
 }
 
 static void __lambda_32(void *data, int argc, object self_7374, object cond_91var_7312) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-
+  
 closureN_type c_73221;
 c_73221.hdr.mark = gc_color_red;
  c_73221.hdr.grayed = 0;
@@ -528,13 +521,11 @@ return_closcall3(data,  __glo_condition_91variable_91wait_67,  &c_73221, cond_91
 }
 
 static void __lambda_31(void *data, int argc, object self_7375, object r_7333) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67,  ((closureN)self_7375)->elts[0], ((closureN)self_7375)->elts[1]);; 
+  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67,  ((closureN)self_7375)->elts[0], ((closureN)self_7375)->elts[1]);; 
 }
 
 static void __lambda_30(void *data, int argc, object self_7376) {
-  Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
-return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67,  ((closureN)self_7376)->elts[0], ((closureN)self_7376)->elts[1]);; 
+  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67,  ((closureN)self_7376)->elts[0], ((closureN)self_7376)->elts[1]);; 
 }
 
 static void __lambda_29(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
@@ -591,8 +582,7 @@ return_closcall1(data,  __glo_Cyc_91minor_91gc,  &c_73168);;
 }
 
 static void __lambda_20(void *data, int argc, object self_7377, object r_7341) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 closureN_type c_73170;
 c_73170.hdr.mark = gc_color_red;
  c_73170.hdr.grayed = 0;
@@ -610,8 +600,7 @@ return_closcall1(data,(closure)&c_73170,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_19(void *data, int argc, object self_7378, object r_7342) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 closureN_type c_73172;
 c_73172.hdr.mark = gc_color_red;
  c_73172.hdr.grayed = 0;
@@ -627,8 +616,7 @@ return_closcall1(data,(closure)&c_73172,  r_7342);;
 }
 
 static void __lambda_18(void *data, int argc, object self_7379, object thunk_7314) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 closureN_type c_73174;
 c_73174.hdr.mark = gc_color_red;
  c_73174.hdr.grayed = 0;
@@ -644,8 +632,7 @@ return_closcall1(data,(closure)&c_73174,  Cyc_spawn_thread(thunk_7314));;
 }
 
 static void __lambda_17(void *data, int argc, object self_7380, object r_7343) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 closureN_type c_73176;
 c_73176.hdr.mark = gc_color_red;
  c_73176.hdr.grayed = 0;
@@ -661,8 +648,7 @@ return_closcall1(data,(closure)&c_73176,  r_7343);;
 }
 
 static void __lambda_16(void *data, int argc, object self_7381, object mutator_91id_7315) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 closureN_type c_73178;
 c_73178.hdr.mark = gc_color_red;
  c_73178.hdr.grayed = 0;
@@ -679,8 +665,7 @@ return_closcall0(data,(closure)&c_73178);;
 }
 
 static void __lambda_15(void *data, int argc, object self_7382) {
-  Cyc_st_add(data, "srfi/18.sld:thread-start!");
-
+  
 make_int(c_73184, 2);
 return_closcall1(data,  ((closureN)self_7382)->elts[0],  Cyc_vector_set(data, ((closureN)self_7382)->elts[2], &c_73184, ((closureN)self_7382)->elts[1]));; 
 }
@@ -736,8 +721,7 @@ return_closcall1(data,(closure)&c_73128,  &c_73142);;
 }
 
 static void __lambda_10(void *data, int argc, object self_7383, object r_7356) {
-  Cyc_st_add(data, "srfi/18.sld:make-thread");
-
+  
 closureN_type c_73144;
 c_73144.hdr.mark = gc_color_red;
  c_73144.hdr.grayed = 0;
@@ -753,8 +737,7 @@ return_closcall1(data,(closure)&c_73144,  r_7356);;
 }
 
 static void __lambda_9(void *data, int argc, object self_7384, object name_91str_7322) {
-  Cyc_st_add(data, "srfi/18.sld:make-thread");
-
+  
 closureN_type c_73146;
 c_73146.hdr.mark = gc_color_red;
  c_73146.hdr.grayed = 0;
@@ -771,13 +754,11 @@ return_closcall1(data,(closure)&c_73146,  quote_cyc_91thread_91obj);;
 }
 
 static void __lambda_8(void *data, int argc, object self_7385, object r_7357) {
-  Cyc_st_add(data, "srfi/18.sld:make-thread");
-return_closcall6(data,  __glo_vector,  ((closureN)self_7385)->elts[0], r_7357, ((closureN)self_7385)->elts[2], boolean_f, ((closureN)self_7385)->elts[1], boolean_f);; 
+  return_closcall6(data,  __glo_vector,  ((closureN)self_7385)->elts[0], r_7357, ((closureN)self_7385)->elts[2], boolean_f, ((closureN)self_7385)->elts[1], boolean_f);; 
 }
 
 static void __lambda_7(void *data, int argc, object self_7386, object k_7358) {
-  Cyc_st_add(data, "srfi/18.sld:make-thread");
-
+  
 closureN_type c_73130;
 c_73130.hdr.mark = gc_color_red;
  c_73130.hdr.grayed = 0;
@@ -793,8 +774,7 @@ return_closcall1(data,(closure)&c_73130,  Cyc_is_cons(((closureN)self_7386)->elt
 }
 
 static void __lambda_6(void *data, int argc, object self_7387, object r_7359) {
-  Cyc_st_add(data, "srfi/18.sld:make-thread");
-if( !eq(boolean_f, r_7359) ){ 
+  if( !eq(boolean_f, r_7359) ){ 
   return_closcall1(data,  ((closureN)self_7387)->elts[0],  car(((closureN)self_7387)->elts[1]));
 } else { 
   
@@ -821,8 +801,7 @@ return_closcall1(data,(closure)&c_7395,  Cyc_is_vector(obj_7323));;
 }
 
 static void __lambda_4(void *data, int argc, object self_7388, object r_7363) {
-  Cyc_st_add(data, "srfi/18.sld:thread?");
-if( !eq(boolean_f, r_7363) ){ 
+  if( !eq(boolean_f, r_7363) ){ 
   
 closureN_type c_7397;
 c_7397.hdr.mark = gc_color_red;
@@ -844,8 +823,7 @@ return_closcall1(data,(closure)&c_7397,  &c_73120);
 }
 
 static void __lambda_3(void *data, int argc, object self_7389, object r_7367) {
-  Cyc_st_add(data, "srfi/18.sld:thread?");
-
+  
 closureN_type c_7399;
 c_7399.hdr.mark = gc_color_red;
  c_7399.hdr.grayed = 0;
@@ -863,8 +841,7 @@ return_closcall1(data,(closure)&c_7399,  __num_gt(data, r_7367, &c_73117));;
 }
 
 static void __lambda_2(void *data, int argc, object self_7390, object r_7364) {
-  Cyc_st_add(data, "srfi/18.sld:thread?");
-if( !eq(boolean_f, r_7364) ){ 
+  if( !eq(boolean_f, r_7364) ){ 
   
 closureN_type c_73101;
 c_73101.hdr.mark = gc_color_red;
@@ -884,8 +861,7 @@ return_closcall1(data,(closure)&c_73101,  quote_cyc_91thread_91obj);
 }
 
 static void __lambda_1(void *data, int argc, object self_7391, object r_7365) {
-  Cyc_st_add(data, "srfi/18.sld:thread?");
-
+  
 closureN_type c_73103;
 c_73103.hdr.mark = gc_color_red;
  c_73103.hdr.grayed = 0;
@@ -903,8 +879,7 @@ return_closcall1(data,(closure)&c_73103,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_0(void *data, int argc, object self_7392, object r_7366) {
-  Cyc_st_add(data, "srfi/18.sld:thread?");
-return_closcall1(data,  ((closureN)self_7392)->elts[0],  equalp(((closureN)self_7392)->elts[1], r_7366));; 
+  return_closcall1(data,  ((closureN)self_7392)->elts[0],  equalp(((closureN)self_7392)->elts[1], r_7366));; 
 }
 
 void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

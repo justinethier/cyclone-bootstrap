@@ -2091,8 +2091,7 @@ return_closcall1(data,(closure)&c_739378,  &c_739550);;
 }
 
 static void __lambda_1483(void *data, int argc, object self_732044, object r_73620) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739380;
 c_739380.hdr.mark = gc_color_red;
  c_739380.hdr.grayed = 0;
@@ -2107,8 +2106,7 @@ return_closcall1(data,(closure)&c_739380,  global_set(__glo_pretty_91print, __gl
 }
 
 static void __lambda_1482(void *data, int argc, object self_732045, object r_73621) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739382;
 c_739382.hdr.mark = gc_color_red;
  c_739382.hdr.grayed = 0;
@@ -2123,8 +2121,7 @@ return_closcall1(data,  __glo__list,  &c_739382);;
 }
 
 static void __lambda_1481(void *data, int argc, object self_732046, object r_73633) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739384;
 c_739384.hdr.mark = gc_color_red;
  c_739384.hdr.grayed = 0;
@@ -2139,8 +2136,7 @@ return_closcall1(data,(closure)&c_739384,  global_set(__glo__85defined_91macros_
 }
 
 static void __lambda_1480(void *data, int argc, object self_732047, object r_73622) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739386;
 c_739386.hdr.mark = gc_color_red;
  c_739386.hdr.grayed = 0;
@@ -2157,8 +2153,7 @@ return_closcall1(data,(closure)&c_739386,  &c_739523);;
 }
 
 static void __lambda_1479(void *data, int argc, object self_732048, object k_73628, object exp_73277) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739525;
 c_739525.hdr.mark = gc_color_red;
  c_739525.hdr.grayed = 0;
@@ -2173,8 +2168,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_739525, exp_73277);;
 }
 
 static void __lambda_1478(void *data, int argc, object self_732049, object r_73629) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739527;
 c_739527.hdr.mark = gc_color_red;
  c_739527.hdr.grayed = 0;
@@ -2189,8 +2183,7 @@ return_closcall1(data,(closure)&c_739527,  r_73629);;
 }
 
 static void __lambda_1477(void *data, int argc, object self_732050, object type_73278) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739529;
 c_739529.hdr.mark = gc_color_red;
  c_739529.hdr.grayed = 0;
@@ -2206,8 +2199,7 @@ return_closcall1(data,(closure)&c_739529,  quote_args_117varargs);;
 }
 
 static void __lambda_1476(void *data, int argc, object self_732051, object r_73632) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739531;
 c_739531.hdr.mark = gc_color_red;
  c_739531.hdr.grayed = 0;
@@ -2223,8 +2215,7 @@ return_closcall1(data,(closure)&c_739531,  equalp(((closureN)self_732051)->elts[
 }
 
 static void __lambda_1475(void *data, int argc, object self_732052, object r_73630) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739533;
 c_739533.hdr.mark = gc_color_red;
  c_739533.hdr.grayed = 0;
@@ -2240,8 +2231,7 @@ return_closcall1(data,(closure)&c_739533,  r_73630);;
 }
 
 static void __lambda_1474(void *data, int argc, object self_732053, object tmp_73279) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-if( !eq(boolean_f, tmp_73279) ){ 
+  if( !eq(boolean_f, tmp_73279) ){ 
   return_closcall1(data,  ((closureN)self_732053)->elts[0],  tmp_73279);
 } else { 
   
@@ -2261,13 +2251,11 @@ return_closcall1(data,(closure)&c_739537,  quote_args_117fixed_91with_91varargs)
 }
 
 static void __lambda_1473(void *data, int argc, object self_732054, object r_73631) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-return_closcall1(data,  ((closureN)self_732054)->elts[0],  equalp(((closureN)self_732054)->elts[1], r_73631));; 
+  return_closcall1(data,  ((closureN)self_732054)->elts[0],  equalp(((closureN)self_732054)->elts[1], r_73631));; 
 }
 
 static void __lambda_1472(void *data, int argc, object self_732055, object r_73627) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739388;
 c_739388.hdr.mark = gc_color_red;
  c_739388.hdr.grayed = 0;
@@ -2282,8 +2270,7 @@ return_closcall1(data,(closure)&c_739388,  global_set(__glo_lambda_91varargs_127
 }
 
 static void __lambda_1471(void *data, int argc, object self_732056, object r_73623) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739390;
 c_739390.hdr.mark = gc_color_red;
  c_739390.hdr.grayed = 0;
@@ -2538,8 +2525,7 @@ return_closcall1(data,(closure)&c_739390,  &c_739401);;
 }
 
 static void __lambda_1470(void *data, int argc, object self_732057, object r_73626) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739392;
 c_739392.hdr.mark = gc_color_red;
  c_739392.hdr.grayed = 0;
@@ -2554,8 +2540,7 @@ return_closcall1(data,(closure)&c_739392,  global_set(__glo__85primitives_85, r_
 }
 
 static void __lambda_1469(void *data, int argc, object self_732058, object r_73624) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-
+  
 closureN_type c_739394;
 c_739394.hdr.mark = gc_color_red;
  c_739394.hdr.grayed = 0;
@@ -2570,8 +2555,7 @@ return_closcall1(data,(closure)&c_739394,  nil);;
 }
 
 static void __lambda_1468(void *data, int argc, object self_732059, object r_73625) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lib-init:schemecyclonetransforms");
-return_closcall1(data,  ((closureN)self_732059)->elts[0],  global_set(__glo_mutable_91variables, r_73625));; 
+  return_closcall1(data,  ((closureN)self_732059)->elts[0],  global_set(__glo_mutable_91variables, r_73625));; 
 }
 
 static void __lambda_1467(void *data, int argc, closure _,object k_73636, object exp_73281, object globals_73280) {
@@ -2593,8 +2577,7 @@ return_closcall2(data,(closure)&c_738712,  boolean_f, boolean_f);;
 }
 
 static void __lambda_1466(void *data, int argc, object self_732060, object cc_73284, object convert_73283) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738714;
 c_738714.hdr.mark = gc_color_red;
  c_738714.hdr.grayed = 0;
@@ -2613,8 +2596,7 @@ return_closcall1(data,(closure)&c_738714,  &c_739375);;
 }
 
 static void __lambda_1465(void *data, int argc, object self_732061, object convert_73283) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738716;
 c_738716.hdr.mark = gc_color_red;
  c_738716.hdr.grayed = 0;
@@ -2632,8 +2614,7 @@ return_closcall1(data,(closure)&c_738716,  boolean_f);;
 }
 
 static void __lambda_1464(void *data, int argc, object self_732062, object convert_73285) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738718;
 c_738718.hdr.mark = gc_color_red;
  c_738718.hdr.grayed = 0;
@@ -2662,8 +2643,7 @@ return_closcall1(data,(closure)&c_738718,  &c_738756);;
 }
 
 static void __lambda_1463(void *data, int argc, object self_732063, object k_73646, object exp_73288, object self_91var_73287, object free_91var_91lst_73286) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738758;
 c_738758.hdr.mark = gc_color_red;
  c_738758.hdr.grayed = 0;
@@ -2683,8 +2663,7 @@ return_closcall1(data,(closure)&c_738758,  boolean_f);;
 }
 
 static void __lambda_1462(void *data, int argc, object self_732064, object cc_73289) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738760;
 c_738760.hdr.mark = gc_color_red;
  c_738760.hdr.grayed = 0;
@@ -2706,8 +2685,7 @@ return_closcall1(data,(closure)&c_738760,  &c_739372);;
 }
 
 static void __lambda_1461(void *data, int argc, object self_732065, object cc_73289) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738762;
 c_738762.hdr.mark = gc_color_red;
  c_738762.hdr.grayed = 0;
@@ -2739,8 +2717,7 @@ return_closcall1(data,(closure)&c_738762,  &c_738774);;
 }
 
 static void __lambda_1460(void *data, int argc, object self_732066, object k_73649, object exp_73290) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738776;
 c_738776.hdr.mark = gc_color_red;
  c_738776.hdr.grayed = 0;
@@ -2761,8 +2738,7 @@ return_closcall2(data,  __glo_const_127,  &c_738776, exp_73290);;
 }
 
 static void __lambda_1459(void *data, int argc, object self_732067, object r_73650) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73650) ){ 
+  if( !eq(boolean_f, r_73650) ){ 
   
 closureN_type c_738778;
 c_738778.hdr.mark = gc_color_red;
@@ -2799,8 +2775,7 @@ return_closcall2(data,  __glo_quote_127,  &c_738783, ((closureN)self_732067)->el
 }
 
 static void __lambda_1458(void *data, int argc, object self_732068, object r_73651) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73651) ){ 
+  if( !eq(boolean_f, r_73651) ){ 
   
 closureN_type c_738785;
 c_738785.hdr.mark = gc_color_red;
@@ -2837,8 +2812,7 @@ return_closcall2(data,  __glo_ref_127,  &c_738790, ((closureN)self_732068)->elts
 }
 
 static void __lambda_1457(void *data, int argc, object self_732069, object r_73652) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73652) ){ 
+  if( !eq(boolean_f, r_73652) ){ 
   
 closureN_type c_738792;
 c_738792.hdr.mark = gc_color_red;
@@ -2875,8 +2849,7 @@ return_closcall1(data,(closure)&c_738832,  quote__75closure_91ref);}
 }
 
 static void __lambda_1456(void *data, int argc, object self_732070, object r_73767) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738834;
 c_738834.hdr.mark = gc_color_red;
  c_738834.hdr.grayed = 0;
@@ -2895,8 +2868,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_738834, r_73767, ((closureN
 }
 
 static void __lambda_1455(void *data, int argc, object self_732071, object r_73763) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738836;
 c_738836.hdr.mark = gc_color_red;
  c_738836.hdr.grayed = 0;
@@ -2915,8 +2887,7 @@ return_closcall1(data,(closure)&c_738836,  r_73763);;
 }
 
 static void __lambda_1454(void *data, int argc, object self_732072, object tmp_73303) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738838;
 c_738838.hdr.mark = gc_color_red;
  c_738838.hdr.grayed = 0;
@@ -2947,8 +2918,7 @@ return_closcall1(data,(closure)&c_738838,  &c_738854);;
 }
 
 static void __lambda_1453(void *data, int argc, object self_732073, object r_73659) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73659) ){ 
+  if( !eq(boolean_f, r_73659) ){ 
   
 closureN_type c_738856;
 c_738856.hdr.mark = gc_color_red;
@@ -2984,8 +2954,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_738879, ((closureN)self_732073)->e
 }
 
 static void __lambda_1452(void *data, int argc, object self_732074, object r_73663) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73663) ){ 
+  if( !eq(boolean_f, r_73663) ){ 
   
 closureN_type c_738881;
 c_738881.hdr.mark = gc_color_red;
@@ -3021,8 +2990,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_738916, ((closureN)self_732074)->e
 }
 
 static void __lambda_1451(void *data, int argc, object self_732075, object r_73671) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73671) ){ 
+  if( !eq(boolean_f, r_73671) ){ 
   
 closureN_type c_738918;
 c_738918.hdr.mark = gc_color_red;
@@ -3060,8 +3028,7 @@ return_closcall2(data,  __glo_if_127,  &c_739019, ((closureN)self_732075)->elts[
 }
 
 static void __lambda_1450(void *data, int argc, object self_732076, object r_73695) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73695) ){ 
+  if( !eq(boolean_f, r_73695) ){ 
   
 closureN_type c_739021;
 c_739021.hdr.mark = gc_color_red;
@@ -3097,8 +3064,7 @@ return_closcall2(data,  __glo_cell_127,  &c_739041, ((closureN)self_732076)->elt
 }
 
 static void __lambda_1449(void *data, int argc, object self_732077, object r_73699) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73699) ){ 
+  if( !eq(boolean_f, r_73699) ){ 
   
 closureN_type c_739043;
 c_739043.hdr.mark = gc_color_red;
@@ -3134,8 +3100,7 @@ return_closcall2(data,  __glo_cell_91get_127,  &c_739069, ((closureN)self_732077
 }
 
 static void __lambda_1448(void *data, int argc, object self_732078, object r_73705) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73705) ){ 
+  if( !eq(boolean_f, r_73705) ){ 
   
 closureN_type c_739071;
 c_739071.hdr.mark = gc_color_red;
@@ -3171,8 +3136,7 @@ return_closcall2(data,  __glo_set_91cell_67_127,  &c_739097, ((closureN)self_732
 }
 
 static void __lambda_1447(void *data, int argc, object self_732079, object r_73711) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73711) ){ 
+  if( !eq(boolean_f, r_73711) ){ 
   
 closureN_type c_739099;
 c_739099.hdr.mark = gc_color_red;
@@ -3208,8 +3172,7 @@ return_closcall2(data,  __glo_app_127,  &c_739139, ((closureN)self_732079)->elts
 }
 
 static void __lambda_1446(void *data, int argc, object self_732080, object r_73720) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73720) ){ 
+  if( !eq(boolean_f, r_73720) ){ 
   
 closureN_type c_739141;
 c_739141.hdr.mark = gc_color_red;
@@ -3244,15 +3207,13 @@ return_closcall0(data,(closure)&c_739355);}
 }
 
 static void __lambda_1445(void *data, int argc, object self_732081) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_string(c_739358, "unhandled exp: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732081)->elts[1], &c_739358, ((closureN)self_732081)->elts[0]);; 
 }
 
 static void __lambda_1444(void *data, int argc, object self_732082) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739143;
 c_739143.hdr.mark = gc_color_red;
  c_739143.hdr.grayed = 0;
@@ -3271,8 +3232,7 @@ return_closcall1(data,(closure)&c_739143,  car(((closureN)self_732082)->elts[2])
 }
 
 static void __lambda_1443(void *data, int argc, object self_732083, object r_73721) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739145;
 c_739145.hdr.mark = gc_color_red;
  c_739145.hdr.grayed = 0;
@@ -3291,8 +3251,7 @@ return_closcall1(data,(closure)&c_739145,  cdr(((closureN)self_732083)->elts[2])
 }
 
 static void __lambda_1442(void *data, int argc, object self_732084, object r_73762) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739147;
 c_739147.hdr.mark = gc_color_red;
  c_739147.hdr.grayed = 0;
@@ -3311,8 +3270,7 @@ return_closcall3(data,  __glo_map,  &c_739147, cell_get(((closureN)self_732084)-
 }
 
 static void __lambda_1441(void *data, int argc, object self_732085, object r_73722) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739149;
 c_739149.hdr.mark = gc_color_red;
  c_739149.hdr.grayed = 0;
@@ -3330,8 +3288,7 @@ return_closcall2(data,(closure)&c_739149,  ((closureN)self_732085)->elts[4], r_7
 }
 
 static void __lambda_1440(void *data, int argc, object self_732086, object fn_73292, object args_73291) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739151;
 c_739151.hdr.mark = gc_color_red;
  c_739151.hdr.grayed = 0;
@@ -3351,8 +3308,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_739151, fn_73292);;
 }
 
 static void __lambda_1439(void *data, int argc, object self_732087, object r_73723) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, r_73723) ){ 
+  if( !eq(boolean_f, r_73723) ){ 
   
 closureN_type c_739153;
 c_739153.hdr.mark = gc_color_red;
@@ -3388,8 +3344,7 @@ return_closcall2(data,  cell_get(((closureN)self_732087)->elts[1]),  &c_739305, 
 }
 
 static void __lambda_1438(void *data, int argc, object self_732088, object r_73755) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739307;
 c_739307.hdr.mark = gc_color_red;
  c_739307.hdr.grayed = 0;
@@ -3405,8 +3360,7 @@ return_closcall1(data,(closure)&c_739307,  r_73755);;
 }
 
 static void __lambda_1437(void *data, int argc, object self_732089, object f_73293) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739309;
 c_739309.hdr.mark = gc_color_red;
  c_739309.hdr.grayed = 0;
@@ -3423,8 +3377,7 @@ return_closcall1(data,(closure)&c_739309,  quote__75closure_91ref);;
 }
 
 static void __lambda_1436(void *data, int argc, object self_732090, object r_73758) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739311;
 c_739311.hdr.mark = gc_color_red;
  c_739311.hdr.grayed = 0;
@@ -3442,8 +3395,7 @@ return_closcall1(data,(closure)&c_739311,  nil);;
 }
 
 static void __lambda_1435(void *data, int argc, object self_732091, object r_73761) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739313;
 c_739313.hdr.mark = gc_color_red;
  c_739313.hdr.grayed = 0;
@@ -3465,8 +3417,7 @@ return_closcall1(data,(closure)&c_739313,  &c_739341);;
 }
 
 static void __lambda_1434(void *data, int argc, object self_732092, object r_73760) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739315;
 c_739315.hdr.mark = gc_color_red;
  c_739315.hdr.grayed = 0;
@@ -3486,8 +3437,7 @@ return_closcall1(data,(closure)&c_739315,  &c_739337);;
 }
 
 static void __lambda_1433(void *data, int argc, object self_732093, object r_73759) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739317;
 c_739317.hdr.mark = gc_color_red;
  c_739317.hdr.grayed = 0;
@@ -3506,8 +3456,7 @@ return_closcall1(data,(closure)&c_739317,  &c_739333);;
 }
 
 static void __lambda_1432(void *data, int argc, object self_732094, object r_73756) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739319;
 c_739319.hdr.mark = gc_color_red;
  c_739319.hdr.grayed = 0;
@@ -3525,15 +3474,13 @@ return_closcall1(data,(closure)&c_739319,  &c_739328);;
 }
 
 static void __lambda_1431(void *data, int argc, object self_732095, object r_73757) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739324,((closureN)self_732095)->elts[1], r_73757);
 return_closcall1(data,  ((closureN)self_732095)->elts[0],  &c_739324);; 
 }
 
 static void __lambda_1430(void *data, int argc, object self_732096, object r_73724) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739155;
 c_739155.hdr.mark = gc_color_red;
  c_739155.hdr.grayed = 0;
@@ -3553,8 +3500,7 @@ return_closcall1(data,(closure)&c_739155,  r_73724);;
 }
 
 static void __lambda_1429(void *data, int argc, object self_732097, object body_73294) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739157;
 c_739157.hdr.mark = gc_color_red;
  c_739157.hdr.grayed = 0;
@@ -3575,8 +3521,7 @@ return_closcall2(data,  __glo_free_91vars,  &c_739157, body_73294);;
 }
 
 static void __lambda_1428(void *data, int argc, object self_732098, object r_73753) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739159;
 c_739159.hdr.mark = gc_color_red;
  c_739159.hdr.grayed = 0;
@@ -3598,8 +3543,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_739159, ((closure
 }
 
 static void __lambda_1427(void *data, int argc, object self_732099, object r_73754) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739161;
 c_739161.hdr.mark = gc_color_red;
  c_739161.hdr.grayed = 0;
@@ -3620,8 +3564,7 @@ return_closcall3(data,  __glo_difference,  &c_739161, ((closureN)self_732099)->e
 }
 
 static void __lambda_1426(void *data, int argc, object self_732100, object r_73752) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739163;
 c_739163.hdr.mark = gc_color_red;
  c_739163.hdr.grayed = 0;
@@ -3641,8 +3584,7 @@ return_closcall3(data,  __glo_difference,  &c_739163, r_73752, ((closureN)self_7
 }
 
 static void __lambda_1425(void *data, int argc, object self_732101, object r_73725) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739165;
 c_739165.hdr.mark = gc_color_red;
  c_739165.hdr.grayed = 0;
@@ -3662,8 +3604,7 @@ return_closcall1(data,(closure)&c_739165,  r_73725);;
 }
 
 static void __lambda_1424(void *data, int argc, object self_732102, object new_91free_91vars_73295) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739167;
 c_739167.hdr.mark = gc_color_red;
  c_739167.hdr.grayed = 0;
@@ -3686,8 +3627,7 @@ return_closcall1(data,(closure)&c_739167,  &c_739296);;
 }
 
 static void __lambda_1423(void *data, int argc, object self_732103, object r_73751) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739169;
 c_739169.hdr.mark = gc_color_red;
  c_739169.hdr.grayed = 0;
@@ -3710,8 +3650,7 @@ return_closcall1(data,(closure)&c_739169,  __num_gt(data, r_73751, &c_739293));;
 }
 
 static void __lambda_1422(void *data, int argc, object self_732104, object r_73726) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739171;
 c_739171.hdr.mark = gc_color_red;
  c_739171.hdr.grayed = 0;
@@ -3732,8 +3671,7 @@ return_closcall1(data,(closure)&c_739171,  r_73726);;
 }
 
 static void __lambda_1421(void *data, int argc, object self_732105, object new_91free_91vars_127_73296) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739173;
 c_739173.hdr.mark = gc_color_red;
  c_739173.hdr.grayed = 0;
@@ -3755,8 +3693,7 @@ return_closcall0(data,(closure)&c_739173);;
 }
 
 static void __lambda_1420(void *data, int argc, object self_732106) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, ((closureN)self_732106)->elts[7]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732106)->elts[7]) ){ 
   
 closureN_type c_739176;
 c_739176.hdr.mark = gc_color_red;
@@ -3796,8 +3733,7 @@ return_closcall1(data,(closure)&c_739263,  quote_lambda);}
 }
 
 static void __lambda_1419(void *data, int argc, object self_732107, object r_73747) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739265;
 c_739265.hdr.mark = gc_color_red;
  c_739265.hdr.grayed = 0;
@@ -3816,8 +3752,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_739265, ((closureN)self_
 }
 
 static void __lambda_1418(void *data, int argc, object self_732108, object r_73749) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739267;
 c_739267.hdr.mark = gc_color_red;
  c_739267.hdr.grayed = 0;
@@ -3835,8 +3770,7 @@ return_closcall3(data,  __glo_map,  &c_739267, cell_get(((closureN)self_732108)-
 }
 
 static void __lambda_1417(void *data, int argc, object self_732109, object r_73750) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739269;
 c_739269.hdr.mark = gc_color_red;
  c_739269.hdr.grayed = 0;
@@ -3855,8 +3789,7 @@ return_closcall1(data,(closure)&c_739269,  &c_739284);;
 }
 
 static void __lambda_1416(void *data, int argc, object self_732110, object r_73748) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739271;
 c_739271.hdr.mark = gc_color_red;
  c_739271.hdr.grayed = 0;
@@ -3874,15 +3807,13 @@ return_closcall1(data,(closure)&c_739271,  &c_739280);;
 }
 
 static void __lambda_1415(void *data, int argc, object self_732111, object r_73746) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739276,r_73746, ((closureN)self_732111)->elts[0]);
 return_closcall1(data,  ((closureN)self_732111)->elts[1],  &c_739276);; 
 }
 
 static void __lambda_1414(void *data, int argc, object self_732112, object r_73745) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739178;
 c_739178.hdr.mark = gc_color_red;
  c_739178.hdr.grayed = 0;
@@ -3903,8 +3834,7 @@ return_closcall2(data,  __glo_gensym,  &c_739178, r_73745);;
 }
 
 static void __lambda_1413(void *data, int argc, object self_732113, object r_73727) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739180;
 c_739180.hdr.mark = gc_color_red;
  c_739180.hdr.grayed = 0;
@@ -3925,8 +3855,7 @@ return_closcall1(data,(closure)&c_739180,  r_73727);;
 }
 
 static void __lambda_1412(void *data, int argc, object self_732114, object new_91self_91var_73297) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739182;
 c_739182.hdr.mark = gc_color_red;
  c_739182.hdr.grayed = 0;
@@ -3948,8 +3877,7 @@ return_closcall0(data,(closure)&c_739182);;
 }
 
 static void __lambda_1411(void *data, int argc, object self_732115) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739184;
 c_739184.hdr.mark = gc_color_red;
  c_739184.hdr.grayed = 0;
@@ -3971,8 +3899,7 @@ return_closcall1(data,(closure)&c_739184,  quote__75closure);;
 }
 
 static void __lambda_1410(void *data, int argc, object self_732116, object r_73729) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739186;
 c_739186.hdr.mark = gc_color_red;
  c_739186.hdr.grayed = 0;
@@ -3995,8 +3922,7 @@ return_closcall1(data,(closure)&c_739186,  quote_lambda);;
 }
 
 static void __lambda_1409(void *data, int argc, object self_732117, object r_73735) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739188;
 c_739188.hdr.mark = gc_color_red;
  c_739188.hdr.grayed = 0;
@@ -4020,8 +3946,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_739188, ((closure
 }
 
 static void __lambda_1408(void *data, int argc, object self_732118, object r_73744) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739190;
 c_739190.hdr.mark = gc_color_red;
  c_739190.hdr.grayed = 0;
@@ -4047,8 +3972,7 @@ return_closcall1(data,(closure)&c_739190,  &c_739259);;
 }
 
 static void __lambda_1407(void *data, int argc, object self_732119, object r_73742) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739192;
 c_739192.hdr.mark = gc_color_red;
  c_739192.hdr.grayed = 0;
@@ -4072,8 +3996,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_739192, ((closureN)se
 }
 
 static void __lambda_1406(void *data, int argc, object self_732120, object r_73743) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739194;
 c_739194.hdr.mark = gc_color_red;
  c_739194.hdr.grayed = 0;
@@ -4096,8 +4019,7 @@ return_closcall3(data,  __glo_list_91_125lambda_91formals,  &c_739194, ((closure
 }
 
 static void __lambda_1405(void *data, int argc, object self_732121, object r_73737) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739196;
 c_739196.hdr.mark = gc_color_red;
  c_739196.hdr.grayed = 0;
@@ -4120,8 +4042,7 @@ return_closcall1(data,(closure)&c_739196,  car(((closureN)self_732121)->elts[1])
 }
 
 static void __lambda_1404(void *data, int argc, object self_732122, object r_73741) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739201;
 c_739201.hdr.mark = gc_color_red;
  c_739201.hdr.grayed = 0;
@@ -4142,8 +4063,7 @@ return_closcall4(data,  cell_get(((closureN)self_732122)->elts[2]),  &c_739201, 
 }
 
 static void __lambda_1403(void *data, int argc, object self_732123, object r_73739) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739203;
 c_739203.hdr.mark = gc_color_red;
  c_739203.hdr.grayed = 0;
@@ -4165,8 +4085,7 @@ return_closcall1(data,(closure)&c_739203,  nil);;
 }
 
 static void __lambda_1402(void *data, int argc, object self_732124, object r_73740) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739205;
 c_739205.hdr.mark = gc_color_red;
  c_739205.hdr.grayed = 0;
@@ -4189,8 +4108,7 @@ return_closcall1(data,(closure)&c_739205,  &c_739248);;
 }
 
 static void __lambda_1401(void *data, int argc, object self_732125, object r_73738) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739207;
 c_739207.hdr.mark = gc_color_red;
  c_739207.hdr.grayed = 0;
@@ -4212,8 +4130,7 @@ return_closcall1(data,(closure)&c_739207,  &c_739244);;
 }
 
 static void __lambda_1400(void *data, int argc, object self_732126, object r_73736) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739209;
 c_739209.hdr.mark = gc_color_red;
  c_739209.hdr.grayed = 0;
@@ -4234,8 +4151,7 @@ return_closcall1(data,(closure)&c_739209,  &c_739240);;
 }
 
 static void __lambda_1399(void *data, int argc, object self_732127, object r_73731) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739211;
 c_739211.hdr.mark = gc_color_red;
  c_739211.hdr.grayed = 0;
@@ -4265,13 +4181,11 @@ return_closcall1(data,(closure)&c_739211,  &c_739233);;
 }
 
 static void __lambda_1398(void *data, int argc, object self_732128, object k_73734, object v_73298) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-return_closcall2(data,  cell_get(((closureN)self_732128)->elts[0]),  k_73734, v_73298);; 
+  return_closcall2(data,  cell_get(((closureN)self_732128)->elts[0]),  k_73734, v_73298);; 
 }
 
 static void __lambda_1397(void *data, int argc, object self_732129, object r_73733) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739213;
 c_739213.hdr.mark = gc_color_red;
  c_739213.hdr.grayed = 0;
@@ -4289,8 +4203,7 @@ return_closcall3(data,  __glo_map,  &c_739213, r_73733, ((closureN)self_732129)-
 }
 
 static void __lambda_1396(void *data, int argc, object self_732130, object r_73732) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739215;
 c_739215.hdr.mark = gc_color_red;
  c_739215.hdr.grayed = 0;
@@ -4309,8 +4222,7 @@ return_closcall1(data,(closure)&c_739215,  &c_739230);;
 }
 
 static void __lambda_1395(void *data, int argc, object self_732131, object r_73730) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739217;
 c_739217.hdr.mark = gc_color_red;
  c_739217.hdr.grayed = 0;
@@ -4328,15 +4240,13 @@ return_closcall1(data,(closure)&c_739217,  &c_739226);;
 }
 
 static void __lambda_1394(void *data, int argc, object self_732132, object r_73728) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739222,r_73728, ((closureN)self_732132)->elts[0]);
 return_closcall1(data,  ((closureN)self_732132)->elts[1],  &c_739222);; 
 }
 
 static void __lambda_1393(void *data, int argc, object self_732133) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739101;
 c_739101.hdr.mark = gc_color_red;
  c_739101.hdr.grayed = 0;
@@ -4353,8 +4263,7 @@ return_closcall1(data,(closure)&c_739101,  quote_set_91cell_67);;
 }
 
 static void __lambda_1392(void *data, int argc, object self_732134, object r_73712) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739103;
 c_739103.hdr.mark = gc_color_red;
  c_739103.hdr.grayed = 0;
@@ -4372,8 +4281,7 @@ return_closcall2(data,  __glo_set_91cell_67_91_125cell,  &c_739103, ((closureN)s
 }
 
 static void __lambda_1391(void *data, int argc, object self_732135, object r_73719) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739108;
 c_739108.hdr.mark = gc_color_red;
  c_739108.hdr.grayed = 0;
@@ -4391,8 +4299,7 @@ return_closcall2(data,  cell_get(((closureN)self_732135)->elts[0]),  &c_739108, 
 }
 
 static void __lambda_1390(void *data, int argc, object self_732136, object r_73714) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739110;
 c_739110.hdr.mark = gc_color_red;
  c_739110.hdr.grayed = 0;
@@ -4410,8 +4317,7 @@ return_closcall2(data,  __glo_set_91cell_67_91_125value,  &c_739110, ((closureN)
 }
 
 static void __lambda_1389(void *data, int argc, object self_732137, object r_73718) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739115;
 c_739115.hdr.mark = gc_color_red;
  c_739115.hdr.grayed = 0;
@@ -4428,8 +4334,7 @@ return_closcall2(data,  cell_get(((closureN)self_732137)->elts[0]),  &c_739115, 
 }
 
 static void __lambda_1388(void *data, int argc, object self_732138, object r_73716) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739117;
 c_739117.hdr.mark = gc_color_red;
  c_739117.hdr.grayed = 0;
@@ -4447,8 +4352,7 @@ return_closcall1(data,(closure)&c_739117,  nil);;
 }
 
 static void __lambda_1387(void *data, int argc, object self_732139, object r_73717) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739119;
 c_739119.hdr.mark = gc_color_red;
  c_739119.hdr.grayed = 0;
@@ -4467,8 +4371,7 @@ return_closcall1(data,(closure)&c_739119,  &c_739134);;
 }
 
 static void __lambda_1386(void *data, int argc, object self_732140, object r_73715) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739121;
 c_739121.hdr.mark = gc_color_red;
  c_739121.hdr.grayed = 0;
@@ -4486,15 +4389,13 @@ return_closcall1(data,(closure)&c_739121,  &c_739130);;
 }
 
 static void __lambda_1385(void *data, int argc, object self_732141, object r_73713) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739126,((closureN)self_732141)->elts[1], r_73713);
 return_closcall1(data,  ((closureN)self_732141)->elts[0],  &c_739126);; 
 }
 
 static void __lambda_1384(void *data, int argc, object self_732142) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739073;
 c_739073.hdr.mark = gc_color_red;
  c_739073.hdr.grayed = 0;
@@ -4511,8 +4412,7 @@ return_closcall1(data,(closure)&c_739073,  quote_cell_91get);;
 }
 
 static void __lambda_1383(void *data, int argc, object self_732143, object r_73706) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739075;
 c_739075.hdr.mark = gc_color_red;
  c_739075.hdr.grayed = 0;
@@ -4529,8 +4429,7 @@ return_closcall2(data,  __glo_cell_91get_91_125cell,  &c_739075, ((closureN)self
 }
 
 static void __lambda_1382(void *data, int argc, object self_732144, object r_73710) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739080;
 c_739080.hdr.mark = gc_color_red;
  c_739080.hdr.grayed = 0;
@@ -4546,8 +4445,7 @@ return_closcall2(data,  cell_get(((closureN)self_732144)->elts[0]),  &c_739080, 
 }
 
 static void __lambda_1381(void *data, int argc, object self_732145, object r_73708) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739082;
 c_739082.hdr.mark = gc_color_red;
  c_739082.hdr.grayed = 0;
@@ -4564,8 +4462,7 @@ return_closcall1(data,(closure)&c_739082,  nil);;
 }
 
 static void __lambda_1380(void *data, int argc, object self_732146, object r_73709) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739084;
 c_739084.hdr.mark = gc_color_red;
  c_739084.hdr.grayed = 0;
@@ -4583,15 +4480,13 @@ return_closcall1(data,(closure)&c_739084,  &c_739093);;
 }
 
 static void __lambda_1379(void *data, int argc, object self_732147, object r_73707) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739089,((closureN)self_732147)->elts[1], r_73707);
 return_closcall1(data,  ((closureN)self_732147)->elts[0],  &c_739089);; 
 }
 
 static void __lambda_1378(void *data, int argc, object self_732148) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739045;
 c_739045.hdr.mark = gc_color_red;
  c_739045.hdr.grayed = 0;
@@ -4608,8 +4503,7 @@ return_closcall1(data,(closure)&c_739045,  quote_cell);;
 }
 
 static void __lambda_1377(void *data, int argc, object self_732149, object r_73700) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739047;
 c_739047.hdr.mark = gc_color_red;
  c_739047.hdr.grayed = 0;
@@ -4626,8 +4520,7 @@ return_closcall2(data,  __glo_cell_91_125value,  &c_739047, ((closureN)self_7321
 }
 
 static void __lambda_1376(void *data, int argc, object self_732150, object r_73704) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739052;
 c_739052.hdr.mark = gc_color_red;
  c_739052.hdr.grayed = 0;
@@ -4643,8 +4536,7 @@ return_closcall2(data,  cell_get(((closureN)self_732150)->elts[0]),  &c_739052, 
 }
 
 static void __lambda_1375(void *data, int argc, object self_732151, object r_73702) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739054;
 c_739054.hdr.mark = gc_color_red;
  c_739054.hdr.grayed = 0;
@@ -4661,8 +4553,7 @@ return_closcall1(data,(closure)&c_739054,  nil);;
 }
 
 static void __lambda_1374(void *data, int argc, object self_732152, object r_73703) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739056;
 c_739056.hdr.mark = gc_color_red;
  c_739056.hdr.grayed = 0;
@@ -4680,15 +4571,13 @@ return_closcall1(data,(closure)&c_739056,  &c_739065);;
 }
 
 static void __lambda_1373(void *data, int argc, object self_732153, object r_73701) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739061,((closureN)self_732153)->elts[1], r_73701);
 return_closcall1(data,  ((closureN)self_732153)->elts[0],  &c_739061);; 
 }
 
 static void __lambda_1372(void *data, int argc, object self_732154) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739023;
 c_739023.hdr.mark = gc_color_red;
  c_739023.hdr.grayed = 0;
@@ -4705,8 +4594,7 @@ return_closcall1(data,(closure)&c_739023,  quote__if);;
 }
 
 static void __lambda_1371(void *data, int argc, object self_732155, object r_73696) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739025;
 c_739025.hdr.mark = gc_color_red;
  c_739025.hdr.grayed = 0;
@@ -4723,8 +4611,7 @@ return_closcall1(data,(closure)&c_739025,  cdr(((closureN)self_732155)->elts[1])
 }
 
 static void __lambda_1370(void *data, int argc, object self_732156, object r_73698) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_739027;
 c_739027.hdr.mark = gc_color_red;
  c_739027.hdr.grayed = 0;
@@ -4740,15 +4627,13 @@ return_closcall3(data,  __glo_map,  &c_739027, cell_get(((closureN)self_732156)-
 }
 
 static void __lambda_1369(void *data, int argc, object self_732157, object r_73697) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_739032,((closureN)self_732157)->elts[1], r_73697);
 return_closcall1(data,  ((closureN)self_732157)->elts[0],  &c_739032);; 
 }
 
 static void __lambda_1368(void *data, int argc, object self_732158) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738920;
 c_738920.hdr.mark = gc_color_red;
  c_738920.hdr.grayed = 0;
@@ -4767,8 +4652,7 @@ return_closcall1(data,(closure)&c_738920,  quote_self);;
 }
 
 static void __lambda_1367(void *data, int argc, object self_732159, object r_73694) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738922;
 c_738922.hdr.mark = gc_color_red;
  c_738922.hdr.grayed = 0;
@@ -4787,8 +4671,7 @@ return_closcall2(data,  __glo_gensym,  &c_738922, r_73694);;
 }
 
 static void __lambda_1366(void *data, int argc, object self_732160, object r_73672) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738924;
 c_738924.hdr.mark = gc_color_red;
  c_738924.hdr.grayed = 0;
@@ -4807,8 +4690,7 @@ return_closcall1(data,(closure)&c_738924,  r_73672);;
 }
 
 static void __lambda_1365(void *data, int argc, object self_732161, object new_91self_91var_73299) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738926;
 c_738926.hdr.mark = gc_color_red;
  c_738926.hdr.grayed = 0;
@@ -4828,8 +4710,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_738926, ((closureN)self_7321
 }
 
 static void __lambda_1364(void *data, int argc, object self_732162, object r_73673) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738928;
 c_738928.hdr.mark = gc_color_red;
  c_738928.hdr.grayed = 0;
@@ -4849,8 +4730,7 @@ return_closcall1(data,(closure)&c_738928,  r_73673);;
 }
 
 static void __lambda_1363(void *data, int argc, object self_732163, object body_73300) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738930;
 c_738930.hdr.mark = gc_color_red;
  c_738930.hdr.grayed = 0;
@@ -4871,8 +4751,7 @@ return_closcall2(data,  __glo_free_91vars,  &c_738930, body_73300);;
 }
 
 static void __lambda_1362(void *data, int argc, object self_732164, object r_73692) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738932;
 c_738932.hdr.mark = gc_color_red;
  c_738932.hdr.grayed = 0;
@@ -4894,8 +4773,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738932, ((closure
 }
 
 static void __lambda_1361(void *data, int argc, object self_732165, object r_73693) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738934;
 c_738934.hdr.mark = gc_color_red;
  c_738934.hdr.grayed = 0;
@@ -4916,8 +4794,7 @@ return_closcall3(data,  __glo_difference,  &c_738934, ((closureN)self_732165)->e
 }
 
 static void __lambda_1360(void *data, int argc, object self_732166, object r_73691) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738936;
 c_738936.hdr.mark = gc_color_red;
  c_738936.hdr.grayed = 0;
@@ -4937,8 +4814,7 @@ return_closcall3(data,  __glo_difference,  &c_738936, r_73691, ((closureN)self_7
 }
 
 static void __lambda_1359(void *data, int argc, object self_732167, object r_73674) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738938;
 c_738938.hdr.mark = gc_color_red;
  c_738938.hdr.grayed = 0;
@@ -4958,8 +4834,7 @@ return_closcall1(data,(closure)&c_738938,  r_73674);;
 }
 
 static void __lambda_1358(void *data, int argc, object self_732168, object new_91free_91vars_73301) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738940;
 c_738940.hdr.mark = gc_color_red;
  c_738940.hdr.grayed = 0;
@@ -4980,8 +4855,7 @@ return_closcall0(data,(closure)&c_738940);;
 }
 
 static void __lambda_1357(void *data, int argc, object self_732169) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738942;
 c_738942.hdr.mark = gc_color_red;
  c_738942.hdr.grayed = 0;
@@ -5002,8 +4876,7 @@ return_closcall1(data,(closure)&c_738942,  quote__75closure);;
 }
 
 static void __lambda_1356(void *data, int argc, object self_732170, object r_73675) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738944;
 c_738944.hdr.mark = gc_color_red;
  c_738944.hdr.grayed = 0;
@@ -5025,8 +4898,7 @@ return_closcall1(data,(closure)&c_738944,  quote_lambda);;
 }
 
 static void __lambda_1355(void *data, int argc, object self_732171, object r_73681) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738946;
 c_738946.hdr.mark = gc_color_red;
  c_738946.hdr.grayed = 0;
@@ -5049,8 +4921,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_738946, ((closure
 }
 
 static void __lambda_1354(void *data, int argc, object self_732172, object r_73690) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738948;
 c_738948.hdr.mark = gc_color_red;
  c_738948.hdr.grayed = 0;
@@ -5075,8 +4946,7 @@ return_closcall1(data,(closure)&c_738948,  &c_739011);;
 }
 
 static void __lambda_1353(void *data, int argc, object self_732173, object r_73688) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738950;
 c_738950.hdr.mark = gc_color_red;
  c_738950.hdr.grayed = 0;
@@ -5099,8 +4969,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_738950, ((closureN)se
 }
 
 static void __lambda_1352(void *data, int argc, object self_732174, object r_73689) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738952;
 c_738952.hdr.mark = gc_color_red;
  c_738952.hdr.grayed = 0;
@@ -5122,8 +4991,7 @@ return_closcall3(data,  __glo_list_91_125lambda_91formals,  &c_738952, ((closure
 }
 
 static void __lambda_1351(void *data, int argc, object self_732175, object r_73683) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738954;
 c_738954.hdr.mark = gc_color_red;
  c_738954.hdr.grayed = 0;
@@ -5145,8 +5013,7 @@ return_closcall1(data,(closure)&c_738954,  car(((closureN)self_732175)->elts[0])
 }
 
 static void __lambda_1350(void *data, int argc, object self_732176, object r_73687) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738959;
 c_738959.hdr.mark = gc_color_red;
  c_738959.hdr.grayed = 0;
@@ -5166,8 +5033,7 @@ return_closcall4(data,  cell_get(((closureN)self_732176)->elts[1]),  &c_738959, 
 }
 
 static void __lambda_1349(void *data, int argc, object self_732177, object r_73685) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738961;
 c_738961.hdr.mark = gc_color_red;
  c_738961.hdr.grayed = 0;
@@ -5188,8 +5054,7 @@ return_closcall1(data,(closure)&c_738961,  nil);;
 }
 
 static void __lambda_1348(void *data, int argc, object self_732178, object r_73686) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738963;
 c_738963.hdr.mark = gc_color_red;
  c_738963.hdr.grayed = 0;
@@ -5211,8 +5076,7 @@ return_closcall1(data,(closure)&c_738963,  &c_739000);;
 }
 
 static void __lambda_1347(void *data, int argc, object self_732179, object r_73684) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738965;
 c_738965.hdr.mark = gc_color_red;
  c_738965.hdr.grayed = 0;
@@ -5233,8 +5097,7 @@ return_closcall1(data,(closure)&c_738965,  &c_738996);;
 }
 
 static void __lambda_1346(void *data, int argc, object self_732180, object r_73682) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738967;
 c_738967.hdr.mark = gc_color_red;
  c_738967.hdr.grayed = 0;
@@ -5254,8 +5117,7 @@ return_closcall1(data,(closure)&c_738967,  &c_738992);;
 }
 
 static void __lambda_1345(void *data, int argc, object self_732181, object r_73677) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738969;
 c_738969.hdr.mark = gc_color_red;
  c_738969.hdr.grayed = 0;
@@ -5284,13 +5146,11 @@ return_closcall1(data,(closure)&c_738969,  &c_738985);;
 }
 
 static void __lambda_1344(void *data, int argc, object self_732182, object k_73680, object v_73302) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-return_closcall2(data,  cell_get(((closureN)self_732182)->elts[0]),  k_73680, v_73302);; 
+  return_closcall2(data,  cell_get(((closureN)self_732182)->elts[0]),  k_73680, v_73302);; 
 }
 
 static void __lambda_1343(void *data, int argc, object self_732183, object r_73679) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738971;
 c_738971.hdr.mark = gc_color_red;
  c_738971.hdr.grayed = 0;
@@ -5307,8 +5167,7 @@ return_closcall3(data,  __glo_map,  &c_738971, r_73679, ((closureN)self_732183)-
 }
 
 static void __lambda_1342(void *data, int argc, object self_732184, object r_73678) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738973;
 c_738973.hdr.mark = gc_color_red;
  c_738973.hdr.grayed = 0;
@@ -5326,15 +5185,13 @@ return_closcall1(data,(closure)&c_738973,  &c_738982);;
 }
 
 static void __lambda_1341(void *data, int argc, object self_732185, object r_73676) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_738978,((closureN)self_732185)->elts[1], r_73676);
 return_closcall1(data,  ((closureN)self_732185)->elts[0],  &c_738978);; 
 }
 
 static void __lambda_1340(void *data, int argc, object self_732186) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738883;
 c_738883.hdr.mark = gc_color_red;
  c_738883.hdr.grayed = 0;
@@ -5351,8 +5208,7 @@ return_closcall1(data,(closure)&c_738883,  quote_set_67);;
 }
 
 static void __lambda_1339(void *data, int argc, object self_732187, object r_73664) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738885;
 c_738885.hdr.mark = gc_color_red;
  c_738885.hdr.grayed = 0;
@@ -5370,8 +5226,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_738885, ((closureN)self_7321
 }
 
 static void __lambda_1338(void *data, int argc, object self_732188, object r_73666) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738887;
 c_738887.hdr.mark = gc_color_red;
  c_738887.hdr.grayed = 0;
@@ -5389,8 +5244,7 @@ return_closcall2(data,  __glo_set_67_91_125exp,  &c_738887, ((closureN)self_7321
 }
 
 static void __lambda_1337(void *data, int argc, object self_732189, object r_73670) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738892;
 c_738892.hdr.mark = gc_color_red;
  c_738892.hdr.grayed = 0;
@@ -5407,8 +5261,7 @@ return_closcall2(data,  cell_get(((closureN)self_732189)->elts[0]),  &c_738892, 
 }
 
 static void __lambda_1336(void *data, int argc, object self_732190, object r_73668) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738894;
 c_738894.hdr.mark = gc_color_red;
  c_738894.hdr.grayed = 0;
@@ -5426,8 +5279,7 @@ return_closcall1(data,(closure)&c_738894,  nil);;
 }
 
 static void __lambda_1335(void *data, int argc, object self_732191, object r_73669) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738896;
 c_738896.hdr.mark = gc_color_red;
  c_738896.hdr.grayed = 0;
@@ -5446,8 +5298,7 @@ return_closcall1(data,(closure)&c_738896,  &c_738911);;
 }
 
 static void __lambda_1334(void *data, int argc, object self_732192, object r_73667) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738898;
 c_738898.hdr.mark = gc_color_red;
  c_738898.hdr.grayed = 0;
@@ -5465,15 +5316,13 @@ return_closcall1(data,(closure)&c_738898,  &c_738907);;
 }
 
 static void __lambda_1333(void *data, int argc, object self_732193, object r_73665) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_738903,((closureN)self_732193)->elts[1], r_73665);
 return_closcall1(data,  ((closureN)self_732193)->elts[0],  &c_738903);; 
 }
 
 static void __lambda_1332(void *data, int argc, object self_732194) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738858;
 c_738858.hdr.mark = gc_color_red;
  c_738858.hdr.grayed = 0;
@@ -5490,8 +5339,7 @@ return_closcall1(data,(closure)&c_738858,  car(((closureN)self_732194)->elts[1])
 }
 
 static void __lambda_1331(void *data, int argc, object self_732195, object r_73660) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738860;
 c_738860.hdr.mark = gc_color_red;
  c_738860.hdr.grayed = 0;
@@ -5508,8 +5356,7 @@ return_closcall1(data,(closure)&c_738860,  cdr(((closureN)self_732195)->elts[1])
 }
 
 static void __lambda_1330(void *data, int argc, object self_732196, object r_73662) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738862;
 c_738862.hdr.mark = gc_color_red;
  c_738862.hdr.grayed = 0;
@@ -5525,15 +5372,13 @@ return_closcall3(data,  __glo_map,  &c_738862, cell_get(((closureN)self_732196)-
 }
 
 static void __lambda_1329(void *data, int argc, object self_732197, object r_73661) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_738867,((closureN)self_732197)->elts[1], r_73661);
 return_closcall1(data,  ((closureN)self_732197)->elts[0],  &c_738867);; 
 }
 
 static void __lambda_1328(void *data, int argc, object self_732198, object k_73764) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, ((closureN)self_732198)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732198)->elts[1]) ){ 
   return_closcall1(data,  k_73764,  ((closureN)self_732198)->elts[1]);
 } else { 
   
@@ -5553,8 +5398,7 @@ return_closcall1(data,(closure)&c_738843,  quote__75closure);}
 }
 
 static void __lambda_1327(void *data, int argc, object self_732199, object r_73766) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738845;
 c_738845.hdr.mark = gc_color_red;
  c_738845.hdr.grayed = 0;
@@ -5570,8 +5414,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_738845, r_73766, ((closureN
 }
 
 static void __lambda_1326(void *data, int argc, object self_732200, object r_73765) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738847;
 c_738847.hdr.mark = gc_color_red;
  c_738847.hdr.grayed = 0;
@@ -5587,8 +5430,7 @@ return_closcall1(data,(closure)&c_738847,  r_73765);;
 }
 
 static void __lambda_1325(void *data, int argc, object self_732201, object tmp_73304) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, tmp_73304) ){ 
+  if( !eq(boolean_f, tmp_73304) ){ 
   return_closcall1(data,  ((closureN)self_732201)->elts[1],  tmp_73304);
 } else { 
   return_closcall2(data,  __glo_prim_91call_127,  ((closureN)self_732201)->elts[1], ((closureN)self_732201)->elts[0]);}
@@ -5596,8 +5438,7 @@ if( !eq(boolean_f, tmp_73304) ){
 }
 
 static void __lambda_1324(void *data, int argc, object self_732202) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738794;
 c_738794.hdr.mark = gc_color_red;
  c_738794.hdr.grayed = 0;
@@ -5614,8 +5455,7 @@ return_closcall3(data,  __glo_pos_91in_91list,  &c_738794, ((closureN)self_73220
 }
 
 static void __lambda_1323(void *data, int argc, object self_732203, object r_73653) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738796;
 c_738796.hdr.mark = gc_color_red;
  c_738796.hdr.grayed = 0;
@@ -5632,8 +5472,7 @@ return_closcall1(data,(closure)&c_738796,  r_73653);;
 }
 
 static void __lambda_1322(void *data, int argc, object self_732204, object i_73305) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-if( !eq(boolean_f, i_73305) ){ 
+  if( !eq(boolean_f, i_73305) ){ 
   
 closureN_type c_738798;
 c_738798.hdr.mark = gc_color_red;
@@ -5654,8 +5493,7 @@ return_closcall1(data,(closure)&c_738798,  quote__75closure_91ref);
 }
 
 static void __lambda_1321(void *data, int argc, object self_732205, object r_73654) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738800;
 c_738800.hdr.mark = gc_color_red;
  c_738800.hdr.grayed = 0;
@@ -5676,8 +5514,7 @@ return_closcall1(data,(closure)&c_738800,  &c_738823);;
 }
 
 static void __lambda_1320(void *data, int argc, object self_732206, object r_73657) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738802;
 c_738802.hdr.mark = gc_color_red;
  c_738802.hdr.grayed = 0;
@@ -5695,8 +5532,7 @@ return_closcall1(data,(closure)&c_738802,  nil);;
 }
 
 static void __lambda_1319(void *data, int argc, object self_732207, object r_73658) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738804;
 c_738804.hdr.mark = gc_color_red;
  c_738804.hdr.grayed = 0;
@@ -5715,8 +5551,7 @@ return_closcall1(data,(closure)&c_738804,  &c_738819);;
 }
 
 static void __lambda_1318(void *data, int argc, object self_732208, object r_73656) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738806;
 c_738806.hdr.mark = gc_color_red;
  c_738806.hdr.grayed = 0;
@@ -5734,25 +5569,21 @@ return_closcall1(data,(closure)&c_738806,  &c_738815);;
 }
 
 static void __lambda_1317(void *data, int argc, object self_732209, object r_73655) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_738811,((closureN)self_732209)->elts[1], r_73655);
 return_closcall1(data,  ((closureN)self_732209)->elts[0],  &c_738811);; 
 }
 
 static void __lambda_1316(void *data, int argc, object self_732210) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-return_closcall1(data,  ((closureN)self_732210)->elts[1],  ((closureN)self_732210)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732210)->elts[1],  ((closureN)self_732210)->elts[0]);; 
 }
 
 static void __lambda_1315(void *data, int argc, object self_732211) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-return_closcall1(data,  ((closureN)self_732211)->elts[1],  ((closureN)self_732211)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732211)->elts[1],  ((closureN)self_732211)->elts[0]);; 
 }
 
 static void __lambda_1314(void *data, int argc, object self_732212, object r_73648) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738764;
 c_738764.hdr.mark = gc_color_red;
  c_738764.hdr.grayed = 0;
@@ -5769,13 +5600,11 @@ return_closcall1(data,(closure)&c_738764,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1313(void *data, int argc, object self_732213, object r_73647) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-return_closcall2(data,  cell_get(((closureN)self_732213)->elts[0]),  ((closureN)self_732213)->elts[2], ((closureN)self_732213)->elts[1]);; 
+  return_closcall2(data,  cell_get(((closureN)self_732213)->elts[0]),  ((closureN)self_732213)->elts[2], ((closureN)self_732213)->elts[1]);; 
 }
 
 static void __lambda_1312(void *data, int argc, object self_732214, object r_73645) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738720;
 c_738720.hdr.mark = gc_color_red;
  c_738720.hdr.grayed = 0;
@@ -5792,8 +5621,7 @@ return_closcall1(data,(closure)&c_738720,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1311(void *data, int argc, object self_732215, object r_73637) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738722;
 c_738722.hdr.mark = gc_color_red;
  c_738722.hdr.grayed = 0;
@@ -5810,8 +5638,7 @@ return_closcall1(data,(closure)&c_738722,  quote_lambda);;
 }
 
 static void __lambda_1310(void *data, int argc, object self_732216, object r_73638) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738724;
 c_738724.hdr.mark = gc_color_red;
  c_738724.hdr.grayed = 0;
@@ -5829,8 +5656,7 @@ return_closcall1(data,(closure)&c_738724,  nil);;
 }
 
 static void __lambda_1309(void *data, int argc, object self_732217, object r_73640) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738726;
 c_738726.hdr.mark = gc_color_red;
  c_738726.hdr.grayed = 0;
@@ -5849,8 +5675,7 @@ return_closcall1(data,(closure)&c_738726,  nil);;
 }
 
 static void __lambda_1308(void *data, int argc, object self_732218, object r_73644) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738731;
 c_738731.hdr.mark = gc_color_red;
  c_738731.hdr.grayed = 0;
@@ -5867,8 +5692,7 @@ return_closcall4(data,  cell_get(((closureN)self_732218)->elts[0]),  &c_738731, 
 }
 
 static void __lambda_1307(void *data, int argc, object self_732219, object r_73642) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738733;
 c_738733.hdr.mark = gc_color_red;
  c_738733.hdr.grayed = 0;
@@ -5886,8 +5710,7 @@ return_closcall1(data,(closure)&c_738733,  nil);;
 }
 
 static void __lambda_1306(void *data, int argc, object self_732220, object r_73643) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738735;
 c_738735.hdr.mark = gc_color_red;
  c_738735.hdr.grayed = 0;
@@ -5906,8 +5729,7 @@ return_closcall1(data,(closure)&c_738735,  &c_738750);;
 }
 
 static void __lambda_1305(void *data, int argc, object self_732221, object r_73641) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 closureN_type c_738737;
 c_738737.hdr.mark = gc_color_red;
  c_738737.hdr.grayed = 0;
@@ -5925,8 +5747,7 @@ return_closcall1(data,(closure)&c_738737,  &c_738746);;
 }
 
 static void __lambda_1304(void *data, int argc, object self_732222, object r_73639) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure-convert");
-
+  
 make_cons(c_738742,((closureN)self_732222)->elts[1], r_73639);
 return_closcall1(data,  ((closureN)self_732222)->elts[0],  &c_738742);; 
 }
@@ -5951,8 +5772,7 @@ return_closcall2(data,(closure)&c_738641,  lst_73306, &c_738709);;
 }
 
 static void __lambda_1302(void *data, int argc, object self_732223, object lst_73309, object i_73308) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738643;
 c_738643.hdr.mark = gc_color_red;
  c_738643.hdr.grayed = 0;
@@ -5970,8 +5790,7 @@ return_closcall1(data,(closure)&c_738643,  boolean_f);;
 }
 
 static void __lambda_1301(void *data, int argc, object self_732224, object loop_73310) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738645;
 c_738645.hdr.mark = gc_color_red;
  c_738645.hdr.grayed = 0;
@@ -5991,8 +5810,7 @@ return_closcall1(data,(closure)&c_738645,  &c_738708);;
 }
 
 static void __lambda_1300(void *data, int argc, object self_732225, object loop_73310) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738647;
 c_738647.hdr.mark = gc_color_red;
  c_738647.hdr.grayed = 0;
@@ -6022,8 +5840,7 @@ return_closcall1(data,(closure)&c_738647,  &c_738660);;
 }
 
 static void __lambda_1299(void *data, int argc, object self_732226, object k_73773, object lst_73312, object i_73311) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738662;
 c_738662.hdr.mark = gc_color_red;
  c_738662.hdr.grayed = 0;
@@ -6042,8 +5859,7 @@ return_closcall1(data,(closure)&c_738662,  Cyc_is_cons(lst_73312));;
 }
 
 static void __lambda_1298(void *data, int argc, object self_732227, object r_73779) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738664;
 c_738664.hdr.mark = gc_color_red;
  c_738664.hdr.grayed = 0;
@@ -6062,8 +5878,7 @@ return_closcall2(data,  __glo_not,  &c_738664, r_73779);;
 }
 
 static void __lambda_1297(void *data, int argc, object self_732228, object r_73774) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-if( !eq(boolean_f, r_73774) ){ 
+  if( !eq(boolean_f, r_73774) ){ 
   
 closureN_type c_738666;
 c_738666.hdr.mark = gc_color_red;
@@ -6097,8 +5912,7 @@ return_closcall1(data,(closure)&c_738670,  car(((closureN)self_732228)->elts[3])
 }
 
 static void __lambda_1296(void *data, int argc, object self_732229, object r_73778) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738672;
 c_738672.hdr.mark = gc_color_red;
  c_738672.hdr.grayed = 0;
@@ -6116,8 +5930,7 @@ return_closcall1(data,(closure)&c_738672,  Cyc_eq(r_73778, ((closureN)self_73222
 }
 
 static void __lambda_1295(void *data, int argc, object self_732230, object r_73775) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-if( !eq(boolean_f, r_73775) ){ 
+  if( !eq(boolean_f, r_73775) ){ 
   
 closureN_type c_738674;
 c_738674.hdr.mark = gc_color_red;
@@ -6151,8 +5964,7 @@ return_closcall0(data,(closure)&c_738679);}
 }
 
 static void __lambda_1294(void *data, int argc, object self_732231) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738681;
 c_738681.hdr.mark = gc_color_red;
  c_738681.hdr.grayed = 0;
@@ -6169,8 +5981,7 @@ return_closcall1(data,(closure)&c_738681,  cdr(((closureN)self_732231)->elts[3])
 }
 
 static void __lambda_1293(void *data, int argc, object self_732232, object r_73776) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738683;
 c_738683.hdr.mark = gc_color_red;
  c_738683.hdr.grayed = 0;
@@ -6191,23 +6002,19 @@ return_closcall1(data,(closure)&c_738683,  &c_738692);;
 }
 
 static void __lambda_1292(void *data, int argc, object self_732233, object r_73777) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-return_closcall3(data,  cell_get(((closureN)self_732233)->elts[1]),  ((closureN)self_732233)->elts[0], ((closureN)self_732233)->elts[2], r_73777);; 
+  return_closcall3(data,  cell_get(((closureN)self_732233)->elts[1]),  ((closureN)self_732233)->elts[0], ((closureN)self_732233)->elts[2], r_73777);; 
 }
 
 static void __lambda_1291(void *data, int argc, object self_732234) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-return_closcall1(data,  ((closureN)self_732234)->elts[1],  ((closureN)self_732234)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732234)->elts[1],  ((closureN)self_732234)->elts[0]);; 
 }
 
 static void __lambda_1290(void *data, int argc, object self_732235) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-return_closcall1(data,  ((closureN)self_732235)->elts[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_732235)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_1289(void *data, int argc, object self_732236, object r_73772) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-
+  
 closureN_type c_738649;
 c_738649.hdr.mark = gc_color_red;
  c_738649.hdr.grayed = 0;
@@ -6225,8 +6032,7 @@ return_closcall1(data,(closure)&c_738649,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1288(void *data, int argc, object self_732237, object r_73771) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pos-in-list");
-return_closcall3(data,  cell_get(((closureN)self_732237)->elts[2]),  ((closureN)self_732237)->elts[1], ((closureN)self_732237)->elts[3], ((closureN)self_732237)->elts[0]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732237)->elts[2]),  ((closureN)self_732237)->elts[1], ((closureN)self_732237)->elts[3], ((closureN)self_732237)->elts[0]);; 
 }
 
 static void __lambda_1287(void *data, int argc, closure _,object k_73782, object ast_73313) {
@@ -6247,8 +6053,7 @@ return_closcall5(data,(closure)&c_737890,  boolean_f, boolean_f, boolean_f, bool
 }
 
 static void __lambda_1286(void *data, int argc, object self_732238, object body_73322, object cps_73321, object cps_91list_73320, object cps_91seq_73319, object remove_91unused_73318) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737892;
 c_737892.hdr.mark = gc_color_red;
  c_737892.hdr.grayed = 0;
@@ -6269,8 +6074,7 @@ return_closcall1(data,(closure)&c_737892,  &c_738638);;
 }
 
 static void __lambda_1285(void *data, int argc, object self_732239, object cps_73321) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737894;
 c_737894.hdr.mark = gc_color_red;
  c_737894.hdr.grayed = 0;
@@ -6291,8 +6095,7 @@ return_closcall1(data,(closure)&c_737894,  &c_738634);;
 }
 
 static void __lambda_1284(void *data, int argc, object self_732240, object cps_91list_73320) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737896;
 c_737896.hdr.mark = gc_color_red;
  c_737896.hdr.grayed = 0;
@@ -6313,8 +6116,7 @@ return_closcall1(data,(closure)&c_737896,  &c_738630);;
 }
 
 static void __lambda_1283(void *data, int argc, object self_732241, object cps_91seq_73319) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737898;
 c_737898.hdr.mark = gc_color_red;
  c_737898.hdr.grayed = 0;
@@ -6335,8 +6137,7 @@ return_closcall1(data,(closure)&c_737898,  &c_738626);;
 }
 
 static void __lambda_1282(void *data, int argc, object self_732242, object remove_91unused_73318) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737900;
 c_737900.hdr.mark = gc_color_red;
  c_737900.hdr.grayed = 0;
@@ -6356,8 +6157,7 @@ return_closcall4(data,(closure)&c_737900,  boolean_f, boolean_f, boolean_f, bool
 }
 
 static void __lambda_1281(void *data, int argc, object self_732243, object cps_73326, object cps_91list_73325, object cps_91seq_73324, object remove_91unused_73323) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737902;
 c_737902.hdr.mark = gc_color_red;
  c_737902.hdr.grayed = 0;
@@ -6390,8 +6190,7 @@ return_closcall1(data,(closure)&c_737902,  &c_738264);;
 }
 
 static void __lambda_1280(void *data, int argc, object self_732244, object k_73856, object ast_73343, object cont_91ast_73342) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738266;
 c_738266.hdr.mark = gc_color_red;
  c_738266.hdr.grayed = 0;
@@ -6411,8 +6210,7 @@ return_closcall2(data,  __glo_const_127,  &c_738266, ast_73343);;
 }
 
 static void __lambda_1279(void *data, int argc, object self_732245, object r_73857) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73857) ){ 
+  if( !eq(boolean_f, r_73857) ){ 
   
 closureN_type c_738268;
 c_738268.hdr.mark = gc_color_red;
@@ -6449,8 +6247,7 @@ return_closcall2(data,  __glo_ref_127,  &c_738274, ((closureN)self_732245)->elts
 }
 
 static void __lambda_1278(void *data, int argc, object self_732246, object r_73858) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73858) ){ 
+  if( !eq(boolean_f, r_73858) ){ 
   
 closureN_type c_738276;
 c_738276.hdr.mark = gc_color_red;
@@ -6487,8 +6284,7 @@ return_closcall2(data,  __glo_quote_127,  &c_738282, ((closureN)self_732246)->el
 }
 
 static void __lambda_1277(void *data, int argc, object self_732247, object r_73859) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73859) ){ 
+  if( !eq(boolean_f, r_73859) ){ 
   
 closureN_type c_738284;
 c_738284.hdr.mark = gc_color_red;
@@ -6525,8 +6321,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_738290, ((closureN)self_732247)->e
 }
 
 static void __lambda_1276(void *data, int argc, object self_732248, object r_73860) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73860) ){ 
+  if( !eq(boolean_f, r_73860) ){ 
   
 closureN_type c_738292;
 c_738292.hdr.mark = gc_color_red;
@@ -6564,8 +6359,7 @@ return_closcall2(data,  __glo_if_127,  &c_738330, ((closureN)self_732248)->elts[
 }
 
 static void __lambda_1275(void *data, int argc, object self_732249, object r_73868) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73868) ){ 
+  if( !eq(boolean_f, r_73868) ){ 
   
 closureN_type c_738332;
 c_738332.hdr.mark = gc_color_red;
@@ -6603,8 +6397,7 @@ return_closcall2(data,  __glo_prim_91call_127,  &c_738418, ((closureN)self_73224
 }
 
 static void __lambda_1274(void *data, int argc, object self_732250, object r_73888) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73888) ){ 
+  if( !eq(boolean_f, r_73888) ){ 
   
 closureN_type c_738420;
 c_738420.hdr.mark = gc_color_red;
@@ -6641,8 +6434,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_738450, ((closureN)self_732250)->e
 }
 
 static void __lambda_1273(void *data, int argc, object self_732251, object r_73894) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73894) ){ 
+  if( !eq(boolean_f, r_73894) ){ 
   
 closureN_type c_738452;
 c_738452.hdr.mark = gc_color_red;
@@ -6679,8 +6471,7 @@ return_closcall2(data,  __glo_app_127,  &c_738529, ((closureN)self_732251)->elts
 }
 
 static void __lambda_1272(void *data, int argc, object self_732252, object r_73912) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73912) ){ 
+  if( !eq(boolean_f, r_73912) ){ 
   
 closureN_type c_738531;
 c_738531.hdr.mark = gc_color_red;
@@ -6715,15 +6506,13 @@ return_closcall0(data,(closure)&c_738612);}
 }
 
 static void __lambda_1271(void *data, int argc, object self_732253) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 make_string(c_738615, "unknown ast");
 return_closcall3(data,  __glo_error,  ((closureN)self_732253)->elts[1], &c_738615, ((closureN)self_732253)->elts[0]);; 
 }
 
 static void __lambda_1270(void *data, int argc, object self_732254) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738533;
 c_738533.hdr.mark = gc_color_red;
  c_738533.hdr.grayed = 0;
@@ -6742,8 +6531,7 @@ return_closcall2(data,  __glo_app_91_125fun,  &c_738533, ((closureN)self_732254)
 }
 
 static void __lambda_1269(void *data, int argc, object self_732255, object r_73913) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738535;
 c_738535.hdr.mark = gc_color_red;
  c_738535.hdr.grayed = 0;
@@ -6762,8 +6550,7 @@ return_closcall1(data,(closure)&c_738535,  r_73913);;
 }
 
 static void __lambda_1268(void *data, int argc, object self_732256, object fn_73344) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738537;
 c_738537.hdr.mark = gc_color_red;
  c_738537.hdr.grayed = 0;
@@ -6783,8 +6570,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_738537, fn_73344);;
 }
 
 static void __lambda_1267(void *data, int argc, object self_732257, object r_73914) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73914) ){ 
+  if( !eq(boolean_f, r_73914) ){ 
   
 closureN_type c_738539;
 c_738539.hdr.mark = gc_color_red;
@@ -6822,8 +6608,7 @@ return_closcall0(data,(closure)&c_738579);}
 }
 
 static void __lambda_1266(void *data, int argc, object self_732258) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738581;
 c_738581.hdr.mark = gc_color_red;
  c_738581.hdr.grayed = 0;
@@ -6851,8 +6636,7 @@ return_closcall1(data,(closure)&c_738581,  &c_738588);;
 }
 
 static void __lambda_1265(void *data, int argc, object self_732259, object k_73924, object args_73345) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738590;
 c_738590.hdr.mark = gc_color_red;
  c_738590.hdr.grayed = 0;
@@ -6869,8 +6653,7 @@ return_closcall1(data,(closure)&c_738590,  car(args_73345));;
 }
 
 static void __lambda_1264(void *data, int argc, object self_732260, object r_73925) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738592;
 c_738592.hdr.mark = gc_color_red;
  c_738592.hdr.grayed = 0;
@@ -6887,8 +6670,7 @@ return_closcall1(data,(closure)&c_738592,  cdr(((closureN)self_732260)->elts[0])
 }
 
 static void __lambda_1263(void *data, int argc, object self_732261, object r_73927) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738594;
 c_738594.hdr.mark = gc_color_red;
  c_738594.hdr.grayed = 0;
@@ -6906,20 +6688,17 @@ return_closcall1(data,(closure)&c_738594,  &c_738603);;
 }
 
 static void __lambda_1262(void *data, int argc, object self_732262, object r_73926) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 make_cons(c_738599,((closureN)self_732262)->elts[1], r_73926);
 return_closcall1(data,  ((closureN)self_732262)->elts[0],  &c_738599);; 
 }
 
 static void __lambda_1261(void *data, int argc, object self_732263, object r_73923) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732263)->elts[1]),  ((closureN)self_732263)->elts[2], ((closureN)self_732263)->elts[0], r_73923);; 
+  return_closcall3(data,  cell_get(((closureN)self_732263)->elts[1]),  ((closureN)self_732263)->elts[2], ((closureN)self_732263)->elts[0], r_73923);; 
 }
 
 static void __lambda_1260(void *data, int argc, object self_732264) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738541;
 c_738541.hdr.mark = gc_color_red;
  c_738541.hdr.grayed = 0;
@@ -6938,8 +6717,7 @@ return_closcall2(data,  __glo_app_91_125args,  &c_738541, ((closureN)self_732264
 }
 
 static void __lambda_1259(void *data, int argc, object self_732265, object r_73915) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738543;
 c_738543.hdr.mark = gc_color_red;
  c_738543.hdr.grayed = 0;
@@ -6969,8 +6747,7 @@ return_closcall1(data,(closure)&c_738543,  &c_738550);;
 }
 
 static void __lambda_1258(void *data, int argc, object self_732266, object k_73917, object vals_73346) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738552;
 c_738552.hdr.mark = gc_color_red;
  c_738552.hdr.grayed = 0;
@@ -6989,8 +6766,7 @@ return_closcall1(data,(closure)&c_738552,  quote_lambda);;
 }
 
 static void __lambda_1257(void *data, int argc, object self_732267, object r_73919) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738554;
 c_738554.hdr.mark = gc_color_red;
  c_738554.hdr.grayed = 0;
@@ -7010,8 +6786,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_738554, ((closureN)self_
 }
 
 static void __lambda_1256(void *data, int argc, object self_732268, object r_73920) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738556;
 c_738556.hdr.mark = gc_color_red;
  c_738556.hdr.grayed = 0;
@@ -7031,8 +6806,7 @@ return_closcall1(data,(closure)&c_738556,  cddr(((closureN)self_732268)->elts[2]
 }
 
 static void __lambda_1255(void *data, int argc, object self_732269, object r_73922) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738561;
 c_738561.hdr.mark = gc_color_red;
  c_738561.hdr.grayed = 0;
@@ -7050,8 +6824,7 @@ return_closcall3(data,  cell_get(((closureN)self_732269)->elts[1]),  &c_738561, 
 }
 
 static void __lambda_1254(void *data, int argc, object self_732270, object r_73921) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738563;
 c_738563.hdr.mark = gc_color_red;
  c_738563.hdr.grayed = 0;
@@ -7067,20 +6840,17 @@ return_closcall4(data,  __glo__list,  &c_738563, ((closureN)self_732270)->elts[1
 }
 
 static void __lambda_1253(void *data, int argc, object self_732271, object r_73918) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 make_cons(c_738568,r_73918, ((closureN)self_732271)->elts[1]);
 return_closcall1(data,  ((closureN)self_732271)->elts[0],  &c_738568);; 
 }
 
 static void __lambda_1252(void *data, int argc, object self_732272, object r_73916) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732272)->elts[0]),  ((closureN)self_732272)->elts[1], ((closureN)self_732272)->elts[2], r_73916);; 
+  return_closcall3(data,  cell_get(((closureN)self_732272)->elts[0]),  ((closureN)self_732272)->elts[1], ((closureN)self_732272)->elts[2], r_73916);; 
 }
 
 static void __lambda_1251(void *data, int argc, object self_732273) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738454;
 c_738454.hdr.mark = gc_color_red;
  c_738454.hdr.grayed = 0;
@@ -7098,8 +6868,7 @@ return_closcall1(data,(closure)&c_738454,  quote_k);;
 }
 
 static void __lambda_1250(void *data, int argc, object self_732274, object r_73911) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738456;
 c_738456.hdr.mark = gc_color_red;
  c_738456.hdr.grayed = 0;
@@ -7117,8 +6886,7 @@ return_closcall2(data,  __glo_gensym,  &c_738456, r_73911);;
 }
 
 static void __lambda_1249(void *data, int argc, object self_732275, object r_73895) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738458;
 c_738458.hdr.mark = gc_color_red;
  c_738458.hdr.grayed = 0;
@@ -7137,8 +6905,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_738458, ((closureN)se
 }
 
 static void __lambda_1248(void *data, int argc, object self_732276, object r_73896) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738460;
 c_738460.hdr.mark = gc_color_red;
  c_738460.hdr.grayed = 0;
@@ -7156,8 +6923,7 @@ return_closcall2(data,(closure)&c_738460,  ((closureN)self_732276)->elts[4], r_7
 }
 
 static void __lambda_1247(void *data, int argc, object self_732277, object k_73348, object ltype_73347) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738462;
 c_738462.hdr.mark = gc_color_red;
  c_738462.hdr.grayed = 0;
@@ -7177,8 +6943,7 @@ return_closcall1(data,(closure)&c_738462,  quote_lambda);;
 }
 
 static void __lambda_1246(void *data, int argc, object self_732278, object r_73898) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738464;
 c_738464.hdr.mark = gc_color_red;
  c_738464.hdr.grayed = 0;
@@ -7199,8 +6964,7 @@ return_closcall1(data,(closure)&c_738464,  cadr(((closureN)self_732278)->elts[0]
 }
 
 static void __lambda_1245(void *data, int argc, object self_732279, object r_73910) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738466;
 c_738466.hdr.mark = gc_color_red;
  c_738466.hdr.grayed = 0;
@@ -7223,8 +6987,7 @@ return_closcall1(data,(closure)&c_738466,  &c_738521);;
 }
 
 static void __lambda_1244(void *data, int argc, object self_732280, object r_73905) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738468;
 c_738468.hdr.mark = gc_color_red;
  c_738468.hdr.grayed = 0;
@@ -7256,8 +7019,7 @@ return_closcall1(data,(closure)&c_738468,  &c_738481);;
 }
 
 static void __lambda_1243(void *data, int argc, object self_732281, object r_73906) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738483;
 c_738483.hdr.mark = gc_color_red;
  c_738483.hdr.grayed = 0;
@@ -7277,8 +7039,7 @@ return_closcall3(data,  __glo_list_91_125lambda_91formals,  &c_738483, ((closure
 }
 
 static void __lambda_1242(void *data, int argc, object self_732282, object r_73900) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738485;
 c_738485.hdr.mark = gc_color_red;
  c_738485.hdr.grayed = 0;
@@ -7298,8 +7059,7 @@ return_closcall1(data,(closure)&c_738485,  cddr(((closureN)self_732282)->elts[0]
 }
 
 static void __lambda_1241(void *data, int argc, object self_732283, object r_73904) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738490;
 c_738490.hdr.mark = gc_color_red;
  c_738490.hdr.grayed = 0;
@@ -7317,8 +7077,7 @@ return_closcall3(data,  cell_get(((closureN)self_732283)->elts[1]),  &c_738490, 
 }
 
 static void __lambda_1240(void *data, int argc, object self_732284, object r_73902) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738492;
 c_738492.hdr.mark = gc_color_red;
  c_738492.hdr.grayed = 0;
@@ -7337,8 +7096,7 @@ return_closcall1(data,(closure)&c_738492,  nil);;
 }
 
 static void __lambda_1239(void *data, int argc, object self_732285, object r_73903) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738494;
 c_738494.hdr.mark = gc_color_red;
  c_738494.hdr.grayed = 0;
@@ -7358,8 +7116,7 @@ return_closcall1(data,(closure)&c_738494,  &c_738512);;
 }
 
 static void __lambda_1238(void *data, int argc, object self_732286, object r_73901) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738496;
 c_738496.hdr.mark = gc_color_red;
  c_738496.hdr.grayed = 0;
@@ -7378,8 +7135,7 @@ return_closcall1(data,(closure)&c_738496,  &c_738508);;
 }
 
 static void __lambda_1237(void *data, int argc, object self_732287, object r_73899) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738498;
 c_738498.hdr.mark = gc_color_red;
  c_738498.hdr.grayed = 0;
@@ -7397,13 +7153,11 @@ return_closcall1(data,(closure)&c_738498,  &c_738504);;
 }
 
 static void __lambda_1236(void *data, int argc, object self_732288, object r_73897) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732288)->elts[1], ((closureN)self_732288)->elts[0], r_73897);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732288)->elts[1], ((closureN)self_732288)->elts[0], r_73897);; 
 }
 
 static void __lambda_1235(void *data, int argc, object self_732289, object k_73907) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738470;
 c_738470.hdr.mark = gc_color_red;
  c_738470.hdr.grayed = 0;
@@ -7419,8 +7173,7 @@ return_closcall1(data,(closure)&c_738470,  quote_args_117varargs);;
 }
 
 static void __lambda_1234(void *data, int argc, object self_732290, object r_73909) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738472;
 c_738472.hdr.mark = gc_color_red;
  c_738472.hdr.grayed = 0;
@@ -7436,8 +7189,7 @@ return_closcall1(data,(closure)&c_738472,  equalp(((closureN)self_732290)->elts[
 }
 
 static void __lambda_1233(void *data, int argc, object self_732291, object r_73908) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73908) ){ 
+  if( !eq(boolean_f, r_73908) ){ 
   return_closcall1(data,  ((closureN)self_732291)->elts[0],  quote_args_117fixed_91with_91varargs);
 } else { 
   return_closcall1(data,  ((closureN)self_732291)->elts[0],  ((closureN)self_732291)->elts[1]);}
@@ -7445,8 +7197,7 @@ if( !eq(boolean_f, r_73908) ){
 }
 
 static void __lambda_1232(void *data, int argc, object self_732292) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738422;
 c_738422.hdr.mark = gc_color_red;
  c_738422.hdr.grayed = 0;
@@ -7464,8 +7215,7 @@ return_closcall1(data,(closure)&c_738422,  cdr(((closureN)self_732292)->elts[0])
 }
 
 static void __lambda_1231(void *data, int argc, object self_732293, object r_73889) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738424;
 c_738424.hdr.mark = gc_color_red;
  c_738424.hdr.grayed = 0;
@@ -7494,8 +7244,7 @@ return_closcall1(data,(closure)&c_738424,  &c_738431);;
 }
 
 static void __lambda_1230(void *data, int argc, object self_732294, object k_73891, object args_73349) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738433;
 c_738433.hdr.mark = gc_color_red;
  c_738433.hdr.grayed = 0;
@@ -7512,8 +7261,7 @@ return_closcall1(data,(closure)&c_738433,  car(((closureN)self_732294)->elts[0])
 }
 
 static void __lambda_1229(void *data, int argc, object self_732295, object r_73893) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738435;
 c_738435.hdr.mark = gc_color_red;
  c_738435.hdr.grayed = 0;
@@ -7531,18 +7279,15 @@ return_closcall1(data,(closure)&c_738435,  &c_738441);;
 }
 
 static void __lambda_1228(void *data, int argc, object self_732296, object r_73892) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732296)->elts[1], ((closureN)self_732296)->elts[0], r_73892);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732296)->elts[1], ((closureN)self_732296)->elts[0], r_73892);; 
 }
 
 static void __lambda_1227(void *data, int argc, object self_732297, object r_73890) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732297)->elts[0]),  ((closureN)self_732297)->elts[1], ((closureN)self_732297)->elts[2], r_73890);; 
+  return_closcall3(data,  cell_get(((closureN)self_732297)->elts[0]),  ((closureN)self_732297)->elts[1], ((closureN)self_732297)->elts[2], r_73890);; 
 }
 
 static void __lambda_1226(void *data, int argc, object self_732298) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738334;
 c_738334.hdr.mark = gc_color_red;
  c_738334.hdr.grayed = 0;
@@ -7571,8 +7316,7 @@ return_closcall1(data,(closure)&c_738334,  &c_738366);;
 }
 
 static void __lambda_1225(void *data, int argc, object self_732299, object k_73877, object cont_91ast_73350) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738368;
 c_738368.hdr.mark = gc_color_red;
  c_738368.hdr.grayed = 0;
@@ -7591,8 +7335,7 @@ return_closcall1(data,(closure)&c_738368,  cadr(((closureN)self_732299)->elts[0]
 }
 
 static void __lambda_1224(void *data, int argc, object self_732300, object r_73887) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738370;
 c_738370.hdr.mark = gc_color_red;
  c_738370.hdr.grayed = 0;
@@ -7611,8 +7354,7 @@ return_closcall2(data,  __glo__list,  &c_738370, r_73887);;
 }
 
 static void __lambda_1223(void *data, int argc, object self_732301, object r_73878) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738372;
 c_738372.hdr.mark = gc_color_red;
  c_738372.hdr.grayed = 0;
@@ -7642,8 +7384,7 @@ return_closcall1(data,(closure)&c_738372,  &c_738379);;
 }
 
 static void __lambda_1222(void *data, int argc, object self_732302, object k_73880, object test_73351) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738381;
 c_738381.hdr.mark = gc_color_red;
  c_738381.hdr.grayed = 0;
@@ -7662,8 +7403,7 @@ return_closcall1(data,(closure)&c_738381,  quote__if);;
 }
 
 static void __lambda_1221(void *data, int argc, object self_732303, object r_73881) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738383;
 c_738383.hdr.mark = gc_color_red;
  c_738383.hdr.grayed = 0;
@@ -7682,8 +7422,7 @@ return_closcall1(data,(closure)&c_738383,  car(((closureN)self_732303)->elts[4])
 }
 
 static void __lambda_1220(void *data, int argc, object self_732304, object r_73882) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738385;
 c_738385.hdr.mark = gc_color_red;
  c_738385.hdr.grayed = 0;
@@ -7703,8 +7442,7 @@ return_closcall1(data,(closure)&c_738385,  caddr(((closureN)self_732304)->elts[0
 }
 
 static void __lambda_1219(void *data, int argc, object self_732305, object r_73886) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738390;
 c_738390.hdr.mark = gc_color_red;
  c_738390.hdr.grayed = 0;
@@ -7724,8 +7462,7 @@ return_closcall3(data,  cell_get(((closureN)self_732305)->elts[2]),  &c_738390, 
 }
 
 static void __lambda_1218(void *data, int argc, object self_732306, object r_73883) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738392;
 c_738392.hdr.mark = gc_color_red;
  c_738392.hdr.grayed = 0;
@@ -7745,8 +7482,7 @@ return_closcall1(data,(closure)&c_738392,  cadddr(((closureN)self_732306)->elts[
 }
 
 static void __lambda_1217(void *data, int argc, object self_732307, object r_73885) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738397;
 c_738397.hdr.mark = gc_color_red;
  c_738397.hdr.grayed = 0;
@@ -7764,18 +7500,15 @@ return_closcall3(data,  cell_get(((closureN)self_732307)->elts[1]),  &c_738397, 
 }
 
 static void __lambda_1216(void *data, int argc, object self_732308, object r_73884) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall5(data,  __glo__list,  ((closureN)self_732308)->elts[0], ((closureN)self_732308)->elts[1], ((closureN)self_732308)->elts[2], ((closureN)self_732308)->elts[3], r_73884);; 
+  return_closcall5(data,  __glo__list,  ((closureN)self_732308)->elts[0], ((closureN)self_732308)->elts[1], ((closureN)self_732308)->elts[2], ((closureN)self_732308)->elts[3], r_73884);; 
 }
 
 static void __lambda_1215(void *data, int argc, object self_732309, object r_73879) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732309)->elts[0]),  ((closureN)self_732309)->elts[1], ((closureN)self_732309)->elts[2], r_73879);; 
+  return_closcall3(data,  cell_get(((closureN)self_732309)->elts[0]),  ((closureN)self_732309)->elts[1], ((closureN)self_732309)->elts[2], r_73879);; 
 }
 
 static void __lambda_1214(void *data, int argc, object self_732310, object r_73869) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738336;
 c_738336.hdr.mark = gc_color_red;
  c_738336.hdr.grayed = 0;
@@ -7791,8 +7524,7 @@ return_closcall1(data,(closure)&c_738336,  r_73869);;
 }
 
 static void __lambda_1213(void *data, int argc, object self_732311, object xform_73352) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738338;
 c_738338.hdr.mark = gc_color_red;
  c_738338.hdr.grayed = 0;
@@ -7809,8 +7541,7 @@ return_closcall2(data,  __glo_ref_127,  &c_738338, ((closureN)self_732311)->elts
 }
 
 static void __lambda_1212(void *data, int argc, object self_732312, object r_73870) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73870) ){ 
+  if( !eq(boolean_f, r_73870) ){ 
   return_closcall2(data,  ((closureN)self_732312)->elts[2],  ((closureN)self_732312)->elts[1], ((closureN)self_732312)->elts[0]);
 } else { 
   
@@ -7831,8 +7562,7 @@ return_closcall1(data,(closure)&c_738344,  quote_k);}
 }
 
 static void __lambda_1211(void *data, int argc, object self_732313, object r_73876) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738346;
 c_738346.hdr.mark = gc_color_red;
  c_738346.hdr.grayed = 0;
@@ -7849,8 +7579,7 @@ return_closcall2(data,  __glo_gensym,  &c_738346, r_73876);;
 }
 
 static void __lambda_1210(void *data, int argc, object self_732314, object r_73871) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738348;
 c_738348.hdr.mark = gc_color_red;
  c_738348.hdr.grayed = 0;
@@ -7867,8 +7596,7 @@ return_closcall1(data,(closure)&c_738348,  r_73871);;
 }
 
 static void __lambda_1209(void *data, int argc, object self_732315, object k_73353) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738350;
 c_738350.hdr.mark = gc_color_red;
  c_738350.hdr.grayed = 0;
@@ -7886,8 +7614,7 @@ return_closcall1(data,(closure)&c_738350,  quote_lambda);;
 }
 
 static void __lambda_1208(void *data, int argc, object self_732316, object r_73873) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738352;
 c_738352.hdr.mark = gc_color_red;
  c_738352.hdr.grayed = 0;
@@ -7906,8 +7633,7 @@ return_closcall2(data,  __glo__list,  &c_738352, ((closureN)self_732316)->elts[1
 }
 
 static void __lambda_1207(void *data, int argc, object self_732317, object r_73874) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738355;
 c_738355.hdr.mark = gc_color_red;
  c_738355.hdr.grayed = 0;
@@ -7925,8 +7651,7 @@ return_closcall2(data,  ((closureN)self_732317)->elts[4],  &c_738355, ((closureN
 }
 
 static void __lambda_1206(void *data, int argc, object self_732318, object r_73875) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738357;
 c_738357.hdr.mark = gc_color_red;
  c_738357.hdr.grayed = 0;
@@ -7942,13 +7667,11 @@ return_closcall4(data,  __glo__list,  &c_738357, ((closureN)self_732318)->elts[2
 }
 
 static void __lambda_1205(void *data, int argc, object self_732319, object r_73872) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732319)->elts[1], r_73872, ((closureN)self_732319)->elts[0]);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732319)->elts[1], r_73872, ((closureN)self_732319)->elts[0]);; 
 }
 
 static void __lambda_1204(void *data, int argc, object self_732320) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738294;
 c_738294.hdr.mark = gc_color_red;
  c_738294.hdr.grayed = 0;
@@ -7966,8 +7689,7 @@ return_closcall1(data,(closure)&c_738294,  cddr(((closureN)self_732320)->elts[0]
 }
 
 static void __lambda_1203(void *data, int argc, object self_732321, object r_73861) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738296;
 c_738296.hdr.mark = gc_color_red;
  c_738296.hdr.grayed = 0;
@@ -7996,8 +7718,7 @@ return_closcall1(data,(closure)&c_738296,  &c_738303);;
 }
 
 static void __lambda_1202(void *data, int argc, object self_732322, object k_73863, object val_73354) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738305;
 c_738305.hdr.mark = gc_color_red;
  c_738305.hdr.grayed = 0;
@@ -8015,8 +7736,7 @@ return_closcall1(data,(closure)&c_738305,  quote_set_67);;
 }
 
 static void __lambda_1201(void *data, int argc, object self_732323, object r_73865) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738307;
 c_738307.hdr.mark = gc_color_red;
  c_738307.hdr.grayed = 0;
@@ -8034,8 +7754,7 @@ return_closcall1(data,(closure)&c_738307,  cadr(((closureN)self_732323)->elts[0]
 }
 
 static void __lambda_1200(void *data, int argc, object self_732324, object r_73867) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738309;
 c_738309.hdr.mark = gc_color_red;
  c_738309.hdr.grayed = 0;
@@ -8054,8 +7773,7 @@ return_closcall1(data,(closure)&c_738309,  &c_738321);;
 }
 
 static void __lambda_1199(void *data, int argc, object self_732325, object r_73866) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738311;
 c_738311.hdr.mark = gc_color_red;
  c_738311.hdr.grayed = 0;
@@ -8073,33 +7791,27 @@ return_closcall1(data,(closure)&c_738311,  &c_738317);;
 }
 
 static void __lambda_1198(void *data, int argc, object self_732326, object r_73864) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732326)->elts[1], ((closureN)self_732326)->elts[0], r_73864);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732326)->elts[1], ((closureN)self_732326)->elts[0], r_73864);; 
 }
 
 static void __lambda_1197(void *data, int argc, object self_732327, object r_73862) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732327)->elts[0]),  ((closureN)self_732327)->elts[1], ((closureN)self_732327)->elts[2], r_73862);; 
+  return_closcall3(data,  cell_get(((closureN)self_732327)->elts[0]),  ((closureN)self_732327)->elts[1], ((closureN)self_732327)->elts[2], r_73862);; 
 }
 
 static void __lambda_1196(void *data, int argc, object self_732328) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732328)->elts[2], ((closureN)self_732328)->elts[1], ((closureN)self_732328)->elts[0]);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732328)->elts[2], ((closureN)self_732328)->elts[1], ((closureN)self_732328)->elts[0]);; 
 }
 
 static void __lambda_1195(void *data, int argc, object self_732329) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732329)->elts[2], ((closureN)self_732329)->elts[1], ((closureN)self_732329)->elts[0]);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732329)->elts[2], ((closureN)self_732329)->elts[1], ((closureN)self_732329)->elts[0]);; 
 }
 
 static void __lambda_1194(void *data, int argc, object self_732330) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732330)->elts[2], ((closureN)self_732330)->elts[1], ((closureN)self_732330)->elts[0]);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732330)->elts[2], ((closureN)self_732330)->elts[1], ((closureN)self_732330)->elts[0]);; 
 }
 
 static void __lambda_1193(void *data, int argc, object self_732331, object r_73855) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737904;
 c_737904.hdr.mark = gc_color_red;
  c_737904.hdr.grayed = 0;
@@ -8119,8 +7831,7 @@ return_closcall1(data,(closure)&c_737904,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1192(void *data, int argc, object self_732332, object r_73783) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737906;
 c_737906.hdr.mark = gc_color_red;
  c_737906.hdr.grayed = 0;
@@ -8152,8 +7863,7 @@ return_closcall1(data,(closure)&c_737906,  &c_738121);;
 }
 
 static void __lambda_1191(void *data, int argc, object self_732333, object k_73828, object asts_73336, object inner_73335) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738123;
 c_738123.hdr.mark = gc_color_red;
  c_738123.hdr.grayed = 0;
@@ -8172,8 +7882,7 @@ return_closcall1(data,(closure)&c_738123,  boolean_f);;
 }
 
 static void __lambda_1190(void *data, int argc, object self_732334, object body_73337) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738125;
 c_738125.hdr.mark = gc_color_red;
  c_738125.hdr.grayed = 0;
@@ -8194,8 +7903,7 @@ return_closcall1(data,(closure)&c_738125,  &c_738260);;
 }
 
 static void __lambda_1189(void *data, int argc, object self_732335, object body_73337) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738127;
 c_738127.hdr.mark = gc_color_red;
  c_738127.hdr.grayed = 0;
@@ -8227,8 +7935,7 @@ return_closcall1(data,(closure)&c_738127,  &c_738234);;
 }
 
 static void __lambda_1188(void *data, int argc, object self_732336, object k_73850, object x_73340) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738236;
 c_738236.hdr.mark = gc_color_red;
  c_738236.hdr.grayed = 0;
@@ -8246,8 +7953,7 @@ return_closcall1(data,(closure)&c_738236,  cdr(((closureN)self_732336)->elts[0])
 }
 
 static void __lambda_1187(void *data, int argc, object self_732337, object r_73851) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738238;
 c_738238.hdr.mark = gc_color_red;
  c_738238.hdr.grayed = 0;
@@ -8276,8 +7982,7 @@ return_closcall1(data,(closure)&c_738238,  &c_738245);;
 }
 
 static void __lambda_1186(void *data, int argc, object self_732338, object k_73853, object new_91asts_73341) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738247;
 c_738247.hdr.mark = gc_color_red;
  c_738247.hdr.grayed = 0;
@@ -8295,18 +8000,15 @@ return_closcall1(data,(closure)&c_738247,  &c_738253);;
 }
 
 static void __lambda_1185(void *data, int argc, object self_732339, object r_73854) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall2(data,  ((closureN)self_732339)->elts[0],  ((closureN)self_732339)->elts[1], r_73854);; 
+  return_closcall2(data,  ((closureN)self_732339)->elts[0],  ((closureN)self_732339)->elts[1], r_73854);; 
 }
 
 static void __lambda_1184(void *data, int argc, object self_732340, object r_73852) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732340)->elts[0]),  ((closureN)self_732340)->elts[1], ((closureN)self_732340)->elts[2], r_73852);; 
+  return_closcall3(data,  cell_get(((closureN)self_732340)->elts[0]),  ((closureN)self_732340)->elts[1], ((closureN)self_732340)->elts[2], r_73852);; 
 }
 
 static void __lambda_1183(void *data, int argc, object self_732341, object r_73849) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738129;
 c_738129.hdr.mark = gc_color_red;
  c_738129.hdr.grayed = 0;
@@ -8325,8 +8027,7 @@ return_closcall1(data,(closure)&c_738129,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1182(void *data, int argc, object self_732342, object r_73829) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738131;
 c_738131.hdr.mark = gc_color_red;
  c_738131.hdr.grayed = 0;
@@ -8345,8 +8046,7 @@ return_closcall1(data,(closure)&c_738131,  Cyc_is_null(((closureN)self_732342)->
 }
 
 static void __lambda_1181(void *data, int argc, object self_732343, object r_73830) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73830) ){ 
+  if( !eq(boolean_f, r_73830) ){ 
   
 closureN_type c_738133;
 c_738133.hdr.mark = gc_color_red;
@@ -8380,8 +8080,7 @@ return_closcall1(data,(closure)&c_738140,  car(((closureN)self_732343)->elts[0])
 }
 
 static void __lambda_1180(void *data, int argc, object self_732344, object r_73848) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738142;
 c_738142.hdr.mark = gc_color_red;
  c_738142.hdr.grayed = 0;
@@ -8399,8 +8098,7 @@ return_closcall2(data,  __glo_const_127,  &c_738142, r_73848);;
 }
 
 static void __lambda_1179(void *data, int argc, object self_732345, object r_73845) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738144;
 c_738144.hdr.mark = gc_color_red;
  c_738144.hdr.grayed = 0;
@@ -8418,8 +8116,7 @@ return_closcall1(data,(closure)&c_738144,  r_73845);;
 }
 
 static void __lambda_1178(void *data, int argc, object self_732346, object tmp_73339) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738146;
 c_738146.hdr.mark = gc_color_red;
  c_738146.hdr.grayed = 0;
@@ -8449,8 +8146,7 @@ return_closcall1(data,(closure)&c_738146,  &c_738157);;
 }
 
 static void __lambda_1177(void *data, int argc, object self_732347, object r_73832) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73832) ){ 
+  if( !eq(boolean_f, r_73832) ){ 
   
 closureN_type c_738159;
 c_738159.hdr.mark = gc_color_red;
@@ -8485,8 +8181,7 @@ return_closcall0(data,(closure)&c_738171);}
 }
 
 static void __lambda_1176(void *data, int argc, object self_732348) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738173;
 c_738173.hdr.mark = gc_color_red;
  c_738173.hdr.grayed = 0;
@@ -8504,8 +8199,7 @@ return_closcall1(data,(closure)&c_738173,  quote_r);;
 }
 
 static void __lambda_1175(void *data, int argc, object self_732349, object r_73844) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738175;
 c_738175.hdr.mark = gc_color_red;
  c_738175.hdr.grayed = 0;
@@ -8523,8 +8217,7 @@ return_closcall2(data,  __glo_gensym,  &c_738175, r_73844);;
 }
 
 static void __lambda_1174(void *data, int argc, object self_732350, object r_73834) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738177;
 c_738177.hdr.mark = gc_color_red;
  c_738177.hdr.grayed = 0;
@@ -8542,8 +8235,7 @@ return_closcall1(data,(closure)&c_738177,  r_73834);;
 }
 
 static void __lambda_1173(void *data, int argc, object self_732351, object r_73338) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738179;
 c_738179.hdr.mark = gc_color_red;
  c_738179.hdr.grayed = 0;
@@ -8561,8 +8253,7 @@ return_closcall1(data,(closure)&c_738179,  car(((closureN)self_732351)->elts[0])
 }
 
 static void __lambda_1172(void *data, int argc, object self_732352, object r_73835) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738181;
 c_738181.hdr.mark = gc_color_red;
  c_738181.hdr.grayed = 0;
@@ -8581,8 +8272,7 @@ return_closcall1(data,(closure)&c_738181,  quote_lambda);;
 }
 
 static void __lambda_1171(void *data, int argc, object self_732353, object r_73837) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738183;
 c_738183.hdr.mark = gc_color_red;
  c_738183.hdr.grayed = 0;
@@ -8602,8 +8292,7 @@ return_closcall1(data,(closure)&c_738183,  nil);;
 }
 
 static void __lambda_1170(void *data, int argc, object self_732354, object r_73843) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738185;
 c_738185.hdr.mark = gc_color_red;
  c_738185.hdr.grayed = 0;
@@ -8625,8 +8314,7 @@ return_closcall1(data,(closure)&c_738185,  &c_738220);;
 }
 
 static void __lambda_1169(void *data, int argc, object self_732355, object r_73839) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738190;
 c_738190.hdr.mark = gc_color_red;
  c_738190.hdr.grayed = 0;
@@ -8645,8 +8333,7 @@ return_closcall2(data,  cell_get(((closureN)self_732355)->elts[0]),  &c_738190, 
 }
 
 static void __lambda_1168(void *data, int argc, object self_732356, object r_73841) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738192;
 c_738192.hdr.mark = gc_color_red;
  c_738192.hdr.grayed = 0;
@@ -8666,8 +8353,7 @@ return_closcall1(data,(closure)&c_738192,  nil);;
 }
 
 static void __lambda_1167(void *data, int argc, object self_732357, object r_73842) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738194;
 c_738194.hdr.mark = gc_color_red;
  c_738194.hdr.grayed = 0;
@@ -8688,8 +8374,7 @@ return_closcall1(data,(closure)&c_738194,  &c_738215);;
 }
 
 static void __lambda_1166(void *data, int argc, object self_732358, object r_73840) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738196;
 c_738196.hdr.mark = gc_color_red;
  c_738196.hdr.grayed = 0;
@@ -8709,8 +8394,7 @@ return_closcall1(data,(closure)&c_738196,  &c_738211);;
 }
 
 static void __lambda_1165(void *data, int argc, object self_732359, object r_73838) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738198;
 c_738198.hdr.mark = gc_color_red;
  c_738198.hdr.grayed = 0;
@@ -8729,13 +8413,11 @@ return_closcall1(data,(closure)&c_738198,  &c_738207);;
 }
 
 static void __lambda_1164(void *data, int argc, object self_732360, object r_73836) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732360)->elts[0]),  ((closureN)self_732360)->elts[1], ((closureN)self_732360)->elts[2], r_73836);; 
+  return_closcall3(data,  cell_get(((closureN)self_732360)->elts[0]),  ((closureN)self_732360)->elts[1], ((closureN)self_732360)->elts[2], r_73836);; 
 }
 
 static void __lambda_1163(void *data, int argc, object self_732361) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738161;
 c_738161.hdr.mark = gc_color_red;
  c_738161.hdr.grayed = 0;
@@ -8751,13 +8433,11 @@ return_closcall1(data,(closure)&c_738161,  car(((closureN)self_732361)->elts[0])
 }
 
 static void __lambda_1162(void *data, int argc, object self_732362, object r_73833) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall2(data,  cell_get(((closureN)self_732362)->elts[0]),  ((closureN)self_732362)->elts[1], r_73833);; 
+  return_closcall2(data,  cell_get(((closureN)self_732362)->elts[0]),  ((closureN)self_732362)->elts[1], r_73833);; 
 }
 
 static void __lambda_1161(void *data, int argc, object self_732363, object k_73846) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, ((closureN)self_732363)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732363)->elts[1]) ){ 
   return_closcall1(data,  k_73846,  ((closureN)self_732363)->elts[1]);
 } else { 
   
@@ -8776,13 +8456,11 @@ return_closcall1(data,(closure)&c_738151,  car(((closureN)self_732363)->elts[0])
 }
 
 static void __lambda_1160(void *data, int argc, object self_732364, object r_73847) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall2(data,  __glo_ref_127,  ((closureN)self_732364)->elts[0], r_73847);; 
+  return_closcall2(data,  __glo_ref_127,  ((closureN)self_732364)->elts[0], r_73847);; 
 }
 
 static void __lambda_1159(void *data, int argc, object self_732365) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738135;
 c_738135.hdr.mark = gc_color_red;
  c_738135.hdr.grayed = 0;
@@ -8798,13 +8476,11 @@ return_closcall1(data,(closure)&c_738135,  nil);;
 }
 
 static void __lambda_1158(void *data, int argc, object self_732366, object r_73831) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall2(data,  ((closureN)self_732366)->elts[0],  ((closureN)self_732366)->elts[1], r_73831);; 
+  return_closcall2(data,  ((closureN)self_732366)->elts[0],  ((closureN)self_732366)->elts[1], r_73831);; 
 }
 
 static void __lambda_1157(void *data, int argc, object self_732367, object r_73827) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737908;
 c_737908.hdr.mark = gc_color_red;
  c_737908.hdr.grayed = 0;
@@ -8823,8 +8499,7 @@ return_closcall1(data,(closure)&c_737908,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1156(void *data, int argc, object self_732368, object r_73784) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737910;
 c_737910.hdr.mark = gc_color_red;
  c_737910.hdr.grayed = 0;
@@ -8855,8 +8530,7 @@ return_closcall1(data,(closure)&c_737910,  &c_738026);;
 }
 
 static void __lambda_1155(void *data, int argc, object self_732369, object k_73810, object asts_73333, object cont_91ast_73332) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738028;
 c_738028.hdr.mark = gc_color_red;
  c_738028.hdr.grayed = 0;
@@ -8875,8 +8549,7 @@ return_closcall1(data,(closure)&c_738028,  Cyc_is_null(asts_73333));;
 }
 
 static void __lambda_1154(void *data, int argc, object self_732370, object r_73811) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73811) ){ 
+  if( !eq(boolean_f, r_73811) ){ 
   
 closureN_type c_738030;
 c_738030.hdr.mark = gc_color_red;
@@ -8911,8 +8584,7 @@ return_closcall1(data,(closure)&c_738035,  cdr(((closureN)self_732370)->elts[0])
 }
 
 static void __lambda_1153(void *data, int argc, object self_732371, object r_73826) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738037;
 c_738037.hdr.mark = gc_color_red;
  c_738037.hdr.grayed = 0;
@@ -8931,8 +8603,7 @@ return_closcall1(data,(closure)&c_738037,  Cyc_is_null(r_73826));;
 }
 
 static void __lambda_1152(void *data, int argc, object self_732372, object r_73812) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73812) ){ 
+  if( !eq(boolean_f, r_73812) ){ 
   
 closureN_type c_738039;
 c_738039.hdr.mark = gc_color_red;
@@ -8969,8 +8640,7 @@ return_closcall0(data,(closure)&c_738052);}
 }
 
 static void __lambda_1151(void *data, int argc, object self_732373) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738054;
 c_738054.hdr.mark = gc_color_red;
  c_738054.hdr.grayed = 0;
@@ -8989,8 +8659,7 @@ return_closcall1(data,(closure)&c_738054,  quote_r);;
 }
 
 static void __lambda_1150(void *data, int argc, object self_732374, object r_73825) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738056;
 c_738056.hdr.mark = gc_color_red;
  c_738056.hdr.grayed = 0;
@@ -9009,8 +8678,7 @@ return_closcall2(data,  __glo_gensym,  &c_738056, r_73825);;
 }
 
 static void __lambda_1149(void *data, int argc, object self_732375, object r_73814) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738058;
 c_738058.hdr.mark = gc_color_red;
  c_738058.hdr.grayed = 0;
@@ -9029,8 +8697,7 @@ return_closcall1(data,(closure)&c_738058,  r_73814);;
 }
 
 static void __lambda_1148(void *data, int argc, object self_732376, object r_73334) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738060;
 c_738060.hdr.mark = gc_color_red;
  c_738060.hdr.grayed = 0;
@@ -9050,8 +8717,7 @@ return_closcall1(data,(closure)&c_738060,  car(((closureN)self_732376)->elts[0])
 }
 
 static void __lambda_1147(void *data, int argc, object self_732377, object r_73815) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738062;
 c_738062.hdr.mark = gc_color_red;
  c_738062.hdr.grayed = 0;
@@ -9072,8 +8738,7 @@ return_closcall1(data,(closure)&c_738062,  quote_lambda);;
 }
 
 static void __lambda_1146(void *data, int argc, object self_732378, object r_73817) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738064;
 c_738064.hdr.mark = gc_color_red;
  c_738064.hdr.grayed = 0;
@@ -9095,8 +8760,7 @@ return_closcall1(data,(closure)&c_738064,  nil);;
 }
 
 static void __lambda_1145(void *data, int argc, object self_732379, object r_73824) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738066;
 c_738066.hdr.mark = gc_color_red;
  c_738066.hdr.grayed = 0;
@@ -9119,8 +8783,7 @@ return_closcall1(data,(closure)&c_738066,  &c_738106);;
 }
 
 static void __lambda_1144(void *data, int argc, object self_732380, object r_73819) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738068;
 c_738068.hdr.mark = gc_color_red;
  c_738068.hdr.grayed = 0;
@@ -9141,8 +8804,7 @@ return_closcall1(data,(closure)&c_738068,  cdr(((closureN)self_732380)->elts[0])
 }
 
 static void __lambda_1143(void *data, int argc, object self_732381, object r_73823) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738073;
 c_738073.hdr.mark = gc_color_red;
  c_738073.hdr.grayed = 0;
@@ -9161,8 +8823,7 @@ return_closcall3(data,  cell_get(((closureN)self_732381)->elts[2]),  &c_738073, 
 }
 
 static void __lambda_1142(void *data, int argc, object self_732382, object r_73821) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738075;
 c_738075.hdr.mark = gc_color_red;
  c_738075.hdr.grayed = 0;
@@ -9182,8 +8843,7 @@ return_closcall1(data,(closure)&c_738075,  nil);;
 }
 
 static void __lambda_1141(void *data, int argc, object self_732383, object r_73822) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738077;
 c_738077.hdr.mark = gc_color_red;
  c_738077.hdr.grayed = 0;
@@ -9204,8 +8864,7 @@ return_closcall1(data,(closure)&c_738077,  &c_738098);;
 }
 
 static void __lambda_1140(void *data, int argc, object self_732384, object r_73820) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738079;
 c_738079.hdr.mark = gc_color_red;
  c_738079.hdr.grayed = 0;
@@ -9225,8 +8884,7 @@ return_closcall1(data,(closure)&c_738079,  &c_738094);;
 }
 
 static void __lambda_1139(void *data, int argc, object self_732385, object r_73818) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738081;
 c_738081.hdr.mark = gc_color_red;
  c_738081.hdr.grayed = 0;
@@ -9245,13 +8903,11 @@ return_closcall1(data,(closure)&c_738081,  &c_738090);;
 }
 
 static void __lambda_1138(void *data, int argc, object self_732386, object r_73816) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732386)->elts[0]),  ((closureN)self_732386)->elts[1], ((closureN)self_732386)->elts[2], r_73816);; 
+  return_closcall3(data,  cell_get(((closureN)self_732386)->elts[0]),  ((closureN)self_732386)->elts[1], ((closureN)self_732386)->elts[2], r_73816);; 
 }
 
 static void __lambda_1137(void *data, int argc, object self_732387) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738041;
 c_738041.hdr.mark = gc_color_red;
  c_738041.hdr.grayed = 0;
@@ -9268,18 +8924,15 @@ return_closcall1(data,(closure)&c_738041,  car(((closureN)self_732387)->elts[0])
 }
 
 static void __lambda_1136(void *data, int argc, object self_732388, object r_73813) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732388)->elts[1]),  ((closureN)self_732388)->elts[2], r_73813, ((closureN)self_732388)->elts[0]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732388)->elts[1]),  ((closureN)self_732388)->elts[2], r_73813, ((closureN)self_732388)->elts[0]);; 
 }
 
 static void __lambda_1135(void *data, int argc, object self_732389) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  __glo__list,  ((closureN)self_732389)->elts[1], ((closureN)self_732389)->elts[0], boolean_f);; 
+  return_closcall3(data,  __glo__list,  ((closureN)self_732389)->elts[1], ((closureN)self_732389)->elts[0], boolean_f);; 
 }
 
 static void __lambda_1134(void *data, int argc, object self_732390, object r_73809) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737912;
 c_737912.hdr.mark = gc_color_red;
  c_737912.hdr.grayed = 0;
@@ -9297,8 +8950,7 @@ return_closcall1(data,(closure)&c_737912,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1133(void *data, int argc, object self_732391, object r_73785) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737914;
 c_737914.hdr.mark = gc_color_red;
  c_737914.hdr.grayed = 0;
@@ -9318,8 +8970,7 @@ return_closcall1(data,(closure)&c_737914,  &c_738004);;
 }
 
 static void __lambda_1132(void *data, int argc, object self_732392, object k_73805, object ast_73331) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738006;
 c_738006.hdr.mark = gc_color_red;
  c_738006.hdr.grayed = 0;
@@ -9335,8 +8986,7 @@ return_closcall1(data,(closure)&c_738006,  car(ast_73331));;
 }
 
 static void __lambda_1131(void *data, int argc, object self_732393, object r_73806) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738008;
 c_738008.hdr.mark = gc_color_red;
  c_738008.hdr.grayed = 0;
@@ -9353,8 +9003,7 @@ return_closcall1(data,(closure)&c_738008,  cadr(((closureN)self_732393)->elts[0]
 }
 
 static void __lambda_1130(void *data, int argc, object self_732394, object r_73807) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_738010;
 c_738010.hdr.mark = gc_color_red;
  c_738010.hdr.grayed = 0;
@@ -9371,13 +9020,11 @@ return_closcall1(data,(closure)&c_738010,  cadddr(((closureN)self_732394)->elts[
 }
 
 static void __lambda_1129(void *data, int argc, object self_732395, object r_73808) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall4(data,  __glo__list,  ((closureN)self_732395)->elts[0], ((closureN)self_732395)->elts[1], ((closureN)self_732395)->elts[2], r_73808);; 
+  return_closcall4(data,  __glo__list,  ((closureN)self_732395)->elts[0], ((closureN)self_732395)->elts[1], ((closureN)self_732395)->elts[2], r_73808);; 
 }
 
 static void __lambda_1128(void *data, int argc, object self_732396, object r_73804) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737916;
 c_737916.hdr.mark = gc_color_red;
  c_737916.hdr.grayed = 0;
@@ -9395,8 +9042,7 @@ return_closcall1(data,(closure)&c_737916,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1127(void *data, int argc, object self_732397, object r_73786) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737918;
 c_737918.hdr.mark = gc_color_red;
  c_737918.hdr.grayed = 0;
@@ -9414,8 +9060,7 @@ return_closcall2(data,  __glo_define_127,  &c_737918, ((closureN)self_732397)->e
 }
 
 static void __lambda_1126(void *data, int argc, object self_732398, object r_73787) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737920;
 c_737920.hdr.mark = gc_color_red;
  c_737920.hdr.grayed = 0;
@@ -9433,8 +9078,7 @@ return_closcall1(data,(closure)&c_737920,  r_73787);;
 }
 
 static void __lambda_1125(void *data, int argc, object self_732399, object global_91def_127_73327) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737922;
 c_737922.hdr.mark = gc_color_red;
  c_737922.hdr.grayed = 0;
@@ -9463,8 +9107,7 @@ return_closcall1(data,(closure)&c_737922,  &c_737992);;
 }
 
 static void __lambda_1124(void *data, int argc, object self_732400, object r_73788) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737994;
 c_737994.hdr.mark = gc_color_red;
  c_737994.hdr.grayed = 0;
@@ -9479,8 +9122,7 @@ return_closcall1(data,(closure)&c_737994,  r_73788);;
 }
 
 static void __lambda_1123(void *data, int argc, object self_732401, object ast_91cps_73330) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737996;
 c_737996.hdr.mark = gc_color_red;
  c_737996.hdr.grayed = 0;
@@ -9496,13 +9138,11 @@ return_closcall0(data,(closure)&c_737996);;
 }
 
 static void __lambda_1122(void *data, int argc, object self_732402) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall1(data,  ((closureN)self_732402)->elts[1],  ((closureN)self_732402)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732402)->elts[1],  ((closureN)self_732402)->elts[0]);; 
 }
 
 static void __lambda_1121(void *data, int argc, object self_732403, object k_73789) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, ((closureN)self_732403)->elts[2]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732403)->elts[2]) ){ 
   
 closureN_type c_737925;
 c_737925.hdr.mark = gc_color_red;
@@ -9537,8 +9177,7 @@ return_closcall2(data,  __glo_define_91c_127,  &c_737975, ((closureN)self_732403
 }
 
 static void __lambda_1120(void *data, int argc, object self_732404, object r_73802) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-if( !eq(boolean_f, r_73802) ){ 
+  if( !eq(boolean_f, r_73802) ){ 
   
 closureN_type c_737977;
 c_737977.hdr.mark = gc_color_red;
@@ -9571,8 +9210,7 @@ return_closcall0(data,(closure)&c_737982);}
 }
 
 static void __lambda_1119(void *data, int argc, object self_732405) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737984;
 c_737984.hdr.mark = gc_color_red;
  c_737984.hdr.grayed = 0;
@@ -9589,18 +9227,15 @@ return_closcall1(data,(closure)&c_737984,  quote__75halt);;
 }
 
 static void __lambda_1118(void *data, int argc, object self_732406, object r_73803) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall3(data,  cell_get(((closureN)self_732406)->elts[1]),  ((closureN)self_732406)->elts[2], ((closureN)self_732406)->elts[0], r_73803);; 
+  return_closcall3(data,  cell_get(((closureN)self_732406)->elts[1]),  ((closureN)self_732406)->elts[2], ((closureN)self_732406)->elts[0], r_73803);; 
 }
 
 static void __lambda_1117(void *data, int argc, object self_732407) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall1(data,  ((closureN)self_732407)->elts[1],  ((closureN)self_732407)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732407)->elts[1],  ((closureN)self_732407)->elts[0]);; 
 }
 
 static void __lambda_1116(void *data, int argc, object self_732408) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737927;
 c_737927.hdr.mark = gc_color_red;
  c_737927.hdr.grayed = 0;
@@ -9618,8 +9253,7 @@ return_closcall1(data,(closure)&c_737927,  quote_define);;
 }
 
 static void __lambda_1115(void *data, int argc, object self_732409, object r_73791) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737929;
 c_737929.hdr.mark = gc_color_red;
  c_737929.hdr.grayed = 0;
@@ -9638,8 +9272,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_737929, ((closureN)self_7324
 }
 
 static void __lambda_1114(void *data, int argc, object self_732410, object r_73793) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737931;
 c_737931.hdr.mark = gc_color_red;
  c_737931.hdr.grayed = 0;
@@ -9659,8 +9292,7 @@ return_closcall1(data,(closure)&c_737931,  quote_k);;
 }
 
 static void __lambda_1113(void *data, int argc, object self_732411, object r_73801) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737933;
 c_737933.hdr.mark = gc_color_red;
  c_737933.hdr.grayed = 0;
@@ -9680,8 +9312,7 @@ return_closcall2(data,  __glo_gensym,  &c_737933, r_73801);;
 }
 
 static void __lambda_1112(void *data, int argc, object self_732412, object r_73795) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737935;
 c_737935.hdr.mark = gc_color_red;
  c_737935.hdr.grayed = 0;
@@ -9702,8 +9333,7 @@ return_closcall1(data,(closure)&c_737935,  quote_r);;
 }
 
 static void __lambda_1111(void *data, int argc, object self_732413, object r_73800) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737937;
 c_737937.hdr.mark = gc_color_red;
  c_737937.hdr.grayed = 0;
@@ -9724,8 +9354,7 @@ return_closcall2(data,  __glo_gensym,  &c_737937, r_73800);;
 }
 
 static void __lambda_1110(void *data, int argc, object self_732414, object r_73796) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737939;
 c_737939.hdr.mark = gc_color_red;
  c_737939.hdr.grayed = 0;
@@ -9745,8 +9374,7 @@ return_closcall2(data,(closure)&c_737939,  ((closureN)self_732414)->elts[5], r_7
 }
 
 static void __lambda_1109(void *data, int argc, object self_732415, object k_73329, object r_73328) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737941;
 c_737941.hdr.mark = gc_color_red;
  c_737941.hdr.grayed = 0;
@@ -9765,8 +9393,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_737941, ((closureN)self_7324
 }
 
 static void __lambda_1108(void *data, int argc, object self_732416, object r_73799) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737943;
 c_737943.hdr.mark = gc_color_red;
  c_737943.hdr.grayed = 0;
@@ -9785,8 +9412,7 @@ return_closcall1(data,(closure)&c_737943,  car(r_73799));;
 }
 
 static void __lambda_1107(void *data, int argc, object self_732417, object r_73797) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737945;
 c_737945.hdr.mark = gc_color_red;
  c_737945.hdr.grayed = 0;
@@ -9806,8 +9432,7 @@ return_closcall1(data,(closure)&c_737945,  quote_unused);;
 }
 
 static void __lambda_1106(void *data, int argc, object self_732418, object r_73798) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737950;
 c_737950.hdr.mark = gc_color_red;
  c_737950.hdr.grayed = 0;
@@ -9825,8 +9450,7 @@ return_closcall3(data,  cell_get(((closureN)self_732418)->elts[0]),  &c_737950, 
 }
 
 static void __lambda_1105(void *data, int argc, object self_732419, object r_73794) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737952;
 c_737952.hdr.mark = gc_color_red;
  c_737952.hdr.grayed = 0;
@@ -9845,8 +9469,7 @@ return_closcall1(data,(closure)&c_737952,  &c_737966);;
 }
 
 static void __lambda_1104(void *data, int argc, object self_732420, object r_73792) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-
+  
 closureN_type c_737954;
 c_737954.hdr.mark = gc_color_red;
  c_737954.hdr.grayed = 0;
@@ -9864,8 +9487,7 @@ return_closcall1(data,(closure)&c_737954,  &c_737962);;
 }
 
 static void __lambda_1103(void *data, int argc, object self_732421, object r_73790) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cps-convert");
-return_closcall2(data,  cell_get(((closureN)self_732421)->elts[1]),  ((closureN)self_732421)->elts[0], r_73790);; 
+  return_closcall2(data,  cell_get(((closureN)self_732421)->elts[1]),  ((closureN)self_732421)->elts[0], r_73790);; 
 }
 
 static void __lambda_1102(void *data, int argc, closure _,object k_73930, object ast_73357, object globals_73356, object return_91unbound_73355) {
@@ -9888,8 +9510,7 @@ return_closcall5(data,(closure)&c_736949,  boolean_f, boolean_f, boolean_f, bool
 }
 
 static void __lambda_1101(void *data, int argc, object self_732422, object convert_73367, object find_91defined_91vars_73366, object initialize_91defined_91vars_73365, object initialize_91top_91level_91vars_73364, object make_91a_91lookup_73363) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736951;
 c_736951.hdr.mark = gc_color_red;
  c_736951.hdr.grayed = 0;
@@ -9913,8 +9534,7 @@ return_closcall1(data,(closure)&c_736951,  &c_737887);;
 }
 
 static void __lambda_1100(void *data, int argc, object self_732423, object convert_73367) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736953;
 c_736953.hdr.mark = gc_color_red;
  c_736953.hdr.grayed = 0;
@@ -9938,8 +9558,7 @@ return_closcall1(data,(closure)&c_736953,  &c_737883);;
 }
 
 static void __lambda_1099(void *data, int argc, object self_732424, object find_91defined_91vars_73366) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736955;
 c_736955.hdr.mark = gc_color_red;
  c_736955.hdr.grayed = 0;
@@ -9963,8 +9582,7 @@ return_closcall1(data,(closure)&c_736955,  &c_737879);;
 }
 
 static void __lambda_1098(void *data, int argc, object self_732425, object initialize_91defined_91vars_73365) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736957;
 c_736957.hdr.mark = gc_color_red;
  c_736957.hdr.grayed = 0;
@@ -9988,8 +9606,7 @@ return_closcall1(data,(closure)&c_736957,  &c_737875);;
 }
 
 static void __lambda_1097(void *data, int argc, object self_732426, object initialize_91top_91level_91vars_73364) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736959;
 c_736959.hdr.mark = gc_color_red;
  c_736959.hdr.grayed = 0;
@@ -10013,8 +9630,7 @@ return_closcall1(data,(closure)&c_736959,  &c_737871);;
 }
 
 static void __lambda_1096(void *data, int argc, object self_732427, object make_91a_91lookup_73363) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736961;
 c_736961.hdr.mark = gc_color_red;
  c_736961.hdr.grayed = 0;
@@ -10037,8 +9653,7 @@ return_closcall5(data,(closure)&c_736961,  boolean_f, boolean_f, boolean_f, bool
 }
 
 static void __lambda_1095(void *data, int argc, object self_732428, object initialize_91top_91level_91vars_73372, object find_91defined_91vars_73371, object make_91a_91lookup_73370, object initialize_91defined_91vars_73369, object convert_73368) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736963;
 c_736963.hdr.mark = gc_color_red;
  c_736963.hdr.grayed = 0;
@@ -10063,8 +9678,7 @@ return_closcall1(data,(closure)&c_736963,  &c_737820);;
 }
 
 static void __lambda_1094(void *data, int argc, object self_732429, object k_731110, object ast_73417, object fv_73416) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737822;
 c_737822.hdr.mark = gc_color_red;
  c_737822.hdr.grayed = 0;
@@ -10083,8 +9697,7 @@ return_closcall1(data,(closure)&c_737822,  &c_737868);;
 }
 
 static void __lambda_1093(void *data, int argc, object self_732430, object r_731120) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737824;
 c_737824.hdr.mark = gc_color_red;
  c_737824.hdr.grayed = 0;
@@ -10103,8 +9716,7 @@ return_closcall1(data,(closure)&c_737824,  __num_gt(data, r_731120, &c_737865));
 }
 
 static void __lambda_1092(void *data, int argc, object self_732431, object r_731111) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731111) ){ 
+  if( !eq(boolean_f, r_731111) ){ 
   
 closureN_type c_737826;
 c_737826.hdr.mark = gc_color_red;
@@ -10125,8 +9737,7 @@ return_closcall1(data,(closure)&c_737826,  quote_lambda);
 }
 
 static void __lambda_1091(void *data, int argc, object self_732432, object r_731116) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737828;
 c_737828.hdr.mark = gc_color_red;
  c_737828.hdr.grayed = 0;
@@ -10144,8 +9755,7 @@ return_closcall1(data,(closure)&c_737828,  nil);;
 }
 
 static void __lambda_1090(void *data, int argc, object self_732433, object r_731119) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737830;
 c_737830.hdr.mark = gc_color_red;
  c_737830.hdr.grayed = 0;
@@ -10164,8 +9774,7 @@ return_closcall1(data,(closure)&c_737830,  &c_737858);;
 }
 
 static void __lambda_1089(void *data, int argc, object self_732434, object r_731118) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737832;
 c_737832.hdr.mark = gc_color_red;
  c_737832.hdr.grayed = 0;
@@ -10184,8 +9793,7 @@ return_closcall1(data,(closure)&c_737832,  &c_737854);;
 }
 
 static void __lambda_1088(void *data, int argc, object self_732435, object r_731117) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737834;
 c_737834.hdr.mark = gc_color_red;
  c_737834.hdr.grayed = 0;
@@ -10203,8 +9811,7 @@ return_closcall1(data,(closure)&c_737834,  &c_737850);;
 }
 
 static void __lambda_1087(void *data, int argc, object self_732436, object r_731112) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737836;
 c_737836.hdr.mark = gc_color_red;
  c_737836.hdr.grayed = 0;
@@ -10223,13 +9830,11 @@ return_closcall1(data,(closure)&c_737836,  &c_737846);;
 }
 
 static void __lambda_1086(void *data, int argc, object self_732437, object k_731115, object _191_73418) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_731115,  boolean_f);; 
+  return_closcall1(data,  k_731115,  boolean_f);; 
 }
 
 static void __lambda_1085(void *data, int argc, object self_732438, object r_731114) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737838;
 c_737838.hdr.mark = gc_color_red;
  c_737838.hdr.grayed = 0;
@@ -10245,15 +9850,13 @@ return_closcall3(data,  __glo_map,  &c_737838, r_731114, ((closureN)self_732438)
 }
 
 static void __lambda_1084(void *data, int argc, object self_732439, object r_731113) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737843,((closureN)self_732439)->elts[1], r_731113);
 return_closcall1(data,  ((closureN)self_732439)->elts[0],  &c_737843);; 
 }
 
 static void __lambda_1083(void *data, int argc, object self_732440, object r_731109) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736965;
 c_736965.hdr.mark = gc_color_red;
  c_736965.hdr.grayed = 0;
@@ -10276,8 +9879,7 @@ return_closcall1(data,(closure)&c_736965,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1082(void *data, int argc, object self_732441, object r_73931) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736967;
 c_736967.hdr.mark = gc_color_red;
  c_736967.hdr.grayed = 0;
@@ -10302,8 +9904,7 @@ return_closcall1(data,(closure)&c_736967,  &c_737791);;
 }
 
 static void __lambda_1081(void *data, int argc, object self_732442, object k_731101, object ast_73413) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737793;
 c_737793.hdr.mark = gc_color_red;
  c_737793.hdr.grayed = 0;
@@ -10321,8 +9922,7 @@ return_closcall1(data,(closure)&c_737793,  &c_737810);;
 }
 
 static void __lambda_1080(void *data, int argc, object self_732443, object k_731107, object expr_73415) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737812;
 c_737812.hdr.mark = gc_color_red;
  c_737812.hdr.grayed = 0;
@@ -10337,13 +9937,11 @@ return_closcall1(data,(closure)&c_737812,  Cyc_is_null(expr_73415));;
 }
 
 static void __lambda_1079(void *data, int argc, object self_732444, object r_731108) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall2(data,  __glo_not,  ((closureN)self_732444)->elts[0], r_731108);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_732444)->elts[0], r_731108);; 
 }
 
 static void __lambda_1078(void *data, int argc, object self_732445, object r_731102) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737795;
 c_737795.hdr.mark = gc_color_red;
  c_737795.hdr.grayed = 0;
@@ -10362,8 +9960,7 @@ return_closcall1(data,(closure)&c_737795,  &c_737802);;
 }
 
 static void __lambda_1077(void *data, int argc, object self_732446, object k_731105, object expr_73414) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737804;
 c_737804.hdr.mark = gc_color_red;
  c_737804.hdr.grayed = 0;
@@ -10379,8 +9976,7 @@ return_closcall2(data,  __glo_define_127,  &c_737804, expr_73414);;
 }
 
 static void __lambda_1076(void *data, int argc, object self_732447, object r_731106) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731106) ){ 
+  if( !eq(boolean_f, r_731106) ){ 
   return_closcall2(data,  __glo_define_91_125var,  ((closureN)self_732447)->elts[1], ((closureN)self_732447)->elts[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_732447)->elts[1],  nil);}
@@ -10388,8 +9984,7 @@ if( !eq(boolean_f, r_731106) ){
 }
 
 static void __lambda_1075(void *data, int argc, object self_732448, object r_731104) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737797;
 c_737797.hdr.mark = gc_color_red;
  c_737797.hdr.grayed = 0;
@@ -10405,13 +10000,11 @@ return_closcall3(data,  __glo_map,  &c_737797, r_731104, ((closureN)self_732448)
 }
 
 static void __lambda_1074(void *data, int argc, object self_732449, object r_731103) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  __glo_filter,  ((closureN)self_732449)->elts[0], ((closureN)self_732449)->elts[1], r_731103);; 
+  return_closcall3(data,  __glo_filter,  ((closureN)self_732449)->elts[0], ((closureN)self_732449)->elts[1], r_731103);; 
 }
 
 static void __lambda_1073(void *data, int argc, object self_732450, object r_731100) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736969;
 c_736969.hdr.mark = gc_color_red;
  c_736969.hdr.grayed = 0;
@@ -10434,8 +10027,7 @@ return_closcall1(data,(closure)&c_736969,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1072(void *data, int argc, object self_732451, object r_73932) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736971;
 c_736971.hdr.mark = gc_color_red;
  c_736971.hdr.grayed = 0;
@@ -10460,8 +10052,7 @@ return_closcall1(data,(closure)&c_736971,  &c_737773);;
 }
 
 static void __lambda_1071(void *data, int argc, object self_732452, object k_731096, object vars_73411) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737775;
 c_737775.hdr.mark = gc_color_red;
  c_737775.hdr.grayed = 0;
@@ -10479,8 +10070,7 @@ return_closcall1(data,(closure)&c_737775,  &c_737779);;
 }
 
 static void __lambda_1070(void *data, int argc, object self_732453, object k_731098, object a_73412) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737781;
 c_737781.hdr.mark = gc_color_red;
  c_737781.hdr.grayed = 0;
@@ -10496,20 +10086,17 @@ return_closcall2(data,  __glo_gensym,  &c_737781, a_73412);;
 }
 
 static void __lambda_1069(void *data, int argc, object self_732454, object r_731099) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737786,((closureN)self_732454)->elts[0], r_731099);
 return_closcall1(data,  ((closureN)self_732454)->elts[1],  &c_737786);; 
 }
 
 static void __lambda_1068(void *data, int argc, object self_732455, object r_731097) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  __glo_map,  ((closureN)self_732455)->elts[0], r_731097, ((closureN)self_732455)->elts[1]);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_732455)->elts[0], r_731097, ((closureN)self_732455)->elts[1]);; 
 }
 
 static void __lambda_1067(void *data, int argc, object self_732456, object r_731095) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736973;
 c_736973.hdr.mark = gc_color_red;
  c_736973.hdr.grayed = 0;
@@ -10532,8 +10119,7 @@ return_closcall1(data,(closure)&c_736973,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1066(void *data, int argc, object self_732457, object r_73933) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736975;
 c_736975.hdr.mark = gc_color_red;
  c_736975.hdr.grayed = 0;
@@ -10558,8 +10144,7 @@ return_closcall1(data,(closure)&c_736975,  &c_737720);;
 }
 
 static void __lambda_1065(void *data, int argc, object self_732458, object k_731084, object ast_73409, object vars_73408) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737722;
 c_737722.hdr.mark = gc_color_red;
  c_737722.hdr.grayed = 0;
@@ -10578,8 +10163,7 @@ return_closcall1(data,(closure)&c_737722,  &c_737769);;
 }
 
 static void __lambda_1064(void *data, int argc, object self_732459, object r_731094) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737724;
 c_737724.hdr.mark = gc_color_red;
  c_737724.hdr.grayed = 0;
@@ -10598,8 +10182,7 @@ return_closcall1(data,(closure)&c_737724,  __num_gt(data, r_731094, &c_737766));
 }
 
 static void __lambda_1063(void *data, int argc, object self_732460, object r_731085) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731085) ){ 
+  if( !eq(boolean_f, r_731085) ){ 
   
 closureN_type c_737726;
 c_737726.hdr.mark = gc_color_red;
@@ -10620,8 +10203,7 @@ return_closcall1(data,(closure)&c_737726,  quote_lambda);
 }
 
 static void __lambda_1062(void *data, int argc, object self_732461, object r_731092) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737728;
 c_737728.hdr.mark = gc_color_red;
  c_737728.hdr.grayed = 0;
@@ -10640,8 +10222,7 @@ return_closcall1(data,(closure)&c_737728,  &c_737758);;
 }
 
 static void __lambda_1061(void *data, int argc, object self_732462, object r_731093) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737730;
 c_737730.hdr.mark = gc_color_red;
  c_737730.hdr.grayed = 0;
@@ -10659,8 +10240,7 @@ return_closcall1(data,(closure)&c_737730,  &c_737754);;
 }
 
 static void __lambda_1060(void *data, int argc, object self_732463, object r_731088) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737732;
 c_737732.hdr.mark = gc_color_red;
  c_737732.hdr.grayed = 0;
@@ -10679,13 +10259,11 @@ return_closcall1(data,(closure)&c_737732,  &c_737750);;
 }
 
 static void __lambda_1059(void *data, int argc, object self_732464, object k_731091, object _191_73410) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_731091,  boolean_f);; 
+  return_closcall1(data,  k_731091,  boolean_f);; 
 }
 
 static void __lambda_1058(void *data, int argc, object self_732465, object r_731090) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737734;
 c_737734.hdr.mark = gc_color_red;
  c_737734.hdr.grayed = 0;
@@ -10701,8 +10279,7 @@ return_closcall3(data,  __glo_map,  &c_737734, r_731090, ((closureN)self_732465)
 }
 
 static void __lambda_1057(void *data, int argc, object self_732466, object r_731089) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737736;
 c_737736.hdr.mark = gc_color_red;
  c_737736.hdr.grayed = 0;
@@ -10719,8 +10296,7 @@ return_closcall1(data,(closure)&c_737736,  &c_737747);;
 }
 
 static void __lambda_1056(void *data, int argc, object self_732467, object r_731086) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737738;
 c_737738.hdr.mark = gc_color_red;
  c_737738.hdr.grayed = 0;
@@ -10736,15 +10312,13 @@ return_closcall1(data,(closure)&c_737738,  nil);;
 }
 
 static void __lambda_1055(void *data, int argc, object self_732468, object r_731087) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737743,((closureN)self_732468)->elts[1], r_731087);
 return_closcall1(data,  ((closureN)self_732468)->elts[0],  &c_737743);; 
 }
 
 static void __lambda_1054(void *data, int argc, object self_732469, object r_731083) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736977;
 c_736977.hdr.mark = gc_color_red;
  c_736977.hdr.grayed = 0;
@@ -10767,8 +10341,7 @@ return_closcall1(data,(closure)&c_736977,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_1053(void *data, int argc, object self_732470, object r_73934) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736979;
 c_736979.hdr.mark = gc_color_red;
  c_736979.hdr.grayed = 0;
@@ -10804,8 +10377,7 @@ return_closcall1(data,(closure)&c_736979,  &c_737406);;
 }
 
 static void __lambda_1052(void *data, int argc, object self_732471, object k_731024, object ast_73391, object renamed_73390) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737408;
 c_737408.hdr.mark = gc_color_red;
  c_737408.hdr.grayed = 0;
@@ -10826,8 +10398,7 @@ return_closcall2(data,  __glo_const_127,  &c_737408, ast_73391);;
 }
 
 static void __lambda_1051(void *data, int argc, object self_732472, object r_731025) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731025) ){ 
+  if( !eq(boolean_f, r_731025) ){ 
   
 closureN_type c_737410;
 c_737410.hdr.mark = gc_color_red;
@@ -10864,8 +10435,7 @@ return_closcall2(data,  __glo_quote_127,  &c_737415, ((closureN)self_732472)->el
 }
 
 static void __lambda_1050(void *data, int argc, object self_732473, object r_731026) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731026) ){ 
+  if( !eq(boolean_f, r_731026) ){ 
   
 closureN_type c_737417;
 c_737417.hdr.mark = gc_color_red;
@@ -10902,8 +10472,7 @@ return_closcall2(data,  __glo_ref_127,  &c_737422, ((closureN)self_732473)->elts
 }
 
 static void __lambda_1049(void *data, int argc, object self_732474, object r_731027) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731027) ){ 
+  if( !eq(boolean_f, r_731027) ){ 
   
 closureN_type c_737424;
 c_737424.hdr.mark = gc_color_red;
@@ -10941,8 +10510,7 @@ return_closcall2(data,  __glo_define_127,  &c_737446, ((closureN)self_732474)->e
 }
 
 static void __lambda_1048(void *data, int argc, object self_732475, object r_731029) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731029) ){ 
+  if( !eq(boolean_f, r_731029) ){ 
   
 closureN_type c_737448;
 c_737448.hdr.mark = gc_color_red;
@@ -10981,8 +10549,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_737474, ((closureN)self_732475)->e
 }
 
 static void __lambda_1047(void *data, int argc, object self_732476, object r_731035) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731035) ){ 
+  if( !eq(boolean_f, r_731035) ){ 
   
 closureN_type c_737476;
 c_737476.hdr.mark = gc_color_red;
@@ -11021,8 +10588,7 @@ return_closcall2(data,  __glo_if_127,  &c_737502, ((closureN)self_732476)->elts[
 }
 
 static void __lambda_1046(void *data, int argc, object self_732477, object r_731041) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731041) ){ 
+  if( !eq(boolean_f, r_731041) ){ 
   
 closureN_type c_737504;
 c_737504.hdr.mark = gc_color_red;
@@ -11061,8 +10627,7 @@ return_closcall2(data,  __glo_prim_91call_127,  &c_737545, ((closureN)self_73247
 }
 
 static void __lambda_1045(void *data, int argc, object self_732478, object r_731050) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731050) ){ 
+  if( !eq(boolean_f, r_731050) ){ 
   
 closureN_type c_737547;
 c_737547.hdr.mark = gc_color_red;
@@ -11101,8 +10666,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_737586, ((closureN)self_732478)->e
 }
 
 static void __lambda_1044(void *data, int argc, object self_732479, object r_731058) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731058) ){ 
+  if( !eq(boolean_f, r_731058) ){ 
   
 closureN_type c_737588;
 c_737588.hdr.mark = gc_color_red;
@@ -11141,8 +10705,7 @@ return_closcall2(data,  __glo_app_127,  &c_737689, ((closureN)self_732479)->elts
 }
 
 static void __lambda_1043(void *data, int argc, object self_732480, object r_731080) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731080) ){ 
+  if( !eq(boolean_f, r_731080) ){ 
   
 closureN_type c_737691;
 c_737691.hdr.mark = gc_color_red;
@@ -11176,15 +10739,13 @@ return_closcall0(data,(closure)&c_737704);}
 }
 
 static void __lambda_1042(void *data, int argc, object self_732481) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_string(c_737707, "unhandled expression: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732481)->elts[1], &c_737707, ((closureN)self_732481)->elts[0]);; 
 }
 
 static void __lambda_1041(void *data, int argc, object self_732482) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737693;
 c_737693.hdr.mark = gc_color_red;
  c_737693.hdr.grayed = 0;
@@ -11212,18 +10773,15 @@ return_closcall1(data,(closure)&c_737693,  &c_737697);;
 }
 
 static void __lambda_1040(void *data, int argc, object self_732483, object k_731082, object a_73392) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732483)->elts[0]),  k_731082, a_73392, ((closureN)self_732483)->elts[1]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732483)->elts[0]),  k_731082, a_73392, ((closureN)self_732483)->elts[1]);; 
 }
 
 static void __lambda_1039(void *data, int argc, object self_732484, object r_731081) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  __glo_map,  ((closureN)self_732484)->elts[1], r_731081, ((closureN)self_732484)->elts[0]);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_732484)->elts[1], r_731081, ((closureN)self_732484)->elts[0]);; 
 }
 
 static void __lambda_1038(void *data, int argc, object self_732485) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737590;
 c_737590.hdr.mark = gc_color_red;
  c_737590.hdr.grayed = 0;
@@ -11244,8 +10802,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_737590, ((closure
 }
 
 static void __lambda_1037(void *data, int argc, object self_732486, object r_731059) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737592;
 c_737592.hdr.mark = gc_color_red;
  c_737592.hdr.grayed = 0;
@@ -11266,8 +10823,7 @@ return_closcall1(data,(closure)&c_737592,  r_731059);;
 }
 
 static void __lambda_1036(void *data, int argc, object self_732487, object args_73393) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737594;
 c_737594.hdr.mark = gc_color_red;
  c_737594.hdr.grayed = 0;
@@ -11289,8 +10845,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_737594, ((closureN)se
 }
 
 static void __lambda_1035(void *data, int argc, object self_732488, object r_731060) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737596;
 c_737596.hdr.mark = gc_color_red;
  c_737596.hdr.grayed = 0;
@@ -11312,8 +10867,7 @@ return_closcall1(data,(closure)&c_737596,  r_731060);;
 }
 
 static void __lambda_1034(void *data, int argc, object self_732489, object ltype_73394) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737598;
 c_737598.hdr.mark = gc_color_red;
  c_737598.hdr.grayed = 0;
@@ -11338,8 +10892,7 @@ return_closcall1(data,(closure)&c_737598,  &c_737677);;
 }
 
 static void __lambda_1033(void *data, int argc, object self_732490, object k_731078, object a_73395) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737679;
 c_737679.hdr.mark = gc_color_red;
  c_737679.hdr.grayed = 0;
@@ -11355,15 +10908,13 @@ return_closcall2(data,  __glo_gensym,  &c_737679, a_73395);;
 }
 
 static void __lambda_1032(void *data, int argc, object self_732491, object r_731079) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737684,((closureN)self_732491)->elts[0], r_731079);
 return_closcall1(data,  ((closureN)self_732491)->elts[1],  &c_737684);; 
 }
 
 static void __lambda_1031(void *data, int argc, object self_732492, object r_731077) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737600;
 c_737600.hdr.mark = gc_color_red;
  c_737600.hdr.grayed = 0;
@@ -11385,8 +10936,7 @@ return_closcall3(data,  __glo_map,  &c_737600, r_731077, ((closureN)self_732492)
 }
 
 static void __lambda_1030(void *data, int argc, object self_732493, object r_731061) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737602;
 c_737602.hdr.mark = gc_color_red;
  c_737602.hdr.grayed = 0;
@@ -11408,8 +10958,7 @@ return_closcall1(data,(closure)&c_737602,  r_731061);;
 }
 
 static void __lambda_1029(void *data, int argc, object self_732494, object a_91lookup_73396) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737604;
 c_737604.hdr.mark = gc_color_red;
  c_737604.hdr.grayed = 0;
@@ -11431,8 +10980,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_737604, ((closureN)self_7324
 }
 
 static void __lambda_1028(void *data, int argc, object self_732495, object r_731062) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737606;
 c_737606.hdr.mark = gc_color_red;
  c_737606.hdr.grayed = 0;
@@ -11454,8 +11002,7 @@ return_closcall1(data,(closure)&c_737606,  r_731062);;
 }
 
 static void __lambda_1027(void *data, int argc, object self_732496, object body_73397) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737611;
 c_737611.hdr.mark = gc_color_red;
  c_737611.hdr.grayed = 0;
@@ -11477,8 +11024,7 @@ return_closcall2(data,  cell_get(((closureN)self_732496)->elts[2]),  &c_737611, 
 }
 
 static void __lambda_1026(void *data, int argc, object self_732497, object r_731063) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737613;
 c_737613.hdr.mark = gc_color_red;
  c_737613.hdr.grayed = 0;
@@ -11500,8 +11046,7 @@ return_closcall1(data,(closure)&c_737613,  r_731063);;
 }
 
 static void __lambda_1025(void *data, int argc, object self_732498, object define_91vars_73398) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737618;
 c_737618.hdr.mark = gc_color_red;
  c_737618.hdr.grayed = 0;
@@ -11522,8 +11067,7 @@ return_closcall2(data,  cell_get(((closureN)self_732498)->elts[6]),  &c_737618, 
 }
 
 static void __lambda_1024(void *data, int argc, object self_732499, object r_731064) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737620;
 c_737620.hdr.mark = gc_color_red;
  c_737620.hdr.grayed = 0;
@@ -11544,8 +11088,7 @@ return_closcall1(data,(closure)&c_737620,  r_731064);;
 }
 
 static void __lambda_1023(void *data, int argc, object self_732500, object defines_91a_91lookup_73399) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737622;
 c_737622.hdr.mark = gc_color_red;
  c_737622.hdr.grayed = 0;
@@ -11567,8 +11110,7 @@ return_closcall0(data,(closure)&c_737622);;
 }
 
 static void __lambda_1022(void *data, int argc, object self_732501) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737624;
 c_737624.hdr.mark = gc_color_red;
  c_737624.hdr.grayed = 0;
@@ -11590,8 +11132,7 @@ return_closcall1(data,(closure)&c_737624,  quote_lambda);;
 }
 
 static void __lambda_1021(void *data, int argc, object self_732502, object r_731065) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737626;
 c_737626.hdr.mark = gc_color_red;
  c_737626.hdr.grayed = 0;
@@ -11616,13 +11157,11 @@ return_closcall1(data,(closure)&c_737626,  &c_737671);;
 }
 
 static void __lambda_1020(void *data, int argc, object self_732503, object k_731076, object p_73401) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_731076,  cdr(p_73401));; 
+  return_closcall1(data,  k_731076,  cdr(p_73401));; 
 }
 
 static void __lambda_1019(void *data, int argc, object self_732504, object r_731075) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737628;
 c_737628.hdr.mark = gc_color_red;
  c_737628.hdr.grayed = 0;
@@ -11645,8 +11184,7 @@ return_closcall3(data,  __glo_map,  &c_737628, r_731075, ((closureN)self_732504)
 }
 
 static void __lambda_1018(void *data, int argc, object self_732505, object r_731074) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737630;
 c_737630.hdr.mark = gc_color_red;
  c_737630.hdr.grayed = 0;
@@ -11668,8 +11206,7 @@ return_closcall3(data,  __glo_list_91_125lambda_91formals,  &c_737630, r_731074,
 }
 
 static void __lambda_1017(void *data, int argc, object self_732506, object r_731067) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737632;
 c_737632.hdr.mark = gc_color_red;
  c_737632.hdr.grayed = 0;
@@ -11690,8 +11227,7 @@ return_closcall4(data,  __glo_append,  &c_737632, ((closureN)self_732506)->elts[
 }
 
 static void __lambda_1016(void *data, int argc, object self_732507, object r_731073) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737637;
 c_737637.hdr.mark = gc_color_red;
  c_737637.hdr.grayed = 0;
@@ -11710,8 +11246,7 @@ return_closcall3(data,  cell_get(((closureN)self_732507)->elts[1]),  &c_737637, 
 }
 
 static void __lambda_1015(void *data, int argc, object self_732508, object r_731069) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737639;
 c_737639.hdr.mark = gc_color_red;
  c_737639.hdr.grayed = 0;
@@ -11733,13 +11268,11 @@ return_closcall1(data,(closure)&c_737639,  &c_737661);;
 }
 
 static void __lambda_1014(void *data, int argc, object self_732509, object k_731072, object p_73400) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_731072,  cdr(p_73400));; 
+  return_closcall1(data,  k_731072,  cdr(p_73400));; 
 }
 
 static void __lambda_1013(void *data, int argc, object self_732510, object r_731071) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737641;
 c_737641.hdr.mark = gc_color_red;
  c_737641.hdr.grayed = 0;
@@ -11758,8 +11291,7 @@ return_closcall3(data,  __glo_map,  &c_737641, r_731071, ((closureN)self_732510)
 }
 
 static void __lambda_1012(void *data, int argc, object self_732511, object r_731070) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737646;
 c_737646.hdr.mark = gc_color_red;
  c_737646.hdr.grayed = 0;
@@ -11776,8 +11308,7 @@ return_closcall3(data,  cell_get(((closureN)self_732511)->elts[0]),  &c_737646, 
 }
 
 static void __lambda_1011(void *data, int argc, object self_732512, object r_731068) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737648;
 c_737648.hdr.mark = gc_color_red;
  c_737648.hdr.grayed = 0;
@@ -11795,15 +11326,13 @@ return_closcall1(data,(closure)&c_737648,  &c_737657);;
 }
 
 static void __lambda_1010(void *data, int argc, object self_732513, object r_731066) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737653,((closureN)self_732513)->elts[1], r_731066);
 return_closcall1(data,  ((closureN)self_732513)->elts[0],  &c_737653);; 
 }
 
 static void __lambda_1009(void *data, int argc, object self_732514) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737549;
 c_737549.hdr.mark = gc_color_red;
  c_737549.hdr.grayed = 0;
@@ -11821,8 +11350,7 @@ return_closcall1(data,(closure)&c_737549,  car(((closureN)self_732514)->elts[0])
 }
 
 static void __lambda_1008(void *data, int argc, object self_732515, object r_731053) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737551;
 c_737551.hdr.mark = gc_color_red;
  c_737551.hdr.grayed = 0;
@@ -11851,13 +11379,11 @@ return_closcall1(data,(closure)&c_737551,  &c_737576);;
 }
 
 static void __lambda_1007(void *data, int argc, object self_732516, object k_731057, object a_73402) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732516)->elts[0]),  k_731057, a_73402, ((closureN)self_732516)->elts[1]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732516)->elts[0]),  k_731057, a_73402, ((closureN)self_732516)->elts[1]);; 
 }
 
 static void __lambda_1006(void *data, int argc, object self_732517, object r_731055) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737553;
 c_737553.hdr.mark = gc_color_red;
  c_737553.hdr.grayed = 0;
@@ -11874,8 +11400,7 @@ return_closcall1(data,(closure)&c_737553,  cdr(((closureN)self_732517)->elts[0])
 }
 
 static void __lambda_1005(void *data, int argc, object self_732518, object r_731056) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737555;
 c_737555.hdr.mark = gc_color_red;
  c_737555.hdr.grayed = 0;
@@ -11891,8 +11416,7 @@ return_closcall3(data,  __glo_map,  &c_737555, ((closureN)self_732518)->elts[2],
 }
 
 static void __lambda_1004(void *data, int argc, object self_732519, object r_731054) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737557;
 c_737557.hdr.mark = gc_color_red;
  c_737557.hdr.grayed = 0;
@@ -11909,8 +11433,7 @@ return_closcall1(data,(closure)&c_737557,  &c_737570);;
 }
 
 static void __lambda_1003(void *data, int argc, object self_732520, object r_731051) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737559;
 c_737559.hdr.mark = gc_color_red;
  c_737559.hdr.grayed = 0;
@@ -11925,8 +11448,7 @@ return_closcall1(data,(closure)&c_737559,  r_731051);;
 }
 
 static void __lambda_1002(void *data, int argc, object self_732521, object converted_73403) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737561;
 c_737561.hdr.mark = gc_color_red;
  c_737561.hdr.grayed = 0;
@@ -11942,8 +11464,7 @@ return_closcall2(data,  __glo_precompute_91prim_91app_127,  &c_737561, converted
 }
 
 static void __lambda_1001(void *data, int argc, object self_732522, object r_731052) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731052) ){ 
+  if( !eq(boolean_f, r_731052) ){ 
   return_closcall2(data,  __glo_eval,  ((closureN)self_732522)->elts[1], ((closureN)self_732522)->elts[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_732522)->elts[1],  ((closureN)self_732522)->elts[0]);}
@@ -11951,8 +11472,7 @@ if( !eq(boolean_f, r_731052) ){
 }
 
 static void __lambda_1000(void *data, int argc, object self_732523) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737506;
 c_737506.hdr.mark = gc_color_red;
  c_737506.hdr.grayed = 0;
@@ -11970,8 +11490,7 @@ return_closcall2(data,  __glo_if_91else_127,  &c_737506, ((closureN)self_732523)
 }
 
 static void __lambda_999(void *data, int argc, object self_732524, object r_731042) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_731042) ){ 
+  if( !eq(boolean_f, r_731042) ){ 
   
 closureN_type c_737508;
 c_737508.hdr.mark = gc_color_red;
@@ -12009,8 +11528,7 @@ return_closcall1(data,(closure)&c_737532,  &c_737542);}
 }
 
 static void __lambda_998(void *data, int argc, object self_732525, object r_731049) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737534;
 c_737534.hdr.mark = gc_color_red;
  c_737534.hdr.grayed = 0;
@@ -12027,13 +11545,11 @@ return_closcall3(data,  __glo_append,  &c_737534, ((closureN)self_732525)->elts[
 }
 
 static void __lambda_997(void *data, int argc, object self_732526, object r_731048) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732526)->elts[0]),  ((closureN)self_732526)->elts[1], r_731048, ((closureN)self_732526)->elts[2]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732526)->elts[0]),  ((closureN)self_732526)->elts[1], r_731048, ((closureN)self_732526)->elts[2]);; 
 }
 
 static void __lambda_996(void *data, int argc, object self_732527, object r_731043) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737510;
 c_737510.hdr.mark = gc_color_red;
  c_737510.hdr.grayed = 0;
@@ -12062,13 +11578,11 @@ return_closcall1(data,(closure)&c_737510,  &c_737525);;
 }
 
 static void __lambda_995(void *data, int argc, object self_732528, object k_731047, object a_73404) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732528)->elts[0]),  k_731047, a_73404, ((closureN)self_732528)->elts[1]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732528)->elts[0]),  k_731047, a_73404, ((closureN)self_732528)->elts[1]);; 
 }
 
 static void __lambda_994(void *data, int argc, object self_732529, object r_731045) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737512;
 c_737512.hdr.mark = gc_color_red;
  c_737512.hdr.grayed = 0;
@@ -12085,8 +11599,7 @@ return_closcall1(data,(closure)&c_737512,  cdr(((closureN)self_732529)->elts[0])
 }
 
 static void __lambda_993(void *data, int argc, object self_732530, object r_731046) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737514;
 c_737514.hdr.mark = gc_color_red;
  c_737514.hdr.grayed = 0;
@@ -12102,15 +11615,13 @@ return_closcall3(data,  __glo_map,  &c_737514, ((closureN)self_732530)->elts[2],
 }
 
 static void __lambda_992(void *data, int argc, object self_732531, object r_731044) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737519,((closureN)self_732531)->elts[1], r_731044);
 return_closcall1(data,  ((closureN)self_732531)->elts[0],  &c_737519);; 
 }
 
 static void __lambda_991(void *data, int argc, object self_732532) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737478;
 c_737478.hdr.mark = gc_color_red;
  c_737478.hdr.grayed = 0;
@@ -12128,8 +11639,7 @@ return_closcall1(data,(closure)&c_737478,  quote_set_67);;
 }
 
 static void __lambda_990(void *data, int argc, object self_732533, object r_731036) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737480;
 c_737480.hdr.mark = gc_color_red;
  c_737480.hdr.grayed = 0;
@@ -12158,13 +11668,11 @@ return_closcall1(data,(closure)&c_737480,  &c_737495);;
 }
 
 static void __lambda_989(void *data, int argc, object self_732534, object k_731040, object a_73405) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732534)->elts[0]),  k_731040, a_73405, ((closureN)self_732534)->elts[1]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732534)->elts[0]),  k_731040, a_73405, ((closureN)self_732534)->elts[1]);; 
 }
 
 static void __lambda_988(void *data, int argc, object self_732535, object r_731038) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737482;
 c_737482.hdr.mark = gc_color_red;
  c_737482.hdr.grayed = 0;
@@ -12181,8 +11689,7 @@ return_closcall1(data,(closure)&c_737482,  cdr(((closureN)self_732535)->elts[0])
 }
 
 static void __lambda_987(void *data, int argc, object self_732536, object r_731039) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737484;
 c_737484.hdr.mark = gc_color_red;
  c_737484.hdr.grayed = 0;
@@ -12198,15 +11705,13 @@ return_closcall3(data,  __glo_map,  &c_737484, ((closureN)self_732536)->elts[2],
 }
 
 static void __lambda_986(void *data, int argc, object self_732537, object r_731037) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737489,((closureN)self_732537)->elts[1], r_731037);
 return_closcall1(data,  ((closureN)self_732537)->elts[0],  &c_737489);; 
 }
 
 static void __lambda_985(void *data, int argc, object self_732538) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737450;
 c_737450.hdr.mark = gc_color_red;
  c_737450.hdr.grayed = 0;
@@ -12224,8 +11729,7 @@ return_closcall1(data,(closure)&c_737450,  quote_set_67);;
 }
 
 static void __lambda_984(void *data, int argc, object self_732539, object r_731030) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737452;
 c_737452.hdr.mark = gc_color_red;
  c_737452.hdr.grayed = 0;
@@ -12254,13 +11758,11 @@ return_closcall1(data,(closure)&c_737452,  &c_737467);;
 }
 
 static void __lambda_983(void *data, int argc, object self_732540, object k_731034, object a_73406) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732540)->elts[0]),  k_731034, a_73406, ((closureN)self_732540)->elts[1]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732540)->elts[0]),  k_731034, a_73406, ((closureN)self_732540)->elts[1]);; 
 }
 
 static void __lambda_982(void *data, int argc, object self_732541, object r_731032) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737454;
 c_737454.hdr.mark = gc_color_red;
  c_737454.hdr.grayed = 0;
@@ -12277,8 +11779,7 @@ return_closcall1(data,(closure)&c_737454,  cdr(((closureN)self_732541)->elts[0])
 }
 
 static void __lambda_981(void *data, int argc, object self_732542, object r_731033) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737456;
 c_737456.hdr.mark = gc_color_red;
  c_737456.hdr.grayed = 0;
@@ -12294,15 +11795,13 @@ return_closcall3(data,  __glo_map,  &c_737456, ((closureN)self_732542)->elts[2],
 }
 
 static void __lambda_980(void *data, int argc, object self_732543, object r_731031) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737461,((closureN)self_732543)->elts[1], r_731031);
 return_closcall1(data,  ((closureN)self_732543)->elts[0],  &c_737461);; 
 }
 
 static void __lambda_979(void *data, int argc, object self_732544) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737426;
 c_737426.hdr.mark = gc_color_red;
  c_737426.hdr.grayed = 0;
@@ -12318,8 +11817,7 @@ return_closcall1(data,(closure)&c_737426,  assoc(data, ((closureN)self_732544)->
 }
 
 static void __lambda_978(void *data, int argc, object self_732545, object r_731028) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737428;
 c_737428.hdr.mark = gc_color_red;
  c_737428.hdr.grayed = 0;
@@ -12335,8 +11833,7 @@ return_closcall1(data,(closure)&c_737428,  r_731028);;
 }
 
 static void __lambda_977(void *data, int argc, object self_732546, object renamed_73407) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, renamed_73407) ){ 
+  if( !eq(boolean_f, renamed_73407) ){ 
   
 closureN_type c_737430;
 c_737430.hdr.mark = gc_color_red;
@@ -12368,28 +11865,23 @@ return_closcall0(data,(closure)&c_737437);}
 }
 
 static void __lambda_976(void *data, int argc, object self_732547) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732547)->elts[1],  ((closureN)self_732547)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732547)->elts[1],  ((closureN)self_732547)->elts[0]);; 
 }
 
 static void __lambda_975(void *data, int argc, object self_732548) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732548)->elts[0],  cdr(((closureN)self_732548)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_732548)->elts[0],  cdr(((closureN)self_732548)->elts[1]));; 
 }
 
 static void __lambda_974(void *data, int argc, object self_732549) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732549)->elts[1],  ((closureN)self_732549)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732549)->elts[1],  ((closureN)self_732549)->elts[0]);; 
 }
 
 static void __lambda_973(void *data, int argc, object self_732550) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732550)->elts[1],  ((closureN)self_732550)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732550)->elts[1],  ((closureN)self_732550)->elts[0]);; 
 }
 
 static void __lambda_972(void *data, int argc, object self_732551, object r_731023) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736981;
 c_736981.hdr.mark = gc_color_red;
  c_736981.hdr.grayed = 0;
@@ -12411,8 +11903,7 @@ return_closcall1(data,(closure)&c_736981,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_971(void *data, int argc, object self_732552, object r_73935) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736983;
 c_736983.hdr.mark = gc_color_red;
  c_736983.hdr.grayed = 0;
@@ -12434,8 +11925,7 @@ return_closcall2(data,  __glo_free_91vars,  &c_736983, ((closureN)self_732552)->
 }
 
 static void __lambda_970(void *data, int argc, object self_732553, object r_731022) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736985;
 c_736985.hdr.mark = gc_color_red;
  c_736985.hdr.grayed = 0;
@@ -12457,8 +11947,7 @@ return_closcall3(data,  __glo_difference,  &c_736985, r_731022, ((closureN)self_
 }
 
 static void __lambda_969(void *data, int argc, object self_732554, object r_73936) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736987;
 c_736987.hdr.mark = gc_color_red;
  c_736987.hdr.grayed = 0;
@@ -12480,8 +11969,7 @@ return_closcall1(data,(closure)&c_736987,  r_73936);;
 }
 
 static void __lambda_968(void *data, int argc, object self_732555, object fv_73373) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736989;
 c_736989.hdr.mark = gc_color_red;
  c_736989.hdr.grayed = 0;
@@ -12504,8 +11992,7 @@ return_closcall3(data,  __glo_free_91vars,  &c_736989, ((closureN)self_732555)->
 }
 
 static void __lambda_967(void *data, int argc, object self_732556, object r_731021) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736991;
 c_736991.hdr.mark = gc_color_red;
  c_736991.hdr.grayed = 0;
@@ -12527,8 +12014,7 @@ return_closcall3(data,  __glo__union,  &c_736991, ((closureN)self_732556)->elts[
 }
 
 static void __lambda_966(void *data, int argc, object self_732557, object r_73937) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736993;
 c_736993.hdr.mark = gc_color_red;
  c_736993.hdr.grayed = 0;
@@ -12550,8 +12036,7 @@ return_closcall1(data,(closure)&c_736993,  r_73937);;
 }
 
 static void __lambda_965(void *data, int argc, object self_732558, object bound_91vars_73374) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736995;
 c_736995.hdr.mark = gc_color_red;
  c_736995.hdr.grayed = 0;
@@ -12573,8 +12058,7 @@ return_closcall3(data,  __glo_difference,  &c_736995, ((closureN)self_732558)->e
 }
 
 static void __lambda_964(void *data, int argc, object self_732559, object r_73938) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736997;
 c_736997.hdr.mark = gc_color_red;
  c_736997.hdr.grayed = 0;
@@ -12596,8 +12080,7 @@ return_closcall1(data,(closure)&c_736997,  r_73938);;
 }
 
 static void __lambda_963(void *data, int argc, object self_732560, object unbound_91vars_73375) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_736999;
 c_736999.hdr.mark = gc_color_red;
  c_736999.hdr.grayed = 0;
@@ -12620,8 +12103,7 @@ return_closcall1(data,  __glo_built_91in_91syms,  &c_736999);;
 }
 
 static void __lambda_962(void *data, int argc, object self_732561, object r_731020) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737001;
 c_737001.hdr.mark = gc_color_red;
  c_737001.hdr.grayed = 0;
@@ -12643,8 +12125,7 @@ return_closcall3(data,  __glo_difference,  &c_737001, ((closureN)self_732561)->e
 }
 
 static void __lambda_961(void *data, int argc, object self_732562, object r_73939) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737003;
 c_737003.hdr.mark = gc_color_red;
  c_737003.hdr.grayed = 0;
@@ -12666,8 +12147,7 @@ return_closcall1(data,(closure)&c_737003,  r_73939);;
 }
 
 static void __lambda_960(void *data, int argc, object self_732563, object unknown_91vars_73376) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737005;
 c_737005.hdr.mark = gc_color_red;
  c_737005.hdr.grayed = 0;
@@ -12690,8 +12170,7 @@ return_closcall0(data,(closure)&c_737005);;
 }
 
 static void __lambda_959(void *data, int argc, object self_732564) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737007;
 c_737007.hdr.mark = gc_color_red;
  c_737007.hdr.grayed = 0;
@@ -12716,8 +12195,7 @@ return_closcall1(data,(closure)&c_737007,  &c_737395);;
 }
 
 static void __lambda_958(void *data, int argc, object self_732565, object r_731019) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737009;
 c_737009.hdr.mark = gc_color_red;
  c_737009.hdr.grayed = 0;
@@ -12742,8 +12220,7 @@ return_closcall1(data,(closure)&c_737009,  __num_gt(data, r_731019, &c_737392));
 }
 
 static void __lambda_957(void *data, int argc, object self_732566, object r_73940) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73940) ){ 
+  if( !eq(boolean_f, r_73940) ){ 
   
 closureN_type c_737011;
 c_737011.hdr.mark = gc_color_red;
@@ -12781,8 +12258,7 @@ return_closcall2(data,  __glo_define_127,  &c_737138, ((closureN)self_732566)->e
 }
 
 static void __lambda_956(void *data, int argc, object self_732567, object r_73963) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73963) ){ 
+  if( !eq(boolean_f, r_73963) ){ 
   
 closureN_type c_737140;
 c_737140.hdr.mark = gc_color_red;
@@ -12822,8 +12298,7 @@ return_closcall0(data,(closure)&c_737369);}
 }
 
 static void __lambda_955(void *data, int argc, object self_732568) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737371;
 c_737371.hdr.mark = gc_color_red;
  c_737371.hdr.grayed = 0;
@@ -12842,8 +12317,7 @@ return_closcall1(data,  __glo_built_91in_91syms,  &c_737371);;
 }
 
 static void __lambda_954(void *data, int argc, object self_732569, object r_731018) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737373;
 c_737373.hdr.mark = gc_color_red;
  c_737373.hdr.grayed = 0;
@@ -12861,8 +12335,7 @@ return_closcall3(data,  __glo_difference,  &c_737373, ((closureN)self_732569)->e
 }
 
 static void __lambda_953(void *data, int argc, object self_732570, object r_731017) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737378;
 c_737378.hdr.mark = gc_color_red;
  c_737378.hdr.grayed = 0;
@@ -12878,8 +12351,7 @@ return_closcall3(data,  cell_get(((closureN)self_732570)->elts[2]),  &c_737378, 
 }
 
 static void __lambda_952(void *data, int argc, object self_732571, object r_731015) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737380;
 c_737380.hdr.mark = gc_color_red;
  c_737380.hdr.grayed = 0;
@@ -12896,13 +12368,11 @@ return_closcall1(data,  __glo__list,  &c_737380);;
 }
 
 static void __lambda_951(void *data, int argc, object self_732572, object r_731016) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall3(data,  cell_get(((closureN)self_732572)->elts[0]),  ((closureN)self_732572)->elts[1], ((closureN)self_732572)->elts[2], r_731016);; 
+  return_closcall3(data,  cell_get(((closureN)self_732572)->elts[0]),  ((closureN)self_732572)->elts[1], ((closureN)self_732572)->elts[2], r_731016);; 
 }
 
 static void __lambda_950(void *data, int argc, object self_732573) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737142;
 c_737142.hdr.mark = gc_color_red;
  c_737142.hdr.grayed = 0;
@@ -12923,8 +12393,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_737142, ((closureN)self_7325
 }
 
 static void __lambda_949(void *data, int argc, object self_732574, object r_731014) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737144;
 c_737144.hdr.mark = gc_color_red;
  c_737144.hdr.grayed = 0;
@@ -12945,8 +12414,7 @@ return_closcall1(data,(closure)&c_737144,  car(r_731014));;
 }
 
 static void __lambda_948(void *data, int argc, object self_732575, object r_73964) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737146;
 c_737146.hdr.mark = gc_color_red;
  c_737146.hdr.grayed = 0;
@@ -12967,8 +12435,7 @@ return_closcall1(data,(closure)&c_737146,  r_73964);;
 }
 
 static void __lambda_947(void *data, int argc, object self_732576, object body_73377) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737148;
 c_737148.hdr.mark = gc_color_red;
  c_737148.hdr.grayed = 0;
@@ -12990,8 +12457,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_737148, body_73377);;
 }
 
 static void __lambda_946(void *data, int argc, object self_732577, object r_73965) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73965) ){ 
+  if( !eq(boolean_f, r_73965) ){ 
   
 closureN_type c_737150;
 c_737150.hdr.mark = gc_color_red;
@@ -13031,8 +12497,7 @@ return_closcall0(data,(closure)&c_737325);}
 }
 
 static void __lambda_945(void *data, int argc, object self_732578) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737327;
 c_737327.hdr.mark = gc_color_red;
  c_737327.hdr.grayed = 0;
@@ -13051,8 +12516,7 @@ return_closcall1(data,(closure)&c_737327,  quote_define);;
 }
 
 static void __lambda_944(void *data, int argc, object self_732579, object r_731005) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737329;
 c_737329.hdr.mark = gc_color_red;
  c_737329.hdr.grayed = 0;
@@ -13072,8 +12536,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_737329, ((closureN)self_7325
 }
 
 static void __lambda_943(void *data, int argc, object self_732580, object r_731007) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737331;
 c_737331.hdr.mark = gc_color_red;
  c_737331.hdr.grayed = 0;
@@ -13093,8 +12556,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_737331, ((closureN)self_7325
 }
 
 static void __lambda_942(void *data, int argc, object self_732581, object r_731011) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737333;
 c_737333.hdr.mark = gc_color_red;
  c_737333.hdr.grayed = 0;
@@ -13115,8 +12577,7 @@ return_closcall1(data,  __glo_built_91in_91syms,  &c_737333);;
 }
 
 static void __lambda_941(void *data, int argc, object self_732582, object r_731013) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737335;
 c_737335.hdr.mark = gc_color_red;
  c_737335.hdr.grayed = 0;
@@ -13136,8 +12597,7 @@ return_closcall3(data,  __glo_difference,  &c_737335, ((closureN)self_732582)->e
 }
 
 static void __lambda_940(void *data, int argc, object self_732583, object r_731012) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737340;
 c_737340.hdr.mark = gc_color_red;
  c_737340.hdr.grayed = 0;
@@ -13155,8 +12615,7 @@ return_closcall3(data,  cell_get(((closureN)self_732583)->elts[1]),  &c_737340, 
 }
 
 static void __lambda_939(void *data, int argc, object self_732584, object r_731009) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737342;
 c_737342.hdr.mark = gc_color_red;
  c_737342.hdr.grayed = 0;
@@ -13175,8 +12634,7 @@ return_closcall1(data,  __glo__list,  &c_737342);;
 }
 
 static void __lambda_938(void *data, int argc, object self_732585, object r_731010) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737347;
 c_737347.hdr.mark = gc_color_red;
  c_737347.hdr.grayed = 0;
@@ -13193,8 +12651,7 @@ return_closcall3(data,  cell_get(((closureN)self_732585)->elts[0]),  &c_737347, 
 }
 
 static void __lambda_937(void *data, int argc, object self_732586, object r_731008) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737349;
 c_737349.hdr.mark = gc_color_red;
  c_737349.hdr.grayed = 0;
@@ -13212,15 +12669,13 @@ return_closcall1(data,(closure)&c_737349,  &c_737358);;
 }
 
 static void __lambda_936(void *data, int argc, object self_732587, object r_731006) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737354,((closureN)self_732587)->elts[1], r_731006);
 return_closcall1(data,  ((closureN)self_732587)->elts[0],  &c_737354);; 
 }
 
 static void __lambda_935(void *data, int argc, object self_732588) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737152;
 c_737152.hdr.mark = gc_color_red;
  c_737152.hdr.grayed = 0;
@@ -13241,8 +12696,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_737152, ((closure
 }
 
 static void __lambda_934(void *data, int argc, object self_732589, object r_73966) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737154;
 c_737154.hdr.mark = gc_color_red;
  c_737154.hdr.grayed = 0;
@@ -13263,8 +12717,7 @@ return_closcall1(data,(closure)&c_737154,  r_73966);;
 }
 
 static void __lambda_933(void *data, int argc, object self_732590, object args_73378) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737156;
 c_737156.hdr.mark = gc_color_red;
  c_737156.hdr.grayed = 0;
@@ -13286,8 +12739,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_737156, ((closureN)se
 }
 
 static void __lambda_932(void *data, int argc, object self_732591, object r_73967) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737158;
 c_737158.hdr.mark = gc_color_red;
  c_737158.hdr.grayed = 0;
@@ -13309,8 +12761,7 @@ return_closcall1(data,(closure)&c_737158,  r_73967);;
 }
 
 static void __lambda_931(void *data, int argc, object self_732592, object ltype_73379) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737160;
 c_737160.hdr.mark = gc_color_red;
  c_737160.hdr.grayed = 0;
@@ -13335,8 +12786,7 @@ return_closcall1(data,(closure)&c_737160,  &c_737313);;
 }
 
 static void __lambda_930(void *data, int argc, object self_732593, object k_731003, object a_73380) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737315;
 c_737315.hdr.mark = gc_color_red;
  c_737315.hdr.grayed = 0;
@@ -13352,15 +12802,13 @@ return_closcall2(data,  __glo_gensym,  &c_737315, a_73380);;
 }
 
 static void __lambda_929(void *data, int argc, object self_732594, object r_731004) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737320,((closureN)self_732594)->elts[0], r_731004);
 return_closcall1(data,  ((closureN)self_732594)->elts[1],  &c_737320);; 
 }
 
 static void __lambda_928(void *data, int argc, object self_732595, object r_731002) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737162;
 c_737162.hdr.mark = gc_color_red;
  c_737162.hdr.grayed = 0;
@@ -13382,8 +12830,7 @@ return_closcall3(data,  __glo_map,  &c_737162, r_731002, ((closureN)self_732595)
 }
 
 static void __lambda_927(void *data, int argc, object self_732596, object r_73968) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737164;
 c_737164.hdr.mark = gc_color_red;
  c_737164.hdr.grayed = 0;
@@ -13405,8 +12852,7 @@ return_closcall1(data,(closure)&c_737164,  r_73968);;
 }
 
 static void __lambda_926(void *data, int argc, object self_732597, object a_91lookup_73381) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737166;
 c_737166.hdr.mark = gc_color_red;
  c_737166.hdr.grayed = 0;
@@ -13429,8 +12875,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_737166, ((closureN)self_7325
 }
 
 static void __lambda_925(void *data, int argc, object self_732598, object r_731001) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737171;
 c_737171.hdr.mark = gc_color_red;
  c_737171.hdr.grayed = 0;
@@ -13452,8 +12897,7 @@ return_closcall2(data,  cell_get(((closureN)self_732598)->elts[4]),  &c_737171, 
 }
 
 static void __lambda_924(void *data, int argc, object self_732599, object r_73969) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737173;
 c_737173.hdr.mark = gc_color_red;
  c_737173.hdr.grayed = 0;
@@ -13475,8 +12919,7 @@ return_closcall1(data,(closure)&c_737173,  r_73969);;
 }
 
 static void __lambda_923(void *data, int argc, object self_732600, object define_91vars_73382) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737178;
 c_737178.hdr.mark = gc_color_red;
  c_737178.hdr.grayed = 0;
@@ -13498,8 +12941,7 @@ return_closcall2(data,  cell_get(((closureN)self_732600)->elts[7]),  &c_737178, 
 }
 
 static void __lambda_922(void *data, int argc, object self_732601, object r_73970) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737180;
 c_737180.hdr.mark = gc_color_red;
  c_737180.hdr.grayed = 0;
@@ -13521,8 +12963,7 @@ return_closcall1(data,(closure)&c_737180,  r_73970);;
 }
 
 static void __lambda_921(void *data, int argc, object self_732602, object defines_91a_91lookup_73383) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737182;
 c_737182.hdr.mark = gc_color_red;
  c_737182.hdr.grayed = 0;
@@ -13545,8 +12986,7 @@ return_closcall0(data,(closure)&c_737182);;
 }
 
 static void __lambda_920(void *data, int argc, object self_732603) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737184;
 c_737184.hdr.mark = gc_color_red;
  c_737184.hdr.grayed = 0;
@@ -13569,8 +13009,7 @@ return_closcall1(data,(closure)&c_737184,  quote_define);;
 }
 
 static void __lambda_919(void *data, int argc, object self_732604, object r_73971) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737186;
 c_737186.hdr.mark = gc_color_red;
  c_737186.hdr.grayed = 0;
@@ -13593,8 +13032,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_737186, ((closureN)self_7326
 }
 
 static void __lambda_918(void *data, int argc, object self_732605, object r_73973) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737188;
 c_737188.hdr.mark = gc_color_red;
  c_737188.hdr.grayed = 0;
@@ -13618,8 +13056,7 @@ return_closcall1(data,(closure)&c_737188,  quote_lambda);;
 }
 
 static void __lambda_917(void *data, int argc, object self_732606, object r_73977) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737190;
 c_737190.hdr.mark = gc_color_red;
  c_737190.hdr.grayed = 0;
@@ -13646,13 +13083,11 @@ return_closcall1(data,(closure)&c_737190,  &c_737306);;
 }
 
 static void __lambda_916(void *data, int argc, object self_732607, object k_731000, object p_73387) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_731000,  cdr(p_73387));; 
+  return_closcall1(data,  k_731000,  cdr(p_73387));; 
 }
 
 static void __lambda_915(void *data, int argc, object self_732608, object r_73999) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737192;
 c_737192.hdr.mark = gc_color_red;
  c_737192.hdr.grayed = 0;
@@ -13677,8 +13112,7 @@ return_closcall3(data,  __glo_map,  &c_737192, r_73999, ((closureN)self_732608)-
 }
 
 static void __lambda_914(void *data, int argc, object self_732609, object r_73998) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737194;
 c_737194.hdr.mark = gc_color_red;
  c_737194.hdr.grayed = 0;
@@ -13702,8 +13136,7 @@ return_closcall3(data,  __glo_list_91_125lambda_91formals,  &c_737194, r_73998, 
 }
 
 static void __lambda_913(void *data, int argc, object self_732610, object r_73979) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737196;
 c_737196.hdr.mark = gc_color_red;
  c_737196.hdr.grayed = 0;
@@ -13728,8 +13161,7 @@ return_closcall1(data,  __glo_built_91in_91syms,  &c_737196);;
 }
 
 static void __lambda_912(void *data, int argc, object self_732611, object r_73997) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737198;
 c_737198.hdr.mark = gc_color_red;
  c_737198.hdr.grayed = 0;
@@ -13753,8 +13185,7 @@ return_closcall3(data,  __glo_difference,  &c_737198, ((closureN)self_732611)->e
 }
 
 static void __lambda_911(void *data, int argc, object self_732612, object r_73996) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737200;
 c_737200.hdr.mark = gc_color_red;
  c_737200.hdr.grayed = 0;
@@ -13777,8 +13208,7 @@ return_closcall3(data,  __glo__union,  &c_737200, ((closureN)self_732612)->elts[
 }
 
 static void __lambda_910(void *data, int argc, object self_732613, object r_73983) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737202;
 c_737202.hdr.mark = gc_color_red;
  c_737202.hdr.grayed = 0;
@@ -13801,8 +13231,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_737202, ((closureN)self_7326
 }
 
 static void __lambda_909(void *data, int argc, object self_732614, object r_73984) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737204;
 c_737204.hdr.mark = gc_color_red;
  c_737204.hdr.grayed = 0;
@@ -13824,8 +13253,7 @@ return_closcall2(data,(closure)&c_737204,  ((closureN)self_732614)->elts[8], r_7
 }
 
 static void __lambda_908(void *data, int argc, object self_732615, object fv_85_73385, object ast_85_73384) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737206;
 c_737206.hdr.mark = gc_color_red;
  c_737206.hdr.grayed = 0;
@@ -13859,8 +13287,7 @@ return_closcall1(data,(closure)&c_737206,  &c_737257);;
 }
 
 static void __lambda_907(void *data, int argc, object self_732616, object r_73981) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737259;
 c_737259.hdr.mark = gc_color_red;
  c_737259.hdr.grayed = 0;
@@ -13881,8 +13308,7 @@ return_closcall3(data,  __glo_append,  &c_737259, ((closureN)self_732616)->elts[
 }
 
 static void __lambda_906(void *data, int argc, object self_732617, object r_73982) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737264;
 c_737264.hdr.mark = gc_color_red;
  c_737264.hdr.grayed = 0;
@@ -13901,8 +13327,7 @@ return_closcall3(data,  cell_get(((closureN)self_732617)->elts[0]),  &c_737264, 
 }
 
 static void __lambda_905(void *data, int argc, object self_732618, object r_73980) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737266;
 c_737266.hdr.mark = gc_color_red;
  c_737266.hdr.grayed = 0;
@@ -13922,8 +13347,7 @@ return_closcall1(data,(closure)&c_737266,  &c_737295);;
 }
 
 static void __lambda_904(void *data, int argc, object self_732619, object r_73978) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737268;
 c_737268.hdr.mark = gc_color_red;
  c_737268.hdr.grayed = 0;
@@ -13942,8 +13366,7 @@ return_closcall1(data,(closure)&c_737268,  &c_737291);;
 }
 
 static void __lambda_903(void *data, int argc, object self_732620, object r_73975) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737270;
 c_737270.hdr.mark = gc_color_red;
  c_737270.hdr.grayed = 0;
@@ -13961,8 +13384,7 @@ return_closcall1(data,(closure)&c_737270,  nil);;
 }
 
 static void __lambda_902(void *data, int argc, object self_732621, object r_73976) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737272;
 c_737272.hdr.mark = gc_color_red;
  c_737272.hdr.grayed = 0;
@@ -13981,8 +13403,7 @@ return_closcall1(data,(closure)&c_737272,  &c_737287);;
 }
 
 static void __lambda_901(void *data, int argc, object self_732622, object r_73974) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737274;
 c_737274.hdr.mark = gc_color_red;
  c_737274.hdr.grayed = 0;
@@ -14000,15 +13421,13 @@ return_closcall1(data,(closure)&c_737274,  &c_737283);;
 }
 
 static void __lambda_900(void *data, int argc, object self_732623, object r_73972) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737279,((closureN)self_732623)->elts[1], r_73972);
 return_closcall1(data,  ((closureN)self_732623)->elts[0],  &c_737279);; 
 }
 
 static void __lambda_899(void *data, int argc, object self_732624, object k_73985) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737208;
 c_737208.hdr.mark = gc_color_red;
  c_737208.hdr.grayed = 0;
@@ -14027,8 +13446,7 @@ return_closcall1(data,(closure)&c_737208,  &c_737255);;
 }
 
 static void __lambda_898(void *data, int argc, object self_732625, object r_73995) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737210;
 c_737210.hdr.mark = gc_color_red;
  c_737210.hdr.grayed = 0;
@@ -14047,8 +13465,7 @@ return_closcall1(data,(closure)&c_737210,  __num_gt(data, r_73995, &c_737252));;
 }
 
 static void __lambda_897(void *data, int argc, object self_732626, object r_73986) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73986) ){ 
+  if( !eq(boolean_f, r_73986) ){ 
   
 closureN_type c_737212;
 c_737212.hdr.mark = gc_color_red;
@@ -14069,8 +13486,7 @@ return_closcall1(data,(closure)&c_737212,  quote_lambda);
 }
 
 static void __lambda_896(void *data, int argc, object self_732627, object r_73993) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737214;
 c_737214.hdr.mark = gc_color_red;
  c_737214.hdr.grayed = 0;
@@ -14089,8 +13505,7 @@ return_closcall1(data,(closure)&c_737214,  &c_737244);;
 }
 
 static void __lambda_895(void *data, int argc, object self_732628, object r_73994) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737216;
 c_737216.hdr.mark = gc_color_red;
  c_737216.hdr.grayed = 0;
@@ -14108,8 +13523,7 @@ return_closcall1(data,(closure)&c_737216,  &c_737240);;
 }
 
 static void __lambda_894(void *data, int argc, object self_732629, object r_73989) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737218;
 c_737218.hdr.mark = gc_color_red;
  c_737218.hdr.grayed = 0;
@@ -14128,13 +13542,11 @@ return_closcall1(data,(closure)&c_737218,  &c_737236);;
 }
 
 static void __lambda_893(void *data, int argc, object self_732630, object k_73992, object _191_73386) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  k_73992,  boolean_f);; 
+  return_closcall1(data,  k_73992,  boolean_f);; 
 }
 
 static void __lambda_892(void *data, int argc, object self_732631, object r_73991) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737220;
 c_737220.hdr.mark = gc_color_red;
  c_737220.hdr.grayed = 0;
@@ -14150,8 +13562,7 @@ return_closcall3(data,  __glo_map,  &c_737220, r_73991, ((closureN)self_732631)-
 }
 
 static void __lambda_891(void *data, int argc, object self_732632, object r_73990) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737222;
 c_737222.hdr.mark = gc_color_red;
  c_737222.hdr.grayed = 0;
@@ -14168,8 +13579,7 @@ return_closcall1(data,(closure)&c_737222,  &c_737233);;
 }
 
 static void __lambda_890(void *data, int argc, object self_732633, object r_73987) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737224;
 c_737224.hdr.mark = gc_color_red;
  c_737224.hdr.grayed = 0;
@@ -14185,15 +13595,13 @@ return_closcall1(data,(closure)&c_737224,  nil);;
 }
 
 static void __lambda_889(void *data, int argc, object self_732634, object r_73988) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 make_cons(c_737229,((closureN)self_732634)->elts[1], r_73988);
 return_closcall1(data,  ((closureN)self_732634)->elts[0],  &c_737229);; 
 }
 
 static void __lambda_888(void *data, int argc, object self_732635) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737013;
 c_737013.hdr.mark = gc_color_red;
  c_737013.hdr.grayed = 0;
@@ -14210,8 +13618,7 @@ return_closcall1(data,  __glo__list,  &c_737013);;
 }
 
 static void __lambda_887(void *data, int argc, object self_732636, object r_73941) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737015;
 c_737015.hdr.mark = gc_color_red;
  c_737015.hdr.grayed = 0;
@@ -14228,8 +13635,7 @@ return_closcall1(data,(closure)&c_737015,  r_73941);;
 }
 
 static void __lambda_886(void *data, int argc, object self_732637, object unbound_91to_91return_73388) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737017;
 c_737017.hdr.mark = gc_color_red;
  c_737017.hdr.grayed = 0;
@@ -14248,8 +13654,7 @@ return_closcall1(data,(closure)&c_737017,  &c_737136);;
 }
 
 static void __lambda_885(void *data, int argc, object self_732638, object unbound_91to_91return_73388) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737019;
 c_737019.hdr.mark = gc_color_red;
  c_737019.hdr.grayed = 0;
@@ -14279,8 +13684,7 @@ return_closcall1(data,(closure)&c_737019,  &c_737044);;
 }
 
 static void __lambda_884(void *data, int argc, object self_732639, object r_73942) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737046;
 c_737046.hdr.mark = gc_color_red;
  c_737046.hdr.grayed = 0;
@@ -14310,8 +13714,7 @@ return_closcall1(data,(closure)&c_737046,  &c_737086);;
 }
 
 static void __lambda_883(void *data, int argc, object self_732640, object r_73943) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737088;
 c_737088.hdr.mark = gc_color_red;
  c_737088.hdr.grayed = 0;
@@ -14341,8 +13744,7 @@ return_closcall1(data,(closure)&c_737088,  &c_737123);;
 }
 
 static void __lambda_882(void *data, int argc, object self_732641, object r_73944) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73944) ){ 
+  if( !eq(boolean_f, r_73944) ){ 
   return_closcall2(data,  ((closureN)self_732641)->elts[1],  ((closureN)self_732641)->elts[0], cell_get(((closureN)self_732641)->elts[2]));
 } else { 
   
@@ -14352,8 +13754,7 @@ return_closcall3(data,  __glo_error,  ((closureN)self_732641)->elts[0], &c_73713
 }
 
 static void __lambda_881(void *data, int argc, object self_732642, object k_73945) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737090;
 c_737090.hdr.mark = gc_color_red;
  c_737090.hdr.grayed = 0;
@@ -14372,8 +13773,7 @@ return_closcall1(data,(closure)&c_737090,  &c_737119);;
 }
 
 static void __lambda_880(void *data, int argc, object self_732643, object r_73949) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737092;
 c_737092.hdr.mark = gc_color_red;
  c_737092.hdr.grayed = 0;
@@ -14392,8 +13792,7 @@ return_closcall1(data,(closure)&c_737092,  __num_gt(data, r_73949, &c_737116));;
 }
 
 static void __lambda_879(void *data, int argc, object self_732644, object r_73946) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73946) ){ 
+  if( !eq(boolean_f, r_73946) ){ 
   
 closureN_type c_737094;
 c_737094.hdr.mark = gc_color_red;
@@ -14415,8 +13814,7 @@ return_closcall1(data,(closure)&c_737094,  &c_737110);
 }
 
 static void __lambda_878(void *data, int argc, object self_732645, object r_73947) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737096;
 c_737096.hdr.mark = gc_color_red;
  c_737096.hdr.grayed = 0;
@@ -14434,13 +13832,11 @@ return_closcall1(data,(closure)&c_737096,  &c_737104);;
 }
 
 static void __lambda_877(void *data, int argc, object self_732646, object r_73948) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732646)->elts[0],  __num_eq(data, ((closureN)self_732646)->elts[1], r_73948));; 
+  return_closcall1(data,  ((closureN)self_732646)->elts[0],  __num_eq(data, ((closureN)self_732646)->elts[1], r_73948));; 
 }
 
 static void __lambda_876(void *data, int argc, object self_732647, object k_73950) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737048;
 c_737048.hdr.mark = gc_color_red;
  c_737048.hdr.grayed = 0;
@@ -14457,8 +13853,7 @@ return_closcall1(data,(closure)&c_737048,  quote_read);;
 }
 
 static void __lambda_875(void *data, int argc, object self_732648, object r_73957) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737050;
 c_737050.hdr.mark = gc_color_red;
  c_737050.hdr.grayed = 0;
@@ -14475,8 +13870,7 @@ return_closcall1(data,(closure)&c_737050,  memberp(data, r_73957, ((closureN)sel
 }
 
 static void __lambda_874(void *data, int argc, object self_732649, object r_73954) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737052;
 c_737052.hdr.mark = gc_color_red;
  c_737052.hdr.grayed = 0;
@@ -14493,8 +13887,7 @@ return_closcall1(data,(closure)&c_737052,  r_73954);;
 }
 
 static void __lambda_873(void *data, int argc, object self_732650, object tmp_73389) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737054;
 c_737054.hdr.mark = gc_color_red;
  c_737054.hdr.grayed = 0;
@@ -14522,8 +13915,7 @@ return_closcall1(data,(closure)&c_737054,  &c_737065);;
 }
 
 static void __lambda_872(void *data, int argc, object self_732651, object r_73951) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73951) ){ 
+  if( !eq(boolean_f, r_73951) ){ 
   
 closureN_type c_737067;
 c_737067.hdr.mark = gc_color_red;
@@ -14543,8 +13935,7 @@ return_closcall1(data,(closure)&c_737067,  quote_read);
 }
 
 static void __lambda_871(void *data, int argc, object self_732652, object r_73953) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737069;
 c_737069.hdr.mark = gc_color_red;
  c_737069.hdr.grayed = 0;
@@ -14562,13 +13953,11 @@ return_closcall1(data,(closure)&c_737069,  &c_737077);;
 }
 
 static void __lambda_870(void *data, int argc, object self_732653, object r_73952) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732653)->elts[0],  Cyc_set_car(data, ((closureN)self_732653)->elts[1], r_73952));; 
+  return_closcall1(data,  ((closureN)self_732653)->elts[0],  Cyc_set_car(data, ((closureN)self_732653)->elts[1], r_73952));; 
 }
 
 static void __lambda_869(void *data, int argc, object self_732654, object k_73955) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, ((closureN)self_732654)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732654)->elts[0]) ){ 
   return_closcall1(data,  k_73955,  ((closureN)self_732654)->elts[0]);
 } else { 
   
@@ -14588,13 +13977,11 @@ return_closcall1(data,(closure)&c_737059,  quote_read_91all);}
 }
 
 static void __lambda_868(void *data, int argc, object self_732655, object r_73956) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732655)->elts[0],  memberp(data, r_73956, ((closureN)self_732655)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_732655)->elts[0],  memberp(data, r_73956, ((closureN)self_732655)->elts[1]));; 
 }
 
 static void __lambda_867(void *data, int argc, object self_732656, object k_73958) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737021;
 c_737021.hdr.mark = gc_color_red;
  c_737021.hdr.grayed = 0;
@@ -14611,8 +13998,7 @@ return_closcall1(data,(closure)&c_737021,  quote_eval);;
 }
 
 static void __lambda_866(void *data, int argc, object self_732657, object r_73962) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737023;
 c_737023.hdr.mark = gc_color_red;
  c_737023.hdr.grayed = 0;
@@ -14628,8 +14014,7 @@ return_closcall1(data,(closure)&c_737023,  memberp(data, r_73962, ((closureN)sel
 }
 
 static void __lambda_865(void *data, int argc, object self_732658, object r_73959) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-if( !eq(boolean_f, r_73959) ){ 
+  if( !eq(boolean_f, r_73959) ){ 
   
 closureN_type c_737025;
 c_737025.hdr.mark = gc_color_red;
@@ -14649,8 +14034,7 @@ return_closcall1(data,(closure)&c_737025,  quote_eval);
 }
 
 static void __lambda_864(void *data, int argc, object self_732659, object r_73961) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-
+  
 closureN_type c_737027;
 c_737027.hdr.mark = gc_color_red;
  c_737027.hdr.grayed = 0;
@@ -14668,8 +14052,7 @@ return_closcall1(data,(closure)&c_737027,  &c_737035);;
 }
 
 static void __lambda_863(void *data, int argc, object self_732660, object r_73960) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:alpha-convert");
-return_closcall1(data,  ((closureN)self_732660)->elts[0],  Cyc_set_car(data, ((closureN)self_732660)->elts[1], r_73960));; 
+  return_closcall1(data,  ((closureN)self_732660)->elts[0],  Cyc_set_car(data, ((closureN)self_732660)->elts[1], r_73960));; 
 }
 
 static void __lambda_862(void *data, int argc, closure _,object k_731123, object exp_73420, object globals_73419) {
@@ -14691,8 +14074,7 @@ return_closcall1(data,(closure)&c_736591,  boolean_f);;
 }
 
 static void __lambda_861(void *data, int argc, object self_732661, object wrap_91mutable_91formals_73422) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736593;
 c_736593.hdr.mark = gc_color_red;
  c_736593.hdr.grayed = 0;
@@ -14711,8 +14093,7 @@ return_closcall1(data,(closure)&c_736593,  &c_736946);;
 }
 
 static void __lambda_860(void *data, int argc, object self_732662, object wrap_91mutable_91formals_73422) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736595;
 c_736595.hdr.mark = gc_color_red;
  c_736595.hdr.grayed = 0;
@@ -14730,8 +14111,7 @@ return_closcall1(data,(closure)&c_736595,  boolean_f);;
 }
 
 static void __lambda_859(void *data, int argc, object self_732663, object wrap_91mutable_91formals_73423) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736597;
 c_736597.hdr.mark = gc_color_red;
  c_736597.hdr.grayed = 0;
@@ -14760,8 +14140,7 @@ return_closcall1(data,(closure)&c_736597,  &c_736835);;
 }
 
 static void __lambda_858(void *data, int argc, object self_732664, object k_731174, object formals_73426, object body_91exp_73425) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736837;
 c_736837.hdr.mark = gc_color_red;
  c_736837.hdr.grayed = 0;
@@ -14779,8 +14158,7 @@ return_closcall1(data,(closure)&c_736837,  Cyc_is_cons(formals_73426));;
 }
 
 static void __lambda_857(void *data, int argc, object self_732665, object r_731196) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736839;
 c_736839.hdr.mark = gc_color_red;
  c_736839.hdr.grayed = 0;
@@ -14798,8 +14176,7 @@ return_closcall2(data,  __glo_not,  &c_736839, r_731196);;
 }
 
 static void __lambda_856(void *data, int argc, object self_732666, object r_731175) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731175) ){ 
+  if( !eq(boolean_f, r_731175) ){ 
   return_closcall1(data,  ((closureN)self_732666)->elts[2],  ((closureN)self_732666)->elts[0]);
 } else { 
   
@@ -14821,8 +14198,7 @@ return_closcall1(data,(closure)&c_736844,  car(((closureN)self_732666)->elts[1])
 }
 
 static void __lambda_855(void *data, int argc, object self_732667, object r_731195) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736846;
 c_736846.hdr.mark = gc_color_red;
  c_736846.hdr.grayed = 0;
@@ -14840,8 +14216,7 @@ return_closcall2(data,  __glo_is_91mutable_127,  &c_736846, r_731195);;
 }
 
 static void __lambda_854(void *data, int argc, object self_732668, object r_731176) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731176) ){ 
+  if( !eq(boolean_f, r_731176) ){ 
   
 closureN_type c_736848;
 c_736848.hdr.mark = gc_color_red;
@@ -14876,13 +14251,11 @@ return_closcall1(data,(closure)&c_736929,  cdr(((closureN)self_732668)->elts[1])
 }
 
 static void __lambda_853(void *data, int argc, object self_732669, object r_731194) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall3(data,  cell_get(((closureN)self_732669)->elts[2]),  ((closureN)self_732669)->elts[1], r_731194, ((closureN)self_732669)->elts[0]);; 
+  return_closcall3(data,  cell_get(((closureN)self_732669)->elts[2]),  ((closureN)self_732669)->elts[1], r_731194, ((closureN)self_732669)->elts[0]);; 
 }
 
 static void __lambda_852(void *data, int argc, object self_732670, object r_731185) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736850;
 c_736850.hdr.mark = gc_color_red;
  c_736850.hdr.grayed = 0;
@@ -14901,8 +14274,7 @@ return_closcall1(data,(closure)&c_736850,  car(((closureN)self_732670)->elts[1])
 }
 
 static void __lambda_851(void *data, int argc, object self_732671, object r_731192) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736852;
 c_736852.hdr.mark = gc_color_red;
  c_736852.hdr.grayed = 0;
@@ -14922,8 +14294,7 @@ return_closcall1(data,(closure)&c_736852,  nil);;
 }
 
 static void __lambda_850(void *data, int argc, object self_732672, object r_731193) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736854;
 c_736854.hdr.mark = gc_color_red;
  c_736854.hdr.grayed = 0;
@@ -14944,8 +14315,7 @@ return_closcall1(data,(closure)&c_736854,  &c_736923);;
 }
 
 static void __lambda_849(void *data, int argc, object self_732673, object r_731187) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736856;
 c_736856.hdr.mark = gc_color_red;
  c_736856.hdr.grayed = 0;
@@ -14965,8 +14335,7 @@ return_closcall1(data,(closure)&c_736856,  cdr(((closureN)self_732673)->elts[1])
 }
 
 static void __lambda_848(void *data, int argc, object self_732674, object r_731191) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736861;
 c_736861.hdr.mark = gc_color_red;
  c_736861.hdr.grayed = 0;
@@ -14984,8 +14353,7 @@ return_closcall3(data,  cell_get(((closureN)self_732674)->elts[5]),  &c_736861, 
 }
 
 static void __lambda_847(void *data, int argc, object self_732675, object r_731189) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736863;
 c_736863.hdr.mark = gc_color_red;
  c_736863.hdr.grayed = 0;
@@ -15004,8 +14372,7 @@ return_closcall1(data,(closure)&c_736863,  nil);;
 }
 
 static void __lambda_846(void *data, int argc, object self_732676, object r_731190) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736865;
 c_736865.hdr.mark = gc_color_red;
  c_736865.hdr.grayed = 0;
@@ -15025,8 +14392,7 @@ return_closcall1(data,(closure)&c_736865,  &c_736915);;
 }
 
 static void __lambda_845(void *data, int argc, object self_732677, object r_731188) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736867;
 c_736867.hdr.mark = gc_color_red;
  c_736867.hdr.grayed = 0;
@@ -15045,8 +14411,7 @@ return_closcall1(data,(closure)&c_736867,  &c_736911);;
 }
 
 static void __lambda_844(void *data, int argc, object self_732678, object r_731186) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736869;
 c_736869.hdr.mark = gc_color_red;
  c_736869.hdr.grayed = 0;
@@ -15064,8 +14429,7 @@ return_closcall1(data,(closure)&c_736869,  &c_736907);;
 }
 
 static void __lambda_843(void *data, int argc, object self_732679, object r_731177) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736871;
 c_736871.hdr.mark = gc_color_red;
  c_736871.hdr.grayed = 0;
@@ -15082,8 +14446,7 @@ return_closcall1(data,(closure)&c_736871,  quote_cell);;
 }
 
 static void __lambda_842(void *data, int argc, object self_732680, object r_731181) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736873;
 c_736873.hdr.mark = gc_color_red;
  c_736873.hdr.grayed = 0;
@@ -15100,8 +14463,7 @@ return_closcall1(data,(closure)&c_736873,  car(((closureN)self_732680)->elts[0])
 }
 
 static void __lambda_841(void *data, int argc, object self_732681, object r_731183) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736875;
 c_736875.hdr.mark = gc_color_red;
  c_736875.hdr.grayed = 0;
@@ -15119,8 +14481,7 @@ return_closcall1(data,(closure)&c_736875,  nil);;
 }
 
 static void __lambda_840(void *data, int argc, object self_732682, object r_731184) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736877;
 c_736877.hdr.mark = gc_color_red;
  c_736877.hdr.grayed = 0;
@@ -15139,8 +14500,7 @@ return_closcall1(data,(closure)&c_736877,  &c_736900);;
 }
 
 static void __lambda_839(void *data, int argc, object self_732683, object r_731182) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736879;
 c_736879.hdr.mark = gc_color_red;
  c_736879.hdr.grayed = 0;
@@ -15158,8 +14518,7 @@ return_closcall1(data,(closure)&c_736879,  &c_736896);;
 }
 
 static void __lambda_838(void *data, int argc, object self_732684, object r_731179) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736881;
 c_736881.hdr.mark = gc_color_red;
  c_736881.hdr.grayed = 0;
@@ -15176,8 +14535,7 @@ return_closcall1(data,(closure)&c_736881,  nil);;
 }
 
 static void __lambda_837(void *data, int argc, object self_732685, object r_731180) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736883;
 c_736883.hdr.mark = gc_color_red;
  c_736883.hdr.grayed = 0;
@@ -15195,15 +14553,13 @@ return_closcall1(data,(closure)&c_736883,  &c_736892);;
 }
 
 static void __lambda_836(void *data, int argc, object self_732686, object r_731178) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_cons(c_736888,((closureN)self_732686)->elts[1], r_731178);
 return_closcall1(data,  ((closureN)self_732686)->elts[0],  &c_736888);; 
 }
 
 static void __lambda_835(void *data, int argc, object self_732687, object r_731173) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736599;
 c_736599.hdr.mark = gc_color_red;
  c_736599.hdr.grayed = 0;
@@ -15221,8 +14577,7 @@ return_closcall1(data,(closure)&c_736599,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_834(void *data, int argc, object self_732688, object r_731124) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736601;
 c_736601.hdr.mark = gc_color_red;
  c_736601.hdr.grayed = 0;
@@ -15240,8 +14595,7 @@ return_closcall2(data,  __glo_const_127,  &c_736601, ((closureN)self_732688)->el
 }
 
 static void __lambda_833(void *data, int argc, object self_732689, object r_731125) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731125) ){ 
+  if( !eq(boolean_f, r_731125) ){ 
   
 closureN_type c_736603;
 c_736603.hdr.mark = gc_color_red;
@@ -15275,8 +14629,7 @@ return_closcall2(data,  __glo_ref_127,  &c_736608, ((closureN)self_732689)->elts
 }
 
 static void __lambda_832(void *data, int argc, object self_732690, object r_731126) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731126) ){ 
+  if( !eq(boolean_f, r_731126) ){ 
   
 closureN_type c_736610;
 c_736610.hdr.mark = gc_color_red;
@@ -15311,8 +14664,7 @@ return_closcall2(data,  __glo_prim_127,  &c_736647, ((closureN)self_732690)->elt
 }
 
 static void __lambda_831(void *data, int argc, object self_732691, object r_731134) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731134) ){ 
+  if( !eq(boolean_f, r_731134) ){ 
   
 closureN_type c_736649;
 c_736649.hdr.mark = gc_color_red;
@@ -15346,8 +14698,7 @@ return_closcall2(data,  __glo_quote_127,  &c_736654, ((closureN)self_732691)->el
 }
 
 static void __lambda_830(void *data, int argc, object self_732692, object r_731135) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731135) ){ 
+  if( !eq(boolean_f, r_731135) ){ 
   
 closureN_type c_736656;
 c_736656.hdr.mark = gc_color_red;
@@ -15381,8 +14732,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_736661, ((closureN)self_732692)->e
 }
 
 static void __lambda_829(void *data, int argc, object self_732693, object r_731136) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731136) ){ 
+  if( !eq(boolean_f, r_731136) ){ 
   
 closureN_type c_736663;
 c_736663.hdr.mark = gc_color_red;
@@ -15417,8 +14767,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_736709, ((closureN)self_732693)->e
 }
 
 static void __lambda_828(void *data, int argc, object self_732694, object r_731147) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731147) ){ 
+  if( !eq(boolean_f, r_731147) ){ 
   
 closureN_type c_736711;
 c_736711.hdr.mark = gc_color_red;
@@ -15452,8 +14801,7 @@ return_closcall2(data,  __glo_if_127,  &c_736757, ((closureN)self_732694)->elts[
 }
 
 static void __lambda_827(void *data, int argc, object self_732695, object r_731158) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731158) ){ 
+  if( !eq(boolean_f, r_731158) ){ 
   
 closureN_type c_736759;
 c_736759.hdr.mark = gc_color_red;
@@ -15487,8 +14835,7 @@ return_closcall2(data,  __glo_app_127,  &c_736807, ((closureN)self_732695)->elts
 }
 
 static void __lambda_826(void *data, int argc, object self_732696, object r_731170) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731170) ){ 
+  if( !eq(boolean_f, r_731170) ){ 
   
 closureN_type c_736809;
 c_736809.hdr.mark = gc_color_red;
@@ -15521,15 +14868,13 @@ return_closcall0(data,(closure)&c_736819);}
 }
 
 static void __lambda_825(void *data, int argc, object self_732697) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_string(c_736822, "unknown expression type: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732697)->elts[1], &c_736822, ((closureN)self_732697)->elts[0]);; 
 }
 
 static void __lambda_824(void *data, int argc, object self_732698) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736811;
 c_736811.hdr.mark = gc_color_red;
  c_736811.hdr.grayed = 0;
@@ -15556,18 +14901,15 @@ return_closcall1(data,(closure)&c_736811,  &c_736815);;
 }
 
 static void __lambda_823(void *data, int argc, object self_732699, object k_731172, object e_73424) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall3(data,  __glo_wrap_91mutables,  k_731172, e_73424, ((closureN)self_732699)->elts[0]);; 
+  return_closcall3(data,  __glo_wrap_91mutables,  k_731172, e_73424, ((closureN)self_732699)->elts[0]);; 
 }
 
 static void __lambda_822(void *data, int argc, object self_732700, object r_731171) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall3(data,  __glo_map,  ((closureN)self_732700)->elts[1], r_731171, ((closureN)self_732700)->elts[0]);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_732700)->elts[1], r_731171, ((closureN)self_732700)->elts[0]);; 
 }
 
 static void __lambda_821(void *data, int argc, object self_732701) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736761;
 c_736761.hdr.mark = gc_color_red;
  c_736761.hdr.grayed = 0;
@@ -15584,8 +14926,7 @@ return_closcall1(data,(closure)&c_736761,  quote__if);;
 }
 
 static void __lambda_820(void *data, int argc, object self_732702, object r_731159) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736763;
 c_736763.hdr.mark = gc_color_red;
  c_736763.hdr.grayed = 0;
@@ -15603,8 +14944,7 @@ return_closcall2(data,  __glo_if_91_125condition,  &c_736763, ((closureN)self_73
 }
 
 static void __lambda_819(void *data, int argc, object self_732703, object r_731169) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736765;
 c_736765.hdr.mark = gc_color_red;
  c_736765.hdr.grayed = 0;
@@ -15622,8 +14962,7 @@ return_closcall3(data,  __glo_wrap_91mutables,  &c_736765, r_731169, ((closureN)
 }
 
 static void __lambda_818(void *data, int argc, object self_732704, object r_731161) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736767;
 c_736767.hdr.mark = gc_color_red;
  c_736767.hdr.grayed = 0;
@@ -15642,8 +14981,7 @@ return_closcall2(data,  __glo_if_91_125then,  &c_736767, ((closureN)self_732704)
 }
 
 static void __lambda_817(void *data, int argc, object self_732705, object r_731168) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736769;
 c_736769.hdr.mark = gc_color_red;
  c_736769.hdr.grayed = 0;
@@ -15662,8 +15000,7 @@ return_closcall3(data,  __glo_wrap_91mutables,  &c_736769, r_731168, ((closureN)
 }
 
 static void __lambda_816(void *data, int argc, object self_732706, object r_731163) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736771;
 c_736771.hdr.mark = gc_color_red;
  c_736771.hdr.grayed = 0;
@@ -15682,8 +15019,7 @@ return_closcall2(data,  __glo_if_91_125else,  &c_736771, ((closureN)self_732706)
 }
 
 static void __lambda_815(void *data, int argc, object self_732707, object r_731167) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736773;
 c_736773.hdr.mark = gc_color_red;
  c_736773.hdr.grayed = 0;
@@ -15701,8 +15037,7 @@ return_closcall3(data,  __glo_wrap_91mutables,  &c_736773, r_731167, ((closureN)
 }
 
 static void __lambda_814(void *data, int argc, object self_732708, object r_731165) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736775;
 c_736775.hdr.mark = gc_color_red;
  c_736775.hdr.grayed = 0;
@@ -15721,8 +15056,7 @@ return_closcall1(data,(closure)&c_736775,  nil);;
 }
 
 static void __lambda_813(void *data, int argc, object self_732709, object r_731166) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736777;
 c_736777.hdr.mark = gc_color_red;
  c_736777.hdr.grayed = 0;
@@ -15742,8 +15076,7 @@ return_closcall1(data,(closure)&c_736777,  &c_736798);;
 }
 
 static void __lambda_812(void *data, int argc, object self_732710, object r_731164) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736779;
 c_736779.hdr.mark = gc_color_red;
  c_736779.hdr.grayed = 0;
@@ -15762,8 +15095,7 @@ return_closcall1(data,(closure)&c_736779,  &c_736794);;
 }
 
 static void __lambda_811(void *data, int argc, object self_732711, object r_731162) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736781;
 c_736781.hdr.mark = gc_color_red;
  c_736781.hdr.grayed = 0;
@@ -15781,15 +15113,13 @@ return_closcall1(data,(closure)&c_736781,  &c_736790);;
 }
 
 static void __lambda_810(void *data, int argc, object self_732712, object r_731160) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_cons(c_736786,((closureN)self_732712)->elts[1], r_731160);
 return_closcall1(data,  ((closureN)self_732712)->elts[0],  &c_736786);; 
 }
 
 static void __lambda_809(void *data, int argc, object self_732713) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736713;
 c_736713.hdr.mark = gc_color_red;
  c_736713.hdr.grayed = 0;
@@ -15818,8 +15148,7 @@ return_closcall1(data,(closure)&c_736713,  &c_736726);;
 }
 
 static void __lambda_808(void *data, int argc, object self_732714, object r_731148) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736728;
 c_736728.hdr.mark = gc_color_red;
  c_736728.hdr.grayed = 0;
@@ -15837,8 +15166,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_736728, ((closureN)self_7327
 }
 
 static void __lambda_807(void *data, int argc, object self_732715, object r_731150) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736730;
 c_736730.hdr.mark = gc_color_red;
  c_736730.hdr.grayed = 0;
@@ -15856,8 +15184,7 @@ return_closcall2(data,  __glo_set_67_91_125exp,  &c_736730, ((closureN)self_7327
 }
 
 static void __lambda_806(void *data, int argc, object self_732716, object r_731154) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736732;
 c_736732.hdr.mark = gc_color_red;
  c_736732.hdr.grayed = 0;
@@ -15874,8 +15201,7 @@ return_closcall3(data,  __glo_wrap_91mutables,  &c_736732, r_731154, ((closureN)
 }
 
 static void __lambda_805(void *data, int argc, object self_732717, object r_731152) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736734;
 c_736734.hdr.mark = gc_color_red;
  c_736734.hdr.grayed = 0;
@@ -15893,8 +15219,7 @@ return_closcall1(data,(closure)&c_736734,  nil);;
 }
 
 static void __lambda_804(void *data, int argc, object self_732718, object r_731153) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736736;
 c_736736.hdr.mark = gc_color_red;
  c_736736.hdr.grayed = 0;
@@ -15913,8 +15238,7 @@ return_closcall1(data,(closure)&c_736736,  &c_736751);;
 }
 
 static void __lambda_803(void *data, int argc, object self_732719, object r_731151) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736738;
 c_736738.hdr.mark = gc_color_red;
  c_736738.hdr.grayed = 0;
@@ -15932,15 +15256,13 @@ return_closcall1(data,(closure)&c_736738,  &c_736747);;
 }
 
 static void __lambda_802(void *data, int argc, object self_732720, object r_731149) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_cons(c_736743,((closureN)self_732720)->elts[1], r_731149);
 return_closcall1(data,  ((closureN)self_732720)->elts[0],  &c_736743);; 
 }
 
 static void __lambda_801(void *data, int argc, object self_732721, object k_731155) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736715;
 c_736715.hdr.mark = gc_color_red;
  c_736715.hdr.grayed = 0;
@@ -15956,8 +15278,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_736715, ((closureN)self_7327
 }
 
 static void __lambda_800(void *data, int argc, object self_732722, object r_731157) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736717;
 c_736717.hdr.mark = gc_color_red;
  c_736717.hdr.grayed = 0;
@@ -15972,8 +15293,7 @@ return_closcall1(data,(closure)&c_736717,  memberp(data, r_731157, ((closureN)se
 }
 
 static void __lambda_799(void *data, int argc, object self_732723, object r_731156) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731156) ){ 
+  if( !eq(boolean_f, r_731156) ){ 
   return_closcall1(data,  ((closureN)self_732723)->elts[0],  quote_set_91global_67);
 } else { 
   return_closcall1(data,  ((closureN)self_732723)->elts[0],  quote_set_91cell_67);}
@@ -15981,8 +15301,7 @@ if( !eq(boolean_f, r_731156) ){
 }
 
 static void __lambda_798(void *data, int argc, object self_732724) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736665;
 c_736665.hdr.mark = gc_color_red;
  c_736665.hdr.grayed = 0;
@@ -16000,8 +15319,7 @@ return_closcall1(data,(closure)&c_736665,  quote_lambda);;
 }
 
 static void __lambda_797(void *data, int argc, object self_732725, object r_731137) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736667;
 c_736667.hdr.mark = gc_color_red;
  c_736667.hdr.grayed = 0;
@@ -16020,8 +15338,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_736667, ((closureN)self_
 }
 
 static void __lambda_796(void *data, int argc, object self_732726, object r_731139) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736669;
 c_736669.hdr.mark = gc_color_red;
  c_736669.hdr.grayed = 0;
@@ -16041,8 +15358,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_736669, ((closure
 }
 
 static void __lambda_795(void *data, int argc, object self_732727, object r_731143) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736671;
 c_736671.hdr.mark = gc_color_red;
  c_736671.hdr.grayed = 0;
@@ -16062,8 +15378,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_736671, ((closureN)self_7327
 }
 
 static void __lambda_794(void *data, int argc, object self_732728, object r_731146) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736673;
 c_736673.hdr.mark = gc_color_red;
  c_736673.hdr.grayed = 0;
@@ -16083,8 +15398,7 @@ return_closcall1(data,(closure)&c_736673,  car(r_731146));;
 }
 
 static void __lambda_793(void *data, int argc, object self_732729, object r_731145) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736675;
 c_736675.hdr.mark = gc_color_red;
  c_736675.hdr.grayed = 0;
@@ -16103,8 +15417,7 @@ return_closcall3(data,  __glo_wrap_91mutables,  &c_736675, r_731145, ((closureN)
 }
 
 static void __lambda_792(void *data, int argc, object self_732730, object r_731144) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736680;
 c_736680.hdr.mark = gc_color_red;
  c_736680.hdr.grayed = 0;
@@ -16121,8 +15434,7 @@ return_closcall3(data,  cell_get(((closureN)self_732730)->elts[4]),  &c_736680, 
 }
 
 static void __lambda_791(void *data, int argc, object self_732731, object r_731141) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736682;
 c_736682.hdr.mark = gc_color_red;
  c_736682.hdr.grayed = 0;
@@ -16140,8 +15452,7 @@ return_closcall1(data,(closure)&c_736682,  nil);;
 }
 
 static void __lambda_790(void *data, int argc, object self_732732, object r_731142) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736684;
 c_736684.hdr.mark = gc_color_red;
  c_736684.hdr.grayed = 0;
@@ -16160,8 +15471,7 @@ return_closcall1(data,(closure)&c_736684,  &c_736699);;
 }
 
 static void __lambda_789(void *data, int argc, object self_732733, object r_731140) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736686;
 c_736686.hdr.mark = gc_color_red;
  c_736686.hdr.grayed = 0;
@@ -16179,25 +15489,21 @@ return_closcall1(data,(closure)&c_736686,  &c_736695);;
 }
 
 static void __lambda_788(void *data, int argc, object self_732734, object r_731138) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_cons(c_736691,((closureN)self_732734)->elts[1], r_731138);
 return_closcall1(data,  ((closureN)self_732734)->elts[0],  &c_736691);; 
 }
 
 static void __lambda_787(void *data, int argc, object self_732735) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall1(data,  ((closureN)self_732735)->elts[1],  ((closureN)self_732735)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732735)->elts[1],  ((closureN)self_732735)->elts[0]);; 
 }
 
 static void __lambda_786(void *data, int argc, object self_732736) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall1(data,  ((closureN)self_732736)->elts[1],  ((closureN)self_732736)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732736)->elts[1],  ((closureN)self_732736)->elts[0]);; 
 }
 
 static void __lambda_785(void *data, int argc, object self_732737) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736612;
 c_736612.hdr.mark = gc_color_red;
  c_736612.hdr.grayed = 0;
@@ -16225,8 +15531,7 @@ return_closcall1(data,(closure)&c_736612,  &c_736626);;
 }
 
 static void __lambda_784(void *data, int argc, object self_732738, object r_731127) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731127) ){ 
+  if( !eq(boolean_f, r_731127) ){ 
   
 closureN_type c_736628;
 c_736628.hdr.mark = gc_color_red;
@@ -16246,8 +15551,7 @@ return_closcall1(data,(closure)&c_736628,  quote_cell_91get);
 }
 
 static void __lambda_783(void *data, int argc, object self_732739, object r_731128) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736630;
 c_736630.hdr.mark = gc_color_red;
  c_736630.hdr.grayed = 0;
@@ -16264,8 +15568,7 @@ return_closcall1(data,(closure)&c_736630,  nil);;
 }
 
 static void __lambda_782(void *data, int argc, object self_732740, object r_731130) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736632;
 c_736632.hdr.mark = gc_color_red;
  c_736632.hdr.grayed = 0;
@@ -16283,15 +15586,13 @@ return_closcall1(data,(closure)&c_736632,  &c_736641);;
 }
 
 static void __lambda_781(void *data, int argc, object self_732741, object r_731129) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 make_cons(c_736637,((closureN)self_732741)->elts[1], r_731129);
 return_closcall1(data,  ((closureN)self_732741)->elts[0],  &c_736637);; 
 }
 
 static void __lambda_780(void *data, int argc, object self_732742, object k_731131) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736614;
 c_736614.hdr.mark = gc_color_red;
  c_736614.hdr.grayed = 0;
@@ -16307,8 +15608,7 @@ return_closcall1(data,(closure)&c_736614,  memberp(data, ((closureN)self_732742)
 }
 
 static void __lambda_779(void *data, int argc, object self_732743, object r_731133) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-
+  
 closureN_type c_736616;
 c_736616.hdr.mark = gc_color_red;
  c_736616.hdr.grayed = 0;
@@ -16324,8 +15624,7 @@ return_closcall2(data,  __glo_not,  &c_736616, r_731133);;
 }
 
 static void __lambda_778(void *data, int argc, object self_732744, object r_731132) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-if( !eq(boolean_f, r_731132) ){ 
+  if( !eq(boolean_f, r_731132) ){ 
   return_closcall2(data,  __glo_is_91mutable_127,  ((closureN)self_732744)->elts[1], ((closureN)self_732744)->elts[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_732744)->elts[1],  boolean_f);}
@@ -16333,8 +15632,7 @@ if( !eq(boolean_f, r_731132) ){
 }
 
 static void __lambda_777(void *data, int argc, object self_732745) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:wrap-mutables");
-return_closcall1(data,  ((closureN)self_732745)->elts[1],  ((closureN)self_732745)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_732745)->elts[1],  ((closureN)self_732745)->elts[0]);; 
 }
 
 static void __lambda_776(void *data, int argc, closure _,object k_731199, object exp_73427) {
@@ -16355,8 +15653,7 @@ return_closcall2(data,  __glo_const_127,  &c_736450, exp_73427);;
 }
 
 static void __lambda_775(void *data, int argc, object self_732746, object r_731200) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731200) ){ 
+  if( !eq(boolean_f, r_731200) ){ 
   
 closureN_type c_736452;
 c_736452.hdr.mark = gc_color_red;
@@ -16387,8 +15684,7 @@ return_closcall2(data,  __glo_prim_127,  &c_736456, ((closureN)self_732746)->elt
 }
 
 static void __lambda_774(void *data, int argc, object self_732747, object r_731201) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731201) ){ 
+  if( !eq(boolean_f, r_731201) ){ 
   
 closureN_type c_736458;
 c_736458.hdr.mark = gc_color_red;
@@ -16419,8 +15715,7 @@ return_closcall2(data,  __glo_ref_127,  &c_736462, ((closureN)self_732747)->elts
 }
 
 static void __lambda_773(void *data, int argc, object self_732748, object r_731202) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731202) ){ 
+  if( !eq(boolean_f, r_731202) ){ 
   
 closureN_type c_736464;
 c_736464.hdr.mark = gc_color_red;
@@ -16451,8 +15746,7 @@ return_closcall2(data,  __glo_quote_127,  &c_736468, ((closureN)self_732748)->el
 }
 
 static void __lambda_772(void *data, int argc, object self_732749, object r_731203) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731203) ){ 
+  if( !eq(boolean_f, r_731203) ){ 
   
 closureN_type c_736470;
 c_736470.hdr.mark = gc_color_red;
@@ -16483,8 +15777,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_736474, ((closureN)self_732749)->e
 }
 
 static void __lambda_771(void *data, int argc, object self_732750, object r_731204) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731204) ){ 
+  if( !eq(boolean_f, r_731204) ){ 
   
 closureN_type c_736476;
 c_736476.hdr.mark = gc_color_red;
@@ -16516,8 +15809,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_736485, ((closureN)self_732750)->e
 }
 
 static void __lambda_770(void *data, int argc, object self_732751, object r_731207) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731207) ){ 
+  if( !eq(boolean_f, r_731207) ){ 
   
 closureN_type c_736487;
 c_736487.hdr.mark = gc_color_red;
@@ -16549,8 +15841,7 @@ return_closcall2(data,  __glo_if_127,  &c_736499, ((closureN)self_732751)->elts[
 }
 
 static void __lambda_769(void *data, int argc, object self_732752, object r_731211) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731211) ){ 
+  if( !eq(boolean_f, r_731211) ){ 
   
 closureN_type c_736501;
 c_736501.hdr.mark = gc_color_red;
@@ -16582,8 +15873,7 @@ return_closcall2(data,  __glo_let_127,  &c_736518, ((closureN)self_732752)->elts
 }
 
 static void __lambda_768(void *data, int argc, object self_732753, object r_731217) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731217) ){ 
+  if( !eq(boolean_f, r_731217) ){ 
   
 closureN_type c_736520;
 c_736520.hdr.mark = gc_color_red;
@@ -16615,8 +15905,7 @@ return_closcall2(data,  __glo_letrec_127,  &c_736536, ((closureN)self_732753)->e
 }
 
 static void __lambda_767(void *data, int argc, object self_732754, object r_731223) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731223) ){ 
+  if( !eq(boolean_f, r_731223) ){ 
   
 closureN_type c_736538;
 c_736538.hdr.mark = gc_color_red;
@@ -16648,8 +15937,7 @@ return_closcall2(data,  __glo_begin_127,  &c_736554, ((closureN)self_732754)->el
 }
 
 static void __lambda_766(void *data, int argc, object self_732755, object r_731229) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731229) ){ 
+  if( !eq(boolean_f, r_731229) ){ 
   
 closureN_type c_736556;
 c_736556.hdr.mark = gc_color_red;
@@ -16681,8 +15969,7 @@ return_closcall2(data,  __glo_app_127,  &c_736565, ((closureN)self_732755)->elts
 }
 
 static void __lambda_765(void *data, int argc, object self_732756, object r_731232) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-if( !eq(boolean_f, r_731232) ){ 
+  if( !eq(boolean_f, r_731232) ){ 
   
 closureN_type c_736567;
 c_736567.hdr.mark = gc_color_red;
@@ -16714,15 +16001,13 @@ return_closcall0(data,(closure)&c_736574);}
 }
 
 static void __lambda_764(void *data, int argc, object self_732757) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 make_string(c_736577, "unknown expression type: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732757)->elts[1], &c_736577, ((closureN)self_732757)->elts[0]);; 
 }
 
 static void __lambda_763(void *data, int argc, object self_732758) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736569;
 c_736569.hdr.mark = gc_color_red;
  c_736569.hdr.grayed = 0;
@@ -16737,13 +16022,11 @@ return_closcall3(data,  __glo_map,  &c_736569, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_762(void *data, int argc, object self_732759, object r_731233) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732759)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732759)->elts[0]);; 
 }
 
 static void __lambda_761(void *data, int argc, object self_732760) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736558;
 c_736558.hdr.mark = gc_color_red;
  c_736558.hdr.grayed = 0;
@@ -16758,8 +16041,7 @@ return_closcall2(data,  __glo_begin_91_125exps,  &c_736558, ((closureN)self_7327
 }
 
 static void __lambda_760(void *data, int argc, object self_732761, object r_731231) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736560;
 c_736560.hdr.mark = gc_color_red;
  c_736560.hdr.grayed = 0;
@@ -16774,13 +16056,11 @@ return_closcall3(data,  __glo_map,  &c_736560, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_759(void *data, int argc, object self_732762, object r_731230) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732762)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732762)->elts[0]);; 
 }
 
 static void __lambda_758(void *data, int argc, object self_732763) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736540;
 c_736540.hdr.mark = gc_color_red;
  c_736540.hdr.grayed = 0;
@@ -16796,8 +16076,7 @@ return_closcall2(data,  __glo_letrec_91_125bindings,  &c_736540, ((closureN)self
 }
 
 static void __lambda_757(void *data, int argc, object self_732764, object r_731228) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736542;
 c_736542.hdr.mark = gc_color_red;
  c_736542.hdr.grayed = 0;
@@ -16813,8 +16092,7 @@ return_closcall3(data,  __glo_map,  &c_736542, primitive_cadr, r_731228);;
 }
 
 static void __lambda_756(void *data, int argc, object self_732765, object r_731227) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736544;
 c_736544.hdr.mark = gc_color_red;
  c_736544.hdr.grayed = 0;
@@ -16830,8 +16108,7 @@ return_closcall3(data,  __glo_map,  &c_736544, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_755(void *data, int argc, object self_732766, object r_731224) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736546;
 c_736546.hdr.mark = gc_color_red;
  c_736546.hdr.grayed = 0;
@@ -16846,8 +16123,7 @@ return_closcall2(data,  __glo_letrec_91_125exp,  &c_736546, ((closureN)self_7327
 }
 
 static void __lambda_754(void *data, int argc, object self_732767, object r_731226) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736548;
 c_736548.hdr.mark = gc_color_red;
  c_736548.hdr.grayed = 0;
@@ -16862,13 +16138,11 @@ return_closcall3(data,  __glo_map,  &c_736548, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_753(void *data, int argc, object self_732768, object r_731225) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732768)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732768)->elts[0]);; 
 }
 
 static void __lambda_752(void *data, int argc, object self_732769) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736522;
 c_736522.hdr.mark = gc_color_red;
  c_736522.hdr.grayed = 0;
@@ -16884,8 +16158,7 @@ return_closcall2(data,  __glo_let_91_125bindings,  &c_736522, ((closureN)self_73
 }
 
 static void __lambda_751(void *data, int argc, object self_732770, object r_731222) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736524;
 c_736524.hdr.mark = gc_color_red;
  c_736524.hdr.grayed = 0;
@@ -16901,8 +16174,7 @@ return_closcall3(data,  __glo_map,  &c_736524, primitive_cadr, r_731222);;
 }
 
 static void __lambda_750(void *data, int argc, object self_732771, object r_731221) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736526;
 c_736526.hdr.mark = gc_color_red;
  c_736526.hdr.grayed = 0;
@@ -16918,8 +16190,7 @@ return_closcall3(data,  __glo_map,  &c_736526, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_749(void *data, int argc, object self_732772, object r_731218) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736528;
 c_736528.hdr.mark = gc_color_red;
  c_736528.hdr.grayed = 0;
@@ -16934,8 +16205,7 @@ return_closcall2(data,  __glo_let_91_125exp,  &c_736528, ((closureN)self_732772)
 }
 
 static void __lambda_748(void *data, int argc, object self_732773, object r_731220) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736530;
 c_736530.hdr.mark = gc_color_red;
  c_736530.hdr.grayed = 0;
@@ -16950,13 +16220,11 @@ return_closcall3(data,  __glo_map,  &c_736530, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_747(void *data, int argc, object self_732774, object r_731219) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732774)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732774)->elts[0]);; 
 }
 
 static void __lambda_746(void *data, int argc, object self_732775) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736503;
 c_736503.hdr.mark = gc_color_red;
  c_736503.hdr.grayed = 0;
@@ -16972,8 +16240,7 @@ return_closcall2(data,  __glo_if_91_125condition,  &c_736503, ((closureN)self_73
 }
 
 static void __lambda_745(void *data, int argc, object self_732776, object r_731216) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736505;
 c_736505.hdr.mark = gc_color_red;
  c_736505.hdr.grayed = 0;
@@ -16989,8 +16256,7 @@ return_closcall2(data,  __glo_analyze_91mutable_91variables,  &c_736505, r_73121
 }
 
 static void __lambda_744(void *data, int argc, object self_732777, object r_731212) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736507;
 c_736507.hdr.mark = gc_color_red;
  c_736507.hdr.grayed = 0;
@@ -17006,8 +16272,7 @@ return_closcall2(data,  __glo_if_91_125then,  &c_736507, ((closureN)self_732777)
 }
 
 static void __lambda_743(void *data, int argc, object self_732778, object r_731215) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736509;
 c_736509.hdr.mark = gc_color_red;
  c_736509.hdr.grayed = 0;
@@ -17023,8 +16288,7 @@ return_closcall2(data,  __glo_analyze_91mutable_91variables,  &c_736509, r_73121
 }
 
 static void __lambda_742(void *data, int argc, object self_732779, object r_731213) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736511;
 c_736511.hdr.mark = gc_color_red;
  c_736511.hdr.grayed = 0;
@@ -17039,13 +16303,11 @@ return_closcall2(data,  __glo_if_91_125else,  &c_736511, ((closureN)self_732779)
 }
 
 static void __lambda_741(void *data, int argc, object self_732780, object r_731214) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall2(data,  __glo_analyze_91mutable_91variables,  ((closureN)self_732780)->elts[0], r_731214);; 
+  return_closcall2(data,  __glo_analyze_91mutable_91variables,  ((closureN)self_732780)->elts[0], r_731214);; 
 }
 
 static void __lambda_740(void *data, int argc, object self_732781) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736489;
 c_736489.hdr.mark = gc_color_red;
  c_736489.hdr.grayed = 0;
@@ -17061,8 +16323,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_736489, ((closureN)self_7327
 }
 
 static void __lambda_739(void *data, int argc, object self_732782, object r_731210) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736491;
 c_736491.hdr.mark = gc_color_red;
  c_736491.hdr.grayed = 0;
@@ -17078,8 +16339,7 @@ return_closcall2(data,  __glo_mark_91mutable,  &c_736491, r_731210);;
 }
 
 static void __lambda_738(void *data, int argc, object self_732783, object r_731208) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736493;
 c_736493.hdr.mark = gc_color_red;
  c_736493.hdr.grayed = 0;
@@ -17094,13 +16354,11 @@ return_closcall2(data,  __glo_set_67_91_125exp,  &c_736493, ((closureN)self_7327
 }
 
 static void __lambda_737(void *data, int argc, object self_732784, object r_731209) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall2(data,  __glo_analyze_91mutable_91variables,  ((closureN)self_732784)->elts[0], r_731209);; 
+  return_closcall2(data,  __glo_analyze_91mutable_91variables,  ((closureN)self_732784)->elts[0], r_731209);; 
 }
 
 static void __lambda_736(void *data, int argc, object self_732785) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736478;
 c_736478.hdr.mark = gc_color_red;
  c_736478.hdr.grayed = 0;
@@ -17115,8 +16373,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_736478, ((closureN)self_7327
 }
 
 static void __lambda_735(void *data, int argc, object self_732786, object r_731206) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-
+  
 closureN_type c_736480;
 c_736480.hdr.mark = gc_color_red;
  c_736480.hdr.grayed = 0;
@@ -17131,28 +16388,23 @@ return_closcall3(data,  __glo_map,  &c_736480, __glo_analyze_91mutable_91variabl
 }
 
 static void __lambda_734(void *data, int argc, object self_732787, object r_731205) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732787)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732787)->elts[0]);; 
 }
 
 static void __lambda_733(void *data, int argc, object self_732788) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732788)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732788)->elts[0]);; 
 }
 
 static void __lambda_732(void *data, int argc, object self_732789) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732789)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732789)->elts[0]);; 
 }
 
 static void __lambda_731(void *data, int argc, object self_732790) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732790)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732790)->elts[0]);; 
 }
 
 static void __lambda_730(void *data, int argc, object self_732791) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:analyze-mutable-variables");
-return_closcall1(data,  __glo__void,  ((closureN)self_732791)->elts[0]);; 
+  return_closcall1(data,  __glo__void,  ((closureN)self_732791)->elts[0]);; 
 }
 
 static void __lambda_729(void *data, int argc, closure _,object k_731236, object symbol_73428) {
@@ -17173,8 +16425,7 @@ return_closcall1(data,(closure)&c_736397,  boolean_f);;
 }
 
 static void __lambda_728(void *data, int argc, object self_732792, object is_91in_127_73430) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736399;
 c_736399.hdr.mark = gc_color_red;
  c_736399.hdr.grayed = 0;
@@ -17192,8 +16443,7 @@ return_closcall1(data,(closure)&c_736399,  &c_736447);;
 }
 
 static void __lambda_727(void *data, int argc, object self_732793, object is_91in_127_73430) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736401;
 c_736401.hdr.mark = gc_color_red;
  c_736401.hdr.grayed = 0;
@@ -17210,8 +16460,7 @@ return_closcall1(data,(closure)&c_736401,  boolean_f);;
 }
 
 static void __lambda_726(void *data, int argc, object self_732794, object is_91in_127_73431) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736403;
 c_736403.hdr.mark = gc_color_red;
  c_736403.hdr.grayed = 0;
@@ -17239,8 +16488,7 @@ return_closcall1(data,(closure)&c_736403,  &c_736414);;
 }
 
 static void __lambda_725(void *data, int argc, object self_732795, object k_731239, object S_73432) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736416;
 c_736416.hdr.mark = gc_color_red;
  c_736416.hdr.grayed = 0;
@@ -17258,8 +16506,7 @@ return_closcall1(data,(closure)&c_736416,  Cyc_is_cons(S_73432));;
 }
 
 static void __lambda_724(void *data, int argc, object self_732796, object r_731244) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736418;
 c_736418.hdr.mark = gc_color_red;
  c_736418.hdr.grayed = 0;
@@ -17277,8 +16524,7 @@ return_closcall2(data,  __glo_not,  &c_736418, r_731244);;
 }
 
 static void __lambda_723(void *data, int argc, object self_732797, object r_731240) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-if( !eq(boolean_f, r_731240) ){ 
+  if( !eq(boolean_f, r_731240) ){ 
   return_closcall1(data,  ((closureN)self_732797)->elts[2],  boolean_f);
 } else { 
   
@@ -17300,8 +16546,7 @@ return_closcall1(data,(closure)&c_736422,  car(((closureN)self_732797)->elts[0])
 }
 
 static void __lambda_722(void *data, int argc, object self_732798, object r_731243) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736424;
 c_736424.hdr.mark = gc_color_red;
  c_736424.hdr.grayed = 0;
@@ -17318,8 +16563,7 @@ return_closcall1(data,(closure)&c_736424,  Cyc_eq(r_731243, ((closureN)self_7327
 }
 
 static void __lambda_721(void *data, int argc, object self_732799, object r_731241) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-if( !eq(boolean_f, r_731241) ){ 
+  if( !eq(boolean_f, r_731241) ){ 
   return_closcall1(data,  ((closureN)self_732799)->elts[2],  boolean_t);
 } else { 
   
@@ -17339,13 +16583,11 @@ return_closcall1(data,(closure)&c_736428,  cdr(((closureN)self_732799)->elts[0])
 }
 
 static void __lambda_720(void *data, int argc, object self_732800, object r_731242) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-return_closcall2(data,  cell_get(((closureN)self_732800)->elts[0]),  ((closureN)self_732800)->elts[1], r_731242);; 
+  return_closcall2(data,  cell_get(((closureN)self_732800)->elts[0]),  ((closureN)self_732800)->elts[1], r_731242);; 
 }
 
 static void __lambda_719(void *data, int argc, object self_732801, object r_731238) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-
+  
 closureN_type c_736405;
 c_736405.hdr.mark = gc_color_red;
  c_736405.hdr.grayed = 0;
@@ -17361,8 +16603,7 @@ return_closcall1(data,(closure)&c_736405,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_718(void *data, int argc, object self_732802, object r_731237) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:is-mutable?");
-return_closcall2(data,  cell_get(((closureN)self_732802)->elts[0]),  ((closureN)self_732802)->elts[1], __glo_mutable_91variables);; 
+  return_closcall2(data,  cell_get(((closureN)self_732802)->elts[0]),  ((closureN)self_732802)->elts[1], __glo_mutable_91variables);; 
 }
 
 static void __lambda_717(void *data, int argc, closure _,object k_731247, object symbol_73433) {
@@ -17384,8 +16625,7 @@ return_closcall1(data,(closure)&c_736387,  &c_736394);;
 }
 
 static void __lambda_716(void *data, int argc, object self_732803, object r_731248) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:mark-mutable");
-return_closcall1(data,  ((closureN)self_732803)->elts[0],  global_set(__glo_mutable_91variables, r_731248));; 
+  return_closcall1(data,  ((closureN)self_732803)->elts[0],  global_set(__glo_mutable_91variables, r_731248));; 
 }
 
 static void __lambda_715(void *data, int argc, closure _,object k_731251) {
@@ -17405,8 +16645,7 @@ return_closcall1(data,(closure)&c_736380,  nil);;
 }
 
 static void __lambda_714(void *data, int argc, object self_732804, object r_731252) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:clear-mutables");
-return_closcall1(data,  ((closureN)self_732804)->elts[0],  global_set(__glo_mutable_91variables, r_731252));; 
+  return_closcall1(data,  ((closureN)self_732804)->elts[0],  global_set(__glo_mutable_91variables, r_731252));; 
 }
 
 static void __lambda_713(void *data, int argc, closure _,object k_731257, object ast_73435, object opts_73434_raw, ...) {
@@ -17429,8 +16668,7 @@ return_closcall2(data,(closure)&c_736162,  boolean_f, boolean_f);;
 }
 
 static void __lambda_712(void *data, int argc, object self_732805, object bound_91only_127_73439, object search_73438) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736164;
 c_736164.hdr.mark = gc_color_red;
  c_736164.hdr.grayed = 0;
@@ -17450,8 +16688,7 @@ return_closcall1(data,(closure)&c_736164,  &c_736377);;
 }
 
 static void __lambda_711(void *data, int argc, object self_732806, object bound_91only_127_73439) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736166;
 c_736166.hdr.mark = gc_color_red;
  c_736166.hdr.grayed = 0;
@@ -17471,8 +16708,7 @@ return_closcall1(data,(closure)&c_736166,  &c_736373);;
 }
 
 static void __lambda_710(void *data, int argc, object self_732807, object search_73438) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736168;
 c_736168.hdr.mark = gc_color_red;
  c_736168.hdr.grayed = 0;
@@ -17491,8 +16727,7 @@ return_closcall2(data,(closure)&c_736168,  boolean_f, boolean_f);;
 }
 
 static void __lambda_709(void *data, int argc, object self_732808, object bound_91only_127_73441, object search_73440) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736170;
 c_736170.hdr.mark = gc_color_red;
  c_736170.hdr.grayed = 0;
@@ -17521,8 +16756,7 @@ return_closcall1(data,(closure)&c_736170,  &c_736185);;
 }
 
 static void __lambda_708(void *data, int argc, object self_732809, object r_731295) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736187;
 c_736187.hdr.mark = gc_color_red;
  c_736187.hdr.grayed = 0;
@@ -17540,8 +16774,7 @@ return_closcall1(data,(closure)&c_736187,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_707(void *data, int argc, object self_732810, object r_731258) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736189;
 c_736189.hdr.mark = gc_color_red;
  c_736189.hdr.grayed = 0;
@@ -17570,8 +16803,7 @@ return_closcall1(data,(closure)&c_736189,  &c_736201);;
 }
 
 static void __lambda_706(void *data, int argc, object self_732811, object k_731261, object exp_73442) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736203;
 c_736203.hdr.mark = gc_color_red;
  c_736203.hdr.grayed = 0;
@@ -17589,8 +16821,7 @@ return_closcall2(data,  __glo_const_127,  &c_736203, exp_73442);;
 }
 
 static void __lambda_705(void *data, int argc, object self_732812, object r_731262) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731262) ){ 
+  if( !eq(boolean_f, r_731262) ){ 
   
 closureN_type c_736205;
 c_736205.hdr.mark = gc_color_red;
@@ -17623,8 +16854,7 @@ return_closcall2(data,  __glo_prim_127,  &c_736209, ((closureN)self_732812)->elt
 }
 
 static void __lambda_704(void *data, int argc, object self_732813, object r_731263) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731263) ){ 
+  if( !eq(boolean_f, r_731263) ){ 
   
 closureN_type c_736211;
 c_736211.hdr.mark = gc_color_red;
@@ -17657,8 +16887,7 @@ return_closcall2(data,  __glo_quote_127,  &c_736215, ((closureN)self_732813)->el
 }
 
 static void __lambda_703(void *data, int argc, object self_732814, object r_731264) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731264) ){ 
+  if( !eq(boolean_f, r_731264) ){ 
   
 closureN_type c_736217;
 c_736217.hdr.mark = gc_color_red;
@@ -17691,8 +16920,7 @@ return_closcall2(data,  __glo_ref_127,  &c_736221, ((closureN)self_732814)->elts
 }
 
 static void __lambda_702(void *data, int argc, object self_732815, object r_731265) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731265) ){ 
+  if( !eq(boolean_f, r_731265) ){ 
   
 closureN_type c_736223;
 c_736223.hdr.mark = gc_color_red;
@@ -17726,8 +16954,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_736233, ((closureN)self_732815)->e
 }
 
 static void __lambda_701(void *data, int argc, object self_732816, object r_731266) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731266) ){ 
+  if( !eq(boolean_f, r_731266) ){ 
   
 closureN_type c_736235;
 c_736235.hdr.mark = gc_color_red;
@@ -17761,8 +16988,7 @@ return_closcall2(data,  __glo_if_127,  &c_736256, ((closureN)self_732816)->elts[
 }
 
 static void __lambda_700(void *data, int argc, object self_732817, object r_731272) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731272) ){ 
+  if( !eq(boolean_f, r_731272) ){ 
   
 closureN_type c_736258;
 c_736258.hdr.mark = gc_color_red;
@@ -17796,8 +17022,7 @@ return_closcall2(data,  __glo_define_127,  &c_736290, ((closureN)self_732817)->e
 }
 
 static void __lambda_699(void *data, int argc, object self_732818, object r_731280) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731280) ){ 
+  if( !eq(boolean_f, r_731280) ){ 
   
 closureN_type c_736292;
 c_736292.hdr.mark = gc_color_red;
@@ -17831,8 +17056,7 @@ return_closcall2(data,  __glo_define_91c_127,  &c_736310, ((closureN)self_732818
 }
 
 static void __lambda_698(void *data, int argc, object self_732819, object r_731285) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731285) ){ 
+  if( !eq(boolean_f, r_731285) ){ 
   
 closureN_type c_736312;
 c_736312.hdr.mark = gc_color_red;
@@ -17865,8 +17089,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_736319, ((closureN)self_732819)->e
 }
 
 static void __lambda_697(void *data, int argc, object self_732820, object r_731287) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731287) ){ 
+  if( !eq(boolean_f, r_731287) ){ 
   
 closureN_type c_736321;
 c_736321.hdr.mark = gc_color_red;
@@ -17900,8 +17123,7 @@ return_closcall2(data,  __glo_app_127,  &c_736339, ((closureN)self_732820)->elts
 }
 
 static void __lambda_696(void *data, int argc, object self_732821, object r_731292) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731292) ){ 
+  if( !eq(boolean_f, r_731292) ){ 
   
 closureN_type c_736341;
 c_736341.hdr.mark = gc_color_red;
@@ -17934,15 +17156,13 @@ return_closcall0(data,(closure)&c_736354);}
 }
 
 static void __lambda_695(void *data, int argc, object self_732822) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 make_string(c_736357, "unknown expression: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_732822)->elts[1], &c_736357, ((closureN)self_732822)->elts[0]);; 
 }
 
 static void __lambda_694(void *data, int argc, object self_732823) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736343;
 c_736343.hdr.mark = gc_color_red;
  c_736343.hdr.grayed = 0;
@@ -17957,8 +17177,7 @@ return_closcall3(data,  __glo_map,  &c_736343, cell_get(((closureN)self_732823)-
 }
 
 static void __lambda_693(void *data, int argc, object self_732824, object r_731293) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736345;
 c_736345.hdr.mark = gc_color_red;
  c_736345.hdr.grayed = 0;
@@ -17974,13 +17193,11 @@ return_closcall1(data,(closure)&c_736345,  nil);;
 }
 
 static void __lambda_692(void *data, int argc, object self_732825, object r_731294) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall4(data,  __glo_reduce,  ((closureN)self_732825)->elts[0], __glo__union, ((closureN)self_732825)->elts[1], r_731294);; 
+  return_closcall4(data,  __glo_reduce,  ((closureN)self_732825)->elts[0], __glo__union, ((closureN)self_732825)->elts[1], r_731294);; 
 }
 
 static void __lambda_691(void *data, int argc, object self_732826) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736323;
 c_736323.hdr.mark = gc_color_red;
  c_736323.hdr.grayed = 0;
@@ -17997,8 +17214,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_736323, ((closureN)self_7328
 }
 
 static void __lambda_690(void *data, int argc, object self_732827, object r_731291) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736325;
 c_736325.hdr.mark = gc_color_red;
  c_736325.hdr.grayed = 0;
@@ -18015,8 +17231,7 @@ return_closcall2(data,  __glo__list,  &c_736325, r_731291);;
 }
 
 static void __lambda_689(void *data, int argc, object self_732828, object r_731288) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736327;
 c_736327.hdr.mark = gc_color_red;
  c_736327.hdr.grayed = 0;
@@ -18033,8 +17248,7 @@ return_closcall2(data,  __glo_set_67_91_125exp,  &c_736327, ((closureN)self_7328
 }
 
 static void __lambda_688(void *data, int argc, object self_732829, object r_731290) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736332;
 c_736332.hdr.mark = gc_color_red;
  c_736332.hdr.grayed = 0;
@@ -18050,13 +17264,11 @@ return_closcall2(data,  cell_get(((closureN)self_732829)->elts[2]),  &c_736332, 
 }
 
 static void __lambda_687(void *data, int argc, object self_732830, object r_731289) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall3(data,  __glo__union,  ((closureN)self_732830)->elts[0], ((closureN)self_732830)->elts[1], r_731289);; 
+  return_closcall3(data,  __glo__union,  ((closureN)self_732830)->elts[0], ((closureN)self_732830)->elts[1], r_731289);; 
 }
 
 static void __lambda_686(void *data, int argc, object self_732831) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736314;
 c_736314.hdr.mark = gc_color_red;
  c_736314.hdr.grayed = 0;
@@ -18071,13 +17283,11 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736314, ((closureN)self_7328
 }
 
 static void __lambda_685(void *data, int argc, object self_732832, object r_731286) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall2(data,  __glo__list,  ((closureN)self_732832)->elts[0], r_731286);; 
+  return_closcall2(data,  __glo__list,  ((closureN)self_732832)->elts[0], r_731286);; 
 }
 
 static void __lambda_684(void *data, int argc, object self_732833) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736294;
 c_736294.hdr.mark = gc_color_red;
  c_736294.hdr.grayed = 0;
@@ -18094,8 +17304,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736294, ((closureN)self_7328
 }
 
 static void __lambda_683(void *data, int argc, object self_732834, object r_731284) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736296;
 c_736296.hdr.mark = gc_color_red;
  c_736296.hdr.grayed = 0;
@@ -18112,8 +17321,7 @@ return_closcall2(data,  __glo__list,  &c_736296, r_731284);;
 }
 
 static void __lambda_682(void *data, int argc, object self_732835, object r_731281) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736298;
 c_736298.hdr.mark = gc_color_red;
  c_736298.hdr.grayed = 0;
@@ -18130,8 +17338,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_736298, ((closureN)self_7328
 }
 
 static void __lambda_681(void *data, int argc, object self_732836, object r_731283) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736303;
 c_736303.hdr.mark = gc_color_red;
  c_736303.hdr.grayed = 0;
@@ -18147,13 +17354,11 @@ return_closcall2(data,  cell_get(((closureN)self_732836)->elts[2]),  &c_736303, 
 }
 
 static void __lambda_680(void *data, int argc, object self_732837, object r_731282) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall3(data,  __glo__union,  ((closureN)self_732837)->elts[0], ((closureN)self_732837)->elts[1], r_731282);; 
+  return_closcall3(data,  __glo__union,  ((closureN)self_732837)->elts[0], ((closureN)self_732837)->elts[1], r_731282);; 
 }
 
 static void __lambda_679(void *data, int argc, object self_732838) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736260;
 c_736260.hdr.mark = gc_color_red;
  c_736260.hdr.grayed = 0;
@@ -18170,8 +17375,7 @@ return_closcall2(data,  __glo_if_91_125condition,  &c_736260, ((closureN)self_73
 }
 
 static void __lambda_678(void *data, int argc, object self_732839, object r_731279) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736265;
 c_736265.hdr.mark = gc_color_red;
  c_736265.hdr.grayed = 0;
@@ -18188,8 +17392,7 @@ return_closcall2(data,  cell_get(((closureN)self_732839)->elts[2]),  &c_736265, 
 }
 
 static void __lambda_677(void *data, int argc, object self_732840, object r_731273) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736267;
 c_736267.hdr.mark = gc_color_red;
  c_736267.hdr.grayed = 0;
@@ -18207,8 +17410,7 @@ return_closcall2(data,  __glo_if_91_125then,  &c_736267, ((closureN)self_732840)
 }
 
 static void __lambda_676(void *data, int argc, object self_732841, object r_731278) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736272;
 c_736272.hdr.mark = gc_color_red;
  c_736272.hdr.grayed = 0;
@@ -18226,8 +17428,7 @@ return_closcall2(data,  cell_get(((closureN)self_732841)->elts[3]),  &c_736272, 
 }
 
 static void __lambda_675(void *data, int argc, object self_732842, object r_731275) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736274;
 c_736274.hdr.mark = gc_color_red;
  c_736274.hdr.grayed = 0;
@@ -18245,8 +17446,7 @@ return_closcall2(data,  __glo_if_91_125else,  &c_736274, ((closureN)self_732842)
 }
 
 static void __lambda_674(void *data, int argc, object self_732843, object r_731277) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736279;
 c_736279.hdr.mark = gc_color_red;
  c_736279.hdr.grayed = 0;
@@ -18263,8 +17463,7 @@ return_closcall2(data,  cell_get(((closureN)self_732843)->elts[3]),  &c_736279, 
 }
 
 static void __lambda_673(void *data, int argc, object self_732844, object r_731276) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736281;
 c_736281.hdr.mark = gc_color_red;
  c_736281.hdr.grayed = 0;
@@ -18280,13 +17479,11 @@ return_closcall3(data,  __glo__union,  &c_736281, ((closureN)self_732844)->elts[
 }
 
 static void __lambda_672(void *data, int argc, object self_732845, object r_731274) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall3(data,  __glo__union,  ((closureN)self_732845)->elts[0], ((closureN)self_732845)->elts[1], r_731274);; 
+  return_closcall3(data,  __glo__union,  ((closureN)self_732845)->elts[0], ((closureN)self_732845)->elts[1], r_731274);; 
 }
 
 static void __lambda_671(void *data, int argc, object self_732846) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736237;
 c_736237.hdr.mark = gc_color_red;
  c_736237.hdr.grayed = 0;
@@ -18303,8 +17500,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_736237, ((closureN)self_7328
 }
 
 static void __lambda_670(void *data, int argc, object self_732847, object r_731271) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736239;
 c_736239.hdr.mark = gc_color_red;
  c_736239.hdr.grayed = 0;
@@ -18320,8 +17516,7 @@ return_closcall3(data,  __glo_map,  &c_736239, cell_get(((closureN)self_732847)-
 }
 
 static void __lambda_669(void *data, int argc, object self_732848, object r_731269) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736241;
 c_736241.hdr.mark = gc_color_red;
  c_736241.hdr.grayed = 0;
@@ -18338,8 +17533,7 @@ return_closcall1(data,(closure)&c_736241,  nil);;
 }
 
 static void __lambda_668(void *data, int argc, object self_732849, object r_731270) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736243;
 c_736243.hdr.mark = gc_color_red;
  c_736243.hdr.grayed = 0;
@@ -18355,8 +17549,7 @@ return_closcall4(data,  __glo_reduce,  &c_736243, __glo__union, ((closureN)self_
 }
 
 static void __lambda_667(void *data, int argc, object self_732850, object r_731267) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736245;
 c_736245.hdr.mark = gc_color_red;
  c_736245.hdr.grayed = 0;
@@ -18372,13 +17565,11 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_736245, ((closure
 }
 
 static void __lambda_666(void *data, int argc, object self_732851, object r_731268) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall3(data,  __glo_difference,  ((closureN)self_732851)->elts[0], ((closureN)self_732851)->elts[1], r_731268);; 
+  return_closcall3(data,  __glo_difference,  ((closureN)self_732851)->elts[0], ((closureN)self_732851)->elts[1], r_731268);; 
 }
 
 static void __lambda_665(void *data, int argc, object self_732852) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, cell_get(((closureN)self_732852)->elts[0])) ){ 
+  if( !eq(boolean_f, cell_get(((closureN)self_732852)->elts[0])) ){ 
   return_closcall1(data,  ((closureN)self_732852)->elts[2],  nil);
 } else { 
   return_closcall2(data,  __glo__list,  ((closureN)self_732852)->elts[2], ((closureN)self_732852)->elts[1]);}
@@ -18386,23 +17577,19 @@ if( !eq(boolean_f, cell_get(((closureN)self_732852)->elts[0])) ){
 }
 
 static void __lambda_664(void *data, int argc, object self_732853) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall1(data,  ((closureN)self_732853)->elts[0],  nil);; 
+  return_closcall1(data,  ((closureN)self_732853)->elts[0],  nil);; 
 }
 
 static void __lambda_663(void *data, int argc, object self_732854) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall1(data,  ((closureN)self_732854)->elts[0],  nil);; 
+  return_closcall1(data,  ((closureN)self_732854)->elts[0],  nil);; 
 }
 
 static void __lambda_662(void *data, int argc, object self_732855) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall1(data,  ((closureN)self_732855)->elts[0],  nil);; 
+  return_closcall1(data,  ((closureN)self_732855)->elts[0],  nil);; 
 }
 
 static void __lambda_661(void *data, int argc, object self_732856, object r_731260) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736191;
 c_736191.hdr.mark = gc_color_red;
  c_736191.hdr.grayed = 0;
@@ -18419,13 +17606,11 @@ return_closcall1(data,(closure)&c_736191,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_660(void *data, int argc, object self_732857, object r_731259) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-return_closcall2(data,  cell_get(((closureN)self_732857)->elts[2]),  ((closureN)self_732857)->elts[1], ((closureN)self_732857)->elts[0]);; 
+  return_closcall2(data,  cell_get(((closureN)self_732857)->elts[2]),  ((closureN)self_732857)->elts[1], ((closureN)self_732857)->elts[0]);; 
 }
 
 static void __lambda_659(void *data, int argc, object self_732858, object k_731296) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736172;
 c_736172.hdr.mark = gc_color_red;
  c_736172.hdr.grayed = 0;
@@ -18441,8 +17626,7 @@ return_closcall1(data,(closure)&c_736172,  Cyc_is_null(((closureN)self_732858)->
 }
 
 static void __lambda_658(void *data, int argc, object self_732859, object r_731298) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-
+  
 closureN_type c_736174;
 c_736174.hdr.mark = gc_color_red;
  c_736174.hdr.grayed = 0;
@@ -18458,8 +17642,7 @@ return_closcall2(data,  __glo_not,  &c_736174, r_731298);;
 }
 
 static void __lambda_657(void *data, int argc, object self_732860, object r_731297) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:free-vars");
-if( !eq(boolean_f, r_731297) ){ 
+  if( !eq(boolean_f, r_731297) ){ 
   return_closcall1(data,  ((closureN)self_732860)->elts[0],  car(((closureN)self_732860)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_732860)->elts[0],  boolean_f);}
@@ -18485,8 +17668,7 @@ return_closcall2(data,(closure)&c_736002,  boolean_f, boolean_f);;
 }
 
 static void __lambda_655(void *data, int argc, object self_732861, object do_91filter_73448, object loop_73447) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736004;
 c_736004.hdr.mark = gc_color_red;
  c_736004.hdr.grayed = 0;
@@ -18506,8 +17688,7 @@ return_closcall1(data,(closure)&c_736004,  &c_736159);;
 }
 
 static void __lambda_654(void *data, int argc, object self_732862, object do_91filter_73448) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736006;
 c_736006.hdr.mark = gc_color_red;
  c_736006.hdr.grayed = 0;
@@ -18527,8 +17708,7 @@ return_closcall1(data,(closure)&c_736006,  &c_736155);;
 }
 
 static void __lambda_653(void *data, int argc, object self_732863, object loop_73447) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736008;
 c_736008.hdr.mark = gc_color_red;
  c_736008.hdr.grayed = 0;
@@ -18547,8 +17727,7 @@ return_closcall2(data,(closure)&c_736008,  boolean_f, boolean_f);;
 }
 
 static void __lambda_652(void *data, int argc, object self_732864, object do_91filter_73450, object loop_73449) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736010;
 c_736010.hdr.mark = gc_color_red;
  c_736010.hdr.grayed = 0;
@@ -18577,8 +17756,7 @@ return_closcall1(data,(closure)&c_736010,  &c_736063);;
 }
 
 static void __lambda_651(void *data, int argc, object self_732865, object k_731311, object code_73453) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736065;
 c_736065.hdr.mark = gc_color_red;
  c_736065.hdr.grayed = 0;
@@ -18597,8 +17775,7 @@ return_closcall1(data,(closure)&c_736065,  &c_736124);;
 }
 
 static void __lambda_650(void *data, int argc, object self_732866, object k_731325, object ast_73454) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736126;
 c_736126.hdr.mark = gc_color_red;
  c_736126.hdr.grayed = 0;
@@ -18614,8 +17791,7 @@ return_closcall2(data,  __glo_define_127,  &c_736126, ast_73454);;
 }
 
 static void __lambda_649(void *data, int argc, object self_732867, object r_731326) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-if( !eq(boolean_f, r_731326) ){ 
+  if( !eq(boolean_f, r_731326) ){ 
   
 closureN_type c_736128;
 c_736128.hdr.mark = gc_color_red;
@@ -18635,8 +17811,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736128, ((closureN)self_7328
 }
 
 static void __lambda_648(void *data, int argc, object self_732868, object r_731327) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736130;
 c_736130.hdr.mark = gc_color_red;
  c_736130.hdr.grayed = 0;
@@ -18652,8 +17827,7 @@ return_closcall1(data,(closure)&c_736130,  r_731327);;
 }
 
 static void __lambda_647(void *data, int argc, object self_732869, object var_73455) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736132;
 c_736132.hdr.mark = gc_color_red;
  c_736132.hdr.grayed = 0;
@@ -18680,8 +17854,7 @@ return_closcall1(data,(closure)&c_736132,  &c_736141);;
 }
 
 static void __lambda_646(void *data, int argc, object self_732870, object k_731331, object v_73456) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736143;
 c_736143.hdr.mark = gc_color_red;
  c_736143.hdr.grayed = 0;
@@ -18696,13 +17869,11 @@ return_closcall1(data,(closure)&c_736143,  equalp(v_73456, ((closureN)self_73287
 }
 
 static void __lambda_645(void *data, int argc, object self_732871, object r_731332) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-return_closcall2(data,  __glo_not,  ((closureN)self_732871)->elts[0], r_731332);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_732871)->elts[0], r_731332);; 
 }
 
 static void __lambda_644(void *data, int argc, object self_732872, object r_731328) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736134;
 c_736134.hdr.mark = gc_color_red;
  c_736134.hdr.grayed = 0;
@@ -18718,8 +17889,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_736134, ((closureN)self_7328
 }
 
 static void __lambda_643(void *data, int argc, object self_732873, object r_731330) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736136;
 c_736136.hdr.mark = gc_color_red;
  c_736136.hdr.grayed = 0;
@@ -18735,13 +17905,11 @@ return_closcall2(data,  __glo_free_91vars,  &c_736136, r_731330);;
 }
 
 static void __lambda_642(void *data, int argc, object self_732874, object r_731329) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-return_closcall3(data,  __glo_filter,  ((closureN)self_732874)->elts[0], ((closureN)self_732874)->elts[1], r_731329);; 
+  return_closcall3(data,  __glo_filter,  ((closureN)self_732874)->elts[0], ((closureN)self_732874)->elts[1], r_731329);; 
 }
 
 static void __lambda_641(void *data, int argc, object self_732875, object r_731324) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736067;
 c_736067.hdr.mark = gc_color_red;
  c_736067.hdr.grayed = 0;
@@ -18758,8 +17926,7 @@ return_closcall3(data,  __glo_map,  &c_736067, r_731324, ((closureN)self_732875)
 }
 
 static void __lambda_640(void *data, int argc, object self_732876, object r_731323) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736069;
 c_736069.hdr.mark = gc_color_red;
  c_736069.hdr.grayed = 0;
@@ -18778,8 +17945,7 @@ return_closcall1(data,(closure)&c_736069,  c_736122);;
 }
 
 static void __lambda_639(void *data, int argc, object self_732877, object r_731312) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736071;
 c_736071.hdr.mark = gc_color_red;
  c_736071.hdr.grayed = 0;
@@ -18796,8 +17962,7 @@ return_closcall1(data,(closure)&c_736071,  r_731312);;
 }
 
 static void __lambda_638(void *data, int argc, object self_732878, object all_91fv_73457) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736073;
 c_736073.hdr.mark = gc_color_red;
  c_736073.hdr.grayed = 0;
@@ -18825,8 +17990,7 @@ return_closcall1(data,(closure)&c_736073,  &c_736077);;
 }
 
 static void __lambda_637(void *data, int argc, object self_732879, object k_731314, object ast_73458) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736079;
 c_736079.hdr.mark = gc_color_red;
  c_736079.hdr.grayed = 0;
@@ -18844,8 +18008,7 @@ return_closcall2(data,  __glo_define_127,  &c_736079, ast_73458);;
 }
 
 static void __lambda_636(void *data, int argc, object self_732880, object r_731322) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736081;
 c_736081.hdr.mark = gc_color_red;
  c_736081.hdr.grayed = 0;
@@ -18863,8 +18026,7 @@ return_closcall2(data,  __glo_not,  &c_736081, r_731322);;
 }
 
 static void __lambda_635(void *data, int argc, object self_732881, object r_731315) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736083;
 c_736083.hdr.mark = gc_color_red;
  c_736083.hdr.grayed = 0;
@@ -18882,8 +18044,7 @@ return_closcall1(data,(closure)&c_736083,  r_731315);;
 }
 
 static void __lambda_634(void *data, int argc, object self_732882, object tmp_73459) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-if( !eq(boolean_f, tmp_73459) ){ 
+  if( !eq(boolean_f, tmp_73459) ){ 
   return_closcall1(data,  ((closureN)self_732882)->elts[2],  tmp_73459);
 } else { 
   
@@ -18905,8 +18066,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736087, ((closureN)self_7328
 }
 
 static void __lambda_633(void *data, int argc, object self_732883, object r_731321) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736089;
 c_736089.hdr.mark = gc_color_red;
  c_736089.hdr.grayed = 0;
@@ -18923,8 +18083,7 @@ return_closcall1(data,(closure)&c_736089,  memberp(data, r_731321, ((closureN)se
 }
 
 static void __lambda_632(void *data, int argc, object self_732884, object r_731316) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736091;
 c_736091.hdr.mark = gc_color_red;
  c_736091.hdr.grayed = 0;
@@ -18941,8 +18100,7 @@ return_closcall1(data,(closure)&c_736091,  r_731316);;
 }
 
 static void __lambda_631(void *data, int argc, object self_732885, object tmp_73460) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-if( !eq(boolean_f, tmp_73460) ){ 
+  if( !eq(boolean_f, tmp_73460) ){ 
   return_closcall1(data,  ((closureN)self_732885)->elts[1],  tmp_73460);
 } else { 
   
@@ -18963,8 +18121,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736095, ((closureN)self_7328
 }
 
 static void __lambda_630(void *data, int argc, object self_732886, object r_731320) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736097;
 c_736097.hdr.mark = gc_color_red;
  c_736097.hdr.grayed = 0;
@@ -18980,8 +18137,7 @@ return_closcall1(data,(closure)&c_736097,  memberp(data, r_731320, ((closureN)se
 }
 
 static void __lambda_629(void *data, int argc, object self_732887, object r_731317) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736099;
 c_736099.hdr.mark = gc_color_red;
  c_736099.hdr.grayed = 0;
@@ -18997,8 +18153,7 @@ return_closcall1(data,(closure)&c_736099,  r_731317);;
 }
 
 static void __lambda_628(void *data, int argc, object self_732888, object tmp_73461) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-if( !eq(boolean_f, tmp_73461) ){ 
+  if( !eq(boolean_f, tmp_73461) ){ 
   return_closcall1(data,  ((closureN)self_732888)->elts[1],  tmp_73461);
 } else { 
   
@@ -19017,8 +18172,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_736103, ((closureN)self_7328
 }
 
 static void __lambda_627(void *data, int argc, object self_732889, object r_731318) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736105;
 c_736105.hdr.mark = gc_color_red;
  c_736105.hdr.grayed = 0;
@@ -19034,18 +18188,15 @@ return_closcall1(data,  __glo_get_91macros,  &c_736105);;
 }
 
 static void __lambda_626(void *data, int argc, object self_732890, object r_731319) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-return_closcall1(data,  ((closureN)self_732890)->elts[0],  assoc(data, ((closureN)self_732890)->elts[1], r_731319));; 
+  return_closcall1(data,  ((closureN)self_732890)->elts[0],  assoc(data, ((closureN)self_732890)->elts[1], r_731319));; 
 }
 
 static void __lambda_625(void *data, int argc, object self_732891, object r_731313) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-return_closcall3(data,  __glo_filter,  ((closureN)self_732891)->elts[1], r_731313, ((closureN)self_732891)->elts[0]);; 
+  return_closcall3(data,  __glo_filter,  ((closureN)self_732891)->elts[1], r_731313, ((closureN)self_732891)->elts[0]);; 
 }
 
 static void __lambda_624(void *data, int argc, object self_732892, object r_731310) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736012;
 c_736012.hdr.mark = gc_color_red;
  c_736012.hdr.grayed = 0;
@@ -19063,8 +18214,7 @@ return_closcall1(data,(closure)&c_736012,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_623(void *data, int argc, object self_732893, object r_731302) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736014;
 c_736014.hdr.mark = gc_color_red;
  c_736014.hdr.grayed = 0;
@@ -19093,8 +18243,7 @@ return_closcall1(data,(closure)&c_736014,  &c_736026);;
 }
 
 static void __lambda_622(void *data, int argc, object self_732894, object k_731305, object code_73451) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736031;
 c_736031.hdr.mark = gc_color_red;
  c_736031.hdr.grayed = 0;
@@ -19111,8 +18260,7 @@ return_closcall2(data,  cell_get(((closureN)self_732894)->elts[0]),  &c_736031, 
 }
 
 static void __lambda_621(void *data, int argc, object self_732895, object r_731306) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736033;
 c_736033.hdr.mark = gc_color_red;
  c_736033.hdr.grayed = 0;
@@ -19129,8 +18277,7 @@ return_closcall1(data,(closure)&c_736033,  r_731306);;
 }
 
 static void __lambda_620(void *data, int argc, object self_732896, object new_91code_73452) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736035;
 c_736035.hdr.mark = gc_color_red;
  c_736035.hdr.grayed = 0;
@@ -19149,8 +18296,7 @@ return_closcall1(data,(closure)&c_736035,  &c_736058);;
 }
 
 static void __lambda_619(void *data, int argc, object self_732897, object r_731308) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736037;
 c_736037.hdr.mark = gc_color_red;
  c_736037.hdr.grayed = 0;
@@ -19170,8 +18316,7 @@ return_closcall1(data,(closure)&c_736037,  &c_736054);;
 }
 
 static void __lambda_618(void *data, int argc, object self_732898, object r_731309) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736039;
 c_736039.hdr.mark = gc_color_red;
  c_736039.hdr.grayed = 0;
@@ -19188,8 +18333,7 @@ return_closcall1(data,(closure)&c_736039,  __num_gt(data, ((closureN)self_732898
 }
 
 static void __lambda_617(void *data, int argc, object self_732899, object r_731307) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-if( !eq(boolean_f, r_731307) ){ 
+  if( !eq(boolean_f, r_731307) ){ 
   return_closcall2(data,  cell_get(((closureN)self_732899)->elts[1]),  ((closureN)self_732899)->elts[0], ((closureN)self_732899)->elts[2]);
 } else { 
   return_closcall1(data,  ((closureN)self_732899)->elts[0],  ((closureN)self_732899)->elts[2]);}
@@ -19197,8 +18341,7 @@ if( !eq(boolean_f, r_731307) ){
 }
 
 static void __lambda_616(void *data, int argc, object self_732900, object r_731304) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-
+  
 closureN_type c_736016;
 c_736016.hdr.mark = gc_color_red;
  c_736016.hdr.grayed = 0;
@@ -19215,8 +18358,7 @@ return_closcall1(data,(closure)&c_736016,  Cyc_set_car(data, ((closureN)self_732
 }
 
 static void __lambda_615(void *data, int argc, object self_732901, object r_731303) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:filter-unused-variables");
-return_closcall2(data,  cell_get(((closureN)self_732901)->elts[2]),  ((closureN)self_732901)->elts[1], ((closureN)self_732901)->elts[0]);; 
+  return_closcall2(data,  cell_get(((closureN)self_732901)->elts[2]),  ((closureN)self_732901)->elts[1], ((closureN)self_732901)->elts[0]);; 
 }
 
 static void __lambda_614(void *data, int argc, closure _,object k_731335, object exp_73462) {
@@ -19237,8 +18379,7 @@ return_closcall1(data,(closure)&c_735951,  nil);;
 }
 
 static void __lambda_613(void *data, int argc, object self_732902, object r_731336) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735953;
 c_735953.hdr.mark = gc_color_red;
  c_735953.hdr.grayed = 0;
@@ -19254,8 +18395,7 @@ return_closcall1(data,(closure)&c_735953,  r_731336);;
 }
 
 static void __lambda_612(void *data, int argc, object self_732903, object globals_73463) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735955;
 c_735955.hdr.mark = gc_color_red;
  c_735955.hdr.grayed = 0;
@@ -19273,8 +18413,7 @@ return_closcall1(data,(closure)&c_735955,  &c_735999);;
 }
 
 static void __lambda_611(void *data, int argc, object self_732904, object globals_73463) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735957;
 c_735957.hdr.mark = gc_color_red;
  c_735957.hdr.grayed = 0;
@@ -19302,8 +18441,7 @@ return_closcall1(data,(closure)&c_735957,  &c_735966);;
 }
 
 static void __lambda_610(void *data, int argc, object self_732905, object k_731339, object e_73464) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735968;
 c_735968.hdr.mark = gc_color_red;
  c_735968.hdr.grayed = 0;
@@ -19320,8 +18458,7 @@ return_closcall2(data,  __glo_define_127,  &c_735968, e_73464);;
 }
 
 static void __lambda_609(void *data, int argc, object self_732906, object r_731343) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735970;
 c_735970.hdr.mark = gc_color_red;
  c_735970.hdr.grayed = 0;
@@ -19338,8 +18475,7 @@ return_closcall1(data,(closure)&c_735970,  r_731343);;
 }
 
 static void __lambda_608(void *data, int argc, object self_732907, object tmp_73465) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735972;
 c_735972.hdr.mark = gc_color_red;
  c_735972.hdr.grayed = 0;
@@ -19368,8 +18504,7 @@ return_closcall1(data,(closure)&c_735972,  &c_735978);;
 }
 
 static void __lambda_607(void *data, int argc, object self_732908, object r_731340) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-if( !eq(boolean_f, r_731340) ){ 
+  if( !eq(boolean_f, r_731340) ){ 
   
 closureN_type c_735980;
 c_735980.hdr.mark = gc_color_red;
@@ -19389,8 +18524,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735980, ((closureN)self_7329
 }
 
 static void __lambda_606(void *data, int argc, object self_732909, object r_731342) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735982;
 c_735982.hdr.mark = gc_color_red;
  c_735982.hdr.grayed = 0;
@@ -19408,13 +18542,11 @@ return_closcall1(data,(closure)&c_735982,  &c_735990);;
 }
 
 static void __lambda_605(void *data, int argc, object self_732910, object r_731341) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-return_closcall1(data,  ((closureN)self_732910)->elts[1],  Cyc_set_car(data, ((closureN)self_732910)->elts[0], r_731341));; 
+  return_closcall1(data,  ((closureN)self_732910)->elts[1],  Cyc_set_car(data, ((closureN)self_732910)->elts[0], r_731341));; 
 }
 
 static void __lambda_604(void *data, int argc, object self_732911, object k_731344) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-if( !eq(boolean_f, ((closureN)self_732911)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732911)->elts[1]) ){ 
   return_closcall1(data,  k_731344,  ((closureN)self_732911)->elts[1]);
 } else { 
   return_closcall2(data,  __glo_define_91c_127,  k_731344, ((closureN)self_732911)->elts[0]);}
@@ -19422,8 +18554,7 @@ if( !eq(boolean_f, ((closureN)self_732911)->elts[1]) ){
 }
 
 static void __lambda_603(void *data, int argc, object self_732912, object r_731338) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-
+  
 closureN_type c_735959;
 c_735959.hdr.mark = gc_color_red;
  c_735959.hdr.grayed = 0;
@@ -19439,8 +18570,7 @@ return_closcall3(data,  __glo_for_91each,  &c_735959, r_731338, ((closureN)self_
 }
 
 static void __lambda_602(void *data, int argc, object self_732913, object r_731337) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:global-vars");
-return_closcall1(data,  ((closureN)self_732913)->elts[1],  cell_get(((closureN)self_732913)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_732913)->elts[1],  cell_get(((closureN)self_732913)->elts[0]));; 
 }
 
 static void __lambda_601(void *data, int argc, closure _,object k_731347, object exp_73467, object var_73466) {
@@ -19472,8 +18602,7 @@ return_closcall1(data,(closure)&c_735916,  &c_735919);;
 }
 
 static void __lambda_600(void *data, int argc, object self_732914, object k_731349, object return_73468) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-
+  
 closureN_type c_735921;
 c_735921.hdr.mark = gc_color_red;
  c_735921.hdr.grayed = 0;
@@ -19501,8 +18630,7 @@ return_closcall1(data,(closure)&c_735921,  &c_735927);;
 }
 
 static void __lambda_599(void *data, int argc, object self_732915, object k_731352, object e_73469) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-
+  
 closureN_type c_735929;
 c_735929.hdr.mark = gc_color_red;
  c_735929.hdr.grayed = 0;
@@ -19530,8 +18658,7 @@ return_closcall1(data,(closure)&c_735929,  &c_735943);;
 }
 
 static void __lambda_598(void *data, int argc, object self_732916, object r_731353) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-if( !eq(boolean_f, r_731353) ){ 
+  if( !eq(boolean_f, r_731353) ){ 
   return_closcall2(data,  ((closureN)self_732916)->elts[1],  ((closureN)self_732916)->elts[0], boolean_t);
 } else { 
   return_closcall1(data,  ((closureN)self_732916)->elts[0],  boolean_f);}
@@ -19539,8 +18666,7 @@ if( !eq(boolean_f, r_731353) ){
 }
 
 static void __lambda_597(void *data, int argc, object self_732917, object k_731354) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-
+  
 closureN_type c_735931;
 c_735931.hdr.mark = gc_color_red;
  c_735931.hdr.grayed = 0;
@@ -19557,8 +18683,7 @@ return_closcall2(data,  __glo_define_127,  &c_735931, ((closureN)self_732917)->e
 }
 
 static void __lambda_596(void *data, int argc, object self_732918, object r_731355) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-if( !eq(boolean_f, r_731355) ){ 
+  if( !eq(boolean_f, r_731355) ){ 
   
 closureN_type c_735933;
 c_735933.hdr.mark = gc_color_red;
@@ -19578,13 +18703,11 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735933, ((closureN)self_7329
 }
 
 static void __lambda_595(void *data, int argc, object self_732919, object r_731356) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-return_closcall1(data,  ((closureN)self_732919)->elts[0],  equalp(r_731356, ((closureN)self_732919)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_732919)->elts[0],  equalp(r_731356, ((closureN)self_732919)->elts[1]));; 
 }
 
 static void __lambda_594(void *data, int argc, object self_732920, object r_731351) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-
+  
 closureN_type c_735923;
 c_735923.hdr.mark = gc_color_red;
  c_735923.hdr.grayed = 0;
@@ -19599,13 +18722,11 @@ return_closcall3(data,  __glo_for_91each,  &c_735923, r_731351, ((closureN)self_
 }
 
 static void __lambda_593(void *data, int argc, object self_732921, object r_731350) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-return_closcall1(data,  ((closureN)self_732921)->elts[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_732921)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_592(void *data, int argc, object self_732922, object r_731348) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:has-global?");
-return_closcall2(data,  __glo_call_95cc,  ((closureN)self_732922)->elts[0], r_731348);; 
+  return_closcall2(data,  __glo_call_95cc,  ((closureN)self_732922)->elts[0], r_731348);; 
 }
 
 static void __lambda_591(void *data, int argc, closure _,object k_731359, object exp_73472, object program_127_73471, object lib_91name_73470) {
@@ -19628,8 +18749,7 @@ return_closcall1(data,(closure)&c_735490,  nil);;
 }
 
 static void __lambda_590(void *data, int argc, object self_732923, object r_731360) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735492;
 c_735492.hdr.mark = gc_color_red;
  c_735492.hdr.grayed = 0;
@@ -19648,8 +18768,7 @@ return_closcall1(data,(closure)&c_735492,  nil);;
 }
 
 static void __lambda_589(void *data, int argc, object self_732924, object r_731361) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735494;
 c_735494.hdr.mark = gc_color_red;
  c_735494.hdr.grayed = 0;
@@ -19666,8 +18785,7 @@ return_closcall3(data,(closure)&c_735494,  ((closureN)self_732924)->elts[0], ((c
 }
 
 static void __lambda_588(void *data, int argc, object self_732925, object top_91lvl_73475, object globals_73474, object exprs_73473) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735496;
 c_735496.hdr.mark = gc_color_red;
  c_735496.hdr.grayed = 0;
@@ -19687,8 +18805,7 @@ return_closcall1(data,(closure)&c_735496,  boolean_f);;
 }
 
 static void __lambda_587(void *data, int argc, object self_732926, object loop_73476) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735498;
 c_735498.hdr.mark = gc_color_red;
  c_735498.hdr.grayed = 0;
@@ -19710,8 +18827,7 @@ return_closcall1(data,(closure)&c_735498,  &c_735911);;
 }
 
 static void __lambda_586(void *data, int argc, object self_732927, object loop_73476) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735500;
 c_735500.hdr.mark = gc_color_red;
  c_735500.hdr.grayed = 0;
@@ -19743,8 +18859,7 @@ return_closcall1(data,(closure)&c_735500,  &c_735514);;
 }
 
 static void __lambda_585(void *data, int argc, object self_732928, object k_731364, object top_91lvl_73479, object globals_73478, object exprs_73477) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735516;
 c_735516.hdr.mark = gc_color_red;
  c_735516.hdr.grayed = 0;
@@ -19765,8 +18880,7 @@ return_closcall1(data,(closure)&c_735516,  Cyc_is_null(top_91lvl_73479));;
 }
 
 static void __lambda_584(void *data, int argc, object self_732929, object r_731365) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731365) ){ 
+  if( !eq(boolean_f, r_731365) ){ 
   
 closureN_type c_735518;
 c_735518.hdr.mark = gc_color_red;
@@ -19804,8 +18918,7 @@ return_closcall0(data,(closure)&c_735622);}
 }
 
 static void __lambda_583(void *data, int argc, object self_732930) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735624;
 c_735624.hdr.mark = gc_color_red;
  c_735624.hdr.grayed = 0;
@@ -19824,8 +18937,7 @@ return_closcall1(data,(closure)&c_735624,  car(((closureN)self_732930)->elts[4])
 }
 
 static void __lambda_582(void *data, int argc, object self_732931, object r_731444) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735626;
 c_735626.hdr.mark = gc_color_red;
  c_735626.hdr.grayed = 0;
@@ -19844,8 +18956,7 @@ return_closcall2(data,  __glo_define_127,  &c_735626, r_731444);;
 }
 
 static void __lambda_581(void *data, int argc, object self_732932, object r_731389) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731389) ){ 
+  if( !eq(boolean_f, r_731389) ){ 
   
 closureN_type c_735628;
 c_735628.hdr.mark = gc_color_red;
@@ -19883,8 +18994,7 @@ return_closcall1(data,(closure)&c_735848,  car(((closureN)self_732932)->elts[4])
 }
 
 static void __lambda_580(void *data, int argc, object self_732933, object r_731443) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735850;
 c_735850.hdr.mark = gc_color_red;
  c_735850.hdr.grayed = 0;
@@ -19903,8 +19013,7 @@ return_closcall2(data,  __glo_define_91c_127,  &c_735850, r_731443);;
 }
 
 static void __lambda_579(void *data, int argc, object self_732934, object r_731436) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731436) ){ 
+  if( !eq(boolean_f, r_731436) ){ 
   
 closureN_type c_735852;
 c_735852.hdr.mark = gc_color_red;
@@ -19942,8 +19051,7 @@ return_closcall0(data,(closure)&c_735877);}
 }
 
 static void __lambda_578(void *data, int argc, object self_732935) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735879;
 c_735879.hdr.mark = gc_color_red;
  c_735879.hdr.grayed = 0;
@@ -19962,8 +19070,7 @@ return_closcall1(data,(closure)&c_735879,  cdr(((closureN)self_732935)->elts[4])
 }
 
 static void __lambda_577(void *data, int argc, object self_732936, object r_731440) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735881;
 c_735881.hdr.mark = gc_color_red;
  c_735881.hdr.grayed = 0;
@@ -19982,8 +19089,7 @@ return_closcall1(data,(closure)&c_735881,  car(((closureN)self_732936)->elts[4])
 }
 
 static void __lambda_576(void *data, int argc, object self_732937, object r_731442) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735883;
 c_735883.hdr.mark = gc_color_red;
  c_735883.hdr.grayed = 0;
@@ -20003,13 +19109,11 @@ return_closcall1(data,(closure)&c_735883,  &c_735893);;
 }
 
 static void __lambda_575(void *data, int argc, object self_732938, object r_731441) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_732938)->elts[2]),  ((closureN)self_732938)->elts[1], ((closureN)self_732938)->elts[3], ((closureN)self_732938)->elts[0], r_731441);; 
+  return_closcall4(data,  cell_get(((closureN)self_732938)->elts[2]),  ((closureN)self_732938)->elts[1], ((closureN)self_732938)->elts[3], ((closureN)self_732938)->elts[0], r_731441);; 
 }
 
 static void __lambda_574(void *data, int argc, object self_732939) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735854;
 c_735854.hdr.mark = gc_color_red;
  c_735854.hdr.grayed = 0;
@@ -20028,8 +19132,7 @@ return_closcall1(data,(closure)&c_735854,  cdr(((closureN)self_732939)->elts[4])
 }
 
 static void __lambda_573(void *data, int argc, object self_732940, object r_731437) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735856;
 c_735856.hdr.mark = gc_color_red;
  c_735856.hdr.grayed = 0;
@@ -20048,8 +19151,7 @@ return_closcall1(data,(closure)&c_735856,  car(((closureN)self_732940)->elts[4])
 }
 
 static void __lambda_572(void *data, int argc, object self_732941, object r_731439) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735858;
 c_735858.hdr.mark = gc_color_red;
  c_735858.hdr.grayed = 0;
@@ -20069,13 +19171,11 @@ return_closcall1(data,(closure)&c_735858,  &c_735868);;
 }
 
 static void __lambda_571(void *data, int argc, object self_732942, object r_731438) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_732942)->elts[2]),  ((closureN)self_732942)->elts[1], ((closureN)self_732942)->elts[3], r_731438, ((closureN)self_732942)->elts[0]);; 
+  return_closcall4(data,  cell_get(((closureN)self_732942)->elts[2]),  ((closureN)self_732942)->elts[1], ((closureN)self_732942)->elts[3], r_731438, ((closureN)self_732942)->elts[0]);; 
 }
 
 static void __lambda_570(void *data, int argc, object self_732943) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735630;
 c_735630.hdr.mark = gc_color_red;
  c_735630.hdr.grayed = 0;
@@ -20094,8 +19194,7 @@ return_closcall1(data,(closure)&c_735630,  car(((closureN)self_732943)->elts[4])
 }
 
 static void __lambda_569(void *data, int argc, object self_732944, object r_731435) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735632;
 c_735632.hdr.mark = gc_color_red;
  c_735632.hdr.grayed = 0;
@@ -20114,8 +19213,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735632, r_731435);;
 }
 
 static void __lambda_568(void *data, int argc, object self_732945, object r_731434) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735634;
 c_735634.hdr.mark = gc_color_red;
  c_735634.hdr.grayed = 0;
@@ -20134,8 +19232,7 @@ return_closcall3(data,  __glo_has_91global_127,  &c_735634, ((closureN)self_7329
 }
 
 static void __lambda_567(void *data, int argc, object self_732946, object r_731390) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731390) ){ 
+  if( !eq(boolean_f, r_731390) ){ 
   
 closureN_type c_735636;
 c_735636.hdr.mark = gc_color_red;
@@ -20173,8 +19270,7 @@ return_closcall1(data,(closure)&c_735684,  car(((closureN)self_732946)->elts[4])
 }
 
 static void __lambda_566(void *data, int argc, object self_732947, object r_731433) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735686;
 c_735686.hdr.mark = gc_color_red;
  c_735686.hdr.grayed = 0;
@@ -20193,8 +19289,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735686, r_731433);;
 }
 
 static void __lambda_565(void *data, int argc, object self_732948, object r_731432) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735688;
 c_735688.hdr.mark = gc_color_red;
  c_735688.hdr.grayed = 0;
@@ -20213,8 +19308,7 @@ return_closcall1(data,(closure)&c_735688,  car(r_731432));;
 }
 
 static void __lambda_564(void *data, int argc, object self_732949, object r_731431) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735690;
 c_735690.hdr.mark = gc_color_red;
  c_735690.hdr.grayed = 0;
@@ -20233,8 +19327,7 @@ return_closcall1(data,(closure)&c_735690,  Cyc_is_symbol(r_731431));;
 }
 
 static void __lambda_563(void *data, int argc, object self_732950, object r_731421) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735692;
 c_735692.hdr.mark = gc_color_red;
  c_735692.hdr.grayed = 0;
@@ -20253,8 +19346,7 @@ return_closcall1(data,(closure)&c_735692,  r_731421);;
 }
 
 static void __lambda_562(void *data, int argc, object self_732951, object tmp_73480) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735694;
 c_735694.hdr.mark = gc_color_red;
  c_735694.hdr.grayed = 0;
@@ -20285,8 +19377,7 @@ return_closcall1(data,(closure)&c_735694,  &c_735728);;
 }
 
 static void __lambda_561(void *data, int argc, object self_732952, object r_731400) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731400) ){ 
+  if( !eq(boolean_f, r_731400) ){ 
   
 closureN_type c_735730;
 c_735730.hdr.mark = gc_color_red;
@@ -20324,8 +19415,7 @@ return_closcall0(data,(closure)&c_735812);}
 }
 
 static void __lambda_560(void *data, int argc, object self_732953) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735814;
 c_735814.hdr.mark = gc_color_red;
  c_735814.hdr.grayed = 0;
@@ -20344,8 +19434,7 @@ return_closcall1(data,(closure)&c_735814,  cdr(((closureN)self_732953)->elts[4])
 }
 
 static void __lambda_559(void *data, int argc, object self_732954, object r_731418) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735816;
 c_735816.hdr.mark = gc_color_red;
  c_735816.hdr.grayed = 0;
@@ -20364,8 +19453,7 @@ return_closcall1(data,(closure)&c_735816,  car(((closureN)self_732954)->elts[4])
 }
 
 static void __lambda_558(void *data, int argc, object self_732955, object r_731420) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735818;
 c_735818.hdr.mark = gc_color_red;
  c_735818.hdr.grayed = 0;
@@ -20385,13 +19473,11 @@ return_closcall1(data,(closure)&c_735818,  &c_735828);;
 }
 
 static void __lambda_557(void *data, int argc, object self_732956, object r_731419) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_732956)->elts[2]),  ((closureN)self_732956)->elts[1], ((closureN)self_732956)->elts[3], r_731419, ((closureN)self_732956)->elts[0]);; 
+  return_closcall4(data,  cell_get(((closureN)self_732956)->elts[2]),  ((closureN)self_732956)->elts[1], ((closureN)self_732956)->elts[3], r_731419, ((closureN)self_732956)->elts[0]);; 
 }
 
 static void __lambda_556(void *data, int argc, object self_732957) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735732;
 c_735732.hdr.mark = gc_color_red;
  c_735732.hdr.grayed = 0;
@@ -20410,8 +19496,7 @@ return_closcall1(data,(closure)&c_735732,  cdr(((closureN)self_732957)->elts[4])
 }
 
 static void __lambda_555(void *data, int argc, object self_732958, object r_731401) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735734;
 c_735734.hdr.mark = gc_color_red;
  c_735734.hdr.grayed = 0;
@@ -20431,8 +19516,7 @@ return_closcall1(data,(closure)&c_735734,  quote_define);;
 }
 
 static void __lambda_554(void *data, int argc, object self_732959, object r_731412) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735736;
 c_735736.hdr.mark = gc_color_red;
  c_735736.hdr.grayed = 0;
@@ -20453,8 +19537,7 @@ return_closcall1(data,(closure)&c_735736,  car(((closureN)self_732959)->elts[5])
 }
 
 static void __lambda_553(void *data, int argc, object self_732960, object r_731417) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735738;
 c_735738.hdr.mark = gc_color_red;
  c_735738.hdr.grayed = 0;
@@ -20475,8 +19558,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735738, r_731417);;
 }
 
 static void __lambda_552(void *data, int argc, object self_732961, object r_731414) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735740;
 c_735740.hdr.mark = gc_color_red;
  c_735740.hdr.grayed = 0;
@@ -20498,8 +19580,7 @@ return_closcall1(data,(closure)&c_735740,  nil);;
 }
 
 static void __lambda_551(void *data, int argc, object self_732962, object r_731416) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735742;
 c_735742.hdr.mark = gc_color_red;
  c_735742.hdr.grayed = 0;
@@ -20523,8 +19604,7 @@ return_closcall1(data,(closure)&c_735742,  &c_735804);;
 }
 
 static void __lambda_550(void *data, int argc, object self_732963, object r_731415) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735744;
 c_735744.hdr.mark = gc_color_red;
  c_735744.hdr.grayed = 0;
@@ -20547,8 +19627,7 @@ return_closcall1(data,(closure)&c_735744,  &c_735800);;
 }
 
 static void __lambda_549(void *data, int argc, object self_732964, object r_731413) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735746;
 c_735746.hdr.mark = gc_color_red;
  c_735746.hdr.grayed = 0;
@@ -20570,8 +19649,7 @@ return_closcall1(data,(closure)&c_735746,  &c_735796);;
 }
 
 static void __lambda_548(void *data, int argc, object self_732965, object r_731411) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735748;
 c_735748.hdr.mark = gc_color_red;
  c_735748.hdr.grayed = 0;
@@ -20592,8 +19670,7 @@ return_closcall1(data,(closure)&c_735748,  &c_735792);;
 }
 
 static void __lambda_547(void *data, int argc, object self_732966, object r_731402) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735750;
 c_735750.hdr.mark = gc_color_red;
  c_735750.hdr.grayed = 0;
@@ -20613,8 +19690,7 @@ return_closcall1(data,(closure)&c_735750,  quote_set_67);;
 }
 
 static void __lambda_546(void *data, int argc, object self_732967, object r_731405) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735752;
 c_735752.hdr.mark = gc_color_red;
  c_735752.hdr.grayed = 0;
@@ -20635,8 +19711,7 @@ return_closcall1(data,(closure)&c_735752,  car(((closureN)self_732967)->elts[5])
 }
 
 static void __lambda_545(void *data, int argc, object self_732968, object r_731410) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735754;
 c_735754.hdr.mark = gc_color_red;
  c_735754.hdr.grayed = 0;
@@ -20657,8 +19732,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735754, r_731410);;
 }
 
 static void __lambda_544(void *data, int argc, object self_732969, object r_731407) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735756;
 c_735756.hdr.mark = gc_color_red;
  c_735756.hdr.grayed = 0;
@@ -20679,8 +19753,7 @@ return_closcall1(data,(closure)&c_735756,  car(((closureN)self_732969)->elts[6])
 }
 
 static void __lambda_543(void *data, int argc, object self_732970, object r_731409) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735758;
 c_735758.hdr.mark = gc_color_red;
  c_735758.hdr.grayed = 0;
@@ -20701,8 +19774,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735758, r_731409);;
 }
 
 static void __lambda_542(void *data, int argc, object self_732971, object r_731408) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735760;
 c_735760.hdr.mark = gc_color_red;
  c_735760.hdr.grayed = 0;
@@ -20724,8 +19796,7 @@ return_closcall1(data,(closure)&c_735760,  &c_735782);;
 }
 
 static void __lambda_541(void *data, int argc, object self_732972, object r_731406) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735762;
 c_735762.hdr.mark = gc_color_red;
  c_735762.hdr.grayed = 0;
@@ -20746,8 +19817,7 @@ return_closcall1(data,(closure)&c_735762,  &c_735778);;
 }
 
 static void __lambda_540(void *data, int argc, object self_732973, object r_731404) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735764;
 c_735764.hdr.mark = gc_color_red;
  c_735764.hdr.grayed = 0;
@@ -20767,13 +19837,11 @@ return_closcall1(data,(closure)&c_735764,  &c_735774);;
 }
 
 static void __lambda_539(void *data, int argc, object self_732974, object r_731403) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_732974)->elts[1]),  ((closureN)self_732974)->elts[0], ((closureN)self_732974)->elts[2], ((closureN)self_732974)->elts[3], r_731403);; 
+  return_closcall4(data,  cell_get(((closureN)self_732974)->elts[1]),  ((closureN)self_732974)->elts[0], ((closureN)self_732974)->elts[2], ((closureN)self_732974)->elts[3], r_731403);; 
 }
 
 static void __lambda_538(void *data, int argc, object self_732975, object k_731422) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, ((closureN)self_732975)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732975)->elts[0]) ){ 
   return_closcall1(data,  k_731422,  ((closureN)self_732975)->elts[0]);
 } else { 
   
@@ -20793,8 +19861,7 @@ return_closcall1(data,(closure)&c_735699,  car(((closureN)self_732975)->elts[1])
 }
 
 static void __lambda_537(void *data, int argc, object self_732976, object r_731430) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735701;
 c_735701.hdr.mark = gc_color_red;
  c_735701.hdr.grayed = 0;
@@ -20810,8 +19877,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735701, r_731430);;
 }
 
 static void __lambda_536(void *data, int argc, object self_732977, object r_731429) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735703;
 c_735703.hdr.mark = gc_color_red;
  c_735703.hdr.grayed = 0;
@@ -20827,8 +19893,7 @@ return_closcall1(data,(closure)&c_735703,  car(r_731429));;
 }
 
 static void __lambda_535(void *data, int argc, object self_732978, object r_731428) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735705;
 c_735705.hdr.mark = gc_color_red;
  c_735705.hdr.grayed = 0;
@@ -20844,8 +19909,7 @@ return_closcall2(data,  __glo_list_127,  &c_735705, r_731428);;
 }
 
 static void __lambda_534(void *data, int argc, object self_732979, object r_731423) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, r_731423) ){ 
+  if( !eq(boolean_f, r_731423) ){ 
   
 closureN_type c_735707;
 c_735707.hdr.mark = gc_color_red;
@@ -20864,8 +19928,7 @@ return_closcall1(data,(closure)&c_735707,  car(((closureN)self_732979)->elts[1])
 }
 
 static void __lambda_533(void *data, int argc, object self_732980, object r_731427) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735709;
 c_735709.hdr.mark = gc_color_red;
  c_735709.hdr.grayed = 0;
@@ -20880,8 +19943,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735709, r_731427);;
 }
 
 static void __lambda_532(void *data, int argc, object self_732981, object r_731426) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735711;
 c_735711.hdr.mark = gc_color_red;
  c_735711.hdr.grayed = 0;
@@ -20896,8 +19958,7 @@ return_closcall1(data,(closure)&c_735711,  car(r_731426));;
 }
 
 static void __lambda_531(void *data, int argc, object self_732982, object r_731425) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735713;
 c_735713.hdr.mark = gc_color_red;
  c_735713.hdr.grayed = 0;
@@ -20912,13 +19973,11 @@ return_closcall2(data,  __glo_lambda_127,  &c_735713, r_731425);;
 }
 
 static void __lambda_530(void *data, int argc, object self_732983, object r_731424) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall2(data,  __glo_not,  ((closureN)self_732983)->elts[0], r_731424);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_732983)->elts[0], r_731424);; 
 }
 
 static void __lambda_529(void *data, int argc, object self_732984) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735638;
 c_735638.hdr.mark = gc_color_red;
  c_735638.hdr.grayed = 0;
@@ -20937,8 +19996,7 @@ return_closcall1(data,(closure)&c_735638,  cdr(((closureN)self_732984)->elts[4])
 }
 
 static void __lambda_528(void *data, int argc, object self_732985, object r_731391) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735640;
 c_735640.hdr.mark = gc_color_red;
  c_735640.hdr.grayed = 0;
@@ -20958,8 +20016,7 @@ return_closcall1(data,(closure)&c_735640,  quote_set_67);;
 }
 
 static void __lambda_527(void *data, int argc, object self_732986, object r_731394) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735642;
 c_735642.hdr.mark = gc_color_red;
  c_735642.hdr.grayed = 0;
@@ -20980,8 +20037,7 @@ return_closcall1(data,(closure)&c_735642,  car(((closureN)self_732986)->elts[5])
 }
 
 static void __lambda_526(void *data, int argc, object self_732987, object r_731399) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735644;
 c_735644.hdr.mark = gc_color_red;
  c_735644.hdr.grayed = 0;
@@ -21002,8 +20058,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735644, r_731399);;
 }
 
 static void __lambda_525(void *data, int argc, object self_732988, object r_731396) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735646;
 c_735646.hdr.mark = gc_color_red;
  c_735646.hdr.grayed = 0;
@@ -21024,8 +20079,7 @@ return_closcall1(data,(closure)&c_735646,  car(((closureN)self_732988)->elts[6])
 }
 
 static void __lambda_524(void *data, int argc, object self_732989, object r_731398) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735648;
 c_735648.hdr.mark = gc_color_red;
  c_735648.hdr.grayed = 0;
@@ -21046,8 +20100,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735648, r_731398);;
 }
 
 static void __lambda_523(void *data, int argc, object self_732990, object r_731397) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735650;
 c_735650.hdr.mark = gc_color_red;
  c_735650.hdr.grayed = 0;
@@ -21069,8 +20122,7 @@ return_closcall1(data,(closure)&c_735650,  &c_735672);;
 }
 
 static void __lambda_522(void *data, int argc, object self_732991, object r_731395) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735652;
 c_735652.hdr.mark = gc_color_red;
  c_735652.hdr.grayed = 0;
@@ -21091,8 +20143,7 @@ return_closcall1(data,(closure)&c_735652,  &c_735668);;
 }
 
 static void __lambda_521(void *data, int argc, object self_732992, object r_731393) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735654;
 c_735654.hdr.mark = gc_color_red;
  c_735654.hdr.grayed = 0;
@@ -21112,13 +20163,11 @@ return_closcall1(data,(closure)&c_735654,  &c_735664);;
 }
 
 static void __lambda_520(void *data, int argc, object self_732993, object r_731392) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_732993)->elts[2]),  ((closureN)self_732993)->elts[1], ((closureN)self_732993)->elts[3], ((closureN)self_732993)->elts[0], r_731392);; 
+  return_closcall4(data,  cell_get(((closureN)self_732993)->elts[2]),  ((closureN)self_732993)->elts[1], ((closureN)self_732993)->elts[3], ((closureN)self_732993)->elts[0], r_731392);; 
 }
 
 static void __lambda_519(void *data, int argc, object self_732994) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735520;
 c_735520.hdr.mark = gc_color_red;
  c_735520.hdr.grayed = 0;
@@ -21136,8 +20185,7 @@ return_closcall2(data,  __glo_reverse,  &c_735520, ((closureN)self_732994)->elts
 }
 
 static void __lambda_518(void *data, int argc, object self_732995, object r_731366) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735522;
 c_735522.hdr.mark = gc_color_red;
  c_735522.hdr.grayed = 0;
@@ -21166,8 +20214,7 @@ return_closcall1(data,(closure)&c_735522,  &c_735611);;
 }
 
 static void __lambda_517(void *data, int argc, object self_732996, object r_731368) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735613;
 c_735613.hdr.mark = gc_color_red;
  c_735613.hdr.grayed = 0;
@@ -21184,8 +20231,7 @@ return_closcall1(data,  __glo_macro_117get_91env,  &c_735613);;
 }
 
 static void __lambda_516(void *data, int argc, object self_732997, object r_731369) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735615;
 c_735615.hdr.mark = gc_color_red;
  c_735615.hdr.grayed = 0;
@@ -21201,13 +20247,11 @@ return_closcall3(data,  __glo_expand,  &c_735615, ((closureN)self_732997)->elts[
 }
 
 static void __lambda_515(void *data, int argc, object self_732998, object r_731367) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall3(data,  __glo_append,  ((closureN)self_732998)->elts[0], ((closureN)self_732998)->elts[1], r_731367);; 
+  return_closcall3(data,  __glo_append,  ((closureN)self_732998)->elts[0], ((closureN)self_732998)->elts[1], r_731367);; 
 }
 
 static void __lambda_514(void *data, int argc, object self_732999, object k_731370) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-if( !eq(boolean_f, ((closureN)self_732999)->elts[2]) ){ 
+  if( !eq(boolean_f, ((closureN)self_732999)->elts[2]) ){ 
   
 closureN_type c_735525;
 c_735525.hdr.mark = gc_color_red;
@@ -21240,8 +20284,7 @@ return_closcall0(data,(closure)&c_735552);}
 }
 
 static void __lambda_513(void *data, int argc, object self_733000) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735554;
 c_735554.hdr.mark = gc_color_red;
  c_735554.hdr.grayed = 0;
@@ -21258,8 +20301,7 @@ return_closcall1(data,(closure)&c_735554,  quote_define);;
 }
 
 static void __lambda_512(void *data, int argc, object self_733001, object r_731378) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735556;
 c_735556.hdr.mark = gc_color_red;
  c_735556.hdr.grayed = 0;
@@ -21276,8 +20318,7 @@ return_closcall2(data,  __glo_lib_117name_91_125symbol,  &c_735556, ((closureN)s
 }
 
 static void __lambda_511(void *data, int argc, object self_733002, object r_731380) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735558;
 c_735558.hdr.mark = gc_color_red;
  c_735558.hdr.grayed = 0;
@@ -21295,8 +20336,7 @@ return_closcall1(data,(closure)&c_735558,  quote_lambda);;
 }
 
 static void __lambda_510(void *data, int argc, object self_733003, object r_731384) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735560;
 c_735560.hdr.mark = gc_color_red;
  c_735560.hdr.grayed = 0;
@@ -21315,8 +20355,7 @@ return_closcall1(data,(closure)&c_735560,  nil);;
 }
 
 static void __lambda_509(void *data, int argc, object self_733004, object r_731386) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735562;
 c_735562.hdr.mark = gc_color_red;
  c_735562.hdr.grayed = 0;
@@ -21335,8 +20374,7 @@ return_closcall2(data,  __glo_reverse,  &c_735562, ((closureN)self_733004)->elts
 }
 
 static void __lambda_508(void *data, int argc, object self_733005, object r_731388) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735564;
 c_735564.hdr.mark = gc_color_red;
  c_735564.hdr.grayed = 0;
@@ -21359,8 +20397,7 @@ return_closcall1(data,(closure)&c_735564,  &c_735607);;
 }
 
 static void __lambda_507(void *data, int argc, object self_733006, object r_731387) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735566;
 c_735566.hdr.mark = gc_color_red;
  c_735566.hdr.grayed = 0;
@@ -21380,8 +20417,7 @@ return_closcall1(data,(closure)&c_735566,  &c_735603);;
 }
 
 static void __lambda_506(void *data, int argc, object self_733007, object r_731385) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735568;
 c_735568.hdr.mark = gc_color_red;
  c_735568.hdr.grayed = 0;
@@ -21400,8 +20436,7 @@ return_closcall1(data,(closure)&c_735568,  &c_735599);;
 }
 
 static void __lambda_505(void *data, int argc, object self_733008, object r_731382) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735570;
 c_735570.hdr.mark = gc_color_red;
  c_735570.hdr.grayed = 0;
@@ -21419,8 +20454,7 @@ return_closcall1(data,(closure)&c_735570,  nil);;
 }
 
 static void __lambda_504(void *data, int argc, object self_733009, object r_731383) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735572;
 c_735572.hdr.mark = gc_color_red;
  c_735572.hdr.grayed = 0;
@@ -21439,8 +20473,7 @@ return_closcall1(data,(closure)&c_735572,  &c_735595);;
 }
 
 static void __lambda_503(void *data, int argc, object self_733010, object r_731381) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735574;
 c_735574.hdr.mark = gc_color_red;
  c_735574.hdr.grayed = 0;
@@ -21458,8 +20491,7 @@ return_closcall1(data,(closure)&c_735574,  &c_735591);;
 }
 
 static void __lambda_502(void *data, int argc, object self_733011, object r_731379) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735576;
 c_735576.hdr.mark = gc_color_red;
  c_735576.hdr.grayed = 0;
@@ -21476,8 +20508,7 @@ return_closcall1(data,(closure)&c_735576,  &c_735587);;
 }
 
 static void __lambda_501(void *data, int argc, object self_733012, object r_731376) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735578;
 c_735578.hdr.mark = gc_color_red;
  c_735578.hdr.grayed = 0;
@@ -21493,15 +20524,13 @@ return_closcall1(data,(closure)&c_735578,  nil);;
 }
 
 static void __lambda_500(void *data, int argc, object self_733013, object r_731377) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 make_cons(c_735583,((closureN)self_733013)->elts[1], r_731377);
 return_closcall1(data,  ((closureN)self_733013)->elts[0],  &c_735583);; 
 }
 
 static void __lambda_499(void *data, int argc, object self_733014) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735527;
 c_735527.hdr.mark = gc_color_red;
  c_735527.hdr.grayed = 0;
@@ -21517,8 +20546,7 @@ return_closcall1(data,(closure)&c_735527,  quote_begin);;
 }
 
 static void __lambda_498(void *data, int argc, object self_733015, object r_731373) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735529;
 c_735529.hdr.mark = gc_color_red;
  c_735529.hdr.grayed = 0;
@@ -21534,8 +20562,7 @@ return_closcall2(data,  __glo_reverse,  &c_735529, ((closureN)self_733015)->elts
 }
 
 static void __lambda_497(void *data, int argc, object self_733016, object r_731375) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735531;
 c_735531.hdr.mark = gc_color_red;
  c_735531.hdr.grayed = 0;
@@ -21555,8 +20582,7 @@ return_closcall1(data,(closure)&c_735531,  &c_735548);;
 }
 
 static void __lambda_496(void *data, int argc, object self_733017, object r_731374) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735533;
 c_735533.hdr.mark = gc_color_red;
  c_735533.hdr.grayed = 0;
@@ -21573,8 +20599,7 @@ return_closcall1(data,(closure)&c_735533,  &c_735544);;
 }
 
 static void __lambda_495(void *data, int argc, object self_733018, object r_731371) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735535;
 c_735535.hdr.mark = gc_color_red;
  c_735535.hdr.grayed = 0;
@@ -21590,15 +20615,13 @@ return_closcall1(data,(closure)&c_735535,  nil);;
 }
 
 static void __lambda_494(void *data, int argc, object self_733019, object r_731372) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 make_cons(c_735540,((closureN)self_733019)->elts[1], r_731372);
 return_closcall1(data,  ((closureN)self_733019)->elts[0],  &c_735540);; 
 }
 
 static void __lambda_493(void *data, int argc, object self_733020, object r_731363) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-
+  
 closureN_type c_735502;
 c_735502.hdr.mark = gc_color_red;
  c_735502.hdr.grayed = 0;
@@ -21617,8 +20640,7 @@ return_closcall1(data,(closure)&c_735502,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_492(void *data, int argc, object self_733021, object r_731362) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:isolate-globals");
-return_closcall4(data,  cell_get(((closureN)self_733021)->elts[3]),  ((closureN)self_733021)->elts[2], ((closureN)self_733021)->elts[4], ((closureN)self_733021)->elts[1], ((closureN)self_733021)->elts[0]);; 
+  return_closcall4(data,  cell_get(((closureN)self_733021)->elts[3]),  ((closureN)self_733021)->elts[2], ((closureN)self_733021)->elts[4], ((closureN)self_733021)->elts[1], ((closureN)self_733021)->elts[0]);; 
 }
 
 static void __lambda_491(void *data, int argc, closure _,object k_731447, object result_73483, object exp_73482, object env_73481) {
@@ -21641,8 +20663,7 @@ return_closcall1(data,(closure)&c_735338,  Cyc_is_null(exp_73482));;
 }
 
 static void __lambda_490(void *data, int argc, object self_733022, object r_731448) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-if( !eq(boolean_f, r_731448) ){ 
+  if( !eq(boolean_f, r_731448) ){ 
   
 closureN_type c_735340;
 c_735340.hdr.mark = gc_color_red;
@@ -21676,8 +20697,7 @@ return_closcall1(data,(closure)&c_735345,  car(((closureN)self_733022)->elts[1])
 }
 
 static void __lambda_489(void *data, int argc, object self_733023, object r_731473) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735347;
 c_735347.hdr.mark = gc_color_red;
  c_735347.hdr.grayed = 0;
@@ -21695,8 +20715,7 @@ return_closcall2(data,  __glo_begin_127,  &c_735347, r_731473);;
 }
 
 static void __lambda_488(void *data, int argc, object self_733024, object r_731449) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-if( !eq(boolean_f, r_731449) ){ 
+  if( !eq(boolean_f, r_731449) ){ 
   
 closureN_type c_735349;
 c_735349.hdr.mark = gc_color_red;
@@ -21732,8 +20751,7 @@ return_closcall0(data,(closure)&c_735376);}
 }
 
 static void __lambda_487(void *data, int argc, object self_733025) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735378;
 c_735378.hdr.mark = gc_color_red;
  c_735378.hdr.grayed = 0;
@@ -21751,8 +20769,7 @@ return_closcall1(data,(closure)&c_735378,  boolean_f);;
 }
 
 static void __lambda_486(void *data, int argc, object self_733026, object macro_73484) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735380;
 c_735380.hdr.mark = gc_color_red;
  c_735380.hdr.grayed = 0;
@@ -21772,8 +20789,7 @@ return_closcall1(data,(closure)&c_735380,  &c_735482);;
 }
 
 static void __lambda_485(void *data, int argc, object self_733027, object macro_73484) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735382;
 c_735382.hdr.mark = gc_color_red;
  c_735382.hdr.grayed = 0;
@@ -21805,8 +20821,7 @@ return_closcall1(data,(closure)&c_735382,  &c_735421);;
 }
 
 static void __lambda_484(void *data, int argc, object self_733028, object r_731454) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735423;
 c_735423.hdr.mark = gc_color_red;
  c_735423.hdr.grayed = 0;
@@ -21825,8 +20840,7 @@ return_closcall1(data,(closure)&c_735423,  quote_macro);;
 }
 
 static void __lambda_483(void *data, int argc, object self_733029, object r_731464) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735425;
 c_735425.hdr.mark = gc_color_red;
  c_735425.hdr.grayed = 0;
@@ -21845,8 +20859,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_735425, r_731464, cell_get(
 }
 
 static void __lambda_482(void *data, int argc, object self_733030, object r_731455) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-if( !eq(boolean_f, r_731455) ){ 
+  if( !eq(boolean_f, r_731455) ){ 
   
 closureN_type c_735427;
 c_735427.hdr.mark = gc_color_red;
@@ -21883,8 +20896,7 @@ return_closcall1(data,(closure)&c_735455,  car(((closureN)self_733030)->elts[1])
 }
 
 static void __lambda_481(void *data, int argc, object self_733031, object r_731463) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735457;
 c_735457.hdr.mark = gc_color_red;
  c_735457.hdr.grayed = 0;
@@ -21902,8 +20914,7 @@ return_closcall3(data,  __glo_expand,  &c_735457, r_731463, ((closureN)self_7330
 }
 
 static void __lambda_480(void *data, int argc, object self_733032, object r_731462) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735459;
 c_735459.hdr.mark = gc_color_red;
  c_735459.hdr.grayed = 0;
@@ -21922,8 +20933,7 @@ return_closcall1(data,(closure)&c_735459,  &c_735471);;
 }
 
 static void __lambda_479(void *data, int argc, object self_733033, object r_731460) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735461;
 c_735461.hdr.mark = gc_color_red;
  c_735461.hdr.grayed = 0;
@@ -21940,13 +20950,11 @@ return_closcall1(data,(closure)&c_735461,  cdr(((closureN)self_733033)->elts[1])
 }
 
 static void __lambda_478(void *data, int argc, object self_733034, object r_731461) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733034)->elts[1], ((closureN)self_733034)->elts[2], r_731461, ((closureN)self_733034)->elts[0]);; 
+  return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733034)->elts[1], ((closureN)self_733034)->elts[2], r_731461, ((closureN)self_733034)->elts[0]);; 
 }
 
 static void __lambda_477(void *data, int argc, object self_733035, object r_731459) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735429;
 c_735429.hdr.mark = gc_color_red;
  c_735429.hdr.grayed = 0;
@@ -21964,8 +20972,7 @@ return_closcall4(data,  __glo_macro_117expand,  &c_735429, r_731459, cell_get(((
 }
 
 static void __lambda_476(void *data, int argc, object self_733036, object r_731456) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735431;
 c_735431.hdr.mark = gc_color_red;
  c_735431.hdr.grayed = 0;
@@ -21983,8 +20990,7 @@ return_closcall1(data,(closure)&c_735431,  r_731456);;
 }
 
 static void __lambda_475(void *data, int argc, object self_733037, object expanded_73485) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735433;
 c_735433.hdr.mark = gc_color_red;
  c_735433.hdr.grayed = 0;
@@ -22002,8 +21008,7 @@ return_closcall1(data,(closure)&c_735433,  cdr(((closureN)self_733037)->elts[1])
 }
 
 static void __lambda_474(void *data, int argc, object self_733038, object r_731458) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735435;
 c_735435.hdr.mark = gc_color_red;
  c_735435.hdr.grayed = 0;
@@ -22022,13 +21027,11 @@ return_closcall1(data,(closure)&c_735435,  &c_735442);;
 }
 
 static void __lambda_473(void *data, int argc, object self_733039, object r_731457) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733039)->elts[1], ((closureN)self_733039)->elts[2], r_731457, ((closureN)self_733039)->elts[0]);; 
+  return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733039)->elts[1], ((closureN)self_733039)->elts[2], r_731457, ((closureN)self_733039)->elts[0]);; 
 }
 
 static void __lambda_472(void *data, int argc, object self_733040, object k_731465) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735384;
 c_735384.hdr.mark = gc_color_red;
  c_735384.hdr.grayed = 0;
@@ -22057,8 +21060,7 @@ return_closcall1(data,(closure)&c_735384,  &c_735403);;
 }
 
 static void __lambda_471(void *data, int argc, object self_733041, object r_731466) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-if( !eq(boolean_f, r_731466) ){ 
+  if( !eq(boolean_f, r_731466) ){ 
   
 closureN_type c_735405;
 c_735405.hdr.mark = gc_color_red;
@@ -22080,8 +21082,7 @@ return_closcall0(data,(closure)&c_735405);
 }
 
 static void __lambda_470(void *data, int argc, object self_733042) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735407;
 c_735407.hdr.mark = gc_color_red;
  c_735407.hdr.grayed = 0;
@@ -22098,8 +21099,7 @@ return_closcall1(data,(closure)&c_735407,  caar(((closureN)self_733042)->elts[1]
 }
 
 static void __lambda_469(void *data, int argc, object self_733043, object r_731468) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735409;
 c_735409.hdr.mark = gc_color_red;
  c_735409.hdr.grayed = 0;
@@ -22115,13 +21115,11 @@ return_closcall4(data,  __glo_env_117lookup,  &c_735409, r_731468, ((closureN)se
 }
 
 static void __lambda_468(void *data, int argc, object self_733044, object r_731467) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall1(data,  ((closureN)self_733044)->elts[0],  Cyc_set_car(data, ((closureN)self_733044)->elts[1], r_731467));; 
+  return_closcall1(data,  ((closureN)self_733044)->elts[0],  Cyc_set_car(data, ((closureN)self_733044)->elts[1], r_731467));; 
 }
 
 static void __lambda_467(void *data, int argc, object self_733045, object k_731469) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735386;
 c_735386.hdr.mark = gc_color_red;
  c_735386.hdr.grayed = 0;
@@ -22137,8 +21135,7 @@ return_closcall1(data,(closure)&c_735386,  car(((closureN)self_733045)->elts[0])
 }
 
 static void __lambda_466(void *data, int argc, object self_733046, object r_731472) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735388;
 c_735388.hdr.mark = gc_color_red;
  c_735388.hdr.grayed = 0;
@@ -22154,8 +21151,7 @@ return_closcall2(data,  __glo_app_127,  &c_735388, r_731472);;
 }
 
 static void __lambda_465(void *data, int argc, object self_733047, object r_731470) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-if( !eq(boolean_f, r_731470) ){ 
+  if( !eq(boolean_f, r_731470) ){ 
   
 closureN_type c_735390;
 c_735390.hdr.mark = gc_color_red;
@@ -22174,13 +21170,11 @@ return_closcall1(data,(closure)&c_735390,  caar(((closureN)self_733047)->elts[0]
 }
 
 static void __lambda_464(void *data, int argc, object self_733048, object r_731471) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall1(data,  ((closureN)self_733048)->elts[0],  Cyc_is_symbol(r_731471));; 
+  return_closcall1(data,  ((closureN)self_733048)->elts[0],  Cyc_is_symbol(r_731471));; 
 }
 
 static void __lambda_463(void *data, int argc, object self_733049) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735351;
 c_735351.hdr.mark = gc_color_red;
  c_735351.hdr.grayed = 0;
@@ -22198,8 +21192,7 @@ return_closcall1(data,(closure)&c_735351,  car(((closureN)self_733049)->elts[1])
 }
 
 static void __lambda_462(void *data, int argc, object self_733050, object r_731450) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735353;
 c_735353.hdr.mark = gc_color_red;
  c_735353.hdr.grayed = 0;
@@ -22217,8 +21210,7 @@ return_closcall1(data,(closure)&c_735353,  r_731450);;
 }
 
 static void __lambda_461(void *data, int argc, object self_733051, object expr_73486) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735355;
 c_735355.hdr.mark = gc_color_red;
  c_735355.hdr.grayed = 0;
@@ -22236,8 +21228,7 @@ return_closcall2(data,  __glo_begin_91_125exps,  &c_735355, expr_73486);;
 }
 
 static void __lambda_460(void *data, int argc, object self_733052, object r_731451) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735357;
 c_735357.hdr.mark = gc_color_red;
  c_735357.hdr.grayed = 0;
@@ -22255,8 +21246,7 @@ return_closcall1(data,(closure)&c_735357,  r_731451);;
 }
 
 static void __lambda_459(void *data, int argc, object self_733053, object begin_91exprs_73487) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735359;
 c_735359.hdr.mark = gc_color_red;
  c_735359.hdr.grayed = 0;
@@ -22275,8 +21265,7 @@ return_closcall0(data,(closure)&c_735359);;
 }
 
 static void __lambda_458(void *data, int argc, object self_733054) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735361;
 c_735361.hdr.mark = gc_color_red;
  c_735361.hdr.grayed = 0;
@@ -22294,8 +21283,7 @@ return_closcall1(data,(closure)&c_735361,  cdr(((closureN)self_733054)->elts[2])
 }
 
 static void __lambda_457(void *data, int argc, object self_733055, object r_731453) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-
+  
 closureN_type c_735363;
 c_735363.hdr.mark = gc_color_red;
  c_735363.hdr.grayed = 0;
@@ -22312,13 +21300,11 @@ return_closcall3(data,  __glo_append,  &c_735363, ((closureN)self_733055)->elts[
 }
 
 static void __lambda_456(void *data, int argc, object self_733056, object r_731452) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733056)->elts[1], ((closureN)self_733056)->elts[2], r_731452, ((closureN)self_733056)->elts[0]);; 
+  return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733056)->elts[1], ((closureN)self_733056)->elts[2], r_731452, ((closureN)self_733056)->elts[0]);; 
 }
 
 static void __lambda_455(void *data, int argc, object self_733057) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-body");
-return_closcall2(data,  __glo_reverse,  ((closureN)self_733057)->elts[0], ((closureN)self_733057)->elts[1]);; 
+  return_closcall2(data,  __glo_reverse,  ((closureN)self_733057)->elts[0], ((closureN)self_733057)->elts[1]);; 
 }
 
 static void __lambda_454(void *data, int argc, closure _,object k_731476, object exp_73489, object env_73488) {
@@ -22340,8 +21326,7 @@ return_closcall1(data,(closure)&c_735331,  nil);;
 }
 
 static void __lambda_453(void *data, int argc, object self_733058, object r_731477) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand-lambda-body");
-return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733058)->elts[2], r_731477, ((closureN)self_733058)->elts[1], ((closureN)self_733058)->elts[0]);; 
+  return_closcall4(data,  __glo_expand_91body,  ((closureN)self_733058)->elts[2], r_731477, ((closureN)self_733058)->elts[1], ((closureN)self_733058)->elts[0]);; 
 }
 
 static void __lambda_452(void *data, int argc, closure _,object k_731480, object exp_73491, object env_73490) {
@@ -22363,8 +21348,7 @@ return_closcall2(data,  __glo_const_127,  &c_734939, exp_73491);;
 }
 
 static void __lambda_451(void *data, int argc, object self_733059, object r_731481) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731481) ){ 
+  if( !eq(boolean_f, r_731481) ){ 
   
 closureN_type c_734941;
 c_734941.hdr.mark = gc_color_red;
@@ -22397,8 +21381,7 @@ return_closcall2(data,  __glo_prim_127,  &c_734946, ((closureN)self_733059)->elt
 }
 
 static void __lambda_450(void *data, int argc, object self_733060, object r_731482) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731482) ){ 
+  if( !eq(boolean_f, r_731482) ){ 
   
 closureN_type c_734948;
 c_734948.hdr.mark = gc_color_red;
@@ -22431,8 +21414,7 @@ return_closcall2(data,  __glo_ref_127,  &c_734953, ((closureN)self_733060)->elts
 }
 
 static void __lambda_449(void *data, int argc, object self_733061, object r_731483) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731483) ){ 
+  if( !eq(boolean_f, r_731483) ){ 
   
 closureN_type c_734955;
 c_734955.hdr.mark = gc_color_red;
@@ -22465,8 +21447,7 @@ return_closcall2(data,  __glo_quote_127,  &c_734960, ((closureN)self_733061)->el
 }
 
 static void __lambda_448(void *data, int argc, object self_733062, object r_731484) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731484) ){ 
+  if( !eq(boolean_f, r_731484) ){ 
   
 closureN_type c_734962;
 c_734962.hdr.mark = gc_color_red;
@@ -22499,8 +21480,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_734967, ((closureN)self_733062)->e
 }
 
 static void __lambda_447(void *data, int argc, object self_733063, object r_731485) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731485) ){ 
+  if( !eq(boolean_f, r_731485) ){ 
   
 closureN_type c_734969;
 c_734969.hdr.mark = gc_color_red;
@@ -22534,8 +21514,7 @@ return_closcall2(data,  __glo_define_127,  &c_734997, ((closureN)self_733063)->e
 }
 
 static void __lambda_446(void *data, int argc, object self_733064, object r_731492) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731492) ){ 
+  if( !eq(boolean_f, r_731492) ){ 
   
 closureN_type c_734999;
 c_734999.hdr.mark = gc_color_red;
@@ -22569,8 +21548,7 @@ return_closcall2(data,  __glo_set_67_127,  &c_735036, ((closureN)self_733064)->e
 }
 
 static void __lambda_445(void *data, int argc, object self_733065, object r_731501) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731501) ){ 
+  if( !eq(boolean_f, r_731501) ){ 
   
 closureN_type c_735038;
 c_735038.hdr.mark = gc_color_red;
@@ -22604,8 +21582,7 @@ return_closcall2(data,  __glo_if_127,  &c_735074, ((closureN)self_733065)->elts[
 }
 
 static void __lambda_444(void *data, int argc, object self_733066, object r_731510) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731510) ){ 
+  if( !eq(boolean_f, r_731510) ){ 
   
 closureN_type c_735076;
 c_735076.hdr.mark = gc_color_red;
@@ -22639,8 +21616,7 @@ return_closcall2(data,  __glo_app_127,  &c_735132, ((closureN)self_733066)->elts
 }
 
 static void __lambda_443(void *data, int argc, object self_733067, object r_731524) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731524) ){ 
+  if( !eq(boolean_f, r_731524) ){ 
   
 closureN_type c_735134;
 c_735134.hdr.mark = gc_color_red;
@@ -22673,15 +21649,13 @@ return_closcall0(data,(closure)&c_735316);}
 }
 
 static void __lambda_442(void *data, int argc, object self_733068) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_string(c_735319, "unknown exp: ");
 return_closcall3(data,  __glo_error,  ((closureN)self_733068)->elts[1], &c_735319, ((closureN)self_733068)->elts[0]);; 
 }
 
 static void __lambda_441(void *data, int argc, object self_733069) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735136;
 c_735136.hdr.mark = gc_color_red;
  c_735136.hdr.grayed = 0;
@@ -22698,8 +21672,7 @@ return_closcall2(data,  __glo_define_91syntax_127,  &c_735136, ((closureN)self_7
 }
 
 static void __lambda_440(void *data, int argc, object self_733070, object r_731525) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731525) ){ 
+  if( !eq(boolean_f, r_731525) ){ 
   
 closureN_type c_735138;
 c_735138.hdr.mark = gc_color_red;
@@ -22733,8 +21706,7 @@ return_closcall2(data,  __glo_define_91c_127,  &c_735255, ((closureN)self_733070
 }
 
 static void __lambda_439(void *data, int argc, object self_733071, object r_731549) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731549) ){ 
+  if( !eq(boolean_f, r_731549) ){ 
   
 closureN_type c_735257;
 c_735257.hdr.mark = gc_color_red;
@@ -22767,8 +21739,7 @@ return_closcall1(data,(closure)&c_735262,  car(((closureN)self_733071)->elts[1])
 }
 
 static void __lambda_438(void *data, int argc, object self_733072, object r_731560) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735264;
 c_735264.hdr.mark = gc_color_red;
  c_735264.hdr.grayed = 0;
@@ -22785,8 +21756,7 @@ return_closcall1(data,(closure)&c_735264,  Cyc_is_symbol(r_731560));;
 }
 
 static void __lambda_437(void *data, int argc, object self_733073, object r_731550) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731550) ){ 
+  if( !eq(boolean_f, r_731550) ){ 
   
 closureN_type c_735266;
 c_735266.hdr.mark = gc_color_red;
@@ -22820,8 +21790,7 @@ return_closcall0(data,(closure)&c_735299);}
 }
 
 static void __lambda_436(void *data, int argc, object self_733074) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735301;
 c_735301.hdr.mark = gc_color_red;
  c_735301.hdr.grayed = 0;
@@ -22848,18 +21817,15 @@ return_closcall1(data,(closure)&c_735301,  &c_735305);;
 }
 
 static void __lambda_435(void *data, int argc, object self_733075, object k_731559, object expr_73492) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  k_731559, expr_73492, ((closureN)self_733075)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  k_731559, expr_73492, ((closureN)self_733075)->elts[0]);; 
 }
 
 static void __lambda_434(void *data, int argc, object self_733076, object r_731558) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_map,  ((closureN)self_733076)->elts[1], r_731558, ((closureN)self_733076)->elts[0]);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733076)->elts[1], r_731558, ((closureN)self_733076)->elts[0]);; 
 }
 
 static void __lambda_433(void *data, int argc, object self_733077) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735268;
 c_735268.hdr.mark = gc_color_red;
  c_735268.hdr.grayed = 0;
@@ -22876,8 +21842,7 @@ return_closcall1(data,(closure)&c_735268,  car(((closureN)self_733077)->elts[1])
 }
 
 static void __lambda_432(void *data, int argc, object self_733078, object r_731557) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735270;
 c_735270.hdr.mark = gc_color_red;
  c_735270.hdr.grayed = 0;
@@ -22894,8 +21859,7 @@ return_closcall4(data,  __glo_env_117lookup,  &c_735270, r_731557, ((closureN)se
 }
 
 static void __lambda_431(void *data, int argc, object self_733079, object r_731551) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735272;
 c_735272.hdr.mark = gc_color_red;
  c_735272.hdr.grayed = 0;
@@ -22912,8 +21876,7 @@ return_closcall1(data,(closure)&c_735272,  r_731551);;
 }
 
 static void __lambda_430(void *data, int argc, object self_733080, object val_73493) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735274;
 c_735274.hdr.mark = gc_color_red;
  c_735274.hdr.grayed = 0;
@@ -22931,8 +21894,7 @@ return_closcall1(data,(closure)&c_735274,  quote_macro);;
 }
 
 static void __lambda_429(void *data, int argc, object self_733081, object r_731556) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735276;
 c_735276.hdr.mark = gc_color_red;
  c_735276.hdr.grayed = 0;
@@ -22950,8 +21912,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_735276, r_731556, ((closure
 }
 
 static void __lambda_428(void *data, int argc, object self_733082, object r_731552) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731552) ){ 
+  if( !eq(boolean_f, r_731552) ){ 
   
 closureN_type c_735278;
 c_735278.hdr.mark = gc_color_red;
@@ -22994,28 +21955,23 @@ return_closcall1(data,(closure)&c_735286,  &c_735290);}
 }
 
 static void __lambda_427(void *data, int argc, object self_733083, object k_731555, object expr_73494) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  k_731555, expr_73494, ((closureN)self_733083)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  k_731555, expr_73494, ((closureN)self_733083)->elts[0]);; 
 }
 
 static void __lambda_426(void *data, int argc, object self_733084, object r_731554) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_map,  ((closureN)self_733084)->elts[1], r_731554, ((closureN)self_733084)->elts[0]);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733084)->elts[1], r_731554, ((closureN)self_733084)->elts[0]);; 
 }
 
 static void __lambda_425(void *data, int argc, object self_733085, object r_731553) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  ((closureN)self_733085)->elts[1], r_731553, ((closureN)self_733085)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  ((closureN)self_733085)->elts[1], r_731553, ((closureN)self_733085)->elts[0]);; 
 }
 
 static void __lambda_424(void *data, int argc, object self_733086) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall1(data,  ((closureN)self_733086)->elts[1],  ((closureN)self_733086)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733086)->elts[1],  ((closureN)self_733086)->elts[0]);; 
 }
 
 static void __lambda_423(void *data, int argc, object self_733087) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735140;
 c_735140.hdr.mark = gc_color_red;
  c_735140.hdr.grayed = 0;
@@ -23032,8 +21988,7 @@ return_closcall1(data,(closure)&c_735140,  cadr(((closureN)self_733087)->elts[1]
 }
 
 static void __lambda_422(void *data, int argc, object self_733088, object r_731526) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735142;
 c_735142.hdr.mark = gc_color_red;
  c_735142.hdr.grayed = 0;
@@ -23050,8 +22005,7 @@ return_closcall1(data,(closure)&c_735142,  r_731526);;
 }
 
 static void __lambda_421(void *data, int argc, object self_733089, object name_73495) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735144;
 c_735144.hdr.mark = gc_color_red;
  c_735144.hdr.grayed = 0;
@@ -23068,8 +22022,7 @@ return_closcall1(data,(closure)&c_735144,  caddr(((closureN)self_733089)->elts[1
 }
 
 static void __lambda_420(void *data, int argc, object self_733090, object r_731527) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735146;
 c_735146.hdr.mark = gc_color_red;
  c_735146.hdr.grayed = 0;
@@ -23086,8 +22039,7 @@ return_closcall1(data,(closure)&c_735146,  r_731527);;
 }
 
 static void __lambda_419(void *data, int argc, object self_733091, object trans_73496) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735148;
 c_735148.hdr.mark = gc_color_red;
  c_735148.hdr.grayed = 0;
@@ -23105,8 +22057,7 @@ return_closcall1(data,(closure)&c_735148,  cadr(trans_73496));;
 }
 
 static void __lambda_418(void *data, int argc, object self_733092, object r_731528) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735150;
 c_735150.hdr.mark = gc_color_red;
  c_735150.hdr.grayed = 0;
@@ -23124,8 +22075,7 @@ return_closcall1(data,(closure)&c_735150,  r_731528);;
 }
 
 static void __lambda_417(void *data, int argc, object self_733093, object body_73497) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735152;
 c_735152.hdr.mark = gc_color_red;
  c_735152.hdr.grayed = 0;
@@ -23144,8 +22094,7 @@ return_closcall0(data,(closure)&c_735152);;
 }
 
 static void __lambda_416(void *data, int argc, object self_733094) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735154;
 c_735154.hdr.mark = gc_color_red;
  c_735154.hdr.grayed = 0;
@@ -23164,8 +22113,7 @@ return_closcall1(data,(closure)&c_735154,  quote_syntax_91rules);;
 }
 
 static void __lambda_415(void *data, int argc, object self_733095, object r_731548) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735156;
 c_735156.hdr.mark = gc_color_red;
  c_735156.hdr.grayed = 0;
@@ -23184,8 +22132,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_735156, r_731548, ((closure
 }
 
 static void __lambda_414(void *data, int argc, object self_733096, object r_731529) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731529) ){ 
+  if( !eq(boolean_f, r_731529) ){ 
   
 closureN_type c_735158;
 c_735158.hdr.mark = gc_color_red;
@@ -23221,8 +22168,7 @@ return_closcall0(data,(closure)&c_735189);}
 }
 
 static void __lambda_413(void *data, int argc, object self_733097) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735191;
 c_735191.hdr.mark = gc_color_red;
  c_735191.hdr.grayed = 0;
@@ -23242,8 +22188,7 @@ return_closcall1(data,(closure)&c_735191,  &c_735242);;
 }
 
 static void __lambda_412(void *data, int argc, object self_733098, object r_731547) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735193;
 c_735193.hdr.mark = gc_color_red;
  c_735193.hdr.grayed = 0;
@@ -23263,8 +22208,7 @@ return_closcall1(data,(closure)&c_735193,  &c_735239);;
 }
 
 static void __lambda_411(void *data, int argc, object self_733099, object r_731546) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735195;
 c_735195.hdr.mark = gc_color_red;
  c_735195.hdr.grayed = 0;
@@ -23282,8 +22226,7 @@ return_closcall1(data,(closure)&c_735195,  global_set(__glo__85defined_91macros_
 }
 
 static void __lambda_410(void *data, int argc, object self_733100, object r_731536) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735197;
 c_735197.hdr.mark = gc_color_red;
  c_735197.hdr.grayed = 0;
@@ -23301,8 +22244,7 @@ return_closcall3(data,  __glo_macro_117add_67,  &c_735197, ((closureN)self_73310
 }
 
 static void __lambda_409(void *data, int argc, object self_733101, object r_731537) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735199;
 c_735199.hdr.mark = gc_color_red;
  c_735199.hdr.grayed = 0;
@@ -23320,8 +22262,7 @@ return_closcall1(data,(closure)&c_735199,  quote_macro);;
 }
 
 static void __lambda_408(void *data, int argc, object self_733102, object r_731545) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735201;
 c_735201.hdr.mark = gc_color_red;
  c_735201.hdr.grayed = 0;
@@ -23339,8 +22280,7 @@ return_closcall3(data,  __glo__list,  &c_735201, r_731545, ((closureN)self_73310
 }
 
 static void __lambda_407(void *data, int argc, object self_733103, object r_731544) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735203;
 c_735203.hdr.mark = gc_color_red;
  c_735203.hdr.grayed = 0;
@@ -23358,8 +22298,7 @@ return_closcall4(data,  __glo_env_117define_91variable_67,  &c_735203, ((closure
 }
 
 static void __lambda_406(void *data, int argc, object self_733104, object r_731538) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735205;
 c_735205.hdr.mark = gc_color_red;
  c_735205.hdr.grayed = 0;
@@ -23377,8 +22316,7 @@ return_closcall1(data,(closure)&c_735205,  quote_define);;
 }
 
 static void __lambda_405(void *data, int argc, object self_733105, object r_731539) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735207;
 c_735207.hdr.mark = gc_color_red;
  c_735207.hdr.grayed = 0;
@@ -23395,8 +22333,7 @@ return_closcall3(data,  __glo_expand,  &c_735207, ((closureN)self_733105)->elts[
 }
 
 static void __lambda_404(void *data, int argc, object self_733106, object r_731542) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735209;
 c_735209.hdr.mark = gc_color_red;
  c_735209.hdr.grayed = 0;
@@ -23414,8 +22351,7 @@ return_closcall1(data,(closure)&c_735209,  nil);;
 }
 
 static void __lambda_403(void *data, int argc, object self_733107, object r_731543) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735211;
 c_735211.hdr.mark = gc_color_red;
  c_735211.hdr.grayed = 0;
@@ -23434,8 +22370,7 @@ return_closcall1(data,(closure)&c_735211,  &c_735226);;
 }
 
 static void __lambda_402(void *data, int argc, object self_733108, object r_731541) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735213;
 c_735213.hdr.mark = gc_color_red;
  c_735213.hdr.grayed = 0;
@@ -23453,15 +22388,13 @@ return_closcall1(data,(closure)&c_735213,  &c_735222);;
 }
 
 static void __lambda_401(void *data, int argc, object self_733109, object r_731540) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_cons(c_735218,((closureN)self_733109)->elts[1], r_731540);
 return_closcall1(data,  ((closureN)self_733109)->elts[0],  &c_735218);; 
 }
 
 static void __lambda_400(void *data, int argc, object self_733110) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735160;
 c_735160.hdr.mark = gc_color_red;
  c_735160.hdr.grayed = 0;
@@ -23479,8 +22412,7 @@ return_closcall1(data,(closure)&c_735160,  quote_define_91syntax);;
 }
 
 static void __lambda_399(void *data, int argc, object self_733111, object r_731531) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735162;
 c_735162.hdr.mark = gc_color_red;
  c_735162.hdr.grayed = 0;
@@ -23498,8 +22430,7 @@ return_closcall3(data,  __glo_expand,  &c_735162, ((closureN)self_733111)->elts[
 }
 
 static void __lambda_398(void *data, int argc, object self_733112, object r_731534) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735164;
 c_735164.hdr.mark = gc_color_red;
  c_735164.hdr.grayed = 0;
@@ -23518,8 +22449,7 @@ return_closcall1(data,(closure)&c_735164,  nil);;
 }
 
 static void __lambda_397(void *data, int argc, object self_733113, object r_731535) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735166;
 c_735166.hdr.mark = gc_color_red;
  c_735166.hdr.grayed = 0;
@@ -23539,8 +22469,7 @@ return_closcall1(data,(closure)&c_735166,  &c_735184);;
 }
 
 static void __lambda_396(void *data, int argc, object self_733114, object r_731533) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735168;
 c_735168.hdr.mark = gc_color_red;
  c_735168.hdr.grayed = 0;
@@ -23559,8 +22488,7 @@ return_closcall1(data,(closure)&c_735168,  &c_735180);;
 }
 
 static void __lambda_395(void *data, int argc, object self_733115, object r_731532) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735170;
 c_735170.hdr.mark = gc_color_red;
  c_735170.hdr.grayed = 0;
@@ -23578,13 +22506,11 @@ return_closcall1(data,(closure)&c_735170,  &c_735176);;
 }
 
 static void __lambda_394(void *data, int argc, object self_733116, object r_731530) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  ((closureN)self_733116)->elts[1], r_731530, ((closureN)self_733116)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  ((closureN)self_733116)->elts[1], r_731530, ((closureN)self_733116)->elts[0]);; 
 }
 
 static void __lambda_393(void *data, int argc, object self_733117) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735078;
 c_735078.hdr.mark = gc_color_red;
  c_735078.hdr.grayed = 0;
@@ -23601,8 +22527,7 @@ return_closcall1(data,(closure)&c_735078,  quote__if);;
 }
 
 static void __lambda_392(void *data, int argc, object self_733118, object r_731511) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735080;
 c_735080.hdr.mark = gc_color_red;
  c_735080.hdr.grayed = 0;
@@ -23620,8 +22545,7 @@ return_closcall2(data,  __glo_if_91_125condition,  &c_735080, ((closureN)self_73
 }
 
 static void __lambda_391(void *data, int argc, object self_733119, object r_731523) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735082;
 c_735082.hdr.mark = gc_color_red;
  c_735082.hdr.grayed = 0;
@@ -23639,8 +22563,7 @@ return_closcall3(data,  __glo_expand,  &c_735082, r_731523, ((closureN)self_7331
 }
 
 static void __lambda_390(void *data, int argc, object self_733120, object r_731513) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735084;
 c_735084.hdr.mark = gc_color_red;
  c_735084.hdr.grayed = 0;
@@ -23659,8 +22582,7 @@ return_closcall2(data,  __glo_if_91_125then,  &c_735084, ((closureN)self_733120)
 }
 
 static void __lambda_389(void *data, int argc, object self_733121, object r_731522) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735086;
 c_735086.hdr.mark = gc_color_red;
  c_735086.hdr.grayed = 0;
@@ -23679,8 +22601,7 @@ return_closcall3(data,  __glo_expand,  &c_735086, r_731522, ((closureN)self_7331
 }
 
 static void __lambda_388(void *data, int argc, object self_733122, object r_731515) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735088;
 c_735088.hdr.mark = gc_color_red;
  c_735088.hdr.grayed = 0;
@@ -23710,8 +22631,7 @@ return_closcall1(data,(closure)&c_735088,  &c_735100);;
 }
 
 static void __lambda_387(void *data, int argc, object self_733123, object r_731517) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735102;
 c_735102.hdr.mark = gc_color_red;
  c_735102.hdr.grayed = 0;
@@ -23730,8 +22650,7 @@ return_closcall1(data,(closure)&c_735102,  nil);;
 }
 
 static void __lambda_386(void *data, int argc, object self_733124, object r_731518) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735104;
 c_735104.hdr.mark = gc_color_red;
  c_735104.hdr.grayed = 0;
@@ -23751,8 +22670,7 @@ return_closcall1(data,(closure)&c_735104,  &c_735125);;
 }
 
 static void __lambda_385(void *data, int argc, object self_733125, object r_731516) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735106;
 c_735106.hdr.mark = gc_color_red;
  c_735106.hdr.grayed = 0;
@@ -23771,8 +22689,7 @@ return_closcall1(data,(closure)&c_735106,  &c_735121);;
 }
 
 static void __lambda_384(void *data, int argc, object self_733126, object r_731514) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735108;
 c_735108.hdr.mark = gc_color_red;
  c_735108.hdr.grayed = 0;
@@ -23790,15 +22707,13 @@ return_closcall1(data,(closure)&c_735108,  &c_735117);;
 }
 
 static void __lambda_383(void *data, int argc, object self_733127, object r_731512) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_cons(c_735113,((closureN)self_733127)->elts[1], r_731512);
 return_closcall1(data,  ((closureN)self_733127)->elts[0],  &c_735113);; 
 }
 
 static void __lambda_382(void *data, int argc, object self_733128, object k_731519) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735090;
 c_735090.hdr.mark = gc_color_red;
  c_735090.hdr.grayed = 0;
@@ -23815,8 +22730,7 @@ return_closcall2(data,  __glo_if_91else_127,  &c_735090, ((closureN)self_733128)
 }
 
 static void __lambda_381(void *data, int argc, object self_733129, object r_731520) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731520) ){ 
+  if( !eq(boolean_f, r_731520) ){ 
   
 closureN_type c_735092;
 c_735092.hdr.mark = gc_color_red;
@@ -23836,13 +22750,11 @@ return_closcall2(data,  __glo_if_91_125else,  &c_735092, ((closureN)self_733129)
 }
 
 static void __lambda_380(void *data, int argc, object self_733130, object r_731521) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  ((closureN)self_733130)->elts[1], r_731521, ((closureN)self_733130)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  ((closureN)self_733130)->elts[1], r_731521, ((closureN)self_733130)->elts[0]);; 
 }
 
 static void __lambda_379(void *data, int argc, object self_733131) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735040;
 c_735040.hdr.mark = gc_color_red;
  c_735040.hdr.grayed = 0;
@@ -23859,8 +22771,7 @@ return_closcall1(data,(closure)&c_735040,  quote_set_67);;
 }
 
 static void __lambda_378(void *data, int argc, object self_733132, object r_731502) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735042;
 c_735042.hdr.mark = gc_color_red;
  c_735042.hdr.grayed = 0;
@@ -23878,8 +22789,7 @@ return_closcall2(data,  __glo_set_67_91_125var,  &c_735042, ((closureN)self_7331
 }
 
 static void __lambda_377(void *data, int argc, object self_733133, object r_731509) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735044;
 c_735044.hdr.mark = gc_color_red;
  c_735044.hdr.grayed = 0;
@@ -23897,8 +22807,7 @@ return_closcall3(data,  __glo_expand,  &c_735044, r_731509, ((closureN)self_7331
 }
 
 static void __lambda_376(void *data, int argc, object self_733134, object r_731504) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735046;
 c_735046.hdr.mark = gc_color_red;
  c_735046.hdr.grayed = 0;
@@ -23916,8 +22825,7 @@ return_closcall2(data,  __glo_set_67_91_125exp,  &c_735046, ((closureN)self_7331
 }
 
 static void __lambda_375(void *data, int argc, object self_733135, object r_731508) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735048;
 c_735048.hdr.mark = gc_color_red;
  c_735048.hdr.grayed = 0;
@@ -23934,8 +22842,7 @@ return_closcall3(data,  __glo_expand,  &c_735048, r_731508, ((closureN)self_7331
 }
 
 static void __lambda_374(void *data, int argc, object self_733136, object r_731506) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735050;
 c_735050.hdr.mark = gc_color_red;
  c_735050.hdr.grayed = 0;
@@ -23953,8 +22860,7 @@ return_closcall1(data,(closure)&c_735050,  nil);;
 }
 
 static void __lambda_373(void *data, int argc, object self_733137, object r_731507) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735052;
 c_735052.hdr.mark = gc_color_red;
  c_735052.hdr.grayed = 0;
@@ -23973,8 +22879,7 @@ return_closcall1(data,(closure)&c_735052,  &c_735067);;
 }
 
 static void __lambda_372(void *data, int argc, object self_733138, object r_731505) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735054;
 c_735054.hdr.mark = gc_color_red;
  c_735054.hdr.grayed = 0;
@@ -23992,15 +22897,13 @@ return_closcall1(data,(closure)&c_735054,  &c_735063);;
 }
 
 static void __lambda_371(void *data, int argc, object self_733139, object r_731503) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_cons(c_735059,((closureN)self_733139)->elts[1], r_731503);
 return_closcall1(data,  ((closureN)self_733139)->elts[0],  &c_735059);; 
 }
 
 static void __lambda_370(void *data, int argc, object self_733140) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735001;
 c_735001.hdr.mark = gc_color_red;
  c_735001.hdr.grayed = 0;
@@ -24017,8 +22920,7 @@ return_closcall2(data,  __glo_define_91lambda_127,  &c_735001, ((closureN)self_7
 }
 
 static void __lambda_369(void *data, int argc, object self_733141, object r_731493) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-if( !eq(boolean_f, r_731493) ){ 
+  if( !eq(boolean_f, r_731493) ){ 
   
 closureN_type c_735003;
 c_735003.hdr.mark = gc_color_red;
@@ -24051,8 +22953,7 @@ return_closcall1(data,(closure)&c_735009,  quote_define);}
 }
 
 static void __lambda_368(void *data, int argc, object self_733142, object r_731495) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735011;
 c_735011.hdr.mark = gc_color_red;
  c_735011.hdr.grayed = 0;
@@ -24070,8 +22971,7 @@ return_closcall2(data,  __glo_define_91_125var,  &c_735011, ((closureN)self_7331
 }
 
 static void __lambda_367(void *data, int argc, object self_733143, object r_731500) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735013;
 c_735013.hdr.mark = gc_color_red;
  c_735013.hdr.grayed = 0;
@@ -24089,8 +22989,7 @@ return_closcall3(data,  __glo_expand,  &c_735013, r_731500, ((closureN)self_7331
 }
 
 static void __lambda_366(void *data, int argc, object self_733144, object r_731497) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735015;
 c_735015.hdr.mark = gc_color_red;
  c_735015.hdr.grayed = 0;
@@ -24108,8 +23007,7 @@ return_closcall2(data,  __glo_define_91_125exp,  &c_735015, ((closureN)self_7331
 }
 
 static void __lambda_365(void *data, int argc, object self_733145, object r_731499) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735017;
 c_735017.hdr.mark = gc_color_red;
  c_735017.hdr.grayed = 0;
@@ -24126,8 +23024,7 @@ return_closcall3(data,  __glo_expand,  &c_735017, r_731499, ((closureN)self_7331
 }
 
 static void __lambda_364(void *data, int argc, object self_733146, object r_731498) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_735019;
 c_735019.hdr.mark = gc_color_red;
  c_735019.hdr.grayed = 0;
@@ -24145,20 +23042,17 @@ return_closcall1(data,(closure)&c_735019,  &c_735028);;
 }
 
 static void __lambda_363(void *data, int argc, object self_733147, object r_731496) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_cons(c_735024,((closureN)self_733147)->elts[1], r_731496);
 return_closcall1(data,  ((closureN)self_733147)->elts[0],  &c_735024);; 
 }
 
 static void __lambda_362(void *data, int argc, object self_733148, object r_731494) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall3(data,  __glo_expand,  ((closureN)self_733148)->elts[1], r_731494, ((closureN)self_733148)->elts[0]);; 
+  return_closcall3(data,  __glo_expand,  ((closureN)self_733148)->elts[1], r_731494, ((closureN)self_733148)->elts[0]);; 
 }
 
 static void __lambda_361(void *data, int argc, object self_733149) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734971;
 c_734971.hdr.mark = gc_color_red;
  c_734971.hdr.grayed = 0;
@@ -24175,8 +23069,7 @@ return_closcall1(data,(closure)&c_734971,  quote_lambda);;
 }
 
 static void __lambda_360(void *data, int argc, object self_733150, object r_731486) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734973;
 c_734973.hdr.mark = gc_color_red;
  c_734973.hdr.grayed = 0;
@@ -24194,8 +23087,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734973, ((closureN)self_
 }
 
 static void __lambda_359(void *data, int argc, object self_733151, object r_731488) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734975;
 c_734975.hdr.mark = gc_color_red;
  c_734975.hdr.grayed = 0;
@@ -24214,8 +23106,7 @@ return_closcall1(data,(closure)&c_734975,  nil);;
 }
 
 static void __lambda_358(void *data, int argc, object self_733152, object r_731490) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734977;
 c_734977.hdr.mark = gc_color_red;
  c_734977.hdr.grayed = 0;
@@ -24234,8 +23125,7 @@ return_closcall2(data,  __glo_lambda_91_125exp,  &c_734977, ((closureN)self_7331
 }
 
 static void __lambda_357(void *data, int argc, object self_733153, object r_731491) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734979;
 c_734979.hdr.mark = gc_color_red;
  c_734979.hdr.grayed = 0;
@@ -24252,8 +23142,7 @@ return_closcall4(data,  __glo_expand_91body,  &c_734979, ((closureN)self_733153)
 }
 
 static void __lambda_356(void *data, int argc, object self_733154, object r_731489) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 closureN_type c_734981;
 c_734981.hdr.mark = gc_color_red;
  c_734981.hdr.grayed = 0;
@@ -24271,30 +23160,25 @@ return_closcall1(data,(closure)&c_734981,  &c_734990);;
 }
 
 static void __lambda_355(void *data, int argc, object self_733155, object r_731487) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-
+  
 make_cons(c_734986,((closureN)self_733155)->elts[1], r_731487);
 return_closcall1(data,  ((closureN)self_733155)->elts[0],  &c_734986);; 
 }
 
 static void __lambda_354(void *data, int argc, object self_733156) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall1(data,  ((closureN)self_733156)->elts[1],  ((closureN)self_733156)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733156)->elts[1],  ((closureN)self_733156)->elts[0]);; 
 }
 
 static void __lambda_353(void *data, int argc, object self_733157) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall1(data,  ((closureN)self_733157)->elts[1],  ((closureN)self_733157)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733157)->elts[1],  ((closureN)self_733157)->elts[0]);; 
 }
 
 static void __lambda_352(void *data, int argc, object self_733158) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall1(data,  ((closureN)self_733158)->elts[1],  ((closureN)self_733158)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733158)->elts[1],  ((closureN)self_733158)->elts[0]);; 
 }
 
 static void __lambda_351(void *data, int argc, object self_733159) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:expand");
-return_closcall1(data,  ((closureN)self_733159)->elts[1],  ((closureN)self_733159)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733159)->elts[1],  ((closureN)self_733159)->elts[0]);; 
 }
 
 static void __lambda_350(void *data, int argc, closure _,object k_731563, object exp_73498) {
@@ -24320,8 +23204,7 @@ return_closcall1(data,(closure)&c_734929,  quote_cell_91get);;
 }
 
 static void __lambda_348(void *data, int argc, object self_733160, object r_731567) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cell-get?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733160)->elts[1], r_731567, ((closureN)self_733160)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733160)->elts[1], r_731567, ((closureN)self_733160)->elts[0]);; 
 }
 
 static void __lambda_347(void *data, int argc, closure _,object k_731570, object exp_73500) {
@@ -24347,8 +23230,7 @@ return_closcall1(data,(closure)&c_734919,  quote_cell);;
 }
 
 static void __lambda_345(void *data, int argc, object self_733161, object r_731574) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cell?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733161)->elts[1], r_731574, ((closureN)self_733161)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733161)->elts[1], r_731574, ((closureN)self_733161)->elts[0]);; 
 }
 
 static void __lambda_344(void *data, int argc, closure _,object k_731577, object exp_73502) {
@@ -24379,8 +23261,7 @@ return_closcall1(data,(closure)&c_734905,  quote_set_91cell_67);;
 }
 
 static void __lambda_341(void *data, int argc, object self_733162, object r_731584) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:set-cell!?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733162)->elts[1], r_731584, ((closureN)self_733162)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733162)->elts[1], r_731584, ((closureN)self_733162)->elts[0]);; 
 }
 
 static void __lambda_340(void *data, int argc, closure _,object k_731587, object exp_73505) {
@@ -24416,8 +23297,7 @@ return_closcall1(data,(closure)&c_734887,  quote_env_91get);;
 }
 
 static void __lambda_336(void *data, int argc, object self_733163, object r_731597) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:env-get?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733163)->elts[1], r_731597, ((closureN)self_733163)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733163)->elts[1], r_731597, ((closureN)self_733163)->elts[0]);; 
 }
 
 static void __lambda_335(void *data, int argc, closure _,object k_731600, object exp_73509) {
@@ -24437,8 +23317,7 @@ return_closcall1(data,(closure)&c_734880,  cddr(exp_73509));;
 }
 
 static void __lambda_334(void *data, int argc, object self_733164, object r_731601) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:env-make->values");
-return_closcall3(data,  __glo_map,  ((closureN)self_733164)->elts[0], primitive_cadr, r_731601);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733164)->elts[0], primitive_cadr, r_731601);; 
 }
 
 static void __lambda_333(void *data, int argc, closure _,object k_731604, object exp_73510) {
@@ -24458,8 +23337,7 @@ return_closcall1(data,(closure)&c_734873,  cddr(exp_73510));;
 }
 
 static void __lambda_332(void *data, int argc, object self_733165, object r_731605) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:env-make->fields");
-return_closcall3(data,  __glo_map,  ((closureN)self_733165)->elts[0], primitive_car, r_731605);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733165)->elts[0], primitive_car, r_731605);; 
 }
 
 static void __lambda_331(void *data, int argc, closure _,object k_731608, object exp_73511) {
@@ -24485,8 +23363,7 @@ return_closcall1(data,(closure)&c_734863,  quote_env_91make);;
 }
 
 static void __lambda_329(void *data, int argc, object self_733166, object r_731612) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:env-make?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733166)->elts[1], r_731612, ((closureN)self_733166)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733166)->elts[1], r_731612, ((closureN)self_733166)->elts[0]);; 
 }
 
 static void __lambda_328(void *data, int argc, closure _,object k_731615, object exp_73513) {
@@ -24522,8 +23399,7 @@ return_closcall1(data,(closure)&c_734845,  quote_closure);;
 }
 
 static void __lambda_324(void *data, int argc, object self_733167, object r_731625) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:closure?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733167)->elts[1], r_731625, ((closureN)self_733167)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733167)->elts[1], r_731625, ((closureN)self_733167)->elts[0]);; 
 }
 
 static void __lambda_323(void *data, int argc, closure _,object k_731628, object exp_73517) {
@@ -24554,8 +23430,7 @@ return_closcall1(data,(closure)&c_734831,  quote_set_67);;
 }
 
 static void __lambda_320(void *data, int argc, object self_733168, object r_731635) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:set!?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733168)->elts[1], r_731635, ((closureN)self_733168)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733168)->elts[1], r_731635, ((closureN)self_733168)->elts[0]);; 
 }
 
 static void __lambda_319(void *data, int argc, closure _,object k_731638, object exp_73520) {
@@ -24576,8 +23451,7 @@ return_closcall1(data,(closure)&c_734825,  quote_define_91c);;
 }
 
 static void __lambda_318(void *data, int argc, object self_733169, object r_731639) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-c?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733169)->elts[1], r_731639, ((closureN)self_733169)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733169)->elts[1], r_731639, ((closureN)self_733169)->elts[0]);; 
 }
 
 static void __lambda_317(void *data, int argc, closure _,object k_731642, object exp_73521) {
@@ -24603,8 +23477,7 @@ return_closcall2(data,  __glo_define_91lambda_127,  &c_734804, exp_73522);;
 }
 
 static void __lambda_315(void *data, int argc, object self_733170, object r_731646) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->var");
-if( !eq(boolean_f, r_731646) ){ 
+  if( !eq(boolean_f, r_731646) ){ 
   
 closureN_type c_734806;
 c_734806.hdr.mark = gc_color_red;
@@ -24636,13 +23509,11 @@ return_closcall0(data,(closure)&c_734813);}
 }
 
 static void __lambda_314(void *data, int argc, object self_733171) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->var");
-return_closcall1(data,  ((closureN)self_733171)->elts[1],  cadr(((closureN)self_733171)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_733171)->elts[1],  cadr(((closureN)self_733171)->elts[0]));; 
 }
 
 static void __lambda_313(void *data, int argc, object self_733172) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->var");
-return_closcall1(data,  ((closureN)self_733172)->elts[1],  caadr(((closureN)self_733172)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_733172)->elts[1],  caadr(((closureN)self_733172)->elts[0]));; 
 }
 
 static void __lambda_312(void *data, int argc, closure _,object k_731649, object exp_73523) {
@@ -24663,8 +23534,7 @@ return_closcall2(data,  __glo_define_91lambda_127,  &c_734738, exp_73523);;
 }
 
 static void __lambda_311(void *data, int argc, object self_733173, object r_731650) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-if( !eq(boolean_f, r_731650) ){ 
+  if( !eq(boolean_f, r_731650) ){ 
   
 closureN_type c_734740;
 c_734740.hdr.mark = gc_color_red;
@@ -24696,13 +23566,11 @@ return_closcall0(data,(closure)&c_734798);}
 }
 
 static void __lambda_310(void *data, int argc, object self_733174) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-return_closcall1(data,  ((closureN)self_733174)->elts[1],  ((closureN)self_733174)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733174)->elts[1],  ((closureN)self_733174)->elts[0]);; 
 }
 
 static void __lambda_309(void *data, int argc, object self_733175) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734742;
 c_734742.hdr.mark = gc_color_red;
  c_734742.hdr.grayed = 0;
@@ -24718,8 +23586,7 @@ return_closcall1(data,(closure)&c_734742,  caadr(((closureN)self_733175)->elts[0
 }
 
 static void __lambda_308(void *data, int argc, object self_733176, object r_731651) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734744;
 c_734744.hdr.mark = gc_color_red;
  c_734744.hdr.grayed = 0;
@@ -24736,8 +23603,7 @@ return_closcall1(data,(closure)&c_734744,  cdadr(((closureN)self_733176)->elts[0
 }
 
 static void __lambda_307(void *data, int argc, object self_733177, object r_731652) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734746;
 c_734746.hdr.mark = gc_color_red;
  c_734746.hdr.grayed = 0;
@@ -24754,8 +23620,7 @@ return_closcall1(data,(closure)&c_734746,  cddr(((closureN)self_733177)->elts[0]
 }
 
 static void __lambda_306(void *data, int argc, object self_733178, object r_731653) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734748;
 c_734748.hdr.mark = gc_color_red;
  c_734748.hdr.grayed = 0;
@@ -24770,8 +23635,7 @@ return_closcall3(data,(closure)&c_734748,  ((closureN)self_733178)->elts[1], ((c
 }
 
 static void __lambda_305(void *data, int argc, object self_733179, object var_73526, object args_73525, object body_73524) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734750;
 c_734750.hdr.mark = gc_color_red;
  c_734750.hdr.grayed = 0;
@@ -24789,8 +23653,7 @@ return_closcall1(data,(closure)&c_734750,  quote_define);;
 }
 
 static void __lambda_304(void *data, int argc, object self_733180, object r_731654) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734752;
 c_734752.hdr.mark = gc_color_red;
  c_734752.hdr.grayed = 0;
@@ -24809,8 +23672,7 @@ return_closcall1(data,(closure)&c_734752,  quote_lambda);;
 }
 
 static void __lambda_303(void *data, int argc, object self_733181, object r_731659) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734754;
 c_734754.hdr.mark = gc_color_red;
  c_734754.hdr.grayed = 0;
@@ -24830,8 +23692,7 @@ return_closcall1(data,(closure)&c_734754,  &c_734783);;
 }
 
 static void __lambda_302(void *data, int argc, object self_733182, object r_731660) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734756;
 c_734756.hdr.mark = gc_color_red;
  c_734756.hdr.grayed = 0;
@@ -24850,8 +23711,7 @@ return_closcall1(data,(closure)&c_734756,  &c_734779);;
 }
 
 static void __lambda_301(void *data, int argc, object self_733183, object r_731657) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734758;
 c_734758.hdr.mark = gc_color_red;
  c_734758.hdr.grayed = 0;
@@ -24869,8 +23729,7 @@ return_closcall1(data,(closure)&c_734758,  nil);;
 }
 
 static void __lambda_300(void *data, int argc, object self_733184, object r_731658) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734760;
 c_734760.hdr.mark = gc_color_red;
  c_734760.hdr.grayed = 0;
@@ -24889,8 +23748,7 @@ return_closcall1(data,(closure)&c_734760,  &c_734775);;
 }
 
 static void __lambda_299(void *data, int argc, object self_733185, object r_731656) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 closureN_type c_734762;
 c_734762.hdr.mark = gc_color_red;
  c_734762.hdr.grayed = 0;
@@ -24908,8 +23766,7 @@ return_closcall1(data,(closure)&c_734762,  &c_734771);;
 }
 
 static void __lambda_298(void *data, int argc, object self_733186, object r_731655) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define->lambda");
-
+  
 make_cons(c_734767,((closureN)self_733186)->elts[1], r_731655);
 return_closcall1(data,  ((closureN)self_733186)->elts[0],  &c_734767);; 
 }
@@ -24931,8 +23788,7 @@ return_closcall1(data,(closure)&c_734681,  cadr(exp_73527));;
 }
 
 static void __lambda_296(void *data, int argc, object self_733187, object r_731664) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-
+  
 closureN_type c_734683;
 c_734683.hdr.mark = gc_color_red;
  c_734683.hdr.grayed = 0;
@@ -24947,8 +23803,7 @@ return_closcall1(data,(closure)&c_734683,  r_731664);;
 }
 
 static void __lambda_295(void *data, int argc, object self_733188, object var_73528) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-
+  
 closureN_type c_734685;
 c_734685.hdr.mark = gc_color_red;
  c_734685.hdr.grayed = 0;
@@ -24975,8 +23830,7 @@ return_closcall1(data,(closure)&c_734685,  &c_734713);;
 }
 
 static void __lambda_294(void *data, int argc, object self_733189, object r_731665) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-
+  
 closureN_type c_734715;
 c_734715.hdr.mark = gc_color_red;
  c_734715.hdr.grayed = 0;
@@ -24992,8 +23846,7 @@ return_closcall1(data,(closure)&c_734715,  r_731665);;
 }
 
 static void __lambda_293(void *data, int argc, object self_733190, object tmp_73529) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-if( !eq(boolean_f, tmp_73529) ){ 
+  if( !eq(boolean_f, tmp_73529) ){ 
   return_closcall1(data,  ((closureN)self_733190)->elts[0],  tmp_73529);
 } else { 
   
@@ -25013,8 +23866,7 @@ return_closcall1(data,(closure)&c_734719,  Cyc_is_cons(((closureN)self_733190)->
 }
 
 static void __lambda_292(void *data, int argc, object self_733191, object r_731666) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-if( !eq(boolean_f, r_731666) ){ 
+  if( !eq(boolean_f, r_731666) ){ 
   
 closureN_type c_734721;
 c_734721.hdr.mark = gc_color_red;
@@ -25033,13 +23885,11 @@ return_closcall1(data,(closure)&c_734721,  car(((closureN)self_733191)->elts[1])
 }
 
 static void __lambda_291(void *data, int argc, object self_733192, object r_731667) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-return_closcall1(data,  ((closureN)self_733192)->elts[0],  Cyc_is_symbol(r_731667));; 
+  return_closcall1(data,  ((closureN)self_733192)->elts[0],  Cyc_is_symbol(r_731667));; 
 }
 
 static void __lambda_290(void *data, int argc, object self_733193, object k_731668) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-
+  
 closureN_type c_734687;
 c_734687.hdr.mark = gc_color_red;
  c_734687.hdr.grayed = 0;
@@ -25055,8 +23905,7 @@ return_closcall2(data,  __glo_list_127,  &c_734687, ((closureN)self_733193)->elt
 }
 
 static void __lambda_289(void *data, int argc, object self_733194, object r_731669) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-if( !eq(boolean_f, r_731669) ){ 
+  if( !eq(boolean_f, r_731669) ){ 
   
 closureN_type c_734689;
 c_734689.hdr.mark = gc_color_red;
@@ -25078,8 +23927,7 @@ return_closcall1(data,(closure)&c_734689,  &c_734708);
 }
 
 static void __lambda_288(void *data, int argc, object self_733195, object r_731672) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-
+  
 closureN_type c_734691;
 c_734691.hdr.mark = gc_color_red;
  c_734691.hdr.grayed = 0;
@@ -25097,8 +23945,7 @@ return_closcall1(data,(closure)&c_734691,  __num_gt(data, r_731672, &c_734705));
 }
 
 static void __lambda_287(void *data, int argc, object self_733196, object r_731670) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-if( !eq(boolean_f, r_731670) ){ 
+  if( !eq(boolean_f, r_731670) ){ 
   
 closureN_type c_734693;
 c_734693.hdr.mark = gc_color_red;
@@ -25117,8 +23964,7 @@ return_closcall1(data,(closure)&c_734693,  car(((closureN)self_733196)->elts[1])
 }
 
 static void __lambda_286(void *data, int argc, object self_733197, object r_731671) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define-lambda?");
-return_closcall1(data,  ((closureN)self_733197)->elts[0],  Cyc_is_symbol(r_731671));; 
+  return_closcall1(data,  ((closureN)self_733197)->elts[0],  Cyc_is_symbol(r_731671));; 
 }
 
 static void __lambda_285(void *data, int argc, closure _,object k_731675, object exp_73530) {
@@ -25139,8 +23985,7 @@ return_closcall1(data,(closure)&c_734675,  quote_define);;
 }
 
 static void __lambda_284(void *data, int argc, object self_733198, object r_731676) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:define?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733198)->elts[1], r_731676, ((closureN)self_733198)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733198)->elts[1], r_731676, ((closureN)self_733198)->elts[0]);; 
 }
 
 static void __lambda_283(void *data, int argc, closure _,object k_731679, object exp_73531) {
@@ -25166,8 +24011,7 @@ return_closcall2(data,  __glo_list_127,  &c_734659, exp_73532);;
 }
 
 static void __lambda_281(void *data, int argc, object self_733199, object r_731683) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:prim-call?");
-if( !eq(boolean_f, r_731683) ){ 
+  if( !eq(boolean_f, r_731683) ){ 
   
 closureN_type c_734661;
 c_734661.hdr.mark = gc_color_red;
@@ -25186,8 +24030,7 @@ return_closcall1(data,(closure)&c_734661,  car(((closureN)self_733199)->elts[0])
 }
 
 static void __lambda_280(void *data, int argc, object self_733200, object r_731684) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:prim-call?");
-return_closcall2(data,  __glo_prim_127,  ((closureN)self_733200)->elts[0], r_731684);; 
+  return_closcall2(data,  __glo_prim_127,  ((closureN)self_733200)->elts[0], r_731684);; 
 }
 
 static void __lambda_279(void *data, int argc, closure _,object k_731687, object ast_73533) {
@@ -25208,8 +24051,7 @@ return_closcall1(data,(closure)&c_734546,  Cyc_is_cons(ast_73533));;
 }
 
 static void __lambda_278(void *data, int argc, object self_733201, object r_731688) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-if( !eq(boolean_f, r_731688) ){ 
+  if( !eq(boolean_f, r_731688) ){ 
   
 closureN_type c_734548;
 c_734548.hdr.mark = gc_color_red;
@@ -25229,8 +24071,7 @@ return_closcall1(data,(closure)&c_734548,  car(((closureN)self_733201)->elts[0])
 }
 
 static void __lambda_277(void *data, int argc, object self_733202, object r_731704) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734550;
 c_734550.hdr.mark = gc_color_red;
  c_734550.hdr.grayed = 0;
@@ -25246,8 +24087,7 @@ return_closcall2(data,  __glo_prim_127,  &c_734550, r_731704);;
 }
 
 static void __lambda_276(void *data, int argc, object self_733203, object r_731689) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-if( !eq(boolean_f, r_731689) ){ 
+  if( !eq(boolean_f, r_731689) ){ 
   
 closureN_type c_734552;
 c_734552.hdr.mark = gc_color_red;
@@ -25267,8 +24107,7 @@ return_closcall1(data,(closure)&c_734552,  car(((closureN)self_733203)->elts[0])
 }
 
 static void __lambda_275(void *data, int argc, object self_733204, object r_731702) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734554;
 c_734554.hdr.mark = gc_color_red;
  c_734554.hdr.grayed = 0;
@@ -25367,8 +24206,7 @@ return_closcall1(data,(closure)&c_734554,  &c_734604);;
 }
 
 static void __lambda_274(void *data, int argc, object self_733205, object r_731703) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734556;
 c_734556.hdr.mark = gc_color_red;
  c_734556.hdr.grayed = 0;
@@ -25384,8 +24222,7 @@ return_closcall1(data,(closure)&c_734556,  memberp(data, ((closureN)self_733205)
 }
 
 static void __lambda_273(void *data, int argc, object self_733206, object r_731701) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734558;
 c_734558.hdr.mark = gc_color_red;
  c_734558.hdr.grayed = 0;
@@ -25401,8 +24238,7 @@ return_closcall2(data,  __glo_not,  &c_734558, r_731701);;
 }
 
 static void __lambda_272(void *data, int argc, object self_733207, object r_731690) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-if( !eq(boolean_f, r_731690) ){ 
+  if( !eq(boolean_f, r_731690) ){ 
   
 closureN_type c_734560;
 c_734560.hdr.mark = gc_color_red;
@@ -25432,8 +24268,7 @@ return_closcall1(data,(closure)&c_734560,  &c_734563);
 }
 
 static void __lambda_271(void *data, int argc, object self_733208, object k_731692, object return_73534) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734565;
 c_734565.hdr.mark = gc_color_red;
  c_734565.hdr.grayed = 0;
@@ -25460,8 +24295,7 @@ return_closcall1(data,(closure)&c_734565,  &c_734576);;
 }
 
 static void __lambda_270(void *data, int argc, object self_733209, object k_731696, object expr_73535) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734578;
 c_734578.hdr.mark = gc_color_red;
  c_734578.hdr.grayed = 0;
@@ -25478,8 +24312,7 @@ return_closcall1(data,(closure)&c_734578,  Cyc_is_vector(expr_73535));;
 }
 
 static void __lambda_269(void *data, int argc, object self_733210, object r_731698) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734580;
 c_734580.hdr.mark = gc_color_red;
  c_734580.hdr.grayed = 0;
@@ -25496,8 +24329,7 @@ return_closcall1(data,(closure)&c_734580,  r_731698);;
 }
 
 static void __lambda_268(void *data, int argc, object self_733211, object tmp_73536) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734582;
 c_734582.hdr.mark = gc_color_red;
  c_734582.hdr.grayed = 0;
@@ -25525,8 +24357,7 @@ return_closcall1(data,(closure)&c_734582,  &c_734591);;
 }
 
 static void __lambda_267(void *data, int argc, object self_733212, object r_731697) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-if( !eq(boolean_f, r_731697) ){ 
+  if( !eq(boolean_f, r_731697) ){ 
   return_closcall2(data,  ((closureN)self_733212)->elts[1],  ((closureN)self_733212)->elts[0], boolean_f);
 } else { 
   return_closcall1(data,  ((closureN)self_733212)->elts[0],  boolean_f);}
@@ -25534,8 +24365,7 @@ if( !eq(boolean_f, r_731697) ){
 }
 
 static void __lambda_266(void *data, int argc, object self_733213, object k_731699) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-if( !eq(boolean_f, ((closureN)self_733213)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_733213)->elts[1]) ){ 
   return_closcall1(data,  k_731699,  ((closureN)self_733213)->elts[1]);
 } else { 
   
@@ -25554,13 +24384,11 @@ return_closcall2(data,  __glo_const_127,  &c_734587, ((closureN)self_733213)->el
 }
 
 static void __lambda_265(void *data, int argc, object self_733214, object r_731700) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-return_closcall2(data,  __glo_not,  ((closureN)self_733214)->elts[0], r_731700);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_733214)->elts[0], r_731700);; 
 }
 
 static void __lambda_264(void *data, int argc, object self_733215, object r_731694) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734567;
 c_734567.hdr.mark = gc_color_red;
  c_734567.hdr.grayed = 0;
@@ -25576,8 +24404,7 @@ return_closcall1(data,(closure)&c_734567,  cdr(((closureN)self_733215)->elts[0])
 }
 
 static void __lambda_263(void *data, int argc, object self_733216, object r_731695) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-
+  
 closureN_type c_734569;
 c_734569.hdr.mark = gc_color_red;
  c_734569.hdr.grayed = 0;
@@ -25592,13 +24419,11 @@ return_closcall3(data,  __glo_for_91each,  &c_734569, ((closureN)self_733216)->e
 }
 
 static void __lambda_262(void *data, int argc, object self_733217, object r_731693) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-return_closcall1(data,  ((closureN)self_733217)->elts[0],  boolean_t);; 
+  return_closcall1(data,  ((closureN)self_733217)->elts[0],  boolean_t);; 
 }
 
 static void __lambda_261(void *data, int argc, object self_733218, object r_731691) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:precompute-prim-app?");
-return_closcall2(data,  __glo_call_95cc,  ((closureN)self_733218)->elts[0], r_731691);; 
+  return_closcall2(data,  __glo_call_95cc,  ((closureN)self_733218)->elts[0], r_731691);; 
 }
 
 static void __lambda_260(void *data, int argc, closure _,object k_731709, object exp_73537) {
@@ -25644,8 +24469,7 @@ return_closcall1(data,(closure)&c_734507,  quote__if);;
 }
 
 static void __lambda_254(void *data, int argc, object self_733219, object r_731727) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:if-else?");
-
+  
 closureN_type c_734509;
 c_734509.hdr.mark = gc_color_red;
  c_734509.hdr.grayed = 0;
@@ -25661,8 +24485,7 @@ return_closcall3(data,  __glo_tagged_91list_127,  &c_734509, r_731727, ((closure
 }
 
 static void __lambda_253(void *data, int argc, object self_733220, object r_731725) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:if-else?");
-if( !eq(boolean_f, r_731725) ){ 
+  if( !eq(boolean_f, r_731725) ){ 
   
 closureN_type c_734511;
 c_734511.hdr.mark = gc_color_red;
@@ -25683,8 +24506,7 @@ return_closcall1(data,(closure)&c_734511,  &c_734519);
 }
 
 static void __lambda_252(void *data, int argc, object self_733221, object r_731726) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:if-else?");
-
+  
 make_int(c_734516, 3);
 return_closcall1(data,  ((closureN)self_733221)->elts[0],  __num_gt(data, r_731726, &c_734516));; 
 }
@@ -25721,8 +24543,7 @@ return_closcall1(data,(closure)&c_734421,  l_73546);;
 }
 
 static void __lambda_247(void *data, int argc, object self_733222, object lst_73547) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734423;
 c_734423.hdr.mark = gc_color_red;
  c_734423.hdr.grayed = 0;
@@ -25738,8 +24559,7 @@ return_closcall1(data,(closure)&c_734423,  boolean_f);;
 }
 
 static void __lambda_246(void *data, int argc, object self_733223, object loop_73548) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734425;
 c_734425.hdr.mark = gc_color_red;
  c_734425.hdr.grayed = 0;
@@ -25757,8 +24577,7 @@ return_closcall1(data,(closure)&c_734425,  &c_734492);;
 }
 
 static void __lambda_245(void *data, int argc, object self_733224, object loop_73548) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734427;
 c_734427.hdr.mark = gc_color_red;
  c_734427.hdr.grayed = 0;
@@ -25786,8 +24605,7 @@ return_closcall1(data,(closure)&c_734427,  &c_734439);;
 }
 
 static void __lambda_244(void *data, int argc, object self_733225, object k_731742, object lst_73549) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734441;
 c_734441.hdr.mark = gc_color_red;
  c_734441.hdr.grayed = 0;
@@ -25804,8 +24622,7 @@ return_closcall1(data,(closure)&c_734441,  Cyc_is_cons(lst_73549));;
 }
 
 static void __lambda_243(void *data, int argc, object self_733226, object r_731749) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734443;
 c_734443.hdr.mark = gc_color_red;
  c_734443.hdr.grayed = 0;
@@ -25822,8 +24639,7 @@ return_closcall2(data,  __glo_not,  &c_734443, r_731749);;
 }
 
 static void __lambda_242(void *data, int argc, object self_733227, object r_731743) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-if( !eq(boolean_f, r_731743) ){ 
+  if( !eq(boolean_f, r_731743) ){ 
   
 closureN_type c_734445;
 c_734445.hdr.mark = gc_color_red;
@@ -25856,8 +24672,7 @@ return_closcall1(data,(closure)&c_734450,  cdr(((closureN)self_733227)->elts[2])
 }
 
 static void __lambda_241(void *data, int argc, object self_733228, object r_731748) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734452;
 c_734452.hdr.mark = gc_color_red;
  c_734452.hdr.grayed = 0;
@@ -25874,8 +24689,7 @@ return_closcall1(data,(closure)&c_734452,  Cyc_is_null(r_731748));;
 }
 
 static void __lambda_240(void *data, int argc, object self_733229, object r_731744) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-if( !eq(boolean_f, r_731744) ){ 
+  if( !eq(boolean_f, r_731744) ){ 
   
 closureN_type c_734454;
 c_734454.hdr.mark = gc_color_red;
@@ -25908,8 +24722,7 @@ return_closcall0(data,(closure)&c_734461);}
 }
 
 static void __lambda_239(void *data, int argc, object self_733230) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734463;
 c_734463.hdr.mark = gc_color_red;
  c_734463.hdr.grayed = 0;
@@ -25926,8 +24739,7 @@ return_closcall1(data,(closure)&c_734463,  car(((closureN)self_733230)->elts[2])
 }
 
 static void __lambda_238(void *data, int argc, object self_733231, object r_731745) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734465;
 c_734465.hdr.mark = gc_color_red;
  c_734465.hdr.grayed = 0;
@@ -25944,8 +24756,7 @@ return_closcall1(data,(closure)&c_734465,  cdr(((closureN)self_733231)->elts[2])
 }
 
 static void __lambda_237(void *data, int argc, object self_733232, object r_731747) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734470;
 c_734470.hdr.mark = gc_color_red;
  c_734470.hdr.grayed = 0;
@@ -25961,25 +24772,21 @@ return_closcall2(data,  cell_get(((closureN)self_733232)->elts[1]),  &c_734470, 
 }
 
 static void __lambda_236(void *data, int argc, object self_733233, object r_731746) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 make_cons(c_734475,((closureN)self_733233)->elts[1], r_731746);
 return_closcall1(data,  ((closureN)self_733233)->elts[0],  &c_734475);; 
 }
 
 static void __lambda_235(void *data, int argc, object self_733234) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-return_closcall1(data,  ((closureN)self_733234)->elts[0],  car(((closureN)self_733234)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_733234)->elts[0],  car(((closureN)self_733234)->elts[1]));; 
 }
 
 static void __lambda_234(void *data, int argc, object self_733235) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-return_closcall1(data,  ((closureN)self_733235)->elts[0],  ((closureN)self_733235)->elts[1]);; 
+  return_closcall1(data,  ((closureN)self_733235)->elts[0],  ((closureN)self_733235)->elts[1]);; 
 }
 
 static void __lambda_233(void *data, int argc, object self_733236, object r_731741) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-
+  
 closureN_type c_734429;
 c_734429.hdr.mark = gc_color_red;
  c_734429.hdr.grayed = 0;
@@ -25996,8 +24803,7 @@ return_closcall1(data,(closure)&c_734429,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_232(void *data, int argc, object self_733237, object r_731740) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->pair");
-return_closcall2(data,  cell_get(((closureN)self_733237)->elts[1]),  ((closureN)self_733237)->elts[0], ((closureN)self_733237)->elts[2]);; 
+  return_closcall2(data,  cell_get(((closureN)self_733237)->elts[1]),  ((closureN)self_733237)->elts[0], ((closureN)self_733237)->elts[2]);; 
 }
 
 static void __lambda_231(void *data, int argc, closure _,object k_731752, object p_73550) {
@@ -26017,8 +24823,7 @@ return_closcall1(data,(closure)&c_734362,  p_73550);;
 }
 
 static void __lambda_230(void *data, int argc, object self_733238, object lst_73551) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734364;
 c_734364.hdr.mark = gc_color_red;
  c_734364.hdr.grayed = 0;
@@ -26034,8 +24839,7 @@ return_closcall1(data,(closure)&c_734364,  boolean_f);;
 }
 
 static void __lambda_229(void *data, int argc, object self_733239, object loop_73552) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734366;
 c_734366.hdr.mark = gc_color_red;
  c_734366.hdr.grayed = 0;
@@ -26053,8 +24857,7 @@ return_closcall1(data,(closure)&c_734366,  &c_734418);;
 }
 
 static void __lambda_228(void *data, int argc, object self_733240, object loop_73552) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734368;
 c_734368.hdr.mark = gc_color_red;
  c_734368.hdr.grayed = 0;
@@ -26082,8 +24885,7 @@ return_closcall1(data,(closure)&c_734368,  &c_734380);;
 }
 
 static void __lambda_227(void *data, int argc, object self_733241, object k_731755, object lst_73553) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734382;
 c_734382.hdr.mark = gc_color_red;
  c_734382.hdr.grayed = 0;
@@ -26100,8 +24902,7 @@ return_closcall1(data,(closure)&c_734382,  Cyc_is_cons(lst_73553));;
 }
 
 static void __lambda_226(void *data, int argc, object self_733242, object r_731761) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734384;
 c_734384.hdr.mark = gc_color_red;
  c_734384.hdr.grayed = 0;
@@ -26118,8 +24919,7 @@ return_closcall2(data,  __glo_not,  &c_734384, r_731761);;
 }
 
 static void __lambda_225(void *data, int argc, object self_733243, object r_731756) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-if( !eq(boolean_f, r_731756) ){ 
+  if( !eq(boolean_f, r_731756) ){ 
   
 closureN_type c_734386;
 c_734386.hdr.mark = gc_color_red;
@@ -26152,8 +24952,7 @@ return_closcall1(data,(closure)&c_734394,  car(((closureN)self_733243)->elts[2])
 }
 
 static void __lambda_224(void *data, int argc, object self_733244, object r_731758) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734396;
 c_734396.hdr.mark = gc_color_red;
  c_734396.hdr.grayed = 0;
@@ -26170,8 +24969,7 @@ return_closcall1(data,(closure)&c_734396,  cdr(((closureN)self_733244)->elts[2])
 }
 
 static void __lambda_223(void *data, int argc, object self_733245, object r_731760) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734401;
 c_734401.hdr.mark = gc_color_red;
  c_734401.hdr.grayed = 0;
@@ -26187,22 +24985,19 @@ return_closcall2(data,  cell_get(((closureN)self_733245)->elts[1]),  &c_734401, 
 }
 
 static void __lambda_222(void *data, int argc, object self_733246, object r_731759) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 make_cons(c_734406,((closureN)self_733246)->elts[1], r_731759);
 return_closcall1(data,  ((closureN)self_733246)->elts[0],  &c_734406);; 
 }
 
 static void __lambda_221(void *data, int argc, object self_733247, object r_731757) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 make_cons(c_734391,((closureN)self_733247)->elts[1], r_731757);
 return_closcall1(data,  ((closureN)self_733247)->elts[0],  &c_734391);; 
 }
 
 static void __lambda_220(void *data, int argc, object self_733248, object r_731754) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-
+  
 closureN_type c_734370;
 c_734370.hdr.mark = gc_color_red;
  c_734370.hdr.grayed = 0;
@@ -26219,8 +25014,7 @@ return_closcall1(data,(closure)&c_734370,  Cyc_set_car(data, ((closureN)self_733
 }
 
 static void __lambda_219(void *data, int argc, object self_733249, object r_731753) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:pair->list");
-return_closcall2(data,  cell_get(((closureN)self_733249)->elts[1]),  ((closureN)self_733249)->elts[0], ((closureN)self_733249)->elts[2]);; 
+  return_closcall2(data,  cell_get(((closureN)self_733249)->elts[1]),  ((closureN)self_733249)->elts[0], ((closureN)self_733249)->elts[2]);; 
 }
 
 static void __lambda_218(void *data, int argc, closure _,object k_731764, object args_73555, object type_73554) {
@@ -26242,8 +25036,7 @@ return_closcall1(data,(closure)&c_734234,  quote_args_117fixed);;
 }
 
 static void __lambda_217(void *data, int argc, object self_733250, object r_731790) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734236;
 c_734236.hdr.mark = gc_color_red;
  c_734236.hdr.grayed = 0;
@@ -26260,8 +25053,7 @@ return_closcall1(data,(closure)&c_734236,  Cyc_eq(((closureN)self_733250)->elts[
 }
 
 static void __lambda_216(void *data, int argc, object self_733251, object r_731765) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-if( !eq(boolean_f, r_731765) ){ 
+  if( !eq(boolean_f, r_731765) ){ 
   
 closureN_type c_734238;
 c_734238.hdr.mark = gc_color_red;
@@ -26294,8 +25086,7 @@ return_closcall1(data,(closure)&c_734243,  quote_args_117fixed_91with_91varargs)
 }
 
 static void __lambda_215(void *data, int argc, object self_733252, object r_731789) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734245;
 c_734245.hdr.mark = gc_color_red;
  c_734245.hdr.grayed = 0;
@@ -26312,8 +25103,7 @@ return_closcall1(data,(closure)&c_734245,  Cyc_eq(((closureN)self_733252)->elts[
 }
 
 static void __lambda_214(void *data, int argc, object self_733253, object r_731766) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-if( !eq(boolean_f, r_731766) ){ 
+  if( !eq(boolean_f, r_731766) ){ 
   
 closureN_type c_734247;
 c_734247.hdr.mark = gc_color_red;
@@ -26346,8 +25136,7 @@ return_closcall1(data,(closure)&c_734252,  quote_args_117varargs);}
 }
 
 static void __lambda_213(void *data, int argc, object self_733254, object r_731788) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734254;
 c_734254.hdr.mark = gc_color_red;
  c_734254.hdr.grayed = 0;
@@ -26364,8 +25153,7 @@ return_closcall1(data,(closure)&c_734254,  Cyc_eq(((closureN)self_733254)->elts[
 }
 
 static void __lambda_212(void *data, int argc, object self_733255, object r_731767) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-if( !eq(boolean_f, r_731767) ){ 
+  if( !eq(boolean_f, r_731767) ){ 
   
 closureN_type c_734256;
 c_734256.hdr.mark = gc_color_red;
@@ -26397,8 +25185,7 @@ return_closcall0(data,(closure)&c_734324);}
 }
 
 static void __lambda_211(void *data, int argc, object self_733256) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734326;
 c_734326.hdr.mark = gc_color_red;
  c_734326.hdr.grayed = 0;
@@ -26414,8 +25201,7 @@ return_closcall1(data,(closure)&c_734326,  quote_Unexpected);;
 }
 
 static void __lambda_210(void *data, int argc, object self_733257, object r_731783) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734328;
 c_734328.hdr.mark = gc_color_red;
  c_734328.hdr.grayed = 0;
@@ -26432,8 +25218,7 @@ return_closcall1(data,(closure)&c_734328,  quote_type);;
 }
 
 static void __lambda_209(void *data, int argc, object self_733258, object r_731785) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734330;
 c_734330.hdr.mark = gc_color_red;
  c_734330.hdr.grayed = 0;
@@ -26451,8 +25236,7 @@ return_closcall1(data,(closure)&c_734330,  nil);;
 }
 
 static void __lambda_208(void *data, int argc, object self_733259, object r_731787) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734332;
 c_734332.hdr.mark = gc_color_red;
  c_734332.hdr.grayed = 0;
@@ -26471,8 +25255,7 @@ return_closcall1(data,(closure)&c_734332,  &c_734349);;
 }
 
 static void __lambda_207(void *data, int argc, object self_733260, object r_731786) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734334;
 c_734334.hdr.mark = gc_color_red;
  c_734334.hdr.grayed = 0;
@@ -26490,8 +25273,7 @@ return_closcall1(data,(closure)&c_734334,  &c_734345);;
 }
 
 static void __lambda_206(void *data, int argc, object self_733261, object r_731784) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734336;
 c_734336.hdr.mark = gc_color_red;
  c_734336.hdr.grayed = 0;
@@ -26508,13 +25290,11 @@ return_closcall1(data,(closure)&c_734336,  &c_734341);;
 }
 
 static void __lambda_205(void *data, int argc, object self_733262, object r_731782) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-return_closcall2(data,  __glo_error,  ((closureN)self_733262)->elts[0], r_731782);; 
+  return_closcall2(data,  __glo_error,  ((closureN)self_733262)->elts[0], r_731782);; 
 }
 
 static void __lambda_204(void *data, int argc, object self_733263) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734258;
 c_734258.hdr.mark = gc_color_red;
  c_734258.hdr.grayed = 0;
@@ -26532,8 +25312,7 @@ return_closcall1(data,(closure)&c_734258,  &c_734321);;
 }
 
 static void __lambda_203(void *data, int argc, object self_733264, object r_731781) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734260;
 c_734260.hdr.mark = gc_color_red;
  c_734260.hdr.grayed = 0;
@@ -26551,8 +25330,7 @@ return_closcall1(data,(closure)&c_734260,  __num_gt(data, r_731781, &c_734318));
 }
 
 static void __lambda_202(void *data, int argc, object self_733265, object r_731768) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-if( !eq(boolean_f, r_731768) ){ 
+  if( !eq(boolean_f, r_731768) ){ 
   
 closureN_type c_734262;
 c_734262.hdr.mark = gc_color_red;
@@ -26572,8 +25350,7 @@ return_closcall1(data,(closure)&c_734262,  quote_Too);
 }
 
 static void __lambda_201(void *data, int argc, object self_733266, object r_731770) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734264;
 c_734264.hdr.mark = gc_color_red;
  c_734264.hdr.grayed = 0;
@@ -26590,8 +25367,7 @@ return_closcall1(data,(closure)&c_734264,  quote_many);;
 }
 
 static void __lambda_200(void *data, int argc, object self_733267, object r_731772) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734266;
 c_734266.hdr.mark = gc_color_red;
  c_734266.hdr.grayed = 0;
@@ -26609,8 +25385,7 @@ return_closcall1(data,(closure)&c_734266,  quote_args);;
 }
 
 static void __lambda_199(void *data, int argc, object self_733268, object r_731774) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734268;
 c_734268.hdr.mark = gc_color_red;
  c_734268.hdr.grayed = 0;
@@ -26629,8 +25404,7 @@ return_closcall1(data,(closure)&c_734268,  quote__for);;
 }
 
 static void __lambda_198(void *data, int argc, object self_733269, object r_731776) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734270;
 c_734270.hdr.mark = gc_color_red;
  c_734270.hdr.grayed = 0;
@@ -26650,8 +25424,7 @@ return_closcall1(data,(closure)&c_734270,  quote_varargs);;
 }
 
 static void __lambda_197(void *data, int argc, object self_733270, object r_731778) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734272;
 c_734272.hdr.mark = gc_color_red;
  c_734272.hdr.grayed = 0;
@@ -26672,8 +25445,7 @@ return_closcall1(data,(closure)&c_734272,  nil);;
 }
 
 static void __lambda_196(void *data, int argc, object self_733271, object r_731780) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734274;
 c_734274.hdr.mark = gc_color_red;
  c_734274.hdr.grayed = 0;
@@ -26695,8 +25467,7 @@ return_closcall1(data,(closure)&c_734274,  &c_734309);;
 }
 
 static void __lambda_195(void *data, int argc, object self_733272, object r_731779) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734276;
 c_734276.hdr.mark = gc_color_red;
  c_734276.hdr.grayed = 0;
@@ -26717,8 +25488,7 @@ return_closcall1(data,(closure)&c_734276,  &c_734305);;
 }
 
 static void __lambda_194(void *data, int argc, object self_733273, object r_731777) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734278;
 c_734278.hdr.mark = gc_color_red;
  c_734278.hdr.grayed = 0;
@@ -26738,8 +25508,7 @@ return_closcall1(data,(closure)&c_734278,  &c_734301);;
 }
 
 static void __lambda_193(void *data, int argc, object self_733274, object r_731775) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734280;
 c_734280.hdr.mark = gc_color_red;
  c_734280.hdr.grayed = 0;
@@ -26758,8 +25527,7 @@ return_closcall1(data,(closure)&c_734280,  &c_734297);;
 }
 
 static void __lambda_192(void *data, int argc, object self_733275, object r_731773) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734282;
 c_734282.hdr.mark = gc_color_red;
  c_734282.hdr.grayed = 0;
@@ -26777,8 +25545,7 @@ return_closcall1(data,(closure)&c_734282,  &c_734293);;
 }
 
 static void __lambda_191(void *data, int argc, object self_733276, object r_731771) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-
+  
 closureN_type c_734284;
 c_734284.hdr.mark = gc_color_red;
  c_734284.hdr.grayed = 0;
@@ -26795,18 +25562,15 @@ return_closcall1(data,(closure)&c_734284,  &c_734289);;
 }
 
 static void __lambda_190(void *data, int argc, object self_733277, object r_731769) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-return_closcall2(data,  __glo_error,  ((closureN)self_733277)->elts[0], r_731769);; 
+  return_closcall2(data,  __glo_error,  ((closureN)self_733277)->elts[0], r_731769);; 
 }
 
 static void __lambda_189(void *data, int argc, object self_733278) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-return_closcall2(data,  __glo_list_91_125pair,  ((closureN)self_733278)->elts[1], ((closureN)self_733278)->elts[0]);; 
+  return_closcall2(data,  __glo_list_91_125pair,  ((closureN)self_733278)->elts[1], ((closureN)self_733278)->elts[0]);; 
 }
 
 static void __lambda_188(void *data, int argc, object self_733279) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list->lambda-formals");
-return_closcall1(data,  ((closureN)self_733279)->elts[1],  ((closureN)self_733279)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733279)->elts[1],  ((closureN)self_733279)->elts[0]);; 
 }
 
 static void __lambda_187(void *data, int argc, closure _,object k_731793, object exp_73556) {
@@ -26827,8 +25591,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_734187, exp_73556);;
 }
 
 static void __lambda_186(void *data, int argc, object self_733280, object r_731794) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734189;
 c_734189.hdr.mark = gc_color_red;
  c_734189.hdr.grayed = 0;
@@ -26844,8 +25607,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_734189, ((closure
 }
 
 static void __lambda_185(void *data, int argc, object self_733281, object r_731800) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734191;
 c_734191.hdr.mark = gc_color_red;
  c_734191.hdr.grayed = 0;
@@ -26863,8 +25625,7 @@ return_closcall1(data,(closure)&c_734191,  &c_734230);;
 }
 
 static void __lambda_184(void *data, int argc, object self_733282, object r_731795) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734193;
 c_734193.hdr.mark = gc_color_red;
  c_734193.hdr.grayed = 0;
@@ -26879,8 +25640,7 @@ return_closcall2(data,(closure)&c_734193,  ((closureN)self_733282)->elts[1], r_7
 }
 
 static void __lambda_183(void *data, int argc, object self_733283, object type_73558, object num_73557) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734195;
 c_734195.hdr.mark = gc_color_red;
  c_734195.hdr.grayed = 0;
@@ -26897,8 +25657,7 @@ return_closcall1(data,(closure)&c_734195,  quote_args_117varargs);;
 }
 
 static void __lambda_182(void *data, int argc, object self_733284, object r_731799) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734197;
 c_734197.hdr.mark = gc_color_red;
  c_734197.hdr.grayed = 0;
@@ -26915,8 +25674,7 @@ return_closcall1(data,(closure)&c_734197,  equalp(((closureN)self_733284)->elts[
 }
 
 static void __lambda_181(void *data, int argc, object self_733285, object r_731796) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-if( !eq(boolean_f, r_731796) ){ 
+  if( !eq(boolean_f, r_731796) ){ 
   
 closureN_type c_734199;
 c_734199.hdr.mark = gc_color_red;
@@ -26948,8 +25706,7 @@ return_closcall1(data,(closure)&c_734204,  quote_args_117fixed_91with_91varargs)
 }
 
 static void __lambda_180(void *data, int argc, object self_733286, object r_731798) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 closureN_type c_734206;
 c_734206.hdr.mark = gc_color_red;
  c_734206.hdr.grayed = 0;
@@ -26965,8 +25722,7 @@ return_closcall1(data,(closure)&c_734206,  equalp(((closureN)self_733286)->elts[
 }
 
 static void __lambda_179(void *data, int argc, object self_733287, object r_731797) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-if( !eq(boolean_f, r_731797) ){ 
+  if( !eq(boolean_f, r_731797) ){ 
   
 closureN_type c_734208;
 c_734208.hdr.mark = gc_color_red;
@@ -26998,13 +25754,11 @@ return_closcall0(data,(closure)&c_734217);}
 }
 
 static void __lambda_178(void *data, int argc, object self_733288) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-return_closcall1(data,  ((closureN)self_733288)->elts[0],  ((closureN)self_733288)->elts[1]);; 
+  return_closcall1(data,  ((closureN)self_733288)->elts[0],  ((closureN)self_733288)->elts[1]);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_733289) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 make_int(c_734215, 1);
 
 common_type c_734213 = Cyc_sub(data,2,((closureN)self_733289)->elts[1], &c_734215);
@@ -27012,8 +25766,7 @@ return_closcall1(data,  ((closureN)self_733289)->elts[0],  &c_734213);;
 }
 
 static void __lambda_176(void *data, int argc, object self_733290) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-num-args");
-
+  
 make_int(c_734202, -1);
 return_closcall1(data,  ((closureN)self_733290)->elts[0],  &c_734202);; 
 }
@@ -27036,8 +25789,7 @@ return_closcall2(data,  __glo_lambda_91varargs_127,  &c_734166, exp_73559);;
 }
 
 static void __lambda_174(void *data, int argc, object self_733291, object r_731804) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals->list");
-if( !eq(boolean_f, r_731804) ){ 
+  if( !eq(boolean_f, r_731804) ){ 
   
 closureN_type c_734168;
 c_734168.hdr.mark = gc_color_red;
@@ -27056,8 +25808,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734168, ((closureN)self_
 }
 
 static void __lambda_173(void *data, int argc, object self_733292, object r_731805) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals->list");
-
+  
 closureN_type c_734170;
 c_734170.hdr.mark = gc_color_red;
  c_734170.hdr.grayed = 0;
@@ -27072,8 +25823,7 @@ return_closcall1(data,(closure)&c_734170,  r_731805);;
 }
 
 static void __lambda_172(void *data, int argc, object self_733293, object args_73560) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals->list");
-
+  
 closureN_type c_734172;
 c_734172.hdr.mark = gc_color_red;
  c_734172.hdr.grayed = 0;
@@ -27089,8 +25839,7 @@ return_closcall1(data,(closure)&c_734172,  Cyc_is_symbol(args_73560));;
 }
 
 static void __lambda_171(void *data, int argc, object self_733294, object r_731806) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals->list");
-if( !eq(boolean_f, r_731806) ){ 
+  if( !eq(boolean_f, r_731806) ){ 
   return_closcall2(data,  __glo__list,  ((closureN)self_733294)->elts[1], ((closureN)self_733294)->elts[0]);
 } else { 
   return_closcall2(data,  __glo_pair_91_125list,  ((closureN)self_733294)->elts[1], ((closureN)self_733294)->elts[0]);}
@@ -27114,8 +25863,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734085, exp_73561);;
 }
 
 static void __lambda_169(void *data, int argc, object self_733295, object r_731810) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734087;
 c_734087.hdr.mark = gc_color_red;
  c_734087.hdr.grayed = 0;
@@ -27130,8 +25878,7 @@ return_closcall1(data,(closure)&c_734087,  r_731810);;
 }
 
 static void __lambda_168(void *data, int argc, object self_733296, object args_73562) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734089;
 c_734089.hdr.mark = gc_color_red;
  c_734089.hdr.grayed = 0;
@@ -27147,8 +25894,7 @@ return_closcall1(data,(closure)&c_734089,  Cyc_is_symbol(args_73562));;
 }
 
 static void __lambda_167(void *data, int argc, object self_733297, object r_731811) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-if( !eq(boolean_f, r_731811) ){ 
+  if( !eq(boolean_f, r_731811) ){ 
   
 closureN_type c_734091;
 c_734091.hdr.mark = gc_color_red;
@@ -27179,8 +25925,7 @@ return_closcall2(data,  __glo_list_127,  &c_734095, ((closureN)self_733297)->elt
 }
 
 static void __lambda_166(void *data, int argc, object self_733298, object r_731812) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-if( !eq(boolean_f, r_731812) ){ 
+  if( !eq(boolean_f, r_731812) ){ 
   
 closureN_type c_734097;
 c_734097.hdr.mark = gc_color_red;
@@ -27211,8 +25956,7 @@ return_closcall1(data,(closure)&c_734101,  Cyc_is_cons(((closureN)self_733298)->
 }
 
 static void __lambda_165(void *data, int argc, object self_733299, object r_731813) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-if( !eq(boolean_f, r_731813) ){ 
+  if( !eq(boolean_f, r_731813) ){ 
   
 closureN_type c_734103;
 c_734103.hdr.mark = gc_color_red;
@@ -27243,8 +25987,7 @@ return_closcall0(data,(closure)&c_734107);}
 }
 
 static void __lambda_164(void *data, int argc, object self_733300) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734109;
 c_734109.hdr.mark = gc_color_red;
  c_734109.hdr.grayed = 0;
@@ -27260,8 +26003,7 @@ return_closcall1(data,(closure)&c_734109,  quote_Unexpected);;
 }
 
 static void __lambda_163(void *data, int argc, object self_733301, object r_731815) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734111;
 c_734111.hdr.mark = gc_color_red;
  c_734111.hdr.grayed = 0;
@@ -27278,8 +26020,7 @@ return_closcall1(data,(closure)&c_734111,  quote_formals);;
 }
 
 static void __lambda_162(void *data, int argc, object self_733302, object r_731817) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734113;
 c_734113.hdr.mark = gc_color_red;
  c_734113.hdr.grayed = 0;
@@ -27297,8 +26038,7 @@ return_closcall1(data,(closure)&c_734113,  quote__list);;
 }
 
 static void __lambda_161(void *data, int argc, object self_733303, object r_731819) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734115;
 c_734115.hdr.mark = gc_color_red;
  c_734115.hdr.grayed = 0;
@@ -27317,8 +26057,7 @@ return_closcall1(data,(closure)&c_734115,  quote_in);;
 }
 
 static void __lambda_160(void *data, int argc, object self_733304, object r_731821) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734117;
 c_734117.hdr.mark = gc_color_red;
  c_734117.hdr.grayed = 0;
@@ -27338,8 +26077,7 @@ return_closcall1(data,(closure)&c_734117,  quote_lambda_91formals_91type_117);;
 }
 
 static void __lambda_159(void *data, int argc, object self_733305, object r_731823) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734119;
 c_734119.hdr.mark = gc_color_red;
  c_734119.hdr.grayed = 0;
@@ -27360,8 +26098,7 @@ return_closcall1(data,(closure)&c_734119,  nil);;
 }
 
 static void __lambda_158(void *data, int argc, object self_733306, object r_731825) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734121;
 c_734121.hdr.mark = gc_color_red;
  c_734121.hdr.grayed = 0;
@@ -27383,8 +26120,7 @@ return_closcall1(data,(closure)&c_734121,  &c_734156);;
 }
 
 static void __lambda_157(void *data, int argc, object self_733307, object r_731824) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734123;
 c_734123.hdr.mark = gc_color_red;
  c_734123.hdr.grayed = 0;
@@ -27405,8 +26141,7 @@ return_closcall1(data,(closure)&c_734123,  &c_734152);;
 }
 
 static void __lambda_156(void *data, int argc, object self_733308, object r_731822) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734125;
 c_734125.hdr.mark = gc_color_red;
  c_734125.hdr.grayed = 0;
@@ -27426,8 +26161,7 @@ return_closcall1(data,(closure)&c_734125,  &c_734148);;
 }
 
 static void __lambda_155(void *data, int argc, object self_733309, object r_731820) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734127;
 c_734127.hdr.mark = gc_color_red;
  c_734127.hdr.grayed = 0;
@@ -27446,8 +26180,7 @@ return_closcall1(data,(closure)&c_734127,  &c_734144);;
 }
 
 static void __lambda_154(void *data, int argc, object self_733310, object r_731818) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734129;
 c_734129.hdr.mark = gc_color_red;
  c_734129.hdr.grayed = 0;
@@ -27465,8 +26198,7 @@ return_closcall1(data,(closure)&c_734129,  &c_734140);;
 }
 
 static void __lambda_153(void *data, int argc, object self_733311, object r_731816) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-
+  
 closureN_type c_734131;
 c_734131.hdr.mark = gc_color_red;
  c_734131.hdr.grayed = 0;
@@ -27483,23 +26215,19 @@ return_closcall1(data,(closure)&c_734131,  &c_734136);;
 }
 
 static void __lambda_152(void *data, int argc, object self_733312, object r_731814) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-return_closcall2(data,  __glo_error,  ((closureN)self_733312)->elts[0], r_731814);; 
+  return_closcall2(data,  __glo_error,  ((closureN)self_733312)->elts[0], r_731814);; 
 }
 
 static void __lambda_151(void *data, int argc, object self_733313) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-return_closcall1(data,  ((closureN)self_733313)->elts[0],  quote_args_117fixed_91with_91varargs);; 
+  return_closcall1(data,  ((closureN)self_733313)->elts[0],  quote_args_117fixed_91with_91varargs);; 
 }
 
 static void __lambda_150(void *data, int argc, object self_733314) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-return_closcall1(data,  ((closureN)self_733314)->elts[0],  quote_args_117fixed);; 
+  return_closcall1(data,  ((closureN)self_733314)->elts[0],  quote_args_117fixed);; 
 }
 
 static void __lambda_149(void *data, int argc, object self_733315) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-formals-type");
-return_closcall1(data,  ((closureN)self_733315)->elts[0],  quote_args_117varargs);; 
+  return_closcall1(data,  ((closureN)self_733315)->elts[0],  quote_args_117varargs);; 
 }
 
 static void __lambda_148(void *data, int argc, closure _,object k_731828, object exp_73563) {
@@ -27520,8 +26248,7 @@ return_closcall2(data,  __glo_lambda_91varargs_127,  &c_734058, exp_73563);;
 }
 
 static void __lambda_147(void *data, int argc, object self_733316, object r_731829) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-if( !eq(boolean_f, r_731829) ){ 
+  if( !eq(boolean_f, r_731829) ){ 
   
 closureN_type c_734060;
 c_734060.hdr.mark = gc_color_red;
@@ -27541,8 +26268,7 @@ return_closcall2(data,  __glo_lambda_91formals_91type,  &c_734060, ((closureN)se
 }
 
 static void __lambda_146(void *data, int argc, object self_733317, object r_731833) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-
+  
 closureN_type c_734062;
 c_734062.hdr.mark = gc_color_red;
  c_734062.hdr.grayed = 0;
@@ -27559,8 +26285,7 @@ return_closcall1(data,(closure)&c_734062,  quote_args_117varargs);;
 }
 
 static void __lambda_145(void *data, int argc, object self_733318, object r_731834) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-
+  
 closureN_type c_734064;
 c_734064.hdr.mark = gc_color_red;
  c_734064.hdr.grayed = 0;
@@ -27576,8 +26301,7 @@ return_closcall1(data,(closure)&c_734064,  equalp(((closureN)self_733318)->elts[
 }
 
 static void __lambda_144(void *data, int argc, object self_733319, object r_731830) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-if( !eq(boolean_f, r_731830) ){ 
+  if( !eq(boolean_f, r_731830) ){ 
   return_closcall2(data,  __glo_lambda_91_125formals,  ((closureN)self_733319)->elts[1], ((closureN)self_733319)->elts[0]);
 } else { 
   
@@ -27596,8 +26320,7 @@ return_closcall2(data,  __glo_lambda_91formals_91_125list,  &c_734069, ((closure
 }
 
 static void __lambda_143(void *data, int argc, object self_733320, object r_731832) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-
+  
 closureN_type c_734071;
 c_734071.hdr.mark = gc_color_red;
  c_734071.hdr.grayed = 0;
@@ -27612,8 +26335,7 @@ return_closcall2(data,  __glo_reverse,  &c_734071, r_731832);;
 }
 
 static void __lambda_142(void *data, int argc, object self_733321, object r_731831) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs-var");
-return_closcall1(data,  ((closureN)self_733321)->elts[0],  car(r_731831));; 
+  return_closcall1(data,  ((closureN)self_733321)->elts[0],  car(r_731831));; 
 }
 
 static void __lambda_141(void *data, int argc, closure _,object k_731837, object exp_73564) {
@@ -27639,8 +26361,7 @@ return_closcall2(data,  __glo_lambda_127,  &c_734022, exp_73565);;
 }
 
 static void __lambda_139(void *data, int argc, object self_733322, object r_731841) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-if( !eq(boolean_f, r_731841) ){ 
+  if( !eq(boolean_f, r_731841) ){ 
   
 closureN_type c_734024;
 c_734024.hdr.mark = gc_color_red;
@@ -27660,8 +26381,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734024, ((closureN)self_
 }
 
 static void __lambda_138(void *data, int argc, object self_733323, object r_731847) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-
+  
 closureN_type c_734026;
 c_734026.hdr.mark = gc_color_red;
  c_734026.hdr.grayed = 0;
@@ -27677,8 +26397,7 @@ return_closcall1(data,(closure)&c_734026,  Cyc_is_symbol(r_731847));;
 }
 
 static void __lambda_137(void *data, int argc, object self_733324, object r_731842) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-
+  
 closureN_type c_734028;
 c_734028.hdr.mark = gc_color_red;
  c_734028.hdr.grayed = 0;
@@ -27694,8 +26413,7 @@ return_closcall1(data,(closure)&c_734028,  r_731842);;
 }
 
 static void __lambda_136(void *data, int argc, object self_733325, object tmp_73566) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-if( !eq(boolean_f, tmp_73566) ){ 
+  if( !eq(boolean_f, tmp_73566) ){ 
   return_closcall1(data,  ((closureN)self_733325)->elts[1],  tmp_73566);
 } else { 
   
@@ -27715,8 +26433,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734032, ((closureN)self_
 }
 
 static void __lambda_135(void *data, int argc, object self_733326, object r_731846) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-
+  
 closureN_type c_734034;
 c_734034.hdr.mark = gc_color_red;
  c_734034.hdr.grayed = 0;
@@ -27732,8 +26449,7 @@ return_closcall1(data,(closure)&c_734034,  Cyc_is_cons(r_731846));;
 }
 
 static void __lambda_134(void *data, int argc, object self_733327, object r_731843) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-if( !eq(boolean_f, r_731843) ){ 
+  if( !eq(boolean_f, r_731843) ){ 
   
 closureN_type c_734036;
 c_734036.hdr.mark = gc_color_red;
@@ -27752,8 +26468,7 @@ return_closcall2(data,  __glo_lambda_91_125formals,  &c_734036, ((closureN)self_
 }
 
 static void __lambda_133(void *data, int argc, object self_733328, object r_731845) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-
+  
 closureN_type c_734038;
 c_734038.hdr.mark = gc_color_red;
  c_734038.hdr.grayed = 0;
@@ -27768,8 +26483,7 @@ return_closcall2(data,  __glo_list_127,  &c_734038, r_731845);;
 }
 
 static void __lambda_132(void *data, int argc, object self_733329, object r_731844) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:lambda-varargs?");
-return_closcall2(data,  __glo_not,  ((closureN)self_733329)->elts[0], r_731844);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_733329)->elts[0], r_731844);; 
 }
 
 static void __lambda_131(void *data, int argc, closure _,object k_731850, object exp_73567) {
@@ -27789,8 +26503,7 @@ return_closcall1(data,(closure)&c_734015,  cadr(exp_73567));;
 }
 
 static void __lambda_130(void *data, int argc, object self_733330, object r_731851) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:letrec->args");
-return_closcall3(data,  __glo_map,  ((closureN)self_733330)->elts[0], primitive_cadr, r_731851);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733330)->elts[0], primitive_cadr, r_731851);; 
 }
 
 static void __lambda_129(void *data, int argc, closure _,object k_731854, object exp_73568) {
@@ -27810,8 +26523,7 @@ return_closcall1(data,(closure)&c_734008,  cadr(exp_73568));;
 }
 
 static void __lambda_128(void *data, int argc, object self_733331, object r_731855) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:letrec->bound-vars");
-return_closcall3(data,  __glo_map,  ((closureN)self_733331)->elts[0], primitive_car, r_731855);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733331)->elts[0], primitive_car, r_731855);; 
 }
 
 static void __lambda_127(void *data, int argc, closure _,object k_731858, object exp_73569) {
@@ -27842,8 +26554,7 @@ return_closcall1(data,(closure)&c_733994,  quote_letrec);;
 }
 
 static void __lambda_124(void *data, int argc, object self_733332, object r_731865) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:letrec?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733332)->elts[1], r_731865, ((closureN)self_733332)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733332)->elts[1], r_731865, ((closureN)self_733332)->elts[0]);; 
 }
 
 static void __lambda_123(void *data, int argc, closure _,object k_731868, object exp_73572) {
@@ -27863,8 +26574,7 @@ return_closcall1(data,(closure)&c_733987,  cadr(exp_73572));;
 }
 
 static void __lambda_122(void *data, int argc, object self_733333, object r_731869) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:let->args");
-return_closcall3(data,  __glo_map,  ((closureN)self_733333)->elts[0], primitive_cadr, r_731869);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733333)->elts[0], primitive_cadr, r_731869);; 
 }
 
 static void __lambda_121(void *data, int argc, closure _,object k_731872, object exp_73573) {
@@ -27884,8 +26594,7 @@ return_closcall1(data,(closure)&c_733980,  cadr(exp_73573));;
 }
 
 static void __lambda_120(void *data, int argc, object self_733334, object r_731873) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:let->bound-vars");
-return_closcall3(data,  __glo_map,  ((closureN)self_733334)->elts[0], primitive_car, r_731873);; 
+  return_closcall3(data,  __glo_map,  ((closureN)self_733334)->elts[0], primitive_car, r_731873);; 
 }
 
 static void __lambda_119(void *data, int argc, closure _,object k_731876, object exp_73574) {
@@ -27916,8 +26625,7 @@ return_closcall1(data,(closure)&c_733966,  quote_let);;
 }
 
 static void __lambda_116(void *data, int argc, object self_733335, object r_731883) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:let?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733335)->elts[1], r_731883, ((closureN)self_733335)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733335)->elts[1], r_731883, ((closureN)self_733335)->elts[0]);; 
 }
 
 static void __lambda_115(void *data, int argc, closure _,object k_731886, object exp_73577) {
@@ -27938,8 +26646,7 @@ return_closcall1(data,(closure)&c_733960,  quote_quote);;
 }
 
 static void __lambda_114(void *data, int argc, object self_733336, object r_731887) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:quote?");
-return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733336)->elts[1], r_731887, ((closureN)self_733336)->elts[0]);; 
+  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_733336)->elts[1], r_731887, ((closureN)self_733336)->elts[0]);; 
 }
 
 static void __lambda_113(void *data, int argc, closure _,object k_731890, object exp_73578) {
@@ -27965,8 +26672,7 @@ return_closcall1(data,(closure)&c_733906,  Cyc_is_integer(exp_73579));;
 }
 
 static void __lambda_111(void *data, int argc, object self_733337, object r_731894) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-
+  
 closureN_type c_733908;
 c_733908.hdr.mark = gc_color_red;
  c_733908.hdr.grayed = 0;
@@ -27982,8 +26688,7 @@ return_closcall1(data,(closure)&c_733908,  r_731894);;
 }
 
 static void __lambda_110(void *data, int argc, object self_733338, object tmp_73580) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-if( !eq(boolean_f, tmp_73580) ){ 
+  if( !eq(boolean_f, tmp_73580) ){ 
   return_closcall1(data,  ((closureN)self_733338)->elts[1],  tmp_73580);
 } else { 
   
@@ -28003,8 +26708,7 @@ return_closcall1(data,(closure)&c_733912,  Cyc_is_real(((closureN)self_733338)->
 }
 
 static void __lambda_109(void *data, int argc, object self_733339, object r_731895) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-
+  
 closureN_type c_733914;
 c_733914.hdr.mark = gc_color_red;
  c_733914.hdr.grayed = 0;
@@ -28020,8 +26724,7 @@ return_closcall1(data,(closure)&c_733914,  r_731895);;
 }
 
 static void __lambda_108(void *data, int argc, object self_733340, object tmp_73581) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-if( !eq(boolean_f, tmp_73581) ){ 
+  if( !eq(boolean_f, tmp_73581) ){ 
   return_closcall1(data,  ((closureN)self_733340)->elts[1],  tmp_73581);
 } else { 
   
@@ -28041,8 +26744,7 @@ return_closcall1(data,(closure)&c_733918,  Cyc_is_string(((closureN)self_733340)
 }
 
 static void __lambda_107(void *data, int argc, object self_733341, object r_731896) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-
+  
 closureN_type c_733920;
 c_733920.hdr.mark = gc_color_red;
  c_733920.hdr.grayed = 0;
@@ -28058,8 +26760,7 @@ return_closcall1(data,(closure)&c_733920,  r_731896);;
 }
 
 static void __lambda_106(void *data, int argc, object self_733342, object tmp_73582) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-if( !eq(boolean_f, tmp_73582) ){ 
+  if( !eq(boolean_f, tmp_73582) ){ 
   return_closcall1(data,  ((closureN)self_733342)->elts[1],  tmp_73582);
 } else { 
   
@@ -28079,8 +26780,7 @@ return_closcall1(data,(closure)&c_733924,  Cyc_is_vector(((closureN)self_733342)
 }
 
 static void __lambda_105(void *data, int argc, object self_733343, object r_731897) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-
+  
 closureN_type c_733926;
 c_733926.hdr.mark = gc_color_red;
  c_733926.hdr.grayed = 0;
@@ -28096,8 +26796,7 @@ return_closcall1(data,(closure)&c_733926,  r_731897);;
 }
 
 static void __lambda_104(void *data, int argc, object self_733344, object tmp_73583) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-if( !eq(boolean_f, tmp_73583) ){ 
+  if( !eq(boolean_f, tmp_73583) ){ 
   return_closcall1(data,  ((closureN)self_733344)->elts[1],  tmp_73583);
 } else { 
   
@@ -28117,8 +26816,7 @@ return_closcall1(data,(closure)&c_733930,  Cyc_is_char(((closureN)self_733344)->
 }
 
 static void __lambda_103(void *data, int argc, object self_733345, object r_731898) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-
+  
 closureN_type c_733932;
 c_733932.hdr.mark = gc_color_red;
  c_733932.hdr.grayed = 0;
@@ -28134,8 +26832,7 @@ return_closcall1(data,(closure)&c_733932,  r_731898);;
 }
 
 static void __lambda_102(void *data, int argc, object self_733346, object tmp_73584) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:const?");
-if( !eq(boolean_f, tmp_73584) ){ 
+  if( !eq(boolean_f, tmp_73584) ){ 
   return_closcall1(data,  ((closureN)self_733346)->elts[1],  tmp_73584);
 } else { 
   return_closcall1(data,  ((closureN)self_733346)->elts[1],  Cyc_is_boolean(((closureN)self_733346)->elts[0]));}
@@ -28161,8 +26858,7 @@ return_closcall1(data,(closure)&c_733880,  Cyc_is_cons(keys_73585));;
 }
 
 static void __lambda_100(void *data, int argc, object self_733347, object r_731906) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-keys");
-
+  
 closureN_type c_733882;
 c_733882.hdr.mark = gc_color_red;
  c_733882.hdr.grayed = 0;
@@ -28179,8 +26875,7 @@ return_closcall2(data,  __glo_not,  &c_733882, r_731906);;
 }
 
 static void __lambda_99(void *data, int argc, object self_733348, object r_731902) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-keys");
-if( !eq(boolean_f, r_731902) ){ 
+  if( !eq(boolean_f, r_731902) ){ 
   return_closcall1(data,  ((closureN)self_733348)->elts[1],  ((closureN)self_733348)->elts[0]);
 } else { 
   
@@ -28201,8 +26896,7 @@ return_closcall1(data,(closure)&c_733887,  car(((closureN)self_733348)->elts[2])
 }
 
 static void __lambda_98(void *data, int argc, object self_733349, object r_731905) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-keys");
-
+  
 closureN_type c_733889;
 c_733889.hdr.mark = gc_color_red;
  c_733889.hdr.grayed = 0;
@@ -28218,8 +26912,7 @@ return_closcall3(data,  __glo_assq_91remove_91key,  &c_733889, ((closureN)self_7
 }
 
 static void __lambda_97(void *data, int argc, object self_733350, object r_731903) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-keys");
-
+  
 closureN_type c_733891;
 c_733891.hdr.mark = gc_color_red;
  c_733891.hdr.grayed = 0;
@@ -28235,8 +26928,7 @@ return_closcall1(data,(closure)&c_733891,  cdr(((closureN)self_733350)->elts[1])
 }
 
 static void __lambda_96(void *data, int argc, object self_733351, object r_731904) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-keys");
-return_closcall3(data,  __glo_assq_91remove_91keys,  ((closureN)self_733351)->elts[0], ((closureN)self_733351)->elts[1], r_731904);; 
+  return_closcall3(data,  __glo_assq_91remove_91keys,  ((closureN)self_733351)->elts[0], ((closureN)self_733351)->elts[1], r_731904);; 
 }
 
 static void __lambda_95(void *data, int argc, closure _,object k_731909, object env_73588, object key_73587) {
@@ -28258,8 +26950,7 @@ return_closcall1(data,(closure)&c_733830,  Cyc_is_cons(env_73588));;
 }
 
 static void __lambda_94(void *data, int argc, object self_733352, object r_731918) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 closureN_type c_733832;
 c_733832.hdr.mark = gc_color_red;
  c_733832.hdr.grayed = 0;
@@ -28276,8 +26967,7 @@ return_closcall2(data,  __glo_not,  &c_733832, r_731918);;
 }
 
 static void __lambda_93(void *data, int argc, object self_733353, object r_731910) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-if( !eq(boolean_f, r_731910) ){ 
+  if( !eq(boolean_f, r_731910) ){ 
   return_closcall1(data,  ((closureN)self_733353)->elts[1],  nil);
 } else { 
   
@@ -28298,8 +26988,7 @@ return_closcall1(data,(closure)&c_733836,  car(((closureN)self_733353)->elts[0])
 }
 
 static void __lambda_92(void *data, int argc, object self_733354, object r_731917) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 closureN_type c_733838;
 c_733838.hdr.mark = gc_color_red;
  c_733838.hdr.grayed = 0;
@@ -28316,8 +27005,7 @@ return_closcall1(data,(closure)&c_733838,  car(r_731917));;
 }
 
 static void __lambda_91(void *data, int argc, object self_733355, object r_731916) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 closureN_type c_733840;
 c_733840.hdr.mark = gc_color_red;
  c_733840.hdr.grayed = 0;
@@ -28334,8 +27022,7 @@ return_closcall1(data,(closure)&c_733840,  Cyc_eq(r_731916, ((closureN)self_7333
 }
 
 static void __lambda_90(void *data, int argc, object self_733356, object r_731911) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-if( !eq(boolean_f, r_731911) ){ 
+  if( !eq(boolean_f, r_731911) ){ 
   
 closureN_type c_733842;
 c_733842.hdr.mark = gc_color_red;
@@ -28368,8 +27055,7 @@ return_closcall1(data,(closure)&c_733850,  car(((closureN)self_733356)->elts[0])
 }
 
 static void __lambda_89(void *data, int argc, object self_733357, object r_731913) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 closureN_type c_733852;
 c_733852.hdr.mark = gc_color_red;
  c_733852.hdr.grayed = 0;
@@ -28386,8 +27072,7 @@ return_closcall1(data,(closure)&c_733852,  cdr(((closureN)self_733357)->elts[0])
 }
 
 static void __lambda_88(void *data, int argc, object self_733358, object r_731915) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 closureN_type c_733854;
 c_733854.hdr.mark = gc_color_red;
  c_733854.hdr.grayed = 0;
@@ -28403,15 +27088,13 @@ return_closcall3(data,  __glo_assq_91remove_91key,  &c_733854, r_731915, ((closu
 }
 
 static void __lambda_87(void *data, int argc, object self_733359, object r_731914) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-
+  
 make_cons(c_733859,((closureN)self_733359)->elts[1], r_731914);
 return_closcall1(data,  ((closureN)self_733359)->elts[0],  &c_733859);; 
 }
 
 static void __lambda_86(void *data, int argc, object self_733360, object r_731912) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
-return_closcall3(data,  __glo_assq_91remove_91key,  ((closureN)self_733360)->elts[0], r_731912, ((closureN)self_733360)->elts[1]);; 
+  return_closcall3(data,  __glo_assq_91remove_91key,  ((closureN)self_733360)->elts[0], r_731912, ((closureN)self_733360)->elts[1]);; 
 }
 
 static void __lambda_85(void *data, int argc, closure _,object k_731921, object list1_73590, object list2_73589) {
@@ -28445,8 +27128,7 @@ return_closcall1(data,(closure)&c_733780,  &c_733793);;
 }
 
 static void __lambda_84(void *data, int argc, object self_733361, object r_731922) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-if( !eq(boolean_f, r_731922) ){ 
+  if( !eq(boolean_f, r_731922) ){ 
   
 closureN_type c_733795;
 c_733795.hdr.mark = gc_color_red;
@@ -28467,8 +27149,7 @@ return_closcall1(data,(closure)&c_733795,  car(((closureN)self_733361)->elts[1])
 }
 
 static void __lambda_83(void *data, int argc, object self_733362, object r_731927) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733797;
 c_733797.hdr.mark = gc_color_red;
  c_733797.hdr.grayed = 0;
@@ -28486,8 +27167,7 @@ return_closcall1(data,(closure)&c_733797,  car(((closureN)self_733362)->elts[2])
 }
 
 static void __lambda_82(void *data, int argc, object self_733363, object r_731928) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733799;
 c_733799.hdr.mark = gc_color_red;
  c_733799.hdr.grayed = 0;
@@ -28504,8 +27184,7 @@ return_closcall3(data,  __glo__list,  &c_733799, ((closureN)self_733363)->elts[3
 }
 
 static void __lambda_81(void *data, int argc, object self_733364, object r_731923) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733801;
 c_733801.hdr.mark = gc_color_red;
  c_733801.hdr.grayed = 0;
@@ -28522,8 +27201,7 @@ return_closcall1(data,(closure)&c_733801,  cdr(((closureN)self_733364)->elts[1])
 }
 
 static void __lambda_80(void *data, int argc, object self_733365, object r_731925) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733803;
 c_733803.hdr.mark = gc_color_red;
  c_733803.hdr.grayed = 0;
@@ -28540,8 +27218,7 @@ return_closcall1(data,(closure)&c_733803,  cdr(((closureN)self_733365)->elts[1])
 }
 
 static void __lambda_79(void *data, int argc, object self_733366, object r_731926) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733805;
 c_733805.hdr.mark = gc_color_red;
  c_733805.hdr.grayed = 0;
@@ -28557,15 +27234,13 @@ return_closcall3(data,  __glo_azip,  &c_733805, ((closureN)self_733366)->elts[2]
 }
 
 static void __lambda_78(void *data, int argc, object self_733367, object r_731924) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 make_cons(c_733810,((closureN)self_733367)->elts[1], r_731924);
 return_closcall1(data,  ((closureN)self_733367)->elts[0],  &c_733810);; 
 }
 
 static void __lambda_77(void *data, int argc, object self_733368, object k_731929) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-
+  
 closureN_type c_733782;
 c_733782.hdr.mark = gc_color_red;
  c_733782.hdr.grayed = 0;
@@ -28581,8 +27256,7 @@ return_closcall1(data,(closure)&c_733782,  Cyc_is_cons(((closureN)self_733368)->
 }
 
 static void __lambda_76(void *data, int argc, object self_733369, object r_731930) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:azip");
-if( !eq(boolean_f, r_731930) ){ 
+  if( !eq(boolean_f, r_731930) ){ 
   return_closcall1(data,  ((closureN)self_733369)->elts[0],  Cyc_is_cons(((closureN)self_733369)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_733369)->elts[0],  boolean_f);}
@@ -28609,8 +27283,7 @@ return_closcall1(data,(closure)&c_733752,  Cyc_is_cons(lst_73592));;
 }
 
 static void __lambda_74(void *data, int argc, object self_733370, object r_731938) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:reduce");
-
+  
 closureN_type c_733754;
 c_733754.hdr.mark = gc_color_red;
  c_733754.hdr.grayed = 0;
@@ -28628,8 +27301,7 @@ return_closcall2(data,  __glo_not,  &c_733754, r_731938);;
 }
 
 static void __lambda_73(void *data, int argc, object self_733371, object r_731934) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:reduce");
-if( !eq(boolean_f, r_731934) ){ 
+  if( !eq(boolean_f, r_731934) ){ 
   return_closcall1(data,  ((closureN)self_733371)->elts[2],  ((closureN)self_733371)->elts[1]);
 } else { 
   
@@ -28651,8 +27323,7 @@ return_closcall1(data,(closure)&c_733759,  cdr(((closureN)self_733371)->elts[3])
 }
 
 static void __lambda_72(void *data, int argc, object self_733372, object r_731935) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:reduce");
-
+  
 closureN_type c_733761;
 c_733761.hdr.mark = gc_color_red;
  c_733761.hdr.grayed = 0;
@@ -28670,8 +27341,7 @@ return_closcall1(data,(closure)&c_733761,  car(((closureN)self_733372)->elts[3])
 }
 
 static void __lambda_71(void *data, int argc, object self_733373, object r_731937) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:reduce");
-
+  
 closureN_type c_733764;
 c_733764.hdr.mark = gc_color_red;
  c_733764.hdr.grayed = 0;
@@ -28688,8 +27358,7 @@ return_closcall3(data,  ((closureN)self_733373)->elts[0],  &c_733764, r_731937, 
 }
 
 static void __lambda_70(void *data, int argc, object self_733374, object r_731936) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:reduce");
-return_closcall4(data,  __glo_reduce,  ((closureN)self_733374)->elts[1], ((closureN)self_733374)->elts[0], ((closureN)self_733374)->elts[2], r_731936);; 
+  return_closcall4(data,  __glo_reduce,  ((closureN)self_733374)->elts[1], ((closureN)self_733374)->elts[0], ((closureN)self_733374)->elts[2], r_731936);; 
 }
 
 static void __lambda_69(void *data, int argc, closure _,object k_731941, object set1_73595, object set2_73594) {
@@ -28711,8 +27380,7 @@ return_closcall1(data,(closure)&c_733726,  Cyc_is_cons(set2_73594));;
 }
 
 static void __lambda_68(void *data, int argc, object self_733375, object r_731946) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:difference");
-
+  
 closureN_type c_733728;
 c_733728.hdr.mark = gc_color_red;
  c_733728.hdr.grayed = 0;
@@ -28729,8 +27397,7 @@ return_closcall2(data,  __glo_not,  &c_733728, r_731946);;
 }
 
 static void __lambda_67(void *data, int argc, object self_733376, object r_731942) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:difference");
-if( !eq(boolean_f, r_731942) ){ 
+  if( !eq(boolean_f, r_731942) ){ 
   return_closcall1(data,  ((closureN)self_733376)->elts[0],  ((closureN)self_733376)->elts[1]);
 } else { 
   
@@ -28751,8 +27418,7 @@ return_closcall1(data,(closure)&c_733733,  car(((closureN)self_733376)->elts[2])
 }
 
 static void __lambda_66(void *data, int argc, object self_733377, object r_731945) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:difference");
-
+  
 closureN_type c_733735;
 c_733735.hdr.mark = gc_color_red;
  c_733735.hdr.grayed = 0;
@@ -28768,8 +27434,7 @@ return_closcall3(data,  __glo_remove,  &c_733735, r_731945, ((closureN)self_7333
 }
 
 static void __lambda_65(void *data, int argc, object self_733378, object r_731943) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:difference");
-
+  
 closureN_type c_733737;
 c_733737.hdr.mark = gc_color_red;
  c_733737.hdr.grayed = 0;
@@ -28785,8 +27450,7 @@ return_closcall1(data,(closure)&c_733737,  cdr(((closureN)self_733378)->elts[1])
 }
 
 static void __lambda_64(void *data, int argc, object self_733379, object r_731944) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:difference");
-return_closcall3(data,  __glo_difference,  ((closureN)self_733379)->elts[0], ((closureN)self_733379)->elts[1], r_731944);; 
+  return_closcall3(data,  __glo_difference,  ((closureN)self_733379)->elts[0], ((closureN)self_733379)->elts[1], r_731944);; 
 }
 
 static void __lambda_63(void *data, int argc, closure _,object k_731949, object set1_73597, object set2_73596) {
@@ -28808,8 +27472,7 @@ return_closcall1(data,(closure)&c_733700,  Cyc_is_cons(set1_73597));;
 }
 
 static void __lambda_62(void *data, int argc, object self_733380, object r_731954) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:union");
-
+  
 closureN_type c_733702;
 c_733702.hdr.mark = gc_color_red;
  c_733702.hdr.grayed = 0;
@@ -28826,8 +27489,7 @@ return_closcall2(data,  __glo_not,  &c_733702, r_731954);;
 }
 
 static void __lambda_61(void *data, int argc, object self_733381, object r_731950) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:union");
-if( !eq(boolean_f, r_731950) ){ 
+  if( !eq(boolean_f, r_731950) ){ 
   return_closcall1(data,  ((closureN)self_733381)->elts[0],  ((closureN)self_733381)->elts[2]);
 } else { 
   
@@ -28848,8 +27510,7 @@ return_closcall1(data,(closure)&c_733707,  car(((closureN)self_733381)->elts[1])
 }
 
 static void __lambda_60(void *data, int argc, object self_733382, object r_731951) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:union");
-
+  
 closureN_type c_733709;
 c_733709.hdr.mark = gc_color_red;
  c_733709.hdr.grayed = 0;
@@ -28866,8 +27527,7 @@ return_closcall1(data,(closure)&c_733709,  cdr(((closureN)self_733382)->elts[1])
 }
 
 static void __lambda_59(void *data, int argc, object self_733383, object r_731953) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:union");
-
+  
 closureN_type c_733711;
 c_733711.hdr.mark = gc_color_red;
  c_733711.hdr.grayed = 0;
@@ -28883,8 +27543,7 @@ return_closcall3(data,  __glo__union,  &c_733711, r_731953, ((closureN)self_7333
 }
 
 static void __lambda_58(void *data, int argc, object self_733384, object r_731952) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:union");
-return_closcall3(data,  __glo_insert,  ((closureN)self_733384)->elts[0], ((closureN)self_733384)->elts[1], r_731952);; 
+  return_closcall3(data,  __glo_insert,  ((closureN)self_733384)->elts[0], ((closureN)self_733384)->elts[1], r_731952);; 
 }
 
 static void __lambda_57(void *data, int argc, closure _,object k_731957, object sym_73599, object S_73598) {
@@ -28906,8 +27565,7 @@ return_closcall1(data,(closure)&c_733657,  Cyc_is_cons(S_73598));;
 }
 
 static void __lambda_56(void *data, int argc, object self_733385, object r_731964) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-
+  
 closureN_type c_733659;
 c_733659.hdr.mark = gc_color_red;
  c_733659.hdr.grayed = 0;
@@ -28924,8 +27582,7 @@ return_closcall2(data,  __glo_not,  &c_733659, r_731964);;
 }
 
 static void __lambda_55(void *data, int argc, object self_733386, object r_731958) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-if( !eq(boolean_f, r_731958) ){ 
+  if( !eq(boolean_f, r_731958) ){ 
   return_closcall1(data,  ((closureN)self_733386)->elts[1],  nil);
 } else { 
   
@@ -28946,8 +27603,7 @@ return_closcall1(data,(closure)&c_733663,  car(((closureN)self_733386)->elts[0])
 }
 
 static void __lambda_54(void *data, int argc, object self_733387, object r_731963) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-
+  
 closureN_type c_733665;
 c_733665.hdr.mark = gc_color_red;
  c_733665.hdr.grayed = 0;
@@ -28964,8 +27620,7 @@ return_closcall1(data,(closure)&c_733665,  Cyc_eq(r_731963, ((closureN)self_7333
 }
 
 static void __lambda_53(void *data, int argc, object self_733388, object r_731959) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-if( !eq(boolean_f, r_731959) ){ 
+  if( !eq(boolean_f, r_731959) ){ 
   return_closcall1(data,  ((closureN)self_733388)->elts[1],  cdr(((closureN)self_733388)->elts[0]));
 } else { 
   
@@ -28986,8 +27641,7 @@ return_closcall1(data,(closure)&c_733672,  car(((closureN)self_733388)->elts[0])
 }
 
 static void __lambda_52(void *data, int argc, object self_733389, object r_731960) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-
+  
 closureN_type c_733674;
 c_733674.hdr.mark = gc_color_red;
  c_733674.hdr.grayed = 0;
@@ -29004,8 +27658,7 @@ return_closcall1(data,(closure)&c_733674,  cdr(((closureN)self_733389)->elts[0])
 }
 
 static void __lambda_51(void *data, int argc, object self_733390, object r_731962) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-
+  
 closureN_type c_733676;
 c_733676.hdr.mark = gc_color_red;
  c_733676.hdr.grayed = 0;
@@ -29021,8 +27674,7 @@ return_closcall3(data,  __glo_remove,  &c_733676, ((closureN)self_733390)->elts[
 }
 
 static void __lambda_50(void *data, int argc, object self_733391, object r_731961) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:remove");
-
+  
 make_cons(c_733681,((closureN)self_733391)->elts[1], r_731961);
 return_closcall1(data,  ((closureN)self_733391)->elts[0],  &c_733681);; 
 }
@@ -29046,8 +27698,7 @@ return_closcall1(data,(closure)&c_733594,  Cyc_is_cons(S_73600));;
 }
 
 static void __lambda_48(void *data, int argc, object self_733392, object r_731976) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733596;
 c_733596.hdr.mark = gc_color_red;
  c_733596.hdr.grayed = 0;
@@ -29064,8 +27715,7 @@ return_closcall2(data,  __glo_not,  &c_733596, r_731976);;
 }
 
 static void __lambda_47(void *data, int argc, object self_733393, object r_731968) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-if( !eq(boolean_f, r_731968) ){ 
+  if( !eq(boolean_f, r_731968) ){ 
   return_closcall2(data,  __glo__list,  ((closureN)self_733393)->elts[1], ((closureN)self_733393)->elts[2]);
 } else { 
   
@@ -29086,8 +27736,7 @@ return_closcall1(data,(closure)&c_733601,  car(((closureN)self_733393)->elts[0])
 }
 
 static void __lambda_46(void *data, int argc, object self_733394, object r_731975) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733603;
 c_733603.hdr.mark = gc_color_red;
  c_733603.hdr.grayed = 0;
@@ -29104,8 +27753,7 @@ return_closcall1(data,(closure)&c_733603,  Cyc_eq(((closureN)self_733394)->elts[
 }
 
 static void __lambda_45(void *data, int argc, object self_733395, object r_731969) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-if( !eq(boolean_f, r_731969) ){ 
+  if( !eq(boolean_f, r_731969) ){ 
   
 closureN_type c_733605;
 c_733605.hdr.mark = gc_color_red;
@@ -29138,8 +27786,7 @@ return_closcall1(data,(closure)&c_733610,  car(((closureN)self_733395)->elts[0])
 }
 
 static void __lambda_44(void *data, int argc, object self_733396, object r_731974) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733612;
 c_733612.hdr.mark = gc_color_red;
  c_733612.hdr.grayed = 0;
@@ -29156,8 +27803,7 @@ return_closcall3(data,  __glo_symbol_121_127,  &c_733612, ((closureN)self_733396
 }
 
 static void __lambda_43(void *data, int argc, object self_733397, object r_731970) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-if( !eq(boolean_f, r_731970) ){ 
+  if( !eq(boolean_f, r_731970) ){ 
   
 closureN_type c_733614;
 c_733614.hdr.mark = gc_color_red;
@@ -29191,8 +27837,7 @@ return_closcall0(data,(closure)&c_733623);}
 }
 
 static void __lambda_42(void *data, int argc, object self_733398) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733625;
 c_733625.hdr.mark = gc_color_red;
  c_733625.hdr.grayed = 0;
@@ -29209,8 +27854,7 @@ return_closcall1(data,(closure)&c_733625,  car(((closureN)self_733398)->elts[0])
 }
 
 static void __lambda_41(void *data, int argc, object self_733399, object r_731971) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733627;
 c_733627.hdr.mark = gc_color_red;
  c_733627.hdr.grayed = 0;
@@ -29227,8 +27871,7 @@ return_closcall1(data,(closure)&c_733627,  cdr(((closureN)self_733399)->elts[0])
 }
 
 static void __lambda_40(void *data, int argc, object self_733400, object r_731973) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 closureN_type c_733629;
 c_733629.hdr.mark = gc_color_red;
  c_733629.hdr.grayed = 0;
@@ -29244,22 +27887,19 @@ return_closcall3(data,  __glo_insert,  &c_733629, ((closureN)self_733400)->elts[
 }
 
 static void __lambda_39(void *data, int argc, object self_733401, object r_731972) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 make_cons(c_733634,((closureN)self_733401)->elts[1], r_731972);
 return_closcall1(data,  ((closureN)self_733401)->elts[0],  &c_733634);; 
 }
 
 static void __lambda_38(void *data, int argc, object self_733402) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-
+  
 make_cons(c_733619,((closureN)self_733402)->elts[2], ((closureN)self_733402)->elts[0]);
 return_closcall1(data,  ((closureN)self_733402)->elts[1],  &c_733619);; 
 }
 
 static void __lambda_37(void *data, int argc, object self_733403) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:insert");
-return_closcall1(data,  ((closureN)self_733403)->elts[1],  ((closureN)self_733403)->elts[0]);; 
+  return_closcall1(data,  ((closureN)self_733403)->elts[1],  ((closureN)self_733403)->elts[0]);; 
 }
 
 static void __lambda_36(void *data, int argc, closure _,object k_731979, object sym1_73603, object sym2_73602) {
@@ -29282,8 +27922,7 @@ return_closcall1(data,(closure)&c_733579,  c_733591);;
 }
 
 static void __lambda_35(void *data, int argc, object self_733404, object r_731980) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:symbol<?");
-
+  
 closureN_type c_733581;
 c_733581.hdr.mark = gc_color_red;
  c_733581.hdr.grayed = 0;
@@ -29301,8 +27940,7 @@ return_closcall1(data,(closure)&c_733581,  c_733587);;
 }
 
 static void __lambda_34(void *data, int argc, object self_733405, object r_731981) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:symbol<?");
-return_closcall3(data,  __glo_string_121_127,  ((closureN)self_733405)->elts[0], ((closureN)self_733405)->elts[1], r_731981);; 
+  return_closcall3(data,  __glo_string_121_127,  ((closureN)self_733405)->elts[0], ((closureN)self_733405)->elts[1], r_731981);; 
 }
 
 static void __lambda_33(void *data, int argc, closure _,object k_731984) {
@@ -29333,8 +27971,7 @@ return_closcall1(data,(closure)&c_733525,  Cyc_is_null(lst_73604));;
 }
 
 static void __lambda_31(void *data, int argc, object self_733406, object r_731988) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-if( !eq(boolean_f, r_731988) ){ 
+  if( !eq(boolean_f, r_731988) ){ 
   
 make_int(c_733528, -1);
 return_closcall1(data,  ((closureN)self_733406)->elts[1],  &c_733528);
@@ -29357,8 +27994,7 @@ return_closcall1(data,(closure)&c_733530,  car(((closureN)self_733406)->elts[2])
 }
 
 static void __lambda_30(void *data, int argc, object self_733407, object r_731995) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-
+  
 closureN_type c_733532;
 c_733532.hdr.mark = gc_color_red;
  c_733532.hdr.grayed = 0;
@@ -29375,8 +28011,7 @@ return_closcall1(data,(closure)&c_733532,  Cyc_eq(r_731995, ((closureN)self_7334
 }
 
 static void __lambda_29(void *data, int argc, object self_733408, object r_731989) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-if( !eq(boolean_f, r_731989) ){ 
+  if( !eq(boolean_f, r_731989) ){ 
   
 make_int(c_733535, 0);
 return_closcall1(data,  ((closureN)self_733408)->elts[1],  &c_733535);
@@ -29399,8 +28034,7 @@ return_closcall1(data,(closure)&c_733537,  cdr(((closureN)self_733408)->elts[2])
 }
 
 static void __lambda_28(void *data, int argc, object self_733409, object r_731994) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-
+  
 closureN_type c_733539;
 c_733539.hdr.mark = gc_color_red;
  c_733539.hdr.grayed = 0;
@@ -29417,8 +28051,7 @@ return_closcall3(data,  __glo_list_91index,  &c_733539, ((closureN)self_733409)-
 }
 
 static void __lambda_27(void *data, int argc, object self_733410, object r_731993) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-
+  
 closureN_type c_733541;
 c_733541.hdr.mark = gc_color_red;
  c_733541.hdr.grayed = 0;
@@ -29437,8 +28070,7 @@ return_closcall1(data,(closure)&c_733541,  __num_eq(data, r_731993, &c_733561));
 }
 
 static void __lambda_26(void *data, int argc, object self_733411, object r_731990) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-if( !eq(boolean_f, r_731990) ){ 
+  if( !eq(boolean_f, r_731990) ){ 
   
 make_int(c_733544, -1);
 return_closcall1(data,  ((closureN)self_733411)->elts[1],  &c_733544);
@@ -29460,8 +28092,7 @@ return_closcall1(data,(closure)&c_733546,  cdr(((closureN)self_733411)->elts[2])
 }
 
 static void __lambda_25(void *data, int argc, object self_733412, object r_731992) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-
+  
 closureN_type c_733548;
 c_733548.hdr.mark = gc_color_red;
  c_733548.hdr.grayed = 0;
@@ -29476,8 +28107,7 @@ return_closcall3(data,  __glo_list_91index,  &c_733548, ((closureN)self_733412)-
 }
 
 static void __lambda_24(void *data, int argc, object self_733413, object r_731991) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:list-index");
-
+  
 make_int(c_733554, 1);
 
 common_type c_733553 = Cyc_sum(data,2,&c_733554, r_731991);
@@ -29502,8 +28132,7 @@ return_closcall2(data,  __glo_string_91_125list,  &c_733488, filename_73606);;
 }
 
 static void __lambda_22(void *data, int argc, object self_733414, object r_732004) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 closureN_type c_733490;
 c_733490.hdr.mark = gc_color_red;
  c_733490.hdr.grayed = 0;
@@ -29519,8 +28148,7 @@ return_closcall2(data,  __glo_reverse,  &c_733490, r_732004);;
 }
 
 static void __lambda_21(void *data, int argc, object self_733415, object r_732003) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 closureN_type c_733492;
 c_733492.hdr.mark = gc_color_red;
  c_733492.hdr.grayed = 0;
@@ -29536,8 +28164,7 @@ return_closcall3(data,  __glo_list_91index,  &c_733492, obj_char2obj(46), r_7320
 }
 
 static void __lambda_20(void *data, int argc, object self_733416, object r_731999) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 closureN_type c_733494;
 c_733494.hdr.mark = gc_color_red;
  c_733494.hdr.grayed = 0;
@@ -29553,8 +28180,7 @@ return_closcall1(data,(closure)&c_733494,  r_731999);;
 }
 
 static void __lambda_19(void *data, int argc, object self_733417, object pos_73607) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 closureN_type c_733496;
 c_733496.hdr.mark = gc_color_red;
  c_733496.hdr.grayed = 0;
@@ -29573,8 +28199,7 @@ return_closcall1(data,(closure)&c_733496,  __num_eq(data, pos_73607, &c_733522))
 }
 
 static void __lambda_18(void *data, int argc, object self_733418, object r_732000) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-if( !eq(boolean_f, r_732000) ){ 
+  if( !eq(boolean_f, r_732000) ){ 
   return_closcall1(data,  ((closureN)self_733418)->elts[1],  ((closureN)self_733418)->elts[0]);
 } else { 
   
@@ -29597,8 +28222,7 @@ return_closcall1(data,(closure)&c_733501,  &c_733518);}
 }
 
 static void __lambda_17(void *data, int argc, object self_733419, object r_732002) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 closureN_type c_733503;
 c_733503.hdr.mark = gc_color_red;
  c_733503.hdr.grayed = 0;
@@ -29618,8 +28242,7 @@ return_closcall1(data,(closure)&c_733503,  &c_733513);;
 }
 
 static void __lambda_16(void *data, int argc, object self_733420, object r_732001) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:basename");
-
+  
 make_int(c_733510, 0);
 
 object c_733508 = Cyc_substring(data,  ((closureN)self_733420)->elts[1],((closureN)self_733420)->elts[0], &c_733510, r_732001);
@@ -29643,8 +28266,7 @@ return_closcall2(data,  __glo_error,  &c_733480, msg_73608);;
 }
 
 static void __lambda_14(void *data, int argc, object self_733421, object r_732008) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:cyc:error");
-
+  
 make_int(c_733485, 1);
 return_closcall1(data,  ((closureN)self_733421)->elts[0],  __halt(&c_733485));; 
 }
@@ -29705,8 +28327,7 @@ return_closcall1(data,(closure)&c_733438,  __num_gte(data, __glo__85trace_91leve
 }
 
 static void __lambda_8(void *data, int argc, object self_733422, object r_732024) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-if( !eq(boolean_f, r_732024) ){ 
+  if( !eq(boolean_f, r_732024) ){ 
   
 closureN_type c_733440;
 c_733440.hdr.mark = gc_color_red;
@@ -29728,8 +28349,7 @@ return_closcall0(data,(closure)&c_733440);
 }
 
 static void __lambda_7(void *data, int argc, object self_733423) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-
+  
 closureN_type c_733442;
 c_733442.hdr.mark = gc_color_red;
  c_733442.hdr.grayed = 0;
@@ -29749,8 +28369,7 @@ return_closcall2(data,  __glo_display,  &c_733442, &c_733457);;
 }
 
 static void __lambda_6(void *data, int argc, object self_733424, object r_732025) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-
+  
 closureN_type c_733444;
 c_733444.hdr.mark = gc_color_red;
  c_733444.hdr.grayed = 0;
@@ -29768,8 +28387,7 @@ return_closcall1(data,  __glo_newline,  &c_733444);;
 }
 
 static void __lambda_5(void *data, int argc, object self_733425, object r_732026) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-
+  
 closureN_type c_733446;
 c_733446.hdr.mark = gc_color_red;
  c_733446.hdr.grayed = 0;
@@ -29786,8 +28404,7 @@ return_closcall2(data,  __glo_display,  &c_733446, ((closureN)self_733425)->elts
 }
 
 static void __lambda_4(void *data, int argc, object self_733426, object r_732027) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-
+  
 closureN_type c_733449;
 c_733449.hdr.mark = gc_color_red;
  c_733449.hdr.grayed = 0;
@@ -29802,8 +28419,7 @@ return_closcall2(data,  ((closureN)self_733426)->elts[2],  &c_733449, ((closureN
 }
 
 static void __lambda_3(void *data, int argc, object self_733427, object r_732028) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-
+  
 closureN_type c_733451;
 c_733451.hdr.mark = gc_color_red;
  c_733451.hdr.grayed = 0;
@@ -29820,8 +28436,7 @@ return_closcall2(data,  __glo_display,  &c_733451, &c_733454);;
 }
 
 static void __lambda_2(void *data, int argc, object self_733428, object r_732029) {
-  Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace");
-return_closcall1(data,  __glo_newline,  ((closureN)self_733428)->elts[0]);; 
+  return_closcall1(data,  __glo_newline,  ((closureN)self_733428)->elts[0]);; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_732036) {

@@ -551,8 +551,7 @@ return_closcall1(data,(closure)&c_731807,  &c_731816);;
 }
 
 static void __lambda_270(void *data, int argc, object self_73377, object r_73118) {
-  Cyc_st_add(data, "srfi/9.sld:lib-init:srfi9");
-
+  
 closureN_type c_731809;
 c_731809.hdr.mark = gc_color_red;
  c_731809.hdr.grayed = 0;
@@ -567,8 +566,7 @@ return_closcall1(data,(closure)&c_731809,  quote_record_91marker);;
 }
 
 static void __lambda_269(void *data, int argc, object self_73378, object r_73120) {
-  Cyc_st_add(data, "srfi/9.sld:lib-init:srfi9");
-
+  
 closureN_type c_731811;
 c_731811.hdr.mark = gc_color_red;
  c_731811.hdr.grayed = 0;
@@ -583,8 +581,7 @@ return_closcall2(data,  __glo__list,  &c_731811, r_73120);;
 }
 
 static void __lambda_268(void *data, int argc, object self_73379, object r_73119) {
-  Cyc_st_add(data, "srfi/9.sld:lib-init:srfi9");
-return_closcall1(data,  ((closureN)self_73379)->elts[0],  global_set(__glo_record_91marker, r_73119));; 
+  return_closcall1(data,  ((closureN)self_73379)->elts[0],  global_set(__glo_record_91marker, r_73119));; 
 }
 
 static void __lambda_267(void *data, int argc, closure _,object k_73123, object expr_7361, object rename_7360, object compare_7359) {
@@ -606,8 +603,7 @@ return_closcall1(data,(closure)&c_73842,  cadr(expr_7361));;
 }
 
 static void __lambda_266(void *data, int argc, object self_73380, object r_73124) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73844;
 c_73844.hdr.mark = gc_color_red;
  c_73844.hdr.grayed = 0;
@@ -624,8 +620,7 @@ return_closcall1(data,(closure)&c_73844,  r_73124);;
 }
 
 static void __lambda_265(void *data, int argc, object self_73381, object name_87parent_7362) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73846;
 c_73846.hdr.mark = gc_color_red;
  c_73846.hdr.grayed = 0;
@@ -654,8 +649,7 @@ return_closcall1(data,(closure)&c_73846,  &c_73860);;
 }
 
 static void __lambda_264(void *data, int argc, object self_73382, object r_73125) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73862;
 c_73862.hdr.mark = gc_color_red;
  c_73862.hdr.grayed = 0;
@@ -673,8 +667,7 @@ return_closcall1(data,(closure)&c_73862,  r_73125);;
 }
 
 static void __lambda_263(void *data, int argc, object self_73383, object name_7363) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73864;
 c_73864.hdr.mark = gc_color_red;
  c_73864.hdr.grayed = 0;
@@ -703,8 +696,7 @@ return_closcall1(data,(closure)&c_73864,  &c_73877);;
 }
 
 static void __lambda_262(void *data, int argc, object self_73384, object r_73126) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73879;
 c_73879.hdr.mark = gc_color_red;
  c_73879.hdr.grayed = 0;
@@ -722,8 +714,7 @@ return_closcall1(data,(closure)&c_73879,  r_73126);;
 }
 
 static void __lambda_261(void *data, int argc, object self_73385, object parent_7364) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73881;
 c_73881.hdr.mark = gc_color_red;
  c_73881.hdr.grayed = 0;
@@ -744,8 +735,7 @@ return_closcall1(data,(closure)&c_73881,  c_731801);;
 }
 
 static void __lambda_260(void *data, int argc, object self_73386, object r_73127) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73883;
 c_73883.hdr.mark = gc_color_red;
  c_73883.hdr.grayed = 0;
@@ -764,8 +754,7 @@ return_closcall1(data,(closure)&c_73883,  r_73127);;
 }
 
 static void __lambda_259(void *data, int argc, object self_73387, object name_91str_7365) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73885;
 c_73885.hdr.mark = gc_color_red;
  c_73885.hdr.grayed = 0;
@@ -783,8 +772,7 @@ return_closcall1(data,(closure)&c_73885,  cddr(((closureN)self_73387)->elts[0]))
 }
 
 static void __lambda_258(void *data, int argc, object self_73388, object r_73128) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73887;
 c_73887.hdr.mark = gc_color_red;
  c_73887.hdr.grayed = 0;
@@ -802,8 +790,7 @@ return_closcall1(data,(closure)&c_73887,  r_73128);;
 }
 
 static void __lambda_257(void *data, int argc, object self_73389, object procs_7366) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73889;
 c_73889.hdr.mark = gc_color_red;
  c_73889.hdr.grayed = 0;
@@ -822,8 +809,7 @@ return_closcall1(data,(closure)&c_73889,  caar(procs_7366));;
 }
 
 static void __lambda_256(void *data, int argc, object self_73390, object r_73129) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73891;
 c_73891.hdr.mark = gc_color_red;
  c_73891.hdr.grayed = 0;
@@ -842,8 +828,7 @@ return_closcall1(data,(closure)&c_73891,  r_73129);;
 }
 
 static void __lambda_255(void *data, int argc, object self_73391, object make_7367) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73893;
 c_73893.hdr.mark = gc_color_red;
  c_73893.hdr.grayed = 0;
@@ -863,8 +848,7 @@ return_closcall1(data,(closure)&c_73893,  cdar(((closureN)self_73391)->elts[3]))
 }
 
 static void __lambda_254(void *data, int argc, object self_73392, object r_73130) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73895;
 c_73895.hdr.mark = gc_color_red;
  c_73895.hdr.grayed = 0;
@@ -884,8 +868,7 @@ return_closcall1(data,(closure)&c_73895,  r_73130);;
 }
 
 static void __lambda_253(void *data, int argc, object self_73393, object make_91fields_7368) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73897;
 c_73897.hdr.mark = gc_color_red;
  c_73897.hdr.grayed = 0;
@@ -906,8 +889,7 @@ return_closcall1(data,(closure)&c_73897,  cadr(((closureN)self_73393)->elts[4]))
 }
 
 static void __lambda_252(void *data, int argc, object self_73394, object r_73131) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73899;
 c_73899.hdr.mark = gc_color_red;
  c_73899.hdr.grayed = 0;
@@ -928,8 +910,7 @@ return_closcall1(data,(closure)&c_73899,  r_73131);;
 }
 
 static void __lambda_251(void *data, int argc, object self_73395, object pred_7369) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73901;
 c_73901.hdr.mark = gc_color_red;
  c_73901.hdr.grayed = 0;
@@ -950,8 +931,7 @@ return_closcall1(data,(closure)&c_73901,  cddr(((closureN)self_73395)->elts[5]))
 }
 
 static void __lambda_250(void *data, int argc, object self_73396, object r_73132) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73903;
 c_73903.hdr.mark = gc_color_red;
  c_73903.hdr.grayed = 0;
@@ -972,8 +952,7 @@ return_closcall1(data,(closure)&c_73903,  r_73132);;
 }
 
 static void __lambda_249(void *data, int argc, object self_73397, object fields_7370) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73905;
 c_73905.hdr.mark = gc_color_red;
  c_73905.hdr.grayed = 0;
@@ -995,8 +974,7 @@ return_closcall1(data,(closure)&c_73905,  quote_define);;
 }
 
 static void __lambda_248(void *data, int argc, object self_73398, object r_73319) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73908;
 c_73908.hdr.mark = gc_color_red;
  c_73908.hdr.grayed = 0;
@@ -1018,8 +996,7 @@ return_closcall2(data,  ((closureN)self_73398)->elts[7],  &c_73908, r_73319);;
 }
 
 static void __lambda_247(void *data, int argc, object self_73399, object r_73133) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73910;
 c_73910.hdr.mark = gc_color_red;
  c_73910.hdr.grayed = 0;
@@ -1041,8 +1018,7 @@ return_closcall1(data,(closure)&c_73910,  r_73133);;
 }
 
 static void __lambda_246(void *data, int argc, object self_73400, object _191define_7371) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73912;
 c_73912.hdr.mark = gc_color_red;
  c_73912.hdr.grayed = 0;
@@ -1065,8 +1041,7 @@ return_closcall1(data,(closure)&c_73912,  quote_lambda);;
 }
 
 static void __lambda_245(void *data, int argc, object self_73401, object r_73318) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73915;
 c_73915.hdr.mark = gc_color_red;
  c_73915.hdr.grayed = 0;
@@ -1089,8 +1064,7 @@ return_closcall2(data,  ((closureN)self_73401)->elts[8],  &c_73915, r_73318);;
 }
 
 static void __lambda_244(void *data, int argc, object self_73402, object r_73134) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73917;
 c_73917.hdr.mark = gc_color_red;
  c_73917.hdr.grayed = 0;
@@ -1113,8 +1087,7 @@ return_closcall1(data,(closure)&c_73917,  r_73134);;
 }
 
 static void __lambda_243(void *data, int argc, object self_73403, object _191lambda_7372) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73919;
 c_73919.hdr.mark = gc_color_red;
  c_73919.hdr.grayed = 0;
@@ -1138,8 +1111,7 @@ return_closcall1(data,(closure)&c_73919,  quote_let);;
 }
 
 static void __lambda_242(void *data, int argc, object self_73404, object r_73317) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73922;
 c_73922.hdr.mark = gc_color_red;
  c_73922.hdr.grayed = 0;
@@ -1163,8 +1135,7 @@ return_closcall2(data,  ((closureN)self_73404)->elts[9],  &c_73922, r_73317);;
 }
 
 static void __lambda_241(void *data, int argc, object self_73405, object r_73135) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73924;
 c_73924.hdr.mark = gc_color_red;
  c_73924.hdr.grayed = 0;
@@ -1188,8 +1159,7 @@ return_closcall1(data,(closure)&c_73924,  r_73135);;
 }
 
 static void __lambda_240(void *data, int argc, object self_73406, object _191let_7373) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73926;
 c_73926.hdr.mark = gc_color_red;
  c_73926.hdr.grayed = 0;
@@ -1214,8 +1184,7 @@ return_closcall1(data,(closure)&c_73926,  quote_register_91simple_91type);;
 }
 
 static void __lambda_239(void *data, int argc, object self_73407, object r_73316) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73929;
 c_73929.hdr.mark = gc_color_red;
  c_73929.hdr.grayed = 0;
@@ -1240,8 +1209,7 @@ return_closcall2(data,  ((closureN)self_73407)->elts[10],  &c_73929, r_73316);;
 }
 
 static void __lambda_238(void *data, int argc, object self_73408, object r_73136) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73931;
 c_73931.hdr.mark = gc_color_red;
  c_73931.hdr.grayed = 0;
@@ -1266,8 +1234,7 @@ return_closcall1(data,(closure)&c_73931,  r_73136);;
 }
 
 static void __lambda_237(void *data, int argc, object self_73409, object _191register_7374) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73933;
 c_73933.hdr.mark = gc_color_red;
  c_73933.hdr.grayed = 0;
@@ -1293,8 +1260,7 @@ return_closcall1(data,(closure)&c_73933,  quote_slot_91set_67);;
 }
 
 static void __lambda_236(void *data, int argc, object self_73410, object r_73315) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73936;
 c_73936.hdr.mark = gc_color_red;
  c_73936.hdr.grayed = 0;
@@ -1320,8 +1286,7 @@ return_closcall2(data,  ((closureN)self_73410)->elts[11],  &c_73936, r_73315);;
 }
 
 static void __lambda_235(void *data, int argc, object self_73411, object r_73137) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73938;
 c_73938.hdr.mark = gc_color_red;
  c_73938.hdr.grayed = 0;
@@ -1347,8 +1312,7 @@ return_closcall1(data,(closure)&c_73938,  r_73137);;
 }
 
 static void __lambda_234(void *data, int argc, object self_73412, object _191slot_91set_67_7375) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73940;
 c_73940.hdr.mark = gc_color_red;
  c_73940.hdr.grayed = 0;
@@ -1375,8 +1339,7 @@ return_closcall1(data,(closure)&c_73940,  quote_type_91slot_91offset);;
 }
 
 static void __lambda_233(void *data, int argc, object self_73413, object r_73314) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73943;
 c_73943.hdr.mark = gc_color_red;
  c_73943.hdr.grayed = 0;
@@ -1403,8 +1366,7 @@ return_closcall2(data,  ((closureN)self_73413)->elts[12],  &c_73943, r_73314);;
 }
 
 static void __lambda_232(void *data, int argc, object self_73414, object r_73138) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73945;
 c_73945.hdr.mark = gc_color_red;
  c_73945.hdr.grayed = 0;
@@ -1431,8 +1393,7 @@ return_closcall1(data,(closure)&c_73945,  r_73138);;
 }
 
 static void __lambda_231(void *data, int argc, object self_73415, object _191type_191slot_191offset_7376) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73947;
 c_73947.hdr.mark = gc_color_red;
  c_73947.hdr.grayed = 0;
@@ -1460,8 +1421,7 @@ return_closcall0(data,(closure)&c_73947);;
 }
 
 static void __lambda_230(void *data, int argc, object self_73416) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73949;
 c_73949.hdr.mark = gc_color_red;
  c_73949.hdr.grayed = 0;
@@ -1501,8 +1461,7 @@ return_closcall1(data,(closure)&c_73949,  &c_73962);;
 }
 
 static void __lambda_229(void *data, int argc, object self_73417, object r_73139) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73964;
 c_73964.hdr.mark = gc_color_red;
  c_73964.hdr.grayed = 0;
@@ -1530,8 +1489,7 @@ return_closcall1(data,(closure)&c_73964,  quote_begin);;
 }
 
 static void __lambda_228(void *data, int argc, object self_73418, object r_73311) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73967;
 c_73967.hdr.mark = gc_color_red;
  c_73967.hdr.grayed = 0;
@@ -1559,8 +1517,7 @@ return_closcall2(data,  ((closureN)self_73418)->elts[13],  &c_73967, r_73311);;
 }
 
 static void __lambda_227(void *data, int argc, object self_73419, object r_73140) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73969;
 c_73969.hdr.mark = gc_color_red;
  c_73969.hdr.grayed = 0;
@@ -1589,8 +1546,7 @@ return_closcall1(data,(closure)&c_73969,  quote_quote);;
 }
 
 static void __lambda_226(void *data, int argc, object self_73420, object r_73307) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73971;
 c_73971.hdr.mark = gc_color_red;
  c_73971.hdr.grayed = 0;
@@ -1620,8 +1576,7 @@ return_closcall3(data,  __glo_map,  &c_73971, primitive_car, ((closureN)self_734
 }
 
 static void __lambda_225(void *data, int argc, object self_73421, object r_73309) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73973;
 c_73973.hdr.mark = gc_color_red;
  c_73973.hdr.grayed = 0;
@@ -1652,8 +1607,7 @@ return_closcall1(data,(closure)&c_73973,  nil);;
 }
 
 static void __lambda_224(void *data, int argc, object self_73422, object r_73310) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73975;
 c_73975.hdr.mark = gc_color_red;
  c_73975.hdr.grayed = 0;
@@ -1685,8 +1639,7 @@ return_closcall1(data,(closure)&c_73975,  &c_731782);;
 }
 
 static void __lambda_223(void *data, int argc, object self_73423, object r_73308) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73977;
 c_73977.hdr.mark = gc_color_red;
  c_73977.hdr.grayed = 0;
@@ -1717,8 +1670,7 @@ return_closcall1(data,(closure)&c_73977,  &c_731778);;
 }
 
 static void __lambda_222(void *data, int argc, object self_73424, object r_73305) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73979;
 c_73979.hdr.mark = gc_color_red;
  c_73979.hdr.grayed = 0;
@@ -1748,8 +1700,7 @@ return_closcall1(data,(closure)&c_73979,  nil);;
 }
 
 static void __lambda_221(void *data, int argc, object self_73425, object r_73306) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73981;
 c_73981.hdr.mark = gc_color_red;
  c_73981.hdr.grayed = 0;
@@ -1780,8 +1731,7 @@ return_closcall1(data,(closure)&c_73981,  &c_731774);;
 }
 
 static void __lambda_220(void *data, int argc, object self_73426, object r_73304) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73983;
 c_73983.hdr.mark = gc_color_red;
  c_73983.hdr.grayed = 0;
@@ -1811,8 +1761,7 @@ return_closcall1(data,(closure)&c_73983,  &c_731770);;
 }
 
 static void __lambda_219(void *data, int argc, object self_73427, object r_73303) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73985;
 c_73985.hdr.mark = gc_color_red;
  c_73985.hdr.grayed = 0;
@@ -1842,8 +1791,7 @@ return_closcall1(data,(closure)&c_73985,  &c_731766);;
 }
 
 static void __lambda_218(void *data, int argc, object self_73428, object r_73302) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73987;
 c_73987.hdr.mark = gc_color_red;
  c_73987.hdr.grayed = 0;
@@ -1872,8 +1820,7 @@ return_closcall1(data,(closure)&c_73987,  &c_731762);;
 }
 
 static void __lambda_217(void *data, int argc, object self_73429, object r_73300) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73989;
 c_73989.hdr.mark = gc_color_red;
  c_73989.hdr.grayed = 0;
@@ -1901,8 +1848,7 @@ return_closcall1(data,(closure)&c_73989,  nil);;
 }
 
 static void __lambda_216(void *data, int argc, object self_73430, object r_73301) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73991;
 c_73991.hdr.mark = gc_color_red;
  c_73991.hdr.grayed = 0;
@@ -1931,8 +1877,7 @@ return_closcall1(data,(closure)&c_73991,  &c_731758);;
 }
 
 static void __lambda_215(void *data, int argc, object self_73431, object r_73299) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73993;
 c_73993.hdr.mark = gc_color_red;
  c_73993.hdr.grayed = 0;
@@ -1961,8 +1906,7 @@ return_closcall1(data,(closure)&c_73993,  &c_731754);;
 }
 
 static void __lambda_214(void *data, int argc, object self_73432, object r_73298) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73995;
 c_73995.hdr.mark = gc_color_red;
  c_73995.hdr.grayed = 0;
@@ -1991,8 +1935,7 @@ return_closcall1(data,(closure)&c_73995,  &c_731750);;
 }
 
 static void __lambda_213(void *data, int argc, object self_73433, object r_73142) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73997;
 c_73997.hdr.mark = gc_color_red;
  c_73997.hdr.grayed = 0;
@@ -2020,8 +1963,7 @@ return_closcall1(data,(closure)&c_73997,  quote_make_91type_91predicate);;
 }
 
 static void __lambda_212(void *data, int argc, object self_73434, object r_73297) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731000;
 c_731000.hdr.mark = gc_color_red;
  c_731000.hdr.grayed = 0;
@@ -2049,8 +1991,7 @@ return_closcall2(data,  ((closureN)self_73434)->elts[13],  &c_731000, r_73297);;
 }
 
 static void __lambda_211(void *data, int argc, object self_73435, object r_73293) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731002;
 c_731002.hdr.mark = gc_color_red;
  c_731002.hdr.grayed = 0;
@@ -2079,8 +2020,7 @@ return_closcall1(data,(closure)&c_731002,  nil);;
 }
 
 static void __lambda_210(void *data, int argc, object self_73436, object r_73296) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731004;
 c_731004.hdr.mark = gc_color_red;
  c_731004.hdr.grayed = 0;
@@ -2111,8 +2051,7 @@ return_closcall1(data,(closure)&c_731004,  &c_731746);;
 }
 
 static void __lambda_209(void *data, int argc, object self_73437, object r_73295) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731006;
 c_731006.hdr.mark = gc_color_red;
  c_731006.hdr.grayed = 0;
@@ -2143,8 +2082,7 @@ return_closcall1(data,(closure)&c_731006,  &c_731742);;
 }
 
 static void __lambda_208(void *data, int argc, object self_73438, object r_73294) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731008;
 c_731008.hdr.mark = gc_color_red;
  c_731008.hdr.grayed = 0;
@@ -2174,8 +2112,7 @@ return_closcall1(data,(closure)&c_731008,  &c_731738);;
 }
 
 static void __lambda_207(void *data, int argc, object self_73439, object r_73291) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731010;
 c_731010.hdr.mark = gc_color_red;
  c_731010.hdr.grayed = 0;
@@ -2204,8 +2141,7 @@ return_closcall1(data,(closure)&c_731010,  nil);;
 }
 
 static void __lambda_206(void *data, int argc, object self_73440, object r_73292) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731012;
 c_731012.hdr.mark = gc_color_red;
  c_731012.hdr.grayed = 0;
@@ -2235,8 +2171,7 @@ return_closcall1(data,(closure)&c_731012,  &c_731734);;
 }
 
 static void __lambda_205(void *data, int argc, object self_73441, object r_73290) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731014;
 c_731014.hdr.mark = gc_color_red;
  c_731014.hdr.grayed = 0;
@@ -2265,8 +2200,7 @@ return_closcall1(data,(closure)&c_731014,  &c_731730);;
 }
 
 static void __lambda_204(void *data, int argc, object self_73442, object r_73289) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731016;
 c_731016.hdr.mark = gc_color_red;
  c_731016.hdr.grayed = 0;
@@ -2295,8 +2229,7 @@ return_closcall1(data,(closure)&c_731016,  &c_731726);;
 }
 
 static void __lambda_203(void *data, int argc, object self_73443, object r_73144) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731018;
 c_731018.hdr.mark = gc_color_red;
  c_731018.hdr.grayed = 0;
@@ -2338,8 +2271,7 @@ return_closcall1(data,(closure)&c_731018,  &c_731599);;
 }
 
 static void __lambda_202(void *data, int argc, object self_73444, object k_73263, object f_7384) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731601;
 c_731601.hdr.mark = gc_color_red;
  c_731601.hdr.grayed = 0;
@@ -2359,8 +2291,7 @@ return_closcall1(data,(closure)&c_731601,  Cyc_is_cons(f_7384));;
 }
 
 static void __lambda_201(void *data, int argc, object self_73445, object r_73264) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73264) ){ 
+  if( !eq(boolean_f, r_73264) ){ 
   
 closureN_type c_731603;
 c_731603.hdr.mark = gc_color_red;
@@ -2384,8 +2315,7 @@ return_closcall1(data,(closure)&c_731603,  cdr(((closureN)self_73445)->elts[2]))
 }
 
 static void __lambda_200(void *data, int argc, object self_73446, object r_73288) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731605;
 c_731605.hdr.mark = gc_color_red;
  c_731605.hdr.grayed = 0;
@@ -2405,8 +2335,7 @@ return_closcall1(data,(closure)&c_731605,  Cyc_is_cons(r_73288));;
 }
 
 static void __lambda_199(void *data, int argc, object self_73447, object r_73265) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73265) ){ 
+  if( !eq(boolean_f, r_73265) ){ 
   
 closureN_type c_731607;
 c_731607.hdr.mark = gc_color_red;
@@ -2430,8 +2359,7 @@ return_closcall1(data,(closure)&c_731607,  cadr(((closureN)self_73447)->elts[2])
 }
 
 static void __lambda_198(void *data, int argc, object self_73448, object r_73267) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731609;
 c_731609.hdr.mark = gc_color_red;
  c_731609.hdr.grayed = 0;
@@ -2452,8 +2380,7 @@ return_closcall1(data,(closure)&c_731609,  quote_make_91getter);;
 }
 
 static void __lambda_197(void *data, int argc, object self_73449, object r_73287) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731612;
 c_731612.hdr.mark = gc_color_red;
  c_731612.hdr.grayed = 0;
@@ -2473,8 +2400,7 @@ return_closcall2(data,  ((closureN)self_73449)->elts[6],  &c_731612, r_73287);;
 }
 
 static void __lambda_196(void *data, int argc, object self_73450, object r_73271) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731614;
 c_731614.hdr.mark = gc_color_red;
  c_731614.hdr.grayed = 0;
@@ -2495,8 +2421,7 @@ return_closcall1(data,(closure)&c_731614,  cadr(((closureN)self_73450)->elts[2])
 }
 
 static void __lambda_195(void *data, int argc, object self_73451, object r_73286) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731616;
 c_731616.hdr.mark = gc_color_red;
  c_731616.hdr.grayed = 0;
@@ -2519,8 +2444,7 @@ return_closcall1(data,(closure)&c_731616,  c_731706);;
 }
 
 static void __lambda_194(void *data, int argc, object self_73452, object r_73273) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731618;
 c_731618.hdr.mark = gc_color_red;
  c_731618.hdr.grayed = 0;
@@ -2542,8 +2466,7 @@ return_closcall1(data,(closure)&c_731618,  quote_quote);;
 }
 
 static void __lambda_193(void *data, int argc, object self_73453, object r_73282) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731620;
 c_731620.hdr.mark = gc_color_red;
  c_731620.hdr.grayed = 0;
@@ -2565,8 +2488,7 @@ return_closcall1(data,(closure)&c_731620,  car(((closureN)self_73453)->elts[2]))
 }
 
 static void __lambda_192(void *data, int argc, object self_73454, object r_73284) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731622;
 c_731622.hdr.mark = gc_color_red;
  c_731622.hdr.grayed = 0;
@@ -2589,8 +2511,7 @@ return_closcall1(data,(closure)&c_731622,  nil);;
 }
 
 static void __lambda_191(void *data, int argc, object self_73455, object r_73285) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731624;
 c_731624.hdr.mark = gc_color_red;
  c_731624.hdr.grayed = 0;
@@ -2614,8 +2535,7 @@ return_closcall1(data,(closure)&c_731624,  &c_731699);;
 }
 
 static void __lambda_190(void *data, int argc, object self_73456, object r_73283) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731626;
 c_731626.hdr.mark = gc_color_red;
  c_731626.hdr.grayed = 0;
@@ -2638,8 +2558,7 @@ return_closcall1(data,(closure)&c_731626,  &c_731695);;
 }
 
 static void __lambda_189(void *data, int argc, object self_73457, object r_73280) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731628;
 c_731628.hdr.mark = gc_color_red;
  c_731628.hdr.grayed = 0;
@@ -2661,8 +2580,7 @@ return_closcall1(data,(closure)&c_731628,  nil);;
 }
 
 static void __lambda_188(void *data, int argc, object self_73458, object r_73281) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731630;
 c_731630.hdr.mark = gc_color_red;
  c_731630.hdr.grayed = 0;
@@ -2685,8 +2603,7 @@ return_closcall1(data,(closure)&c_731630,  &c_731691);;
 }
 
 static void __lambda_187(void *data, int argc, object self_73459, object r_73279) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731632;
 c_731632.hdr.mark = gc_color_red;
  c_731632.hdr.grayed = 0;
@@ -2709,8 +2626,7 @@ return_closcall1(data,(closure)&c_731632,  &c_731687);;
 }
 
 static void __lambda_186(void *data, int argc, object self_73460, object r_73278) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731634;
 c_731634.hdr.mark = gc_color_red;
  c_731634.hdr.grayed = 0;
@@ -2732,8 +2648,7 @@ return_closcall1(data,(closure)&c_731634,  &c_731683);;
 }
 
 static void __lambda_185(void *data, int argc, object self_73461, object r_73276) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731636;
 c_731636.hdr.mark = gc_color_red;
  c_731636.hdr.grayed = 0;
@@ -2754,8 +2669,7 @@ return_closcall1(data,(closure)&c_731636,  nil);;
 }
 
 static void __lambda_184(void *data, int argc, object self_73462, object r_73277) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731638;
 c_731638.hdr.mark = gc_color_red;
  c_731638.hdr.grayed = 0;
@@ -2777,8 +2691,7 @@ return_closcall1(data,(closure)&c_731638,  &c_731679);;
 }
 
 static void __lambda_183(void *data, int argc, object self_73463, object r_73275) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731640;
 c_731640.hdr.mark = gc_color_red;
  c_731640.hdr.grayed = 0;
@@ -2799,8 +2712,7 @@ return_closcall1(data,(closure)&c_731640,  &c_731675);;
 }
 
 static void __lambda_182(void *data, int argc, object self_73464, object r_73274) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731642;
 c_731642.hdr.mark = gc_color_red;
  c_731642.hdr.grayed = 0;
@@ -2820,8 +2732,7 @@ return_closcall1(data,(closure)&c_731642,  &c_731671);;
 }
 
 static void __lambda_181(void *data, int argc, object self_73465, object r_73272) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731644;
 c_731644.hdr.mark = gc_color_red;
  c_731644.hdr.grayed = 0;
@@ -2840,8 +2751,7 @@ return_closcall1(data,(closure)&c_731644,  &c_731667);;
 }
 
 static void __lambda_180(void *data, int argc, object self_73466, object r_73269) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731646;
 c_731646.hdr.mark = gc_color_red;
  c_731646.hdr.grayed = 0;
@@ -2859,8 +2769,7 @@ return_closcall1(data,(closure)&c_731646,  nil);;
 }
 
 static void __lambda_179(void *data, int argc, object self_73467, object r_73270) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731648;
 c_731648.hdr.mark = gc_color_red;
  c_731648.hdr.grayed = 0;
@@ -2879,8 +2788,7 @@ return_closcall1(data,(closure)&c_731648,  &c_731663);;
 }
 
 static void __lambda_178(void *data, int argc, object self_73468, object r_73268) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731650;
 c_731650.hdr.mark = gc_color_red;
  c_731650.hdr.grayed = 0;
@@ -2898,15 +2806,13 @@ return_closcall1(data,(closure)&c_731650,  &c_731659);;
 }
 
 static void __lambda_177(void *data, int argc, object self_73469, object r_73266) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 make_cons(c_731655,((closureN)self_73469)->elts[0], r_73266);
 return_closcall1(data,  ((closureN)self_73469)->elts[1],  &c_731655);; 
 }
 
 static void __lambda_176(void *data, int argc, object self_73470, object r_73262) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731020;
 c_731020.hdr.mark = gc_color_red;
  c_731020.hdr.grayed = 0;
@@ -2934,8 +2840,7 @@ return_closcall3(data,  __glo_map,  &c_731020, r_73262, ((closureN)self_73470)->
 }
 
 static void __lambda_175(void *data, int argc, object self_73471, object r_73146) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731022;
 c_731022.hdr.mark = gc_color_red;
  c_731022.hdr.grayed = 0;
@@ -2978,8 +2883,7 @@ return_closcall1(data,(closure)&c_731022,  &c_731454);;
 }
 
 static void __lambda_174(void *data, int argc, object self_73472, object k_73232, object f_7383) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731456;
 c_731456.hdr.mark = gc_color_red;
  c_731456.hdr.grayed = 0;
@@ -2999,8 +2903,7 @@ return_closcall1(data,(closure)&c_731456,  Cyc_is_cons(f_7383));;
 }
 
 static void __lambda_173(void *data, int argc, object self_73473, object r_73233) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73233) ){ 
+  if( !eq(boolean_f, r_73233) ){ 
   
 closureN_type c_731458;
 c_731458.hdr.mark = gc_color_red;
@@ -3024,8 +2927,7 @@ return_closcall1(data,(closure)&c_731458,  cdr(((closureN)self_73473)->elts[2]))
 }
 
 static void __lambda_172(void *data, int argc, object self_73474, object r_73261) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731460;
 c_731460.hdr.mark = gc_color_red;
  c_731460.hdr.grayed = 0;
@@ -3045,8 +2947,7 @@ return_closcall1(data,(closure)&c_731460,  Cyc_is_cons(r_73261));;
 }
 
 static void __lambda_171(void *data, int argc, object self_73475, object r_73234) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73234) ){ 
+  if( !eq(boolean_f, r_73234) ){ 
   
 closureN_type c_731462;
 c_731462.hdr.mark = gc_color_red;
@@ -3070,8 +2971,7 @@ return_closcall1(data,(closure)&c_731462,  cddr(((closureN)self_73475)->elts[2])
 }
 
 static void __lambda_170(void *data, int argc, object self_73476, object r_73260) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731464;
 c_731464.hdr.mark = gc_color_red;
  c_731464.hdr.grayed = 0;
@@ -3091,8 +2991,7 @@ return_closcall1(data,(closure)&c_731464,  Cyc_is_cons(r_73260));;
 }
 
 static void __lambda_169(void *data, int argc, object self_73477, object r_73235) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73235) ){ 
+  if( !eq(boolean_f, r_73235) ){ 
   
 closureN_type c_731466;
 c_731466.hdr.mark = gc_color_red;
@@ -3116,8 +3015,7 @@ return_closcall1(data,(closure)&c_731466,  cddr(((closureN)self_73477)->elts[2])
 }
 
 static void __lambda_168(void *data, int argc, object self_73478, object r_73259) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731468;
 c_731468.hdr.mark = gc_color_red;
  c_731468.hdr.grayed = 0;
@@ -3137,8 +3035,7 @@ return_closcall1(data,(closure)&c_731468,  car(r_73259));;
 }
 
 static void __lambda_167(void *data, int argc, object self_73479, object r_73237) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731470;
 c_731470.hdr.mark = gc_color_red;
  c_731470.hdr.grayed = 0;
@@ -3159,8 +3056,7 @@ return_closcall1(data,(closure)&c_731470,  quote_make_91setter);;
 }
 
 static void __lambda_166(void *data, int argc, object self_73480, object r_73258) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731473;
 c_731473.hdr.mark = gc_color_red;
  c_731473.hdr.grayed = 0;
@@ -3180,8 +3076,7 @@ return_closcall2(data,  ((closureN)self_73480)->elts[6],  &c_731473, r_73258);;
 }
 
 static void __lambda_165(void *data, int argc, object self_73481, object r_73241) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731475;
 c_731475.hdr.mark = gc_color_red;
  c_731475.hdr.grayed = 0;
@@ -3202,8 +3097,7 @@ return_closcall1(data,(closure)&c_731475,  cddr(((closureN)self_73481)->elts[2])
 }
 
 static void __lambda_164(void *data, int argc, object self_73482, object r_73257) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731477;
 c_731477.hdr.mark = gc_color_red;
  c_731477.hdr.grayed = 0;
@@ -3224,8 +3118,7 @@ return_closcall1(data,(closure)&c_731477,  car(r_73257));;
 }
 
 static void __lambda_163(void *data, int argc, object self_73483, object r_73256) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731479;
 c_731479.hdr.mark = gc_color_red;
  c_731479.hdr.grayed = 0;
@@ -3248,8 +3141,7 @@ return_closcall1(data,(closure)&c_731479,  c_731569);;
 }
 
 static void __lambda_162(void *data, int argc, object self_73484, object r_73243) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731481;
 c_731481.hdr.mark = gc_color_red;
  c_731481.hdr.grayed = 0;
@@ -3271,8 +3163,7 @@ return_closcall1(data,(closure)&c_731481,  quote_quote);;
 }
 
 static void __lambda_161(void *data, int argc, object self_73485, object r_73252) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731483;
 c_731483.hdr.mark = gc_color_red;
  c_731483.hdr.grayed = 0;
@@ -3294,8 +3185,7 @@ return_closcall1(data,(closure)&c_731483,  car(((closureN)self_73485)->elts[2]))
 }
 
 static void __lambda_160(void *data, int argc, object self_73486, object r_73254) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731485;
 c_731485.hdr.mark = gc_color_red;
  c_731485.hdr.grayed = 0;
@@ -3318,8 +3208,7 @@ return_closcall1(data,(closure)&c_731485,  nil);;
 }
 
 static void __lambda_159(void *data, int argc, object self_73487, object r_73255) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731487;
 c_731487.hdr.mark = gc_color_red;
  c_731487.hdr.grayed = 0;
@@ -3343,8 +3232,7 @@ return_closcall1(data,(closure)&c_731487,  &c_731562);;
 }
 
 static void __lambda_158(void *data, int argc, object self_73488, object r_73253) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731489;
 c_731489.hdr.mark = gc_color_red;
  c_731489.hdr.grayed = 0;
@@ -3367,8 +3255,7 @@ return_closcall1(data,(closure)&c_731489,  &c_731558);;
 }
 
 static void __lambda_157(void *data, int argc, object self_73489, object r_73250) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731491;
 c_731491.hdr.mark = gc_color_red;
  c_731491.hdr.grayed = 0;
@@ -3390,8 +3277,7 @@ return_closcall1(data,(closure)&c_731491,  nil);;
 }
 
 static void __lambda_156(void *data, int argc, object self_73490, object r_73251) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731493;
 c_731493.hdr.mark = gc_color_red;
  c_731493.hdr.grayed = 0;
@@ -3414,8 +3300,7 @@ return_closcall1(data,(closure)&c_731493,  &c_731554);;
 }
 
 static void __lambda_155(void *data, int argc, object self_73491, object r_73249) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731495;
 c_731495.hdr.mark = gc_color_red;
  c_731495.hdr.grayed = 0;
@@ -3438,8 +3323,7 @@ return_closcall1(data,(closure)&c_731495,  &c_731550);;
 }
 
 static void __lambda_154(void *data, int argc, object self_73492, object r_73248) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731497;
 c_731497.hdr.mark = gc_color_red;
  c_731497.hdr.grayed = 0;
@@ -3461,8 +3345,7 @@ return_closcall1(data,(closure)&c_731497,  &c_731546);;
 }
 
 static void __lambda_153(void *data, int argc, object self_73493, object r_73246) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731499;
 c_731499.hdr.mark = gc_color_red;
  c_731499.hdr.grayed = 0;
@@ -3483,8 +3366,7 @@ return_closcall1(data,(closure)&c_731499,  nil);;
 }
 
 static void __lambda_152(void *data, int argc, object self_73494, object r_73247) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731501;
 c_731501.hdr.mark = gc_color_red;
  c_731501.hdr.grayed = 0;
@@ -3506,8 +3388,7 @@ return_closcall1(data,(closure)&c_731501,  &c_731542);;
 }
 
 static void __lambda_151(void *data, int argc, object self_73495, object r_73245) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731503;
 c_731503.hdr.mark = gc_color_red;
  c_731503.hdr.grayed = 0;
@@ -3528,8 +3409,7 @@ return_closcall1(data,(closure)&c_731503,  &c_731538);;
 }
 
 static void __lambda_150(void *data, int argc, object self_73496, object r_73244) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731505;
 c_731505.hdr.mark = gc_color_red;
  c_731505.hdr.grayed = 0;
@@ -3549,8 +3429,7 @@ return_closcall1(data,(closure)&c_731505,  &c_731534);;
 }
 
 static void __lambda_149(void *data, int argc, object self_73497, object r_73242) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731507;
 c_731507.hdr.mark = gc_color_red;
  c_731507.hdr.grayed = 0;
@@ -3569,8 +3448,7 @@ return_closcall1(data,(closure)&c_731507,  &c_731530);;
 }
 
 static void __lambda_148(void *data, int argc, object self_73498, object r_73239) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731509;
 c_731509.hdr.mark = gc_color_red;
  c_731509.hdr.grayed = 0;
@@ -3588,8 +3466,7 @@ return_closcall1(data,(closure)&c_731509,  nil);;
 }
 
 static void __lambda_147(void *data, int argc, object self_73499, object r_73240) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731511;
 c_731511.hdr.mark = gc_color_red;
  c_731511.hdr.grayed = 0;
@@ -3608,8 +3485,7 @@ return_closcall1(data,(closure)&c_731511,  &c_731526);;
 }
 
 static void __lambda_146(void *data, int argc, object self_73500, object r_73238) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731513;
 c_731513.hdr.mark = gc_color_red;
  c_731513.hdr.grayed = 0;
@@ -3627,15 +3503,13 @@ return_closcall1(data,(closure)&c_731513,  &c_731522);;
 }
 
 static void __lambda_145(void *data, int argc, object self_73501, object r_73236) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 make_cons(c_731518,((closureN)self_73501)->elts[0], r_73236);
 return_closcall1(data,  ((closureN)self_73501)->elts[1],  &c_731518);; 
 }
 
 static void __lambda_144(void *data, int argc, object self_73502, object r_73231) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731024;
 c_731024.hdr.mark = gc_color_red;
  c_731024.hdr.grayed = 0;
@@ -3664,8 +3538,7 @@ return_closcall3(data,  __glo_map,  &c_731024, r_73231, ((closureN)self_73502)->
 }
 
 static void __lambda_143(void *data, int argc, object self_73503, object r_73148) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731026;
 c_731026.hdr.mark = gc_color_red;
  c_731026.hdr.grayed = 0;
@@ -3695,8 +3568,7 @@ return_closcall1(data,(closure)&c_731026,  nil);;
 }
 
 static void __lambda_142(void *data, int argc, object self_73504, object r_73156) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731028;
 c_731028.hdr.mark = gc_color_red;
  c_731028.hdr.grayed = 0;
@@ -3726,8 +3598,7 @@ return_closcall2(data,(closure)&c_731028,  ((closureN)self_73504)->elts[8], r_73
 }
 
 static void __lambda_141(void *data, int argc, object self_73505, object ls_7378, object sets_7377) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731030;
 c_731030.hdr.mark = gc_color_red;
  c_731030.hdr.grayed = 0;
@@ -3759,8 +3630,7 @@ return_closcall1(data,(closure)&c_731030,  boolean_f);;
 }
 
 static void __lambda_140(void *data, int argc, object self_73506, object lp_7379) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731032;
 c_731032.hdr.mark = gc_color_red;
  c_731032.hdr.grayed = 0;
@@ -3794,8 +3664,7 @@ return_closcall1(data,(closure)&c_731032,  &c_731451);;
 }
 
 static void __lambda_139(void *data, int argc, object self_73507, object lp_7379) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731034;
 c_731034.hdr.mark = gc_color_red;
  c_731034.hdr.grayed = 0;
@@ -3840,8 +3709,7 @@ return_closcall1(data,(closure)&c_731034,  &c_731099);;
 }
 
 static void __lambda_138(void *data, int argc, object self_73508, object k_73159, object ls_7381, object sets_7380) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731101;
 c_731101.hdr.mark = gc_color_red;
  c_731101.hdr.grayed = 0;
@@ -3868,8 +3736,7 @@ return_closcall1(data,(closure)&c_731101,  Cyc_is_null(ls_7381));;
 }
 
 static void __lambda_137(void *data, int argc, object self_73509, object r_73160) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73160) ){ 
+  if( !eq(boolean_f, r_73160) ){ 
   
 closureN_type c_731103;
 c_731103.hdr.mark = gc_color_red;
@@ -3913,8 +3780,7 @@ return_closcall0(data,(closure)&c_731259);}
 }
 
 static void __lambda_136(void *data, int argc, object self_73510) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731261;
 c_731261.hdr.mark = gc_color_red;
  c_731261.hdr.grayed = 0;
@@ -3936,8 +3802,7 @@ return_closcall1(data,(closure)&c_731261,  car(((closureN)self_73510)->elts[5]))
 }
 
 static void __lambda_135(void *data, int argc, object self_73511, object r_73230) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731263;
 c_731263.hdr.mark = gc_color_red;
  c_731263.hdr.grayed = 0;
@@ -3958,8 +3823,7 @@ return_closcall1(data,(closure)&c_731263,  assq(data, r_73230, ((closureN)self_7
 }
 
 static void __lambda_134(void *data, int argc, object self_73512, object r_73196) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731265;
 c_731265.hdr.mark = gc_color_red;
  c_731265.hdr.grayed = 0;
@@ -3980,8 +3844,7 @@ return_closcall1(data,(closure)&c_731265,  r_73196);;
 }
 
 static void __lambda_133(void *data, int argc, object self_73513, object field_7382) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731267;
 c_731267.hdr.mark = gc_color_red;
  c_731267.hdr.grayed = 0;
@@ -4003,8 +3866,7 @@ return_closcall2(data,  __glo_not,  &c_731267, field_7382);;
 }
 
 static void __lambda_132(void *data, int argc, object self_73514, object r_73197) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73197) ){ 
+  if( !eq(boolean_f, r_73197) ){ 
   
 closureN_type c_731269;
 c_731269.hdr.mark = gc_color_red;
@@ -4042,8 +3904,7 @@ return_closcall1(data,(closure)&c_731279,  cddr(((closureN)self_73514)->elts[2])
 }
 
 static void __lambda_131(void *data, int argc, object self_73515, object r_73229) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731281;
 c_731281.hdr.mark = gc_color_red;
  c_731281.hdr.grayed = 0;
@@ -4065,8 +3926,7 @@ return_closcall1(data,(closure)&c_731281,  Cyc_is_cons(r_73229));;
 }
 
 static void __lambda_130(void *data, int argc, object self_73516, object r_73199) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73199) ){ 
+  if( !eq(boolean_f, r_73199) ){ 
   
 closureN_type c_731283;
 c_731283.hdr.mark = gc_color_red;
@@ -4106,8 +3966,7 @@ return_closcall0(data,(closure)&c_731338);}
 }
 
 static void __lambda_129(void *data, int argc, object self_73517) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731340;
 c_731340.hdr.mark = gc_color_red;
  c_731340.hdr.grayed = 0;
@@ -4128,8 +3987,7 @@ return_closcall1(data,(closure)&c_731340,  cdr(((closureN)self_73517)->elts[4]))
 }
 
 static void __lambda_128(void *data, int argc, object self_73518, object r_73210) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731342;
 c_731342.hdr.mark = gc_color_red;
  c_731342.hdr.grayed = 0;
@@ -4151,8 +4009,7 @@ return_closcall1(data,(closure)&c_731342,  quote_res);;
 }
 
 static void __lambda_127(void *data, int argc, object self_73519, object r_73215) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731344;
 c_731344.hdr.mark = gc_color_red;
  c_731344.hdr.grayed = 0;
@@ -4175,8 +4032,7 @@ return_closcall1(data,(closure)&c_731344,  quote_quote);;
 }
 
 static void __lambda_126(void *data, int argc, object self_73520, object r_73225) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731346;
 c_731346.hdr.mark = gc_color_red;
  c_731346.hdr.grayed = 0;
@@ -4200,8 +4056,7 @@ return_closcall1(data,(closure)&c_731346,  car(((closureN)self_73520)->elts[4]))
 }
 
 static void __lambda_125(void *data, int argc, object self_73521, object r_73227) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731348;
 c_731348.hdr.mark = gc_color_red;
  c_731348.hdr.grayed = 0;
@@ -4226,8 +4081,7 @@ return_closcall1(data,(closure)&c_731348,  nil);;
 }
 
 static void __lambda_124(void *data, int argc, object self_73522, object r_73228) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731350;
 c_731350.hdr.mark = gc_color_red;
  c_731350.hdr.grayed = 0;
@@ -4253,8 +4107,7 @@ return_closcall1(data,(closure)&c_731350,  &c_731428);;
 }
 
 static void __lambda_123(void *data, int argc, object self_73523, object r_73226) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731352;
 c_731352.hdr.mark = gc_color_red;
  c_731352.hdr.grayed = 0;
@@ -4279,8 +4132,7 @@ return_closcall1(data,(closure)&c_731352,  &c_731424);;
 }
 
 static void __lambda_122(void *data, int argc, object self_73524, object r_73223) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731354;
 c_731354.hdr.mark = gc_color_red;
  c_731354.hdr.grayed = 0;
@@ -4304,8 +4156,7 @@ return_closcall1(data,(closure)&c_731354,  nil);;
 }
 
 static void __lambda_121(void *data, int argc, object self_73525, object r_73224) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731356;
 c_731356.hdr.mark = gc_color_red;
  c_731356.hdr.grayed = 0;
@@ -4330,8 +4181,7 @@ return_closcall1(data,(closure)&c_731356,  &c_731420);;
 }
 
 static void __lambda_120(void *data, int argc, object self_73526, object r_73222) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731358;
 c_731358.hdr.mark = gc_color_red;
  c_731358.hdr.grayed = 0;
@@ -4356,8 +4206,7 @@ return_closcall1(data,(closure)&c_731358,  &c_731416);;
 }
 
 static void __lambda_119(void *data, int argc, object self_73527, object r_73221) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731360;
 c_731360.hdr.mark = gc_color_red;
  c_731360.hdr.grayed = 0;
@@ -4381,8 +4230,7 @@ return_closcall1(data,(closure)&c_731360,  &c_731412);;
 }
 
 static void __lambda_118(void *data, int argc, object self_73528, object r_73217) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731362;
 c_731362.hdr.mark = gc_color_red;
  c_731362.hdr.grayed = 0;
@@ -4404,8 +4252,7 @@ return_closcall1(data,(closure)&c_731362,  car(((closureN)self_73528)->elts[3]))
 }
 
 static void __lambda_117(void *data, int argc, object self_73529, object r_73219) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731364;
 c_731364.hdr.mark = gc_color_red;
  c_731364.hdr.grayed = 0;
@@ -4428,8 +4275,7 @@ return_closcall1(data,(closure)&c_731364,  nil);;
 }
 
 static void __lambda_116(void *data, int argc, object self_73530, object r_73220) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731366;
 c_731366.hdr.mark = gc_color_red;
  c_731366.hdr.grayed = 0;
@@ -4453,8 +4299,7 @@ return_closcall1(data,(closure)&c_731366,  &c_731405);;
 }
 
 static void __lambda_115(void *data, int argc, object self_73531, object r_73218) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731368;
 c_731368.hdr.mark = gc_color_red;
  c_731368.hdr.grayed = 0;
@@ -4477,8 +4322,7 @@ return_closcall1(data,(closure)&c_731368,  &c_731401);;
 }
 
 static void __lambda_114(void *data, int argc, object self_73532, object r_73216) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731370;
 c_731370.hdr.mark = gc_color_red;
  c_731370.hdr.grayed = 0;
@@ -4500,8 +4344,7 @@ return_closcall1(data,(closure)&c_731370,  &c_731397);;
 }
 
 static void __lambda_113(void *data, int argc, object self_73533, object r_73214) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731372;
 c_731372.hdr.mark = gc_color_red;
  c_731372.hdr.grayed = 0;
@@ -4522,8 +4365,7 @@ return_closcall1(data,(closure)&c_731372,  &c_731393);;
 }
 
 static void __lambda_112(void *data, int argc, object self_73534, object r_73213) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731374;
 c_731374.hdr.mark = gc_color_red;
  c_731374.hdr.grayed = 0;
@@ -4543,8 +4385,7 @@ return_closcall1(data,(closure)&c_731374,  &c_731389);;
 }
 
 static void __lambda_111(void *data, int argc, object self_73535, object r_73212) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731376;
 c_731376.hdr.mark = gc_color_red;
  c_731376.hdr.grayed = 0;
@@ -4563,13 +4404,11 @@ return_closcall1(data,(closure)&c_731376,  &c_731385);;
 }
 
 static void __lambda_110(void *data, int argc, object self_73536, object r_73211) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-return_closcall3(data,  cell_get(((closureN)self_73536)->elts[1]),  ((closureN)self_73536)->elts[0], ((closureN)self_73536)->elts[2], r_73211);; 
+  return_closcall3(data,  cell_get(((closureN)self_73536)->elts[1]),  ((closureN)self_73536)->elts[0], ((closureN)self_73536)->elts[2], r_73211);; 
 }
 
 static void __lambda_109(void *data, int argc, object self_73537) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731285;
 c_731285.hdr.mark = gc_color_red;
  c_731285.hdr.grayed = 0;
@@ -4588,8 +4427,7 @@ return_closcall1(data,(closure)&c_731285,  cdr(((closureN)self_73537)->elts[3]))
 }
 
 static void __lambda_108(void *data, int argc, object self_73538, object r_73200) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731287;
 c_731287.hdr.mark = gc_color_red;
  c_731287.hdr.grayed = 0;
@@ -4608,8 +4446,7 @@ return_closcall1(data,(closure)&c_731287,  cddr(((closureN)self_73538)->elts[0])
 }
 
 static void __lambda_107(void *data, int argc, object self_73539, object r_73209) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731289;
 c_731289.hdr.mark = gc_color_red;
  c_731289.hdr.grayed = 0;
@@ -4628,8 +4465,7 @@ return_closcall1(data,(closure)&c_731289,  car(r_73209));;
 }
 
 static void __lambda_106(void *data, int argc, object self_73540, object r_73203) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731291;
 c_731291.hdr.mark = gc_color_red;
  c_731291.hdr.grayed = 0;
@@ -4649,8 +4485,7 @@ return_closcall1(data,(closure)&c_731291,  quote_res);;
 }
 
 static void __lambda_105(void *data, int argc, object self_73541, object r_73205) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731293;
 c_731293.hdr.mark = gc_color_red;
  c_731293.hdr.grayed = 0;
@@ -4670,8 +4505,7 @@ return_closcall1(data,(closure)&c_731293,  car(((closureN)self_73541)->elts[2]))
 }
 
 static void __lambda_104(void *data, int argc, object self_73542, object r_73207) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731295;
 c_731295.hdr.mark = gc_color_red;
  c_731295.hdr.grayed = 0;
@@ -4692,8 +4526,7 @@ return_closcall1(data,(closure)&c_731295,  nil);;
 }
 
 static void __lambda_103(void *data, int argc, object self_73543, object r_73208) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731297;
 c_731297.hdr.mark = gc_color_red;
  c_731297.hdr.grayed = 0;
@@ -4715,8 +4548,7 @@ return_closcall1(data,(closure)&c_731297,  &c_731324);;
 }
 
 static void __lambda_102(void *data, int argc, object self_73544, object r_73206) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731299;
 c_731299.hdr.mark = gc_color_red;
  c_731299.hdr.grayed = 0;
@@ -4737,8 +4569,7 @@ return_closcall1(data,(closure)&c_731299,  &c_731320);;
 }
 
 static void __lambda_101(void *data, int argc, object self_73545, object r_73204) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731301;
 c_731301.hdr.mark = gc_color_red;
  c_731301.hdr.grayed = 0;
@@ -4758,8 +4589,7 @@ return_closcall1(data,(closure)&c_731301,  &c_731316);;
 }
 
 static void __lambda_100(void *data, int argc, object self_73546, object r_73202) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731303;
 c_731303.hdr.mark = gc_color_red;
  c_731303.hdr.grayed = 0;
@@ -4778,13 +4608,11 @@ return_closcall1(data,(closure)&c_731303,  &c_731312);;
 }
 
 static void __lambda_99(void *data, int argc, object self_73547, object r_73201) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-return_closcall3(data,  cell_get(((closureN)self_73547)->elts[1]),  ((closureN)self_73547)->elts[0], ((closureN)self_73547)->elts[2], r_73201);; 
+  return_closcall3(data,  cell_get(((closureN)self_73547)->elts[1]),  ((closureN)self_73547)->elts[0], ((closureN)self_73547)->elts[2], r_73201);; 
 }
 
 static void __lambda_98(void *data, int argc, object self_73548) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731271;
 c_731271.hdr.mark = gc_color_red;
  c_731271.hdr.grayed = 0;
@@ -4799,15 +4627,13 @@ return_closcall1(data,(closure)&c_731271,  car(((closureN)self_73548)->elts[1]))
 }
 
 static void __lambda_97(void *data, int argc, object self_73549, object r_73198) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 make_string(c_731274, "unknown record field in constructor");
 return_closcall3(data,  __glo_error,  ((closureN)self_73549)->elts[0], &c_731274, r_73198);; 
 }
 
 static void __lambda_96(void *data, int argc, object self_73550) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731105;
 c_731105.hdr.mark = gc_color_red;
  c_731105.hdr.grayed = 0;
@@ -4829,8 +4655,7 @@ return_closcall1(data,(closure)&c_731105,  quote__75make);;
 }
 
 static void __lambda_95(void *data, int argc, object self_73551, object r_73186) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731107;
 c_731107.hdr.mark = gc_color_red;
  c_731107.hdr.grayed = 0;
@@ -4853,8 +4678,7 @@ return_closcall1(data,(closure)&c_731107,  quote_make_91constructor);;
 }
 
 static void __lambda_94(void *data, int argc, object self_73552, object r_73195) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731110;
 c_731110.hdr.mark = gc_color_red;
  c_731110.hdr.grayed = 0;
@@ -4876,8 +4700,7 @@ return_closcall2(data,  ((closureN)self_73552)->elts[7],  &c_731110, r_73195);;
 }
 
 static void __lambda_93(void *data, int argc, object self_73553, object r_73190) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731112;
 c_731112.hdr.mark = gc_color_red;
  c_731112.hdr.grayed = 0;
@@ -4901,8 +4724,7 @@ return_closcall1(data,(closure)&c_731112,  c_731256);;
 }
 
 static void __lambda_92(void *data, int argc, object self_73554, object r_73192) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731114;
 c_731114.hdr.mark = gc_color_red;
  c_731114.hdr.grayed = 0;
@@ -4925,8 +4747,7 @@ return_closcall1(data,(closure)&c_731114,  nil);;
 }
 
 static void __lambda_91(void *data, int argc, object self_73555, object r_73194) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731116;
 c_731116.hdr.mark = gc_color_red;
  c_731116.hdr.grayed = 0;
@@ -4950,8 +4771,7 @@ return_closcall1(data,(closure)&c_731116,  &c_731252);;
 }
 
 static void __lambda_90(void *data, int argc, object self_73556, object r_73193) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731118;
 c_731118.hdr.mark = gc_color_red;
  c_731118.hdr.grayed = 0;
@@ -4974,8 +4794,7 @@ return_closcall1(data,(closure)&c_731118,  &c_731248);;
 }
 
 static void __lambda_89(void *data, int argc, object self_73557, object r_73191) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731120;
 c_731120.hdr.mark = gc_color_red;
  c_731120.hdr.grayed = 0;
@@ -4997,8 +4816,7 @@ return_closcall1(data,(closure)&c_731120,  &c_731244);;
 }
 
 static void __lambda_88(void *data, int argc, object self_73558, object r_73188) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731122;
 c_731122.hdr.mark = gc_color_red;
  c_731122.hdr.grayed = 0;
@@ -5019,8 +4837,7 @@ return_closcall1(data,(closure)&c_731122,  nil);;
 }
 
 static void __lambda_87(void *data, int argc, object self_73559, object r_73189) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731124;
 c_731124.hdr.mark = gc_color_red;
  c_731124.hdr.grayed = 0;
@@ -5042,8 +4859,7 @@ return_closcall1(data,(closure)&c_731124,  &c_731240);;
 }
 
 static void __lambda_86(void *data, int argc, object self_73560, object r_73187) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731126;
 c_731126.hdr.mark = gc_color_red;
  c_731126.hdr.grayed = 0;
@@ -5064,8 +4880,7 @@ return_closcall1(data,(closure)&c_731126,  &c_731236);;
 }
 
 static void __lambda_85(void *data, int argc, object self_73561, object r_73184) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731128;
 c_731128.hdr.mark = gc_color_red;
  c_731128.hdr.grayed = 0;
@@ -5085,8 +4900,7 @@ return_closcall1(data,(closure)&c_731128,  nil);;
 }
 
 static void __lambda_84(void *data, int argc, object self_73562, object r_73185) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731130;
 c_731130.hdr.mark = gc_color_red;
  c_731130.hdr.grayed = 0;
@@ -5107,8 +4921,7 @@ return_closcall1(data,(closure)&c_731130,  &c_731232);;
 }
 
 static void __lambda_83(void *data, int argc, object self_73563, object r_73162) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731132;
 c_731132.hdr.mark = gc_color_red;
  c_731132.hdr.grayed = 0;
@@ -5128,8 +4941,7 @@ return_closcall1(data,(closure)&c_731132,  quote_res);;
 }
 
 static void __lambda_82(void *data, int argc, object self_73564, object r_73178) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731134;
 c_731134.hdr.mark = gc_color_red;
  c_731134.hdr.grayed = 0;
@@ -5150,8 +4962,7 @@ return_closcall1(data,(closure)&c_731134,  quote__75make);;
 }
 
 static void __lambda_81(void *data, int argc, object self_73565, object r_73182) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731136;
 c_731136.hdr.mark = gc_color_red;
  c_731136.hdr.grayed = 0;
@@ -5173,8 +4984,7 @@ return_closcall1(data,(closure)&c_731136,  nil);;
 }
 
 static void __lambda_80(void *data, int argc, object self_73566, object r_73183) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731138;
 c_731138.hdr.mark = gc_color_red;
  c_731138.hdr.grayed = 0;
@@ -5197,8 +5007,7 @@ return_closcall1(data,(closure)&c_731138,  &c_731228);;
 }
 
 static void __lambda_79(void *data, int argc, object self_73567, object r_73180) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731140;
 c_731140.hdr.mark = gc_color_red;
  c_731140.hdr.grayed = 0;
@@ -5220,8 +5029,7 @@ return_closcall1(data,(closure)&c_731140,  nil);;
 }
 
 static void __lambda_78(void *data, int argc, object self_73568, object r_73181) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731142;
 c_731142.hdr.mark = gc_color_red;
  c_731142.hdr.grayed = 0;
@@ -5244,8 +5052,7 @@ return_closcall1(data,(closure)&c_731142,  &c_731224);;
 }
 
 static void __lambda_77(void *data, int argc, object self_73569, object r_73179) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731144;
 c_731144.hdr.mark = gc_color_red;
  c_731144.hdr.grayed = 0;
@@ -5267,8 +5074,7 @@ return_closcall1(data,(closure)&c_731144,  &c_731220);;
 }
 
 static void __lambda_76(void *data, int argc, object self_73570, object r_73176) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731146;
 c_731146.hdr.mark = gc_color_red;
  c_731146.hdr.grayed = 0;
@@ -5289,8 +5095,7 @@ return_closcall1(data,(closure)&c_731146,  nil);;
 }
 
 static void __lambda_75(void *data, int argc, object self_73571, object r_73177) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731148;
 c_731148.hdr.mark = gc_color_red;
  c_731148.hdr.grayed = 0;
@@ -5312,8 +5117,7 @@ return_closcall1(data,(closure)&c_731148,  &c_731216);;
 }
 
 static void __lambda_74(void *data, int argc, object self_73572, object r_73171) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731150;
 c_731150.hdr.mark = gc_color_red;
  c_731150.hdr.grayed = 0;
@@ -5334,8 +5138,7 @@ return_closcall1(data,(closure)&c_731150,  quote_res);;
 }
 
 static void __lambda_73(void *data, int argc, object self_73573, object r_73174) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731152;
 c_731152.hdr.mark = gc_color_red;
  c_731152.hdr.grayed = 0;
@@ -5357,8 +5160,7 @@ return_closcall1(data,(closure)&c_731152,  nil);;
 }
 
 static void __lambda_72(void *data, int argc, object self_73574, object r_73175) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731154;
 c_731154.hdr.mark = gc_color_red;
  c_731154.hdr.grayed = 0;
@@ -5381,8 +5183,7 @@ return_closcall1(data,(closure)&c_731154,  &c_731212);;
 }
 
 static void __lambda_71(void *data, int argc, object self_73575, object r_73173) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731156;
 c_731156.hdr.mark = gc_color_red;
  c_731156.hdr.grayed = 0;
@@ -5402,8 +5203,7 @@ return_closcall3(data,  __glo_append,  &c_731156, ((closureN)self_73575)->elts[6
 }
 
 static void __lambda_70(void *data, int argc, object self_73576, object r_73172) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731158;
 c_731158.hdr.mark = gc_color_red;
  c_731158.hdr.grayed = 0;
@@ -5424,8 +5224,7 @@ return_closcall1(data,(closure)&c_731158,  &c_731207);;
 }
 
 static void __lambda_69(void *data, int argc, object self_73577, object r_73170) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731160;
 c_731160.hdr.mark = gc_color_red;
  c_731160.hdr.grayed = 0;
@@ -5446,8 +5245,7 @@ return_closcall1(data,(closure)&c_731160,  &c_731203);;
 }
 
 static void __lambda_68(void *data, int argc, object self_73578, object r_73168) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731162;
 c_731162.hdr.mark = gc_color_red;
  c_731162.hdr.grayed = 0;
@@ -5467,8 +5265,7 @@ return_closcall1(data,(closure)&c_731162,  nil);;
 }
 
 static void __lambda_67(void *data, int argc, object self_73579, object r_73169) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731164;
 c_731164.hdr.mark = gc_color_red;
  c_731164.hdr.grayed = 0;
@@ -5489,8 +5286,7 @@ return_closcall1(data,(closure)&c_731164,  &c_731199);;
 }
 
 static void __lambda_66(void *data, int argc, object self_73580, object r_73167) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731166;
 c_731166.hdr.mark = gc_color_red;
  c_731166.hdr.grayed = 0;
@@ -5510,8 +5306,7 @@ return_closcall1(data,(closure)&c_731166,  &c_731195);;
 }
 
 static void __lambda_65(void *data, int argc, object self_73581, object r_73166) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731168;
 c_731168.hdr.mark = gc_color_red;
  c_731168.hdr.grayed = 0;
@@ -5530,8 +5325,7 @@ return_closcall1(data,(closure)&c_731168,  &c_731191);;
 }
 
 static void __lambda_64(void *data, int argc, object self_73582, object r_73164) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731170;
 c_731170.hdr.mark = gc_color_red;
  c_731170.hdr.grayed = 0;
@@ -5549,8 +5343,7 @@ return_closcall1(data,(closure)&c_731170,  nil);;
 }
 
 static void __lambda_63(void *data, int argc, object self_73583, object r_73165) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731172;
 c_731172.hdr.mark = gc_color_red;
  c_731172.hdr.grayed = 0;
@@ -5569,8 +5362,7 @@ return_closcall1(data,(closure)&c_731172,  &c_731187);;
 }
 
 static void __lambda_62(void *data, int argc, object self_73584, object r_73163) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731174;
 c_731174.hdr.mark = gc_color_red;
  c_731174.hdr.grayed = 0;
@@ -5588,15 +5380,13 @@ return_closcall1(data,(closure)&c_731174,  &c_731183);;
 }
 
 static void __lambda_61(void *data, int argc, object self_73585, object r_73161) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 make_cons(c_731179,((closureN)self_73585)->elts[0], r_73161);
 return_closcall1(data,  ((closureN)self_73585)->elts[1],  &c_731179);; 
 }
 
 static void __lambda_60(void *data, int argc, object self_73586, object r_73158) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731036;
 c_731036.hdr.mark = gc_color_red;
  c_731036.hdr.grayed = 0;
@@ -5621,8 +5411,7 @@ return_closcall1(data,(closure)&c_731036,  Cyc_set_car(data, ((closureN)self_735
 }
 
 static void __lambda_59(void *data, int argc, object self_73587, object r_73157) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731041;
 c_731041.hdr.mark = gc_color_red;
  c_731041.hdr.grayed = 0;
@@ -5644,8 +5433,7 @@ return_closcall3(data,  cell_get(((closureN)self_73587)->elts[2]),  &c_731041, (
 }
 
 static void __lambda_58(void *data, int argc, object self_73588, object r_73154) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731043;
 c_731043.hdr.mark = gc_color_red;
  c_731043.hdr.grayed = 0;
@@ -5668,8 +5456,7 @@ return_closcall1(data,(closure)&c_731043,  nil);;
 }
 
 static void __lambda_57(void *data, int argc, object self_73589, object r_73155) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731045;
 c_731045.hdr.mark = gc_color_red;
  c_731045.hdr.grayed = 0;
@@ -5693,8 +5480,7 @@ return_closcall1(data,(closure)&c_731045,  &c_731092);;
 }
 
 static void __lambda_56(void *data, int argc, object self_73590, object r_73153) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731047;
 c_731047.hdr.mark = gc_color_red;
  c_731047.hdr.grayed = 0;
@@ -5717,8 +5503,7 @@ return_closcall1(data,(closure)&c_731047,  &c_731088);;
 }
 
 static void __lambda_55(void *data, int argc, object self_73591, object r_73152) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731049;
 c_731049.hdr.mark = gc_color_red;
  c_731049.hdr.grayed = 0;
@@ -5740,8 +5525,7 @@ return_closcall1(data,(closure)&c_731049,  &c_731084);;
 }
 
 static void __lambda_54(void *data, int argc, object self_73592, object r_73150) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731051;
 c_731051.hdr.mark = gc_color_red;
  c_731051.hdr.grayed = 0;
@@ -5762,8 +5546,7 @@ return_closcall1(data,(closure)&c_731051,  nil);;
 }
 
 static void __lambda_53(void *data, int argc, object self_73593, object r_73151) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731053;
 c_731053.hdr.mark = gc_color_red;
  c_731053.hdr.grayed = 0;
@@ -5785,8 +5568,7 @@ return_closcall1(data,(closure)&c_731053,  &c_731080);;
 }
 
 static void __lambda_52(void *data, int argc, object self_73594, object r_73149) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731055;
 c_731055.hdr.mark = gc_color_red;
  c_731055.hdr.grayed = 0;
@@ -5805,8 +5587,7 @@ return_closcall3(data,  __glo_append,  &c_731055, ((closureN)self_73594)->elts[5
 }
 
 static void __lambda_51(void *data, int argc, object self_73595, object r_73147) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731057;
 c_731057.hdr.mark = gc_color_red;
  c_731057.hdr.grayed = 0;
@@ -5824,8 +5605,7 @@ return_closcall3(data,  __glo_append,  &c_731057, ((closureN)self_73595)->elts[4
 }
 
 static void __lambda_50(void *data, int argc, object self_73596, object r_73145) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731059;
 c_731059.hdr.mark = gc_color_red;
  c_731059.hdr.grayed = 0;
@@ -5844,8 +5624,7 @@ return_closcall1(data,(closure)&c_731059,  &c_731074);;
 }
 
 static void __lambda_49(void *data, int argc, object self_73597, object r_73143) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_731061;
 c_731061.hdr.mark = gc_color_red;
  c_731061.hdr.grayed = 0;
@@ -5863,15 +5642,13 @@ return_closcall1(data,(closure)&c_731061,  &c_731070);;
 }
 
 static void __lambda_48(void *data, int argc, object self_73598, object r_73141) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 make_cons(c_731066,((closureN)self_73598)->elts[1], r_73141);
 return_closcall1(data,  ((closureN)self_73598)->elts[0],  &c_731066);; 
 }
 
 static void __lambda_47(void *data, int argc, object self_73599, object k_73312) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73951;
 c_73951.hdr.mark = gc_color_red;
  c_73951.hdr.grayed = 0;
@@ -5887,8 +5664,7 @@ return_closcall1(data,(closure)&c_73951,  Cyc_eq(((closureN)self_73599)->elts[1]
 }
 
 static void __lambda_46(void *data, int argc, object self_73600, object r_73313) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73313) ){ 
+  if( !eq(boolean_f, r_73313) ){ 
   
 make_string(c_73954, "same binding for record rtd and constructor");
 return_closcall3(data,  __glo_error,  ((closureN)self_73600)->elts[0], &c_73954, ((closureN)self_73600)->elts[1]);
@@ -5898,8 +5674,7 @@ return_closcall3(data,  __glo_error,  ((closureN)self_73600)->elts[0], &c_73954,
 }
 
 static void __lambda_45(void *data, int argc, object self_73601, object k_73320) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73866;
 c_73866.hdr.mark = gc_color_red;
  c_73866.hdr.grayed = 0;
@@ -5915,8 +5690,7 @@ return_closcall1(data,(closure)&c_73866,  Cyc_is_cons(((closureN)self_73601)->el
 }
 
 static void __lambda_44(void *data, int argc, object self_73602, object r_73321) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73321) ){ 
+  if( !eq(boolean_f, r_73321) ){ 
   return_closcall1(data,  ((closureN)self_73602)->elts[0],  cadr(((closureN)self_73602)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73602)->elts[0],  boolean_f);}
@@ -5924,8 +5698,7 @@ if( !eq(boolean_f, r_73321) ){
 }
 
 static void __lambda_43(void *data, int argc, object self_73603, object k_73322) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-
+  
 closureN_type c_73848;
 c_73848.hdr.mark = gc_color_red;
  c_73848.hdr.grayed = 0;
@@ -5941,8 +5714,7 @@ return_closcall1(data,(closure)&c_73848,  Cyc_is_cons(((closureN)self_73603)->el
 }
 
 static void __lambda_42(void *data, int argc, object self_73604, object r_73323) {
-  Cyc_st_add(data, "srfi/9.sld:define-record-type");
-if( !eq(boolean_f, r_73323) ){ 
+  if( !eq(boolean_f, r_73323) ){ 
   return_closcall1(data,  ((closureN)self_73604)->elts[0],  car(((closureN)self_73604)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73604)->elts[0],  ((closureN)self_73604)->elts[1]);}
@@ -5967,8 +5739,7 @@ return_closcall1(data,(closure)&c_73812,  Cyc_is_vector(obj_7385));;
 }
 
 static void __lambda_40(void *data, int argc, object self_73605, object r_73327) {
-  Cyc_st_add(data, "srfi/9.sld:record?");
-if( !eq(boolean_f, r_73327) ){ 
+  if( !eq(boolean_f, r_73327) ){ 
   
 closureN_type c_73814;
 c_73814.hdr.mark = gc_color_red;
@@ -5990,8 +5761,7 @@ return_closcall1(data,(closure)&c_73814,  &c_73834);
 }
 
 static void __lambda_39(void *data, int argc, object self_73606, object r_73330) {
-  Cyc_st_add(data, "srfi/9.sld:record?");
-
+  
 closureN_type c_73816;
 c_73816.hdr.mark = gc_color_red;
  c_73816.hdr.grayed = 0;
@@ -6009,8 +5779,7 @@ return_closcall1(data,(closure)&c_73816,  __num_gt(data, r_73330, &c_73831));;
 }
 
 static void __lambda_38(void *data, int argc, object self_73607, object r_73328) {
-  Cyc_st_add(data, "srfi/9.sld:record?");
-if( !eq(boolean_f, r_73328) ){ 
+  if( !eq(boolean_f, r_73328) ){ 
   
 closureN_type c_73818;
 c_73818.hdr.mark = gc_color_red;
@@ -6031,8 +5800,7 @@ return_closcall1(data,(closure)&c_73818,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_37(void *data, int argc, object self_73608, object r_73329) {
-  Cyc_st_add(data, "srfi/9.sld:record?");
-return_closcall1(data,  ((closureN)self_73608)->elts[0],  equalp(__glo_record_91marker, r_73329));; 
+  return_closcall1(data,  ((closureN)self_73608)->elts[0],  equalp(__glo_record_91marker, r_73329));; 
 }
 
 static void __lambda_36(void *data, int argc, closure _,object k_73333, object sym_7388, object name_7387, object idx_7386) {
@@ -6052,8 +5820,7 @@ return_closcall1(data,  k_73333,  &c_73798);;
 }
 
 static void __lambda_35(void *data, int argc, object self_73609, object k_73334, object obj_7390, object val_7389) {
-  Cyc_st_add(data, "srfi/9.sld:make-setter");
-
+  
 closureN_type c_73800;
 c_73800.hdr.mark = gc_color_red;
  c_73800.hdr.grayed = 0;
@@ -6072,8 +5839,7 @@ return_closcall1(data,(closure)&c_73800,  Cyc_vector_ref(data, obj_7390, &c_7380
 }
 
 static void __lambda_34(void *data, int argc, object self_73610, object r_73335) {
-  Cyc_st_add(data, "srfi/9.sld:make-setter");
-return_closcall1(data,  ((closureN)self_73610)->elts[1],  Cyc_vector_set(data, r_73335, ((closureN)self_73610)->elts[0], ((closureN)self_73610)->elts[2]));; 
+  return_closcall1(data,  ((closureN)self_73610)->elts[1],  Cyc_vector_set(data, r_73335, ((closureN)self_73610)->elts[0], ((closureN)self_73610)->elts[2]));; 
 }
 
 static void __lambda_33(void *data, int argc, closure _,object k_73338, object sym_7393, object name_7392, object idx_7391) {
@@ -6093,8 +5859,7 @@ return_closcall1(data,  k_73338,  &c_73785);;
 }
 
 static void __lambda_32(void *data, int argc, object self_73611, object k_73339, object obj_7394) {
-  Cyc_st_add(data, "srfi/9.sld:make-getter");
-
+  
 closureN_type c_73787;
 c_73787.hdr.mark = gc_color_red;
  c_73787.hdr.grayed = 0;
@@ -6112,8 +5877,7 @@ return_closcall1(data,(closure)&c_73787,  Cyc_vector_ref(data, obj_7394, &c_7379
 }
 
 static void __lambda_31(void *data, int argc, object self_73612, object r_73340) {
-  Cyc_st_add(data, "srfi/9.sld:make-getter");
-return_closcall1(data,  ((closureN)self_73612)->elts[1],  Cyc_vector_ref(data, r_73340, ((closureN)self_73612)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_73612)->elts[1],  Cyc_vector_ref(data, r_73340, ((closureN)self_73612)->elts[0]));; 
 }
 
 static void __lambda_30(void *data, int argc, closure _,object k_73343, object name_7398, object obj_7397, object idx_7396, object val_7395) {
@@ -6135,8 +5899,7 @@ return_closcall1(data,(closure)&c_73771,  obj_7397);;
 }
 
 static void __lambda_29(void *data, int argc, object self_73613, object vec_7399) {
-  Cyc_st_add(data, "srfi/9.sld:slot-set!");
-
+  
 closureN_type c_73773;
 c_73773.hdr.mark = gc_color_red;
  c_73773.hdr.grayed = 0;
@@ -6155,8 +5918,7 @@ return_closcall1(data,(closure)&c_73773,  Cyc_vector_ref(data, vec_7399, &c_7378
 }
 
 static void __lambda_28(void *data, int argc, object self_73614, object r_73344) {
-  Cyc_st_add(data, "srfi/9.sld:slot-set!");
-return_closcall1(data,  ((closureN)self_73614)->elts[1],  Cyc_vector_set(data, r_73344, ((closureN)self_73614)->elts[0], ((closureN)self_73614)->elts[2]));; 
+  return_closcall1(data,  ((closureN)self_73614)->elts[1],  Cyc_vector_set(data, r_73344, ((closureN)self_73614)->elts[0], ((closureN)self_73614)->elts[2]));; 
 }
 
 static void __lambda_27(void *data, int argc, closure _,object k_73347, object name_73101, object sym_73100) {
@@ -6179,8 +5941,7 @@ return_closcall1(data,(closure)&c_73760,  Cyc_vector_ref(data, name_73101, &c_73
 }
 
 static void __lambda_26(void *data, int argc, object self_73615, object r_73348) {
-  Cyc_st_add(data, "srfi/9.sld:type-slot-offset");
-
+  
 closureN_type c_73762;
 c_73762.hdr.mark = gc_color_red;
  c_73762.hdr.grayed = 0;
@@ -6196,8 +5957,7 @@ return_closcall1(data,(closure)&c_73762,  r_73348);;
 }
 
 static void __lambda_25(void *data, int argc, object self_73616, object field_91tags_73102) {
-  Cyc_st_add(data, "srfi/9.sld:type-slot-offset");
-return_closcall3(data,  __glo_list_91index2,  ((closureN)self_73616)->elts[0], ((closureN)self_73616)->elts[1], field_91tags_73102);; 
+  return_closcall3(data,  __glo_list_91index2,  ((closureN)self_73616)->elts[0], ((closureN)self_73616)->elts[1], field_91tags_73102);; 
 }
 
 static void __lambda_24(void *data, int argc, closure _,object k_73351, object make_73104, object name_73103) {
@@ -6217,8 +5977,7 @@ return_closcall1(data,  k_73351,  &c_73704);;
 }
 
 static void __lambda_23(void *data, int argc, object self_73617, object k_73352) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73706;
 c_73706.hdr.mark = gc_color_red;
  c_73706.hdr.grayed = 0;
@@ -6236,8 +5995,7 @@ return_closcall1(data,(closure)&c_73706,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_22(void *data, int argc, object self_73618, object r_73353) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73708;
 c_73708.hdr.mark = gc_color_red;
  c_73708.hdr.grayed = 0;
@@ -6253,8 +6011,7 @@ return_closcall1(data,(closure)&c_73708,  r_73353);;
 }
 
 static void __lambda_21(void *data, int argc, object self_73619, object field_91tags_73105) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73710;
 c_73710.hdr.mark = gc_color_red;
  c_73710.hdr.grayed = 0;
@@ -6272,8 +6029,7 @@ return_closcall1(data,(closure)&c_73710,  &c_73753);;
 }
 
 static void __lambda_20(void *data, int argc, object self_73620, object r_73359) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73712;
 c_73712.hdr.mark = gc_color_red;
  c_73712.hdr.grayed = 0;
@@ -6291,8 +6047,7 @@ return_closcall1(data,(closure)&c_73712,  c_73750);;
 }
 
 static void __lambda_19(void *data, int argc, object self_73621, object r_73354) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73714;
 c_73714.hdr.mark = gc_color_red;
  c_73714.hdr.grayed = 0;
@@ -6308,8 +6063,7 @@ return_closcall1(data,(closure)&c_73714,  r_73354);;
 }
 
 static void __lambda_18(void *data, int argc, object self_73622, object field_91values_73106) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73716;
 c_73716.hdr.mark = gc_color_red;
  c_73716.hdr.grayed = 0;
@@ -6330,8 +6084,7 @@ return_closcall1(data,(closure)&c_73716,  c_73746);;
 }
 
 static void __lambda_17(void *data, int argc, object self_73623, object r_73355) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73718;
 c_73718.hdr.mark = gc_color_red;
  c_73718.hdr.grayed = 0;
@@ -6348,8 +6101,7 @@ return_closcall1(data,(closure)&c_73718,  r_73355);;
 }
 
 static void __lambda_16(void *data, int argc, object self_73624, object new_73107) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73720;
 c_73720.hdr.mark = gc_color_red;
  c_73720.hdr.grayed = 0;
@@ -6367,8 +6119,7 @@ return_closcall0(data,(closure)&c_73720);;
 }
 
 static void __lambda_15(void *data, int argc, object self_73625) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73722;
 c_73722.hdr.mark = gc_color_red;
  c_73722.hdr.grayed = 0;
@@ -6388,8 +6139,7 @@ return_closcall1(data,(closure)&c_73722,  Cyc_vector_set(data, ((closureN)self_7
 }
 
 static void __lambda_14(void *data, int argc, object self_73626, object r_73356) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73724;
 c_73724.hdr.mark = gc_color_red;
  c_73724.hdr.grayed = 0;
@@ -6408,8 +6158,7 @@ return_closcall1(data,(closure)&c_73724,  Cyc_vector_set(data, ((closureN)self_7
 }
 
 static void __lambda_13(void *data, int argc, object self_73627, object r_73357) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-
+  
 closureN_type c_73726;
 c_73726.hdr.mark = gc_color_red;
  c_73726.hdr.grayed = 0;
@@ -6427,8 +6176,7 @@ return_closcall1(data,(closure)&c_73726,  Cyc_vector_set(data, ((closureN)self_7
 }
 
 static void __lambda_12(void *data, int argc, object self_73628, object r_73358) {
-  Cyc_st_add(data, "srfi/9.sld:make-constructor");
-return_closcall1(data,  ((closureN)self_73628)->elts[0],  ((closureN)self_73628)->elts[1]);; 
+  return_closcall1(data,  ((closureN)self_73628)->elts[0],  ((closureN)self_73628)->elts[1]);; 
 }
 
 static void __lambda_11(void *data, int argc, closure _,object k_73362, object pred_73109, object name_73108) {
@@ -6448,8 +6196,7 @@ return_closcall1(data,  k_73362,  &c_73672);;
 }
 
 static void __lambda_10(void *data, int argc, object self_73629, object k_73363, object obj_73110) {
-  Cyc_st_add(data, "srfi/9.sld:make-type-predicate");
-
+  
 closureN_type c_73674;
 c_73674.hdr.mark = gc_color_red;
  c_73674.hdr.grayed = 0;
@@ -6466,8 +6213,7 @@ return_closcall1(data,(closure)&c_73674,  Cyc_is_vector(obj_73110));;
 }
 
 static void __lambda_9(void *data, int argc, object self_73630, object r_73364) {
-  Cyc_st_add(data, "srfi/9.sld:make-type-predicate");
-if( !eq(boolean_f, r_73364) ){ 
+  if( !eq(boolean_f, r_73364) ){ 
   
 closureN_type c_73676;
 c_73676.hdr.mark = gc_color_red;
@@ -6490,8 +6236,7 @@ return_closcall1(data,(closure)&c_73676,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_8(void *data, int argc, object self_73631, object r_73367) {
-  Cyc_st_add(data, "srfi/9.sld:make-type-predicate");
-
+  
 closureN_type c_73678;
 c_73678.hdr.mark = gc_color_red;
  c_73678.hdr.grayed = 0;
@@ -6508,8 +6253,7 @@ return_closcall1(data,(closure)&c_73678,  equalp(r_73367, __glo_record_91marker)
 }
 
 static void __lambda_7(void *data, int argc, object self_73632, object r_73365) {
-  Cyc_st_add(data, "srfi/9.sld:make-type-predicate");
-if( !eq(boolean_f, r_73365) ){ 
+  if( !eq(boolean_f, r_73365) ){ 
   
 closureN_type c_73680;
 c_73680.hdr.mark = gc_color_red;
@@ -6531,8 +6275,7 @@ return_closcall1(data,(closure)&c_73680,  Cyc_vector_ref(data, ((closureN)self_7
 }
 
 static void __lambda_6(void *data, int argc, object self_73633, object r_73366) {
-  Cyc_st_add(data, "srfi/9.sld:make-type-predicate");
-return_closcall1(data,  ((closureN)self_73633)->elts[0],  equalp(r_73366, ((closureN)self_73633)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_73633)->elts[0],  equalp(r_73366, ((closureN)self_73633)->elts[1]));; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_73370, object name_73113, object parent_73112, object field_91tags_73111) {
@@ -6558,8 +6301,7 @@ return_closcall1(data,(closure)&c_73641,  c_73668);;
 }
 
 static void __lambda_4(void *data, int argc, object self_73634, object r_73371) {
-  Cyc_st_add(data, "srfi/9.sld:register-simple-type");
-
+  
 closureN_type c_73643;
 c_73643.hdr.mark = gc_color_red;
  c_73643.hdr.grayed = 0;
@@ -6576,8 +6318,7 @@ return_closcall1(data,(closure)&c_73643,  r_73371);;
 }
 
 static void __lambda_3(void *data, int argc, object self_73635, object new_73114) {
-  Cyc_st_add(data, "srfi/9.sld:register-simple-type");
-
+  
 closureN_type c_73645;
 c_73645.hdr.mark = gc_color_red;
  c_73645.hdr.grayed = 0;
@@ -6597,8 +6338,7 @@ return_closcall1(data,(closure)&c_73645,  Cyc_vector_set(data, new_73114, &c_736
 }
 
 static void __lambda_2(void *data, int argc, object self_73636, object r_73372) {
-  Cyc_st_add(data, "srfi/9.sld:register-simple-type");
-
+  
 closureN_type c_73647;
 c_73647.hdr.mark = gc_color_red;
  c_73647.hdr.grayed = 0;
@@ -6617,8 +6357,7 @@ return_closcall1(data,(closure)&c_73647,  Cyc_vector_set(data, ((closureN)self_7
 }
 
 static void __lambda_1(void *data, int argc, object self_73637, object r_73373) {
-  Cyc_st_add(data, "srfi/9.sld:register-simple-type");
-
+  
 closureN_type c_73649;
 c_73649.hdr.mark = gc_color_red;
  c_73649.hdr.grayed = 0;
@@ -6636,8 +6375,7 @@ return_closcall1(data,(closure)&c_73649,  Cyc_vector_set(data, ((closureN)self_7
 }
 
 static void __lambda_0(void *data, int argc, object self_73638, object r_73374) {
-  Cyc_st_add(data, "srfi/9.sld:register-simple-type");
-return_closcall1(data,  ((closureN)self_73638)->elts[0],  ((closureN)self_73638)->elts[1]);; 
+  return_closcall1(data,  ((closureN)self_73638)->elts[0],  ((closureN)self_73638)->elts[1]);; 
 }
 
 void c_srfi9_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

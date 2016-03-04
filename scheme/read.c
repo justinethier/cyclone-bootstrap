@@ -899,8 +899,7 @@ return_closcall1(data,(closure)&c_733764,  &c_733775);;
 }
 
 static void __lambda_552(void *data, int argc, object self_73711, object r_73231) {
-  Cyc_st_add(data, "scheme/read.sld:lib-init:schemeread");
-
+  
 closureN_type c_733766;
 c_733766.hdr.mark = gc_color_red;
  c_733766.hdr.grayed = 0;
@@ -915,8 +914,7 @@ return_closcall1(data,(closure)&c_733766,  global_set(__glo_read, __glo_cyc_91re
 }
 
 static void __lambda_551(void *data, int argc, object self_73712, object r_73232) {
-  Cyc_st_add(data, "scheme/read.sld:lib-init:schemeread");
-
+  
 closureN_type c_733768;
 c_733768.hdr.mark = gc_color_red;
  c_733768.hdr.grayed = 0;
@@ -931,8 +929,7 @@ return_closcall1(data,(closure)&c_733768,  nil);;
 }
 
 static void __lambda_550(void *data, int argc, object self_73713, object r_73233) {
-  Cyc_st_add(data, "scheme/read.sld:lib-init:schemeread");
-return_closcall1(data,  ((closureN)self_73713)->elts[0],  global_set(__glo__85in_91port_91table_85, r_73233));; 
+  return_closcall1(data,  ((closureN)self_73713)->elts[0],  global_set(__glo__85in_91port_91table_85, r_73233));; 
 }
 
 static void __lambda_549(void *data, int argc, closure _,object k_73236, object args_7398_raw, ...) {
@@ -954,8 +951,7 @@ return_closcall1(data,(closure)&c_733697,  boolean_f);;
 }
 
 static void __lambda_548(void *data, int argc, object self_73714, object loop_7399) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733699;
 c_733699.hdr.mark = gc_color_red;
  c_733699.hdr.grayed = 0;
@@ -981,8 +977,7 @@ return_closcall1(data,(closure)&c_733699,  &c_733712);;
 }
 
 static void __lambda_547(void *data, int argc, object self_73715, object r_73237) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733714;
 c_733714.hdr.mark = gc_color_red;
  c_733714.hdr.grayed = 0;
@@ -997,8 +992,7 @@ return_closcall1(data,(closure)&c_733714,  r_73237);;
 }
 
 static void __lambda_546(void *data, int argc, object self_73716, object fp_73100) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733716;
 c_733716.hdr.mark = gc_color_red;
  c_733716.hdr.grayed = 0;
@@ -1014,8 +1008,7 @@ return_closcall1(data,(closure)&c_733716,  boolean_f);;
 }
 
 static void __lambda_545(void *data, int argc, object self_73717, object loop_73101) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733718;
 c_733718.hdr.mark = gc_color_red;
  c_733718.hdr.grayed = 0;
@@ -1033,8 +1026,7 @@ return_closcall1(data,(closure)&c_733718,  &c_733761);;
 }
 
 static void __lambda_544(void *data, int argc, object self_73718, object loop_73101) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733720;
 c_733720.hdr.mark = gc_color_red;
  c_733720.hdr.grayed = 0;
@@ -1062,8 +1054,7 @@ return_closcall1(data,(closure)&c_733720,  &c_733734);;
 }
 
 static void __lambda_543(void *data, int argc, object self_73719, object k_73241, object fp_73103, object result_73102) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733736;
 c_733736.hdr.mark = gc_color_red;
  c_733736.hdr.grayed = 0;
@@ -1081,8 +1072,7 @@ return_closcall2(data,  __glo_cyc_91read,  &c_733736, fp_73103);;
 }
 
 static void __lambda_542(void *data, int argc, object self_73720, object r_73242) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733738;
 c_733738.hdr.mark = gc_color_red;
  c_733738.hdr.grayed = 0;
@@ -1100,8 +1090,7 @@ return_closcall1(data,(closure)&c_733738,  r_73242);;
 }
 
 static void __lambda_541(void *data, int argc, object self_73721, object obj_73104) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733740;
 c_733740.hdr.mark = gc_color_red;
  c_733740.hdr.grayed = 0;
@@ -1120,8 +1109,7 @@ return_closcall1(data,(closure)&c_733740,  Cyc_is_eof_object(obj_73104));;
 }
 
 static void __lambda_540(void *data, int argc, object self_73722, object r_73243) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-if( !eq(boolean_f, r_73243) ){ 
+  if( !eq(boolean_f, r_73243) ){ 
   return_closcall2(data,  __glo_reverse,  ((closureN)self_73722)->elts[1], ((closureN)self_73722)->elts[4]);
 } else { 
   
@@ -1144,13 +1132,11 @@ return_closcall1(data,(closure)&c_733745,  &c_733754);}
 }
 
 static void __lambda_539(void *data, int argc, object self_73723, object r_73244) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-return_closcall3(data,  cell_get(((closureN)self_73723)->elts[2]),  ((closureN)self_73723)->elts[1], ((closureN)self_73723)->elts[0], r_73244);; 
+  return_closcall3(data,  cell_get(((closureN)self_73723)->elts[2]),  ((closureN)self_73723)->elts[1], ((closureN)self_73723)->elts[0], r_73244);; 
 }
 
 static void __lambda_538(void *data, int argc, object self_73724, object r_73240) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733722;
 c_733722.hdr.mark = gc_color_red;
  c_733722.hdr.grayed = 0;
@@ -1167,8 +1153,7 @@ return_closcall1(data,(closure)&c_733722,  Cyc_set_car(data, ((closureN)self_737
 }
 
 static void __lambda_537(void *data, int argc, object self_73725, object r_73238) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733724;
 c_733724.hdr.mark = gc_color_red;
  c_733724.hdr.grayed = 0;
@@ -1185,13 +1170,11 @@ return_closcall1(data,(closure)&c_733724,  nil);;
 }
 
 static void __lambda_536(void *data, int argc, object self_73726, object r_73239) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-return_closcall3(data,  cell_get(((closureN)self_73726)->elts[2]),  ((closureN)self_73726)->elts[1], ((closureN)self_73726)->elts[0], r_73239);; 
+  return_closcall3(data,  cell_get(((closureN)self_73726)->elts[2]),  ((closureN)self_73726)->elts[1], ((closureN)self_73726)->elts[0], r_73239);; 
 }
 
 static void __lambda_535(void *data, int argc, object self_73727, object k_73245) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-
+  
 closureN_type c_733701;
 c_733701.hdr.mark = gc_color_red;
  c_733701.hdr.grayed = 0;
@@ -1207,8 +1190,7 @@ return_closcall1(data,(closure)&c_733701,  Cyc_is_null(((closureN)self_73727)->e
 }
 
 static void __lambda_534(void *data, int argc, object self_73728, object r_73246) {
-  Cyc_st_add(data, "scheme/read.sld:read-all");
-if( !eq(boolean_f, r_73246) ){ 
+  if( !eq(boolean_f, r_73246) ){ 
   return_closcall1(data,  __glo_current_91input_91port,  ((closureN)self_73728)->elts[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_73728)->elts[1],  car(((closureN)self_73728)->elts[0]));}
@@ -1244,8 +1226,7 @@ return_closcall1(data,(closure)&c_733666,  &c_733679);;
 }
 
 static void __lambda_532(void *data, int argc, object self_73729, object r_73250) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 closureN_type c_733681;
 c_733681.hdr.mark = gc_color_red;
  c_733681.hdr.grayed = 0;
@@ -1260,8 +1241,7 @@ return_closcall1(data,(closure)&c_733681,  r_73250);;
 }
 
 static void __lambda_531(void *data, int argc, object self_73730, object fp_73106) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 closureN_type c_733683;
 c_733683.hdr.mark = gc_color_red;
  c_733683.hdr.grayed = 0;
@@ -1277,8 +1257,7 @@ return_closcall1(data,(closure)&c_733683,  nil);;
 }
 
 static void __lambda_530(void *data, int argc, object self_73731, object r_73251) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 closureN_type c_733685;
 c_733685.hdr.mark = gc_color_red;
  c_733685.hdr.grayed = 0;
@@ -1295,8 +1274,7 @@ return_closcall1(data,(closure)&c_733685,  nil);;
 }
 
 static void __lambda_529(void *data, int argc, object self_73732, object r_73252) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 closureN_type c_733687;
 c_733687.hdr.mark = gc_color_red;
  c_733687.hdr.grayed = 0;
@@ -1314,15 +1292,13 @@ return_closcall2(data,  __glo_reg_91port,  &c_733687, ((closureN)self_73732)->el
 }
 
 static void __lambda_528(void *data, int argc, object self_73733, object r_73253) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 make_int(c_733693, 0);
 return_closcall8(data,  __glo_parse,  ((closureN)self_73733)->elts[1], ((closureN)self_73733)->elts[0], ((closureN)self_73733)->elts[2], ((closureN)self_73733)->elts[3], boolean_f, boolean_f, &c_733693, r_73253);; 
 }
 
 static void __lambda_527(void *data, int argc, object self_73734, object k_73254) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-
+  
 closureN_type c_733668;
 c_733668.hdr.mark = gc_color_red;
  c_733668.hdr.grayed = 0;
@@ -1338,8 +1314,7 @@ return_closcall1(data,(closure)&c_733668,  Cyc_is_null(((closureN)self_73734)->e
 }
 
 static void __lambda_526(void *data, int argc, object self_73735, object r_73255) {
-  Cyc_st_add(data, "scheme/read.sld:cyc-read");
-if( !eq(boolean_f, r_73255) ){ 
+  if( !eq(boolean_f, r_73255) ){ 
   return_closcall1(data,  __glo_current_91input_91port,  ((closureN)self_73735)->elts[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_73735)->elts[1],  car(((closureN)self_73735)->elts[0]));}
@@ -1375,8 +1350,7 @@ return_closcall1(data,(closure)&c_733642,  &c_733651);;
 }
 
 static void __lambda_524(void *data, int argc, object self_73736, object r_73259) {
-  Cyc_st_add(data, "scheme/read.sld:hex-digit?");
-
+  
 closureN_type c_733653;
 c_733653.hdr.mark = gc_color_red;
  c_733653.hdr.grayed = 0;
@@ -1392,8 +1366,7 @@ return_closcall1(data,(closure)&c_733653,  r_73259);;
 }
 
 static void __lambda_523(void *data, int argc, object self_73737, object tmp_73108) {
-  Cyc_st_add(data, "scheme/read.sld:hex-digit?");
-if( !eq(boolean_f, tmp_73108) ){ 
+  if( !eq(boolean_f, tmp_73108) ){ 
   return_closcall1(data,  ((closureN)self_73737)->elts[1],  tmp_73108);
 } else { 
   
@@ -1413,8 +1386,7 @@ return_closcall3(data,  __glo_char_125_123_127,  &c_733657, ((closureN)self_7373
 }
 
 static void __lambda_522(void *data, int argc, object self_73738, object r_73260) {
-  Cyc_st_add(data, "scheme/read.sld:hex-digit?");
-if( !eq(boolean_f, r_73260) ){ 
+  if( !eq(boolean_f, r_73260) ){ 
   return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_73738)->elts[1], ((closureN)self_73738)->elts[0], obj_char2obj(70));
 } else { 
   return_closcall1(data,  ((closureN)self_73738)->elts[1],  boolean_f);}
@@ -1422,8 +1394,7 @@ if( !eq(boolean_f, r_73260) ){
 }
 
 static void __lambda_521(void *data, int argc, object self_73739, object k_73261) {
-  Cyc_st_add(data, "scheme/read.sld:hex-digit?");
-
+  
 closureN_type c_733644;
 c_733644.hdr.mark = gc_color_red;
  c_733644.hdr.grayed = 0;
@@ -1439,8 +1410,7 @@ return_closcall3(data,  __glo_char_125_123_127,  &c_733644, ((closureN)self_7373
 }
 
 static void __lambda_520(void *data, int argc, object self_73740, object r_73262) {
-  Cyc_st_add(data, "scheme/read.sld:hex-digit?");
-if( !eq(boolean_f, r_73262) ){ 
+  if( !eq(boolean_f, r_73262) ){ 
   return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_73740)->elts[1], ((closureN)self_73740)->elts[0], obj_char2obj(102));
 } else { 
   return_closcall1(data,  ((closureN)self_73740)->elts[1],  boolean_f);}
@@ -1468,8 +1438,7 @@ return_closcall3(data,  __glo_get_91next_91char,  &c_733517, fp_73111, ptbl_7310
 }
 
 static void __lambda_518(void *data, int argc, object self_73741, object r_73266) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733519;
 c_733519.hdr.mark = gc_color_red;
  c_733519.hdr.grayed = 0;
@@ -1502,8 +1471,7 @@ return_closcall1(data,(closure)&c_733519,  &c_733628);;
 }
 
 static void __lambda_517(void *data, int argc, object self_73742, object k_73285, object c_73113) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733630;
 c_733630.hdr.mark = gc_color_red;
  c_733630.hdr.grayed = 0;
@@ -1523,13 +1491,11 @@ return_closcall1(data,(closure)&c_733630,  &c_733638);;
 }
 
 static void __lambda_516(void *data, int argc, object self_73743, object r_73286) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall5(data,  __glo_parse_91number_91rec,  ((closureN)self_73743)->elts[2], ((closureN)self_73743)->elts[0], ((closureN)self_73743)->elts[1], r_73286, ((closureN)self_73743)->elts[3]);; 
+  return_closcall5(data,  __glo_parse_91number_91rec,  ((closureN)self_73743)->elts[2], ((closureN)self_73743)->elts[0], ((closureN)self_73743)->elts[1], r_73286, ((closureN)self_73743)->elts[3]);; 
 }
 
 static void __lambda_515(void *data, int argc, object self_73744, object r_73267) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733521;
 c_733521.hdr.mark = gc_color_red;
  c_733521.hdr.grayed = 0;
@@ -1547,8 +1513,7 @@ return_closcall2(data,(closure)&c_733521,  ((closureN)self_73744)->elts[3], r_73
 }
 
 static void __lambda_514(void *data, int argc, object self_73745, object c_73115, object next_73114) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733523;
 c_733523.hdr.mark = gc_color_red;
  c_733523.hdr.grayed = 0;
@@ -1568,8 +1533,7 @@ return_closcall2(data,  __glo_sign_127,  &c_733523, c_73115);;
 }
 
 static void __lambda_513(void *data, int argc, object self_73746, object r_73268) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73268) ){ 
+  if( !eq(boolean_f, r_73268) ){ 
   
 closureN_type c_733525;
 c_733525.hdr.mark = gc_color_red;
@@ -1606,8 +1570,7 @@ return_closcall1(data,(closure)&c_733531,  Cyc_eq(obj_char2obj(46), ((closureN)s
 }
 
 static void __lambda_512(void *data, int argc, object self_73747, object r_73269) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73269) ){ 
+  if( !eq(boolean_f, r_73269) ){ 
   
 closureN_type c_733533;
 c_733533.hdr.mark = gc_color_red;
@@ -1644,8 +1607,7 @@ return_closcall2(data,  __glo_char_91numeric_127,  &c_733539, ((closureN)self_73
 }
 
 static void __lambda_511(void *data, int argc, object self_73748, object r_73270) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73270) ){ 
+  if( !eq(boolean_f, r_73270) ){ 
   
 closureN_type c_733541;
 c_733541.hdr.mark = gc_color_red;
@@ -1695,8 +1657,7 @@ return_closcall1(data,(closure)&c_733595,  &c_733607);}
 }
 
 static void __lambda_510(void *data, int argc, object self_73749, object r_73281) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73281) ){ 
+  if( !eq(boolean_f, r_73281) ){ 
   
 closureN_type c_733609;
 c_733609.hdr.mark = gc_color_red;
@@ -1731,8 +1692,7 @@ return_closcall0(data,(closure)&c_733615);}
 }
 
 static void __lambda_509(void *data, int argc, object self_73750) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733617;
 c_733617.hdr.mark = gc_color_red;
  c_733617.hdr.grayed = 0;
@@ -1748,18 +1708,15 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_733617, ((closureN)
 }
 
 static void __lambda_508(void *data, int argc, object self_73751, object r_73282) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall2(data,  __glo_reverse,  ((closureN)self_73751)->elts[0], ((closureN)self_73751)->elts[1]);; 
+  return_closcall2(data,  __glo_reverse,  ((closureN)self_73751)->elts[0], ((closureN)self_73751)->elts[1]);; 
 }
 
 static void __lambda_507(void *data, int argc, object self_73752) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall2(data,  ((closureN)self_73752)->elts[2],  ((closureN)self_73752)->elts[1], ((closureN)self_73752)->elts[0]);; 
+  return_closcall2(data,  ((closureN)self_73752)->elts[2],  ((closureN)self_73752)->elts[1], ((closureN)self_73752)->elts[0]);; 
 }
 
 static void __lambda_506(void *data, int argc, object self_73753, object k_73283) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733597;
 c_733597.hdr.mark = gc_color_red;
  c_733597.hdr.grayed = 0;
@@ -1777,8 +1734,7 @@ return_closcall1(data,(closure)&c_733597,  __num_eq(data, ((closureN)self_73753)
 }
 
 static void __lambda_505(void *data, int argc, object self_73754, object r_73284) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73284) ){ 
+  if( !eq(boolean_f, r_73284) ){ 
   return_closcall2(data,  __glo_hex_91digit_127,  ((closureN)self_73754)->elts[1], ((closureN)self_73754)->elts[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_73754)->elts[1],  boolean_f);}
@@ -1786,8 +1742,7 @@ if( !eq(boolean_f, r_73284) ){
 }
 
 static void __lambda_504(void *data, int argc, object self_73755) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733543;
 c_733543.hdr.mark = gc_color_red;
  c_733543.hdr.grayed = 0;
@@ -1817,13 +1772,11 @@ return_closcall1(data,(closure)&c_733543,  &c_733589);;
 }
 
 static void __lambda_503(void *data, int argc, object self_73756, object r_73271) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall2(data,  ((closureN)self_73756)->elts[2],  ((closureN)self_73756)->elts[1], ((closureN)self_73756)->elts[0]);; 
+  return_closcall2(data,  ((closureN)self_73756)->elts[2],  ((closureN)self_73756)->elts[1], ((closureN)self_73756)->elts[0]);; 
 }
 
 static void __lambda_502(void *data, int argc, object self_73757, object k_73272) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733545;
 c_733545.hdr.mark = gc_color_red;
  c_733545.hdr.grayed = 0;
@@ -1853,8 +1806,7 @@ return_closcall1(data,(closure)&c_733545,  &c_733557);;
 }
 
 static void __lambda_501(void *data, int argc, object self_73758, object r_73276) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733559;
 c_733559.hdr.mark = gc_color_red;
  c_733559.hdr.grayed = 0;
@@ -1872,8 +1824,7 @@ return_closcall1(data,(closure)&c_733559,  r_73276);;
 }
 
 static void __lambda_500(void *data, int argc, object self_73759, object tmp_73116) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733561;
 c_733561.hdr.mark = gc_color_red;
  c_733561.hdr.grayed = 0;
@@ -1902,8 +1853,7 @@ return_closcall1(data,(closure)&c_733561,  &c_733576);;
 }
 
 static void __lambda_499(void *data, int argc, object self_73760, object r_73273) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73273) ){ 
+  if( !eq(boolean_f, r_73273) ){ 
   
 closureN_type c_733578;
 c_733578.hdr.mark = gc_color_red;
@@ -1923,8 +1873,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733578, ((closureN)se
 }
 
 static void __lambda_498(void *data, int argc, object self_73761, object r_73274) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733580;
 c_733580.hdr.mark = gc_color_red;
  c_733580.hdr.grayed = 0;
@@ -1940,15 +1889,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733580, ((closureN)se
 }
 
 static void __lambda_497(void *data, int argc, object self_73762, object r_73275) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 make_string(c_733583, "Illegal digit");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73762)->elts[0], &c_733583, ((closureN)self_73762)->elts[1], r_73275);; 
 }
 
 static void __lambda_496(void *data, int argc, object self_73763, object k_73277) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, ((closureN)self_73763)->elts[2]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73763)->elts[2]) ){ 
   return_closcall1(data,  k_73277,  ((closureN)self_73763)->elts[2]);
 } else { 
   
@@ -1970,8 +1917,7 @@ return_closcall1(data,(closure)&c_733566,  __num_eq(data, ((closureN)self_73763)
 }
 
 static void __lambda_495(void *data, int argc, object self_73764, object r_73278) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73278) ){ 
+  if( !eq(boolean_f, r_73278) ){ 
   return_closcall3(data,  __glo_char_125_127,  ((closureN)self_73764)->elts[1], ((closureN)self_73764)->elts[0], obj_char2obj(55));
 } else { 
   return_closcall1(data,  ((closureN)self_73764)->elts[1],  boolean_f);}
@@ -1979,8 +1925,7 @@ if( !eq(boolean_f, r_73278) ){
 }
 
 static void __lambda_494(void *data, int argc, object self_73765, object k_73279) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-
+  
 closureN_type c_733547;
 c_733547.hdr.mark = gc_color_red;
  c_733547.hdr.grayed = 0;
@@ -1998,8 +1943,7 @@ return_closcall1(data,(closure)&c_733547,  __num_eq(data, ((closureN)self_73765)
 }
 
 static void __lambda_493(void *data, int argc, object self_73766, object r_73280) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-if( !eq(boolean_f, r_73280) ){ 
+  if( !eq(boolean_f, r_73280) ){ 
   return_closcall3(data,  __glo_char_125_127,  ((closureN)self_73766)->elts[1], ((closureN)self_73766)->elts[0], obj_char2obj(49));
 } else { 
   return_closcall1(data,  ((closureN)self_73766)->elts[1],  boolean_f);}
@@ -2007,13 +1951,11 @@ if( !eq(boolean_f, r_73280) ){
 }
 
 static void __lambda_492(void *data, int argc, object self_73767) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall2(data,  ((closureN)self_73767)->elts[2],  ((closureN)self_73767)->elts[1], ((closureN)self_73767)->elts[0]);; 
+  return_closcall2(data,  ((closureN)self_73767)->elts[2],  ((closureN)self_73767)->elts[1], ((closureN)self_73767)->elts[0]);; 
 }
 
 static void __lambda_491(void *data, int argc, object self_73768) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number-rec");
-return_closcall2(data,  ((closureN)self_73768)->elts[2],  ((closureN)self_73768)->elts[1], ((closureN)self_73768)->elts[0]);; 
+  return_closcall2(data,  ((closureN)self_73768)->elts[2],  ((closureN)self_73768)->elts[1], ((closureN)self_73768)->elts[0]);; 
 }
 
 static void __lambda_490(void *data, int argc, closure _,object k_73289, object fp_73123, object toks_73122, object all_127_73121, object parens_73120, object ptbl_73119, object base_73118, object tok_91_125num_73117) {
@@ -2040,8 +1982,7 @@ return_closcall1(data,(closure)&c_733421,  nil);;
 }
 
 static void __lambda_489(void *data, int argc, object self_73769, object r_73305) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733423;
 c_733423.hdr.mark = gc_color_red;
  c_733423.hdr.grayed = 0;
@@ -2063,8 +2004,7 @@ return_closcall5(data,  __glo_parse_91number_91rec,  &c_733423, ((closureN)self_
 }
 
 static void __lambda_488(void *data, int argc, object self_73770, object r_73290) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733425;
 c_733425.hdr.mark = gc_color_red;
  c_733425.hdr.grayed = 0;
@@ -2086,8 +2026,7 @@ return_closcall1(data,(closure)&c_733425,  r_73290);;
 }
 
 static void __lambda_487(void *data, int argc, object self_73771, object num_73124) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733427;
 c_733427.hdr.mark = gc_color_red;
  c_733427.hdr.grayed = 0;
@@ -2121,8 +2060,7 @@ return_closcall1(data,(closure)&c_733427,  &c_733472);;
 }
 
 static void __lambda_486(void *data, int argc, object self_73772, object r_73291) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, r_73291) ){ 
+  if( !eq(boolean_f, r_73291) ){ 
   
 closureN_type c_733474;
 c_733474.hdr.mark = gc_color_red;
@@ -2160,8 +2098,7 @@ return_closcall0(data,(closure)&c_733501);}
 }
 
 static void __lambda_485(void *data, int argc, object self_73773) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733503;
 c_733503.hdr.mark = gc_color_red;
  c_733503.hdr.grayed = 0;
@@ -2177,8 +2114,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733503, ((closureN)se
 }
 
 static void __lambda_484(void *data, int argc, object self_73774, object r_73295) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733505;
 c_733505.hdr.mark = gc_color_red;
  c_733505.hdr.grayed = 0;
@@ -2194,15 +2130,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733505, ((closureN)se
 }
 
 static void __lambda_483(void *data, int argc, object self_73775, object r_73296) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 make_string(c_733508, "Illegal number syntax");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73775)->elts[0], &c_733508, ((closureN)self_73775)->elts[1], r_73296);; 
 }
 
 static void __lambda_482(void *data, int argc, object self_73776) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733477;
 c_733477.hdr.mark = gc_color_red;
  c_733477.hdr.grayed = 0;
@@ -2222,8 +2156,7 @@ return_closcall2(data,  ((closureN)self_73776)->elts[6],  &c_733477, ((closureN)
 }
 
 static void __lambda_481(void *data, int argc, object self_73777, object r_73292) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733479;
 c_733479.hdr.mark = gc_color_red;
  c_733479.hdr.grayed = 0;
@@ -2243,8 +2176,7 @@ return_closcall1(data,(closure)&c_733479,  r_73292);;
 }
 
 static void __lambda_480(void *data, int argc, object self_73778, object result_73125) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, ((closureN)self_73778)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73778)->elts[0]) ){ 
   
 closureN_type c_733482;
 c_733482.hdr.mark = gc_color_red;
@@ -2269,8 +2201,7 @@ return_closcall1(data,(closure)&c_733482,  nil);
 }
 
 static void __lambda_479(void *data, int argc, object self_73779, object r_73293) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733484;
 c_733484.hdr.mark = gc_color_red;
  c_733484.hdr.grayed = 0;
@@ -2292,13 +2223,11 @@ return_closcall1(data,(closure)&c_733484,  &c_733494);;
 }
 
 static void __lambda_478(void *data, int argc, object self_73780, object r_73294) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-return_closcall8(data,  __glo_parse,  ((closureN)self_73780)->elts[2], ((closureN)self_73780)->elts[1], ((closureN)self_73780)->elts[5], r_73294, ((closureN)self_73780)->elts[0], boolean_f, ((closureN)self_73780)->elts[3], ((closureN)self_73780)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_73780)->elts[2], ((closureN)self_73780)->elts[1], ((closureN)self_73780)->elts[5], r_73294, ((closureN)self_73780)->elts[0], boolean_f, ((closureN)self_73780)->elts[3], ((closureN)self_73780)->elts[4]);; 
 }
 
 static void __lambda_477(void *data, int argc, object self_73781, object k_73297) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733429;
 c_733429.hdr.mark = gc_color_red;
  c_733429.hdr.grayed = 0;
@@ -2315,8 +2244,7 @@ return_closcall1(data,(closure)&c_733429,  Cyc_is_null(((closureN)self_73781)->e
 }
 
 static void __lambda_476(void *data, int argc, object self_73782, object r_73304) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733431;
 c_733431.hdr.mark = gc_color_red;
  c_733431.hdr.grayed = 0;
@@ -2333,8 +2261,7 @@ return_closcall2(data,  __glo_not,  &c_733431, r_73304);;
 }
 
 static void __lambda_475(void *data, int argc, object self_73783, object r_73298) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, r_73298) ){ 
+  if( !eq(boolean_f, r_73298) ){ 
   
 closureN_type c_733433;
 c_733433.hdr.mark = gc_color_red;
@@ -2355,8 +2282,7 @@ return_closcall2(data,  __glo_token_91numeric_127,  &c_733433, ((closureN)self_7
 }
 
 static void __lambda_474(void *data, int argc, object self_73784, object r_73299) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733435;
 c_733435.hdr.mark = gc_color_red;
  c_733435.hdr.grayed = 0;
@@ -2373,8 +2299,7 @@ return_closcall1(data,(closure)&c_733435,  r_73299);;
 }
 
 static void __lambda_473(void *data, int argc, object self_73785, object tmp_73126) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, tmp_73126) ){ 
+  if( !eq(boolean_f, tmp_73126) ){ 
   return_closcall1(data,  ((closureN)self_73785)->elts[1],  tmp_73126);
 } else { 
   
@@ -2397,8 +2322,7 @@ return_closcall1(data,(closure)&c_733439,  &c_733464);}
 }
 
 static void __lambda_472(void *data, int argc, object self_73786, object r_73303) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-
+  
 closureN_type c_733441;
 c_733441.hdr.mark = gc_color_red;
  c_733441.hdr.grayed = 0;
@@ -2417,8 +2341,7 @@ return_closcall1(data,(closure)&c_733441,  __num_gt(data, r_73303, &c_733461));;
 }
 
 static void __lambda_471(void *data, int argc, object self_73787, object r_73300) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, r_73300) ){ 
+  if( !eq(boolean_f, r_73300) ){ 
   
 closureN_type c_733443;
 c_733443.hdr.mark = gc_color_red;
@@ -2440,8 +2363,7 @@ return_closcall1(data,(closure)&c_733443,  __num_eq(data, ((closureN)self_73787)
 }
 
 static void __lambda_470(void *data, int argc, object self_73788, object r_73301) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-if( !eq(boolean_f, r_73301) ){ 
+  if( !eq(boolean_f, r_73301) ){ 
   
 closureN_type c_733445;
 c_733445.hdr.mark = gc_color_red;
@@ -2460,8 +2382,7 @@ return_closcall1(data,(closure)&c_733445,  car(((closureN)self_73788)->elts[1]))
 }
 
 static void __lambda_469(void *data, int argc, object self_73789, object r_73302) {
-  Cyc_st_add(data, "scheme/read.sld:parse-number");
-return_closcall2(data,  __glo_hex_91digit_127,  ((closureN)self_73789)->elts[0], r_73302);; 
+  return_closcall2(data,  __glo_hex_91digit_127,  ((closureN)self_73789)->elts[0], r_73302);; 
 }
 
 static void __lambda_468(void *data, int argc, closure _,object k_73308, object fp_73128, object ptbl_73127) {
@@ -2483,8 +2404,7 @@ return_closcall3(data,  __glo_get_91next_91char,  &c_733391, fp_73128, ptbl_7312
 }
 
 static void __lambda_467(void *data, int argc, object self_73790, object r_73309) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-
+  
 closureN_type c_733393;
 c_733393.hdr.mark = gc_color_red;
  c_733393.hdr.grayed = 0;
@@ -2501,8 +2421,7 @@ return_closcall1(data,(closure)&c_733393,  r_73309);;
 }
 
 static void __lambda_466(void *data, int argc, object self_73791, object c_73129) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-
+  
 closureN_type c_733395;
 c_733395.hdr.mark = gc_color_red;
  c_733395.hdr.grayed = 0;
@@ -2520,8 +2439,7 @@ return_closcall1(data,(closure)&c_733395,  Cyc_eq(obj_char2obj(35), c_73129));;
 }
 
 static void __lambda_465(void *data, int argc, object self_73792, object r_73310) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-if( !eq(boolean_f, r_73310) ){ 
+  if( !eq(boolean_f, r_73310) ){ 
   
 closureN_type c_733397;
 c_733397.hdr.mark = gc_color_red;
@@ -2553,8 +2471,7 @@ return_closcall1(data,(closure)&c_733401,  Cyc_eq(obj_char2obj(124), ((closureN)
 }
 
 static void __lambda_464(void *data, int argc, object self_73793, object r_73311) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-if( !eq(boolean_f, r_73311) ){ 
+  if( !eq(boolean_f, r_73311) ){ 
   
 closureN_type c_733403;
 c_733403.hdr.mark = gc_color_red;
@@ -2588,18 +2505,15 @@ return_closcall0(data,(closure)&c_733409);}
 }
 
 static void __lambda_463(void *data, int argc, object self_73794) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-return_closcall3(data,  __glo_read_91block_91comment,  ((closureN)self_73794)->elts[1], ((closureN)self_73794)->elts[0], ((closureN)self_73794)->elts[2]);; 
+  return_closcall3(data,  __glo_read_91block_91comment,  ((closureN)self_73794)->elts[1], ((closureN)self_73794)->elts[0], ((closureN)self_73794)->elts[2]);; 
 }
 
 static void __lambda_462(void *data, int argc, object self_73795) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-return_closcall3(data,  __glo_read_91block_91terminator,  ((closureN)self_73795)->elts[1], ((closureN)self_73795)->elts[0], ((closureN)self_73795)->elts[2]);; 
+  return_closcall3(data,  __glo_read_91block_91terminator,  ((closureN)self_73795)->elts[1], ((closureN)self_73795)->elts[0], ((closureN)self_73795)->elts[2]);; 
 }
 
 static void __lambda_461(void *data, int argc, object self_73796) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-terminator");
-return_closcall1(data,  ((closureN)self_73796)->elts[0],  boolean_t);; 
+  return_closcall1(data,  ((closureN)self_73796)->elts[0],  boolean_t);; 
 }
 
 static void __lambda_460(void *data, int argc, closure _,object k_73314, object fp_73131, object ptbl_73130) {
@@ -2621,8 +2535,7 @@ return_closcall3(data,  __glo_get_91next_91char,  &c_733370, fp_73131, ptbl_7313
 }
 
 static void __lambda_459(void *data, int argc, object self_73797, object r_73315) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-comment");
-
+  
 closureN_type c_733372;
 c_733372.hdr.mark = gc_color_red;
  c_733372.hdr.grayed = 0;
@@ -2639,8 +2552,7 @@ return_closcall1(data,(closure)&c_733372,  r_73315);;
 }
 
 static void __lambda_458(void *data, int argc, object self_73798, object c_73132) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-comment");
-
+  
 closureN_type c_733374;
 c_733374.hdr.mark = gc_color_red;
  c_733374.hdr.grayed = 0;
@@ -2657,8 +2569,7 @@ return_closcall1(data,(closure)&c_733374,  Cyc_eq(obj_char2obj(124), c_73132));;
 }
 
 static void __lambda_457(void *data, int argc, object self_73799, object r_73316) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-comment");
-if( !eq(boolean_f, r_73316) ){ 
+  if( !eq(boolean_f, r_73316) ){ 
   
 closureN_type c_733376;
 c_733376.hdr.mark = gc_color_red;
@@ -2692,13 +2603,11 @@ return_closcall0(data,(closure)&c_733382);}
 }
 
 static void __lambda_456(void *data, int argc, object self_73800) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-comment");
-return_closcall3(data,  __glo_read_91block_91comment,  ((closureN)self_73800)->elts[1], ((closureN)self_73800)->elts[0], ((closureN)self_73800)->elts[2]);; 
+  return_closcall3(data,  __glo_read_91block_91comment,  ((closureN)self_73800)->elts[1], ((closureN)self_73800)->elts[0], ((closureN)self_73800)->elts[2]);; 
 }
 
 static void __lambda_455(void *data, int argc, object self_73801) {
-  Cyc_st_add(data, "scheme/read.sld:read-block-comment");
-return_closcall3(data,  __glo_read_91block_91terminator,  ((closureN)self_73801)->elts[1], ((closureN)self_73801)->elts[0], ((closureN)self_73801)->elts[2]);; 
+  return_closcall3(data,  __glo_read_91block_91terminator,  ((closureN)self_73801)->elts[1], ((closureN)self_73801)->elts[0], ((closureN)self_73801)->elts[2]);; 
 }
 
 static void __lambda_454(void *data, int argc, closure _,object k_73319, object fp_73134, object ptbl_73133) {
@@ -2720,8 +2629,7 @@ return_closcall2(data,  __glo_in_91port_117get_91buf,  &c_733358, ptbl_73133);;
 }
 
 static void __lambda_453(void *data, int argc, object self_73802, object r_73320) {
-  Cyc_st_add(data, "scheme/read.sld:get-next-char");
-if( !eq(boolean_f, r_73320) ){ 
+  if( !eq(boolean_f, r_73320) ){ 
   return_closcall2(data,  __glo_in_91port_117read_91buf_67,  ((closureN)self_73802)->elts[1], ((closureN)self_73802)->elts[2]);
 } else { 
   
@@ -2748,8 +2656,7 @@ return_closcall2(data,  __glo_token_91numeric_127,  &c_733330, a_73135);;
 }
 
 static void __lambda_451(void *data, int argc, object self_73803, object r_73324) {
-  Cyc_st_add(data, "scheme/read.sld:parse-atom");
-if( !eq(boolean_f, r_73324) ){ 
+  if( !eq(boolean_f, r_73324) ){ 
   
 closureN_type c_733332;
 c_733332.hdr.mark = gc_color_red;
@@ -2781,8 +2688,7 @@ return_closcall0(data,(closure)&c_733345);}
 }
 
 static void __lambda_450(void *data, int argc, object self_73804) {
-  Cyc_st_add(data, "scheme/read.sld:parse-atom");
-
+  
 closureN_type c_733347;
 c_733347.hdr.mark = gc_color_red;
  c_733347.hdr.grayed = 0;
@@ -2799,13 +2705,11 @@ return_closcall1(data,(closure)&c_733347,  c_733354);;
 }
 
 static void __lambda_449(void *data, int argc, object self_73805, object r_73326) {
-  Cyc_st_add(data, "scheme/read.sld:parse-atom");
-return_closcall1(data,  ((closureN)self_73805)->elts[0],  Cyc_string2symbol(data, r_73326));; 
+  return_closcall1(data,  ((closureN)self_73805)->elts[0],  Cyc_string2symbol(data, r_73326));; 
 }
 
 static void __lambda_448(void *data, int argc, object self_73806) {
-  Cyc_st_add(data, "scheme/read.sld:parse-atom");
-
+  
 closureN_type c_733334;
 c_733334.hdr.mark = gc_color_red;
  c_733334.hdr.grayed = 0;
@@ -2822,8 +2726,7 @@ return_closcall1(data,(closure)&c_733334,  c_733342);;
 }
 
 static void __lambda_447(void *data, int argc, object self_73807, object r_73325) {
-  Cyc_st_add(data, "scheme/read.sld:parse-atom");
-
+  
 common_type c_733339 = Cyc_string2number2(data,1,r_73325);
 return_closcall1(data,  ((closureN)self_73807)->elts[0],  &c_733339);; 
 }
@@ -2846,8 +2749,7 @@ return_closcall1(data,(closure)&c_733290,  car(a_73136));;
 }
 
 static void __lambda_445(void *data, int argc, object self_73808, object r_73336) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-
+  
 closureN_type c_733292;
 c_733292.hdr.mark = gc_color_red;
  c_733292.hdr.grayed = 0;
@@ -2863,8 +2765,7 @@ return_closcall2(data,  __glo_char_91numeric_127,  &c_733292, r_73336);;
 }
 
 static void __lambda_444(void *data, int argc, object self_73809, object r_73330) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-
+  
 closureN_type c_733294;
 c_733294.hdr.mark = gc_color_red;
  c_733294.hdr.grayed = 0;
@@ -2880,8 +2781,7 @@ return_closcall1(data,(closure)&c_733294,  r_73330);;
 }
 
 static void __lambda_443(void *data, int argc, object self_73810, object tmp_73137) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-if( !eq(boolean_f, tmp_73137) ){ 
+  if( !eq(boolean_f, tmp_73137) ){ 
   return_closcall1(data,  ((closureN)self_73810)->elts[1],  tmp_73137);
 } else { 
   
@@ -2903,8 +2803,7 @@ return_closcall1(data,(closure)&c_733298,  &c_733324);}
 }
 
 static void __lambda_442(void *data, int argc, object self_73811, object r_73335) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-
+  
 closureN_type c_733300;
 c_733300.hdr.mark = gc_color_red;
  c_733300.hdr.grayed = 0;
@@ -2922,8 +2821,7 @@ return_closcall1(data,(closure)&c_733300,  __num_gt(data, r_73335, &c_733321));;
 }
 
 static void __lambda_441(void *data, int argc, object self_73812, object r_73331) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-if( !eq(boolean_f, r_73331) ){ 
+  if( !eq(boolean_f, r_73331) ){ 
   
 closureN_type c_733302;
 c_733302.hdr.mark = gc_color_red;
@@ -2943,8 +2841,7 @@ return_closcall1(data,(closure)&c_733302,  cadr(((closureN)self_73812)->elts[0])
 }
 
 static void __lambda_440(void *data, int argc, object self_73813, object r_73334) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-
+  
 closureN_type c_733304;
 c_733304.hdr.mark = gc_color_red;
  c_733304.hdr.grayed = 0;
@@ -2960,8 +2857,7 @@ return_closcall2(data,  __glo_char_91numeric_127,  &c_733304, r_73334);;
 }
 
 static void __lambda_439(void *data, int argc, object self_73814, object r_73332) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-if( !eq(boolean_f, r_73332) ){ 
+  if( !eq(boolean_f, r_73332) ){ 
   
 closureN_type c_733306;
 c_733306.hdr.mark = gc_color_red;
@@ -2980,8 +2876,7 @@ return_closcall1(data,(closure)&c_733306,  car(((closureN)self_73814)->elts[0]))
 }
 
 static void __lambda_438(void *data, int argc, object self_73815, object r_73333) {
-  Cyc_st_add(data, "scheme/read.sld:token-numeric?");
-return_closcall2(data,  __glo_sign_127,  ((closureN)self_73815)->elts[0], r_73333);; 
+  return_closcall2(data,  __glo_sign_127,  ((closureN)self_73815)->elts[0], r_73333);; 
 }
 
 static void __lambda_437(void *data, int argc, closure _,object k_73339, object c_73138) {
@@ -3002,8 +2897,7 @@ return_closcall1(data,(closure)&c_733276,  equalp(c_73138, obj_char2obj(43)));;
 }
 
 static void __lambda_436(void *data, int argc, object self_73816, object r_73340) {
-  Cyc_st_add(data, "scheme/read.sld:sign?");
-
+  
 closureN_type c_733278;
 c_733278.hdr.mark = gc_color_red;
  c_733278.hdr.grayed = 0;
@@ -3019,8 +2913,7 @@ return_closcall1(data,(closure)&c_733278,  r_73340);;
 }
 
 static void __lambda_435(void *data, int argc, object self_73817, object tmp_73139) {
-  Cyc_st_add(data, "scheme/read.sld:sign?");
-if( !eq(boolean_f, tmp_73139) ){ 
+  if( !eq(boolean_f, tmp_73139) ){ 
   return_closcall1(data,  ((closureN)self_73817)->elts[1],  tmp_73139);
 } else { 
   return_closcall1(data,  ((closureN)self_73817)->elts[1],  equalp(((closureN)self_73817)->elts[0], obj_char2obj(45)));}
@@ -3048,8 +2941,7 @@ return_closcall1(data,(closure)&c_733186,  c_733273);;
 }
 
 static void __lambda_433(void *data, int argc, object self_73818, object r_73344) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733188;
 c_733188.hdr.mark = gc_color_red;
  c_733188.hdr.grayed = 0;
@@ -3066,8 +2958,7 @@ return_closcall1(data,(closure)&c_733188,  r_73344);;
 }
 
 static void __lambda_432(void *data, int argc, object self_73819, object c_73143) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733190;
 c_733190.hdr.mark = gc_color_red;
  c_733190.hdr.grayed = 0;
@@ -3085,8 +2976,7 @@ return_closcall1(data,(closure)&c_733190,  Cyc_is_eof_object(c_73143));;
 }
 
 static void __lambda_431(void *data, int argc, object self_73820, object r_73345) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-if( !eq(boolean_f, r_73345) ){ 
+  if( !eq(boolean_f, r_73345) ){ 
   
 closureN_type c_733192;
 c_733192.hdr.mark = gc_color_red;
@@ -3120,8 +3010,7 @@ return_closcall1(data,(closure)&c_733204,  equalp(obj_char2obj(34), ((closureN)s
 }
 
 static void __lambda_430(void *data, int argc, object self_73821, object r_73355) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733206;
 c_733206.hdr.mark = gc_color_red;
  c_733206.hdr.grayed = 0;
@@ -3139,8 +3028,7 @@ return_closcall1(data,(closure)&c_733206,  r_73355);;
 }
 
 static void __lambda_429(void *data, int argc, object self_73822, object tmp_73144) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733208;
 c_733208.hdr.mark = gc_color_red;
  c_733208.hdr.grayed = 0;
@@ -3170,8 +3058,7 @@ return_closcall1(data,(closure)&c_733208,  &c_733216);;
 }
 
 static void __lambda_428(void *data, int argc, object self_73823, object r_73348) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-if( !eq(boolean_f, r_73348) ){ 
+  if( !eq(boolean_f, r_73348) ){ 
   
 closureN_type c_733218;
 c_733218.hdr.mark = gc_color_red;
@@ -3206,8 +3093,7 @@ return_closcall1(data,(closure)&c_733227,  equalp(obj_char2obj(110), ((closureN)
 }
 
 static void __lambda_427(void *data, int argc, object self_73824, object r_73349) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-if( !eq(boolean_f, r_73349) ){ 
+  if( !eq(boolean_f, r_73349) ){ 
   
 closureN_type c_733229;
 c_733229.hdr.mark = gc_color_red;
@@ -3240,8 +3126,7 @@ return_closcall0(data,(closure)&c_733237);}
 }
 
 static void __lambda_426(void *data, int argc, object self_73825) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733239;
 c_733239.hdr.mark = gc_color_red;
  c_733239.hdr.grayed = 0;
@@ -3257,8 +3142,7 @@ return_closcall2(data,  __glo__list,  &c_733239, ((closureN)self_73825)->elts[0]
 }
 
 static void __lambda_425(void *data, int argc, object self_73826, object r_73354) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733241;
 c_733241.hdr.mark = gc_color_red;
  c_733241.hdr.grayed = 0;
@@ -3276,8 +3160,7 @@ return_closcall1(data,(closure)&c_733241,  c_733261);;
 }
 
 static void __lambda_424(void *data, int argc, object self_73827, object r_73353) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733243;
 c_733243.hdr.mark = gc_color_red;
  c_733243.hdr.grayed = 0;
@@ -3299,8 +3182,7 @@ return_closcall1(data,(closure)&c_733243,  c_733256);;
 }
 
 static void __lambda_423(void *data, int argc, object self_73828, object r_73350) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733245;
 c_733245.hdr.mark = gc_color_red;
  c_733245.hdr.grayed = 0;
@@ -3317,8 +3199,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733245, ((closureN)se
 }
 
 static void __lambda_422(void *data, int argc, object self_73829, object r_73351) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733247;
 c_733247.hdr.mark = gc_color_red;
  c_733247.hdr.grayed = 0;
@@ -3335,27 +3216,23 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733247, ((closureN)se
 }
 
 static void __lambda_421(void *data, int argc, object self_73830, object r_73352) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73830)->elts[0], ((closureN)self_73830)->elts[1], ((closureN)self_73830)->elts[2], r_73352);; 
+  return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73830)->elts[0], ((closureN)self_73830)->elts[1], ((closureN)self_73830)->elts[2], r_73352);; 
 }
 
 static void __lambda_420(void *data, int argc, object self_73831) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 make_cons(c_733234,obj_char2obj(10), ((closureN)self_73831)->elts[0]);
 return_closcall1(data,  ((closureN)self_73831)->elts[1],  &c_733234);; 
 }
 
 static void __lambda_419(void *data, int argc, object self_73832) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 make_cons(c_733223,((closureN)self_73832)->elts[1], ((closureN)self_73832)->elts[0]);
 return_closcall1(data,  ((closureN)self_73832)->elts[2],  &c_733223);; 
 }
 
 static void __lambda_418(void *data, int argc, object self_73833, object k_73356) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-if( !eq(boolean_f, ((closureN)self_73833)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73833)->elts[1]) ){ 
   return_closcall1(data,  k_73356,  ((closureN)self_73833)->elts[1]);
 } else { 
   return_closcall1(data,  k_73356,  equalp(obj_char2obj(92), ((closureN)self_73833)->elts[0]));}
@@ -3363,8 +3240,7 @@ if( !eq(boolean_f, ((closureN)self_73833)->elts[1]) ){
 }
 
 static void __lambda_417(void *data, int argc, object self_73834) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733194;
 c_733194.hdr.mark = gc_color_red;
  c_733194.hdr.grayed = 0;
@@ -3380,8 +3256,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733194, ((closureN)se
 }
 
 static void __lambda_416(void *data, int argc, object self_73835, object r_73346) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 closureN_type c_733196;
 c_733196.hdr.mark = gc_color_red;
  c_733196.hdr.grayed = 0;
@@ -3397,8 +3272,7 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733196, ((closureN)se
 }
 
 static void __lambda_415(void *data, int argc, object self_73836, object r_73347) {
-  Cyc_st_add(data, "scheme/read.sld:read-str-esc");
-
+  
 make_string(c_733199, "missing escaped character within string");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73836)->elts[0], &c_733199, ((closureN)self_73836)->elts[1], r_73347);; 
 }
@@ -3425,8 +3299,7 @@ return_closcall1(data,(closure)&c_733118,  c_733183);;
 }
 
 static void __lambda_413(void *data, int argc, object self_73837, object r_73360) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733120;
 c_733120.hdr.mark = gc_color_red;
  c_733120.hdr.grayed = 0;
@@ -3444,8 +3317,7 @@ return_closcall1(data,(closure)&c_733120,  r_73360);;
 }
 
 static void __lambda_412(void *data, int argc, object self_73838, object c_73148) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733122;
 c_733122.hdr.mark = gc_color_red;
  c_733122.hdr.grayed = 0;
@@ -3464,8 +3336,7 @@ return_closcall1(data,(closure)&c_733122,  Cyc_is_eof_object(c_73148));;
 }
 
 static void __lambda_411(void *data, int argc, object self_73839, object r_73361) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-if( !eq(boolean_f, r_73361) ){ 
+  if( !eq(boolean_f, r_73361) ){ 
   
 closureN_type c_733124;
 c_733124.hdr.mark = gc_color_red;
@@ -3500,8 +3371,7 @@ return_closcall1(data,(closure)&c_733136,  equalp(obj_char2obj(92), ((closureN)s
 }
 
 static void __lambda_410(void *data, int argc, object self_73840, object r_73364) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-if( !eq(boolean_f, r_73364) ){ 
+  if( !eq(boolean_f, r_73364) ){ 
   
 closureN_type c_733138;
 c_733138.hdr.mark = gc_color_red;
@@ -3538,8 +3408,7 @@ return_closcall1(data,(closure)&c_733149,  equalp(obj_char2obj(34), ((closureN)s
 }
 
 static void __lambda_409(void *data, int argc, object self_73841, object r_73366) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-if( !eq(boolean_f, r_73366) ){ 
+  if( !eq(boolean_f, r_73366) ){ 
   
 closureN_type c_733151;
 c_733151.hdr.mark = gc_color_red;
@@ -3574,8 +3443,7 @@ return_closcall0(data,(closure)&c_733161);}
 }
 
 static void __lambda_408(void *data, int argc, object self_73842) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733163;
 c_733163.hdr.mark = gc_color_red;
  c_733163.hdr.grayed = 0;
@@ -3594,13 +3462,11 @@ return_closcall1(data,(closure)&c_733163,  &c_733170);;
 }
 
 static void __lambda_407(void *data, int argc, object self_73843, object r_73368) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-return_closcall4(data,  __glo_read_91str,  ((closureN)self_73843)->elts[1], ((closureN)self_73843)->elts[0], r_73368, ((closureN)self_73843)->elts[2]);; 
+  return_closcall4(data,  __glo_read_91str,  ((closureN)self_73843)->elts[1], ((closureN)self_73843)->elts[0], r_73368, ((closureN)self_73843)->elts[2]);; 
 }
 
 static void __lambda_406(void *data, int argc, object self_73844) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733153;
 c_733153.hdr.mark = gc_color_red;
  c_733153.hdr.grayed = 0;
@@ -3615,15 +3481,13 @@ return_closcall2(data,  __glo_reverse,  &c_733153, ((closureN)self_73844)->elts[
 }
 
 static void __lambda_405(void *data, int argc, object self_73845, object r_73367) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 object c_733158 = Cyc_list2string(data,  ((closureN)self_73845)->elts[0],r_73367);
 return_closcall1(data,  ((closureN)self_73845)->elts[0],  c_733158);; 
 }
 
 static void __lambda_404(void *data, int argc, object self_73846) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733140;
 c_733140.hdr.mark = gc_color_red;
  c_733140.hdr.grayed = 0;
@@ -3640,13 +3504,11 @@ return_closcall4(data,  __glo_read_91str_91esc,  &c_733140, ((closureN)self_7384
 }
 
 static void __lambda_403(void *data, int argc, object self_73847, object r_73365) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-return_closcall4(data,  __glo_read_91str,  ((closureN)self_73847)->elts[1], ((closureN)self_73847)->elts[0], r_73365, ((closureN)self_73847)->elts[2]);; 
+  return_closcall4(data,  __glo_read_91str,  ((closureN)self_73847)->elts[1], ((closureN)self_73847)->elts[0], r_73365, ((closureN)self_73847)->elts[2]);; 
 }
 
 static void __lambda_402(void *data, int argc, object self_73848) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733126;
 c_733126.hdr.mark = gc_color_red;
  c_733126.hdr.grayed = 0;
@@ -3662,8 +3524,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733126, ((closureN)se
 }
 
 static void __lambda_401(void *data, int argc, object self_73849, object r_73362) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 closureN_type c_733128;
 c_733128.hdr.mark = gc_color_red;
  c_733128.hdr.grayed = 0;
@@ -3679,8 +3540,7 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733128, ((closureN)se
 }
 
 static void __lambda_400(void *data, int argc, object self_73850, object r_73363) {
-  Cyc_st_add(data, "scheme/read.sld:read-str");
-
+  
 make_string(c_733131, "missing closing double-quote");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73850)->elts[0], &c_733131, ((closureN)self_73850)->elts[1], r_73363);; 
 }
@@ -3704,8 +3564,7 @@ return_closcall2(data,(closure)&c_732793,  boolean_f, boolean_f);;
 }
 
 static void __lambda_398(void *data, int argc, object self_73851, object done_73154, object loop_73153) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732795;
 c_732795.hdr.mark = gc_color_red;
  c_732795.hdr.grayed = 0;
@@ -3725,8 +3584,7 @@ return_closcall1(data,(closure)&c_732795,  &c_733115);;
 }
 
 static void __lambda_397(void *data, int argc, object self_73852, object done_73154) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732797;
 c_732797.hdr.mark = gc_color_red;
  c_732797.hdr.grayed = 0;
@@ -3746,8 +3604,7 @@ return_closcall1(data,(closure)&c_732797,  &c_733111);;
 }
 
 static void __lambda_396(void *data, int argc, object self_73853, object loop_73153) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732799;
 c_732799.hdr.mark = gc_color_red;
  c_732799.hdr.grayed = 0;
@@ -3766,8 +3623,7 @@ return_closcall2(data,(closure)&c_732799,  boolean_f, boolean_f);;
 }
 
 static void __lambda_395(void *data, int argc, object self_73854, object done_73156, object loop_73155) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732801;
 c_732801.hdr.mark = gc_color_red;
  c_732801.hdr.grayed = 0;
@@ -3796,8 +3652,7 @@ return_closcall1(data,(closure)&c_732801,  &c_732890);;
 }
 
 static void __lambda_394(void *data, int argc, object self_73855, object k_73387, object raw_91buf_73161) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732892;
 c_732892.hdr.mark = gc_color_red;
  c_732892.hdr.grayed = 0;
@@ -3813,8 +3668,7 @@ return_closcall2(data,  __glo_reverse,  &c_732892, raw_91buf_73161);;
 }
 
 static void __lambda_393(void *data, int argc, object self_73856, object r_73388) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732894;
 c_732894.hdr.mark = gc_color_red;
  c_732894.hdr.grayed = 0;
@@ -3830,8 +3684,7 @@ return_closcall1(data,(closure)&c_732894,  r_73388);;
 }
 
 static void __lambda_392(void *data, int argc, object self_73857, object buf_73162) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732896;
 c_732896.hdr.mark = gc_color_red;
  c_732896.hdr.grayed = 0;
@@ -3850,8 +3703,7 @@ return_closcall1(data,(closure)&c_732896,  &c_733108);;
 }
 
 static void __lambda_391(void *data, int argc, object self_73858, object r_73416) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732898;
 c_732898.hdr.mark = gc_color_red;
  c_732898.hdr.grayed = 0;
@@ -3870,8 +3722,7 @@ return_closcall1(data,(closure)&c_732898,  __num_eq(data, &c_733105, r_73416));;
 }
 
 static void __lambda_390(void *data, int argc, object self_73859, object r_73389) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73389) ){ 
+  if( !eq(boolean_f, r_73389) ){ 
   
 closureN_type c_732900;
 c_732900.hdr.mark = gc_color_red;
@@ -3906,8 +3757,7 @@ return_closcall1(data,(closure)&c_732912,  &c_733101);}
 }
 
 static void __lambda_389(void *data, int argc, object self_73860, object r_73415) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732914;
 c_732914.hdr.mark = gc_color_red;
  c_732914.hdr.grayed = 0;
@@ -3926,8 +3776,7 @@ return_closcall1(data,(closure)&c_732914,  __num_eq(data, &c_733098, r_73415));;
 }
 
 static void __lambda_388(void *data, int argc, object self_73861, object r_73392) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73392) ){ 
+  if( !eq(boolean_f, r_73392) ){ 
   
 closureN_type c_732916;
 c_732916.hdr.mark = gc_color_red;
@@ -3970,8 +3819,7 @@ return_closcall1(data,(closure)&c_732923,  &c_733091);}
 }
 
 static void __lambda_387(void *data, int argc, object self_73862, object r_73414) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732925;
 c_732925.hdr.mark = gc_color_red;
  c_732925.hdr.grayed = 0;
@@ -3988,8 +3836,7 @@ return_closcall1(data,(closure)&c_732925,  equalp(((closureN)self_73862)->elts[0
 }
 
 static void __lambda_386(void *data, int argc, object self_73863, object r_73393) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73393) ){ 
+  if( !eq(boolean_f, r_73393) ){ 
   
 closureN_type c_732927;
 c_732927.hdr.mark = gc_color_red;
@@ -4039,8 +3886,7 @@ return_closcall1(data,(closure)&c_732931,  &c_733079);}
 }
 
 static void __lambda_385(void *data, int argc, object self_73864, object r_73413) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732933;
 c_732933.hdr.mark = gc_color_red;
  c_732933.hdr.grayed = 0;
@@ -4057,8 +3903,7 @@ return_closcall1(data,(closure)&c_732933,  equalp(((closureN)self_73864)->elts[0
 }
 
 static void __lambda_384(void *data, int argc, object self_73865, object r_73394) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73394) ){ 
+  if( !eq(boolean_f, r_73394) ){ 
   
 closureN_type c_732935;
 c_732935.hdr.mark = gc_color_red;
@@ -4102,8 +3947,7 @@ return_closcall1(data,(closure)&c_732939,  &c_733070);}
 }
 
 static void __lambda_383(void *data, int argc, object self_73866, object r_73412) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732941;
 c_732941.hdr.mark = gc_color_red;
  c_732941.hdr.grayed = 0;
@@ -4120,8 +3964,7 @@ return_closcall1(data,(closure)&c_732941,  equalp(((closureN)self_73866)->elts[0
 }
 
 static void __lambda_382(void *data, int argc, object self_73867, object r_73395) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73395) ){ 
+  if( !eq(boolean_f, r_73395) ){ 
   
 closureN_type c_732943;
 c_732943.hdr.mark = gc_color_red;
@@ -4165,8 +4008,7 @@ return_closcall1(data,(closure)&c_732947,  &c_733061);}
 }
 
 static void __lambda_381(void *data, int argc, object self_73868, object r_73411) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732949;
 c_732949.hdr.mark = gc_color_red;
  c_732949.hdr.grayed = 0;
@@ -4183,8 +4025,7 @@ return_closcall1(data,(closure)&c_732949,  equalp(((closureN)self_73868)->elts[0
 }
 
 static void __lambda_380(void *data, int argc, object self_73869, object r_73396) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73396) ){ 
+  if( !eq(boolean_f, r_73396) ){ 
   
 closureN_type c_732951;
 c_732951.hdr.mark = gc_color_red;
@@ -4230,8 +4071,7 @@ return_closcall1(data,(closure)&c_732955,  &c_733051);}
 }
 
 static void __lambda_379(void *data, int argc, object self_73870, object r_73410) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732957;
 c_732957.hdr.mark = gc_color_red;
  c_732957.hdr.grayed = 0;
@@ -4248,8 +4088,7 @@ return_closcall1(data,(closure)&c_732957,  equalp(((closureN)self_73870)->elts[0
 }
 
 static void __lambda_378(void *data, int argc, object self_73871, object r_73397) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73397) ){ 
+  if( !eq(boolean_f, r_73397) ){ 
   
 closureN_type c_732959;
 c_732959.hdr.mark = gc_color_red;
@@ -4289,8 +4128,7 @@ return_closcall1(data,(closure)&c_732963,  &c_733044);}
 }
 
 static void __lambda_377(void *data, int argc, object self_73872, object r_73409) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732965;
 c_732965.hdr.mark = gc_color_red;
  c_732965.hdr.grayed = 0;
@@ -4307,8 +4145,7 @@ return_closcall1(data,(closure)&c_732965,  equalp(((closureN)self_73872)->elts[0
 }
 
 static void __lambda_376(void *data, int argc, object self_73873, object r_73398) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73398) ){ 
+  if( !eq(boolean_f, r_73398) ){ 
   
 closureN_type c_732967;
 c_732967.hdr.mark = gc_color_red;
@@ -4352,8 +4189,7 @@ return_closcall1(data,(closure)&c_732971,  &c_733035);}
 }
 
 static void __lambda_375(void *data, int argc, object self_73874, object r_73408) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732973;
 c_732973.hdr.mark = gc_color_red;
  c_732973.hdr.grayed = 0;
@@ -4370,8 +4206,7 @@ return_closcall1(data,(closure)&c_732973,  equalp(((closureN)self_73874)->elts[0
 }
 
 static void __lambda_374(void *data, int argc, object self_73875, object r_73399) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73399) ){ 
+  if( !eq(boolean_f, r_73399) ){ 
   
 closureN_type c_732975;
 c_732975.hdr.mark = gc_color_red;
@@ -4413,8 +4248,7 @@ return_closcall1(data,(closure)&c_732979,  &c_733027);}
 }
 
 static void __lambda_373(void *data, int argc, object self_73876, object r_73407) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732981;
 c_732981.hdr.mark = gc_color_red;
  c_732981.hdr.grayed = 0;
@@ -4431,8 +4265,7 @@ return_closcall1(data,(closure)&c_732981,  equalp(((closureN)self_73876)->elts[0
 }
 
 static void __lambda_372(void *data, int argc, object self_73877, object r_73400) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73400) ){ 
+  if( !eq(boolean_f, r_73400) ){ 
   
 closureN_type c_732983;
 c_732983.hdr.mark = gc_color_red;
@@ -4470,8 +4303,7 @@ return_closcall1(data,(closure)&c_732987,  &c_733021);}
 }
 
 static void __lambda_371(void *data, int argc, object self_73878, object r_73406) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732989;
 c_732989.hdr.mark = gc_color_red;
  c_732989.hdr.grayed = 0;
@@ -4488,8 +4320,7 @@ return_closcall1(data,(closure)&c_732989,  equalp(((closureN)self_73878)->elts[0
 }
 
 static void __lambda_370(void *data, int argc, object self_73879, object r_73401) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73401) ){ 
+  if( !eq(boolean_f, r_73401) ){ 
   
 closureN_type c_732991;
 c_732991.hdr.mark = gc_color_red;
@@ -4521,8 +4352,7 @@ return_closcall0(data,(closure)&c_732995);}
 }
 
 static void __lambda_369(void *data, int argc, object self_73880) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732997;
 c_732997.hdr.mark = gc_color_red;
  c_732997.hdr.grayed = 0;
@@ -4540,8 +4370,7 @@ return_closcall1(data,(closure)&c_732997,  c_733016);;
 }
 
 static void __lambda_368(void *data, int argc, object self_73881, object r_73405) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732999;
 c_732999.hdr.mark = gc_color_red;
  c_732999.hdr.grayed = 0;
@@ -4561,8 +4390,7 @@ return_closcall1(data,(closure)&c_732999,  c_733012);;
 }
 
 static void __lambda_367(void *data, int argc, object self_73882, object r_73402) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_733001;
 c_733001.hdr.mark = gc_color_red;
  c_733001.hdr.grayed = 0;
@@ -4579,8 +4407,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_733001, ((closureN)se
 }
 
 static void __lambda_366(void *data, int argc, object self_73883, object r_73403) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_733003;
 c_733003.hdr.mark = gc_color_red;
  c_733003.hdr.grayed = 0;
@@ -4597,63 +4424,51 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_733003, ((closureN)se
 }
 
 static void __lambda_365(void *data, int argc, object self_73884, object r_73404) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73884)->elts[0], ((closureN)self_73884)->elts[1], ((closureN)self_73884)->elts[2], r_73404);; 
+  return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73884)->elts[0], ((closureN)self_73884)->elts[1], ((closureN)self_73884)->elts[2], r_73404);; 
 }
 
 static void __lambda_364(void *data, int argc, object self_73885) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73885)->elts[0],  obj_char2obj(9));; 
+  return_closcall1(data,  ((closureN)self_73885)->elts[0],  obj_char2obj(9));; 
 }
 
 static void __lambda_363(void *data, int argc, object self_73886) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73886)->elts[0],  obj_char2obj(32));; 
+  return_closcall1(data,  ((closureN)self_73886)->elts[0],  obj_char2obj(32));; 
 }
 
 static void __lambda_362(void *data, int argc, object self_73887) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73887)->elts[0],  obj_char2obj(13));; 
+  return_closcall1(data,  ((closureN)self_73887)->elts[0],  obj_char2obj(13));; 
 }
 
 static void __lambda_361(void *data, int argc, object self_73888) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73888)->elts[0],  obj_char2obj(0));; 
+  return_closcall1(data,  ((closureN)self_73888)->elts[0],  obj_char2obj(0));; 
 }
 
 static void __lambda_360(void *data, int argc, object self_73889) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73889)->elts[0],  obj_char2obj(10));; 
+  return_closcall1(data,  ((closureN)self_73889)->elts[0],  obj_char2obj(10));; 
 }
 
 static void __lambda_359(void *data, int argc, object self_73890) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73890)->elts[0],  obj_char2obj(27));; 
+  return_closcall1(data,  ((closureN)self_73890)->elts[0],  obj_char2obj(27));; 
 }
 
 static void __lambda_358(void *data, int argc, object self_73891) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73891)->elts[0],  obj_char2obj(127));; 
+  return_closcall1(data,  ((closureN)self_73891)->elts[0],  obj_char2obj(127));; 
 }
 
 static void __lambda_357(void *data, int argc, object self_73892) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73892)->elts[0],  obj_char2obj(8));; 
+  return_closcall1(data,  ((closureN)self_73892)->elts[0],  obj_char2obj(8));; 
 }
 
 static void __lambda_356(void *data, int argc, object self_73893) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73893)->elts[0],  obj_char2obj(7));; 
+  return_closcall1(data,  ((closureN)self_73893)->elts[0],  obj_char2obj(7));; 
 }
 
 static void __lambda_355(void *data, int argc, object self_73894) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall1(data,  ((closureN)self_73894)->elts[1],  car(((closureN)self_73894)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_73894)->elts[1],  car(((closureN)self_73894)->elts[0]));; 
 }
 
 static void __lambda_354(void *data, int argc, object self_73895) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732902;
 c_732902.hdr.mark = gc_color_red;
  c_732902.hdr.grayed = 0;
@@ -4669,8 +4484,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_732902, ((closureN)se
 }
 
 static void __lambda_353(void *data, int argc, object self_73896, object r_73390) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732904;
 c_732904.hdr.mark = gc_color_red;
  c_732904.hdr.grayed = 0;
@@ -4686,15 +4500,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_732904, ((closureN)se
 }
 
 static void __lambda_352(void *data, int argc, object self_73897, object r_73391) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 make_string(c_732907, "missing character");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73897)->elts[0], &c_732907, ((closureN)self_73897)->elts[1], r_73391);; 
 }
 
 static void __lambda_351(void *data, int argc, object self_73898, object r_73386) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732803;
 c_732803.hdr.mark = gc_color_red;
  c_732803.hdr.grayed = 0;
@@ -4712,8 +4524,7 @@ return_closcall1(data,(closure)&c_732803,  Cyc_set_car(data, ((closureN)self_738
 }
 
 static void __lambda_350(void *data, int argc, object self_73899, object r_73372) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732805;
 c_732805.hdr.mark = gc_color_red;
  c_732805.hdr.grayed = 0;
@@ -4742,8 +4553,7 @@ return_closcall1(data,(closure)&c_732805,  &c_732818);;
 }
 
 static void __lambda_349(void *data, int argc, object self_73900, object k_73376, object buf_73157) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732820;
 c_732820.hdr.mark = gc_color_red;
  c_732820.hdr.grayed = 0;
@@ -4764,8 +4574,7 @@ return_closcall1(data,(closure)&c_732820,  c_732885);;
 }
 
 static void __lambda_348(void *data, int argc, object self_73901, object r_73377) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732822;
 c_732822.hdr.mark = gc_color_red;
  c_732822.hdr.grayed = 0;
@@ -4784,8 +4593,7 @@ return_closcall1(data,(closure)&c_732822,  r_73377);;
 }
 
 static void __lambda_347(void *data, int argc, object self_73902, object c_73158) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732824;
 c_732824.hdr.mark = gc_color_red;
  c_732824.hdr.grayed = 0;
@@ -4805,8 +4613,7 @@ return_closcall1(data,(closure)&c_732824,  Cyc_is_eof_object(c_73158));;
 }
 
 static void __lambda_346(void *data, int argc, object self_73903, object r_73381) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732826;
 c_732826.hdr.mark = gc_color_red;
  c_732826.hdr.grayed = 0;
@@ -4826,8 +4633,7 @@ return_closcall1(data,(closure)&c_732826,  r_73381);;
 }
 
 static void __lambda_345(void *data, int argc, object self_73904, object tmp_73159) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732828;
 c_732828.hdr.mark = gc_color_red;
  c_732828.hdr.grayed = 0;
@@ -4859,8 +4665,7 @@ return_closcall1(data,(closure)&c_732828,  &c_732857);;
 }
 
 static void __lambda_344(void *data, int argc, object self_73905, object r_73378) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73378) ){ 
+  if( !eq(boolean_f, r_73378) ){ 
   return_closcall2(data,  cell_get(((closureN)self_73905)->elts[1]),  ((closureN)self_73905)->elts[3], ((closureN)self_73905)->elts[0]);
 } else { 
   
@@ -4883,8 +4688,7 @@ return_closcall1(data,(closure)&c_732865,  c_732879);}
 }
 
 static void __lambda_343(void *data, int argc, object self_73906, object r_73380) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732867;
 c_732867.hdr.mark = gc_color_red;
  c_732867.hdr.grayed = 0;
@@ -4902,13 +4706,11 @@ return_closcall1(data,(closure)&c_732867,  &c_732875);;
 }
 
 static void __lambda_342(void *data, int argc, object self_73907, object r_73379) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall2(data,  cell_get(((closureN)self_73907)->elts[1]),  ((closureN)self_73907)->elts[0], r_73379);; 
+  return_closcall2(data,  cell_get(((closureN)self_73907)->elts[1]),  ((closureN)self_73907)->elts[0], r_73379);; 
 }
 
 static void __lambda_341(void *data, int argc, object self_73908, object k_73382) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, ((closureN)self_73908)->elts[2]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73908)->elts[2]) ){ 
   return_closcall1(data,  k_73382,  ((closureN)self_73908)->elts[2]);
 } else { 
   
@@ -4929,8 +4731,7 @@ return_closcall2(data,  __glo_char_91whitespace_127,  &c_732833, ((closureN)self
 }
 
 static void __lambda_340(void *data, int argc, object self_73909, object r_73383) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732835;
 c_732835.hdr.mark = gc_color_red;
  c_732835.hdr.grayed = 0;
@@ -4947,8 +4748,7 @@ return_closcall1(data,(closure)&c_732835,  r_73383);;
 }
 
 static void __lambda_339(void *data, int argc, object self_73910, object tmp_73160) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, tmp_73160) ){ 
+  if( !eq(boolean_f, tmp_73160) ){ 
   return_closcall1(data,  ((closureN)self_73910)->elts[2],  tmp_73160);
 } else { 
   
@@ -4970,8 +4770,7 @@ return_closcall1(data,(closure)&c_732839,  &c_732854);}
 }
 
 static void __lambda_338(void *data, int argc, object self_73911, object r_73385) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732841;
 c_732841.hdr.mark = gc_color_red;
  c_732841.hdr.grayed = 0;
@@ -4989,8 +4788,7 @@ return_closcall1(data,(closure)&c_732841,  __num_gt(data, r_73385, &c_732851));;
 }
 
 static void __lambda_337(void *data, int argc, object self_73912, object r_73384) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-if( !eq(boolean_f, r_73384) ){ 
+  if( !eq(boolean_f, r_73384) ){ 
   return_closcall1(data,  ((closureN)self_73912)->elts[1],  equalp(((closureN)self_73912)->elts[0], obj_char2obj(41)));
 } else { 
   return_closcall1(data,  ((closureN)self_73912)->elts[1],  boolean_f);}
@@ -4998,8 +4796,7 @@ if( !eq(boolean_f, r_73384) ){
 }
 
 static void __lambda_336(void *data, int argc, object self_73913, object r_73375) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732807;
 c_732807.hdr.mark = gc_color_red;
  c_732807.hdr.grayed = 0;
@@ -5015,8 +4812,7 @@ return_closcall1(data,(closure)&c_732807,  Cyc_set_car(data, ((closureN)self_739
 }
 
 static void __lambda_335(void *data, int argc, object self_73914, object r_73373) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-
+  
 closureN_type c_732809;
 c_732809.hdr.mark = gc_color_red;
  c_732809.hdr.grayed = 0;
@@ -5032,8 +4828,7 @@ return_closcall1(data,(closure)&c_732809,  nil);;
 }
 
 static void __lambda_334(void *data, int argc, object self_73915, object r_73374) {
-  Cyc_st_add(data, "scheme/read.sld:read-pound");
-return_closcall2(data,  cell_get(((closureN)self_73915)->elts[1]),  ((closureN)self_73915)->elts[0], r_73374);; 
+  return_closcall2(data,  cell_get(((closureN)self_73915)->elts[1]),  ((closureN)self_73915)->elts[0], r_73374);; 
 }
 
 static void __lambda_333(void *data, int argc, closure _,object k_73419, object fp_73169, object tok_73168, object toks_73167, object all_127_73166, object comment_127_73165, object parens_73164, object ptbl_73163) {
@@ -5060,8 +4855,7 @@ return_closcall1(data,(closure)&c_731524,  boolean_f);;
 }
 
 static void __lambda_332(void *data, int argc, object self_73916, object new_91toks_73170) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731526;
 c_731526.hdr.mark = gc_color_red;
  c_731526.hdr.grayed = 0;
@@ -5083,8 +4877,7 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_731526, ((closureN)se
 }
 
 static void __lambda_331(void *data, int argc, object self_73917, object r_73624) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731528;
 c_731528.hdr.mark = gc_color_red;
  c_731528.hdr.grayed = 0;
@@ -5110,8 +4903,7 @@ return_closcall1(data,(closure)&c_731528,  &c_732788);;
 }
 
 static void __lambda_330(void *data, int argc, object self_73918, object r_73623) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731530;
 c_731530.hdr.mark = gc_color_red;
  c_731530.hdr.grayed = 0;
@@ -5133,8 +4925,7 @@ return_closcall3(data,  __glo_in_91port_117set_91cnum_67,  &c_731530, ((closureN
 }
 
 static void __lambda_329(void *data, int argc, object self_73919, object r_73420) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731532;
 c_731532.hdr.mark = gc_color_red;
  c_731532.hdr.grayed = 0;
@@ -5168,8 +4959,7 @@ return_closcall1(data,(closure)&c_731532,  &c_731545);;
 }
 
 static void __lambda_328(void *data, int argc, object self_73920, object r_73421) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731547;
 c_731547.hdr.mark = gc_color_red;
  c_731547.hdr.grayed = 0;
@@ -5191,8 +4981,7 @@ return_closcall1(data,(closure)&c_731547,  r_73421);;
 }
 
 static void __lambda_327(void *data, int argc, object self_73921, object c_73171) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731549;
 c_731549.hdr.mark = gc_color_red;
  c_731549.hdr.grayed = 0;
@@ -5215,8 +5004,7 @@ return_closcall1(data,(closure)&c_731549,  Cyc_is_eof_object(c_73171));;
 }
 
 static void __lambda_326(void *data, int argc, object self_73922, object r_73422) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73422) ){ 
+  if( !eq(boolean_f, r_73422) ){ 
   
 closureN_type c_731551;
 c_731551.hdr.mark = gc_color_red;
@@ -5280,8 +5068,7 @@ return_closcall2(data,  __glo_char_91whitespace_127,  &c_731649, ((closureN)self
 }
 
 static void __lambda_325(void *data, int argc, object self_73923, object r_73439) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73439) ){ 
+  if( !eq(boolean_f, r_73439) ){ 
   
 closureN_type c_731651;
 c_731651.hdr.mark = gc_color_red;
@@ -5325,8 +5112,7 @@ return_closcall1(data,(closure)&c_731698,  Cyc_eq(((closureN)self_73923)->elts[1
 }
 
 static void __lambda_324(void *data, int argc, object self_73924, object r_73448) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73448) ){ 
+  if( !eq(boolean_f, r_73448) ){ 
   
 closureN_type c_731700;
 c_731700.hdr.mark = gc_color_red;
@@ -5370,8 +5156,7 @@ return_closcall1(data,(closure)&c_731711,  Cyc_eq(((closureN)self_73924)->elts[1
 }
 
 static void __lambda_323(void *data, int argc, object self_73925, object r_73449) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73449) ){ 
+  if( !eq(boolean_f, r_73449) ){ 
   
 closureN_type c_731713;
 c_731713.hdr.mark = gc_color_red;
@@ -5415,8 +5200,7 @@ return_closcall1(data,(closure)&c_731803,  Cyc_eq(((closureN)self_73925)->elts[1
 }
 
 static void __lambda_322(void *data, int argc, object self_73926, object r_73466) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73466) ){ 
+  if( !eq(boolean_f, r_73466) ){ 
   
 closureN_type c_731805;
 c_731805.hdr.mark = gc_color_red;
@@ -5460,8 +5244,7 @@ return_closcall1(data,(closure)&c_731895,  Cyc_eq(((closureN)self_73926)->elts[1
 }
 
 static void __lambda_321(void *data, int argc, object self_73927, object r_73483) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73483) ){ 
+  if( !eq(boolean_f, r_73483) ){ 
   
 closureN_type c_731897;
 c_731897.hdr.mark = gc_color_red;
@@ -5505,8 +5288,7 @@ return_closcall1(data,(closure)&c_732094,  Cyc_eq(((closureN)self_73927)->elts[1
 }
 
 static void __lambda_320(void *data, int argc, object self_73928, object r_73515) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73515) ){ 
+  if( !eq(boolean_f, r_73515) ){ 
   
 closureN_type c_732096;
 c_732096.hdr.mark = gc_color_red;
@@ -5550,8 +5332,7 @@ return_closcall1(data,(closure)&c_732211,  Cyc_eq(((closureN)self_73928)->elts[1
 }
 
 static void __lambda_319(void *data, int argc, object self_73929, object r_73536) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73536) ){ 
+  if( !eq(boolean_f, r_73536) ){ 
   
 closureN_type c_732213;
 c_732213.hdr.mark = gc_color_red;
@@ -5594,8 +5375,7 @@ return_closcall1(data,(closure)&c_732272,  Cyc_eq(((closureN)self_73929)->elts[1
 }
 
 static void __lambda_318(void *data, int argc, object self_73930, object r_73548) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73548) ){ 
+  if( !eq(boolean_f, r_73548) ){ 
   
 closureN_type c_732274;
 c_732274.hdr.mark = gc_color_red;
@@ -5639,8 +5419,7 @@ return_closcall1(data,(closure)&c_732357,  Cyc_eq(((closureN)self_73930)->elts[1
 }
 
 static void __lambda_317(void *data, int argc, object self_73931, object r_73562) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73562) ){ 
+  if( !eq(boolean_f, r_73562) ){ 
   
 closureN_type c_732359;
 c_732359.hdr.mark = gc_color_red;
@@ -5684,8 +5463,7 @@ return_closcall0(data,(closure)&c_732743);}
 }
 
 static void __lambda_316(void *data, int argc, object self_73932) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732745;
 c_732745.hdr.mark = gc_color_red;
  c_732745.hdr.grayed = 0;
@@ -5707,13 +5485,11 @@ return_closcall1(data,(closure)&c_732745,  &c_732755);;
 }
 
 static void __lambda_315(void *data, int argc, object self_73933, object r_73620) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_73933)->elts[2], ((closureN)self_73933)->elts[1], r_73620, ((closureN)self_73933)->elts[5], ((closureN)self_73933)->elts[0], boolean_f, ((closureN)self_73933)->elts[3], ((closureN)self_73933)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_73933)->elts[2], ((closureN)self_73933)->elts[1], r_73620, ((closureN)self_73933)->elts[5], ((closureN)self_73933)->elts[0], boolean_f, ((closureN)self_73933)->elts[3], ((closureN)self_73933)->elts[4]);; 
 }
 
 static void __lambda_314(void *data, int argc, object self_73934) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732361;
 c_732361.hdr.mark = gc_color_red;
  c_732361.hdr.grayed = 0;
@@ -5735,8 +5511,7 @@ return_closcall1(data,(closure)&c_732361,  Cyc_is_null(((closureN)self_73934)->e
 }
 
 static void __lambda_313(void *data, int argc, object self_73935, object r_73563) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73563) ){ 
+  if( !eq(boolean_f, r_73563) ){ 
   
 closureN_type c_732363;
 c_732363.hdr.mark = gc_color_red;
@@ -5781,13 +5556,11 @@ return_closcall1(data,(closure)&c_732726,  &c_732736);}
 }
 
 static void __lambda_312(void *data, int argc, object self_73936, object r_73619) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_73936)->elts[2], ((closureN)self_73936)->elts[1], r_73619, ((closureN)self_73936)->elts[5], ((closureN)self_73936)->elts[0], boolean_f, ((closureN)self_73936)->elts[3], ((closureN)self_73936)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_73936)->elts[2], ((closureN)self_73936)->elts[1], r_73619, ((closureN)self_73936)->elts[5], ((closureN)self_73936)->elts[0], boolean_f, ((closureN)self_73936)->elts[3], ((closureN)self_73936)->elts[4]);; 
 }
 
 static void __lambda_311(void *data, int argc, object self_73937, object r_73564) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732365;
 c_732365.hdr.mark = gc_color_red;
  c_732365.hdr.grayed = 0;
@@ -5808,8 +5581,7 @@ return_closcall1(data,(closure)&c_732365,  r_73564);;
 }
 
 static void __lambda_310(void *data, int argc, object self_73938, object next_91c_73172) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732367;
 c_732367.hdr.mark = gc_color_red;
  c_732367.hdr.grayed = 0;
@@ -5831,8 +5603,7 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_732367, ((closureN)se
 }
 
 static void __lambda_309(void *data, int argc, object self_73939, object r_73618) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732369;
 c_732369.hdr.mark = gc_color_red;
  c_732369.hdr.grayed = 0;
@@ -5858,8 +5629,7 @@ return_closcall1(data,(closure)&c_732369,  &c_732718);;
 }
 
 static void __lambda_308(void *data, int argc, object self_73940, object r_73617) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732371;
 c_732371.hdr.mark = gc_color_red;
  c_732371.hdr.grayed = 0;
@@ -5881,8 +5651,7 @@ return_closcall3(data,  __glo_in_91port_117set_91cnum_67,  &c_732371, ((closureN
 }
 
 static void __lambda_307(void *data, int argc, object self_73941, object r_73565) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732373;
 c_732373.hdr.mark = gc_color_red;
  c_732373.hdr.grayed = 0;
@@ -5904,8 +5673,7 @@ return_closcall1(data,(closure)&c_732373,  Cyc_eq(obj_char2obj(124), ((closureN)
 }
 
 static void __lambda_306(void *data, int argc, object self_73942, object r_73566) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73566) ){ 
+  if( !eq(boolean_f, r_73566) ){ 
   
 closureN_type c_732375;
 c_732375.hdr.mark = gc_color_red;
@@ -5947,8 +5715,7 @@ return_closcall1(data,(closure)&c_732390,  Cyc_eq(obj_char2obj(116), ((closureN)
 }
 
 static void __lambda_305(void *data, int argc, object self_73943, object r_73569) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73569) ){ 
+  if( !eq(boolean_f, r_73569) ){ 
   
 closureN_type c_732392;
 c_732392.hdr.mark = gc_color_red;
@@ -5990,8 +5757,7 @@ return_closcall1(data,(closure)&c_732412,  Cyc_eq(obj_char2obj(102), ((closureN)
 }
 
 static void __lambda_304(void *data, int argc, object self_73944, object r_73572) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73572) ){ 
+  if( !eq(boolean_f, r_73572) ){ 
   
 closureN_type c_732414;
 c_732414.hdr.mark = gc_color_red;
@@ -6033,8 +5799,7 @@ return_closcall1(data,(closure)&c_732434,  Cyc_eq(obj_char2obj(101), ((closureN)
 }
 
 static void __lambda_303(void *data, int argc, object self_73945, object r_73575) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73575) ){ 
+  if( !eq(boolean_f, r_73575) ){ 
   
 closureN_type c_732436;
 c_732436.hdr.mark = gc_color_red;
@@ -6076,8 +5841,7 @@ return_closcall1(data,(closure)&c_732453,  Cyc_eq(obj_char2obj(105), ((closureN)
 }
 
 static void __lambda_302(void *data, int argc, object self_73946, object r_73579) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73579) ){ 
+  if( !eq(boolean_f, r_73579) ){ 
   
 closureN_type c_732455;
 c_732455.hdr.mark = gc_color_red;
@@ -6119,8 +5883,7 @@ return_closcall1(data,(closure)&c_732472,  Cyc_eq(obj_char2obj(98), ((closureN)s
 }
 
 static void __lambda_301(void *data, int argc, object self_73947, object r_73583) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73583) ){ 
+  if( !eq(boolean_f, r_73583) ){ 
   
 closureN_type c_732474;
 c_732474.hdr.mark = gc_color_red;
@@ -6162,8 +5925,7 @@ return_closcall1(data,(closure)&c_732498,  Cyc_eq(obj_char2obj(111), ((closureN)
 }
 
 static void __lambda_300(void *data, int argc, object self_73948, object r_73587) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73587) ){ 
+  if( !eq(boolean_f, r_73587) ){ 
   
 closureN_type c_732500;
 c_732500.hdr.mark = gc_color_red;
@@ -6205,8 +5967,7 @@ return_closcall1(data,(closure)&c_732524,  Cyc_eq(obj_char2obj(120), ((closureN)
 }
 
 static void __lambda_299(void *data, int argc, object self_73949, object r_73591) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73591) ){ 
+  if( !eq(boolean_f, r_73591) ){ 
   
 closureN_type c_732526;
 c_732526.hdr.mark = gc_color_red;
@@ -6248,8 +6009,7 @@ return_closcall1(data,(closure)&c_732550,  Cyc_eq(obj_char2obj(40), ((closureN)s
 }
 
 static void __lambda_298(void *data, int argc, object self_73950, object r_73595) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73595) ){ 
+  if( !eq(boolean_f, r_73595) ){ 
   
 closureN_type c_732552;
 c_732552.hdr.mark = gc_color_red;
@@ -6290,8 +6050,7 @@ return_closcall1(data,(closure)&c_732644,  Cyc_eq(obj_char2obj(92), ((closureN)s
 }
 
 static void __lambda_297(void *data, int argc, object self_73951, object r_73611) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73611) ){ 
+  if( !eq(boolean_f, r_73611) ){ 
   
 closureN_type c_732646;
 c_732646.hdr.mark = gc_color_red;
@@ -6327,8 +6086,7 @@ return_closcall0(data,(closure)&c_732674);}
 }
 
 static void __lambda_296(void *data, int argc, object self_73952) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732676;
 c_732676.hdr.mark = gc_color_red;
  c_732676.hdr.grayed = 0;
@@ -6344,8 +6102,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_732676, ((closureN)se
 }
 
 static void __lambda_295(void *data, int argc, object self_73953, object r_73615) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732678;
 c_732678.hdr.mark = gc_color_red;
  c_732678.hdr.grayed = 0;
@@ -6361,15 +6118,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_732678, ((closureN)se
 }
 
 static void __lambda_294(void *data, int argc, object self_73954, object r_73616) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_string(c_732681, "Unhandled input sequence");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73954)->elts[0], &c_732681, ((closureN)self_73954)->elts[1], r_73616);; 
 }
 
 static void __lambda_293(void *data, int argc, object self_73955) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732648;
 c_732648.hdr.mark = gc_color_red;
  c_732648.hdr.grayed = 0;
@@ -6389,8 +6144,7 @@ return_closcall3(data,  __glo_read_91pound,  &c_732648, ((closureN)self_73955)->
 }
 
 static void __lambda_292(void *data, int argc, object self_73956, object r_73614) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732650;
 c_732650.hdr.mark = gc_color_red;
  c_732650.hdr.grayed = 0;
@@ -6411,8 +6165,7 @@ return_closcall1(data,(closure)&c_732650,  &c_732669);;
 }
 
 static void __lambda_291(void *data, int argc, object self_73957, object r_73612) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732652;
 c_732652.hdr.mark = gc_color_red;
  c_732652.hdr.grayed = 0;
@@ -6431,8 +6184,7 @@ return_closcall1(data,(closure)&c_732652,  r_73612);;
 }
 
 static void __lambda_290(void *data, int argc, object self_73958, object new_91toks_73173) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_73958)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73958)->elts[0]) ){ 
   
 closureN_type c_732655;
 c_732655.hdr.mark = gc_color_red;
@@ -6456,13 +6208,11 @@ return_closcall1(data,(closure)&c_732655,  nil);
 }
 
 static void __lambda_289(void *data, int argc, object self_73959, object r_73613) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_73959)->elts[2], ((closureN)self_73959)->elts[1], r_73613, ((closureN)self_73959)->elts[3], ((closureN)self_73959)->elts[0], boolean_f, ((closureN)self_73959)->elts[4], ((closureN)self_73959)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_73959)->elts[2], ((closureN)self_73959)->elts[1], r_73613, ((closureN)self_73959)->elts[3], ((closureN)self_73959)->elts[0], boolean_f, ((closureN)self_73959)->elts[4], ((closureN)self_73959)->elts[5]);; 
 }
 
 static void __lambda_288(void *data, int argc, object self_73960) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732554;
 c_732554.hdr.mark = gc_color_red;
  c_732554.hdr.grayed = 0;
@@ -6483,8 +6233,7 @@ return_closcall1(data,(closure)&c_732554,  nil);;
 }
 
 static void __lambda_287(void *data, int argc, object self_73961, object r_73608) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732556;
 c_732556.hdr.mark = gc_color_red;
  c_732556.hdr.grayed = 0;
@@ -6506,8 +6255,7 @@ return_closcall1(data,(closure)&c_732556,  nil);;
 }
 
 static void __lambda_286(void *data, int argc, object self_73962, object r_73609) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732558;
 c_732558.hdr.mark = gc_color_red;
  c_732558.hdr.grayed = 0;
@@ -6534,8 +6282,7 @@ return_closcall1(data,(closure)&c_732558,  &c_732640);;
 }
 
 static void __lambda_285(void *data, int argc, object self_73963, object r_73610) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732560;
 c_732560.hdr.mark = gc_color_red;
  c_732560.hdr.grayed = 0;
@@ -6556,8 +6303,7 @@ return_closcall8(data,  __glo_parse,  &c_732560, ((closureN)self_73963)->elts[1]
 }
 
 static void __lambda_284(void *data, int argc, object self_73964, object r_73596) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732562;
 c_732562.hdr.mark = gc_color_red;
  c_732562.hdr.grayed = 0;
@@ -6577,8 +6323,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_732562, ((closureN)self_73964)->el
 }
 
 static void __lambda_283(void *data, int argc, object self_73965, object r_73597) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732564;
 c_732564.hdr.mark = gc_color_red;
  c_732564.hdr.grayed = 0;
@@ -6597,8 +6342,7 @@ return_closcall2(data,(closure)&c_732564,  ((closureN)self_73965)->elts[5], r_73
 }
 
 static void __lambda_282(void *data, int argc, object self_73966, object sub_73175, object toks_85_73174) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732566;
 c_732566.hdr.mark = gc_color_red;
  c_732566.hdr.grayed = 0;
@@ -6619,8 +6363,7 @@ return_closcall1(data,(closure)&c_732566,  boolean_f);;
 }
 
 static void __lambda_281(void *data, int argc, object self_73967, object new_91toks_73176) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732568;
 c_732568.hdr.mark = gc_color_red;
  c_732568.hdr.grayed = 0;
@@ -6643,8 +6386,7 @@ return_closcall1(data,(closure)&c_732568,  &c_732630);;
 }
 
 static void __lambda_280(void *data, int argc, object self_73968, object new_91toks_73176) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732570;
 c_732570.hdr.mark = gc_color_red;
  c_732570.hdr.grayed = 0;
@@ -6677,8 +6419,7 @@ return_closcall1(data,(closure)&c_732570,  &c_732600);;
 }
 
 static void __lambda_279(void *data, int argc, object self_73969, object r_73601) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732602;
 c_732602.hdr.mark = gc_color_red;
  c_732602.hdr.grayed = 0;
@@ -6698,8 +6439,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_732602, r_73601, ((closureN)self_73
 }
 
 static void __lambda_278(void *data, int argc, object self_73970, object r_73600) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732604;
 c_732604.hdr.mark = gc_color_red;
  c_732604.hdr.grayed = 0;
@@ -6719,8 +6459,7 @@ return_closcall1(data,(closure)&c_732604,  Cyc_set_car(data, ((closureN)self_739
 }
 
 static void __lambda_277(void *data, int argc, object self_73971, object r_73598) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_73971)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73971)->elts[0]) ){ 
   
 closureN_type c_732607;
 c_732607.hdr.mark = gc_color_red;
@@ -6744,13 +6483,11 @@ return_closcall1(data,(closure)&c_732607,  nil);
 }
 
 static void __lambda_276(void *data, int argc, object self_73972, object r_73599) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_73972)->elts[2], ((closureN)self_73972)->elts[1], r_73599, cell_get(((closureN)self_73972)->elts[3]), ((closureN)self_73972)->elts[0], boolean_f, ((closureN)self_73972)->elts[4], ((closureN)self_73972)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_73972)->elts[2], ((closureN)self_73972)->elts[1], r_73599, cell_get(((closureN)self_73972)->elts[3]), ((closureN)self_73972)->elts[0], boolean_f, ((closureN)self_73972)->elts[4], ((closureN)self_73972)->elts[5]);; 
 }
 
 static void __lambda_275(void *data, int argc, object self_73973, object k_73602) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732572;
 c_732572.hdr.mark = gc_color_red;
  c_732572.hdr.grayed = 0;
@@ -6778,8 +6515,7 @@ return_closcall1(data,(closure)&c_732572,  &c_732583);;
 }
 
 static void __lambda_274(void *data, int argc, object self_73974, object r_73603) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73603) ){ 
+  if( !eq(boolean_f, r_73603) ){ 
   
 closureN_type c_732585;
 c_732585.hdr.mark = gc_color_red;
@@ -6801,8 +6537,7 @@ return_closcall1(data,  ((closureN)self_73974)->elts[0],  c_732598);}
 }
 
 static void __lambda_273(void *data, int argc, object self_73975, object r_73604) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732587;
 c_732587.hdr.mark = gc_color_red;
  c_732587.hdr.grayed = 0;
@@ -6818,15 +6553,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_732587, ((closureN)se
 }
 
 static void __lambda_272(void *data, int argc, object self_73976, object r_73605) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_string(c_732590, "Invalid vector syntax");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_73976)->elts[0], &c_732590, ((closureN)self_73976)->elts[1], r_73605);; 
 }
 
 static void __lambda_271(void *data, int argc, object self_73977, object k_73606) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732574;
 c_732574.hdr.mark = gc_color_red;
  c_732574.hdr.grayed = 0;
@@ -6842,8 +6575,7 @@ return_closcall1(data,(closure)&c_732574,  Cyc_is_cons(((closureN)self_73977)->e
 }
 
 static void __lambda_270(void *data, int argc, object self_73978, object r_73607) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73607) ){ 
+  if( !eq(boolean_f, r_73607) ){ 
   return_closcall2(data,  __glo_dotted_127,  ((closureN)self_73978)->elts[0], ((closureN)self_73978)->elts[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_73978)->elts[0],  boolean_f);}
@@ -6851,8 +6583,7 @@ if( !eq(boolean_f, r_73607) ){
 }
 
 static void __lambda_269(void *data, int argc, object self_73979) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732528;
 c_732528.hdr.mark = gc_color_red;
  c_732528.hdr.grayed = 0;
@@ -6874,8 +6605,7 @@ return_closcall1(data,(closure)&c_732528,  &c_732537);;
 }
 
 static void __lambda_268(void *data, int argc, object self_73980, object k_73593, object num_73177) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732539;
 c_732539.hdr.mark = gc_color_red;
  c_732539.hdr.grayed = 0;
@@ -6892,8 +6622,7 @@ return_closcall1(data,(closure)&c_732539,  c_732548);;
 }
 
 static void __lambda_267(void *data, int argc, object self_73981, object r_73594) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732545, 16);
 
 common_type c_732544 = Cyc_string2number2(data,2,r_73594, &c_732545);
@@ -6901,15 +6630,13 @@ return_closcall1(data,  ((closureN)self_73981)->elts[0],  &c_732544);;
 }
 
 static void __lambda_266(void *data, int argc, object self_73982, object r_73592) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732536, 16);
 return_closcall8(data,  __glo_parse_91number,  ((closureN)self_73982)->elts[2], ((closureN)self_73982)->elts[1], ((closureN)self_73982)->elts[5], ((closureN)self_73982)->elts[0], ((closureN)self_73982)->elts[3], ((closureN)self_73982)->elts[4], &c_732536, r_73592);; 
 }
 
 static void __lambda_265(void *data, int argc, object self_73983) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732502;
 c_732502.hdr.mark = gc_color_red;
  c_732502.hdr.grayed = 0;
@@ -6931,8 +6658,7 @@ return_closcall1(data,(closure)&c_732502,  &c_732511);;
 }
 
 static void __lambda_264(void *data, int argc, object self_73984, object k_73589, object num_73178) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732513;
 c_732513.hdr.mark = gc_color_red;
  c_732513.hdr.grayed = 0;
@@ -6949,8 +6675,7 @@ return_closcall1(data,(closure)&c_732513,  c_732522);;
 }
 
 static void __lambda_263(void *data, int argc, object self_73985, object r_73590) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732519, 8);
 
 common_type c_732518 = Cyc_string2number2(data,2,r_73590, &c_732519);
@@ -6958,15 +6683,13 @@ return_closcall1(data,  ((closureN)self_73985)->elts[0],  &c_732518);;
 }
 
 static void __lambda_262(void *data, int argc, object self_73986, object r_73588) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732510, 8);
 return_closcall8(data,  __glo_parse_91number,  ((closureN)self_73986)->elts[2], ((closureN)self_73986)->elts[1], ((closureN)self_73986)->elts[5], ((closureN)self_73986)->elts[0], ((closureN)self_73986)->elts[3], ((closureN)self_73986)->elts[4], &c_732510, r_73588);; 
 }
 
 static void __lambda_261(void *data, int argc, object self_73987) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732476;
 c_732476.hdr.mark = gc_color_red;
  c_732476.hdr.grayed = 0;
@@ -6988,8 +6711,7 @@ return_closcall1(data,(closure)&c_732476,  &c_732485);;
 }
 
 static void __lambda_260(void *data, int argc, object self_73988, object k_73585, object num_73179) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732487;
 c_732487.hdr.mark = gc_color_red;
  c_732487.hdr.grayed = 0;
@@ -7006,8 +6728,7 @@ return_closcall1(data,(closure)&c_732487,  c_732496);;
 }
 
 static void __lambda_259(void *data, int argc, object self_73989, object r_73586) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732493, 2);
 
 common_type c_732492 = Cyc_string2number2(data,2,r_73586, &c_732493);
@@ -7015,15 +6736,13 @@ return_closcall1(data,  ((closureN)self_73989)->elts[0],  &c_732492);;
 }
 
 static void __lambda_258(void *data, int argc, object self_73990, object r_73584) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732484, 2);
 return_closcall8(data,  __glo_parse_91number,  ((closureN)self_73990)->elts[2], ((closureN)self_73990)->elts[1], ((closureN)self_73990)->elts[5], ((closureN)self_73990)->elts[0], ((closureN)self_73990)->elts[3], ((closureN)self_73990)->elts[4], &c_732484, r_73584);; 
 }
 
 static void __lambda_257(void *data, int argc, object self_73991) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732457;
 c_732457.hdr.mark = gc_color_red;
  c_732457.hdr.grayed = 0;
@@ -7045,8 +6764,7 @@ return_closcall1(data,(closure)&c_732457,  &c_732466);;
 }
 
 static void __lambda_256(void *data, int argc, object self_73992, object k_73581, object num_73180) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732468;
 c_732468.hdr.mark = gc_color_red;
  c_732468.hdr.grayed = 0;
@@ -7061,20 +6779,17 @@ return_closcall2(data,  __glo_parse_91atom,  &c_732468, num_73180);;
 }
 
 static void __lambda_255(void *data, int argc, object self_73993, object r_73582) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_inexact,  ((closureN)self_73993)->elts[0], r_73582);; 
+  return_closcall2(data,  __glo_inexact,  ((closureN)self_73993)->elts[0], r_73582);; 
 }
 
 static void __lambda_254(void *data, int argc, object self_73994, object r_73580) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732465, 10);
 return_closcall8(data,  __glo_parse_91number,  ((closureN)self_73994)->elts[2], ((closureN)self_73994)->elts[1], ((closureN)self_73994)->elts[5], ((closureN)self_73994)->elts[0], ((closureN)self_73994)->elts[3], ((closureN)self_73994)->elts[4], &c_732465, r_73580);; 
 }
 
 static void __lambda_253(void *data, int argc, object self_73995) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732438;
 c_732438.hdr.mark = gc_color_red;
  c_732438.hdr.grayed = 0;
@@ -7096,8 +6811,7 @@ return_closcall1(data,(closure)&c_732438,  &c_732447);;
 }
 
 static void __lambda_252(void *data, int argc, object self_73996, object k_73577, object num_73181) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732449;
 c_732449.hdr.mark = gc_color_red;
  c_732449.hdr.grayed = 0;
@@ -7112,20 +6826,17 @@ return_closcall2(data,  __glo_parse_91atom,  &c_732449, num_73181);;
 }
 
 static void __lambda_251(void *data, int argc, object self_73997, object r_73578) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_exact,  ((closureN)self_73997)->elts[0], r_73578);; 
+  return_closcall2(data,  __glo_exact,  ((closureN)self_73997)->elts[0], r_73578);; 
 }
 
 static void __lambda_250(void *data, int argc, object self_73998, object r_73576) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_int(c_732446, 10);
 return_closcall8(data,  __glo_parse_91number,  ((closureN)self_73998)->elts[2], ((closureN)self_73998)->elts[1], ((closureN)self_73998)->elts[5], ((closureN)self_73998)->elts[0], ((closureN)self_73998)->elts[3], ((closureN)self_73998)->elts[4], &c_732446, r_73576);; 
 }
 
 static void __lambda_249(void *data, int argc, object self_73999) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_73999)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73999)->elts[0]) ){ 
   
 closureN_type c_732417;
 c_732417.hdr.mark = gc_color_red;
@@ -7149,8 +6860,7 @@ return_closcall1(data,(closure)&c_732417,  nil);
 }
 
 static void __lambda_248(void *data, int argc, object self_731000, object r_73573) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732419;
 c_732419.hdr.mark = gc_color_red;
  c_732419.hdr.grayed = 0;
@@ -7172,13 +6882,11 @@ return_closcall1(data,(closure)&c_732419,  &c_732429);;
 }
 
 static void __lambda_247(void *data, int argc, object self_731001, object r_73574) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731001)->elts[2], ((closureN)self_731001)->elts[1], ((closureN)self_731001)->elts[5], r_73574, ((closureN)self_731001)->elts[0], boolean_f, ((closureN)self_731001)->elts[3], ((closureN)self_731001)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731001)->elts[2], ((closureN)self_731001)->elts[1], ((closureN)self_731001)->elts[5], r_73574, ((closureN)self_731001)->elts[0], boolean_f, ((closureN)self_731001)->elts[3], ((closureN)self_731001)->elts[4]);; 
 }
 
 static void __lambda_246(void *data, int argc, object self_731002) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731002)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731002)->elts[0]) ){ 
   
 closureN_type c_732395;
 c_732395.hdr.mark = gc_color_red;
@@ -7202,8 +6910,7 @@ return_closcall1(data,(closure)&c_732395,  nil);
 }
 
 static void __lambda_245(void *data, int argc, object self_731003, object r_73570) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732397;
 c_732397.hdr.mark = gc_color_red;
  c_732397.hdr.grayed = 0;
@@ -7225,13 +6932,11 @@ return_closcall1(data,(closure)&c_732397,  &c_732407);;
 }
 
 static void __lambda_244(void *data, int argc, object self_731004, object r_73571) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731004)->elts[2], ((closureN)self_731004)->elts[1], ((closureN)self_731004)->elts[5], r_73571, ((closureN)self_731004)->elts[0], boolean_f, ((closureN)self_731004)->elts[3], ((closureN)self_731004)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731004)->elts[2], ((closureN)self_731004)->elts[1], ((closureN)self_731004)->elts[5], r_73571, ((closureN)self_731004)->elts[0], boolean_f, ((closureN)self_731004)->elts[3], ((closureN)self_731004)->elts[4]);; 
 }
 
 static void __lambda_243(void *data, int argc, object self_731005) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732377;
 c_732377.hdr.mark = gc_color_red;
  c_732377.hdr.grayed = 0;
@@ -7251,8 +6956,7 @@ return_closcall3(data,  __glo_read_91block_91comment,  &c_732377, ((closureN)sel
 }
 
 static void __lambda_242(void *data, int argc, object self_731006, object r_73567) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732379;
 c_732379.hdr.mark = gc_color_red;
  c_732379.hdr.grayed = 0;
@@ -7272,13 +6976,11 @@ return_closcall1(data,(closure)&c_732379,  nil);;
 }
 
 static void __lambda_241(void *data, int argc, object self_731007, object r_73568) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731007)->elts[2], ((closureN)self_731007)->elts[1], r_73568, ((closureN)self_731007)->elts[5], ((closureN)self_731007)->elts[0], boolean_f, ((closureN)self_731007)->elts[3], ((closureN)self_731007)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731007)->elts[2], ((closureN)self_731007)->elts[1], r_73568, ((closureN)self_731007)->elts[5], ((closureN)self_731007)->elts[0], boolean_f, ((closureN)self_731007)->elts[3], ((closureN)self_731007)->elts[4]);; 
 }
 
 static void __lambda_240(void *data, int argc, object self_731008) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732276;
 c_732276.hdr.mark = gc_color_red;
  c_732276.hdr.grayed = 0;
@@ -7312,8 +7014,7 @@ return_closcall1(data,(closure)&c_732276,  &c_732289);;
 }
 
 static void __lambda_239(void *data, int argc, object self_731009, object r_73549) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73549) ){ 
+  if( !eq(boolean_f, r_73549) ){ 
   
 closureN_type c_732291;
 c_732291.hdr.mark = gc_color_red;
@@ -7353,8 +7054,7 @@ return_closcall0(data,(closure)&c_732307);}
 }
 
 static void __lambda_238(void *data, int argc, object self_731010) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732309;
 c_732309.hdr.mark = gc_color_red;
  c_732309.hdr.grayed = 0;
@@ -7375,8 +7075,7 @@ return_closcall1(data,(closure)&c_732309,  nil);;
 }
 
 static void __lambda_237(void *data, int argc, object self_731011, object r_73558) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732311;
 c_732311.hdr.mark = gc_color_red;
  c_732311.hdr.grayed = 0;
@@ -7397,8 +7096,7 @@ return_closcall4(data,  __glo_read_91str,  &c_732311, ((closureN)self_731011)->e
 }
 
 static void __lambda_236(void *data, int argc, object self_731012, object r_73553) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732313;
 c_732313.hdr.mark = gc_color_red;
  c_732313.hdr.grayed = 0;
@@ -7418,8 +7116,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_732313, ((closureN)self_731012)->e
 }
 
 static void __lambda_235(void *data, int argc, object self_731013, object r_73554) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732315;
 c_732315.hdr.mark = gc_color_red;
  c_732315.hdr.grayed = 0;
@@ -7438,8 +7135,7 @@ return_closcall2(data,(closure)&c_732315,  ((closureN)self_731013)->elts[5], r_7
 }
 
 static void __lambda_234(void *data, int argc, object self_731014, object str_73183, object toks_85_73182) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732317;
 c_732317.hdr.mark = gc_color_red;
  c_732317.hdr.grayed = 0;
@@ -7460,8 +7156,7 @@ return_closcall1(data,(closure)&c_732317,  boolean_f);;
 }
 
 static void __lambda_233(void *data, int argc, object self_731015, object new_91toks_73184) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732319;
 c_732319.hdr.mark = gc_color_red;
  c_732319.hdr.grayed = 0;
@@ -7484,8 +7179,7 @@ return_closcall1(data,(closure)&c_732319,  &c_732350);;
 }
 
 static void __lambda_232(void *data, int argc, object self_731016, object new_91toks_73184) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732321;
 c_732321.hdr.mark = gc_color_red;
  c_732321.hdr.grayed = 0;
@@ -7505,8 +7199,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_732321, ((closureN)self_731016)->el
 }
 
 static void __lambda_231(void *data, int argc, object self_731017, object r_73557) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732323;
 c_732323.hdr.mark = gc_color_red;
  c_732323.hdr.grayed = 0;
@@ -7526,8 +7219,7 @@ return_closcall1(data,(closure)&c_732323,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_230(void *data, int argc, object self_731018, object r_73555) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731018)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731018)->elts[0]) ){ 
   
 closureN_type c_732326;
 c_732326.hdr.mark = gc_color_red;
@@ -7551,13 +7243,11 @@ return_closcall1(data,(closure)&c_732326,  nil);
 }
 
 static void __lambda_229(void *data, int argc, object self_731019, object r_73556) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731019)->elts[2], ((closureN)self_731019)->elts[1], r_73556, cell_get(((closureN)self_731019)->elts[3]), ((closureN)self_731019)->elts[0], boolean_f, ((closureN)self_731019)->elts[4], ((closureN)self_731019)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731019)->elts[2], ((closureN)self_731019)->elts[1], r_73556, cell_get(((closureN)self_731019)->elts[3]), ((closureN)self_731019)->elts[0], boolean_f, ((closureN)self_731019)->elts[4], ((closureN)self_731019)->elts[5]);; 
 }
 
 static void __lambda_228(void *data, int argc, object self_731020) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732293;
 c_732293.hdr.mark = gc_color_red;
  c_732293.hdr.grayed = 0;
@@ -7574,8 +7264,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_732293, ((closureN)
 }
 
 static void __lambda_227(void *data, int argc, object self_731021, object r_73550) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732295;
 c_732295.hdr.mark = gc_color_red;
  c_732295.hdr.grayed = 0;
@@ -7591,8 +7280,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_732295, ((closureN)self_731021)->e
 }
 
 static void __lambda_226(void *data, int argc, object self_731022, object r_73552) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732297;
 c_732297.hdr.mark = gc_color_red;
  c_732297.hdr.grayed = 0;
@@ -7607,13 +7295,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_732297, r_73552, ((closureN)self_73
 }
 
 static void __lambda_225(void *data, int argc, object self_731023, object r_73551) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731023)->elts[0],  car(r_73551));; 
+  return_closcall1(data,  ((closureN)self_731023)->elts[0],  car(r_73551));; 
 }
 
 static void __lambda_224(void *data, int argc, object self_731024, object k_73559) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732278;
 c_732278.hdr.mark = gc_color_red;
  c_732278.hdr.grayed = 0;
@@ -7629,8 +7315,7 @@ return_closcall2(data,  __glo_not,  &c_732278, ((closureN)self_731024)->elts[0])
 }
 
 static void __lambda_223(void *data, int argc, object self_731025, object r_73560) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73560) ){ 
+  if( !eq(boolean_f, r_73560) ){ 
   
 closureN_type c_732280;
 c_732280.hdr.mark = gc_color_red;
@@ -7649,13 +7334,11 @@ return_closcall1(data,(closure)&c_732280,  Cyc_is_null(((closureN)self_731025)->
 }
 
 static void __lambda_222(void *data, int argc, object self_731026, object r_73561) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731026)->elts[0], r_73561);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731026)->elts[0], r_73561);; 
 }
 
 static void __lambda_221(void *data, int argc, object self_731027) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732215;
 c_732215.hdr.mark = gc_color_red;
  c_732215.hdr.grayed = 0;
@@ -7687,8 +7370,7 @@ return_closcall1(data,(closure)&c_732215,  &c_732228);;
 }
 
 static void __lambda_220(void *data, int argc, object self_731028, object r_73537) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73537) ){ 
+  if( !eq(boolean_f, r_73537) ){ 
   
 closureN_type c_732230;
 c_732230.hdr.mark = gc_color_red;
@@ -7727,8 +7409,7 @@ return_closcall1(data,(closure)&c_732246,  __num_eq(data, ((closureN)self_731028
 }
 
 static void __lambda_219(void *data, int argc, object self_731029, object r_73541) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73541) ){ 
+  if( !eq(boolean_f, r_73541) ){ 
   
 closureN_type c_732248;
 c_732248.hdr.mark = gc_color_red;
@@ -7761,8 +7442,7 @@ return_closcall0(data,(closure)&c_732260);}
 }
 
 static void __lambda_218(void *data, int argc, object self_731030) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732262;
 c_732262.hdr.mark = gc_color_red;
  c_732262.hdr.grayed = 0;
@@ -7777,13 +7457,11 @@ return_closcall3(data,  __glo_get_91toks,  &c_732262, ((closureN)self_731030)->e
 }
 
 static void __lambda_217(void *data, int argc, object self_731031, object r_73544) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_reverse,  ((closureN)self_731031)->elts[0], r_73544);; 
+  return_closcall2(data,  __glo_reverse,  ((closureN)self_731031)->elts[0], r_73544);; 
 }
 
 static void __lambda_216(void *data, int argc, object self_731032) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732250;
 c_732250.hdr.mark = gc_color_red;
  c_732250.hdr.grayed = 0;
@@ -7799,8 +7477,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_732250, ((closureN)se
 }
 
 static void __lambda_215(void *data, int argc, object self_731033, object r_73542) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732252;
 c_732252.hdr.mark = gc_color_red;
  c_732252.hdr.grayed = 0;
@@ -7816,15 +7493,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_732252, ((closureN)se
 }
 
 static void __lambda_214(void *data, int argc, object self_731034, object r_73543) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_string(c_732255, "unexpected closing parenthesis");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_731034)->elts[0], &c_732255, ((closureN)self_731034)->elts[1], r_73543);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_731035) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732232;
 c_732232.hdr.mark = gc_color_red;
  c_732232.hdr.grayed = 0;
@@ -7841,8 +7516,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_732232, ((closureN)
 }
 
 static void __lambda_212(void *data, int argc, object self_731036, object r_73538) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732234;
 c_732234.hdr.mark = gc_color_red;
  c_732234.hdr.grayed = 0;
@@ -7858,8 +7532,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_732234, ((closureN)self_731036)->e
 }
 
 static void __lambda_211(void *data, int argc, object self_731037, object r_73540) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732236;
 c_732236.hdr.mark = gc_color_red;
  c_732236.hdr.grayed = 0;
@@ -7874,13 +7547,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_732236, r_73540, ((closureN)self_73
 }
 
 static void __lambda_210(void *data, int argc, object self_731038, object r_73539) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731038)->elts[0],  car(r_73539));; 
+  return_closcall1(data,  ((closureN)self_731038)->elts[0],  car(r_73539));; 
 }
 
 static void __lambda_209(void *data, int argc, object self_731039, object k_73545) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732217;
 c_732217.hdr.mark = gc_color_red;
  c_732217.hdr.grayed = 0;
@@ -7896,8 +7567,7 @@ return_closcall2(data,  __glo_not,  &c_732217, ((closureN)self_731039)->elts[0])
 }
 
 static void __lambda_208(void *data, int argc, object self_731040, object r_73546) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73546) ){ 
+  if( !eq(boolean_f, r_73546) ){ 
   
 closureN_type c_732219;
 c_732219.hdr.mark = gc_color_red;
@@ -7916,13 +7586,11 @@ return_closcall1(data,(closure)&c_732219,  Cyc_is_null(((closureN)self_731040)->
 }
 
 static void __lambda_207(void *data, int argc, object self_731041, object r_73547) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731041)->elts[0], r_73547);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731041)->elts[0], r_73547);; 
 }
 
 static void __lambda_206(void *data, int argc, object self_731042) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732098;
 c_732098.hdr.mark = gc_color_red;
  c_732098.hdr.grayed = 0;
@@ -7956,8 +7624,7 @@ return_closcall1(data,(closure)&c_732098,  &c_732111);;
 }
 
 static void __lambda_205(void *data, int argc, object self_731043, object r_73516) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73516) ){ 
+  if( !eq(boolean_f, r_73516) ){ 
   
 closureN_type c_732113;
 c_732113.hdr.mark = gc_color_red;
@@ -7997,8 +7664,7 @@ return_closcall0(data,(closure)&c_732129);}
 }
 
 static void __lambda_204(void *data, int argc, object self_731044) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732131;
 c_732131.hdr.mark = gc_color_red;
  c_732131.hdr.grayed = 0;
@@ -8019,8 +7685,7 @@ return_closcall1(data,(closure)&c_732131,  nil);;
 }
 
 static void __lambda_203(void *data, int argc, object self_731045, object r_73530) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732133;
 c_732133.hdr.mark = gc_color_red;
  c_732133.hdr.grayed = 0;
@@ -8042,8 +7707,7 @@ return_closcall1(data,(closure)&c_732133,  nil);;
 }
 
 static void __lambda_202(void *data, int argc, object self_731046, object r_73531) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732135;
 c_732135.hdr.mark = gc_color_red;
  c_732135.hdr.grayed = 0;
@@ -8070,8 +7734,7 @@ return_closcall1(data,(closure)&c_732135,  &c_732207);;
 }
 
 static void __lambda_201(void *data, int argc, object self_731047, object r_73532) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732137;
 c_732137.hdr.mark = gc_color_red;
  c_732137.hdr.grayed = 0;
@@ -8092,8 +7755,7 @@ return_closcall8(data,  __glo_parse,  &c_732137, ((closureN)self_731047)->elts[1
 }
 
 static void __lambda_200(void *data, int argc, object self_731048, object r_73520) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732139;
 c_732139.hdr.mark = gc_color_red;
  c_732139.hdr.grayed = 0;
@@ -8113,8 +7775,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_732139, ((closureN)self_731048)->e
 }
 
 static void __lambda_199(void *data, int argc, object self_731049, object r_73521) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732141;
 c_732141.hdr.mark = gc_color_red;
  c_732141.hdr.grayed = 0;
@@ -8133,8 +7794,7 @@ return_closcall2(data,(closure)&c_732141,  ((closureN)self_731049)->elts[5], r_7
 }
 
 static void __lambda_198(void *data, int argc, object self_731050, object sub_73186, object toks_85_73185) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732143;
 c_732143.hdr.mark = gc_color_red;
  c_732143.hdr.grayed = 0;
@@ -8155,8 +7815,7 @@ return_closcall1(data,(closure)&c_732143,  boolean_f);;
 }
 
 static void __lambda_197(void *data, int argc, object self_731051, object new_91toks_73187) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732145;
 c_732145.hdr.mark = gc_color_red;
  c_732145.hdr.grayed = 0;
@@ -8179,8 +7838,7 @@ return_closcall1(data,(closure)&c_732145,  &c_732197);;
 }
 
 static void __lambda_196(void *data, int argc, object self_731052, object new_91toks_73187) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732147;
 c_732147.hdr.mark = gc_color_red;
  c_732147.hdr.grayed = 0;
@@ -8212,8 +7870,7 @@ return_closcall1(data,(closure)&c_732147,  &c_732167);;
 }
 
 static void __lambda_195(void *data, int argc, object self_731053, object r_73525) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732169;
 c_732169.hdr.mark = gc_color_red;
  c_732169.hdr.grayed = 0;
@@ -8233,8 +7890,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_732169, r_73525, ((closureN)self_73
 }
 
 static void __lambda_194(void *data, int argc, object self_731054, object r_73524) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732171;
 c_732171.hdr.mark = gc_color_red;
  c_732171.hdr.grayed = 0;
@@ -8254,8 +7910,7 @@ return_closcall1(data,(closure)&c_732171,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_193(void *data, int argc, object self_731055, object r_73522) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731055)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731055)->elts[0]) ){ 
   
 closureN_type c_732174;
 c_732174.hdr.mark = gc_color_red;
@@ -8279,13 +7934,11 @@ return_closcall1(data,(closure)&c_732174,  nil);
 }
 
 static void __lambda_192(void *data, int argc, object self_731056, object r_73523) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731056)->elts[2], ((closureN)self_731056)->elts[1], r_73523, cell_get(((closureN)self_731056)->elts[3]), ((closureN)self_731056)->elts[0], boolean_f, ((closureN)self_731056)->elts[4], ((closureN)self_731056)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731056)->elts[2], ((closureN)self_731056)->elts[1], r_73523, cell_get(((closureN)self_731056)->elts[3]), ((closureN)self_731056)->elts[0], boolean_f, ((closureN)self_731056)->elts[4], ((closureN)self_731056)->elts[5]);; 
 }
 
 static void __lambda_191(void *data, int argc, object self_731057, object k_73526) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732149;
 c_732149.hdr.mark = gc_color_red;
  c_732149.hdr.grayed = 0;
@@ -8312,8 +7965,7 @@ return_closcall1(data,(closure)&c_732149,  &c_732160);;
 }
 
 static void __lambda_190(void *data, int argc, object self_731058, object r_73527) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73527) ){ 
+  if( !eq(boolean_f, r_73527) ){ 
   return_closcall2(data,  __glo__91_125dotted_91list,  ((closureN)self_731058)->elts[0], ((closureN)self_731058)->elts[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_731058)->elts[0],  ((closureN)self_731058)->elts[1]);}
@@ -8321,8 +7973,7 @@ if( !eq(boolean_f, r_73527) ){
 }
 
 static void __lambda_189(void *data, int argc, object self_731059, object k_73528) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732151;
 c_732151.hdr.mark = gc_color_red;
  c_732151.hdr.grayed = 0;
@@ -8338,8 +7989,7 @@ return_closcall1(data,(closure)&c_732151,  Cyc_is_cons(((closureN)self_731059)->
 }
 
 static void __lambda_188(void *data, int argc, object self_731060, object r_73529) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73529) ){ 
+  if( !eq(boolean_f, r_73529) ){ 
   return_closcall2(data,  __glo_dotted_127,  ((closureN)self_731060)->elts[0], ((closureN)self_731060)->elts[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_731060)->elts[0],  boolean_f);}
@@ -8347,8 +7997,7 @@ if( !eq(boolean_f, r_73529) ){
 }
 
 static void __lambda_187(void *data, int argc, object self_731061) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732115;
 c_732115.hdr.mark = gc_color_red;
  c_732115.hdr.grayed = 0;
@@ -8365,8 +8014,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_732115, ((closureN)
 }
 
 static void __lambda_186(void *data, int argc, object self_731062, object r_73517) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732117;
 c_732117.hdr.mark = gc_color_red;
  c_732117.hdr.grayed = 0;
@@ -8382,8 +8030,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_732117, ((closureN)self_731062)->e
 }
 
 static void __lambda_185(void *data, int argc, object self_731063, object r_73519) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732119;
 c_732119.hdr.mark = gc_color_red;
  c_732119.hdr.grayed = 0;
@@ -8398,13 +8045,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_732119, r_73519, ((closureN)self_73
 }
 
 static void __lambda_184(void *data, int argc, object self_731064, object r_73518) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731064)->elts[0],  car(r_73518));; 
+  return_closcall1(data,  ((closureN)self_731064)->elts[0],  car(r_73518));; 
 }
 
 static void __lambda_183(void *data, int argc, object self_731065, object k_73533) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732100;
 c_732100.hdr.mark = gc_color_red;
  c_732100.hdr.grayed = 0;
@@ -8420,8 +8065,7 @@ return_closcall2(data,  __glo_not,  &c_732100, ((closureN)self_731065)->elts[0])
 }
 
 static void __lambda_182(void *data, int argc, object self_731066, object r_73534) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73534) ){ 
+  if( !eq(boolean_f, r_73534) ){ 
   
 closureN_type c_732102;
 c_732102.hdr.mark = gc_color_red;
@@ -8440,13 +8084,11 @@ return_closcall1(data,(closure)&c_732102,  Cyc_is_null(((closureN)self_731066)->
 }
 
 static void __lambda_181(void *data, int argc, object self_731067, object r_73535) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731067)->elts[0], r_73535);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731067)->elts[0], r_73535);; 
 }
 
 static void __lambda_180(void *data, int argc, object self_731068) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731899;
 c_731899.hdr.mark = gc_color_red;
  c_731899.hdr.grayed = 0;
@@ -8480,8 +8122,7 @@ return_closcall1(data,(closure)&c_731899,  &c_731912);;
 }
 
 static void __lambda_179(void *data, int argc, object self_731069, object r_73484) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73484) ){ 
+  if( !eq(boolean_f, r_73484) ){ 
   
 closureN_type c_731914;
 c_731914.hdr.mark = gc_color_red;
@@ -8521,8 +8162,7 @@ return_closcall0(data,(closure)&c_731930);}
 }
 
 static void __lambda_178(void *data, int argc, object self_731070) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731932;
 c_731932.hdr.mark = gc_color_red;
  c_731932.hdr.grayed = 0;
@@ -8543,8 +8183,7 @@ return_closcall4(data,(closure)&c_731932,  boolean_f, boolean_f, boolean_f, bool
 }
 
 static void __lambda_177(void *data, int argc, object self_731071, object sub_73191, object next_91c_73190, object unquote_91sym_73189, object new_91toks_73188) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731934;
 c_731934.hdr.mark = gc_color_red;
  c_731934.hdr.grayed = 0;
@@ -8570,8 +8209,7 @@ return_closcall1(data,(closure)&c_731934,  &c_732092);;
 }
 
 static void __lambda_176(void *data, int argc, object self_731072, object sub_73191) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731936;
 c_731936.hdr.mark = gc_color_red;
  c_731936.hdr.grayed = 0;
@@ -8597,8 +8235,7 @@ return_closcall1(data,(closure)&c_731936,  &c_732088);;
 }
 
 static void __lambda_175(void *data, int argc, object self_731073, object next_91c_73190) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731938;
 c_731938.hdr.mark = gc_color_red;
  c_731938.hdr.grayed = 0;
@@ -8624,8 +8261,7 @@ return_closcall1(data,(closure)&c_731938,  &c_732084);;
 }
 
 static void __lambda_174(void *data, int argc, object self_731074, object unquote_91sym_73189) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731940;
 c_731940.hdr.mark = gc_color_red;
  c_731940.hdr.grayed = 0;
@@ -8651,8 +8287,7 @@ return_closcall1(data,(closure)&c_731940,  &c_732080);;
 }
 
 static void __lambda_173(void *data, int argc, object self_731075, object new_91toks_73188) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731942;
 c_731942.hdr.mark = gc_color_red;
  c_731942.hdr.grayed = 0;
@@ -8677,8 +8312,7 @@ return_closcall1(data,(closure)&c_731942,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_172(void *data, int argc, object self_731076, object r_73488) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731944;
 c_731944.hdr.mark = gc_color_red;
  c_731944.hdr.grayed = 0;
@@ -8705,8 +8339,7 @@ return_closcall1(data,(closure)&c_731944,  c_732073);;
 }
 
 static void __lambda_171(void *data, int argc, object self_731077, object r_73511) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731946;
 c_731946.hdr.mark = gc_color_red;
  c_731946.hdr.grayed = 0;
@@ -8731,8 +8364,7 @@ return_closcall1(data,(closure)&c_731946,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_170(void *data, int argc, object self_731078, object r_73489) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731948;
 c_731948.hdr.mark = gc_color_red;
  c_731948.hdr.grayed = 0;
@@ -8768,8 +8400,7 @@ return_closcall1(data,(closure)&c_731948,  &c_731960);;
 }
 
 static void __lambda_169(void *data, int argc, object self_731079, object r_73508) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731962;
 c_731962.hdr.mark = gc_color_red;
  c_731962.hdr.grayed = 0;
@@ -8794,8 +8425,7 @@ return_closcall1(data,(closure)&c_731962,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_168(void *data, int argc, object self_731080, object r_73490) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731964;
 c_731964.hdr.mark = gc_color_red;
  c_731964.hdr.grayed = 0;
@@ -8820,8 +8450,7 @@ return_closcall1(data,(closure)&c_731964,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_167(void *data, int argc, object self_731081, object r_73491) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731966;
 c_731966.hdr.mark = gc_color_red;
  c_731966.hdr.grayed = 0;
@@ -8857,8 +8486,7 @@ return_closcall1(data,(closure)&c_731966,  &c_732007);;
 }
 
 static void __lambda_166(void *data, int argc, object self_731082, object r_73492) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732009;
 c_732009.hdr.mark = gc_color_red;
  c_732009.hdr.grayed = 0;
@@ -8882,8 +8510,7 @@ return_closcall1(data,(closure)&c_732009,  nil);;
 }
 
 static void __lambda_165(void *data, int argc, object self_731083, object r_73500) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732011;
 c_732011.hdr.mark = gc_color_red;
  c_732011.hdr.grayed = 0;
@@ -8908,8 +8535,7 @@ return_closcall1(data,(closure)&c_732011,  nil);;
 }
 
 static void __lambda_164(void *data, int argc, object self_731084, object r_73501) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732013;
 c_732013.hdr.mark = gc_color_red;
  c_732013.hdr.grayed = 0;
@@ -8935,8 +8561,7 @@ return_closcall8(data,  __glo_parse,  &c_732013, ((closureN)self_731084)->elts[1
 }
 
 static void __lambda_163(void *data, int argc, object self_731085, object r_73499) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732015;
 c_732015.hdr.mark = gc_color_red;
  c_732015.hdr.grayed = 0;
@@ -8960,8 +8585,7 @@ return_closcall1(data,(closure)&c_732015,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_162(void *data, int argc, object self_731086, object r_73493) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732017;
 c_732017.hdr.mark = gc_color_red;
  c_732017.hdr.grayed = 0;
@@ -8983,8 +8607,7 @@ return_closcall3(data,  __glo__list,  &c_732017, cell_get(((closureN)self_731086
 }
 
 static void __lambda_161(void *data, int argc, object self_731087, object r_73497) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732019;
 c_732019.hdr.mark = gc_color_red;
  c_732019.hdr.grayed = 0;
@@ -9005,8 +8628,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_732019, ((closureN)self_731087)->e
 }
 
 static void __lambda_160(void *data, int argc, object self_731088, object r_73498) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732021;
 c_732021.hdr.mark = gc_color_red;
  c_732021.hdr.grayed = 0;
@@ -9026,8 +8648,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_732021, ((closureN)self_731088)->el
 }
 
 static void __lambda_159(void *data, int argc, object self_731089, object r_73496) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_732023;
 c_732023.hdr.mark = gc_color_red;
  c_732023.hdr.grayed = 0;
@@ -9047,8 +8668,7 @@ return_closcall1(data,(closure)&c_732023,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_158(void *data, int argc, object self_731090, object r_73494) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731090)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731090)->elts[0]) ){ 
   
 closureN_type c_732026;
 c_732026.hdr.mark = gc_color_red;
@@ -9072,13 +8692,11 @@ return_closcall1(data,(closure)&c_732026,  nil);
 }
 
 static void __lambda_157(void *data, int argc, object self_731091, object r_73495) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731091)->elts[2], ((closureN)self_731091)->elts[1], r_73495, cell_get(((closureN)self_731091)->elts[3]), ((closureN)self_731091)->elts[0], boolean_f, ((closureN)self_731091)->elts[4], ((closureN)self_731091)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731091)->elts[2], ((closureN)self_731091)->elts[1], r_73495, cell_get(((closureN)self_731091)->elts[3]), ((closureN)self_731091)->elts[0], boolean_f, ((closureN)self_731091)->elts[4], ((closureN)self_731091)->elts[5]);; 
 }
 
 static void __lambda_156(void *data, int argc, object self_731092, object k_73502) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731968;
 c_731968.hdr.mark = gc_color_red;
  c_731968.hdr.grayed = 0;
@@ -9095,8 +8713,7 @@ return_closcall1(data,(closure)&c_731968,  Cyc_is_eof_object(cell_get(((closureN
 }
 
 static void __lambda_155(void *data, int argc, object self_731093, object r_73503) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73503) ){ 
+  if( !eq(boolean_f, r_73503) ){ 
   
 closureN_type c_731970;
 c_731970.hdr.mark = gc_color_red;
@@ -9129,8 +8746,7 @@ return_closcall1(data,(closure)&c_731982,  equalp(cell_get(((closureN)self_73109
 }
 
 static void __lambda_154(void *data, int argc, object self_731094, object r_73507) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731984;
 c_731984.hdr.mark = gc_color_red;
  c_731984.hdr.grayed = 0;
@@ -9147,8 +8763,7 @@ return_closcall2(data,  __glo_not,  &c_731984, r_73507);;
 }
 
 static void __lambda_153(void *data, int argc, object self_731095, object r_73506) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73506) ){ 
+  if( !eq(boolean_f, r_73506) ){ 
   
 closureN_type c_731986;
 c_731986.hdr.mark = gc_color_red;
@@ -9180,18 +8795,15 @@ return_closcall0(data,(closure)&c_731994);}
 }
 
 static void __lambda_152(void *data, int argc, object self_731096) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731096)->elts[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_731096)->elts[0],  boolean_f);; 
 }
 
 static void __lambda_151(void *data, int argc, object self_731097) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall3(data,  __glo_in_91port_117set_91buf_67,  ((closureN)self_731097)->elts[0], ((closureN)self_731097)->elts[2], cell_get(((closureN)self_731097)->elts[1]));; 
+  return_closcall3(data,  __glo_in_91port_117set_91buf_67,  ((closureN)self_731097)->elts[0], ((closureN)self_731097)->elts[2], cell_get(((closureN)self_731097)->elts[1]));; 
 }
 
 static void __lambda_150(void *data, int argc, object self_731098) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731972;
 c_731972.hdr.mark = gc_color_red;
  c_731972.hdr.grayed = 0;
@@ -9207,8 +8819,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_731972, ((closureN)se
 }
 
 static void __lambda_149(void *data, int argc, object self_731099, object r_73504) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731974;
 c_731974.hdr.mark = gc_color_red;
  c_731974.hdr.grayed = 0;
@@ -9224,15 +8835,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_731974, ((closureN)se
 }
 
 static void __lambda_148(void *data, int argc, object self_731100, object r_73505) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_string(c_731977, "unexpected end of file");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_731100)->elts[0], &c_731977, ((closureN)self_731100)->elts[1], r_73505);; 
 }
 
 static void __lambda_147(void *data, int argc, object self_731101, object k_73509) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731950;
 c_731950.hdr.mark = gc_color_red;
  c_731950.hdr.grayed = 0;
@@ -9247,8 +8856,7 @@ return_closcall1(data,(closure)&c_731950,  equalp(cell_get(((closureN)self_73110
 }
 
 static void __lambda_146(void *data, int argc, object self_731102, object r_73510) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73510) ){ 
+  if( !eq(boolean_f, r_73510) ){ 
   return_closcall1(data,  ((closureN)self_731102)->elts[0],  quote_unquote_91splicing);
 } else { 
   return_closcall1(data,  ((closureN)self_731102)->elts[0],  quote_unquote);}
@@ -9256,8 +8864,7 @@ if( !eq(boolean_f, r_73510) ){
 }
 
 static void __lambda_145(void *data, int argc, object self_731103) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731916;
 c_731916.hdr.mark = gc_color_red;
  c_731916.hdr.grayed = 0;
@@ -9274,8 +8881,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_731916, ((closureN)
 }
 
 static void __lambda_144(void *data, int argc, object self_731104, object r_73485) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731918;
 c_731918.hdr.mark = gc_color_red;
  c_731918.hdr.grayed = 0;
@@ -9291,8 +8897,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731918, ((closureN)self_731104)->e
 }
 
 static void __lambda_143(void *data, int argc, object self_731105, object r_73487) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731920;
 c_731920.hdr.mark = gc_color_red;
  c_731920.hdr.grayed = 0;
@@ -9307,13 +8912,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_731920, r_73487, ((closureN)self_73
 }
 
 static void __lambda_142(void *data, int argc, object self_731106, object r_73486) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731106)->elts[0],  car(r_73486));; 
+  return_closcall1(data,  ((closureN)self_731106)->elts[0],  car(r_73486));; 
 }
 
 static void __lambda_141(void *data, int argc, object self_731107, object k_73512) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731901;
 c_731901.hdr.mark = gc_color_red;
  c_731901.hdr.grayed = 0;
@@ -9329,8 +8932,7 @@ return_closcall2(data,  __glo_not,  &c_731901, ((closureN)self_731107)->elts[0])
 }
 
 static void __lambda_140(void *data, int argc, object self_731108, object r_73513) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73513) ){ 
+  if( !eq(boolean_f, r_73513) ){ 
   
 closureN_type c_731903;
 c_731903.hdr.mark = gc_color_red;
@@ -9349,13 +8951,11 @@ return_closcall1(data,(closure)&c_731903,  Cyc_is_null(((closureN)self_731108)->
 }
 
 static void __lambda_139(void *data, int argc, object self_731109, object r_73514) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731109)->elts[0], r_73514);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731109)->elts[0], r_73514);; 
 }
 
 static void __lambda_138(void *data, int argc, object self_731110) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731807;
 c_731807.hdr.mark = gc_color_red;
  c_731807.hdr.grayed = 0;
@@ -9389,8 +8989,7 @@ return_closcall1(data,(closure)&c_731807,  &c_731820);;
 }
 
 static void __lambda_137(void *data, int argc, object self_731111, object r_73467) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73467) ){ 
+  if( !eq(boolean_f, r_73467) ){ 
   
 closureN_type c_731822;
 c_731822.hdr.mark = gc_color_red;
@@ -9430,8 +9029,7 @@ return_closcall0(data,(closure)&c_731838);}
 }
 
 static void __lambda_136(void *data, int argc, object self_731112) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731840;
 c_731840.hdr.mark = gc_color_red;
  c_731840.hdr.grayed = 0;
@@ -9452,8 +9050,7 @@ return_closcall1(data,(closure)&c_731840,  nil);;
 }
 
 static void __lambda_135(void *data, int argc, object self_731113, object r_73478) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731842;
 c_731842.hdr.mark = gc_color_red;
  c_731842.hdr.grayed = 0;
@@ -9475,8 +9072,7 @@ return_closcall1(data,(closure)&c_731842,  nil);;
 }
 
 static void __lambda_134(void *data, int argc, object self_731114, object r_73479) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731844;
 c_731844.hdr.mark = gc_color_red;
  c_731844.hdr.grayed = 0;
@@ -9499,8 +9095,7 @@ return_closcall8(data,  __glo_parse,  &c_731844, ((closureN)self_731114)->elts[1
 }
 
 static void __lambda_133(void *data, int argc, object self_731115, object r_73471) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731846;
 c_731846.hdr.mark = gc_color_red;
  c_731846.hdr.grayed = 0;
@@ -9521,8 +9116,7 @@ return_closcall1(data,(closure)&c_731846,  r_73471);;
 }
 
 static void __lambda_132(void *data, int argc, object self_731116, object sub_73192) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731848;
 c_731848.hdr.mark = gc_color_red;
  c_731848.hdr.grayed = 0;
@@ -9544,8 +9138,7 @@ return_closcall1(data,(closure)&c_731848,  boolean_f);;
 }
 
 static void __lambda_131(void *data, int argc, object self_731117, object new_91toks_73193) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731850;
 c_731850.hdr.mark = gc_color_red;
  c_731850.hdr.grayed = 0;
@@ -9569,8 +9162,7 @@ return_closcall1(data,(closure)&c_731850,  &c_731889);;
 }
 
 static void __lambda_130(void *data, int argc, object self_731118, object new_91toks_73193) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731852;
 c_731852.hdr.mark = gc_color_red;
  c_731852.hdr.grayed = 0;
@@ -9593,8 +9185,7 @@ return_closcall1(data,(closure)&c_731852,  quote_quasiquote);;
 }
 
 static void __lambda_129(void *data, int argc, object self_731119, object r_73477) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731854;
 c_731854.hdr.mark = gc_color_red;
  c_731854.hdr.grayed = 0;
@@ -9616,8 +9207,7 @@ return_closcall3(data,  __glo__list,  &c_731854, r_73477, ((closureN)self_731119
 }
 
 static void __lambda_128(void *data, int argc, object self_731120, object r_73475) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731856;
 c_731856.hdr.mark = gc_color_red;
  c_731856.hdr.grayed = 0;
@@ -9638,8 +9228,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_731856, ((closureN)self_731120)->e
 }
 
 static void __lambda_127(void *data, int argc, object self_731121, object r_73476) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731858;
 c_731858.hdr.mark = gc_color_red;
  c_731858.hdr.grayed = 0;
@@ -9659,8 +9248,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_731858, ((closureN)self_731121)->el
 }
 
 static void __lambda_126(void *data, int argc, object self_731122, object r_73474) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731860;
 c_731860.hdr.mark = gc_color_red;
  c_731860.hdr.grayed = 0;
@@ -9680,8 +9268,7 @@ return_closcall1(data,(closure)&c_731860,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_125(void *data, int argc, object self_731123, object r_73472) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731123)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731123)->elts[0]) ){ 
   
 closureN_type c_731863;
 c_731863.hdr.mark = gc_color_red;
@@ -9705,13 +9292,11 @@ return_closcall1(data,(closure)&c_731863,  nil);
 }
 
 static void __lambda_124(void *data, int argc, object self_731124, object r_73473) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731124)->elts[2], ((closureN)self_731124)->elts[1], r_73473, cell_get(((closureN)self_731124)->elts[3]), ((closureN)self_731124)->elts[0], boolean_f, ((closureN)self_731124)->elts[4], ((closureN)self_731124)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731124)->elts[2], ((closureN)self_731124)->elts[1], r_73473, cell_get(((closureN)self_731124)->elts[3]), ((closureN)self_731124)->elts[0], boolean_f, ((closureN)self_731124)->elts[4], ((closureN)self_731124)->elts[5]);; 
 }
 
 static void __lambda_123(void *data, int argc, object self_731125) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731824;
 c_731824.hdr.mark = gc_color_red;
  c_731824.hdr.grayed = 0;
@@ -9728,8 +9313,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_731824, ((closureN)
 }
 
 static void __lambda_122(void *data, int argc, object self_731126, object r_73468) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731826;
 c_731826.hdr.mark = gc_color_red;
  c_731826.hdr.grayed = 0;
@@ -9745,8 +9329,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731826, ((closureN)self_731126)->e
 }
 
 static void __lambda_121(void *data, int argc, object self_731127, object r_73470) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731828;
 c_731828.hdr.mark = gc_color_red;
  c_731828.hdr.grayed = 0;
@@ -9761,13 +9344,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_731828, r_73470, ((closureN)self_73
 }
 
 static void __lambda_120(void *data, int argc, object self_731128, object r_73469) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731128)->elts[0],  car(r_73469));; 
+  return_closcall1(data,  ((closureN)self_731128)->elts[0],  car(r_73469));; 
 }
 
 static void __lambda_119(void *data, int argc, object self_731129, object k_73480) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731809;
 c_731809.hdr.mark = gc_color_red;
  c_731809.hdr.grayed = 0;
@@ -9783,8 +9364,7 @@ return_closcall2(data,  __glo_not,  &c_731809, ((closureN)self_731129)->elts[0])
 }
 
 static void __lambda_118(void *data, int argc, object self_731130, object r_73481) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73481) ){ 
+  if( !eq(boolean_f, r_73481) ){ 
   
 closureN_type c_731811;
 c_731811.hdr.mark = gc_color_red;
@@ -9803,13 +9383,11 @@ return_closcall1(data,(closure)&c_731811,  Cyc_is_null(((closureN)self_731130)->
 }
 
 static void __lambda_117(void *data, int argc, object self_731131, object r_73482) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731131)->elts[0], r_73482);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731131)->elts[0], r_73482);; 
 }
 
 static void __lambda_116(void *data, int argc, object self_731132) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731715;
 c_731715.hdr.mark = gc_color_red;
  c_731715.hdr.grayed = 0;
@@ -9843,8 +9421,7 @@ return_closcall1(data,(closure)&c_731715,  &c_731728);;
 }
 
 static void __lambda_115(void *data, int argc, object self_731133, object r_73450) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73450) ){ 
+  if( !eq(boolean_f, r_73450) ){ 
   
 closureN_type c_731730;
 c_731730.hdr.mark = gc_color_red;
@@ -9884,8 +9461,7 @@ return_closcall0(data,(closure)&c_731746);}
 }
 
 static void __lambda_114(void *data, int argc, object self_731134) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731748;
 c_731748.hdr.mark = gc_color_red;
  c_731748.hdr.grayed = 0;
@@ -9906,8 +9482,7 @@ return_closcall1(data,(closure)&c_731748,  nil);;
 }
 
 static void __lambda_113(void *data, int argc, object self_731135, object r_73461) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731750;
 c_731750.hdr.mark = gc_color_red;
  c_731750.hdr.grayed = 0;
@@ -9929,8 +9504,7 @@ return_closcall1(data,(closure)&c_731750,  nil);;
 }
 
 static void __lambda_112(void *data, int argc, object self_731136, object r_73462) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731752;
 c_731752.hdr.mark = gc_color_red;
  c_731752.hdr.grayed = 0;
@@ -9953,8 +9527,7 @@ return_closcall8(data,  __glo_parse,  &c_731752, ((closureN)self_731136)->elts[1
 }
 
 static void __lambda_111(void *data, int argc, object self_731137, object r_73454) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731754;
 c_731754.hdr.mark = gc_color_red;
  c_731754.hdr.grayed = 0;
@@ -9975,8 +9548,7 @@ return_closcall1(data,(closure)&c_731754,  r_73454);;
 }
 
 static void __lambda_110(void *data, int argc, object self_731138, object sub_73194) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731756;
 c_731756.hdr.mark = gc_color_red;
  c_731756.hdr.grayed = 0;
@@ -9998,8 +9570,7 @@ return_closcall1(data,(closure)&c_731756,  boolean_f);;
 }
 
 static void __lambda_109(void *data, int argc, object self_731139, object new_91toks_73195) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731758;
 c_731758.hdr.mark = gc_color_red;
  c_731758.hdr.grayed = 0;
@@ -10023,8 +9594,7 @@ return_closcall1(data,(closure)&c_731758,  &c_731797);;
 }
 
 static void __lambda_108(void *data, int argc, object self_731140, object new_91toks_73195) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731760;
 c_731760.hdr.mark = gc_color_red;
  c_731760.hdr.grayed = 0;
@@ -10047,8 +9617,7 @@ return_closcall1(data,(closure)&c_731760,  quote_quote);;
 }
 
 static void __lambda_107(void *data, int argc, object self_731141, object r_73460) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731762;
 c_731762.hdr.mark = gc_color_red;
  c_731762.hdr.grayed = 0;
@@ -10070,8 +9639,7 @@ return_closcall3(data,  __glo__list,  &c_731762, r_73460, ((closureN)self_731141
 }
 
 static void __lambda_106(void *data, int argc, object self_731142, object r_73458) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731764;
 c_731764.hdr.mark = gc_color_red;
  c_731764.hdr.grayed = 0;
@@ -10092,8 +9660,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_731764, ((closureN)self_731142)->e
 }
 
 static void __lambda_105(void *data, int argc, object self_731143, object r_73459) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731766;
 c_731766.hdr.mark = gc_color_red;
  c_731766.hdr.grayed = 0;
@@ -10113,8 +9680,7 @@ return_closcall3(data,  __glo_add_91tok,  &c_731766, ((closureN)self_731143)->el
 }
 
 static void __lambda_104(void *data, int argc, object self_731144, object r_73457) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731768;
 c_731768.hdr.mark = gc_color_red;
  c_731768.hdr.grayed = 0;
@@ -10134,8 +9700,7 @@ return_closcall1(data,(closure)&c_731768,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_103(void *data, int argc, object self_731145, object r_73455) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731145)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731145)->elts[0]) ){ 
   
 closureN_type c_731771;
 c_731771.hdr.mark = gc_color_red;
@@ -10159,13 +9724,11 @@ return_closcall1(data,(closure)&c_731771,  nil);
 }
 
 static void __lambda_102(void *data, int argc, object self_731146, object r_73456) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731146)->elts[2], ((closureN)self_731146)->elts[1], r_73456, cell_get(((closureN)self_731146)->elts[3]), ((closureN)self_731146)->elts[0], boolean_f, ((closureN)self_731146)->elts[4], ((closureN)self_731146)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731146)->elts[2], ((closureN)self_731146)->elts[1], r_73456, cell_get(((closureN)self_731146)->elts[3]), ((closureN)self_731146)->elts[0], boolean_f, ((closureN)self_731146)->elts[4], ((closureN)self_731146)->elts[5]);; 
 }
 
 static void __lambda_101(void *data, int argc, object self_731147) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731732;
 c_731732.hdr.mark = gc_color_red;
  c_731732.hdr.grayed = 0;
@@ -10182,8 +9745,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_731732, ((closureN)
 }
 
 static void __lambda_100(void *data, int argc, object self_731148, object r_73451) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731734;
 c_731734.hdr.mark = gc_color_red;
  c_731734.hdr.grayed = 0;
@@ -10199,8 +9761,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731734, ((closureN)self_731148)->e
 }
 
 static void __lambda_99(void *data, int argc, object self_731149, object r_73453) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731736;
 c_731736.hdr.mark = gc_color_red;
  c_731736.hdr.grayed = 0;
@@ -10215,13 +9776,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_731736, r_73453, ((closureN)self_73
 }
 
 static void __lambda_98(void *data, int argc, object self_731150, object r_73452) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall1(data,  ((closureN)self_731150)->elts[0],  car(r_73452));; 
+  return_closcall1(data,  ((closureN)self_731150)->elts[0],  car(r_73452));; 
 }
 
 static void __lambda_97(void *data, int argc, object self_731151, object k_73463) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731717;
 c_731717.hdr.mark = gc_color_red;
  c_731717.hdr.grayed = 0;
@@ -10237,8 +9796,7 @@ return_closcall2(data,  __glo_not,  &c_731717, ((closureN)self_731151)->elts[0])
 }
 
 static void __lambda_96(void *data, int argc, object self_731152, object r_73464) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73464) ){ 
+  if( !eq(boolean_f, r_73464) ){ 
   
 closureN_type c_731719;
 c_731719.hdr.mark = gc_color_red;
@@ -10257,18 +9815,15 @@ return_closcall1(data,(closure)&c_731719,  Cyc_is_null(((closureN)self_731152)->
 }
 
 static void __lambda_95(void *data, int argc, object self_731153, object r_73465) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_not,  ((closureN)self_731153)->elts[0], r_73465);; 
+  return_closcall2(data,  __glo_not,  ((closureN)self_731153)->elts[0], r_73465);; 
 }
 
 static void __lambda_94(void *data, int argc, object self_731154) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall9(data,  __glo_parse_95tok,  ((closureN)self_731154)->elts[3], ((closureN)self_731154)->elts[2], ((closureN)self_731154)->elts[6], ((closureN)self_731154)->elts[7], ((closureN)self_731154)->elts[0], boolean_t, ((closureN)self_731154)->elts[4], ((closureN)self_731154)->elts[5], ((closureN)self_731154)->elts[1]);; 
+  return_closcall9(data,  __glo_parse_95tok,  ((closureN)self_731154)->elts[3], ((closureN)self_731154)->elts[2], ((closureN)self_731154)->elts[6], ((closureN)self_731154)->elts[7], ((closureN)self_731154)->elts[0], boolean_t, ((closureN)self_731154)->elts[4], ((closureN)self_731154)->elts[5], ((closureN)self_731154)->elts[1]);; 
 }
 
 static void __lambda_93(void *data, int argc, object self_731155) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731653;
 c_731653.hdr.mark = gc_color_red;
  c_731653.hdr.grayed = 0;
@@ -10302,8 +9857,7 @@ return_closcall1(data,(closure)&c_731653,  &c_731673);;
 }
 
 static void __lambda_92(void *data, int argc, object self_731156, object r_73440) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731675;
 c_731675.hdr.mark = gc_color_red;
  c_731675.hdr.grayed = 0;
@@ -10337,13 +9891,11 @@ return_closcall1(data,(closure)&c_731675,  &c_731687);;
 }
 
 static void __lambda_91(void *data, int argc, object self_731157, object r_73441) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall9(data,  __glo_parse_95tok,  ((closureN)self_731157)->elts[3], ((closureN)self_731157)->elts[2], ((closureN)self_731157)->elts[6], ((closureN)self_731157)->elts[7], ((closureN)self_731157)->elts[0], boolean_f, ((closureN)self_731157)->elts[4], ((closureN)self_731157)->elts[5], ((closureN)self_731157)->elts[1]);; 
+  return_closcall9(data,  __glo_parse_95tok,  ((closureN)self_731157)->elts[3], ((closureN)self_731157)->elts[2], ((closureN)self_731157)->elts[6], ((closureN)self_731157)->elts[7], ((closureN)self_731157)->elts[0], boolean_f, ((closureN)self_731157)->elts[4], ((closureN)self_731157)->elts[5], ((closureN)self_731157)->elts[1]);; 
 }
 
 static void __lambda_90(void *data, int argc, object self_731158, object k_73442) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731677;
 c_731677.hdr.mark = gc_color_red;
  c_731677.hdr.grayed = 0;
@@ -10359,8 +9911,7 @@ return_closcall1(data,(closure)&c_731677,  equalp(((closureN)self_731158)->elts[
 }
 
 static void __lambda_89(void *data, int argc, object self_731159, object r_73443) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73443) ){ 
+  if( !eq(boolean_f, r_73443) ){ 
   
 make_int(c_731681, 0);
 return_closcall3(data,  __glo_in_91port_117set_91cnum_67,  ((closureN)self_731159)->elts[0], ((closureN)self_731159)->elts[1], &c_731681);
@@ -10370,8 +9921,7 @@ return_closcall3(data,  __glo_in_91port_117set_91cnum_67,  ((closureN)self_73115
 }
 
 static void __lambda_88(void *data, int argc, object self_731160, object k_73444) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731655;
 c_731655.hdr.mark = gc_color_red;
  c_731655.hdr.grayed = 0;
@@ -10387,8 +9937,7 @@ return_closcall1(data,(closure)&c_731655,  equalp(((closureN)self_731160)->elts[
 }
 
 static void __lambda_87(void *data, int argc, object self_731161, object r_73445) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73445) ){ 
+  if( !eq(boolean_f, r_73445) ){ 
   
 closureN_type c_731657;
 c_731657.hdr.mark = gc_color_red;
@@ -10408,8 +9957,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_731657, ((closureN)se
 }
 
 static void __lambda_86(void *data, int argc, object self_731162, object r_73447) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731659;
 c_731659.hdr.mark = gc_color_red;
  c_731659.hdr.grayed = 0;
@@ -10429,13 +9977,11 @@ return_closcall1(data,(closure)&c_731659,  &c_731665);;
 }
 
 static void __lambda_85(void *data, int argc, object self_731163, object r_73446) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall3(data,  __glo_in_91port_117set_91lnum_67,  ((closureN)self_731163)->elts[0], ((closureN)self_731163)->elts[1], r_73446);; 
+  return_closcall3(data,  __glo_in_91port_117set_91lnum_67,  ((closureN)self_731163)->elts[0], ((closureN)self_731163)->elts[1], r_73446);; 
 }
 
 static void __lambda_84(void *data, int argc, object self_731164) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731608;
 c_731608.hdr.mark = gc_color_red;
  c_731608.hdr.grayed = 0;
@@ -10455,8 +10001,7 @@ return_closcall1(data,(closure)&c_731608,  Cyc_eq(((closureN)self_731164)->elts[
 }
 
 static void __lambda_83(void *data, int argc, object self_731165, object r_73432) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73432) ){ 
+  if( !eq(boolean_f, r_73432) ){ 
   
 closureN_type c_731610;
 c_731610.hdr.mark = gc_color_red;
@@ -10496,13 +10041,11 @@ return_closcall1(data,(closure)&c_731637,  nil);}
 }
 
 static void __lambda_82(void *data, int argc, object self_731166, object r_73438) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731166)->elts[2], ((closureN)self_731166)->elts[1], r_73438, ((closureN)self_731166)->elts[5], ((closureN)self_731166)->elts[0], boolean_t, ((closureN)self_731166)->elts[3], ((closureN)self_731166)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731166)->elts[2], ((closureN)self_731166)->elts[1], r_73438, ((closureN)self_731166)->elts[5], ((closureN)self_731166)->elts[0], boolean_t, ((closureN)self_731166)->elts[3], ((closureN)self_731166)->elts[4]);; 
 }
 
 static void __lambda_81(void *data, int argc, object self_731167) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731612;
 c_731612.hdr.mark = gc_color_red;
  c_731612.hdr.grayed = 0;
@@ -10522,8 +10065,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_731612, ((closureN)se
 }
 
 static void __lambda_80(void *data, int argc, object self_731168, object r_73437) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731614;
 c_731614.hdr.mark = gc_color_red;
  c_731614.hdr.grayed = 0;
@@ -10547,8 +10089,7 @@ return_closcall1(data,(closure)&c_731614,  &c_731633);;
 }
 
 static void __lambda_79(void *data, int argc, object self_731169, object r_73436) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731616;
 c_731616.hdr.mark = gc_color_red;
  c_731616.hdr.grayed = 0;
@@ -10568,8 +10109,7 @@ return_closcall3(data,  __glo_in_91port_117set_91lnum_67,  &c_731616, ((closureN
 }
 
 static void __lambda_78(void *data, int argc, object self_731170, object r_73433) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731618;
 c_731618.hdr.mark = gc_color_red;
  c_731618.hdr.grayed = 0;
@@ -10591,8 +10131,7 @@ return_closcall3(data,  __glo_in_91port_117set_91cnum_67,  &c_731618, ((closureN
 }
 
 static void __lambda_77(void *data, int argc, object self_731171, object r_73434) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731620;
 c_731620.hdr.mark = gc_color_red;
  c_731620.hdr.grayed = 0;
@@ -10612,13 +10151,11 @@ return_closcall1(data,(closure)&c_731620,  nil);;
 }
 
 static void __lambda_76(void *data, int argc, object self_731172, object r_73435) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731172)->elts[2], ((closureN)self_731172)->elts[1], r_73435, ((closureN)self_731172)->elts[5], ((closureN)self_731172)->elts[0], boolean_f, ((closureN)self_731172)->elts[3], ((closureN)self_731172)->elts[4]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731172)->elts[2], ((closureN)self_731172)->elts[1], r_73435, ((closureN)self_731172)->elts[5], ((closureN)self_731172)->elts[0], boolean_f, ((closureN)self_731172)->elts[3], ((closureN)self_731172)->elts[4]);; 
 }
 
 static void __lambda_75(void *data, int argc, object self_731173) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731553;
 c_731553.hdr.mark = gc_color_red;
  c_731553.hdr.grayed = 0;
@@ -10649,8 +10186,7 @@ return_closcall1(data,(closure)&c_731553,  &c_731572);;
 }
 
 static void __lambda_74(void *data, int argc, object self_731174, object r_73423) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, ((closureN)self_731174)->elts[0]) ){ 
+  if( !eq(boolean_f, ((closureN)self_731174)->elts[0]) ){ 
   
 closureN_type c_731575;
 c_731575.hdr.mark = gc_color_red;
@@ -10681,8 +10217,7 @@ return_closcall3(data,  __glo_get_91toks,  &c_731581, ((closureN)self_731174)->e
 }
 
 static void __lambda_73(void *data, int argc, object self_731175, object r_73425) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731583;
 c_731583.hdr.mark = gc_color_red;
  c_731583.hdr.grayed = 0;
@@ -10698,8 +10233,7 @@ return_closcall1(data,(closure)&c_731583,  r_73425);;
 }
 
 static void __lambda_72(void *data, int argc, object self_731176, object last_73196) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731585;
 c_731585.hdr.mark = gc_color_red;
  c_731585.hdr.grayed = 0;
@@ -10718,8 +10252,7 @@ return_closcall1(data,(closure)&c_731585,  &c_731601);;
 }
 
 static void __lambda_71(void *data, int argc, object self_731177, object r_73427) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731587;
 c_731587.hdr.mark = gc_color_red;
  c_731587.hdr.grayed = 0;
@@ -10738,8 +10271,7 @@ return_closcall1(data,(closure)&c_731587,  __num_gt(data, r_73427, &c_731598));;
 }
 
 static void __lambda_70(void *data, int argc, object self_731178, object r_73426) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73426) ){ 
+  if( !eq(boolean_f, r_73426) ){ 
   return_closcall1(data,  ((closureN)self_731178)->elts[1],  car(((closureN)self_731178)->elts[2]));
 } else { 
   return_closcall1(data,  ((closureN)self_731178)->elts[1],  ((closureN)self_731178)->elts[0]);}
@@ -10747,13 +10279,11 @@ if( !eq(boolean_f, r_73426) ){
 }
 
 static void __lambda_69(void *data, int argc, object self_731179, object r_73424) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-return_closcall2(data,  __glo_reverse,  ((closureN)self_731179)->elts[0], r_73424);; 
+  return_closcall2(data,  __glo_reverse,  ((closureN)self_731179)->elts[0], r_73424);; 
 }
 
 static void __lambda_68(void *data, int argc, object self_731180, object k_73428) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731555;
 c_731555.hdr.mark = gc_color_red;
  c_731555.hdr.grayed = 0;
@@ -10771,8 +10301,7 @@ return_closcall1(data,(closure)&c_731555,  __num_gt(data, ((closureN)self_731180
 }
 
 static void __lambda_67(void *data, int argc, object self_731181, object r_73429) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73429) ){ 
+  if( !eq(boolean_f, r_73429) ){ 
   
 closureN_type c_731557;
 c_731557.hdr.mark = gc_color_red;
@@ -10792,8 +10321,7 @@ return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_731557, ((closureN)se
 }
 
 static void __lambda_66(void *data, int argc, object self_731182, object r_73430) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731559;
 c_731559.hdr.mark = gc_color_red;
  c_731559.hdr.grayed = 0;
@@ -10809,15 +10337,13 @@ return_closcall2(data,  __glo_in_91port_117get_91cnum,  &c_731559, ((closureN)se
 }
 
 static void __lambda_65(void *data, int argc, object self_731183, object r_73431) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 make_string(c_731562, "missing closing parenthesis");
 return_closcall4(data,  __glo_parse_91error,  ((closureN)self_731183)->elts[0], &c_731562, ((closureN)self_731183)->elts[1], r_73431);; 
 }
 
 static void __lambda_64(void *data, int argc, object self_731184, object k_73621) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-
+  
 closureN_type c_731534;
 c_731534.hdr.mark = gc_color_red;
  c_731534.hdr.grayed = 0;
@@ -10834,8 +10360,7 @@ return_closcall2(data,  __glo_in_91port_117get_91buf,  &c_731534, ((closureN)sel
 }
 
 static void __lambda_63(void *data, int argc, object self_731185, object r_73622) {
-  Cyc_st_add(data, "scheme/read.sld:parse");
-if( !eq(boolean_f, r_73622) ){ 
+  if( !eq(boolean_f, r_73622) ){ 
   return_closcall2(data,  __glo_in_91port_117read_91buf_67,  ((closureN)self_731185)->elts[1], ((closureN)self_731185)->elts[2]);
 } else { 
   
@@ -10869,8 +10394,7 @@ return_closcall1(data,(closure)&c_731472,  Cyc_is_null(tok_73203));;
 }
 
 static void __lambda_61(void *data, int argc, object self_731186, object r_73628) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-if( !eq(boolean_f, r_73628) ){ 
+  if( !eq(boolean_f, r_73628) ){ 
   
 closureN_type c_731474;
 c_731474.hdr.mark = gc_color_red;
@@ -10932,8 +10456,7 @@ return_closcall0(data,(closure)&c_731505);}
 }
 
 static void __lambda_60(void *data, int argc, object self_731187) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731507;
 c_731507.hdr.mark = gc_color_red;
  c_731507.hdr.grayed = 0;
@@ -10950,8 +10473,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_731507, ((closureN)
 }
 
 static void __lambda_59(void *data, int argc, object self_731188, object r_73633) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731509;
 c_731509.hdr.mark = gc_color_red;
  c_731509.hdr.grayed = 0;
@@ -10967,8 +10489,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731509, ((closureN)self_731188)->e
 }
 
 static void __lambda_58(void *data, int argc, object self_731189, object r_73635) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731511;
 c_731511.hdr.mark = gc_color_red;
  c_731511.hdr.grayed = 0;
@@ -10983,13 +10504,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_731511, r_73635, ((closureN)self_73
 }
 
 static void __lambda_57(void *data, int argc, object self_731190, object r_73634) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-return_closcall1(data,  ((closureN)self_731190)->elts[0],  car(r_73634));; 
+  return_closcall1(data,  ((closureN)self_731190)->elts[0],  car(r_73634));; 
 }
 
 static void __lambda_56(void *data, int argc, object self_731191) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731489;
 c_731489.hdr.mark = gc_color_red;
  c_731489.hdr.grayed = 0;
@@ -11011,8 +10530,7 @@ return_closcall1(data,(closure)&c_731489,  nil);;
 }
 
 static void __lambda_55(void *data, int argc, object self_731192, object r_73630) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731491;
 c_731491.hdr.mark = gc_color_red;
  c_731491.hdr.grayed = 0;
@@ -11034,8 +10552,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731491, ((closureN)self_731192)->e
 }
 
 static void __lambda_54(void *data, int argc, object self_731193, object r_73632) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731493;
 c_731493.hdr.mark = gc_color_red;
  c_731493.hdr.grayed = 0;
@@ -11056,13 +10573,11 @@ return_closcall3(data,  __glo_add_91tok,  &c_731493, r_73632, ((closureN)self_73
 }
 
 static void __lambda_53(void *data, int argc, object self_731194, object r_73631) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731194)->elts[3], ((closureN)self_731194)->elts[2], ((closureN)self_731194)->elts[6], r_73631, ((closureN)self_731194)->elts[0], ((closureN)self_731194)->elts[1], ((closureN)self_731194)->elts[4], ((closureN)self_731194)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731194)->elts[3], ((closureN)self_731194)->elts[2], ((closureN)self_731194)->elts[6], r_73631, ((closureN)self_731194)->elts[0], ((closureN)self_731194)->elts[1], ((closureN)self_731194)->elts[4], ((closureN)self_731194)->elts[5]);; 
 }
 
 static void __lambda_52(void *data, int argc, object self_731195) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-
+  
 closureN_type c_731476;
 c_731476.hdr.mark = gc_color_red;
  c_731476.hdr.grayed = 0;
@@ -11083,8 +10598,7 @@ return_closcall1(data,(closure)&c_731476,  nil);;
 }
 
 static void __lambda_51(void *data, int argc, object self_731196, object r_73629) {
-  Cyc_st_add(data, "scheme/read.sld:parse/tok");
-return_closcall8(data,  __glo_parse,  ((closureN)self_731196)->elts[3], ((closureN)self_731196)->elts[2], r_73629, ((closureN)self_731196)->elts[6], ((closureN)self_731196)->elts[0], ((closureN)self_731196)->elts[1], ((closureN)self_731196)->elts[4], ((closureN)self_731196)->elts[5]);; 
+  return_closcall8(data,  __glo_parse,  ((closureN)self_731196)->elts[3], ((closureN)self_731196)->elts[2], r_73629, ((closureN)self_731196)->elts[6], ((closureN)self_731196)->elts[0], ((closureN)self_731196)->elts[1], ((closureN)self_731196)->elts[4], ((closureN)self_731196)->elts[5]);; 
 }
 
 static void __lambda_50(void *data, int argc, closure _,object k_73638, object msg_73207, object lnum_73206, object cnum_73205) {
@@ -11108,8 +10622,7 @@ return_closcall1(data,(closure)&c_731448,  c_731469);;
 }
 
 static void __lambda_49(void *data, int argc, object self_731197, object r_73640) {
-  Cyc_st_add(data, "scheme/read.sld:parse-error");
-
+  
 closureN_type c_731450;
 c_731450.hdr.mark = gc_color_red;
  c_731450.hdr.grayed = 0;
@@ -11128,8 +10641,7 @@ return_closcall1(data,(closure)&c_731450,  c_731465);;
 }
 
 static void __lambda_48(void *data, int argc, object self_731198, object r_73641) {
-  Cyc_st_add(data, "scheme/read.sld:parse-error");
-
+  
 closureN_type c_731452;
 c_731452.hdr.mark = gc_color_red;
  c_731452.hdr.grayed = 0;
@@ -11152,8 +10664,7 @@ return_closcall1(data,(closure)&c_731452,  c_731457);;
 }
 
 static void __lambda_47(void *data, int argc, object self_731199, object r_73639) {
-  Cyc_st_add(data, "scheme/read.sld:parse-error");
-return_closcall2(data,  __glo_error,  ((closureN)self_731199)->elts[0], r_73639);; 
+  return_closcall2(data,  __glo_error,  ((closureN)self_731199)->elts[0], r_73639);; 
 }
 
 static void __lambda_46(void *data, int argc, closure _,object k_73644, object lst_73208) {
@@ -11174,8 +10685,7 @@ return_closcall1(data,(closure)&c_731397,  Cyc_is_null(lst_73208));;
 }
 
 static void __lambda_45(void *data, int argc, object self_731200, object r_73645) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-if( !eq(boolean_f, r_73645) ){ 
+  if( !eq(boolean_f, r_73645) ){ 
   
 closureN_type c_731399;
 c_731399.hdr.mark = gc_color_red;
@@ -11206,8 +10716,7 @@ return_closcall1(data,(closure)&c_731403,  car(((closureN)self_731200)->elts[1])
 }
 
 static void __lambda_44(void *data, int argc, object self_731201, object r_73650) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 closureN_type c_731405;
 c_731405.hdr.mark = gc_color_red;
  c_731405.hdr.grayed = 0;
@@ -11226,8 +10735,7 @@ return_closcall1(data,(closure)&c_731405,  Cyc_string2symbol(data, &c_731440));;
 }
 
 static void __lambda_43(void *data, int argc, object self_731202, object r_73651) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 closureN_type c_731407;
 c_731407.hdr.mark = gc_color_red;
  c_731407.hdr.grayed = 0;
@@ -11243,8 +10751,7 @@ return_closcall1(data,(closure)&c_731407,  equalp(((closureN)self_731202)->elts[
 }
 
 static void __lambda_42(void *data, int argc, object self_731203, object r_73646) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-if( !eq(boolean_f, r_73646) ){ 
+  if( !eq(boolean_f, r_73646) ){ 
   
 closureN_type c_731409;
 c_731409.hdr.mark = gc_color_red;
@@ -11276,8 +10783,7 @@ return_closcall0(data,(closure)&c_731416);}
 }
 
 static void __lambda_41(void *data, int argc, object self_731204) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 closureN_type c_731418;
 c_731418.hdr.mark = gc_color_red;
  c_731418.hdr.grayed = 0;
@@ -11293,8 +10799,7 @@ return_closcall1(data,(closure)&c_731418,  car(((closureN)self_731204)->elts[1])
 }
 
 static void __lambda_40(void *data, int argc, object self_731205, object r_73647) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 closureN_type c_731420;
 c_731420.hdr.mark = gc_color_red;
  c_731420.hdr.grayed = 0;
@@ -11310,8 +10815,7 @@ return_closcall1(data,(closure)&c_731420,  cdr(((closureN)self_731205)->elts[1])
 }
 
 static void __lambda_39(void *data, int argc, object self_731206, object r_73649) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 closureN_type c_731422;
 c_731422.hdr.mark = gc_color_red;
  c_731422.hdr.grayed = 0;
@@ -11327,20 +10831,17 @@ return_closcall2(data,  __glo__91_125dotted_91list,  &c_731422, r_73649);;
 }
 
 static void __lambda_38(void *data, int argc, object self_731207, object r_73648) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-
+  
 make_cons(c_731427,((closureN)self_731207)->elts[1], r_73648);
 return_closcall1(data,  ((closureN)self_731207)->elts[0],  &c_731427);; 
 }
 
 static void __lambda_37(void *data, int argc, object self_731208) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-return_closcall1(data,  ((closureN)self_731208)->elts[0],  cadr(((closureN)self_731208)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_731208)->elts[0],  cadr(((closureN)self_731208)->elts[1]));; 
 }
 
 static void __lambda_36(void *data, int argc, object self_731209) {
-  Cyc_st_add(data, "scheme/read.sld:->dotted-list");
-return_closcall1(data,  ((closureN)self_731209)->elts[0],  nil);; 
+  return_closcall1(data,  ((closureN)self_731209)->elts[0],  nil);; 
 }
 
 static void __lambda_35(void *data, int argc, closure _,object k_73654, object lst_73209) {
@@ -11363,8 +10864,7 @@ return_closcall1(data,(closure)&c_731367,  &c_731394);;
 }
 
 static void __lambda_34(void *data, int argc, object self_731210, object r_73659) {
-  Cyc_st_add(data, "scheme/read.sld:dotted?");
-
+  
 closureN_type c_731369;
 c_731369.hdr.mark = gc_color_red;
  c_731369.hdr.grayed = 0;
@@ -11382,8 +10882,7 @@ return_closcall1(data,(closure)&c_731369,  __num_gt(data, r_73659, &c_731391));;
 }
 
 static void __lambda_33(void *data, int argc, object self_731211, object r_73655) {
-  Cyc_st_add(data, "scheme/read.sld:dotted?");
-if( !eq(boolean_f, r_73655) ){ 
+  if( !eq(boolean_f, r_73655) ){ 
   
 closureN_type c_731371;
 c_731371.hdr.mark = gc_color_red;
@@ -11402,8 +10901,7 @@ return_closcall2(data,  __glo_reverse,  &c_731371, ((closureN)self_731211)->elts
 }
 
 static void __lambda_32(void *data, int argc, object self_731212, object r_73658) {
-  Cyc_st_add(data, "scheme/read.sld:dotted?");
-
+  
 closureN_type c_731373;
 c_731373.hdr.mark = gc_color_red;
  c_731373.hdr.grayed = 0;
@@ -11418,8 +10916,7 @@ return_closcall1(data,(closure)&c_731373,  cadr(r_73658));;
 }
 
 static void __lambda_31(void *data, int argc, object self_731213, object r_73656) {
-  Cyc_st_add(data, "scheme/read.sld:dotted?");
-
+  
 closureN_type c_731375;
 c_731375.hdr.mark = gc_color_red;
  c_731375.hdr.grayed = 0;
@@ -11437,8 +10934,7 @@ return_closcall1(data,(closure)&c_731375,  Cyc_string2symbol(data, &c_731383));;
 }
 
 static void __lambda_30(void *data, int argc, object self_731214, object r_73657) {
-  Cyc_st_add(data, "scheme/read.sld:dotted?");
-return_closcall1(data,  ((closureN)self_731214)->elts[0],  equalp(((closureN)self_731214)->elts[1], r_73657));; 
+  return_closcall1(data,  ((closureN)self_731214)->elts[0],  equalp(((closureN)self_731214)->elts[1], r_73657));; 
 }
 
 static void __lambda_29(void *data, int argc, closure _,object k_73662, object lst_73210) {
@@ -11458,8 +10954,7 @@ return_closcall2(data,  __glo_reverse,  &c_731362, lst_73210);;
 }
 
 static void __lambda_28(void *data, int argc, object self_731215, object r_73663) {
-  Cyc_st_add(data, "scheme/read.sld:->tok");
-return_closcall2(data,  __glo_parse_91atom,  ((closureN)self_731215)->elts[0], r_73663);; 
+  return_closcall2(data,  __glo_parse_91atom,  ((closureN)self_731215)->elts[0], r_73663);; 
 }
 
 static void __lambda_27(void *data, int argc, closure _,object k_73666, object tok_73212, object toks_73211) {
@@ -11481,8 +10976,7 @@ return_closcall1(data,(closure)&c_731348,  Cyc_is_null(tok_73212));;
 }
 
 static void __lambda_26(void *data, int argc, object self_731216, object r_73667) {
-  Cyc_st_add(data, "scheme/read.sld:get-toks");
-if( !eq(boolean_f, r_73667) ){ 
+  if( !eq(boolean_f, r_73667) ){ 
   return_closcall1(data,  ((closureN)self_731216)->elts[0],  ((closureN)self_731216)->elts[2]);
 } else { 
   
@@ -11502,8 +10996,7 @@ return_closcall2(data,  __glo__91_125tok,  &c_731353, ((closureN)self_731216)->e
 }
 
 static void __lambda_25(void *data, int argc, object self_731217, object r_73668) {
-  Cyc_st_add(data, "scheme/read.sld:get-toks");
-return_closcall3(data,  __glo_add_91tok,  ((closureN)self_731217)->elts[0], r_73668, ((closureN)self_731217)->elts[1]);; 
+  return_closcall3(data,  __glo_add_91tok,  ((closureN)self_731217)->elts[0], r_73668, ((closureN)self_731217)->elts[1]);; 
 }
 
 static void __lambda_24(void *data, int argc, closure _,object k_73671, object tok_73214, object toks_73213) {
@@ -11531,8 +11024,7 @@ return_closcall1(data,(closure)&c_731333,  cdddr(ptbl_73216));;
 }
 
 static void __lambda_22(void *data, int argc, object self_731218, object r_73675) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:set-cnum!");
-return_closcall1(data,  ((closureN)self_731218)->elts[1],  Cyc_set_car(data, r_73675, ((closureN)self_731218)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_731218)->elts[1],  Cyc_set_car(data, r_73675, ((closureN)self_731218)->elts[0]));; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_73678, object ptbl_73217) {
@@ -11558,8 +11050,7 @@ return_closcall1(data,(closure)&c_731319,  cddr(ptbl_73219));;
 }
 
 static void __lambda_19(void *data, int argc, object self_731219, object r_73682) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:set-lnum!");
-return_closcall1(data,  ((closureN)self_731219)->elts[0],  Cyc_set_car(data, r_73682, ((closureN)self_731219)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_731219)->elts[0],  Cyc_set_car(data, r_73682, ((closureN)self_731219)->elts[1]));; 
 }
 
 static void __lambda_18(void *data, int argc, closure _,object k_73685, object ptbl_73220) {
@@ -11585,8 +11076,7 @@ return_closcall1(data,(closure)&c_731305,  cdr(ptbl_73222));;
 }
 
 static void __lambda_16(void *data, int argc, object self_731220, object r_73689) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:set-buf!");
-return_closcall1(data,  ((closureN)self_731220)->elts[1],  Cyc_set_car(data, r_73689, ((closureN)self_731220)->elts[0]));; 
+  return_closcall1(data,  ((closureN)self_731220)->elts[1],  Cyc_set_car(data, r_73689, ((closureN)self_731220)->elts[0]));; 
 }
 
 static void __lambda_15(void *data, int argc, closure _,object k_73692, object ptbl_73223) {
@@ -11612,8 +11102,7 @@ return_closcall1(data,(closure)&c_731288,  cadr(ptbl_73224));;
 }
 
 static void __lambda_13(void *data, int argc, object self_731221, object r_73696) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:read-buf!");
-
+  
 closureN_type c_731290;
 c_731290.hdr.mark = gc_color_red;
  c_731290.hdr.grayed = 0;
@@ -11629,8 +11118,7 @@ return_closcall1(data,(closure)&c_731290,  r_73696);;
 }
 
 static void __lambda_12(void *data, int argc, object self_731222, object result_73225) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:read-buf!");
-
+  
 closureN_type c_731292;
 c_731292.hdr.mark = gc_color_red;
  c_731292.hdr.grayed = 0;
@@ -11646,8 +11134,7 @@ return_closcall3(data,  __glo_in_91port_117set_91buf_67,  &c_731292, ((closureN)
 }
 
 static void __lambda_11(void *data, int argc, object self_731223, object r_73697) {
-  Cyc_st_add(data, "scheme/read.sld:in-port:read-buf!");
-return_closcall1(data,  ((closureN)self_731223)->elts[0],  ((closureN)self_731223)->elts[1]);; 
+  return_closcall1(data,  ((closureN)self_731223)->elts[0],  ((closureN)self_731223)->elts[1]);; 
 }
 
 static void __lambda_10(void *data, int argc, closure _,object k_73700, object fp_73226) {
@@ -11668,8 +11155,7 @@ return_closcall1(data,(closure)&c_731236,  assoc(data, fp_73226, __glo__85in_91p
 }
 
 static void __lambda_9(void *data, int argc, object self_731224, object r_73701) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731238;
 c_731238.hdr.mark = gc_color_red;
  c_731238.hdr.grayed = 0;
@@ -11685,8 +11171,7 @@ return_closcall1(data,(closure)&c_731238,  r_73701);;
 }
 
 static void __lambda_8(void *data, int argc, object self_731225, object r_73227) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731240;
 c_731240.hdr.mark = gc_color_red;
  c_731240.hdr.grayed = 0;
@@ -11704,8 +11189,7 @@ return_closcall1(data,(closure)&c_731240,  &c_731283);;
 }
 
 static void __lambda_7(void *data, int argc, object self_731226, object r_73227) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731242;
 c_731242.hdr.mark = gc_color_red;
  c_731242.hdr.grayed = 0;
@@ -11722,8 +11206,7 @@ return_closcall2(data,  __glo_not,  &c_731242, cell_get(r_73227));;
 }
 
 static void __lambda_6(void *data, int argc, object self_731227, object r_73702) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-if( !eq(boolean_f, r_73702) ){ 
+  if( !eq(boolean_f, r_73702) ){ 
   
 closureN_type c_731244;
 c_731244.hdr.mark = gc_color_red;
@@ -11756,13 +11239,11 @@ return_closcall0(data,(closure)&c_731273);}
 }
 
 static void __lambda_5(void *data, int argc, object self_731228) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-return_closcall1(data,  ((closureN)self_731228)->elts[0],  cell_get(((closureN)self_731228)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_731228)->elts[0],  cell_get(((closureN)self_731228)->elts[1]));; 
 }
 
 static void __lambda_4(void *data, int argc, object self_731229) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731246;
 c_731246.hdr.mark = gc_color_red;
  c_731246.hdr.grayed = 0;
@@ -11782,8 +11263,7 @@ return_closcall5(data,  __glo__list,  &c_731246, ((closureN)self_731229)->elts[0
 }
 
 static void __lambda_3(void *data, int argc, object self_731230, object r_73706) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731248;
 c_731248.hdr.mark = gc_color_red;
  c_731248.hdr.grayed = 0;
@@ -11799,8 +11279,7 @@ return_closcall1(data,(closure)&c_731248,  Cyc_set_car(data, ((closureN)self_731
 }
 
 static void __lambda_2(void *data, int argc, object self_731231, object r_73703) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731250;
 c_731250.hdr.mark = gc_color_red;
  c_731250.hdr.grayed = 0;
@@ -11818,8 +11297,7 @@ return_closcall1(data,(closure)&c_731250,  &c_731262);;
 }
 
 static void __lambda_1(void *data, int argc, object self_731232, object r_73705) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-
+  
 closureN_type c_731252;
 c_731252.hdr.mark = gc_color_red;
  c_731252.hdr.grayed = 0;
@@ -11835,8 +11313,7 @@ return_closcall1(data,(closure)&c_731252,  global_set(__glo__85in_91port_91table
 }
 
 static void __lambda_0(void *data, int argc, object self_731233, object r_73704) {
-  Cyc_st_add(data, "scheme/read.sld:reg-port");
-return_closcall1(data,  ((closureN)self_731233)->elts[0],  cell_get(((closureN)self_731233)->elts[1]));; 
+  return_closcall1(data,  ((closureN)self_731233)->elts[0],  cell_get(((closureN)self_731233)->elts[1]));; 
 }
 
 void c_schemeread_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

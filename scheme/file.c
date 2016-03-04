@@ -275,8 +275,7 @@ return_closcall1(data,  __glo_current_91output_91port,  &c_73151);;
 }
 
 static void __lambda_32(void *data, int argc, object self_7356, object r_7319) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73153;
 c_73153.hdr.mark = gc_color_red;
  c_73153.hdr.grayed = 0;
@@ -294,8 +293,7 @@ return_closcall1(data,(closure)&c_73153,  quote__121param_91convert_125);;
 }
 
 static void __lambda_31(void *data, int argc, object self_7357, object r_7331) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73155;
 c_73155.hdr.mark = gc_color_red;
  c_73155.hdr.grayed = 0;
@@ -313,8 +311,7 @@ return_closcall2(data,  __glo_current_91output_91port,  &c_73155, r_7331);;
 }
 
 static void __lambda_30(void *data, int argc, object self_7358, object r_7329) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73157;
 c_73157.hdr.mark = gc_color_red;
  c_73157.hdr.grayed = 0;
@@ -334,8 +331,7 @@ return_closcall1(data,(closure)&c_73157,  &c_73192);;
 }
 
 static void __lambda_29(void *data, int argc, object self_7359, object r_7330) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73160;
 c_73160.hdr.mark = gc_color_red;
  c_73160.hdr.grayed = 0;
@@ -352,8 +348,7 @@ return_closcall2(data,  ((closureN)self_7359)->elts[2],  &c_73160, r_7330);;
 }
 
 static void __lambda_28(void *data, int argc, object self_7360, object r_7320) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73162;
 c_73162.hdr.mark = gc_color_red;
  c_73162.hdr.grayed = 0;
@@ -369,8 +364,7 @@ return_closcall2(data,(closure)&c_73162,  ((closureN)self_7360)->elts[1], r_7320
 }
 
 static void __lambda_27(void *data, int argc, object self_7361, object old_734, object new_733) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73164;
 c_73164.hdr.mark = gc_color_red;
  c_73164.hdr.grayed = 0;
@@ -398,8 +392,7 @@ return_closcall1(data,(closure)&c_73164,  &c_73183);;
 }
 
 static void __lambda_26(void *data, int argc, object self_7362, object k_7327) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73185;
 c_73185.hdr.mark = gc_color_red;
  c_73185.hdr.grayed = 0;
@@ -415,13 +408,11 @@ return_closcall1(data,(closure)&c_73185,  quote__121param_91set_67_125);;
 }
 
 static void __lambda_25(void *data, int argc, object self_7363, object r_7328) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-return_closcall3(data,  __glo_current_91output_91port,  ((closureN)self_7363)->elts[0], r_7328, ((closureN)self_7363)->elts[1]);; 
+  return_closcall3(data,  __glo_current_91output_91port,  ((closureN)self_7363)->elts[0], r_7328, ((closureN)self_7363)->elts[1]);; 
 }
 
 static void __lambda_24(void *data, int argc, object self_7364, object r_7321) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73166;
 c_73166.hdr.mark = gc_color_red;
  c_73166.hdr.grayed = 0;
@@ -449,8 +440,7 @@ return_closcall1(data,(closure)&c_73166,  &c_73171);;
 }
 
 static void __lambda_23(void *data, int argc, object self_7365, object k_7323) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73173;
 c_73173.hdr.mark = gc_color_red;
  c_73173.hdr.grayed = 0;
@@ -466,8 +456,7 @@ return_closcall1(data,  __glo_current_91output_91port,  &c_73173);;
 }
 
 static void __lambda_22(void *data, int argc, object self_7366, object r_7326) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73175;
 c_73175.hdr.mark = gc_color_red;
  c_73175.hdr.grayed = 0;
@@ -483,8 +472,7 @@ return_closcall1(data,(closure)&c_73175,  Cyc_io_close_port(data, r_7326));;
 }
 
 static void __lambda_21(void *data, int argc, object self_7367, object r_7324) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-
+  
 closureN_type c_73177;
 c_73177.hdr.mark = gc_color_red;
  c_73177.hdr.grayed = 0;
@@ -500,13 +488,11 @@ return_closcall1(data,(closure)&c_73177,  quote__121param_91set_67_125);;
 }
 
 static void __lambda_20(void *data, int argc, object self_7368, object r_7325) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-return_closcall3(data,  __glo_current_91output_91port,  ((closureN)self_7368)->elts[0], r_7325, ((closureN)self_7368)->elts[1]);; 
+  return_closcall3(data,  __glo_current_91output_91port,  ((closureN)self_7368)->elts[0], r_7325, ((closureN)self_7368)->elts[1]);; 
 }
 
 static void __lambda_19(void *data, int argc, object self_7369, object r_7322) {
-  Cyc_st_add(data, "scheme/file.sld:with-output-to-file");
-return_closcall4(data,  __glo_dynamic_91wind,  ((closureN)self_7369)->elts[0], ((closureN)self_7369)->elts[1], ((closureN)self_7369)->elts[2], r_7322);; 
+  return_closcall4(data,  __glo_dynamic_91wind,  ((closureN)self_7369)->elts[0], ((closureN)self_7369)->elts[1], ((closureN)self_7369)->elts[2], r_7322);; 
 }
 
 static void __lambda_18(void *data, int argc, closure _,object k_7334, object string_736, object thunk_735) {
@@ -528,8 +514,7 @@ return_closcall1(data,  __glo_current_91input_91port,  &c_73106);;
 }
 
 static void __lambda_17(void *data, int argc, object self_7370, object r_7335) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73108;
 c_73108.hdr.mark = gc_color_red;
  c_73108.hdr.grayed = 0;
@@ -547,8 +532,7 @@ return_closcall1(data,(closure)&c_73108,  quote__121param_91convert_125);;
 }
 
 static void __lambda_16(void *data, int argc, object self_7371, object r_7347) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73110;
 c_73110.hdr.mark = gc_color_red;
  c_73110.hdr.grayed = 0;
@@ -566,8 +550,7 @@ return_closcall2(data,  __glo_current_91input_91port,  &c_73110, r_7347);;
 }
 
 static void __lambda_15(void *data, int argc, object self_7372, object r_7345) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73112;
 c_73112.hdr.mark = gc_color_red;
  c_73112.hdr.grayed = 0;
@@ -587,8 +570,7 @@ return_closcall1(data,(closure)&c_73112,  &c_73147);;
 }
 
 static void __lambda_14(void *data, int argc, object self_7373, object r_7346) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73115;
 c_73115.hdr.mark = gc_color_red;
  c_73115.hdr.grayed = 0;
@@ -605,8 +587,7 @@ return_closcall2(data,  ((closureN)self_7373)->elts[2],  &c_73115, r_7346);;
 }
 
 static void __lambda_13(void *data, int argc, object self_7374, object r_7336) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73117;
 c_73117.hdr.mark = gc_color_red;
  c_73117.hdr.grayed = 0;
@@ -622,8 +603,7 @@ return_closcall2(data,(closure)&c_73117,  ((closureN)self_7374)->elts[1], r_7336
 }
 
 static void __lambda_12(void *data, int argc, object self_7375, object old_738, object new_737) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73119;
 c_73119.hdr.mark = gc_color_red;
  c_73119.hdr.grayed = 0;
@@ -651,8 +631,7 @@ return_closcall1(data,(closure)&c_73119,  &c_73138);;
 }
 
 static void __lambda_11(void *data, int argc, object self_7376, object k_7343) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73140;
 c_73140.hdr.mark = gc_color_red;
  c_73140.hdr.grayed = 0;
@@ -668,13 +647,11 @@ return_closcall1(data,(closure)&c_73140,  quote__121param_91set_67_125);;
 }
 
 static void __lambda_10(void *data, int argc, object self_7377, object r_7344) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-return_closcall3(data,  __glo_current_91input_91port,  ((closureN)self_7377)->elts[0], r_7344, ((closureN)self_7377)->elts[1]);; 
+  return_closcall3(data,  __glo_current_91input_91port,  ((closureN)self_7377)->elts[0], r_7344, ((closureN)self_7377)->elts[1]);; 
 }
 
 static void __lambda_9(void *data, int argc, object self_7378, object r_7337) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73121;
 c_73121.hdr.mark = gc_color_red;
  c_73121.hdr.grayed = 0;
@@ -702,8 +679,7 @@ return_closcall1(data,(closure)&c_73121,  &c_73126);;
 }
 
 static void __lambda_8(void *data, int argc, object self_7379, object k_7339) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73128;
 c_73128.hdr.mark = gc_color_red;
  c_73128.hdr.grayed = 0;
@@ -719,8 +695,7 @@ return_closcall1(data,  __glo_current_91input_91port,  &c_73128);;
 }
 
 static void __lambda_7(void *data, int argc, object self_7380, object r_7342) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73130;
 c_73130.hdr.mark = gc_color_red;
  c_73130.hdr.grayed = 0;
@@ -736,8 +711,7 @@ return_closcall1(data,(closure)&c_73130,  Cyc_io_close_port(data, r_7342));;
 }
 
 static void __lambda_6(void *data, int argc, object self_7381, object r_7340) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-
+  
 closureN_type c_73132;
 c_73132.hdr.mark = gc_color_red;
  c_73132.hdr.grayed = 0;
@@ -753,13 +727,11 @@ return_closcall1(data,(closure)&c_73132,  quote__121param_91set_67_125);;
 }
 
 static void __lambda_5(void *data, int argc, object self_7382, object r_7341) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-return_closcall3(data,  __glo_current_91input_91port,  ((closureN)self_7382)->elts[0], r_7341, ((closureN)self_7382)->elts[1]);; 
+  return_closcall3(data,  __glo_current_91input_91port,  ((closureN)self_7382)->elts[0], r_7341, ((closureN)self_7382)->elts[1]);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7383, object r_7338) {
-  Cyc_st_add(data, "scheme/file.sld:with-input-from-file");
-return_closcall4(data,  __glo_dynamic_91wind,  ((closureN)self_7383)->elts[0], ((closureN)self_7383)->elts[1], ((closureN)self_7383)->elts[2], r_7338);; 
+  return_closcall4(data,  __glo_dynamic_91wind,  ((closureN)self_7383)->elts[0], ((closureN)self_7383)->elts[1], ((closureN)self_7383)->elts[2], r_7338);; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_7350, object string_7310, object proc_739) {
@@ -782,8 +754,7 @@ return_closcall1(data,(closure)&c_7397,  &c_73103);;
 }
 
 static void __lambda_2(void *data, int argc, object self_7384, object r_7351) {
-  Cyc_st_add(data, "scheme/file.sld:call-with-output-file");
-return_closcall3(data,  __glo_call_91with_91port,  ((closureN)self_7384)->elts[0], r_7351, ((closureN)self_7384)->elts[1]);; 
+  return_closcall3(data,  __glo_call_91with_91port,  ((closureN)self_7384)->elts[0], r_7351, ((closureN)self_7384)->elts[1]);; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7354, object string_7312, object proc_7311) {
@@ -806,8 +777,7 @@ return_closcall1(data,(closure)&c_7388,  &c_7394);;
 }
 
 static void __lambda_0(void *data, int argc, object self_7385, object r_7355) {
-  Cyc_st_add(data, "scheme/file.sld:call-with-input-file");
-return_closcall3(data,  __glo_call_91with_91port,  ((closureN)self_7385)->elts[0], r_7355, ((closureN)self_7385)->elts[1]);; 
+  return_closcall3(data,  __glo_call_91with_91port,  ((closureN)self_7385)->elts[0], r_7355, ((closureN)self_7385)->elts[1]);; 
 }
 
 void c_schemefile_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

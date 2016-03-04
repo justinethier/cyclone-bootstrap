@@ -239,13 +239,11 @@ return_closcall1(data,(closure)&c_7327,  &c_7350);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7318, object k_7317, object port_733) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-return_closcall2(data,  __glo_read_91all,  k_7317, port_733);; 
+  return_closcall2(data,  __glo_read_91all,  k_7317, port_733);; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7319, object r_7316) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-
+  
 closureN_type c_7329;
 c_7329.hdr.mark = gc_color_red;
  c_7329.hdr.grayed = 0;
@@ -261,8 +259,7 @@ return_closcall3(data,  __glo_call_91with_91input_91file,  &c_7329, ((closureN)s
 }
 
 static void __lambda_4(void *data, int argc, object self_7320, object r_7312) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-
+  
 closureN_type c_7331;
 c_7331.hdr.mark = gc_color_red;
  c_7331.hdr.grayed = 0;
@@ -278,8 +275,7 @@ return_closcall1(data,(closure)&c_7331,  r_7312);;
 }
 
 static void __lambda_3(void *data, int argc, object self_7321, object exprs_734) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-
+  
 closureN_type c_7333;
 c_7333.hdr.mark = gc_color_red;
  c_7333.hdr.grayed = 0;
@@ -306,8 +302,7 @@ return_closcall1(data,(closure)&c_7333,  &c_7337);;
 }
 
 static void __lambda_2(void *data, int argc, object self_7322, object k_7314, object expr_735) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-
+  
 closureN_type c_7339;
 c_7339.hdr.mark = gc_color_red;
  c_7339.hdr.grayed = 0;
@@ -324,15 +319,13 @@ return_closcall1(data,(closure)&c_7339,  &c_7347);;
 }
 
 static void __lambda_1(void *data, int argc, object self_7323, object r_7315) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-
+  
 object c_7344 = apply(data,  ((closureN)self_7323)->elts[0],__glo_eval, r_7315);
 return_closcall1(data,  ((closureN)self_7323)->elts[0],  c_7344);; 
 }
 
 static void __lambda_0(void *data, int argc, object self_7324, object r_7313) {
-  Cyc_st_add(data, "scheme/load.sld:load");
-return_closcall3(data,  __glo_for_91each,  ((closureN)self_7324)->elts[1], r_7313, ((closureN)self_7324)->elts[0]);; 
+  return_closcall3(data,  __glo_for_91each,  ((closureN)self_7324)->elts[1], r_7313, ((closureN)self_7324)->elts[0]);; 
 }
 
 void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

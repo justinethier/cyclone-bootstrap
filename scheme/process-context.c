@@ -72,8 +72,7 @@ return_closcall1(data,(closure)&c_7312,  &c_7317);;
 }
 
 static void __lambda_2(void *data, int argc, object self_737, object r_734) {
-  Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
-return_closcall1(data,  ((closureN)self_737)->elts[0],  global_set(__glo_emergency_91exit, primitive_exit));; 
+  return_closcall1(data,  ((closureN)self_737)->elts[0],  global_set(__glo_emergency_91exit, primitive_exit));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _, object k, object env_var) { 

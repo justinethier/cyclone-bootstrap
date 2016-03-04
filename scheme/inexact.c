@@ -103,8 +103,7 @@ return_closcall1(data,(closure)&c_7326,  Cyc_is_null(z2_731));;
 }
 
 static void __lambda_9(void *data, int argc, object self_7314, object r_7310) {
-  Cyc_st_add(data, "scheme/inexact.sld:log");
-if( !eq(boolean_f, r_7310) ){ 
+  if( !eq(boolean_f, r_7310) ){ 
   return_closcall2(data,  __glo_c_91log,  ((closureN)self_7314)->elts[0], ((closureN)self_7314)->elts[1]);
 } else { 
   
@@ -124,8 +123,7 @@ return_closcall1(data,(closure)&c_7331,  car(((closureN)self_7314)->elts[2]));}
 }
 
 static void __lambda_8(void *data, int argc, object self_7315, object r_7311) {
-  Cyc_st_add(data, "scheme/inexact.sld:log");
-
+  
 closureN_type c_7333;
 c_7333.hdr.mark = gc_color_red;
  c_7333.hdr.grayed = 0;
@@ -141,8 +139,7 @@ return_closcall1(data,(closure)&c_7333,  r_7311);;
 }
 
 static void __lambda_7(void *data, int argc, object self_7316, object z2_85_733) {
-  Cyc_st_add(data, "scheme/inexact.sld:log");
-
+  
 closureN_type c_7335;
 c_7335.hdr.mark = gc_color_red;
  c_7335.hdr.grayed = 0;
@@ -158,8 +155,7 @@ return_closcall2(data,  __glo_c_91log,  &c_7335, ((closureN)self_7316)->elts[1])
 }
 
 static void __lambda_6(void *data, int argc, object self_7317, object r_7312) {
-  Cyc_st_add(data, "scheme/inexact.sld:log");
-
+  
 closureN_type c_7337;
 c_7337.hdr.mark = gc_color_red;
  c_7337.hdr.grayed = 0;
@@ -175,8 +171,7 @@ return_closcall2(data,  __glo_c_91log,  &c_7337, ((closureN)self_7317)->elts[1])
 }
 
 static void __lambda_5(void *data, int argc, object self_7318, object r_7313) {
-  Cyc_st_add(data, "scheme/inexact.sld:log");
-
+  
 common_type c_7342 = Cyc_div(data,2,((closureN)self_7318)->elts[1], r_7313);
 return_closcall1(data,  ((closureN)self_7318)->elts[0],  &c_7342);; 
 }

@@ -646,8 +646,7 @@ return_closcall1(data,(closure)&c_732226,  cdr(expr_7346));;
 }
 
 static void __lambda_385(void *data, int argc, object self_73446, object r_73145) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732228;
 c_732228.hdr.mark = gc_color_red;
  c_732228.hdr.grayed = 0;
@@ -664,8 +663,7 @@ return_closcall1(data,(closure)&c_732228,  r_73145);;
 }
 
 static void __lambda_384(void *data, int argc, object self_73447, object v_931_7347) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732230;
 c_732230.hdr.mark = gc_color_red;
  c_732230.hdr.grayed = 0;
@@ -682,8 +680,7 @@ return_closcall1(data,(closure)&c_732230,  v_931_7347);;
 }
 
 static void __lambda_383(void *data, int argc, object self_73448, object clauses_7348) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732232;
 c_732232.hdr.mark = gc_color_red;
  c_732232.hdr.grayed = 0;
@@ -701,8 +698,7 @@ return_closcall1(data,(closure)&c_732232,  quote_lambda);;
 }
 
 static void __lambda_382(void *data, int argc, object self_73449, object r_73201) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732235;
 c_732235.hdr.mark = gc_color_red;
  c_732235.hdr.grayed = 0;
@@ -720,8 +716,7 @@ return_closcall2(data,  ((closureN)self_73449)->elts[3],  &c_732235, r_73201);;
 }
 
 static void __lambda_381(void *data, int argc, object self_73450, object r_73147) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732237;
 c_732237.hdr.mark = gc_color_red;
  c_732237.hdr.grayed = 0;
@@ -740,8 +735,7 @@ return_closcall1(data,(closure)&c_732237,  quote_args);;
 }
 
 static void __lambda_380(void *data, int argc, object self_73451, object r_73200) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732240;
 c_732240.hdr.mark = gc_color_red;
  c_732240.hdr.grayed = 0;
@@ -760,8 +754,7 @@ return_closcall2(data,  ((closureN)self_73451)->elts[4],  &c_732240, r_73200);;
 }
 
 static void __lambda_379(void *data, int argc, object self_73452, object r_73150) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732242;
 c_732242.hdr.mark = gc_color_red;
  c_732242.hdr.grayed = 0;
@@ -781,8 +774,7 @@ return_closcall1(data,(closure)&c_732242,  quote_let);;
 }
 
 static void __lambda_378(void *data, int argc, object self_73453, object r_73199) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732245;
 c_732245.hdr.mark = gc_color_red;
  c_732245.hdr.grayed = 0;
@@ -802,8 +794,7 @@ return_closcall2(data,  ((closureN)self_73453)->elts[5],  &c_732245, r_73199);;
 }
 
 static void __lambda_377(void *data, int argc, object self_73454, object r_73156) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732247;
 c_732247.hdr.mark = gc_color_red;
  c_732247.hdr.grayed = 0;
@@ -824,8 +815,7 @@ return_closcall1(data,(closure)&c_732247,  quote_len);;
 }
 
 static void __lambda_376(void *data, int argc, object self_73455, object r_73198) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732250;
 c_732250.hdr.mark = gc_color_red;
  c_732250.hdr.grayed = 0;
@@ -846,8 +836,7 @@ return_closcall2(data,  ((closureN)self_73455)->elts[6],  &c_732250, r_73198);;
 }
 
 static void __lambda_375(void *data, int argc, object self_73456, object r_73184) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732252;
 c_732252.hdr.mark = gc_color_red;
  c_732252.hdr.grayed = 0;
@@ -869,8 +858,7 @@ return_closcall1(data,(closure)&c_732252,  quote_length);;
 }
 
 static void __lambda_374(void *data, int argc, object self_73457, object r_73197) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732255;
 c_732255.hdr.mark = gc_color_red;
  c_732255.hdr.grayed = 0;
@@ -892,8 +880,7 @@ return_closcall2(data,  ((closureN)self_73457)->elts[7],  &c_732255, r_73197);;
 }
 
 static void __lambda_373(void *data, int argc, object self_73458, object r_73190) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732257;
 c_732257.hdr.mark = gc_color_red;
  c_732257.hdr.grayed = 0;
@@ -916,8 +903,7 @@ return_closcall1(data,(closure)&c_732257,  quote_args);;
 }
 
 static void __lambda_372(void *data, int argc, object self_73459, object r_73196) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732260;
 c_732260.hdr.mark = gc_color_red;
  c_732260.hdr.grayed = 0;
@@ -940,8 +926,7 @@ return_closcall2(data,  ((closureN)self_73459)->elts[8],  &c_732260, r_73196);;
 }
 
 static void __lambda_371(void *data, int argc, object self_73460, object r_73193) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732262;
 c_732262.hdr.mark = gc_color_red;
  c_732262.hdr.grayed = 0;
@@ -965,8 +950,7 @@ return_closcall1(data,(closure)&c_732262,  nil);;
 }
 
 static void __lambda_370(void *data, int argc, object self_73461, object r_73194) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732264;
 c_732264.hdr.mark = gc_color_red;
  c_732264.hdr.grayed = 0;
@@ -993,8 +977,7 @@ return_closcall1(data,(closure)&c_732264,  &c_732525);;
 }
 
 static void __lambda_369(void *data, int argc, object self_73462, object r_73195) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732266;
 c_732266.hdr.mark = gc_color_red;
  c_732266.hdr.grayed = 0;
@@ -1017,8 +1000,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732266, ((closureN)self_73462)-
 }
 
 static void __lambda_368(void *data, int argc, object self_73463, object r_73191) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732268;
 c_732268.hdr.mark = gc_color_red;
  c_732268.hdr.grayed = 0;
@@ -1046,8 +1028,7 @@ return_closcall1(data,(closure)&c_732268,  &c_732521);;
 }
 
 static void __lambda_367(void *data, int argc, object self_73464, object r_73192) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732270;
 c_732270.hdr.mark = gc_color_red;
  c_732270.hdr.grayed = 0;
@@ -1069,8 +1050,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732270, ((closureN)self_73464)-
 }
 
 static void __lambda_366(void *data, int argc, object self_73465, object r_73187) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732272;
 c_732272.hdr.mark = gc_color_red;
  c_732272.hdr.grayed = 0;
@@ -1093,8 +1073,7 @@ return_closcall1(data,(closure)&c_732272,  nil);;
 }
 
 static void __lambda_365(void *data, int argc, object self_73466, object r_73188) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732274;
 c_732274.hdr.mark = gc_color_red;
  c_732274.hdr.grayed = 0;
@@ -1124,8 +1103,7 @@ return_closcall1(data,(closure)&c_732274,  &c_732516);;
 }
 
 static void __lambda_364(void *data, int argc, object self_73467, object r_73189) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732276;
 c_732276.hdr.mark = gc_color_red;
  c_732276.hdr.grayed = 0;
@@ -1147,8 +1125,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732276, ((closureN)self_73467)-
 }
 
 static void __lambda_363(void *data, int argc, object self_73468, object r_73185) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732278;
 c_732278.hdr.mark = gc_color_red;
  c_732278.hdr.grayed = 0;
@@ -1179,8 +1156,7 @@ return_closcall1(data,(closure)&c_732278,  &c_732510);;
 }
 
 static void __lambda_362(void *data, int argc, object self_73469, object r_73186) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732280;
 c_732280.hdr.mark = gc_color_red;
  c_732280.hdr.grayed = 0;
@@ -1201,8 +1177,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732280, ((closureN)self_73469)-
 }
 
 static void __lambda_361(void *data, int argc, object self_73470, object r_73181) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732282;
 c_732282.hdr.mark = gc_color_red;
  c_732282.hdr.grayed = 0;
@@ -1224,8 +1199,7 @@ return_closcall1(data,(closure)&c_732282,  nil);;
 }
 
 static void __lambda_360(void *data, int argc, object self_73471, object r_73182) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732284;
 c_732284.hdr.mark = gc_color_red;
  c_732284.hdr.grayed = 0;
@@ -1258,8 +1232,7 @@ return_closcall1(data,(closure)&c_732284,  &c_732503);;
 }
 
 static void __lambda_359(void *data, int argc, object self_73472, object r_73183) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732286;
 c_732286.hdr.mark = gc_color_red;
  c_732286.hdr.grayed = 0;
@@ -1280,8 +1253,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732286, ((closureN)self_73472)-
 }
 
 static void __lambda_358(void *data, int argc, object self_73473, object r_73159) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732288;
 c_732288.hdr.mark = gc_color_red;
  c_732288.hdr.grayed = 0;
@@ -1303,8 +1275,7 @@ return_closcall1(data,(closure)&c_732288,  quote__75case);;
 }
 
 static void __lambda_357(void *data, int argc, object self_73474, object r_73180) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732291;
 c_732291.hdr.mark = gc_color_red;
  c_732291.hdr.grayed = 0;
@@ -1326,8 +1297,7 @@ return_closcall2(data,  ((closureN)self_73474)->elts[7],  &c_732291, r_73180);;
 }
 
 static void __lambda_356(void *data, int argc, object self_73475, object r_73165) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732293;
 c_732293.hdr.mark = gc_color_red;
  c_732293.hdr.grayed = 0;
@@ -1350,8 +1320,7 @@ return_closcall1(data,(closure)&c_732293,  quote_args);;
 }
 
 static void __lambda_355(void *data, int argc, object self_73476, object r_73179) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732296;
 c_732296.hdr.mark = gc_color_red;
  c_732296.hdr.grayed = 0;
@@ -1374,8 +1343,7 @@ return_closcall2(data,  ((closureN)self_73476)->elts[8],  &c_732296, r_73179);;
 }
 
 static void __lambda_354(void *data, int argc, object self_73477, object r_73168) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732298;
 c_732298.hdr.mark = gc_color_red;
  c_732298.hdr.grayed = 0;
@@ -1399,8 +1367,7 @@ return_closcall1(data,(closure)&c_732298,  quote_len);;
 }
 
 static void __lambda_353(void *data, int argc, object self_73478, object r_73178) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732301;
 c_732301.hdr.mark = gc_color_red;
  c_732301.hdr.grayed = 0;
@@ -1423,8 +1390,7 @@ return_closcall2(data,  ((closureN)self_73478)->elts[9],  &c_732301, r_73178);;
 }
 
 static void __lambda_352(void *data, int argc, object self_73479, object r_73171) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732303;
 c_732303.hdr.mark = gc_color_red;
  c_732303.hdr.grayed = 0;
@@ -1448,8 +1414,7 @@ return_closcall1(data,(closure)&c_732303,  nil);;
 }
 
 static void __lambda_351(void *data, int argc, object self_73480, object r_73176) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732305;
 c_732305.hdr.mark = gc_color_red;
  c_732305.hdr.grayed = 0;
@@ -1476,8 +1441,7 @@ return_closcall1(data,(closure)&c_732305,  &c_732500);;
 }
 
 static void __lambda_350(void *data, int argc, object self_73481, object r_73177) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732307;
 c_732307.hdr.mark = gc_color_red;
  c_732307.hdr.grayed = 0;
@@ -1500,8 +1464,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732307, ((closureN)self_73481)-
 }
 
 static void __lambda_349(void *data, int argc, object self_73482, object r_73174) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732309;
 c_732309.hdr.mark = gc_color_red;
  c_732309.hdr.grayed = 0;
@@ -1531,8 +1494,7 @@ return_closcall1(data,(closure)&c_732309,  &c_732495);;
 }
 
 static void __lambda_348(void *data, int argc, object self_73483, object r_73175) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732311;
 c_732311.hdr.mark = gc_color_red;
  c_732311.hdr.grayed = 0;
@@ -1557,8 +1519,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732311, &c_732493, ((closureN)s
 }
 
 static void __lambda_347(void *data, int argc, object self_73484, object r_73172) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732313;
 c_732313.hdr.mark = gc_color_red;
  c_732313.hdr.grayed = 0;
@@ -1590,8 +1551,7 @@ return_closcall1(data,(closure)&c_732313,  &c_732489);;
 }
 
 static void __lambda_346(void *data, int argc, object self_73485, object r_73173) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732315;
 c_732315.hdr.mark = gc_color_red;
  c_732315.hdr.grayed = 0;
@@ -1613,8 +1573,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732315, ((closureN)self_73485)-
 }
 
 static void __lambda_345(void *data, int argc, object self_73486, object r_73169) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732317;
 c_732317.hdr.mark = gc_color_red;
  c_732317.hdr.grayed = 0;
@@ -1647,8 +1606,7 @@ return_closcall1(data,(closure)&c_732317,  &c_732482);;
 }
 
 static void __lambda_344(void *data, int argc, object self_73487, object r_73170) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732319;
 c_732319.hdr.mark = gc_color_red;
  c_732319.hdr.grayed = 0;
@@ -1669,8 +1627,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732319, ((closureN)self_73487)-
 }
 
 static void __lambda_343(void *data, int argc, object self_73488, object r_73166) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732321;
 c_732321.hdr.mark = gc_color_red;
  c_732321.hdr.grayed = 0;
@@ -1704,8 +1661,7 @@ return_closcall1(data,(closure)&c_732321,  &c_732474);;
 }
 
 static void __lambda_342(void *data, int argc, object self_73489, object r_73167) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732323;
 c_732323.hdr.mark = gc_color_red;
  c_732323.hdr.grayed = 0;
@@ -1725,8 +1681,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732323, ((closureN)self_73489)-
 }
 
 static void __lambda_341(void *data, int argc, object self_73490, object r_73162) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732325;
 c_732325.hdr.mark = gc_color_red;
  c_732325.hdr.grayed = 0;
@@ -1747,8 +1702,7 @@ return_closcall1(data,(closure)&c_732325,  nil);;
 }
 
 static void __lambda_340(void *data, int argc, object self_73491, object r_73163) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732327;
 c_732327.hdr.mark = gc_color_red;
  c_732327.hdr.grayed = 0;
@@ -1784,8 +1738,7 @@ return_closcall1(data,(closure)&c_732327,  &c_732465);;
 }
 
 static void __lambda_339(void *data, int argc, object self_73492, object r_73164) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732329;
 c_732329.hdr.mark = gc_color_red;
  c_732329.hdr.grayed = 0;
@@ -1805,8 +1758,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732329, ((closureN)self_73492)-
 }
 
 static void __lambda_338(void *data, int argc, object self_73493, object r_73160) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732331;
 c_732331.hdr.mark = gc_color_red;
  c_732331.hdr.grayed = 0;
@@ -1853,8 +1805,7 @@ return_closcall1(data,(closure)&c_732331,  &c_732450);;
 }
 
 static void __lambda_337(void *data, int argc, object self_73494, object r_73161) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732333;
 c_732333.hdr.mark = gc_color_red;
  c_732333.hdr.grayed = 0;
@@ -1873,8 +1824,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732333, ((closureN)self_73494)-
 }
 
 static void __lambda_336(void *data, int argc, object self_73495, object r_73157) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732335;
 c_732335.hdr.mark = gc_color_red;
  c_732335.hdr.grayed = 0;
@@ -1922,8 +1872,7 @@ return_closcall1(data,(closure)&c_732335,  &c_732434);;
 }
 
 static void __lambda_335(void *data, int argc, object self_73496, object r_73158) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732337;
 c_732337.hdr.mark = gc_color_red;
  c_732337.hdr.grayed = 0;
@@ -1941,8 +1890,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732337, ((closureN)self_73496)-
 }
 
 static void __lambda_334(void *data, int argc, object self_73497, object r_73153) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732339;
 c_732339.hdr.mark = gc_color_red;
  c_732339.hdr.grayed = 0;
@@ -1961,8 +1909,7 @@ return_closcall1(data,(closure)&c_732339,  nil);;
 }
 
 static void __lambda_333(void *data, int argc, object self_73498, object r_73154) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732341;
 c_732341.hdr.mark = gc_color_red;
  c_732341.hdr.grayed = 0;
@@ -2012,8 +1959,7 @@ return_closcall1(data,(closure)&c_732341,  &c_732417);;
 }
 
 static void __lambda_332(void *data, int argc, object self_73499, object r_73155) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732343;
 c_732343.hdr.mark = gc_color_red;
  c_732343.hdr.grayed = 0;
@@ -2031,8 +1977,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732343, ((closureN)self_73499)-
 }
 
 static void __lambda_331(void *data, int argc, object self_73500, object r_73151) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732345;
 c_732345.hdr.mark = gc_color_red;
  c_732345.hdr.grayed = 0;
@@ -2083,8 +2028,7 @@ return_closcall1(data,(closure)&c_732345,  &c_732399);;
 }
 
 static void __lambda_330(void *data, int argc, object self_73501, object r_73152) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732347;
 c_732347.hdr.mark = gc_color_red;
  c_732347.hdr.grayed = 0;
@@ -2101,8 +2045,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732347, ((closureN)self_73501)-
 }
 
 static void __lambda_329(void *data, int argc, object self_73502, object r_73148) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732349;
 c_732349.hdr.mark = gc_color_red;
  c_732349.hdr.grayed = 0;
@@ -2154,8 +2097,7 @@ return_closcall1(data,(closure)&c_732349,  &c_732380);;
 }
 
 static void __lambda_328(void *data, int argc, object self_73503, object r_73149) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732351;
 c_732351.hdr.mark = gc_color_red;
  c_732351.hdr.grayed = 0;
@@ -2171,8 +2113,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732351, ((closureN)self_73503)-
 }
 
 static void __lambda_327(void *data, int argc, object self_73504, object r_73146) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732353;
 c_732353.hdr.mark = gc_color_red;
  c_732353.hdr.grayed = 0;
@@ -2190,8 +2131,7 @@ return_closcall1(data,(closure)&c_732353,  &c_732377);;
 }
 
 static void __lambda_326(void *data, int argc, object self_73505, object r_73142) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732355;
 c_732355.hdr.mark = gc_color_red;
  c_732355.hdr.grayed = 0;
@@ -2207,8 +2147,7 @@ return_closcall1(data,(closure)&c_732355,  r_73142);;
 }
 
 static void __lambda_325(void *data, int argc, object self_73506, object tmp_7349) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 closureN_type c_732357;
 c_732357.hdr.mark = gc_color_red;
  c_732357.hdr.grayed = 0;
@@ -2235,13 +2174,11 @@ return_closcall1(data,(closure)&c_732357,  &c_732370);;
 }
 
 static void __lambda_324(void *data, int argc, object self_73507, object r_73141) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-return_closcall1(data,  ((closureN)self_73507)->elts[0],  car(r_73141));; 
+  return_closcall1(data,  ((closureN)self_73507)->elts[0],  car(r_73141));; 
 }
 
 static void __lambda_323(void *data, int argc, object self_73508, object k_73143) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-if( !eq(boolean_f, ((closureN)self_73508)->elts[1]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73508)->elts[1]) ){ 
   return_closcall1(data,  k_73143,  ((closureN)self_73508)->elts[1]);
 } else { 
   
@@ -2262,8 +2199,7 @@ return_closcall3(data,  __glo_error,  &c_732362, &c_732368, ((closureN)self_7350
 }
 
 static void __lambda_322(void *data, int argc, object self_73509, object r_73144) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
-
+  
 make_cons(c_732367,r_73144, boolean_f);
 return_closcall1(data,  ((closureN)self_73509)->elts[0],  &c_732367);; 
 }
@@ -2287,8 +2223,7 @@ return_closcall1(data,(closure)&c_73833,  cdr(expr_7352));;
 }
 
 static void __lambda_320(void *data, int argc, object self_73510, object r_73363) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73835;
 c_73835.hdr.mark = gc_color_red;
  c_73835.hdr.grayed = 0;
@@ -2305,8 +2240,7 @@ return_closcall1(data,(closure)&c_73835,  r_73363);;
 }
 
 static void __lambda_319(void *data, int argc, object self_73511, object v_9338_7353) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73837;
 c_73837.hdr.mark = gc_color_red;
  c_73837.hdr.grayed = 0;
@@ -2335,8 +2269,7 @@ return_closcall1(data,(closure)&c_73837,  &c_731311);;
 }
 
 static void __lambda_318(void *data, int argc, object self_73512, object r_73206) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731313;
 c_731313.hdr.mark = gc_color_red;
  c_731313.hdr.grayed = 0;
@@ -2353,8 +2286,7 @@ return_closcall1(data,(closure)&c_731313,  r_73206);;
 }
 
 static void __lambda_317(void *data, int argc, object self_73513, object tmp_7373) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731315;
 c_731315.hdr.mark = gc_color_red;
  c_731315.hdr.grayed = 0;
@@ -2382,13 +2314,11 @@ return_closcall1(data,(closure)&c_731315,  &c_732217);;
 }
 
 static void __lambda_316(void *data, int argc, object self_73514, object r_73205) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-return_closcall1(data,  ((closureN)self_73514)->elts[0],  car(r_73205));; 
+  return_closcall1(data,  ((closureN)self_73514)->elts[0],  car(r_73205));; 
 }
 
 static void __lambda_315(void *data, int argc, object self_73515, object k_73207) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, ((closureN)self_73515)->elts[2]) ){ 
+  if( !eq(boolean_f, ((closureN)self_73515)->elts[2]) ){ 
   return_closcall1(data,  k_73207,  ((closureN)self_73515)->elts[2]);
 } else { 
   
@@ -2409,8 +2339,7 @@ return_closcall1(data,(closure)&c_731320,  cdr(((closureN)self_73515)->elts[0]))
 }
 
 static void __lambda_314(void *data, int argc, object self_73516, object r_73307) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731322;
 c_731322.hdr.mark = gc_color_red;
  c_731322.hdr.grayed = 0;
@@ -2427,8 +2356,7 @@ return_closcall1(data,(closure)&c_731322,  r_73307);;
 }
 
 static void __lambda_313(void *data, int argc, object self_73517, object v_9323_7374) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731324;
 c_731324.hdr.mark = gc_color_red;
  c_731324.hdr.grayed = 0;
@@ -2457,8 +2385,7 @@ return_closcall1(data,(closure)&c_731324,  &c_731651);;
 }
 
 static void __lambda_312(void *data, int argc, object self_73518, object r_73208) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731653;
 c_731653.hdr.mark = gc_color_red;
  c_731653.hdr.grayed = 0;
@@ -2475,8 +2402,7 @@ return_closcall1(data,(closure)&c_731653,  r_73208);;
 }
 
 static void __lambda_311(void *data, int argc, object self_73519, object tmp_7398) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, tmp_7398) ){ 
+  if( !eq(boolean_f, tmp_7398) ){ 
   return_closcall1(data,  ((closureN)self_73519)->elts[1],  tmp_7398);
 } else { 
   
@@ -2497,8 +2423,7 @@ return_closcall1(data,(closure)&c_731657,  cdr(((closureN)self_73519)->elts[0]))
 }
 
 static void __lambda_310(void *data, int argc, object self_73520, object r_73234) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731659;
 c_731659.hdr.mark = gc_color_red;
  c_731659.hdr.grayed = 0;
@@ -2515,8 +2440,7 @@ return_closcall1(data,(closure)&c_731659,  r_73234);;
 }
 
 static void __lambda_309(void *data, int argc, object self_73521, object v_9310_7399) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731661;
 c_731661.hdr.mark = gc_color_red;
  c_731661.hdr.grayed = 0;
@@ -2545,8 +2469,7 @@ return_closcall1(data,(closure)&c_731661,  &c_732059);;
 }
 
 static void __lambda_308(void *data, int argc, object self_73522, object r_73209) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732061;
 c_732061.hdr.mark = gc_color_red;
  c_732061.hdr.grayed = 0;
@@ -2563,8 +2486,7 @@ return_closcall1(data,(closure)&c_732061,  r_73209);;
 }
 
 static void __lambda_307(void *data, int argc, object self_73523, object tmp_73120) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, tmp_73120) ){ 
+  if( !eq(boolean_f, tmp_73120) ){ 
   return_closcall1(data,  ((closureN)self_73523)->elts[1],  tmp_73120);
 } else { 
   
@@ -2585,8 +2507,7 @@ return_closcall1(data,(closure)&c_732065,  cdr(((closureN)self_73523)->elts[0]))
 }
 
 static void __lambda_306(void *data, int argc, object self_73524, object r_73212) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732067;
 c_732067.hdr.mark = gc_color_red;
  c_732067.hdr.grayed = 0;
@@ -2603,8 +2524,7 @@ return_closcall1(data,(closure)&c_732067,  r_73212);;
 }
 
 static void __lambda_305(void *data, int argc, object self_73525, object v_931_73121) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732069;
 c_732069.hdr.mark = gc_color_red;
  c_732069.hdr.grayed = 0;
@@ -2632,8 +2552,7 @@ return_closcall1(data,(closure)&c_732069,  &c_732194);;
 }
 
 static void __lambda_304(void *data, int argc, object self_73526, object r_73210) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732196;
 c_732196.hdr.mark = gc_color_red;
  c_732196.hdr.grayed = 0;
@@ -2649,8 +2568,7 @@ return_closcall1(data,(closure)&c_732196,  r_73210);;
 }
 
 static void __lambda_303(void *data, int argc, object self_73527, object tmp_73134) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, tmp_73134) ){ 
+  if( !eq(boolean_f, tmp_73134) ){ 
   return_closcall1(data,  ((closureN)self_73527)->elts[1],  tmp_73134);
 } else { 
   
@@ -2671,15 +2589,13 @@ return_closcall3(data,  __glo_error,  &c_732200, &c_732206, ((closureN)self_7352
 }
 
 static void __lambda_302(void *data, int argc, object self_73528, object r_73211) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 make_cons(c_732205,r_73211, boolean_f);
 return_closcall1(data,  ((closureN)self_73528)->elts[0],  &c_732205);; 
 }
 
 static void __lambda_301(void *data, int argc, object self_73529, object k_73213) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732071;
 c_732071.hdr.mark = gc_color_red;
  c_732071.hdr.grayed = 0;
@@ -2696,8 +2612,7 @@ return_closcall1(data,(closure)&c_732071,  Cyc_is_cons(((closureN)self_73529)->e
 }
 
 static void __lambda_300(void *data, int argc, object self_73530, object r_73214) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73214) ){ 
+  if( !eq(boolean_f, r_73214) ){ 
   
 closureN_type c_732073;
 c_732073.hdr.mark = gc_color_red;
@@ -2718,8 +2633,7 @@ return_closcall1(data,(closure)&c_732073,  car(((closureN)self_73530)->elts[2]))
 }
 
 static void __lambda_299(void *data, int argc, object self_73531, object r_73215) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732075;
 c_732075.hdr.mark = gc_color_red;
  c_732075.hdr.grayed = 0;
@@ -2736,8 +2650,7 @@ return_closcall1(data,(closure)&c_732075,  r_73215);;
 }
 
 static void __lambda_298(void *data, int argc, object self_73532, object v_932_73122) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732077;
 c_732077.hdr.mark = gc_color_red;
  c_732077.hdr.grayed = 0;
@@ -2754,8 +2667,7 @@ return_closcall1(data,(closure)&c_732077,  v_932_73122);;
 }
 
 static void __lambda_297(void *data, int argc, object self_73533, object args_73123) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732079;
 c_732079.hdr.mark = gc_color_red;
  c_732079.hdr.grayed = 0;
@@ -2771,8 +2683,7 @@ return_closcall1(data,(closure)&c_732079,  cdr(((closureN)self_73533)->elts[2]))
 }
 
 static void __lambda_296(void *data, int argc, object self_73534, object r_73216) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732081;
 c_732081.hdr.mark = gc_color_red;
  c_732081.hdr.grayed = 0;
@@ -2788,8 +2699,7 @@ return_closcall1(data,(closure)&c_732081,  r_73216);;
 }
 
 static void __lambda_295(void *data, int argc, object self_73535, object v_933_73124) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732083;
 c_732083.hdr.mark = gc_color_red;
  c_732083.hdr.grayed = 0;
@@ -2806,8 +2716,7 @@ return_closcall1(data,(closure)&c_732083,  Cyc_is_cons(v_933_73124));;
 }
 
 static void __lambda_294(void *data, int argc, object self_73536, object r_73217) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73217) ){ 
+  if( !eq(boolean_f, r_73217) ){ 
   
 closureN_type c_732085;
 c_732085.hdr.mark = gc_color_red;
@@ -2828,8 +2737,7 @@ return_closcall1(data,(closure)&c_732085,  car(((closureN)self_73536)->elts[2]))
 }
 
 static void __lambda_293(void *data, int argc, object self_73537, object r_73218) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732087;
 c_732087.hdr.mark = gc_color_red;
  c_732087.hdr.grayed = 0;
@@ -2846,8 +2754,7 @@ return_closcall1(data,(closure)&c_732087,  r_73218);;
 }
 
 static void __lambda_292(void *data, int argc, object self_73538, object v_934_73125) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732089;
 c_732089.hdr.mark = gc_color_red;
  c_732089.hdr.grayed = 0;
@@ -2864,8 +2771,7 @@ return_closcall1(data,(closure)&c_732089,  v_934_73125);;
 }
 
 static void __lambda_291(void *data, int argc, object self_73539, object len_73126) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732091;
 c_732091.hdr.mark = gc_color_red;
  c_732091.hdr.grayed = 0;
@@ -2881,8 +2787,7 @@ return_closcall1(data,(closure)&c_732091,  cdr(((closureN)self_73539)->elts[2]))
 }
 
 static void __lambda_290(void *data, int argc, object self_73540, object r_73219) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732093;
 c_732093.hdr.mark = gc_color_red;
  c_732093.hdr.grayed = 0;
@@ -2898,8 +2803,7 @@ return_closcall1(data,(closure)&c_732093,  r_73219);;
 }
 
 static void __lambda_289(void *data, int argc, object self_73541, object v_935_73127) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732095;
 c_732095.hdr.mark = gc_color_red;
  c_732095.hdr.grayed = 0;
@@ -2916,8 +2820,7 @@ return_closcall1(data,(closure)&c_732095,  Cyc_is_cons(v_935_73127));;
 }
 
 static void __lambda_288(void *data, int argc, object self_73542, object r_73220) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73220) ){ 
+  if( !eq(boolean_f, r_73220) ){ 
   
 closureN_type c_732097;
 c_732097.hdr.mark = gc_color_red;
@@ -2938,8 +2841,7 @@ return_closcall1(data,(closure)&c_732097,  car(((closureN)self_73542)->elts[2]))
 }
 
 static void __lambda_287(void *data, int argc, object self_73543, object r_73221) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732099;
 c_732099.hdr.mark = gc_color_red;
  c_732099.hdr.grayed = 0;
@@ -2956,8 +2858,7 @@ return_closcall1(data,(closure)&c_732099,  r_73221);;
 }
 
 static void __lambda_286(void *data, int argc, object self_73544, object v_936_73128) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732101;
 c_732101.hdr.mark = gc_color_red;
  c_732101.hdr.grayed = 0;
@@ -2974,8 +2875,7 @@ return_closcall1(data,(closure)&c_732101,  v_936_73128);;
 }
 
 static void __lambda_285(void *data, int argc, object self_73545, object n_73129) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732103;
 c_732103.hdr.mark = gc_color_red;
  c_732103.hdr.grayed = 0;
@@ -2991,8 +2891,7 @@ return_closcall1(data,(closure)&c_732103,  cdr(((closureN)self_73545)->elts[2]))
 }
 
 static void __lambda_284(void *data, int argc, object self_73546, object r_73222) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732105;
 c_732105.hdr.mark = gc_color_red;
  c_732105.hdr.grayed = 0;
@@ -3008,8 +2907,7 @@ return_closcall1(data,(closure)&c_732105,  r_73222);;
 }
 
 static void __lambda_283(void *data, int argc, object self_73547, object v_937_73130) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732107;
 c_732107.hdr.mark = gc_color_red;
  c_732107.hdr.grayed = 0;
@@ -3026,8 +2924,7 @@ return_closcall1(data,(closure)&c_732107,  Cyc_is_cons(v_937_73130));;
 }
 
 static void __lambda_282(void *data, int argc, object self_73548, object r_73223) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73223) ){ 
+  if( !eq(boolean_f, r_73223) ){ 
   
 closureN_type c_732109;
 c_732109.hdr.mark = gc_color_red;
@@ -3048,8 +2945,7 @@ return_closcall1(data,(closure)&c_732109,  car(((closureN)self_73548)->elts[2]))
 }
 
 static void __lambda_281(void *data, int argc, object self_73549, object r_73224) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732111;
 c_732111.hdr.mark = gc_color_red;
  c_732111.hdr.grayed = 0;
@@ -3066,8 +2962,7 @@ return_closcall1(data,(closure)&c_732111,  r_73224);;
 }
 
 static void __lambda_280(void *data, int argc, object self_73550, object v_938_73131) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732113;
 c_732113.hdr.mark = gc_color_red;
  c_732113.hdr.grayed = 0;
@@ -3084,8 +2979,7 @@ return_closcall1(data,(closure)&c_732113,  v_938_73131);;
 }
 
 static void __lambda_279(void *data, int argc, object self_73551, object p_73132) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732115;
 c_732115.hdr.mark = gc_color_red;
  c_732115.hdr.grayed = 0;
@@ -3101,8 +2995,7 @@ return_closcall1(data,(closure)&c_732115,  cdr(((closureN)self_73551)->elts[2]))
 }
 
 static void __lambda_278(void *data, int argc, object self_73552, object r_73225) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732117;
 c_732117.hdr.mark = gc_color_red;
  c_732117.hdr.grayed = 0;
@@ -3118,8 +3011,7 @@ return_closcall1(data,(closure)&c_732117,  r_73225);;
 }
 
 static void __lambda_277(void *data, int argc, object self_73553, object v_939_73133) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732119;
 c_732119.hdr.mark = gc_color_red;
  c_732119.hdr.grayed = 0;
@@ -3135,8 +3027,7 @@ return_closcall1(data,(closure)&c_732119,  Cyc_is_null(v_939_73133));;
 }
 
 static void __lambda_276(void *data, int argc, object self_73554, object r_73226) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73226) ){ 
+  if( !eq(boolean_f, r_73226) ){ 
   
 closureN_type c_732121;
 c_732121.hdr.mark = gc_color_red;
@@ -3156,8 +3047,7 @@ return_closcall1(data,(closure)&c_732121,  quote_error);
 }
 
 static void __lambda_275(void *data, int argc, object self_73555, object r_73233) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732124;
 c_732124.hdr.mark = gc_color_red;
  c_732124.hdr.grayed = 0;
@@ -3172,8 +3062,7 @@ return_closcall2(data,  ((closureN)self_73555)->elts[1],  &c_732124, r_73233);;
 }
 
 static void __lambda_274(void *data, int argc, object self_73556, object r_73228) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732126;
 c_732126.hdr.mark = gc_color_red;
  c_732126.hdr.grayed = 0;
@@ -3189,8 +3078,7 @@ return_closcall1(data,(closure)&c_732126,  nil);;
 }
 
 static void __lambda_273(void *data, int argc, object self_73557, object r_73231) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732128;
 c_732128.hdr.mark = gc_color_red;
  c_732128.hdr.grayed = 0;
@@ -3211,8 +3099,7 @@ return_closcall1(data,(closure)&c_732128,  &c_732147);;
 }
 
 static void __lambda_272(void *data, int argc, object self_73558, object r_73232) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732130;
 c_732130.hdr.mark = gc_color_red;
  c_732130.hdr.grayed = 0;
@@ -3230,8 +3117,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_732130, &c_732145, ((closureN)s
 }
 
 static void __lambda_271(void *data, int argc, object self_73559, object r_73229) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732132;
 c_732132.hdr.mark = gc_color_red;
  c_732132.hdr.grayed = 0;
@@ -3254,8 +3140,7 @@ return_closcall1(data,(closure)&c_732132,  &c_732142);;
 }
 
 static void __lambda_270(void *data, int argc, object self_73560, object r_73230) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_732134;
 c_732134.hdr.mark = gc_color_red;
  c_732134.hdr.grayed = 0;
@@ -3270,15 +3155,13 @@ return_closcall4(data,  __glo_cons_91source,  &c_732134, ((closureN)self_73560)-
 }
 
 static void __lambda_269(void *data, int argc, object self_73561, object r_73227) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 make_cons(c_732139,r_73227, boolean_f);
 return_closcall1(data,  ((closureN)self_73561)->elts[0],  &c_732139);; 
 }
 
 static void __lambda_268(void *data, int argc, object self_73562, object k_73235) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731663;
 c_731663.hdr.mark = gc_color_red;
  c_731663.hdr.grayed = 0;
@@ -3295,8 +3178,7 @@ return_closcall1(data,(closure)&c_731663,  Cyc_is_cons(((closureN)self_73562)->e
 }
 
 static void __lambda_267(void *data, int argc, object self_73563, object r_73236) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73236) ){ 
+  if( !eq(boolean_f, r_73236) ){ 
   
 closureN_type c_731665;
 c_731665.hdr.mark = gc_color_red;
@@ -3317,8 +3199,7 @@ return_closcall1(data,(closure)&c_731665,  car(((closureN)self_73563)->elts[2]))
 }
 
 static void __lambda_266(void *data, int argc, object self_73564, object r_73237) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731667;
 c_731667.hdr.mark = gc_color_red;
  c_731667.hdr.grayed = 0;
@@ -3335,8 +3216,7 @@ return_closcall1(data,(closure)&c_731667,  r_73237);;
 }
 
 static void __lambda_265(void *data, int argc, object self_73565, object v_9311_73100) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731669;
 c_731669.hdr.mark = gc_color_red;
  c_731669.hdr.grayed = 0;
@@ -3353,8 +3233,7 @@ return_closcall1(data,(closure)&c_731669,  v_9311_73100);;
 }
 
 static void __lambda_264(void *data, int argc, object self_73566, object args_73101) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731671;
 c_731671.hdr.mark = gc_color_red;
  c_731671.hdr.grayed = 0;
@@ -3371,8 +3250,7 @@ return_closcall1(data,(closure)&c_731671,  cdr(((closureN)self_73566)->elts[2]))
 }
 
 static void __lambda_263(void *data, int argc, object self_73567, object r_73238) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731673;
 c_731673.hdr.mark = gc_color_red;
  c_731673.hdr.grayed = 0;
@@ -3389,8 +3267,7 @@ return_closcall1(data,(closure)&c_731673,  r_73238);;
 }
 
 static void __lambda_262(void *data, int argc, object self_73568, object v_9312_73102) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731675;
 c_731675.hdr.mark = gc_color_red;
  c_731675.hdr.grayed = 0;
@@ -3408,8 +3285,7 @@ return_closcall1(data,(closure)&c_731675,  Cyc_is_cons(v_9312_73102));;
 }
 
 static void __lambda_261(void *data, int argc, object self_73569, object r_73239) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73239) ){ 
+  if( !eq(boolean_f, r_73239) ){ 
   
 closureN_type c_731677;
 c_731677.hdr.mark = gc_color_red;
@@ -3431,8 +3307,7 @@ return_closcall1(data,(closure)&c_731677,  car(((closureN)self_73569)->elts[3]))
 }
 
 static void __lambda_260(void *data, int argc, object self_73570, object r_73240) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731679;
 c_731679.hdr.mark = gc_color_red;
  c_731679.hdr.grayed = 0;
@@ -3450,8 +3325,7 @@ return_closcall1(data,(closure)&c_731679,  r_73240);;
 }
 
 static void __lambda_259(void *data, int argc, object self_73571, object v_9313_73103) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731681;
 c_731681.hdr.mark = gc_color_red;
  c_731681.hdr.grayed = 0;
@@ -3469,8 +3343,7 @@ return_closcall1(data,(closure)&c_731681,  v_9313_73103);;
 }
 
 static void __lambda_258(void *data, int argc, object self_73572, object len_73104) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731683;
 c_731683.hdr.mark = gc_color_red;
  c_731683.hdr.grayed = 0;
@@ -3488,8 +3361,7 @@ return_closcall1(data,(closure)&c_731683,  cdr(((closureN)self_73572)->elts[3]))
 }
 
 static void __lambda_257(void *data, int argc, object self_73573, object r_73241) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731685;
 c_731685.hdr.mark = gc_color_red;
  c_731685.hdr.grayed = 0;
@@ -3507,8 +3379,7 @@ return_closcall1(data,(closure)&c_731685,  r_73241);;
 }
 
 static void __lambda_256(void *data, int argc, object self_73574, object v_9314_73105) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731687;
 c_731687.hdr.mark = gc_color_red;
  c_731687.hdr.grayed = 0;
@@ -3527,8 +3398,7 @@ return_closcall1(data,(closure)&c_731687,  Cyc_is_cons(v_9314_73105));;
 }
 
 static void __lambda_255(void *data, int argc, object self_73575, object r_73242) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73242) ){ 
+  if( !eq(boolean_f, r_73242) ){ 
   
 closureN_type c_731689;
 c_731689.hdr.mark = gc_color_red;
@@ -3551,8 +3421,7 @@ return_closcall1(data,(closure)&c_731689,  car(((closureN)self_73575)->elts[4]))
 }
 
 static void __lambda_254(void *data, int argc, object self_73576, object r_73243) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731691;
 c_731691.hdr.mark = gc_color_red;
  c_731691.hdr.grayed = 0;
@@ -3571,8 +3440,7 @@ return_closcall1(data,(closure)&c_731691,  r_73243);;
 }
 
 static void __lambda_253(void *data, int argc, object self_73577, object v_9315_73106) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731693;
 c_731693.hdr.mark = gc_color_red;
  c_731693.hdr.grayed = 0;
@@ -3591,8 +3459,7 @@ return_closcall1(data,(closure)&c_731693,  v_9315_73106);;
 }
 
 static void __lambda_252(void *data, int argc, object self_73578, object n_73107) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731695;
 c_731695.hdr.mark = gc_color_red;
  c_731695.hdr.grayed = 0;
@@ -3611,8 +3478,7 @@ return_closcall1(data,(closure)&c_731695,  cdr(((closureN)self_73578)->elts[4]))
 }
 
 static void __lambda_251(void *data, int argc, object self_73579, object r_73244) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731697;
 c_731697.hdr.mark = gc_color_red;
  c_731697.hdr.grayed = 0;
@@ -3631,8 +3497,7 @@ return_closcall1(data,(closure)&c_731697,  r_73244);;
 }
 
 static void __lambda_250(void *data, int argc, object self_73580, object v_9316_73108) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731699;
 c_731699.hdr.mark = gc_color_red;
  c_731699.hdr.grayed = 0;
@@ -3652,8 +3517,7 @@ return_closcall1(data,(closure)&c_731699,  Cyc_is_cons(v_9316_73108));;
 }
 
 static void __lambda_249(void *data, int argc, object self_73581, object r_73245) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73245) ){ 
+  if( !eq(boolean_f, r_73245) ){ 
   
 closureN_type c_731701;
 c_731701.hdr.mark = gc_color_red;
@@ -3677,8 +3541,7 @@ return_closcall1(data,(closure)&c_731701,  car(((closureN)self_73581)->elts[5]))
 }
 
 static void __lambda_248(void *data, int argc, object self_73582, object r_73246) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731703;
 c_731703.hdr.mark = gc_color_red;
  c_731703.hdr.grayed = 0;
@@ -3698,8 +3561,7 @@ return_closcall1(data,(closure)&c_731703,  r_73246);;
 }
 
 static void __lambda_247(void *data, int argc, object self_73583, object v_9317_73109) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731705;
 c_731705.hdr.mark = gc_color_red;
  c_731705.hdr.grayed = 0;
@@ -3720,8 +3582,7 @@ return_closcall2(data,  __glo_list_127,  &c_731705, v_9317_73109);;
 }
 
 static void __lambda_246(void *data, int argc, object self_73584, object r_73247) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73247) ){ 
+  if( !eq(boolean_f, r_73247) ){ 
   
 closureN_type c_731707;
 c_731707.hdr.mark = gc_color_red;
@@ -3745,8 +3606,7 @@ return_closcall1(data,(closure)&c_731707,  ((closureN)self_73584)->elts[6]);
 }
 
 static void __lambda_245(void *data, int argc, object self_73585, object p_73110) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731709;
 c_731709.hdr.mark = gc_color_red;
  c_731709.hdr.grayed = 0;
@@ -3766,8 +3626,7 @@ return_closcall1(data,(closure)&c_731709,  cdr(((closureN)self_73585)->elts[5]))
 }
 
 static void __lambda_244(void *data, int argc, object self_73586, object r_73248) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731711;
 c_731711.hdr.mark = gc_color_red;
  c_731711.hdr.grayed = 0;
@@ -3787,8 +3646,7 @@ return_closcall1(data,(closure)&c_731711,  r_73248);;
 }
 
 static void __lambda_243(void *data, int argc, object self_73587, object v_9318_73111) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731713;
 c_731713.hdr.mark = gc_color_red;
  c_731713.hdr.grayed = 0;
@@ -3809,8 +3667,7 @@ return_closcall1(data,(closure)&c_731713,  Cyc_is_cons(v_9318_73111));;
 }
 
 static void __lambda_242(void *data, int argc, object self_73588, object r_73249) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73249) ){ 
+  if( !eq(boolean_f, r_73249) ){ 
   
 closureN_type c_731715;
 c_731715.hdr.mark = gc_color_red;
@@ -3835,8 +3692,7 @@ return_closcall1(data,(closure)&c_731715,  car(((closureN)self_73588)->elts[6]))
 }
 
 static void __lambda_241(void *data, int argc, object self_73589, object r_73250) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731717;
 c_731717.hdr.mark = gc_color_red;
  c_731717.hdr.grayed = 0;
@@ -3857,8 +3713,7 @@ return_closcall1(data,(closure)&c_731717,  r_73250);;
 }
 
 static void __lambda_240(void *data, int argc, object self_73590, object v_9319_73112) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731719;
 c_731719.hdr.mark = gc_color_red;
  c_731719.hdr.grayed = 0;
@@ -3880,8 +3735,7 @@ return_closcall1(data,(closure)&c_731719,  Cyc_is_cons(v_9319_73112));;
 }
 
 static void __lambda_239(void *data, int argc, object self_73591, object r_73251) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73251) ){ 
+  if( !eq(boolean_f, r_73251) ){ 
   
 closureN_type c_731721;
 c_731721.hdr.mark = gc_color_red;
@@ -3907,8 +3761,7 @@ return_closcall1(data,(closure)&c_731721,  car(((closureN)self_73591)->elts[7]))
 }
 
 static void __lambda_238(void *data, int argc, object self_73592, object r_73252) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731723;
 c_731723.hdr.mark = gc_color_red;
  c_731723.hdr.grayed = 0;
@@ -3930,8 +3783,7 @@ return_closcall1(data,(closure)&c_731723,  r_73252);;
 }
 
 static void __lambda_237(void *data, int argc, object self_73593, object v_9320_73113) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731725;
 c_731725.hdr.mark = gc_color_red;
  c_731725.hdr.grayed = 0;
@@ -3953,8 +3805,7 @@ return_closcall1(data,(closure)&c_731725,  v_9320_73113);;
 }
 
 static void __lambda_236(void *data, int argc, object self_73594, object y_73114) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731727;
 c_731727.hdr.mark = gc_color_red;
  c_731727.hdr.grayed = 0;
@@ -3976,8 +3827,7 @@ return_closcall1(data,(closure)&c_731727,  cdr(((closureN)self_73594)->elts[7]))
 }
 
 static void __lambda_235(void *data, int argc, object self_73595, object r_73253) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731729;
 c_731729.hdr.mark = gc_color_red;
  c_731729.hdr.grayed = 0;
@@ -3999,8 +3849,7 @@ return_closcall1(data,(closure)&c_731729,  r_73253);;
 }
 
 static void __lambda_234(void *data, int argc, object self_73596, object v_9321_73115) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731731;
 c_731731.hdr.mark = gc_color_red;
  c_731731.hdr.grayed = 0;
@@ -4022,8 +3871,7 @@ return_closcall1(data,(closure)&c_731731,  v_9321_73115);;
 }
 
 static void __lambda_233(void *data, int argc, object self_73597, object body_73116) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731733;
 c_731733.hdr.mark = gc_color_red;
  c_731733.hdr.grayed = 0;
@@ -4045,8 +3893,7 @@ return_closcall1(data,(closure)&c_731733,  cdr(((closureN)self_73597)->elts[6]))
 }
 
 static void __lambda_232(void *data, int argc, object self_73598, object r_73254) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731735;
 c_731735.hdr.mark = gc_color_red;
  c_731735.hdr.grayed = 0;
@@ -4068,8 +3915,7 @@ return_closcall1(data,(closure)&c_731735,  r_73254);;
 }
 
 static void __lambda_231(void *data, int argc, object self_73599, object v_9322_73117) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731737;
 c_731737.hdr.mark = gc_color_red;
  c_731737.hdr.grayed = 0;
@@ -4091,8 +3937,7 @@ return_closcall1(data,(closure)&c_731737,  v_9322_73117);;
 }
 
 static void __lambda_230(void *data, int argc, object self_73600, object rest_73118) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731739;
 c_731739.hdr.mark = gc_color_red;
  c_731739.hdr.grayed = 0;
@@ -4115,8 +3960,7 @@ return_closcall1(data,(closure)&c_731739,  quote__if);;
 }
 
 static void __lambda_229(void *data, int argc, object self_73601, object r_73306) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731742;
 c_731742.hdr.mark = gc_color_red;
  c_731742.hdr.grayed = 0;
@@ -4139,8 +3983,7 @@ return_closcall2(data,  ((closureN)self_73601)->elts[6],  &c_731742, r_73306);;
 }
 
 static void __lambda_228(void *data, int argc, object self_73602, object r_73256) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731744;
 c_731744.hdr.mark = gc_color_red;
  c_731744.hdr.grayed = 0;
@@ -4164,8 +4007,7 @@ return_closcall1(data,(closure)&c_731744,  quote__125_123);;
 }
 
 static void __lambda_227(void *data, int argc, object self_73603, object r_73305) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731747;
 c_731747.hdr.mark = gc_color_red;
  c_731747.hdr.grayed = 0;
@@ -4189,8 +4031,7 @@ return_closcall2(data,  ((closureN)self_73603)->elts[7],  &c_731747, r_73305);;
 }
 
 static void __lambda_226(void *data, int argc, object self_73604, object r_73298) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731749;
 c_731749.hdr.mark = gc_color_red;
  c_731749.hdr.grayed = 0;
@@ -4215,8 +4056,7 @@ return_closcall1(data,(closure)&c_731749,  nil);;
 }
 
 static void __lambda_225(void *data, int argc, object self_73605, object r_73303) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731751;
 c_731751.hdr.mark = gc_color_red;
  c_731751.hdr.grayed = 0;
@@ -4244,8 +4084,7 @@ return_closcall1(data,(closure)&c_731751,  &c_731994);;
 }
 
 static void __lambda_224(void *data, int argc, object self_73606, object r_73304) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731753;
 c_731753.hdr.mark = gc_color_red;
  c_731753.hdr.grayed = 0;
@@ -4269,8 +4108,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731753, ((closureN)self_73606)-
 }
 
 static void __lambda_223(void *data, int argc, object self_73607, object r_73301) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731755;
 c_731755.hdr.mark = gc_color_red;
  c_731755.hdr.grayed = 0;
@@ -4299,8 +4137,7 @@ return_closcall1(data,(closure)&c_731755,  &c_731990);;
 }
 
 static void __lambda_222(void *data, int argc, object self_73608, object r_73302) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731757;
 c_731757.hdr.mark = gc_color_red;
  c_731757.hdr.grayed = 0;
@@ -4324,8 +4161,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731757, ((closureN)self_73608)-
 }
 
 static void __lambda_221(void *data, int argc, object self_73609, object r_73299) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731759;
 c_731759.hdr.mark = gc_color_red;
  c_731759.hdr.grayed = 0;
@@ -4356,8 +4192,7 @@ return_closcall1(data,(closure)&c_731759,  &c_731985);;
 }
 
 static void __lambda_220(void *data, int argc, object self_73610, object r_73300) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731761;
 c_731761.hdr.mark = gc_color_red;
  c_731761.hdr.grayed = 0;
@@ -4380,8 +4215,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731761, ((closureN)self_73610)-
 }
 
 static void __lambda_219(void *data, int argc, object self_73611, object r_73259) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731763;
 c_731763.hdr.mark = gc_color_red;
  c_731763.hdr.grayed = 0;
@@ -4405,8 +4239,7 @@ return_closcall1(data,(closure)&c_731763,  quote_apply);;
 }
 
 static void __lambda_218(void *data, int argc, object self_73612, object r_73297) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731766;
 c_731766.hdr.mark = gc_color_red;
  c_731766.hdr.grayed = 0;
@@ -4430,8 +4263,7 @@ return_closcall2(data,  ((closureN)self_73612)->elts[7],  &c_731766, r_73297);;
 }
 
 static void __lambda_217(void *data, int argc, object self_73613, object r_73280) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731768;
 c_731768.hdr.mark = gc_color_red;
  c_731768.hdr.grayed = 0;
@@ -4456,8 +4288,7 @@ return_closcall1(data,(closure)&c_731768,  quote_lambda);;
 }
 
 static void __lambda_216(void *data, int argc, object self_73614, object r_73296) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731771;
 c_731771.hdr.mark = gc_color_red;
  c_731771.hdr.grayed = 0;
@@ -4482,8 +4313,7 @@ return_closcall2(data,  ((closureN)self_73614)->elts[8],  &c_731771, r_73296);;
 }
 
 static void __lambda_215(void *data, int argc, object self_73615, object r_73288) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731773;
 c_731773.hdr.mark = gc_color_red;
  c_731773.hdr.grayed = 0;
@@ -4511,13 +4341,11 @@ return_closcall1(data,(closure)&c_731773,  &c_731981);;
 }
 
 static void __lambda_214(void *data, int argc, object self_73616, object k_73295, object p_73119) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-return_closcall1(data,  k_73295,  p_73119);; 
+  return_closcall1(data,  k_73295,  p_73119);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_73617, object r_73294) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731775;
 c_731775.hdr.mark = gc_color_red;
  c_731775.hdr.grayed = 0;
@@ -4542,8 +4370,7 @@ return_closcall3(data,  __glo_map,  &c_731775, r_73294, ((closureN)self_73617)->
 }
 
 static void __lambda_212(void *data, int argc, object self_73618, object r_73293) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731777;
 c_731777.hdr.mark = gc_color_red;
  c_731777.hdr.grayed = 0;
@@ -4567,8 +4394,7 @@ return_closcall3(data,  __glo_append,  &c_731777, r_73293, ((closureN)self_73618
 }
 
 static void __lambda_211(void *data, int argc, object self_73619, object r_73291) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731779;
 c_731779.hdr.mark = gc_color_red;
  c_731779.hdr.grayed = 0;
@@ -4599,8 +4425,7 @@ return_closcall1(data,(closure)&c_731779,  &c_731976);;
 }
 
 static void __lambda_210(void *data, int argc, object self_73620, object r_73292) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731781;
 c_731781.hdr.mark = gc_color_red;
  c_731781.hdr.grayed = 0;
@@ -4623,8 +4448,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731781, ((closureN)self_73620)-
 }
 
 static void __lambda_209(void *data, int argc, object self_73621, object r_73289) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731783;
 c_731783.hdr.mark = gc_color_red;
  c_731783.hdr.grayed = 0;
@@ -4656,8 +4480,7 @@ return_closcall1(data,(closure)&c_731783,  &c_731970);;
 }
 
 static void __lambda_208(void *data, int argc, object self_73622, object r_73290) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731785;
 c_731785.hdr.mark = gc_color_red;
  c_731785.hdr.grayed = 0;
@@ -4679,8 +4502,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731785, ((closureN)self_73622)-
 }
 
 static void __lambda_207(void *data, int argc, object self_73623, object r_73283) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731787;
 c_731787.hdr.mark = gc_color_red;
  c_731787.hdr.grayed = 0;
@@ -4703,8 +4525,7 @@ return_closcall1(data,(closure)&c_731787,  nil);;
 }
 
 static void __lambda_206(void *data, int argc, object self_73624, object r_73286) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731789;
 c_731789.hdr.mark = gc_color_red;
  c_731789.hdr.grayed = 0;
@@ -4730,8 +4551,7 @@ return_closcall1(data,(closure)&c_731789,  &c_731967);;
 }
 
 static void __lambda_205(void *data, int argc, object self_73625, object r_73287) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731791;
 c_731791.hdr.mark = gc_color_red;
  c_731791.hdr.grayed = 0;
@@ -4754,8 +4574,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731791, ((closureN)self_73625)-
 }
 
 static void __lambda_204(void *data, int argc, object self_73626, object r_73284) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731793;
 c_731793.hdr.mark = gc_color_red;
  c_731793.hdr.grayed = 0;
@@ -4791,8 +4610,7 @@ return_closcall1(data,(closure)&c_731793,  &c_731959);;
 }
 
 static void __lambda_203(void *data, int argc, object self_73627, object r_73285) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731795;
 c_731795.hdr.mark = gc_color_red;
  c_731795.hdr.grayed = 0;
@@ -4814,8 +4632,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731795, ((closureN)self_73627)-
 }
 
 static void __lambda_202(void *data, int argc, object self_73628, object r_73281) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731797;
 c_731797.hdr.mark = gc_color_red;
  c_731797.hdr.grayed = 0;
@@ -4852,8 +4669,7 @@ return_closcall1(data,(closure)&c_731797,  &c_731950);;
 }
 
 static void __lambda_201(void *data, int argc, object self_73629, object r_73282) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731799;
 c_731799.hdr.mark = gc_color_red;
  c_731799.hdr.grayed = 0;
@@ -4874,8 +4690,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731799, ((closureN)self_73629)-
 }
 
 static void __lambda_200(void *data, int argc, object self_73630, object r_73262) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731801;
 c_731801.hdr.mark = gc_color_red;
  c_731801.hdr.grayed = 0;
@@ -4897,8 +4712,7 @@ return_closcall1(data,(closure)&c_731801,  quote__75case);;
 }
 
 static void __lambda_199(void *data, int argc, object self_73631, object r_73279) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731804;
 c_731804.hdr.mark = gc_color_red;
  c_731804.hdr.grayed = 0;
@@ -4919,8 +4733,7 @@ return_closcall2(data,  ((closureN)self_73631)->elts[6],  &c_731804, r_73279);;
 }
 
 static void __lambda_198(void *data, int argc, object self_73632, object r_73268) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731806;
 c_731806.hdr.mark = gc_color_red;
  c_731806.hdr.grayed = 0;
@@ -4942,8 +4755,7 @@ return_closcall1(data,(closure)&c_731806,  nil);;
 }
 
 static void __lambda_197(void *data, int argc, object self_73633, object r_73277) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731808;
 c_731808.hdr.mark = gc_color_red;
  c_731808.hdr.grayed = 0;
@@ -4968,8 +4780,7 @@ return_closcall1(data,(closure)&c_731808,  &c_731947);;
 }
 
 static void __lambda_196(void *data, int argc, object self_73634, object r_73278) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731810;
 c_731810.hdr.mark = gc_color_red;
  c_731810.hdr.grayed = 0;
@@ -4990,8 +4801,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731810, ((closureN)self_73634)-
 }
 
 static void __lambda_195(void *data, int argc, object self_73635, object r_73275) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731812;
 c_731812.hdr.mark = gc_color_red;
  c_731812.hdr.grayed = 0;
@@ -5019,8 +4829,7 @@ return_closcall1(data,(closure)&c_731812,  &c_731942);;
 }
 
 static void __lambda_194(void *data, int argc, object self_73636, object r_73276) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731814;
 c_731814.hdr.mark = gc_color_red;
  c_731814.hdr.grayed = 0;
@@ -5043,8 +4852,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731814, &c_731940, ((closureN)s
 }
 
 static void __lambda_193(void *data, int argc, object self_73637, object r_73273) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731816;
 c_731816.hdr.mark = gc_color_red;
  c_731816.hdr.grayed = 0;
@@ -5074,8 +4882,7 @@ return_closcall1(data,(closure)&c_731816,  &c_731936);;
 }
 
 static void __lambda_192(void *data, int argc, object self_73638, object r_73274) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731818;
 c_731818.hdr.mark = gc_color_red;
  c_731818.hdr.grayed = 0;
@@ -5095,8 +4902,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731818, ((closureN)self_73638)-
 }
 
 static void __lambda_191(void *data, int argc, object self_73639, object r_73271) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731820;
 c_731820.hdr.mark = gc_color_red;
  c_731820.hdr.grayed = 0;
@@ -5127,8 +4933,7 @@ return_closcall1(data,(closure)&c_731820,  &c_731929);;
 }
 
 static void __lambda_190(void *data, int argc, object self_73640, object r_73272) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731822;
 c_731822.hdr.mark = gc_color_red;
  c_731822.hdr.grayed = 0;
@@ -5147,8 +4952,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731822, ((closureN)self_73640)-
 }
 
 static void __lambda_189(void *data, int argc, object self_73641, object r_73269) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731824;
 c_731824.hdr.mark = gc_color_red;
  c_731824.hdr.grayed = 0;
@@ -5180,8 +4984,7 @@ return_closcall1(data,(closure)&c_731824,  &c_731921);;
 }
 
 static void __lambda_188(void *data, int argc, object self_73642, object r_73270) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731826;
 c_731826.hdr.mark = gc_color_red;
  c_731826.hdr.grayed = 0;
@@ -5199,8 +5002,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731826, ((closureN)self_73642)-
 }
 
 static void __lambda_187(void *data, int argc, object self_73643, object r_73265) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731828;
 c_731828.hdr.mark = gc_color_red;
  c_731828.hdr.grayed = 0;
@@ -5219,8 +5021,7 @@ return_closcall1(data,(closure)&c_731828,  nil);;
 }
 
 static void __lambda_186(void *data, int argc, object self_73644, object r_73266) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731830;
 c_731830.hdr.mark = gc_color_red;
  c_731830.hdr.grayed = 0;
@@ -5254,8 +5055,7 @@ return_closcall1(data,(closure)&c_731830,  &c_731912);;
 }
 
 static void __lambda_185(void *data, int argc, object self_73645, object r_73267) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731832;
 c_731832.hdr.mark = gc_color_red;
  c_731832.hdr.grayed = 0;
@@ -5273,8 +5073,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731832, ((closureN)self_73645)-
 }
 
 static void __lambda_184(void *data, int argc, object self_73646, object r_73263) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731834;
 c_731834.hdr.mark = gc_color_red;
  c_731834.hdr.grayed = 0;
@@ -5323,8 +5122,7 @@ return_closcall1(data,(closure)&c_731834,  &c_731895);;
 }
 
 static void __lambda_183(void *data, int argc, object self_73647, object r_73264) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731836;
 c_731836.hdr.mark = gc_color_red;
  c_731836.hdr.grayed = 0;
@@ -5341,8 +5139,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731836, ((closureN)self_73647)-
 }
 
 static void __lambda_182(void *data, int argc, object self_73648, object r_73260) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731838;
 c_731838.hdr.mark = gc_color_red;
  c_731838.hdr.grayed = 0;
@@ -5398,8 +5195,7 @@ return_closcall1(data,(closure)&c_731838,  &c_731874);;
 }
 
 static void __lambda_181(void *data, int argc, object self_73649, object r_73261) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731840;
 c_731840.hdr.mark = gc_color_red;
  c_731840.hdr.grayed = 0;
@@ -5415,8 +5211,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731840, ((closureN)self_73649)-
 }
 
 static void __lambda_180(void *data, int argc, object self_73650, object r_73257) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731842;
 c_731842.hdr.mark = gc_color_red;
  c_731842.hdr.grayed = 0;
@@ -5473,8 +5268,7 @@ return_closcall1(data,(closure)&c_731842,  &c_731852);;
 }
 
 static void __lambda_179(void *data, int argc, object self_73651, object r_73258) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731844;
 c_731844.hdr.mark = gc_color_red;
  c_731844.hdr.grayed = 0;
@@ -5489,15 +5283,13 @@ return_closcall4(data,  __glo_cons_91source,  &c_731844, ((closureN)self_73651)-
 }
 
 static void __lambda_178(void *data, int argc, object self_73652, object r_73255) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 make_cons(c_731849,r_73255, boolean_f);
 return_closcall1(data,  ((closureN)self_73652)->elts[0],  &c_731849);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_73653, object k_73308) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731326;
 c_731326.hdr.mark = gc_color_red;
  c_731326.hdr.grayed = 0;
@@ -5514,8 +5306,7 @@ return_closcall1(data,(closure)&c_731326,  Cyc_is_cons(((closureN)self_73653)->e
 }
 
 static void __lambda_176(void *data, int argc, object self_73654, object r_73309) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73309) ){ 
+  if( !eq(boolean_f, r_73309) ){ 
   
 closureN_type c_731328;
 c_731328.hdr.mark = gc_color_red;
@@ -5536,8 +5327,7 @@ return_closcall1(data,(closure)&c_731328,  car(((closureN)self_73654)->elts[2]))
 }
 
 static void __lambda_175(void *data, int argc, object self_73655, object r_73310) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731330;
 c_731330.hdr.mark = gc_color_red;
  c_731330.hdr.grayed = 0;
@@ -5554,8 +5344,7 @@ return_closcall1(data,(closure)&c_731330,  r_73310);;
 }
 
 static void __lambda_174(void *data, int argc, object self_73656, object v_9324_7375) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731332;
 c_731332.hdr.mark = gc_color_red;
  c_731332.hdr.grayed = 0;
@@ -5572,8 +5361,7 @@ return_closcall1(data,(closure)&c_731332,  v_9324_7375);;
 }
 
 static void __lambda_173(void *data, int argc, object self_73657, object args_7376) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731334;
 c_731334.hdr.mark = gc_color_red;
  c_731334.hdr.grayed = 0;
@@ -5590,8 +5378,7 @@ return_closcall1(data,(closure)&c_731334,  cdr(((closureN)self_73657)->elts[2]))
 }
 
 static void __lambda_172(void *data, int argc, object self_73658, object r_73311) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731336;
 c_731336.hdr.mark = gc_color_red;
  c_731336.hdr.grayed = 0;
@@ -5608,8 +5395,7 @@ return_closcall1(data,(closure)&c_731336,  r_73311);;
 }
 
 static void __lambda_171(void *data, int argc, object self_73659, object v_9325_7377) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731338;
 c_731338.hdr.mark = gc_color_red;
  c_731338.hdr.grayed = 0;
@@ -5627,8 +5413,7 @@ return_closcall1(data,(closure)&c_731338,  Cyc_is_cons(v_9325_7377));;
 }
 
 static void __lambda_170(void *data, int argc, object self_73660, object r_73312) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73312) ){ 
+  if( !eq(boolean_f, r_73312) ){ 
   
 closureN_type c_731340;
 c_731340.hdr.mark = gc_color_red;
@@ -5650,8 +5435,7 @@ return_closcall1(data,(closure)&c_731340,  car(((closureN)self_73660)->elts[3]))
 }
 
 static void __lambda_169(void *data, int argc, object self_73661, object r_73313) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731342;
 c_731342.hdr.mark = gc_color_red;
  c_731342.hdr.grayed = 0;
@@ -5669,8 +5453,7 @@ return_closcall1(data,(closure)&c_731342,  r_73313);;
 }
 
 static void __lambda_168(void *data, int argc, object self_73662, object v_9326_7378) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731344;
 c_731344.hdr.mark = gc_color_red;
  c_731344.hdr.grayed = 0;
@@ -5688,8 +5471,7 @@ return_closcall1(data,(closure)&c_731344,  v_9326_7378);;
 }
 
 static void __lambda_167(void *data, int argc, object self_73663, object len_7379) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731346;
 c_731346.hdr.mark = gc_color_red;
  c_731346.hdr.grayed = 0;
@@ -5707,8 +5489,7 @@ return_closcall1(data,(closure)&c_731346,  cdr(((closureN)self_73663)->elts[3]))
 }
 
 static void __lambda_166(void *data, int argc, object self_73664, object r_73314) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731348;
 c_731348.hdr.mark = gc_color_red;
  c_731348.hdr.grayed = 0;
@@ -5726,8 +5507,7 @@ return_closcall1(data,(closure)&c_731348,  r_73314);;
 }
 
 static void __lambda_165(void *data, int argc, object self_73665, object v_9327_7380) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731350;
 c_731350.hdr.mark = gc_color_red;
  c_731350.hdr.grayed = 0;
@@ -5746,8 +5526,7 @@ return_closcall1(data,(closure)&c_731350,  Cyc_is_cons(v_9327_7380));;
 }
 
 static void __lambda_164(void *data, int argc, object self_73666, object r_73315) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73315) ){ 
+  if( !eq(boolean_f, r_73315) ){ 
   
 closureN_type c_731352;
 c_731352.hdr.mark = gc_color_red;
@@ -5770,8 +5549,7 @@ return_closcall1(data,(closure)&c_731352,  car(((closureN)self_73666)->elts[4]))
 }
 
 static void __lambda_163(void *data, int argc, object self_73667, object r_73316) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731354;
 c_731354.hdr.mark = gc_color_red;
  c_731354.hdr.grayed = 0;
@@ -5790,8 +5568,7 @@ return_closcall1(data,(closure)&c_731354,  r_73316);;
 }
 
 static void __lambda_162(void *data, int argc, object self_73668, object v_9328_7381) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731356;
 c_731356.hdr.mark = gc_color_red;
  c_731356.hdr.grayed = 0;
@@ -5810,8 +5587,7 @@ return_closcall1(data,(closure)&c_731356,  v_9328_7381);;
 }
 
 static void __lambda_161(void *data, int argc, object self_73669, object n_7382) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731358;
 c_731358.hdr.mark = gc_color_red;
  c_731358.hdr.grayed = 0;
@@ -5830,8 +5606,7 @@ return_closcall1(data,(closure)&c_731358,  cdr(((closureN)self_73669)->elts[4]))
 }
 
 static void __lambda_160(void *data, int argc, object self_73670, object r_73317) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731360;
 c_731360.hdr.mark = gc_color_red;
  c_731360.hdr.grayed = 0;
@@ -5850,8 +5625,7 @@ return_closcall1(data,(closure)&c_731360,  r_73317);;
 }
 
 static void __lambda_159(void *data, int argc, object self_73671, object v_9329_7383) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731362;
 c_731362.hdr.mark = gc_color_red;
  c_731362.hdr.grayed = 0;
@@ -5871,8 +5645,7 @@ return_closcall1(data,(closure)&c_731362,  Cyc_is_cons(v_9329_7383));;
 }
 
 static void __lambda_158(void *data, int argc, object self_73672, object r_73318) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73318) ){ 
+  if( !eq(boolean_f, r_73318) ){ 
   
 closureN_type c_731364;
 c_731364.hdr.mark = gc_color_red;
@@ -5896,8 +5669,7 @@ return_closcall1(data,(closure)&c_731364,  car(((closureN)self_73672)->elts[5]))
 }
 
 static void __lambda_157(void *data, int argc, object self_73673, object r_73319) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731366;
 c_731366.hdr.mark = gc_color_red;
  c_731366.hdr.grayed = 0;
@@ -5917,8 +5689,7 @@ return_closcall1(data,(closure)&c_731366,  r_73319);;
 }
 
 static void __lambda_156(void *data, int argc, object self_73674, object v_9330_7384) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731368;
 c_731368.hdr.mark = gc_color_red;
  c_731368.hdr.grayed = 0;
@@ -5939,8 +5710,7 @@ return_closcall2(data,  __glo_list_127,  &c_731368, v_9330_7384);;
 }
 
 static void __lambda_155(void *data, int argc, object self_73675, object r_73320) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73320) ){ 
+  if( !eq(boolean_f, r_73320) ){ 
   
 closureN_type c_731370;
 c_731370.hdr.mark = gc_color_red;
@@ -5964,8 +5734,7 @@ return_closcall1(data,(closure)&c_731370,  ((closureN)self_73675)->elts[6]);
 }
 
 static void __lambda_154(void *data, int argc, object self_73676, object p_7385) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731372;
 c_731372.hdr.mark = gc_color_red;
  c_731372.hdr.grayed = 0;
@@ -5985,8 +5754,7 @@ return_closcall1(data,(closure)&c_731372,  cdr(((closureN)self_73676)->elts[5]))
 }
 
 static void __lambda_153(void *data, int argc, object self_73677, object r_73321) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731374;
 c_731374.hdr.mark = gc_color_red;
  c_731374.hdr.grayed = 0;
@@ -6006,8 +5774,7 @@ return_closcall1(data,(closure)&c_731374,  r_73321);;
 }
 
 static void __lambda_152(void *data, int argc, object self_73678, object v_9331_7386) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731376;
 c_731376.hdr.mark = gc_color_red;
  c_731376.hdr.grayed = 0;
@@ -6028,8 +5795,7 @@ return_closcall1(data,(closure)&c_731376,  Cyc_is_cons(v_9331_7386));;
 }
 
 static void __lambda_151(void *data, int argc, object self_73679, object r_73322) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73322) ){ 
+  if( !eq(boolean_f, r_73322) ){ 
   
 closureN_type c_731378;
 c_731378.hdr.mark = gc_color_red;
@@ -6054,8 +5820,7 @@ return_closcall1(data,(closure)&c_731378,  car(((closureN)self_73679)->elts[6]))
 }
 
 static void __lambda_150(void *data, int argc, object self_73680, object r_73323) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731380;
 c_731380.hdr.mark = gc_color_red;
  c_731380.hdr.grayed = 0;
@@ -6076,8 +5841,7 @@ return_closcall1(data,(closure)&c_731380,  r_73323);;
 }
 
 static void __lambda_149(void *data, int argc, object self_73681, object v_9332_7387) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731382;
 c_731382.hdr.mark = gc_color_red;
  c_731382.hdr.grayed = 0;
@@ -6099,8 +5863,7 @@ return_closcall1(data,(closure)&c_731382,  Cyc_is_cons(v_9332_7387));;
 }
 
 static void __lambda_148(void *data, int argc, object self_73682, object r_73324) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73324) ){ 
+  if( !eq(boolean_f, r_73324) ){ 
   
 closureN_type c_731384;
 c_731384.hdr.mark = gc_color_red;
@@ -6126,8 +5889,7 @@ return_closcall1(data,(closure)&c_731384,  car(((closureN)self_73682)->elts[7]))
 }
 
 static void __lambda_147(void *data, int argc, object self_73683, object r_73325) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731386;
 c_731386.hdr.mark = gc_color_red;
  c_731386.hdr.grayed = 0;
@@ -6149,8 +5911,7 @@ return_closcall1(data,(closure)&c_731386,  r_73325);;
 }
 
 static void __lambda_146(void *data, int argc, object self_73684, object v_9333_7388) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731388;
 c_731388.hdr.mark = gc_color_red;
  c_731388.hdr.grayed = 0;
@@ -6173,8 +5934,7 @@ return_closcall1(data,(closure)&c_731388,  Cyc_is_cons(v_9333_7388));;
 }
 
 static void __lambda_145(void *data, int argc, object self_73685, object r_73326) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73326) ){ 
+  if( !eq(boolean_f, r_73326) ){ 
   
 closureN_type c_731390;
 c_731390.hdr.mark = gc_color_red;
@@ -6201,8 +5961,7 @@ return_closcall1(data,(closure)&c_731390,  car(((closureN)self_73685)->elts[8]))
 }
 
 static void __lambda_144(void *data, int argc, object self_73686, object r_73327) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731392;
 c_731392.hdr.mark = gc_color_red;
  c_731392.hdr.grayed = 0;
@@ -6225,8 +5984,7 @@ return_closcall1(data,(closure)&c_731392,  r_73327);;
 }
 
 static void __lambda_143(void *data, int argc, object self_73687, object v_9334_7389) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731394;
 c_731394.hdr.mark = gc_color_red;
  c_731394.hdr.grayed = 0;
@@ -6249,8 +6007,7 @@ return_closcall1(data,(closure)&c_731394,  v_9334_7389);;
 }
 
 static void __lambda_142(void *data, int argc, object self_73688, object x_7390) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731396;
 c_731396.hdr.mark = gc_color_red;
  c_731396.hdr.grayed = 0;
@@ -6273,8 +6030,7 @@ return_closcall1(data,(closure)&c_731396,  cdr(((closureN)self_73688)->elts[8]))
 }
 
 static void __lambda_141(void *data, int argc, object self_73689, object r_73328) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731398;
 c_731398.hdr.mark = gc_color_red;
  c_731398.hdr.grayed = 0;
@@ -6297,8 +6053,7 @@ return_closcall1(data,(closure)&c_731398,  r_73328);;
 }
 
 static void __lambda_140(void *data, int argc, object self_73690, object v_9335_7391) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731400;
 c_731400.hdr.mark = gc_color_red;
  c_731400.hdr.grayed = 0;
@@ -6321,8 +6076,7 @@ return_closcall1(data,(closure)&c_731400,  v_9335_7391);;
 }
 
 static void __lambda_139(void *data, int argc, object self_73691, object y_7392) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731402;
 c_731402.hdr.mark = gc_color_red;
  c_731402.hdr.grayed = 0;
@@ -6345,8 +6099,7 @@ return_closcall1(data,(closure)&c_731402,  cdr(((closureN)self_73691)->elts[7]))
 }
 
 static void __lambda_138(void *data, int argc, object self_73692, object r_73329) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731404;
 c_731404.hdr.mark = gc_color_red;
  c_731404.hdr.grayed = 0;
@@ -6369,8 +6122,7 @@ return_closcall1(data,(closure)&c_731404,  r_73329);;
 }
 
 static void __lambda_137(void *data, int argc, object self_73693, object v_9336_7393) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731406;
 c_731406.hdr.mark = gc_color_red;
  c_731406.hdr.grayed = 0;
@@ -6393,8 +6145,7 @@ return_closcall1(data,(closure)&c_731406,  v_9336_7393);;
 }
 
 static void __lambda_136(void *data, int argc, object self_73694, object body_7394) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731408;
 c_731408.hdr.mark = gc_color_red;
  c_731408.hdr.grayed = 0;
@@ -6417,8 +6168,7 @@ return_closcall1(data,(closure)&c_731408,  cdr(((closureN)self_73694)->elts[6]))
 }
 
 static void __lambda_135(void *data, int argc, object self_73695, object r_73330) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731410;
 c_731410.hdr.mark = gc_color_red;
  c_731410.hdr.grayed = 0;
@@ -6441,8 +6191,7 @@ return_closcall1(data,(closure)&c_731410,  r_73330);;
 }
 
 static void __lambda_134(void *data, int argc, object self_73696, object v_9337_7395) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731412;
 c_731412.hdr.mark = gc_color_red;
  c_731412.hdr.grayed = 0;
@@ -6465,8 +6214,7 @@ return_closcall1(data,(closure)&c_731412,  v_9337_7395);;
 }
 
 static void __lambda_133(void *data, int argc, object self_73697, object rest_7396) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731414;
 c_731414.hdr.mark = gc_color_red;
  c_731414.hdr.grayed = 0;
@@ -6490,8 +6238,7 @@ return_closcall1(data,(closure)&c_731414,  quote__75case);;
 }
 
 static void __lambda_132(void *data, int argc, object self_73698, object r_73362) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731417;
 c_731417.hdr.mark = gc_color_red;
  c_731417.hdr.grayed = 0;
@@ -6515,8 +6262,7 @@ return_closcall2(data,  ((closureN)self_73698)->elts[6],  &c_731417, r_73362);;
 }
 
 static void __lambda_131(void *data, int argc, object self_73699, object r_73332) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731419;
 c_731419.hdr.mark = gc_color_red;
  c_731419.hdr.grayed = 0;
@@ -6541,8 +6287,7 @@ return_closcall1(data,(closure)&c_731419,  quote__87);;
 }
 
 static void __lambda_130(void *data, int argc, object self_73700, object r_73361) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731422;
 c_731422.hdr.mark = gc_color_red;
  c_731422.hdr.grayed = 0;
@@ -6566,8 +6311,7 @@ return_closcall2(data,  ((closureN)self_73700)->elts[7],  &c_731422, r_73361);;
 }
 
 static void __lambda_129(void *data, int argc, object self_73701, object r_73354) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731424;
 c_731424.hdr.mark = gc_color_red;
  c_731424.hdr.grayed = 0;
@@ -6592,8 +6336,7 @@ return_closcall1(data,(closure)&c_731424,  nil);;
 }
 
 static void __lambda_128(void *data, int argc, object self_73702, object r_73359) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731426;
 c_731426.hdr.mark = gc_color_red;
  c_731426.hdr.grayed = 0;
@@ -6623,8 +6366,7 @@ return_closcall1(data,(closure)&c_731426,  &c_731575);;
 }
 
 static void __lambda_127(void *data, int argc, object self_73703, object r_73360) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731428;
 c_731428.hdr.mark = gc_color_red;
  c_731428.hdr.grayed = 0;
@@ -6651,8 +6393,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731428, &c_731573, ((closureN)s
 }
 
 static void __lambda_126(void *data, int argc, object self_73704, object r_73357) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731430;
 c_731430.hdr.mark = gc_color_red;
  c_731430.hdr.grayed = 0;
@@ -6684,8 +6425,7 @@ return_closcall1(data,(closure)&c_731430,  &c_731570);;
 }
 
 static void __lambda_125(void *data, int argc, object self_73705, object r_73358) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731432;
 c_731432.hdr.mark = gc_color_red;
  c_731432.hdr.grayed = 0;
@@ -6709,8 +6449,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731432, ((closureN)self_73705)-
 }
 
 static void __lambda_124(void *data, int argc, object self_73706, object r_73355) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731434;
 c_731434.hdr.mark = gc_color_red;
  c_731434.hdr.grayed = 0;
@@ -6743,8 +6482,7 @@ return_closcall1(data,(closure)&c_731434,  &c_731564);;
 }
 
 static void __lambda_123(void *data, int argc, object self_73707, object r_73356) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731436;
 c_731436.hdr.mark = gc_color_red;
  c_731436.hdr.grayed = 0;
@@ -6767,8 +6505,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731436, ((closureN)self_73707)-
 }
 
 static void __lambda_122(void *data, int argc, object self_73708, object r_73339) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731438;
 c_731438.hdr.mark = gc_color_red;
  c_731438.hdr.grayed = 0;
@@ -6794,13 +6531,11 @@ return_closcall1(data,(closure)&c_731438,  &c_731560);;
 }
 
 static void __lambda_121(void *data, int argc, object self_73709, object k_73353, object p_7397) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-return_closcall1(data,  k_73353,  p_7397);; 
+  return_closcall1(data,  k_73353,  p_7397);; 
 }
 
 static void __lambda_120(void *data, int argc, object self_73710, object r_73352) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731440;
 c_731440.hdr.mark = gc_color_red;
  c_731440.hdr.grayed = 0;
@@ -6823,8 +6558,7 @@ return_closcall3(data,  __glo_map,  &c_731440, r_73352, ((closureN)self_73710)->
 }
 
 static void __lambda_119(void *data, int argc, object self_73711, object r_73348) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731442;
 c_731442.hdr.mark = gc_color_red;
  c_731442.hdr.grayed = 0;
@@ -6848,8 +6582,7 @@ return_closcall1(data,(closure)&c_731442,  nil);;
 }
 
 static void __lambda_118(void *data, int argc, object self_73712, object r_73350) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731444;
 c_731444.hdr.mark = gc_color_red;
  c_731444.hdr.grayed = 0;
@@ -6876,8 +6609,7 @@ return_closcall1(data,(closure)&c_731444,  &c_731558);;
 }
 
 static void __lambda_117(void *data, int argc, object self_73713, object r_73351) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731446;
 c_731446.hdr.mark = gc_color_red;
  c_731446.hdr.grayed = 0;
@@ -6900,8 +6632,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731446, ((closureN)self_73713)-
 }
 
 static void __lambda_116(void *data, int argc, object self_73714, object r_73349) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731448;
 c_731448.hdr.mark = gc_color_red;
  c_731448.hdr.grayed = 0;
@@ -6923,8 +6654,7 @@ return_closcall3(data,  __glo_append,  &c_731448, ((closureN)self_73714)->elts[6
 }
 
 static void __lambda_115(void *data, int argc, object self_73715, object r_73342) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731450;
 c_731450.hdr.mark = gc_color_red;
  c_731450.hdr.grayed = 0;
@@ -6949,8 +6679,7 @@ return_closcall1(data,(closure)&c_731450,  &c_731554);;
 }
 
 static void __lambda_114(void *data, int argc, object self_73716, object r_73347) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731452;
 c_731452.hdr.mark = gc_color_red;
  c_731452.hdr.grayed = 0;
@@ -6971,8 +6700,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731452, ((closureN)self_73716)-
 }
 
 static void __lambda_113(void *data, int argc, object self_73717, object r_73345) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731454;
 c_731454.hdr.mark = gc_color_red;
  c_731454.hdr.grayed = 0;
@@ -6998,8 +6726,7 @@ return_closcall1(data,(closure)&c_731454,  &c_731550);;
 }
 
 static void __lambda_112(void *data, int argc, object self_73718, object r_73346) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731456;
 c_731456.hdr.mark = gc_color_red;
  c_731456.hdr.grayed = 0;
@@ -7019,8 +6746,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731456, ((closureN)self_73718)-
 }
 
 static void __lambda_111(void *data, int argc, object self_73719, object r_73343) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731458;
 c_731458.hdr.mark = gc_color_red;
  c_731458.hdr.grayed = 0;
@@ -7053,8 +6779,7 @@ return_closcall1(data,(closure)&c_731458,  &c_731542);;
 }
 
 static void __lambda_110(void *data, int argc, object self_73720, object r_73344) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731460;
 c_731460.hdr.mark = gc_color_red;
  c_731460.hdr.grayed = 0;
@@ -7073,8 +6798,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731460, ((closureN)self_73720)-
 }
 
 static void __lambda_109(void *data, int argc, object self_73721, object r_73340) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731462;
 c_731462.hdr.mark = gc_color_red;
  c_731462.hdr.grayed = 0;
@@ -7116,8 +6840,7 @@ return_closcall1(data,(closure)&c_731462,  &c_731529);;
 }
 
 static void __lambda_108(void *data, int argc, object self_73722, object r_73341) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731464;
 c_731464.hdr.mark = gc_color_red;
  c_731464.hdr.grayed = 0;
@@ -7135,8 +6858,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731464, ((closureN)self_73722)-
 }
 
 static void __lambda_107(void *data, int argc, object self_73723, object r_73337) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731466;
 c_731466.hdr.mark = gc_color_red;
  c_731466.hdr.grayed = 0;
@@ -7179,8 +6901,7 @@ return_closcall1(data,(closure)&c_731466,  &c_731515);;
 }
 
 static void __lambda_106(void *data, int argc, object self_73724, object r_73338) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731468;
 c_731468.hdr.mark = gc_color_red;
  c_731468.hdr.grayed = 0;
@@ -7197,8 +6918,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731468, ((closureN)self_73724)-
 }
 
 static void __lambda_105(void *data, int argc, object self_73725, object r_73335) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731470;
 c_731470.hdr.mark = gc_color_red;
  c_731470.hdr.grayed = 0;
@@ -7242,8 +6962,7 @@ return_closcall1(data,(closure)&c_731470,  &c_731500);;
 }
 
 static void __lambda_104(void *data, int argc, object self_73726, object r_73336) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731472;
 c_731472.hdr.mark = gc_color_red;
  c_731472.hdr.grayed = 0;
@@ -7259,8 +6978,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731472, ((closureN)self_73726)-
 }
 
 static void __lambda_103(void *data, int argc, object self_73727, object r_73333) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731474;
 c_731474.hdr.mark = gc_color_red;
  c_731474.hdr.grayed = 0;
@@ -7305,8 +7023,7 @@ return_closcall1(data,(closure)&c_731474,  &c_731484);;
 }
 
 static void __lambda_102(void *data, int argc, object self_73728, object r_73334) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731476;
 c_731476.hdr.mark = gc_color_red;
  c_731476.hdr.grayed = 0;
@@ -7321,15 +7038,13 @@ return_closcall4(data,  __glo_cons_91source,  &c_731476, ((closureN)self_73728)-
 }
 
 static void __lambda_101(void *data, int argc, object self_73729, object r_73331) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 make_cons(c_731481,r_73331, boolean_f);
 return_closcall1(data,  ((closureN)self_73729)->elts[0],  &c_731481);; 
 }
 
 static void __lambda_100(void *data, int argc, object self_73730, object k_73364) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73839;
 c_73839.hdr.mark = gc_color_red;
  c_73839.hdr.grayed = 0;
@@ -7346,8 +7061,7 @@ return_closcall1(data,(closure)&c_73839,  Cyc_is_cons(((closureN)self_73730)->el
 }
 
 static void __lambda_99(void *data, int argc, object self_73731, object r_73365) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73365) ){ 
+  if( !eq(boolean_f, r_73365) ){ 
   
 closureN_type c_73841;
 c_73841.hdr.mark = gc_color_red;
@@ -7368,8 +7082,7 @@ return_closcall1(data,(closure)&c_73841,  car(((closureN)self_73731)->elts[2]));
 }
 
 static void __lambda_98(void *data, int argc, object self_73732, object r_73366) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73843;
 c_73843.hdr.mark = gc_color_red;
  c_73843.hdr.grayed = 0;
@@ -7386,8 +7099,7 @@ return_closcall1(data,(closure)&c_73843,  r_73366);;
 }
 
 static void __lambda_97(void *data, int argc, object self_73733, object v_9339_7354) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73845;
 c_73845.hdr.mark = gc_color_red;
  c_73845.hdr.grayed = 0;
@@ -7404,8 +7116,7 @@ return_closcall1(data,(closure)&c_73845,  v_9339_7354);;
 }
 
 static void __lambda_96(void *data, int argc, object self_73734, object args_7355) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73847;
 c_73847.hdr.mark = gc_color_red;
  c_73847.hdr.grayed = 0;
@@ -7422,8 +7133,7 @@ return_closcall1(data,(closure)&c_73847,  cdr(((closureN)self_73734)->elts[2]));
 }
 
 static void __lambda_95(void *data, int argc, object self_73735, object r_73367) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73849;
 c_73849.hdr.mark = gc_color_red;
  c_73849.hdr.grayed = 0;
@@ -7440,8 +7150,7 @@ return_closcall1(data,(closure)&c_73849,  r_73367);;
 }
 
 static void __lambda_94(void *data, int argc, object self_73736, object v_9340_7356) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73851;
 c_73851.hdr.mark = gc_color_red;
  c_73851.hdr.grayed = 0;
@@ -7459,8 +7168,7 @@ return_closcall1(data,(closure)&c_73851,  Cyc_is_cons(v_9340_7356));;
 }
 
 static void __lambda_93(void *data, int argc, object self_73737, object r_73368) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73368) ){ 
+  if( !eq(boolean_f, r_73368) ){ 
   
 closureN_type c_73853;
 c_73853.hdr.mark = gc_color_red;
@@ -7482,8 +7190,7 @@ return_closcall1(data,(closure)&c_73853,  car(((closureN)self_73737)->elts[3]));
 }
 
 static void __lambda_92(void *data, int argc, object self_73738, object r_73369) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73855;
 c_73855.hdr.mark = gc_color_red;
  c_73855.hdr.grayed = 0;
@@ -7501,8 +7208,7 @@ return_closcall1(data,(closure)&c_73855,  r_73369);;
 }
 
 static void __lambda_91(void *data, int argc, object self_73739, object v_9341_7357) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73857;
 c_73857.hdr.mark = gc_color_red;
  c_73857.hdr.grayed = 0;
@@ -7520,8 +7226,7 @@ return_closcall1(data,(closure)&c_73857,  v_9341_7357);;
 }
 
 static void __lambda_90(void *data, int argc, object self_73740, object len_7358) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73859;
 c_73859.hdr.mark = gc_color_red;
  c_73859.hdr.grayed = 0;
@@ -7539,8 +7244,7 @@ return_closcall1(data,(closure)&c_73859,  cdr(((closureN)self_73740)->elts[3]));
 }
 
 static void __lambda_89(void *data, int argc, object self_73741, object r_73370) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73861;
 c_73861.hdr.mark = gc_color_red;
  c_73861.hdr.grayed = 0;
@@ -7558,8 +7262,7 @@ return_closcall1(data,(closure)&c_73861,  r_73370);;
 }
 
 static void __lambda_88(void *data, int argc, object self_73742, object v_9342_7359) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73863;
 c_73863.hdr.mark = gc_color_red;
  c_73863.hdr.grayed = 0;
@@ -7578,8 +7281,7 @@ return_closcall1(data,(closure)&c_73863,  Cyc_is_cons(v_9342_7359));;
 }
 
 static void __lambda_87(void *data, int argc, object self_73743, object r_73371) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73371) ){ 
+  if( !eq(boolean_f, r_73371) ){ 
   
 closureN_type c_73865;
 c_73865.hdr.mark = gc_color_red;
@@ -7602,8 +7304,7 @@ return_closcall1(data,(closure)&c_73865,  car(((closureN)self_73743)->elts[4]));
 }
 
 static void __lambda_86(void *data, int argc, object self_73744, object r_73372) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73867;
 c_73867.hdr.mark = gc_color_red;
  c_73867.hdr.grayed = 0;
@@ -7622,8 +7323,7 @@ return_closcall1(data,(closure)&c_73867,  r_73372);;
 }
 
 static void __lambda_85(void *data, int argc, object self_73745, object v_9343_7360) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73869;
 c_73869.hdr.mark = gc_color_red;
  c_73869.hdr.grayed = 0;
@@ -7642,8 +7342,7 @@ return_closcall1(data,(closure)&c_73869,  v_9343_7360);;
 }
 
 static void __lambda_84(void *data, int argc, object self_73746, object n_7361) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73871;
 c_73871.hdr.mark = gc_color_red;
  c_73871.hdr.grayed = 0;
@@ -7661,8 +7360,7 @@ return_closcall1(data,(closure)&c_73871,  cdr(((closureN)self_73746)->elts[4]));
 }
 
 static void __lambda_83(void *data, int argc, object self_73747, object r_73373) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73873;
 c_73873.hdr.mark = gc_color_red;
  c_73873.hdr.grayed = 0;
@@ -7680,8 +7378,7 @@ return_closcall1(data,(closure)&c_73873,  r_73373);;
 }
 
 static void __lambda_82(void *data, int argc, object self_73748, object v_9344_7362) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73875;
 c_73875.hdr.mark = gc_color_red;
  c_73875.hdr.grayed = 0;
@@ -7700,8 +7397,7 @@ return_closcall1(data,(closure)&c_73875,  Cyc_is_cons(v_9344_7362));;
 }
 
 static void __lambda_81(void *data, int argc, object self_73749, object r_73374) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73374) ){ 
+  if( !eq(boolean_f, r_73374) ){ 
   
 closureN_type c_73877;
 c_73877.hdr.mark = gc_color_red;
@@ -7724,8 +7420,7 @@ return_closcall1(data,(closure)&c_73877,  car(((closureN)self_73749)->elts[4]));
 }
 
 static void __lambda_80(void *data, int argc, object self_73750, object r_73375) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73879;
 c_73879.hdr.mark = gc_color_red;
  c_73879.hdr.grayed = 0;
@@ -7744,8 +7439,7 @@ return_closcall1(data,(closure)&c_73879,  r_73375);;
 }
 
 static void __lambda_79(void *data, int argc, object self_73751, object v_9345_7363) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73881;
 c_73881.hdr.mark = gc_color_red;
  c_73881.hdr.grayed = 0;
@@ -7764,8 +7458,7 @@ return_closcall1(data,(closure)&c_73881,  v_9345_7363);;
 }
 
 static void __lambda_78(void *data, int argc, object self_73752, object p_7364) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73883;
 c_73883.hdr.mark = gc_color_red;
  c_73883.hdr.grayed = 0;
@@ -7783,8 +7476,7 @@ return_closcall1(data,(closure)&c_73883,  cdr(((closureN)self_73752)->elts[4]));
 }
 
 static void __lambda_77(void *data, int argc, object self_73753, object r_73376) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73885;
 c_73885.hdr.mark = gc_color_red;
  c_73885.hdr.grayed = 0;
@@ -7802,8 +7494,7 @@ return_closcall1(data,(closure)&c_73885,  r_73376);;
 }
 
 static void __lambda_76(void *data, int argc, object self_73754, object v_9346_7365) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73887;
 c_73887.hdr.mark = gc_color_red;
  c_73887.hdr.grayed = 0;
@@ -7822,8 +7513,7 @@ return_closcall1(data,(closure)&c_73887,  Cyc_is_cons(v_9346_7365));;
 }
 
 static void __lambda_75(void *data, int argc, object self_73755, object r_73377) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73377) ){ 
+  if( !eq(boolean_f, r_73377) ){ 
   
 closureN_type c_73889;
 c_73889.hdr.mark = gc_color_red;
@@ -7846,8 +7536,7 @@ return_closcall1(data,(closure)&c_73889,  car(((closureN)self_73755)->elts[4]));
 }
 
 static void __lambda_74(void *data, int argc, object self_73756, object r_73378) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73891;
 c_73891.hdr.mark = gc_color_red;
  c_73891.hdr.grayed = 0;
@@ -7866,8 +7555,7 @@ return_closcall1(data,(closure)&c_73891,  r_73378);;
 }
 
 static void __lambda_73(void *data, int argc, object self_73757, object v_9347_7366) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73893;
 c_73893.hdr.mark = gc_color_red;
  c_73893.hdr.grayed = 0;
@@ -7887,8 +7575,7 @@ return_closcall1(data,(closure)&c_73893,  Cyc_is_cons(v_9347_7366));;
 }
 
 static void __lambda_72(void *data, int argc, object self_73758, object r_73379) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73379) ){ 
+  if( !eq(boolean_f, r_73379) ){ 
   
 closureN_type c_73895;
 c_73895.hdr.mark = gc_color_red;
@@ -7912,8 +7599,7 @@ return_closcall1(data,(closure)&c_73895,  car(((closureN)self_73758)->elts[5]));
 }
 
 static void __lambda_71(void *data, int argc, object self_73759, object r_73380) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73897;
 c_73897.hdr.mark = gc_color_red;
  c_73897.hdr.grayed = 0;
@@ -7933,8 +7619,7 @@ return_closcall1(data,(closure)&c_73897,  r_73380);;
 }
 
 static void __lambda_70(void *data, int argc, object self_73760, object v_9348_7367) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73899;
 c_73899.hdr.mark = gc_color_red;
  c_73899.hdr.grayed = 0;
@@ -7955,8 +7640,7 @@ return_closcall2(data,  __glo_list_127,  &c_73899, v_9348_7367);;
 }
 
 static void __lambda_69(void *data, int argc, object self_73761, object r_73381) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-if( !eq(boolean_f, r_73381) ){ 
+  if( !eq(boolean_f, r_73381) ){ 
   
 closureN_type c_73901;
 c_73901.hdr.mark = gc_color_red;
@@ -7980,8 +7664,7 @@ return_closcall1(data,(closure)&c_73901,  ((closureN)self_73761)->elts[6]);
 }
 
 static void __lambda_68(void *data, int argc, object self_73762, object params_7368) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73903;
 c_73903.hdr.mark = gc_color_red;
  c_73903.hdr.grayed = 0;
@@ -8001,8 +7684,7 @@ return_closcall1(data,(closure)&c_73903,  cdr(((closureN)self_73762)->elts[5]));
 }
 
 static void __lambda_67(void *data, int argc, object self_73763, object r_73382) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73905;
 c_73905.hdr.mark = gc_color_red;
  c_73905.hdr.grayed = 0;
@@ -8022,8 +7704,7 @@ return_closcall1(data,(closure)&c_73905,  r_73382);;
 }
 
 static void __lambda_66(void *data, int argc, object self_73764, object v_9349_7369) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73907;
 c_73907.hdr.mark = gc_color_red;
  c_73907.hdr.grayed = 0;
@@ -8043,8 +7724,7 @@ return_closcall1(data,(closure)&c_73907,  v_9349_7369);;
 }
 
 static void __lambda_65(void *data, int argc, object self_73765, object body_7370) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73909;
 c_73909.hdr.mark = gc_color_red;
  c_73909.hdr.grayed = 0;
@@ -8064,8 +7744,7 @@ return_closcall1(data,(closure)&c_73909,  cdr(((closureN)self_73765)->elts[5]));
 }
 
 static void __lambda_64(void *data, int argc, object self_73766, object r_73383) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73911;
 c_73911.hdr.mark = gc_color_red;
  c_73911.hdr.grayed = 0;
@@ -8085,8 +7764,7 @@ return_closcall1(data,(closure)&c_73911,  r_73383);;
 }
 
 static void __lambda_63(void *data, int argc, object self_73767, object v_9350_7371) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73913;
 c_73913.hdr.mark = gc_color_red;
  c_73913.hdr.grayed = 0;
@@ -8106,8 +7784,7 @@ return_closcall1(data,(closure)&c_73913,  v_9350_7371);;
 }
 
 static void __lambda_62(void *data, int argc, object self_73768, object rest_7372) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73915;
 c_73915.hdr.mark = gc_color_red;
  c_73915.hdr.grayed = 0;
@@ -8128,8 +7805,7 @@ return_closcall1(data,(closure)&c_73915,  quote__if);;
 }
 
 static void __lambda_61(void *data, int argc, object self_73769, object r_73445) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73918;
 c_73918.hdr.mark = gc_color_red;
  c_73918.hdr.grayed = 0;
@@ -8150,8 +7826,7 @@ return_closcall2(data,  ((closureN)self_73769)->elts[5],  &c_73918, r_73445);;
 }
 
 static void __lambda_60(void *data, int argc, object self_73770, object r_73385) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73920;
 c_73920.hdr.mark = gc_color_red;
  c_73920.hdr.grayed = 0;
@@ -8173,8 +7848,7 @@ return_closcall1(data,(closure)&c_73920,  quote__123);;
 }
 
 static void __lambda_59(void *data, int argc, object self_73771, object r_73444) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73923;
 c_73923.hdr.mark = gc_color_red;
  c_73923.hdr.grayed = 0;
@@ -8196,8 +7870,7 @@ return_closcall2(data,  ((closureN)self_73771)->elts[6],  &c_73923, r_73444);;
 }
 
 static void __lambda_58(void *data, int argc, object self_73772, object r_73423) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73925;
 c_73925.hdr.mark = gc_color_red;
  c_73925.hdr.grayed = 0;
@@ -8220,8 +7893,7 @@ return_closcall1(data,(closure)&c_73925,  quote_length);;
 }
 
 static void __lambda_57(void *data, int argc, object self_73773, object r_73443) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73928;
 c_73928.hdr.mark = gc_color_red;
  c_73928.hdr.grayed = 0;
@@ -8244,8 +7916,7 @@ return_closcall2(data,  ((closureN)self_73773)->elts[7],  &c_73928, r_73443);;
 }
 
 static void __lambda_56(void *data, int argc, object self_73774, object r_73431) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73930;
 c_73930.hdr.mark = gc_color_red;
  c_73930.hdr.grayed = 0;
@@ -8269,8 +7940,7 @@ return_closcall1(data,(closure)&c_73930,  quote_quote);;
 }
 
 static void __lambda_55(void *data, int argc, object self_73775, object r_73442) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73933;
 c_73933.hdr.mark = gc_color_red;
  c_73933.hdr.grayed = 0;
@@ -8294,8 +7964,7 @@ return_closcall2(data,  ((closureN)self_73775)->elts[8],  &c_73933, r_73442);;
 }
 
 static void __lambda_54(void *data, int argc, object self_73776, object r_73437) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73935;
 c_73935.hdr.mark = gc_color_red;
  c_73935.hdr.grayed = 0;
@@ -8320,8 +7989,7 @@ return_closcall1(data,(closure)&c_73935,  nil);;
 }
 
 static void __lambda_53(void *data, int argc, object self_73777, object r_73440) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73937;
 c_73937.hdr.mark = gc_color_red;
  c_73937.hdr.grayed = 0;
@@ -8353,8 +8021,7 @@ return_closcall1(data,(closure)&c_73937,  &c_731244);;
 }
 
 static void __lambda_52(void *data, int argc, object self_73778, object r_73441) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73939;
 c_73939.hdr.mark = gc_color_red;
  c_73939.hdr.grayed = 0;
@@ -8379,8 +8046,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73939, ((closureN)self_73778)->
 }
 
 static void __lambda_51(void *data, int argc, object self_73779, object r_73438) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73941;
 c_73941.hdr.mark = gc_color_red;
  c_73941.hdr.grayed = 0;
@@ -8414,8 +8080,7 @@ return_closcall1(data,(closure)&c_73941,  &c_731238);;
 }
 
 static void __lambda_50(void *data, int argc, object self_73780, object r_73439) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73943;
 c_73943.hdr.mark = gc_color_red;
  c_73943.hdr.grayed = 0;
@@ -8439,8 +8104,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73943, ((closureN)self_73780)->
 }
 
 static void __lambda_49(void *data, int argc, object self_73781, object r_73434) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73945;
 c_73945.hdr.mark = gc_color_red;
  c_73945.hdr.grayed = 0;
@@ -8465,8 +8129,7 @@ return_closcall1(data,(closure)&c_73945,  nil);;
 }
 
 static void __lambda_48(void *data, int argc, object self_73782, object r_73435) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73947;
 c_73947.hdr.mark = gc_color_red;
  c_73947.hdr.grayed = 0;
@@ -8502,8 +8165,7 @@ return_closcall1(data,(closure)&c_73947,  &c_731231);;
 }
 
 static void __lambda_47(void *data, int argc, object self_73783, object r_73436) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73949;
 c_73949.hdr.mark = gc_color_red;
  c_73949.hdr.grayed = 0;
@@ -8527,8 +8189,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73949, ((closureN)self_73783)->
 }
 
 static void __lambda_46(void *data, int argc, object self_73784, object r_73432) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73951;
 c_73951.hdr.mark = gc_color_red;
  c_73951.hdr.grayed = 0;
@@ -8565,8 +8226,7 @@ return_closcall1(data,(closure)&c_73951,  &c_731223);;
 }
 
 static void __lambda_45(void *data, int argc, object self_73785, object r_73433) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73953;
 c_73953.hdr.mark = gc_color_red;
  c_73953.hdr.grayed = 0;
@@ -8589,8 +8249,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73953, ((closureN)self_73785)->
 }
 
 static void __lambda_44(void *data, int argc, object self_73786, object r_73428) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73955;
 c_73955.hdr.mark = gc_color_red;
  c_73955.hdr.grayed = 0;
@@ -8614,8 +8273,7 @@ return_closcall1(data,(closure)&c_73955,  nil);;
 }
 
 static void __lambda_43(void *data, int argc, object self_73787, object r_73429) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73957;
 c_73957.hdr.mark = gc_color_red;
  c_73957.hdr.grayed = 0;
@@ -8654,8 +8312,7 @@ return_closcall1(data,(closure)&c_73957,  &c_731214);;
 }
 
 static void __lambda_42(void *data, int argc, object self_73788, object r_73430) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73959;
 c_73959.hdr.mark = gc_color_red;
  c_73959.hdr.grayed = 0;
@@ -8678,8 +8335,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73959, ((closureN)self_73788)->
 }
 
 static void __lambda_41(void *data, int argc, object self_73789, object r_73426) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73961;
 c_73961.hdr.mark = gc_color_red;
  c_73961.hdr.grayed = 0;
@@ -8719,8 +8375,7 @@ return_closcall1(data,(closure)&c_73961,  &c_731204);;
 }
 
 static void __lambda_40(void *data, int argc, object self_73790, object r_73427) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73963;
 c_73963.hdr.mark = gc_color_red;
  c_73963.hdr.grayed = 0;
@@ -8743,8 +8398,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73963, ((closureN)self_73790)->
 }
 
 static void __lambda_39(void *data, int argc, object self_73791, object r_73424) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73965;
 c_73965.hdr.mark = gc_color_red;
  c_73965.hdr.grayed = 0;
@@ -8786,8 +8440,7 @@ return_closcall1(data,(closure)&c_73965,  &c_731193);;
 }
 
 static void __lambda_38(void *data, int argc, object self_73792, object r_73425) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73967;
 c_73967.hdr.mark = gc_color_red;
  c_73967.hdr.grayed = 0;
@@ -8809,8 +8462,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73967, ((closureN)self_73792)->
 }
 
 static void __lambda_37(void *data, int argc, object self_73793, object r_73388) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73969;
 c_73969.hdr.mark = gc_color_red;
  c_73969.hdr.grayed = 0;
@@ -8833,8 +8485,7 @@ return_closcall1(data,(closure)&c_73969,  quote_apply);;
 }
 
 static void __lambda_36(void *data, int argc, object self_73794, object r_73422) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73972;
 c_73972.hdr.mark = gc_color_red;
  c_73972.hdr.grayed = 0;
@@ -8857,8 +8508,7 @@ return_closcall2(data,  ((closureN)self_73794)->elts[7],  &c_73972, r_73422);;
 }
 
 static void __lambda_35(void *data, int argc, object self_73795, object r_73409) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73974;
 c_73974.hdr.mark = gc_color_red;
  c_73974.hdr.grayed = 0;
@@ -8882,8 +8532,7 @@ return_closcall1(data,(closure)&c_73974,  quote_lambda);;
 }
 
 static void __lambda_34(void *data, int argc, object self_73796, object r_73421) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73977;
 c_73977.hdr.mark = gc_color_red;
  c_73977.hdr.grayed = 0;
@@ -8907,8 +8556,7 @@ return_closcall2(data,  ((closureN)self_73796)->elts[8],  &c_73977, r_73421);;
 }
 
 static void __lambda_33(void *data, int argc, object self_73797, object r_73417) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73979;
 c_73979.hdr.mark = gc_color_red;
  c_73979.hdr.grayed = 0;
@@ -8939,8 +8587,7 @@ return_closcall1(data,(closure)&c_73979,  &c_731188);;
 }
 
 static void __lambda_32(void *data, int argc, object self_73798, object r_73420) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73981;
 c_73981.hdr.mark = gc_color_red;
  c_73981.hdr.grayed = 0;
@@ -8963,8 +8610,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73981, ((closureN)self_73798)->
 }
 
 static void __lambda_31(void *data, int argc, object self_73799, object r_73418) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73983;
 c_73983.hdr.mark = gc_color_red;
  c_73983.hdr.grayed = 0;
@@ -8996,8 +8642,7 @@ return_closcall1(data,(closure)&c_73983,  &c_731182);;
 }
 
 static void __lambda_30(void *data, int argc, object self_73800, object r_73419) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73985;
 c_73985.hdr.mark = gc_color_red;
  c_73985.hdr.grayed = 0;
@@ -9019,8 +8664,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73985, ((closureN)self_73800)->
 }
 
 static void __lambda_29(void *data, int argc, object self_73801, object r_73412) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73987;
 c_73987.hdr.mark = gc_color_red;
  c_73987.hdr.grayed = 0;
@@ -9043,8 +8687,7 @@ return_closcall1(data,(closure)&c_73987,  nil);;
 }
 
 static void __lambda_28(void *data, int argc, object self_73802, object r_73415) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73989;
 c_73989.hdr.mark = gc_color_red;
  c_73989.hdr.grayed = 0;
@@ -9070,8 +8713,7 @@ return_closcall1(data,(closure)&c_73989,  &c_731179);;
 }
 
 static void __lambda_27(void *data, int argc, object self_73803, object r_73416) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73991;
 c_73991.hdr.mark = gc_color_red;
  c_73991.hdr.grayed = 0;
@@ -9094,8 +8736,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73991, ((closureN)self_73803)->
 }
 
 static void __lambda_26(void *data, int argc, object self_73804, object r_73413) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73993;
 c_73993.hdr.mark = gc_color_red;
  c_73993.hdr.grayed = 0;
@@ -9131,8 +8772,7 @@ return_closcall1(data,(closure)&c_73993,  &c_731171);;
 }
 
 static void __lambda_25(void *data, int argc, object self_73805, object r_73414) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73995;
 c_73995.hdr.mark = gc_color_red;
  c_73995.hdr.grayed = 0;
@@ -9154,8 +8794,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73995, ((closureN)self_73805)->
 }
 
 static void __lambda_24(void *data, int argc, object self_73806, object r_73410) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73997;
 c_73997.hdr.mark = gc_color_red;
  c_73997.hdr.grayed = 0;
@@ -9192,8 +8831,7 @@ return_closcall1(data,(closure)&c_73997,  &c_731162);;
 }
 
 static void __lambda_23(void *data, int argc, object self_73807, object r_73411) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_73999;
 c_73999.hdr.mark = gc_color_red;
  c_73999.hdr.grayed = 0;
@@ -9214,8 +8852,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_73999, ((closureN)self_73807)->
 }
 
 static void __lambda_22(void *data, int argc, object self_73808, object r_73391) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731001;
 c_731001.hdr.mark = gc_color_red;
  c_731001.hdr.grayed = 0;
@@ -9237,8 +8874,7 @@ return_closcall1(data,(closure)&c_731001,  quote__75case);;
 }
 
 static void __lambda_21(void *data, int argc, object self_73809, object r_73408) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731004;
 c_731004.hdr.mark = gc_color_red;
  c_731004.hdr.grayed = 0;
@@ -9259,8 +8895,7 @@ return_closcall2(data,  ((closureN)self_73809)->elts[6],  &c_731004, r_73408);;
 }
 
 static void __lambda_20(void *data, int argc, object self_73810, object r_73397) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731006;
 c_731006.hdr.mark = gc_color_red;
  c_731006.hdr.grayed = 0;
@@ -9282,8 +8917,7 @@ return_closcall1(data,(closure)&c_731006,  nil);;
 }
 
 static void __lambda_19(void *data, int argc, object self_73811, object r_73406) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731008;
 c_731008.hdr.mark = gc_color_red;
  c_731008.hdr.grayed = 0;
@@ -9308,8 +8942,7 @@ return_closcall1(data,(closure)&c_731008,  &c_731159);;
 }
 
 static void __lambda_18(void *data, int argc, object self_73812, object r_73407) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731010;
 c_731010.hdr.mark = gc_color_red;
  c_731010.hdr.grayed = 0;
@@ -9330,8 +8963,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731010, ((closureN)self_73812)-
 }
 
 static void __lambda_17(void *data, int argc, object self_73813, object r_73404) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731012;
 c_731012.hdr.mark = gc_color_red;
  c_731012.hdr.grayed = 0;
@@ -9359,8 +8991,7 @@ return_closcall1(data,(closure)&c_731012,  &c_731154);;
 }
 
 static void __lambda_16(void *data, int argc, object self_73814, object r_73405) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731014;
 c_731014.hdr.mark = gc_color_red;
  c_731014.hdr.grayed = 0;
@@ -9383,8 +9014,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731014, &c_731152, ((closureN)s
 }
 
 static void __lambda_15(void *data, int argc, object self_73815, object r_73402) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731016;
 c_731016.hdr.mark = gc_color_red;
  c_731016.hdr.grayed = 0;
@@ -9414,8 +9044,7 @@ return_closcall1(data,(closure)&c_731016,  &c_731148);;
 }
 
 static void __lambda_14(void *data, int argc, object self_73816, object r_73403) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731018;
 c_731018.hdr.mark = gc_color_red;
  c_731018.hdr.grayed = 0;
@@ -9435,8 +9064,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731018, ((closureN)self_73816)-
 }
 
 static void __lambda_13(void *data, int argc, object self_73817, object r_73400) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731020;
 c_731020.hdr.mark = gc_color_red;
  c_731020.hdr.grayed = 0;
@@ -9467,8 +9095,7 @@ return_closcall1(data,(closure)&c_731020,  &c_731141);;
 }
 
 static void __lambda_12(void *data, int argc, object self_73818, object r_73401) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731022;
 c_731022.hdr.mark = gc_color_red;
  c_731022.hdr.grayed = 0;
@@ -9487,8 +9114,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731022, ((closureN)self_73818)-
 }
 
 static void __lambda_11(void *data, int argc, object self_73819, object r_73398) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731024;
 c_731024.hdr.mark = gc_color_red;
  c_731024.hdr.grayed = 0;
@@ -9520,8 +9146,7 @@ return_closcall1(data,(closure)&c_731024,  &c_731133);;
 }
 
 static void __lambda_10(void *data, int argc, object self_73820, object r_73399) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731026;
 c_731026.hdr.mark = gc_color_red;
  c_731026.hdr.grayed = 0;
@@ -9539,8 +9164,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731026, ((closureN)self_73820)-
 }
 
 static void __lambda_9(void *data, int argc, object self_73821, object r_73394) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731028;
 c_731028.hdr.mark = gc_color_red;
  c_731028.hdr.grayed = 0;
@@ -9559,8 +9183,7 @@ return_closcall1(data,(closure)&c_731028,  nil);;
 }
 
 static void __lambda_8(void *data, int argc, object self_73822, object r_73395) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731030;
 c_731030.hdr.mark = gc_color_red;
  c_731030.hdr.grayed = 0;
@@ -9594,8 +9217,7 @@ return_closcall1(data,(closure)&c_731030,  &c_731124);;
 }
 
 static void __lambda_7(void *data, int argc, object self_73823, object r_73396) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731032;
 c_731032.hdr.mark = gc_color_red;
  c_731032.hdr.grayed = 0;
@@ -9613,8 +9235,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731032, ((closureN)self_73823)-
 }
 
 static void __lambda_6(void *data, int argc, object self_73824, object r_73392) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731034;
 c_731034.hdr.mark = gc_color_red;
  c_731034.hdr.grayed = 0;
@@ -9663,8 +9284,7 @@ return_closcall1(data,(closure)&c_731034,  &c_731107);;
 }
 
 static void __lambda_5(void *data, int argc, object self_73825, object r_73393) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731036;
 c_731036.hdr.mark = gc_color_red;
  c_731036.hdr.grayed = 0;
@@ -9681,8 +9301,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731036, ((closureN)self_73825)-
 }
 
 static void __lambda_4(void *data, int argc, object self_73826, object r_73389) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731038;
 c_731038.hdr.mark = gc_color_red;
  c_731038.hdr.grayed = 0;
@@ -9750,8 +9369,7 @@ return_closcall1(data,(closure)&c_731038,  &c_731080);;
 }
 
 static void __lambda_3(void *data, int argc, object self_73827, object r_73390) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731040;
 c_731040.hdr.mark = gc_color_red;
  c_731040.hdr.grayed = 0;
@@ -9767,8 +9385,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731040, ((closureN)self_73827)-
 }
 
 static void __lambda_2(void *data, int argc, object self_73828, object r_73386) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731042;
 c_731042.hdr.mark = gc_color_red;
  c_731042.hdr.grayed = 0;
@@ -9837,8 +9454,7 @@ return_closcall1(data,(closure)&c_731042,  &c_731052);;
 }
 
 static void __lambda_1(void *data, int argc, object self_73829, object r_73387) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 closureN_type c_731044;
 c_731044.hdr.mark = gc_color_red;
  c_731044.hdr.grayed = 0;
@@ -9853,8 +9469,7 @@ return_closcall4(data,  __glo_cons_91source,  &c_731044, ((closureN)self_73829)-
 }
 
 static void __lambda_0(void *data, int argc, object self_73830, object r_73384) {
-  Cyc_st_add(data, "scheme/case-lambda.sld:%case");
-
+  
 make_cons(c_731049,r_73384, boolean_f);
 return_closcall1(data,  ((closureN)self_73830)->elts[0],  &c_731049);; 
 }

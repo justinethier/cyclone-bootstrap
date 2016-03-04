@@ -259,8 +259,7 @@ return_closcall2(data,  __glo_char_91numeric_127,  &c_73173, c_736);;
 }
 
 static void __lambda_19(void *data, int argc, object self_7360, object r_7326) {
-  Cyc_st_add(data, "scheme/char.sld:digit-value");
-if( !eq(boolean_f, r_7326) ){ 
+  if( !eq(boolean_f, r_7326) ){ 
   
 closureN_type c_73175;
 c_73175.hdr.mark = gc_color_red;
@@ -281,8 +280,7 @@ return_closcall1(data,(closure)&c_73175,  &c_73184);
 }
 
 static void __lambda_18(void *data, int argc, object self_7361, object r_7327) {
-  Cyc_st_add(data, "scheme/char.sld:digit-value");
-
+  
 make_int(c_73181, 48);
 
 common_type c_73180 = Cyc_sub(data,2,r_7327, &c_73181);
@@ -315,8 +313,7 @@ return_closcall1(data,(closure)&c_73161,  &c_73167);;
 }
 
 static void __lambda_16(void *data, int argc, object self_7362, object r_7331) {
-  Cyc_st_add(data, "scheme/char.sld:char-whitespace?");
-return_closcall1(data,  ((closureN)self_7362)->elts[1],  memberp(data, ((closureN)self_7362)->elts[0], r_7331));; 
+  return_closcall1(data,  ((closureN)self_7362)->elts[1],  memberp(data, ((closureN)self_7362)->elts[0], r_7331));; 
 }
 
 static void __lambda_15(void *data, int argc, closure _,object k_7334, object c_738) {
@@ -357,8 +354,7 @@ return_closcall1(data,(closure)&c_73143,  &c_73149);;
 }
 
 static void __lambda_14(void *data, int argc, object self_7363, object r_7335) {
-  Cyc_st_add(data, "scheme/char.sld:char-numeric?");
-return_closcall1(data,  ((closureN)self_7363)->elts[1],  memberp(data, ((closureN)self_7363)->elts[0], r_7335));; 
+  return_closcall1(data,  ((closureN)self_7363)->elts[1],  memberp(data, ((closureN)self_7363)->elts[0], r_7335));; 
 }
 
 static void __lambda_13(void *data, int argc, closure _,object k_7338, object c_739) {
@@ -379,8 +375,7 @@ return_closcall3(data,  __glo_char_125_123_127,  &c_73135, c_739, obj_char2obj(9
 }
 
 static void __lambda_12(void *data, int argc, object self_7364, object r_7339) {
-  Cyc_st_add(data, "scheme/char.sld:char-lower-case?");
-if( !eq(boolean_f, r_7339) ){ 
+  if( !eq(boolean_f, r_7339) ){ 
   return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_7364)->elts[1], ((closureN)self_7364)->elts[0], obj_char2obj(122));
 } else { 
   return_closcall1(data,  ((closureN)self_7364)->elts[1],  boolean_f);}
@@ -405,8 +400,7 @@ return_closcall3(data,  __glo_char_125_123_127,  &c_73127, c_7310, obj_char2obj(
 }
 
 static void __lambda_10(void *data, int argc, object self_7365, object r_7343) {
-  Cyc_st_add(data, "scheme/char.sld:char-upper-case?");
-if( !eq(boolean_f, r_7343) ){ 
+  if( !eq(boolean_f, r_7343) ){ 
   return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_7365)->elts[1], ((closureN)self_7365)->elts[0], obj_char2obj(90));
 } else { 
   return_closcall1(data,  ((closureN)self_7365)->elts[1],  boolean_f);}
@@ -431,8 +425,7 @@ return_closcall3(data,  __glo_char_125_123_127,  &c_73119, c_7311, obj_char2obj(
 }
 
 static void __lambda_8(void *data, int argc, object self_7366, object r_7347) {
-  Cyc_st_add(data, "scheme/char.sld:char-alphabetic?");
-if( !eq(boolean_f, r_7347) ){ 
+  if( !eq(boolean_f, r_7347) ){ 
   return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_7366)->elts[1], ((closureN)self_7366)->elts[0], obj_char2obj(122));
 } else { 
   return_closcall1(data,  ((closureN)self_7366)->elts[1],  boolean_f);}
@@ -457,8 +450,7 @@ return_closcall2(data,  __glo_char_91upper_91case_127,  &c_7397, c_7312);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7367, object r_7351) {
-  Cyc_st_add(data, "scheme/char.sld:char-downcase");
-if( !eq(boolean_f, r_7351) ){ 
+  if( !eq(boolean_f, r_7351) ){ 
   
 closureN_type c_7399;
 c_7399.hdr.mark = gc_color_red;
@@ -479,8 +471,7 @@ return_closcall1(data,(closure)&c_7399,  &c_73112);
 }
 
 static void __lambda_5(void *data, int argc, object self_7368, object r_7353) {
-  Cyc_st_add(data, "scheme/char.sld:char-downcase");
-
+  
 closureN_type c_73101;
 c_73101.hdr.mark = gc_color_red;
  c_73101.hdr.grayed = 0;
@@ -499,8 +490,7 @@ return_closcall1(data,(closure)&c_73101,  &c_73108);;
 }
 
 static void __lambda_4(void *data, int argc, object self_7369, object r_7352) {
-  Cyc_st_add(data, "scheme/char.sld:char-downcase");
-return_closcall1(data,  ((closureN)self_7369)->elts[0],  Cyc_integer2char(data, r_7352));; 
+  return_closcall1(data,  ((closureN)self_7369)->elts[0],  Cyc_integer2char(data, r_7352));; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_7356, object c_7313) {
@@ -521,8 +511,7 @@ return_closcall2(data,  __glo_char_91lower_91case_127,  &c_7375, c_7313);;
 }
 
 static void __lambda_2(void *data, int argc, object self_7370, object r_7357) {
-  Cyc_st_add(data, "scheme/char.sld:char-upcase");
-if( !eq(boolean_f, r_7357) ){ 
+  if( !eq(boolean_f, r_7357) ){ 
   
 closureN_type c_7377;
 c_7377.hdr.mark = gc_color_red;
@@ -543,8 +532,7 @@ return_closcall1(data,(closure)&c_7377,  &c_7390);
 }
 
 static void __lambda_1(void *data, int argc, object self_7371, object r_7359) {
-  Cyc_st_add(data, "scheme/char.sld:char-upcase");
-
+  
 closureN_type c_7379;
 c_7379.hdr.mark = gc_color_red;
  c_7379.hdr.grayed = 0;
@@ -563,8 +551,7 @@ return_closcall1(data,(closure)&c_7379,  &c_7386);;
 }
 
 static void __lambda_0(void *data, int argc, object self_7372, object r_7358) {
-  Cyc_st_add(data, "scheme/char.sld:char-upcase");
-return_closcall1(data,  ((closureN)self_7372)->elts[0],  Cyc_integer2char(data, r_7358));; 
+  return_closcall1(data,  ((closureN)self_7372)->elts[0],  Cyc_integer2char(data, r_7358));; 
 }
 
 void c_scheme_char_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
