@@ -21,7 +21,7 @@
 #include "cyclone/types.h"
 #include <stdint.h>
 #include <time.h>
-#define DEBUG_THREADS // Debugging!!!
+//#define DEBUG_THREADS // Debugging!!!
 #ifdef DEBUG_THREADS
 #include <sys/syscall.h> /* Linux-only? */
 #endif
@@ -548,7 +548,7 @@ size_t gc_sweep(gc_heap *h, size_t *sum_freed_ptr)
   pthread_mutex_lock(&heap_lock);
   for (; h; h = h->next) { // All heaps
 #if GC_DEBUG_TRACE
-    fprintf(stderr, "sweep heap %p, size = %zu\n", h, h->size);
+    fprintf(stderr, "sweep heap %p, size = %zu\n", h, (size_t)h->size);
 #endif
     p = gc_heap_first_block(h);
     q = h->free_list;
@@ -1209,9 +1209,6 @@ fprintf(stderr, "DEBUG - after wait_handshake async\n");
   total_size = cached_heap_total_size; //gc_heap_total_size(gc_get_heap());
   total_free = cached_heap_free_size; //gc_heap_total_free_size(gc_get_heap());
 
-//TODO: want to minimize number of major GC's
-//maybe do something crazy like, keep looping until half
-//of the heap is free
 //TODO: want stats on how much of each heap page is used
   while (total_free < (total_size * GC_FREE_THRESHOLD)) {
 #if GC_DEBUG_TRACE
@@ -1223,7 +1220,7 @@ fprintf(stderr, "DEBUG - after wait_handshake async\n");
     total_free = cached_heap_free_size;
   }
 #if GC_DEBUG_TRACE
-  fprintf(stderr, "sweep done, total_size = %zu, total_free = %d, freed = %d, max_freed = %d, elapsed = %ld\n", 
+  fprintf(stderr, "sweep done, total_size = %zu, total_free = %zu, freed = %zu, max_freed = %zu, elapsed = %zu\n", 
     total_size, total_free, 
     freed, max_freed, time(NULL) - gc_collector_start);
 #endif
@@ -1244,7 +1241,7 @@ void *collector_main(void *arg)
   pthread_t tid = pthread_self();
   int sid = syscall(SYS_gettid);
   printf("GC thread LWP id is %d\n", sid);
-  printf("GC thread POSIX thread id is %d\n", tid);
+  //printf("GC thread POSIX thread id is %d\n", tid);
 #endif
   tim.tv_sec = 0;
 //JAE TODO: this is still not good enough, seems memory grows still grows fast with this.
