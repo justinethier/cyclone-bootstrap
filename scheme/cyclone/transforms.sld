@@ -1459,24 +1459,21 @@
             (else
               (cps ast '%halt)))))
     ast-cps))
-;; TODO: use for temporary testing of optimizations
-;    (cps-optimize-01 ast-cps)))
 
 ;; CPS optimizations
 
-;; TODO: dummy form, does nothing at the moment
 ;; TODO: don't think we can assume lambda body is single expr, if we want
 ;;       to do optimizations such as inlining
 (define (cps-optimize-01 exp)
   (define (opt-lambda exp)
     (let ((body (car (lambda->exp exp)))) ;; Single expr after CPS
-      (trace:error `(DEBUG 
-        ,exp
-        ,body
-        ,(if (and (pair? body) (app? body) (lambda? (car body)))
-          (list (app->args body)
-                (lambda->formals exp))
-          #f)))
+      ;(trace:error `(DEBUG 
+      ;  ,exp
+      ;  ,body
+      ;  ,(if (and (pair? body) (app? body) (lambda? (car body)))
+      ;    (list (app->args body)
+      ;          (lambda->formals exp))
+      ;    #f)))
       (cond
         ;; Does the function just call its continuation?
         ((and (pair? body) 

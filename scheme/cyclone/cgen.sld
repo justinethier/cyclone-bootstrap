@@ -1284,7 +1284,6 @@
     ;; Get top-level string
     (set! compiled-program
       (foldr string-append "" (reverse compiled-program-lst)))
-      ;(apply string-append (reverse compiled-program-lst)))
 
     (emit-c-arity-macros 0)
     (emit "#include \"cyclone/types.h\"")
