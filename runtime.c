@@ -1059,6 +1059,57 @@ object Cyc_list2string(void *data, object cont, object lst){
 }
 
 // TODO: need new versions of string->number that handle int value types
+object Cyc_string2number2_(void *data, object cont, int argc, object str, ...) 
+{
+  object base = nil;
+  va_list ap;
+  va_start(ap, str);
+  make_int(result, 0);
+  if (argc > 1) {
+    base = va_arg(ap, object);
+    Cyc_check_int(data, base);
+  }
+  va_end(ap);
+  if (base) {
+    Cyc_check_str(data, str);
+    if (integer_value(base) == 2) {
+      integer_value(&result) = binstr2int(string_str(str));
+      return_closcall1(data, cont, &result);
+    }else if (integer_value(base) == 8) {
+      integer_value(&result) = octstr2int(string_str(str));
+      return_closcall1(data, cont, &result);
+    }else if (integer_value(base) == 16) {
+      integer_value(&result) = hexstr2int(string_str(str));
+      return_closcall1(data, cont, &result);
+    }
+  }
+  Cyc_string2number_(data, cont, str);
+}
+
+object Cyc_string2number_(void *data, object cont, object str){
+    double n;
+    Cyc_check_obj(data, string_tag, str);
+    Cyc_check_str(data, str);
+    if (type_of(str) == string_tag &&
+        ((string_type *) str)->str){
+        n = atof(((string_type *) str)->str);
+
+        if (ceilf(n) == n) {
+            make_int(result, (int)n);
+            return_closcall1(data, cont, &result);
+        }
+        else {
+            make_double(result, n);
+            return_closcall1(data, cont, &result);
+        }
+    } else {
+        // TODO: not good enough because we do pointer comparisons to #f
+        //result.boolean_t = boolean_f;
+    }
+
+    Cyc_rt_raise2(data, "Expected string but received", str);
+}
+
 common_type Cyc_string2number2(void *data, int argc, object str, ...) 
 {
   object base = nil;
@@ -1989,6 +2040,13 @@ void _string_91_125number(void *data, object cont, object args) {
       } else {
         common_type i = Cyc_string2number(data, car(args));
         return_closcall1(data, cont, &i);}}}
+void _string_91_125number2(void *data, object cont, object args) {  
+    Cyc_check_num_args(data, "string->number2", 1, args);
+    { object tail = cdr(args);
+      if (tail) {
+        Cyc_string2number2_(data, cont, 2, car(args), cadr(args));
+      } else {
+        Cyc_string2number_(data, cont, car(args)); }}}
 void _string_91length(void *data, object cont, object args) {
     Cyc_check_num_args(data, "string-length", 1, args);
     { integer_type i = Cyc_string_length(data, car(args));
@@ -2660,6 +2718,7 @@ static primitive_type cddddr_primitive = {{0}, primitive_tag, "cddddr", &_cddddr
 static primitive_type char_91_125integer_primitive = {{0}, primitive_tag, "char->integer", &_char_91_125integer};
 static primitive_type integer_91_125char_primitive = {{0}, primitive_tag, "integer->char", &_integer_91_125char};
 static primitive_type string_91_125number_primitive = {{0}, primitive_tag, "string->number", &_string_91_125number};
+static primitive_type string_91_125number_primitive2 = {{0}, primitive_tag, "string->number2", &_string_91_125number2};
 static primitive_type string_91length_primitive = {{0}, primitive_tag, "string-length", &_string_91length};
 static primitive_type substring_primitive = {{0}, primitive_tag, "substring", &_cyc_substring};
 static primitive_type string_91ref_primitive = {{0}, primitive_tag, "string-ref", &_cyc_string_91ref};
@@ -2781,6 +2840,7 @@ const object primitive_cddddr = &cddddr_primitive;
 const object primitive_char_91_125integer = &char_91_125integer_primitive;
 const object primitive_integer_91_125char = &integer_91_125char_primitive;
 const object primitive_string_91_125number = &string_91_125number_primitive;
+const object primitive_string_91_125number2 = &string_91_125number_primitive2;
 const object primitive_string_91length = &string_91length_primitive;
 const object primitive_substring = &substring_primitive;
 const object primitive_string_91ref = &string_91ref_primitive;

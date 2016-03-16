@@ -2499,8 +2499,8 @@ return_closcall1(data,(closure)&c_733233,  c_733241);;
 
 static void __lambda_422(void *data, int argc, object self_73787, object r_73324) {
   
-common_type c_733238 = Cyc_string2number2(data,1,r_73324);
-return_closcall1(data,  ((closureN)self_73787)->elts[0],  &c_733238);; 
+object c_733238 = Cyc_string2number2_(data,  ((closureN)self_73787)->elts[0],1,r_73324);
+return_closcall1(data,  ((closureN)self_73787)->elts[0],  c_733238);; 
 }
 
 static void __lambda_421(void *data, int argc, closure _,object k_73328, object a_73136) {
@@ -6178,8 +6178,8 @@ static void __lambda_254(void *data, int argc, object self_73949, object r_73586
   
 make_int(c_732464, 16);
 
-common_type c_732463 = Cyc_string2number2(data,2,r_73586, &c_732464);
-return_closcall1(data,  ((closureN)self_73949)->elts[0],  &c_732463);; 
+object c_732463 = Cyc_string2number2_(data,  ((closureN)self_73949)->elts[0],2,r_73586, &c_732464);
+return_closcall1(data,  ((closureN)self_73949)->elts[0],  c_732463);; 
 }
 
 static void __lambda_253(void *data, int argc, object self_73950, object r_73584) {
@@ -6231,8 +6231,8 @@ static void __lambda_250(void *data, int argc, object self_73953, object r_73582
   
 make_int(c_732438, 8);
 
-common_type c_732437 = Cyc_string2number2(data,2,r_73582, &c_732438);
-return_closcall1(data,  ((closureN)self_73953)->elts[0],  &c_732437);; 
+object c_732437 = Cyc_string2number2_(data,  ((closureN)self_73953)->elts[0],2,r_73582, &c_732438);
+return_closcall1(data,  ((closureN)self_73953)->elts[0],  c_732437);; 
 }
 
 static void __lambda_249(void *data, int argc, object self_73954, object r_73580) {
@@ -6284,8 +6284,8 @@ static void __lambda_246(void *data, int argc, object self_73957, object r_73578
   
 make_int(c_732412, 2);
 
-common_type c_732411 = Cyc_string2number2(data,2,r_73578, &c_732412);
-return_closcall1(data,  ((closureN)self_73957)->elts[0],  &c_732411);; 
+object c_732411 = Cyc_string2number2_(data,  ((closureN)self_73957)->elts[0],2,r_73578, &c_732412);
+return_closcall1(data,  ((closureN)self_73957)->elts[0],  c_732411);; 
 }
 
 static void __lambda_245(void *data, int argc, object self_73958, object r_73576) {
