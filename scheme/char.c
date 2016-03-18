@@ -283,8 +283,8 @@ static void __lambda_18(void *data, int argc, object self_7361, object r_7327) {
   
 make_int(c_73181, 48);
 
-common_type c_73180 = Cyc_sub(data,2,r_7327, &c_73181);
-return_closcall1(data,  ((closureN)self_7361)->elts[0],  &c_73180);; 
+object c_73180 = Cyc_sub2(data,  ((closureN)self_7361)->elts[0],2,r_7327, &c_73181);
+return_closcall1(data,  ((closureN)self_7361)->elts[0],  c_73180);; 
 }
 
 static void __lambda_17(void *data, int argc, closure _,object k_7330, object c_737) {
@@ -485,8 +485,8 @@ c_73101.elts[0] = ((closureN)self_7368)->elts[0];
 
 make_int(c_73109, 32);
 
-common_type c_73108 = Cyc_sum(data,2,r_7353, &c_73109);
-return_closcall1(data,(closure)&c_73101,  &c_73108);; 
+object c_73108 = Cyc_sum2(data,(closure)&c_73101,2,r_7353, &c_73109);
+return_closcall1(data,(closure)&c_73101,  c_73108);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7369, object r_7352) {
@@ -546,8 +546,8 @@ c_7379.elts[0] = ((closureN)self_7371)->elts[0];
 
 make_int(c_7387, 32);
 
-common_type c_7386 = Cyc_sub(data,2,r_7359, &c_7387);
-return_closcall1(data,(closure)&c_7379,  &c_7386);; 
+object c_7386 = Cyc_sub2(data,(closure)&c_7379,2,r_7359, &c_7387);
+return_closcall1(data,(closure)&c_7379,  c_7386);; 
 }
 
 static void __lambda_0(void *data, int argc, object self_7372, object r_7358) {

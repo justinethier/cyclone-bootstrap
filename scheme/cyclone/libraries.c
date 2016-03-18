@@ -927,8 +927,8 @@ c_731269.elts[1] = ((closureN)self_73326)->elts[2];
 
 make_int(c_731279, 1);
 
-common_type c_731277 = Cyc_sum(data,2,((closureN)self_73326)->elts[0], &c_731279);
-return_closcall1(data,(closure)&c_731269,  &c_731277);; 
+object c_731277 = Cyc_sum2(data,(closure)&c_731269,2,((closureN)self_73326)->elts[0], &c_731279);
+return_closcall1(data,(closure)&c_731269,  c_731277);; 
 }
 
 static void __lambda_171(void *data, int argc, object self_73327, object r_73128) {
@@ -1288,8 +1288,8 @@ static void __lambda_149(void *data, int argc, object self_73349, object r_73122
   
 make_int(c_731134, 1);
 
-common_type c_731133 = Cyc_sum(data,2,&c_731134, cell_get(((closureN)self_73349)->elts[0]));
-return_closcall1(data,  ((closureN)self_73349)->elts[1],  &c_731133);}
+object c_731133 = Cyc_sum2(data,  ((closureN)self_73349)->elts[1],2,&c_731134, cell_get(((closureN)self_73349)->elts[0]));
+return_closcall1(data,  ((closureN)self_73349)->elts[1],  c_731133);}
 ; 
 }
 
