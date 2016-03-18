@@ -5272,7 +5272,7 @@ c_739054.elts[2] = ((closureN)self_732274)->elts[2];
 
 make_int(c_739079, 1);
 
-object c_739077 = Cyc_sum2(data,(closure)&c_739054,2,((closureN)self_732274)->elts[0], &c_739079);
+object c_739077 = Cyc_sum(data,(closure)&c_739054,2,((closureN)self_732274)->elts[0], &c_739079);
 return_closcall1(data,(closure)&c_739054,  c_739077);; 
 }
 
@@ -5745,7 +5745,7 @@ c_738935.elts[2] = r_73802;
 
 make_int(c_738946, 1);
 
-object c_738944 = Cyc_sum2(data,(closure)&c_738935,2,((closureN)self_732301)->elts[0], &c_738946);
+object c_738944 = Cyc_sum(data,(closure)&c_738935,2,((closureN)self_732301)->elts[0], &c_738946);
 return_closcall1(data,(closure)&c_738935,  c_738944);; 
 }
 
@@ -25978,7 +25978,7 @@ static void __lambda_161(void *data, int argc, object self_733387) {
   
 make_int(c_734265, 1);
 
-object c_734263 = Cyc_sub2(data,  ((closureN)self_733387)->elts[0],2,((closureN)self_733387)->elts[1], &c_734265);
+object c_734263 = Cyc_sub(data,  ((closureN)self_733387)->elts[0],2,((closureN)self_733387)->elts[1], &c_734265);
 return_closcall1(data,  ((closureN)self_733387)->elts[0],  c_734263);; 
 }
 
@@ -28081,7 +28081,7 @@ static void __lambda_23(void *data, int argc, object self_733496, object r_73207
   
 make_int(c_733634, 1);
 
-object c_733633 = Cyc_sum2(data,  ((closureN)self_733496)->elts[0],2,&c_733634, r_732073);
+object c_733633 = Cyc_sum(data,  ((closureN)self_733496)->elts[0],2,&c_733634, r_732073);
 return_closcall1(data,  ((closureN)self_733496)->elts[0],  c_733633);; 
 }
 
@@ -28192,7 +28192,7 @@ c_733583.elts[1] = ((closureN)self_733501)->elts[1];
 
 make_int(c_733595, 1);
 
-object c_733593 = Cyc_sub2(data,(closure)&c_733583,3,r_732084, ((closureN)self_733501)->elts[2], &c_733595);
+object c_733593 = Cyc_sub(data,(closure)&c_733583,3,r_732084, ((closureN)self_733501)->elts[2], &c_733595);
 return_closcall1(data,(closure)&c_733583,  c_733593);; 
 }
 

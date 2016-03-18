@@ -283,7 +283,7 @@ static void __lambda_18(void *data, int argc, object self_7361, object r_7327) {
   
 make_int(c_73181, 48);
 
-object c_73180 = Cyc_sub2(data,  ((closureN)self_7361)->elts[0],2,r_7327, &c_73181);
+object c_73180 = Cyc_sub(data,  ((closureN)self_7361)->elts[0],2,r_7327, &c_73181);
 return_closcall1(data,  ((closureN)self_7361)->elts[0],  c_73180);; 
 }
 
@@ -485,7 +485,7 @@ c_73101.elts[0] = ((closureN)self_7368)->elts[0];
 
 make_int(c_73109, 32);
 
-object c_73108 = Cyc_sum2(data,(closure)&c_73101,2,r_7353, &c_73109);
+object c_73108 = Cyc_sum(data,(closure)&c_73101,2,r_7353, &c_73109);
 return_closcall1(data,(closure)&c_73101,  c_73108);; 
 }
 
@@ -546,7 +546,7 @@ c_7379.elts[0] = ((closureN)self_7371)->elts[0];
 
 make_int(c_7387, 32);
 
-object c_7386 = Cyc_sub2(data,(closure)&c_7379,2,r_7359, &c_7387);
+object c_7386 = Cyc_sub(data,(closure)&c_7379,2,r_7359, &c_7387);
 return_closcall1(data,(closure)&c_7379,  c_7386);; 
 }
 

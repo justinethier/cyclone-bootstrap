@@ -155,7 +155,7 @@ return_closcall2(data,  __glo_c_91log,  &c_7334, ((closureN)self_7316)->elts[1])
 
 static void __lambda_5(void *data, int argc, object self_7317, object r_7313) {
   
-object c_7339 = Cyc_div2(data,  ((closureN)self_7317)->elts[0],2,((closureN)self_7317)->elts[1], r_7313);
+object c_7339 = Cyc_div(data,  ((closureN)self_7317)->elts[0],2,((closureN)self_7317)->elts[1], r_7313);
 return_closcall1(data,  ((closureN)self_7317)->elts[0],  c_7339);; 
 }
 
