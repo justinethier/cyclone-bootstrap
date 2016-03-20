@@ -181,9 +181,7 @@ static void __lambda_0(void *data, int argc, closure _, object k) ;
 
 static void __lambda_3(void *data, int argc, closure _,object k_733) {
   Cyc_st_add(data, "scheme/time.sld:lib-init:schemetime");
-
-make_int(c_739, 0);
-return_closcall1(data,  k_733,  &c_739);; 
+return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
 static void __lambda_2(void *data, int argc, closure _, object k) { make_int(box, CLOCKS_PER_SEC);
@@ -211,15 +209,15 @@ void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_734, (function_type)__lambda_0);c_734.num_args = 0; 
   __glo_current_91second = &c_734; 
 
-  make_cvar(cvar_7310, (object *)&__glo_lib_91init_117schemetime);make_cons(pair_7311, find_or_add_symbol("lib-init:schemetime"), &cvar_7310);
-  make_cvar(cvar_7312, (object *)&__glo_jiffies_91per_91second);make_cons(pair_7313, find_or_add_symbol("jiffies-per-second"), &cvar_7312);
-  make_cvar(cvar_7314, (object *)&__glo_current_91jiffy);make_cons(pair_7315, find_or_add_symbol("current-jiffy"), &cvar_7314);
-  make_cvar(cvar_7316, (object *)&__glo_current_91second);make_cons(pair_7317, find_or_add_symbol("current-second"), &cvar_7316);
-make_cons(c_7318, &pair_7311,Cyc_global_variables);
-make_cons(c_7319, &pair_7313, &c_7318);
-make_cons(c_7320, &pair_7315, &c_7319);
-make_cons(c_7321, &pair_7317, &c_7320);
-Cyc_global_variables = &c_7321;
+  make_cvar(cvar_739, (object *)&__glo_lib_91init_117schemetime);make_cons(pair_7310, find_or_add_symbol("lib-init:schemetime"), &cvar_739);
+  make_cvar(cvar_7311, (object *)&__glo_jiffies_91per_91second);make_cons(pair_7312, find_or_add_symbol("jiffies-per-second"), &cvar_7311);
+  make_cvar(cvar_7313, (object *)&__glo_current_91jiffy);make_cons(pair_7314, find_or_add_symbol("current-jiffy"), &cvar_7313);
+  make_cvar(cvar_7315, (object *)&__glo_current_91second);make_cons(pair_7316, find_or_add_symbol("current-second"), &cvar_7315);
+make_cons(c_7317, &pair_7310,Cyc_global_variables);
+make_cons(c_7318, &pair_7312, &c_7317);
+make_cons(c_7319, &pair_7314, &c_7318);
+make_cons(c_7320, &pair_7316, &c_7319);
+Cyc_global_variables = &c_7320;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemetime)->fn)(data, 1, cont, cont);
 }

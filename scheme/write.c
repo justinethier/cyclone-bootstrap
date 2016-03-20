@@ -185,9 +185,7 @@ static void __lambda_0(void *data, int argc, object self_7325, object r_7318) ;
 
 static void __lambda_8(void *data, int argc, closure _,object k_737) {
   Cyc_st_add(data, "scheme/write.sld:lib-init:schemewrite");
-
-make_int(c_7372, 0);
-return_closcall1(data,  k_737,  &c_7372);; 
+return_closcall1(data,  k_737,  obj_int2obj(0));; 
 }
 
 static void __lambda_7(void *data, int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) {
@@ -320,13 +318,13 @@ void c_schemewrite_entry_pt(data, argc, cont,value) void *data; int argc; closur
   mclosure0(c_7326, (function_type)__lambda_3);c_7326.num_args = 1; 
   __glo_display = &c_7326; 
 
-  make_cvar(cvar_7373, (object *)&__glo_lib_91init_117schemewrite);make_cons(pair_7374, find_or_add_symbol("lib-init:schemewrite"), &cvar_7373);
-  make_cvar(cvar_7375, (object *)&__glo_write);make_cons(pair_7376, find_or_add_symbol("write"), &cvar_7375);
-  make_cvar(cvar_7377, (object *)&__glo_display);make_cons(pair_7378, find_or_add_symbol("display"), &cvar_7377);
-make_cons(c_7379, &pair_7374,Cyc_global_variables);
-make_cons(c_7380, &pair_7376, &c_7379);
-make_cons(c_7381, &pair_7378, &c_7380);
-Cyc_global_variables = &c_7381;
+  make_cvar(cvar_7372, (object *)&__glo_lib_91init_117schemewrite);make_cons(pair_7373, find_or_add_symbol("lib-init:schemewrite"), &cvar_7372);
+  make_cvar(cvar_7374, (object *)&__glo_write);make_cons(pair_7375, find_or_add_symbol("write"), &cvar_7374);
+  make_cvar(cvar_7376, (object *)&__glo_display);make_cons(pair_7377, find_or_add_symbol("display"), &cvar_7376);
+make_cons(c_7378, &pair_7373,Cyc_global_variables);
+make_cons(c_7379, &pair_7375, &c_7378);
+make_cons(c_7380, &pair_7377, &c_7379);
+Cyc_global_variables = &c_7380;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemewrite)->fn)(data, 1, cont, cont);
 }

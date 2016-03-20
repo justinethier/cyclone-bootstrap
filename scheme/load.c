@@ -211,9 +211,7 @@ static void __lambda_0(void *data, int argc, object self_7323, object r_7313) ;
 
 static void __lambda_7(void *data, int argc, closure _,object k_738) {
   Cyc_st_add(data, "scheme/load.sld:lib-init:schemeload");
-
-make_int(c_7351, 0);
-return_closcall1(data,  k_738,  &c_7351);; 
+return_closcall1(data,  k_738,  obj_int2obj(0));; 
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_7311, object filename_732, object env_731_raw, ...) {
@@ -320,11 +318,11 @@ void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_7324, (function_type)__lambda_6);c_7324.num_args = 1; 
   __glo_load = &c_7324; 
 
-  make_cvar(cvar_7352, (object *)&__glo_lib_91init_117schemeload);make_cons(pair_7353, find_or_add_symbol("lib-init:schemeload"), &cvar_7352);
-  make_cvar(cvar_7354, (object *)&__glo_load);make_cons(pair_7355, find_or_add_symbol("load"), &cvar_7354);
-make_cons(c_7356, &pair_7353,Cyc_global_variables);
-make_cons(c_7357, &pair_7355, &c_7356);
-Cyc_global_variables = &c_7357;
+  make_cvar(cvar_7351, (object *)&__glo_lib_91init_117schemeload);make_cons(pair_7352, find_or_add_symbol("lib-init:schemeload"), &cvar_7351);
+  make_cvar(cvar_7353, (object *)&__glo_load);make_cons(pair_7354, find_or_add_symbol("load"), &cvar_7353);
+make_cons(c_7355, &pair_7352,Cyc_global_variables);
+make_cons(c_7356, &pair_7354, &c_7355);
+Cyc_global_variables = &c_7356;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemeload)->fn)(data, 1, cont, cont);
 }

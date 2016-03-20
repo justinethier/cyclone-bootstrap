@@ -73,9 +73,7 @@ static void __lambda_0(void *data, int argc, closure _, object k, object z) ;
 
 static void __lambda_14(void *data, int argc, closure _,object k_736) {
   Cyc_st_add(data, "scheme/inexact.sld:lib-init:schemeinexact");
-
-make_int(c_7354, 0);
-return_closcall1(data,  k_736,  &c_7354);; 
+return_closcall1(data,  k_736,  obj_int2obj(0));; 
 }
 
 static void __lambda_13(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, tan, z); }
@@ -200,29 +198,29 @@ void c_schemeinexact_entry_pt(data, argc, cont,value) void *data; int argc; clos
   mclosure0(c_7318, (function_type)__lambda_0);c_7318.num_args = 1; 
   __glo_acos = &c_7318; 
 
-  make_cvar(cvar_7355, (object *)&__glo_lib_91init_117schemeinexact);make_cons(pair_7356, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7355);
-  make_cvar(cvar_7357, (object *)&__glo_tan);make_cons(pair_7358, find_or_add_symbol("tan"), &cvar_7357);
-  make_cvar(cvar_7359, (object *)&__glo_sqrt);make_cons(pair_7360, find_or_add_symbol("sqrt"), &cvar_7359);
-  make_cvar(cvar_7361, (object *)&__glo_sin);make_cons(pair_7362, find_or_add_symbol("sin"), &cvar_7361);
-  make_cvar(cvar_7363, (object *)&__glo_c_91log);make_cons(pair_7364, find_or_add_symbol("c-log"), &cvar_7363);
-  make_cvar(cvar_7365, (object *)&__glo_log);make_cons(pair_7366, find_or_add_symbol("log"), &cvar_7365);
-  make_cvar(cvar_7367, (object *)&__glo_exp);make_cons(pair_7368, find_or_add_symbol("exp"), &cvar_7367);
-  make_cvar(cvar_7369, (object *)&__glo_cos);make_cons(pair_7370, find_or_add_symbol("cos"), &cvar_7369);
-  make_cvar(cvar_7371, (object *)&__glo_atan);make_cons(pair_7372, find_or_add_symbol("atan"), &cvar_7371);
-  make_cvar(cvar_7373, (object *)&__glo_asin);make_cons(pair_7374, find_or_add_symbol("asin"), &cvar_7373);
-  make_cvar(cvar_7375, (object *)&__glo_acos);make_cons(pair_7376, find_or_add_symbol("acos"), &cvar_7375);
-make_cons(c_7377, &pair_7356,Cyc_global_variables);
-make_cons(c_7378, &pair_7358, &c_7377);
-make_cons(c_7379, &pair_7360, &c_7378);
-make_cons(c_7380, &pair_7362, &c_7379);
-make_cons(c_7381, &pair_7364, &c_7380);
-make_cons(c_7382, &pair_7366, &c_7381);
-make_cons(c_7383, &pair_7368, &c_7382);
-make_cons(c_7384, &pair_7370, &c_7383);
-make_cons(c_7385, &pair_7372, &c_7384);
-make_cons(c_7386, &pair_7374, &c_7385);
-make_cons(c_7387, &pair_7376, &c_7386);
-Cyc_global_variables = &c_7387;
+  make_cvar(cvar_7354, (object *)&__glo_lib_91init_117schemeinexact);make_cons(pair_7355, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7354);
+  make_cvar(cvar_7356, (object *)&__glo_tan);make_cons(pair_7357, find_or_add_symbol("tan"), &cvar_7356);
+  make_cvar(cvar_7358, (object *)&__glo_sqrt);make_cons(pair_7359, find_or_add_symbol("sqrt"), &cvar_7358);
+  make_cvar(cvar_7360, (object *)&__glo_sin);make_cons(pair_7361, find_or_add_symbol("sin"), &cvar_7360);
+  make_cvar(cvar_7362, (object *)&__glo_c_91log);make_cons(pair_7363, find_or_add_symbol("c-log"), &cvar_7362);
+  make_cvar(cvar_7364, (object *)&__glo_log);make_cons(pair_7365, find_or_add_symbol("log"), &cvar_7364);
+  make_cvar(cvar_7366, (object *)&__glo_exp);make_cons(pair_7367, find_or_add_symbol("exp"), &cvar_7366);
+  make_cvar(cvar_7368, (object *)&__glo_cos);make_cons(pair_7369, find_or_add_symbol("cos"), &cvar_7368);
+  make_cvar(cvar_7370, (object *)&__glo_atan);make_cons(pair_7371, find_or_add_symbol("atan"), &cvar_7370);
+  make_cvar(cvar_7372, (object *)&__glo_asin);make_cons(pair_7373, find_or_add_symbol("asin"), &cvar_7372);
+  make_cvar(cvar_7374, (object *)&__glo_acos);make_cons(pair_7375, find_or_add_symbol("acos"), &cvar_7374);
+make_cons(c_7376, &pair_7355,Cyc_global_variables);
+make_cons(c_7377, &pair_7357, &c_7376);
+make_cons(c_7378, &pair_7359, &c_7377);
+make_cons(c_7379, &pair_7361, &c_7378);
+make_cons(c_7380, &pair_7363, &c_7379);
+make_cons(c_7381, &pair_7365, &c_7380);
+make_cons(c_7382, &pair_7367, &c_7381);
+make_cons(c_7383, &pair_7369, &c_7382);
+make_cons(c_7384, &pair_7371, &c_7383);
+make_cons(c_7385, &pair_7373, &c_7384);
+make_cons(c_7386, &pair_7375, &c_7385);
+Cyc_global_variables = &c_7386;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemeinexact)->fn)(data, 1, cont, cont);
 }

@@ -244,9 +244,7 @@ c_73234.num_elt = 1;
 c_73234.elts = (object *)alloca(sizeof(object) * 1);
 c_73234.elts[0] = k_7316;
 
-
-make_int(c_73239, 0);
-return_closcall1(data,(closure)&c_73234,  &c_73239);; 
+return_closcall1(data,(closure)&c_73234,  obj_int2obj(0));; 
 }
 
 static void __lambda_32(void *data, int argc, object self_7356, object r_7317) {
@@ -808,19 +806,19 @@ void c_schemelazy_entry_pt(data, argc, cont,value) void *data; int argc; closure
   __glo_force = &c_7385; 
   __glo_promise_127 = boolean_f; 
 
-  make_cvar(cvar_73240, (object *)&__glo_lib_91init_117schemelazy);make_cons(pair_73241, find_or_add_symbol("lib-init:schemelazy"), &cvar_73240);
-  make_cvar(cvar_73242, (object *)&__glo_promise_127);make_cons(pair_73243, find_or_add_symbol("promise?"), &cvar_73242);
-  make_cvar(cvar_73244, (object *)&__glo_make_91promise);make_cons(pair_73245, find_or_add_symbol("make-promise"), &cvar_73244);
-  make_cvar(cvar_73246, (object *)&__glo_delay_91force);make_cons(pair_73247, find_or_add_symbol("delay-force"), &cvar_73246);
-  make_cvar(cvar_73248, (object *)&__glo_delay);make_cons(pair_73249, find_or_add_symbol("delay"), &cvar_73248);
-  make_cvar(cvar_73250, (object *)&__glo_force);make_cons(pair_73251, find_or_add_symbol("force"), &cvar_73250);
-make_cons(c_73252, &pair_73241,Cyc_global_variables);
-make_cons(c_73253, &pair_73243, &c_73252);
-make_cons(c_73254, &pair_73245, &c_73253);
-make_cons(c_73255, &pair_73247, &c_73254);
-make_cons(c_73256, &pair_73249, &c_73255);
-make_cons(c_73257, &pair_73251, &c_73256);
-Cyc_global_variables = &c_73257;
+  make_cvar(cvar_73239, (object *)&__glo_lib_91init_117schemelazy);make_cons(pair_73240, find_or_add_symbol("lib-init:schemelazy"), &cvar_73239);
+  make_cvar(cvar_73241, (object *)&__glo_promise_127);make_cons(pair_73242, find_or_add_symbol("promise?"), &cvar_73241);
+  make_cvar(cvar_73243, (object *)&__glo_make_91promise);make_cons(pair_73244, find_or_add_symbol("make-promise"), &cvar_73243);
+  make_cvar(cvar_73245, (object *)&__glo_delay_91force);make_cons(pair_73246, find_or_add_symbol("delay-force"), &cvar_73245);
+  make_cvar(cvar_73247, (object *)&__glo_delay);make_cons(pair_73248, find_or_add_symbol("delay"), &cvar_73247);
+  make_cvar(cvar_73249, (object *)&__glo_force);make_cons(pair_73250, find_or_add_symbol("force"), &cvar_73249);
+make_cons(c_73251, &pair_73240,Cyc_global_variables);
+make_cons(c_73252, &pair_73242, &c_73251);
+make_cons(c_73253, &pair_73244, &c_73252);
+make_cons(c_73254, &pair_73246, &c_73253);
+make_cons(c_73255, &pair_73248, &c_73254);
+make_cons(c_73256, &pair_73250, &c_73255);
+Cyc_global_variables = &c_73256;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemelazy)->fn)(data, 1, cont, cont);
 }

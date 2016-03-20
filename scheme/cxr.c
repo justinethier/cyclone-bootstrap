@@ -55,9 +55,7 @@ static void __lambda_0(void *data, int argc, object self_7315, object r_738) ;
 
 static void __lambda_5(void *data, int argc, closure _,object k_734) {
   Cyc_st_add(data, "scheme/cxr.sld:lib-init:schemecxr");
-
-make_int(c_7339, 0);
-return_closcall1(data,  k_734,  &c_7339);; 
+return_closcall1(data,  k_734,  obj_int2obj(0));; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_737, object lis_731) {
@@ -134,11 +132,11 @@ void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure 
   mclosure0(c_7316, (function_type)__lambda_4);c_7316.num_args = 1; 
   __glo_caaaaar = &c_7316; 
 
-  make_cvar(cvar_7340, (object *)&__glo_lib_91init_117schemecxr);make_cons(pair_7341, find_or_add_symbol("lib-init:schemecxr"), &cvar_7340);
-  make_cvar(cvar_7342, (object *)&__glo_caaaaar);make_cons(pair_7343, find_or_add_symbol("caaaaar"), &cvar_7342);
-make_cons(c_7344, &pair_7341,Cyc_global_variables);
-make_cons(c_7345, &pair_7343, &c_7344);
-Cyc_global_variables = &c_7345;
+  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr);make_cons(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
+  make_cvar(cvar_7341, (object *)&__glo_caaaaar);make_cons(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
+make_cons(c_7343, &pair_7340,Cyc_global_variables);
+make_cons(c_7344, &pair_7342, &c_7343);
+Cyc_global_variables = &c_7344;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecxr)->fn)(data, 1, cont, cont);
 }

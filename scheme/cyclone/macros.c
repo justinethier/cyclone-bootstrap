@@ -345,9 +345,7 @@ c_73263.num_elt = 1;
 c_73263.elts = (object *)alloca(sizeof(object) * 1);
 c_73263.elts[0] = k_7323;
 
-
-make_int(c_73276, 0);
-return_closcall1(data,(closure)&c_73263,  &c_73276);; 
+return_closcall1(data,(closure)&c_73263,  obj_int2obj(0));; 
 }
 
 static void __lambda_41(void *data, int argc, object self_7380, object r_7324) {
@@ -999,27 +997,27 @@ void c_schemecyclonemacros_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85macro_117defined_91macros_85 = boolean_f; 
   __glo__85macro_117env_85 = boolean_f; 
 
-  make_cvar(cvar_73277, (object *)&__glo_lib_91init_117schemecyclonemacros);make_cons(pair_73278, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73277);
-  make_cvar(cvar_73279, (object *)&__glo_macro_117expand);make_cons(pair_73280, find_or_add_symbol("macro:expand"), &cvar_73279);
-  make_cvar(cvar_73281, (object *)&__glo_macro_117macro_127);make_cons(pair_73282, find_or_add_symbol("macro:macro?"), &cvar_73281);
-  make_cvar(cvar_73283, (object *)&__glo_define_91syntax_127);make_cons(pair_73284, find_or_add_symbol("define-syntax?"), &cvar_73283);
-  make_cvar(cvar_73285, (object *)&__glo_macro_117get_91defined_91macros);make_cons(pair_73286, find_or_add_symbol("macro:get-defined-macros"), &cvar_73285);
-  make_cvar(cvar_73287, (object *)&__glo_macro_117get_91env);make_cons(pair_73288, find_or_add_symbol("macro:get-env"), &cvar_73287);
-  make_cvar(cvar_73289, (object *)&__glo_macro_117load_91env_67);make_cons(pair_73290, find_or_add_symbol("macro:load-env!"), &cvar_73289);
-  make_cvar(cvar_73291, (object *)&__glo_macro_117add_67);make_cons(pair_73292, find_or_add_symbol("macro:add!"), &cvar_73291);
-  make_cvar(cvar_73293, (object *)&__glo__85macro_117defined_91macros_85);make_cons(pair_73294, find_or_add_symbol("*macro:defined-macros*"), &cvar_73293);
-  make_cvar(cvar_73295, (object *)&__glo__85macro_117env_85);make_cons(pair_73296, find_or_add_symbol("*macro:env*"), &cvar_73295);
-make_cons(c_73297, &pair_73278,Cyc_global_variables);
-make_cons(c_73298, &pair_73280, &c_73297);
-make_cons(c_73299, &pair_73282, &c_73298);
-make_cons(c_73300, &pair_73284, &c_73299);
-make_cons(c_73301, &pair_73286, &c_73300);
-make_cons(c_73302, &pair_73288, &c_73301);
-make_cons(c_73303, &pair_73290, &c_73302);
-make_cons(c_73304, &pair_73292, &c_73303);
-make_cons(c_73305, &pair_73294, &c_73304);
-make_cons(c_73306, &pair_73296, &c_73305);
-Cyc_global_variables = &c_73306;
+  make_cvar(cvar_73276, (object *)&__glo_lib_91init_117schemecyclonemacros);make_cons(pair_73277, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73276);
+  make_cvar(cvar_73278, (object *)&__glo_macro_117expand);make_cons(pair_73279, find_or_add_symbol("macro:expand"), &cvar_73278);
+  make_cvar(cvar_73280, (object *)&__glo_macro_117macro_127);make_cons(pair_73281, find_or_add_symbol("macro:macro?"), &cvar_73280);
+  make_cvar(cvar_73282, (object *)&__glo_define_91syntax_127);make_cons(pair_73283, find_or_add_symbol("define-syntax?"), &cvar_73282);
+  make_cvar(cvar_73284, (object *)&__glo_macro_117get_91defined_91macros);make_cons(pair_73285, find_or_add_symbol("macro:get-defined-macros"), &cvar_73284);
+  make_cvar(cvar_73286, (object *)&__glo_macro_117get_91env);make_cons(pair_73287, find_or_add_symbol("macro:get-env"), &cvar_73286);
+  make_cvar(cvar_73288, (object *)&__glo_macro_117load_91env_67);make_cons(pair_73289, find_or_add_symbol("macro:load-env!"), &cvar_73288);
+  make_cvar(cvar_73290, (object *)&__glo_macro_117add_67);make_cons(pair_73291, find_or_add_symbol("macro:add!"), &cvar_73290);
+  make_cvar(cvar_73292, (object *)&__glo__85macro_117defined_91macros_85);make_cons(pair_73293, find_or_add_symbol("*macro:defined-macros*"), &cvar_73292);
+  make_cvar(cvar_73294, (object *)&__glo__85macro_117env_85);make_cons(pair_73295, find_or_add_symbol("*macro:env*"), &cvar_73294);
+make_cons(c_73296, &pair_73277,Cyc_global_variables);
+make_cons(c_73297, &pair_73279, &c_73296);
+make_cons(c_73298, &pair_73281, &c_73297);
+make_cons(c_73299, &pair_73283, &c_73298);
+make_cons(c_73300, &pair_73285, &c_73299);
+make_cons(c_73301, &pair_73287, &c_73300);
+make_cons(c_73302, &pair_73289, &c_73301);
+make_cons(c_73303, &pair_73291, &c_73302);
+make_cons(c_73304, &pair_73293, &c_73303);
+make_cons(c_73305, &pair_73295, &c_73304);
+Cyc_global_variables = &c_73305;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonemacros)->fn)(data, 1, cont, cont);
 }
