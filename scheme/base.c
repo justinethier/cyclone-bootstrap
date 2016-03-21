@@ -35028,15 +35028,15 @@ static void __lambda_1246(void *data, int argc, closure _, object k, object num1
         j = ((double_type *)num2)->value; 
       }
       {
-        make_int(result, i % j);
-        return_closcall1(data, k, &result); 
+        object result = obj_int2obj(i % j);
+        return_closcall1(data, k, result); 
       } }
 static void __lambda_1245(void *data, int argc, closure _, object k, object num) { Cyc_check_num(data, num);
       if (obj_is_int(num)) {
         return_closcall1(data, k, obj_int2obj( abs( obj_obj2int(num))));
       } else if (type_of(num) == integer_tag) {
-        make_int(i, abs(((integer_type *)num)->value));
-        return_closcall1(data, k, &i);
+        object obj = obj_int2obj(abs(((integer_type *)num)->value));
+        return_closcall1(data, k, obj);
       } else {
         make_double(d, fabs(((double_type *)num)->value));
         return_closcall1(data, k, &d);

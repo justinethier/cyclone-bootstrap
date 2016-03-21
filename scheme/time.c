@@ -184,8 +184,9 @@ static void __lambda_3(void *data, int argc, closure _,object k_733) {
 return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _, object k) { make_int(box, CLOCKS_PER_SEC);
-        return_closcall1(data, k, &box);  }
+static void __lambda_2(void *data, int argc, closure _, object k) { int n = CLOCKS_PER_SEC;
+        object obj = obj_int2obj(n);
+        return_closcall1(data, k, obj);  }
 static void __lambda_1(void *data, int argc, closure _, object k) { make_double(box, 0.0);
         clock_t jiffy = clock();
         double_value(&box) = jiffy;
