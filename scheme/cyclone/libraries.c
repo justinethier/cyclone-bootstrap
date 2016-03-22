@@ -2632,7 +2632,7 @@ c_73703.elts[0] = filename_85_7383;
 c_73703.elts[1] = ((closureN)self_73428)->elts[0];
 c_73703.elts[2] = ((closureN)self_73428)->elts[1];
 
-return_closcall1(data,(closure)&c_73703,  Cyc_string_length2(data, filename_85_7383));; 
+return_closcall1(data,(closure)&c_73703,  Cyc_string_length(data, filename_85_7383));; 
 }
 
 static void __lambda_61(void *data, int argc, object self_73429, object r_73234) {

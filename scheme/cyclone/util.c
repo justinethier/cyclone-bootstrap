@@ -4659,7 +4659,7 @@ c_73656.num_elt = 1;
 c_73656.elts = (object *)alloca(sizeof(object) * 1);
 c_73656.elts[0] = k_73376;
 
-return_closcall1(data,(closure)&c_73656,  Cyc_char2integer2(c_73116));; 
+return_closcall1(data,(closure)&c_73656,  Cyc_char2integer(c_73116));; 
 }
 
 static void __lambda_11(void *data, int argc, object self_73611, object i_73117) {

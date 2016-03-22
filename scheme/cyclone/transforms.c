@@ -28094,7 +28094,7 @@ c_733575.elts[0] = ((closureN)self_733500)->elts[0];
 c_733575.elts[1] = ((closureN)self_733500)->elts[1];
 c_733575.elts[2] = ((closureN)self_733500)->elts[2];
 
-return_closcall1(data,(closure)&c_733575,  Cyc_string_length2(data, ((closureN)self_733500)->elts[0]));}
+return_closcall1(data,(closure)&c_733575,  Cyc_string_length(data, ((closureN)self_733500)->elts[0]));}
 ; 
 }
 

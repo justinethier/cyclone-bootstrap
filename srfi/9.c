@@ -5367,7 +5367,7 @@ c_73765.elts = (object *)alloca(sizeof(object) * 2);
 c_73765.elts[0] = ((closureN)self_73587)->elts[0];
 c_73765.elts[1] = ((closureN)self_73587)->elts[1];
 
-return_closcall1(data,(closure)&c_73765,  Cyc_vector_length2(data, ((closureN)self_73587)->elts[1]));
+return_closcall1(data,(closure)&c_73765,  Cyc_vector_length(data, ((closureN)self_73587)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73587)->elts[0],  boolean_f);}
 ; 
