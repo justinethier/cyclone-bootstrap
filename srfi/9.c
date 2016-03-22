@@ -5590,7 +5590,7 @@ c_73677.elts = (object *)alloca(sizeof(object) * 2);
 c_73677.elts[0] = ((closureN)self_73599)->elts[0];
 c_73677.elts[1] = ((closureN)self_73599)->elts[1];
 
-return_closcall1(data,(closure)&c_73677,  Cyc_length2(data, field_91tags_73105));; 
+return_closcall1(data,(closure)&c_73677,  Cyc_length(data, field_91tags_73105));; 
 }
 
 static void __lambda_17(void *data, int argc, object self_73600, object r_73358) {

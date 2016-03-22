@@ -986,7 +986,7 @@ c_731628.elts[0] = ((closureN)self_73343)->elts[0];
 c_731628.elts[1] = ((closureN)self_73343)->elts[1];
 c_731628.elts[2] = ((closureN)self_73343)->elts[2];
 
-return_closcall1(data,(closure)&c_731628,  Cyc_length2(data, ((closureN)self_73343)->elts[0]));; 
+return_closcall1(data,(closure)&c_731628,  Cyc_length(data, ((closureN)self_73343)->elts[0]));; 
 }
 
 static void __lambda_248(void *data, int argc, object self_73344, object r_73116) {
