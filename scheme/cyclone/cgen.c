@@ -2253,7 +2253,7 @@ c_739956.elts = (object *)alloca(sizeof(object) * 1);
 c_739956.elts[0] = ((closureN)self_732011)->elts[0];
 
 
-object c_739987 = Cyc_make_vector2(data,(closure)&c_739956,2,r_73643, boolean_f);
+object c_739987 = Cyc_make_vector(data,(closure)&c_739956,2,r_73643, boolean_f);
 return_closcall1(data,(closure)&c_739956,  c_739987);; 
 }
 
@@ -22827,7 +22827,7 @@ return_closcall1(data,  ((closureN)self_733067)->elts[0],  &c_735748);;
 
 static void __lambda_417(void *data, int argc, object self_733068) {
   
-make_string(c_735739, "Cyc_make_vector2");
+make_string(c_735739, "Cyc_make_vector");
 return_closcall1(data,  ((closureN)self_733068)->elts[0],  &c_735739);; 
 }
 
