@@ -447,6 +447,9 @@ defsymbol(vector_91ref);
 defsymbol(vector_91length);
 defsymbol(list_91_125vector);
 defsymbol(bytevector_127);
+defsymbol(bytevector_91u8_91set_67);
+defsymbol(bytevector_91u8_91ref);
+defsymbol(bytevector);
 defsymbol(bytevector_91length);
 defsymbol(substring);
 defsymbol(string_91ref);
@@ -2152,55 +2155,55 @@ c_739575.elts = (object *)alloca(sizeof(object) * 1);
 c_739575.elts[0] = ((closureN)self_732129)->elts[0];
 
 
-mclosure0(c_739715, (function_type)__lambda_1480);c_739715.num_args = 1;
-return_closcall1(data,(closure)&c_739575,  &c_739715);; 
+mclosure0(c_739718, (function_type)__lambda_1480);c_739718.num_args = 1;
+return_closcall1(data,(closure)&c_739575,  &c_739718);; 
 }
 
 static void __lambda_1480(void *data, int argc, object self_732130, object k_73654, object exp_73295) {
   
-closureN_type c_739717;
-c_739717.hdr.mark = gc_color_red;
- c_739717.hdr.grayed = 0;
-c_739717.tag = closureN_tag;
- c_739717.fn = (function_type)__lambda_1479;
-c_739717.num_args = 1;
-c_739717.num_elt = 1;
-c_739717.elts = (object *)alloca(sizeof(object) * 1);
-c_739717.elts[0] = k_73654;
+closureN_type c_739720;
+c_739720.hdr.mark = gc_color_red;
+ c_739720.hdr.grayed = 0;
+c_739720.tag = closureN_tag;
+ c_739720.fn = (function_type)__lambda_1479;
+c_739720.num_args = 1;
+c_739720.num_elt = 1;
+c_739720.elts = (object *)alloca(sizeof(object) * 1);
+c_739720.elts[0] = k_73654;
 
-return_closcall2(data,  __glo_lambda_91formals_91type,  &c_739717, exp_73295);; 
+return_closcall2(data,  __glo_lambda_91formals_91type,  &c_739720, exp_73295);; 
 }
 
 static void __lambda_1479(void *data, int argc, object self_732131, object type_73296) {
   
-closureN_type c_739719;
-c_739719.hdr.mark = gc_color_red;
- c_739719.hdr.grayed = 0;
-c_739719.tag = closureN_tag;
- c_739719.fn = (function_type)__lambda_1478;
-c_739719.num_args = 1;
-c_739719.num_elt = 2;
-c_739719.elts = (object *)alloca(sizeof(object) * 2);
-c_739719.elts[0] = ((closureN)self_732131)->elts[0];
-c_739719.elts[1] = type_73296;
+closureN_type c_739722;
+c_739722.hdr.mark = gc_color_red;
+ c_739722.hdr.grayed = 0;
+c_739722.tag = closureN_tag;
+ c_739722.fn = (function_type)__lambda_1478;
+c_739722.num_args = 1;
+c_739722.num_elt = 2;
+c_739722.elts = (object *)alloca(sizeof(object) * 2);
+c_739722.elts[0] = ((closureN)self_732131)->elts[0];
+c_739722.elts[1] = type_73296;
 
-return_closcall1(data,(closure)&c_739719,  quote_args_117varargs);; 
+return_closcall1(data,(closure)&c_739722,  quote_args_117varargs);; 
 }
 
 static void __lambda_1478(void *data, int argc, object self_732132, object r_73658) {
   
-closureN_type c_739721;
-c_739721.hdr.mark = gc_color_red;
- c_739721.hdr.grayed = 0;
-c_739721.tag = closureN_tag;
- c_739721.fn = (function_type)__lambda_1477;
-c_739721.num_args = 1;
-c_739721.num_elt = 2;
-c_739721.elts = (object *)alloca(sizeof(object) * 2);
-c_739721.elts[0] = ((closureN)self_732132)->elts[0];
-c_739721.elts[1] = ((closureN)self_732132)->elts[1];
+closureN_type c_739724;
+c_739724.hdr.mark = gc_color_red;
+ c_739724.hdr.grayed = 0;
+c_739724.tag = closureN_tag;
+ c_739724.fn = (function_type)__lambda_1477;
+c_739724.num_args = 1;
+c_739724.num_elt = 2;
+c_739724.elts = (object *)alloca(sizeof(object) * 2);
+c_739724.elts[0] = ((closureN)self_732132)->elts[0];
+c_739724.elts[1] = ((closureN)self_732132)->elts[1];
 
-return_closcall1(data,(closure)&c_739721,  equalp(((closureN)self_732132)->elts[1], r_73658));; 
+return_closcall1(data,(closure)&c_739724,  equalp(((closureN)self_732132)->elts[1], r_73658));; 
 }
 
 static void __lambda_1477(void *data, int argc, object self_732133, object tmp_73297) {
@@ -2208,18 +2211,18 @@ static void __lambda_1477(void *data, int argc, object self_732133, object tmp_7
   return_closcall1(data,  ((closureN)self_732133)->elts[0],  tmp_73297);
 } else { 
   
-closureN_type c_739725;
-c_739725.hdr.mark = gc_color_red;
- c_739725.hdr.grayed = 0;
-c_739725.tag = closureN_tag;
- c_739725.fn = (function_type)__lambda_1476;
-c_739725.num_args = 1;
-c_739725.num_elt = 2;
-c_739725.elts = (object *)alloca(sizeof(object) * 2);
-c_739725.elts[0] = ((closureN)self_732133)->elts[0];
-c_739725.elts[1] = ((closureN)self_732133)->elts[1];
+closureN_type c_739728;
+c_739728.hdr.mark = gc_color_red;
+ c_739728.hdr.grayed = 0;
+c_739728.tag = closureN_tag;
+ c_739728.fn = (function_type)__lambda_1476;
+c_739728.num_args = 1;
+c_739728.num_elt = 2;
+c_739728.elts = (object *)alloca(sizeof(object) * 2);
+c_739728.elts[0] = ((closureN)self_732133)->elts[0];
+c_739728.elts[1] = ((closureN)self_732133)->elts[1];
 
-return_closcall1(data,(closure)&c_739725,  quote_args_117fixed_91with_91varargs);}
+return_closcall1(data,(closure)&c_739728,  quote_args_117fixed_91with_91varargs);}
 ; 
 }
 
@@ -2255,73 +2258,79 @@ c_739579.elts = (object *)alloca(sizeof(object) * 1);
 c_739579.elts[0] = ((closureN)self_732136)->elts[0];
 
 
-make_cons(c_739712,quote_Cyc_91display,nil);
+make_cons(c_739715,quote_Cyc_91display,nil);
 
-make_cons(c_739711,quote_Cyc_91write,&c_739712);
+make_cons(c_739714,quote_Cyc_91write,&c_739715);
 
-make_cons(c_739710,quote_Cyc_91write_91char,&c_739711);
+make_cons(c_739713,quote_Cyc_91write_91char,&c_739714);
 
-make_cons(c_739709,quote_Cyc_91read_91line,&c_739710);
+make_cons(c_739712,quote_Cyc_91read_91line,&c_739713);
 
-make_cons(c_739708,quote_peek_91char,&c_739709);
+make_cons(c_739711,quote_peek_91char,&c_739712);
 
-make_cons(c_739707,quote_read_91char,&c_739708);
+make_cons(c_739710,quote_read_91char,&c_739711);
 
-make_cons(c_739706,quote_delete_91file,&c_739707);
+make_cons(c_739709,quote_delete_91file,&c_739710);
 
-make_cons(c_739705,quote_file_91exists_127,&c_739706);
+make_cons(c_739708,quote_file_91exists_127,&c_739709);
 
-make_cons(c_739704,quote_Cyc_91flush_91output_91port,&c_739705);
+make_cons(c_739707,quote_Cyc_91flush_91output_91port,&c_739708);
 
-make_cons(c_739703,quote_close_91output_91port,&c_739704);
+make_cons(c_739706,quote_close_91output_91port,&c_739707);
 
-make_cons(c_739702,quote_close_91input_91port,&c_739703);
+make_cons(c_739705,quote_close_91input_91port,&c_739706);
 
-make_cons(c_739701,quote_close_91port,&c_739702);
+make_cons(c_739704,quote_close_91port,&c_739705);
 
-make_cons(c_739700,quote_open_91output_91file,&c_739701);
+make_cons(c_739703,quote_open_91output_91file,&c_739704);
 
-make_cons(c_739699,quote_open_91input_91file,&c_739700);
+make_cons(c_739702,quote_open_91input_91file,&c_739703);
 
-make_cons(c_739698,quote_symbol_127,&c_739699);
+make_cons(c_739701,quote_symbol_127,&c_739702);
 
-make_cons(c_739697,quote_string_127,&c_739698);
+make_cons(c_739700,quote_string_127,&c_739701);
 
-make_cons(c_739696,quote_vector_127,&c_739697);
+make_cons(c_739699,quote_vector_127,&c_739700);
 
-make_cons(c_739695,quote_macro_127,&c_739696);
+make_cons(c_739698,quote_macro_127,&c_739699);
 
-make_cons(c_739694,quote_procedure_127,&c_739695);
+make_cons(c_739697,quote_procedure_127,&c_739698);
 
-make_cons(c_739693,quote_port_127,&c_739694);
+make_cons(c_739696,quote_port_127,&c_739697);
 
-make_cons(c_739692,quote_pair_127,&c_739693);
+make_cons(c_739695,quote_pair_127,&c_739696);
 
-make_cons(c_739691,quote_integer_127,&c_739692);
+make_cons(c_739694,quote_integer_127,&c_739695);
 
-make_cons(c_739690,quote_real_127,&c_739691);
+make_cons(c_739693,quote_real_127,&c_739694);
 
-make_cons(c_739689,quote_number_127,&c_739690);
+make_cons(c_739692,quote_number_127,&c_739693);
 
-make_cons(c_739688,quote_null_127,&c_739689);
+make_cons(c_739691,quote_null_127,&c_739692);
 
-make_cons(c_739687,quote_eof_91object_127,&c_739688);
+make_cons(c_739690,quote_eof_91object_127,&c_739691);
 
-make_cons(c_739686,quote_char_127,&c_739687);
+make_cons(c_739689,quote_char_127,&c_739690);
 
-make_cons(c_739685,quote_boolean_127,&c_739686);
+make_cons(c_739688,quote_boolean_127,&c_739689);
 
-make_cons(c_739684,quote_vector_91set_67,&c_739685);
+make_cons(c_739687,quote_vector_91set_67,&c_739688);
 
-make_cons(c_739683,quote_vector_91ref,&c_739684);
+make_cons(c_739686,quote_vector_91ref,&c_739687);
 
-make_cons(c_739682,quote_vector_91length,&c_739683);
+make_cons(c_739685,quote_vector_91length,&c_739686);
 
-make_cons(c_739681,quote_list_91_125vector,&c_739682);
+make_cons(c_739684,quote_list_91_125vector,&c_739685);
 
-make_cons(c_739680,quote_make_91vector,&c_739681);
+make_cons(c_739683,quote_make_91vector,&c_739684);
 
-make_cons(c_739679,quote_bytevector_127,&c_739680);
+make_cons(c_739682,quote_bytevector_127,&c_739683);
+
+make_cons(c_739681,quote_bytevector_91u8_91set_67,&c_739682);
+
+make_cons(c_739680,quote_bytevector_91u8_91ref,&c_739681);
+
+make_cons(c_739679,quote_bytevector,&c_739680);
 
 make_cons(c_739678,quote_bytevector_91length,&c_739679);
 
@@ -28347,6 +28356,9 @@ void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int 
   quote_vector_91length = find_or_add_symbol("vector-length");
   quote_list_91_125vector = find_or_add_symbol("list->vector");
   quote_bytevector_127 = find_or_add_symbol("bytevector?");
+  quote_bytevector_91u8_91set_67 = find_or_add_symbol("bytevector-u8-set!");
+  quote_bytevector_91u8_91ref = find_or_add_symbol("bytevector-u8-ref");
+  quote_bytevector = find_or_add_symbol("bytevector");
   quote_bytevector_91length = find_or_add_symbol("bytevector-length");
   quote_substring = find_or_add_symbol("substring");
   quote_string_91ref = find_or_add_symbol("string-ref");
@@ -28618,6 +28630,9 @@ void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int 
   add_symbol(quote_vector_91length);
   add_symbol(quote_list_91_125vector);
   add_symbol(quote_bytevector_127);
+  add_symbol(quote_bytevector_91u8_91set_67);
+  add_symbol(quote_bytevector_91u8_91ref);
+  add_symbol(quote_bytevector);
   add_symbol(quote_bytevector_91length);
   add_symbol(quote_substring);
   add_symbol(quote_string_91ref);
@@ -28971,221 +28986,221 @@ void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int 
   __glo__85defined_91macros_85 = boolean_f; 
   __glo_pretty_91print = boolean_f; 
 
-  make_cvar(cvar_739738, (object *)&__glo_lib_91init_117schemecyclonetransforms);make_cons(pair_739739, find_or_add_symbol("lib-init:schemecyclonetransforms"), &cvar_739738);
-  make_cvar(cvar_739740, (object *)&__glo_closure_91convert);make_cons(pair_739741, find_or_add_symbol("closure-convert"), &cvar_739740);
-  make_cvar(cvar_739742, (object *)&__glo_pos_91in_91list);make_cons(pair_739743, find_or_add_symbol("pos-in-list"), &cvar_739742);
-  make_cvar(cvar_739744, (object *)&__glo_cps_91optimize_9101);make_cons(pair_739745, find_or_add_symbol("cps-optimize-01"), &cvar_739744);
-  make_cvar(cvar_739746, (object *)&__glo_cps_91convert);make_cons(pair_739747, find_or_add_symbol("cps-convert"), &cvar_739746);
-  make_cvar(cvar_739748, (object *)&__glo_alpha_91convert);make_cons(pair_739749, find_or_add_symbol("alpha-convert"), &cvar_739748);
-  make_cvar(cvar_739750, (object *)&__glo_wrap_91mutables);make_cons(pair_739751, find_or_add_symbol("wrap-mutables"), &cvar_739750);
-  make_cvar(cvar_739752, (object *)&__glo_analyze_91mutable_91variables);make_cons(pair_739753, find_or_add_symbol("analyze-mutable-variables"), &cvar_739752);
-  make_cvar(cvar_739754, (object *)&__glo_is_91mutable_127);make_cons(pair_739755, find_or_add_symbol("is-mutable?"), &cvar_739754);
-  make_cvar(cvar_739756, (object *)&__glo_mark_91mutable);make_cons(pair_739757, find_or_add_symbol("mark-mutable"), &cvar_739756);
-  make_cvar(cvar_739758, (object *)&__glo_clear_91mutables);make_cons(pair_739759, find_or_add_symbol("clear-mutables"), &cvar_739758);
-  make_cvar(cvar_739760, (object *)&__glo_mutable_91variables);make_cons(pair_739761, find_or_add_symbol("mutable-variables"), &cvar_739760);
-  make_cvar(cvar_739762, (object *)&__glo_free_91vars);make_cons(pair_739763, find_or_add_symbol("free-vars"), &cvar_739762);
-  make_cvar(cvar_739764, (object *)&__glo_filter_91unused_91variables);make_cons(pair_739765, find_or_add_symbol("filter-unused-variables"), &cvar_739764);
-  make_cvar(cvar_739766, (object *)&__glo_global_91vars);make_cons(pair_739767, find_or_add_symbol("global-vars"), &cvar_739766);
-  make_cvar(cvar_739768, (object *)&__glo_has_91global_127);make_cons(pair_739769, find_or_add_symbol("has-global?"), &cvar_739768);
-  make_cvar(cvar_739770, (object *)&__glo_isolate_91globals);make_cons(pair_739771, find_or_add_symbol("isolate-globals"), &cvar_739770);
-  make_cvar(cvar_739772, (object *)&__glo_expand_91body);make_cons(pair_739773, find_or_add_symbol("expand-body"), &cvar_739772);
-  make_cvar(cvar_739774, (object *)&__glo_expand_91lambda_91body);make_cons(pair_739775, find_or_add_symbol("expand-lambda-body"), &cvar_739774);
-  make_cvar(cvar_739776, (object *)&__glo_expand);make_cons(pair_739777, find_or_add_symbol("expand"), &cvar_739776);
-  make_cvar(cvar_739778, (object *)&__glo_cell_91get_91_125cell);make_cons(pair_739779, find_or_add_symbol("cell-get->cell"), &cvar_739778);
-  make_cvar(cvar_739780, (object *)&__glo_cell_91get_127);make_cons(pair_739781, find_or_add_symbol("cell-get?"), &cvar_739780);
-  make_cvar(cvar_739782, (object *)&__glo_cell_91_125value);make_cons(pair_739783, find_or_add_symbol("cell->value"), &cvar_739782);
-  make_cvar(cvar_739784, (object *)&__glo_cell_127);make_cons(pair_739785, find_or_add_symbol("cell?"), &cvar_739784);
-  make_cvar(cvar_739786, (object *)&__glo_set_91cell_67_91_125value);make_cons(pair_739787, find_or_add_symbol("set-cell!->value"), &cvar_739786);
-  make_cvar(cvar_739788, (object *)&__glo_set_91cell_67_91_125cell);make_cons(pair_739789, find_or_add_symbol("set-cell!->cell"), &cvar_739788);
-  make_cvar(cvar_739790, (object *)&__glo_set_91cell_67_127);make_cons(pair_739791, find_or_add_symbol("set-cell!?"), &cvar_739790);
-  make_cvar(cvar_739792, (object *)&__glo_env_91get_91_125env);make_cons(pair_739793, find_or_add_symbol("env-get->env"), &cvar_739792);
-  make_cvar(cvar_739794, (object *)&__glo_env_91get_91_125field);make_cons(pair_739795, find_or_add_symbol("env-get->field"), &cvar_739794);
-  make_cvar(cvar_739796, (object *)&__glo_env_91get_91_125id);make_cons(pair_739797, find_or_add_symbol("env-get->id"), &cvar_739796);
-  make_cvar(cvar_739798, (object *)&__glo_env_91get_127);make_cons(pair_739799, find_or_add_symbol("env-get?"), &cvar_739798);
-  make_cvar(cvar_739800, (object *)&__glo_env_91make_91_125values);make_cons(pair_739801, find_or_add_symbol("env-make->values"), &cvar_739800);
-  make_cvar(cvar_739802, (object *)&__glo_env_91make_91_125fields);make_cons(pair_739803, find_or_add_symbol("env-make->fields"), &cvar_739802);
-  make_cvar(cvar_739804, (object *)&__glo_env_91make_91_125id);make_cons(pair_739805, find_or_add_symbol("env-make->id"), &cvar_739804);
-  make_cvar(cvar_739806, (object *)&__glo_env_91make_127);make_cons(pair_739807, find_or_add_symbol("env-make?"), &cvar_739806);
-  make_cvar(cvar_739808, (object *)&__glo_closure_91_125fv);make_cons(pair_739809, find_or_add_symbol("closure->fv"), &cvar_739808);
-  make_cvar(cvar_739810, (object *)&__glo_closure_91_125env);make_cons(pair_739811, find_or_add_symbol("closure->env"), &cvar_739810);
-  make_cvar(cvar_739812, (object *)&__glo_closure_91_125lam);make_cons(pair_739813, find_or_add_symbol("closure->lam"), &cvar_739812);
-  make_cvar(cvar_739814, (object *)&__glo_closure_127);make_cons(pair_739815, find_or_add_symbol("closure?"), &cvar_739814);
-  make_cvar(cvar_739816, (object *)&__glo_set_67_91_125exp);make_cons(pair_739817, find_or_add_symbol("set!->exp"), &cvar_739816);
-  make_cvar(cvar_739818, (object *)&__glo_set_67_91_125var);make_cons(pair_739819, find_or_add_symbol("set!->var"), &cvar_739818);
-  make_cvar(cvar_739820, (object *)&__glo_set_67_127);make_cons(pair_739821, find_or_add_symbol("set!?"), &cvar_739820);
-  make_cvar(cvar_739822, (object *)&__glo_define_91c_127);make_cons(pair_739823, find_or_add_symbol("define-c?"), &cvar_739822);
-  make_cvar(cvar_739824, (object *)&__glo_define_91_125exp);make_cons(pair_739825, find_or_add_symbol("define->exp"), &cvar_739824);
-  make_cvar(cvar_739826, (object *)&__glo_define_91_125var);make_cons(pair_739827, find_or_add_symbol("define->var"), &cvar_739826);
-  make_cvar(cvar_739828, (object *)&__glo_define_91_125lambda);make_cons(pair_739829, find_or_add_symbol("define->lambda"), &cvar_739828);
-  make_cvar(cvar_739830, (object *)&__glo_define_91lambda_127);make_cons(pair_739831, find_or_add_symbol("define-lambda?"), &cvar_739830);
-  make_cvar(cvar_739832, (object *)&__glo_define_127);make_cons(pair_739833, find_or_add_symbol("define?"), &cvar_739832);
-  make_cvar(cvar_739834, (object *)&__glo_begin_91_125exps);make_cons(pair_739835, find_or_add_symbol("begin->exps"), &cvar_739834);
-  make_cvar(cvar_739836, (object *)&__glo_prim_91call_127);make_cons(pair_739837, find_or_add_symbol("prim-call?"), &cvar_739836);
-  make_cvar(cvar_739838, (object *)&__glo_precompute_91prim_91app_127);make_cons(pair_739839, find_or_add_symbol("precompute-prim-app?"), &cvar_739838);
-  make_cvar(cvar_739840, (object *)&__glo__85primitives_85);make_cons(pair_739841, find_or_add_symbol("*primitives*"), &cvar_739840);
-  make_cvar(cvar_739842, (object *)&__glo_prim_127);make_cons(pair_739843, find_or_add_symbol("prim?"), &cvar_739842);
-  make_cvar(cvar_739844, (object *)&__glo_app_91_125args);make_cons(pair_739845, find_or_add_symbol("app->args"), &cvar_739844);
-  make_cvar(cvar_739846, (object *)&__glo_app_91_125fun);make_cons(pair_739847, find_or_add_symbol("app->fun"), &cvar_739846);
-  make_cvar(cvar_739848, (object *)&__glo_app_127);make_cons(pair_739849, find_or_add_symbol("app?"), &cvar_739848);
-  make_cvar(cvar_739850, (object *)&__glo_if_91_125else);make_cons(pair_739851, find_or_add_symbol("if->else"), &cvar_739850);
-  make_cvar(cvar_739852, (object *)&__glo_if_91else_127);make_cons(pair_739853, find_or_add_symbol("if-else?"), &cvar_739852);
-  make_cvar(cvar_739854, (object *)&__glo_if_91_125then);make_cons(pair_739855, find_or_add_symbol("if->then"), &cvar_739854);
-  make_cvar(cvar_739856, (object *)&__glo_if_91_125condition);make_cons(pair_739857, find_or_add_symbol("if->condition"), &cvar_739856);
-  make_cvar(cvar_739858, (object *)&__glo_lambda_91_125exp);make_cons(pair_739859, find_or_add_symbol("lambda->exp"), &cvar_739858);
-  make_cvar(cvar_739860, (object *)&__glo_list_91_125pair);make_cons(pair_739861, find_or_add_symbol("list->pair"), &cvar_739860);
-  make_cvar(cvar_739862, (object *)&__glo_pair_91_125list);make_cons(pair_739863, find_or_add_symbol("pair->list"), &cvar_739862);
-  make_cvar(cvar_739864, (object *)&__glo_list_91_125lambda_91formals);make_cons(pair_739865, find_or_add_symbol("list->lambda-formals"), &cvar_739864);
-  make_cvar(cvar_739866, (object *)&__glo_lambda_91num_91args);make_cons(pair_739867, find_or_add_symbol("lambda-num-args"), &cvar_739866);
-  make_cvar(cvar_739868, (object *)&__glo_lambda_91formals_91_125list);make_cons(pair_739869, find_or_add_symbol("lambda-formals->list"), &cvar_739868);
-  make_cvar(cvar_739870, (object *)&__glo_lambda_91formals_91type);make_cons(pair_739871, find_or_add_symbol("lambda-formals-type"), &cvar_739870);
-  make_cvar(cvar_739872, (object *)&__glo_lambda_91varargs_91var);make_cons(pair_739873, find_or_add_symbol("lambda-varargs-var"), &cvar_739872);
-  make_cvar(cvar_739874, (object *)&__glo_lambda_91_125formals);make_cons(pair_739875, find_or_add_symbol("lambda->formals"), &cvar_739874);
-  make_cvar(cvar_739876, (object *)&__glo_lambda_91varargs_127);make_cons(pair_739877, find_or_add_symbol("lambda-varargs?"), &cvar_739876);
-  make_cvar(cvar_739878, (object *)&__glo_letrec_91_125args);make_cons(pair_739879, find_or_add_symbol("letrec->args"), &cvar_739878);
-  make_cvar(cvar_739880, (object *)&__glo_letrec_91_125bound_91vars);make_cons(pair_739881, find_or_add_symbol("letrec->bound-vars"), &cvar_739880);
-  make_cvar(cvar_739882, (object *)&__glo_letrec_91_125exp);make_cons(pair_739883, find_or_add_symbol("letrec->exp"), &cvar_739882);
-  make_cvar(cvar_739884, (object *)&__glo_letrec_91_125bindings);make_cons(pair_739885, find_or_add_symbol("letrec->bindings"), &cvar_739884);
-  make_cvar(cvar_739886, (object *)&__glo_letrec_127);make_cons(pair_739887, find_or_add_symbol("letrec?"), &cvar_739886);
-  make_cvar(cvar_739888, (object *)&__glo_let_91_125args);make_cons(pair_739889, find_or_add_symbol("let->args"), &cvar_739888);
-  make_cvar(cvar_739890, (object *)&__glo_let_91_125bound_91vars);make_cons(pair_739891, find_or_add_symbol("let->bound-vars"), &cvar_739890);
-  make_cvar(cvar_739892, (object *)&__glo_let_91_125exp);make_cons(pair_739893, find_or_add_symbol("let->exp"), &cvar_739892);
-  make_cvar(cvar_739894, (object *)&__glo_let_91_125bindings);make_cons(pair_739895, find_or_add_symbol("let->bindings"), &cvar_739894);
-  make_cvar(cvar_739896, (object *)&__glo_let_127);make_cons(pair_739897, find_or_add_symbol("let?"), &cvar_739896);
-  make_cvar(cvar_739898, (object *)&__glo_quote_127);make_cons(pair_739899, find_or_add_symbol("quote?"), &cvar_739898);
-  make_cvar(cvar_739900, (object *)&__glo_ref_127);make_cons(pair_739901, find_or_add_symbol("ref?"), &cvar_739900);
-  make_cvar(cvar_739902, (object *)&__glo_const_127);make_cons(pair_739903, find_or_add_symbol("const?"), &cvar_739902);
-  make_cvar(cvar_739904, (object *)&__glo_assq_91remove_91keys);make_cons(pair_739905, find_or_add_symbol("assq-remove-keys"), &cvar_739904);
-  make_cvar(cvar_739906, (object *)&__glo_assq_91remove_91key);make_cons(pair_739907, find_or_add_symbol("assq-remove-key"), &cvar_739906);
-  make_cvar(cvar_739908, (object *)&__glo_azip);make_cons(pair_739909, find_or_add_symbol("azip"), &cvar_739908);
-  make_cvar(cvar_739910, (object *)&__glo_reduce);make_cons(pair_739911, find_or_add_symbol("reduce"), &cvar_739910);
-  make_cvar(cvar_739912, (object *)&__glo_difference);make_cons(pair_739913, find_or_add_symbol("difference"), &cvar_739912);
-  make_cvar(cvar_739914, (object *)&__glo__union);make_cons(pair_739915, find_or_add_symbol("union"), &cvar_739914);
-  make_cvar(cvar_739916, (object *)&__glo_remove);make_cons(pair_739917, find_or_add_symbol("remove"), &cvar_739916);
-  make_cvar(cvar_739918, (object *)&__glo_insert);make_cons(pair_739919, find_or_add_symbol("insert"), &cvar_739918);
-  make_cvar(cvar_739920, (object *)&__glo_symbol_121_127);make_cons(pair_739921, find_or_add_symbol("symbol<?"), &cvar_739920);
-  make_cvar(cvar_739922, (object *)&__glo__void);make_cons(pair_739923, find_or_add_symbol("void"), &cvar_739922);
-  make_cvar(cvar_739924, (object *)&__glo_list_91index);make_cons(pair_739925, find_or_add_symbol("list-index"), &cvar_739924);
-  make_cvar(cvar_739926, (object *)&__glo_basename);make_cons(pair_739927, find_or_add_symbol("basename"), &cvar_739926);
-  make_cvar(cvar_739928, (object *)&__glo_cyc_117error);make_cons(pair_739929, find_or_add_symbol("cyc:error"), &cvar_739928);
-  make_cvar(cvar_739930, (object *)&__glo_trace_117debug);make_cons(pair_739931, find_or_add_symbol("trace:debug"), &cvar_739930);
-  make_cvar(cvar_739932, (object *)&__glo_trace_117info);make_cons(pair_739933, find_or_add_symbol("trace:info"), &cvar_739932);
-  make_cvar(cvar_739934, (object *)&__glo_trace_117warn);make_cons(pair_739935, find_or_add_symbol("trace:warn"), &cvar_739934);
-  make_cvar(cvar_739936, (object *)&__glo_trace_117error);make_cons(pair_739937, find_or_add_symbol("trace:error"), &cvar_739936);
-  make_cvar(cvar_739938, (object *)&__glo_trace);make_cons(pair_739939, find_or_add_symbol("trace"), &cvar_739938);
-  make_cvar(cvar_739940, (object *)&__glo__85trace_91level_85);make_cons(pair_739941, find_or_add_symbol("*trace-level*"), &cvar_739940);
-  make_cvar(cvar_739942, (object *)&__glo__85do_91code_91gen_85);make_cons(pair_739943, find_or_add_symbol("*do-code-gen*"), &cvar_739942);
-  make_cvar(cvar_739944, (object *)&__glo_built_91in_91syms);make_cons(pair_739945, find_or_add_symbol("built-in-syms"), &cvar_739944);
-  make_cvar(cvar_739946, (object *)&__glo__85defined_91macros_85);make_cons(pair_739947, find_or_add_symbol("*defined-macros*"), &cvar_739946);
-  make_cvar(cvar_739948, (object *)&__glo_get_91macros);make_cons(pair_739949, find_or_add_symbol("get-macros"), &cvar_739948);
-  make_cvar(cvar_739950, (object *)&__glo_pretty_91print);make_cons(pair_739951, find_or_add_symbol("pretty-print"), &cvar_739950);
-make_cons(c_739952, &pair_739739,Cyc_global_variables);
-make_cons(c_739953, &pair_739741, &c_739952);
-make_cons(c_739954, &pair_739743, &c_739953);
-make_cons(c_739955, &pair_739745, &c_739954);
-make_cons(c_739956, &pair_739747, &c_739955);
-make_cons(c_739957, &pair_739749, &c_739956);
-make_cons(c_739958, &pair_739751, &c_739957);
-make_cons(c_739959, &pair_739753, &c_739958);
-make_cons(c_739960, &pair_739755, &c_739959);
-make_cons(c_739961, &pair_739757, &c_739960);
-make_cons(c_739962, &pair_739759, &c_739961);
-make_cons(c_739963, &pair_739761, &c_739962);
-make_cons(c_739964, &pair_739763, &c_739963);
-make_cons(c_739965, &pair_739765, &c_739964);
-make_cons(c_739966, &pair_739767, &c_739965);
-make_cons(c_739967, &pair_739769, &c_739966);
-make_cons(c_739968, &pair_739771, &c_739967);
-make_cons(c_739969, &pair_739773, &c_739968);
-make_cons(c_739970, &pair_739775, &c_739969);
-make_cons(c_739971, &pair_739777, &c_739970);
-make_cons(c_739972, &pair_739779, &c_739971);
-make_cons(c_739973, &pair_739781, &c_739972);
-make_cons(c_739974, &pair_739783, &c_739973);
-make_cons(c_739975, &pair_739785, &c_739974);
-make_cons(c_739976, &pair_739787, &c_739975);
-make_cons(c_739977, &pair_739789, &c_739976);
-make_cons(c_739978, &pair_739791, &c_739977);
-make_cons(c_739979, &pair_739793, &c_739978);
-make_cons(c_739980, &pair_739795, &c_739979);
-make_cons(c_739981, &pair_739797, &c_739980);
-make_cons(c_739982, &pair_739799, &c_739981);
-make_cons(c_739983, &pair_739801, &c_739982);
-make_cons(c_739984, &pair_739803, &c_739983);
-make_cons(c_739985, &pair_739805, &c_739984);
-make_cons(c_739986, &pair_739807, &c_739985);
-make_cons(c_739987, &pair_739809, &c_739986);
-make_cons(c_739988, &pair_739811, &c_739987);
-make_cons(c_739989, &pair_739813, &c_739988);
-make_cons(c_739990, &pair_739815, &c_739989);
-make_cons(c_739991, &pair_739817, &c_739990);
-make_cons(c_739992, &pair_739819, &c_739991);
-make_cons(c_739993, &pair_739821, &c_739992);
-make_cons(c_739994, &pair_739823, &c_739993);
-make_cons(c_739995, &pair_739825, &c_739994);
-make_cons(c_739996, &pair_739827, &c_739995);
-make_cons(c_739997, &pair_739829, &c_739996);
-make_cons(c_739998, &pair_739831, &c_739997);
-make_cons(c_739999, &pair_739833, &c_739998);
-make_cons(c_7310000, &pair_739835, &c_739999);
-make_cons(c_7310001, &pair_739837, &c_7310000);
-make_cons(c_7310002, &pair_739839, &c_7310001);
-make_cons(c_7310003, &pair_739841, &c_7310002);
-make_cons(c_7310004, &pair_739843, &c_7310003);
-make_cons(c_7310005, &pair_739845, &c_7310004);
-make_cons(c_7310006, &pair_739847, &c_7310005);
-make_cons(c_7310007, &pair_739849, &c_7310006);
-make_cons(c_7310008, &pair_739851, &c_7310007);
-make_cons(c_7310009, &pair_739853, &c_7310008);
-make_cons(c_7310010, &pair_739855, &c_7310009);
-make_cons(c_7310011, &pair_739857, &c_7310010);
-make_cons(c_7310012, &pair_739859, &c_7310011);
-make_cons(c_7310013, &pair_739861, &c_7310012);
-make_cons(c_7310014, &pair_739863, &c_7310013);
-make_cons(c_7310015, &pair_739865, &c_7310014);
-make_cons(c_7310016, &pair_739867, &c_7310015);
-make_cons(c_7310017, &pair_739869, &c_7310016);
-make_cons(c_7310018, &pair_739871, &c_7310017);
-make_cons(c_7310019, &pair_739873, &c_7310018);
-make_cons(c_7310020, &pair_739875, &c_7310019);
-make_cons(c_7310021, &pair_739877, &c_7310020);
-make_cons(c_7310022, &pair_739879, &c_7310021);
-make_cons(c_7310023, &pair_739881, &c_7310022);
-make_cons(c_7310024, &pair_739883, &c_7310023);
-make_cons(c_7310025, &pair_739885, &c_7310024);
-make_cons(c_7310026, &pair_739887, &c_7310025);
-make_cons(c_7310027, &pair_739889, &c_7310026);
-make_cons(c_7310028, &pair_739891, &c_7310027);
-make_cons(c_7310029, &pair_739893, &c_7310028);
-make_cons(c_7310030, &pair_739895, &c_7310029);
-make_cons(c_7310031, &pair_739897, &c_7310030);
-make_cons(c_7310032, &pair_739899, &c_7310031);
-make_cons(c_7310033, &pair_739901, &c_7310032);
-make_cons(c_7310034, &pair_739903, &c_7310033);
-make_cons(c_7310035, &pair_739905, &c_7310034);
-make_cons(c_7310036, &pair_739907, &c_7310035);
-make_cons(c_7310037, &pair_739909, &c_7310036);
-make_cons(c_7310038, &pair_739911, &c_7310037);
-make_cons(c_7310039, &pair_739913, &c_7310038);
-make_cons(c_7310040, &pair_739915, &c_7310039);
-make_cons(c_7310041, &pair_739917, &c_7310040);
-make_cons(c_7310042, &pair_739919, &c_7310041);
-make_cons(c_7310043, &pair_739921, &c_7310042);
-make_cons(c_7310044, &pair_739923, &c_7310043);
-make_cons(c_7310045, &pair_739925, &c_7310044);
-make_cons(c_7310046, &pair_739927, &c_7310045);
-make_cons(c_7310047, &pair_739929, &c_7310046);
-make_cons(c_7310048, &pair_739931, &c_7310047);
-make_cons(c_7310049, &pair_739933, &c_7310048);
-make_cons(c_7310050, &pair_739935, &c_7310049);
-make_cons(c_7310051, &pair_739937, &c_7310050);
-make_cons(c_7310052, &pair_739939, &c_7310051);
-make_cons(c_7310053, &pair_739941, &c_7310052);
-make_cons(c_7310054, &pair_739943, &c_7310053);
-make_cons(c_7310055, &pair_739945, &c_7310054);
-make_cons(c_7310056, &pair_739947, &c_7310055);
-make_cons(c_7310057, &pair_739949, &c_7310056);
-make_cons(c_7310058, &pair_739951, &c_7310057);
-Cyc_global_variables = &c_7310058;
+  make_cvar(cvar_739741, (object *)&__glo_lib_91init_117schemecyclonetransforms);make_cons(pair_739742, find_or_add_symbol("lib-init:schemecyclonetransforms"), &cvar_739741);
+  make_cvar(cvar_739743, (object *)&__glo_closure_91convert);make_cons(pair_739744, find_or_add_symbol("closure-convert"), &cvar_739743);
+  make_cvar(cvar_739745, (object *)&__glo_pos_91in_91list);make_cons(pair_739746, find_or_add_symbol("pos-in-list"), &cvar_739745);
+  make_cvar(cvar_739747, (object *)&__glo_cps_91optimize_9101);make_cons(pair_739748, find_or_add_symbol("cps-optimize-01"), &cvar_739747);
+  make_cvar(cvar_739749, (object *)&__glo_cps_91convert);make_cons(pair_739750, find_or_add_symbol("cps-convert"), &cvar_739749);
+  make_cvar(cvar_739751, (object *)&__glo_alpha_91convert);make_cons(pair_739752, find_or_add_symbol("alpha-convert"), &cvar_739751);
+  make_cvar(cvar_739753, (object *)&__glo_wrap_91mutables);make_cons(pair_739754, find_or_add_symbol("wrap-mutables"), &cvar_739753);
+  make_cvar(cvar_739755, (object *)&__glo_analyze_91mutable_91variables);make_cons(pair_739756, find_or_add_symbol("analyze-mutable-variables"), &cvar_739755);
+  make_cvar(cvar_739757, (object *)&__glo_is_91mutable_127);make_cons(pair_739758, find_or_add_symbol("is-mutable?"), &cvar_739757);
+  make_cvar(cvar_739759, (object *)&__glo_mark_91mutable);make_cons(pair_739760, find_or_add_symbol("mark-mutable"), &cvar_739759);
+  make_cvar(cvar_739761, (object *)&__glo_clear_91mutables);make_cons(pair_739762, find_or_add_symbol("clear-mutables"), &cvar_739761);
+  make_cvar(cvar_739763, (object *)&__glo_mutable_91variables);make_cons(pair_739764, find_or_add_symbol("mutable-variables"), &cvar_739763);
+  make_cvar(cvar_739765, (object *)&__glo_free_91vars);make_cons(pair_739766, find_or_add_symbol("free-vars"), &cvar_739765);
+  make_cvar(cvar_739767, (object *)&__glo_filter_91unused_91variables);make_cons(pair_739768, find_or_add_symbol("filter-unused-variables"), &cvar_739767);
+  make_cvar(cvar_739769, (object *)&__glo_global_91vars);make_cons(pair_739770, find_or_add_symbol("global-vars"), &cvar_739769);
+  make_cvar(cvar_739771, (object *)&__glo_has_91global_127);make_cons(pair_739772, find_or_add_symbol("has-global?"), &cvar_739771);
+  make_cvar(cvar_739773, (object *)&__glo_isolate_91globals);make_cons(pair_739774, find_or_add_symbol("isolate-globals"), &cvar_739773);
+  make_cvar(cvar_739775, (object *)&__glo_expand_91body);make_cons(pair_739776, find_or_add_symbol("expand-body"), &cvar_739775);
+  make_cvar(cvar_739777, (object *)&__glo_expand_91lambda_91body);make_cons(pair_739778, find_or_add_symbol("expand-lambda-body"), &cvar_739777);
+  make_cvar(cvar_739779, (object *)&__glo_expand);make_cons(pair_739780, find_or_add_symbol("expand"), &cvar_739779);
+  make_cvar(cvar_739781, (object *)&__glo_cell_91get_91_125cell);make_cons(pair_739782, find_or_add_symbol("cell-get->cell"), &cvar_739781);
+  make_cvar(cvar_739783, (object *)&__glo_cell_91get_127);make_cons(pair_739784, find_or_add_symbol("cell-get?"), &cvar_739783);
+  make_cvar(cvar_739785, (object *)&__glo_cell_91_125value);make_cons(pair_739786, find_or_add_symbol("cell->value"), &cvar_739785);
+  make_cvar(cvar_739787, (object *)&__glo_cell_127);make_cons(pair_739788, find_or_add_symbol("cell?"), &cvar_739787);
+  make_cvar(cvar_739789, (object *)&__glo_set_91cell_67_91_125value);make_cons(pair_739790, find_or_add_symbol("set-cell!->value"), &cvar_739789);
+  make_cvar(cvar_739791, (object *)&__glo_set_91cell_67_91_125cell);make_cons(pair_739792, find_or_add_symbol("set-cell!->cell"), &cvar_739791);
+  make_cvar(cvar_739793, (object *)&__glo_set_91cell_67_127);make_cons(pair_739794, find_or_add_symbol("set-cell!?"), &cvar_739793);
+  make_cvar(cvar_739795, (object *)&__glo_env_91get_91_125env);make_cons(pair_739796, find_or_add_symbol("env-get->env"), &cvar_739795);
+  make_cvar(cvar_739797, (object *)&__glo_env_91get_91_125field);make_cons(pair_739798, find_or_add_symbol("env-get->field"), &cvar_739797);
+  make_cvar(cvar_739799, (object *)&__glo_env_91get_91_125id);make_cons(pair_739800, find_or_add_symbol("env-get->id"), &cvar_739799);
+  make_cvar(cvar_739801, (object *)&__glo_env_91get_127);make_cons(pair_739802, find_or_add_symbol("env-get?"), &cvar_739801);
+  make_cvar(cvar_739803, (object *)&__glo_env_91make_91_125values);make_cons(pair_739804, find_or_add_symbol("env-make->values"), &cvar_739803);
+  make_cvar(cvar_739805, (object *)&__glo_env_91make_91_125fields);make_cons(pair_739806, find_or_add_symbol("env-make->fields"), &cvar_739805);
+  make_cvar(cvar_739807, (object *)&__glo_env_91make_91_125id);make_cons(pair_739808, find_or_add_symbol("env-make->id"), &cvar_739807);
+  make_cvar(cvar_739809, (object *)&__glo_env_91make_127);make_cons(pair_739810, find_or_add_symbol("env-make?"), &cvar_739809);
+  make_cvar(cvar_739811, (object *)&__glo_closure_91_125fv);make_cons(pair_739812, find_or_add_symbol("closure->fv"), &cvar_739811);
+  make_cvar(cvar_739813, (object *)&__glo_closure_91_125env);make_cons(pair_739814, find_or_add_symbol("closure->env"), &cvar_739813);
+  make_cvar(cvar_739815, (object *)&__glo_closure_91_125lam);make_cons(pair_739816, find_or_add_symbol("closure->lam"), &cvar_739815);
+  make_cvar(cvar_739817, (object *)&__glo_closure_127);make_cons(pair_739818, find_or_add_symbol("closure?"), &cvar_739817);
+  make_cvar(cvar_739819, (object *)&__glo_set_67_91_125exp);make_cons(pair_739820, find_or_add_symbol("set!->exp"), &cvar_739819);
+  make_cvar(cvar_739821, (object *)&__glo_set_67_91_125var);make_cons(pair_739822, find_or_add_symbol("set!->var"), &cvar_739821);
+  make_cvar(cvar_739823, (object *)&__glo_set_67_127);make_cons(pair_739824, find_or_add_symbol("set!?"), &cvar_739823);
+  make_cvar(cvar_739825, (object *)&__glo_define_91c_127);make_cons(pair_739826, find_or_add_symbol("define-c?"), &cvar_739825);
+  make_cvar(cvar_739827, (object *)&__glo_define_91_125exp);make_cons(pair_739828, find_or_add_symbol("define->exp"), &cvar_739827);
+  make_cvar(cvar_739829, (object *)&__glo_define_91_125var);make_cons(pair_739830, find_or_add_symbol("define->var"), &cvar_739829);
+  make_cvar(cvar_739831, (object *)&__glo_define_91_125lambda);make_cons(pair_739832, find_or_add_symbol("define->lambda"), &cvar_739831);
+  make_cvar(cvar_739833, (object *)&__glo_define_91lambda_127);make_cons(pair_739834, find_or_add_symbol("define-lambda?"), &cvar_739833);
+  make_cvar(cvar_739835, (object *)&__glo_define_127);make_cons(pair_739836, find_or_add_symbol("define?"), &cvar_739835);
+  make_cvar(cvar_739837, (object *)&__glo_begin_91_125exps);make_cons(pair_739838, find_or_add_symbol("begin->exps"), &cvar_739837);
+  make_cvar(cvar_739839, (object *)&__glo_prim_91call_127);make_cons(pair_739840, find_or_add_symbol("prim-call?"), &cvar_739839);
+  make_cvar(cvar_739841, (object *)&__glo_precompute_91prim_91app_127);make_cons(pair_739842, find_or_add_symbol("precompute-prim-app?"), &cvar_739841);
+  make_cvar(cvar_739843, (object *)&__glo__85primitives_85);make_cons(pair_739844, find_or_add_symbol("*primitives*"), &cvar_739843);
+  make_cvar(cvar_739845, (object *)&__glo_prim_127);make_cons(pair_739846, find_or_add_symbol("prim?"), &cvar_739845);
+  make_cvar(cvar_739847, (object *)&__glo_app_91_125args);make_cons(pair_739848, find_or_add_symbol("app->args"), &cvar_739847);
+  make_cvar(cvar_739849, (object *)&__glo_app_91_125fun);make_cons(pair_739850, find_or_add_symbol("app->fun"), &cvar_739849);
+  make_cvar(cvar_739851, (object *)&__glo_app_127);make_cons(pair_739852, find_or_add_symbol("app?"), &cvar_739851);
+  make_cvar(cvar_739853, (object *)&__glo_if_91_125else);make_cons(pair_739854, find_or_add_symbol("if->else"), &cvar_739853);
+  make_cvar(cvar_739855, (object *)&__glo_if_91else_127);make_cons(pair_739856, find_or_add_symbol("if-else?"), &cvar_739855);
+  make_cvar(cvar_739857, (object *)&__glo_if_91_125then);make_cons(pair_739858, find_or_add_symbol("if->then"), &cvar_739857);
+  make_cvar(cvar_739859, (object *)&__glo_if_91_125condition);make_cons(pair_739860, find_or_add_symbol("if->condition"), &cvar_739859);
+  make_cvar(cvar_739861, (object *)&__glo_lambda_91_125exp);make_cons(pair_739862, find_or_add_symbol("lambda->exp"), &cvar_739861);
+  make_cvar(cvar_739863, (object *)&__glo_list_91_125pair);make_cons(pair_739864, find_or_add_symbol("list->pair"), &cvar_739863);
+  make_cvar(cvar_739865, (object *)&__glo_pair_91_125list);make_cons(pair_739866, find_or_add_symbol("pair->list"), &cvar_739865);
+  make_cvar(cvar_739867, (object *)&__glo_list_91_125lambda_91formals);make_cons(pair_739868, find_or_add_symbol("list->lambda-formals"), &cvar_739867);
+  make_cvar(cvar_739869, (object *)&__glo_lambda_91num_91args);make_cons(pair_739870, find_or_add_symbol("lambda-num-args"), &cvar_739869);
+  make_cvar(cvar_739871, (object *)&__glo_lambda_91formals_91_125list);make_cons(pair_739872, find_or_add_symbol("lambda-formals->list"), &cvar_739871);
+  make_cvar(cvar_739873, (object *)&__glo_lambda_91formals_91type);make_cons(pair_739874, find_or_add_symbol("lambda-formals-type"), &cvar_739873);
+  make_cvar(cvar_739875, (object *)&__glo_lambda_91varargs_91var);make_cons(pair_739876, find_or_add_symbol("lambda-varargs-var"), &cvar_739875);
+  make_cvar(cvar_739877, (object *)&__glo_lambda_91_125formals);make_cons(pair_739878, find_or_add_symbol("lambda->formals"), &cvar_739877);
+  make_cvar(cvar_739879, (object *)&__glo_lambda_91varargs_127);make_cons(pair_739880, find_or_add_symbol("lambda-varargs?"), &cvar_739879);
+  make_cvar(cvar_739881, (object *)&__glo_letrec_91_125args);make_cons(pair_739882, find_or_add_symbol("letrec->args"), &cvar_739881);
+  make_cvar(cvar_739883, (object *)&__glo_letrec_91_125bound_91vars);make_cons(pair_739884, find_or_add_symbol("letrec->bound-vars"), &cvar_739883);
+  make_cvar(cvar_739885, (object *)&__glo_letrec_91_125exp);make_cons(pair_739886, find_or_add_symbol("letrec->exp"), &cvar_739885);
+  make_cvar(cvar_739887, (object *)&__glo_letrec_91_125bindings);make_cons(pair_739888, find_or_add_symbol("letrec->bindings"), &cvar_739887);
+  make_cvar(cvar_739889, (object *)&__glo_letrec_127);make_cons(pair_739890, find_or_add_symbol("letrec?"), &cvar_739889);
+  make_cvar(cvar_739891, (object *)&__glo_let_91_125args);make_cons(pair_739892, find_or_add_symbol("let->args"), &cvar_739891);
+  make_cvar(cvar_739893, (object *)&__glo_let_91_125bound_91vars);make_cons(pair_739894, find_or_add_symbol("let->bound-vars"), &cvar_739893);
+  make_cvar(cvar_739895, (object *)&__glo_let_91_125exp);make_cons(pair_739896, find_or_add_symbol("let->exp"), &cvar_739895);
+  make_cvar(cvar_739897, (object *)&__glo_let_91_125bindings);make_cons(pair_739898, find_or_add_symbol("let->bindings"), &cvar_739897);
+  make_cvar(cvar_739899, (object *)&__glo_let_127);make_cons(pair_739900, find_or_add_symbol("let?"), &cvar_739899);
+  make_cvar(cvar_739901, (object *)&__glo_quote_127);make_cons(pair_739902, find_or_add_symbol("quote?"), &cvar_739901);
+  make_cvar(cvar_739903, (object *)&__glo_ref_127);make_cons(pair_739904, find_or_add_symbol("ref?"), &cvar_739903);
+  make_cvar(cvar_739905, (object *)&__glo_const_127);make_cons(pair_739906, find_or_add_symbol("const?"), &cvar_739905);
+  make_cvar(cvar_739907, (object *)&__glo_assq_91remove_91keys);make_cons(pair_739908, find_or_add_symbol("assq-remove-keys"), &cvar_739907);
+  make_cvar(cvar_739909, (object *)&__glo_assq_91remove_91key);make_cons(pair_739910, find_or_add_symbol("assq-remove-key"), &cvar_739909);
+  make_cvar(cvar_739911, (object *)&__glo_azip);make_cons(pair_739912, find_or_add_symbol("azip"), &cvar_739911);
+  make_cvar(cvar_739913, (object *)&__glo_reduce);make_cons(pair_739914, find_or_add_symbol("reduce"), &cvar_739913);
+  make_cvar(cvar_739915, (object *)&__glo_difference);make_cons(pair_739916, find_or_add_symbol("difference"), &cvar_739915);
+  make_cvar(cvar_739917, (object *)&__glo__union);make_cons(pair_739918, find_or_add_symbol("union"), &cvar_739917);
+  make_cvar(cvar_739919, (object *)&__glo_remove);make_cons(pair_739920, find_or_add_symbol("remove"), &cvar_739919);
+  make_cvar(cvar_739921, (object *)&__glo_insert);make_cons(pair_739922, find_or_add_symbol("insert"), &cvar_739921);
+  make_cvar(cvar_739923, (object *)&__glo_symbol_121_127);make_cons(pair_739924, find_or_add_symbol("symbol<?"), &cvar_739923);
+  make_cvar(cvar_739925, (object *)&__glo__void);make_cons(pair_739926, find_or_add_symbol("void"), &cvar_739925);
+  make_cvar(cvar_739927, (object *)&__glo_list_91index);make_cons(pair_739928, find_or_add_symbol("list-index"), &cvar_739927);
+  make_cvar(cvar_739929, (object *)&__glo_basename);make_cons(pair_739930, find_or_add_symbol("basename"), &cvar_739929);
+  make_cvar(cvar_739931, (object *)&__glo_cyc_117error);make_cons(pair_739932, find_or_add_symbol("cyc:error"), &cvar_739931);
+  make_cvar(cvar_739933, (object *)&__glo_trace_117debug);make_cons(pair_739934, find_or_add_symbol("trace:debug"), &cvar_739933);
+  make_cvar(cvar_739935, (object *)&__glo_trace_117info);make_cons(pair_739936, find_or_add_symbol("trace:info"), &cvar_739935);
+  make_cvar(cvar_739937, (object *)&__glo_trace_117warn);make_cons(pair_739938, find_or_add_symbol("trace:warn"), &cvar_739937);
+  make_cvar(cvar_739939, (object *)&__glo_trace_117error);make_cons(pair_739940, find_or_add_symbol("trace:error"), &cvar_739939);
+  make_cvar(cvar_739941, (object *)&__glo_trace);make_cons(pair_739942, find_or_add_symbol("trace"), &cvar_739941);
+  make_cvar(cvar_739943, (object *)&__glo__85trace_91level_85);make_cons(pair_739944, find_or_add_symbol("*trace-level*"), &cvar_739943);
+  make_cvar(cvar_739945, (object *)&__glo__85do_91code_91gen_85);make_cons(pair_739946, find_or_add_symbol("*do-code-gen*"), &cvar_739945);
+  make_cvar(cvar_739947, (object *)&__glo_built_91in_91syms);make_cons(pair_739948, find_or_add_symbol("built-in-syms"), &cvar_739947);
+  make_cvar(cvar_739949, (object *)&__glo__85defined_91macros_85);make_cons(pair_739950, find_or_add_symbol("*defined-macros*"), &cvar_739949);
+  make_cvar(cvar_739951, (object *)&__glo_get_91macros);make_cons(pair_739952, find_or_add_symbol("get-macros"), &cvar_739951);
+  make_cvar(cvar_739953, (object *)&__glo_pretty_91print);make_cons(pair_739954, find_or_add_symbol("pretty-print"), &cvar_739953);
+make_cons(c_739955, &pair_739742,Cyc_global_variables);
+make_cons(c_739956, &pair_739744, &c_739955);
+make_cons(c_739957, &pair_739746, &c_739956);
+make_cons(c_739958, &pair_739748, &c_739957);
+make_cons(c_739959, &pair_739750, &c_739958);
+make_cons(c_739960, &pair_739752, &c_739959);
+make_cons(c_739961, &pair_739754, &c_739960);
+make_cons(c_739962, &pair_739756, &c_739961);
+make_cons(c_739963, &pair_739758, &c_739962);
+make_cons(c_739964, &pair_739760, &c_739963);
+make_cons(c_739965, &pair_739762, &c_739964);
+make_cons(c_739966, &pair_739764, &c_739965);
+make_cons(c_739967, &pair_739766, &c_739966);
+make_cons(c_739968, &pair_739768, &c_739967);
+make_cons(c_739969, &pair_739770, &c_739968);
+make_cons(c_739970, &pair_739772, &c_739969);
+make_cons(c_739971, &pair_739774, &c_739970);
+make_cons(c_739972, &pair_739776, &c_739971);
+make_cons(c_739973, &pair_739778, &c_739972);
+make_cons(c_739974, &pair_739780, &c_739973);
+make_cons(c_739975, &pair_739782, &c_739974);
+make_cons(c_739976, &pair_739784, &c_739975);
+make_cons(c_739977, &pair_739786, &c_739976);
+make_cons(c_739978, &pair_739788, &c_739977);
+make_cons(c_739979, &pair_739790, &c_739978);
+make_cons(c_739980, &pair_739792, &c_739979);
+make_cons(c_739981, &pair_739794, &c_739980);
+make_cons(c_739982, &pair_739796, &c_739981);
+make_cons(c_739983, &pair_739798, &c_739982);
+make_cons(c_739984, &pair_739800, &c_739983);
+make_cons(c_739985, &pair_739802, &c_739984);
+make_cons(c_739986, &pair_739804, &c_739985);
+make_cons(c_739987, &pair_739806, &c_739986);
+make_cons(c_739988, &pair_739808, &c_739987);
+make_cons(c_739989, &pair_739810, &c_739988);
+make_cons(c_739990, &pair_739812, &c_739989);
+make_cons(c_739991, &pair_739814, &c_739990);
+make_cons(c_739992, &pair_739816, &c_739991);
+make_cons(c_739993, &pair_739818, &c_739992);
+make_cons(c_739994, &pair_739820, &c_739993);
+make_cons(c_739995, &pair_739822, &c_739994);
+make_cons(c_739996, &pair_739824, &c_739995);
+make_cons(c_739997, &pair_739826, &c_739996);
+make_cons(c_739998, &pair_739828, &c_739997);
+make_cons(c_739999, &pair_739830, &c_739998);
+make_cons(c_7310000, &pair_739832, &c_739999);
+make_cons(c_7310001, &pair_739834, &c_7310000);
+make_cons(c_7310002, &pair_739836, &c_7310001);
+make_cons(c_7310003, &pair_739838, &c_7310002);
+make_cons(c_7310004, &pair_739840, &c_7310003);
+make_cons(c_7310005, &pair_739842, &c_7310004);
+make_cons(c_7310006, &pair_739844, &c_7310005);
+make_cons(c_7310007, &pair_739846, &c_7310006);
+make_cons(c_7310008, &pair_739848, &c_7310007);
+make_cons(c_7310009, &pair_739850, &c_7310008);
+make_cons(c_7310010, &pair_739852, &c_7310009);
+make_cons(c_7310011, &pair_739854, &c_7310010);
+make_cons(c_7310012, &pair_739856, &c_7310011);
+make_cons(c_7310013, &pair_739858, &c_7310012);
+make_cons(c_7310014, &pair_739860, &c_7310013);
+make_cons(c_7310015, &pair_739862, &c_7310014);
+make_cons(c_7310016, &pair_739864, &c_7310015);
+make_cons(c_7310017, &pair_739866, &c_7310016);
+make_cons(c_7310018, &pair_739868, &c_7310017);
+make_cons(c_7310019, &pair_739870, &c_7310018);
+make_cons(c_7310020, &pair_739872, &c_7310019);
+make_cons(c_7310021, &pair_739874, &c_7310020);
+make_cons(c_7310022, &pair_739876, &c_7310021);
+make_cons(c_7310023, &pair_739878, &c_7310022);
+make_cons(c_7310024, &pair_739880, &c_7310023);
+make_cons(c_7310025, &pair_739882, &c_7310024);
+make_cons(c_7310026, &pair_739884, &c_7310025);
+make_cons(c_7310027, &pair_739886, &c_7310026);
+make_cons(c_7310028, &pair_739888, &c_7310027);
+make_cons(c_7310029, &pair_739890, &c_7310028);
+make_cons(c_7310030, &pair_739892, &c_7310029);
+make_cons(c_7310031, &pair_739894, &c_7310030);
+make_cons(c_7310032, &pair_739896, &c_7310031);
+make_cons(c_7310033, &pair_739898, &c_7310032);
+make_cons(c_7310034, &pair_739900, &c_7310033);
+make_cons(c_7310035, &pair_739902, &c_7310034);
+make_cons(c_7310036, &pair_739904, &c_7310035);
+make_cons(c_7310037, &pair_739906, &c_7310036);
+make_cons(c_7310038, &pair_739908, &c_7310037);
+make_cons(c_7310039, &pair_739910, &c_7310038);
+make_cons(c_7310040, &pair_739912, &c_7310039);
+make_cons(c_7310041, &pair_739914, &c_7310040);
+make_cons(c_7310042, &pair_739916, &c_7310041);
+make_cons(c_7310043, &pair_739918, &c_7310042);
+make_cons(c_7310044, &pair_739920, &c_7310043);
+make_cons(c_7310045, &pair_739922, &c_7310044);
+make_cons(c_7310046, &pair_739924, &c_7310045);
+make_cons(c_7310047, &pair_739926, &c_7310046);
+make_cons(c_7310048, &pair_739928, &c_7310047);
+make_cons(c_7310049, &pair_739930, &c_7310048);
+make_cons(c_7310050, &pair_739932, &c_7310049);
+make_cons(c_7310051, &pair_739934, &c_7310050);
+make_cons(c_7310052, &pair_739936, &c_7310051);
+make_cons(c_7310053, &pair_739938, &c_7310052);
+make_cons(c_7310054, &pair_739940, &c_7310053);
+make_cons(c_7310055, &pair_739942, &c_7310054);
+make_cons(c_7310056, &pair_739944, &c_7310055);
+make_cons(c_7310057, &pair_739946, &c_7310056);
+make_cons(c_7310058, &pair_739948, &c_7310057);
+make_cons(c_7310059, &pair_739950, &c_7310058);
+make_cons(c_7310060, &pair_739952, &c_7310059);
+make_cons(c_7310061, &pair_739954, &c_7310060);
+Cyc_global_variables = &c_7310061;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonetransforms)->fn)(data, 1, cont, cont);
 }

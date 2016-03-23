@@ -1392,6 +1392,64 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...) {
   return_closcall1(data, cont, bv);
 }
 
+object Cyc_bytevector(void *data, object cont, int argc, object bval, ...) {
+  int i = 0, val;
+  va_list ap;
+  object tmp;
+  char *buffer;
+  make_empty_bytevector(bv);
+  if (argc > 0) {
+    Cyc_check_int(data, bval);
+    buffer = alloca(sizeof(char) * argc);
+    val = obj_is_int(bval) ? obj_obj2int(bval) : integer_value(bval);
+    buffer[i] = val;
+    va_start(ap, bval);
+    for(i = 1; i < argc; i++) {
+      tmp = va_arg(ap, object);
+      Cyc_check_int(data, tmp);
+      val = obj_is_int(tmp) ? obj_obj2int(tmp) : integer_value(tmp);
+      buffer[i] = val;
+    }
+    va_end(ap);
+  }
+  return_closcall1(data, cont, &bv);
+}
+
+object Cyc_bytevector_u8_ref(void *data, object bv, object k) {
+  const char *buf;
+  int idx, val;
+
+  Cyc_check_bvec(data, bv);
+  Cyc_check_int(data, k);
+
+  buf = ((bytevector)bv)->data;
+  idx = obj_is_int(k) ? obj_obj2int(k) : integer_value(k);
+
+  if (idx < 0 || idx >= ((bytevector)bv)->len) {
+    Cyc_rt_raise2(data, "bytevector-u8-ref - invalid index", k);
+  }
+
+  val = buf[idx];
+  return obj_int2obj(val);
+}
+
+object Cyc_bytevector_u8_set(void *data, object bv, object k, object b) {
+  char *buf;
+  int idx, len, val;
+
+  Cyc_check_bvec(data, bv);
+  Cyc_check_int(data, k);
+  Cyc_check_int(data, b);
+
+  buf = ((bytevector)bv)->data;
+  idx = obj_is_int(k) ? obj_obj2int(k) : integer_value(k),
+  len = ((bytevector)bv)->len;
+
+  Cyc_check_bounds(data, "bytevector-u8-set!", len, idx);
+  buf[idx] = obj_obj2int(b);
+  return bv;
+}
+
 object Cyc_bytevector_length(void *data, object bv) {
     if (!nullp(bv) && !is_value_type(bv) && ((list)bv)->tag == bytevector_tag) {
       return obj_int2obj(((bytevector)bv)->len);
@@ -1853,6 +1911,18 @@ void _bytevector_91length(void *data, object cont, object args){
     Cyc_check_num_args(data, "bytevector_91length", 1, args);
     { object obj = Cyc_bytevector_length(data, car(args));
       return_closcall1(data, cont, obj); }}
+void _bytevector_91u8_91ref(void *data, object cont, object args) {
+    Cyc_check_num_args(data, "bytevector-u8-ref", 2, args);
+    { object c = Cyc_bytevector_u8_ref(data, car(args), cadr(args));
+      return_closcall1(data, cont, c); }}
+void _bytevector_91u8_91set_67(void *data, object cont, object args) {
+    Cyc_check_num_args(data, "bytevector-u8-set!", 3, args);
+    { object bv = Cyc_bytevector_u8_set(data, car(args), cadr(args), caddr(args));
+      return_closcall1(data, cont, bv); }}
+
+void _bytevector(void *data, object cont, object args) {
+  return_closcall1(data, cont, boolean_f); } // TODO
+
 void _vector_91length(void *data, object cont, object args){ 
     Cyc_check_num_args(data, "vector_91length", 1, args);
     { object obj = Cyc_vector_length(data, car(args));
@@ -2680,6 +2750,11 @@ static primitive_type symbol_91_125string_primitive = {{0}, primitive_tag, "symb
 static primitive_type number_91_125string_primitive = {{0}, primitive_tag, "number->string", &_number_91_125string};
 static primitive_type list_91_125vector_primitive = {{0}, primitive_tag, "list-vector", &_list_91_125vector};
 static primitive_type make_91bytevector_primitive = {{0}, primitive_tag, "make-bytevector", &_make_91bytevector};
+
+static primitive_type bytevector_primitive = {{0}, primitive_tag, "bytevector", &_bytevector};
+static primitive_type bytevector_91u8_91ref_primitive = {{0}, primitive_tag, "bytevector-u8-ref", &_bytevector_91u8_91ref};
+static primitive_type bytevector_91u8_91set_67_primitive = {{0}, primitive_tag, "bytevector-u8-set!", &_bytevector_91u8_91set_67};
+
 static primitive_type make_91vector_primitive = {{0}, primitive_tag, "make-vector", &_make_91vector};
 static primitive_type vector_91ref_primitive = {{0}, primitive_tag, "vector-ref", &_vector_91ref};
 static primitive_type vector_91set_67_primitive = {{0}, primitive_tag, "vector-set!", &_vector_91set_67};
@@ -2804,6 +2879,9 @@ const object primitive_symbol_91_125string = &symbol_91_125string_primitive;
 const object primitive_number_91_125string = &number_91_125string_primitive;
 const object primitive_make_91bytevector = &make_91bytevector_primitive;
 const object primitive_make_91vector = &make_91vector_primitive;
+const object primitive_bytevector = &bytevector_primitive;
+const object primitive_bytevector_91u8_91ref = &bytevector_91u8_91ref_primitive;
+const object primitive_bytevector_91u8_91set_67 = &bytevector_91u8_91set_67_primitive;
 const object primitive_list_91_125vector = &list_91_125vector_primitive;
 const object primitive_boolean_127 = &boolean_127_primitive;
 const object primitive_char_127 = &char_127_primitive;
