@@ -38158,7 +38158,7 @@ c_7310643.elts[1] = ((closureN)self_734924)->elts[1];
 c_7310643.elts[2] = ((closureN)self_734924)->elts[2];
 
 
-object c_7310654 = Cyc_make_vector(data,(closure)&c_7310643,r_732502, boolean_f);
+object c_7310654 = Cyc_make_vector2(data,(closure)&c_7310643,2,r_732502, boolean_f);
 return_closcall1(data,(closure)&c_7310643,  c_7310654);; 
 }
 

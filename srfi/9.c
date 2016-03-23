@@ -5607,7 +5607,7 @@ c_73679.elts[0] = ((closureN)self_73600)->elts[0];
 c_73679.elts[1] = ((closureN)self_73600)->elts[1];
 
 
-object c_73709 = Cyc_make_vector(data,(closure)&c_73679,r_73358, boolean_f);
+object c_73709 = Cyc_make_vector2(data,(closure)&c_73679,2,r_73358, boolean_f);
 return_closcall1(data,(closure)&c_73679,  c_73709);; 
 }
 
@@ -5626,7 +5626,7 @@ c_73681.elts[1] = ((closureN)self_73601)->elts[0];
 c_73681.elts[2] = ((closureN)self_73601)->elts[1];
 
 
-object c_73706 = Cyc_make_vector(data,(closure)&c_73681,obj_int2obj(3), boolean_f);
+object c_73706 = Cyc_make_vector2(data,(closure)&c_73681,2,obj_int2obj(3), boolean_f);
 return_closcall1(data,(closure)&c_73681,  c_73706);; 
 }
 
@@ -5814,7 +5814,7 @@ c_73618.elts[1] = k_73369;
 c_73618.elts[2] = name_73113;
 
 
-object c_73640 = Cyc_make_vector(data,(closure)&c_73618,obj_int2obj(3), boolean_f);
+object c_73640 = Cyc_make_vector2(data,(closure)&c_73618,2,obj_int2obj(3), boolean_f);
 return_closcall1(data,(closure)&c_73618,  c_73640);; 
 }
 
