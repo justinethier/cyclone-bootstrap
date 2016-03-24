@@ -593,7 +593,7 @@ object Cyc_display(object x, FILE *port)
         if (i > 0) { 
           fprintf(port, " "); 
         }
-        fprintf(port, "%d", (int)(((bytevector)x)->data[i]));
+        fprintf(port, "%u", (unsigned char)(((bytevector)x)->data[i]));
       }
       fprintf(port, ")");
       break;
@@ -1387,12 +1387,38 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...) {
   if (argc > 1) {
     Cyc_check_int(data, fill);
     fill_val = obj_is_int(fill) ? obj_obj2int(fill) : integer_value(fill);
-    memset(((bytevector)bv)->data, fill_val, length);
+    memset(((bytevector)bv)->data, (unsigned char)fill_val, length);
   }
   return_closcall1(data, cont, bv);
 }
 
-object Cyc_bytevector(void *data, object cont, int argc, object bval, ...) {
+#define Cyc_bytevector_va_list(argc) { \
+  int i = 0, val; \
+  va_list ap; \
+  object tmp; \
+  char *buffer; \
+  make_empty_bytevector(bv); \
+  if (argc > 0) { \
+    Cyc_check_int(data, bval); \
+    buffer = alloca(sizeof(char) * argc); \
+    val = obj_is_int(bval) ? obj_obj2int(bval) : integer_value(bval); \
+    buffer[i] = val; \
+    va_start(ap, bval); \
+    for(i = 1; i < argc; i++) { \
+      tmp = va_arg(ap, object); \
+      Cyc_check_int(data, tmp); \
+      val = obj_is_int(tmp) ? obj_obj2int(tmp) : integer_value(tmp); \
+      buffer[i] = (unsigned char)val; \
+    } \
+    va_end(ap); \
+    bv.len = argc; \
+    bv.data = buffer; \
+  } \
+  return_closcall1(data, cont, &bv); \
+}
+
+void dispatch_bytevector(void *data, int _argc, object clo, object cont, object bval, ...) {
+  int argc = _argc - 1;
   int i = 0, val;
   va_list ap;
   object tmp;
@@ -1408,16 +1434,23 @@ object Cyc_bytevector(void *data, object cont, int argc, object bval, ...) {
       tmp = va_arg(ap, object);
       Cyc_check_int(data, tmp);
       val = obj_is_int(tmp) ? obj_obj2int(tmp) : integer_value(tmp);
-      buffer[i] = val;
+      buffer[i] = (unsigned char) val;
     }
     va_end(ap);
+    bv.len = argc;
+    bv.data = buffer;
   }
   return_closcall1(data, cont, &bv);
 }
 
+object Cyc_bytevector(void *data, object cont, int _argc, object bval, ...) {
+  Cyc_bytevector_va_list(_argc);
+}
+
 object Cyc_bytevector_u8_ref(void *data, object bv, object k) {
   const char *buf;
-  int idx, val;
+  int idx;
+  int val;
 
   Cyc_check_bvec(data, bv);
   Cyc_check_int(data, k);
@@ -1429,7 +1462,7 @@ object Cyc_bytevector_u8_ref(void *data, object bv, object k) {
     Cyc_rt_raise2(data, "bytevector-u8-ref - invalid index", k);
   }
 
-  val = buf[idx];
+  val = (unsigned char)(buf[idx]);
   return obj_int2obj(val);
 }
 
@@ -1446,7 +1479,7 @@ object Cyc_bytevector_u8_set(void *data, object bv, object k, object b) {
   len = ((bytevector)bv)->len;
 
   Cyc_check_bounds(data, "bytevector-u8-set!", len, idx);
-  buf[idx] = obj_obj2int(b);
+  buf[idx] = (unsigned char)(obj_obj2int(b));
   return bv;
 }
 
@@ -1921,7 +1954,8 @@ void _bytevector_91u8_91set_67(void *data, object cont, object args) {
       return_closcall1(data, cont, bv); }}
 
 void _bytevector(void *data, object cont, object args) {
-  return_closcall1(data, cont, boolean_f); } // TODO
+    object argc = Cyc_length(data, args);
+    dispatch(data, obj_obj2int(argc), (function_type)dispatch_bytevector, cont, cont, args); }
 
 void _vector_91length(void *data, object cont, object args){ 
     Cyc_check_num_args(data, "vector_91length", 1, args);
