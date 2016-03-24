@@ -6676,7 +6676,7 @@ c_732604.elts[1] = ((closureN)self_731004)->elts[1];
 return_closcall2(data,  __glo_in_91port_117get_91lnum,  &c_732604, ((closureN)self_731004)->elts[1]);
 } else { 
   
-object c_732617 = Cyc_list2vector(data,  ((closureN)self_731004)->elts[0],((closureN)self_731004)->elts[2]);
+object c_732617 = apply(data,  ((closureN)self_731004)->elts[0],primitive_bytevector, ((closureN)self_731004)->elts[2]);
 return_closcall1(data,  ((closureN)self_731004)->elts[0],  c_732617);}
 ; 
 }

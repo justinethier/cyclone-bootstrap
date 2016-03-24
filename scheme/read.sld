@@ -359,7 +359,7 @@
                             "Invalid vector syntax" ;(->dotted-list sub)
                             (in-port:get-lnum ptbl)
                             (in-port:get-cnum ptbl))
-                         (list->vector sub))
+                         (apply bytevector sub))
                      toks*)) 
                  (if all?
                   (parse fp '() new-toks all? #f parens ptbl)
