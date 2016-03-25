@@ -338,7 +338,7 @@
               ((eq? #\x next-c)
                (parse-number fp toks all? parens ptbl 
                  16 (lambda (num) (string->number (list->string num) 16))))
-              ;; Bytevector (TODO: this is just a placeholder for now)
+              ;; Bytevector
               ((eq? #\u next-c)
                 (set! next-c (read-char fp))
                 (if (not (eq? #\8 next-c))
@@ -392,6 +392,8 @@
                   (in-port:get-cnum ptbl)))))
          ;; just another char...
          (parse fp (cons c tok) toks all? #f parens ptbl)))
+      ((eq? c #\|)
+       (parse-literal-identifier fp toks all? parens ptbl))
       (else
         (parse fp (cons c tok) toks all? #f parens ptbl)))))
 
@@ -517,6 +519,42 @@
       ((eq? #\# c) #t)
       ((eq? #\| c) (read-block-terminator fp ptbl))
       (else (read-block-comment fp ptbl)))))
+
+(define (parse-literal-identifier fp toks all? parens ptbl)
+  (let ((sym (parse-li-rec fp '() ptbl)))
+    (if all?
+      (parse fp '() (cons sym toks) all? #f parens ptbl)
+      sym)))
+(define (parse-li-rec fp tok ptbl)
+  (let ((c (get-next-char fp ptbl))
+        (next (lambda (c) (parse-li-rec fp (cons c tok) ptbl))))
+    (cond
+      ((eq? #\| c) 
+       (let ((str (if (null? tok) 
+                      "||"
+                      (list->string 
+                        (reverse tok)))))
+        (string->symbol str)))
+      ((eof-object? c) 
+       (parse-error "EOF encountered parsing literal identifier" 
+         (in-port:get-lnum ptbl)
+         (in-port:get-cnum ptbl)))
+      (else
+        (next c)))))
+;      ((char-numeric? c) 
+;       (if (or (and (= base 2) (char>? c #\1))
+;               (and (= base 8) (char>? c #\7)))
+;           (parse-error
+;             "Illegal digit"
+;             (in-port:get-lnum ptbl)
+;             (in-port:get-cnum ptbl)))
+;       (next c))
+;      ((and (= base 16) (hex-digit? c))
+;       (next c))
+;      (else
+;        ;; We are done parsing a number
+;        (in-port:set-buf! ptbl c) ;; rebuffer unprocessed char
+;        (reverse tok))))) ;; Return token
 
 (define (parse-number fp toks all? parens ptbl base tok->num)
 ;  (parse-number-rec base fp '() ptbl))
