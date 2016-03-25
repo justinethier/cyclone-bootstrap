@@ -386,6 +386,17 @@
                  (if all?
                    (parse fp '() new-toks all? #f parens ptbl)
                    (car new-toks))))
+              ;; Datum comment
+              ((eq? #\; next-c)
+               ; Read and discard next datum
+               (parse fp '() '() #f #f 0 ptbl)
+               (cond
+                 ((and (not all?) (not (null? tok)))
+                  ;; Reached a terminal char, read out previous token
+                  (in-port:set-buf! ptbl c)
+                  (car (add-tok (->tok tok) toks)))
+                 (else
+                  (parse fp tok toks all? #f parens ptbl))))
               (else
                 (parse-error "Unhandled input sequence" 
                   (in-port:get-lnum ptbl)
@@ -520,11 +531,14 @@
       ((eq? #\| c) (read-block-terminator fp ptbl))
       (else (read-block-comment fp ptbl)))))
 
+;; Parse literal identifier encountered within pipes
 (define (parse-literal-identifier fp toks all? parens ptbl)
   (let ((sym (parse-li-rec fp '() ptbl)))
     (if all?
       (parse fp '() (cons sym toks) all? #f parens ptbl)
       sym)))
+
+;; Helper for parse-literal-identifier
 (define (parse-li-rec fp tok ptbl)
   (let ((c (get-next-char fp ptbl))
         (next (lambda (c) (parse-li-rec fp (cons c tok) ptbl))))
@@ -541,20 +555,6 @@
          (in-port:get-cnum ptbl)))
       (else
         (next c)))))
-;      ((char-numeric? c) 
-;       (if (or (and (= base 2) (char>? c #\1))
-;               (and (= base 8) (char>? c #\7)))
-;           (parse-error
-;             "Illegal digit"
-;             (in-port:get-lnum ptbl)
-;             (in-port:get-cnum ptbl)))
-;       (next c))
-;      ((and (= base 16) (hex-digit? c))
-;       (next c))
-;      (else
-;        ;; We are done parsing a number
-;        (in-port:set-buf! ptbl c) ;; rebuffer unprocessed char
-;        (reverse tok))))) ;; Return token
 
 (define (parse-number fp toks all? parens ptbl base tok->num)
 ;  (parse-number-rec base fp '() ptbl))
