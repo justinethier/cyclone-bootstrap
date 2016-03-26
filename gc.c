@@ -224,12 +224,12 @@ void gc_print_stats(gc_heap *h)
     for (f = h->free_list; f; f = f->next) {
       free += f->size;
       free_chunks++;
-      if (f->size < free_min) free_min = f->size;
+      if (f->size < free_min && f->size > 0) free_min = f->size;
       if (f->size > free_max) free_max = f->size;
     } 
     fprintf(stdout, 
-      "Heap page size=%u, free=%u, free chunks=%u, min=%u, max=%u\n",
-      h->size, free, free_chunks, free_min, free_max);
+      "Heap page size=%u, used=%u, free=%u, free chunks=%u, min=%u, max=%u\n",
+      h->size, h->size - free, free, free_chunks, free_min, free_max);
   }
 }
 
