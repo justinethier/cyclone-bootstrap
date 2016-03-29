@@ -248,6 +248,8 @@
       (list 'bytevector-length bytevector-length)
       (list 'bytevector-append bytevector-append)
       (list 'Cyc-bytevector-copy Cyc-bytevector-copy)
+      ;(list 'Cyc-utf8->string Cyc-utf8->string)
+      ;(list 'Cyc-string->utf8 Cyc-string->utf8)
       (list 'bytevector          bytevector)
       (list 'bytevector-u8-ref   bytevector-u8-ref)
       (list 'bytevector-u8-set!  bytevector-u8-set!)
@@ -286,12 +288,18 @@
       (list 'Cyc-display Cyc-display)))
 
 (define (primitive-procedure-names)
-  (map car
-       primitive-procedures))
+  (foldr 
+    (lambda (x y) 
+      (cons (car x) y)) 
+   '() 
+    primitive-procedures))
 
 (define (primitive-procedure-objects)
-  (map (lambda (proc) (list 'primitive (cadr proc)))
-       primitive-procedures))
+  (foldr
+    (lambda (proc rest) 
+      (cons (list 'primitive (cadr proc)) rest))
+   '()
+    primitive-procedures))
 
 (define (apply-primitive-procedure proc args)
   (apply ;apply-in-underlying-scheme
