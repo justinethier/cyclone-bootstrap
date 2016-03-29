@@ -162,6 +162,8 @@ object Cyc_bytevector_append(void *data, object cont, int _argc, object bv, ...)
 object Cyc_bytevector_copy(void *data, object cont, object bv, object start, object end);
 object Cyc_bytevector_u8_ref(void *data, object bv, object k);
 object Cyc_bytevector_u8_set(void *data, object bv, object k, object b);
+object Cyc_utf82string(void *data, object cont, object bv, object start, object end);
+object Cyc_string2utf8(void *data, object cont, object str, object start, object end);
 object Cyc_list2vector(void *data, object cont, object l);
 object Cyc_number2string(void *d, object cont, object n);
 object Cyc_symbol2string(void *d, object cont, object sym) ;
@@ -358,6 +360,8 @@ extern const object primitive_vector_91set_67;
 extern const object primitive_bytevector;
 extern const object primitive_bytevector_91append;
 extern const object primitive_Cyc_91bytevector_91copy;
+extern const object primitive_Cyc_string_91_125utf8;
+extern const object primitive_Cyc_utf8_91_125string;
 extern const object primitive_bytevector_91u8_91ref;
 extern const object primitive_bytevector_91u8_91set_67;
 extern const object primitive_string_91ref;

@@ -153,20 +153,15 @@
     eof-object
     syntax-error
     bytevector-copy
+    utf8->string
+    string->utf8
 
 ;;;;
 ; Possibly missing functions:
 ;
-;    ; byte vectors are not implemented yet:
-;    bytevector
-;    bytevector-append
+;    ; following byte vector functions are not implemented yet:
 ;    bytevector-copy!
-;    bytevector-length
-;    bytevector-u8-ref
-;    bytevector-u8-set!
-;    bytevector?
 ;    get-output-bytevector
-;    make-bytevector
 ;    open-input-bytevector
 ;    open-output-bytevector
 ;    read-bytevector
@@ -175,10 +170,8 @@
 ;
 ;    : No unicode support at this time
 ;    peek-u8
-;    string->utf8
 ;    read-u8
 ;    u8-ready?
-;    utf8->string
 ;    write-u8
 ;
 ;    ; No complex or rational numbers at this time
@@ -705,6 +698,16 @@
                (start (if (> (length opts) 0) (car opts) 0))
                (end (if (> (length opts) 1) (cadr opts) len)))
         (Cyc-bytevector-copy bv start end)))
+    (define (utf8->string bv . opts)
+      (letrec ((len (bytevector-length bv))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len)))
+        (Cyc-utf8->string bv start end)))
+    (define (string->utf8 str . opts)
+      (letrec ((len (string-length str))
+               (start (if (> (length opts) 0) (car opts) 0))
+               (end (if (> (length opts) 1) (cadr opts) len)))
+        (Cyc-string->utf8 str start end)))
     (define (vector->string vec . opts)
       (let ((lst (apply vector->list (cons vec opts))))
         (list->string lst)))
