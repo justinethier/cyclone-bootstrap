@@ -172,6 +172,9 @@ extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
 extern object __glo_syntax_91error;
+extern object __glo_bytevector_91copy;
+extern object __glo_utf8_91_125string;
+extern object __glo_string_91_125utf8;
 #include "cyclone/runtime.h"
 static void __lambda_8(void *data, int argc, closure _,object k_737) ;
 static void __lambda_7(void *data, int argc, closure _,object k_7310, object obj_732, object port_731_raw, ...) ;

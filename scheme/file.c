@@ -210,6 +210,9 @@ extern object __glo_exact;
 extern object __glo_inexact;
 extern object __glo_eof_91object;
 extern object __glo_syntax_91error;
+extern object __glo_bytevector_91copy;
+extern object __glo_utf8_91_125string;
+extern object __glo_string_91_125utf8;
 #include "cyclone/runtime.h"
 defsymbol(_121param_91convert_125);
 defsymbol(_121param_91set_67_125);
