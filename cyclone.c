@@ -136,330 +136,327 @@
 object __glo_run_91compiler = nil;
 object __glo_read_91file = nil;
 object __glo_c_91compile_91and_91emit = nil;
-extern object __glo_cons_91source;
-extern object __glo_syntax_91rules;
-extern object __glo_letrec_85;
-extern object __glo_guard;
-extern object __glo_guard_91aux;
-extern object __glo_receive;
-extern object __glo_abs;
-extern object __glo_max;
-extern object __glo_min;
-extern object __glo_modulo;
-extern object __glo_floor_91remainder;
-extern object __glo_even_127;
-extern object __glo_exact_91integer_127;
-extern object __glo_exact_127;
-extern object __glo_inexact_127;
-extern object __glo_odd_127;
-extern object __glo_gcd;
-extern object __glo_lcm;
-extern object __glo_quotient;
-extern object __glo_remainder;
-extern object __glo_truncate_91quotient;
-extern object __glo_truncate_91remainder;
-extern object __glo_truncate_95;
-extern object __glo_floor_91quotient;
-extern object __glo_floor_91remainder;
-extern object __glo_floor_95;
-extern object __glo_square;
-extern object __glo_expt;
-extern object __glo_call_91with_91current_91continuation;
-extern object __glo_call_95cc;
-extern object __glo_call_91with_91values;
-extern object __glo_dynamic_91wind;
-extern object __glo_values;
-extern object __glo_char_123_127;
-extern object __glo_char_121_127;
-extern object __glo_char_125_127;
-extern object __glo_char_121_123_127;
-extern object __glo_char_125_123_127;
-extern object __glo_string_123_127;
-extern object __glo_string_121_127;
-extern object __glo_string_121_123_127;
-extern object __glo_string_125_127;
-extern object __glo_string_125_123_127;
-extern object __glo_foldl;
-extern object __glo_foldr;
-extern object __glo_not;
-extern object __glo_list_127;
-extern object __glo_zero_127;
-extern object __glo_positive_127;
-extern object __glo_negative_127;
-extern object __glo_append;
-extern object __glo__list;
-extern object __glo_make_91list;
-extern object __glo_list_91copy;
-extern object __glo_map;
-extern object __glo_for_91each;
-extern object __glo_list_91tail;
-extern object __glo_list_91ref;
-extern object __glo_list_91set_67;
-extern object __glo_reverse;
-extern object __glo_boolean_123_127;
-extern object __glo_symbol_123_127;
-extern object __glo_Cyc_91obj_123_127;
-extern object __glo_vector;
-extern object __glo_vector_91append;
-extern object __glo_vector_91copy;
-extern object __glo_vector_91copy_67;
-extern object __glo_vector_91fill_67;
-extern object __glo_vector_91_125list;
-extern object __glo_vector_91_125string;
-extern object __glo_vector_91map;
-extern object __glo_vector_91for_91each;
-extern object __glo_make_91string;
-extern object __glo_string;
-extern object __glo_string_91copy;
-extern object __glo_string_91copy_67;
-extern object __glo_string_91fill_67;
-extern object __glo_string_91_125list;
-extern object __glo_string_91_125vector;
-extern object __glo_string_91map;
-extern object __glo_string_91for_91each;
-extern object __glo_make_91parameter;
-extern object __glo_current_91output_91port;
-extern object __glo_current_91input_91port;
-extern object __glo_current_91error_91port;
-extern object __glo_call_91with_91port;
-extern object __glo_error;
-extern object __glo_raise;
-extern object __glo_raise_91continuable;
-extern object __glo_with_91exception_91handler;
-extern object __glo_Cyc_91add_91exception_91handler;
-extern object __glo_Cyc_91remove_91exception_91handler;
-extern object __glo_newline;
-extern object __glo_write_91char;
-extern object __glo_write_91string;
-extern object __glo_flush_91output_91port;
-extern object __glo_read_91line;
-extern object __glo_read_91string;
-extern object __glo_input_91port_127;
-extern object __glo_output_91port_127;
-extern object __glo_input_91port_91open_127;
-extern object __glo_output_91port_91open_127;
-extern object __glo_features;
-extern object __glo_any;
-extern object __glo_every;
-extern object __glo_and;
-extern object __glo_or;
-extern object __glo_let;
-extern object __glo_let_85;
-extern object __glo_letrec;
-extern object __glo_begin;
-extern object __glo__case;
-extern object __glo_cond;
-extern object __glo_cond_91expand;
-extern object __glo__do;
-extern object __glo_when;
-extern object __glo_unless;
-extern object __glo_quasiquote;
-extern object __glo_floor;
-extern object __glo_ceiling;
-extern object __glo_truncate;
-extern object __glo_round;
-extern object __glo_exact;
-extern object __glo_inexact;
-extern object __glo_eof_91object;
-extern object __glo_syntax_91error;
-extern object __glo_bytevector_91copy;
-extern object __glo_utf8_91_125string;
-extern object __glo_string_91_125utf8;
-extern object __glo_case_91lambda;
-extern object __glo_eval;
-extern object __glo_eval_91from_91c;
-extern object __glo_create_91environment;
-extern object __glo_setup_91environment;
-extern object __glo_call_91with_91input_91file;
-extern object __glo_call_91with_91output_91file;
-extern object __glo_with_91input_91from_91file;
-extern object __glo_with_91output_91to_91file;
-extern object __glo_delay;
-extern object __glo_force;
-extern object __glo_delay_91force;
-extern object __glo_make_91promise;
-extern object __glo_promise_127;
-extern object __glo_read;
-extern object __glo_read_91all;
-extern object __glo_display;
-extern object __glo_write;
-extern object __glo__85Cyc_91version_91banner_85;
-extern object __glo__85version_85;
-extern object __glo__85version_91banner_85;
-extern object __glo__85c_91file_91header_91comment_85;
-extern object __glo_tagged_91list_127;
-extern object __glo_if_127;
-extern object __glo_begin_127;
-extern object __glo_lambda_127;
-extern object __glo_env_117enclosing_91environment;
-extern object __glo_env_117first_91frame;
-extern object __glo_env_117the_91empty_91environment;
-extern object __glo_env_117make_91frame;
-extern object __glo_env_117frame_91variables;
-extern object __glo_env_117frame_91values;
-extern object __glo_env_117add_91binding_91to_91frame_67;
-extern object __glo_env_117extend_91environment;
-extern object __glo_env_117lookup;
-extern object __glo_env_117lookup_91variable_91value;
-extern object __glo_env_117_191lookup_91variable_91value;
-extern object __glo_env_117set_91variable_91value_67;
-extern object __glo_env_117define_91variable_67;
-extern object __glo_Cyc_91er_91rename;
-extern object __glo_Cyc_91er_91compare_127;
-extern object __glo_mangle;
-extern object __glo_mangle_91global;
-extern object __glo_gensym;
-extern object __glo_delete;
-extern object __glo_delete_91duplicates;
-extern object __glo_list_91insert_91at_67;
-extern object __glo_list_91index2;
-extern object __glo_filter;
-extern object __glo_mta_117code_91gen;
-extern object __glo_autogen;
-extern object __glo_autogen_117defprimitives;
-extern object __glo_autogen_117primitive_91procedures;
-extern object __glo_emit;
-extern object __glo_emit_85;
-extern object __glo_emits;
-extern object __glo_emits_85;
-extern object __glo_emit_91newline;
-extern object __glo_string_91join;
-extern object __glo__85defined_91macros_85;
-extern object __glo__85do_91code_91gen_85;
-extern object __glo__85trace_91level_85;
-extern object __glo__85primitives_85;
-extern object __glo_get_91macros;
-extern object __glo_built_91in_91syms;
-extern object __glo_trace;
-extern object __glo_trace_117error;
-extern object __glo_trace_117warn;
-extern object __glo_trace_117info;
-extern object __glo_trace_117debug;
-extern object __glo_cyc_117error;
-extern object __glo_basename;
-extern object __glo_list_91index;
-extern object __glo_symbol_121_127;
-extern object __glo_insert;
-extern object __glo_remove;
-extern object __glo__union;
-extern object __glo_difference;
-extern object __glo_reduce;
-extern object __glo_azip;
-extern object __glo_assq_91remove_91key;
-extern object __glo_assq_91remove_91keys;
-extern object __glo_const_127;
-extern object __glo_ref_127;
-extern object __glo_quote_127;
-extern object __glo_let_127;
-extern object __glo_let_91_125bindings;
-extern object __glo_let_91_125exp;
-extern object __glo_let_91_125bound_91vars;
-extern object __glo_let_91_125args;
-extern object __glo_letrec_127;
-extern object __glo_letrec_91_125bindings;
-extern object __glo_letrec_91_125exp;
-extern object __glo_letrec_91_125bound_91vars;
-extern object __glo_letrec_91_125args;
-extern object __glo_lambda_127;
-extern object __glo_lambda_91varargs_127;
-extern object __glo_lambda_91_125formals;
-extern object __glo_lambda_91varargs_127;
-extern object __glo_lambda_91varargs_91var;
-extern object __glo_lambda_91formals_91type;
-extern object __glo_lambda_91formals_91_125list;
-extern object __glo_lambda_91num_91args;
-extern object __glo_list_91_125lambda_91formals;
-extern object __glo_pair_91_125list;
-extern object __glo_list_91_125pair;
-extern object __glo_lambda_91_125exp;
-extern object __glo_if_127;
-extern object __glo_if_91_125condition;
-extern object __glo_if_91_125then;
-extern object __glo_if_91else_127;
-extern object __glo_if_91_125else;
-extern object __glo_app_127;
-extern object __glo_app_91_125fun;
-extern object __glo_app_91_125args;
-extern object __glo_prim_127;
-extern object __glo_precompute_91prim_91app_127;
-extern object __glo_prim_91call_127;
-extern object __glo_begin_127;
-extern object __glo_begin_91_125exps;
-extern object __glo_define_127;
-extern object __glo_define_91lambda_127;
-extern object __glo_define_91_125lambda;
-extern object __glo_define_91_125var;
-extern object __glo_define_91_125exp;
-extern object __glo_define_91c_127;
-extern object __glo_set_67_127;
-extern object __glo_set_67_91_125var;
-extern object __glo_set_67_91_125exp;
-extern object __glo_closure_127;
-extern object __glo_closure_91_125lam;
-extern object __glo_closure_91_125env;
-extern object __glo_closure_91_125fv;
-extern object __glo_env_91make_127;
-extern object __glo_env_91make_91_125id;
-extern object __glo_env_91make_91_125fields;
-extern object __glo_env_91make_91_125values;
-extern object __glo_env_91get_127;
-extern object __glo_env_91get_91_125id;
-extern object __glo_env_91get_91_125field;
-extern object __glo_env_91get_91_125env;
-extern object __glo_set_91cell_67_127;
-extern object __glo_set_91cell_67_91_125cell;
-extern object __glo_set_91cell_67_91_125value;
-extern object __glo_cell_127;
-extern object __glo_cell_91_125value;
-extern object __glo_cell_91get_127;
-extern object __glo_cell_91get_91_125cell;
-extern object __glo_expand;
-extern object __glo_expand_91lambda_91body;
-extern object __glo_let_123_125lambda;
-extern object __glo_isolate_91globals;
-extern object __glo_has_91global_127;
-extern object __glo_global_91vars;
-extern object __glo_filter_91unused_91variables;
-extern object __glo_free_91vars;
-extern object __glo_clear_91mutables;
-extern object __glo_mark_91mutable;
-extern object __glo_is_91mutable_127;
-extern object __glo_analyze_91mutable_91variables;
-extern object __glo_wrap_91mutables;
-extern object __glo_alpha_91convert;
-extern object __glo_cps_91convert;
-extern object __glo_cps_91optimize_9101;
-extern object __glo_pos_91in_91list;
-extern object __glo_closure_91convert;
-extern object __glo_define_91syntax_127;
-extern object __glo_macro_117macro_127;
-extern object __glo_macro_117expand;
-extern object __glo_macro_117add_67;
-extern object __glo_macro_117load_91env_67;
-extern object __glo_macro_117get_91env;
-extern object __glo_macro_117get_91defined_91macros;
-extern object __glo_library_127;
-extern object __glo_lib_117list_91_125import_91set;
-extern object __glo_lib_117name;
-extern object __glo_lib_117name_91_125string;
-extern object __glo_lib_117name_91_125symbol;
-extern object __glo_lib_117result;
-extern object __glo_lib_117exports;
-extern object __glo_lib_117imports;
-extern object __glo_lib_117body;
-extern object __glo_lib_117includes;
-extern object __glo_lib_117import_91_125filename;
-extern object __glo_lib_117import_91_125metalist;
-extern object __glo_lib_117import_91_125path;
-extern object __glo_lib_117read_91imports;
-extern object __glo_lib_117import_91_125export_91list;
-extern object __glo_lib_117resolve_91imports;
-extern object __glo_lib_117resolve_91meta;
-extern object __glo_lib_117get_91all_91import_91deps;
-extern object __glo_lib_117get_91dep_91list;
-extern object __glo_lib_117imports_91_125idb;
-extern object __glo_lib_117idb_117ids;
-extern object __glo_lib_117idb_117id_91_125import;
+extern object __glo_cons_91source_scheme_base;
+extern object __glo_syntax_91rules_scheme_base;
+extern object __glo_letrec_85_scheme_base;
+extern object __glo_guard_scheme_base;
+extern object __glo_guard_91aux_scheme_base;
+extern object __glo_receive_scheme_base;
+extern object __glo_abs_scheme_base;
+extern object __glo_max_scheme_base;
+extern object __glo_min_scheme_base;
+extern object __glo_modulo_scheme_base;
+extern object __glo_floor_91remainder_scheme_base;
+extern object __glo_even_127_scheme_base;
+extern object __glo_exact_91integer_127_scheme_base;
+extern object __glo_exact_127_scheme_base;
+extern object __glo_inexact_127_scheme_base;
+extern object __glo_odd_127_scheme_base;
+extern object __glo_gcd_scheme_base;
+extern object __glo_lcm_scheme_base;
+extern object __glo_quotient_scheme_base;
+extern object __glo_remainder_scheme_base;
+extern object __glo_truncate_91quotient_scheme_base;
+extern object __glo_truncate_91remainder_scheme_base;
+extern object __glo_truncate_95_scheme_base;
+extern object __glo_floor_91quotient_scheme_base;
+extern object __glo_floor_91remainder_scheme_base;
+extern object __glo_floor_95_scheme_base;
+extern object __glo_square_scheme_base;
+extern object __glo_expt_scheme_base;
+extern object __glo_call_91with_91current_91continuation_scheme_base;
+extern object __glo_call_95cc_scheme_base;
+extern object __glo_call_91with_91values_scheme_base;
+extern object __glo_dynamic_91wind_scheme_base;
+extern object __glo_values_scheme_base;
+extern object __glo_char_123_127_scheme_base;
+extern object __glo_char_121_127_scheme_base;
+extern object __glo_char_125_127_scheme_base;
+extern object __glo_char_121_123_127_scheme_base;
+extern object __glo_char_125_123_127_scheme_base;
+extern object __glo_string_123_127_scheme_base;
+extern object __glo_string_121_127_scheme_base;
+extern object __glo_string_121_123_127_scheme_base;
+extern object __glo_string_125_127_scheme_base;
+extern object __glo_string_125_123_127_scheme_base;
+extern object __glo_foldl_scheme_base;
+extern object __glo_foldr_scheme_base;
+extern object __glo_not_scheme_base;
+extern object __glo_list_127_scheme_base;
+extern object __glo_zero_127_scheme_base;
+extern object __glo_positive_127_scheme_base;
+extern object __glo_negative_127_scheme_base;
+extern object __glo_append_scheme_base;
+extern object __glo__list_scheme_base;
+extern object __glo_make_91list_scheme_base;
+extern object __glo_list_91copy_scheme_base;
+extern object __glo_map_scheme_base;
+extern object __glo_for_91each_scheme_base;
+extern object __glo_list_91tail_scheme_base;
+extern object __glo_list_91ref_scheme_base;
+extern object __glo_list_91set_67_scheme_base;
+extern object __glo_reverse_scheme_base;
+extern object __glo_boolean_123_127_scheme_base;
+extern object __glo_symbol_123_127_scheme_base;
+extern object __glo_Cyc_91obj_123_127_scheme_base;
+extern object __glo_vector_scheme_base;
+extern object __glo_vector_91append_scheme_base;
+extern object __glo_vector_91copy_scheme_base;
+extern object __glo_vector_91copy_67_scheme_base;
+extern object __glo_vector_91fill_67_scheme_base;
+extern object __glo_vector_91_125list_scheme_base;
+extern object __glo_vector_91_125string_scheme_base;
+extern object __glo_vector_91map_scheme_base;
+extern object __glo_vector_91for_91each_scheme_base;
+extern object __glo_make_91string_scheme_base;
+extern object __glo_string_scheme_base;
+extern object __glo_string_91copy_scheme_base;
+extern object __glo_string_91copy_67_scheme_base;
+extern object __glo_string_91fill_67_scheme_base;
+extern object __glo_string_91_125list_scheme_base;
+extern object __glo_string_91_125vector_scheme_base;
+extern object __glo_string_91map_scheme_base;
+extern object __glo_string_91for_91each_scheme_base;
+extern object __glo_make_91parameter_scheme_base;
+extern object __glo_current_91output_91port_scheme_base;
+extern object __glo_current_91input_91port_scheme_base;
+extern object __glo_current_91error_91port_scheme_base;
+extern object __glo_call_91with_91port_scheme_base;
+extern object __glo_error_scheme_base;
+extern object __glo_raise_scheme_base;
+extern object __glo_raise_91continuable_scheme_base;
+extern object __glo_with_91exception_91handler_scheme_base;
+extern object __glo_Cyc_91add_91exception_91handler_scheme_base;
+extern object __glo_Cyc_91remove_91exception_91handler_scheme_base;
+extern object __glo_newline_scheme_base;
+extern object __glo_write_91char_scheme_base;
+extern object __glo_write_91string_scheme_base;
+extern object __glo_flush_91output_91port_scheme_base;
+extern object __glo_read_91line_scheme_base;
+extern object __glo_read_91string_scheme_base;
+extern object __glo_input_91port_127_scheme_base;
+extern object __glo_output_91port_127_scheme_base;
+extern object __glo_input_91port_91open_127_scheme_base;
+extern object __glo_output_91port_91open_127_scheme_base;
+extern object __glo_features_scheme_base;
+extern object __glo_any_scheme_base;
+extern object __glo_every_scheme_base;
+extern object __glo_and_scheme_base;
+extern object __glo_or_scheme_base;
+extern object __glo_let_scheme_base;
+extern object __glo_let_85_scheme_base;
+extern object __glo_letrec_scheme_base;
+extern object __glo_begin_scheme_base;
+extern object __glo__case_scheme_base;
+extern object __glo_cond_scheme_base;
+extern object __glo_cond_91expand_scheme_base;
+extern object __glo__do_scheme_base;
+extern object __glo_when_scheme_base;
+extern object __glo_unless_scheme_base;
+extern object __glo_quasiquote_scheme_base;
+extern object __glo_floor_scheme_base;
+extern object __glo_ceiling_scheme_base;
+extern object __glo_truncate_scheme_base;
+extern object __glo_round_scheme_base;
+extern object __glo_exact_scheme_base;
+extern object __glo_inexact_scheme_base;
+extern object __glo_eof_91object_scheme_base;
+extern object __glo_syntax_91error_scheme_base;
+extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_utf8_91_125string_scheme_base;
+extern object __glo_string_91_125utf8_scheme_base;
+extern object __glo_case_91lambda_scheme_case_91lambda;
+extern object __glo_eval_scheme_eval;
+extern object __glo_eval_91from_91c_scheme_eval;
+extern object __glo_create_91environment_scheme_eval;
+extern object __glo_setup_91environment_scheme_eval;
+extern object __glo_call_91with_91input_91file_scheme_file;
+extern object __glo_call_91with_91output_91file_scheme_file;
+extern object __glo_with_91input_91from_91file_scheme_file;
+extern object __glo_with_91output_91to_91file_scheme_file;
+extern object __glo_delay_scheme_lazy;
+extern object __glo_force_scheme_lazy;
+extern object __glo_delay_91force_scheme_lazy;
+extern object __glo_make_91promise_scheme_lazy;
+extern object __glo_promise_127_scheme_lazy;
+extern object __glo_read_scheme_read;
+extern object __glo_read_91all_scheme_read;
+extern object __glo_display_scheme_write;
+extern object __glo_write_scheme_write;
+extern object __glo__85Cyc_91version_91banner_85_scheme_cyclone_common;
+extern object __glo__85version_85_scheme_cyclone_common;
+extern object __glo__85version_91banner_85_scheme_cyclone_common;
+extern object __glo__85c_91file_91header_91comment_85_scheme_cyclone_common;
+extern object __glo_tagged_91list_127_scheme_cyclone_util;
+extern object __glo_if_127_scheme_cyclone_util;
+extern object __glo_begin_127_scheme_cyclone_util;
+extern object __glo_lambda_127_scheme_cyclone_util;
+extern object __glo_env_117enclosing_91environment_scheme_cyclone_util;
+extern object __glo_env_117first_91frame_scheme_cyclone_util;
+extern object __glo_env_117the_91empty_91environment_scheme_cyclone_util;
+extern object __glo_env_117make_91frame_scheme_cyclone_util;
+extern object __glo_env_117frame_91variables_scheme_cyclone_util;
+extern object __glo_env_117frame_91values_scheme_cyclone_util;
+extern object __glo_env_117add_91binding_91to_91frame_67_scheme_cyclone_util;
+extern object __glo_env_117extend_91environment_scheme_cyclone_util;
+extern object __glo_env_117lookup_scheme_cyclone_util;
+extern object __glo_env_117lookup_91variable_91value_scheme_cyclone_util;
+extern object __glo_env_117_191lookup_91variable_91value_scheme_cyclone_util;
+extern object __glo_env_117set_91variable_91value_67_scheme_cyclone_util;
+extern object __glo_env_117define_91variable_67_scheme_cyclone_util;
+extern object __glo_Cyc_91er_91rename_scheme_cyclone_util;
+extern object __glo_Cyc_91er_91compare_127_scheme_cyclone_util;
+extern object __glo_mangle_scheme_cyclone_util;
+extern object __glo_mangle_91global_scheme_cyclone_util;
+extern object __glo_gensym_scheme_cyclone_util;
+extern object __glo_delete_scheme_cyclone_util;
+extern object __glo_delete_91duplicates_scheme_cyclone_util;
+extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
+extern object __glo_list_91index2_scheme_cyclone_util;
+extern object __glo_filter_scheme_cyclone_util;
+extern object __glo_mta_117code_91gen_scheme_cyclone_cgen;
+extern object __glo_autogen_scheme_cyclone_cgen;
+extern object __glo_autogen_117defprimitives_scheme_cyclone_cgen;
+extern object __glo_autogen_117primitive_91procedures_scheme_cyclone_cgen;
+extern object __glo_emit_scheme_cyclone_cgen;
+extern object __glo_emit_85_scheme_cyclone_cgen;
+extern object __glo_emits_scheme_cyclone_cgen;
+extern object __glo_emits_85_scheme_cyclone_cgen;
+extern object __glo_emit_91newline_scheme_cyclone_cgen;
+extern object __glo_string_91join_scheme_cyclone_cgen;
+extern object __glo__85defined_91macros_85_scheme_cyclone_transforms;
+extern object __glo__85do_91code_91gen_85_scheme_cyclone_transforms;
+extern object __glo__85trace_91level_85_scheme_cyclone_transforms;
+extern object __glo__85primitives_85_scheme_cyclone_transforms;
+extern object __glo_get_91macros_scheme_cyclone_transforms;
+extern object __glo_built_91in_91syms_scheme_cyclone_transforms;
+extern object __glo_trace_scheme_cyclone_transforms;
+extern object __glo_trace_117error_scheme_cyclone_transforms;
+extern object __glo_trace_117warn_scheme_cyclone_transforms;
+extern object __glo_trace_117info_scheme_cyclone_transforms;
+extern object __glo_trace_117debug_scheme_cyclone_transforms;
+extern object __glo_cyc_117error_scheme_cyclone_transforms;
+extern object __glo_basename_scheme_cyclone_transforms;
+extern object __glo_list_91index_scheme_cyclone_transforms;
+extern object __glo_symbol_121_127_scheme_cyclone_transforms;
+extern object __glo_insert_scheme_cyclone_transforms;
+extern object __glo_remove_scheme_cyclone_transforms;
+extern object __glo__union_scheme_cyclone_transforms;
+extern object __glo_difference_scheme_cyclone_transforms;
+extern object __glo_reduce_scheme_cyclone_transforms;
+extern object __glo_azip_scheme_cyclone_transforms;
+extern object __glo_assq_91remove_91key_scheme_cyclone_transforms;
+extern object __glo_assq_91remove_91keys_scheme_cyclone_transforms;
+extern object __glo_const_127_scheme_cyclone_transforms;
+extern object __glo_ref_127_scheme_cyclone_transforms;
+extern object __glo_quote_127_scheme_cyclone_transforms;
+extern object __glo_let_127_scheme_cyclone_transforms;
+extern object __glo_let_91_125bindings_scheme_cyclone_transforms;
+extern object __glo_let_91_125exp_scheme_cyclone_transforms;
+extern object __glo_let_91_125bound_91vars_scheme_cyclone_transforms;
+extern object __glo_let_91_125args_scheme_cyclone_transforms;
+extern object __glo_letrec_127_scheme_cyclone_transforms;
+extern object __glo_letrec_91_125bindings_scheme_cyclone_transforms;
+extern object __glo_letrec_91_125exp_scheme_cyclone_transforms;
+extern object __glo_letrec_91_125bound_91vars_scheme_cyclone_transforms;
+extern object __glo_letrec_91_125args_scheme_cyclone_transforms;
+extern object __glo_lambda_91varargs_127_scheme_cyclone_transforms;
+extern object __glo_lambda_91_125formals_scheme_cyclone_transforms;
+extern object __glo_lambda_91varargs_127_scheme_cyclone_transforms;
+extern object __glo_lambda_91varargs_91var_scheme_cyclone_transforms;
+extern object __glo_lambda_91formals_91type_scheme_cyclone_transforms;
+extern object __glo_lambda_91formals_91_125list_scheme_cyclone_transforms;
+extern object __glo_lambda_91num_91args_scheme_cyclone_transforms;
+extern object __glo_list_91_125lambda_91formals_scheme_cyclone_transforms;
+extern object __glo_pair_91_125list_scheme_cyclone_transforms;
+extern object __glo_list_91_125pair_scheme_cyclone_transforms;
+extern object __glo_lambda_91_125exp_scheme_cyclone_transforms;
+extern object __glo_if_91_125condition_scheme_cyclone_transforms;
+extern object __glo_if_91_125then_scheme_cyclone_transforms;
+extern object __glo_if_91else_127_scheme_cyclone_transforms;
+extern object __glo_if_91_125else_scheme_cyclone_transforms;
+extern object __glo_app_127_scheme_cyclone_transforms;
+extern object __glo_app_91_125fun_scheme_cyclone_transforms;
+extern object __glo_app_91_125args_scheme_cyclone_transforms;
+extern object __glo_prim_127_scheme_cyclone_transforms;
+extern object __glo_precompute_91prim_91app_127_scheme_cyclone_transforms;
+extern object __glo_prim_91call_127_scheme_cyclone_transforms;
+extern object __glo_begin_91_125exps_scheme_cyclone_transforms;
+extern object __glo_define_127_scheme_cyclone_transforms;
+extern object __glo_define_91lambda_127_scheme_cyclone_transforms;
+extern object __glo_define_91_125lambda_scheme_cyclone_transforms;
+extern object __glo_define_91_125var_scheme_cyclone_transforms;
+extern object __glo_define_91_125exp_scheme_cyclone_transforms;
+extern object __glo_define_91c_127_scheme_cyclone_transforms;
+extern object __glo_set_67_127_scheme_cyclone_transforms;
+extern object __glo_set_67_91_125var_scheme_cyclone_transforms;
+extern object __glo_set_67_91_125exp_scheme_cyclone_transforms;
+extern object __glo_closure_127_scheme_cyclone_transforms;
+extern object __glo_closure_91_125lam_scheme_cyclone_transforms;
+extern object __glo_closure_91_125env_scheme_cyclone_transforms;
+extern object __glo_closure_91_125fv_scheme_cyclone_transforms;
+extern object __glo_env_91make_127_scheme_cyclone_transforms;
+extern object __glo_env_91make_91_125id_scheme_cyclone_transforms;
+extern object __glo_env_91make_91_125fields_scheme_cyclone_transforms;
+extern object __glo_env_91make_91_125values_scheme_cyclone_transforms;
+extern object __glo_env_91get_127_scheme_cyclone_transforms;
+extern object __glo_env_91get_91_125id_scheme_cyclone_transforms;
+extern object __glo_env_91get_91_125field_scheme_cyclone_transforms;
+extern object __glo_env_91get_91_125env_scheme_cyclone_transforms;
+extern object __glo_set_91cell_67_127_scheme_cyclone_transforms;
+extern object __glo_set_91cell_67_91_125cell_scheme_cyclone_transforms;
+extern object __glo_set_91cell_67_91_125value_scheme_cyclone_transforms;
+extern object __glo_cell_127_scheme_cyclone_transforms;
+extern object __glo_cell_91_125value_scheme_cyclone_transforms;
+extern object __glo_cell_91get_127_scheme_cyclone_transforms;
+extern object __glo_cell_91get_91_125cell_scheme_cyclone_transforms;
+extern object __glo_expand_scheme_cyclone_transforms;
+extern object __glo_expand_91lambda_91body_scheme_cyclone_transforms;
+extern object __glo_let_123_125lambda_scheme_cyclone_transforms;
+extern object __glo_isolate_91globals_scheme_cyclone_transforms;
+extern object __glo_has_91global_127_scheme_cyclone_transforms;
+extern object __glo_global_91vars_scheme_cyclone_transforms;
+extern object __glo_filter_91unused_91variables_scheme_cyclone_transforms;
+extern object __glo_free_91vars_scheme_cyclone_transforms;
+extern object __glo_clear_91mutables_scheme_cyclone_transforms;
+extern object __glo_mark_91mutable_scheme_cyclone_transforms;
+extern object __glo_is_91mutable_127_scheme_cyclone_transforms;
+extern object __glo_analyze_91mutable_91variables_scheme_cyclone_transforms;
+extern object __glo_wrap_91mutables_scheme_cyclone_transforms;
+extern object __glo_alpha_91convert_scheme_cyclone_transforms;
+extern object __glo_cps_91convert_scheme_cyclone_transforms;
+extern object __glo_cps_91optimize_9101_scheme_cyclone_transforms;
+extern object __glo_pos_91in_91list_scheme_cyclone_transforms;
+extern object __glo_closure_91convert_scheme_cyclone_transforms;
+extern object __glo_define_91syntax_127_scheme_cyclone_macros;
+extern object __glo_macro_117macro_127_scheme_cyclone_macros;
+extern object __glo_macro_117expand_scheme_cyclone_macros;
+extern object __glo_macro_117add_67_scheme_cyclone_macros;
+extern object __glo_macro_117load_91env_67_scheme_cyclone_macros;
+extern object __glo_macro_117get_91env_scheme_cyclone_macros;
+extern object __glo_macro_117get_91defined_91macros_scheme_cyclone_macros;
+extern object __glo_library_127_scheme_cyclone_libraries;
+extern object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries;
+extern object __glo_lib_117name_scheme_cyclone_libraries;
+extern object __glo_lib_117name_91_125string_scheme_cyclone_libraries;
+extern object __glo_lib_117name_91_125symbol_scheme_cyclone_libraries;
+extern object __glo_lib_117result_scheme_cyclone_libraries;
+extern object __glo_lib_117exports_scheme_cyclone_libraries;
+extern object __glo_lib_117imports_scheme_cyclone_libraries;
+extern object __glo_lib_117body_scheme_cyclone_libraries;
+extern object __glo_lib_117includes_scheme_cyclone_libraries;
+extern object __glo_lib_117import_91_125filename_scheme_cyclone_libraries;
+extern object __glo_lib_117import_91_125metalist_scheme_cyclone_libraries;
+extern object __glo_lib_117import_91_125path_scheme_cyclone_libraries;
+extern object __glo_lib_117read_91imports_scheme_cyclone_libraries;
+extern object __glo_lib_117import_91_125export_91list_scheme_cyclone_libraries;
+extern object __glo_lib_117resolve_91imports_scheme_cyclone_libraries;
+extern object __glo_lib_117resolve_91meta_scheme_cyclone_libraries;
+extern object __glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries;
+extern object __glo_lib_117get_91dep_91list_scheme_cyclone_libraries;
+extern object __glo_lib_117imports_91_125idb_scheme_cyclone_libraries;
+extern object __glo_lib_117idb_117ids_scheme_cyclone_libraries;
+extern object __glo_lib_117idb_117id_91_125import_scheme_cyclone_libraries;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
 defsymbol(result);
@@ -798,7 +795,7 @@ return_closcall1(data,(closure)&c_731716,  &c_731737);;
 }
 
 static void __lambda_261(void *data, int argc, object self_73333, object r_73123) {
-  return_closcall2(data,  __glo_not,  ((closureN)self_73333)->elts[0], r_73123);; 
+  return_closcall2(data,  __glo_not_scheme_base,  ((closureN)self_73333)->elts[0], r_73123);; 
 }
 
 static void __lambda_260(void *data, int argc, object self_73334, object k_73124) {
@@ -868,7 +865,7 @@ c_731593.num_elt = 1;
 c_731593.elts = (object *)alloca(sizeof(object) * 1);
 c_731593.elts[0] = ((closureN)self_73338)->elts[0];
 
-return_closcall3(data,  __glo_filter,  &c_731593, r_73121, ((closureN)self_73338)->elts[0]);; 
+return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_731593, r_73121, ((closureN)self_73338)->elts[0]);; 
 }
 
 static void __lambda_255(void *data, int argc, object self_73339, object non_91opts_7349) {
@@ -1183,11 +1180,11 @@ static void __lambda_241(void *data, int argc, object self_73353) {
 static void __lambda_240(void *data, int argc, closure _) {
   
 make_string(c_731677, "autogen.out");
-return_closcall2(data,  __glo_autogen,  primitive__75halt, &c_731677);; 
+return_closcall2(data,  __glo_autogen_scheme_cyclone_cgen,  primitive__75halt, &c_731677);; 
 }
 
 static void __lambda_239(void *data, int argc, closure _) {
-  return_closcall2(data,  __glo_display,  primitive__75halt, __glo__85version_91banner_85);; 
+  return_closcall2(data,  __glo_display_scheme_write,  primitive__75halt, __glo__85version_91banner_85_scheme_cyclone_common);; 
 }
 
 static void __lambda_238(void *data, int argc, closure _) {
@@ -1195,15 +1192,15 @@ static void __lambda_238(void *data, int argc, closure _) {
 mclosure0(c_731666, (function_type)__lambda_237);c_731666.num_args = 1;
 
 make_string(c_731668, "autogen.out");
-return_closcall2(data,  __glo_autogen,  &c_731666, &c_731668);; 
+return_closcall2(data,  __glo_autogen_scheme_cyclone_cgen,  &c_731666, &c_731668);; 
 }
 
 static void __lambda_237(void *data, int argc, object self_73354, object r_73111) {
-  return_closcall1(data,  __glo_newline,  primitive__75halt);; 
+  return_closcall1(data,  __glo_newline_scheme_base,  primitive__75halt);; 
 }
 
 static void __lambda_236(void *data, int argc, closure _) {
-  return_closcall2(data,  __glo_display,  primitive__75halt, __glo__85version_91banner_85);; 
+  return_closcall2(data,  __glo_display_scheme_write,  primitive__75halt, __glo__85version_91banner_85_scheme_cyclone_common);; 
 }
 
 static void __lambda_235(void *data, int argc, closure _) {
@@ -1211,11 +1208,11 @@ static void __lambda_235(void *data, int argc, closure _) {
 mclosure0(c_731655, (function_type)__lambda_234);c_731655.num_args = 1;
 
 make_string(c_731657, "\n -t              Show intermediate trace output in generated C files\n -d              Only generate intermediate C files, do not compile them\n -h, --help      Display usage information\n -v              Display version information\n --autogen       Cyclone developer use only, create autogen.out file\n");
-return_closcall2(data,  __glo_display,  &c_731655, &c_731657);; 
+return_closcall2(data,  __glo_display_scheme_write,  &c_731655, &c_731657);; 
 }
 
 static void __lambda_234(void *data, int argc, object self_73355, object r_73108) {
-  return_closcall1(data,  __glo_newline,  primitive__75halt);; 
+  return_closcall1(data,  __glo_newline_scheme_base,  primitive__75halt);; 
 }
 
 static void __lambda_233(void *data, int argc, object self_73356, object k_73115) {
@@ -1233,11 +1230,11 @@ static void __lambda_232(void *data, int argc, closure _) {
 mclosure0(c_731637, (function_type)__lambda_231);c_731637.num_args = 1;
 
 make_string(c_731639, "cyclone: no input file");
-return_closcall2(data,  __glo_display,  &c_731637, &c_731639);; 
+return_closcall2(data,  __glo_display_scheme_write,  &c_731637, &c_731639);; 
 }
 
 static void __lambda_231(void *data, int argc, object self_73357, object r_73106) {
-  return_closcall1(data,  __glo_newline,  primitive__75halt);; 
+  return_closcall1(data,  __glo_newline_scheme_base,  primitive__75halt);; 
 }
 
 static void __lambda_230(void *data, int argc, object self_73358, object k_73117) {
@@ -1285,7 +1282,7 @@ return_closcall1(data,(closure)&c_731603,  memberp(data, &c_731612, ((closureN)s
 
 static void __lambda_227(void *data, int argc, object self_73361, object r_73120) {
   if( !eq(boolean_f, r_73120) ){ 
-  return_closcall1(data,  ((closureN)self_73361)->elts[0],  global_set(__glo__85trace_91level_85, obj_int2obj(4)));
+  return_closcall1(data,  ((closureN)self_73361)->elts[0],  global_set(__glo__85trace_91level_85_scheme_cyclone_transforms, obj_int2obj(4)));
 } else { 
   return_closcall1(data,  ((closureN)self_73361)->elts[0],  boolean_f);}
 ; 
@@ -1358,7 +1355,7 @@ c_731362.elts[1] = ((closureN)self_73364)->elts[1];
 c_731362.elts[2] = ((closureN)self_73364)->elts[2];
 c_731362.elts[3] = ((closureN)self_73364)->elts[3];
 
-return_closcall2(data,  __glo_library_127,  &c_731362, r_73170);; 
+return_closcall2(data,  __glo_library_127_scheme_cyclone_libraries,  &c_731362, r_73170);; 
 }
 
 static void __lambda_222(void *data, int argc, object self_73365, object r_73169) {
@@ -1376,7 +1373,7 @@ c_731364.elts[1] = ((closureN)self_73365)->elts[1];
 c_731364.elts[2] = ((closureN)self_73365)->elts[2];
 c_731364.elts[3] = ((closureN)self_73365)->elts[3];
 
-return_closcall2(data,  __glo_not,  &c_731364, r_73169);; 
+return_closcall2(data,  __glo_not_scheme_base,  &c_731364, r_73169);; 
 }
 
 static void __lambda_221(void *data, int argc, object self_73366, object program_127_7356) {
@@ -1427,7 +1424,7 @@ c_731393.elts[3] = ((closureN)self_73367)->elts[3];
 c_731393.elts[4] = lib_91deps_7357;
 c_731393.elts[5] = ((closureN)self_73367)->elts[4];
 
-return_closcall2(data,  __glo_basename,  &c_731393, ((closureN)self_73367)->elts[1]);; 
+return_closcall2(data,  __glo_basename_scheme_cyclone_transforms,  &c_731393, ((closureN)self_73367)->elts[1]);; 
 }
 
 static void __lambda_219(void *data, int argc, object self_73368, object exec_91file_7358) {
@@ -1550,7 +1547,7 @@ static void __lambda_215(void *data, int argc, object self_73372, object k_73162
 }
 
 static void __lambda_214(void *data, int argc, object self_73373, object r_73161) {
-  return_closcall3(data,  __glo_with_91output_91to_91file,  ((closureN)self_73373)->elts[0], ((closureN)self_73373)->elts[1], r_73161);; 
+  return_closcall3(data,  __glo_with_91output_91to_91file_scheme_file,  ((closureN)self_73373)->elts[0], ((closureN)self_73373)->elts[1], r_73161);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_73374, object create_91c_91file_7362) {
@@ -1668,7 +1665,7 @@ c_731552.elts[0] = k_73156;
 
 
 make_string(c_731559, ";; This file was automatically generated by the Cyclone Scheme compiler");
-return_closcall2(data,  __glo_display,  &c_731552, &c_731559);; 
+return_closcall2(data,  __glo_display_scheme_write,  &c_731552, &c_731559);; 
 }
 
 static void __lambda_208(void *data, int argc, object self_73379, object r_73157) {
@@ -1683,7 +1680,7 @@ c_731554.num_elt = 1;
 c_731554.elts = (object *)alloca(sizeof(object) * 1);
 c_731554.elts[0] = ((closureN)self_73379)->elts[0];
 
-return_closcall1(data,  __glo_newline,  &c_731554);; 
+return_closcall1(data,  __glo_newline_scheme_base,  &c_731554);; 
 }
 
 static void __lambda_207(void *data, int argc, object self_73380, object r_73158) {
@@ -1698,11 +1695,11 @@ c_731556.num_elt = 1;
 c_731556.elts = (object *)alloca(sizeof(object) * 1);
 c_731556.elts[0] = ((closureN)self_73380)->elts[0];
 
-return_closcall1(data,  __glo_macro_117get_91defined_91macros,  &c_731556);; 
+return_closcall1(data,  __glo_macro_117get_91defined_91macros_scheme_cyclone_macros,  &c_731556);; 
 }
 
 static void __lambda_206(void *data, int argc, object self_73381, object r_73159) {
-  return_closcall2(data,  __glo_write,  ((closureN)self_73381)->elts[0], r_73159);; 
+  return_closcall2(data,  __glo_write_scheme_write,  ((closureN)self_73381)->elts[0], r_73159);; 
 }
 
 static void __lambda_205(void *data, int argc, object self_73382, object r_73155) {
@@ -1720,7 +1717,7 @@ c_731525.elts[1] = ((closureN)self_73382)->elts[1];
 c_731525.elts[2] = ((closureN)self_73382)->elts[2];
 c_731525.elts[3] = ((closureN)self_73382)->elts[4];
 
-return_closcall3(data,  __glo_with_91output_91to_91file,  &c_731525, ((closureN)self_73382)->elts[3], r_73155);; 
+return_closcall3(data,  __glo_with_91output_91to_91file_scheme_file,  &c_731525, ((closureN)self_73382)->elts[3], r_73155);; 
 }
 
 static void __lambda_204(void *data, int argc, object self_73383, object r_73153) {
@@ -1780,7 +1777,7 @@ return_closcall0(data,(closure)&c_731537);}
 }
 
 static void __lambda_202(void *data, int argc, object self_73385) {
-  return_closcall2(data,  __glo_write,  ((closureN)self_73385)->elts[1], ((closureN)self_73385)->elts[0]);; 
+  return_closcall2(data,  __glo_write_scheme_write,  ((closureN)self_73385)->elts[1], ((closureN)self_73385)->elts[0]);; 
 }
 
 static void __lambda_201(void *data, int argc, object self_73386) {
@@ -1913,7 +1910,7 @@ c_731500.elts[0] = k_73151;
 
 
 make_string(c_731508, ".o");
-return_closcall3(data,  __glo_lib_117import_91_125filename,  &c_731500, i_7368, &c_731508);; 
+return_closcall3(data,  __glo_lib_117import_91_125filename_scheme_cyclone_libraries,  &c_731500, i_7368, &c_731508);; 
 }
 
 static void __lambda_194(void *data, int argc, object self_73393, object r_73152) {
@@ -1944,7 +1941,7 @@ c_731418.elts[4] = ((closureN)self_73394)->elts[4];
 c_731418.elts[5] = ((closureN)self_73394)->elts[6];
 c_731418.elts[6] = ((closureN)self_73394)->elts[7];
 
-return_closcall3(data,  __glo_map,  &c_731418, r_73150, ((closureN)self_73394)->elts[5]);; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_731418, r_73150, ((closureN)self_73394)->elts[5]);; 
 }
 
 static void __lambda_192(void *data, int argc, object self_73395, object r_73149) {
@@ -2130,11 +2127,11 @@ c_731457.elts = (object *)alloca(sizeof(object) * 2);
 c_731457.elts[0] = ((closureN)self_73402)->elts[0];
 c_731457.elts[1] = ((closureN)self_73402)->elts[2];
 
-return_closcall2(data,  __glo_write,  &c_731457, cell_get(((closureN)self_73402)->elts[1]));; 
+return_closcall2(data,  __glo_write_scheme_write,  &c_731457, cell_get(((closureN)self_73402)->elts[1]));; 
 }
 
 static void __lambda_184(void *data, int argc, object self_73403, object r_73145) {
-  return_closcall2(data,  __glo_write,  ((closureN)self_73403)->elts[1], cell_get(((closureN)self_73403)->elts[0]));; 
+  return_closcall2(data,  __glo_write_scheme_write,  ((closureN)self_73403)->elts[1], cell_get(((closureN)self_73403)->elts[0]));; 
 }
 
 static void __lambda_183(void *data, int argc, object self_73404) {
@@ -2225,7 +2222,7 @@ return_closcall1(data,(closure)&c_731383,  cdar(((closureN)self_73408)->elts[0])
 }
 
 static void __lambda_178(void *data, int argc, object self_73409, object r_73165) {
-  return_closcall2(data,  __glo_lib_117get_91all_91import_91deps,  ((closureN)self_73409)->elts[0], r_73165);; 
+  return_closcall2(data,  __glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries,  ((closureN)self_73409)->elts[0], r_73165);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_73410, object k_73166) {
@@ -2265,7 +2262,7 @@ return_closcall1(data,(closure)&c_731373,  car(((closureN)self_73411)->elts[0]))
 }
 
 static void __lambda_175(void *data, int argc, object self_73412, object r_73168) {
-  return_closcall3(data,  __glo_tagged_91list_127,  ((closureN)self_73412)->elts[0], ((closureN)self_73412)->elts[1], r_73168);; 
+  return_closcall3(data,  __glo_tagged_91list_127_scheme_cyclone_util,  ((closureN)self_73412)->elts[0], ((closureN)self_73412)->elts[1], r_73168);; 
 }
 
 static void __lambda_174(void *data, int argc, closure _,object k_73173, object filename_7369) {
@@ -2288,11 +2285,11 @@ return_closcall1(data,(closure)&c_731348,  &c_731352);;
 }
 
 static void __lambda_173(void *data, int argc, object self_73413, object k_73175, object port_7370) {
-  return_closcall2(data,  __glo_read_91all,  k_73175, port_7370);; 
+  return_closcall2(data,  __glo_read_91all_scheme_read,  k_73175, port_7370);; 
 }
 
 static void __lambda_172(void *data, int argc, object self_73414, object r_73174) {
-  return_closcall3(data,  __glo_call_91with_91input_91file,  ((closureN)self_73414)->elts[1], ((closureN)self_73414)->elts[0], r_73174);; 
+  return_closcall3(data,  __glo_call_91with_91input_91file_scheme_file,  ((closureN)self_73414)->elts[1], ((closureN)self_73414)->elts[0], r_73174);; 
 }
 
 static void __lambda_171(void *data, int argc, closure _,object k_73178, object input_91program_7373, object lib_91deps_7372, object src_91file_7371) {
@@ -2930,7 +2927,7 @@ c_73638.elts[9] = ((closureN)self_73438)->elts[9];
 c_73638.elts[10] = ((closureN)self_73438)->elts[10];
 c_73638.elts[11] = ((closureN)self_73438)->elts[11];
 
-return_closcall2(data,  __glo_emit,  &c_73638, __glo__85c_91file_91header_91comment_85);; 
+return_closcall2(data,  __glo_emit_scheme_cyclone_cgen,  &c_73638, __glo__85c_91file_91header_91comment_85_scheme_cyclone_common);; 
 }
 
 static void __lambda_146(void *data, int argc, object self_73439, object r_73188) {
@@ -2958,7 +2955,7 @@ c_73640.elts[11] = ((closureN)self_73439)->elts[11];
 
 
 make_string(c_731294, "---------------- input program:");
-return_closcall2(data,  __glo_trace_117info,  &c_73640, &c_731294);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73640, &c_731294);; 
 }
 
 static void __lambda_145(void *data, int argc, object self_73440, object r_73189) {
@@ -2984,7 +2981,7 @@ c_73642.elts[9] = ((closureN)self_73440)->elts[9];
 c_73642.elts[10] = ((closureN)self_73440)->elts[10];
 c_73642.elts[11] = ((closureN)self_73440)->elts[11];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73642, cell_get(((closureN)self_73440)->elts[3]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73642, cell_get(((closureN)self_73440)->elts[3]));; 
 }
 
 static void __lambda_144(void *data, int argc, object self_73441, object r_73190) {
@@ -3053,7 +3050,7 @@ c_73815.elts[11] = ((closureN)self_73442)->elts[11];
 
 
 make_string(c_731290, "imports:");
-return_closcall2(data,  __glo_trace_117info,  &c_73815, &c_731290);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73815, &c_731290);; 
 }
 
 static void __lambda_142(void *data, int argc, object self_73443, object r_73192) {
@@ -3079,7 +3076,7 @@ c_73817.elts[9] = ((closureN)self_73443)->elts[9];
 c_73817.elts[10] = ((closureN)self_73443)->elts[10];
 c_73817.elts[11] = ((closureN)self_73443)->elts[11];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73817, cell_get(((closureN)self_73443)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73817, cell_get(((closureN)self_73443)->elts[2]));; 
 }
 
 static void __lambda_141(void *data, int argc, object self_73444, object r_73193) {
@@ -3105,7 +3102,7 @@ c_73819.elts[9] = ((closureN)self_73444)->elts[9];
 c_73819.elts[10] = ((closureN)self_73444)->elts[10];
 c_73819.elts[11] = ((closureN)self_73444)->elts[11];
 
-return_closcall2(data,  __glo_lib_117imports_91_125idb,  &c_73819, cell_get(((closureN)self_73444)->elts[2]));; 
+return_closcall2(data,  __glo_lib_117imports_91_125idb_scheme_cyclone_libraries,  &c_73819, cell_get(((closureN)self_73444)->elts[2]));; 
 }
 
 static void __lambda_140(void *data, int argc, object self_73445, object r_73292) {
@@ -3159,7 +3156,7 @@ c_73823.elts[11] = ((closureN)self_73446)->elts[11];
 
 
 make_string(c_731280, "resolved imports:");
-return_closcall2(data,  __glo_trace_117info,  &c_73823, &c_731280);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73823, &c_731280);; 
 }
 
 static void __lambda_138(void *data, int argc, object self_73447, object r_73195) {
@@ -3185,7 +3182,7 @@ c_73825.elts[9] = ((closureN)self_73447)->elts[9];
 c_73825.elts[10] = ((closureN)self_73447)->elts[10];
 c_73825.elts[11] = ((closureN)self_73447)->elts[11];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73825, cell_get(((closureN)self_73447)->elts[1]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73825, cell_get(((closureN)self_73447)->elts[1]));; 
 }
 
 static void __lambda_137(void *data, int argc, object self_73448, object r_73196) {
@@ -3210,7 +3207,7 @@ c_73827.elts[8] = ((closureN)self_73448)->elts[9];
 c_73827.elts[9] = ((closureN)self_73448)->elts[10];
 c_73827.elts[10] = ((closureN)self_73448)->elts[11];
 
-return_closcall2(data,  __glo_lib_117resolve_91meta,  &c_73827, cell_get(((closureN)self_73448)->elts[2]));; 
+return_closcall2(data,  __glo_lib_117resolve_91meta_scheme_cyclone_libraries,  &c_73827, cell_get(((closureN)self_73448)->elts[2]));; 
 }
 
 static void __lambda_136(void *data, int argc, object self_73449, object meta_7396) {
@@ -3236,7 +3233,7 @@ c_73829.elts[9] = ((closureN)self_73449)->elts[8];
 c_73829.elts[10] = ((closureN)self_73449)->elts[9];
 c_73829.elts[11] = ((closureN)self_73449)->elts[10];
 
-return_closcall3(data,  __glo_append,  &c_73829, meta_7396, __glo__85defined_91macros_85);; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73829, meta_7396, __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
 }
 
 static void __lambda_135(void *data, int argc, object self_73450, object r_73291) {
@@ -3262,7 +3259,7 @@ c_73831.elts[9] = ((closureN)self_73450)->elts[9];
 c_73831.elts[10] = ((closureN)self_73450)->elts[10];
 c_73831.elts[11] = ((closureN)self_73450)->elts[11];
 
-return_closcall1(data,(closure)&c_73831,  global_set(__glo__85defined_91macros_85, r_73291));; 
+return_closcall1(data,(closure)&c_73831,  global_set(__glo__85defined_91macros_85_scheme_cyclone_transforms, r_73291));; 
 }
 
 static void __lambda_134(void *data, int argc, object self_73451, object r_73289) {
@@ -3290,7 +3287,7 @@ c_73833.elts[11] = ((closureN)self_73451)->elts[11];
 
 
 make_string(c_731271, "resolved macros:");
-return_closcall2(data,  __glo_trace_117info,  &c_73833, &c_731271);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73833, &c_731271);; 
 }
 
 static void __lambda_133(void *data, int argc, object self_73452, object r_73290) {
@@ -3315,7 +3312,7 @@ c_73835.elts[8] = ((closureN)self_73452)->elts[9];
 c_73835.elts[9] = ((closureN)self_73452)->elts[10];
 c_73835.elts[10] = ((closureN)self_73452)->elts[11];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73835, ((closureN)self_73452)->elts[7]);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73835, ((closureN)self_73452)->elts[7]);; 
 }
 
 static void __lambda_132(void *data, int argc, object self_73453, object r_73197) {
@@ -3427,7 +3424,7 @@ c_73841.elts[8] = ((closureN)self_73458)->elts[8];
 c_73841.elts[9] = ((closureN)self_73458)->elts[10];
 c_73841.elts[10] = ((closureN)self_73458)->elts[11];
 
-return_closcall3(data,  __glo_filter,  &c_73841, ((closureN)self_73458)->elts[9], r_73284);; 
+return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_73841, ((closureN)self_73458)->elts[9], r_73284);; 
 }
 
 static void __lambda_126(void *data, int argc, object self_73459, object macros_7395) {
@@ -3452,7 +3449,7 @@ c_73843.elts[8] = ((closureN)self_73459)->elts[8];
 c_73843.elts[9] = ((closureN)self_73459)->elts[9];
 c_73843.elts[10] = ((closureN)self_73459)->elts[10];
 
-return_closcall3(data,  __glo_append,  &c_73843, macros_7395, __glo__85defined_91macros_85);; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73843, macros_7395, __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
 }
 
 static void __lambda_125(void *data, int argc, object self_73460, object r_73282) {
@@ -3477,7 +3474,7 @@ c_73845.elts[8] = ((closureN)self_73460)->elts[8];
 c_73845.elts[9] = ((closureN)self_73460)->elts[9];
 c_73845.elts[10] = ((closureN)self_73460)->elts[10];
 
-return_closcall1(data,(closure)&c_73845,  global_set(__glo__85defined_91macros_85, r_73282));; 
+return_closcall1(data,(closure)&c_73845,  global_set(__glo__85defined_91macros_85_scheme_cyclone_transforms, r_73282));; 
 }
 
 static void __lambda_124(void *data, int argc, object self_73461, object r_73198) {
@@ -3553,7 +3550,7 @@ c_73851.elts[8] = ((closureN)self_73463)->elts[8];
 c_73851.elts[9] = ((closureN)self_73463)->elts[10];
 c_73851.elts[10] = ((closureN)self_73463)->elts[11];
 
-return_closcall3(data,  __glo_create_91environment,  &c_73851, ((closureN)self_73463)->elts[9], r_73280);; 
+return_closcall3(data,  __glo_create_91environment_scheme_eval,  &c_73851, ((closureN)self_73463)->elts[9], r_73280);; 
 }
 
 static void __lambda_121(void *data, int argc, object self_73464, object r_73278) {
@@ -3578,7 +3575,7 @@ c_73853.elts[8] = ((closureN)self_73464)->elts[8];
 c_73853.elts[9] = ((closureN)self_73464)->elts[9];
 c_73853.elts[10] = ((closureN)self_73464)->elts[10];
 
-return_closcall3(data,  __glo_macro_117load_91env_67,  &c_73853, __glo__85defined_91macros_85, r_73278);; 
+return_closcall3(data,  __glo_macro_117load_91env_67_scheme_cyclone_macros,  &c_73853, __glo__85defined_91macros_85_scheme_cyclone_transforms, r_73278);; 
 }
 
 static void __lambda_120(void *data, int argc, object self_73465, object r_73199) {
@@ -3640,7 +3637,7 @@ c_73863.elts[9] = r_73275;
 c_73863.elts[10] = ((closureN)self_73466)->elts[9];
 c_73863.elts[11] = ((closureN)self_73466)->elts[10];
 
-return_closcall1(data,  __glo_macro_117get_91env,  &c_73863);; 
+return_closcall1(data,  __glo_macro_117get_91env_scheme_cyclone_macros,  &c_73863);; 
 }
 
 static void __lambda_118(void *data, int argc, object self_73467, object r_73276) {
@@ -3717,7 +3714,7 @@ c_73870.elts[10] = ((closureN)self_73469)->elts[10];
 
 
 make_string(c_731244, "---------------- after macro expansion:");
-return_closcall2(data,  __glo_trace_117info,  &c_73870, &c_731244);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73870, &c_731244);; 
 }
 
 static void __lambda_115(void *data, int argc, object self_73470, object r_73201) {
@@ -3742,7 +3739,7 @@ c_73872.elts[8] = ((closureN)self_73470)->elts[8];
 c_73872.elts[9] = ((closureN)self_73470)->elts[9];
 c_73872.elts[10] = ((closureN)self_73470)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73872, cell_get(((closureN)self_73470)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73872, cell_get(((closureN)self_73470)->elts[2]));; 
 }
 
 static void __lambda_114(void *data, int argc, object self_73471, object r_73202) {
@@ -3767,7 +3764,7 @@ c_73874.elts[8] = ((closureN)self_73471)->elts[8];
 c_73874.elts[9] = ((closureN)self_73471)->elts[9];
 c_73874.elts[10] = ((closureN)self_73471)->elts[10];
 
-return_closcall4(data,  __glo_isolate_91globals,  &c_73874, cell_get(((closureN)self_73471)->elts[2]), cell_get(((closureN)self_73471)->elts[8]), cell_get(((closureN)self_73471)->elts[6]));; 
+return_closcall4(data,  __glo_isolate_91globals_scheme_cyclone_transforms,  &c_73874, cell_get(((closureN)self_73471)->elts[2]), cell_get(((closureN)self_73471)->elts[8]), cell_get(((closureN)self_73471)->elts[6]));; 
 }
 
 static void __lambda_113(void *data, int argc, object self_73472, object r_73273) {
@@ -3856,7 +3853,7 @@ c_73903.elts[10] = ((closureN)self_73474)->elts[10];
 
 
 make_string(c_731228, "---------------- after processing globals");
-return_closcall2(data,  __glo_trace_117info,  &c_73903, &c_731228);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73903, &c_731228);; 
 }
 
 static void __lambda_110(void *data, int argc, object self_73475, object r_73205) {
@@ -3881,7 +3878,7 @@ c_73905.elts[8] = ((closureN)self_73475)->elts[8];
 c_73905.elts[9] = ((closureN)self_73475)->elts[9];
 c_73905.elts[10] = ((closureN)self_73475)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73905, cell_get(((closureN)self_73475)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73905, cell_get(((closureN)self_73475)->elts[2]));; 
 }
 
 static void __lambda_109(void *data, int argc, object self_73476, object r_73206) {
@@ -3906,7 +3903,7 @@ c_73907.elts[8] = ((closureN)self_73476)->elts[8];
 c_73907.elts[9] = ((closureN)self_73476)->elts[9];
 c_73907.elts[10] = ((closureN)self_73476)->elts[10];
 
-return_closcall2(data,  __glo_global_91vars,  &c_73907, cell_get(((closureN)self_73476)->elts[2]));; 
+return_closcall2(data,  __glo_global_91vars_scheme_cyclone_transforms,  &c_73907, cell_get(((closureN)self_73476)->elts[2]));; 
 }
 
 static void __lambda_108(void *data, int argc, object self_73477, object r_73268) {
@@ -3956,7 +3953,7 @@ c_73911.elts[8] = ((closureN)self_73478)->elts[8];
 c_73911.elts[9] = ((closureN)self_73478)->elts[9];
 c_73911.elts[10] = ((closureN)self_73478)->elts[10];
 
-return_closcall2(data,  __glo_lib_117idb_117ids,  &c_73911, cell_get(((closureN)self_73478)->elts[1]));; 
+return_closcall2(data,  __glo_lib_117idb_117ids_scheme_cyclone_libraries,  &c_73911, cell_get(((closureN)self_73478)->elts[1]));; 
 }
 
 static void __lambda_106(void *data, int argc, object self_73479, object r_73267) {
@@ -3981,7 +3978,7 @@ c_73913.elts[8] = ((closureN)self_73479)->elts[8];
 c_73913.elts[9] = ((closureN)self_73479)->elts[9];
 c_73913.elts[10] = ((closureN)self_73479)->elts[10];
 
-return_closcall3(data,  __glo_append,  &c_73913, r_73267, cell_get(((closureN)self_73479)->elts[7]));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73913, r_73267, cell_get(((closureN)self_73479)->elts[7]));; 
 }
 
 static void __lambda_105(void *data, int argc, object self_73480, object r_73266) {
@@ -4047,7 +4044,7 @@ return_closcall1(data,(closure)&c_73917,  &c_731204);;
 }
 
 static void __lambda_103(void *data, int argc, object self_73482, object k_73265, object expr_7393) {
-  return_closcall4(data,  __glo_alpha_91convert,  k_73265, expr_7393, cell_get(((closureN)self_73482)->elts[0]), ((closureN)self_73482)->elts[1]);; 
+  return_closcall4(data,  __glo_alpha_91convert_scheme_cyclone_transforms,  k_73265, expr_7393, cell_get(((closureN)self_73482)->elts[0]), ((closureN)self_73482)->elts[1]);; 
 }
 
 static void __lambda_102(void *data, int argc, object self_73483, object r_73264) {
@@ -4072,7 +4069,7 @@ c_73919.elts[8] = ((closureN)self_73483)->elts[8];
 c_73919.elts[9] = ((closureN)self_73483)->elts[9];
 c_73919.elts[10] = ((closureN)self_73483)->elts[10];
 
-return_closcall3(data,  __glo_map,  &c_73919, r_73264, cell_get(((closureN)self_73483)->elts[2]));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_73919, r_73264, cell_get(((closureN)self_73483)->elts[2]));; 
 }
 
 static void __lambda_101(void *data, int argc, object self_73484, object r_73263) {
@@ -4124,7 +4121,7 @@ c_73923.elts[10] = ((closureN)self_73485)->elts[10];
 
 
 make_string(c_731197, "---------------- after alpha conversion:");
-return_closcall2(data,  __glo_trace_117info,  &c_73923, &c_731197);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73923, &c_731197);; 
 }
 
 static void __lambda_99(void *data, int argc, object self_73486, object r_73210) {
@@ -4149,7 +4146,7 @@ c_73925.elts[8] = ((closureN)self_73486)->elts[8];
 c_73925.elts[9] = ((closureN)self_73486)->elts[9];
 c_73925.elts[10] = ((closureN)self_73486)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_73925, cell_get(((closureN)self_73486)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_73925, cell_get(((closureN)self_73486)->elts[2]));; 
 }
 
 static void __lambda_98(void *data, int argc, object self_73487, object r_73211) {
@@ -4180,7 +4177,7 @@ return_closcall1(data,(closure)&c_73927,  &c_731192);;
 }
 
 static void __lambda_97(void *data, int argc, object self_73488, object k_73262, object expr_7391) {
-  return_closcall2(data,  __glo_cps_91convert,  k_73262, expr_7391);; 
+  return_closcall2(data,  __glo_cps_91convert_scheme_cyclone_transforms,  k_73262, expr_7391);; 
 }
 
 static void __lambda_96(void *data, int argc, object self_73489, object r_73261) {
@@ -4205,7 +4202,7 @@ c_73929.elts[8] = ((closureN)self_73489)->elts[8];
 c_73929.elts[9] = ((closureN)self_73489)->elts[9];
 c_73929.elts[10] = ((closureN)self_73489)->elts[10];
 
-return_closcall3(data,  __glo_map,  &c_73929, r_73261, cell_get(((closureN)self_73489)->elts[2]));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_73929, r_73261, cell_get(((closureN)self_73489)->elts[2]));; 
 }
 
 static void __lambda_95(void *data, int argc, object self_73490, object cps_7392) {
@@ -4272,7 +4269,7 @@ c_731016.elts[10] = ((closureN)self_73491)->elts[10];
 
 
 make_string(c_731188, "---------------- after CPS:");
-return_closcall2(data,  __glo_trace_117info,  &c_731016, &c_731188);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731016, &c_731188);; 
 }
 
 static void __lambda_93(void *data, int argc, object self_73492, object r_73213) {
@@ -4297,7 +4294,7 @@ c_731018.elts[8] = ((closureN)self_73492)->elts[8];
 c_731018.elts[9] = ((closureN)self_73492)->elts[9];
 c_731018.elts[10] = ((closureN)self_73492)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_731018, cell_get(((closureN)self_73492)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731018, cell_get(((closureN)self_73492)->elts[2]));; 
 }
 
 static void __lambda_92(void *data, int argc, object self_73493, object r_73214) {
@@ -4322,7 +4319,7 @@ c_731020.elts[8] = ((closureN)self_73493)->elts[8];
 c_731020.elts[9] = ((closureN)self_73493)->elts[9];
 c_731020.elts[10] = ((closureN)self_73493)->elts[10];
 
-return_closcall3(data,  __glo_map,  &c_731020, __glo_cps_91optimize_9101, cell_get(((closureN)self_73493)->elts[2]));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_731020, __glo_cps_91optimize_9101_scheme_cyclone_transforms, cell_get(((closureN)self_73493)->elts[2]));; 
 }
 
 static void __lambda_91(void *data, int argc, object self_73494, object r_73247) {
@@ -4374,7 +4371,7 @@ c_731024.elts[10] = ((closureN)self_73495)->elts[10];
 
 
 make_string(c_731178, "---------------- after cps optimizations:");
-return_closcall2(data,  __glo_trace_117info,  &c_731024, &c_731178);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731024, &c_731178);; 
 }
 
 static void __lambda_89(void *data, int argc, object self_73496, object r_73216) {
@@ -4399,7 +4396,7 @@ c_731026.elts[8] = ((closureN)self_73496)->elts[8];
 c_731026.elts[9] = ((closureN)self_73496)->elts[9];
 c_731026.elts[10] = ((closureN)self_73496)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_731026, cell_get(((closureN)self_73496)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731026, cell_get(((closureN)self_73496)->elts[2]));; 
 }
 
 static void __lambda_88(void *data, int argc, object self_73497, object r_73217) {
@@ -4452,7 +4449,7 @@ c_731165.elts[0] = expr_7390;
 c_731165.elts[1] = ((closureN)self_73498)->elts[0];
 c_731165.elts[2] = k_73244;
 
-return_closcall1(data,  __glo_clear_91mutables,  &c_731165);; 
+return_closcall1(data,  __glo_clear_91mutables_scheme_cyclone_transforms,  &c_731165);; 
 }
 
 static void __lambda_86(void *data, int argc, object self_73499, object r_73245) {
@@ -4469,11 +4466,11 @@ c_731167.elts[0] = ((closureN)self_73499)->elts[0];
 c_731167.elts[1] = ((closureN)self_73499)->elts[1];
 c_731167.elts[2] = ((closureN)self_73499)->elts[2];
 
-return_closcall2(data,  __glo_analyze_91mutable_91variables,  &c_731167, ((closureN)self_73499)->elts[0]);; 
+return_closcall2(data,  __glo_analyze_91mutable_91variables_scheme_cyclone_transforms,  &c_731167, ((closureN)self_73499)->elts[0]);; 
 }
 
 static void __lambda_85(void *data, int argc, object self_73500, object r_73246) {
-  return_closcall3(data,  __glo_wrap_91mutables,  ((closureN)self_73500)->elts[2], ((closureN)self_73500)->elts[0], cell_get(((closureN)self_73500)->elts[1]));; 
+  return_closcall3(data,  __glo_wrap_91mutables_scheme_cyclone_transforms,  ((closureN)self_73500)->elts[2], ((closureN)self_73500)->elts[0], cell_get(((closureN)self_73500)->elts[1]));; 
 }
 
 static void __lambda_84(void *data, int argc, object self_73501, object r_73243) {
@@ -4498,7 +4495,7 @@ c_731030.elts[8] = ((closureN)self_73501)->elts[8];
 c_731030.elts[9] = ((closureN)self_73501)->elts[9];
 c_731030.elts[10] = ((closureN)self_73501)->elts[10];
 
-return_closcall3(data,  __glo_map,  &c_731030, r_73243, cell_get(((closureN)self_73501)->elts[2]));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_731030, r_73243, cell_get(((closureN)self_73501)->elts[2]));; 
 }
 
 static void __lambda_83(void *data, int argc, object self_73502, object r_73242) {
@@ -4550,7 +4547,7 @@ c_731034.elts[10] = ((closureN)self_73503)->elts[10];
 
 
 make_string(c_731156, "---------------- after wrap-mutables:");
-return_closcall2(data,  __glo_trace_117info,  &c_731034, &c_731156);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731034, &c_731156);; 
 }
 
 static void __lambda_81(void *data, int argc, object self_73504, object r_73219) {
@@ -4575,7 +4572,7 @@ c_731036.elts[8] = ((closureN)self_73504)->elts[8];
 c_731036.elts[9] = ((closureN)self_73504)->elts[9];
 c_731036.elts[10] = ((closureN)self_73504)->elts[10];
 
-return_closcall2(data,  __glo_trace_117info,  &c_731036, cell_get(((closureN)self_73504)->elts[2]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731036, cell_get(((closureN)self_73504)->elts[2]));; 
 }
 
 static void __lambda_80(void *data, int argc, object self_73505, object r_73220) {
@@ -4627,7 +4624,7 @@ c_731101.elts[0] = expr_7389;
 c_731101.elts[1] = ((closureN)self_73506)->elts[0];
 c_731101.elts[2] = k_73232;
 
-return_closcall2(data,  __glo_define_127,  &c_731101, expr_7389);; 
+return_closcall2(data,  __glo_define_127_scheme_cyclone_transforms,  &c_731101, expr_7389);; 
 }
 
 static void __lambda_78(void *data, int argc, object self_73507, object r_73233) {
@@ -4660,7 +4657,7 @@ c_731134.elts[0] = ((closureN)self_73507)->elts[0];
 c_731134.elts[1] = ((closureN)self_73507)->elts[1];
 c_731134.elts[2] = ((closureN)self_73507)->elts[2];
 
-return_closcall2(data,  __glo_define_91c_127,  &c_731134, ((closureN)self_73507)->elts[0]);}
+return_closcall2(data,  __glo_define_91c_127_scheme_cyclone_transforms,  &c_731134, ((closureN)self_73507)->elts[0]);}
 ; 
 }
 
@@ -4709,7 +4706,7 @@ c_731143.num_elt = 1;
 c_731143.elts = (object *)alloca(sizeof(object) * 1);
 c_731143.elts[0] = ((closureN)self_73509)->elts[2];
 
-return_closcall3(data,  __glo_closure_91convert,  &c_731143, ((closureN)self_73509)->elts[0], cell_get(((closureN)self_73509)->elts[1]));; 
+return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_transforms,  &c_731143, ((closureN)self_73509)->elts[0], cell_get(((closureN)self_73509)->elts[1]));; 
 }
 
 static void __lambda_75(void *data, int argc, object self_73510, object r_73241) {
@@ -4752,7 +4749,7 @@ c_731107.elts[1] = ((closureN)self_73513)->elts[1];
 c_731107.elts[2] = ((closureN)self_73513)->elts[2];
 c_731107.elts[3] = r_73234;
 
-return_closcall2(data,  __glo_define_91_125var,  &c_731107, ((closureN)self_73513)->elts[0]);; 
+return_closcall2(data,  __glo_define_91_125var_scheme_cyclone_transforms,  &c_731107, ((closureN)self_73513)->elts[0]);; 
 }
 
 static void __lambda_71(void *data, int argc, object self_73514, object r_73236) {
@@ -4770,7 +4767,7 @@ c_731109.elts[1] = ((closureN)self_73514)->elts[2];
 c_731109.elts[2] = ((closureN)self_73514)->elts[3];
 c_731109.elts[3] = r_73236;
 
-return_closcall2(data,  __glo_define_91_125exp,  &c_731109, ((closureN)self_73514)->elts[0]);; 
+return_closcall2(data,  __glo_define_91_125exp_scheme_cyclone_transforms,  &c_731109, ((closureN)self_73514)->elts[0]);; 
 }
 
 static void __lambda_70(void *data, int argc, object self_73515, object r_73239) {
@@ -4787,7 +4784,7 @@ c_731111.elts[0] = ((closureN)self_73515)->elts[1];
 c_731111.elts[1] = ((closureN)self_73515)->elts[2];
 c_731111.elts[2] = ((closureN)self_73515)->elts[3];
 
-return_closcall3(data,  __glo_closure_91convert,  &c_731111, r_73239, cell_get(((closureN)self_73515)->elts[0]));; 
+return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_transforms,  &c_731111, r_73239, cell_get(((closureN)self_73515)->elts[0]));; 
 }
 
 static void __lambda_69(void *data, int argc, object self_73516, object r_73238) {
@@ -4852,7 +4849,7 @@ c_731040.elts[7] = ((closureN)self_73519)->elts[7];
 c_731040.elts[8] = ((closureN)self_73519)->elts[8];
 c_731040.elts[9] = ((closureN)self_73519)->elts[9];
 
-return_closcall3(data,  __glo_map,  &c_731040, r_73231, cell_get(((closureN)self_73519)->elts[1]));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_731040, r_73231, cell_get(((closureN)self_73519)->elts[1]));; 
 }
 
 static void __lambda_65(void *data, int argc, object self_73520, object r_73230) {
@@ -4902,7 +4899,7 @@ c_731044.elts[9] = ((closureN)self_73521)->elts[9];
 
 
 make_string(c_731092, "---------------- after closure-convert:");
-return_closcall2(data,  __glo_trace_117info,  &c_731044, &c_731092);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731044, &c_731092);; 
 }
 
 static void __lambda_63(void *data, int argc, object self_73522, object r_73222) {
@@ -4926,7 +4923,7 @@ c_731046.elts[7] = ((closureN)self_73522)->elts[7];
 c_731046.elts[8] = ((closureN)self_73522)->elts[8];
 c_731046.elts[9] = ((closureN)self_73522)->elts[9];
 
-return_closcall2(data,  __glo_trace_117info,  &c_731046, cell_get(((closureN)self_73522)->elts[1]));; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731046, cell_get(((closureN)self_73522)->elts[1]));; 
 }
 
 static void __lambda_62(void *data, int argc, object self_73523, object r_73223) {
@@ -4975,7 +4972,7 @@ c_731060.elts[9] = ((closureN)self_73524)->elts[9];
 
 
 make_string(c_731088, "---------------- C code:");
-return_closcall2(data,  __glo_trace_117info,  &c_731060, &c_731088);; 
+return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731060, &c_731088);; 
 }
 
 static void __lambda_60(void *data, int argc, object self_73525, object r_73225) {
@@ -4991,7 +4988,7 @@ c_731062.elts = (object *)alloca(sizeof(object) * 2);
 c_731062.elts[0] = ((closureN)self_73525)->elts[2];
 c_731062.elts[1] = ((closureN)self_73525)->elts[8];
 
-return_closcall9(data,  __glo_mta_117code_91gen,  &c_731062, cell_get(((closureN)self_73525)->elts[1]), cell_get(((closureN)self_73525)->elts[7]), cell_get(((closureN)self_73525)->elts[5]), cell_get(((closureN)self_73525)->elts[4]), cell_get(((closureN)self_73525)->elts[0]), cell_get(((closureN)self_73525)->elts[6]), ((closureN)self_73525)->elts[3], ((closureN)self_73525)->elts[9]);; 
+return_closcall9(data,  __glo_mta_117code_91gen_scheme_cyclone_cgen,  &c_731062, cell_get(((closureN)self_73525)->elts[1]), cell_get(((closureN)self_73525)->elts[7]), cell_get(((closureN)self_73525)->elts[5]), cell_get(((closureN)self_73525)->elts[4]), cell_get(((closureN)self_73525)->elts[0]), cell_get(((closureN)self_73525)->elts[6]), ((closureN)self_73525)->elts[3], ((closureN)self_73525)->elts[9]);; 
 }
 
 static void __lambda_59(void *data, int argc, object self_73526, object r_73226) {
@@ -5016,7 +5013,7 @@ static void __lambda_58(void *data, int argc, object self_73527, object r_73227)
 
 static void __lambda_57(void *data, int argc, closure _,object k_73228) {
   Cyc_st_add(data, "cyclone.scm:c-compile-and-emit");
-if( !eq(boolean_f, __glo__85do_91code_91gen_85) ){ 
+if( !eq(boolean_f, __glo__85do_91code_91gen_85_scheme_cyclone_transforms) ){ 
   return_closcall1(data,  k_73228,  boolean_f);
 } else { 
   
@@ -5048,7 +5045,7 @@ c_731052.elts[0] = ((closureN)self_73528)->elts[0];
 
 
 make_string(c_731057, "DEBUG, existing program");
-return_closcall2(data,  __glo_trace_117error,  &c_731052, &c_731057);; 
+return_closcall2(data,  __glo_trace_117error_scheme_cyclone_transforms,  &c_731052, &c_731057);; 
 }
 
 static void __lambda_55(void *data, int argc, object self_73529, object r_73229) {
@@ -5162,7 +5159,7 @@ c_73952.elts[2] = ((closureN)self_73534)->elts[2];
 c_73952.elts[3] = ((closureN)self_73534)->elts[3];
 c_73952.elts[4] = ((closureN)self_73534)->elts[4];
 
-return_closcall3(data,  __glo_append,  &c_73952, r_73258, cell_get(((closureN)self_73534)->elts[1]));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73952, r_73258, cell_get(((closureN)self_73534)->elts[1]));; 
 }
 
 static void __lambda_49(void *data, int argc, object self_73535, object r_73257) {
@@ -5218,7 +5215,7 @@ c_73958.elts[1] = ((closureN)self_73537)->elts[1];
 c_73958.elts[2] = ((closureN)self_73537)->elts[2];
 c_73958.elts[3] = ((closureN)self_73537)->elts[3];
 
-return_closcall3(data,  __glo_append,  &c_73958, r_73256, cell_get(((closureN)self_73537)->elts[3]));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73958, r_73256, cell_get(((closureN)self_73537)->elts[3]));; 
 }
 
 static void __lambda_46(void *data, int argc, object self_73538, object r_73255) {
@@ -5314,7 +5311,7 @@ static void __lambda_43(void *data, int argc, object self_73541, object r_73253)
 }
 
 static void __lambda_42(void *data, int argc, object self_73542, object k_73259) {
-  if( !eq(boolean_f, __glo_library_127) ){ 
+  if( !eq(boolean_f, __glo_library_127_scheme_cyclone_libraries) ){ 
   
 closureN_type c_73935;
 c_73935.hdr.mark = gc_color_red;
@@ -5372,7 +5369,7 @@ c_73882.elts[0] = ((closureN)self_73545)->elts[0];
 c_73882.elts[1] = ((closureN)self_73545)->elts[1];
 c_73882.elts[2] = ((closureN)self_73545)->elts[2];
 
-return_closcall3(data,  __glo_has_91global_127,  &c_73882, cell_get(((closureN)self_73545)->elts[0]), r_73272);; 
+return_closcall3(data,  __glo_has_91global_127_scheme_cyclone_transforms,  &c_73882, cell_get(((closureN)self_73545)->elts[0]), r_73272);; 
 }
 
 static void __lambda_38(void *data, int argc, object self_73546, object r_73270) {
@@ -5391,7 +5388,7 @@ c_73886.elts = (object *)alloca(sizeof(object) * 2);
 c_73886.elts[0] = ((closureN)self_73546)->elts[0];
 c_73886.elts[1] = ((closureN)self_73546)->elts[1];
 
-return_closcall3(data,  __glo_filter_91unused_91variables,  &c_73886, cell_get(((closureN)self_73546)->elts[0]), cell_get(((closureN)self_73546)->elts[2]));}
+return_closcall3(data,  __glo_filter_91unused_91variables_scheme_cyclone_transforms,  &c_73886, cell_get(((closureN)self_73546)->elts[0]), cell_get(((closureN)self_73546)->elts[2]));}
 ; 
 }
 
@@ -5401,9 +5398,9 @@ static void __lambda_37(void *data, int argc, object self_73547, object r_73271)
 
 static void __lambda_36(void *data, int argc, object self_73548, object k_73277) {
   if( !eq(boolean_f, cell_get(((closureN)self_73548)->elts[0])) ){ 
-  return_closcall1(data,  k_73277,  __glo_expand_91lambda_91body);
+  return_closcall1(data,  k_73277,  __glo_expand_91lambda_91body_scheme_cyclone_transforms);
 } else { 
-  return_closcall1(data,  k_73277,  __glo_expand);}
+  return_closcall1(data,  k_73277,  __glo_expand_scheme_cyclone_transforms);}
 ; 
 }
 
@@ -5444,7 +5441,7 @@ c_73648.elts[3] = ((closureN)self_73550)->elts[3];
 c_73648.elts[4] = ((closureN)self_73550)->elts[4];
 c_73648.elts[5] = ((closureN)self_73550)->elts[5];
 
-return_closcall2(data,  __glo_library_127,  &c_73648, r_73325);; 
+return_closcall2(data,  __glo_library_127_scheme_cyclone_libraries,  &c_73648, r_73325);; 
 }
 
 static void __lambda_33(void *data, int argc, object self_73551, object r_73294) {
@@ -5516,7 +5513,7 @@ c_73773.elts[0] = ((closureN)self_73553)->elts[0];
 c_73773.elts[1] = ((closureN)self_73553)->elts[1];
 c_73773.elts[2] = ((closureN)self_73553)->elts[2];
 
-return_closcall3(data,  __glo_tagged_91list_127,  &c_73773, ((closureN)self_73553)->elts[3], r_73324);; 
+return_closcall3(data,  __glo_tagged_91list_127_scheme_cyclone_util,  &c_73773, ((closureN)self_73553)->elts[3], r_73324);; 
 }
 
 static void __lambda_30(void *data, int argc, object self_73554, object r_73319) {
@@ -5630,7 +5627,7 @@ c_73654.elts[3] = ((closureN)self_73560)->elts[3];
 c_73654.elts[4] = ((closureN)self_73560)->elts[4];
 c_73654.elts[5] = ((closureN)self_73560)->elts[5];
 
-return_closcall2(data,  __glo_lib_117includes,  &c_73654, r_73318);; 
+return_closcall2(data,  __glo_lib_117includes_scheme_cyclone_libraries,  &c_73654, r_73318);; 
 }
 
 static void __lambda_23(void *data, int argc, object self_73561, object includes_7397) {
@@ -5690,7 +5687,7 @@ c_73660.elts[3] = ((closureN)self_73563)->elts[3];
 c_73660.elts[4] = ((closureN)self_73563)->elts[4];
 c_73660.elts[5] = ((closureN)self_73563)->elts[5];
 
-return_closcall2(data,  __glo_lib_117name,  &c_73660, r_73317);; 
+return_closcall2(data,  __glo_lib_117name_scheme_cyclone_libraries,  &c_73660, r_73317);; 
 }
 
 static void __lambda_20(void *data, int argc, object self_73564, object r_73316) {
@@ -5730,7 +5727,7 @@ c_73664.elts[3] = ((closureN)self_73565)->elts[3];
 c_73664.elts[4] = ((closureN)self_73565)->elts[4];
 c_73664.elts[5] = ((closureN)self_73565)->elts[5];
 
-return_closcall2(data,  __glo_lib_117name_91_125symbol,  &c_73664, cell_get(((closureN)self_73565)->elts[5]));; 
+return_closcall2(data,  __glo_lib_117name_91_125symbol_scheme_cyclone_libraries,  &c_73664, cell_get(((closureN)self_73565)->elts[5]));; 
 }
 
 static void __lambda_18(void *data, int argc, object self_73566, object r_73313) {
@@ -5772,7 +5769,7 @@ c_73668.elts[4] = ((closureN)self_73567)->elts[4];
 c_73668.elts[5] = ((closureN)self_73567)->elts[5];
 c_73668.elts[6] = ((closureN)self_73567)->elts[6];
 
-return_closcall2(data,  __glo_lib_117exports,  &c_73668, r_73315);; 
+return_closcall2(data,  __glo_lib_117exports_scheme_cyclone_libraries,  &c_73668, r_73315);; 
 }
 
 static void __lambda_16(void *data, int argc, object self_73568, object r_73314) {
@@ -5851,7 +5848,7 @@ c_73676.elts[2] = ((closureN)self_73571)->elts[2];
 c_73676.elts[3] = ((closureN)self_73571)->elts[3];
 c_73676.elts[4] = ((closureN)self_73571)->elts[4];
 
-return_closcall2(data,  __glo_lib_117imports,  &c_73676, r_73311);; 
+return_closcall2(data,  __glo_lib_117imports_scheme_cyclone_libraries,  &c_73676, r_73311);; 
 }
 
 static void __lambda_12(void *data, int argc, object self_73572, object r_73310) {
@@ -5905,7 +5902,7 @@ c_73682.elts[1] = ((closureN)self_73574)->elts[1];
 c_73682.elts[2] = ((closureN)self_73574)->elts[2];
 c_73682.elts[3] = ((closureN)self_73574)->elts[3];
 
-return_closcall2(data,  __glo_lib_117body,  &c_73682, r_73309);; 
+return_closcall2(data,  __glo_lib_117body_scheme_cyclone_libraries,  &c_73682, r_73309);; 
 }
 
 static void __lambda_9(void *data, int argc, object self_73575, object r_73308) {
@@ -5990,7 +5987,7 @@ c_73696.elts[0] = include_7398;
 c_73696.elts[1] = ((closureN)self_73578)->elts[0];
 c_73696.elts[2] = k_73303;
 
-return_closcall2(data,  __glo_lib_117import_91_125path,  &c_73696, cell_get(((closureN)self_73578)->elts[1]));; 
+return_closcall2(data,  __glo_lib_117import_91_125path_scheme_cyclone_libraries,  &c_73696, cell_get(((closureN)self_73578)->elts[1]));; 
 }
 
 static void __lambda_5(void *data, int argc, object self_73579, object r_73307) {
@@ -6040,7 +6037,7 @@ c_73702.elts = (object *)alloca(sizeof(object) * 2);
 c_73702.elts[0] = ((closureN)self_73581)->elts[0];
 c_73702.elts[1] = ((closureN)self_73581)->elts[1];
 
-return_closcall3(data,  __glo_append,  &c_73702, r_73305, cell_get(((closureN)self_73581)->elts[0]));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_73702, r_73305, cell_get(((closureN)self_73581)->elts[0]));; 
 }
 
 static void __lambda_2(void *data, int argc, object self_73582, object r_73304) {
@@ -6048,11 +6045,11 @@ static void __lambda_2(void *data, int argc, object self_73582, object r_73304) 
 }
 
 static void __lambda_1(void *data, int argc, object self_73583, object r_73302) {
-  return_closcall3(data,  __glo_for_91each,  ((closureN)self_73583)->elts[1], r_73302, ((closureN)self_73583)->elts[0]);; 
+  return_closcall3(data,  __glo_for_91each_scheme_base,  ((closureN)self_73583)->elts[1], r_73302, ((closureN)self_73583)->elts[0]);; 
 }
 
 static void __lambda_0(void *data, int argc, object self_73584, object r_73179) {
-  return_closcall2(data,  __glo_call_95cc,  ((closureN)self_73584)->elts[0], r_73179);; 
+  return_closcall2(data,  __glo_call_95cc_scheme_base,  ((closureN)self_73584)->elts[0], r_73179);; 
 }
 
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value);

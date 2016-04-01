@@ -61,146 +61,146 @@
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117scheme_191char = nil;
-object __glo_string_91downcase = nil;
-object __glo_string_91upcase = nil;
-object __glo_digit_91value = nil;
-object __glo_char_91whitespace_127 = nil;
-object __glo_char_91numeric_127 = nil;
-object __glo_char_91lower_91case_127 = nil;
-object __glo_char_91upper_91case_127 = nil;
-object __glo_char_91alphabetic_127 = nil;
-object __glo_char_91downcase = nil;
-object __glo_char_91upcase = nil;
-extern object __glo_cons_91source;
-extern object __glo_syntax_91rules;
-extern object __glo_letrec_85;
-extern object __glo_guard;
-extern object __glo_guard_91aux;
-extern object __glo_receive;
-extern object __glo_abs;
-extern object __glo_max;
-extern object __glo_min;
-extern object __glo_modulo;
-extern object __glo_floor_91remainder;
-extern object __glo_even_127;
-extern object __glo_exact_91integer_127;
-extern object __glo_exact_127;
-extern object __glo_inexact_127;
-extern object __glo_odd_127;
-extern object __glo_gcd;
-extern object __glo_lcm;
-extern object __glo_quotient;
-extern object __glo_remainder;
-extern object __glo_truncate_91quotient;
-extern object __glo_truncate_91remainder;
-extern object __glo_truncate_95;
-extern object __glo_floor_91quotient;
-extern object __glo_floor_91remainder;
-extern object __glo_floor_95;
-extern object __glo_square;
-extern object __glo_expt;
-extern object __glo_call_91with_91current_91continuation;
-extern object __glo_call_95cc;
-extern object __glo_call_91with_91values;
-extern object __glo_dynamic_91wind;
-extern object __glo_values;
-extern object __glo_char_123_127;
-extern object __glo_char_121_127;
-extern object __glo_char_125_127;
-extern object __glo_char_121_123_127;
-extern object __glo_char_125_123_127;
-extern object __glo_string_123_127;
-extern object __glo_string_121_127;
-extern object __glo_string_121_123_127;
-extern object __glo_string_125_127;
-extern object __glo_string_125_123_127;
-extern object __glo_foldl;
-extern object __glo_foldr;
-extern object __glo_not;
-extern object __glo_list_127;
-extern object __glo_zero_127;
-extern object __glo_positive_127;
-extern object __glo_negative_127;
-extern object __glo_append;
-extern object __glo__list;
-extern object __glo_make_91list;
-extern object __glo_list_91copy;
-extern object __glo_map;
-extern object __glo_for_91each;
-extern object __glo_list_91tail;
-extern object __glo_list_91ref;
-extern object __glo_list_91set_67;
-extern object __glo_reverse;
-extern object __glo_boolean_123_127;
-extern object __glo_symbol_123_127;
-extern object __glo_Cyc_91obj_123_127;
-extern object __glo_vector;
-extern object __glo_vector_91append;
-extern object __glo_vector_91copy;
-extern object __glo_vector_91copy_67;
-extern object __glo_vector_91fill_67;
-extern object __glo_vector_91_125list;
-extern object __glo_vector_91_125string;
-extern object __glo_vector_91map;
-extern object __glo_vector_91for_91each;
-extern object __glo_make_91string;
-extern object __glo_string;
-extern object __glo_string_91copy;
-extern object __glo_string_91copy_67;
-extern object __glo_string_91fill_67;
-extern object __glo_string_91_125list;
-extern object __glo_string_91_125vector;
-extern object __glo_string_91map;
-extern object __glo_string_91for_91each;
-extern object __glo_make_91parameter;
-extern object __glo_current_91output_91port;
-extern object __glo_current_91input_91port;
-extern object __glo_current_91error_91port;
-extern object __glo_call_91with_91port;
-extern object __glo_error;
-extern object __glo_raise;
-extern object __glo_raise_91continuable;
-extern object __glo_with_91exception_91handler;
-extern object __glo_Cyc_91add_91exception_91handler;
-extern object __glo_Cyc_91remove_91exception_91handler;
-extern object __glo_newline;
-extern object __glo_write_91char;
-extern object __glo_write_91string;
-extern object __glo_flush_91output_91port;
-extern object __glo_read_91line;
-extern object __glo_read_91string;
-extern object __glo_input_91port_127;
-extern object __glo_output_91port_127;
-extern object __glo_input_91port_91open_127;
-extern object __glo_output_91port_91open_127;
-extern object __glo_features;
-extern object __glo_any;
-extern object __glo_every;
-extern object __glo_and;
-extern object __glo_or;
-extern object __glo_let;
-extern object __glo_let_85;
-extern object __glo_letrec;
-extern object __glo_begin;
-extern object __glo__case;
-extern object __glo_cond;
-extern object __glo_cond_91expand;
-extern object __glo__do;
-extern object __glo_when;
-extern object __glo_unless;
-extern object __glo_quasiquote;
-extern object __glo_floor;
-extern object __glo_ceiling;
-extern object __glo_truncate;
-extern object __glo_round;
-extern object __glo_exact;
-extern object __glo_inexact;
-extern object __glo_eof_91object;
-extern object __glo_syntax_91error;
-extern object __glo_bytevector_91copy;
-extern object __glo_utf8_91_125string;
-extern object __glo_string_91_125utf8;
+object __glo_lib_91init_117scheme_191char_scheme__char = nil;
+object __glo_string_91downcase_scheme__char = nil;
+object __glo_string_91upcase_scheme__char = nil;
+object __glo_digit_91value_scheme__char = nil;
+object __glo_char_91whitespace_127_scheme__char = nil;
+object __glo_char_91numeric_127_scheme__char = nil;
+object __glo_char_91lower_91case_127_scheme__char = nil;
+object __glo_char_91upper_91case_127_scheme__char = nil;
+object __glo_char_91alphabetic_127_scheme__char = nil;
+object __glo_char_91downcase_scheme__char = nil;
+object __glo_char_91upcase_scheme__char = nil;
+extern object __glo_cons_91source_scheme_base;
+extern object __glo_syntax_91rules_scheme_base;
+extern object __glo_letrec_85_scheme_base;
+extern object __glo_guard_scheme_base;
+extern object __glo_guard_91aux_scheme_base;
+extern object __glo_receive_scheme_base;
+extern object __glo_abs_scheme_base;
+extern object __glo_max_scheme_base;
+extern object __glo_min_scheme_base;
+extern object __glo_modulo_scheme_base;
+extern object __glo_floor_91remainder_scheme_base;
+extern object __glo_even_127_scheme_base;
+extern object __glo_exact_91integer_127_scheme_base;
+extern object __glo_exact_127_scheme_base;
+extern object __glo_inexact_127_scheme_base;
+extern object __glo_odd_127_scheme_base;
+extern object __glo_gcd_scheme_base;
+extern object __glo_lcm_scheme_base;
+extern object __glo_quotient_scheme_base;
+extern object __glo_remainder_scheme_base;
+extern object __glo_truncate_91quotient_scheme_base;
+extern object __glo_truncate_91remainder_scheme_base;
+extern object __glo_truncate_95_scheme_base;
+extern object __glo_floor_91quotient_scheme_base;
+extern object __glo_floor_91remainder_scheme_base;
+extern object __glo_floor_95_scheme_base;
+extern object __glo_square_scheme_base;
+extern object __glo_expt_scheme_base;
+extern object __glo_call_91with_91current_91continuation_scheme_base;
+extern object __glo_call_95cc_scheme_base;
+extern object __glo_call_91with_91values_scheme_base;
+extern object __glo_dynamic_91wind_scheme_base;
+extern object __glo_values_scheme_base;
+extern object __glo_char_123_127_scheme_base;
+extern object __glo_char_121_127_scheme_base;
+extern object __glo_char_125_127_scheme_base;
+extern object __glo_char_121_123_127_scheme_base;
+extern object __glo_char_125_123_127_scheme_base;
+extern object __glo_string_123_127_scheme_base;
+extern object __glo_string_121_127_scheme_base;
+extern object __glo_string_121_123_127_scheme_base;
+extern object __glo_string_125_127_scheme_base;
+extern object __glo_string_125_123_127_scheme_base;
+extern object __glo_foldl_scheme_base;
+extern object __glo_foldr_scheme_base;
+extern object __glo_not_scheme_base;
+extern object __glo_list_127_scheme_base;
+extern object __glo_zero_127_scheme_base;
+extern object __glo_positive_127_scheme_base;
+extern object __glo_negative_127_scheme_base;
+extern object __glo_append_scheme_base;
+extern object __glo__list_scheme_base;
+extern object __glo_make_91list_scheme_base;
+extern object __glo_list_91copy_scheme_base;
+extern object __glo_map_scheme_base;
+extern object __glo_for_91each_scheme_base;
+extern object __glo_list_91tail_scheme_base;
+extern object __glo_list_91ref_scheme_base;
+extern object __glo_list_91set_67_scheme_base;
+extern object __glo_reverse_scheme_base;
+extern object __glo_boolean_123_127_scheme_base;
+extern object __glo_symbol_123_127_scheme_base;
+extern object __glo_Cyc_91obj_123_127_scheme_base;
+extern object __glo_vector_scheme_base;
+extern object __glo_vector_91append_scheme_base;
+extern object __glo_vector_91copy_scheme_base;
+extern object __glo_vector_91copy_67_scheme_base;
+extern object __glo_vector_91fill_67_scheme_base;
+extern object __glo_vector_91_125list_scheme_base;
+extern object __glo_vector_91_125string_scheme_base;
+extern object __glo_vector_91map_scheme_base;
+extern object __glo_vector_91for_91each_scheme_base;
+extern object __glo_make_91string_scheme_base;
+extern object __glo_string_scheme_base;
+extern object __glo_string_91copy_scheme_base;
+extern object __glo_string_91copy_67_scheme_base;
+extern object __glo_string_91fill_67_scheme_base;
+extern object __glo_string_91_125list_scheme_base;
+extern object __glo_string_91_125vector_scheme_base;
+extern object __glo_string_91map_scheme_base;
+extern object __glo_string_91for_91each_scheme_base;
+extern object __glo_make_91parameter_scheme_base;
+extern object __glo_current_91output_91port_scheme_base;
+extern object __glo_current_91input_91port_scheme_base;
+extern object __glo_current_91error_91port_scheme_base;
+extern object __glo_call_91with_91port_scheme_base;
+extern object __glo_error_scheme_base;
+extern object __glo_raise_scheme_base;
+extern object __glo_raise_91continuable_scheme_base;
+extern object __glo_with_91exception_91handler_scheme_base;
+extern object __glo_Cyc_91add_91exception_91handler_scheme_base;
+extern object __glo_Cyc_91remove_91exception_91handler_scheme_base;
+extern object __glo_newline_scheme_base;
+extern object __glo_write_91char_scheme_base;
+extern object __glo_write_91string_scheme_base;
+extern object __glo_flush_91output_91port_scheme_base;
+extern object __glo_read_91line_scheme_base;
+extern object __glo_read_91string_scheme_base;
+extern object __glo_input_91port_127_scheme_base;
+extern object __glo_output_91port_127_scheme_base;
+extern object __glo_input_91port_91open_127_scheme_base;
+extern object __glo_output_91port_91open_127_scheme_base;
+extern object __glo_features_scheme_base;
+extern object __glo_any_scheme_base;
+extern object __glo_every_scheme_base;
+extern object __glo_and_scheme_base;
+extern object __glo_or_scheme_base;
+extern object __glo_let_scheme_base;
+extern object __glo_let_85_scheme_base;
+extern object __glo_letrec_scheme_base;
+extern object __glo_begin_scheme_base;
+extern object __glo__case_scheme_base;
+extern object __glo_cond_scheme_base;
+extern object __glo_cond_91expand_scheme_base;
+extern object __glo__do_scheme_base;
+extern object __glo_when_scheme_base;
+extern object __glo_unless_scheme_base;
+extern object __glo_quasiquote_scheme_base;
+extern object __glo_floor_scheme_base;
+extern object __glo_ceiling_scheme_base;
+extern object __glo_truncate_scheme_base;
+extern object __glo_round_scheme_base;
+extern object __glo_exact_scheme_base;
+extern object __glo_inexact_scheme_base;
+extern object __glo_eof_91object_scheme_base;
+extern object __glo_syntax_91error_scheme_base;
+extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_utf8_91_125string_scheme_base;
+extern object __glo_string_91_125utf8_scheme_base;
 #include "cyclone/runtime.h"
 static void __lambda_23(void *data, int argc, closure _,object k_7318) ;
 static void __lambda_22(void *data, int argc, closure _,object k_7321, object str_735) ;
@@ -234,12 +234,12 @@ return_closcall1(data,  k_7318,  obj_int2obj(0));;
 
 static void __lambda_22(void *data, int argc, closure _,object k_7321, object str_735) {
   Cyc_st_add(data, "scheme/char.sld:string-downcase");
-return_closcall3(data,  __glo_string_91map,  k_7321, __glo_char_91downcase, str_735);; 
+return_closcall3(data,  __glo_string_91map_scheme_base,  k_7321, __glo_char_91downcase_scheme__char, str_735);; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_7324, object str_736) {
   Cyc_st_add(data, "scheme/char.sld:string-upcase");
-return_closcall3(data,  __glo_string_91map,  k_7324, __glo_char_91upcase, str_736);; 
+return_closcall3(data,  __glo_string_91map_scheme_base,  k_7324, __glo_char_91upcase_scheme__char, str_736);; 
 }
 
 static void __lambda_20(void *data, int argc, closure _,object k_7327, object c_737) {
@@ -256,7 +256,7 @@ c_73171.elts = (object *)alloca(sizeof(object) * 2);
 c_73171.elts[0] = c_737;
 c_73171.elts[1] = k_7327;
 
-return_closcall2(data,  __glo_char_91numeric_127,  &c_73171, c_737);; 
+return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  &c_73171, c_737);; 
 }
 
 static void __lambda_19(void *data, int argc, object self_7362, object r_7328) {
@@ -368,12 +368,12 @@ c_73133.elts = (object *)alloca(sizeof(object) * 2);
 c_73133.elts[0] = c_7310;
 c_73133.elts[1] = k_7340;
 
-return_closcall3(data,  __glo_char_125_123_127,  &c_73133, c_7310, obj_char2obj(97));; 
+return_closcall3(data,  __glo_char_125_123_127_scheme_base,  &c_73133, c_7310, obj_char2obj(97));; 
 }
 
 static void __lambda_12(void *data, int argc, object self_7366, object r_7341) {
   if( !eq(boolean_f, r_7341) ){ 
-  return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_7366)->elts[1], ((closureN)self_7366)->elts[0], obj_char2obj(122));
+  return_closcall3(data,  __glo_char_121_123_127_scheme_base,  ((closureN)self_7366)->elts[1], ((closureN)self_7366)->elts[0], obj_char2obj(122));
 } else { 
   return_closcall1(data,  ((closureN)self_7366)->elts[1],  boolean_f);}
 ; 
@@ -393,12 +393,12 @@ c_73125.elts = (object *)alloca(sizeof(object) * 2);
 c_73125.elts[0] = c_7311;
 c_73125.elts[1] = k_7344;
 
-return_closcall3(data,  __glo_char_125_123_127,  &c_73125, c_7311, obj_char2obj(65));; 
+return_closcall3(data,  __glo_char_125_123_127_scheme_base,  &c_73125, c_7311, obj_char2obj(65));; 
 }
 
 static void __lambda_10(void *data, int argc, object self_7367, object r_7345) {
   if( !eq(boolean_f, r_7345) ){ 
-  return_closcall3(data,  __glo_char_121_123_127,  ((closureN)self_7367)->elts[1], ((closureN)self_7367)->elts[0], obj_char2obj(90));
+  return_closcall3(data,  __glo_char_121_123_127_scheme_base,  ((closureN)self_7367)->elts[1], ((closureN)self_7367)->elts[0], obj_char2obj(90));
 } else { 
   return_closcall1(data,  ((closureN)self_7367)->elts[1],  boolean_f);}
 ; 
@@ -418,14 +418,14 @@ c_73117.elts = (object *)alloca(sizeof(object) * 2);
 c_73117.elts[0] = c_7312;
 c_73117.elts[1] = k_7348;
 
-return_closcall2(data,  __glo_char_91upper_91case_127,  &c_73117, c_7312);; 
+return_closcall2(data,  __glo_char_91upper_91case_127_scheme__char,  &c_73117, c_7312);; 
 }
 
 static void __lambda_8(void *data, int argc, object self_7368, object tmp_7313) {
   if( !eq(boolean_f, tmp_7313) ){ 
   return_closcall1(data,  ((closureN)self_7368)->elts[1],  tmp_7313);
 } else { 
-  return_closcall2(data,  __glo_char_91lower_91case_127,  ((closureN)self_7368)->elts[1], ((closureN)self_7368)->elts[0]);}
+  return_closcall2(data,  __glo_char_91lower_91case_127_scheme__char,  ((closureN)self_7368)->elts[1], ((closureN)self_7368)->elts[0]);}
 ; 
 }
 
@@ -443,7 +443,7 @@ c_7397.elts = (object *)alloca(sizeof(object) * 2);
 c_7397.elts[0] = c_7314;
 c_7397.elts[1] = k_7352;
 
-return_closcall2(data,  __glo_char_91upper_91case_127,  &c_7397, c_7314);; 
+return_closcall2(data,  __glo_char_91upper_91case_127_scheme__char,  &c_7397, c_7314);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7369, object r_7353) {
@@ -500,7 +500,7 @@ c_7377.elts = (object *)alloca(sizeof(object) * 2);
 c_7377.elts[0] = c_7315;
 c_7377.elts[1] = k_7358;
 
-return_closcall2(data,  __glo_char_91lower_91case_127,  &c_7377, c_7315);; 
+return_closcall2(data,  __glo_char_91lower_91case_127_scheme__char,  &c_7377, c_7315);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7372, object r_7359) {
@@ -545,51 +545,51 @@ static void __lambda_0(void *data, int argc, object self_7374, object r_7360) {
 
 void c_scheme_char_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
-  add_global((object *) &__glo_lib_91init_117scheme_191char);
-  add_global((object *) &__glo_string_91downcase);
-  add_global((object *) &__glo_string_91upcase);
-  add_global((object *) &__glo_digit_91value);
-  add_global((object *) &__glo_char_91whitespace_127);
-  add_global((object *) &__glo_char_91numeric_127);
-  add_global((object *) &__glo_char_91lower_91case_127);
-  add_global((object *) &__glo_char_91upper_91case_127);
-  add_global((object *) &__glo_char_91alphabetic_127);
-  add_global((object *) &__glo_char_91downcase);
-  add_global((object *) &__glo_char_91upcase);
+  add_global((object *) &__glo_lib_91init_117scheme_191char_scheme__char);
+  add_global((object *) &__glo_string_91downcase_scheme__char);
+  add_global((object *) &__glo_string_91upcase_scheme__char);
+  add_global((object *) &__glo_digit_91value_scheme__char);
+  add_global((object *) &__glo_char_91whitespace_127_scheme__char);
+  add_global((object *) &__glo_char_91numeric_127_scheme__char);
+  add_global((object *) &__glo_char_91lower_91case_127_scheme__char);
+  add_global((object *) &__glo_char_91upper_91case_127_scheme__char);
+  add_global((object *) &__glo_char_91alphabetic_127_scheme__char);
+  add_global((object *) &__glo_char_91downcase_scheme__char);
+  add_global((object *) &__glo_char_91upcase_scheme__char);
   mclosure0(c_73188, (function_type)__lambda_23);c_73188.num_args = 0; 
-  __glo_lib_91init_117scheme_191char = &c_73188; 
+  __glo_lib_91init_117scheme_191char_scheme__char = &c_73188; 
   mclosure0(c_73186, (function_type)__lambda_22);c_73186.num_args = 1; 
-  __glo_string_91downcase = &c_73186; 
+  __glo_string_91downcase_scheme__char = &c_73186; 
   mclosure0(c_73184, (function_type)__lambda_21);c_73184.num_args = 1; 
-  __glo_string_91upcase = &c_73184; 
+  __glo_string_91upcase_scheme__char = &c_73184; 
   mclosure0(c_73169, (function_type)__lambda_20);c_73169.num_args = 1; 
-  __glo_digit_91value = &c_73169; 
+  __glo_digit_91value_scheme__char = &c_73169; 
   mclosure0(c_73157, (function_type)__lambda_17);c_73157.num_args = 1; 
-  __glo_char_91whitespace_127 = &c_73157; 
+  __glo_char_91whitespace_127_scheme__char = &c_73157; 
   mclosure0(c_73139, (function_type)__lambda_15);c_73139.num_args = 1; 
-  __glo_char_91numeric_127 = &c_73139; 
+  __glo_char_91numeric_127_scheme__char = &c_73139; 
   mclosure0(c_73131, (function_type)__lambda_13);c_73131.num_args = 1; 
-  __glo_char_91lower_91case_127 = &c_73131; 
+  __glo_char_91lower_91case_127_scheme__char = &c_73131; 
   mclosure0(c_73123, (function_type)__lambda_11);c_73123.num_args = 1; 
-  __glo_char_91upper_91case_127 = &c_73123; 
+  __glo_char_91upper_91case_127_scheme__char = &c_73123; 
   mclosure0(c_73115, (function_type)__lambda_9);c_73115.num_args = 1; 
-  __glo_char_91alphabetic_127 = &c_73115; 
+  __glo_char_91alphabetic_127_scheme__char = &c_73115; 
   mclosure0(c_7395, (function_type)__lambda_7);c_7395.num_args = 1; 
-  __glo_char_91downcase = &c_7395; 
+  __glo_char_91downcase_scheme__char = &c_7395; 
   mclosure0(c_7375, (function_type)__lambda_3);c_7375.num_args = 1; 
-  __glo_char_91upcase = &c_7375; 
+  __glo_char_91upcase_scheme__char = &c_7375; 
 
-  make_cvar(cvar_73190, (object *)&__glo_lib_91init_117scheme_191char);make_cons(pair_73191, find_or_add_symbol("lib-init:scheme_char"), &cvar_73190);
-  make_cvar(cvar_73192, (object *)&__glo_string_91downcase);make_cons(pair_73193, find_or_add_symbol("string-downcase"), &cvar_73192);
-  make_cvar(cvar_73194, (object *)&__glo_string_91upcase);make_cons(pair_73195, find_or_add_symbol("string-upcase"), &cvar_73194);
-  make_cvar(cvar_73196, (object *)&__glo_digit_91value);make_cons(pair_73197, find_or_add_symbol("digit-value"), &cvar_73196);
-  make_cvar(cvar_73198, (object *)&__glo_char_91whitespace_127);make_cons(pair_73199, find_or_add_symbol("char-whitespace?"), &cvar_73198);
-  make_cvar(cvar_73200, (object *)&__glo_char_91numeric_127);make_cons(pair_73201, find_or_add_symbol("char-numeric?"), &cvar_73200);
-  make_cvar(cvar_73202, (object *)&__glo_char_91lower_91case_127);make_cons(pair_73203, find_or_add_symbol("char-lower-case?"), &cvar_73202);
-  make_cvar(cvar_73204, (object *)&__glo_char_91upper_91case_127);make_cons(pair_73205, find_or_add_symbol("char-upper-case?"), &cvar_73204);
-  make_cvar(cvar_73206, (object *)&__glo_char_91alphabetic_127);make_cons(pair_73207, find_or_add_symbol("char-alphabetic?"), &cvar_73206);
-  make_cvar(cvar_73208, (object *)&__glo_char_91downcase);make_cons(pair_73209, find_or_add_symbol("char-downcase"), &cvar_73208);
-  make_cvar(cvar_73210, (object *)&__glo_char_91upcase);make_cons(pair_73211, find_or_add_symbol("char-upcase"), &cvar_73210);
+  make_cvar(cvar_73190, (object *)&__glo_lib_91init_117scheme_191char_scheme__char);make_cons(pair_73191, find_or_add_symbol("lib-init:scheme_char"), &cvar_73190);
+  make_cvar(cvar_73192, (object *)&__glo_string_91downcase_scheme__char);make_cons(pair_73193, find_or_add_symbol("string-downcase"), &cvar_73192);
+  make_cvar(cvar_73194, (object *)&__glo_string_91upcase_scheme__char);make_cons(pair_73195, find_or_add_symbol("string-upcase"), &cvar_73194);
+  make_cvar(cvar_73196, (object *)&__glo_digit_91value_scheme__char);make_cons(pair_73197, find_or_add_symbol("digit-value"), &cvar_73196);
+  make_cvar(cvar_73198, (object *)&__glo_char_91whitespace_127_scheme__char);make_cons(pair_73199, find_or_add_symbol("char-whitespace?"), &cvar_73198);
+  make_cvar(cvar_73200, (object *)&__glo_char_91numeric_127_scheme__char);make_cons(pair_73201, find_or_add_symbol("char-numeric?"), &cvar_73200);
+  make_cvar(cvar_73202, (object *)&__glo_char_91lower_91case_127_scheme__char);make_cons(pair_73203, find_or_add_symbol("char-lower-case?"), &cvar_73202);
+  make_cvar(cvar_73204, (object *)&__glo_char_91upper_91case_127_scheme__char);make_cons(pair_73205, find_or_add_symbol("char-upper-case?"), &cvar_73204);
+  make_cvar(cvar_73206, (object *)&__glo_char_91alphabetic_127_scheme__char);make_cons(pair_73207, find_or_add_symbol("char-alphabetic?"), &cvar_73206);
+  make_cvar(cvar_73208, (object *)&__glo_char_91downcase_scheme__char);make_cons(pair_73209, find_or_add_symbol("char-downcase"), &cvar_73208);
+  make_cvar(cvar_73210, (object *)&__glo_char_91upcase_scheme__char);make_cons(pair_73211, find_or_add_symbol("char-upcase"), &cvar_73210);
 make_cons(c_73212, &pair_73191,Cyc_global_variables);
 make_cons(c_73213, &pair_73193, &c_73212);
 make_cons(c_73214, &pair_73195, &c_73213);
@@ -603,5 +603,5 @@ make_cons(c_73221, &pair_73209, &c_73220);
 make_cons(c_73222, &pair_73211, &c_73221);
 Cyc_global_variables = &c_73222;
 cont = ((closure1_type *)cont)->elt1;
-(((closure)__glo_lib_91init_117scheme_191char)->fn)(data, 1, cont, cont);
+(((closure)__glo_lib_91init_117scheme_191char_scheme__char)->fn)(data, 1, cont, cont);
 }

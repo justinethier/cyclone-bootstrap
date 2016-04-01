@@ -43,8 +43,8 @@
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemecxr = nil;
-object __glo_caaaaar = nil;
+object __glo_lib_91init_117schemecxr_scheme_cxr = nil;
+object __glo_caaaaar_scheme_cxr = nil;
 #include "cyclone/runtime.h"
 static void __lambda_5(void *data, int argc, closure _,object k_734) ;
 static void __lambda_4(void *data, int argc, closure _,object k_737, object lis_731) ;
@@ -125,18 +125,18 @@ static void __lambda_0(void *data, int argc, object self_7315, object r_738) {
 
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
-  add_global((object *) &__glo_lib_91init_117schemecxr);
-  add_global((object *) &__glo_caaaaar);
+  add_global((object *) &__glo_lib_91init_117schemecxr_scheme_cxr);
+  add_global((object *) &__glo_caaaaar_scheme_cxr);
   mclosure0(c_7337, (function_type)__lambda_5);c_7337.num_args = 0; 
-  __glo_lib_91init_117schemecxr = &c_7337; 
+  __glo_lib_91init_117schemecxr_scheme_cxr = &c_7337; 
   mclosure0(c_7316, (function_type)__lambda_4);c_7316.num_args = 1; 
-  __glo_caaaaar = &c_7316; 
+  __glo_caaaaar_scheme_cxr = &c_7316; 
 
-  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr);make_cons(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
-  make_cvar(cvar_7341, (object *)&__glo_caaaaar);make_cons(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
+  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_cons(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
+  make_cvar(cvar_7341, (object *)&__glo_caaaaar_scheme_cxr);make_cons(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
 make_cons(c_7343, &pair_7340,Cyc_global_variables);
 make_cons(c_7344, &pair_7342, &c_7343);
 Cyc_global_variables = &c_7344;
 cont = ((closure1_type *)cont)->elt1;
-(((closure)__glo_lib_91init_117schemecxr)->fn)(data, 1, cont, cont);
+(((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
 }

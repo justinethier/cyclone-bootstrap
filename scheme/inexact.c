@@ -43,17 +43,17 @@
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemeinexact = nil;
-object __glo_tan = nil;
-object __glo_sqrt = nil;
-object __glo_sin = nil;
-object __glo_c_91log = nil;
-object __glo_log = nil;
-object __glo_exp = nil;
-object __glo_cos = nil;
-object __glo_atan = nil;
-object __glo_asin = nil;
-object __glo_acos = nil;
+object __glo_lib_91init_117schemeinexact_scheme_inexact = nil;
+object __glo_tan_scheme_inexact = nil;
+object __glo_sqrt_scheme_inexact = nil;
+object __glo_sin_scheme_inexact = nil;
+object __glo_c_91log_scheme_inexact = nil;
+object __glo_log_scheme_inexact = nil;
+object __glo_exp_scheme_inexact = nil;
+object __glo_cos_scheme_inexact = nil;
+object __glo_atan_scheme_inexact = nil;
+object __glo_asin_scheme_inexact = nil;
+object __glo_acos_scheme_inexact = nil;
 #include "cyclone/runtime.h"
 static void __lambda_14(void *data, int argc, closure _,object k_736) ;
 static void __lambda_13(void *data, int argc, closure _, object k, object z) ;
@@ -101,7 +101,7 @@ return_closcall1(data,(closure)&c_7325,  Cyc_is_null(z2_731));;
 
 static void __lambda_8(void *data, int argc, object self_7314, object r_7310) {
   if( !eq(boolean_f, r_7310) ){ 
-  return_closcall2(data,  __glo_c_91log,  ((closureN)self_7314)->elts[0], ((closureN)self_7314)->elts[1]);
+  return_closcall2(data,  __glo_c_91log_scheme_inexact,  ((closureN)self_7314)->elts[0], ((closureN)self_7314)->elts[1]);
 } else { 
   
 closureN_type c_7330;
@@ -132,7 +132,7 @@ c_7332.elts = (object *)alloca(sizeof(object) * 2);
 c_7332.elts[0] = ((closureN)self_7315)->elts[0];
 c_7332.elts[1] = z2_85_733;
 
-return_closcall2(data,  __glo_c_91log,  &c_7332, ((closureN)self_7315)->elts[1]);; 
+return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7332, ((closureN)self_7315)->elts[1]);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7316, object r_7312) {
@@ -148,7 +148,7 @@ c_7334.elts = (object *)alloca(sizeof(object) * 2);
 c_7334.elts[0] = ((closureN)self_7316)->elts[0];
 c_7334.elts[1] = r_7312;
 
-return_closcall2(data,  __glo_c_91log,  &c_7334, ((closureN)self_7316)->elts[1]);; 
+return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7334, ((closureN)self_7316)->elts[1]);; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7317, object r_7313) {
@@ -164,51 +164,51 @@ static void __lambda_1(void *data, int argc, closure _, object k, object z) { re
 static void __lambda_0(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, acos, z); }
 void c_schemeinexact_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
-  add_global((object *) &__glo_lib_91init_117schemeinexact);
-  add_global((object *) &__glo_tan);
-  add_global((object *) &__glo_sqrt);
-  add_global((object *) &__glo_sin);
-  add_global((object *) &__glo_c_91log);
-  add_global((object *) &__glo_log);
-  add_global((object *) &__glo_exp);
-  add_global((object *) &__glo_cos);
-  add_global((object *) &__glo_atan);
-  add_global((object *) &__glo_asin);
-  add_global((object *) &__glo_acos);
+  add_global((object *) &__glo_lib_91init_117schemeinexact_scheme_inexact);
+  add_global((object *) &__glo_tan_scheme_inexact);
+  add_global((object *) &__glo_sqrt_scheme_inexact);
+  add_global((object *) &__glo_sin_scheme_inexact);
+  add_global((object *) &__glo_c_91log_scheme_inexact);
+  add_global((object *) &__glo_log_scheme_inexact);
+  add_global((object *) &__glo_exp_scheme_inexact);
+  add_global((object *) &__glo_cos_scheme_inexact);
+  add_global((object *) &__glo_atan_scheme_inexact);
+  add_global((object *) &__glo_asin_scheme_inexact);
+  add_global((object *) &__glo_acos_scheme_inexact);
   mclosure0(c_7352, (function_type)__lambda_14);c_7352.num_args = 0; 
-  __glo_lib_91init_117schemeinexact = &c_7352; 
+  __glo_lib_91init_117schemeinexact_scheme_inexact = &c_7352; 
   mclosure0(c_7351, (function_type)__lambda_13);c_7351.num_args = 1; 
-  __glo_tan = &c_7351; 
+  __glo_tan_scheme_inexact = &c_7351; 
   mclosure0(c_7350, (function_type)__lambda_12);c_7350.num_args = 1; 
-  __glo_sqrt = &c_7350; 
+  __glo_sqrt_scheme_inexact = &c_7350; 
   mclosure0(c_7349, (function_type)__lambda_11);c_7349.num_args = 1; 
-  __glo_sin = &c_7349; 
+  __glo_sin_scheme_inexact = &c_7349; 
   mclosure0(c_7348, (function_type)__lambda_10);c_7348.num_args = 1; 
-  __glo_c_91log = &c_7348; 
+  __glo_c_91log_scheme_inexact = &c_7348; 
   mclosure0(c_7323, (function_type)__lambda_9);c_7323.num_args = 1; 
-  __glo_log = &c_7323; 
+  __glo_log_scheme_inexact = &c_7323; 
   mclosure0(c_7322, (function_type)__lambda_4);c_7322.num_args = 1; 
-  __glo_exp = &c_7322; 
+  __glo_exp_scheme_inexact = &c_7322; 
   mclosure0(c_7321, (function_type)__lambda_3);c_7321.num_args = 1; 
-  __glo_cos = &c_7321; 
+  __glo_cos_scheme_inexact = &c_7321; 
   mclosure0(c_7320, (function_type)__lambda_2);c_7320.num_args = 1; 
-  __glo_atan = &c_7320; 
+  __glo_atan_scheme_inexact = &c_7320; 
   mclosure0(c_7319, (function_type)__lambda_1);c_7319.num_args = 1; 
-  __glo_asin = &c_7319; 
+  __glo_asin_scheme_inexact = &c_7319; 
   mclosure0(c_7318, (function_type)__lambda_0);c_7318.num_args = 1; 
-  __glo_acos = &c_7318; 
+  __glo_acos_scheme_inexact = &c_7318; 
 
-  make_cvar(cvar_7354, (object *)&__glo_lib_91init_117schemeinexact);make_cons(pair_7355, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7354);
-  make_cvar(cvar_7356, (object *)&__glo_tan);make_cons(pair_7357, find_or_add_symbol("tan"), &cvar_7356);
-  make_cvar(cvar_7358, (object *)&__glo_sqrt);make_cons(pair_7359, find_or_add_symbol("sqrt"), &cvar_7358);
-  make_cvar(cvar_7360, (object *)&__glo_sin);make_cons(pair_7361, find_or_add_symbol("sin"), &cvar_7360);
-  make_cvar(cvar_7362, (object *)&__glo_c_91log);make_cons(pair_7363, find_or_add_symbol("c-log"), &cvar_7362);
-  make_cvar(cvar_7364, (object *)&__glo_log);make_cons(pair_7365, find_or_add_symbol("log"), &cvar_7364);
-  make_cvar(cvar_7366, (object *)&__glo_exp);make_cons(pair_7367, find_or_add_symbol("exp"), &cvar_7366);
-  make_cvar(cvar_7368, (object *)&__glo_cos);make_cons(pair_7369, find_or_add_symbol("cos"), &cvar_7368);
-  make_cvar(cvar_7370, (object *)&__glo_atan);make_cons(pair_7371, find_or_add_symbol("atan"), &cvar_7370);
-  make_cvar(cvar_7372, (object *)&__glo_asin);make_cons(pair_7373, find_or_add_symbol("asin"), &cvar_7372);
-  make_cvar(cvar_7374, (object *)&__glo_acos);make_cons(pair_7375, find_or_add_symbol("acos"), &cvar_7374);
+  make_cvar(cvar_7354, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_cons(pair_7355, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7354);
+  make_cvar(cvar_7356, (object *)&__glo_tan_scheme_inexact);make_cons(pair_7357, find_or_add_symbol("tan"), &cvar_7356);
+  make_cvar(cvar_7358, (object *)&__glo_sqrt_scheme_inexact);make_cons(pair_7359, find_or_add_symbol("sqrt"), &cvar_7358);
+  make_cvar(cvar_7360, (object *)&__glo_sin_scheme_inexact);make_cons(pair_7361, find_or_add_symbol("sin"), &cvar_7360);
+  make_cvar(cvar_7362, (object *)&__glo_c_91log_scheme_inexact);make_cons(pair_7363, find_or_add_symbol("c-log"), &cvar_7362);
+  make_cvar(cvar_7364, (object *)&__glo_log_scheme_inexact);make_cons(pair_7365, find_or_add_symbol("log"), &cvar_7364);
+  make_cvar(cvar_7366, (object *)&__glo_exp_scheme_inexact);make_cons(pair_7367, find_or_add_symbol("exp"), &cvar_7366);
+  make_cvar(cvar_7368, (object *)&__glo_cos_scheme_inexact);make_cons(pair_7369, find_or_add_symbol("cos"), &cvar_7368);
+  make_cvar(cvar_7370, (object *)&__glo_atan_scheme_inexact);make_cons(pair_7371, find_or_add_symbol("atan"), &cvar_7370);
+  make_cvar(cvar_7372, (object *)&__glo_asin_scheme_inexact);make_cons(pair_7373, find_or_add_symbol("asin"), &cvar_7372);
+  make_cvar(cvar_7374, (object *)&__glo_acos_scheme_inexact);make_cons(pair_7375, find_or_add_symbol("acos"), &cvar_7374);
 make_cons(c_7376, &pair_7355,Cyc_global_variables);
 make_cons(c_7377, &pair_7357, &c_7376);
 make_cons(c_7378, &pair_7359, &c_7377);
@@ -222,5 +222,5 @@ make_cons(c_7385, &pair_7373, &c_7384);
 make_cons(c_7386, &pair_7375, &c_7385);
 Cyc_global_variables = &c_7386;
 cont = ((closure1_type *)cont)->elt1;
-(((closure)__glo_lib_91init_117schemeinexact)->fn)(data, 1, cont, cont);
+(((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }
