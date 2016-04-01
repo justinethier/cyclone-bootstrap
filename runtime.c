@@ -807,6 +807,79 @@ declare_num_cmp(__num_lt, <);
 declare_num_cmp(__num_gte, >=);
 declare_num_cmp(__num_lte, <=);
 
+object Cyc_num_cmp_va_list(void *data, int argc, int (fn_op(void *, object, object)), object n, va_list ns) {
+  int i;
+  object next; 
+
+  if (argc < 2) {
+    Cyc_rt_raise_msg(data, "Not enough arguments for boolean operator\n");
+  }
+
+  for (i = 1; i < argc; i++) {
+    next = va_arg(ns, object);
+    if (!fn_op(data, n, next)) {
+      return boolean_f;
+    }
+    n = next;
+  }
+
+  return boolean_t;
+}
+
+#define declare_num_cmp2(FUNC, FUNC_OP, FUNC_APPLY, OP) \
+int FUNC_OP(void *data, object x, object y) { \
+    int result = 0, \
+        tx = (obj_is_int(x) ? -1 : type_of(x)), \
+        ty = (obj_is_int(y) ? -1 : type_of(y)); \
+      if (tx == -1 && ty == -1) { \
+        result = (obj_obj2int(x)) OP (obj_obj2int(y)); \
+      } else if (tx == -1 && ty == integer_tag) { \
+        result = (obj_obj2int(x)) OP (integer_value(y)); \
+      } else if (tx == -1 && ty == double_tag) { \
+        result = (obj_obj2int(x)) OP (double_value(y)); \
+      } else if (tx == integer_tag && ty == -1) { \
+        result = (integer_value(x)) OP (obj_obj2int(y)); \
+      } else if (tx == integer_tag && ty == integer_tag) { \
+        result = (integer_value(x)) OP (integer_value(y)); \
+      } else if (tx == integer_tag && ty == double_tag) { \
+        result = (integer_value(x)) OP (double_value(y)); \
+      } else if (tx == double_tag && ty == -1) { \
+        result = (double_value(x)) OP (obj_obj2int(y)); \
+      } else if (tx == double_tag && ty == integer_tag) { \
+        result = (double_value(x)) OP (integer_value(y)); \
+      } else if (tx == double_tag && ty == double_tag) { \
+        result = (double_value(x)) OP (double_value(y)); \
+    } else { \
+        make_string(s, "Bad argument type"); \
+        make_cons(c1, y, nil); \
+        make_cons(c0, &s, &c1); \
+        Cyc_rt_raise(data, &c0); \
+    } \
+    return result; \
+} \
+object FUNC(void *data, object cont, int argc, object n, ...) { \
+    object result; \
+    va_list ap; \
+    va_start(ap, n); \
+    result = Cyc_num_cmp_va_list(data, argc, FUNC_OP, n, ap); \
+    va_end(ap); \
+    return_closcall1(data, cont, result); \
+} \
+void FUNC_APPLY(void *data, int argc, object clo, object cont, object n, ...) { \
+    object result; \
+    va_list ap; \
+    va_start(ap, n); \
+    result = Cyc_num_cmp_va_list(data, argc - 1, FUNC_OP, n, ap); \
+    va_end(ap); \
+    return_closcall1(data, cont, result); \
+}
+
+declare_num_cmp2(Cyc_num_eq,  Cyc_num_eq_op,  dispatch_num_eq,  ==);
+declare_num_cmp2(Cyc_num_gt,  Cyc_num_gt_op,  dispatch_num_gt,  >);
+declare_num_cmp2(Cyc_num_lt,  Cyc_num_lt_op,  dispatch_num_lt,  <);
+declare_num_cmp2(Cyc_num_gte, Cyc_num_gte_op, dispatch_num_gte, >=);
+declare_num_cmp2(Cyc_num_lte, Cyc_num_lte_op, dispatch_num_lte, <=);
+
 object Cyc_is_boolean(object o){
     if (!nullp(o) && 
         !is_value_type(o) &&
@@ -2186,20 +2259,20 @@ void _cell(void *data, object cont, object args) {
     printf("not implemented\n"); exit(1); }
 
 void __123(void *data, object cont, object args) {  
-    Cyc_check_num_args(data, "=", 2, args);
-    return_closcall1(data, cont, __num_eq(data, car(args), cadr(args)));}
+    integer_type argc = Cyc_length_as_object(data, args);
+    dispatch(data, argc.value, (function_type)dispatch_num_eq, cont, cont, args); }
 void __125(void *data, object cont, object args) {  
-    Cyc_check_num_args(data, ">", 2, args);
-    return_closcall1(data, cont, __num_gt(data, car(args), cadr(args)));}
+    integer_type argc = Cyc_length_as_object(data, args);
+    dispatch(data, argc.value, (function_type)dispatch_num_gt, cont, cont, args); }
 void __121(void *data, object cont, object args) {
-    Cyc_check_num_args(data, "<", 2, args);
-    return_closcall1(data, cont, __num_lt(data, car(args), cadr(args)));}
+    integer_type argc = Cyc_length_as_object(data, args);
+    dispatch(data, argc.value, (function_type)dispatch_num_lt, cont, cont, args); }
 void __125_123(void *data, object cont, object args) {
-    Cyc_check_num_args(data, ">=", 2, args);
-    return_closcall1(data, cont, __num_gte(data, car(args), cadr(args)));}
+    integer_type argc = Cyc_length_as_object(data, args);
+    dispatch(data, argc.value, (function_type)dispatch_num_gte, cont, cont, args); }
 void __121_123(void *data, object cont, object args) {
-    Cyc_check_num_args(data, "<=", 2, args);
-    return_closcall1(data, cont, __num_lte(data, car(args), cadr(args)));}
+    integer_type argc = Cyc_length_as_object(data, args);
+    dispatch(data, argc.value, (function_type)dispatch_num_lte, cont, cont, args); }
 
 void _apply(void *data, object cont, object args) {  
     Cyc_check_num_args(data, "apply", 2, args);
