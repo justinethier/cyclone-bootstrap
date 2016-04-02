@@ -6,166 +6,148 @@
  **
  **/
 
-#define closcall0(td,cfn) ((cfn)->fn)(td,0,cfn)
-/* Check for GC, then call given continuation closure */
-#define return_closcall0(td,cfn) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall0(td,clo) ((clo)->fn)(td,0,clo)
+#define return_closcall0(td, clo) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[0]; \
-     GC(td,cfn,buf,0); return; \
- } else {closcall0(td,(closure) (cfn)); return;}}
+     GC(td,clo,buf,0); return; \
+ } else {closcall0(td,(closure) (clo)); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct0(td,_fn) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct0(td, _fn) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[0];  \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 0); return; \
+     GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,cfn,a1) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,0, (closure)(a1), cfn); } else { ((cfn)->fn)(td,1,cfn,a1);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall1(td,cfn,a1) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define return_closcall1(td, clo,a1) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1;\
-     GC(td,cfn,buf,1); return; \
- } else {closcall1(td,(closure) (cfn),a1); return;}}
+     GC(td,clo,buf,1); return; \
+ } else {closcall1(td,(closure) (clo),a1); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct1(td,_fn,a1) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct1(td, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 1); return; \
+     GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,cfn,a1,a2) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,1, (closure)(a1), cfn,a2); } else { ((cfn)->fn)(td,2,cfn,a1,a2);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall2(td,cfn,a1,a2) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define return_closcall2(td, clo,a1,a2) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
-     GC(td,cfn,buf,2); return; \
- } else {closcall2(td,(closure) (cfn),a1,a2); return;}}
+     GC(td,clo,buf,2); return; \
+ } else {closcall2(td,(closure) (clo),a1,a2); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct2(td,_fn,a1,a2) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct2(td, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 2); return; \
+     GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,cfn,a1,a2,a3) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,2, (closure)(a1), cfn,a2,a3); } else { ((cfn)->fn)(td,3,cfn,a1,a2,a3);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall3(td,cfn,a1,a2,a3) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define return_closcall3(td, clo,a1,a2,a3) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
-     GC(td,cfn,buf,3); return; \
- } else {closcall3(td,(closure) (cfn),a1,a2,a3); return;}}
+     GC(td,clo,buf,3); return; \
+ } else {closcall3(td,(closure) (clo),a1,a2,a3); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct3(td,_fn,a1,a2,a3) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct3(td, _fn,a1,a2,a3) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 3); return; \
+     GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,cfn,a1,a2,a3,a4) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,3, (closure)(a1), cfn,a2,a3,a4); } else { ((cfn)->fn)(td,4,cfn,a1,a2,a3,a4);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall4(td,cfn,a1,a2,a3,a4) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define return_closcall4(td, clo,a1,a2,a3,a4) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
-     GC(td,cfn,buf,4); return; \
- } else {closcall4(td,(closure) (cfn),a1,a2,a3,a4); return;}}
+     GC(td,clo,buf,4); return; \
+ } else {closcall4(td,(closure) (clo),a1,a2,a3,a4); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct4(td,_fn,a1,a2,a3,a4) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct4(td, _fn,a1,a2,a3,a4) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 4); return; \
+     GC(td, &c1, buf, 4); return; \
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define closcall5(td,cfn,a1,a2,a3,a4,a5) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,4, (closure)(a1), cfn,a2,a3,a4,a5); } else { ((cfn)->fn)(td,5,cfn,a1,a2,a3,a4,a5);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall5(td,cfn,a1,a2,a3,a4,a5) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall5(td,clo,a1,a2,a3,a4,a5) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,4, (closure)(a1), clo,a2,a3,a4,a5); } else { ((clo)->fn)(td,5,clo,a1,a2,a3,a4,a5);}
+#define return_closcall5(td, clo,a1,a2,a3,a4,a5) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
-     GC(td,cfn,buf,5); return; \
- } else {closcall5(td,(closure) (cfn),a1,a2,a3,a4,a5); return;}}
+     GC(td,clo,buf,5); return; \
+ } else {closcall5(td,(closure) (clo),a1,a2,a3,a4,a5); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct5(td,_fn,a1,a2,a3,a4,a5) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct5(td, _fn,a1,a2,a3,a4,a5) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 5); return; \
+     GC(td, &c1, buf, 5); return; \
  } else { (_fn)(td,5,(closure)_fn,a1,a2,a3,a4,a5); }}
 
-#define closcall6(td,cfn,a1,a2,a3,a4,a5,a6) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,5, (closure)(a1), cfn,a2,a3,a4,a5,a6); } else { ((cfn)->fn)(td,6,cfn,a1,a2,a3,a4,a5,a6);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall6(td,cfn,a1,a2,a3,a4,a5,a6) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall6(td,clo,a1,a2,a3,a4,a5,a6) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,5, (closure)(a1), clo,a2,a3,a4,a5,a6); } else { ((clo)->fn)(td,6,clo,a1,a2,a3,a4,a5,a6);}
+#define return_closcall6(td, clo,a1,a2,a3,a4,a5,a6) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;\
-     GC(td,cfn,buf,6); return; \
- } else {closcall6(td,(closure) (cfn),a1,a2,a3,a4,a5,a6); return;}}
+     GC(td,clo,buf,6); return; \
+ } else {closcall6(td,(closure) (clo),a1,a2,a3,a4,a5,a6); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct6(td,_fn,a1,a2,a3,a4,a5,a6) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct6(td, _fn,a1,a2,a3,a4,a5,a6) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 6); return; \
+     GC(td, &c1, buf, 6); return; \
  } else { (_fn)(td,6,(closure)_fn,a1,a2,a3,a4,a5,a6); }}
 
-#define closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,7, (closure)(a1), cfn,a2,a3,a4,a5,a6,a7,a8); } else { ((cfn)->fn)(td,8,cfn,a1,a2,a3,a4,a5,a6,a7,a8);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall8(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall8(td,clo,a1,a2,a3,a4,a5,a6,a7,a8) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,7, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8); } else { ((clo)->fn)(td,8,clo,a1,a2,a3,a4,a5,a6,a7,a8);}
+#define return_closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
-     GC(td,cfn,buf,8); return; \
- } else {closcall8(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8); return;}}
+     GC(td,clo,buf,8); return; \
+ } else {closcall8(td,(closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct8(td,_fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct8(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 8); return; \
+     GC(td, &c1, buf, 8); return; \
  } else { (_fn)(td,8,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8); }}
 
-#define closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(cfn) == cons_tag || prim(cfn)) { Cyc_apply(td,8, (closure)(a1), cfn,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((cfn)->fn)(td,9,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
-/* Check for GC, then call given continuation closure */
-#define return_closcall9(td,cfn,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
-{char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define closcall9(td,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,8, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((clo)->fn)(td,9,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
+#define return_closcall9(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) \
+{char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;\
-     GC(td,cfn,buf,9); return; \
- } else {closcall9(td,(closure) (cfn),a1,a2,a3,a4,a5,a6,a7,a8,a9); return;}}
+     GC(td,clo,buf,9); return; \
+ } else {closcall9(td,(closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8,a9); return;}}
 
-/* Check for GC, then call C function directly */
-#define return_direct9(td,_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
- char stack; \
- if (check_overflow(&stack,(((gc_thread_data *)data)->stack_limit))) { \
+#define return_direct9(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9; \
      mclosure0(c1, _fn); \
-     GC(td,&c1, buf, 9); return; \
+     GC(td, &c1, buf, 9); return; \
  } else { (_fn)(td,9,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9); }}
 
 #include "cyclone/types.h"
@@ -220,6 +202,8 @@ extern object __glo_exact_91integer_127_scheme_base;
 extern object __glo_exact_127_scheme_base;
 extern object __glo_inexact_127_scheme_base;
 extern object __glo_odd_127_scheme_base;
+extern object __glo_complex_127_scheme_base;
+extern object __glo_rational_127_scheme_base;
 extern object __glo_gcd_scheme_base;
 extern object __glo_lcm_scheme_base;
 extern object __glo_quotient_scheme_base;
@@ -335,14 +319,26 @@ extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_char_91alphabetic_127_scheme__char;
 extern object __glo_char_91downcase_scheme__char;
+extern object __glo_char_91foldcase_scheme__char;
 extern object __glo_char_91lower_91case_127_scheme__char;
 extern object __glo_char_91numeric_127_scheme__char;
 extern object __glo_char_91upcase_scheme__char;
 extern object __glo_char_91upper_91case_127_scheme__char;
 extern object __glo_char_91whitespace_127_scheme__char;
+extern object __glo_char_91ci_121_123_127_scheme__char;
+extern object __glo_char_91ci_121_127_scheme__char;
+extern object __glo_char_91ci_123_127_scheme__char;
+extern object __glo_char_91ci_125_123_127_scheme__char;
+extern object __glo_char_91ci_125_127_scheme__char;
 extern object __glo_digit_91value_scheme__char;
 extern object __glo_string_91upcase_scheme__char;
 extern object __glo_string_91downcase_scheme__char;
+extern object __glo_string_91foldcase_scheme__char;
+extern object __glo_string_91ci_121_123_127_scheme__char;
+extern object __glo_string_91ci_121_127_scheme__char;
+extern object __glo_string_91ci_123_127_scheme__char;
+extern object __glo_string_91ci_125_123_127_scheme__char;
+extern object __glo_string_91ci_125_127_scheme__char;
 #include "cyclone/runtime.h"
 defsymbol(unquote);
 defsymbol(unquote_91splicing);
