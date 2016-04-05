@@ -3471,7 +3471,7 @@ c_731046.elts[0] = ((closureN)self_73544)->elts[0];
 c_731046.elts[1] = r_73303;
 
 
-object c_731060 = Cyc_number2string(data,(closure)&c_731046,__glo_gensym_91count_scheme_cyclone_util);
+object c_731060 = Cyc_number2string2(data,(closure)&c_731046,1,__glo_gensym_91count_scheme_cyclone_util);
 return_closcall1(data,(closure)&c_731046,  c_731060);; 
 }
 
@@ -3600,7 +3600,7 @@ c_73993.elts = (object *)alloca(sizeof(object) * 1);
 c_73993.elts[0] = ((closureN)self_73553)->elts[0];
 
 
-object c_731006 = Cyc_number2string(data,(closure)&c_73993,__glo_gensym_91count_scheme_cyclone_util);
+object c_731006 = Cyc_number2string2(data,(closure)&c_73993,1,__glo_gensym_91count_scheme_cyclone_util);
 return_closcall1(data,(closure)&c_73993,  c_731006);; 
 }
 
@@ -4653,7 +4653,7 @@ c_73683.elts = (object *)alloca(sizeof(object) * 1);
 c_73683.elts[0] = k_73372;
 
 
-object c_73688 = Cyc_number2string(data,(closure)&c_73683,n_73115);
+object c_73688 = Cyc_number2string2(data,(closure)&c_73683,1,n_73115);
 return_closcall1(data,(closure)&c_73683,  c_73688);; 
 }
 

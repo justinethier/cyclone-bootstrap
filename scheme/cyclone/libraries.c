@@ -3172,7 +3172,7 @@ return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73490)->elts[0
 
 static void __lambda_45(void *data, int argc, object self_73491) {
   
-object c_73712 = Cyc_number2string(data,  ((closureN)self_73491)->elts[1],((closureN)self_73491)->elts[0]);
+object c_73712 = Cyc_number2string2(data,  ((closureN)self_73491)->elts[1],1,((closureN)self_73491)->elts[0]);
 return_closcall1(data,  ((closureN)self_73491)->elts[1],  c_73712);; 
 }
 
@@ -3728,7 +3728,7 @@ c_73545.elts = (object *)alloca(sizeof(object) * 1);
 c_73545.elts[0] = ((closureN)self_73523)->elts[1];
 
 
-object c_73552 = Cyc_number2string(data,(closure)&c_73545,((closureN)self_73523)->elts[0]);
+object c_73552 = Cyc_number2string2(data,(closure)&c_73545,1,((closureN)self_73523)->elts[0]);
 return_closcall1(data,(closure)&c_73545,  c_73552);; 
 }
 

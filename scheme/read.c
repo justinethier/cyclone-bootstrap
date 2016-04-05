@@ -11899,7 +11899,7 @@ c_731608.elts[1] = k_73750;
 c_731608.elts[2] = msg_73243;
 
 
-object c_731629 = Cyc_number2string(data,(closure)&c_731608,lnum_73242);
+object c_731629 = Cyc_number2string2(data,(closure)&c_731608,1,lnum_73242);
 return_closcall1(data,(closure)&c_731608,  c_731629);; 
 }
 
@@ -11918,7 +11918,7 @@ c_731610.elts[1] = ((closureN)self_731369)->elts[2];
 c_731610.elts[2] = r_73752;
 
 
-object c_731625 = Cyc_number2string(data,(closure)&c_731610,((closureN)self_731369)->elts[0]);
+object c_731625 = Cyc_number2string2(data,(closure)&c_731610,1,((closureN)self_731369)->elts[0]);
 return_closcall1(data,(closure)&c_731610,  c_731625);; 
 }
 

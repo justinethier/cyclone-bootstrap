@@ -22779,7 +22779,7 @@ c_7314440.elts[1] = ((closureN)self_734357)->elts[2];
 c_7314440.elts[2] = ((closureN)self_734357)->elts[3];
 
 
-object c_7314456 = Cyc_number2string(data,(closure)&c_7314440,cell_get(((closureN)self_734357)->elts[0]));
+object c_7314456 = Cyc_number2string2(data,(closure)&c_7314440,1,cell_get(((closureN)self_734357)->elts[0]));
 return_closcall1(data,(closure)&c_7314440,  c_7314456);; 
 }
 
