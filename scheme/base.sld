@@ -207,7 +207,9 @@
   )
   (begin
     ;; Features implemented by this Scheme
-    (define (features) '(cyclone r7rs exact-closed))
+    (define (features) '(cyclone r7rs exact-closed 
+                         ieee-float
+                         posix))
 
     (define-syntax and
       (er-macro-transformer
@@ -1011,8 +1013,8 @@
   (define (denominator n) 1)
   (define (numerator n) n)
 
-  ;; TODO: possibly not correct, just a placeholder
-  (define quotient /)
+  (define (quotient x y)
+    (truncate (/ x y)))
 
   (define truncate-quotient quotient)
   (define truncate-remainder remainder)
