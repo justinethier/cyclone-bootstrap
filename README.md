@@ -21,6 +21,8 @@ Prerequisites
 Installation
 ------------
 
+First, [download the latest release](/releases) in either `zip` or `tar.gz` format and unpack the archive.
+
 Run the install script without arguments to install in the default location (`/usr/local`):
 
     ./install.sh  
