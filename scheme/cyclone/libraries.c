@@ -242,6 +242,8 @@ extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
+extern object __glo_denominator_scheme_base;
+extern object __glo_numerator_scheme_base;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;

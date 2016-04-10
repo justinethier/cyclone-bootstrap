@@ -188,6 +188,8 @@ extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
+extern object __glo_denominator_scheme_base;
+extern object __glo_numerator_scheme_base;
 extern object __glo_eval_scheme_eval;
 extern object __glo_eval_91from_91c_scheme_eval;
 extern object __glo_create_91environment_scheme_eval;

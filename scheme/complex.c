@@ -177,6 +177,8 @@ extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
+extern object __glo_denominator_scheme_base;
+extern object __glo_numerator_scheme_base;
 #include "cyclone/runtime.h"
 static void __lambda_6(void *data, int argc, closure _,object k_7311) ;
 static void __lambda_5(void *data, int argc, closure _,object k_7314, object x_732, object y_731) ;
