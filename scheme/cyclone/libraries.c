@@ -105,7 +105,7 @@ object __glo_lib_117includes_scheme_cyclone_libraries = nil;
 object __glo_lib_117body_scheme_cyclone_libraries = nil;
 object __glo_lib_117imports_scheme_cyclone_libraries = nil;
 object __glo_lib_117exports_scheme_cyclone_libraries = nil;
-object __glo_lib_117renamed_91exports_scheme_cyclone_libraries = nil;
+object __glo_lib_117rename_91exports_scheme_cyclone_libraries = nil;
 object __glo_lib_117raw_91exports_scheme_cyclone_libraries = nil;
 object __glo_lib_117result_scheme_cyclone_libraries = nil;
 object __glo_lib_117name_91_125symbol_scheme_cyclone_libraries = nil;
@@ -3564,7 +3564,7 @@ static void __lambda_28(void *data, int argc, object self_73534, object r_73315)
 }
 
 static void __lambda_27(void *data, int argc, closure _,object k_73321, object ast_73106) {
-  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:renamed-exports");
+  Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:rename-exports");
 
 closureN_type c_73646;
 c_73646.hdr.mark = gc_color_red;
@@ -3945,7 +3945,7 @@ void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int a
   add_global((object *) &__glo_lib_117body_scheme_cyclone_libraries);
   add_global((object *) &__glo_lib_117imports_scheme_cyclone_libraries);
   add_global((object *) &__glo_lib_117exports_scheme_cyclone_libraries);
-  add_global((object *) &__glo_lib_117renamed_91exports_scheme_cyclone_libraries);
+  add_global((object *) &__glo_lib_117rename_91exports_scheme_cyclone_libraries);
   add_global((object *) &__glo_lib_117raw_91exports_scheme_cyclone_libraries);
   add_global((object *) &__glo_lib_117result_scheme_cyclone_libraries);
   add_global((object *) &__glo_lib_117name_91_125symbol_scheme_cyclone_libraries);
@@ -4000,7 +4000,7 @@ void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int a
   mclosure0(c_73659, (function_type)__lambda_33);c_73659.num_args = 1; 
   __glo_lib_117exports_scheme_cyclone_libraries = &c_73659; 
   mclosure0(c_73644, (function_type)__lambda_27);c_73644.num_args = 1; 
-  __glo_lib_117renamed_91exports_scheme_cyclone_libraries = &c_73644; 
+  __glo_lib_117rename_91exports_scheme_cyclone_libraries = &c_73644; 
   mclosure0(c_73620, (function_type)__lambda_22);c_73620.num_args = 1; 
   __glo_lib_117raw_91exports_scheme_cyclone_libraries = &c_73620; 
   mclosure0(c_73617, (function_type)__lambda_16);c_73617.num_args = 1; 
@@ -4034,7 +4034,7 @@ void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int a
   make_cvar(cvar_731526, (object *)&__glo_lib_117body_scheme_cyclone_libraries);make_cons(pair_731527, find_or_add_symbol("lib:body"), &cvar_731526);
   make_cvar(cvar_731528, (object *)&__glo_lib_117imports_scheme_cyclone_libraries);make_cons(pair_731529, find_or_add_symbol("lib:imports"), &cvar_731528);
   make_cvar(cvar_731530, (object *)&__glo_lib_117exports_scheme_cyclone_libraries);make_cons(pair_731531, find_or_add_symbol("lib:exports"), &cvar_731530);
-  make_cvar(cvar_731532, (object *)&__glo_lib_117renamed_91exports_scheme_cyclone_libraries);make_cons(pair_731533, find_or_add_symbol("lib:renamed-exports"), &cvar_731532);
+  make_cvar(cvar_731532, (object *)&__glo_lib_117rename_91exports_scheme_cyclone_libraries);make_cons(pair_731533, find_or_add_symbol("lib:rename-exports"), &cvar_731532);
   make_cvar(cvar_731534, (object *)&__glo_lib_117raw_91exports_scheme_cyclone_libraries);make_cons(pair_731535, find_or_add_symbol("lib:raw-exports"), &cvar_731534);
   make_cvar(cvar_731536, (object *)&__glo_lib_117result_scheme_cyclone_libraries);make_cons(pair_731537, find_or_add_symbol("lib:result"), &cvar_731536);
   make_cvar(cvar_731538, (object *)&__glo_lib_117name_91_125symbol_scheme_cyclone_libraries);make_cons(pair_731539, find_or_add_symbol("lib:name->symbol"), &cvar_731538);
