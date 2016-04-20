@@ -201,7 +201,7 @@ typedef enum { STAGE_CLEAR_OR_MARKING
 #define stack_overflow(x,y) ((x) > (y))
 #endif
 
-#define eq(x,y) (x == y)
+//#define eq(x,y) (x == y)
 #define type_of(x) (((list) x)->tag)
 #define forward(x) (((list) x)->cons_car)
 
