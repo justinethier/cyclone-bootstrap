@@ -325,7 +325,7 @@ return_closcall1(data,  ((closureN)self_7359)->elts[0],  &c_73188);;
 }
 
 static void __lambda_27(void *data, int argc, object self_7360, object k_7323) {
-  if( !eq(boolean_f, cell_get(((closureN)self_7360)->elts[2])) ){ 
+  if( (boolean_f != cell_get(((closureN)self_7360)->elts[2])) ){ 
   return_closcall1(data,  k_7323,  cell_get(((closureN)self_7360)->elts[1]));
 } else { 
   
@@ -346,7 +346,7 @@ return_closcall1(data,  ((closureN)self_7360)->elts[0],  &c_73198);}
 }
 
 static void __lambda_26(void *data, int argc, object self_7361, object x_736) {
-  if( !eq(boolean_f, cell_get(((closureN)self_7361)->elts[2])) ){ 
+  if( (boolean_f != cell_get(((closureN)self_7361)->elts[2])) ){ 
   return_closcall1(data,  ((closureN)self_7361)->elts[0],  cell_get(((closureN)self_7361)->elts[1]));
 } else { 
   

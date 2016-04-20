@@ -1948,7 +1948,7 @@ return_closcall1(data,(closure)&c_731515,  Cyc_is_cons(f_7384));;
 }
 
 static void __lambda_194(void *data, int argc, object self_73429, object r_73263) {
-  if( !eq(boolean_f, r_73263) ){ 
+  if( (boolean_f != r_73263) ){ 
   
 closureN_type c_731517;
 c_731517.hdr.mark = gc_color_red;
@@ -1992,7 +1992,7 @@ return_closcall1(data,(closure)&c_731519,  Cyc_is_cons(r_73287));;
 }
 
 static void __lambda_192(void *data, int argc, object self_73431, object r_73264) {
-  if( !eq(boolean_f, r_73264) ){ 
+  if( (boolean_f != r_73264) ){ 
   
 closureN_type c_731521;
 c_731521.hdr.mark = gc_color_red;
@@ -2560,7 +2560,7 @@ return_closcall1(data,(closure)&c_731370,  Cyc_is_cons(f_7383));;
 }
 
 static void __lambda_166(void *data, int argc, object self_73457, object r_73232) {
-  if( !eq(boolean_f, r_73232) ){ 
+  if( (boolean_f != r_73232) ){ 
   
 closureN_type c_731372;
 c_731372.hdr.mark = gc_color_red;
@@ -2604,7 +2604,7 @@ return_closcall1(data,(closure)&c_731374,  Cyc_is_cons(r_73260));;
 }
 
 static void __lambda_164(void *data, int argc, object self_73459, object r_73233) {
-  if( !eq(boolean_f, r_73233) ){ 
+  if( (boolean_f != r_73233) ){ 
   
 closureN_type c_731376;
 c_731376.hdr.mark = gc_color_red;
@@ -2648,7 +2648,7 @@ return_closcall1(data,(closure)&c_731378,  Cyc_is_cons(r_73259));;
 }
 
 static void __lambda_162(void *data, int argc, object self_73461, object r_73234) {
-  if( !eq(boolean_f, r_73234) ){ 
+  if( (boolean_f != r_73234) ){ 
   
 closureN_type c_731380;
 c_731380.hdr.mark = gc_color_red;
@@ -3393,7 +3393,7 @@ return_closcall1(data,(closure)&c_731020,  Cyc_is_null(ls_7381));;
 }
 
 static void __lambda_130(void *data, int argc, object self_73493, object r_73160) {
-  if( !eq(boolean_f, r_73160) ){ 
+  if( (boolean_f != r_73160) ){ 
   
 closureN_type c_731022;
 c_731022.hdr.mark = gc_color_red;
@@ -3480,7 +3480,7 @@ return_closcall1(data,(closure)&c_731182,  assq(data, r_73229, ((closureN)self_7
 }
 
 static void __lambda_127(void *data, int argc, object self_73496, object field_7382) {
-  if( !eq(boolean_f, field_7382) ){ 
+  if( (boolean_f != field_7382) ){ 
   
 closureN_type c_731184;
 c_731184.hdr.mark = gc_color_red;
@@ -3561,7 +3561,7 @@ return_closcall1(data,(closure)&c_731186,  Cyc_is_cons(r_73227));;
 }
 
 static void __lambda_123(void *data, int argc, object self_73500, object r_73197) {
-  if( !eq(boolean_f, r_73197) ){ 
+  if( (boolean_f != r_73197) ){ 
   
 closureN_type c_731188;
 c_731188.hdr.mark = gc_color_red;
@@ -5278,7 +5278,7 @@ return_closcall1(data,(closure)&c_73870,  Cyc_eq(((closureN)self_73581)->elts[1]
 }
 
 static void __lambda_41(void *data, int argc, object self_73582, object r_73312) {
-  if( !eq(boolean_f, r_73312) ){ 
+  if( (boolean_f != r_73312) ){ 
   
 make_string(c_73873, "same binding for record rtd and constructor");
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73582)->elts[0], &c_73873, ((closureN)self_73582)->elts[1]);
@@ -5304,7 +5304,7 @@ return_closcall1(data,(closure)&c_73811,  Cyc_is_cons(((closureN)self_73583)->el
 }
 
 static void __lambda_39(void *data, int argc, object self_73584, object r_73320) {
-  if( !eq(boolean_f, r_73320) ){ 
+  if( (boolean_f != r_73320) ){ 
   return_closcall1(data,  ((closureN)self_73584)->elts[0],  cadr(((closureN)self_73584)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73584)->elts[0],  boolean_f);}
@@ -5328,7 +5328,7 @@ return_closcall1(data,(closure)&c_73795,  Cyc_is_cons(((closureN)self_73585)->el
 }
 
 static void __lambda_37(void *data, int argc, object self_73586, object r_73322) {
-  if( !eq(boolean_f, r_73322) ){ 
+  if( (boolean_f != r_73322) ){ 
   return_closcall1(data,  ((closureN)self_73586)->elts[0],  car(((closureN)self_73586)->elts[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73586)->elts[0],  ((closureN)self_73586)->elts[1]);}
@@ -5353,7 +5353,7 @@ return_closcall1(data,(closure)&c_73763,  Cyc_is_vector(obj_7385));;
 }
 
 static void __lambda_35(void *data, int argc, object self_73587, object r_73326) {
-  if( !eq(boolean_f, r_73326) ){ 
+  if( (boolean_f != r_73326) ){ 
   
 closureN_type c_73765;
 c_73765.hdr.mark = gc_color_red;
@@ -5391,7 +5391,7 @@ return_closcall1(data,(closure)&c_73767,  c_73781);;
 }
 
 static void __lambda_33(void *data, int argc, object self_73589, object r_73327) {
-  if( !eq(boolean_f, r_73327) ){ 
+  if( (boolean_f != r_73327) ){ 
   
 closureN_type c_73769;
 c_73769.hdr.mark = gc_color_red;
@@ -5738,7 +5738,7 @@ return_closcall1(data,(closure)&c_73645,  Cyc_is_vector(obj_73110));;
 }
 
 static void __lambda_8(void *data, int argc, object self_73608, object r_73363) {
-  if( !eq(boolean_f, r_73363) ){ 
+  if( (boolean_f != r_73363) ){ 
   
 closureN_type c_73647;
 c_73647.hdr.mark = gc_color_red;
@@ -5776,7 +5776,7 @@ return_closcall1(data,(closure)&c_73649,  equalp(r_73366, __glo_record_91marker_
 }
 
 static void __lambda_6(void *data, int argc, object self_73610, object r_73364) {
-  if( !eq(boolean_f, r_73364) ){ 
+  if( (boolean_f != r_73364) ){ 
   
 closureN_type c_73651;
 c_73651.hdr.mark = gc_color_red;

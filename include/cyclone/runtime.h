@@ -20,7 +20,7 @@
 }
 
 #define Cyc_check_type(data, fnc_test, tag, obj) { \
-  if (eq(boolean_f, fnc_test(obj))) Cyc_invalid_type_error(data, tag, obj); }
+  if ((boolean_f == fnc_test(obj))) Cyc_invalid_type_error(data, tag, obj); }
 
 #define Cyc_check_cons_or_null(d,obj) { if (obj != NULL) { Cyc_check_cons(d,obj); }}
 #define Cyc_check_cons(d,obj) Cyc_check_type(d,Cyc_is_cons, cons_tag, obj);
@@ -237,7 +237,6 @@ object Cyc_num_op_va_list(void *data, int argc, object (fn_op(void *, common_typ
 int equal(object,object);
 list assq(void *,object,list);
 list assoc(void *,object x, list l);
-//object get(object,object);
 object equalp(object,object);
 object memberp(void *,object,list);
 object memqp(void *,object,list);

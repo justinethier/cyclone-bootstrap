@@ -497,8 +497,8 @@ return_closcall0(data,(closure)&c_73202);;
 }
 
 static void __lambda_32(void *data, int argc, object self_7388) {
-  if( !eq(boolean_f, ((closureN)self_7388)->elts[4]) ){ 
-  if( !eq(boolean_f, ((closureN)self_7388)->elts[0]) ){ 
+  if( (boolean_f != ((closureN)self_7388)->elts[4]) ){ 
+  if( (boolean_f != ((closureN)self_7388)->elts[0]) ){ 
   
 closureN_type c_73206;
 c_73206.hdr.mark = gc_color_red;
@@ -717,7 +717,7 @@ static void __lambda_20(void *data, int argc, object self_73100, object r_7333) 
 }
 
 static void __lambda_19(void *data, int argc, object self_73101, object k_7342) {
-  if( !eq(boolean_f, ((closureN)self_73101)->elts[1]) ){ 
+  if( (boolean_f != ((closureN)self_73101)->elts[1]) ){ 
   return_closcall1(data,  k_7342,  ((closureN)self_73101)->elts[1]);
 } else { 
   

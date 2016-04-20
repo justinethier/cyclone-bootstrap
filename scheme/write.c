@@ -211,7 +211,7 @@ return_closcall1(data,(closure)&c_7350,  Cyc_is_null(port_731));;
 }
 
 static void __lambda_6(void *data, int argc, object self_7320, object r_7311) {
-  if( !eq(boolean_f, r_7311) ){ 
+  if( (boolean_f != r_7311) ){ 
   
 closureN_type c_7352;
 c_7352.hdr.mark = gc_color_red;
@@ -270,7 +270,7 @@ return_closcall1(data,(closure)&c_7328,  Cyc_is_null(port_733));;
 }
 
 static void __lambda_2(void *data, int argc, object self_7323, object r_7317) {
-  if( !eq(boolean_f, r_7317) ){ 
+  if( (boolean_f != r_7317) ){ 
   
 closureN_type c_7330;
 c_7330.hdr.mark = gc_color_red;

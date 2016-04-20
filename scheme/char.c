@@ -327,7 +327,7 @@ return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  &c_73429, c_738)
 }
 
 static void __lambda_54(void *data, int argc, object self_73150, object r_7358) {
-  if( !eq(boolean_f, r_7358) ){ 
+  if( (boolean_f != r_7358) ){ 
   
 closureN_type c_73431;
 c_73431.hdr.mark = gc_color_red;
@@ -439,7 +439,7 @@ return_closcall3(data,  __glo_char_125_123_127_scheme_base,  &c_73391, c_7311, o
 }
 
 static void __lambda_47(void *data, int argc, object self_73154, object r_7371) {
-  if( !eq(boolean_f, r_7371) ){ 
+  if( (boolean_f != r_7371) ){ 
   return_closcall3(data,  __glo_char_121_123_127_scheme_base,  ((closureN)self_73154)->elts[1], ((closureN)self_73154)->elts[0], obj_char2obj(122));
 } else { 
   return_closcall1(data,  ((closureN)self_73154)->elts[1],  boolean_f);}
@@ -464,7 +464,7 @@ return_closcall3(data,  __glo_char_125_123_127_scheme_base,  &c_73383, c_7312, o
 }
 
 static void __lambda_45(void *data, int argc, object self_73155, object r_7375) {
-  if( !eq(boolean_f, r_7375) ){ 
+  if( (boolean_f != r_7375) ){ 
   return_closcall3(data,  __glo_char_121_123_127_scheme_base,  ((closureN)self_73155)->elts[1], ((closureN)self_73155)->elts[0], obj_char2obj(90));
 } else { 
   return_closcall1(data,  ((closureN)self_73155)->elts[1],  boolean_f);}
@@ -489,7 +489,7 @@ return_closcall2(data,  __glo_char_91upper_91case_127_scheme__char,  &c_73375, c
 }
 
 static void __lambda_43(void *data, int argc, object self_73156, object tmp_7314) {
-  if( !eq(boolean_f, tmp_7314) ){ 
+  if( (boolean_f != tmp_7314) ){ 
   return_closcall1(data,  ((closureN)self_73156)->elts[1],  tmp_7314);
 } else { 
   return_closcall2(data,  __glo_char_91lower_91case_127_scheme__char,  ((closureN)self_73156)->elts[1], ((closureN)self_73156)->elts[0]);}
@@ -989,7 +989,7 @@ return_closcall2(data,  __glo_char_91upper_91case_127_scheme__char,  &c_73210, c
 }
 
 static void __lambda_6(void *data, int argc, object self_73182, object r_73140) {
-  if( !eq(boolean_f, r_73140) ){ 
+  if( (boolean_f != r_73140) ){ 
   
 closureN_type c_73212;
 c_73212.hdr.mark = gc_color_red;
@@ -1046,7 +1046,7 @@ return_closcall2(data,  __glo_char_91lower_91case_127_scheme__char,  &c_73190, c
 }
 
 static void __lambda_2(void *data, int argc, object self_73185, object r_73146) {
-  if( !eq(boolean_f, r_73146) ){ 
+  if( (boolean_f != r_73146) ){ 
   
 closureN_type c_73192;
 c_73192.hdr.mark = gc_color_red;

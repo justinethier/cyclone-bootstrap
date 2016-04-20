@@ -96,7 +96,7 @@ return_closcall1(data,(closure)&c_7325,  Cyc_is_null(z2_731));;
 }
 
 static void __lambda_8(void *data, int argc, object self_7314, object r_7310) {
-  if( !eq(boolean_f, r_7310) ){ 
+  if( (boolean_f != r_7310) ){ 
   return_closcall2(data,  __glo_c_91log_scheme_inexact,  ((closureN)self_7314)->elts[0], ((closureN)self_7314)->elts[1]);
 } else { 
   
