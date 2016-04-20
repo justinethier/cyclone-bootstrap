@@ -151,151 +151,151 @@
  } else { (_fn)(td,37,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemebase_scheme_base = nil;
-object __glo_guard_91aux_scheme_base = nil;
-object __glo_guard_scheme_base = nil;
-object __glo_letrec_85_scheme_base = nil;
-object __glo_syntax_91rules_scheme_base = nil;
-object __glo_cons_91source_scheme_base = nil;
-object __glo_find_scheme_base = nil;
-object __glo_find_91tail_scheme_base = nil;
-object __glo_identifier_91_125symbol_scheme_base = nil;
-object __glo_identifier_127_scheme_base = nil;
-object __glo_output_91port_91open_127_scheme_base = nil;
-object __glo_input_91port_91open_127_scheme_base = nil;
-object __glo_output_91port_127_scheme_base = nil;
-object __glo_input_91port_127_scheme_base = nil;
-object __glo_eof_91object_scheme_base = nil;
-object __glo_expt_scheme_base = nil;
-object __glo_square_scheme_base = nil;
-object __glo_floor_95_scheme_base = nil;
-object __glo_floor_91remainder_scheme_base = nil;
-object __glo_floor_91quotient_scheme_base = nil;
-object __glo_truncate_95_scheme_base = nil;
-object __glo_truncate_91remainder_scheme_base = nil;
-object __glo_truncate_91quotient_scheme_base = nil;
-object __glo_quotient_scheme_base = nil;
-object __glo_numerator_scheme_base = nil;
-object __glo_denominator_scheme_base = nil;
-object __glo_lcm_95entry_scheme_base = nil;
-object __glo_lcm_95main_scheme_base = nil;
-object __glo_gcd_95entry_scheme_base = nil;
-object __glo_gcd_95main_scheme_base = nil;
-object __glo_lcm_scheme_base = nil;
-object __glo_gcd_scheme_base = nil;
-object __glo_min_scheme_base = nil;
-object __glo_max_scheme_base = nil;
-object __glo_rational_127_scheme_base = nil;
-object __glo_complex_127_scheme_base = nil;
-object __glo_inexact_127_scheme_base = nil;
-object __glo_exact_127_scheme_base = nil;
-object __glo_exact_91integer_127_scheme_base = nil;
-object __glo_even_127_scheme_base = nil;
-object __glo_odd_127_scheme_base = nil;
-object __glo_modulo_scheme_base = nil;
-object __glo_remainder_scheme_base = nil;
-object __glo_abs_scheme_base = nil;
-object __glo_inexact_scheme_base = nil;
-object __glo_exact_scheme_base = nil;
-object __glo_round_scheme_base = nil;
-object __glo_truncate_scheme_base = nil;
-object __glo_ceiling_scheme_base = nil;
-object __glo_floor_scheme_base = nil;
-object __glo_every_scheme_base = nil;
-object __glo_any_scheme_base = nil;
-object __glo_Cyc_91remove_91exception_91handler_scheme_base = nil;
-object __glo_Cyc_91add_91exception_91handler_scheme_base = nil;
-object __glo_with_91exception_91handler_scheme_base = nil;
-object __glo_raise_91continuable_scheme_base = nil;
-object __glo_raise_scheme_base = nil;
-object __glo_error_scheme_base = nil;
-object __glo_current_91error_91port_scheme_base = nil;
-object __glo_current_91input_91port_scheme_base = nil;
-object __glo_current_91output_91port_scheme_base = nil;
-object __glo_make_91parameter_scheme_base = nil;
-object __glo_make_91string_scheme_base = nil;
-object __glo_string_scheme_base = nil;
-object __glo_Cyc_91obj_123_127_scheme_base = nil;
-object __glo_symbol_123_127_scheme_base = nil;
-object __glo_boolean_123_127_scheme_base = nil;
-object __glo_vector_91fill_67_scheme_base = nil;
-object __glo_vector_91copy_67_scheme_base = nil;
-object __glo_vector_91copy_scheme_base = nil;
-object __glo_vector_91append_scheme_base = nil;
-object __glo_vector_91for_91each_scheme_base = nil;
-object __glo_vector_91map_scheme_base = nil;
-object __glo_string_91for_91each_scheme_base = nil;
-object __glo_string_91map_scheme_base = nil;
-object __glo_string_91fill_67_scheme_base = nil;
-object __glo_string_91copy_67_scheme_base = nil;
-object __glo_string_91copy_scheme_base = nil;
-object __glo_string_91_125vector_scheme_base = nil;
-object __glo_string_91_125list_scheme_base = nil;
-object __glo_vector_91_125string_scheme_base = nil;
-object __glo_string_91_125utf8_scheme_base = nil;
-object __glo_utf8_91_125string_scheme_base = nil;
-object __glo_bytevector_91copy_scheme_base = nil;
-object __glo_vector_91_125list_scheme_base = nil;
-object __glo_vector_scheme_base = nil;
-object __glo_reverse_scheme_base = nil;
-object __glo_list_91set_67_scheme_base = nil;
-object __glo_list_91ref_scheme_base = nil;
-object __glo_list_91tail_scheme_base = nil;
-object __glo_for_91each_scheme_base = nil;
-object __glo_map_scheme_base = nil;
-object __glo__75cars_87cdrs_scheme_base = nil;
-object __glo_car_87cdr_scheme_base = nil;
-object __glo_receive_scheme_base = nil;
-object __glo_list_91copy_scheme_base = nil;
-object __glo_make_91list_scheme_base = nil;
-object __glo__list_scheme_base = nil;
-object __glo_append_scheme_base = nil;
-object __glo_negative_127_scheme_base = nil;
-object __glo_positive_127_scheme_base = nil;
-object __glo_zero_127_scheme_base = nil;
-object __glo_list_127_scheme_base = nil;
-object __glo_not_scheme_base = nil;
-object __glo_newline_scheme_base = nil;
-object __glo_write_91char_scheme_base = nil;
-object __glo_write_91string_scheme_base = nil;
-object __glo_flush_91output_91port_scheme_base = nil;
-object __glo_read_91string_scheme_base = nil;
-object __glo_read_91line_scheme_base = nil;
-object __glo_foldr_scheme_base = nil;
-object __glo_foldl_scheme_base = nil;
-object __glo_string_125_123_127_scheme_base = nil;
-object __glo_string_125_127_scheme_base = nil;
-object __glo_string_121_123_127_scheme_base = nil;
-object __glo_string_121_127_scheme_base = nil;
-object __glo_string_123_127_scheme_base = nil;
-object __glo_char_125_123_127_scheme_base = nil;
-object __glo_char_121_123_127_scheme_base = nil;
-object __glo_char_125_127_scheme_base = nil;
-object __glo_char_121_127_scheme_base = nil;
-object __glo_char_123_127_scheme_base = nil;
-object __glo_Cyc_91bin_91op_91char_scheme_base = nil;
-object __glo_Cyc_91bin_91op_scheme_base = nil;
-object __glo_call_91with_91port_scheme_base = nil;
-object __glo_dynamic_91wind_scheme_base = nil;
-object __glo_call_91with_91values_scheme_base = nil;
-object __glo_values_scheme_base = nil;
-object __glo_call_91with_91current_91continuation_scheme_base = nil;
-object __glo_syntax_91error_scheme_base = nil;
-object __glo_quasiquote_scheme_base = nil;
-object __glo__do_scheme_base = nil;
-object __glo_unless_scheme_base = nil;
-object __glo_when_scheme_base = nil;
-object __glo__case_scheme_base = nil;
-object __glo_cond_scheme_base = nil;
-object __glo_cond_91expand_scheme_base = nil;
-object __glo_begin_scheme_base = nil;
-object __glo_letrec_scheme_base = nil;
-object __glo_let_85_scheme_base = nil;
-object __glo_let_scheme_base = nil;
-object __glo_or_scheme_base = nil;
-object __glo_and_scheme_base = nil;
-object __glo_features_scheme_base = nil;
-object __glo_call_95cc_scheme_base = nil;
+object __glo_lib_91init_117schemebase_scheme_base = NULL;
+object __glo_guard_91aux_scheme_base = NULL;
+object __glo_guard_scheme_base = NULL;
+object __glo_letrec_85_scheme_base = NULL;
+object __glo_syntax_91rules_scheme_base = NULL;
+object __glo_cons_91source_scheme_base = NULL;
+object __glo_find_scheme_base = NULL;
+object __glo_find_91tail_scheme_base = NULL;
+object __glo_identifier_91_125symbol_scheme_base = NULL;
+object __glo_identifier_127_scheme_base = NULL;
+object __glo_output_91port_91open_127_scheme_base = NULL;
+object __glo_input_91port_91open_127_scheme_base = NULL;
+object __glo_output_91port_127_scheme_base = NULL;
+object __glo_input_91port_127_scheme_base = NULL;
+object __glo_eof_91object_scheme_base = NULL;
+object __glo_expt_scheme_base = NULL;
+object __glo_square_scheme_base = NULL;
+object __glo_floor_95_scheme_base = NULL;
+object __glo_floor_91remainder_scheme_base = NULL;
+object __glo_floor_91quotient_scheme_base = NULL;
+object __glo_truncate_95_scheme_base = NULL;
+object __glo_truncate_91remainder_scheme_base = NULL;
+object __glo_truncate_91quotient_scheme_base = NULL;
+object __glo_quotient_scheme_base = NULL;
+object __glo_numerator_scheme_base = NULL;
+object __glo_denominator_scheme_base = NULL;
+object __glo_lcm_95entry_scheme_base = NULL;
+object __glo_lcm_95main_scheme_base = NULL;
+object __glo_gcd_95entry_scheme_base = NULL;
+object __glo_gcd_95main_scheme_base = NULL;
+object __glo_lcm_scheme_base = NULL;
+object __glo_gcd_scheme_base = NULL;
+object __glo_min_scheme_base = NULL;
+object __glo_max_scheme_base = NULL;
+object __glo_rational_127_scheme_base = NULL;
+object __glo_complex_127_scheme_base = NULL;
+object __glo_inexact_127_scheme_base = NULL;
+object __glo_exact_127_scheme_base = NULL;
+object __glo_exact_91integer_127_scheme_base = NULL;
+object __glo_even_127_scheme_base = NULL;
+object __glo_odd_127_scheme_base = NULL;
+object __glo_modulo_scheme_base = NULL;
+object __glo_remainder_scheme_base = NULL;
+object __glo_abs_scheme_base = NULL;
+object __glo_inexact_scheme_base = NULL;
+object __glo_exact_scheme_base = NULL;
+object __glo_round_scheme_base = NULL;
+object __glo_truncate_scheme_base = NULL;
+object __glo_ceiling_scheme_base = NULL;
+object __glo_floor_scheme_base = NULL;
+object __glo_every_scheme_base = NULL;
+object __glo_any_scheme_base = NULL;
+object __glo_Cyc_91remove_91exception_91handler_scheme_base = NULL;
+object __glo_Cyc_91add_91exception_91handler_scheme_base = NULL;
+object __glo_with_91exception_91handler_scheme_base = NULL;
+object __glo_raise_91continuable_scheme_base = NULL;
+object __glo_raise_scheme_base = NULL;
+object __glo_error_scheme_base = NULL;
+object __glo_current_91error_91port_scheme_base = NULL;
+object __glo_current_91input_91port_scheme_base = NULL;
+object __glo_current_91output_91port_scheme_base = NULL;
+object __glo_make_91parameter_scheme_base = NULL;
+object __glo_make_91string_scheme_base = NULL;
+object __glo_string_scheme_base = NULL;
+object __glo_Cyc_91obj_123_127_scheme_base = NULL;
+object __glo_symbol_123_127_scheme_base = NULL;
+object __glo_boolean_123_127_scheme_base = NULL;
+object __glo_vector_91fill_67_scheme_base = NULL;
+object __glo_vector_91copy_67_scheme_base = NULL;
+object __glo_vector_91copy_scheme_base = NULL;
+object __glo_vector_91append_scheme_base = NULL;
+object __glo_vector_91for_91each_scheme_base = NULL;
+object __glo_vector_91map_scheme_base = NULL;
+object __glo_string_91for_91each_scheme_base = NULL;
+object __glo_string_91map_scheme_base = NULL;
+object __glo_string_91fill_67_scheme_base = NULL;
+object __glo_string_91copy_67_scheme_base = NULL;
+object __glo_string_91copy_scheme_base = NULL;
+object __glo_string_91_125vector_scheme_base = NULL;
+object __glo_string_91_125list_scheme_base = NULL;
+object __glo_vector_91_125string_scheme_base = NULL;
+object __glo_string_91_125utf8_scheme_base = NULL;
+object __glo_utf8_91_125string_scheme_base = NULL;
+object __glo_bytevector_91copy_scheme_base = NULL;
+object __glo_vector_91_125list_scheme_base = NULL;
+object __glo_vector_scheme_base = NULL;
+object __glo_reverse_scheme_base = NULL;
+object __glo_list_91set_67_scheme_base = NULL;
+object __glo_list_91ref_scheme_base = NULL;
+object __glo_list_91tail_scheme_base = NULL;
+object __glo_for_91each_scheme_base = NULL;
+object __glo_map_scheme_base = NULL;
+object __glo__75cars_87cdrs_scheme_base = NULL;
+object __glo_car_87cdr_scheme_base = NULL;
+object __glo_receive_scheme_base = NULL;
+object __glo_list_91copy_scheme_base = NULL;
+object __glo_make_91list_scheme_base = NULL;
+object __glo__list_scheme_base = NULL;
+object __glo_append_scheme_base = NULL;
+object __glo_negative_127_scheme_base = NULL;
+object __glo_positive_127_scheme_base = NULL;
+object __glo_zero_127_scheme_base = NULL;
+object __glo_list_127_scheme_base = NULL;
+object __glo_not_scheme_base = NULL;
+object __glo_newline_scheme_base = NULL;
+object __glo_write_91char_scheme_base = NULL;
+object __glo_write_91string_scheme_base = NULL;
+object __glo_flush_91output_91port_scheme_base = NULL;
+object __glo_read_91string_scheme_base = NULL;
+object __glo_read_91line_scheme_base = NULL;
+object __glo_foldr_scheme_base = NULL;
+object __glo_foldl_scheme_base = NULL;
+object __glo_string_125_123_127_scheme_base = NULL;
+object __glo_string_125_127_scheme_base = NULL;
+object __glo_string_121_123_127_scheme_base = NULL;
+object __glo_string_121_127_scheme_base = NULL;
+object __glo_string_123_127_scheme_base = NULL;
+object __glo_char_125_123_127_scheme_base = NULL;
+object __glo_char_121_123_127_scheme_base = NULL;
+object __glo_char_125_127_scheme_base = NULL;
+object __glo_char_121_127_scheme_base = NULL;
+object __glo_char_123_127_scheme_base = NULL;
+object __glo_Cyc_91bin_91op_91char_scheme_base = NULL;
+object __glo_Cyc_91bin_91op_scheme_base = NULL;
+object __glo_call_91with_91port_scheme_base = NULL;
+object __glo_dynamic_91wind_scheme_base = NULL;
+object __glo_call_91with_91values_scheme_base = NULL;
+object __glo_values_scheme_base = NULL;
+object __glo_call_91with_91current_91continuation_scheme_base = NULL;
+object __glo_syntax_91error_scheme_base = NULL;
+object __glo_quasiquote_scheme_base = NULL;
+object __glo__do_scheme_base = NULL;
+object __glo_unless_scheme_base = NULL;
+object __glo_when_scheme_base = NULL;
+object __glo__case_scheme_base = NULL;
+object __glo_cond_scheme_base = NULL;
+object __glo_cond_91expand_scheme_base = NULL;
+object __glo_begin_scheme_base = NULL;
+object __glo_letrec_scheme_base = NULL;
+object __glo_let_85_scheme_base = NULL;
+object __glo_let_scheme_base = NULL;
+object __glo_or_scheme_base = NULL;
+object __glo_and_scheme_base = NULL;
+object __glo_features_scheme_base = NULL;
+object __glo_call_95cc_scheme_base = NULL;
 #include "cyclone/runtime.h"
 defsymbol(clause2);
 defsymbol(clause1);
@@ -4081,7 +4081,7 @@ c_7317778.elts[8] = ((closureN)self_733740)->elts[7];
 c_7317778.elts[9] = ((closureN)self_733740)->elts[8];
 
 
-make_cons(c_7317903,quote__93_93_93,nil);
+make_cons(c_7317903,quote__93_93_93,NULL);
 
 make_cons(c_7317902,quote_result2,&c_7317903);
 
@@ -4132,7 +4132,7 @@ c_7317782.elts[7] = ((closureN)self_733742)->elts[6];
 c_7317782.elts[8] = ((closureN)self_733742)->elts[7];
 
 
-make_cons(c_7317898,quote__93_93_93,nil);
+make_cons(c_7317898,quote__93_93_93,NULL);
 
 make_cons(c_7317897,quote_result2,&c_7317898);
 
@@ -4226,7 +4226,7 @@ c_7317791.elts[6] = ((closureN)self_733746)->elts[5];
 c_7317791.elts[7] = ((closureN)self_733746)->elts[6];
 
 
-make_cons(c_7317892,quote__93_93_93,nil);
+make_cons(c_7317892,quote__93_93_93,NULL);
 
 make_cons(c_7317891,quote_clause2,&c_7317892);
 
@@ -4273,7 +4273,7 @@ c_7317795.elts[5] = ((closureN)self_733748)->elts[4];
 c_7317795.elts[6] = ((closureN)self_733748)->elts[5];
 
 
-make_cons(c_7317887,quote__93_93_93,nil);
+make_cons(c_7317887,quote__93_93_93,NULL);
 
 make_cons(c_7317886,quote_clause2,&c_7317887);
 
@@ -4320,7 +4320,7 @@ c_7317799.elts[4] = r_731260;
 c_7317799.elts[5] = ((closureN)self_733750)->elts[4];
 
 
-make_cons(c_7317881,quote__93_93_93,nil);
+make_cons(c_7317881,quote__93_93_93,NULL);
 
 make_cons(c_7317880,quote_clause2,&c_7317881);
 
@@ -4366,7 +4366,7 @@ c_7317803.elts[2] = ((closureN)self_733752)->elts[2];
 c_7317803.elts[3] = r_731256;
 c_7317803.elts[4] = ((closureN)self_733752)->elts[3];
 
-return_closcall1(data,(closure)&c_7317803,  nil);; 
+return_closcall1(data,(closure)&c_7317803,  NULL);; 
 }
 
 static void __lambda_2418(void *data, int argc, object self_733753, object r_731257) {
@@ -4387,7 +4387,7 @@ c_7317805.elts[4] = r_731257;
 c_7317805.elts[5] = ((closureN)self_733753)->elts[4];
 
 
-make_cons(c_7317874,quote__93_93_93,nil);
+make_cons(c_7317874,quote__93_93_93,NULL);
 
 make_cons(c_7317873,quote_clause2,&c_7317874);
 
@@ -4397,7 +4397,7 @@ make_cons(c_7317871,quote_reraise,&c_7317872);
 
 make_cons(c_7317870,quote_guard_91aux,&c_7317871);
 
-make_cons(c_7317869,&c_7317870,nil);
+make_cons(c_7317869,&c_7317870,NULL);
 return_closcall1(data,(closure)&c_7317805,  &c_7317869);; 
 }
 
@@ -4436,7 +4436,7 @@ c_7317809.elts[3] = r_731254;
 c_7317809.elts[4] = ((closureN)self_733755)->elts[3];
 
 
-make_cons(c_7317860,quote__93_93_93,nil);
+make_cons(c_7317860,quote__93_93_93,NULL);
 
 make_cons(c_7317859,quote_result2,&c_7317860);
 
@@ -4444,7 +4444,7 @@ make_cons(c_7317858,quote_result1,&c_7317859);
 
 make_cons(c_7317857,quote_begin,&c_7317858);
 
-make_cons(c_7317866,quote__93_93_93,nil);
+make_cons(c_7317866,quote__93_93_93,NULL);
 
 make_cons(c_7317865,quote_clause2,&c_7317866);
 
@@ -4454,7 +4454,7 @@ make_cons(c_7317863,quote_reraise,&c_7317864);
 
 make_cons(c_7317862,quote_guard_91aux,&c_7317863);
 
-make_cons(c_7317861,&c_7317862,nil);
+make_cons(c_7317861,&c_7317862,NULL);
 
 make_cons(c_7317856,&c_7317857,&c_7317861);
 return_closcall1(data,(closure)&c_7317809,  &c_7317856);; 
@@ -4493,7 +4493,7 @@ c_7317813.elts[2] = r_731251;
 c_7317813.elts[3] = ((closureN)self_733757)->elts[2];
 
 
-make_cons(c_7317847,quote__93_93_93,nil);
+make_cons(c_7317847,quote__93_93_93,NULL);
 
 make_cons(c_7317846,quote_result2,&c_7317847);
 
@@ -4501,7 +4501,7 @@ make_cons(c_7317845,quote_result1,&c_7317846);
 
 make_cons(c_7317844,quote_begin,&c_7317845);
 
-make_cons(c_7317853,quote__93_93_93,nil);
+make_cons(c_7317853,quote__93_93_93,NULL);
 
 make_cons(c_7317852,quote_clause2,&c_7317853);
 
@@ -4511,7 +4511,7 @@ make_cons(c_7317850,quote_reraise,&c_7317851);
 
 make_cons(c_7317849,quote_guard_91aux,&c_7317850);
 
-make_cons(c_7317848,&c_7317849,nil);
+make_cons(c_7317848,&c_7317849,NULL);
 
 make_cons(c_7317843,&c_7317844,&c_7317848);
 
@@ -4550,7 +4550,7 @@ c_7317817.elts[1] = ((closureN)self_733759)->elts[1];
 c_7317817.elts[2] = r_731249;
 
 
-make_cons(c_7317833,quote__93_93_93,nil);
+make_cons(c_7317833,quote__93_93_93,NULL);
 
 make_cons(c_7317832,quote_result2,&c_7317833);
 
@@ -4558,7 +4558,7 @@ make_cons(c_7317831,quote_result1,&c_7317832);
 
 make_cons(c_7317830,quote_begin,&c_7317831);
 
-make_cons(c_7317839,quote__93_93_93,nil);
+make_cons(c_7317839,quote__93_93_93,NULL);
 
 make_cons(c_7317838,quote_clause2,&c_7317839);
 
@@ -4568,7 +4568,7 @@ make_cons(c_7317836,quote_reraise,&c_7317837);
 
 make_cons(c_7317835,quote_guard_91aux,&c_7317836);
 
-make_cons(c_7317834,&c_7317835,nil);
+make_cons(c_7317834,&c_7317835,NULL);
 
 make_cons(c_7317829,&c_7317830,&c_7317834);
 
@@ -5008,7 +5008,7 @@ c_7317603.elts[5] = ((closureN)self_733781)->elts[4];
 c_7317603.elts[6] = ((closureN)self_733781)->elts[5];
 
 
-make_cons(c_7317673,quote__93_93_93,nil);
+make_cons(c_7317673,quote__93_93_93,NULL);
 
 make_cons(c_7317672,quote_result2,&c_7317673);
 
@@ -5053,7 +5053,7 @@ c_7317607.elts[4] = ((closureN)self_733783)->elts[3];
 c_7317607.elts[5] = ((closureN)self_733783)->elts[4];
 
 
-make_cons(c_7317668,quote__93_93_93,nil);
+make_cons(c_7317668,quote__93_93_93,NULL);
 
 make_cons(c_7317667,quote_result2,&c_7317668);
 
@@ -5097,7 +5097,7 @@ c_7317611.elts[2] = r_731294;
 c_7317611.elts[3] = ((closureN)self_733785)->elts[2];
 c_7317611.elts[4] = ((closureN)self_733785)->elts[3];
 
-return_closcall1(data,(closure)&c_7317611,  nil);; 
+return_closcall1(data,(closure)&c_7317611,  NULL);; 
 }
 
 static void __lambda_2385(void *data, int argc, object self_733786, object r_731297) {
@@ -5118,7 +5118,7 @@ c_7317613.elts[4] = ((closureN)self_733786)->elts[3];
 c_7317613.elts[5] = ((closureN)self_733786)->elts[4];
 
 
-make_cons(c_7317662,quote_reraise,nil);
+make_cons(c_7317662,quote_reraise,NULL);
 return_closcall1(data,(closure)&c_7317613,  &c_7317662);; 
 }
 
@@ -5157,7 +5157,7 @@ c_7317617.elts[3] = r_731295;
 c_7317617.elts[4] = ((closureN)self_733788)->elts[3];
 
 
-make_cons(c_7317658,quote__93_93_93,nil);
+make_cons(c_7317658,quote__93_93_93,NULL);
 
 make_cons(c_7317657,quote_result2,&c_7317658);
 
@@ -5165,7 +5165,7 @@ make_cons(c_7317656,quote_result1,&c_7317657);
 
 make_cons(c_7317655,quote_begin,&c_7317656);
 
-make_cons(c_7317659,quote_reraise,nil);
+make_cons(c_7317659,quote_reraise,NULL);
 
 make_cons(c_7317654,&c_7317655,&c_7317659);
 return_closcall1(data,(closure)&c_7317617,  &c_7317654);; 
@@ -5204,7 +5204,7 @@ c_7317621.elts[2] = r_731292;
 c_7317621.elts[3] = ((closureN)self_733790)->elts[2];
 
 
-make_cons(c_7317650,quote__93_93_93,nil);
+make_cons(c_7317650,quote__93_93_93,NULL);
 
 make_cons(c_7317649,quote_result2,&c_7317650);
 
@@ -5212,7 +5212,7 @@ make_cons(c_7317648,quote_result1,&c_7317649);
 
 make_cons(c_7317647,quote_begin,&c_7317648);
 
-make_cons(c_7317651,quote_reraise,nil);
+make_cons(c_7317651,quote_reraise,NULL);
 
 make_cons(c_7317646,&c_7317647,&c_7317651);
 
@@ -5251,7 +5251,7 @@ c_7317625.elts[1] = ((closureN)self_733792)->elts[1];
 c_7317625.elts[2] = r_731290;
 
 
-make_cons(c_7317641,quote__93_93_93,nil);
+make_cons(c_7317641,quote__93_93_93,NULL);
 
 make_cons(c_7317640,quote_result2,&c_7317641);
 
@@ -5259,7 +5259,7 @@ make_cons(c_7317639,quote_result1,&c_7317640);
 
 make_cons(c_7317638,quote_begin,&c_7317639);
 
-make_cons(c_7317642,quote_reraise,nil);
+make_cons(c_7317642,quote_reraise,NULL);
 
 make_cons(c_7317637,&c_7317638,&c_7317642);
 
@@ -5691,7 +5691,7 @@ c_7317432.elts[5] = ((closureN)self_733814)->elts[4];
 c_7317432.elts[6] = ((closureN)self_733814)->elts[5];
 
 
-make_cons(c_7317506,quote__93_93_93,nil);
+make_cons(c_7317506,quote__93_93_93,NULL);
 
 make_cons(c_7317505,quote_clause2,&c_7317506);
 
@@ -5736,7 +5736,7 @@ c_7317436.elts[4] = ((closureN)self_733816)->elts[3];
 c_7317436.elts[5] = ((closureN)self_733816)->elts[4];
 
 
-make_cons(c_7317501,quote__93_93_93,nil);
+make_cons(c_7317501,quote__93_93_93,NULL);
 
 make_cons(c_7317500,quote_clause2,&c_7317501);
 
@@ -5781,7 +5781,7 @@ c_7317440.elts[3] = r_731331;
 c_7317440.elts[4] = ((closureN)self_733818)->elts[3];
 
 
-make_cons(c_7317495,quote__93_93_93,nil);
+make_cons(c_7317495,quote__93_93_93,NULL);
 
 make_cons(c_7317494,quote_clause2,&c_7317495);
 
@@ -5825,7 +5825,7 @@ c_7317444.elts[1] = ((closureN)self_733820)->elts[1];
 c_7317444.elts[2] = r_731327;
 c_7317444.elts[3] = ((closureN)self_733820)->elts[2];
 
-return_closcall1(data,(closure)&c_7317444,  nil);; 
+return_closcall1(data,(closure)&c_7317444,  NULL);; 
 }
 
 static void __lambda_2350(void *data, int argc, object self_733821, object r_731328) {
@@ -5845,7 +5845,7 @@ c_7317446.elts[3] = r_731328;
 c_7317446.elts[4] = ((closureN)self_733821)->elts[3];
 
 
-make_cons(c_7317488,quote__93_93_93,nil);
+make_cons(c_7317488,quote__93_93_93,NULL);
 
 make_cons(c_7317487,quote_clause2,&c_7317488);
 
@@ -5855,7 +5855,7 @@ make_cons(c_7317485,quote_reraise,&c_7317486);
 
 make_cons(c_7317484,quote_guard_91aux,&c_7317485);
 
-make_cons(c_7317483,&c_7317484,nil);
+make_cons(c_7317483,&c_7317484,NULL);
 return_closcall1(data,(closure)&c_7317446,  &c_7317483);; 
 }
 
@@ -5892,7 +5892,7 @@ c_7317450.elts[2] = r_731325;
 c_7317450.elts[3] = ((closureN)self_733823)->elts[2];
 
 
-make_cons(c_7317480,quote__93_93_93,nil);
+make_cons(c_7317480,quote__93_93_93,NULL);
 
 make_cons(c_7317479,quote_clause2,&c_7317480);
 
@@ -5902,7 +5902,7 @@ make_cons(c_7317477,quote_reraise,&c_7317478);
 
 make_cons(c_7317476,quote_guard_91aux,&c_7317477);
 
-make_cons(c_7317475,&c_7317476,nil);
+make_cons(c_7317475,&c_7317476,NULL);
 
 make_cons(c_7317474,quote_test,&c_7317475);
 return_closcall1(data,(closure)&c_7317450,  &c_7317474);; 
@@ -5939,7 +5939,7 @@ c_7317454.elts[1] = ((closureN)self_733825)->elts[1];
 c_7317454.elts[2] = r_731323;
 
 
-make_cons(c_7317471,quote__93_93_93,nil);
+make_cons(c_7317471,quote__93_93_93,NULL);
 
 make_cons(c_7317470,quote_clause2,&c_7317471);
 
@@ -5949,7 +5949,7 @@ make_cons(c_7317468,quote_reraise,&c_7317469);
 
 make_cons(c_7317467,quote_guard_91aux,&c_7317468);
 
-make_cons(c_7317466,&c_7317467,nil);
+make_cons(c_7317466,&c_7317467,NULL);
 
 make_cons(c_7317465,quote_test,&c_7317466);
 
@@ -6247,7 +6247,7 @@ c_7317315.elts[1] = r_731352;
 c_7317315.elts[2] = ((closureN)self_733841)->elts[1];
 c_7317315.elts[3] = ((closureN)self_733841)->elts[2];
 
-return_closcall1(data,(closure)&c_7317315,  nil);; 
+return_closcall1(data,(closure)&c_7317315,  NULL);; 
 }
 
 static void __lambda_2329(void *data, int argc, object self_733842, object r_731357) {
@@ -6267,7 +6267,7 @@ c_7317317.elts[3] = ((closureN)self_733842)->elts[2];
 c_7317317.elts[4] = ((closureN)self_733842)->elts[3];
 
 
-make_cons(c_7317344,quote_reraise,nil);
+make_cons(c_7317344,quote_reraise,NULL);
 return_closcall1(data,(closure)&c_7317317,  &c_7317344);; 
 }
 
@@ -6304,7 +6304,7 @@ c_7317321.elts[2] = r_731355;
 c_7317321.elts[3] = ((closureN)self_733844)->elts[2];
 
 
-make_cons(c_7317341,quote_reraise,nil);
+make_cons(c_7317341,quote_reraise,NULL);
 
 make_cons(c_7317340,quote_test,&c_7317341);
 return_closcall1(data,(closure)&c_7317321,  &c_7317340);; 
@@ -6341,7 +6341,7 @@ c_7317325.elts[1] = ((closureN)self_733846)->elts[1];
 c_7317325.elts[2] = r_731353;
 
 
-make_cons(c_7317337,quote_reraise,nil);
+make_cons(c_7317337,quote_reraise,NULL);
 
 make_cons(c_7317336,quote_test,&c_7317337);
 
@@ -6989,7 +6989,7 @@ c_7316983.elts[6] = ((closureN)self_733877)->elts[5];
 c_7316983.elts[7] = ((closureN)self_733877)->elts[6];
 c_7316983.elts[8] = ((closureN)self_733877)->elts[7];
 
-return_closcall1(data,(closure)&c_7316983,  nil);; 
+return_closcall1(data,(closure)&c_7316983,  NULL);; 
 }
 
 static void __lambda_2293(void *data, int argc, object self_733878, object r_731426) {
@@ -7014,7 +7014,7 @@ c_7316985.elts[8] = ((closureN)self_733878)->elts[7];
 c_7316985.elts[9] = ((closureN)self_733878)->elts[8];
 
 
-make_cons(c_7317208,quote_test,nil);
+make_cons(c_7317208,quote_test,NULL);
 return_closcall1(data,(closure)&c_7316985,  &c_7317208);; 
 }
 
@@ -7061,7 +7061,7 @@ c_7316989.elts[7] = ((closureN)self_733880)->elts[6];
 c_7316989.elts[8] = ((closureN)self_733880)->elts[7];
 
 
-make_cons(c_7317205,quote_test,nil);
+make_cons(c_7317205,quote_test,NULL);
 
 make_cons(c_7317204,quote_temp,&c_7317205);
 return_closcall1(data,(closure)&c_7316989,  &c_7317204);; 
@@ -7107,7 +7107,7 @@ c_7316993.elts[5] = ((closureN)self_733882)->elts[4];
 c_7316993.elts[6] = ((closureN)self_733882)->elts[5];
 c_7316993.elts[7] = ((closureN)self_733882)->elts[6];
 
-return_closcall1(data,(closure)&c_7316993,  nil);; 
+return_closcall1(data,(closure)&c_7316993,  NULL);; 
 }
 
 static void __lambda_2288(void *data, int argc, object self_733883, object r_731421) {
@@ -7131,11 +7131,11 @@ c_7316995.elts[7] = ((closureN)self_733883)->elts[6];
 c_7316995.elts[8] = ((closureN)self_733883)->elts[7];
 
 
-make_cons(c_7317201,quote_test,nil);
+make_cons(c_7317201,quote_test,NULL);
 
 make_cons(c_7317200,quote_temp,&c_7317201);
 
-make_cons(c_7317199,&c_7317200,nil);
+make_cons(c_7317199,&c_7317200,NULL);
 return_closcall1(data,(closure)&c_7316995,  &c_7317199);; 
 }
 
@@ -7320,7 +7320,7 @@ c_7317014.elts[8] = ((closureN)self_733891)->elts[7];
 c_7317014.elts[9] = ((closureN)self_733891)->elts[8];
 c_7317014.elts[10] = ((closureN)self_733891)->elts[9];
 
-return_closcall1(data,(closure)&c_7317014,  nil);; 
+return_closcall1(data,(closure)&c_7317014,  NULL);; 
 }
 
 static void __lambda_2279(void *data, int argc, object self_733892, object r_731415) {
@@ -7347,7 +7347,7 @@ c_7317016.elts[10] = ((closureN)self_733892)->elts[9];
 c_7317016.elts[11] = ((closureN)self_733892)->elts[10];
 
 
-make_cons(c_7317196,quote_temp,nil);
+make_cons(c_7317196,quote_temp,NULL);
 return_closcall1(data,(closure)&c_7317016,  &c_7317196);; 
 }
 
@@ -7398,7 +7398,7 @@ c_7317020.elts[9] = ((closureN)self_733894)->elts[8];
 c_7317020.elts[10] = ((closureN)self_733894)->elts[9];
 
 
-make_cons(c_7317193,quote_temp,nil);
+make_cons(c_7317193,quote_temp,NULL);
 
 make_cons(c_7317192,quote_result,&c_7317193);
 return_closcall1(data,(closure)&c_7317020,  &c_7317192);; 
@@ -7496,7 +7496,7 @@ c_7317029.elts[8] = r_731405;
 c_7317029.elts[9] = ((closureN)self_733898)->elts[8];
 
 
-make_cons(c_7317189,quote__93_93_93,nil);
+make_cons(c_7317189,quote__93_93_93,NULL);
 
 make_cons(c_7317188,quote_clause2,&c_7317189);
 
@@ -7547,7 +7547,7 @@ c_7317033.elts[7] = r_731408;
 c_7317033.elts[8] = ((closureN)self_733900)->elts[7];
 
 
-make_cons(c_7317184,quote__93_93_93,nil);
+make_cons(c_7317184,quote__93_93_93,NULL);
 
 make_cons(c_7317183,quote_clause2,&c_7317184);
 
@@ -7598,7 +7598,7 @@ c_7317037.elts[6] = ((closureN)self_733902)->elts[6];
 c_7317037.elts[7] = r_731406;
 
 
-make_cons(c_7317178,quote__93_93_93,nil);
+make_cons(c_7317178,quote__93_93_93,NULL);
 
 make_cons(c_7317177,quote_clause2,&c_7317178);
 
@@ -7648,7 +7648,7 @@ c_7317041.elts[4] = ((closureN)self_733904)->elts[4];
 c_7317041.elts[5] = ((closureN)self_733904)->elts[5];
 c_7317041.elts[6] = r_731402;
 
-return_closcall1(data,(closure)&c_7317041,  nil);; 
+return_closcall1(data,(closure)&c_7317041,  NULL);; 
 }
 
 static void __lambda_2266(void *data, int argc, object self_733905, object r_731403) {
@@ -7671,7 +7671,7 @@ c_7317043.elts[6] = ((closureN)self_733905)->elts[6];
 c_7317043.elts[7] = r_731403;
 
 
-make_cons(c_7317171,quote__93_93_93,nil);
+make_cons(c_7317171,quote__93_93_93,NULL);
 
 make_cons(c_7317170,quote_clause2,&c_7317171);
 
@@ -7681,7 +7681,7 @@ make_cons(c_7317168,quote_reraise,&c_7317169);
 
 make_cons(c_7317167,quote_guard_91aux,&c_7317168);
 
-make_cons(c_7317166,&c_7317167,nil);
+make_cons(c_7317166,&c_7317167,NULL);
 return_closcall1(data,(closure)&c_7317043,  &c_7317166);; 
 }
 
@@ -7724,11 +7724,11 @@ c_7317047.elts[5] = ((closureN)self_733907)->elts[5];
 c_7317047.elts[6] = r_731400;
 
 
-make_cons(c_7317157,quote_temp,nil);
+make_cons(c_7317157,quote_temp,NULL);
 
 make_cons(c_7317156,quote_result,&c_7317157);
 
-make_cons(c_7317163,quote__93_93_93,nil);
+make_cons(c_7317163,quote__93_93_93,NULL);
 
 make_cons(c_7317162,quote_clause2,&c_7317163);
 
@@ -7738,7 +7738,7 @@ make_cons(c_7317160,quote_reraise,&c_7317161);
 
 make_cons(c_7317159,quote_guard_91aux,&c_7317160);
 
-make_cons(c_7317158,&c_7317159,nil);
+make_cons(c_7317158,&c_7317159,NULL);
 
 make_cons(c_7317155,&c_7317156,&c_7317158);
 return_closcall1(data,(closure)&c_7317047,  &c_7317155);; 
@@ -7781,11 +7781,11 @@ c_7317051.elts[4] = ((closureN)self_733909)->elts[4];
 c_7317051.elts[5] = r_731397;
 
 
-make_cons(c_7317146,quote_temp,nil);
+make_cons(c_7317146,quote_temp,NULL);
 
 make_cons(c_7317145,quote_result,&c_7317146);
 
-make_cons(c_7317152,quote__93_93_93,nil);
+make_cons(c_7317152,quote__93_93_93,NULL);
 
 make_cons(c_7317151,quote_clause2,&c_7317152);
 
@@ -7795,7 +7795,7 @@ make_cons(c_7317149,quote_reraise,&c_7317150);
 
 make_cons(c_7317148,quote_guard_91aux,&c_7317149);
 
-make_cons(c_7317147,&c_7317148,nil);
+make_cons(c_7317147,&c_7317148,NULL);
 
 make_cons(c_7317144,&c_7317145,&c_7317147);
 
@@ -7838,11 +7838,11 @@ c_7317055.elts[3] = ((closureN)self_733911)->elts[3];
 c_7317055.elts[4] = r_731394;
 
 
-make_cons(c_7317134,quote_temp,nil);
+make_cons(c_7317134,quote_temp,NULL);
 
 make_cons(c_7317133,quote_result,&c_7317134);
 
-make_cons(c_7317140,quote__93_93_93,nil);
+make_cons(c_7317140,quote__93_93_93,NULL);
 
 make_cons(c_7317139,quote_clause2,&c_7317140);
 
@@ -7852,7 +7852,7 @@ make_cons(c_7317137,quote_reraise,&c_7317138);
 
 make_cons(c_7317136,quote_guard_91aux,&c_7317137);
 
-make_cons(c_7317135,&c_7317136,nil);
+make_cons(c_7317135,&c_7317136,NULL);
 
 make_cons(c_7317132,&c_7317133,&c_7317135);
 
@@ -7894,7 +7894,7 @@ c_7317059.elts[1] = ((closureN)self_733913)->elts[1];
 c_7317059.elts[2] = ((closureN)self_733913)->elts[2];
 c_7317059.elts[3] = r_731390;
 
-return_closcall1(data,(closure)&c_7317059,  nil);; 
+return_closcall1(data,(closure)&c_7317059,  NULL);; 
 }
 
 static void __lambda_2257(void *data, int argc, object self_733914, object r_731391) {
@@ -7914,11 +7914,11 @@ c_7317061.elts[3] = ((closureN)self_733914)->elts[3];
 c_7317061.elts[4] = r_731391;
 
 
-make_cons(c_7317121,quote_temp,nil);
+make_cons(c_7317121,quote_temp,NULL);
 
 make_cons(c_7317120,quote_result,&c_7317121);
 
-make_cons(c_7317127,quote__93_93_93,nil);
+make_cons(c_7317127,quote__93_93_93,NULL);
 
 make_cons(c_7317126,quote_clause2,&c_7317127);
 
@@ -7928,7 +7928,7 @@ make_cons(c_7317124,quote_reraise,&c_7317125);
 
 make_cons(c_7317123,quote_guard_91aux,&c_7317124);
 
-make_cons(c_7317122,&c_7317123,nil);
+make_cons(c_7317122,&c_7317123,NULL);
 
 make_cons(c_7317119,&c_7317120,&c_7317122);
 
@@ -7936,7 +7936,7 @@ make_cons(c_7317118,quote_temp,&c_7317119);
 
 make_cons(c_7317117,quote__if,&c_7317118);
 
-make_cons(c_7317116,&c_7317117,nil);
+make_cons(c_7317116,&c_7317117,NULL);
 return_closcall1(data,(closure)&c_7317061,  &c_7317116);; 
 }
 
@@ -7973,17 +7973,17 @@ c_7317065.elts[2] = ((closureN)self_733916)->elts[2];
 c_7317065.elts[3] = r_731388;
 
 
-make_cons(c_7317101,quote_test,nil);
+make_cons(c_7317101,quote_test,NULL);
 
 make_cons(c_7317100,quote_temp,&c_7317101);
 
-make_cons(c_7317099,&c_7317100,nil);
+make_cons(c_7317099,&c_7317100,NULL);
 
-make_cons(c_7317107,quote_temp,nil);
+make_cons(c_7317107,quote_temp,NULL);
 
 make_cons(c_7317106,quote_result,&c_7317107);
 
-make_cons(c_7317113,quote__93_93_93,nil);
+make_cons(c_7317113,quote__93_93_93,NULL);
 
 make_cons(c_7317112,quote_clause2,&c_7317113);
 
@@ -7993,7 +7993,7 @@ make_cons(c_7317110,quote_reraise,&c_7317111);
 
 make_cons(c_7317109,quote_guard_91aux,&c_7317110);
 
-make_cons(c_7317108,&c_7317109,nil);
+make_cons(c_7317108,&c_7317109,NULL);
 
 make_cons(c_7317105,&c_7317106,&c_7317108);
 
@@ -8001,7 +8001,7 @@ make_cons(c_7317104,quote_temp,&c_7317105);
 
 make_cons(c_7317103,quote__if,&c_7317104);
 
-make_cons(c_7317102,&c_7317103,nil);
+make_cons(c_7317102,&c_7317103,NULL);
 
 make_cons(c_7317098,&c_7317099,&c_7317102);
 return_closcall1(data,(closure)&c_7317065,  &c_7317098);; 
@@ -8038,17 +8038,17 @@ c_7317069.elts[1] = ((closureN)self_733918)->elts[1];
 c_7317069.elts[2] = r_731385;
 
 
-make_cons(c_7317083,quote_test,nil);
+make_cons(c_7317083,quote_test,NULL);
 
 make_cons(c_7317082,quote_temp,&c_7317083);
 
-make_cons(c_7317081,&c_7317082,nil);
+make_cons(c_7317081,&c_7317082,NULL);
 
-make_cons(c_7317089,quote_temp,nil);
+make_cons(c_7317089,quote_temp,NULL);
 
 make_cons(c_7317088,quote_result,&c_7317089);
 
-make_cons(c_7317095,quote__93_93_93,nil);
+make_cons(c_7317095,quote__93_93_93,NULL);
 
 make_cons(c_7317094,quote_clause2,&c_7317095);
 
@@ -8058,7 +8058,7 @@ make_cons(c_7317092,quote_reraise,&c_7317093);
 
 make_cons(c_7317091,quote_guard_91aux,&c_7317092);
 
-make_cons(c_7317090,&c_7317091,nil);
+make_cons(c_7317090,&c_7317091,NULL);
 
 make_cons(c_7317087,&c_7317088,&c_7317090);
 
@@ -8066,7 +8066,7 @@ make_cons(c_7317086,quote_temp,&c_7317087);
 
 make_cons(c_7317085,quote__if,&c_7317086);
 
-make_cons(c_7317084,&c_7317085,nil);
+make_cons(c_7317084,&c_7317085,NULL);
 
 make_cons(c_7317080,&c_7317081,&c_7317084);
 
@@ -8618,7 +8618,7 @@ c_7316697.elts[4] = ((closureN)self_733945)->elts[3];
 c_7316697.elts[5] = ((closureN)self_733945)->elts[4];
 c_7316697.elts[6] = ((closureN)self_733945)->elts[5];
 
-return_closcall1(data,(closure)&c_7316697,  nil);; 
+return_closcall1(data,(closure)&c_7316697,  NULL);; 
 }
 
 static void __lambda_2225(void *data, int argc, object self_733946, object r_731487) {
@@ -8641,7 +8641,7 @@ c_7316699.elts[6] = ((closureN)self_733946)->elts[5];
 c_7316699.elts[7] = ((closureN)self_733946)->elts[6];
 
 
-make_cons(c_7316852,quote_test,nil);
+make_cons(c_7316852,quote_test,NULL);
 return_closcall1(data,(closure)&c_7316699,  &c_7316852);; 
 }
 
@@ -8684,7 +8684,7 @@ c_7316703.elts[5] = ((closureN)self_733948)->elts[4];
 c_7316703.elts[6] = ((closureN)self_733948)->elts[5];
 
 
-make_cons(c_7316849,quote_test,nil);
+make_cons(c_7316849,quote_test,NULL);
 
 make_cons(c_7316848,quote_temp,&c_7316849);
 return_closcall1(data,(closure)&c_7316703,  &c_7316848);; 
@@ -8726,7 +8726,7 @@ c_7316707.elts[3] = ((closureN)self_733950)->elts[2];
 c_7316707.elts[4] = ((closureN)self_733950)->elts[3];
 c_7316707.elts[5] = ((closureN)self_733950)->elts[4];
 
-return_closcall1(data,(closure)&c_7316707,  nil);; 
+return_closcall1(data,(closure)&c_7316707,  NULL);; 
 }
 
 static void __lambda_2220(void *data, int argc, object self_733951, object r_731482) {
@@ -8748,11 +8748,11 @@ c_7316709.elts[5] = ((closureN)self_733951)->elts[4];
 c_7316709.elts[6] = ((closureN)self_733951)->elts[5];
 
 
-make_cons(c_7316845,quote_test,nil);
+make_cons(c_7316845,quote_test,NULL);
 
 make_cons(c_7316844,quote_temp,&c_7316845);
 
-make_cons(c_7316843,&c_7316844,nil);
+make_cons(c_7316843,&c_7316844,NULL);
 return_closcall1(data,(closure)&c_7316709,  &c_7316843);; 
 }
 
@@ -8919,7 +8919,7 @@ c_7316728.elts[5] = r_731475;
 c_7316728.elts[6] = ((closureN)self_733959)->elts[5];
 c_7316728.elts[7] = ((closureN)self_733959)->elts[6];
 
-return_closcall1(data,(closure)&c_7316728,  nil);; 
+return_closcall1(data,(closure)&c_7316728,  NULL);; 
 }
 
 static void __lambda_2211(void *data, int argc, object self_733960, object r_731476) {
@@ -8943,7 +8943,7 @@ c_7316730.elts[7] = ((closureN)self_733960)->elts[6];
 c_7316730.elts[8] = ((closureN)self_733960)->elts[7];
 
 
-make_cons(c_7316840,quote_temp,nil);
+make_cons(c_7316840,quote_temp,NULL);
 return_closcall1(data,(closure)&c_7316730,  &c_7316840);; 
 }
 
@@ -8988,7 +8988,7 @@ c_7316734.elts[6] = ((closureN)self_733962)->elts[5];
 c_7316734.elts[7] = ((closureN)self_733962)->elts[6];
 
 
-make_cons(c_7316837,quote_temp,nil);
+make_cons(c_7316837,quote_temp,NULL);
 
 make_cons(c_7316836,quote_result,&c_7316837);
 return_closcall1(data,(closure)&c_7316734,  &c_7316836);; 
@@ -9032,7 +9032,7 @@ c_7316738.elts[4] = ((closureN)self_733964)->elts[4];
 c_7316738.elts[5] = r_731468;
 c_7316738.elts[6] = ((closureN)self_733964)->elts[5];
 
-return_closcall1(data,(closure)&c_7316738,  nil);; 
+return_closcall1(data,(closure)&c_7316738,  NULL);; 
 }
 
 static void __lambda_2206(void *data, int argc, object self_733965, object r_731471) {
@@ -9055,7 +9055,7 @@ c_7316740.elts[6] = r_731471;
 c_7316740.elts[7] = ((closureN)self_733965)->elts[6];
 
 
-make_cons(c_7316833,quote_reraise,nil);
+make_cons(c_7316833,quote_reraise,NULL);
 return_closcall1(data,(closure)&c_7316740,  &c_7316833);; 
 }
 
@@ -9098,11 +9098,11 @@ c_7316744.elts[5] = ((closureN)self_733967)->elts[5];
 c_7316744.elts[6] = r_731469;
 
 
-make_cons(c_7316829,quote_temp,nil);
+make_cons(c_7316829,quote_temp,NULL);
 
 make_cons(c_7316828,quote_result,&c_7316829);
 
-make_cons(c_7316830,quote_reraise,nil);
+make_cons(c_7316830,quote_reraise,NULL);
 
 make_cons(c_7316827,&c_7316828,&c_7316830);
 return_closcall1(data,(closure)&c_7316744,  &c_7316827);; 
@@ -9145,11 +9145,11 @@ c_7316748.elts[4] = ((closureN)self_733969)->elts[4];
 c_7316748.elts[5] = r_731466;
 
 
-make_cons(c_7316823,quote_temp,nil);
+make_cons(c_7316823,quote_temp,NULL);
 
 make_cons(c_7316822,quote_result,&c_7316823);
 
-make_cons(c_7316824,quote_reraise,nil);
+make_cons(c_7316824,quote_reraise,NULL);
 
 make_cons(c_7316821,&c_7316822,&c_7316824);
 
@@ -9192,11 +9192,11 @@ c_7316752.elts[3] = ((closureN)self_733971)->elts[3];
 c_7316752.elts[4] = r_731463;
 
 
-make_cons(c_7316816,quote_temp,nil);
+make_cons(c_7316816,quote_temp,NULL);
 
 make_cons(c_7316815,quote_result,&c_7316816);
 
-make_cons(c_7316817,quote_reraise,nil);
+make_cons(c_7316817,quote_reraise,NULL);
 
 make_cons(c_7316814,&c_7316815,&c_7316817);
 
@@ -9238,7 +9238,7 @@ c_7316756.elts[1] = ((closureN)self_733973)->elts[1];
 c_7316756.elts[2] = ((closureN)self_733973)->elts[2];
 c_7316756.elts[3] = r_731459;
 
-return_closcall1(data,(closure)&c_7316756,  nil);; 
+return_closcall1(data,(closure)&c_7316756,  NULL);; 
 }
 
 static void __lambda_2197(void *data, int argc, object self_733974, object r_731460) {
@@ -9258,11 +9258,11 @@ c_7316758.elts[3] = ((closureN)self_733974)->elts[3];
 c_7316758.elts[4] = r_731460;
 
 
-make_cons(c_7316808,quote_temp,nil);
+make_cons(c_7316808,quote_temp,NULL);
 
 make_cons(c_7316807,quote_result,&c_7316808);
 
-make_cons(c_7316809,quote_reraise,nil);
+make_cons(c_7316809,quote_reraise,NULL);
 
 make_cons(c_7316806,&c_7316807,&c_7316809);
 
@@ -9270,7 +9270,7 @@ make_cons(c_7316805,quote_temp,&c_7316806);
 
 make_cons(c_7316804,quote__if,&c_7316805);
 
-make_cons(c_7316803,&c_7316804,nil);
+make_cons(c_7316803,&c_7316804,NULL);
 return_closcall1(data,(closure)&c_7316758,  &c_7316803);; 
 }
 
@@ -9307,17 +9307,17 @@ c_7316762.elts[2] = ((closureN)self_733976)->elts[2];
 c_7316762.elts[3] = r_731457;
 
 
-make_cons(c_7316793,quote_test,nil);
+make_cons(c_7316793,quote_test,NULL);
 
 make_cons(c_7316792,quote_temp,&c_7316793);
 
-make_cons(c_7316791,&c_7316792,nil);
+make_cons(c_7316791,&c_7316792,NULL);
 
-make_cons(c_7316799,quote_temp,nil);
+make_cons(c_7316799,quote_temp,NULL);
 
 make_cons(c_7316798,quote_result,&c_7316799);
 
-make_cons(c_7316800,quote_reraise,nil);
+make_cons(c_7316800,quote_reraise,NULL);
 
 make_cons(c_7316797,&c_7316798,&c_7316800);
 
@@ -9325,7 +9325,7 @@ make_cons(c_7316796,quote_temp,&c_7316797);
 
 make_cons(c_7316795,quote__if,&c_7316796);
 
-make_cons(c_7316794,&c_7316795,nil);
+make_cons(c_7316794,&c_7316795,NULL);
 
 make_cons(c_7316790,&c_7316791,&c_7316794);
 return_closcall1(data,(closure)&c_7316762,  &c_7316790);; 
@@ -9362,17 +9362,17 @@ c_7316766.elts[1] = ((closureN)self_733978)->elts[1];
 c_7316766.elts[2] = r_731454;
 
 
-make_cons(c_7316780,quote_test,nil);
+make_cons(c_7316780,quote_test,NULL);
 
 make_cons(c_7316779,quote_temp,&c_7316780);
 
-make_cons(c_7316778,&c_7316779,nil);
+make_cons(c_7316778,&c_7316779,NULL);
 
-make_cons(c_7316786,quote_temp,nil);
+make_cons(c_7316786,quote_temp,NULL);
 
 make_cons(c_7316785,quote_result,&c_7316786);
 
-make_cons(c_7316787,quote_reraise,nil);
+make_cons(c_7316787,quote_reraise,NULL);
 
 make_cons(c_7316784,&c_7316785,&c_7316787);
 
@@ -9380,7 +9380,7 @@ make_cons(c_7316783,quote_temp,&c_7316784);
 
 make_cons(c_7316782,quote__if,&c_7316783);
 
-make_cons(c_7316781,&c_7316782,nil);
+make_cons(c_7316781,&c_7316782,NULL);
 
 make_cons(c_7316777,&c_7316778,&c_7316781);
 
@@ -9817,7 +9817,7 @@ c_7316560.elts[2] = ((closureN)self_734001)->elts[1];
 c_7316560.elts[3] = ((closureN)self_734001)->elts[2];
 
 
-make_cons(c_7316582,quote__93_93_93,nil);
+make_cons(c_7316582,quote__93_93_93,NULL);
 
 make_cons(c_7316581,quote_result2,&c_7316582);
 
@@ -9856,7 +9856,7 @@ c_7316564.elts[1] = ((closureN)self_734003)->elts[1];
 c_7316564.elts[2] = r_731512;
 
 
-make_cons(c_7316577,quote__93_93_93,nil);
+make_cons(c_7316577,quote__93_93_93,NULL);
 
 make_cons(c_7316576,quote_result2,&c_7316577);
 
@@ -10396,7 +10396,7 @@ c_7314880.elts[6] = r_731725;
 c_7314880.elts[7] = ((closureN)self_734030)->elts[6];
 c_7314880.elts[8] = ((closureN)self_734030)->elts[7];
 
-return_closcall1(data,(closure)&c_7314880,  nil);; 
+return_closcall1(data,(closure)&c_7314880,  NULL);; 
 }
 
 static void __lambda_2139(void *data, int argc, object self_734031, object r_731726) {
@@ -10421,7 +10421,7 @@ c_7314882.elts[8] = ((closureN)self_734031)->elts[7];
 c_7314882.elts[9] = ((closureN)self_734031)->elts[8];
 
 
-make_cons(c_7316451,quote_guard_91k,nil);
+make_cons(c_7316451,quote_guard_91k,NULL);
 return_closcall1(data,(closure)&c_7314882,  &c_7316451);; 
 }
 
@@ -10614,7 +10614,7 @@ c_7314901.elts[9] = r_731719;
 c_7314901.elts[10] = ((closureN)self_734039)->elts[9];
 c_7314901.elts[11] = ((closureN)self_734039)->elts[10];
 
-return_closcall1(data,(closure)&c_7314901,  nil);; 
+return_closcall1(data,(closure)&c_7314901,  NULL);; 
 }
 
 static void __lambda_2130(void *data, int argc, object self_734040, object r_731720) {
@@ -10642,7 +10642,7 @@ c_7314903.elts[11] = ((closureN)self_734040)->elts[10];
 c_7314903.elts[12] = ((closureN)self_734040)->elts[11];
 
 
-make_cons(c_7316448,quote_condition,nil);
+make_cons(c_7316448,quote_condition,NULL);
 return_closcall1(data,(closure)&c_7314903,  &c_7316448);; 
 }
 
@@ -10859,7 +10859,7 @@ c_7314922.elts[12] = r_731713;
 c_7314922.elts[13] = ((closureN)self_734048)->elts[12];
 c_7314922.elts[14] = ((closureN)self_734048)->elts[13];
 
-return_closcall1(data,(closure)&c_7314922,  nil);; 
+return_closcall1(data,(closure)&c_7314922,  NULL);; 
 }
 
 static void __lambda_2121(void *data, int argc, object self_734049, object r_731714) {
@@ -10890,7 +10890,7 @@ c_7314924.elts[14] = ((closureN)self_734049)->elts[13];
 c_7314924.elts[15] = ((closureN)self_734049)->elts[14];
 
 
-make_cons(c_7316445,quote_handler_91k,nil);
+make_cons(c_7316445,quote_handler_91k,NULL);
 return_closcall1(data,(closure)&c_7314924,  &c_7316445);; 
 }
 
@@ -11068,7 +11068,7 @@ c_7314938.elts[14] = r_731652;
 c_7314938.elts[15] = ((closureN)self_734055)->elts[14];
 c_7314938.elts[16] = ((closureN)self_734055)->elts[15];
 
-return_closcall1(data,(closure)&c_7314938,  nil);; 
+return_closcall1(data,(closure)&c_7314938,  NULL);; 
 }
 
 static void __lambda_2114(void *data, int argc, object self_734056, object r_731655) {
@@ -11232,7 +11232,7 @@ c_7314950.elts[17] = r_731706;
 c_7314950.elts[18] = ((closureN)self_734060)->elts[17];
 c_7314950.elts[19] = ((closureN)self_734060)->elts[18];
 
-return_closcall1(data,(closure)&c_7314950,  nil);; 
+return_closcall1(data,(closure)&c_7314950,  NULL);; 
 }
 
 static void __lambda_2109(void *data, int argc, object self_734061, object r_731707) {
@@ -11268,7 +11268,7 @@ c_7314952.elts[19] = ((closureN)self_734061)->elts[18];
 c_7314952.elts[20] = ((closureN)self_734061)->elts[19];
 
 
-make_cons(c_7316442,quote_condition,nil);
+make_cons(c_7316442,quote_condition,NULL);
 return_closcall1(data,(closure)&c_7314952,  &c_7316442);; 
 }
 
@@ -11337,7 +11337,7 @@ c_7314956.elts[18] = ((closureN)self_734063)->elts[17];
 c_7314956.elts[19] = ((closureN)self_734063)->elts[18];
 
 
-make_cons(c_7316439,quote_condition,nil);
+make_cons(c_7316439,quote_condition,NULL);
 
 make_cons(c_7316438,quote_var,&c_7316439);
 return_closcall1(data,(closure)&c_7314956,  &c_7316438);; 
@@ -11405,7 +11405,7 @@ c_7314960.elts[16] = ((closureN)self_734065)->elts[16];
 c_7314960.elts[17] = r_731701;
 c_7314960.elts[18] = ((closureN)self_734065)->elts[17];
 
-return_closcall1(data,(closure)&c_7314960,  nil);; 
+return_closcall1(data,(closure)&c_7314960,  NULL);; 
 }
 
 static void __lambda_2104(void *data, int argc, object self_734066, object r_731702) {
@@ -11440,11 +11440,11 @@ c_7314962.elts[18] = r_731702;
 c_7314962.elts[19] = ((closureN)self_734066)->elts[18];
 
 
-make_cons(c_7316435,quote_condition,nil);
+make_cons(c_7316435,quote_condition,NULL);
 
 make_cons(c_7316434,quote_var,&c_7316435);
 
-make_cons(c_7316433,&c_7316434,nil);
+make_cons(c_7316433,&c_7316434,NULL);
 return_closcall1(data,(closure)&c_7314962,  &c_7316433);; 
 }
 
@@ -11717,7 +11717,7 @@ c_7314981.elts[19] = ((closureN)self_734074)->elts[19];
 c_7314981.elts[20] = r_731681;
 c_7314981.elts[21] = ((closureN)self_734074)->elts[20];
 
-return_closcall1(data,(closure)&c_7314981,  nil);; 
+return_closcall1(data,(closure)&c_7314981,  NULL);; 
 }
 
 static void __lambda_2095(void *data, int argc, object self_734075, object r_731684) {
@@ -11906,7 +11906,7 @@ c_7314993.elts[22] = ((closureN)self_734079)->elts[22];
 c_7314993.elts[23] = r_731693;
 c_7314993.elts[24] = ((closureN)self_734079)->elts[23];
 
-return_closcall1(data,(closure)&c_7314993,  nil);; 
+return_closcall1(data,(closure)&c_7314993,  NULL);; 
 }
 
 static void __lambda_2090(void *data, int argc, object self_734080, object r_731694) {
@@ -11947,7 +11947,7 @@ c_7314995.elts[24] = r_731694;
 c_7314995.elts[25] = ((closureN)self_734080)->elts[24];
 
 
-make_cons(c_7316430,quote_condition,nil);
+make_cons(c_7316430,quote_condition,NULL);
 return_closcall1(data,(closure)&c_7314995,  &c_7316430);; 
 }
 
@@ -12026,7 +12026,7 @@ c_7314999.elts[23] = r_731691;
 c_7314999.elts[24] = ((closureN)self_734082)->elts[23];
 
 
-make_cons(c_7316427,quote_condition,nil);
+make_cons(c_7316427,quote_condition,NULL);
 
 make_cons(c_7316426,quote_raise_91continuable,&c_7316427);
 return_closcall1(data,(closure)&c_7314999,  &c_7316426);; 
@@ -12104,7 +12104,7 @@ c_7315003.elts[21] = ((closureN)self_734084)->elts[21];
 c_7315003.elts[22] = r_731687;
 c_7315003.elts[23] = ((closureN)self_734084)->elts[22];
 
-return_closcall1(data,(closure)&c_7315003,  nil);; 
+return_closcall1(data,(closure)&c_7315003,  NULL);; 
 }
 
 static void __lambda_2085(void *data, int argc, object self_734085, object r_731688) {
@@ -12144,11 +12144,11 @@ c_7315005.elts[23] = r_731688;
 c_7315005.elts[24] = ((closureN)self_734085)->elts[23];
 
 
-make_cons(c_7316423,quote_condition,nil);
+make_cons(c_7316423,quote_condition,NULL);
 
 make_cons(c_7316422,quote_raise_91continuable,&c_7316423);
 
-make_cons(c_7316421,&c_7316422,nil);
+make_cons(c_7316421,&c_7316422,NULL);
 return_closcall1(data,(closure)&c_7315005,  &c_7316421);; 
 }
 
@@ -12225,13 +12225,13 @@ c_7315009.elts[22] = r_731685;
 c_7315009.elts[23] = ((closureN)self_734087)->elts[22];
 
 
-make_cons(c_7316418,quote_condition,nil);
+make_cons(c_7316418,quote_condition,NULL);
 
 make_cons(c_7316417,quote_raise_91continuable,&c_7316418);
 
-make_cons(c_7316416,&c_7316417,nil);
+make_cons(c_7316416,&c_7316417,NULL);
 
-make_cons(c_7316415,nil,&c_7316416);
+make_cons(c_7316415,NULL,&c_7316416);
 return_closcall1(data,(closure)&c_7315009,  &c_7316415);; 
 }
 
@@ -12306,13 +12306,13 @@ c_7315013.elts[21] = r_731682;
 c_7315013.elts[22] = ((closureN)self_734089)->elts[21];
 
 
-make_cons(c_7316412,quote_condition,nil);
+make_cons(c_7316412,quote_condition,NULL);
 
 make_cons(c_7316411,quote_raise_91continuable,&c_7316412);
 
-make_cons(c_7316410,&c_7316411,nil);
+make_cons(c_7316410,&c_7316411,NULL);
 
-make_cons(c_7316409,nil,&c_7316410);
+make_cons(c_7316409,NULL,&c_7316410);
 
 make_cons(c_7316408,quote_lambda,&c_7316409);
 return_closcall1(data,(closure)&c_7315013,  &c_7316408);; 
@@ -12386,7 +12386,7 @@ c_7315017.elts[19] = ((closureN)self_734091)->elts[19];
 c_7315017.elts[20] = r_731678;
 c_7315017.elts[21] = ((closureN)self_734091)->elts[20];
 
-return_closcall1(data,(closure)&c_7315017,  nil);; 
+return_closcall1(data,(closure)&c_7315017,  NULL);; 
 }
 
 static void __lambda_2078(void *data, int argc, object self_734092, object r_731679) {
@@ -12424,17 +12424,17 @@ c_7315019.elts[21] = r_731679;
 c_7315019.elts[22] = ((closureN)self_734092)->elts[21];
 
 
-make_cons(c_7316405,quote_condition,nil);
+make_cons(c_7316405,quote_condition,NULL);
 
 make_cons(c_7316404,quote_raise_91continuable,&c_7316405);
 
-make_cons(c_7316403,&c_7316404,nil);
+make_cons(c_7316403,&c_7316404,NULL);
 
-make_cons(c_7316402,nil,&c_7316403);
+make_cons(c_7316402,NULL,&c_7316403);
 
 make_cons(c_7316401,quote_lambda,&c_7316402);
 
-make_cons(c_7316400,&c_7316401,nil);
+make_cons(c_7316400,&c_7316401,NULL);
 return_closcall1(data,(closure)&c_7315019,  &c_7316400);; 
 }
 
@@ -12507,17 +12507,17 @@ c_7315023.elts[20] = r_731676;
 c_7315023.elts[21] = ((closureN)self_734094)->elts[20];
 
 
-make_cons(c_7316397,quote_condition,nil);
+make_cons(c_7316397,quote_condition,NULL);
 
 make_cons(c_7316396,quote_raise_91continuable,&c_7316397);
 
-make_cons(c_7316395,&c_7316396,nil);
+make_cons(c_7316395,&c_7316396,NULL);
 
-make_cons(c_7316394,nil,&c_7316395);
+make_cons(c_7316394,NULL,&c_7316395);
 
 make_cons(c_7316393,quote_lambda,&c_7316394);
 
-make_cons(c_7316392,&c_7316393,nil);
+make_cons(c_7316392,&c_7316393,NULL);
 
 make_cons(c_7316391,quote_handler_91k,&c_7316392);
 return_closcall1(data,(closure)&c_7315023,  &c_7316391);; 
@@ -12590,21 +12590,21 @@ c_7315027.elts[19] = r_731673;
 c_7315027.elts[20] = ((closureN)self_734096)->elts[19];
 
 
-make_cons(c_7316386,quote_condition,nil);
+make_cons(c_7316386,quote_condition,NULL);
 
 make_cons(c_7316385,quote_raise_91continuable,&c_7316386);
 
-make_cons(c_7316384,&c_7316385,nil);
+make_cons(c_7316384,&c_7316385,NULL);
 
-make_cons(c_7316383,nil,&c_7316384);
+make_cons(c_7316383,NULL,&c_7316384);
 
 make_cons(c_7316382,quote_lambda,&c_7316383);
 
-make_cons(c_7316381,&c_7316382,nil);
+make_cons(c_7316381,&c_7316382,NULL);
 
 make_cons(c_7316380,quote_handler_91k,&c_7316381);
 
-make_cons(c_7316388,quote__93_93_93,nil);
+make_cons(c_7316388,quote__93_93_93,NULL);
 
 make_cons(c_7316387,quote_clause,&c_7316388);
 
@@ -12677,21 +12677,21 @@ c_7315031.elts[18] = r_731671;
 c_7315031.elts[19] = ((closureN)self_734098)->elts[18];
 
 
-make_cons(c_7316374,quote_condition,nil);
+make_cons(c_7316374,quote_condition,NULL);
 
 make_cons(c_7316373,quote_raise_91continuable,&c_7316374);
 
-make_cons(c_7316372,&c_7316373,nil);
+make_cons(c_7316372,&c_7316373,NULL);
 
-make_cons(c_7316371,nil,&c_7316372);
+make_cons(c_7316371,NULL,&c_7316372);
 
 make_cons(c_7316370,quote_lambda,&c_7316371);
 
-make_cons(c_7316369,&c_7316370,nil);
+make_cons(c_7316369,&c_7316370,NULL);
 
 make_cons(c_7316368,quote_handler_91k,&c_7316369);
 
-make_cons(c_7316376,quote__93_93_93,nil);
+make_cons(c_7316376,quote__93_93_93,NULL);
 
 make_cons(c_7316375,quote_clause,&c_7316376);
 
@@ -12763,7 +12763,7 @@ c_7315035.elts[16] = ((closureN)self_734100)->elts[16];
 c_7315035.elts[17] = r_731667;
 c_7315035.elts[18] = ((closureN)self_734100)->elts[17];
 
-return_closcall1(data,(closure)&c_7315035,  nil);; 
+return_closcall1(data,(closure)&c_7315035,  NULL);; 
 }
 
 static void __lambda_2069(void *data, int argc, object self_734101, object r_731668) {
@@ -12798,21 +12798,21 @@ c_7315037.elts[18] = r_731668;
 c_7315037.elts[19] = ((closureN)self_734101)->elts[18];
 
 
-make_cons(c_7316361,quote_condition,nil);
+make_cons(c_7316361,quote_condition,NULL);
 
 make_cons(c_7316360,quote_raise_91continuable,&c_7316361);
 
-make_cons(c_7316359,&c_7316360,nil);
+make_cons(c_7316359,&c_7316360,NULL);
 
-make_cons(c_7316358,nil,&c_7316359);
+make_cons(c_7316358,NULL,&c_7316359);
 
 make_cons(c_7316357,quote_lambda,&c_7316358);
 
-make_cons(c_7316356,&c_7316357,nil);
+make_cons(c_7316356,&c_7316357,NULL);
 
 make_cons(c_7316355,quote_handler_91k,&c_7316356);
 
-make_cons(c_7316363,quote__93_93_93,nil);
+make_cons(c_7316363,quote__93_93_93,NULL);
 
 make_cons(c_7316362,quote_clause,&c_7316363);
 
@@ -12820,7 +12820,7 @@ make_cons(c_7316354,&c_7316355,&c_7316362);
 
 make_cons(c_7316353,quote_guard_91aux,&c_7316354);
 
-make_cons(c_7316352,&c_7316353,nil);
+make_cons(c_7316352,&c_7316353,NULL);
 return_closcall1(data,(closure)&c_7315037,  &c_7316352);; 
 }
 
@@ -12887,27 +12887,27 @@ c_7315041.elts[17] = r_731665;
 c_7315041.elts[18] = ((closureN)self_734103)->elts[17];
 
 
-make_cons(c_7316337,quote_condition,nil);
+make_cons(c_7316337,quote_condition,NULL);
 
 make_cons(c_7316336,quote_var,&c_7316337);
 
-make_cons(c_7316335,&c_7316336,nil);
+make_cons(c_7316335,&c_7316336,NULL);
 
-make_cons(c_7316347,quote_condition,nil);
+make_cons(c_7316347,quote_condition,NULL);
 
 make_cons(c_7316346,quote_raise_91continuable,&c_7316347);
 
-make_cons(c_7316345,&c_7316346,nil);
+make_cons(c_7316345,&c_7316346,NULL);
 
-make_cons(c_7316344,nil,&c_7316345);
+make_cons(c_7316344,NULL,&c_7316345);
 
 make_cons(c_7316343,quote_lambda,&c_7316344);
 
-make_cons(c_7316342,&c_7316343,nil);
+make_cons(c_7316342,&c_7316343,NULL);
 
 make_cons(c_7316341,quote_handler_91k,&c_7316342);
 
-make_cons(c_7316349,quote__93_93_93,nil);
+make_cons(c_7316349,quote__93_93_93,NULL);
 
 make_cons(c_7316348,quote_clause,&c_7316349);
 
@@ -12915,7 +12915,7 @@ make_cons(c_7316340,&c_7316341,&c_7316348);
 
 make_cons(c_7316339,quote_guard_91aux,&c_7316340);
 
-make_cons(c_7316338,&c_7316339,nil);
+make_cons(c_7316338,&c_7316339,NULL);
 
 make_cons(c_7316334,&c_7316335,&c_7316338);
 return_closcall1(data,(closure)&c_7315041,  &c_7316334);; 
@@ -12982,27 +12982,27 @@ c_7315045.elts[16] = r_731662;
 c_7315045.elts[17] = ((closureN)self_734105)->elts[16];
 
 
-make_cons(c_7316319,quote_condition,nil);
+make_cons(c_7316319,quote_condition,NULL);
 
 make_cons(c_7316318,quote_var,&c_7316319);
 
-make_cons(c_7316317,&c_7316318,nil);
+make_cons(c_7316317,&c_7316318,NULL);
 
-make_cons(c_7316329,quote_condition,nil);
+make_cons(c_7316329,quote_condition,NULL);
 
 make_cons(c_7316328,quote_raise_91continuable,&c_7316329);
 
-make_cons(c_7316327,&c_7316328,nil);
+make_cons(c_7316327,&c_7316328,NULL);
 
-make_cons(c_7316326,nil,&c_7316327);
+make_cons(c_7316326,NULL,&c_7316327);
 
 make_cons(c_7316325,quote_lambda,&c_7316326);
 
-make_cons(c_7316324,&c_7316325,nil);
+make_cons(c_7316324,&c_7316325,NULL);
 
 make_cons(c_7316323,quote_handler_91k,&c_7316324);
 
-make_cons(c_7316331,quote__93_93_93,nil);
+make_cons(c_7316331,quote__93_93_93,NULL);
 
 make_cons(c_7316330,quote_clause,&c_7316331);
 
@@ -13010,7 +13010,7 @@ make_cons(c_7316322,&c_7316323,&c_7316330);
 
 make_cons(c_7316321,quote_guard_91aux,&c_7316322);
 
-make_cons(c_7316320,&c_7316321,nil);
+make_cons(c_7316320,&c_7316321,NULL);
 
 make_cons(c_7316316,&c_7316317,&c_7316320);
 
@@ -13076,7 +13076,7 @@ c_7315049.elts[14] = ((closureN)self_734107)->elts[14];
 c_7315049.elts[15] = r_731658;
 c_7315049.elts[16] = ((closureN)self_734107)->elts[15];
 
-return_closcall1(data,(closure)&c_7315049,  nil);; 
+return_closcall1(data,(closure)&c_7315049,  NULL);; 
 }
 
 static void __lambda_2062(void *data, int argc, object self_734108, object r_731659) {
@@ -13109,27 +13109,27 @@ c_7315051.elts[16] = r_731659;
 c_7315051.elts[17] = ((closureN)self_734108)->elts[16];
 
 
-make_cons(c_7316300,quote_condition,nil);
+make_cons(c_7316300,quote_condition,NULL);
 
 make_cons(c_7316299,quote_var,&c_7316300);
 
-make_cons(c_7316298,&c_7316299,nil);
+make_cons(c_7316298,&c_7316299,NULL);
 
-make_cons(c_7316310,quote_condition,nil);
+make_cons(c_7316310,quote_condition,NULL);
 
 make_cons(c_7316309,quote_raise_91continuable,&c_7316310);
 
-make_cons(c_7316308,&c_7316309,nil);
+make_cons(c_7316308,&c_7316309,NULL);
 
-make_cons(c_7316307,nil,&c_7316308);
+make_cons(c_7316307,NULL,&c_7316308);
 
 make_cons(c_7316306,quote_lambda,&c_7316307);
 
-make_cons(c_7316305,&c_7316306,nil);
+make_cons(c_7316305,&c_7316306,NULL);
 
 make_cons(c_7316304,quote_handler_91k,&c_7316305);
 
-make_cons(c_7316312,quote__93_93_93,nil);
+make_cons(c_7316312,quote__93_93_93,NULL);
 
 make_cons(c_7316311,quote_clause,&c_7316312);
 
@@ -13137,13 +13137,13 @@ make_cons(c_7316303,&c_7316304,&c_7316311);
 
 make_cons(c_7316302,quote_guard_91aux,&c_7316303);
 
-make_cons(c_7316301,&c_7316302,nil);
+make_cons(c_7316301,&c_7316302,NULL);
 
 make_cons(c_7316297,&c_7316298,&c_7316301);
 
 make_cons(c_7316296,quote_let,&c_7316297);
 
-make_cons(c_7316295,&c_7316296,nil);
+make_cons(c_7316295,&c_7316296,NULL);
 return_closcall1(data,(closure)&c_7315051,  &c_7316295);; 
 }
 
@@ -13206,27 +13206,27 @@ c_7315055.elts[15] = r_731656;
 c_7315055.elts[16] = ((closureN)self_734110)->elts[15];
 
 
-make_cons(c_7316280,quote_condition,nil);
+make_cons(c_7316280,quote_condition,NULL);
 
 make_cons(c_7316279,quote_var,&c_7316280);
 
-make_cons(c_7316278,&c_7316279,nil);
+make_cons(c_7316278,&c_7316279,NULL);
 
-make_cons(c_7316290,quote_condition,nil);
+make_cons(c_7316290,quote_condition,NULL);
 
 make_cons(c_7316289,quote_raise_91continuable,&c_7316290);
 
-make_cons(c_7316288,&c_7316289,nil);
+make_cons(c_7316288,&c_7316289,NULL);
 
-make_cons(c_7316287,nil,&c_7316288);
+make_cons(c_7316287,NULL,&c_7316288);
 
 make_cons(c_7316286,quote_lambda,&c_7316287);
 
-make_cons(c_7316285,&c_7316286,nil);
+make_cons(c_7316285,&c_7316286,NULL);
 
 make_cons(c_7316284,quote_handler_91k,&c_7316285);
 
-make_cons(c_7316292,quote__93_93_93,nil);
+make_cons(c_7316292,quote__93_93_93,NULL);
 
 make_cons(c_7316291,quote_clause,&c_7316292);
 
@@ -13234,15 +13234,15 @@ make_cons(c_7316283,&c_7316284,&c_7316291);
 
 make_cons(c_7316282,quote_guard_91aux,&c_7316283);
 
-make_cons(c_7316281,&c_7316282,nil);
+make_cons(c_7316281,&c_7316282,NULL);
 
 make_cons(c_7316277,&c_7316278,&c_7316281);
 
 make_cons(c_7316276,quote_let,&c_7316277);
 
-make_cons(c_7316275,&c_7316276,nil);
+make_cons(c_7316275,&c_7316276,NULL);
 
-make_cons(c_7316274,nil,&c_7316275);
+make_cons(c_7316274,NULL,&c_7316275);
 return_closcall1(data,(closure)&c_7315055,  &c_7316274);; 
 }
 
@@ -13303,27 +13303,27 @@ c_7315059.elts[14] = r_731653;
 c_7315059.elts[15] = ((closureN)self_734112)->elts[14];
 
 
-make_cons(c_7316259,quote_condition,nil);
+make_cons(c_7316259,quote_condition,NULL);
 
 make_cons(c_7316258,quote_var,&c_7316259);
 
-make_cons(c_7316257,&c_7316258,nil);
+make_cons(c_7316257,&c_7316258,NULL);
 
-make_cons(c_7316269,quote_condition,nil);
+make_cons(c_7316269,quote_condition,NULL);
 
 make_cons(c_7316268,quote_raise_91continuable,&c_7316269);
 
-make_cons(c_7316267,&c_7316268,nil);
+make_cons(c_7316267,&c_7316268,NULL);
 
-make_cons(c_7316266,nil,&c_7316267);
+make_cons(c_7316266,NULL,&c_7316267);
 
 make_cons(c_7316265,quote_lambda,&c_7316266);
 
-make_cons(c_7316264,&c_7316265,nil);
+make_cons(c_7316264,&c_7316265,NULL);
 
 make_cons(c_7316263,quote_handler_91k,&c_7316264);
 
-make_cons(c_7316271,quote__93_93_93,nil);
+make_cons(c_7316271,quote__93_93_93,NULL);
 
 make_cons(c_7316270,quote_clause,&c_7316271);
 
@@ -13331,15 +13331,15 @@ make_cons(c_7316262,&c_7316263,&c_7316270);
 
 make_cons(c_7316261,quote_guard_91aux,&c_7316262);
 
-make_cons(c_7316260,&c_7316261,nil);
+make_cons(c_7316260,&c_7316261,NULL);
 
 make_cons(c_7316256,&c_7316257,&c_7316260);
 
 make_cons(c_7316255,quote_let,&c_7316256);
 
-make_cons(c_7316254,&c_7316255,nil);
+make_cons(c_7316254,&c_7316255,NULL);
 
-make_cons(c_7316253,nil,&c_7316254);
+make_cons(c_7316253,NULL,&c_7316254);
 
 make_cons(c_7316252,quote_lambda,&c_7316253);
 return_closcall1(data,(closure)&c_7315059,  &c_7316252);; 
@@ -13399,7 +13399,7 @@ c_7315063.elts[12] = ((closureN)self_734114)->elts[12];
 c_7315063.elts[13] = r_731649;
 c_7315063.elts[14] = ((closureN)self_734114)->elts[13];
 
-return_closcall1(data,(closure)&c_7315063,  nil);; 
+return_closcall1(data,(closure)&c_7315063,  NULL);; 
 }
 
 static void __lambda_2055(void *data, int argc, object self_734115, object r_731650) {
@@ -13430,27 +13430,27 @@ c_7315065.elts[14] = r_731650;
 c_7315065.elts[15] = ((closureN)self_734115)->elts[14];
 
 
-make_cons(c_7316237,quote_condition,nil);
+make_cons(c_7316237,quote_condition,NULL);
 
 make_cons(c_7316236,quote_var,&c_7316237);
 
-make_cons(c_7316235,&c_7316236,nil);
+make_cons(c_7316235,&c_7316236,NULL);
 
-make_cons(c_7316247,quote_condition,nil);
+make_cons(c_7316247,quote_condition,NULL);
 
 make_cons(c_7316246,quote_raise_91continuable,&c_7316247);
 
-make_cons(c_7316245,&c_7316246,nil);
+make_cons(c_7316245,&c_7316246,NULL);
 
-make_cons(c_7316244,nil,&c_7316245);
+make_cons(c_7316244,NULL,&c_7316245);
 
 make_cons(c_7316243,quote_lambda,&c_7316244);
 
-make_cons(c_7316242,&c_7316243,nil);
+make_cons(c_7316242,&c_7316243,NULL);
 
 make_cons(c_7316241,quote_handler_91k,&c_7316242);
 
-make_cons(c_7316249,quote__93_93_93,nil);
+make_cons(c_7316249,quote__93_93_93,NULL);
 
 make_cons(c_7316248,quote_clause,&c_7316249);
 
@@ -13458,19 +13458,19 @@ make_cons(c_7316240,&c_7316241,&c_7316248);
 
 make_cons(c_7316239,quote_guard_91aux,&c_7316240);
 
-make_cons(c_7316238,&c_7316239,nil);
+make_cons(c_7316238,&c_7316239,NULL);
 
 make_cons(c_7316234,&c_7316235,&c_7316238);
 
 make_cons(c_7316233,quote_let,&c_7316234);
 
-make_cons(c_7316232,&c_7316233,nil);
+make_cons(c_7316232,&c_7316233,NULL);
 
-make_cons(c_7316231,nil,&c_7316232);
+make_cons(c_7316231,NULL,&c_7316232);
 
 make_cons(c_7316230,quote_lambda,&c_7316231);
 
-make_cons(c_7316229,&c_7316230,nil);
+make_cons(c_7316229,&c_7316230,NULL);
 return_closcall1(data,(closure)&c_7315065,  &c_7316229);; 
 }
 
@@ -13529,27 +13529,27 @@ c_7315069.elts[13] = r_731647;
 c_7315069.elts[14] = ((closureN)self_734117)->elts[13];
 
 
-make_cons(c_7316214,quote_condition,nil);
+make_cons(c_7316214,quote_condition,NULL);
 
 make_cons(c_7316213,quote_var,&c_7316214);
 
-make_cons(c_7316212,&c_7316213,nil);
+make_cons(c_7316212,&c_7316213,NULL);
 
-make_cons(c_7316224,quote_condition,nil);
+make_cons(c_7316224,quote_condition,NULL);
 
 make_cons(c_7316223,quote_raise_91continuable,&c_7316224);
 
-make_cons(c_7316222,&c_7316223,nil);
+make_cons(c_7316222,&c_7316223,NULL);
 
-make_cons(c_7316221,nil,&c_7316222);
+make_cons(c_7316221,NULL,&c_7316222);
 
 make_cons(c_7316220,quote_lambda,&c_7316221);
 
-make_cons(c_7316219,&c_7316220,nil);
+make_cons(c_7316219,&c_7316220,NULL);
 
 make_cons(c_7316218,quote_handler_91k,&c_7316219);
 
-make_cons(c_7316226,quote__93_93_93,nil);
+make_cons(c_7316226,quote__93_93_93,NULL);
 
 make_cons(c_7316225,quote_clause,&c_7316226);
 
@@ -13557,19 +13557,19 @@ make_cons(c_7316217,&c_7316218,&c_7316225);
 
 make_cons(c_7316216,quote_guard_91aux,&c_7316217);
 
-make_cons(c_7316215,&c_7316216,nil);
+make_cons(c_7316215,&c_7316216,NULL);
 
 make_cons(c_7316211,&c_7316212,&c_7316215);
 
 make_cons(c_7316210,quote_let,&c_7316211);
 
-make_cons(c_7316209,&c_7316210,nil);
+make_cons(c_7316209,&c_7316210,NULL);
 
-make_cons(c_7316208,nil,&c_7316209);
+make_cons(c_7316208,NULL,&c_7316209);
 
 make_cons(c_7316207,quote_lambda,&c_7316208);
 
-make_cons(c_7316206,&c_7316207,nil);
+make_cons(c_7316206,&c_7316207,NULL);
 
 make_cons(c_7316205,quote_guard_91k,&c_7316206);
 return_closcall1(data,(closure)&c_7315069,  &c_7316205);; 
@@ -13627,7 +13627,7 @@ c_7315073.elts[11] = ((closureN)self_734119)->elts[11];
 c_7315073.elts[12] = r_731643;
 c_7315073.elts[13] = ((closureN)self_734119)->elts[12];
 
-return_closcall1(data,(closure)&c_7315073,  nil);; 
+return_closcall1(data,(closure)&c_7315073,  NULL);; 
 }
 
 static void __lambda_2050(void *data, int argc, object self_734120, object r_731644) {
@@ -13657,27 +13657,27 @@ c_7315075.elts[13] = r_731644;
 c_7315075.elts[14] = ((closureN)self_734120)->elts[13];
 
 
-make_cons(c_7316190,quote_condition,nil);
+make_cons(c_7316190,quote_condition,NULL);
 
 make_cons(c_7316189,quote_var,&c_7316190);
 
-make_cons(c_7316188,&c_7316189,nil);
+make_cons(c_7316188,&c_7316189,NULL);
 
-make_cons(c_7316200,quote_condition,nil);
+make_cons(c_7316200,quote_condition,NULL);
 
 make_cons(c_7316199,quote_raise_91continuable,&c_7316200);
 
-make_cons(c_7316198,&c_7316199,nil);
+make_cons(c_7316198,&c_7316199,NULL);
 
-make_cons(c_7316197,nil,&c_7316198);
+make_cons(c_7316197,NULL,&c_7316198);
 
 make_cons(c_7316196,quote_lambda,&c_7316197);
 
-make_cons(c_7316195,&c_7316196,nil);
+make_cons(c_7316195,&c_7316196,NULL);
 
 make_cons(c_7316194,quote_handler_91k,&c_7316195);
 
-make_cons(c_7316202,quote__93_93_93,nil);
+make_cons(c_7316202,quote__93_93_93,NULL);
 
 make_cons(c_7316201,quote_clause,&c_7316202);
 
@@ -13685,23 +13685,23 @@ make_cons(c_7316193,&c_7316194,&c_7316201);
 
 make_cons(c_7316192,quote_guard_91aux,&c_7316193);
 
-make_cons(c_7316191,&c_7316192,nil);
+make_cons(c_7316191,&c_7316192,NULL);
 
 make_cons(c_7316187,&c_7316188,&c_7316191);
 
 make_cons(c_7316186,quote_let,&c_7316187);
 
-make_cons(c_7316185,&c_7316186,nil);
+make_cons(c_7316185,&c_7316186,NULL);
 
-make_cons(c_7316184,nil,&c_7316185);
+make_cons(c_7316184,NULL,&c_7316185);
 
 make_cons(c_7316183,quote_lambda,&c_7316184);
 
-make_cons(c_7316182,&c_7316183,nil);
+make_cons(c_7316182,&c_7316183,NULL);
 
 make_cons(c_7316181,quote_guard_91k,&c_7316182);
 
-make_cons(c_7316180,&c_7316181,nil);
+make_cons(c_7316180,&c_7316181,NULL);
 return_closcall1(data,(closure)&c_7315075,  &c_7316180);; 
 }
 
@@ -13758,29 +13758,29 @@ c_7315079.elts[12] = r_731641;
 c_7315079.elts[13] = ((closureN)self_734122)->elts[12];
 
 
-make_cons(c_7316154,quote_handler_91k,nil);
+make_cons(c_7316154,quote_handler_91k,NULL);
 
-make_cons(c_7316165,quote_condition,nil);
+make_cons(c_7316165,quote_condition,NULL);
 
 make_cons(c_7316164,quote_var,&c_7316165);
 
-make_cons(c_7316163,&c_7316164,nil);
+make_cons(c_7316163,&c_7316164,NULL);
 
-make_cons(c_7316175,quote_condition,nil);
+make_cons(c_7316175,quote_condition,NULL);
 
 make_cons(c_7316174,quote_raise_91continuable,&c_7316175);
 
-make_cons(c_7316173,&c_7316174,nil);
+make_cons(c_7316173,&c_7316174,NULL);
 
-make_cons(c_7316172,nil,&c_7316173);
+make_cons(c_7316172,NULL,&c_7316173);
 
 make_cons(c_7316171,quote_lambda,&c_7316172);
 
-make_cons(c_7316170,&c_7316171,nil);
+make_cons(c_7316170,&c_7316171,NULL);
 
 make_cons(c_7316169,quote_handler_91k,&c_7316170);
 
-make_cons(c_7316177,quote__93_93_93,nil);
+make_cons(c_7316177,quote__93_93_93,NULL);
 
 make_cons(c_7316176,quote_clause,&c_7316177);
 
@@ -13788,23 +13788,23 @@ make_cons(c_7316168,&c_7316169,&c_7316176);
 
 make_cons(c_7316167,quote_guard_91aux,&c_7316168);
 
-make_cons(c_7316166,&c_7316167,nil);
+make_cons(c_7316166,&c_7316167,NULL);
 
 make_cons(c_7316162,&c_7316163,&c_7316166);
 
 make_cons(c_7316161,quote_let,&c_7316162);
 
-make_cons(c_7316160,&c_7316161,nil);
+make_cons(c_7316160,&c_7316161,NULL);
 
-make_cons(c_7316159,nil,&c_7316160);
+make_cons(c_7316159,NULL,&c_7316160);
 
 make_cons(c_7316158,quote_lambda,&c_7316159);
 
-make_cons(c_7316157,&c_7316158,nil);
+make_cons(c_7316157,&c_7316158,NULL);
 
 make_cons(c_7316156,quote_guard_91k,&c_7316157);
 
-make_cons(c_7316155,&c_7316156,nil);
+make_cons(c_7316155,&c_7316156,NULL);
 
 make_cons(c_7316153,&c_7316154,&c_7316155);
 return_closcall1(data,(closure)&c_7315079,  &c_7316153);; 
@@ -13861,29 +13861,29 @@ c_7315083.elts[11] = r_731638;
 c_7315083.elts[12] = ((closureN)self_734124)->elts[11];
 
 
-make_cons(c_7316127,quote_handler_91k,nil);
+make_cons(c_7316127,quote_handler_91k,NULL);
 
-make_cons(c_7316138,quote_condition,nil);
+make_cons(c_7316138,quote_condition,NULL);
 
 make_cons(c_7316137,quote_var,&c_7316138);
 
-make_cons(c_7316136,&c_7316137,nil);
+make_cons(c_7316136,&c_7316137,NULL);
 
-make_cons(c_7316148,quote_condition,nil);
+make_cons(c_7316148,quote_condition,NULL);
 
 make_cons(c_7316147,quote_raise_91continuable,&c_7316148);
 
-make_cons(c_7316146,&c_7316147,nil);
+make_cons(c_7316146,&c_7316147,NULL);
 
-make_cons(c_7316145,nil,&c_7316146);
+make_cons(c_7316145,NULL,&c_7316146);
 
 make_cons(c_7316144,quote_lambda,&c_7316145);
 
-make_cons(c_7316143,&c_7316144,nil);
+make_cons(c_7316143,&c_7316144,NULL);
 
 make_cons(c_7316142,quote_handler_91k,&c_7316143);
 
-make_cons(c_7316150,quote__93_93_93,nil);
+make_cons(c_7316150,quote__93_93_93,NULL);
 
 make_cons(c_7316149,quote_clause,&c_7316150);
 
@@ -13891,23 +13891,23 @@ make_cons(c_7316141,&c_7316142,&c_7316149);
 
 make_cons(c_7316140,quote_guard_91aux,&c_7316141);
 
-make_cons(c_7316139,&c_7316140,nil);
+make_cons(c_7316139,&c_7316140,NULL);
 
 make_cons(c_7316135,&c_7316136,&c_7316139);
 
 make_cons(c_7316134,quote_let,&c_7316135);
 
-make_cons(c_7316133,&c_7316134,nil);
+make_cons(c_7316133,&c_7316134,NULL);
 
-make_cons(c_7316132,nil,&c_7316133);
+make_cons(c_7316132,NULL,&c_7316133);
 
 make_cons(c_7316131,quote_lambda,&c_7316132);
 
-make_cons(c_7316130,&c_7316131,nil);
+make_cons(c_7316130,&c_7316131,NULL);
 
 make_cons(c_7316129,quote_guard_91k,&c_7316130);
 
-make_cons(c_7316128,&c_7316129,nil);
+make_cons(c_7316128,&c_7316129,NULL);
 
 make_cons(c_7316126,&c_7316127,&c_7316128);
 
@@ -13963,7 +13963,7 @@ c_7315087.elts[9] = ((closureN)self_734126)->elts[9];
 c_7315087.elts[10] = r_731634;
 c_7315087.elts[11] = ((closureN)self_734126)->elts[10];
 
-return_closcall1(data,(closure)&c_7315087,  nil);; 
+return_closcall1(data,(closure)&c_7315087,  NULL);; 
 }
 
 static void __lambda_2043(void *data, int argc, object self_734127, object r_731635) {
@@ -13991,29 +13991,29 @@ c_7315089.elts[11] = r_731635;
 c_7315089.elts[12] = ((closureN)self_734127)->elts[11];
 
 
-make_cons(c_7316099,quote_handler_91k,nil);
+make_cons(c_7316099,quote_handler_91k,NULL);
 
-make_cons(c_7316110,quote_condition,nil);
+make_cons(c_7316110,quote_condition,NULL);
 
 make_cons(c_7316109,quote_var,&c_7316110);
 
-make_cons(c_7316108,&c_7316109,nil);
+make_cons(c_7316108,&c_7316109,NULL);
 
-make_cons(c_7316120,quote_condition,nil);
+make_cons(c_7316120,quote_condition,NULL);
 
 make_cons(c_7316119,quote_raise_91continuable,&c_7316120);
 
-make_cons(c_7316118,&c_7316119,nil);
+make_cons(c_7316118,&c_7316119,NULL);
 
-make_cons(c_7316117,nil,&c_7316118);
+make_cons(c_7316117,NULL,&c_7316118);
 
 make_cons(c_7316116,quote_lambda,&c_7316117);
 
-make_cons(c_7316115,&c_7316116,nil);
+make_cons(c_7316115,&c_7316116,NULL);
 
 make_cons(c_7316114,quote_handler_91k,&c_7316115);
 
-make_cons(c_7316122,quote__93_93_93,nil);
+make_cons(c_7316122,quote__93_93_93,NULL);
 
 make_cons(c_7316121,quote_clause,&c_7316122);
 
@@ -14021,29 +14021,29 @@ make_cons(c_7316113,&c_7316114,&c_7316121);
 
 make_cons(c_7316112,quote_guard_91aux,&c_7316113);
 
-make_cons(c_7316111,&c_7316112,nil);
+make_cons(c_7316111,&c_7316112,NULL);
 
 make_cons(c_7316107,&c_7316108,&c_7316111);
 
 make_cons(c_7316106,quote_let,&c_7316107);
 
-make_cons(c_7316105,&c_7316106,nil);
+make_cons(c_7316105,&c_7316106,NULL);
 
-make_cons(c_7316104,nil,&c_7316105);
+make_cons(c_7316104,NULL,&c_7316105);
 
 make_cons(c_7316103,quote_lambda,&c_7316104);
 
-make_cons(c_7316102,&c_7316103,nil);
+make_cons(c_7316102,&c_7316103,NULL);
 
 make_cons(c_7316101,quote_guard_91k,&c_7316102);
 
-make_cons(c_7316100,&c_7316101,nil);
+make_cons(c_7316100,&c_7316101,NULL);
 
 make_cons(c_7316098,&c_7316099,&c_7316100);
 
 make_cons(c_7316097,quote_lambda,&c_7316098);
 
-make_cons(c_7316096,&c_7316097,nil);
+make_cons(c_7316096,&c_7316097,NULL);
 return_closcall1(data,(closure)&c_7315089,  &c_7316096);; 
 }
 
@@ -14096,29 +14096,29 @@ c_7315093.elts[10] = r_731632;
 c_7315093.elts[11] = ((closureN)self_734129)->elts[10];
 
 
-make_cons(c_7316070,quote_handler_91k,nil);
+make_cons(c_7316070,quote_handler_91k,NULL);
 
-make_cons(c_7316081,quote_condition,nil);
+make_cons(c_7316081,quote_condition,NULL);
 
 make_cons(c_7316080,quote_var,&c_7316081);
 
-make_cons(c_7316079,&c_7316080,nil);
+make_cons(c_7316079,&c_7316080,NULL);
 
-make_cons(c_7316091,quote_condition,nil);
+make_cons(c_7316091,quote_condition,NULL);
 
 make_cons(c_7316090,quote_raise_91continuable,&c_7316091);
 
-make_cons(c_7316089,&c_7316090,nil);
+make_cons(c_7316089,&c_7316090,NULL);
 
-make_cons(c_7316088,nil,&c_7316089);
+make_cons(c_7316088,NULL,&c_7316089);
 
 make_cons(c_7316087,quote_lambda,&c_7316088);
 
-make_cons(c_7316086,&c_7316087,nil);
+make_cons(c_7316086,&c_7316087,NULL);
 
 make_cons(c_7316085,quote_handler_91k,&c_7316086);
 
-make_cons(c_7316093,quote__93_93_93,nil);
+make_cons(c_7316093,quote__93_93_93,NULL);
 
 make_cons(c_7316092,quote_clause,&c_7316093);
 
@@ -14126,29 +14126,29 @@ make_cons(c_7316084,&c_7316085,&c_7316092);
 
 make_cons(c_7316083,quote_guard_91aux,&c_7316084);
 
-make_cons(c_7316082,&c_7316083,nil);
+make_cons(c_7316082,&c_7316083,NULL);
 
 make_cons(c_7316078,&c_7316079,&c_7316082);
 
 make_cons(c_7316077,quote_let,&c_7316078);
 
-make_cons(c_7316076,&c_7316077,nil);
+make_cons(c_7316076,&c_7316077,NULL);
 
-make_cons(c_7316075,nil,&c_7316076);
+make_cons(c_7316075,NULL,&c_7316076);
 
 make_cons(c_7316074,quote_lambda,&c_7316075);
 
-make_cons(c_7316073,&c_7316074,nil);
+make_cons(c_7316073,&c_7316074,NULL);
 
 make_cons(c_7316072,quote_guard_91k,&c_7316073);
 
-make_cons(c_7316071,&c_7316072,nil);
+make_cons(c_7316071,&c_7316072,NULL);
 
 make_cons(c_7316069,&c_7316070,&c_7316071);
 
 make_cons(c_7316068,quote_lambda,&c_7316069);
 
-make_cons(c_7316067,&c_7316068,nil);
+make_cons(c_7316067,&c_7316068,NULL);
 
 make_cons(c_7316066,quote_call_91with_91current_91continuation,&c_7316067);
 return_closcall1(data,(closure)&c_7315093,  &c_7316066);; 
@@ -14200,7 +14200,7 @@ c_7315097.elts[8] = ((closureN)self_734131)->elts[8];
 c_7315097.elts[9] = r_731628;
 c_7315097.elts[10] = ((closureN)self_734131)->elts[9];
 
-return_closcall1(data,(closure)&c_7315097,  nil);; 
+return_closcall1(data,(closure)&c_7315097,  NULL);; 
 }
 
 static void __lambda_2038(void *data, int argc, object self_734132, object r_731629) {
@@ -14227,29 +14227,29 @@ c_7315099.elts[10] = r_731629;
 c_7315099.elts[11] = ((closureN)self_734132)->elts[10];
 
 
-make_cons(c_7316040,quote_handler_91k,nil);
+make_cons(c_7316040,quote_handler_91k,NULL);
 
-make_cons(c_7316051,quote_condition,nil);
+make_cons(c_7316051,quote_condition,NULL);
 
 make_cons(c_7316050,quote_var,&c_7316051);
 
-make_cons(c_7316049,&c_7316050,nil);
+make_cons(c_7316049,&c_7316050,NULL);
 
-make_cons(c_7316061,quote_condition,nil);
+make_cons(c_7316061,quote_condition,NULL);
 
 make_cons(c_7316060,quote_raise_91continuable,&c_7316061);
 
-make_cons(c_7316059,&c_7316060,nil);
+make_cons(c_7316059,&c_7316060,NULL);
 
-make_cons(c_7316058,nil,&c_7316059);
+make_cons(c_7316058,NULL,&c_7316059);
 
 make_cons(c_7316057,quote_lambda,&c_7316058);
 
-make_cons(c_7316056,&c_7316057,nil);
+make_cons(c_7316056,&c_7316057,NULL);
 
 make_cons(c_7316055,quote_handler_91k,&c_7316056);
 
-make_cons(c_7316063,quote__93_93_93,nil);
+make_cons(c_7316063,quote__93_93_93,NULL);
 
 make_cons(c_7316062,quote_clause,&c_7316063);
 
@@ -14257,33 +14257,33 @@ make_cons(c_7316054,&c_7316055,&c_7316062);
 
 make_cons(c_7316053,quote_guard_91aux,&c_7316054);
 
-make_cons(c_7316052,&c_7316053,nil);
+make_cons(c_7316052,&c_7316053,NULL);
 
 make_cons(c_7316048,&c_7316049,&c_7316052);
 
 make_cons(c_7316047,quote_let,&c_7316048);
 
-make_cons(c_7316046,&c_7316047,nil);
+make_cons(c_7316046,&c_7316047,NULL);
 
-make_cons(c_7316045,nil,&c_7316046);
+make_cons(c_7316045,NULL,&c_7316046);
 
 make_cons(c_7316044,quote_lambda,&c_7316045);
 
-make_cons(c_7316043,&c_7316044,nil);
+make_cons(c_7316043,&c_7316044,NULL);
 
 make_cons(c_7316042,quote_guard_91k,&c_7316043);
 
-make_cons(c_7316041,&c_7316042,nil);
+make_cons(c_7316041,&c_7316042,NULL);
 
 make_cons(c_7316039,&c_7316040,&c_7316041);
 
 make_cons(c_7316038,quote_lambda,&c_7316039);
 
-make_cons(c_7316037,&c_7316038,nil);
+make_cons(c_7316037,&c_7316038,NULL);
 
 make_cons(c_7316036,quote_call_91with_91current_91continuation,&c_7316037);
 
-make_cons(c_7316035,&c_7316036,nil);
+make_cons(c_7316035,&c_7316036,NULL);
 return_closcall1(data,(closure)&c_7315099,  &c_7316035);; 
 }
 
@@ -14333,7 +14333,7 @@ c_7315103.elts[8] = ((closureN)self_734134)->elts[8];
 c_7315103.elts[9] = r_731625;
 c_7315103.elts[10] = ((closureN)self_734134)->elts[9];
 
-return_closcall1(data,(closure)&c_7315103,  nil);; 
+return_closcall1(data,(closure)&c_7315103,  NULL);; 
 }
 
 static void __lambda_2035(void *data, int argc, object self_734135, object r_731626) {
@@ -14360,29 +14360,29 @@ c_7315105.elts[10] = r_731626;
 c_7315105.elts[11] = ((closureN)self_734135)->elts[10];
 
 
-make_cons(c_7316009,quote_handler_91k,nil);
+make_cons(c_7316009,quote_handler_91k,NULL);
 
-make_cons(c_7316020,quote_condition,nil);
+make_cons(c_7316020,quote_condition,NULL);
 
 make_cons(c_7316019,quote_var,&c_7316020);
 
-make_cons(c_7316018,&c_7316019,nil);
+make_cons(c_7316018,&c_7316019,NULL);
 
-make_cons(c_7316030,quote_condition,nil);
+make_cons(c_7316030,quote_condition,NULL);
 
 make_cons(c_7316029,quote_raise_91continuable,&c_7316030);
 
-make_cons(c_7316028,&c_7316029,nil);
+make_cons(c_7316028,&c_7316029,NULL);
 
-make_cons(c_7316027,nil,&c_7316028);
+make_cons(c_7316027,NULL,&c_7316028);
 
 make_cons(c_7316026,quote_lambda,&c_7316027);
 
-make_cons(c_7316025,&c_7316026,nil);
+make_cons(c_7316025,&c_7316026,NULL);
 
 make_cons(c_7316024,quote_handler_91k,&c_7316025);
 
-make_cons(c_7316032,quote__93_93_93,nil);
+make_cons(c_7316032,quote__93_93_93,NULL);
 
 make_cons(c_7316031,quote_clause,&c_7316032);
 
@@ -14390,35 +14390,35 @@ make_cons(c_7316023,&c_7316024,&c_7316031);
 
 make_cons(c_7316022,quote_guard_91aux,&c_7316023);
 
-make_cons(c_7316021,&c_7316022,nil);
+make_cons(c_7316021,&c_7316022,NULL);
 
 make_cons(c_7316017,&c_7316018,&c_7316021);
 
 make_cons(c_7316016,quote_let,&c_7316017);
 
-make_cons(c_7316015,&c_7316016,nil);
+make_cons(c_7316015,&c_7316016,NULL);
 
-make_cons(c_7316014,nil,&c_7316015);
+make_cons(c_7316014,NULL,&c_7316015);
 
 make_cons(c_7316013,quote_lambda,&c_7316014);
 
-make_cons(c_7316012,&c_7316013,nil);
+make_cons(c_7316012,&c_7316013,NULL);
 
 make_cons(c_7316011,quote_guard_91k,&c_7316012);
 
-make_cons(c_7316010,&c_7316011,nil);
+make_cons(c_7316010,&c_7316011,NULL);
 
 make_cons(c_7316008,&c_7316009,&c_7316010);
 
 make_cons(c_7316007,quote_lambda,&c_7316008);
 
-make_cons(c_7316006,&c_7316007,nil);
+make_cons(c_7316006,&c_7316007,NULL);
 
 make_cons(c_7316005,quote_call_91with_91current_91continuation,&c_7316006);
 
-make_cons(c_7316004,&c_7316005,nil);
+make_cons(c_7316004,&c_7316005,NULL);
 
-make_cons(c_7316003,&c_7316004,nil);
+make_cons(c_7316003,&c_7316004,NULL);
 return_closcall1(data,(closure)&c_7315105,  &c_7316003);; 
 }
 
@@ -14469,31 +14469,31 @@ c_7315109.elts[9] = r_731623;
 c_7315109.elts[10] = ((closureN)self_734137)->elts[9];
 
 
-make_cons(c_7315970,quote_condition,nil);
+make_cons(c_7315970,quote_condition,NULL);
 
-make_cons(c_7315977,quote_handler_91k,nil);
+make_cons(c_7315977,quote_handler_91k,NULL);
 
-make_cons(c_7315988,quote_condition,nil);
+make_cons(c_7315988,quote_condition,NULL);
 
 make_cons(c_7315987,quote_var,&c_7315988);
 
-make_cons(c_7315986,&c_7315987,nil);
+make_cons(c_7315986,&c_7315987,NULL);
 
-make_cons(c_7315998,quote_condition,nil);
+make_cons(c_7315998,quote_condition,NULL);
 
 make_cons(c_7315997,quote_raise_91continuable,&c_7315998);
 
-make_cons(c_7315996,&c_7315997,nil);
+make_cons(c_7315996,&c_7315997,NULL);
 
-make_cons(c_7315995,nil,&c_7315996);
+make_cons(c_7315995,NULL,&c_7315996);
 
 make_cons(c_7315994,quote_lambda,&c_7315995);
 
-make_cons(c_7315993,&c_7315994,nil);
+make_cons(c_7315993,&c_7315994,NULL);
 
 make_cons(c_7315992,quote_handler_91k,&c_7315993);
 
-make_cons(c_7316000,quote__93_93_93,nil);
+make_cons(c_7316000,quote__93_93_93,NULL);
 
 make_cons(c_7315999,quote_clause,&c_7316000);
 
@@ -14501,35 +14501,35 @@ make_cons(c_7315991,&c_7315992,&c_7315999);
 
 make_cons(c_7315990,quote_guard_91aux,&c_7315991);
 
-make_cons(c_7315989,&c_7315990,nil);
+make_cons(c_7315989,&c_7315990,NULL);
 
 make_cons(c_7315985,&c_7315986,&c_7315989);
 
 make_cons(c_7315984,quote_let,&c_7315985);
 
-make_cons(c_7315983,&c_7315984,nil);
+make_cons(c_7315983,&c_7315984,NULL);
 
-make_cons(c_7315982,nil,&c_7315983);
+make_cons(c_7315982,NULL,&c_7315983);
 
 make_cons(c_7315981,quote_lambda,&c_7315982);
 
-make_cons(c_7315980,&c_7315981,nil);
+make_cons(c_7315980,&c_7315981,NULL);
 
 make_cons(c_7315979,quote_guard_91k,&c_7315980);
 
-make_cons(c_7315978,&c_7315979,nil);
+make_cons(c_7315978,&c_7315979,NULL);
 
 make_cons(c_7315976,&c_7315977,&c_7315978);
 
 make_cons(c_7315975,quote_lambda,&c_7315976);
 
-make_cons(c_7315974,&c_7315975,nil);
+make_cons(c_7315974,&c_7315975,NULL);
 
 make_cons(c_7315973,quote_call_91with_91current_91continuation,&c_7315974);
 
-make_cons(c_7315972,&c_7315973,nil);
+make_cons(c_7315972,&c_7315973,NULL);
 
-make_cons(c_7315971,&c_7315972,nil);
+make_cons(c_7315971,&c_7315972,NULL);
 
 make_cons(c_7315969,&c_7315970,&c_7315971);
 return_closcall1(data,(closure)&c_7315109,  &c_7315969);; 
@@ -14580,31 +14580,31 @@ c_7315113.elts[8] = r_731620;
 c_7315113.elts[9] = ((closureN)self_734139)->elts[8];
 
 
-make_cons(c_7315936,quote_condition,nil);
+make_cons(c_7315936,quote_condition,NULL);
 
-make_cons(c_7315943,quote_handler_91k,nil);
+make_cons(c_7315943,quote_handler_91k,NULL);
 
-make_cons(c_7315954,quote_condition,nil);
+make_cons(c_7315954,quote_condition,NULL);
 
 make_cons(c_7315953,quote_var,&c_7315954);
 
-make_cons(c_7315952,&c_7315953,nil);
+make_cons(c_7315952,&c_7315953,NULL);
 
-make_cons(c_7315964,quote_condition,nil);
+make_cons(c_7315964,quote_condition,NULL);
 
 make_cons(c_7315963,quote_raise_91continuable,&c_7315964);
 
-make_cons(c_7315962,&c_7315963,nil);
+make_cons(c_7315962,&c_7315963,NULL);
 
-make_cons(c_7315961,nil,&c_7315962);
+make_cons(c_7315961,NULL,&c_7315962);
 
 make_cons(c_7315960,quote_lambda,&c_7315961);
 
-make_cons(c_7315959,&c_7315960,nil);
+make_cons(c_7315959,&c_7315960,NULL);
 
 make_cons(c_7315958,quote_handler_91k,&c_7315959);
 
-make_cons(c_7315966,quote__93_93_93,nil);
+make_cons(c_7315966,quote__93_93_93,NULL);
 
 make_cons(c_7315965,quote_clause,&c_7315966);
 
@@ -14612,35 +14612,35 @@ make_cons(c_7315957,&c_7315958,&c_7315965);
 
 make_cons(c_7315956,quote_guard_91aux,&c_7315957);
 
-make_cons(c_7315955,&c_7315956,nil);
+make_cons(c_7315955,&c_7315956,NULL);
 
 make_cons(c_7315951,&c_7315952,&c_7315955);
 
 make_cons(c_7315950,quote_let,&c_7315951);
 
-make_cons(c_7315949,&c_7315950,nil);
+make_cons(c_7315949,&c_7315950,NULL);
 
-make_cons(c_7315948,nil,&c_7315949);
+make_cons(c_7315948,NULL,&c_7315949);
 
 make_cons(c_7315947,quote_lambda,&c_7315948);
 
-make_cons(c_7315946,&c_7315947,nil);
+make_cons(c_7315946,&c_7315947,NULL);
 
 make_cons(c_7315945,quote_guard_91k,&c_7315946);
 
-make_cons(c_7315944,&c_7315945,nil);
+make_cons(c_7315944,&c_7315945,NULL);
 
 make_cons(c_7315942,&c_7315943,&c_7315944);
 
 make_cons(c_7315941,quote_lambda,&c_7315942);
 
-make_cons(c_7315940,&c_7315941,nil);
+make_cons(c_7315940,&c_7315941,NULL);
 
 make_cons(c_7315939,quote_call_91with_91current_91continuation,&c_7315940);
 
-make_cons(c_7315938,&c_7315939,nil);
+make_cons(c_7315938,&c_7315939,NULL);
 
-make_cons(c_7315937,&c_7315938,nil);
+make_cons(c_7315937,&c_7315938,NULL);
 
 make_cons(c_7315935,&c_7315936,&c_7315937);
 
@@ -14737,7 +14737,7 @@ c_7315122.elts[7] = ((closureN)self_734143)->elts[7];
 c_7315122.elts[8] = r_731566;
 c_7315122.elts[9] = ((closureN)self_734143)->elts[8];
 
-return_closcall1(data,(closure)&c_7315122,  nil);; 
+return_closcall1(data,(closure)&c_7315122,  NULL);; 
 }
 
 static void __lambda_2026(void *data, int argc, object self_734144, object r_731569) {
@@ -14922,7 +14922,7 @@ c_7315139.elts[12] = r_731611;
 c_7315139.elts[13] = ((closureN)self_734150)->elts[12];
 
 
-make_cons(c_7315931,quote__93_93_93,nil);
+make_cons(c_7315931,quote__93_93_93,NULL);
 
 make_cons(c_7315930,quote_e2,&c_7315931);
 
@@ -14981,7 +14981,7 @@ c_7315143.elts[11] = r_731612;
 c_7315143.elts[12] = ((closureN)self_734152)->elts[11];
 
 
-make_cons(c_7315926,quote__93_93_93,nil);
+make_cons(c_7315926,quote__93_93_93,NULL);
 
 make_cons(c_7315925,quote_e2,&c_7315926);
 
@@ -15039,7 +15039,7 @@ c_7315147.elts[9] = ((closureN)self_734154)->elts[9];
 c_7315147.elts[10] = r_731608;
 c_7315147.elts[11] = ((closureN)self_734154)->elts[10];
 
-return_closcall1(data,(closure)&c_7315147,  nil);; 
+return_closcall1(data,(closure)&c_7315147,  NULL);; 
 }
 
 static void __lambda_2015(void *data, int argc, object self_734155, object r_731609) {
@@ -15067,7 +15067,7 @@ c_7315149.elts[11] = r_731609;
 c_7315149.elts[12] = ((closureN)self_734155)->elts[11];
 
 
-make_cons(c_7315920,quote__93_93_93,nil);
+make_cons(c_7315920,quote__93_93_93,NULL);
 
 make_cons(c_7315919,quote_e2,&c_7315920);
 
@@ -15075,7 +15075,7 @@ make_cons(c_7315918,quote_e1,&c_7315919);
 
 make_cons(c_7315917,quote_begin,&c_7315918);
 
-make_cons(c_7315916,&c_7315917,nil);
+make_cons(c_7315916,&c_7315917,NULL);
 return_closcall1(data,(closure)&c_7315149,  &c_7315916);; 
 }
 
@@ -15128,7 +15128,7 @@ c_7315153.elts[10] = r_731606;
 c_7315153.elts[11] = ((closureN)self_734157)->elts[10];
 
 
-make_cons(c_7315913,quote__93_93_93,nil);
+make_cons(c_7315913,quote__93_93_93,NULL);
 
 make_cons(c_7315912,quote_e2,&c_7315913);
 
@@ -15136,7 +15136,7 @@ make_cons(c_7315911,quote_e1,&c_7315912);
 
 make_cons(c_7315910,quote_begin,&c_7315911);
 
-make_cons(c_7315909,&c_7315910,nil);
+make_cons(c_7315909,&c_7315910,NULL);
 
 make_cons(c_7315908,quote_res,&c_7315909);
 return_closcall1(data,(closure)&c_7315153,  &c_7315908);; 
@@ -15188,7 +15188,7 @@ c_7315157.elts[8] = ((closureN)self_734159)->elts[8];
 c_7315157.elts[9] = r_731602;
 c_7315157.elts[10] = ((closureN)self_734159)->elts[9];
 
-return_closcall1(data,(closure)&c_7315157,  nil);; 
+return_closcall1(data,(closure)&c_7315157,  NULL);; 
 }
 
 static void __lambda_2010(void *data, int argc, object self_734160, object r_731603) {
@@ -15215,7 +15215,7 @@ c_7315159.elts[10] = r_731603;
 c_7315159.elts[11] = ((closureN)self_734160)->elts[10];
 
 
-make_cons(c_7315905,quote__93_93_93,nil);
+make_cons(c_7315905,quote__93_93_93,NULL);
 
 make_cons(c_7315904,quote_e2,&c_7315905);
 
@@ -15223,11 +15223,11 @@ make_cons(c_7315903,quote_e1,&c_7315904);
 
 make_cons(c_7315902,quote_begin,&c_7315903);
 
-make_cons(c_7315901,&c_7315902,nil);
+make_cons(c_7315901,&c_7315902,NULL);
 
 make_cons(c_7315900,quote_res,&c_7315901);
 
-make_cons(c_7315899,&c_7315900,nil);
+make_cons(c_7315899,&c_7315900,NULL);
 return_closcall1(data,(closure)&c_7315159,  &c_7315899);; 
 }
 
@@ -15381,7 +15381,7 @@ c_7315173.elts[10] = ((closureN)self_734166)->elts[10];
 c_7315173.elts[11] = r_731590;
 c_7315173.elts[12] = ((closureN)self_734166)->elts[11];
 
-return_closcall1(data,(closure)&c_7315173,  nil);; 
+return_closcall1(data,(closure)&c_7315173,  NULL);; 
 }
 
 static void __lambda_2003(void *data, int argc, object self_734167, object r_731593) {
@@ -15464,7 +15464,7 @@ c_7315180.elts[11] = ((closureN)self_734169)->elts[11];
 c_7315180.elts[12] = ((closureN)self_734169)->elts[12];
 c_7315180.elts[13] = r_731596;
 
-return_closcall1(data,(closure)&c_7315180,  nil);; 
+return_closcall1(data,(closure)&c_7315180,  NULL);; 
 }
 
 static void __lambda_2000(void *data, int argc, object self_734170, object r_731597) {
@@ -15494,7 +15494,7 @@ c_7315182.elts[13] = ((closureN)self_734170)->elts[13];
 c_7315182.elts[14] = r_731597;
 
 
-make_cons(c_7315896,quote_res,nil);
+make_cons(c_7315896,quote_res,NULL);
 return_closcall1(data,(closure)&c_7315182,  &c_7315896);; 
 }
 
@@ -15551,9 +15551,9 @@ c_7315186.elts[12] = ((closureN)self_734172)->elts[12];
 c_7315186.elts[13] = r_731594;
 
 
-make_cons(c_7315893,quote_res,nil);
+make_cons(c_7315893,quote_res,NULL);
 
-make_cons(c_7315892,nil,&c_7315893);
+make_cons(c_7315892,NULL,&c_7315893);
 return_closcall1(data,(closure)&c_7315186,  &c_7315892);; 
 }
 
@@ -15608,9 +15608,9 @@ c_7315190.elts[11] = ((closureN)self_734174)->elts[11];
 c_7315190.elts[12] = r_731591;
 
 
-make_cons(c_7315889,quote_res,nil);
+make_cons(c_7315889,quote_res,NULL);
 
-make_cons(c_7315888,nil,&c_7315889);
+make_cons(c_7315888,NULL,&c_7315889);
 
 make_cons(c_7315887,quote_lambda,&c_7315888);
 return_closcall1(data,(closure)&c_7315190,  &c_7315887);; 
@@ -15664,7 +15664,7 @@ c_7315194.elts[9] = ((closureN)self_734176)->elts[9];
 c_7315194.elts[10] = ((closureN)self_734176)->elts[10];
 c_7315194.elts[11] = r_731587;
 
-return_closcall1(data,(closure)&c_7315194,  nil);; 
+return_closcall1(data,(closure)&c_7315194,  NULL);; 
 }
 
 static void __lambda_1993(void *data, int argc, object self_734177, object r_731588) {
@@ -15692,13 +15692,13 @@ c_7315196.elts[11] = ((closureN)self_734177)->elts[11];
 c_7315196.elts[12] = r_731588;
 
 
-make_cons(c_7315884,quote_res,nil);
+make_cons(c_7315884,quote_res,NULL);
 
-make_cons(c_7315883,nil,&c_7315884);
+make_cons(c_7315883,NULL,&c_7315884);
 
 make_cons(c_7315882,quote_lambda,&c_7315883);
 
-make_cons(c_7315881,&c_7315882,nil);
+make_cons(c_7315881,&c_7315882,NULL);
 return_closcall1(data,(closure)&c_7315196,  &c_7315881);; 
 }
 
@@ -15751,13 +15751,13 @@ c_7315200.elts[10] = ((closureN)self_734179)->elts[10];
 c_7315200.elts[11] = r_731585;
 
 
-make_cons(c_7315878,quote_res,nil);
+make_cons(c_7315878,quote_res,NULL);
 
-make_cons(c_7315877,nil,&c_7315878);
+make_cons(c_7315877,NULL,&c_7315878);
 
 make_cons(c_7315876,quote_lambda,&c_7315877);
 
-make_cons(c_7315875,&c_7315876,nil);
+make_cons(c_7315875,&c_7315876,NULL);
 
 make_cons(c_7315874,quote_guard_91k,&c_7315875);
 return_closcall1(data,(closure)&c_7315200,  &c_7315874);; 
@@ -15809,7 +15809,7 @@ c_7315204.elts[8] = ((closureN)self_734181)->elts[8];
 c_7315204.elts[9] = ((closureN)self_734181)->elts[9];
 c_7315204.elts[10] = r_731581;
 
-return_closcall1(data,(closure)&c_7315204,  nil);; 
+return_closcall1(data,(closure)&c_7315204,  NULL);; 
 }
 
 static void __lambda_1988(void *data, int argc, object self_734182, object r_731582) {
@@ -15836,17 +15836,17 @@ c_7315206.elts[10] = ((closureN)self_734182)->elts[10];
 c_7315206.elts[11] = r_731582;
 
 
-make_cons(c_7315871,quote_res,nil);
+make_cons(c_7315871,quote_res,NULL);
 
-make_cons(c_7315870,nil,&c_7315871);
+make_cons(c_7315870,NULL,&c_7315871);
 
 make_cons(c_7315869,quote_lambda,&c_7315870);
 
-make_cons(c_7315868,&c_7315869,nil);
+make_cons(c_7315868,&c_7315869,NULL);
 
 make_cons(c_7315867,quote_guard_91k,&c_7315868);
 
-make_cons(c_7315866,&c_7315867,nil);
+make_cons(c_7315866,&c_7315867,NULL);
 return_closcall1(data,(closure)&c_7315206,  &c_7315866);; 
 }
 
@@ -15897,7 +15897,7 @@ c_7315210.elts[9] = ((closureN)self_734184)->elts[9];
 c_7315210.elts[10] = r_731579;
 
 
-make_cons(c_7315857,quote__93_93_93,nil);
+make_cons(c_7315857,quote__93_93_93,NULL);
 
 make_cons(c_7315856,quote_e2,&c_7315857);
 
@@ -15905,23 +15905,23 @@ make_cons(c_7315855,quote_e1,&c_7315856);
 
 make_cons(c_7315854,quote_begin,&c_7315855);
 
-make_cons(c_7315853,&c_7315854,nil);
+make_cons(c_7315853,&c_7315854,NULL);
 
 make_cons(c_7315852,quote_res,&c_7315853);
 
-make_cons(c_7315851,&c_7315852,nil);
+make_cons(c_7315851,&c_7315852,NULL);
 
-make_cons(c_7315863,quote_res,nil);
+make_cons(c_7315863,quote_res,NULL);
 
-make_cons(c_7315862,nil,&c_7315863);
+make_cons(c_7315862,NULL,&c_7315863);
 
 make_cons(c_7315861,quote_lambda,&c_7315862);
 
-make_cons(c_7315860,&c_7315861,nil);
+make_cons(c_7315860,&c_7315861,NULL);
 
 make_cons(c_7315859,quote_guard_91k,&c_7315860);
 
-make_cons(c_7315858,&c_7315859,nil);
+make_cons(c_7315858,&c_7315859,NULL);
 
 make_cons(c_7315850,&c_7315851,&c_7315858);
 return_closcall1(data,(closure)&c_7315210,  &c_7315850);; 
@@ -15972,7 +15972,7 @@ c_7315214.elts[8] = ((closureN)self_734186)->elts[8];
 c_7315214.elts[9] = r_731576;
 
 
-make_cons(c_7315841,quote__93_93_93,nil);
+make_cons(c_7315841,quote__93_93_93,NULL);
 
 make_cons(c_7315840,quote_e2,&c_7315841);
 
@@ -15980,23 +15980,23 @@ make_cons(c_7315839,quote_e1,&c_7315840);
 
 make_cons(c_7315838,quote_begin,&c_7315839);
 
-make_cons(c_7315837,&c_7315838,nil);
+make_cons(c_7315837,&c_7315838,NULL);
 
 make_cons(c_7315836,quote_res,&c_7315837);
 
-make_cons(c_7315835,&c_7315836,nil);
+make_cons(c_7315835,&c_7315836,NULL);
 
-make_cons(c_7315847,quote_res,nil);
+make_cons(c_7315847,quote_res,NULL);
 
-make_cons(c_7315846,nil,&c_7315847);
+make_cons(c_7315846,NULL,&c_7315847);
 
 make_cons(c_7315845,quote_lambda,&c_7315846);
 
-make_cons(c_7315844,&c_7315845,nil);
+make_cons(c_7315844,&c_7315845,NULL);
 
 make_cons(c_7315843,quote_guard_91k,&c_7315844);
 
-make_cons(c_7315842,&c_7315843,nil);
+make_cons(c_7315842,&c_7315843,NULL);
 
 make_cons(c_7315834,&c_7315835,&c_7315842);
 
@@ -16046,7 +16046,7 @@ c_7315218.elts[6] = ((closureN)self_734188)->elts[6];
 c_7315218.elts[7] = ((closureN)self_734188)->elts[7];
 c_7315218.elts[8] = r_731572;
 
-return_closcall1(data,(closure)&c_7315218,  nil);; 
+return_closcall1(data,(closure)&c_7315218,  NULL);; 
 }
 
 static void __lambda_1981(void *data, int argc, object self_734189, object r_731573) {
@@ -16071,7 +16071,7 @@ c_7315220.elts[8] = ((closureN)self_734189)->elts[8];
 c_7315220.elts[9] = r_731573;
 
 
-make_cons(c_7315824,quote__93_93_93,nil);
+make_cons(c_7315824,quote__93_93_93,NULL);
 
 make_cons(c_7315823,quote_e2,&c_7315824);
 
@@ -16079,29 +16079,29 @@ make_cons(c_7315822,quote_e1,&c_7315823);
 
 make_cons(c_7315821,quote_begin,&c_7315822);
 
-make_cons(c_7315820,&c_7315821,nil);
+make_cons(c_7315820,&c_7315821,NULL);
 
 make_cons(c_7315819,quote_res,&c_7315820);
 
-make_cons(c_7315818,&c_7315819,nil);
+make_cons(c_7315818,&c_7315819,NULL);
 
-make_cons(c_7315830,quote_res,nil);
+make_cons(c_7315830,quote_res,NULL);
 
-make_cons(c_7315829,nil,&c_7315830);
+make_cons(c_7315829,NULL,&c_7315830);
 
 make_cons(c_7315828,quote_lambda,&c_7315829);
 
-make_cons(c_7315827,&c_7315828,nil);
+make_cons(c_7315827,&c_7315828,NULL);
 
 make_cons(c_7315826,quote_guard_91k,&c_7315827);
 
-make_cons(c_7315825,&c_7315826,nil);
+make_cons(c_7315825,&c_7315826,NULL);
 
 make_cons(c_7315817,&c_7315818,&c_7315825);
 
 make_cons(c_7315816,quote_let,&c_7315817);
 
-make_cons(c_7315815,&c_7315816,nil);
+make_cons(c_7315815,&c_7315816,NULL);
 return_closcall1(data,(closure)&c_7315220,  &c_7315815);; 
 }
 
@@ -16148,7 +16148,7 @@ c_7315224.elts[7] = ((closureN)self_734191)->elts[7];
 c_7315224.elts[8] = r_731570;
 
 
-make_cons(c_7315806,quote__93_93_93,nil);
+make_cons(c_7315806,quote__93_93_93,NULL);
 
 make_cons(c_7315805,quote_e2,&c_7315806);
 
@@ -16156,31 +16156,31 @@ make_cons(c_7315804,quote_e1,&c_7315805);
 
 make_cons(c_7315803,quote_begin,&c_7315804);
 
-make_cons(c_7315802,&c_7315803,nil);
+make_cons(c_7315802,&c_7315803,NULL);
 
 make_cons(c_7315801,quote_res,&c_7315802);
 
-make_cons(c_7315800,&c_7315801,nil);
+make_cons(c_7315800,&c_7315801,NULL);
 
-make_cons(c_7315812,quote_res,nil);
+make_cons(c_7315812,quote_res,NULL);
 
-make_cons(c_7315811,nil,&c_7315812);
+make_cons(c_7315811,NULL,&c_7315812);
 
 make_cons(c_7315810,quote_lambda,&c_7315811);
 
-make_cons(c_7315809,&c_7315810,nil);
+make_cons(c_7315809,&c_7315810,NULL);
 
 make_cons(c_7315808,quote_guard_91k,&c_7315809);
 
-make_cons(c_7315807,&c_7315808,nil);
+make_cons(c_7315807,&c_7315808,NULL);
 
 make_cons(c_7315799,&c_7315800,&c_7315807);
 
 make_cons(c_7315798,quote_let,&c_7315799);
 
-make_cons(c_7315797,&c_7315798,nil);
+make_cons(c_7315797,&c_7315798,NULL);
 
-make_cons(c_7315796,nil,&c_7315797);
+make_cons(c_7315796,NULL,&c_7315797);
 return_closcall1(data,(closure)&c_7315224,  &c_7315796);; 
 }
 
@@ -16225,7 +16225,7 @@ c_7315228.elts[6] = ((closureN)self_734193)->elts[6];
 c_7315228.elts[7] = r_731567;
 
 
-make_cons(c_7315787,quote__93_93_93,nil);
+make_cons(c_7315787,quote__93_93_93,NULL);
 
 make_cons(c_7315786,quote_e2,&c_7315787);
 
@@ -16233,31 +16233,31 @@ make_cons(c_7315785,quote_e1,&c_7315786);
 
 make_cons(c_7315784,quote_begin,&c_7315785);
 
-make_cons(c_7315783,&c_7315784,nil);
+make_cons(c_7315783,&c_7315784,NULL);
 
 make_cons(c_7315782,quote_res,&c_7315783);
 
-make_cons(c_7315781,&c_7315782,nil);
+make_cons(c_7315781,&c_7315782,NULL);
 
-make_cons(c_7315793,quote_res,nil);
+make_cons(c_7315793,quote_res,NULL);
 
-make_cons(c_7315792,nil,&c_7315793);
+make_cons(c_7315792,NULL,&c_7315793);
 
 make_cons(c_7315791,quote_lambda,&c_7315792);
 
-make_cons(c_7315790,&c_7315791,nil);
+make_cons(c_7315790,&c_7315791,NULL);
 
 make_cons(c_7315789,quote_guard_91k,&c_7315790);
 
-make_cons(c_7315788,&c_7315789,nil);
+make_cons(c_7315788,&c_7315789,NULL);
 
 make_cons(c_7315780,&c_7315781,&c_7315788);
 
 make_cons(c_7315779,quote_let,&c_7315780);
 
-make_cons(c_7315778,&c_7315779,nil);
+make_cons(c_7315778,&c_7315779,NULL);
 
-make_cons(c_7315777,nil,&c_7315778);
+make_cons(c_7315777,NULL,&c_7315778);
 
 make_cons(c_7315776,quote_lambda,&c_7315777);
 return_closcall1(data,(closure)&c_7315228,  &c_7315776);; 
@@ -16301,7 +16301,7 @@ c_7315232.elts[4] = ((closureN)self_734195)->elts[4];
 c_7315232.elts[5] = ((closureN)self_734195)->elts[5];
 c_7315232.elts[6] = r_731563;
 
-return_closcall1(data,(closure)&c_7315232,  nil);; 
+return_closcall1(data,(closure)&c_7315232,  NULL);; 
 }
 
 static void __lambda_1974(void *data, int argc, object self_734196, object r_731564) {
@@ -16324,7 +16324,7 @@ c_7315234.elts[6] = ((closureN)self_734196)->elts[6];
 c_7315234.elts[7] = r_731564;
 
 
-make_cons(c_7315767,quote__93_93_93,nil);
+make_cons(c_7315767,quote__93_93_93,NULL);
 
 make_cons(c_7315766,quote_e2,&c_7315767);
 
@@ -16332,35 +16332,35 @@ make_cons(c_7315765,quote_e1,&c_7315766);
 
 make_cons(c_7315764,quote_begin,&c_7315765);
 
-make_cons(c_7315763,&c_7315764,nil);
+make_cons(c_7315763,&c_7315764,NULL);
 
 make_cons(c_7315762,quote_res,&c_7315763);
 
-make_cons(c_7315761,&c_7315762,nil);
+make_cons(c_7315761,&c_7315762,NULL);
 
-make_cons(c_7315773,quote_res,nil);
+make_cons(c_7315773,quote_res,NULL);
 
-make_cons(c_7315772,nil,&c_7315773);
+make_cons(c_7315772,NULL,&c_7315773);
 
 make_cons(c_7315771,quote_lambda,&c_7315772);
 
-make_cons(c_7315770,&c_7315771,nil);
+make_cons(c_7315770,&c_7315771,NULL);
 
 make_cons(c_7315769,quote_guard_91k,&c_7315770);
 
-make_cons(c_7315768,&c_7315769,nil);
+make_cons(c_7315768,&c_7315769,NULL);
 
 make_cons(c_7315760,&c_7315761,&c_7315768);
 
 make_cons(c_7315759,quote_let,&c_7315760);
 
-make_cons(c_7315758,&c_7315759,nil);
+make_cons(c_7315758,&c_7315759,NULL);
 
-make_cons(c_7315757,nil,&c_7315758);
+make_cons(c_7315757,NULL,&c_7315758);
 
 make_cons(c_7315756,quote_lambda,&c_7315757);
 
-make_cons(c_7315755,&c_7315756,nil);
+make_cons(c_7315755,&c_7315756,NULL);
 return_closcall1(data,(closure)&c_7315234,  &c_7315755);; 
 }
 
@@ -16403,31 +16403,31 @@ c_7315238.elts[5] = ((closureN)self_734198)->elts[5];
 c_7315238.elts[6] = r_731561;
 
 
-make_cons(c_7315703,quote_condition,nil);
+make_cons(c_7315703,quote_condition,NULL);
 
-make_cons(c_7315710,quote_handler_91k,nil);
+make_cons(c_7315710,quote_handler_91k,NULL);
 
-make_cons(c_7315721,quote_condition,nil);
+make_cons(c_7315721,quote_condition,NULL);
 
 make_cons(c_7315720,quote_var,&c_7315721);
 
-make_cons(c_7315719,&c_7315720,nil);
+make_cons(c_7315719,&c_7315720,NULL);
 
-make_cons(c_7315731,quote_condition,nil);
+make_cons(c_7315731,quote_condition,NULL);
 
 make_cons(c_7315730,quote_raise_91continuable,&c_7315731);
 
-make_cons(c_7315729,&c_7315730,nil);
+make_cons(c_7315729,&c_7315730,NULL);
 
-make_cons(c_7315728,nil,&c_7315729);
+make_cons(c_7315728,NULL,&c_7315729);
 
 make_cons(c_7315727,quote_lambda,&c_7315728);
 
-make_cons(c_7315726,&c_7315727,nil);
+make_cons(c_7315726,&c_7315727,NULL);
 
 make_cons(c_7315725,quote_handler_91k,&c_7315726);
 
-make_cons(c_7315733,quote__93_93_93,nil);
+make_cons(c_7315733,quote__93_93_93,NULL);
 
 make_cons(c_7315732,quote_clause,&c_7315733);
 
@@ -16435,41 +16435,41 @@ make_cons(c_7315724,&c_7315725,&c_7315732);
 
 make_cons(c_7315723,quote_guard_91aux,&c_7315724);
 
-make_cons(c_7315722,&c_7315723,nil);
+make_cons(c_7315722,&c_7315723,NULL);
 
 make_cons(c_7315718,&c_7315719,&c_7315722);
 
 make_cons(c_7315717,quote_let,&c_7315718);
 
-make_cons(c_7315716,&c_7315717,nil);
+make_cons(c_7315716,&c_7315717,NULL);
 
-make_cons(c_7315715,nil,&c_7315716);
+make_cons(c_7315715,NULL,&c_7315716);
 
 make_cons(c_7315714,quote_lambda,&c_7315715);
 
-make_cons(c_7315713,&c_7315714,nil);
+make_cons(c_7315713,&c_7315714,NULL);
 
 make_cons(c_7315712,quote_guard_91k,&c_7315713);
 
-make_cons(c_7315711,&c_7315712,nil);
+make_cons(c_7315711,&c_7315712,NULL);
 
 make_cons(c_7315709,&c_7315710,&c_7315711);
 
 make_cons(c_7315708,quote_lambda,&c_7315709);
 
-make_cons(c_7315707,&c_7315708,nil);
+make_cons(c_7315707,&c_7315708,NULL);
 
 make_cons(c_7315706,quote_call_91with_91current_91continuation,&c_7315707);
 
-make_cons(c_7315705,&c_7315706,nil);
+make_cons(c_7315705,&c_7315706,NULL);
 
-make_cons(c_7315704,&c_7315705,nil);
+make_cons(c_7315704,&c_7315705,NULL);
 
 make_cons(c_7315702,&c_7315703,&c_7315704);
 
 make_cons(c_7315701,quote_lambda,&c_7315702);
 
-make_cons(c_7315746,quote__93_93_93,nil);
+make_cons(c_7315746,quote__93_93_93,NULL);
 
 make_cons(c_7315745,quote_e2,&c_7315746);
 
@@ -16477,35 +16477,35 @@ make_cons(c_7315744,quote_e1,&c_7315745);
 
 make_cons(c_7315743,quote_begin,&c_7315744);
 
-make_cons(c_7315742,&c_7315743,nil);
+make_cons(c_7315742,&c_7315743,NULL);
 
 make_cons(c_7315741,quote_res,&c_7315742);
 
-make_cons(c_7315740,&c_7315741,nil);
+make_cons(c_7315740,&c_7315741,NULL);
 
-make_cons(c_7315752,quote_res,nil);
+make_cons(c_7315752,quote_res,NULL);
 
-make_cons(c_7315751,nil,&c_7315752);
+make_cons(c_7315751,NULL,&c_7315752);
 
 make_cons(c_7315750,quote_lambda,&c_7315751);
 
-make_cons(c_7315749,&c_7315750,nil);
+make_cons(c_7315749,&c_7315750,NULL);
 
 make_cons(c_7315748,quote_guard_91k,&c_7315749);
 
-make_cons(c_7315747,&c_7315748,nil);
+make_cons(c_7315747,&c_7315748,NULL);
 
 make_cons(c_7315739,&c_7315740,&c_7315747);
 
 make_cons(c_7315738,quote_let,&c_7315739);
 
-make_cons(c_7315737,&c_7315738,nil);
+make_cons(c_7315737,&c_7315738,NULL);
 
-make_cons(c_7315736,nil,&c_7315737);
+make_cons(c_7315736,NULL,&c_7315737);
 
 make_cons(c_7315735,quote_lambda,&c_7315736);
 
-make_cons(c_7315734,&c_7315735,nil);
+make_cons(c_7315734,&c_7315735,NULL);
 
 make_cons(c_7315700,&c_7315701,&c_7315734);
 return_closcall1(data,(closure)&c_7315238,  &c_7315700);; 
@@ -16548,31 +16548,31 @@ c_7315242.elts[4] = ((closureN)self_734200)->elts[4];
 c_7315242.elts[5] = r_731558;
 
 
-make_cons(c_7315648,quote_condition,nil);
+make_cons(c_7315648,quote_condition,NULL);
 
-make_cons(c_7315655,quote_handler_91k,nil);
+make_cons(c_7315655,quote_handler_91k,NULL);
 
-make_cons(c_7315666,quote_condition,nil);
+make_cons(c_7315666,quote_condition,NULL);
 
 make_cons(c_7315665,quote_var,&c_7315666);
 
-make_cons(c_7315664,&c_7315665,nil);
+make_cons(c_7315664,&c_7315665,NULL);
 
-make_cons(c_7315676,quote_condition,nil);
+make_cons(c_7315676,quote_condition,NULL);
 
 make_cons(c_7315675,quote_raise_91continuable,&c_7315676);
 
-make_cons(c_7315674,&c_7315675,nil);
+make_cons(c_7315674,&c_7315675,NULL);
 
-make_cons(c_7315673,nil,&c_7315674);
+make_cons(c_7315673,NULL,&c_7315674);
 
 make_cons(c_7315672,quote_lambda,&c_7315673);
 
-make_cons(c_7315671,&c_7315672,nil);
+make_cons(c_7315671,&c_7315672,NULL);
 
 make_cons(c_7315670,quote_handler_91k,&c_7315671);
 
-make_cons(c_7315678,quote__93_93_93,nil);
+make_cons(c_7315678,quote__93_93_93,NULL);
 
 make_cons(c_7315677,quote_clause,&c_7315678);
 
@@ -16580,41 +16580,41 @@ make_cons(c_7315669,&c_7315670,&c_7315677);
 
 make_cons(c_7315668,quote_guard_91aux,&c_7315669);
 
-make_cons(c_7315667,&c_7315668,nil);
+make_cons(c_7315667,&c_7315668,NULL);
 
 make_cons(c_7315663,&c_7315664,&c_7315667);
 
 make_cons(c_7315662,quote_let,&c_7315663);
 
-make_cons(c_7315661,&c_7315662,nil);
+make_cons(c_7315661,&c_7315662,NULL);
 
-make_cons(c_7315660,nil,&c_7315661);
+make_cons(c_7315660,NULL,&c_7315661);
 
 make_cons(c_7315659,quote_lambda,&c_7315660);
 
-make_cons(c_7315658,&c_7315659,nil);
+make_cons(c_7315658,&c_7315659,NULL);
 
 make_cons(c_7315657,quote_guard_91k,&c_7315658);
 
-make_cons(c_7315656,&c_7315657,nil);
+make_cons(c_7315656,&c_7315657,NULL);
 
 make_cons(c_7315654,&c_7315655,&c_7315656);
 
 make_cons(c_7315653,quote_lambda,&c_7315654);
 
-make_cons(c_7315652,&c_7315653,nil);
+make_cons(c_7315652,&c_7315653,NULL);
 
 make_cons(c_7315651,quote_call_91with_91current_91continuation,&c_7315652);
 
-make_cons(c_7315650,&c_7315651,nil);
+make_cons(c_7315650,&c_7315651,NULL);
 
-make_cons(c_7315649,&c_7315650,nil);
+make_cons(c_7315649,&c_7315650,NULL);
 
 make_cons(c_7315647,&c_7315648,&c_7315649);
 
 make_cons(c_7315646,quote_lambda,&c_7315647);
 
-make_cons(c_7315691,quote__93_93_93,nil);
+make_cons(c_7315691,quote__93_93_93,NULL);
 
 make_cons(c_7315690,quote_e2,&c_7315691);
 
@@ -16622,35 +16622,35 @@ make_cons(c_7315689,quote_e1,&c_7315690);
 
 make_cons(c_7315688,quote_begin,&c_7315689);
 
-make_cons(c_7315687,&c_7315688,nil);
+make_cons(c_7315687,&c_7315688,NULL);
 
 make_cons(c_7315686,quote_res,&c_7315687);
 
-make_cons(c_7315685,&c_7315686,nil);
+make_cons(c_7315685,&c_7315686,NULL);
 
-make_cons(c_7315697,quote_res,nil);
+make_cons(c_7315697,quote_res,NULL);
 
-make_cons(c_7315696,nil,&c_7315697);
+make_cons(c_7315696,NULL,&c_7315697);
 
 make_cons(c_7315695,quote_lambda,&c_7315696);
 
-make_cons(c_7315694,&c_7315695,nil);
+make_cons(c_7315694,&c_7315695,NULL);
 
 make_cons(c_7315693,quote_guard_91k,&c_7315694);
 
-make_cons(c_7315692,&c_7315693,nil);
+make_cons(c_7315692,&c_7315693,NULL);
 
 make_cons(c_7315684,&c_7315685,&c_7315692);
 
 make_cons(c_7315683,quote_let,&c_7315684);
 
-make_cons(c_7315682,&c_7315683,nil);
+make_cons(c_7315682,&c_7315683,NULL);
 
-make_cons(c_7315681,nil,&c_7315682);
+make_cons(c_7315681,NULL,&c_7315682);
 
 make_cons(c_7315680,quote_lambda,&c_7315681);
 
-make_cons(c_7315679,&c_7315680,nil);
+make_cons(c_7315679,&c_7315680,NULL);
 
 make_cons(c_7315645,&c_7315646,&c_7315679);
 
@@ -16692,7 +16692,7 @@ c_7315246.elts[2] = ((closureN)self_734202)->elts[2];
 c_7315246.elts[3] = ((closureN)self_734202)->elts[3];
 c_7315246.elts[4] = r_731554;
 
-return_closcall1(data,(closure)&c_7315246,  nil);; 
+return_closcall1(data,(closure)&c_7315246,  NULL);; 
 }
 
 static void __lambda_1967(void *data, int argc, object self_734203, object r_731555) {
@@ -16713,31 +16713,31 @@ c_7315248.elts[4] = ((closureN)self_734203)->elts[4];
 c_7315248.elts[5] = r_731555;
 
 
-make_cons(c_7315592,quote_condition,nil);
+make_cons(c_7315592,quote_condition,NULL);
 
-make_cons(c_7315599,quote_handler_91k,nil);
+make_cons(c_7315599,quote_handler_91k,NULL);
 
-make_cons(c_7315610,quote_condition,nil);
+make_cons(c_7315610,quote_condition,NULL);
 
 make_cons(c_7315609,quote_var,&c_7315610);
 
-make_cons(c_7315608,&c_7315609,nil);
+make_cons(c_7315608,&c_7315609,NULL);
 
-make_cons(c_7315620,quote_condition,nil);
+make_cons(c_7315620,quote_condition,NULL);
 
 make_cons(c_7315619,quote_raise_91continuable,&c_7315620);
 
-make_cons(c_7315618,&c_7315619,nil);
+make_cons(c_7315618,&c_7315619,NULL);
 
-make_cons(c_7315617,nil,&c_7315618);
+make_cons(c_7315617,NULL,&c_7315618);
 
 make_cons(c_7315616,quote_lambda,&c_7315617);
 
-make_cons(c_7315615,&c_7315616,nil);
+make_cons(c_7315615,&c_7315616,NULL);
 
 make_cons(c_7315614,quote_handler_91k,&c_7315615);
 
-make_cons(c_7315622,quote__93_93_93,nil);
+make_cons(c_7315622,quote__93_93_93,NULL);
 
 make_cons(c_7315621,quote_clause,&c_7315622);
 
@@ -16745,41 +16745,41 @@ make_cons(c_7315613,&c_7315614,&c_7315621);
 
 make_cons(c_7315612,quote_guard_91aux,&c_7315613);
 
-make_cons(c_7315611,&c_7315612,nil);
+make_cons(c_7315611,&c_7315612,NULL);
 
 make_cons(c_7315607,&c_7315608,&c_7315611);
 
 make_cons(c_7315606,quote_let,&c_7315607);
 
-make_cons(c_7315605,&c_7315606,nil);
+make_cons(c_7315605,&c_7315606,NULL);
 
-make_cons(c_7315604,nil,&c_7315605);
+make_cons(c_7315604,NULL,&c_7315605);
 
 make_cons(c_7315603,quote_lambda,&c_7315604);
 
-make_cons(c_7315602,&c_7315603,nil);
+make_cons(c_7315602,&c_7315603,NULL);
 
 make_cons(c_7315601,quote_guard_91k,&c_7315602);
 
-make_cons(c_7315600,&c_7315601,nil);
+make_cons(c_7315600,&c_7315601,NULL);
 
 make_cons(c_7315598,&c_7315599,&c_7315600);
 
 make_cons(c_7315597,quote_lambda,&c_7315598);
 
-make_cons(c_7315596,&c_7315597,nil);
+make_cons(c_7315596,&c_7315597,NULL);
 
 make_cons(c_7315595,quote_call_91with_91current_91continuation,&c_7315596);
 
-make_cons(c_7315594,&c_7315595,nil);
+make_cons(c_7315594,&c_7315595,NULL);
 
-make_cons(c_7315593,&c_7315594,nil);
+make_cons(c_7315593,&c_7315594,NULL);
 
 make_cons(c_7315591,&c_7315592,&c_7315593);
 
 make_cons(c_7315590,quote_lambda,&c_7315591);
 
-make_cons(c_7315635,quote__93_93_93,nil);
+make_cons(c_7315635,quote__93_93_93,NULL);
 
 make_cons(c_7315634,quote_e2,&c_7315635);
 
@@ -16787,41 +16787,41 @@ make_cons(c_7315633,quote_e1,&c_7315634);
 
 make_cons(c_7315632,quote_begin,&c_7315633);
 
-make_cons(c_7315631,&c_7315632,nil);
+make_cons(c_7315631,&c_7315632,NULL);
 
 make_cons(c_7315630,quote_res,&c_7315631);
 
-make_cons(c_7315629,&c_7315630,nil);
+make_cons(c_7315629,&c_7315630,NULL);
 
-make_cons(c_7315641,quote_res,nil);
+make_cons(c_7315641,quote_res,NULL);
 
-make_cons(c_7315640,nil,&c_7315641);
+make_cons(c_7315640,NULL,&c_7315641);
 
 make_cons(c_7315639,quote_lambda,&c_7315640);
 
-make_cons(c_7315638,&c_7315639,nil);
+make_cons(c_7315638,&c_7315639,NULL);
 
 make_cons(c_7315637,quote_guard_91k,&c_7315638);
 
-make_cons(c_7315636,&c_7315637,nil);
+make_cons(c_7315636,&c_7315637,NULL);
 
 make_cons(c_7315628,&c_7315629,&c_7315636);
 
 make_cons(c_7315627,quote_let,&c_7315628);
 
-make_cons(c_7315626,&c_7315627,nil);
+make_cons(c_7315626,&c_7315627,NULL);
 
-make_cons(c_7315625,nil,&c_7315626);
+make_cons(c_7315625,NULL,&c_7315626);
 
 make_cons(c_7315624,quote_lambda,&c_7315625);
 
-make_cons(c_7315623,&c_7315624,nil);
+make_cons(c_7315623,&c_7315624,NULL);
 
 make_cons(c_7315589,&c_7315590,&c_7315623);
 
 make_cons(c_7315588,quote_with_91exception_91handler,&c_7315589);
 
-make_cons(c_7315587,&c_7315588,nil);
+make_cons(c_7315587,&c_7315588,NULL);
 return_closcall1(data,(closure)&c_7315248,  &c_7315587);; 
 }
 
@@ -16860,33 +16860,33 @@ c_7315252.elts[3] = ((closureN)self_734205)->elts[3];
 c_7315252.elts[4] = r_731552;
 
 
-make_cons(c_7315529,quote_guard_91k,nil);
+make_cons(c_7315529,quote_guard_91k,NULL);
 
-make_cons(c_7315535,quote_condition,nil);
+make_cons(c_7315535,quote_condition,NULL);
 
-make_cons(c_7315542,quote_handler_91k,nil);
+make_cons(c_7315542,quote_handler_91k,NULL);
 
-make_cons(c_7315553,quote_condition,nil);
+make_cons(c_7315553,quote_condition,NULL);
 
 make_cons(c_7315552,quote_var,&c_7315553);
 
-make_cons(c_7315551,&c_7315552,nil);
+make_cons(c_7315551,&c_7315552,NULL);
 
-make_cons(c_7315563,quote_condition,nil);
+make_cons(c_7315563,quote_condition,NULL);
 
 make_cons(c_7315562,quote_raise_91continuable,&c_7315563);
 
-make_cons(c_7315561,&c_7315562,nil);
+make_cons(c_7315561,&c_7315562,NULL);
 
-make_cons(c_7315560,nil,&c_7315561);
+make_cons(c_7315560,NULL,&c_7315561);
 
 make_cons(c_7315559,quote_lambda,&c_7315560);
 
-make_cons(c_7315558,&c_7315559,nil);
+make_cons(c_7315558,&c_7315559,NULL);
 
 make_cons(c_7315557,quote_handler_91k,&c_7315558);
 
-make_cons(c_7315565,quote__93_93_93,nil);
+make_cons(c_7315565,quote__93_93_93,NULL);
 
 make_cons(c_7315564,quote_clause,&c_7315565);
 
@@ -16894,41 +16894,41 @@ make_cons(c_7315556,&c_7315557,&c_7315564);
 
 make_cons(c_7315555,quote_guard_91aux,&c_7315556);
 
-make_cons(c_7315554,&c_7315555,nil);
+make_cons(c_7315554,&c_7315555,NULL);
 
 make_cons(c_7315550,&c_7315551,&c_7315554);
 
 make_cons(c_7315549,quote_let,&c_7315550);
 
-make_cons(c_7315548,&c_7315549,nil);
+make_cons(c_7315548,&c_7315549,NULL);
 
-make_cons(c_7315547,nil,&c_7315548);
+make_cons(c_7315547,NULL,&c_7315548);
 
 make_cons(c_7315546,quote_lambda,&c_7315547);
 
-make_cons(c_7315545,&c_7315546,nil);
+make_cons(c_7315545,&c_7315546,NULL);
 
 make_cons(c_7315544,quote_guard_91k,&c_7315545);
 
-make_cons(c_7315543,&c_7315544,nil);
+make_cons(c_7315543,&c_7315544,NULL);
 
 make_cons(c_7315541,&c_7315542,&c_7315543);
 
 make_cons(c_7315540,quote_lambda,&c_7315541);
 
-make_cons(c_7315539,&c_7315540,nil);
+make_cons(c_7315539,&c_7315540,NULL);
 
 make_cons(c_7315538,quote_call_91with_91current_91continuation,&c_7315539);
 
-make_cons(c_7315537,&c_7315538,nil);
+make_cons(c_7315537,&c_7315538,NULL);
 
-make_cons(c_7315536,&c_7315537,nil);
+make_cons(c_7315536,&c_7315537,NULL);
 
 make_cons(c_7315534,&c_7315535,&c_7315536);
 
 make_cons(c_7315533,quote_lambda,&c_7315534);
 
-make_cons(c_7315578,quote__93_93_93,nil);
+make_cons(c_7315578,quote__93_93_93,NULL);
 
 make_cons(c_7315577,quote_e2,&c_7315578);
 
@@ -16936,41 +16936,41 @@ make_cons(c_7315576,quote_e1,&c_7315577);
 
 make_cons(c_7315575,quote_begin,&c_7315576);
 
-make_cons(c_7315574,&c_7315575,nil);
+make_cons(c_7315574,&c_7315575,NULL);
 
 make_cons(c_7315573,quote_res,&c_7315574);
 
-make_cons(c_7315572,&c_7315573,nil);
+make_cons(c_7315572,&c_7315573,NULL);
 
-make_cons(c_7315584,quote_res,nil);
+make_cons(c_7315584,quote_res,NULL);
 
-make_cons(c_7315583,nil,&c_7315584);
+make_cons(c_7315583,NULL,&c_7315584);
 
 make_cons(c_7315582,quote_lambda,&c_7315583);
 
-make_cons(c_7315581,&c_7315582,nil);
+make_cons(c_7315581,&c_7315582,NULL);
 
 make_cons(c_7315580,quote_guard_91k,&c_7315581);
 
-make_cons(c_7315579,&c_7315580,nil);
+make_cons(c_7315579,&c_7315580,NULL);
 
 make_cons(c_7315571,&c_7315572,&c_7315579);
 
 make_cons(c_7315570,quote_let,&c_7315571);
 
-make_cons(c_7315569,&c_7315570,nil);
+make_cons(c_7315569,&c_7315570,NULL);
 
-make_cons(c_7315568,nil,&c_7315569);
+make_cons(c_7315568,NULL,&c_7315569);
 
 make_cons(c_7315567,quote_lambda,&c_7315568);
 
-make_cons(c_7315566,&c_7315567,nil);
+make_cons(c_7315566,&c_7315567,NULL);
 
 make_cons(c_7315532,&c_7315533,&c_7315566);
 
 make_cons(c_7315531,quote_with_91exception_91handler,&c_7315532);
 
-make_cons(c_7315530,&c_7315531,nil);
+make_cons(c_7315530,&c_7315531,NULL);
 
 make_cons(c_7315528,&c_7315529,&c_7315530);
 return_closcall1(data,(closure)&c_7315252,  &c_7315528);; 
@@ -17009,33 +17009,33 @@ c_7315256.elts[2] = ((closureN)self_734207)->elts[2];
 c_7315256.elts[3] = r_731549;
 
 
-make_cons(c_7315470,quote_guard_91k,nil);
+make_cons(c_7315470,quote_guard_91k,NULL);
 
-make_cons(c_7315476,quote_condition,nil);
+make_cons(c_7315476,quote_condition,NULL);
 
-make_cons(c_7315483,quote_handler_91k,nil);
+make_cons(c_7315483,quote_handler_91k,NULL);
 
-make_cons(c_7315494,quote_condition,nil);
+make_cons(c_7315494,quote_condition,NULL);
 
 make_cons(c_7315493,quote_var,&c_7315494);
 
-make_cons(c_7315492,&c_7315493,nil);
+make_cons(c_7315492,&c_7315493,NULL);
 
-make_cons(c_7315504,quote_condition,nil);
+make_cons(c_7315504,quote_condition,NULL);
 
 make_cons(c_7315503,quote_raise_91continuable,&c_7315504);
 
-make_cons(c_7315502,&c_7315503,nil);
+make_cons(c_7315502,&c_7315503,NULL);
 
-make_cons(c_7315501,nil,&c_7315502);
+make_cons(c_7315501,NULL,&c_7315502);
 
 make_cons(c_7315500,quote_lambda,&c_7315501);
 
-make_cons(c_7315499,&c_7315500,nil);
+make_cons(c_7315499,&c_7315500,NULL);
 
 make_cons(c_7315498,quote_handler_91k,&c_7315499);
 
-make_cons(c_7315506,quote__93_93_93,nil);
+make_cons(c_7315506,quote__93_93_93,NULL);
 
 make_cons(c_7315505,quote_clause,&c_7315506);
 
@@ -17043,41 +17043,41 @@ make_cons(c_7315497,&c_7315498,&c_7315505);
 
 make_cons(c_7315496,quote_guard_91aux,&c_7315497);
 
-make_cons(c_7315495,&c_7315496,nil);
+make_cons(c_7315495,&c_7315496,NULL);
 
 make_cons(c_7315491,&c_7315492,&c_7315495);
 
 make_cons(c_7315490,quote_let,&c_7315491);
 
-make_cons(c_7315489,&c_7315490,nil);
+make_cons(c_7315489,&c_7315490,NULL);
 
-make_cons(c_7315488,nil,&c_7315489);
+make_cons(c_7315488,NULL,&c_7315489);
 
 make_cons(c_7315487,quote_lambda,&c_7315488);
 
-make_cons(c_7315486,&c_7315487,nil);
+make_cons(c_7315486,&c_7315487,NULL);
 
 make_cons(c_7315485,quote_guard_91k,&c_7315486);
 
-make_cons(c_7315484,&c_7315485,nil);
+make_cons(c_7315484,&c_7315485,NULL);
 
 make_cons(c_7315482,&c_7315483,&c_7315484);
 
 make_cons(c_7315481,quote_lambda,&c_7315482);
 
-make_cons(c_7315480,&c_7315481,nil);
+make_cons(c_7315480,&c_7315481,NULL);
 
 make_cons(c_7315479,quote_call_91with_91current_91continuation,&c_7315480);
 
-make_cons(c_7315478,&c_7315479,nil);
+make_cons(c_7315478,&c_7315479,NULL);
 
-make_cons(c_7315477,&c_7315478,nil);
+make_cons(c_7315477,&c_7315478,NULL);
 
 make_cons(c_7315475,&c_7315476,&c_7315477);
 
 make_cons(c_7315474,quote_lambda,&c_7315475);
 
-make_cons(c_7315519,quote__93_93_93,nil);
+make_cons(c_7315519,quote__93_93_93,NULL);
 
 make_cons(c_7315518,quote_e2,&c_7315519);
 
@@ -17085,41 +17085,41 @@ make_cons(c_7315517,quote_e1,&c_7315518);
 
 make_cons(c_7315516,quote_begin,&c_7315517);
 
-make_cons(c_7315515,&c_7315516,nil);
+make_cons(c_7315515,&c_7315516,NULL);
 
 make_cons(c_7315514,quote_res,&c_7315515);
 
-make_cons(c_7315513,&c_7315514,nil);
+make_cons(c_7315513,&c_7315514,NULL);
 
-make_cons(c_7315525,quote_res,nil);
+make_cons(c_7315525,quote_res,NULL);
 
-make_cons(c_7315524,nil,&c_7315525);
+make_cons(c_7315524,NULL,&c_7315525);
 
 make_cons(c_7315523,quote_lambda,&c_7315524);
 
-make_cons(c_7315522,&c_7315523,nil);
+make_cons(c_7315522,&c_7315523,NULL);
 
 make_cons(c_7315521,quote_guard_91k,&c_7315522);
 
-make_cons(c_7315520,&c_7315521,nil);
+make_cons(c_7315520,&c_7315521,NULL);
 
 make_cons(c_7315512,&c_7315513,&c_7315520);
 
 make_cons(c_7315511,quote_let,&c_7315512);
 
-make_cons(c_7315510,&c_7315511,nil);
+make_cons(c_7315510,&c_7315511,NULL);
 
-make_cons(c_7315509,nil,&c_7315510);
+make_cons(c_7315509,NULL,&c_7315510);
 
 make_cons(c_7315508,quote_lambda,&c_7315509);
 
-make_cons(c_7315507,&c_7315508,nil);
+make_cons(c_7315507,&c_7315508,NULL);
 
 make_cons(c_7315473,&c_7315474,&c_7315507);
 
 make_cons(c_7315472,quote_with_91exception_91handler,&c_7315473);
 
-make_cons(c_7315471,&c_7315472,nil);
+make_cons(c_7315471,&c_7315472,NULL);
 
 make_cons(c_7315469,&c_7315470,&c_7315471);
 
@@ -17157,7 +17157,7 @@ c_7315260.elts[0] = ((closureN)self_734209)->elts[0];
 c_7315260.elts[1] = ((closureN)self_734209)->elts[1];
 c_7315260.elts[2] = r_731545;
 
-return_closcall1(data,(closure)&c_7315260,  nil);; 
+return_closcall1(data,(closure)&c_7315260,  NULL);; 
 }
 
 static void __lambda_1960(void *data, int argc, object self_734210, object r_731546) {
@@ -17176,33 +17176,33 @@ c_7315262.elts[2] = ((closureN)self_734210)->elts[2];
 c_7315262.elts[3] = r_731546;
 
 
-make_cons(c_7315410,quote_guard_91k,nil);
+make_cons(c_7315410,quote_guard_91k,NULL);
 
-make_cons(c_7315416,quote_condition,nil);
+make_cons(c_7315416,quote_condition,NULL);
 
-make_cons(c_7315423,quote_handler_91k,nil);
+make_cons(c_7315423,quote_handler_91k,NULL);
 
-make_cons(c_7315434,quote_condition,nil);
+make_cons(c_7315434,quote_condition,NULL);
 
 make_cons(c_7315433,quote_var,&c_7315434);
 
-make_cons(c_7315432,&c_7315433,nil);
+make_cons(c_7315432,&c_7315433,NULL);
 
-make_cons(c_7315444,quote_condition,nil);
+make_cons(c_7315444,quote_condition,NULL);
 
 make_cons(c_7315443,quote_raise_91continuable,&c_7315444);
 
-make_cons(c_7315442,&c_7315443,nil);
+make_cons(c_7315442,&c_7315443,NULL);
 
-make_cons(c_7315441,nil,&c_7315442);
+make_cons(c_7315441,NULL,&c_7315442);
 
 make_cons(c_7315440,quote_lambda,&c_7315441);
 
-make_cons(c_7315439,&c_7315440,nil);
+make_cons(c_7315439,&c_7315440,NULL);
 
 make_cons(c_7315438,quote_handler_91k,&c_7315439);
 
-make_cons(c_7315446,quote__93_93_93,nil);
+make_cons(c_7315446,quote__93_93_93,NULL);
 
 make_cons(c_7315445,quote_clause,&c_7315446);
 
@@ -17210,41 +17210,41 @@ make_cons(c_7315437,&c_7315438,&c_7315445);
 
 make_cons(c_7315436,quote_guard_91aux,&c_7315437);
 
-make_cons(c_7315435,&c_7315436,nil);
+make_cons(c_7315435,&c_7315436,NULL);
 
 make_cons(c_7315431,&c_7315432,&c_7315435);
 
 make_cons(c_7315430,quote_let,&c_7315431);
 
-make_cons(c_7315429,&c_7315430,nil);
+make_cons(c_7315429,&c_7315430,NULL);
 
-make_cons(c_7315428,nil,&c_7315429);
+make_cons(c_7315428,NULL,&c_7315429);
 
 make_cons(c_7315427,quote_lambda,&c_7315428);
 
-make_cons(c_7315426,&c_7315427,nil);
+make_cons(c_7315426,&c_7315427,NULL);
 
 make_cons(c_7315425,quote_guard_91k,&c_7315426);
 
-make_cons(c_7315424,&c_7315425,nil);
+make_cons(c_7315424,&c_7315425,NULL);
 
 make_cons(c_7315422,&c_7315423,&c_7315424);
 
 make_cons(c_7315421,quote_lambda,&c_7315422);
 
-make_cons(c_7315420,&c_7315421,nil);
+make_cons(c_7315420,&c_7315421,NULL);
 
 make_cons(c_7315419,quote_call_91with_91current_91continuation,&c_7315420);
 
-make_cons(c_7315418,&c_7315419,nil);
+make_cons(c_7315418,&c_7315419,NULL);
 
-make_cons(c_7315417,&c_7315418,nil);
+make_cons(c_7315417,&c_7315418,NULL);
 
 make_cons(c_7315415,&c_7315416,&c_7315417);
 
 make_cons(c_7315414,quote_lambda,&c_7315415);
 
-make_cons(c_7315459,quote__93_93_93,nil);
+make_cons(c_7315459,quote__93_93_93,NULL);
 
 make_cons(c_7315458,quote_e2,&c_7315459);
 
@@ -17252,47 +17252,47 @@ make_cons(c_7315457,quote_e1,&c_7315458);
 
 make_cons(c_7315456,quote_begin,&c_7315457);
 
-make_cons(c_7315455,&c_7315456,nil);
+make_cons(c_7315455,&c_7315456,NULL);
 
 make_cons(c_7315454,quote_res,&c_7315455);
 
-make_cons(c_7315453,&c_7315454,nil);
+make_cons(c_7315453,&c_7315454,NULL);
 
-make_cons(c_7315465,quote_res,nil);
+make_cons(c_7315465,quote_res,NULL);
 
-make_cons(c_7315464,nil,&c_7315465);
+make_cons(c_7315464,NULL,&c_7315465);
 
 make_cons(c_7315463,quote_lambda,&c_7315464);
 
-make_cons(c_7315462,&c_7315463,nil);
+make_cons(c_7315462,&c_7315463,NULL);
 
 make_cons(c_7315461,quote_guard_91k,&c_7315462);
 
-make_cons(c_7315460,&c_7315461,nil);
+make_cons(c_7315460,&c_7315461,NULL);
 
 make_cons(c_7315452,&c_7315453,&c_7315460);
 
 make_cons(c_7315451,quote_let,&c_7315452);
 
-make_cons(c_7315450,&c_7315451,nil);
+make_cons(c_7315450,&c_7315451,NULL);
 
-make_cons(c_7315449,nil,&c_7315450);
+make_cons(c_7315449,NULL,&c_7315450);
 
 make_cons(c_7315448,quote_lambda,&c_7315449);
 
-make_cons(c_7315447,&c_7315448,nil);
+make_cons(c_7315447,&c_7315448,NULL);
 
 make_cons(c_7315413,&c_7315414,&c_7315447);
 
 make_cons(c_7315412,quote_with_91exception_91handler,&c_7315413);
 
-make_cons(c_7315411,&c_7315412,nil);
+make_cons(c_7315411,&c_7315412,NULL);
 
 make_cons(c_7315409,&c_7315410,&c_7315411);
 
 make_cons(c_7315408,quote_lambda,&c_7315409);
 
-make_cons(c_7315407,&c_7315408,nil);
+make_cons(c_7315407,&c_7315408,NULL);
 return_closcall1(data,(closure)&c_7315262,  &c_7315407);; 
 }
 
@@ -17327,33 +17327,33 @@ c_7315266.elts[1] = ((closureN)self_734212)->elts[1];
 c_7315266.elts[2] = r_731543;
 
 
-make_cons(c_7315349,quote_guard_91k,nil);
+make_cons(c_7315349,quote_guard_91k,NULL);
 
-make_cons(c_7315355,quote_condition,nil);
+make_cons(c_7315355,quote_condition,NULL);
 
-make_cons(c_7315362,quote_handler_91k,nil);
+make_cons(c_7315362,quote_handler_91k,NULL);
 
-make_cons(c_7315373,quote_condition,nil);
+make_cons(c_7315373,quote_condition,NULL);
 
 make_cons(c_7315372,quote_var,&c_7315373);
 
-make_cons(c_7315371,&c_7315372,nil);
+make_cons(c_7315371,&c_7315372,NULL);
 
-make_cons(c_7315383,quote_condition,nil);
+make_cons(c_7315383,quote_condition,NULL);
 
 make_cons(c_7315382,quote_raise_91continuable,&c_7315383);
 
-make_cons(c_7315381,&c_7315382,nil);
+make_cons(c_7315381,&c_7315382,NULL);
 
-make_cons(c_7315380,nil,&c_7315381);
+make_cons(c_7315380,NULL,&c_7315381);
 
 make_cons(c_7315379,quote_lambda,&c_7315380);
 
-make_cons(c_7315378,&c_7315379,nil);
+make_cons(c_7315378,&c_7315379,NULL);
 
 make_cons(c_7315377,quote_handler_91k,&c_7315378);
 
-make_cons(c_7315385,quote__93_93_93,nil);
+make_cons(c_7315385,quote__93_93_93,NULL);
 
 make_cons(c_7315384,quote_clause,&c_7315385);
 
@@ -17361,41 +17361,41 @@ make_cons(c_7315376,&c_7315377,&c_7315384);
 
 make_cons(c_7315375,quote_guard_91aux,&c_7315376);
 
-make_cons(c_7315374,&c_7315375,nil);
+make_cons(c_7315374,&c_7315375,NULL);
 
 make_cons(c_7315370,&c_7315371,&c_7315374);
 
 make_cons(c_7315369,quote_let,&c_7315370);
 
-make_cons(c_7315368,&c_7315369,nil);
+make_cons(c_7315368,&c_7315369,NULL);
 
-make_cons(c_7315367,nil,&c_7315368);
+make_cons(c_7315367,NULL,&c_7315368);
 
 make_cons(c_7315366,quote_lambda,&c_7315367);
 
-make_cons(c_7315365,&c_7315366,nil);
+make_cons(c_7315365,&c_7315366,NULL);
 
 make_cons(c_7315364,quote_guard_91k,&c_7315365);
 
-make_cons(c_7315363,&c_7315364,nil);
+make_cons(c_7315363,&c_7315364,NULL);
 
 make_cons(c_7315361,&c_7315362,&c_7315363);
 
 make_cons(c_7315360,quote_lambda,&c_7315361);
 
-make_cons(c_7315359,&c_7315360,nil);
+make_cons(c_7315359,&c_7315360,NULL);
 
 make_cons(c_7315358,quote_call_91with_91current_91continuation,&c_7315359);
 
-make_cons(c_7315357,&c_7315358,nil);
+make_cons(c_7315357,&c_7315358,NULL);
 
-make_cons(c_7315356,&c_7315357,nil);
+make_cons(c_7315356,&c_7315357,NULL);
 
 make_cons(c_7315354,&c_7315355,&c_7315356);
 
 make_cons(c_7315353,quote_lambda,&c_7315354);
 
-make_cons(c_7315398,quote__93_93_93,nil);
+make_cons(c_7315398,quote__93_93_93,NULL);
 
 make_cons(c_7315397,quote_e2,&c_7315398);
 
@@ -17403,47 +17403,47 @@ make_cons(c_7315396,quote_e1,&c_7315397);
 
 make_cons(c_7315395,quote_begin,&c_7315396);
 
-make_cons(c_7315394,&c_7315395,nil);
+make_cons(c_7315394,&c_7315395,NULL);
 
 make_cons(c_7315393,quote_res,&c_7315394);
 
-make_cons(c_7315392,&c_7315393,nil);
+make_cons(c_7315392,&c_7315393,NULL);
 
-make_cons(c_7315404,quote_res,nil);
+make_cons(c_7315404,quote_res,NULL);
 
-make_cons(c_7315403,nil,&c_7315404);
+make_cons(c_7315403,NULL,&c_7315404);
 
 make_cons(c_7315402,quote_lambda,&c_7315403);
 
-make_cons(c_7315401,&c_7315402,nil);
+make_cons(c_7315401,&c_7315402,NULL);
 
 make_cons(c_7315400,quote_guard_91k,&c_7315401);
 
-make_cons(c_7315399,&c_7315400,nil);
+make_cons(c_7315399,&c_7315400,NULL);
 
 make_cons(c_7315391,&c_7315392,&c_7315399);
 
 make_cons(c_7315390,quote_let,&c_7315391);
 
-make_cons(c_7315389,&c_7315390,nil);
+make_cons(c_7315389,&c_7315390,NULL);
 
-make_cons(c_7315388,nil,&c_7315389);
+make_cons(c_7315388,NULL,&c_7315389);
 
 make_cons(c_7315387,quote_lambda,&c_7315388);
 
-make_cons(c_7315386,&c_7315387,nil);
+make_cons(c_7315386,&c_7315387,NULL);
 
 make_cons(c_7315352,&c_7315353,&c_7315386);
 
 make_cons(c_7315351,quote_with_91exception_91handler,&c_7315352);
 
-make_cons(c_7315350,&c_7315351,nil);
+make_cons(c_7315350,&c_7315351,NULL);
 
 make_cons(c_7315348,&c_7315349,&c_7315350);
 
 make_cons(c_7315347,quote_lambda,&c_7315348);
 
-make_cons(c_7315346,&c_7315347,nil);
+make_cons(c_7315346,&c_7315347,NULL);
 
 make_cons(c_7315345,quote_call_91with_91current_91continuation,&c_7315346);
 return_closcall1(data,(closure)&c_7315266,  &c_7315345);; 
@@ -17477,7 +17477,7 @@ c_7315270.elts = (object *)alloca(sizeof(object) * 2);
 c_7315270.elts[0] = ((closureN)self_734214)->elts[0];
 c_7315270.elts[1] = r_731539;
 
-return_closcall1(data,(closure)&c_7315270,  nil);; 
+return_closcall1(data,(closure)&c_7315270,  NULL);; 
 }
 
 static void __lambda_1955(void *data, int argc, object self_734215, object r_731540) {
@@ -17495,33 +17495,33 @@ c_7315272.elts[1] = ((closureN)self_734215)->elts[1];
 c_7315272.elts[2] = r_731540;
 
 
-make_cons(c_7315287,quote_guard_91k,nil);
+make_cons(c_7315287,quote_guard_91k,NULL);
 
-make_cons(c_7315293,quote_condition,nil);
+make_cons(c_7315293,quote_condition,NULL);
 
-make_cons(c_7315300,quote_handler_91k,nil);
+make_cons(c_7315300,quote_handler_91k,NULL);
 
-make_cons(c_7315311,quote_condition,nil);
+make_cons(c_7315311,quote_condition,NULL);
 
 make_cons(c_7315310,quote_var,&c_7315311);
 
-make_cons(c_7315309,&c_7315310,nil);
+make_cons(c_7315309,&c_7315310,NULL);
 
-make_cons(c_7315321,quote_condition,nil);
+make_cons(c_7315321,quote_condition,NULL);
 
 make_cons(c_7315320,quote_raise_91continuable,&c_7315321);
 
-make_cons(c_7315319,&c_7315320,nil);
+make_cons(c_7315319,&c_7315320,NULL);
 
-make_cons(c_7315318,nil,&c_7315319);
+make_cons(c_7315318,NULL,&c_7315319);
 
 make_cons(c_7315317,quote_lambda,&c_7315318);
 
-make_cons(c_7315316,&c_7315317,nil);
+make_cons(c_7315316,&c_7315317,NULL);
 
 make_cons(c_7315315,quote_handler_91k,&c_7315316);
 
-make_cons(c_7315323,quote__93_93_93,nil);
+make_cons(c_7315323,quote__93_93_93,NULL);
 
 make_cons(c_7315322,quote_clause,&c_7315323);
 
@@ -17529,41 +17529,41 @@ make_cons(c_7315314,&c_7315315,&c_7315322);
 
 make_cons(c_7315313,quote_guard_91aux,&c_7315314);
 
-make_cons(c_7315312,&c_7315313,nil);
+make_cons(c_7315312,&c_7315313,NULL);
 
 make_cons(c_7315308,&c_7315309,&c_7315312);
 
 make_cons(c_7315307,quote_let,&c_7315308);
 
-make_cons(c_7315306,&c_7315307,nil);
+make_cons(c_7315306,&c_7315307,NULL);
 
-make_cons(c_7315305,nil,&c_7315306);
+make_cons(c_7315305,NULL,&c_7315306);
 
 make_cons(c_7315304,quote_lambda,&c_7315305);
 
-make_cons(c_7315303,&c_7315304,nil);
+make_cons(c_7315303,&c_7315304,NULL);
 
 make_cons(c_7315302,quote_guard_91k,&c_7315303);
 
-make_cons(c_7315301,&c_7315302,nil);
+make_cons(c_7315301,&c_7315302,NULL);
 
 make_cons(c_7315299,&c_7315300,&c_7315301);
 
 make_cons(c_7315298,quote_lambda,&c_7315299);
 
-make_cons(c_7315297,&c_7315298,nil);
+make_cons(c_7315297,&c_7315298,NULL);
 
 make_cons(c_7315296,quote_call_91with_91current_91continuation,&c_7315297);
 
-make_cons(c_7315295,&c_7315296,nil);
+make_cons(c_7315295,&c_7315296,NULL);
 
-make_cons(c_7315294,&c_7315295,nil);
+make_cons(c_7315294,&c_7315295,NULL);
 
 make_cons(c_7315292,&c_7315293,&c_7315294);
 
 make_cons(c_7315291,quote_lambda,&c_7315292);
 
-make_cons(c_7315336,quote__93_93_93,nil);
+make_cons(c_7315336,quote__93_93_93,NULL);
 
 make_cons(c_7315335,quote_e2,&c_7315336);
 
@@ -17571,51 +17571,51 @@ make_cons(c_7315334,quote_e1,&c_7315335);
 
 make_cons(c_7315333,quote_begin,&c_7315334);
 
-make_cons(c_7315332,&c_7315333,nil);
+make_cons(c_7315332,&c_7315333,NULL);
 
 make_cons(c_7315331,quote_res,&c_7315332);
 
-make_cons(c_7315330,&c_7315331,nil);
+make_cons(c_7315330,&c_7315331,NULL);
 
-make_cons(c_7315342,quote_res,nil);
+make_cons(c_7315342,quote_res,NULL);
 
-make_cons(c_7315341,nil,&c_7315342);
+make_cons(c_7315341,NULL,&c_7315342);
 
 make_cons(c_7315340,quote_lambda,&c_7315341);
 
-make_cons(c_7315339,&c_7315340,nil);
+make_cons(c_7315339,&c_7315340,NULL);
 
 make_cons(c_7315338,quote_guard_91k,&c_7315339);
 
-make_cons(c_7315337,&c_7315338,nil);
+make_cons(c_7315337,&c_7315338,NULL);
 
 make_cons(c_7315329,&c_7315330,&c_7315337);
 
 make_cons(c_7315328,quote_let,&c_7315329);
 
-make_cons(c_7315327,&c_7315328,nil);
+make_cons(c_7315327,&c_7315328,NULL);
 
-make_cons(c_7315326,nil,&c_7315327);
+make_cons(c_7315326,NULL,&c_7315327);
 
 make_cons(c_7315325,quote_lambda,&c_7315326);
 
-make_cons(c_7315324,&c_7315325,nil);
+make_cons(c_7315324,&c_7315325,NULL);
 
 make_cons(c_7315290,&c_7315291,&c_7315324);
 
 make_cons(c_7315289,quote_with_91exception_91handler,&c_7315290);
 
-make_cons(c_7315288,&c_7315289,nil);
+make_cons(c_7315288,&c_7315289,NULL);
 
 make_cons(c_7315286,&c_7315287,&c_7315288);
 
 make_cons(c_7315285,quote_lambda,&c_7315286);
 
-make_cons(c_7315284,&c_7315285,nil);
+make_cons(c_7315284,&c_7315285,NULL);
 
 make_cons(c_7315283,quote_call_91with_91current_91continuation,&c_7315284);
 
-make_cons(c_7315282,&c_7315283,nil);
+make_cons(c_7315282,&c_7315283,NULL);
 return_closcall1(data,(closure)&c_7315272,  &c_7315282);; 
 }
 
@@ -17797,7 +17797,7 @@ c_7314601.elts[1] = ((closureN)self_734225)->elts[1];
 c_7314601.elts[2] = ((closureN)self_734225)->elts[2];
 c_7314601.elts[3] = v_932_73612;
 
-return_closcall1(data,(closure)&c_7314601,  nil);; 
+return_closcall1(data,(closure)&c_7314601,  NULL);; 
 }
 
 static void __lambda_1943(void *data, int argc, object self_734226, object r_731742) {
@@ -17816,7 +17816,7 @@ c_7314603.elts[2] = ((closureN)self_734226)->elts[1];
 c_7314603.elts[3] = ((closureN)self_734226)->elts[2];
 c_7314603.elts[4] = ((closureN)self_734226)->elts[3];
 
-return_closcall1(data,(closure)&c_7314603,  nil);; 
+return_closcall1(data,(closure)&c_7314603,  NULL);; 
 }
 
 static void __lambda_1942(void *data, int argc, object self_734227, object r_731743) {
@@ -18320,7 +18320,7 @@ c_7314642.elts[3] = ((closureN)self_734250)->elts[2];
 c_7314642.elts[4] = ((closureN)self_734250)->elts[3];
 c_7314642.elts[5] = ((closureN)self_734250)->elts[4];
 
-return_closcall1(data,(closure)&c_7314642,  nil);; 
+return_closcall1(data,(closure)&c_7314642,  NULL);; 
 }
 
 static void __lambda_1918(void *data, int argc, object self_734251, object r_731755) {
@@ -18404,7 +18404,7 @@ c_7314689.elts[1] = r_731761;
 c_7314689.elts[2] = ((closureN)self_734254)->elts[1];
 c_7314689.elts[3] = ((closureN)self_734254)->elts[2];
 
-return_closcall1(data,(closure)&c_7314689,  nil);; 
+return_closcall1(data,(closure)&c_7314689,  NULL);; 
 }
 
 static void __lambda_1914(void *data, int argc, object self_734255, object r_731766) {
@@ -18424,7 +18424,7 @@ c_7314691.elts[3] = ((closureN)self_734255)->elts[2];
 c_7314691.elts[4] = ((closureN)self_734255)->elts[3];
 
 
-make_cons(c_7314713,quote_val,nil);
+make_cons(c_7314713,quote_val,NULL);
 return_closcall1(data,(closure)&c_7314691,  &c_7314713);; 
 }
 
@@ -18461,7 +18461,7 @@ c_7314695.elts[2] = r_731764;
 c_7314695.elts[3] = ((closureN)self_734257)->elts[2];
 
 
-make_cons(c_7314710,quote_val,nil);
+make_cons(c_7314710,quote_val,NULL);
 
 make_cons(c_7314709,quote_var,&c_7314710);
 return_closcall1(data,(closure)&c_7314695,  &c_7314709);; 
@@ -18498,7 +18498,7 @@ c_7314699.elts[1] = ((closureN)self_734259)->elts[1];
 c_7314699.elts[2] = r_731762;
 
 
-make_cons(c_7314706,quote_val,nil);
+make_cons(c_7314706,quote_val,NULL);
 
 make_cons(c_7314705,quote_var,&c_7314706);
 
@@ -18561,7 +18561,7 @@ c_7314650.elts[2] = ((closureN)self_734263)->elts[2];
 c_7314650.elts[3] = r_731756;
 
 
-make_cons(c_7314677,quote_val,nil);
+make_cons(c_7314677,quote_val,NULL);
 
 make_cons(c_7314676,quote_var,&c_7314677);
 
@@ -18571,7 +18571,7 @@ make_cons(c_7314678,quote__93_93_93,quote_body);
 
 make_cons(c_7314674,&c_7314675,&c_7314678);
 
-make_cons(c_7314673,nil,&c_7314674);
+make_cons(c_7314673,NULL,&c_7314674);
 return_closcall1(data,(closure)&c_7314650,  &c_7314673);; 
 }
 
@@ -18606,7 +18606,7 @@ c_7314654.elts[1] = ((closureN)self_734265)->elts[1];
 c_7314654.elts[2] = r_731753;
 
 
-make_cons(c_7314669,quote_val,nil);
+make_cons(c_7314669,quote_val,NULL);
 
 make_cons(c_7314668,quote_var,&c_7314669);
 
@@ -18616,7 +18616,7 @@ make_cons(c_7314670,quote__93_93_93,quote_body);
 
 make_cons(c_7314666,&c_7314667,&c_7314670);
 
-make_cons(c_7314665,nil,&c_7314666);
+make_cons(c_7314665,NULL,&c_7314666);
 
 make_cons(c_7314664,quote_let,&c_7314665);
 return_closcall1(data,(closure)&c_7314654,  &c_7314664);; 
@@ -23100,7 +23100,7 @@ c_7313393.elts[32] = ((closureN)self_734375)->elts[32];
 c_7313393.elts[33] = r_731975;
 c_7313393.elts[34] = ((closureN)self_734375)->elts[33];
 
-return_closcall1(data,(closure)&c_7313393,  nil);; 
+return_closcall1(data,(closure)&c_7313393,  NULL);; 
 }
 
 static void __lambda_1792(void *data, int argc, object self_734376, object r_731976) {
@@ -24936,7 +24936,7 @@ c_7313787.elts[22] = ((closureN)self_734429)->elts[20];
 c_7313787.elts[23] = ((closureN)self_734429)->elts[21];
 c_7313787.elts[24] = ((closureN)self_734429)->elts[22];
 
-return_closcall1(data,(closure)&c_7313787,  nil);; 
+return_closcall1(data,(closure)&c_7313787,  NULL);; 
 }
 
 static void __lambda_1738(void *data, int argc, object self_734430, object r_732158) {
@@ -25056,7 +25056,7 @@ c_7313793.elts[22] = r_732155;
 c_7313793.elts[23] = ((closureN)self_734432)->elts[22];
 c_7313793.elts[24] = ((closureN)self_734432)->elts[23];
 
-return_closcall1(data,(closure)&c_7313793,  nil);; 
+return_closcall1(data,(closure)&c_7313793,  NULL);; 
 }
 
 static void __lambda_1735(void *data, int argc, object self_734433, object r_732156) {
@@ -25175,7 +25175,7 @@ c_7313799.elts[22] = r_732152;
 c_7313799.elts[23] = ((closureN)self_734435)->elts[22];
 c_7313799.elts[24] = ((closureN)self_734435)->elts[23];
 
-return_closcall1(data,(closure)&c_7313799,  nil);; 
+return_closcall1(data,(closure)&c_7313799,  NULL);; 
 }
 
 static void __lambda_1732(void *data, int argc, object self_734436, object r_732153) {
@@ -25254,7 +25254,7 @@ c_7313803.elts[22] = r_732060;
 c_7313803.elts[23] = ((closureN)self_734437)->elts[22];
 c_7313803.elts[24] = ((closureN)self_734437)->elts[23];
 
-return_closcall1(data,(closure)&c_7313803,  nil);; 
+return_closcall1(data,(closure)&c_7313803,  NULL);; 
 }
 
 static void __lambda_1730(void *data, int argc, object self_734438, object r_732151) {
@@ -25417,7 +25417,7 @@ c_7313811.elts[23] = r_732065;
 c_7313811.elts[24] = ((closureN)self_734441)->elts[23];
 c_7313811.elts[25] = ((closureN)self_734441)->elts[24];
 
-return_closcall1(data,(closure)&c_7313811,  nil);; 
+return_closcall1(data,(closure)&c_7313811,  NULL);; 
 }
 
 static void __lambda_1726(void *data, int argc, object self_734442, object r_732148) {
@@ -25539,7 +25539,7 @@ c_7313817.elts[23] = ((closureN)self_734444)->elts[23];
 c_7313817.elts[24] = r_732129;
 c_7313817.elts[25] = ((closureN)self_734444)->elts[24];
 
-return_closcall1(data,(closure)&c_7313817,  nil);; 
+return_closcall1(data,(closure)&c_7313817,  NULL);; 
 }
 
 static void __lambda_1723(void *data, int argc, object self_734445, object r_732146) {
@@ -25699,7 +25699,7 @@ c_7313825.elts[22] = ((closureN)self_734448)->elts[22];
 c_7313825.elts[23] = r_732142;
 c_7313825.elts[24] = ((closureN)self_734448)->elts[23];
 
-return_closcall1(data,(closure)&c_7313825,  nil);; 
+return_closcall1(data,(closure)&c_7313825,  NULL);; 
 }
 
 static void __lambda_1719(void *data, int argc, object self_734449, object r_732143) {
@@ -25818,7 +25818,7 @@ c_7313831.elts[22] = ((closureN)self_734451)->elts[22];
 c_7313831.elts[23] = r_732131;
 c_7313831.elts[24] = ((closureN)self_734451)->elts[23];
 
-return_closcall1(data,(closure)&c_7313831,  nil);; 
+return_closcall1(data,(closure)&c_7313831,  NULL);; 
 }
 
 static void __lambda_1716(void *data, int argc, object self_734452, object r_732139) {
@@ -25858,7 +25858,7 @@ c_7313833.elts[23] = ((closureN)self_734452)->elts[23];
 c_7313833.elts[24] = r_732139;
 c_7313833.elts[25] = ((closureN)self_734452)->elts[24];
 
-return_closcall1(data,(closure)&c_7313833,  nil);; 
+return_closcall1(data,(closure)&c_7313833,  NULL);; 
 }
 
 static void __lambda_1715(void *data, int argc, object self_734453, object r_732140) {
@@ -25980,7 +25980,7 @@ c_7313839.elts[23] = ((closureN)self_734455)->elts[23];
 c_7313839.elts[24] = r_732136;
 c_7313839.elts[25] = ((closureN)self_734455)->elts[24];
 
-return_closcall1(data,(closure)&c_7313839,  nil);; 
+return_closcall1(data,(closure)&c_7313839,  NULL);; 
 }
 
 static void __lambda_1712(void *data, int argc, object self_734456, object r_732137) {
@@ -26102,7 +26102,7 @@ c_7313845.elts[23] = ((closureN)self_734458)->elts[23];
 c_7313845.elts[24] = r_732133;
 c_7313845.elts[25] = ((closureN)self_734458)->elts[24];
 
-return_closcall1(data,(closure)&c_7313845,  nil);; 
+return_closcall1(data,(closure)&c_7313845,  NULL);; 
 }
 
 static void __lambda_1709(void *data, int argc, object self_734459, object r_732134) {
@@ -26260,7 +26260,7 @@ c_7313853.elts[21] = ((closureN)self_734462)->elts[21];
 c_7313853.elts[22] = r_732071;
 c_7313853.elts[23] = ((closureN)self_734462)->elts[22];
 
-return_closcall1(data,(closure)&c_7313853,  nil);; 
+return_closcall1(data,(closure)&c_7313853,  NULL);; 
 }
 
 static void __lambda_1705(void *data, int argc, object self_734463, object r_732128) {
@@ -26574,7 +26574,7 @@ c_7313869.elts[23] = ((closureN)self_734470)->elts[23];
 c_7313869.elts[24] = r_732123;
 c_7313869.elts[25] = ((closureN)self_734470)->elts[24];
 
-return_closcall1(data,(closure)&c_7313869,  nil);; 
+return_closcall1(data,(closure)&c_7313869,  NULL);; 
 }
 
 static void __lambda_1697(void *data, int argc, object self_734471, object r_732124) {
@@ -26694,7 +26694,7 @@ c_7313875.elts[22] = ((closureN)self_734473)->elts[22];
 c_7313875.elts[23] = r_732119;
 c_7313875.elts[24] = ((closureN)self_734473)->elts[23];
 
-return_closcall1(data,(closure)&c_7313875,  nil);; 
+return_closcall1(data,(closure)&c_7313875,  NULL);; 
 }
 
 static void __lambda_1694(void *data, int argc, object self_734474, object r_732120) {
@@ -26811,7 +26811,7 @@ c_7313881.elts[21] = ((closureN)self_734476)->elts[21];
 c_7313881.elts[22] = r_732101;
 c_7313881.elts[23] = ((closureN)self_734476)->elts[22];
 
-return_closcall1(data,(closure)&c_7313881,  nil);; 
+return_closcall1(data,(closure)&c_7313881,  NULL);; 
 }
 
 static void __lambda_1691(void *data, int argc, object self_734477, object r_732116) {
@@ -26928,7 +26928,7 @@ c_7313887.elts[21] = ((closureN)self_734479)->elts[21];
 c_7313887.elts[22] = r_732108;
 c_7313887.elts[23] = ((closureN)self_734479)->elts[22];
 
-return_closcall1(data,(closure)&c_7313887,  nil);; 
+return_closcall1(data,(closure)&c_7313887,  NULL);; 
 }
 
 static void __lambda_1688(void *data, int argc, object self_734480, object r_732113) {
@@ -26967,7 +26967,7 @@ c_7313889.elts[22] = ((closureN)self_734480)->elts[22];
 c_7313889.elts[23] = r_732113;
 c_7313889.elts[24] = ((closureN)self_734480)->elts[23];
 
-return_closcall1(data,(closure)&c_7313889,  nil);; 
+return_closcall1(data,(closure)&c_7313889,  NULL);; 
 }
 
 static void __lambda_1687(void *data, int argc, object self_734481, object r_732114) {
@@ -27084,7 +27084,7 @@ c_7313895.elts[21] = ((closureN)self_734483)->elts[21];
 c_7313895.elts[22] = r_732110;
 c_7313895.elts[23] = ((closureN)self_734483)->elts[22];
 
-return_closcall1(data,(closure)&c_7313895,  nil);; 
+return_closcall1(data,(closure)&c_7313895,  NULL);; 
 }
 
 static void __lambda_1684(void *data, int argc, object self_734484, object r_732111) {
@@ -27236,7 +27236,7 @@ c_7313903.elts[20] = ((closureN)self_734487)->elts[20];
 c_7313903.elts[21] = r_732105;
 c_7313903.elts[22] = ((closureN)self_734487)->elts[21];
 
-return_closcall1(data,(closure)&c_7313903,  nil);; 
+return_closcall1(data,(closure)&c_7313903,  NULL);; 
 }
 
 static void __lambda_1680(void *data, int argc, object self_734488, object r_732106) {
@@ -27410,7 +27410,7 @@ c_7313916.elts[14] = ((closureN)self_734492)->elts[14];
 c_7313916.elts[15] = ((closureN)self_734492)->elts[15];
 c_7313916.elts[16] = r_732078;
 
-return_closcall1(data,(closure)&c_7313916,  nil);; 
+return_closcall1(data,(closure)&c_7313916,  NULL);; 
 }
 
 static void __lambda_1675(void *data, int argc, object self_734493, object r_732100) {
@@ -27506,7 +27506,7 @@ c_7313922.elts[14] = ((closureN)self_734495)->elts[14];
 c_7313922.elts[15] = ((closureN)self_734495)->elts[15];
 c_7313922.elts[16] = r_732083;
 
-return_closcall1(data,(closure)&c_7313922,  nil);; 
+return_closcall1(data,(closure)&c_7313922,  NULL);; 
 }
 
 static void __lambda_1672(void *data, int argc, object self_734496, object r_732098) {
@@ -27632,7 +27632,7 @@ c_7313930.elts[13] = ((closureN)self_734499)->elts[13];
 c_7313930.elts[14] = ((closureN)self_734499)->elts[14];
 c_7313930.elts[15] = r_732085;
 
-return_closcall1(data,(closure)&c_7313930,  nil);; 
+return_closcall1(data,(closure)&c_7313930,  NULL);; 
 }
 
 static void __lambda_1668(void *data, int argc, object self_734500, object r_732095) {
@@ -27725,7 +27725,7 @@ c_7313936.elts[13] = ((closureN)self_734502)->elts[13];
 c_7313936.elts[14] = ((closureN)self_734502)->elts[14];
 c_7313936.elts[15] = r_732090;
 
-return_closcall1(data,(closure)&c_7313936,  nil);; 
+return_closcall1(data,(closure)&c_7313936,  NULL);; 
 }
 
 static void __lambda_1665(void *data, int argc, object self_734503, object r_732093) {
@@ -27870,7 +27870,7 @@ c_7313946.elts[10] = ((closureN)self_734507)->elts[10];
 c_7313946.elts[11] = ((closureN)self_734507)->elts[11];
 c_7313946.elts[12] = r_732087;
 
-return_closcall1(data,(closure)&c_7313946,  nil);; 
+return_closcall1(data,(closure)&c_7313946,  NULL);; 
 }
 
 static void __lambda_1660(void *data, int argc, object self_734508, object r_732088) {
@@ -28002,7 +28002,7 @@ c_7313956.elts[8] = ((closureN)self_734512)->elts[8];
 c_7313956.elts[9] = ((closureN)self_734512)->elts[9];
 c_7313956.elts[10] = r_732080;
 
-return_closcall1(data,(closure)&c_7313956,  nil);; 
+return_closcall1(data,(closure)&c_7313956,  NULL);; 
 }
 
 static void __lambda_1655(void *data, int argc, object self_734513, object r_732081) {
@@ -28122,7 +28122,7 @@ c_7313966.elts[5] = ((closureN)self_734517)->elts[5];
 c_7313966.elts[6] = ((closureN)self_734517)->elts[6];
 c_7313966.elts[7] = r_732073;
 
-return_closcall1(data,(closure)&c_7313966,  nil);; 
+return_closcall1(data,(closure)&c_7313966,  NULL);; 
 }
 
 static void __lambda_1650(void *data, int argc, object self_734518, object r_732074) {
@@ -28229,7 +28229,7 @@ c_7313976.elts[3] = ((closureN)self_734522)->elts[3];
 c_7313976.elts[4] = ((closureN)self_734522)->elts[4];
 c_7313976.elts[5] = r_732067;
 
-return_closcall1(data,(closure)&c_7313976,  nil);; 
+return_closcall1(data,(closure)&c_7313976,  NULL);; 
 }
 
 static void __lambda_1645(void *data, int argc, object self_734523, object r_732068) {
@@ -28307,7 +28307,7 @@ c_7313984.elts[1] = ((closureN)self_734526)->elts[1];
 c_7313984.elts[2] = ((closureN)self_734526)->elts[2];
 c_7313984.elts[3] = r_732062;
 
-return_closcall1(data,(closure)&c_7313984,  nil);; 
+return_closcall1(data,(closure)&c_7313984,  NULL);; 
 }
 
 static void __lambda_1641(void *data, int argc, object self_734527, object r_732063) {
@@ -28916,7 +28916,7 @@ c_7313590.elts[18] = ((closureN)self_734548)->elts[17];
 c_7313590.elts[19] = ((closureN)self_734548)->elts[18];
 c_7313590.elts[20] = ((closureN)self_734548)->elts[19];
 
-return_closcall1(data,(closure)&c_7313590,  nil);; 
+return_closcall1(data,(closure)&c_7313590,  NULL);; 
 }
 
 static void __lambda_1619(void *data, int argc, object self_734549, object r_732038) {
@@ -29222,7 +29222,7 @@ c_7313666.elts[0] = ((closureN)self_734561)->elts[0];
 c_7313666.elts[1] = k_732032;
 c_7313666.elts[2] = x_73771;
 
-return_closcall1(data,(closure)&c_7313666,  nil);; 
+return_closcall1(data,(closure)&c_7313666,  NULL);; 
 }
 
 static void __lambda_1606(void *data, int argc, object self_734562, object r_732034) {
@@ -30785,7 +30785,7 @@ c_7313131.elts[3] = k_731932;
 c_7313131.elts[4] = ((closureN)self_734630)->elts[2];
 c_7313131.elts[5] = x_73731;
 
-return_closcall1(data,(closure)&c_7313131,  nil);; 
+return_closcall1(data,(closure)&c_7313131,  NULL);; 
 }
 
 static void __lambda_1537(void *data, int argc, object self_734631, object r_731933) {
@@ -31423,7 +31423,7 @@ c_7313003.elts[1] = k_731914;
 c_7313003.elts[2] = vars_73721;
 c_7313003.elts[3] = x_73722;
 
-return_closcall1(data,(closure)&c_7313003,  nil);; 
+return_closcall1(data,(closure)&c_7313003,  NULL);; 
 }
 
 static void __lambda_1506(void *data, int argc, object self_734662, object r_731915) {
@@ -32331,7 +32331,7 @@ c_7312977.elts = (object *)alloca(sizeof(object) * 2);
 c_7312977.elts[0] = ((closureN)self_734699)->elts[0];
 c_7312977.elts[1] = ((closureN)self_734699)->elts[1];
 
-return_closcall1(data,(closure)&c_7312977,  nil);; 
+return_closcall1(data,(closure)&c_7312977,  NULL);; 
 }
 
 static void __lambda_1468(void *data, int argc, object self_734700, object r_731912) {
@@ -34599,7 +34599,7 @@ c_7312069.elts = (object *)alloca(sizeof(object) * 2);
 c_7312069.elts[0] = k_732302;
 c_7312069.elts[1] = nums_73800;
 
-return_closcall1(data,(closure)&c_7312069,  nil);; 
+return_closcall1(data,(closure)&c_7312069,  NULL);; 
 }
 
 static void __lambda_1335(void *data, int argc, object self_734814, object r_732306) {
@@ -34730,7 +34730,7 @@ c_7312028.elts = (object *)alloca(sizeof(object) * 2);
 c_7312028.elts[0] = k_732315;
 c_7312028.elts[1] = nums_73803;
 
-return_closcall1(data,(closure)&c_7312028,  nil);; 
+return_closcall1(data,(closure)&c_7312028,  NULL);; 
 }
 
 static void __lambda_1326(void *data, int argc, object self_734821, object r_732319) {
@@ -36592,7 +36592,7 @@ return_closcall1(data,(closure)&c_7311519,  Cyc_is_null(((closureN)self_734920)-
 static void __lambda_1200(void *data, int argc, object self_734921, object r_732460) {
   if( !eq(boolean_f, r_732460) ){ 
   
-make_cons(c_7311522,obj_char2obj(32),nil);
+make_cons(c_7311522,obj_char2obj(32),NULL);
 return_closcall1(data,  ((closureN)self_734921)->elts[1],  &c_7311522);
 } else { 
   return_closcall1(data,  ((closureN)self_734921)->elts[1],  ((closureN)self_734921)->elts[0]);}
@@ -40555,7 +40555,7 @@ c_7310433.elts[0] = ((closureN)self_735117)->elts[0];
 c_7310433.elts[1] = ((closureN)self_735117)->elts[1];
 c_7310433.elts[2] = ((closureN)self_735117)->elts[2];
 
-return_closcall1(data,(closure)&c_7310433,  nil);; 
+return_closcall1(data,(closure)&c_7310433,  NULL);; 
 }
 
 static void __lambda_986(void *data, int argc, object self_735118, object r_732655) {
@@ -42029,7 +42029,7 @@ c_739990.elts[0] = ((closureN)self_735192)->elts[0];
 c_739990.elts[1] = ((closureN)self_735192)->elts[1];
 c_739990.elts[2] = ((closureN)self_735192)->elts[2];
 
-return_closcall1(data,(closure)&c_739990,  nil);; 
+return_closcall1(data,(closure)&c_739990,  NULL);; 
 }
 
 static void __lambda_906(void *data, int argc, object self_735193, object r_732728) {
@@ -42144,7 +42144,7 @@ c_739914.elts = (object *)alloca(sizeof(object) * 2);
 c_739914.elts[0] = k_732749;
 c_739914.elts[1] = lst_73962;
 
-return_closcall1(data,(closure)&c_739914,  nil);; 
+return_closcall1(data,(closure)&c_739914,  NULL);; 
 }
 
 static void __lambda_897(void *data, int argc, object self_735200, object r_732750) {
@@ -42753,7 +42753,7 @@ c_739753.elts[0] = ((closureN)self_735231)->elts[0];
 c_739753.elts[1] = ((closureN)self_735231)->elts[1];
 c_739753.elts[2] = r_732801;
 
-return_closcall1(data,(closure)&c_739753,  nil);; 
+return_closcall1(data,(closure)&c_739753,  NULL);; 
 }
 
 static void __lambda_860(void *data, int argc, object self_735232, object r_732802) {
@@ -42923,7 +42923,7 @@ c_739717.elts[2] = ((closureN)self_735240)->elts[4];
 object c_739732 = apply(data,(closure)&c_739717,((closureN)self_735240)->elts[2], ((closureN)self_735240)->elts[0]);
 return_closcall1(data,(closure)&c_739717,  c_739732);
 } else { 
-  return_closcall1(data,  ((closureN)self_735240)->elts[3],  nil);}
+  return_closcall1(data,  ((closureN)self_735240)->elts[3],  NULL);}
 ; 
 }
 
@@ -43139,7 +43139,7 @@ c_739671.num_elt = 1;
 c_739671.elts = (object *)alloca(sizeof(object) * 1);
 c_739671.elts[0] = ((closureN)self_735251)->elts[1];
 
-return_closcall1(data,(closure)&c_739671,  nil);}
+return_closcall1(data,(closure)&c_739671,  NULL);}
 ; 
 }
 
@@ -43156,7 +43156,7 @@ c_739673.elts = (object *)alloca(sizeof(object) * 2);
 c_739673.elts[0] = ((closureN)self_735252)->elts[0];
 c_739673.elts[1] = r_732831;
 
-return_closcall1(data,(closure)&c_739673,  nil);; 
+return_closcall1(data,(closure)&c_739673,  NULL);; 
 }
 
 static void __lambda_838(void *data, int argc, object self_735253, object r_732832) {
@@ -43228,7 +43228,7 @@ c_739617.elts = (object *)alloca(sizeof(object) * 2);
 c_739617.elts[0] = ((closureN)self_735257)->elts[0];
 c_739617.elts[1] = ((closureN)self_735257)->elts[1];
 
-return_closcall1(data,(closure)&c_739617,  nil);
+return_closcall1(data,(closure)&c_739617,  NULL);
 } else { 
   
 closureN_type c_739625;
@@ -43414,7 +43414,7 @@ c_739619.elts[0] = ((closureN)self_735268)->elts[0];
 c_739619.elts[1] = ((closureN)self_735268)->elts[1];
 c_739619.elts[2] = r_732818;
 
-return_closcall1(data,(closure)&c_739619,  nil);; 
+return_closcall1(data,(closure)&c_739619,  NULL);; 
 }
 
 static void __lambda_822(void *data, int argc, object self_735269, object r_732819) {
@@ -43607,7 +43607,7 @@ c_739499.elts[3] = ((closureN)self_735281)->elts[3];
 c_739499.elts[4] = r_732852;
 c_739499.elts[5] = ((closureN)self_735281)->elts[4];
 
-return_closcall1(data,(closure)&c_739499,  nil);; 
+return_closcall1(data,(closure)&c_739499,  NULL);; 
 }
 
 static void __lambda_807(void *data, int argc, object self_735282, object r_732854) {
@@ -43628,7 +43628,7 @@ c_739501.elts[4] = ((closureN)self_735282)->elts[4];
 c_739501.elts[5] = r_732854;
 c_739501.elts[6] = ((closureN)self_735282)->elts[5];
 
-return_closcall1(data,(closure)&c_739501,  nil);; 
+return_closcall1(data,(closure)&c_739501,  NULL);; 
 }
 
 static void __lambda_806(void *data, int argc, object self_735283, object r_732856) {
@@ -43767,7 +43767,7 @@ c_739515.elts[1] = ((closureN)self_735289)->elts[1];
 c_739515.elts[2] = ((closureN)self_735289)->elts[2];
 c_739515.elts[3] = r_732848;
 
-return_closcall1(data,(closure)&c_739515,  nil);; 
+return_closcall1(data,(closure)&c_739515,  NULL);; 
 }
 
 static void __lambda_799(void *data, int argc, object self_735290, object r_732849) {
@@ -43852,7 +43852,7 @@ c_739475.elts[0] = ((closureN)self_735294)->elts[0];
 c_739475.elts[1] = ((closureN)self_735294)->elts[1];
 c_739475.elts[2] = r_732860;
 
-return_closcall1(data,(closure)&c_739475,  nil);; 
+return_closcall1(data,(closure)&c_739475,  NULL);; 
 }
 
 static void __lambda_793(void *data, int argc, object self_735295, object r_732861) {
@@ -44014,7 +44014,7 @@ return_closcall2(data,  __glo_zero_127_scheme_base,  &c_739440, n_731016);;
 
 static void __lambda_785(void *data, int argc, object self_735302, object r_732870) {
   if( !eq(boolean_f, r_732870) ){ 
-  return_closcall1(data,  ((closureN)self_735302)->elts[0],  nil);
+  return_closcall1(data,  ((closureN)self_735302)->elts[0],  NULL);
 } else { 
   
 closureN_type c_739444;
@@ -44858,7 +44858,7 @@ c_739073.elts[0] = ((closureN)self_735347)->elts[0];
 c_739073.elts[1] = ((closureN)self_735347)->elts[1];
 c_739073.elts[2] = port_731045;
 
-return_closcall1(data,(closure)&c_739073,  nil);; 
+return_closcall1(data,(closure)&c_739073,  NULL);; 
 }
 
 static void __lambda_727(void *data, int argc, object self_735348, object r_732942) {
@@ -48512,7 +48512,7 @@ c_737996.elts[3] = ((closureN)self_735538)->elts[3];
 c_737996.elts[4] = r_733223;
 c_737996.elts[5] = ((closureN)self_735538)->elts[4];
 
-return_closcall1(data,(closure)&c_737996,  nil);; 
+return_closcall1(data,(closure)&c_737996,  NULL);; 
 }
 
 static void __lambda_514(void *data, int argc, object self_735539, object r_733224) {
@@ -48840,7 +48840,7 @@ c_738188.elts[2] = ((closureN)self_735556)->elts[2];
 c_738188.elts[3] = r_733170;
 c_738188.elts[4] = ((closureN)self_735556)->elts[3];
 
-return_closcall1(data,(closure)&c_738188,  nil);; 
+return_closcall1(data,(closure)&c_738188,  NULL);; 
 }
 
 static void __lambda_496(void *data, int argc, object self_735557, object r_733172) {
@@ -49109,7 +49109,7 @@ c_738128.elts[2] = ((closureN)self_735570)->elts[2];
 c_738128.elts[3] = ((closureN)self_735570)->elts[3];
 c_738128.elts[4] = r_733210;
 
-return_closcall1(data,(closure)&c_738128,  nil);; 
+return_closcall1(data,(closure)&c_738128,  NULL);; 
 }
 
 static void __lambda_482(void *data, int argc, object self_735571, object r_733212) {
@@ -49267,7 +49267,7 @@ c_738026.elts[3] = ((closureN)self_735579)->elts[3];
 c_738026.elts[4] = r_733202;
 c_738026.elts[5] = ((closureN)self_735579)->elts[4];
 
-return_closcall1(data,(closure)&c_738026,  nil);; 
+return_closcall1(data,(closure)&c_738026,  NULL);; 
 }
 
 static void __lambda_473(void *data, int argc, object self_735580, object r_733203) {
@@ -49327,7 +49327,7 @@ c_738032.elts[2] = ((closureN)self_735582)->elts[2];
 c_738032.elts[3] = r_733198;
 c_738032.elts[4] = ((closureN)self_735582)->elts[3];
 
-return_closcall1(data,(closure)&c_738032,  nil);; 
+return_closcall1(data,(closure)&c_738032,  NULL);; 
 }
 
 static void __lambda_470(void *data, int argc, object self_735583, object r_733199) {
@@ -49487,7 +49487,7 @@ c_738051.elts[4] = ((closureN)self_735590)->elts[4];
 c_738051.elts[5] = ((closureN)self_735590)->elts[5];
 c_738051.elts[6] = r_733192;
 
-return_closcall1(data,(closure)&c_738051,  nil);; 
+return_closcall1(data,(closure)&c_738051,  NULL);; 
 }
 
 static void __lambda_462(void *data, int argc, object self_735591, object r_733194) {
@@ -49587,7 +49587,7 @@ c_738061.elts[1] = ((closureN)self_735595)->elts[1];
 c_738061.elts[2] = ((closureN)self_735595)->elts[2];
 c_738061.elts[3] = r_733186;
 
-return_closcall1(data,(closure)&c_738061,  nil);; 
+return_closcall1(data,(closure)&c_738061,  NULL);; 
 }
 
 static void __lambda_457(void *data, int argc, object self_735596, object r_733187) {
@@ -49755,7 +49755,7 @@ c_737918.elts[2] = ((closureN)self_735603)->elts[2];
 c_737918.elts[3] = ((closureN)self_735603)->elts[3];
 c_737918.elts[4] = r_733253;
 
-return_closcall1(data,(closure)&c_737918,  nil);; 
+return_closcall1(data,(closure)&c_737918,  NULL);; 
 }
 
 static void __lambda_448(void *data, int argc, object self_735604, object r_733255) {
@@ -49831,7 +49831,7 @@ c_737926.elts[1] = ((closureN)self_735607)->elts[1];
 c_737926.elts[2] = ((closureN)self_735607)->elts[2];
 c_737926.elts[3] = r_733251;
 
-return_closcall1(data,(closure)&c_737926,  nil);; 
+return_closcall1(data,(closure)&c_737926,  NULL);; 
 }
 
 static void __lambda_444(void *data, int argc, object self_735608, object r_733252) {
@@ -49868,7 +49868,7 @@ c_737930.elts[1] = ((closureN)self_735609)->elts[1];
 c_737930.elts[2] = ((closureN)self_735609)->elts[2];
 c_737930.elts[3] = r_733249;
 
-return_closcall1(data,(closure)&c_737930,  nil);; 
+return_closcall1(data,(closure)&c_737930,  NULL);; 
 }
 
 static void __lambda_442(void *data, int argc, object self_735610, object r_733250) {
@@ -50139,7 +50139,7 @@ c_737820.elts[2] = ((closureN)self_735624)->elts[2];
 c_737820.elts[3] = ((closureN)self_735624)->elts[3];
 c_737820.elts[4] = r_733277;
 
-return_closcall1(data,(closure)&c_737820,  nil);; 
+return_closcall1(data,(closure)&c_737820,  NULL);; 
 }
 
 static void __lambda_426(void *data, int argc, object self_735625, object r_733279) {
@@ -50215,7 +50215,7 @@ c_737828.elts[1] = ((closureN)self_735628)->elts[1];
 c_737828.elts[2] = ((closureN)self_735628)->elts[2];
 c_737828.elts[3] = r_733275;
 
-return_closcall1(data,(closure)&c_737828,  nil);; 
+return_closcall1(data,(closure)&c_737828,  NULL);; 
 }
 
 static void __lambda_422(void *data, int argc, object self_735629, object r_733276) {
@@ -50252,7 +50252,7 @@ c_737832.elts[1] = ((closureN)self_735630)->elts[1];
 c_737832.elts[2] = ((closureN)self_735630)->elts[2];
 c_737832.elts[3] = r_733272;
 
-return_closcall1(data,(closure)&c_737832,  nil);; 
+return_closcall1(data,(closure)&c_737832,  NULL);; 
 }
 
 static void __lambda_420(void *data, int argc, object self_735631, object r_733274) {
@@ -50757,7 +50757,7 @@ c_737734.elts[0] = ((closureN)self_735657)->elts[0];
 c_737734.elts[1] = ((closureN)self_735657)->elts[1];
 c_737734.elts[2] = r_733378;
 
-return_closcall1(data,(closure)&c_737734,  nil);; 
+return_closcall1(data,(closure)&c_737734,  NULL);; 
 }
 
 static void __lambda_392(void *data, int argc, object self_735658, object r_733379) {
@@ -51261,7 +51261,7 @@ c_737613.elts[6] = ((closureN)self_735680)->elts[6];
 c_737613.elts[7] = ((closureN)self_735680)->elts[7];
 c_737613.elts[8] = r_733355;
 
-return_closcall1(data,(closure)&c_737613,  nil);; 
+return_closcall1(data,(closure)&c_737613,  NULL);; 
 }
 
 static void __lambda_369(void *data, int argc, object self_735681, object r_733356) {
@@ -51330,7 +51330,7 @@ c_737619.elts[5] = ((closureN)self_735683)->elts[5];
 c_737619.elts[6] = ((closureN)self_735683)->elts[6];
 c_737619.elts[7] = r_733351;
 
-return_closcall1(data,(closure)&c_737619,  nil);; 
+return_closcall1(data,(closure)&c_737619,  NULL);; 
 }
 
 static void __lambda_366(void *data, int argc, object self_735684, object r_733352) {
@@ -51491,7 +51491,7 @@ c_737641.elts[2] = ((closureN)self_735691)->elts[2];
 c_737641.elts[3] = ((closureN)self_735691)->elts[3];
 c_737641.elts[4] = r_733343;
 
-return_closcall1(data,(closure)&c_737641,  nil);; 
+return_closcall1(data,(closure)&c_737641,  NULL);; 
 }
 
 static void __lambda_358(void *data, int argc, object self_735692, object r_733344) {
@@ -51784,7 +51784,7 @@ c_737504.elts[6] = ((closureN)self_735706)->elts[6];
 c_737504.elts[7] = ((closureN)self_735706)->elts[7];
 c_737504.elts[8] = r_733330;
 
-return_closcall1(data,(closure)&c_737504,  nil);; 
+return_closcall1(data,(closure)&c_737504,  NULL);; 
 }
 
 static void __lambda_343(void *data, int argc, object self_735707, object r_733331) {
@@ -51853,7 +51853,7 @@ c_737510.elts[5] = ((closureN)self_735709)->elts[5];
 c_737510.elts[6] = ((closureN)self_735709)->elts[6];
 c_737510.elts[7] = r_733326;
 
-return_closcall1(data,(closure)&c_737510,  nil);; 
+return_closcall1(data,(closure)&c_737510,  NULL);; 
 }
 
 static void __lambda_340(void *data, int argc, object self_735710, object r_733327) {
@@ -52014,7 +52014,7 @@ c_737532.elts[2] = ((closureN)self_735717)->elts[2];
 c_737532.elts[3] = ((closureN)self_735717)->elts[3];
 c_737532.elts[4] = r_733318;
 
-return_closcall1(data,(closure)&c_737532,  nil);; 
+return_closcall1(data,(closure)&c_737532,  NULL);; 
 }
 
 static void __lambda_332(void *data, int argc, object self_735718, object r_733319) {
@@ -52314,7 +52314,7 @@ c_737356.elts[3] = ((closureN)self_735737)->elts[3];
 c_737356.elts[4] = ((closureN)self_735737)->elts[4];
 c_737356.elts[5] = r_733303;
 
-return_closcall1(data,(closure)&c_737356,  nil);; 
+return_closcall1(data,(closure)&c_737356,  NULL);; 
 }
 
 static void __lambda_312(void *data, int argc, object self_735738, object r_733304) {
@@ -52374,7 +52374,7 @@ c_737362.elts[2] = ((closureN)self_735740)->elts[2];
 c_737362.elts[3] = ((closureN)self_735740)->elts[3];
 c_737362.elts[4] = r_733299;
 
-return_closcall1(data,(closure)&c_737362,  nil);; 
+return_closcall1(data,(closure)&c_737362,  NULL);; 
 }
 
 static void __lambda_309(void *data, int argc, object self_735741, object r_733300) {
@@ -52447,7 +52447,7 @@ c_737373.elts[1] = ((closureN)self_735744)->elts[1];
 c_737373.elts[2] = ((closureN)self_735744)->elts[2];
 c_737373.elts[3] = r_733296;
 
-return_closcall1(data,(closure)&c_737373,  nil);; 
+return_closcall1(data,(closure)&c_737373,  NULL);; 
 }
 
 static void __lambda_305(void *data, int argc, object self_735745, object r_733297) {
@@ -52809,7 +52809,7 @@ c_737274.elts[4] = ((closureN)self_735760)->elts[4];
 c_737274.elts[5] = r_733434;
 c_737274.elts[6] = ((closureN)self_735760)->elts[5];
 
-return_closcall1(data,(closure)&c_737274,  nil);; 
+return_closcall1(data,(closure)&c_737274,  NULL);; 
 }
 
 static void __lambda_288(void *data, int argc, object self_735761, object r_733436) {
@@ -53602,7 +53602,7 @@ c_737119.elts[0] = ((closureN)self_735804)->elts[0];
 c_737119.elts[1] = ((closureN)self_735804)->elts[1];
 c_737119.elts[2] = r_733394;
 
-return_closcall1(data,(closure)&c_737119,  nil);; 
+return_closcall1(data,(closure)&c_737119,  NULL);; 
 }
 
 static void __lambda_244(void *data, int argc, object self_735805, object r_733396) {
@@ -54803,7 +54803,7 @@ c_736811.elts[0] = ((closureN)self_735869)->elts[0];
 c_736811.elts[1] = ((closureN)self_735869)->elts[1];
 c_736811.elts[2] = r_733503;
 
-return_closcall1(data,(closure)&c_736811,  nil);; 
+return_closcall1(data,(closure)&c_736811,  NULL);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_735870, object r_733505) {
@@ -54854,7 +54854,7 @@ c_736817.elts = (object *)alloca(sizeof(object) * 2);
 c_736817.elts[0] = ((closureN)self_735872)->elts[0];
 c_736817.elts[1] = r_733501;
 
-return_closcall1(data,(closure)&c_736817,  nil);; 
+return_closcall1(data,(closure)&c_736817,  NULL);; 
 }
 
 static void __lambda_174(void *data, int argc, object self_735873, object r_733502) {
@@ -55233,7 +55233,7 @@ c_736708.elts[1] = ((closureN)self_735896)->elts[1];
 c_736708.elts[2] = ((closureN)self_735896)->elts[2];
 c_736708.elts[3] = r_733521;
 
-return_closcall1(data,(closure)&c_736708,  nil);; 
+return_closcall1(data,(closure)&c_736708,  NULL);; 
 }
 
 static void __lambda_149(void *data, int argc, object self_735897, object r_733522) {
@@ -55507,7 +55507,7 @@ c_736605.elts[2] = ((closureN)self_735908)->elts[2];
 c_736605.elts[3] = r_733558;
 c_736605.elts[4] = ((closureN)self_735908)->elts[3];
 
-return_closcall1(data,(closure)&c_736605,  nil);; 
+return_closcall1(data,(closure)&c_736605,  NULL);; 
 }
 
 static void __lambda_136(void *data, int argc, object self_735909, object r_733559) {
@@ -55678,7 +55678,7 @@ c_736624.elts[1] = ((closureN)self_735917)->elts[1];
 c_736624.elts[2] = ((closureN)self_735917)->elts[2];
 c_736624.elts[3] = r_733550;
 
-return_closcall1(data,(closure)&c_736624,  nil);; 
+return_closcall1(data,(closure)&c_736624,  NULL);; 
 }
 
 static void __lambda_127(void *data, int argc, object self_735918, object r_733551) {
@@ -55903,7 +55903,7 @@ c_736528.elts[0] = ((closureN)self_735932)->elts[0];
 c_736528.elts[1] = ((closureN)self_735932)->elts[1];
 c_736528.elts[2] = r_733540;
 
-return_closcall1(data,(closure)&c_736528,  nil);; 
+return_closcall1(data,(closure)&c_736528,  NULL);; 
 }
 
 static void __lambda_112(void *data, int argc, object self_735933, object r_733542) {
@@ -56705,7 +56705,7 @@ c_736319.elts[5] = r_733607;
 c_736319.elts[6] = ((closureN)self_735973)->elts[5];
 c_736319.elts[7] = ((closureN)self_735973)->elts[6];
 
-return_closcall1(data,(closure)&c_736319,  nil);; 
+return_closcall1(data,(closure)&c_736319,  NULL);; 
 }
 
 static void __lambda_70(void *data, int argc, object self_735974, object r_733608) {
@@ -56771,7 +56771,7 @@ c_736325.elts[4] = r_733603;
 c_736325.elts[5] = ((closureN)self_735976)->elts[4];
 c_736325.elts[6] = ((closureN)self_735976)->elts[5];
 
-return_closcall1(data,(closure)&c_736325,  nil);; 
+return_closcall1(data,(closure)&c_736325,  NULL);; 
 }
 
 static void __lambda_67(void *data, int argc, object self_735977, object r_733604) {
@@ -56856,7 +56856,7 @@ c_736333.elts[4] = r_733600;
 c_736333.elts[5] = ((closureN)self_735980)->elts[4];
 c_736333.elts[6] = ((closureN)self_735980)->elts[5];
 
-return_closcall1(data,(closure)&c_736333,  nil);; 
+return_closcall1(data,(closure)&c_736333,  NULL);; 
 }
 
 static void __lambda_63(void *data, int argc, object self_735981, object r_733601) {
@@ -56938,7 +56938,7 @@ c_736341.elts[2] = r_733594;
 c_736341.elts[3] = ((closureN)self_735984)->elts[2];
 c_736341.elts[4] = ((closureN)self_735984)->elts[3];
 
-return_closcall1(data,(closure)&c_736341,  nil);; 
+return_closcall1(data,(closure)&c_736341,  NULL);; 
 }
 
 static void __lambda_59(void *data, int argc, object self_735985, object r_733595) {
@@ -57903,7 +57903,7 @@ static void __lambda_3(void *data, int argc, object self_736039) {
 static void __lambda_2(void *data, int argc, closure _,object k_733681) {
   Cyc_st_add(data, "scheme/base.sld:features");
 
-make_cons(c_736052,quote_posix,nil);
+make_cons(c_736052,quote_posix,NULL);
 
 make_cons(c_736051,quote_ieee_91float,&c_736052);
 

@@ -87,33 +87,33 @@
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries = nil;
-object __glo_lib_117get_91dep_91list_scheme_cyclone_libraries = nil;
-object __glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries = nil;
-object __glo_lib_117resolve_91meta_scheme_cyclone_libraries = nil;
-object __glo_lib_117import_91_125metalist_scheme_cyclone_libraries = nil;
-object __glo_lib_117idb_117id_91_125import_scheme_cyclone_libraries = nil;
-object __glo_lib_117idb_117ids_scheme_cyclone_libraries = nil;
-object __glo_lib_117imports_91_125idb_scheme_cyclone_libraries = nil;
-object __glo_lib_117resolve_91imports_scheme_cyclone_libraries = nil;
-object __glo_lib_117import_91_125export_91list_scheme_cyclone_libraries = nil;
-object __glo_lib_117read_91imports_scheme_cyclone_libraries = nil;
-object __glo_lib_117import_91_125path_scheme_cyclone_libraries = nil;
-object __glo_lib_117import_91_125filename_scheme_cyclone_libraries = nil;
-object __glo_lib_117atom_91_125string_scheme_cyclone_libraries = nil;
-object __glo_lib_117include_91c_91headers_scheme_cyclone_libraries = nil;
-object __glo_lib_117includes_scheme_cyclone_libraries = nil;
-object __glo_lib_117body_scheme_cyclone_libraries = nil;
-object __glo_lib_117imports_scheme_cyclone_libraries = nil;
-object __glo_lib_117exports_scheme_cyclone_libraries = nil;
-object __glo_lib_117rename_91exports_scheme_cyclone_libraries = nil;
-object __glo_lib_117raw_91exports_scheme_cyclone_libraries = nil;
-object __glo_lib_117result_scheme_cyclone_libraries = nil;
-object __glo_lib_117name_91_125symbol_scheme_cyclone_libraries = nil;
-object __glo_lib_117name_91_125string_scheme_cyclone_libraries = nil;
-object __glo_lib_117name_scheme_cyclone_libraries = nil;
-object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries = nil;
-object __glo_library_127_scheme_cyclone_libraries = nil;
+object __glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries = NULL;
+object __glo_lib_117get_91dep_91list_scheme_cyclone_libraries = NULL;
+object __glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries = NULL;
+object __glo_lib_117resolve_91meta_scheme_cyclone_libraries = NULL;
+object __glo_lib_117import_91_125metalist_scheme_cyclone_libraries = NULL;
+object __glo_lib_117idb_117id_91_125import_scheme_cyclone_libraries = NULL;
+object __glo_lib_117idb_117ids_scheme_cyclone_libraries = NULL;
+object __glo_lib_117imports_91_125idb_scheme_cyclone_libraries = NULL;
+object __glo_lib_117resolve_91imports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117import_91_125export_91list_scheme_cyclone_libraries = NULL;
+object __glo_lib_117read_91imports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117import_91_125path_scheme_cyclone_libraries = NULL;
+object __glo_lib_117import_91_125filename_scheme_cyclone_libraries = NULL;
+object __glo_lib_117atom_91_125string_scheme_cyclone_libraries = NULL;
+object __glo_lib_117include_91c_91headers_scheme_cyclone_libraries = NULL;
+object __glo_lib_117includes_scheme_cyclone_libraries = NULL;
+object __glo_lib_117body_scheme_cyclone_libraries = NULL;
+object __glo_lib_117imports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117exports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117rename_91exports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117raw_91exports_scheme_cyclone_libraries = NULL;
+object __glo_lib_117result_scheme_cyclone_libraries = NULL;
+object __glo_lib_117name_91_125symbol_scheme_cyclone_libraries = NULL;
+object __glo_lib_117name_91_125string_scheme_cyclone_libraries = NULL;
+object __glo_lib_117name_scheme_cyclone_libraries = NULL;
+object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries = NULL;
+object __glo_library_127_scheme_cyclone_libraries = NULL;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
@@ -552,7 +552,7 @@ c_731291.elts = (object *)alloca(sizeof(object) * 2);
 c_731291.elts[0] = ((closureN)self_73374)->elts[0];
 c_731291.elts[1] = ((closureN)self_73374)->elts[1];
 
-return_closcall1(data,(closure)&c_731291,  nil);; 
+return_closcall1(data,(closure)&c_731291,  NULL);; 
 }
 
 static void __lambda_224(void *data, int argc, object self_73375, object result_7344) {
@@ -1344,7 +1344,7 @@ c_731310.elts[0] = ((closureN)self_73415)->elts[0];
 c_731310.elts[1] = ((closureN)self_73415)->elts[1];
 c_731310.elts[2] = ((closureN)self_73415)->elts[2];
 
-return_closcall1(data,(closure)&c_731310,  nil);; 
+return_closcall1(data,(closure)&c_731310,  NULL);; 
 }
 
 static void __lambda_183(void *data, int argc, object self_73416, object r_73132) {
@@ -1459,7 +1459,7 @@ c_731208.elts[1] = ((closureN)self_73422)->elts[0];
 c_731208.elts[2] = ((closureN)self_73422)->elts[1];
 c_731208.elts[3] = ((closureN)self_73422)->elts[2];
 
-return_closcall1(data,(closure)&c_731208,  nil);; 
+return_closcall1(data,(closure)&c_731208,  NULL);; 
 }
 
 static void __lambda_175(void *data, int argc, object self_73423, object r_73177) {
@@ -1791,7 +1791,7 @@ c_731122.elts = (object *)alloca(sizeof(object) * 2);
 c_731122.elts[0] = ((closureN)self_73441)->elts[0];
 c_731122.elts[1] = r_73187;
 
-return_closcall1(data,(closure)&c_731122,  nil);; 
+return_closcall1(data,(closure)&c_731122,  NULL);; 
 }
 
 static void __lambda_154(void *data, int argc, object self_73442, object r_73188) {
@@ -2089,7 +2089,7 @@ c_731091.elts[0] = ((closureN)self_73458)->elts[0];
 c_731091.elts[1] = ((closureN)self_73458)->elts[1];
 c_731091.elts[2] = r_73204;
 
-return_closcall1(data,(closure)&c_731091,  nil);; 
+return_closcall1(data,(closure)&c_731091,  NULL);; 
 }
 
 static void __lambda_135(void *data, int argc, object self_73459, object r_73205) {
@@ -2180,7 +2180,7 @@ c_731066.elts[0] = ((closureN)self_73463)->elts[0];
 c_731066.elts[1] = ((closureN)self_73463)->elts[1];
 c_731066.elts[2] = r_73215;
 
-return_closcall1(data,(closure)&c_731066,  nil);; 
+return_closcall1(data,(closure)&c_731066,  NULL);; 
 }
 
 static void __lambda_129(void *data, int argc, object self_73464, object r_73216) {
@@ -3822,7 +3822,7 @@ static void __lambda_16(void *data, int argc, closure _,object k_73349, object r
 if( !eq(boolean_f, result_73113) ){ 
   return_closcall1(data,  k_73349,  result_73113);
 } else { 
-  return_closcall1(data,  k_73349,  nil);}
+  return_closcall1(data,  k_73349,  NULL);}
 ; 
 }
 

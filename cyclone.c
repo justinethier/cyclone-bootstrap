@@ -119,9 +119,9 @@
  } else { (_fn)(td,10,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10); }}
 
 #include "cyclone/types.h"
-object __glo_run_91compiler = nil;
-object __glo_read_91file = nil;
-object __glo_c_91compile_91and_91emit = nil;
+object __glo_run_91compiler = NULL;
+object __glo_read_91file = NULL;
+object __glo_c_91compile_91and_91emit = NULL;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
@@ -2233,7 +2233,7 @@ c_731551.elts[0] = ((closureN)self_73436)->elts[1];
 
 return_closcall1(data,(closure)&c_731551,  cdar(((closureN)self_73436)->elts[0]));
 } else { 
-  return_closcall1(data,  ((closureN)self_73436)->elts[1],  nil);}
+  return_closcall1(data,  ((closureN)self_73436)->elts[1],  NULL);}
 ; 
 }
 
@@ -2679,7 +2679,7 @@ c_73669.elts[11] = ((closureN)self_73455)->elts[10];
 c_73669.elts[12] = ((closureN)self_73455)->elts[11];
 c_73669.elts[13] = ((closureN)self_73455)->elts[12];
 
-return_closcall1(data,(closure)&c_73669,  nil);; 
+return_closcall1(data,(closure)&c_73669,  NULL);; 
 }
 
 static void __lambda_182(void *data, int argc, object self_73456, object r_73359) {
@@ -2735,7 +2735,7 @@ c_73673.elts[11] = ((closureN)self_73457)->elts[11];
 c_73673.elts[12] = ((closureN)self_73457)->elts[12];
 c_73673.elts[13] = ((closureN)self_73457)->elts[13];
 
-return_closcall1(data,(closure)&c_73673,  nil);; 
+return_closcall1(data,(closure)&c_73673,  NULL);; 
 }
 
 static void __lambda_180(void *data, int argc, object self_73458, object r_73358) {
@@ -2819,7 +2819,7 @@ c_73679.elts[11] = ((closureN)self_73460)->elts[11];
 c_73679.elts[12] = ((closureN)self_73460)->elts[12];
 c_73679.elts[13] = ((closureN)self_73460)->elts[13];
 
-return_closcall1(data,(closure)&c_73679,  nil);; 
+return_closcall1(data,(closure)&c_73679,  NULL);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_73461, object r_73357) {
@@ -2875,7 +2875,7 @@ c_73683.elts[11] = ((closureN)self_73462)->elts[11];
 c_73683.elts[12] = ((closureN)self_73462)->elts[12];
 c_73683.elts[13] = ((closureN)self_73462)->elts[13];
 
-return_closcall1(data,(closure)&c_73683,  nil);; 
+return_closcall1(data,(closure)&c_73683,  NULL);; 
 }
 
 static void __lambda_175(void *data, int argc, object self_73463, object r_73356) {
@@ -2931,7 +2931,7 @@ c_73687.elts[11] = ((closureN)self_73464)->elts[11];
 c_73687.elts[12] = ((closureN)self_73464)->elts[12];
 c_73687.elts[13] = ((closureN)self_73464)->elts[13];
 
-return_closcall1(data,(closure)&c_73687,  nil);; 
+return_closcall1(data,(closure)&c_73687,  NULL);; 
 }
 
 static void __lambda_173(void *data, int argc, object self_73465, object r_73355) {
@@ -2987,7 +2987,7 @@ c_73691.elts[11] = ((closureN)self_73466)->elts[11];
 c_73691.elts[12] = ((closureN)self_73466)->elts[12];
 c_73691.elts[13] = ((closureN)self_73466)->elts[13];
 
-return_closcall1(data,(closure)&c_73691,  nil);; 
+return_closcall1(data,(closure)&c_73691,  NULL);; 
 }
 
 static void __lambda_171(void *data, int argc, object self_73467, object r_73354) {
@@ -3043,7 +3043,7 @@ c_73695.elts[11] = ((closureN)self_73468)->elts[11];
 c_73695.elts[12] = ((closureN)self_73468)->elts[12];
 c_73695.elts[13] = ((closureN)self_73468)->elts[13];
 
-return_closcall1(data,(closure)&c_73695,  nil);; 
+return_closcall1(data,(closure)&c_73695,  NULL);; 
 }
 
 static void __lambda_169(void *data, int argc, object self_73469, object r_73353) {
@@ -3099,7 +3099,7 @@ c_73699.elts[11] = ((closureN)self_73470)->elts[11];
 c_73699.elts[12] = ((closureN)self_73470)->elts[12];
 c_73699.elts[13] = ((closureN)self_73470)->elts[13];
 
-return_closcall1(data,(closure)&c_73699,  nil);; 
+return_closcall1(data,(closure)&c_73699,  NULL);; 
 }
 
 static void __lambda_167(void *data, int argc, object self_73471, object r_73352) {
@@ -3751,7 +3751,7 @@ c_73990.elts[9] = ((closureN)self_73495)->elts[9];
 c_73990.elts[10] = ((closureN)self_73495)->elts[10];
 c_73990.elts[11] = ((closureN)self_73495)->elts[11];
 
-return_closcall1(data,(closure)&c_73990,  nil);; 
+return_closcall1(data,(closure)&c_73990,  NULL);; 
 }
 
 static void __lambda_142(void *data, int argc, object self_73496, object r_73288) {
@@ -3778,7 +3778,7 @@ c_73992.elts[10] = r_73288;
 c_73992.elts[11] = ((closureN)self_73496)->elts[10];
 c_73992.elts[12] = ((closureN)self_73496)->elts[11];
 
-return_closcall1(data,(closure)&c_73992,  nil);; 
+return_closcall1(data,(closure)&c_73992,  NULL);; 
 }
 
 static void __lambda_141(void *data, int argc, object self_73497, object r_73289) {
@@ -5353,7 +5353,7 @@ c_731211.elts = (object *)alloca(sizeof(object) * 2);
 c_731211.elts[0] = ((closureN)self_73562)->elts[0];
 c_731211.elts[1] = ((closureN)self_73562)->elts[1];
 
-return_closcall1(data,(closure)&c_731211,  nil);; 
+return_closcall1(data,(closure)&c_731211,  NULL);; 
 }
 
 static void __lambda_75(void *data, int argc, object self_73563, object r_73236) {
@@ -5488,7 +5488,7 @@ c_731093.elts[3] = ((closureN)self_73569)->elts[3];
 c_731093.elts[4] = ((closureN)self_73569)->elts[4];
 
 
-make_cons(c_731148,quote_call_95cc,nil);
+make_cons(c_731148,quote_call_95cc,NULL);
 return_closcall1(data,(closure)&c_731093,  &c_731148);; 
 }
 
@@ -5545,7 +5545,7 @@ c_731099.elts[2] = ((closureN)self_73572)->elts[2];
 c_731099.elts[3] = ((closureN)self_73572)->elts[3];
 
 
-make_cons(c_731141,quote_call_95cc,nil);
+make_cons(c_731141,quote_call_95cc,NULL);
 return_closcall1(data,(closure)&c_731099,  &c_731141);; 
 }
 
@@ -5599,37 +5599,37 @@ c_731105.elts[1] = ((closureN)self_73575)->elts[1];
 c_731105.elts[2] = ((closureN)self_73575)->elts[2];
 
 
-make_cons(c_731123,quote_f,nil);
+make_cons(c_731123,quote_f,NULL);
 
 make_cons(c_731122,quote_k,&c_731123);
 
-make_cons(c_731131,quote_result,nil);
+make_cons(c_731131,quote_result,NULL);
 
 make_cons(c_731130,quote__191,&c_731131);
 
-make_cons(c_731134,quote_result,nil);
+make_cons(c_731134,quote_result,NULL);
 
 make_cons(c_731133,quote_k,&c_731134);
 
-make_cons(c_731132,&c_731133,nil);
+make_cons(c_731132,&c_731133,NULL);
 
 make_cons(c_731129,&c_731130,&c_731132);
 
 make_cons(c_731128,quote_lambda,&c_731129);
 
-make_cons(c_731127,&c_731128,nil);
+make_cons(c_731127,&c_731128,NULL);
 
 make_cons(c_731126,quote_k,&c_731127);
 
 make_cons(c_731125,quote_f,&c_731126);
 
-make_cons(c_731124,&c_731125,nil);
+make_cons(c_731124,&c_731125,NULL);
 
 make_cons(c_731121,&c_731122,&c_731124);
 
 make_cons(c_731120,quote_lambda,&c_731121);
 
-make_cons(c_731119,&c_731120,nil);
+make_cons(c_731119,&c_731120,NULL);
 
 make_cons(c_731118,quote_call_95cc,&c_731119);
 
@@ -5674,7 +5674,7 @@ c_731078.elts[0] = k_73268;
 c_731078.elts[1] = ((closureN)self_73578)->elts[0];
 
 
-make_cons(c_731087,quote_base,nil);
+make_cons(c_731087,quote_base,NULL);
 
 make_cons(c_731086,quote_scheme,&c_731087);
 return_closcall1(data,(closure)&c_731078,  &c_731086);
@@ -6512,7 +6512,7 @@ c_73823.elts[1] = ((closureN)self_73622)->elts[1];
 c_73823.elts[2] = ((closureN)self_73622)->elts[2];
 c_73823.elts[3] = r_73328;
 
-return_closcall1(data,(closure)&c_73823,  nil);; 
+return_closcall1(data,(closure)&c_73823,  NULL);; 
 }
 
 static void __lambda_14(void *data, int argc, object self_73623, object r_73329) {

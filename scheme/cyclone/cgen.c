@@ -167,85 +167,85 @@
  } else { (_fn)(td,9,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9); }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemecyclonecgen_scheme_cyclone_cgen = nil;
-object __glo_autogen_117primitive_91procedures_scheme_cyclone_cgen = nil;
-object __glo_autogen_117defprimitives_scheme_cyclone_cgen = nil;
-object __glo_autogen_scheme_cyclone_cgen = nil;
-object __glo_mta_117code_91gen_scheme_cyclone_cgen = nil;
-object __glo_import_91_125string_scheme_cyclone_cgen = nil;
-object __glo_cgen_117mangle_91global_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91lambda_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91formals_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91closure_scheme_cyclone_cgen = nil;
-object __glo_fl_95cont_127_scheme_cyclone_cgen = nil;
-object __glo_fl_95closure_127_scheme_cyclone_cgen = nil;
-object __glo_compute_91num_91args_scheme_cyclone_cgen = nil;
-object __glo_lambda_91_125env_scheme_cyclone_cgen = nil;
-object __glo_allocate_91lambda_scheme_cyclone_cgen = nil;
-object __glo_lambdas_scheme_cyclone_cgen = nil;
-object __glo_num_91lambdas_scheme_cyclone_cgen = nil;
-object __glo_allocate_91symbol_scheme_cyclone_cgen = nil;
-object __glo__85symbols_85_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91raw_91global_91lambda_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91global_scheme_cyclone_cgen = nil;
-object __glo_add_91global_scheme_cyclone_cgen = nil;
-object __glo_global_91not_91lambda_127_scheme_cyclone_cgen = nil;
-object __glo_global_91lambda_127_scheme_cyclone_cgen = nil;
-object __glo__85global_91syms_85_scheme_cyclone_cgen = nil;
-object __glo__85globals_85_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91if_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91app_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91args_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91ref_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91prim_scheme_cyclone_cgen = nil;
-object __glo_str_91ending_127_scheme_cyclone_cgen = nil;
-object __glo_prim_117allocates_91object_127_scheme_cyclone_cgen = nil;
-object __glo_prim_117arg_91count_127_scheme_cyclone_cgen = nil;
-object __glo_prim_117cont_95no_91args_127_scheme_cyclone_cgen = nil;
-object __glo_prim_117cont_127_scheme_cyclone_cgen = nil;
-object __glo_prim_95cvar_127_scheme_cyclone_cgen = nil;
-object __glo_prim_95c_91var_91assign_scheme_cyclone_cgen = nil;
-object __glo_prim_95data_91arg_127_scheme_cyclone_cgen = nil;
-object __glo_prim_91_125c_91func_scheme_cyclone_cgen = nil;
-object __glo__91_125cstr_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91const_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91bytevector_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91vector_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91scalars_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91quote_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91exp_scheme_cyclone_cgen = nil;
-object __glo_c_91compile_91program_scheme_cyclone_cgen = nil;
-object __glo_c_117serialize_scheme_cyclone_cgen = nil;
-object __glo_c_117append_95prefix_scheme_cyclone_cgen = nil;
-object __glo_c_117append_scheme_cyclone_cgen = nil;
-object __glo_c_117allocs_91_125str2_scheme_cyclone_cgen = nil;
-object __glo_c_117allocs_91_125str_scheme_cyclone_cgen = nil;
-object __glo_c_117num_91args_scheme_cyclone_cgen = nil;
-object __glo_c_117allocs_scheme_cyclone_cgen = nil;
-object __glo_c_117body_scheme_cyclone_cgen = nil;
-object __glo_c_117tuple_95args_scheme_cyclone_cgen = nil;
-object __glo_c_91code_scheme_cyclone_cgen = nil;
-object __glo_c_91code_95vars_scheme_cyclone_cgen = nil;
-object __glo_st_117_91_125var_scheme_cyclone_cgen = nil;
-object __glo_st_117_91_125code_scheme_cyclone_cgen = nil;
-object __glo_st_117add_91function_67_scheme_cyclone_cgen = nil;
-object __glo_c_91macro_91array_91assign_scheme_cyclone_cgen = nil;
-object __glo_c_91macro_91n_91prefix_scheme_cyclone_cgen = nil;
-object __glo_c_91macro_91closcall_scheme_cyclone_cgen = nil;
-object __glo_c_91macro_91return_91direct_scheme_cyclone_cgen = nil;
-object __glo_c_91macro_91return_91closcall_scheme_cyclone_cgen = nil;
-object __glo_emit_91c_91arity_91macros_scheme_cyclone_cgen = nil;
-object __glo_set_91c_91call_91arity_67_scheme_cyclone_cgen = nil;
-object __glo__85c_91call_91arity_85_scheme_cyclone_cgen = nil;
-object __glo__85c_91call_91max_91args_85_scheme_cyclone_cgen = nil;
-object __glo__85c_91main_91function_85_scheme_cyclone_cgen = nil;
-object __glo_cstr_117escape_91chars_scheme_cyclone_cgen = nil;
-object __glo_string_91join_scheme_cyclone_cgen = nil;
-object __glo_emit_91newline_scheme_cyclone_cgen = nil;
-object __glo_emits_85_scheme_cyclone_cgen = nil;
-object __glo_emits_scheme_cyclone_cgen = nil;
-object __glo_emit_85_scheme_cyclone_cgen = nil;
-object __glo_emit_scheme_cyclone_cgen = nil;
+object __glo_lib_91init_117schemecyclonecgen_scheme_cyclone_cgen = NULL;
+object __glo_autogen_117primitive_91procedures_scheme_cyclone_cgen = NULL;
+object __glo_autogen_117defprimitives_scheme_cyclone_cgen = NULL;
+object __glo_autogen_scheme_cyclone_cgen = NULL;
+object __glo_mta_117code_91gen_scheme_cyclone_cgen = NULL;
+object __glo_import_91_125string_scheme_cyclone_cgen = NULL;
+object __glo_cgen_117mangle_91global_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91lambda_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91formals_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91closure_scheme_cyclone_cgen = NULL;
+object __glo_fl_95cont_127_scheme_cyclone_cgen = NULL;
+object __glo_fl_95closure_127_scheme_cyclone_cgen = NULL;
+object __glo_compute_91num_91args_scheme_cyclone_cgen = NULL;
+object __glo_lambda_91_125env_scheme_cyclone_cgen = NULL;
+object __glo_allocate_91lambda_scheme_cyclone_cgen = NULL;
+object __glo_lambdas_scheme_cyclone_cgen = NULL;
+object __glo_num_91lambdas_scheme_cyclone_cgen = NULL;
+object __glo_allocate_91symbol_scheme_cyclone_cgen = NULL;
+object __glo__85symbols_85_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91raw_91global_91lambda_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91global_scheme_cyclone_cgen = NULL;
+object __glo_add_91global_scheme_cyclone_cgen = NULL;
+object __glo_global_91not_91lambda_127_scheme_cyclone_cgen = NULL;
+object __glo_global_91lambda_127_scheme_cyclone_cgen = NULL;
+object __glo__85global_91syms_85_scheme_cyclone_cgen = NULL;
+object __glo__85globals_85_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91if_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91app_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91args_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91ref_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91prim_scheme_cyclone_cgen = NULL;
+object __glo_str_91ending_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_117allocates_91object_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_117arg_91count_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_117cont_95no_91args_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_117cont_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_95cvar_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_95c_91var_91assign_scheme_cyclone_cgen = NULL;
+object __glo_prim_95data_91arg_127_scheme_cyclone_cgen = NULL;
+object __glo_prim_91_125c_91func_scheme_cyclone_cgen = NULL;
+object __glo__91_125cstr_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91const_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91bytevector_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91vector_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91scalars_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91quote_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91exp_scheme_cyclone_cgen = NULL;
+object __glo_c_91compile_91program_scheme_cyclone_cgen = NULL;
+object __glo_c_117serialize_scheme_cyclone_cgen = NULL;
+object __glo_c_117append_95prefix_scheme_cyclone_cgen = NULL;
+object __glo_c_117append_scheme_cyclone_cgen = NULL;
+object __glo_c_117allocs_91_125str2_scheme_cyclone_cgen = NULL;
+object __glo_c_117allocs_91_125str_scheme_cyclone_cgen = NULL;
+object __glo_c_117num_91args_scheme_cyclone_cgen = NULL;
+object __glo_c_117allocs_scheme_cyclone_cgen = NULL;
+object __glo_c_117body_scheme_cyclone_cgen = NULL;
+object __glo_c_117tuple_95args_scheme_cyclone_cgen = NULL;
+object __glo_c_91code_scheme_cyclone_cgen = NULL;
+object __glo_c_91code_95vars_scheme_cyclone_cgen = NULL;
+object __glo_st_117_91_125var_scheme_cyclone_cgen = NULL;
+object __glo_st_117_91_125code_scheme_cyclone_cgen = NULL;
+object __glo_st_117add_91function_67_scheme_cyclone_cgen = NULL;
+object __glo_c_91macro_91array_91assign_scheme_cyclone_cgen = NULL;
+object __glo_c_91macro_91n_91prefix_scheme_cyclone_cgen = NULL;
+object __glo_c_91macro_91closcall_scheme_cyclone_cgen = NULL;
+object __glo_c_91macro_91return_91direct_scheme_cyclone_cgen = NULL;
+object __glo_c_91macro_91return_91closcall_scheme_cyclone_cgen = NULL;
+object __glo_emit_91c_91arity_91macros_scheme_cyclone_cgen = NULL;
+object __glo_set_91c_91call_91arity_67_scheme_cyclone_cgen = NULL;
+object __glo__85c_91call_91arity_85_scheme_cyclone_cgen = NULL;
+object __glo__85c_91call_91max_91args_85_scheme_cyclone_cgen = NULL;
+object __glo__85c_91main_91function_85_scheme_cyclone_cgen = NULL;
+object __glo_cstr_117escape_91chars_scheme_cyclone_cgen = NULL;
+object __glo_string_91join_scheme_cyclone_cgen = NULL;
+object __glo_emit_91newline_scheme_cyclone_cgen = NULL;
+object __glo_emits_85_scheme_cyclone_cgen = NULL;
+object __glo_emits_scheme_cyclone_cgen = NULL;
+object __glo_emit_85_scheme_cyclone_cgen = NULL;
+object __glo_emit_scheme_cyclone_cgen = NULL;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
@@ -2456,7 +2456,7 @@ c_7311015.num_elt = 1;
 c_7311015.elts = (object *)alloca(sizeof(object) * 1);
 c_7311015.elts[0] = ((closureN)self_732184)->elts[0];
 
-return_closcall1(data,(closure)&c_7311015,  nil);; 
+return_closcall1(data,(closure)&c_7311015,  NULL);; 
 }
 
 static void __lambda_1655(void *data, int argc, object self_732185, object r_73691) {
@@ -2486,7 +2486,7 @@ c_7311019.num_elt = 1;
 c_7311019.elts = (object *)alloca(sizeof(object) * 1);
 c_7311019.elts[0] = ((closureN)self_732186)->elts[0];
 
-return_closcall1(data,(closure)&c_7311019,  nil);; 
+return_closcall1(data,(closure)&c_7311019,  NULL);; 
 }
 
 static void __lambda_1653(void *data, int argc, object self_732187, object r_73690) {
@@ -2516,7 +2516,7 @@ c_7311023.num_elt = 1;
 c_7311023.elts = (object *)alloca(sizeof(object) * 1);
 c_7311023.elts[0] = ((closureN)self_732188)->elts[0];
 
-return_closcall1(data,(closure)&c_7311023,  nil);; 
+return_closcall1(data,(closure)&c_7311023,  NULL);; 
 }
 
 static void __lambda_1651(void *data, int argc, object self_732189, object r_73689) {
@@ -2546,7 +2546,7 @@ c_7311027.num_elt = 1;
 c_7311027.elts = (object *)alloca(sizeof(object) * 1);
 c_7311027.elts[0] = ((closureN)self_732190)->elts[0];
 
-return_closcall1(data,(closure)&c_7311027,  nil);; 
+return_closcall1(data,(closure)&c_7311027,  NULL);; 
 }
 
 static void __lambda_1649(void *data, int argc, object self_732191, object r_73688) {
@@ -2637,7 +2637,7 @@ c_7310972.elts[1] = ((closureN)self_732195)->elts[1];
 c_7310972.elts[2] = ((closureN)self_732195)->elts[2];
 c_7310972.elts[3] = r_73707;
 
-return_closcall1(data,(closure)&c_7310972,  nil);; 
+return_closcall1(data,(closure)&c_7310972,  NULL);; 
 }
 
 static void __lambda_1643(void *data, int argc, object self_732196, object r_73709) {
@@ -2694,7 +2694,7 @@ c_7310978.elts[1] = ((closureN)self_732198)->elts[1];
 c_7310978.elts[2] = ((closureN)self_732198)->elts[2];
 c_7310978.elts[3] = r_73704;
 
-return_closcall1(data,(closure)&c_7310978,  nil);; 
+return_closcall1(data,(closure)&c_7310978,  NULL);; 
 }
 
 static void __lambda_1640(void *data, int argc, object self_732199, object r_73706) {
@@ -3395,7 +3395,7 @@ c_7310834.elts[5] = ((closureN)self_732231)->elts[5];
 c_7310834.elts[6] = ((closureN)self_732231)->elts[6];
 c_7310834.elts[7] = r_73939;
 
-return_closcall1(data,(closure)&c_7310834,  nil);; 
+return_closcall1(data,(closure)&c_7310834,  NULL);; 
 }
 
 static void __lambda_1604(void *data, int argc, object self_732232, object r_73941) {
@@ -3701,7 +3701,7 @@ c_739897.elts[5] = ((closureN)self_732251)->elts[5];
 c_739897.elts[6] = ((closureN)self_732251)->elts[6];
 c_739897.elts[7] = ((closureN)self_732251)->elts[7];
 
-return_closcall1(data,(closure)&c_739897,  nil);; 
+return_closcall1(data,(closure)&c_739897,  NULL);; 
 }
 
 static void __lambda_1584(void *data, int argc, object self_732252, object r_73733) {
@@ -4261,7 +4261,7 @@ return_closcall2(data,  __glo_emits_scheme_cyclone_cgen,  &c_7310675, r_73903);;
 
 static void __lambda_1555(void *data, int argc, object self_732281, object r_73902) {
   
-make_string(c_7310678, " = nil;\n");
+make_string(c_7310678, " = NULL;\n");
 return_closcall2(data,  __glo_emits_scheme_cyclone_cgen,  ((closureN)self_732281)->elts[0], &c_7310678);; 
 }
 
@@ -5778,7 +5778,7 @@ c_7310019.elts[2] = ((closureN)self_732368)->elts[2];
 c_7310019.elts[3] = ((closureN)self_732368)->elts[3];
 c_7310019.elts[4] = ((closureN)self_732368)->elts[4];
 
-return_closcall1(data,(closure)&c_7310019,  nil);; 
+return_closcall1(data,(closure)&c_7310019,  NULL);; 
 }
 
 static void __lambda_1467(void *data, int argc, object self_732369, object r_73773) {
@@ -6185,7 +6185,7 @@ c_7310031.elts[4] = ((closureN)self_732389)->elts[4];
 c_7310031.elts[5] = ((closureN)self_732389)->elts[5];
 c_7310031.elts[6] = ((closureN)self_732389)->elts[6];
 
-return_closcall1(data,(closure)&c_7310031,  nil);; 
+return_closcall1(data,(closure)&c_7310031,  NULL);; 
 }
 
 static void __lambda_1446(void *data, int argc, object self_732390, object r_73777) {
@@ -11096,7 +11096,7 @@ c_738881.elts[2] = ((closureN)self_732647)->elts[2];
 c_738881.elts[3] = ((closureN)self_732647)->elts[3];
 c_738881.elts[4] = r_731172;
 
-return_closcall1(data,(closure)&c_738881,  nil);; 
+return_closcall1(data,(closure)&c_738881,  NULL);; 
 }
 
 static void __lambda_1177(void *data, int argc, object self_732648, object r_731173) {
@@ -12631,7 +12631,7 @@ c_738704.elts[2] = ((closureN)self_732723)->elts[2];
 c_738704.elts[3] = ((closureN)self_732723)->elts[3];
 c_738704.elts[4] = r_731333;
 
-return_closcall1(data,(closure)&c_738704,  nil);; 
+return_closcall1(data,(closure)&c_738704,  NULL);; 
 }
 
 static void __lambda_1095(void *data, int argc, object self_732724, object r_731335) {
@@ -16346,7 +16346,7 @@ c_737818.elts = (object *)alloca(sizeof(object) * 2);
 c_737818.elts[0] = ((closureN)self_732919)->elts[0];
 c_737818.elts[1] = ((closureN)self_732919)->elts[1];
 
-return_closcall1(data,(closure)&c_737818,  nil);
+return_closcall1(data,(closure)&c_737818,  NULL);
 } else { 
   return_closcall1(data,  ((closureN)self_732919)->elts[1],  boolean_f);}
 ; 
@@ -16388,7 +16388,7 @@ c_737787.elts[0] = ((closureN)self_732921)->elts[0];
 c_737787.elts[1] = ((closureN)self_732921)->elts[1];
 
 
-make_cons(c_737811,quote__95,nil);
+make_cons(c_737811,quote__95,NULL);
 
 make_cons(c_737810,quote__85,&c_737811);
 
@@ -16467,7 +16467,7 @@ c_737773.elts[0] = ((closureN)self_732923)->elts[0];
 c_737773.elts[1] = ((closureN)self_732923)->elts[1];
 
 
-make_cons(c_737780,quote_Cyc_91current_91exception_91handler,nil);
+make_cons(c_737780,quote_Cyc_91current_91exception_91handler,NULL);
 
 make_cons(c_737779,quote_command_91line_91arguments,&c_737780);
 return_closcall1(data,(closure)&c_737773,  &c_737779);
@@ -16512,7 +16512,7 @@ c_737730.elts[0] = ((closureN)self_732925)->elts[0];
 c_737730.elts[1] = ((closureN)self_732925)->elts[1];
 
 
-make_cons(c_737766,quote_Cyc_91installation_91dir,nil);
+make_cons(c_737766,quote_Cyc_91installation_91dir,NULL);
 
 make_cons(c_737765,quote_list_91_125vector,&c_737766);
 
@@ -16615,7 +16615,7 @@ c_737682.elts[0] = ((closureN)self_732927)->elts[0];
 c_737682.elts[1] = ((closureN)self_732927)->elts[1];
 
 
-make_cons(c_737723,quote_cell,nil);
+make_cons(c_737723,quote_cell,NULL);
 
 make_cons(c_737722,quote_cons,&c_737723);
 
@@ -18532,7 +18532,7 @@ c_737195.elts[0] = k_731517;
 c_737195.elts[1] = p_73574;
 
 
-make_cons(c_737264,quote_set_91cell_67,nil);
+make_cons(c_737264,quote_set_91cell_67,NULL);
 
 make_cons(c_737263,quote_procedure_127,&c_737264);
 
@@ -26435,7 +26435,7 @@ static void __lambda_336(void *data, int argc, object self_733469) {
 
 static void __lambda_335(void *data, int argc, object self_733470) {
   
-make_string(c_735411, "nil");
+make_string(c_735411, "NULL");
 return_closcall2(data,  __glo_c_91code_scheme_cyclone_cgen,  ((closureN)self_733470)->elts[0], &c_735411);; 
 }
 
@@ -28612,7 +28612,7 @@ static void __lambda_223(void *data, int argc, object self_733579, object r_7319
 
 static void __lambda_222(void *data, int argc, object self_733580) {
   
-make_string(c_734865, "nil");
+make_string(c_734865, "NULL");
 return_closcall2(data,  __glo_c_91code_scheme_cyclone_cgen,  ((closureN)self_733580)->elts[0], &c_734865);; 
 }
 
@@ -29143,7 +29143,7 @@ c_734775.elts[3] = ((closureN)self_733600)->elts[3];
 c_734775.elts[4] = r_731945;
 c_734775.elts[5] = ((closureN)self_733600)->elts[4];
 
-return_closcall1(data,(closure)&c_734775,  nil);; 
+return_closcall1(data,(closure)&c_734775,  NULL);; 
 }
 
 static void __lambda_199(void *data, int argc, object self_733601, object r_731947) {
@@ -31413,7 +31413,7 @@ c_734037.elts[4] = ((closureN)self_733718)->elts[4];
 c_734037.elts[5] = ((closureN)self_733718)->elts[5];
 c_734037.elts[6] = r_732118;
 
-return_closcall1(data,(closure)&c_734037,  nil);; 
+return_closcall1(data,(closure)&c_734037,  NULL);; 
 }
 
 static void __lambda_59(void *data, int argc, object self_733719, object r_732120) {
@@ -32160,7 +32160,7 @@ c_733849.elts[0] = ((closureN)self_733759)->elts[0];
 c_733849.elts[1] = ((closureN)self_733759)->elts[1];
 c_733849.elts[2] = r_732131;
 
-return_closcall1(data,(closure)&c_733849,  nil);; 
+return_closcall1(data,(closure)&c_733849,  NULL);; 
 }
 
 static void __lambda_17(void *data, int argc, object self_733760, object r_732132) {
