@@ -199,10 +199,7 @@ typedef long tag_type;
 #define bytevector_tag 21
 #define c_opaque_tag 22
 
-#define nil NULL
 #define eq(x,y) (x == y)
-#define nullp(x) (x == NULL)
-
 #define type_of(x) (((list) x)->tag)
 #define forward(x) (((list) x)->cons_car)
 
