@@ -133,6 +133,6 @@ void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure 
 make_pair(c_7343, &pair_7340,Cyc_global_variables);
 make_pair(c_7344, &pair_7342, &c_7343);
 Cyc_global_variables = &c_7344;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
 }

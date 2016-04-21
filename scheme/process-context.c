@@ -118,6 +118,6 @@ make_pair(c_7326, &pair_7320, &c_7325);
 make_pair(c_7327, &pair_7322, &c_7326);
 make_pair(c_7328, &pair_7324, &c_7327);
 Cyc_global_variables = &c_7328;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, 1, cont, cont);
 }

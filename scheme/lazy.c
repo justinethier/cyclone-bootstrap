@@ -820,6 +820,6 @@ make_pair(c_73254, &pair_73246, &c_73253);
 make_pair(c_73255, &pair_73248, &c_73254);
 make_pair(c_73256, &pair_73250, &c_73255);
 Cyc_global_variables = &c_73256;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemelazy_scheme_lazy)->fn)(data, 1, cont, cont);
 }

@@ -907,6 +907,6 @@ make_pair(c_73292, &pair_73268, &c_73291);
 make_pair(c_73293, &pair_73270, &c_73292);
 make_pair(c_73294, &pair_73272, &c_73293);
 Cyc_global_variables = &c_73294;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, 1, cont, cont);
 }

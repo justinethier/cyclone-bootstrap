@@ -324,6 +324,6 @@ void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure
 make_pair(c_7355, &pair_7352,Cyc_global_variables);
 make_pair(c_7356, &pair_7354, &c_7355);
 Cyc_global_variables = &c_7356;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
 }

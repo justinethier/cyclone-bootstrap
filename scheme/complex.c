@@ -270,6 +270,6 @@ make_pair(c_7366, &pair_7357, &c_7365);
 make_pair(c_7367, &pair_7359, &c_7366);
 make_pair(c_7368, &pair_7361, &c_7367);
 Cyc_global_variables = &c_7368;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecomplex_scheme_complex)->fn)(data, 1, cont, cont);
 }

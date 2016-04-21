@@ -7875,6 +7875,6 @@ make_pair(c_732259, &pair_732254,Cyc_global_variables);
 make_pair(c_732260, &pair_732256, &c_732259);
 make_pair(c_732261, &pair_732258, &c_732260);
 Cyc_global_variables = &c_732261;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda)->fn)(data, 1, cont, cont);
 }

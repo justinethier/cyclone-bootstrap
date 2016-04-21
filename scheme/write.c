@@ -328,6 +328,6 @@ make_pair(c_7378, &pair_7373,Cyc_global_variables);
 make_pair(c_7379, &pair_7375, &c_7378);
 make_pair(c_7380, &pair_7377, &c_7379);
 Cyc_global_variables = &c_7380;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemewrite_scheme_write)->fn)(data, 1, cont, cont);
 }

@@ -1013,6 +1013,6 @@ make_pair(c_73303, &pair_73291, &c_73302);
 make_pair(c_73304, &pair_73293, &c_73303);
 make_pair(c_73305, &pair_73295, &c_73304);
 Cyc_global_variables = &c_73305;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);
 }

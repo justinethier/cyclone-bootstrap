@@ -4185,6 +4185,6 @@ make_pair(c_731620, &pair_731591, &c_731619);
 make_pair(c_731621, &pair_731593, &c_731620);
 make_pair(c_731622, &pair_731595, &c_731621);
 Cyc_global_variables = &c_731622;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries)->fn)(data, 1, cont, cont);
 }

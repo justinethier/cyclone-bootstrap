@@ -217,6 +217,6 @@ make_pair(c_7384, &pair_7371, &c_7383);
 make_pair(c_7385, &pair_7373, &c_7384);
 make_pair(c_7386, &pair_7375, &c_7385);
 Cyc_global_variables = &c_7386;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }

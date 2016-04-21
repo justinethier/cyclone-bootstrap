@@ -7076,7 +7076,7 @@ c_7310166.elts[0] = ((closureN)self_732434)->elts[0];
 c_7310166.elts[1] = ((closureN)self_732434)->elts[1];
 
 
-make_string(c_7310176, "cont = ((closure1_type *)cont)->elt1;");
+make_string(c_7310176, "cont = ((closure1_type *)cont)->element;");
 return_closcall2(data,  __glo_emit_scheme_cyclone_cgen,  &c_7310166, &c_7310176);; 
 }
 
@@ -33100,6 +33100,6 @@ make_pair(c_7311280, &pair_7311199, &c_7311279);
 make_pair(c_7311281, &pair_7311201, &c_7311280);
 make_pair(c_7311282, &pair_7311203, &c_7311281);
 Cyc_global_variables = &c_7311282;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonecgen_scheme_cyclone_cgen)->fn)(data, 1, cont, cont);
 }

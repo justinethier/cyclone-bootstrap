@@ -12730,6 +12730,6 @@ make_pair(c_734409, &pair_734372, &c_734408);
 make_pair(c_734410, &pair_734374, &c_734409);
 make_pair(c_734411, &pair_734376, &c_734410);
 Cyc_global_variables = &c_734411;
-cont = ((closure1_type *)cont)->elt1;
+cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeread_scheme_read)->fn)(data, 1, cont, cont);
 }
