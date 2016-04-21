@@ -27601,7 +27601,7 @@ c_735132.elts[4] = ((closureN)self_733526)->elts[5];
 c_735132.elts[5] = ((closureN)self_733526)->elts[6];
 
 
-make_string(c_735154, ".elts[");
+make_string(c_735154, ".elements[");
 
 make_string(c_735156, "] = ");
 
@@ -27823,11 +27823,11 @@ make_string(c_735068, "make_empty_vector(");
 
 make_string(c_735072, ");");
 
-make_string(c_735076, ".num_elt = ");
+make_string(c_735076, ".num_elements = ");
 
 make_string(c_735078, ";");
 
-make_string(c_735082, ".elts = (object *)alloca(sizeof(object) * ");
+make_string(c_735082, ".elements = (object *)alloca(sizeof(object) * ");
 
 make_string(c_735083, ");");
 
