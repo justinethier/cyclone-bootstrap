@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -70,7 +70,7 @@
      GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -86,7 +86,7 @@
      GC(td, &c1, buf, 4); return; \
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define closcall5(td,clo,a1,a2,a3,a4,a5) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,4, (closure)(a1), clo,a2,a3,a4,a5); } else { ((clo)->fn)(td,5,clo,a1,a2,a3,a4,a5);}
+#define closcall5(td,clo,a1,a2,a3,a4,a5) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,4, (closure)(a1), clo,a2,a3,a4,a5); } else { ((clo)->fn)(td,5,clo,a1,a2,a3,a4,a5);}
 #define return_closcall5(td, clo,a1,a2,a3,a4,a5) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -915,7 +915,7 @@ c_73117.elts = (object *)alloca(sizeof(object) * 1);
 c_73117.elts[0] = k_7372;
 
 
-make_cons(c_73131,name_7320, body_7319);
+make_pair(c_73131,name_7320, body_7319);
 return_closcall1(data,(closure)&c_73117,  &c_73131);; 
 }
 
@@ -932,7 +932,7 @@ c_73119.elts = (object *)alloca(sizeof(object) * 1);
 c_73119.elts[0] = ((closureN)self_73112)->elts[0];
 
 
-make_cons(c_73128,r_7375, __glo__85macro_117defined_91macros_85_scheme_cyclone_macros);
+make_pair(c_73128,r_7375, __glo__85macro_117defined_91macros_85_scheme_cyclone_macros);
 return_closcall1(data,(closure)&c_73119,  &c_73128);; 
 }
 
@@ -992,26 +992,26 @@ void c_schemecyclonemacros_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85macro_117defined_91macros_85_scheme_cyclone_macros = boolean_f; 
   __glo__85macro_117env_85_scheme_cyclone_macros = boolean_f; 
 
-  make_cvar(cvar_73276, (object *)&__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);make_cons(pair_73277, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73276);
-  make_cvar(cvar_73278, (object *)&__glo_macro_117expand_scheme_cyclone_macros);make_cons(pair_73279, find_or_add_symbol("macro:expand"), &cvar_73278);
-  make_cvar(cvar_73280, (object *)&__glo_macro_117macro_127_scheme_cyclone_macros);make_cons(pair_73281, find_or_add_symbol("macro:macro?"), &cvar_73280);
-  make_cvar(cvar_73282, (object *)&__glo_define_91syntax_127_scheme_cyclone_macros);make_cons(pair_73283, find_or_add_symbol("define-syntax?"), &cvar_73282);
-  make_cvar(cvar_73284, (object *)&__glo_macro_117get_91defined_91macros_scheme_cyclone_macros);make_cons(pair_73285, find_or_add_symbol("macro:get-defined-macros"), &cvar_73284);
-  make_cvar(cvar_73286, (object *)&__glo_macro_117get_91env_scheme_cyclone_macros);make_cons(pair_73287, find_or_add_symbol("macro:get-env"), &cvar_73286);
-  make_cvar(cvar_73288, (object *)&__glo_macro_117load_91env_67_scheme_cyclone_macros);make_cons(pair_73289, find_or_add_symbol("macro:load-env!"), &cvar_73288);
-  make_cvar(cvar_73290, (object *)&__glo_macro_117add_67_scheme_cyclone_macros);make_cons(pair_73291, find_or_add_symbol("macro:add!"), &cvar_73290);
-  make_cvar(cvar_73292, (object *)&__glo__85macro_117defined_91macros_85_scheme_cyclone_macros);make_cons(pair_73293, find_or_add_symbol("*macro:defined-macros*"), &cvar_73292);
-  make_cvar(cvar_73294, (object *)&__glo__85macro_117env_85_scheme_cyclone_macros);make_cons(pair_73295, find_or_add_symbol("*macro:env*"), &cvar_73294);
-make_cons(c_73296, &pair_73277,Cyc_global_variables);
-make_cons(c_73297, &pair_73279, &c_73296);
-make_cons(c_73298, &pair_73281, &c_73297);
-make_cons(c_73299, &pair_73283, &c_73298);
-make_cons(c_73300, &pair_73285, &c_73299);
-make_cons(c_73301, &pair_73287, &c_73300);
-make_cons(c_73302, &pair_73289, &c_73301);
-make_cons(c_73303, &pair_73291, &c_73302);
-make_cons(c_73304, &pair_73293, &c_73303);
-make_cons(c_73305, &pair_73295, &c_73304);
+  make_cvar(cvar_73276, (object *)&__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);make_pair(pair_73277, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73276);
+  make_cvar(cvar_73278, (object *)&__glo_macro_117expand_scheme_cyclone_macros);make_pair(pair_73279, find_or_add_symbol("macro:expand"), &cvar_73278);
+  make_cvar(cvar_73280, (object *)&__glo_macro_117macro_127_scheme_cyclone_macros);make_pair(pair_73281, find_or_add_symbol("macro:macro?"), &cvar_73280);
+  make_cvar(cvar_73282, (object *)&__glo_define_91syntax_127_scheme_cyclone_macros);make_pair(pair_73283, find_or_add_symbol("define-syntax?"), &cvar_73282);
+  make_cvar(cvar_73284, (object *)&__glo_macro_117get_91defined_91macros_scheme_cyclone_macros);make_pair(pair_73285, find_or_add_symbol("macro:get-defined-macros"), &cvar_73284);
+  make_cvar(cvar_73286, (object *)&__glo_macro_117get_91env_scheme_cyclone_macros);make_pair(pair_73287, find_or_add_symbol("macro:get-env"), &cvar_73286);
+  make_cvar(cvar_73288, (object *)&__glo_macro_117load_91env_67_scheme_cyclone_macros);make_pair(pair_73289, find_or_add_symbol("macro:load-env!"), &cvar_73288);
+  make_cvar(cvar_73290, (object *)&__glo_macro_117add_67_scheme_cyclone_macros);make_pair(pair_73291, find_or_add_symbol("macro:add!"), &cvar_73290);
+  make_cvar(cvar_73292, (object *)&__glo__85macro_117defined_91macros_85_scheme_cyclone_macros);make_pair(pair_73293, find_or_add_symbol("*macro:defined-macros*"), &cvar_73292);
+  make_cvar(cvar_73294, (object *)&__glo__85macro_117env_85_scheme_cyclone_macros);make_pair(pair_73295, find_or_add_symbol("*macro:env*"), &cvar_73294);
+make_pair(c_73296, &pair_73277,Cyc_global_variables);
+make_pair(c_73297, &pair_73279, &c_73296);
+make_pair(c_73298, &pair_73281, &c_73297);
+make_pair(c_73299, &pair_73283, &c_73298);
+make_pair(c_73300, &pair_73285, &c_73299);
+make_pair(c_73301, &pair_73287, &c_73300);
+make_pair(c_73302, &pair_73289, &c_73301);
+make_pair(c_73303, &pair_73291, &c_73302);
+make_pair(c_73304, &pair_73293, &c_73303);
+make_pair(c_73305, &pair_73295, &c_73304);
 Cyc_global_variables = &c_73305;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);

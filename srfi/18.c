@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -70,7 +70,7 @@
      GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -86,7 +86,7 @@
      GC(td, &c1, buf, 4); return; \
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define closcall6(td,clo,a1,a2,a3,a4,a5,a6) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,5, (closure)(a1), clo,a2,a3,a4,a5,a6); } else { ((clo)->fn)(td,6,clo,a1,a2,a3,a4,a5,a6);}
+#define closcall6(td,clo,a1,a2,a3,a4,a5,a6) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,5, (closure)(a1), clo,a2,a3,a4,a5,a6); } else { ((clo)->fn)(td,6,clo,a1,a2,a3,a4,a5,a6);}
 #define return_closcall6(td, clo,a1,a2,a3,a4,a5,a6) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -862,50 +862,50 @@ void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure con
   mclosure0(c_7389, (function_type)__lambda_5);c_7389.num_args = 1; 
   __glo_thread_127_srfi_18 = &c_7389; 
 
-  make_cvar(cvar_73229, (object *)&__glo_lib_91init_117srfi18_srfi_18);make_cons(pair_73230, find_or_add_symbol("lib-init:srfi18"), &cvar_73229);
-  make_cvar(cvar_73231, (object *)&__glo_condition_91variable_91broadcast_67_srfi_18);make_cons(pair_73232, find_or_add_symbol("condition-variable-broadcast!"), &cvar_73231);
-  make_cvar(cvar_73233, (object *)&__glo_condition_91variable_91signal_67_srfi_18);make_cons(pair_73234, find_or_add_symbol("condition-variable-signal!"), &cvar_73233);
-  make_cvar(cvar_73235, (object *)&__glo_condition_91variable_91wait_67_srfi_18);make_cons(pair_73236, find_or_add_symbol("condition-variable-wait!"), &cvar_73235);
-  make_cvar(cvar_73237, (object *)&__glo_make_91condition_91variable_srfi_18);make_cons(pair_73238, find_or_add_symbol("make-condition-variable"), &cvar_73237);
-  make_cvar(cvar_73239, (object *)&__glo_condition_91variable_127_srfi_18);make_cons(pair_73240, find_or_add_symbol("condition-variable?"), &cvar_73239);
-  make_cvar(cvar_73241, (object *)&__glo_Cyc_91mutex_91unlock_67_srfi_18);make_cons(pair_73242, find_or_add_symbol("Cyc-mutex-unlock!"), &cvar_73241);
-  make_cvar(cvar_73243, (object *)&__glo_mutex_91unlock_67_srfi_18);make_cons(pair_73244, find_or_add_symbol("mutex-unlock!"), &cvar_73243);
-  make_cvar(cvar_73245, (object *)&__glo_mutex_91lock_67_srfi_18);make_cons(pair_73246, find_or_add_symbol("mutex-lock!"), &cvar_73245);
-  make_cvar(cvar_73247, (object *)&__glo_make_91mutex_srfi_18);make_cons(pair_73248, find_or_add_symbol("make-mutex"), &cvar_73247);
-  make_cvar(cvar_73249, (object *)&__glo_mutex_127_srfi_18);make_cons(pair_73250, find_or_add_symbol("mutex?"), &cvar_73249);
-  make_cvar(cvar_73251, (object *)&__glo_Cyc_91minor_91gc_srfi_18);make_cons(pair_73252, find_or_add_symbol("Cyc-minor-gc"), &cvar_73251);
-  make_cvar(cvar_73253, (object *)&__glo__91_125heap_srfi_18);make_cons(pair_73254, find_or_add_symbol("->heap"), &cvar_73253);
-  make_cvar(cvar_73255, (object *)&__glo_thread_91sleep_67_srfi_18);make_cons(pair_73256, find_or_add_symbol("thread-sleep!"), &cvar_73255);
-  make_cvar(cvar_73257, (object *)&__glo_thread_91terminate_67_srfi_18);make_cons(pair_73258, find_or_add_symbol("thread-terminate!"), &cvar_73257);
-  make_cvar(cvar_73259, (object *)&__glo_thread_91yield_67_srfi_18);make_cons(pair_73260, find_or_add_symbol("thread-yield!"), &cvar_73259);
-  make_cvar(cvar_73261, (object *)&__glo_thread_91start_67_srfi_18);make_cons(pair_73262, find_or_add_symbol("thread-start!"), &cvar_73261);
-  make_cvar(cvar_73263, (object *)&__glo_thread_91specific_91set_67_srfi_18);make_cons(pair_73264, find_or_add_symbol("thread-specific-set!"), &cvar_73263);
-  make_cvar(cvar_73265, (object *)&__glo_thread_91specific_srfi_18);make_cons(pair_73266, find_or_add_symbol("thread-specific"), &cvar_73265);
-  make_cvar(cvar_73267, (object *)&__glo_thread_91name_srfi_18);make_cons(pair_73268, find_or_add_symbol("thread-name"), &cvar_73267);
-  make_cvar(cvar_73269, (object *)&__glo_make_91thread_srfi_18);make_cons(pair_73270, find_or_add_symbol("make-thread"), &cvar_73269);
-  make_cvar(cvar_73271, (object *)&__glo_thread_127_srfi_18);make_cons(pair_73272, find_or_add_symbol("thread?"), &cvar_73271);
-make_cons(c_73273, &pair_73230,Cyc_global_variables);
-make_cons(c_73274, &pair_73232, &c_73273);
-make_cons(c_73275, &pair_73234, &c_73274);
-make_cons(c_73276, &pair_73236, &c_73275);
-make_cons(c_73277, &pair_73238, &c_73276);
-make_cons(c_73278, &pair_73240, &c_73277);
-make_cons(c_73279, &pair_73242, &c_73278);
-make_cons(c_73280, &pair_73244, &c_73279);
-make_cons(c_73281, &pair_73246, &c_73280);
-make_cons(c_73282, &pair_73248, &c_73281);
-make_cons(c_73283, &pair_73250, &c_73282);
-make_cons(c_73284, &pair_73252, &c_73283);
-make_cons(c_73285, &pair_73254, &c_73284);
-make_cons(c_73286, &pair_73256, &c_73285);
-make_cons(c_73287, &pair_73258, &c_73286);
-make_cons(c_73288, &pair_73260, &c_73287);
-make_cons(c_73289, &pair_73262, &c_73288);
-make_cons(c_73290, &pair_73264, &c_73289);
-make_cons(c_73291, &pair_73266, &c_73290);
-make_cons(c_73292, &pair_73268, &c_73291);
-make_cons(c_73293, &pair_73270, &c_73292);
-make_cons(c_73294, &pair_73272, &c_73293);
+  make_cvar(cvar_73229, (object *)&__glo_lib_91init_117srfi18_srfi_18);make_pair(pair_73230, find_or_add_symbol("lib-init:srfi18"), &cvar_73229);
+  make_cvar(cvar_73231, (object *)&__glo_condition_91variable_91broadcast_67_srfi_18);make_pair(pair_73232, find_or_add_symbol("condition-variable-broadcast!"), &cvar_73231);
+  make_cvar(cvar_73233, (object *)&__glo_condition_91variable_91signal_67_srfi_18);make_pair(pair_73234, find_or_add_symbol("condition-variable-signal!"), &cvar_73233);
+  make_cvar(cvar_73235, (object *)&__glo_condition_91variable_91wait_67_srfi_18);make_pair(pair_73236, find_or_add_symbol("condition-variable-wait!"), &cvar_73235);
+  make_cvar(cvar_73237, (object *)&__glo_make_91condition_91variable_srfi_18);make_pair(pair_73238, find_or_add_symbol("make-condition-variable"), &cvar_73237);
+  make_cvar(cvar_73239, (object *)&__glo_condition_91variable_127_srfi_18);make_pair(pair_73240, find_or_add_symbol("condition-variable?"), &cvar_73239);
+  make_cvar(cvar_73241, (object *)&__glo_Cyc_91mutex_91unlock_67_srfi_18);make_pair(pair_73242, find_or_add_symbol("Cyc-mutex-unlock!"), &cvar_73241);
+  make_cvar(cvar_73243, (object *)&__glo_mutex_91unlock_67_srfi_18);make_pair(pair_73244, find_or_add_symbol("mutex-unlock!"), &cvar_73243);
+  make_cvar(cvar_73245, (object *)&__glo_mutex_91lock_67_srfi_18);make_pair(pair_73246, find_or_add_symbol("mutex-lock!"), &cvar_73245);
+  make_cvar(cvar_73247, (object *)&__glo_make_91mutex_srfi_18);make_pair(pair_73248, find_or_add_symbol("make-mutex"), &cvar_73247);
+  make_cvar(cvar_73249, (object *)&__glo_mutex_127_srfi_18);make_pair(pair_73250, find_or_add_symbol("mutex?"), &cvar_73249);
+  make_cvar(cvar_73251, (object *)&__glo_Cyc_91minor_91gc_srfi_18);make_pair(pair_73252, find_or_add_symbol("Cyc-minor-gc"), &cvar_73251);
+  make_cvar(cvar_73253, (object *)&__glo__91_125heap_srfi_18);make_pair(pair_73254, find_or_add_symbol("->heap"), &cvar_73253);
+  make_cvar(cvar_73255, (object *)&__glo_thread_91sleep_67_srfi_18);make_pair(pair_73256, find_or_add_symbol("thread-sleep!"), &cvar_73255);
+  make_cvar(cvar_73257, (object *)&__glo_thread_91terminate_67_srfi_18);make_pair(pair_73258, find_or_add_symbol("thread-terminate!"), &cvar_73257);
+  make_cvar(cvar_73259, (object *)&__glo_thread_91yield_67_srfi_18);make_pair(pair_73260, find_or_add_symbol("thread-yield!"), &cvar_73259);
+  make_cvar(cvar_73261, (object *)&__glo_thread_91start_67_srfi_18);make_pair(pair_73262, find_or_add_symbol("thread-start!"), &cvar_73261);
+  make_cvar(cvar_73263, (object *)&__glo_thread_91specific_91set_67_srfi_18);make_pair(pair_73264, find_or_add_symbol("thread-specific-set!"), &cvar_73263);
+  make_cvar(cvar_73265, (object *)&__glo_thread_91specific_srfi_18);make_pair(pair_73266, find_or_add_symbol("thread-specific"), &cvar_73265);
+  make_cvar(cvar_73267, (object *)&__glo_thread_91name_srfi_18);make_pair(pair_73268, find_or_add_symbol("thread-name"), &cvar_73267);
+  make_cvar(cvar_73269, (object *)&__glo_make_91thread_srfi_18);make_pair(pair_73270, find_or_add_symbol("make-thread"), &cvar_73269);
+  make_cvar(cvar_73271, (object *)&__glo_thread_127_srfi_18);make_pair(pair_73272, find_or_add_symbol("thread?"), &cvar_73271);
+make_pair(c_73273, &pair_73230,Cyc_global_variables);
+make_pair(c_73274, &pair_73232, &c_73273);
+make_pair(c_73275, &pair_73234, &c_73274);
+make_pair(c_73276, &pair_73236, &c_73275);
+make_pair(c_73277, &pair_73238, &c_73276);
+make_pair(c_73278, &pair_73240, &c_73277);
+make_pair(c_73279, &pair_73242, &c_73278);
+make_pair(c_73280, &pair_73244, &c_73279);
+make_pair(c_73281, &pair_73246, &c_73280);
+make_pair(c_73282, &pair_73248, &c_73281);
+make_pair(c_73283, &pair_73250, &c_73282);
+make_pair(c_73284, &pair_73252, &c_73283);
+make_pair(c_73285, &pair_73254, &c_73284);
+make_pair(c_73286, &pair_73256, &c_73285);
+make_pair(c_73287, &pair_73258, &c_73286);
+make_pair(c_73288, &pair_73260, &c_73287);
+make_pair(c_73289, &pair_73262, &c_73288);
+make_pair(c_73290, &pair_73264, &c_73289);
+make_pair(c_73291, &pair_73266, &c_73290);
+make_pair(c_73292, &pair_73268, &c_73291);
+make_pair(c_73293, &pair_73270, &c_73292);
+make_pair(c_73294, &pair_73272, &c_73293);
 Cyc_global_variables = &c_73294;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, 1, cont, cont);

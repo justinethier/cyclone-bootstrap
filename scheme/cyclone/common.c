@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -159,16 +159,16 @@ void c_schemecyclonecommon_entry_pt(data, argc, cont,value) void *data; int argc
   make_string(c_7322, "0.0.6 (Pre-release)"); 
   __glo__85version_85_scheme_cyclone_common = &c_7322; 
 
-  make_cvar(cvar_7352, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_cons(pair_7353, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7352);
-  make_cvar(cvar_7354, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_cons(pair_7355, find_or_add_symbol("*c-file-header-comment*"), &cvar_7354);
-  make_cvar(cvar_7356, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_cons(pair_7357, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7356);
-  make_cvar(cvar_7358, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_cons(pair_7359, find_or_add_symbol("*version-banner*"), &cvar_7358);
-  make_cvar(cvar_7360, (object *)&__glo__85version_85_scheme_cyclone_common);make_cons(pair_7361, find_or_add_symbol("*version*"), &cvar_7360);
-make_cons(c_7362, &pair_7353,Cyc_global_variables);
-make_cons(c_7363, &pair_7355, &c_7362);
-make_cons(c_7364, &pair_7357, &c_7363);
-make_cons(c_7365, &pair_7359, &c_7364);
-make_cons(c_7366, &pair_7361, &c_7365);
+  make_cvar(cvar_7352, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7353, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7352);
+  make_cvar(cvar_7354, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_pair(pair_7355, find_or_add_symbol("*c-file-header-comment*"), &cvar_7354);
+  make_cvar(cvar_7356, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_pair(pair_7357, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7356);
+  make_cvar(cvar_7358, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_pair(pair_7359, find_or_add_symbol("*version-banner*"), &cvar_7358);
+  make_cvar(cvar_7360, (object *)&__glo__85version_85_scheme_cyclone_common);make_pair(pair_7361, find_or_add_symbol("*version*"), &cvar_7360);
+make_pair(c_7362, &pair_7353,Cyc_global_variables);
+make_pair(c_7363, &pair_7355, &c_7362);
+make_pair(c_7364, &pair_7357, &c_7363);
+make_pair(c_7365, &pair_7359, &c_7364);
+make_pair(c_7366, &pair_7361, &c_7365);
 Cyc_global_variables = &c_7366;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common)->fn)(data, 1, cont, cont);

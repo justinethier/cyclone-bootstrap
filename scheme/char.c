@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -366,13 +366,13 @@ c_73417.elts[0] = c_739;
 c_73417.elts[1] = k_7362;
 
 
-make_cons(c_73426,obj_char2obj(10),NULL);
+make_pair(c_73426,obj_char2obj(10),NULL);
 
-make_cons(c_73425,obj_char2obj(13),&c_73426);
+make_pair(c_73425,obj_char2obj(13),&c_73426);
 
-make_cons(c_73424,obj_char2obj(32),&c_73425);
+make_pair(c_73424,obj_char2obj(32),&c_73425);
 
-make_cons(c_73423,obj_char2obj(9),&c_73424);
+make_pair(c_73423,obj_char2obj(9),&c_73424);
 return_closcall1(data,(closure)&c_73417,  &c_73423);; 
 }
 
@@ -395,25 +395,25 @@ c_73399.elts[0] = c_7310;
 c_73399.elts[1] = k_7366;
 
 
-make_cons(c_73414,obj_char2obj(57),NULL);
+make_pair(c_73414,obj_char2obj(57),NULL);
 
-make_cons(c_73413,obj_char2obj(56),&c_73414);
+make_pair(c_73413,obj_char2obj(56),&c_73414);
 
-make_cons(c_73412,obj_char2obj(55),&c_73413);
+make_pair(c_73412,obj_char2obj(55),&c_73413);
 
-make_cons(c_73411,obj_char2obj(54),&c_73412);
+make_pair(c_73411,obj_char2obj(54),&c_73412);
 
-make_cons(c_73410,obj_char2obj(53),&c_73411);
+make_pair(c_73410,obj_char2obj(53),&c_73411);
 
-make_cons(c_73409,obj_char2obj(52),&c_73410);
+make_pair(c_73409,obj_char2obj(52),&c_73410);
 
-make_cons(c_73408,obj_char2obj(51),&c_73409);
+make_pair(c_73408,obj_char2obj(51),&c_73409);
 
-make_cons(c_73407,obj_char2obj(50),&c_73408);
+make_pair(c_73407,obj_char2obj(50),&c_73408);
 
-make_cons(c_73406,obj_char2obj(49),&c_73407);
+make_pair(c_73406,obj_char2obj(49),&c_73407);
 
-make_cons(c_73405,obj_char2obj(48),&c_73406);
+make_pair(c_73405,obj_char2obj(48),&c_73406);
 return_closcall1(data,(closure)&c_73399,  &c_73405);; 
 }
 
@@ -697,7 +697,7 @@ c_73306.elts[0] = c1_7327;
 c_73306.elts[1] = k_73107;
 
 
-make_cons(c_73322,c2_7326, cs_7325);
+make_pair(c_73322,c2_7326, cs_7325);
 return_closcall1(data,(closure)&c_73306,  &c_73322);; 
 }
 
@@ -714,7 +714,7 @@ c_73308.elts = (object *)alloca(sizeof(object) * 1);
 c_73308.elts[0] = ((closureN)self_73167)->elts[1];
 
 
-make_cons(c_73318,((closureN)self_73167)->elts[0], r_73110);
+make_pair(c_73318,((closureN)self_73167)->elts[0], r_73110);
 return_closcall1(data,(closure)&c_73308,  &c_73318);; 
 }
 
@@ -755,7 +755,7 @@ c_73287.elts[0] = c1_7330;
 c_73287.elts[1] = k_73113;
 
 
-make_cons(c_73303,c2_7329, cs_7328);
+make_pair(c_73303,c2_7329, cs_7328);
 return_closcall1(data,(closure)&c_73287,  &c_73303);; 
 }
 
@@ -772,7 +772,7 @@ c_73289.elts = (object *)alloca(sizeof(object) * 1);
 c_73289.elts[0] = ((closureN)self_73170)->elts[1];
 
 
-make_cons(c_73299,((closureN)self_73170)->elts[0], r_73116);
+make_pair(c_73299,((closureN)self_73170)->elts[0], r_73116);
 return_closcall1(data,(closure)&c_73289,  &c_73299);; 
 }
 
@@ -813,7 +813,7 @@ c_73268.elts[0] = c1_7333;
 c_73268.elts[1] = k_73119;
 
 
-make_cons(c_73284,c2_7332, cs_7331);
+make_pair(c_73284,c2_7332, cs_7331);
 return_closcall1(data,(closure)&c_73268,  &c_73284);; 
 }
 
@@ -830,7 +830,7 @@ c_73270.elts = (object *)alloca(sizeof(object) * 1);
 c_73270.elts[0] = ((closureN)self_73173)->elts[1];
 
 
-make_cons(c_73280,((closureN)self_73173)->elts[0], r_73122);
+make_pair(c_73280,((closureN)self_73173)->elts[0], r_73122);
 return_closcall1(data,(closure)&c_73270,  &c_73280);; 
 }
 
@@ -871,7 +871,7 @@ c_73249.elts[0] = c1_7336;
 c_73249.elts[1] = k_73125;
 
 
-make_cons(c_73265,c2_7335, cs_7334);
+make_pair(c_73265,c2_7335, cs_7334);
 return_closcall1(data,(closure)&c_73249,  &c_73265);; 
 }
 
@@ -888,7 +888,7 @@ c_73251.elts = (object *)alloca(sizeof(object) * 1);
 c_73251.elts[0] = ((closureN)self_73176)->elts[1];
 
 
-make_cons(c_73261,((closureN)self_73176)->elts[0], r_73128);
+make_pair(c_73261,((closureN)self_73176)->elts[0], r_73128);
 return_closcall1(data,(closure)&c_73251,  &c_73261);; 
 }
 
@@ -929,7 +929,7 @@ c_73230.elts[0] = c1_7339;
 c_73230.elts[1] = k_73131;
 
 
-make_cons(c_73246,c2_7338, cs_7337);
+make_pair(c_73246,c2_7338, cs_7337);
 return_closcall1(data,(closure)&c_73230,  &c_73246);; 
 }
 
@@ -946,7 +946,7 @@ c_73232.elts = (object *)alloca(sizeof(object) * 1);
 c_73232.elts[0] = ((closureN)self_73179)->elts[1];
 
 
-make_cons(c_73242,((closureN)self_73179)->elts[0], r_73134);
+make_pair(c_73242,((closureN)self_73179)->elts[0], r_73134);
 return_closcall1(data,(closure)&c_73232,  &c_73242);; 
 }
 
@@ -1156,52 +1156,52 @@ void c_scheme_char_entry_pt(data, argc, cont,value) void *data; int argc; closur
   __glo_char_91upcase_scheme__char = &c_73188; 
   __glo_char_91foldcase_scheme__char = boolean_f; 
 
-  make_cvar(cvar_73455, (object *)&__glo_lib_91init_117scheme_191char_scheme__char);make_cons(pair_73456, find_or_add_symbol("lib-init:scheme_char"), &cvar_73455);
-  make_cvar(cvar_73457, (object *)&__glo_string_91foldcase_scheme__char);make_cons(pair_73458, find_or_add_symbol("string-foldcase"), &cvar_73457);
-  make_cvar(cvar_73459, (object *)&__glo_string_91downcase_scheme__char);make_cons(pair_73460, find_or_add_symbol("string-downcase"), &cvar_73459);
-  make_cvar(cvar_73461, (object *)&__glo_string_91upcase_scheme__char);make_cons(pair_73462, find_or_add_symbol("string-upcase"), &cvar_73461);
-  make_cvar(cvar_73463, (object *)&__glo_digit_91value_scheme__char);make_cons(pair_73464, find_or_add_symbol("digit-value"), &cvar_73463);
-  make_cvar(cvar_73465, (object *)&__glo_char_91whitespace_127_scheme__char);make_cons(pair_73466, find_or_add_symbol("char-whitespace?"), &cvar_73465);
-  make_cvar(cvar_73467, (object *)&__glo_char_91numeric_127_scheme__char);make_cons(pair_73468, find_or_add_symbol("char-numeric?"), &cvar_73467);
-  make_cvar(cvar_73469, (object *)&__glo_char_91lower_91case_127_scheme__char);make_cons(pair_73470, find_or_add_symbol("char-lower-case?"), &cvar_73469);
-  make_cvar(cvar_73471, (object *)&__glo_char_91upper_91case_127_scheme__char);make_cons(pair_73472, find_or_add_symbol("char-upper-case?"), &cvar_73471);
-  make_cvar(cvar_73473, (object *)&__glo_char_91alphabetic_127_scheme__char);make_cons(pair_73474, find_or_add_symbol("char-alphabetic?"), &cvar_73473);
-  make_cvar(cvar_73475, (object *)&__glo_string_91ci_125_123_127_scheme__char);make_cons(pair_73476, find_or_add_symbol("string-ci>=?"), &cvar_73475);
-  make_cvar(cvar_73477, (object *)&__glo_string_91ci_125_127_scheme__char);make_cons(pair_73478, find_or_add_symbol("string-ci>?"), &cvar_73477);
-  make_cvar(cvar_73479, (object *)&__glo_string_91ci_121_123_127_scheme__char);make_cons(pair_73480, find_or_add_symbol("string-ci<=?"), &cvar_73479);
-  make_cvar(cvar_73481, (object *)&__glo_string_91ci_121_127_scheme__char);make_cons(pair_73482, find_or_add_symbol("string-ci<?"), &cvar_73481);
-  make_cvar(cvar_73483, (object *)&__glo_string_91ci_123_127_scheme__char);make_cons(pair_73484, find_or_add_symbol("string-ci=?"), &cvar_73483);
-  make_cvar(cvar_73485, (object *)&__glo_char_91ci_125_127_scheme__char);make_cons(pair_73486, find_or_add_symbol("char-ci>?"), &cvar_73485);
-  make_cvar(cvar_73487, (object *)&__glo_char_91ci_125_123_127_scheme__char);make_cons(pair_73488, find_or_add_symbol("char-ci>=?"), &cvar_73487);
-  make_cvar(cvar_73489, (object *)&__glo_char_91ci_121_127_scheme__char);make_cons(pair_73490, find_or_add_symbol("char-ci<?"), &cvar_73489);
-  make_cvar(cvar_73491, (object *)&__glo_char_91ci_121_123_127_scheme__char);make_cons(pair_73492, find_or_add_symbol("char-ci<=?"), &cvar_73491);
-  make_cvar(cvar_73493, (object *)&__glo_char_91ci_123_127_scheme__char);make_cons(pair_73494, find_or_add_symbol("char-ci=?"), &cvar_73493);
-  make_cvar(cvar_73495, (object *)&__glo_char_91foldcase_scheme__char);make_cons(pair_73496, find_or_add_symbol("char-foldcase"), &cvar_73495);
-  make_cvar(cvar_73497, (object *)&__glo_char_91downcase_scheme__char);make_cons(pair_73498, find_or_add_symbol("char-downcase"), &cvar_73497);
-  make_cvar(cvar_73499, (object *)&__glo_char_91upcase_scheme__char);make_cons(pair_73500, find_or_add_symbol("char-upcase"), &cvar_73499);
-make_cons(c_73501, &pair_73456,Cyc_global_variables);
-make_cons(c_73502, &pair_73458, &c_73501);
-make_cons(c_73503, &pair_73460, &c_73502);
-make_cons(c_73504, &pair_73462, &c_73503);
-make_cons(c_73505, &pair_73464, &c_73504);
-make_cons(c_73506, &pair_73466, &c_73505);
-make_cons(c_73507, &pair_73468, &c_73506);
-make_cons(c_73508, &pair_73470, &c_73507);
-make_cons(c_73509, &pair_73472, &c_73508);
-make_cons(c_73510, &pair_73474, &c_73509);
-make_cons(c_73511, &pair_73476, &c_73510);
-make_cons(c_73512, &pair_73478, &c_73511);
-make_cons(c_73513, &pair_73480, &c_73512);
-make_cons(c_73514, &pair_73482, &c_73513);
-make_cons(c_73515, &pair_73484, &c_73514);
-make_cons(c_73516, &pair_73486, &c_73515);
-make_cons(c_73517, &pair_73488, &c_73516);
-make_cons(c_73518, &pair_73490, &c_73517);
-make_cons(c_73519, &pair_73492, &c_73518);
-make_cons(c_73520, &pair_73494, &c_73519);
-make_cons(c_73521, &pair_73496, &c_73520);
-make_cons(c_73522, &pair_73498, &c_73521);
-make_cons(c_73523, &pair_73500, &c_73522);
+  make_cvar(cvar_73455, (object *)&__glo_lib_91init_117scheme_191char_scheme__char);make_pair(pair_73456, find_or_add_symbol("lib-init:scheme_char"), &cvar_73455);
+  make_cvar(cvar_73457, (object *)&__glo_string_91foldcase_scheme__char);make_pair(pair_73458, find_or_add_symbol("string-foldcase"), &cvar_73457);
+  make_cvar(cvar_73459, (object *)&__glo_string_91downcase_scheme__char);make_pair(pair_73460, find_or_add_symbol("string-downcase"), &cvar_73459);
+  make_cvar(cvar_73461, (object *)&__glo_string_91upcase_scheme__char);make_pair(pair_73462, find_or_add_symbol("string-upcase"), &cvar_73461);
+  make_cvar(cvar_73463, (object *)&__glo_digit_91value_scheme__char);make_pair(pair_73464, find_or_add_symbol("digit-value"), &cvar_73463);
+  make_cvar(cvar_73465, (object *)&__glo_char_91whitespace_127_scheme__char);make_pair(pair_73466, find_or_add_symbol("char-whitespace?"), &cvar_73465);
+  make_cvar(cvar_73467, (object *)&__glo_char_91numeric_127_scheme__char);make_pair(pair_73468, find_or_add_symbol("char-numeric?"), &cvar_73467);
+  make_cvar(cvar_73469, (object *)&__glo_char_91lower_91case_127_scheme__char);make_pair(pair_73470, find_or_add_symbol("char-lower-case?"), &cvar_73469);
+  make_cvar(cvar_73471, (object *)&__glo_char_91upper_91case_127_scheme__char);make_pair(pair_73472, find_or_add_symbol("char-upper-case?"), &cvar_73471);
+  make_cvar(cvar_73473, (object *)&__glo_char_91alphabetic_127_scheme__char);make_pair(pair_73474, find_or_add_symbol("char-alphabetic?"), &cvar_73473);
+  make_cvar(cvar_73475, (object *)&__glo_string_91ci_125_123_127_scheme__char);make_pair(pair_73476, find_or_add_symbol("string-ci>=?"), &cvar_73475);
+  make_cvar(cvar_73477, (object *)&__glo_string_91ci_125_127_scheme__char);make_pair(pair_73478, find_or_add_symbol("string-ci>?"), &cvar_73477);
+  make_cvar(cvar_73479, (object *)&__glo_string_91ci_121_123_127_scheme__char);make_pair(pair_73480, find_or_add_symbol("string-ci<=?"), &cvar_73479);
+  make_cvar(cvar_73481, (object *)&__glo_string_91ci_121_127_scheme__char);make_pair(pair_73482, find_or_add_symbol("string-ci<?"), &cvar_73481);
+  make_cvar(cvar_73483, (object *)&__glo_string_91ci_123_127_scheme__char);make_pair(pair_73484, find_or_add_symbol("string-ci=?"), &cvar_73483);
+  make_cvar(cvar_73485, (object *)&__glo_char_91ci_125_127_scheme__char);make_pair(pair_73486, find_or_add_symbol("char-ci>?"), &cvar_73485);
+  make_cvar(cvar_73487, (object *)&__glo_char_91ci_125_123_127_scheme__char);make_pair(pair_73488, find_or_add_symbol("char-ci>=?"), &cvar_73487);
+  make_cvar(cvar_73489, (object *)&__glo_char_91ci_121_127_scheme__char);make_pair(pair_73490, find_or_add_symbol("char-ci<?"), &cvar_73489);
+  make_cvar(cvar_73491, (object *)&__glo_char_91ci_121_123_127_scheme__char);make_pair(pair_73492, find_or_add_symbol("char-ci<=?"), &cvar_73491);
+  make_cvar(cvar_73493, (object *)&__glo_char_91ci_123_127_scheme__char);make_pair(pair_73494, find_or_add_symbol("char-ci=?"), &cvar_73493);
+  make_cvar(cvar_73495, (object *)&__glo_char_91foldcase_scheme__char);make_pair(pair_73496, find_or_add_symbol("char-foldcase"), &cvar_73495);
+  make_cvar(cvar_73497, (object *)&__glo_char_91downcase_scheme__char);make_pair(pair_73498, find_or_add_symbol("char-downcase"), &cvar_73497);
+  make_cvar(cvar_73499, (object *)&__glo_char_91upcase_scheme__char);make_pair(pair_73500, find_or_add_symbol("char-upcase"), &cvar_73499);
+make_pair(c_73501, &pair_73456,Cyc_global_variables);
+make_pair(c_73502, &pair_73458, &c_73501);
+make_pair(c_73503, &pair_73460, &c_73502);
+make_pair(c_73504, &pair_73462, &c_73503);
+make_pair(c_73505, &pair_73464, &c_73504);
+make_pair(c_73506, &pair_73466, &c_73505);
+make_pair(c_73507, &pair_73468, &c_73506);
+make_pair(c_73508, &pair_73470, &c_73507);
+make_pair(c_73509, &pair_73472, &c_73508);
+make_pair(c_73510, &pair_73474, &c_73509);
+make_pair(c_73511, &pair_73476, &c_73510);
+make_pair(c_73512, &pair_73478, &c_73511);
+make_pair(c_73513, &pair_73480, &c_73512);
+make_pair(c_73514, &pair_73482, &c_73513);
+make_pair(c_73515, &pair_73484, &c_73514);
+make_pair(c_73516, &pair_73486, &c_73515);
+make_pair(c_73517, &pair_73488, &c_73516);
+make_pair(c_73518, &pair_73490, &c_73517);
+make_pair(c_73519, &pair_73492, &c_73518);
+make_pair(c_73520, &pair_73494, &c_73519);
+make_pair(c_73521, &pair_73496, &c_73520);
+make_pair(c_73522, &pair_73498, &c_73521);
+make_pair(c_73523, &pair_73500, &c_73522);
 Cyc_global_variables = &c_73523;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117scheme_191char_scheme__char)->fn)(data, 1, cont, cont);

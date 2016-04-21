@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -70,7 +70,7 @@
      GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -1361,7 +1361,7 @@ c_731312.elts[0] = ((closureN)self_73416)->elts[0];
 c_731312.elts[1] = ((closureN)self_73416)->elts[2];
 
 
-make_cons(c_731320,((closureN)self_73416)->elts[1], r_73132);
+make_pair(c_731320,((closureN)self_73416)->elts[1], r_73132);
 return_closcall1(data,(closure)&c_731312,  &c_731320);; 
 }
 
@@ -1629,7 +1629,7 @@ c_731247.elts[2] = ((closureN)self_73430)->elts[2];
 c_731247.elts[3] = ((closureN)self_73430)->elts[3];
 
 
-make_cons(c_731269,((closureN)self_73430)->elts[1], deps_7356);
+make_pair(c_731269,((closureN)self_73430)->elts[1], deps_7356);
 return_closcall1(data,(closure)&c_731247,  &c_731269);; 
 }
 
@@ -1649,7 +1649,7 @@ c_731249.elts[2] = ((closureN)self_73431)->elts[2];
 c_731249.elts[3] = ((closureN)self_73431)->elts[3];
 
 
-make_cons(c_731263,r_73176, cell_get(((closureN)self_73431)->elts[3]));
+make_pair(c_731263,r_73176, cell_get(((closureN)self_73431)->elts[3]));
 return_closcall1(data,(closure)&c_731249,  &c_731263);; 
 }
 
@@ -2071,7 +2071,7 @@ return_closcall1(data,(closure)&c_731098,  car(i_7368));;
 
 static void __lambda_137(void *data, int argc, object self_73457, object r_73207) {
   
-make_cons(c_731103,r_73207, ((closureN)self_73457)->elts[0]);
+make_pair(c_731103,r_73207, ((closureN)self_73457)->elts[0]);
 return_closcall1(data,  ((closureN)self_73457)->elts[1],  &c_731103);; 
 }
 
@@ -2156,13 +2156,13 @@ c_731076.elts[0] = ids_7371;
 c_731076.elts[1] = k_73218;
 
 
-make_cons(c_731085,id_7372, ((closureN)self_73461)->elts[0]);
+make_pair(c_731085,id_7372, ((closureN)self_73461)->elts[0]);
 return_closcall1(data,(closure)&c_731076,  &c_731085);; 
 }
 
 static void __lambda_131(void *data, int argc, object self_73462, object r_73219) {
   
-make_cons(c_731081,r_73219, ((closureN)self_73462)->elts[0]);
+make_pair(c_731081,r_73219, ((closureN)self_73462)->elts[0]);
 return_closcall1(data,  ((closureN)self_73462)->elts[1],  &c_731081);; 
 }
 
@@ -4130,60 +4130,60 @@ void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int a
   mclosure0(c_73575, (function_type)__lambda_1);c_73575.num_args = 1; 
   __glo_library_127_scheme_cyclone_libraries = &c_73575; 
 
-  make_cvar(cvar_731542, (object *)&__glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries);make_cons(pair_731543, find_or_add_symbol("lib-init:schemecyclonelibraries"), &cvar_731542);
-  make_cvar(cvar_731544, (object *)&__glo_lib_117get_91dep_91list_scheme_cyclone_libraries);make_cons(pair_731545, find_or_add_symbol("lib:get-dep-list"), &cvar_731544);
-  make_cvar(cvar_731546, (object *)&__glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries);make_cons(pair_731547, find_or_add_symbol("lib:get-all-import-deps"), &cvar_731546);
-  make_cvar(cvar_731548, (object *)&__glo_lib_117resolve_91meta_scheme_cyclone_libraries);make_cons(pair_731549, find_or_add_symbol("lib:resolve-meta"), &cvar_731548);
-  make_cvar(cvar_731550, (object *)&__glo_lib_117import_91_125metalist_scheme_cyclone_libraries);make_cons(pair_731551, find_or_add_symbol("lib:import->metalist"), &cvar_731550);
-  make_cvar(cvar_731552, (object *)&__glo_lib_117idb_117id_91_125import_scheme_cyclone_libraries);make_cons(pair_731553, find_or_add_symbol("lib:idb:id->import"), &cvar_731552);
-  make_cvar(cvar_731554, (object *)&__glo_lib_117idb_117ids_scheme_cyclone_libraries);make_cons(pair_731555, find_or_add_symbol("lib:idb:ids"), &cvar_731554);
-  make_cvar(cvar_731556, (object *)&__glo_lib_117imports_91_125idb_scheme_cyclone_libraries);make_cons(pair_731557, find_or_add_symbol("lib:imports->idb"), &cvar_731556);
-  make_cvar(cvar_731558, (object *)&__glo_lib_117resolve_91imports_scheme_cyclone_libraries);make_cons(pair_731559, find_or_add_symbol("lib:resolve-imports"), &cvar_731558);
-  make_cvar(cvar_731560, (object *)&__glo_lib_117import_91_125export_91list_scheme_cyclone_libraries);make_cons(pair_731561, find_or_add_symbol("lib:import->export-list"), &cvar_731560);
-  make_cvar(cvar_731562, (object *)&__glo_lib_117read_91imports_scheme_cyclone_libraries);make_cons(pair_731563, find_or_add_symbol("lib:read-imports"), &cvar_731562);
-  make_cvar(cvar_731564, (object *)&__glo_lib_117import_91_125path_scheme_cyclone_libraries);make_cons(pair_731565, find_or_add_symbol("lib:import->path"), &cvar_731564);
-  make_cvar(cvar_731566, (object *)&__glo_lib_117import_91_125filename_scheme_cyclone_libraries);make_cons(pair_731567, find_or_add_symbol("lib:import->filename"), &cvar_731566);
-  make_cvar(cvar_731568, (object *)&__glo_lib_117atom_91_125string_scheme_cyclone_libraries);make_cons(pair_731569, find_or_add_symbol("lib:atom->string"), &cvar_731568);
-  make_cvar(cvar_731570, (object *)&__glo_lib_117include_91c_91headers_scheme_cyclone_libraries);make_cons(pair_731571, find_or_add_symbol("lib:include-c-headers"), &cvar_731570);
-  make_cvar(cvar_731572, (object *)&__glo_lib_117includes_scheme_cyclone_libraries);make_cons(pair_731573, find_or_add_symbol("lib:includes"), &cvar_731572);
-  make_cvar(cvar_731574, (object *)&__glo_lib_117body_scheme_cyclone_libraries);make_cons(pair_731575, find_or_add_symbol("lib:body"), &cvar_731574);
-  make_cvar(cvar_731576, (object *)&__glo_lib_117imports_scheme_cyclone_libraries);make_cons(pair_731577, find_or_add_symbol("lib:imports"), &cvar_731576);
-  make_cvar(cvar_731578, (object *)&__glo_lib_117exports_scheme_cyclone_libraries);make_cons(pair_731579, find_or_add_symbol("lib:exports"), &cvar_731578);
-  make_cvar(cvar_731580, (object *)&__glo_lib_117rename_91exports_scheme_cyclone_libraries);make_cons(pair_731581, find_or_add_symbol("lib:rename-exports"), &cvar_731580);
-  make_cvar(cvar_731582, (object *)&__glo_lib_117raw_91exports_scheme_cyclone_libraries);make_cons(pair_731583, find_or_add_symbol("lib:raw-exports"), &cvar_731582);
-  make_cvar(cvar_731584, (object *)&__glo_lib_117result_scheme_cyclone_libraries);make_cons(pair_731585, find_or_add_symbol("lib:result"), &cvar_731584);
-  make_cvar(cvar_731586, (object *)&__glo_lib_117name_91_125symbol_scheme_cyclone_libraries);make_cons(pair_731587, find_or_add_symbol("lib:name->symbol"), &cvar_731586);
-  make_cvar(cvar_731588, (object *)&__glo_lib_117name_91_125string_scheme_cyclone_libraries);make_cons(pair_731589, find_or_add_symbol("lib:name->string"), &cvar_731588);
-  make_cvar(cvar_731590, (object *)&__glo_lib_117name_scheme_cyclone_libraries);make_cons(pair_731591, find_or_add_symbol("lib:name"), &cvar_731590);
-  make_cvar(cvar_731592, (object *)&__glo_lib_117list_91_125import_91set_scheme_cyclone_libraries);make_cons(pair_731593, find_or_add_symbol("lib:list->import-set"), &cvar_731592);
-  make_cvar(cvar_731594, (object *)&__glo_library_127_scheme_cyclone_libraries);make_cons(pair_731595, find_or_add_symbol("library?"), &cvar_731594);
-make_cons(c_731596, &pair_731543,Cyc_global_variables);
-make_cons(c_731597, &pair_731545, &c_731596);
-make_cons(c_731598, &pair_731547, &c_731597);
-make_cons(c_731599, &pair_731549, &c_731598);
-make_cons(c_731600, &pair_731551, &c_731599);
-make_cons(c_731601, &pair_731553, &c_731600);
-make_cons(c_731602, &pair_731555, &c_731601);
-make_cons(c_731603, &pair_731557, &c_731602);
-make_cons(c_731604, &pair_731559, &c_731603);
-make_cons(c_731605, &pair_731561, &c_731604);
-make_cons(c_731606, &pair_731563, &c_731605);
-make_cons(c_731607, &pair_731565, &c_731606);
-make_cons(c_731608, &pair_731567, &c_731607);
-make_cons(c_731609, &pair_731569, &c_731608);
-make_cons(c_731610, &pair_731571, &c_731609);
-make_cons(c_731611, &pair_731573, &c_731610);
-make_cons(c_731612, &pair_731575, &c_731611);
-make_cons(c_731613, &pair_731577, &c_731612);
-make_cons(c_731614, &pair_731579, &c_731613);
-make_cons(c_731615, &pair_731581, &c_731614);
-make_cons(c_731616, &pair_731583, &c_731615);
-make_cons(c_731617, &pair_731585, &c_731616);
-make_cons(c_731618, &pair_731587, &c_731617);
-make_cons(c_731619, &pair_731589, &c_731618);
-make_cons(c_731620, &pair_731591, &c_731619);
-make_cons(c_731621, &pair_731593, &c_731620);
-make_cons(c_731622, &pair_731595, &c_731621);
+  make_cvar(cvar_731542, (object *)&__glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries);make_pair(pair_731543, find_or_add_symbol("lib-init:schemecyclonelibraries"), &cvar_731542);
+  make_cvar(cvar_731544, (object *)&__glo_lib_117get_91dep_91list_scheme_cyclone_libraries);make_pair(pair_731545, find_or_add_symbol("lib:get-dep-list"), &cvar_731544);
+  make_cvar(cvar_731546, (object *)&__glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries);make_pair(pair_731547, find_or_add_symbol("lib:get-all-import-deps"), &cvar_731546);
+  make_cvar(cvar_731548, (object *)&__glo_lib_117resolve_91meta_scheme_cyclone_libraries);make_pair(pair_731549, find_or_add_symbol("lib:resolve-meta"), &cvar_731548);
+  make_cvar(cvar_731550, (object *)&__glo_lib_117import_91_125metalist_scheme_cyclone_libraries);make_pair(pair_731551, find_or_add_symbol("lib:import->metalist"), &cvar_731550);
+  make_cvar(cvar_731552, (object *)&__glo_lib_117idb_117id_91_125import_scheme_cyclone_libraries);make_pair(pair_731553, find_or_add_symbol("lib:idb:id->import"), &cvar_731552);
+  make_cvar(cvar_731554, (object *)&__glo_lib_117idb_117ids_scheme_cyclone_libraries);make_pair(pair_731555, find_or_add_symbol("lib:idb:ids"), &cvar_731554);
+  make_cvar(cvar_731556, (object *)&__glo_lib_117imports_91_125idb_scheme_cyclone_libraries);make_pair(pair_731557, find_or_add_symbol("lib:imports->idb"), &cvar_731556);
+  make_cvar(cvar_731558, (object *)&__glo_lib_117resolve_91imports_scheme_cyclone_libraries);make_pair(pair_731559, find_or_add_symbol("lib:resolve-imports"), &cvar_731558);
+  make_cvar(cvar_731560, (object *)&__glo_lib_117import_91_125export_91list_scheme_cyclone_libraries);make_pair(pair_731561, find_or_add_symbol("lib:import->export-list"), &cvar_731560);
+  make_cvar(cvar_731562, (object *)&__glo_lib_117read_91imports_scheme_cyclone_libraries);make_pair(pair_731563, find_or_add_symbol("lib:read-imports"), &cvar_731562);
+  make_cvar(cvar_731564, (object *)&__glo_lib_117import_91_125path_scheme_cyclone_libraries);make_pair(pair_731565, find_or_add_symbol("lib:import->path"), &cvar_731564);
+  make_cvar(cvar_731566, (object *)&__glo_lib_117import_91_125filename_scheme_cyclone_libraries);make_pair(pair_731567, find_or_add_symbol("lib:import->filename"), &cvar_731566);
+  make_cvar(cvar_731568, (object *)&__glo_lib_117atom_91_125string_scheme_cyclone_libraries);make_pair(pair_731569, find_or_add_symbol("lib:atom->string"), &cvar_731568);
+  make_cvar(cvar_731570, (object *)&__glo_lib_117include_91c_91headers_scheme_cyclone_libraries);make_pair(pair_731571, find_or_add_symbol("lib:include-c-headers"), &cvar_731570);
+  make_cvar(cvar_731572, (object *)&__glo_lib_117includes_scheme_cyclone_libraries);make_pair(pair_731573, find_or_add_symbol("lib:includes"), &cvar_731572);
+  make_cvar(cvar_731574, (object *)&__glo_lib_117body_scheme_cyclone_libraries);make_pair(pair_731575, find_or_add_symbol("lib:body"), &cvar_731574);
+  make_cvar(cvar_731576, (object *)&__glo_lib_117imports_scheme_cyclone_libraries);make_pair(pair_731577, find_or_add_symbol("lib:imports"), &cvar_731576);
+  make_cvar(cvar_731578, (object *)&__glo_lib_117exports_scheme_cyclone_libraries);make_pair(pair_731579, find_or_add_symbol("lib:exports"), &cvar_731578);
+  make_cvar(cvar_731580, (object *)&__glo_lib_117rename_91exports_scheme_cyclone_libraries);make_pair(pair_731581, find_or_add_symbol("lib:rename-exports"), &cvar_731580);
+  make_cvar(cvar_731582, (object *)&__glo_lib_117raw_91exports_scheme_cyclone_libraries);make_pair(pair_731583, find_or_add_symbol("lib:raw-exports"), &cvar_731582);
+  make_cvar(cvar_731584, (object *)&__glo_lib_117result_scheme_cyclone_libraries);make_pair(pair_731585, find_or_add_symbol("lib:result"), &cvar_731584);
+  make_cvar(cvar_731586, (object *)&__glo_lib_117name_91_125symbol_scheme_cyclone_libraries);make_pair(pair_731587, find_or_add_symbol("lib:name->symbol"), &cvar_731586);
+  make_cvar(cvar_731588, (object *)&__glo_lib_117name_91_125string_scheme_cyclone_libraries);make_pair(pair_731589, find_or_add_symbol("lib:name->string"), &cvar_731588);
+  make_cvar(cvar_731590, (object *)&__glo_lib_117name_scheme_cyclone_libraries);make_pair(pair_731591, find_or_add_symbol("lib:name"), &cvar_731590);
+  make_cvar(cvar_731592, (object *)&__glo_lib_117list_91_125import_91set_scheme_cyclone_libraries);make_pair(pair_731593, find_or_add_symbol("lib:list->import-set"), &cvar_731592);
+  make_cvar(cvar_731594, (object *)&__glo_library_127_scheme_cyclone_libraries);make_pair(pair_731595, find_or_add_symbol("library?"), &cvar_731594);
+make_pair(c_731596, &pair_731543,Cyc_global_variables);
+make_pair(c_731597, &pair_731545, &c_731596);
+make_pair(c_731598, &pair_731547, &c_731597);
+make_pair(c_731599, &pair_731549, &c_731598);
+make_pair(c_731600, &pair_731551, &c_731599);
+make_pair(c_731601, &pair_731553, &c_731600);
+make_pair(c_731602, &pair_731555, &c_731601);
+make_pair(c_731603, &pair_731557, &c_731602);
+make_pair(c_731604, &pair_731559, &c_731603);
+make_pair(c_731605, &pair_731561, &c_731604);
+make_pair(c_731606, &pair_731563, &c_731605);
+make_pair(c_731607, &pair_731565, &c_731606);
+make_pair(c_731608, &pair_731567, &c_731607);
+make_pair(c_731609, &pair_731569, &c_731608);
+make_pair(c_731610, &pair_731571, &c_731609);
+make_pair(c_731611, &pair_731573, &c_731610);
+make_pair(c_731612, &pair_731575, &c_731611);
+make_pair(c_731613, &pair_731577, &c_731612);
+make_pair(c_731614, &pair_731579, &c_731613);
+make_pair(c_731615, &pair_731581, &c_731614);
+make_pair(c_731616, &pair_731583, &c_731615);
+make_pair(c_731617, &pair_731585, &c_731616);
+make_pair(c_731618, &pair_731587, &c_731617);
+make_pair(c_731619, &pair_731589, &c_731618);
+make_pair(c_731620, &pair_731591, &c_731619);
+make_pair(c_731621, &pair_731593, &c_731620);
+make_pair(c_731622, &pair_731595, &c_731621);
 Cyc_global_variables = &c_731622;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries)->fn)(data, 1, cont, cont);

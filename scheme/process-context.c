@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -84,7 +84,7 @@ static void __lambda_0(void *data, int argc, closure _, object k) { int i;
         object lis = NULL;
         for (i = _cyc_argc; i > 0; i--) {
           object ps = alloca(sizeof(string_type));
-          object pl = alloca(sizeof(cons_type));
+          object pl = alloca(sizeof(pair_type));
           make_string(s, _cyc_argv[i - 1]);
           memcpy(ps, &s, sizeof(string_type));
           ((list)pl)->hdr.mark = gc_color_red;
@@ -109,14 +109,14 @@ void c_schemeprocess_91context_entry_pt(data, argc, cont,value) void *data; int 
   __glo_command_91line_scheme_process_91context = &c_738; 
   __glo_emergency_91exit_scheme_process_91context = boolean_f; 
 
-  make_cvar(cvar_7317, (object *)&__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);make_cons(pair_7318, find_or_add_symbol("lib-init:schemeprocess_91context"), &cvar_7317);
-  make_cvar(cvar_7319, (object *)&__glo_get_91environment_91variable_scheme_process_91context);make_cons(pair_7320, find_or_add_symbol("get-environment-variable"), &cvar_7319);
-  make_cvar(cvar_7321, (object *)&__glo_command_91line_scheme_process_91context);make_cons(pair_7322, find_or_add_symbol("command-line"), &cvar_7321);
-  make_cvar(cvar_7323, (object *)&__glo_emergency_91exit_scheme_process_91context);make_cons(pair_7324, find_or_add_symbol("emergency-exit"), &cvar_7323);
-make_cons(c_7325, &pair_7318,Cyc_global_variables);
-make_cons(c_7326, &pair_7320, &c_7325);
-make_cons(c_7327, &pair_7322, &c_7326);
-make_cons(c_7328, &pair_7324, &c_7327);
+  make_cvar(cvar_7317, (object *)&__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);make_pair(pair_7318, find_or_add_symbol("lib-init:schemeprocess_91context"), &cvar_7317);
+  make_cvar(cvar_7319, (object *)&__glo_get_91environment_91variable_scheme_process_91context);make_pair(pair_7320, find_or_add_symbol("get-environment-variable"), &cvar_7319);
+  make_cvar(cvar_7321, (object *)&__glo_command_91line_scheme_process_91context);make_pair(pair_7322, find_or_add_symbol("command-line"), &cvar_7321);
+  make_cvar(cvar_7323, (object *)&__glo_emergency_91exit_scheme_process_91context);make_pair(pair_7324, find_or_add_symbol("emergency-exit"), &cvar_7323);
+make_pair(c_7325, &pair_7318,Cyc_global_variables);
+make_pair(c_7326, &pair_7320, &c_7325);
+make_pair(c_7327, &pair_7322, &c_7326);
+make_pair(c_7328, &pair_7324, &c_7327);
 Cyc_global_variables = &c_7328;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, 1, cont, cont);

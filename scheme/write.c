@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -321,12 +321,12 @@ void c_schemewrite_entry_pt(data, argc, cont,value) void *data; int argc; closur
   mclosure0(c_7326, (function_type)__lambda_3);c_7326.num_args = 1; 
   __glo_display_scheme_write = &c_7326; 
 
-  make_cvar(cvar_7372, (object *)&__glo_lib_91init_117schemewrite_scheme_write);make_cons(pair_7373, find_or_add_symbol("lib-init:schemewrite"), &cvar_7372);
-  make_cvar(cvar_7374, (object *)&__glo_write_scheme_write);make_cons(pair_7375, find_or_add_symbol("write"), &cvar_7374);
-  make_cvar(cvar_7376, (object *)&__glo_display_scheme_write);make_cons(pair_7377, find_or_add_symbol("display"), &cvar_7376);
-make_cons(c_7378, &pair_7373,Cyc_global_variables);
-make_cons(c_7379, &pair_7375, &c_7378);
-make_cons(c_7380, &pair_7377, &c_7379);
+  make_cvar(cvar_7372, (object *)&__glo_lib_91init_117schemewrite_scheme_write);make_pair(pair_7373, find_or_add_symbol("lib-init:schemewrite"), &cvar_7372);
+  make_cvar(cvar_7374, (object *)&__glo_write_scheme_write);make_pair(pair_7375, find_or_add_symbol("write"), &cvar_7374);
+  make_cvar(cvar_7376, (object *)&__glo_display_scheme_write);make_pair(pair_7377, find_or_add_symbol("display"), &cvar_7376);
+make_pair(c_7378, &pair_7373,Cyc_global_variables);
+make_pair(c_7379, &pair_7375, &c_7378);
+make_pair(c_7380, &pair_7377, &c_7379);
 Cyc_global_variables = &c_7380;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemewrite_scheme_write)->fn)(data, 1, cont, cont);

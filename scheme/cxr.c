@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -128,10 +128,10 @@ void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure 
   mclosure0(c_7316, (function_type)__lambda_4);c_7316.num_args = 1; 
   __glo_caaaaar_scheme_cxr = &c_7316; 
 
-  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_cons(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
-  make_cvar(cvar_7341, (object *)&__glo_caaaaar_scheme_cxr);make_cons(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
-make_cons(c_7343, &pair_7340,Cyc_global_variables);
-make_cons(c_7344, &pair_7342, &c_7343);
+  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_pair(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
+  make_cvar(cvar_7341, (object *)&__glo_caaaaar_scheme_cxr);make_pair(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
+make_pair(c_7343, &pair_7340,Cyc_global_variables);
+make_pair(c_7344, &pair_7342, &c_7343);
 Cyc_global_variables = &c_7344;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);

@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -70,7 +70,7 @@
      GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -86,7 +86,7 @@
      GC(td, &c1, buf, 4); return; \
  } else { (_fn)(td,4,(closure)_fn,a1,a2,a3,a4); }}
 
-#define closcall9(td,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,8, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((clo)->fn)(td,9,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
+#define closcall9(td,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,8, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9); } else { ((clo)->fn)(td,9,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9);}
 #define return_closcall9(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -102,7 +102,7 @@
      GC(td, &c1, buf, 9); return; \
  } else { (_fn)(td,9,(closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8,a9); }}
 
-#define closcall10(td,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,9, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10); } else { ((clo)->fn)(td,10,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);}
+#define closcall10(td,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,9, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10); } else { ((clo)->fn)(td,10,clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10);}
 #define return_closcall10(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -5109,13 +5109,13 @@ c_731269.elts[0] = ((closureN)self_73551)->elts[0];
 c_731269.elts[1] = ((closureN)self_73551)->elts[1];
 
 
-make_cons(c_731278,((closureN)self_73551)->elts[2], r_73246);
+make_pair(c_731278,((closureN)self_73551)->elts[2], r_73246);
 return_closcall1(data,(closure)&c_731269,  &c_731278);; 
 }
 
 static void __lambda_86(void *data, int argc, object self_73552, object r_73244) {
   
-make_cons(c_731274,((closureN)self_73552)->elts[1], r_73244);
+make_pair(c_731274,((closureN)self_73552)->elts[1], r_73244);
 return_closcall1(data,  ((closureN)self_73552)->elts[0],  &c_731274);; 
 }
 
@@ -5488,7 +5488,7 @@ c_731093.elts[3] = ((closureN)self_73569)->elts[3];
 c_731093.elts[4] = ((closureN)self_73569)->elts[4];
 
 
-make_cons(c_731148,quote_call_95cc,NULL);
+make_pair(c_731148,quote_call_95cc,NULL);
 return_closcall1(data,(closure)&c_731093,  &c_731148);; 
 }
 
@@ -5545,7 +5545,7 @@ c_731099.elts[2] = ((closureN)self_73572)->elts[2];
 c_731099.elts[3] = ((closureN)self_73572)->elts[3];
 
 
-make_cons(c_731141,quote_call_95cc,NULL);
+make_pair(c_731141,quote_call_95cc,NULL);
 return_closcall1(data,(closure)&c_731099,  &c_731141);; 
 }
 
@@ -5599,41 +5599,41 @@ c_731105.elts[1] = ((closureN)self_73575)->elts[1];
 c_731105.elts[2] = ((closureN)self_73575)->elts[2];
 
 
-make_cons(c_731123,quote_f,NULL);
+make_pair(c_731123,quote_f,NULL);
 
-make_cons(c_731122,quote_k,&c_731123);
+make_pair(c_731122,quote_k,&c_731123);
 
-make_cons(c_731131,quote_result,NULL);
+make_pair(c_731131,quote_result,NULL);
 
-make_cons(c_731130,quote__191,&c_731131);
+make_pair(c_731130,quote__191,&c_731131);
 
-make_cons(c_731134,quote_result,NULL);
+make_pair(c_731134,quote_result,NULL);
 
-make_cons(c_731133,quote_k,&c_731134);
+make_pair(c_731133,quote_k,&c_731134);
 
-make_cons(c_731132,&c_731133,NULL);
+make_pair(c_731132,&c_731133,NULL);
 
-make_cons(c_731129,&c_731130,&c_731132);
+make_pair(c_731129,&c_731130,&c_731132);
 
-make_cons(c_731128,quote_lambda,&c_731129);
+make_pair(c_731128,quote_lambda,&c_731129);
 
-make_cons(c_731127,&c_731128,NULL);
+make_pair(c_731127,&c_731128,NULL);
 
-make_cons(c_731126,quote_k,&c_731127);
+make_pair(c_731126,quote_k,&c_731127);
 
-make_cons(c_731125,quote_f,&c_731126);
+make_pair(c_731125,quote_f,&c_731126);
 
-make_cons(c_731124,&c_731125,NULL);
+make_pair(c_731124,&c_731125,NULL);
 
-make_cons(c_731121,&c_731122,&c_731124);
+make_pair(c_731121,&c_731122,&c_731124);
 
-make_cons(c_731120,quote_lambda,&c_731121);
+make_pair(c_731120,quote_lambda,&c_731121);
 
-make_cons(c_731119,&c_731120,NULL);
+make_pair(c_731119,&c_731120,NULL);
 
-make_cons(c_731118,quote_call_95cc,&c_731119);
+make_pair(c_731118,quote_call_95cc,&c_731119);
 
-make_cons(c_731117,quote_define,&c_731118);
+make_pair(c_731117,quote_define,&c_731118);
 return_closcall1(data,(closure)&c_731105,  &c_731117);; 
 }
 
@@ -5651,7 +5651,7 @@ c_731107.elts[0] = ((closureN)self_73576)->elts[1];
 c_731107.elts[1] = ((closureN)self_73576)->elts[2];
 
 
-make_cons(c_731115,r_73263, ((closureN)self_73576)->elts[0]);
+make_pair(c_731115,r_73263, ((closureN)self_73576)->elts[0]);
 return_closcall1(data,(closure)&c_731107,  &c_731115);; 
 }
 
@@ -5674,9 +5674,9 @@ c_731078.elts[0] = k_73268;
 c_731078.elts[1] = ((closureN)self_73578)->elts[0];
 
 
-make_cons(c_731087,quote_base,NULL);
+make_pair(c_731087,quote_base,NULL);
 
-make_cons(c_731086,quote_scheme,&c_731087);
+make_pair(c_731086,quote_scheme,&c_731087);
 return_closcall1(data,(closure)&c_731078,  &c_731086);
 } else { 
   return_closcall1(data,  k_73268,  boolean_f);}
@@ -6226,7 +6226,7 @@ c_73741.elts[5] = ((closureN)self_73607)->elts[5];
 c_73741.elts[6] = ((closureN)self_73607)->elts[6];
 
 
-make_cons(c_73877,((closureN)self_73607)->elts[7], r_73338);
+make_pair(c_73877,((closureN)self_73607)->elts[7], r_73338);
 return_closcall1(data,(closure)&c_73741,  &c_73877);; 
 }
 
@@ -6530,7 +6530,7 @@ c_73825.elts[1] = ((closureN)self_73623)->elts[1];
 c_73825.elts[2] = ((closureN)self_73623)->elts[2];
 
 
-make_cons(c_73840,((closureN)self_73623)->elts[3], r_73329);
+make_pair(c_73840,((closureN)self_73623)->elts[3], r_73329);
 return_closcall1(data,(closure)&c_73825,  &c_73840);; 
 }
 
@@ -6548,13 +6548,13 @@ c_73827.elts[0] = ((closureN)self_73624)->elts[0];
 c_73827.elts[1] = ((closureN)self_73624)->elts[1];
 
 
-make_cons(c_73836,((closureN)self_73624)->elts[2], r_73327);
+make_pair(c_73836,((closureN)self_73624)->elts[2], r_73327);
 return_closcall1(data,(closure)&c_73827,  &c_73836);; 
 }
 
 static void __lambda_12(void *data, int argc, object self_73625, object r_73325) {
   
-make_cons(c_73832,((closureN)self_73625)->elts[1], r_73325);
+make_pair(c_73832,((closureN)self_73625)->elts[1], r_73325);
 return_closcall1(data,  ((closureN)self_73625)->elts[0],  &c_73832);; 
 }
 
@@ -6790,12 +6790,12 @@ static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,c
   mclosure0(c_73638, (function_type)__lambda_196);c_73638.num_args = 3; 
   __glo_c_91compile_91and_91emit = &c_73638; 
 
-  make_cvar(cvar_731912, (object *)&__glo_run_91compiler);make_cons(pair_731913, find_or_add_symbol("run-compiler"), &cvar_731912);
-  make_cvar(cvar_731914, (object *)&__glo_read_91file);make_cons(pair_731915, find_or_add_symbol("read-file"), &cvar_731914);
-  make_cvar(cvar_731916, (object *)&__glo_c_91compile_91and_91emit);make_cons(pair_731917, find_or_add_symbol("c-compile-and-emit"), &cvar_731916);
-make_cons(c_731918, &pair_731913,Cyc_global_variables);
-make_cons(c_731919, &pair_731915, &c_731918);
-make_cons(c_731920, &pair_731917, &c_731919);
+  make_cvar(cvar_731912, (object *)&__glo_run_91compiler);make_pair(pair_731913, find_or_add_symbol("run-compiler"), &cvar_731912);
+  make_cvar(cvar_731914, (object *)&__glo_read_91file);make_pair(pair_731915, find_or_add_symbol("read-file"), &cvar_731914);
+  make_cvar(cvar_731916, (object *)&__glo_c_91compile_91and_91emit);make_pair(pair_731917, find_or_add_symbol("c-compile-and-emit"), &cvar_731916);
+make_pair(c_731918, &pair_731913,Cyc_global_variables);
+make_pair(c_731919, &pair_731915, &c_731918);
+make_pair(c_731920, &pair_731917, &c_731919);
 Cyc_global_variables = &c_731920;
 mclosure1(c_done, c_entry_pt_first_lambda, &c_done);
 mclosure1(c_731921, c_schemecyclonecgen_entry_pt, &c_done);

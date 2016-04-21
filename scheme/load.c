@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -296,7 +296,7 @@ c_7336.elts = (object *)alloca(sizeof(object) * 1);
 c_7336.elts[0] = k_7314;
 
 
-make_cons(c_7344,expr_735, ((closureN)self_7321)->elts[0]);
+make_pair(c_7344,expr_735, ((closureN)self_7321)->elts[0]);
 return_closcall1(data,(closure)&c_7336,  &c_7344);; 
 }
 
@@ -319,10 +319,10 @@ void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_7324, (function_type)__lambda_6);c_7324.num_args = 1; 
   __glo_load_scheme_load = &c_7324; 
 
-  make_cvar(cvar_7351, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_cons(pair_7352, find_or_add_symbol("lib-init:schemeload"), &cvar_7351);
-  make_cvar(cvar_7353, (object *)&__glo_load_scheme_load);make_cons(pair_7354, find_or_add_symbol("load"), &cvar_7353);
-make_cons(c_7355, &pair_7352,Cyc_global_variables);
-make_cons(c_7356, &pair_7354, &c_7355);
+  make_cvar(cvar_7351, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7352, find_or_add_symbol("lib-init:schemeload"), &cvar_7351);
+  make_cvar(cvar_7353, (object *)&__glo_load_scheme_load);make_pair(pair_7354, find_or_add_symbol("load"), &cvar_7353);
+make_pair(c_7355, &pair_7352,Cyc_global_variables);
+make_pair(c_7356, &pair_7354, &c_7355);
 Cyc_global_variables = &c_7356;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);

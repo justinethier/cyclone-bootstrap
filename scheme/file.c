@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 3); return; \
  } else { (_fn)(td,3,(closure)_fn,a1,a2,a3); }}
 
-#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
+#define closcall4(td,clo,a1,a2,a3,a4) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,3, (closure)(a1), clo,a2,a3,a4); } else { ((clo)->fn)(td,4,clo,a1,a2,a3,a4);}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -799,16 +799,16 @@ void c_schemefile_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_7386, (function_type)__lambda_1);c_7386.num_args = 2; 
   __glo_call_91with_91input_91file_scheme_file = &c_7386; 
 
-  make_cvar(cvar_73196, (object *)&__glo_lib_91init_117schemefile_scheme_file);make_cons(pair_73197, find_or_add_symbol("lib-init:schemefile"), &cvar_73196);
-  make_cvar(cvar_73198, (object *)&__glo_with_91output_91to_91file_scheme_file);make_cons(pair_73199, find_or_add_symbol("with-output-to-file"), &cvar_73198);
-  make_cvar(cvar_73200, (object *)&__glo_with_91input_91from_91file_scheme_file);make_cons(pair_73201, find_or_add_symbol("with-input-from-file"), &cvar_73200);
-  make_cvar(cvar_73202, (object *)&__glo_call_91with_91output_91file_scheme_file);make_cons(pair_73203, find_or_add_symbol("call-with-output-file"), &cvar_73202);
-  make_cvar(cvar_73204, (object *)&__glo_call_91with_91input_91file_scheme_file);make_cons(pair_73205, find_or_add_symbol("call-with-input-file"), &cvar_73204);
-make_cons(c_73206, &pair_73197,Cyc_global_variables);
-make_cons(c_73207, &pair_73199, &c_73206);
-make_cons(c_73208, &pair_73201, &c_73207);
-make_cons(c_73209, &pair_73203, &c_73208);
-make_cons(c_73210, &pair_73205, &c_73209);
+  make_cvar(cvar_73196, (object *)&__glo_lib_91init_117schemefile_scheme_file);make_pair(pair_73197, find_or_add_symbol("lib-init:schemefile"), &cvar_73196);
+  make_cvar(cvar_73198, (object *)&__glo_with_91output_91to_91file_scheme_file);make_pair(pair_73199, find_or_add_symbol("with-output-to-file"), &cvar_73198);
+  make_cvar(cvar_73200, (object *)&__glo_with_91input_91from_91file_scheme_file);make_pair(pair_73201, find_or_add_symbol("with-input-from-file"), &cvar_73200);
+  make_cvar(cvar_73202, (object *)&__glo_call_91with_91output_91file_scheme_file);make_pair(pair_73203, find_or_add_symbol("call-with-output-file"), &cvar_73202);
+  make_cvar(cvar_73204, (object *)&__glo_call_91with_91input_91file_scheme_file);make_pair(pair_73205, find_or_add_symbol("call-with-input-file"), &cvar_73204);
+make_pair(c_73206, &pair_73197,Cyc_global_variables);
+make_pair(c_73207, &pair_73199, &c_73206);
+make_pair(c_73208, &pair_73201, &c_73207);
+make_pair(c_73209, &pair_73203, &c_73208);
+make_pair(c_73210, &pair_73205, &c_73209);
 Cyc_global_variables = &c_73210;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemefile_scheme_file)->fn)(data, 1, cont, cont);

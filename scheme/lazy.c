@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -509,7 +509,7 @@ c_73145.elts[2] = ((closureN)self_7369)->elts[2];
 c_73145.elts[3] = ((closureN)self_7369)->elts[3];
 
 
-make_cons(c_73174,((closureN)self_7369)->elts[4], r_7339);
+make_pair(c_73174,((closureN)self_7369)->elts[4], r_7339);
 return_closcall1(data,(closure)&c_73145,  &c_73174);; 
 }
 
@@ -528,7 +528,7 @@ c_73147.elts[1] = ((closureN)self_7370)->elts[1];
 c_73147.elts[2] = ((closureN)self_7370)->elts[2];
 
 
-make_cons(c_73170,((closureN)self_7370)->elts[3], r_7337);
+make_pair(c_73170,((closureN)self_7370)->elts[3], r_7337);
 return_closcall1(data,(closure)&c_73147,  &c_73170);; 
 }
 
@@ -546,7 +546,7 @@ c_73149.elts[0] = ((closureN)self_7371)->elts[0];
 c_73149.elts[1] = ((closureN)self_7371)->elts[1];
 
 
-make_cons(c_73166,((closureN)self_7371)->elts[2], r_7335);
+make_pair(c_73166,((closureN)self_7371)->elts[2], r_7335);
 return_closcall1(data,(closure)&c_73149,  &c_73166);; 
 }
 
@@ -581,13 +581,13 @@ c_73153.elts[0] = ((closureN)self_7373)->elts[0];
 c_73153.elts[1] = ((closureN)self_7373)->elts[1];
 
 
-make_cons(c_73162,((closureN)self_7373)->elts[2], r_7333);
+make_pair(c_73162,((closureN)self_7373)->elts[2], r_7333);
 return_closcall1(data,(closure)&c_73153,  &c_73162);; 
 }
 
 static void __lambda_12(void *data, int argc, object self_7374, object r_7331) {
   
-make_cons(c_73158,((closureN)self_7374)->elts[1], r_7331);
+make_pair(c_73158,((closureN)self_7374)->elts[1], r_7331);
 return_closcall1(data,  ((closureN)self_7374)->elts[0],  &c_73158);; 
 }
 
@@ -696,7 +696,7 @@ c_7399.elts[2] = ((closureN)self_7379)->elts[2];
 c_7399.elts[3] = ((closureN)self_7379)->elts[3];
 
 
-make_cons(c_73128,((closureN)self_7379)->elts[4], r_7352);
+make_pair(c_73128,((closureN)self_7379)->elts[4], r_7352);
 return_closcall1(data,(closure)&c_7399,  &c_73128);; 
 }
 
@@ -715,7 +715,7 @@ c_73101.elts[1] = ((closureN)self_7380)->elts[1];
 c_73101.elts[2] = ((closureN)self_7380)->elts[2];
 
 
-make_cons(c_73124,((closureN)self_7380)->elts[3], r_7350);
+make_pair(c_73124,((closureN)self_7380)->elts[3], r_7350);
 return_closcall1(data,(closure)&c_73101,  &c_73124);; 
 }
 
@@ -733,7 +733,7 @@ c_73103.elts[0] = ((closureN)self_7381)->elts[0];
 c_73103.elts[1] = ((closureN)self_7381)->elts[1];
 
 
-make_cons(c_73120,((closureN)self_7381)->elts[2], r_7348);
+make_pair(c_73120,((closureN)self_7381)->elts[2], r_7348);
 return_closcall1(data,(closure)&c_73103,  &c_73120);; 
 }
 
@@ -768,13 +768,13 @@ c_73107.elts[0] = ((closureN)self_7383)->elts[0];
 c_73107.elts[1] = ((closureN)self_7383)->elts[1];
 
 
-make_cons(c_73116,((closureN)self_7383)->elts[2], r_7346);
+make_pair(c_73116,((closureN)self_7383)->elts[2], r_7346);
 return_closcall1(data,(closure)&c_73107,  &c_73116);; 
 }
 
 static void __lambda_1(void *data, int argc, object self_7384, object r_7344) {
   
-make_cons(c_73112,((closureN)self_7384)->elts[1], r_7344);
+make_pair(c_73112,((closureN)self_7384)->elts[1], r_7344);
 return_closcall1(data,  ((closureN)self_7384)->elts[0],  &c_73112);; 
 }
 
@@ -807,18 +807,18 @@ void c_schemelazy_entry_pt(data, argc, cont,value) void *data; int argc; closure
   __glo_force_scheme_lazy = &c_7385; 
   __glo_promise_127_scheme_lazy = boolean_f; 
 
-  make_cvar(cvar_73239, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_cons(pair_73240, find_or_add_symbol("lib-init:schemelazy"), &cvar_73239);
-  make_cvar(cvar_73241, (object *)&__glo_promise_127_scheme_lazy);make_cons(pair_73242, find_or_add_symbol("promise?"), &cvar_73241);
-  make_cvar(cvar_73243, (object *)&__glo_make_91promise_scheme_lazy);make_cons(pair_73244, find_or_add_symbol("make-promise"), &cvar_73243);
-  make_cvar(cvar_73245, (object *)&__glo_delay_91force_scheme_lazy);make_cons(pair_73246, find_or_add_symbol("delay-force"), &cvar_73245);
-  make_cvar(cvar_73247, (object *)&__glo_delay_scheme_lazy);make_cons(pair_73248, find_or_add_symbol("delay"), &cvar_73247);
-  make_cvar(cvar_73249, (object *)&__glo_force_scheme_lazy);make_cons(pair_73250, find_or_add_symbol("force"), &cvar_73249);
-make_cons(c_73251, &pair_73240,Cyc_global_variables);
-make_cons(c_73252, &pair_73242, &c_73251);
-make_cons(c_73253, &pair_73244, &c_73252);
-make_cons(c_73254, &pair_73246, &c_73253);
-make_cons(c_73255, &pair_73248, &c_73254);
-make_cons(c_73256, &pair_73250, &c_73255);
+  make_cvar(cvar_73239, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_pair(pair_73240, find_or_add_symbol("lib-init:schemelazy"), &cvar_73239);
+  make_cvar(cvar_73241, (object *)&__glo_promise_127_scheme_lazy);make_pair(pair_73242, find_or_add_symbol("promise?"), &cvar_73241);
+  make_cvar(cvar_73243, (object *)&__glo_make_91promise_scheme_lazy);make_pair(pair_73244, find_or_add_symbol("make-promise"), &cvar_73243);
+  make_cvar(cvar_73245, (object *)&__glo_delay_91force_scheme_lazy);make_pair(pair_73246, find_or_add_symbol("delay-force"), &cvar_73245);
+  make_cvar(cvar_73247, (object *)&__glo_delay_scheme_lazy);make_pair(pair_73248, find_or_add_symbol("delay"), &cvar_73247);
+  make_cvar(cvar_73249, (object *)&__glo_force_scheme_lazy);make_pair(pair_73250, find_or_add_symbol("force"), &cvar_73249);
+make_pair(c_73251, &pair_73240,Cyc_global_variables);
+make_pair(c_73252, &pair_73242, &c_73251);
+make_pair(c_73253, &pair_73244, &c_73252);
+make_pair(c_73254, &pair_73246, &c_73253);
+make_pair(c_73255, &pair_73248, &c_73254);
+make_pair(c_73256, &pair_73250, &c_73255);
 Cyc_global_variables = &c_73256;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemelazy_scheme_lazy)->fn)(data, 1, cont, cont);

@@ -6,7 +6,7 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -213,14 +213,14 @@ void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure
   mclosure0(c_734, (function_type)__lambda_0);c_734.num_args = 0; 
   __glo_current_91second_scheme_time = &c_734; 
 
-  make_cvar(cvar_739, (object *)&__glo_lib_91init_117schemetime_scheme_time);make_cons(pair_7310, find_or_add_symbol("lib-init:schemetime"), &cvar_739);
-  make_cvar(cvar_7311, (object *)&__glo_jiffies_91per_91second_scheme_time);make_cons(pair_7312, find_or_add_symbol("jiffies-per-second"), &cvar_7311);
-  make_cvar(cvar_7313, (object *)&__glo_current_91jiffy_scheme_time);make_cons(pair_7314, find_or_add_symbol("current-jiffy"), &cvar_7313);
-  make_cvar(cvar_7315, (object *)&__glo_current_91second_scheme_time);make_cons(pair_7316, find_or_add_symbol("current-second"), &cvar_7315);
-make_cons(c_7317, &pair_7310,Cyc_global_variables);
-make_cons(c_7318, &pair_7312, &c_7317);
-make_cons(c_7319, &pair_7314, &c_7318);
-make_cons(c_7320, &pair_7316, &c_7319);
+  make_cvar(cvar_739, (object *)&__glo_lib_91init_117schemetime_scheme_time);make_pair(pair_7310, find_or_add_symbol("lib-init:schemetime"), &cvar_739);
+  make_cvar(cvar_7311, (object *)&__glo_jiffies_91per_91second_scheme_time);make_pair(pair_7312, find_or_add_symbol("jiffies-per-second"), &cvar_7311);
+  make_cvar(cvar_7313, (object *)&__glo_current_91jiffy_scheme_time);make_pair(pair_7314, find_or_add_symbol("current-jiffy"), &cvar_7313);
+  make_cvar(cvar_7315, (object *)&__glo_current_91second_scheme_time);make_pair(pair_7316, find_or_add_symbol("current-second"), &cvar_7315);
+make_pair(c_7317, &pair_7310,Cyc_global_variables);
+make_pair(c_7318, &pair_7312, &c_7317);
+make_pair(c_7319, &pair_7314, &c_7318);
+make_pair(c_7320, &pair_7316, &c_7319);
 Cyc_global_variables = &c_7320;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);

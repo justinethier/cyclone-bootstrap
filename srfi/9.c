@@ -22,7 +22,7 @@
      GC(td, &c1, buf, 0); return; \
  } else { (_fn)(td,0,(closure)_fn); }}
 
-#define closcall1(td,clo,a1) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -38,7 +38,7 @@
      GC(td, &c1, buf, 1); return; \
  } else { (_fn)(td,1,(closure)_fn,a1); }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -54,7 +54,7 @@
      GC(td, &c1, buf, 2); return; \
  } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
 
-#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
+#define closcall3(td,clo,a1,a2,a3) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,2, (closure)(a1), clo,a2,a3); } else { ((clo)->fn)(td,3,clo,a1,a2,a3);}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -1291,7 +1291,7 @@ c_73894.elts[14] = ((closureN)self_73406)->elts[14];
 c_73894.elts[15] = ((closureN)self_73406)->elts[16];
 
 
-make_cons(c_731696,((closureN)self_73406)->elts[15], r_73309);
+make_pair(c_731696,((closureN)self_73406)->elts[15], r_73309);
 return_closcall1(data,(closure)&c_73894,  &c_731696);; 
 }
 
@@ -1322,7 +1322,7 @@ c_73896.elts[13] = ((closureN)self_73407)->elts[13];
 c_73896.elts[14] = ((closureN)self_73407)->elts[15];
 
 
-make_cons(c_731692,((closureN)self_73407)->elts[14], r_73307);
+make_pair(c_731692,((closureN)self_73407)->elts[14], r_73307);
 return_closcall1(data,(closure)&c_73896,  &c_731692);; 
 }
 
@@ -1383,7 +1383,7 @@ c_73900.elts[13] = ((closureN)self_73409)->elts[13];
 c_73900.elts[14] = ((closureN)self_73409)->elts[15];
 
 
-make_cons(c_731688,((closureN)self_73409)->elts[14], r_73305);
+make_pair(c_731688,((closureN)self_73409)->elts[14], r_73305);
 return_closcall1(data,(closure)&c_73900,  &c_731688);; 
 }
 
@@ -1413,7 +1413,7 @@ c_73902.elts[12] = ((closureN)self_73410)->elts[13];
 c_73902.elts[13] = ((closureN)self_73410)->elts[14];
 
 
-make_cons(c_731684,((closureN)self_73410)->elts[11], r_73303);
+make_pair(c_731684,((closureN)self_73410)->elts[11], r_73303);
 return_closcall1(data,(closure)&c_73902,  &c_731684);; 
 }
 
@@ -1443,7 +1443,7 @@ c_73904.elts[12] = ((closureN)self_73411)->elts[12];
 c_73904.elts[13] = ((closureN)self_73411)->elts[13];
 
 
-make_cons(c_731680,((closureN)self_73411)->elts[10], r_73302);
+make_pair(c_731680,((closureN)self_73411)->elts[10], r_73302);
 return_closcall1(data,(closure)&c_73904,  &c_731680);; 
 }
 
@@ -1472,7 +1472,7 @@ c_73906.elts[11] = ((closureN)self_73412)->elts[12];
 c_73906.elts[12] = ((closureN)self_73412)->elts[13];
 
 
-make_cons(c_731676,((closureN)self_73412)->elts[3], r_73301);
+make_pair(c_731676,((closureN)self_73412)->elts[3], r_73301);
 return_closcall1(data,(closure)&c_73906,  &c_731676);; 
 }
 
@@ -1529,7 +1529,7 @@ c_73910.elts[11] = ((closureN)self_73414)->elts[11];
 c_73910.elts[12] = ((closureN)self_73414)->elts[13];
 
 
-make_cons(c_731672,((closureN)self_73414)->elts[12], r_73300);
+make_pair(c_731672,((closureN)self_73414)->elts[12], r_73300);
 return_closcall1(data,(closure)&c_73910,  &c_731672);; 
 }
 
@@ -1558,7 +1558,7 @@ c_73912.elts[11] = ((closureN)self_73415)->elts[11];
 c_73912.elts[12] = ((closureN)self_73415)->elts[12];
 
 
-make_cons(c_731668,((closureN)self_73415)->elts[9], r_73298);
+make_pair(c_731668,((closureN)self_73415)->elts[9], r_73298);
 return_closcall1(data,(closure)&c_73912,  &c_731668);; 
 }
 
@@ -1587,7 +1587,7 @@ c_73914.elts[11] = ((closureN)self_73416)->elts[11];
 c_73914.elts[12] = ((closureN)self_73416)->elts[12];
 
 
-make_cons(c_731664,((closureN)self_73416)->elts[0], r_73297);
+make_pair(c_731664,((closureN)self_73416)->elts[0], r_73297);
 return_closcall1(data,(closure)&c_73914,  &c_731664);; 
 }
 
@@ -1703,7 +1703,7 @@ c_73923.elts[13] = ((closureN)self_73420)->elts[13];
 c_73923.elts[14] = ((closureN)self_73420)->elts[14];
 
 
-make_cons(c_731660,((closureN)self_73420)->elts[9], r_73295);
+make_pair(c_731660,((closureN)self_73420)->elts[9], r_73295);
 return_closcall1(data,(closure)&c_73923,  &c_731660);; 
 }
 
@@ -1734,7 +1734,7 @@ c_73925.elts[13] = ((closureN)self_73421)->elts[13];
 c_73925.elts[14] = ((closureN)self_73421)->elts[14];
 
 
-make_cons(c_731656,((closureN)self_73421)->elts[10], r_73294);
+make_pair(c_731656,((closureN)self_73421)->elts[10], r_73294);
 return_closcall1(data,(closure)&c_73925,  &c_731656);; 
 }
 
@@ -1764,7 +1764,7 @@ c_73927.elts[12] = ((closureN)self_73422)->elts[12];
 c_73927.elts[13] = ((closureN)self_73422)->elts[14];
 
 
-make_cons(c_731652,((closureN)self_73422)->elts[13], r_73293);
+make_pair(c_731652,((closureN)self_73422)->elts[13], r_73293);
 return_closcall1(data,(closure)&c_73927,  &c_731652);; 
 }
 
@@ -1823,7 +1823,7 @@ c_73931.elts[12] = ((closureN)self_73424)->elts[12];
 c_73931.elts[13] = ((closureN)self_73424)->elts[14];
 
 
-make_cons(c_731648,((closureN)self_73424)->elts[13], r_73291);
+make_pair(c_731648,((closureN)self_73424)->elts[13], r_73291);
 return_closcall1(data,(closure)&c_73931,  &c_731648);; 
 }
 
@@ -1852,7 +1852,7 @@ c_73933.elts[11] = ((closureN)self_73425)->elts[12];
 c_73933.elts[12] = ((closureN)self_73425)->elts[13];
 
 
-make_cons(c_731644,((closureN)self_73425)->elts[10], r_73289);
+make_pair(c_731644,((closureN)self_73425)->elts[10], r_73289);
 return_closcall1(data,(closure)&c_73933,  &c_731644);; 
 }
 
@@ -1881,7 +1881,7 @@ c_73935.elts[11] = ((closureN)self_73426)->elts[11];
 c_73935.elts[12] = ((closureN)self_73426)->elts[12];
 
 
-make_cons(c_731640,((closureN)self_73426)->elts[0], r_73288);
+make_pair(c_731640,((closureN)self_73426)->elts[0], r_73288);
 return_closcall1(data,(closure)&c_73935,  &c_731640);; 
 }
 
@@ -2187,7 +2187,7 @@ c_731538.elts[6] = ((closureN)self_73439)->elts[6];
 c_731538.elts[7] = ((closureN)self_73439)->elts[7];
 
 
-make_cons(c_731613,((closureN)self_73439)->elts[8], r_73284);
+make_pair(c_731613,((closureN)self_73439)->elts[8], r_73284);
 return_closcall1(data,(closure)&c_731538,  &c_731613);; 
 }
 
@@ -2210,7 +2210,7 @@ c_731540.elts[5] = ((closureN)self_73440)->elts[5];
 c_731540.elts[6] = ((closureN)self_73440)->elts[6];
 
 
-make_cons(c_731609,((closureN)self_73440)->elts[7], r_73282);
+make_pair(c_731609,((closureN)self_73440)->elts[7], r_73282);
 return_closcall1(data,(closure)&c_731540,  &c_731609);; 
 }
 
@@ -2255,7 +2255,7 @@ c_731544.elts[5] = ((closureN)self_73442)->elts[5];
 c_731544.elts[6] = ((closureN)self_73442)->elts[6];
 
 
-make_cons(c_731605,((closureN)self_73442)->elts[7], r_73280);
+make_pair(c_731605,((closureN)self_73442)->elts[7], r_73280);
 return_closcall1(data,(closure)&c_731544,  &c_731605);; 
 }
 
@@ -2278,7 +2278,7 @@ c_731546.elts[5] = ((closureN)self_73443)->elts[5];
 c_731546.elts[6] = ((closureN)self_73443)->elts[6];
 
 
-make_cons(c_731601,((closureN)self_73443)->elts[3], r_73278);
+make_pair(c_731601,((closureN)self_73443)->elts[3], r_73278);
 return_closcall1(data,(closure)&c_731546,  &c_731601);; 
 }
 
@@ -2300,7 +2300,7 @@ c_731548.elts[4] = ((closureN)self_73444)->elts[5];
 c_731548.elts[5] = ((closureN)self_73444)->elts[6];
 
 
-make_cons(c_731597,((closureN)self_73444)->elts[1], r_73277);
+make_pair(c_731597,((closureN)self_73444)->elts[1], r_73277);
 return_closcall1(data,(closure)&c_731548,  &c_731597);; 
 }
 
@@ -2343,7 +2343,7 @@ c_731552.elts[4] = ((closureN)self_73446)->elts[4];
 c_731552.elts[5] = ((closureN)self_73446)->elts[5];
 
 
-make_cons(c_731593,((closureN)self_73446)->elts[6], r_73276);
+make_pair(c_731593,((closureN)self_73446)->elts[6], r_73276);
 return_closcall1(data,(closure)&c_731552,  &c_731593);; 
 }
 
@@ -2364,7 +2364,7 @@ c_731554.elts[3] = ((closureN)self_73447)->elts[4];
 c_731554.elts[4] = ((closureN)self_73447)->elts[5];
 
 
-make_cons(c_731589,((closureN)self_73447)->elts[2], r_73274);
+make_pair(c_731589,((closureN)self_73447)->elts[2], r_73274);
 return_closcall1(data,(closure)&c_731554,  &c_731589);; 
 }
 
@@ -2384,7 +2384,7 @@ c_731556.elts[2] = ((closureN)self_73448)->elts[2];
 c_731556.elts[3] = ((closureN)self_73448)->elts[3];
 
 
-make_cons(c_731585,((closureN)self_73448)->elts[4], r_73273);
+make_pair(c_731585,((closureN)self_73448)->elts[4], r_73273);
 return_closcall1(data,(closure)&c_731556,  &c_731585);; 
 }
 
@@ -2403,7 +2403,7 @@ c_731558.elts[1] = ((closureN)self_73449)->elts[1];
 c_731558.elts[2] = ((closureN)self_73449)->elts[2];
 
 
-make_cons(c_731581,((closureN)self_73449)->elts[3], r_73271);
+make_pair(c_731581,((closureN)self_73449)->elts[3], r_73271);
 return_closcall1(data,(closure)&c_731558,  &c_731581);; 
 }
 
@@ -2440,7 +2440,7 @@ c_731562.elts[1] = ((closureN)self_73451)->elts[1];
 c_731562.elts[2] = ((closureN)self_73451)->elts[2];
 
 
-make_cons(c_731577,((closureN)self_73451)->elts[3], r_73269);
+make_pair(c_731577,((closureN)self_73451)->elts[3], r_73269);
 return_closcall1(data,(closure)&c_731562,  &c_731577);; 
 }
 
@@ -2458,13 +2458,13 @@ c_731564.elts[0] = ((closureN)self_73452)->elts[0];
 c_731564.elts[1] = ((closureN)self_73452)->elts[1];
 
 
-make_cons(c_731573,((closureN)self_73452)->elts[2], r_73267);
+make_pair(c_731573,((closureN)self_73452)->elts[2], r_73267);
 return_closcall1(data,(closure)&c_731564,  &c_731573);; 
 }
 
 static void __lambda_170(void *data, int argc, object self_73453, object r_73265) {
   
-make_cons(c_731569,((closureN)self_73453)->elts[0], r_73265);
+make_pair(c_731569,((closureN)self_73453)->elts[0], r_73265);
 return_closcall1(data,  ((closureN)self_73453)->elts[1],  &c_731569);; 
 }
 
@@ -2884,7 +2884,7 @@ c_731401.elts[6] = ((closureN)self_73471)->elts[6];
 c_731401.elts[7] = ((closureN)self_73471)->elts[7];
 
 
-make_cons(c_731476,((closureN)self_73471)->elts[8], r_73254);
+make_pair(c_731476,((closureN)self_73471)->elts[8], r_73254);
 return_closcall1(data,(closure)&c_731401,  &c_731476);; 
 }
 
@@ -2907,7 +2907,7 @@ c_731403.elts[5] = ((closureN)self_73472)->elts[5];
 c_731403.elts[6] = ((closureN)self_73472)->elts[6];
 
 
-make_cons(c_731472,((closureN)self_73472)->elts[7], r_73252);
+make_pair(c_731472,((closureN)self_73472)->elts[7], r_73252);
 return_closcall1(data,(closure)&c_731403,  &c_731472);; 
 }
 
@@ -2952,7 +2952,7 @@ c_731407.elts[5] = ((closureN)self_73474)->elts[5];
 c_731407.elts[6] = ((closureN)self_73474)->elts[6];
 
 
-make_cons(c_731468,((closureN)self_73474)->elts[7], r_73250);
+make_pair(c_731468,((closureN)self_73474)->elts[7], r_73250);
 return_closcall1(data,(closure)&c_731407,  &c_731468);; 
 }
 
@@ -2975,7 +2975,7 @@ c_731409.elts[5] = ((closureN)self_73475)->elts[5];
 c_731409.elts[6] = ((closureN)self_73475)->elts[6];
 
 
-make_cons(c_731464,((closureN)self_73475)->elts[3], r_73248);
+make_pair(c_731464,((closureN)self_73475)->elts[3], r_73248);
 return_closcall1(data,(closure)&c_731409,  &c_731464);; 
 }
 
@@ -2997,7 +2997,7 @@ c_731411.elts[4] = ((closureN)self_73476)->elts[5];
 c_731411.elts[5] = ((closureN)self_73476)->elts[6];
 
 
-make_cons(c_731460,((closureN)self_73476)->elts[1], r_73247);
+make_pair(c_731460,((closureN)self_73476)->elts[1], r_73247);
 return_closcall1(data,(closure)&c_731411,  &c_731460);; 
 }
 
@@ -3040,7 +3040,7 @@ c_731415.elts[4] = ((closureN)self_73478)->elts[4];
 c_731415.elts[5] = ((closureN)self_73478)->elts[5];
 
 
-make_cons(c_731456,((closureN)self_73478)->elts[6], r_73246);
+make_pair(c_731456,((closureN)self_73478)->elts[6], r_73246);
 return_closcall1(data,(closure)&c_731415,  &c_731456);; 
 }
 
@@ -3061,7 +3061,7 @@ c_731417.elts[3] = ((closureN)self_73479)->elts[4];
 c_731417.elts[4] = ((closureN)self_73479)->elts[5];
 
 
-make_cons(c_731452,((closureN)self_73479)->elts[2], r_73244);
+make_pair(c_731452,((closureN)self_73479)->elts[2], r_73244);
 return_closcall1(data,(closure)&c_731417,  &c_731452);; 
 }
 
@@ -3081,7 +3081,7 @@ c_731419.elts[2] = ((closureN)self_73480)->elts[2];
 c_731419.elts[3] = ((closureN)self_73480)->elts[3];
 
 
-make_cons(c_731448,((closureN)self_73480)->elts[4], r_73243);
+make_pair(c_731448,((closureN)self_73480)->elts[4], r_73243);
 return_closcall1(data,(closure)&c_731419,  &c_731448);; 
 }
 
@@ -3100,7 +3100,7 @@ c_731421.elts[1] = ((closureN)self_73481)->elts[1];
 c_731421.elts[2] = ((closureN)self_73481)->elts[2];
 
 
-make_cons(c_731444,((closureN)self_73481)->elts[3], r_73241);
+make_pair(c_731444,((closureN)self_73481)->elts[3], r_73241);
 return_closcall1(data,(closure)&c_731421,  &c_731444);; 
 }
 
@@ -3137,7 +3137,7 @@ c_731425.elts[1] = ((closureN)self_73483)->elts[1];
 c_731425.elts[2] = ((closureN)self_73483)->elts[2];
 
 
-make_cons(c_731440,((closureN)self_73483)->elts[3], r_73239);
+make_pair(c_731440,((closureN)self_73483)->elts[3], r_73239);
 return_closcall1(data,(closure)&c_731425,  &c_731440);; 
 }
 
@@ -3155,13 +3155,13 @@ c_731427.elts[0] = ((closureN)self_73484)->elts[0];
 c_731427.elts[1] = ((closureN)self_73484)->elts[1];
 
 
-make_cons(c_731436,((closureN)self_73484)->elts[2], r_73237);
+make_pair(c_731436,((closureN)self_73484)->elts[2], r_73237);
 return_closcall1(data,(closure)&c_731427,  &c_731436);; 
 }
 
 static void __lambda_138(void *data, int argc, object self_73485, object r_73235) {
   
-make_cons(c_731432,((closureN)self_73485)->elts[0], r_73235);
+make_pair(c_731432,((closureN)self_73485)->elts[0], r_73235);
 return_closcall1(data,  ((closureN)self_73485)->elts[1],  &c_731432);; 
 }
 
@@ -3737,7 +3737,7 @@ c_731255.elts[8] = ((closureN)self_73506)->elts[8];
 c_731255.elts[9] = ((closureN)self_73506)->elts[10];
 
 
-make_cons(c_731333,((closureN)self_73506)->elts[9], r_73226);
+make_pair(c_731333,((closureN)self_73506)->elts[9], r_73226);
 return_closcall1(data,(closure)&c_731255,  &c_731333);; 
 }
 
@@ -3762,7 +3762,7 @@ c_731257.elts[7] = ((closureN)self_73507)->elts[7];
 c_731257.elts[8] = ((closureN)self_73507)->elts[9];
 
 
-make_cons(c_731329,((closureN)self_73507)->elts[8], r_73224);
+make_pair(c_731329,((closureN)self_73507)->elts[8], r_73224);
 return_closcall1(data,(closure)&c_731257,  &c_731329);; 
 }
 
@@ -3811,7 +3811,7 @@ c_731261.elts[7] = ((closureN)self_73509)->elts[7];
 c_731261.elts[8] = ((closureN)self_73509)->elts[9];
 
 
-make_cons(c_731325,((closureN)self_73509)->elts[8], r_73222);
+make_pair(c_731325,((closureN)self_73509)->elts[8], r_73222);
 return_closcall1(data,(closure)&c_731261,  &c_731325);; 
 }
 
@@ -3836,7 +3836,7 @@ c_731263.elts[7] = ((closureN)self_73510)->elts[7];
 c_731263.elts[8] = ((closureN)self_73510)->elts[8];
 
 
-make_cons(c_731321,((closureN)self_73510)->elts[5], r_73220);
+make_pair(c_731321,((closureN)self_73510)->elts[5], r_73220);
 return_closcall1(data,(closure)&c_731263,  &c_731321);; 
 }
 
@@ -3860,7 +3860,7 @@ c_731265.elts[6] = ((closureN)self_73511)->elts[7];
 c_731265.elts[7] = ((closureN)self_73511)->elts[8];
 
 
-make_cons(c_731317,((closureN)self_73511)->elts[1], r_73219);
+make_pair(c_731317,((closureN)self_73511)->elts[1], r_73219);
 return_closcall1(data,(closure)&c_731265,  &c_731317);; 
 }
 
@@ -3929,7 +3929,7 @@ c_731271.elts[6] = ((closureN)self_73514)->elts[6];
 c_731271.elts[7] = ((closureN)self_73514)->elts[8];
 
 
-make_cons(c_731310,((closureN)self_73514)->elts[7], r_73218);
+make_pair(c_731310,((closureN)self_73514)->elts[7], r_73218);
 return_closcall1(data,(closure)&c_731271,  &c_731310);; 
 }
 
@@ -3952,7 +3952,7 @@ c_731273.elts[5] = ((closureN)self_73515)->elts[5];
 c_731273.elts[6] = ((closureN)self_73515)->elts[7];
 
 
-make_cons(c_731306,((closureN)self_73515)->elts[6], r_73216);
+make_pair(c_731306,((closureN)self_73515)->elts[6], r_73216);
 return_closcall1(data,(closure)&c_731273,  &c_731306);; 
 }
 
@@ -3974,7 +3974,7 @@ c_731275.elts[4] = ((closureN)self_73516)->elts[4];
 c_731275.elts[5] = ((closureN)self_73516)->elts[6];
 
 
-make_cons(c_731302,((closureN)self_73516)->elts[5], r_73214);
+make_pair(c_731302,((closureN)self_73516)->elts[5], r_73214);
 return_closcall1(data,(closure)&c_731275,  &c_731302);; 
 }
 
@@ -3995,7 +3995,7 @@ c_731277.elts[3] = ((closureN)self_73517)->elts[4];
 c_731277.elts[4] = ((closureN)self_73517)->elts[5];
 
 
-make_cons(c_731298,((closureN)self_73517)->elts[3], r_73212);
+make_pair(c_731298,((closureN)self_73517)->elts[3], r_73212);
 return_closcall1(data,(closure)&c_731277,  &c_731298);; 
 }
 
@@ -4015,7 +4015,7 @@ c_731279.elts[2] = ((closureN)self_73518)->elts[3];
 c_731279.elts[3] = ((closureN)self_73518)->elts[4];
 
 
-make_cons(c_731294,((closureN)self_73518)->elts[0], r_73211);
+make_pair(c_731294,((closureN)self_73518)->elts[0], r_73211);
 return_closcall1(data,(closure)&c_731279,  &c_731294);; 
 }
 
@@ -4034,7 +4034,7 @@ c_731281.elts[1] = ((closureN)self_73519)->elts[1];
 c_731281.elts[2] = ((closureN)self_73519)->elts[2];
 
 
-make_cons(c_731290,r_73210, ((closureN)self_73519)->elts[3]);
+make_pair(c_731290,r_73210, ((closureN)self_73519)->elts[3]);
 return_closcall1(data,(closure)&c_731281,  &c_731290);; 
 }
 
@@ -4178,7 +4178,7 @@ c_731202.elts[4] = ((closureN)self_73527)->elts[4];
 c_731202.elts[5] = ((closureN)self_73527)->elts[6];
 
 
-make_cons(c_731229,((closureN)self_73527)->elts[5], r_73206);
+make_pair(c_731229,((closureN)self_73527)->elts[5], r_73206);
 return_closcall1(data,(closure)&c_731202,  &c_731229);; 
 }
 
@@ -4199,7 +4199,7 @@ c_731204.elts[3] = ((closureN)self_73528)->elts[3];
 c_731204.elts[4] = ((closureN)self_73528)->elts[5];
 
 
-make_cons(c_731225,((closureN)self_73528)->elts[4], r_73204);
+make_pair(c_731225,((closureN)self_73528)->elts[4], r_73204);
 return_closcall1(data,(closure)&c_731204,  &c_731225);; 
 }
 
@@ -4219,7 +4219,7 @@ c_731206.elts[2] = ((closureN)self_73529)->elts[2];
 c_731206.elts[3] = ((closureN)self_73529)->elts[4];
 
 
-make_cons(c_731221,((closureN)self_73529)->elts[3], r_73202);
+make_pair(c_731221,((closureN)self_73529)->elts[3], r_73202);
 return_closcall1(data,(closure)&c_731206,  &c_731221);; 
 }
 
@@ -4238,7 +4238,7 @@ c_731208.elts[1] = ((closureN)self_73530)->elts[1];
 c_731208.elts[2] = ((closureN)self_73530)->elts[2];
 
 
-make_cons(c_731217,r_73200, ((closureN)self_73530)->elts[3]);
+make_pair(c_731217,r_73200, ((closureN)self_73530)->elts[3]);
 return_closcall1(data,(closure)&c_731208,  &c_731217);; 
 }
 
@@ -4380,7 +4380,7 @@ c_731035.elts[6] = ((closureN)self_73537)->elts[7];
 c_731035.elts[7] = ((closureN)self_73537)->elts[8];
 
 
-make_cons(c_731171,((closureN)self_73537)->elts[4], r_73194);
+make_pair(c_731171,((closureN)self_73537)->elts[4], r_73194);
 return_closcall1(data,(closure)&c_731035,  &c_731171);; 
 }
 
@@ -4403,7 +4403,7 @@ c_731037.elts[5] = ((closureN)self_73538)->elts[5];
 c_731037.elts[6] = ((closureN)self_73538)->elts[7];
 
 
-make_cons(c_731167,((closureN)self_73538)->elts[6], r_73193);
+make_pair(c_731167,((closureN)self_73538)->elts[6], r_73193);
 return_closcall1(data,(closure)&c_731037,  &c_731167);; 
 }
 
@@ -4425,7 +4425,7 @@ c_731039.elts[4] = ((closureN)self_73539)->elts[4];
 c_731039.elts[5] = ((closureN)self_73539)->elts[6];
 
 
-make_cons(c_731163,((closureN)self_73539)->elts[5], r_73191);
+make_pair(c_731163,((closureN)self_73539)->elts[5], r_73191);
 return_closcall1(data,(closure)&c_731039,  &c_731163);; 
 }
 
@@ -4468,7 +4468,7 @@ c_731043.elts[4] = ((closureN)self_73541)->elts[4];
 c_731043.elts[5] = ((closureN)self_73541)->elts[6];
 
 
-make_cons(c_731159,((closureN)self_73541)->elts[5], r_73189);
+make_pair(c_731159,((closureN)self_73541)->elts[5], r_73189);
 return_closcall1(data,(closure)&c_731043,  &c_731159);; 
 }
 
@@ -4489,7 +4489,7 @@ c_731045.elts[3] = ((closureN)self_73542)->elts[3];
 c_731045.elts[4] = ((closureN)self_73542)->elts[5];
 
 
-make_cons(c_731155,((closureN)self_73542)->elts[4], r_73187);
+make_pair(c_731155,((closureN)self_73542)->elts[4], r_73187);
 return_closcall1(data,(closure)&c_731045,  &c_731155);; 
 }
 
@@ -4530,7 +4530,7 @@ c_731049.elts[3] = ((closureN)self_73544)->elts[3];
 c_731049.elts[4] = ((closureN)self_73544)->elts[5];
 
 
-make_cons(c_731151,((closureN)self_73544)->elts[4], r_73185);
+make_pair(c_731151,((closureN)self_73544)->elts[4], r_73185);
 return_closcall1(data,(closure)&c_731049,  &c_731151);; 
 }
 
@@ -4616,7 +4616,7 @@ c_731057.elts[5] = ((closureN)self_73548)->elts[5];
 c_731057.elts[6] = ((closureN)self_73548)->elts[7];
 
 
-make_cons(c_731147,((closureN)self_73548)->elts[6], r_73183);
+make_pair(c_731147,((closureN)self_73548)->elts[6], r_73183);
 return_closcall1(data,(closure)&c_731057,  &c_731147);; 
 }
 
@@ -4661,7 +4661,7 @@ c_731061.elts[5] = ((closureN)self_73550)->elts[5];
 c_731061.elts[6] = ((closureN)self_73550)->elts[7];
 
 
-make_cons(c_731143,((closureN)self_73550)->elts[6], r_73181);
+make_pair(c_731143,((closureN)self_73550)->elts[6], r_73181);
 return_closcall1(data,(closure)&c_731061,  &c_731143);; 
 }
 
@@ -4683,7 +4683,7 @@ c_731063.elts[4] = ((closureN)self_73551)->elts[4];
 c_731063.elts[5] = ((closureN)self_73551)->elts[6];
 
 
-make_cons(c_731139,((closureN)self_73551)->elts[5], r_73179);
+make_pair(c_731139,((closureN)self_73551)->elts[5], r_73179);
 return_closcall1(data,(closure)&c_731063,  &c_731139);; 
 }
 
@@ -4726,7 +4726,7 @@ c_731067.elts[4] = ((closureN)self_73553)->elts[4];
 c_731067.elts[5] = ((closureN)self_73553)->elts[6];
 
 
-make_cons(c_731135,((closureN)self_73553)->elts[5], r_73177);
+make_pair(c_731135,((closureN)self_73553)->elts[5], r_73177);
 return_closcall1(data,(closure)&c_731067,  &c_731135);; 
 }
 
@@ -4792,7 +4792,7 @@ c_731073.elts[5] = ((closureN)self_73556)->elts[5];
 c_731073.elts[6] = ((closureN)self_73556)->elts[7];
 
 
-make_cons(c_731131,((closureN)self_73556)->elts[6], r_73175);
+make_pair(c_731131,((closureN)self_73556)->elts[6], r_73175);
 return_closcall1(data,(closure)&c_731073,  &c_731131);; 
 }
 
@@ -4833,7 +4833,7 @@ c_731077.elts[3] = ((closureN)self_73558)->elts[3];
 c_731077.elts[4] = ((closureN)self_73558)->elts[4];
 
 
-make_cons(c_731126,((closureN)self_73558)->elts[5], r_73172);
+make_pair(c_731126,((closureN)self_73558)->elts[5], r_73172);
 return_closcall1(data,(closure)&c_731077,  &c_731126);; 
 }
 
@@ -4854,7 +4854,7 @@ c_731079.elts[3] = ((closureN)self_73559)->elts[3];
 c_731079.elts[4] = ((closureN)self_73559)->elts[4];
 
 
-make_cons(c_731122,((closureN)self_73559)->elts[1], r_73170);
+make_pair(c_731122,((closureN)self_73559)->elts[1], r_73170);
 return_closcall1(data,(closure)&c_731079,  &c_731122);; 
 }
 
@@ -4895,7 +4895,7 @@ c_731083.elts[3] = ((closureN)self_73561)->elts[3];
 c_731083.elts[4] = ((closureN)self_73561)->elts[4];
 
 
-make_cons(c_731118,((closureN)self_73561)->elts[5], r_73169);
+make_pair(c_731118,((closureN)self_73561)->elts[5], r_73169);
 return_closcall1(data,(closure)&c_731083,  &c_731118);; 
 }
 
@@ -4915,7 +4915,7 @@ c_731085.elts[2] = ((closureN)self_73562)->elts[2];
 c_731085.elts[3] = ((closureN)self_73562)->elts[4];
 
 
-make_cons(c_731114,((closureN)self_73562)->elts[3], r_73167);
+make_pair(c_731114,((closureN)self_73562)->elts[3], r_73167);
 return_closcall1(data,(closure)&c_731085,  &c_731114);; 
 }
 
@@ -4934,7 +4934,7 @@ c_731087.elts[1] = ((closureN)self_73563)->elts[2];
 c_731087.elts[2] = ((closureN)self_73563)->elts[3];
 
 
-make_cons(c_731110,((closureN)self_73563)->elts[0], r_73166);
+make_pair(c_731110,((closureN)self_73563)->elts[0], r_73166);
 return_closcall1(data,(closure)&c_731087,  &c_731110);; 
 }
 
@@ -4971,7 +4971,7 @@ c_731091.elts[1] = ((closureN)self_73565)->elts[1];
 c_731091.elts[2] = ((closureN)self_73565)->elts[2];
 
 
-make_cons(c_731106,((closureN)self_73565)->elts[3], r_73165);
+make_pair(c_731106,((closureN)self_73565)->elts[3], r_73165);
 return_closcall1(data,(closure)&c_731091,  &c_731106);; 
 }
 
@@ -4989,13 +4989,13 @@ c_731093.elts[0] = ((closureN)self_73566)->elts[0];
 c_731093.elts[1] = ((closureN)self_73566)->elts[1];
 
 
-make_cons(c_731102,((closureN)self_73566)->elts[2], r_73163);
+make_pair(c_731102,((closureN)self_73566)->elts[2], r_73163);
 return_closcall1(data,(closure)&c_731093,  &c_731102);; 
 }
 
 static void __lambda_56(void *data, int argc, object self_73567, object r_73161) {
   
-make_cons(c_731098,((closureN)self_73567)->elts[0], r_73161);
+make_pair(c_731098,((closureN)self_73567)->elts[0], r_73161);
 return_closcall1(data,  ((closureN)self_73567)->elts[1],  &c_731098);; 
 }
 
@@ -5089,7 +5089,7 @@ c_73964.elts[6] = ((closureN)self_73571)->elts[6];
 c_73964.elts[7] = ((closureN)self_73571)->elts[7];
 
 
-make_cons(c_731011,((closureN)self_73571)->elts[8], r_73155);
+make_pair(c_731011,((closureN)self_73571)->elts[8], r_73155);
 return_closcall1(data,(closure)&c_73964,  &c_731011);; 
 }
 
@@ -5112,7 +5112,7 @@ c_73966.elts[5] = ((closureN)self_73572)->elts[6];
 c_73966.elts[6] = ((closureN)self_73572)->elts[7];
 
 
-make_cons(c_731007,((closureN)self_73572)->elts[2], r_73153);
+make_pair(c_731007,((closureN)self_73572)->elts[2], r_73153);
 return_closcall1(data,(closure)&c_73966,  &c_731007);; 
 }
 
@@ -5134,7 +5134,7 @@ c_73968.elts[4] = ((closureN)self_73573)->elts[5];
 c_73968.elts[5] = ((closureN)self_73573)->elts[6];
 
 
-make_cons(c_731003,((closureN)self_73573)->elts[0], r_73152);
+make_pair(c_731003,((closureN)self_73573)->elts[0], r_73152);
 return_closcall1(data,(closure)&c_73968,  &c_731003);; 
 }
 
@@ -5177,7 +5177,7 @@ c_73972.elts[4] = ((closureN)self_73575)->elts[4];
 c_73972.elts[5] = ((closureN)self_73575)->elts[5];
 
 
-make_cons(c_73999,((closureN)self_73575)->elts[6], r_73151);
+make_pair(c_73999,((closureN)self_73575)->elts[6], r_73151);
 return_closcall1(data,(closure)&c_73972,  &c_73999);; 
 }
 
@@ -5233,7 +5233,7 @@ c_73978.elts[1] = ((closureN)self_73578)->elts[1];
 c_73978.elts[2] = ((closureN)self_73578)->elts[2];
 
 
-make_cons(c_73993,((closureN)self_73578)->elts[3], r_73145);
+make_pair(c_73993,((closureN)self_73578)->elts[3], r_73145);
 return_closcall1(data,(closure)&c_73978,  &c_73993);; 
 }
 
@@ -5251,13 +5251,13 @@ c_73980.elts[0] = ((closureN)self_73579)->elts[0];
 c_73980.elts[1] = ((closureN)self_73579)->elts[1];
 
 
-make_cons(c_73989,((closureN)self_73579)->elts[2], r_73143);
+make_pair(c_73989,((closureN)self_73579)->elts[2], r_73143);
 return_closcall1(data,(closure)&c_73980,  &c_73989);; 
 }
 
 static void __lambda_43(void *data, int argc, object self_73580, object r_73141) {
   
-make_cons(c_73985,((closureN)self_73580)->elts[1], r_73141);
+make_pair(c_73985,((closureN)self_73580)->elts[1], r_73141);
 return_closcall1(data,  ((closureN)self_73580)->elts[0],  &c_73985);; 
 }
 
@@ -5939,28 +5939,28 @@ void c_srfi9_entry_pt(data, argc, cont,value) void *data; int argc; closure cont
   __glo_register_91simple_91type_srfi_9 = &c_73616; 
   __glo_record_91marker_srfi_9 = boolean_f; 
 
-  make_cvar(cvar_731730, (object *)&__glo_lib_91init_117srfi9_srfi_9);make_cons(pair_731731, find_or_add_symbol("lib-init:srfi9"), &cvar_731730);
-  make_cvar(cvar_731732, (object *)&__glo_define_91record_91type_srfi_9);make_cons(pair_731733, find_or_add_symbol("define-record-type"), &cvar_731732);
-  make_cvar(cvar_731734, (object *)&__glo_record_127_srfi_9);make_cons(pair_731735, find_or_add_symbol("record?"), &cvar_731734);
-  make_cvar(cvar_731736, (object *)&__glo_make_91setter_srfi_9);make_cons(pair_731737, find_or_add_symbol("make-setter"), &cvar_731736);
-  make_cvar(cvar_731738, (object *)&__glo_make_91getter_srfi_9);make_cons(pair_731739, find_or_add_symbol("make-getter"), &cvar_731738);
-  make_cvar(cvar_731740, (object *)&__glo_slot_91set_67_srfi_9);make_cons(pair_731741, find_or_add_symbol("slot-set!"), &cvar_731740);
-  make_cvar(cvar_731742, (object *)&__glo_type_91slot_91offset_srfi_9);make_cons(pair_731743, find_or_add_symbol("type-slot-offset"), &cvar_731742);
-  make_cvar(cvar_731744, (object *)&__glo_make_91constructor_srfi_9);make_cons(pair_731745, find_or_add_symbol("make-constructor"), &cvar_731744);
-  make_cvar(cvar_731746, (object *)&__glo_make_91type_91predicate_srfi_9);make_cons(pair_731747, find_or_add_symbol("make-type-predicate"), &cvar_731746);
-  make_cvar(cvar_731748, (object *)&__glo_register_91simple_91type_srfi_9);make_cons(pair_731749, find_or_add_symbol("register-simple-type"), &cvar_731748);
-  make_cvar(cvar_731750, (object *)&__glo_record_91marker_srfi_9);make_cons(pair_731751, find_or_add_symbol("record-marker"), &cvar_731750);
-make_cons(c_731752, &pair_731731,Cyc_global_variables);
-make_cons(c_731753, &pair_731733, &c_731752);
-make_cons(c_731754, &pair_731735, &c_731753);
-make_cons(c_731755, &pair_731737, &c_731754);
-make_cons(c_731756, &pair_731739, &c_731755);
-make_cons(c_731757, &pair_731741, &c_731756);
-make_cons(c_731758, &pair_731743, &c_731757);
-make_cons(c_731759, &pair_731745, &c_731758);
-make_cons(c_731760, &pair_731747, &c_731759);
-make_cons(c_731761, &pair_731749, &c_731760);
-make_cons(c_731762, &pair_731751, &c_731761);
+  make_cvar(cvar_731730, (object *)&__glo_lib_91init_117srfi9_srfi_9);make_pair(pair_731731, find_or_add_symbol("lib-init:srfi9"), &cvar_731730);
+  make_cvar(cvar_731732, (object *)&__glo_define_91record_91type_srfi_9);make_pair(pair_731733, find_or_add_symbol("define-record-type"), &cvar_731732);
+  make_cvar(cvar_731734, (object *)&__glo_record_127_srfi_9);make_pair(pair_731735, find_or_add_symbol("record?"), &cvar_731734);
+  make_cvar(cvar_731736, (object *)&__glo_make_91setter_srfi_9);make_pair(pair_731737, find_or_add_symbol("make-setter"), &cvar_731736);
+  make_cvar(cvar_731738, (object *)&__glo_make_91getter_srfi_9);make_pair(pair_731739, find_or_add_symbol("make-getter"), &cvar_731738);
+  make_cvar(cvar_731740, (object *)&__glo_slot_91set_67_srfi_9);make_pair(pair_731741, find_or_add_symbol("slot-set!"), &cvar_731740);
+  make_cvar(cvar_731742, (object *)&__glo_type_91slot_91offset_srfi_9);make_pair(pair_731743, find_or_add_symbol("type-slot-offset"), &cvar_731742);
+  make_cvar(cvar_731744, (object *)&__glo_make_91constructor_srfi_9);make_pair(pair_731745, find_or_add_symbol("make-constructor"), &cvar_731744);
+  make_cvar(cvar_731746, (object *)&__glo_make_91type_91predicate_srfi_9);make_pair(pair_731747, find_or_add_symbol("make-type-predicate"), &cvar_731746);
+  make_cvar(cvar_731748, (object *)&__glo_register_91simple_91type_srfi_9);make_pair(pair_731749, find_or_add_symbol("register-simple-type"), &cvar_731748);
+  make_cvar(cvar_731750, (object *)&__glo_record_91marker_srfi_9);make_pair(pair_731751, find_or_add_symbol("record-marker"), &cvar_731750);
+make_pair(c_731752, &pair_731731,Cyc_global_variables);
+make_pair(c_731753, &pair_731733, &c_731752);
+make_pair(c_731754, &pair_731735, &c_731753);
+make_pair(c_731755, &pair_731737, &c_731754);
+make_pair(c_731756, &pair_731739, &c_731755);
+make_pair(c_731757, &pair_731741, &c_731756);
+make_pair(c_731758, &pair_731743, &c_731757);
+make_pair(c_731759, &pair_731745, &c_731758);
+make_pair(c_731760, &pair_731747, &c_731759);
+make_pair(c_731761, &pair_731749, &c_731760);
+make_pair(c_731762, &pair_731751, &c_731761);
 Cyc_global_variables = &c_731762;
 cont = ((closure1_type *)cont)->elt1;
 (((closure)__glo_lib_91init_117srfi9_srfi_9)->fn)(data, 1, cont, cont);
