@@ -683,7 +683,7 @@ c_73124.elts = (object *)alloca(sizeof(object) * 2);
 c_73124.elts[0] = k_7358;
 c_73124.elts[1] = ((closureN)self_7382)->elts[0];
 
-return_closcall1(data,(closure)&c_73124,  Cyc_is_cons(((closureN)self_7382)->elts[0]));; 
+return_closcall1(data,(closure)&c_73124,  Cyc_is_pair(((closureN)self_7382)->elts[0]));; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7383, object r_7359) {

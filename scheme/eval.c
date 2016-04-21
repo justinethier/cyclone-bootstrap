@@ -16333,7 +16333,7 @@ return_closcall1(data,  k_73641,  car(exp_73121));;
 
 static void __lambda_76(void *data, int argc, closure _,object k_73644, object exp_73122) {
   Cyc_st_add(data, "scheme/eval.sld:application?");
-return_closcall1(data,  k_73644,  Cyc_is_cons(exp_73122));; 
+return_closcall1(data,  k_73644,  Cyc_is_pair(exp_73122));; 
 }
 
 static void __lambda_75(void *data, int argc, closure _,object k_73647, object predicate_73125, object consequent_73124, object alternative_73123) {

@@ -4804,7 +4804,7 @@ c_73621.elts[0] = exp_73121;
 c_73621.elts[1] = k_73394;
 c_73621.elts[2] = tag_73122;
 
-return_closcall1(data,(closure)&c_73621,  Cyc_is_cons(exp_73121));; 
+return_closcall1(data,(closure)&c_73621,  Cyc_is_pair(exp_73121));; 
 }
 
 static void __lambda_1(void *data, int argc, object self_73617, object r_73395) {

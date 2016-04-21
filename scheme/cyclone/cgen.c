@@ -8694,7 +8694,7 @@ c_739650.elts = (object *)alloca(sizeof(object) * 2);
 c_739650.elts[0] = ((closureN)self_732521)->elts[0];
 c_739650.elts[1] = ((closureN)self_732521)->elts[1];
 
-return_closcall1(data,(closure)&c_739650,  Cyc_is_cons(r_731000));; 
+return_closcall1(data,(closure)&c_739650,  Cyc_is_pair(r_731000));; 
 }
 
 static void __lambda_1312(void *data, int argc, object self_732522, object r_73998) {
@@ -8735,7 +8735,7 @@ c_739546.elts[0] = formals_73451;
 c_739546.elts[1] = k_731009;
 c_739546.elts[2] = type_73450;
 
-return_closcall1(data,(closure)&c_739546,  Cyc_is_cons(formals_73451));; 
+return_closcall1(data,(closure)&c_739546,  Cyc_is_pair(formals_73451));; 
 }
 
 static void __lambda_1309(void *data, int argc, object self_732524, object r_731010) {
@@ -8845,7 +8845,7 @@ c_739556.elts[0] = ((closureN)self_732529)->elts[0];
 c_739556.elts[1] = ((closureN)self_732529)->elts[1];
 c_739556.elts[2] = ((closureN)self_732529)->elts[2];
 
-return_closcall1(data,(closure)&c_739556,  Cyc_is_cons(r_731021));; 
+return_closcall1(data,(closure)&c_739556,  Cyc_is_pair(r_731021));; 
 }
 
 static void __lambda_1303(void *data, int argc, object self_732530, object r_731014) {
@@ -10868,7 +10868,7 @@ c_739060.elts = (object *)alloca(sizeof(object) * 2);
 c_739060.elts[0] = formals_73482;
 c_739060.elts[1] = ((closureN)self_732635)->elts[0];
 
-return_closcall1(data,(closure)&c_739060,  Cyc_is_cons(formals_73482));; 
+return_closcall1(data,(closure)&c_739060,  Cyc_is_pair(formals_73482));; 
 }
 
 static void __lambda_1192(void *data, int argc, object self_732636, object r_731123) {
@@ -14792,7 +14792,7 @@ c_738157.elts[5] = ((closureN)self_732839)->elts[1];
 c_738157.elts[6] = prefix_73550;
 c_738157.elts[7] = ((closureN)self_732839)->elts[2];
 
-return_closcall1(data,(closure)&c_738157,  Cyc_is_cons(args_73552));; 
+return_closcall1(data,(closure)&c_738157,  Cyc_is_pair(args_73552));; 
 }
 
 static void __lambda_978(void *data, int argc, object self_732840, object r_731349) {
@@ -24879,7 +24879,7 @@ return_closcall1(data,  ((closureN)self_733306)->elts[0],  &c_736688);;
 
 static void __lambda_500(void *data, int argc, object self_733307) {
   
-make_string(c_736679, "Cyc_is_cons");
+make_string(c_736679, "Cyc_is_pair");
 return_closcall1(data,  ((closureN)self_733307)->elts[0],  &c_736679);; 
 }
 
@@ -25649,7 +25649,7 @@ c_735413.elts = (object *)alloca(sizeof(object) * 2);
 c_735413.elts[0] = ((closureN)self_733425)->elts[0];
 c_735413.elts[1] = ((closureN)self_733425)->elts[1];
 
-return_closcall1(data,(closure)&c_735413,  Cyc_is_cons(((closureN)self_733425)->elts[0]));}
+return_closcall1(data,(closure)&c_735413,  Cyc_is_pair(((closureN)self_733425)->elts[0]));}
 ; 
 }
 
@@ -28268,7 +28268,7 @@ c_734867.elts[2] = ((closureN)self_733560)->elts[2];
 c_734867.elts[3] = ((closureN)self_733560)->elts[3];
 c_734867.elts[4] = ((closureN)self_733560)->elts[4];
 
-return_closcall1(data,(closure)&c_734867,  Cyc_is_cons(((closureN)self_733560)->elts[1]));}
+return_closcall1(data,(closure)&c_734867,  Cyc_is_pair(((closureN)self_733560)->elts[1]));}
 ; 
 }
 
@@ -29960,7 +29960,7 @@ c_734439.elts = (object *)alloca(sizeof(object) * 2);
 c_734439.elts[0] = k_732024;
 c_734439.elts[1] = trace_73643;
 
-return_closcall1(data,(closure)&c_734439,  Cyc_is_cons(trace_73643));; 
+return_closcall1(data,(closure)&c_734439,  Cyc_is_pair(trace_73643));; 
 }
 
 static void __lambda_137(void *data, int argc, object self_733649, object r_732032) {
