@@ -6114,7 +6114,7 @@ c_7310387.elts[1] = ((closureN)self_732385)->elts[2];
 c_7310387.elts[2] = ((closureN)self_732385)->elts[3];
 
 
-make_string(c_7310402, "make_cons(");
+make_string(c_7310402, "make_pair(");
 
 make_string(c_7310404, ", find_or_add_symbol(\"");
 
@@ -6596,7 +6596,7 @@ c_7310295.elts[3] = ((closureN)self_732407)->elts[3];
 c_7310295.elts[4] = ((closureN)self_732407)->elts[4];
 
 
-make_string(c_7310322, "make_cons(");
+make_string(c_7310322, "make_pair(");
 
 make_string(c_7310324, ", &");
 
@@ -6779,7 +6779,7 @@ c_7310232.elts[3] = ((closureN)self_732417)->elts[3];
 c_7310232.elts[4] = ((closureN)self_732417)->elts[4];
 
 
-make_string(c_7310259, "make_cons(");
+make_string(c_7310259, "make_pair(");
 
 make_string(c_7310261, ", &");
 
@@ -24825,7 +24825,7 @@ return_closcall1(data,  ((closureN)self_733297)->elts[0],  &c_736769);;
 
 static void __lambda_509(void *data, int argc, object self_733298) {
   
-make_string(c_736760, "make_cons");
+make_string(c_736760, "make_pair");
 return_closcall1(data,  ((closureN)self_733298)->elts[0],  &c_736760);; 
 }
 
@@ -28103,7 +28103,7 @@ c_734955.elts[1] = ((closureN)self_733552)->elts[1];
 c_734955.elts[2] = ((closureN)self_733552)->elts[3];
 
 
-make_string(c_734971, "make_cons(");
+make_string(c_734971, "make_pair(");
 
 make_string(c_734973, ",");
 
@@ -30612,7 +30612,7 @@ c_734270.elts[2] = ((closureN)self_733679)->elts[2];
 c_734270.elts[3] = ((closureN)self_733679)->elts[4];
 
 
-make_string(c_734302, "if (type_of(clo) == cons_tag || prim(clo)) { Cyc_apply(td,");
+make_string(c_734302, "if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,");
 
 make_string(c_734304, ", (closure)(a1), clo");
 
