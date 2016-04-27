@@ -182,7 +182,7 @@ void c_schemecyclonecommon_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85c_91file_91header_91comment_85_scheme_cyclone_common = boolean_f; 
   __glo__85Cyc_91version_91banner_85_scheme_cyclone_common = boolean_f; 
   __glo__85version_91banner_85_scheme_cyclone_common = boolean_f; 
-  make_string(c_7322, "0.0.6 (Pre-release)"); 
+  make_string(c_7322, "0.0.7 (Pre-release)"); 
   __glo__85version_85_scheme_cyclone_common = &c_7322; 
 
   make_cvar(cvar_7352, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7353, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7352);

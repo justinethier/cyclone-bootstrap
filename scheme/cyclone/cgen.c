@@ -30820,7 +30820,7 @@ make_string(c_734295, "(td, clo");
 
 make_string(c_734297, ") \\\n");
 
-make_string(c_734300, "((clo)->fn)(td, ");
+make_string(c_734300, "   ((clo)->fn)(td, ");
 
 make_string(c_734302, ", clo");
 

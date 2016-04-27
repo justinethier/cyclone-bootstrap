@@ -163,7 +163,7 @@
                              "   Cyc_apply(td, " n-1 ", (closure)(a1), clo" (if (> num-args 1) (substring args 3 (string-length args)) "") "); \\\n"
                              "}"))
         (wrap " else { \\\n")
-        "((clo)->fn)(td, " n ", clo" args ")"
+        "   ((clo)->fn)(td, " n ", clo" args ")"
         (wrap ";\\\n}")
         )))
 
@@ -512,6 +512,7 @@
      ((eq? p 'Cyc-get-cvar)          "Cyc_get_cvar")
      ((eq? p 'Cyc-set-cvar!)         "Cyc_set_cvar")
      ((eq? p 'Cyc-cvar?)             "Cyc_is_cvar")
+     ; TODO: ((eq? p 'Cyc-opaque?)           "Cyc_is_opaque")
      ((eq? p 'Cyc-has-cycle?)        "Cyc_has_cycle")
      ((eq? p 'Cyc-spawn-thread!)     "Cyc_spawn_thread")
      ((eq? p 'Cyc-end-thread!)       "Cyc_end_thread")
