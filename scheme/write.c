@@ -6,37 +6,63 @@
  **
  **/
 
-#define closcall1(td,clo,a1) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,0, (closure)(a1), clo); } else { ((clo)->fn)(td,1,clo,a1);}
+#define closcall1(td, clo,a1) \
+if (type_of(clo) == pair_tag || prim(clo)) { \
+   Cyc_apply(td, 0, (closure)(a1), clo); \
+} else { \
+((clo)->fn)(td, 1, clo,a1);\
+}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1;\
-     GC(td,clo,buf,1); return; \
- } else {closcall1(td,(closure) (clo),a1); return;}}
+     GC(td, clo, buf, 1); \
+     return; \
+ } else {\
+     closcall1(td, (closure) (clo),a1); \
+     return;\
+ } \
+}
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
      mclosure0(c1, _fn); \
-     GC(td, &c1, buf, 1); return; \
- } else { (_fn)(td,1,(closure)_fn,a1); }}
+     GC(td, &c1, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)_fn,a1); \
+ }}
 
-#define closcall2(td,clo,a1,a2) if (type_of(clo) == pair_tag || prim(clo)) { Cyc_apply(td,1, (closure)(a1), clo,a2); } else { ((clo)->fn)(td,2,clo,a1,a2);}
+#define closcall2(td, clo,a1,a2) \
+if (type_of(clo) == pair_tag || prim(clo)) { \
+   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+} else { \
+((clo)->fn)(td, 2, clo,a1,a2);\
+}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2;\
-     GC(td,clo,buf,2); return; \
- } else {closcall2(td,(closure) (clo),a1,a2); return;}}
+     GC(td, clo, buf, 2); \
+     return; \
+ } else {\
+     closcall2(td, (closure) (clo),a1,a2); \
+     return;\
+ } \
+}
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, _fn); \
-     GC(td, &c1, buf, 2); return; \
- } else { (_fn)(td,2,(closure)_fn,a1,a2); }}
+     GC(td, &c1, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)_fn,a1,a2); \
+ }}
 
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemewrite_scheme_write = NULL;
