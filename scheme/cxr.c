@@ -63,9 +63,9 @@ c_7318.hdr.mark = gc_color_red;
 c_7318.tag = closureN_tag;
  c_7318.fn = (function_type)__lambda_3;
 c_7318.num_args = 1;
-c_7318.num_elt = 1;
-c_7318.elts = (object *)alloca(sizeof(object) * 1);
-c_7318.elts[0] = k_737;
+c_7318.num_elements = 1;
+c_7318.elements = (object *)alloca(sizeof(object) * 1);
+c_7318.elements[0] = k_737;
 
 return_closcall1(data,(closure)&c_7318,  car(lis_731));; 
 }
@@ -78,9 +78,9 @@ c_7320.hdr.mark = gc_color_red;
 c_7320.tag = closureN_tag;
  c_7320.fn = (function_type)__lambda_2;
 c_7320.num_args = 1;
-c_7320.num_elt = 1;
-c_7320.elts = (object *)alloca(sizeof(object) * 1);
-c_7320.elts[0] = ((closureN)self_7312)->elts[0];
+c_7320.num_elements = 1;
+c_7320.elements = (object *)alloca(sizeof(object) * 1);
+c_7320.elements[0] = ((closureN)self_7312)->elements[0];
 
 return_closcall1(data,(closure)&c_7320,  car(r_7311));; 
 }
@@ -93,9 +93,9 @@ c_7322.hdr.mark = gc_color_red;
 c_7322.tag = closureN_tag;
  c_7322.fn = (function_type)__lambda_1;
 c_7322.num_args = 1;
-c_7322.num_elt = 1;
-c_7322.elts = (object *)alloca(sizeof(object) * 1);
-c_7322.elts[0] = ((closureN)self_7313)->elts[0];
+c_7322.num_elements = 1;
+c_7322.elements = (object *)alloca(sizeof(object) * 1);
+c_7322.elements[0] = ((closureN)self_7313)->elements[0];
 
 return_closcall1(data,(closure)&c_7322,  car(r_7310));; 
 }
@@ -108,15 +108,15 @@ c_7324.hdr.mark = gc_color_red;
 c_7324.tag = closureN_tag;
  c_7324.fn = (function_type)__lambda_0;
 c_7324.num_args = 1;
-c_7324.num_elt = 1;
-c_7324.elts = (object *)alloca(sizeof(object) * 1);
-c_7324.elts[0] = ((closureN)self_7314)->elts[0];
+c_7324.num_elements = 1;
+c_7324.elements = (object *)alloca(sizeof(object) * 1);
+c_7324.elements[0] = ((closureN)self_7314)->elements[0];
 
 return_closcall1(data,(closure)&c_7324,  car(r_739));; 
 }
 
 static void __lambda_0(void *data, int argc, object self_7315, object r_738) {
-  return_closcall1(data,  ((closureN)self_7315)->elts[0],  car(r_738));; 
+  return_closcall1(data,  ((closureN)self_7315)->elements[0],  car(r_738));; 
 }
 
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
