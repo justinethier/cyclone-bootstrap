@@ -755,6 +755,13 @@
 ;TODO: modify this whole section to use macros:get-env instead of *defined-macros*. macro:get-env becomes the mac-env. any new scopes need to extend that env, and an env parameter needs to be added to (expand). any macros defined with define-syntax use that env as their mac-env (how to store that)?
 ; expand : exp -> exp
 (define (expand exp env)
+  (define (log e)
+    (display  
+      (list 'expand e 'env 
+        (env:frame-variables (env:first-frame env))) 
+      (current-error-port))
+    (newline (current-error-port)))
+  ;(log exp)
   ;(trace:error `(expand ,exp))
   (cond
     ((const? exp)      exp)
@@ -794,23 +801,26 @@
            `(define-syntax ,name ,(expand trans env))
            env))
         (else
-         (set! *defined-macros* (cons (cons name body) *defined-macros*))
-         ;; Keep track of macros added during compilation.
-         ;; Previous list should eventually go away once macros are
-         ;; moved from that static list to libraries
-         (macro:add! name body)
-         (env:define-variable! name (list 'macro body) env)
-         ;; Keep as a 'define' form so available at runtime
-         ;; TODO: may run into issues with expanding now, before some
-         ;; of the macros are defined. may need to make a special pass
-         ;; to do loading or expansion of macro bodies
-         ;; TODO: would it be better to use *define-macros* directly instead
-         ;; of trying to define it here? that might help prevent issues where
-         ;; an expand is called here before all macros are defined yet
-         ;;  - no, we need to do this here so code is carried though all transforms
-         ;;    (alpha, cps, closure, etc). otherwise code has to be interpreted during expansion
-         ;;
-         `(define ,name ,(expand body env))))))
+         ;; TODO: for now, do not let a compiled macro be re-defined.
+         ;; this is a hack for performance compiling (scheme base)
+         (let ((macro (env:lookup name env #f)))
+          (cond
+            ((and (tagged-list? 'macro macro)
+                  (or (macro? (Cyc-get-cvar (cadr macro)))
+                      (procedure? (cadr macro))))
+             (trace:info `(DEBUG compiled macro ,name do not redefine)))
+            (else
+             ;; Use this to keep track of macros for filtering unused defines
+             (set! *defined-macros* (cons (cons name body) *defined-macros*))
+             ;; Keep track of macros added during compilation.
+             ;; TODO: why in both places?
+             (macro:add! name body)
+             (env:define-variable! name (list 'macro body) env)))
+          ;; Keep as a 'define' form so available at runtime
+          ;; TODO: may run into issues with expanding now, before some
+          ;; of the macros are defined. may need to make a special pass
+          ;; to do loading or expansion of macro bodies
+          `(define ,name ,(expand body env)))))))
     ((app? exp)
      (cond
        ((symbol? (car exp))
@@ -871,6 +881,12 @@
 ;;       out why there is an infinite loop when we use this in cyclone.scm
 ;;       for library compilation (in particular, for scheme base).
 (define (expand-body result exp env)
+  (define (log e)
+    (display (list 'expand-body e 'env 
+              (env:frame-variables (env:first-frame env))) 
+             (current-error-port))
+    (newline (current-error-port)))
+
   (if (null? exp) 
     (reverse result)
     (let ((this-exp (car exp)))
@@ -882,12 +898,21 @@
             (ref? this-exp)
             (quote? this-exp)
             (define-c? this-exp))
+;(log this-exp)
         (expand-body (cons this-exp result) (cdr exp) env))
-       ((or (define? this-exp)
-            (define-syntax? this-exp)
+       ((define? this-exp)
+;(log this-exp)
+        (expand-body 
+          (cons
+            (expand this-exp env)
+            result)
+          (cdr exp)
+          env))
+       ((or (define-syntax? this-exp)
             (lambda? this-exp)
             (set!? this-exp)
             (if? this-exp))
+;(log (car this-exp))
         (expand-body 
           (cons
             (expand this-exp env)
@@ -898,6 +923,7 @@
        ((begin? this-exp)
         (let* ((expr this-exp)
                (begin-exprs (begin->exps expr)))
+;(log (car this-exp))
         (expand-body
          result
          (append begin-exprs (cdr exp))
@@ -905,16 +931,27 @@
        ((app? this-exp)
         (cond
           ((symbol? (caar exp))
+;(log (car this-exp))
            (let ((val (env:lookup (caar exp) env #f)))
+;; This step is taking a long time on (scheme base) - possibly because
+;; it is not using compiled macros???
+;;
+;; Note that with (expand) the top-level expressions are expanded in 
+;; reverse order due to the map, whereas they are expanded in-order
+;; by expand-body due to the explicit recursion.
+;;
+;(log `(DONE WITH env:lookup ,(caar exp) ,val ,(tagged-list? 'macro val)))
             (if (tagged-list? 'macro val)
               ;; Expand macro here so we can catch begins in the expanded code,
               ;; including nested begins
-              (expand-body
-                result
-                (cons 
-                  (macro:expand this-exp val env)
-                  (cdr exp))
-                env)
+              (let ((expanded (macro:expand this-exp val env)))
+;(log `(DONE WITH macro:expand))
+                (expand-body
+                  result
+                  (cons 
+                    expanded ;(macro:expand this-exp val env)
+                    (cdr exp))
+                  env))
               ;; No macro, use main expand function to process
               (expand-body
                (cons 
@@ -925,6 +962,7 @@
                (cdr exp)
                env))))
           (else
+;(log 'app)
            (expand-body
              (cons 
                (map
