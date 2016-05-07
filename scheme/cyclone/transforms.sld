@@ -15,9 +15,11 @@
           (scheme file)
           (scheme read)
           (scheme write)
+          (scheme cyclone ast)
           (scheme cyclone common)
           (scheme cyclone libraries)
           (scheme cyclone macros)
+          (scheme cyclone optimize-cps)
           (scheme cyclone pretty-print)
           (scheme cyclone util)
   )
@@ -346,6 +348,9 @@
         (car (reverse (lambda-formals->list exp)))) ; Last arg is varargs
     #f))
 
+(define (ast:lambda-formals-type ast)
+  (lambda-formals-type `(#f ,(ast:lambda-args ast) #f)))
+
 (define (lambda-formals-type exp)
  (let ((args (lambda->formals exp)))
    (cond
@@ -354,6 +359,9 @@
      ((pair? args)   'args:fixed-with-varargs)
      (else
        (error `(Unexpected formals list in lambda-formals-type: ,args))))))
+
+(define (ast:lambda-formals->list ast)
+  (lambda-formals->list `(#f ,(ast:lambda-args ast) #f)))
 
 (define (lambda-formals->list exp)
   (if (lambda-varargs? exp)
@@ -833,6 +841,10 @@
               (lambda (expr) (expand expr env))
               exp))))
        (else
+         ;; TODO: note that map does not guarantee that expressions are
+         ;; evaluated in order. For example, the list might be processed
+         ;; in reverse order. Might be better to use a fold here and
+         ;; elsewhere in (expand).
          (map 
           (lambda (expr) (expand expr env))
           exp))))
@@ -844,42 +856,6 @@
   (expand-body '() exp env))
 
 ;; Helper to expand a lambda body, so we can splice in any begin's
-;(define (expand-body result exp env)
-;  (cond
-;   ((null? exp) (reverse result))
-;   ;; Splice in begin contents and keep expanding body
-;   ((begin? (car exp))
-;    (let* ((expr (car exp))
-;           (begin-exprs (begin->exps expr)))
-;    (expand-body
-;     result
-;     (append begin-exprs (cdr exp))
-;     env)))
-;   (else
-;    (let ((macro #f))
-;      (when (and (app? (car exp))
-;                 (symbol? (caar exp)))
-;        (set! macro (env:lookup (caar exp) env #f)))
-;      (if (tagged-list? 'macro macro)
-;          ;; Expand macro here so we can catch begins in the expanded code,
-;          ;; including nested begins
-;          (let ((expanded (macro:expand (car exp) macro env)))
-;            ;; Call with expanded macro in case we need to expand again
-;            (expand-body
-;              result
-;              (cons expanded (cdr exp))
-;              env))
-;          ;; No macro, use main expand function to process
-;          (expand-body
-;           (cons 
-;             (expand (car exp) env)
-;             result)
-;           (cdr exp)
-;           env))))))
-
-;; TODO: plan is, rewrite this to enhance it, test, commit, then figure
-;;       out why there is an infinite loop when we use this in cyclone.scm
-;;       for library compilation (in particular, for scheme base).
 (define (expand-body result exp env)
   (define (log e)
     (display (list 'expand-body e 'env 
@@ -933,13 +909,6 @@
           ((symbol? (caar exp))
 ;(log (car this-exp))
            (let ((val (env:lookup (caar exp) env #f)))
-;; This step is taking a long time on (scheme base) - possibly because
-;; it is not using compiled macros???
-;;
-;; Note that with (expand) the top-level expressions are expanded in 
-;; reverse order due to the map, whereas they are expanded in-order
-;; by expand-body due to the explicit recursion.
-;;
 ;(log `(DONE WITH env:lookup ,(caar exp) ,val ,(tagged-list? 'macro val)))
             (if (tagged-list? 'macro val)
               ;; Expand macro here so we can catch begins in the expanded code,
@@ -1195,6 +1164,9 @@
 (define (analyze-mutable-variables exp)
   (cond 
     ; Core forms:
+    ((ast:lambda? exp)
+     (map analyze-mutable-variables (ast:lambda-body exp))
+     (void))
     ((const? exp)    (void))
     ((prim? exp)     (void))
     ((ref? exp)      (void))
@@ -1209,20 +1181,6 @@
      (analyze-mutable-variables (if->condition exp))
      (analyze-mutable-variables (if->then exp))
      (analyze-mutable-variables (if->else exp)))
-    
-    ; Sugar:
-    ((let? exp)
-     (map analyze-mutable-variables (map cadr (let->bindings exp)))
-     (map analyze-mutable-variables (let->exp exp))
-     (void))
-    ((letrec? exp)
-     (map analyze-mutable-variables (map cadr (letrec->bindings exp)))
-     (map analyze-mutable-variables (letrec->exp exp))
-     (void))
-    ((begin? exp)
-     (map analyze-mutable-variables (begin->exps exp))
-     (void))
-    
     ; Application:
     ((app? exp)
      (map analyze-mutable-variables exp)
@@ -1245,6 +1203,11 @@
   
   (cond
     ; Core forms:
+    ((ast:lambda? exp)
+     `(lambda ,(ast:lambda-args exp)
+       ,(wrap-mutable-formals 
+         (ast:lambda-formals->list exp)
+         (wrap-mutables (car (ast:lambda-body exp)) globals)))) ;; Assume single expr in lambda body, since after CPS phase
     ((const? exp)    exp)
     ((ref? exp)      (if (and (not (member exp globals))
                               (is-mutable? exp))
@@ -1487,9 +1450,9 @@
              (if (ref? cont-ast) ; prevent combinatorial explosion
                  (xform cont-ast)
                  (let ((k (gensym 'k)))
-                    (list (list 'lambda
+                    (list (ast:make-lambda
                            (list k)
-                           (xform k))
+                           (list (xform k)))
                           cont-ast)))))
 
           ((prim-call? ast)
@@ -1503,13 +1466,13 @@
            (let ((k (gensym 'k))
                  (ltype (lambda-formals-type ast)))
              (list cont-ast
-                   `(lambda
-                      ,(list->lambda-formals
+                   (ast:make-lambda
+                      (list->lambda-formals
                          (cons k (cadr ast)) ; lam params
                          (if (equal? ltype 'args:varargs)
                              'args:fixed-with-varargs ;; OK? promote due to k
                              ltype))
-                      ,(cps-seq (cddr ast) k)))))
+                      (list (cps-seq (cddr ast) k))))))
 
 ;
 ; TODO: begin is expanded already by desugar code... better to do it here?
@@ -1522,11 +1485,10 @@
               ((lambda? fn)
                  (cps-list (app->args ast)
                            (lambda (vals)
-                             (cons (list
-                                     'lambda
+                             (cons (ast:make-lambda
                                      (lambda->formals fn)
-                                     (cps-seq (cddr fn) ;(ast-subx fn)
-                                                    cont-ast))
+                                     (list (cps-seq (cddr fn) ;(ast-subx fn)
+                                                    cont-ast)))
                                     vals))))
               (else
                  (cps-list ast ;(ast-subx ast)
@@ -1552,7 +1514,7 @@
           (else
            (let ((r (gensym 'r))) ;(new-var 'r)))
              (cps (car asts)
-                  `(lambda (,r) ,(body r)))))))
+                  (ast:make-lambda (list r) (list (body r))))))))
 
   (define (cps-seq asts cont-ast)
     (cond ((null? asts)
@@ -1562,9 +1524,9 @@
           (else
            (let ((r (gensym 'r)))
              (cps (car asts)
-                  `(lambda
-                     (,r)
-                    ,(cps-seq (cdr asts) cont-ast)))))))
+                  (ast:make-lambda
+                     (list r)
+                     (list (cps-seq (cdr asts) cont-ast))))))))
 
   ;; Remove dummy symbol inserted into define forms converted to CPS
   (define (remove-unused ast)
@@ -1590,54 +1552,55 @@
 ;; TODO: don't think we can assume lambda body is single expr, if we want
 ;;       to do optimizations such as inlining
 (define (cps-optimize-01 exp)
-  (define (opt-lambda exp)
-    (let ((body (car (lambda->exp exp)))) ;; Single expr after CPS
-      ;(trace:error `(DEBUG 
-      ;  ,exp
-      ;  ,body
-      ;  ,(if (and (pair? body) (app? body) (lambda? (car body)))
-      ;    (list (app->args body)
-      ;          (lambda->formals exp))
-      ;    #f)))
-      (cond
-        ;; Does the function just call its continuation?
-        ((and (pair? body) 
-              (app? body)
-              (lambda? (car body))
-              ;; TODO: need to check body length if we allow >1 expr in a body
-              ;; TODO: not sure this is good enough for all cases
-              (equal? (app->args body)
-                      ;(lambda->formals (car body))
-                      (lambda->formals exp)
-                      )
-              (> (length (lambda->formals exp)) 0)
-              ;; TODO: don't do it if args are used in the body
-              ;; this won't work if we have any num other than 1 arg
-              (not (member 
-                      (car (lambda->formals exp))
-                      (free-vars (car body))))
-              )
-          (cps-optimize-01 (car body)))
-        (else
-          `(lambda ,(lambda->formals exp)
-             ,(cps-optimize-01 (car (lambda->exp exp)))) ;; Assume single expr in lambda body, since after CPS phase
-  ))))
-  (cond
-    ; Core forms:
-    ((const? exp)    exp)
-    ((ref? exp)      exp)
-    ((prim? exp)     exp)
-    ((quote? exp)    exp)
-    ((lambda? exp)   (opt-lambda exp)) 
-    ((set!? exp)     `(set!
-                        ,(set!->var exp) 
-                        ,(cps-optimize-01 (set!->exp exp))))
-    ((if? exp)       `(if ,(cps-optimize-01 (if->condition exp))
-                          ,(cps-optimize-01 (if->then exp))
-                          ,(cps-optimize-01 (if->else exp))))
-    ; Application:
-    ((app? exp)      (map (lambda (e) (cps-optimize-01 e)) exp))
-    (else            (error "CPS optimize unknown expression type: " exp))))
+  exp) ;; Temporarily disabling while this is reworked.
+;  (define (opt-lambda exp)
+;    (let ((body (car (lambda->exp exp)))) ;; Single expr after CPS
+;      ;(trace:error `(DEBUG 
+;      ;  ,exp
+;      ;  ,body
+;      ;  ,(if (and (pair? body) (app? body) (lambda? (car body)))
+;      ;    (list (app->args body)
+;      ;          (lambda->formals exp))
+;      ;    #f)))
+;      (cond
+;        ;; Does the function just call its continuation?
+;        ((and (pair? body) 
+;              (app? body)
+;              (lambda? (car body))
+;              ;; TODO: need to check body length if we allow >1 expr in a body
+;              ;; TODO: not sure this is good enough for all cases
+;              (equal? (app->args body)
+;                      ;(lambda->formals (car body))
+;                      (lambda->formals exp)
+;                      )
+;              (> (length (lambda->formals exp)) 0)
+;              ;; TODO: don't do it if args are used in the body
+;              ;; this won't work if we have any num other than 1 arg
+;              (not (member 
+;                      (car (lambda->formals exp))
+;                      (free-vars (car body))))
+;              )
+;          (cps-optimize-01 (car body)))
+;        (else
+;          `(lambda ,(lambda->formals exp)
+;             ,(cps-optimize-01 (car (lambda->exp exp)))) ;; Assume single expr in lambda body, since after CPS phase
+;  ))))
+;  (cond
+;    ; Core forms:
+;    ((const? exp)    exp)
+;    ((ref? exp)      exp)
+;    ((prim? exp)     exp)
+;    ((quote? exp)    exp)
+;    ((lambda? exp)   (opt-lambda exp)) 
+;    ((set!? exp)     `(set!
+;                        ,(set!->var exp) 
+;                        ,(cps-optimize-01 (set!->exp exp))))
+;    ((if? exp)       `(if ,(cps-optimize-01 (if->condition exp))
+;                          ,(cps-optimize-01 (if->then exp))
+;                          ,(cps-optimize-01 (if->else exp))))
+;    ; Application:
+;    ((app? exp)      (map (lambda (e) (cps-optimize-01 e)) exp))
+;    (else            (error "CPS optimize unknown expression type: " exp))))
 
 ;; Closure-conversion.
 ;;
