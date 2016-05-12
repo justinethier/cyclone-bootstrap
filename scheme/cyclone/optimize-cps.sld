@@ -20,21 +20,17 @@
 ;(define-library (optimize-cps)
 (define-library (scheme cyclone optimize-cps)
   (import (scheme base)
-          (srfi 69)
-          ;(scheme char)
-          ;(scheme read)
-          ;(scheme write)
-          ;(scheme cyclone common)
-          ;(scheme cyclone libraries)
-          ;(scheme cyclone macros)
-          ;(scheme cyclone pretty-print)
-          ;(scheme cyclone util)
-          ;(scheme cyclone transforms)
-  )
+          (scheme cyclone util)
+          (scheme cyclone ast)
+          (scheme cyclone transforms)
+          (srfi 69))
   (export
+      analyze-cps
       ;adb:init!
-      adb:get key
-      adb:set! key val
+      adb:get
+      adb:get/default
+      adb:set!
+      adb:get-db
       ;; Variables
       adb:make-var
       %adb:make-var
@@ -53,11 +49,13 @@
   )
   (begin
     (define *adb* (make-hash-table))
+    (define (adb:get-db) *adb*)
     ;(define *adb* #f) ;(make-hash-table))
     ;(define (adb:init!)
     ;  ;(set! *adb* (make-hash-table)))
     ;  'TODO)
     (define (adb:get key) (hash-table-ref *adb* key))
+    (define (adb:get/default key default) (hash-table-ref/default *adb* key default))
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
       (%adb:make-var global defined-by assigned assigned-locally)
@@ -66,9 +64,10 @@
       (defined-by adbv:defined-by adbv:set-defined-by!)
       (assigned adbv:assigned adbv:set-assigned!)
       (assigned-locally adbv:assigned-locally adbv:set-assigned-locally!)
+      (ref-by adbv:ref-by adbv:set-ref-by!)
     )
     (define (adb:make-var)
-      (%adb:make-var #f #f #f #f))
+      (%adb:make-var #f #f #f #t '()))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params)
@@ -78,4 +77,62 @@
     )
     (define (adb:make-fnc)
       (%adb:make-fnc #f #f))
+
+; TODO: analyze-cps
+    (define (analyze-cps exp)
+      (define (analyze exp lid)
+        (cond
+          ; Core forms:
+          ((ast:lambda? exp)
+           (let ((id (ast:lambda-id exp)))
+             ;; save lambda to adb
+             (adb:set!
+               id
+               (adb:make-fnc)) ;; TODO: anything to record???? params?
+             (for-each
+              (lambda (arg)
+                (let ((var (adb:get/default arg (adb:make-var))))
+                  (adbv:set-global! var #f)
+                  (adbv:set-defined-by! var lid)
+                  (adb:set! arg var)))
+              (ast:lambda-formals->list exp))
+             (for-each
+               (lambda (expr)
+                 (analyze expr id))
+               (ast:lambda-body))))
+          ((ref? exp)
+           (let ((var (adb:get/default exp (adb:make-var))))
+            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
+           ))
+          ((define? exp)
+           (let ((var (adb:get/default (define->var exp) (adb:make-var))))
+             ;; TODO:
+
+             (analyze (define->exp exp) lid)))
+          ((set!? exp)
+           (let ((var (adb:get/default (set!->var exp) (adb:make-var))))
+             ;; TODO:
+
+             (analyze (set!->exp exp) lid)))
+          ((if? exp)       `(if ,(analyze (if->condition exp) lid)
+                                ,(analyze (if->then exp) lid)
+                                ,(analyze (if->else exp) lid)))
+          
+          ; Application:
+          ((app? exp)
+           (map (lambda (e)
+                  (analyze-cps e lid))
+                exp))
+;TODO:          ((app? exp)      (map (lambda (e) (wrap-mutables e globals)) exp))
+
+          ; Nothing to analyze for these?
+          ;((prim? exp)     exp)
+          ;((quote? exp)    exp)
+          ; Should never see vanilla lambda's in this function, only AST's
+          ;((lambda? exp)
+          ;; Nothing to analyze for expressions that fall into this branch
+          (else
+            #f)))
+      (analyze exp -1) ;; Top-level is lambda ID -1
+    )
 ))
