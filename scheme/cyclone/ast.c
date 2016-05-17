@@ -155,7 +155,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
 object __glo_lib_91init_117schemecycloneast_scheme_cyclone_ast = NULL;
 object __glo_ast_117make_91lambda_scheme_cyclone_ast = NULL;
 object __glo_ast_117_75make_91lambda_scheme_cyclone_ast = NULL;
-object __glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast = NULL;
+object __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast = NULL;
 object __glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast = NULL;
 object __glo_ast_117lambda_91body_scheme_cyclone_ast = NULL;
 object __glo_ast_117lambda_91args_scheme_cyclone_ast = NULL;
@@ -782,7 +782,7 @@ c_73177.elements = (object *)alloca(sizeof(object) * 1);
 c_73177.elements[0] = ((closureN)self_7395)->elements[0];
 
 
-make_string(c_73217, "ast:se-lambda-body!");
+make_string(c_73217, "ast:set-lambda-body!");
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_73177, &c_73217, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7331);; 
 }
 
@@ -798,7 +798,7 @@ c_73179.num_elements = 1;
 c_73179.elements = (object *)alloca(sizeof(object) * 1);
 c_73179.elements[0] = ((closureN)self_7396)->elements[0];
 
-return_closcall1(data,(closure)&c_73179,  global_set(__glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast, r_7330));; 
+return_closcall1(data,(closure)&c_73179,  global_set(__glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast, r_7330));; 
 }
 
 static void __lambda_14(void *data, int argc, object self_7397, object r_7320) {
@@ -910,7 +910,7 @@ c_73197.elements[1] = ((closureN)self_73102)->elements[2];
 c_73197.elements[2] = ((closureN)self_73102)->elements[3];
 c_73197.elements[3] = res_736;
 
-return_closcall3(data,  __glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast,  &c_73197, res_736, ((closureN)self_73102)->elements[1]);; 
+return_closcall3(data,  __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast,  &c_73197, res_736, ((closureN)self_73102)->elements[1]);; 
 }
 
 static void __lambda_8(void *data, int argc, object self_73103, object r_7325) {
@@ -1037,7 +1037,7 @@ void c_schemecycloneast_entry_pt(data, argc, cont,value) void *data; int argc; c
   add_global((object *) &__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast);
   add_global((object *) &__glo_ast_117make_91lambda_scheme_cyclone_ast);
   add_global((object *) &__glo_ast_117_75make_91lambda_scheme_cyclone_ast);
-  add_global((object *) &__glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast);
+  add_global((object *) &__glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast);
   add_global((object *) &__glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast);
   add_global((object *) &__glo_ast_117lambda_91body_scheme_cyclone_ast);
   add_global((object *) &__glo_ast_117lambda_91args_scheme_cyclone_ast);
@@ -1053,7 +1053,7 @@ void c_schemecycloneast_entry_pt(data, argc, cont,value) void *data; int argc; c
   mclosure0(c_73111, (function_type)__lambda_2);c_73111.num_args = 2; 
   __glo_ast_117make_91lambda_scheme_cyclone_ast = &c_73111; 
   __glo_ast_117_75make_91lambda_scheme_cyclone_ast = boolean_f; 
-  __glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast = boolean_f; 
+  __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast = boolean_f; 
   __glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast = boolean_f; 
   __glo_ast_117lambda_91body_scheme_cyclone_ast = boolean_f; 
   __glo_ast_117lambda_91args_scheme_cyclone_ast = boolean_f; 
@@ -1065,7 +1065,7 @@ void c_schemecycloneast_entry_pt(data, argc, cont,value) void *data; int argc; c
   make_cvar(cvar_73237, (object *)&__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast);make_pair(pair_73238, find_or_add_symbol("lib-init:schemecycloneast"), &cvar_73237);
   make_cvar(cvar_73239, (object *)&__glo_ast_117make_91lambda_scheme_cyclone_ast);make_pair(pair_73240, find_or_add_symbol("ast:make-lambda"), &cvar_73239);
   make_cvar(cvar_73241, (object *)&__glo_ast_117_75make_91lambda_scheme_cyclone_ast);make_pair(pair_73242, find_or_add_symbol("ast:%make-lambda"), &cvar_73241);
-  make_cvar(cvar_73243, (object *)&__glo_ast_117se_91lambda_91body_67_scheme_cyclone_ast);make_pair(pair_73244, find_or_add_symbol("ast:se-lambda-body!"), &cvar_73243);
+  make_cvar(cvar_73243, (object *)&__glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast);make_pair(pair_73244, find_or_add_symbol("ast:set-lambda-body!"), &cvar_73243);
   make_cvar(cvar_73245, (object *)&__glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast);make_pair(pair_73246, find_or_add_symbol("ast:set-lambda-args!"), &cvar_73245);
   make_cvar(cvar_73247, (object *)&__glo_ast_117lambda_91body_scheme_cyclone_ast);make_pair(pair_73248, find_or_add_symbol("ast:lambda-body"), &cvar_73247);
   make_cvar(cvar_73249, (object *)&__glo_ast_117lambda_91args_scheme_cyclone_ast);make_pair(pair_73250, find_or_add_symbol("ast:lambda-args"), &cvar_73249);
