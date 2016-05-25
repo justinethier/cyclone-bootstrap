@@ -367,7 +367,7 @@ defsymbol(quote);
 defsymbol(define_91syntax);
 defsymbol(macro);
 static void __lambda_42(void *data, int argc, closure _,object k_7323) ;
-static void __lambda_41(void *data, int argc, object self_7380, object r_7324) ;
+static void __lambda_41(void *data, int argc, object self_7380) ;
 static void __lambda_40(void *data, int argc, object self_7381, object r_7327) ;
 static void __lambda_39(void *data, int argc, object self_7382, object r_7325) ;
 static void __lambda_38(void *data, int argc, object self_7383, object r_7326) ;
@@ -418,15 +418,15 @@ c_73263.hdr.mark = gc_color_red;
  c_73263.hdr.grayed = 0;
 c_73263.tag = closureN_tag;
  c_73263.fn = (function_type)__lambda_41;
-c_73263.num_args = 1;
+c_73263.num_args = 0;
 c_73263.num_elements = 1;
 c_73263.elements = (object *)alloca(sizeof(object) * 1);
 c_73263.elements[0] = k_7323;
 
-return_closcall1(data,(closure)&c_73263,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_73263);; 
 }
 
-static void __lambda_41(void *data, int argc, object self_7380, object r_7324) {
+static void __lambda_41(void *data, int argc, object self_7380) {
   
 closureN_type c_73265;
 c_73265.hdr.mark = gc_color_red;

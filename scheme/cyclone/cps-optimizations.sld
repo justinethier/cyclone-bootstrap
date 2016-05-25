@@ -17,7 +17,7 @@
 ;  can write initial analyze, but can't get too far without being able
 ;  to uniquely ID each lambda
 
-;(define-library (optimize-cps)
+;(define-library (cps-optimizations)
 (define-library (scheme cyclone cps-optimizations)
   (import (scheme base)
           (scheme cyclone util)
@@ -38,11 +38,18 @@
       adb:make-var
       %adb:make-var
       adb:variable?
-      adbv:global 
+      adbv:global?  
       adbv:set-global!
-      adbv:defined-by adbv:set-defined-by!
-      adbv:assigned adbv:set-assigned!
-      adbv:assigned-locally adbv:set-assigned-locally!
+      adbv:defined-by 
+      adbv:set-defined-by!
+      adbv:assigned? 
+      adbv:set-assigned!
+      adbv:assigned-locally? 
+      adbv:set-assigned-locally!
+      adbv:const? 
+      adbv:set-const!
+      adbv:const-value
+      adbv:set-const-value!
       adbv:ref-by
       adbv:set-ref-by!
       ;; Analyze functions
@@ -65,14 +72,16 @@
     (define-record-type <analysis-db-variable>
       (%adb:make-var global defined-by assigned assigned-locally)
       adb:variable?
-      (global adbv:global adbv:set-global!)
+      (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
-      (assigned adbv:assigned adbv:set-assigned!)
-      (assigned-locally adbv:assigned-locally adbv:set-assigned-locally!)
+      (assigned adbv:assigned? adbv:set-assigned!)
+      (assigned-locally adbv:assigned-locally? adbv:set-assigned-locally!)
+      (const adbv:const? adbv:set-const!)
+      (const-value adbv:const-value adbv:set-const-value!)
       (ref-by adbv:ref-by adbv:set-ref-by!)
     )
     (define (adb:make-var)
-      (%adb:make-var '? '? '? '? '()))
+      (%adb:make-var '? '? '? '? #f #f '()))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params)
@@ -83,8 +92,22 @@
     (define (adb:make-fnc)
       (%adb:make-fnc '? '?))
 
+    ;; A constant value that cannot be mutated
+    ;; A variable only ever assigned to one of these could have all
+    ;; instances of itself replaced with the value.
+    (define (const-atomic? exp)
+      (or (integer? exp)
+          (real? exp)
+          ;(string? exp)
+          ;(vector? exp)
+          ;(bytevector? exp)
+          (char? exp)
+          (boolean? exp)))
+
+;; TODO: check app for const/const-value, also (for now) reset them
+;; if the variable is modified via set/define
     (define (analyze exp lid)
-;(tre:error `(analyze ,lid ,exp))
+;(trace:error `(analyze ,lid ,exp ,(app? exp)))
       (cond
         ; Core forms:
         ((ast:lambda? exp)
@@ -115,12 +138,18 @@
            ;; TODO:
            (adbv:set-defined-by! var lid)
            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
+           (adbv:set-const! var #f)
+           (adbv:set-const-value! var #f)
+           (adb:set! (define->var exp) var)
 
            (analyze (define->exp exp) lid)))
         ((set!? exp)
          (let ((var (adb:get/default (set!->var exp) (adb:make-var))))
            ;; TODO:
            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
+           (adbv:set-const! var #f)
+           (adbv:set-const-value! var #f)
+           (adb:set! (set!->var exp) var)
 
            (analyze (set!->exp exp) lid)))
         ((if? exp)       `(if ,(analyze (if->condition exp) lid)
@@ -129,6 +158,29 @@
         
         ; Application:
         ((app? exp)
+
+         ;; TODO: if ast-lambda (car),
+         ;; for each arg
+         ;;  if arg is const-atomic
+         ;;     mark the parameter (variable) as const and give it const-val
+         ;;
+         ;; obviously need to add code later on to reset const if mutated
+         (cond
+          ((and (ast:lambda? (car exp))
+                (list? (ast:lambda-args (car exp)))) ;; For now, avoid complications with optional/extra args
+           (let ((params (ast:lambda-args (car exp))))
+             (for-each
+              (lambda (arg)
+;(trace:error `(app check arg ,arg ,(car params) ,(const-atomic? arg)))
+                (cond
+                 ((const-atomic? arg)
+                  (let ((var (adb:get/default (car params) (adb:make-var))))
+                    (adbv:set-const! var #t)
+                    (adbv:set-const-value! var arg)
+                    (adb:set! (car params) var))))
+                ;; Walk this list, too
+                (set! params (cdr params)))
+              (app->args exp)))))
          (for-each
            (lambda (e)
              (analyze e lid))
@@ -247,7 +299,11 @@
                  (ast:lambda-args exp)
                  (opt:contract (ast:lambda-body exp))))))
         ((const? exp) exp)
-        ((ref? exp) exp)
+        ((ref? exp) 
+         (let ((var (adb:get/default exp #f)))
+           (if (and var (adbv:const? var))
+               (adbv:const-value var)
+               exp)))
         ((prim? exp) exp)
         ((quote? exp) exp)
         ((define? exp)
@@ -261,7 +317,43 @@
                               ,(opt:contract (if->else exp))))
         ; Application:
         ((app? exp)
-         (map (lambda (e) (opt:contract e)) exp))
+         (let* ((fnc (opt:contract (car exp))))
+           (cond
+            ((and (ast:lambda? fnc)
+                  (list? (ast:lambda-args fnc)) ;; Avoid optional/extra args
+                  (= (length (ast:lambda-args fnc))
+                     (length (app->args exp))))
+             (let ((new-params '())
+                   (new-args '())
+                   (args (cdr exp)))
+               (for-each
+                 (lambda (param)
+                   (let ((var (adb:get/default param #f)))
+                     (cond
+                      ((and var (adbv:const? var))
+                       #f)
+                      (else
+                       ;; Collect the params/args not optimized-out
+                       (set! new-args (cons (car args) new-args))
+                       (set! new-params (cons param new-params))))
+                     (set! args (cdr args))))
+                 (ast:lambda-args fnc))
+;(trace:e  rror `(DEBUG contract args ,(app->args exp) 
+;                                new-args ,new-args
+;                                params ,(ast:lambda-args fnc) 
+;                                new-params ,new-params))
+               (cons
+                 (ast:%make-lambda
+                   (ast:lambda-id fnc)
+                   (reverse new-params)
+                   (ast:lambda-body fnc))
+                 (map 
+                   opt:contract
+                     (reverse new-args)))))
+            (else
+             (cons 
+               fnc
+               (map (lambda (e) (opt:contract e)) (cdr exp)))))))
         (else 
           (error "CPS optimize [1] - Unknown expression" exp))))
 

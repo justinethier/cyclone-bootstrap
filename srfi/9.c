@@ -317,7 +317,7 @@ defsymbol(make_91constructor);
 defsymbol(_75make);
 defsymbol(res);
 static void __lambda_258(void *data, int argc, closure _,object k_73119) ;
-static void __lambda_257(void *data, int argc, object self_73389, object r_73120) ;
+static void __lambda_257(void *data, int argc, object self_73389) ;
 static void __lambda_256(void *data, int argc, object self_73390, object r_73122) ;
 static void __lambda_255(void *data, int argc, object self_73391, object r_73121) ;
 static void __lambda_254(void *data, int argc, closure _,object k_73125, object expr_7361, object rename_7360, object compare_7359) ;
@@ -584,15 +584,15 @@ c_731789.hdr.mark = gc_color_red;
  c_731789.hdr.grayed = 0;
 c_731789.tag = closureN_tag;
  c_731789.fn = (function_type)__lambda_257;
-c_731789.num_args = 1;
+c_731789.num_args = 0;
 c_731789.num_elements = 1;
 c_731789.elements = (object *)alloca(sizeof(object) * 1);
 c_731789.elements[0] = k_73119;
 
-return_closcall1(data,(closure)&c_731789,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_731789);; 
 }
 
-static void __lambda_257(void *data, int argc, object self_73389, object r_73120) {
+static void __lambda_257(void *data, int argc, object self_73389) {
   
 closureN_type c_731791;
 c_731791.hdr.mark = gc_color_red;

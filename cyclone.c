@@ -521,7 +521,6 @@ extern object __glo_analyze_91mutable_91variables_scheme_cyclone_transforms;
 extern object __glo_wrap_91mutables_scheme_cyclone_transforms;
 extern object __glo_alpha_91convert_scheme_cyclone_transforms;
 extern object __glo_cps_91convert_scheme_cyclone_transforms;
-extern object __glo_cps_91optimize_9101_scheme_cyclone_transforms;
 extern object __glo_pos_91in_91list_scheme_cyclone_transforms;
 extern object __glo_closure_91convert_scheme_cyclone_transforms;
 extern object __glo_optimize_91cps_scheme_cyclone_cps_91optimizations;
@@ -535,14 +534,18 @@ extern object __glo_simple_91lambda_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_adb_117make_91var_scheme_cyclone_cps_91optimizations;
 extern object __glo__75adb_117make_91var_scheme_cyclone_cps_91optimizations;
 extern object __glo_adb_117variable_127_scheme_cyclone_cps_91optimizations;
-extern object __glo_adbv_117global_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117global_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91global_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117defined_91by_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91defined_91by_67_scheme_cyclone_cps_91optimizations;
-extern object __glo_adbv_117assigned_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117assigned_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91assigned_67_scheme_cyclone_cps_91optimizations;
-extern object __glo_adbv_117assigned_91locally_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117assigned_91locally_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91assigned_91locally_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117const_127_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117set_91const_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117const_91value_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117set_91const_91value_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117ref_91by_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91ref_91by_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adb_117make_91fnc_scheme_cyclone_cps_91optimizations;
@@ -602,7 +605,7 @@ defsymbol(include_91c_91header);
 defsymbol(import);
 defsymbol(define);
 static void __lambda_346(void *data, int argc, closure _) ;
-static void __lambda_345(void *data, int argc, closure _,object r_73117) ;
+static void __lambda_345(void *data, int argc, closure _) ;
 static void __lambda_344(void *data, int argc, closure _,object args_7357) ;
 static void __lambda_343(void *data, int argc, object self_73421, object k_73139, object arg_7358) ;
 static void __lambda_342(void *data, int argc, object self_73422, object r_73140) ;
@@ -700,7 +703,7 @@ static void __lambda_251(void *data, int argc, object self_73505, object k_73195
 static void __lambda_250(void *data, int argc, object self_73506, object r_73194) ;
 static void __lambda_249(void *data, int argc, closure _,object k_73198, object input_91program_7383, object lib_91deps_7382, object src_91file_7381) ;
 static void __lambda_248(void *data, int argc, object self_73507, object input_91program_7383) ;
-static void __lambda_247(void *data, int argc, object self_73508, object c_91headers_7392, object globals_7391, object imported_91vars_7390, object imports_7389, object lib_91exports_7388, object lib_91name_7387, object lib_91renamed_91exports_7386, object module_91globals_7385, object program_127_7384) ;
+static void __lambda_247(void *data, int argc, object self_73508) ;
 static void __lambda_246(void *data, int argc, object self_73509, object k_73200, object return_7393) ;
 static void __lambda_245(void *data, int argc, object self_73510, object globals_73102, object module_91globals_73101, object program_127_73100, object imports_7399, object imported_91vars_7398, object lib_91name_7397, object lib_91exports_7396, object lib_91renamed_91exports_7395, object c_91headers_7394) ;
 static void __lambda_244(void *data, int argc, object self_73511, object globals_73102) ;
@@ -950,10 +953,10 @@ static void __lambda_1(void *data, int argc, object self_73753, object r_73361) 
 static void __lambda_0(void *data, int argc, object self_73754, object r_73199) ;
 
 static void __lambda_346(void *data, int argc, closure _) {
-  return_direct1(data,__lambda_345,obj_int2obj(0));; 
+  return_direct0(data,__lambda_345);; 
 }
 
-static void __lambda_345(void *data, int argc, closure _,object r_73117) {
+static void __lambda_345(void *data, int argc, closure _) {
   mclosure0(c_732209,__lambda_344); object c_732210 = Cyc_command_line_arguments(data,&c_732209);
 return_direct1(data,__lambda_344,c_732210);; 
 }
@@ -2576,7 +2579,7 @@ c_73759.hdr.mark = gc_color_red;
  c_73759.hdr.grayed = 0;
 c_73759.tag = closureN_tag;
  c_73759.fn = (function_type)__lambda_247;
-c_73759.num_args = 9;
+c_73759.num_args = 0;
 c_73759.num_elements = 4;
 c_73759.elements = (object *)alloca(sizeof(object) * 4);
 c_73759.elements[0] = input_91program_7383;
@@ -2584,10 +2587,10 @@ c_73759.elements[1] = ((closureN)self_73507)->elements[0];
 c_73759.elements[2] = ((closureN)self_73507)->elements[1];
 c_73759.elements[3] = ((closureN)self_73507)->elements[2];
 
-return_closcall9(data,(closure)&c_73759,  boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f, boolean_f);; 
+return_closcall0(data,(closure)&c_73759);; 
 }
 
-static void __lambda_247(void *data, int argc, object self_73508, object c_91headers_7392, object globals_7391, object imported_91vars_7390, object imports_7389, object lib_91exports_7388, object lib_91name_7387, object lib_91renamed_91exports_7386, object module_91globals_7385, object program_127_7384) {
+static void __lambda_247(void *data, int argc, object self_73508) {
   
 closureN_type c_73761;
 c_73761.hdr.mark = gc_color_red;

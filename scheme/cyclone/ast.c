@@ -6,6 +6,31 @@
  **
  **/
 
+#define closcall0(td, clo) \
+   ((clo)->fn)(td, 0, clo)
+#define return_closcall0(td, clo) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0]; \
+     GC(td, clo, buf, 0); \
+     return; \
+ } else {\
+     closcall0(td, (closure) (clo)); \
+     return;\
+ } \
+}
+
+#define return_direct0(td, _fn) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0];  \
+     mclosure0(c1, _fn); \
+     GC(td, &c1, buf, 0); \
+     return; \
+ } else { \
+     (_fn)(td, 0, (closure)_fn); \
+ }}
+
 #define closcall1(td, clo,a1) \
 if (type_of(clo) == pair_tag || prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
@@ -337,7 +362,7 @@ defsymbol(args);
 defsymbol(body);
 defsymbol(id);
 static void __lambda_39(void *data, int argc, closure _,object k_7311) ;
-static void __lambda_38(void *data, int argc, object self_7371, object r_7312) ;
+static void __lambda_38(void *data, int argc, object self_7371) ;
 static void __lambda_37(void *data, int argc, object self_7372, object r_7347) ;
 static void __lambda_36(void *data, int argc, object self_7373, object r_7346) ;
 static void __lambda_35(void *data, int argc, object self_7374, object r_7313) ;
@@ -355,7 +380,7 @@ static void __lambda_24(void *data, int argc, object self_7385, object r_7338) ;
 static void __lambda_23(void *data, int argc, object self_7386, object r_7337) ;
 static void __lambda_22(void *data, int argc, object self_7387, object r_7336) ;
 static void __lambda_21(void *data, int argc, object self_7388, object r_7317) ;
-static void __lambda_20(void *data, int argc, object self_7389, object r_7318) ;
+static void __lambda_20(void *data, int argc, object self_7389) ;
 static void __lambda_19(void *data, int argc, object self_7390, object r_7335) ;
 static void __lambda_18(void *data, int argc, object self_7391, object r_7334) ;
 static void __lambda_17(void *data, int argc, object self_7392, object r_7333) ;
@@ -385,15 +410,15 @@ c_73125.hdr.mark = gc_color_red;
  c_73125.hdr.grayed = 0;
 c_73125.tag = closureN_tag;
  c_73125.fn = (function_type)__lambda_38;
-c_73125.num_args = 1;
+c_73125.num_args = 0;
 c_73125.num_elements = 1;
 c_73125.elements = (object *)alloca(sizeof(object) * 1);
 c_73125.elements[0] = k_7311;
 
-return_closcall1(data,(closure)&c_73125,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_73125);; 
 }
 
-static void __lambda_38(void *data, int argc, object self_7371, object r_7312) {
+static void __lambda_38(void *data, int argc, object self_7371) {
   
 closureN_type c_73127;
 c_73127.hdr.mark = gc_color_red;
@@ -667,15 +692,15 @@ c_73161.hdr.mark = gc_color_red;
  c_73161.hdr.grayed = 0;
 c_73161.tag = closureN_tag;
  c_73161.fn = (function_type)__lambda_20;
-c_73161.num_args = 1;
+c_73161.num_args = 0;
 c_73161.num_elements = 1;
 c_73161.elements = (object *)alloca(sizeof(object) * 1);
 c_73161.elements[0] = ((closureN)self_7388)->elements[0];
 
-return_closcall1(data,(closure)&c_73161,  boolean_f);; 
+return_closcall0(data,(closure)&c_73161);; 
 }
 
-static void __lambda_20(void *data, int argc, object self_7389, object r_7318) {
+static void __lambda_20(void *data, int argc, object self_7389) {
   
 closureN_type c_73163;
 c_73163.hdr.mark = gc_color_red;

@@ -6,6 +6,31 @@
  **
  **/
 
+#define closcall0(td, clo) \
+   ((clo)->fn)(td, 0, clo)
+#define return_closcall0(td, clo) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0]; \
+     GC(td, clo, buf, 0); \
+     return; \
+ } else {\
+     closcall0(td, (closure) (clo)); \
+     return;\
+ } \
+}
+
+#define return_direct0(td, _fn) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0];  \
+     mclosure0(c1, _fn); \
+     GC(td, &c1, buf, 0); \
+     return; \
+ } else { \
+     (_fn)(td, 0, (closure)_fn); \
+ }}
+
 #define closcall1(td, clo,a1) \
 if (type_of(clo) == pair_tag || prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
@@ -261,7 +286,7 @@ extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
 #include "cyclone/runtime.h"
 static void __lambda_60(void *data, int argc, closure _,object k_7344) ;
-static void __lambda_59(void *data, int argc, object self_73149, object r_7345) ;
+static void __lambda_59(void *data, int argc, object self_73149) ;
 static void __lambda_58(void *data, int argc, closure _,object k_7348, object str_735) ;
 static void __lambda_57(void *data, int argc, closure _,object k_7351, object str_736) ;
 static void __lambda_56(void *data, int argc, closure _,object k_7354, object str_737) ;
@@ -330,15 +355,15 @@ c_73450.hdr.mark = gc_color_red;
  c_73450.hdr.grayed = 0;
 c_73450.tag = closureN_tag;
  c_73450.fn = (function_type)__lambda_59;
-c_73450.num_args = 1;
+c_73450.num_args = 0;
 c_73450.num_elements = 1;
 c_73450.elements = (object *)alloca(sizeof(object) * 1);
 c_73450.elements[0] = k_7344;
 
-return_closcall1(data,(closure)&c_73450,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_73450);; 
 }
 
-static void __lambda_59(void *data, int argc, object self_73149, object r_7345) {
+static void __lambda_59(void *data, int argc, object self_73149) {
   return_closcall1(data,  ((closureN)self_73149)->elements[0],  global_set(__glo_char_91foldcase_scheme__char, __glo_char_91downcase_scheme__char));; 
 }
 

@@ -360,7 +360,7 @@ defsymbol(export);
 defsymbol(define_91library);
 static void __lambda_227(void *data, int argc, closure _,object k_73122) ;
 static void __lambda_226(void *data, int argc, closure _,object k_73125, object libs_95deps_7342) ;
-static void __lambda_225(void *data, int argc, object self_73374, object loop_7343) ;
+static void __lambda_225(void *data, int argc, object self_73374) ;
 static void __lambda_224(void *data, int argc, object self_73375, object result_7344) ;
 static void __lambda_223(void *data, int argc, object self_73376, object result_7344) ;
 static void __lambda_222(void *data, int argc, object self_73377, object k_73129, object lib_95dep_7345) ;
@@ -600,16 +600,16 @@ c_731289.hdr.mark = gc_color_red;
  c_731289.hdr.grayed = 0;
 c_731289.tag = closureN_tag;
  c_731289.fn = (function_type)__lambda_225;
-c_731289.num_args = 1;
+c_731289.num_args = 0;
 c_731289.num_elements = 2;
 c_731289.elements = (object *)alloca(sizeof(object) * 2);
 c_731289.elements[0] = k_73125;
 c_731289.elements[1] = libs_95deps_7342;
 
-return_closcall1(data,(closure)&c_731289,  boolean_f);; 
+return_closcall0(data,(closure)&c_731289);; 
 }
 
-static void __lambda_225(void *data, int argc, object self_73374, object loop_7343) {
+static void __lambda_225(void *data, int argc, object self_73374) {
   
 closureN_type c_731291;
 c_731291.hdr.mark = gc_color_red;

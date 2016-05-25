@@ -242,7 +242,7 @@ extern object __glo_numerator_scheme_base;
 defsymbol(make_91promise);
 defsymbol(lambda);
 static void __lambda_33(void *data, int argc, closure _,object k_7316) ;
-static void __lambda_32(void *data, int argc, object self_7356, object r_7317) ;
+static void __lambda_32(void *data, int argc, object self_7356) ;
 static void __lambda_31(void *data, int argc, closure _,object k_7322, object proc_733) ;
 static void __lambda_30(void *data, int argc, object self_7357, object result_91ready_127_735, object result_734) ;
 static void __lambda_29(void *data, int argc, object self_7358, object result_91ready_127_735) ;
@@ -284,15 +284,15 @@ c_73234.hdr.mark = gc_color_red;
  c_73234.hdr.grayed = 0;
 c_73234.tag = closureN_tag;
  c_73234.fn = (function_type)__lambda_32;
-c_73234.num_args = 1;
+c_73234.num_args = 0;
 c_73234.num_elements = 1;
 c_73234.elements = (object *)alloca(sizeof(object) * 1);
 c_73234.elements[0] = k_7316;
 
-return_closcall1(data,(closure)&c_73234,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_73234);; 
 }
 
-static void __lambda_32(void *data, int argc, object self_7356, object r_7317) {
+static void __lambda_32(void *data, int argc, object self_7356) {
   return_closcall1(data,  ((closureN)self_7356)->elements[0],  global_set(__glo_promise_127_scheme_lazy, primitive_procedure_127));; 
 }
 

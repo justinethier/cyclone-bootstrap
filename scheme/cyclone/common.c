@@ -6,6 +6,31 @@
  **
  **/
 
+#define closcall0(td, clo) \
+   ((clo)->fn)(td, 0, clo)
+#define return_closcall0(td, clo) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0]; \
+     GC(td, clo, buf, 0); \
+     return; \
+ } else {\
+     closcall0(td, (closure) (clo)); \
+     return;\
+ } \
+}
+
+#define return_direct0(td, _fn) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[0];  \
+     mclosure0(c1, _fn); \
+     GC(td, &c1, buf, 0); \
+     return; \
+ } else { \
+     (_fn)(td, 0, (closure)_fn); \
+ }}
+
 #define closcall1(td, clo,a1) \
 if (type_of(clo) == pair_tag || prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
@@ -72,7 +97,7 @@ object __glo__85version_91banner_85_scheme_cyclone_common = NULL;
 object __glo__85version_85_scheme_cyclone_common = NULL;
 #include "cyclone/runtime.h"
 static void __lambda_5(void *data, int argc, closure _,object k_733) ;
-static void __lambda_4(void *data, int argc, object self_7317, object r_734) ;
+static void __lambda_4(void *data, int argc, object self_7317) ;
 static void __lambda_3(void *data, int argc, object self_7318, object r_738) ;
 static void __lambda_2(void *data, int argc, object self_7319, object r_735) ;
 static void __lambda_1(void *data, int argc, object self_7320, object r_736) ;
@@ -86,15 +111,15 @@ c_7325.hdr.mark = gc_color_red;
  c_7325.hdr.grayed = 0;
 c_7325.tag = closureN_tag;
  c_7325.fn = (function_type)__lambda_4;
-c_7325.num_args = 1;
+c_7325.num_args = 0;
 c_7325.num_elements = 1;
 c_7325.elements = (object *)alloca(sizeof(object) * 1);
 c_7325.elements[0] = k_733;
 
-return_closcall1(data,(closure)&c_7325,  obj_int2obj(0));; 
+return_closcall0(data,(closure)&c_7325);; 
 }
 
-static void __lambda_4(void *data, int argc, object self_7317, object r_734) {
+static void __lambda_4(void *data, int argc, object self_7317) {
   
 closureN_type c_7327;
 c_7327.hdr.mark = gc_color_red;
