@@ -7899,6 +7899,7 @@ extern void c_schemelazy_entry_pt(void *data, int argc, closure cont, object val
 extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneast_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonecommon_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_schemecycloneprimitives_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonelibraries_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonemacros_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonepretty_91print_entry_pt(void *data, int argc, closure cont, object value);
@@ -7965,19 +7966,20 @@ mclosure1(c_732223, c_schemecyclonetransforms_entry_pt, &c_732222);
 mclosure1(c_732224, c_schemecyclonepretty_91print_entry_pt, &c_732223);
 mclosure1(c_732225, c_schemecyclonemacros_entry_pt, &c_732224);
 mclosure1(c_732226, c_schemecyclonelibraries_entry_pt, &c_732225);
-mclosure1(c_732227, c_schemecyclonecommon_entry_pt, &c_732226);
-mclosure1(c_732228, c_schemecycloneast_entry_pt, &c_732227);
-mclosure1(c_732229, c_schemewrite_entry_pt, &c_732228);
-mclosure1(c_732230, c_schemelazy_entry_pt, &c_732229);
-mclosure1(c_732231, c_schemeeval_entry_pt, &c_732230);
-mclosure1(c_732232, c_schemeread_entry_pt, &c_732231);
-mclosure1(c_732233, c_schemefile_entry_pt, &c_732232);
-mclosure1(c_732234, c_schemecycloneutil_entry_pt, &c_732233);
-mclosure1(c_732235, c_scheme_char_entry_pt, &c_732234);
-mclosure1(c_732236, c_schemecase_91lambda_entry_pt, &c_732235);
-mclosure1(c_732237, c_schemecomplex_entry_pt, &c_732236);
-mclosure1(c_732238, c_schemebase_entry_pt, &c_732237);
-(c_732238.fn)(data, 0, &c_732238, &c_732238);
+mclosure1(c_732227, c_schemecycloneprimitives_entry_pt, &c_732226);
+mclosure1(c_732228, c_schemecyclonecommon_entry_pt, &c_732227);
+mclosure1(c_732229, c_schemecycloneast_entry_pt, &c_732228);
+mclosure1(c_732230, c_schemewrite_entry_pt, &c_732229);
+mclosure1(c_732231, c_schemelazy_entry_pt, &c_732230);
+mclosure1(c_732232, c_schemeeval_entry_pt, &c_732231);
+mclosure1(c_732233, c_schemeread_entry_pt, &c_732232);
+mclosure1(c_732234, c_schemefile_entry_pt, &c_732233);
+mclosure1(c_732235, c_schemecycloneutil_entry_pt, &c_732234);
+mclosure1(c_732236, c_scheme_char_entry_pt, &c_732235);
+mclosure1(c_732237, c_schemecase_91lambda_entry_pt, &c_732236);
+mclosure1(c_732238, c_schemecomplex_entry_pt, &c_732237);
+mclosure1(c_732239, c_schemebase_entry_pt, &c_732238);
+(c_732239.fn)(data, 0, &c_732239, &c_732239);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
   
