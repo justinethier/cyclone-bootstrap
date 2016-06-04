@@ -22,13 +22,15 @@
   (import (scheme base)
           (scheme cyclone util)
           (scheme cyclone ast)
+          (scheme cyclone primitives)
           (scheme cyclone transforms)
           (srfi 69))
   (export
       optimize-cps 
       analyze-cps
       opt:contract
-      ;adb:init!
+      contract-prims
+      adb:clear!
       adb:get
       adb:get/default
       adb:set!
@@ -42,10 +44,10 @@
       adbv:set-global!
       adbv:defined-by 
       adbv:set-defined-by!
-      adbv:assigned? 
-      adbv:set-assigned!
-      adbv:assigned-locally? 
-      adbv:set-assigned-locally!
+      adbv:reassigned? 
+      adbv:set-reassigned!
+      adbv:assigned-value
+      adbv:set-assigned-value!
       adbv:const? 
       adbv:set-const!
       adbv:const-value
@@ -62,35 +64,68 @@
   (begin
     (define *adb* (make-hash-table))
     (define (adb:get-db) *adb*)
-    ;(define *adb* #f) ;(make-hash-table))
-    ;(define (adb:init!)
-    ;  ;(set! *adb* (make-hash-table)))
-    ;  'TODO)
+    (define (adb:clear!)
+      (set! *adb* (make-hash-table)))
     (define (adb:get key) (hash-table-ref *adb* key))
     (define (adb:get/default key default) (hash-table-ref/default *adb* key default))
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
-      (%adb:make-var global defined-by assigned assigned-locally)
+      (%adb:make-var global defined-by const const-value  ref-by
+                     reassigned assigned-value app-fnc-count app-arg-count)
       adb:variable?
       (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
-      (assigned adbv:assigned? adbv:set-assigned!)
-      (assigned-locally adbv:assigned-locally? adbv:set-assigned-locally!)
       (const adbv:const? adbv:set-const!)
       (const-value adbv:const-value adbv:set-const-value!)
       (ref-by adbv:ref-by adbv:set-ref-by!)
+      ;; TODO: need to set reassigned flag if variable is SET, however there is at least
+      ;; one exception for local define's, which are initialized to #f and then assigned
+      ;; a single time via set
+      (reassigned adbv:reassigned? adbv:set-reassigned!)
+      (assigned-value adbv:assigned-value adbv:set-assigned-value!)
+      ;; Number of times variable appears as an app-function
+      (app-fnc-count adbv:app-fnc-count adbv:set-app-fnc-count!)
+      ;; Number of times variable is passed as an app-argument
+      (app-arg-count adbv:app-arg-count adbv:set-app-arg-count!)
     )
+
+    (define (adbv-set-assigned-value-helper! sym var value)
+      (define (update-lambda-atv! syms value)
+(trace:error `(update-lambda-atv! ,syms ,value))
+        (cond
+          ((ast:lambda? value)
+           (let ((id (ast:lambda-id value)))
+             (with-fnc! id (lambda (fnc)
+               (adbf:set-assigned-to-var! 
+                 fnc 
+                 (append syms (adbf:assigned-to-var fnc)))))))
+          ;; Follow references
+          ((ref? value)
+           (with-var! value (lambda (var)
+             (update-lambda-atv! (cons value syms) (adbv:assigned-value var)))))
+          (else
+            #f))
+      )
+      (adbv:set-assigned-value! var value)
+      ;; TODO: if value is a lambda, update the lambda's var ref's
+      ;; BUT, what if other vars point to var? do we need to add
+      ;; them to the lambda's list as well?
+      (update-lambda-atv! (list sym) value)
+    )
+
     (define (adb:make-var)
-      (%adb:make-var '? '? '? '? #f #f '()))
+      (%adb:make-var '? '? #f #f '() #f #f 0 0))
 
     (define-record-type <analysis-db-function>
-      (%adb:make-fnc simple unused-params)
+      (%adb:make-fnc simple unused-params assigned-to-var)
       adb:function?
       (simple adbf:simple adbf:set-simple!)
       (unused-params adbf:unused-params adbf:set-unused-params!)
+      (assigned-to-var adbf:assigned-to-var adbf:set-assigned-to-var!)
+      ;; TODO: top-level-define ?
     )
     (define (adb:make-fnc)
-      (%adb:make-fnc '? '?))
+      (%adb:make-fnc '? '? '()))
 
     ;; A constant value that cannot be mutated
     ;; A variable only ever assigned to one of these could have all
@@ -104,6 +139,22 @@
           (char? exp)
           (boolean? exp)))
 
+    ;; Helper to retrieve the Analysis DB Variable referenced
+    ;; by sym (or use a default if none is found), and call
+    ;; fnc with that ADBV.
+    ;;
+    ;; The analysis DB is updated with the variable, in case
+    ;; it was not found.
+    (define (with-var! sym fnc)
+      (let ((var (adb:get/default sym (adb:make-var))))
+        (fnc var)
+        (adb:set! sym var)))
+
+    (define (with-fnc! id callback)
+      (let ((fnc (adb:get/default id (adb:make-fnc))))
+        (callback fnc)
+        (adb:set! id fnc)))
+
 ;; TODO: check app for const/const-value, also (for now) reset them
 ;; if the variable is modified via set/define
     (define (analyze exp lid)
@@ -111,17 +162,17 @@
       (cond
         ; Core forms:
         ((ast:lambda? exp)
-         (let ((id (ast:lambda-id exp))
-                (fnc (adb:make-fnc)))
+         (let* ((id (ast:lambda-id exp))
+                (fnc (adb:get/default id (adb:make-fnc))))
            ;; save lambda to adb
            (adb:set! id fnc)
            ;; Analyze the lambda
            (for-each
             (lambda (arg)
-              (let ((var (adb:get/default arg (adb:make-var))))
+              ;(let ((var (adb:get/default arg (adb:make-var))))
+              (with-var! arg (lambda (var)
                 (adbv:set-global! var #f)
-                (adbv:set-defined-by! var id)
-                (adb:set! arg var)))
+                (adbv:set-defined-by! var id))))
             (ast:lambda-formals->list exp))
            (for-each
              (lambda (expr)
@@ -134,30 +185,39 @@
           (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
          ))
         ((define? exp)
-         (let ((var (adb:get/default (define->var exp) (adb:make-var))))
-           ;; TODO:
+         ;(let ((var (adb:get/default (define->var exp) (adb:make-var))))
+         (with-var! (define->var exp) (lambda (var)
            (adbv:set-defined-by! var lid)
            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
+           (adbv-set-assigned-value-helper! (define->var exp) var (define->exp exp))
            (adbv:set-const! var #f)
-           (adbv:set-const-value! var #f)
-           (adb:set! (define->var exp) var)
-
-           (analyze (define->exp exp) lid)))
+           (adbv:set-const-value! var #f)))
+         (analyze (define->exp exp) lid))
         ((set!? exp)
-         (let ((var (adb:get/default (set!->var exp) (adb:make-var))))
-           ;; TODO:
+         ;(let ((var (adb:get/default (set!->var exp) (adb:make-var))))
+         (with-var! (set!->var exp) (lambda (var)
+           (if (adbv:assigned-value var)
+               (adbv:set-reassigned! var #t))
+           (adbv-set-assigned-value-helper! (set!->var exp) var (set!->exp exp))
            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
            (adbv:set-const! var #f)
-           (adbv:set-const-value! var #f)
-           (adb:set! (set!->var exp) var)
-
-           (analyze (set!->exp exp) lid)))
+           (adbv:set-const-value! var #f)))
+         (analyze (set!->exp exp) lid))
         ((if? exp)       `(if ,(analyze (if->condition exp) lid)
                               ,(analyze (if->then exp) lid)
                               ,(analyze (if->else exp) lid)))
         
         ; Application:
         ((app? exp)
+         (if (ref? (car exp))
+             (with-var! (car exp) (lambda (var)
+               (adbv:set-app-fnc-count! var (+ 1 (adbv:app-fnc-count var))))))
+         (for-each
+          (lambda (arg)
+             (if (ref? arg)
+                 (with-var! arg (lambda (var)
+                   (adbv:set-app-arg-count! var (+ 1 (adbv:app-arg-count var)))))))
+          (app->args exp))
 
          ;; TODO: if ast-lambda (car),
          ;; for each arg
@@ -172,12 +232,12 @@
              (for-each
               (lambda (arg)
 ;(trace:error `(app check arg ,arg ,(car params) ,(const-atomic? arg)))
-                (cond
-                 ((const-atomic? arg)
-                  (let ((var (adb:get/default (car params) (adb:make-var))))
+                (with-var! (car params) (lambda (var)
+                  (adbv-set-assigned-value-helper! (car params) var arg)
+                  (cond
+                   ((const-atomic? arg)
                     (adbv:set-const! var #t)
-                    (adbv:set-const-value! var arg)
-                    (adb:set! (car params) var))))
+                    (adbv:set-const-value! var arg)))))
                 ;; Walk this list, too
                 (set! params (cdr params)))
               (app->args exp)))))
@@ -357,9 +417,97 @@
         (else 
           (error "CPS optimize [1] - Unknown expression" exp))))
 
+    (define (contract-prims exp . refs*)
+      (let ((refs (if (null? refs*)
+                      (make-hash-table)
+                      (car refs*))))
+;(trace:error `(contract-prims ,exp))
+        (cond
+          ((ref? exp) 
+           ;; Replace lambda variables, if necessary
+           (let ((key (hash-table-ref/default refs exp #f)))
+             (if key
+                 (contract-prims key refs)
+                 exp)))
+          ((ast:lambda? exp)
+           (ast:%make-lambda
+            (ast:lambda-id exp)
+            (ast:lambda-args exp)
+            (map (lambda (b) (contract-prims b refs)) (ast:lambda-body exp))))
+          ((const? exp) exp)
+          ((quote? exp) exp)
+          ((define? exp)
+           `(define ,(define->var exp)
+                    ,(contract-prims (define->exp exp) refs)))
+          ((set!? exp)
+           `(set! ,(set!->var exp)
+                  ,(contract-prims (set!->exp exp) refs)))
+          ((if? exp)       `(if ,(contract-prims (if->condition exp) refs)
+                                ,(contract-prims (if->then exp) refs)
+                                ,(contract-prims (if->else exp) refs)))
+          ; Application:
+          ((app? exp)
+;(trace:error `(app? ,exp ,(ast:lambda? (car exp))
+;              ,(length (cdr exp))
+;              ,(length (ast:lambda-formals->list (car exp)))
+;              ,(all-prim-calls? (cdr exp))))
+           (cond
+            ((and (ast:lambda? (car exp))
+                  ;; TODO: check for more than one arg??
+                  (equal? (length (cdr exp))
+                          (length (ast:lambda-formals->list (car exp))))
+                  (all-prim-calls? (cdr exp)))
+             (let ((args (cdr exp)))
+               (for-each
+                (lambda (param)
+                  (hash-table-set! refs param (car args))
+                  (set! args (cdr args)))
+                (ast:lambda-formals->list (car exp))))
+             (contract-prims (car (ast:lambda-body (car exp))) refs))
+            (else
+              (map (lambda (e) (contract-prims e refs)) exp))))
+          (else 
+            (error `(Unexpected expression passed to contract-prims ,exp))))))
+
+    ;; Do all the expressions contain prim calls?
+;; TODO: check for prim calls accepting no continuation
+    (define (all-prim-calls? exps)
+      (cond
+        ((null? exps) #t)
+        ((prim-call? (car exps))
+         (all-prim-calls? (cdr exps)))
+        (else #f)))
+
     (define (analyze-cps exp)
       (analyze exp -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
+;; For now, beta expansion finds so few candidates it is not worth optimizing
+;;      ;; TODO:
+;;      ;; Find candidates for beta expansion
+;;      (for-each
+;;        (lambda (db-entry)
+;;;(trace:error `(check for lambda candidate
+;;          (cond
+;;            ((number? (car db-entry))
+;;             ;; TODO: this is just exploratory code, can be more efficient
+;;             (let ((id (car db-entry))
+;;                   (fnc (cdr db-entry))
+;;                   (app-count 0)
+;;                   (app-arg-count 0)
+;;                   (reassigned-count 0))
+;;              (for-each
+;;                (lambda (sym)
+;;                  (with-var! sym (lambda (var)
+;;                    (set! app-count (+ app-count (adbv:app-fnc-count var)))
+;;                    (set! app-arg-count (+ app-arg-count (adbv:app-arg-count var)))
+;;                    (set! reassigned-count (+ reassigned-count (if (adbv:reassigned? var) 1 0)))
+;;                  ))
+;;                )
+;;                (adbf:assigned-to-var fnc))
+;;(trace:error `(candidate ,id ,app-count ,app-arg-count ,reassigned-count))
+;;             ))))
+;;        (hash-table->alist *adb*))
+;;      ;; END TODO
     )
 
     ;; NOTES:
@@ -375,7 +523,15 @@
     ;; TODO: re-run phases again until program is stable (less than n opts made, more than r rounds performed, etc)
     ;; END notes
 
+    ;(define (optimize-cps ast)
+    ;  (define (loop ast n)
+    ;    (if (= n 0)
+    ;        (do-optimize-cps ast)
+    ;        (loop (do-optimize-cps ast) (- n 1))))
+    ;   (loop ast 2))
+
     (define (optimize-cps ast)
+      (adb:clear!)
       (analyze-cps ast)
       (trace:info "---------------- cps analysis db:")
       (trace:info (adb:get-db))
