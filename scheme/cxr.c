@@ -68,97 +68,33 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
 object __glo_lib_91init_117schemecxr_scheme_cxr = NULL;
 object __glo_caaaaar_scheme_cxr = NULL;
 #include "cyclone/runtime.h"
-static void __lambda_5(void *data, int argc, closure _,object k_734) ;
-static void __lambda_4(void *data, int argc, closure _,object k_737, object lis_731) ;
-static void __lambda_3(void *data, int argc, object self_7312, object r_7311) ;
-static void __lambda_2(void *data, int argc, object self_7313, object r_7310) ;
-static void __lambda_1(void *data, int argc, object self_7314, object r_739) ;
-static void __lambda_0(void *data, int argc, object self_7315, object r_738) ;
+static void __lambda_1(void *data, int argc, closure _,object k_734) ;
+static void __lambda_0(void *data, int argc, closure _,object k_737, object lis_731) ;
 
-static void __lambda_5(void *data, int argc, closure _,object k_734) {
+static void __lambda_1(void *data, int argc, closure _,object k_734) {
   Cyc_st_add(data, "scheme/cxr.sld:lib-init:schemecxr");
 return_closcall1(data,  k_734,  obj_int2obj(0));; 
 }
 
-static void __lambda_4(void *data, int argc, closure _,object k_737, object lis_731) {
+static void __lambda_0(void *data, int argc, closure _,object k_737, object lis_731) {
   Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-
-closureN_type c_7318;
-c_7318.hdr.mark = gc_color_red;
- c_7318.hdr.grayed = 0;
-c_7318.tag = closureN_tag;
- c_7318.fn = (function_type)__lambda_3;
-c_7318.num_args = 1;
-c_7318.num_elements = 1;
-c_7318.elements = (object *)alloca(sizeof(object) * 1);
-c_7318.elements[0] = k_737;
-
-return_closcall1(data,(closure)&c_7318,  car(lis_731));; 
-}
-
-static void __lambda_3(void *data, int argc, object self_7312, object r_7311) {
-  
-closureN_type c_7320;
-c_7320.hdr.mark = gc_color_red;
- c_7320.hdr.grayed = 0;
-c_7320.tag = closureN_tag;
- c_7320.fn = (function_type)__lambda_2;
-c_7320.num_args = 1;
-c_7320.num_elements = 1;
-c_7320.elements = (object *)alloca(sizeof(object) * 1);
-c_7320.elements[0] = ((closureN)self_7312)->elements[0];
-
-return_closcall1(data,(closure)&c_7320,  car(r_7311));; 
-}
-
-static void __lambda_2(void *data, int argc, object self_7313, object r_7310) {
-  
-closureN_type c_7322;
-c_7322.hdr.mark = gc_color_red;
- c_7322.hdr.grayed = 0;
-c_7322.tag = closureN_tag;
- c_7322.fn = (function_type)__lambda_1;
-c_7322.num_args = 1;
-c_7322.num_elements = 1;
-c_7322.elements = (object *)alloca(sizeof(object) * 1);
-c_7322.elements[0] = ((closureN)self_7313)->elements[0];
-
-return_closcall1(data,(closure)&c_7322,  car(r_7310));; 
-}
-
-static void __lambda_1(void *data, int argc, object self_7314, object r_739) {
-  
-closureN_type c_7324;
-c_7324.hdr.mark = gc_color_red;
- c_7324.hdr.grayed = 0;
-c_7324.tag = closureN_tag;
- c_7324.fn = (function_type)__lambda_0;
-c_7324.num_args = 1;
-c_7324.num_elements = 1;
-c_7324.elements = (object *)alloca(sizeof(object) * 1);
-c_7324.elements[0] = ((closureN)self_7314)->elements[0];
-
-return_closcall1(data,(closure)&c_7324,  car(r_739));; 
-}
-
-static void __lambda_0(void *data, int argc, object self_7315, object r_738) {
-  return_closcall1(data,  ((closureN)self_7315)->elements[0],  car(r_738));; 
+return_closcall1(data,  k_737,  car(car(car(car(car(lis_731))))));; 
 }
 
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemecxr_scheme_cxr);
   add_global((object *) &__glo_caaaaar_scheme_cxr);
-  mclosure0(c_7337, (function_type)__lambda_5);c_7337.num_args = 0; 
-  __glo_lib_91init_117schemecxr_scheme_cxr = &c_7337; 
-  mclosure0(c_7316, (function_type)__lambda_4);c_7316.num_args = 1; 
-  __glo_caaaaar_scheme_cxr = &c_7316; 
+  mclosure0(c_7324, (function_type)__lambda_1);c_7324.num_args = 0; 
+  __glo_lib_91init_117schemecxr_scheme_cxr = &c_7324; 
+  mclosure0(c_7312, (function_type)__lambda_0);c_7312.num_args = 1; 
+  __glo_caaaaar_scheme_cxr = &c_7312; 
 
-  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_pair(pair_7340, find_or_add_symbol("lib-init:schemecxr"), &cvar_7339);
-  make_cvar(cvar_7341, (object *)&__glo_caaaaar_scheme_cxr);make_pair(pair_7342, find_or_add_symbol("caaaaar"), &cvar_7341);
-make_pair(c_7343, &pair_7340,Cyc_global_variables);
-make_pair(c_7344, &pair_7342, &c_7343);
-Cyc_global_variables = &c_7344;
+  make_cvar(cvar_7326, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_pair(pair_7327, find_or_add_symbol("lib-init:schemecxr"), &cvar_7326);
+  make_cvar(cvar_7328, (object *)&__glo_caaaaar_scheme_cxr);make_pair(pair_7329, find_or_add_symbol("caaaaar"), &cvar_7328);
+make_pair(c_7330, &pair_7327,Cyc_global_variables);
+make_pair(c_7331, &pair_7329, &c_7330);
+Cyc_global_variables = &c_7331;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
 }

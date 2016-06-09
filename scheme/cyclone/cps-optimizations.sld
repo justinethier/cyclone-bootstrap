@@ -150,6 +150,11 @@
         (fnc var)
         (adb:set! sym var)))
 
+    ;; Non-mutating version, returns results of fnc
+    (define (with-var sym fnc)
+      (let ((var (adb:get/default sym (adb:make-var))))
+        (fnc var)))
+
     (define (with-fnc! id callback)
       (let ((fnc (adb:get/default id (adb:make-fnc))))
         (callback fnc)
@@ -417,6 +422,10 @@
         (else 
           (error "CPS optimize [1] - Unknown expression" exp))))
 
+    ;; Inline primtives
+    ;; Uses analysis DB, so must be executed after analysis phase
+    ;;
+    ;; TBD: better to enhance CPS conversion to do this??
     (define (contract-prims exp . refs*)
       (let ((refs (if (null? refs*)
                       (make-hash-table)
@@ -438,7 +447,7 @@
           ((quote? exp) exp)
           ((define? exp)
            `(define ,(define->var exp)
-                    ,(contract-prims (define->exp exp) refs)))
+                    ,@(contract-prims (define->exp exp) refs))) ;; TODO: map????
           ((set!? exp)
            `(set! ,(set!->var exp)
                   ,(contract-prims (set!->exp exp) refs)))
@@ -456,7 +465,29 @@
                   ;; TODO: check for more than one arg??
                   (equal? (length (cdr exp))
                           (length (ast:lambda-formals->list (car exp))))
-                  (all-prim-calls? (cdr exp)))
+                  ;; Double-check parameter can be optimized-out
+                  (every
+                    (lambda (param)
+                      (with-var param (lambda (var)
+;(trace:error `(DEBUG ,param ,(adbv:ref-by var)))
+                        (and 
+                          ;; If param is never referenced, then prim is being
+                          ;; called for side effects, possibly on a global
+                          (not (null? (adbv:ref-by var)))
+                          ;; Need to keep variable because it is mutated
+                          (not (adbv:reassigned? var))
+                    ))))
+                    (ast:lambda-formals->list (car exp)))
+                  (every
+                    (lambda (arg)
+                      (and (prim-call? arg)
+                           (not (prim:cont? (car arg)))))
+                    (cdr exp))
+                  (inline-prim-call? 
+                    (ast:lambda-body (car exp))
+                    (prim-calls->arg-variables (cdr exp))
+                    (ast:lambda-formals->list (car exp)))
+             )
              (let ((args (cdr exp)))
                (for-each
                 (lambda (param)
@@ -477,6 +508,87 @@
         ((prim-call? (car exps))
          (all-prim-calls? (cdr exps)))
         (else #f)))
+
+    ;; Find all variables passed to all prim calls
+    (define (prim-calls->arg-variables exps)
+      (apply
+        append
+        (map
+          (lambda (exp)
+            (cond
+              ((pair? exp)
+               (filter symbol? (cdr exp)))
+              (else '())))
+          exps)))
+
+    ;; Find variables passed to a primitive
+    (define (prim-call->arg-variables exp)
+      (filter symbol? (cdr exp)))
+
+    ;; Helper for the next function
+    (define (inline-prim-call? exp ivars args)
+      (call/cc
+        (lambda (return)
+          (inline-ok? exp ivars args (list #f) return)
+          (return #t))))
+
+    ;; Make sure inlining a primitive call will not cause out-of-order execution
+    ;; exp - expression to search
+    ;; ivars - vars to be inlined
+    ;; args - list of variable args (should be small)
+    ;; arg-used - has a variable been used? if this is true and we find an ivar,
+    ;;            it cannot be optimized-out and we have to bail.
+    ;;            This is a cons "box" so it can be mutated.
+    ;; return - call into this continuation to return early
+    (define (inline-ok? exp ivars args arg-used return)
+      ;(trace:error `(inline-ok? ,exp ,ivars ,args ,arg-used))
+      (cond
+        ((ref? exp)
+         (cond
+          ((member exp args)
+           (set-car! arg-used #t))
+          ((member exp ivars)
+           (return #f))
+          (else 
+           #t)))
+        ((ast:lambda? exp)
+         (for-each
+          (lambda (e)
+            (inline-ok? e ivars args arg-used return))
+          (ast:lambda-formals->list exp))
+         (for-each
+          (lambda (e)
+            (inline-ok? e ivars args arg-used return))
+          (ast:lambda-body exp)))
+        ((const? exp) #t)
+        ((quote? exp) #t)
+        ((define? exp)
+         (inline-ok? (define->var exp) ivars args arg-used return)
+         (inline-ok? (define->exp exp) ivars args arg-used return))
+        ((set!? exp)
+         (inline-ok? (set!->var exp) ivars args arg-used return)
+         (inline-ok? (set!->exp exp) ivars args arg-used return))
+        ((if? exp)
+          (inline-ok? (if->condition exp) ivars args arg-used return)
+          (inline-ok? (if->then exp) ivars args arg-used return)
+          (inline-ok? (if->else exp) ivars args arg-used return))
+        ((app? exp)
+         (cond
+          ((and (prim? (car exp))
+                (not (prim:mutates? (car exp))))
+           ;; If primitive does not mutate its args, ignore if ivar is used
+           (for-each
+            (lambda (e)
+              (if (not (ref? e))
+                  (inline-ok? e ivars args arg-used return)))
+            (reverse (cdr exp))))
+          (else
+           (for-each
+            (lambda (e)
+              (inline-ok? e ivars args arg-used return))
+            (reverse exp))))) ;; Ensure args are examined before function
+        (else
+          (error `(Unexpected expression passed to inline prim check ,exp)))))
 
     (define (analyze-cps exp)
       (analyze exp -1) ;; Top-level is lambda ID -1
@@ -533,64 +645,11 @@
     (define (optimize-cps ast)
       (adb:clear!)
       (analyze-cps ast)
-      (trace:info "---------------- cps analysis db:")
-      (trace:info (adb:get-db))
+      ;(trace:info "---------------- cps analysis db:")
+      ;(trace:info (adb:get-db))
       ;ast ;; DEBUGGING!!!
-      (opt:contract ast)
+      (contract-prims 
+        (opt:contract ast))
     )
-
-;; Older code, delete this soon
-;;;; TODO: don't think we can assume lambda body is single expr, if we want
-;;;;       to do optimizations such as inlining
-;;(define (cps-optimize-01 exp)
-;;  exp) ;; Temporarily disabling while this is reworked.
-;;;  (define (opt-lambda exp)
-;;;    (let ((body (car (lambda->exp exp)))) ;; Single expr after CPS
-;;;      ;(trace:error `(DEBUG 
-;;;      ;  ,exp
-;;;      ;  ,body
-;;;      ;  ,(if (and (pair? body) (app? body) (lambda? (car body)))
-;;;      ;    (list (app->args body)
-;;;      ;          (lambda->formals exp))
-;;;      ;    #f)))
-;;;      (cond
-;;;        ;; Does the function just call its continuation?
-;;;        ((and (pair? body) 
-;;;              (app? body)
-;;;              (lambda? (car body))
-;;;              ;; TODO: need to check body length if we allow >1 expr in a body
-;;;              ;; TODO: not sure this is good enough for all cases
-;;;              (equal? (app->args body)
-;;;                      ;(lambda->formals (car body))
-;;;                      (lambda->formals exp)
-;;;                      )
-;;;              (> (length (lambda->formals exp)) 0)
-;;;              ;; TODO: don't do it if args are used in the body
-;;;              ;; this won't work if we have any num other than 1 arg
-;;;              (not (member 
-;;;                      (car (lambda->formals exp))
-;;;                      (free-vars (car body))))
-;;;              )
-;;;          (cps-optimize-01 (car body)))
-;;;        (else
-;;;          `(lambda ,(lambda->formals exp)
-;;;             ,(cps-optimize-01 (car (lambda->exp exp)))) ;; Assume single expr in lambda body, since after CPS phase
-;;;  ))))
-;;;  (cond
-;;;    ; Core forms:
-;;;    ((const? exp)    exp)
-;;;    ((ref? exp)      exp)
-;;;    ((prim? exp)     exp)
-;;;    ((quote? exp)    exp)
-;;;    ((lambda? exp)   (opt-lambda exp)) 
-;;;    ((set!? exp)     `(set!
-;;;                        ,(set!->var exp) 
-;;;                        ,(cps-optimize-01 (set!->exp exp))))
-;;;    ((if? exp)       `(if ,(cps-optimize-01 (if->condition exp))
-;;;                          ,(cps-optimize-01 (if->then exp))
-;;;                          ,(cps-optimize-01 (if->else exp))))
-;;;    ; Application:
-;;;    ((app? exp)      (map (lambda (e) (cps-optimize-01 e)) exp))
-;;;    (else            (error "CPS optimize unknown expression type: " exp))))
 
 ))
