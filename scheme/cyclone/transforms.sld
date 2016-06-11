@@ -1234,7 +1234,7 @@
     (cond
      ((> (length unknown-vars) 0)
       (let ((unbound-to-return (list)))
-        ;; Legacy? Not sure this is needed anymore
+        ;; Legacy? Should not be any reason to return early at this point
         ;(if (member 'eval unknown-vars) 
         ;    (set! unbound-to-return (cons 'eval unbound-to-return)))
         ;(if (or (member 'read unknown-vars) 
