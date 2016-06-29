@@ -213,6 +213,35 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
 }
 
 /**
+ * @brief   Free a page of the heap
+ * @usage
+ * @param   page        Page to free
+ * @param   prev_page   Previous page in the heap
+ * @return  Previous page if successful, NULL otherwise
+ */
+gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
+{
+  // At least for now, do not free first page
+  if (prev_page == NULL || page == NULL) {
+    return NULL;
+  }
+//#if GC_DEBUG_PRINTFS
+  fprintf(stderr, "DEBUG freeing heap page at addr: %p\n", page);
+//#endif
+
+  prev_page->next = page->next;
+  free(page);
+  return prev_page;
+}
+
+int gc_is_heap_empty(gc_heap *h) 
+{
+  // TODO: this function does not work yet!!
+  if (h == NULL || h->free_list == NULL) return 1;
+  return 0;
+}
+
+/**
  * Print heap usage information.
  * Before calling this function the current thread must have the heap lock
  */
@@ -220,6 +249,7 @@ void gc_print_stats(gc_heap * h)
 {
   gc_free_list *f;
   unsigned int free, free_chunks, free_min, free_max;
+  int heap_is_empty;
   for (; h; h = h->next) {
     free = 0;
     free_chunks = 0;
@@ -233,15 +263,13 @@ void gc_print_stats(gc_heap * h)
       if (f->size > free_max)
         free_max = f->size;
     }
-    if (free == 0){
-      // Page is completely unused
-      free = h->size;
-      free_chunks = 1;
-      free_min = free_max = h->size;
+    if (free == 0){ // No free chunks
+      free_min = 0;
     }
+    heap_is_empty = gc_is_heap_empty(h);
     fprintf(stderr,
-            "Heap page size=%u, used=%u, free=%u, free chunks=%u, min=%u, max=%u\n",
-            h->size, h->size - free, free, free_chunks, free_min, free_max);
+            "Heap page size=%u, is empty=%d, used=%u, free=%u, free chunks=%u, min=%u, max=%u\n",
+            h->size, heap_is_empty, h->size - free, free, free_chunks, free_min, free_max);
   }
 }
 
@@ -615,7 +643,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   size_t freed, max_freed = 0, heap_freed = 0, sum_freed = 0, size;
   object p, end;
   gc_free_list *q, *r, *s;
-  gc_heap *orig_heap_ptr = h;
+  gc_heap *orig_heap_ptr = h, *prev_h = NULL;
 
   //
   // Lock the heap to prevent issues with allocations during sweep
@@ -626,7 +654,13 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   // how much time is even spent sweeping
   //
   pthread_mutex_lock(&heap_lock);
-  for (; h; h = h->next) {      // All heaps
+
+// DEBUGGING:
+//fprintf(stderr, "\nBefore sweep -------------------------\n");
+//fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
+//gc_print_stats(orig_heap_ptr);
+
+  for (; h; prev_h = h, h = h->next) {      // All heaps
 #if GC_DEBUG_TRACE
     fprintf(stderr, "sweep heap %p, size = %zu\n", h, (size_t) h->size);
 #endif
@@ -725,11 +759,18 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     }
     //h->free_size += heap_freed;
     cached_heap_free_sizes[heap_type] += heap_freed;
+//    if (gc_is_heap_empty(h)){
+//        unsigned int h_size = h->size;
+//        gc_heap_free(h, prev_h);
+//        cached_heap_free_sizes[heap_type] -= h_size;
+//        cached_heap_total_sizes[heap_type] -= h_size;
+//    }
     sum_freed += heap_freed;
     heap_freed = 0;
   }
 
 // DEBUGGING:
+//fprintf(stderr, "\nAfter sweep -------------------------\n");
 //fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
 //gc_print_stats(orig_heap_ptr);
 
