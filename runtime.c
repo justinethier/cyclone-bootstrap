@@ -2895,8 +2895,14 @@ void __121_123(void *data, object cont, object args)
 
 void _apply(void *data, object cont, object args)
 {
-  Cyc_check_num_args(data, "apply", 2, args);
-  apply(data, cont, car(args), cadr(args));
+//  Cyc_check_num_args(data, "apply", 2, args);
+//  apply(data, cont, car(args), cadr(args));
+  object argc = Cyc_length(data, args);
+
+  //fprintf(stdout, "_apply received args: ");
+  //Cyc_display(args, stdout);
+  //fprintf(stdout, "\n");
+  dispatch(data, obj_obj2int(argc), (function_type)dispatch_apply_va, cont, cont, args);
 }
 
 void _assoc(void *data, object cont, object args)
@@ -3222,6 +3228,42 @@ void _call_95cc(void *data, object cont, object args)
     Cyc_invalid_type_error(data, closure1_tag, car(args));
   }
   return_closcall2(data, __glo_call_95cc_scheme_base, cont, car(args));
+}
+
+void apply_va(void *data, object cont, int argc, object func, ...)
+{
+  object tmp = NULL;
+  int i;
+  va_list ap;
+  va_start(ap, func);
+  for (i = 1; i < argc; i++) {
+    tmp = va_arg(ap, object);
+  }
+  va_end(ap);
+//  fprintf(stdout, "DEBUG applying argc %d, func ", argc);
+//  Cyc_display(func, stdout);
+//  fprintf(stdout, " to values ");
+//  Cyc_display(tmp, stdout);
+//  fprintf(stdout, "\n");
+  apply(data, cont, func, tmp);
+}
+
+void dispatch_apply_va(void *data, int argc, object clo, object cont, object func, ...)
+{
+  object tmp = NULL;
+  int i;
+  va_list ap;
+  va_start(ap, func);
+  for (i = 1; i < argc - 1; i++) {
+    tmp = va_arg(ap, object);
+  }
+  va_end(ap);
+//  fprintf(stdout, "DEBUG applying argc %d, func ", argc);
+//  Cyc_display(func, stdout);
+//  fprintf(stdout, " to values ");
+//  Cyc_display(tmp, stdout);
+//  fprintf(stdout, "\n");
+  apply(data, cont, func, tmp);
 }
 
 /*
