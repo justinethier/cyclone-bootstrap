@@ -3230,45 +3230,74 @@ void _call_95cc(void *data, object cont, object args)
   return_closcall2(data, __glo_call_95cc_scheme_base, cont, car(args));
 }
 
-void apply_va(void *data, object cont, int argc, object func, ...)
-{
-  object tmp = NULL;
-  int i;
-  va_list ap;
-  va_start(ap, func);
-  for (i = 1; i < argc; i++) {
-    tmp = va_arg(ap, object);
-  }
-  va_end(ap);
-//  fprintf(stdout, "DEBUG applying argc %d, func ", argc);
-//  Cyc_display(func, stdout);
-//  fprintf(stdout, " to values ");
-//  Cyc_display(tmp, stdout);
-//  fprintf(stdout, "\n");
-  apply(data, cont, func, tmp);
+// Prepend value to the given list
+#define stack_prepend(lis, value) { \
+  pair_type *tmp2 = alloca(sizeof(pair_type)); \
+  set_pair(tmp2, value, lis); \
+  lis = tmp2; \
 }
+
+// Prepend each element of src to dest list
+#define stack_list_prepend(src, dest) { \
+  while (src) { \
+    pair_type *tmp2 = alloca(sizeof(pair_type)); \
+    set_pair(tmp2, car(src), dest); \
+    dest = tmp2; \
+    src = cdr(src); \
+  } \
+}
+
+// Front-end to apply
+//
+// Core of va processing is done here, because we need different
+// functions for apply_va and dispatch_apply_va, and those functions
+// need to start and end va. BUT, we need to allocate new objects
+// so this stuff can't be returned, so a workaround is to put it in
+// this macro.
+//
+// Fast path is just to take list, if we only have func and 1 arg.
+// Otherwise append all args together into a single list, per r7rs.
+#define do_apply_va \
+  va_start(ap, func); \
+  if (argc == 2) { \
+    lis = va_arg(ap, object); \
+    Cyc_check_pair_or_null(data, lis); \
+  } else { \
+    for (i = 1; i < argc; i++) { \
+      tmp = va_arg(ap, object); \
+      if (tmp == NULL){ \
+        continue; \
+      } else if (is_object_type(tmp) && type_of(tmp) == pair_tag) { \
+        l = tmp; \
+        stack_list_prepend(l, lis); \
+      } else { \
+        stack_prepend(lis, tmp); \
+      } \
+    } \
+    l = lis; \
+    lis = NULL; \
+    stack_list_prepend(l, lis); \
+  } \
+  va_end(ap);
 
 void dispatch_apply_va(void *data, int argc, object clo, object cont, object func, ...)
 {
-  object tmp = NULL;
+  list lis = NULL, l;
+  object tmp;
   int i;
   va_list ap;
   argc = argc - 1; // Required for "dispatch" function
-  // TODO: pack all this up in a macro, and use it for apply_va also
-  // TODO: validate last arg is a list
-  // TODO: if only one non-func arg, just call apply with it (fast path)
-  // TODO: else, append all args to a new list (local allocs via alloca),
-  //             and apply that list
-  va_start(ap, func);
-  for (i = 1; i < argc; i++) {
-    tmp = va_arg(ap, object);
-  }
-  va_end(ap);
-//  fprintf(stdout, "DEBUG applying argc %d, func ", argc);
-//  Cyc_display(func, stdout);
-//  fprintf(stdout, " to values ");
-//  Cyc_display(tmp, stdout);
-//  fprintf(stdout, "\n");
+  do_apply_va
+  apply(data, cont, func, lis);
+}
+
+void apply_va(void *data, object cont, int argc, object func, ...)
+{
+  list lis = NULL, l;
+  object tmp;
+  int i;
+  va_list ap;
+  do_apply_va
   apply(data, cont, func, tmp);
 }
 
