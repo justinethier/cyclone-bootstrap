@@ -210,6 +210,7 @@ extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_bytevector_91copy_67_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;

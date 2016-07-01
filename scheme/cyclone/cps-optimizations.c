@@ -376,6 +376,7 @@ extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_bytevector_91copy_67_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
@@ -4369,7 +4370,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_733018, r_73449, ((closureN)s
 
 static void __lambda_356(void *data, int argc, object self_731148, object r_73448) {
   
-object c_733023 = apply(data,  ((closureN)self_731148)->elements[0],__glo_append_scheme_base, r_73448);
+object c_733023 = apply_va(data,  ((closureN)self_731148)->elements[0],2,__glo_append_scheme_base, r_73448);
 return_closcall1(data,  ((closureN)self_731148)->elements[0],  c_733023);; 
 }
 

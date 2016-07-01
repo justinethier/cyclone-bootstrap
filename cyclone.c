@@ -323,6 +323,7 @@ extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_bytevector_91copy_67_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
@@ -1756,7 +1757,7 @@ c_731726.elements[5] = ((closureN)self_73467)->elements[5];
 c_731726.elements[6] = ((closureN)self_73467)->elements[6];
 
 
-object c_731798 = apply(data,(closure)&c_731726,primitive_string_91append, r_73168);
+object c_731798 = apply_va(data,(closure)&c_731726,2,primitive_string_91append, r_73168);
 return_closcall1(data,(closure)&c_731726,  c_731798);; 
 }
 

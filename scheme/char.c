@@ -256,6 +256,7 @@ extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_bytevector_91copy_67_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
@@ -534,7 +535,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73324, __glo_string_91foldcas
 
 static void __lambda_28(void *data, int argc, object self_73156, object r_7383) {
   
-object c_73329 = apply(data,  ((closureN)self_73156)->elements[0],__glo_string_125_123_127_scheme_base, r_7383);
+object c_73329 = apply_va(data,  ((closureN)self_73156)->elements[0],2,__glo_string_125_123_127_scheme_base, r_7383);
 return_closcall1(data,  ((closureN)self_73156)->elements[0],  c_73329);; 
 }
 
@@ -571,7 +572,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73314, __glo_string_91foldcas
 
 static void __lambda_25(void *data, int argc, object self_73158, object r_7388) {
   
-object c_73319 = apply(data,  ((closureN)self_73158)->elements[0],__glo_string_125_127_scheme_base, r_7388);
+object c_73319 = apply_va(data,  ((closureN)self_73158)->elements[0],2,__glo_string_125_127_scheme_base, r_7388);
 return_closcall1(data,  ((closureN)self_73158)->elements[0],  c_73319);; 
 }
 
@@ -608,7 +609,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73304, __glo_string_91foldcas
 
 static void __lambda_22(void *data, int argc, object self_73160, object r_7393) {
   
-object c_73309 = apply(data,  ((closureN)self_73160)->elements[0],__glo_string_121_123_127_scheme_base, r_7393);
+object c_73309 = apply_va(data,  ((closureN)self_73160)->elements[0],2,__glo_string_121_123_127_scheme_base, r_7393);
 return_closcall1(data,  ((closureN)self_73160)->elements[0],  c_73309);; 
 }
 
@@ -645,7 +646,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73294, __glo_string_91foldcas
 
 static void __lambda_19(void *data, int argc, object self_73162, object r_7398) {
   
-object c_73299 = apply(data,  ((closureN)self_73162)->elements[0],__glo_string_121_127_scheme_base, r_7398);
+object c_73299 = apply_va(data,  ((closureN)self_73162)->elements[0],2,__glo_string_121_127_scheme_base, r_7398);
 return_closcall1(data,  ((closureN)self_73162)->elements[0],  c_73299);; 
 }
 
@@ -682,7 +683,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73284, __glo_string_91foldcas
 
 static void __lambda_16(void *data, int argc, object self_73164, object r_73103) {
   
-object c_73289 = apply(data,  ((closureN)self_73164)->elements[0],__glo_string_123_127_scheme_base, r_73103);
+object c_73289 = apply_va(data,  ((closureN)self_73164)->elements[0],2,__glo_string_123_127_scheme_base, r_73103);
 return_closcall1(data,  ((closureN)self_73164)->elements[0],  c_73289);; 
 }
 
@@ -709,7 +710,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73268, __glo_char_91foldcase_
 
 static void __lambda_14(void *data, int argc, object self_73165, object r_73108) {
   
-object c_73273 = apply(data,  ((closureN)self_73165)->elements[0],__glo_char_125_127_scheme_base, r_73108);
+object c_73273 = apply_va(data,  ((closureN)self_73165)->elements[0],2,__glo_char_125_127_scheme_base, r_73108);
 return_closcall1(data,  ((closureN)self_73165)->elements[0],  c_73273);; 
 }
 
@@ -736,7 +737,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73254, __glo_char_91foldcase_
 
 static void __lambda_12(void *data, int argc, object self_73166, object r_73114) {
   
-object c_73259 = apply(data,  ((closureN)self_73166)->elements[0],__glo_char_125_123_127_scheme_base, r_73114);
+object c_73259 = apply_va(data,  ((closureN)self_73166)->elements[0],2,__glo_char_125_123_127_scheme_base, r_73114);
 return_closcall1(data,  ((closureN)self_73166)->elements[0],  c_73259);; 
 }
 
@@ -763,7 +764,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73240, __glo_char_91foldcase_
 
 static void __lambda_10(void *data, int argc, object self_73167, object r_73120) {
   
-object c_73245 = apply(data,  ((closureN)self_73167)->elements[0],__glo_char_121_127_scheme_base, r_73120);
+object c_73245 = apply_va(data,  ((closureN)self_73167)->elements[0],2,__glo_char_121_127_scheme_base, r_73120);
 return_closcall1(data,  ((closureN)self_73167)->elements[0],  c_73245);; 
 }
 
@@ -790,7 +791,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73226, __glo_char_91foldcase_
 
 static void __lambda_8(void *data, int argc, object self_73168, object r_73126) {
   
-object c_73231 = apply(data,  ((closureN)self_73168)->elements[0],__glo_char_121_123_127_scheme_base, r_73126);
+object c_73231 = apply_va(data,  ((closureN)self_73168)->elements[0],2,__glo_char_121_123_127_scheme_base, r_73126);
 return_closcall1(data,  ((closureN)self_73168)->elements[0],  c_73231);; 
 }
 
@@ -817,7 +818,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_73212, __glo_char_91foldcase_
 
 static void __lambda_6(void *data, int argc, object self_73169, object r_73132) {
   
-object c_73217 = apply(data,  ((closureN)self_73169)->elements[0],__glo_char_123_127_scheme_base, r_73132);
+object c_73217 = apply_va(data,  ((closureN)self_73169)->elements[0],2,__glo_char_123_127_scheme_base, r_73132);
 return_closcall1(data,  ((closureN)self_73169)->elements[0],  c_73217);; 
 }
 

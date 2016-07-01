@@ -282,6 +282,7 @@ extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
+extern object __glo_bytevector_91copy_67_scheme_base;
 extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
@@ -1514,7 +1515,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73214)->elemen
 
 static void __lambda_14(void *data, int argc, object self_73215, object r_73112) {
   
-object c_73294 = apply(data,  ((closureN)self_73215)->elements[1],r_73112, ((closureN)self_73215)->elements[0]);
+object c_73294 = apply_va(data,  ((closureN)self_73215)->elements[1],2,r_73112, ((closureN)self_73215)->elements[0]);
 return_closcall1(data,  ((closureN)self_73215)->elements[1],  c_73294);; 
 }
 
@@ -1542,7 +1543,7 @@ static void __lambda_12(void *data, int argc, object self_73217, object r_73110)
 
 static void __lambda_11(void *data, int argc, object self_73218, object r_73108) {
   
-object c_73273 = apply(data,  ((closureN)self_73218)->elements[1],r_73108, ((closureN)self_73218)->elements[0]);
+object c_73273 = apply_va(data,  ((closureN)self_73218)->elements[1],2,r_73108, ((closureN)self_73218)->elements[0]);
 return_closcall1(data,  ((closureN)self_73218)->elements[1],  c_73273);; 
 }
 
