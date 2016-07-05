@@ -8,7 +8,7 @@
  **/
 
 #define closcall1(td, clo,a1) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
 } else { \
    ((clo)->fn)(td, 1, clo,a1);\
@@ -37,7 +37,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall2(td, clo,a1,a2) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
 } else { \
    ((clo)->fn)(td, 2, clo,a1,a2);\
@@ -66,7 +66,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall3(td, clo,a1,a2,a3) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
 } else { \
    ((clo)->fn)(td, 3, clo,a1,a2,a3);\
@@ -95,7 +95,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall4(td, clo,a1,a2,a3,a4) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 3, (closure)(a1), clo,a2,a3,a4); \
 } else { \
    ((clo)->fn)(td, 4, clo,a1,a2,a3,a4);\
@@ -124,7 +124,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall5(td, clo,a1,a2,a3,a4,a5) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 4, (closure)(a1), clo,a2,a3,a4,a5); \
 } else { \
    ((clo)->fn)(td, 5, clo,a1,a2,a3,a4,a5);\
@@ -153,7 +153,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall6(td, clo,a1,a2,a3,a4,a5,a6) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 5, (closure)(a1), clo,a2,a3,a4,a5,a6); \
 } else { \
    ((clo)->fn)(td, 6, clo,a1,a2,a3,a4,a5,a6);\
@@ -182,7 +182,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall12(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 11, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12); \
 } else { \
    ((clo)->fn)(td, 12, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12);\
@@ -211,7 +211,7 @@ if (type_of(clo) == pair_tag || prim(clo)) { \
  }}
 
 #define closcall37(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37) \
-if (type_of(clo) == pair_tag || prim(clo)) { \
+if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 36, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37); \
 } else { \
    ((clo)->fn)(td, 37, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37);\
