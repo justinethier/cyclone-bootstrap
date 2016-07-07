@@ -28,6 +28,9 @@
 // This is used as the first generation of the GC.
 #define STACK_SIZE 500000
 
+// Do not allocate objects larger than this on the stack.
+#define MAX_STACK_OBJ (STACK_SIZE * 2)
+
 // Parameters for size of a "page" on the heap (the second generation GC), in bytes.
 #define GROW_HEAP_BY_SIZE (2 * 1024 * 1024)     // Grow first page by adding this amount to it
 #define INITIAL_HEAP_SIZE (3 * 1024 * 1024)     // Size of the first page
@@ -49,6 +52,9 @@
 
 // Show diagnostic information for the GC when program terminates
 #define DEBUG_SHOW_DIAG 0
+
+// Show diagnostic information before/after sweeping
+#define GC_DEBUG_SHOW_SWEEP_DIAG 0
 
 // GC debugging flags
 #define GC_DEBUG_TRACE 0
@@ -142,8 +148,16 @@ struct gc_thread_data_t {
 
 /* GC data structures */
 
-typedef enum { HEAP_SM = 0, HEAP_MED, HEAP_REST
-} cached_heap_type;
+/**
+ * Group heap pages by type, to attempt to limit fragmentation
+ * and improve performance.
+ */
+typedef enum { 
+    HEAP_SM = 0  // 32 byte objects (min gc_heap_align)
+  , HEAP_MED     // 64 byte objects (twice the min)
+  , HEAP_REST    // Everything else
+  , HEAP_HUGE    // Huge objects, 1 per page
+} gc_heap_type;
 
 typedef struct gc_free_list_t gc_free_list;
 struct gc_free_list_t {
@@ -153,6 +167,7 @@ struct gc_free_list_t {
 
 typedef struct gc_heap_t gc_heap;
 struct gc_heap_t {
+  gc_heap_type type;
   unsigned int size;
   unsigned int chunk_size;      // 0 for any size, other and heap will only alloc chunks of that size
   unsigned int max_size;
@@ -166,6 +181,7 @@ typedef struct gc_heap_root_t gc_heap_root;
 struct gc_heap_root_t {
   gc_heap *small_obj_heap;
   gc_heap *medium_obj_heap;
+  gc_heap *huge_obj_heap;
   gc_heap *heap;
 };
 
