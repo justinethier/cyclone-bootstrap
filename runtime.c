@@ -876,8 +876,20 @@ object memqp(void *data, object x, list l)
   return boolean_f;
 }
 
+/**
+ * Check two objects for deep equality
+ */
 object equalp(object x, object y)
 {
+  int second_cycle = 0;
+  object slow_lis = x, fast_lis = NULL;
+  object pcar_x = &second_cycle, pcar_y = &second_cycle; // never a car value
+
+  if (Cyc_is_pair(x) == boolean_t &&
+      Cyc_is_pair(cdr(x)) == boolean_t){
+    fast_lis = cdr(x);
+  }
+
   for (;; x = cdr(x), y = cdr(y)) {
     if (equal(x, y))
       return boolean_t;
@@ -885,8 +897,43 @@ object equalp(object x, object y)
         (x == NULL) || (y == NULL) ||
         type_of(x) != pair_tag || type_of(y) != pair_tag)
       return boolean_f;
-    if (boolean_f == equalp(car(x), car(y)))
-      return boolean_f;
+
+    // Both objects are lists at this point, compare cars
+    if (pcar_x == car(x) &&
+        pcar_y == car(y)) {
+      // do nothing, already equal
+    } else {
+      if (boolean_f == equalp(car(x), car(y)))
+        return boolean_f;
+      pcar_x = car(x);
+      pcar_y = car(y);
+    }
+
+    // If there is no cycle, keep checking equality
+    if (fast_lis == NULL ||
+        Cyc_is_pair(fast_lis) == boolean_f ||
+        cdr(fast_lis) == NULL ||
+        Cyc_is_pair(cdr(fast_lis)) == boolean_f ||
+        cddr(fast_lis) == NULL){
+      continue;
+    }
+
+    // If there is a cycle, handle it
+    if (slow_lis == fast_lis) {
+      // if this is y, both lists have cycles and are equal, return #t
+      if (second_cycle)
+        return boolean_t;
+      // if this is x, keep going and check for a cycle in y
+      second_cycle = 1;
+      slow_lis = y;
+      fast_lis = NULL;
+      if (Cyc_is_pair(y) == boolean_t) {
+        fast_lis = cdr(y);
+      }
+      continue;
+    }
+    slow_lis = cdr(slow_lis);
+    fast_lis = cddr(fast_lis);
   }
 }
 
