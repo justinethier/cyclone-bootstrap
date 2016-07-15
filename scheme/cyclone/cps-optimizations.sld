@@ -473,8 +473,7 @@
                   (every
                     (lambda (arg)
                       (and (prim-call? arg)
-                           (not (prim:cont? (car arg)))
-                           ))
+                           (not (prim:cont? (car arg)))))
                     (cdr exp))
                   ;; Disallow primitives that allocate a new obj,
                   ;; because if the object is mutated all copies
