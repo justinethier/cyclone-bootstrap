@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.1.2 (alpha)
+ ** Version 0.1.3 (alpha)
  **
  **/
 
@@ -167,7 +167,7 @@ void c_schemecyclonecommon_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85c_91file_91header_91comment_85_scheme_cyclone_common = boolean_f; 
   __glo__85Cyc_91version_91banner_85_scheme_cyclone_common = boolean_f; 
   __glo__85version_91banner_85_scheme_cyclone_common = boolean_f; 
-  make_string(c_7321, "0.1.2 (alpha)"); 
+  make_string(c_7321, "0.1.3 (alpha)"); 
   __glo__85version_85_scheme_cyclone_common = &c_7321; 
 
   make_cvar(cvar_7349, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7350, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7349);
