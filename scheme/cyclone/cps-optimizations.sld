@@ -26,6 +26,7 @@
       adb:set!
       adb:get-db
       simple-lambda?
+      one-instance-of-new-mutable-obj?
       ;; Analyze variables
       adb:make-var
       %adb:make-var
@@ -468,11 +469,19 @@
                           (not (adbv:reassigned? var))
                     ))))
                     (ast:lambda-formals->list (car exp)))
+                  ;; Check all args are valid primitives that can be inlined
                   (every
                     (lambda (arg)
                       (and (prim-call? arg)
-                           (not (prim:cont? (car arg)))))
+                           (not (prim:cont? (car arg)))
+                           ))
                     (cdr exp))
+                  ;; Disallow primitives that allocate a new obj,
+                  ;; because if the object is mutated all copies
+                  ;; must be modified. 
+                  (one-instance-of-new-mutable-obj?
+                    (cdr exp)
+                    (ast:lambda-formals->list (car exp)))
                   (inline-prim-call? 
                     (ast:lambda-body (car exp))
                     (prim-calls->arg-variables (cdr exp))
@@ -509,6 +518,41 @@
                (filter symbol? (cdr exp)))
               (else '())))
           exps)))
+
+    ;; Does the given primitive return a new instance of an object that
+    ;; can be mutated?
+    ;;
+    ;; TODO: strings are a problem because there are
+    ;; a lot of primitives that allocate them fresh!
+    (define (prim-creates-mutable-obj? prim)
+      (member 
+        prim
+        '(cons make-vector make-bytevector)))
+
+    ;; Check each pair of primitive call / corresponding lambda arg,
+    ;; and verify that if the primitive call creates a new mutable
+    ;; object, that only one instance of the object will be created.
+    (define (one-instance-of-new-mutable-obj? prim-calls lam-formals)
+      (let ((calls/args (map list prim-calls lam-formals)))
+        (call/cc 
+          (lambda (return)
+            (for-each
+              (lambda (call/arg)
+                (let ((call (car call/arg))
+                      (arg (cadr call/arg)))
+                  ;; Cannot inline prim call if the arg is used
+                  ;; more than once and it creates a new mutable object,
+                  ;; because otherwise if the object is mutated then
+                  ;; only one of the instances will be affected.
+                  (if (and (prim-call? call)
+                           (prim-creates-mutable-obj? (car call))
+                           ;; Make sure arg is not used more than once
+                           (with-var arg (lambda (var)
+                             (> (adbv:app-arg-count var) 1)))
+                      )
+                      (return #f))))
+              calls/args)
+            #t))))
 
     ;; Find variables passed to a primitive
     (define (prim-call->arg-variables exp)
