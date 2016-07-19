@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.1.3 (alpha)
+ ** Version 0.1.4 (alpha)
  **
  **/
 
@@ -299,6 +299,7 @@ extern object __glo_output_91port_127_scheme_base;
 extern object __glo_input_91port_91open_127_scheme_base;
 extern object __glo_output_91port_91open_127_scheme_base;
 extern object __glo_features_scheme_base;
+extern object __glo_Cyc_91version_scheme_base;
 extern object __glo_any_scheme_base;
 extern object __glo_every_scheme_base;
 extern object __glo_and_scheme_base;
@@ -356,6 +357,8 @@ extern object __glo_ast_117lambda_91body_scheme_cyclone_ast;
 extern object __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast;
 extern object __glo__85Cyc_91version_91banner_85_scheme_cyclone_common;
 extern object __glo__85version_85_scheme_cyclone_common;
+extern object __glo__85version_91number_85_scheme_cyclone_common;
+extern object __glo__85version_91name_85_scheme_cyclone_common;
 extern object __glo__85version_91banner_85_scheme_cyclone_common;
 extern object __glo__85c_91file_91header_91comment_85_scheme_cyclone_common;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
@@ -6744,6 +6747,7 @@ static void __lambda_0(void *data, int argc, object self_73699, object r_73204) 
 }
 
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value);
+extern void c_schemecyclonecommon_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemebase_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_scheme_char_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneutil_entry_pt(void *data, int argc, closure cont, object value);
@@ -6753,7 +6757,6 @@ extern void c_schemefile_entry_pt(void *data, int argc, closure cont, object val
 extern void c_schemeread_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeeval_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemecyclonecommon_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonelibraries_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonemacros_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonepretty_91print_entry_pt(void *data, int argc, closure cont, object value);
@@ -6826,16 +6829,16 @@ mclosure1(c_732042, c_schemecomplex_entry_pt, &c_732041);
 mclosure1(c_732043, c_schemecyclonepretty_91print_entry_pt, &c_732042);
 mclosure1(c_732044, c_schemecyclonemacros_entry_pt, &c_732043);
 mclosure1(c_732045, c_schemecyclonelibraries_entry_pt, &c_732044);
-mclosure1(c_732046, c_schemecyclonecommon_entry_pt, &c_732045);
-mclosure1(c_732047, c_schemewrite_entry_pt, &c_732046);
-mclosure1(c_732048, c_schemeeval_entry_pt, &c_732047);
-mclosure1(c_732049, c_schemeread_entry_pt, &c_732048);
-mclosure1(c_732050, c_schemefile_entry_pt, &c_732049);
-mclosure1(c_732051, c_schemecycloneprimitives_entry_pt, &c_732050);
-mclosure1(c_732052, c_schemecycloneast_entry_pt, &c_732051);
-mclosure1(c_732053, c_schemecycloneutil_entry_pt, &c_732052);
-mclosure1(c_732054, c_scheme_char_entry_pt, &c_732053);
-mclosure1(c_732055, c_schemebase_entry_pt, &c_732054);
+mclosure1(c_732046, c_schemewrite_entry_pt, &c_732045);
+mclosure1(c_732047, c_schemeeval_entry_pt, &c_732046);
+mclosure1(c_732048, c_schemeread_entry_pt, &c_732047);
+mclosure1(c_732049, c_schemefile_entry_pt, &c_732048);
+mclosure1(c_732050, c_schemecycloneprimitives_entry_pt, &c_732049);
+mclosure1(c_732051, c_schemecycloneast_entry_pt, &c_732050);
+mclosure1(c_732052, c_schemecycloneutil_entry_pt, &c_732051);
+mclosure1(c_732053, c_scheme_char_entry_pt, &c_732052);
+mclosure1(c_732054, c_schemebase_entry_pt, &c_732053);
+mclosure1(c_732055, c_schemecyclonecommon_entry_pt, &c_732054);
 (c_732055.fn)(data, 0, &c_732055, &c_732055);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
