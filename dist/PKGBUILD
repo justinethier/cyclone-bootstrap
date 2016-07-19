@@ -1,0 +1,47 @@
+# Maintainer: Justin Ethier <justin.ethier@gmail.com>
+pkgname=cyclone-scheme
+pkgver=0.1.3
+pkgrel=1
+pkgdesc="An R7RS Scheme-to-C compiler using Cheney on the M.T.A with native threads"
+arch=(any)
+url="https://github.com/justinethier/cyclone-bootstrap"
+license=('MIT')
+groups=()
+depends=('base-devel' 'gcc' 'libck')
+makedepends=()
+optdepends=()
+provides=()
+conflicts=()
+replaces=()
+backup=()
+options=()
+install=
+changelog=
+source=($url/archive/v$pkgver.tar.gz)
+#source=($pkgname-$pkgver.tar.gz)
+noextract=()
+md5sums=() #autofill using updpkgsums
+
+build() {
+#  cd "$pkgname-$pkgver"
+#
+#  ./configure --prefix=/usr
+#  make
+  cd ??
+  make libcyclone.a --prefix=/usr
+
+# from install.sh:
+#sudo make $PREFIX install-deps && \
+#  make $PREFIX libcyclone.a && \
+#  sudo make $PREFIX install-libs && \
+#  make $PREFIX cyclone && \
+#  sudo make $PREFIX install-cyclone && \
+#  make $PREFIX icyc && \
+#  sudo make $PREFIX install && \
+}
+
+package() {
+  cd "$pkgname-$pkgver"
+
+  make DESTDIR="$pkgdir/" install
+}
