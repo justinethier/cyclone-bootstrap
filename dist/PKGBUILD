@@ -24,26 +24,14 @@ md5sums=() #autofill using updpkgsums
 
 build() {
 #  cd "$pkgname-$pkgver"
-#
-#  ./configure --prefix=/usr
-#  make
+  cd "v$pkgver"
   make libcyclone.a PREFIX=/usr
   make cyclone CFLAGS="-g -L. -Iinclude" PREFIX=/usr
   make icyc-c CFLAGS="-g -L. -Iinclude" PREFIX=/usr
-
-# from install.sh:
-#sudo make $PREFIX install-deps && \
-#  make $PREFIX libcyclone.a && \
-#  sudo make $PREFIX install-libs && \
-#  make $PREFIX cyclone && \
-#  sudo make $PREFIX install-cyclone && \
-#  make $PREFIX icyc && \
-#  sudo make $PREFIX install && \
 }
 
 package() {
-  cd "$pkgname-$pkgver"
-
+  cd "v$pkgver"
   make DESTDIR="$pkgdir" PREFIX=/usr install-deps
   make DESTDIR="$pkgdir" PREFIX=/usr install-libs
   make DESTDIR="$pkgdir" PREFIX=/usr install-cyclone
