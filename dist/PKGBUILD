@@ -27,8 +27,9 @@ build() {
 #
 #  ./configure --prefix=/usr
 #  make
-  cd ??
-  make libcyclone.a --prefix=/usr
+  make libcyclone.a PREFIX=/usr
+  make cyclone CFLAGS="-g -L. -Iinclude" PREFIX=/usr
+  make icyc-c CFLAGS="-g -L. -Iinclude" PREFIX=/usr
 
 # from install.sh:
 #sudo make $PREFIX install-deps && \
@@ -43,5 +44,8 @@ build() {
 package() {
   cd "$pkgname-$pkgver"
 
-  make DESTDIR="$pkgdir/" install
+  make DESTDIR="$pkgdir" PREFIX=/usr install-deps
+  make DESTDIR="$pkgdir" PREFIX=/usr install-libs
+  make DESTDIR="$pkgdir" PREFIX=/usr install-cyclone
+  make DESTDIR="$pkgdir" PREFIX=/usr install
 }
