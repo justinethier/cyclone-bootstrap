@@ -29,6 +29,11 @@ cyclone: $(CFILES) $(COBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
 
+.PHONY: icyc-c
+icyc-c: $(CFILES) $(COBJECTS) libcyclone.a
+	$(CC) icyc.c $(CFLAGS) -c -o icyc.o
+	$(CC) icyc.o $(COBJECTS) $(LIBS) $(CFLAGS) -o icyc
+
 icyc: cyclone
 	./cyclone icyc.scm
 
@@ -37,7 +42,7 @@ unit-tests: unit-tests.scm
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o srfi/*.o icyc.c unit-tests.c
+	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o srfi/*.o unit-tests.c
 
 # Install dependencies required to actually build this project
 install-deps:
@@ -56,6 +61,7 @@ install-libs:
 	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
 
 install-cyclone:
+	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0755 cyclone $(DESTDIR)$(BINDIR)/
