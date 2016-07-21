@@ -1430,11 +1430,9 @@ object Cyc_string2number2_(void *data, object cont, int argc, object str, ...)
     base_num = unbox_number(base);
     Cyc_check_str(data, str);
     if (base_num == 2) {
-      //result = binstr2int(string_str(str));
       result = (int)strtol(string_str(str), NULL, 2);
       _return_closcall1(data, cont, obj_int2obj(result));
     } else if (base_num == 8) {
-      //result = octstr2int(string_str(str));
       result = (int)strtol(string_str(str), NULL, 8);
       _return_closcall1(data, cont, obj_int2obj(result));
     } else if (base_num == 16) {
