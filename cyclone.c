@@ -6848,7 +6848,7 @@ static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object v
     mclosure0(c_732025,__lambda_278); object c_732026 = Cyc_command_line_arguments(data,&c_732025);
 return_direct1(data,__lambda_278,c_732026);
 }
-main(int argc,char **argv)
+int main(int argc,char **argv)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
  long heap_size = global_heap_size = HEAP_SIZE;
