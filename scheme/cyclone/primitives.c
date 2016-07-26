@@ -8320,7 +8320,7 @@ return_closcall1(data,(closure)&c_731960,  Cyc_eq(((closureN)self_73912)->elemen
 static void __lambda_19(void *data, int argc, object self_73913, object r_73435) {
   if( (boolean_f != r_73435) ){ 
   
-make_string(c_731963, "Cyc_set_car");
+make_string(c_731963, "Cyc_set_cell");
 return_closcall1(data,  ((closureN)self_73913)->elements[0],  &c_731963);
 } else { 
   
