@@ -2667,7 +2667,7 @@ c_73803.elements[17] = ((closureN)self_73469)->elements[17];
 c_73803.elements[18] = ((closureN)self_73469)->elements[18];
 c_73803.elements[19] = ((closureN)self_73469)->elements[19];
 
-return_closcall1(data,(closure)&c_73803,  Cyc_set_car(data, ((closureN)self_73469)->elements[4], r_73160));; 
+return_closcall1(data,(closure)&c_73803,  Cyc_set_cell(data, ((closureN)self_73469)->elements[4], r_73160));; 
 }
 
 static void __lambda_39(void *data, int argc, object self_73470, object r_73159) {

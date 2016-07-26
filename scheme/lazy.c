@@ -357,7 +357,7 @@ c_73174.elements[0] = ((closureN)self_7360)->elements[0];
 c_73174.elements[1] = ((closureN)self_7360)->elements[1];
 c_73174.elements[2] = ((closureN)self_7360)->elements[2];
 
-return_closcall1(data,(closure)&c_73174,  Cyc_set_car(data, ((closureN)self_7360)->elements[1], x_736));}
+return_closcall1(data,(closure)&c_73174,  Cyc_set_cell(data, ((closureN)self_7360)->elements[1], x_736));}
 ; 
 }
 
@@ -374,7 +374,7 @@ c_73176.elements = (object *)alloca(sizeof(object) * 2);
 c_73176.elements[0] = ((closureN)self_7361)->elements[0];
 c_73176.elements[1] = ((closureN)self_7361)->elements[1];
 
-return_closcall1(data,(closure)&c_73176,  Cyc_set_car(data, ((closureN)self_7361)->elements[2], boolean_t));; 
+return_closcall1(data,(closure)&c_73176,  Cyc_set_cell(data, ((closureN)self_7361)->elements[2], boolean_t));; 
 }
 
 static void __lambda_13(void *data, int argc, object self_7362, object r_7326) {
