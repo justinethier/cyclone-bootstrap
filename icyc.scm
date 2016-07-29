@@ -12,6 +12,7 @@
         (scheme cyclone util)
         (scheme base)
         (scheme char)
+        (scheme cxr)
         (scheme lazy)
         (scheme load)
         (scheme read)
