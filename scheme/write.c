@@ -243,7 +243,7 @@ c_7341.elements[1] = obj_732;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7341);
 } else { 
-  return_closcall1(data,  k_7310,  Cyc_write_va(2,obj_732, car(port_731)));}
+  return_closcall1(data,  k_7310,  Cyc_write_va(2,obj_732, Cyc_car(data, port_731)));}
 ; 
 }
 
@@ -269,7 +269,7 @@ c_7326.elements[1] = obj_734;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7326);
 } else { 
-  return_closcall1(data,  k_7316,  Cyc_display_va(2,obj_734, car(port_733)));}
+  return_closcall1(data,  k_7316,  Cyc_display_va(2,obj_734, Cyc_car(data, port_733)));}
 ; 
 }
 

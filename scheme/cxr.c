@@ -79,7 +79,7 @@ return_closcall1(data,  k_734,  obj_int2obj(0));;
 
 static void __lambda_0(void *data, int argc, closure _,object k_737, object lis_731) {
   Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
-return_closcall1(data,  k_737,  car(car(car(car(car(lis_731))))));; 
+return_closcall1(data,  k_737,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_731))))));; 
 }
 
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 

@@ -439,7 +439,7 @@ c_73163.elements[0] = ((closureN)self_7368)->elements[0];
 c_73163.elements[1] = ((closureN)self_7368)->elements[1];
 c_73163.elements[2] = ((closureN)self_7368)->elements[2];
 
-return_closcall1(data,(closure)&c_73163,  car(((closureN)self_7368)->elements[2]));}
+return_closcall1(data,(closure)&c_73163,  Cyc_car(data, ((closureN)self_7368)->elements[2]));}
 ; 
 }
 
@@ -474,7 +474,7 @@ c_73167.elements = (object *)alloca(sizeof(object) * 2);
 c_73167.elements[0] = ((closureN)self_7370)->elements[0];
 c_73167.elements[1] = ((closureN)self_7370)->elements[1];
 
-return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73167, car(((closureN)self_7370)->elements[2]), ((closureN)self_7370)->elements[1]);
+return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73167, Cyc_car(data, ((closureN)self_7370)->elements[2]), ((closureN)self_7370)->elements[1]);
 } else { 
   
 make_string(c_73177, "mutex-unlock! - unhandled args");
@@ -624,7 +624,7 @@ static void __lambda_4(void *data, int argc, object self_7375, object r_7357) {
 
 static void __lambda_3(void *data, int argc, object self_7376, object k_7358) {
   if( (boolean_f != Cyc_is_pair(((closureN)self_7376)->elements[0])) ){ 
-  return_closcall1(data,  k_7358,  car(((closureN)self_7376)->elements[0]));
+  return_closcall1(data,  k_7358,  Cyc_car(data, ((closureN)self_7376)->elements[0]));
 } else { 
   
 make_string(c_73112, "");

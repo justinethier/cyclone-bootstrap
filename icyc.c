@@ -509,7 +509,7 @@ return_closcall1(data,(closure)&c_73171,  c_73181);;
 
 static void __lambda_25(void *data, int argc, object self_7359, object r_7316) {
   if( (boolean_f != r_7316) ){ 
-  return_closcall3(data,  __glo_load_scheme_load,  ((closureN)self_7359)->elements[1], car(((closureN)self_7359)->elements[0]), __glo__85icyc_91env_85);
+  return_closcall3(data,  __glo_load_scheme_load,  ((closureN)self_7359)->elements[1], Cyc_car(data, ((closureN)self_7359)->elements[0]), __glo__85icyc_91env_85);
 } else { 
   return_closcall1(data,  ((closureN)self_7359)->elements[1],  boolean_f);}
 ; 

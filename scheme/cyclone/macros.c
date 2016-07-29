@@ -580,7 +580,7 @@ static void __lambda_15(void *data, int argc, object self_7390, object k_7342) {
 
 static void __lambda_14(void *data, int argc, closure _,object k_7348, object exp_7314, object defined_91macros_7313) {
   Cyc_st_add(data, "scheme/cyclone/macros.sld:macro:macro?");
-return_closcall1(data,  k_7348,  assoc(data, car(exp_7314), defined_91macros_7313));; 
+return_closcall1(data,  k_7348,  assoc(data, Cyc_car(data, exp_7314), defined_91macros_7313));; 
 }
 
 static void __lambda_13(void *data, int argc, closure _,object k_7352, object exp_7315) {
@@ -669,7 +669,7 @@ return_closcall1(data,(closure)&c_73133,  quote_macro);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7394, object r_7368) {
-  return_closcall3(data,  __glo__list_scheme_base,  ((closureN)self_7394)->elements[0], r_7368, cdr(((closureN)self_7394)->elements[1]));; 
+  return_closcall3(data,  __glo__list_scheme_base,  ((closureN)self_7394)->elements[0], r_7368, Cyc_cdr(data, ((closureN)self_7394)->elements[1]));; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7395, object r_7366) {

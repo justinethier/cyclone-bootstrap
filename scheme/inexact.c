@@ -136,7 +136,7 @@ c_7328.elements = (object *)alloca(sizeof(object) * 2);
 c_7328.elements[0] = ((closureN)self_7314)->elements[0];
 c_7328.elements[1] = r_7312;
 
-return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7328, car(((closureN)self_7314)->elements[1]));; 
+return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7328, Cyc_car(data, ((closureN)self_7314)->elements[1]));; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7315, object r_7313) {
