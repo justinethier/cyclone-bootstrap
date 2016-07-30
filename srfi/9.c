@@ -927,7 +927,7 @@ c_73768.elements[10] = ((closureN)self_73409)->elements[10];
 c_73768.elements[11] = r_73308;
 c_73768.elements[12] = ((closureN)self_73409)->elements[11];
 
-return_closcall3(data,  __glo_map_scheme_base,  &c_73768, primitive_car, cddr(cddr(((closureN)self_73409)->elements[6])));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_73768, primitive_car, Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73409)->elements[6])));; 
 }
 
 static void __lambda_99(void *data, int argc, object self_73410, object r_73310) {
@@ -1257,7 +1257,7 @@ c_731316.elements[4] = ((closureN)self_73420)->elements[4];
 c_731316.elements[5] = r_73272;
 
 
-object c_731383 = Cyc_symbol2string(data,(closure)&c_731316,cadr(((closureN)self_73420)->elements[2]));
+object c_731383 = Cyc_symbol2string(data,(closure)&c_731316,Cyc_cadr(data, ((closureN)self_73420)->elements[2]));
 return_closcall1(data,(closure)&c_731316,  c_731383);; 
 }
 
@@ -1398,7 +1398,7 @@ make_pair(c_731344,((closureN)self_73426)->elements[5], &c_731348);
 
 make_pair(c_731341,&c_731344, r_73271);
 
-make_pair(c_731335,cadr(((closureN)self_73426)->elements[2]), &c_731341);
+make_pair(c_731335,Cyc_cadr(data, ((closureN)self_73426)->elements[2]), &c_731341);
 
 make_pair(c_731331,((closureN)self_73426)->elements[0], &c_731335);
 return_closcall1(data,  ((closureN)self_73426)->elements[3],  &c_731331);; 
@@ -1435,7 +1435,7 @@ c_73787.elements[17] = ((closureN)self_73427)->elements[17];
 c_73787.elements[18] = ((closureN)self_73427)->elements[18];
 c_73787.elements[19] = ((closureN)self_73427)->elements[19];
 
-return_closcall3(data,  __glo_map_scheme_base,  &c_73787, r_73263, cddr(cddr(((closureN)self_73427)->elements[6])));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_73787, r_73263, Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73427)->elements[6])));; 
 }
 
 static void __lambda_81(void *data, int argc, object self_73428, object r_73148) {
@@ -1490,7 +1490,7 @@ return_closcall1(data,(closure)&c_73789,  &c_731203);;
 static void __lambda_80(void *data, int argc, object self_73429, object k_73233, object f_7383) {
   if( (boolean_f != Cyc_is_pair(f_7383)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, f_7383))) ){ 
-  if( (boolean_f != Cyc_is_pair(cddr(f_7383))) ){ 
+  if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, f_7383))) ){ 
   
 closureN_type c_731215;
 c_731215.hdr.mark = gc_color_red;
@@ -1556,7 +1556,7 @@ c_731220.elements[4] = ((closureN)self_73431)->elements[4];
 c_731220.elements[5] = r_73242;
 
 
-object c_731289 = Cyc_symbol2string(data,(closure)&c_731220,Cyc_car(data, cddr(((closureN)self_73431)->elements[2])));
+object c_731289 = Cyc_symbol2string(data,(closure)&c_731220,Cyc_car(data, Cyc_cddr(data, ((closureN)self_73431)->elements[2])));
 return_closcall1(data,(closure)&c_731220,  c_731289);; 
 }
 
@@ -1697,7 +1697,7 @@ make_pair(c_731250,((closureN)self_73437)->elements[5], &c_731254);
 
 make_pair(c_731247,&c_731250, r_73241);
 
-make_pair(c_731239,Cyc_car(data, cddr(((closureN)self_73437)->elements[2])), &c_731247);
+make_pair(c_731239,Cyc_car(data, Cyc_cddr(data, ((closureN)self_73437)->elements[2])), &c_731247);
 
 make_pair(c_731235,((closureN)self_73437)->elements[0], &c_731239);
 return_closcall1(data,  ((closureN)self_73437)->elements[3],  &c_731235);; 
@@ -1735,7 +1735,7 @@ c_73791.elements[18] = ((closureN)self_73438)->elements[18];
 c_73791.elements[19] = ((closureN)self_73438)->elements[19];
 c_73791.elements[20] = ((closureN)self_73438)->elements[20];
 
-return_closcall3(data,  __glo_map_scheme_base,  &c_73791, r_73232, cddr(cddr(((closureN)self_73438)->elements[6])));; 
+return_closcall3(data,  __glo_map_scheme_base,  &c_73791, r_73232, Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73438)->elements[6])));; 
 }
 
 static void __lambda_70(void *data, int argc, object self_73439, object r_73150) {
@@ -1807,7 +1807,7 @@ c_73795.elements[19] = ((closureN)self_73440)->elements[19];
 c_73795.elements[20] = ((closureN)self_73440)->elements[20];
 c_73795.elements[21] = ((closureN)self_73440)->elements[21];
 
-return_closcall2(data,(closure)&c_73795,  cdar(cddr(((closureN)self_73440)->elements[6])), r_73158);; 
+return_closcall2(data,(closure)&c_73795,  Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_73440)->elements[6])), r_73158);; 
 }
 
 static void __lambda_68(void *data, int argc, object self_73441, object ls_7378, object sets_7377) {
@@ -1961,8 +1961,8 @@ c_73930.elements[6] = sets_7380;
 
 return_closcall1(data,(closure)&c_73930,  quote__75make);
 } else { 
-  if( (boolean_f != assq(data, Cyc_car(data, ls_7381), cddr(cddr(((closureN)self_73444)->elements[4])))) ){ 
-  if( (boolean_f != Cyc_is_pair(cddr(assq(data, Cyc_car(data, ls_7381), cddr(cddr(((closureN)self_73444)->elements[4])))))) ){ 
+  if( (boolean_f != assq(data, Cyc_car(data, ls_7381), Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73444)->elements[4])))) ){ 
+  if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, assq(data, Cyc_car(data, ls_7381), Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73444)->elements[4])))))) ){ 
   
 closureN_type c_731078;
 c_731078.hdr.mark = gc_color_red;
@@ -2153,7 +2153,7 @@ make_pair(c_731115,Cyc_car(data, ((closureN)self_73451)->elements[3]), r_73208);
 
 make_pair(c_731111,((closureN)self_73451)->elements[4], &c_731115);
 
-make_pair(c_731094,Cyc_car(data, cddr(assq(data, Cyc_car(data, ((closureN)self_73451)->elements[3]), cddr(cddr(((closureN)self_73451)->elements[0]))))), &c_731111);
+make_pair(c_731094,Cyc_car(data, Cyc_cddr(data, assq(data, Cyc_car(data, ((closureN)self_73451)->elements[3]), Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73451)->elements[0]))))), &c_731111);
 
 make_pair(c_731091,&c_731094, ((closureN)self_73451)->elements[5]);
 return_closcall3(data,  cell_get(((closureN)self_73451)->elements[2]),  ((closureN)self_73451)->elements[1], Cyc_cdr(data, ((closureN)self_73451)->elements[3]), &c_731091);; 
@@ -2222,7 +2222,7 @@ c_73937.elements[6] = r_73192;
 c_73937.elements[7] = ((closureN)self_73454)->elements[6];
 
 
-object c_731049 = Cyc_symbol2string(data,(closure)&c_73937,caar(cddr(((closureN)self_73454)->elements[2])));
+object c_731049 = Cyc_symbol2string(data,(closure)&c_73937,Cyc_caar(data, Cyc_cddr(data, ((closureN)self_73454)->elements[2])));
 return_closcall1(data,(closure)&c_73937,  c_731049);; 
 }
 
@@ -2624,7 +2624,7 @@ make_pair(c_731018,((closureN)self_73468)->elements[1], &c_731022);
 
 make_pair(c_731015,&c_731018, ((closureN)self_73468)->elements[5]);
 
-make_pair(c_731007,cdar(cddr(((closureN)self_73468)->elements[2])), &c_731015);
+make_pair(c_731007,Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_73468)->elements[2])), &c_731015);
 
 make_pair(c_731003,((closureN)self_73468)->elements[0], &c_731007);
 
@@ -2796,7 +2796,7 @@ c_73814.elements[15] = ((closureN)self_73473)->elements[18];
 
 make_pair(c_73918,((closureN)self_73473)->elements[9], ((closureN)self_73473)->elements[10]);
 
-make_pair(c_73910,caar(cddr(((closureN)self_73473)->elements[2])), &c_73918);
+make_pair(c_73910,Cyc_caar(data, Cyc_cddr(data, ((closureN)self_73473)->elements[2])), &c_73918);
 
 make_pair(c_73906,((closureN)self_73473)->elements[0], &c_73910);
 
@@ -2855,13 +2855,13 @@ make_pair(c_73828,((closureN)self_73475)->elements[0], &c_73832);
 
 make_pair(c_73895,((closureN)self_73475)->elements[4], ((closureN)self_73475)->elements[9]);
 
-make_pair(c_73887,cadr(cddr(((closureN)self_73475)->elements[2])), &c_73895);
+make_pair(c_73887,Cyc_cadr(data, Cyc_cddr(data, ((closureN)self_73475)->elements[2])), &c_73895);
 
 make_pair(c_73883,((closureN)self_73475)->elements[8], &c_73887);
 
 make_pair(c_73880,&c_73883, ((closureN)self_73475)->elements[7]);
 
-make_pair(c_73872,cadr(cddr(((closureN)self_73475)->elements[2])), &c_73880);
+make_pair(c_73872,Cyc_cadr(data, Cyc_cddr(data, ((closureN)self_73475)->elements[2])), &c_73880);
 
 make_pair(c_73868,((closureN)self_73475)->elements[0], &c_73872);
 
@@ -2886,7 +2886,7 @@ c_73744.elements = (object *)alloca(sizeof(object) * 2);
 c_73744.elements[0] = k_73313;
 c_73744.elements[1] = ((closureN)self_73476)->elements[1];
 
-return_closcall1(data,(closure)&c_73744,  Cyc_eq(((closureN)self_73476)->elements[1], caar(cddr(((closureN)self_73476)->elements[0]))));; 
+return_closcall1(data,(closure)&c_73744,  Cyc_eq(((closureN)self_73476)->elements[1], Cyc_caar(data, Cyc_cddr(data, ((closureN)self_73476)->elements[0]))));; 
 }
 
 static void __lambda_32(void *data, int argc, object self_73477, object r_73314) {
@@ -2900,8 +2900,8 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73477)->elemen
 }
 
 static void __lambda_31(void *data, int argc, object self_73478, object k_73321) {
-  if( (boolean_f != Cyc_is_pair(cadr(((closureN)self_73478)->elements[0]))) ){ 
-  return_closcall1(data,  k_73321,  cadr(cadr(((closureN)self_73478)->elements[0])));
+  if( (boolean_f != Cyc_is_pair(Cyc_cadr(data, ((closureN)self_73478)->elements[0]))) ){ 
+  return_closcall1(data,  k_73321,  Cyc_cadr(data, Cyc_cadr(data, ((closureN)self_73478)->elements[0])));
 } else { 
   return_closcall1(data,  k_73321,  boolean_f);}
 ; 
@@ -2920,14 +2920,14 @@ c_73675.elements = (object *)alloca(sizeof(object) * 2);
 c_73675.elements[0] = ((closureN)self_73479)->elements[0];
 c_73675.elements[1] = k_73323;
 
-return_closcall1(data,(closure)&c_73675,  Cyc_is_pair(cadr(((closureN)self_73479)->elements[0])));; 
+return_closcall1(data,(closure)&c_73675,  Cyc_is_pair(Cyc_cadr(data, ((closureN)self_73479)->elements[0])));; 
 }
 
 static void __lambda_29(void *data, int argc, object self_73480, object r_73324) {
   if( (boolean_f != r_73324) ){ 
-  return_closcall1(data,  ((closureN)self_73480)->elements[1],  Cyc_car(data, cadr(((closureN)self_73480)->elements[0])));
+  return_closcall1(data,  ((closureN)self_73480)->elements[1],  Cyc_car(data, Cyc_cadr(data, ((closureN)self_73480)->elements[0])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73480)->elements[1],  cadr(((closureN)self_73480)->elements[0]));}
+  return_closcall1(data,  ((closureN)self_73480)->elements[1],  Cyc_cadr(data, ((closureN)self_73480)->elements[0]));}
 ; 
 }
 

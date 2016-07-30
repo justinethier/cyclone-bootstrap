@@ -2459,7 +2459,7 @@ c_733277.elements = (object *)alloca(sizeof(object) * 2);
 c_733277.elements[0] = ((closureN)self_73898)->elements[0];
 c_733277.elements[1] = ((closureN)self_73898)->elements[1];
 
-return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  &c_733277, cadr(((closureN)self_73898)->elements[0]));
+return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  &c_733277, Cyc_cadr(data, ((closureN)self_73898)->elements[0]));
 } else { 
   return_closcall1(data,  ((closureN)self_73898)->elements[1],  boolean_f);}
 ; 
@@ -2505,7 +2505,7 @@ static void __lambda_347(void *data, int argc, object self_73901, object k_73393
   if( (boolean_f != ((closureN)self_73901)->elements[1]) ){ 
   return_closcall1(data,  k_73393,  ((closureN)self_73901)->elements[1]);
 } else { 
-  return_closcall1(data,  k_73393,  Cyc_eq(obj_char2obj(46), cadr(((closureN)self_73901)->elements[0])));}
+  return_closcall1(data,  k_73393,  Cyc_eq(obj_char2obj(46), Cyc_cadr(data, ((closureN)self_73901)->elements[0])));}
 ; 
 }
 
@@ -2530,7 +2530,7 @@ return_closcall1(data,(closure)&c_733250,  c_733267);;
 static void __lambda_345(void *data, int argc, object self_73903, object r_73398) {
   if( (boolean_f != r_73398) ){ 
   if( (boolean_f != Cyc_eq(obj_char2obj(46), Cyc_car(data, ((closureN)self_73903)->elements[0]))) ){ 
-  return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  ((closureN)self_73903)->elements[1], cadr(((closureN)self_73903)->elements[0]));
+  return_closcall2(data,  __glo_char_91numeric_127_scheme__char,  ((closureN)self_73903)->elements[1], Cyc_cadr(data, ((closureN)self_73903)->elements[0]));
 } else { 
   return_closcall1(data,  ((closureN)self_73903)->elements[1],  boolean_f);}
 
@@ -9059,7 +9059,7 @@ if( (boolean_f != Cyc_is_null(lst_73244)) ){
 } else { 
     make_string(c_731369, ".");
 if( (boolean_f != equalp(Cyc_car(data, lst_73244), Cyc_string2symbol(data, &c_731369))) ){ 
-  return_closcall1(data,  k_73756,  cadr(lst_73244));
+  return_closcall1(data,  k_73756,  Cyc_cadr(data, lst_73244));
 } else { 
   
 closureN_type c_731374;
@@ -9141,7 +9141,7 @@ return_closcall2(data,  __glo_reverse_scheme_base,  &c_731341, ((closureN)self_7
 static void __lambda_22(void *data, int argc, object self_731217, object r_73770) {
   
 make_string(c_731350, ".");
-return_closcall1(data,  ((closureN)self_731217)->elements[0],  equalp(cadr(r_73770), Cyc_string2symbol(data, &c_731350)));; 
+return_closcall1(data,  ((closureN)self_731217)->elements[0],  equalp(Cyc_cadr(data, r_73770), Cyc_string2symbol(data, &c_731350)));; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_73774, object lst_73246) {
@@ -9215,22 +9215,22 @@ return_closcall1(data,  k_73783,  &c_731315);;
 
 static void __lambda_15(void *data, int argc, closure _,object k_73786, object ptbl_73252, object cnum_73251) {
   Cyc_st_add(data, "scheme/read.sld:in-port:set-cnum!");
-return_closcall1(data,  k_73786,  Cyc_set_car(data, cdddr(ptbl_73252), cnum_73251));; 
+return_closcall1(data,  k_73786,  Cyc_set_car(data, Cyc_cdddr(data, ptbl_73252), cnum_73251));; 
 }
 
 static void __lambda_14(void *data, int argc, closure _,object k_73790, object ptbl_73253) {
   Cyc_st_add(data, "scheme/read.sld:in-port:get-cnum");
-return_closcall1(data,  k_73790,  cadddr(ptbl_73253));; 
+return_closcall1(data,  k_73790,  Cyc_cadddr(data, ptbl_73253));; 
 }
 
 static void __lambda_13(void *data, int argc, closure _,object k_73793, object ptbl_73255, object lnum_73254) {
   Cyc_st_add(data, "scheme/read.sld:in-port:set-lnum!");
-return_closcall1(data,  k_73793,  Cyc_set_car(data, cddr(ptbl_73255), lnum_73254));; 
+return_closcall1(data,  k_73793,  Cyc_set_car(data, Cyc_cddr(data, ptbl_73255), lnum_73254));; 
 }
 
 static void __lambda_12(void *data, int argc, closure _,object k_73797, object ptbl_73256) {
   Cyc_st_add(data, "scheme/read.sld:in-port:get-lnum");
-return_closcall1(data,  k_73797,  caddr(ptbl_73256));; 
+return_closcall1(data,  k_73797,  Cyc_caddr(data, ptbl_73256));; 
 }
 
 static void __lambda_11(void *data, int argc, closure _,object k_73800, object ptbl_73258, object buf_73257) {
@@ -9240,7 +9240,7 @@ return_closcall1(data,  k_73800,  Cyc_set_car(data, Cyc_cdr(data, ptbl_73258), b
 
 static void __lambda_10(void *data, int argc, closure _,object k_73804, object ptbl_73259) {
   Cyc_st_add(data, "scheme/read.sld:in-port:get-buf");
-return_closcall1(data,  k_73804,  cadr(ptbl_73259));; 
+return_closcall1(data,  k_73804,  Cyc_cadr(data, ptbl_73259));; 
 }
 
 static void __lambda_9(void *data, int argc, closure _,object k_73807, object ptbl_73260) {
@@ -9257,7 +9257,7 @@ c_731272.elements = (object *)alloca(sizeof(object) * 2);
 c_731272.elements[0] = k_73807;
 c_731272.elements[1] = ptbl_73260;
 
-return_closcall1(data,(closure)&c_731272,  cadr(ptbl_73260));; 
+return_closcall1(data,(closure)&c_731272,  Cyc_cadr(data, ptbl_73260));; 
 }
 
 static void __lambda_8(void *data, int argc, object self_731221, object result_73261) {

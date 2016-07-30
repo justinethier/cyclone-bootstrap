@@ -474,7 +474,7 @@ return_closcall1(data,(closure)&c_73120,  NULL);;
 
 static void __lambda_7(void *data, int argc, object self_7367, object r_7333) {
   
-make_pair(c_73140,cadr(((closureN)self_7367)->elements[0]), ((closureN)self_7367)->elements[5]);
+make_pair(c_73140,Cyc_cadr(data, ((closureN)self_7367)->elements[0]), ((closureN)self_7367)->elements[5]);
 
 make_pair(c_73136,((closureN)self_7367)->elements[4], &c_73140);
 
@@ -579,7 +579,7 @@ return_closcall1(data,(closure)&c_7385,  NULL);;
 
 static void __lambda_1(void *data, int argc, object self_7372, object r_7346) {
   
-make_pair(c_73105,cadr(((closureN)self_7372)->elements[0]), ((closureN)self_7372)->elements[5]);
+make_pair(c_73105,Cyc_cadr(data, ((closureN)self_7372)->elements[0]), ((closureN)self_7372)->elements[5]);
 
 make_pair(c_73101,((closureN)self_7372)->elements[4], &c_73105);
 

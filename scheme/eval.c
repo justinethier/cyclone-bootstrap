@@ -14297,7 +14297,7 @@ return_closcall2(data,  __glo_compound_91macro_127_scheme_eval,  &c_731877, ((cl
 
 static void __lambda_155(void *data, int argc, object self_731077, object r_73461) {
   if( (boolean_f != r_73461) ){ 
-  return_closcall2(data,  ((closureN)self_731077)->elements[2],  ((closureN)self_731077)->elements[3], Cyc_get_cvar(cadr(((closureN)self_731077)->elements[5])));
+  return_closcall2(data,  ((closureN)self_731077)->elements[2],  ((closureN)self_731077)->elements[3], Cyc_get_cvar(Cyc_cadr(data, ((closureN)self_731077)->elements[5])));
 } else { 
   
 closureN_type c_731887;
@@ -15195,7 +15195,7 @@ return_closcall1(data,  k_73553,  &c_731650);;
 }
 
 static void __lambda_96(void *data, int argc, object self_731129, object k_73555, object env_7398) {
-  return_closcall1(data,  k_73555,  cadr(((closureN)self_731129)->elements[0]));; 
+  return_closcall1(data,  k_73555,  Cyc_cadr(data, ((closureN)self_731129)->elements[0]));; 
 }
 
 static void __lambda_95(void *data, int argc, closure _,object k_73558, object exp_7399) {
@@ -15805,7 +15805,7 @@ c_731469.elements = (object *)alloca(sizeof(object) * 2);
 c_731469.elements[0] = ((closureN)self_731162)->elements[0];
 c_731469.elements[1] = ((closureN)self_731162)->elements[2];
 
-return_closcall3(data,  __glo__list_scheme_base,  &c_731469, r_73618, cadr(((closureN)self_731162)->elements[1]));; 
+return_closcall3(data,  __glo__list_scheme_base,  &c_731469, r_73618, Cyc_cadr(data, ((closureN)self_731162)->elements[1]));; 
 }
 
 static void __lambda_57(void *data, int argc, object self_731163, object r_73617) {
@@ -15880,7 +15880,7 @@ static void __lambda_51(void *data, int argc, object self_731168, object r_73624
 
 static void __lambda_50(void *data, int argc, closure _,object k_73631, object proc_73114) {
   Cyc_st_add(data, "scheme/eval.sld:primitive-implementation");
-return_closcall1(data,  k_73631,  cadr(proc_73114));; 
+return_closcall1(data,  k_73631,  Cyc_cadr(data, proc_73114));; 
 }
 
 static void __lambda_49(void *data, int argc, closure _,object k_73634, object proc_73115) {
@@ -15911,17 +15911,17 @@ return_closcall3(data,  __glo_tagged_91list_127_scheme_cyclone_util,  k_73638, _
 
 static void __lambda_46(void *data, int argc, closure _,object k_73643, object p_73117) {
   Cyc_st_add(data, "scheme/eval.sld:procedure-environment");
-return_closcall1(data,  k_73643,  cadddr(p_73117));; 
+return_closcall1(data,  k_73643,  Cyc_cadddr(data, p_73117));; 
 }
 
 static void __lambda_45(void *data, int argc, closure _,object k_73646, object p_73118) {
   Cyc_st_add(data, "scheme/eval.sld:procedure-body");
-return_closcall1(data,  k_73646,  caddr(p_73118));; 
+return_closcall1(data,  k_73646,  Cyc_caddr(data, p_73118));; 
 }
 
 static void __lambda_44(void *data, int argc, closure _,object k_73649, object p_73119) {
   Cyc_st_add(data, "scheme/eval.sld:procedure-parameters");
-return_closcall1(data,  k_73649,  cadr(p_73119));; 
+return_closcall1(data,  k_73649,  Cyc_cadr(data, p_73119));; 
 }
 
 static void __lambda_43(void *data, int argc, closure _,object k_73652, object p_73120) {
@@ -15974,21 +15974,21 @@ static void __lambda_37(void *data, int argc, object self_731170, object r_73670
 
 static void __lambda_36(void *data, int argc, closure _,object k_73673, object exp_73130) {
   Cyc_st_add(data, "scheme/eval.sld:if-alternative");
-if( (boolean_f != Cyc_is_null(cdddr(exp_73130))) ){ 
+if( (boolean_f != Cyc_is_null(Cyc_cdddr(data, exp_73130))) ){ 
   return_closcall1(data,  k_73673,  boolean_f);
 } else { 
-  return_closcall1(data,  k_73673,  cadddr(exp_73130));}
+  return_closcall1(data,  k_73673,  Cyc_cadddr(data, exp_73130));}
 ; 
 }
 
 static void __lambda_35(void *data, int argc, closure _,object k_73678, object exp_73131) {
   Cyc_st_add(data, "scheme/eval.sld:if-consequent");
-return_closcall1(data,  k_73678,  caddr(exp_73131));; 
+return_closcall1(data,  k_73678,  Cyc_caddr(data, exp_73131));; 
 }
 
 static void __lambda_34(void *data, int argc, closure _,object k_73681, object exp_73132) {
   Cyc_st_add(data, "scheme/eval.sld:if-predicate");
-return_closcall1(data,  k_73681,  cadr(exp_73132));; 
+return_closcall1(data,  k_73681,  Cyc_cadr(data, exp_73132));; 
 }
 
 static void __lambda_33(void *data, int argc, closure _,object k_73684, object parameters_73134, object body_73133) {
@@ -16019,29 +16019,29 @@ return_closcall1(data,  ((closureN)self_731171)->elements[1],  &c_731371);;
 
 static void __lambda_31(void *data, int argc, closure _,object k_73689, object exp_73135) {
   Cyc_st_add(data, "scheme/eval.sld:lambda-body");
-return_closcall1(data,  k_73689,  cddr(exp_73135));; 
+return_closcall1(data,  k_73689,  Cyc_cddr(data, exp_73135));; 
 }
 
 static void __lambda_30(void *data, int argc, closure _,object k_73692, object exp_73136) {
   Cyc_st_add(data, "scheme/eval.sld:lambda-parameters");
-return_closcall1(data,  k_73692,  cadr(exp_73136));; 
+return_closcall1(data,  k_73692,  Cyc_cadr(data, exp_73136));; 
 }
 
 static void __lambda_29(void *data, int argc, closure _,object k_73695, object exp_73137) {
   Cyc_st_add(data, "scheme/eval.sld:definition-value");
-if( (boolean_f != Cyc_is_symbol(cadr(exp_73137))) ){ 
-  return_closcall1(data,  k_73695,  caddr(exp_73137));
+if( (boolean_f != Cyc_is_symbol(Cyc_cadr(data, exp_73137))) ){ 
+  return_closcall1(data,  k_73695,  Cyc_caddr(data, exp_73137));
 } else { 
-  return_closcall3(data,  __glo_make_91lambda_scheme_eval,  k_73695, cdadr(exp_73137), cddr(exp_73137));}
+  return_closcall3(data,  __glo_make_91lambda_scheme_eval,  k_73695, Cyc_cdadr(data, exp_73137), Cyc_cddr(data, exp_73137));}
 ; 
 }
 
 static void __lambda_28(void *data, int argc, closure _,object k_73702, object exp_73138) {
   Cyc_st_add(data, "scheme/eval.sld:definition-variable");
-if( (boolean_f != Cyc_is_symbol(cadr(exp_73138))) ){ 
-  return_closcall1(data,  k_73702,  cadr(exp_73138));
+if( (boolean_f != Cyc_is_symbol(Cyc_cadr(data, exp_73138))) ){ 
+  return_closcall1(data,  k_73702,  Cyc_cadr(data, exp_73138));
 } else { 
-  return_closcall1(data,  k_73702,  caadr(exp_73138));}
+  return_closcall1(data,  k_73702,  Cyc_caadr(data, exp_73138));}
 ; 
 }
 
@@ -16068,12 +16068,12 @@ static void __lambda_26(void *data, int argc, object self_731172, object r_73708
 
 static void __lambda_25(void *data, int argc, closure _,object k_73711, object exp_73140) {
   Cyc_st_add(data, "scheme/eval.sld:assignment-value");
-return_closcall1(data,  k_73711,  caddr(exp_73140));; 
+return_closcall1(data,  k_73711,  Cyc_caddr(data, exp_73140));; 
 }
 
 static void __lambda_24(void *data, int argc, closure _,object k_73714, object exp_73141) {
   Cyc_st_add(data, "scheme/eval.sld:assignment-variable");
-return_closcall1(data,  k_73714,  cadr(exp_73141));; 
+return_closcall1(data,  k_73714,  Cyc_cadr(data, exp_73141));; 
 }
 
 static void __lambda_23(void *data, int argc, closure _,object k_73717, object exp_73142) {

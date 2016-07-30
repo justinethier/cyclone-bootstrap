@@ -3029,7 +3029,7 @@ return_closcall1(data,(closure)&c_73775,  &c_73792);;
 }
 
 static void __lambda_49(void *data, int argc, object self_73544, object k_73333, object inc_91lst_73121) {
-  return_closcall1(data,  k_73333,  cadr(inc_91lst_73121));; 
+  return_closcall1(data,  k_73333,  Cyc_cadr(data, inc_91lst_73121));; 
 }
 
 static void __lambda_48(void *data, int argc, object self_73545, object r_73327) {
@@ -3084,7 +3084,7 @@ c_73779.elements = (object *)alloca(sizeof(object) * 2);
 c_73779.elements[0] = ((closureN)self_73548)->elements[1];
 c_73779.elements[1] = ((closureN)self_73548)->elements[2];
 
-return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_73779, r_73329, cddr(((closureN)self_73548)->elements[0]));; 
+return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_73779, r_73329, Cyc_cddr(data, ((closureN)self_73548)->elements[0]));; 
 }
 
 static void __lambda_44(void *data, int argc, object self_73549, object r_73328) {
@@ -3111,7 +3111,7 @@ return_closcall1(data,(closure)&c_73752,  &c_73769);;
 }
 
 static void __lambda_42(void *data, int argc, object self_73550, object k_73343, object inc_91lst_73124) {
-  return_closcall1(data,  k_73343,  cadr(inc_91lst_73124));; 
+  return_closcall1(data,  k_73343,  Cyc_cadr(data, inc_91lst_73124));; 
 }
 
 static void __lambda_41(void *data, int argc, object self_73551, object r_73337) {
@@ -3166,7 +3166,7 @@ c_73756.elements = (object *)alloca(sizeof(object) * 2);
 c_73756.elements[0] = ((closureN)self_73554)->elements[1];
 c_73756.elements[1] = ((closureN)self_73554)->elements[2];
 
-return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_73756, r_73339, cddr(((closureN)self_73554)->elements[0]));; 
+return_closcall3(data,  __glo_filter_scheme_cyclone_util,  &c_73756, r_73339, Cyc_cddr(data, ((closureN)self_73554)->elements[0]));; 
 }
 
 static void __lambda_37(void *data, int argc, object self_73555, object r_73338) {
@@ -3222,8 +3222,8 @@ static void __lambda_34(void *data, int argc, object self_73557, object r_73347)
 }
 
 static void __lambda_33(void *data, int argc, object self_73558, object k_73349) {
-  if( (boolean_f != assoc(data, ((closureN)self_73558)->elements[1], cddr(((closureN)self_73558)->elements[0]))) ){ 
-  return_closcall1(data,  k_73349,  Cyc_cdr(data, assoc(data, ((closureN)self_73558)->elements[1], cddr(((closureN)self_73558)->elements[0]))));
+  if( (boolean_f != assoc(data, ((closureN)self_73558)->elements[1], Cyc_cddr(data, ((closureN)self_73558)->elements[0]))) ){ 
+  return_closcall1(data,  k_73349,  Cyc_cdr(data, assoc(data, ((closureN)self_73558)->elements[1], Cyc_cddr(data, ((closureN)self_73558)->elements[0]))));
 } else { 
   return_closcall1(data,  k_73349,  boolean_f);}
 ; 
@@ -3278,8 +3278,8 @@ static void __lambda_30(void *data, int argc, object self_73560, object r_73355)
 }
 
 static void __lambda_29(void *data, int argc, object self_73561, object k_73357) {
-  if( (boolean_f != assoc(data, ((closureN)self_73561)->elements[1], cddr(((closureN)self_73561)->elements[0]))) ){ 
-  return_closcall3(data,  __glo_map_scheme_base,  k_73357, __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries, Cyc_cdr(data, assoc(data, ((closureN)self_73561)->elements[1], cddr(((closureN)self_73561)->elements[0]))));
+  if( (boolean_f != assoc(data, ((closureN)self_73561)->elements[1], Cyc_cddr(data, ((closureN)self_73561)->elements[0]))) ){ 
+  return_closcall3(data,  __glo_map_scheme_base,  k_73357, __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries, Cyc_cdr(data, assoc(data, ((closureN)self_73561)->elements[1], Cyc_cddr(data, ((closureN)self_73561)->elements[0]))));
 } else { 
   return_closcall1(data,  k_73357,  boolean_f);}
 ; 
@@ -3338,7 +3338,7 @@ return_closcall3(data,  __glo_tagged_91list_127_scheme_cyclone_util,  &c_73692, 
 
 static void __lambda_25(void *data, int argc, object self_73564, object r_73367) {
   if( (boolean_f != r_73367) ){ 
-  return_closcall1(data,  ((closureN)self_73564)->elements[1],  caddr(((closureN)self_73564)->elements[0]));
+  return_closcall1(data,  ((closureN)self_73564)->elements[1],  Cyc_caddr(data, ((closureN)self_73564)->elements[0]));
 } else { 
   return_closcall1(data,  ((closureN)self_73564)->elements[1],  ((closureN)self_73564)->elements[0]);}
 ; 
@@ -3472,8 +3472,8 @@ static void __lambda_15(void *data, int argc, object self_73572, object r_73379)
 }
 
 static void __lambda_14(void *data, int argc, object self_73573, object k_73381) {
-  if( (boolean_f != assoc(data, ((closureN)self_73573)->elements[1], cddr(((closureN)self_73573)->elements[0]))) ){ 
-  return_closcall1(data,  k_73381,  Cyc_cdr(data, assoc(data, ((closureN)self_73573)->elements[1], cddr(((closureN)self_73573)->elements[0]))));
+  if( (boolean_f != assoc(data, ((closureN)self_73573)->elements[1], Cyc_cddr(data, ((closureN)self_73573)->elements[0]))) ){ 
+  return_closcall1(data,  k_73381,  Cyc_cdr(data, assoc(data, ((closureN)self_73573)->elements[1], Cyc_cddr(data, ((closureN)self_73573)->elements[0]))));
 } else { 
   return_closcall1(data,  k_73381,  boolean_f);}
 ; 
@@ -3551,7 +3551,7 @@ return_closcall1(data,  ((closureN)self_73576)->elements[0],  c_73623);;
 
 static void __lambda_7(void *data, int argc, closure _,object k_73398, object ast_73138) {
   Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib:name");
-return_closcall2(data,  __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries,  k_73398, cadr(ast_73138));; 
+return_closcall2(data,  __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries,  k_73398, Cyc_cadr(data, ast_73138));; 
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_73402, object lis_73139) {

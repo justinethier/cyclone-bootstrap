@@ -1674,7 +1674,7 @@ return_closcall1(data,(closure)&c_731000,  &c_732880);;
 }
 
 static void __lambda_281(void *data, int argc, object self_73698, object k_73633, object l_73301) {
-  return_closcall1(data,  k_73633,  cadr(l_73301));; 
+  return_closcall1(data,  k_73633,  Cyc_cadr(data, l_73301));; 
 }
 
 static void __lambda_280(void *data, int argc, object self_73699, object r_73632) {

@@ -437,7 +437,7 @@ c_73157.elements[1] = k_7330;
 c_73157.elements[2] = mac_91env_738;
 c_73157.elements[3] = macro_739;
 
-return_closcall1(data,(closure)&c_73157,  cadr(macro_739));; 
+return_closcall1(data,(closure)&c_73157,  Cyc_cadr(data, macro_739));; 
 }
 
 static void __lambda_22(void *data, int argc, object self_7383, object r_7345) {
@@ -559,7 +559,7 @@ c_73197.elements = (object *)alloca(sizeof(object) * 2);
 c_73197.elements[0] = ((closureN)self_7387)->elements[0];
 c_73197.elements[1] = ((closureN)self_7387)->elements[1];
 
-return_closcall5(data,  __glo__list_scheme_base,  &c_73197, Cyc_get_cvar(cadr(((closureN)self_7387)->elements[2])), ((closureN)self_7387)->elements[3], r_7338, __glo_Cyc_91er_91compare_127_scheme_cyclone_util);; 
+return_closcall5(data,  __glo__list_scheme_base,  &c_73197, Cyc_get_cvar(Cyc_cadr(data, ((closureN)self_7387)->elements[2])), ((closureN)self_7387)->elements[3], r_7338, __glo_Cyc_91er_91compare_127_scheme_cyclone_util);; 
 }
 
 static void __lambda_17(void *data, int argc, object self_7388, object r_7335) {
@@ -567,14 +567,14 @@ static void __lambda_17(void *data, int argc, object self_7388, object r_7335) {
 }
 
 static void __lambda_16(void *data, int argc, object self_7389, object r_7333) {
-  return_closcall4(data,  Cyc_get_cvar(cadr(((closureN)self_7389)->elements[2])),  ((closureN)self_7389)->elements[1], ((closureN)self_7389)->elements[0], r_7333, __glo_Cyc_91er_91compare_127_scheme_cyclone_util);; 
+  return_closcall4(data,  Cyc_get_cvar(Cyc_cadr(data, ((closureN)self_7389)->elements[2])),  ((closureN)self_7389)->elements[1], ((closureN)self_7389)->elements[0], r_7333, __glo_Cyc_91er_91compare_127_scheme_cyclone_util);; 
 }
 
 static void __lambda_15(void *data, int argc, object self_7390, object k_7342) {
   if( (boolean_f != Cyc_is_macro(Cyc_get_cvar(((closureN)self_7390)->elements[1]))) ){ 
   return_closcall1(data,  k_7342,  Cyc_is_macro(Cyc_get_cvar(((closureN)self_7390)->elements[1])));
 } else { 
-  return_closcall1(data,  k_7342,  Cyc_is_procedure(data, cadr(((closureN)self_7390)->elements[0])));}
+  return_closcall1(data,  k_7342,  Cyc_is_procedure(data, Cyc_cadr(data, ((closureN)self_7390)->elements[0])));}
 ; 
 }
 

@@ -4448,7 +4448,7 @@ c_733141.elements = (object *)alloca(sizeof(object) * 2);
 c_733141.elements[0] = k_73465;
 c_733141.elements[1] = ((closureN)self_731187)->elements[0];
 
-return_closcall2(data,(closure)&c_733141,  Cyc_car(data, call_95arg_73148), cadr(call_95arg_73148));; 
+return_closcall2(data,(closure)&c_733141,  Cyc_car(data, call_95arg_73148), Cyc_cadr(data, call_95arg_73148));; 
 }
 
 static void __lambda_374(void *data, int argc, object self_731188, object call_73150, object arg_73149) {
@@ -7406,7 +7406,7 @@ static void __lambda_207(void *data, int argc, object self_731351, object r_7360
 }
 
 static void __lambda_206(void *data, int argc, object self_731352, object r_73603) {
-  return_closcall2(data,  __glo_opt_117contract_scheme_cyclone_cps_91optimizations,  ((closureN)self_731352)->elements[0], caar(r_73603));; 
+  return_closcall2(data,  __glo_opt_117contract_scheme_cyclone_cps_91optimizations,  ((closureN)self_731352)->elements[0], Cyc_caar(data, r_73603));; 
 }
 
 static void __lambda_205(void *data, int argc, closure _,object k_73684, object ast_73177) {
