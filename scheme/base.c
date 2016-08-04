@@ -30722,14 +30722,14 @@ static void __lambda_887(void *data, int argc, closure _, object k, object num1,
         i = obj_obj2int(num1);
       } else if (type_of(num1) == integer_tag) { 
         i = ((integer_type *)num1)->value; 
-      } else if (type_of(num1) == double_tag) { 
+      } else /* Must be double: if (type_of(num1) == double_tag)*/ { 
         i = ((double_type *)num1)->value; 
       }
       if (obj_is_int(num2)) {
         j = obj_obj2int(num2);
       } else if (type_of(num2) == integer_tag) { 
         j = ((integer_type *)num2)->value; 
-      } else if (type_of(num2) == double_tag) { 
+      } else /* Must be double: if (type_of(num2) == double_tag)*/ { 
         j = ((double_type *)num2)->value; 
       }
       {
