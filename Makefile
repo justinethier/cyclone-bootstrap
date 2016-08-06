@@ -6,9 +6,6 @@
 
 include Makefile.config
 
-# Use this line for profiling
-#CFLAGS = -g -pg
-#CFLAGS = -Iinclude -L$(PREFIX)/lib
 LIBS = -pthread -lcyclone -lck -lm
 
 COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/9 srfi/18 srfi/27 srfi/69
