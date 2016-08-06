@@ -183,6 +183,7 @@ extern object __glo_mangle_91global_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
+extern object __glo_flatten_scheme_cyclone_util;
 extern object __glo_list_91index2_scheme_cyclone_util;
 extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
 extern object __glo_list_91prefix_127_scheme_cyclone_util;
