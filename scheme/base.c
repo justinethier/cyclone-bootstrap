@@ -46514,6 +46514,7 @@ static void __lambda_1(void *data, int argc, closure _,object k, object f) {
   Cyc_st_add(data, "scheme/base.sld:call/cc");
 
 closureN_type c_735668;
+Cyc_check_proc(data, f);
 c_735668.hdr.mark = gc_color_red;
  c_735668.hdr.grayed = 0;
 c_735668.tag = closureN_tag;
