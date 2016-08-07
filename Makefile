@@ -8,6 +8,7 @@ include Makefile.config
 
 # Use this line for profiling
 #CFLAGS = -g -pg
+#CFLAGS = -Iinclude -L$(PREFIX)/lib
 LIBS = -pthread -lcyclone -lck -lm
 
 COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/9 srfi/18 srfi/27 srfi/69
@@ -34,7 +35,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
 
 cyclone: $(CFILES) $(COBJECTS) libcyclone.a
-	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
+	$(CC) cyclone.c -Iinclude $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
 
 .PHONY: icyc-c
@@ -46,7 +47,7 @@ icyc: cyclone
 	./cyclone icyc.scm
 
 unit-tests: unit-tests.scm
-	cyclone unit-tests.scm && ./unit-tests
+	./cyclone unit-tests.scm && ./unit-tests
 
 .PHONY: clean
 clean:
