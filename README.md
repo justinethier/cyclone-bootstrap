@@ -23,7 +23,7 @@ Installation
 
 First, [download the latest release](https://github.com/justinethier/cyclone-bootstrap/releases) in either `zip` or `tar.gz` format and unpack the archive.
 
-Do a `make` without arguments to install in the default location (`/usr/local`):
+Use `make` without arguments to install in the default location (`/usr/local`):
 
     make
     sudo make install
