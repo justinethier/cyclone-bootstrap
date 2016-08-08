@@ -13,7 +13,7 @@ COBJECTS=$(CFILES:.c=.o)
 %.o: %.c %.h
 	$(CC) $(CFLAGS) $< -c -o $@
 
-all: cyclone icyc unit-tests
+all: libcyclone.a cyclone icyc
 
 libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(CC) $(CFLAGS) -c -Iinclude dispatch.c -o dispatch.o
