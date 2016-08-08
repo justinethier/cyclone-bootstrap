@@ -23,19 +23,23 @@ Installation
 
 First, [download the latest release](https://github.com/justinethier/cyclone-bootstrap/releases) in either `zip` or `tar.gz` format and unpack the archive.
 
-Run the install script without arguments to install in the default location (`/usr/local`):
+Do a `make` without arguments to install in the default location (`/usr/local`):
 
-    ./install.sh  
+    make
+    sudo make install
+    make test
 
  or include an argument to specify the install directory, EG:
 
-    ./install.sh /home/my-username
+    make PREFIX=/home/my-username
+    make PREFIX=/home/my-username install
+    make test
 
 Note:
 
-- This script requires superuser permissions and will prompt for them as needed.
-
 - When installing to a custom location, you may need to add the corresponding `bin`, `include`, and `lib` directories to your `PATH` in order to run cyclone and complete the installation.
+
+- If you are building on a platform that requires special compiler commands, such as a Raspberry Pi, copy the appropriate `Makefile.config.X` file to `Makefile.config` before doing a build.
 
 At the moment, Cyclone has only been tested on Linux using GCC. Other platforms may be added in the future.
 
