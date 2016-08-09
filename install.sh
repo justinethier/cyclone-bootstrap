@@ -31,12 +31,7 @@ else
   PREFIX=""
 fi
 
-sudo make $PREFIX install-deps && \
-  make $PREFIX libcyclone.a && \
-  sudo make $PREFIX install-libs && \
-  make $PREFIX cyclone && \
-  sudo make $PREFIX install-cyclone && \
-  make $PREFIX icyc && \
-  sudo make $PREFIX install && \
-  make $PREFIX unit-tests
+make $PREFIX && \
+sudo make $PREFIX install && \
+make $PREFIX test
 

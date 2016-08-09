@@ -13,12 +13,12 @@ COBJECTS=$(CFILES:.c=.o)
 %.o: %.c %.h
 	$(CC) $(CFLAGS) $< -c -o $@
 
-all: cyclone icyc unit-tests
+all: cyclone icyc-c
 
 libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
-	$(CC) $(CFLAGS) -c -Iinclude dispatch.c -o dispatch.o
-	$(CC) $(CFLAGS) -c -Iinclude -std=gnu99 gc.c -o gc.o
-	$(CC) $(CFLAGS) -c -Iinclude \
+	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
+	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
+	$(CC) $(CFLAGS) -c \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
   -DCYC_INSTALL_LIB=\"$(LIBDIR)\" \
   -DCYC_INSTALL_INC=\"$(INCDIR)\" \
@@ -30,7 +30,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
 
 cyclone: $(CFILES) $(COBJECTS) libcyclone.a
-	$(CC) cyclone.c -Iinclude $(CFLAGS) -c -o cyclone.o
+	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
 
 .PHONY: icyc-c
@@ -40,6 +40,10 @@ icyc-c: $(CFILES) $(COBJECTS) libcyclone.a
 
 icyc: cyclone
 	./cyclone icyc.scm
+
+.PHONY: test
+test:
+	make unit-tests
 
 unit-tests: unit-tests.scm
 	./cyclone unit-tests.scm && ./unit-tests
@@ -76,6 +80,9 @@ install-cyclone:
 # Install everything. Can not call this directly initially as 
 # dependencies are required by portions of the build.
 install:
+	make install-deps
+	make install-libs
+	make install-cyclone
 	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
 	$(MKDIR) $(DESTDIR)$(INCDIR)
