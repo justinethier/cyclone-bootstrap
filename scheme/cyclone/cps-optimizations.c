@@ -29,7 +29,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
@@ -58,7 +58,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
@@ -87,7 +87,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 3); \
      return; \
  } else { \
@@ -116,7 +116,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 4); \
      return; \
  } else { \
@@ -145,7 +145,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 6); \
      return; \
  } else { \
@@ -174,7 +174,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[10]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 10); \
      return; \
  } else { \

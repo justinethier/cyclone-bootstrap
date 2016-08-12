@@ -29,7 +29,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
@@ -58,7 +58,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
@@ -87,7 +87,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 3); \
      return; \
  } else { \
@@ -116,7 +116,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 4); \
      return; \
  } else { \
@@ -145,7 +145,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 5); \
      return; \
  } else { \
@@ -174,7 +174,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 6); \
      return; \
  } else { \
@@ -203,7 +203,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[12]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 12); \
      return; \
  } else { \
@@ -232,7 +232,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[37]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;buf[13] = a14;buf[14] = a15;buf[15] = a16;buf[16] = a17;buf[17] = a18;buf[18] = a19;buf[19] = a20;buf[20] = a21;buf[21] = a22;buf[22] = a23;buf[23] = a24;buf[24] = a25;buf[25] = a26;buf[26] = a27;buf[27] = a28;buf[28] = a29;buf[29] = a30;buf[30] = a31;buf[31] = a32;buf[32] = a33;buf[33] = a34;buf[34] = a35;buf[35] = a36;buf[36] = a37; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 37); \
      return; \
  } else { \

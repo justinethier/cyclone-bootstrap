@@ -29,7 +29,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
@@ -58,7 +58,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
