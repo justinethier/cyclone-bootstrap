@@ -372,6 +372,7 @@ extern object __glo_env_117make_91frame_scheme_cyclone_util;
 extern object __glo_env_117frame_91variables_scheme_cyclone_util;
 extern object __glo_env_117frame_91values_scheme_cyclone_util;
 extern object __glo_env_117add_91binding_91to_91frame_67_scheme_cyclone_util;
+extern object __glo_env_117all_91variables_scheme_cyclone_util;
 extern object __glo_env_117extend_91environment_scheme_cyclone_util;
 extern object __glo_env_117lookup_scheme_cyclone_util;
 extern object __glo_env_117lookup_91variable_91value_scheme_cyclone_util;
@@ -385,6 +386,7 @@ extern object __glo_mangle_91global_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
+extern object __glo_flatten_scheme_cyclone_util;
 extern object __glo_list_91index2_scheme_cyclone_util;
 extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
 extern object __glo_list_91prefix_127_scheme_cyclone_util;
@@ -7058,6 +7060,7 @@ static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object v
     
     mclosure0(c_732063,__lambda_288); object c_732064 = Cyc_command_line_arguments(data,&c_732063);
 return_direct1(data,__lambda_288,c_732064);
+;
 }
 int main(int argc,char **argv)
 {gc_thread_data *thd;
