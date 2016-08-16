@@ -482,9 +482,14 @@
          (apply-primitive-procedure proc args))
         ((compound-procedure? proc)
          ((procedure-body proc)
-          (env:extend-environment (procedure-parameters proc)
-                              args
-                              (procedure-environment proc))))
+          (env:extend-environment 
+            ;; TODO: need to pass lambdas as a list (depending on type), and 
+            ;; split up args accordingly (create a list for varargs)
+
+            ;(lambda-formals->list
+              (procedure-parameters proc);)
+            args
+            (procedure-environment proc))))
         ((procedure? proc)
          (apply 
            proc 

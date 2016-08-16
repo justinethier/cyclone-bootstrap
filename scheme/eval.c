@@ -267,6 +267,7 @@ extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
+extern object __glo_pair_91_125list_scheme_cyclone_util;
 extern object __glo_env_117enclosing_91environment_scheme_cyclone_util;
 extern object __glo_env_117first_91frame_scheme_cyclone_util;
 extern object __glo_env_117the_91empty_91environment_scheme_cyclone_util;
