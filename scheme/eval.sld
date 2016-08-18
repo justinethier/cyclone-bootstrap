@@ -483,12 +483,11 @@
         ((compound-procedure? proc)
          ((procedure-body proc)
           (env:extend-environment 
-            ;; TODO: need to pass lambdas as a list (depending on type), and 
-            ;; split up args accordingly (create a list for varargs)
-
             (formals->list 
               (procedure-parameters proc))
-            args
+            (pack-lambda-arguments 
+               (procedure-parameters proc)
+               args)
             (procedure-environment proc))))
         ((procedure? proc)
          (apply 
