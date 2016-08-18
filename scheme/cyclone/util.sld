@@ -22,6 +22,7 @@
     lambda->formals
     lambda-formals-type
     lambda-varargs-var
+    pack-lambda-arguments
     ;; Environments
     env:enclosing-environment
     env:first-frame
@@ -44,7 +45,6 @@
     mangle
     mangle-global
     ;; Scheme library functions
-    util:take
     gensym
     delete
     delete-duplicates
@@ -54,6 +54,7 @@
     list-insert-at!
     list-prefix?
     string-replace-all
+    take
     filter)
   (begin
 
@@ -136,10 +137,10 @@
     ((args:varargs)
      (list args))
     ((args:fixed-with-varargs)
-     (let ((num-req-args (length/obj formals)))
-       ;; TODO: take num-required-args and append
-       ;;  the last (optional) arg as a (possibly empty) list
-       'TODO))
+     (let* ((num-req-args (length/obj formals))
+            (areq (take args num-req-args))
+            (aopt (list-tail args num-req-args)))
+      (append areq (list aopt))))
     (else
      args)))
 
@@ -152,7 +153,9 @@
       (else
        len))))
 
-(define (util:take lis k)
+; take : list -> integer -> list
+; The take function from SRFI 1
+(define (take lis k)
   ;(check-arg integer? k take)
   (let recur ((lis lis) (k k))
     (if (zero? k) '()
