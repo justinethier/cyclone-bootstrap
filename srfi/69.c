@@ -234,6 +234,12 @@ object __glo_string_91ci_91hash_srfi_69 = NULL;
 object __glo_string_91hash_srfi_69 = NULL;
 object __glo__75string_91hash_srfi_69 = NULL;
 object __glo__85default_91bound_85_srfi_69 = NULL;
+extern object __glo_member_scheme_base;
+extern object __glo_memv_scheme_base;
+extern object __glo_memq_scheme_base;
+extern object __glo_assoc_scheme_base;
+extern object __glo_assv_scheme_base;
+extern object __glo_assq_scheme_base;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
@@ -4679,7 +4685,7 @@ static void __lambda_87(void *data, int argc, object self_73933, object r_73559)
 
 static void __lambda_86(void *data, int argc, object self_73934, object k_73566) {
   if( (boolean_f != Cyc_eq(((closureN)self_73934)->elements[0], primitive_equal_127)) ){ 
-  return_closcall1(data,  k_73566,  primitive_assoc);
+  return_closcall1(data,  k_73566,  __glo_assoc_scheme_base);
 } else { 
   return_closcall1(data,  k_73566,  boolean_f);}
 ; 
@@ -4687,7 +4693,7 @@ static void __lambda_86(void *data, int argc, object self_73934, object k_73566)
 
 static void __lambda_85(void *data, int argc, object self_73935, object k_73568) {
   if( (boolean_f != Cyc_eq(((closureN)self_73935)->elements[0], primitive_eqv_127)) ){ 
-  return_closcall1(data,  k_73568,  primitive_assv);
+  return_closcall1(data,  k_73568,  __glo_assv_scheme_base);
 } else { 
   return_closcall1(data,  k_73568,  boolean_f);}
 ; 
@@ -4695,7 +4701,7 @@ static void __lambda_85(void *data, int argc, object self_73935, object k_73568)
 
 static void __lambda_84(void *data, int argc, object self_73936, object k_73570) {
   if( (boolean_f != Cyc_eq(((closureN)self_73936)->elements[0], primitive_eq_127)) ){ 
-  return_closcall1(data,  k_73570,  primitive_assq);
+  return_closcall1(data,  k_73570,  __glo_assq_scheme_base);
 } else { 
   return_closcall1(data,  k_73570,  boolean_f);}
 ; 

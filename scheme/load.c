@@ -97,6 +97,12 @@ if (type_is_pair_prim(clo)) { \
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemeload_scheme_load = NULL;
 object __glo_load_scheme_load = NULL;
+extern object __glo_member_scheme_base;
+extern object __glo_memv_scheme_base;
+extern object __glo_memq_scheme_base;
+extern object __glo_assoc_scheme_base;
+extern object __glo_assv_scheme_base;
+extern object __glo_assq_scheme_base;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
