@@ -132,9 +132,9 @@ c_7337.elements = (object *)alloca(sizeof(object) * 1);
 c_7337.elements[0] = ((closureN)self_7324)->elements[0];
 
 
-make_string(c_7360, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@      Cyclone  \n       @@     @@     Scheme-to-C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@        \n       @@     #@     (c) 2014-2016 Justin Ethier\n       `@@@#@@@.     Version ");
+make_string(c_7360, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2016 Justin Ethier\n       @@     #@     Version ");
 
-make_string(c_7361, "\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
+make_string(c_7361, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
 
 object c_7359 = Cyc_string_append(data,(closure)&c_7337,3,&c_7360, __glo__85version_85_scheme_cyclone_common, &c_7361);
 return_closcall1(data,(closure)&c_7337,  c_7359);; 
