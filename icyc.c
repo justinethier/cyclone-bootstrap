@@ -29,7 +29,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[1]; buf[0] = a1; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
@@ -58,7 +58,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[2]; buf[0] = a1;buf[1] = a2; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
@@ -87,7 +87,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 3); \
      return; \
  } else { \
@@ -116,7 +116,7 @@ if (type_is_pair_prim(clo)) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
      object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
-     mclosure0(c1, _fn); \
+     mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 4); \
      return; \
  } else { \
@@ -153,6 +153,7 @@ extern object __glo_lib_117read_91imports_scheme_cyclone_libraries;
 extern object __glo_lib_117import_91_125export_91list_scheme_cyclone_libraries;
 extern object __glo_lib_117resolve_91imports_scheme_cyclone_libraries;
 extern object __glo_lib_117resolve_91meta_scheme_cyclone_libraries;
+extern object __glo_lib_117get_91all_scheme_cyclone_libraries;
 extern object __glo_lib_117get_91all_91import_91deps_scheme_cyclone_libraries;
 extern object __glo_lib_117get_91dep_91list_scheme_cyclone_libraries;
 extern object __glo_lib_117imports_91_125idb_scheme_cyclone_libraries;
@@ -163,6 +164,14 @@ extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
+extern object __glo_pair_91_125list_scheme_cyclone_util;
+extern object __glo_formals_91_125list_scheme_cyclone_util;
+extern object __glo_lambda_91formals_91_125list_scheme_cyclone_util;
+extern object __glo_lambda_91varargs_127_scheme_cyclone_util;
+extern object __glo_lambda_91_125formals_scheme_cyclone_util;
+extern object __glo_lambda_91formals_91type_scheme_cyclone_util;
+extern object __glo_lambda_91varargs_91var_scheme_cyclone_util;
+extern object __glo_pack_91lambda_91arguments_scheme_cyclone_util;
 extern object __glo_env_117enclosing_91environment_scheme_cyclone_util;
 extern object __glo_env_117first_91frame_scheme_cyclone_util;
 extern object __glo_env_117the_91empty_91environment_scheme_cyclone_util;
@@ -185,11 +194,19 @@ extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
 extern object __glo_flatten_scheme_cyclone_util;
+extern object __glo_length_95obj_scheme_cyclone_util;
 extern object __glo_list_91index2_scheme_cyclone_util;
 extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
 extern object __glo_list_91prefix_127_scheme_cyclone_util;
 extern object __glo_string_91replace_91all_scheme_cyclone_util;
+extern object __glo_take_scheme_cyclone_util;
 extern object __glo_filter_scheme_cyclone_util;
+extern object __glo_member_scheme_base;
+extern object __glo_memv_scheme_base;
+extern object __glo_memq_scheme_base;
+extern object __glo_assoc_scheme_base;
+extern object __glo_assv_scheme_base;
+extern object __glo_assq_scheme_base;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
@@ -385,6 +402,136 @@ extern object __glo_eval_scheme_eval;
 extern object __glo_eval_91from_91c_scheme_eval;
 extern object __glo_create_91environment_scheme_eval;
 extern object __glo_setup_91environment_scheme_eval;
+extern object __glo_xcons_srfi_1;
+extern object __glo_tree_91copy_srfi_1;
+extern object __glo_make_91list_scheme_base;
+extern object __glo_list_91tabulate_srfi_1;
+extern object __glo_cons_85_srfi_1;
+extern object __glo_list_91copy_scheme_base;
+extern object __glo_proper_91list_127_srfi_1;
+extern object __glo_circular_91list_127_srfi_1;
+extern object __glo_dotted_91list_127_srfi_1;
+extern object __glo_not_91pair_127_srfi_1;
+extern object __glo_null_91list_127_srfi_1;
+extern object __glo_list_123_srfi_1;
+extern object __glo_circular_91list_srfi_1;
+extern object __glo_length_87_srfi_1;
+extern object __glo_iota_srfi_1;
+extern object __glo_first_srfi_1;
+extern object __glo_second_srfi_1;
+extern object __glo_third_srfi_1;
+extern object __glo_fourth_srfi_1;
+extern object __glo_fifth_srfi_1;
+extern object __glo_sixth_srfi_1;
+extern object __glo_seventh_srfi_1;
+extern object __glo_eighth_srfi_1;
+extern object __glo_ninth_srfi_1;
+extern object __glo_tenth_srfi_1;
+extern object __glo_car_87cdr_srfi_1;
+extern object __glo_take_scheme_cyclone_util;
+extern object __glo_drop_srfi_1;
+extern object __glo_take_91right_srfi_1;
+extern object __glo_drop_91right_srfi_1;
+extern object __glo_take_67_srfi_1;
+extern object __glo_drop_91right_67_srfi_1;
+extern object __glo_split_91at_srfi_1;
+extern object __glo_split_91at_67_srfi_1;
+extern object __glo_last_srfi_1;
+extern object __glo_last_91pair_srfi_1;
+extern object __glo_zip_srfi_1;
+extern object __glo_unzip1_srfi_1;
+extern object __glo_unzip2_srfi_1;
+extern object __glo_unzip3_srfi_1;
+extern object __glo_unzip4_srfi_1;
+extern object __glo_unzip5_srfi_1;
+extern object __glo_count_srfi_1;
+extern object __glo_append_67_srfi_1;
+extern object __glo_append_91reverse_srfi_1;
+extern object __glo_append_91reverse_67_srfi_1;
+extern object __glo_concatenate_srfi_1;
+extern object __glo_concatenate_67_srfi_1;
+extern object __glo_unfold_srfi_1;
+extern object __glo_fold_srfi_1;
+extern object __glo_pair_91fold_srfi_1;
+extern object __glo_reduce_srfi_1;
+extern object __glo_unfold_91right_srfi_1;
+extern object __glo_fold_91right_srfi_1;
+extern object __glo_pair_91fold_91right_srfi_1;
+extern object __glo_reduce_91right_srfi_1;
+extern object __glo_append_91map_srfi_1;
+extern object __glo_append_91map_67_srfi_1;
+extern object __glo_map_67_srfi_1;
+extern object __glo_pair_91for_91each_srfi_1;
+extern object __glo_filter_91map_srfi_1;
+extern object __glo_map_91in_91order_srfi_1;
+extern object __glo_filter_scheme_cyclone_util;
+extern object __glo_partition_srfi_1;
+extern object __glo_remove_srfi_1;
+extern object __glo_filter_67_srfi_1;
+extern object __glo_partition_67_srfi_1;
+extern object __glo_remove_67_srfi_1;
+extern object __glo_find_srfi_1;
+extern object __glo_find_91tail_srfi_1;
+extern object __glo_any_scheme_base;
+extern object __glo_every_scheme_base;
+extern object __glo_list_91index_srfi_1;
+extern object __glo_take_91while_srfi_1;
+extern object __glo_drop_91while_srfi_1;
+extern object __glo_take_91while_67_srfi_1;
+extern object __glo_span_srfi_1;
+extern object __glo__break_srfi_1;
+extern object __glo_span_67_srfi_1;
+extern object __glo_break_67_srfi_1;
+extern object __glo_delete_scheme_cyclone_util;
+extern object __glo_delete_67_srfi_1;
+extern object __glo_alist_91cons_srfi_1;
+extern object __glo_alist_91copy_srfi_1;
+extern object __glo_delete_91duplicates_scheme_cyclone_util;
+extern object __glo_delete_91duplicates_67_srfi_1;
+extern object __glo_alist_91delete_srfi_1;
+extern object __glo_alist_91delete_67_srfi_1;
+extern object __glo_reverse_67_srfi_1;
+extern object __glo_lset_121_123_srfi_1;
+extern object __glo_lset_123_srfi_1;
+extern object __glo_lset_91adjoin_srfi_1;
+extern object __glo_lset_91union_srfi_1;
+extern object __glo_lset_91intersection_srfi_1;
+extern object __glo_lset_91difference_srfi_1;
+extern object __glo_lset_91xor_srfi_1;
+extern object __glo_lset_91diff_87intersection_srfi_1;
+extern object __glo_lset_91union_67_srfi_1;
+extern object __glo_lset_91intersection_67_srfi_1;
+extern object __glo_lset_91difference_67_srfi_1;
+extern object __glo_lset_91xor_67_srfi_1;
+extern object __glo_lset_91diff_87intersection_67_srfi_1;
+extern object __glo_and_91let_85_srfi_2;
+extern object __glo_vector_91unfold_srfi_133;
+extern object __glo_vector_91unfold_91right_srfi_133;
+extern object __glo_vector_91reverse_91copy_srfi_133;
+extern object __glo_vector_91concatenate_srfi_133;
+extern object __glo_vector_91append_91subvectors_srfi_133;
+extern object __glo_vector_91empty_127_srfi_133;
+extern object __glo_vector_123_srfi_133;
+extern object __glo_vector_91fold_srfi_133;
+extern object __glo_vector_91fold_91right_srfi_133;
+extern object __glo_vector_91map_67_srfi_133;
+extern object __glo_vector_91count_srfi_133;
+extern object __glo_vector_91cumulate_srfi_133;
+extern object __glo_vector_91index_srfi_133;
+extern object __glo_vector_91index_91right_srfi_133;
+extern object __glo_vector_91skip_srfi_133;
+extern object __glo_vector_91skip_91right_srfi_133;
+extern object __glo_vector_91binary_91search_srfi_133;
+extern object __glo_vector_91any_srfi_133;
+extern object __glo_vector_91every_srfi_133;
+extern object __glo_vector_91partition_srfi_133;
+extern object __glo_vector_91swap_67_srfi_133;
+extern object __glo_vector_91reverse_67_srfi_133;
+extern object __glo_vector_91reverse_91copy_67_srfi_133;
+extern object __glo_vector_91unfold_67_srfi_133;
+extern object __glo_vector_91unfold_91right_67_srfi_133;
+extern object __glo_reverse_91vector_91_125list_srfi_133;
+extern object __glo_reverse_91list_91_125vector_srfi_133;
 extern object __glo_make_91hash_91table_srfi_69;
 extern object __glo_hash_91table_127_srfi_69;
 extern object __glo_alist_91_125hash_91table_srfi_69;
@@ -869,6 +1016,10 @@ extern void c_schemebase_entry_pt(void *data, int argc, closure cont, object val
 extern void c_schemecomplex_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_scheme_char_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_srfi69_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_schemecxr_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_srfi133_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_srfi2_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_srfi1_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemetime_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeprocess_91context_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeinexact_entry_pt(void *data, int argc, closure cont, object value);
@@ -919,12 +1070,16 @@ mclosure1(c_73212, c_schemefile_entry_pt, &c_73211);
 mclosure1(c_73213, c_schemeinexact_entry_pt, &c_73212);
 mclosure1(c_73214, c_schemeprocess_91context_entry_pt, &c_73213);
 mclosure1(c_73215, c_schemetime_entry_pt, &c_73214);
-mclosure1(c_73216, c_srfi69_entry_pt, &c_73215);
-mclosure1(c_73217, c_scheme_char_entry_pt, &c_73216);
-mclosure1(c_73218, c_schemecomplex_entry_pt, &c_73217);
-mclosure1(c_73219, c_schemebase_entry_pt, &c_73218);
-mclosure1(c_73220, c_schemecyclonecommon_entry_pt, &c_73219);
-(c_73220.fn)(data, 0, &c_73220, &c_73220);
+mclosure1(c_73216, c_srfi1_entry_pt, &c_73215);
+mclosure1(c_73217, c_srfi2_entry_pt, &c_73216);
+mclosure1(c_73218, c_srfi133_entry_pt, &c_73217);
+mclosure1(c_73219, c_schemecxr_entry_pt, &c_73218);
+mclosure1(c_73220, c_srfi69_entry_pt, &c_73219);
+mclosure1(c_73221, c_scheme_char_entry_pt, &c_73220);
+mclosure1(c_73222, c_schemecomplex_entry_pt, &c_73221);
+mclosure1(c_73223, c_schemebase_entry_pt, &c_73222);
+mclosure1(c_73224, c_schemecyclonecommon_entry_pt, &c_73223);
+(c_73224.fn)(data, 0, &c_73224, &c_73224);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
   
@@ -934,6 +1089,7 @@ static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object v
     
 mclosure0(c_73160, (function_type)__lambda_33);c_73160.num_args = 1;
 return_closcall2(data,  __glo_display_scheme_write,  &c_73160, __glo__85Cyc_91version_91banner_85_scheme_cyclone_common);
+;
 }
 int main(int argc,char **argv)
 {gc_thread_data *thd;
