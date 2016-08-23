@@ -6,7 +6,7 @@
 
 include Makefile.config
 
-COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/1 srfi/2 srfi/9 srfi/18 srfi/27 srfi/69 srfi/111 srfi/133
+COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/1 srfi/2 srfi/9 srfi/18 srfi/27 srfi/69 srfi/111 srfi/132 srfi/133
 CFILES = $(addsuffix .c, $(COBJ))
 COBJECTS=$(CFILES:.c=.o)
 
@@ -59,10 +59,12 @@ install-deps:
 	$(MKDIR) $(DESTDIR)$(DATADIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi
+	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
 	$(INSTALL) -m0644 scheme/*.sld $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
+	$(INSTALL) -m0644 srfi/sorting/*.scm $(DESTDIR)$(DATADIR)/srfi/sorting
 
 install-libs:
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
@@ -89,6 +91,7 @@ install:
 	$(MKDIR) $(DESTDIR)$(DATADIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi
+	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0755 cyclone $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0755 icyc $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
@@ -99,6 +102,7 @@ install:
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.scm $(DESTDIR)$(DATADIR)/srfi
+	$(INSTALL) -m0644 srfi/sorting/*.scm $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0644 srfi/*.meta $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.o $(DESTDIR)$(DATADIR)/srfi
 
