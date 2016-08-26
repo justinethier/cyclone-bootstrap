@@ -30341,8 +30341,8 @@ return_closcall1(data,  k_732622,  obj_73735);;
 
 static void __lambda_1191(void *data, int argc, closure _, object k, object port) { Cyc_io_get_output_string(data, k, port);
      }
-static void __lambda_1190(void *data, int argc, closure _, object k) { port_type p = Cyc_io_open_output_string(data);
-      return_closcall1(data, k, &p);  }
+static void __lambda_1190(void *data, int argc, closure _, object k) { port_type *p = Cyc_io_open_output_string(data);
+      return_closcall1(data, k, p);  }
 static void __lambda_1189(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
       Cyc_check_port(data, port);
       return_closcall1(
