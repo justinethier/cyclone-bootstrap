@@ -15,8 +15,9 @@ COBJECTS=$(CFILES:.c=.o)
 
 all: cyclone icyc-c
 
-libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
+libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mem-streams.c
 	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
+	$(CC) $(CFLAGS) -c mem-streams.c -o mem-streams.o
 	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
 	$(CC) $(CFLAGS) -c \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
@@ -27,7 +28,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c
   -DCYC_CC_EXEC=\"$(CC_EXEC)\" \
   -DCYC_CC_LIB=\"$(CC_LIB)\" \
   runtime.c -o runtime.o
-	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o
+	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mem-streams.o
 
 cyclone: $(CFILES) $(COBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
