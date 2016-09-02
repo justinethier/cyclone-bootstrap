@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.1.6 (alpha)
+ ** Version 0.1.6 (beta)
  **
  **/
 
@@ -297,6 +297,9 @@ extern object __glo_output_91port_91open_127_scheme_base;
 extern object __glo_get_91output_91string_scheme_base;
 extern object __glo_open_91output_91string_scheme_base;
 extern object __glo_open_91input_91string_scheme_base;
+extern object __glo_get_91output_91bytevector_scheme_base;
+extern object __glo_open_91input_91bytevector_scheme_base;
+extern object __glo_open_91output_91bytevector_scheme_base;
 extern object __glo_features_scheme_base;
 extern object __glo_Cyc_91version_scheme_base;
 extern object __glo_any_scheme_base;
