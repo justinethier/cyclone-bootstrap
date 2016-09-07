@@ -56,8 +56,11 @@ unit-tests: unit-tests.scm
 clean:
 	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o srfi/*.o unit-tests.c
 
-# Install dependencies required to actually build this project
-install-deps:
+install:
+#make install-deps
+#make install-libs
+#make install-cyclone
+#install-deps:
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
 	$(MKDIR) $(DESTDIR)$(INCDIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)
@@ -71,12 +74,10 @@ install-deps:
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/list-queues/*.scm $(DESTDIR)$(DATADIR)/srfi/list-queues
 	$(INSTALL) -m0644 srfi/sorting/*.scm $(DESTDIR)$(DATADIR)/srfi/sorting
-
-install-libs:
+#install-libs:
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
 	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
-
-install-cyclone:
+#install-cyclone:
 	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi
@@ -84,13 +85,7 @@ install-cyclone:
 	$(INSTALL) -m0644 scheme/*.o $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.o $(DESTDIR)$(DATADIR)/srfi
-
-# Install everything. Can not call this directly initially as 
-# dependencies are required by portions of the build.
-install:
-	make install-deps
-	make install-libs
-	make install-cyclone
+#install:
 	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
 	$(MKDIR) $(DESTDIR)$(INCDIR)
