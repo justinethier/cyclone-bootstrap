@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.1.6 (beta)
+ ** Version 0.2 (beta)
  **
  **/
 
@@ -396,7 +396,10 @@ extern object __glo_asin_scheme_inexact;
 extern object __glo_atan_scheme_inexact;
 extern object __glo_cos_scheme_inexact;
 extern object __glo_exp_scheme_inexact;
+extern object __glo_finite_127_scheme_inexact;
+extern object __glo_infinite_127_scheme_inexact;
 extern object __glo_log_scheme_inexact;
+extern object __glo_nan_127_scheme_inexact;
 extern object __glo_sin_scheme_inexact;
 extern object __glo_sqrt_scheme_inexact;
 extern object __glo_tan_scheme_inexact;
