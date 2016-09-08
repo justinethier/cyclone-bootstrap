@@ -212,7 +212,7 @@ void c_schemecyclonecommon_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85version_85_scheme_cyclone_common = boolean_f; 
   make_string(c_7330, "beta"); 
   __glo__85version_91name_85_scheme_cyclone_common = &c_7330; 
-  make_string(c_7329, "0.2"); 
+  make_string(c_7329, "0.2.1"); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7329; 
 
   make_cvar(cvar_7369, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7370, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7369);
