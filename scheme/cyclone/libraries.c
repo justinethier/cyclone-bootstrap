@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.2 (beta)
+ ** Version 0.2.1 (beta)
  **
  **/
 
@@ -368,6 +368,11 @@ extern object __glo_env_117lookup_91variable_91value_scheme_cyclone_util;
 extern object __glo_env_117_191lookup_91variable_91value_scheme_cyclone_util;
 extern object __glo_env_117set_91variable_91value_67_scheme_cyclone_util;
 extern object __glo_env_117define_91variable_67_scheme_cyclone_util;
+extern object __glo_make_91syntactic_91closure_scheme_cyclone_util;
+extern object __glo_strip_91syntactic_91closures_scheme_cyclone_util;
+extern object __glo_identifier_91_125symbol_scheme_cyclone_util;
+extern object __glo_identifier_127_scheme_cyclone_util;
+extern object __glo_identifier_123_127_scheme_cyclone_util;
 extern object __glo_Cyc_91er_91rename_scheme_cyclone_util;
 extern object __glo_Cyc_91er_91compare_127_scheme_cyclone_util;
 extern object __glo_mangle_scheme_cyclone_util;
