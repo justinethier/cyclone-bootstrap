@@ -20,6 +20,7 @@
     lambda-formals->list
     lambda-varargs?
     lambda->formals
+    lambda->exp 
     lambda-formals-type
     lambda-varargs-var
     pack-lambda-arguments
@@ -96,11 +97,6 @@
 ; lambda? : exp -> boolean
 (define (lambda? exp)
   (tagged-list? 'lambda exp))
-
-
-
-
-
 
 ; if->condition : if-exp -> exp
 (define (if->condition exp)
@@ -193,9 +189,6 @@
 (define (define-c? exp)
   (tagged-list? 'define-c exp))
 
-
-
-
 ;; Create a proper copy of an improper list
 ;; EG: (1 2 . 3) ==> (1 2 3)
 (define (pair->list p)
@@ -207,6 +200,10 @@
 ; lambda->formals : lambda-exp -> list[symbol]
 (define (lambda->formals exp)
   (cadr exp))
+
+; lambda->exp : lambda-exp -> exp
+(define (lambda->exp exp)
+  (cddr exp)) ;; JAE - changed from caddr, so we can handle multiple expressions
 
 (define (lambda-varargs-var exp)
   (if (lambda-varargs? exp)
