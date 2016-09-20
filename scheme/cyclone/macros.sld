@@ -99,17 +99,26 @@
           (env:all-values env)
           *macro:renamed-variables*)))
 
-    #;(define (macro:cleanup expr)
+    (define (macro:cleanup expr)
       (define (clean expr bv) ;; Bound variables
+(newline)
+(display "/* macro:cleanup->clean\n ")
+(write expr)
+(newline)
+(display "*/ ")
          (cond 
            ((const? expr)      expr)
-           ((prim? expr)       expr)
+           ((null? expr)       expr)
+           ;((prim? expr)       expr)
            ((quote? expr)      expr)
            ((define-c? expr)   expr)
            ((ref? expr)        
-            ;; TODO: if symbol has been renamed and is not a bound variable,
-            ;;       undo the rename
-            expr)
+            ;; if symbol has been renamed and is not a bound variable,
+            ;; undo the rename
+            (let ((val (env:lookup expr *macro:renamed-variables* #f)))
+              (if (and val (not (member expr bv)))
+                  (clean val bv)
+                  expr)))
            ((if? expr)
             `(if ,(clean (if->condition expr) bv)
                  ,(clean (if->then expr) bv)
@@ -121,7 +130,7 @@
                ,@(map (lambda (e) 
                         (clean e (cons (lambda-formals->list expr) 
                                        bv)))
-                      (lambda->exp))))
+                      (lambda->exp expr))))
            ;; At this point defines cannot be in lambda form. 
            ;; EG: (define (f x) ...)
            ((define? expr)
@@ -138,8 +147,8 @@
             (map (lambda (e) (clean e bv)) 
                  expr))
            (else
-            (error "macro cleanup unexpected expression: " expr)))
-      (clean expr '())))
+            (error "macro cleanup unexpected expression: " expr))))
+      (clean expr '()))
       
     ; TODO: get macro name, transformer
     ; TODO: let-syntax forms
