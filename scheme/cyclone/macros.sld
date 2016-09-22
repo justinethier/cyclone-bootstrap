@@ -29,8 +29,6 @@
     ;; A list of all macros defined by the program/library being compiled
     (define *macro:defined-macros* '())
 
-    (define *macro:renamed-variables* (env:extend-environment '() '() '()))
-
     (define (macro:add! name body)
       (set! *macro:defined-macros* 
         (cons (cons name body) *macro:defined-macros*))
@@ -54,7 +52,8 @@
 
     (define (macro:macro? exp defined-macros) (assoc (car exp) defined-macros))
 
-    (define (macro:expand exp macro mac-env)
+    (define *macro:renamed-variables* (env:extend-environment '() '() '()))
+    (define (macro:expand exp macro mac-env) ;;rename-tbl
       (let* ((use-env (env:extend-environment '() '() '()))
              (compiled-macro? (or (Cyc-macro? (Cyc-get-cvar (cadr macro)))
                                   (procedure? (cadr macro))))
@@ -88,16 +87,16 @@
 ;        (newline)
 ;        (display (list result))
 ;        (display "*/ ")
-          (macro:add-renamed-vars! use-env)
+          (macro:add-renamed-vars! use-env *macro:renamed-variables*)
           result))
 
-    (define (macro:add-renamed-vars! env)
-      ;; TODO: change this to use a hash table
-      (set! *macro:renamed-variables*
-        (env:extend-environment
+    (define (macro:add-renamed-vars! env renamed-env)
+      (let ((frame (env:first-frame renamed-env)))
+        (for-each
+          (lambda (var val)
+            (env:add-binding-to-frame! var val frame))
           (env:all-variables env)
-          (env:all-values env)
-          *macro:renamed-variables*)))
+          (env:all-values env))))
 
     (define (macro:cleanup expr)
       (define (clean expr bv) ;; Bound variables
