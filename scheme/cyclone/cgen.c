@@ -522,6 +522,8 @@ extern object __glo_string_91ci_125_123_127_scheme__char;
 extern object __glo_string_91ci_125_127_scheme__char;
 extern object __glo_display_scheme_write;
 extern object __glo_write_scheme_write;
+extern object __glo_write_91shared_scheme_write;
+extern object __glo_write_91simple_scheme_write;
 extern object __glo_prim_127_scheme_cyclone_primitives;
 extern object __glo__85primitives_85_scheme_cyclone_primitives;
 extern object __glo__85primitives_91num_91args_85_scheme_cyclone_primitives;
@@ -18555,7 +18557,7 @@ void c_schemecyclonecgen_entry_pt(data, argc, cont,value) void *data; int argc; 
   __glo__85globals_85_scheme_cyclone_cgen = boolean_f; 
   __glo__85c_91call_91arity_85_scheme_cyclone_cgen = boolean_f; 
   __glo__85c_91call_91max_91args_85_scheme_cyclone_cgen = obj_int2obj(128); 
-  make_string(c_732824, "int main(int argc,char **argv)\n{gc_thread_data *thd;\n long stack_size = global_stack_size = STACK_SIZE;\n long heap_size = global_heap_size = HEAP_SIZE;\n mclosure0(clos_halt,&Cyc_halt);  // Halt if final closure is reached\n mclosure0(entry_pt,&c_entry_pt); // First function to execute\n _cyc_argc = argc;\n _cyc_argv = argv;\n gc_initialize();\n thd = malloc(sizeof(gc_thread_data));\n gc_thread_data_init(thd, 0, (char *) &stack_size, stack_size);\n thd->gc_cont = &entry_pt;\n thd->gc_args[0] = &clos_halt;\n thd->gc_num_args = 1;\n gc_add_mutator(thd);\n Cyc_heap_init(heap_size);\n thd->thread_state = CYC_THREAD_STATE_RUNNABLE;\n Cyc_start_trampoline(thd);\n return 0;}"); 
+  make_string(c_732824, "int main(int argc, char **argv, char **envp)\n{gc_thread_data *thd;\n long stack_size = global_stack_size = STACK_SIZE;\n long heap_size = global_heap_size = HEAP_SIZE;\n mclosure0(clos_halt,&Cyc_halt);  // Halt if final closure is reached\n mclosure0(entry_pt,&c_entry_pt); // First function to execute\n _cyc_argc = argc;\n _cyc_argv = argv;\n set_env_variables(envp);\n gc_initialize();\n thd = malloc(sizeof(gc_thread_data));\n gc_thread_data_init(thd, 0, (char *) &stack_size, stack_size);\n thd->gc_cont = &entry_pt;\n thd->gc_args[0] = &clos_halt;\n thd->gc_num_args = 1;\n gc_add_mutator(thd);\n Cyc_heap_init(heap_size);\n thd->thread_state = CYC_THREAD_STATE_RUNNABLE;\n Cyc_start_trampoline(thd);\n return 0;}"); 
   __glo__85c_91main_91function_85_scheme_cyclone_cgen = &c_732824; 
 
   make_cvar(cvar_737251, (object *)&__glo_lib_91init_117schemecyclonecgen_scheme_cyclone_cgen);make_pair(pair_737252, find_or_add_symbol("lib-init:schemecyclonecgen"), &cvar_737251);
