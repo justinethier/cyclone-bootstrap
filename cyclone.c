@@ -361,6 +361,8 @@ extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
 extern object __glo_display_scheme_write;
 extern object __glo_write_scheme_write;
+extern object __glo_write_91shared_scheme_write;
+extern object __glo_write_91simple_scheme_write;
 extern object __glo_ast_117make_91lambda_scheme_cyclone_ast;
 extern object __glo_ast_117_75make_91lambda_scheme_cyclone_ast;
 extern object __glo_ast_117lambda_127_scheme_cyclone_ast;
@@ -7571,7 +7573,7 @@ static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object v
 return_direct1(data,__lambda_305,c_732202);
 ;
 }
-int main(int argc,char **argv)
+int main(int argc, char **argv, char **envp)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
  long heap_size = global_heap_size = HEAP_SIZE;
@@ -7579,6 +7581,7 @@ int main(int argc,char **argv)
  mclosure0(entry_pt,&c_entry_pt); // First function to execute
  _cyc_argc = argc;
  _cyc_argv = argv;
+ set_env_variables(envp);
  gc_initialize();
  thd = malloc(sizeof(gc_thread_data));
  gc_thread_data_init(thd, 0, (char *) &stack_size, stack_size);

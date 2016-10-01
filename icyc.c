@@ -413,6 +413,8 @@ extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
 extern object __glo_display_scheme_write;
 extern object __glo_write_scheme_write;
+extern object __glo_write_91shared_scheme_write;
+extern object __glo_write_91simple_scheme_write;
 extern object __glo_acos_scheme_inexact;
 extern object __glo_asin_scheme_inexact;
 extern object __glo_atan_scheme_inexact;
@@ -428,6 +430,7 @@ extern object __glo_tan_scheme_inexact;
 extern object __glo_command_91line_scheme_process_91context;
 extern object __glo_emergency_91exit_scheme_process_91context;
 extern object __glo_get_91environment_91variable_scheme_process_91context;
+extern object __glo_get_91environment_91variables_scheme_process_91context;
 extern object __glo_current_91second_scheme_time;
 extern object __glo_current_91jiffy_scheme_time;
 extern object __glo_jiffies_91per_91second_scheme_time;
@@ -1127,7 +1130,7 @@ mclosure0(c_73230, (function_type)__lambda_41);c_73230.num_args = 1;
 return_closcall2(data,  __glo_display_scheme_write,  &c_73230, __glo__85Cyc_91version_91banner_85_scheme_cyclone_common);
 ;
 }
-int main(int argc,char **argv)
+int main(int argc, char **argv, char **envp)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
  long heap_size = global_heap_size = HEAP_SIZE;
@@ -1135,6 +1138,7 @@ int main(int argc,char **argv)
  mclosure0(entry_pt,&c_entry_pt); // First function to execute
  _cyc_argc = argc;
  _cyc_argv = argv;
+ set_env_variables(envp);
  gc_initialize();
  thd = malloc(sizeof(gc_thread_data));
  gc_thread_data_init(thd, 0, (char *) &stack_size, stack_size);

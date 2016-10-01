@@ -408,6 +408,8 @@ extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
 extern object __glo_display_scheme_write;
 extern object __glo_write_scheme_write;
+extern object __glo_write_91shared_scheme_write;
+extern object __glo_write_91simple_scheme_write;
 #include "cyclone/runtime.h"
 defsymbol(quote);
 defsymbol(quasiquote);

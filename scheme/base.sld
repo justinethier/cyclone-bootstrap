@@ -20,9 +20,6 @@
     letrec*
     guard
     guard-aux
-    ; TODO: need filter for the next two. also, they really belong in SRFI-1, not here
-    ;delete
-    ;delete-duplicates
     ;; Record types
     define-record-type
     record?
@@ -200,7 +197,7 @@
 ;    textual-port?
 ;
 ;    ;; syntax-rules
-;    parameterize
+    parameterize
 ;    define-values
 ;
 ; unclassified TODO's:
