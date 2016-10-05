@@ -333,6 +333,7 @@ extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
+extern object __glo_parameterize_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(cyc_91thread_91obj);
 static void __lambda_32(void *data, int argc, closure _,object k_7331) ;

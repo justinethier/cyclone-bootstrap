@@ -395,6 +395,7 @@ extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
+extern object __glo_parameterize_scheme_base;
 extern object __glo_char_91alphabetic_127_scheme__char;
 extern object __glo_char_91downcase_scheme__char;
 extern object __glo_char_91foldcase_scheme__char;

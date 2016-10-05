@@ -452,6 +452,7 @@ extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
+extern object __glo_parameterize_scheme_base;
 extern object __glo_caar_scheme_cxr;
 extern object __glo_cadr_scheme_cxr;
 extern object __glo_cdar_scheme_cxr;

@@ -487,6 +487,7 @@ extern object __glo_utf8_91_125string_scheme_base;
 extern object __glo_string_91_125utf8_scheme_base;
 extern object __glo_denominator_scheme_base;
 extern object __glo_numerator_scheme_base;
+extern object __glo_parameterize_scheme_base;
 extern object __glo_call_91with_91input_91file_scheme_file;
 extern object __glo_call_91with_91output_91file_scheme_file;
 extern object __glo_with_91input_91from_91file_scheme_file;
