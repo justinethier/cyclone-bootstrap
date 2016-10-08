@@ -68,6 +68,21 @@
 (define (lib:name ast) 
   (lib:list->import-set (cadr ast)))
 
+;; Convert an import-set to its corresponding library name.
+;; These are not always the same thing, but each import-set
+;; does reference a specific library.
+(define (lib:import->library-name import)
+  (cond
+    ((or (tagged-list? 'only import)
+         (tagged-list? 'except import)
+         (tagged-list? 'prefix import)
+         (tagged-list? 'rename import))
+     (lib:import->library-name 
+       (cadr import)))
+    (else
+     import)))
+
+
 ;; Convert name (as list of symbols) to a mangled string
 (define (lib:name->string name)
   (apply string-append (map mangle (lib:import->library-name name))))
@@ -205,14 +220,6 @@
     (close-input-port fp)
     imports))
 
-(define (lib:import->library-name import)
-  (cond
-    ((or (tagged-list? 'only import)
-         (tagged-list? 'except import))
-     (cadr import))
-    (else
-     import)))
-
 ;; Read export list for a given import
 (define (lib:import->export-list import)
   (let* ((lib-name (lib:import->library-name import))
@@ -222,6 +229,8 @@
          (exports (lib:exports (car lib))))
     (close-input-port fp)
     (cond
+;; TODO: how to handle these recursively? IE: import set could be
+;; a rename that has a prefix that has a library name
       ((tagged-list? 'only import)
        ;; Filter to symbols from "only" that appear in export list
        (filter
@@ -233,6 +242,9 @@
          (lambda (sym)
            (not (member sym (cddr import))))
          exports))
+      ;; TODO: if prefix or rename, can resolve to original lib identifier.
+      ;; would need another function somewhere to compute the renames though.
+      ;; maybe compute both and return a list of both???
       (else 
        exports))))
 
