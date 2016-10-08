@@ -31,6 +31,7 @@
     lib:body
     lib:includes
     lib:include-c-headers
+    lib:import->library-name
     lib:import->filename
     lib:import->metalist
     lib:import->path
@@ -52,11 +53,14 @@
   (tagged-list? 'define-library ast))
 
 ;; Convert a raw list to an import set. For example, a list might be
-;; (srfi 18) containing the number 18. An import set contains only symbols.
+;; (srfi 18) containing the number 18. An import set contains only symbols
+;; or sub-lists.
 (define (lib:list->import-set lis)
   (map
     (lambda (atom)
       (cond
+        ((pair? atom)
+         (lib:list->import-set atom))
         ((number? atom)
          (string->symbol (number->string atom)))
         (else atom)))
@@ -67,7 +71,7 @@
 
 ;; Convert name (as list of symbols) to a mangled string
 (define (lib:name->string name)
-  (apply string-append (map mangle name)))
+  (apply string-append (map mangle (lib:import->library-name name))))
 
 ;; Convert library name to a unique symbol
 (define (lib:name->symbol name)
@@ -194,21 +198,44 @@
 ;; Given a single import from an import-set, open the corresponding
 ;; library file and retrieve the library's import-set.
 (define (lib:read-imports import)
-  (let* ((dir (lib:import->filename import))
+  (let* ((lib-name (lib:import->library-name import))
+         (dir (lib:import->filename lib-name))
          (fp (open-input-file dir))
          (lib (read-all fp))
          (imports (lib:imports (car lib))))
     (close-input-port fp)
     imports))
 
+(define (lib:import->library-name import)
+  (cond
+    ((or (tagged-list? 'only import)
+         (tagged-list? 'except import))
+     (cadr import))
+    (else
+     import)))
+
 ;; Read export list for a given import
 (define (lib:import->export-list import)
-  (let* ((dir (string-append (lib:import->filename import)))
+  (let* ((lib-name (lib:import->library-name import))
+         (dir (string-append (lib:import->filename lib-name)))
          (fp (open-input-file dir))
          (lib (read-all fp))
          (exports (lib:exports (car lib))))
     (close-input-port fp)
-    exports))
+    (cond
+      ((tagged-list? 'only import)
+       ;; Filter to symbols from "only" that appear in export list
+       (filter
+         (lambda (sym)
+           (member sym exports))
+         (cddr import)))
+      ((tagged-list? 'except import)
+       (filter
+         (lambda (sym)
+           (not (member sym (cddr import))))
+         exports))
+      (else 
+       exports))))
 
 ;; Take a list of imports and resolve it to the imported vars
 (define (lib:resolve-imports imports)
@@ -232,15 +259,15 @@
  (apply
    append
    (map 
-     (lambda (import)
-       (foldr
-         (lambda (id ids)
-          (cons
-            (cons id import)
-            ids))
-        '()
-         (lib:import->export-list import))
-     )
+     (lambda (import-set)
+       (let ((lib-name (lib:import->library-name import-set)))
+         (foldr
+           (lambda (id ids)
+            (cons
+              (cons id lib-name)
+              ids))
+          '()
+           (lib:import->export-list import-set))))
      (map lib:list->import-set imports))))
 
 ;; Convert from the import DB to a list of identifiers that are imported.
@@ -259,9 +286,10 @@
         #f)))
 
 (define (lib:import->metalist import)
-  (let ((file (lib:import->filename import ".meta"))
-        (fp #f)
-        (result '()))
+  (let* ((lib-name (lib:import->library-name import))
+         (file (lib:import->filename lib-name ".meta"))
+         (fp #f)
+         (result '()))
     (cond
       ((file-exists? file)
        (set! fp (open-input-file file))
@@ -291,8 +319,9 @@
                    ;; Prevent cycles by only processing new libraries
                    ((not (assoc import-set libraries/deps))
                     ;; Find all dependencies of i (IE, libraries it imports)
-                    (let ((deps (lib:read-imports import-set))) 
-                     (set! libraries/deps (cons (cons import-set deps) libraries/deps))
+                    (let ((deps (lib:read-imports import-set))
+                          (lib-name (lib:import->library-name import-set))) 
+                     (set! libraries/deps (cons (cons lib-name deps) libraries/deps))
                      (find-deps! deps)
                    )))))
               import-sets))))
