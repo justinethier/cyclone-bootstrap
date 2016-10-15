@@ -2511,7 +2511,7 @@ return_closcall1(data,(closure)&c_733711,  quote__121_123);;
 static void __lambda_365(void *data, int argc, object self_731111, object r_73638) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731111)->elements[1]), r_73638)) ){ 
   
-object c_733721 = Cyc_num_eq(data,  ((closureN)self_731111)->elements[0],2,Cyc_length(data, ((closureN)self_731111)->elements[1]), obj_int2obj(3));
+object c_733721 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731111)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731111)->elements[0],  c_733721);
 } else { 
   return_closcall1(data,  ((closureN)self_731111)->elements[0],  boolean_f);}
@@ -2543,7 +2543,7 @@ return_closcall1(data,(closure)&c_733681,  quote__125_123);;
 static void __lambda_362(void *data, int argc, object self_731114, object r_73643) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731114)->elements[1]), r_73643)) ){ 
   
-object c_733691 = Cyc_num_eq(data,  ((closureN)self_731114)->elements[0],2,Cyc_length(data, ((closureN)self_731114)->elements[1]), obj_int2obj(3));
+object c_733691 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731114)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731114)->elements[0],  c_733691);
 } else { 
   return_closcall1(data,  ((closureN)self_731114)->elements[0],  boolean_f);}
@@ -2575,7 +2575,7 @@ return_closcall1(data,(closure)&c_733651,  quote__121);;
 static void __lambda_359(void *data, int argc, object self_731117, object r_73648) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731117)->elements[1]), r_73648)) ){ 
   
-object c_733661 = Cyc_num_eq(data,  ((closureN)self_731117)->elements[0],2,Cyc_length(data, ((closureN)self_731117)->elements[1]), obj_int2obj(3));
+object c_733661 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731117)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731117)->elements[0],  c_733661);
 } else { 
   return_closcall1(data,  ((closureN)self_731117)->elements[0],  boolean_f);}
@@ -2607,7 +2607,7 @@ return_closcall1(data,(closure)&c_733621,  quote__125);;
 static void __lambda_356(void *data, int argc, object self_731120, object r_73653) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731120)->elements[1]), r_73653)) ){ 
   
-object c_733631 = Cyc_num_eq(data,  ((closureN)self_731120)->elements[0],2,Cyc_length(data, ((closureN)self_731120)->elements[1]), obj_int2obj(3));
+object c_733631 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731120)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731120)->elements[0],  c_733631);
 } else { 
   return_closcall1(data,  ((closureN)self_731120)->elements[0],  boolean_f);}
@@ -2639,7 +2639,7 @@ return_closcall1(data,(closure)&c_733591,  quote__123);;
 static void __lambda_353(void *data, int argc, object self_731123, object r_73658) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731123)->elements[1]), r_73658)) ){ 
   
-object c_733601 = Cyc_num_eq(data,  ((closureN)self_731123)->elements[0],2,Cyc_length(data, ((closureN)self_731123)->elements[1]), obj_int2obj(3));
+object c_733601 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731123)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731123)->elements[0],  c_733601);
 } else { 
   return_closcall1(data,  ((closureN)self_731123)->elements[0],  boolean_f);}
@@ -2671,7 +2671,7 @@ return_closcall1(data,(closure)&c_733561,  quote__91);;
 static void __lambda_350(void *data, int argc, object self_731126, object r_73663) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731126)->elements[1]), r_73663)) ){ 
   
-object c_733571 = Cyc_num_eq(data,  ((closureN)self_731126)->elements[0],2,Cyc_length(data, ((closureN)self_731126)->elements[1]), obj_int2obj(3));
+object c_733571 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731126)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731126)->elements[0],  c_733571);
 } else { 
   return_closcall1(data,  ((closureN)self_731126)->elements[0],  boolean_f);}
@@ -2703,7 +2703,7 @@ return_closcall1(data,(closure)&c_733531,  quote__87);;
 static void __lambda_347(void *data, int argc, object self_731129, object r_73668) {
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731129)->elements[1]), r_73668)) ){ 
   
-object c_733541 = Cyc_num_eq(data,  ((closureN)self_731129)->elements[0],2,Cyc_length(data, ((closureN)self_731129)->elements[1]), obj_int2obj(3));
+object c_733541 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731129)->elements[1]), obj_int2obj(3));
 return_closcall1(data,  ((closureN)self_731129)->elements[0],  c_733541);
 } else { 
   return_closcall1(data,  ((closureN)self_731129)->elements[0],  boolean_f);}
@@ -9596,7 +9596,7 @@ static void __lambda_6(void *data, int argc, object self_731459, object r_731074
 static void __lambda_5(void *data, int argc, object self_731460, object k_731076) {
   if( (boolean_f != Cyc_car(data, ((closureN)self_731460)->elements[0])) ){ 
   
-object c_731525 = Cyc_num_lt(data,  k_731076,2,((closureN)self_731460)->elements[1], Cyc_car(data, ((closureN)self_731460)->elements[0]));
+object c_731525 = Cyc_num_fast_lt_op(data,((closureN)self_731460)->elements[1], Cyc_car(data, ((closureN)self_731460)->elements[0]));
 return_closcall1(data,  k_731076,  c_731525);
 } else { 
   return_closcall1(data,  k_731076,  boolean_f);}
@@ -9613,7 +9613,7 @@ static void __lambda_3(void *data, int argc, object self_731462, object k_731079
 } else { 
   if( (boolean_f != Cyc_cadr(data, ((closureN)self_731462)->elements[0])) ){ 
   
-object c_731500 = Cyc_num_gt(data,  k_731079,2,((closureN)self_731462)->elements[1], Cyc_cadr(data, ((closureN)self_731462)->elements[0]));
+object c_731500 = Cyc_num_fast_gt_op(data,((closureN)self_731462)->elements[1], Cyc_cadr(data, ((closureN)self_731462)->elements[0]));
 return_closcall1(data,  k_731079,  c_731500);
 } else { 
   return_closcall1(data,  k_731079,  boolean_f);}
