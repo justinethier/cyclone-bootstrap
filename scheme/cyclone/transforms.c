@@ -490,6 +490,7 @@ extern object __glo__85primitives_91num_91args_85_scheme_cyclone_primitives;
 extern object __glo_prim_91call_127_scheme_cyclone_primitives;
 extern object __glo_prim_91_125c_91func_scheme_cyclone_primitives;
 extern object __glo_prim_95data_91arg_127_scheme_cyclone_primitives;
+extern object __glo_prim_95c_91var_91pointer_scheme_cyclone_primitives;
 extern object __glo_prim_95c_91var_91assign_scheme_cyclone_primitives;
 extern object __glo_prim_95cvar_127_scheme_cyclone_primitives;
 extern object __glo_prim_117inline_91convert_91prim_91call_scheme_cyclone_primitives;
@@ -8145,7 +8146,7 @@ static void __lambda_629(void *data, int argc, object self_732696, object r_7314
   if( (boolean_f != r_731420) ){ 
   return_closcall1(data,  ((closureN)self_732696)->elements[1],  ((closureN)self_732696)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_732696)->elements[1],  ((closureN)self_732696)->elements[0]);}
+  return_closcall2(data,  __glo_prim_117inline_91convert_91prim_91call_scheme_cyclone_primitives,  ((closureN)self_732696)->elements[1], ((closureN)self_732696)->elements[0]);}
 ; 
 }
 
