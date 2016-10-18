@@ -127,11 +127,7 @@ if (type_is_pair_prim(clo)) { \
 object __glo_lib_91init_117srfi2_srfi_2 = NULL;
 object __glo_and_91let_85_srfi_2 = NULL;
 extern object __glo_member_scheme_base;
-extern object __glo_memv_scheme_base;
-extern object __glo_memq_scheme_base;
 extern object __glo_assoc_scheme_base;
-extern object __glo_assv_scheme_base;
-extern object __glo_assq_scheme_base;
 extern object __glo_cons_91source_scheme_base;
 extern object __glo_syntax_91rules_scheme_base;
 extern object __glo_letrec_85_scheme_base;
