@@ -1,6 +1,6 @@
 # Maintainer: Justin Ethier <justin.ethier@gmail.com>
 pkgname=cyclone-scheme
-pkgver=0.2
+pkgver=0.3
 pkgrel=1
 pkgdesc="An R7RS Scheme-to-C compiler using Cheney on the M.T.A with native threads"
 arch=('i686' 'x86_64')
@@ -20,14 +20,17 @@ changelog=
 source=($url/archive/v$pkgver.tar.gz)
 noextract=()
 #autofill using updpkgsums
-md5sums=('3e30f357927d2de24c6dd8f2b0c34646')
+md5sums=('89c5b3d5ac379a32acb166296d71e750')
 
 build() {
   cd "cyclone-bootstrap-$pkgver"
-  make PREFIX=/usr
+  make libcyclone.a PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
+  make cyclone PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
+  make icyc-c PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
 }
 
 package() {
   cd "cyclone-bootstrap-$pkgver"
+  make DESTDIR="$pkgdir" PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
   make DESTDIR="$pkgdir" PREFIX=/usr install
 }
