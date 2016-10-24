@@ -258,6 +258,7 @@ extern object __glo_modulo_scheme_base;
 extern object __glo_floor_91remainder_scheme_base;
 extern object __glo_even_127_scheme_base;
 extern object __glo_exact_91integer_127_scheme_base;
+extern object __glo_exact_91integer_91sqrt_scheme_base;
 extern object __glo_exact_127_scheme_base;
 extern object __glo_inexact_127_scheme_base;
 extern object __glo_odd_127_scheme_base;
