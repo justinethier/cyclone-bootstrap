@@ -377,8 +377,7 @@
     (make-const sock-dgram     "SOCK_DGRAM"    )
     (make-const ai-canonname   "AI_CANONNAME"  )
     (make-const ai-numerichost "AI_NUMERICHOST")
-    ;(make-const ai-v4mapped    "AI_V4MAPPED"   )
-    ;(make-const ai-all         "AI_ALL"        )
+    ;; The next 2 are not defined on all platforms:
     (define *ai-v4mapped* (ai-v4mapped))
     (define-c ai-v4mapped
       "(void *data, int argc, closure _, object k)"
