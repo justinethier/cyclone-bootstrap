@@ -316,13 +316,54 @@
       (er-macro-transformer
         ;; Based on the cond-expand macro from Chibi scheme
         (lambda (expr rename compare)
+          (define (_library-exists? import . ext)
+            (file-exists?
+              (_lib:import->filename 
+                (_lib:import->library-name import)
+                (if (null? ext) ".sld" (car ext)))))
+          (define (_lib:import->filename import . ext)
+            (let* ((file-ext 
+                    (if (null? ext)
+                        ".sld"
+                        (car ext)))
+                   (filename*
+                    (string-append
+                      (apply
+                        string-append
+                        (map 
+                          (lambda (i) 
+                            (string-append 
+                              "/" 
+                              (cond
+                                ((symbol? i) (symbol->string i))
+                                ((number? i) (number->string i))
+                                (else (error "Unexpected type in import set")))))
+                          import))
+                      file-ext))
+                   (filename
+                     (substring filename* 1 (string-length filename*))))
+              (if (or (equal? 'scheme (car import))
+                      (equal? 'srfi   (car import)))
+                (string-append (Cyc-installation-dir 'sld) "/" filename) ;; Built-in library
+                filename)))
+          (define (_lib:import->library-name import)
+            (cond
+              ((and (pair? import)
+                    (or (equal? 'only   (car import))
+                        (equal? 'except (car import))
+                        (equal? 'prefix (car import))
+                        (equal? 'rename (car import))))
+               (_lib:import->library-name 
+                 (cadr import)))
+              (else
+               import)))
           (define (check x)
             (if (pair? x)
                 (case (car x)
                   ((and) (every check (cdr x)))
                   ((or) (any check (cdr x)))
                   ((not) (not (check (cadr x))))
-                  ;((library) (eval `(find-module ',(cadr x)) (%meta-env)))
+                  ((library) (_library-exists? (cadr x))) ;(eval `(find-module ',(cadr x)) (%meta-env)))
                   (else (error "cond-expand: bad feature" x)))
                 (memq x (features))))
           (let expand ((ls (cdr expr)))
