@@ -670,12 +670,17 @@
         (lambda (e)
           (cons
             (define->var e) 
-            (call/cc
-              (lambda (return)
-                (udf:analyze 
-                  (car (define->exp e)) 
-                  #f 
-                  return)))))
+            (let ((rec (list (list))))
+              (call/cc
+                (lambda (return)
+                  (for-each
+                    (lambda (expr)
+                      (udf:analyze 
+                        expr
+                        rec
+                        return))
+                    (ast:lambda-body (car (define->exp e))))))
+              rec)))
         (udf:exps->lambdas exp)))
 
     ;; TODO: take a list of expressions and return the lambda definitions
@@ -691,19 +696,11 @@
     ;; rec - analysis information for this particular function
     ;; return - function to abort early if
     (define (udf:analyze exp rec return)
-      ;(trace:error `(inline-ok? ,exp ,ivars ,args ,arg-used))
       (cond
         ((ref? exp) #t)
-        ; TODO:
-        ;((ast:lambda? exp)
-        ; (for-each
-        ;  (lambda (e)
-        ;    (inline-ok? e ivars args arg-used return))
-        ;  (ast:lambda-formals->list exp))
-        ; (for-each
-        ;  (lambda (e)
-        ;    (inline-ok? e ivars args arg-used return))
-        ;  (ast:lambda-body exp)))
+        ((ast:lambda? exp)
+         ;; TODO: could we handle certain lambdas?
+         (return #f))
         ((const? exp) #t)
         ((quote? exp) #t)
         ((define? exp)
@@ -715,22 +712,28 @@
           (udf:analyze (if->condition exp) rec return)
           (udf:analyze (if->then exp) rec return)
           (udf:analyze (if->else exp) rec return))
-        ; TODO:
-        ;((app? exp)
-        ; (cond
-        ;  ((and (prim? (car exp))
-        ;        (not (prim:mutates? (car exp))))
-        ;   ;; If primitive does not mutate its args, ignore if ivar is used
-        ;   (for-each
-        ;    (lambda (e)
-        ;      (if (not (ref? e))
-        ;          (inline-ok? e ivars args arg-used return)))
-        ;    (reverse (cdr exp))))
-        ;  (else
-        ;   (for-each
-        ;    (lambda (e)
-        ;      (inline-ok? e ivars args arg-used return))
-        ;    (reverse exp))))) ;; Ensure args are examined before function
+        ((prim-call? exp)
+         (cond
+           ;; At least for now, do not try to deal with mutations
+           ((prim:mutates? (car exp))
+            (return #f))
+           (else
+            (for-each
+              (lambda (e)
+                (udf:analyze e rec return))
+              (cdr exp)))))
+        ((app? exp)
+         (cond
+          ((ref? (car exp))
+           (let ((fnc-calls (car rec)))
+             (set-car! rec (cons (car exp) fnc-calls))
+             (for-each
+              (lambda (e)
+                (udf:analyze e rec return))
+              (cdr exp))))
+          (else
+            ;; TODO: may be a better way to handle lambda's here
+            (return #f))))
         (else
           (error `(Unexpected expression passed to user defined function analysis ,exp)))))
            
