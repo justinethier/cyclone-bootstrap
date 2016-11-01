@@ -51,6 +51,8 @@
       adb:function?
       adbf:simple adbf:set-simple!
       adbf:unused-params adbf:set-unused-params!
+      ;; Analyze user defined functions
+      udf:inline
   )
   (begin
     (define *adb* (make-hash-table))
@@ -642,6 +644,99 @@
             (reverse exp))))) ;; Ensure args are examined before function
         (else
           (error `(Unexpected expression passed to inline prim check ,exp)))))
+
+
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+    ;;  Inlining of user-defined functions
+    (define (udf:inline exp)
+      ;; create function table
+      ;; for each top-level lambda (or any lambda??)
+      ;; analyze
+      ;;   might be a candiate as long as contains:
+      ;;     prim calls, if, 
+      ;;   immediately disregard if find any:
+      ;;    - mutating prim calls (at least for now), set!, define,
+      ;;    - lambda?
+      ;;    - application of a variable (cannot know what happens, may
+      ;;      never return)
+      ;;   keep track of all functions the lambda calls
+      ;; make a second pass of all potential candidates
+      ;;   keep candidates only if all the functions they call are also candidates
+      ;; for now return final table. may consider writing it to the meta
+      ;; files so other modules can take advantage of the same inlines.
+      ;; would need to generalize meta file macro support a bit though, and
+      ;; add scheme base as a special case (maybe other modules, too)
+      (map
+        (lambda (e)
+          (cons
+            (define->var e) 
+            (call/cc
+              (lambda (return)
+                (udf:analyze 
+                  (car (define->exp e)) 
+                  #f 
+                  return)))))
+        (udf:exps->lambdas exp)))
+
+    ;; TODO: take a list of expressions and return the lambda definitions
+    (define (udf:exps->lambdas exps)
+      (filter
+        (lambda (exp)
+          (and (define? exp)
+               (ast:lambda? (car (define->exp exp)))))
+        exps))
+
+    ;; Analyze a single user defined function 
+    ;; exp - code to analyze
+    ;; rec - analysis information for this particular function
+    ;; return - function to abort early if
+    (define (udf:analyze exp rec return)
+      ;(trace:error `(inline-ok? ,exp ,ivars ,args ,arg-used))
+      (cond
+        ((ref? exp) #t)
+        ; TODO:
+        ;((ast:lambda? exp)
+        ; (for-each
+        ;  (lambda (e)
+        ;    (inline-ok? e ivars args arg-used return))
+        ;  (ast:lambda-formals->list exp))
+        ; (for-each
+        ;  (lambda (e)
+        ;    (inline-ok? e ivars args arg-used return))
+        ;  (ast:lambda-body exp)))
+        ((const? exp) #t)
+        ((quote? exp) #t)
+        ((define? exp)
+         ;; TODO: able to do more in the future?
+         (return #f))
+        ((set!? exp)
+         (return #f))
+        ((if? exp)
+          (udf:analyze (if->condition exp) rec return)
+          (udf:analyze (if->then exp) rec return)
+          (udf:analyze (if->else exp) rec return))
+        ; TODO:
+        ;((app? exp)
+        ; (cond
+        ;  ((and (prim? (car exp))
+        ;        (not (prim:mutates? (car exp))))
+        ;   ;; If primitive does not mutate its args, ignore if ivar is used
+        ;   (for-each
+        ;    (lambda (e)
+        ;      (if (not (ref? e))
+        ;          (inline-ok? e ivars args arg-used return)))
+        ;    (reverse (cdr exp))))
+        ;  (else
+        ;   (for-each
+        ;    (lambda (e)
+        ;      (inline-ok? e ivars args arg-used return))
+        ;    (reverse exp))))) ;; Ensure args are examined before function
+        (else
+          (error `(Unexpected expression passed to user defined function analysis ,exp)))))
+           
+
+    ;; END user-defined function inlining
+    ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
 
     (define (analyze-cps exp)
       (analyze exp -1) ;; Top-level is lambda ID -1
