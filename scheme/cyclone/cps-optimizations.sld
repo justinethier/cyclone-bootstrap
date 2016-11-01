@@ -678,7 +678,10 @@
                       (udf:analyze 
                         expr
                         rec
-                        return))
+                        (lambda (return-value)
+                          (when (not return-value)
+                            (set! rec #f)) ;; Analysis was aborted, clear rec
+                          return-value)))
                     (ast:lambda-body (car (define->exp e))))))
               rec)))
         (udf:exps->lambdas exp)))
@@ -700,7 +703,15 @@
         ((ref? exp) #t)
         ((ast:lambda? exp)
          ;; TODO: could we handle certain lambdas?
-         (return #f))
+         ;(return #f))
+         (for-each
+          (lambda (e)
+            (udf:analyze e rec return))
+          (ast:lambda-formals->list exp))
+         (for-each
+          (lambda (e)
+            (udf:analyze e rec return))
+          (ast:lambda-body exp)))
         ((const? exp) #t)
         ((quote? exp) #t)
         ((define? exp)
@@ -714,6 +725,9 @@
           (udf:analyze (if->else exp) rec return))
         ((prim-call? exp)
          (cond
+           ;; Cannot inline any function that calls into a continuation
+           ((prim:cont? (car exp))
+            (return #f))
            ;; At least for now, do not try to deal with mutations
            ((prim:mutates? (car exp))
             (return #f))
@@ -732,8 +746,10 @@
                 (udf:analyze e rec return))
               (cdr exp))))
           (else
-            ;; TODO: may be a better way to handle lambda's here
-            (return #f))))
+            (map
+              (lambda (e)
+                (udf:analyze e rec return))
+              exp))))
         (else
           (error `(Unexpected expression passed to user defined function analysis ,exp)))))
            
