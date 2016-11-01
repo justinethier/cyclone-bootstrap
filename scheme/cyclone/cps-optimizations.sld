@@ -474,9 +474,9 @@
                   (equal? (length (cdr exp))
                           (length (ast:lambda-formals->list (car exp))))
                   (or
-                ;; This and is not really for primitives, but rather checking 
-                ;; for constants to optimize out. This juts happens to be a 
-                ;; convenient place for it since the optimization is the same.
+                ;; This "and" is not for primitives, but rather checking 
+                ;; for constants to optimize out. This just happens to be 
+                ;; a convenient place since the optimization is the same.
                 (and
                   ;; Check each parameter
                   (every
@@ -694,25 +694,60 @@
       ;; files so other modules can take advantage of the same inlines.
       ;; would need to generalize meta file macro support a bit though, and
       ;; add scheme base as a special case (maybe other modules, too)
-      (map
-        (lambda (e)
-          (cons
-            (define->var e) 
-            (let ((rec (list (list))))
-              (call/cc
-                (lambda (return)
-                  (for-each
-                    (lambda (expr)
-                      (udf:analyze 
-                        expr
-                        rec
-                        (lambda (return-value)
-                          (when (not return-value)
-                            (set! rec #f)) ;; Analysis was aborted, clear rec
-                          return-value)))
-                    (ast:lambda-body (car (define->exp e))))))
-              rec)))
-        (udf:exps->lambdas exp)))
+      (let ((candidates
+              (map
+                (lambda (e)
+                  (cons
+                    (define->var e) 
+                    (let ((rec (list (list))))
+                      (call/cc
+                        (lambda (return)
+                          (for-each
+                            (lambda (expr)
+                              (udf:analyze 
+                                expr
+                                (udf:ast-lambda->cont (car (define->exp e)))
+                                rec
+                                (lambda (return-value)
+                                  (when (not return-value)
+                                    (set! rec #f)) ;; Analysis was aborted, clear rec
+                                  return-value)))
+                            (ast:lambda-body (car (define->exp e))))))
+                      rec)))
+                (udf:exps->lambdas exp))))
+        (filter
+          cdr
+          candidates)))
+
+
+    ;; TODO: make second inline pass to figure out which
+    ;; candidates might be inlinable. 
+    ;; - if a candidate uses a function from another module,
+    ;;   disqualify it (this might change later, with meta info)
+    ;; - if a function only calls candidates and a single cont
+    ;;   (possibly calling the cont more than once), it is inlineable
+    ;; - keep processing list until it is stable??
+    ;(define (udf:find-inlinable candidates)
+    ;  (foldl
+    ;    (lambda (c accum)
+    ;      (if
+    ;    )
+    ;    '()
+    ;    candidates))
+
+
+    ;; TODO: with stable list, do optimizations a second time
+    ;; with inline information, so appropriate udf's can be
+    ;; inlined as needed
+
+    ;; will need to keep list of inlinable udf's so the compiler
+    ;; can generate appropriate fast versions, and eventually
+    ;; so meta file can contain them
+
+    ;; Return the symbol of the lambda's continuation. After CPS conversion
+    ;; every lambda receives a cont (k) as its first parameter
+    (define (udf:ast-lambda->cont exp)
+      (car (ast:lambda-formals->list exp)))
 
     ;; TODO: take a list of expressions and return the lambda definitions
     (define (udf:exps->lambdas exps)
@@ -724,9 +759,10 @@
 
     ;; Analyze a single user defined function 
     ;; exp - code to analyze
+    ;; k - the function's continuation parameter
     ;; rec - analysis information for this particular function
     ;; return - function to abort early if
-    (define (udf:analyze exp rec return)
+    (define (udf:analyze exp k rec return)
       (cond
         ((ref? exp) #t)
         ((ast:lambda? exp)
@@ -734,11 +770,11 @@
          ;(return #f))
          (for-each
           (lambda (e)
-            (udf:analyze e rec return))
+            (udf:analyze e k rec return))
           (ast:lambda-formals->list exp))
          (for-each
           (lambda (e)
-            (udf:analyze e rec return))
+            (udf:analyze e k rec return))
           (ast:lambda-body exp)))
         ((const? exp) #t)
         ((quote? exp) #t)
@@ -748,9 +784,9 @@
         ((set!? exp)
          (return #f))
         ((if? exp)
-          (udf:analyze (if->condition exp) rec return)
-          (udf:analyze (if->then exp) rec return)
-          (udf:analyze (if->else exp) rec return))
+          (udf:analyze (if->condition exp) k rec return)
+          (udf:analyze (if->then exp) k rec return)
+          (udf:analyze (if->else exp) k rec return))
         ((prim-call? exp)
          (cond
            ;; Cannot inline any function that calls into a continuation
@@ -762,21 +798,23 @@
            (else
             (for-each
               (lambda (e)
-                (udf:analyze e rec return))
+                (udf:analyze e k rec return))
               (cdr exp)))))
         ((app? exp)
          (cond
           ((ref? (car exp))
            (let ((fnc-calls (car rec)))
-             (set-car! rec (cons (car exp) fnc-calls))
+             ;; Ignore the function's continuation
+             (if (not (equal? k (car exp)))
+                 (set-car! rec (cons (car exp) fnc-calls)))
              (for-each
               (lambda (e)
-                (udf:analyze e rec return))
+                (udf:analyze e k rec return))
               (cdr exp))))
           (else
             (map
               (lambda (e)
-                (udf:analyze e rec return))
+                (udf:analyze e k rec return))
               exp))))
         (else
           (error `(Unexpected expression passed to user defined function analysis ,exp)))))
