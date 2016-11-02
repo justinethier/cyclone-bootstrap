@@ -1111,6 +1111,7 @@
                       lib-exports 
                       import-db
                       globals
+                      inline-user-functions
                       c-headers
                       required-libs
                       src-file)
