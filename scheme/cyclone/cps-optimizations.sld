@@ -722,16 +722,19 @@
 
 
     ;; Make second inline pass to figure out which
-    ;; candidates might be inlinable. 
+    ;; candidates might be inlinable and returns a
+    ;; list containing only those candidates.
     (define (udf:find-inlinable lis)
-      (let loop ((l 0)
-                 (candidates lis))
-        ;(pretty-print `("candidate list" ,candidates))
-        (if (= l (length candidates))
-            candidates
-            (loop 
-              (length candidates) 
-              (reduce-candidates candidates)))))
+      (map 
+        car
+        (let loop ((l 0)
+                   (candidates lis))
+          ;(pretty-print `("candidate list" ,candidates))
+          (if (= l (length candidates))
+              candidates
+              (loop 
+                (length candidates) 
+                (reduce-candidates candidates))))))
 
     ;; pair -> pair
     ;; Reduce candidate list and each candidate's call list,
