@@ -272,12 +272,12 @@
         prefix
         (c:body cp)))
 
-;; c-compile-program : exp -> string
-(define (c-compile-program exp src-file)
+;; c-compile-program : exp -> string -> boolean
+(define (c-compile-program exp src-file inline?)
   (let* ((preamble "")
          (append-preamble (lambda (s)
                             (set! preamble (string-append preamble "  " s "\n"))))
-         (body (c-compile-exp exp append-preamble "cont" (list src-file))))
+         (body (c-compile-exp exp append-preamble "cont" (list src-file) inline?)))
     ;(write `(DEBUG ,body))
     (string-append 
      preamble 
@@ -287,7 +287,7 @@
 ;     " }\n"
 )))
 
-;; c-compile-exp : exp (string -> void) -> string
+;; c-compile-exp : exp (string -> void) -> string -> boolean
 ;;
 ;; exp - expression to compiler
 ;; append-preamble - ??
@@ -296,7 +296,8 @@
 ;; trace - trace information. presently a pair containing:
 ;;         * source file
 ;;         * function name (or NULL if none)
-(define (c-compile-exp exp append-preamble cont trace)
+;; inline? - will compiled expression use CPS or be inlined?
+(define (c-compile-exp exp append-preamble cont trace inline?)
   (cond
     ; Core forms:
     ((const? exp)       (c-compile-const exp))
@@ -305,24 +306,24 @@
      (c-code (string-append "primitive_" (mangle exp))))
     ((ref?   exp)       (c-compile-ref exp))
     ((quote? exp)       (c-compile-quote exp))
-    ((if? exp)          (c-compile-if exp append-preamble cont trace))
+    ((if? exp)          (c-compile-if exp append-preamble cont trace inline?))
 
     ; IR (2):
     ((tagged-list? '%closure exp)
-     (c-compile-closure exp append-preamble cont trace))
+     (c-compile-closure exp append-preamble cont trace inline?))
     ; Global definition
     ((define? exp)
-     (c-compile-global exp append-preamble cont trace))
+     (c-compile-global exp append-preamble cont trace inline?))
     ((define-c? exp)
      (c-compile-raw-global-lambda exp append-preamble cont trace))
     ; Special case - global function w/out a closure. Create an empty closure
     ((tagged-list? 'lambda exp)
      (c-compile-exp
       `(%closure ,exp)
-       append-preamble cont trace))
+       append-preamble cont trace inline?))
     
     ; Application:      
-    ((app? exp)         (c-compile-app exp append-preamble cont trace))
+    ((app? exp)         (c-compile-app exp append-preamble cont trace inline?))
     (else               (error "unknown exp in c-compile-exp: " exp))))
 
 (define (c-compile-quote qexp)
@@ -625,7 +626,7 @@
       (mangle exp))))
 
 ; c-compile-args : list[exp] (string -> void) -> string
-(define (c-compile-args args append-preamble prefix cont trace)
+(define (c-compile-args args append-preamble prefix cont trace inline?)
   (letrec ((num-args 0)
          (_c-compile-args 
           (lambda (args append-preamble prefix cont)
@@ -638,7 +639,7 @@
               (c:append/prefix
                 prefix 
                 (c-compile-exp (car args) 
-                  append-preamble cont trace)
+                  append-preamble cont trace inline?)
                 (_c-compile-args (cdr args) 
                   append-preamble ", " cont)))))))
   (c:tuple/args
@@ -647,14 +648,14 @@
     num-args)))
 
 ;; c-compile-app : app-exp (string -> void) -> string
-(define (c-compile-app exp append-preamble cont trace)
+(define (c-compile-app exp append-preamble cont trace inline?)
   ;(trace:debug `(c-compile-app: ,exp))
   (let (($tmp (mangle (gensym 'tmp))))
     (let* ((args     (app->args exp))
            (fun      (app->fun exp)))
       (cond
         ((lambda? fun)
-         (let* ((lid (allocate-lambda (c-compile-lambda fun trace))) ;; TODO: pass in free vars? may be needed to track closures
+         (let* ((lid (allocate-lambda (c-compile-lambda fun trace inline?))) ;; TODO: pass in free vars? may be needed to track closures
                                                                ;; properly, wait until this comes up in an example
                 (this-cont (string-append "__lambda_" (number->string lid)))
                 (cgen 
@@ -663,7 +664,7 @@
                      append-preamble 
                      ""
                      this-cont
-                     trace))
+                     trace inline?))
                 (num-cargs (c:num-args cgen)))
            (set-c-call-arity! num-cargs)
            (c-code
@@ -678,7 +679,7 @@
          (let* ((c-fun 
                  (c-compile-prim fun cont))
                 (c-args
-                 (c-compile-args args append-preamble "" "" trace))
+                 (c-compile-args args append-preamble "" "" trace inline?))
                 (num-args (length args))
                 (num-args-str
                   (string-append 
@@ -726,9 +727,9 @@
 
         ;; TODO: may not be good enough, closure app could be from an element
         ((tagged-list? '%closure-ref fun)
-         (let* ((cfun (c-compile-args (list (car args)) append-preamble "  " cont trace))
+         (let* ((cfun (c-compile-args (list (car args)) append-preamble "  " cont trace inline?))
                 (this-cont (c:body cfun))
-                (cargs (c-compile-args (cdr args) append-preamble "  " this-cont trace)))
+                (cargs (c-compile-args (cdr args) append-preamble "  " this-cont trace inline?)))
            (set-c-call-arity! (c:num-args cargs))
            (c-code 
              (string-append
@@ -743,10 +744,10 @@
 
         ((tagged-list? '%closure fun)
          (let* ((cfun (c-compile-closure 
-                        fun append-preamble cont trace))
+                        fun append-preamble cont trace inline?))
                 (this-cont (string-append "(closure)" (c:body cfun)))
                 (cargs (c-compile-args
-                         args append-preamble "  " this-cont trace))
+                         args append-preamble "  " this-cont trace inline?))
                 (num-cargs (c:num-args cargs)))
            (set-c-call-arity! num-cargs)
            (c-code
@@ -764,9 +765,9 @@
          (error `(Unsupported function application ,exp)))))))
 
 ; c-compile-if : if-exp -> string
-(define (c-compile-if exp append-preamble cont trace)
+(define (c-compile-if exp append-preamble cont trace inline?)
   (let* ((compile (lambda (exp)
-                    (c-compile-exp exp append-preamble cont trace)))
+                    (c-compile-exp exp append-preamble cont trace inline?)))
          (test (compile (if->condition exp)))
          (then (compile (if->then exp)))
          (els (compile (if->else exp))))
@@ -788,7 +789,7 @@
 (define (add-global var-sym lambda? code)
   ;(write `(add-global ,var-sym ,code))
   (set! *globals* (cons (list var-sym lambda? code) *globals*)))
-(define (c-compile-global exp append-preamble cont trace)
+(define (c-compile-global exp append-preamble cont trace inline?)
  (let ((var (define->var exp))
        (body (if (equal? 4 (length exp)) ; Simple var assignment contains superfluous %closure-ref
                  (cadddr exp)
@@ -798,7 +799,7 @@
      (lambda? body) 
      (c-compile-exp 
       body append-preamble cont
-      (st:add-function! trace var)))
+      (st:add-function! trace var) inline?))
    (c-code/vars "" (list ""))))
 
 ;; TODO: not tested, does not work yet:
@@ -850,7 +851,7 @@
 ;; once given a C name, produce a C function
 ;; definition with that name.
 
-;; These procedures are stored up an eventually 
+;; These procedures are stored up and eventually 
 ;; emitted.
 
 ; type lambda-id = natural
@@ -926,7 +927,7 @@
       (check (cdr lis))
       (check lis))))
 
-;; c-compile-closure : closure-exp (string -> void) -> string
+;; c-compile-closure : closure-exp (string -> void) -> string -> boolean
 ;;
 ;; This function compiles closures generated earlier in the
 ;; compilation process.  Each closure is of the form:
@@ -940,7 +941,7 @@
 ;;    the closure. The closure conversion phase tags each access
 ;;    to one with the corresponding index so `lambda` can use them.
 ;;
-(define (c-compile-closure exp append-preamble cont trace)
+(define (c-compile-closure exp append-preamble cont trace inline?)
   (let* ((lam (closure->lam exp))
          (free-vars
            (map
@@ -953,7 +954,7 @@
                     (mangle free-var)))
              (closure->fv exp))) ; Note these are not necessarily symbols, but in cc form
          (cv-name (mangle (gensym 'c)))
-         (lid (allocate-lambda (c-compile-lambda lam trace)))
+         (lid (allocate-lambda (c-compile-lambda lam trace inline?)))
          (macro? (assoc (st:->var trace) (get-macros)))
          (call/cc? (and (equal? (car trace) "scheme/base.sld")
                         (equal? (st:->var trace) 'call/cc)))
@@ -1031,7 +1032,7 @@
         ""))))))
 
 ; c-compile-lambda : lamda-exp (string -> void) -> (string -> string)
-(define (c-compile-lambda exp trace)
+(define (c-compile-lambda exp trace inline?)
   (let* ((preamble "")
          (append-preamble (lambda (s)
                             (set! preamble (string-append preamble "  " s "\n")))))
@@ -1060,7 +1061,7 @@
                         (car (lambda->exp exp)) ;; car ==> assume single expr in lambda body after CPS
                         append-preamble
                         (mangle env-closure)
-                        trace)))
+                        trace inline?)))
      (cons 
       (lambda (name)
         (string-append "static void " name 
@@ -1142,14 +1143,48 @@
                  (string-append prefix suffix)))))))))
 
   (let ((compiled-program-lst '())
-        (compiled-program #f))
+        (compiled-program #f)
+        (compiled-inline-functions #f)
+        (define-var->inline 
+          (lambda (expr)
+            (string->symbol 
+               (string-append
+                 (symbol->string (define->var expr))
+                 "-inline"))))
+       )
     ;; Compile program, using for-each to guarantee execution order,
     ;; since c-compile-program has side-effects.
     (for-each
       (lambda (expr)
         (set! compiled-program-lst
-          (cons (c-compile-program expr src-file) compiled-program-lst)))
+          (cons (c-compile-program expr src-file #f) compiled-program-lst)))
       input-program)
+
+    ;; Compile inlinable functions
+    (set! compiled-inline-functions
+      (filter
+        (lambda (expr)
+          (and (define? expr)
+               (member (define->var expr) inline-user-functions)))
+        input-program))
+    (set! globals
+      (append globals
+        (map 
+          define-var->inline
+          compiled-inline-functions)))
+    ;; TODO: pass an 'inline' flag to the c-compile functions, and use that
+    ;; to generate different code for these
+    (set! compiled-inline-functions
+      (map
+        (lambda (expr)
+          (c-compile-program 
+            `(define 
+               ,(define-var->inline expr)
+               ,@(define->exp expr))
+            src-file #t))
+        compiled-inline-functions))
+    (trace:debug `(compiled-inline-functions ,compiled-inline-functions))
+    ;; END inlines
 
     ;; Get top-level string
     (set! compiled-program
