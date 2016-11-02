@@ -62,6 +62,7 @@
 (define (library? ast)
   (tagged-list? 'define-library ast))
  
+;; Determine if a library exists for the given import set
 (define (library-exists? import . ext)
   (file-exists?
     (lib:import->filename 

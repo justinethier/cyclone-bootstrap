@@ -329,21 +329,22 @@
             (id (ast:lambda-id ast)))
         (if (pair? body)
             (set! body (car body)))
-;(trace:error `(simple-lambda? ,id ,formals 
-;,(and (pair? body)
-;     (app? body)
-;     (ast:lambda? (car body)))
-;,(length formals)
-;;,body
-;))
+#;(trace:error `(simple-lambda? ,ast ,id ,formals 
+       ,(and (pair? body)
+             (app? body)
+             (ast:lambda? (car body))
+             (> (length formals) 0)
+             (equal? (app->args body)
+                     formals)
+             (not (any-nonlocal-refs? id formals)))))
         (and (pair? body)
              (app? body)
              (ast:lambda? (car body))
              (> (length formals) 0)
              (equal? (app->args body)
                      formals)
-             (not (any-nonlocal-refs? id formals))
-    )))
+             (not (any-nonlocal-refs? id formals)))
+    ))
 
     ;; Perform contraction phase of CPS optimizations
     (define (opt:contract exp)
@@ -472,6 +473,33 @@
                   ;; TODO: check for more than one arg??
                   (equal? (length (cdr exp))
                           (length (ast:lambda-formals->list (car exp))))
+                  (or
+                ;; This and is not really for primitives, but rather checking 
+                ;; for constants to optimize out. This juts happens to be a 
+                ;; convenient place for it since the optimization is the same.
+                (and
+                  ;; Check each parameter
+                  (every
+                    (lambda (param)
+                      (with-var param (lambda (var)
+                        (and 
+                          ;; At least for now, do not replace if referenced by multiple functions
+                          (<= (length (adbv:ref-by var)) 1)
+                          ;; Need to keep variable because it is mutated
+                          (not (adbv:reassigned? var))
+                    ))))
+                    (ast:lambda-formals->list (car exp)))
+                  ;; Args are all constants
+                  (every
+                    (lambda (arg)
+                      (and
+                        arg ;; #f is a special value for init, so do not optimize it for now
+                        (or (const? arg)
+                            (quote? arg))))
+                    (cdr exp))
+                )
+                ;; Check for primitive calls that can be optimized out
+                (and
                   ;; Double-check parameter can be optimized-out
                   (every
                     (lambda (param)
@@ -500,7 +528,7 @@
                   (inline-prim-call? 
                     (ast:lambda-body (car exp))
                     (prim-calls->arg-variables (cdr exp))
-                    (ast:lambda-formals->list (car exp)))
+                    (ast:lambda-formals->list (car exp)))))
              )
              (let ((args (cdr exp)))
                (for-each
