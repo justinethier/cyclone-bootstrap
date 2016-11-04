@@ -53,6 +53,7 @@
       adbf:unused-params adbf:set-unused-params!
       ;; Analyze user defined functions
       udf:inline
+      udf:find-inlinable
   )
   (begin
     (define *adb* (make-hash-table))
@@ -720,20 +721,57 @@
           candidates)))
 
 
-    ;; TODO: make second inline pass to figure out which
+    ;; Make second inline pass to figure out which
     ;; candidates might be inlinable. 
-    ;; - if a candidate uses a function from another module,
-    ;;   disqualify it (this might change later, with meta info)
-    ;; - if a function only calls candidates and a single cont
-    ;;   (possibly calling the cont more than once), it is inlineable
-    ;; - keep processing list until it is stable??
-    ;(define (udf:find-inlinable candidates)
-    ;  (foldl
-    ;    (lambda (c accum)
-    ;      (if
-    ;    )
-    ;    '()
-    ;    candidates))
+    (define (udf:find-inlinable lis)
+      (let loop ((l 0)
+                 (candidates lis))
+        ;(pretty-print `("candidate list" ,candidates))
+        (if (= l (length candidates))
+            candidates
+            (loop 
+              (length candidates) 
+              (reduce-candidates candidates)))))
+
+    ;; pair -> pair
+    ;; Reduce candidate list and each candidate's call list,
+    ;; rejecting those that may require CPS
+    (define (reduce-candidates candidates)
+      (foldl
+        (lambda (c accum)
+          (let ((new-call-list 
+                  (reduce-call-list (cadr c) candidates)))
+            (if new-call-list
+                ;; Add candidate with new call list
+                (cons (list (car c) new-call-list) accum)
+                ;; No longer a candidate, do not add function
+                accum)))
+        '()
+        candidates))
+
+    ;; pair -> pair -> either pair boolean
+    ;; Eliminate non-CPS calls from the list but
+    ;; reject the list if there are any unknown calls, 
+    ;; which are assumed to be CPS
+    (define (reduce-call-list calls candidates)
+      (foldl
+        (lambda (call accum)
+          (cond
+            ;; CPS call, so we reject list
+            ((not accum) #f)
+            ;; non-CPS call so we don't need to track
+            (else
+              (let ((cndt (assoc call candidates)))
+                ;(write `(debug ,call ,cndt))
+                (cond
+                  ;; Unknown call, assume CPS and reject the list
+                  ((not cndt) #f)
+                  ;; Called function does not CPS, no need to track it
+                  ((null? (cadr cndt)) accum)
+                  ;; Not sure yet, keep this call
+                  (else (cons call accum)))))))
+        '()
+        calls))
 
 
     ;; TODO: with stable list, do optimizations a second time
