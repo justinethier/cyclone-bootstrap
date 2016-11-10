@@ -62,7 +62,8 @@
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
       (%adb:make-var global defined-by const const-value  ref-by
-                     reassigned assigned-value app-fnc-count app-arg-count)
+                     reassigned assigned-value app-fnc-count app-arg-count
+                     inlinable)
       adb:variable?
       (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
@@ -78,6 +79,8 @@
       (app-fnc-count adbv:app-fnc-count adbv:set-app-fnc-count!)
       ;; Number of times variable is passed as an app-argument
       (app-arg-count adbv:app-arg-count adbv:set-app-arg-count!)
+      ;; Can a ref be safely inlined?
+      (inlinable adbv:inlinable adbv:set-inlinable!)
     )
 
     (define (adbv-set-assigned-value-helper! sym var value)
@@ -105,7 +108,7 @@
     )
 
     (define (adb:make-var)
-      (%adb:make-var '? '? #f #f '() #f #f 0 0))
+      (%adb:make-var '? '? #f #f '() #f #f 0 0 #t))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params assigned-to-var)
@@ -497,6 +500,38 @@
                 )
                 ;; Check for primitive calls that can be optimized out
                 (and
+                  #;(begin
+(trace:error `(DEBUG
+               ,exp
+                  ,(every
+                    (lambda (param)
+                      (with-var param (lambda (var)
+;(trace:error `(DEBUG ,param ,(adbv:ref-by var)))
+                        (and 
+                          ;; If param is never referenced, then prim is being
+                          ;; called for side effects, possibly on a global
+                          (not (null? (adbv:ref-by var)))
+                          ;; Need to keep variable because it is mutated
+                          (not (adbv:reassigned? var))
+                    ))))
+                    (ast:lambda-formals->list (car exp)))
+                  ;; Check all args are valid primitives that can be inlined
+                  ,(every
+                    (lambda (arg)
+                      (and (prim-call? arg)
+                           (not (prim:cont? (car arg)))))
+                    (cdr exp))
+                  ;; Disallow primitives that allocate a new obj,
+                  ;; because if the object is mutated all copies
+                  ;; must be modified. 
+                  ,(one-instance-of-new-mutable-obj?
+                    (cdr exp)
+                    (ast:lambda-formals->list (car exp)))
+                  ,(inline-prim-call? 
+                    (ast:lambda-body (car exp))
+                    (prim-calls->arg-variables (cdr exp))
+                    (ast:lambda-formals->list (car exp)))))
+                    #t)
                   ;; Double-check parameter can be optimized-out
                   (every
                     (lambda (param)
@@ -609,7 +644,17 @@
     (define (inline-prim-call? exp ivars args)
       (call/cc
         (lambda (return)
-          (inline-ok? exp ivars args (list #f) return)
+;; TODO:
+;; experimenting with switching inline-ok? with code using data from analysis DB
+          ;(trace:error `(inline-ok? ,exp ,ivars ,args))
+          ;(inline-ok? exp ivars args (list #f) return)
+          (for-each
+            (lambda (v)
+              (with-var v (lambda (var)
+                (if (not (adbv:inlinable var))
+                    (return #f)))))
+            ivars)
+;; End experimental code
           (return #t))))
 
     ;; Make sure inlining a primitive call will not cause out-of-order execution
@@ -628,6 +673,7 @@
           ((member exp args)
            (set-car! arg-used #t))
           ((member exp ivars)
+           ;;(trace:error `(inline-ok? return #f ,exp ,ivars ,args))
            (return #f))
           (else 
            #t)))
@@ -649,7 +695,8 @@
          (inline-ok? (set!->var exp) ivars args arg-used return)
          (inline-ok? (set!->exp exp) ivars args arg-used return))
         ((if? exp)
-          (inline-ok? (if->condition exp) ivars args arg-used return)
+          (if (not (ref? (if->condition exp)))
+              (inline-ok? (if->condition exp) ivars args arg-used return))
           (inline-ok? (if->then exp) ivars args arg-used return)
           (inline-ok? (if->else exp) ivars args arg-used return))
         ((app? exp)
@@ -670,9 +717,108 @@
         (else
           (error `(Unexpected expression passed to inline prim check ,exp)))))
 
+    ;; Similar to (inline-ok?) above, but this makes a single pass to
+    ;; figure out which refs can be inlined and which ones are mutated or
+    ;; otherwise used in such a way that they cannot be safely inlined.
+    ;;
+    ;; exp - expression to analyze
+    ;; args - list of formals for the current lambda
+    (define (analyze:find-inlinable-vars exp args)
+      ;(trace:error `(inline-ok? ,exp ,ivars ,args ,arg-used))
+      (cond
+        ((ref? exp)
+         ;; Ignore the current lambda's formals
+         (when (not (member exp args))
+           ;; If the code gets this far, assume we came from a place
+           ;; that does not allow the var to be inlined. We need to
+           ;; explicitly white-list variables that can be inlined.
+           (with-var exp (lambda (var)
+             (adbv:set-inlinable! var #f)))))
+        ((ast:lambda? exp)
+         ;; Pass along immediate lambda args, and ignore if they
+         ;; are used??? sort of makes sense because we want to inline
+         ;; function arguments by replacing lambda args with the actual
+         ;; arguments.
+         ;;
+         ;; This may still need some work to match what is going on 
+         ;; in inline-ok.
+         (let ((formals (ast:lambda-formals->list exp)))
+           (for-each
+            (lambda (e)
+              ;; TODO: experimental change, append args to formals instead
+              ;; of just passing formals along
+              ;(analyze:find-inlinable-vars e (append formals args)))
+;; try this for now, do a full make then re-make and verify everything works
+              (analyze:find-inlinable-vars e formals))
+            (ast:lambda-body exp))))
+        ((const? exp) #t)
+        ((quote? exp) #t)
+        ((define? exp)
+         (analyze:find-inlinable-vars (define->var exp) args)
+         (analyze:find-inlinable-vars (define->exp exp) args))
+        ((set!? exp)
+         (analyze:find-inlinable-vars (set!->var exp) args)
+         (analyze:find-inlinable-vars (set!->exp exp) args))
+        ((if? exp)
+          (if (not (ref? (if->condition exp)))
+              (analyze:find-inlinable-vars (if->condition exp) args))
+          (analyze:find-inlinable-vars (if->then exp) args)
+          (analyze:find-inlinable-vars (if->else exp) args))
+        ((app? exp)
+         (cond
+          ((and (prim? (car exp))
+                (not (prim:mutates? (car exp))))
+           ;; If primitive does not mutate its args, ignore if ivar is used
+           (for-each
+            (lambda (e)
+              (if (not (ref? e))
+                  (analyze:find-inlinable-vars e args)))
+            (cdr exp)))
+            ;(reverse (cdr exp))))
+          ((and (not (prim? (car exp)))
+                (ref? (car exp)))
+           (define ref-formals '())
+           (with-var (car exp) (lambda (var)
+             (let ((val (adbv:assigned-value var)))
+              (cond
+               ((ast:lambda? val)
+                (set! ref-formals (ast:lambda-formals->list val)))
+               ((and (pair? val) 
+                     (ast:lambda? (car val)) 
+                     (null? (cdr val)))
+                (set! ref-formals (ast:lambda-formals->list (car val))))
+           ))))
+;(trace:error `(DEBUG ref app ,(car exp) ,(cdr exp) ,ref-formals))
+           (cond
+            ((= (length ref-formals) (length (cdr exp)))
+             (analyze:find-inlinable-vars (car exp) args)
+             (for-each
+              (lambda (e a)
+                ;; Optimization:
+                ;; Ignore if an argument to a function is passed back 
+                ;; to another call to the function as the same parameter.
+                (if (not (equal? e a))
+                    (analyze:find-inlinable-vars e args)))
+              (cdr exp)
+              ref-formals))
+            (else
+             (for-each
+              (lambda (e)
+                (analyze:find-inlinable-vars e args))
+              exp))))
+          (else
+           (for-each
+            (lambda (e)
+              (analyze:find-inlinable-vars e args))
+            exp))))
+            ;(reverse exp))))) ;; Ensure args are examined before function
+        (else
+          (error `(Unexpected expression passed to find inlinable vars ,exp)))))
+
     (define (analyze-cps exp)
       (analyze exp -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
+      (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
 ;; For now, beta expansion finds so few candidates it is not worth optimizing
 ;;      ;; TODO:
 ;;      ;; Find candidates for beta expansion
