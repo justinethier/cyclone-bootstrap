@@ -191,6 +191,9 @@ struct gc_heap_t {
   unsigned int chunk_size;      // 0 for any size, other and heap will only alloc chunks of that size
   unsigned int max_size;
   unsigned int newly_created;
+  //
+  gc_heap *next_free;
+  unsigned int last_alloc_size;
   //unsigned int free_size;
   gc_free_list *free_list;
   gc_heap *next;                // TBD, linked list is not very efficient, but easy to work with as a start
