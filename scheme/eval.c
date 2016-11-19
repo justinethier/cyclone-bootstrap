@@ -495,6 +495,7 @@ extern object __glo_write_91shared_scheme_write;
 extern object __glo_write_91simple_scheme_write;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
+extern object __glo_include_scheme_read;
 #include "cyclone/runtime.h"
 defsymbol(procedure);
 defsymbol(macro);

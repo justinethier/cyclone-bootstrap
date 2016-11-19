@@ -263,6 +263,7 @@ extern object __glo_with_91input_91from_91file_scheme_file;
 extern object __glo_with_91output_91to_91file_scheme_file;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
+extern object __glo_include_scheme_read;
 #include "cyclone/runtime.h"
 static void __lambda_4(void *data, int argc, closure _,object k_738) ;
 static void __lambda_3(void *data, int argc, closure _,object k_7311, object filename_732, object env_731_raw, ...) ;
