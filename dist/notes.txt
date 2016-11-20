@@ -2,3 +2,7 @@ git clone https://aur.archlinux.org/libck.git
 cd libck/
 makepkg libck
 sudo pacman -U libck-0.5.0-1-x86_64.pkg.tar.xz
+
+# To repackage a new cyclone build
+updpkgsums
+makepkg --printsrcinfo > .SRCINFO
