@@ -347,6 +347,7 @@ extern object __glo_parameterize_scheme_base;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
 extern object __glo_include_scheme_read;
+extern object __glo_include_91ci_scheme_read;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;

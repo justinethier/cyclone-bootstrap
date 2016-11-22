@@ -426,6 +426,7 @@ extern object __glo_with_91output_91to_91file_scheme_file;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
 extern object __glo_include_scheme_read;
+extern object __glo_include_91ci_scheme_read;
 extern object __glo_display_scheme_write;
 extern object __glo_write_scheme_write;
 extern object __glo_write_91shared_scheme_write;
