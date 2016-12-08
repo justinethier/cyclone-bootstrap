@@ -331,6 +331,7 @@ extern object __glo_create_91environment_scheme_eval;
 extern object __glo_setup_91environment_scheme_eval;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
+extern object __glo_if_91syntax_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
 extern object __glo_pair_91_125list_scheme_cyclone_util;
@@ -724,7 +725,7 @@ c_73555.elements[1] = ((closureN)self_73252)->elements[1];
 c_73555.elements[2] = ((closureN)self_73252)->elements[2];
 c_73555.elements[3] = ((closureN)self_73252)->elements[3];
 
-return_closcall2(data,  __glo_if_127_scheme_cyclone_util,  &c_73555, ((closureN)self_73252)->elements[2]);}
+return_closcall2(data,  __glo_if_91syntax_127_scheme_cyclone_util,  &c_73555, ((closureN)self_73252)->elements[2]);}
 ; 
 }
 
