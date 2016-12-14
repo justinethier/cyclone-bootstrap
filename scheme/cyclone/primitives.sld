@@ -814,7 +814,30 @@
                Cyc-fast-gt
                Cyc-fast-lt
                Cyc-fast-gte
-               Cyc-fast-lte)))
+               Cyc-fast-lte
+;              %halt
+;              exit
+               char->integer
+               integer->char
+               ;; Are these OK? If obj is mutated the prim will still work because
+               ;; the type information will not change.
+               Cyc-cvar?
+               Cyc-opaque?
+               boolean?
+               char?
+               eof-object?
+               null?
+               number?
+               real?
+               integer?
+               pair?
+               port?
+               procedure?
+               Cyc-macro?
+               vector?
+               string?
+               symbol?
+    )))
 
     (define (prim:inline-convert-prim-call prim-call)
       (cond
