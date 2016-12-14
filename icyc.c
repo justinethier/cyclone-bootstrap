@@ -168,6 +168,7 @@ extern object __glo_lib_117idb_117entry_91_125library_91id_scheme_cyclone_librar
 extern object __glo_pretty_91print_scheme_cyclone_pretty_91print;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
+extern object __glo_if_91syntax_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
 extern object __glo_pair_91_125list_scheme_cyclone_util;
