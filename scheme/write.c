@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2016 Justin Ethier
- ** Version 0.3.3 (beta)
+ ** Version 0.3.4 (beta)
  **
  **/
 
@@ -273,12 +273,12 @@ c_7348.elements[1] = obj_732;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7348);
 } else { 
-  return_closcall1(data,  k_7316,  Cyc_write_va(2,obj_732, Cyc_car(data, port_731)));}
+  return_closcall1(data,  k_7316,  Cyc_write_va(data, 2,obj_732, Cyc_car(data, port_731)));}
 ; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7327, object r_7318) {
-  return_closcall1(data,  ((closureN)self_7327)->elements[0],  Cyc_write_va(2,((closureN)self_7327)->elements[1], r_7318));; 
+  return_closcall1(data,  ((closureN)self_7327)->elements[0],  Cyc_write_va(data, 2,((closureN)self_7327)->elements[1], r_7318));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7322, object obj_734, object port_733_raw, ...) {
@@ -299,12 +299,12 @@ c_7333.elements[1] = obj_734;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7333);
 } else { 
-  return_closcall1(data,  k_7322,  Cyc_display_va(2,obj_734, Cyc_car(data, port_733)));}
+  return_closcall1(data,  k_7322,  Cyc_display_va(data, 2,obj_734, Cyc_car(data, port_733)));}
 ; 
 }
 
 static void __lambda_0(void *data, int argc, object self_7328, object r_7324) {
-  return_closcall1(data,  ((closureN)self_7328)->elements[0],  Cyc_display_va(2,((closureN)self_7328)->elements[1], r_7324));; 
+  return_closcall1(data,  ((closureN)self_7328)->elements[0],  Cyc_display_va(data, 2,((closureN)self_7328)->elements[1], r_7324));; 
 }
 
 void c_schemewrite_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
