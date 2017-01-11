@@ -670,7 +670,8 @@ size_t gc_heap_total_size(gc_heap * h);
 //size_t gc_heap_total_free_size(gc_heap *h);
 //size_t gc_collect(gc_heap *h, size_t *sum_freed);
 //void gc_mark(gc_heap *h, object obj);
-void gc_mark_globals(void);
+void gc_request_mark_globals(void);
+void gc_mark_globals(object globals, object global_table);
 size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr);
 void gc_thr_grow_move_buffer(gc_thread_data * d);
 void gc_thr_add_to_move_buffer(gc_thread_data * d, int *alloci, object obj);
@@ -684,7 +685,6 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len);
 void gc_mark_gray(gc_thread_data * thd, object obj);
 void gc_mark_gray2(gc_thread_data * thd, object obj);
 void gc_collector_trace();
-void gc_mark_black(object obj);
 void gc_empty_collector_stack();
 void gc_handshake(gc_status_type s);
 void gc_post_handshake(gc_status_type s);
@@ -708,5 +708,6 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont,
 /* Mutation table to support minor GC write barrier */
 void add_mutation(void *data, object var, int index, object value);
 void clear_mutations(void *data);
+
 
 #endif                          /* CYCLONE_TYPES_H */
