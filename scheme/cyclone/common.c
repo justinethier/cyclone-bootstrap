@@ -132,7 +132,7 @@ c_7337.elements = (object *)alloca(sizeof(object) * 1);
 c_7337.elements[0] = ((closureN)self_7324)->elements[0];
 
 
-make_string(c_7360, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2016 Justin Ethier\n       @@     #@     Version ");
+make_string(c_7360, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2017 Justin Ethier\n       @@     #@     Version ");
 
 make_string(c_7361, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n");
 
