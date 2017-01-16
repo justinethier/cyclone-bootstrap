@@ -520,10 +520,10 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
     if (new_size < size && size < HEAP_SIZE) {
       new_size = HEAP_SIZE;
     }
-//#if GC_DEBUG_TRACE
+#if GC_DEBUG_TRACE
     fprintf(stderr, "Growing heap %d new page size = %zu\n", heap_type,
             new_size);
-//#endif
+#endif
   }
 //  h_last = gc_heap_last(h);
 //  cur_size = h_last->size;
@@ -917,7 +917,6 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     h = next;
   }
 
-printf("Ending gc_sweep\n");
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nAfter sweep -------------------------\n");
   fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
