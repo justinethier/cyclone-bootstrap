@@ -192,6 +192,8 @@ struct gc_heap_t {
   unsigned int max_size;
   unsigned int newly_created;
   //
+  pthread_mutex_t lock;
+  //
   gc_heap *next_free;
   unsigned int last_alloc_size;
   //unsigned int free_size;
