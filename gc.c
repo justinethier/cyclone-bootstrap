@@ -226,8 +226,10 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
   h->next_free = h;
   h->last_alloc_size = 0;
   //h->free_size = size;
-  cached_heap_total_sizes[heap_type] += size;
-  cached_heap_free_sizes[heap_type] += size;
+  //cached_heap_total_sizes[heap_type] += size;
+  //cached_heap_free_sizes[heap_type] += size;
+  ck_pr_add_int(&(cached_heap_total_sizes[heap_type]), size);
+  ck_pr_add_int(&(cached_heap_free_sizes[heap_type]), size);
   h->chunk_size = chunk_size;
   h->max_size = max_size;
   h->data = (char *)gc_heap_align(sizeof(h->data) + (uintptr_t) & (h->data));
@@ -860,7 +862,8 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
       }
     }
     //h->free_size += heap_freed;
-    cached_heap_free_sizes[heap_type] += heap_freed;
+    //cached_heap_free_sizes[heap_type] += heap_freed;
+    ck_pr_add_int(&(cached_heap_free_sizes[heap_type]), heap_freed);
     // Free the heap page if possible.
     //
     // With huge heaps, this becomes more important. one of the huge
@@ -880,8 +883,10 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 //    if (h->type == HEAP_HUGE && gc_is_heap_empty(h) && !h->newly_created){
 //        unsigned int h_size = h->size;
 //        h = gc_heap_free(h, prev_h);
-//        cached_heap_free_sizes[heap_type] -= h_size;
-//        cached_heap_total_sizes[heap_type] -= h_size;
+//        //cached_heap_free_sizes[heap_type] -= h_size;
+//        //cached_heap_total_sizes[heap_type] -= h_size;
+//        ck_pr_sub_int(&(cached_heap_free_sizes[heap_type] ), h_size);
+//        ck_pr_sub_int(&(cached_heap_total_sizes[heap_type]), h_size);
 //    }
     h->newly_created = 0;
     sum_freed += heap_freed;
@@ -1098,16 +1103,26 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
   // Threshold is intentially low because we have to go through an
   // entire handshake/trace/sweep cycle, ideally without growing heap.
   if (ck_pr_load_int(&gc_stage) == STAGE_RESTING &&
-      ((cached_heap_free_sizes[HEAP_SM] <
-        cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
-       (cached_heap_free_sizes[HEAP_64] <
-        cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
+      ((ck_pr_load_int(&(cached_heap_free_sizes[HEAP_SM])) <
+        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_SM])) * GC_COLLECTION_THRESHOLD) ||
+       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_64])) <
+        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD) ||
 #if INTPTR_MAX == INT64_MAX
-       (cached_heap_free_sizes[HEAP_96] <
-        cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
+       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_96])) <
+        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_96])) * GC_COLLECTION_THRESHOLD) ||
 #endif
-       (cached_heap_free_sizes[HEAP_REST] <
-        cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD))) {
+       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_REST])) <
+        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_REST])) * GC_COLLECTION_THRESHOLD))) {
+//      ((cached_heap_free_sizes[HEAP_SM] <
+//        cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
+//       (cached_heap_free_sizes[HEAP_64] <
+//        cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
+//#if INTPTR_MAX == INT64_MAX
+//       (cached_heap_free_sizes[HEAP_96] <
+//        cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
+//#endif
+//       (cached_heap_free_sizes[HEAP_REST] <
+//        cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD))) {
 #if GC_DEBUG_TRACE
     fprintf(stderr,
             "Less than %f%% of the heap is free, initiating collector\n",
@@ -1512,8 +1527,8 @@ void gc_collector()
 
   // TODO: this loop only includes smallest 2 heaps, is that sufficient??
   for (heap_type = 0; heap_type < 2; heap_type++) {
-    while (cached_heap_free_sizes[heap_type] <
-           (cached_heap_total_sizes[heap_type] * GC_FREE_THRESHOLD)) {
+    while ( ck_pr_load_int(&(cached_heap_free_sizes[heap_type])) <
+           (ck_pr_load_int(&(cached_heap_total_sizes[heap_type])) * GC_FREE_THRESHOLD)) {
 #if GC_DEBUG_TRACE
       fprintf(stderr, "Less than %f%% of the heap %d is free, growing it\n",
               100.0 * GC_FREE_THRESHOLD, heap_type);
@@ -1527,19 +1542,32 @@ void gc_collector()
       }
     }
   }
+//#if GC_DEBUG_TRACE
+//  total_size = cached_heap_total_sizes[HEAP_SM] +
+//               cached_heap_total_sizes[HEAP_64] + 
+//#if INTPTR_MAX == INT64_MAX
+//               cached_heap_total_sizes[HEAP_96] + 
+//#endif
+//               cached_heap_total_sizes[HEAP_REST];
+//  total_free = cached_heap_free_sizes[HEAP_SM] +
+//               cached_heap_free_sizes[HEAP_64] + 
+//#if INTPTR_MAX == INT64_MAX
+//               cached_heap_free_sizes[HEAP_96] + 
+//#endif
+//               cached_heap_free_sizes[HEAP_REST];
 #if GC_DEBUG_TRACE
-  total_size = cached_heap_total_sizes[HEAP_SM] +
-               cached_heap_total_sizes[HEAP_64] + 
+  total_size = ck_pr_load_int(&(cached_heap_total_sizes[HEAP_SM])) +
+               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_64])) + 
 #if INTPTR_MAX == INT64_MAX
-               cached_heap_total_sizes[HEAP_96] + 
+               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_96])) + 
 #endif
-               cached_heap_total_sizes[HEAP_REST];
-  total_free = cached_heap_free_sizes[HEAP_SM] +
-               cached_heap_free_sizes[HEAP_64] + 
+               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_REST]));
+  total_free = ck_pr_load_int(&(cached_heap_free_sizes[HEAP_SM])) +
+               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_64])) + 
 #if INTPTR_MAX == INT64_MAX
-               cached_heap_free_sizes[HEAP_96] + 
+               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_96])) + 
 #endif
-               cached_heap_free_sizes[HEAP_REST];
+               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_REST]));
   fprintf(stderr,
           "sweep done, total_size = %zu, total_free = %zu, freed = %zu, elapsed = %ld\n",
           total_size, total_free, freed,
