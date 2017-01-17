@@ -59,8 +59,8 @@ static int mark_stack_i = 0;
 static pthread_mutex_t heap_lock;
 
 // Cached heap statistics
-static int cached_heap_free_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
-static int cached_heap_total_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
+static uint64_t cached_heap_free_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
+static uint64_t cached_heap_total_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
 
 // Data for each individual mutator thread
 ck_array_t Cyc_mutators, old_mutators;
@@ -228,8 +228,8 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
   //h->free_size = size;
   //cached_heap_total_sizes[heap_type] += size;
   //cached_heap_free_sizes[heap_type] += size;
-  ck_pr_add_int(&(cached_heap_total_sizes[heap_type]), size);
-  ck_pr_add_int(&(cached_heap_free_sizes[heap_type]), size);
+  ck_pr_add_64(&(cached_heap_total_sizes[heap_type]), size);
+  ck_pr_add_64(&(cached_heap_free_sizes[heap_type]), size);
   h->chunk_size = chunk_size;
   h->max_size = max_size;
   h->data = (char *)gc_heap_align(sizeof(h->data) + (uintptr_t) & (h->data));
@@ -265,25 +265,50 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
  * @param   prev_page   Previous page in the heap
  * @return  Previous page if successful, NULL otherwise
  */
-gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
-{
-  // At least for now, do not free first page
-  if (prev_page == NULL || page == NULL) {
-    return page;
-  }
-#if GC_DEBUG_TRACE
-  fprintf(stderr, "DEBUG freeing heap type %d page at addr: %p\n", page->type, page);
-#endif
-
-  if (pthread_mutex_destroy(&(page->lock)) != 0) {
-    fprintf(stderr, "Error destroying mutex\n");
-    exit(1);
-  }
-
-  prev_page->next = page->next;
-  free(page);
-  return prev_page;
-}
+//gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
+//{
+//  // At least for now, do not free first page
+//  if (prev_page == NULL || page == NULL) {
+//    return page;
+//  }
+//#if GC_DEBUG_TRACE
+//  fprintf(stderr, "DEBUG freeing heap type %d page at addr: %p\n", page->type, page);
+//#endif
+//
+// TODO:
+// tricky to do this correctly. maybe the best thing to do is set a flag
+// on the page to delete it later. change alloc to recognize the flag.
+// then the next time we sweep, do the actual deletion then.
+// that way we can be confident there are no race conditions, but
+// it is expensive to hold onto empty pages for so long. for large pages
+// this is probably OK. might not fly for smaller ones, but we stopped 
+// deleting those anyway, so...
+//
+//but then is there still a race condition when we do the actual deletion?
+//maybe need to:
+//
+//- lock page
+//- check, is page really empty
+//  - if so, flag page to be deleted, add to the "pending deletion" list
+//- unlink page from heap
+//- unlock it
+//
+//then after sweep can go back, acquire/release all pending deletion locks
+//(to guarantee no other thread owns them) and delete them then (if no other
+//thread had them locked, no thread can get to them since they were unlinked)
+//
+//alloc then has to skip pages that are flagged for deletion
+//
+//// TODO: migrate this code over
+////  if (pthread_mutex_destroy(&(page->lock)) != 0) {
+////    fprintf(stderr, "Error destroying mutex\n");
+////    exit(1);
+////  }
+////
+////  prev_page->next = page->next;
+////  free(page);
+//  return prev_page;
+//}
 
 int gc_is_heap_empty(gc_heap *h) 
 {
@@ -584,7 +609,7 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
         if (heap_type != HEAP_HUGE) {
           // Copy object into heap now to avoid any uninitialized memory issues
           gc_copy_obj(f2, obj, thd);
-          ck_pr_sub_int(&(cached_heap_free_sizes[heap_type]), 
+          ck_pr_sub_64(&(cached_heap_free_sizes[heap_type]), 
                         gc_allocated_bytes(obj, NULL, NULL));
         }
         ck_pr_store_ptr(&(h_passed->next_free), h);
@@ -863,7 +888,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     }
     //h->free_size += heap_freed;
     //cached_heap_free_sizes[heap_type] += heap_freed;
-    ck_pr_add_int(&(cached_heap_free_sizes[heap_type]), heap_freed);
+    ck_pr_add_64(&(cached_heap_free_sizes[heap_type]), heap_freed);
     // Free the heap page if possible.
     //
     // With huge heaps, this becomes more important. one of the huge
@@ -885,8 +910,8 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 //        h = gc_heap_free(h, prev_h);
 //        //cached_heap_free_sizes[heap_type] -= h_size;
 //        //cached_heap_total_sizes[heap_type] -= h_size;
-//        ck_pr_sub_int(&(cached_heap_free_sizes[heap_type] ), h_size);
-//        ck_pr_sub_int(&(cached_heap_total_sizes[heap_type]), h_size);
+//        ck_pr_sub_64(&(cached_heap_free_sizes[heap_type] ), h_size);
+//        ck_pr_sub_64(&(cached_heap_total_sizes[heap_type]), h_size);
 //    }
     h->newly_created = 0;
     sum_freed += heap_freed;
@@ -1099,20 +1124,27 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
   }
 #endif
 
+fprintf(stderr, "HEAP_64 free = %ld, total = %ld, threshold = %f, comp = %f, cmp = %d\n",
+  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])),
+  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])),
+  GC_COLLECTION_THRESHOLD,
+  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD,
+  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])) < 
+  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD);
   // Initiate collection cycle if free space is too low.
   // Threshold is intentially low because we have to go through an
   // entire handshake/trace/sweep cycle, ideally without growing heap.
   if (ck_pr_load_int(&gc_stage) == STAGE_RESTING &&
-      ((ck_pr_load_int(&(cached_heap_free_sizes[HEAP_SM])) <
-        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_SM])) * GC_COLLECTION_THRESHOLD) ||
-       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_64])) <
-        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD) ||
+      ((ck_pr_load_64(&(cached_heap_free_sizes[HEAP_SM])) <
+        ck_pr_load_64(&(cached_heap_total_sizes[HEAP_SM])) * GC_COLLECTION_THRESHOLD) ||
+       (ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])) <
+        ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD) ||
 #if INTPTR_MAX == INT64_MAX
-       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_96])) <
-        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_96])) * GC_COLLECTION_THRESHOLD) ||
+       (ck_pr_load_64(&(cached_heap_free_sizes[HEAP_96])) <
+        ck_pr_load_64(&(cached_heap_total_sizes[HEAP_96])) * GC_COLLECTION_THRESHOLD) ||
 #endif
-       (ck_pr_load_int(&(cached_heap_free_sizes[HEAP_REST])) <
-        ck_pr_load_int(&(cached_heap_total_sizes[HEAP_REST])) * GC_COLLECTION_THRESHOLD))) {
+       (ck_pr_load_64(&(cached_heap_free_sizes[HEAP_REST])) <
+        ck_pr_load_64(&(cached_heap_total_sizes[HEAP_REST])) * GC_COLLECTION_THRESHOLD))) {
 //      ((cached_heap_free_sizes[HEAP_SM] <
 //        cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
 //       (cached_heap_free_sizes[HEAP_64] <
@@ -1527,8 +1559,8 @@ void gc_collector()
 
   // TODO: this loop only includes smallest 2 heaps, is that sufficient??
   for (heap_type = 0; heap_type < 2; heap_type++) {
-    while ( ck_pr_load_int(&(cached_heap_free_sizes[heap_type])) <
-           (ck_pr_load_int(&(cached_heap_total_sizes[heap_type])) * GC_FREE_THRESHOLD)) {
+    while ( ck_pr_load_64(&(cached_heap_free_sizes[heap_type])) <
+           (ck_pr_load_64(&(cached_heap_total_sizes[heap_type])) * GC_FREE_THRESHOLD)) {
 #if GC_DEBUG_TRACE
       fprintf(stderr, "Less than %f%% of the heap %d is free, growing it\n",
               100.0 * GC_FREE_THRESHOLD, heap_type);
@@ -1556,18 +1588,18 @@ void gc_collector()
 //#endif
 //               cached_heap_free_sizes[HEAP_REST];
 #if GC_DEBUG_TRACE
-  total_size = ck_pr_load_int(&(cached_heap_total_sizes[HEAP_SM])) +
-               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_64])) + 
+  total_size = ck_pr_load_64(&(cached_heap_total_sizes[HEAP_SM])) +
+               ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) + 
 #if INTPTR_MAX == INT64_MAX
-               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_96])) + 
+               ck_pr_load_64(&(cached_heap_total_sizes[HEAP_96])) + 
 #endif
-               ck_pr_load_int(&(cached_heap_total_sizes[HEAP_REST]));
-  total_free = ck_pr_load_int(&(cached_heap_free_sizes[HEAP_SM])) +
-               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_64])) + 
+               ck_pr_load_64(&(cached_heap_total_sizes[HEAP_REST]));
+  total_free = ck_pr_load_64(&(cached_heap_free_sizes[HEAP_SM])) +
+               ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])) + 
 #if INTPTR_MAX == INT64_MAX
-               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_96])) + 
+               ck_pr_load_64(&(cached_heap_free_sizes[HEAP_96])) + 
 #endif
-               ck_pr_load_int(&(cached_heap_free_sizes[HEAP_REST]));
+               ck_pr_load_64(&(cached_heap_free_sizes[HEAP_REST]));
   fprintf(stderr,
           "sweep done, total_size = %zu, total_free = %zu, freed = %zu, elapsed = %ld\n",
           total_size, total_free, freed,
