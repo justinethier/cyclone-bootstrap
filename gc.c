@@ -265,16 +265,27 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
  * @param   prev_page   Previous page in the heap
  * @return  Previous page if successful, NULL otherwise
  */
-//gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
-//{
-//  // At least for now, do not free first page
-//  if (prev_page == NULL || page == NULL) {
-//    return page;
+gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
+{
+  // At least for now, do not free first page
+  if (prev_page == NULL || page == NULL) {
+    return page;
+  }
+#if GC_DEBUG_TRACE
+  fprintf(stderr, "DEBUG freeing heap type %d page at addr: %p\n", page->type, page);
+#endif
+
+// TODO: migrate this code over
+//  if (pthread_mutex_destroy(&(page->lock)) != 0) {
+//    fprintf(stderr, "Error destroying mutex\n");
+//    exit(1);
 //  }
-//#if GC_DEBUG_TRACE
-//  fprintf(stderr, "DEBUG freeing heap type %d page at addr: %p\n", page->type, page);
-//#endif
 //
+//  prev_page->next = page->next;
+//  free(page);
+  return prev_page;
+}
+
 // TODO:
 // tricky to do this correctly. maybe the best thing to do is set a flag
 // on the page to delete it later. change alloc to recognize the flag.
@@ -299,16 +310,14 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
 //
 //alloc then has to skip pages that are flagged for deletion
 //
-//// TODO: migrate this code over
-////  if (pthread_mutex_destroy(&(page->lock)) != 0) {
-////    fprintf(stderr, "Error destroying mutex\n");
-////    exit(1);
-////  }
-////
-////  prev_page->next = page->next;
-////  free(page);
-//  return prev_page;
-//}
+//how to unlink page safely?
+//- only one thread will be doing unlinking, so can safely get the prev/curr/next heap pointers
+//- only lock one page at a time? is the runtime open to a deadlock if 2 are locked from same thread?
+//- must lock prev page before unlinking "curr" pointer, since mutator threads use that pointer to traverse heap
+//
+//still thinking about only deleting from heap section after another heap is empty (but skipped).
+//obviously always delete huge heaps
+//
 
 int gc_is_heap_empty(gc_heap *h) 
 {
@@ -590,10 +599,14 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
     h = (gc_heap *)ck_pr_load_ptr(&(h->next_free));
   }
 
-  while(h) { // All heaps
-    pthread_mutex_lock(&(h->lock));
+  if (!h) return NULL;
+
+  // Check all heap pages
+  pthread_mutex_lock(&(h->lock));
+  while(1) {
     // TODO: chunk size (ignoring for now)
 
+    // Do not allocate from a heap page that is about to be deleted
     for (f1 = h->free_list, f2 = f1->next; f2; f1 = f2, f2 = f2->next) {        // all free in this heap
       if (f2->size >= size) {   // Big enough for request
         // TODO: take whole chunk or divide up f2 (using f3)?
@@ -618,9 +631,17 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
         return f2;
       }
     }
+
     next = h->next;
-    pthread_mutex_unlock(&(h->lock));
-    h = next;
+    if (next) {
+      pthread_mutex_lock(&(next->lock));
+      pthread_mutex_unlock(&(h->lock));
+      h = next;
+    }
+    else {
+      pthread_mutex_unlock(&(h->lock));
+      break;
+    }
   }
   return NULL;
 }
@@ -788,8 +809,8 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   gc_print_stats(orig_heap_ptr);
 #endif
 
-  while (h) { // All heaps
-    pthread_mutex_lock(&(h->lock));
+  pthread_mutex_lock(&(h->lock));
+  while (true) { // All heaps
 #if GC_DEBUG_TRACE
     fprintf(stderr, "sweep heap %p, size = %zu\n", h, (size_t) h->size);
 #endif
@@ -916,9 +937,17 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     h->newly_created = 0;
     sum_freed += heap_freed;
     heap_freed = 0;
+
     next = h->next;
-    pthread_mutex_unlock(&(h->lock));
-    h = next;
+    if (next) {
+      pthread_mutex_lock(&(next->lock));
+      pthread_mutex_unlock(&(h->lock));
+      h = next;
+    }
+    else {
+      pthread_mutex_unlock(&(h->lock));
+      break;
+    }
   }
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
@@ -932,6 +961,74 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     *sum_freed_ptr = sum_freed;
   return max_freed;
 }
+
+/*
+void gc_heap_free_pending_deletions(gc_heap *h)
+{
+  // TODO: rewrite pseudocode below assuming new traversal algorithm below.
+  // need to ensure h->next is never held by another thread when this
+  // thread frees the memory for h->next.
+  //
+  // would be ideal if this could be done as part of gc_sweep instead of
+  // having a separate loop to free pages. but if we need this then that's
+  // ok
+  //
+//  lock h
+//  while true
+//    next = h->next
+//    if next
+//      lock next
+//      if deleting next 
+//        queue next for deletion
+//        h->next = next->next // unlinks page to delete
+//        unlock next
+//      else
+//        unlock next
+//      next = h->next
+//    unlock h
+//    h = next
+
+// TODO: I think this could be the code directly in gc_sweep,
+// in which case the pending_deletion field could be removed
+  lock h
+  while true
+    next = h->next
+    if next
+      lock next
+      if deleting next 
+        queue next for deletion
+        h->next = next->next // unlinks page to delete
+      unlock h
+      h = next
+    else
+      unlock h
+      break // done
+
+  // At this point all pending deletions have been unlinked
+  for each next in queue // could be old heap-style for loop
+    destroy resources (mutex, etc)
+    free next
+}
+
+fine-grain traversal algorithm, need to update all the code to use this.
+think just 3 places?
+Anyway, this guarantees one prev/curr lock is always held, preventing case 
+where a thread holds h->next but neither lock
+
+// may need to check if (h) here...
+lock h
+while true
+  // process h
+
+  next = h->next
+  if next
+    lock next
+    unlock h
+    h = next
+  else
+    unlock h
+    break // done
+*/
 
 void gc_thr_grow_move_buffer(gc_thread_data * d)
 {
@@ -1124,13 +1221,13 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
   }
 #endif
 
-fprintf(stderr, "HEAP_64 free = %ld, total = %ld, threshold = %f, comp = %f, cmp = %d\n",
-  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])),
-  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])),
-  GC_COLLECTION_THRESHOLD,
-  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD,
-  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])) < 
-  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD);
+//fprintf(stderr, "HEAP_64 free = %ld, total = %ld, threshold = %f, comp = %f, cmp = %d\n",
+//  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])),
+//  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])),
+//  GC_COLLECTION_THRESHOLD,
+//  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD,
+//  ck_pr_load_64(&(cached_heap_free_sizes[HEAP_64])) < 
+//  ck_pr_load_64(&(cached_heap_total_sizes[HEAP_64])) * GC_COLLECTION_THRESHOLD);
   // Initiate collection cycle if free space is too low.
   // Threshold is intentially low because we have to go through an
   // entire handshake/trace/sweep cycle, ideally without growing heap.
