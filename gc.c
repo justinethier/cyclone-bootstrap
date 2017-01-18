@@ -332,13 +332,12 @@ int gc_is_heap_empty(gc_heap *h)
 /**
  * Print heap usage information.
  */
-void gc_print_stats(gc_heap * h)
+void gc_print_stats(gc_heap * h, int heap_type)
 {
   gc_heap *next;
   gc_free_list *f;
   unsigned int free, free_chunks, free_min, free_max;
   int heap_is_empty;
-  //for (; h; h = h->next) {
   while (h) {
     pthread_mutex_lock(&(h->lock));
     free = 0;
@@ -364,6 +363,10 @@ void gc_print_stats(gc_heap * h)
     pthread_mutex_unlock(&(h->lock));
     h = next;
   }
+  fprintf(stderr, "Heap type = %d, cached free = %ld, cached total = %ld\n",
+    heap_type,
+    ck_pr_load_64(&(cached_heap_free_sizes[heap_type])),
+    ck_pr_load_64(&(cached_heap_total_sizes[heap_type])));
 }
 
 // Copy given object into given heap object
@@ -802,7 +805,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nBefore sweep -------------------------\n");
   fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
-  gc_print_stats(orig_heap_ptr);
+  gc_print_stats(orig_heap_ptr, heap_type);
 #endif
 
   pthread_mutex_lock(&(h->lock));
@@ -994,7 +997,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nAfter sweep -------------------------\n");
   fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
-  gc_print_stats(orig_heap_ptr);
+  gc_print_stats(orig_heap_ptr, heap_type);
 #endif
 
   //pthread_mutex_unlock(&heap_lock);
