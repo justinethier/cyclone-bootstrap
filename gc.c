@@ -792,9 +792,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   size_t freed, max_freed = 0, heap_freed = 0, sum_freed = 0, size;
   object p, end;
   gc_free_list *q, *r, *s;
-#if GC_DEBUG_SHOW_SWEEP_DIAG
   gc_heap *orig_heap_ptr = h;
-#endif
   gc_heap *h2free = NULL, *last2free = NULL, *next;
 
   // Clear cache as part of the sweep
@@ -939,12 +937,29 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     next = h->next;
     if (next) {
       pthread_mutex_lock(&(next->lock));
-      if (next->type == HEAP_HUGE && gc_is_heap_empty(next) && !next->newly_created){
+      pthread_mutex_unlock(&(h->lock));
+      h = next;
+    }
+    else {
+      pthread_mutex_unlock(&(h->lock));
+      break;
+    }
+  }
+
+  // Make another pass to unlink empty pages
+  h = orig_heap_ptr;
+  pthread_mutex_lock(&(h->lock));
+  while (true){ // All heaps
+    next = h->next;
+    if (next) {
+      pthread_mutex_lock(&(next->lock));
+      if (/*next->type == HEAP_HUGE && */ gc_is_heap_empty(next) /*&& !next->newly_created*/){
+        fprintf(stderr, "unlinked free heap page %p\n", next);
         // unlink next
         h->next = next->next;
 
         // queue next for deletion
-        if (h2free) {
+        if (h2free == NULL) {
           h2free = last2free = next;
         } else {
           last2free->next = next;
@@ -965,15 +980,16 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     }
   }
 
-// TODO: actually free old pages
-//  while (h2free) {
-//   unsigned int h_size = h2free->size;
-//   gc_heap *n = h2free->next;
-//   gc_heap_free(h2free);
-//   ck_pr_sub_64(&(cached_heap_free_sizes[heap_type] ), h_size);
-//   ck_pr_sub_64(&(cached_heap_total_sizes[heap_type]), h_size);
-//   h2free = n;
-//  }
+  // Free old pages here, now that nothing is locked
+  while (h2free) {
+   unsigned int h_size = h2free->size;
+   gc_heap *n = h2free->next;
+   fprintf(stderr, "Performing actual free of %p of size %d\n", h2free, h_size);
+   gc_heap_free(h2free);
+   ck_pr_sub_64(&(cached_heap_free_sizes[heap_type] ), h_size);
+   ck_pr_sub_64(&(cached_heap_total_sizes[heap_type]), h_size);
+   h2free = n;
+  }
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nAfter sweep -------------------------\n");
