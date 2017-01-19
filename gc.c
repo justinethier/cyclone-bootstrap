@@ -58,6 +58,10 @@ static int mark_stack_i = 0;
 // Lock to protect the heap from concurrent modifications
 //static pthread_mutex_t heap_lock;
 
+// Let mutators know a sweep has occurred, to prevent issues with
+// caching page info for the last allocation
+static int sweep_counts[7] = { 0, 0, 0, 0, 0, 0, 0 };
+
 // Cached heap statistics
 static uint64_t cached_heap_free_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
 static uint64_t cached_heap_total_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
@@ -594,6 +598,7 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
 {
   gc_heap *h_passed = h, *next = h;
   gc_free_list *f1, *f2, *f3;
+  int sweep_count = ck_pr_load_int(&(sweep_counts[heap_type]));
 //  size_t last_alloc_size;
 
   // Start searching from the last heap page we had a successful
@@ -604,12 +609,12 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
 //  if (size >= last_alloc_size) {
 //    h = (gc_heap *)ck_pr_load_ptr(&(h->next_free));
 //  }
-//  pthread_mutex_lock(&(h->lock));
-//  if (size >= h->last_alloc_size && h->next_free) {
-//    next = h->next_free;
-//  }
-//  pthread_mutex_unlock(&(h->lock));
-//  h = next;
+  pthread_mutex_lock(&(h->lock));
+  if (size >= h->last_alloc_size && h->next_free) {
+    next = h->next_free;
+  }
+  pthread_mutex_unlock(&(h->lock));
+  h = next;
 
   if (!h) return NULL;
 
@@ -638,6 +643,11 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
                         gc_allocated_bytes(obj, NULL, NULL));
         }
         pthread_mutex_unlock(&(h->lock));
+        // Prevent wasting space by clearing cached values if a sweep finished
+        if (sweep_count != ck_pr_load_int(&(sweep_counts[heap_type]))) {
+          h = h_passed;
+          size = 0;
+        }
         //ck_pr_store_ptr(&(h_passed->next_free), h);
         //ck_pr_store_uint(&(h_passed->last_alloc_size), size);
         pthread_mutex_lock(&(h_passed->lock));
@@ -815,14 +825,6 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   gc_free_list *q, *r, *s;
   gc_heap *orig_heap_ptr = h;
   gc_heap *h2free = NULL, *last2free = NULL, *next;
-
-  // Clear cache as part of the sweep
-  //ck_pr_store_ptr(&(h->next_free), h);
-  //ck_pr_store_uint(&(h->last_alloc_size), 0);
-  pthread_mutex_lock(&(h->lock));
-  h->next_free = h;
-  h->last_alloc_size = 0;
-  pthread_mutex_unlock(&(h->lock));
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nBefore sweep -------------------------\n");
@@ -1021,6 +1023,13 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
   gc_print_stats(orig_heap_ptr, heap_type);
 #endif
+
+  // Clear cache as part of the sweep
+  pthread_mutex_lock(&(orig_heap_ptr->lock));
+  orig_heap_ptr->next_free = orig_heap_ptr;
+  orig_heap_ptr->last_alloc_size = 0;
+  pthread_mutex_unlock(&(orig_heap_ptr->lock));
+  ck_pr_inc_int(&(sweep_counts[heap_type]));
 
   if (sum_freed_ptr)
     *sum_freed_ptr = sum_freed;
