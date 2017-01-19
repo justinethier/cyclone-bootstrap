@@ -56,7 +56,7 @@ static int mark_stack_len = 0;
 static int mark_stack_i = 0;
 
 // Lock to protect the heap from concurrent modifications
-static pthread_mutex_t heap_lock;
+//static pthread_mutex_t heap_lock;
 
 // Cached heap statistics
 static uint64_t cached_heap_free_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
@@ -144,10 +144,10 @@ void gc_initialize()
   mark_stack = vpbuffer_realloc(mark_stack, &(mark_stack_len));
 
   // Here is as good a place as any to do this...
-  if (pthread_mutex_init(&(heap_lock), NULL) != 0) {
-    fprintf(stderr, "Unable to initialize heap_lock mutex\n");
-    exit(1);
-  }
+  //if (pthread_mutex_init(&(heap_lock), NULL) != 0) {
+  //  fprintf(stderr, "Unable to initialize heap_lock mutex\n");
+  //  exit(1);
+  //}
   if (pthread_mutex_init(&(mutators_lock), NULL) != 0) {
     fprintf(stderr, "Unable to initialize mutators_lock mutex\n");
     exit(1);
@@ -529,18 +529,11 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
 {
   size_t /*cur_size,*/ new_size;
   gc_heap *h_last = h, *h_new, *next;
-// TODO: using heap lock so only one thread can grow a heap at one time
-// this is not the most efficient way to do it, but seems safe initially.
-// TODO: are heap-specific locks still needed? I think absolutely if we allow
-// heap pages to be removed, but that code is disabled for now. otherwise the
-// heap chain would not be modified by anything else, and sizes are not changed.
-// so should be ok?
-//  pthread_mutex_lock(&heap_lock);
   // Compute size of new heap page
   if (heap_type == HEAP_HUGE) {
     new_size = gc_heap_align(size) + 128;
     pthread_mutex_lock(&(h_last->lock));
-    while (true) { //h_last->next) {
+    while (true) {
       next = h_last->next;
       if (next) {
         pthread_mutex_lock(&(next->lock));
@@ -556,7 +549,7 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
     size_t prev_size = GROW_HEAP_BY_SIZE;
     new_size = 0;
     pthread_mutex_lock(&(h_last->lock));
-    while (true) { //h_last->next) {
+    while (true) {
       if (new_size < HEAP_SIZE) {
         new_size = prev_size + h_last->size;
         prev_size = h_last->size;
@@ -586,17 +579,10 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
             new_size);
 //#endif
   }
-//  h_last = gc_heap_last(h);
-//  cur_size = h_last->size;
-//  new_size = cur_size; //gc_heap_align(((cur_size > size) ? cur_size : size) * 2);
-  // allocate larger pages if size will not fit on the page
-  //new_size = gc_heap_align(((cur_size > size) ? cur_size : size));
   // Done with computing new page size
   h_new = gc_heap_create(heap_type, new_size, h_last->max_size, chunk_size);
-//  pthread_mutex_lock(&(h_last->lock)); // lock since we are changing the heap
   h_last->next = h_new;
   pthread_mutex_unlock(&(h_last->lock));
-//  pthread_mutex_unlock(&heap_lock);
 #if GC_DEBUG_TRACE
   fprintf(stderr, "DEBUG - grew heap\n");
 #endif
@@ -1021,7 +1007,6 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   gc_print_stats(orig_heap_ptr, heap_type);
 #endif
 
-  //pthread_mutex_unlock(&heap_lock);
   if (sum_freed_ptr)
     *sum_freed_ptr = sum_freed;
   return max_freed;
