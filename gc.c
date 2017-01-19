@@ -528,32 +528,51 @@ char *gc_copy_obj(object dest, char *obj, gc_thread_data * thd)
 int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
 {
   size_t /*cur_size,*/ new_size;
-  gc_heap *h_last = h, *h_new;
+  gc_heap *h_last = h, *h_new, *next;
 // TODO: using heap lock so only one thread can grow a heap at one time
 // this is not the most efficient way to do it, but seems safe initially.
 // TODO: are heap-specific locks still needed? I think absolutely if we allow
 // heap pages to be removed, but that code is disabled for now. otherwise the
 // heap chain would not be modified by anything else, and sizes are not changed.
 // so should be ok?
-  pthread_mutex_lock(&heap_lock);
+//  pthread_mutex_lock(&heap_lock);
   // Compute size of new heap page
   if (heap_type == HEAP_HUGE) {
     new_size = gc_heap_align(size) + 128;
-    while (h_last->next) {
-      h_last = h_last->next;
+    pthread_mutex_lock(&(h_last->lock));
+    while (true) { //h_last->next) {
+      next = h_last->next;
+      if (next) {
+        pthread_mutex_lock(&(next->lock));
+        pthread_mutex_unlock(&(h_last->lock));
+        h_last = next;
+      } else {
+        // Do not unlock h_last, will do that below
+        break;
+      }
     }
   } else {
     // Grow heap gradually using fibonnaci sequence.
     size_t prev_size = GROW_HEAP_BY_SIZE;
     new_size = 0;
-    while (h_last->next) {
+    pthread_mutex_lock(&(h_last->lock));
+    while (true) { //h_last->next) {
       if (new_size < HEAP_SIZE) {
         new_size = prev_size + h_last->size;
         prev_size = h_last->size;
       } else {
         new_size = HEAP_SIZE;
       }
-      h_last = h_last->next;
+
+      next = h_last->next;
+      if (next) {
+        pthread_mutex_lock(&(next->lock));
+        pthread_mutex_unlock(&(h_last->lock));
+        h_last = next;
+      } else {
+        // Do not unlock h_last, will do that below
+        break;
+      }
     }
     if (new_size == 0) {
       new_size = prev_size + h_last->size;
@@ -562,10 +581,10 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
     if (new_size < size && size < HEAP_SIZE) {
       new_size = HEAP_SIZE;
     }
-#if GC_DEBUG_TRACE
+//#if GC_DEBUG_TRACE
     fprintf(stderr, "Growing heap %d new page size = %zu\n", heap_type,
             new_size);
-#endif
+//#endif
   }
 //  h_last = gc_heap_last(h);
 //  cur_size = h_last->size;
@@ -574,10 +593,10 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
   //new_size = gc_heap_align(((cur_size > size) ? cur_size : size));
   // Done with computing new page size
   h_new = gc_heap_create(heap_type, new_size, h_last->max_size, chunk_size);
-  pthread_mutex_lock(&(h_last->lock)); // lock since we are changing the heap
+//  pthread_mutex_lock(&(h_last->lock)); // lock since we are changing the heap
   h_last->next = h_new;
   pthread_mutex_unlock(&(h_last->lock));
-  pthread_mutex_unlock(&heap_lock);
+//  pthread_mutex_unlock(&heap_lock);
 #if GC_DEBUG_TRACE
   fprintf(stderr, "DEBUG - grew heap\n");
 #endif
@@ -688,7 +707,7 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
     result = gc_try_alloc(h, heap_type, size, obj, thd);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
-      fprintf(stderr, "Heap diagnostics:\n");
+      fprintf(stderr, "Heap type %d diagnostics:\n", heap_type);
       gc_print_stats(h, heap_type);
       exit(1);                  // could throw error, but OOM is a major issue, so...
     }
