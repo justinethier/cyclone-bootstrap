@@ -265,25 +265,23 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
  * @param   prev_page   Previous page in the heap
  * @return  Previous page if successful, NULL otherwise
  */
-gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
+gc_heap *gc_heap_free(gc_heap *page)
 {
   // At least for now, do not free first page
-  if (prev_page == NULL || page == NULL) {
+  if (page == NULL) {
     return page;
   }
 #if GC_DEBUG_TRACE
   fprintf(stderr, "DEBUG freeing heap type %d page at addr: %p\n", page->type, page);
 #endif
 
-// TODO: migrate this code over
-//  if (pthread_mutex_destroy(&(page->lock)) != 0) {
-//    fprintf(stderr, "Error destroying mutex\n");
-//    exit(1);
-//  }
-//
-//  prev_page->next = page->next;
-//  free(page);
-  return prev_page;
+  if (pthread_mutex_destroy(&(page->lock)) != 0) {
+    fprintf(stderr, "Error destroying mutex\n");
+    exit(1);
+  }
+
+  free(page);
+  return NULL;
 }
 
 // TODO:
@@ -797,7 +795,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   gc_heap *orig_heap_ptr = h;
 #endif
-  gc_heap *prev_h = NULL, *next;
+  gc_heap *h2free = NULL, *last2free = NULL, *next;
 
   // Clear cache as part of the sweep
   ck_pr_store_ptr(&(h->next_free), h);
@@ -941,14 +939,41 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     next = h->next;
     if (next) {
       pthread_mutex_lock(&(next->lock));
-      pthread_mutex_unlock(&(h->lock));
-      h = next;
+      if (next->type == HEAP_HUGE && gc_is_heap_empty(next) && !next->newly_created){
+        // unlink next
+        h->next = next->next;
+
+        // queue next for deletion
+        if (h2free) {
+          h2free = last2free = next;
+        } else {
+          last2free->next = next;
+          last2free = last2free->next;
+        }
+        last2free->next = NULL;
+
+        // try again with h lock
+        pthread_mutex_unlock(&(next->lock));
+      } else {
+        pthread_mutex_unlock(&(h->lock));
+        h = next;
+      }
     }
     else {
       pthread_mutex_unlock(&(h->lock));
       break;
     }
   }
+
+// TODO: actually free old pages
+//  while (h2free) {
+//   unsigned int h_size = h2free->size;
+//   gc_heap *n = h2free->next;
+//   gc_heap_free(h2free);
+//   ck_pr_sub_64(&(cached_heap_free_sizes[heap_type] ), h_size);
+//   ck_pr_sub_64(&(cached_heap_total_sizes[heap_type]), h_size);
+//   h2free = n;
+//  }
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nAfter sweep -------------------------\n");
@@ -998,8 +1023,10 @@ void gc_heap_free_pending_deletions(gc_heap *h)
       if deleting next 
         queue next for deletion
         h->next = next->next // unlinks page to delete
-      unlock h
-      h = next
+        unlock next
+      else
+        unlock h
+        h = next
     else
       unlock h
       break // done
