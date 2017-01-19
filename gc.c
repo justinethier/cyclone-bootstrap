@@ -594,16 +594,22 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
 {
   gc_heap *h_passed = h, *next = h;
   gc_free_list *f1, *f2, *f3;
-  size_t last_alloc_size;
+//  size_t last_alloc_size;
 
   // Start searching from the last heap page we had a successful
   // allocation from, unless the current request is for a smaller
   // block in which case there may be available memory closer to
   // the start of the heap.
-  last_alloc_size = ck_pr_load_uint(&(h->last_alloc_size));
-  if (size >= last_alloc_size) {
-    h = (gc_heap *)ck_pr_load_ptr(&(h->next_free));
-  }
+//  last_alloc_size = ck_pr_load_uint(&(h->last_alloc_size));
+//  if (size >= last_alloc_size) {
+//    h = (gc_heap *)ck_pr_load_ptr(&(h->next_free));
+//  }
+//  pthread_mutex_lock(&(h->lock));
+//  if (size >= h->last_alloc_size && h->next_free) {
+//    next = h->next_free;
+//  }
+//  pthread_mutex_unlock(&(h->lock));
+//  h = next;
 
   if (!h) return NULL;
 
@@ -631,9 +637,14 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
           ck_pr_sub_64(&(cached_heap_free_sizes[heap_type]), 
                         gc_allocated_bytes(obj, NULL, NULL));
         }
-        ck_pr_store_ptr(&(h_passed->next_free), h);
-        ck_pr_store_uint(&(h_passed->last_alloc_size), size);
         pthread_mutex_unlock(&(h->lock));
+        //ck_pr_store_ptr(&(h_passed->next_free), h);
+        //ck_pr_store_uint(&(h_passed->last_alloc_size), size);
+        pthread_mutex_lock(&(h_passed->lock));
+        h_passed->next_free = h;
+        h_passed->last_alloc_size = size;
+        pthread_mutex_unlock(&(h_passed->lock));
+
         return f2;
       }
     }
@@ -806,8 +817,12 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   gc_heap *h2free = NULL, *last2free = NULL, *next;
 
   // Clear cache as part of the sweep
-  ck_pr_store_ptr(&(h->next_free), h);
-  ck_pr_store_uint(&(h->last_alloc_size), 0);
+  //ck_pr_store_ptr(&(h->next_free), h);
+  //ck_pr_store_uint(&(h->last_alloc_size), 0);
+  pthread_mutex_lock(&(h->lock));
+  h->next_free = h;
+  h->last_alloc_size = 0;
+  pthread_mutex_unlock(&(h->lock));
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nBefore sweep -------------------------\n");
