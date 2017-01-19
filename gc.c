@@ -688,6 +688,8 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
     result = gc_try_alloc(h, heap_type, size, obj, thd);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
+      fprintf(stderr, "Heap diagnostics:\n");
+      gc_print_stats(h, heap_type);
       exit(1);                  // could throw error, but OOM is a major issue, so...
     }
   }
