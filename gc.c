@@ -60,7 +60,8 @@ static int mark_stack_i = 0;
 
 // Let mutators know a sweep has occurred, to prevent issues with
 // caching page info for the last allocation
-static int sweep_counts[7] = { 0, 0, 0, 0, 0, 0, 0 };
+//static int sweep_counts[7] = { 0, 0, 0, 0, 0, 0, 0 };
+static int sweeping[7] = { 0, 0, 0, 0, 0, 0, 0 };
 
 // Cached heap statistics
 static uint64_t cached_heap_free_sizes[7] = { 0, 0, 0, 0, 0, 0, 0 };
@@ -598,7 +599,7 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
 {
   gc_heap *h_passed = h, *next = h;
   gc_free_list *f1, *f2, *f3;
-  int sweep_count = ck_pr_load_int(&(sweep_counts[heap_type]));
+//  int sweep_count = ck_pr_load_int(&(sweep_counts[heap_type]));
 //  size_t last_alloc_size;
 
   // Start searching from the last heap page we had a successful
@@ -644,7 +645,8 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
         }
         pthread_mutex_unlock(&(h->lock));
         // Prevent wasting space by clearing cached values if a sweep finished
-        if (sweep_count != ck_pr_load_int(&(sweep_counts[heap_type]))) {
+        //if (sweep_count != ck_pr_load_int(&(sweep_counts[heap_type]))) {
+        if (ck_pr_load_int(&(sweeping[heap_type]))) {
           h = h_passed;
           size = 0;
         }
@@ -825,6 +827,8 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   gc_free_list *q, *r, *s;
   gc_heap *orig_heap_ptr = h;
   gc_heap *h2free = NULL, *last2free = NULL, *next;
+
+  ck_pr_store_int(&(sweeping[heap_type]), 1);
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nBefore sweep -------------------------\n");
@@ -1029,7 +1033,8 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
   orig_heap_ptr->next_free = orig_heap_ptr;
   orig_heap_ptr->last_alloc_size = 0;
   pthread_mutex_unlock(&(orig_heap_ptr->lock));
-  ck_pr_inc_int(&(sweep_counts[heap_type]));
+//  ck_pr_inc_int(&(sweep_counts[heap_type]));
+  ck_pr_store_int(&(sweeping[heap_type]), 0);
 
   if (sum_freed_ptr)
     *sum_freed_ptr = sum_freed;
