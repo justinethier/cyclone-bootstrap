@@ -227,7 +227,7 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
     return NULL;
   h->type = heap_type;
   h->size = size;
-  h->newly_created = 1;
+  h->ttl = 10;
   h->next_free = h;
   h->last_alloc_size = 0;
   //h->free_size = size;
@@ -558,6 +558,9 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size)
       if (new_size < HEAP_SIZE) {
         new_size = prev_size + h_last->size;
         prev_size = h_last->size;
+        if (new_size > HEAP_SIZE) {
+            new_size = HEAP_SIZE;
+        }
       } else {
         new_size = HEAP_SIZE;
       }
@@ -644,7 +647,7 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
                         gc_allocated_bytes(obj, NULL, NULL));
         }
         pthread_mutex_unlock(&(h->lock));
-        // Prevent wasting space by clearing cached values if a sweep finished
+        // Makes the collector reliable but hurts performance
         //if (sweep_count != ck_pr_load_int(&(sweep_counts[heap_type]))) {
         if (ck_pr_load_int(&(sweeping[heap_type]))) {
           h = h_passed;
@@ -961,7 +964,7 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
 //        ck_pr_sub_64(&(cached_heap_free_sizes[heap_type] ), h_size);
 //        ck_pr_sub_64(&(cached_heap_total_sizes[heap_type]), h_size);
 //    }
-    h->newly_created = 0;
+//    h->newly_created = 0;
     sum_freed += heap_freed;
     heap_freed = 0;
 
@@ -984,7 +987,9 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr)
     next = h->next;
     if (next) {
       pthread_mutex_lock(&(next->lock));
-      if (/*next->type == HEAP_HUGE && */ gc_is_heap_empty(next) /*&& !next->newly_created*/){
+      //if (next->type == HEAP_HUGE && gc_is_heap_empty(next) /*&& !next->newly_created*/){
+      if (gc_is_heap_empty(next) && 
+          (next->type == HEAP_HUGE || !(next->ttl--))){
         fprintf(stderr, "unlinked free heap page %p\n", next);
         // unlink next
         h->next = next->next;

@@ -34,7 +34,7 @@
 // Parameters for size of a "page" on the heap (the second generation GC), in bytes.
 #define GROW_HEAP_BY_SIZE (2 * 1024 * 1024)     // Grow first page by adding this amount to it
 #define INITIAL_HEAP_SIZE (3 * 1024 * 1024)     // Size of the first page
-#define HEAP_SIZE (377 * 1024 * 1024)    // Normal size of a page
+#define HEAP_SIZE (32 * 1024 * 1024)    // Normal size of a page
 
 /////////////////////////////
 // Major GC tuning parameters
@@ -190,7 +190,7 @@ struct gc_heap_t {
   unsigned int size;
   unsigned int chunk_size;      // 0 for any size, other and heap will only alloc chunks of that size
   unsigned int max_size;
-  unsigned int newly_created;
+  unsigned int ttl; // Still live for this many sweeps when empty
   //
   pthread_mutex_t lock; // Page-level lock
   //
