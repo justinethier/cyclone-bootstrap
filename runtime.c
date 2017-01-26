@@ -140,7 +140,6 @@ if (type_is_pair_prim(clo)) { \
 /*END closcall section */
 
 /* Global variables. */
-static gc_heap_root *Cyc_heap;
 object Cyc_global_variables = NULL;
 int _cyc_argc = 0;
 char **_cyc_argv = NULL;
@@ -261,17 +260,6 @@ static bool set_insert(ck_hs_t * hs, const void *value)
 
 void gc_init_heap(long heap_size)
 {
-  size_t initial_heap_size = INITIAL_HEAP_SIZE;
-  Cyc_heap = calloc(1, sizeof(gc_heap_root));
-  Cyc_heap->heap = calloc(1, sizeof(gc_heap *) * NUM_HEAP_TYPES);
-  Cyc_heap->heap[HEAP_REST] = gc_heap_create(HEAP_REST, initial_heap_size, 0, 0);
-  Cyc_heap->heap[HEAP_SM] = gc_heap_create(HEAP_SM, initial_heap_size, 0, 0);
-  Cyc_heap->heap[HEAP_64] = gc_heap_create(HEAP_64, initial_heap_size, 0, 0);
-  if (sizeof(void *) == 8) { // Only use this heap on 64-bit platforms
-    Cyc_heap->heap[HEAP_96] = gc_heap_create(HEAP_96, initial_heap_size, 0, 0);
-  }
-  Cyc_heap->heap[HEAP_HUGE] = gc_heap_create(HEAP_HUGE, 1024, 0, 0);
-
   if (!ck_hs_init(&symbol_table,
                   CK_HS_MODE_OBJECT | CK_HS_MODE_SPMC,
                   hs_hash, hs_compare,
@@ -283,11 +271,6 @@ void gc_init_heap(long heap_size)
     fprintf(stderr, "Unable to initialize symbol_table_lock mutex\n");
     exit(1);
   }
-}
-
-gc_heap_root *gc_get_heap()
-{
-  return Cyc_heap;
 }
 
 object cell_get(object cell)
@@ -1071,7 +1054,7 @@ object Cyc_heap_alloc_port(void *data, port_type *stack_p)
 {
   object p = NULL;
   int heap_grown;
-  p = gc_alloc(Cyc_heap, 
+  p = gc_alloc(((gc_thread_data *)data)->heap, 
                sizeof(port_type),
                (char *)stack_p,
                (gc_thread_data *)data, 
@@ -2019,7 +2002,7 @@ object Cyc_make_vector(void *data, object cont, int argc, object len, ...)
     // TODO: mark this thread as potentially blocking before doing
     //       the allocation????
     int heap_grown;
-    v = gc_alloc(Cyc_heap, 
+    v = gc_alloc(((gc_thread_data *)data)->heap, 
                  sizeof(vector_type) + element_vec_size,
                  boolean_f, // OK to populate manually over here
                  (gc_thread_data *)data, 
@@ -2063,12 +2046,27 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...)
   Cyc_check_num(data, len);
   length = unbox_number(len);
 
-  bv = alloca(sizeof(bytevector_type));
-  ((bytevector) bv)->hdr.mark = gc_color_red;
-  ((bytevector) bv)->hdr.grayed = 0;
-  ((bytevector) bv)->tag = bytevector_tag;
-  ((bytevector) bv)->len = length;
-  ((bytevector) bv)->data = alloca(sizeof(char) * length);
+  if (length >= MAX_STACK_OBJ) {
+    int heap_grown;
+    bv = gc_alloc(((gc_thread_data *)data)->heap,
+                  sizeof(bytevector_type) + length,
+                  boolean_f, // OK to populate manually over here
+                  (gc_thread_data *)data, 
+                  &heap_grown);
+    ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
+    ((bytevector) bv)->hdr.grayed = 0;
+    ((bytevector) bv)->tag = bytevector_tag;
+    ((bytevector) bv)->len = length;
+    ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
+  } else {
+    bv = alloca(sizeof(bytevector_type));
+    ((bytevector) bv)->hdr.mark = gc_color_red;
+    ((bytevector) bv)->hdr.grayed = 0;
+    ((bytevector) bv)->tag = bytevector_tag;
+    ((bytevector) bv)->len = length;
+    ((bytevector) bv)->data = alloca(sizeof(char) * length);
+  }
+
   if (argc > 1) {
     Cyc_check_num(data, fill);
     fill_val = unbox_number(fill);
@@ -4039,30 +4037,31 @@ char *gc_fixup_moved_obj(gc_thread_data * thd, int *alloci, char *obj,
 
 char *gc_move(char *obj, gc_thread_data * thd, int *alloci, int *heap_grown)
 {
+  gc_heap_root *heap = thd->heap;
   if (!is_object_type(obj))
     return obj;
   switch (type_of(obj)) {
   case pair_tag:{
-      list hp = gc_alloc(Cyc_heap, sizeof(pair_type), obj, thd, heap_grown);
+      list hp = gc_alloc(heap, sizeof(pair_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case macro_tag:{
       macro_type *hp =
-          gc_alloc(Cyc_heap, sizeof(macro_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(macro_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case closure0_tag:{
       closure0_type *hp =
-          gc_alloc(Cyc_heap, sizeof(closure0_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(closure0_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case closure1_tag:{
       closure1_type *hp =
-          gc_alloc(Cyc_heap, sizeof(closure1_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(closure1_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case closureN_tag:{
-      closureN_type *hp = gc_alloc(Cyc_heap,
+      closureN_type *hp = gc_alloc(heap,
                                    sizeof(closureN_type) +
                                    sizeof(object) *
                                    (((closureN) obj)->num_elements),
@@ -4070,7 +4069,7 @@ char *gc_move(char *obj, gc_thread_data * thd, int *alloci, int *heap_grown)
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case vector_tag:{
-      vector_type *hp = gc_alloc(Cyc_heap,
+      vector_type *hp = gc_alloc(heap,
                                  sizeof(vector_type) +
                                  sizeof(object) *
                                  (((vector) obj)->num_elements),
@@ -4078,41 +4077,41 @@ char *gc_move(char *obj, gc_thread_data * thd, int *alloci, int *heap_grown)
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case bytevector_tag:{
-      bytevector_type *hp = gc_alloc(Cyc_heap,
+      bytevector_type *hp = gc_alloc(heap,
                                      sizeof(bytevector_type) +
                                      sizeof(char) * (((bytevector) obj)->len),
                                      obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case string_tag:{
-      string_type *hp = gc_alloc(Cyc_heap,
+      string_type *hp = gc_alloc(heap,
                                  sizeof(string_type) + ((string_len(obj) + 1)),
                                  obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case integer_tag:{
       integer_type *hp =
-          gc_alloc(Cyc_heap, sizeof(integer_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(integer_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case double_tag:{
       double_type *hp =
-          gc_alloc(Cyc_heap, sizeof(double_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(double_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case port_tag:{
       port_type *hp =
-          gc_alloc(Cyc_heap, sizeof(port_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(port_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case cvar_tag:{
       cvar_type *hp =
-          gc_alloc(Cyc_heap, sizeof(cvar_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(cvar_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case c_opaque_tag:{
       c_opaque_type *hp =
-          gc_alloc(Cyc_heap, sizeof(c_opaque_type), obj, thd, heap_grown);
+          gc_alloc(heap, sizeof(c_opaque_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
   case forward_tag:
@@ -4832,7 +4831,7 @@ object copy2heap(void *data, object obj)
     return obj;
   }
 
-  return gc_alloc(Cyc_heap, gc_allocated_bytes(obj, NULL, NULL), obj, data,
+  return gc_alloc(((gc_thread_data *)data)->heap, gc_allocated_bytes(obj, NULL, NULL), obj, data,
                   &on_stack);
 }
 
