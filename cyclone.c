@@ -1128,7 +1128,7 @@ static void __lambda_235(void *data, int argc, object self_73552, object r_73208
   
 mclosure0(c_732027, (function_type)__lambda_230);c_732027.num_args = 1;
 
-make_string(c_732029, "\n -t              Show intermediate trace output in generated C files\n -d              Only generate intermediate C files, do not compile them\n -h, --help      Display usage information\n -v              Display version information\n -Ox             Optimization level, higher means more optimizations will\n                 be used. Set to 0 to disable optimizations.\n --autogen       Cyclone developer use only, create autogen.out file\n");
+make_string(c_732029, "\n -A directory    Append directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -I directory    Prepend directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -Ox             Optimization level, higher means more optimizations will\n                 be used. Set to 0 to disable optimizations.\n -d              Only generate intermediate C files, do not compile them\n -t              Show intermediate trace output in generated C files\n -h, --help      Display usage information\n -v              Display version information\n");
 return_closcall2(data,  __glo_display_scheme_write,  &c_732027, &c_732029);
 } else { 
     make_string(c_732032, "-v");
