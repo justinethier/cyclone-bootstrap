@@ -603,7 +603,7 @@
                     (cdr exp)
                     (ast:lambda-formals->list (car exp)))
                   (or
-                    (prim-calls-inlinable? (cdr exp))
+                    ;(prim-calls-inlinable? (cdr exp))
                     (inline-prim-call? 
                       (ast:lambda-body (car exp))
                       (prim-calls->arg-variables (cdr exp))
