@@ -1161,7 +1161,56 @@ object Cyc_num_cmp_va_list(void *data, int argc,
   return boolean_t;
 }
 
-#define declare_num_cmp(FUNC, FUNC_OP, FUNC_FAST_OP, FUNC_APPLY, OP) \
+typedef enum {
+    CYC_BN_LTE = -2
+  , CYC_BN_LT = MP_LT
+  , CYC_BN_EQ = MP_EQ
+  , CYC_BN_GT = MP_GT
+  , CYC_BN_GTE = 2
+} bn_cmp_type;
+
+int Cyc_bignum_cmp(void *data, bn_cmp_type type, object x, int tx, object y, int ty)
+{
+  mp_int tmp;
+  int cmp;
+
+  if (tx == bignum_tag && ty == bignum_tag) {
+    cmp = mp_cmp(&bignum_value(x), &bignum_value(y));
+    return (cmp == type) ||
+           ((type == CYC_BN_GTE && cmp > MP_LT) ||
+            (type == CYC_BN_LTE && cmp < MP_GT));
+  } else if (tx == bignum_tag && ty == -1) { \
+    mp_init(&tmp);
+    mp_set_int(&tmp, obj_obj2int(y));
+    cmp = mp_cmp(&bignum_value(x), &tmp);
+    mp_clear(&tmp);
+    return (cmp == type) ||
+           ((type == CYC_BN_GTE && cmp > MP_LT) ||
+            (type == CYC_BN_LTE && cmp < MP_GT));
+  } else if (tx == -1 && ty == bignum_tag) { \
+    mp_init(&tmp);
+    mp_set_int(&tmp, obj_obj2int(x));
+    cmp = mp_cmp(&tmp, &bignum_value(y));
+    mp_clear(&tmp);
+    return (cmp == type) ||
+           ((type == CYC_BN_GTE && cmp > MP_LT) ||
+            (type == CYC_BN_LTE && cmp < MP_GT));
+  }
+
+    /* TODO:
+    } else if (tx == bignum_tag && ty == double_tag) { \
+    } else if (tx == double_tag && ty == bignum_tag) { \
+    */
+  {
+    make_string(s, "Bad argument type");
+    make_pair(c1, y, NULL);
+    make_pair(c0, &s, &c1);
+    Cyc_rt_raise(data, &c0);
+    return 0;
+  }
+}
+
+#define declare_num_cmp(FUNC, FUNC_OP, FUNC_FAST_OP, FUNC_APPLY, OP, BN_CMP) \
 int FUNC_OP(void *data, object x, object y) { \
     int result = 0, \
         tx = (obj_is_int(x) ? -1 : type_of(x)), \
@@ -1184,6 +1233,14 @@ int FUNC_OP(void *data, object x, object y) { \
       result = (double_value(x)) OP (integer_value(y)); \
     } else if (tx == double_tag && ty == double_tag) { \
       result = (double_value(x)) OP (double_value(y)); \
+    } else if (tx == bignum_tag && ty == -1) { \
+      result = Cyc_bignum_cmp(data, BN_CMP, x, tx, y, ty); \
+    } else if (tx == bignum_tag && ty == double_tag) { \
+    } else if (tx == bignum_tag && ty == bignum_tag) { \
+      result = Cyc_bignum_cmp(data, BN_CMP, x, tx, y, ty); \
+    } else if (tx == -1 && ty == bignum_tag) { \
+      result = Cyc_bignum_cmp(data, BN_CMP, x, tx, y, ty); \
+    } else if (tx == double_tag && ty == bignum_tag) { \
     } else { \
         make_string(s, "Bad argument type"); \
         make_pair(c1, y, NULL); \
@@ -1266,11 +1323,11 @@ bad_arg_type_error: \
     } \
 }
 
-declare_num_cmp(Cyc_num_eq,  Cyc_num_eq_op,  Cyc_num_fast_eq_op, dispatch_num_eq, ==);
-declare_num_cmp(Cyc_num_gt,  Cyc_num_gt_op,  Cyc_num_fast_gt_op, dispatch_num_gt, >);
-declare_num_cmp(Cyc_num_lt,  Cyc_num_lt_op,  Cyc_num_fast_lt_op, dispatch_num_lt, <);
-declare_num_cmp(Cyc_num_gte, Cyc_num_gte_op, Cyc_num_fast_gte_op, dispatch_num_gte, >=);
-declare_num_cmp(Cyc_num_lte, Cyc_num_lte_op, Cyc_num_fast_lte_op, dispatch_num_lte, <=);
+declare_num_cmp(Cyc_num_eq,  Cyc_num_eq_op,  Cyc_num_fast_eq_op, dispatch_num_eq, ==, CYC_BN_EQ);
+declare_num_cmp(Cyc_num_gt,  Cyc_num_gt_op,  Cyc_num_fast_gt_op, dispatch_num_gt, >, CYC_BN_GT);
+declare_num_cmp(Cyc_num_lt,  Cyc_num_lt_op,  Cyc_num_fast_lt_op, dispatch_num_lt, <, CYC_BN_LT);
+declare_num_cmp(Cyc_num_gte, Cyc_num_gte_op, Cyc_num_fast_gte_op, dispatch_num_gte, >=, CYC_BN_GTE);
+declare_num_cmp(Cyc_num_lte, Cyc_num_lte_op, Cyc_num_fast_lte_op, dispatch_num_lte, <=, CYC_BN_LTE);
 
 object Cyc_is_boolean(object o)
 {
