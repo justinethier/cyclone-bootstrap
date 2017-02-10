@@ -2120,12 +2120,13 @@ static void __lambda_50(void* data, int argc, closure _, object k, object x, obj
   Cyc_check_int(data,y);
   int bf = (int)unbox_number(x);
   int shift = (int)unbox_number(y);
+  int i;
   if (shift > 0) {
-        for (int i = 0; i < shift; i++) {
+        for (i = 0; i < shift; i++) {
                  bf *= 2;
         }
   } else {
-        for (int i = 0; i < abs(shift); i++) {
+        for (i = 0; i < abs(shift); i++) {
                 bf /= 2; 
         }
   }
