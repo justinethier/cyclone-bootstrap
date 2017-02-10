@@ -221,6 +221,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
+extern object __glo_with_91handler_scheme_base;
 extern object __glo_with_91exception_91handler_scheme_base;
 extern object __glo_Cyc_91add_91exception_91handler_scheme_base;
 extern object __glo_Cyc_91remove_91exception_91handler_scheme_base;
