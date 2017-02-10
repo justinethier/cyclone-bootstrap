@@ -43,6 +43,7 @@ const char *tag_names[] = {
       /*eof_tag       */ , "eof"
       /*forward_tag   */ , ""
       /*integer_tag   */ , "number"
+      /*bignum_tag    */ , "bignum"
       /*macro_tag     */ , "macro"
       /*mutex_tag     */ , "mutex"
       /*pair_tag      */ , "pair"
@@ -1285,6 +1286,7 @@ object Cyc_is_number(object o)
 {
   if ((o != NULL) && (obj_is_int(o) || (!is_value_type(o)
                                         && (type_of(o) == integer_tag
+                                            || type_of(o) == bignum_tag
                                             || type_of(o) == double_tag))))
     return boolean_t;
   return boolean_f;
@@ -1298,7 +1300,15 @@ object Cyc_is_real(object o)
 object Cyc_is_integer(object o)
 {
   if ((o != NULL) && (obj_is_int(o) ||
-                      (!is_value_type(o) && type_of(o) == integer_tag)))
+                      (!is_value_type(o) && type_of(o) == integer_tag) ||
+                      (!is_value_type(o) && type_of(o) == bignum_tag)))
+    return boolean_t;
+  return boolean_f;
+}
+
+object Cyc_is_bignum(object o)
+{
+  if ((o != NULL) && !is_value_type(o) && ((list) o)->tag == bignum_tag)
     return boolean_t;
   return boolean_f;
 }
@@ -1698,6 +1708,18 @@ str2int_errno str2int(int *out, char *s, int base)
     return STR2INT_SUCCESS;
 }
 
+int str_is_bignum(str2int_errno errnum, char *c)
+{
+  if (errnum == STR2INT_INCONVERTIBLE) return 0; // Unexpected chars for int
+
+  for (;*c; c++) {
+    if (!isdigit(*c) && *c != '-') {
+      return 0;
+    }
+  }
+  return 1;
+}
+
 object Cyc_string2number_(void *data, object cont, object str)
 {
   int result, rv;
@@ -1711,6 +1733,13 @@ object Cyc_string2number_(void *data, object cont, object str)
     rv = str2int(&result, s, 10);
     if (rv == STR2INT_SUCCESS) {
       _return_closcall1(data, cont, obj_int2obj(result));
+    } else if (str_is_bignum(rv, s)) {
+      make_empty_bignum(bn);
+      
+      // TODO: check return value
+      mp_read_radix(&(bignum_value(&bn)), s, 10);
+
+      _return_closcall1(data, cont, &bn);
     } else {
       char *str_end;
       n = strtold(s, &str_end);
@@ -4078,6 +4107,11 @@ char *gc_move(char *obj, gc_thread_data * thd, int *alloci, int *heap_grown)
           gc_alloc(heap, sizeof(integer_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
+  case bignum_tag:{
+      bignum_type *hp = 
+          gc_alloc(heap, sizeof(bignum_type), obj, thd, heap_grown);
+      return gc_fixup_moved_obj(thd, alloci, obj, hp);
+  }
   case double_tag:{
       double_type *hp =
           gc_alloc(heap, sizeof(double_type), obj, thd, heap_grown);
@@ -4235,6 +4269,7 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont,
     case bytevector_tag:
     case string_tag:
     case integer_tag:
+    case bignum_tag:
     case double_tag:
     case port_tag:
     case cvar_tag:
