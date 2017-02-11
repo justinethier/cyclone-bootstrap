@@ -24253,7 +24253,8 @@ static void __lambda_811(void *data, int argc, object self_736591, object r_7340
 }
 
 static void __lambda_810(void *data, int argc, closure _, object k, object num) { Cyc_check_num(data, num);
-      if (obj_is_int(num) || type_of(num) == integer_tag)
+      if (obj_is_int(num) || type_of(num) == integer_tag 
+                          || type_of(num) == bignum_tag)
         return_closcall1(data, k, boolean_t);
       return_closcall1(data, k, boolean_f);  }
 static void __lambda_809(void *data, int argc, closure _,object k_734056, object num_731627) {
