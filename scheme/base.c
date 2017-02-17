@@ -23828,11 +23828,7 @@ static void __lambda_847(void *data, int argc, closure _, object k, object port)
         k, 
        ((p->mode == 1) ? boolean_t : boolean_f));  }
 static void __lambda_846(void *data, int argc, closure _, object k) { return_closcall1(data, k, Cyc_EOF);  }
-static void __lambda_845(void *data, int argc, closure _, object k, object z1, object z2) { make_double(d, 0.0);
-      Cyc_check_num(data, z1);
-      Cyc_check_num(data, z2);
-      d.value = pow( unbox_number(z1), unbox_number(z2) );
-      return_closcall1(data, k, &d);  }
+static void __lambda_845(void *data, int argc, closure _, object k, object z1, object z2) { Cyc_expt(data, k, z1, z2);  }
 static void __lambda_844(void *data, int argc, closure _,object k_733967, object z_731598) {
   Cyc_st_add(data, "scheme/base.sld:square");
 
