@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2017 Justin Ethier
- ** Version 0.3.4.1 (beta)
+ ** Version 0.4 (beta)
  **
  **/
 
