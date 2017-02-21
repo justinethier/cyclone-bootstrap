@@ -24597,23 +24597,7 @@ return_closcall1(data,  ((closureN)self_736608)->elements[1],  c_7313289);}
 ; 
 }
 
-static void __lambda_785(void *data, int argc, closure _, object k, object num1, object num2) { int i, j;
-      Cyc_check_num(data, num1);
-      Cyc_check_num(data, num2);
-      if (obj_is_int(num1)) {
-        i = obj_obj2int(num1);
-      } else /* Must be double: if (type_of(num1) == double_tag)*/ { 
-        i = ((double_type *)num1)->value; 
-      }
-      if (obj_is_int(num2)) {
-        j = obj_obj2int(num2);
-      } else /* Must be double: if (type_of(num2) == double_tag)*/ { 
-        j = ((double_type *)num2)->value; 
-      }
-      {
-        object result = obj_int2obj(i % j);
-        return_closcall1(data, k, result); 
-      } }
+static void __lambda_785(void *data, int argc, closure _, object k, object num1, object num2) { Cyc_remainder(data, k, num1, num2);  }
 static void __lambda_784(void *data, int argc, closure _, object k, object num) { Cyc_check_num(data, num);
       if (obj_is_int(num)) {
         return_closcall1(data, k, obj_int2obj( abs( obj_obj2int(num))));
