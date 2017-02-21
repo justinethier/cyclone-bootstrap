@@ -401,6 +401,7 @@ extern object __glo_inexact_127_scheme_base;
 extern object __glo_odd_127_scheme_base;
 extern object __glo_complex_127_scheme_base;
 extern object __glo_rational_127_scheme_base;
+extern object __glo_bignum_127_scheme_base;
 extern object __glo_gcd_scheme_base;
 extern object __glo_lcm_scheme_base;
 extern object __glo_quotient_scheme_base;
