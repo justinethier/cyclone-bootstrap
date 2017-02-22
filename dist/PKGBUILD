@@ -2,7 +2,7 @@
 pkgname=cyclone-scheme
 pkgver=0.3.4.1
 pkgrel=1
-pkgdesc="An R7RS Scheme-to-C compiler using Cheney on the M.T.A with native threads"
+pkgdesc="A brand-new compiler that allows practical application development using R7RS Scheme"
 arch=('i686' 'x86_64')
 url="https://github.com/justinethier/cyclone-bootstrap"
 license=('MIT')
