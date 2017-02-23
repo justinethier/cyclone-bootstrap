@@ -4,23 +4,30 @@ Cyclone is a brand-new, R<sup>7</sup>RS Scheme-to-C compiler that uses a variant
 
 Cyclone cannot be built directly on a system that does not have Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting). Instead, this repository uses pre-generated C code to build and install Cyclone Scheme on a fresh system. 
 
+Packaged Installations
+----------------------
+
+It is possible to install Cyclone via package manager if your system provides one. As of now the only platform that provides packaging is Arch Linux using the [`cyclone-scheme` package from the AUR](https://aur.archlinux.org/packages/cyclone-scheme/).
+
+On other systems the following prerequisites must be installed before proceeding with the installation steps below.
+
 Prerequisites
 -------------
 
+- make
+- gcc
+- [LibTomMath](https://github.com/libtom/libtommath)
 - [Concurrency Kit](http://concurrencykit.org/)
 
-    The best way to install `libck` is via a package manager such as `apt-get`. But if a package is not available for this library it can also be built from source. Just replace `0.5.0` below with the latest version available from their website:
+  NOTE: The best way to install `libck` is via a package manager such as `apt-get`. But if a package is not available for this library it can also be built from source. Just replace `0.5.0` below with the latest version available from their website:
     
         wget http://concurrencykit.org/releases/ck-0.5.0.tar.gz
         tar xfz ck-0.5.0.tar.gz ; cd ck-0.5.0 ; ./configure && make all && sudo make install
         sudo ldconfig
-    
-- [LibTomMath](https://github.com/libtom/libtommath)
 
-    Again, the best way to install `libtommath` is via your system's package manager.
+On a Debian variant such as Ubuntu, the necessary packages are:
 
-- make
-- gcc
+    libtommath-dev libck-dev make gcc
 
 Installation
 ------------
