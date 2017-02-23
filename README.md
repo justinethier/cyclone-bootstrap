@@ -22,12 +22,16 @@ Prerequisites
   NOTE: The best way to install `libck` is via a package manager such as `apt-get`. But if a package is not available for this library it can also be built from source. Just replace `0.5.0` below with the latest version available from their website:
     
         wget http://concurrencykit.org/releases/ck-0.5.0.tar.gz
-        tar xfz ck-0.5.0.tar.gz ; cd ck-0.5.0 ; ./configure && make all && sudo make install
+        tar xfz ck-0.5.0.tar.gz ; cd ck-0.5.0 ; ./configure PREFIX=/usr && make all && sudo make install
         sudo ldconfig
 
-On a Debian variant such as Ubuntu, the necessary packages are:
+On a Debian variant such as Ubuntu the necessary packages may be installed via the command:
 
-    libtommath-dev libck-dev make gcc
+    sudo apt-get install libtommath-dev libck-dev make gcc
+
+The following command can be used to install dependencies on Fedora, though `libck` will also need to be built from source:
+
+    sudo yum install libtommath-devel gcc make
 
 Installation
 ------------
