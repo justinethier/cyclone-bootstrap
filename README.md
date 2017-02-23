@@ -7,7 +7,7 @@ Cyclone cannot be built directly on a system that does not have Cyclone binaries
 Packaged Installations
 ----------------------
 
-It is possible to install Cyclone via package manager if your system provides one. As of now the only platform that provides packaging is Arch Linux using the [`cyclone-scheme` package from the AUR](https://aur.archlinux.org/packages/cyclone-scheme/).
+It is possible to install Cyclone via package manager if your system provides one. As of now the only platform that provides packaging is Arch Linux using the [`cyclone-scheme` package](https://aur.archlinux.org/packages/cyclone-scheme/) from the AUR.
 
 On other systems the following prerequisites must be installed before proceeding with the installation steps below.
 
