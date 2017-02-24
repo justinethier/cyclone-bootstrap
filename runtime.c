@@ -567,11 +567,6 @@ int equal(object x, object y)
         if (equalp(((vector) x)->elements[i], ((vector) y)->elements[i]) ==
             boolean_f)
           return 0;
-        // A very simple check to see if the vectors are circular.
-        // This is not general-purpose enough but a first cut
-        if ( ((vector) x)->elements[i] == x && 
-             ((vector) y)->elements[i] == y)
-          return 0;
       }
       return 1;
     }
@@ -4596,7 +4591,7 @@ void Cyc_start_trampoline(gc_thread_data * thd)
   exit(1);
 }
 
-void gc_request_mark_globals()
+void gc_request_mark_globals(void)
 {
   gc_mark_globals(Cyc_global_variables, global_table);
 }
@@ -4743,7 +4738,10 @@ object Cyc_trigger_minor_gc(void *data, object cont)
   return NULL;
 }
 
-// Do a minor GC
+/**
+ * Do a minor GC
+ * \ingroup gc_minor
+ */
 int gc_minor(void *data, object low_limit, object high_limit, closure cont,
              object * args, int num_args)
 {

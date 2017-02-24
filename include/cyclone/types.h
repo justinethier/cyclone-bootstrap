@@ -1,4 +1,4 @@
-/** 
+/* 
  * Cyclone Scheme
  * Copyright (c) 2014, Justin Ethier
  * All rights reserved.
@@ -20,61 +20,18 @@
 #include <stdint.h>
 #include "tommath.h"
 
-// Maximum number of args that GC will accept
-#define NUM_GC_ARGS 128
-
-// Which way does the CPU grow its stack?
-#define STACK_GROWTH_IS_DOWNWARD 1
-
-// Size of the stack buffer, in bytes.
-// This is used as the first generation of the GC.
-#define STACK_SIZE 500000
-
-// Do not allocate objects larger than this on the stack.
-#define MAX_STACK_OBJ (STACK_SIZE * 2)
-
-// Parameters for size of a "page" on the heap (the second generation GC), in bytes.
-#define GROW_HEAP_BY_SIZE (2 * 1024 * 1024)     // Grow first page by adding this amount to it
-#define INITIAL_HEAP_SIZE (3 * 1024 * 1024)     // Size of the first page
-#define HEAP_SIZE (32 * 1024 * 1024)    // Normal size of a page
-
-/////////////////////////////
-// Major GC tuning parameters
-
-// Start GC cycle if % heap space free below this percentage
-#define GC_COLLECTION_THRESHOLD 0.05
-
-// After major GC, grow the heap so at least this percentage is free
-#define GC_FREE_THRESHOLD 0.40
-// END GC tuning
-/////////////////////////////
-
-// Number of functions to save for printing call history
-#define MAX_STACK_TRACES 10
-
-// Show diagnostic information for the GC when program terminates
-#define DEBUG_SHOW_DIAG 0
-
-// Show diagnostic information before/after sweeping
-#define GC_DEBUG_SHOW_SWEEP_DIAG 0
-
-// GC debugging flags
-#define GC_DEBUG_TRACE 0
-#define GC_DEBUG_VERBOSE 0
-
-/* Additional runtime checking of the GC system.
-   This is here because these checks should not be
-   necessary if GC is working correctly. */
-#define GC_SAFETY_CHECKS 0
-
-// General constants
-#define NANOSECONDS_PER_MILLISECOND 1000000
-
-// Generic object type
+/**
+ * Generic object type
+ * \ingroup objects
+ */
 typedef void *object;
 
-// Define a tag for each possible type of object.
-// Remember to update tag_names in runtime.c when adding new tags
+/**
+ * Define a unique tag for each possible type of object.
+ *
+ * Remember to update tag_names in runtime.c when adding new tags
+ *\ingroup objects
+ */
 enum object_tag {
   boolean_tag = 0               // 0
       , bytevector_tag          // 1
@@ -102,8 +59,85 @@ enum object_tag {
 #define type_is_pair_prim(clo) \
   (type_of(clo) >= pair_tag)
 
-// Define the size of object tags
+/**
+ * Defines the size of object tags
+ * \ingroup objects
+ */
 typedef unsigned char tag_type;
+
+/**
+ * Access an object's tag.
+ * \ingroup objects
+ */
+#define type_of(obj) (((pair_type *) obj)->tag)
+
+/**
+ * \defgroup gc Garbage collection
+ *
+ * @brief The Cyclone runtime's garbage collector (GC)
+ *
+ * When using the FFI there is normally no need to call 
+ * into this code unless something is specifically mentioned
+ * in the User Manual.
+ */
+/**@{*/
+
+/**
+ * \defgroup gc_major Major GC
+ * @brief Major GC is responsible for removing unused objects from
+ * the heap.
+ */
+/**@{*/
+
+////////////////////////////////
+// Parameters for size of a "page" on the heap (the second generation GC), in bytes.
+
+/** Grow first page by adding this amount to it */
+#define GROW_HEAP_BY_SIZE (2 * 1024 * 1024)    
+
+/** Size of the first page */
+#define INITIAL_HEAP_SIZE (3 * 1024 * 1024)     
+
+/** Normal size of a heap page */
+#define HEAP_SIZE (32 * 1024 * 1024)    
+
+// End heap page size parameters
+////////////////////////////////
+
+/////////////////////////////
+// Major GC tuning parameters
+
+/** Start GC cycle if % heap space free below this percentage */
+#define GC_COLLECTION_THRESHOLD 0.05
+
+/** After major GC, grow the heap so at least this percentage is free */
+#define GC_FREE_THRESHOLD 0.40
+// END GC tuning
+/////////////////////////////
+
+/** Number of functions to save for printing call history */
+#define MAX_STACK_TRACES 10
+
+/** Show diagnostic information for the GC when program terminates */
+#define DEBUG_SHOW_DIAG 0
+
+/** Show diagnostic information before/after sweeping */
+#define GC_DEBUG_SHOW_SWEEP_DIAG 0
+
+/** GC debugging flag */
+#define GC_DEBUG_TRACE 0
+
+/** GC debugging flag */
+#define GC_DEBUG_VERBOSE 0
+
+/** Additional runtime checking of the GC system.
+ *  This is here because these checks should not be
+ *  necessary if GC is working correctly. 
+ */
+#define GC_SAFETY_CHECKS 0
+
+/** Generic constant used for GC sleep/wake */
+#define NANOSECONDS_PER_MILLISECOND 1000000
 
 /* GC data structures */
 
@@ -133,14 +167,21 @@ typedef enum {
   , HEAP_HUGE    // Huge objects, 1 per page
 } gc_heap_type;
 
+/** The number of `gc_heap_type`'s */
 #define NUM_HEAP_TYPES (HEAP_HUGE + 1)
 
+/** 
+ * Linked list of free memory chunks on a heap page
+ */
 typedef struct gc_free_list_t gc_free_list;
 struct gc_free_list_t {
   unsigned int size;
   gc_free_list *next;
 };
 
+/**
+ * Data for a heap page
+ */
 typedef struct gc_heap_t gc_heap;
 struct gc_heap_t {
   gc_heap_type type;
@@ -157,23 +198,34 @@ struct gc_heap_t {
   char *data;
 };
 
+/**
+ * A heap root is the heap's first page
+ */
 typedef struct gc_heap_root_t gc_heap_root;
 struct gc_heap_root_t {
   gc_heap **heap;
 };
 
+/**
+ * Header added to each object for GC purposes
+ */
 typedef struct gc_header_type_t gc_header_type;
 struct gc_header_type_t {
   unsigned char mark;           // mark bits (only need 2)
   unsigned char grayed;         // stack object to be grayed when moved to heap
 };
+
+/** Get an object's `mark` value */
 #define mark(x) (((list) x)->hdr.mark)
+
+/** Get an object's `grayed` value */
 #define grayed(x) (((list) x)->hdr.grayed)
 
-/* Enums for tri-color marking */
+/** Enums for tri-color marking */
 typedef enum { STATUS_ASYNC, STATUS_SYNC1, STATUS_SYNC2
 } gc_status_type;
 
+/** Stages of the Major GC's collector thread */
 typedef enum { STAGE_CLEAR_OR_MARKING, STAGE_TRACING
       //, STAGE_REF_PROCESSING 
   , STAGE_SWEEPING, STAGE_RESTING
@@ -182,16 +234,24 @@ typedef enum { STAGE_CLEAR_OR_MARKING, STAGE_TRACING
 // Constant colors are defined here.
 // The mark/clear colors are defined in the gc module because
 // the collector swaps their values as an optimization.
-#define gc_color_red  0         // Memory not to be GC'd, such as on the stack
-#define gc_color_blue 2         // Unallocated memory
 
-/* Threading */
+/** Memory not to be collected by major GC, such as on the stack */
+#define gc_color_red  0         
+
+/** Unallocated memory */
+#define gc_color_blue 2         
+
+/** Threading */
 typedef enum { CYC_THREAD_STATE_NEW, CYC_THREAD_STATE_RUNNABLE,
   CYC_THREAD_STATE_BLOCKED, CYC_THREAD_STATE_BLOCKED_COOPERATING,
   CYC_THREAD_STATE_TERMINATED
 } cyc_thread_state_type;
 
-/* Thread data structures */
+/**
+ * Thread data structures 
+ * @brief Each thread is given an instance of this struct to 
+ *        maintain its state
+ */
 typedef struct gc_thread_data_t gc_thread_data;
 struct gc_thread_data_t {
   // Thread object, if applicable
@@ -236,55 +296,238 @@ struct gc_thread_data_t {
   object exception_handler_stack;
 };
 
-// Determine if stack has overflowed
+/* GC prototypes */
+void gc_initialize(void);
+void gc_add_mutator(gc_thread_data * thd);
+void gc_remove_mutator(gc_thread_data * thd);
+gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
+                        size_t chunk_size, gc_thread_data *thd);
+gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page);
+void gc_heap_merge(gc_heap *hdest, gc_heap *hsrc);
+void gc_merge_all_heaps(gc_thread_data *dest, gc_thread_data *src);
+void gc_print_stats(gc_heap * h);
+int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size, gc_thread_data *thd);
+char *gc_copy_obj(object hp, char *obj, gc_thread_data * thd);
+void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
+                   gc_thread_data * thd);
+void *gc_alloc(gc_heap_root * h, size_t size, char *obj, gc_thread_data * thd,
+               int *heap_grown);
+void *gc_alloc_bignum(gc_thread_data *data);
+size_t gc_allocated_bytes(object obj, gc_free_list * q, gc_free_list * r);
+gc_heap *gc_heap_last(gc_heap * h);
+size_t gc_heap_total_size(gc_heap * h);
+//size_t gc_heap_total_free_size(gc_heap *h);
+//size_t gc_collect(gc_heap *h, size_t *sum_freed);
+//void gc_mark(gc_heap *h, object obj);
+void gc_request_mark_globals(void);
+void gc_mark_globals(object globals, object global_table);
+size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_thread_data *thd);
+void gc_thr_grow_move_buffer(gc_thread_data * d);
+void gc_thr_add_to_move_buffer(gc_thread_data * d, int *alloci, object obj);
+void gc_thread_data_init(gc_thread_data * thd, int mut_num, char *stack_base,
+                         long stack_size);
+void gc_thread_data_free(gc_thread_data * thd);
+// Prototypes for mutator/collector:
+int gc_is_stack_obj(gc_thread_data * thd, object obj);
+void gc_mut_update(gc_thread_data * thd, object old_obj, object value);
+void gc_mut_cooperate(gc_thread_data * thd, int buf_len);
+void gc_mark_gray(gc_thread_data * thd, object obj);
+void gc_mark_gray2(gc_thread_data * thd, object obj);
+void gc_collector_trace();
+void gc_empty_collector_stack();
+void gc_handshake(gc_status_type s);
+void gc_post_handshake(gc_status_type s);
+void gc_wait_handshake();
+void gc_start_collector();
+void gc_mutator_thread_blocked(gc_thread_data * thd, object cont);
+void gc_mutator_thread_runnable(gc_thread_data * thd, object result);
+#define set_thread_blocked(d, c) \
+  gc_mutator_thread_blocked(((gc_thread_data *)d), (c))
+#define return_thread_runnable(d, r) \
+  gc_mutator_thread_runnable(((gc_thread_data *)d), (r))
+/*
+//#define do_with_blocked_thread(data, cont, result, body) \
+//  set_thread_blocked((data), (cont)); \
+//  body \
+//  return_thread_runnable((data), (result));
+*/
+
+/**@}*/
+
+/**
+ * \defgroup gc_minor Minor GC
+ * @brief Minor GC is called periodically to copy live objects off of a thread stack
+ *
+ */
+/**@{*/
+
+/**
+ * Maximum number of args that GC will accept 
+ */
+#define NUM_GC_ARGS 128
+
+/** 
+ * Which way does the CPU grow its stack? 
+ */
+#define STACK_GROWTH_IS_DOWNWARD 1
+
+/** 
+ * Size of the stack buffer, in bytes.
+ * This is used as the first generation of the GC.
+ */
+#define STACK_SIZE 500000
+
+/** 
+ * Do not allocate objects larger than this on the stack.
+ */
+#define MAX_STACK_OBJ (STACK_SIZE * 2)
+
+/** Determine if stack has overflowed */
 #if STACK_GROWTH_IS_DOWNWARD
 #define stack_overflow(x,y) ((x) < (y))
 #else
 #define stack_overflow(x,y) ((x) > (y))
 #endif
 
-#define type_of(obj) (((pair_type *) obj)->tag)
+/**
+ * Access an object's forwarding pointer.
+ * Note this is only applicable when objects are relocated
+ * during minor GC.
+ * \ingroup objects
+ */
 #define forward(obj) (((pair_type *) obj)->pair_car)
 
-/** Define value types. 
+
+/**
+ * \defgroup gc_minor_mut Mutation table
+ * @brief Mutation table to support the minor GC write barrier
+ */
+/**@{*/
+void add_mutation(void *data, object var, int index, object value);
+void clear_mutations(void *data);
+/**@}*/
+
+/**@}*/
+
+// END GC section
+/**@}*/
+
+/**
+ * \defgroup datatypes Data types
+ * @brief All of the Scheme data types provided by Cyclone.
+ */
+/**@{*/
+
+/**
+ * \defgroup immediates Immediate objects
+ *  
+ *  @brief Objects that do not require memory allocation.
+ *
+ *  Immediate objects (also known as value types) are stored directly within
+ *  the bits that would otherwise be a pointer to an object type. Since
+ *  all of the data is contained in those bits, a value type is never
+ *  allocated on the heap and never needs to be garbage collected,
+ *  making them very efficient.
+ *
  *  Depending on the underlying architecture, compiler, etc these types
  *  have extra least significant bits that can be used to mark them as
  *  values instead of objects (IE, pointer to a tagged object).
  *  On many machines, addresses are multiples of four, leaving the two
  *  least significant bits free - from lisp in small pieces.
  *
- *  Types:
- *  0x00 - pointer (an object type)
- *  0x01 - integer (in progress)
- *  0x10 - char
+ *  The possible types are:
+ *
+ *  - 0x00 - pointer (an object type)
+ *  - 0x01 - integer (also known as fixnum)
+ *  - 0x10 - char
  */
+/**@{*/
 
-#define obj_is_int(x)  ((unsigned long)(x) & (unsigned long)1)
-#define obj_obj2int(x) ((long)(x)>>1)
-#define obj_int2obj(c) ((void *)((((long)c)<<1) | 1))
-
-#define obj_is_char(x)  (((unsigned long)(x) & (unsigned long)3) == 2)
-#define obj_obj2char(x) (char)((long)(x)>>2)
-#define obj_char2obj(c) ((void *)((((unsigned long)c)<<2) | 2))
-
-#define is_value_type(x) ((unsigned long)(x) & (unsigned long)3)
-#define is_object_type(x) (x && !is_value_type(x))
-
+/** Maximum allowed value of a fixnum */
 #define CYC_FIXNUM_MAX 1073741823
+
+/** Minimum allowed value of a fixnum */
 #define CYC_FIXNUM_MIN -1073741824
 
-/* Function type */
+/**
+ * Determine if an object is an integer.
+ */
+#define obj_is_int(x)  ((unsigned long)(x) & (unsigned long)1)
 
+/**
+ * Convert from an object to an integer.
+ */
+#define obj_obj2int(x) ((long)(x)>>1)
+
+/**
+ * Convert from an integer to an object.
+ */
+#define obj_int2obj(c) ((void *)((((long)c)<<1) | 1))
+
+/**
+ * Determine if the object is a char.
+ */
+#define obj_is_char(x)  (((unsigned long)(x) & (unsigned long)3) == 2)
+
+/**
+ * Convert from an object to a char.
+ */
+#define obj_obj2char(x) (char)((long)(x)>>2)
+
+/**
+ * Convert from a char to an object.
+ */
+#define obj_char2obj(c) ((void *)((((unsigned long)c)<<2) | 2))
+
+/**
+ * Is the given object a value type?
+ */
+#define is_value_type(x) ((unsigned long)(x) & (unsigned long)3)
+
+/**
+ * Is the given object an object (non-immediate) type?
+ */
+#define is_object_type(x) (x && !is_value_type(x))
+
+/**@}*/
+
+/**
+ * \defgroup objects Objects
+ * @brief Definitions and code for memory-allocated objects.
+ *
+ * Most Scheme data types are defined as object types.
+ *
+ * Each object type contains a header for garbage collection and a
+ * tag that identifies the type of object, as well as any object-specific
+ * fields.
+ *
+ * Most object types are allocated on the nursery (the C stack) and 
+ * relocated to the garbage-collected heap during minor GC. It is only
+ * safe for an object on the nursery to be used by the thread that
+ * created it, as that object could be relocated at any time.
+ */
+/**@{*/
+
+/** Function type */
 typedef void (*function_type) ();
+
+/** Variable-argument function type */
 typedef void (*function_type_va) (int, object, object, object, ...);
 
-/* Define C-variable integration type */
+/**
+ * @brief C-variable integration type - wrapper around a Cyclone object pointer
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
-  object *pvar;                 /* GC assumes this is a Cyclone object! */
+  /** Variable pointer. Note GC assumes this is a Cyclone object! */
+  object *pvar;
 } cvar_type;
 typedef cvar_type *cvar;
+
+/**
+ * Create a new cvar in the nursery
+ */
 #define make_cvar(n,v) \
   cvar_type n; \
   n.hdr.mark = gc_color_red; \
@@ -292,15 +535,21 @@ typedef cvar_type *cvar;
   n.tag = cvar_tag; \
   n.pvar = v;
 
-/* C Opaque type - a wrapper around a pointer of any type.
-   Note this requires application code to free any memory
-   before an object is collected by GC.  */
+/**
+ * @brief C Opaque type - a wrapper around a pointer of any type.
+ *
+ * Note this requires application code to free any memory
+ * before an object is collected by GC.  
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
-  void *ptr;                    /* Can be anything, GC will not collect it */
+  /** This pointer can be anything, GC will not collect it */
+  void *ptr;
 } c_opaque_type;
 typedef c_opaque_type *c_opaque;
+
+/** Create a new opaque in the nursery */
 #define make_c_opaque(var, p) \
   c_opaque_type var; \
   var.hdr.mark = gc_color_red; \
@@ -308,9 +557,14 @@ typedef c_opaque_type *c_opaque;
   var.tag = c_opaque_tag; \
   var.ptr = p;
 
+/** Access the Opaque's pointer */
 #define opaque_ptr(x) (((c_opaque)x)->ptr)
 
-/* Define mutex type */
+/**
+ * @brief The mutex thread synchronization type
+ *
+ * Mutexes are always allocated directly on the heap.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -318,7 +572,11 @@ typedef struct {
 } mutex_type;
 typedef mutex_type *mutex;
 
-/* Define condition variable type */
+/**
+ * @brief The condition variable thread synchronization type
+ *
+ * Condition variables are always allocated directly on the heap.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -326,7 +584,12 @@ typedef struct {
 } cond_var_type;
 typedef cond_var_type *cond_var;
 
-/* Define boolean type. */
+/** 
+ * @brief The boolean type: True or False
+ *
+ * Booleans always refer to one of the objects `boolean_t` or `boolean_f` 
+ * which are created by the runtime.
+ */
 typedef struct {
   gc_header_type hdr;
   const tag_type tag;
@@ -336,8 +599,13 @@ typedef boolean_type *boolean;
 
 #define boolean_desc(x) (((boolean_type *) x)->desc)
 
-/* Define symbol type. */
-
+/**
+ * @brief Symbols are similar to strings, but only one instance of each
+ * unique symbol is created, so comparisons are O(1).
+ *
+ * A thread-safe symbol table is used at runtime to store all of
+ * the program's symbols.
+ */
 typedef struct {
   gc_header_type hdr;
   const tag_type tag;
@@ -352,8 +620,12 @@ static object quote_##name = NULL;
 
 /* Define numeric types */
 
-// Integer object type is deprecated, integers should be stored using value types instead.
-// This is only still here because it is used internally by the runtime.
+/**
+ * @brief Deprecated - boxed integers
+ *
+ * The integer object type is deprecated, integers should be stored using value types instead.
+ * This is only still here because it is used internally by the runtime.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -361,20 +633,34 @@ typedef struct {
   int padding;                  // Prevent mem corruption if sizeof(int) < sizeof(ptr)
 } integer_type;
 
+/**
+ * @brief Exact integer of unlimited precision.
+ *
+ * The backing store is the `mp_int` data type from LibTomMath.
+ * 
+ * Note memory for `mp_int` is allocated via `malloc`, so bignums must
+ * always be allocated on Cyclone's heap.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
   mp_int bn;
 } bignum_type;
 
+/** Allocate a new bignum on the heap */
 #define alloc_bignum(data, p) \
   bignum_type *p = gc_alloc_bignum((gc_thread_data *)data);
 
+/**
+ * @brief Double-precision floating point type, also known as a flonum.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
   double value;
 } double_type;
+
+/** Create a new double in the nursery */
 #define make_double(n,v) \
   double_type n; \
   n.hdr.mark = gc_color_red; \
@@ -382,16 +668,26 @@ typedef struct {
   n.tag = double_tag; \
   n.value = v;
 
+/** Assign given double value to the given double object pointer */
 #define assign_double(pobj,v) \
   ((double_type *)pobj)->hdr.mark = gc_color_red; \
   ((double_type *)pobj)->hdr.grayed = 0; \
   ((double_type *)pobj)->tag = double_tag; \
   double_value(pobj) = v;
 
+/** Access the integer_type integer value directly */
 #define integer_value(x) (((integer_type *) x)->value)
+
+/** Access the double directly */
 #define double_value(x) (((double_type *) x)->value)
+
+/** Access a bignum's `mp_int` directly */
 #define bignum_value(x) (((bignum_type *) x)->bn)
 
+/**
+ * This enumeration complements the comparison types from LibTomMath,
+ * and provides constants for each of the comparison operators.
+ */
 typedef enum {
     CYC_BN_LTE = -2
   , CYC_BN_LT = MP_LT
@@ -400,13 +696,17 @@ typedef enum {
   , CYC_BN_GTE = 2
 } bn_cmp_type;
 
-/* Define string type */
+/** 
+ * @brief The string type 
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
   int len;
   char *str;
 } string_type;
+
+/** Create a new string in the nursery */
 #define make_string(cs, s) string_type cs; \
 { int len = strlen(s); \
   cs.hdr.mark = gc_color_red; \
@@ -415,6 +715,11 @@ typedef struct {
   cs.len = len; \
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len + 1);}
+
+/** 
+ * Create a new string with the given length 
+ * (so it does not need to be computed) 
+ */
 #define make_string_with_len(cs, s, length) string_type cs;  \
 { int len = length; \
   cs.hdr.mark = gc_color_red; \
@@ -423,12 +728,20 @@ typedef struct {
   cs.str = alloca(sizeof(char) * (len + 1)); \
   memcpy(cs.str, s, len); \
   cs.str[len] = '\0';}
+
+/**
+ * Create a string object using the given C string and length.
+ * No allocation is done for the given C string.
+ */
 #define make_string_noalloc(cs, s, length) string_type cs; \
 { cs.hdr.mark = gc_color_red; cs.hdr.grayed = 0; \
   cs.tag = string_tag; cs.len = length; \
   cs.str = s; }
 
+/** Get the length of a string */
 #define string_len(x) (((string_type *) x)->len)
+
+/** Get a string object's C string */
 #define string_str(x) (((string_type *) x)->str)
 
 /* I/O types */
@@ -437,6 +750,10 @@ typedef struct {
 //       consider http://stackoverflow.com/questions/6206893/how-to-implement-char-ready-in-c
 // TODO: a simple wrapper around FILE may not be good enough long-term
 // TODO: how exactly mode will be used. need to know r/w, bin/txt
+
+/**
+ * @brief The port object type 
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -446,6 +763,7 @@ typedef struct {
   size_t mem_buf_len;
 } port_type;
 
+/** Create a new port object in the nursery */
 #define make_port(p,f,m) \
   port_type p; \
   p.hdr.mark = gc_color_red; \
@@ -456,8 +774,9 @@ typedef struct {
   p.mem_buf = NULL; \
   p.mem_buf_len = 0;
 
-/* Vector type */
-
+/**
+ * @brief Vector type 
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -466,6 +785,7 @@ typedef struct {
 } vector_type;
 typedef vector_type *vector;
 
+/** Create a new vector in the nursery */
 #define make_empty_vector(v) \
   vector_type v; \
   v.hdr.mark = gc_color_red; \
@@ -474,8 +794,12 @@ typedef vector_type *vector;
   v.num_elements = 0; \
   v.elements = NULL;
 
-/* Bytevector type */
-
+/**
+ * @brief Bytevector type 
+ *
+ * Bytevectors are similar to regular vectors, but instead of containing
+ * objects, each bytevector member is a 8-bit integer.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -484,6 +808,7 @@ typedef struct {
 } bytevector_type;
 typedef bytevector_type *bytevector;
 
+/** Create a new bytevector in the nursery */
 #define make_empty_bytevector(v) \
   bytevector_type v; \
   v.hdr.mark = gc_color_red; \
@@ -492,8 +817,16 @@ typedef bytevector_type *bytevector;
   v.len = 0; \
   v.data = NULL;
 
-/* Pair (cons) type */
-
+/**
+ * @brief The pair (cons) type.
+ *
+ * Contrary to popular belief, Scheme does not actually have a list type.
+ *
+ * Instead there is a pair object composed two objects, the `car` and `cdr`.
+ * A list can be created by storing values in the `car` and a pointer to
+ * the rest of the list in `cdr`. A `NULL` in the `cdr` indicates the end
+ * of a list.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -503,6 +836,7 @@ typedef struct {
 typedef pair_type *list;
 typedef pair_type *pair;
 
+/** Create a new pair in the nursery */
 #define make_pair(n,a,d) \
   pair_type n; \
   n.hdr.mark = gc_color_red; \
@@ -518,9 +852,21 @@ typedef pair_type *pair;
   n->pair_car = a; \
   n->pair_cdr = d;
 
+/**
+ * Create a pair with a single value. 
+ * This is useful to create an object that can be modified.
+ */
 #define make_cell(n,a) make_pair(n,a,NULL);
 
+/**
+ * \defgroup objects_unsafe_cxr Unsafe pair access macros
+ * @brief Macros for fast - but unsafe - pair access
+ *
+ */
+/**@{*/
+/** Unsafely access a pair's `car` */
 #define car(x)    (((pair_type *) x)->pair_car)
+/** Unsafely access a pair's `cdr` */
 #define cdr(x)    (((pair_type *) x)->pair_cdr)
 #define caar(x)   (car(car(x)))
 #define cadr(x)   (car(cdr(x)))
@@ -550,8 +896,14 @@ typedef pair_type *pair;
 #define cddadr(x) (cdr(cdr(car(cdr(x)))))
 #define cdddar(x) (cdr(cdr(cdr(car(x)))))
 #define cddddr(x) (cdr(cdr(cdr(cdr(x)))))
+/**@}*/
 
-// Safe versions of the above:
+/**
+ * \defgroup objects_safe_cxr Safe pair access macros
+ * @brief Macros for safe pair access
+ *
+ */
+/**@{*/
 #define Cyc_caar(d, x) (Cyc_car(d, Cyc_car(d, x)))
 #define Cyc_cadr(d, x) (Cyc_car(d, Cyc_cdr(d, x)))
 #define Cyc_cdar(d, x) (Cyc_cdr(d, Cyc_car(d, x)))
@@ -580,21 +932,26 @@ typedef pair_type *pair;
 #define Cyc_cddadr(d, x) (Cyc_cdr(d, Cyc_cdr(d, Cyc_car(d, Cyc_cdr(d, x)))))
 #define Cyc_cdddar(d, x) (Cyc_cdr(d, Cyc_cdr(d, Cyc_cdr(d, Cyc_car(d, x)))))
 #define Cyc_cddddr(d, x) (Cyc_cdr(d, Cyc_cdr(d, Cyc_cdr(d, Cyc_cdr(d, x)))))
+/**@}*/
 
 /* Closure types */
 
+/** @brief Closure for a macro */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
   function_type fn;
   int num_args;
 } macro_type;
+
+/** @brief A closed-over function with no variables */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
   function_type fn;
   int num_args;
 } closure0_type;
+/** @brief A closed-over function with one variable */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -602,6 +959,7 @@ typedef struct {
   int num_args;
   object element;
 } closure1_type;
+/** @brief A closed-over function with zero or more closed-over variables */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -642,7 +1000,9 @@ typedef closure0_type *macro;
   c.num_args = -1; \
   c.element = a;
 
-/* Primitive types */
+/** 
+ * @brief A function built into the runtime.
+ */
 typedef struct {
   gc_header_type hdr;
   tag_type tag;
@@ -658,7 +1018,12 @@ static const object primitive_##name = &name##_primitive
 #define prim(x) (x && ((primitive)x)->tag == primitive_tag)
 #define prim_name(x) (((primitive_type *) x)->desc)
 
-/* All constant-size objects */
+/**
+ * @brief A union of all the constant-size objects.
+ *
+ * This type is used internally to (for example) pass a pointer
+ * to an inline function that might need to use it for an allocation.
+ */
 typedef union {
   boolean_type boolean_t;
   pair_type pair_t;
@@ -668,6 +1033,9 @@ typedef union {
   double_type double_t;
   bignum_type bignum_t;
 } common_type;
+
+/**@}*/
+/**@}*/
 
 /* Utility functions */
 void **vpbuffer_realloc(void **buf, int *len);
@@ -679,67 +1047,14 @@ double mp_get_double(mp_int *a);
 int Cyc_bignum_cmp(bn_cmp_type type, object x, int tx, object y, int ty);
 void Cyc_int2bignum(int n, mp_int *bn);
 
-/* GC prototypes */
-void gc_initialize();
-void gc_add_mutator(gc_thread_data * thd);
-void gc_remove_mutator(gc_thread_data * thd);
-gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
-                        size_t chunk_size, gc_thread_data *thd);
-gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page);
-void gc_heap_merge(gc_heap *hdest, gc_heap *hsrc);
-void gc_merge_all_heaps(gc_thread_data *dest, gc_thread_data *src);
-void gc_print_stats(gc_heap * h);
-int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size, gc_thread_data *thd);
-char *gc_copy_obj(object hp, char *obj, gc_thread_data * thd);
-void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
-                   gc_thread_data * thd);
-void *gc_alloc(gc_heap_root * h, size_t size, char *obj, gc_thread_data * thd,
-               int *heap_grown);
-void *gc_alloc_bignum(gc_thread_data *data);
+/* Remaining GC prototypes that require objects to be defined */
 void *gc_alloc_from_bignum(gc_thread_data *data, bignum_type *src);
-size_t gc_allocated_bytes(object obj, gc_free_list * q, gc_free_list * r);
-gc_heap *gc_heap_last(gc_heap * h);
-size_t gc_heap_total_size(gc_heap * h);
-//size_t gc_heap_total_free_size(gc_heap *h);
-//size_t gc_collect(gc_heap *h, size_t *sum_freed);
-//void gc_mark(gc_heap *h, object obj);
-void gc_request_mark_globals(void);
-void gc_mark_globals(object globals, object global_table);
-size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_thread_data *thd);
-void gc_thr_grow_move_buffer(gc_thread_data * d);
-void gc_thr_add_to_move_buffer(gc_thread_data * d, int *alloci, object obj);
-void gc_thread_data_init(gc_thread_data * thd, int mut_num, char *stack_base,
-                         long stack_size);
-void gc_thread_data_free(gc_thread_data * thd);
-// Prototypes for mutator/collector:
-int gc_is_stack_obj(gc_thread_data * thd, object obj);
-void gc_mut_update(gc_thread_data * thd, object old_obj, object value);
-void gc_mut_cooperate(gc_thread_data * thd, int buf_len);
-void gc_mark_gray(gc_thread_data * thd, object obj);
-void gc_mark_gray2(gc_thread_data * thd, object obj);
-void gc_collector_trace();
-void gc_empty_collector_stack();
-void gc_handshake(gc_status_type s);
-void gc_post_handshake(gc_status_type s);
-void gc_wait_handshake();
-void gc_start_collector();
-void gc_mutator_thread_blocked(gc_thread_data * thd, object cont);
-void gc_mutator_thread_runnable(gc_thread_data * thd, object result);
-#define set_thread_blocked(d, c) \
-  gc_mutator_thread_blocked(((gc_thread_data *)d), (c))
-#define return_thread_runnable(d, r) \
-  gc_mutator_thread_runnable(((gc_thread_data *)d), (r))
-/*
-//#define do_with_blocked_thread(data, cont, result, body) \
-//  set_thread_blocked((data), (cont)); \
-//  body \
-//  return_thread_runnable((data), (result));
-*/
+
+/**
+ * Do a minor GC
+ * \ingroup gc_minor
+ */
 int gc_minor(void *data, object low_limit, object high_limit, closure cont,
              object * args, int num_args);
-/* Mutation table to support minor GC write barrier */
-void add_mutation(void *data, object var, int index, object value);
-void clear_mutations(void *data);
-
 
 #endif                          /* CYCLONE_TYPES_H */

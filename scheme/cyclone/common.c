@@ -96,9 +96,9 @@ c_7333.elements = (object *)alloca(sizeof(object) * 1);
 c_7333.elements[0] = k_733;
 
 
-make_string(c_7367, " (");
+make_string(c_7367, " ");
 
-make_string(c_7368, ")");
+make_string(c_7368, "");
 
 object c_7366 = Cyc_string_append(data,(closure)&c_7333,4,__glo__85version_91number_85_scheme_cyclone_common, &c_7367, __glo__85version_91name_85_scheme_cyclone_common, &c_7368);
 return_closcall1(data,(closure)&c_7333,  c_7366);; 
@@ -210,7 +210,7 @@ void c_schemecyclonecommon_entry_pt(data, argc, cont,value) void *data; int argc
   __glo__85Cyc_91version_91banner_85_scheme_cyclone_common = boolean_f; 
   __glo__85version_91banner_85_scheme_cyclone_common = boolean_f; 
   __glo__85version_85_scheme_cyclone_common = boolean_f; 
-  make_string(c_7330, "beta"); 
+  make_string(c_7330, ""); 
   __glo__85version_91name_85_scheme_cyclone_common = &c_7330; 
   make_string(c_7329, "0.4"); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7329; 
