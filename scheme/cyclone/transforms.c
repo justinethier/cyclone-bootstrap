@@ -333,7 +333,6 @@ extern object __glo_string_91_125list_scheme_base;
 extern object __glo_string_91_125vector_scheme_base;
 extern object __glo_string_91map_scheme_base;
 extern object __glo_string_91for_91each_scheme_base;
-extern object __glo_get_91param_91objs_scheme_base;
 extern object __glo_make_91parameter_scheme_base;
 extern object __glo_current_91output_91port_scheme_base;
 extern object __glo_current_91input_91port_scheme_base;
