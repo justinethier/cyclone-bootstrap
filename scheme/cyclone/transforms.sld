@@ -90,7 +90,6 @@
     cell-get->cell 
     expand 
     expand-lambda-body
-    ;let=>lambda 
     isolate-globals 
     has-global? 
     global-vars 
@@ -105,6 +104,7 @@
     cps-convert 
     pos-in-list 
     closure-convert 
+    prim-convert
   )
   (begin
 
@@ -1185,6 +1185,46 @@
                  ast 
                  (difference fv (built-in-syms)))
                (list))))))
+
+;; Upgrade applicable function calls to inlinable primitives
+;;
+;; Assumptions:
+;; - This executes after alpha conversion, so there are no define
+;;   expressions or if's without an else clause
+;;
+;first case is char=? => Cyc-fast-char-eq (and rest of the family)
+(define (prim-convert expr)
+  (define (conv ast)
+    (cond
+      ((const? ast) ast)
+      ((quote? ast) ast)
+      ((ref? ast)   ast)
+      ((set!? ast)
+       `(set! ,@(map (lambda (a) (conv a)) (cdr ast))))
+      ((if? ast)
+       `(if ,(conv (if->condition ast))
+            ,(conv (if->then ast))
+            ,(conv (if->else ast))))
+      ((lambda? ast)
+       (let* ((args (lambda-formals->list ast))
+              (ltype (lambda-formals-type ast))
+              (body (lambda->exp ast))
+            )
+         `(lambda
+            ,(list->lambda-formals args ltype) ;; Overkill??
+            ,@(map conv body))))
+      ((app? ast)
+       (cond
+        ((and 
+           (eq? (car ast) 'char=?)
+           (= (length ast) 3) 
+         )
+         `(Cyc-fast-char-eq ,@(cdr ast)))
+        (else
+         (map conv ast))))
+      (else
+        ast)))
+  (conv expr))
 
 ;;
 ;; Helpers to syntax check primitive calls
