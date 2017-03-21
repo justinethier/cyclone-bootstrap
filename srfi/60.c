@@ -2869,7 +2869,7 @@ static void __lambda_0(void* data, int argc, closure _, object k, object x, obje
   Cyc_check_int(data, y);
   int result = ((int)unbox_number(x)) & ((int)unbox_number(y));
   return_closcall1(data, k, obj_int2obj(result)); }
-void c_srfi60_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi60_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117srfi60_srfi_60);
   add_global((object *) &__glo_booleans_91_125integer_srfi_60);
@@ -3035,4 +3035,7 @@ make_pair(c_731191, &pair_731157, &c_731190);
 Cyc_global_variables = &c_731191;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi60_srfi_60)->fn)(data, 1, cont, cont);
+}
+void c_srfi60_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi60_entry_pt_first_lambda(data, argc, cont,value);
 }

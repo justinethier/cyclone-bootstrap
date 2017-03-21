@@ -25414,7 +25414,7 @@ static void __lambda_0(void *data, int argc, object self_734429, object r_733334
   return_closcall2(data,  __glo_newline_scheme_base,  ((closureN)self_734429)->elements[0], r_733334);; 
 }
 
-void c_schemecyclonetest_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonetest_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_subgroups_91count = find_or_add_symbol("subgroups-count");
   quote_subgroups_91pass = find_or_add_symbol("subgroups-pass");
   quote_total_91pass = find_or_add_symbol("total-pass");
@@ -25944,4 +25944,7 @@ make_pair(c_7311263, &pair_7311187, &c_7311262);
 Cyc_global_variables = &c_7311263;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonetest_scheme_cyclone_test)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonetest_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonetest_entry_pt_first_lambda(data, argc, cont,value);
 }

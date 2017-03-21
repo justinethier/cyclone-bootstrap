@@ -11305,7 +11305,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_731461) {
 return_closcall1(data,  k_731461,  __glo__85adb_85_scheme_cyclone_cps_91optimizations);; 
 }
 
-void c_schemecyclonecps_91optimizations_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonecps_91optimizations_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_global = find_or_add_symbol("global");
   quote_defined_91by = find_or_add_symbol("defined-by");
   quote__const = find_or_add_symbol("const");
@@ -11696,4 +11696,7 @@ make_pair(c_734863, &pair_734799, &c_734862);
 Cyc_global_variables = &c_734863;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonecps_19191optimizations_scheme_cyclone_cps_91optimizations)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonecps_91optimizations_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonecps_91optimizations_entry_pt_first_lambda(data, argc, cont,value);
 }

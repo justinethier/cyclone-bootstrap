@@ -1863,7 +1863,7 @@ static void __lambda_0(void *data, int argc, object self_73313, object r_73237) 
   return_closcall1(data,  ((closureN)self_73313)->elements[0],  boolean_t);; 
 }
 
-void c_schemecyclonemacros_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_set_67 = find_or_add_symbol("set!");
   quote_define = find_or_add_symbol("define");
   quote_lambda = find_or_add_symbol("lambda");
@@ -1941,4 +1941,7 @@ make_pair(c_73776, &pair_73764, &c_73775);
 Cyc_global_variables = &c_73776;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonemacros_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value);
 }

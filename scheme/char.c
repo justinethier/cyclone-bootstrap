@@ -825,7 +825,7 @@ return_closcall1(data,  ((closureN)self_73177)->elements[1],  Cyc_integer2char(d
 ; 
 }
 
-void c_scheme_char_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_scheme_char_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117scheme_191char_scheme__char);
   add_global((object *) &__glo_string_91foldcase_scheme__char);
@@ -945,4 +945,7 @@ make_pair(c_73492, &pair_73469, &c_73491);
 Cyc_global_variables = &c_73492;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117scheme_191char_scheme__char)->fn)(data, 1, cont, cont);
+}
+void c_scheme_char_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_scheme_char_entry_pt_first_lambda(data, argc, cont,value);
 }

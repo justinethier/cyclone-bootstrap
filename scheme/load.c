@@ -326,7 +326,7 @@ object c_7330 = apply_va(data,  k_7314,2,__glo_eval_scheme_eval, &c_7333);
 return_closcall1(data,  k_7314,  c_7330);; 
 }
 
-void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeload_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeload_scheme_load);
   add_global((object *) &__glo_load_scheme_load);
@@ -342,4 +342,7 @@ make_pair(c_7344, &pair_7342, &c_7343);
 Cyc_global_variables = &c_7344;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
+}
+void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemeload_entry_pt_first_lambda(data, argc, cont,value);
 }

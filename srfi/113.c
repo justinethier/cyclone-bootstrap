@@ -11260,7 +11260,7 @@ static void __lambda_0(void *data, int argc, object self_732424, object r_731897
   return_closcall3(data,  __glo_make_91hash_91table_srfi_69,  ((closureN)self_732424)->elements[0], ((closureN)self_732424)->elements[1], r_731897);; 
 }
 
-void c_srfi113_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi113_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_multi_127 = find_or_add_symbol("multi?");
   quote_comparator = find_or_add_symbol("comparator");
   quote_hash_91table = find_or_add_symbol("hash-table");
@@ -12217,4 +12217,7 @@ make_pair(c_735861, &pair_735672, &c_735860);
 Cyc_global_variables = &c_735861;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi113_srfi_113)->fn)(data, 1, cont, cont);
+}
+void c_srfi113_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi113_entry_pt_first_lambda(data, argc, cont,value);
 }

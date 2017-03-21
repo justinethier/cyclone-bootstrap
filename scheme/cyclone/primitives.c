@@ -7087,7 +7087,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_731252, object e
 return_closcall1(data,  k_731252,  memberp(data, exp_73686, __glo__85primitives_85_scheme_cyclone_primitives));; 
 }
 
-void c_schemecycloneprimitives_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecycloneprimitives_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_error = find_or_add_symbol("error");
   quote_Cyc_91global_91vars = find_or_add_symbol("Cyc-global-vars");
   quote_Cyc_91get_91cvar = find_or_add_symbol("Cyc-get-cvar");
@@ -7481,4 +7481,7 @@ make_pair(c_734303, &pair_734285, &c_734302);
 Cyc_global_variables = &c_734303;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecycloneprimitives_scheme_cyclone_primitives)->fn)(data, 1, cont, cont);
+}
+void c_schemecycloneprimitives_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecycloneprimitives_entry_pt_first_lambda(data, argc, cont,value);
 }

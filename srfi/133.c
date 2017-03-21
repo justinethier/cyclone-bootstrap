@@ -17792,7 +17792,7 @@ static void __lambda_0(void *data, int argc, object self_733717, object r_732920
   return_closcall4(data,  cell_get(((closureN)self_733717)->elements[3]),  ((closureN)self_733717)->elements[2], ((closureN)self_733717)->elements[4], ((closureN)self_733717)->elements[1], ((closureN)self_733717)->elements[0]);; 
 }
 
-void c_srfi133_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi133_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_attempted = find_or_add_symbol("attempted");
   quote__list = find_or_add_symbol("list");
   quote_source_91length = find_or_add_symbol("source-length");
@@ -18158,4 +18158,7 @@ make_pair(c_7310128, &pair_7310074, &c_7310127);
 Cyc_global_variables = &c_7310128;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi133_srfi_133)->fn)(data, 1, cont, cont);
+}
+void c_srfi133_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi133_entry_pt_first_lambda(data, argc, cont,value);
 }

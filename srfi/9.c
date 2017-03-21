@@ -1864,7 +1864,7 @@ static void __lambda_0(void *data, int argc, object self_73465, object r_73406) 
   return_closcall1(data,  ((closureN)self_73465)->elements[0],  ((closureN)self_73465)->elements[1]);; 
 }
 
-void c_srfi9_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi9_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_record_91marker = find_or_add_symbol("record-marker");
   quote_define = find_or_add_symbol("define");
   quote_lambda = find_or_add_symbol("lambda");
@@ -1959,4 +1959,7 @@ make_pair(c_731248, &pair_731236, &c_731247);
 Cyc_global_variables = &c_731248;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi9_srfi_9)->fn)(data, 1, cont, cont);
+}
+void c_srfi9_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi9_entry_pt_first_lambda(data, argc, cont,value);
 }

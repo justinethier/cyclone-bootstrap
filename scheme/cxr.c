@@ -726,7 +726,7 @@ static void __lambda_0(void *data, int argc, object self_73247, object r_73219) 
   return_closcall1(data,  ((closureN)self_73247)->elements[0],  Cyc_car(data, Cyc_car(data, r_73219)));; 
 }
 
-void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecxr_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemecxr_scheme_cxr);
   add_global((object *) &__glo_caaaaar_scheme_cxr);
@@ -882,4 +882,7 @@ make_pair(c_73683, &pair_73653, &c_73682);
 Cyc_global_variables = &c_73683;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
+}
+void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecxr_entry_pt_first_lambda(data, argc, cont,value);
 }

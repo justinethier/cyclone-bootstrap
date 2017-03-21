@@ -16398,7 +16398,7 @@ return_closcall1(data,  ((closureN)self_732665)->elements[0],  &c_732696);}
 ; 
 }
 
-void c_srfi132_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi132_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_vars = find_or_add_symbol("vars");
   quote_lambda = find_or_add_symbol("lambda");
   quote_call_91with_91values = find_or_add_symbol("call-with-values");
@@ -16614,4 +16614,7 @@ make_pair(c_737800, &pair_737761, &c_737799);
 Cyc_global_variables = &c_737800;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi132_srfi_132)->fn)(data, 1, cont, cont);
+}
+void c_srfi132_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi132_entry_pt_first_lambda(data, argc, cont,value);
 }

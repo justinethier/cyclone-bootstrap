@@ -605,7 +605,7 @@ port_type c_7376 = Cyc_io_open_input_file(data,string_7312);
 return_closcall3(data,  __glo_call_91with_91port_scheme_base,  k_7354, &c_7376, proc_7311);; 
 }
 
-void c_schemefile_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemefile_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote__121param_91convert_125 = find_or_add_symbol("<param-convert>");
   quote__121param_91set_67_125 = find_or_add_symbol("<param-set!>");
 
@@ -640,4 +640,7 @@ make_pair(c_73158, &pair_73153, &c_73157);
 Cyc_global_variables = &c_73158;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemefile_scheme_file)->fn)(data, 1, cont, cont);
+}
+void c_schemefile_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemefile_entry_pt_first_lambda(data, argc, cont,value);
 }

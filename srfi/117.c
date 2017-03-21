@@ -2935,7 +2935,7 @@ static void __lambda_0(void *data, int argc, object self_73595, object r_73463) 
 ; 
 }
 
-void c_srfi117_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi117_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_first = find_or_add_symbol("first");
   quote_list_91queue = find_or_add_symbol("list-queue");
   quote_seed = find_or_add_symbol("seed");
@@ -3132,4 +3132,7 @@ make_pair(c_731473, &pair_731437, &c_731472);
 Cyc_global_variables = &c_731473;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi117_srfi_117)->fn)(data, 1, cont, cont);
+}
+void c_srfi117_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi117_entry_pt_first_lambda(data, argc, cont,value);
 }

@@ -531,7 +531,7 @@ static void __lambda_0(void *data, int argc, object self_7350, object r_7317) {
   return_closcall1(data,  ((closureN)self_7350)->elements[0],  ((closureN)self_7350)->elements[1]);; 
 }
 
-void c_srfi111_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi111_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_value = find_or_add_symbol("value");
 
   add_global((object *) &__glo_lib_91init_117srfi111_srfi_111);
@@ -564,4 +564,7 @@ make_pair(c_73117, &pair_73111, &c_73116);
 Cyc_global_variables = &c_73117;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi111_srfi_111)->fn)(data, 1, cont, cont);
+}
+void c_srfi111_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi111_entry_pt_first_lambda(data, argc, cont,value);
 }

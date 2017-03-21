@@ -5751,7 +5751,7 @@ if( (boolean_f != Cyc_is_pair(exp_73370)) ){
 ; 
 }
 
-void c_schemecycloneutil_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecycloneutil_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_expr = find_or_add_symbol("expr");
   quote_free_91names = find_or_add_symbol("free-names");
   quote_env = find_or_add_symbol("env");
@@ -6247,4 +6247,7 @@ make_pair(c_733220, &pair_733143, &c_733219);
 Cyc_global_variables = &c_733220;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecycloneutil_scheme_cyclone_util)->fn)(data, 1, cont, cont);
+}
+void c_schemecycloneutil_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecycloneutil_entry_pt_first_lambda(data, argc, cont,value);
 }

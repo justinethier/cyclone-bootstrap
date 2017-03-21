@@ -8883,7 +8883,7 @@ object c_731537 = apply_va(data,  ((closureN)self_731529)->elements[0],2,__glo_a
 return_closcall1(data,  ((closureN)self_731529)->elements[0],  c_731537);; 
 }
 
-void c_schemeread_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeread_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_unquote = find_or_add_symbol("unquote");
   quote_unquote_91splicing = find_or_add_symbol("unquote-splicing");
   quote_quasiquote = find_or_add_symbol("quasiquote");
@@ -9089,4 +9089,7 @@ make_pair(c_734417, &pair_734379, &c_734416);
 Cyc_global_variables = &c_734417;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeread_scheme_read)->fn)(data, 1, cont, cont);
+}
+void c_schemeread_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemeread_entry_pt_first_lambda(data, argc, cont,value);
 }

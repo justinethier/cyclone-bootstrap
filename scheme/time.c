@@ -250,7 +250,7 @@ static void __lambda_0(void *data, int argc, closure _, object k) { make_double(
         time_t t = time(NULL);
         double_value(&box) = t;
         return_closcall1(data, k, &box);  }
-void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemetime_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemetime_scheme_time);
   add_global((object *) &__glo_jiffies_91per_91second_scheme_time);
@@ -276,4 +276,7 @@ make_pair(c_7320, &pair_7316, &c_7319);
 Cyc_global_variables = &c_7320;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);
+}
+void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemetime_entry_pt_first_lambda(data, argc, cont,value);
 }

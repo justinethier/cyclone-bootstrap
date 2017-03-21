@@ -2852,7 +2852,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_73651, object ob
 return_closcall1(data,  k_73651,  Cyc_cdr(data, obj_73295));; 
 }
 
-void c_srfi106_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi106_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote__75socket_91object_91type_75 = find_or_add_symbol("%socket-object-type%");
   quote_define_91c = find_or_add_symbol("define-c");
   quote_define = find_or_add_symbol("define");
@@ -3306,4 +3306,7 @@ make_pair(c_731828, &pair_731758, &c_731827);
 Cyc_global_variables = &c_731828;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi106_srfi_106)->fn)(data, 1, cont, cont);
+}
+void c_srfi106_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi106_entry_pt_first_lambda(data, argc, cont,value);
 }

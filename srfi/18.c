@@ -889,7 +889,7 @@ if( (boolean_f != c_73125) ){
 ; 
 }
 
-void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi18_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_cyc_91thread_91obj = find_or_add_symbol("cyc-thread-obj");
 
   add_global((object *) &__glo_lib_91init_117srfi18_srfi_18);
@@ -1036,4 +1036,7 @@ make_pair(c_73372, &pair_73344, &c_73371);
 Cyc_global_variables = &c_73372;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, 1, cont, cont);
+}
+void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi18_entry_pt_first_lambda(data, argc, cont,value);
 }

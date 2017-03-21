@@ -199,7 +199,7 @@ static void __lambda_0(void *data, int argc, closure _, object k, object z) { Cy
           return_closcall1(data, k, boolean_f);
         }
         return_closcall1(data, k, boolean_t); }
-void c_schemeinexact_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeinexact_scheme_inexact);
   add_global((object *) &__glo_tan_scheme_inexact);
@@ -275,4 +275,7 @@ make_pair(c_73101, &pair_7387, &c_73100);
 Cyc_global_variables = &c_73101;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
+}
+void c_schemeinexact_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value);
 }

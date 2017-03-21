@@ -7067,7 +7067,7 @@ static void __lambda_0(void *data, int argc, object self_73960, object r_73410) 
   return_closcall3(data,  cell_get(((closureN)self_73960)->elements[1]),  ((closureN)self_73960)->elements[0], __glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print, r_73410);; 
 }
 
-void c_schemecyclonepretty_91print_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_unquote_91splicing = find_or_add_symbol("unquote-splicing");
   quote_unquote = find_or_add_symbol("unquote");
   quote_quasiquote = find_or_add_symbol("quasiquote");
@@ -7143,4 +7143,7 @@ make_pair(c_732988, &pair_732980, &c_732987);
 Cyc_global_variables = &c_732988;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonepretty_91print_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value);
 }

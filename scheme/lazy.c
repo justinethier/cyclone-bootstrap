@@ -420,7 +420,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_7359, object obj
 return_closcall1(data,  object_7317,  k_7359);; 
 }
 
-void c_schemelazy_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemelazy_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_lambda = find_or_add_symbol("lambda");
   quote_make_91promise = find_or_add_symbol("make-promise");
 
@@ -459,4 +459,7 @@ make_pair(c_73178, &pair_73172, &c_73177);
 Cyc_global_variables = &c_73178;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemelazy_scheme_lazy)->fn)(data, 1, cont, cont);
+}
+void c_schemelazy_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemelazy_entry_pt_first_lambda(data, argc, cont,value);
 }

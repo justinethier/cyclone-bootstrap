@@ -9964,7 +9964,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_73881, object va
 return_closcall4(data,  __glo_env_117extend_91environment_scheme_cyclone_util,  k_73881, vars_73234, vals_73233, __glo__85global_91environment_85_scheme_eval);; 
 }
 
-void c_schemeeval_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeeval_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_procedure = find_or_add_symbol("procedure");
   quote_macro = find_or_add_symbol("macro");
   quote_call_95cc = find_or_add_symbol("call/cc");
@@ -10519,4 +10519,7 @@ make_pair(c_732629, &pair_732574, &c_732628);
 Cyc_global_variables = &c_732629;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeeval_scheme_eval)->fn)(data, 1, cont, cont);
+}
+void c_schemeeval_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemeeval_entry_pt_first_lambda(data, argc, cont,value);
 }

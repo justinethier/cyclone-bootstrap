@@ -4935,7 +4935,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_73777, object as
 return_closcall3(data,  __glo_tagged_91list_127_scheme_cyclone_util,  k_73777, quote_define_91library, ast_73337);; 
 }
 
-void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonelibraries_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_scheme = find_or_add_symbol("scheme");
   quote_sld = find_or_add_symbol("sld");
   quote_srfi = find_or_add_symbol("srfi");
@@ -5155,4 +5155,7 @@ make_pair(c_732467, &pair_732430, &c_732466);
 Cyc_global_variables = &c_732467;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonelibraries_scheme_cyclone_libraries)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonelibraries_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonelibraries_entry_pt_first_lambda(data, argc, cont,value);
 }

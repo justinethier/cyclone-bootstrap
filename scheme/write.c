@@ -309,7 +309,7 @@ static void __lambda_0(void *data, int argc, object self_7328, object r_7324) {
   return_closcall1(data,  ((closureN)self_7328)->elements[0],  Cyc_display_va(data, 2,((closureN)self_7328)->elements[1], r_7324));; 
 }
 
-void c_schemewrite_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemewrite_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemewrite_scheme_write);
   add_global((object *) &__glo_write_91simple_scheme_write);
@@ -338,4 +338,7 @@ make_pair(c_7382, &pair_7377, &c_7381);
 Cyc_global_variables = &c_7382;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemewrite_scheme_write)->fn)(data, 1, cont, cont);
+}
+void c_schemewrite_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemewrite_entry_pt_first_lambda(data, argc, cont,value);
 }

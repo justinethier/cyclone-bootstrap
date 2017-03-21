@@ -9591,7 +9591,7 @@ make_pair(c_731974,r_731449, boolean_f);
 return_closcall1(data,  ((closureN)self_731894)->elements[0],  &c_731974);; 
 }
 
-void c_srfi128_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi128_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_hash_127 = find_or_add_symbol("hash?");
   quote_ordering_127 = find_or_add_symbol("ordering?");
   quote_hash = find_or_add_symbol("hash");
@@ -9991,4 +9991,7 @@ make_pair(c_734789, &pair_734717, &c_734788);
 Cyc_global_variables = &c_734789;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi128_srfi_128)->fn)(data, 1, cont, cont);
+}
+void c_srfi128_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi128_entry_pt_first_lambda(data, argc, cont,value);
 }

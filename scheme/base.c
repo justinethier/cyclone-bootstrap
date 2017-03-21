@@ -39982,7 +39982,7 @@ static void __lambda_0(void *data, int argc, object self_737374, object _191, ob
   return_closcall1(data,  ((closureN)self_737374)->elements[0],  result);; 
 }
 
-void c_schemebase_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemebase_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_record_91marker = find_or_add_symbol("record-marker");
   quote_register_91simple_91type = find_or_add_symbol("register-simple-type");
   quote_slot_91set_67 = find_or_add_symbol("slot-set!");
@@ -41120,4 +41120,7 @@ make_pair(c_7321703, &pair_7321524, &c_7321702);
 Cyc_global_variables = &c_7321703;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemebase_scheme_base)->fn)(data, 1, cont, cont);
+}
+void c_schemebase_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemebase_entry_pt_first_lambda(data, argc, cont,value);
 }

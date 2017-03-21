@@ -1421,7 +1421,7 @@ static void __lambda_0(void *data, int argc, closure _, object k, object seed) {
        unsigned int next_seed = ((s * mult) + incr) % m;
        result = obj_int2obj(next_seed);
        return_closcall1(data, k, result); }
-void c_srfi27_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi27_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_n = find_or_add_symbol("n");
   quote_unit = find_or_add_symbol("unit");
   quote_s = find_or_add_symbol("s");
@@ -1523,4 +1523,7 @@ make_pair(c_73566, &pair_73546, &c_73565);
 Cyc_global_variables = &c_73566;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi27_srfi_27)->fn)(data, 1, cont, cont);
+}
+void c_srfi27_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_srfi27_entry_pt_first_lambda(data, argc, cont,value);
 }

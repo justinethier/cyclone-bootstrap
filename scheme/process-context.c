@@ -110,7 +110,7 @@ static void __lambda_0(void *data, int argc, closure _, object k) { int i;
           lis = pl;
         }
         return_closcall1(data, k, lis);  }
-void c_schemeprocess_91context_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);
   add_global((object *) &__glo_get_91environment_91variables_scheme_process_91context);
@@ -140,4 +140,7 @@ make_pair(c_7328, &pair_7323, &c_7327);
 Cyc_global_variables = &c_7328;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, 1, cont, cont);
+}
+void c_schemeprocess_91context_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value);
 }

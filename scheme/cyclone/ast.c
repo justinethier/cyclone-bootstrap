@@ -886,7 +886,7 @@ static void __lambda_0(void *data, int argc, object self_7398, object r_7351) {
   return_closcall4(data,  __glo_ast_117_75make_91lambda_scheme_cyclone_ast,  ((closureN)self_7398)->elements[2], __glo__85lambda_91id_85_scheme_cyclone_ast, ((closureN)self_7398)->elements[0], ((closureN)self_7398)->elements[1]);; 
 }
 
-void c_schemecycloneast_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecycloneast_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_args = find_or_add_symbol("args");
   quote_body = find_or_add_symbol("body");
   quote_id = find_or_add_symbol("id");
@@ -944,4 +944,7 @@ make_pair(c_73234, &pair_73223, &c_73233);
 Cyc_global_variables = &c_73234;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast)->fn)(data, 1, cont, cont);
+}
+void c_schemecycloneast_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecycloneast_entry_pt_first_lambda(data, argc, cont,value);
 }

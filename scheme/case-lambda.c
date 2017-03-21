@@ -3805,7 +3805,7 @@ make_pair(c_73776,r_73458, boolean_f);
 return_closcall1(data,  ((closureN)self_73647)->elements[0],  &c_73776);; 
 }
 
-void c_schemecase_91lambda_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecase_91lambda_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_clauses = find_or_add_symbol("clauses");
   quote_let = find_or_add_symbol("let");
   quote_error = find_or_add_symbol("error");
@@ -3870,4 +3870,7 @@ make_pair(c_731972, &pair_731969, &c_731971);
 Cyc_global_variables = &c_731972;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda)->fn)(data, 1, cont, cont);
+}
+void c_schemecase_91lambda_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecase_91lambda_entry_pt_first_lambda(data, argc, cont,value);
 }

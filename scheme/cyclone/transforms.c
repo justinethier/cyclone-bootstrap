@@ -15783,7 +15783,7 @@ static void __lambda_0(void *data, int argc, closure _,object k_732602) {
 return_closcall1(data,  k_732602,  __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
 }
 
-void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonetransforms_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_self = find_or_add_symbol("self");
   quote__75closure = find_or_add_symbol("%closure");
   quote__75closure_91ref = find_or_add_symbol("%closure-ref");
@@ -16408,4 +16408,10 @@ make_pair(c_738309, &pair_738224, &c_738308);
 Cyc_global_variables = &c_738309;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonetransforms_scheme_cyclone_transforms)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonetransforms_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  mclosure1(clo, c_schemecyclonetransforms_entry_pt_first_lambda, ((closure1_type *)cont)->element);
+  object buf[1]; buf[0] = cont;
+  GC(data, (closure)&clo, buf, 1);
+
 }

@@ -3056,7 +3056,7 @@ make_pair(c_73669,r_73366, boolean_f);
 return_closcall1(data,  ((closureN)self_73562)->elements[0],  &c_73669);; 
 }
 
-void c_schemecyclonearray_91list_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonearray_91list_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_y = find_or_add_symbol("y");
   quote_z = find_or_add_symbol("z");
   quote_array_91list_91insert_67 = find_or_add_symbol("array-list-insert!");
@@ -3212,4 +3212,7 @@ make_pair(c_731508, &pair_731486, &c_731507);
 Cyc_global_variables = &c_731508;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonearray_19191list_scheme_cyclone_array_91list)->fn)(data, 1, cont, cont);
+}
+void c_schemecyclonearray_91list_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  c_schemecyclonearray_91list_entry_pt_first_lambda(data, argc, cont,value);
 }
