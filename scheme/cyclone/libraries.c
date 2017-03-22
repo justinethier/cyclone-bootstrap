@@ -800,7 +800,7 @@ c_732374.elements[0] = ((closureN)self_73790)->elements[0];
 c_732374.elements[1] = ((closureN)self_73790)->elements[1];
 
 
-make_string(c_732381, "  c_");
+make_string(c_732381, "c_");
 
 make_string(c_732382, "_entry_pt_first_lambda");
 
