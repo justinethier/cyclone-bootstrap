@@ -731,6 +731,7 @@ extern object __glo_lib_117idb_117ids_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117lookup_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117entry_91_125library_91name_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117entry_91_125library_91id_scheme_cyclone_libraries;
+extern object __glo_lib_117dyn_91load_scheme_cyclone_libraries;
 #include "cyclone/runtime.h"
 defsymbol(quote);
 defsymbol(_list);
