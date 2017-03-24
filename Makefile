@@ -9,9 +9,13 @@ include Makefile.config
 COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/time scheme/cyclone/array-list scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/test scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/1 srfi/2 srfi/9 srfi/18 srfi/27 srfi/28 srfi/60 srfi/69 srfi/106 srfi/111 srfi/113 srfi/117 srfi/121 srfi/128 srfi/132 srfi/133
 CFILES = $(addsuffix .c, $(COBJ))
 COBJECTS=$(CFILES:.c=.o)
+C_SHARED_OBJECTS=$(CFILES:.c=.so)
 
 %.o: %.c %.h
 	$(CC) $(CFLAGS) $< -c -o $@
+
+%.so: %.o
+	$(CC) -shared -rdynamic -o $@ $<
 
 all: cyclone icyc-c
 
@@ -34,12 +38,12 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c
   runtime.c -o runtime.o
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o
 
-cyclone: $(CFILES) $(COBJECTS) libcyclone.a
+cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
 
 .PHONY: icyc-c
-icyc-c: $(CFILES) $(COBJECTS) libcyclone.a
+icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) icyc.c $(CFLAGS) -c -o icyc.o
 	$(CC) icyc.o $(COBJECTS) $(LIBS) $(CFLAGS) -o icyc
 
@@ -56,6 +60,7 @@ unit-tests: unit-tests.scm
 .PHONY: clean
 clean:
 	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o srfi/*.o unit-tests.c
+	rm -rf *.so scheme/*.so scheme/cyclone/*.so srfi/*.so
 
 install:
 #make install-deps
@@ -86,6 +91,9 @@ install:
 	$(INSTALL) -m0644 scheme/*.o $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.o $(DESTDIR)$(DATADIR)/srfi
+	$(INSTALL) -m0644 scheme/*.so $(DESTDIR)$(DATADIR)/scheme
+	$(INSTALL) -m0644 scheme/cyclone/*.so $(DESTDIR)$(DATADIR)/scheme/cyclone
+	$(INSTALL) -m0644 srfi/*.so $(DESTDIR)$(DATADIR)/srfi
 #install:
 	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
@@ -101,17 +109,20 @@ install:
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
 	$(INSTALL) -m0644 scheme/*.sld $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/*.o $(DESTDIR)$(DATADIR)/scheme
+	$(INSTALL) -m0644 scheme/*.so $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/*.scm $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/test.meta $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/array-list.meta $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
+	$(INSTALL) -m0644 scheme/cyclone/*.so $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.scm $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/list-queues/*.scm $(DESTDIR)$(DATADIR)/srfi/list-queues
 	$(INSTALL) -m0644 srfi/sorting/*.scm $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0644 srfi/*.meta $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.o $(DESTDIR)$(DATADIR)/srfi
+	$(INSTALL) -m0644 srfi/*.so $(DESTDIR)$(DATADIR)/srfi
 
 uninstall:
 	$(RM) $(DESTDIR)$(BINDIR)/cyclone
