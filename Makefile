@@ -20,13 +20,13 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 all: cyclone icyc-c
 
 libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c
-	$(CC) $(LIB_CFLAGS) -c dispatch.c -o dispatch.o
-	$(CC) $(LIB_CFLAGS) -c -std=gnu99 gc.c -o gc.o
-	$(CC) $(LIB_CFLAGS) -c \
+	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
+	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
+	$(CC) $(CFLAGS) -c \
                   -DCYC_HAVE_OPEN_MEMSTREAM=$(CYC_PLATFORM_HAS_MEMSTREAM) \
                   -DCYC_HAVE_FMEMOPEN=$(CYC_PLATFORM_HAS_FMEMOPEN) \
                   mstreams.c -o mstreams.o
-	$(CC) $(LIB_CFLAGS) -c \
+	$(CC) $(CFLAGS) -c \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
   -DCYC_INSTALL_LIB=\"$(LIBDIR)\" \
   -DCYC_INSTALL_INC=\"$(INCDIR)\" \
