@@ -11698,5 +11698,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonecps_19191optimizations_scheme_cyclone_cps_91optimizations)->fn)(data, 1, cont, cont);
 }
 void c_schemecyclonecps_91optimizations_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cyclone_cps_91optimizations");
   c_schemecyclonecps_91optimizations_entry_pt_first_lambda(data, argc, cont,value);
 }

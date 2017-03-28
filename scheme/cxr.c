@@ -884,5 +884,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
 }
 void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cxr");
   c_schemecxr_entry_pt_first_lambda(data, argc, cont,value);
 }

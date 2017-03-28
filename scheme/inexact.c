@@ -277,5 +277,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }
 void c_schemeinexact_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_inexact");
   c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value);
 }

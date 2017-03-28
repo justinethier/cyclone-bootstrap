@@ -642,5 +642,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemefile_scheme_file)->fn)(data, 1, cont, cont);
 }
 void c_schemefile_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_file");
   c_schemefile_entry_pt_first_lambda(data, argc, cont,value);
 }

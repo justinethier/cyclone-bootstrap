@@ -327,6 +327,7 @@ extern object __glo_eval_scheme_eval;
 extern object __glo_eval_91from_91c_scheme_eval;
 extern object __glo_create_91environment_scheme_eval;
 extern object __glo_setup_91environment_scheme_eval;
+extern object __glo__75import_scheme_eval;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_if_91syntax_127_scheme_cyclone_util;
@@ -1943,5 +1944,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);
 }
 void c_schemecyclonemacros_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cyclone_macros");
   c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value);
 }

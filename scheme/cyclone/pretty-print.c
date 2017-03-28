@@ -7145,5 +7145,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print)->fn)(data, 1, cont, cont);
 }
 void c_schemecyclonepretty_91print_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cyclone_pretty_91print");
   c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value);
 }

@@ -259,6 +259,7 @@ extern object __glo_eval_scheme_eval;
 extern object __glo_eval_91from_91c_scheme_eval;
 extern object __glo_create_91environment_scheme_eval;
 extern object __glo_setup_91environment_scheme_eval;
+extern object __glo__75import_scheme_eval;
 extern object __glo_call_91with_91input_91file_scheme_file;
 extern object __glo_call_91with_91output_91file_scheme_file;
 extern object __glo_with_91input_91from_91file_scheme_file;
@@ -344,5 +345,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
 }
 void c_schemeload_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_load");
   c_schemeload_entry_pt_first_lambda(data, argc, cont,value);
 }

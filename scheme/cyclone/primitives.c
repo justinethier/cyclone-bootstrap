@@ -7483,5 +7483,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecycloneprimitives_scheme_cyclone_primitives)->fn)(data, 1, cont, cont);
 }
 void c_schemecycloneprimitives_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cyclone_primitives");
   c_schemecycloneprimitives_entry_pt_first_lambda(data, argc, cont,value);
 }

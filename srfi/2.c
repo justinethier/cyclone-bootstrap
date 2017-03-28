@@ -3024,5 +3024,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi2_srfi_2)->fn)(data, 1, cont, cont);
 }
 void c_srfi2_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("srfi_2");
   c_srfi2_entry_pt_first_lambda(data, argc, cont,value);
 }

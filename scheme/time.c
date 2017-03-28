@@ -278,5 +278,6 @@ cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);
 }
 void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_time");
   c_schemetime_entry_pt_first_lambda(data, argc, cont,value);
 }
