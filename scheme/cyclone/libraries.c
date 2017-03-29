@@ -4016,7 +4016,7 @@ object c_731412 = Cyc_installation_dir(data,  ((closureN)self_73962)->elements[0
 return_closcall1(data,  ((closureN)self_73962)->elements[0],  c_731412);
 } else { 
   
-make_string(c_731415, "");
+make_string(c_731415, "./");
 return_closcall1(data,  ((closureN)self_73962)->elements[0],  &c_731415);}
 ; 
 }
