@@ -2438,13 +2438,19 @@ return_closcall1(data,  ((closureN)self_73400)->elements[0],  c_73568);;
 }
 
 static void __lambda_28(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
-  int input = (int)unbox_number(x);
-  int res = 0;
-  while (input) {
-        res++;
-        input >>= 1;
-  };
-  return_closcall1(data, k, obj_int2obj(res)); }
+   if (Cyc_is_bignum(x) == boolean_t) {
+     int res;
+     mp_radix_size(&bignum_value(x), 2, &res);
+     return_closcall1(data, k, obj_int2obj((res - 1)));
+   } else {
+     int input = (int)unbox_number(x);
+     int res = 0;
+     while (input) {
+           res++;
+           input >>= 1;
+     };
+     return_closcall1(data, k, obj_int2obj(res));
+   } }
 static void __lambda_27(void *data, int argc, closure _,object k_73247, object n_7382) {
   Cyc_st_add(data, "srfi/60.sld:logcount");
 
@@ -2833,10 +2839,10 @@ object c_73447 = apply_va(data,  ((closureN)self_73417)->elements[0],3,__glo_log
 return_closcall1(data,  ((closureN)self_73417)->elements[0],  c_73447);; 
 }
 
-static void __lambda_3(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
-  Cyc_check_int(data, y);
-  int result = ((int)unbox_number(x)) | ((int)unbox_number(y));
-  return_closcall1(data, k, obj_int2obj(result)); }
+static void __lambda_3(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_fixnum(data, x); // TODO: bignum support
+   Cyc_check_fixnum(data, y);
+   int result = ((int)unbox_number(x)) | ((int)unbox_number(y));
+   return_closcall1(data, k, obj_int2obj(result)); }
 static void __lambda_2(void *data, int argc, closure _,object k_73293, object x_7398, object rest_7397_raw, ...) {
 load_varargs(rest_7397, rest_7397_raw, argc - 2);
   Cyc_st_add(data, "srfi/60.sld:logand");
@@ -2866,9 +2872,42 @@ return_closcall1(data,  ((closureN)self_73418)->elements[0],  c_73430);;
 }
 
 static void __lambda_0(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
-  Cyc_check_int(data, y);
-  int result = ((int)unbox_number(x)) & ((int)unbox_number(y));
-  return_closcall1(data, k, obj_int2obj(result)); }
+   Cyc_check_int(data, y);
+
+   if (obj_is_int(x) && obj_is_int(y)) {
+       int result = ((int)unbox_number(x)) & ((int)unbox_number(y));
+       return_closcall1(data, k, obj_int2obj(result));
+   } else {
+     int result;
+     alloc_bignum(data, bn);
+     mp_int *xx, *yy;
+     mp_int tmpx, tmpy;
+
+     if (obj_is_int(x)) {
+       mp_init(&tmpx);
+       Cyc_int2bignum(obj_obj2int(x), &tmpx);
+       xx = &tmpx;
+     } else {
+       xx = &bignum_value(x);
+     }
+
+     if (obj_is_int(y)) {
+       mp_init(&tmpy);
+       Cyc_int2bignum(obj_obj2int(y), &tmpy);
+       yy = &tmpy;
+     } else {
+       yy = &bignum_value(y);
+     }
+
+     result = mp_and(xx, yy, &(bignum_value(bn)));
+     if (MP_OKAY != result) {
+      char buffer[128];
+      snprintf(buffer, 127, "Bignum error: %s", mp_error_to_string(result));
+      Cyc_rt_raise_msg(data, buffer);
+     }
+     return_closcall1(data, k, Cyc_bignum_normalize(data, bn));
+   }
+   }
 void c_srfi60_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117srfi60_srfi_60);
