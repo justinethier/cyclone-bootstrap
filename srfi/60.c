@@ -2122,20 +2122,31 @@ static void __lambda_53(void *data, int argc, object self_73460, object r_73255)
 }
 
 static void __lambda_52(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
-  Cyc_check_int(data,y);
-  int bf = (int)unbox_number(x);
-  int shift = (int)unbox_number(y);
-  int i;
-  if (shift > 0) {
-        for (i = 0; i < shift; i++) {
-                 bf *= 2;
-        }
-  } else {
-        for (i = 0; i < abs(shift); i++) {
-                bf /= 2; 
-        }
-  }
-  return_closcall1(data, k, obj_int2obj(bf)) }
+    Cyc_check_fixnum(data,y);
+    int shift, i;
+    //int result;
+    alloc_bignum(data, bn);
+ 
+    if (Cyc_is_bignum(x) == boolean_t){
+      mp_copy(&bignum_value(x), &bignum_value(bn));
+    } else {
+      Cyc_int2bignum((int)unbox_number(x), &bignum_value(bn));
+    }
+ 
+// Inefficient but always works without overflow
+// Should be able to do pure fixnum math in some cases, though
+    shift = (int)unbox_number(y);
+    if (shift > 0) {
+      for (i = 0; i < shift; i++) {
+         mp_mul_2(&bignum_value(bn), &bignum_value(bn));
+      }
+    } else {
+      for (i = 0; i < abs(shift); i++) {
+         mp_div_2(&bignum_value(bn), &bignum_value(bn));
+      }
+    }
+
+    return_closcall1(data, k, Cyc_bignum_normalize(data, bn)); }
 static void __lambda_51(void *data, int argc, closure _,object k_73273, object to_73128, object from_73127, object start_73126, object end_73125) {
   Cyc_st_add(data, "srfi/60.sld:copy-bit-field");
 
@@ -2774,12 +2785,12 @@ static void __lambda_13(void *data, int argc, object self_73491, object r_73329)
 }
 
 static void __lambda_12(void* data, int argc, closure _, object k, 
-          object mask, object n0, object n1) {Cyc_check_int(data, mask);
-  Cyc_check_int(data, n0);
-  Cyc_check_int(data, n1);
-  int m = unbox_number(mask);
-  int result = (m & ((int)unbox_number(n0))) | ((~m) & ((int)unbox_number(n1)));
-  return_closcall1(data, k, obj_int2obj(result)); }
+          object mask, object n0, object n1) {Cyc_check_fixnum(data, mask); // TODO: bignum support
+   Cyc_check_fixnum(data, n0);
+   Cyc_check_fixnum(data, n1);
+   int m = unbox_number(mask);
+   int result = (m & ((int)unbox_number(n0))) | ((~m) & ((int)unbox_number(n1)));
+   return_closcall1(data, k, obj_int2obj(result)); }
 static void __lambda_11(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
    if (Cyc_is_bignum(x) == boolean_t) {
       // uh oh, libtommath doesn't provide this!
