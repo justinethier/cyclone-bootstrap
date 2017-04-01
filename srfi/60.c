@@ -2792,13 +2792,21 @@ static void __lambda_12(void* data, int argc, closure _, object k,
    int result = (m & ((int)unbox_number(n0))) | ((~m) & ((int)unbox_number(n1)));
    return_closcall1(data, k, obj_int2obj(result)); }
 static void __lambda_11(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
+   alloc_bignum(data, bn);
    if (Cyc_is_bignum(x) == boolean_t) {
-      // uh oh, libtommath doesn't provide this!
-      Cyc_rt_raise_msg(data, "bignum negation not supported yet");
+     mp_copy(&bignum_value(x), &bignum_value(bn));
    } else {
-    int result = ~((int)unbox_number(x));
-    return_closcall1(data, k, obj_int2obj(result));
-   } }
+     Cyc_int2bignum((int)unbox_number(x), &bignum_value(bn));
+   }
+
+   // From https://github.com/libtom/libtommath/issues/30
+   /* A one's complement, aka bitwise NOT, is actually just -a - 1 */
+   //CHECK_ERROR(mp_neg(&op->mp, &out->mp));
+   //CHECK_ERROR(mp_sub_d(&out->mp, 1, &out->mp));
+   mp_neg(&bignum_value(bn), &bignum_value(bn));
+   mp_sub_d(&bignum_value(bn), 1, &bignum_value(bn));
+   return_closcall1(data, k, Cyc_bignum_normalize(data, bn));
+    }
 static void __lambda_10(void *data, int argc, closure _,object k_73339, object x_73150, object rest_73149_raw, ...) {
 load_varargs(rest_73149, rest_73149_raw, argc - 2);
   Cyc_st_add(data, "srfi/60.sld:logxor");
