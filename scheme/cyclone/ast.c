@@ -375,6 +375,8 @@ extern object __glo_Cyc_91er_91rename_scheme_cyclone_util;
 extern object __glo_Cyc_91er_91compare_127_scheme_cyclone_util;
 extern object __glo_mangle_scheme_cyclone_util;
 extern object __glo_mangle_91global_scheme_cyclone_util;
+extern object __glo_define_91c_91inline_127_scheme_cyclone_util;
+extern object __glo_define_91c_91_125inline_91var_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
