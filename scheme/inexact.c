@@ -107,7 +107,7 @@ return_closcall1(data,  k_737,  obj_int2obj(0));;
 static void __lambda_14(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, tan, z); }
 static void __lambda_13(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, sqrt, z); }
 static void __lambda_12(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, sin, z); }
-static object __lambda_11(void *data, object ptr, object z) { unboxed_inexact_double_op(data, ptr, log, z); }
+static object __lambda_11(void *data, object ptr, object z) { return_inexact_double_op_no_cps(data, ptr, log, z); }
 static void __lambda_10(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, log, z); }
 static void __lambda_9(void *data, int argc, closure _,object k_7310, object z1_732, object z2_731_raw, ...) {
 load_varargs(z2_731, z2_731_raw, argc - 2);

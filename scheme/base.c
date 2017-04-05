@@ -24663,7 +24663,7 @@ static void __lambda_796(void *data, int argc, closure _, object k, object num) 
       }  }
 static void __lambda_795(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, (double), z);  }
 static void __lambda_794(void *data, int argc, closure _, object k, object z) { return_exact_double_op(data, k, round, z);  }
-static object __lambda_793(void *data, object ptr, object z) { unboxed_inexact_double_op(data, ptr, (int), z); }
+static object __lambda_793(void *data, object ptr, object z) { return_exact_double_op_no_cps(data, ptr, (int), z); }
 static void __lambda_792(void *data, int argc, closure _, object k, object z) { return_exact_double_op(data, k, (int), z);  }
 static void __lambda_791(void *data, int argc, closure _, object k, object z) { return_exact_double_op(data, k, ceil, z);  }
 static void __lambda_790(void *data, int argc, closure _, object k, object z) { return_exact_double_op(data, k, floor, z);  }
