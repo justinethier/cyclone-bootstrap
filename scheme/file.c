@@ -605,6 +605,9 @@ port_type c_7376 = Cyc_io_open_input_file(data,string_7312);
 return_closcall3(data,  __glo_call_91with_91port_scheme_base,  k_7354, &c_7376, proc_7311);; 
 }
 
+void c_schemefile_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemefile_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote__121param_91convert_125 = find_or_add_symbol("<param-convert>");
   quote__121param_91set_67_125 = find_or_add_symbol("<param-set!>");
@@ -627,17 +630,19 @@ void c_schemefile_entry_pt_first_lambda(data, argc, cont,value) void *data; int 
   mclosure0(c_7372, (function_type)__lambda_0);c_7372.num_args = 2; 
   __glo_call_91with_91input_91file_scheme_file = &c_7372; 
 
-  make_cvar(cvar_73144, (object *)&__glo_lib_91init_117schemefile_scheme_file);make_pair(pair_73145, find_or_add_symbol("lib-init:schemefile"), &cvar_73144);
-  make_cvar(cvar_73146, (object *)&__glo_with_91output_91to_91file_scheme_file);make_pair(pair_73147, find_or_add_symbol("with-output-to-file"), &cvar_73146);
-  make_cvar(cvar_73148, (object *)&__glo_with_91input_91from_91file_scheme_file);make_pair(pair_73149, find_or_add_symbol("with-input-from-file"), &cvar_73148);
-  make_cvar(cvar_73150, (object *)&__glo_call_91with_91output_91file_scheme_file);make_pair(pair_73151, find_or_add_symbol("call-with-output-file"), &cvar_73150);
-  make_cvar(cvar_73152, (object *)&__glo_call_91with_91input_91file_scheme_file);make_pair(pair_73153, find_or_add_symbol("call-with-input-file"), &cvar_73152);
-make_pair(c_73154, &pair_73145,Cyc_global_variables);
-make_pair(c_73155, &pair_73147, &c_73154);
-make_pair(c_73156, &pair_73149, &c_73155);
-make_pair(c_73157, &pair_73151, &c_73156);
-make_pair(c_73158, &pair_73153, &c_73157);
-Cyc_global_variables = &c_73158;
+  mclosure0(clo_73145, c_schemefile_inlinable_lambdas); make_pair(pair_73144, find_or_add_symbol("c_schemefile_inlinable_lambdas"), &clo_73145);
+  make_cvar(cvar_73146, (object *)&__glo_lib_91init_117schemefile_scheme_file);make_pair(pair_73147, find_or_add_symbol("lib-init:schemefile"), &cvar_73146);
+  make_cvar(cvar_73148, (object *)&__glo_with_91output_91to_91file_scheme_file);make_pair(pair_73149, find_or_add_symbol("with-output-to-file"), &cvar_73148);
+  make_cvar(cvar_73150, (object *)&__glo_with_91input_91from_91file_scheme_file);make_pair(pair_73151, find_or_add_symbol("with-input-from-file"), &cvar_73150);
+  make_cvar(cvar_73152, (object *)&__glo_call_91with_91output_91file_scheme_file);make_pair(pair_73153, find_or_add_symbol("call-with-output-file"), &cvar_73152);
+  make_cvar(cvar_73154, (object *)&__glo_call_91with_91input_91file_scheme_file);make_pair(pair_73155, find_or_add_symbol("call-with-input-file"), &cvar_73154);
+make_pair(c_73156, &pair_73144,Cyc_global_variables);
+make_pair(c_73157, &pair_73147, &c_73156);
+make_pair(c_73158, &pair_73149, &c_73157);
+make_pair(c_73159, &pair_73151, &c_73158);
+make_pair(c_73160, &pair_73153, &c_73159);
+make_pair(c_73161, &pair_73155, &c_73160);
+Cyc_global_variables = &c_73161;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemefile_scheme_file)->fn)(data, 1, cont, cont);
 }

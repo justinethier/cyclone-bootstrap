@@ -3805,6 +3805,9 @@ make_pair(c_73776,r_73458, boolean_f);
 return_closcall1(data,  ((closureN)self_73647)->elements[0],  &c_73776);; 
 }
 
+void c_schemecase_91lambda_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemecase_91lambda_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_clauses = find_or_add_symbol("clauses");
   quote_let = find_or_add_symbol("let");
@@ -3861,13 +3864,15 @@ void c_schemecase_91lambda_entry_pt_first_lambda(data, argc, cont,value) void *d
   mmacro(c_73648, (function_type)__lambda_99);c_73648.num_args = 3; 
   __glo__75case_scheme_case_91lambda = &c_73648; 
 
-  make_cvar(cvar_731964, (object *)&__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda);make_pair(pair_731965, find_or_add_symbol("lib-init:schemecase_91lambda"), &cvar_731964);
-  make_cvar(cvar_731966, (object *)&__glo_case_91lambda_scheme_case_91lambda);make_pair(pair_731967, find_or_add_symbol("case-lambda"), &cvar_731966);
-  make_cvar(cvar_731968, (object *)&__glo__75case_scheme_case_91lambda);make_pair(pair_731969, find_or_add_symbol("%case"), &cvar_731968);
-make_pair(c_731970, &pair_731965,Cyc_global_variables);
-make_pair(c_731971, &pair_731967, &c_731970);
-make_pair(c_731972, &pair_731969, &c_731971);
-Cyc_global_variables = &c_731972;
+  mclosure0(clo_731965, c_schemecase_91lambda_inlinable_lambdas); make_pair(pair_731964, find_or_add_symbol("c_schemecase_91lambda_inlinable_lambdas"), &clo_731965);
+  make_cvar(cvar_731966, (object *)&__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda);make_pair(pair_731967, find_or_add_symbol("lib-init:schemecase_91lambda"), &cvar_731966);
+  make_cvar(cvar_731968, (object *)&__glo_case_91lambda_scheme_case_91lambda);make_pair(pair_731969, find_or_add_symbol("case-lambda"), &cvar_731968);
+  make_cvar(cvar_731970, (object *)&__glo__75case_scheme_case_91lambda);make_pair(pair_731971, find_or_add_symbol("%case"), &cvar_731970);
+make_pair(c_731972, &pair_731964,Cyc_global_variables);
+make_pair(c_731973, &pair_731967, &c_731972);
+make_pair(c_731974, &pair_731969, &c_731973);
+make_pair(c_731975, &pair_731971, &c_731974);
+Cyc_global_variables = &c_731975;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda)->fn)(data, 1, cont, cont);
 }

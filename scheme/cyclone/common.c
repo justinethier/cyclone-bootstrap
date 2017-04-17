@@ -195,6 +195,9 @@ static void __lambda_0(void *data, int argc, object self_7328, object r_738) {
   return_closcall1(data,  ((closureN)self_7328)->elements[0],  global_set(__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_738));; 
 }
 
+void c_schemecyclonecommon_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemecyclonecommon_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);
@@ -215,21 +218,23 @@ void c_schemecyclonecommon_entry_pt_first_lambda(data, argc, cont,value) void *d
   make_string(c_7329, "0.5.1"); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7329; 
 
-  make_cvar(cvar_7369, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7370, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7369);
-  make_cvar(cvar_7371, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_pair(pair_7372, find_or_add_symbol("*c-file-header-comment*"), &cvar_7371);
-  make_cvar(cvar_7373, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_pair(pair_7374, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7373);
-  make_cvar(cvar_7375, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_pair(pair_7376, find_or_add_symbol("*version-banner*"), &cvar_7375);
-  make_cvar(cvar_7377, (object *)&__glo__85version_85_scheme_cyclone_common);make_pair(pair_7378, find_or_add_symbol("*version*"), &cvar_7377);
-  make_cvar(cvar_7379, (object *)&__glo__85version_91name_85_scheme_cyclone_common);make_pair(pair_7380, find_or_add_symbol("*version-name*"), &cvar_7379);
-  make_cvar(cvar_7381, (object *)&__glo__85version_91number_85_scheme_cyclone_common);make_pair(pair_7382, find_or_add_symbol("*version-number*"), &cvar_7381);
-make_pair(c_7383, &pair_7370,Cyc_global_variables);
-make_pair(c_7384, &pair_7372, &c_7383);
-make_pair(c_7385, &pair_7374, &c_7384);
-make_pair(c_7386, &pair_7376, &c_7385);
-make_pair(c_7387, &pair_7378, &c_7386);
-make_pair(c_7388, &pair_7380, &c_7387);
-make_pair(c_7389, &pair_7382, &c_7388);
-Cyc_global_variables = &c_7389;
+  mclosure0(clo_7370, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7369, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7370);
+  make_cvar(cvar_7371, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7372, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7371);
+  make_cvar(cvar_7373, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_pair(pair_7374, find_or_add_symbol("*c-file-header-comment*"), &cvar_7373);
+  make_cvar(cvar_7375, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_pair(pair_7376, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7375);
+  make_cvar(cvar_7377, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_pair(pair_7378, find_or_add_symbol("*version-banner*"), &cvar_7377);
+  make_cvar(cvar_7379, (object *)&__glo__85version_85_scheme_cyclone_common);make_pair(pair_7380, find_or_add_symbol("*version*"), &cvar_7379);
+  make_cvar(cvar_7381, (object *)&__glo__85version_91name_85_scheme_cyclone_common);make_pair(pair_7382, find_or_add_symbol("*version-name*"), &cvar_7381);
+  make_cvar(cvar_7383, (object *)&__glo__85version_91number_85_scheme_cyclone_common);make_pair(pair_7384, find_or_add_symbol("*version-number*"), &cvar_7383);
+make_pair(c_7385, &pair_7369,Cyc_global_variables);
+make_pair(c_7386, &pair_7372, &c_7385);
+make_pair(c_7387, &pair_7374, &c_7386);
+make_pair(c_7388, &pair_7376, &c_7387);
+make_pair(c_7389, &pair_7378, &c_7388);
+make_pair(c_7390, &pair_7380, &c_7389);
+make_pair(c_7391, &pair_7382, &c_7390);
+make_pair(c_7392, &pair_7384, &c_7391);
+Cyc_global_variables = &c_7392;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common)->fn)(data, 1, cont, cont);
 }

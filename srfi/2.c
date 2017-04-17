@@ -2986,6 +2986,9 @@ return_closcall1(data,  k_73482,  &c_73620);
 ; 
 }
 
+void c_srfi2_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_srfi2_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_rest = find_or_add_symbol("rest");
   quote_and_91let_85 = find_or_add_symbol("and-let*");
@@ -3015,11 +3018,13 @@ void c_srfi2_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc;
   mmacro(c_73599, (function_type)__lambda_111);c_73599.num_args = 3; 
   __glo_and_91let_85_srfi_2 = &c_73599; 
 
-  make_cvar(cvar_731511, (object *)&__glo_lib_91init_117srfi2_srfi_2);make_pair(pair_731512, find_or_add_symbol("lib-init:srfi2"), &cvar_731511);
-  make_cvar(cvar_731513, (object *)&__glo_and_91let_85_srfi_2);make_pair(pair_731514, find_or_add_symbol("and-let*"), &cvar_731513);
-make_pair(c_731515, &pair_731512,Cyc_global_variables);
-make_pair(c_731516, &pair_731514, &c_731515);
-Cyc_global_variables = &c_731516;
+  mclosure0(clo_731512, c_srfi2_inlinable_lambdas); make_pair(pair_731511, find_or_add_symbol("c_srfi2_inlinable_lambdas"), &clo_731512);
+  make_cvar(cvar_731513, (object *)&__glo_lib_91init_117srfi2_srfi_2);make_pair(pair_731514, find_or_add_symbol("lib-init:srfi2"), &cvar_731513);
+  make_cvar(cvar_731515, (object *)&__glo_and_91let_85_srfi_2);make_pair(pair_731516, find_or_add_symbol("and-let*"), &cvar_731515);
+make_pair(c_731517, &pair_731511,Cyc_global_variables);
+make_pair(c_731518, &pair_731514, &c_731517);
+make_pair(c_731519, &pair_731516, &c_731518);
+Cyc_global_variables = &c_731519;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi2_srfi_2)->fn)(data, 1, cont, cont);
 }

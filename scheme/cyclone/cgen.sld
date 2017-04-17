@@ -809,6 +809,11 @@
    (c:serialize els "  ")
    "}\n"))))
 
+;; Global inlinable functions
+(define *global-inlines* '())
+(define (add-global-inline var-sym)
+  (set! *global-inlines* (cons var-sym *global-inlines*)))
+
 ;; Global compilation
 (define *globals* '())
 (define *global-syms* '())
@@ -860,6 +865,7 @@
        (let ((fnc-sym 
                (define-c->inline-var exp)))
           ;(trace:error `(JAE define-c inline detected ,fnc-sym))
+         (add-global-inline fnc-sym)
          (c-compile-raw-global-lambda 
            `(define-c ,fnc-sym ,@(cddddr exp))
            append-preamble 
@@ -1323,6 +1329,52 @@
          (emit ((caadr l) (string-append "__lambda_" (number->string (car l))))))))
      lambdas)
   
+    ; Emit inlinable function list
+    (cond
+      ((not program?)
+        (emit* "void c_" (lib:name->string lib-name) "_inlinable_lambdas(void *data, int argc, closure _, object cont){ ")
+        (let ((pairs '())
+              (head-pair #f))
+          (for-each
+            (lambda (g)
+              (let ((cvar-sym (mangle (gensym 'cvar)))
+                    (pair-sym (mangle (gensym 'pair))))
+               (emits* 
+                   "  make_cvar(" cvar-sym 
+                   ", (object *)&" (cgen:mangle-global g) ");")
+               (emits*
+                   "make_pair(" pair-sym ", find_or_add_symbol(\"" (symbol->string g)
+                   "\"), &" cvar-sym ");\n")
+               (set! pairs (cons pair-sym pairs))))
+            *global-inlines*)
+            ;; Link the pairs
+            (let loop ((code '())
+                       (ps pairs)
+                       (cs (map (lambda (_) (mangle (gensym 'c))) pairs)))
+                (cond
+                  ((null? ps) 
+                   (for-each
+                     (lambda (str)
+                       (emits str))
+                     code))
+                  ((null? (cdr ps))
+                   (if (not head-pair)
+                       (set! head-pair (car cs)))
+                   (loop (cons (string-append "make_pair(" (car cs) ", &" (car ps) ", NULL);\n") code)
+                         (cdr ps)
+                         (cdr cs)))
+                  (else
+                   (if (not head-pair)
+                       (set! head-pair (car cs)))
+                   (loop (cons (string-append "make_pair(" (car cs) ", &" (car ps) ", &" (cadr cs) ");\n") code)
+                         (cdr ps) 
+                         (cdr cs)))))
+          (if head-pair
+              (emit* "(((closure)cont)->fn)(data, 1, cont, &" head-pair ");")
+              (emit* "(((closure)cont)->fn)(data, 1, cont, NULL);"))
+          (emit* " } "))
+      ))
+
     ; Emit entry point
     (cond
       (program?
@@ -1378,6 +1430,25 @@
     ;; TODO: only need to do this if 'eval' was also compiled
     (let ((pairs '())
           (head-pair #f))
+
+        ;; Expose list of inlinable lambda functions
+        (when (not program?)
+          (let ( ;(cvar-sym (mangle (gensym 'cvar)))
+                (pair-sym (mangle (gensym 'pair)))
+                (clo-sym (mangle (gensym 'clo)))
+                (fnc (string-append
+                       "c_" (lib:name->string lib-name) "_inlinable_lambdas")))
+           (emits* 
+               "  mclosure0(" clo-sym ", " fnc "); "
+              ; "  make_cvar(" cvar-sym 
+              ; ", (object *)&" fnc ");"
+               )
+           (emits*
+               "make_pair(" pair-sym ", find_or_add_symbol(\"" fnc
+               "\"), &" clo-sym ");\n")
+           (set! pairs (cons pair-sym pairs))))
+        ;; END
+
         (for-each
           (lambda (g)
             (let ((cvar-sym (mangle (gensym 'cvar)))

@@ -70,7 +70,9 @@ object __glo_lib_91init_117schemeinexact_scheme_inexact = NULL;
 object __glo_tan_scheme_inexact = NULL;
 object __glo_sqrt_scheme_inexact = NULL;
 object __glo_sin_scheme_inexact = NULL;
+object __glo_sin_191_191inline_191_191_scheme_inexact = NULL;
 object __glo_c_91log_scheme_inexact = NULL;
+object __glo_c_91log_191_191inline_191_191_scheme_inexact = NULL;
 object __glo_log_scheme_inexact = NULL;
 object __glo_exp_scheme_inexact = NULL;
 object __glo_cos_scheme_inexact = NULL;
@@ -84,18 +86,18 @@ object __glo_nan_127_scheme_inexact = NULL;
 static void __lambda_16(void *data, int argc, closure _,object k_737) ;
 static void __lambda_15(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_14(void *data, int argc, closure _, object k, object z) ;
-static void __lambda_13(void *data, int argc, closure _, object k, object z) ;
+static object __lambda_13(void *data, object ptr, object z) ;
 static void __lambda_12(void *data, int argc, closure _, object k, object z) ;
-static void __lambda_11(void *data, int argc, closure _,object k_7310, object z1_732, object z2_731_raw, ...) ;
-static void __lambda_10(void *data, int argc, object self_7319, object r_7313) ;
-static void __lambda_9(void *data, int argc, object self_7320, object r_7314) ;
+static object __lambda_11(void *data, object ptr, object z) ;
+static void __lambda_10(void *data, int argc, closure _, object k, object z) ;
+static void __lambda_9(void *data, int argc, closure _,object k_7310, object z1_732, object z2_731_raw, ...) ;
 static void __lambda_8(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_7(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_6(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_5(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_4(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_3(void *data, int argc, closure _,object k_7317, object z_734) ;
-static void __lambda_2(void *data, int argc, object self_7321, object r_7318) ;
+static void __lambda_2(void *data, int argc, object self_7319, object r_7318) ;
 static void __lambda_1(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_0(void *data, int argc, closure _, object k, object z) ;
 
@@ -106,50 +108,29 @@ return_closcall1(data,  k_737,  obj_int2obj(0));;
 
 static void __lambda_15(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, tan, z); }
 static void __lambda_14(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, sqrt, z); }
-static void __lambda_13(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, sin, z); }
-static void __lambda_12(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, log, z); }
-static void __lambda_11(void *data, int argc, closure _,object k_7310, object z1_732, object z2_731_raw, ...) {
+static object __lambda_13(void *data, object ptr, object z) { return_inexact_double_op_no_cps(data, ptr, sin, z); }
+static void __lambda_12(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, sin, z); }
+static object __lambda_11(void *data, object ptr, object z) { return_inexact_double_op_no_cps(data, ptr, log, z); }
+static void __lambda_10(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, log, z); }
+static void __lambda_9(void *data, int argc, closure _,object k_7310, object z1_732, object z2_731_raw, ...) {
 load_varargs(z2_731, z2_731_raw, argc - 2);
   Cyc_st_add(data, "scheme/inexact.sld:log");
 if( (boolean_f != Cyc_is_null(z2_731)) ){ 
-  return_closcall2(data,  __glo_c_91log_scheme_inexact,  k_7310, z1_732);
+  
+common_type local_7340; object c_7341 = ((inline_function_type)
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_7340,z1_732);
+return_closcall1(data,  k_7310,  c_7341);
 } else { 
   
-closureN_type c_7341;
-c_7341.hdr.mark = gc_color_red;
- c_7341.hdr.grayed = 0;
-c_7341.tag = closureN_tag;
- c_7341.fn = (function_type)__lambda_10;
-c_7341.num_args = 1;
-c_7341.num_elements = 2;
-c_7341.elements = (object *)alloca(sizeof(object) * 2);
-c_7341.elements[0] = k_7310;
-c_7341.elements[1] = z2_731;
+common_type local_7349; object c_7350 = ((inline_function_type)
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_7349,z1_732);
 
-return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7341, z1_732);}
+common_type local_7353; object c_7354 = ((inline_function_type)
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_7353,Cyc_car(data, z2_731));
+
+common_type local_7345; object c_7346 = Cyc_fast_div(data,&local_7345,c_7350, c_7354);
+return_closcall1(data,  k_7310,  c_7346);}
 ; 
-}
-
-static void __lambda_10(void *data, int argc, object self_7319, object r_7313) {
-  
-closureN_type c_7343;
-c_7343.hdr.mark = gc_color_red;
- c_7343.hdr.grayed = 0;
-c_7343.tag = closureN_tag;
- c_7343.fn = (function_type)__lambda_9;
-c_7343.num_args = 1;
-c_7343.num_elements = 2;
-c_7343.elements = (object *)alloca(sizeof(object) * 2);
-c_7343.elements[0] = ((closureN)self_7319)->elements[0];
-c_7343.elements[1] = r_7313;
-
-return_closcall2(data,  __glo_c_91log_scheme_inexact,  &c_7343, Cyc_car(data, ((closureN)self_7319)->elements[1]));; 
-}
-
-static void __lambda_9(void *data, int argc, object self_7320, object r_7314) {
-  
-common_type local_7348; object c_7349 = Cyc_fast_div(data,&local_7348,((closureN)self_7320)->elements[1], r_7314);
-return_closcall1(data,  ((closureN)self_7320)->elements[0],  c_7349);; 
 }
 
 static void __lambda_8(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, exp, z); }
@@ -160,24 +141,24 @@ static void __lambda_4(void *data, int argc, closure _, object k, object z) { re
 static void __lambda_3(void *data, int argc, closure _,object k_7317, object z_734) {
   Cyc_st_add(data, "scheme/inexact.sld:finite?");
 
-closureN_type c_7326;
-c_7326.hdr.mark = gc_color_red;
- c_7326.hdr.grayed = 0;
-c_7326.tag = closureN_tag;
- c_7326.fn = (function_type)__lambda_2;
-c_7326.num_args = 1;
-c_7326.num_elements = 1;
-c_7326.elements = (object *)alloca(sizeof(object) * 1);
-c_7326.elements[0] = k_7317;
+closureN_type c_7324;
+c_7324.hdr.mark = gc_color_red;
+ c_7324.hdr.grayed = 0;
+c_7324.tag = closureN_tag;
+ c_7324.fn = (function_type)__lambda_2;
+c_7324.num_args = 1;
+c_7324.num_elements = 1;
+c_7324.elements = (object *)alloca(sizeof(object) * 1);
+c_7324.elements[0] = k_7317;
 
-return_closcall2(data,  __glo_infinite_127_scheme_inexact,  &c_7326, z_734);; 
+return_closcall2(data,  __glo_infinite_127_scheme_inexact,  &c_7324, z_734);; 
 }
 
-static void __lambda_2(void *data, int argc, object self_7321, object r_7318) {
+static void __lambda_2(void *data, int argc, object self_7319, object r_7318) {
   if( (boolean_f != r_7318) ){ 
-  return_closcall1(data,  ((closureN)self_7321)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_7319)->elements[0],  boolean_f);
 } else { 
-  return_closcall1(data,  ((closureN)self_7321)->elements[0],  boolean_t);}
+  return_closcall1(data,  ((closureN)self_7319)->elements[0],  boolean_t);}
 ; 
 }
 
@@ -199,13 +180,22 @@ static void __lambda_0(void *data, int argc, closure _, object k, object z) { Cy
           return_closcall1(data, k, boolean_f);
         }
         return_closcall1(data, k, boolean_t); }
+void c_schemeinexact_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+  make_cvar(cvar_7365, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_7366, find_or_add_symbol("sin__inline__"), &cvar_7365);
+  make_cvar(cvar_7367, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_7368, find_or_add_symbol("c-log__inline__"), &cvar_7367);
+make_pair(c_7369, &pair_7366, NULL);
+make_pair(c_7370, &pair_7368, &c_7369);
+(((closure)cont)->fn)(data, 1, cont, &c_7370);
+ } 
 void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeinexact_scheme_inexact);
   add_global((object *) &__glo_tan_scheme_inexact);
   add_global((object *) &__glo_sqrt_scheme_inexact);
   add_global((object *) &__glo_sin_scheme_inexact);
+  add_global((object *) &__glo_sin_191_191inline_191_191_scheme_inexact);
   add_global((object *) &__glo_c_91log_scheme_inexact);
+  add_global((object *) &__glo_c_91log_191_191inline_191_191_scheme_inexact);
   add_global((object *) &__glo_log_scheme_inexact);
   add_global((object *) &__glo_exp_scheme_inexact);
   add_global((object *) &__glo_cos_scheme_inexact);
@@ -215,64 +205,74 @@ void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; i
   add_global((object *) &__glo_finite_127_scheme_inexact);
   add_global((object *) &__glo_infinite_127_scheme_inexact);
   add_global((object *) &__glo_nan_127_scheme_inexact);
-  mclosure0(c_7358, (function_type)__lambda_16);c_7358.num_args = 0; 
-  __glo_lib_91init_117schemeinexact_scheme_inexact = &c_7358; 
-  mclosure0(c_7357, (function_type)__lambda_15);c_7357.num_args = 1; 
-  __glo_tan_scheme_inexact = &c_7357; 
-  mclosure0(c_7356, (function_type)__lambda_14);c_7356.num_args = 1; 
-  __glo_sqrt_scheme_inexact = &c_7356; 
-  mclosure0(c_7355, (function_type)__lambda_13);c_7355.num_args = 1; 
-  __glo_sin_scheme_inexact = &c_7355; 
-  mclosure0(c_7354, (function_type)__lambda_12);c_7354.num_args = 1; 
-  __glo_c_91log_scheme_inexact = &c_7354; 
-  mclosure0(c_7336, (function_type)__lambda_11);c_7336.num_args = 1; 
-  __glo_log_scheme_inexact = &c_7336; 
-  mclosure0(c_7335, (function_type)__lambda_8);c_7335.num_args = 1; 
-  __glo_exp_scheme_inexact = &c_7335; 
-  mclosure0(c_7334, (function_type)__lambda_7);c_7334.num_args = 1; 
-  __glo_cos_scheme_inexact = &c_7334; 
-  mclosure0(c_7333, (function_type)__lambda_6);c_7333.num_args = 1; 
-  __glo_atan_scheme_inexact = &c_7333; 
-  mclosure0(c_7332, (function_type)__lambda_5);c_7332.num_args = 1; 
-  __glo_asin_scheme_inexact = &c_7332; 
-  mclosure0(c_7331, (function_type)__lambda_4);c_7331.num_args = 1; 
-  __glo_acos_scheme_inexact = &c_7331; 
-  mclosure0(c_7324, (function_type)__lambda_3);c_7324.num_args = 1; 
-  __glo_finite_127_scheme_inexact = &c_7324; 
-  mclosure0(c_7323, (function_type)__lambda_1);c_7323.num_args = 1; 
-  __glo_infinite_127_scheme_inexact = &c_7323; 
-  mclosure0(c_7322, (function_type)__lambda_0);c_7322.num_args = 1; 
-  __glo_nan_127_scheme_inexact = &c_7322; 
+  mclosure0(c_7363, (function_type)__lambda_16);c_7363.num_args = 0; 
+  __glo_lib_91init_117schemeinexact_scheme_inexact = &c_7363; 
+  mclosure0(c_7362, (function_type)__lambda_15);c_7362.num_args = 1; 
+  __glo_tan_scheme_inexact = &c_7362; 
+  mclosure0(c_7361, (function_type)__lambda_14);c_7361.num_args = 1; 
+  __glo_sqrt_scheme_inexact = &c_7361; 
+  mclosure0(c_7360, (function_type)__lambda_12);c_7360.num_args = 1; 
+  __glo_sin_scheme_inexact = &c_7360; 
+  mclosure0(c_7359, (function_type)__lambda_13);c_7359.num_args = -1; 
+  __glo_sin_191_191inline_191_191_scheme_inexact = &c_7359; 
+  mclosure0(c_7358, (function_type)__lambda_10);c_7358.num_args = 1; 
+  __glo_c_91log_scheme_inexact = &c_7358; 
+  mclosure0(c_7357, (function_type)__lambda_11);c_7357.num_args = -1; 
+  __glo_c_91log_191_191inline_191_191_scheme_inexact = &c_7357; 
+  mclosure0(c_7334, (function_type)__lambda_9);c_7334.num_args = 1; 
+  __glo_log_scheme_inexact = &c_7334; 
+  mclosure0(c_7333, (function_type)__lambda_8);c_7333.num_args = 1; 
+  __glo_exp_scheme_inexact = &c_7333; 
+  mclosure0(c_7332, (function_type)__lambda_7);c_7332.num_args = 1; 
+  __glo_cos_scheme_inexact = &c_7332; 
+  mclosure0(c_7331, (function_type)__lambda_6);c_7331.num_args = 1; 
+  __glo_atan_scheme_inexact = &c_7331; 
+  mclosure0(c_7330, (function_type)__lambda_5);c_7330.num_args = 1; 
+  __glo_asin_scheme_inexact = &c_7330; 
+  mclosure0(c_7329, (function_type)__lambda_4);c_7329.num_args = 1; 
+  __glo_acos_scheme_inexact = &c_7329; 
+  mclosure0(c_7322, (function_type)__lambda_3);c_7322.num_args = 1; 
+  __glo_finite_127_scheme_inexact = &c_7322; 
+  mclosure0(c_7321, (function_type)__lambda_1);c_7321.num_args = 1; 
+  __glo_infinite_127_scheme_inexact = &c_7321; 
+  mclosure0(c_7320, (function_type)__lambda_0);c_7320.num_args = 1; 
+  __glo_nan_127_scheme_inexact = &c_7320; 
 
-  make_cvar(cvar_7360, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_7361, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7360);
-  make_cvar(cvar_7362, (object *)&__glo_tan_scheme_inexact);make_pair(pair_7363, find_or_add_symbol("tan"), &cvar_7362);
-  make_cvar(cvar_7364, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_7365, find_or_add_symbol("sqrt"), &cvar_7364);
-  make_cvar(cvar_7366, (object *)&__glo_sin_scheme_inexact);make_pair(pair_7367, find_or_add_symbol("sin"), &cvar_7366);
-  make_cvar(cvar_7368, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_7369, find_or_add_symbol("c-log"), &cvar_7368);
-  make_cvar(cvar_7370, (object *)&__glo_log_scheme_inexact);make_pair(pair_7371, find_or_add_symbol("log"), &cvar_7370);
-  make_cvar(cvar_7372, (object *)&__glo_exp_scheme_inexact);make_pair(pair_7373, find_or_add_symbol("exp"), &cvar_7372);
-  make_cvar(cvar_7374, (object *)&__glo_cos_scheme_inexact);make_pair(pair_7375, find_or_add_symbol("cos"), &cvar_7374);
-  make_cvar(cvar_7376, (object *)&__glo_atan_scheme_inexact);make_pair(pair_7377, find_or_add_symbol("atan"), &cvar_7376);
-  make_cvar(cvar_7378, (object *)&__glo_asin_scheme_inexact);make_pair(pair_7379, find_or_add_symbol("asin"), &cvar_7378);
-  make_cvar(cvar_7380, (object *)&__glo_acos_scheme_inexact);make_pair(pair_7381, find_or_add_symbol("acos"), &cvar_7380);
-  make_cvar(cvar_7382, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_7383, find_or_add_symbol("finite?"), &cvar_7382);
-  make_cvar(cvar_7384, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_7385, find_or_add_symbol("infinite?"), &cvar_7384);
-  make_cvar(cvar_7386, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_7387, find_or_add_symbol("nan?"), &cvar_7386);
-make_pair(c_7388, &pair_7361,Cyc_global_variables);
-make_pair(c_7389, &pair_7363, &c_7388);
-make_pair(c_7390, &pair_7365, &c_7389);
-make_pair(c_7391, &pair_7367, &c_7390);
-make_pair(c_7392, &pair_7369, &c_7391);
-make_pair(c_7393, &pair_7371, &c_7392);
-make_pair(c_7394, &pair_7373, &c_7393);
-make_pair(c_7395, &pair_7375, &c_7394);
-make_pair(c_7396, &pair_7377, &c_7395);
-make_pair(c_7397, &pair_7379, &c_7396);
-make_pair(c_7398, &pair_7381, &c_7397);
-make_pair(c_7399, &pair_7383, &c_7398);
-make_pair(c_73100, &pair_7385, &c_7399);
-make_pair(c_73101, &pair_7387, &c_73100);
-Cyc_global_variables = &c_73101;
+  mclosure0(clo_7372, c_schemeinexact_inlinable_lambdas); make_pair(pair_7371, find_or_add_symbol("c_schemeinexact_inlinable_lambdas"), &clo_7372);
+  make_cvar(cvar_7373, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_7374, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7373);
+  make_cvar(cvar_7375, (object *)&__glo_tan_scheme_inexact);make_pair(pair_7376, find_or_add_symbol("tan"), &cvar_7375);
+  make_cvar(cvar_7377, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_7378, find_or_add_symbol("sqrt"), &cvar_7377);
+  make_cvar(cvar_7379, (object *)&__glo_sin_scheme_inexact);make_pair(pair_7380, find_or_add_symbol("sin"), &cvar_7379);
+  make_cvar(cvar_7381, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_7382, find_or_add_symbol("sin__inline__"), &cvar_7381);
+  make_cvar(cvar_7383, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_7384, find_or_add_symbol("c-log"), &cvar_7383);
+  make_cvar(cvar_7385, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_7386, find_or_add_symbol("c-log__inline__"), &cvar_7385);
+  make_cvar(cvar_7387, (object *)&__glo_log_scheme_inexact);make_pair(pair_7388, find_or_add_symbol("log"), &cvar_7387);
+  make_cvar(cvar_7389, (object *)&__glo_exp_scheme_inexact);make_pair(pair_7390, find_or_add_symbol("exp"), &cvar_7389);
+  make_cvar(cvar_7391, (object *)&__glo_cos_scheme_inexact);make_pair(pair_7392, find_or_add_symbol("cos"), &cvar_7391);
+  make_cvar(cvar_7393, (object *)&__glo_atan_scheme_inexact);make_pair(pair_7394, find_or_add_symbol("atan"), &cvar_7393);
+  make_cvar(cvar_7395, (object *)&__glo_asin_scheme_inexact);make_pair(pair_7396, find_or_add_symbol("asin"), &cvar_7395);
+  make_cvar(cvar_7397, (object *)&__glo_acos_scheme_inexact);make_pair(pair_7398, find_or_add_symbol("acos"), &cvar_7397);
+  make_cvar(cvar_7399, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_73100, find_or_add_symbol("finite?"), &cvar_7399);
+  make_cvar(cvar_73101, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73102, find_or_add_symbol("infinite?"), &cvar_73101);
+  make_cvar(cvar_73103, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73104, find_or_add_symbol("nan?"), &cvar_73103);
+make_pair(c_73105, &pair_7371,Cyc_global_variables);
+make_pair(c_73106, &pair_7374, &c_73105);
+make_pair(c_73107, &pair_7376, &c_73106);
+make_pair(c_73108, &pair_7378, &c_73107);
+make_pair(c_73109, &pair_7380, &c_73108);
+make_pair(c_73110, &pair_7382, &c_73109);
+make_pair(c_73111, &pair_7384, &c_73110);
+make_pair(c_73112, &pair_7386, &c_73111);
+make_pair(c_73113, &pair_7388, &c_73112);
+make_pair(c_73114, &pair_7390, &c_73113);
+make_pair(c_73115, &pair_7392, &c_73114);
+make_pair(c_73116, &pair_7394, &c_73115);
+make_pair(c_73117, &pair_7396, &c_73116);
+make_pair(c_73118, &pair_7398, &c_73117);
+make_pair(c_73119, &pair_73100, &c_73118);
+make_pair(c_73120, &pair_73102, &c_73119);
+make_pair(c_73121, &pair_73104, &c_73120);
+Cyc_global_variables = &c_73121;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }

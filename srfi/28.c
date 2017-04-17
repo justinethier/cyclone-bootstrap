@@ -670,6 +670,9 @@ static void __lambda_0(void *data, int argc, object self_7386, object r_7337) {
   return_closcall3(data,  cell_get(((closureN)self_7386)->elements[0]),  ((closureN)self_7386)->elements[1], r_7337, ((closureN)self_7386)->elements[2]);; 
 }
 
+void c_srfi28_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_srfi28_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117srfi28_srfi_28);
@@ -679,11 +682,13 @@ void c_srfi28_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc
   mclosure0(c_7387, (function_type)__lambda_18);c_7387.num_args = 1; 
   __glo_format_srfi_28 = &c_7387; 
 
-  make_cvar(cvar_73262, (object *)&__glo_lib_91init_117srfi28_srfi_28);make_pair(pair_73263, find_or_add_symbol("lib-init:srfi28"), &cvar_73262);
-  make_cvar(cvar_73264, (object *)&__glo_format_srfi_28);make_pair(pair_73265, find_or_add_symbol("format"), &cvar_73264);
-make_pair(c_73266, &pair_73263,Cyc_global_variables);
-make_pair(c_73267, &pair_73265, &c_73266);
-Cyc_global_variables = &c_73267;
+  mclosure0(clo_73263, c_srfi28_inlinable_lambdas); make_pair(pair_73262, find_or_add_symbol("c_srfi28_inlinable_lambdas"), &clo_73263);
+  make_cvar(cvar_73264, (object *)&__glo_lib_91init_117srfi28_srfi_28);make_pair(pair_73265, find_or_add_symbol("lib-init:srfi28"), &cvar_73264);
+  make_cvar(cvar_73266, (object *)&__glo_format_srfi_28);make_pair(pair_73267, find_or_add_symbol("format"), &cvar_73266);
+make_pair(c_73268, &pair_73262,Cyc_global_variables);
+make_pair(c_73269, &pair_73265, &c_73268);
+make_pair(c_73270, &pair_73267, &c_73269);
+Cyc_global_variables = &c_73270;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi28_srfi_28)->fn)(data, 1, cont, cont);
 }

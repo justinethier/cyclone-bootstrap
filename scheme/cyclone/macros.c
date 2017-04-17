@@ -1866,6 +1866,9 @@ static void __lambda_0(void *data, int argc, object self_73313, object r_73237) 
   return_closcall1(data,  ((closureN)self_73313)->elements[0],  boolean_t);; 
 }
 
+void c_schemecyclonemacros_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_set_67 = find_or_add_symbol("set!");
   quote_define = find_or_add_symbol("define");
@@ -1917,31 +1920,33 @@ void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *d
   __glo__85macro_117defined_91macros_85_scheme_cyclone_macros = boolean_f; 
   __glo__85macro_117env_85_scheme_cyclone_macros = boolean_f; 
 
-  make_cvar(cvar_73741, (object *)&__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);make_pair(pair_73742, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73741);
-  make_cvar(cvar_73743, (object *)&__glo_macro_117cleanup_scheme_cyclone_macros);make_pair(pair_73744, find_or_add_symbol("macro:cleanup"), &cvar_73743);
-  make_cvar(cvar_73745, (object *)&__glo_macro_117add_91renamed_91vars_67_scheme_cyclone_macros);make_pair(pair_73746, find_or_add_symbol("macro:add-renamed-vars!"), &cvar_73745);
-  make_cvar(cvar_73747, (object *)&__glo_macro_117expand_scheme_cyclone_macros);make_pair(pair_73748, find_or_add_symbol("macro:expand"), &cvar_73747);
-  make_cvar(cvar_73749, (object *)&__glo_macro_117macro_127_scheme_cyclone_macros);make_pair(pair_73750, find_or_add_symbol("macro:macro?"), &cvar_73749);
-  make_cvar(cvar_73751, (object *)&__glo_define_91syntax_127_scheme_cyclone_macros);make_pair(pair_73752, find_or_add_symbol("define-syntax?"), &cvar_73751);
-  make_cvar(cvar_73753, (object *)&__glo_macro_117get_91defined_91macros_scheme_cyclone_macros);make_pair(pair_73754, find_or_add_symbol("macro:get-defined-macros"), &cvar_73753);
-  make_cvar(cvar_73755, (object *)&__glo_macro_117get_91env_scheme_cyclone_macros);make_pair(pair_73756, find_or_add_symbol("macro:get-env"), &cvar_73755);
-  make_cvar(cvar_73757, (object *)&__glo_macro_117load_91env_67_scheme_cyclone_macros);make_pair(pair_73758, find_or_add_symbol("macro:load-env!"), &cvar_73757);
-  make_cvar(cvar_73759, (object *)&__glo_macro_117add_67_scheme_cyclone_macros);make_pair(pair_73760, find_or_add_symbol("macro:add!"), &cvar_73759);
-  make_cvar(cvar_73761, (object *)&__glo__85macro_117defined_91macros_85_scheme_cyclone_macros);make_pair(pair_73762, find_or_add_symbol("*macro:defined-macros*"), &cvar_73761);
-  make_cvar(cvar_73763, (object *)&__glo__85macro_117env_85_scheme_cyclone_macros);make_pair(pair_73764, find_or_add_symbol("*macro:env*"), &cvar_73763);
-make_pair(c_73765, &pair_73742,Cyc_global_variables);
-make_pair(c_73766, &pair_73744, &c_73765);
-make_pair(c_73767, &pair_73746, &c_73766);
-make_pair(c_73768, &pair_73748, &c_73767);
-make_pair(c_73769, &pair_73750, &c_73768);
-make_pair(c_73770, &pair_73752, &c_73769);
-make_pair(c_73771, &pair_73754, &c_73770);
-make_pair(c_73772, &pair_73756, &c_73771);
-make_pair(c_73773, &pair_73758, &c_73772);
-make_pair(c_73774, &pair_73760, &c_73773);
-make_pair(c_73775, &pair_73762, &c_73774);
-make_pair(c_73776, &pair_73764, &c_73775);
-Cyc_global_variables = &c_73776;
+  mclosure0(clo_73742, c_schemecyclonemacros_inlinable_lambdas); make_pair(pair_73741, find_or_add_symbol("c_schemecyclonemacros_inlinable_lambdas"), &clo_73742);
+  make_cvar(cvar_73743, (object *)&__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);make_pair(pair_73744, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_73743);
+  make_cvar(cvar_73745, (object *)&__glo_macro_117cleanup_scheme_cyclone_macros);make_pair(pair_73746, find_or_add_symbol("macro:cleanup"), &cvar_73745);
+  make_cvar(cvar_73747, (object *)&__glo_macro_117add_91renamed_91vars_67_scheme_cyclone_macros);make_pair(pair_73748, find_or_add_symbol("macro:add-renamed-vars!"), &cvar_73747);
+  make_cvar(cvar_73749, (object *)&__glo_macro_117expand_scheme_cyclone_macros);make_pair(pair_73750, find_or_add_symbol("macro:expand"), &cvar_73749);
+  make_cvar(cvar_73751, (object *)&__glo_macro_117macro_127_scheme_cyclone_macros);make_pair(pair_73752, find_or_add_symbol("macro:macro?"), &cvar_73751);
+  make_cvar(cvar_73753, (object *)&__glo_define_91syntax_127_scheme_cyclone_macros);make_pair(pair_73754, find_or_add_symbol("define-syntax?"), &cvar_73753);
+  make_cvar(cvar_73755, (object *)&__glo_macro_117get_91defined_91macros_scheme_cyclone_macros);make_pair(pair_73756, find_or_add_symbol("macro:get-defined-macros"), &cvar_73755);
+  make_cvar(cvar_73757, (object *)&__glo_macro_117get_91env_scheme_cyclone_macros);make_pair(pair_73758, find_or_add_symbol("macro:get-env"), &cvar_73757);
+  make_cvar(cvar_73759, (object *)&__glo_macro_117load_91env_67_scheme_cyclone_macros);make_pair(pair_73760, find_or_add_symbol("macro:load-env!"), &cvar_73759);
+  make_cvar(cvar_73761, (object *)&__glo_macro_117add_67_scheme_cyclone_macros);make_pair(pair_73762, find_or_add_symbol("macro:add!"), &cvar_73761);
+  make_cvar(cvar_73763, (object *)&__glo__85macro_117defined_91macros_85_scheme_cyclone_macros);make_pair(pair_73764, find_or_add_symbol("*macro:defined-macros*"), &cvar_73763);
+  make_cvar(cvar_73765, (object *)&__glo__85macro_117env_85_scheme_cyclone_macros);make_pair(pair_73766, find_or_add_symbol("*macro:env*"), &cvar_73765);
+make_pair(c_73767, &pair_73741,Cyc_global_variables);
+make_pair(c_73768, &pair_73744, &c_73767);
+make_pair(c_73769, &pair_73746, &c_73768);
+make_pair(c_73770, &pair_73748, &c_73769);
+make_pair(c_73771, &pair_73750, &c_73770);
+make_pair(c_73772, &pair_73752, &c_73771);
+make_pair(c_73773, &pair_73754, &c_73772);
+make_pair(c_73774, &pair_73756, &c_73773);
+make_pair(c_73775, &pair_73758, &c_73774);
+make_pair(c_73776, &pair_73760, &c_73775);
+make_pair(c_73777, &pair_73762, &c_73776);
+make_pair(c_73778, &pair_73764, &c_73777);
+make_pair(c_73779, &pair_73766, &c_73778);
+Cyc_global_variables = &c_73779;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);
 }

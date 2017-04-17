@@ -110,6 +110,9 @@ static void __lambda_0(void *data, int argc, closure _, object k) { int i;
           lis = pl;
         }
         return_closcall1(data, k, lis);  }
+void c_schemeprocess_91context_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);
@@ -127,17 +130,19 @@ void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) voi
   __glo_command_91line_scheme_process_91context = &c_737; 
   __glo_emergency_91exit_scheme_process_91context = boolean_f; 
 
-  make_cvar(cvar_7314, (object *)&__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);make_pair(pair_7315, find_or_add_symbol("lib-init:schemeprocess_91context"), &cvar_7314);
-  make_cvar(cvar_7316, (object *)&__glo_get_91environment_91variables_scheme_process_91context);make_pair(pair_7317, find_or_add_symbol("get-environment-variables"), &cvar_7316);
-  make_cvar(cvar_7318, (object *)&__glo_get_91environment_91variable_scheme_process_91context);make_pair(pair_7319, find_or_add_symbol("get-environment-variable"), &cvar_7318);
-  make_cvar(cvar_7320, (object *)&__glo_command_91line_scheme_process_91context);make_pair(pair_7321, find_or_add_symbol("command-line"), &cvar_7320);
-  make_cvar(cvar_7322, (object *)&__glo_emergency_91exit_scheme_process_91context);make_pair(pair_7323, find_or_add_symbol("emergency-exit"), &cvar_7322);
-make_pair(c_7324, &pair_7315,Cyc_global_variables);
-make_pair(c_7325, &pair_7317, &c_7324);
-make_pair(c_7326, &pair_7319, &c_7325);
-make_pair(c_7327, &pair_7321, &c_7326);
-make_pair(c_7328, &pair_7323, &c_7327);
-Cyc_global_variables = &c_7328;
+  mclosure0(clo_7315, c_schemeprocess_91context_inlinable_lambdas); make_pair(pair_7314, find_or_add_symbol("c_schemeprocess_91context_inlinable_lambdas"), &clo_7315);
+  make_cvar(cvar_7316, (object *)&__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);make_pair(pair_7317, find_or_add_symbol("lib-init:schemeprocess_91context"), &cvar_7316);
+  make_cvar(cvar_7318, (object *)&__glo_get_91environment_91variables_scheme_process_91context);make_pair(pair_7319, find_or_add_symbol("get-environment-variables"), &cvar_7318);
+  make_cvar(cvar_7320, (object *)&__glo_get_91environment_91variable_scheme_process_91context);make_pair(pair_7321, find_or_add_symbol("get-environment-variable"), &cvar_7320);
+  make_cvar(cvar_7322, (object *)&__glo_command_91line_scheme_process_91context);make_pair(pair_7323, find_or_add_symbol("command-line"), &cvar_7322);
+  make_cvar(cvar_7324, (object *)&__glo_emergency_91exit_scheme_process_91context);make_pair(pair_7325, find_or_add_symbol("emergency-exit"), &cvar_7324);
+make_pair(c_7326, &pair_7314,Cyc_global_variables);
+make_pair(c_7327, &pair_7317, &c_7326);
+make_pair(c_7328, &pair_7319, &c_7327);
+make_pair(c_7329, &pair_7321, &c_7328);
+make_pair(c_7330, &pair_7323, &c_7329);
+make_pair(c_7331, &pair_7325, &c_7330);
+Cyc_global_variables = &c_7331;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, 1, cont, cont);
 }

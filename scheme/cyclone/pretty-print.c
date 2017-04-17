@@ -7067,6 +7067,9 @@ static void __lambda_0(void *data, int argc, object self_73960, object r_73410) 
   return_closcall3(data,  cell_get(((closureN)self_73960)->elements[1]),  ((closureN)self_73960)->elements[0], __glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print, r_73410);; 
 }
 
+void c_schemecyclonepretty_91print_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_unquote_91splicing = find_or_add_symbol("unquote-splicing");
   quote_unquote = find_or_add_symbol("unquote");
@@ -7124,23 +7127,25 @@ void c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value)
   __glo_pp_91width_scheme_cyclone_pretty_91print = obj_int2obj(80); 
   __glo_pretty_91print_scheme_cyclone_pretty_91print = boolean_f; 
 
-  make_cvar(cvar_732965, (object *)&__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print);make_pair(pair_732966, find_or_add_symbol("lib-init:schemecyclonepretty_91print"), &cvar_732965);
-  make_cvar(cvar_732967, (object *)&__glo_spp_scheme_cyclone_pretty_91print);make_pair(pair_732968, find_or_add_symbol("spp"), &cvar_732967);
-  make_cvar(cvar_732969, (object *)&__glo_sexp_91pretty_91print_scheme_cyclone_pretty_91print);make_pair(pair_732970, find_or_add_symbol("sexp-pretty-print"), &cvar_732969);
-  make_cvar(cvar_732971, (object *)&__glo_reverse_91string_91append_scheme_cyclone_pretty_91print);make_pair(pair_732972, find_or_add_symbol("reverse-string-append"), &cvar_732971);
-  make_cvar(cvar_732973, (object *)&__glo_generic_91write_scheme_cyclone_pretty_91print);make_pair(pair_732974, find_or_add_symbol("generic-write"), &cvar_732973);
-  make_cvar(cvar_732975, (object *)&__glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print);make_pair(pair_732976, find_or_add_symbol("genwrite:newline-str"), &cvar_732975);
-  make_cvar(cvar_732977, (object *)&__glo_pp_91width_scheme_cyclone_pretty_91print);make_pair(pair_732978, find_or_add_symbol("pp-width"), &cvar_732977);
-  make_cvar(cvar_732979, (object *)&__glo_pretty_91print_scheme_cyclone_pretty_91print);make_pair(pair_732980, find_or_add_symbol("pretty-print"), &cvar_732979);
-make_pair(c_732981, &pair_732966,Cyc_global_variables);
-make_pair(c_732982, &pair_732968, &c_732981);
-make_pair(c_732983, &pair_732970, &c_732982);
-make_pair(c_732984, &pair_732972, &c_732983);
-make_pair(c_732985, &pair_732974, &c_732984);
-make_pair(c_732986, &pair_732976, &c_732985);
-make_pair(c_732987, &pair_732978, &c_732986);
-make_pair(c_732988, &pair_732980, &c_732987);
-Cyc_global_variables = &c_732988;
+  mclosure0(clo_732966, c_schemecyclonepretty_91print_inlinable_lambdas); make_pair(pair_732965, find_or_add_symbol("c_schemecyclonepretty_91print_inlinable_lambdas"), &clo_732966);
+  make_cvar(cvar_732967, (object *)&__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print);make_pair(pair_732968, find_or_add_symbol("lib-init:schemecyclonepretty_91print"), &cvar_732967);
+  make_cvar(cvar_732969, (object *)&__glo_spp_scheme_cyclone_pretty_91print);make_pair(pair_732970, find_or_add_symbol("spp"), &cvar_732969);
+  make_cvar(cvar_732971, (object *)&__glo_sexp_91pretty_91print_scheme_cyclone_pretty_91print);make_pair(pair_732972, find_or_add_symbol("sexp-pretty-print"), &cvar_732971);
+  make_cvar(cvar_732973, (object *)&__glo_reverse_91string_91append_scheme_cyclone_pretty_91print);make_pair(pair_732974, find_or_add_symbol("reverse-string-append"), &cvar_732973);
+  make_cvar(cvar_732975, (object *)&__glo_generic_91write_scheme_cyclone_pretty_91print);make_pair(pair_732976, find_or_add_symbol("generic-write"), &cvar_732975);
+  make_cvar(cvar_732977, (object *)&__glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print);make_pair(pair_732978, find_or_add_symbol("genwrite:newline-str"), &cvar_732977);
+  make_cvar(cvar_732979, (object *)&__glo_pp_91width_scheme_cyclone_pretty_91print);make_pair(pair_732980, find_or_add_symbol("pp-width"), &cvar_732979);
+  make_cvar(cvar_732981, (object *)&__glo_pretty_91print_scheme_cyclone_pretty_91print);make_pair(pair_732982, find_or_add_symbol("pretty-print"), &cvar_732981);
+make_pair(c_732983, &pair_732965,Cyc_global_variables);
+make_pair(c_732984, &pair_732968, &c_732983);
+make_pair(c_732985, &pair_732970, &c_732984);
+make_pair(c_732986, &pair_732972, &c_732985);
+make_pair(c_732987, &pair_732974, &c_732986);
+make_pair(c_732988, &pair_732976, &c_732987);
+make_pair(c_732989, &pair_732978, &c_732988);
+make_pair(c_732990, &pair_732980, &c_732989);
+make_pair(c_732991, &pair_732982, &c_732990);
+Cyc_global_variables = &c_732991;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print)->fn)(data, 1, cont, cont);
 }

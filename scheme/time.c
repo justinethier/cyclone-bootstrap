@@ -250,6 +250,9 @@ static void __lambda_0(void *data, int argc, closure _, object k) { make_double(
         time_t t = time(NULL);
         double_value(&box) = t;
         return_closcall1(data, k, &box);  }
+void c_schemetime_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemetime_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemetime_scheme_time);
@@ -265,15 +268,17 @@ void c_schemetime_entry_pt_first_lambda(data, argc, cont,value) void *data; int 
   mclosure0(c_734, (function_type)__lambda_0);c_734.num_args = 0; 
   __glo_current_91second_scheme_time = &c_734; 
 
-  make_cvar(cvar_739, (object *)&__glo_lib_91init_117schemetime_scheme_time);make_pair(pair_7310, find_or_add_symbol("lib-init:schemetime"), &cvar_739);
-  make_cvar(cvar_7311, (object *)&__glo_jiffies_91per_91second_scheme_time);make_pair(pair_7312, find_or_add_symbol("jiffies-per-second"), &cvar_7311);
-  make_cvar(cvar_7313, (object *)&__glo_current_91jiffy_scheme_time);make_pair(pair_7314, find_or_add_symbol("current-jiffy"), &cvar_7313);
-  make_cvar(cvar_7315, (object *)&__glo_current_91second_scheme_time);make_pair(pair_7316, find_or_add_symbol("current-second"), &cvar_7315);
-make_pair(c_7317, &pair_7310,Cyc_global_variables);
-make_pair(c_7318, &pair_7312, &c_7317);
-make_pair(c_7319, &pair_7314, &c_7318);
-make_pair(c_7320, &pair_7316, &c_7319);
-Cyc_global_variables = &c_7320;
+  mclosure0(clo_7310, c_schemetime_inlinable_lambdas); make_pair(pair_739, find_or_add_symbol("c_schemetime_inlinable_lambdas"), &clo_7310);
+  make_cvar(cvar_7311, (object *)&__glo_lib_91init_117schemetime_scheme_time);make_pair(pair_7312, find_or_add_symbol("lib-init:schemetime"), &cvar_7311);
+  make_cvar(cvar_7313, (object *)&__glo_jiffies_91per_91second_scheme_time);make_pair(pair_7314, find_or_add_symbol("jiffies-per-second"), &cvar_7313);
+  make_cvar(cvar_7315, (object *)&__glo_current_91jiffy_scheme_time);make_pair(pair_7316, find_or_add_symbol("current-jiffy"), &cvar_7315);
+  make_cvar(cvar_7317, (object *)&__glo_current_91second_scheme_time);make_pair(pair_7318, find_or_add_symbol("current-second"), &cvar_7317);
+make_pair(c_7319, &pair_739,Cyc_global_variables);
+make_pair(c_7320, &pair_7312, &c_7319);
+make_pair(c_7321, &pair_7314, &c_7320);
+make_pair(c_7322, &pair_7316, &c_7321);
+make_pair(c_7323, &pair_7318, &c_7322);
+Cyc_global_variables = &c_7323;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);
 }

@@ -327,6 +327,9 @@ object c_7330 = apply_va(data,  k_7314,2,__glo_eval_scheme_eval, &c_7333);
 return_closcall1(data,  k_7314,  c_7330);; 
 }
 
+void c_schemeload_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemeload_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemeload_scheme_load);
@@ -336,11 +339,13 @@ void c_schemeload_entry_pt_first_lambda(data, argc, cont,value) void *data; int 
   mclosure0(c_7321, (function_type)__lambda_3);c_7321.num_args = 1; 
   __glo_load_scheme_load = &c_7321; 
 
-  make_cvar(cvar_7339, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7340, find_or_add_symbol("lib-init:schemeload"), &cvar_7339);
-  make_cvar(cvar_7341, (object *)&__glo_load_scheme_load);make_pair(pair_7342, find_or_add_symbol("load"), &cvar_7341);
-make_pair(c_7343, &pair_7340,Cyc_global_variables);
-make_pair(c_7344, &pair_7342, &c_7343);
-Cyc_global_variables = &c_7344;
+  mclosure0(clo_7340, c_schemeload_inlinable_lambdas); make_pair(pair_7339, find_or_add_symbol("c_schemeload_inlinable_lambdas"), &clo_7340);
+  make_cvar(cvar_7341, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7342, find_or_add_symbol("lib-init:schemeload"), &cvar_7341);
+  make_cvar(cvar_7343, (object *)&__glo_load_scheme_load);make_pair(pair_7344, find_or_add_symbol("load"), &cvar_7343);
+make_pair(c_7345, &pair_7339,Cyc_global_variables);
+make_pair(c_7346, &pair_7342, &c_7345);
+make_pair(c_7347, &pair_7344, &c_7346);
+Cyc_global_variables = &c_7347;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
 }

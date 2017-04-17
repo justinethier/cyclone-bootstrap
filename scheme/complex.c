@@ -283,6 +283,9 @@ static void __lambda_0(void *data, int argc, closure _,object k_7329, object x_7
 return_closcall1(data,  k_7329,  x_738);; 
 }
 
+void c_schemecomplex_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+(((closure)cont)->fn)(data, 1, cont, NULL);
+ } 
 void c_schemecomplex_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemecomplex_scheme_complex);
@@ -307,21 +310,23 @@ void c_schemecomplex_entry_pt_first_lambda(data, argc, cont,value) void *data; i
   mclosure0(c_7330, (function_type)__lambda_0);c_7330.num_args = 1; 
   __glo_real_91part_scheme_complex = &c_7330; 
 
-  make_cvar(cvar_7348, (object *)&__glo_lib_91init_117schemecomplex_scheme_complex);make_pair(pair_7349, find_or_add_symbol("lib-init:schemecomplex"), &cvar_7348);
-  make_cvar(cvar_7350, (object *)&__glo_make_91polar_scheme_complex);make_pair(pair_7351, find_or_add_symbol("make-polar"), &cvar_7350);
-  make_cvar(cvar_7352, (object *)&__glo_make_91rectangular_scheme_complex);make_pair(pair_7353, find_or_add_symbol("make-rectangular"), &cvar_7352);
-  make_cvar(cvar_7354, (object *)&__glo_magnitude_scheme_complex);make_pair(pair_7355, find_or_add_symbol("magnitude"), &cvar_7354);
-  make_cvar(cvar_7356, (object *)&__glo_angle_scheme_complex);make_pair(pair_7357, find_or_add_symbol("angle"), &cvar_7356);
-  make_cvar(cvar_7358, (object *)&__glo_imag_91part_scheme_complex);make_pair(pair_7359, find_or_add_symbol("imag-part"), &cvar_7358);
-  make_cvar(cvar_7360, (object *)&__glo_real_91part_scheme_complex);make_pair(pair_7361, find_or_add_symbol("real-part"), &cvar_7360);
-make_pair(c_7362, &pair_7349,Cyc_global_variables);
-make_pair(c_7363, &pair_7351, &c_7362);
-make_pair(c_7364, &pair_7353, &c_7363);
-make_pair(c_7365, &pair_7355, &c_7364);
-make_pair(c_7366, &pair_7357, &c_7365);
-make_pair(c_7367, &pair_7359, &c_7366);
-make_pair(c_7368, &pair_7361, &c_7367);
-Cyc_global_variables = &c_7368;
+  mclosure0(clo_7349, c_schemecomplex_inlinable_lambdas); make_pair(pair_7348, find_or_add_symbol("c_schemecomplex_inlinable_lambdas"), &clo_7349);
+  make_cvar(cvar_7350, (object *)&__glo_lib_91init_117schemecomplex_scheme_complex);make_pair(pair_7351, find_or_add_symbol("lib-init:schemecomplex"), &cvar_7350);
+  make_cvar(cvar_7352, (object *)&__glo_make_91polar_scheme_complex);make_pair(pair_7353, find_or_add_symbol("make-polar"), &cvar_7352);
+  make_cvar(cvar_7354, (object *)&__glo_make_91rectangular_scheme_complex);make_pair(pair_7355, find_or_add_symbol("make-rectangular"), &cvar_7354);
+  make_cvar(cvar_7356, (object *)&__glo_magnitude_scheme_complex);make_pair(pair_7357, find_or_add_symbol("magnitude"), &cvar_7356);
+  make_cvar(cvar_7358, (object *)&__glo_angle_scheme_complex);make_pair(pair_7359, find_or_add_symbol("angle"), &cvar_7358);
+  make_cvar(cvar_7360, (object *)&__glo_imag_91part_scheme_complex);make_pair(pair_7361, find_or_add_symbol("imag-part"), &cvar_7360);
+  make_cvar(cvar_7362, (object *)&__glo_real_91part_scheme_complex);make_pair(pair_7363, find_or_add_symbol("real-part"), &cvar_7362);
+make_pair(c_7364, &pair_7348,Cyc_global_variables);
+make_pair(c_7365, &pair_7351, &c_7364);
+make_pair(c_7366, &pair_7353, &c_7365);
+make_pair(c_7367, &pair_7355, &c_7366);
+make_pair(c_7368, &pair_7357, &c_7367);
+make_pair(c_7369, &pair_7359, &c_7368);
+make_pair(c_7370, &pair_7361, &c_7369);
+make_pair(c_7371, &pair_7363, &c_7370);
+Cyc_global_variables = &c_7371;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecomplex_scheme_complex)->fn)(data, 1, cont, cont);
 }
