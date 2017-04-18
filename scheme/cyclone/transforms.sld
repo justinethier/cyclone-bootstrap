@@ -1247,11 +1247,9 @@
         (scan (if->else expr) fail))
        ((app? expr)
         (let ((fnc (car expr)))
-              ;(inline-fnc (prim:func->prim (car expr) (- (length expr) 1))))
           ;; If function needs CPS, fail right away
           (if (or (not (prim? fnc)) ;; Eventually need to handle user functions, too
                   (prim:cont? fnc) ;; Needs CPS
-                  ;(equal? fnc inline-fnc) ;; No inline version
               )
               (fail))
           ;; Otherwise, check for valid args
