@@ -1172,7 +1172,7 @@ static void __lambda_498(void *data, int argc, object self_732545, object r_7314
 static void __lambda_497(void *data, int argc, closure _,object k_731418, object sym_73608) ;
 static void __lambda_496(void *data, int argc, object self_732546, object r_731419) ;
 static void __lambda_495(void *data, int argc, object self_732547, object r_731420) ;
-static void __lambda_494(void *data, int argc, closure _,object k_731425, object exp_73613, object append_91preamble_73612, object cont_73611, object trace_73610, object inline_127_73609_raw, ...) ;
+static void __lambda_494(void *data, int argc, closure _,object k_731425, object exp_73613, object append_91preamble_73612, object cont_73611, object trace_73610, object cps_127_73609_raw, ...) ;
 static void __lambda_493(void *data, int argc, object self_732548, object precompiled_91sym_73614) ;
 static void __lambda_492(void *data, int argc, object self_732549, object r_731460) ;
 static void __lambda_491(void *data, int argc, object self_732550, object r_731462) ;
@@ -9137,8 +9137,8 @@ static void __lambda_495(void *data, int argc, object self_732547, object r_7314
   return_closcall1(data,  ((closureN)self_732547)->elements[0],  global_set(__glo__85symbols_85_scheme_cyclone_cgen, r_731420));; 
 }
 
-static void __lambda_494(void *data, int argc, closure _,object k_731425, object exp_73613, object append_91preamble_73612, object cont_73611, object trace_73610, object inline_127_73609_raw, ...) {
-load_varargs(inline_127_73609, inline_127_73609_raw, argc - 5);
+static void __lambda_494(void *data, int argc, closure _,object k_731425, object exp_73613, object append_91preamble_73612, object cont_73611, object trace_73610, object cps_127_73609_raw, ...) {
+load_varargs(cps_127_73609, cps_127_73609_raw, argc - 5);
   Cyc_st_add(data, "scheme/cyclone/cgen.sld:c-compile-raw-global-lambda");
 
 closureN_type c_735650;
@@ -9149,7 +9149,7 @@ c_735650.tag = closureN_tag;
 c_735650.num_args = 0;
 c_735650.num_elements = 1;
 c_735650.elements = (object *)alloca(sizeof(object) * 1);
-c_735650.elements[0] = inline_127_73609;
+c_735650.elements[0] = cps_127_73609;
 
 
 closureN_type c_735657;
@@ -9696,11 +9696,11 @@ static void __lambda_467(void *data, int argc, object self_732574, object r_7314
 make_pair(c_735692,((closureN)self_732574)->elements[3], Cyc_cddddr(data, ((closureN)self_732574)->elements[2]));
 
 make_pair(c_735689,quote_define_91c, &c_735692);
-return_closcall6(data,  __glo_c_91compile_91raw_91global_91lambda_scheme_cyclone_cgen,  ((closureN)self_732574)->elements[4], &c_735689, ((closureN)self_732574)->elements[0], ((closureN)self_732574)->elements[1], ((closureN)self_732574)->elements[5], boolean_t);; 
+return_closcall6(data,  __glo_c_91compile_91raw_91global_91lambda_scheme_cyclone_cgen,  ((closureN)self_732574)->elements[4], &c_735689, ((closureN)self_732574)->elements[0], ((closureN)self_732574)->elements[1], ((closureN)self_732574)->elements[5], boolean_f);; 
 }
 
 static void __lambda_466(void *data, int argc, object self_732575, object k_731464) {
-    make_pair(c_735654,boolean_t,NULL);
+    make_pair(c_735654,boolean_f,NULL);
 if( (boolean_f != equalp(((closureN)self_732575)->elements[0], &c_735654)) ){ 
   return_closcall1(data,  k_731464,  quote_precompiled_91inline_91lambda);
 } else { 
