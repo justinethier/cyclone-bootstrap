@@ -1234,7 +1234,6 @@
 ;; Determine if the given top-level function can be freed from CPS, due
 ;; to it only containing calls to code that itself can be inlined.
 (define (inlinable-top-level-function? expr)
-   (define this-fnc-sym (define->var expr))
    (define (scan expr fail)
      (cond
        ((string? expr) (fail))
@@ -1247,11 +1246,9 @@
         (scan (if->else expr) fail))
        ((app? expr)
         (let ((fnc (car expr)))
-              ;(inline-fnc (prim:func->prim (car expr) (- (length expr) 1))))
           ;; If function needs CPS, fail right away
           (if (or (not (prim? fnc)) ;; Eventually need to handle user functions, too
                   (prim:cont? fnc) ;; Needs CPS
-                  ;(equal? fnc inline-fnc) ;; No inline version
               )
               (fail))
           ;; Otherwise, check for valid args
