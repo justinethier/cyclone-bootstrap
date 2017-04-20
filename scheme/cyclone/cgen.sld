@@ -286,7 +286,7 @@
   (let* ((preamble "")
          (append-preamble (lambda (s)
                             (set! preamble (string-append preamble "  " s "\n"))))
-         (body (c-compile-exp exp append-preamble "cont" (list src-file))))
+         (body (c-compile-exp exp append-preamble "cont" (list src-file) #t)))
     ;(write `(DEBUG ,body))
     (string-append 
      preamble 
@@ -305,7 +305,13 @@
 ;; trace - trace information. presently a pair containing:
 ;;         * source file
 ;;         * function name (or NULL if none)
-(define (c-compile-exp exp append-preamble cont trace)
+;; cps? - Determine whether to compile using continuation passing style.
+;;        Normally this is always enabled, but sometimes a function has a
+;;        version that can be inlined (as an optimization), so this will 
+;;        be set to false to change the type of compilation.
+;;        NOTE: this field is not passed everywhere because a lot of forms
+;;              require CPS, so this flag is not applicable to them.
+(define (c-compile-exp exp append-preamble cont trace cps?)
   (cond
     ; Core forms:
     ((const? exp)       (c-compile-const exp))
@@ -314,7 +320,7 @@
      (c-code (string-append "primitive_" (mangle exp))))
     ((ref?   exp)       (c-compile-ref exp))
     ((quote? exp)       (c-compile-quote exp))
-    ((if? exp)          (c-compile-if exp append-preamble cont trace))
+    ((if? exp)          (c-compile-if exp append-preamble cont trace cps?))
 
     ; IR (2):
     ((tagged-list? '%closure exp)
@@ -328,10 +334,10 @@
     ((tagged-list? 'lambda exp)
      (c-compile-exp
       `(%closure ,exp)
-       append-preamble cont trace))
+       append-preamble cont trace #t))
     
     ; Application:      
-    ((app? exp)         (c-compile-app exp append-preamble cont trace))
+    ((app? exp)         (c-compile-app exp append-preamble cont trace cps?))
     (else               (error "unknown exp in c-compile-exp: " exp))))
 
 (define (c-compile-quote qexp)
@@ -654,7 +660,7 @@
       (mangle exp))))
 
 ; c-compile-args : list[exp] (string -> void) -> string
-(define (c-compile-args args append-preamble prefix cont trace)
+(define (c-compile-args args append-preamble prefix cont trace cps?)
   (letrec ((num-args 0)
          (_c-compile-args 
           (lambda (args append-preamble prefix cont)
@@ -667,7 +673,7 @@
               (c:append/prefix
                 prefix 
                 (c-compile-exp (car args) 
-                  append-preamble cont trace)
+                  append-preamble cont trace cps?)
                 (_c-compile-args (cdr args) 
                   append-preamble ", " cont)))))))
   (c:tuple/args
@@ -676,7 +682,7 @@
     num-args)))
 
 ;; c-compile-app : app-exp (string -> void) -> string
-(define (c-compile-app exp append-preamble cont trace)
+(define (c-compile-app exp append-preamble cont trace cps?)
   ;(trace:debug `(c-compile-app: ,exp))
   (let (($tmp (mangle (gensym 'tmp))))
     (let* ((args     (app->args exp))
@@ -692,7 +698,8 @@
                      append-preamble 
                      ""
                      this-cont
-                     trace))
+                     trace
+                     cps?))
                 (num-cargs (c:num-args cgen)))
            (set-c-call-arity! num-cargs)
            (c-code
@@ -707,7 +714,7 @@
          (let* ((c-fun 
                  (c-compile-prim fun cont))
                 (c-args
-                 (c-compile-args args append-preamble "" "" trace))
+                 (c-compile-args args append-preamble "" "" trace cps?))
                 (num-args (length args))
                 (num-args-str
                   (string-append 
@@ -755,9 +762,9 @@
 
         ;; TODO: may not be good enough, closure app could be from an element
         ((tagged-list? '%closure-ref fun)
-         (let* ((cfun (c-compile-args (list (car args)) append-preamble "  " cont trace))
+         (let* ((cfun (c-compile-args (list (car args)) append-preamble "  " cont trace cps?))
                 (this-cont (c:body cfun))
-                (cargs (c-compile-args (cdr args) append-preamble "  " this-cont trace)))
+                (cargs (c-compile-args (cdr args) append-preamble "  " this-cont trace cps?)))
            (set-c-call-arity! (c:num-args cargs))
            (c-code 
              (string-append
@@ -775,7 +782,7 @@
                         fun append-preamble cont trace))
                 (this-cont (string-append "(closure)" (c:body cfun)))
                 (cargs (c-compile-args
-                         args append-preamble "  " this-cont trace))
+                         args append-preamble "  " this-cont trace cps?))
                 (num-cargs (c:num-args cargs)))
            (set-c-call-arity! num-cargs)
            (c-code
@@ -793,9 +800,9 @@
          (error `(Unsupported function application ,exp)))))))
 
 ; c-compile-if : if-exp -> string
-(define (c-compile-if exp append-preamble cont trace)
+(define (c-compile-if exp append-preamble cont trace cps?)
   (let* ((compile (lambda (exp)
-                    (c-compile-exp exp append-preamble cont trace)))
+                    (c-compile-exp exp append-preamble cont trace cps?)))
          (test (compile (if->condition exp)))
          (then (compile (if->then exp)))
          (els (compile (if->else exp))))
@@ -841,7 +848,7 @@
      (lambda? body) 
      (c-compile-exp 
       body append-preamble cont
-      (st:add-function! trace var)))
+      (st:add-function! trace var) #t))
 
    ;; Add inline global definition also, if applicable
 ;   (trace:error `(JAE DEBUG ,var 
@@ -858,7 +865,7 @@
 ;;         (c-compile-exp 
 ;;          body append-preamble cont
 ;;          (st:add-function! trace var)
-;;          #t ;; inline --> requires passing new param everywhere, though
+;;          #f ;; inline, so disable CPS on this pass
 ;;         )
 ;        ))
 
@@ -1142,7 +1149,8 @@
                         (car (lambda->exp exp)) ;; car ==> assume single expr in lambda body after CPS
                         append-preamble
                         (mangle env-closure)
-                        trace)))
+                        trace 
+                        #t)))
      (cons 
       (lambda (name)
         (string-append "static void " name 
