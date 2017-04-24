@@ -181,11 +181,11 @@ static void __lambda_0(void *data, int argc, closure _, object k, object z) { Cy
         }
         return_closcall1(data, k, boolean_t); }
 void c_schemeinexact_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-  make_cvar(cvar_7365, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_7366, find_or_add_symbol("sin__inline__"), &cvar_7365);
-  make_cvar(cvar_7367, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_7368, find_or_add_symbol("c-log__inline__"), &cvar_7367);
-make_pair(c_7369, &pair_7366, NULL);
-make_pair(c_7370, &pair_7368, &c_7369);
-(((closure)cont)->fn)(data, 1, cont, &c_7370);
+make_pair(pair_7365, find_or_add_symbol("sin"), find_or_add_symbol("sin__inline__"));
+make_pair(pair_7366, find_or_add_symbol("c-log"), find_or_add_symbol("c-log__inline__"));
+make_pair(c_7367, &pair_7365, NULL);
+make_pair(c_7368, &pair_7366, &c_7367);
+(((closure)cont)->fn)(data, 1, cont, &c_7368);
  } 
 void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
@@ -238,41 +238,41 @@ void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; i
   mclosure0(c_7320, (function_type)__lambda_0);c_7320.num_args = 1; 
   __glo_nan_127_scheme_inexact = &c_7320; 
 
-  mclosure0(clo_7372, c_schemeinexact_inlinable_lambdas); make_pair(pair_7371, find_or_add_symbol("c_schemeinexact_inlinable_lambdas"), &clo_7372);
-  make_cvar(cvar_7373, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_7374, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7373);
-  make_cvar(cvar_7375, (object *)&__glo_tan_scheme_inexact);make_pair(pair_7376, find_or_add_symbol("tan"), &cvar_7375);
-  make_cvar(cvar_7377, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_7378, find_or_add_symbol("sqrt"), &cvar_7377);
-  make_cvar(cvar_7379, (object *)&__glo_sin_scheme_inexact);make_pair(pair_7380, find_or_add_symbol("sin"), &cvar_7379);
-  make_cvar(cvar_7381, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_7382, find_or_add_symbol("sin__inline__"), &cvar_7381);
-  make_cvar(cvar_7383, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_7384, find_or_add_symbol("c-log"), &cvar_7383);
-  make_cvar(cvar_7385, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_7386, find_or_add_symbol("c-log__inline__"), &cvar_7385);
-  make_cvar(cvar_7387, (object *)&__glo_log_scheme_inexact);make_pair(pair_7388, find_or_add_symbol("log"), &cvar_7387);
-  make_cvar(cvar_7389, (object *)&__glo_exp_scheme_inexact);make_pair(pair_7390, find_or_add_symbol("exp"), &cvar_7389);
-  make_cvar(cvar_7391, (object *)&__glo_cos_scheme_inexact);make_pair(pair_7392, find_or_add_symbol("cos"), &cvar_7391);
-  make_cvar(cvar_7393, (object *)&__glo_atan_scheme_inexact);make_pair(pair_7394, find_or_add_symbol("atan"), &cvar_7393);
-  make_cvar(cvar_7395, (object *)&__glo_asin_scheme_inexact);make_pair(pair_7396, find_or_add_symbol("asin"), &cvar_7395);
-  make_cvar(cvar_7397, (object *)&__glo_acos_scheme_inexact);make_pair(pair_7398, find_or_add_symbol("acos"), &cvar_7397);
-  make_cvar(cvar_7399, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_73100, find_or_add_symbol("finite?"), &cvar_7399);
-  make_cvar(cvar_73101, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73102, find_or_add_symbol("infinite?"), &cvar_73101);
-  make_cvar(cvar_73103, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73104, find_or_add_symbol("nan?"), &cvar_73103);
-make_pair(c_73105, &pair_7371,Cyc_global_variables);
-make_pair(c_73106, &pair_7374, &c_73105);
-make_pair(c_73107, &pair_7376, &c_73106);
-make_pair(c_73108, &pair_7378, &c_73107);
-make_pair(c_73109, &pair_7380, &c_73108);
-make_pair(c_73110, &pair_7382, &c_73109);
-make_pair(c_73111, &pair_7384, &c_73110);
-make_pair(c_73112, &pair_7386, &c_73111);
-make_pair(c_73113, &pair_7388, &c_73112);
-make_pair(c_73114, &pair_7390, &c_73113);
-make_pair(c_73115, &pair_7392, &c_73114);
-make_pair(c_73116, &pair_7394, &c_73115);
-make_pair(c_73117, &pair_7396, &c_73116);
-make_pair(c_73118, &pair_7398, &c_73117);
-make_pair(c_73119, &pair_73100, &c_73118);
-make_pair(c_73120, &pair_73102, &c_73119);
-make_pair(c_73121, &pair_73104, &c_73120);
-Cyc_global_variables = &c_73121;
+  mclosure0(clo_7370, c_schemeinexact_inlinable_lambdas); make_pair(pair_7369, find_or_add_symbol("c_schemeinexact_inlinable_lambdas"), &clo_7370);
+  make_cvar(cvar_7371, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_7372, find_or_add_symbol("lib-init:schemeinexact"), &cvar_7371);
+  make_cvar(cvar_7373, (object *)&__glo_tan_scheme_inexact);make_pair(pair_7374, find_or_add_symbol("tan"), &cvar_7373);
+  make_cvar(cvar_7375, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_7376, find_or_add_symbol("sqrt"), &cvar_7375);
+  make_cvar(cvar_7377, (object *)&__glo_sin_scheme_inexact);make_pair(pair_7378, find_or_add_symbol("sin"), &cvar_7377);
+  make_cvar(cvar_7379, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_7380, find_or_add_symbol("sin__inline__"), &cvar_7379);
+  make_cvar(cvar_7381, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_7382, find_or_add_symbol("c-log"), &cvar_7381);
+  make_cvar(cvar_7383, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_7384, find_or_add_symbol("c-log__inline__"), &cvar_7383);
+  make_cvar(cvar_7385, (object *)&__glo_log_scheme_inexact);make_pair(pair_7386, find_or_add_symbol("log"), &cvar_7385);
+  make_cvar(cvar_7387, (object *)&__glo_exp_scheme_inexact);make_pair(pair_7388, find_or_add_symbol("exp"), &cvar_7387);
+  make_cvar(cvar_7389, (object *)&__glo_cos_scheme_inexact);make_pair(pair_7390, find_or_add_symbol("cos"), &cvar_7389);
+  make_cvar(cvar_7391, (object *)&__glo_atan_scheme_inexact);make_pair(pair_7392, find_or_add_symbol("atan"), &cvar_7391);
+  make_cvar(cvar_7393, (object *)&__glo_asin_scheme_inexact);make_pair(pair_7394, find_or_add_symbol("asin"), &cvar_7393);
+  make_cvar(cvar_7395, (object *)&__glo_acos_scheme_inexact);make_pair(pair_7396, find_or_add_symbol("acos"), &cvar_7395);
+  make_cvar(cvar_7397, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_7398, find_or_add_symbol("finite?"), &cvar_7397);
+  make_cvar(cvar_7399, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73100, find_or_add_symbol("infinite?"), &cvar_7399);
+  make_cvar(cvar_73101, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73102, find_or_add_symbol("nan?"), &cvar_73101);
+make_pair(c_73103, &pair_7369,Cyc_global_variables);
+make_pair(c_73104, &pair_7372, &c_73103);
+make_pair(c_73105, &pair_7374, &c_73104);
+make_pair(c_73106, &pair_7376, &c_73105);
+make_pair(c_73107, &pair_7378, &c_73106);
+make_pair(c_73108, &pair_7380, &c_73107);
+make_pair(c_73109, &pair_7382, &c_73108);
+make_pair(c_73110, &pair_7384, &c_73109);
+make_pair(c_73111, &pair_7386, &c_73110);
+make_pair(c_73112, &pair_7388, &c_73111);
+make_pair(c_73113, &pair_7390, &c_73112);
+make_pair(c_73114, &pair_7392, &c_73113);
+make_pair(c_73115, &pair_7394, &c_73114);
+make_pair(c_73116, &pair_7396, &c_73115);
+make_pair(c_73117, &pair_7398, &c_73116);
+make_pair(c_73118, &pair_73100, &c_73117);
+make_pair(c_73119, &pair_73102, &c_73118);
+Cyc_global_variables = &c_73119;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }
