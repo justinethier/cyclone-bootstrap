@@ -1883,7 +1883,9 @@ static void __lambda_0(void *data, int argc, object self_73465, object r_73406) 
 }
 
 void c_srfi9_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-(((closure)cont)->fn)(data, 1, cont, NULL);
+  make_cvar(cvar_731228, (object *)&__glo_record_127_191_191inline_191_191_srfi_9);make_pair(pair_731229, find_or_add_symbol("record?__inline__"), &cvar_731228);
+make_pair(c_731230, &pair_731229, NULL);
+(((closure)cont)->fn)(data, 1, cont, &c_731230);
  } 
 void c_srfi9_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
   quote_record_91marker = find_or_add_symbol("record-marker");
@@ -1956,35 +1958,35 @@ void c_srfi9_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc;
   __glo_register_91simple_91type_srfi_9 = &c_73466; 
   __glo_record_91marker_srfi_9 = boolean_f; 
 
-  mclosure0(clo_731229, c_srfi9_inlinable_lambdas); make_pair(pair_731228, find_or_add_symbol("c_srfi9_inlinable_lambdas"), &clo_731229);
-  make_cvar(cvar_731230, (object *)&__glo_lib_91init_117srfi9_srfi_9);make_pair(pair_731231, find_or_add_symbol("lib-init:srfi9"), &cvar_731230);
-  make_cvar(cvar_731232, (object *)&__glo_define_91record_91type_srfi_9);make_pair(pair_731233, find_or_add_symbol("define-record-type"), &cvar_731232);
-  make_cvar(cvar_731234, (object *)&__glo__191list_91index_srfi_9);make_pair(pair_731235, find_or_add_symbol("_list-index"), &cvar_731234);
-  make_cvar(cvar_731236, (object *)&__glo_record_127_191_191inline_191_191_srfi_9);make_pair(pair_731237, find_or_add_symbol("record?__inline__"), &cvar_731236);
-  make_cvar(cvar_731238, (object *)&__glo_record_127_srfi_9);make_pair(pair_731239, find_or_add_symbol("record?"), &cvar_731238);
-  make_cvar(cvar_731240, (object *)&__glo_make_91setter_srfi_9);make_pair(pair_731241, find_or_add_symbol("make-setter"), &cvar_731240);
-  make_cvar(cvar_731242, (object *)&__glo_make_91getter_srfi_9);make_pair(pair_731243, find_or_add_symbol("make-getter"), &cvar_731242);
-  make_cvar(cvar_731244, (object *)&__glo_slot_91set_67_srfi_9);make_pair(pair_731245, find_or_add_symbol("slot-set!"), &cvar_731244);
-  make_cvar(cvar_731246, (object *)&__glo_type_91slot_91offset_srfi_9);make_pair(pair_731247, find_or_add_symbol("type-slot-offset"), &cvar_731246);
-  make_cvar(cvar_731248, (object *)&__glo_make_91constructor_srfi_9);make_pair(pair_731249, find_or_add_symbol("make-constructor"), &cvar_731248);
-  make_cvar(cvar_731250, (object *)&__glo_make_91type_91predicate_srfi_9);make_pair(pair_731251, find_or_add_symbol("make-type-predicate"), &cvar_731250);
-  make_cvar(cvar_731252, (object *)&__glo_register_91simple_91type_srfi_9);make_pair(pair_731253, find_or_add_symbol("register-simple-type"), &cvar_731252);
-  make_cvar(cvar_731254, (object *)&__glo_record_91marker_srfi_9);make_pair(pair_731255, find_or_add_symbol("record-marker"), &cvar_731254);
-make_pair(c_731256, &pair_731228,Cyc_global_variables);
-make_pair(c_731257, &pair_731231, &c_731256);
-make_pair(c_731258, &pair_731233, &c_731257);
-make_pair(c_731259, &pair_731235, &c_731258);
-make_pair(c_731260, &pair_731237, &c_731259);
-make_pair(c_731261, &pair_731239, &c_731260);
-make_pair(c_731262, &pair_731241, &c_731261);
-make_pair(c_731263, &pair_731243, &c_731262);
-make_pair(c_731264, &pair_731245, &c_731263);
-make_pair(c_731265, &pair_731247, &c_731264);
-make_pair(c_731266, &pair_731249, &c_731265);
-make_pair(c_731267, &pair_731251, &c_731266);
-make_pair(c_731268, &pair_731253, &c_731267);
-make_pair(c_731269, &pair_731255, &c_731268);
-Cyc_global_variables = &c_731269;
+  mclosure0(clo_731232, c_srfi9_inlinable_lambdas); make_pair(pair_731231, find_or_add_symbol("c_srfi9_inlinable_lambdas"), &clo_731232);
+  make_cvar(cvar_731233, (object *)&__glo_lib_91init_117srfi9_srfi_9);make_pair(pair_731234, find_or_add_symbol("lib-init:srfi9"), &cvar_731233);
+  make_cvar(cvar_731235, (object *)&__glo_define_91record_91type_srfi_9);make_pair(pair_731236, find_or_add_symbol("define-record-type"), &cvar_731235);
+  make_cvar(cvar_731237, (object *)&__glo__191list_91index_srfi_9);make_pair(pair_731238, find_or_add_symbol("_list-index"), &cvar_731237);
+  make_cvar(cvar_731239, (object *)&__glo_record_127_191_191inline_191_191_srfi_9);make_pair(pair_731240, find_or_add_symbol("record?__inline__"), &cvar_731239);
+  make_cvar(cvar_731241, (object *)&__glo_record_127_srfi_9);make_pair(pair_731242, find_or_add_symbol("record?"), &cvar_731241);
+  make_cvar(cvar_731243, (object *)&__glo_make_91setter_srfi_9);make_pair(pair_731244, find_or_add_symbol("make-setter"), &cvar_731243);
+  make_cvar(cvar_731245, (object *)&__glo_make_91getter_srfi_9);make_pair(pair_731246, find_or_add_symbol("make-getter"), &cvar_731245);
+  make_cvar(cvar_731247, (object *)&__glo_slot_91set_67_srfi_9);make_pair(pair_731248, find_or_add_symbol("slot-set!"), &cvar_731247);
+  make_cvar(cvar_731249, (object *)&__glo_type_91slot_91offset_srfi_9);make_pair(pair_731250, find_or_add_symbol("type-slot-offset"), &cvar_731249);
+  make_cvar(cvar_731251, (object *)&__glo_make_91constructor_srfi_9);make_pair(pair_731252, find_or_add_symbol("make-constructor"), &cvar_731251);
+  make_cvar(cvar_731253, (object *)&__glo_make_91type_91predicate_srfi_9);make_pair(pair_731254, find_or_add_symbol("make-type-predicate"), &cvar_731253);
+  make_cvar(cvar_731255, (object *)&__glo_register_91simple_91type_srfi_9);make_pair(pair_731256, find_or_add_symbol("register-simple-type"), &cvar_731255);
+  make_cvar(cvar_731257, (object *)&__glo_record_91marker_srfi_9);make_pair(pair_731258, find_or_add_symbol("record-marker"), &cvar_731257);
+make_pair(c_731259, &pair_731231,Cyc_global_variables);
+make_pair(c_731260, &pair_731234, &c_731259);
+make_pair(c_731261, &pair_731236, &c_731260);
+make_pair(c_731262, &pair_731238, &c_731261);
+make_pair(c_731263, &pair_731240, &c_731262);
+make_pair(c_731264, &pair_731242, &c_731263);
+make_pair(c_731265, &pair_731244, &c_731264);
+make_pair(c_731266, &pair_731246, &c_731265);
+make_pair(c_731267, &pair_731248, &c_731266);
+make_pair(c_731268, &pair_731250, &c_731267);
+make_pair(c_731269, &pair_731252, &c_731268);
+make_pair(c_731270, &pair_731254, &c_731269);
+make_pair(c_731271, &pair_731256, &c_731270);
+make_pair(c_731272, &pair_731258, &c_731271);
+Cyc_global_variables = &c_731272;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi9_srfi_9)->fn)(data, 1, cont, cont);
 }
