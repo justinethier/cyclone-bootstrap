@@ -67,6 +67,7 @@ if (type_is_pair_prim(clo)) { \
 
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemecxr_scheme_cxr = NULL;
+object __glo_caaaaar_191_191inline_191_191_scheme_cxr = NULL;
 object __glo_caaaaar_scheme_cxr = NULL;
 object __glo_cddddr_scheme_cxr = NULL;
 object __glo_cdddar_scheme_cxr = NULL;
@@ -97,7 +98,8 @@ object __glo_cdar_scheme_cxr = NULL;
 object __glo_cadr_scheme_cxr = NULL;
 object __glo_caar_scheme_cxr = NULL;
 #include "cyclone/runtime.h"
-static void __lambda_57(void *data, int argc, closure _,object k_7332) ;
+static void __lambda_58(void *data, int argc, closure _,object k_7332) ;
+static object __lambda_57(void *data, object ptr,object lis_731) ;
 static void __lambda_56(void *data, int argc, closure _,object k_7335, object lis_731) ;
 static void __lambda_55(void *data, int argc, closure _,object k_7342, object lis_732) ;
 static void __lambda_54(void *data, int argc, object self_73220, object r_7346) ;
@@ -156,9 +158,14 @@ static void __lambda_2(void *data, int argc, object self_73246, object r_73214) 
 static void __lambda_1(void *data, int argc, closure _,object k_73217, object lis_7329) ;
 static void __lambda_0(void *data, int argc, object self_73247, object r_73219) ;
 
-static void __lambda_57(void *data, int argc, closure _,object k_7332) {
+static void __lambda_58(void *data, int argc, closure _,object k_7332) {
   Cyc_st_add(data, "scheme/cxr.sld:lib-init:schemecxr");
 return_closcall1(data,  k_7332,  obj_int2obj(0));; 
+}
+
+static object __lambda_57(void *data, object ptr,object lis_731) {
+  Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
+return_copy(ptr,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_731))))));; 
 }
 
 static void __lambda_56(void *data, int argc, closure _,object k_7335, object lis_731) {
@@ -732,6 +739,7 @@ void c_schemecxr_inlinable_lambdas(void *data, int argc, closure _, object cont)
 void c_schemecxr_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 
   add_global((object *) &__glo_lib_91init_117schemecxr_scheme_cxr);
+  add_global((object *) &__glo_caaaaar_191_191inline_191_191_scheme_cxr);
   add_global((object *) &__glo_caaaaar_scheme_cxr);
   add_global((object *) &__glo_cddddr_scheme_cxr);
   add_global((object *) &__glo_cdddar_scheme_cxr);
@@ -761,8 +769,10 @@ void c_schemecxr_entry_pt_first_lambda(data, argc, cont,value) void *data; int a
   add_global((object *) &__glo_cdar_scheme_cxr);
   add_global((object *) &__glo_cadr_scheme_cxr);
   add_global((object *) &__glo_caar_scheme_cxr);
-  mclosure0(c_73592, (function_type)__lambda_57);c_73592.num_args = 0; 
-  __glo_lib_91init_117schemecxr_scheme_cxr = &c_73592; 
+  mclosure0(c_73604, (function_type)__lambda_58);c_73604.num_args = 0; 
+  __glo_lib_91init_117schemecxr_scheme_cxr = &c_73604; 
+  mclosure0(c_73592, (function_type)__lambda_57);c_73592.num_args = 1; 
+  __glo_caaaaar_191_191inline_191_191_scheme_cxr = &c_73592; 
   mclosure0(c_73580, (function_type)__lambda_56);c_73580.num_args = 1; 
   __glo_caaaaar_scheme_cxr = &c_73580; 
   mclosure0(c_73567, (function_type)__lambda_55);c_73567.num_args = 1; 
@@ -822,69 +832,71 @@ void c_schemecxr_entry_pt_first_lambda(data, argc, cont,value) void *data; int a
   mclosure0(c_73248, (function_type)__lambda_1);c_73248.num_args = 1; 
   __glo_caar_scheme_cxr = &c_73248; 
 
-  mclosure0(clo_73595, c_schemecxr_inlinable_lambdas); make_pair(pair_73594, find_or_add_symbol("c_schemecxr_inlinable_lambdas"), &clo_73595);
-  make_cvar(cvar_73596, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_pair(pair_73597, find_or_add_symbol("lib-init:schemecxr"), &cvar_73596);
-  make_cvar(cvar_73598, (object *)&__glo_caaaaar_scheme_cxr);make_pair(pair_73599, find_or_add_symbol("caaaaar"), &cvar_73598);
-  make_cvar(cvar_73600, (object *)&__glo_cddddr_scheme_cxr);make_pair(pair_73601, find_or_add_symbol("cddddr"), &cvar_73600);
-  make_cvar(cvar_73602, (object *)&__glo_cdddar_scheme_cxr);make_pair(pair_73603, find_or_add_symbol("cdddar"), &cvar_73602);
-  make_cvar(cvar_73604, (object *)&__glo_cddadr_scheme_cxr);make_pair(pair_73605, find_or_add_symbol("cddadr"), &cvar_73604);
-  make_cvar(cvar_73606, (object *)&__glo_cddaar_scheme_cxr);make_pair(pair_73607, find_or_add_symbol("cddaar"), &cvar_73606);
-  make_cvar(cvar_73608, (object *)&__glo_cdaddr_scheme_cxr);make_pair(pair_73609, find_or_add_symbol("cdaddr"), &cvar_73608);
-  make_cvar(cvar_73610, (object *)&__glo_cdadar_scheme_cxr);make_pair(pair_73611, find_or_add_symbol("cdadar"), &cvar_73610);
-  make_cvar(cvar_73612, (object *)&__glo_cdaadr_scheme_cxr);make_pair(pair_73613, find_or_add_symbol("cdaadr"), &cvar_73612);
-  make_cvar(cvar_73614, (object *)&__glo_cdaaar_scheme_cxr);make_pair(pair_73615, find_or_add_symbol("cdaaar"), &cvar_73614);
-  make_cvar(cvar_73616, (object *)&__glo_cadddr_scheme_cxr);make_pair(pair_73617, find_or_add_symbol("cadddr"), &cvar_73616);
-  make_cvar(cvar_73618, (object *)&__glo_caddar_scheme_cxr);make_pair(pair_73619, find_or_add_symbol("caddar"), &cvar_73618);
-  make_cvar(cvar_73620, (object *)&__glo_cadadr_scheme_cxr);make_pair(pair_73621, find_or_add_symbol("cadadr"), &cvar_73620);
-  make_cvar(cvar_73622, (object *)&__glo_cadaar_scheme_cxr);make_pair(pair_73623, find_or_add_symbol("cadaar"), &cvar_73622);
-  make_cvar(cvar_73624, (object *)&__glo_caaddr_scheme_cxr);make_pair(pair_73625, find_or_add_symbol("caaddr"), &cvar_73624);
-  make_cvar(cvar_73626, (object *)&__glo_caadar_scheme_cxr);make_pair(pair_73627, find_or_add_symbol("caadar"), &cvar_73626);
-  make_cvar(cvar_73628, (object *)&__glo_caaadr_scheme_cxr);make_pair(pair_73629, find_or_add_symbol("caaadr"), &cvar_73628);
-  make_cvar(cvar_73630, (object *)&__glo_caaaar_scheme_cxr);make_pair(pair_73631, find_or_add_symbol("caaaar"), &cvar_73630);
-  make_cvar(cvar_73632, (object *)&__glo_cdddr_scheme_cxr);make_pair(pair_73633, find_or_add_symbol("cdddr"), &cvar_73632);
-  make_cvar(cvar_73634, (object *)&__glo_cddar_scheme_cxr);make_pair(pair_73635, find_or_add_symbol("cddar"), &cvar_73634);
-  make_cvar(cvar_73636, (object *)&__glo_cdadr_scheme_cxr);make_pair(pair_73637, find_or_add_symbol("cdadr"), &cvar_73636);
-  make_cvar(cvar_73638, (object *)&__glo_cdaar_scheme_cxr);make_pair(pair_73639, find_or_add_symbol("cdaar"), &cvar_73638);
-  make_cvar(cvar_73640, (object *)&__glo_caddr_scheme_cxr);make_pair(pair_73641, find_or_add_symbol("caddr"), &cvar_73640);
-  make_cvar(cvar_73642, (object *)&__glo_cadar_scheme_cxr);make_pair(pair_73643, find_or_add_symbol("cadar"), &cvar_73642);
-  make_cvar(cvar_73644, (object *)&__glo_caadr_scheme_cxr);make_pair(pair_73645, find_or_add_symbol("caadr"), &cvar_73644);
-  make_cvar(cvar_73646, (object *)&__glo_caaar_scheme_cxr);make_pair(pair_73647, find_or_add_symbol("caaar"), &cvar_73646);
-  make_cvar(cvar_73648, (object *)&__glo_cddr_scheme_cxr);make_pair(pair_73649, find_or_add_symbol("cddr"), &cvar_73648);
-  make_cvar(cvar_73650, (object *)&__glo_cdar_scheme_cxr);make_pair(pair_73651, find_or_add_symbol("cdar"), &cvar_73650);
-  make_cvar(cvar_73652, (object *)&__glo_cadr_scheme_cxr);make_pair(pair_73653, find_or_add_symbol("cadr"), &cvar_73652);
-  make_cvar(cvar_73654, (object *)&__glo_caar_scheme_cxr);make_pair(pair_73655, find_or_add_symbol("caar"), &cvar_73654);
-make_pair(c_73656, &pair_73594,Cyc_global_variables);
-make_pair(c_73657, &pair_73597, &c_73656);
-make_pair(c_73658, &pair_73599, &c_73657);
-make_pair(c_73659, &pair_73601, &c_73658);
-make_pair(c_73660, &pair_73603, &c_73659);
-make_pair(c_73661, &pair_73605, &c_73660);
-make_pair(c_73662, &pair_73607, &c_73661);
-make_pair(c_73663, &pair_73609, &c_73662);
-make_pair(c_73664, &pair_73611, &c_73663);
-make_pair(c_73665, &pair_73613, &c_73664);
-make_pair(c_73666, &pair_73615, &c_73665);
-make_pair(c_73667, &pair_73617, &c_73666);
-make_pair(c_73668, &pair_73619, &c_73667);
-make_pair(c_73669, &pair_73621, &c_73668);
-make_pair(c_73670, &pair_73623, &c_73669);
-make_pair(c_73671, &pair_73625, &c_73670);
-make_pair(c_73672, &pair_73627, &c_73671);
-make_pair(c_73673, &pair_73629, &c_73672);
-make_pair(c_73674, &pair_73631, &c_73673);
-make_pair(c_73675, &pair_73633, &c_73674);
-make_pair(c_73676, &pair_73635, &c_73675);
-make_pair(c_73677, &pair_73637, &c_73676);
-make_pair(c_73678, &pair_73639, &c_73677);
-make_pair(c_73679, &pair_73641, &c_73678);
-make_pair(c_73680, &pair_73643, &c_73679);
-make_pair(c_73681, &pair_73645, &c_73680);
-make_pair(c_73682, &pair_73647, &c_73681);
-make_pair(c_73683, &pair_73649, &c_73682);
-make_pair(c_73684, &pair_73651, &c_73683);
-make_pair(c_73685, &pair_73653, &c_73684);
-make_pair(c_73686, &pair_73655, &c_73685);
-Cyc_global_variables = &c_73686;
+  mclosure0(clo_73607, c_schemecxr_inlinable_lambdas); make_pair(pair_73606, find_or_add_symbol("c_schemecxr_inlinable_lambdas"), &clo_73607);
+  make_cvar(cvar_73608, (object *)&__glo_lib_91init_117schemecxr_scheme_cxr);make_pair(pair_73609, find_or_add_symbol("lib-init:schemecxr"), &cvar_73608);
+  make_cvar(cvar_73610, (object *)&__glo_caaaaar_191_191inline_191_191_scheme_cxr);make_pair(pair_73611, find_or_add_symbol("caaaaar__inline__"), &cvar_73610);
+  make_cvar(cvar_73612, (object *)&__glo_caaaaar_scheme_cxr);make_pair(pair_73613, find_or_add_symbol("caaaaar"), &cvar_73612);
+  make_cvar(cvar_73614, (object *)&__glo_cddddr_scheme_cxr);make_pair(pair_73615, find_or_add_symbol("cddddr"), &cvar_73614);
+  make_cvar(cvar_73616, (object *)&__glo_cdddar_scheme_cxr);make_pair(pair_73617, find_or_add_symbol("cdddar"), &cvar_73616);
+  make_cvar(cvar_73618, (object *)&__glo_cddadr_scheme_cxr);make_pair(pair_73619, find_or_add_symbol("cddadr"), &cvar_73618);
+  make_cvar(cvar_73620, (object *)&__glo_cddaar_scheme_cxr);make_pair(pair_73621, find_or_add_symbol("cddaar"), &cvar_73620);
+  make_cvar(cvar_73622, (object *)&__glo_cdaddr_scheme_cxr);make_pair(pair_73623, find_or_add_symbol("cdaddr"), &cvar_73622);
+  make_cvar(cvar_73624, (object *)&__glo_cdadar_scheme_cxr);make_pair(pair_73625, find_or_add_symbol("cdadar"), &cvar_73624);
+  make_cvar(cvar_73626, (object *)&__glo_cdaadr_scheme_cxr);make_pair(pair_73627, find_or_add_symbol("cdaadr"), &cvar_73626);
+  make_cvar(cvar_73628, (object *)&__glo_cdaaar_scheme_cxr);make_pair(pair_73629, find_or_add_symbol("cdaaar"), &cvar_73628);
+  make_cvar(cvar_73630, (object *)&__glo_cadddr_scheme_cxr);make_pair(pair_73631, find_or_add_symbol("cadddr"), &cvar_73630);
+  make_cvar(cvar_73632, (object *)&__glo_caddar_scheme_cxr);make_pair(pair_73633, find_or_add_symbol("caddar"), &cvar_73632);
+  make_cvar(cvar_73634, (object *)&__glo_cadadr_scheme_cxr);make_pair(pair_73635, find_or_add_symbol("cadadr"), &cvar_73634);
+  make_cvar(cvar_73636, (object *)&__glo_cadaar_scheme_cxr);make_pair(pair_73637, find_or_add_symbol("cadaar"), &cvar_73636);
+  make_cvar(cvar_73638, (object *)&__glo_caaddr_scheme_cxr);make_pair(pair_73639, find_or_add_symbol("caaddr"), &cvar_73638);
+  make_cvar(cvar_73640, (object *)&__glo_caadar_scheme_cxr);make_pair(pair_73641, find_or_add_symbol("caadar"), &cvar_73640);
+  make_cvar(cvar_73642, (object *)&__glo_caaadr_scheme_cxr);make_pair(pair_73643, find_or_add_symbol("caaadr"), &cvar_73642);
+  make_cvar(cvar_73644, (object *)&__glo_caaaar_scheme_cxr);make_pair(pair_73645, find_or_add_symbol("caaaar"), &cvar_73644);
+  make_cvar(cvar_73646, (object *)&__glo_cdddr_scheme_cxr);make_pair(pair_73647, find_or_add_symbol("cdddr"), &cvar_73646);
+  make_cvar(cvar_73648, (object *)&__glo_cddar_scheme_cxr);make_pair(pair_73649, find_or_add_symbol("cddar"), &cvar_73648);
+  make_cvar(cvar_73650, (object *)&__glo_cdadr_scheme_cxr);make_pair(pair_73651, find_or_add_symbol("cdadr"), &cvar_73650);
+  make_cvar(cvar_73652, (object *)&__glo_cdaar_scheme_cxr);make_pair(pair_73653, find_or_add_symbol("cdaar"), &cvar_73652);
+  make_cvar(cvar_73654, (object *)&__glo_caddr_scheme_cxr);make_pair(pair_73655, find_or_add_symbol("caddr"), &cvar_73654);
+  make_cvar(cvar_73656, (object *)&__glo_cadar_scheme_cxr);make_pair(pair_73657, find_or_add_symbol("cadar"), &cvar_73656);
+  make_cvar(cvar_73658, (object *)&__glo_caadr_scheme_cxr);make_pair(pair_73659, find_or_add_symbol("caadr"), &cvar_73658);
+  make_cvar(cvar_73660, (object *)&__glo_caaar_scheme_cxr);make_pair(pair_73661, find_or_add_symbol("caaar"), &cvar_73660);
+  make_cvar(cvar_73662, (object *)&__glo_cddr_scheme_cxr);make_pair(pair_73663, find_or_add_symbol("cddr"), &cvar_73662);
+  make_cvar(cvar_73664, (object *)&__glo_cdar_scheme_cxr);make_pair(pair_73665, find_or_add_symbol("cdar"), &cvar_73664);
+  make_cvar(cvar_73666, (object *)&__glo_cadr_scheme_cxr);make_pair(pair_73667, find_or_add_symbol("cadr"), &cvar_73666);
+  make_cvar(cvar_73668, (object *)&__glo_caar_scheme_cxr);make_pair(pair_73669, find_or_add_symbol("caar"), &cvar_73668);
+make_pair(c_73670, &pair_73606,Cyc_global_variables);
+make_pair(c_73671, &pair_73609, &c_73670);
+make_pair(c_73672, &pair_73611, &c_73671);
+make_pair(c_73673, &pair_73613, &c_73672);
+make_pair(c_73674, &pair_73615, &c_73673);
+make_pair(c_73675, &pair_73617, &c_73674);
+make_pair(c_73676, &pair_73619, &c_73675);
+make_pair(c_73677, &pair_73621, &c_73676);
+make_pair(c_73678, &pair_73623, &c_73677);
+make_pair(c_73679, &pair_73625, &c_73678);
+make_pair(c_73680, &pair_73627, &c_73679);
+make_pair(c_73681, &pair_73629, &c_73680);
+make_pair(c_73682, &pair_73631, &c_73681);
+make_pair(c_73683, &pair_73633, &c_73682);
+make_pair(c_73684, &pair_73635, &c_73683);
+make_pair(c_73685, &pair_73637, &c_73684);
+make_pair(c_73686, &pair_73639, &c_73685);
+make_pair(c_73687, &pair_73641, &c_73686);
+make_pair(c_73688, &pair_73643, &c_73687);
+make_pair(c_73689, &pair_73645, &c_73688);
+make_pair(c_73690, &pair_73647, &c_73689);
+make_pair(c_73691, &pair_73649, &c_73690);
+make_pair(c_73692, &pair_73651, &c_73691);
+make_pair(c_73693, &pair_73653, &c_73692);
+make_pair(c_73694, &pair_73655, &c_73693);
+make_pair(c_73695, &pair_73657, &c_73694);
+make_pair(c_73696, &pair_73659, &c_73695);
+make_pair(c_73697, &pair_73661, &c_73696);
+make_pair(c_73698, &pair_73663, &c_73697);
+make_pair(c_73699, &pair_73665, &c_73698);
+make_pair(c_73700, &pair_73667, &c_73699);
+make_pair(c_73701, &pair_73669, &c_73700);
+Cyc_global_variables = &c_73701;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
 }
