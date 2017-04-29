@@ -497,8 +497,6 @@ extern object __glo_denominator_191_191inline_191_191_scheme_base;
 extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
-extern object __glo_char_91upper_91case_127_191_191inline_191_191_scheme__char;
-extern object __glo_char_91lower_91case_127_191_191inline_191_191_scheme__char;
 #include "cyclone/runtime.h"
 defsymbol(hash_127);
 defsymbol(ordering_127);

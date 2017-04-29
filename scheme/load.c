@@ -299,9 +299,6 @@ extern object __glo_procedure_91parameters_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91body_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91environment_191_191inline_191_191_scheme_eval;
 extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval;
-extern object __glo_in_91port_117get_91buf_191_191inline_191_191_scheme_read;
-extern object __glo_in_91port_117get_91lnum_191_191inline_191_191_scheme_read;
-extern object __glo_in_91port_117get_91cnum_191_191inline_191_191_scheme_read;
 #include "cyclone/runtime.h"
 static void __lambda_4(void *data, int argc, closure _,object k_738) ;
 static void __lambda_3(void *data, int argc, closure _,object k_7311, object filename_732, object env_731_raw, ...) ;
