@@ -591,6 +591,9 @@ extern object __glo_denominator_191_191inline_191_191_scheme_base;
 extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
+extern object __glo_in_91port_117get_91buf_191_191inline_191_191_scheme_read;
+extern object __glo_in_91port_117get_91lnum_191_191inline_191_191_scheme_read;
+extern object __glo_in_91port_117get_91cnum_191_191inline_191_191_scheme_read;
 #include "cyclone/runtime.h"
 defsymbol(procedure);
 defsymbol(macro);
