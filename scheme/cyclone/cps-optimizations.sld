@@ -19,6 +19,7 @@
       inlinable-top-level-lambda?
       optimize-cps 
       analyze-cps
+      ;analyze-lambda-side-effects
       opt:contract
       opt:inline-prims
       adb:clear!
@@ -52,6 +53,7 @@
       adb:function?
       adbf:simple adbf:set-simple!
       adbf:unused-params adbf:set-unused-params!
+      adbf:side-effects adbf:set-side-effects!
   )
   (begin
     (define *adb* (make-hash-table))
@@ -62,12 +64,17 @@
     (define (adb:get/default key default) (hash-table-ref/default *adb* key default))
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
-      (%adb:make-var global defined-by const const-value  ref-by
-                     reassigned assigned-value app-fnc-count app-arg-count
-                     inlinable mutated-indirectly)
+      (%adb:make-var 
+        global defined-by 
+        defines-lambda-id
+        const const-value  ref-by
+        reassigned assigned-value 
+        app-fnc-count app-arg-count
+        inlinable mutated-indirectly)
       adb:variable?
       (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
+      (defines-lambda-id adbv:defines-lambda-id adbv:set-defines-lambda-id!)
       (const adbv:const? adbv:set-const!)
       (const-value adbv:const-value adbv:set-const-value!)
       (ref-by adbv:ref-by adbv:set-ref-by!)
@@ -112,18 +119,19 @@
     )
 
     (define (adb:make-var)
-      (%adb:make-var '? '? #f #f '() #f #f 0 0 #t #f))
+      (%adb:make-var '? '? #f #f #f '() #f #f 0 0 #t #f))
 
     (define-record-type <analysis-db-function>
-      (%adb:make-fnc simple unused-params assigned-to-var)
+      (%adb:make-fnc simple unused-params assigned-to-var side-effects)
       adb:function?
       (simple adbf:simple adbf:set-simple!)
       (unused-params adbf:unused-params adbf:set-unused-params!)
       (assigned-to-var adbf:assigned-to-var adbf:set-assigned-to-var!)
+      (side-effects adbf:side-effects adbf:set-side-effects!)
       ;; TODO: top-level-define ?
     )
     (define (adb:make-fnc)
-      (%adb:make-fnc '? '? '()))
+      (%adb:make-fnc '? '? '() #f))
 
     ;; A constant value that cannot be mutated
     ;; A variable only ever assigned to one of these could have all
@@ -253,6 +261,96 @@
                 (lambda () (k #f))) ;; Fail with #f
               (k #t))))))) ;; Scanned fine, return #t
     (else #f)))
+
+    (define (analyze-find-lambdas exp lid)
+      (cond
+        ((ast:lambda? exp)
+         (let* ((id (ast:lambda-id exp))
+                (fnc (adb:get/default id (adb:make-fnc))))
+           (adb:set! id fnc)
+           (for-each
+             (lambda (expr)
+               (analyze-find-lambdas expr id))
+             (ast:lambda-body exp))))
+        ((const? exp) #f)
+        ((quote? exp) #f)
+        ((ref? exp) #f)
+        ((define? exp)
+         (let ((val (define->exp exp)))
+           (if (ast:lambda? (car val))
+               (with-var! (define->var exp) (lambda (var)
+                 (adbv:set-defines-lambda-id! 
+                   var (ast:lambda-id (car val)))))))
+         (analyze-find-lambdas (define->exp exp) lid))
+        ((set!? exp)
+         (analyze-find-lambdas (set!->exp exp) lid))
+        ((if? exp)
+         (analyze-find-lambdas (if->condition exp) lid)
+         (analyze-find-lambdas (if->then exp) lid)
+         (analyze-find-lambdas (if->else exp) lid))
+        ((app? exp)
+         (for-each
+           (lambda (e)
+             (analyze-find-lambdas e lid))
+           exp))
+        (else
+          #f)))
+
+    ;; Mark each lambda that has side effects.
+    ;; For nested lambdas, if a child has side effects also mark the parent
+    (define (analyze-lambda-side-effects exp lid)
+      (cond
+        ((ast:lambda? exp)
+         (let* ((id (ast:lambda-id exp))
+                (fnc (adb:get/default id (adb:make-fnc))))
+           (adb:set! id fnc)
+           (for-each
+             (lambda (expr)
+               (analyze-lambda-side-effects expr id))
+             (ast:lambda-body exp))
+           ;; If id has side effects, mark parent lid, too
+           (if (and (> lid -1)
+                    (adbf:side-effects fnc))
+               (with-fnc! lid (lambda (f)
+                 (adbf:set-side-effects! f #t))))))
+        ((const? exp) #f)
+        ((quote? exp) #f)
+        ((ref? exp) #f)
+        ((define? exp)
+         (analyze-lambda-side-effects (define->exp exp) lid))
+        ((set!? exp)
+         (with-fnc! lid (lambda (fnc)
+           (adbf:set-side-effects! fnc #t)))
+         (analyze-lambda-side-effects (set!->exp exp) lid))
+        ((if? exp)
+         (analyze-lambda-side-effects (if->condition exp) lid)
+         (analyze-lambda-side-effects (if->then exp) lid)
+         (analyze-lambda-side-effects (if->else exp) lid))
+        ((app? exp)
+         (let ((pure-ref #t))
+           ;; Check if ref is pure. Note this may give wrong results
+           ;; if ref's lambda has not been scanned yet. One solution is
+           ;; to make 2 top-level passes of analyze-lambda-side-effects.
+           (if (ref? (car exp))
+               (with-var (car exp) (lambda (var)
+                 (if (adbv:defines-lambda-id var)
+                     (with-fnc! (adbv:defines-lambda-id var) (lambda (fnc)
+                       (if (adbf:side-effects fnc)
+                           (set! pure-ref #f))))))))
+
+         ;; This lambda has side effects if it calls a mutating prim or
+         ;; a function not explicitly marked as having no side effects.
+         (if (or (prim:mutates? (car exp))
+                 (and (ref? (car exp))
+                      (not pure-ref)))
+             (with-fnc! lid (lambda (fnc)
+               (adbf:set-side-effects! fnc #t))))
+         (for-each
+           (lambda (e)
+             (analyze-lambda-side-effects e lid))
+           exp)))
+        (else
+          #f)))
 
 ;; TODO: check app for const/const-value, also (for now) reset them
 ;; if the variable is modified via set/define
@@ -972,7 +1070,17 @@
             (cddr exp)))
           ((and (not (prim? (car exp)))
                 (ref? (car exp)))
+           (define pure-fnc #f)
            (define ref-formals '())
+           ;; Does ref refer to a pure function (no side effects)?
+           (let ((var (adb:get/default (car exp) #f)))
+            (if var
+                (let ((lid (adbv:defines-lambda-id var)))
+                  (if lid
+                      (with-fnc! lid (lambda (fnc)
+                        (if (not (adbf:side-effects fnc))
+                            (set! pure-fnc #t))))))))
+           ;;
            (with-var (car exp) (lambda (var)
              (let ((val (adbv:assigned-value var)))
               (cond
@@ -985,6 +1093,15 @@
            ))))
 ;(trace:error `(DEBUG ref app ,(car exp) ,(cdr exp) ,ref-formals))
            (cond
+            (pure-fnc
+              (for-each
+                (lambda (e)
+                  ;; Skip refs since fnc is pure and cannot change them
+                  (if (not (ref? e))
+                      (analyze:find-inlinable-vars e args)))
+                exp))
+            ;; TODO: how do you know if it is the same function, or just
+            ;; another function with the same formals?
             ((= (length ref-formals) (length (cdr exp)))
              (analyze:find-inlinable-vars (car exp) args)
              (for-each
@@ -1011,6 +1128,9 @@
           (error `(Unexpected expression passed to find inlinable vars ,exp)))))
 
     (define (analyze-cps exp)
+      (analyze-find-lambdas exp -1)
+      (analyze-lambda-side-effects exp -1)
+      (analyze-lambda-side-effects exp -1) ;; 2nd pass guarantees lambda purity
       (analyze exp -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
       (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
