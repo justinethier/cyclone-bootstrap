@@ -70,7 +70,8 @@
         const const-value  ref-by
         reassigned assigned-value 
         app-fnc-count app-arg-count
-        inlinable mutated-indirectly)
+        inlinable mutated-indirectly
+        cont)
       adb:variable?
       (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
@@ -91,6 +92,7 @@
       (inlinable adbv:inlinable adbv:set-inlinable!)
       ;; Is the variable mutated indirectly? (EG: set-car! of a cdr)
       (mutated-indirectly adbv:mutated-indirectly? adbv:set-mutated-indirectly!)
+      (cont adbv:cont? adbv:set-cont!)
     )
 
     (define (adbv-set-assigned-value-helper! sym var value)
@@ -119,7 +121,7 @@
     )
 
     (define (adb:make-var)
-      (%adb:make-var '? '? #f #f #f '() #f #f 0 0 #t #f))
+      (%adb:make-var '? '? #f #f #f '() #f #f 0 0 #t #f #f))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params assigned-to-var side-effects)
@@ -262,12 +264,18 @@
               (k #t))))))) ;; Scanned fine, return #t
     (else #f)))
 
+    ;; Search ast for all of the lambda definitions and add them to analysis DB
     (define (analyze-find-lambdas exp lid)
       (cond
         ((ast:lambda? exp)
          (let* ((id (ast:lambda-id exp))
                 (fnc (adb:get/default id (adb:make-fnc))))
            (adb:set! id fnc)
+           ;; Flag continuation variable, if present
+           (if (ast:lambda-has-cont exp)
+               (let ((k (car (ast:lambda-args exp))))
+                 (with-var! k (lambda (var)
+                   (adbv:set-cont! var #t)))))
            (for-each
              (lambda (expr)
                (analyze-find-lambdas expr id))
