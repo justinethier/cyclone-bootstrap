@@ -264,7 +264,6 @@
               (k #t))))))) ;; Scanned fine, return #t
     (else #f)))
 
-    ;; Search ast for all of the lambda definitions and add them to analysis DB
     (define (analyze-find-lambdas exp lid)
       (cond
         ((ast:lambda? exp)
@@ -1082,6 +1081,7 @@
           ((and (not (prim? (car exp)))
                 (ref? (car exp)))
            (define pure-fnc #f)
+           (define calling-cont #f)
            (define ref-formals '())
            ;; Does ref refer to a pure function (no side effects)?
            (let ((var (adb:get/default (car exp) #f)))
@@ -1097,6 +1097,10 @@
                     (with-fnc! (ast:lambda-id assigned-val) (lambda (fnc)
                       (if (not (adbf:side-effects fnc))
                           (set! pure-fnc #t)))))
+                   ;; Experimental - if a cont, execution will leave fnc anyway,
+                   ;; so inlines there should be safe
+                   ((adbv:cont? var)
+                    (set! calling-cont #t))
                    ))))
            ;;
            (with-var (car exp) (lambda (var)
@@ -1111,7 +1115,7 @@
            ))))
 ;(trace:error `(DEBUG ref app ,(car exp) ,(cdr exp) ,ref-formals))
            (cond
-            (pure-fnc
+            ((or pure-fnc calling-cont)
               (for-each
                 (lambda (e)
                   ;; Skip refs since fnc is pure and cannot change them
