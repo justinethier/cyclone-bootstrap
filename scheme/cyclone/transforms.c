@@ -465,6 +465,8 @@ extern object __glo_ast_117lambda_91args_scheme_cyclone_ast;
 extern object __glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast;
 extern object __glo_ast_117lambda_91body_scheme_cyclone_ast;
 extern object __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast;
+extern object __glo_ast_117lambda_91has_91cont_scheme_cyclone_ast;
+extern object __glo_ast_117set_91lambda_91has_91cont_67_scheme_cyclone_ast;
 extern object __glo__85Cyc_91version_91banner_85_scheme_cyclone_common;
 extern object __glo__85version_85_scheme_cyclone_common;
 extern object __glo__85version_91number_85_scheme_cyclone_common;
@@ -4240,7 +4242,7 @@ c_737548.elements = (object *)alloca(sizeof(object) * 2);
 c_737548.elements[0] = ((closureN)self_732713)->elements[0];
 c_737548.elements[1] = ((closureN)self_732713)->elements[1];
 
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_737548, ((closureN)self_732713)->elements[2], r_731345);; 
+return_closcall4(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_737548, ((closureN)self_732713)->elements[2], r_731345, boolean_t);; 
 }
 
 static void __lambda_616(void *data, int argc, object self_732714, object r_731343) {
@@ -4495,7 +4497,7 @@ c_737434.elements = (object *)alloca(sizeof(object) * 2);
 c_737434.elements[0] = ((closureN)self_732730)->elements[0];
 c_737434.elements[1] = ((closureN)self_732730)->elements[1];
 
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_737434, ((closureN)self_732730)->elements[2], r_731314);; 
+return_closcall4(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_737434, ((closureN)self_732730)->elements[2], r_731314, boolean_t);; 
 }
 
 static void __lambda_599(void *data, int argc, object self_732731, object r_731312) {
