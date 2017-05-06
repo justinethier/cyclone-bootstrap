@@ -42,4 +42,4 @@ cp -v Makefile.config.msys2 Makefile.config
 # Fixing up the Makefile - this is a temporary crude workaround
 perl -pi -e 's/-shared -rdynamic/-Wl,-undefined -shared -rdynamic/' Makefile
 make
-DESTDIR=$INSTALL_DIR$INSTALL_RELATIVE make install
+DESTDIR=$INSTALL_DIR make install
