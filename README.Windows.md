@@ -1,7 +1,6 @@
 Instructions for building on Windows using MSYS
 -----------------------------------------------
 
-
 ### Install MSYS2
 1. Download msys2 from http://www.msys2.org/
 2. Install msys2 to a location of your choice - say C:\msys64 (the steps should work for 32bit too)
