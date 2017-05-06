@@ -13,29 +13,9 @@ Instructions for building on Windows using MSYS
 2. pacman -Su (Hit 'Y' when asked - Proceed with installation?)
 3. pacman -S gcc make autoconf git (Hit 'Y' when asked - Proceed with installation?)
 
-### Create a directory to contain everthing needed for cyclone-bootstrap
-1. export CYCLONE=$PWD/CYCLONE
-2. mkdir $CYCLONE
-3. cd $CYCLONE
-4. mkdir $CYCLONE/install
+### Build and install cyclone-bootstrap
+1. git clone https://github.com/justinethier/cyclone-bootstrap.git
+2. cd cyclone-bootstrap
+3. ./setup.mysys.sh - this will fetch and build all the dependencies.
 
-### Build and install libtomath
-1. git clone https://github.com/libtom/libtommath.git
-2. 
-
-
-
-
-git clone https://github.com/justinethier/cyclone-bootstrap.git
-
-git clone https://github.com/libtom/libtommath.git
-
-make
-DESTDIR=/home/ckk/Cyclone/install make install
-
-
-git clone https://github.com/concurrencykit/ck.git
-./configure
-make
-DESTDIR=/home/ckk/Cyclone/install make install
-
+You will have cyclone.exe and icyc.exe generated at $(HOME)/CYCLONE_ROOT/INSTALL/usr/local/bin!
