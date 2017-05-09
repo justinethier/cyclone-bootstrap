@@ -3580,27 +3580,27 @@ static void __lambda_172(void *data, int argc, closure _,object k_73953, object 
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/c-var-pointer");
 if( (boolean_f != Cyc_eq(p_73705, quote_Cyc_91fast_91plus)) ){ 
   
-make_string(c_733104, "common_type");
+make_string(c_733104, "double_type");
 return_closcall1(data,  k_73953,  &c_733104);
 } else { 
   if( (boolean_f != Cyc_eq(p_73705, quote_Cyc_91fast_91sub)) ){ 
   
-make_string(c_733108, "common_type");
+make_string(c_733108, "double_type");
 return_closcall1(data,  k_73953,  &c_733108);
 } else { 
   if( (boolean_f != Cyc_eq(p_73705, quote_Cyc_91fast_91mul)) ){ 
   
-make_string(c_733112, "common_type");
+make_string(c_733112, "double_type");
 return_closcall1(data,  k_73953,  &c_733112);
 } else { 
   if( (boolean_f != Cyc_eq(p_73705, quote_Cyc_91fast_91div)) ){ 
   
-make_string(c_733116, "common_type");
+make_string(c_733116, "double_type");
 return_closcall1(data,  k_73953,  &c_733116);
 } else { 
   if( (boolean_f != memberp(data, p_73705, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_string(c_733120, "common_type");
+make_string(c_733120, "double_type");
 return_closcall1(data,  k_73953,  &c_733120);
 } else { 
   return_closcall1(data,  k_73953,  boolean_f);}
