@@ -24,13 +24,13 @@ md5sums=('6f9f60b73f195e9bd86552d68c8405da')
 
 build() {
   cd "cyclone-bootstrap-$pkgver"
-  make libcyclone.a PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
-  make cyclone PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
-  make icyc-c PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
+  make libcyclone.a PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L."
+  make cyclone PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L."
+  make icyc-c PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L."
 }
 
 package() {
   cd "cyclone-bootstrap-$pkgver"
-  make DESTDIR="$pkgdir" PREFIX=/usr CFLAGS="-O2 -Wall -Iinclude -L."
+  make DESTDIR="$pkgdir" PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L."
   make DESTDIR="$pkgdir" PREFIX=/usr install
 }

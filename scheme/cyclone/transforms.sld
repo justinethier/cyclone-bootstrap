@@ -105,7 +105,27 @@
     pos-in-list 
     closure-convert 
     prim-convert
-    inlinable-top-level-function?
+  )
+  (inline
+    cell-get->cell
+    cell->value
+    set-cell!->value
+    set-cell!->cell
+    env-get->env
+    env-get->field
+    env-get->id
+    env-make->id
+    closure->fv
+    closure->env
+    closure->lam
+    begin->exps
+    app->args
+    app->fun
+    letrec->exp
+    letrec->bindings
+    let->exp
+    let->bindings
+    void
   )
   (begin
 
@@ -162,17 +182,6 @@
 
 
 ;; Utilities.
-
-(cond-expand
-  (cyclone
-    ; member : symbol sorted-set[symbol] -> boolean
-    (define (member sym S)
-      (if (not (pair? S))
-          #f
-          (if (eq? sym (car S))
-              #t
-              (member sym (cdr S))))))
-  (else #f))
 
 (cond-expand
   (cyclone
@@ -1231,6 +1240,7 @@
         ast)))
   (conv expr))
 
+<<<<<<< HEAD
 ;; Determine if the given top-level function can be freed from CPS, due
 ;; to it only containing calls to code that itself can be inlined.
 (define (inlinable-top-level-function? expr)
@@ -1279,6 +1289,8 @@
           (lambda () (k #f))) ;; Fail with #f
         (k #t)))) ;; Scanned fine, return #t
     (else #f)))
+=======
+>>>>>>> inline7-dev
 ;;
 ;; Helpers to syntax check primitive calls
 ;;
@@ -1328,7 +1340,8 @@
                  (let ((k (gensym 'k)))
                     (list (ast:make-lambda
                            (list k)
-                           (list (xform k)))
+                           (list (xform k))
+                           #t)
                           cont-ast)))))
 
           ((prim-call? ast)
@@ -1355,7 +1368,8 @@
                          (if (equal? ltype 'args:varargs)
                              'args:fixed-with-varargs ;; OK? promote due to k
                              ltype))
-                      (list (cps-seq (cddr ast) k))))))
+                      (list (cps-seq (cddr ast) k)) 
+                      #t))))
 
           ((app? ast)
            ;; Syntax check the function
