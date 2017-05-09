@@ -2008,7 +2008,7 @@ static void __lambda_44(void *data, int argc, object self_73520, object r_73305)
 if( (boolean_f != c_73932) ){ 
   
 common_type local_73942; object c_73943 = Cyc_fast_mul(data,&local_73942,obj_int2obj(2), ((closureN)self_73520)->elements[0]);
-return_closcall2(data,  cell_get(((closureN)self_73520)->elements[3]),  ((closureN)self_73520)->elements[1], c_73943);
+return_closcall2(data,  car(((closureN)self_73520)->elements[3]),  ((closureN)self_73520)->elements[1], c_73943);
 } else { 
   
 closureN_type c_73946;
@@ -2043,7 +2043,7 @@ static void __lambda_43(void *data, int argc, object self_73521, object r_73308)
   if( (boolean_f != r_73308) ){ 
   
 common_type local_73970; object c_73971 = Cyc_fast_div(data,&local_73970,((closureN)self_73521)->elements[0], obj_int2obj(2));
-return_closcall2(data,  cell_get(((closureN)self_73521)->elements[2]),  ((closureN)self_73521)->elements[1], c_73971);
+return_closcall2(data,  car(((closureN)self_73521)->elements[2]),  ((closureN)self_73521)->elements[1], c_73971);
 } else { 
   return_closcall1(data,  ((closureN)self_73521)->elements[1],  boolean_f);}
 ; 

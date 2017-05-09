@@ -844,7 +844,7 @@ return_closcall1(data,(closure)&c_73414,  Cyc_set_cell(data, ((closureN)self_731
 }
 
 static void __lambda_37(void *data, int argc, object self_73177, object r_7377) {
-  return_closcall4(data,  __glo_random_91source_91pseudo_91randomize_67_srfi_27,  ((closureN)self_73177)->elements[2], ((closureN)self_73177)->elements[3], cell_get(((closureN)self_73177)->elements[0]), cell_get(((closureN)self_73177)->elements[1]));; 
+  return_closcall4(data,  __glo_random_91source_91pseudo_91randomize_67_srfi_27,  ((closureN)self_73177)->elements[2], ((closureN)self_73177)->elements[3], car(((closureN)self_73177)->elements[0]), car(((closureN)self_73177)->elements[1]));; 
 }
 
 static void __lambda_36(void *data, int argc, closure _,object k_7383, object s_7320, object i_7319, object j_7318) {
@@ -986,7 +986,7 @@ c_73359.elements[1] = ((closureN)self_73183)->elements[3];
 c_73359.elements[2] = ((closureN)self_73183)->elements[4];
 
 
-common_type local_73373; object c_73374 = Cyc_fast_sum(data,&local_73373,cell_get(((closureN)self_73183)->elements[1]), cell_get(((closureN)self_73183)->elements[2]));
+common_type local_73373; object c_73374 = Cyc_fast_sum(data,&local_73373,car(((closureN)self_73183)->elements[1]), car(((closureN)self_73183)->elements[2]));
 return_closcall2(data,  __glo_abs_scheme_base,  &c_73359, c_73374);; 
 }
 
@@ -1008,7 +1008,7 @@ return_closcall1(data,(closure)&c_73361,  Cyc_set_cell(data, ((closureN)self_731
 }
 
 static void __lambda_28(void *data, int argc, object self_73185, object r_7386) {
-  return_closcall3(data,  __glo_random_91source_91state_91set_67_srfi_27,  ((closureN)self_73185)->elements[0], ((closureN)self_73185)->elements[2], cell_get(((closureN)self_73185)->elements[1]));; 
+  return_closcall3(data,  __glo_random_91source_91state_91set_67_srfi_27,  ((closureN)self_73185)->elements[0], ((closureN)self_73185)->elements[2], car(((closureN)self_73185)->elements[1]));; 
 }
 
 static void __lambda_27(void *data, int argc, closure _,object k_7391, object s_7331, object state_7330) {
@@ -1219,7 +1219,7 @@ c_73313.elements = (object *)alloca(sizeof(object) * 2);
 c_73313.elements[0] = k_73115;
 c_73313.elements[1] = ((closureN)self_73194)->elements[2];
 
-return_closcall2(data,  ((closureN)self_73194)->elements[0],  &c_73313, cell_get(((closureN)self_73194)->elements[1]));; 
+return_closcall2(data,  ((closureN)self_73194)->elements[0],  &c_73313, car(((closureN)self_73194)->elements[1]));; 
 }
 
 static void __lambda_15(void *data, int argc, object self_73195, object r_73116) {
@@ -1402,11 +1402,11 @@ c_73225.elements[0] = ((closureN)self_73205)->elements[0];
 c_73225.elements[1] = ((closureN)self_73205)->elements[1];
 c_73225.elements[2] = ((closureN)self_73205)->elements[2];
 
-return_closcall3(data,  __glo_set_91random_91source_91val_67_srfi_27,  &c_73225, ((closureN)self_73205)->elements[3], cell_get(((closureN)self_73205)->elements[2]));; 
+return_closcall3(data,  __glo_set_91random_91source_91val_67_srfi_27,  &c_73225, ((closureN)self_73205)->elements[3], car(((closureN)self_73205)->elements[2]));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_73206, object r_73131) {
-  return_closcall3(data,  __glo_modulo_scheme_base,  ((closureN)self_73206)->elements[0], cell_get(((closureN)self_73206)->elements[2]), ((closureN)self_73206)->elements[1]);; 
+  return_closcall3(data,  __glo_modulo_scheme_base,  ((closureN)self_73206)->elements[0], car(((closureN)self_73206)->elements[2]), ((closureN)self_73206)->elements[1]);; 
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_73136) {

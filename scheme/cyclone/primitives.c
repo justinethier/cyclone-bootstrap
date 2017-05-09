@@ -2343,7 +2343,7 @@ c_733815.elements[0] = ((closureN)self_731328)->elements[0];
 c_733815.elements[1] = ((closureN)self_731328)->elements[1];
 c_733815.elements[2] = ((closureN)self_731328)->elements[3];
 
-return_closcall2(data,(closure)&c_733815,  assoc(data, ((closureN)self_731328)->elements[0], cell_get(((closureN)self_731328)->elements[2])), r_73739);; 
+return_closcall2(data,(closure)&c_733815,  assoc(data, ((closureN)self_731328)->elements[0], car(((closureN)self_731328)->elements[2])), r_73739);; 
 }
 
 static void __lambda_206(void *data, int argc, object self_731329, object m_73695, object udf_73694) {
@@ -7188,7 +7188,7 @@ return_closcall1(data,(closure)&c_732403,  Cyc_eq(((closureN)self_731500)->eleme
 static void __lambda_23(void *data, int argc, object self_731501, object r_731117) {
   if( (boolean_f != r_731117) ){ 
   
-make_string(c_732406, "cell_get");
+make_string(c_732406, "car");
 return_closcall1(data,  ((closureN)self_731501)->elements[0],  &c_732406);
 } else { 
   

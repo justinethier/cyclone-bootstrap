@@ -553,12 +553,12 @@ c_73225.elements[1] = ((closureN)self_7378)->elements[2];
 c_73225.elements[2] = k_7362;
 c_73225.elements[3] = ((closureN)self_7378)->elements[3];
 
-return_closcall3(data,  how_7328,  &c_73225, Cyc_car(data, ((closureN)self_7378)->elements[3]), cell_get(((closureN)self_7378)->elements[0]));}
+return_closcall3(data,  how_7328,  &c_73225, Cyc_car(data, ((closureN)self_7378)->elements[3]), car(((closureN)self_7378)->elements[0]));}
 ; 
 }
 
 static void __lambda_7(void *data, int argc, object self_7379, object r_7364) {
-  return_closcall3(data,  cell_get(((closureN)self_7379)->elements[0]),  ((closureN)self_7379)->elements[2], Cyc_cddr(data, ((closureN)self_7379)->elements[1]), Cyc_cdr(data, ((closureN)self_7379)->elements[3]));; 
+  return_closcall3(data,  car(((closureN)self_7379)->elements[0]),  ((closureN)self_7379)->elements[2], Cyc_cddr(data, ((closureN)self_7379)->elements[1]), Cyc_cdr(data, ((closureN)self_7379)->elements[3]));; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7380, object r_7340) {
@@ -610,7 +610,7 @@ c_73201.elements[2] = k_7358;
 c_73201.elements[3] = next_7326;
 c_73201.elements[4] = ((closureN)self_7381)->elements[3];
 
-return_closcall3(data,  __glo_write_91char_scheme_base,  &c_73201, what_7327, cell_get(((closureN)self_7381)->elements[0]));; 
+return_closcall3(data,  __glo_write_91char_scheme_base,  &c_73201, what_7327, car(((closureN)self_7381)->elements[0]));; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7382, object r_7359) {
@@ -631,12 +631,12 @@ return_closcall2(data,  ((closureN)self_7382)->elements[3],  &c_73204, ((closure
 }
 
 static void __lambda_3(void *data, int argc, object self_7383, object r_7360) {
-  return_closcall3(data,  cell_get(((closureN)self_7383)->elements[0]),  ((closureN)self_7383)->elements[1], r_7360, ((closureN)self_7383)->elements[2]);; 
+  return_closcall3(data,  car(((closureN)self_7383)->elements[0]),  ((closureN)self_7383)->elements[1], r_7360, ((closureN)self_7383)->elements[2]);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7384, object r_7341) {
   if( (boolean_f != Cyc_is_null(((closureN)self_7384)->elements[2])) ){ 
-  return_closcall2(data,  __glo_get_91output_91string_scheme_base,  ((closureN)self_7384)->elements[3], cell_get(((closureN)self_7384)->elements[0]));
+  return_closcall2(data,  __glo_get_91output_91string_scheme_base,  ((closureN)self_7384)->elements[3], car(((closureN)self_7384)->elements[0]));
 } else { 
     object c_73133 = Cyc_char_eq_op(data,Cyc_car(data, ((closureN)self_7384)->elements[2]), obj_char2obj(126));
 if( (boolean_f != c_73133) ){ 
@@ -646,16 +646,16 @@ make_string(c_73144, "Incomplete escape sequence");
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->elements[3], &c_73144);
 } else { 
   if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7384)->elements[2]), obj_char2obj(97))) ){ 
-  return_closcall2(data,  cell_get(((closureN)self_7384)->elements[1]),  ((closureN)self_7384)->elements[3], __glo_display_scheme_write);
+  return_closcall2(data,  car(((closureN)self_7384)->elements[1]),  ((closureN)self_7384)->elements[3], __glo_display_scheme_write);
 } else { 
   if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7384)->elements[2]), obj_char2obj(115))) ){ 
-  return_closcall2(data,  cell_get(((closureN)self_7384)->elements[1]),  ((closureN)self_7384)->elements[3], __glo_write_scheme_write);
+  return_closcall2(data,  car(((closureN)self_7384)->elements[1]),  ((closureN)self_7384)->elements[3], __glo_write_scheme_write);
 } else { 
   if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7384)->elements[2]), obj_char2obj(37))) ){ 
-  return_closcall3(data,  cell_get(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], obj_char2obj(10), primitive_cddr);
+  return_closcall3(data,  car(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], obj_char2obj(10), primitive_cddr);
 } else { 
   if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7384)->elements[2]), obj_char2obj(126))) ){ 
-  return_closcall3(data,  cell_get(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], obj_char2obj(126), primitive_cddr);
+  return_closcall3(data,  car(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], obj_char2obj(126), primitive_cddr);
 } else { 
   
 make_string(c_73187, "Unrecognized escape sequence");
@@ -666,7 +666,7 @@ return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->element
 }
 
 } else { 
-  return_closcall3(data,  cell_get(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], Cyc_car(data, ((closureN)self_7384)->elements[2]), primitive_cdr);}
+  return_closcall3(data,  car(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], Cyc_car(data, ((closureN)self_7384)->elements[2]), primitive_cdr);}
 }
 ; 
 }
@@ -689,7 +689,7 @@ return_closcall2(data,  __glo_string_91_125list_scheme_base,  &c_73101, ((closur
 }
 
 static void __lambda_0(void *data, int argc, object self_7386, object r_7337) {
-  return_closcall3(data,  cell_get(((closureN)self_7386)->elements[0]),  ((closureN)self_7386)->elements[1], r_7337, ((closureN)self_7386)->elements[2]);; 
+  return_closcall3(data,  car(((closureN)self_7386)->elements[0]),  ((closureN)self_7386)->elements[1], r_7337, ((closureN)self_7386)->elements[2]);; 
 }
 
 void c_srfi28_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

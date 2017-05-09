@@ -346,8 +346,8 @@ return_closcall1(data,  ((closureN)self_7362)->elements[0],  &c_73116);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7363, object k_7327) {
-  if( (boolean_f != cell_get(((closureN)self_7363)->elements[2])) ){ 
-  return_closcall1(data,  k_7327,  cell_get(((closureN)self_7363)->elements[1]));
+  if( (boolean_f != car(((closureN)self_7363)->elements[2])) ){ 
+  return_closcall1(data,  k_7327,  car(((closureN)self_7363)->elements[1]));
 } else { 
   
 closureN_type c_73126;
@@ -367,8 +367,8 @@ return_closcall1(data,  ((closureN)self_7363)->elements[0],  &c_73126);}
 }
 
 static void __lambda_5(void *data, int argc, object self_7364, object x_7310) {
-  if( (boolean_f != cell_get(((closureN)self_7364)->elements[2])) ){ 
-  return_closcall1(data,  ((closureN)self_7364)->elements[0],  cell_get(((closureN)self_7364)->elements[1]));
+  if( (boolean_f != car(((closureN)self_7364)->elements[2])) ){ 
+  return_closcall1(data,  ((closureN)self_7364)->elements[0],  car(((closureN)self_7364)->elements[1]));
 } else { 
   
 closureN_type c_73136;
@@ -404,7 +404,7 @@ return_closcall1(data,(closure)&c_73138,  Cyc_set_cell(data, ((closureN)self_736
 }
 
 static void __lambda_3(void *data, int argc, object self_7366, object r_7330) {
-  return_closcall1(data,  ((closureN)self_7366)->elements[0],  cell_get(((closureN)self_7366)->elements[1]));; 
+  return_closcall1(data,  ((closureN)self_7366)->elements[0],  car(((closureN)self_7366)->elements[1]));; 
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_7333, object expr_7313, object rename_7312, object compare_7311) {

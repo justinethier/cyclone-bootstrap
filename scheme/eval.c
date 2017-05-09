@@ -8317,7 +8317,7 @@ c_732167.elements[2] = ((closureN)self_731136)->elements[2];
 c_732167.elements[3] = r_73616;
 c_732167.elements[4] = ((closureN)self_731136)->elements[3];
 
-return_closcall3(data,  __glo_Cyc_91er_91rename_scheme_cyclone_util,  &c_732167, cell_get(((closureN)self_731136)->elements[3]), ((closureN)self_731136)->elements[0]);; 
+return_closcall3(data,  __glo_Cyc_91er_91rename_scheme_cyclone_util,  &c_732167, car(((closureN)self_731136)->elements[3]), ((closureN)self_731136)->elements[0]);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_731137, object r_73613) {
@@ -8336,7 +8336,7 @@ c_732169.elements[2] = ((closureN)self_731137)->elements[2];
 c_732169.elements[3] = r_73613;
 c_732169.elements[4] = ((closureN)self_731137)->elements[3];
 
-return_closcall3(data,  __glo_Cyc_91er_91compare_127_scheme_cyclone_util,  &c_732169, cell_get(((closureN)self_731137)->elements[4]), cell_get(((closureN)self_731137)->elements[4]));; 
+return_closcall3(data,  __glo_Cyc_91er_91compare_127_scheme_cyclone_util,  &c_732169, car(((closureN)self_731137)->elements[4]), car(((closureN)self_731137)->elements[4]));; 
 }
 
 static void __lambda_176(void *data, int argc, object self_731138, object r_73614) {
@@ -8416,7 +8416,7 @@ c_732126.elements[3] = ((closureN)self_731142)->elements[3];
 c_732126.elements[4] = r_73608;
 c_732126.elements[5] = ((closureN)self_731142)->elements[4];
 
-return_closcall3(data,  __glo_Cyc_91er_91rename_scheme_cyclone_util,  &c_732126, cell_get(((closureN)self_731142)->elements[4]), ((closureN)self_731142)->elements[0]);; 
+return_closcall3(data,  __glo_Cyc_91er_91rename_scheme_cyclone_util,  &c_732126, car(((closureN)self_731142)->elements[4]), ((closureN)self_731142)->elements[0]);; 
 }
 
 static void __lambda_171(void *data, int argc, object self_731143, object r_73605) {
@@ -8436,7 +8436,7 @@ c_732128.elements[3] = r_73605;
 c_732128.elements[4] = ((closureN)self_731143)->elements[3];
 c_732128.elements[5] = ((closureN)self_731143)->elements[4];
 
-return_closcall3(data,  __glo_Cyc_91er_91compare_127_scheme_cyclone_util,  &c_732128, cell_get(((closureN)self_731143)->elements[5]), cell_get(((closureN)self_731143)->elements[5]));; 
+return_closcall3(data,  __glo_Cyc_91er_91compare_127_scheme_cyclone_util,  &c_732128, car(((closureN)self_731143)->elements[5]), car(((closureN)self_731143)->elements[5]));; 
 }
 
 static void __lambda_170(void *data, int argc, object self_731144, object r_73606) {
@@ -8749,12 +8749,12 @@ c_732025.elements[0] = k_73642;
 c_732025.elements[1] = ((closureN)self_731161)->elements[0];
 c_732025.elements[2] = rest_91procs_73160;
 
-return_closcall3(data,  cell_get(((closureN)self_731161)->elements[1]),  &c_732025, first_91proc_73161, Cyc_car(data, rest_91procs_73160));}
+return_closcall3(data,  car(((closureN)self_731161)->elements[1]),  &c_732025, first_91proc_73161, Cyc_car(data, rest_91procs_73160));}
 ; 
 }
 
 static void __lambda_151(void *data, int argc, object self_731162, object r_73644) {
-  return_closcall3(data,  cell_get(((closureN)self_731162)->elements[1]),  ((closureN)self_731162)->elements[0], r_73644, Cyc_cdr(data, ((closureN)self_731162)->elements[2]));; 
+  return_closcall3(data,  car(((closureN)self_731162)->elements[1]),  ((closureN)self_731162)->elements[0], r_73644, Cyc_cdr(data, ((closureN)self_731162)->elements[2]));; 
 }
 
 static void __lambda_150(void *data, int argc, object self_731163, object r_73632) {
@@ -8817,7 +8817,7 @@ return_closcall1(data,(closure)&c_731991,  &c_731998);;
 }
 
 static void __lambda_147(void *data, int argc, object self_731166, object r_73634) {
-  return_closcall3(data,  cell_get(((closureN)self_731166)->elements[1]),  ((closureN)self_731166)->elements[0], Cyc_car(data, ((closureN)self_731166)->elements[2]), Cyc_cdr(data, ((closureN)self_731166)->elements[2]));; 
+  return_closcall3(data,  car(((closureN)self_731166)->elements[1]),  ((closureN)self_731166)->elements[0], Cyc_car(data, ((closureN)self_731166)->elements[2]), Cyc_cdr(data, ((closureN)self_731166)->elements[2]));; 
 }
 
 static void __lambda_146(void *data, int argc, object self_731167, object k_73637) {
