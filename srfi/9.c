@@ -1539,7 +1539,7 @@ return_closcall3(data,  __glo__191list_91index_srfi_9,  &c_73614, ((closureN)sel
 
 static void __lambda_24(void *data, int argc, object self_73447, object r_73351) {
   
-common_type local_73619; object c_73620 = Cyc_fast_sum(data,&local_73619,obj_int2obj(1), r_73351);
+double_type local_73619; object c_73620 = Cyc_fast_sum(data,&local_73619,obj_int2obj(1), r_73351);
 return_closcall1(data,  ((closureN)self_73447)->elements[0],  c_73620);; 
 }
 

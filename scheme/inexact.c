@@ -327,18 +327,18 @@ load_varargs(z2_739, z2_739_raw, argc - 2);
   Cyc_st_add(data, "scheme/inexact.sld:log");
 if( (boolean_f != Cyc_is_null(z2_739)) ){ 
   
-common_type local_73110; object c_73111 = ((inline_function_type)
+double_type local_73110; object c_73111 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73110,z1_7310);
 return_closcall1(data,  k_7323,  c_73111);
 } else { 
   
-common_type local_73119; object c_73120 = ((inline_function_type)
+double_type local_73119; object c_73120 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73119,z1_7310);
 
-common_type local_73123; object c_73124 = ((inline_function_type)
+double_type local_73123; object c_73124 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73123,Cyc_car(data, z2_739));
 
-common_type local_73115; object c_73116 = Cyc_fast_div(data,&local_73115,c_73120, c_73124);
+double_type local_73115; object c_73116 = Cyc_fast_div(data,&local_73115,c_73120, c_73124);
 return_closcall1(data,  k_7323,  c_73116);}
 ; 
 }

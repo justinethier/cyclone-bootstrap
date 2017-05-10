@@ -1058,7 +1058,7 @@ c_73140.elements[2] = has_91cont_7311;
 c_73140.elements[3] = ((closureN)self_73123)->elements[2];
 
 
-common_type local_73152; object c_73153 = Cyc_fast_sum(data,&local_73152,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
+double_type local_73152; object c_73153 = Cyc_fast_sum(data,&local_73152,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
 return_closcall1(data,(closure)&c_73140,  c_73153);; 
 }
 
