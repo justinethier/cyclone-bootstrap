@@ -631,6 +631,14 @@
                  ,(opt:contract (if->else exp))))))
         ; Application:
         ((app? exp)
+         ;; Hack to test this idea
+         ;; TODO: was testing this with the fibc program
+         ;; TODO: real solution is to have a separate beta expansion phase after opt:contract.
+         ;;       will need to pass over all the code and expand here in the (app?) clause
+         (if (beta-expand? exp)
+             (set! exp (beta-expand exp)))
+         ;; END
+
          (let* ((fnc (opt:contract (car exp))))
            (cond
             ((and (ast:lambda? fnc)
@@ -1148,6 +1156,101 @@
             ;(reverse exp))))) ;; Ensure args are examined before function
         (else
           (error `(Unexpected expression passed to find inlinable vars ,exp)))))
+
+    (define (beta-expand? exp)
+      (cond
+        ((and (app? exp)
+              (ref? (car exp)))
+         (with-var (car exp) (lambda (var)
+           ;(= 1 (adbv:app-fnc-count var)) ;; TODO: too simplistic
+           ;; TODO: following causes problems on unit-test.scm.
+           ;;  Needs to be debugged more...
+           (let* ((fnc* (adbv:assigned-value var))
+                  (fnc (if (and (pair? fnc*)
+                                (ast:lambda? (car fnc*)))
+                           (car fnc*)
+                           fnc*)))
+             (and (ast:lambda? fnc)
+                  (not (adbv:reassigned? var))
+                  (not (fnc-depth>? (ast:lambda-body fnc) 4))))
+           )))
+        (else #f)))
+
+    (define (fnc-depth>? exp depth)
+      (call/cc
+        (lambda (return)
+          (define (scan exp depth)
+            (if (zero? depth) (return #t))
+            (cond
+              ((ast:lambda? exp)
+               (scan (ast:lambda-body exp) (- depth 1)))
+              ((quote? exp) #f)
+              ((app? exp)
+               (for-each 
+                (lambda (e)
+                  (scan e (- depth 1)))
+                exp))
+              (else #f)))
+          (scan exp depth)
+          (return #f))))
+
+    (define (beta-expand exp)
+      (let* ((args (cdr exp))
+             (var (adb:get (car exp)))
+             ;; Function definition, or #f if none
+             (fnc* (adbv:assigned-value var))
+             (fnc (if (and (pair? fnc*)
+                           (ast:lambda? (car fnc*)))
+                      (car fnc*)
+                      fnc*))
+             (formals (if (ast:lambda? fnc) (ast:lambda-args fnc) '()))
+             ;; First formal, or #f if none
+             (maybe-cont (if (and (list? formals) (pair? formals))
+                             (car formals)
+                             #f))
+             ;; function's continuation symbol, or #f if none
+             (cont (if maybe-cont
+                       (with-var maybe-cont (lambda (var)
+                         (if (adbv:cont? var) maybe-cont #f)))
+                       #f))
+            )
+;(trace:error `(JAE beta expand ,exp ,var ,fnc ,formals ,cont))
+        (cond
+         ;; TODO: what if fnc has no cont? do we need to handle differently?
+         ((and (ast:lambda? fnc)
+               (not (adbv:reassigned? var)) ;; Failsafe
+               (not (adbv:cont? var)) ;; TEST, don't delete a continuation
+               (list? formals)
+               (= (length args) (length formals)))
+          ;(trace:error `(JAE DEBUG beta expand ,exp))
+          (beta-expansion exp fnc) ; exp
+         )
+         (else exp)))) ;; beta expansion failed
+
+    ;; Replace function call with body of fnc
+    (define (beta-expansion exp fnc)
+      ;; Mapping from a formal => actual arg
+      (define formals/actuals 
+        (map cons (ast:lambda-args fnc) (cdr exp)))
+      (define (replace ref)
+        (let ((r (assoc ref formals/actuals)))
+            (if r (cdr r) ref)))
+      (define (scan exp)
+        (cond
+         ((ast:lambda? exp)
+          (ast:%make-lambda
+            (ast:lambda-id exp)
+            (ast:lambda-args exp)
+            (scan (ast:lambda-body exp))
+            (ast:lambda-has-cont exp)))
+         ((ref? exp)
+          (replace exp))
+         ((quote? exp)
+          exp)
+         ((app? exp)
+          (map scan exp))
+         (else exp)))
+      (scan (car (ast:lambda-body fnc))))
 
     (define (analyze-cps exp)
       (analyze-find-lambdas exp -1)
