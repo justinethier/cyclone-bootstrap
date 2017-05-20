@@ -19,8 +19,8 @@ repo=https://github.com/libtom/libtommath.git
 echo "Cloning $repo"
 git clone $repo
 cd libtommath
-LIBPATH=$INSTALL_RELATIVE/lib INCPATH=$INSTALL_RELATIVE/include make
-LIBPATH=$INSTALL_RELATIVE/lib INCPATH=$INSTALL_RELATIVE/include DESTDIR=$INSTALL_DIR make install
+LIBPATH=$INSTALL_DIR/$INSTALL_RELATIVE/lib INCPATH=$INSTALL_DIR/$INSTALL_RELATIVE/include make
+LIBPATH=$INSTALL_DIR/$INSTALL_RELATIVE/lib INCPATH=$INSTALL_DIR/$INSTALL_RELATIVE/include make install
 
 
 # Build and install concurrencykit
