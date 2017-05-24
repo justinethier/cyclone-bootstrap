@@ -7,11 +7,11 @@ Cyclone cannot be built directly on a system that does not have Cyclone binaries
 Supported Platforms
 -------------------
 
-Cyclone has been built and tested on Linux, Windows (using MSYS), and Mac.
-
-- **Windows Users** - please read [Instructions for building on Windows using MSYS](README.Windows.md).
+Cyclone has been built and tested on Linux, Mac, and Windows (using MSYS).
 
 - **Mac Users** - please read [Instructions for building on Mac](README.Mac.md).
+
+- **Windows Users** - please read [Instructions for building on Windows using MSYS](README.Windows.md).
 
 Otherwise please follow the instructions below to build and install Cyclone.
 
