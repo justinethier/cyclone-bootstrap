@@ -9,11 +9,11 @@ Supported Platforms
 
 Cyclone has been built and tested on Linux, Windows (using MSYS), and Mac.
 
-If you are installing on Windows please read [Instructions for building on Windows using MSYS](README.Windows.md).
+- **Windows Users** - please read [Instructions for building on Windows using MSYS](README.Windows.md).
 
-And if you are installing on Mac please read [Instructions for building on Mac](README.Mac.md).
+- **Mac Users** - please read [Instructions for building on Mac](README.Mac.md).
 
-Otherwise please follow the instructions below.
+Otherwise please follow the instructions below to build and install Cyclone.
 
 Packaged Installations
 ----------------------
