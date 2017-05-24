@@ -4,6 +4,17 @@ Cyclone is a brand-new, R<sup>7</sup>RS Scheme-to-C compiler that uses a variant
 
 Cyclone cannot be built directly on a system that does not have Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting). Instead, this repository uses pre-generated C code to build and install Cyclone Scheme on a fresh system. 
 
+Supported Platforms
+-------------------
+
+Cyclone has been built and tested on Linux, Windows (using MSYS), and Mac.
+
+If you are installing on Windows please read [Instructions for building on Windows using MSYS](README.Windows.md).
+
+And if you are installing on Mac please read [Instructions for building on Mac](README.Mac.md).
+
+Otherwise please follow the instructions below.
+
 Packaged Installations
 ----------------------
 
