@@ -1,7 +1,7 @@
-Instructions for building on Mac using gcc-6
---------------------------------------------
+Instructions for building on Mac 
+--------------------------------
 
-### Install Homebrew and gcc
+### Install Homebrew and gcc (You can skip this if you already have gcc from XCode)
 1. Please follow the instructions at https://brew.sh/ to install homebrew
 2. brew install gcc
 3. Install git from https://git-scm.com/
