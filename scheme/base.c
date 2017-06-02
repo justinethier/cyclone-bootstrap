@@ -22677,7 +22677,7 @@ c_739783.elements[3] = lists_731926;
 
 return_closcall1(data,(closure)&c_739783,  boolean_f);
 } else { 
-  if( (boolean_f != Cyc_eq(obj_int2obj(1), Cyc_length(data, lis1_731927))) ){ 
+  if( (boolean_f != Cyc_is_null(Cyc_cdr(data, lis1_731927))) ){ 
   return_closcall2(data,  f_731928,  k_734906, Cyc_car(data, lis1_731927));
 } else { 
   
