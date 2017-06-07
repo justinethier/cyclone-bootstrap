@@ -1707,7 +1707,7 @@ return_closcall1(data,(closure)&c_733955,  Cyc_is_null(((closureN)self_731189)->
 static void __lambda_311(void *data, int argc, object self_731190, object r_73593) {
   if( (boolean_f != r_73593) ){ 
   
-make_string(c_733958, "||");
+make_string(c_733958, "");
 return_closcall1(data,  ((closureN)self_731190)->elements[0],  &c_733958);
 } else { 
   
