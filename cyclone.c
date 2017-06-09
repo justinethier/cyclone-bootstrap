@@ -9700,6 +9700,7 @@ extern void c_schemecyclonecgen_entry_pt(void *data, int argc, closure cont, obj
 extern void c_schemelazy_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecase_91lambda_entry_pt(void *data, int argc, closure cont, object value);
 static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_cc_91lib = find_or_add_symbol("cc-lib");
   quote_cc_91so = find_or_add_symbol("cc-so");
   quote_cc_91prog = find_or_add_symbol("cc-prog");

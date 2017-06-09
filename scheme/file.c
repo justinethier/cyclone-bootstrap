@@ -631,6 +631,7 @@ void c_schemefile_inlinable_lambdas(void *data, int argc, closure _, object cont
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemefile_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote__121param_91convert_125 = find_or_add_symbol("<param-convert>");
   quote__121param_91set_67_125 = find_or_add_symbol("<param-set!>");
 

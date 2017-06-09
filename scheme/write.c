@@ -335,6 +335,7 @@ void c_schemewrite_inlinable_lambdas(void *data, int argc, closure _, object con
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemewrite_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117schemewrite_scheme_write);
   add_global((object *) &__glo_write_91simple_scheme_write);

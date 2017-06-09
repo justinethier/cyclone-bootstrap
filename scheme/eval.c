@@ -10236,6 +10236,7 @@ make_pair(c_732804, &pair_732788, &c_732803);
 (((closure)cont)->fn)(data, 1, cont, &c_732804);
  } 
 void c_schemeeval_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_procedure = find_or_add_symbol("procedure");
   quote_macro = find_or_add_symbol("macro");
   quote_call_95cc = find_or_add_symbol("call/cc");

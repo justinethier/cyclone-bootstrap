@@ -24955,6 +24955,7 @@ void c_schemecyclonetest_inlinable_lambdas(void *data, int argc, closure _, obje
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemecyclonetest_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_subgroups_91count = find_or_add_symbol("subgroups-count");
   quote_subgroups_91pass = find_or_add_symbol("subgroups-pass");
   quote_total_91pass = find_or_add_symbol("total-pass");

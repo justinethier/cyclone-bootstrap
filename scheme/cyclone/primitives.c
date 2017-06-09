@@ -7634,6 +7634,7 @@ void c_schemecycloneprimitives_inlinable_lambdas(void *data, int argc, closure _
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemecycloneprimitives_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_char_121_123_127 = find_or_add_symbol("char<=?");
   quote_char_125_123_127 = find_or_add_symbol("char>=?");
   quote_char_121_127 = find_or_add_symbol("char<?");

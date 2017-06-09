@@ -25,6 +25,7 @@ object Cyc_global_set(void *thd, object * glo, object value)
 {
   gc_mut_update((gc_thread_data *) thd, *glo, value);
   *(glo) = value;
+  ((gc_thread_data *) thd)->globals_changed = 1;
   return value;
 }
 
@@ -447,6 +448,11 @@ void debug_dump_globals()
       printf(" is NULL\n");
     }
   }
+}
+
+void Cyc_set_globals_changed(gc_thread_data *thd) 
+{
+  thd->globals_changed = 1;
 }
 
 /* END Global table */
@@ -4851,6 +4857,10 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont,
       if (is_value_type(o)) {
         // Can happen if a vector element was already
         // moved and we found an index. Just ignore it
+        //if (obj_is_char(o)) {
+        //  o = (object)(((uintptr_t) o) - 2);
+        //  gc_move2heap(o);
+        //}
       } else if (type_of(o) == pair_tag) {
         gc_move2heap(car(o));
         gc_move2heap(cdr(o));
@@ -4871,13 +4881,16 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont,
   }
   clear_mutations(data);        // Reset for next time
 
-  // Transport globals
-  gc_move2heap(Cyc_global_variables);   // Internal global used by the runtime
-  {
-    list l = global_table;
-    for (; l != NULL; l = cdr(l)) {
-      cvar_type *c = (cvar_type *) car(l);
-      gc_move2heap(*(c->pvar)); // Transport underlying global, not the pvar
+  if (((gc_thread_data *) data)->globals_changed) {
+      ((gc_thread_data *) data)->globals_changed = 0;
+    // Transport globals
+    gc_move2heap(Cyc_global_variables);   // Internal global used by the runtime
+    {
+      list l = global_table;
+      for (; l != NULL; l = cdr(l)) {
+        cvar_type *c = (cvar_type *) car(l);
+        gc_move2heap(*(c->pvar)); // Transport underlying global, not the pvar
+      }
     }
   }
 

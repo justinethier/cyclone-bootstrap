@@ -916,6 +916,7 @@ make_pair(c_73296, &pair_73294, &c_73295);
 (((closure)cont)->fn)(data, 1, cont, &c_73296);
  } 
 void c_srfi18_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_cyc_91thread_91obj = find_or_add_symbol("cyc-thread-obj");
 
   add_global((object *) &__glo_lib_91init_117srfi18_srfi_18);

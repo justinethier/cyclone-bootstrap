@@ -9614,6 +9614,7 @@ make_pair(c_734609, &pair_734608, NULL);
 (((closure)cont)->fn)(data, 1, cont, &c_734609);
  } 
 void c_srfi128_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_hash_127 = find_or_add_symbol("hash?");
   quote_ordering_127 = find_or_add_symbol("ordering?");
   quote_hash = find_or_add_symbol("hash");

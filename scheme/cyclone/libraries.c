@@ -4701,6 +4701,7 @@ make_pair(c_732479, &pair_732477, &c_732478);
 (((closure)cont)->fn)(data, 1, cont, &c_732479);
  } 
 void c_schemecyclonelibraries_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_sld = find_or_add_symbol("sld");
   quote_cyclone = find_or_add_symbol("cyclone");
   quote_srfi = find_or_add_symbol("srfi");

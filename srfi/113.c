@@ -11278,6 +11278,7 @@ void c_srfi113_inlinable_lambdas(void *data, int argc, closure _, object cont){
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_srfi113_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_multi_127 = find_or_add_symbol("multi?");
   quote_comparator = find_or_add_symbol("comparator");
   quote_hash_91table = find_or_add_symbol("hash-table");

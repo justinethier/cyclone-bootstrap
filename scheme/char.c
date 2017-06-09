@@ -846,6 +846,7 @@ void c_scheme_char_inlinable_lambdas(void *data, int argc, closure _, object con
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_scheme_char_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117scheme_191char_scheme__char);
   add_global((object *) &__glo_string_91foldcase_scheme__char);

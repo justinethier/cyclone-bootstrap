@@ -2770,6 +2770,7 @@ make_pair(c_731615, &pair_731614, NULL);
 (((closure)cont)->fn)(data, 1, cont, &c_731615);
  } 
 void c_srfi106_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote__75socket_91object_91type_75 = find_or_add_symbol("%socket-object-type%");
   quote_define_91c = find_or_add_symbol("define-c");
   quote_define = find_or_add_symbol("define");

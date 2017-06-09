@@ -20251,6 +20251,7 @@ make_pair(c_739983, &pair_739976, &c_739982);
 (((closure)cont)->fn)(data, 1, cont, &c_739983);
  } 
 void c_srfi1_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_error = find_or_add_symbol("error");
   quote__else = find_or_add_symbol("else");
   quote_car = find_or_add_symbol("car");

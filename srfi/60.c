@@ -3014,6 +3014,7 @@ void c_srfi60_inlinable_lambdas(void *data, int argc, closure _, object cont){
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_srfi60_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_define_91c = find_or_add_symbol("define-c");
 
   add_global((object *) &__glo_lib_91init_117srfi60_srfi_60);

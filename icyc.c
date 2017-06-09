@@ -1546,6 +1546,7 @@ extern void c_schemeload_entry_pt(void *data, int argc, closure cont, object val
 extern void c_schemelazy_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonepretty_91print_entry_pt(void *data, int argc, closure cont, object value);
 static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { 
+Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_usage);
   add_global((object *) &__glo_collect_91opt_91values);

@@ -199,6 +199,7 @@ void c_schemecyclonecommon_inlinable_lambdas(void *data, int argc, closure _, ob
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemecyclonecommon_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);
   add_global((object *) &__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);

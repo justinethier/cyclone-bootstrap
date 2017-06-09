@@ -446,6 +446,7 @@ void c_schemelazy_inlinable_lambdas(void *data, int argc, closure _, object cont
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemelazy_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_lambda = find_or_add_symbol("lambda");
   quote_make_91promise = find_or_add_symbol("make-promise");
 

@@ -16581,6 +16581,7 @@ void c_schemecyclonecps_91optimizations_inlinable_lambdas(void *data, int argc, 
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_schemecyclonecps_91optimizations_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_global = find_or_add_symbol("global");
   quote_defined_91by = find_or_add_symbol("defined-by");
   quote_defines_91lambda_91id = find_or_add_symbol("defines-lambda-id");

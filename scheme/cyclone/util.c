@@ -5448,6 +5448,7 @@ make_pair(c_733104, &pair_733089, &c_733103);
 (((closure)cont)->fn)(data, 1, cont, &c_733104);
  } 
 void c_schemecycloneutil_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_expr = find_or_add_symbol("expr");
   quote_free_91names = find_or_add_symbol("free-names");
   quote_env = find_or_add_symbol("env");

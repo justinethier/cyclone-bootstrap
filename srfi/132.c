@@ -15123,6 +15123,7 @@ void c_srfi132_inlinable_lambdas(void *data, int argc, closure _, object cont){
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
 void c_srfi132_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_vars = find_or_add_symbol("vars");
   quote_lambda = find_or_add_symbol("lambda");
   quote_call_91with_91values = find_or_add_symbol("call-with-values");

@@ -473,6 +473,7 @@ make_pair(c_73164, &pair_73155, &c_73163);
 (((closure)cont)->fn)(data, 1, cont, &c_73164);
  } 
 void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+Cyc_set_globals_changed((gc_thread_data *)data);
   quote_define_91c = find_or_add_symbol("define-c");
 
   add_global((object *) &__glo_lib_91init_117schemeinexact_scheme_inexact);
