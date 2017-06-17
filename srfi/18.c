@@ -652,7 +652,13 @@ static void __lambda_25(void *data, int argc, object self_73107, object r_7352) 
 
 static void __lambda_24(void *data, int argc, closure _, object k, object thread_data_opaque) { gc_thread_data *td = (gc_thread_data *)(opaque_ptr(thread_data_opaque));
         set_thread_blocked(data, k);
-        pthread_join(td->thread_id, NULL);
+        /* Cannot join to detached thread! pthread_join(td->thread_id, NULL);*/
+        while (1) {
+          if (!gc_is_mutator_active(td)){
+            break;
+          }
+          gc_sleep_ms(250);
+        }
         return_thread_runnable(data, boolean_t); }
 static void __lambda_23(void *data, int argc, closure _, object k) { Cyc_end_thread(data);  }
 static void __lambda_22(void *data, int argc, closure _,object k_7356) {

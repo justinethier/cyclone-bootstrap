@@ -195,6 +195,18 @@ void gc_remove_mutator(gc_thread_data * thd)
   pthread_mutex_unlock(&mutators_lock);
 }
 
+int gc_is_mutator_active(gc_thread_data *thd)
+{
+  ck_array_iterator_t iterator;
+  gc_thread_data *m;
+  CK_ARRAY_FOREACH(&Cyc_mutators, &iterator, &m) {
+    if (m == thd) {
+      return 1;
+    }
+  }
+  return 0;
+}
+
 /**
  * @brief Free thread data for all terminated mutators
  */
@@ -1818,6 +1830,19 @@ void *collector_main(void *arg)
     nanosleep(&tim, NULL);
   }
   return NULL;
+}
+
+/**
+ * @brief A high-resolution sleep function.
+ *
+ * @param  ms  Sleep time in milliseconds
+ */
+void gc_sleep_ms(int ms)
+{
+  struct timespec tim;
+  tim.tv_sec = 0;
+  tim.tv_nsec = ms * NANOSECONDS_PER_MILLISECOND;
+  nanosleep(&tim, NULL);
 }
 
 static pthread_t collector_thread;
