@@ -648,9 +648,9 @@ extern object __glo_analyze_91mutable_91variables_scheme_cyclone_transforms;
 extern object __glo_wrap_91mutables_scheme_cyclone_transforms;
 extern object __glo_alpha_91convert_scheme_cyclone_transforms;
 extern object __glo_cps_91convert_scheme_cyclone_transforms;
-extern object __glo_pos_91in_91list_scheme_cyclone_transforms;
-extern object __glo_closure_91convert_scheme_cyclone_transforms;
 extern object __glo_prim_91convert_scheme_cyclone_transforms;
+extern object __glo_closure_91convert_scheme_cyclone_cps_91optimizations;
+extern object __glo_pos_91in_91list_scheme_cyclone_cps_91optimizations;
 extern object __glo_inlinable_91top_91level_91lambda_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_optimize_91cps_scheme_cyclone_cps_91optimizations;
 extern object __glo_analyze_91cps_scheme_cyclone_cps_91optimizations;
@@ -7584,7 +7584,7 @@ c_732069.num_elements = 1;
 c_732069.elements = (object *)alloca(sizeof(object) * 1);
 c_732069.elements[0] = ((closureN)self_731112)->elements[2];
 
-return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_transforms,  &c_732069, ((closureN)self_731112)->elements[0], car(((closureN)self_731112)->elements[1]));}
+return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_cps_91optimizations,  &c_732069, ((closureN)self_731112)->elements[0], car(((closureN)self_731112)->elements[1]));}
 ; 
 }
 
@@ -7608,7 +7608,7 @@ c_732042.elements[1] = r_73581;
 
 double_type local_732056; object c_732057 = ((inline_function_type)
                    ((closure)__glo_define_91_125exp_191_191inline_191_191_scheme_cyclone_util)->fn)(data,&local_732056,((closureN)self_731114)->elements[0]);
-return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_transforms,  &c_732042, c_732057, car(((closureN)self_731114)->elements[1]));; 
+return_closcall3(data,  __glo_closure_91convert_scheme_cyclone_cps_91optimizations,  &c_732042, c_732057, car(((closureN)self_731114)->elements[1]));; 
 }
 
 static void __lambda_104(void *data, int argc, object self_731115, object r_73583) {
