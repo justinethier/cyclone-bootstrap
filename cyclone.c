@@ -5749,7 +5749,7 @@ static void __lambda_124(void *data, int argc, object self_731042, object r_7367
 }
 
 static void __lambda_123(void *data, int argc, object self_731043, object k_73691, object obj_73296) {
-  obj_73296;return_closcall2(data,  ((closureN)self_731043)->elements[0],  k_73691, boolean_f);;; 
+  return_closcall2(data,  ((closureN)self_731043)->elements[0],  k_73691, boolean_f);;; 
 }
 
 static void __lambda_122(void *data, int argc, object self_731044, object r_73549) {
