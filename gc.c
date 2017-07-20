@@ -88,6 +88,10 @@ static struct ck_malloc my_allocator = {
 };
 
 #if GC_DEBUG_TRACE
+const int NUM_ALLOC_SIZES = 10;
+static double allocated_size_counts[10] = {
+  0,0,0,0,0,
+  0,0,0,0,0};
 static double allocated_obj_counts[25] = {
   0,0,0,0,0,
   0,0,0,0,0,
@@ -100,6 +104,11 @@ static double allocated_heap_counts[4] = {0, 0, 0, 0};
 void print_allocated_obj_counts()
 {
   int i;
+  fprintf(stderr, "Allocated sizes:\n");
+  fprintf(stderr, "Size, Allocations\n");
+  for (i = 0; i < NUM_ALLOC_SIZES; i++){
+    fprintf(stderr, "%d, %lf\n", 32 + (i*32), allocated_size_counts[i]);
+  }
   fprintf(stderr, "Allocated objects:\n");
   fprintf(stderr, "Tag, Allocations\n");
   for (i = 0; i < 25; i++){
@@ -643,6 +652,11 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
 
         if (heap_type != HEAP_HUGE) {
           // Copy object into heap now to avoid any uninitialized memory issues
+          #if GC_DEBUG_TRACE
+          if (size < (32 * NUM_ALLOC_SIZES)) {
+            allocated_size_counts[(size / 32) - 1]++;
+          }
+          #endif
           gc_copy_obj(f2, obj, thd);
           //h->free_size -= gc_allocated_bytes(obj, NULL, NULL);
           ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type]), size);
@@ -1230,8 +1244,7 @@ static void mark_stack_or_heap_obj(gc_thread_data * thd, object obj, int locked)
 {
   if (!is_object_type(obj) || type_of(obj) == boolean_tag) {
     return;
-  }
-  else if (gc_is_stack_obj(thd, obj)) {
+  } else if (gc_is_stack_obj(thd, obj)) {
     // Set object to be marked after moved to heap by next GC.
     // This avoids having to recursively examine the stack now, 
     // which we have to do anyway during minor GC.
@@ -1314,7 +1327,7 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
       debug_print = 1;
 #endif
       // Mark thread "roots":
-      // Begin my marking current continuation, which may have already
+      // Begin by marking current continuation, which may have already
       // been on the heap prior to latest minor GC
       pthread_mutex_lock(&(thd->lock));
       gc_mark_gray(thd, thd->gc_cont);
