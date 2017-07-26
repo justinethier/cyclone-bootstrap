@@ -10,6 +10,7 @@
 ;(define-library (cps-optimizations) ;; For debugging via local unit tests
 (define-library (scheme cyclone cps-optimizations)
   (import (scheme base)
+          (scheme eval)
           (scheme cyclone util)
           (scheme cyclone ast)
           (scheme cyclone primitives)
@@ -61,6 +62,19 @@
       adbf:side-effects adbf:set-side-effects!
   )
   (begin
+    (define 
+      *contract-env* 
+      (let ((env (create-environment '() '())))
+        (eval '(define Cyc-fast-plus +) env)
+        (eval '(define Cyc-fast-sub -) env)
+        (eval '(define Cyc-fast-mul *) env)
+        (eval '(define Cyc-fast-div /) env)
+        (eval '(define Cyc-fast-eq =) env)
+        (eval '(define Cyc-fast-gt >) env)
+        (eval '(define Cyc-fast-lt <) env)
+        (eval '(define Cyc-fast-gte >=) env)
+        (eval '(define Cyc-fast-lte <=) env)
+        env))
     (define *adb* (make-hash-table))
     (define (adb:get-db) *adb*)
     (define (adb:clear!)
@@ -700,9 +714,17 @@
                    opt:contract
                      (reverse new-args)))))
             (else
-             (cons 
-               fnc
-               (map (lambda (e) (opt:contract e)) (cdr exp)))))))
+             (let ((result
+                     (cons 
+                       fnc
+                       (map (lambda (e) (opt:contract e)) (cdr exp)))))
+               (if (and (prim-call? exp)
+                        (precompute-prim-app? result))
+                   (with-handler
+                      (lambda (err) result)
+                      (eval result *contract-env*))
+                   result))
+             ))))
         (else 
           (error "CPS optimize [1] - Unknown expression" exp))))
 
