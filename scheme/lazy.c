@@ -255,151 +255,186 @@ extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(lambda);
 defsymbol(make_91promise);
-static void __lambda_9(void *data, int argc, closure _,object k_7320) ;
-static void __lambda_8(void *data, int argc, closure _,object k_7326, object proc_737) ;
-static void __lambda_7(void *data, int argc, object self_7360, object result_91ready_127_739, object result_738) ;
-static void __lambda_6(void *data, int argc, object self_7361, object result_91ready_127_739) ;
-static void __lambda_5(void *data, int argc, object self_7362, object result_738) ;
-static void __lambda_4(void *data, int argc, object self_7363, object k_7327) ;
-static void __lambda_3(void *data, int argc, object self_7364, object x_7310) ;
+static void __lambda_11(void *data, int argc, closure _,object k_7320) ;
+static void __lambda_10(void *data, int argc, closure _,object k_7326, object proc_737) ;
+static void __lambda_9(void *data, int argc, object self_7360, object result_91ready_127_739, object result_738) ;
+static void __lambda_8(void *data, int argc, object self_7361, object result_91ready_127_739) ;
+static void __lambda_7(void *data, int argc, object self_7362, object result_738) ;
+static void __lambda_6(void *data, int argc, object self_7363, object k_7327) ;
+static void __lambda_5(void *data, int argc, object self_7364, object x_7310) ;
+static void __lambda_4(void *data, int argc, object self_7365, object r_7329) ;
+static void __lambda_3(void *data, int argc, object self_7366, object r_7330) ;
 static void __lambda_2(void *data, int argc, closure _,object k_7333, object expr_7313, object rename_7312, object compare_7311) ;
 static void __lambda_1(void *data, int argc, closure _,object k_7346, object expr_7316, object rename_7315, object compare_7314) ;
 static void __lambda_0(void *data, int argc, closure _,object k_7359, object object_7317) ;
 
-static void __lambda_9(void *data, int argc, closure _,object k_7320) {
+static void __lambda_11(void *data, int argc, closure _,object k_7320) {
   Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
 return_closcall1(data,  k_7320,  global_set(__glo_promise_127_scheme_lazy, primitive_procedure_127));; 
 }
 
-static void __lambda_8(void *data, int argc, closure _,object k_7326, object proc_737) {
+static void __lambda_10(void *data, int argc, closure _,object k_7326, object proc_737) {
   Cyc_st_add(data, "scheme/lazy.sld:make-promise");
 
-closureN_type c_73107;
-c_73107.hdr.mark = gc_color_red;
- c_73107.hdr.grayed = 0;
-c_73107.tag = closureN_tag;
- c_73107.fn = (function_type)__lambda_7;
-c_73107.num_args = 2;
-c_73107.num_elements = 2;
-c_73107.elements = (object *)alloca(sizeof(object) * 2);
-c_73107.elements[0] = k_7326;
-c_73107.elements[1] = proc_737;
-
-return_closcall2(data,(closure)&c_73107,  boolean_f, boolean_f);; 
-}
-
-static void __lambda_7(void *data, int argc, object self_7360, object result_91ready_127_739, object result_738) {
-  
 closureN_type c_73109;
 c_73109.hdr.mark = gc_color_red;
  c_73109.hdr.grayed = 0;
 c_73109.tag = closureN_tag;
- c_73109.fn = (function_type)__lambda_6;
-c_73109.num_args = 1;
-c_73109.num_elements = 3;
-c_73109.elements = (object *)alloca(sizeof(object) * 3);
-c_73109.elements[0] = ((closureN)self_7360)->elements[0];
-c_73109.elements[1] = ((closureN)self_7360)->elements[1];
-c_73109.elements[2] = result_738;
+ c_73109.fn = (function_type)__lambda_9;
+c_73109.num_args = 2;
+c_73109.num_elements = 2;
+c_73109.elements = (object *)alloca(sizeof(object) * 2);
+c_73109.elements[0] = k_7326;
+c_73109.elements[1] = proc_737;
 
-
-make_cell(c_73152,result_91ready_127_739);
-return_closcall1(data,(closure)&c_73109,  &c_73152);; 
+return_closcall2(data,(closure)&c_73109,  boolean_f, boolean_f);; 
 }
 
-static void __lambda_6(void *data, int argc, object self_7361, object result_91ready_127_739) {
+static void __lambda_9(void *data, int argc, object self_7360, object result_91ready_127_739, object result_738) {
   
 closureN_type c_73111;
 c_73111.hdr.mark = gc_color_red;
  c_73111.hdr.grayed = 0;
 c_73111.tag = closureN_tag;
- c_73111.fn = (function_type)__lambda_5;
+ c_73111.fn = (function_type)__lambda_8;
 c_73111.num_args = 1;
 c_73111.num_elements = 3;
 c_73111.elements = (object *)alloca(sizeof(object) * 3);
-c_73111.elements[0] = ((closureN)self_7361)->elements[0];
-c_73111.elements[1] = ((closureN)self_7361)->elements[1];
-c_73111.elements[2] = result_91ready_127_739;
+c_73111.elements[0] = ((closureN)self_7360)->elements[0];
+c_73111.elements[1] = ((closureN)self_7360)->elements[1];
+c_73111.elements[2] = result_738;
 
 
-make_cell(c_73148,((closureN)self_7361)->elements[2]);
-return_closcall1(data,(closure)&c_73111,  &c_73148);; 
+make_cell(c_73156,result_91ready_127_739);
+return_closcall1(data,(closure)&c_73111,  &c_73156);; 
 }
 
-static void __lambda_5(void *data, int argc, object self_7362, object result_738) {
+static void __lambda_8(void *data, int argc, object self_7361, object result_91ready_127_739) {
   
-closureN_type c_73114;
-c_73114.hdr.mark = gc_color_red;
- c_73114.hdr.grayed = 0;
-c_73114.tag = closureN_tag;
- c_73114.fn = (function_type)__lambda_4;
-c_73114.num_args = 0;
-c_73114.num_elements = 3;
-c_73114.elements = (object *)alloca(sizeof(object) * 3);
-c_73114.elements[0] = ((closureN)self_7362)->elements[1];
-c_73114.elements[1] = result_738;
-c_73114.elements[2] = ((closureN)self_7362)->elements[2];
+closureN_type c_73113;
+c_73113.hdr.mark = gc_color_red;
+ c_73113.hdr.grayed = 0;
+c_73113.tag = closureN_tag;
+ c_73113.fn = (function_type)__lambda_7;
+c_73113.num_args = 1;
+c_73113.num_elements = 3;
+c_73113.elements = (object *)alloca(sizeof(object) * 3);
+c_73113.elements[0] = ((closureN)self_7361)->elements[0];
+c_73113.elements[1] = ((closureN)self_7361)->elements[1];
+c_73113.elements[2] = result_91ready_127_739;
 
-return_closcall1(data,  ((closureN)self_7362)->elements[0],  &c_73114);; 
+
+make_cell(c_73152,((closureN)self_7361)->elements[2]);
+return_closcall1(data,(closure)&c_73113,  &c_73152);; 
 }
 
-static void __lambda_4(void *data, int argc, object self_7363, object k_7327) {
+static void __lambda_7(void *data, int argc, object self_7362, object result_738) {
+  
+closureN_type c_73116;
+c_73116.hdr.mark = gc_color_red;
+ c_73116.hdr.grayed = 0;
+c_73116.tag = closureN_tag;
+ c_73116.fn = (function_type)__lambda_6;
+c_73116.num_args = 0;
+c_73116.num_elements = 3;
+c_73116.elements = (object *)alloca(sizeof(object) * 3);
+c_73116.elements[0] = ((closureN)self_7362)->elements[1];
+c_73116.elements[1] = result_738;
+c_73116.elements[2] = ((closureN)self_7362)->elements[2];
+
+return_closcall1(data,  ((closureN)self_7362)->elements[0],  &c_73116);; 
+}
+
+static void __lambda_6(void *data, int argc, object self_7363, object k_7327) {
   if( (boolean_f != car(((closureN)self_7363)->elements[2])) ){ 
   return_closcall1(data,  k_7327,  car(((closureN)self_7363)->elements[1]));
 } else { 
   
-closureN_type c_73124;
-c_73124.hdr.mark = gc_color_red;
- c_73124.hdr.grayed = 0;
-c_73124.tag = closureN_tag;
- c_73124.fn = (function_type)__lambda_3;
-c_73124.num_args = 1;
-c_73124.num_elements = 3;
-c_73124.elements = (object *)alloca(sizeof(object) * 3);
-c_73124.elements[0] = k_7327;
-c_73124.elements[1] = ((closureN)self_7363)->elements[1];
-c_73124.elements[2] = ((closureN)self_7363)->elements[2];
+closureN_type c_73126;
+c_73126.hdr.mark = gc_color_red;
+ c_73126.hdr.grayed = 0;
+c_73126.tag = closureN_tag;
+ c_73126.fn = (function_type)__lambda_5;
+c_73126.num_args = 1;
+c_73126.num_elements = 3;
+c_73126.elements = (object *)alloca(sizeof(object) * 3);
+c_73126.elements[0] = k_7327;
+c_73126.elements[1] = ((closureN)self_7363)->elements[1];
+c_73126.elements[2] = ((closureN)self_7363)->elements[2];
 
-return_closcall1(data,  ((closureN)self_7363)->elements[0],  &c_73124);}
+return_closcall1(data,  ((closureN)self_7363)->elements[0],  &c_73126);}
 ; 
 }
 
-static void __lambda_3(void *data, int argc, object self_7364, object x_7310) {
+static void __lambda_5(void *data, int argc, object self_7364, object x_7310) {
   if( (boolean_f != car(((closureN)self_7364)->elements[2])) ){ 
   return_closcall1(data,  ((closureN)self_7364)->elements[0],  car(((closureN)self_7364)->elements[1]));
 } else { 
-  Cyc_set_cell(data, ((closureN)self_7364)->elements[1], x_7310);Cyc_set_cell(data, ((closureN)self_7364)->elements[2], boolean_t);return_closcall1(data,  ((closureN)self_7364)->elements[0],  car(((closureN)self_7364)->elements[1]));;;}
+  
+closureN_type c_73136;
+c_73136.hdr.mark = gc_color_red;
+ c_73136.hdr.grayed = 0;
+c_73136.tag = closureN_tag;
+ c_73136.fn = (function_type)__lambda_4;
+c_73136.num_args = 1;
+c_73136.num_elements = 3;
+c_73136.elements = (object *)alloca(sizeof(object) * 3);
+c_73136.elements[0] = ((closureN)self_7364)->elements[0];
+c_73136.elements[1] = ((closureN)self_7364)->elements[1];
+c_73136.elements[2] = ((closureN)self_7364)->elements[2];
+
+return_closcall1(data,(closure)&c_73136,  Cyc_set_cell(data, ((closureN)self_7364)->elements[1], x_7310));}
 ; 
+}
+
+static void __lambda_4(void *data, int argc, object self_7365, object r_7329) {
+  
+closureN_type c_73138;
+c_73138.hdr.mark = gc_color_red;
+ c_73138.hdr.grayed = 0;
+c_73138.tag = closureN_tag;
+ c_73138.fn = (function_type)__lambda_3;
+c_73138.num_args = 1;
+c_73138.num_elements = 2;
+c_73138.elements = (object *)alloca(sizeof(object) * 2);
+c_73138.elements[0] = ((closureN)self_7365)->elements[0];
+c_73138.elements[1] = ((closureN)self_7365)->elements[1];
+
+return_closcall1(data,(closure)&c_73138,  Cyc_set_cell(data, ((closureN)self_7365)->elements[2], boolean_t));; 
+}
+
+static void __lambda_3(void *data, int argc, object self_7366, object r_7330) {
+  return_closcall1(data,  ((closureN)self_7366)->elements[0],  car(((closureN)self_7366)->elements[1]));; 
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_7333, object expr_7313, object rename_7312, object compare_7311) {
   Cyc_st_add(data, "scheme/lazy.sld:delay-force");
 
-make_pair(c_73102,Cyc_cadr(data, expr_7313), NULL);
+make_pair(c_73104,Cyc_cadr(data, expr_7313), NULL);
 
-make_pair(c_7399,NULL, &c_73102);
+make_pair(c_73101,NULL, &c_73104);
 
-make_pair(c_7396,quote_lambda, &c_7399);
+make_pair(c_7398,quote_lambda, &c_73101);
 
-make_pair(c_7393,&c_7396, NULL);
+make_pair(c_7395,&c_7398, NULL);
 
-make_pair(c_7390,quote_make_91promise, &c_7393);
-return_closcall1(data,  k_7333,  &c_7390);; 
+make_pair(c_7392,quote_make_91promise, &c_7395);
+return_closcall1(data,  k_7333,  &c_7392);; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7346, object expr_7316, object rename_7315, object compare_7314) {
   Cyc_st_add(data, "scheme/lazy.sld:delay");
 
-make_pair(c_7383,Cyc_cadr(data, expr_7316), NULL);
+make_pair(c_7385,Cyc_cadr(data, expr_7316), NULL);
 
-make_pair(c_7380,NULL, &c_7383);
+make_pair(c_7382,NULL, &c_7385);
 
-make_pair(c_7377,quote_lambda, &c_7380);
+make_pair(c_7379,quote_lambda, &c_7382);
 
-make_pair(c_7374,&c_7377, NULL);
+make_pair(c_7376,&c_7379, NULL);
 
-make_pair(c_7371,quote_make_91promise, &c_7374);
-return_closcall1(data,  k_7346,  &c_7371);; 
+make_pair(c_7373,quote_make_91promise, &c_7376);
+return_closcall1(data,  k_7346,  &c_7373);; 
 }
 
 static void __lambda_0(void *data, int argc, closure _,object k_7359, object object_7317) {
@@ -423,33 +458,33 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_force_scheme_lazy);
   add_symbol(quote_lambda);
   add_symbol(quote_make_91promise);
-  mclosure0(c_73153, (function_type)__lambda_9);c_73153.num_args = 0; 
-  __glo_lib_91init_117schemelazy_scheme_lazy = &c_73153; 
-  mclosure0(c_73105, (function_type)__lambda_8);c_73105.num_args = 1; 
-  __glo_make_91promise_scheme_lazy = &c_73105; 
-  mmacro(c_7386, (function_type)__lambda_2);c_7386.num_args = 3; 
-  __glo_delay_91force_scheme_lazy = &c_7386; 
-  mmacro(c_7367, (function_type)__lambda_1);c_7367.num_args = 3; 
-  __glo_delay_scheme_lazy = &c_7367; 
-  mclosure0(c_7365, (function_type)__lambda_0);c_7365.num_args = 1; 
-  __glo_force_scheme_lazy = &c_7365; 
+  mclosure0(c_73157, (function_type)__lambda_11);c_73157.num_args = 0; 
+  __glo_lib_91init_117schemelazy_scheme_lazy = &c_73157; 
+  mclosure0(c_73107, (function_type)__lambda_10);c_73107.num_args = 1; 
+  __glo_make_91promise_scheme_lazy = &c_73107; 
+  mmacro(c_7388, (function_type)__lambda_2);c_7388.num_args = 3; 
+  __glo_delay_91force_scheme_lazy = &c_7388; 
+  mmacro(c_7369, (function_type)__lambda_1);c_7369.num_args = 3; 
+  __glo_delay_scheme_lazy = &c_7369; 
+  mclosure0(c_7367, (function_type)__lambda_0);c_7367.num_args = 1; 
+  __glo_force_scheme_lazy = &c_7367; 
   __glo_promise_127_scheme_lazy = boolean_f; 
 
-  mclosure0(clo_73158, c_schemelazy_inlinable_lambdas); make_pair(pair_73157, find_or_add_symbol("c_schemelazy_inlinable_lambdas"), &clo_73158);
-  make_cvar(cvar_73159, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_pair(pair_73160, find_or_add_symbol("lib-init:schemelazy"), &cvar_73159);
-  make_cvar(cvar_73161, (object *)&__glo_promise_127_scheme_lazy);make_pair(pair_73162, find_or_add_symbol("promise?"), &cvar_73161);
-  make_cvar(cvar_73163, (object *)&__glo_make_91promise_scheme_lazy);make_pair(pair_73164, find_or_add_symbol("make-promise"), &cvar_73163);
-  make_cvar(cvar_73165, (object *)&__glo_delay_91force_scheme_lazy);make_pair(pair_73166, find_or_add_symbol("delay-force"), &cvar_73165);
-  make_cvar(cvar_73167, (object *)&__glo_delay_scheme_lazy);make_pair(pair_73168, find_or_add_symbol("delay"), &cvar_73167);
-  make_cvar(cvar_73169, (object *)&__glo_force_scheme_lazy);make_pair(pair_73170, find_or_add_symbol("force"), &cvar_73169);
-make_pair(c_73171, &pair_73157,Cyc_global_variables);
-make_pair(c_73172, &pair_73160, &c_73171);
-make_pair(c_73173, &pair_73162, &c_73172);
-make_pair(c_73174, &pair_73164, &c_73173);
-make_pair(c_73175, &pair_73166, &c_73174);
-make_pair(c_73176, &pair_73168, &c_73175);
-make_pair(c_73177, &pair_73170, &c_73176);
-Cyc_global_variables = &c_73177;
+  mclosure0(clo_73162, c_schemelazy_inlinable_lambdas); make_pair(pair_73161, find_or_add_symbol("c_schemelazy_inlinable_lambdas"), &clo_73162);
+  make_cvar(cvar_73163, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_pair(pair_73164, find_or_add_symbol("lib-init:schemelazy"), &cvar_73163);
+  make_cvar(cvar_73165, (object *)&__glo_promise_127_scheme_lazy);make_pair(pair_73166, find_or_add_symbol("promise?"), &cvar_73165);
+  make_cvar(cvar_73167, (object *)&__glo_make_91promise_scheme_lazy);make_pair(pair_73168, find_or_add_symbol("make-promise"), &cvar_73167);
+  make_cvar(cvar_73169, (object *)&__glo_delay_91force_scheme_lazy);make_pair(pair_73170, find_or_add_symbol("delay-force"), &cvar_73169);
+  make_cvar(cvar_73171, (object *)&__glo_delay_scheme_lazy);make_pair(pair_73172, find_or_add_symbol("delay"), &cvar_73171);
+  make_cvar(cvar_73173, (object *)&__glo_force_scheme_lazy);make_pair(pair_73174, find_or_add_symbol("force"), &cvar_73173);
+make_pair(c_73175, &pair_73161,Cyc_global_variables);
+make_pair(c_73176, &pair_73164, &c_73175);
+make_pair(c_73177, &pair_73166, &c_73176);
+make_pair(c_73178, &pair_73168, &c_73177);
+make_pair(c_73179, &pair_73170, &c_73178);
+make_pair(c_73180, &pair_73172, &c_73179);
+make_pair(c_73181, &pair_73174, &c_73180);
+Cyc_global_variables = &c_73181;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemelazy_scheme_lazy)->fn)(data, 1, cont, cont);
 }
