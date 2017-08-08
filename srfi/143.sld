@@ -8,7 +8,8 @@
 ;;;; Note the SRFI is still in DRAFT status.
 ;;;;
 (define-library (srfi 143)
-  (import (scheme base))
+  (import (scheme base)
+          (scheme inexact))
   (export
     fx-width fx-greatest fx-least
     fixnum?
@@ -27,10 +28,12 @@
     fxnot fxand fxior fxxor 
     fxarithmetic-shift 
     fxarithmetic-shift-left fxarithmetic-shift-right
-;  fxbit-count fxlength 
-    fxif ;fxbit-set? fxcopy-bit
-;  fxfirst-set-bit fxbit-field
-;  fxbit-field-rotate fxbit-field-reverse
+    fxbit-count 
+    fxlength 
+    fxif fxbit-set? fxcopy-bit
+    fxfirst-set-bit 
+    fxbit-field
+    fxbit-field-rotate fxbit-field-reverse
   )
   (inline
     fx-width
@@ -46,7 +49,11 @@
     fxnot fxand fxior fxxor 
     fxarithmetic-shift 
     fxarithmetic-shift-left fxarithmetic-shift-right
-    fxif
+    fxbit-count 
+    fxif fxbit-set? fxcopy-bit
+    fxfirst-set-bit 
+    fxbit-field
+    mask
   )
   (begin
     (define (fx-width) 31)
@@ -132,7 +139,75 @@
           (fxarithmetic-shift-right i (fxneg count))))
     (bin-num-op fxarithmetic-shift-left "<<")
     (bin-num-op fxarithmetic-shift-right ">>")
-    (define (fxif mask i j)
-      (fxior (fxand (fxnot mask) i) (fxand mask j)))
+
+    (define-c fxbit-count
+       "(void* data, int argc, closure _, object k, object i)"
+       " Cyc_check_fixnum(data, i);
+         unsigned int count = 0;
+         int n = obj_obj2int(i);
+         while (n) {
+           n &= (n - 1);
+           count++;
+         }
+         return_closcall1(data, k, obj_int2obj(count));")
+
+    (define (fxlength  i)
+      (ceiling (/ (log (if (fxnegative? i)
+                           (fxneg i)
+                           (fx+ 1 i)))
+                  (log 2))))
+
+    ;(define (fxif mask i j)
+    ;  (fxior (fxand (fxnot mask) i) (fxand mask j)))
+    (define (fxif mask n0 n1)
+      (fxior (fxand mask n0)
+             (fxand (fxnot mask) n1)))
+
+    (define-c fxbit-set?
+       "(void* data, int argc, closure _, object k, object index, object i)"
+       " Cyc_check_fixnum(data, index);
+         Cyc_check_fixnum(data, i);
+         int result = ((obj_obj2int(i)) & (1 << (obj_obj2int(index))));
+         return_closcall1(data, k, result ? boolean_t : boolean_f); ")
+
+    (define (fxcopy-bit index to bool)
+      (if bool
+          (fxior to (fxarithmetic-shift-left 1 index))
+          (fxand to (fxnot (fxarithmetic-shift-left 1 index)))))
+
+    ;; Helper function
+    (define (mask start end) (fxnot (fxarithmetic-shift-left -1 (- end start))))
+
+    (define (fxfirst-set-bit i) 
+      (if (fxzero? i)
+          -1
+          (- (fxbit-count (fxxor i (- i 1))) 1)))
+    
+    (define (fxbit-field n start end)
+      (fxand (mask start end) (fxarithmetic-shift n (- start))))
+
+    (define (fxbit-field-rotate n count start end)
+      (define width (fx- end start))
+      (set! count (modulo count width))
+      (let ((mask (fxnot (fxarithmetic-shift -1 width))))
+        (define zn (fxand mask (fxarithmetic-shift n (- start))))
+        (fxior (fxarithmetic-shift
+                 (fxior (fxand mask (fxarithmetic-shift zn count))
+                         (fxarithmetic-shift zn (- count width)))
+                 start)
+                (fxand (fxnot (fxarithmetic-shift mask start)) n))))
+    
+    (define (fxreverse k n)
+      (do ((m (if (negative? n) (fxnot n) n) (fxarithmetic-shift-right m 1))
+           (k (fx+ -1 k) (fx+ -1 k))
+           (rvs 0 (fxior (fxarithmetic-shift-left rvs 1) (fxand 1 m))))
+          ((fxnegative? k) (if (fxnegative? n) (fxnot rvs) rvs))))
+    
+    (define (fxbit-field-reverse n start end)
+      (define width (- end start))
+      (let ((mask (fxnot (fxarithmetic-shift-left -1 width))))
+        (define zn (fxand mask (fxarithmetic-shift-right n start)))
+        (fxior (fxarithmetic-shift-left (fxreverse width zn) start)
+                (fxand (fxnot (fxarithmetic-shift-left mask start)) n))))
   ))
 
