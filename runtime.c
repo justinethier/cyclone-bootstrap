@@ -5708,17 +5708,10 @@ void _read_whitespace(port_type *p) {}
 
 void _read_error(void *data, port_type *p, const char *msg) 
 {
-/* TODO: need equivalent of this:
-(define (parse-error msg lnum cnum)
-  (error
-    (string-append
-      "Error (line "
-      (number->string lnum)
-      ", char "
-      (number->string cnum)
-      "): "
-      msg)))
-*/
+  char buf[1024];
+  snprintf(buf, 1023, "Error (line %d, column %d): %s", 
+           p->line_num, p->col_num, msg);
+  Cyc_rt_raise_msg(data, buf);
 }
 
 void Cyc_io_read_token(void *data, object cont, object port)
