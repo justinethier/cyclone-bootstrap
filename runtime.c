@@ -5721,7 +5721,7 @@ void _read_error(void *data, port_type *p, const char *msg)
 */
 }
 
-void Cyc_read_token(void *data, object cont, object port)
+void Cyc_io_read_token(void *data, object cont, object port)
 {
   Cyc_check_port(data, port);
   port_type *p = (port_type *)port;
