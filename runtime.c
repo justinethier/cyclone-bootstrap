@@ -3442,6 +3442,11 @@ object Cyc_io_close_port(void *data, object port)
       ((port_type *)port)->mem_buf = NULL;
       ((port_type *)port)->mem_buf_len = 0;
     }
+    if (((port_type *)port)->tok_buf != NULL){
+      free( ((port_type *)port)->tok_buf );
+      ((port_type *)port)->tok_buf = NULL;
+      ((port_type *)port)->tok_buf_len = 0;
+    }
   }
   return port;
 }
@@ -5714,6 +5719,15 @@ void _read_error(void *data, port_type *p, const char *msg)
   Cyc_rt_raise_msg(data, buf);
 }
 
+void _read_return_atom(void *data, object cont, port_type *p) 
+{
+  // TODO: process tok_buf
+  p->tok_buf[p->tok_end + 1] = '\0'; // TODO: what if buffer is full?
+  p->tok_end = 0;
+  printf("TODO: return atom from %s\n", p->tok_buf);
+  return_closcall1(data, cont, boolean_f);
+}
+
 void Cyc_io_read_token(void *data, object cont, object port)
 {
   Cyc_check_port(data, port);
@@ -5749,6 +5763,7 @@ void Cyc_io_read_token(void *data, object cont, object port)
     c = p->mem_buf[p->buf_idx++];
     // If comment found, eat up comment chars
     if (c == ';') {
+      if (p->tok_end) _read_return_atom(data, cont, p);
       _read_line_comment(p);
       // TODO: but then what, want to go back
     } else if (c == '\n') {
@@ -5759,23 +5774,25 @@ void Cyc_io_read_token(void *data, object cont, object port)
       // TODO: if buffer is not empty, return that instead, otherwise return this:
       return_closcall1(data, cont, obj_char2obj(c));
 
-    // TODO: " (string)
-    // TODO: #
-    // TODO: | (literal identifier)
+    } else if (c == '"') {
+      Cyc_rt_raise_msg(data, "TODO: parsing for strings");
+    } else if (c == '#') {
+      Cyc_rt_raise_msg(data, "TODO: parsing for #");
     } else {
       // TODO: no, need to read chars into a new buffer. can be part of mem_buf with a 
       // starting idx, except:
       // - if a read is needed
       // - if token length exceeds mem_buf length
       // will need to figure something out, maybe copy out to another malloc'd buffer
-      // in those cases
-      _read_error(data, p, "Unhandled input sequence");
+      // in those cases. I think that might be the best strategy, to malloc then realloc.
+      // in this case we need the following:
+      // - token buffer
+      // - start index (for tokens in mem_buf)
+      // - end index (for tokens in token buf, 0 if token buf is empty)
+      //_read_error(data, p, "Unhandled input sequence");
+      p->tok_buf[p->tok_end++] = c;
     }
 
-    // Want to use buffer instead of copying chars each time, but
-    //     need a solution when another read is required, since that would
-    //     overwrite buffer
-    // Raise an exception if any errors are found
   }
 }
 
