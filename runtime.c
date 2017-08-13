@@ -5724,6 +5724,7 @@ void _read_return_atom(void *data, object cont, port_type *p)
   // Back up a char, since we always get here after reaching a terminal char
   // indicating we have the full atom
   p->buf_idx--;
+  p->col_num--;
 
   p->tok_buf[p->tok_end + 1] = '\0'; // TODO: what if buffer is full?
   p->tok_end = 0; // Reset for next atom
@@ -5749,6 +5750,8 @@ void Cyc_io_read_token(void *data, object cont, object port)
 
     // Process input one char at a time
     c = p->mem_buf[p->buf_idx++];
+    p->col_num++;
+
     // If comment found, eat up comment chars
     if (c == ';') {
       if (p->tok_end) _read_return_atom(data, cont, p);
@@ -5757,6 +5760,7 @@ void Cyc_io_read_token(void *data, object cont, object port)
     } else if (c == '\n') {
       if (p->tok_end) _read_return_atom(data, cont, p);
       p->line_num++;
+      p->col_num = 0;
     } else if (isspace(c)) {
       if (p->tok_end) _read_return_atom(data, cont, p);
       _read_whitespace(p);
@@ -5770,17 +5774,12 @@ void Cyc_io_read_token(void *data, object cont, object port)
     } else if (c == '#' && !p->tok_end) {
       Cyc_rt_raise_msg(data, "TODO: parsing for #");
     } else {
-      // TODO: no, need to read chars into a new buffer. can be part of mem_buf with a 
-      // starting idx, except:
-      // - if a read is needed
-      // - if token length exceeds mem_buf length
-      // will need to figure something out, maybe copy out to another malloc'd buffer
-      // in those cases. I think that might be the best strategy, to malloc then realloc.
-      // in this case we need the following:
-      // - token buffer
-      // - start index (for tokens in mem_buf)
-      // - end index (for tokens in token buf, 0 if token buf is empty)
-      //_read_error(data, p, "Unhandled input sequence");
+      // No special meaning, add char to current token (an atom)
+
+      // TODO: need to realloc if tok_end == (tok_buf_len - 1) 
+      // this accounts for the \0 that needs to be appended when parsing the atom
+      // FUTURE: more efficient to try and use mem_buf directly??
+      //         complicates things with more edge cases though
       p->tok_buf[p->tok_end++] = c;
     }
 
