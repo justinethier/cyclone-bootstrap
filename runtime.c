@@ -5941,7 +5941,39 @@ void Cyc_io_read_token(void *data, object cont, object port)
       if (p->tok_end) _read_return_atom(data, cont, p);
       _read_string(data, cont, p);
     } else if (c == '#' && !p->tok_end) {
-      Cyc_rt_raise_msg(data, "TODO: parsing for #");
+      _read_next_char(data, cont, p); // Fill buffer
+      c = p->mem_buf[p->buf_idx++];
+      p->col_num++;
+      // TODO: block comment
+      if (c == 't') {
+        if ((p->mem_buf_len - p->buf_idx) >= 3 &&
+            p->mem_buf[p->buf_idx + 0] == 'r' &&
+            p->mem_buf[p->buf_idx + 1] == 'u' &&
+            p->mem_buf[p->buf_idx + 2] == 'e') {
+          p->buf_idx += 3;
+          p->col_num += 3;
+        }
+        return_closcall1(data, cont, boolean_t);
+      } else if (c == 'f') {
+        if ((p->mem_buf_len - p->buf_idx) >= 4 &&
+            p->mem_buf[p->buf_idx + 0] == 'a' &&
+            p->mem_buf[p->buf_idx + 1] == 'l' &&
+            p->mem_buf[p->buf_idx + 2] == 's' &&
+            p->mem_buf[p->buf_idx + 3] == 'e') {
+          p->buf_idx += 4;
+          p->col_num += 4;
+        }
+        return_closcall1(data, cont, boolean_f);
+      // TODO: numbers
+      // TODO: bytevector
+      // TODO: vector
+      } else if (c == '(') {
+        make_empty_vector(vec);
+        return_closcall1(data, cont, &vec);
+      }
+      // TODO: character
+      // TODO: datum comment
+      _read_error(data, p, "Unhandled input sequence");
     } else {
       // No special meaning, add char to current token (an atom)
       _read_add_to_tok_buf(p, c);
