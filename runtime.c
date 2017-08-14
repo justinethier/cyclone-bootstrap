@@ -5795,9 +5795,33 @@ void _read_string(void *data, object cont, port_type *p)
       case 't':
         _read_add_to_tok_buf(p, '\t');
         break;
-      case 'x':
-        // TODO: read hex scalar value
+      case 'x': {
+        char buf[32];
+        int i = 0;
+        while (i < 31){
+          if (p->mem_buf_len == 0 || p->mem_buf_len == p->buf_idx) { 
+            int rv = read_from_port(p); 
+            if (!rv) { 
+              break;
+            }
+          }
+          if (p->mem_buf[p->buf_idx] == ';'){
+            p->buf_idx++;
+            break;
+          }
+          buf[i] = p->mem_buf[p->buf_idx];
+          p->buf_idx++;
+          p->col_num++;
+          i++;
+        }
+        buf[i] = '\0';
+        {
+          int result = (int)strtol(buf, NULL, 16);
+          //return_closcall1(data, cont, obj_char2obj(result));
+          p->tok_buf[p->tok_end++] = (char)result;
+        }
         break;
+      }
       default:
         _read_error(data, p, "invalid escape character in string"); // TODO: char
         break;
