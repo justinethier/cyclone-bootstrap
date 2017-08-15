@@ -5923,6 +5923,58 @@ int _read_is_numeric(const char *tok)
            ((len > 1) && (tok[1] == '.' || isdigit(tok[1])) && (tok[0] == '-' || tok[0] == '+'))));
 }
 
+int _read_is_hex_digit(char c)
+{
+  return (c >= 'a' && c <= 'f') ||
+         (c >= 'A' && c <= 'F');
+}
+
+void _read_return_number(void *data, port_type *p, int base, int exact)
+{
+  // TODO: validation?
+  p->tok_buf[p->tok_end] = '\0'; // TODO: what if buffer is full?
+  p->tok_end = 0; // Reset for next atom
+  make_empty_vector(vec);
+  make_string(str, p->tok_buf);
+  vec.num_elements = 3;
+  vec.elements = (object *) alloca(sizeof(object) * vec.num_elements);
+  vec.elements[0] = &str;
+  vec.elements[1] = obj_int2obj(base);
+  vec.elements[2] = exact ? boolean_t : boolean_f;
+  return_thread_runnable(data, &vec);
+}
+
+void _read_number(void *data, port_type *p, int base, int exact) 
+{
+  char c;
+  while(1) {
+    // Read more data into buffer, if needed
+    if (p->buf_idx == p->mem_buf_len) {
+      if (!read_from_port(p)){
+        _read_return_number(data, p, base, exact);
+      }
+    }
+    c = p->mem_buf[p->buf_idx++];
+    p->col_num++;
+
+    if (isdigit(c)) {
+      if ((base == 2 && c > '1') ||
+          (base == 8 && c > '7')) {
+        _read_error(data, p, "Illegal digit");
+      }
+      _read_add_to_tok_buf(p, c);
+    } else if (c == '+' || c == '-' || c == '.') {
+      _read_add_to_tok_buf(p, c);
+    } else if (base == 16 && _read_is_hex_digit(c)) {
+      _read_add_to_tok_buf(p, c);
+    } else {
+      p->buf_idx--;
+      p->col_num--;
+      _read_return_number(data, p, base, exact);
+    }
+  }
+}
+
 void _read_return_atom(void *data, object cont, port_type *p) 
 {
   object sym;
@@ -5937,17 +5989,11 @@ void _read_return_atom(void *data, object cont, port_type *p)
   if (_read_is_numeric(p->tok_buf)) {
     make_empty_vector(vec);
     make_string(str, p->tok_buf);
-
     vec.num_elements = 2;
     vec.elements = (object *) alloca(sizeof(object) * vec.num_elements);
     vec.elements[0] = &str;
     vec.elements[1] = obj_int2obj(10);
     return_thread_runnable(data, &vec);
-
-    //Cyc_string2number_(data, cont, &str);
-    // TODO: can't do that, need to return_thread_runnable
-    // for now could cheat (just like with errors): return a specially-marked
-    // vector and call string->number on buf from there
   } else if (strncmp("+inf.0", p->tok_buf, 6) == 0 ||
              strncmp("-inf.0", p->tok_buf, 6) == 0) {
     make_double(d, pow(2.0, 1000000));
@@ -6044,28 +6090,16 @@ void Cyc_io_read_token(void *data, object cont, object port)
         }
         return_thread_runnable(data, boolean_f);
       // TODO: character
-      // TODO: numbers
-              /*
-              ((eq? #\e next-c)
-               (parse-number fp toks all? parens ptbl 
-                 10 (lambda (num)
-                      (exact
-                        (string->number (list->string num))))))
-              ((eq? #\i next-c)
-               (parse-number fp toks all? parens ptbl 
-                 10 (lambda (num)
-                      (inexact
-                        (string->number (list->string num))))))
-              ((eq? #\b next-c)
-               (parse-number fp toks all? parens ptbl 
-                 2 (lambda (num) (string->number (list->string num) 2))))
-              ((eq? #\o next-c)
-               (parse-number fp toks all? parens ptbl 
-                 8 (lambda (num) (string->number (list->string num) 8))))
-              ((eq? #\x next-c)
-               (parse-number fp toks all? parens ptbl 
-                 16 (lambda (num) (string->number (list->string num) 16))))
-              */
+      } else if (c == 'e') {
+        _read_number(data, p, 10, 1);
+      } else if (c == 'i') {
+        _read_number(data, p, 10, 0);
+      } else if (c == 'b') {
+        _read_number(data, p, 2, 1);
+      } else if (c == 'o') {
+        _read_number(data, p, 8, 1);
+      } else if (c == 'x') {
+        _read_number(data, p, 16, 1);
       } else if (c == '(') { // Vector
         make_empty_vector(vec);
         return_thread_runnable(data, &vec);
@@ -6099,31 +6133,6 @@ void Cyc_io_read_token(void *data, object cont, object port)
       }
     } else if (c == '|' && !p->tok_end) {
       _read_literal_identifier(data, p);
-/*
-;; Parse literal identifier encountered within pipes
-(define (parse-literal-identifier fp toks all? parens ptbl)
-  (let ((sym (parse-li-rec fp '() ptbl)))
-    (if all?
-      (parse fp '() (cons sym toks) all? #f parens ptbl)
-      sym)))
-
-;; Helper for parse-literal-identifier
-(define (parse-li-rec fp tok ptbl)
-  (let ((c (get-next-char fp ptbl))
-        (next (lambda (c) (parse-li-rec fp (cons c tok) ptbl))))
-    (cond
-      ((eq? #\| c) 
-       (let ((str (if (null? tok) 
-                      ""
-                      (list->string 
-                        (reverse tok)))))
-        (string->symbol str)))
-      ((eof-object? c) 
-       (parse-error "EOF encountered parsing literal identifier" 
-         (in-port:get-lnum ptbl)
-         (in-port:get-cnum ptbl)))
-      (else
-        (next c))))) */
     } else {
       // No special meaning, add char to current token (an atom)
       _read_add_to_tok_buf(p, c);
