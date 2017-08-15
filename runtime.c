@@ -5999,6 +5999,9 @@ void Cyc_io_read_token(void *data, object cont, object port)
       if (c == '|') {
         _read_multiline_comment(p);
         continue;
+      } else if (c == ';') { // Datum comment
+        object sym = find_or_add_symbol("#;");
+        return_thread_runnable(data, sym);
       } else if (c == 't') {
         if ((p->mem_buf_len - p->buf_idx) >= 3 &&
             p->mem_buf[p->buf_idx + 0] == 'r' &&
