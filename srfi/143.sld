@@ -22,7 +22,7 @@
     fxsquare 
     fxsqrt 
 
-    ; TODO: 
+    ; TODO: requires SRFI 141
     ;  fx+/carry fx-/carry fx*/carry
 
     fxnot fxand fxior fxxor 
@@ -59,6 +59,7 @@
     (define (fx-width) 31)
     (define (fx-greatest) 1073741823)
     (define (fx-least)   -1073741824)
+
     (define-syntax bin-num-op
       (er-macro-transformer
         (lambda (expr rename compare)
@@ -76,6 +77,8 @@
                     " object result = obj_int2obj(obj_obj2int(i) " op-str " obj_obj2int(j));
                       return_closcall1(data, k, result); ")))
             `(define-c ,fnc ,args ,body)))))
+
+    ;; TODO: should be able to support any number of arguments
     (define-syntax cmp-op
       (er-macro-transformer
         (lambda (expr rename compare)
