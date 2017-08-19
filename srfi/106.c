@@ -1824,7 +1824,7 @@ return_closcall2(data,  __glo__75socket_91output_91port_srfi_106,  k_73564, Cyc_
 }
 
 static void __lambda_55(void *data, int argc, closure _, object k, object sockfd) { FILE *fp = fdopen(obj_obj2int(sockfd), "r");
-        make_port(port, fp, 1);
+        make_input_port(port, fp, 1);
         return_closcall1(data, k, &port); }
 static void __lambda_54(void *data, int argc, closure _,object k_73568, object sock_73266) {
   Cyc_st_add(data, "srfi/106.sld:socket-input-port");
