@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2017 Justin Ethier
- ** Version 0.6.1 
+ ** Version 0.6.2 
  **
  **/
 
@@ -530,6 +530,8 @@ extern object __glo_mangle_scheme_cyclone_util;
 extern object __glo_mangle_91global_scheme_cyclone_util;
 extern object __glo_define_91c_91inline_127_scheme_cyclone_util;
 extern object __glo_define_91c_91_125inline_91var_scheme_cyclone_util;
+extern object __glo_string_91join_scheme_cyclone_util;
+extern object __glo_string_91split_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
@@ -550,7 +552,6 @@ extern object __glo_emit_85_scheme_cyclone_cgen;
 extern object __glo_emits_scheme_cyclone_cgen;
 extern object __glo_emits_85_scheme_cyclone_cgen;
 extern object __glo_emit_91newline_scheme_cyclone_cgen;
-extern object __glo_string_91join_scheme_cyclone_cgen;
 extern object __glo_prim_127_scheme_cyclone_primitives;
 extern object __glo__85primitives_85_scheme_cyclone_primitives;
 extern object __glo__85primitives_91num_91args_85_scheme_cyclone_primitives;
@@ -774,6 +775,9 @@ extern object __glo_procedure_91parameters_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91body_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91environment_191_191inline_191_191_scheme_eval;
 extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval;
+extern object __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read;
+extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_read;
+extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
 extern object __glo_tagged_91list_127_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_if_91_125condition_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_if_91_125then_191_191inline_191_191_scheme_cyclone_util;

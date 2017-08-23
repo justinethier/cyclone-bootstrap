@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2017 Justin Ethier
- ** Version 0.6.1 
+ ** Version 0.6.2 
  **
  **/
 
@@ -347,6 +347,8 @@ extern object __glo_mangle_scheme_cyclone_util;
 extern object __glo_mangle_91global_scheme_cyclone_util;
 extern object __glo_define_91c_91inline_127_scheme_cyclone_util;
 extern object __glo_define_91c_91_125inline_91var_scheme_cyclone_util;
+extern object __glo_string_91join_scheme_cyclone_util;
+extern object __glo_string_91split_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
 extern object __glo_delete_scheme_cyclone_util;
 extern object __glo_delete_91duplicates_scheme_cyclone_util;
@@ -603,6 +605,9 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read;
+extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_read;
+extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
 #include "cyclone/runtime.h"
 defsymbol(procedure);
 defsymbol(macro);
