@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2017 Justin Ethier
- ** Version 0.6.2 
+ ** Version 0.6.3 
  **
  **/
 
@@ -508,6 +508,8 @@ extern object __glo_newline_scheme_base;
 extern object __glo_write_91char_scheme_base;
 extern object __glo_write_91string_scheme_base;
 extern object __glo_flush_91output_91port_scheme_base;
+extern object __glo_peek_91char_scheme_base;
+extern object __glo_read_91char_scheme_base;
 extern object __glo_read_91line_scheme_base;
 extern object __glo_read_91string_scheme_base;
 extern object __glo_input_91port_127_scheme_base;
@@ -6894,7 +6896,7 @@ c_732634.elements[48] = ((closureN)self_731085)->elements[48];
 c_732634.elements[49] = ((closureN)self_731085)->elements[49];
 c_732634.elements[50] = r_73326;
 
-return_closcall3(data,  __glo__list_scheme_base,  &c_732634, quote_read_91char, primitive_read_91char);; 
+return_closcall3(data,  __glo__list_scheme_base,  &c_732634, quote_read_91char, __glo_read_91char_scheme_base);; 
 }
 
 static void __lambda_226(void *data, int argc, object self_731086, object r_73327) {
@@ -6960,7 +6962,7 @@ c_732636.elements[49] = ((closureN)self_731086)->elements[49];
 c_732636.elements[50] = ((closureN)self_731086)->elements[50];
 c_732636.elements[51] = r_73327;
 
-return_closcall3(data,  __glo__list_scheme_base,  &c_732636, quote_peek_91char, primitive_peek_91char);; 
+return_closcall3(data,  __glo__list_scheme_base,  &c_732636, quote_peek_91char, __glo_peek_91char_scheme_base);; 
 }
 
 static void __lambda_225(void *data, int argc, object self_731087, object r_73328) {

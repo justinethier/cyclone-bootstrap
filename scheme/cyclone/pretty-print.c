@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2017 Justin Ethier
- ** Version 0.6.2 
+ ** Version 0.6.3 
  **
  **/
 
@@ -360,6 +360,8 @@ extern object __glo_newline_scheme_base;
 extern object __glo_write_91char_scheme_base;
 extern object __glo_write_91string_scheme_base;
 extern object __glo_flush_91output_91port_scheme_base;
+extern object __glo_peek_91char_scheme_base;
+extern object __glo_read_91char_scheme_base;
 extern object __glo_read_91line_scheme_base;
 extern object __glo_read_91string_scheme_base;
 extern object __glo_input_91port_127_scheme_base;

@@ -260,6 +260,8 @@ extern object __glo_newline_scheme_base;
 extern object __glo_write_91char_scheme_base;
 extern object __glo_write_91string_scheme_base;
 extern object __glo_flush_91output_91port_scheme_base;
+extern object __glo_peek_91char_scheme_base;
+extern object __glo_read_91char_scheme_base;
 extern object __glo_read_91line_scheme_base;
 extern object __glo_read_91string_scheme_base;
 extern object __glo_input_91port_127_scheme_base;
@@ -382,7 +384,7 @@ defsymbol(Cyc_91flush_91output_91port);
 defsymbol(file_91exists_127);
 defsymbol(delete_91file);
 defsymbol(Cyc_91read_91char);
-defsymbol(peek_91char);
+defsymbol(Cyc_91peek_91char);
 defsymbol(Cyc_91read_91line);
 defsymbol(Cyc_91display);
 defsymbol(Cyc_91write);
@@ -757,7 +759,7 @@ make_pair(c_734714,quote_Cyc_91write_91char,&c_734715);
 
 make_pair(c_734713,quote_Cyc_91read_91line,&c_734714);
 
-make_pair(c_734712,quote_peek_91char,&c_734713);
+make_pair(c_734712,quote_Cyc_91peek_91char,&c_734713);
 
 make_pair(c_734711,quote_Cyc_91read_91char,&c_734712);
 
@@ -1905,7 +1907,7 @@ make_pair(c_734550,obj_int2obj(1),NULL);
 
 make_pair(c_734549,obj_int2obj(1),&c_734550);
 
-make_pair(c_734548,quote_peek_91char,&c_734549);
+make_pair(c_734548,quote_Cyc_91peek_91char,&c_734549);
 
 make_pair(c_734554,obj_int2obj(1),NULL);
 
@@ -3036,7 +3038,7 @@ make_pair(c_733526,quote_list_91_125string,&c_733527);
 
 make_pair(c_733525,quote_symbol_91_125string,&c_733526);
 
-make_pair(c_733524,quote_peek_91char,&c_733525);
+make_pair(c_733524,quote_Cyc_91peek_91char,&c_733525);
 
 make_pair(c_733523,quote_Cyc_91read_91char,&c_733524);
 
@@ -3094,7 +3096,7 @@ static void __lambda_175(void *data, int argc, object self_731402, object r_7389
   if( (boolean_f != r_73895) ){ 
     make_pair(c_733437,quote_cell,NULL);
   make_pair(c_733436,quote_cons,&c_733437);
-  make_pair(c_733435,quote_peek_91char,&c_733436);
+  make_pair(c_733435,quote_Cyc_91peek_91char,&c_733436);
   make_pair(c_733434,quote_Cyc_91read_91char,&c_733435);
   make_pair(c_733433,quote_Cyc_91read_91line,&c_733434);
   make_pair(c_733432,quote_command_91line_91arguments,&c_733433);
@@ -3149,7 +3151,7 @@ make_pair(c_733493,quote_cell,NULL);
 
 make_pair(c_733492,quote_cons,&c_733493);
 
-make_pair(c_733491,quote_peek_91char,&c_733492);
+make_pair(c_733491,quote_Cyc_91peek_91char,&c_733492);
 
 make_pair(c_733490,quote_Cyc_91read_91char,&c_733491);
 
@@ -3422,7 +3424,7 @@ return_closcall1(data,  k_73900,  &c_733307);
 make_string(c_733311, "object");
 return_closcall1(data,  k_73900,  &c_733311);
 } else { 
-  if( (boolean_f != Cyc_eq(p_73728, quote_peek_91char)) ){ 
+  if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91peek_91char)) ){ 
   
 make_string(c_733315, "object");
 return_closcall1(data,  k_73900,  &c_733315);
@@ -3637,7 +3639,7 @@ static void __lambda_172(void *data, int argc, closure _,object k_731014, object
   make_pair(c_733001,quote_integer_91_125char,&c_733002);
   make_pair(c_733000,quote_Cyc_91write_91char,&c_733001);
   make_pair(c_732999,quote_Cyc_91read_91line,&c_733000);
-  make_pair(c_732998,quote_peek_91char,&c_732999);
+  make_pair(c_732998,quote_Cyc_91peek_91char,&c_732999);
   make_pair(c_732997,quote_Cyc_91read_91char,&c_732998);
   make_pair(c_732996,quote_delete_91file,&c_732997);
   make_pair(c_732995,quote_file_91exists_127,&c_732996);
@@ -3791,7 +3793,7 @@ make_pair(c_733115,quote_Cyc_91write_91char,&c_733116);
 
 make_pair(c_733114,quote_Cyc_91read_91line,&c_733115);
 
-make_pair(c_733113,quote_peek_91char,&c_733114);
+make_pair(c_733113,quote_Cyc_91peek_91char,&c_733114);
 
 make_pair(c_733112,quote_Cyc_91read_91char,&c_733113);
 
@@ -5053,7 +5055,7 @@ c_731972.elements = (object *)alloca(sizeof(object) * 2);
 c_731972.elements[0] = ((closureN)self_731452)->elements[0];
 c_731972.elements[1] = ((closureN)self_731452)->elements[1];
 
-return_closcall1(data,(closure)&c_731972,  Cyc_eq(((closureN)self_731452)->elements[1], quote_peek_91char));}
+return_closcall1(data,(closure)&c_731972,  Cyc_eq(((closureN)self_731452)->elements[1], quote_Cyc_91peek_91char));}
 ; 
 }
 
@@ -7660,7 +7662,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_file_91exists_127 = find_or_add_symbol("file-exists?");
   quote_delete_91file = find_or_add_symbol("delete-file");
   quote_Cyc_91read_91char = find_or_add_symbol("Cyc-read-char");
-  quote_peek_91char = find_or_add_symbol("peek-char");
+  quote_Cyc_91peek_91char = find_or_add_symbol("Cyc-peek-char");
   quote_Cyc_91read_91line = find_or_add_symbol("Cyc-read-line");
   quote_Cyc_91display = find_or_add_symbol("Cyc-display");
   quote_Cyc_91write = find_or_add_symbol("Cyc-write");
@@ -7841,7 +7843,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_file_91exists_127);
   add_symbol(quote_delete_91file);
   add_symbol(quote_Cyc_91read_91char);
-  add_symbol(quote_peek_91char);
+  add_symbol(quote_Cyc_91peek_91char);
   add_symbol(quote_Cyc_91read_91line);
   add_symbol(quote_Cyc_91display);
   add_symbol(quote_Cyc_91write);
