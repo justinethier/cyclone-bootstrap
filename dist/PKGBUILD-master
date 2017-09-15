@@ -1,0 +1,32 @@
+# Maintainer: Justin Ethier <justin.ethier@gmail.com>
+# A version of PKGBUILD to get the latest snapshot from github. Thanks wasamasa!
+pkgname=cyclone-scheme-git
+pkgver=v0.6.2.r14.gecc9c32
+pkgrel=1
+pkgdesc="A brand-new compiler that allows practical application development using R7RS Scheme"
+arch=('i686' 'x86_64')
+url="https://github.com/justinethier/cyclone-bootstrap"
+license=('MIT')
+groups=()
+depends=('libck' 'libtommath' 'gcc' 'make')
+makedepends=()
+optdepends=()
+provides=(cyclone-scheme)
+conflicts=(cyclone-scheme)
+source=('git+https://github.com/justinethier/cyclone-bootstrap.git')
+md5sums=('SKIP')
+
+pkgver() {
+  cd cyclone-bootstrap
+  git describe --long | sed 's/\([^-]*-g\)/r\1/;s/-/./g'
+}
+
+build() {
+  cd cyclone-bootstrap
+  make DESTDIR="$pkgdir" PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L."
+}
+
+package() {
+  cd cyclone-bootstrap
+  make DESTDIR="$pkgdir" PREFIX=/usr install
+}
