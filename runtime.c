@@ -6151,7 +6151,23 @@ object Cyc_io_peek_char(void *data, object cont, object port)
   return Cyc_EOF;
 }
 
-//  TODO: port arg is optional! (maybe handle that in expansion section??)
+// TODO: full requirements are:
+//
+// Returns #t if a character is ready on the textual input
+// port and returns #f otherwise. If char-ready returns #t
+// then the next read-char operation on the given port is
+// guaranteed not to hang. If the port is at end of file then
+// char-ready? returns #t.
+//
+// This is a bit of a challenge because the internal buffers 
+// cannot differentiate between being empty and being at EOF.
+//
+//object Cyc_io_char_ready(void *data, object cont, object port)
+//{
+//  port_type *p = (port_type *)port;
+//  Cyc_check_port(data, port);
+//}
+
 object Cyc_io_read_char(void *data, object cont, object port)
 {
   port_type *p = (port_type *)port;
