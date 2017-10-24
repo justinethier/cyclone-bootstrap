@@ -178,6 +178,7 @@ void pack_env_variables(void *data, object k)
     svar->hdr.grayed = 0;
     svar->tag = string_tag; 
     svar->len = eqpos - e;
+    svar->num_cp = svar->len; // TODO: proper UTF-8 support!
     svar->str = alloca(sizeof(char) * (svar->len));
     strncpy(svar->str, e, svar->len);
     (svar->str)[svar->len] = '\0';
@@ -189,6 +190,7 @@ void pack_env_variables(void *data, object k)
     sval->hdr.grayed = 0;
     sval->tag = string_tag; 
     sval->len = strlen(eqpos);
+    sval->num_cp = sval->len; // TODO: proper UTF-8 support!
     sval->str = eqpos;
     set_pair(tmp, svar, sval);
     set_pair(p, tmp, NULL);
@@ -2101,7 +2103,46 @@ object Cyc_string_set(void *data, object str, object k, object chr)
   len = string_len(str);
 
   Cyc_check_bounds(data, "string-set!", len, idx);
-  raw[idx] = obj_obj2char(chr);
+
+  // Take fast path if all chars are just 1 byte
+  if (string_num_cp(str) == string_len(str)) {
+    raw[idx] = obj_obj2char(chr);
+  } else {
+fprintf(stderr, "DEBUG %s, num_cp = %d, len = %d\n", raw, string_num_cp(str), len);
+    // TODO: utf8 support
+    // find codepoint at k, figure out how many bytes it is,
+    // allocate a new string (start) + chr + (end)
+    // or don't allocate if chr uses as many or fewer bytes 
+    // than the codepoint it is replacing
+
+    char *tmp = raw;
+    char_type codepoint;
+    uint32_t state = 0;
+    int i = 0, count, start_len = 0, start_cp = 0;
+
+    for (count = 0; *tmp; ++tmp){
+      if (!Cyc_utf8_decode(&state, &codepoint, *tmp)){
+        if (count < idx) {
+          start_len = i;
+          start_cp = count;
+        } else if (count == idx) {
+          break;
+        }
+        count += 1;
+      }
+      i++;
+    }
+    if (state != CYC_UTF8_ACCEPT)
+       Cyc_rt_raise2(data, "string-set! - invalid character at index", k);
+
+    // TODO: perform actual mutation
+    //
+    // Now we know length of start (both in codepoints and bytes),
+    // and we know the codepoint to be replaced. by calculating its length
+    // we can compute where the end portion starts, and by using str we can
+    // figure out how many remaining bytes/codepoints are in end
+
+  }
   return str;
 }
 
@@ -2122,7 +2163,7 @@ object Cyc_string_ref(void *data, object str, object k)
   }
 
   // Take fast path if all chars are just 1 byte
-  if (0 && string_num_cp(str) == string_len(str)) {
+  if (string_num_cp(str) == string_len(str)) {
     return obj_char2obj(raw[idx]);
   } else {
     char_type codepoint;
@@ -2168,7 +2209,7 @@ object Cyc_substring(void *data, object cont, object str, object start,
     e = len;
   }
 
-  if (0 && string_num_cp(str) == string_len(str)){ // Fast path for ASCII
+  if (string_num_cp(str) == string_len(str)){ // Fast path for ASCII
     make_string_with_len(sub, raw + s, e - s);
     _return_closcall1(data, cont, &sub);
   } else {
@@ -2531,6 +2572,10 @@ object Cyc_utf82string(void *data, object cont, object bv, object start,
     st.str = alloca(sizeof(char) * (len + 1));
     memcpy(st.str, &buf[s], len);
     st.str[len] = '\0';
+    st.num_cp = Cyc_utf8_count_code_points((uint8_t *)(st.str));
+    if (st.num_cp < 0) {
+       Cyc_rt_raise2(data, "utf8->string - error decoding UTF 8", bv);
+    }
     _return_closcall1(data, cont, &st);
   }
 }
@@ -2557,6 +2602,11 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
   if (e < 0 || e < s || e > string_len(str)) {
     Cyc_rt_raise2(data, "string->utf8 - invalid end", end);
   }
+
+  // TODO: we have code point positions s, e, and length. We need to take those
+  // and walk the string to figure out the starting and ending BYTE positions
+
+  // TODO: fast path, can keep below if string_num_cp(str) == string_len(str)
 
   result.len = len;
   result.data = alloca(sizeof(char) * len);
@@ -6503,6 +6553,14 @@ uint32_t Cyc_utf8_validate(char *str, size_t len) {
     }
 
     return state;
+}
+
+int uint32_num_bytes(uint32_t x) {
+  // TODO: could compute log(val) / log(256)
+  if (x < 0x100) return 1;
+  if (x < 0x10000) return 2;
+  if (x < 0x1000000) return 3;
+  return 4;
 }
 
 ////////////// END UTF-8 Section //////////////
