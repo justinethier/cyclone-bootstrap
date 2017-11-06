@@ -11429,7 +11429,7 @@ static void __lambda_172(void *data, int argc, object self_732436, object r_7316
   return_closcall1(data,  ((closureN)self_732436)->elements[0],  boolean_t);
 } else { 
   
-make_string(c_734020, "argument out of domain");
+make_utf8_string_with_len(c_734020, "argument out of domain", 22, 22);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_732436)->elements[0], &c_734020, ((closureN)self_732436)->elements[1]);}
 ; 
 }
@@ -12378,7 +12378,7 @@ c_733719.elements = (object *)alloca(sizeof(object) * 1);
 c_733719.elements[0] = ((closureN)self_732482)->elements[1];
 
 
-make_string(c_733725, "no expansion for");
+make_utf8_string_with_len(c_733725, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_733719, &c_733725, ((closureN)self_732482)->elements[0]);}
 ; 
 }

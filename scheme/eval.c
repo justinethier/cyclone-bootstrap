@@ -7589,7 +7589,7 @@ c_732353.elements[0] = ((closureN)self_731110)->elements[0];
 c_732353.elements[1] = ((closureN)self_731110)->elements[1];
 
 
-make_string(c_732368, ".so");
+make_utf8_string_with_len(c_732368, ".so", 3, 3);
 return_closcall5(data,  __glo_lib_117import_91_125filename_scheme_cyclone_libraries,  &c_732353, ((closureN)self_731110)->elements[1], &c_732368, __glo__85append_91dirs_85_scheme_eval, __glo__85prepend_91dirs_85_scheme_eval);
 } else { 
   return_closcall1(data,  ((closureN)self_731110)->elements[0],  boolean_f);}
@@ -7626,9 +7626,9 @@ c_732357.elements[0] = ((closureN)self_731112)->elements[0];
 c_732357.elements[1] = ((closureN)self_731112)->elements[1];
 
 
-make_string(c_732364, "c_");
+make_utf8_string_with_len(c_732364, "c_", 2, 2);
 
-make_string(c_732365, "_entry_pt_first_lambda");
+make_utf8_string_with_len(c_732365, "_entry_pt_first_lambda", 22, 22);
 
 object c_732363 = Cyc_string_append(data,(closure)&c_732357,3,&c_732364, r_73556, &c_732365);
 return_closcall1(data,(closure)&c_732357,  c_732363);; 
@@ -7804,7 +7804,7 @@ mclosure0(c_732273, (function_type)__lambda_184);c_732273.num_args = 1;
 return_closcall3(data,  __glo_map_scheme_base,  &c_732266, &c_732273, ((closureN)self_731121)->elements[0]);
 } else { 
   
-make_string(c_732285, "Unknown procedure type -- EXECUTE-APPLICATION");
+make_utf8_string_with_len(c_732285, "Unknown procedure type -- EXECUTE-APPLICATION", 45, 45);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731121)->elements[1], &c_732285, ((closureN)self_731121)->elements[2]);}
 ; 
 }
@@ -8635,7 +8635,7 @@ static void __lambda_135(void *data, int argc, object self_731168, object r_7364
 static void __lambda_134(void *data, int argc, object self_731169, object k_73649) {
   if( (boolean_f != Cyc_is_null(((closureN)self_731169)->elements[0])) ){ 
   
-make_string(c_731987, "Empty sequence -- ANALYZE");
+make_utf8_string_with_len(c_731987, "Empty sequence -- ANALYZE", 25, 25);
 return_closcall2(data,  __glo_error_scheme_base,  k_73649, &c_731987);
 } else { 
   return_closcall1(data,  k_73649,  boolean_f);}
@@ -8880,7 +8880,7 @@ c_731886.elements[1] = k_73689;
 return_closcall3(data,  __glo__list_scheme_base,  &c_731886, __glo_macro_91tag_scheme_eval, Cyc_cadr(data, Cyc_caddr(data, exp_73182)));
 } else { 
   
-make_string(c_731903, "macro syntax not supported yet");
+make_utf8_string_with_len(c_731903, "macro syntax not supported yet", 30, 30);
 return_closcall2(data,  __glo_error_scheme_base,  k_73689, &c_731903);}
 ; 
 }
@@ -9522,7 +9522,7 @@ static void __lambda_82(void *data, int argc, object self_731211, object r_73746
   return_closcall3(data,  __glo_pre_91analyze_91application_scheme_eval,  ((closureN)self_731211)->elements[2], ((closureN)self_731211)->elements[1], ((closureN)self_731211)->elements[0]);
 } else { 
   
-make_string(c_731789, "Unknown expression type -- ANALYZE");
+make_utf8_string_with_len(c_731789, "Unknown expression type -- ANALYZE", 34, 34);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731211)->elements[2], &c_731789, ((closureN)self_731211)->elements[1]);}
 ; 
 }

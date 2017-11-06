@@ -433,7 +433,7 @@ c_73287.elements = (object *)alloca(sizeof(object) * 1);
 c_73287.elements[0] = k_7334;
 
 
-make_string(c_73292, "main thread");
+make_utf8_string_with_len(c_73292, "main thread", 11, 11);
 return_closcall6(data,  __glo_vector_scheme_base,  &c_73287, quote_cyc_91thread_91obj, boolean_f, boolean_f, &c_73292, boolean_f);; 
 }
 
@@ -558,7 +558,7 @@ c_73261.elements[1] = ((closureN)self_73103)->elements[1];
 return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73261, Cyc_car(data, ((closureN)self_73103)->elements[2]), ((closureN)self_73103)->elements[1]);
 } else { 
   
-make_string(c_73271, "mutex-unlock! - unhandled args");
+make_utf8_string_with_len(c_73271, "mutex-unlock! - unhandled args", 30, 30);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73103)->elements[0], &c_73271, ((closureN)self_73103)->elements[1], ((closureN)self_73103)->elements[2]);}
 ; 
 }
@@ -900,7 +900,7 @@ static void __lambda_1(void *data, int argc, object self_73118, object k_7390) {
   return_closcall1(data,  k_7390,  Cyc_car(data, ((closureN)self_73118)->elements[0]));
 } else { 
   
-make_string(c_73145, "");
+make_utf8_string_with_len(c_73145, "", 0, 0);
 return_closcall1(data,  k_7390,  &c_73145);}
 ; 
 }

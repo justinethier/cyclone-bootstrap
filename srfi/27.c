@@ -493,7 +493,7 @@ c_73449.elements = (object *)alloca(sizeof(object) * 1);
 c_73449.elements[0] = ((closureN)self_73155)->elements[0];
 
 
-make_string(c_73498, "random-source-val");
+make_utf8_string_with_len(c_73498, "random-source-val", 17, 17);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_73449, &c_73498, __glo__121random_91source_125_srfi_27, r_7368);; 
 }
 
@@ -540,7 +540,7 @@ c_73455.elements = (object *)alloca(sizeof(object) * 1);
 c_73455.elements[0] = ((closureN)self_73158)->elements[0];
 
 
-make_string(c_73495, "set-random-source-val!");
+make_utf8_string_with_len(c_73495, "set-random-source-val!", 22, 22);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_73455, &c_73495, __glo__121random_91source_125_srfi_27, r_7365);; 
 }
 
@@ -572,7 +572,7 @@ c_73459.elements = (object *)alloca(sizeof(object) * 1);
 c_73459.elements[0] = ((closureN)self_73160)->elements[0];
 
 
-make_string(c_73492, "raw-random-source");
+make_utf8_string_with_len(c_73492, "raw-random-source", 17, 17);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_73459, &c_73492, __glo__121random_91source_125_srfi_27);; 
 }
 
@@ -1047,7 +1047,7 @@ object c_73273 = apply_va(data,  k_73103,2,&c_73274, args_732_7333);
 return_closcall1(data,  k_73103,  c_73273);
 } else { 
   
-make_string(c_73336, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_73336, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73103, &c_73336);}
 }
 ; 
@@ -1242,7 +1242,7 @@ static void __lambda_12(void *data, int argc, object self_73196, object r_73121)
   return_closcall1(data,  ((closureN)self_73196)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_73283, "unit must be between 0.0 and 1.0 (exclusive), but got ");
+make_utf8_string_with_len(c_73283, "unit must be between 0.0 and 1.0 (exclusive), but got ", 54, 54);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73196)->elements[0], &c_73283, ((closureN)self_73196)->elements[1]);}
 ; 
 }

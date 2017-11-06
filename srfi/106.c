@@ -1229,9 +1229,9 @@ c_731423.elements[1] = ((closureN)self_73686)->elements[0];
 c_731423.elements[2] = ((closureN)self_73686)->elements[1];
 
 
-make_string(c_731490, "%");
+make_utf8_string_with_len(c_731490, "%", 1, 1);
 
-make_string(c_731491, "%");
+make_utf8_string_with_len(c_731491, "%", 1, 1);
 
 object c_731489 = Cyc_string_append(data,(closure)&c_731423,3,&c_731490, base_91str_73225, &c_731491);
 return_closcall1(data,(closure)&c_731423,  c_731489);; 
@@ -1252,9 +1252,9 @@ c_731425.elements[1] = ((closureN)self_73687)->elements[2];
 c_731425.elements[2] = r_73397;
 
 
-make_string(c_731484, "*");
+make_utf8_string_with_len(c_731484, "*", 1, 1);
 
-make_string(c_731486, "*");
+make_utf8_string_with_len(c_731486, "*", 1, 1);
 
 object c_731483 = Cyc_string_append(data,(closure)&c_731425,3,&c_731484, ((closureN)self_73687)->elements[0], &c_731486);
 return_closcall1(data,(closure)&c_731425,  c_731483);; 
@@ -1275,9 +1275,9 @@ c_731427.elements[1] = r_73396;
 c_731427.elements[2] = ((closureN)self_73688)->elements[2];
 
 
-make_string(c_731476, "return_closcall1(data, k, obj_int2obj(");
+make_utf8_string_with_len(c_731476, "return_closcall1(data, k, obj_int2obj(", 38, 38);
 
-make_string(c_731480, ")); ");
+make_utf8_string_with_len(c_731480, ")); ", 4, 4);
 
 object c_731475 = Cyc_string_append(data,(closure)&c_731427,3,&c_731476, Cyc_caddr(data, ((closureN)self_73688)->elements[0]), &c_731480);
 return_closcall1(data,(closure)&c_731427,  c_731475);; 
@@ -1293,7 +1293,7 @@ make_pair(c_731441,Cyc_string2symbol(data, ((closureN)self_73689)->elements[1]),
 
 make_pair(c_731438,quote_define, &c_731441);
 
-make_string(c_731469, "(void *data, int argc, closure _, object k)");
+make_utf8_string_with_len(c_731469, "(void *data, int argc, closure _, object k)", 43, 43);
 
 make_pair(c_731472,r_73388, NULL);
 
@@ -1522,7 +1522,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731342, quote_shutdown_91me
 
 static void __lambda_73(void *data, int argc, object self_73700, object r_73423) {
   
-make_string(c_731345, "Unexpected value");
+make_utf8_string_with_len(c_731345, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73700)->elements[0], &c_731345, r_73423);; 
 }
 
@@ -1560,7 +1560,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731324, quote_message_91typ
 
 static void __lambda_71(void *data, int argc, object self_73701, object r_73436) {
   
-make_string(c_731327, "Unexpected value");
+make_utf8_string_with_len(c_731327, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73701)->elements[0], &c_731327, r_73436);; 
 }
 
@@ -1594,7 +1594,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731296, quote_ip_91protocol
 
 static void __lambda_69(void *data, int argc, object self_73702, object r_73450) {
   
-make_string(c_731299, "Unexpected value");
+make_utf8_string_with_len(c_731299, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73702)->elements[0], &c_731299, r_73450);; 
 }
 
@@ -1624,7 +1624,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731273, quote_socket_91doma
 
 static void __lambda_67(void *data, int argc, object self_73703, object r_73462) {
   
-make_string(c_731276, "Unexpected value");
+make_utf8_string_with_len(c_731276, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73703)->elements[0], &c_731276, r_73462);; 
 }
 
@@ -1666,7 +1666,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731255, quote_address_91inf
 
 static void __lambda_65(void *data, int argc, object self_73704, object r_73476) {
   
-make_string(c_731258, "Unexpected value");
+make_utf8_string_with_len(c_731258, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73704)->elements[0], &c_731258, r_73476);; 
 }
 
@@ -1700,7 +1700,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_731222, quote_address_91fam
 
 static void __lambda_63(void *data, int argc, object self_73705, object r_73491) {
   
-make_string(c_731225, "Unexpected value");
+make_utf8_string_with_len(c_731225, "Unexpected value", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73705)->elements[0], &c_731225, r_73491);; 
 }
 
@@ -1719,7 +1719,7 @@ c_731110.elements[0] = expr_73261;
 c_731110.elements[1] = k_73499;
 
 
-make_string(c_731178, "Unexpected value");
+make_utf8_string_with_len(c_731178, "Unexpected value", 16, 16);
 
 make_pair(c_731193,Cyc_cadr(data, expr_73261), NULL);
 
@@ -2165,7 +2165,7 @@ static void __lambda_30(void *data, int argc, object self_73722, object sockfd_7
     object c_73978 = Cyc_num_fast_eq_op(data,sockfd_73279, obj_int2obj(-1));
 if( (boolean_f != c_73978) ){ 
   
-make_string(c_73981, "An error occurred accepting a socket connection");
+make_utf8_string_with_len(c_73981, "An error occurred accepting a socket connection", 47, 47);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73722)->elements[0], &c_73981);
 } else { 
   
@@ -2195,7 +2195,7 @@ static void __lambda_28(void *data, int argc, object self_73724, object r_73606)
   return_closcall1(data,  ((closureN)self_73724)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_73970, "Expected socket but received");
+make_utf8_string_with_len(c_73970, "Expected socket but received", 28, 28);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73724)->elements[0], &c_73970, ((closureN)self_73724)->elements[1]);}
 ; 
 }

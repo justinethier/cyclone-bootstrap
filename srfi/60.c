@@ -3007,11 +3007,11 @@ c_73505.elements[0] = expr_73160;
 c_73505.elements[1] = k_73374;
 
 
-make_string(c_73527, "Cyc_check_int(data, x);\n   Cyc_check_int(data, y);\n\n   if (obj_is_int(x) && obj_is_int(y)) {");
+make_utf8_string_with_len(c_73527, "Cyc_check_int(data, x);\n   Cyc_check_int(data, y);\n\n   if (obj_is_int(x) && obj_is_int(y)) {", 92, 92);
 
-make_string(c_73530, "} else {\n     int result;\n     alloc_bignum(data, bn);\n     mp_int *xx, *yy;\n     mp_int tmpx, tmpy;\n\n     if (obj_is_int(x)) {\n       mp_init(&tmpx);\n       Cyc_int2bignum(obj_obj2int(x), &tmpx);\n       xx = &tmpx;\n     } else {\n       xx = &bignum_value(x);\n     }\n\n     if (obj_is_int(y)) {\n       mp_init(&tmpy);\n       Cyc_int2bignum(obj_obj2int(y), &tmpy);\n       yy = &tmpy;\n     } else {\n       yy = &bignum_value(y);\n     }\n\n     ");
+make_utf8_string_with_len(c_73530, "} else {\n     int result;\n     alloc_bignum(data, bn);\n     mp_int *xx, *yy;\n     mp_int tmpx, tmpy;\n\n     if (obj_is_int(x)) {\n       mp_init(&tmpx);\n       Cyc_int2bignum(obj_obj2int(x), &tmpx);\n       xx = &tmpx;\n     } else {\n       xx = &bignum_value(x);\n     }\n\n     if (obj_is_int(y)) {\n       mp_init(&tmpy);\n       Cyc_int2bignum(obj_obj2int(y), &tmpy);\n       yy = &tmpy;\n     } else {\n       yy = &bignum_value(y);\n     }\n\n     ", 439, 439);
 
-make_string(c_73533, "\n     if (MP_OKAY != result) {\n      char buffer[128];\n      snprintf(buffer, 127, \"Bignum error: %s\", mp_error_to_string(result));\n      Cyc_rt_raise_msg(data, buffer);\n     }\n     return_closcall1(data, k, Cyc_bignum_normalize(data, bn));\n   }\n  ");
+make_utf8_string_with_len(c_73533, "\n     if (MP_OKAY != result) {\n      char buffer[128];\n      snprintf(buffer, 127, \"Bignum error: %s\", mp_error_to_string(result));\n      Cyc_rt_raise_msg(data, buffer);\n     }\n     return_closcall1(data, k, Cyc_bignum_normalize(data, bn));\n   }\n  ", 248, 248);
 
 object c_73526 = Cyc_string_append(data,(closure)&c_73505,5,&c_73527, Cyc_caddr(data, expr_73160), &c_73530, Cyc_cadddr(data, expr_73160), &c_73533);
 return_closcall1(data,(closure)&c_73505,  c_73526);; 
@@ -3019,7 +3019,7 @@ return_closcall1(data,(closure)&c_73505,  c_73526);;
 
 static void __lambda_0(void *data, int argc, object self_73502, object body_73165) {
   
-make_string(c_73520, "(void* data, int argc, closure _, object k, object x, object y)");
+make_utf8_string_with_len(c_73520, "(void* data, int argc, closure _, object k, object x, object y)", 63, 63);
 
 make_pair(c_73523,body_73165, NULL);
 

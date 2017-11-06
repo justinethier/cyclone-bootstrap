@@ -883,7 +883,7 @@ c_731469.elements = (object *)alloca(sizeof(object) * 1);
 c_731469.elements[0] = ((closureN)self_73505)->elements[1];
 
 
-make_string(c_731475, "no expansion for");
+make_utf8_string_with_len(c_731475, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_731469, &c_731475, ((closureN)self_73505)->elements[0]);}
 ; 
 }

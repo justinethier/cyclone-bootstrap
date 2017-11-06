@@ -1307,7 +1307,7 @@ c_733314.elements[1] = compile_127_73187;
 c_733314.elements[2] = ((closureN)self_73892)->elements[1];
 
 
-make_string(c_733477, "-CP");
+make_utf8_string_with_len(c_733477, "-CP", 3, 3);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733314, ((closureN)self_73892)->elements[0], &c_733477);; 
 }
 
@@ -1346,7 +1346,7 @@ c_733318.elements[2] = ((closureN)self_73894)->elements[1];
 c_733318.elements[3] = ((closureN)self_73894)->elements[2];
 
 
-make_string(c_733472, "-CE");
+make_utf8_string_with_len(c_733472, "-CE", 3, 3);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733318, ((closureN)self_73894)->elements[0], &c_733472);; 
 }
 
@@ -1387,7 +1387,7 @@ c_733322.elements[3] = ((closureN)self_73896)->elements[2];
 c_733322.elements[4] = ((closureN)self_73896)->elements[3];
 
 
-make_string(c_733467, "-CL");
+make_utf8_string_with_len(c_733467, "-CL", 3, 3);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733322, ((closureN)self_73896)->elements[0], &c_733467);; 
 }
 
@@ -1430,7 +1430,7 @@ c_733326.elements[4] = ((closureN)self_73898)->elements[3];
 c_733326.elements[5] = ((closureN)self_73898)->elements[4];
 
 
-make_string(c_733462, "-CS");
+make_utf8_string_with_len(c_733462, "-CS", 3, 3);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733326, ((closureN)self_73898)->elements[0], &c_733462);; 
 }
 
@@ -1475,7 +1475,7 @@ c_733330.elements[5] = ((closureN)self_73900)->elements[4];
 c_733330.elements[6] = ((closureN)self_73900)->elements[5];
 
 
-make_string(c_733457, "-A");
+make_utf8_string_with_len(c_733457, "-A", 2, 2);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733330, ((closureN)self_73900)->elements[0], &c_733457);; 
 }
 
@@ -1499,7 +1499,7 @@ c_733332.elements[6] = ((closureN)self_73901)->elements[5];
 c_733332.elements[7] = ((closureN)self_73901)->elements[6];
 
 
-make_string(c_733455, "-I");
+make_utf8_string_with_len(c_733455, "-I", 2, 2);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_733332, ((closureN)self_73901)->elements[0], &c_733455);; 
 }
 
@@ -1645,35 +1645,35 @@ static void __lambda_388(void *data, int argc, object self_73906, object r_73333
   
 mclosure0(c_733385, (function_type)__lambda_382);c_733385.num_args = 1;
 
-make_string(c_733387, "\nUsage: cyclone [OPTIONS] FILENAME\nRun the Cyclone Scheme compiler.\n\nOptions:\n\n -A directory    Append directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -I directory    Prepend directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -CP cc-commands Specify a custom command line for the C compiler to compile\n                 a program module. See Makefile.config for an example of how\n                 to construct such a command line.\n -CE cc-commands Specify a custom command line for the C compiler to compile\n                 an executable.\n -CL cc-commands Specify a custom command line for the C compiler to compile\n                 a library module.\n -CS cc-commands Specify a custom command line for the C compiler to compile\n                 a shared object module.\n -Ox             Optimization level, higher means more optimizations will\n                 be used. Set to 0 to disable optimizations.\n -d              Only generate intermediate C files, do not compile them\n -t              Show intermediate trace output in generated C files\n -h, --help      Display usage information\n -v              Display version information\n -vn             Display version number\n");
+make_utf8_string_with_len(c_733387, "\nUsage: cyclone [OPTIONS] FILENAME\nRun the Cyclone Scheme compiler.\n\nOptions:\n\n -A directory    Append directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -I directory    Prepend directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -CP cc-commands Specify a custom command line for the C compiler to compile\n                 a program module. See Makefile.config for an example of how\n                 to construct such a command line.\n -CE cc-commands Specify a custom command line for the C compiler to compile\n                 an executable.\n -CL cc-commands Specify a custom command line for the C compiler to compile\n                 a library module.\n -CS cc-commands Specify a custom command line for the C compiler to compile\n                 a shared object module.\n -Ox             Optimization level, higher means more optimizations will\n                 be used. Set to 0 to disable optimizations.\n -d              Only generate intermediate C files, do not compile them\n -t              Show intermediate trace output in generated C files\n -h, --help      Display usage information\n -v              Display version information\n -vn             Display version number\n", 1301, 1301);
 return_closcall2(data,  __glo_display_scheme_write,  &c_733385, &c_733387);
 } else { 
-    make_string(c_733390, "-v");
+    make_utf8_string_with_len(c_733390, "-v", 2, 2);
 if( (boolean_f != memberp(data, &c_733390, ((closureN)self_73906)->elements[1])) ){ 
   return_closcall2(data,  __glo_display_scheme_write,  primitive__75halt, __glo__85version_91banner_85_scheme_cyclone_common);
 } else { 
-    make_string(c_733395, "--autogen");
+    make_utf8_string_with_len(c_733395, "--autogen", 9, 9);
 if( (boolean_f != memberp(data, &c_733395, ((closureN)self_73906)->elements[1])) ){ 
   
 mclosure0(c_733398, (function_type)__lambda_383);c_733398.num_args = 1;
 
-make_string(c_733400, "autogen.out");
+make_utf8_string_with_len(c_733400, "autogen.out", 11, 11);
 return_closcall2(data,  __glo_autogen_scheme_cyclone_cgen,  &c_733398, &c_733400);
 } else { 
-    make_string(c_733403, "-v");
+    make_utf8_string_with_len(c_733403, "-v", 2, 2);
 if( (boolean_f != memberp(data, &c_733403, ((closureN)self_73906)->elements[1])) ){ 
   return_closcall2(data,  __glo_display_scheme_write,  primitive__75halt, __glo__85version_91banner_85_scheme_cyclone_common);
 } else { 
-    make_string(c_733408, "-vn");
+    make_utf8_string_with_len(c_733408, "-vn", 3, 3);
 if( (boolean_f != memberp(data, &c_733408, ((closureN)self_73906)->elements[1])) ){ 
   
 mclosure0(c_733411, (function_type)__lambda_384);c_733411.num_args = 1;
 return_closcall1(data,  __glo_Cyc_91version_scheme_base,  &c_733411);
 } else { 
-    make_string(c_733415, "--autogen");
+    make_utf8_string_with_len(c_733415, "--autogen", 9, 9);
 if( (boolean_f != memberp(data, &c_733415, ((closureN)self_73906)->elements[1])) ){ 
   
-make_string(c_733418, "autogen.out");
+make_utf8_string_with_len(c_733418, "autogen.out", 11, 11);
 return_closcall2(data,  __glo_autogen_scheme_cyclone_cgen,  primitive__75halt, &c_733418);
 } else { 
   
@@ -1720,7 +1720,7 @@ static void __lambda_387(void *data, int argc, object self_73907, object r_73342
   
 mclosure0(c_733440, (function_type)__lambda_386);c_733440.num_args = 1;
 
-make_string(c_733442, "cyclone: no input file");
+make_utf8_string_with_len(c_733442, "cyclone: no input file", 22, 22);
 return_closcall2(data,  __glo_display_scheme_write,  &c_733440, &c_733442);
 } else { 
   return_closcall9(data,  __glo_run_91compiler,  primitive__75halt, ((closureN)self_73907)->elements[6], car(((closureN)self_73907)->elements[5]), ((closureN)self_73907)->elements[3], ((closureN)self_73907)->elements[1], ((closureN)self_73907)->elements[2], ((closureN)self_73907)->elements[4], ((closureN)self_73907)->elements[0], ((closureN)self_73907)->elements[7]);}
@@ -1755,20 +1755,20 @@ static void __lambda_382(void *data, int argc, object self_73912, object r_73334
 }
 
 static void __lambda_381(void *data, int argc, object self_73913, object k_73348) {
-    make_string(c_733371, "-h");
+    make_utf8_string_with_len(c_733371, "-h", 2, 2);
 if( (boolean_f != memberp(data, &c_733371, ((closureN)self_73913)->elements[0])) ){ 
   
-make_string(c_733376, "-h");
+make_utf8_string_with_len(c_733376, "-h", 2, 2);
 return_closcall1(data,  k_73348,  memberp(data, &c_733376, ((closureN)self_73913)->elements[0]));
 } else { 
   
-make_string(c_733381, "--help");
+make_utf8_string_with_len(c_733381, "--help", 6, 6);
 return_closcall1(data,  k_73348,  memberp(data, &c_733381, ((closureN)self_73913)->elements[0]));}
 ; 
 }
 
 static void __lambda_380(void *data, int argc, object self_73914, object k_73349) {
-    make_string(c_733359, "-d");
+    make_utf8_string_with_len(c_733359, "-d", 2, 2);
 if( (boolean_f != memberp(data, &c_733359, ((closureN)self_73914)->elements[0])) ){ 
   return_closcall1(data,  k_73349,  Cyc_set_cell(data, ((closureN)self_73914)->elements[1], boolean_f));
 } else { 
@@ -1777,7 +1777,7 @@ if( (boolean_f != memberp(data, &c_733359, ((closureN)self_73914)->elements[0]))
 }
 
 static void __lambda_379(void *data, int argc, object self_73915, object k_73351) {
-    make_string(c_733348, "-t");
+    make_utf8_string_with_len(c_733348, "-t", 2, 2);
 if( (boolean_f != memberp(data, &c_733348, ((closureN)self_73915)->elements[0])) ){ 
   return_closcall1(data,  k_73351,  global_set(__glo__85trace_91level_85_scheme_cyclone_transforms, obj_int2obj(4)));
 } else { 
@@ -1786,7 +1786,7 @@ if( (boolean_f != memberp(data, &c_733348, ((closureN)self_73915)->elements[0]))
 }
 
 static void __lambda_378(void *data, int argc, object self_73916, object k_73353) {
-    make_string(c_733337, "-O0");
+    make_utf8_string_with_len(c_733337, "-O0", 3, 3);
 if( (boolean_f != memberp(data, &c_733337, ((closureN)self_73916)->elements[0])) ){ 
   return_closcall1(data,  k_73353,  global_set(__glo__85optimization_91level_85, obj_int2obj(0)));
 } else { 
@@ -2196,7 +2196,7 @@ c_733012.elements[12] = ((closureN)self_73931)->elements[11];
 c_733012.elements[13] = ((closureN)self_73931)->elements[12];
 
 
-make_string(c_733241, ".c");
+make_utf8_string_with_len(c_733241, ".c", 2, 2);
 
 object c_733240 = Cyc_string_append(data,(closure)&c_733012,2,exec_91file_73215, &c_733241);
 return_closcall1(data,(closure)&c_733012,  c_733240);; 
@@ -2229,7 +2229,7 @@ c_733014.elements[13] = ((closureN)self_73932)->elements[13];
 c_733014.elements[14] = src_91file_73216;
 
 
-make_string(c_733237, ".meta");
+make_utf8_string_with_len(c_733237, ".meta", 5, 5);
 
 object c_733235 = Cyc_string_append(data,(closure)&c_733014,2,((closureN)self_73932)->elements[7], &c_733237);
 return_closcall1(data,(closure)&c_733014,  c_733235);; 
@@ -2384,7 +2384,7 @@ c_733213.elements = (object *)alloca(sizeof(object) * 1);
 c_733213.elements[0] = k_73428;
 
 
-make_string(c_733220, ";; This file was automatically generated by the Cyclone Scheme compiler");
+make_utf8_string_with_len(c_733220, ";; This file was automatically generated by the Cyclone Scheme compiler", 71, 71);
 return_closcall2(data,  __glo_display_scheme_write,  &c_733213, &c_733220);; 
 }
 
@@ -2460,7 +2460,7 @@ c_733168.elements[4] = ((closureN)self_73942)->elements[4];
 c_733168.elements[5] = ((closureN)self_73942)->elements[5];
 
 
-make_string(c_733207, "~src-file~");
+make_utf8_string_with_len(c_733207, "~src-file~", 10, 10);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733168, r_73425, &c_733207, ((closureN)self_73942)->elements[5]);; 
 }
 
@@ -2482,7 +2482,7 @@ c_733170.elements[4] = ((closureN)self_73943)->elements[4];
 c_733170.elements[5] = ((closureN)self_73943)->elements[5];
 
 
-make_string(c_733205, "~exec-file~");
+make_utf8_string_with_len(c_733205, "~exec-file~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733170, r_73424, &c_733205, ((closureN)self_73943)->elements[2]);; 
 }
 
@@ -2521,7 +2521,7 @@ c_733175.elements[2] = ((closureN)self_73945)->elements[2];
 c_733175.elements[3] = ((closureN)self_73945)->elements[3];
 
 
-make_string(c_733202, "~src-file~");
+make_utf8_string_with_len(c_733202, "~src-file~", 10, 10);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733175, r_73422, &c_733202, ((closureN)self_73945)->elements[4]);; 
 }
 
@@ -2540,7 +2540,7 @@ c_733177.elements[1] = ((closureN)self_73946)->elements[2];
 c_733177.elements[2] = ((closureN)self_73946)->elements[3];
 
 
-make_string(c_733200, "~exec-file~");
+make_utf8_string_with_len(c_733200, "~exec-file~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733177, r_73421, &c_733200, ((closureN)self_73946)->elements[1]);; 
 }
 
@@ -2764,15 +2764,15 @@ c_733137.elements = (object *)alloca(sizeof(object) * 1);
 c_733137.elements[0] = k_73412;
 
 
-make_string(c_733145, ".o");
+make_utf8_string_with_len(c_733145, ".o", 2, 2);
 return_closcall5(data,  __glo_lib_117import_91_125filename_scheme_cyclone_libraries,  &c_733137, i_73230, &c_733145, ((closureN)self_73957)->elements[0], ((closureN)self_73957)->elements[1]);; 
 }
 
 static void __lambda_334(void *data, int argc, object self_73958, object r_73413) {
   
-make_string(c_733143, " ");
+make_utf8_string_with_len(c_733143, " ", 1, 1);
 
-make_string(c_733144, " ");
+make_utf8_string_with_len(c_733144, " ", 1, 1);
 
 object c_733142 = Cyc_string_append(data,  ((closureN)self_73958)->elements[0],3,&c_733143, r_73413, &c_733144);
 return_closcall1(data,  ((closureN)self_73958)->elements[0],  c_733142);; 
@@ -2871,7 +2871,7 @@ c_733062.elements[6] = ((closureN)self_73962)->elements[6];
 c_733062.elements[7] = ((closureN)self_73962)->elements[7];
 
 
-make_string(c_733126, "~src-file~");
+make_utf8_string_with_len(c_733126, "~src-file~", 10, 10);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733062, r_73407, &c_733126, ((closureN)self_73962)->elements[8]);; 
 }
 
@@ -2895,7 +2895,7 @@ c_733064.elements[6] = ((closureN)self_73963)->elements[6];
 c_733064.elements[7] = ((closureN)self_73963)->elements[7];
 
 
-make_string(c_733124, "~exec-file~");
+make_utf8_string_with_len(c_733124, "~exec-file~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733064, r_73406, &c_733124, ((closureN)self_73963)->elements[4]);; 
 }
 
@@ -2959,7 +2959,7 @@ c_733071.elements[4] = ((closureN)self_73966)->elements[4];
 c_733071.elements[5] = ((closureN)self_73966)->elements[5];
 
 
-make_string(c_733118, "~exec-file~");
+make_utf8_string_with_len(c_733118, "~exec-file~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733071, r_73403, &c_733118, ((closureN)self_73966)->elements[3]);; 
 }
 
@@ -2980,7 +2980,7 @@ c_733073.elements[3] = ((closureN)self_73967)->elements[3];
 c_733073.elements[4] = ((closureN)self_73967)->elements[4];
 
 
-make_string(c_733114, "~obj-files~");
+make_utf8_string_with_len(c_733114, "~obj-files~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733073, r_73402, &c_733114, car(((closureN)self_73967)->elements[5]));; 
 }
 
@@ -3000,7 +3000,7 @@ c_733075.elements[2] = ((closureN)self_73968)->elements[2];
 c_733075.elements[3] = ((closureN)self_73968)->elements[4];
 
 
-make_string(c_733112, "~exec-file~");
+make_utf8_string_with_len(c_733112, "~exec-file~", 11, 11);
 return_closcall4(data,  __glo_string_91replace_91all_scheme_cyclone_util,  &c_733075, r_73401, &c_733112, ((closureN)self_73968)->elements[3]);; 
 }
 
@@ -4671,7 +4671,7 @@ c_731353.elements[20] = ((closureN)self_731033)->elements[20];
 c_731353.elements[21] = ((closureN)self_731033)->elements[21];
 
 
-make_string(c_732703, "---------------- input program:");
+make_utf8_string_with_len(c_732703, "---------------- input program:", 31, 31);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731353, &c_732703);; 
 }
 
@@ -4799,7 +4799,7 @@ c_731672.elements[18] = ((closureN)self_731036)->elements[18];
 c_731672.elements[19] = ((closureN)self_731036)->elements[19];
 
 
-make_string(c_732699, "inline candidates:");
+make_utf8_string_with_len(c_732699, "inline candidates:", 18, 18);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731672, &c_732699);; 
 }
 
@@ -4869,7 +4869,7 @@ c_731676.elements[18] = ((closureN)self_731038)->elements[18];
 c_731676.elements[19] = ((closureN)self_731038)->elements[19];
 
 
-make_string(c_732695, "imports:");
+make_utf8_string_with_len(c_732695, "imports:", 8, 8);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731676, &c_732695);; 
 }
 
@@ -5007,7 +5007,7 @@ c_731684.elements[18] = ((closureN)self_731042)->elements[18];
 c_731684.elements[19] = ((closureN)self_731042)->elements[19];
 
 
-make_string(c_732683, "resolved imports:");
+make_utf8_string_with_len(c_732683, "resolved imports:", 17, 17);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731684, &c_732683);; 
 }
 
@@ -5182,7 +5182,7 @@ c_731694.elements[19] = ((closureN)self_731047)->elements[19];
 c_731694.elements[20] = ((closureN)self_731047)->elements[20];
 
 
-make_string(c_732672, "resolved macros:");
+make_utf8_string_with_len(c_732672, "resolved macros:", 16, 16);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731694, &c_732672);; 
 }
 
@@ -5509,7 +5509,7 @@ c_731793.elements[18] = ((closureN)self_731057)->elements[18];
 c_731793.elements[19] = ((closureN)self_731057)->elements[19];
 
 
-make_string(c_732655, "---------------- after macro expansion:");
+make_utf8_string_with_len(c_732655, "---------------- after macro expansion:", 39, 39);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731793, &c_732655);; 
 }
 
@@ -5647,7 +5647,7 @@ c_731801.elements[18] = ((closureN)self_731061)->elements[18];
 c_731801.elements[19] = ((closureN)self_731061)->elements[19];
 
 
-make_string(c_732642, "---------------- after macro expansion cleanup:");
+make_utf8_string_with_len(c_732642, "---------------- after macro expansion cleanup:", 47, 47);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731801, &c_732642);; 
 }
 
@@ -5862,7 +5862,7 @@ c_731967.elements[13] = ((closureN)self_731067)->elements[13];
 c_731967.elements[14] = ((closureN)self_731067)->elements[14];
 
 
-make_string(c_732623, "---------------- after processing globals");
+make_utf8_string_with_len(c_732623, "---------------- after processing globals", 41, 41);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731967, &c_732623);; 
 }
 
@@ -6302,7 +6302,7 @@ return_closcall1(data,(closure)&c_732547,  &c_732556);}
 static void __lambda_202(void *data, int argc, object self_731086, object r_73712) {
   if( (boolean_f != r_73712) ){ 
   
-make_string(c_732559, "Identifier is exported but not defined");
+make_utf8_string_with_len(c_732559, "Identifier is exported but not defined", 38, 38);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731086)->elements[2], &c_732559, ((closureN)self_731086)->elements[0]);
 } else { 
   if( (boolean_f != ((closureN)self_731086)->elements[3]) ){ 
@@ -6380,7 +6380,7 @@ c_731989.elements[13] = ((closureN)self_731089)->elements[13];
 c_731989.elements[14] = ((closureN)self_731089)->elements[14];
 
 
-make_string(c_732531, "pass thru exports:");
+make_utf8_string_with_len(c_732531, "pass thru exports:", 18, 18);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731989, &c_732531);; 
 }
 
@@ -6514,7 +6514,7 @@ c_731997.elements[13] = ((closureN)self_731094)->elements[13];
 c_731997.elements[14] = ((closureN)self_731094)->elements[14];
 
 
-make_string(c_732515, "---------------- after alpha conversion:");
+make_utf8_string_with_len(c_732515, "---------------- after alpha conversion:", 40, 40);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731997, &c_732515);; 
 }
 
@@ -6684,9 +6684,9 @@ c_732437.elements[2] = ((closureN)self_731101)->elements[2];
 c_732437.elements[3] = ((closureN)self_731101)->elements[3];
 
 
-make_string(c_732506, "c_");
+make_utf8_string_with_len(c_732506, "c_", 2, 2);
 
-make_string(c_732507, "_inlinable_lambdas");
+make_utf8_string_with_len(c_732507, "_inlinable_lambdas", 18, 18);
 
 object c_732505 = Cyc_string_append(data,(closure)&c_732437,3,&c_732506, lib_91name_91str_73289, &c_732507);
 return_closcall1(data,(closure)&c_732437,  c_732505);; 
@@ -7007,7 +7007,7 @@ c_732007.elements[12] = ((closureN)self_731120)->elements[12];
 c_732007.elements[13] = ((closureN)self_731120)->elements[13];
 
 
-make_string(c_732412, "---------------- after func->primitive conversion:");
+make_utf8_string_with_len(c_732412, "---------------- after func->primitive conversion:", 50, 50);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732007, &c_732412);; 
 }
 
@@ -7408,7 +7408,7 @@ c_732017.elements[11] = ((closureN)self_731139)->elements[11];
 c_732017.elements[12] = ((closureN)self_731139)->elements[12];
 
 
-make_string(c_732326, "---------------- results of inlinable-top-level-lambda analysis: ");
+make_utf8_string_with_len(c_732326, "---------------- results of inlinable-top-level-lambda analysis: ", 65, 65);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732017, &c_732326);; 
 }
 
@@ -7535,7 +7535,7 @@ c_732100.elements[10] = ((closureN)self_731144)->elements[10];
 c_732100.elements[11] = ((closureN)self_731144)->elements[11];
 
 
-make_string(c_732317, "---------------- after CPS:");
+make_utf8_string_with_len(c_732317, "---------------- after CPS:", 27, 27);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732100, &c_732317);; 
 }
 
@@ -7727,7 +7727,7 @@ c_732169.elements[10] = ((closureN)self_731152)->elements[10];
 c_732169.elements[11] = ((closureN)self_731152)->elements[11];
 
 
-make_string(c_732295, "---------------- after wrap-mutables:");
+make_utf8_string_with_len(c_732295, "---------------- after wrap-mutables:", 37, 37);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732169, &c_732295);; 
 }
 
@@ -7942,7 +7942,7 @@ c_732177.elements[9] = ((closureN)self_731162)->elements[9];
 c_732177.elements[10] = ((closureN)self_731162)->elements[10];
 
 
-make_string(c_732242, "---------------- after closure-convert:");
+make_utf8_string_with_len(c_732242, "---------------- after closure-convert:", 39, 39);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732177, &c_732242);; 
 }
 
@@ -8018,7 +8018,7 @@ c_732191.elements[9] = ((closureN)self_731165)->elements[9];
 c_732191.elements[10] = ((closureN)self_731165)->elements[10];
 
 
-make_string(c_732238, "---------------- C headers: ");
+make_utf8_string_with_len(c_732238, "---------------- C headers: ", 28, 28);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732191, &c_732238);; 
 }
 
@@ -8070,7 +8070,7 @@ c_732195.elements[9] = ((closureN)self_731167)->elements[9];
 c_732195.elements[10] = ((closureN)self_731167)->elements[10];
 
 
-make_string(c_732234, "---------------- module globals: ");
+make_utf8_string_with_len(c_732234, "---------------- module globals: ", 33, 33);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732195, &c_732234);; 
 }
 
@@ -8122,7 +8122,7 @@ c_732199.elements[9] = ((closureN)self_731169)->elements[9];
 c_732199.elements[10] = ((closureN)self_731169)->elements[10];
 
 
-make_string(c_732230, "---------------- C code:");
+make_utf8_string_with_len(c_732230, "---------------- C code:", 24, 24);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732199, &c_732230);; 
 }
 
@@ -8163,7 +8163,7 @@ c_732183.elements = (object *)alloca(sizeof(object) * 1);
 c_732183.elements[0] = k_73583;
 
 
-make_string(c_732188, "DEBUG, existing program");
+make_utf8_string_with_len(c_732188, "DEBUG, existing program", 23, 23);
 return_closcall2(data,  __glo_trace_117error_scheme_cyclone_transforms,  &c_732183, &c_732188);}
 ; 
 }
@@ -8223,7 +8223,7 @@ c_732113.elements[0] = ((closureN)self_731175)->elements[0];
 c_732113.elements[1] = ((closureN)self_731175)->elements[1];
 
 
-make_string(c_732155, "---------------- after cps optimizations (1):");
+make_utf8_string_with_len(c_732155, "---------------- after cps optimizations (1):", 45, 45);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732113, &c_732155);; 
 }
 
@@ -8289,7 +8289,7 @@ c_732121.elements[0] = ((closureN)self_731179)->elements[0];
 c_732121.elements[1] = ((closureN)self_731179)->elements[1];
 
 
-make_string(c_732145, "---------------- after cps optimizations (2):");
+make_utf8_string_with_len(c_732145, "---------------- after cps optimizations (2):", 45, 45);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732121, &c_732145);; 
 }
 
@@ -8355,7 +8355,7 @@ c_732129.elements[0] = ((closureN)self_731183)->elements[0];
 c_732129.elements[1] = ((closureN)self_731183)->elements[1];
 
 
-make_string(c_732135, "---------------- after cps optimizations (3):");
+make_utf8_string_with_len(c_732135, "---------------- after cps optimizations (3):", 45, 45);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_732129, &c_732135);; 
 }
 
@@ -8707,7 +8707,7 @@ c_731820.elements[7] = ((closureN)self_731202)->elements[7];
 c_731820.elements[8] = program_117imports_95code_73305;
 
 
-make_string(c_731933, "-------------- macro expanded into import expression(s):");
+make_utf8_string_with_len(c_731933, "-------------- macro expanded into import expression(s):", 56, 56);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731820, &c_731933);}
 ; 
 }
@@ -8779,7 +8779,7 @@ c_731826.elements[7] = ((closureN)self_731205)->elements[7];
 c_731826.elements[8] = ((closureN)self_731205)->elements[8];
 
 
-make_string(c_731923, "imports:");
+make_utf8_string_with_len(c_731923, "imports:", 8, 8);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731826, &c_731923);; 
 }
 
@@ -8873,7 +8873,7 @@ c_731834.elements[7] = ((closureN)self_731209)->elements[7];
 c_731834.elements[8] = ((closureN)self_731209)->elements[8];
 
 
-make_string(c_731911, "resolved imports:");
+make_utf8_string_with_len(c_731911, "resolved imports:", 17, 17);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731834, &c_731911);; 
 }
 
@@ -8984,7 +8984,7 @@ c_731844.elements[6] = ((closureN)self_731214)->elements[6];
 c_731844.elements[7] = ((closureN)self_731214)->elements[7];
 
 
-make_string(c_731900, "resolved macros:");
+make_utf8_string_with_len(c_731900, "resolved macros:", 16, 16);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_731844, &c_731900);; 
 }
 

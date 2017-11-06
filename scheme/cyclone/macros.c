@@ -963,7 +963,7 @@ c_73738.elements[1] = ((closureN)self_73257)->elements[1];
 return_closcall3(data,  __glo_map_scheme_base,  ((closureN)self_73257)->elements[3], &c_73738, ((closureN)self_73257)->elements[2]);
 } else { 
   
-make_string(c_73747, "macro cleanup unexpected expression: ");
+make_utf8_string_with_len(c_73747, "macro cleanup unexpected expression: ", 37, 37);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73257)->elements[3], &c_73747, ((closureN)self_73257)->elements[2]);}
 ; 
 }
@@ -1622,7 +1622,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_73415, quote_quote, ((closu
 
 } else { 
   
-make_string(c_73438, "macro not found");
+make_utf8_string_with_len(c_73438, "macro not found", 15, 15);
 return_closcall3(data,  __glo_error_scheme_base,  k_73190, &c_73438, ((closureN)self_73293)->elements[1]);}
 ; 
 }

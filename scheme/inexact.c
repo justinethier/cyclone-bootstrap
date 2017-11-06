@@ -405,9 +405,9 @@ c_7351.elements[0] = expr_7315;
 c_7351.elements[1] = k_7334;
 
 
-make_string(c_7391, " return_inexact_double_op(data, k, ");
+make_utf8_string_with_len(c_7391, " return_inexact_double_op(data, k, ", 35, 35);
 
-make_string(c_7394, ", z);");
+make_utf8_string_with_len(c_7394, ", z);", 5, 5);
 
 object c_7390 = Cyc_string_append(data,(closure)&c_7351,3,&c_7391, Cyc_caddr(data, expr_7315), &c_7394);
 return_closcall1(data,(closure)&c_7351,  c_7390);; 
@@ -428,9 +428,9 @@ c_7353.elements[1] = ((closureN)self_7347)->elements[1];
 c_7353.elements[2] = r_7341;
 
 
-make_string(c_7383, " return_inexact_double_op_no_cps(data, ptr, ");
+make_utf8_string_with_len(c_7383, " return_inexact_double_op_no_cps(data, ptr, ", 44, 44);
 
-make_string(c_7387, ", z);");
+make_utf8_string_with_len(c_7387, ", z);", 5, 5);
 
 object c_7382 = Cyc_string_append(data,(closure)&c_7353,3,&c_7383, Cyc_caddr(data, ((closureN)self_7347)->elements[0]), &c_7387);
 return_closcall1(data,(closure)&c_7353,  c_7382);; 
@@ -438,9 +438,9 @@ return_closcall1(data,(closure)&c_7353,  c_7382);;
 
 static void __lambda_0(void *data, int argc, object self_7348, object r_7344) {
   
-make_string(c_7368, "(void *data, int argc, closure _, object k, object z)");
+make_utf8_string_with_len(c_7368, "(void *data, int argc, closure _, object k, object z)", 53, 53);
 
-make_string(c_7376, "(void *data, object ptr, object z)");
+make_utf8_string_with_len(c_7376, "(void *data, object ptr, object z)", 34, 34);
 
 make_pair(c_7379,r_7344, NULL);
 

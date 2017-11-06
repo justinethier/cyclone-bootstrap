@@ -635,7 +635,7 @@ c_731279.elements = (object *)alloca(sizeof(object) * 1);
 c_731279.elements[0] = ((closureN)self_73468)->elements[0];
 
 
-make_string(c_731332, "get-first");
+make_utf8_string_with_len(c_731332, "get-first", 9, 9);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_731279, &c_731332, __glo__121list_91queue_125_srfi_117, r_73189);; 
 }
 
@@ -682,7 +682,7 @@ c_731285.elements = (object *)alloca(sizeof(object) * 1);
 c_731285.elements[0] = ((closureN)self_73471)->elements[0];
 
 
-make_string(c_731329, "get-last");
+make_utf8_string_with_len(c_731329, "get-last", 8, 8);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_731285, &c_731329, __glo__121list_91queue_125_srfi_117, r_73186);; 
 }
 
@@ -729,7 +729,7 @@ c_731291.elements = (object *)alloca(sizeof(object) * 1);
 c_731291.elements[0] = ((closureN)self_73474)->elements[0];
 
 
-make_string(c_731326, "set-first!");
+make_utf8_string_with_len(c_731326, "set-first!", 10, 10);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731291, &c_731326, __glo__121list_91queue_125_srfi_117, r_73183);; 
 }
 
@@ -776,7 +776,7 @@ c_731297.elements = (object *)alloca(sizeof(object) * 1);
 c_731297.elements[0] = ((closureN)self_73477)->elements[0];
 
 
-make_string(c_731323, "set-last!");
+make_utf8_string_with_len(c_731323, "set-last!", 9, 9);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731297, &c_731323, __glo__121list_91queue_125_srfi_117, r_73180);; 
 }
 
@@ -808,7 +808,7 @@ c_731301.elements = (object *)alloca(sizeof(object) * 1);
 c_731301.elements[0] = ((closureN)self_73479)->elements[0];
 
 
-make_string(c_731320, "raw-make-list-queue");
+make_utf8_string_with_len(c_731320, "raw-make-list-queue", 19, 19);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_731301, &c_731320, __glo__121list_91queue_125_srfi_117);; 
 }
 
@@ -906,7 +906,7 @@ object c_731257 = apply_va(data,  k_73196,2,&c_731258, args_7352_7362);
 return_closcall1(data,  k_73196,  c_731257);
 } else { 
   
-make_string(c_731266, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731266, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73196, &c_731266);}
 }
 ; 
@@ -1298,7 +1298,7 @@ object c_731131 = apply_va(data,  k_73243,2,&c_731132, args_7345_7383);
 return_closcall1(data,  k_73243,  c_731131);
 } else { 
   
-make_string(c_731142, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731142, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73243, &c_731142);}
 }
 ; 
@@ -1571,7 +1571,7 @@ object c_731037 = apply_va(data,  k_73270,2,&c_731038, args_7338_73102);
 return_closcall1(data,  k_73270,  c_731037);
 } else { 
   
-make_string(c_731048, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731048, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73270, &c_731048);}
 }
 ; 
@@ -1706,7 +1706,7 @@ object c_73967 = apply_va(data,  k_73295,2,&c_73968, args_7331_73117);
 return_closcall1(data,  k_73295,  c_73967);
 } else { 
   
-make_string(c_73984, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_73984, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73295, &c_73984);}
 }
 }
@@ -2165,7 +2165,7 @@ return_closcall2(data,  __glo_list_91queue_91empty_127_srfi_117,  &c_73822, ((cl
 static void __lambda_48(void *data, int argc, object self_73553, object r_73362) {
   if( (boolean_f != r_73362) ){ 
   
-make_string(c_73825, "Empty list-queue");
+make_utf8_string_with_len(c_73825, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73553)->elements[0], &c_73825);
 } else { 
   return_closcall1(data,  ((closureN)self_73553)->elements[0],  boolean_f);}
@@ -2291,7 +2291,7 @@ return_closcall2(data,  __glo_list_91queue_91empty_127_srfi_117,  &c_73785, ((cl
 static void __lambda_40(void *data, int argc, object self_73560, object r_73376) {
   if( (boolean_f != r_73376) ){ 
   
-make_string(c_73788, "Empty list-queue");
+make_utf8_string_with_len(c_73788, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73560)->elements[0], &c_73788);
 } else { 
   return_closcall1(data,  ((closureN)self_73560)->elements[0],  boolean_f);}
@@ -2503,7 +2503,7 @@ return_closcall2(data,  __glo_list_91queue_91empty_127_srfi_117,  &c_73720, list
 static void __lambda_26(void *data, int argc, object self_73571, object r_73396) {
   if( (boolean_f != r_73396) ){ 
   
-make_string(c_73723, "Empty list-queue");
+make_utf8_string_with_len(c_73723, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73571)->elements[0], &c_73723);
 } else { 
   
@@ -2545,7 +2545,7 @@ return_closcall2(data,  __glo_list_91queue_91empty_127_srfi_117,  &c_73707, list
 static void __lambda_23(void *data, int argc, object self_73573, object r_73401) {
   if( (boolean_f != r_73401) ){ 
   
-make_string(c_73710, "Empty list-queue");
+make_utf8_string_with_len(c_73710, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73573)->elements[0], &c_73710);
 } else { 
   
@@ -2651,7 +2651,7 @@ object c_73684 = apply_va(data,  k_73417,2,&c_73685, args_733_73152);
 return_closcall1(data,  k_73417,  c_73684);
 } else { 
   
-make_string(c_73688, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_73688, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73417, &c_73688);}
 }
 ; 

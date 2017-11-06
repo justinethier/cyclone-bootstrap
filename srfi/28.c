@@ -541,7 +541,7 @@ return_closcall1(data,(closure)&c_73120,  Cyc_set_cell(data, ((closureN)self_737
 static void __lambda_8(void *data, int argc, object self_7378, object k_7362, object how_7328) {
   if( (boolean_f != Cyc_is_null(((closureN)self_7378)->elements[3])) ){ 
   
-make_string(c_73223, "No value for escape sequence");
+make_utf8_string_with_len(c_73223, "No value for escape sequence", 28, 28);
 return_closcall2(data,  __glo_error_scheme_base,  k_7362, &c_73223);
 } else { 
   
@@ -647,7 +647,7 @@ static void __lambda_2(void *data, int argc, object self_7384, object r_7341) {
 if( (boolean_f != c_73133) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7384)->elements[2]))) ){ 
   
-make_string(c_73144, "Incomplete escape sequence");
+make_utf8_string_with_len(c_73144, "Incomplete escape sequence", 26, 26);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->elements[3], &c_73144);
 } else { 
   if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7384)->elements[2]), obj_char2obj(97))) ){ 
@@ -663,7 +663,7 @@ return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->element
   return_closcall3(data,  car(((closureN)self_7384)->elements[4]),  ((closureN)self_7384)->elements[3], obj_char2obj(126), primitive_cddr);
 } else { 
   
-make_string(c_73187, "Unrecognized escape sequence");
+make_utf8_string_with_len(c_73187, "Unrecognized escape sequence", 28, 28);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->elements[3], &c_73187);}
 }
 }

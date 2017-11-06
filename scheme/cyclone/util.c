@@ -944,7 +944,7 @@ c_733178.elements = (object *)alloca(sizeof(object) * 1);
 c_733178.elements[0] = ((closureN)self_731030)->elements[0];
 
 
-make_string(c_733275, "sc-env");
+make_utf8_string_with_len(c_733275, "sc-env", 6, 6);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_733178, &c_733275, __glo__121syn_91clo_125_scheme_cyclone_util, r_73436);; 
 }
 
@@ -991,7 +991,7 @@ c_733184.elements = (object *)alloca(sizeof(object) * 1);
 c_733184.elements[0] = ((closureN)self_731033)->elements[0];
 
 
-make_string(c_733272, "sc-free-names");
+make_utf8_string_with_len(c_733272, "sc-free-names", 13, 13);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_733184, &c_733272, __glo__121syn_91clo_125_scheme_cyclone_util, r_73433);; 
 }
 
@@ -1038,7 +1038,7 @@ c_733190.elements = (object *)alloca(sizeof(object) * 1);
 c_733190.elements[0] = ((closureN)self_731036)->elements[0];
 
 
-make_string(c_733269, "sc-expr");
+make_utf8_string_with_len(c_733269, "sc-expr", 7, 7);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_733190, &c_733269, __glo__121syn_91clo_125_scheme_cyclone_util, r_73430);; 
 }
 
@@ -1070,7 +1070,7 @@ c_733194.elements = (object *)alloca(sizeof(object) * 1);
 c_733194.elements[0] = ((closureN)self_731038)->elements[0];
 
 
-make_string(c_733266, "make-sc");
+make_utf8_string_with_len(c_733266, "make-sc", 7, 7);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_733194, &c_733266, __glo__121syn_91clo_125_scheme_cyclone_util);; 
 }
 
@@ -1565,7 +1565,7 @@ return_closcall1(data,(closure)&c_733032,  &c_733044);;
 static void __lambda_279(void *data, int argc, object self_731061, object delim_85_73195) {
   if( (boolean_f != Cyc_is_null(((closureN)self_731061)->elements[1])) ){ 
   
-make_string(c_733050, "");
+make_utf8_string_with_len(c_733050, "", 0, 0);
 return_closcall1(data,  ((closureN)self_731061)->elements[0],  &c_733050);
 } else { 
     object c_733053 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731061)->elements[1]), obj_int2obj(1));
@@ -1638,7 +1638,7 @@ return_closcall2(data,  __glo_mangle_scheme_cyclone_util,  &c_733023, symbol_731
 
 static void __lambda_274(void *data, int argc, object self_731065, object r_73482) {
   
-make_string(c_733029, "__glo_");
+make_utf8_string_with_len(c_733029, "__glo_", 6, 6);
 
 object c_733028 = Cyc_string_append(data,  ((closureN)self_731065)->elements[0],2,&c_733029, r_73482);
 return_closcall1(data,  ((closureN)self_731065)->elements[0],  c_733028);; 
@@ -2024,7 +2024,7 @@ return_closcall1(data,(closure)&c_732904,  Cyc_string2symbol(data, car(((closure
 static void __lambda_252(void *data, int argc, object self_731086, object r_73489) {
   if( (boolean_f != memberp(data, r_73489, __glo__85c_91keywords_85_scheme_cyclone_util)) ){ 
   
-make_string(c_732912, "_");
+make_utf8_string_with_len(c_732912, "_", 1, 1);
 
 object c_732911 = Cyc_string_append(data,  ((closureN)self_731086)->elements[1],2,&c_732912, car(((closureN)self_731086)->elements[0]));
 return_closcall1(data,  ((closureN)self_731086)->elements[1],  c_732911);
@@ -2696,7 +2696,7 @@ static void __lambda_214(void *data, int argc, object self_731120, object r_7356
   return_closcall1(data,  ((closureN)self_731120)->elements[1],  ((closureN)self_731120)->elements[0]);
 } else { 
   
-make_string(c_732691, "Invalid parameter to identifier->symbol");
+make_utf8_string_with_len(c_732691, "Invalid parameter to identifier->symbol", 39, 39);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731120)->elements[1], &c_732691, ((closureN)self_731120)->elements[0]);}
 ; 
 }
@@ -3050,7 +3050,7 @@ static void __lambda_194(void *data, int argc, object self_731135, object r_7361
 static void __lambda_193(void *data, int argc, object self_731136, object r_73604) {
   if( (boolean_f != Cyc_eq(((closureN)self_731136)->elements[0], __glo_env_117the_91empty_91environment_scheme_cyclone_util)) ){ 
   
-make_string(c_732533, "Unbound variable -- SET!");
+make_utf8_string_with_len(c_732533, "Unbound variable -- SET!", 24, 24);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731136)->elements[1], &c_732533, ((closureN)self_731136)->elements[3]);
 } else { 
   return_closcall3(data,  car(((closureN)self_731136)->elements[2]),  ((closureN)self_731136)->elements[1], Cyc_car(data, Cyc_car(data, ((closureN)self_731136)->elements[0])), Cyc_cdr(data, Cyc_car(data, ((closureN)self_731136)->elements[0])));}
@@ -3264,7 +3264,7 @@ return_closcall4(data,  __glo_env_117_191lookup_91variable_91value_scheme_cyclon
 
 static void __lambda_179(void *data, int argc, object self_731147, object k_73649) {
   
-make_string(c_732420, "Unbound variable");
+make_utf8_string_with_len(c_732420, "Unbound variable", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  k_73649, &c_732420, ((closureN)self_731147)->elements[0]);; 
 }
 
@@ -3354,11 +3354,11 @@ static void __lambda_174(void *data, int argc, object self_731151, object r_7365
     object c_732393 = Cyc_num_fast_lt_op(data,((closureN)self_731151)->elements[1], r_73657);
 if( (boolean_f != c_732393) ){ 
   
-make_string(c_732397, "Too many arguments supplied");
+make_utf8_string_with_len(c_732397, "Too many arguments supplied", 27, 27);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_731151)->elements[0], &c_732397, ((closureN)self_731151)->elements[3], ((closureN)self_731151)->elements[2]);
 } else { 
   
-make_string(c_732402, "Too few arguments supplied");
+make_utf8_string_with_len(c_732402, "Too few arguments supplied", 26, 26);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_731151)->elements[0], &c_732402, ((closureN)self_731151)->elements[3], ((closureN)self_731151)->elements[2]);}
 ; 
 }
@@ -3591,7 +3591,7 @@ c_732271.elements = (object *)alloca(sizeof(object) * 1);
 c_732271.elements[0] = ((closureN)self_731158)->elements[0];
 
 
-make_string(c_732280, "$");
+make_utf8_string_with_len(c_732280, "$", 1, 1);
 
 object c_732278 = Cyc_string_append(data,(closure)&c_732271,3,((closureN)self_731158)->elements[1], &c_732280, r_73706);
 return_closcall1(data,(closure)&c_732271,  c_732278);; 
@@ -3656,7 +3656,7 @@ c_732227.elements = (object *)alloca(sizeof(object) * 1);
 c_732227.elements[0] = ((closureN)self_731163)->elements[0];
 
 
-make_string(c_732235, "$");
+make_utf8_string_with_len(c_732235, "$", 1, 1);
 
 object c_732234 = Cyc_string_append(data,(closure)&c_732227,2,&c_732235, r_73701);
 return_closcall1(data,(closure)&c_732227,  c_732234);; 
@@ -4089,7 +4089,7 @@ return_closcall1(data,(closure)&c_732008,  Cyc_is_null(lis_73311));;
 static void __lambda_122(void *data, int argc, object self_731185, object r_73760) {
   if( (boolean_f != r_73760) ){ 
   
-make_string(c_732011, "list-insert-at!, lis cannot be null");
+make_utf8_string_with_len(c_732011, "list-insert-at!, lis cannot be null", 35, 35);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_731185)->elements[1], &c_732011);
 } else { 
   
@@ -4997,7 +4997,7 @@ static void __lambda_67(void *data, int argc, object self_731231, object k_73854
     object c_731717 = Cyc_num_fast_gt_op(data,((closureN)self_731231)->elements[3], ((closureN)self_731231)->elements[2]);
 if( (boolean_f != c_731717) ){ 
   
-make_string(c_731721, "Too few arguments supplied");
+make_utf8_string_with_len(c_731721, "Too few arguments supplied", 26, 26);
 return_closcall4(data,  __glo_error_scheme_base,  k_73854, &c_731721, ((closureN)self_731231)->elements[1], ((closureN)self_731231)->elements[0]);
 } else { 
   return_closcall1(data,  k_73854,  boolean_f);}
@@ -5398,7 +5398,7 @@ c_731507.elements = (object *)alloca(sizeof(object) * 1);
 c_731507.elements[0] = ((closureN)self_731248)->elements[0];
 
 
-make_string(c_731515, "__inline__");
+make_utf8_string_with_len(c_731515, "__inline__", 10, 10);
 
 object c_731514 = Cyc_string_append(data,(closure)&c_731507,2,r_73924, &c_731515);
 return_closcall1(data,(closure)&c_731507,  c_731514);; 

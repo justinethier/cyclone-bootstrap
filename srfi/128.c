@@ -1147,7 +1147,7 @@ c_734475.elements = (object *)alloca(sizeof(object) * 1);
 c_734475.elements[0] = ((closureN)self_731477)->elements[0];
 
 
-make_string(c_734595, "comparator-type-test-predicate");
+make_utf8_string_with_len(c_734595, "comparator-type-test-predicate", 30, 30);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734475, &c_734595, __glo_comparator_srfi_128, r_73705);; 
 }
 
@@ -1194,7 +1194,7 @@ c_734481.elements = (object *)alloca(sizeof(object) * 1);
 c_734481.elements[0] = ((closureN)self_731480)->elements[0];
 
 
-make_string(c_734592, "comparator-equality-predicate");
+make_utf8_string_with_len(c_734592, "comparator-equality-predicate", 29, 29);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734481, &c_734592, __glo_comparator_srfi_128, r_73702);; 
 }
 
@@ -1241,7 +1241,7 @@ c_734487.elements = (object *)alloca(sizeof(object) * 1);
 c_734487.elements[0] = ((closureN)self_731483)->elements[0];
 
 
-make_string(c_734589, "comparator-ordering-predicate");
+make_utf8_string_with_len(c_734589, "comparator-ordering-predicate", 29, 29);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734487, &c_734589, __glo_comparator_srfi_128, r_73699);; 
 }
 
@@ -1288,7 +1288,7 @@ c_734493.elements = (object *)alloca(sizeof(object) * 1);
 c_734493.elements[0] = ((closureN)self_731486)->elements[0];
 
 
-make_string(c_734586, "comparator-hash-function");
+make_utf8_string_with_len(c_734586, "comparator-hash-function", 24, 24);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734493, &c_734586, __glo_comparator_srfi_128, r_73696);; 
 }
 
@@ -1335,7 +1335,7 @@ c_734499.elements = (object *)alloca(sizeof(object) * 1);
 c_734499.elements[0] = ((closureN)self_731489)->elements[0];
 
 
-make_string(c_734583, "comparator-ordered?");
+make_utf8_string_with_len(c_734583, "comparator-ordered?", 19, 19);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734499, &c_734583, __glo_comparator_srfi_128, r_73693);; 
 }
 
@@ -1382,7 +1382,7 @@ c_734505.elements = (object *)alloca(sizeof(object) * 1);
 c_734505.elements[0] = ((closureN)self_731492)->elements[0];
 
 
-make_string(c_734580, "comparator-hashable?");
+make_utf8_string_with_len(c_734580, "comparator-hashable?", 20, 20);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_734505, &c_734580, __glo_comparator_srfi_128, r_73690);; 
 }
 
@@ -1414,7 +1414,7 @@ c_734509.elements = (object *)alloca(sizeof(object) * 1);
 c_734509.elements[0] = ((closureN)self_731494)->elements[0];
 
 
-make_string(c_734577, "make-raw-comparator");
+make_utf8_string_with_len(c_734577, "make-raw-comparator", 19, 19);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_734509, &c_734577, __glo_comparator_srfi_128);; 
 }
 
@@ -6299,7 +6299,7 @@ object c_733123 = apply_va(data,  k_731077,2,&c_733124, args_73142_73470);
 return_closcall1(data,  k_731077,  c_733123);
 } else { 
   
-make_string(c_733152, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_733152, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731077, &c_733152);}
 }
 ; 
@@ -7665,7 +7665,7 @@ static void __lambda_95(void *data, int argc, object self_731802, object r_73123
   return_closcall1(data,  ((closureN)self_731802)->elements[1],  boolean_t);
 } else { 
   
-make_string(c_732642, "comparator type check failed");
+make_utf8_string_with_len(c_732642, "comparator type check failed", 28, 28);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_731802)->elements[1], &c_732642, ((closureN)self_731802)->elements[0], ((closureN)self_731802)->elements[2]);}
 ; 
 }
@@ -7906,7 +7906,7 @@ return_closcall1(data,  k_731253,  &c_732606);}
 
 static void __lambda_82(void *data, int argc, object self_731813, object k_731254, object x_73566, object y_73565) {
   
-make_string(c_732608, "hashing not supported");
+make_utf8_string_with_len(c_732608, "hashing not supported", 21, 21);
 return_closcall2(data,  __glo_error_scheme_base,  k_731254, &c_732608);; 
 }
 
@@ -7922,7 +7922,7 @@ return_closcall1(data,  k_731255,  &c_732596);}
 
 static void __lambda_80(void *data, int argc, object self_731815, object k_731256, object x_73568, object y_73567) {
   
-make_string(c_732598, "ordering not supported");
+make_utf8_string_with_len(c_732598, "ordering not supported", 22, 22);
 return_closcall2(data,  __glo_error_scheme_base,  k_731256, &c_732598);; 
 }
 
@@ -8071,7 +8071,7 @@ c_732546.elements = (object *)alloca(sizeof(object) * 1);
 c_732546.elements[0] = k_731287;
 
 
-make_string(c_732552, "no expansion for");
+make_utf8_string_with_len(c_732552, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_732546, &c_732552, ((closureN)self_731824)->elements[0]);}
 ; 
 }
@@ -8420,7 +8420,7 @@ c_732419.elements = (object *)alloca(sizeof(object) * 1);
 c_732419.elements[0] = k_731330;
 
 
-make_string(c_732425, "no expansion for");
+make_utf8_string_with_len(c_732425, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_732419, &c_732425, ((closureN)self_731840)->elements[0]);}
 ; 
 }
@@ -8564,7 +8564,7 @@ c_732377.elements = (object *)alloca(sizeof(object) * 1);
 c_732377.elements[0] = k_731347;
 
 
-make_string(c_732383, "no expansion for");
+make_utf8_string_with_len(c_732383, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_732377, &c_732383, ((closureN)self_731848)->elements[0]);}
 ; 
 }
@@ -8729,7 +8729,7 @@ c_732339.elements = (object *)alloca(sizeof(object) * 1);
 c_732339.elements[0] = ((closureN)self_731856)->elements[1];
 
 
-make_string(c_732345, "no expansion for");
+make_utf8_string_with_len(c_732345, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_732339, &c_732345, ((closureN)self_731856)->elements[0]);}
 ; 
 }
