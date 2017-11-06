@@ -6025,10 +6025,12 @@ void _read_string(void *data, object cont, port_type *p)
             p->buf_idx++;
             break;
           }
-          // TODO: verify if hex digit is valid
-          //if (!isdigit(p->buf_idx) && !_read_is_hex_digit(p->buf_idx)) {
-          //  _read_error(data, p, "invalid hex digit in string");
-          //}
+          // Verify if hex digit is valid
+          if (!isdigit(p->mem_buf[p->buf_idx]) && 
+              !_read_is_hex_digit(p->mem_buf[p->buf_idx])) {
+            p->buf_idx++;
+            _read_error(data, p, "invalid hex digit in string");
+          }
           buf[i] = p->mem_buf[p->buf_idx];
           p->buf_idx++;
           p->col_num++;
