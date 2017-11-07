@@ -2117,8 +2117,10 @@ object Cyc_string_byte_length(void *data, object str)
 
 object Cyc_string_set(void *data, object str, object k, object chr)
 {
+  char buf[5];
   char *raw;
-  int idx, len;
+  int idx, len, buf_len;
+  char_type input_char;
 
   Cyc_check_str(data, str);
   Cyc_check_num(data, k);
@@ -2127,6 +2129,10 @@ object Cyc_string_set(void *data, object str, object k, object chr)
     Cyc_rt_raise2(data, "Expected char but received", chr);
   }
 
+  input_char = obj_obj2char(chr);
+  Cyc_utf8_encode_char(buf, 5, input_char);
+  buf_len = strlen(buf);
+
   raw = string_str(str);
   idx = unbox_number(k);
   len = string_len(str);
@@ -2134,8 +2140,7 @@ object Cyc_string_set(void *data, object str, object k, object chr)
   Cyc_check_bounds(data, "string-set!", len, idx);
 
   // Take fast path if all chars are just 1 byte
-  if (string_num_cp(str) == string_len(str)) {
-    // TODO: not good enough, chr could be multi-byte
+  if (string_num_cp(str) == string_len(str) && buf_len == 1) {
     raw[idx] = obj_obj2char(chr);
   } else {
 fprintf(stderr, "DEBUG %s, num_cp = %d, len = %d\n", raw, string_num_cp(str), len);
@@ -2145,25 +2150,26 @@ fprintf(stderr, "DEBUG %s, num_cp = %d, len = %d\n", raw, string_num_cp(str), le
     // or don't allocate if chr uses as many or fewer bytes 
     // than the codepoint it is replacing
 
-    char *tmp = raw;
+    char *tmp = raw, *this_cp = raw;
     char_type codepoint;
     uint32_t state = 0;
-    int i = 0, count, start_len = 0, start_cp = 0;
+    int i = 0, count, bytes = 0;
 
     for (count = 0; *tmp; ++tmp){
+      bytes++;
       if (!Cyc_utf8_decode(&state, &codepoint, (uint8_t)*tmp)){
-        if (count < idx) {
-          start_len = i;
-          start_cp = count;
-        } else if (count == idx) {
+        if (count == idx) {
           break;
         }
+        this_cp = tmp + 1;
         count += 1;
+        bytes = 0;
       }
       i++;
     }
-    if (state != CYC_UTF8_ACCEPT)
+    if (state != CYC_UTF8_ACCEPT) {
        Cyc_rt_raise2(data, "string-set! - invalid character at index", k);
+    }
 
     // TODO: perform actual mutation
     //
@@ -2171,7 +2177,21 @@ fprintf(stderr, "DEBUG %s, num_cp = %d, len = %d\n", raw, string_num_cp(str), le
     // and we know the codepoint to be replaced. by calculating its length
     // we can compute where the end portion starts, and by using str we can
     // figure out how many remaining bytes/codepoints are in end
-
+    //
+    // 3 cases: 
+    // - buf_len = bytes, just straight replace
+    if (buf_len == bytes) {
+      for (i = 0; i < buf_len; i++) {
+        this_cp[i] = buf[i];
+      }
+    }
+    // - buf_len > bytes, will need to allocate more memory (!!)
+    // - buf_len < bytes, just replace, but pad with NULL chars.
+    //                    in this case need to ensure string_len is not 
+    //                    reduced because original value still matters for GC purposes
+    else {
+      Cyc_rt_raise2(data, "string-set! - unable to modify character", chr);
+    }
   }
   return str;
 }
