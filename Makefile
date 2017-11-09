@@ -15,7 +15,7 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 	$(CC) $(CFLAGS) $< -c -o $@
 
 %.so: %.o
-	$(CC) -shared -rdynamic -o $@ $<
+	$(CC) -shared $(LDFLAGS) -o $@ $<
 
 all: cyclone icyc-c
 
@@ -40,19 +40,19 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c
 
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
-	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(CFLAGS) -o cyclone
+	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
 
 .PHONY: icyc-c
 icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) icyc.c $(CFLAGS) -c -o icyc.o
-	$(CC) icyc.o $(COBJECTS) $(LIBS) $(CFLAGS) -o icyc
+	$(CC) icyc.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o icyc
 
 icyc: cyclone
 	./cyclone icyc.scm
 
 .PHONY: test
 test:
-	make unit-tests
+	$(MAKE) unit-tests
 
 unit-tests: unit-tests.scm
 	./cyclone unit-tests.scm && ./unit-tests
