@@ -1,6 +1,6 @@
 [<img src="https://raw.githubusercontent.com/justinethier/cyclone/master/docs/images/cyclone-logo-04-bootstrap.png" alt="cyclone-scheme">](http://github.com/justinethier/cyclone)
 
-<img src="https://travis-ci.org/justinethier/cyclone.svg?branch=master">
+[![Travis CI](https://travis-ci.org/justinethier/cyclone.svg?branch=master)](https://travis-ci.org/justinethier/cyclone)
 
 Cyclone is a brand-new, R<sup>7</sup>RS Scheme-to-C compiler that uses a variant of [Cheney on the MTA](http://www.pipeline.com/~hbaker1/CheneyMTA.html) to implement full tail recursion, continuations, and generational garbage collection.
 
