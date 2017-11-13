@@ -1439,7 +1439,7 @@ c_735162.elements = (object *)alloca(sizeof(object) * 1);
 c_735162.elements[0] = ((closureN)self_731904)->elements[0];
 
 
-make_string(c_735240, "sob-hash-table");
+make_utf8_string_with_len(c_735240, "sob-hash-table", 14, 14);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_735162, &c_735240, __glo_sob_srfi_113, r_73696);; 
 }
 
@@ -1486,7 +1486,7 @@ c_735168.elements = (object *)alloca(sizeof(object) * 1);
 c_735168.elements[0] = ((closureN)self_731907)->elements[0];
 
 
-make_string(c_735237, "sob-comparator");
+make_utf8_string_with_len(c_735237, "sob-comparator", 14, 14);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_735168, &c_735237, __glo_sob_srfi_113, r_73693);; 
 }
 
@@ -1533,7 +1533,7 @@ c_735174.elements = (object *)alloca(sizeof(object) * 1);
 c_735174.elements[0] = ((closureN)self_731910)->elements[0];
 
 
-make_string(c_735234, "sob-multi?");
+make_utf8_string_with_len(c_735234, "sob-multi?", 10, 10);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_735174, &c_735234, __glo_sob_srfi_113, r_73690);; 
 }
 
@@ -1565,7 +1565,7 @@ c_735178.elements = (object *)alloca(sizeof(object) * 1);
 c_735178.elements[0] = ((closureN)self_731912)->elements[0];
 
 
-make_string(c_735231, "raw-make-sob");
+make_utf8_string_with_len(c_735231, "raw-make-sob", 12, 12);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_735178, &c_735231, __glo_sob_srfi_113);; 
 }
 
@@ -1735,7 +1735,7 @@ c_735182.elements = (object *)alloca(sizeof(object) * 1);
 c_735182.elements[0] = ((closureN)self_731922)->elements[0];
 
 
-make_string(c_735203, "missing");
+make_utf8_string_with_len(c_735203, "missing", 7, 7);
 return_closcall2(data,  __glo_string_91copy_scheme_base,  &c_735182, &c_735203);; 
 }
 
@@ -4699,7 +4699,7 @@ object c_734347 = apply_va(data,  k_731045,2,&c_734348, args_7361_73247);
 return_closcall1(data,  k_731045,  c_734347);
 } else { 
   
-make_string(c_734361, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_734361, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731045, &c_734361);}
 }
 }
@@ -4826,7 +4826,7 @@ object c_734274 = apply_va(data,  k_731076,2,&c_734275, args_7351_73259);
 return_closcall1(data,  k_731076,  c_734274);
 } else { 
   
-make_string(c_734288, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_734288, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731076, &c_734288);}
 }
 }
@@ -4971,7 +4971,7 @@ object c_734194 = apply_va(data,  k_731108,2,&c_734195, args_7341_73271);
 return_closcall1(data,  k_731108,  c_734194);
 } else { 
   
-make_string(c_734208, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_734208, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731108, &c_734208);}
 }
 }
@@ -5291,7 +5291,7 @@ object c_734075 = apply_va(data,  k_731153,2,&c_734076, args_7331_73288);
 return_closcall1(data,  k_731153,  c_734075);
 } else { 
   
-make_string(c_734089, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_734089, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731153, &c_734089);}
 }
 }
@@ -5611,7 +5611,7 @@ object c_733956 = apply_va(data,  k_731198,2,&c_733957, args_7321_73305);
 return_closcall1(data,  k_731198,  c_733956);
 } else { 
   
-make_string(c_733970, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_733970, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731198, &c_733970);}
 }
 }
@@ -10830,7 +10830,7 @@ static void __lambda_27(void *data, int argc, object self_732400, object r_73182
   return_closcall1(data,  ((closureN)self_732400)->elements[2],  boolean_f);
 } else { 
   
-make_string(c_732551, "different comparators");
+make_utf8_string_with_len(c_732551, "different comparators", 21, 21);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_732400)->elements[2], &c_732551, ((closureN)self_732400)->elements[0], ((closureN)self_732400)->elements[1]);}
 ; 
 }
@@ -10935,7 +10935,7 @@ static void __lambda_17(void *data, int argc, object self_732406, object r_73184
   return_closcall1(data,  ((closureN)self_732406)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_732509, "not a bag");
+make_utf8_string_with_len(c_732509, "not a bag", 9, 9);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_732406)->elements[0], &c_732509, ((closureN)self_732406)->elements[1]);}
 ; 
 }
@@ -10962,7 +10962,7 @@ static void __lambda_15(void *data, int argc, object self_732407, object r_73185
   return_closcall1(data,  ((closureN)self_732407)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_732500, "not a set");
+make_utf8_string_with_len(c_732500, "not a set", 9, 9);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_732407)->elements[0], &c_732500, ((closureN)self_732407)->elements[1]);}
 ; 
 }
@@ -11096,7 +11096,7 @@ object c_732459 = apply_va(data,  k_731880,2,&c_732460, args_731_73649);
 return_closcall1(data,  k_731880,  c_732459);
 } else { 
   
-make_string(c_732468, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_732468, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_731880, &c_732468);}
 }
 ; 

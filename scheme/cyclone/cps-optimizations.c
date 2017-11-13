@@ -2151,7 +2151,7 @@ c_738531.elements = (object *)alloca(sizeof(object) * 1);
 c_738531.elements[0] = ((closureN)self_732815)->elements[0];
 
 
-make_string(c_738965, "adbv:global?");
+make_utf8_string_with_len(c_738965, "adbv:global?", 12, 12);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738531, &c_738965, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731287);; 
 }
 
@@ -2198,7 +2198,7 @@ c_738537.elements = (object *)alloca(sizeof(object) * 1);
 c_738537.elements[0] = ((closureN)self_732818)->elements[0];
 
 
-make_string(c_738962, "adbv:defined-by");
+make_utf8_string_with_len(c_738962, "adbv:defined-by", 15, 15);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738537, &c_738962, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731284);; 
 }
 
@@ -2245,7 +2245,7 @@ c_738543.elements = (object *)alloca(sizeof(object) * 1);
 c_738543.elements[0] = ((closureN)self_732821)->elements[0];
 
 
-make_string(c_738959, "adbv:defines-lambda-id");
+make_utf8_string_with_len(c_738959, "adbv:defines-lambda-id", 22, 22);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738543, &c_738959, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731281);; 
 }
 
@@ -2292,7 +2292,7 @@ c_738549.elements = (object *)alloca(sizeof(object) * 1);
 c_738549.elements[0] = ((closureN)self_732824)->elements[0];
 
 
-make_string(c_738956, "adbv:const?");
+make_utf8_string_with_len(c_738956, "adbv:const?", 11, 11);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738549, &c_738956, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731278);; 
 }
 
@@ -2339,7 +2339,7 @@ c_738555.elements = (object *)alloca(sizeof(object) * 1);
 c_738555.elements[0] = ((closureN)self_732827)->elements[0];
 
 
-make_string(c_738953, "adbv:const-value");
+make_utf8_string_with_len(c_738953, "adbv:const-value", 16, 16);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738555, &c_738953, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731275);; 
 }
 
@@ -2386,7 +2386,7 @@ c_738561.elements = (object *)alloca(sizeof(object) * 1);
 c_738561.elements[0] = ((closureN)self_732830)->elements[0];
 
 
-make_string(c_738950, "adbv:ref-count");
+make_utf8_string_with_len(c_738950, "adbv:ref-count", 14, 14);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738561, &c_738950, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731272);; 
 }
 
@@ -2433,7 +2433,7 @@ c_738567.elements = (object *)alloca(sizeof(object) * 1);
 c_738567.elements[0] = ((closureN)self_732833)->elements[0];
 
 
-make_string(c_738947, "adbv:ref-by");
+make_utf8_string_with_len(c_738947, "adbv:ref-by", 11, 11);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738567, &c_738947, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731269);; 
 }
 
@@ -2480,7 +2480,7 @@ c_738573.elements = (object *)alloca(sizeof(object) * 1);
 c_738573.elements[0] = ((closureN)self_732836)->elements[0];
 
 
-make_string(c_738944, "adbv:reassigned?");
+make_utf8_string_with_len(c_738944, "adbv:reassigned?", 16, 16);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738573, &c_738944, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731266);; 
 }
 
@@ -2527,7 +2527,7 @@ c_738579.elements = (object *)alloca(sizeof(object) * 1);
 c_738579.elements[0] = ((closureN)self_732839)->elements[0];
 
 
-make_string(c_738941, "adbv:assigned-value");
+make_utf8_string_with_len(c_738941, "adbv:assigned-value", 19, 19);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738579, &c_738941, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731263);; 
 }
 
@@ -2574,7 +2574,7 @@ c_738585.elements = (object *)alloca(sizeof(object) * 1);
 c_738585.elements[0] = ((closureN)self_732842)->elements[0];
 
 
-make_string(c_738938, "adbv:app-fnc-count");
+make_utf8_string_with_len(c_738938, "adbv:app-fnc-count", 18, 18);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738585, &c_738938, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731260);; 
 }
 
@@ -2621,7 +2621,7 @@ c_738591.elements = (object *)alloca(sizeof(object) * 1);
 c_738591.elements[0] = ((closureN)self_732845)->elements[0];
 
 
-make_string(c_738935, "adbv:app-arg-count");
+make_utf8_string_with_len(c_738935, "adbv:app-arg-count", 18, 18);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738591, &c_738935, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731257);; 
 }
 
@@ -2668,7 +2668,7 @@ c_738597.elements = (object *)alloca(sizeof(object) * 1);
 c_738597.elements[0] = ((closureN)self_732848)->elements[0];
 
 
-make_string(c_738932, "adbv:inlinable");
+make_utf8_string_with_len(c_738932, "adbv:inlinable", 14, 14);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738597, &c_738932, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731254);; 
 }
 
@@ -2715,7 +2715,7 @@ c_738603.elements = (object *)alloca(sizeof(object) * 1);
 c_738603.elements[0] = ((closureN)self_732851)->elements[0];
 
 
-make_string(c_738929, "adbv:mutated-indirectly?");
+make_utf8_string_with_len(c_738929, "adbv:mutated-indirectly?", 24, 24);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738603, &c_738929, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731251);; 
 }
 
@@ -2762,7 +2762,7 @@ c_738609.elements = (object *)alloca(sizeof(object) * 1);
 c_738609.elements[0] = ((closureN)self_732854)->elements[0];
 
 
-make_string(c_738926, "adbv:cont?");
+make_utf8_string_with_len(c_738926, "adbv:cont?", 10, 10);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738609, &c_738926, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731248);; 
 }
 
@@ -2809,7 +2809,7 @@ c_738615.elements = (object *)alloca(sizeof(object) * 1);
 c_738615.elements[0] = ((closureN)self_732857)->elements[0];
 
 
-make_string(c_738923, "adbv:set-global!");
+make_utf8_string_with_len(c_738923, "adbv:set-global!", 16, 16);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738615, &c_738923, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731245);; 
 }
 
@@ -2856,7 +2856,7 @@ c_738621.elements = (object *)alloca(sizeof(object) * 1);
 c_738621.elements[0] = ((closureN)self_732860)->elements[0];
 
 
-make_string(c_738920, "adbv:set-defined-by!");
+make_utf8_string_with_len(c_738920, "adbv:set-defined-by!", 20, 20);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738621, &c_738920, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731242);; 
 }
 
@@ -2903,7 +2903,7 @@ c_738627.elements = (object *)alloca(sizeof(object) * 1);
 c_738627.elements[0] = ((closureN)self_732863)->elements[0];
 
 
-make_string(c_738917, "adbv:set-defines-lambda-id!");
+make_utf8_string_with_len(c_738917, "adbv:set-defines-lambda-id!", 27, 27);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738627, &c_738917, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731239);; 
 }
 
@@ -2950,7 +2950,7 @@ c_738633.elements = (object *)alloca(sizeof(object) * 1);
 c_738633.elements[0] = ((closureN)self_732866)->elements[0];
 
 
-make_string(c_738914, "adbv:set-const!");
+make_utf8_string_with_len(c_738914, "adbv:set-const!", 15, 15);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738633, &c_738914, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731236);; 
 }
 
@@ -2997,7 +2997,7 @@ c_738639.elements = (object *)alloca(sizeof(object) * 1);
 c_738639.elements[0] = ((closureN)self_732869)->elements[0];
 
 
-make_string(c_738911, "adbv:set-const-value!");
+make_utf8_string_with_len(c_738911, "adbv:set-const-value!", 21, 21);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738639, &c_738911, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731233);; 
 }
 
@@ -3044,7 +3044,7 @@ c_738645.elements = (object *)alloca(sizeof(object) * 1);
 c_738645.elements[0] = ((closureN)self_732872)->elements[0];
 
 
-make_string(c_738908, "adbv:set-ref-count!");
+make_utf8_string_with_len(c_738908, "adbv:set-ref-count!", 19, 19);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738645, &c_738908, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731230);; 
 }
 
@@ -3091,7 +3091,7 @@ c_738651.elements = (object *)alloca(sizeof(object) * 1);
 c_738651.elements[0] = ((closureN)self_732875)->elements[0];
 
 
-make_string(c_738905, "adbv:set-ref-by!");
+make_utf8_string_with_len(c_738905, "adbv:set-ref-by!", 16, 16);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738651, &c_738905, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731227);; 
 }
 
@@ -3138,7 +3138,7 @@ c_738657.elements = (object *)alloca(sizeof(object) * 1);
 c_738657.elements[0] = ((closureN)self_732878)->elements[0];
 
 
-make_string(c_738902, "adbv:set-reassigned!");
+make_utf8_string_with_len(c_738902, "adbv:set-reassigned!", 20, 20);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738657, &c_738902, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731224);; 
 }
 
@@ -3185,7 +3185,7 @@ c_738663.elements = (object *)alloca(sizeof(object) * 1);
 c_738663.elements[0] = ((closureN)self_732881)->elements[0];
 
 
-make_string(c_738899, "adbv:set-assigned-value!");
+make_utf8_string_with_len(c_738899, "adbv:set-assigned-value!", 24, 24);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738663, &c_738899, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731221);; 
 }
 
@@ -3232,7 +3232,7 @@ c_738669.elements = (object *)alloca(sizeof(object) * 1);
 c_738669.elements[0] = ((closureN)self_732884)->elements[0];
 
 
-make_string(c_738896, "adbv:set-app-fnc-count!");
+make_utf8_string_with_len(c_738896, "adbv:set-app-fnc-count!", 23, 23);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738669, &c_738896, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731218);; 
 }
 
@@ -3279,7 +3279,7 @@ c_738675.elements = (object *)alloca(sizeof(object) * 1);
 c_738675.elements[0] = ((closureN)self_732887)->elements[0];
 
 
-make_string(c_738893, "adbv:set-app-arg-count!");
+make_utf8_string_with_len(c_738893, "adbv:set-app-arg-count!", 23, 23);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738675, &c_738893, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731215);; 
 }
 
@@ -3326,7 +3326,7 @@ c_738681.elements = (object *)alloca(sizeof(object) * 1);
 c_738681.elements[0] = ((closureN)self_732890)->elements[0];
 
 
-make_string(c_738890, "adbv:set-inlinable!");
+make_utf8_string_with_len(c_738890, "adbv:set-inlinable!", 19, 19);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738681, &c_738890, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731212);; 
 }
 
@@ -3373,7 +3373,7 @@ c_738687.elements = (object *)alloca(sizeof(object) * 1);
 c_738687.elements[0] = ((closureN)self_732893)->elements[0];
 
 
-make_string(c_738887, "adbv:set-mutated-indirectly!");
+make_utf8_string_with_len(c_738887, "adbv:set-mutated-indirectly!", 28, 28);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738687, &c_738887, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731209);; 
 }
 
@@ -3420,7 +3420,7 @@ c_738693.elements = (object *)alloca(sizeof(object) * 1);
 c_738693.elements[0] = ((closureN)self_732896)->elements[0];
 
 
-make_string(c_738884, "adbv:set-cont!");
+make_utf8_string_with_len(c_738884, "adbv:set-cont!", 14, 14);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738693, &c_738884, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations, r_731206);; 
 }
 
@@ -3452,7 +3452,7 @@ c_738697.elements = (object *)alloca(sizeof(object) * 1);
 c_738697.elements[0] = ((closureN)self_732898)->elements[0];
 
 
-make_string(c_738881, "%adb:make-var");
+make_utf8_string_with_len(c_738881, "%adb:make-var", 13, 13);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_738697, &c_738881, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations);; 
 }
 
@@ -3926,7 +3926,7 @@ c_738711.elements = (object *)alloca(sizeof(object) * 1);
 c_738711.elements[0] = ((closureN)self_732921)->elements[0];
 
 
-make_string(c_738808, "adbf:simple");
+make_utf8_string_with_len(c_738808, "adbf:simple", 11, 11);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738711, &c_738808, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731182);; 
 }
 
@@ -3973,7 +3973,7 @@ c_738717.elements = (object *)alloca(sizeof(object) * 1);
 c_738717.elements[0] = ((closureN)self_732924)->elements[0];
 
 
-make_string(c_738805, "adbf:unused-params");
+make_utf8_string_with_len(c_738805, "adbf:unused-params", 18, 18);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738717, &c_738805, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731179);; 
 }
 
@@ -4020,7 +4020,7 @@ c_738723.elements = (object *)alloca(sizeof(object) * 1);
 c_738723.elements[0] = ((closureN)self_732927)->elements[0];
 
 
-make_string(c_738802, "adbf:assigned-to-var");
+make_utf8_string_with_len(c_738802, "adbf:assigned-to-var", 20, 20);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738723, &c_738802, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731176);; 
 }
 
@@ -4067,7 +4067,7 @@ c_738729.elements = (object *)alloca(sizeof(object) * 1);
 c_738729.elements[0] = ((closureN)self_732930)->elements[0];
 
 
-make_string(c_738799, "adbf:side-effects");
+make_utf8_string_with_len(c_738799, "adbf:side-effects", 17, 17);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_738729, &c_738799, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731173);; 
 }
 
@@ -4114,7 +4114,7 @@ c_738735.elements = (object *)alloca(sizeof(object) * 1);
 c_738735.elements[0] = ((closureN)self_732933)->elements[0];
 
 
-make_string(c_738796, "adbf:set-simple!");
+make_utf8_string_with_len(c_738796, "adbf:set-simple!", 16, 16);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738735, &c_738796, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731170);; 
 }
 
@@ -4161,7 +4161,7 @@ c_738741.elements = (object *)alloca(sizeof(object) * 1);
 c_738741.elements[0] = ((closureN)self_732936)->elements[0];
 
 
-make_string(c_738793, "adbf:set-unused-params!");
+make_utf8_string_with_len(c_738793, "adbf:set-unused-params!", 23, 23);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738741, &c_738793, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731167);; 
 }
 
@@ -4208,7 +4208,7 @@ c_738747.elements = (object *)alloca(sizeof(object) * 1);
 c_738747.elements[0] = ((closureN)self_732939)->elements[0];
 
 
-make_string(c_738790, "adbf:set-assigned-to-var!");
+make_utf8_string_with_len(c_738790, "adbf:set-assigned-to-var!", 25, 25);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738747, &c_738790, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731164);; 
 }
 
@@ -4255,7 +4255,7 @@ c_738753.elements = (object *)alloca(sizeof(object) * 1);
 c_738753.elements[0] = ((closureN)self_732942)->elements[0];
 
 
-make_string(c_738787, "adbf:set-side-effects!");
+make_utf8_string_with_len(c_738787, "adbf:set-side-effects!", 22, 22);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_738753, &c_738787, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_731161);; 
 }
 
@@ -4287,7 +4287,7 @@ c_738757.elements = (object *)alloca(sizeof(object) * 1);
 c_738757.elements[0] = ((closureN)self_732944)->elements[0];
 
 
-make_string(c_738784, "%adb:make-fnc");
+make_utf8_string_with_len(c_738784, "%adb:make-fnc", 13, 13);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_738757, &c_738784, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations);; 
 }
 
@@ -4957,7 +4957,7 @@ c_738313.elements[4] = ((closureN)self_732969)->elements[4];
 return_closcall3(data,  __glo_map_scheme_base,  &c_738313, car(((closureN)self_732969)->elements[0]), Cyc_cdr(data, ((closureN)self_732969)->elements[2]));
 } else { 
   
-make_string(c_738459, "unhandled exp: ");
+make_utf8_string_with_len(c_738459, "unhandled exp: ", 15, 15);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_732969)->elements[4], &c_738459, ((closureN)self_732969)->elements[2]);}
 ; 
 }
@@ -6059,7 +6059,7 @@ c_737931.elements[0] = ((closureN)self_733029)->elements[0];
 c_737931.elements[1] = ((closureN)self_733029)->elements[1];
 
 
-make_string(c_737943, "---------------- cps analysis db:");
+make_utf8_string_with_len(c_737943, "---------------- cps analysis db:", 33, 33);
 return_closcall2(data,  __glo_trace_117info_scheme_cyclone_transforms,  &c_737931, &c_737943);; 
 }
 
@@ -12133,7 +12133,7 @@ c_735738.elements[1] = ((closureN)self_733333)->elements[1];
 return_closcall1(data,(closure)&c_735720,  &c_735738);
 } else { 
   
-make_string(c_735952, "CPS optimize [1] - Unknown expression");
+make_utf8_string_with_len(c_735952, "CPS optimize [1] - Unknown expression", 37, 37);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733333)->elements[1], &c_735952, car(((closureN)self_733333)->elements[0]));}
 ; 
 }

@@ -1717,7 +1717,7 @@ c_7311106.elements = (object *)alloca(sizeof(object) * 1);
 c_7311106.elements[0] = ((closureN)self_733347)->elements[0];
 
 
-make_string(c_7311286, "TEST_VERBOSE");
+make_utf8_string_with_len(c_7311286, "TEST_VERBOSE", 12, 12);
 return_closcall2(data,  __glo_get_91environment_91variable_scheme_process_91context,  &c_7311106, &c_7311286);; 
 }
 
@@ -2002,7 +2002,7 @@ c_7311158.elements = (object *)alloca(sizeof(object) * 1);
 c_7311158.elements[0] = ((closureN)self_733365)->elements[0];
 
 
-make_string(c_7311268, "TEST_FIRST_INDENTATION");
+make_utf8_string_with_len(c_7311268, "TEST_FIRST_INDENTATION", 22, 22);
 return_closcall2(data,  __glo_get_91environment_91variable_scheme_process_91context,  &c_7311158, &c_7311268);; 
 }
 
@@ -2101,7 +2101,7 @@ c_7311181.elements = (object *)alloca(sizeof(object) * 1);
 c_7311181.elements[0] = ((closureN)self_733370)->elements[0];
 
 
-make_string(c_7311265, "TEST_MAX_INDENTATION");
+make_utf8_string_with_len(c_7311265, "TEST_MAX_INDENTATION", 20, 20);
 return_closcall2(data,  __glo_get_91environment_91variable_scheme_process_91context,  &c_7311181, &c_7311265);; 
 }
 
@@ -2200,7 +2200,7 @@ c_7311204.elements = (object *)alloca(sizeof(object) * 1);
 c_7311204.elements[0] = ((closureN)self_733375)->elements[0];
 
 
-make_string(c_7311262, "TEST_FILTER");
+make_utf8_string_with_len(c_7311262, "TEST_FILTER", 11, 11);
 return_closcall3(data,  __glo_getenv_91filter_91list_scheme_cyclone_test,  &c_7311204, __glo_string_91_125info_91matcher_scheme_cyclone_test, &c_7311262);; 
 }
 
@@ -2218,7 +2218,7 @@ c_7311206.elements[0] = ((closureN)self_733376)->elements[0];
 c_7311206.elements[1] = r_731332;
 
 
-make_string(c_7311261, "TEST_REMOVE");
+make_utf8_string_with_len(c_7311261, "TEST_REMOVE", 11, 11);
 return_closcall4(data,  __glo_getenv_91filter_91list_scheme_cyclone_test,  &c_7311206, __glo_string_91_125info_91matcher_scheme_cyclone_test, &c_7311261, boolean_t);; 
 }
 
@@ -2280,7 +2280,7 @@ c_7311214.elements = (object *)alloca(sizeof(object) * 1);
 c_7311214.elements[0] = ((closureN)self_733380)->elements[0];
 
 
-make_string(c_7311257, "TEST_GROUP_FILTER");
+make_utf8_string_with_len(c_7311257, "TEST_GROUP_FILTER", 17, 17);
 return_closcall3(data,  __glo_getenv_91filter_91list_scheme_cyclone_test,  &c_7311214, __glo_string_91_125group_91matcher_scheme_cyclone_test, &c_7311257);; 
 }
 
@@ -2298,7 +2298,7 @@ c_7311216.elements[0] = ((closureN)self_733381)->elements[0];
 c_7311216.elements[1] = r_731328;
 
 
-make_string(c_7311256, "TEST_GROUP_REMOVE");
+make_utf8_string_with_len(c_7311256, "TEST_GROUP_REMOVE", 17, 17);
 return_closcall4(data,  __glo_getenv_91filter_91list_scheme_cyclone_test,  &c_7311216, __glo_string_91_125group_91matcher_scheme_cyclone_test, &c_7311256, boolean_t);; 
 }
 
@@ -2360,7 +2360,7 @@ c_7311224.elements = (object *)alloca(sizeof(object) * 1);
 c_7311224.elements[0] = ((closureN)self_733385)->elements[0];
 
 
-make_string(c_7311252, "TEST_COLUMN_WIDTH");
+make_utf8_string_with_len(c_7311252, "TEST_COLUMN_WIDTH", 17, 17);
 return_closcall2(data,  __glo_get_91environment_91variable_scheme_process_91context,  &c_7311224, &c_7311252);; 
 }
 
@@ -2536,9 +2536,9 @@ c_7311113.elements = (object *)alloca(sizeof(object) * 1);
 c_7311113.elements[0] = ((closureN)self_733398)->elements[0];
 
 
-make_string(c_7311120, "");
+make_utf8_string_with_len(c_7311120, "", 0, 0);
 
-make_string(c_7311121, "0");
+make_utf8_string_with_len(c_7311121, "0", 1, 1);
 return_closcall4(data,  __glo_member_scheme_base,  &c_7311113, s_73832, &c_7311120, &c_7311121);; 
 }
 
@@ -3124,9 +3124,9 @@ c_7310960.elements[0] = exn_73850;
 c_7310960.elements[1] = ((closureN)self_733426)->elements[0];
 
 
-make_string(c_7310973, "invalid filter '");
+make_utf8_string_with_len(c_7310973, "invalid filter '", 16, 16);
 
-make_string(c_7310975, "' from environment variable: ");
+make_utf8_string_with_len(c_7310975, "' from environment variable: ", 29, 29);
 
 object c_7310972 = Cyc_string_append(data,(closure)&c_7310960,4,&c_7310973, ((closureN)self_733426)->elements[2], &c_7310975, ((closureN)self_733426)->elements[1]);
 return_closcall1(data,(closure)&c_7310960,  c_7310972);; 
@@ -3642,7 +3642,7 @@ return_closcall2(data,  __glo_test_91group_91name_scheme_cyclone_test,  &c_73108
 
 static void __lambda_986(void *data, int argc, object self_733456, object r_731511) {
   
-make_string(c_7310842, "mismatched test-end:");
+make_utf8_string_with_len(c_7310842, "mismatched test-end:", 20, 20);
 return_closcall4(data,  __glo_warning_scheme_cyclone_test,  ((closureN)self_733456)->elements[0], &c_7310842, Cyc_car(data, ((closureN)self_733456)->elements[1]), r_731511);; 
 }
 
@@ -3826,7 +3826,7 @@ c_7310760.elements[0] = ((closureN)self_733465)->elements[0];
 c_7310760.elements[1] = ((closureN)self_733465)->elements[1];
 
 
-make_string(c_7310777, "testing ");
+make_utf8_string_with_len(c_7310777, "testing ", 8, 8);
 
 object c_7310776 = Cyc_string_append(data,(closure)&c_7310760,2,&c_7310777, ((closureN)self_733465)->elements[2]);
 return_closcall1(data,(closure)&c_7310760,  c_7310776);
@@ -3919,7 +3919,7 @@ c_7310793.elements = (object *)alloca(sizeof(object) * 1);
 c_7310793.elements[0] = ((closureN)self_733469)->elements[0];
 
 
-make_string(c_7310802, ": ");
+make_utf8_string_with_len(c_7310802, ": ", 2, 2);
 
 object c_7310800 = Cyc_string_append(data,(closure)&c_7310793,2,((closureN)self_733469)->elements[1], &c_7310802);
 return_closcall1(data,(closure)&c_7310793,  c_7310800);; 
@@ -4072,7 +4072,7 @@ static void __lambda_960(void *data, int argc, object self_733481, object k_7315
   return_closcall1(data,  k_731544,  Cyc_car(data, ((closureN)self_733481)->elements[0]));
 } else { 
   
-make_string(c_7310728, "");
+make_utf8_string_with_len(c_7310728, "", 0, 0);
 return_closcall1(data,  k_731544,  &c_7310728);}
 ; 
 }
@@ -4415,7 +4415,7 @@ if( (boolean_f != c_7310638) ){
   return_closcall1(data,  k_731743,  word_73916);
 } else { 
   
-make_string(c_7310644, "s");
+make_utf8_string_with_len(c_7310644, "s", 1, 1);
 
 object c_7310643 = Cyc_string_append(data,  k_731743,2,word_73916, &c_7310644);
 return_closcall1(data,  k_731743,  c_7310643);}
@@ -4472,9 +4472,9 @@ return_closcall1(data,(closure)&c_7310605,  c_7310615);;
 
 static void __lambda_938(void *data, int argc, object self_733501, object r_731737) {
   
-make_string(c_7310611, " (");
+make_utf8_string_with_len(c_7310611, " (", 2, 2);
 
-make_string(c_7310612, "%)");
+make_utf8_string_with_len(c_7310612, "%)", 2, 2);
 
 object c_7310610 = Cyc_string_append(data,  ((closureN)self_733501)->elements[0],3,&c_7310611, r_731737, &c_7310612);
 return_closcall1(data,  ((closureN)self_733501)->elements[0],  c_7310610);; 
@@ -5534,7 +5534,7 @@ c_7310527.elements[0] = ((closureN)self_733539)->elements[0];
 c_7310527.elements[1] = ((closureN)self_733539)->elements[1];
 
 
-make_string(c_7310546, "done testing ");
+make_utf8_string_with_len(c_7310546, "done testing ", 13, 13);
 
 object c_7310545 = Cyc_string_append(data,(closure)&c_7310527,2,&c_7310546, r_731601);
 return_closcall1(data,(closure)&c_7310527,  c_7310545);; 
@@ -5615,7 +5615,7 @@ static void __lambda_894(void *data, int argc, object self_733545, object k_7316
   return_closcall1(data,  k_731603,  ((closureN)self_733545)->elements[0]);
 } else { 
   
-make_string(c_7310524, "");
+make_utf8_string_with_len(c_7310524, "", 0, 0);
 return_closcall1(data,  k_731603,  &c_7310524);}
 ; 
 }
@@ -6020,7 +6020,7 @@ c_7310472.elements[2] = ((closureN)self_733557)->elements[2];
 c_7310472.elements[3] = ((closureN)self_733557)->elements[5];
 
 
-make_string(c_7310494, " out of ");
+make_utf8_string_with_len(c_7310494, " out of ", 8, 8);
 
 object c_7310492 = Cyc_string_append(data,(closure)&c_7310472,4,((closureN)self_733557)->elements[3], &c_7310494, ((closureN)self_733557)->elements[4], r_731622);
 return_closcall1(data,(closure)&c_7310472,  c_7310492);; 
@@ -6073,7 +6073,7 @@ c_7310482.elements = (object *)alloca(sizeof(object) * 1);
 c_7310482.elements[0] = ((closureN)self_733560)->elements[0];
 
 
-make_string(c_7310488, " subgroup");
+make_utf8_string_with_len(c_7310488, " subgroup", 9, 9);
 return_closcall3(data,  car(((closureN)self_733560)->elements[1]),  &c_7310482, &c_7310488, ((closureN)self_733560)->elements[2]);; 
 }
 
@@ -6094,7 +6094,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_7310484, r_731616);;
 
 static void __lambda_877(void *data, int argc, object self_733562, object r_731615) {
   
-make_string(c_7310487, " passed.\n");
+make_utf8_string_with_len(c_7310487, " passed.\n", 9, 9);
 return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_733562)->elements[0], &c_7310487);; 
 }
 
@@ -6254,7 +6254,7 @@ c_7310410.elements[0] = ((closureN)self_733572)->elements[0];
 c_7310410.elements[1] = ((closureN)self_733572)->elements[1];
 
 
-make_string(c_7310435, ": ");
+make_utf8_string_with_len(c_7310435, ": ", 2, 2);
 
 object c_7310434 = Cyc_string_append(data,(closure)&c_7310410,2,r_731644, &c_7310435);
 return_closcall1(data,(closure)&c_7310410,  c_7310434);; 
@@ -6432,7 +6432,7 @@ c_7310314.elements[7] = ((closureN)self_733582)->elements[7];
 c_7310314.elements[8] = ((closureN)self_733582)->elements[8];
 
 
-make_string(c_7310366, " error");
+make_utf8_string_with_len(c_7310366, " error", 6, 6);
 
 double_type local_7310369; object c_7310370 = Cyc_fast_sum(data,&local_7310369,((closureN)self_733582)->elements[0], ((closureN)self_733582)->elements[6]);
 return_closcall3(data,  car(((closureN)self_733582)->elements[5]),  &c_7310314, &c_7310366, c_7310370);; 
@@ -6480,7 +6480,7 @@ c_7310321.elements = (object *)alloca(sizeof(object) * 1);
 c_7310321.elements[0] = ((closureN)self_733584)->elements[0];
 
 
-make_string(c_7310333, ".\n");
+make_utf8_string_with_len(c_7310333, ".\n", 2, 2);
 
 object c_7310330 = Cyc_string_append(data,(closure)&c_7310321,4,((closureN)self_733584)->elements[1], ((closureN)self_733584)->elements[2], r_731655, &c_7310333);
 return_closcall1(data,(closure)&c_7310321,  c_7310330);; 
@@ -6598,7 +6598,7 @@ c_7310225.elements[7] = ((closureN)self_733590)->elements[7];
 c_7310225.elements[8] = ((closureN)self_733590)->elements[8];
 
 
-make_string(c_7310275, " failure");
+make_utf8_string_with_len(c_7310275, " failure", 8, 8);
 
 double_type local_7310278; object c_7310279 = Cyc_fast_sum(data,&local_7310278,((closureN)self_733590)->elements[1], ((closureN)self_733590)->elements[7]);
 return_closcall3(data,  car(((closureN)self_733590)->elements[5]),  &c_7310225, &c_7310275, c_7310279);; 
@@ -6646,7 +6646,7 @@ c_7310232.elements = (object *)alloca(sizeof(object) * 1);
 c_7310232.elements[0] = ((closureN)self_733592)->elements[0];
 
 
-make_string(c_7310242, ".\n");
+make_utf8_string_with_len(c_7310242, ".\n", 2, 2);
 
 object c_7310239 = Cyc_string_append(data,(closure)&c_7310232,4,((closureN)self_733592)->elements[1], ((closureN)self_733592)->elements[2], r_731663, &c_7310242);
 return_closcall1(data,(closure)&c_7310232,  c_7310239);; 
@@ -6877,7 +6877,7 @@ c_7310054.elements[6] = ((closureN)self_733600)->elements[8];
 c_7310054.elements[7] = ((closureN)self_733600)->elements[9];
 
 
-make_string(c_7310130, " out of ");
+make_utf8_string_with_len(c_7310130, " out of ", 8, 8);
 
 object c_7310128 = Cyc_string_append(data,(closure)&c_7310054,4,((closureN)self_733600)->elements[5], &c_7310130, ((closureN)self_733600)->elements[6], r_731681);
 return_closcall1(data,(closure)&c_7310054,  c_7310128);; 
@@ -6942,7 +6942,7 @@ c_7310064.elements[3] = ((closureN)self_733603)->elements[5];
 c_7310064.elements[4] = ((closureN)self_733603)->elements[6];
 
 
-make_string(c_7310119, " test");
+make_utf8_string_with_len(c_7310119, " test", 5, 5);
 
 double_type local_7310122; object c_7310123 = Cyc_fast_sum(data,&local_7310122,((closureN)self_733603)->elements[0], ((closureN)self_733603)->elements[4]);
 return_closcall3(data,  car(((closureN)self_733603)->elements[3]),  &c_7310064, &c_7310119, c_7310123);; 
@@ -7012,11 +7012,11 @@ c_7310099.elements = (object *)alloca(sizeof(object) * 1);
 c_7310099.elements[0] = ((closureN)self_733606)->elements[0];
 
 
-make_string(c_7310106, " passed in ");
+make_utf8_string_with_len(c_7310106, " passed in ", 11, 11);
 
-make_string(c_7310108, " seconds");
+make_utf8_string_with_len(c_7310108, " seconds", 8, 8);
 
-make_string(c_7310109, ".\n");
+make_utf8_string_with_len(c_7310109, ".\n", 2, 2);
 
 object c_7310104 = Cyc_string_append(data,(closure)&c_7310099,6,((closureN)self_733606)->elements[1], &c_7310106, ((closureN)self_733606)->elements[2], &c_7310108, r_731671, &c_7310109);
 return_closcall1(data,(closure)&c_7310099,  c_7310104);; 
@@ -7031,7 +7031,7 @@ static void __lambda_831(void *data, int argc, object self_733608, object k_7316
                    ((closure)__glo_zero_127_191_191inline_191_191_scheme_base)->fn)(data,&local_7310071,((closureN)self_733608)->elements[1]);
 if( (boolean_f != c_7310072) ){ 
   
-make_string(c_7310075, "");
+make_utf8_string_with_len(c_7310075, "", 0, 0);
 return_closcall1(data,  k_731672,  &c_7310075);
 } else { 
   
@@ -7067,15 +7067,15 @@ c_7310082.elements[0] = ((closureN)self_733609)->elements[0];
 c_7310082.elements[1] = r_731674;
 
 
-make_string(c_7310091, " test");
+make_utf8_string_with_len(c_7310091, " test", 5, 5);
 return_closcall3(data,  car(((closureN)self_733609)->elements[1]),  &c_7310082, &c_7310091, ((closureN)self_733609)->elements[2]);; 
 }
 
 static void __lambda_829(void *data, int argc, object self_733610, object r_731675) {
   
-make_string(c_7310088, " (");
+make_utf8_string_with_len(c_7310088, " (", 2, 2);
 
-make_string(c_7310090, " skipped)");
+make_utf8_string_with_len(c_7310090, " skipped)", 9, 9);
 
 object c_7310087 = Cyc_string_append(data,  ((closureN)self_733610)->elements[0],4,&c_7310088, ((closureN)self_733610)->elements[1], r_731675, &c_7310090);
 return_closcall1(data,  ((closureN)self_733610)->elements[0],  c_7310087);; 
@@ -7110,7 +7110,7 @@ if( (boolean_f != c_739947) ){
   return_closcall1(data,  k_731685,  boolean_f);
 } else { 
   
-make_string(c_739962, "inconsistent count:");
+make_utf8_string_with_len(c_739962, "inconsistent count:", 19, 19);
 return_closcall6(data,  __glo_warning_scheme_cyclone_test,  k_731685, &c_739962, ((closureN)self_733613)->elements[0], ((closureN)self_733613)->elements[3], ((closureN)self_733613)->elements[2], ((closureN)self_733613)->elements[1]);}
 ; 
 }
@@ -7617,7 +7617,7 @@ c_739649.elements[2] = ((closureN)self_733644)->elements[2];
 c_739649.elements[3] = ((closureN)self_733644)->elements[3];
 
 
-make_string(c_739676, "[");
+make_utf8_string_with_len(c_739676, "[", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739649, &c_739676);
 } else { 
   
@@ -7885,7 +7885,7 @@ c_739664.elements[2] = ((closureN)self_733658)->elements[2];
 c_739664.elements[3] = ((closureN)self_733658)->elements[3];
 
 
-make_string(c_739674, "]");
+make_utf8_string_with_len(c_739674, "]", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739664, &c_739674);; 
 }
 
@@ -7916,7 +7916,7 @@ static void __lambda_777(void *data, int argc, object self_733661, object k_7317
   return_closcall1(data,  k_731762,  boolean_f);
 } else { 
   
-make_string(c_739657, " ");
+make_utf8_string_with_len(c_739657, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  k_731762, &c_739657);}
 ; 
 }
@@ -8309,7 +8309,7 @@ c_739573.elements = (object *)alloca(sizeof(object) * 1);
 c_739573.elements[0] = ((closureN)self_733680)->elements[0];
 
 
-make_string(c_739579, "\n");
+make_utf8_string_with_len(c_739579, "\n", 1, 1);
 
 object c_739578 = Cyc_string_append(data,(closure)&c_739573,2,&c_739579, r_731796);
 return_closcall1(data,(closure)&c_739573,  c_739578);; 
@@ -8376,7 +8376,7 @@ static void __lambda_752(void *data, int argc, object self_733686, object k_7318
   return_closcall1(data,  k_731810,  ((closureN)self_733686)->elements[0]);
 } else { 
   
-make_string(c_739535, "");
+make_utf8_string_with_len(c_739535, "", 0, 0);
 return_closcall1(data,  k_731810,  &c_739535);}
 ; 
 }
@@ -8497,9 +8497,9 @@ c_739443.elements = (object *)alloca(sizeof(object) * 1);
 c_739443.elements[0] = ((closureN)self_733693)->elements[0];
 
 
-make_string(c_739468, "-- ");
+make_utf8_string_with_len(c_739468, "-- ", 3, 3);
 
-make_string(c_739470, " ");
+make_utf8_string_with_len(c_739470, " ", 1, 1);
 
 object c_739467 = Cyc_string_append(data,(closure)&c_739443,4,r_731838, &c_739468, ((closureN)self_733693)->elements[1], &c_739470);
 return_closcall1(data,(closure)&c_739443,  c_739467);; 
@@ -8800,7 +8800,7 @@ c_739396.elements[0] = k_731854;
 c_739396.elements[1] = v_73951;
 
 
-make_string(c_739412, "    ");
+make_utf8_string_with_len(c_739412, "    ", 4, 4);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739396, &c_739412);; 
 }
 
@@ -8834,7 +8834,7 @@ c_739400.elements[0] = ((closureN)self_733712)->elements[0];
 c_739400.elements[1] = ((closureN)self_733712)->elements[1];
 
 
-make_string(c_739408, ": ");
+make_utf8_string_with_len(c_739408, ": ", 2, 2);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739400, &c_739408);; 
 }
 
@@ -9035,7 +9035,7 @@ c_739320.elements[1] = ((closureN)self_733725)->elements[1];
 c_739320.elements[2] = line_73956;
 
 
-make_string(c_739343, "    on line ");
+make_utf8_string_with_len(c_739343, "    on line ", 12, 12);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739320, &c_739343);; 
 }
 
@@ -9133,7 +9133,7 @@ c_739331.elements[0] = file_73958;
 c_739331.elements[1] = ((closureN)self_733731)->elements[0];
 
 
-make_string(c_739335, " of file ");
+make_utf8_string_with_len(c_739335, " of file ", 9, 9);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739331, &c_739335);; 
 }
 
@@ -9373,7 +9373,7 @@ c_739285.elements[0] = ((closureN)self_733742)->elements[0];
 c_739285.elements[1] = ((closureN)self_733742)->elements[1];
 
 
-make_string(c_739291, ": ");
+make_utf8_string_with_len(c_739291, ": ", 2, 2);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739285, &c_739291);; 
 }
 
@@ -9561,7 +9561,7 @@ c_739216.elements[0] = ((closureN)self_733750)->elements[0];
 c_739216.elements[1] = ((closureN)self_733750)->elements[1];
 
 
-make_string(c_739232, "expected ");
+make_utf8_string_with_len(c_739232, "expected ", 9, 9);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739216, &c_739232);; 
 }
 
@@ -9611,7 +9611,7 @@ c_739222.elements[0] = ((closureN)self_733753)->elements[0];
 c_739222.elements[1] = ((closureN)self_733753)->elements[1];
 
 
-make_string(c_739230, " but got ");
+make_utf8_string_with_len(c_739230, " but got ", 9, 9);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739222, &c_739230);; 
 }
 
@@ -9663,7 +9663,7 @@ c_739200.elements[0] = ((closureN)self_733757)->elements[0];
 c_739200.elements[1] = ((closureN)self_733757)->elements[1];
 
 
-make_string(c_739208, "expected an error but got ");
+make_utf8_string_with_len(c_739208, "expected an error but got ", 26, 26);
 return_closcall2(data,  __glo_display_scheme_write,  &c_739200, &c_739208);; 
 }
 
@@ -9711,7 +9711,7 @@ static void __lambda_673(void *data, int argc, object self_733761, object k_7319
 
 static void __lambda_672(void *data, int argc, object self_733762, object r_731918) {
   
-make_string(c_739186, "assertion failed\n");
+make_utf8_string_with_len(c_739186, "assertion failed\n", 17, 17);
 return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_733762)->elements[0], &c_739186);; 
 }
 
@@ -9814,21 +9814,21 @@ static void __lambda_665(void *data, int argc, object self_733768, object r_7319
 static void __lambda_664(void *data, int argc, object self_733769, object k_731950) {
   if( (boolean_f != Cyc_eq(((closureN)self_733769)->elements[0], quote_ERROR)) ){ 
   
-make_string(c_739132, "!");
+make_utf8_string_with_len(c_739132, "!", 1, 1);
 return_closcall1(data,  k_731950,  &c_739132);
 } else { 
   if( (boolean_f != Cyc_eq(((closureN)self_733769)->elements[0], quote_FAIL)) ){ 
   
-make_string(c_739137, "x");
+make_utf8_string_with_len(c_739137, "x", 1, 1);
 return_closcall1(data,  k_731950,  &c_739137);
 } else { 
   if( (boolean_f != Cyc_eq(((closureN)self_733769)->elements[0], quote_SKIP)) ){ 
   
-make_string(c_739142, "-");
+make_utf8_string_with_len(c_739142, "-", 1, 1);
 return_closcall1(data,  k_731950,  &c_739142);
 } else { 
   
-make_string(c_739144, ".");
+make_utf8_string_with_len(c_739144, ".", 1, 1);
 return_closcall1(data,  k_731950,  &c_739144);}
 }
 }
@@ -10177,7 +10177,7 @@ c_739065.elements[0] = exn_73987;
 c_739065.elements[1] = ((closureN)self_733786)->elements[0];
 
 
-make_string(c_739073, "bad expect value");
+make_utf8_string_with_len(c_739073, "bad expect value", 16, 16);
 return_closcall2(data,  __glo_warning_scheme_cyclone_test,  &c_739065, &c_739073);; 
 }
 
@@ -11315,7 +11315,7 @@ c_738745.elements[1] = ((closureN)self_733851)->elements[1];
 c_738745.elements[2] = ((closureN)self_733851)->elements[2];
 
 
-make_string(c_738787, " ");
+make_utf8_string_with_len(c_738787, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  &c_738745, &c_738787);; 
 }
 
@@ -11359,7 +11359,7 @@ c_738783.elements = (object *)alloca(sizeof(object) * 1);
 c_738783.elements[0] = ((closureN)self_733853)->elements[0];
 
 
-make_string(c_738786, " ");
+make_utf8_string_with_len(c_738786, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  &c_738783, &c_738786);; 
 }
 
@@ -11625,7 +11625,7 @@ c_738649.elements[1] = ((closureN)self_733868)->elements[1];
 return_closcall1(data,(closure)&c_738649,  tmp_73469_731018);
 } else { 
   
-make_string(c_738681, "");
+make_utf8_string_with_len(c_738681, "", 0, 0);
 return_closcall1(data,  ((closureN)self_733868)->elements[1],  &c_738681);}
 ; 
 }
@@ -11662,7 +11662,7 @@ c_738653.elements[1] = ((closureN)self_733870)->elements[1];
 c_738653.elements[2] = ((closureN)self_733870)->elements[2];
 
 
-make_string(c_738678, "no source in: ");
+make_utf8_string_with_len(c_738678, "no source in: ", 14, 14);
 return_closcall3(data,  __glo_display_scheme_write,  &c_738653, &c_738678, r_732149);; 
 }
 
@@ -11729,7 +11729,7 @@ c_738661.elements[0] = ((closureN)self_733874)->elements[0];
 c_738661.elements[1] = ((closureN)self_733874)->elements[1];
 
 
-make_string(c_738676, "\n");
+make_utf8_string_with_len(c_738676, "\n", 1, 1);
 return_closcall3(data,  __glo_display_scheme_write,  &c_738661, &c_738676, r_732147);; 
 }
 
@@ -11767,7 +11767,7 @@ return_closcall1(data,(closure)&c_738665,  c_738674);;
 
 static void __lambda_547(void *data, int argc, object self_733877, object r_732144) {
   
-make_string(c_738671, "test-");
+make_utf8_string_with_len(c_738671, "test-", 5, 5);
 
 object c_738670 = Cyc_string_append(data,  ((closureN)self_733877)->elements[0],2,&c_738671, r_732144);
 return_closcall1(data,  ((closureN)self_733877)->elements[0],  c_738670);; 
@@ -12045,7 +12045,7 @@ return_closcall1(data,(closure)&c_738599,  c_738608);;
 
 static void __lambda_537(void *data, int argc, object self_733886, object r_732190) {
   
-make_string(c_738605, "...");
+make_utf8_string_with_len(c_738605, "...", 3, 3);
 
 object c_738604 = Cyc_string_append(data,  ((closureN)self_733886)->elements[0],2,r_732190, &c_738605);
 return_closcall1(data,  ((closureN)self_733886)->elements[0],  c_738604);; 
@@ -12070,7 +12070,7 @@ return_closcall4(data,  __glo_truncate_91source_scheme_cyclone_test,  &c_738582,
 
 static void __lambda_535(void *data, int argc, object self_733888, object r_732177) {
   
-make_string(c_738588, "...");
+make_utf8_string_with_len(c_738588, "...", 3, 3);
 
 object c_738587 = Cyc_string_append(data,  ((closureN)self_733888)->elements[0],2,&c_738588, r_732177);
 return_closcall1(data,  ((closureN)self_733888)->elements[0],  c_738587);; 
@@ -12215,7 +12215,7 @@ return_closcall4(data,  __glo_truncate_91source_scheme_cyclone_test,  &c_738486,
 
 static void __lambda_524(void *data, int argc, object self_733899, object r_732163) {
   
-make_string(c_738492, "...");
+make_utf8_string_with_len(c_738492, "...", 3, 3);
 
 object c_738491 = Cyc_string_append(data,  ((closureN)self_733899)->elements[0],2,&c_738492, r_732163);
 return_closcall1(data,  ((closureN)self_733899)->elements[0],  c_738491);; 
@@ -12462,7 +12462,7 @@ c_738343.elements[2] = ((closureN)self_733911)->elements[2];
 c_738343.elements[3] = ((closureN)self_733911)->elements[3];
 
 
-make_string(c_738415, "(");
+make_utf8_string_with_len(c_738415, "(", 1, 1);
 return_closcall3(data,  __glo_display_scheme_write,  &c_738343, &c_738415, ((closureN)self_733911)->elements[1]);}
 ; 
 }
@@ -12590,7 +12590,7 @@ c_738373.elements[2] = ((closureN)self_733917)->elements[2];
 c_738373.elements[3] = ((closureN)self_733917)->elements[4];
 
 
-make_string(c_738390, " ");
+make_utf8_string_with_len(c_738390, " ", 1, 1);
 return_closcall3(data,  __glo_display_scheme_write,  &c_738373, &c_738390, ((closureN)self_733917)->elements[3]);
 } else { 
   
@@ -12628,7 +12628,7 @@ c_738397.elements[1] = ((closureN)self_733918)->elements[1];
 c_738397.elements[2] = ((closureN)self_733918)->elements[2];
 
 
-make_string(c_738402, " . ");
+make_utf8_string_with_len(c_738402, " . ", 3, 3);
 return_closcall3(data,  __glo_display_scheme_write,  &c_738397, &c_738402, ((closureN)self_733918)->elements[2]);}
 ; 
 }
@@ -12676,7 +12676,7 @@ return_closcall2(data,  car(((closureN)self_733922)->elements[1]),  &c_738359, C
 
 static void __lambda_498(void *data, int argc, object self_733923, object r_732228) {
   
-make_string(c_738362, ")");
+make_utf8_string_with_len(c_738362, ")", 1, 1);
 return_closcall3(data,  __glo_display_scheme_write,  ((closureN)self_733923)->elements[0], &c_738362, ((closureN)self_733923)->elements[1]);; 
 }
 
@@ -12706,19 +12706,19 @@ static void __lambda_495(void *data, int argc, object self_733926, object k_7322
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_733926)->elements[0]))) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_733926)->elements[0]))) ){ 
   
-make_string(c_738313, "'");
+make_utf8_string_with_len(c_738313, "'", 1, 1);
 
 make_pair(c_738312,quote_quote,&c_738313);
 
-make_string(c_738316, "`");
+make_utf8_string_with_len(c_738316, "`", 1, 1);
 
 make_pair(c_738315,quote_quasiquote,&c_738316);
 
-make_string(c_738319, ",");
+make_utf8_string_with_len(c_738319, ",", 1, 1);
 
 make_pair(c_738318,quote_unquote,&c_738319);
 
-make_string(c_738322, ",@");
+make_utf8_string_with_len(c_738322, ",@", 2, 2);
 
 make_pair(c_738321,quote_unquote_91splicing,&c_738322);
 
@@ -13652,7 +13652,7 @@ c_737943.elements = (object *)alloca(sizeof(object) * 1);
 c_737943.elements[0] = k_732349;
 
 
-make_string(c_737949, "no expansion for");
+make_utf8_string_with_len(c_737949, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_737943, &c_737949, ((closureN)self_733972)->elements[0]);}
 ; 
 }
@@ -13696,9 +13696,9 @@ c_737920.elements[0] = ((closureN)self_733975)->elements[0];
 c_737920.elements[1] = r_732355;
 
 
-make_string(c_737932, "invalid use of test-syntax-error");
+make_utf8_string_with_len(c_737932, "invalid use of test-syntax-error", 32, 32);
 
-make_string(c_737934, "invalid use of test-syntax-error");
+make_utf8_string_with_len(c_737934, "invalid use of test-syntax-error", 32, 32);
 
 make_pair(c_737933,&c_737934,NULL);
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737920, &c_737932, NULL, &c_737933);; 
@@ -13717,7 +13717,7 @@ c_737922.elements = (object *)alloca(sizeof(object) * 1);
 c_737922.elements[0] = ((closureN)self_733976)->elements[0];
 
 
-make_string(c_737931, "invalid use of test-syntax-error");
+make_utf8_string_with_len(c_737931, "invalid use of test-syntax-error", 32, 32);
 
 make_pair(c_737930,&c_737931,NULL);
 
@@ -13824,7 +13824,7 @@ c_737893.elements = (object *)alloca(sizeof(object) * 1);
 c_737893.elements[0] = k_732366;
 
 
-make_string(c_737899, "no expansion for");
+make_utf8_string_with_len(c_737899, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_737893, &c_737899, ((closureN)self_733981)->elements[0]);}
 ; 
 }
@@ -14485,9 +14485,9 @@ c_737067.elements[6] = ((closureN)self_734010)->elements[6];
 c_737067.elements[7] = ((closureN)self_734010)->elements[7];
 
 
-make_string(c_737822, "a name is required, got ");
+make_utf8_string_with_len(c_737822, "a name is required, got ", 24, 24);
 
-make_string(c_737824, "a name is required, got ");
+make_utf8_string_with_len(c_737824, "a name is required, got ", 24, 24);
 
 make_pair(c_737827,quote_name_91expr,NULL);
 
@@ -14520,7 +14520,7 @@ c_737069.elements[5] = ((closureN)self_734011)->elements[6];
 c_737069.elements[6] = ((closureN)self_734011)->elements[7];
 
 
-make_string(c_737817, "a name is required, got ");
+make_utf8_string_with_len(c_737817, "a name is required, got ", 24, 24);
 
 make_pair(c_737820,quote_name_91expr,NULL);
 
@@ -14555,7 +14555,7 @@ c_737071.elements[5] = ((closureN)self_734012)->elements[5];
 c_737071.elements[6] = ((closureN)self_734012)->elements[6];
 
 
-make_string(c_737809, "a name is required, got ");
+make_utf8_string_with_len(c_737809, "a name is required, got ", 24, 24);
 
 make_pair(c_737812,quote_name_91expr,NULL);
 
@@ -14599,7 +14599,7 @@ make_pair(c_737795,&c_737796,NULL);
 
 make_pair(c_737794,quote_not,&c_737795);
 
-make_string(c_737801, "a name is required, got ");
+make_utf8_string_with_len(c_737801, "a name is required, got ", 24, 24);
 
 make_pair(c_737804,quote_name_91expr,NULL);
 
@@ -14644,7 +14644,7 @@ make_pair(c_737781,&c_737782,NULL);
 
 make_pair(c_737780,quote_not,&c_737781);
 
-make_string(c_737787, "a name is required, got ");
+make_utf8_string_with_len(c_737787, "a name is required, got ", 24, 24);
 
 make_pair(c_737790,quote_name_91expr,NULL);
 
@@ -14867,9 +14867,9 @@ c_737099.elements[9] = ((closureN)self_734023)->elements[8];
 c_737099.elements[10] = ((closureN)self_734023)->elements[9];
 
 
-make_string(c_737770, "error in group outside of tests");
+make_utf8_string_with_len(c_737770, "error in group outside of tests", 31, 31);
 
-make_string(c_737772, "error in group outside of tests");
+make_utf8_string_with_len(c_737772, "error in group outside of tests", 31, 31);
 
 make_pair(c_737771,&c_737772,NULL);
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737099, &c_737770, NULL, &c_737771);; 
@@ -14897,7 +14897,7 @@ c_737101.elements[8] = ((closureN)self_734024)->elements[9];
 c_737101.elements[9] = ((closureN)self_734024)->elements[10];
 
 
-make_string(c_737769, "error in group outside of tests");
+make_utf8_string_with_len(c_737769, "error in group outside of tests", 31, 31);
 
 make_pair(c_737768,&c_737769,NULL);
 
@@ -15920,7 +15920,7 @@ c_737174.elements[8] = ((closureN)self_734055)->elements[9];
 c_737174.elements[9] = ((closureN)self_734055)->elements[10];
 
 
-make_string(c_737650, "error in group outside of tests");
+make_utf8_string_with_len(c_737650, "error in group outside of tests", 31, 31);
 
 make_pair(c_737649,&c_737650,NULL);
 
@@ -15989,7 +15989,7 @@ c_737176.elements[7] = ((closureN)self_734056)->elements[8];
 c_737176.elements[8] = ((closureN)self_734056)->elements[9];
 
 
-make_string(c_737626, "error in group outside of tests");
+make_utf8_string_with_len(c_737626, "error in group outside of tests", 31, 31);
 
 make_pair(c_737625,&c_737626,NULL);
 
@@ -16060,7 +16060,7 @@ c_737178.elements[7] = ((closureN)self_734057)->elements[7];
 c_737178.elements[8] = ((closureN)self_734057)->elements[8];
 
 
-make_string(c_737601, "error in group outside of tests");
+make_utf8_string_with_len(c_737601, "error in group outside of tests", 31, 31);
 
 make_pair(c_737600,&c_737601,NULL);
 
@@ -16132,7 +16132,7 @@ c_737180.elements[6] = ((closureN)self_734058)->elements[7];
 c_737180.elements[7] = ((closureN)self_734058)->elements[8];
 
 
-make_string(c_737576, "error in group outside of tests");
+make_utf8_string_with_len(c_737576, "error in group outside of tests", 31, 31);
 
 make_pair(c_737575,&c_737576,NULL);
 
@@ -16205,7 +16205,7 @@ c_737182.elements[5] = ((closureN)self_734059)->elements[5];
 c_737182.elements[6] = ((closureN)self_734059)->elements[6];
 
 
-make_string(c_737547, "error in group outside of tests");
+make_utf8_string_with_len(c_737547, "error in group outside of tests", 31, 31);
 
 make_pair(c_737546,&c_737547,NULL);
 
@@ -16283,7 +16283,7 @@ c_737184.elements[4] = ((closureN)self_734060)->elements[4];
 c_737184.elements[5] = ((closureN)self_734060)->elements[6];
 
 
-make_string(c_737515, "error in group outside of tests");
+make_utf8_string_with_len(c_737515, "error in group outside of tests", 31, 31);
 
 make_pair(c_737514,&c_737515,NULL);
 
@@ -16606,7 +16606,7 @@ c_737210.elements[3] = ((closureN)self_734071)->elements[3];
 c_737210.elements[4] = ((closureN)self_734071)->elements[4];
 
 
-make_string(c_737460, "error in group outside of tests");
+make_utf8_string_with_len(c_737460, "error in group outside of tests", 31, 31);
 
 make_pair(c_737459,&c_737460,NULL);
 
@@ -16702,7 +16702,7 @@ make_pair(c_737412,quote_name,NULL);
 
 make_pair(c_737411,quote_test_91begin,&c_737412);
 
-make_string(c_737422, "error in group outside of tests");
+make_utf8_string_with_len(c_737422, "error in group outside of tests", 31, 31);
 
 make_pair(c_737421,&c_737422,NULL);
 
@@ -16803,7 +16803,7 @@ make_pair(c_737358,&c_737359,NULL);
 
 make_pair(c_737357,quote_not,&c_737358);
 
-make_string(c_737364, "a name is required, got ");
+make_utf8_string_with_len(c_737364, "a name is required, got ", 24, 24);
 
 make_pair(c_737367,quote_name_91expr,NULL);
 
@@ -16827,7 +16827,7 @@ make_pair(c_737371,quote_name,NULL);
 
 make_pair(c_737370,quote_test_91begin,&c_737371);
 
-make_string(c_737381, "error in group outside of tests");
+make_utf8_string_with_len(c_737381, "error in group outside of tests", 31, 31);
 
 make_pair(c_737380,&c_737381,NULL);
 
@@ -16943,7 +16943,7 @@ make_pair(c_737302,&c_737303,NULL);
 
 make_pair(c_737301,quote_not,&c_737302);
 
-make_string(c_737308, "a name is required, got ");
+make_utf8_string_with_len(c_737308, "a name is required, got ", 24, 24);
 
 make_pair(c_737311,quote_name_91expr,NULL);
 
@@ -16967,7 +16967,7 @@ make_pair(c_737315,quote_name,NULL);
 
 make_pair(c_737314,quote_test_91begin,&c_737315);
 
-make_string(c_737325, "error in group outside of tests");
+make_utf8_string_with_len(c_737325, "error in group outside of tests", 31, 31);
 
 make_pair(c_737324,&c_737325,NULL);
 
@@ -17084,7 +17084,7 @@ make_pair(c_737238,&c_737239,NULL);
 
 make_pair(c_737237,quote_not,&c_737238);
 
-make_string(c_737244, "a name is required, got ");
+make_utf8_string_with_len(c_737244, "a name is required, got ", 24, 24);
 
 make_pair(c_737247,quote_name_91expr,NULL);
 
@@ -17108,7 +17108,7 @@ make_pair(c_737251,quote_name,NULL);
 
 make_pair(c_737250,quote_test_91begin,&c_737251);
 
-make_string(c_737261, "error in group outside of tests");
+make_utf8_string_with_len(c_737261, "error in group outside of tests", 31, 31);
 
 make_pair(c_737260,&c_737261,NULL);
 
@@ -17314,7 +17314,7 @@ c_736967.elements = (object *)alloca(sizeof(object) * 1);
 c_736967.elements[0] = k_732592;
 
 
-make_string(c_736973, "no expansion for");
+make_utf8_string_with_len(c_736973, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_736967, &c_736973, ((closureN)self_734081)->elements[0]);}
 ; 
 }
@@ -18968,7 +18968,7 @@ c_736402.elements = (object *)alloca(sizeof(object) * 1);
 c_736402.elements[0] = k_732718;
 
 
-make_string(c_736408, "no expansion for");
+make_utf8_string_with_len(c_736408, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_736402, &c_736408, ((closureN)self_734134)->elements[0]);}
 ; 
 }
@@ -19355,7 +19355,7 @@ c_736263.elements = (object *)alloca(sizeof(object) * 1);
 c_736263.elements[0] = ((closureN)self_734151)->elements[1];
 
 
-make_string(c_736269, "no expansion for");
+make_utf8_string_with_len(c_736269, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_736263, &c_736269, ((closureN)self_734151)->elements[0]);}
 ; 
 }
@@ -19581,9 +19581,9 @@ c_736205.elements[1] = ((closureN)self_734163)->elements[1];
 c_736205.elements[2] = ((closureN)self_734163)->elements[2];
 
 
-make_string(c_736236, "1 or 2 arguments required");
+make_utf8_string_with_len(c_736236, "1 or 2 arguments required", 25, 25);
 
-make_string(c_736238, "1 or 2 arguments required");
+make_utf8_string_with_len(c_736238, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_736242,quote__93_93_93,NULL);
 
@@ -19615,7 +19615,7 @@ make_pair(c_736229,quote_test_91error,NULL);
 
 make_pair(c_736228,quote_quote,&c_736229);
 
-make_string(c_736231, "1 or 2 arguments required");
+make_utf8_string_with_len(c_736231, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_736235,quote__93_93_93,NULL);
 
@@ -19648,7 +19648,7 @@ make_pair(c_736219,quote_test_91error,NULL);
 
 make_pair(c_736218,quote_quote,&c_736219);
 
-make_string(c_736221, "1 or 2 arguments required");
+make_utf8_string_with_len(c_736221, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_736225,quote__93_93_93,NULL);
 
@@ -20129,7 +20129,7 @@ c_736026.elements = (object *)alloca(sizeof(object) * 1);
 c_736026.elements[0] = ((closureN)self_734187)->elements[1];
 
 
-make_string(c_736032, "no expansion for");
+make_utf8_string_with_len(c_736032, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_736026, &c_736032, ((closureN)self_734187)->elements[0]);}
 ; 
 }
@@ -21350,7 +21350,7 @@ c_735660.elements = (object *)alloca(sizeof(object) * 1);
 c_735660.elements[0] = ((closureN)self_734234)->elements[1];
 
 
-make_string(c_735666, "no expansion for");
+make_utf8_string_with_len(c_735666, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735660, &c_735666, ((closureN)self_734234)->elements[0]);}
 ; 
 }
@@ -21852,7 +21852,7 @@ c_735512.elements = (object *)alloca(sizeof(object) * 1);
 c_735512.elements[0] = ((closureN)self_734258)->elements[1];
 
 
-make_string(c_735518, "no expansion for");
+make_utf8_string_with_len(c_735518, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735512, &c_735518, ((closureN)self_734258)->elements[0]);}
 ; 
 }
@@ -22078,9 +22078,9 @@ c_735454.elements[1] = ((closureN)self_734270)->elements[1];
 c_735454.elements[2] = ((closureN)self_734270)->elements[2];
 
 
-make_string(c_735485, "1 or 2 arguments required");
+make_utf8_string_with_len(c_735485, "1 or 2 arguments required", 25, 25);
 
-make_string(c_735487, "1 or 2 arguments required");
+make_utf8_string_with_len(c_735487, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_735491,quote__93_93_93,NULL);
 
@@ -22112,7 +22112,7 @@ make_pair(c_735478,quote_test_91assert,NULL);
 
 make_pair(c_735477,quote_quote,&c_735478);
 
-make_string(c_735480, "1 or 2 arguments required");
+make_utf8_string_with_len(c_735480, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_735484,quote__93_93_93,NULL);
 
@@ -22145,7 +22145,7 @@ make_pair(c_735468,quote_test_91assert,NULL);
 
 make_pair(c_735467,quote_quote,&c_735468);
 
-make_string(c_735470, "1 or 2 arguments required");
+make_utf8_string_with_len(c_735470, "1 or 2 arguments required", 25, 25);
 
 make_pair(c_735474,quote__93_93_93,NULL);
 
@@ -22575,7 +22575,7 @@ c_735278.elements = (object *)alloca(sizeof(object) * 1);
 c_735278.elements[0] = k_733084;
 
 
-make_string(c_735284, "no expansion for");
+make_utf8_string_with_len(c_735284, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735278, &c_735284, ((closureN)self_734292)->elements[0]);}
 ; 
 }
@@ -23164,7 +23164,7 @@ c_735173.elements = (object *)alloca(sizeof(object) * 1);
 c_735173.elements[0] = ((closureN)self_734318)->elements[1];
 
 
-make_string(c_735179, "no expansion for");
+make_utf8_string_with_len(c_735179, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735173, &c_735179, ((closureN)self_734318)->elements[0]);}
 ; 
 }
@@ -23390,9 +23390,9 @@ c_735115.elements[1] = ((closureN)self_734330)->elements[1];
 c_735115.elements[2] = ((closureN)self_734330)->elements[2];
 
 
-make_string(c_735146, "test requires 2 or 3 arguments");
+make_utf8_string_with_len(c_735146, "test requires 2 or 3 arguments", 30, 30);
 
-make_string(c_735148, "test requires 2 or 3 arguments");
+make_utf8_string_with_len(c_735148, "test requires 2 or 3 arguments", 30, 30);
 
 make_pair(c_735152,quote__93_93_93,NULL);
 
@@ -23424,7 +23424,7 @@ make_pair(c_735139,quote_test,NULL);
 
 make_pair(c_735138,quote_quote,&c_735139);
 
-make_string(c_735141, "test requires 2 or 3 arguments");
+make_utf8_string_with_len(c_735141, "test requires 2 or 3 arguments", 30, 30);
 
 make_pair(c_735145,quote__93_93_93,NULL);
 
@@ -23457,7 +23457,7 @@ make_pair(c_735129,quote_test,NULL);
 
 make_pair(c_735128,quote_quote,&c_735129);
 
-make_string(c_735131, "test requires 2 or 3 arguments");
+make_utf8_string_with_len(c_735131, "test requires 2 or 3 arguments", 30, 30);
 
 make_pair(c_735135,quote__93_93_93,NULL);
 
@@ -23934,9 +23934,9 @@ c_734896.elements[1] = ((closureN)self_734353)->elements[1];
 c_734896.elements[2] = ((closureN)self_734353)->elements[2];
 
 
-make_string(c_734933, "the test expression should come last: (test <expected> (<expr> ...)) ");
+make_utf8_string_with_len(c_734933, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
 
-make_string(c_734935, "the test expression should come last: (test <expected> (<expr> ...)) ");
+make_utf8_string_with_len(c_734935, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
 
 make_pair(c_734941,quote__93_93_93,NULL);
 
@@ -23974,7 +23974,7 @@ make_pair(c_734923,quote_test,NULL);
 
 make_pair(c_734922,quote_quote,&c_734923);
 
-make_string(c_734925, "the test expression should come last: (test <expected> (<expr> ...)) ");
+make_utf8_string_with_len(c_734925, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
 
 make_pair(c_734931,quote__93_93_93,NULL);
 
@@ -24013,7 +24013,7 @@ make_pair(c_734910,quote_test,NULL);
 
 make_pair(c_734909,quote_quote,&c_734910);
 
-make_string(c_734912, "the test expression should come last: (test <expected> (<expr> ...)) ");
+make_utf8_string_with_len(c_734912, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
 
 make_pair(c_734918,quote__93_93_93,NULL);
 

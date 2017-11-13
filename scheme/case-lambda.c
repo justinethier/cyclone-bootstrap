@@ -1266,7 +1266,7 @@ c_731831.elements = (object *)alloca(sizeof(object) * 1);
 c_731831.elements[0] = k_73217;
 
 
-make_string(c_731837, "no expansion for");
+make_utf8_string_with_len(c_731837, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_731831, &c_731837, ((closureN)self_73547)->elements[0]);}
 ; 
 }
@@ -1521,7 +1521,7 @@ c_731733.elements = (object *)alloca(sizeof(object) * 1);
 c_731733.elements[0] = ((closureN)self_73558)->elements[1];
 
 
-make_string(c_731739, "no expansion for");
+make_utf8_string_with_len(c_731739, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_731733, &c_731739, ((closureN)self_73558)->elements[0]);}
 ; 
 }
@@ -1649,9 +1649,9 @@ c_731681.elements[0] = ((closureN)self_73565)->elements[0];
 c_731681.elements[1] = r_73302;
 
 
-make_string(c_731693, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731693, "case-lambda: no cases matched", 29, 29);
 
-make_string(c_731695, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731695, "case-lambda: no cases matched", 29, 29);
 
 make_pair(c_731694,&c_731695,NULL);
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_731681, &c_731693, NULL, &c_731694);; 
@@ -1670,7 +1670,7 @@ c_731683.elements = (object *)alloca(sizeof(object) * 1);
 c_731683.elements[0] = ((closureN)self_73566)->elements[0];
 
 
-make_string(c_731692, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731692, "case-lambda: no cases matched", 29, 29);
 
 make_pair(c_731691,&c_731692,NULL);
 

@@ -3282,252 +3282,252 @@ static void __lambda_174(void *data, int argc, closure _,object k_73900, object 
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/c-var-assign");
 if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91stdout)) ){ 
   
-make_string(c_733183, "port_type");
+make_utf8_string_with_len(c_733183, "port_type", 9, 9);
 return_closcall1(data,  k_73900,  &c_733183);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91stdin)) ){ 
   
-make_string(c_733187, "port_type");
+make_utf8_string_with_len(c_733187, "port_type", 9, 9);
 return_closcall1(data,  k_73900,  &c_733187);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91stderr)) ){ 
   
-make_string(c_733191, "port_type");
+make_utf8_string_with_len(c_733191, "port_type", 9, 9);
 return_closcall1(data,  k_73900,  &c_733191);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_open_91input_91file)) ){ 
   
-make_string(c_733195, "port_type");
+make_utf8_string_with_len(c_733195, "port_type", 9, 9);
 return_closcall1(data,  k_73900,  &c_733195);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_open_91output_91file)) ){ 
   
-make_string(c_733199, "port_type");
+make_utf8_string_with_len(c_733199, "port_type", 9, 9);
 return_closcall1(data,  k_73900,  &c_733199);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91plus)) ){ 
   
-make_string(c_733203, "object");
+make_utf8_string_with_len(c_733203, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733203);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91sub)) ){ 
   
-make_string(c_733207, "object");
+make_utf8_string_with_len(c_733207, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733207);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91mul)) ){ 
   
-make_string(c_733211, "object");
+make_utf8_string_with_len(c_733211, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733211);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91div)) ){ 
   
-make_string(c_733215, "object");
+make_utf8_string_with_len(c_733215, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733215);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__87)) ){ 
   
-make_string(c_733219, "object");
+make_utf8_string_with_len(c_733219, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733219);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__91)) ){ 
   
-make_string(c_733223, "object");
+make_utf8_string_with_len(c_733223, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733223);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__85)) ){ 
   
-make_string(c_733227, "object");
+make_utf8_string_with_len(c_733227, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733227);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__95)) ){ 
   
-make_string(c_733231, "object");
+make_utf8_string_with_len(c_733231, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733231);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91eq)) ){ 
   
-make_string(c_733235, "object");
+make_utf8_string_with_len(c_733235, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733235);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91gt)) ){ 
   
-make_string(c_733239, "object");
+make_utf8_string_with_len(c_733239, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733239);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91lt)) ){ 
   
-make_string(c_733243, "object");
+make_utf8_string_with_len(c_733243, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733243);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91gte)) ){ 
   
-make_string(c_733247, "object");
+make_utf8_string_with_len(c_733247, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733247);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91lte)) ){ 
   
-make_string(c_733251, "object");
+make_utf8_string_with_len(c_733251, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733251);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91char_91eq)) ){ 
   
-make_string(c_733255, "object");
+make_utf8_string_with_len(c_733255, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733255);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91char_91gt)) ){ 
   
-make_string(c_733259, "object");
+make_utf8_string_with_len(c_733259, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733259);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91char_91lt)) ){ 
   
-make_string(c_733263, "object");
+make_utf8_string_with_len(c_733263, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733263);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91char_91gte)) ){ 
   
-make_string(c_733267, "object");
+make_utf8_string_with_len(c_733267, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733267);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91fast_91char_91lte)) ){ 
   
-make_string(c_733271, "object");
+make_utf8_string_with_len(c_733271, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733271);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__123)) ){ 
   
-make_string(c_733275, "object");
+make_utf8_string_with_len(c_733275, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733275);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__125)) ){ 
   
-make_string(c_733279, "object");
+make_utf8_string_with_len(c_733279, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733279);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__121)) ){ 
   
-make_string(c_733283, "object");
+make_utf8_string_with_len(c_733283, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733283);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__125_123)) ){ 
   
-make_string(c_733287, "object");
+make_utf8_string_with_len(c_733287, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733287);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote__121_123)) ){ 
   
-make_string(c_733291, "object");
+make_utf8_string_with_len(c_733291, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733291);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_string_91_125number)) ){ 
   
-make_string(c_733295, "object");
+make_utf8_string_with_len(c_733295, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733295);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_string_91append)) ){ 
   
-make_string(c_733299, "object");
+make_utf8_string_with_len(c_733299, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733299);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_apply)) ){ 
   
-make_string(c_733303, "object");
+make_utf8_string_with_len(c_733303, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733303);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91read_91line)) ){ 
   
-make_string(c_733307, "object");
+make_utf8_string_with_len(c_733307, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733307);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91read_91char)) ){ 
   
-make_string(c_733311, "object");
+make_utf8_string_with_len(c_733311, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733311);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91peek_91char)) ){ 
   
-make_string(c_733315, "object");
+make_utf8_string_with_len(c_733315, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733315);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_command_91line_91arguments)) ){ 
   
-make_string(c_733319, "object");
+make_utf8_string_with_len(c_733319, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733319);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_number_91_125string)) ){ 
   
-make_string(c_733323, "object");
+make_utf8_string_with_len(c_733323, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733323);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_symbol_91_125string)) ){ 
   
-make_string(c_733327, "object");
+make_utf8_string_with_len(c_733327, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733327);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_substring)) ){ 
   
-make_string(c_733331, "object");
+make_utf8_string_with_len(c_733331, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733331);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_make_91bytevector)) ){ 
   
-make_string(c_733335, "object");
+make_utf8_string_with_len(c_733335, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733335);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_bytevector)) ){ 
   
-make_string(c_733339, "object");
+make_utf8_string_with_len(c_733339, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733339);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_bytevector_91append)) ){ 
   
-make_string(c_733343, "object");
+make_utf8_string_with_len(c_733343, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733343);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91bytevector_91copy)) ){ 
   
-make_string(c_733347, "object");
+make_utf8_string_with_len(c_733347, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733347);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91utf8_91_125string)) ){ 
   
-make_string(c_733351, "object");
+make_utf8_string_with_len(c_733351, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733351);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91string_91_125utf8)) ){ 
   
-make_string(c_733355, "object");
+make_utf8_string_with_len(c_733355, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733355);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_make_91vector)) ){ 
   
-make_string(c_733359, "object");
+make_utf8_string_with_len(c_733359, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733359);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_list_91_125string)) ){ 
   
-make_string(c_733363, "object");
+make_utf8_string_with_len(c_733363, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733363);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_list_91_125vector)) ){ 
   
-make_string(c_733367, "object");
+make_utf8_string_with_len(c_733367, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733367);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91installation_91dir)) ){ 
   
-make_string(c_733371, "object");
+make_utf8_string_with_len(c_733371, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733371);
 } else { 
   if( (boolean_f != Cyc_eq(p_73728, quote_Cyc_91compilation_91environment)) ){ 
   
-make_string(c_733375, "object");
+make_utf8_string_with_len(c_733375, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733375);
 } else { 
   if( (boolean_f != memberp(data, p_73728, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_string(c_733379, "object");
+make_utf8_string_with_len(c_733379, "object", 6, 6);
 return_closcall1(data,  k_73900,  &c_733379);
 } else { 
   return_closcall1(data,  k_73900,  boolean_f);}
@@ -3587,27 +3587,27 @@ static void __lambda_173(void *data, int argc, closure _,object k_731002, object
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/c-var-pointer");
 if( (boolean_f != Cyc_eq(p_73729, quote_Cyc_91fast_91plus)) ){ 
   
-make_string(c_733161, "double_type");
+make_utf8_string_with_len(c_733161, "double_type", 11, 11);
 return_closcall1(data,  k_731002,  &c_733161);
 } else { 
   if( (boolean_f != Cyc_eq(p_73729, quote_Cyc_91fast_91sub)) ){ 
   
-make_string(c_733165, "double_type");
+make_utf8_string_with_len(c_733165, "double_type", 11, 11);
 return_closcall1(data,  k_731002,  &c_733165);
 } else { 
   if( (boolean_f != Cyc_eq(p_73729, quote_Cyc_91fast_91mul)) ){ 
   
-make_string(c_733169, "double_type");
+make_utf8_string_with_len(c_733169, "double_type", 11, 11);
 return_closcall1(data,  k_731002,  &c_733169);
 } else { 
   if( (boolean_f != Cyc_eq(p_73729, quote_Cyc_91fast_91div)) ){ 
   
-make_string(c_733173, "double_type");
+make_utf8_string_with_len(c_733173, "double_type", 11, 11);
 return_closcall1(data,  k_731002,  &c_733173);
 } else { 
   if( (boolean_f != memberp(data, p_73729, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_string(c_733177, "double_type");
+make_utf8_string_with_len(c_733177, "double_type", 11, 11);
 return_closcall1(data,  k_731002,  &c_733177);
 } else { 
   return_closcall1(data,  k_731002,  boolean_f);}
@@ -3983,7 +3983,7 @@ return_closcall1(data,(closure)&c_731722,  Cyc_eq(p_73732, quote_Cyc_91global_91
 static void __lambda_170(void *data, int argc, object self_731403, object r_731020) {
   if( (boolean_f != r_731020) ){ 
   
-make_string(c_731725, "Cyc_get_global_variables");
+make_utf8_string_with_len(c_731725, "Cyc_get_global_variables", 24, 24);
 return_closcall1(data,  ((closureN)self_731403)->elements[0],  &c_731725);
 } else { 
   
@@ -4005,7 +4005,7 @@ return_closcall1(data,(closure)&c_731727,  Cyc_eq(((closureN)self_731403)->eleme
 static void __lambda_169(void *data, int argc, object self_731404, object r_731021) {
   if( (boolean_f != r_731021) ){ 
   
-make_string(c_731730, "Cyc_get_cvar");
+make_utf8_string_with_len(c_731730, "Cyc_get_cvar", 12, 12);
 return_closcall1(data,  ((closureN)self_731404)->elements[0],  &c_731730);
 } else { 
   
@@ -4027,7 +4027,7 @@ return_closcall1(data,(closure)&c_731732,  Cyc_eq(((closureN)self_731404)->eleme
 static void __lambda_168(void *data, int argc, object self_731405, object r_731022) {
   if( (boolean_f != r_731022) ){ 
   
-make_string(c_731735, "Cyc_set_cvar");
+make_utf8_string_with_len(c_731735, "Cyc_set_cvar", 12, 12);
 return_closcall1(data,  ((closureN)self_731405)->elements[0],  &c_731735);
 } else { 
   
@@ -4049,7 +4049,7 @@ return_closcall1(data,(closure)&c_731737,  Cyc_eq(((closureN)self_731405)->eleme
 static void __lambda_167(void *data, int argc, object self_731406, object r_731023) {
   if( (boolean_f != r_731023) ){ 
   
-make_string(c_731740, "Cyc_is_cvar");
+make_utf8_string_with_len(c_731740, "Cyc_is_cvar", 11, 11);
 return_closcall1(data,  ((closureN)self_731406)->elements[0],  &c_731740);
 } else { 
   
@@ -4071,7 +4071,7 @@ return_closcall1(data,(closure)&c_731742,  Cyc_eq(((closureN)self_731406)->eleme
 static void __lambda_166(void *data, int argc, object self_731407, object r_731024) {
   if( (boolean_f != r_731024) ){ 
   
-make_string(c_731745, "Cyc_is_opaque");
+make_utf8_string_with_len(c_731745, "Cyc_is_opaque", 13, 13);
 return_closcall1(data,  ((closureN)self_731407)->elements[0],  &c_731745);
 } else { 
   
@@ -4093,7 +4093,7 @@ return_closcall1(data,(closure)&c_731747,  Cyc_eq(((closureN)self_731407)->eleme
 static void __lambda_165(void *data, int argc, object self_731408, object r_731025) {
   if( (boolean_f != r_731025) ){ 
   
-make_string(c_731750, "Cyc_has_cycle");
+make_utf8_string_with_len(c_731750, "Cyc_has_cycle", 13, 13);
 return_closcall1(data,  ((closureN)self_731408)->elements[0],  &c_731750);
 } else { 
   
@@ -4115,7 +4115,7 @@ return_closcall1(data,(closure)&c_731752,  Cyc_eq(((closureN)self_731408)->eleme
 static void __lambda_164(void *data, int argc, object self_731409, object r_731026) {
   if( (boolean_f != r_731026) ){ 
   
-make_string(c_731755, "Cyc_spawn_thread");
+make_utf8_string_with_len(c_731755, "Cyc_spawn_thread", 16, 16);
 return_closcall1(data,  ((closureN)self_731409)->elements[0],  &c_731755);
 } else { 
   
@@ -4137,7 +4137,7 @@ return_closcall1(data,(closure)&c_731757,  Cyc_eq(((closureN)self_731409)->eleme
 static void __lambda_163(void *data, int argc, object self_731410, object r_731027) {
   if( (boolean_f != r_731027) ){ 
   
-make_string(c_731760, "Cyc_end_thread");
+make_utf8_string_with_len(c_731760, "Cyc_end_thread", 14, 14);
 return_closcall1(data,  ((closureN)self_731410)->elements[0],  &c_731760);
 } else { 
   
@@ -4159,7 +4159,7 @@ return_closcall1(data,(closure)&c_731762,  Cyc_eq(((closureN)self_731410)->eleme
 static void __lambda_162(void *data, int argc, object self_731411, object r_731028) {
   if( (boolean_f != r_731028) ){ 
   
-make_string(c_731765, "Cyc_stdout");
+make_utf8_string_with_len(c_731765, "Cyc_stdout", 10, 10);
 return_closcall1(data,  ((closureN)self_731411)->elements[0],  &c_731765);
 } else { 
   
@@ -4181,7 +4181,7 @@ return_closcall1(data,(closure)&c_731767,  Cyc_eq(((closureN)self_731411)->eleme
 static void __lambda_161(void *data, int argc, object self_731412, object r_731029) {
   if( (boolean_f != r_731029) ){ 
   
-make_string(c_731770, "Cyc_stdin");
+make_utf8_string_with_len(c_731770, "Cyc_stdin", 9, 9);
 return_closcall1(data,  ((closureN)self_731412)->elements[0],  &c_731770);
 } else { 
   
@@ -4203,7 +4203,7 @@ return_closcall1(data,(closure)&c_731772,  Cyc_eq(((closureN)self_731412)->eleme
 static void __lambda_160(void *data, int argc, object self_731413, object r_731030) {
   if( (boolean_f != r_731030) ){ 
   
-make_string(c_731775, "Cyc_stderr");
+make_utf8_string_with_len(c_731775, "Cyc_stderr", 10, 10);
 return_closcall1(data,  ((closureN)self_731413)->elements[0],  &c_731775);
 } else { 
   
@@ -4225,7 +4225,7 @@ return_closcall1(data,(closure)&c_731777,  Cyc_eq(((closureN)self_731413)->eleme
 static void __lambda_159(void *data, int argc, object self_731414, object r_731031) {
   if( (boolean_f != r_731031) ){ 
   
-make_string(c_731780, "Cyc_list");
+make_utf8_string_with_len(c_731780, "Cyc_list", 8, 8);
 return_closcall1(data,  ((closureN)self_731414)->elements[0],  &c_731780);
 } else { 
   
@@ -4247,7 +4247,7 @@ return_closcall1(data,(closure)&c_731782,  Cyc_eq(((closureN)self_731414)->eleme
 static void __lambda_158(void *data, int argc, object self_731415, object r_731032) {
   if( (boolean_f != r_731032) ){ 
   
-make_string(c_731785, "Cyc_if");
+make_utf8_string_with_len(c_731785, "Cyc_if", 6, 6);
 return_closcall1(data,  ((closureN)self_731415)->elements[0],  &c_731785);
 } else { 
   
@@ -4269,7 +4269,7 @@ return_closcall1(data,(closure)&c_731787,  Cyc_eq(((closureN)self_731415)->eleme
 static void __lambda_157(void *data, int argc, object self_731416, object r_731033) {
   if( (boolean_f != r_731033) ){ 
   
-make_string(c_731790, "Cyc_fast_sum");
+make_utf8_string_with_len(c_731790, "Cyc_fast_sum", 12, 12);
 return_closcall1(data,  ((closureN)self_731416)->elements[0],  &c_731790);
 } else { 
   
@@ -4291,7 +4291,7 @@ return_closcall1(data,(closure)&c_731792,  Cyc_eq(((closureN)self_731416)->eleme
 static void __lambda_156(void *data, int argc, object self_731417, object r_731034) {
   if( (boolean_f != r_731034) ){ 
   
-make_string(c_731795, "Cyc_fast_sub");
+make_utf8_string_with_len(c_731795, "Cyc_fast_sub", 12, 12);
 return_closcall1(data,  ((closureN)self_731417)->elements[0],  &c_731795);
 } else { 
   
@@ -4313,7 +4313,7 @@ return_closcall1(data,(closure)&c_731797,  Cyc_eq(((closureN)self_731417)->eleme
 static void __lambda_155(void *data, int argc, object self_731418, object r_731035) {
   if( (boolean_f != r_731035) ){ 
   
-make_string(c_731800, "Cyc_fast_mul");
+make_utf8_string_with_len(c_731800, "Cyc_fast_mul", 12, 12);
 return_closcall1(data,  ((closureN)self_731418)->elements[0],  &c_731800);
 } else { 
   
@@ -4335,7 +4335,7 @@ return_closcall1(data,(closure)&c_731802,  Cyc_eq(((closureN)self_731418)->eleme
 static void __lambda_154(void *data, int argc, object self_731419, object r_731036) {
   if( (boolean_f != r_731036) ){ 
   
-make_string(c_731805, "Cyc_fast_div");
+make_utf8_string_with_len(c_731805, "Cyc_fast_div", 12, 12);
 return_closcall1(data,  ((closureN)self_731419)->elements[0],  &c_731805);
 } else { 
   
@@ -4357,7 +4357,7 @@ return_closcall1(data,(closure)&c_731807,  Cyc_eq(((closureN)self_731419)->eleme
 static void __lambda_153(void *data, int argc, object self_731420, object r_731037) {
   if( (boolean_f != r_731037) ){ 
   
-make_string(c_731810, "Cyc_sum");
+make_utf8_string_with_len(c_731810, "Cyc_sum", 7, 7);
 return_closcall1(data,  ((closureN)self_731420)->elements[0],  &c_731810);
 } else { 
   
@@ -4379,7 +4379,7 @@ return_closcall1(data,(closure)&c_731812,  Cyc_eq(((closureN)self_731420)->eleme
 static void __lambda_152(void *data, int argc, object self_731421, object r_731038) {
   if( (boolean_f != r_731038) ){ 
   
-make_string(c_731815, "Cyc_sub");
+make_utf8_string_with_len(c_731815, "Cyc_sub", 7, 7);
 return_closcall1(data,  ((closureN)self_731421)->elements[0],  &c_731815);
 } else { 
   
@@ -4401,7 +4401,7 @@ return_closcall1(data,(closure)&c_731817,  Cyc_eq(((closureN)self_731421)->eleme
 static void __lambda_151(void *data, int argc, object self_731422, object r_731039) {
   if( (boolean_f != r_731039) ){ 
   
-make_string(c_731820, "Cyc_mul");
+make_utf8_string_with_len(c_731820, "Cyc_mul", 7, 7);
 return_closcall1(data,  ((closureN)self_731422)->elements[0],  &c_731820);
 } else { 
   
@@ -4423,7 +4423,7 @@ return_closcall1(data,(closure)&c_731822,  Cyc_eq(((closureN)self_731422)->eleme
 static void __lambda_150(void *data, int argc, object self_731423, object r_731040) {
   if( (boolean_f != r_731040) ){ 
   
-make_string(c_731825, "Cyc_div");
+make_utf8_string_with_len(c_731825, "Cyc_div", 7, 7);
 return_closcall1(data,  ((closureN)self_731423)->elements[0],  &c_731825);
 } else { 
   
@@ -4445,7 +4445,7 @@ return_closcall1(data,(closure)&c_731827,  Cyc_eq(((closureN)self_731423)->eleme
 static void __lambda_149(void *data, int argc, object self_731424, object r_731041) {
   if( (boolean_f != r_731041) ){ 
   
-make_string(c_731830, "Cyc_num_fast_eq_op");
+make_utf8_string_with_len(c_731830, "Cyc_num_fast_eq_op", 18, 18);
 return_closcall1(data,  ((closureN)self_731424)->elements[0],  &c_731830);
 } else { 
   
@@ -4467,7 +4467,7 @@ return_closcall1(data,(closure)&c_731832,  Cyc_eq(((closureN)self_731424)->eleme
 static void __lambda_148(void *data, int argc, object self_731425, object r_731042) {
   if( (boolean_f != r_731042) ){ 
   
-make_string(c_731835, "Cyc_num_fast_gt_op");
+make_utf8_string_with_len(c_731835, "Cyc_num_fast_gt_op", 18, 18);
 return_closcall1(data,  ((closureN)self_731425)->elements[0],  &c_731835);
 } else { 
   
@@ -4489,7 +4489,7 @@ return_closcall1(data,(closure)&c_731837,  Cyc_eq(((closureN)self_731425)->eleme
 static void __lambda_147(void *data, int argc, object self_731426, object r_731043) {
   if( (boolean_f != r_731043) ){ 
   
-make_string(c_731840, "Cyc_num_fast_lt_op");
+make_utf8_string_with_len(c_731840, "Cyc_num_fast_lt_op", 18, 18);
 return_closcall1(data,  ((closureN)self_731426)->elements[0],  &c_731840);
 } else { 
   
@@ -4511,7 +4511,7 @@ return_closcall1(data,(closure)&c_731842,  Cyc_eq(((closureN)self_731426)->eleme
 static void __lambda_146(void *data, int argc, object self_731427, object r_731044) {
   if( (boolean_f != r_731044) ){ 
   
-make_string(c_731845, "Cyc_num_fast_gte_op");
+make_utf8_string_with_len(c_731845, "Cyc_num_fast_gte_op", 19, 19);
 return_closcall1(data,  ((closureN)self_731427)->elements[0],  &c_731845);
 } else { 
   
@@ -4533,7 +4533,7 @@ return_closcall1(data,(closure)&c_731847,  Cyc_eq(((closureN)self_731427)->eleme
 static void __lambda_145(void *data, int argc, object self_731428, object r_731045) {
   if( (boolean_f != r_731045) ){ 
   
-make_string(c_731850, "Cyc_num_fast_lte_op");
+make_utf8_string_with_len(c_731850, "Cyc_num_fast_lte_op", 19, 19);
 return_closcall1(data,  ((closureN)self_731428)->elements[0],  &c_731850);
 } else { 
   
@@ -4555,7 +4555,7 @@ return_closcall1(data,(closure)&c_731852,  Cyc_eq(((closureN)self_731428)->eleme
 static void __lambda_144(void *data, int argc, object self_731429, object r_731046) {
   if( (boolean_f != r_731046) ){ 
   
-make_string(c_731855, "Cyc_char_eq_op");
+make_utf8_string_with_len(c_731855, "Cyc_char_eq_op", 14, 14);
 return_closcall1(data,  ((closureN)self_731429)->elements[0],  &c_731855);
 } else { 
   
@@ -4577,7 +4577,7 @@ return_closcall1(data,(closure)&c_731857,  Cyc_eq(((closureN)self_731429)->eleme
 static void __lambda_143(void *data, int argc, object self_731430, object r_731047) {
   if( (boolean_f != r_731047) ){ 
   
-make_string(c_731860, "Cyc_char_gt_op");
+make_utf8_string_with_len(c_731860, "Cyc_char_gt_op", 14, 14);
 return_closcall1(data,  ((closureN)self_731430)->elements[0],  &c_731860);
 } else { 
   
@@ -4599,7 +4599,7 @@ return_closcall1(data,(closure)&c_731862,  Cyc_eq(((closureN)self_731430)->eleme
 static void __lambda_142(void *data, int argc, object self_731431, object r_731048) {
   if( (boolean_f != r_731048) ){ 
   
-make_string(c_731865, "Cyc_char_lt_op");
+make_utf8_string_with_len(c_731865, "Cyc_char_lt_op", 14, 14);
 return_closcall1(data,  ((closureN)self_731431)->elements[0],  &c_731865);
 } else { 
   
@@ -4621,7 +4621,7 @@ return_closcall1(data,(closure)&c_731867,  Cyc_eq(((closureN)self_731431)->eleme
 static void __lambda_141(void *data, int argc, object self_731432, object r_731049) {
   if( (boolean_f != r_731049) ){ 
   
-make_string(c_731870, "Cyc_char_gte_op");
+make_utf8_string_with_len(c_731870, "Cyc_char_gte_op", 15, 15);
 return_closcall1(data,  ((closureN)self_731432)->elements[0],  &c_731870);
 } else { 
   
@@ -4643,7 +4643,7 @@ return_closcall1(data,(closure)&c_731872,  Cyc_eq(((closureN)self_731432)->eleme
 static void __lambda_140(void *data, int argc, object self_731433, object r_731050) {
   if( (boolean_f != r_731050) ){ 
   
-make_string(c_731875, "Cyc_char_lte_op");
+make_utf8_string_with_len(c_731875, "Cyc_char_lte_op", 15, 15);
 return_closcall1(data,  ((closureN)self_731433)->elements[0],  &c_731875);
 } else { 
   
@@ -4665,7 +4665,7 @@ return_closcall1(data,(closure)&c_731877,  Cyc_eq(((closureN)self_731433)->eleme
 static void __lambda_139(void *data, int argc, object self_731434, object r_731051) {
   if( (boolean_f != r_731051) ){ 
   
-make_string(c_731880, "Cyc_num_eq");
+make_utf8_string_with_len(c_731880, "Cyc_num_eq", 10, 10);
 return_closcall1(data,  ((closureN)self_731434)->elements[0],  &c_731880);
 } else { 
   
@@ -4687,7 +4687,7 @@ return_closcall1(data,(closure)&c_731882,  Cyc_eq(((closureN)self_731434)->eleme
 static void __lambda_138(void *data, int argc, object self_731435, object r_731052) {
   if( (boolean_f != r_731052) ){ 
   
-make_string(c_731885, "Cyc_num_gt");
+make_utf8_string_with_len(c_731885, "Cyc_num_gt", 10, 10);
 return_closcall1(data,  ((closureN)self_731435)->elements[0],  &c_731885);
 } else { 
   
@@ -4709,7 +4709,7 @@ return_closcall1(data,(closure)&c_731887,  Cyc_eq(((closureN)self_731435)->eleme
 static void __lambda_137(void *data, int argc, object self_731436, object r_731053) {
   if( (boolean_f != r_731053) ){ 
   
-make_string(c_731890, "Cyc_num_lt");
+make_utf8_string_with_len(c_731890, "Cyc_num_lt", 10, 10);
 return_closcall1(data,  ((closureN)self_731436)->elements[0],  &c_731890);
 } else { 
   
@@ -4731,7 +4731,7 @@ return_closcall1(data,(closure)&c_731892,  Cyc_eq(((closureN)self_731436)->eleme
 static void __lambda_136(void *data, int argc, object self_731437, object r_731054) {
   if( (boolean_f != r_731054) ){ 
   
-make_string(c_731895, "Cyc_num_gte");
+make_utf8_string_with_len(c_731895, "Cyc_num_gte", 11, 11);
 return_closcall1(data,  ((closureN)self_731437)->elements[0],  &c_731895);
 } else { 
   
@@ -4753,7 +4753,7 @@ return_closcall1(data,(closure)&c_731897,  Cyc_eq(((closureN)self_731437)->eleme
 static void __lambda_135(void *data, int argc, object self_731438, object r_731055) {
   if( (boolean_f != r_731055) ){ 
   
-make_string(c_731900, "Cyc_num_lte");
+make_utf8_string_with_len(c_731900, "Cyc_num_lte", 11, 11);
 return_closcall1(data,  ((closureN)self_731438)->elements[0],  &c_731900);
 } else { 
   
@@ -4775,7 +4775,7 @@ return_closcall1(data,(closure)&c_731902,  Cyc_eq(((closureN)self_731438)->eleme
 static void __lambda_134(void *data, int argc, object self_731439, object r_731056) {
   if( (boolean_f != r_731056) ){ 
   
-make_string(c_731905, "apply_va");
+make_utf8_string_with_len(c_731905, "apply_va", 8, 8);
 return_closcall1(data,  ((closureN)self_731439)->elements[0],  &c_731905);
 } else { 
   
@@ -4797,7 +4797,7 @@ return_closcall1(data,(closure)&c_731907,  Cyc_eq(((closureN)self_731439)->eleme
 static void __lambda_133(void *data, int argc, object self_731440, object r_731057) {
   if( (boolean_f != r_731057) ){ 
   
-make_string(c_731910, "__halt");
+make_utf8_string_with_len(c_731910, "__halt", 6, 6);
 return_closcall1(data,  ((closureN)self_731440)->elements[0],  &c_731910);
 } else { 
   
@@ -4819,7 +4819,7 @@ return_closcall1(data,(closure)&c_731912,  Cyc_eq(((closureN)self_731440)->eleme
 static void __lambda_132(void *data, int argc, object self_731441, object r_731058) {
   if( (boolean_f != r_731058) ){ 
   
-make_string(c_731915, "__halt");
+make_utf8_string_with_len(c_731915, "__halt", 6, 6);
 return_closcall1(data,  ((closureN)self_731441)->elements[0],  &c_731915);
 } else { 
   
@@ -4841,7 +4841,7 @@ return_closcall1(data,(closure)&c_731917,  Cyc_eq(((closureN)self_731441)->eleme
 static void __lambda_131(void *data, int argc, object self_731442, object r_731059) {
   if( (boolean_f != r_731059) ){ 
   
-make_string(c_731920, "Cyc_default_exception_handler");
+make_utf8_string_with_len(c_731920, "Cyc_default_exception_handler", 29, 29);
 return_closcall1(data,  ((closureN)self_731442)->elements[0],  &c_731920);
 } else { 
   
@@ -4863,7 +4863,7 @@ return_closcall1(data,(closure)&c_731922,  Cyc_eq(((closureN)self_731442)->eleme
 static void __lambda_130(void *data, int argc, object self_731443, object r_731060) {
   if( (boolean_f != r_731060) ){ 
   
-make_string(c_731925, "Cyc_current_exception_handler");
+make_utf8_string_with_len(c_731925, "Cyc_current_exception_handler", 29, 29);
 return_closcall1(data,  ((closureN)self_731443)->elements[0],  &c_731925);
 } else { 
   
@@ -4885,7 +4885,7 @@ return_closcall1(data,(closure)&c_731927,  Cyc_eq(((closureN)self_731443)->eleme
 static void __lambda_129(void *data, int argc, object self_731444, object r_731061) {
   if( (boolean_f != r_731061) ){ 
   
-make_string(c_731930, "Cyc_io_open_input_file");
+make_utf8_string_with_len(c_731930, "Cyc_io_open_input_file", 22, 22);
 return_closcall1(data,  ((closureN)self_731444)->elements[0],  &c_731930);
 } else { 
   
@@ -4907,7 +4907,7 @@ return_closcall1(data,(closure)&c_731932,  Cyc_eq(((closureN)self_731444)->eleme
 static void __lambda_128(void *data, int argc, object self_731445, object r_731062) {
   if( (boolean_f != r_731062) ){ 
   
-make_string(c_731935, "Cyc_io_open_output_file");
+make_utf8_string_with_len(c_731935, "Cyc_io_open_output_file", 23, 23);
 return_closcall1(data,  ((closureN)self_731445)->elements[0],  &c_731935);
 } else { 
   
@@ -4929,7 +4929,7 @@ return_closcall1(data,(closure)&c_731937,  Cyc_eq(((closureN)self_731445)->eleme
 static void __lambda_127(void *data, int argc, object self_731446, object r_731063) {
   if( (boolean_f != r_731063) ){ 
   
-make_string(c_731940, "Cyc_io_close_port");
+make_utf8_string_with_len(c_731940, "Cyc_io_close_port", 17, 17);
 return_closcall1(data,  ((closureN)self_731446)->elements[0],  &c_731940);
 } else { 
   
@@ -4951,7 +4951,7 @@ return_closcall1(data,(closure)&c_731942,  Cyc_eq(((closureN)self_731446)->eleme
 static void __lambda_126(void *data, int argc, object self_731447, object r_731064) {
   if( (boolean_f != r_731064) ){ 
   
-make_string(c_731945, "Cyc_io_close_input_port");
+make_utf8_string_with_len(c_731945, "Cyc_io_close_input_port", 23, 23);
 return_closcall1(data,  ((closureN)self_731447)->elements[0],  &c_731945);
 } else { 
   
@@ -4973,7 +4973,7 @@ return_closcall1(data,(closure)&c_731947,  Cyc_eq(((closureN)self_731447)->eleme
 static void __lambda_125(void *data, int argc, object self_731448, object r_731065) {
   if( (boolean_f != r_731065) ){ 
   
-make_string(c_731950, "Cyc_io_close_output_port");
+make_utf8_string_with_len(c_731950, "Cyc_io_close_output_port", 24, 24);
 return_closcall1(data,  ((closureN)self_731448)->elements[0],  &c_731950);
 } else { 
   
@@ -4995,7 +4995,7 @@ return_closcall1(data,(closure)&c_731952,  Cyc_eq(((closureN)self_731448)->eleme
 static void __lambda_124(void *data, int argc, object self_731449, object r_731066) {
   if( (boolean_f != r_731066) ){ 
   
-make_string(c_731955, "Cyc_io_flush_output_port");
+make_utf8_string_with_len(c_731955, "Cyc_io_flush_output_port", 24, 24);
 return_closcall1(data,  ((closureN)self_731449)->elements[0],  &c_731955);
 } else { 
   
@@ -5017,7 +5017,7 @@ return_closcall1(data,(closure)&c_731957,  Cyc_eq(((closureN)self_731449)->eleme
 static void __lambda_123(void *data, int argc, object self_731450, object r_731067) {
   if( (boolean_f != r_731067) ){ 
   
-make_string(c_731960, "Cyc_io_file_exists");
+make_utf8_string_with_len(c_731960, "Cyc_io_file_exists", 18, 18);
 return_closcall1(data,  ((closureN)self_731450)->elements[0],  &c_731960);
 } else { 
   
@@ -5039,7 +5039,7 @@ return_closcall1(data,(closure)&c_731962,  Cyc_eq(((closureN)self_731450)->eleme
 static void __lambda_122(void *data, int argc, object self_731451, object r_731068) {
   if( (boolean_f != r_731068) ){ 
   
-make_string(c_731965, "Cyc_io_delete_file");
+make_utf8_string_with_len(c_731965, "Cyc_io_delete_file", 18, 18);
 return_closcall1(data,  ((closureN)self_731451)->elements[0],  &c_731965);
 } else { 
   
@@ -5061,7 +5061,7 @@ return_closcall1(data,(closure)&c_731967,  Cyc_eq(((closureN)self_731451)->eleme
 static void __lambda_121(void *data, int argc, object self_731452, object r_731069) {
   if( (boolean_f != r_731069) ){ 
   
-make_string(c_731970, "Cyc_io_read_char");
+make_utf8_string_with_len(c_731970, "Cyc_io_read_char", 16, 16);
 return_closcall1(data,  ((closureN)self_731452)->elements[0],  &c_731970);
 } else { 
   
@@ -5083,7 +5083,7 @@ return_closcall1(data,(closure)&c_731972,  Cyc_eq(((closureN)self_731452)->eleme
 static void __lambda_120(void *data, int argc, object self_731453, object r_731070) {
   if( (boolean_f != r_731070) ){ 
   
-make_string(c_731975, "Cyc_io_peek_char");
+make_utf8_string_with_len(c_731975, "Cyc_io_peek_char", 16, 16);
 return_closcall1(data,  ((closureN)self_731453)->elements[0],  &c_731975);
 } else { 
   
@@ -5105,7 +5105,7 @@ return_closcall1(data,(closure)&c_731977,  Cyc_eq(((closureN)self_731453)->eleme
 static void __lambda_119(void *data, int argc, object self_731454, object r_731071) {
   if( (boolean_f != r_731071) ){ 
   
-make_string(c_731980, "Cyc_io_read_line");
+make_utf8_string_with_len(c_731980, "Cyc_io_read_line", 16, 16);
 return_closcall1(data,  ((closureN)self_731454)->elements[0],  &c_731980);
 } else { 
   
@@ -5127,7 +5127,7 @@ return_closcall1(data,(closure)&c_731982,  Cyc_eq(((closureN)self_731454)->eleme
 static void __lambda_118(void *data, int argc, object self_731455, object r_731072) {
   if( (boolean_f != r_731072) ){ 
   
-make_string(c_731985, "Cyc_display_va");
+make_utf8_string_with_len(c_731985, "Cyc_display_va", 14, 14);
 return_closcall1(data,  ((closureN)self_731455)->elements[0],  &c_731985);
 } else { 
   
@@ -5149,7 +5149,7 @@ return_closcall1(data,(closure)&c_731987,  Cyc_eq(((closureN)self_731455)->eleme
 static void __lambda_117(void *data, int argc, object self_731456, object r_731073) {
   if( (boolean_f != r_731073) ){ 
   
-make_string(c_731990, "Cyc_write_va");
+make_utf8_string_with_len(c_731990, "Cyc_write_va", 12, 12);
 return_closcall1(data,  ((closureN)self_731456)->elements[0],  &c_731990);
 } else { 
   
@@ -5171,7 +5171,7 @@ return_closcall1(data,(closure)&c_731992,  Cyc_eq(((closureN)self_731456)->eleme
 static void __lambda_116(void *data, int argc, object self_731457, object r_731074) {
   if( (boolean_f != r_731074) ){ 
   
-make_string(c_731995, "Cyc_write_char");
+make_utf8_string_with_len(c_731995, "Cyc_write_char", 14, 14);
 return_closcall1(data,  ((closureN)self_731457)->elements[0],  &c_731995);
 } else { 
   
@@ -5193,7 +5193,7 @@ return_closcall1(data,(closure)&c_731997,  Cyc_eq(((closureN)self_731457)->eleme
 static void __lambda_115(void *data, int argc, object self_731458, object r_731075) {
   if( (boolean_f != r_731075) ){ 
   
-make_string(c_732000, "car");
+make_utf8_string_with_len(c_732000, "car", 3, 3);
 return_closcall1(data,  ((closureN)self_731458)->elements[0],  &c_732000);
 } else { 
   
@@ -5215,7 +5215,7 @@ return_closcall1(data,(closure)&c_732002,  Cyc_eq(((closureN)self_731458)->eleme
 static void __lambda_114(void *data, int argc, object self_731459, object r_731076) {
   if( (boolean_f != r_731076) ){ 
   
-make_string(c_732005, "cdr");
+make_utf8_string_with_len(c_732005, "cdr", 3, 3);
 return_closcall1(data,  ((closureN)self_731459)->elements[0],  &c_732005);
 } else { 
   
@@ -5237,7 +5237,7 @@ return_closcall1(data,(closure)&c_732007,  Cyc_eq(((closureN)self_731459)->eleme
 static void __lambda_113(void *data, int argc, object self_731460, object r_731077) {
   if( (boolean_f != r_731077) ){ 
   
-make_string(c_732010, "Cyc_car");
+make_utf8_string_with_len(c_732010, "Cyc_car", 7, 7);
 return_closcall1(data,  ((closureN)self_731460)->elements[0],  &c_732010);
 } else { 
   
@@ -5259,7 +5259,7 @@ return_closcall1(data,(closure)&c_732012,  Cyc_eq(((closureN)self_731460)->eleme
 static void __lambda_112(void *data, int argc, object self_731461, object r_731078) {
   if( (boolean_f != r_731078) ){ 
   
-make_string(c_732015, "Cyc_cdr");
+make_utf8_string_with_len(c_732015, "Cyc_cdr", 7, 7);
 return_closcall1(data,  ((closureN)self_731461)->elements[0],  &c_732015);
 } else { 
   
@@ -5281,7 +5281,7 @@ return_closcall1(data,(closure)&c_732017,  Cyc_eq(((closureN)self_731461)->eleme
 static void __lambda_111(void *data, int argc, object self_731462, object r_731079) {
   if( (boolean_f != r_731079) ){ 
   
-make_string(c_732020, "Cyc_caar");
+make_utf8_string_with_len(c_732020, "Cyc_caar", 8, 8);
 return_closcall1(data,  ((closureN)self_731462)->elements[0],  &c_732020);
 } else { 
   
@@ -5303,7 +5303,7 @@ return_closcall1(data,(closure)&c_732022,  Cyc_eq(((closureN)self_731462)->eleme
 static void __lambda_110(void *data, int argc, object self_731463, object r_731080) {
   if( (boolean_f != r_731080) ){ 
   
-make_string(c_732025, "Cyc_cadr");
+make_utf8_string_with_len(c_732025, "Cyc_cadr", 8, 8);
 return_closcall1(data,  ((closureN)self_731463)->elements[0],  &c_732025);
 } else { 
   
@@ -5325,7 +5325,7 @@ return_closcall1(data,(closure)&c_732027,  Cyc_eq(((closureN)self_731463)->eleme
 static void __lambda_109(void *data, int argc, object self_731464, object r_731081) {
   if( (boolean_f != r_731081) ){ 
   
-make_string(c_732030, "Cyc_cdar");
+make_utf8_string_with_len(c_732030, "Cyc_cdar", 8, 8);
 return_closcall1(data,  ((closureN)self_731464)->elements[0],  &c_732030);
 } else { 
   
@@ -5347,7 +5347,7 @@ return_closcall1(data,(closure)&c_732032,  Cyc_eq(((closureN)self_731464)->eleme
 static void __lambda_108(void *data, int argc, object self_731465, object r_731082) {
   if( (boolean_f != r_731082) ){ 
   
-make_string(c_732035, "Cyc_cddr");
+make_utf8_string_with_len(c_732035, "Cyc_cddr", 8, 8);
 return_closcall1(data,  ((closureN)self_731465)->elements[0],  &c_732035);
 } else { 
   
@@ -5369,7 +5369,7 @@ return_closcall1(data,(closure)&c_732037,  Cyc_eq(((closureN)self_731465)->eleme
 static void __lambda_107(void *data, int argc, object self_731466, object r_731083) {
   if( (boolean_f != r_731083) ){ 
   
-make_string(c_732040, "Cyc_caaar");
+make_utf8_string_with_len(c_732040, "Cyc_caaar", 9, 9);
 return_closcall1(data,  ((closureN)self_731466)->elements[0],  &c_732040);
 } else { 
   
@@ -5391,7 +5391,7 @@ return_closcall1(data,(closure)&c_732042,  Cyc_eq(((closureN)self_731466)->eleme
 static void __lambda_106(void *data, int argc, object self_731467, object r_731084) {
   if( (boolean_f != r_731084) ){ 
   
-make_string(c_732045, "Cyc_caadr");
+make_utf8_string_with_len(c_732045, "Cyc_caadr", 9, 9);
 return_closcall1(data,  ((closureN)self_731467)->elements[0],  &c_732045);
 } else { 
   
@@ -5413,7 +5413,7 @@ return_closcall1(data,(closure)&c_732047,  Cyc_eq(((closureN)self_731467)->eleme
 static void __lambda_105(void *data, int argc, object self_731468, object r_731085) {
   if( (boolean_f != r_731085) ){ 
   
-make_string(c_732050, "Cyc_cadar");
+make_utf8_string_with_len(c_732050, "Cyc_cadar", 9, 9);
 return_closcall1(data,  ((closureN)self_731468)->elements[0],  &c_732050);
 } else { 
   
@@ -5435,7 +5435,7 @@ return_closcall1(data,(closure)&c_732052,  Cyc_eq(((closureN)self_731468)->eleme
 static void __lambda_104(void *data, int argc, object self_731469, object r_731086) {
   if( (boolean_f != r_731086) ){ 
   
-make_string(c_732055, "Cyc_caddr");
+make_utf8_string_with_len(c_732055, "Cyc_caddr", 9, 9);
 return_closcall1(data,  ((closureN)self_731469)->elements[0],  &c_732055);
 } else { 
   
@@ -5457,7 +5457,7 @@ return_closcall1(data,(closure)&c_732057,  Cyc_eq(((closureN)self_731469)->eleme
 static void __lambda_103(void *data, int argc, object self_731470, object r_731087) {
   if( (boolean_f != r_731087) ){ 
   
-make_string(c_732060, "Cyc_cdaar");
+make_utf8_string_with_len(c_732060, "Cyc_cdaar", 9, 9);
 return_closcall1(data,  ((closureN)self_731470)->elements[0],  &c_732060);
 } else { 
   
@@ -5479,7 +5479,7 @@ return_closcall1(data,(closure)&c_732062,  Cyc_eq(((closureN)self_731470)->eleme
 static void __lambda_102(void *data, int argc, object self_731471, object r_731088) {
   if( (boolean_f != r_731088) ){ 
   
-make_string(c_732065, "Cyc_cdadr");
+make_utf8_string_with_len(c_732065, "Cyc_cdadr", 9, 9);
 return_closcall1(data,  ((closureN)self_731471)->elements[0],  &c_732065);
 } else { 
   
@@ -5501,7 +5501,7 @@ return_closcall1(data,(closure)&c_732067,  Cyc_eq(((closureN)self_731471)->eleme
 static void __lambda_101(void *data, int argc, object self_731472, object r_731089) {
   if( (boolean_f != r_731089) ){ 
   
-make_string(c_732070, "Cyc_cddar");
+make_utf8_string_with_len(c_732070, "Cyc_cddar", 9, 9);
 return_closcall1(data,  ((closureN)self_731472)->elements[0],  &c_732070);
 } else { 
   
@@ -5523,7 +5523,7 @@ return_closcall1(data,(closure)&c_732072,  Cyc_eq(((closureN)self_731472)->eleme
 static void __lambda_100(void *data, int argc, object self_731473, object r_731090) {
   if( (boolean_f != r_731090) ){ 
   
-make_string(c_732075, "Cyc_cdddr");
+make_utf8_string_with_len(c_732075, "Cyc_cdddr", 9, 9);
 return_closcall1(data,  ((closureN)self_731473)->elements[0],  &c_732075);
 } else { 
   
@@ -5545,7 +5545,7 @@ return_closcall1(data,(closure)&c_732077,  Cyc_eq(((closureN)self_731473)->eleme
 static void __lambda_99(void *data, int argc, object self_731474, object r_731091) {
   if( (boolean_f != r_731091) ){ 
   
-make_string(c_732080, "Cyc_caaaar");
+make_utf8_string_with_len(c_732080, "Cyc_caaaar", 10, 10);
 return_closcall1(data,  ((closureN)self_731474)->elements[0],  &c_732080);
 } else { 
   
@@ -5567,7 +5567,7 @@ return_closcall1(data,(closure)&c_732082,  Cyc_eq(((closureN)self_731474)->eleme
 static void __lambda_98(void *data, int argc, object self_731475, object r_731092) {
   if( (boolean_f != r_731092) ){ 
   
-make_string(c_732085, "Cyc_caaadr");
+make_utf8_string_with_len(c_732085, "Cyc_caaadr", 10, 10);
 return_closcall1(data,  ((closureN)self_731475)->elements[0],  &c_732085);
 } else { 
   
@@ -5589,7 +5589,7 @@ return_closcall1(data,(closure)&c_732087,  Cyc_eq(((closureN)self_731475)->eleme
 static void __lambda_97(void *data, int argc, object self_731476, object r_731093) {
   if( (boolean_f != r_731093) ){ 
   
-make_string(c_732090, "Cyc_caadar");
+make_utf8_string_with_len(c_732090, "Cyc_caadar", 10, 10);
 return_closcall1(data,  ((closureN)self_731476)->elements[0],  &c_732090);
 } else { 
   
@@ -5611,7 +5611,7 @@ return_closcall1(data,(closure)&c_732092,  Cyc_eq(((closureN)self_731476)->eleme
 static void __lambda_96(void *data, int argc, object self_731477, object r_731094) {
   if( (boolean_f != r_731094) ){ 
   
-make_string(c_732095, "Cyc_caaddr");
+make_utf8_string_with_len(c_732095, "Cyc_caaddr", 10, 10);
 return_closcall1(data,  ((closureN)self_731477)->elements[0],  &c_732095);
 } else { 
   
@@ -5633,7 +5633,7 @@ return_closcall1(data,(closure)&c_732097,  Cyc_eq(((closureN)self_731477)->eleme
 static void __lambda_95(void *data, int argc, object self_731478, object r_731095) {
   if( (boolean_f != r_731095) ){ 
   
-make_string(c_732100, "Cyc_cadaar");
+make_utf8_string_with_len(c_732100, "Cyc_cadaar", 10, 10);
 return_closcall1(data,  ((closureN)self_731478)->elements[0],  &c_732100);
 } else { 
   
@@ -5655,7 +5655,7 @@ return_closcall1(data,(closure)&c_732102,  Cyc_eq(((closureN)self_731478)->eleme
 static void __lambda_94(void *data, int argc, object self_731479, object r_731096) {
   if( (boolean_f != r_731096) ){ 
   
-make_string(c_732105, "Cyc_cadadr");
+make_utf8_string_with_len(c_732105, "Cyc_cadadr", 10, 10);
 return_closcall1(data,  ((closureN)self_731479)->elements[0],  &c_732105);
 } else { 
   
@@ -5677,7 +5677,7 @@ return_closcall1(data,(closure)&c_732107,  Cyc_eq(((closureN)self_731479)->eleme
 static void __lambda_93(void *data, int argc, object self_731480, object r_731097) {
   if( (boolean_f != r_731097) ){ 
   
-make_string(c_732110, "Cyc_caddar");
+make_utf8_string_with_len(c_732110, "Cyc_caddar", 10, 10);
 return_closcall1(data,  ((closureN)self_731480)->elements[0],  &c_732110);
 } else { 
   
@@ -5699,7 +5699,7 @@ return_closcall1(data,(closure)&c_732112,  Cyc_eq(((closureN)self_731480)->eleme
 static void __lambda_92(void *data, int argc, object self_731481, object r_731098) {
   if( (boolean_f != r_731098) ){ 
   
-make_string(c_732115, "Cyc_cadddr");
+make_utf8_string_with_len(c_732115, "Cyc_cadddr", 10, 10);
 return_closcall1(data,  ((closureN)self_731481)->elements[0],  &c_732115);
 } else { 
   
@@ -5721,7 +5721,7 @@ return_closcall1(data,(closure)&c_732117,  Cyc_eq(((closureN)self_731481)->eleme
 static void __lambda_91(void *data, int argc, object self_731482, object r_731099) {
   if( (boolean_f != r_731099) ){ 
   
-make_string(c_732120, "Cyc_cdaaar");
+make_utf8_string_with_len(c_732120, "Cyc_cdaaar", 10, 10);
 return_closcall1(data,  ((closureN)self_731482)->elements[0],  &c_732120);
 } else { 
   
@@ -5743,7 +5743,7 @@ return_closcall1(data,(closure)&c_732122,  Cyc_eq(((closureN)self_731482)->eleme
 static void __lambda_90(void *data, int argc, object self_731483, object r_731100) {
   if( (boolean_f != r_731100) ){ 
   
-make_string(c_732125, "Cyc_cdaadr");
+make_utf8_string_with_len(c_732125, "Cyc_cdaadr", 10, 10);
 return_closcall1(data,  ((closureN)self_731483)->elements[0],  &c_732125);
 } else { 
   
@@ -5765,7 +5765,7 @@ return_closcall1(data,(closure)&c_732127,  Cyc_eq(((closureN)self_731483)->eleme
 static void __lambda_89(void *data, int argc, object self_731484, object r_731101) {
   if( (boolean_f != r_731101) ){ 
   
-make_string(c_732130, "Cyc_cdadar");
+make_utf8_string_with_len(c_732130, "Cyc_cdadar", 10, 10);
 return_closcall1(data,  ((closureN)self_731484)->elements[0],  &c_732130);
 } else { 
   
@@ -5787,7 +5787,7 @@ return_closcall1(data,(closure)&c_732132,  Cyc_eq(((closureN)self_731484)->eleme
 static void __lambda_88(void *data, int argc, object self_731485, object r_731102) {
   if( (boolean_f != r_731102) ){ 
   
-make_string(c_732135, "Cyc_cdaddr");
+make_utf8_string_with_len(c_732135, "Cyc_cdaddr", 10, 10);
 return_closcall1(data,  ((closureN)self_731485)->elements[0],  &c_732135);
 } else { 
   
@@ -5809,7 +5809,7 @@ return_closcall1(data,(closure)&c_732137,  Cyc_eq(((closureN)self_731485)->eleme
 static void __lambda_87(void *data, int argc, object self_731486, object r_731103) {
   if( (boolean_f != r_731103) ){ 
   
-make_string(c_732140, "Cyc_cddaar");
+make_utf8_string_with_len(c_732140, "Cyc_cddaar", 10, 10);
 return_closcall1(data,  ((closureN)self_731486)->elements[0],  &c_732140);
 } else { 
   
@@ -5831,7 +5831,7 @@ return_closcall1(data,(closure)&c_732142,  Cyc_eq(((closureN)self_731486)->eleme
 static void __lambda_86(void *data, int argc, object self_731487, object r_731104) {
   if( (boolean_f != r_731104) ){ 
   
-make_string(c_732145, "Cyc_cddadr");
+make_utf8_string_with_len(c_732145, "Cyc_cddadr", 10, 10);
 return_closcall1(data,  ((closureN)self_731487)->elements[0],  &c_732145);
 } else { 
   
@@ -5853,7 +5853,7 @@ return_closcall1(data,(closure)&c_732147,  Cyc_eq(((closureN)self_731487)->eleme
 static void __lambda_85(void *data, int argc, object self_731488, object r_731105) {
   if( (boolean_f != r_731105) ){ 
   
-make_string(c_732150, "Cyc_cdddar");
+make_utf8_string_with_len(c_732150, "Cyc_cdddar", 10, 10);
 return_closcall1(data,  ((closureN)self_731488)->elements[0],  &c_732150);
 } else { 
   
@@ -5875,7 +5875,7 @@ return_closcall1(data,(closure)&c_732152,  Cyc_eq(((closureN)self_731488)->eleme
 static void __lambda_84(void *data, int argc, object self_731489, object r_731106) {
   if( (boolean_f != r_731106) ){ 
   
-make_string(c_732155, "Cyc_cddddr");
+make_utf8_string_with_len(c_732155, "Cyc_cddddr", 10, 10);
 return_closcall1(data,  ((closureN)self_731489)->elements[0],  &c_732155);
 } else { 
   
@@ -5897,7 +5897,7 @@ return_closcall1(data,(closure)&c_732157,  Cyc_eq(((closureN)self_731489)->eleme
 static void __lambda_83(void *data, int argc, object self_731490, object r_731107) {
   if( (boolean_f != r_731107) ){ 
   
-make_string(c_732160, "Cyc_char2integer");
+make_utf8_string_with_len(c_732160, "Cyc_char2integer", 16, 16);
 return_closcall1(data,  ((closureN)self_731490)->elements[0],  &c_732160);
 } else { 
   
@@ -5919,7 +5919,7 @@ return_closcall1(data,(closure)&c_732162,  Cyc_eq(((closureN)self_731490)->eleme
 static void __lambda_82(void *data, int argc, object self_731491, object r_731108) {
   if( (boolean_f != r_731108) ){ 
   
-make_string(c_732165, "Cyc_integer2char");
+make_utf8_string_with_len(c_732165, "Cyc_integer2char", 16, 16);
 return_closcall1(data,  ((closureN)self_731491)->elements[0],  &c_732165);
 } else { 
   
@@ -5941,7 +5941,7 @@ return_closcall1(data,(closure)&c_732167,  Cyc_eq(((closureN)self_731491)->eleme
 static void __lambda_81(void *data, int argc, object self_731492, object r_731109) {
   if( (boolean_f != r_731109) ){ 
   
-make_string(c_732170, "Cyc_string2number2_");
+make_utf8_string_with_len(c_732170, "Cyc_string2number2_", 19, 19);
 return_closcall1(data,  ((closureN)self_731492)->elements[0],  &c_732170);
 } else { 
   
@@ -5963,7 +5963,7 @@ return_closcall1(data,(closure)&c_732172,  Cyc_eq(((closureN)self_731492)->eleme
 static void __lambda_80(void *data, int argc, object self_731493, object r_731110) {
   if( (boolean_f != r_731110) ){ 
   
-make_string(c_732175, "Cyc_list2string");
+make_utf8_string_with_len(c_732175, "Cyc_list2string", 15, 15);
 return_closcall1(data,  ((closureN)self_731493)->elements[0],  &c_732175);
 } else { 
   
@@ -5985,7 +5985,7 @@ return_closcall1(data,(closure)&c_732177,  Cyc_eq(((closureN)self_731493)->eleme
 static void __lambda_79(void *data, int argc, object self_731494, object r_731111) {
   if( (boolean_f != r_731111) ){ 
   
-make_string(c_732180, "Cyc_make_bytevector");
+make_utf8_string_with_len(c_732180, "Cyc_make_bytevector", 19, 19);
 return_closcall1(data,  ((closureN)self_731494)->elements[0],  &c_732180);
 } else { 
   
@@ -6007,7 +6007,7 @@ return_closcall1(data,(closure)&c_732182,  Cyc_eq(((closureN)self_731494)->eleme
 static void __lambda_78(void *data, int argc, object self_731495, object r_731112) {
   if( (boolean_f != r_731112) ){ 
   
-make_string(c_732185, "Cyc_bytevector_length");
+make_utf8_string_with_len(c_732185, "Cyc_bytevector_length", 21, 21);
 return_closcall1(data,  ((closureN)self_731495)->elements[0],  &c_732185);
 } else { 
   
@@ -6029,7 +6029,7 @@ return_closcall1(data,(closure)&c_732187,  Cyc_eq(((closureN)self_731495)->eleme
 static void __lambda_77(void *data, int argc, object self_731496, object r_731113) {
   if( (boolean_f != r_731113) ){ 
   
-make_string(c_732190, "Cyc_bytevector");
+make_utf8_string_with_len(c_732190, "Cyc_bytevector", 14, 14);
 return_closcall1(data,  ((closureN)self_731496)->elements[0],  &c_732190);
 } else { 
   
@@ -6051,7 +6051,7 @@ return_closcall1(data,(closure)&c_732192,  Cyc_eq(((closureN)self_731496)->eleme
 static void __lambda_76(void *data, int argc, object self_731497, object r_731114) {
   if( (boolean_f != r_731114) ){ 
   
-make_string(c_732195, "Cyc_bytevector_append");
+make_utf8_string_with_len(c_732195, "Cyc_bytevector_append", 21, 21);
 return_closcall1(data,  ((closureN)self_731497)->elements[0],  &c_732195);
 } else { 
   
@@ -6073,7 +6073,7 @@ return_closcall1(data,(closure)&c_732197,  Cyc_eq(((closureN)self_731497)->eleme
 static void __lambda_75(void *data, int argc, object self_731498, object r_731115) {
   if( (boolean_f != r_731115) ){ 
   
-make_string(c_732200, "Cyc_bytevector_copy");
+make_utf8_string_with_len(c_732200, "Cyc_bytevector_copy", 19, 19);
 return_closcall1(data,  ((closureN)self_731498)->elements[0],  &c_732200);
 } else { 
   
@@ -6095,7 +6095,7 @@ return_closcall1(data,(closure)&c_732202,  Cyc_eq(((closureN)self_731498)->eleme
 static void __lambda_74(void *data, int argc, object self_731499, object r_731116) {
   if( (boolean_f != r_731116) ){ 
   
-make_string(c_732205, "Cyc_utf82string");
+make_utf8_string_with_len(c_732205, "Cyc_utf82string", 15, 15);
 return_closcall1(data,  ((closureN)self_731499)->elements[0],  &c_732205);
 } else { 
   
@@ -6117,7 +6117,7 @@ return_closcall1(data,(closure)&c_732207,  Cyc_eq(((closureN)self_731499)->eleme
 static void __lambda_73(void *data, int argc, object self_731500, object r_731117) {
   if( (boolean_f != r_731117) ){ 
   
-make_string(c_732210, "Cyc_string2utf8");
+make_utf8_string_with_len(c_732210, "Cyc_string2utf8", 15, 15);
 return_closcall1(data,  ((closureN)self_731500)->elements[0],  &c_732210);
 } else { 
   
@@ -6139,7 +6139,7 @@ return_closcall1(data,(closure)&c_732212,  Cyc_eq(((closureN)self_731500)->eleme
 static void __lambda_72(void *data, int argc, object self_731501, object r_731118) {
   if( (boolean_f != r_731118) ){ 
   
-make_string(c_732215, "Cyc_bytevector_u8_ref");
+make_utf8_string_with_len(c_732215, "Cyc_bytevector_u8_ref", 21, 21);
 return_closcall1(data,  ((closureN)self_731501)->elements[0],  &c_732215);
 } else { 
   
@@ -6161,7 +6161,7 @@ return_closcall1(data,(closure)&c_732217,  Cyc_eq(((closureN)self_731501)->eleme
 static void __lambda_71(void *data, int argc, object self_731502, object r_731119) {
   if( (boolean_f != r_731119) ){ 
   
-make_string(c_732220, "Cyc_bytevector_u8_set");
+make_utf8_string_with_len(c_732220, "Cyc_bytevector_u8_set", 21, 21);
 return_closcall1(data,  ((closureN)self_731502)->elements[0],  &c_732220);
 } else { 
   
@@ -6183,7 +6183,7 @@ return_closcall1(data,(closure)&c_732222,  Cyc_eq(((closureN)self_731502)->eleme
 static void __lambda_70(void *data, int argc, object self_731503, object r_731120) {
   if( (boolean_f != r_731120) ){ 
   
-make_string(c_732225, "Cyc_make_vector");
+make_utf8_string_with_len(c_732225, "Cyc_make_vector", 15, 15);
 return_closcall1(data,  ((closureN)self_731503)->elements[0],  &c_732225);
 } else { 
   
@@ -6205,7 +6205,7 @@ return_closcall1(data,(closure)&c_732227,  Cyc_eq(((closureN)self_731503)->eleme
 static void __lambda_69(void *data, int argc, object self_731504, object r_731121) {
   if( (boolean_f != r_731121) ){ 
   
-make_string(c_732230, "Cyc_list2vector");
+make_utf8_string_with_len(c_732230, "Cyc_list2vector", 15, 15);
 return_closcall1(data,  ((closureN)self_731504)->elements[0],  &c_732230);
 } else { 
   
@@ -6227,7 +6227,7 @@ return_closcall1(data,(closure)&c_732232,  Cyc_eq(((closureN)self_731504)->eleme
 static void __lambda_68(void *data, int argc, object self_731505, object r_731122) {
   if( (boolean_f != r_731122) ){ 
   
-make_string(c_732235, "Cyc_vector_length");
+make_utf8_string_with_len(c_732235, "Cyc_vector_length", 17, 17);
 return_closcall1(data,  ((closureN)self_731505)->elements[0],  &c_732235);
 } else { 
   
@@ -6249,7 +6249,7 @@ return_closcall1(data,(closure)&c_732237,  Cyc_eq(((closureN)self_731505)->eleme
 static void __lambda_67(void *data, int argc, object self_731506, object r_731123) {
   if( (boolean_f != r_731123) ){ 
   
-make_string(c_732240, "Cyc_vector_ref");
+make_utf8_string_with_len(c_732240, "Cyc_vector_ref", 14, 14);
 return_closcall1(data,  ((closureN)self_731506)->elements[0],  &c_732240);
 } else { 
   
@@ -6271,7 +6271,7 @@ return_closcall1(data,(closure)&c_732242,  Cyc_eq(((closureN)self_731506)->eleme
 static void __lambda_66(void *data, int argc, object self_731507, object r_731124) {
   if( (boolean_f != r_731124) ){ 
   
-make_string(c_732245, "Cyc_vector_set");
+make_utf8_string_with_len(c_732245, "Cyc_vector_set", 14, 14);
 return_closcall1(data,  ((closureN)self_731507)->elements[0],  &c_732245);
 } else { 
   
@@ -6293,7 +6293,7 @@ return_closcall1(data,(closure)&c_732247,  Cyc_eq(((closureN)self_731507)->eleme
 static void __lambda_65(void *data, int argc, object self_731508, object r_731125) {
   if( (boolean_f != r_731125) ){ 
   
-make_string(c_732250, "Cyc_string_append");
+make_utf8_string_with_len(c_732250, "Cyc_string_append", 17, 17);
 return_closcall1(data,  ((closureN)self_731508)->elements[0],  &c_732250);
 } else { 
   
@@ -6315,7 +6315,7 @@ return_closcall1(data,(closure)&c_732252,  Cyc_eq(((closureN)self_731508)->eleme
 static void __lambda_64(void *data, int argc, object self_731509, object r_731126) {
   if( (boolean_f != r_731126) ){ 
   
-make_string(c_732255, "Cyc_string_cmp");
+make_utf8_string_with_len(c_732255, "Cyc_string_cmp", 14, 14);
 return_closcall1(data,  ((closureN)self_731509)->elements[0],  &c_732255);
 } else { 
   
@@ -6337,7 +6337,7 @@ return_closcall1(data,(closure)&c_732257,  Cyc_eq(((closureN)self_731509)->eleme
 static void __lambda_63(void *data, int argc, object self_731510, object r_731127) {
   if( (boolean_f != r_731127) ){ 
   
-make_string(c_732260, "Cyc_string2symbol");
+make_utf8_string_with_len(c_732260, "Cyc_string2symbol", 17, 17);
 return_closcall1(data,  ((closureN)self_731510)->elements[0],  &c_732260);
 } else { 
   
@@ -6359,7 +6359,7 @@ return_closcall1(data,(closure)&c_732262,  Cyc_eq(((closureN)self_731510)->eleme
 static void __lambda_62(void *data, int argc, object self_731511, object r_731128) {
   if( (boolean_f != r_731128) ){ 
   
-make_string(c_732265, "Cyc_symbol2string");
+make_utf8_string_with_len(c_732265, "Cyc_symbol2string", 17, 17);
 return_closcall1(data,  ((closureN)self_731511)->elements[0],  &c_732265);
 } else { 
   
@@ -6381,7 +6381,7 @@ return_closcall1(data,(closure)&c_732267,  Cyc_eq(((closureN)self_731511)->eleme
 static void __lambda_61(void *data, int argc, object self_731512, object r_731129) {
   if( (boolean_f != r_731129) ){ 
   
-make_string(c_732270, "Cyc_number2string2");
+make_utf8_string_with_len(c_732270, "Cyc_number2string2", 18, 18);
 return_closcall1(data,  ((closureN)self_731512)->elements[0],  &c_732270);
 } else { 
   
@@ -6403,7 +6403,7 @@ return_closcall1(data,(closure)&c_732272,  Cyc_eq(((closureN)self_731512)->eleme
 static void __lambda_60(void *data, int argc, object self_731513, object r_731130) {
   if( (boolean_f != r_731130) ){ 
   
-make_string(c_732275, "Cyc_string_length");
+make_utf8_string_with_len(c_732275, "Cyc_string_length", 17, 17);
 return_closcall1(data,  ((closureN)self_731513)->elements[0],  &c_732275);
 } else { 
   
@@ -6425,7 +6425,7 @@ return_closcall1(data,(closure)&c_732277,  Cyc_eq(((closureN)self_731513)->eleme
 static void __lambda_59(void *data, int argc, object self_731514, object r_731131) {
   if( (boolean_f != r_731131) ){ 
   
-make_string(c_732280, "Cyc_string_ref");
+make_utf8_string_with_len(c_732280, "Cyc_string_ref", 14, 14);
 return_closcall1(data,  ((closureN)self_731514)->elements[0],  &c_732280);
 } else { 
   
@@ -6447,7 +6447,7 @@ return_closcall1(data,(closure)&c_732282,  Cyc_eq(((closureN)self_731514)->eleme
 static void __lambda_58(void *data, int argc, object self_731515, object r_731132) {
   if( (boolean_f != r_731132) ){ 
   
-make_string(c_732285, "Cyc_string_set");
+make_utf8_string_with_len(c_732285, "Cyc_string_set", 14, 14);
 return_closcall1(data,  ((closureN)self_731515)->elements[0],  &c_732285);
 } else { 
   
@@ -6469,7 +6469,7 @@ return_closcall1(data,(closure)&c_732287,  Cyc_eq(((closureN)self_731515)->eleme
 static void __lambda_57(void *data, int argc, object self_731516, object r_731133) {
   if( (boolean_f != r_731133) ){ 
   
-make_string(c_732290, "Cyc_substring");
+make_utf8_string_with_len(c_732290, "Cyc_substring", 13, 13);
 return_closcall1(data,  ((closureN)self_731516)->elements[0],  &c_732290);
 } else { 
   
@@ -6491,7 +6491,7 @@ return_closcall1(data,(closure)&c_732292,  Cyc_eq(((closureN)self_731516)->eleme
 static void __lambda_56(void *data, int argc, object self_731517, object r_731134) {
   if( (boolean_f != r_731134) ){ 
   
-make_string(c_732295, "Cyc_installation_dir");
+make_utf8_string_with_len(c_732295, "Cyc_installation_dir", 20, 20);
 return_closcall1(data,  ((closureN)self_731517)->elements[0],  &c_732295);
 } else { 
   
@@ -6513,7 +6513,7 @@ return_closcall1(data,(closure)&c_732297,  Cyc_eq(((closureN)self_731517)->eleme
 static void __lambda_55(void *data, int argc, object self_731518, object r_731135) {
   if( (boolean_f != r_731135) ){ 
   
-make_string(c_732300, "Cyc_compilation_environment");
+make_utf8_string_with_len(c_732300, "Cyc_compilation_environment", 27, 27);
 return_closcall1(data,  ((closureN)self_731518)->elements[0],  &c_732300);
 } else { 
   
@@ -6535,7 +6535,7 @@ return_closcall1(data,(closure)&c_732302,  Cyc_eq(((closureN)self_731518)->eleme
 static void __lambda_54(void *data, int argc, object self_731519, object r_731136) {
   if( (boolean_f != r_731136) ){ 
   
-make_string(c_732305, "Cyc_command_line_arguments");
+make_utf8_string_with_len(c_732305, "Cyc_command_line_arguments", 26, 26);
 return_closcall1(data,  ((closureN)self_731519)->elements[0],  &c_732305);
 } else { 
   
@@ -6557,7 +6557,7 @@ return_closcall1(data,(closure)&c_732307,  Cyc_eq(((closureN)self_731519)->eleme
 static void __lambda_53(void *data, int argc, object self_731520, object r_731137) {
   if( (boolean_f != r_731137) ){ 
   
-make_string(c_732310, "Cyc_system");
+make_utf8_string_with_len(c_732310, "Cyc_system", 10, 10);
 return_closcall1(data,  ((closureN)self_731520)->elements[0],  &c_732310);
 } else { 
   
@@ -6579,7 +6579,7 @@ return_closcall1(data,(closure)&c_732312,  Cyc_eq(((closureN)self_731520)->eleme
 static void __lambda_52(void *data, int argc, object self_731521, object r_731138) {
   if( (boolean_f != r_731138) ){ 
   
-make_string(c_732315, "Cyc_length");
+make_utf8_string_with_len(c_732315, "Cyc_length", 10, 10);
 return_closcall1(data,  ((closureN)self_731521)->elements[0],  &c_732315);
 } else { 
   
@@ -6601,7 +6601,7 @@ return_closcall1(data,(closure)&c_732317,  Cyc_eq(((closureN)self_731521)->eleme
 static void __lambda_51(void *data, int argc, object self_731522, object r_731139) {
   if( (boolean_f != r_731139) ){ 
   
-make_string(c_732320, "Cyc_set_car");
+make_utf8_string_with_len(c_732320, "Cyc_set_car", 11, 11);
 return_closcall1(data,  ((closureN)self_731522)->elements[0],  &c_732320);
 } else { 
   
@@ -6623,7 +6623,7 @@ return_closcall1(data,(closure)&c_732322,  Cyc_eq(((closureN)self_731522)->eleme
 static void __lambda_50(void *data, int argc, object self_731523, object r_731140) {
   if( (boolean_f != r_731140) ){ 
   
-make_string(c_732325, "Cyc_set_cdr");
+make_utf8_string_with_len(c_732325, "Cyc_set_cdr", 11, 11);
 return_closcall1(data,  ((closureN)self_731523)->elements[0],  &c_732325);
 } else { 
   
@@ -6645,7 +6645,7 @@ return_closcall1(data,(closure)&c_732327,  Cyc_eq(((closureN)self_731523)->eleme
 static void __lambda_49(void *data, int argc, object self_731524, object r_731141) {
   if( (boolean_f != r_731141) ){ 
   
-make_string(c_732330, "Cyc_eq");
+make_utf8_string_with_len(c_732330, "Cyc_eq", 6, 6);
 return_closcall1(data,  ((closureN)self_731524)->elements[0],  &c_732330);
 } else { 
   
@@ -6667,7 +6667,7 @@ return_closcall1(data,(closure)&c_732332,  Cyc_eq(((closureN)self_731524)->eleme
 static void __lambda_48(void *data, int argc, object self_731525, object r_731142) {
   if( (boolean_f != r_731142) ){ 
   
-make_string(c_732335, "Cyc_eq");
+make_utf8_string_with_len(c_732335, "Cyc_eq", 6, 6);
 return_closcall1(data,  ((closureN)self_731525)->elements[0],  &c_732335);
 } else { 
   
@@ -6689,7 +6689,7 @@ return_closcall1(data,(closure)&c_732337,  Cyc_eq(((closureN)self_731525)->eleme
 static void __lambda_47(void *data, int argc, object self_731526, object r_731143) {
   if( (boolean_f != r_731143) ){ 
   
-make_string(c_732340, "equalp");
+make_utf8_string_with_len(c_732340, "equalp", 6, 6);
 return_closcall1(data,  ((closureN)self_731526)->elements[0],  &c_732340);
 } else { 
   
@@ -6711,7 +6711,7 @@ return_closcall1(data,(closure)&c_732342,  Cyc_eq(((closureN)self_731526)->eleme
 static void __lambda_46(void *data, int argc, object self_731527, object r_731144) {
   if( (boolean_f != r_731144) ){ 
   
-make_string(c_732345, "memberp");
+make_utf8_string_with_len(c_732345, "memberp", 7, 7);
 return_closcall1(data,  ((closureN)self_731527)->elements[0],  &c_732345);
 } else { 
   
@@ -6733,7 +6733,7 @@ return_closcall1(data,(closure)&c_732347,  Cyc_eq(((closureN)self_731527)->eleme
 static void __lambda_45(void *data, int argc, object self_731528, object r_731145) {
   if( (boolean_f != r_731145) ){ 
   
-make_string(c_732350, "assoc");
+make_utf8_string_with_len(c_732350, "assoc", 5, 5);
 return_closcall1(data,  ((closureN)self_731528)->elements[0],  &c_732350);
 } else { 
   
@@ -6755,7 +6755,7 @@ return_closcall1(data,(closure)&c_732352,  Cyc_eq(((closureN)self_731528)->eleme
 static void __lambda_44(void *data, int argc, object self_731529, object r_731146) {
   if( (boolean_f != r_731146) ){ 
   
-make_string(c_732355, "assq");
+make_utf8_string_with_len(c_732355, "assq", 4, 4);
 return_closcall1(data,  ((closureN)self_731529)->elements[0],  &c_732355);
 } else { 
   
@@ -6777,7 +6777,7 @@ return_closcall1(data,(closure)&c_732357,  Cyc_eq(((closureN)self_731529)->eleme
 static void __lambda_43(void *data, int argc, object self_731530, object r_731147) {
   if( (boolean_f != r_731147) ){ 
   
-make_string(c_732360, "assq");
+make_utf8_string_with_len(c_732360, "assq", 4, 4);
 return_closcall1(data,  ((closureN)self_731530)->elements[0],  &c_732360);
 } else { 
   
@@ -6799,7 +6799,7 @@ return_closcall1(data,(closure)&c_732362,  Cyc_eq(((closureN)self_731530)->eleme
 static void __lambda_42(void *data, int argc, object self_731531, object r_731148) {
   if( (boolean_f != r_731148) ){ 
   
-make_string(c_732365, "memqp");
+make_utf8_string_with_len(c_732365, "memqp", 5, 5);
 return_closcall1(data,  ((closureN)self_731531)->elements[0],  &c_732365);
 } else { 
   
@@ -6821,7 +6821,7 @@ return_closcall1(data,(closure)&c_732367,  Cyc_eq(((closureN)self_731531)->eleme
 static void __lambda_41(void *data, int argc, object self_731532, object r_731149) {
   if( (boolean_f != r_731149) ){ 
   
-make_string(c_732370, "memqp");
+make_utf8_string_with_len(c_732370, "memqp", 5, 5);
 return_closcall1(data,  ((closureN)self_731532)->elements[0],  &c_732370);
 } else { 
   
@@ -6843,7 +6843,7 @@ return_closcall1(data,(closure)&c_732372,  Cyc_eq(((closureN)self_731532)->eleme
 static void __lambda_40(void *data, int argc, object self_731533, object r_731150) {
   if( (boolean_f != r_731150) ){ 
   
-make_string(c_732375, "Cyc_is_boolean");
+make_utf8_string_with_len(c_732375, "Cyc_is_boolean", 14, 14);
 return_closcall1(data,  ((closureN)self_731533)->elements[0],  &c_732375);
 } else { 
   
@@ -6865,7 +6865,7 @@ return_closcall1(data,(closure)&c_732377,  Cyc_eq(((closureN)self_731533)->eleme
 static void __lambda_39(void *data, int argc, object self_731534, object r_731151) {
   if( (boolean_f != r_731151) ){ 
   
-make_string(c_732380, "Cyc_is_char");
+make_utf8_string_with_len(c_732380, "Cyc_is_char", 11, 11);
 return_closcall1(data,  ((closureN)self_731534)->elements[0],  &c_732380);
 } else { 
   
@@ -6887,7 +6887,7 @@ return_closcall1(data,(closure)&c_732382,  Cyc_eq(((closureN)self_731534)->eleme
 static void __lambda_38(void *data, int argc, object self_731535, object r_731152) {
   if( (boolean_f != r_731152) ){ 
   
-make_string(c_732385, "Cyc_is_null");
+make_utf8_string_with_len(c_732385, "Cyc_is_null", 11, 11);
 return_closcall1(data,  ((closureN)self_731535)->elements[0],  &c_732385);
 } else { 
   
@@ -6909,7 +6909,7 @@ return_closcall1(data,(closure)&c_732387,  Cyc_eq(((closureN)self_731535)->eleme
 static void __lambda_37(void *data, int argc, object self_731536, object r_731153) {
   if( (boolean_f != r_731153) ){ 
   
-make_string(c_732390, "Cyc_is_number");
+make_utf8_string_with_len(c_732390, "Cyc_is_number", 13, 13);
 return_closcall1(data,  ((closureN)self_731536)->elements[0],  &c_732390);
 } else { 
   
@@ -6931,7 +6931,7 @@ return_closcall1(data,(closure)&c_732392,  Cyc_eq(((closureN)self_731536)->eleme
 static void __lambda_36(void *data, int argc, object self_731537, object r_731154) {
   if( (boolean_f != r_731154) ){ 
   
-make_string(c_732395, "Cyc_is_real");
+make_utf8_string_with_len(c_732395, "Cyc_is_real", 11, 11);
 return_closcall1(data,  ((closureN)self_731537)->elements[0],  &c_732395);
 } else { 
   
@@ -6953,7 +6953,7 @@ return_closcall1(data,(closure)&c_732397,  Cyc_eq(((closureN)self_731537)->eleme
 static void __lambda_35(void *data, int argc, object self_731538, object r_731155) {
   if( (boolean_f != r_731155) ){ 
   
-make_string(c_732400, "Cyc_is_integer");
+make_utf8_string_with_len(c_732400, "Cyc_is_integer", 14, 14);
 return_closcall1(data,  ((closureN)self_731538)->elements[0],  &c_732400);
 } else { 
   
@@ -6975,7 +6975,7 @@ return_closcall1(data,(closure)&c_732402,  Cyc_eq(((closureN)self_731538)->eleme
 static void __lambda_34(void *data, int argc, object self_731539, object r_731156) {
   if( (boolean_f != r_731156) ){ 
   
-make_string(c_732405, "Cyc_is_pair");
+make_utf8_string_with_len(c_732405, "Cyc_is_pair", 11, 11);
 return_closcall1(data,  ((closureN)self_731539)->elements[0],  &c_732405);
 } else { 
   
@@ -6997,7 +6997,7 @@ return_closcall1(data,(closure)&c_732407,  Cyc_eq(((closureN)self_731539)->eleme
 static void __lambda_33(void *data, int argc, object self_731540, object r_731157) {
   if( (boolean_f != r_731157) ){ 
   
-make_string(c_732410, "Cyc_is_procedure");
+make_utf8_string_with_len(c_732410, "Cyc_is_procedure", 16, 16);
 return_closcall1(data,  ((closureN)self_731540)->elements[0],  &c_732410);
 } else { 
   
@@ -7019,7 +7019,7 @@ return_closcall1(data,(closure)&c_732412,  Cyc_eq(((closureN)self_731540)->eleme
 static void __lambda_32(void *data, int argc, object self_731541, object r_731158) {
   if( (boolean_f != r_731158) ){ 
   
-make_string(c_732415, "Cyc_is_macro");
+make_utf8_string_with_len(c_732415, "Cyc_is_macro", 12, 12);
 return_closcall1(data,  ((closureN)self_731541)->elements[0],  &c_732415);
 } else { 
   
@@ -7041,7 +7041,7 @@ return_closcall1(data,(closure)&c_732417,  Cyc_eq(((closureN)self_731541)->eleme
 static void __lambda_31(void *data, int argc, object self_731542, object r_731159) {
   if( (boolean_f != r_731159) ){ 
   
-make_string(c_732420, "Cyc_is_port");
+make_utf8_string_with_len(c_732420, "Cyc_is_port", 11, 11);
 return_closcall1(data,  ((closureN)self_731542)->elements[0],  &c_732420);
 } else { 
   
@@ -7063,7 +7063,7 @@ return_closcall1(data,(closure)&c_732422,  Cyc_eq(((closureN)self_731542)->eleme
 static void __lambda_30(void *data, int argc, object self_731543, object r_731160) {
   if( (boolean_f != r_731160) ){ 
   
-make_string(c_732425, "Cyc_is_vector");
+make_utf8_string_with_len(c_732425, "Cyc_is_vector", 13, 13);
 return_closcall1(data,  ((closureN)self_731543)->elements[0],  &c_732425);
 } else { 
   
@@ -7085,7 +7085,7 @@ return_closcall1(data,(closure)&c_732427,  Cyc_eq(((closureN)self_731543)->eleme
 static void __lambda_29(void *data, int argc, object self_731544, object r_731161) {
   if( (boolean_f != r_731161) ){ 
   
-make_string(c_732430, "Cyc_is_bytevector");
+make_utf8_string_with_len(c_732430, "Cyc_is_bytevector", 17, 17);
 return_closcall1(data,  ((closureN)self_731544)->elements[0],  &c_732430);
 } else { 
   
@@ -7107,7 +7107,7 @@ return_closcall1(data,(closure)&c_732432,  Cyc_eq(((closureN)self_731544)->eleme
 static void __lambda_28(void *data, int argc, object self_731545, object r_731162) {
   if( (boolean_f != r_731162) ){ 
   
-make_string(c_732435, "Cyc_is_string");
+make_utf8_string_with_len(c_732435, "Cyc_is_string", 13, 13);
 return_closcall1(data,  ((closureN)self_731545)->elements[0],  &c_732435);
 } else { 
   
@@ -7129,7 +7129,7 @@ return_closcall1(data,(closure)&c_732437,  Cyc_eq(((closureN)self_731545)->eleme
 static void __lambda_27(void *data, int argc, object self_731546, object r_731163) {
   if( (boolean_f != r_731163) ){ 
   
-make_string(c_732440, "Cyc_is_eof_object");
+make_utf8_string_with_len(c_732440, "Cyc_is_eof_object", 17, 17);
 return_closcall1(data,  ((closureN)self_731546)->elements[0],  &c_732440);
 } else { 
   
@@ -7151,7 +7151,7 @@ return_closcall1(data,(closure)&c_732442,  Cyc_eq(((closureN)self_731546)->eleme
 static void __lambda_26(void *data, int argc, object self_731547, object r_731164) {
   if( (boolean_f != r_731164) ){ 
   
-make_string(c_732445, "Cyc_is_symbol");
+make_utf8_string_with_len(c_732445, "Cyc_is_symbol", 13, 13);
 return_closcall1(data,  ((closureN)self_731547)->elements[0],  &c_732445);
 } else { 
   
@@ -7173,7 +7173,7 @@ return_closcall1(data,(closure)&c_732447,  Cyc_eq(((closureN)self_731547)->eleme
 static void __lambda_25(void *data, int argc, object self_731548, object r_731165) {
   if( (boolean_f != r_731165) ){ 
   
-make_string(c_732450, "make_pair");
+make_utf8_string_with_len(c_732450, "make_pair", 9, 9);
 return_closcall1(data,  ((closureN)self_731548)->elements[0],  &c_732450);
 } else { 
   
@@ -7195,7 +7195,7 @@ return_closcall1(data,(closure)&c_732452,  Cyc_eq(((closureN)self_731548)->eleme
 static void __lambda_24(void *data, int argc, object self_731549, object r_731166) {
   if( (boolean_f != r_731166) ){ 
   
-make_string(c_732455, "make_cell");
+make_utf8_string_with_len(c_732455, "make_cell", 9, 9);
 return_closcall1(data,  ((closureN)self_731549)->elements[0],  &c_732455);
 } else { 
   
@@ -7217,7 +7217,7 @@ return_closcall1(data,(closure)&c_732457,  Cyc_eq(((closureN)self_731549)->eleme
 static void __lambda_23(void *data, int argc, object self_731550, object r_731167) {
   if( (boolean_f != r_731167) ){ 
   
-make_string(c_732460, "car");
+make_utf8_string_with_len(c_732460, "car", 3, 3);
 return_closcall1(data,  ((closureN)self_731550)->elements[0],  &c_732460);
 } else { 
   
@@ -7239,7 +7239,7 @@ return_closcall1(data,(closure)&c_732462,  Cyc_eq(((closureN)self_731550)->eleme
 static void __lambda_22(void *data, int argc, object self_731551, object r_731168) {
   if( (boolean_f != r_731168) ){ 
   
-make_string(c_732465, "Cyc_set_cell");
+make_utf8_string_with_len(c_732465, "Cyc_set_cell", 12, 12);
 return_closcall1(data,  ((closureN)self_731551)->elements[0],  &c_732465);
 } else { 
   
@@ -7261,11 +7261,11 @@ return_closcall1(data,(closure)&c_732467,  Cyc_eq(((closureN)self_731551)->eleme
 static void __lambda_21(void *data, int argc, object self_731552, object r_731169) {
   if( (boolean_f != r_731169) ){ 
   
-make_string(c_732470, "global_set");
+make_utf8_string_with_len(c_732470, "global_set", 10, 10);
 return_closcall1(data,  ((closureN)self_731552)->elements[0],  &c_732470);
 } else { 
   
-make_string(c_732473, "unhandled primitive: ");
+make_utf8_string_with_len(c_732473, "unhandled primitive: ", 21, 21);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731552)->elements[0], &c_732473, ((closureN)self_731552)->elements[1]);}
 ; 
 }
@@ -7386,9 +7386,9 @@ return_closcall1(data,(closure)&c_731688,  c_731701);;
 
 static void __lambda_14(void *data, int argc, object self_731557, object r_731346) {
   
-make_string(c_731696, " arguments to ");
+make_utf8_string_with_len(c_731696, " arguments to ", 14, 14);
 
-make_string(c_731698, " but received ");
+make_utf8_string_with_len(c_731698, " but received ", 14, 14);
 
 object c_731693 = Cyc_string_append(data,  ((closureN)self_731557)->elements[0],6,((closureN)self_731557)->elements[1], ((closureN)self_731557)->elements[2], &c_731696, ((closureN)self_731557)->elements[3], &c_731698, r_731346);
 return_closcall1(data,  ((closureN)self_731557)->elements[0],  c_731693);; 
@@ -7442,7 +7442,7 @@ c_731645.elements = (object *)alloca(sizeof(object) * 1);
 c_731645.elements[0] = ((closureN)self_731559)->elements[2];
 
 
-make_string(c_731648, "Expected ");
+make_utf8_string_with_len(c_731648, "Expected ", 9, 9);
 return_closcall4(data,  ((closureN)self_731559)->elements[0],  &c_731645, &c_731648, Cyc_car(data, ((closureN)self_731559)->elements[1]), ((closureN)self_731559)->elements[3]);
 } else { 
   
@@ -7489,7 +7489,7 @@ c_731670.elements = (object *)alloca(sizeof(object) * 1);
 c_731670.elements[0] = ((closureN)self_731560)->elements[2];
 
 
-make_string(c_731673, "Expected at least ");
+make_utf8_string_with_len(c_731673, "Expected at least ", 18, 18);
 return_closcall4(data,  ((closureN)self_731560)->elements[0],  &c_731670, &c_731673, Cyc_car(data, ((closureN)self_731560)->elements[1]), ((closureN)self_731560)->elements[3]);
 } else { 
   return_closcall1(data,  ((closureN)self_731560)->elements[2],  boolean_t);}

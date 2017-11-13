@@ -5677,7 +5677,7 @@ return_closcall1(data,(closure)&c_738056,  Cyc_length(data, ((closureN)self_7332
 
 static void __lambda_458(void *data, int argc, object self_733209, object r_731870) {
   
-make_string(c_738059, "too many arguments");
+make_utf8_string_with_len(c_738059, "too many arguments", 18, 18);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_733209)->elements[0], &c_738059, r_731870, ((closureN)self_733209)->elements[1]);; 
 }
 
@@ -5771,7 +5771,7 @@ return_closcall4(data,  __glo_vector_91unfold_91right_srfi_133,  ((closureN)self
 static void __lambda_452(void *data, int argc, object self_733215, object k_731838, object index_73981, object l_73980) {
   if( (boolean_f != Cyc_is_null(l_73980)) ){ 
   
-make_string(c_737989, "list too short");
+make_utf8_string_with_len(c_737989, "list too short", 14, 14);
 
 make_pair(c_737998,((closureN)self_733215)->elements[1], NULL);
 
@@ -5815,7 +5815,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_738030, __glo_list_127_sche
 
 static void __lambda_451(void *data, int argc, object self_733216, object r_731863) {
   
-make_string(c_738033, "erroneous value");
+make_utf8_string_with_len(c_738033, "erroneous value", 15, 15);
 
 make_pair(c_738042,__glo_reverse_91list_91_125vector_srfi_133, NULL);
 
@@ -5932,7 +5932,7 @@ return_closcall4(data,  __glo_vector_91unfold_91right_srfi_133,  ((closureN)self
 static void __lambda_444(void *data, int argc, object self_733223, object k_731798, object index_73987, object l_73986) {
   if( (boolean_f != Cyc_is_null(l_73986)) ){ 
   
-make_string(c_737901, "list too short");
+make_utf8_string_with_len(c_737901, "list too short", 14, 14);
 
 make_pair(c_737910,((closureN)self_733223)->elements[1], NULL);
 
@@ -5976,7 +5976,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_737942, __glo_list_127_sche
 
 static void __lambda_443(void *data, int argc, object self_733224, object r_731823) {
   
-make_string(c_737945, "erroneous value");
+make_utf8_string_with_len(c_737945, "erroneous value", 15, 15);
 
 make_pair(c_737954,__glo_reverse_91list_91_125vector_srfi_133, NULL);
 
@@ -6093,7 +6093,7 @@ return_closcall4(data,  __glo_vector_91unfold_91right_srfi_133,  ((closureN)self
 static void __lambda_436(void *data, int argc, object self_733231, object k_731757, object index_73994, object l_73993) {
   if( (boolean_f != Cyc_is_null(l_73993)) ){ 
   
-make_string(c_737808, "list too short");
+make_utf8_string_with_len(c_737808, "list too short", 14, 14);
 
 make_pair(c_737817,((closureN)self_733231)->elements[1], NULL);
 
@@ -6137,7 +6137,7 @@ return_closcall3(data,  __glo__list_scheme_base,  &c_737849, __glo_list_127_sche
 
 static void __lambda_435(void *data, int argc, object self_733232, object r_731782) {
   
-make_string(c_737852, "erroneous value");
+make_utf8_string_with_len(c_737852, "erroneous value", 15, 15);
 
 make_pair(c_737861,__glo_reverse_91list_91_125vector_srfi_133, NULL);
 
@@ -6544,7 +6544,7 @@ return_closcall1(data,(closure)&c_737522,  &c_737550);;
 static void __lambda_413(void *data, int argc, object self_733251, object r_731918) {
   if( (boolean_f != r_731918) ){ 
   
-make_string(c_737553, "vector range for self-copying overlaps");
+make_utf8_string_with_len(c_737553, "vector range for self-copying overlaps", 38, 38);
 
 make_pair(c_737562,((closureN)self_733251)->elements[5], NULL);
 
@@ -6612,7 +6612,7 @@ static void __lambda_412(void *data, int argc, object self_733252, object r_7319
   return_closcall6(data,  __glo__75vector_91reverse_91copy_67_srfi_133,  ((closureN)self_733252)->elements[0], ((closureN)self_733252)->elements[5], ((closureN)self_733252)->elements[6], ((closureN)self_733252)->elements[2], ((closureN)self_733252)->elements[4], ((closureN)self_733252)->elements[1]);
 } else { 
   
-make_string(c_737635, "illegal arguments");
+make_utf8_string_with_len(c_737635, "illegal arguments", 17, 17);
 
 make_pair(c_737644,__glo_vector_91reverse_91copy_67_srfi_133, NULL);
 
@@ -6745,7 +6745,7 @@ static void __lambda_407(void *data, int argc, object self_733257, object r_7319
   return_closcall4(data,  car(((closureN)self_733257)->elements[0]),  ((closureN)self_733257)->elements[1], Cyc_car(data, ((closureN)self_733257)->elements[2]), Cyc_cadr(data, ((closureN)self_733257)->elements[2]), Cyc_vector_length(data, ((closureN)self_733257)->elements[3]));
 } else { 
   
-make_string(c_737506, "too many arguments");
+make_utf8_string_with_len(c_737506, "too many arguments", 18, 18);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_733257)->elements[1], &c_737506, __glo_vector_91reverse_91copy_67_srfi_133, Cyc_cddr(data, ((closureN)self_733257)->elements[2]));}
 }
 }
@@ -9510,7 +9510,7 @@ static void __lambda_252(void *data, int argc, object self_733394, object r_7322
   return_closcall4(data,  __glo_values_scheme_base,  ((closureN)self_733394)->elements[2], ((closureN)self_733394)->elements[3], ((closureN)self_733394)->elements[0], ((closureN)self_733394)->elements[1]);
 } else { 
   
-make_string(c_736388, "illegal arguments");
+make_utf8_string_with_len(c_736388, "illegal arguments", 17, 17);
 
 make_pair(c_736397,__glo_vector_91copy_srfi_133, NULL);
 
@@ -9582,7 +9582,7 @@ static void __lambda_249(void *data, int argc, object self_733397, object r_7322
   return_closcall5(data,  car(((closureN)self_733397)->elements[2]),  ((closureN)self_733397)->elements[1], Cyc_car(data, ((closureN)self_733397)->elements[0]), Cyc_cadr(data, ((closureN)self_733397)->elements[0]), Cyc_vector_length(data, ((closureN)self_733397)->elements[3]), Cyc_caddr(data, ((closureN)self_733397)->elements[0]));
 } else { 
   
-make_string(c_736349, "too many arguments");
+make_utf8_string_with_len(c_736349, "too many arguments", 18, 18);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_733397)->elements[1], &c_736349, __glo_vector_91copy_srfi_133, Cyc_cdddr(data, ((closureN)self_733397)->elements[0]));}
 }
 }
@@ -10588,7 +10588,7 @@ c_735936.elements = (object *)alloca(sizeof(object) * 1);
 c_735936.elements[0] = k_732402;
 
 
-make_string(c_735942, "no expansion for");
+make_utf8_string_with_len(c_735942, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735936, &c_735942, ((closureN)self_733444)->elements[0]);}
 ; 
 }
@@ -11723,7 +11723,7 @@ if( (boolean_f != Cyc_is_null(args_731281)) ){
   return_closcall7(data,  __glo_check_91indices_srfi_133,  k_732505, vec_731282, Cyc_car(data, args_731281), start_91name_731280, Cyc_cadr(data, args_731281), end_91name_731279, callee_731278);
 } else { 
   
-make_string(c_735413, "too many arguments");
+make_utf8_string_with_len(c_735413, "too many arguments", 18, 18);
 
 make_pair(c_735425,Cyc_cddr(data, args_731281), NULL);
 
@@ -11865,7 +11865,7 @@ return_closcall6(data,  __glo_append_scheme_base,  &c_735336, things_731290, &c_
 
 static void __lambda_155(void *data, int argc, object self_733484, object r_732586) {
   
-make_string(c_735342, "vector range out of bounds");
+make_utf8_string_with_len(c_735342, "vector range out of bounds", 26, 26);
 
 object c_735341 = apply_va(data,  ((closureN)self_733484)->elements[0],3,__glo_error_scheme_base, &c_735342, r_732586);
 return_closcall1(data,  ((closureN)self_733484)->elements[0],  c_735341);; 
@@ -12172,7 +12172,7 @@ c_735118.elements[1] = ((closureN)self_733496)->elements[2];
 c_735118.elements[2] = ((closureN)self_733496)->elements[3];
 
 
-make_string(c_735123, "vector index too low");
+make_utf8_string_with_len(c_735123, "vector index too low", 20, 20);
 
 make_pair(c_735133,((closureN)self_733496)->elements[3], NULL);
 
@@ -12223,7 +12223,7 @@ c_735148.elements[1] = ((closureN)self_733497)->elements[2];
 c_735148.elements[2] = ((closureN)self_733497)->elements[3];
 
 
-make_string(c_735153, "vector index too high");
+make_utf8_string_with_len(c_735153, "vector index too high", 21, 21);
 
 make_pair(c_735163,((closureN)self_733497)->elements[3], NULL);
 
@@ -12305,7 +12305,7 @@ c_735094.elements[1] = ((closureN)self_733501)->elements[1];
 c_735094.elements[2] = ((closureN)self_733501)->elements[2];
 
 
-make_string(c_735099, "erroneous value");
+make_utf8_string_with_len(c_735099, "erroneous value", 15, 15);
 
 make_pair(c_735108,((closureN)self_733501)->elements[0], NULL);
 
@@ -12547,7 +12547,7 @@ c_735012.elements = (object *)alloca(sizeof(object) * 1);
 c_735012.elements[0] = ((closureN)self_733509)->elements[1];
 
 
-make_string(c_735018, "no expansion for");
+make_utf8_string_with_len(c_735018, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_735012, &c_735018, ((closureN)self_733509)->elements[0]);}
 ; 
 }
@@ -14377,9 +14377,9 @@ c_734229.elements[3] = ((closureN)self_733568)->elements[3];
 c_734229.elements[4] = ((closureN)self_733568)->elements[4];
 
 
-make_string(c_734313, "too many arguments");
+make_utf8_string_with_len(c_734313, "too many arguments", 18, 18);
 
-make_string(c_734315, "too many arguments");
+make_utf8_string_with_len(c_734315, "too many arguments", 18, 18);
 
 make_pair(c_734318,quote__127orig_91args_91var,NULL);
 
@@ -14409,7 +14409,7 @@ c_734231.elements[2] = ((closureN)self_733569)->elements[2];
 c_734231.elements[3] = ((closureN)self_733569)->elements[3];
 
 
-make_string(c_734308, "too many arguments");
+make_utf8_string_with_len(c_734308, "too many arguments", 18, 18);
 
 make_pair(c_734311,quote__127orig_91args_91var,NULL);
 
@@ -14441,7 +14441,7 @@ c_734233.elements[2] = ((closureN)self_733570)->elements[2];
 c_734233.elements[3] = ((closureN)self_733570)->elements[3];
 
 
-make_string(c_734300, "too many arguments");
+make_utf8_string_with_len(c_734300, "too many arguments", 18, 18);
 
 make_pair(c_734303,quote__127orig_91args_91var,NULL);
 
@@ -14484,7 +14484,7 @@ make_pair(c_734285,NULL,&c_734286);
 
 make_pair(c_734284,quote_let,&c_734285);
 
-make_string(c_734292, "too many arguments");
+make_utf8_string_with_len(c_734292, "too many arguments", 18, 18);
 
 make_pair(c_734295,quote__127orig_91args_91var,NULL);
 
@@ -14532,7 +14532,7 @@ make_pair(c_734270,NULL,&c_734271);
 
 make_pair(c_734269,quote_let,&c_734270);
 
-make_string(c_734277, "too many arguments");
+make_utf8_string_with_len(c_734277, "too many arguments", 18, 18);
 
 make_pair(c_734280,quote__127orig_91args_91var,NULL);
 
@@ -14581,7 +14581,7 @@ make_pair(c_734252,NULL,&c_734253);
 
 make_pair(c_734251,quote_let,&c_734252);
 
-make_string(c_734259, "too many arguments");
+make_utf8_string_with_len(c_734259, "too many arguments", 18, 18);
 
 make_pair(c_734262,quote__127orig_91args_91var,NULL);
 
@@ -14755,7 +14755,7 @@ c_734137.elements = (object *)alloca(sizeof(object) * 1);
 c_734137.elements[0] = ((closureN)self_733580)->elements[1];
 
 
-make_string(c_734143, "no expansion for");
+make_utf8_string_with_len(c_734143, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_734137, &c_734143, ((closureN)self_733580)->elements[0]);}
 ; 
 }

@@ -6284,7 +6284,7 @@ static void __lambda_788(void *data, int argc, object self_733053, object r_7316
   return_closcall1(data,  ((closureN)self_733053)->elements[0],  Cyc_car(data, ((closureN)self_733053)->elements[1]));
 } else { 
   
-make_string(c_738475, "too many optional arguments");
+make_utf8_string_with_len(c_738475, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733053)->elements[0], &c_738475, ((closureN)self_733053)->elements[1]);}
 ; 
 }
@@ -6415,7 +6415,7 @@ static void __lambda_780(void *data, int argc, object self_733060, object r_7316
   return_closcall1(data,  ((closureN)self_733060)->elements[0],  Cyc_car(data, ((closureN)self_733060)->elements[1]));
 } else { 
   
-make_string(c_738430, "too many optional arguments");
+make_utf8_string_with_len(c_738430, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733060)->elements[0], &c_738430, ((closureN)self_733060)->elements[1]);}
 ; 
 }
@@ -6694,7 +6694,7 @@ static void __lambda_762(void *data, int argc, object self_733075, object r_7316
   return_closcall1(data,  ((closureN)self_733075)->elements[0],  Cyc_car(data, ((closureN)self_733075)->elements[1]));
 } else { 
   
-make_string(c_738324, "too many optional arguments");
+make_utf8_string_with_len(c_738324, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733075)->elements[0], &c_738324, ((closureN)self_733075)->elements[1]);}
 ; 
 }
@@ -6952,7 +6952,7 @@ static void __lambda_747(void *data, int argc, object self_733089, object r_7316
   return_closcall1(data,  ((closureN)self_733089)->elements[0],  Cyc_car(data, ((closureN)self_733089)->elements[1]));
 } else { 
   
-make_string(c_738237, "too many optional arguments");
+make_utf8_string_with_len(c_738237, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733089)->elements[0], &c_738237, ((closureN)self_733089)->elements[1]);}
 ; 
 }
@@ -7083,7 +7083,7 @@ static void __lambda_739(void *data, int argc, object self_733096, object r_7316
   return_closcall1(data,  ((closureN)self_733096)->elements[0],  Cyc_car(data, ((closureN)self_733096)->elements[1]));
 } else { 
   
-make_string(c_738194, "too many optional arguments");
+make_utf8_string_with_len(c_738194, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733096)->elements[0], &c_738194, ((closureN)self_733096)->elements[1]);}
 ; 
 }
@@ -7214,7 +7214,7 @@ static void __lambda_731(void *data, int argc, object self_733103, object r_7316
   return_closcall1(data,  ((closureN)self_733103)->elements[0],  Cyc_car(data, ((closureN)self_733103)->elements[1]));
 } else { 
   
-make_string(c_738151, "too many optional arguments");
+make_utf8_string_with_len(c_738151, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733103)->elements[0], &c_738151, ((closureN)self_733103)->elements[1]);}
 ; 
 }
@@ -12715,7 +12715,7 @@ static void __lambda_425(void *data, int argc, object self_733389, object r_7320
   if( (boolean_f != Cyc_is_pair(((closureN)self_733389)->elements[3])) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_733389)->elements[3]))) ){ 
   
-make_string(c_736389, "Too many arguments");
+make_utf8_string_with_len(c_736389, "Too many arguments", 18, 18);
 
 object c_736388 = apply_va(data,  ((closureN)self_733389)->elements[2],8,__glo_error_scheme_base, &c_736389, __glo_unfold_srfi_1, ((closureN)self_733389)->elements[4], ((closureN)self_733389)->elements[0], ((closureN)self_733389)->elements[1], ((closureN)self_733389)->elements[5], ((closureN)self_733389)->elements[3]);
 return_closcall1(data,  ((closureN)self_733389)->elements[2],  c_736388);
@@ -13385,7 +13385,7 @@ static void __lambda_390(void *data, int argc, object self_733423, object r_7320
   return_closcall1(data,  ((closureN)self_733423)->elements[0],  Cyc_car(data, ((closureN)self_733423)->elements[1]));
 } else { 
   
-make_string(c_736311, "too many optional arguments");
+make_utf8_string_with_len(c_736311, "too many optional arguments", 27, 27);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733423)->elements[0], &c_736311, ((closureN)self_733423)->elements[1]);}
 ; 
 }
@@ -17468,7 +17468,7 @@ static void __lambda_133(void *data, int argc, object self_733637, object r_7325
   return_closcall1(data,  ((closureN)self_733637)->elements[0],  boolean_t);
 } else { 
   
-make_string(c_734723, "null-list?: argument out of domain");
+make_utf8_string_with_len(c_734723, "null-list?: argument out of domain", 34, 34);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733637)->elements[0], &c_734723, ((closureN)self_733637)->elements[1]);}
 ; 
 }
@@ -18163,7 +18163,7 @@ return_closcall1(data,(closure)&c_734393,  c_734402);;
 static void __lambda_92(void *data, int argc, object self_733671, object r_732634) {
   if( (boolean_f != r_732634) ){ 
   
-make_string(c_734396, "Negative step count");
+make_utf8_string_with_len(c_734396, "Negative step count", 19, 19);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_733671)->elements[1], &c_734396, __glo_iota_srfi_1, ((closureN)self_733671)->elements[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_733671)->elements[1],  boolean_f);}
@@ -18765,7 +18765,7 @@ static void __lambda_56(void *data, int argc, object self_733703, object k_73268
   return_closcall1(data,  k_732684,  Cyc_car(data, ((closureN)self_733703)->elements[1]));
 } else { 
   
-make_string(c_734186, "Too many arguments to MAKE-LIST");
+make_utf8_string_with_len(c_734186, "Too many arguments to MAKE-LIST", 31, 31);
 
 make_pair(c_734189,((closureN)self_733703)->elements[0], ((closureN)self_733703)->elements[1]);
 return_closcall3(data,  __glo_error_scheme_base,  k_732684, &c_734186, &c_734189);}
@@ -18873,7 +18873,7 @@ c_734147.elements = (object *)alloca(sizeof(object) * 1);
 c_734147.elements[0] = k_732700;
 
 
-make_string(c_734153, "no expansion for");
+make_utf8_string_with_len(c_734153, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_734147, &c_734153, ((closureN)self_733707)->elements[0]);}
 ; 
 }
@@ -19585,9 +19585,9 @@ c_733887.elements[6] = ((closureN)self_733738)->elements[6];
 c_733887.elements[7] = ((closureN)self_733738)->elements[7];
 
 
-make_string(c_734079, "too many optional arguments");
+make_utf8_string_with_len(c_734079, "too many optional arguments", 27, 27);
 
-make_string(c_734081, "too many optional arguments");
+make_utf8_string_with_len(c_734081, "too many optional arguments", 27, 27);
 
 make_pair(c_734082,quote_maybe_91arg,NULL);
 
@@ -19614,7 +19614,7 @@ c_733889.elements[5] = ((closureN)self_733739)->elements[5];
 c_733889.elements[6] = ((closureN)self_733739)->elements[6];
 
 
-make_string(c_734077, "too many optional arguments");
+make_utf8_string_with_len(c_734077, "too many optional arguments", 27, 27);
 
 make_pair(c_734078,quote_maybe_91arg,NULL);
 
@@ -19643,7 +19643,7 @@ c_733891.elements[5] = ((closureN)self_733740)->elements[5];
 c_733891.elements[6] = ((closureN)self_733740)->elements[6];
 
 
-make_string(c_734072, "too many optional arguments");
+make_utf8_string_with_len(c_734072, "too many optional arguments", 27, 27);
 
 make_pair(c_734073,quote_maybe_91arg,NULL);
 
@@ -19673,7 +19673,7 @@ c_733893.elements[4] = ((closureN)self_733741)->elements[4];
 c_733893.elements[5] = ((closureN)self_733741)->elements[5];
 
 
-make_string(c_734067, "too many optional arguments");
+make_utf8_string_with_len(c_734067, "too many optional arguments", 27, 27);
 
 make_pair(c_734068,quote_maybe_91arg,NULL);
 
@@ -19705,7 +19705,7 @@ c_733895.elements[4] = ((closureN)self_733742)->elements[4];
 c_733895.elements[5] = ((closureN)self_733742)->elements[5];
 
 
-make_string(c_734060, "too many optional arguments");
+make_utf8_string_with_len(c_734060, "too many optional arguments", 27, 27);
 
 make_pair(c_734061,quote_maybe_91arg,NULL);
 
@@ -19754,7 +19754,7 @@ make_pair(c_734045,&c_734046,NULL);
 
 make_pair(c_734040,&c_734041,&c_734045);
 
-make_string(c_734053, "too many optional arguments");
+make_utf8_string_with_len(c_734053, "too many optional arguments", 27, 27);
 
 make_pair(c_734054,quote_maybe_91arg,NULL);
 
@@ -19812,7 +19812,7 @@ make_pair(c_734028,&c_734029,NULL);
 
 make_pair(c_734023,&c_734024,&c_734028);
 
-make_string(c_734036, "too many optional arguments");
+make_utf8_string_with_len(c_734036, "too many optional arguments", 27, 27);
 
 make_pair(c_734037,quote_maybe_91arg,NULL);
 
@@ -19871,7 +19871,7 @@ make_pair(c_734006,&c_734007,NULL);
 
 make_pair(c_734001,&c_734002,&c_734006);
 
-make_string(c_734014, "too many optional arguments");
+make_utf8_string_with_len(c_734014, "too many optional arguments", 27, 27);
 
 make_pair(c_734015,quote_maybe_91arg,NULL);
 
@@ -19932,7 +19932,7 @@ make_pair(c_733983,&c_733984,NULL);
 
 make_pair(c_733978,&c_733979,&c_733983);
 
-make_string(c_733991, "too many optional arguments");
+make_utf8_string_with_len(c_733991, "too many optional arguments", 27, 27);
 
 make_pair(c_733992,quote_maybe_91arg,NULL);
 
@@ -20000,7 +20000,7 @@ make_pair(c_733960,&c_733961,NULL);
 
 make_pair(c_733955,&c_733956,&c_733960);
 
-make_string(c_733968, "too many optional arguments");
+make_utf8_string_with_len(c_733968, "too many optional arguments", 27, 27);
 
 make_pair(c_733969,quote_maybe_91arg,NULL);
 
@@ -20069,7 +20069,7 @@ make_pair(c_733932,&c_733933,NULL);
 
 make_pair(c_733927,&c_733928,&c_733932);
 
-make_string(c_733940, "too many optional arguments");
+make_utf8_string_with_len(c_733940, "too many optional arguments", 27, 27);
 
 make_pair(c_733941,quote_maybe_91arg,NULL);
 
@@ -20225,7 +20225,7 @@ c_733782.elements[0] = ((closureN)self_733754)->elements[1];
 c_733782.elements[1] = ((closureN)self_733754)->elements[2];
 
 
-make_string(c_733788, "Bad argument");
+make_utf8_string_with_len(c_733788, "Bad argument", 12, 12);
 return_closcall5(data,  __glo_error_scheme_base,  &c_733782, &c_733788, ((closureN)self_733754)->elements[4], ((closureN)self_733754)->elements[3], ((closureN)self_733754)->elements[0]);}
 ; 
 }

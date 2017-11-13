@@ -409,7 +409,7 @@ c_73729.elements = (object *)alloca(sizeof(object) * 1);
 c_73729.elements[0] = k_73118;
 
 
-make_string(c_73748, ".");
+make_utf8_string_with_len(c_73748, ".", 1, 1);
 return_closcall1(data,(closure)&c_73729,  global_set(__glo__85sym_91dot_85_scheme_read, Cyc_string2symbol(data, &c_73748)));; 
 }
 
@@ -426,13 +426,13 @@ c_73731.elements = (object *)alloca(sizeof(object) * 1);
 c_73731.elements[0] = ((closureN)self_73251)->elements[0];
 
 
-make_string(c_73743, ",@");
+make_utf8_string_with_len(c_73743, ",@", 2, 2);
 return_closcall1(data,(closure)&c_73731,  global_set(__glo__85sym_91unquote_91splicing_85_scheme_read, Cyc_string2symbol(data, &c_73743)));; 
 }
 
 static void __lambda_63(void *data, int argc, object self_73252, object r_73121) {
   
-make_string(c_73738, "#;");
+make_utf8_string_with_len(c_73738, "#;", 2, 2);
 return_closcall1(data,  ((closureN)self_73252)->elements[0],  global_set(__glo__85sym_91datum_91comment_85_scheme_read, Cyc_string2symbol(data, &c_73738)));; 
 }
 
@@ -599,7 +599,7 @@ c_73598.elements[1] = ((closureN)self_73253)->elements[1];
 return_closcall2(data,  __glo_parse_scheme_read,  &c_73598, ((closureN)self_73253)->elements[0]);
 } else { 
   
-make_string(c_73605, "Unexpected token");
+make_utf8_string_with_len(c_73605, "Unexpected token", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73253)->elements[1], &c_73605, Cyc_vector_ref(data, token_7380, obj_int2obj(0)));}
 }
 
@@ -733,7 +733,7 @@ return_closcall1(data,(closure)&c_73681,  Cyc_set_cell(data, loop_7383, &c_73691
 static void __lambda_56(void *data, int argc, object self_73258, object k_73192, object lis_7385, object t_7384) {
   if( (boolean_f != Cyc_is_eof_object(t_7384)) ){ 
   
-make_string(c_73696, "missing closing parenthesis");
+make_utf8_string_with_len(c_73696, "missing closing parenthesis", 27, 27);
 return_closcall3(data,  __glo_read_91error_scheme_read,  k_73192, ((closureN)self_73258)->elements[0], &c_73696);
 } else { 
     double_type local_73699; object c_73700 = ((inline_function_type)
@@ -874,7 +874,7 @@ return_closcall1(data,(closure)&c_73626,  Cyc_set_cell(data, loop_7388, &c_73636
 static void __lambda_48(void *data, int argc, object self_73266, object k_73178, object lis_7390, object t_7389) {
   if( (boolean_f != Cyc_is_eof_object(t_7389)) ){ 
   
-make_string(c_73641, "missing closing parenthesis");
+make_utf8_string_with_len(c_73641, "missing closing parenthesis", 27, 27);
 return_closcall3(data,  __glo_read_91error_scheme_read,  k_73178, ((closureN)self_73266)->elements[0], &c_73641);
 } else { 
     double_type local_73644; object c_73645 = ((inline_function_type)
@@ -1046,7 +1046,7 @@ return_closcall1(data,(closure)&c_73454,  Cyc_set_cell(data, loop_7394, &c_73464
 static void __lambda_33(void *data, int argc, object self_73281, object k_73136, object lis_7396, object t_7395) {
   if( (boolean_f != Cyc_is_eof_object(t_7395)) ){ 
   
-make_string(c_73469, "missing closing parenthesis");
+make_utf8_string_with_len(c_73469, "missing closing parenthesis", 27, 27);
 return_closcall3(data,  __glo_read_91error_scheme_read,  k_73136, ((closureN)self_73281)->elements[0], &c_73469);
 } else { 
     double_type local_73472; object c_73473 = ((inline_function_type)
@@ -1335,7 +1335,7 @@ return_closcall2(data,  __glo_parse_scheme_read,  &c_73365, fp_73105);;
 static void __lambda_8(void *data, int argc, object self_73295, object result_73106) {
   if( (boolean_f != Cyc_is_opaque(result_73106)) ){ 
   
-make_string(c_73371, "unexpected closing parenthesis");
+make_utf8_string_with_len(c_73371, "unexpected closing parenthesis", 30, 30);
 return_closcall3(data,  __glo_read_91error_scheme_read,  ((closureN)self_73295)->elements[1], ((closureN)self_73295)->elements[0], &c_73371);
 } else { 
   return_closcall1(data,  ((closureN)self_73295)->elements[1],  result_73106);}

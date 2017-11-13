@@ -279,28 +279,28 @@ return_closcall1(data,  k_7311,  obj_int2obj(0));;
 static void __lambda_7(void *data, int argc, closure _,object k_7314, object x_732, object y_731) {
   Cyc_st_add(data, "scheme/complex.sld:make-polar");
 
-make_string(c_7349, "Complex numbers are not supported at this time");
+make_utf8_string_with_len(c_7349, "Complex numbers are not supported at this time", 46, 46);
 return_closcall2(data,  __glo_error_scheme_base,  k_7314, &c_7349);; 
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_7317, object x_734, object y_733) {
   Cyc_st_add(data, "scheme/complex.sld:make-rectangular");
 
-make_string(c_7346, "Complex numbers are not supported at this time");
+make_utf8_string_with_len(c_7346, "Complex numbers are not supported at this time", 46, 46);
 return_closcall2(data,  __glo_error_scheme_base,  k_7317, &c_7346);; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_7320, object z_735) {
   Cyc_st_add(data, "scheme/complex.sld:magnitude");
 
-make_string(c_7343, "Complex numbers are not supported at this time");
+make_utf8_string_with_len(c_7343, "Complex numbers are not supported at this time", 46, 46);
 return_closcall2(data,  __glo_error_scheme_base,  k_7320, &c_7343);; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_7323, object z_736) {
   Cyc_st_add(data, "scheme/complex.sld:angle");
 
-make_string(c_7340, "Complex numbers are not supported at this time");
+make_utf8_string_with_len(c_7340, "Complex numbers are not supported at this time", 46, 46);
 return_closcall2(data,  __glo_error_scheme_base,  k_7323, &c_7340);; 
 }
 

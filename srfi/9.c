@@ -1244,7 +1244,7 @@ return_closcall3(data,  car(((closureN)self_73434)->elements[5]),  k_73181, Cyc_
 
 } else { 
   
-make_string(c_731021, "unknown record field in constructor");
+make_utf8_string_with_len(c_731021, "unknown record field in constructor", 35, 35);
 return_closcall3(data,  __glo_error_scheme_base,  k_73181, &c_731021, Cyc_car(data, ls_73101));}
 }
 ; 
@@ -1475,7 +1475,7 @@ return_closcall1(data,(closure)&c_73684,  Cyc_eq(((closureN)self_73442)->element
 static void __lambda_29(void *data, int argc, object self_73443, object r_73334) {
   if( (boolean_f != r_73334) ){ 
   
-make_string(c_73687, "same binding for record rtd and constructor");
+make_utf8_string_with_len(c_73687, "same binding for record rtd and constructor", 43, 43);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73443)->elements[0], &c_73687, ((closureN)self_73443)->elements[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_73443)->elements[0],  boolean_f);}

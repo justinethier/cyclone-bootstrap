@@ -576,7 +576,7 @@ c_73166.elements = (object *)alloca(sizeof(object) * 1);
 c_73166.elements[0] = ((closureN)self_7394)->elements[0];
 
 
-make_string(c_73256, "ast:lambda-id");
+make_utf8_string_with_len(c_73256, "ast:lambda-id", 13, 13);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_73166, &c_73256, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7355);; 
 }
 
@@ -623,7 +623,7 @@ c_73172.elements = (object *)alloca(sizeof(object) * 1);
 c_73172.elements[0] = ((closureN)self_7397)->elements[0];
 
 
-make_string(c_73253, "ast:lambda-args");
+make_utf8_string_with_len(c_73253, "ast:lambda-args", 15, 15);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_73172, &c_73253, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7352);; 
 }
 
@@ -670,7 +670,7 @@ c_73178.elements = (object *)alloca(sizeof(object) * 1);
 c_73178.elements[0] = ((closureN)self_73100)->elements[0];
 
 
-make_string(c_73250, "ast:lambda-body");
+make_utf8_string_with_len(c_73250, "ast:lambda-body", 15, 15);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_73178, &c_73250, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7349);; 
 }
 
@@ -717,7 +717,7 @@ c_73184.elements = (object *)alloca(sizeof(object) * 1);
 c_73184.elements[0] = ((closureN)self_73103)->elements[0];
 
 
-make_string(c_73247, "ast:lambda-has-cont");
+make_utf8_string_with_len(c_73247, "ast:lambda-has-cont", 19, 19);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_73184, &c_73247, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7346);; 
 }
 
@@ -764,7 +764,7 @@ c_73190.elements = (object *)alloca(sizeof(object) * 1);
 c_73190.elements[0] = ((closureN)self_73106)->elements[0];
 
 
-make_string(c_73244, "ast:set-lambda-args!");
+make_utf8_string_with_len(c_73244, "ast:set-lambda-args!", 20, 20);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_73190, &c_73244, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7343);; 
 }
 
@@ -811,7 +811,7 @@ c_73196.elements = (object *)alloca(sizeof(object) * 1);
 c_73196.elements[0] = ((closureN)self_73109)->elements[0];
 
 
-make_string(c_73241, "ast:set-lambda-body!");
+make_utf8_string_with_len(c_73241, "ast:set-lambda-body!", 20, 20);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_73196, &c_73241, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7340);; 
 }
 
@@ -858,7 +858,7 @@ c_73202.elements = (object *)alloca(sizeof(object) * 1);
 c_73202.elements[0] = ((closureN)self_73112)->elements[0];
 
 
-make_string(c_73238, "ast:set-lambda-has-cont!");
+make_utf8_string_with_len(c_73238, "ast:set-lambda-has-cont!", 24, 24);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_73202, &c_73238, __glo__121lambda_91ast_125_scheme_cyclone_ast, r_7337);; 
 }
 
@@ -890,7 +890,7 @@ c_73206.elements = (object *)alloca(sizeof(object) * 1);
 c_73206.elements[0] = ((closureN)self_73114)->elements[0];
 
 
-make_string(c_73235, "ast:%make-lambda");
+make_utf8_string_with_len(c_73235, "ast:%make-lambda", 16, 16);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_73206, &c_73235, __glo__121lambda_91ast_125_scheme_cyclone_ast);; 
 }
 

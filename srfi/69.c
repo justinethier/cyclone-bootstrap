@@ -927,7 +927,7 @@ c_732251.elements = (object *)alloca(sizeof(object) * 1);
 c_732251.elements[0] = ((closureN)self_73799)->elements[0];
 
 
-make_string(c_732373, "hash-table-size");
+make_utf8_string_with_len(c_732373, "hash-table-size", 15, 15);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732251, &c_732373, __glo__121srfi_91hash_91table_125_srfi_69, r_73385);; 
 }
 
@@ -974,7 +974,7 @@ c_732257.elements = (object *)alloca(sizeof(object) * 1);
 c_732257.elements[0] = ((closureN)self_73802)->elements[0];
 
 
-make_string(c_732370, "hash-table-hash-function");
+make_utf8_string_with_len(c_732370, "hash-table-hash-function", 24, 24);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732257, &c_732370, __glo__121srfi_91hash_91table_125_srfi_69, r_73382);; 
 }
 
@@ -1021,7 +1021,7 @@ c_732263.elements = (object *)alloca(sizeof(object) * 1);
 c_732263.elements[0] = ((closureN)self_73805)->elements[0];
 
 
-make_string(c_732367, "hash-table-equivalence-function");
+make_utf8_string_with_len(c_732367, "hash-table-equivalence-function", 31, 31);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732263, &c_732367, __glo__121srfi_91hash_91table_125_srfi_69, r_73379);; 
 }
 
@@ -1068,7 +1068,7 @@ c_732269.elements = (object *)alloca(sizeof(object) * 1);
 c_732269.elements[0] = ((closureN)self_73808)->elements[0];
 
 
-make_string(c_732364, "hash-table-association-function");
+make_utf8_string_with_len(c_732364, "hash-table-association-function", 31, 31);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732269, &c_732364, __glo__121srfi_91hash_91table_125_srfi_69, r_73376);; 
 }
 
@@ -1115,7 +1115,7 @@ c_732275.elements = (object *)alloca(sizeof(object) * 1);
 c_732275.elements[0] = ((closureN)self_73811)->elements[0];
 
 
-make_string(c_732361, "hash-table-entries");
+make_utf8_string_with_len(c_732361, "hash-table-entries", 18, 18);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732275, &c_732361, __glo__121srfi_91hash_91table_125_srfi_69, r_73373);; 
 }
 
@@ -1162,7 +1162,7 @@ c_732281.elements = (object *)alloca(sizeof(object) * 1);
 c_732281.elements[0] = ((closureN)self_73814)->elements[0];
 
 
-make_string(c_732358, "hash-table-set-size!");
+make_utf8_string_with_len(c_732358, "hash-table-set-size!", 20, 20);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732281, &c_732358, __glo__121srfi_91hash_91table_125_srfi_69, r_73370);; 
 }
 
@@ -1209,7 +1209,7 @@ c_732287.elements = (object *)alloca(sizeof(object) * 1);
 c_732287.elements[0] = ((closureN)self_73817)->elements[0];
 
 
-make_string(c_732355, "hash-table-set-entries!");
+make_utf8_string_with_len(c_732355, "hash-table-set-entries!", 23, 23);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732287, &c_732355, __glo__121srfi_91hash_91table_125_srfi_69, r_73367);; 
 }
 
@@ -1241,7 +1241,7 @@ c_732291.elements = (object *)alloca(sizeof(object) * 1);
 c_732291.elements[0] = ((closureN)self_73819)->elements[0];
 
 
-make_string(c_732352, "%make-hash-table");
+make_utf8_string_with_len(c_732352, "%make-hash-table", 16, 16);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_732291, &c_732352, __glo__121srfi_91hash_91table_125_srfi_69);; 
 }
 
@@ -2456,7 +2456,7 @@ return_closcall1(data,(closure)&c_731918,  tmp_73137_73222);
 } else { 
   if( (boolean_f != Cyc_is_null(((closureN)self_73887)->elements[6])) ){ 
   
-make_string(c_731932, "hash-table-update!: no value exists for key");
+make_utf8_string_with_len(c_731932, "hash-table-update!: no value exists for key", 43, 43);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73887)->elements[4], &c_731932, ((closureN)self_73887)->elements[5]);
 } else { 
   
@@ -2861,7 +2861,7 @@ static void __lambda_129(void *data, int argc, object self_73909, object tmp_731
 } else { 
   if( (boolean_f != Cyc_is_null(((closureN)self_73909)->elements[2])) ){ 
   
-make_string(c_731844, "hash-table-ref: no value associated with");
+make_utf8_string_with_len(c_731844, "hash-table-ref: no value associated with", 40, 40);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73909)->elements[0], &c_731844, ((closureN)self_73909)->elements[1]);
 } else { 
   return_closcall1(data,  Cyc_car(data, ((closureN)self_73909)->elements[2]),  ((closureN)self_73909)->elements[0]);}
@@ -4661,7 +4661,7 @@ return_closcall1(data,(closure)&c_731272,  Cyc_is_procedure(data, ((closureN)sel
 static void __lambda_30(void *data, int argc, object self_73997, object r_73744) {
   if( (boolean_f != r_73744) ){ 
   
-make_string(c_731275, "hash: procedures cannot be hashed");
+make_utf8_string_with_len(c_731275, "hash: procedures cannot be hashed", 33, 33);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73997)->elements[0], &c_731275, ((closureN)self_73997)->elements[1]);
 } else { 
   return_closcall1(data,  ((closureN)self_73997)->elements[0],  obj_int2obj(1));}

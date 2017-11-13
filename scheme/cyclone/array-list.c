@@ -616,7 +616,7 @@ c_731279.elements = (object *)alloca(sizeof(object) * 1);
 c_731279.elements[0] = ((closureN)self_73444)->elements[0];
 
 
-make_string(c_731434, "store");
+make_utf8_string_with_len(c_731434, "store", 5, 5);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_731279, &c_731434, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73210);; 
 }
 
@@ -663,7 +663,7 @@ c_731285.elements = (object *)alloca(sizeof(object) * 1);
 c_731285.elements[0] = ((closureN)self_73447)->elements[0];
 
 
-make_string(c_731431, "size");
+make_utf8_string_with_len(c_731431, "size", 4, 4);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_731285, &c_731431, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73207);; 
 }
 
@@ -710,7 +710,7 @@ c_731291.elements = (object *)alloca(sizeof(object) * 1);
 c_731291.elements[0] = ((closureN)self_73450)->elements[0];
 
 
-make_string(c_731428, "capacity");
+make_utf8_string_with_len(c_731428, "capacity", 8, 8);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_731291, &c_731428, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73204);; 
 }
 
@@ -757,7 +757,7 @@ c_731297.elements = (object *)alloca(sizeof(object) * 1);
 c_731297.elements[0] = ((closureN)self_73453)->elements[0];
 
 
-make_string(c_731425, "set-store!");
+make_utf8_string_with_len(c_731425, "set-store!", 10, 10);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731297, &c_731425, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73201);; 
 }
 
@@ -804,7 +804,7 @@ c_731303.elements = (object *)alloca(sizeof(object) * 1);
 c_731303.elements[0] = ((closureN)self_73456)->elements[0];
 
 
-make_string(c_731422, "set-size!");
+make_utf8_string_with_len(c_731422, "set-size!", 9, 9);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731303, &c_731422, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73198);; 
 }
 
@@ -851,7 +851,7 @@ c_731309.elements = (object *)alloca(sizeof(object) * 1);
 c_731309.elements[0] = ((closureN)self_73459)->elements[0];
 
 
-make_string(c_731419, "set-capacity!");
+make_utf8_string_with_len(c_731419, "set-capacity!", 13, 13);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731309, &c_731419, __glo__121array_91list_125_scheme_cyclone_array_91list, r_73195);; 
 }
 
@@ -883,7 +883,7 @@ c_731313.elements = (object *)alloca(sizeof(object) * 1);
 c_731313.elements[0] = ((closureN)self_73461)->elements[0];
 
 
-make_string(c_731416, "new-al");
+make_utf8_string_with_len(c_731416, "new-al", 6, 6);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_731313, &c_731416, __glo__121array_91list_125_scheme_cyclone_array_91list);; 
 }
 
@@ -1136,7 +1136,7 @@ object c_731179 = apply_va(data,  k_73232,2,&c_731180, args_7355_7376);
 return_closcall1(data,  k_73232,  c_731179);
 } else { 
   
-make_string(c_731238, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731238, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73232, &c_731238);}
 }
 ; 
@@ -1463,7 +1463,7 @@ object c_731056 = apply_va(data,  k_73266,2,&c_731057, args_7349_7381);
 return_closcall1(data,  k_73266,  c_731056);
 } else { 
   
-make_string(c_731125, "case-lambda: no cases matched");
+make_utf8_string_with_len(c_731125, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_73266, &c_731125);}
 }
 ; 
@@ -2155,7 +2155,7 @@ static void __lambda_36(void *data, int argc, object self_73526, object r_73328)
   return_closcall1(data,  ((closureN)self_73526)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_73900, "Expected positive integer, in bounds.");
+make_utf8_string_with_len(c_73900, "Expected positive integer, in bounds.", 37, 37);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73526)->elements[0], &c_73900);}
 ; 
 }
@@ -2207,7 +2207,7 @@ static void __lambda_33(void *data, int argc, object self_73528, object r_73335)
   return_closcall1(data,  ((closureN)self_73528)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_73875, "Expected positive integer argument.");
+make_utf8_string_with_len(c_73875, "Expected positive integer argument.", 35, 35);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73528)->elements[0], &c_73875);}
 ; 
 }
@@ -2316,7 +2316,7 @@ c_73842.elements = (object *)alloca(sizeof(object) * 1);
 c_73842.elements[0] = k_73345;
 
 
-make_string(c_73848, "no expansion for");
+make_utf8_string_with_len(c_73848, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_73842, &c_73848, ((closureN)self_73533)->elements[0]);}
 ; 
 }

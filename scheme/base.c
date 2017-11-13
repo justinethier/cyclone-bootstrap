@@ -2948,7 +2948,7 @@ return_closcall3(data,  car(((closureN)self_735985)->elements[5]),  k_732252, Cy
 
 } else { 
   
-make_string(c_7318727, "unknown record field in constructor");
+make_utf8_string_with_len(c_7318727, "unknown record field in constructor", 35, 35);
 return_closcall3(data,  __glo_error_scheme_base,  k_732252, &c_7318727, Cyc_car(data, ls_731117));}
 }
 ; 
@@ -3163,7 +3163,7 @@ return_closcall1(data,  ((closureN)self_735992)->elements[3],  &c_7318439);;
 static void __lambda_1251(void *data, int argc, object self_735993, object k_732404) {
   if( (boolean_f != Cyc_eq(((closureN)self_735993)->elements[1], Cyc_caar(data, Cyc_cddr(data, ((closureN)self_735993)->elements[0])))) ){ 
   
-make_string(c_7318402, "same binding for record rtd and constructor");
+make_utf8_string_with_len(c_7318402, "same binding for record rtd and constructor", 43, 43);
 return_closcall3(data,  __glo_error_scheme_base,  k_732404, &c_7318402, ((closureN)self_735993)->elements[1]);
 } else { 
   return_closcall1(data,  k_732404,  boolean_f);}
@@ -3845,7 +3845,7 @@ c_7318161.elements = (object *)alloca(sizeof(object) * 1);
 c_7318161.elements[0] = ((closureN)self_736022)->elements[1];
 
 
-make_string(c_7318167, "no expansion for");
+make_utf8_string_with_len(c_7318167, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7318161, &c_7318167, ((closureN)self_736022)->elements[0]);}
 ; 
 }
@@ -4860,7 +4860,7 @@ c_7317071.elements = (object *)alloca(sizeof(object) * 1);
 c_7317071.elements[0] = k_732788;
 
 
-make_string(c_7317077, "no expansion for");
+make_utf8_string_with_len(c_7317077, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7317071, &c_7317077, ((closureN)self_736066)->elements[0]);}
 ; 
 }
@@ -6011,7 +6011,7 @@ c_7316700.elements = (object *)alloca(sizeof(object) * 1);
 c_7316700.elements[0] = ((closureN)self_736103)->elements[1];
 
 
-make_string(c_7316706, "no expansion for");
+make_utf8_string_with_len(c_7316706, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7316700, &c_7316706, ((closureN)self_736103)->elements[0]);}
 ; 
 }
@@ -6024,7 +6024,7 @@ return_closcall1(data,  ((closureN)self_736104)->elements[0],  &c_7316705);;
 
 static void __lambda_1127(void *data, int argc, object self_736105, object k_733009) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736105)->elements[0]))) ){ 
-    make_string(c_7316391, "mktmp");
+    make_utf8_string_with_len(c_7316391, "mktmp", 5, 5);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736105)->elements[0])), &c_7316391)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736105)->elements[0])))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736105)->elements[0]))))) ){ 
@@ -6328,7 +6328,7 @@ make_pair(c_7316531,NULL, &c_7316534);
 
 make_pair(c_7316527,((closureN)self_736119)->elements[6], &c_7316531);
 
-make_string(c_7316565, "bind");
+make_utf8_string_with_len(c_7316565, "bind", 4, 4);
 
 make_pair(c_7316587,Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736119)->elements[0])))))))), NULL);
 
@@ -6358,7 +6358,7 @@ return_closcall1(data,  ((closureN)self_736119)->elements[1],  &c_7316517);;
 
 static void __lambda_1112(void *data, int argc, object self_736120, object k_733097) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736120)->elements[0]))) ){ 
-    make_string(c_7316075, "mktmp");
+    make_utf8_string_with_len(c_7316075, "mktmp", 5, 5);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736120)->elements[0])), &c_7316075)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736120)->elements[0])))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736120)->elements[0]))))) ){ 
@@ -6589,7 +6589,7 @@ return_closcall3(data,  __glo_append_scheme_base,  &c_7316196, ((closureN)self_7
 
 static void __lambda_1101(void *data, int argc, object self_736131, object r_733141) {
   
-make_string(c_7316209, "mktmp");
+make_utf8_string_with_len(c_7316209, "mktmp", 5, 5);
 
 make_pair(c_7316259,Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736131)->elements[0])))))))), NULL);
 
@@ -6613,7 +6613,7 @@ return_closcall1(data,  ((closureN)self_736131)->elements[1],  &c_7316201);;
 
 static void __lambda_1100(void *data, int argc, object self_736132, object k_733169) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736132)->elements[0]))) ){ 
-    make_string(c_7315819, "mktmp");
+    make_utf8_string_with_len(c_7315819, "mktmp", 5, 5);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736132)->elements[0])), &c_7315819)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736132)->elements[0])))) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736132)->elements[0]))))) ){ 
@@ -6733,7 +6733,7 @@ make_pair(c_7315950,NULL, &c_7315953);
 
 make_pair(c_7315946,((closureN)self_736136)->elements[4], &c_7315950);
 
-make_string(c_7315993, "bind");
+make_utf8_string_with_len(c_7315993, "bind", 4, 4);
 
 make_pair(c_7316030,Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736136)->elements[0])))))))), NULL);
 
@@ -6763,7 +6763,7 @@ return_closcall1(data,  ((closureN)self_736136)->elements[1],  &c_7315936);;
 
 static void __lambda_1095(void *data, int argc, object self_736137, object k_733236) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736137)->elements[0]))) ){ 
-    make_string(c_7315601, "bind");
+    make_utf8_string_with_len(c_7315601, "bind", 4, 4);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736137)->elements[0])), &c_7315601)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736137)->elements[0])))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736137)->elements[0]))))) ){ 
@@ -6841,7 +6841,7 @@ return_closcall2(data,  ((closureN)self_736138)->elements[2],  &c_7315694, quote
 
 static void __lambda_1093(void *data, int argc, object self_736139, object r_733263) {
   
-make_string(c_7315706, "mktmp");
+make_utf8_string_with_len(c_7315706, "mktmp", 5, 5);
 
 make_pair(c_7315766,Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736139)->elements[0]))))), NULL);
 
@@ -6865,7 +6865,7 @@ return_closcall1(data,  ((closureN)self_736139)->elements[1],  &c_7315699);;
 
 static void __lambda_1092(void *data, int argc, object self_736140, object k_733283) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736140)->elements[0]))) ){ 
-    make_string(c_7315490, "bind");
+    make_utf8_string_with_len(c_7315490, "bind", 4, 4);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736140)->elements[0])), &c_7315490)) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736140)->elements[0])))) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736140)->elements[0]))))) ){ 
@@ -7006,7 +7006,7 @@ return_closcall2(data,  ((closureN)self_736145)->elements[2],  &c_7315397, quote
 
 static void __lambda_1086(void *data, int argc, object self_736146, object r_733335) {
   
-make_string(c_7315410, "bind");
+make_utf8_string_with_len(c_7315410, "bind", 4, 4);
 
 make_pair(c_7315436,Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736146)->elements[0]))), Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736146)->elements[0]))));
 
@@ -7173,7 +7173,7 @@ c_7315360.elements = (object *)alloca(sizeof(object) * 1);
 c_7315360.elements[0] = ((closureN)self_736151)->elements[1];
 
 
-make_string(c_7315366, "no expansion for");
+make_utf8_string_with_len(c_7315366, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7315360, &c_7315366, ((closureN)self_736151)->elements[0]);}
 ; 
 }
@@ -7497,7 +7497,7 @@ c_7315016.elements = (object *)alloca(sizeof(object) * 1);
 c_7315016.elements[0] = k_733459;
 
 
-make_string(c_7315022, "no expansion for");
+make_utf8_string_with_len(c_7315022, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7315016, &c_7315022, ((closureN)self_736165)->elements[0]);}
 ; 
 }
@@ -11039,7 +11039,7 @@ c_7314045.elements[35] = vars_731575;
 c_7314045.elements[36] = x_731577;
 
 
-make_string(c_7314722, "v.");
+make_utf8_string_with_len(c_7314722, "v.", 2, 2);
 return_closcall2(data,  car(((closureN)self_736252)->elements[30]),  &c_7314045, &c_7314722);; 
 }
 
@@ -11897,7 +11897,7 @@ static void __lambda_950(void *data, int argc, object self_736279, object r_7338
 static void __lambda_949(void *data, int argc, object self_736280, object r_733778) {
   if( (boolean_f != r_733778) ){ 
   
-make_string(c_7314315, "multiple ellipses");
+make_utf8_string_with_len(c_7314315, "multiple ellipses", 17, 17);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_736280)->elements[18], &c_7314315, ((closureN)self_736280)->elements[21]);
 } else { 
   
@@ -11934,7 +11934,7 @@ c_7314321.elements[21] = ((closureN)self_736280)->elements[22];
 c_7314321.elements[22] = ((closureN)self_736280)->elements[23];
 
 
-make_string(c_7314593, "lp.");
+make_utf8_string_with_len(c_7314593, "lp.", 3, 3);
 return_closcall2(data,  car(((closureN)self_736280)->elements[20]),  &c_7314321, &c_7314593);}
 ; 
 }
@@ -12200,7 +12200,7 @@ c_7314159.elements[17] = ((closureN)self_736284)->elements[18];
 c_7314159.elements[18] = ((closureN)self_736284)->elements[19];
 
 
-make_string(c_7314305, "w.");
+make_utf8_string_with_len(c_7314305, "w.", 2, 2);
 return_closcall2(data,  car(((closureN)self_736284)->elements[16]),  &c_7314159, &c_7314305);}
 ; 
 }
@@ -12237,7 +12237,7 @@ c_7314164.elements[18] = ((closureN)self_736285)->elements[18];
 c_7314164.elements[19] = w_731581;
 
 
-make_string(c_7314304, "lp.");
+make_utf8_string_with_len(c_7314304, "lp.", 3, 3);
 return_closcall2(data,  car(((closureN)self_736285)->elements[15]),  &c_7314164, &c_7314304);; 
 }
 
@@ -12354,7 +12354,7 @@ c_7314281.elements[0] = ((closureN)self_736289)->elements[0];
 c_7314281.elements[1] = ((closureN)self_736289)->elements[1];
 
 
-make_string(c_7314290, "-ls");
+make_utf8_string_with_len(c_7314290, "-ls", 3, 3);
 
 object c_7314289 = Cyc_string_append(data,(closure)&c_7314281,2,r_733773, &c_7314290);
 return_closcall1(data,(closure)&c_7314281,  c_7314289);; 
@@ -14662,7 +14662,7 @@ return_closcall4(data,  car(((closureN)self_736389)->elements[8]),  &c_7313484, 
 static void __lambda_839(void *data, int argc, object self_736390, object ell_91vars_731529) {
   if( (boolean_f != Cyc_is_null(ell_91vars_731529)) ){ 
   
-make_string(c_7313489, "too many ...'s");
+make_utf8_string_with_len(c_7313489, "too many ...'s", 14, 14);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_736390)->elements[8], &c_7313489);
 } else { 
   
@@ -15176,7 +15176,7 @@ if( (boolean_f != c_7313406) ){
   return_closcall1(data,  ((closureN)self_736416)->elements[1],  ((closureN)self_736416)->elements[2]);
 } else { 
   
-make_string(c_7313415, "too few ...'s");
+make_utf8_string_with_len(c_7313415, "too few ...'s", 13, 13);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_736416)->elements[1], &c_7313415);}
 ; 
 }
@@ -15267,7 +15267,7 @@ c_7313336.elements[6] = ((closureN)self_736421)->elements[8];
 c_7313336.elements[7] = r_733561;
 
 
-make_string(c_7313360, "no expansion for");
+make_utf8_string_with_len(c_7313360, "no expansion for", 16, 16);
 return_closcall4(data,  __glo__list_scheme_base,  &c_7313336, ((closureN)self_736421)->elements[3], &c_7313360, ((closureN)self_736421)->elements[4]);; 
 }
 
@@ -15988,7 +15988,7 @@ static void __lambda_739(void *data, int argc, object self_736449, object r_7340
   return_closcall1(data,  ((closureN)self_736449)->elements[1],  boolean_f);
 } else { 
   
-make_string(c_7312849, "exact non-negative integer required");
+make_utf8_string_with_len(c_7312849, "exact non-negative integer required", 35, 35);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_736449)->elements[1], &c_7312849, ((closureN)self_736449)->elements[0]);}
 ; 
 }
@@ -16472,7 +16472,7 @@ static void __lambda_696(void *data, int argc, object self_736470, object r_7341
   return_closcall1(data,  ((closureN)self_736470)->elements[1],  car(((closureN)self_736470)->elements[2]));
 } else { 
   
-make_string(c_7312684, "exception handler returned");
+make_utf8_string_with_len(c_7312684, "exception handler returned", 26, 26);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_736470)->elements[1], &c_7312684);}
 ; 
 }
@@ -17136,7 +17136,7 @@ c_7312392.elements = (object *)alloca(sizeof(object) * 1);
 c_7312392.elements[0] = ((closureN)self_736501)->elements[1];
 
 
-make_string(c_7312398, "no expansion for");
+make_utf8_string_with_len(c_7312398, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_7312392, &c_7312398, ((closureN)self_736501)->elements[0]);}
 ; 
 }
@@ -17366,7 +17366,7 @@ return_closcall1(data,  k_734294,  &c_7312325);;
 
 static void __lambda_644(void *data, int argc, object self_736513, object r_734288) {
   
-make_string(c_7312306, "step");
+make_utf8_string_with_len(c_7312306, "step", 4, 4);
 
 make_pair(c_7312305,&c_7312306, NULL);
 
@@ -17391,7 +17391,7 @@ static void __lambda_643(void *data, int argc, object self_736514, object r_7342
 static void __lambda_642(void *data, int argc, object self_736515, object k_734315) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736515)->elements[0]))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736515)->elements[0])))) ){ 
-    make_string(c_7312017, "step");
+    make_utf8_string_with_len(c_7312017, "step", 4, 4);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_car(data, Cyc_cdr(data, ((closureN)self_736515)->elements[0]))), &c_7312017)) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, ((closureN)self_736515)->elements[0]))))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736515)->elements[0])))) ){ 
@@ -17512,7 +17512,7 @@ return_closcall2(data,  ((closureN)self_736518)->elements[4],  &c_7312134, quote
 
 static void __lambda_638(void *data, int argc, object self_736519, object r_734370) {
   
-make_string(c_7312150, "step");
+make_utf8_string_with_len(c_7312150, "step", 4, 4);
 
 make_pair(c_7312149,&c_7312150, NULL);
 
@@ -17545,7 +17545,7 @@ return_closcall1(data,  ((closureN)self_736519)->elements[1],  &c_7312139);;
 static void __lambda_637(void *data, int argc, object self_736520, object k_734380) {
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ((closureN)self_736520)->elements[0]))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_car(data, Cyc_cdr(data, ((closureN)self_736520)->elements[0])))) ){ 
-    make_string(c_7311511, "step");
+    make_utf8_string_with_len(c_7311511, "step", 4, 4);
 if( (boolean_f != equalp(Cyc_car(data, Cyc_car(data, Cyc_cdr(data, ((closureN)self_736520)->elements[0]))), &c_7311511)) ){ 
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, ((closureN)self_736520)->elements[0]))))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_736520)->elements[0])))) ){ 
@@ -18389,9 +18389,22 @@ static void __lambda_603(void *data, int argc, object self_736554, object r_7343
 }
 
 static void __lambda_602(void *data, int argc, closure _, object k, object count, object fill) { object s = NULL;
+        char ch_buf[5];
+        char_type c;
+        int buflen, num_cp, len;
         Cyc_check_int(data, count);
-        char c = obj_obj2char(fill);
-        int len = obj_obj2int(count);
+        if (!obj_is_char(fill)) {
+          Cyc_rt_raise2(data, "Expected character buf received", fill);
+        }
+        c = obj_obj2char(fill);
+        if (!c) {
+          buflen = 1;
+        } else {
+          Cyc_utf8_encode_char(ch_buf, 5, c);
+          buflen = strlen(ch_buf);
+        }
+        num_cp = obj_obj2int(count);
+        len = num_cp * buflen;
         if (len >= MAX_STACK_OBJ) {
           int heap_grown;
           s = gc_alloc(((gc_thread_data *)data)->heap, 
@@ -18403,6 +18416,7 @@ static void __lambda_602(void *data, int argc, closure _, object k, object count
           ((string_type *) s)->hdr.grayed = 0;
           ((string_type *) s)->tag = string_tag; 
           ((string_type *) s)->len = len;
+          ((string_type *) s)->num_cp = num_cp;
           ((string_type *) s)->str = (((char *)s) + sizeof(string_type));
         } else {
           s = alloca(sizeof(string_type));
@@ -18410,9 +18424,18 @@ static void __lambda_602(void *data, int argc, closure _, object k, object count
           ((string_type *)s)->hdr.grayed = 0;
           ((string_type *)s)->tag = string_tag; 
           ((string_type *)s)->len = len;
+          ((string_type *)s)->num_cp = num_cp;
           ((string_type *)s)->str = alloca(sizeof(char) * (len + 1));
         }
-        memset(((string_type *)s)->str, c, len);
+        if (num_cp == 1) { /* Fast path */
+          memset(((string_type *)s)->str, ch_buf[0], len);
+        } else {
+          char *buf = ((string_type *)s)->str;
+          int bi, si, slen = buflen;
+          for (bi = 0, si = 0; bi < len; bi++, si++) {
+            buf[bi] = ch_buf[si % slen];
+          }
+        }
         ((string_type *)s)->str[len] = '\0';
         return_closcall1(data, k, s);
        }
@@ -25586,7 +25609,7 @@ static void __lambda_186(void *data, int argc, object self_736885, object k_7354
   if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, x_732088))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, Cyc_cddr(data, x_732088)))) ){ 
   
-make_string(c_738682, "too many forms in do iterator");
+make_utf8_string_with_len(c_738682, "too many forms in do iterator", 29, 29);
 return_closcall3(data,  __glo_error_scheme_base,  k_735423, &c_738682, x_732088);
 } else { 
   return_closcall1(data,  k_735423,  Cyc_car(data, Cyc_cddr(data, x_732088)));}
@@ -25988,7 +26011,7 @@ return_closcall1(data,  ((closureN)self_736903)->elements[1],  &c_738473);;
 static void __lambda_166(void *data, int argc, object self_736904, object k_735451) {
   if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_736904)->elements[0]))) ){ 
   
-make_string(c_738465, "no unless body");
+make_utf8_string_with_len(c_738465, "no unless body", 14, 14);
 return_closcall3(data,  __glo_error_scheme_base,  k_735451, &c_738465, ((closureN)self_736904)->elements[0]);
 } else { 
   return_closcall1(data,  k_735451,  boolean_f);}
@@ -25998,7 +26021,7 @@ return_closcall3(data,  __glo_error_scheme_base,  k_735451, &c_738465, ((closure
 static void __lambda_165(void *data, int argc, object self_736905, object k_735454) {
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_736905)->elements[0]))) ){ 
   
-make_string(c_738453, "empty unless");
+make_utf8_string_with_len(c_738453, "empty unless", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_735454, &c_738453, ((closureN)self_736905)->elements[0]);
 } else { 
   return_closcall1(data,  k_735454,  boolean_f);}
@@ -26081,7 +26104,7 @@ return_closcall1(data,  ((closureN)self_736907)->elements[1],  &c_738419);;
 static void __lambda_161(void *data, int argc, object self_736908, object k_735475) {
   if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_736908)->elements[0]))) ){ 
   
-make_string(c_738411, "no when body");
+make_utf8_string_with_len(c_738411, "no when body", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_735475, &c_738411, ((closureN)self_736908)->elements[0]);
 } else { 
   return_closcall1(data,  k_735475,  boolean_f);}
@@ -26091,7 +26114,7 @@ return_closcall3(data,  __glo_error_scheme_base,  k_735475, &c_738411, ((closure
 static void __lambda_160(void *data, int argc, object self_736909, object k_735478) {
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_736909)->elements[0]))) ){ 
   
-make_string(c_738399, "empty when");
+make_utf8_string_with_len(c_738399, "empty when", 10, 10);
 return_closcall3(data,  __glo_error_scheme_base,  k_735478, &c_738399, ((closureN)self_736909)->elements[0]);
 } else { 
   return_closcall1(data,  k_735478,  boolean_f);}
@@ -26778,7 +26801,7 @@ static void __lambda_127(void *data, int argc, object self_736940, object r_7355
   if( (boolean_f != r_735585) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, ((closureN)self_736940)->elements[1]))) ){ 
   
-make_string(c_737975, "non-final else in cond");
+make_utf8_string_with_len(c_737975, "non-final else in cond", 22, 22);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_736940)->elements[2], &c_737975, ((closureN)self_736940)->elements[1]);
 } else { 
   
@@ -27357,7 +27380,7 @@ static void __lambda_98(void *data, int argc, object self_736968, object r_73573
 static void __lambda_97(void *data, int argc, object self_736969, object k_735741) {
   if( (boolean_f != Cyc_is_null(((closureN)self_736969)->elements[0])) ){ 
   
-make_string(c_737926, ".sld");
+make_utf8_string_with_len(c_737926, ".sld", 4, 4);
 return_closcall1(data,  k_735741,  &c_737926);
 } else { 
   return_closcall1(data,  k_735741,  Cyc_car(data, ((closureN)self_736969)->elements[0]));}
@@ -27461,7 +27484,7 @@ return_closcall1(data,(closure)&c_737884,  &c_737903);;
 
 static void __lambda_92(void *data, int argc, object self_736974, object r_735730) {
   
-make_string(c_737909, "/");
+make_utf8_string_with_len(c_737909, "/", 1, 1);
 
 object c_737908 = Cyc_string_append(data,  ((closureN)self_736974)->elements[0],2,&c_737909, r_735730);
 return_closcall1(data,  ((closureN)self_736974)->elements[0],  c_737908);; 
@@ -27479,7 +27502,7 @@ object c_737899 = Cyc_number2string2(data,  k_735731,1,((closureN)self_736975)->
 return_closcall1(data,  k_735731,  c_737899);
 } else { 
   
-make_string(c_737902, "Unexpected type in import set");
+make_utf8_string_with_len(c_737902, "Unexpected type in import set", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_735731, &c_737902);}
 }
 ; 
@@ -27591,7 +27614,7 @@ return_closcall1(data,(closure)&c_737856,  c_737866);
 
 static void __lambda_85(void *data, int argc, object self_736981, object r_735714) {
   
-make_string(c_737862, "/");
+make_utf8_string_with_len(c_737862, "/", 1, 1);
 
 object c_737861 = Cyc_string_append(data,  ((closureN)self_736981)->elements[1],3,r_735714, &c_737862, ((closureN)self_736981)->elements[0]);
 return_closcall1(data,  ((closureN)self_736981)->elements[1],  c_737861);; 
@@ -27612,7 +27635,7 @@ static void __lambda_84(void *data, int argc, object self_736982, object k_73571
 static void __lambda_83(void *data, int argc, object self_736983, object k_735734) {
   if( (boolean_f != Cyc_is_null(((closureN)self_736983)->elements[0])) ){ 
   
-make_string(c_737810, ".sld");
+make_utf8_string_with_len(c_737810, ".sld", 4, 4);
 return_closcall1(data,  k_735734,  &c_737810);
 } else { 
   return_closcall1(data,  k_735734,  Cyc_car(data, ((closureN)self_736983)->elements[0]));}
@@ -27761,7 +27784,7 @@ return_closcall2(data,  car(((closureN)self_736989)->elements[1]),  &c_737713, C
   return_closcall2(data,  car(((closureN)self_736989)->elements[0]),  k_735674, Cyc_cadr(data, x_732133));
 } else { 
   
-make_string(c_737731, "cond-expand: bad feature");
+make_utf8_string_with_len(c_737731, "cond-expand: bad feature", 24, 24);
 return_closcall3(data,  __glo_error_scheme_base,  k_735674, &c_737731, x_732133);}
 }
 }
@@ -27872,7 +27895,7 @@ static void __lambda_71(void *data, int argc, object self_736995, object k_73565
   if( (boolean_f != Cyc_eq(quote__else, Cyc_caar(data, ls_732131))) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cdr(data, ls_732131))) ){ 
   
-make_string(c_737634, "cond-expand: else in non-final position");
+make_utf8_string_with_len(c_737634, "cond-expand: else in non-final position", 39, 39);
 return_closcall2(data,  __glo_error_scheme_base,  k_735654, &c_737634);
 } else { 
   
@@ -27908,7 +27931,7 @@ return_closcall2(data,  car(((closureN)self_736995)->elements[0]),  &c_737650, C
 
 } else { 
   
-make_string(c_737673, "cond-expand: bad clause");
+make_utf8_string_with_len(c_737673, "cond-expand: bad clause", 23, 23);
 return_closcall3(data,  __glo_error_scheme_base,  k_735654, &c_737673, Cyc_car(data, ls_732131));}
 }
 ; 
@@ -28347,7 +28370,7 @@ c_737417.elements[2] = ((closureN)self_737018)->elements[2];
 return_closcall2(data,  ((closureN)self_737018)->elements[2],  &c_737417, quote_let);
 } else { 
   
-make_string(c_737457, "bad let* syntax");
+make_utf8_string_with_len(c_737457, "bad let* syntax", 15, 15);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_737018)->elements[1], &c_737457);}
 ; 
 }
@@ -28434,7 +28457,7 @@ return_closcall1(data,  ((closureN)self_737024)->elements[1],  &c_737379);;
 static void __lambda_38(void *data, int argc, object self_737025, object k_735825) {
   if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_737025)->elements[0]))) ){ 
   
-make_string(c_737363, "no let* body");
+make_utf8_string_with_len(c_737363, "no let* body", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_735825, &c_737363, ((closureN)self_737025)->elements[0]);
 } else { 
   return_closcall1(data,  k_735825,  boolean_f);}
@@ -28444,7 +28467,7 @@ return_closcall3(data,  __glo_error_scheme_base,  k_735825, &c_737363, ((closure
 static void __lambda_37(void *data, int argc, object self_737026, object k_735828) {
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_737026)->elements[0]))) ){ 
   
-make_string(c_737351, "empty let*");
+make_utf8_string_with_len(c_737351, "empty let*", 10, 10);
 return_closcall3(data,  __glo_error_scheme_base,  k_735828, &c_737351, ((closureN)self_737026)->elements[0]);
 } else { 
   return_closcall1(data,  k_735828,  boolean_f);}
@@ -28616,7 +28639,7 @@ c_737224.elements[3] = ((closureN)self_737032)->elements[3];
 return_closcall3(data,  __glo_map_scheme_base,  &c_737224, primitive_car, ((closureN)self_737032)->elements[0]);
 } else { 
   
-make_string(c_737325, "bad let syntax");
+make_utf8_string_with_len(c_737325, "bad let syntax", 14, 14);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_737032)->elements[2], &c_737325, ((closureN)self_737032)->elements[1]);}
 ; 
 }
@@ -28793,7 +28816,7 @@ static void __lambda_21(void *data, int argc, object self_737041, object r_73588
   return_closcall1(data,  ((closureN)self_737041)->elements[0],  boolean_f);
 } else { 
   
-make_string(c_737218, "bad let bindings");
+make_utf8_string_with_len(c_737218, "bad let bindings", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_737041)->elements[0], &c_737218);}
 ; 
 }
@@ -28809,7 +28832,7 @@ static void __lambda_20(void *data, int argc, object self_737042, object k_73588
 static void __lambda_19(void *data, int argc, object self_737043, object k_735886) {
   if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_737043)->elements[0]))) ){ 
   
-make_string(c_737188, "no let body");
+make_utf8_string_with_len(c_737188, "no let body", 11, 11);
 return_closcall3(data,  __glo_error_scheme_base,  k_735886, &c_737188, ((closureN)self_737043)->elements[0]);
 } else { 
   return_closcall1(data,  k_735886,  boolean_f);}
@@ -28819,7 +28842,7 @@ return_closcall3(data,  __glo_error_scheme_base,  k_735886, &c_737188, ((closure
 static void __lambda_18(void *data, int argc, object self_737044, object k_735889) {
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_737044)->elements[0]))) ){ 
   
-make_string(c_737176, "empty let");
+make_utf8_string_with_len(c_737176, "empty let", 9, 9);
 return_closcall3(data,  __glo_error_scheme_base,  k_735889, &c_737176, ((closureN)self_737044)->elements[0]);
 } else { 
   return_closcall1(data,  k_735889,  boolean_f);}
@@ -29078,7 +29101,7 @@ c_737065.elements = (object *)alloca(sizeof(object) * 1);
 c_737065.elements[0] = k_735936;
 
 
-make_string(c_737082, "version-");
+make_utf8_string_with_len(c_737082, "version-", 8, 8);
 
 object c_737081 = Cyc_string_append(data,(closure)&c_737065,2,&c_737082, __glo__85version_91number_85_scheme_cyclone_common);
 return_closcall1(data,(closure)&c_737065,  c_737081);; 

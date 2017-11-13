@@ -424,7 +424,7 @@ c_7363.elements = (object *)alloca(sizeof(object) * 1);
 c_7363.elements[0] = ((closureN)self_7341)->elements[0];
 
 
-make_string(c_7394, "unbox");
+make_utf8_string_with_len(c_7394, "unbox", 5, 5);
 return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_7363, &c_7394, __glo_box_91type_srfi_111, r_7322);; 
 }
 
@@ -471,7 +471,7 @@ c_7369.elements = (object *)alloca(sizeof(object) * 1);
 c_7369.elements[0] = ((closureN)self_7344)->elements[0];
 
 
-make_string(c_7391, "set-box!");
+make_utf8_string_with_len(c_7391, "set-box!", 8, 8);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_7369, &c_7391, __glo_box_91type_srfi_111, r_7319);; 
 }
 
@@ -503,7 +503,7 @@ c_7373.elements = (object *)alloca(sizeof(object) * 1);
 c_7373.elements[0] = ((closureN)self_7346)->elements[0];
 
 
-make_string(c_7388, "box");
+make_utf8_string_with_len(c_7388, "box", 3, 3);
 return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_7373, &c_7388, __glo_box_91type_srfi_111);; 
 }
 

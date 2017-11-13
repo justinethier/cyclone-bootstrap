@@ -632,7 +632,7 @@ c_73406.elements = (object *)alloca(sizeof(object) * 1);
 c_73406.elements[0] = args_7356;
 
 
-make_string(c_73581, "-A");
+make_utf8_string_with_len(c_73581, "-A", 2, 2);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_73406, args_7356, &c_73581);; 
 }
 
@@ -650,7 +650,7 @@ c_73408.elements[0] = append_91dirs_7357;
 c_73408.elements[1] = ((closureN)self_73173)->elements[0];
 
 
-make_string(c_73580, "-I");
+make_utf8_string_with_len(c_73580, "-I", 2, 2);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_73408, ((closureN)self_73173)->elements[0], &c_73580);; 
 }
 
@@ -762,7 +762,7 @@ c_73462.elements[0] = ((closureN)self_73178)->elements[0];
 c_73462.elements[1] = ((closureN)self_73178)->elements[1];
 
 
-make_string(c_73574, "-p");
+make_utf8_string_with_len(c_73574, "-p", 2, 2);
 return_closcall1(data,(closure)&c_73462,  memberp(data, &c_73574, ((closureN)self_73178)->elements[0]));; 
 }
 
@@ -771,7 +771,7 @@ static void __lambda_62(void *data, int argc, object self_73179, object r_7380) 
   
 mclosure0(c_73464, (function_type)__lambda_46);c_73464.num_args = 1;
 
-make_string(c_73488, "-p");
+make_utf8_string_with_len(c_73488, "-p", 2, 2);
 return_closcall3(data,  __glo_collect_91opt_91values,  &c_73464, ((closureN)self_73179)->elements[0], &c_73488);
 } else { 
   
@@ -787,7 +787,7 @@ c_73490.elements[0] = ((closureN)self_73179)->elements[0];
 c_73490.elements[1] = ((closureN)self_73179)->elements[1];
 
 
-make_string(c_73570, "-h");
+make_utf8_string_with_len(c_73570, "-h", 2, 2);
 return_closcall1(data,(closure)&c_73490,  memberp(data, &c_73570, ((closureN)self_73179)->elements[0]));}
 ; 
 }
@@ -837,7 +837,7 @@ c_73504.elements[0] = ((closureN)self_73181)->elements[0];
 c_73504.elements[1] = ((closureN)self_73181)->elements[1];
 
 
-make_string(c_73566, "-v");
+make_utf8_string_with_len(c_73566, "-v", 2, 2);
 return_closcall1(data,(closure)&c_73504,  memberp(data, &c_73566, ((closureN)self_73181)->elements[0]));}
 ; 
 }
@@ -859,7 +859,7 @@ c_73507.elements[0] = ((closureN)self_73182)->elements[0];
 c_73507.elements[1] = ((closureN)self_73182)->elements[1];
 
 
-make_string(c_73562, "-vn");
+make_utf8_string_with_len(c_73562, "-vn", 3, 3);
 return_closcall1(data,(closure)&c_73507,  memberp(data, &c_73562, ((closureN)self_73182)->elements[0]));}
 ; 
 }
@@ -1005,7 +1005,7 @@ return_closcall2(data,  __glo_reverse_scheme_base,  &c_73529, ((closureN)self_73
 
 static void __lambda_50(void *data, int argc, object self_73191, object r_73104) {
   
-make_string(c_73541, "-s");
+make_utf8_string_with_len(c_73541, "-s", 2, 2);
 
 make_pair(c_73540,&c_73541,NULL);
 
@@ -1031,7 +1031,7 @@ static void __lambda_47(void *data, int argc, object self_73194, object k_73108)
   return_closcall1(data,  k_73108,  ((closureN)self_73194)->elements[1]);
 } else { 
   
-make_string(c_73499, "--help");
+make_utf8_string_with_len(c_73499, "--help", 6, 6);
 return_closcall1(data,  k_73108,  memberp(data, &c_73499, ((closureN)self_73194)->elements[0]));}
 ; 
 }
@@ -1186,7 +1186,7 @@ return_closcall1(data,  k_73112,  c_73446);}
 }
 
 static void __lambda_35(void *data, int argc, object self_73205, object k_73115) {
-    make_string(c_73417, "-s");
+    make_utf8_string_with_len(c_73417, "-s", 2, 2);
 if( (boolean_f != memberp(data, &c_73417, ((closureN)self_73205)->elements[0])) ){ 
   return_closcall1(data,  k_73115,  Cyc_set_cell(data, ((closureN)self_73205)->elements[1], boolean_t));
 } else { 
@@ -1208,7 +1208,7 @@ c_73400.elements = (object *)alloca(sizeof(object) * 1);
 c_73400.elements[0] = k_73119;
 
 
-make_string(c_73403, "\nUsage: icyc [OPTIONS] [FILENAME]\nStarts the interactive interpreter for Cyclone Scheme.\n\nOptions:\n\n -A directory    Append directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -I directory    Prepend directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -p sexp         Evaluate the given S-expression and exit\n -s              Run as a script, without the normal icyc banner\n -h, --help      Display usage information\n -v              Display version information\n -vn             Display version number\n");
+make_utf8_string_with_len(c_73403, "\nUsage: icyc [OPTIONS] [FILENAME]\nStarts the interactive interpreter for Cyclone Scheme.\n\nOptions:\n\n -A directory    Append directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -I directory    Prepend directory to the list of directories that are searched \n                 in order to locate imported libraries.\n -p sexp         Evaluate the given S-expression and exit\n -s              Run as a script, without the normal icyc banner\n -h, --help      Display usage information\n -v              Display version information\n -vn             Display version number\n", 624, 624);
 return_closcall2(data,  __glo_display_scheme_write,  &c_73400, &c_73403);; 
 }
 
@@ -1298,7 +1298,7 @@ c_73336.elements = (object *)alloca(sizeof(object) * 1);
 c_73336.elements[0] = k_73136;
 
 
-make_string(c_73359, "cyclone> ");
+make_utf8_string_with_len(c_73359, "cyclone> ", 9, 9);
 return_closcall2(data,  __glo_display_scheme_write,  &c_73336, &c_73359);; 
 }
 
@@ -1362,7 +1362,7 @@ c_73344.elements = (object *)alloca(sizeof(object) * 1);
 c_73344.elements[0] = ((closureN)self_73213)->elements[1];
 
 
-make_string(c_73349, "\n");
+make_utf8_string_with_len(c_73349, "\n", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  &c_73344, &c_73349);
 } else { 
   
@@ -1475,7 +1475,7 @@ c_73248.elements[1] = ((closureN)self_73220)->elements[1];
 c_73248.elements[2] = obj_7372;
 
 
-make_string(c_73328, "Error: ");
+make_utf8_string_with_len(c_73328, "Error: ", 7, 7);
 return_closcall2(data,  __glo_display_scheme_write,  &c_73248, &c_73328);; 
 }
 
@@ -1596,7 +1596,7 @@ return_closcall2(data,  __glo_write_scheme_write,  &c_73305, o_7373);;
 
 static void __lambda_8(void *data, int argc, object self_73228, object r_73162) {
   
-make_string(c_73308, " ");
+make_utf8_string_with_len(c_73308, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_73228)->elements[0], &c_73308);; 
 }
 
@@ -1704,7 +1704,7 @@ static void __lambda_1(void *data, int argc, object self_73235, object k_73168) 
   return_closcall1(data,  k_73168,  boolean_f);
 } else { 
   
-make_string(c_73274, ": ");
+make_utf8_string_with_len(c_73274, ": ", 2, 2);
 return_closcall2(data,  __glo_display_scheme_write,  k_73168, &c_73274);}
 ; 
 }
