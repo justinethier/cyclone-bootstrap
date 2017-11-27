@@ -469,6 +469,13 @@ extern object __glo_setup_91environment_scheme_eval;
 extern object __glo__75import_scheme_eval;
 extern object __glo_imported_127_scheme_eval;
 extern object __glo__75set_91import_91dirs_67_scheme_eval;
+extern object __glo_macro_117macro_127_scheme_eval;
+extern object __glo_macro_117expand_scheme_eval;
+extern object __glo_macro_117add_67_scheme_eval;
+extern object __glo_macro_117cleanup_scheme_eval;
+extern object __glo_macro_117load_91env_67_scheme_eval;
+extern object __glo_macro_117get_91env_scheme_eval;
+extern object __glo_macro_117get_91defined_91macros_scheme_eval;
 extern object __glo_make_91hash_91table_srfi_69;
 extern object __glo_hash_91table_127_srfi_69;
 extern object __glo_alist_91_125hash_91table_srfi_69;
@@ -551,6 +558,7 @@ extern object __glo_procedure_91parameters_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91body_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91environment_191_191inline_191_191_scheme_eval;
 extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval;
+extern object __glo_macro_117macro_127_191_191inline_191_191_scheme_eval;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
 static void __lambda_69(void *data, int argc, closure _,object args_7356) ;
