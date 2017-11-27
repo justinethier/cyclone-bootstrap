@@ -301,6 +301,8 @@ extern object __glo_if_91syntax_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
 extern object __glo_pair_91_125list_scheme_cyclone_util;
+extern object __glo_define_91lambda_127_scheme_cyclone_util;
+extern object __glo_define_91_125lambda_scheme_cyclone_util;
 extern object __glo_formals_91_125list_scheme_cyclone_util;
 extern object __glo_lambda_91formals_91_125list_scheme_cyclone_util;
 extern object __glo_lambda_91varargs_127_scheme_cyclone_util;
