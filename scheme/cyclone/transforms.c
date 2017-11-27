@@ -543,9 +543,6 @@ extern object __glo_lib_117idb_117ids_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117lookup_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117entry_91_125library_91name_scheme_cyclone_libraries;
 extern object __glo_lib_117idb_117entry_91_125library_91id_scheme_cyclone_libraries;
-extern object __glo_define_91syntax_127_scheme_cyclone_macros;
-extern object __glo_let_91syntax_127_scheme_cyclone_macros;
-extern object __glo_letrec_91syntax_127_scheme_cyclone_macros;
 extern object __glo_macro_117macro_127_scheme_cyclone_macros;
 extern object __glo_macro_117expand_scheme_cyclone_macros;
 extern object __glo_macro_117add_67_scheme_cyclone_macros;
@@ -574,6 +571,9 @@ extern object __glo_prim_117udf_127_scheme_cyclone_primitives;
 extern object __glo_prim_117add_91udf_67_scheme_cyclone_primitives;
 extern object __glo_prim_117func_91_125prim_scheme_cyclone_primitives;
 extern object __glo_pretty_91print_scheme_cyclone_pretty_91print;
+extern object __glo_define_91syntax_127_scheme_cyclone_util;
+extern object __glo_let_91syntax_127_scheme_cyclone_util;
+extern object __glo_letrec_91syntax_127_scheme_cyclone_util;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_if_91syntax_127_scheme_cyclone_util;
@@ -10230,7 +10230,7 @@ c_734456.elements[3] = ((closureN)self_732831)->elements[3];
 c_734456.elements[4] = ((closureN)self_732831)->elements[4];
 c_734456.elements[5] = ((closureN)self_732831)->elements[5];
 
-return_closcall2(data,  __glo_define_91syntax_127_scheme_cyclone_macros,  &c_734456, Cyc_car(data, ((closureN)self_732831)->elements[1]));}
+return_closcall2(data,  __glo_define_91syntax_127_scheme_cyclone_util,  &c_734456, Cyc_car(data, ((closureN)self_732831)->elements[1]));}
 ; 
 }
 
@@ -10556,7 +10556,7 @@ c_734463.elements = (object *)alloca(sizeof(object) * 2);
 c_734463.elements[0] = ((closureN)self_732846)->elements[0];
 c_734463.elements[1] = k_731852;
 
-return_closcall2(data,  __glo_let_91syntax_127_scheme_cyclone_macros,  &c_734463, Cyc_car(data, ((closureN)self_732846)->elements[0]));}
+return_closcall2(data,  __glo_let_91syntax_127_scheme_cyclone_util,  &c_734463, Cyc_car(data, ((closureN)self_732846)->elements[0]));}
 ; 
 }
 
@@ -11114,7 +11114,7 @@ c_734006.elements[2] = ((closureN)self_732870)->elements[2];
 c_734006.elements[3] = ((closureN)self_732870)->elements[3];
 c_734006.elements[4] = ((closureN)self_732870)->elements[4];
 
-return_closcall2(data,  __glo_define_91syntax_127_scheme_cyclone_macros,  &c_734006, ((closureN)self_732870)->elements[1]);}
+return_closcall2(data,  __glo_define_91syntax_127_scheme_cyclone_util,  &c_734006, ((closureN)self_732870)->elements[1]);}
 ; 
 }
 
@@ -11173,7 +11173,7 @@ c_734173.elements[2] = ((closureN)self_732871)->elements[2];
 c_734173.elements[3] = ((closureN)self_732871)->elements[3];
 c_734173.elements[4] = ((closureN)self_732871)->elements[4];
 
-return_closcall2(data,  __glo_let_91syntax_127_scheme_cyclone_macros,  &c_734173, ((closureN)self_732871)->elements[1]);}
+return_closcall2(data,  __glo_let_91syntax_127_scheme_cyclone_util,  &c_734173, ((closureN)self_732871)->elements[1]);}
 ; 
 }
 
