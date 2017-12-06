@@ -384,10 +384,10 @@
 ;; - env => Environment used to expand macros
 ;;
 (define (analyze exp env)
-;(newline)
-;(display "/* ")
-;(write (list 'analyze exp))
-;(display " */")
+;;(newline)
+;;(display "/* ")
+;;(write (list 'analyze exp))
+;;(display " */")
   (cond ((self-evaluating? exp) 
          (analyze-self-evaluating exp))
         ((quoted? exp) (analyze-quoted exp))
@@ -459,8 +459,10 @@
     ;; TODO: probably just create a fresh env for renames
     ;; TODO: expand, do we need to clean as well?
     ;; TODO: run results back through analyze: (analyze (expand env? rename-env?
-;(write `(DEBUG ,cleaned))
-;(newline)
+;;(display "/* ")
+;;(write `(DEBUG ,cleaned))
+;;(display "*/ ")
+;;(newline)
     (analyze cleaned a-env)))
 
 (define (analyze-syntax exp a-env)
@@ -848,8 +850,10 @@
       (current-error-port))
     (newline (current-error-port)))
   ;(log exp)
-;(write `(expand ,exp))
-;(newline)
+;;(display "/* ")
+;;(write `(expand ,exp))
+;;(display "*/ ")
+;;(newline)
   (cond
     ((const? exp)      exp)
     ((prim? exp)       exp)
@@ -918,14 +922,24 @@
                   (let* ((name (car b))
                          (binding (cadr b))
                          (binding-body (cadr binding)))
+;(define tmp (env:lookup (car binding) env #f))
+;(display "/* ")
+;(write `(DEBUG expand let-syntax 
+;  ,(if (tagged-list? 'macro tmp)
+;       (Cyc-get-cvar (cadr tmp))
+;       tmp)
+;  ,syntax-rules))
+;(display "*/ ")
+;(newline)
                     (cons 
                       name 
                       (list 
                         'macro
-                        (if (tagged-list? 'syntax-rules binding)
-                                     ;; TODO: is this ok?
-                                     (cadr (_expand binding env rename-env local-env))
-                                     binding-body)))))
+                        ;; Broken for renames, replace w/below: (if (tagged-list? 'syntax-rules binding)
+                        (if (macro:syntax-rules? (env:lookup (car binding) env #f))
+                            ;; TODO: is this ok?
+                            (cadr (_expand binding env rename-env local-env))
+                            binding-body)))))
                 bindings))
             (new-local-macro-env (append bindings-as-macros local-env))
            )
@@ -939,8 +953,10 @@
                      (if local
                          (cdr local)
                          (env:lookup (car exp) env #f)))))
-;(write `(app DEBUG ,(car exp) ,val))
-;(newline)
+;;(display "/* ")
+;;(write `(app DEBUG ,(car exp) ,val))
+;;(display "*/ ")
+;;(newline)
           (cond
            ((tagged-list? 'macro val)
             (_expand ; Could expand into another macro
@@ -968,6 +984,13 @@
           exp))))
     (else
       (error "unknown exp: " exp))))
+
+(define (macro:syntax-rules? exp)
+  (eq? 
+    syntax-rules
+    (if (tagged-list? 'macro exp)
+        (Cyc-get-cvar (cadr exp))
+        exp)))
 
 ;; Nicer interface to expand-body
 (define (expand-lambda-body exp env rename-env)
