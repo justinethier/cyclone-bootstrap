@@ -404,6 +404,9 @@
         ((and (tagged-list? 'let-syntax exp)
               (not (null? (cdr exp))))
          (analyze-let-syntax exp env))
+        ((and (tagged-list? 'letrec-syntax exp)
+              (not (null? (cdr exp))))
+         (analyze-letrec-syntax exp env))
         ((and (if? exp) 
               (not (null? (cdr exp))))
          (analyze-if exp env))
@@ -463,6 +466,13 @@
 ;;(write `(DEBUG ,cleaned))
 ;;(display "*/ ")
 ;;(newline)
+    (analyze cleaned a-env)))
+
+(define (analyze-letrec-syntax exp a-env)
+  (let* ((rename-env (env:extend-environment '() '() '()))
+         (expanded (expand exp a-env rename-env))
+         (cleaned (macro:cleanup expanded rename-env))
+        )
     (analyze cleaned a-env)))
 
 (define (analyze-syntax exp a-env)
@@ -944,15 +954,42 @@
 ;(trace:error `(let-syntax ,new-local-macro-env))
        (_expand body env rename-env new-local-macro-env) ;; TODO: new-local-macro-env 
        ))
+    ;; TODO: does not work yet:
+    ((letrec-syntax? exp)
+     (let* ((body (cons 'begin (cddr exp)))
+            (body-env (env:extend-environment '() '() env))
+            (bindings (cadr exp))
+            ;(new-local-macro-env (append bindings-as-macros local-env))
+           )
+       (for-each
+         (lambda (b)
+           (let* ((name (car b))
+                  (binding (cadr b))
+                  (binding-body (cadr binding))
+                  (macro-val
+                    (list 
+                      'macro
+                      (if (macro:syntax-rules? (env:lookup (car binding) body-env #f))
+                          (cadr (_expand binding body-env rename-env local-env))
+                          binding-body))))
+           (env:define-variable! name macro-val) body-env))
+         bindings)
+       (_expand body body-env rename-env local-env) ;;new-local-macro-env) ;; TODO: new-local-macro-env 
+       ))
     ((app? exp)
      (cond
        ((symbol? (car exp))
         (let ((val (let ((local (assoc (car exp) local-env)))
                      (if local
                          (cdr local)
-                         (env:lookup (car exp) env #f)))))
+                         (let ((v (env:lookup (car exp) env #f)))
+                           v ;; TODO: below was for looking up a renamed macro. may want to consider using it
+                             ;; in the symbol condition below...
+                           #;(if v
+                               v
+                               (env:lookup (car exp) rename-env #f)))))))
 ;;(display "/* ")
-;;(write `(app DEBUG ,(car exp) ,val))
+;;(write `(app DEBUG ,(car exp) ,val ,local-env ,rename-env ,(env:lookup (car exp) env #f)))
 ;;(display "*/ ")
 ;;(newline)
           (cond
@@ -968,6 +1005,21 @@
               env 
               rename-env 
               local-env))
+;; TODO: if we are doing this, only want to do so if the original variable is a macro.
+;;       this is starting to get overly complicated though.
+;; if nothing else should encapsulate the above lookup into a function and call that
+;; in both places (above and here) to simplify things
+;; 
+;;           ((and (symbol? val) 
+;;                 (not (eq? val (car exp))))
+;;            ;; Original macro symbol was renamed. So try again with the orignal symbol
+;;(display "/* ")
+;;(write `(app DEBUG-syms ,(car exp) ,val ,local-env ,(cdr exp)))
+;;(display "*/ ")
+;;(newline)
+;;            (_expand 
+;;              (cons val (cdr exp))
+;;              env rename-env local-env))
            (else
             (map
               (lambda (expr) (_expand expr env rename-env local-env))
