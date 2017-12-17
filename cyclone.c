@@ -447,6 +447,17 @@ extern object __glo_setup_91environment_scheme_eval;
 extern object __glo__75import_scheme_eval;
 extern object __glo_imported_127_scheme_eval;
 extern object __glo__75set_91import_91dirs_67_scheme_eval;
+extern object __glo__85defined_91macros_85_scheme_eval;
+extern object __glo_get_91macros_scheme_eval;
+extern object __glo_macro_117macro_127_scheme_eval;
+extern object __glo_macro_117expand_scheme_eval;
+extern object __glo_macro_117add_67_scheme_eval;
+extern object __glo_macro_117cleanup_scheme_eval;
+extern object __glo_macro_117load_91env_67_scheme_eval;
+extern object __glo_macro_117get_91env_scheme_eval;
+extern object __glo_macro_117get_91defined_91macros_scheme_eval;
+extern object __glo_expand_scheme_eval;
+extern object __glo_expand_91lambda_91body_scheme_eval;
 extern object __glo_call_91with_91input_91file_scheme_file;
 extern object __glo_call_91with_91output_91file_scheme_file;
 extern object __glo_with_91input_91from_91file_scheme_file;
@@ -480,12 +491,17 @@ extern object __glo__85version_91number_85_scheme_cyclone_common;
 extern object __glo__85version_91name_85_scheme_cyclone_common;
 extern object __glo__85version_91banner_85_scheme_cyclone_common;
 extern object __glo__85c_91file_91header_91comment_85_scheme_cyclone_common;
+extern object __glo_define_91syntax_127_scheme_cyclone_util;
+extern object __glo_let_91syntax_127_scheme_cyclone_util;
+extern object __glo_letrec_91syntax_127_scheme_cyclone_util;
 extern object __glo_tagged_91list_127_scheme_cyclone_util;
 extern object __glo_if_127_scheme_cyclone_util;
 extern object __glo_if_91syntax_127_scheme_cyclone_util;
 extern object __glo_begin_127_scheme_cyclone_util;
 extern object __glo_lambda_127_scheme_cyclone_util;
 extern object __glo_pair_91_125list_scheme_cyclone_util;
+extern object __glo_define_91lambda_127_scheme_cyclone_util;
+extern object __glo_define_91_125lambda_scheme_cyclone_util;
 extern object __glo_formals_91_125list_scheme_cyclone_util;
 extern object __glo_lambda_91formals_91_125list_scheme_cyclone_util;
 extern object __glo_lambda_91varargs_127_scheme_cyclone_util;
@@ -577,11 +593,9 @@ extern object __glo_prim_117immutable_91args_95result_127_scheme_cyclone_primiti
 extern object __glo_prim_117udf_127_scheme_cyclone_primitives;
 extern object __glo_prim_117add_91udf_67_scheme_cyclone_primitives;
 extern object __glo_prim_117func_91_125prim_scheme_cyclone_primitives;
-extern object __glo__85defined_91macros_85_scheme_cyclone_transforms;
 extern object __glo__85do_91code_91gen_85_scheme_cyclone_transforms;
 extern object __glo__85trace_91level_85_scheme_cyclone_transforms;
 extern object __glo__85primitives_85_scheme_cyclone_primitives;
-extern object __glo_get_91macros_scheme_cyclone_transforms;
 extern object __glo_built_91in_91syms_scheme_cyclone_transforms;
 extern object __glo_trace_scheme_cyclone_transforms;
 extern object __glo_trace_117error_scheme_cyclone_transforms;
@@ -619,8 +633,6 @@ extern object __glo_app_91_125fun_scheme_cyclone_transforms;
 extern object __glo_app_91_125args_scheme_cyclone_transforms;
 extern object __glo_precompute_91prim_91app_127_scheme_cyclone_transforms;
 extern object __glo_begin_91_125exps_scheme_cyclone_transforms;
-extern object __glo_define_91lambda_127_scheme_cyclone_transforms;
-extern object __glo_define_91_125lambda_scheme_cyclone_transforms;
 extern object __glo_closure_127_scheme_cyclone_transforms;
 extern object __glo_closure_91_125lam_scheme_cyclone_transforms;
 extern object __glo_closure_91_125env_scheme_cyclone_transforms;
@@ -640,8 +652,6 @@ extern object __glo_cell_127_scheme_cyclone_transforms;
 extern object __glo_cell_91_125value_scheme_cyclone_transforms;
 extern object __glo_cell_91get_127_scheme_cyclone_transforms;
 extern object __glo_cell_91get_91_125cell_scheme_cyclone_transforms;
-extern object __glo_expand_scheme_cyclone_transforms;
-extern object __glo_expand_91lambda_91body_scheme_cyclone_transforms;
 extern object __glo_isolate_91globals_scheme_cyclone_transforms;
 extern object __glo_has_91global_127_scheme_cyclone_transforms;
 extern object __glo_global_91vars_scheme_cyclone_transforms;
@@ -699,14 +709,6 @@ extern object __glo_adbf_117unused_91params_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91unused_91params_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117side_91effects_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations;
-extern object __glo_define_91syntax_127_scheme_cyclone_macros;
-extern object __glo_macro_117macro_127_scheme_cyclone_macros;
-extern object __glo_macro_117expand_scheme_cyclone_macros;
-extern object __glo_macro_117add_67_scheme_cyclone_macros;
-extern object __glo_macro_117cleanup_scheme_cyclone_macros;
-extern object __glo_macro_117load_91env_67_scheme_cyclone_macros;
-extern object __glo_macro_117get_91env_scheme_cyclone_macros;
-extern object __glo_macro_117get_91defined_91macros_scheme_cyclone_macros;
 extern object __glo_library_127_scheme_cyclone_libraries;
 extern object __glo_library_91exists_127_scheme_cyclone_libraries;
 extern object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries;
@@ -781,6 +783,7 @@ extern object __glo_procedure_91parameters_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91body_191_191inline_191_191_scheme_eval;
 extern object __glo_procedure_91environment_191_191inline_191_191_scheme_eval;
 extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval;
+extern object __glo_macro_117macro_127_191_191inline_191_191_scheme_eval;
 extern object __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
@@ -2415,7 +2418,7 @@ c_733217.num_elements = 1;
 c_733217.elements = (object *)alloca(sizeof(object) * 1);
 c_733217.elements[0] = ((closureN)self_73939)->elements[0];
 
-return_closcall1(data,  __glo_macro_117get_91defined_91macros_scheme_cyclone_macros,  &c_733217);; 
+return_closcall1(data,  __glo_macro_117get_91defined_91macros_scheme_eval,  &c_733217);; 
 }
 
 static void __lambda_352(void *data, int argc, object self_73940, object r_73431) {
@@ -3300,7 +3303,7 @@ c_732911.elements = (object *)alloca(sizeof(object) * 2);
 c_732911.elements[0] = ((closureN)self_73988)->elements[0];
 c_732911.elements[1] = ((closureN)self_73988)->elements[2];
 
-return_closcall3(data,  __glo_macro_117load_91env_67_scheme_cyclone_macros,  &c_732911, ((closureN)self_73988)->elements[1], r_73465);; 
+return_closcall3(data,  __glo_macro_117load_91env_67_scheme_eval,  &c_732911, ((closureN)self_73988)->elements[1], r_73465);; 
 }
 
 static void __lambda_301(void *data, int argc, object self_73989, object r_73462) {
@@ -3332,11 +3335,11 @@ c_732916.elements[0] = ex_73236;
 c_732916.elements[1] = k_73463;
 c_732916.elements[2] = ((closureN)self_73990)->elements[0];
 
-return_closcall1(data,  __glo_macro_117get_91env_scheme_cyclone_macros,  &c_732916);; 
+return_closcall1(data,  __glo_macro_117get_91env_scheme_eval,  &c_732916);; 
 }
 
 static void __lambda_299(void *data, int argc, object self_73991, object r_73464) {
-  return_closcall4(data,  __glo_expand_scheme_cyclone_transforms,  ((closureN)self_73991)->elements[1], ((closureN)self_73991)->elements[0], r_73464, ((closureN)self_73991)->elements[2]);; 
+  return_closcall4(data,  __glo_expand_scheme_eval,  ((closureN)self_73991)->elements[1], ((closureN)self_73991)->elements[0], r_73464, ((closureN)self_73991)->elements[2]);; 
 }
 
 static void __lambda_298(void *data, int argc, closure _,object k_73478, object expr_73238, object expander_73237) {
@@ -5111,7 +5114,7 @@ c_731690.elements[18] = ((closureN)self_731045)->elements[17];
 c_731690.elements[19] = ((closureN)self_731045)->elements[18];
 c_731690.elements[20] = ((closureN)self_731045)->elements[19];
 
-return_closcall3(data,  __glo_append_scheme_base,  &c_731690, meta_73312, __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_731690, meta_73312, __glo__85defined_91macros_85_scheme_eval);; 
 }
 
 static void __lambda_242(void *data, int argc, object self_731046, object r_73794) {
@@ -5146,7 +5149,7 @@ c_731692.elements[18] = ((closureN)self_731046)->elements[18];
 c_731692.elements[19] = ((closureN)self_731046)->elements[19];
 c_731692.elements[20] = ((closureN)self_731046)->elements[20];
 
-return_closcall1(data,(closure)&c_731692,  global_set(__glo__85defined_91macros_85_scheme_cyclone_transforms, r_73794));; 
+return_closcall1(data,(closure)&c_731692,  global_set(__glo__85defined_91macros_85_scheme_eval, r_73794));; 
 }
 
 static void __lambda_241(void *data, int argc, object self_731047, object r_73792) {
@@ -5291,7 +5294,7 @@ c_731700.elements[17] = ((closureN)self_731051)->elements[17];
 c_731700.elements[18] = ((closureN)self_731051)->elements[18];
 c_731700.elements[19] = ((closureN)self_731051)->elements[19];
 
-return_closcall3(data,  __glo_append_scheme_base,  &c_731700, macros_73311, __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_731700, macros_73311, __glo__85defined_91macros_85_scheme_eval);; 
 }
 
 static void __lambda_236(void *data, int argc, object self_731052, object r_73785) {
@@ -5325,7 +5328,7 @@ c_731702.elements[17] = ((closureN)self_731052)->elements[17];
 c_731702.elements[18] = ((closureN)self_731052)->elements[18];
 c_731702.elements[19] = ((closureN)self_731052)->elements[19];
 
-return_closcall1(data,(closure)&c_731702,  global_set(__glo__85defined_91macros_85_scheme_cyclone_transforms, r_73785));; 
+return_closcall1(data,(closure)&c_731702,  global_set(__glo__85defined_91macros_85_scheme_eval, r_73785));; 
 }
 
 static void __lambda_235(void *data, int argc, object self_731053, object r_73536) {
@@ -5393,7 +5396,7 @@ c_731706.elements[17] = ((closureN)self_731054)->elements[17];
 c_731706.elements[18] = ((closureN)self_731054)->elements[18];
 c_731706.elements[19] = ((closureN)self_731054)->elements[19];
 
-return_closcall3(data,  __glo_macro_117load_91env_67_scheme_cyclone_macros,  &c_731706, __glo__85defined_91macros_85_scheme_cyclone_transforms, r_73781);; 
+return_closcall3(data,  __glo_macro_117load_91env_67_scheme_eval,  &c_731706, __glo__85defined_91macros_85_scheme_eval, r_73781);; 
 }
 
 static void __lambda_233(void *data, int argc, object self_731055, object r_73537) {
@@ -5578,7 +5581,7 @@ c_731797.elements[17] = ((closureN)self_731059)->elements[17];
 c_731797.elements[18] = ((closureN)self_731059)->elements[18];
 c_731797.elements[19] = ((closureN)self_731059)->elements[19];
 
-return_closcall3(data,  __glo_macro_117cleanup_scheme_cyclone_macros,  &c_731797, car(((closureN)self_731059)->elements[8]), car(((closureN)self_731059)->elements[17]));; 
+return_closcall3(data,  __glo_macro_117cleanup_scheme_eval,  &c_731797, car(((closureN)self_731059)->elements[8]), car(((closureN)self_731059)->elements[17]));; 
 }
 
 static void __lambda_228(void *data, int argc, object self_731060, object r_73758) {
@@ -8939,7 +8942,7 @@ c_731840.elements[5] = meta_73308;
 c_731840.elements[6] = ((closureN)self_731212)->elements[5];
 c_731840.elements[7] = ((closureN)self_731212)->elements[6];
 
-return_closcall3(data,  __glo_append_scheme_base,  &c_731840, meta_73308, __glo__85defined_91macros_85_scheme_cyclone_transforms);; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_731840, meta_73308, __glo__85defined_91macros_85_scheme_eval);; 
 }
 
 static void __lambda_74(void *data, int argc, object self_731213, object r_73752) {
@@ -8961,7 +8964,7 @@ c_731842.elements[5] = ((closureN)self_731213)->elements[5];
 c_731842.elements[6] = ((closureN)self_731213)->elements[6];
 c_731842.elements[7] = ((closureN)self_731213)->elements[7];
 
-return_closcall1(data,(closure)&c_731842,  global_set(__glo__85defined_91macros_85_scheme_cyclone_transforms, r_73752));; 
+return_closcall1(data,(closure)&c_731842,  global_set(__glo__85defined_91macros_85_scheme_eval, r_73752));; 
 }
 
 static void __lambda_73(void *data, int argc, object self_731214, object r_73750) {
@@ -9152,7 +9155,7 @@ c_731713.elements[0] = ((closureN)self_731224)->elements[0];
 c_731713.elements[1] = k_73760;
 c_731713.elements[2] = ((closureN)self_731224)->elements[2];
 
-return_closcall1(data,  __glo_macro_117get_91env_scheme_cyclone_macros,  &c_731713);
+return_closcall1(data,  __glo_macro_117get_91env_scheme_eval,  &c_731713);
 } else { 
   
 closureN_type c_731723;
@@ -9167,7 +9170,7 @@ c_731723.elements[0] = ((closureN)self_731224)->elements[0];
 c_731723.elements[1] = k_73760;
 c_731723.elements[2] = ((closureN)self_731224)->elements[2];
 
-return_closcall1(data,  __glo_macro_117get_91env_scheme_cyclone_macros,  &c_731723);}
+return_closcall1(data,  __glo_macro_117get_91env_scheme_eval,  &c_731723);}
 ; 
 }
 
@@ -9185,7 +9188,7 @@ c_731725.elements[0] = ((closureN)self_731225)->elements[1];
 
 
 make_pair(c_731782,quote_begin, car(((closureN)self_731225)->elements[0]));
-return_closcall4(data,  __glo_expand_scheme_cyclone_transforms,  &c_731725, &c_731782, r_73779, car(((closureN)self_731225)->elements[2]));; 
+return_closcall4(data,  __glo_expand_scheme_eval,  &c_731725, &c_731782, r_73779, car(((closureN)self_731225)->elements[2]));; 
 }
 
 static void __lambda_61(void *data, int argc, object self_731226, object expanded_73309) {
@@ -9287,7 +9290,7 @@ return_closcall1(data,  k_73774,  c_731735);
 }
 
 static void __lambda_56(void *data, int argc, object self_731231, object r_73761) {
-  return_closcall4(data,  __glo_expand_91lambda_91body_scheme_cyclone_transforms,  ((closureN)self_731231)->elements[1], car(((closureN)self_731231)->elements[0]), r_73761, car(((closureN)self_731231)->elements[2]));; 
+  return_closcall4(data,  __glo_expand_91lambda_91body_scheme_eval,  ((closureN)self_731231)->elements[1], car(((closureN)self_731231)->elements[0]), r_73761, car(((closureN)self_731231)->elements[2]));; 
 }
 
 static void __lambda_55(void *data, int argc, object self_731232, object k_73796) {
@@ -10464,12 +10467,11 @@ extern void c_schemecycloneutil_entry_pt(void *data, int argc, closure cont, obj
 extern void c_schemeread_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeprocess_91context_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonelibraries_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_schemecycloneprimitives_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemefile_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeeval_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneast_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemecycloneprimitives_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemecyclonemacros_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonepretty_91print_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecomplex_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_srfi69_entry_pt(void *data, int argc, closure cont, object value);
@@ -10572,20 +10574,19 @@ mclosure1(c_733510, c_schemecyclonetransforms_entry_pt, &c_733509);
 mclosure1(c_733511, c_srfi69_entry_pt, &c_733510);
 mclosure1(c_733512, c_schemecomplex_entry_pt, &c_733511);
 mclosure1(c_733513, c_schemecyclonepretty_91print_entry_pt, &c_733512);
-mclosure1(c_733514, c_schemecyclonemacros_entry_pt, &c_733513);
-mclosure1(c_733515, c_schemecycloneprimitives_entry_pt, &c_733514);
-mclosure1(c_733516, c_schemecycloneast_entry_pt, &c_733515);
-mclosure1(c_733517, c_schemeeval_entry_pt, &c_733516);
-mclosure1(c_733518, c_schemewrite_entry_pt, &c_733517);
-mclosure1(c_733519, c_schemefile_entry_pt, &c_733518);
-mclosure1(c_733520, c_schemecyclonelibraries_entry_pt, &c_733519);
-mclosure1(c_733521, c_schemeprocess_91context_entry_pt, &c_733520);
-mclosure1(c_733522, c_schemeread_entry_pt, &c_733521);
-mclosure1(c_733523, c_schemecycloneutil_entry_pt, &c_733522);
-mclosure1(c_733524, c_scheme_char_entry_pt, &c_733523);
-mclosure1(c_733525, c_schemebase_entry_pt, &c_733524);
-mclosure1(c_733526, c_schemecyclonecommon_entry_pt, &c_733525);
-(c_733526.fn)(data, 0, &c_733526, &c_733526);
+mclosure1(c_733514, c_schemecycloneast_entry_pt, &c_733513);
+mclosure1(c_733515, c_schemeeval_entry_pt, &c_733514);
+mclosure1(c_733516, c_schemewrite_entry_pt, &c_733515);
+mclosure1(c_733517, c_schemefile_entry_pt, &c_733516);
+mclosure1(c_733518, c_schemecycloneprimitives_entry_pt, &c_733517);
+mclosure1(c_733519, c_schemecyclonelibraries_entry_pt, &c_733518);
+mclosure1(c_733520, c_schemeprocess_91context_entry_pt, &c_733519);
+mclosure1(c_733521, c_schemeread_entry_pt, &c_733520);
+mclosure1(c_733522, c_schemecycloneutil_entry_pt, &c_733521);
+mclosure1(c_733523, c_scheme_char_entry_pt, &c_733522);
+mclosure1(c_733524, c_schemebase_entry_pt, &c_733523);
+mclosure1(c_733525, c_schemecyclonecommon_entry_pt, &c_733524);
+(c_733525.fn)(data, 0, &c_733525, &c_733525);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
   
