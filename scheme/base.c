@@ -24241,7 +24241,7 @@ c_739336.elements = (object *)alloca(sizeof(object) * 2);
 c_739336.elements[0] = chr_732013;
 c_739336.elements[1] = k_735136;
 
-return_closcall1(data,  __glo_current_91input_91port_scheme_base,  &c_739336);
+return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_739336);
 } else { 
   return_closcall3(data,  __glo__191write_91u8_scheme_base,  k_735136, chr_732013, Cyc_car(data, port_732012));}
 ; 
