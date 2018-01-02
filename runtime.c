@@ -2659,15 +2659,6 @@ object Cyc_utf82string(void *data, object cont, object bv, object start,
   }
 
   {
-    //make_string_noalloc(st, NULL, len);
-    //st.str = alloca(sizeof(char) * (len + 1));
-    //memcpy(st.str, &buf[s], len);
-    //st.str[len] = '\0';
-    //st.num_cp = Cyc_utf8_count_code_points((uint8_t *)(st.str));
-    //if (st.num_cp < 0) {
-    //   Cyc_rt_raise2(data, "utf8->string - error decoding UTF 8", bv);
-    //}
-    //_return_closcall1(data, cont, &st);
     object st;
     alloc_string(data, st, len, len);
     memcpy(((string_type *)st)->str, &buf[s], len);
@@ -2682,7 +2673,6 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
 {
   int s, e;
   int len;
-  make_empty_bytevector(result);
 
   Cyc_check_str(data, str);
   Cyc_check_num(data, start);
@@ -2701,12 +2691,31 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
   }
 
   // Fast path
-  if (string_num_cp(str) == string_len(str)) { // TODO: disable for testing purposes
-    result.len = len;
-    result.data = alloca(sizeof(char) * len);
-    memcpy(&result.data[0], &(string_str(str))[s], len);
-    _return_closcall1(data, cont, &result);
+  if (string_num_cp(str) == string_len(str)) {
+    if (len >= MAX_STACK_OBJ) {
+      int heap_grown;
+      object bv = gc_alloc(((gc_thread_data *)data)->heap,
+                    sizeof(bytevector_type) + len,
+                    boolean_f, // OK to populate manually over here
+                    (gc_thread_data *)data, 
+                    &heap_grown);
+      ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
+      ((bytevector) bv)->hdr.grayed = 0;
+      ((bytevector) bv)->tag = bytevector_tag;
+      ((bytevector) bv)->len = len;
+      ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
+      memcpy(&(((bytevector) bv)->data[0]), &(string_str(str))[s], len);
+      _return_closcall1(data, cont, bv);
+    } else {
+      make_empty_bytevector(result);
+      result.len = len;
+      result.data = alloca(sizeof(char) * len);
+      memcpy(&result.data[0], &(string_str(str))[s], len);
+      _return_closcall1(data, cont, &result);
+    }
   } else {
+// TODO: if len > MAX_STACK_OBJ
+    make_empty_bytevector(result);
     const char *tmp = string_str(str);
     char_type codepoint;
     uint32_t state = 0;
