@@ -2610,7 +2610,6 @@ object Cyc_bytevector_copy(void *data, object cont, object bv, object start,
 {
   int s, e;
   int len;
-  make_empty_bytevector(result);
 
   Cyc_check_bvec(data, bv);
   Cyc_check_num(data, start);
@@ -2628,10 +2627,27 @@ object Cyc_bytevector_copy(void *data, object cont, object bv, object start,
     Cyc_rt_raise2(data, "bytevector-copy - invalid end", end);
   }
 
-  result.len = len;
-  result.data = alloca(sizeof(char) * len);
-  memcpy(&result.data[0], &(((bytevector) bv)->data)[s], len);
-  _return_closcall1(data, cont, &result);
+  if (len >= MAX_STACK_OBJ) {
+    int heap_grown;
+    object result = gc_alloc(((gc_thread_data *)data)->heap,
+                  sizeof(bytevector_type) + len,
+                  boolean_f, // OK to populate manually over here
+                  (gc_thread_data *)data, 
+                  &heap_grown);
+    ((bytevector) result)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
+    ((bytevector) result)->hdr.grayed = 0;
+    ((bytevector) result)->tag = bytevector_tag;
+    ((bytevector) result)->len = len;
+    ((bytevector) result)->data = (char *)(((char *)result) + sizeof(bytevector_type));
+    memcpy(&(((bytevector) result)->data[0]), &(((bytevector) bv)->data)[s], len);
+    _return_closcall1(data, cont, result);
+  } else {
+    make_empty_bytevector(result);
+    result.len = len;
+    result.data = alloca(sizeof(char) * len);
+    memcpy(&result.data[0], &(((bytevector) bv)->data)[s], len);
+    _return_closcall1(data, cont, &result);
+  }
 }
 
 object Cyc_utf82string(void *data, object cont, object bv, object start,
@@ -2714,12 +2730,11 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
       _return_closcall1(data, cont, &result);
     }
   } else {
-// TODO: if len > MAX_STACK_OBJ
-    make_empty_bytevector(result);
     const char *tmp = string_str(str);
     char_type codepoint;
     uint32_t state = 0;
     int num_ch, cur_ch_bytes = 0, start_i = 0, end_i = 0;
+    // Figure out start / end indices
     for (num_ch = 0; *tmp; ++tmp){
       cur_ch_bytes++;
       if (!Cyc_utf8_decode(&state, &codepoint, (uint8_t)*tmp)){
@@ -2735,10 +2750,28 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
         }
       }
     }
-    result.len = end_i - start_i;
-    result.data = alloca(sizeof(char) * result.len);
-    memcpy(&result.data[0], &(string_str(str))[start_i], result.len);
-    _return_closcall1(data, cont, &result);
+    len = end_i - start_i;
+    if (len >= MAX_STACK_OBJ) {
+      int heap_grown;
+      object bv = gc_alloc(((gc_thread_data *)data)->heap,
+                    sizeof(bytevector_type) + len,
+                    boolean_f, // OK to populate manually over here
+                    (gc_thread_data *)data, 
+                    &heap_grown);
+      ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
+      ((bytevector) bv)->hdr.grayed = 0;
+      ((bytevector) bv)->tag = bytevector_tag;
+      ((bytevector) bv)->len = len;
+      ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
+      memcpy(&(((bytevector) bv)->data[0]), &(string_str(str))[start_i], len);
+      _return_closcall1(data, cont, bv);
+    } else {
+      make_empty_bytevector(result);
+      result.len = len;
+      result.data = alloca(sizeof(char) * result.len);
+      memcpy(&result.data[0], &(string_str(str))[start_i], result.len);
+      _return_closcall1(data, cont, &result);
+    }
   }
 }
 
@@ -2794,20 +2827,46 @@ object Cyc_bytevector_length(void *data, object bv)
 object Cyc_list2vector(void *data, object cont, object l)
 {
   object v = NULL;
-  object len;
+  object len_obj;
   object lst = l;
-  int i = 0;
+  int len, i = 0;
+  size_t element_vec_size;
 
+  make_c_opaque(opq, NULL);
   Cyc_check_pair_or_null(data, l);
-  len = Cyc_length(data, l);
-  v = alloca(sizeof(vector_type));
-  ((vector) v)->hdr.mark = gc_color_red;
-  ((vector) v)->hdr.grayed = 0;
-  ((vector) v)->tag = vector_tag;
-  ((vector) v)->num_elements = obj_obj2int(len);
-  ((vector) v)->elements =
-      (((vector) v)->num_elements > 0) ?
-      (object *) alloca(sizeof(object) * ((vector) v)->num_elements) : NULL;
+  len_obj = Cyc_length(data, l);
+  len = obj_obj2int(len_obj);
+  element_vec_size = sizeof(object) * len;
+  if (element_vec_size >= MAX_STACK_OBJ) {
+    int heap_grown;
+    v = gc_alloc(((gc_thread_data *)data)->heap, 
+                 sizeof(vector_type) + element_vec_size,
+                 boolean_f, // OK to populate manually over here
+                 (gc_thread_data *)data, 
+                 &heap_grown);
+    ((vector) v)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
+    ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->tag = vector_tag;
+    ((vector) v)->num_elements = len;
+    ((vector) v)->elements = (object *)(((char *)v) + sizeof(vector_type));
+    // TODO: do we need to worry about stack object in the list????
+    //// Use write barrier to ensure fill is moved to heap if it is on the stack
+    //// Otherwise if next minor GC misses fill it could be catastrophic
+    //car(&tmp_pair) = fill;
+    //add_mutation(data, &tmp_pair, -1, fill);
+    // Add a special object to indicate full vector must be scanned by GC
+    opaque_ptr(&opq) = v;
+    add_mutation(data, &opq, -1, v);
+  } else {
+    v = alloca(sizeof(vector_type));
+    ((vector) v)->hdr.mark = gc_color_red;
+    ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->tag = vector_tag;
+    ((vector) v)->num_elements = len;
+    ((vector) v)->elements =
+        (((vector) v)->num_elements > 0) ?
+        (object *) alloca(element_vec_size) : NULL;
+  }
   while ((lst != NULL)) {
     ((vector) v)->elements[i++] = car(lst);
     lst = cdr(lst);
