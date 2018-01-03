@@ -1932,12 +1932,13 @@ static void __lambda_46(void *data, int argc, object self_73712, object r_73581)
 
 static void __lambda_45(void *data, int argc, closure _, object k, object sockfd, object size, object flags) { // TODO: type checking 
         int len = obj_obj2int(size);
-        make_empty_bytevector(bv);
-        bv.data = alloca(sizeof(char) * len);
+        object bv;
+        alloc_bytevector(data, bv, len);
+        ((bytevector)bv)->data = alloca(sizeof(char) * len);
 
         set_thread_blocked(data, k);
-        bv.len = recv(obj_obj2int(sockfd), bv.data, len, obj_obj2int(flags));
-        return_thread_runnable(data, &bv);
+        ((bytevector)bv)->len = recv(obj_obj2int(sockfd), ((bytevector)bv)->data, len, obj_obj2int(flags));
+        return_thread_runnable(data, bv);
        }
 static void __lambda_44(void *data, int argc, closure _,object k_73584, object sock_73272, object size_73271, object opts_73270_raw, ...) {
 load_varargs(opts_73270, opts_73270_raw, argc - 3);
