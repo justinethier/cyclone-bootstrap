@@ -2476,7 +2476,7 @@ c_739307.elements[4] = ((closureN)self_733047)->elements[4];
 c_739307.elements[5] = ((closureN)self_733047)->elements[5];
 
 
-object c_739333 = apply_va(data,(closure)&c_739307,2,((closureN)self_733047)->elements[0], r_731660);
+object c_739333 = apply(data,(closure)&c_739307,((closureN)self_733047)->elements[0], r_731660);
 return_closcall1(data,(closure)&c_739307,  c_739333);; 
 }
 
@@ -3942,7 +3942,7 @@ c_738820.elements[4] = ((closureN)self_733123)->elements[4];
 c_738820.elements[5] = ((closureN)self_733123)->elements[5];
 
 
-object c_738836 = apply_va(data,(closure)&c_738820,2,((closureN)self_733123)->elements[0], r_731552);
+object c_738836 = apply(data,(closure)&c_738820,((closureN)self_733123)->elements[0], r_731552);
 return_closcall1(data,(closure)&c_738820,  c_738836);; 
 }
 
@@ -4288,7 +4288,7 @@ c_738708.elements[4] = ((closureN)self_733141)->elements[4];
 c_738708.elements[5] = ((closureN)self_733141)->elements[5];
 
 
-object c_738727 = apply_va(data,(closure)&c_738708,2,((closureN)self_733141)->elements[4], r_731529);
+object c_738727 = apply(data,(closure)&c_738708,((closureN)self_733141)->elements[4], r_731529);
 return_closcall1(data,(closure)&c_738708,  c_738727);; 
 }
 
@@ -4641,7 +4641,7 @@ c_738594.elements[3] = ((closureN)self_733159)->elements[3];
 c_738594.elements[4] = ((closureN)self_733159)->elements[4];
 
 
-object c_738612 = apply_va(data,(closure)&c_738594,2,((closureN)self_733159)->elements[3], r_731506);
+object c_738612 = apply(data,(closure)&c_738594,((closureN)self_733159)->elements[3], r_731506);
 return_closcall1(data,(closure)&c_738594,  c_738612);; 
 }
 
@@ -5024,7 +5024,7 @@ c_738464.elements[5] = ((closureN)self_733177)->elements[5];
 c_738464.elements[6] = ((closureN)self_733177)->elements[6];
 
 
-object c_738483 = apply_va(data,(closure)&c_738464,2,((closureN)self_733177)->elements[5], r_731479);
+object c_738483 = apply(data,(closure)&c_738464,((closureN)self_733177)->elements[5], r_731479);
 return_closcall1(data,(closure)&c_738464,  c_738483);; 
 }
 
@@ -5040,7 +5040,7 @@ return_closcall6(data,  car(((closureN)self_733178)->elements[4]),  ((closureN)s
 
 static void __lambda_489(void *data, int argc, object self_733179, object r_731476) {
   
-object c_738459 = apply_va(data,  ((closureN)self_733179)->elements[0],2,((closureN)self_733179)->elements[1], r_731476);
+object c_738459 = apply(data,  ((closureN)self_733179)->elements[0],((closureN)self_733179)->elements[1], r_731476);
 return_closcall1(data,  ((closureN)self_733179)->elements[0],  c_738459);; 
 }
 
@@ -5395,7 +5395,7 @@ c_738323.elements[5] = ((closureN)self_733195)->elements[5];
 c_738323.elements[6] = ((closureN)self_733195)->elements[6];
 
 
-object c_738342 = apply_va(data,(closure)&c_738323,2,((closureN)self_733195)->elements[5], r_731450);
+object c_738342 = apply(data,(closure)&c_738323,((closureN)self_733195)->elements[5], r_731450);
 return_closcall1(data,(closure)&c_738323,  c_738342);; 
 }
 
@@ -5411,7 +5411,7 @@ return_closcall6(data,  car(((closureN)self_733196)->elements[4]),  ((closureN)s
 
 static void __lambda_471(void *data, int argc, object self_733197, object r_731447) {
   
-object c_738318 = apply_va(data,  ((closureN)self_733197)->elements[0],2,((closureN)self_733197)->elements[1], r_731447);
+object c_738318 = apply(data,  ((closureN)self_733197)->elements[0],((closureN)self_733197)->elements[1], r_731447);
 return_closcall1(data,  ((closureN)self_733197)->elements[0],  c_738318);; 
 }
 
@@ -7444,7 +7444,7 @@ c_737130.elements = (object *)alloca(sizeof(object) * 1);
 c_737130.elements[0] = k_732069;
 
 
-object c_737139 = apply_va(data,(closure)&c_737130,2,((closureN)self_733288)->elements[0], elts_731067);
+object c_737139 = apply(data,(closure)&c_737130,((closureN)self_733288)->elements[0], elts_731067);
 return_closcall1(data,(closure)&c_737130,  c_737139);; 
 }
 
@@ -7492,7 +7492,7 @@ c_737113.elements = (object *)alloca(sizeof(object) * 1);
 c_737113.elements[0] = k_732080;
 
 
-object c_737122 = apply_va(data,(closure)&c_737113,2,((closureN)self_733290)->elements[0], elts_731074);
+object c_737122 = apply(data,(closure)&c_737113,((closureN)self_733290)->elements[0], elts_731074);
 return_closcall1(data,(closure)&c_737113,  c_737122);; 
 }
 
@@ -7805,7 +7805,7 @@ c_737018.elements[0] = count_731096;
 c_737018.elements[1] = k_732112;
 
 
-object c_737031 = apply_va(data,(closure)&c_737018,2,((closureN)self_733305)->elements[0], elts_731095);
+object c_737031 = apply(data,(closure)&c_737018,((closureN)self_733305)->elements[0], elts_731095);
 return_closcall1(data,(closure)&c_737018,  c_737031);; 
 }
 

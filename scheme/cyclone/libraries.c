@@ -1863,7 +1863,7 @@ static void __lambda_193(void *data, int argc, object self_73886, object k_73435
 
 static void __lambda_192(void *data, int argc, object self_73887, object r_73433) {
   
-object c_732226 = apply_va(data,  ((closureN)self_73887)->elements[0],2,__glo_append_scheme_base, r_73433);
+object c_732226 = apply(data,  ((closureN)self_73887)->elements[0],__glo_append_scheme_base, r_73433);
 return_closcall1(data,  ((closureN)self_73887)->elements[0],  c_732226);; 
 }
 
@@ -2364,7 +2364,7 @@ return_closcall1(data,  k_73495,  &c_732057);;
 
 static void __lambda_159(void *data, int argc, object self_73913, object r_73487) {
   
-object c_732045 = apply_va(data,  ((closureN)self_73913)->elements[0],2,__glo_append_scheme_base, r_73487);
+object c_732045 = apply(data,  ((closureN)self_73913)->elements[0],__glo_append_scheme_base, r_73487);
 return_closcall1(data,  ((closureN)self_73913)->elements[0],  c_732045);; 
 }
 
@@ -3213,7 +3213,7 @@ c_731624.elements[3] = ((closureN)self_73957)->elements[3];
 c_731624.elements[4] = ((closureN)self_73957)->elements[4];
 
 
-object c_731720 = apply_va(data,(closure)&c_731624,2,primitive_string_91append, r_73609);
+object c_731720 = apply(data,(closure)&c_731624,primitive_string_91append, r_73609);
 return_closcall1(data,(closure)&c_731624,  c_731720);; 
 }
 
@@ -3642,7 +3642,7 @@ c_731494.elements[3] = ((closureN)self_73978)->elements[3];
 c_731494.elements[4] = ((closureN)self_73978)->elements[4];
 
 
-object c_731605 = apply_va(data,(closure)&c_731494,2,primitive_string_91append, r_73649);
+object c_731605 = apply(data,(closure)&c_731494,primitive_string_91append, r_73649);
 return_closcall1(data,(closure)&c_731494,  c_731605);; 
 }
 
@@ -4236,7 +4236,7 @@ static void __lambda_52(void *data, int argc, object self_731010, object k_73700
 
 static void __lambda_51(void *data, int argc, object self_731011, object r_73693) {
   
-object c_731340 = apply_va(data,  ((closureN)self_731011)->elements[0],2,__glo_append_scheme_base, r_73693);
+object c_731340 = apply(data,  ((closureN)self_731011)->elements[0],__glo_append_scheme_base, r_73693);
 return_closcall1(data,  ((closureN)self_731011)->elements[0],  c_731340);; 
 }
 
@@ -4587,7 +4587,7 @@ return_closcall3(data,  __glo_map_scheme_base,  &c_731205, __glo_mangle_scheme_c
 
 static void __lambda_18(void *data, int argc, object self_731032, object r_73778) {
   
-object c_731210 = apply_va(data,  ((closureN)self_731032)->elements[0],2,primitive_string_91append, r_73778);
+object c_731210 = apply(data,  ((closureN)self_731032)->elements[0],primitive_string_91append, r_73778);
 return_closcall1(data,  ((closureN)self_731032)->elements[0],  c_731210);; 
 }
 

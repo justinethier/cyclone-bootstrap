@@ -1036,7 +1036,7 @@ if( (boolean_f != c_73244) ){
   
 mclosure0(c_73254, (function_type)__lambda_11);c_73254.num_args = 1;
 
-object c_73253 = apply_va(data,  k_73103,2,&c_73254, args_732_7333);
+object c_73253 = apply(data,  k_73103,&c_73254, args_732_7333);
 return_closcall1(data,  k_73103,  c_73253);
 } else { 
     make_pair(c_73269,quote_unit,NULL);
@@ -1046,7 +1046,7 @@ if( (boolean_f != c_73263) ){
   
 mclosure0(c_73274, (function_type)__lambda_22);c_73274.num_args = 2;
 
-object c_73273 = apply_va(data,  k_73103,2,&c_73274, args_732_7333);
+object c_73273 = apply(data,  k_73103,&c_73274, args_732_7333);
 return_closcall1(data,  k_73103,  c_73273);
 } else { 
   

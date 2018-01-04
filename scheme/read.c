@@ -782,7 +782,7 @@ return_closcall3(data,  car(((closureN)self_73259)->elements[2]),  ((closureN)se
 
 static void __lambda_54(void *data, int argc, object self_73260, object r_73195) {
   
-object c_73707 = apply_va(data,  ((closureN)self_73260)->elements[0],2,primitive_bytevector, r_73195);
+object c_73707 = apply(data,  ((closureN)self_73260)->elements[0],primitive_bytevector, r_73195);
 return_closcall1(data,  ((closureN)self_73260)->elements[0],  c_73707);; 
 }
 
@@ -1427,7 +1427,7 @@ make_pair(c_73312,quote_begin,NULL);
 
 make_pair(c_73311,&c_73312, r_73238);
 
-object c_73308 = apply_va(data,  ((closureN)self_73300)->elements[0],2,__glo_append_scheme_base, &c_73311);
+object c_73308 = apply(data,  ((closureN)self_73300)->elements[0],__glo_append_scheme_base, &c_73311);
 return_closcall1(data,  ((closureN)self_73300)->elements[0],  c_73308);; 
 }
 

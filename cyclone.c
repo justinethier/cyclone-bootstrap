@@ -1332,7 +1332,7 @@ c_733316.elements[1] = ((closureN)self_73893)->elements[1];
 c_733316.elements[2] = ((closureN)self_73893)->elements[2];
 
 
-object c_733475 = apply_va(data,(closure)&c_733316,2,primitive_string_91append, r_73358);
+object c_733475 = apply(data,(closure)&c_733316,primitive_string_91append, r_73358);
 return_closcall1(data,(closure)&c_733316,  c_733475);; 
 }
 
@@ -1372,7 +1372,7 @@ c_733320.elements[2] = ((closureN)self_73895)->elements[2];
 c_733320.elements[3] = ((closureN)self_73895)->elements[3];
 
 
-object c_733470 = apply_va(data,(closure)&c_733320,2,primitive_string_91append, r_73357);
+object c_733470 = apply(data,(closure)&c_733320,primitive_string_91append, r_73357);
 return_closcall1(data,(closure)&c_733320,  c_733470);; 
 }
 
@@ -1414,7 +1414,7 @@ c_733324.elements[3] = ((closureN)self_73897)->elements[3];
 c_733324.elements[4] = ((closureN)self_73897)->elements[4];
 
 
-object c_733465 = apply_va(data,(closure)&c_733324,2,primitive_string_91append, r_73356);
+object c_733465 = apply(data,(closure)&c_733324,primitive_string_91append, r_73356);
 return_closcall1(data,(closure)&c_733324,  c_733465);; 
 }
 
@@ -1458,7 +1458,7 @@ c_733328.elements[4] = ((closureN)self_73899)->elements[4];
 c_733328.elements[5] = ((closureN)self_73899)->elements[5];
 
 
-object c_733460 = apply_va(data,(closure)&c_733328,2,primitive_string_91append, r_73355);
+object c_733460 = apply(data,(closure)&c_733328,primitive_string_91append, r_73355);
 return_closcall1(data,(closure)&c_733328,  c_733460);; 
 }
 
@@ -2806,7 +2806,7 @@ c_733055.elements[8] = ((closureN)self_73959)->elements[8];
 c_733055.elements[9] = ((closureN)self_73959)->elements[9];
 
 
-object c_733134 = apply_va(data,(closure)&c_733055,2,primitive_string_91append, r_73410);
+object c_733134 = apply(data,(closure)&c_733055,primitive_string_91append, r_73410);
 return_closcall1(data,(closure)&c_733055,  c_733134);; 
 }
 
@@ -3541,7 +3541,7 @@ c_732804.elements[0] = ((closureN)self_731000)->elements[0];
 c_732804.elements[1] = ((closureN)self_731000)->elements[1];
 
 
-object c_732818 = apply_va(data,(closure)&c_732804,2,__glo_append_scheme_base, r_73483);
+object c_732818 = apply(data,(closure)&c_732804,__glo_append_scheme_base, r_73483);
 return_closcall1(data,(closure)&c_732804,  c_732818);; 
 }
 

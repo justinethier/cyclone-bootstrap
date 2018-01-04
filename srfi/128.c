@@ -6280,7 +6280,7 @@ c_733107.elements = (object *)alloca(sizeof(object) * 1);
 c_733107.elements[0] = ((closureN)self_731735)->elements[0];
 
 
-object c_733106 = apply_va(data,  k_731077,2,&c_733107, args_73142_73470);
+object c_733106 = apply(data,  k_731077,&c_733107, args_73142_73470);
 return_closcall1(data,  k_731077,  c_733106);
 } else { 
     make_pair(c_733119,quote_n,NULL);
@@ -6298,7 +6298,7 @@ c_733124.elements = (object *)alloca(sizeof(object) * 1);
 c_733124.elements[0] = ((closureN)self_731735)->elements[0];
 
 
-object c_733123 = apply_va(data,  k_731077,2,&c_733124, args_73142_73470);
+object c_733123 = apply(data,  k_731077,&c_733124, args_73142_73470);
 return_closcall1(data,  k_731077,  c_733123);
 } else { 
   

@@ -894,7 +894,7 @@ if( (boolean_f != c_731218) ){
   
 mclosure0(c_731229, (function_type)__lambda_130);c_731229.num_args = 2;
 
-object c_731228 = apply_va(data,  k_73196,2,&c_731229, args_7352_7362);
+object c_731228 = apply(data,  k_73196,&c_731229, args_7352_7362);
 return_closcall1(data,  k_73196,  c_731228);
 } else { 
     make_pair(c_731253,quote_last,NULL);
@@ -905,7 +905,7 @@ if( (boolean_f != c_731246) ){
   
 mclosure0(c_731258, (function_type)__lambda_132);c_731258.num_args = 3;
 
-object c_731257 = apply_va(data,  k_73196,2,&c_731258, args_7352_7362);
+object c_731257 = apply(data,  k_73196,&c_731258, args_7352_7362);
 return_closcall1(data,  k_73196,  c_731257);
 } else { 
   
@@ -1285,7 +1285,7 @@ if( (boolean_f != c_731101) ){
   
 mclosure0(c_731115, (function_type)__lambda_104);c_731115.num_args = 5;
 
-object c_731114 = apply_va(data,  k_73243,2,&c_731115, args_7345_7383);
+object c_731114 = apply(data,  k_73243,&c_731115, args_7345_7383);
 return_closcall1(data,  k_73243,  c_731114);
 } else { 
     make_pair(c_731127,quote_seed,NULL);
@@ -1297,7 +1297,7 @@ if( (boolean_f != c_731119) ){
   
 mclosure0(c_731132, (function_type)__lambda_106);c_731132.num_args = 4;
 
-object c_731131 = apply_va(data,  k_73243,2,&c_731132, args_7345_7383);
+object c_731131 = apply(data,  k_73243,&c_731132, args_7345_7383);
 return_closcall1(data,  k_73243,  c_731131);
 } else { 
   
@@ -1558,7 +1558,7 @@ if( (boolean_f != c_731007) ){
   
 mclosure0(c_731021, (function_type)__lambda_88);c_731021.num_args = 5;
 
-object c_731020 = apply_va(data,  k_73270,2,&c_731021, args_7338_73102);
+object c_731020 = apply(data,  k_73270,&c_731021, args_7338_73102);
 return_closcall1(data,  k_73270,  c_731020);
 } else { 
     make_pair(c_731033,quote_seed,NULL);
@@ -1570,7 +1570,7 @@ if( (boolean_f != c_731025) ){
   
 mclosure0(c_731038, (function_type)__lambda_90);c_731038.num_args = 4;
 
-object c_731037 = apply_va(data,  k_73270,2,&c_731038, args_7338_73102);
+object c_731037 = apply(data,  k_73270,&c_731038, args_7338_73102);
 return_closcall1(data,  k_73270,  c_731037);
 } else { 
   
@@ -1688,7 +1688,7 @@ if( (boolean_f != c_73934) ){
   
 mclosure0(c_73943, (function_type)__lambda_76);c_73943.num_args = 0;
 
-object c_73942 = apply_va(data,  k_73295,2,&c_73943, args_7331_73117);
+object c_73942 = apply(data,  k_73295,&c_73943, args_7331_73117);
 return_closcall1(data,  k_73295,  c_73942);
 } else { 
     make_pair(c_73952,quote_queue,NULL);
@@ -1697,7 +1697,7 @@ if( (boolean_f != c_73947) ){
   
 mclosure0(c_73957, (function_type)__lambda_77);c_73957.num_args = 1;
 
-object c_73956 = apply_va(data,  k_73295,2,&c_73957, args_7331_73117);
+object c_73956 = apply(data,  k_73295,&c_73957, args_7331_73117);
 return_closcall1(data,  k_73295,  c_73956);
 } else { 
     object c_73961 = Cyc_num_fast_gte_op(data,Cyc_length(data, args_7331_73117), obj_int2obj(0));
@@ -1705,7 +1705,7 @@ if( (boolean_f != c_73961) ){
   
 mclosure0(c_73968, (function_type)__lambda_80);c_73968.num_args = 0;
 
-object c_73967 = apply_va(data,  k_73295,2,&c_73968, args_7331_73117);
+object c_73967 = apply(data,  k_73295,&c_73968, args_7331_73117);
 return_closcall1(data,  k_73295,  c_73967);
 } else { 
   
@@ -2640,7 +2640,7 @@ if( (boolean_f != c_73653) ){
   
 mclosure0(c_73663, (function_type)__lambda_13);c_73663.num_args = 1;
 
-object c_73662 = apply_va(data,  k_73417,2,&c_73663, args_733_73152);
+object c_73662 = apply(data,  k_73417,&c_73663, args_733_73152);
 return_closcall1(data,  k_73417,  c_73662);
 } else { 
     make_pair(c_73680,quote_last,NULL);
@@ -2650,7 +2650,7 @@ if( (boolean_f != c_73674) ){
   
 mclosure0(c_73685, (function_type)__lambda_14);c_73685.num_args = 2;
 
-object c_73684 = apply_va(data,  k_73417,2,&c_73685, args_733_73152);
+object c_73684 = apply(data,  k_73417,&c_73685, args_733_73152);
 return_closcall1(data,  k_73417,  c_73684);
 } else { 
   

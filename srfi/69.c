@@ -3610,7 +3610,7 @@ make_pair(c_731590,((closureN)self_73946)->elements[1], args_73273);
 
 make_pair(c_731586,((closureN)self_73946)->elements[0], &c_731590);
 
-object c_731583 = apply_va(data,  k_73613,2,__glo_make_91hash_91table_srfi_69, &c_731586);
+object c_731583 = apply(data,  k_73613,__glo_make_91hash_91table_srfi_69, &c_731586);
 return_closcall1(data,  k_73613,  c_731583);; 
 }
 

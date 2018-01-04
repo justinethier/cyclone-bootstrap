@@ -11910,7 +11910,7 @@ if( (boolean_f != c_733493) ){
 
 static void __lambda_215(void *data, int argc, object self_732166, object r_731377) {
   
-object c_733487 = apply_va(data,  ((closureN)self_732166)->elements[0],2,((closureN)self_732166)->elements[1], r_731377);
+object c_733487 = apply(data,  ((closureN)self_732166)->elements[0],((closureN)self_732166)->elements[1], r_731377);
 return_closcall1(data,  ((closureN)self_732166)->elements[0],  c_733487);; 
 }
 
@@ -12408,7 +12408,7 @@ c_733339.elements[0] = ((closureN)self_732192)->elements[0];
 c_733339.elements[1] = ((closureN)self_732192)->elements[1];
 
 
-object c_733345 = apply_va(data,(closure)&c_733339,2,((closureN)self_732192)->elements[2], r_731411);
+object c_733345 = apply(data,(closure)&c_733339,((closureN)self_732192)->elements[2], r_731411);
 return_closcall1(data,(closure)&c_733339,  c_733345);; 
 }
 
@@ -12941,7 +12941,7 @@ c_733124.elements = (object *)alloca(sizeof(object) * 1);
 c_733124.elements[0] = k_731480;
 
 
-object c_733129 = apply_va(data,(closure)&c_733124,2,__glo__75import_scheme_eval, Cyc_cdr(data, ((closureN)self_732223)->elements[0]));
+object c_733129 = apply(data,(closure)&c_733124,__glo__75import_scheme_eval, Cyc_cdr(data, ((closureN)self_732223)->elements[0]));
 return_closcall1(data,(closure)&c_733124,  c_733129);; 
 }
 
@@ -14346,7 +14346,7 @@ static void __lambda_63(void *data, int argc, object self_732301, object k_73164
 static void __lambda_62(void *data, int argc, closure _,object k_731653, object proc_73619, object args_73618) {
   Cyc_st_add(data, "scheme/eval.sld:apply-primitive-procedure");
 
-object c_732660 = apply_va(data,  k_731653,2,Cyc_cadr(data, proc_73619), args_73618);
+object c_732660 = apply(data,  k_731653,Cyc_cadr(data, proc_73619), args_73618);
 return_closcall1(data,  k_731653,  c_732660);; 
 }
 

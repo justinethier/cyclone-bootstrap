@@ -1060,7 +1060,7 @@ static void __lambda_46(void *data, int argc, object self_73195, object sexp_91s
   if( (boolean_f != Cyc_is_null(sexp_91strs_7361)) ){ 
   return_closcall1(data,  __glo_usage,  primitive__75halt);
 } else { 
-  mclosure0(c_73485,__lambda_45); object c_73486 = apply_va(data,&c_73485,2,primitive_string_91append, sexp_91strs_7361);
+  mclosure0(c_73485,__lambda_45); object c_73486 = apply(data,&c_73485,primitive_string_91append, sexp_91strs_7361);
 return_direct1(data,__lambda_45,c_73486);}
 ; 
 }

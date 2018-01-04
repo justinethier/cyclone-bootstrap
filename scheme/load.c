@@ -386,7 +386,7 @@ static void __lambda_0(void *data, int argc, object self_7320, object k_7314, ob
   
 make_pair(c_7333,expr_735, ((closureN)self_7320)->elements[0]);
 
-object c_7330 = apply_va(data,  k_7314,2,__glo_eval_scheme_eval, &c_7333);
+object c_7330 = apply(data,  k_7314,__glo_eval_scheme_eval, &c_7333);
 return_closcall1(data,  k_7314,  c_7330);; 
 }
 

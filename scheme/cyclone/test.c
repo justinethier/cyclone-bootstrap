@@ -6345,7 +6345,7 @@ return_closcall1(data,  __glo_newline_scheme_base,  &c_7310420);;
 
 static void __lambda_861(void *data, int argc, object self_733578, object r_731638) {
   
-object c_7310425 = apply_va(data,  ((closureN)self_733578)->elements[1],2,__glo_test_91print_91failure_scheme_cyclone_test, ((closureN)self_733578)->elements[0]);
+object c_7310425 = apply(data,  ((closureN)self_733578)->elements[1],__glo_test_91print_91failure_scheme_cyclone_test, ((closureN)self_733578)->elements[0]);
 return_closcall1(data,  ((closureN)self_733578)->elements[1],  c_7310425);; 
 }
 

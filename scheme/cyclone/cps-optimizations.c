@@ -10682,7 +10682,7 @@ static void __lambda_456(void *data, int argc, object self_733259, object k_7318
 
 static void __lambda_455(void *data, int argc, object self_733260, object r_731892) {
   
-object c_736428 = apply_va(data,  ((closureN)self_733260)->elements[0],2,__glo_append_scheme_base, r_731892);
+object c_736428 = apply(data,  ((closureN)self_733260)->elements[0],__glo_append_scheme_base, r_731892);
 return_closcall1(data,  ((closureN)self_733260)->elements[0],  c_736428);; 
 }
 

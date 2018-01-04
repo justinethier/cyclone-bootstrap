@@ -11707,7 +11707,7 @@ c_735611.elements = (object *)alloca(sizeof(object) * 1);
 c_735611.elements[0] = ((closureN)self_732760)->elements[0];
 
 
-object c_735616 = apply_va(data,(closure)&c_735611,2,primitive_string_91append, r_731662);
+object c_735616 = apply(data,(closure)&c_735611,primitive_string_91append, r_731662);
 return_closcall1(data,(closure)&c_735611,  c_735616);; 
 }
 
