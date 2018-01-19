@@ -747,7 +747,8 @@
     (define (macro:macro? exp defined-macros) (assoc (car exp) defined-macros))
 
     (define (macro:get-local-renames macro current-rename-lis)
-      (if (eq? 3 (length macro))
+      (if (and (eq? 3 (length macro)) 
+               (not (null? (caddr macro))))
           (caddr macro)
           current-rename-lis))
 
@@ -759,7 +760,7 @@
              (result #f))
         ;(newline)
         ;(display "/* ")
-        ;(display (list 'macro:expand exp macro compiled-macro?))
+        ;(display (list 'macro:expand exp macro compiled-macro? local-renamed))
         ;(display "*/ ")
 
           ;; Invoke ER macro
@@ -887,7 +888,9 @@
 ;;(newline)
   (cond
     ((const? exp)      exp)
-    ((prim? exp)       exp)
+    ((and (prim? exp) ;; Allow lambda vars to shadown primitives
+          (not (assoc exp local-renamed)))
+     exp)
     ((ref? exp)        
      (let ((renamed (assoc exp local-renamed)))
        (if renamed
@@ -1129,7 +1132,8 @@
 ;(newline (current-error-port))
       (cond
        ((or (const? this-exp)
-            (prim? this-exp)
+            (and (prim? this-exp)
+                 (not (assoc this-exp local-renamed)))
             (quote? this-exp)
             (define-c? this-exp))
 ;(log this-exp)

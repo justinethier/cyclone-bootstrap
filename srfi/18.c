@@ -373,75 +373,75 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(cyc_91thread_91obj);
-static void __lambda_47(void *data, int argc, closure _,object k_7334) ;
-static void __lambda_46(void *data, int argc, object self_73100, object r_7336) ;
+static void __lambda_47(void *data, int argc, closure _,object k_7350) ;
+static void __lambda_46(void *data, int argc, object self_73116, object r_7352) ;
 static void __lambda_45(void *data, int argc, closure _, object k, object cond) ;
 static void __lambda_44(void *data, int argc, closure _, object k, object cond) ;
 static void __lambda_43(void *data, int argc, closure _, object k, object cond, object lock) ;
 static void __lambda_42(void *data, int argc, closure _, object k) ;
 static void __lambda_41(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_40(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_39(void *data, int argc, closure _,object k_7340, object mutex_7317, object opts_7316_raw, ...) ;
-static void __lambda_38(void *data, int argc, object self_73101, object r_7341) ;
-static void __lambda_37(void *data, int argc, object self_73102, object r_7345) ;
-static void __lambda_36(void *data, int argc, object self_73103, object r_7342) ;
-static void __lambda_35(void *data, int argc, object self_73104, object r_7344) ;
+static void __lambda_39(void *data, int argc, closure _,object k_7356, object mutex_7323_7333, object opts_7322_7332_raw, ...) ;
+static void __lambda_38(void *data, int argc, object self_73117, object r_7357) ;
+static void __lambda_37(void *data, int argc, object self_73118, object r_7361) ;
+static void __lambda_36(void *data, int argc, object self_73119, object r_7358) ;
+static void __lambda_35(void *data, int argc, object self_73120, object r_7360) ;
 static void __lambda_34(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_33(void *data, int argc, closure _, object k) ;
 static void __lambda_32(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_31(void *data, int argc, closure _, object k) ;
 static void __lambda_30(void *data, int argc, closure _, object k, object obj) ;
 static void __lambda_29(void *data, int argc, closure _, object k, object timeout) ;
-static void __lambda_28(void *data, int argc, closure _,object k_7348, object t_7319) ;
-static void __lambda_27(void *data, int argc, object self_73105, object r_7349) ;
-static void __lambda_26(void *data, int argc, object self_73106, object k_7351) ;
-static void __lambda_25(void *data, int argc, object self_73107, object r_7352) ;
+static void __lambda_28(void *data, int argc, closure _,object k_7364, object t_7320_7335) ;
+static void __lambda_27(void *data, int argc, object self_73121, object r_7365) ;
+static void __lambda_26(void *data, int argc, object self_73122, object k_7367) ;
+static void __lambda_25(void *data, int argc, object self_73123, object r_7368) ;
 static void __lambda_24(void *data, int argc, closure _, object k, object thread_data_opaque) ;
 static void __lambda_23(void *data, int argc, closure _, object k) ;
-static void __lambda_22(void *data, int argc, closure _,object k_7356) ;
-static void __lambda_21(void *data, int argc, closure _,object k_7359, object t_7320) ;
-static void __lambda_20(void *data, int argc, object self_73108, object thunk_7321) ;
-static void __lambda_19(void *data, int argc, object self_73109, object k_7366) ;
-static void __lambda_18(void *data, int argc, object self_73110, object r_7368) ;
-static void __lambda_17(void *data, int argc, object self_73111, object r_7367) ;
-static void __lambda_16(void *data, int argc, object self_73112, object thread_91params_7322) ;
-static void __lambda_15(void *data, int argc, object self_73113, object r_7364) ;
-static void __lambda_14(void *data, int argc, object self_73114, object r_7362) ;
-static void __lambda_13(void *data, int argc, object self_73115, object r_7363) ;
+static void __lambda_22(void *data, int argc, closure _,object k_7372) ;
+static void __lambda_21(void *data, int argc, closure _,object k_7375, object t_7312_7336) ;
+static void __lambda_20(void *data, int argc, object self_73124, object thunk_7315_7337) ;
+static void __lambda_19(void *data, int argc, object self_73125, object k_7382) ;
+static void __lambda_18(void *data, int argc, object self_73126, object r_7384) ;
+static void __lambda_17(void *data, int argc, object self_73127, object r_7383) ;
+static void __lambda_16(void *data, int argc, object self_73128, object thread_91params_7318_7338) ;
+static void __lambda_15(void *data, int argc, object self_73129, object r_7380) ;
+static void __lambda_14(void *data, int argc, object self_73130, object r_7378) ;
+static void __lambda_13(void *data, int argc, object self_73131, object r_7379) ;
 static void __lambda_12(void *data, int argc, closure _, object k) ;
 static void __lambda_11(void *data, int argc, closure _, object k) ;
-static void __lambda_10(void *data, int argc, closure _,object k_7373) ;
-static void __lambda_9(void *data, int argc, object self_73116, object t_7323) ;
-static void __lambda_8(void *data, int argc, closure _,object k_7378, object t_7325, object obj_7324) ;
-static object __lambda_7(void *data, object ptr,object t_7326) ;
-static void __lambda_6(void *data, int argc, closure _,object k_7381, object t_7326) ;
-static object __lambda_5(void *data, object ptr,object t_7327) ;
-static void __lambda_4(void *data, int argc, closure _,object k_7384, object t_7327) ;
-static void __lambda_3(void *data, int argc, closure _,object k_7387, object thunk_7329, object name_7328_raw, ...) ;
-static void __lambda_2(void *data, int argc, object self_73117, object name_91str_7330) ;
-static void __lambda_1(void *data, int argc, object self_73118, object k_7390) ;
-static void __lambda_0(void *data, int argc, closure _,object k_7394, object obj_7331) ;
+static void __lambda_10(void *data, int argc, closure _,object k_7389) ;
+static void __lambda_9(void *data, int argc, object self_73132, object t_7311_7339) ;
+static void __lambda_8(void *data, int argc, closure _,object k_7394, object t_7310_7341, object obj_739_7340) ;
+static object __lambda_7(void *data, object ptr,object t_738_7342) ;
+static void __lambda_6(void *data, int argc, closure _,object k_7397, object t_738_7342) ;
+static object __lambda_5(void *data, object ptr,object t_737_7343) ;
+static void __lambda_4(void *data, int argc, closure _,object k_73100, object t_737_7343) ;
+static void __lambda_3(void *data, int argc, closure _,object k_73103, object thunk_735_7345, object name_734_7344_raw, ...) ;
+static void __lambda_2(void *data, int argc, object self_73133, object name_91str_736_7346) ;
+static void __lambda_1(void *data, int argc, object self_73134, object k_73106) ;
+static void __lambda_0(void *data, int argc, closure _,object k_73110, object obj_731_7347) ;
 
-static void __lambda_47(void *data, int argc, closure _,object k_7334) {
+static void __lambda_47(void *data, int argc, closure _,object k_7350) {
   Cyc_st_add(data, "srfi/18.sld:lib-init:srfi18");
 
-closureN_type c_73287;
-c_73287.hdr.mark = gc_color_red;
- c_73287.hdr.grayed = 0;
-c_73287.tag = closureN_tag;
- c_73287.fn = (function_type)__lambda_46;
-c_73287.num_args = 1;
-c_73287.num_elements = 1;
-c_73287.elements = (object *)alloca(sizeof(object) * 1);
-c_73287.elements[0] = k_7334;
+closureN_type c_73303;
+c_73303.hdr.mark = gc_color_red;
+ c_73303.hdr.grayed = 0;
+c_73303.tag = closureN_tag;
+ c_73303.fn = (function_type)__lambda_46;
+c_73303.num_args = 1;
+c_73303.num_elements = 1;
+c_73303.elements = (object *)alloca(sizeof(object) * 1);
+c_73303.elements[0] = k_7350;
 
 
-make_utf8_string_with_len(c_73292, "main thread", 11, 11);
-return_closcall6(data,  __glo_vector_scheme_base,  &c_73287, quote_cyc_91thread_91obj, boolean_f, boolean_f, &c_73292, boolean_f);; 
+make_utf8_string_with_len(c_73308, "main thread", 11, 11);
+return_closcall6(data,  __glo_vector_scheme_base,  &c_73303, quote_cyc_91thread_91obj, boolean_f, boolean_f, &c_73308, boolean_f);; 
 }
 
-static void __lambda_46(void *data, int argc, object self_73100, object r_7336) {
-  return_closcall1(data,  ((closureN)self_73100)->elements[0],  global_set(__glo__85primordial_91thread_85_srfi_18, r_7336));; 
+static void __lambda_46(void *data, int argc, object self_73116, object r_7352) {
+  return_closcall1(data,  ((closureN)self_73116)->elements[0],  global_set(__glo__85primordial_91thread_85_srfi_18, r_7352));; 
 }
 
 static void __lambda_45(void *data, int argc, closure _, object k, object cond) { Cyc_check_cond_var(data, cond);
@@ -487,87 +487,87 @@ static void __lambda_40(void *data, int argc, closure _, object k, object obj) {
           exit(1);
         }
         return_closcall1(data, k, boolean_t);  }
-static void __lambda_39(void *data, int argc, closure _,object k_7340, object mutex_7317, object opts_7316_raw, ...) {
-load_varargs(opts_7316, opts_7316_raw, argc - 2);
+static void __lambda_39(void *data, int argc, closure _,object k_7356, object mutex_7323_7333, object opts_7322_7332_raw, ...) {
+load_varargs(opts_7322_7332, opts_7322_7332_raw, argc - 2);
   Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
 
-closureN_type c_73252;
-c_73252.hdr.mark = gc_color_red;
- c_73252.hdr.grayed = 0;
-c_73252.tag = closureN_tag;
- c_73252.fn = (function_type)__lambda_38;
-c_73252.num_args = 1;
-c_73252.num_elements = 3;
-c_73252.elements = (object *)alloca(sizeof(object) * 3);
-c_73252.elements[0] = k_7340;
-c_73252.elements[1] = mutex_7317;
-c_73252.elements[2] = opts_7316;
+closureN_type c_73268;
+c_73268.hdr.mark = gc_color_red;
+ c_73268.hdr.grayed = 0;
+c_73268.tag = closureN_tag;
+ c_73268.fn = (function_type)__lambda_38;
+c_73268.num_args = 1;
+c_73268.num_elements = 3;
+c_73268.elements = (object *)alloca(sizeof(object) * 3);
+c_73268.elements[0] = k_7356;
+c_73268.elements[1] = mutex_7323_7333;
+c_73268.elements[2] = opts_7322_7332;
 
-return_closcall1(data,(closure)&c_73252,  Cyc_is_null(opts_7316));; 
+return_closcall1(data,(closure)&c_73268,  Cyc_is_null(opts_7322_7332));; 
 }
 
-static void __lambda_38(void *data, int argc, object self_73101, object r_7341) {
-  if( (boolean_f != r_7341) ){ 
-  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73101)->elements[0], ((closureN)self_73101)->elements[1]);
+static void __lambda_38(void *data, int argc, object self_73117, object r_7357) {
+  if( (boolean_f != r_7357) ){ 
+  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73117)->elements[0], ((closureN)self_73117)->elements[1]);
 } else { 
   
-closureN_type c_73257;
-c_73257.hdr.mark = gc_color_red;
- c_73257.hdr.grayed = 0;
-c_73257.tag = closureN_tag;
- c_73257.fn = (function_type)__lambda_37;
-c_73257.num_args = 1;
-c_73257.num_elements = 3;
-c_73257.elements = (object *)alloca(sizeof(object) * 3);
-c_73257.elements[0] = ((closureN)self_73101)->elements[0];
-c_73257.elements[1] = ((closureN)self_73101)->elements[1];
-c_73257.elements[2] = ((closureN)self_73101)->elements[2];
+closureN_type c_73273;
+c_73273.hdr.mark = gc_color_red;
+ c_73273.hdr.grayed = 0;
+c_73273.tag = closureN_tag;
+ c_73273.fn = (function_type)__lambda_37;
+c_73273.num_args = 1;
+c_73273.num_elements = 3;
+c_73273.elements = (object *)alloca(sizeof(object) * 3);
+c_73273.elements[0] = ((closureN)self_73117)->elements[0];
+c_73273.elements[1] = ((closureN)self_73117)->elements[1];
+c_73273.elements[2] = ((closureN)self_73117)->elements[2];
 
-return_closcall1(data,(closure)&c_73257,  Cyc_car(data, ((closureN)self_73101)->elements[2]));}
+return_closcall1(data,(closure)&c_73273,  Cyc_car(data, ((closureN)self_73117)->elements[2]));}
 ; 
 }
 
-static void __lambda_37(void *data, int argc, object self_73102, object r_7345) {
+static void __lambda_37(void *data, int argc, object self_73118, object r_7361) {
   
-closureN_type c_73259;
-c_73259.hdr.mark = gc_color_red;
- c_73259.hdr.grayed = 0;
-c_73259.tag = closureN_tag;
- c_73259.fn = (function_type)__lambda_36;
-c_73259.num_args = 1;
-c_73259.num_elements = 3;
-c_73259.elements = (object *)alloca(sizeof(object) * 3);
-c_73259.elements[0] = ((closureN)self_73102)->elements[0];
-c_73259.elements[1] = ((closureN)self_73102)->elements[1];
-c_73259.elements[2] = ((closureN)self_73102)->elements[2];
+closureN_type c_73275;
+c_73275.hdr.mark = gc_color_red;
+ c_73275.hdr.grayed = 0;
+c_73275.tag = closureN_tag;
+ c_73275.fn = (function_type)__lambda_36;
+c_73275.num_args = 1;
+c_73275.num_elements = 3;
+c_73275.elements = (object *)alloca(sizeof(object) * 3);
+c_73275.elements[0] = ((closureN)self_73118)->elements[0];
+c_73275.elements[1] = ((closureN)self_73118)->elements[1];
+c_73275.elements[2] = ((closureN)self_73118)->elements[2];
 
-return_closcall2(data,  __glo_condition_91variable_127_srfi_18,  &c_73259, r_7345);; 
+return_closcall2(data,  __glo_condition_91variable_127_srfi_18,  &c_73275, r_7361);; 
 }
 
-static void __lambda_36(void *data, int argc, object self_73103, object r_7342) {
-  if( (boolean_f != r_7342) ){ 
+static void __lambda_36(void *data, int argc, object self_73119, object r_7358) {
+  if( (boolean_f != r_7358) ){ 
   
-closureN_type c_73261;
-c_73261.hdr.mark = gc_color_red;
- c_73261.hdr.grayed = 0;
-c_73261.tag = closureN_tag;
- c_73261.fn = (function_type)__lambda_35;
-c_73261.num_args = 1;
-c_73261.num_elements = 2;
-c_73261.elements = (object *)alloca(sizeof(object) * 2);
-c_73261.elements[0] = ((closureN)self_73103)->elements[0];
-c_73261.elements[1] = ((closureN)self_73103)->elements[1];
+closureN_type c_73277;
+c_73277.hdr.mark = gc_color_red;
+ c_73277.hdr.grayed = 0;
+c_73277.tag = closureN_tag;
+ c_73277.fn = (function_type)__lambda_35;
+c_73277.num_args = 1;
+c_73277.num_elements = 2;
+c_73277.elements = (object *)alloca(sizeof(object) * 2);
+c_73277.elements[0] = ((closureN)self_73119)->elements[0];
+c_73277.elements[1] = ((closureN)self_73119)->elements[1];
 
-return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73261, Cyc_car(data, ((closureN)self_73103)->elements[2]), ((closureN)self_73103)->elements[1]);
+return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73277, Cyc_car(data, ((closureN)self_73119)->elements[2]), ((closureN)self_73119)->elements[1]);
 } else { 
   
-make_utf8_string_with_len(c_73271, "mutex-unlock! - unhandled args", 30, 30);
-return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73103)->elements[0], &c_73271, ((closureN)self_73103)->elements[1], ((closureN)self_73103)->elements[2]);}
+make_utf8_string_with_len(c_73287, "mutex-unlock! - unhandled args", 30, 30);
+return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73119)->elements[0], &c_73287, ((closureN)self_73119)->elements[1], ((closureN)self_73119)->elements[2]);}
 ; 
 }
 
-static void __lambda_35(void *data, int argc, object self_73104, object r_7344) {
-  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73104)->elements[0], ((closureN)self_73104)->elements[1]);; 
+static void __lambda_35(void *data, int argc, object self_73120, object r_7360) {
+  return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73120)->elements[0], ((closureN)self_73120)->elements[1]);; 
 }
 
 static void __lambda_34(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
@@ -598,63 +598,63 @@ static void __lambda_30(void *data, int argc, closure _, object k, object obj) {
 static void __lambda_29(void *data, int argc, closure _, object k, object timeout) { set_thread_blocked(data, k);
         Cyc_thread_sleep(data, timeout);
         return_thread_runnable(data, boolean_t);  }
-static void __lambda_28(void *data, int argc, closure _,object k_7348, object t_7319) {
+static void __lambda_28(void *data, int argc, closure _,object k_7364, object t_7320_7335) {
   Cyc_st_add(data, "srfi/18.sld:thread-join!");
 
-closureN_type c_73223;
-c_73223.hdr.mark = gc_color_red;
- c_73223.hdr.grayed = 0;
-c_73223.tag = closureN_tag;
- c_73223.fn = (function_type)__lambda_26;
-c_73223.num_args = 0;
-c_73223.num_elements = 1;
-c_73223.elements = (object *)alloca(sizeof(object) * 1);
-c_73223.elements[0] = t_7319;
+closureN_type c_73239;
+c_73239.hdr.mark = gc_color_red;
+ c_73239.hdr.grayed = 0;
+c_73239.tag = closureN_tag;
+ c_73239.fn = (function_type)__lambda_26;
+c_73239.num_args = 0;
+c_73239.num_elements = 1;
+c_73239.elements = (object *)alloca(sizeof(object) * 1);
+c_73239.elements[0] = t_7320_7335;
 
 
-closureN_type c_73236;
-c_73236.hdr.mark = gc_color_red;
- c_73236.hdr.grayed = 0;
-c_73236.tag = closureN_tag;
- c_73236.fn = (function_type)__lambda_27;
-c_73236.num_args = 1;
-c_73236.num_elements = 2;
-c_73236.elements = (object *)alloca(sizeof(object) * 2);
-c_73236.elements[0] = k_7348;
-c_73236.elements[1] = t_7319;
+closureN_type c_73252;
+c_73252.hdr.mark = gc_color_red;
+ c_73252.hdr.grayed = 0;
+c_73252.tag = closureN_tag;
+ c_73252.fn = (function_type)__lambda_27;
+c_73252.num_args = 1;
+c_73252.num_elements = 2;
+c_73252.elements = (object *)alloca(sizeof(object) * 2);
+c_73252.elements[0] = k_7364;
+c_73252.elements[1] = t_7320_7335;
 
-return_closcall1(data,(closure)&c_73223,  &c_73236);; 
+return_closcall1(data,(closure)&c_73239,  &c_73252);; 
 }
 
-static void __lambda_27(void *data, int argc, object self_73105, object r_7349) {
-  if( (boolean_f != r_7349) ){ 
-  return_closcall2(data,  __glo__75thread_91join_67_srfi_18,  ((closureN)self_73105)->elements[0], Cyc_vector_ref(data, ((closureN)self_73105)->elements[1], obj_int2obj(2)));
+static void __lambda_27(void *data, int argc, object self_73121, object r_7365) {
+  if( (boolean_f != r_7365) ){ 
+  return_closcall2(data,  __glo__75thread_91join_67_srfi_18,  ((closureN)self_73121)->elements[0], Cyc_vector_ref(data, ((closureN)self_73121)->elements[1], obj_int2obj(2)));
 } else { 
-  return_closcall1(data,  ((closureN)self_73105)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73121)->elements[0],  boolean_f);}
 ; 
 }
 
-static void __lambda_26(void *data, int argc, object self_73106, object k_7351) {
+static void __lambda_26(void *data, int argc, object self_73122, object k_7367) {
   
-closureN_type c_73225;
-c_73225.hdr.mark = gc_color_red;
- c_73225.hdr.grayed = 0;
-c_73225.tag = closureN_tag;
- c_73225.fn = (function_type)__lambda_25;
-c_73225.num_args = 1;
-c_73225.num_elements = 2;
-c_73225.elements = (object *)alloca(sizeof(object) * 2);
-c_73225.elements[0] = k_7351;
-c_73225.elements[1] = ((closureN)self_73106)->elements[0];
+closureN_type c_73241;
+c_73241.hdr.mark = gc_color_red;
+ c_73241.hdr.grayed = 0;
+c_73241.tag = closureN_tag;
+ c_73241.fn = (function_type)__lambda_25;
+c_73241.num_args = 1;
+c_73241.num_elements = 2;
+c_73241.elements = (object *)alloca(sizeof(object) * 2);
+c_73241.elements[0] = k_7367;
+c_73241.elements[1] = ((closureN)self_73122)->elements[0];
 
-return_closcall2(data,  __glo_thread_127_srfi_18,  &c_73225, ((closureN)self_73106)->elements[0]);; 
+return_closcall2(data,  __glo_thread_127_srfi_18,  &c_73241, ((closureN)self_73122)->elements[0]);; 
 }
 
-static void __lambda_25(void *data, int argc, object self_73107, object r_7352) {
-  if( (boolean_f != r_7352) ){ 
-  return_closcall1(data,  ((closureN)self_73107)->elements[0],  Cyc_is_opaque(Cyc_vector_ref(data, ((closureN)self_73107)->elements[1], obj_int2obj(2))));
+static void __lambda_25(void *data, int argc, object self_73123, object r_7368) {
+  if( (boolean_f != r_7368) ){ 
+  return_closcall1(data,  ((closureN)self_73123)->elements[0],  Cyc_is_opaque(Cyc_vector_ref(data, ((closureN)self_73123)->elements[1], obj_int2obj(2))));
 } else { 
-  return_closcall1(data,  ((closureN)self_73107)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73123)->elements[0],  boolean_f);}
 ; 
 }
 
@@ -669,146 +669,146 @@ static void __lambda_24(void *data, int argc, closure _, object k, object thread
         }
         return_thread_runnable(data, boolean_t); }
 static void __lambda_23(void *data, int argc, closure _, object k) { Cyc_end_thread(data);  }
-static void __lambda_22(void *data, int argc, closure _,object k_7356) {
+static void __lambda_22(void *data, int argc, closure _,object k_7372) {
   Cyc_st_add(data, "srfi/18.sld:thread-yield!");
-return_closcall2(data,  __glo_thread_91sleep_67_srfi_18,  k_7356, obj_int2obj(1));; 
+return_closcall2(data,  __glo_thread_91sleep_67_srfi_18,  k_7372, obj_int2obj(1));; 
 }
 
-static void __lambda_21(void *data, int argc, closure _,object k_7359, object t_7320) {
+static void __lambda_21(void *data, int argc, closure _,object k_7375, object t_7312_7336) {
   Cyc_st_add(data, "srfi/18.sld:thread-start!");
 
-closureN_type c_73183;
-c_73183.hdr.mark = gc_color_red;
- c_73183.hdr.grayed = 0;
-c_73183.tag = closureN_tag;
- c_73183.fn = (function_type)__lambda_20;
-c_73183.num_args = 1;
-c_73183.num_elements = 2;
-c_73183.elements = (object *)alloca(sizeof(object) * 2);
-c_73183.elements[0] = k_7359;
-c_73183.elements[1] = t_7320;
+closureN_type c_73199;
+c_73199.hdr.mark = gc_color_red;
+ c_73199.hdr.grayed = 0;
+c_73199.tag = closureN_tag;
+ c_73199.fn = (function_type)__lambda_20;
+c_73199.num_args = 1;
+c_73199.num_elements = 2;
+c_73199.elements = (object *)alloca(sizeof(object) * 2);
+c_73199.elements[0] = k_7375;
+c_73199.elements[1] = t_7312_7336;
 
-return_closcall1(data,(closure)&c_73183,  Cyc_vector_ref(data, t_7320, obj_int2obj(1)));; 
+return_closcall1(data,(closure)&c_73199,  Cyc_vector_ref(data, t_7312_7336, obj_int2obj(1)));; 
 }
 
-static void __lambda_20(void *data, int argc, object self_73108, object thunk_7321) {
+static void __lambda_20(void *data, int argc, object self_73124, object thunk_7315_7337) {
   
-closureN_type c_73185;
-c_73185.hdr.mark = gc_color_red;
- c_73185.hdr.grayed = 0;
-c_73185.tag = closureN_tag;
- c_73185.fn = (function_type)__lambda_16;
-c_73185.num_args = 1;
-c_73185.num_elements = 2;
-c_73185.elements = (object *)alloca(sizeof(object) * 2);
-c_73185.elements[0] = ((closureN)self_73108)->elements[0];
-c_73185.elements[1] = ((closureN)self_73108)->elements[1];
+closureN_type c_73201;
+c_73201.hdr.mark = gc_color_red;
+ c_73201.hdr.grayed = 0;
+c_73201.tag = closureN_tag;
+ c_73201.fn = (function_type)__lambda_16;
+c_73201.num_args = 1;
+c_73201.num_elements = 2;
+c_73201.elements = (object *)alloca(sizeof(object) * 2);
+c_73201.elements[0] = ((closureN)self_73124)->elements[0];
+c_73201.elements[1] = ((closureN)self_73124)->elements[1];
 
 
-closureN_type c_73204;
-c_73204.hdr.mark = gc_color_red;
- c_73204.hdr.grayed = 0;
-c_73204.tag = closureN_tag;
- c_73204.fn = (function_type)__lambda_19;
-c_73204.num_args = 0;
-c_73204.num_elements = 2;
-c_73204.elements = (object *)alloca(sizeof(object) * 2);
-c_73204.elements[0] = ((closureN)self_73108)->elements[1];
-c_73204.elements[1] = thunk_7321;
+closureN_type c_73220;
+c_73220.hdr.mark = gc_color_red;
+ c_73220.hdr.grayed = 0;
+c_73220.tag = closureN_tag;
+ c_73220.fn = (function_type)__lambda_19;
+c_73220.num_args = 0;
+c_73220.num_elements = 2;
+c_73220.elements = (object *)alloca(sizeof(object) * 2);
+c_73220.elements[0] = ((closureN)self_73124)->elements[1];
+c_73220.elements[1] = thunk_7315_7337;
 
 
-make_pair(c_73202,((closureN)self_73108)->elements[1], &c_73204);
-return_closcall1(data,(closure)&c_73185,  &c_73202);; 
+make_pair(c_73218,((closureN)self_73124)->elements[1], &c_73220);
+return_closcall1(data,(closure)&c_73201,  &c_73218);; 
 }
 
-static void __lambda_19(void *data, int argc, object self_73109, object k_7366) {
+static void __lambda_19(void *data, int argc, object self_73125, object k_7382) {
   
-closureN_type c_73206;
-c_73206.hdr.mark = gc_color_red;
- c_73206.hdr.grayed = 0;
-c_73206.tag = closureN_tag;
- c_73206.fn = (function_type)__lambda_18;
-c_73206.num_args = 1;
-c_73206.num_elements = 3;
-c_73206.elements = (object *)alloca(sizeof(object) * 3);
-c_73206.elements[0] = k_7366;
-c_73206.elements[1] = ((closureN)self_73109)->elements[0];
-c_73206.elements[2] = ((closureN)self_73109)->elements[1];
+closureN_type c_73222;
+c_73222.hdr.mark = gc_color_red;
+ c_73222.hdr.grayed = 0;
+c_73222.tag = closureN_tag;
+ c_73222.fn = (function_type)__lambda_18;
+c_73222.num_args = 1;
+c_73222.num_elements = 3;
+c_73222.elements = (object *)alloca(sizeof(object) * 3);
+c_73222.elements[0] = k_7382;
+c_73222.elements[1] = ((closureN)self_73125)->elements[0];
+c_73222.elements[2] = ((closureN)self_73125)->elements[1];
 
-return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  &c_73206);; 
+return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  &c_73222);; 
 }
 
-static void __lambda_18(void *data, int argc, object self_73110, object r_7368) {
+static void __lambda_18(void *data, int argc, object self_73126, object r_7384) {
   
-closureN_type c_73208;
-c_73208.hdr.mark = gc_color_red;
- c_73208.hdr.grayed = 0;
-c_73208.tag = closureN_tag;
- c_73208.fn = (function_type)__lambda_17;
-c_73208.num_args = 1;
-c_73208.num_elements = 2;
-c_73208.elements = (object *)alloca(sizeof(object) * 2);
-c_73208.elements[0] = ((closureN)self_73110)->elements[0];
-c_73208.elements[1] = ((closureN)self_73110)->elements[2];
+closureN_type c_73224;
+c_73224.hdr.mark = gc_color_red;
+ c_73224.hdr.grayed = 0;
+c_73224.tag = closureN_tag;
+ c_73224.fn = (function_type)__lambda_17;
+c_73224.num_args = 1;
+c_73224.num_elements = 2;
+c_73224.elements = (object *)alloca(sizeof(object) * 2);
+c_73224.elements[0] = ((closureN)self_73126)->elements[0];
+c_73224.elements[1] = ((closureN)self_73126)->elements[2];
 
-return_closcall1(data,(closure)&c_73208,  Cyc_vector_set(data, ((closureN)self_73110)->elements[1], obj_int2obj(2), r_7368));; 
+return_closcall1(data,(closure)&c_73224,  Cyc_vector_set(data, ((closureN)self_73126)->elements[1], obj_int2obj(2), r_7384));; 
 }
 
-static void __lambda_17(void *data, int argc, object self_73111, object r_7367) {
-  return_closcall1(data,  ((closureN)self_73111)->elements[1],  ((closureN)self_73111)->elements[0]);; 
+static void __lambda_17(void *data, int argc, object self_73127, object r_7383) {
+  return_closcall1(data,  ((closureN)self_73127)->elements[1],  ((closureN)self_73127)->elements[0]);; 
 }
 
-static void __lambda_16(void *data, int argc, object self_73112, object thread_91params_7322) {
+static void __lambda_16(void *data, int argc, object self_73128, object thread_91params_7318_7338) {
   
-closureN_type c_73187;
-c_73187.hdr.mark = gc_color_red;
- c_73187.hdr.grayed = 0;
-c_73187.tag = closureN_tag;
- c_73187.fn = (function_type)__lambda_15;
-c_73187.num_args = 1;
-c_73187.num_elements = 3;
-c_73187.elements = (object *)alloca(sizeof(object) * 3);
-c_73187.elements[0] = ((closureN)self_73112)->elements[0];
-c_73187.elements[1] = ((closureN)self_73112)->elements[1];
-c_73187.elements[2] = thread_91params_7322;
+closureN_type c_73203;
+c_73203.hdr.mark = gc_color_red;
+ c_73203.hdr.grayed = 0;
+c_73203.tag = closureN_tag;
+ c_73203.fn = (function_type)__lambda_15;
+c_73203.num_args = 1;
+c_73203.num_elements = 3;
+c_73203.elements = (object *)alloca(sizeof(object) * 3);
+c_73203.elements[0] = ((closureN)self_73128)->elements[0];
+c_73203.elements[1] = ((closureN)self_73128)->elements[1];
+c_73203.elements[2] = thread_91params_7318_7338;
 
-return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  &c_73187);; 
+return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  &c_73203);; 
 }
 
-static void __lambda_15(void *data, int argc, object self_73113, object r_7364) {
+static void __lambda_15(void *data, int argc, object self_73129, object r_7380) {
   
-closureN_type c_73189;
-c_73189.hdr.mark = gc_color_red;
- c_73189.hdr.grayed = 0;
-c_73189.tag = closureN_tag;
- c_73189.fn = (function_type)__lambda_14;
-c_73189.num_args = 1;
-c_73189.num_elements = 2;
-c_73189.elements = (object *)alloca(sizeof(object) * 2);
-c_73189.elements[0] = ((closureN)self_73113)->elements[0];
-c_73189.elements[1] = ((closureN)self_73113)->elements[2];
+closureN_type c_73205;
+c_73205.hdr.mark = gc_color_red;
+ c_73205.hdr.grayed = 0;
+c_73205.tag = closureN_tag;
+ c_73205.fn = (function_type)__lambda_14;
+c_73205.num_args = 1;
+c_73205.num_elements = 2;
+c_73205.elements = (object *)alloca(sizeof(object) * 2);
+c_73205.elements[0] = ((closureN)self_73129)->elements[0];
+c_73205.elements[1] = ((closureN)self_73129)->elements[2];
 
-return_closcall1(data,(closure)&c_73189,  Cyc_vector_set(data, ((closureN)self_73113)->elements[1], obj_int2obj(2), r_7364));; 
+return_closcall1(data,(closure)&c_73205,  Cyc_vector_set(data, ((closureN)self_73129)->elements[1], obj_int2obj(2), r_7380));; 
 }
 
-static void __lambda_14(void *data, int argc, object self_73114, object r_7362) {
+static void __lambda_14(void *data, int argc, object self_73130, object r_7378) {
   
-closureN_type c_73191;
-c_73191.hdr.mark = gc_color_red;
- c_73191.hdr.grayed = 0;
-c_73191.tag = closureN_tag;
- c_73191.fn = (function_type)__lambda_13;
-c_73191.num_args = 1;
-c_73191.num_elements = 2;
-c_73191.elements = (object *)alloca(sizeof(object) * 2);
-c_73191.elements[0] = ((closureN)self_73114)->elements[0];
-c_73191.elements[1] = ((closureN)self_73114)->elements[1];
+closureN_type c_73207;
+c_73207.hdr.mark = gc_color_red;
+ c_73207.hdr.grayed = 0;
+c_73207.tag = closureN_tag;
+ c_73207.fn = (function_type)__lambda_13;
+c_73207.num_args = 1;
+c_73207.num_elements = 2;
+c_73207.elements = (object *)alloca(sizeof(object) * 2);
+c_73207.elements[0] = ((closureN)self_73130)->elements[0];
+c_73207.elements[1] = ((closureN)self_73130)->elements[1];
 
-return_closcall1(data,  __glo_Cyc_91minor_91gc_srfi_18,  &c_73191);; 
+return_closcall1(data,  __glo_Cyc_91minor_91gc_srfi_18,  &c_73207);; 
 }
 
-static void __lambda_13(void *data, int argc, object self_73115, object r_7363) {
-  return_closcall1(data,  ((closureN)self_73115)->elements[0],  Cyc_spawn_thread(((closureN)self_73115)->elements[1]));; 
+static void __lambda_13(void *data, int argc, object self_73131, object r_7379) {
+  return_closcall1(data,  ((closureN)self_73131)->elements[0],  Cyc_spawn_thread(((closureN)self_73131)->elements[1]));; 
 }
 
 static void __lambda_12(void *data, int argc, closure _, object k) { gc_thread_data *td = (gc_thread_data *)data;
@@ -816,118 +816,118 @@ static void __lambda_12(void *data, int argc, closure _, object k) { gc_thread_d
         return_closcall1(data, k, &co);  }
 static void __lambda_11(void *data, int argc, closure _, object k) { gc_thread_data *td = (gc_thread_data *)data;
         return_closcall1(data, k, td->scm_thread_obj);  }
-static void __lambda_10(void *data, int argc, closure _,object k_7373) {
+static void __lambda_10(void *data, int argc, closure _,object k_7389) {
   Cyc_st_add(data, "srfi/18.sld:current-thread");
 
-closureN_type c_73172;
-c_73172.hdr.mark = gc_color_red;
- c_73172.hdr.grayed = 0;
-c_73172.tag = closureN_tag;
- c_73172.fn = (function_type)__lambda_9;
-c_73172.num_args = 1;
-c_73172.num_elements = 1;
-c_73172.elements = (object *)alloca(sizeof(object) * 1);
-c_73172.elements[0] = k_7373;
+closureN_type c_73188;
+c_73188.hdr.mark = gc_color_red;
+ c_73188.hdr.grayed = 0;
+c_73188.tag = closureN_tag;
+ c_73188.fn = (function_type)__lambda_9;
+c_73188.num_args = 1;
+c_73188.num_elements = 1;
+c_73188.elements = (object *)alloca(sizeof(object) * 1);
+c_73188.elements[0] = k_7389;
 
-return_closcall1(data,  __glo__75current_91thread_srfi_18,  &c_73172);; 
+return_closcall1(data,  __glo__75current_91thread_srfi_18,  &c_73188);; 
 }
 
-static void __lambda_9(void *data, int argc, object self_73116, object t_7323) {
-  if( (boolean_f != Cyc_is_null(t_7323)) ){ 
-  return_closcall1(data,  ((closureN)self_73116)->elements[0],  __glo__85primordial_91thread_85_srfi_18);
+static void __lambda_9(void *data, int argc, object self_73132, object t_7311_7339) {
+  if( (boolean_f != Cyc_is_null(t_7311_7339)) ){ 
+  return_closcall1(data,  ((closureN)self_73132)->elements[0],  __glo__85primordial_91thread_85_srfi_18);
 } else { 
-  return_closcall1(data,  ((closureN)self_73116)->elements[0],  t_7323);}
+  return_closcall1(data,  ((closureN)self_73132)->elements[0],  t_7311_7339);}
 ; 
 }
 
-static void __lambda_8(void *data, int argc, closure _,object k_7378, object t_7325, object obj_7324) {
+static void __lambda_8(void *data, int argc, closure _,object k_7394, object t_7310_7341, object obj_739_7340) {
   Cyc_st_add(data, "srfi/18.sld:thread-specific-set!");
-return_closcall1(data,  k_7378,  Cyc_vector_set(data, t_7325, obj_int2obj(4), obj_7324));; 
+return_closcall1(data,  k_7394,  Cyc_vector_set(data, t_7310_7341, obj_int2obj(4), obj_739_7340));; 
 }
 
-static object __lambda_7(void *data, object ptr,object t_7326) {
+static object __lambda_7(void *data, object ptr,object t_738_7342) {
   Cyc_st_add(data, "srfi/18.sld:thread-specific");
-return_copy(ptr,  Cyc_vector_ref(data, t_7326, obj_int2obj(4)));; 
+return_copy(ptr,  Cyc_vector_ref(data, t_738_7342, obj_int2obj(4)));; 
 }
 
-static void __lambda_6(void *data, int argc, closure _,object k_7381, object t_7326) {
+static void __lambda_6(void *data, int argc, closure _,object k_7397, object t_738_7342) {
   Cyc_st_add(data, "srfi/18.sld:thread-specific");
-return_closcall1(data,  k_7381,  Cyc_vector_ref(data, t_7326, obj_int2obj(4)));; 
+return_closcall1(data,  k_7397,  Cyc_vector_ref(data, t_738_7342, obj_int2obj(4)));; 
 }
 
-static object __lambda_5(void *data, object ptr,object t_7327) {
+static object __lambda_5(void *data, object ptr,object t_737_7343) {
   Cyc_st_add(data, "srfi/18.sld:thread-name");
-return_copy(ptr,  Cyc_vector_ref(data, t_7327, obj_int2obj(3)));; 
+return_copy(ptr,  Cyc_vector_ref(data, t_737_7343, obj_int2obj(3)));; 
 }
 
-static void __lambda_4(void *data, int argc, closure _,object k_7384, object t_7327) {
+static void __lambda_4(void *data, int argc, closure _,object k_73100, object t_737_7343) {
   Cyc_st_add(data, "srfi/18.sld:thread-name");
-return_closcall1(data,  k_7384,  Cyc_vector_ref(data, t_7327, obj_int2obj(3)));; 
+return_closcall1(data,  k_73100,  Cyc_vector_ref(data, t_737_7343, obj_int2obj(3)));; 
 }
 
-static void __lambda_3(void *data, int argc, closure _,object k_7387, object thunk_7329, object name_7328_raw, ...) {
-load_varargs(name_7328, name_7328_raw, argc - 2);
+static void __lambda_3(void *data, int argc, closure _,object k_73103, object thunk_735_7345, object name_734_7344_raw, ...) {
+load_varargs(name_734_7344, name_734_7344_raw, argc - 2);
   Cyc_st_add(data, "srfi/18.sld:make-thread");
 
-closureN_type c_73136;
-c_73136.hdr.mark = gc_color_red;
- c_73136.hdr.grayed = 0;
-c_73136.tag = closureN_tag;
- c_73136.fn = (function_type)__lambda_1;
-c_73136.num_args = 0;
-c_73136.num_elements = 1;
-c_73136.elements = (object *)alloca(sizeof(object) * 1);
-c_73136.elements[0] = name_7328;
+closureN_type c_73152;
+c_73152.hdr.mark = gc_color_red;
+ c_73152.hdr.grayed = 0;
+c_73152.tag = closureN_tag;
+ c_73152.fn = (function_type)__lambda_1;
+c_73152.num_args = 0;
+c_73152.num_elements = 1;
+c_73152.elements = (object *)alloca(sizeof(object) * 1);
+c_73152.elements[0] = name_734_7344;
 
 
-closureN_type c_73146;
-c_73146.hdr.mark = gc_color_red;
- c_73146.hdr.grayed = 0;
-c_73146.tag = closureN_tag;
- c_73146.fn = (function_type)__lambda_2;
-c_73146.num_args = 1;
-c_73146.num_elements = 2;
-c_73146.elements = (object *)alloca(sizeof(object) * 2);
-c_73146.elements[0] = k_7387;
-c_73146.elements[1] = thunk_7329;
+closureN_type c_73162;
+c_73162.hdr.mark = gc_color_red;
+ c_73162.hdr.grayed = 0;
+c_73162.tag = closureN_tag;
+ c_73162.fn = (function_type)__lambda_2;
+c_73162.num_args = 1;
+c_73162.num_elements = 2;
+c_73162.elements = (object *)alloca(sizeof(object) * 2);
+c_73162.elements[0] = k_73103;
+c_73162.elements[1] = thunk_735_7345;
 
-return_closcall1(data,(closure)&c_73136,  &c_73146);; 
+return_closcall1(data,(closure)&c_73152,  &c_73162);; 
 }
 
-static void __lambda_2(void *data, int argc, object self_73117, object name_91str_7330) {
-  return_closcall6(data,  __glo_vector_scheme_base,  ((closureN)self_73117)->elements[0], quote_cyc_91thread_91obj, ((closureN)self_73117)->elements[1], boolean_f, name_91str_7330, boolean_f);; 
+static void __lambda_2(void *data, int argc, object self_73133, object name_91str_736_7346) {
+  return_closcall6(data,  __glo_vector_scheme_base,  ((closureN)self_73133)->elements[0], quote_cyc_91thread_91obj, ((closureN)self_73133)->elements[1], boolean_f, name_91str_736_7346, boolean_f);; 
 }
 
-static void __lambda_1(void *data, int argc, object self_73118, object k_7390) {
-  if( (boolean_f != Cyc_is_pair(((closureN)self_73118)->elements[0])) ){ 
-  return_closcall1(data,  k_7390,  Cyc_car(data, ((closureN)self_73118)->elements[0]));
+static void __lambda_1(void *data, int argc, object self_73134, object k_73106) {
+  if( (boolean_f != Cyc_is_pair(((closureN)self_73134)->elements[0])) ){ 
+  return_closcall1(data,  k_73106,  Cyc_car(data, ((closureN)self_73134)->elements[0]));
 } else { 
   
-make_utf8_string_with_len(c_73145, "", 0, 0);
-return_closcall1(data,  k_7390,  &c_73145);}
+make_utf8_string_with_len(c_73161, "", 0, 0);
+return_closcall1(data,  k_73106,  &c_73161);}
 ; 
 }
 
-static void __lambda_0(void *data, int argc, closure _,object k_7394, object obj_7331) {
+static void __lambda_0(void *data, int argc, closure _,object k_73110, object obj_731_7347) {
   Cyc_st_add(data, "srfi/18.sld:thread?");
-if( (boolean_f != Cyc_is_vector(obj_7331)) ){ 
-    object c_73124 = Cyc_num_fast_gt_op(data,Cyc_vector_length(data, obj_7331), obj_int2obj(0));
-if( (boolean_f != c_73124) ){ 
-  return_closcall1(data,  k_7394,  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref(data, obj_7331, obj_int2obj(0))));
+if( (boolean_f != Cyc_is_vector(obj_731_7347)) ){ 
+    object c_73140 = Cyc_num_fast_gt_op(data,Cyc_vector_length(data, obj_731_7347), obj_int2obj(0));
+if( (boolean_f != c_73140) ){ 
+  return_closcall1(data,  k_73110,  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref(data, obj_731_7347, obj_int2obj(0))));
 } else { 
-  return_closcall1(data,  k_7394,  boolean_f);}
+  return_closcall1(data,  k_73110,  boolean_f);}
 
 } else { 
-  return_closcall1(data,  k_7394,  boolean_f);}
+  return_closcall1(data,  k_73110,  boolean_f);}
 ; 
 }
 
 void c_srfi18_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-make_pair(pair_73293, find_or_add_symbol("thread-specific"), find_or_add_symbol("thread-specific__inline__"));
-make_pair(pair_73294, find_or_add_symbol("thread-name"), find_or_add_symbol("thread-name__inline__"));
-make_pair(c_73295, &pair_73293, NULL);
-make_pair(c_73296, &pair_73294, &c_73295);
-(((closure)cont)->fn)(data, 1, cont, &c_73296);
+make_pair(pair_73309, find_or_add_symbol("thread-specific"), find_or_add_symbol("thread-specific__inline__"));
+make_pair(pair_73310, find_or_add_symbol("thread-name"), find_or_add_symbol("thread-name__inline__"));
+make_pair(c_73311, &pair_73309, NULL);
+make_pair(c_73312, &pair_73310, &c_73311);
+(((closure)cont)->fn)(data, 1, cont, &c_73312);
  } 
 void c_srfi18_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
@@ -964,129 +964,129 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_make_91thread_srfi_18);
   add_global((object *) &__glo_thread_127_srfi_18);
   add_symbol(quote_cyc_91thread_91obj);
-  mclosure0(c_73285, (function_type)__lambda_47);c_73285.num_args = 0; 
-  __glo_lib_91init_117srfi18_srfi_18 = &c_73285; 
-  mclosure0(c_73284, (function_type)__lambda_45);c_73284.num_args = 1; 
-  __glo_condition_91variable_91broadcast_67_srfi_18 = &c_73284; 
-  mclosure0(c_73283, (function_type)__lambda_44);c_73283.num_args = 1; 
-  __glo_condition_91variable_91signal_67_srfi_18 = &c_73283; 
-  mclosure0(c_73282, (function_type)__lambda_43);c_73282.num_args = 2; 
-  __glo_condition_91variable_91wait_67_srfi_18 = &c_73282; 
-  mclosure0(c_73281, (function_type)__lambda_42);c_73281.num_args = 0; 
-  __glo_make_91condition_91variable_srfi_18 = &c_73281; 
-  mclosure0(c_73280, (function_type)__lambda_41);c_73280.num_args = 1; 
-  __glo_condition_91variable_127_srfi_18 = &c_73280; 
-  mclosure0(c_73279, (function_type)__lambda_40);c_73279.num_args = 1; 
-  __glo_Cyc_91mutex_91unlock_67_srfi_18 = &c_73279; 
-  mclosure0(c_73250, (function_type)__lambda_39);c_73250.num_args = 1; 
-  __glo_mutex_91unlock_67_srfi_18 = &c_73250; 
-  mclosure0(c_73249, (function_type)__lambda_34);c_73249.num_args = 1; 
-  __glo_mutex_91lock_67_srfi_18 = &c_73249; 
-  mclosure0(c_73248, (function_type)__lambda_33);c_73248.num_args = 0; 
-  __glo_make_91mutex_srfi_18 = &c_73248; 
-  mclosure0(c_73247, (function_type)__lambda_32);c_73247.num_args = 1; 
-  __glo_mutex_127_srfi_18 = &c_73247; 
-  mclosure0(c_73246, (function_type)__lambda_31);c_73246.num_args = 0; 
-  __glo_Cyc_91minor_91gc_srfi_18 = &c_73246; 
-  mclosure0(c_73245, (function_type)__lambda_30);c_73245.num_args = 1; 
-  __glo__91_125heap_srfi_18 = &c_73245; 
-  mclosure0(c_73244, (function_type)__lambda_29);c_73244.num_args = 1; 
-  __glo_thread_91sleep_67_srfi_18 = &c_73244; 
-  mclosure0(c_73221, (function_type)__lambda_28);c_73221.num_args = 1; 
-  __glo_thread_91join_67_srfi_18 = &c_73221; 
-  mclosure0(c_73220, (function_type)__lambda_24);c_73220.num_args = 1; 
-  __glo__75thread_91join_67_srfi_18 = &c_73220; 
-  mclosure0(c_73219, (function_type)__lambda_23);c_73219.num_args = 0; 
-  __glo_thread_91terminate_67_srfi_18 = &c_73219; 
-  mclosure0(c_73217, (function_type)__lambda_22);c_73217.num_args = 0; 
-  __glo_thread_91yield_67_srfi_18 = &c_73217; 
-  mclosure0(c_73181, (function_type)__lambda_21);c_73181.num_args = 1; 
-  __glo_thread_91start_67_srfi_18 = &c_73181; 
-  mclosure0(c_73180, (function_type)__lambda_12);c_73180.num_args = 0; 
-  __glo__75get_91thread_91data_srfi_18 = &c_73180; 
-  mclosure0(c_73179, (function_type)__lambda_11);c_73179.num_args = 0; 
-  __glo__75current_91thread_srfi_18 = &c_73179; 
-  mclosure0(c_73170, (function_type)__lambda_10);c_73170.num_args = 0; 
-  __glo_current_91thread_srfi_18 = &c_73170; 
-  mclosure0(c_73166, (function_type)__lambda_8);c_73166.num_args = 2; 
-  __glo_thread_91specific_91set_67_srfi_18 = &c_73166; 
-  mclosure0(c_73162, (function_type)__lambda_7);c_73162.num_args = 1; 
-  __glo_thread_91specific_191_191inline_191_191_srfi_18 = &c_73162; 
-  mclosure0(c_73158, (function_type)__lambda_6);c_73158.num_args = 1; 
-  __glo_thread_91specific_srfi_18 = &c_73158; 
-  mclosure0(c_73154, (function_type)__lambda_5);c_73154.num_args = 1; 
-  __glo_thread_91name_191_191inline_191_191_srfi_18 = &c_73154; 
-  mclosure0(c_73150, (function_type)__lambda_4);c_73150.num_args = 1; 
-  __glo_thread_91name_srfi_18 = &c_73150; 
-  mclosure0(c_73134, (function_type)__lambda_3);c_73134.num_args = 1; 
-  __glo_make_91thread_srfi_18 = &c_73134; 
-  mclosure0(c_73119, (function_type)__lambda_0);c_73119.num_args = 1; 
-  __glo_thread_127_srfi_18 = &c_73119; 
+  mclosure0(c_73301, (function_type)__lambda_47);c_73301.num_args = 0; 
+  __glo_lib_91init_117srfi18_srfi_18 = &c_73301; 
+  mclosure0(c_73300, (function_type)__lambda_45);c_73300.num_args = 1; 
+  __glo_condition_91variable_91broadcast_67_srfi_18 = &c_73300; 
+  mclosure0(c_73299, (function_type)__lambda_44);c_73299.num_args = 1; 
+  __glo_condition_91variable_91signal_67_srfi_18 = &c_73299; 
+  mclosure0(c_73298, (function_type)__lambda_43);c_73298.num_args = 2; 
+  __glo_condition_91variable_91wait_67_srfi_18 = &c_73298; 
+  mclosure0(c_73297, (function_type)__lambda_42);c_73297.num_args = 0; 
+  __glo_make_91condition_91variable_srfi_18 = &c_73297; 
+  mclosure0(c_73296, (function_type)__lambda_41);c_73296.num_args = 1; 
+  __glo_condition_91variable_127_srfi_18 = &c_73296; 
+  mclosure0(c_73295, (function_type)__lambda_40);c_73295.num_args = 1; 
+  __glo_Cyc_91mutex_91unlock_67_srfi_18 = &c_73295; 
+  mclosure0(c_73266, (function_type)__lambda_39);c_73266.num_args = 1; 
+  __glo_mutex_91unlock_67_srfi_18 = &c_73266; 
+  mclosure0(c_73265, (function_type)__lambda_34);c_73265.num_args = 1; 
+  __glo_mutex_91lock_67_srfi_18 = &c_73265; 
+  mclosure0(c_73264, (function_type)__lambda_33);c_73264.num_args = 0; 
+  __glo_make_91mutex_srfi_18 = &c_73264; 
+  mclosure0(c_73263, (function_type)__lambda_32);c_73263.num_args = 1; 
+  __glo_mutex_127_srfi_18 = &c_73263; 
+  mclosure0(c_73262, (function_type)__lambda_31);c_73262.num_args = 0; 
+  __glo_Cyc_91minor_91gc_srfi_18 = &c_73262; 
+  mclosure0(c_73261, (function_type)__lambda_30);c_73261.num_args = 1; 
+  __glo__91_125heap_srfi_18 = &c_73261; 
+  mclosure0(c_73260, (function_type)__lambda_29);c_73260.num_args = 1; 
+  __glo_thread_91sleep_67_srfi_18 = &c_73260; 
+  mclosure0(c_73237, (function_type)__lambda_28);c_73237.num_args = 1; 
+  __glo_thread_91join_67_srfi_18 = &c_73237; 
+  mclosure0(c_73236, (function_type)__lambda_24);c_73236.num_args = 1; 
+  __glo__75thread_91join_67_srfi_18 = &c_73236; 
+  mclosure0(c_73235, (function_type)__lambda_23);c_73235.num_args = 0; 
+  __glo_thread_91terminate_67_srfi_18 = &c_73235; 
+  mclosure0(c_73233, (function_type)__lambda_22);c_73233.num_args = 0; 
+  __glo_thread_91yield_67_srfi_18 = &c_73233; 
+  mclosure0(c_73197, (function_type)__lambda_21);c_73197.num_args = 1; 
+  __glo_thread_91start_67_srfi_18 = &c_73197; 
+  mclosure0(c_73196, (function_type)__lambda_12);c_73196.num_args = 0; 
+  __glo__75get_91thread_91data_srfi_18 = &c_73196; 
+  mclosure0(c_73195, (function_type)__lambda_11);c_73195.num_args = 0; 
+  __glo__75current_91thread_srfi_18 = &c_73195; 
+  mclosure0(c_73186, (function_type)__lambda_10);c_73186.num_args = 0; 
+  __glo_current_91thread_srfi_18 = &c_73186; 
+  mclosure0(c_73182, (function_type)__lambda_8);c_73182.num_args = 2; 
+  __glo_thread_91specific_91set_67_srfi_18 = &c_73182; 
+  mclosure0(c_73178, (function_type)__lambda_7);c_73178.num_args = 1; 
+  __glo_thread_91specific_191_191inline_191_191_srfi_18 = &c_73178; 
+  mclosure0(c_73174, (function_type)__lambda_6);c_73174.num_args = 1; 
+  __glo_thread_91specific_srfi_18 = &c_73174; 
+  mclosure0(c_73170, (function_type)__lambda_5);c_73170.num_args = 1; 
+  __glo_thread_91name_191_191inline_191_191_srfi_18 = &c_73170; 
+  mclosure0(c_73166, (function_type)__lambda_4);c_73166.num_args = 1; 
+  __glo_thread_91name_srfi_18 = &c_73166; 
+  mclosure0(c_73150, (function_type)__lambda_3);c_73150.num_args = 1; 
+  __glo_make_91thread_srfi_18 = &c_73150; 
+  mclosure0(c_73135, (function_type)__lambda_0);c_73135.num_args = 1; 
+  __glo_thread_127_srfi_18 = &c_73135; 
   __glo__85primordial_91thread_85_srfi_18 = boolean_f; 
 
-  mclosure0(clo_73298, c_srfi18_inlinable_lambdas); make_pair(pair_73297, find_or_add_symbol("c_srfi18_inlinable_lambdas"), &clo_73298);
-  make_cvar(cvar_73299, (object *)&__glo_lib_91init_117srfi18_srfi_18);make_pair(pair_73300, find_or_add_symbol("lib-init:srfi18"), &cvar_73299);
-  make_cvar(cvar_73301, (object *)&__glo_condition_91variable_91broadcast_67_srfi_18);make_pair(pair_73302, find_or_add_symbol("condition-variable-broadcast!"), &cvar_73301);
-  make_cvar(cvar_73303, (object *)&__glo_condition_91variable_91signal_67_srfi_18);make_pair(pair_73304, find_or_add_symbol("condition-variable-signal!"), &cvar_73303);
-  make_cvar(cvar_73305, (object *)&__glo_condition_91variable_91wait_67_srfi_18);make_pair(pair_73306, find_or_add_symbol("condition-variable-wait!"), &cvar_73305);
-  make_cvar(cvar_73307, (object *)&__glo_make_91condition_91variable_srfi_18);make_pair(pair_73308, find_or_add_symbol("make-condition-variable"), &cvar_73307);
-  make_cvar(cvar_73309, (object *)&__glo_condition_91variable_127_srfi_18);make_pair(pair_73310, find_or_add_symbol("condition-variable?"), &cvar_73309);
-  make_cvar(cvar_73311, (object *)&__glo_Cyc_91mutex_91unlock_67_srfi_18);make_pair(pair_73312, find_or_add_symbol("Cyc-mutex-unlock!"), &cvar_73311);
-  make_cvar(cvar_73313, (object *)&__glo_mutex_91unlock_67_srfi_18);make_pair(pair_73314, find_or_add_symbol("mutex-unlock!"), &cvar_73313);
-  make_cvar(cvar_73315, (object *)&__glo_mutex_91lock_67_srfi_18);make_pair(pair_73316, find_or_add_symbol("mutex-lock!"), &cvar_73315);
-  make_cvar(cvar_73317, (object *)&__glo_make_91mutex_srfi_18);make_pair(pair_73318, find_or_add_symbol("make-mutex"), &cvar_73317);
-  make_cvar(cvar_73319, (object *)&__glo_mutex_127_srfi_18);make_pair(pair_73320, find_or_add_symbol("mutex?"), &cvar_73319);
-  make_cvar(cvar_73321, (object *)&__glo_Cyc_91minor_91gc_srfi_18);make_pair(pair_73322, find_or_add_symbol("Cyc-minor-gc"), &cvar_73321);
-  make_cvar(cvar_73323, (object *)&__glo__91_125heap_srfi_18);make_pair(pair_73324, find_or_add_symbol("->heap"), &cvar_73323);
-  make_cvar(cvar_73325, (object *)&__glo_thread_91sleep_67_srfi_18);make_pair(pair_73326, find_or_add_symbol("thread-sleep!"), &cvar_73325);
-  make_cvar(cvar_73327, (object *)&__glo_thread_91join_67_srfi_18);make_pair(pair_73328, find_or_add_symbol("thread-join!"), &cvar_73327);
-  make_cvar(cvar_73329, (object *)&__glo__75thread_91join_67_srfi_18);make_pair(pair_73330, find_or_add_symbol("%thread-join!"), &cvar_73329);
-  make_cvar(cvar_73331, (object *)&__glo_thread_91terminate_67_srfi_18);make_pair(pair_73332, find_or_add_symbol("thread-terminate!"), &cvar_73331);
-  make_cvar(cvar_73333, (object *)&__glo_thread_91yield_67_srfi_18);make_pair(pair_73334, find_or_add_symbol("thread-yield!"), &cvar_73333);
-  make_cvar(cvar_73335, (object *)&__glo_thread_91start_67_srfi_18);make_pair(pair_73336, find_or_add_symbol("thread-start!"), &cvar_73335);
-  make_cvar(cvar_73337, (object *)&__glo__75get_91thread_91data_srfi_18);make_pair(pair_73338, find_or_add_symbol("%get-thread-data"), &cvar_73337);
-  make_cvar(cvar_73339, (object *)&__glo__75current_91thread_srfi_18);make_pair(pair_73340, find_or_add_symbol("%current-thread"), &cvar_73339);
-  make_cvar(cvar_73341, (object *)&__glo__85primordial_91thread_85_srfi_18);make_pair(pair_73342, find_or_add_symbol("*primordial-thread*"), &cvar_73341);
-  make_cvar(cvar_73343, (object *)&__glo_current_91thread_srfi_18);make_pair(pair_73344, find_or_add_symbol("current-thread"), &cvar_73343);
-  make_cvar(cvar_73345, (object *)&__glo_thread_91specific_91set_67_srfi_18);make_pair(pair_73346, find_or_add_symbol("thread-specific-set!"), &cvar_73345);
-  make_cvar(cvar_73347, (object *)&__glo_thread_91specific_191_191inline_191_191_srfi_18);make_pair(pair_73348, find_or_add_symbol("thread-specific__inline__"), &cvar_73347);
-  make_cvar(cvar_73349, (object *)&__glo_thread_91specific_srfi_18);make_pair(pair_73350, find_or_add_symbol("thread-specific"), &cvar_73349);
-  make_cvar(cvar_73351, (object *)&__glo_thread_91name_191_191inline_191_191_srfi_18);make_pair(pair_73352, find_or_add_symbol("thread-name__inline__"), &cvar_73351);
-  make_cvar(cvar_73353, (object *)&__glo_thread_91name_srfi_18);make_pair(pair_73354, find_or_add_symbol("thread-name"), &cvar_73353);
-  make_cvar(cvar_73355, (object *)&__glo_make_91thread_srfi_18);make_pair(pair_73356, find_or_add_symbol("make-thread"), &cvar_73355);
-  make_cvar(cvar_73357, (object *)&__glo_thread_127_srfi_18);make_pair(pair_73358, find_or_add_symbol("thread?"), &cvar_73357);
-make_pair(c_73359, &pair_73297,Cyc_global_variables);
-make_pair(c_73360, &pair_73300, &c_73359);
-make_pair(c_73361, &pair_73302, &c_73360);
-make_pair(c_73362, &pair_73304, &c_73361);
-make_pair(c_73363, &pair_73306, &c_73362);
-make_pair(c_73364, &pair_73308, &c_73363);
-make_pair(c_73365, &pair_73310, &c_73364);
-make_pair(c_73366, &pair_73312, &c_73365);
-make_pair(c_73367, &pair_73314, &c_73366);
-make_pair(c_73368, &pair_73316, &c_73367);
-make_pair(c_73369, &pair_73318, &c_73368);
-make_pair(c_73370, &pair_73320, &c_73369);
-make_pair(c_73371, &pair_73322, &c_73370);
-make_pair(c_73372, &pair_73324, &c_73371);
-make_pair(c_73373, &pair_73326, &c_73372);
-make_pair(c_73374, &pair_73328, &c_73373);
-make_pair(c_73375, &pair_73330, &c_73374);
-make_pair(c_73376, &pair_73332, &c_73375);
-make_pair(c_73377, &pair_73334, &c_73376);
-make_pair(c_73378, &pair_73336, &c_73377);
-make_pair(c_73379, &pair_73338, &c_73378);
-make_pair(c_73380, &pair_73340, &c_73379);
-make_pair(c_73381, &pair_73342, &c_73380);
-make_pair(c_73382, &pair_73344, &c_73381);
-make_pair(c_73383, &pair_73346, &c_73382);
-make_pair(c_73384, &pair_73348, &c_73383);
-make_pair(c_73385, &pair_73350, &c_73384);
-make_pair(c_73386, &pair_73352, &c_73385);
-make_pair(c_73387, &pair_73354, &c_73386);
-make_pair(c_73388, &pair_73356, &c_73387);
-make_pair(c_73389, &pair_73358, &c_73388);
-Cyc_global_variables = &c_73389;
+  mclosure0(clo_73314, c_srfi18_inlinable_lambdas); make_pair(pair_73313, find_or_add_symbol("c_srfi18_inlinable_lambdas"), &clo_73314);
+  make_cvar(cvar_73315, (object *)&__glo_lib_91init_117srfi18_srfi_18);make_pair(pair_73316, find_or_add_symbol("lib-init:srfi18"), &cvar_73315);
+  make_cvar(cvar_73317, (object *)&__glo_condition_91variable_91broadcast_67_srfi_18);make_pair(pair_73318, find_or_add_symbol("condition-variable-broadcast!"), &cvar_73317);
+  make_cvar(cvar_73319, (object *)&__glo_condition_91variable_91signal_67_srfi_18);make_pair(pair_73320, find_or_add_symbol("condition-variable-signal!"), &cvar_73319);
+  make_cvar(cvar_73321, (object *)&__glo_condition_91variable_91wait_67_srfi_18);make_pair(pair_73322, find_or_add_symbol("condition-variable-wait!"), &cvar_73321);
+  make_cvar(cvar_73323, (object *)&__glo_make_91condition_91variable_srfi_18);make_pair(pair_73324, find_or_add_symbol("make-condition-variable"), &cvar_73323);
+  make_cvar(cvar_73325, (object *)&__glo_condition_91variable_127_srfi_18);make_pair(pair_73326, find_or_add_symbol("condition-variable?"), &cvar_73325);
+  make_cvar(cvar_73327, (object *)&__glo_Cyc_91mutex_91unlock_67_srfi_18);make_pair(pair_73328, find_or_add_symbol("Cyc-mutex-unlock!"), &cvar_73327);
+  make_cvar(cvar_73329, (object *)&__glo_mutex_91unlock_67_srfi_18);make_pair(pair_73330, find_or_add_symbol("mutex-unlock!"), &cvar_73329);
+  make_cvar(cvar_73331, (object *)&__glo_mutex_91lock_67_srfi_18);make_pair(pair_73332, find_or_add_symbol("mutex-lock!"), &cvar_73331);
+  make_cvar(cvar_73333, (object *)&__glo_make_91mutex_srfi_18);make_pair(pair_73334, find_or_add_symbol("make-mutex"), &cvar_73333);
+  make_cvar(cvar_73335, (object *)&__glo_mutex_127_srfi_18);make_pair(pair_73336, find_or_add_symbol("mutex?"), &cvar_73335);
+  make_cvar(cvar_73337, (object *)&__glo_Cyc_91minor_91gc_srfi_18);make_pair(pair_73338, find_or_add_symbol("Cyc-minor-gc"), &cvar_73337);
+  make_cvar(cvar_73339, (object *)&__glo__91_125heap_srfi_18);make_pair(pair_73340, find_or_add_symbol("->heap"), &cvar_73339);
+  make_cvar(cvar_73341, (object *)&__glo_thread_91sleep_67_srfi_18);make_pair(pair_73342, find_or_add_symbol("thread-sleep!"), &cvar_73341);
+  make_cvar(cvar_73343, (object *)&__glo_thread_91join_67_srfi_18);make_pair(pair_73344, find_or_add_symbol("thread-join!"), &cvar_73343);
+  make_cvar(cvar_73345, (object *)&__glo__75thread_91join_67_srfi_18);make_pair(pair_73346, find_or_add_symbol("%thread-join!"), &cvar_73345);
+  make_cvar(cvar_73347, (object *)&__glo_thread_91terminate_67_srfi_18);make_pair(pair_73348, find_or_add_symbol("thread-terminate!"), &cvar_73347);
+  make_cvar(cvar_73349, (object *)&__glo_thread_91yield_67_srfi_18);make_pair(pair_73350, find_or_add_symbol("thread-yield!"), &cvar_73349);
+  make_cvar(cvar_73351, (object *)&__glo_thread_91start_67_srfi_18);make_pair(pair_73352, find_or_add_symbol("thread-start!"), &cvar_73351);
+  make_cvar(cvar_73353, (object *)&__glo__75get_91thread_91data_srfi_18);make_pair(pair_73354, find_or_add_symbol("%get-thread-data"), &cvar_73353);
+  make_cvar(cvar_73355, (object *)&__glo__75current_91thread_srfi_18);make_pair(pair_73356, find_or_add_symbol("%current-thread"), &cvar_73355);
+  make_cvar(cvar_73357, (object *)&__glo__85primordial_91thread_85_srfi_18);make_pair(pair_73358, find_or_add_symbol("*primordial-thread*"), &cvar_73357);
+  make_cvar(cvar_73359, (object *)&__glo_current_91thread_srfi_18);make_pair(pair_73360, find_or_add_symbol("current-thread"), &cvar_73359);
+  make_cvar(cvar_73361, (object *)&__glo_thread_91specific_91set_67_srfi_18);make_pair(pair_73362, find_or_add_symbol("thread-specific-set!"), &cvar_73361);
+  make_cvar(cvar_73363, (object *)&__glo_thread_91specific_191_191inline_191_191_srfi_18);make_pair(pair_73364, find_or_add_symbol("thread-specific__inline__"), &cvar_73363);
+  make_cvar(cvar_73365, (object *)&__glo_thread_91specific_srfi_18);make_pair(pair_73366, find_or_add_symbol("thread-specific"), &cvar_73365);
+  make_cvar(cvar_73367, (object *)&__glo_thread_91name_191_191inline_191_191_srfi_18);make_pair(pair_73368, find_or_add_symbol("thread-name__inline__"), &cvar_73367);
+  make_cvar(cvar_73369, (object *)&__glo_thread_91name_srfi_18);make_pair(pair_73370, find_or_add_symbol("thread-name"), &cvar_73369);
+  make_cvar(cvar_73371, (object *)&__glo_make_91thread_srfi_18);make_pair(pair_73372, find_or_add_symbol("make-thread"), &cvar_73371);
+  make_cvar(cvar_73373, (object *)&__glo_thread_127_srfi_18);make_pair(pair_73374, find_or_add_symbol("thread?"), &cvar_73373);
+make_pair(c_73375, &pair_73313,Cyc_global_variables);
+make_pair(c_73376, &pair_73316, &c_73375);
+make_pair(c_73377, &pair_73318, &c_73376);
+make_pair(c_73378, &pair_73320, &c_73377);
+make_pair(c_73379, &pair_73322, &c_73378);
+make_pair(c_73380, &pair_73324, &c_73379);
+make_pair(c_73381, &pair_73326, &c_73380);
+make_pair(c_73382, &pair_73328, &c_73381);
+make_pair(c_73383, &pair_73330, &c_73382);
+make_pair(c_73384, &pair_73332, &c_73383);
+make_pair(c_73385, &pair_73334, &c_73384);
+make_pair(c_73386, &pair_73336, &c_73385);
+make_pair(c_73387, &pair_73338, &c_73386);
+make_pair(c_73388, &pair_73340, &c_73387);
+make_pair(c_73389, &pair_73342, &c_73388);
+make_pair(c_73390, &pair_73344, &c_73389);
+make_pair(c_73391, &pair_73346, &c_73390);
+make_pair(c_73392, &pair_73348, &c_73391);
+make_pair(c_73393, &pair_73350, &c_73392);
+make_pair(c_73394, &pair_73352, &c_73393);
+make_pair(c_73395, &pair_73354, &c_73394);
+make_pair(c_73396, &pair_73356, &c_73395);
+make_pair(c_73397, &pair_73358, &c_73396);
+make_pair(c_73398, &pair_73360, &c_73397);
+make_pair(c_73399, &pair_73362, &c_73398);
+make_pair(c_73400, &pair_73364, &c_73399);
+make_pair(c_73401, &pair_73366, &c_73400);
+make_pair(c_73402, &pair_73368, &c_73401);
+make_pair(c_73403, &pair_73370, &c_73402);
+make_pair(c_73404, &pair_73372, &c_73403);
+make_pair(c_73405, &pair_73374, &c_73404);
+Cyc_global_variables = &c_73405;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, 1, cont, cont);
 }

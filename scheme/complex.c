@@ -264,75 +264,75 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
-static void __lambda_8(void *data, int argc, closure _,object k_7311) ;
-static void __lambda_7(void *data, int argc, closure _,object k_7314, object x_732, object y_731) ;
-static void __lambda_6(void *data, int argc, closure _,object k_7317, object x_734, object y_733) ;
-static void __lambda_5(void *data, int argc, closure _,object k_7320, object z_735) ;
-static void __lambda_4(void *data, int argc, closure _,object k_7323, object z_736) ;
-static object __lambda_3(void *data, object ptr,object x_737) ;
-static void __lambda_2(void *data, int argc, closure _,object k_7326, object x_737) ;
-static object __lambda_1(void *data, object ptr,object x_738) ;
-static void __lambda_0(void *data, int argc, closure _,object k_7329, object x_738) ;
+static void __lambda_8(void *data, int argc, closure _,object k_7319) ;
+static void __lambda_7(void *data, int argc, closure _,object k_7322, object x_738_7310, object y_737_739) ;
+static void __lambda_6(void *data, int argc, closure _,object k_7325, object x_736_7312, object y_735_7311) ;
+static void __lambda_5(void *data, int argc, closure _,object k_7328, object z_734_7313) ;
+static void __lambda_4(void *data, int argc, closure _,object k_7331, object z_733_7314) ;
+static object __lambda_3(void *data, object ptr,object x_732_7315) ;
+static void __lambda_2(void *data, int argc, closure _,object k_7334, object x_732_7315) ;
+static object __lambda_1(void *data, object ptr,object x_731_7316) ;
+static void __lambda_0(void *data, int argc, closure _,object k_7337, object x_731_7316) ;
 
-static void __lambda_8(void *data, int argc, closure _,object k_7311) {
+static void __lambda_8(void *data, int argc, closure _,object k_7319) {
   Cyc_st_add(data, "scheme/complex.sld:lib-init:schemecomplex");
-return_closcall1(data,  k_7311,  obj_int2obj(0));; 
+return_closcall1(data,  k_7319,  obj_int2obj(0));; 
 }
 
-static void __lambda_7(void *data, int argc, closure _,object k_7314, object x_732, object y_731) {
+static void __lambda_7(void *data, int argc, closure _,object k_7322, object x_738_7310, object y_737_739) {
   Cyc_st_add(data, "scheme/complex.sld:make-polar");
 
-make_utf8_string_with_len(c_7349, "Complex numbers are not supported at this time", 46, 46);
-return_closcall2(data,  __glo_error_scheme_base,  k_7314, &c_7349);; 
+make_utf8_string_with_len(c_7357, "Complex numbers are not supported at this time", 46, 46);
+return_closcall2(data,  __glo_error_scheme_base,  k_7322, &c_7357);; 
 }
 
-static void __lambda_6(void *data, int argc, closure _,object k_7317, object x_734, object y_733) {
+static void __lambda_6(void *data, int argc, closure _,object k_7325, object x_736_7312, object y_735_7311) {
   Cyc_st_add(data, "scheme/complex.sld:make-rectangular");
 
-make_utf8_string_with_len(c_7346, "Complex numbers are not supported at this time", 46, 46);
-return_closcall2(data,  __glo_error_scheme_base,  k_7317, &c_7346);; 
+make_utf8_string_with_len(c_7354, "Complex numbers are not supported at this time", 46, 46);
+return_closcall2(data,  __glo_error_scheme_base,  k_7325, &c_7354);; 
 }
 
-static void __lambda_5(void *data, int argc, closure _,object k_7320, object z_735) {
+static void __lambda_5(void *data, int argc, closure _,object k_7328, object z_734_7313) {
   Cyc_st_add(data, "scheme/complex.sld:magnitude");
 
-make_utf8_string_with_len(c_7343, "Complex numbers are not supported at this time", 46, 46);
-return_closcall2(data,  __glo_error_scheme_base,  k_7320, &c_7343);; 
+make_utf8_string_with_len(c_7351, "Complex numbers are not supported at this time", 46, 46);
+return_closcall2(data,  __glo_error_scheme_base,  k_7328, &c_7351);; 
 }
 
-static void __lambda_4(void *data, int argc, closure _,object k_7323, object z_736) {
+static void __lambda_4(void *data, int argc, closure _,object k_7331, object z_733_7314) {
   Cyc_st_add(data, "scheme/complex.sld:angle");
 
-make_utf8_string_with_len(c_7340, "Complex numbers are not supported at this time", 46, 46);
-return_closcall2(data,  __glo_error_scheme_base,  k_7323, &c_7340);; 
+make_utf8_string_with_len(c_7348, "Complex numbers are not supported at this time", 46, 46);
+return_closcall2(data,  __glo_error_scheme_base,  k_7331, &c_7348);; 
 }
 
-static object __lambda_3(void *data, object ptr,object x_737) {
+static object __lambda_3(void *data, object ptr,object x_732_7315) {
   Cyc_st_add(data, "scheme/complex.sld:imag-part");
 return_copy(ptr,  obj_int2obj(0));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _,object k_7326, object x_737) {
+static void __lambda_2(void *data, int argc, closure _,object k_7334, object x_732_7315) {
   Cyc_st_add(data, "scheme/complex.sld:imag-part");
-return_closcall1(data,  k_7326,  obj_int2obj(0));; 
+return_closcall1(data,  k_7334,  obj_int2obj(0));; 
 }
 
-static object __lambda_1(void *data, object ptr,object x_738) {
+static object __lambda_1(void *data, object ptr,object x_731_7316) {
   Cyc_st_add(data, "scheme/complex.sld:real-part");
-return_copy(ptr,  x_738);; 
+return_copy(ptr,  x_731_7316);; 
 }
 
-static void __lambda_0(void *data, int argc, closure _,object k_7329, object x_738) {
+static void __lambda_0(void *data, int argc, closure _,object k_7337, object x_731_7316) {
   Cyc_st_add(data, "scheme/complex.sld:real-part");
-return_closcall1(data,  k_7329,  x_738);; 
+return_closcall1(data,  k_7337,  x_731_7316);; 
 }
 
 void c_schemecomplex_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-make_pair(pair_7352, find_or_add_symbol("imag-part"), find_or_add_symbol("imag-part__inline__"));
-make_pair(pair_7353, find_or_add_symbol("real-part"), find_or_add_symbol("real-part__inline__"));
-make_pair(c_7354, &pair_7352, NULL);
-make_pair(c_7355, &pair_7353, &c_7354);
-(((closure)cont)->fn)(data, 1, cont, &c_7355);
+make_pair(pair_7360, find_or_add_symbol("imag-part"), find_or_add_symbol("imag-part__inline__"));
+make_pair(pair_7361, find_or_add_symbol("real-part"), find_or_add_symbol("real-part__inline__"));
+make_pair(c_7362, &pair_7360, NULL);
+make_pair(c_7363, &pair_7361, &c_7362);
+(((closure)cont)->fn)(data, 1, cont, &c_7363);
  } 
 void c_schemecomplex_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
@@ -346,46 +346,46 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_imag_91part_scheme_complex);
   add_global((object *) &__glo_real_91part_191_191inline_191_191_scheme_complex);
   add_global((object *) &__glo_real_91part_scheme_complex);
-  mclosure0(c_7350, (function_type)__lambda_8);c_7350.num_args = 0; 
-  __glo_lib_91init_117schemecomplex_scheme_complex = &c_7350; 
-  mclosure0(c_7347, (function_type)__lambda_7);c_7347.num_args = 2; 
-  __glo_make_91polar_scheme_complex = &c_7347; 
-  mclosure0(c_7344, (function_type)__lambda_6);c_7344.num_args = 2; 
-  __glo_make_91rectangular_scheme_complex = &c_7344; 
-  mclosure0(c_7341, (function_type)__lambda_5);c_7341.num_args = 1; 
-  __glo_magnitude_scheme_complex = &c_7341; 
-  mclosure0(c_7338, (function_type)__lambda_4);c_7338.num_args = 1; 
-  __glo_angle_scheme_complex = &c_7338; 
-  mclosure0(c_7336, (function_type)__lambda_3);c_7336.num_args = 1; 
-  __glo_imag_91part_191_191inline_191_191_scheme_complex = &c_7336; 
-  mclosure0(c_7334, (function_type)__lambda_2);c_7334.num_args = 1; 
-  __glo_imag_91part_scheme_complex = &c_7334; 
-  mclosure0(c_7332, (function_type)__lambda_1);c_7332.num_args = 1; 
-  __glo_real_91part_191_191inline_191_191_scheme_complex = &c_7332; 
-  mclosure0(c_7330, (function_type)__lambda_0);c_7330.num_args = 1; 
-  __glo_real_91part_scheme_complex = &c_7330; 
+  mclosure0(c_7358, (function_type)__lambda_8);c_7358.num_args = 0; 
+  __glo_lib_91init_117schemecomplex_scheme_complex = &c_7358; 
+  mclosure0(c_7355, (function_type)__lambda_7);c_7355.num_args = 2; 
+  __glo_make_91polar_scheme_complex = &c_7355; 
+  mclosure0(c_7352, (function_type)__lambda_6);c_7352.num_args = 2; 
+  __glo_make_91rectangular_scheme_complex = &c_7352; 
+  mclosure0(c_7349, (function_type)__lambda_5);c_7349.num_args = 1; 
+  __glo_magnitude_scheme_complex = &c_7349; 
+  mclosure0(c_7346, (function_type)__lambda_4);c_7346.num_args = 1; 
+  __glo_angle_scheme_complex = &c_7346; 
+  mclosure0(c_7344, (function_type)__lambda_3);c_7344.num_args = 1; 
+  __glo_imag_91part_191_191inline_191_191_scheme_complex = &c_7344; 
+  mclosure0(c_7342, (function_type)__lambda_2);c_7342.num_args = 1; 
+  __glo_imag_91part_scheme_complex = &c_7342; 
+  mclosure0(c_7340, (function_type)__lambda_1);c_7340.num_args = 1; 
+  __glo_real_91part_191_191inline_191_191_scheme_complex = &c_7340; 
+  mclosure0(c_7338, (function_type)__lambda_0);c_7338.num_args = 1; 
+  __glo_real_91part_scheme_complex = &c_7338; 
 
-  mclosure0(clo_7357, c_schemecomplex_inlinable_lambdas); make_pair(pair_7356, find_or_add_symbol("c_schemecomplex_inlinable_lambdas"), &clo_7357);
-  make_cvar(cvar_7358, (object *)&__glo_lib_91init_117schemecomplex_scheme_complex);make_pair(pair_7359, find_or_add_symbol("lib-init:schemecomplex"), &cvar_7358);
-  make_cvar(cvar_7360, (object *)&__glo_make_91polar_scheme_complex);make_pair(pair_7361, find_or_add_symbol("make-polar"), &cvar_7360);
-  make_cvar(cvar_7362, (object *)&__glo_make_91rectangular_scheme_complex);make_pair(pair_7363, find_or_add_symbol("make-rectangular"), &cvar_7362);
-  make_cvar(cvar_7364, (object *)&__glo_magnitude_scheme_complex);make_pair(pair_7365, find_or_add_symbol("magnitude"), &cvar_7364);
-  make_cvar(cvar_7366, (object *)&__glo_angle_scheme_complex);make_pair(pair_7367, find_or_add_symbol("angle"), &cvar_7366);
-  make_cvar(cvar_7368, (object *)&__glo_imag_91part_191_191inline_191_191_scheme_complex);make_pair(pair_7369, find_or_add_symbol("imag-part__inline__"), &cvar_7368);
-  make_cvar(cvar_7370, (object *)&__glo_imag_91part_scheme_complex);make_pair(pair_7371, find_or_add_symbol("imag-part"), &cvar_7370);
-  make_cvar(cvar_7372, (object *)&__glo_real_91part_191_191inline_191_191_scheme_complex);make_pair(pair_7373, find_or_add_symbol("real-part__inline__"), &cvar_7372);
-  make_cvar(cvar_7374, (object *)&__glo_real_91part_scheme_complex);make_pair(pair_7375, find_or_add_symbol("real-part"), &cvar_7374);
-make_pair(c_7376, &pair_7356,Cyc_global_variables);
-make_pair(c_7377, &pair_7359, &c_7376);
-make_pair(c_7378, &pair_7361, &c_7377);
-make_pair(c_7379, &pair_7363, &c_7378);
-make_pair(c_7380, &pair_7365, &c_7379);
-make_pair(c_7381, &pair_7367, &c_7380);
-make_pair(c_7382, &pair_7369, &c_7381);
-make_pair(c_7383, &pair_7371, &c_7382);
-make_pair(c_7384, &pair_7373, &c_7383);
-make_pair(c_7385, &pair_7375, &c_7384);
-Cyc_global_variables = &c_7385;
+  mclosure0(clo_7365, c_schemecomplex_inlinable_lambdas); make_pair(pair_7364, find_or_add_symbol("c_schemecomplex_inlinable_lambdas"), &clo_7365);
+  make_cvar(cvar_7366, (object *)&__glo_lib_91init_117schemecomplex_scheme_complex);make_pair(pair_7367, find_or_add_symbol("lib-init:schemecomplex"), &cvar_7366);
+  make_cvar(cvar_7368, (object *)&__glo_make_91polar_scheme_complex);make_pair(pair_7369, find_or_add_symbol("make-polar"), &cvar_7368);
+  make_cvar(cvar_7370, (object *)&__glo_make_91rectangular_scheme_complex);make_pair(pair_7371, find_or_add_symbol("make-rectangular"), &cvar_7370);
+  make_cvar(cvar_7372, (object *)&__glo_magnitude_scheme_complex);make_pair(pair_7373, find_or_add_symbol("magnitude"), &cvar_7372);
+  make_cvar(cvar_7374, (object *)&__glo_angle_scheme_complex);make_pair(pair_7375, find_or_add_symbol("angle"), &cvar_7374);
+  make_cvar(cvar_7376, (object *)&__glo_imag_91part_191_191inline_191_191_scheme_complex);make_pair(pair_7377, find_or_add_symbol("imag-part__inline__"), &cvar_7376);
+  make_cvar(cvar_7378, (object *)&__glo_imag_91part_scheme_complex);make_pair(pair_7379, find_or_add_symbol("imag-part"), &cvar_7378);
+  make_cvar(cvar_7380, (object *)&__glo_real_91part_191_191inline_191_191_scheme_complex);make_pair(pair_7381, find_or_add_symbol("real-part__inline__"), &cvar_7380);
+  make_cvar(cvar_7382, (object *)&__glo_real_91part_scheme_complex);make_pair(pair_7383, find_or_add_symbol("real-part"), &cvar_7382);
+make_pair(c_7384, &pair_7364,Cyc_global_variables);
+make_pair(c_7385, &pair_7367, &c_7384);
+make_pair(c_7386, &pair_7369, &c_7385);
+make_pair(c_7387, &pair_7371, &c_7386);
+make_pair(c_7388, &pair_7373, &c_7387);
+make_pair(c_7389, &pair_7375, &c_7388);
+make_pair(c_7390, &pair_7377, &c_7389);
+make_pair(c_7391, &pair_7379, &c_7390);
+make_pair(c_7392, &pair_7381, &c_7391);
+make_pair(c_7393, &pair_7383, &c_7392);
+Cyc_global_variables = &c_7393;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecomplex_scheme_complex)->fn)(data, 1, cont, cont);
 }
