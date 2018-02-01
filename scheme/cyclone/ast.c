@@ -501,14 +501,16 @@ c_73172.elements = (object *)alloca(sizeof(object) * 1);
 c_73172.elements[0] = k_7330;
 
 
-make_pair(c_73280,quote_has_91cont,NULL);
+make_utf8_string_with_len(c_73277, "<lambda-ast>", 12, 12);
 
-make_pair(c_73279,quote_body,&c_73280);
+make_pair(c_73281,quote_has_91cont,NULL);
 
-make_pair(c_73278,quote_args,&c_73279);
+make_pair(c_73280,quote_body,&c_73281);
 
-make_pair(c_73277,quote_id,&c_73278);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73172, __glo__121lambda_91ast_125_scheme_cyclone_ast, boolean_f, &c_73277);; 
+make_pair(c_73279,quote_args,&c_73280);
+
+make_pair(c_73278,quote_id,&c_73279);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73172, &c_73277, boolean_f, &c_73278);; 
 }
 
 static void __lambda_37(void *data, int argc, object self_73106, object r_7374) {
@@ -1150,35 +1152,35 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__121lambda_91ast_125_scheme_cyclone_ast = boolean_f; 
   __glo__85lambda_91id_85_scheme_cyclone_ast = obj_int2obj(0); 
 
-  mclosure0(clo_73282, c_schemecycloneast_inlinable_lambdas); make_pair(pair_73281, find_or_add_symbol("c_schemecycloneast_inlinable_lambdas"), &clo_73282);
-  make_cvar(cvar_73283, (object *)&__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast);make_pair(pair_73284, find_or_add_symbol("lib-init:schemecycloneast"), &cvar_73283);
-  make_cvar(cvar_73285, (object *)&__glo_ast_117make_91lambda_scheme_cyclone_ast);make_pair(pair_73286, find_or_add_symbol("ast:make-lambda"), &cvar_73285);
-  make_cvar(cvar_73287, (object *)&__glo_ast_117_75make_91lambda_scheme_cyclone_ast);make_pair(pair_73288, find_or_add_symbol("ast:%make-lambda"), &cvar_73287);
-  make_cvar(cvar_73289, (object *)&__glo_ast_117set_91lambda_91has_91cont_67_scheme_cyclone_ast);make_pair(pair_73290, find_or_add_symbol("ast:set-lambda-has-cont!"), &cvar_73289);
-  make_cvar(cvar_73291, (object *)&__glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast);make_pair(pair_73292, find_or_add_symbol("ast:set-lambda-body!"), &cvar_73291);
-  make_cvar(cvar_73293, (object *)&__glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast);make_pair(pair_73294, find_or_add_symbol("ast:set-lambda-args!"), &cvar_73293);
-  make_cvar(cvar_73295, (object *)&__glo_ast_117lambda_91has_91cont_scheme_cyclone_ast);make_pair(pair_73296, find_or_add_symbol("ast:lambda-has-cont"), &cvar_73295);
-  make_cvar(cvar_73297, (object *)&__glo_ast_117lambda_91body_scheme_cyclone_ast);make_pair(pair_73298, find_or_add_symbol("ast:lambda-body"), &cvar_73297);
-  make_cvar(cvar_73299, (object *)&__glo_ast_117lambda_91args_scheme_cyclone_ast);make_pair(pair_73300, find_or_add_symbol("ast:lambda-args"), &cvar_73299);
-  make_cvar(cvar_73301, (object *)&__glo_ast_117lambda_91id_scheme_cyclone_ast);make_pair(pair_73302, find_or_add_symbol("ast:lambda-id"), &cvar_73301);
-  make_cvar(cvar_73303, (object *)&__glo_ast_117lambda_127_scheme_cyclone_ast);make_pair(pair_73304, find_or_add_symbol("ast:lambda?"), &cvar_73303);
-  make_cvar(cvar_73305, (object *)&__glo__121lambda_91ast_125_scheme_cyclone_ast);make_pair(pair_73306, find_or_add_symbol("<lambda-ast>"), &cvar_73305);
-  make_cvar(cvar_73307, (object *)&__glo__85lambda_91id_85_scheme_cyclone_ast);make_pair(pair_73308, find_or_add_symbol("*lambda-id*"), &cvar_73307);
-make_pair(c_73309, &pair_73281,Cyc_global_variables);
-make_pair(c_73310, &pair_73284, &c_73309);
-make_pair(c_73311, &pair_73286, &c_73310);
-make_pair(c_73312, &pair_73288, &c_73311);
-make_pair(c_73313, &pair_73290, &c_73312);
-make_pair(c_73314, &pair_73292, &c_73313);
-make_pair(c_73315, &pair_73294, &c_73314);
-make_pair(c_73316, &pair_73296, &c_73315);
-make_pair(c_73317, &pair_73298, &c_73316);
-make_pair(c_73318, &pair_73300, &c_73317);
-make_pair(c_73319, &pair_73302, &c_73318);
-make_pair(c_73320, &pair_73304, &c_73319);
-make_pair(c_73321, &pair_73306, &c_73320);
-make_pair(c_73322, &pair_73308, &c_73321);
-Cyc_global_variables = &c_73322;
+  mclosure0(clo_73283, c_schemecycloneast_inlinable_lambdas); make_pair(pair_73282, find_or_add_symbol("c_schemecycloneast_inlinable_lambdas"), &clo_73283);
+  make_cvar(cvar_73284, (object *)&__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast);make_pair(pair_73285, find_or_add_symbol("lib-init:schemecycloneast"), &cvar_73284);
+  make_cvar(cvar_73286, (object *)&__glo_ast_117make_91lambda_scheme_cyclone_ast);make_pair(pair_73287, find_or_add_symbol("ast:make-lambda"), &cvar_73286);
+  make_cvar(cvar_73288, (object *)&__glo_ast_117_75make_91lambda_scheme_cyclone_ast);make_pair(pair_73289, find_or_add_symbol("ast:%make-lambda"), &cvar_73288);
+  make_cvar(cvar_73290, (object *)&__glo_ast_117set_91lambda_91has_91cont_67_scheme_cyclone_ast);make_pair(pair_73291, find_or_add_symbol("ast:set-lambda-has-cont!"), &cvar_73290);
+  make_cvar(cvar_73292, (object *)&__glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast);make_pair(pair_73293, find_or_add_symbol("ast:set-lambda-body!"), &cvar_73292);
+  make_cvar(cvar_73294, (object *)&__glo_ast_117set_91lambda_91args_67_scheme_cyclone_ast);make_pair(pair_73295, find_or_add_symbol("ast:set-lambda-args!"), &cvar_73294);
+  make_cvar(cvar_73296, (object *)&__glo_ast_117lambda_91has_91cont_scheme_cyclone_ast);make_pair(pair_73297, find_or_add_symbol("ast:lambda-has-cont"), &cvar_73296);
+  make_cvar(cvar_73298, (object *)&__glo_ast_117lambda_91body_scheme_cyclone_ast);make_pair(pair_73299, find_or_add_symbol("ast:lambda-body"), &cvar_73298);
+  make_cvar(cvar_73300, (object *)&__glo_ast_117lambda_91args_scheme_cyclone_ast);make_pair(pair_73301, find_or_add_symbol("ast:lambda-args"), &cvar_73300);
+  make_cvar(cvar_73302, (object *)&__glo_ast_117lambda_91id_scheme_cyclone_ast);make_pair(pair_73303, find_or_add_symbol("ast:lambda-id"), &cvar_73302);
+  make_cvar(cvar_73304, (object *)&__glo_ast_117lambda_127_scheme_cyclone_ast);make_pair(pair_73305, find_or_add_symbol("ast:lambda?"), &cvar_73304);
+  make_cvar(cvar_73306, (object *)&__glo__121lambda_91ast_125_scheme_cyclone_ast);make_pair(pair_73307, find_or_add_symbol("<lambda-ast>"), &cvar_73306);
+  make_cvar(cvar_73308, (object *)&__glo__85lambda_91id_85_scheme_cyclone_ast);make_pair(pair_73309, find_or_add_symbol("*lambda-id*"), &cvar_73308);
+make_pair(c_73310, &pair_73282,Cyc_global_variables);
+make_pair(c_73311, &pair_73285, &c_73310);
+make_pair(c_73312, &pair_73287, &c_73311);
+make_pair(c_73313, &pair_73289, &c_73312);
+make_pair(c_73314, &pair_73291, &c_73313);
+make_pair(c_73315, &pair_73293, &c_73314);
+make_pair(c_73316, &pair_73295, &c_73315);
+make_pair(c_73317, &pair_73297, &c_73316);
+make_pair(c_73318, &pair_73299, &c_73317);
+make_pair(c_73319, &pair_73301, &c_73318);
+make_pair(c_73320, &pair_73303, &c_73319);
+make_pair(c_73321, &pair_73305, &c_73320);
+make_pair(c_73322, &pair_73307, &c_73321);
+make_pair(c_73323, &pair_73309, &c_73322);
+Cyc_global_variables = &c_73323;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecycloneast_scheme_cyclone_ast)->fn)(data, 1, cont, cont);
 }

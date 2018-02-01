@@ -350,8 +350,10 @@ c_7359.elements = (object *)alloca(sizeof(object) * 1);
 c_7359.elements[0] = k_7313;
 
 
-make_pair(c_73105,quote_value,NULL);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7359, __glo_box_91type_srfi_111, boolean_f, &c_73105);; 
+make_utf8_string_with_len(c_73105, "box-type", 8, 8);
+
+make_pair(c_73106,quote_value,NULL);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7359, &c_73105, boolean_f, &c_73106);; 
 }
 
 static void __lambda_13(void *data, int argc, object self_7343, object r_7331) {
@@ -583,21 +585,21 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_box_127_srfi_111 = boolean_f; 
   __glo_box_91type_srfi_111 = boolean_f; 
 
-  mclosure0(clo_73107, c_srfi111_inlinable_lambdas); make_pair(pair_73106, find_or_add_symbol("c_srfi111_inlinable_lambdas"), &clo_73107);
-  make_cvar(cvar_73108, (object *)&__glo_lib_91init_117srfi111_srfi_111);make_pair(pair_73109, find_or_add_symbol("lib-init:srfi111"), &cvar_73108);
-  make_cvar(cvar_73110, (object *)&__glo_box_srfi_111);make_pair(pair_73111, find_or_add_symbol("box"), &cvar_73110);
-  make_cvar(cvar_73112, (object *)&__glo_set_91box_67_srfi_111);make_pair(pair_73113, find_or_add_symbol("set-box!"), &cvar_73112);
-  make_cvar(cvar_73114, (object *)&__glo_unbox_srfi_111);make_pair(pair_73115, find_or_add_symbol("unbox"), &cvar_73114);
-  make_cvar(cvar_73116, (object *)&__glo_box_127_srfi_111);make_pair(pair_73117, find_or_add_symbol("box?"), &cvar_73116);
-  make_cvar(cvar_73118, (object *)&__glo_box_91type_srfi_111);make_pair(pair_73119, find_or_add_symbol("box-type"), &cvar_73118);
-make_pair(c_73120, &pair_73106,Cyc_global_variables);
-make_pair(c_73121, &pair_73109, &c_73120);
-make_pair(c_73122, &pair_73111, &c_73121);
-make_pair(c_73123, &pair_73113, &c_73122);
-make_pair(c_73124, &pair_73115, &c_73123);
-make_pair(c_73125, &pair_73117, &c_73124);
-make_pair(c_73126, &pair_73119, &c_73125);
-Cyc_global_variables = &c_73126;
+  mclosure0(clo_73108, c_srfi111_inlinable_lambdas); make_pair(pair_73107, find_or_add_symbol("c_srfi111_inlinable_lambdas"), &clo_73108);
+  make_cvar(cvar_73109, (object *)&__glo_lib_91init_117srfi111_srfi_111);make_pair(pair_73110, find_or_add_symbol("lib-init:srfi111"), &cvar_73109);
+  make_cvar(cvar_73111, (object *)&__glo_box_srfi_111);make_pair(pair_73112, find_or_add_symbol("box"), &cvar_73111);
+  make_cvar(cvar_73113, (object *)&__glo_set_91box_67_srfi_111);make_pair(pair_73114, find_or_add_symbol("set-box!"), &cvar_73113);
+  make_cvar(cvar_73115, (object *)&__glo_unbox_srfi_111);make_pair(pair_73116, find_or_add_symbol("unbox"), &cvar_73115);
+  make_cvar(cvar_73117, (object *)&__glo_box_127_srfi_111);make_pair(pair_73118, find_or_add_symbol("box?"), &cvar_73117);
+  make_cvar(cvar_73119, (object *)&__glo_box_91type_srfi_111);make_pair(pair_73120, find_or_add_symbol("box-type"), &cvar_73119);
+make_pair(c_73121, &pair_73107,Cyc_global_variables);
+make_pair(c_73122, &pair_73110, &c_73121);
+make_pair(c_73123, &pair_73112, &c_73122);
+make_pair(c_73124, &pair_73114, &c_73123);
+make_pair(c_73125, &pair_73116, &c_73124);
+make_pair(c_73126, &pair_73118, &c_73125);
+make_pair(c_73127, &pair_73120, &c_73126);
+Cyc_global_variables = &c_73127;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi111_srfi_111)->fn)(data, 1, cont, cont);
 }
