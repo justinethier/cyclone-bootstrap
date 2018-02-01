@@ -1806,8 +1806,6 @@
   (let ((vec obj)) ;; TODO: get actual slots from obj
     (vector-set! (vector-ref vec 2) idx val)))
 (define (slot-ref name obj field)
-  ;; TODO: type check
-  ;; TODO: support field as number or symbol
   (let* ((idx (cond 
                 ((symbol? field)
                  (type-slot-offset name field))
