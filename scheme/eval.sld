@@ -437,21 +437,28 @@
   (let ((qval (cadr exp)))
     (lambda (env) qval)))
 
+(define-c assoc-cdr
+  "(void *data, int argc, closure _, object k, object x, object lis)"
+  " return_closcall1(data, k, assoc_cdr(data, x, lis)); ")
+
 (define (analyze-variable exp local-renamed)
   (let* ((lookup (assoc exp local-renamed))
-         ;; TODO: doing too much here, need to figure out a way to speed things up!
          (sym (cond
                 ((pair? lookup)
                  (car lookup))
                 (else
-                  (call/cc (lambda (return)
-                    (for-each
-                      (lambda (v/r)
-                        ;; Map renamed symbol back to one in env
-                        (if (eq? exp (cdr v/r))
-                            (return (car v/r))))
-                      local-renamed)
-                    (return exp))))))) ;; Not found, keep input symbol
+                  (let ((lookup-by-renamed (assoc-cdr exp local-renamed)))
+                    (if lookup-by-renamed
+                        (car lookup-by-renamed) ;; Map renamed symbol back to one in env
+                        exp)))))) ;; Not found, keep input symbol
+                  ;(call/cc (lambda (return)
+                  ;  (for-each
+                  ;    (lambda (v/r)
+                  ;      ;; Map renamed symbol back to one in env
+                  ;      (when (eq? exp (cdr v/r))
+                  ;          (return (car v/r))))
+                  ;    local-renamed)
+                  ;  (return exp))))))) ;; Not found, keep input symbol
     (lambda (env) 
       (env:lookup-variable-value sym env))))
 
