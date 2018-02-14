@@ -451,14 +451,6 @@
                     (if lookup-by-renamed
                         (car lookup-by-renamed) ;; Map renamed symbol back to one in env
                         exp)))))) ;; Not found, keep input symbol
-                  ;(call/cc (lambda (return)
-                  ;  (for-each
-                  ;    (lambda (v/r)
-                  ;      ;; Map renamed symbol back to one in env
-                  ;      (when (eq? exp (cdr v/r))
-                  ;          (return (car v/r))))
-                  ;    local-renamed)
-                  ;  (return exp))))))) ;; Not found, keep input symbol
     (lambda (env) 
       (env:lookup-variable-value sym env))))
 
