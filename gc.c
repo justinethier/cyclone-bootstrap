@@ -423,7 +423,6 @@ char *gc_copy_obj(object dest, char *obj, gc_thread_data * thd)
 
   switch (type_of(obj)) {
   case closureN_tag:{
-      int i;
       closureN_type *hp = dest;
       mark(hp) = thd->gc_alloc_color;
       type_of(hp) = closureN_tag;
@@ -431,9 +430,7 @@ char *gc_copy_obj(object dest, char *obj, gc_thread_data * thd)
       hp->num_args = ((closureN) obj)->num_args;
       hp->num_elements = ((closureN) obj)->num_elements;
       hp->elements = (object *) (((char *)hp) + sizeof(closureN_type));
-      for (i = 0; i < hp->num_elements; i++) {
-        hp->elements[i] = ((closureN) obj)->elements[i];
-      }
+      memcpy(hp->elements, ((closureN)obj)->elements, sizeof(object *) * hp->num_elements);
       return (char *)hp;
     }
   case pair_tag:{
@@ -464,15 +461,12 @@ char *gc_copy_obj(object dest, char *obj, gc_thread_data * thd)
       return (char *)hp;
     }
   case vector_tag:{
-      int i;
       vector_type *hp = dest;
       mark(hp) = thd->gc_alloc_color;
       type_of(hp) = vector_tag;
       hp->num_elements = ((vector) obj)->num_elements;
       hp->elements = (object *) (((char *)hp) + sizeof(vector_type));
-      for (i = 0; i < hp->num_elements; i++) {
-        hp->elements[i] = ((vector) obj)->elements[i];
-      }
+      memcpy(hp->elements, ((vector)obj)->elements, sizeof(object *) * hp->num_elements);
       return (char *)hp;
     }
   case bytevector_tag:{
