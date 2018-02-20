@@ -714,6 +714,18 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
   for (; h; h = h->next) {      // All heaps
     // TODO: chunk size (ignoring for now)
 
+// TODO: is it worth creating a try_alloc_fixed for the fixed-size heaps? could remove a couple of
+// checks below, might speed things up a bit since try_alloc is called so often.
+// downsize is need to figure out how to call into it instead. could make the calling code in gc_alloc
+// a macro (with function name input) and call it 5 times. or use function pointers, but would that
+// generate slower code? could try both and see if it matters much one way or another
+
+// TODO: could we use bump&pop here to allocate directly from 
+// heap if remaining > 0?
+// - would need to initialize remaining such that it will decrement to 0 cleanly
+// - obviously b&p only applies to the fixed-size heaps
+// - can only b&p until heap fills up, so need to assess if it even helps much in our GC
+
     for (f1 = h->free_list, f2 = f1->next; f2; f1 = f2, f2 = f2->next) {        // all free in this heap
       if (f2->size >= size) {   // Big enough for request
         // TODO: take whole chunk or divide up f2 (using f3)?
@@ -741,6 +753,63 @@ void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
         }
         h_passed->next_free = h;
         h_passed->last_alloc_size = size;
+        pthread_mutex_unlock(&(thd->heap_lock));
+        return f2;
+      }
+    }
+  }
+  pthread_mutex_unlock(&(thd->heap_lock));
+  return NULL;
+}
+
+/**
+ * @brief Same as `gc_try_alloc` but optimized for heaps for fixed-sized objects.
+ * @param h          Heap to allocate from
+ * @param heap_type  Define the size of objects that will be allocated on this heap 
+ * @param size       Size of the requested object, in bytes
+ * @param obj        Object containing data that will be copied to the heap
+ * @param thd        Thread data for the mutator using this heap
+ * @return Pointer to the newly-allocated object, or `NULL` if allocation failed
+ *
+ * This function will fail if there is no space on the heap for the 
+ * requested object.
+ */
+void *gc_try_alloc_fixed_size(gc_heap * h, int heap_type, size_t size, char *obj, gc_thread_data * thd)
+{
+  gc_heap *h_passed = h;
+  gc_free_list *f1, *f2, *f3;
+  pthread_mutex_lock(&(thd->heap_lock));
+  h = h->next_free;
+
+  for (; h; h = h->next) {      // All heaps
+
+// TODO: could we use bump&pop here to allocate directly from 
+// heap if remaining > 0?
+// - would need to initialize remaining such that it will decrement to 0 cleanly
+// - obviously b&p only applies to the fixed-size heaps
+// - can only b&p until heap fills up, so need to assess if it even helps much in our GC
+
+    for (f1 = h->free_list, f2 = f1->next; f2; f1 = f2, f2 = f2->next) {        // all free in this heap
+      if (f2->size >= size) {   // Big enough for request
+        if (f2->size >= (size + gc_heap_align(1) /* min obj size */ )) {
+          f3 = (gc_free_list *) (((char *)f2) + size);
+          f3->size = f2->size - size;
+          f3->next = f2->next;
+          f1->next = f3;
+        } else {                /* Take the whole chunk */
+          f1->next = f2->next;
+        }
+
+        // Copy object into heap now to avoid any uninitialized memory issues
+        #if GC_DEBUG_TRACE
+        if (size < (32 * NUM_ALLOC_SIZES)) {
+          allocated_size_counts[(size / 32) - 1]++;
+        }
+        #endif
+        gc_copy_obj(f2, obj, thd);
+        ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type]), size);
+
+        h_passed->next_free = h;
         pthread_mutex_unlock(&(thd->heap_lock));
         return f2;
       }
@@ -839,6 +908,7 @@ void *gc_alloc_from_bignum(gc_thread_data *data, bignum_type *src)
   return gc_alloc(((gc_thread_data *)data)->heap, sizeof(bignum_type), (char *)(src), (gc_thread_data *)data, &heap_grown);
 }
 
+
 /**
  * @brief Allocate memory on the heap for an object
  * @param hrt   The root of the heap to allocate from
@@ -858,6 +928,7 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
   void *result = NULL;
   gc_heap *h = NULL;
   int heap_type;
+  void *(*try_alloc)(gc_heap * h, int heap_type, size_t size, char *obj, gc_thread_data * thd);
   // TODO: check return value, if null (could not alloc) then 
   // run a collection and check how much free space there is. if less
   // the allowed ratio, try growing heap.
@@ -865,43 +936,50 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
   size = gc_heap_align(size);
   if (size <= 32) {
     heap_type = HEAP_SM;
+    try_alloc = &gc_try_alloc_fixed_size;
   } else if (size <= 64) {
     heap_type = HEAP_64;
+    try_alloc = &gc_try_alloc_fixed_size;
 // Only use this heap on 64-bit platforms, where larger objs are used more often
 // Code from http://stackoverflow.com/a/32717129/101258
 #if INTPTR_MAX == INT64_MAX
   } else if (size <= 96) {
     heap_type = HEAP_96;
+    try_alloc = &gc_try_alloc_fixed_size;
 #endif
   } else if (size >= MAX_STACK_OBJ) {
     heap_type = HEAP_HUGE;
+    try_alloc = &gc_try_alloc;
   } else {
     heap_type = HEAP_REST;
+    try_alloc = &gc_try_alloc;
     // Special case, at least for now
     //return gc_alloc_rest(hrt, size, obj, thd, heap_grown);
   }
-  h = hrt->heap[heap_type];
-#if GC_DEBUG_TRACE
-  allocated_heap_counts[heap_type]++;
-#endif
 
-  result = gc_try_alloc(h, heap_type, size, obj, thd);
+  h = hrt->heap[heap_type];
+  result = try_alloc(h, heap_type, size, obj, thd);
   if (!result) {
-    // A vanilla mark&sweep collector would collect now, but unfortunately
-    // we can't do that because we have to go through multiple stages, some
-    // of which are asynchronous. So... no choice but to grow the heap.
+    /* A vanilla mark&sweep collector would collect now, but unfortunately */
+    /* we can't do that because we have to go through multiple stages, some */
+    /* of which are asynchronous. So... no choice but to grow the heap. */
     gc_grow_heap(h, heap_type, size, 0, thd);
     *heap_grown = 1;
-    result = gc_try_alloc(h, heap_type, size, obj, thd);
+    result = (*try_alloc)(h, heap_type, size, obj, thd);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
       fprintf(stderr, "Heap type %d diagnostics:\n", heap_type);
       pthread_mutex_lock(&(thd->heap_lock));
       gc_print_stats(h);
-      pthread_mutex_unlock(&(thd->heap_lock)); // why not
-      exit(1);                  // could throw error, but OOM is a major issue, so...
+      pthread_mutex_unlock(&(thd->heap_lock)); /* why not */
+      exit(1);                  /* could throw error, but OOM is a major issue, so... */
     }
   }
+
+#if GC_DEBUG_TRACE
+  allocated_heap_counts[heap_type]++;
+#endif
+
 #if GC_DEBUG_VERBOSE
   fprintf(stderr, "alloc %p size = %zu, obj=%p, tag=%d, mark=%d\n", result,
           size, obj, type_of(obj), mark(((object) result)));
