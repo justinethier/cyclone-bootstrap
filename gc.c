@@ -42,12 +42,6 @@
 //#define gc_word_align(n) gc_align((n), 2)
 #define gc_heap_align(n) gc_align(n, GC_BLOCK_BITS)
 
-#if INTPTR_MAX == INT64_MAX
-  #define REST_HEAP_MIN_SIZE 128
-#else
-  #define REST_HEAP_MIN_SIZE 96
-#endif
-
 ////////////////////
 // Global variables
 
@@ -1139,16 +1133,16 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
   size = gc_heap_align(size);
   if (size <= 32) {
     heap_type = HEAP_SM;
-    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
   } else if (size <= 64) {
     heap_type = HEAP_64;
-    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
 // Only use this heap on 64-bit platforms, where larger objs are used more often
 // Code from http://stackoverflow.com/a/32717129/101258
 #if INTPTR_MAX == INT64_MAX
   } else if (size <= 96) {
     heap_type = HEAP_96;
-    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
 #endif
   } else if (size >= MAX_STACK_OBJ) {
     heap_type = HEAP_HUGE;
@@ -1398,15 +1392,6 @@ size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_thread_da
   pthread_mutex_lock(&(thd->heap_lock));
   h->next_free = h;
   h->last_alloc_size = 0;
-
-  //if (heap_type == HEAP_REST) {
-  //  int i;
-  //  size_t chunk_size = REST_HEAP_MIN_SIZE;
-  //  for (i = 0; i < 3; i++) {
-  //    h->next_frees[i] = gc_find_heap_with_chunk_size(h, chunk_size);
-  //    chunk_size += 32;
-  //  }
-  //}
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nBefore sweep -------------------------\n");

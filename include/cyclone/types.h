@@ -169,11 +169,13 @@ typedef enum {
 } gc_heap_type;
 
 /** The first heap type that is not fixed-size */
-#if INTPTR_MAX == INT64_MAX
-#define LAST_FIXED_SIZE_HEAP_TYPE HEAP_96
-#else
-#define LAST_FIXED_SIZE_HEAP_TYPE HEAP_64
-#endif
+// TODO: disable this for now
+#define LAST_FIXED_SIZE_HEAP_TYPE -1
+//#if INTPTR_MAX == INT64_MAX
+//#define LAST_FIXED_SIZE_HEAP_TYPE HEAP_96
+//#else
+//#define LAST_FIXED_SIZE_HEAP_TYPE HEAP_64
+//#endif
 
 /** The number of `gc_heap_type`'s */
 #define NUM_HEAP_TYPES (HEAP_HUGE + 1)
