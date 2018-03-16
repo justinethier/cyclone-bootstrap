@@ -202,6 +202,9 @@ struct gc_heap_t {
   unsigned int remaining;
   unsigned block_size;
   char *data_end;
+  // Lazy-sweep related data
+  unsigned free_size; // Amount of heap data that is free
+  unsigned char is_full; // Determine if the heap is full
   //
   gc_heap *next_free;
   unsigned int last_alloc_size;
@@ -292,7 +295,9 @@ struct gc_thread_data_t {
   object *gc_args;
   short gc_num_args;
   // Data needed for heap GC
-  int gc_alloc_color;
+  unsigned gc_alloc_color;
+  unsigned gc_trace_color;
+  uint8_t gc_done_tracing;
   int gc_status;
   int last_write;
   int last_read;
@@ -300,7 +305,6 @@ struct gc_thread_data_t {
   void **mark_buffer;
   int mark_buffer_len;
   pthread_mutex_t lock;
-  pthread_mutex_t heap_lock;
   pthread_t thread_id;
   gc_heap_root *heap;
   uintptr_t *cached_heap_free_sizes;
@@ -333,6 +337,7 @@ int gc_grow_heap(gc_heap * h, int heap_type, size_t size, size_t chunk_size, gc_
 char *gc_copy_obj(object hp, char *obj, gc_thread_data * thd);
 void *gc_try_alloc(gc_heap * h, int heap_type, size_t size, char *obj,
                    gc_thread_data * thd);
+void *gc_try_alloc_slow(gc_heap *h_passed, gc_heap *h, int heap_type, size_t size, char *obj, gc_thread_data *thd);
 void *gc_alloc(gc_heap_root * h, size_t size, char *obj, gc_thread_data * thd,
                int *heap_grown);
 void *gc_alloc_bignum(gc_thread_data *data);
@@ -346,7 +351,7 @@ void gc_init_fixed_size_free_list(gc_heap *h);
 //void gc_mark(gc_heap *h, object obj);
 void gc_request_mark_globals(void);
 void gc_mark_globals(object globals, object global_table);
-size_t gc_sweep(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_thread_data *thd);
+gc_heap *gc_sweep(gc_heap * h, int heap_type, gc_thread_data *thd);
 void gc_thr_grow_move_buffer(gc_thread_data * d);
 void gc_thr_add_to_move_buffer(gc_thread_data * d, int *alloci, object obj);
 void gc_thread_data_init(gc_thread_data * thd, int mut_num, char *stack_base,
