@@ -47,8 +47,9 @@
 
 // Note: will need to use atomics and/or locking to access any
 // variables shared between threads
-static unsigned gc_color_mark = 3;   // Black, is swapped during GC
-static unsigned gc_color_clear = 1;  // White, is swapped during GC
+static unsigned gc_color_mark = 5;   // Black, is swapped during GC
+static unsigned gc_color_clear = 3;  // White, is swapped during GC
+static unsigned gc_color_purple = 1;  // There are many "shades" of purple, this is the most recent one
 // unfortunately this had to be split up; const colors are located in types.h
 
 static int gc_status_col = STATUS_SYNC1;
@@ -1018,7 +1019,11 @@ void *gc_try_alloc_slow(gc_heap *h_passed, gc_heap *h, int heap_type, size_t siz
         // Heap marked for deletion, remove it and keep searching
         gc_heap *freed = gc_heap_free(h, h_prev);
         if (freed) {
-          h = NULL;
+          if (h_prev) {
+            h = h_prev;
+          } else {
+            h = h_passed;
+          }
           thd->cached_heap_free_sizes[heap_type] -= prev_free_size;
           thd->cached_heap_total_sizes[heap_type] -= h_size;
           continue;
@@ -1173,7 +1178,9 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
     heap_type = HEAP_REST;
     try_alloc = &gc_try_alloc;
   }
-
+//TODO: convert fixed-size heap code and use that here. BUT, create a version of gc_alloc (maybe using macros?)
+//that accepts heap type as an arg and can assume free lists. we can modify gc_move to use the proper new
+//version of gc_alloc (just ifdef if need be for 32 vs 64 bit. this might speed things up a bit
   h = hrt->heap[heap_type];
   h_passed = h;
   // Start searching from the last heap page we had a successful
@@ -1192,6 +1199,7 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
     // Slow path, find another heap block
     h->is_full = 1;
     result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
+printf("slow alloc of %p\n", result);
 
     // Slowest path, allocate a new heap block
     /* A vanilla mark&sweep collector would collect now, but unfortunately */
@@ -1204,6 +1212,7 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
 // otherwise will be a bit of a bottleneck since with lazy sweeping there is no guarantee we are at 
 // the end of the heap anymore
     result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
+printf("slowest alloc of %p\n", result);
     if (!result) {
       fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
       fprintf(stderr, "Heap type %d diagnostics:\n", heap_type);
@@ -1217,8 +1226,9 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
 #endif
 
 #if GC_DEBUG_VERBOSE
-  fprintf(stderr, "alloc %p size = %zu, obj=%p, tag=%d, mark=%d\n", result,
-          size, obj, type_of(obj), mark(((object) result)));
+  fprintf(stderr, "alloc %p size = %zu, obj=%p, tag=%d, mark=%d, thd->alloc=%d, thd->trace=%d\n", result,
+          size, obj, type_of(obj), mark(((object) result)),
+          thd->gc_alloc_color, thd->gc_trace_color);
   // Debug check, should no longer be necessary
   //if (is_value_type(result)) {
   //  printf("Invalid allocated address - is a value type %p\n", result);
@@ -1454,8 +1464,10 @@ gc_heap *gc_sweep(gc_heap * h, int heap_type, gc_thread_data *thd)
       if (mark(p) != thd->gc_alloc_color && 
           mark(p) != thd->gc_trace_color) { //gc_color_clear) 
 #if GC_DEBUG_VERBOSE
-        fprintf(stderr, "sweep is freeing unmarked obj: %p with tag %d\n", p,
-                type_of(p));
+        fprintf(stderr, "sweep is freeing unmarked obj: %p with tag %d mark %d - alloc color %d trace color %d\n", p,
+                type_of(p),
+                mark(p),
+                thd->gc_alloc_color, thd->gc_trace_color);
 #endif
         mark(p) = gc_color_blue;        // Needed?
         if (type_of(p) == mutex_tag) {
@@ -1687,15 +1699,16 @@ void gc_mut_update(gc_thread_data * thd, object old_obj, object value)
     pthread_mutex_unlock(&(thd->lock));
   } else if (stage == STAGE_TRACING) {
 //fprintf(stderr, "DEBUG - GC async tracing marking heap obj %p ", old_obj);
-//Cyc_display(old_obj, stderr);
+//Cyc_display(thd, old_obj, stderr);
 //fprintf(stderr, "\n");
     mark_stack_or_heap_obj(thd, old_obj, 0);
 #if GC_DEBUG_VERBOSE
-    if (is_object_type(old_obj) && mark(old_obj) == gc_color_clear) {
+    if (is_object_type(old_obj) && (mark(old_obj) == gc_color_clear ||
+                                    mark(old_obj) == gc_color_purple)) {
       fprintf(stderr,
               "added to mark buffer (trace) from write barrier %p:mark %d:",
               old_obj, mark(old_obj));
-      Cyc_display(old_obj, stderr);
+      Cyc_display(thd, old_obj, stderr);
       fprintf(stderr, "\n");
     }
 #endif
@@ -1789,23 +1802,26 @@ fprintf(stdout, "done tracing, cooperator is clearing full bits\n");
     }
     // Clear allocation counts to delay next GC trigger
     thd->heap_num_huge_allocations = 0;
+    thd->num_minor_gcs = 0;
   }
 
   // Initiate collection cycle if free space is too low.
   // Threshold is intentially low because we have to go through an
   // entire handshake/trace/sweep cycle, ideally without growing heap.
   if (ck_pr_load_int(&gc_stage) == STAGE_RESTING &&
-      ((thd->cached_heap_free_sizes[HEAP_SM] <
-        thd->cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
-       (thd->cached_heap_free_sizes[HEAP_64] <
-        thd->cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
-#if INTPTR_MAX == INT64_MAX
-       (thd->cached_heap_free_sizes[HEAP_96] <
-        thd->cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
-#endif
-       (thd->cached_heap_free_sizes[HEAP_REST] <
-        thd->cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD) ||
+      (
+//       (thd->cached_heap_free_sizes[HEAP_SM] <
+//        thd->cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
+//       (thd->cached_heap_free_sizes[HEAP_64] <
+//        thd->cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
+//#if INTPTR_MAX == INT64_MAX
+//       (thd->cached_heap_free_sizes[HEAP_96] <
+//        thd->cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
+//#endif
+//       (thd->cached_heap_free_sizes[HEAP_REST] <
+//        thd->cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD) ||
        // Separate huge heap threshold since these are typically allocated as whole pages
+       (thd->num_minor_gcs++ > 100) ||
        (thd->heap_num_huge_allocations > 100)
         )) {
 #if GC_DEBUG_TRACE
@@ -1836,7 +1852,8 @@ void gc_mark_gray(gc_thread_data * thd, object obj)
   // From what I can tell, no other thread would be modifying
   // either object type or mark. Both should be stable once the object is placed
   // into the heap, with the collector being the only thread that changes marks.
-  if (is_object_type(obj) && mark(obj) == gc_color_clear) {     // TODO: sync??
+  if (is_object_type(obj) && (mark(obj) == gc_color_clear ||
+                              mark(obj) == gc_color_purple)) {     // TODO: sync??
     // Place marked object in a buffer to avoid repeated scans of the heap.
 // TODO:
 // Note that ideally this should be a lock-free data structure to make the
@@ -1862,7 +1879,8 @@ void gc_mark_gray(gc_thread_data * thd, object obj)
  */
 void gc_mark_gray2(gc_thread_data * thd, object obj)
 {
-  if (is_object_type(obj) && mark(obj) == gc_color_clear) {
+  if (is_object_type(obj) && (mark(obj) == gc_color_clear ||
+                              mark(obj) == gc_color_purple)) {
     thd->mark_buffer = vpbuffer_add(thd->mark_buffer,
                                     &(thd->mark_buffer_len),
                                     (thd->last_write + thd->pending_writes),
@@ -1883,10 +1901,14 @@ void gc_mark_gray2(gc_thread_data * thd, object obj)
 #if GC_DEBUG_VERBOSE
 static void gc_collector_mark_gray(object parent, object obj)
 {
-  if (is_object_type(obj) && mark(obj) == gc_color_clear) {
+  if (is_object_type(obj) && (mark(obj) == gc_color_clear ||
+                              mark(obj) == gc_color_purple)) {
     mark_stack = vpbuffer_add(mark_stack, &mark_stack_len, mark_stack_i++, obj);
     fprintf(stderr, "mark gray parent = %p (%d) obj = %p\n", parent,
             type_of(parent), obj);
+  } else if (is_object_type(obj)) {
+    fprintf(stderr, "not marking gray, parent = %p (%d) obj = %p mark(obj) = %d, gc_color_clear = %d\n", parent,
+            type_of(parent), obj, mark(obj), gc_color_clear);
   }
 }
 #else
@@ -1894,7 +1916,7 @@ static void gc_collector_mark_gray(object parent, object obj)
 // Attempt to speed this up by forcing an inline
 //
 #define gc_collector_mark_gray(parent, gobj) \
-  if (is_object_type(gobj) && mark(gobj) == gc_color_clear) { \
+  if (is_object_type(gobj) && (mark(gobj) == gc_color_clear || mark(gobj) == gc_color_purple)) { \
     mark_stack = vpbuffer_add(mark_stack, &mark_stack_len, mark_stack_i++, gobj); \
   }
 #endif
@@ -2214,6 +2236,7 @@ void gc_collector()
   // We now increment both so that clear becomes the old mark color and a
   // new value is used for the mark color. The old clear color becomes
   // purple, indicating any of these objects are garbage
+  ck_pr_add_uint(&gc_color_purple, 2);
   ck_pr_add_uint(&gc_color_clear, 2);
   ck_pr_add_uint(&gc_color_mark, 2);
 #if GC_DEBUG_TRACE
@@ -2403,6 +2426,8 @@ void gc_thread_data_init(gc_thread_data * thd, int mut_num, char *stack_base,
     fprintf(stderr, "Unable to initialize thread mutex\n");
     exit(1);
   }
+  thd->heap_num_huge_allocations = 0;
+  thd->num_minor_gcs = 0;
   thd->cached_heap_free_sizes = calloc(5, sizeof(uintptr_t));
   thd->cached_heap_total_sizes = calloc(5, sizeof(uintptr_t));
   thd->heap = calloc(1, sizeof(gc_heap_root));

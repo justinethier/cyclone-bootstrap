@@ -126,10 +126,10 @@ typedef unsigned char tag_type;
 #define GC_DEBUG_SHOW_SWEEP_DIAG 0
 
 /** GC debugging flag */
-#define GC_DEBUG_TRACE 0
+#define GC_DEBUG_TRACE 1
 
 /** GC debugging flag */
-#define GC_DEBUG_VERBOSE 0
+#define GC_DEBUG_VERBOSE 1
 
 /** Additional runtime checking of the GC system.
  *  This is here because these checks should not be
@@ -310,6 +310,7 @@ struct gc_thread_data_t {
   uintptr_t *cached_heap_free_sizes;
   uintptr_t *cached_heap_total_sizes;
   int heap_num_huge_allocations;
+  int num_minor_gcs;
   // Data needed for call history
   char **stack_traces;
   int stack_trace_idx;
