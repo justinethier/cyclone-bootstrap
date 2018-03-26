@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.7.2 
+ ** Version 0.7.3 
  **
  **/
 
@@ -490,6 +490,7 @@ extern object __glo_ast_117lambda_91body_scheme_cyclone_ast;
 extern object __glo_ast_117set_91lambda_91body_67_scheme_cyclone_ast;
 extern object __glo_ast_117lambda_91has_91cont_scheme_cyclone_ast;
 extern object __glo_ast_117set_91lambda_91has_91cont_67_scheme_cyclone_ast;
+extern object __glo_ast_117get_91next_91lambda_91id_67_scheme_cyclone_ast;
 extern object __glo__85Cyc_91version_91banner_85_scheme_cyclone_common;
 extern object __glo__85version_85_scheme_cyclone_common;
 extern object __glo__85version_91number_85_scheme_cyclone_common;
