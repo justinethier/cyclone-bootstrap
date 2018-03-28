@@ -47,9 +47,9 @@
 
 // Note: will need to use atomics and/or locking to access any
 // variables shared between threads
-static unsigned gc_color_mark = 5;   // Black, is swapped during GC
-static unsigned gc_color_clear = 3;  // White, is swapped during GC
-static unsigned gc_color_purple = 1;  // There are many "shades" of purple, this is the most recent one
+static unsigned char gc_color_mark = 5;   // Black, is swapped during GC
+static unsigned char gc_color_clear = 3;  // White, is swapped during GC
+static unsigned char gc_color_purple = 1;  // There are many "shades" of purple, this is the most recent one
 // unfortunately this had to be split up; const colors are located in types.h
 
 static int gc_status_col = STATUS_SYNC1;
@@ -350,12 +350,12 @@ void gc_init_fixed_size_free_list(gc_heap *h)
 void gc_print_fixed_size_free_list(gc_heap *h)
 {
   gc_free_list *f = h->free_list;
-  printf("printing free list:\n");
+  fprintf(stderr, "printing free list:\n");
   while(f) {
-    printf("%p\n", f);
+    fprintf(stderr, "%p\n", f);
     f = f->next;
   }
-  printf("done\n");
+  fprintf(stderr, "done\n");
 }
 
 /**
@@ -1199,25 +1199,30 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
     // Slow path, find another heap block
     h->is_full = 1;
     result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
-printf("slow alloc of %p\n", result);
-
-    // Slowest path, allocate a new heap block
-    /* A vanilla mark&sweep collector would collect now, but unfortunately */
-    /* we can't do that because we have to go through multiple stages, some */
-    /* of which are asynchronous. So... no choice but to grow the heap. */
-    gc_grow_heap(h, heap_type, size, 0, thd);
-    *heap_grown = 1;
-    //result = (*try_alloc)(h, heap_type, size, obj, thd);
-// TODO: would be nice if gc_grow_heap returns new page (maybe it does) then we can start from there
-// otherwise will be a bit of a bottleneck since with lazy sweeping there is no guarantee we are at 
-// the end of the heap anymore
-    result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
-printf("slowest alloc of %p\n", result);
+#if GC_DEBUG_VERBOSE
+fprintf(stderr, "slow alloc of %p\n", result);
+#endif
     if (!result) {
-      fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
-      fprintf(stderr, "Heap type %d diagnostics:\n", heap_type);
-      gc_print_stats(h);
-      exit(1);                  /* could throw error, but OOM is a major issue, so... */
+      // Slowest path, allocate a new heap block
+      /* A vanilla mark&sweep collector would collect now, but unfortunately */
+      /* we can't do that because we have to go through multiple stages, some */
+      /* of which are asynchronous. So... no choice but to grow the heap. */
+      gc_grow_heap(h, heap_type, size, 0, thd);
+      *heap_grown = 1;
+      //result = (*try_alloc)(h, heap_type, size, obj, thd);
+  // TODO: would be nice if gc_grow_heap returns new page (maybe it does) then we can start from there
+  // otherwise will be a bit of a bottleneck since with lazy sweeping there is no guarantee we are at 
+  // the end of the heap anymore
+      result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
+#if GC_DEBUG_VERBOSE
+fprintf(stderr, "slowest alloc of %p\n", result);
+#endif
+      if (!result) {
+        fprintf(stderr, "out of memory error allocating %zu bytes\n", size);
+        fprintf(stderr, "Heap type %d diagnostics:\n", heap_type);
+        gc_print_stats(h);
+        exit(1);                  /* could throw error, but OOM is a major issue, so... */
+      }
     }
   }
 
@@ -1428,6 +1433,15 @@ gc_heap *gc_sweep(gc_heap * h, int heap_type, gc_thread_data *thd)
   //for (; h; prev_h = h, h = h->next)       // All heaps
 #if GC_DEBUG_TRACE
     fprintf(stderr, "sweep heap %p, size = %zu\n", h, (size_t) h->size);
+#endif
+#if GC_DEBUG_VERBOSE
+    {
+      gc_free_list *tmp = h->free_list;
+      while (tmp) {
+        fprintf(stderr, "free list %p\n", tmp);
+        tmp = tmp->next;
+      }
+    }
 #endif
     p = gc_heap_first_block(h);
     q = h->free_list;
@@ -1772,7 +1786,7 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
         gc_mark_gray(thd, thd->moveBuf[i]);
       }
       pthread_mutex_unlock(&(thd->lock));
-      thd->gc_alloc_color = ck_pr_load_uint(&gc_color_mark);
+      thd->gc_alloc_color = ck_pr_load_8(&gc_color_mark);
     }
   }
 #if GC_DEBUG_VERBOSE
@@ -1791,7 +1805,9 @@ void gc_mut_cooperate(gc_thread_data * thd, int buf_len)
   if(ck_pr_cas_8(&(thd->gc_done_tracing), 1, 0)) {
     int heap_type;
     gc_heap *h_tmp;
+#if GC_DEBUG_VERBOSE
 fprintf(stdout, "done tracing, cooperator is clearing full bits\n");
+#endif
     for (heap_type = 0; heap_type < NUM_HEAP_TYPES; heap_type++) {
       h_tmp = thd->heap->heap[heap_type];
       for (; h_tmp; h_tmp = h_tmp->next) {
@@ -1821,7 +1837,7 @@ fprintf(stdout, "done tracing, cooperator is clearing full bits\n");
 //       (thd->cached_heap_free_sizes[HEAP_REST] <
 //        thd->cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD) ||
        // Separate huge heap threshold since these are typically allocated as whole pages
-       (thd->num_minor_gcs++ > 100) ||
+       (thd->num_minor_gcs++ > 10) ||
        (thd->heap_num_huge_allocations > 100)
         )) {
 #if GC_DEBUG_TRACE
@@ -1927,7 +1943,7 @@ void gc_mark_black(object obj)
   // TODO: is sync required to get colors? probably not on the collector
   // thread (at least) since colors are only changed once during the clear
   // phase and before the first handshake.
-  int markColor = ck_pr_load_uint(&gc_color_mark);
+  int markColor = ck_pr_load_8(&gc_color_mark);
   if (is_object_type(obj) && mark(obj) != markColor) {
     // Gray any child objects
     // Note we probably should use some form of atomics/synchronization
@@ -1982,7 +1998,7 @@ void gc_mark_black(object obj)
 // Also sync any changes to this macro with the function version
 #define gc_mark_black(obj) \
 { \
-  int markColor = ck_pr_load_uint(&gc_color_mark); \
+  int markColor = ck_pr_load_8(&gc_color_mark); \
   if (is_object_type(obj) && mark(obj) != markColor) { \
     switch (type_of(obj)) { \
     case pair_tag:{ \
@@ -2192,7 +2208,7 @@ void gc_wait_handshake()
             for (i = 0; i < buf_len; i++) {
               gc_mark_gray(m, m->moveBuf[i]);
             }
-            m->gc_alloc_color = ck_pr_load_uint(&gc_color_mark);
+            m->gc_alloc_color = ck_pr_load_8(&gc_color_mark);
           }
           pthread_mutex_unlock(&(m->lock));
         }
@@ -2227,18 +2243,18 @@ void gc_collector()
   //clear : 
   ck_pr_cas_int(&gc_stage, STAGE_RESTING, STAGE_CLEAR_OR_MARKING);
   // exchange values of markColor and clearColor
-//  old_clear = ck_pr_load_int(&gc_color_clear);
-//  old_mark = ck_pr_load_int(&gc_color_mark);
-//  while (!ck_pr_cas_int(&gc_color_clear, old_clear, old_mark)) {
+//  old_clear = ck_pr_load_8(&gc_color_clear);
+//  old_mark = ck_pr_load_8(&gc_color_mark);
+//  while (!ck_pr_cas_8(&gc_color_clear, old_clear, old_mark)) {
 //  }
-//  while (!ck_pr_cas_int(&gc_color_mark, old_mark, old_clear)) {
+//  while (!ck_pr_cas_8(&gc_color_mark, old_mark, old_clear)) {
 //  }
   // We now increment both so that clear becomes the old mark color and a
   // new value is used for the mark color. The old clear color becomes
   // purple, indicating any of these objects are garbage
-  ck_pr_add_uint(&gc_color_purple, 2);
-  ck_pr_add_uint(&gc_color_clear, 2);
-  ck_pr_add_uint(&gc_color_mark, 2);
+  ck_pr_add_8(&gc_color_purple, 2);
+  ck_pr_add_8(&gc_color_clear, 2);
+  ck_pr_add_8(&gc_color_mark, 2);
 #if GC_DEBUG_TRACE
   fprintf(stderr, "DEBUG - swap clear %d / mark %d\n", gc_color_clear,
           gc_color_mark);
@@ -2411,7 +2427,7 @@ void gc_thread_data_init(gc_thread_data * thd, int mut_num, char *stack_base,
   thd->gc_num_args = 0;
   thd->moveBufLen = 0;
   gc_thr_grow_move_buffer(thd);
-  thd->gc_alloc_color = ck_pr_load_uint(&gc_color_clear);
+  thd->gc_alloc_color = ck_pr_load_8(&gc_color_clear);
   thd->gc_trace_color = thd->gc_alloc_color;
   thd->gc_done_tracing = 0;
   thd->gc_status = ck_pr_load_int(&gc_status_col);

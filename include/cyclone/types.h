@@ -126,10 +126,10 @@ typedef unsigned char tag_type;
 #define GC_DEBUG_SHOW_SWEEP_DIAG 0
 
 /** GC debugging flag */
-#define GC_DEBUG_TRACE 1
+#define GC_DEBUG_TRACE 0
 
 /** GC debugging flag */
-#define GC_DEBUG_VERBOSE 1
+#define GC_DEBUG_VERBOSE 0
 
 /** Additional runtime checking of the GC system.
  *  This is here because these checks should not be
@@ -295,8 +295,8 @@ struct gc_thread_data_t {
   object *gc_args;
   short gc_num_args;
   // Data needed for heap GC
-  unsigned gc_alloc_color;
-  unsigned gc_trace_color;
+  unsigned char gc_alloc_color;
+  unsigned char gc_trace_color;
   uint8_t gc_done_tracing;
   int gc_status;
   int last_write;
