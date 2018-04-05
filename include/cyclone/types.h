@@ -109,7 +109,7 @@ typedef unsigned char tag_type;
 // Major GC tuning parameters
 
 /** Start GC cycle if % heap space free below this percentage */
-#define GC_COLLECTION_THRESHOLD 0.05
+#define GC_COLLECTION_THRESHOLD 0.025
 
 /** After major GC, grow the heap so at least this percentage is free */
 #define GC_FREE_THRESHOLD 0.40
@@ -203,8 +203,9 @@ struct gc_heap_t {
   unsigned block_size;
   char *data_end;
   // Lazy-sweep related data
-  unsigned free_size; // Amount of heap data that is free
+  int free_size; // Amount of heap data that is free
   unsigned char is_full; // Determine if the heap is full
+  unsigned char cached_free_size_status;
   //
   gc_heap *next_free;
   unsigned int last_alloc_size;
