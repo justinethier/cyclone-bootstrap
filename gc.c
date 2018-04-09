@@ -248,11 +248,15 @@ void gc_free_old_thread_data()
   pthread_mutex_unlock(&mutators_lock);
 }
 
-// TODO: any code that uses this probably needs to be updated for performance!!
+/**
+ * @brief Return the amount of free space on the heap
+ * @param gc_heap Root of the heap
+ * @return Free space in bytes
+ */
 uint64_t gc_heap_free_size(gc_heap *h) {
   uint64_t free_size = 0;
   for (; h; h = h->next){
-    if (h->cached_free_size_status == 1) { // Assume all free
+    if (h->cached_free_size_status == 1) { // Assume all free prior to sweep
       free_size += h->size;
     } else {
       free_size += (h->free_size);
@@ -1032,7 +1036,7 @@ void *gc_try_alloc_slow(gc_heap *h_passed, gc_heap *h, int heap_type, size_t siz
     // check allocation status to make sure we can use it
     if (h->is_full) {
       continue; // Cannot sweep until next GC cycle
-    } else if (!gc_is_heap_empty(h)) { // TODO: empty function does not support fixed-size heaps yet
+    } else if (h->cached_free_size_status == 1 && !gc_is_heap_empty(h)) { // TODO: empty function does not support fixed-size heaps yet
       unsigned int h_size = h->size;
       //unsigned int prev_free_size = h->free_size;
       //if (h->cached_free_size_status == 1) {
@@ -1859,87 +1863,100 @@ fprintf(stdout, "done tracing, cooperator is clearing full bits\n");
     // Clear allocation counts to delay next GC trigger
     thd->heap_num_huge_allocations = 0;
     thd->num_minor_gcs = 0;
-
-    //for (heap_type = 0; heap_type < 2; heap_type++) {
-    //  while ( gc_heap_free_size(thd->heap->heap[heap_type]) < //thd->cached_heap_free_sizes[heap_type] <
-    //         (thd->cached_heap_total_sizes[heap_type]) * GC_FREE_THRESHOLD) {
-#if GC_DEBUG_TRACE
-    //    fprintf(stderr, "Less than %f%% of the heap %d is free, growing it\n",
-    //            100.0 * GC_FREE_THRESHOLD, heap_type);
-#endif
-    //    if (heap_type == HEAP_SM) {
-    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
-    //    } else if (heap_type == HEAP_64) {
-    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
-    //    } else if (heap_type == HEAP_REST) {
-    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
-    //    }
-    //  }
-    //}
+// TODO: can't do this now because we don't know how much of the heap is free, as none if it has
+// been swept and we are sweeping incrementally
+//
+//    for (heap_type = 0; heap_type < 2; heap_type++) {
+//      uint64_t free_size = gc_heap_free_size(thd->heap->heap[heap_type]),
+//               threshold = (thd->cached_heap_total_sizes[heap_type]) * GC_FREE_THRESHOLD;
+//      if (free_size < threshold) {
+//        int i, new_heaps = (int)((threshold - free_size) / HEAP_SIZE);
+//        if (new_heaps < 1) {
+//          new_heaps = 1;
+//        }
+////#if GC_DEBUG_TRACE
+//        fprintf(stderr, "Less than %f%% of the heap %d is free (%llu / %llu), growing it %d times\n",
+//                100.0 * GC_FREE_THRESHOLD, heap_type, free_size, threshold, new_heaps);
+////#endif
+//if (new_heaps > 100){ exit(1);} // Something is wrong!
+//        for(i = 0; i < new_heaps; i++){
+//          gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
+//        }
+//    //  while ( gc_heap_free_size(thd->heap->heap[heap_type]) < //thd->cached_heap_free_sizes[heap_type] <
+//    //    if (heap_type == HEAP_SM) {
+//    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
+//    //    } else if (heap_type == HEAP_64) {
+//    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
+//    //    } else if (heap_type == HEAP_REST) {
+//    //      gc_grow_heap(thd->heap->heap[heap_type], heap_type, 0, 0, thd);
+//    //    }
+//      }
+//    }
   }
 
-thd->cached_heap_free_sizes[HEAP_SM]   = gc_heap_free_size(thd->heap->heap[HEAP_SM]) ;
-thd->cached_heap_free_sizes[HEAP_64]   = gc_heap_free_size(thd->heap->heap[HEAP_64]) ;
-thd->cached_heap_free_sizes[HEAP_96]   = gc_heap_free_size(thd->heap->heap[HEAP_96]) ;
-thd->cached_heap_free_sizes[HEAP_REST] = gc_heap_free_size(thd->heap->heap[HEAP_REST]);
+  thd->num_minor_gcs++;
+  if (thd->num_minor_gcs % 10 == 9) { // Throttle a bit since usually we do not need major GC
+    thd->cached_heap_free_sizes[HEAP_SM]   = gc_heap_free_size(thd->heap->heap[HEAP_SM]) ;
+    thd->cached_heap_free_sizes[HEAP_64]   = gc_heap_free_size(thd->heap->heap[HEAP_64]) ;
+    thd->cached_heap_free_sizes[HEAP_96]   = gc_heap_free_size(thd->heap->heap[HEAP_96]) ;
+    thd->cached_heap_free_sizes[HEAP_REST] = gc_heap_free_size(thd->heap->heap[HEAP_REST]);
 
-#if GC_DEBUG_TRACE
-      fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_SM, thd->cached_heap_free_sizes[HEAP_SM], thd->cached_heap_total_sizes[HEAP_SM]);
-      if (thd->cached_heap_free_sizes[HEAP_SM] > thd->cached_heap_total_sizes[HEAP_SM]) {
-        fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
-          thd->cached_heap_free_sizes[HEAP_SM], thd->cached_heap_total_sizes[HEAP_SM]);
-        exit(1);
-      }
-      fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_64, thd->cached_heap_free_sizes[HEAP_64], thd->cached_heap_total_sizes[HEAP_64]);
-      if (thd->cached_heap_free_sizes[HEAP_64] > thd->cached_heap_total_sizes[HEAP_64]) {
-        fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
-          thd->cached_heap_free_sizes[HEAP_64], thd->cached_heap_total_sizes[HEAP_64]);
-        exit(1);
-      }
-      fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_96, thd->cached_heap_free_sizes[HEAP_96], thd->cached_heap_total_sizes[HEAP_96]);
-      if (thd->cached_heap_free_sizes[HEAP_96] > thd->cached_heap_total_sizes[HEAP_96]) {
-        fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
-          thd->cached_heap_free_sizes[HEAP_96], thd->cached_heap_total_sizes[HEAP_96]);
-        exit(1);
-      }
-      fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_REST, thd->cached_heap_free_sizes[HEAP_REST], thd->cached_heap_total_sizes[HEAP_REST]);
-      if (thd->cached_heap_free_sizes[HEAP_REST] > thd->cached_heap_total_sizes[HEAP_REST]) {
-        fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
-          thd->cached_heap_free_sizes[HEAP_REST], thd->cached_heap_total_sizes[HEAP_REST]);
-        exit(1);
-      }
+#if GC_DEBUG_VERBOSE
+    fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_SM, thd->cached_heap_free_sizes[HEAP_SM], thd->cached_heap_total_sizes[HEAP_SM]);
+    if (thd->cached_heap_free_sizes[HEAP_SM] > thd->cached_heap_total_sizes[HEAP_SM]) {
+      fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
+        thd->cached_heap_free_sizes[HEAP_SM], thd->cached_heap_total_sizes[HEAP_SM]);
+      exit(1);
+    }
+    fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_64, thd->cached_heap_free_sizes[HEAP_64], thd->cached_heap_total_sizes[HEAP_64]);
+    if (thd->cached_heap_free_sizes[HEAP_64] > thd->cached_heap_total_sizes[HEAP_64]) {
+      fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
+        thd->cached_heap_free_sizes[HEAP_64], thd->cached_heap_total_sizes[HEAP_64]);
+      exit(1);
+    }
+    fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_96, thd->cached_heap_free_sizes[HEAP_96], thd->cached_heap_total_sizes[HEAP_96]);
+    if (thd->cached_heap_free_sizes[HEAP_96] > thd->cached_heap_total_sizes[HEAP_96]) {
+      fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
+        thd->cached_heap_free_sizes[HEAP_96], thd->cached_heap_total_sizes[HEAP_96]);
+      exit(1);
+    }
+    fprintf(stderr, "heap %d free %zu total %zu\n", HEAP_REST, thd->cached_heap_free_sizes[HEAP_REST], thd->cached_heap_total_sizes[HEAP_REST]);
+    if (thd->cached_heap_free_sizes[HEAP_REST] > thd->cached_heap_total_sizes[HEAP_REST]) {
+      fprintf(stderr, "gc_mut_cooperate - Invalid cached heap sizes, free=%zu total=%zu\n", 
+        thd->cached_heap_free_sizes[HEAP_REST], thd->cached_heap_total_sizes[HEAP_REST]);
+      exit(1);
+    }
 #endif
 
-  // Initiate collection cycle if free space is too low.
-  // Threshold is intentially low because we have to go through an
-  // entire handshake/trace/sweep cycle, ideally without growing heap.
-  if (ck_pr_load_int(&gc_stage) == STAGE_RESTING &&
-      (
-       //(gc_heap_free_size(thd->heap->heap[HEAP_SM]) < //thd->cached_heap_free_sizes[HEAP_SM] <
-       (thd->cached_heap_free_sizes[HEAP_SM] <
-        thd->cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
-       //(gc_heap_free_size(thd->heap->heap[HEAP_64]) < //thd->cached_heap_free_sizes[HEAP_64] <
-       (thd->cached_heap_free_sizes[HEAP_64] <
-        thd->cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
-#if INTPTR_MAX == INT64_MAX
-       //(gc_heap_free_size(thd->heap->heap[HEAP_96]) < //thd->cached_heap_free_sizes[HEAP_96] <
-       (thd->cached_heap_free_sizes[HEAP_96] <
-        thd->cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
-#endif
-       //(gc_heap_free_size(thd->heap->heap[HEAP_REST]) < //thd->cached_heap_free_sizes[HEAP_REST] <
-       (thd->cached_heap_free_sizes[HEAP_REST] <
-        thd->cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD) ||
-       // Separate huge heap threshold since these are typically allocated as whole pages
-//       (thd->num_minor_gcs++ > 10) ||
-       (thd->heap_num_huge_allocations > 100)
-        )) {
-#if GC_DEBUG_TRACE
-    fprintf(stderr,
-            "Less than %f%% of the heap is free, initiating collector\n",
-            100.0 * GC_COLLECTION_THRESHOLD);
-#endif
-    ck_pr_cas_int(&gc_stage, STAGE_RESTING, STAGE_CLEAR_OR_MARKING);
-
+    // Initiate collection cycle if free space is too low.
+    // Threshold is intentially low because we have to go through an
+    // entire handshake/trace/sweep cycle, ideally without growing heap.
+    if (ck_pr_load_int(&gc_stage) == STAGE_RESTING &&
+        (
+         //(gc_heap_free_size(thd->heap->heap[HEAP_SM]) < //thd->cached_heap_free_sizes[HEAP_SM] <
+         (thd->cached_heap_free_sizes[HEAP_SM] <
+          thd->cached_heap_total_sizes[HEAP_SM] * GC_COLLECTION_THRESHOLD) ||
+         //(gc_heap_free_size(thd->heap->heap[HEAP_64]) < //thd->cached_heap_free_sizes[HEAP_64] <
+         (thd->cached_heap_free_sizes[HEAP_64] <
+          thd->cached_heap_total_sizes[HEAP_64] * GC_COLLECTION_THRESHOLD) ||
+  #if INTPTR_MAX == INT64_MAX
+         //(gc_heap_free_size(thd->heap->heap[HEAP_96]) < //thd->cached_heap_free_sizes[HEAP_96] <
+         (thd->cached_heap_free_sizes[HEAP_96] <
+          thd->cached_heap_total_sizes[HEAP_96] * GC_COLLECTION_THRESHOLD) ||
+  #endif
+         //(gc_heap_free_size(thd->heap->heap[HEAP_REST]) < //thd->cached_heap_free_sizes[HEAP_REST] <
+         (thd->cached_heap_free_sizes[HEAP_REST] <
+          thd->cached_heap_total_sizes[HEAP_REST] * GC_COLLECTION_THRESHOLD) ||
+         // Separate huge heap threshold since these are typically allocated as whole pages
+         (thd->heap_num_huge_allocations > 100)
+          )) {
+  #if GC_DEBUG_TRACE
+      fprintf(stderr,
+              "Less than %f%% of the heap is free, initiating collector\n",
+              100.0 * GC_COLLECTION_THRESHOLD);
+  #endif
+      ck_pr_cas_int(&gc_stage, STAGE_RESTING, STAGE_CLEAR_OR_MARKING);
+    }
   }
 }
 

@@ -102,6 +102,9 @@ typedef unsigned char tag_type;
 /** Normal size of a heap page */
 #define HEAP_SIZE (32 * 1024 * 1024)    
 
+// TODO:
+#define FIXED_HEAP_SIZE (1 * 1024 * 1024)    
+
 // End heap page size parameters
 ////////////////////////////////
 
@@ -109,7 +112,7 @@ typedef unsigned char tag_type;
 // Major GC tuning parameters
 
 /** Start GC cycle if % heap space free below this percentage */
-#define GC_COLLECTION_THRESHOLD 0.025
+#define GC_COLLECTION_THRESHOLD 0.0125 // 0.05
 
 /** After major GC, grow the heap so at least this percentage is free */
 #define GC_FREE_THRESHOLD 0.40
