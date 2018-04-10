@@ -1860,6 +1860,15 @@ fprintf(stdout, "done tracing, cooperator is clearing full bits\n");
         }
       }
     }
+
+    // At least for now, let the main thread help clean up any terminated threads
+    if (thd == primordial_thread) {
+#if GC_DEBUG_TRACE
+      fprintf(stderr, "main thread is cleaning up any old thread data\n");
+#endif
+      gc_free_old_thread_data();
+    }
+
     // Clear allocation counts to delay next GC trigger
     thd->heap_num_huge_allocations = 0;
     thd->num_minor_gcs = 0;
@@ -2400,10 +2409,6 @@ fprintf(stderr, " - Starting gc_collector\n"); // TODO: DEBUGGING!!!
   //sweep : 
   gc_collector_sweep();
 
-#if GC_DEBUG_TRACE
-  fprintf(stderr, "cleaning up any old thread data\n");
-#endif
-  gc_free_old_thread_data();
   // Idle the GC thread
   ck_pr_cas_int(&gc_stage, STAGE_SWEEPING, STAGE_RESTING);
 }
