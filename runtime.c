@@ -4951,13 +4951,13 @@ char *gc_fixup_moved_obj(gc_thread_data * thd, int *alloci, char *obj,
   if (grayed(obj)) {
     // Try to acquire the lock, because we are already locked if
     // the collector is cooperating on behalf of the mutator
-    if (pthread_mutex_trylock(&(thd->lock)) == 0) {
-      acquired_lock = 1;
-    }
+    //if (pthread_mutex_trylock(&(thd->lock)) == 0) {
+    //  acquired_lock = 1;
+    //}
     gc_mark_gray2(thd, hp);
-    if (acquired_lock) {
-      pthread_mutex_unlock(&(thd->lock));
-    }
+    //if (acquired_lock) {
+    //  pthread_mutex_unlock(&(thd->lock));
+    //}
   }
   // hp ==> new heap object, point to it from old stack object
   forward(obj) = hp;
@@ -5845,6 +5845,62 @@ void vpbuffer_free(void **buf)
 {
   free(buf);
 }
+
+// Mark buffer functions
+// For these, we need a buffer than can grow as needed but that can also be
+// used concurrently by both a mutator thread and a collector thread.
+
+mark_buffer *mark_buffer_init(unsigned initial_size)
+{
+  mark_buffer *mb = malloc(sizeof(mark_buffer));
+  mb->buf = malloc(sizeof(void *) * initial_size);
+  mb->buf_len = initial_size;
+  mb->next = NULL;
+  return mb;
+}
+
+void *mark_buffer_get(mark_buffer *mb, unsigned i) // TODO: macro?
+{
+  while (i >= mb->buf_len) {
+    // Not on this page, try the next one
+    i -= mb->buf_len;
+    mb = mb->next;
+    if (mb == NULL) { // Safety check
+      // For now this is a fatal error, could return NULL instead
+      fprintf(stderr, "mark_buffer_get ran out of mark buffers, exiting\n");
+      exit(1);
+    }
+  }
+  return mb->buf[i];
+}
+
+void mark_buffer_set(mark_buffer *mb, unsigned i, void *obj)
+{
+  // Find index i
+  while (i >= mb->buf_len) {
+    // Not on this page, try the next one
+    i -= mb->buf_len;
+    if (mb->next == NULL) { 
+      // If it does not exist, allocate a new buffer
+      mb->next = mark_buffer_init(mb->buf_len * 2);
+    }
+    mb = mb->next;
+  }
+  mb->buf[i] = obj;
+}
+
+void mark_buffer_free(mark_buffer *mb)
+{
+  mark_buffer *next;
+  while (mb) {
+    next = mb->next;
+    free(mb->buf);
+    free(mb);
+    mb = next;
+  }
+}
+
+// END mark buffer
 
 object Cyc_bit_unset(void *data, object n1, object n2) 
 {
