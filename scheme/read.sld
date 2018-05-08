@@ -128,6 +128,10 @@
   "(void *data, int argc, closure _, object k, object opq)"
   " Cyc_string2number_(data, k, opaque_ptr(opq));")
 
+(define-c Cyc-make-rect
+  "(void *data, int argc, closure _, object k, object r, object i)"
+  " Cyc_make_rectangular(data, k, r, i); ")
+
 (define (parse fp)
   (let ((token (read-token fp)))
     ;(write `(token ,token))
@@ -172,6 +176,30 @@
              ((eq? t *sym-datum-comment*)
               (parse fp) ;; Ignore next datum
               (parse fp))
+             ((string? t) ;; Special case: complex number
+              (let* ((end (vector-ref token 1))
+                     (len (string-length t))
+                     (only-imag? (= (+ 1 end) len)) ;; EG: "57i" with no real component
+                     (real-str (if only-imag?
+                                   "0"
+                                   (substring t 0 end)))
+                     (imag-str (if only-imag?
+                                   (substring t 0 end)
+                                   (substring t end (- len 1))))
+                     (real (string->number real-str))
+                     (imag (string->number imag-str))
+                    )
+                #;(if (= (+ 1 end) len)
+                  (let ((real "0")
+                        (imag (substring t 0 end))) ;; Only an imag part
+                    (write `(DEBUG ,t ,end ,len real ,(string->number real) imag ,(string->number imag))))
+                  (let ((real (substring t 0 end))
+                        (imag (substring t end (- len 1))))
+                    (if (= 0 (string-length imag))
+                        (set! imag "1"))
+                    (write `(DEBUG ,t ,end ,len real ,(string->number real) imag ,(string->number imag)))))
+                ;; TODO: actually do (make-rectangular real imag) or equivalent, instead of this debug result:
+                (Cyc-make-rect real imag)))
              (else
               (error "Unexpected token" t)))))
         ((= (vector-length token) 1) ;; Special case: error
