@@ -189,16 +189,6 @@
                      (real (string->number real-str))
                      (imag (string->number imag-str))
                     )
-                #;(if (= (+ 1 end) len)
-                  (let ((real "0")
-                        (imag (substring t 0 end))) ;; Only an imag part
-                    (write `(DEBUG ,t ,end ,len real ,(string->number real) imag ,(string->number imag))))
-                  (let ((real (substring t 0 end))
-                        (imag (substring t end (- len 1))))
-                    (if (= 0 (string-length imag))
-                        (set! imag "1"))
-                    (write `(DEBUG ,t ,end ,len real ,(string->number real) imag ,(string->number imag)))))
-                ;; TODO: actually do (make-rectangular real imag) or equivalent, instead of this debug result:
                 (Cyc-make-rect real imag)))
              (else
               (error "Unexpected token" t)))))
