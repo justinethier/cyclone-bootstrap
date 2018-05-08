@@ -53,6 +53,7 @@ const char *tag_names[] = {
       /*string_tag    */ , "string"
       /*symbol_tag    */ , "symbol"
       /*vector_tag    */ , "vector"
+      /*complex_num_tag*/ , "complex number"
   , "Reserved for future use"
 };
 
@@ -645,11 +646,16 @@ int equal(object x, object y)
   //          type_of(y) == bignum_tag &&
   //          MP_EQ == mp_cmp(&bignum_value(x), &bignum_value(y)));
   }
-  case integer_tag:
-    return (obj_is_int(y) && obj_obj2int(y) == integer_value(x)) ||
-        (is_object_type(y) &&
-         type_of(y) == integer_tag &&
-         ((integer_type *) x)->value == ((integer_type *) y)->value);
+  //case integer_tag:
+  //  return (obj_is_int(y) && obj_obj2int(y) == integer_value(x)) ||
+  //      (is_object_type(y) &&
+  //       type_of(y) == integer_tag &&
+  //       ((integer_type *) x)->value == ((integer_type *) y)->value);
+  case complex_num_tag:
+    return (is_object_type(y) &&
+            type_of(y) == double_tag &&
+            ((complex_num_type *) x)->value == ((complex_num_type *) y)->value);
+
   default:
     return x == y;
   }
@@ -930,6 +936,23 @@ object Cyc_display(void *data, object x, FILE * port)
     // TODO: check return value
     mp_toradix_n(&bignum_value(x), buf, 10, bufsz);
     fprintf(port, "%s", buf);
+    break;
+  }
+  case complex_num_tag: {
+    char rbuf[33], ibuf[33];
+    const char *plus="+", *empty="";
+    double dreal = creal(((complex_num_type *) x)->value);
+    double dimag = cimag(((complex_num_type *) x)->value);
+    double2buffer(rbuf, 32, dreal);
+    double2buffer(ibuf, 32, dimag);
+    if (dreal == 0.0) {
+      fprintf(port, "%si", ibuf);
+    } else {
+      fprintf(port, "%s%s%si", 
+        rbuf, 
+        (dimag < 0.0) ? empty : plus,
+        ibuf);
+    }
     break;
   }
   default:
@@ -1537,7 +1560,8 @@ object Cyc_is_number(object o)
   if ((o != NULL) && (obj_is_int(o) || (!is_value_type(o)
                                         && (type_of(o) == integer_tag
                                             || type_of(o) == bignum_tag
-                                            || type_of(o) == double_tag))))
+                                            || type_of(o) == double_tag
+                                            || type_of(o) == complex_num_tag))))
     return boolean_t;
   return boolean_f;
 }
@@ -5059,6 +5083,11 @@ char *gc_move(char *obj, gc_thread_data * thd, int *alloci, int *heap_grown)
           gc_alloc(heap, sizeof(integer_type), obj, thd, heap_grown);
       return gc_fixup_moved_obj(thd, alloci, obj, hp);
     }
+  case complex_num_tag:{
+      complex_num_type *hp =
+          gc_alloc(heap, sizeof(complex_num_type), obj, thd, heap_grown);
+      return gc_fixup_moved_obj(thd, alloci, obj, hp);
+    }
   default:
     fprintf(stderr, "gc_move: bad tag obj=%p obj.tag=%d\n", (object) obj,
             type_of(obj));
@@ -5204,6 +5233,7 @@ int gc_minor(void *data, object low_limit, object high_limit, closure cont,
     case port_tag:
     case cvar_tag:
     case c_opaque_tag:
+    case complex_num_tag:
       break;
       // These types are not heap-allocated
     case eof_tag:
@@ -5862,6 +5892,20 @@ object Cyc_bit_set(void *data, object n1, object n2)
             obj_obj2int(n1) | obj_obj2int(n2)));
 }
 
+object Cyc_num2double(void *data, object ptr, object z)
+{
+ return_inexact_double_op_no_cps(data, ptr, (double), z);
+}
+
+void Cyc_make_rectangular(void *data, object k, object r, object i) 
+{
+  double_type dr, di;
+  Cyc_num2double(data, &dr, r);
+  Cyc_num2double(data, &di, i);
+  make_complex_num(num, double_value(&dr), double_value(&di));
+  return_closcall1(data, k, &num);
+}
+
 /* RNG section */
 #define norm 2.328306549295728e-10
 #define m1   4294967087.0
@@ -6102,13 +6146,22 @@ static void _read_add_to_tok_buf(port_type *p, char c)
 /**
  * @brief Determine if given string is numeric
  */
-int _read_is_numeric(const char *tok)
+int _read_is_numeric(const char *tok, int len)
 {
-  int len = strlen(tok);
   return (len &&
           ((isdigit(tok[0])) ||
            ((len > 1) && tok[0] == '.' && isdigit(tok[1])) ||
            ((len > 1) && (tok[1] == '.' || isdigit(tok[1])) && (tok[0] == '-' || tok[0] == '+'))));
+}
+
+/**
+ * @brief Determine if given string is a complex number
+ */
+int _read_is_complex_number(const char *tok, int len)
+{
+  // Assumption: tok already passed checks from _read_is_numeric
+  return (tok[len - 1] == 'i' ||
+          tok[len - 1] == 'I');
 }
 
 /**
@@ -6439,6 +6492,37 @@ void _read_return_number(void *data, port_type *p, int base, int exact)
 }
 
 /**
+ * @brief Helper function, parse&return read complex number.
+ * @param data Thread data object
+ * @param p Input port
+ * @param base Number base
+ * @param exact Return an exact number if true
+ */
+void _read_return_complex_number(void *data, port_type *p, int len)
+{
+//      TODO: return complex num, see _read_return_number for possible template
+//      probably want to have that function extract/identify the real/imaginary components.
+//      can just scan the buffer and read out start/end index of each number.
+  int i;
+  make_empty_vector(vec);
+  make_string(str, p->tok_buf);
+  vec.num_elements = 2;
+  vec.elements = (object *) alloca(sizeof(object) * vec.num_elements);
+  vec.elements[0] = &str;
+  i = 0;
+  if (p->tok_buf[0] == '-' || p->tok_buf[0] == '+') {
+    i++;
+  }
+  for (; i < len; i++) {
+    if (!isdigit(p->tok_buf[i]) && p->tok_buf[i] != '.' && p->tok_buf[i] != 'e' && p->tok_buf[i] != 'E') {
+      break;
+    }
+  }
+  vec.elements[1] = obj_int2obj(i);
+  return_thread_runnable(data, &vec);
+}
+
+/**
  * @brief Helper function, read number.
  * @param data Thread data object
  * @param p Input port
@@ -6485,6 +6569,7 @@ void _read_number(void *data, port_type *p, int base, int exact)
 void _read_return_atom(void *data, object cont, port_type *p) 
 {
   object sym;
+  int len = p->tok_end;
 
   // Back up a char, since we always get here after reaching a terminal char
   // indicating we have the full atom
@@ -6493,11 +6578,15 @@ void _read_return_atom(void *data, object cont, port_type *p)
   p->tok_buf[p->tok_end] = '\0'; // TODO: what if buffer is full?
   p->tok_end = 0; // Reset for next atom
 
-  if (_read_is_numeric(p->tok_buf)) {
+  if (_read_is_numeric(p->tok_buf, len)) {
     make_string(str, p->tok_buf);
     str.num_cp = Cyc_utf8_count_code_points((uint8_t *)(p->tok_buf));
     make_c_opaque(opq, &str);
-    return_thread_runnable(data, &opq);
+    if (_read_is_complex_number(p->tok_buf, len)) {
+      _read_return_complex_number(data, p, len);
+    } else {
+      return_thread_runnable(data, &opq);
+    }
   } else if (strncmp("+inf.0", p->tok_buf, 6) == 0 ||
              strncmp("-inf.0", p->tok_buf, 6) == 0) {
     make_double(d, pow(2.0, 1000000));
