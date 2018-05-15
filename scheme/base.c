@@ -16234,8 +16234,8 @@ static void __lambda_737(void *data, int argc, closure _, object k, object num) 
         make_double(d, fabs(((double_type *)num)->value));
         return_closcall1(data, k, &d);
       }  }
-static object __lambda_736(void *data, object ptr, object z) { return_inexact_double_op_no_cps(data, ptr, (double), z); }
-static void __lambda_735(void *data, int argc, closure _, object k, object z) { return_inexact_double_op(data, k, (double), z);  }
+static object __lambda_736(void *data, object ptr, object z) { return_inexact_double_or_cplx_op_no_cps(data, ptr, (double), (double complex), z); }
+static void __lambda_735(void *data, int argc, closure _, object k, object z) { return_inexact_double_or_cplx_op(data, k, (double), (double complex), z);  }
 static object __lambda_734(void *data, object ptr, object z) { return_exact_double_op_no_cps(data, ptr, round, z); }
 static void __lambda_733(void *data, int argc, closure _, object k, object z) { return_exact_double_op(data, k, round, z);  }
 static object __lambda_732(void *data, object ptr, object z) { return_exact_double_op_no_cps(data, ptr, (int), z); }
