@@ -3755,27 +3755,27 @@ static void __lambda_174(void *data, int argc, closure _,object k_731089, object
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/c-var-pointer");
 if( (boolean_f != Cyc_eq(p_73492_73788, quote_Cyc_91fast_91plus)) ){ 
   
-make_utf8_string_with_len(c_733267, "double_type", 11, 11);
+make_utf8_string_with_len(c_733267, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731089,  &c_733267);
 } else { 
   if( (boolean_f != Cyc_eq(p_73492_73788, quote_Cyc_91fast_91sub)) ){ 
   
-make_utf8_string_with_len(c_733271, "double_type", 11, 11);
+make_utf8_string_with_len(c_733271, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731089,  &c_733271);
 } else { 
   if( (boolean_f != Cyc_eq(p_73492_73788, quote_Cyc_91fast_91mul)) ){ 
   
-make_utf8_string_with_len(c_733275, "double_type", 11, 11);
+make_utf8_string_with_len(c_733275, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731089,  &c_733275);
 } else { 
   if( (boolean_f != Cyc_eq(p_73492_73788, quote_Cyc_91fast_91div)) ){ 
   
-make_utf8_string_with_len(c_733279, "double_type", 11, 11);
+make_utf8_string_with_len(c_733279, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731089,  &c_733279);
 } else { 
   if( (boolean_f != memberp(data, p_73492_73788, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_utf8_string_with_len(c_733283, "double_type", 11, 11);
+make_utf8_string_with_len(c_733283, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731089,  &c_733283);
 } else { 
   return_closcall1(data,  k_731089,  boolean_f);}
