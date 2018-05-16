@@ -385,11 +385,11 @@ static void __lambda_35(void *data, int argc, closure _,object k_7395, object c_
   make_pair(c_73421,obj_char2obj(48),&c_73422);
 if( (boolean_f != memberp(data, c_7339_7346, &c_73421)) ){ 
   
-double_type local_73434; object c_73435 = Cyc_fast_sub(data,&local_73434,Cyc_char2integer(c_7339_7346), obj_int2obj(48));
+complex_num_type local_73434; object c_73435 = Cyc_fast_sub(data,&local_73434,Cyc_char2integer(c_7339_7346), obj_int2obj(48));
 return_closcall1(data,  k_7395,  c_73435);
 } else { 
   
-double_type local_73441; object c_73442 = Cyc_fast_sub(data,&local_73441,Cyc_char2integer(c_7339_7346), obj_int2obj(48));
+complex_num_type local_73441; object c_73442 = Cyc_fast_sub(data,&local_73441,Cyc_char2integer(c_7339_7346), obj_int2obj(48));
 return_closcall1(data,  k_7395,  c_73442);}
 ; 
 }
@@ -815,7 +815,7 @@ return_closcall2(data,  __glo_char_91upper_91case_127_scheme__char,  &c_73233, c
 static void __lambda_2(void *data, int argc, object self_73212, object r_73181) {
   if( (boolean_f != r_73181) ){ 
   
-double_type local_73240; object c_73241 = Cyc_fast_sum(data,&local_73240,Cyc_char2integer(((closureN)self_73212)->elements[0]), obj_int2obj(32));
+complex_num_type local_73240; object c_73241 = Cyc_fast_sum(data,&local_73240,Cyc_char2integer(((closureN)self_73212)->elements[0]), obj_int2obj(32));
 return_closcall1(data,  ((closureN)self_73212)->elements[1],  Cyc_integer2char(data, c_73241));
 } else { 
   return_closcall1(data,  ((closureN)self_73212)->elements[1],  ((closureN)self_73212)->elements[0]);}
@@ -842,7 +842,7 @@ return_closcall2(data,  __glo_char_91lower_91case_127_scheme__char,  &c_73216, c
 static void __lambda_0(void *data, int argc, object self_73213, object r_73190) {
   if( (boolean_f != r_73190) ){ 
   
-double_type local_73223; object c_73224 = Cyc_fast_sub(data,&local_73223,Cyc_char2integer(((closureN)self_73213)->elements[0]), obj_int2obj(32));
+complex_num_type local_73223; object c_73224 = Cyc_fast_sub(data,&local_73223,Cyc_char2integer(((closureN)self_73213)->elements[0]), obj_int2obj(32));
 return_closcall1(data,  ((closureN)self_73213)->elements[1],  Cyc_integer2char(data, c_73224));
 } else { 
   return_closcall1(data,  ((closureN)self_73213)->elements[1],  ((closureN)self_73213)->elements[0]);}

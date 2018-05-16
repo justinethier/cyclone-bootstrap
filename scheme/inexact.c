@@ -338,18 +338,18 @@ load_varargs(z2_7318_7321, z2_7318_7321_raw, argc - 2);
   Cyc_st_add(data, "scheme/inexact.sld:log");
 if( (boolean_f != Cyc_is_null(z2_7318_7321)) ){ 
   
-double_type local_73131; object c_73132 = ((inline_function_type)
+complex_num_type local_73131; object c_73132 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73131,z1_7319_7322);
 return_closcall1(data,  k_7336,  c_73132);
 } else { 
   
-double_type local_73140; object c_73141 = ((inline_function_type)
+complex_num_type local_73140; object c_73141 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73140,z1_7319_7322);
 
-double_type local_73144; object c_73145 = ((inline_function_type)
+complex_num_type local_73144; object c_73145 = ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73144,Cyc_car(data, z2_7318_7321));
 
-double_type local_73136; object c_73137 = Cyc_fast_div(data,&local_73136,c_73141, c_73145);
+complex_num_type local_73136; object c_73137 = Cyc_fast_div(data,&local_73136,c_73141, c_73145);
 return_closcall1(data,  k_7336,  c_73137);}
 ; 
 }

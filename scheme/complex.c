@@ -384,9 +384,9 @@ return_closcall2(data,  __glo_sin_scheme_inexact,  &c_73134, ((closureN)self_735
 
 static void __lambda_12(void *data, int argc, object self_7354, object r_7328) {
   
-double_type local_73139; object c_73140 = Cyc_fast_mul(data,&local_73139,((closureN)self_7354)->elements[2], ((closureN)self_7354)->elements[1]);
+complex_num_type local_73139; object c_73140 = Cyc_fast_mul(data,&local_73139,((closureN)self_7354)->elements[2], ((closureN)self_7354)->elements[1]);
 
-double_type local_73145; object c_73146 = Cyc_fast_mul(data,&local_73145,((closureN)self_7354)->elements[2], r_7328);
+complex_num_type local_73145; object c_73146 = Cyc_fast_mul(data,&local_73145,((closureN)self_7354)->elements[2], r_7328);
 return_closcall3(data,  __glo__75make_91rect_scheme_complex,  ((closureN)self_7354)->elements[0], c_73140, c_73146);; 
 }
 
@@ -499,13 +499,13 @@ return_closcall2(data,  __glo_imag_91part_scheme_complex,  &c_7396, ((closureN)s
 
 static void __lambda_4(void *data, int argc, object self_7360, object r_7342) {
   
-double_type local_73109; object c_73110 = Cyc_fast_mul(data,&local_73109,((closureN)self_7360)->elements[2], ((closureN)self_7360)->elements[3]);
+complex_num_type local_73109; object c_73110 = Cyc_fast_mul(data,&local_73109,((closureN)self_7360)->elements[2], ((closureN)self_7360)->elements[3]);
 
-double_type local_73115; object c_73116 = Cyc_fast_mul(data,&local_73115,((closureN)self_7360)->elements[1], r_7342);
+complex_num_type local_73115; object c_73116 = Cyc_fast_mul(data,&local_73115,((closureN)self_7360)->elements[1], r_7342);
 
-double_type local_73105; object c_73106 = Cyc_fast_sum(data,&local_73105,c_73110, c_73116);
+complex_num_type local_73105; object c_73106 = Cyc_fast_sum(data,&local_73105,c_73110, c_73116);
 
-double_type local_73101; object c_73102 = ((inline_function_type)
+complex_num_type local_73101; object c_73102 = ((inline_function_type)
                    ((closure)__glo_sqrt_191_191inline_191_191_scheme_base)->fn)(data,&local_73101,c_73106);
 return_closcall1(data,  ((closureN)self_7360)->elements[0],  c_73102);; 
 }
@@ -525,7 +525,7 @@ c_7378.elements[0] = k_7347;
 c_7378.elements[1] = x_732_7315;
 
 
-double_type local_7386; object c_7387 = ((inline_function_type)
+complex_num_type local_7386; object c_7387 = ((inline_function_type)
                    ((closure)__glo_complex_127_191_191inline_191_191_scheme_base)->fn)(data,&local_7386,x_732_7315);
 return_closcall1(data,(closure)&c_7378,  c_7387);; 
 }
@@ -553,7 +553,7 @@ c_7365.elements[0] = k_7351;
 c_7365.elements[1] = x_731_7316;
 
 
-double_type local_7374; object c_7375 = ((inline_function_type)
+complex_num_type local_7374; object c_7375 = ((inline_function_type)
                    ((closure)__glo_complex_127_191_191inline_191_191_scheme_base)->fn)(data,&local_7374,x_731_7316);
 return_closcall1(data,(closure)&c_7365,  c_7375);; 
 }

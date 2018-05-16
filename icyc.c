@@ -1003,7 +1003,7 @@ make_utf8_string_with_len(c_73364, "-s", 2, 2);
 
 make_pair(c_73363,&c_73364,NULL);
 
-double_type local_73357; object c_73358 = ((inline_function_type)
+complex_num_type local_73357; object c_73358 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73357,memberp(data, Cyc_car(data, r_73116), &c_73363));
 return_closcall1(data,  ((closureN)self_73164)->elements[0],  c_73358);; 
 }
@@ -1164,16 +1164,16 @@ static void __lambda_8(void *data, int argc, object self_73176, object r_73122) 
 }
 
 static void __lambda_7(void *data, int argc, object self_73177, object k_73124) {
-    double_type local_73256; object c_73257 = ((inline_function_type)
+    complex_num_type local_73256; object c_73257 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73256,((closureN)self_73177)->elements[1]);
 if( (boolean_f != c_73257) ){ 
   
-double_type local_73262; object c_73263 = ((inline_function_type)
+complex_num_type local_73262; object c_73263 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73262,((closureN)self_73177)->elements[1]);
 return_closcall1(data,  k_73124,  c_73263);
 } else { 
   
-double_type local_73268; object c_73269 = ((inline_function_type)
+complex_num_type local_73268; object c_73269 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73268,Cyc_is_null(((closureN)self_73177)->elements[0]));
 return_closcall1(data,  k_73124,  c_73269);}
 ; 

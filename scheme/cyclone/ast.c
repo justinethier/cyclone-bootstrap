@@ -1082,7 +1082,7 @@ c_73176.elements[2] = has_91cont_7311_7327;
 c_73176.elements[3] = ((closureN)self_73144)->elements[2];
 
 
-double_type local_73188; object c_73189 = Cyc_fast_sum(data,&local_73188,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
+complex_num_type local_73188; object c_73189 = Cyc_fast_sum(data,&local_73188,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
 return_closcall1(data,(closure)&c_73176,  c_73189);; 
 }
 
@@ -1130,7 +1130,7 @@ c_73152.elements = (object *)alloca(sizeof(object) * 1);
 c_73152.elements[0] = k_73106;
 
 
-double_type local_73161; object c_73162 = Cyc_fast_sum(data,&local_73161,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
+complex_num_type local_73161; object c_73162 = Cyc_fast_sum(data,&local_73161,obj_int2obj(1), __glo__85lambda_91id_85_scheme_cyclone_ast);
 return_closcall1(data,(closure)&c_73152,  c_73162);; 
 }
 

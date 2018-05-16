@@ -1486,7 +1486,7 @@ c_739092.elements[3] = ((closureN)self_733589)->elements[4];
 c_739092.elements[4] = ((closureN)self_733589)->elements[5];
 
 
-double_type local_739129; object c_739130 = Cyc_fast_sub(data,&local_739129,((closureN)self_733589)->elements[3], obj_int2obj(1));
+complex_num_type local_739129; object c_739130 = Cyc_fast_sub(data,&local_739129,((closureN)self_733589)->elements[3], obj_int2obj(1));
 return_closcall2(data,(closure)&c_739092,  r_732720, c_739130);; 
 }
 
@@ -1553,9 +1553,9 @@ return_closcall1(data,(closure)&c_739098,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_652(void *data, int argc, object self_733593, object r_732723) {
   
-double_type local_739106; object c_739107 = Cyc_fast_sum(data,&local_739106,((closureN)self_733593)->elements[1], obj_int2obj(1));
+complex_num_type local_739106; object c_739107 = Cyc_fast_sum(data,&local_739106,((closureN)self_733593)->elements[1], obj_int2obj(1));
 
-double_type local_739112; object c_739113 = Cyc_fast_sub(data,&local_739112,((closureN)self_733593)->elements[2], obj_int2obj(1));
+complex_num_type local_739112; object c_739113 = Cyc_fast_sub(data,&local_739112,((closureN)self_733593)->elements[2], obj_int2obj(1));
 return_closcall4(data,  car(((closureN)self_733593)->elements[4]),  ((closureN)self_733593)->elements[0], c_739107, ((closureN)self_733593)->elements[3], c_739113);; 
 }
 
@@ -1809,7 +1809,7 @@ c_738552.elements[6] = ((closureN)self_733605)->elements[3];
 c_738552.elements[7] = ((closureN)self_733605)->elements[4];
 
 
-double_type local_739038; object c_739039 = Cyc_fast_sub(data,&local_739038,r_731776_731968, l_731777_731969);
+complex_num_type local_739038; object c_739039 = Cyc_fast_sub(data,&local_739038,r_731776_731968, l_731777_731969);
 return_closcall1(data,(closure)&c_738552,  c_739039);; 
 }
 
@@ -1861,7 +1861,7 @@ c_738559.elements[7] = ((closureN)self_733607)->elements[6];
 c_738559.elements[8] = ((closureN)self_733607)->elements[7];
 
 
-double_type local_739022; object c_739023 = Cyc_fast_sum(data,&local_739022,((closureN)self_733607)->elements[2], ((closureN)self_733607)->elements[4]);
+complex_num_type local_739022; object c_739023 = Cyc_fast_sum(data,&local_739022,((closureN)self_733607)->elements[2], ((closureN)self_733607)->elements[4]);
 return_closcall1(data,(closure)&c_738559,  c_739023);; 
 }
 
@@ -1886,7 +1886,7 @@ c_738561.elements[7] = ((closureN)self_733608)->elements[7];
 c_738561.elements[8] = ((closureN)self_733608)->elements[8];
 
 
-double_type local_739018; object c_739019 = ((inline_function_type)
+complex_num_type local_739018; object c_739019 = ((inline_function_type)
                    ((closure)__glo_quotient_191_191inline_191_191_scheme_base)->fn)(data,&local_739018,r_732706, obj_int2obj(2));
 return_closcall1(data,(closure)&c_738561,  Cyc_vector_ref(data, ((closureN)self_733608)->elements[8], c_739019));; 
 }
@@ -1913,7 +1913,7 @@ c_738563.elements[8] = ((closureN)self_733609)->elements[7];
 c_738563.elements[9] = ((closureN)self_733609)->elements[8];
 
 
-double_type local_739010; object c_739011 = Cyc_fast_sub(data,&local_739010,((closureN)self_733609)->elements[4], obj_int2obj(1));
+complex_num_type local_739010; object c_739011 = Cyc_fast_sub(data,&local_739010,((closureN)self_733609)->elements[4], obj_int2obj(1));
 return_closcall1(data,(closure)&c_738563,  c_739011);; 
 }
 
@@ -2293,7 +2293,7 @@ return_closcall3(data,  ((closureN)self_733623)->elements[0],  &c_738908, x_7317
 static void __lambda_621(void *data, int argc, object self_733624, object r_732691) {
   if( (boolean_f != r_732691) ){ 
   
-double_type local_738917; object c_738918 = Cyc_fast_sum(data,&local_738917,((closureN)self_733624)->elements[2], obj_int2obj(1));
+complex_num_type local_738917; object c_738918 = Cyc_fast_sum(data,&local_738917,((closureN)self_733624)->elements[2], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733624)->elements[5]),  ((closureN)self_733624)->elements[4], ((closureN)self_733624)->elements[1], c_738918);
 } else { 
   
@@ -2357,9 +2357,9 @@ return_closcall1(data,(closure)&c_738933,  &c_738962);}
 
 static void __lambda_619(void *data, int argc, object self_733626, object r_732694) {
   
-double_type local_738970; object c_738971 = Cyc_fast_sum(data,&local_738970,((closureN)self_733626)->elements[0], obj_int2obj(1));
+complex_num_type local_738970; object c_738971 = Cyc_fast_sum(data,&local_738970,((closureN)self_733626)->elements[0], obj_int2obj(1));
 
-double_type local_738975; object c_738976 = Cyc_fast_sum(data,&local_738975,((closureN)self_733626)->elements[1], obj_int2obj(1));
+complex_num_type local_738975; object c_738976 = Cyc_fast_sum(data,&local_738975,((closureN)self_733626)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733626)->elements[3]),  ((closureN)self_733626)->elements[2], c_738971, c_738976);; 
 }
 
@@ -2634,7 +2634,7 @@ return_closcall3(data,  ((closureN)self_733638)->elements[0],  &c_738766, ((clos
 static void __lambda_606(void *data, int argc, object self_733639, object r_732669) {
   if( (boolean_f != r_732669) ){ 
   
-double_type local_738774; object c_738775 = Cyc_fast_sub(data,&local_738774,((closureN)self_733639)->elements[3], obj_int2obj(1));
+complex_num_type local_738774; object c_738775 = Cyc_fast_sub(data,&local_738774,((closureN)self_733639)->elements[3], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733639)->elements[5]),  ((closureN)self_733639)->elements[4], c_738775, ((closureN)self_733639)->elements[7]);
 } else { 
   
@@ -2716,9 +2716,9 @@ return_closcall1(data,(closure)&c_738818,  &c_738847);}
 
 static void __lambda_604(void *data, int argc, object self_733641, object r_732677) {
   
-double_type local_738855; object c_738856 = Cyc_fast_sub(data,&local_738855,((closureN)self_733641)->elements[0], obj_int2obj(1));
+complex_num_type local_738855; object c_738856 = Cyc_fast_sub(data,&local_738855,((closureN)self_733641)->elements[0], obj_int2obj(1));
 
-double_type local_738860; object c_738861 = Cyc_fast_sub(data,&local_738860,((closureN)self_733641)->elements[3], obj_int2obj(1));
+complex_num_type local_738860; object c_738861 = Cyc_fast_sub(data,&local_738860,((closureN)self_733641)->elements[3], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733641)->elements[2]),  ((closureN)self_733641)->elements[1], c_738856, c_738861);; 
 }
 
@@ -2832,9 +2832,9 @@ return_closcall1(data,(closure)&c_738786,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_597(void *data, int argc, object self_733648, object r_732673) {
   
-double_type local_738795; object c_738796 = Cyc_fast_sum(data,&local_738795,((closureN)self_733648)->elements[1], obj_int2obj(1));
+complex_num_type local_738795; object c_738796 = Cyc_fast_sum(data,&local_738795,((closureN)self_733648)->elements[1], obj_int2obj(1));
 
-double_type local_738800; object c_738801 = Cyc_fast_sub(data,&local_738800,((closureN)self_733648)->elements[2], obj_int2obj(1));
+complex_num_type local_738800; object c_738801 = Cyc_fast_sub(data,&local_738800,((closureN)self_733648)->elements[2], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733648)->elements[4]),  ((closureN)self_733648)->elements[3], ((closureN)self_733648)->elements[0], c_738796, c_738801, ((closureN)self_733648)->elements[5]);; 
 }
 
@@ -2894,7 +2894,7 @@ c_738607.elements[6] = ((closureN)self_733651)->elements[2];
 c_738607.elements[7] = ((closureN)self_733651)->elements[3];
 
 
-double_type local_738728; object c_738729 = Cyc_fast_sub(data,&local_738728,j_731822_731976, i_731823_731977);
+complex_num_type local_738728; object c_738729 = Cyc_fast_sub(data,&local_738728,j_731822_731976, i_731823_731977);
 return_closcall1(data,(closure)&c_738607,  c_738729);; 
 }
 
@@ -2919,7 +2919,7 @@ c_738609.elements[7] = ((closureN)self_733652)->elements[6];
 c_738609.elements[8] = ((closureN)self_733652)->elements[7];
 
 
-double_type local_738722; object c_738723 = Cyc_fast_sub(data,&local_738722,((closureN)self_733652)->elements[4], ((closureN)self_733652)->elements[1]);
+complex_num_type local_738722; object c_738723 = Cyc_fast_sub(data,&local_738722,((closureN)self_733652)->elements[4], ((closureN)self_733652)->elements[1]);
 return_closcall1(data,(closure)&c_738609,  c_738723);; 
 }
 
@@ -2944,7 +2944,7 @@ c_738611.elements[7] = ((closureN)self_733653)->elements[7];
 c_738611.elements[8] = ((closureN)self_733653)->elements[8];
 
 
-double_type local_738716; object c_738717 = Cyc_fast_sub(data,&local_738716,((closureN)self_733653)->elements[0], ((closureN)self_733653)->elements[3]);
+complex_num_type local_738716; object c_738717 = Cyc_fast_sub(data,&local_738716,((closureN)self_733653)->elements[0], ((closureN)self_733653)->elements[3]);
 return_closcall1(data,(closure)&c_738611,  c_738717);; 
 }
 
@@ -2969,7 +2969,7 @@ c_738613.elements[7] = ((closureN)self_733654)->elements[7];
 c_738613.elements[8] = ((closureN)self_733654)->elements[8];
 
 
-double_type local_738710; object c_738711 = Cyc_fast_sub(data,&local_738710,((closureN)self_733654)->elements[4], ((closureN)self_733654)->elements[3]);
+complex_num_type local_738710; object c_738711 = Cyc_fast_sub(data,&local_738710,((closureN)self_733654)->elements[4], ((closureN)self_733654)->elements[3]);
 return_closcall1(data,(closure)&c_738613,  c_738711);; 
 }
 
@@ -2991,9 +2991,9 @@ c_738615.elements[4] = ((closureN)self_733655)->elements[7];
 c_738615.elements[5] = ((closureN)self_733655)->elements[8];
 
 
-double_type local_738700; object c_738701 = Cyc_fast_sum(data,&local_738700,obj_int2obj(1), ((closureN)self_733655)->elements[6]);
+complex_num_type local_738700; object c_738701 = Cyc_fast_sum(data,&local_738700,obj_int2obj(1), ((closureN)self_733655)->elements[6]);
 
-double_type local_738706; object c_738707 = Cyc_fast_sub(data,&local_738706,r_732660, obj_int2obj(1));
+complex_num_type local_738706; object c_738707 = Cyc_fast_sub(data,&local_738706,r_732660, obj_int2obj(1));
 return_closcall4(data,(closure)&c_738615,  ((closureN)self_733655)->elements[4], c_738701, ((closureN)self_733655)->elements[5], c_738707);; 
 }
 
@@ -3104,7 +3104,7 @@ c_738636.elements[3] = ((closureN)self_733660)->elements[4];
 c_738636.elements[4] = ((closureN)self_733660)->elements[5];
 
 
-double_type local_738659; object c_738660 = Cyc_fast_sum(data,&local_738659,((closureN)self_733660)->elements[1], ((closureN)self_733660)->elements[2]);
+complex_num_type local_738659; object c_738660 = Cyc_fast_sum(data,&local_738659,((closureN)self_733660)->elements[1], ((closureN)self_733660)->elements[2]);
 return_closcall1(data,(closure)&c_738636,  c_738660);
 } else { 
   
@@ -3123,7 +3123,7 @@ c_738664.elements[3] = ((closureN)self_733660)->elements[4];
 c_738664.elements[4] = ((closureN)self_733660)->elements[5];
 
 
-double_type local_738687; object c_738688 = Cyc_fast_sub(data,&local_738687,((closureN)self_733660)->elements[4], ((closureN)self_733660)->elements[3]);
+complex_num_type local_738687; object c_738688 = Cyc_fast_sub(data,&local_738687,((closureN)self_733660)->elements[4], ((closureN)self_733660)->elements[3]);
 return_closcall1(data,(closure)&c_738664,  c_738688);}
 ; 
 }
@@ -3161,7 +3161,7 @@ c_738671.elements[1] = ((closureN)self_733662)->elements[1];
 c_738671.elements[2] = ((closureN)self_733662)->elements[3];
 
 
-double_type local_738680; object c_738681 = Cyc_fast_sum(data,&local_738680,((closureN)self_733662)->elements[1], ((closureN)self_733662)->elements[2]);
+complex_num_type local_738680; object c_738681 = Cyc_fast_sum(data,&local_738680,((closureN)self_733662)->elements[1], ((closureN)self_733662)->elements[2]);
 return_closcall1(data,(closure)&c_738671,  c_738681);; 
 }
 
@@ -3202,7 +3202,7 @@ c_738643.elements[1] = ((closureN)self_733665)->elements[2];
 c_738643.elements[2] = ((closureN)self_733665)->elements[3];
 
 
-double_type local_738652; object c_738653 = Cyc_fast_sub(data,&local_738652,((closureN)self_733665)->elements[2], ((closureN)self_733665)->elements[1]);
+complex_num_type local_738652; object c_738653 = Cyc_fast_sub(data,&local_738652,((closureN)self_733665)->elements[2], ((closureN)self_733665)->elements[1]);
 return_closcall1(data,(closure)&c_738643,  c_738653);; 
 }
 
@@ -3212,9 +3212,9 @@ static void __lambda_579(void *data, int argc, object self_733666, object r_7326
 
 static void __lambda_578(void *data, int argc, object self_733667, object r_732641) {
   
-double_type local_738594; object c_738595 = Cyc_fast_sub(data,&local_738594,((closureN)self_733667)->elements[3], obj_int2obj(1));
+complex_num_type local_738594; object c_738595 = Cyc_fast_sub(data,&local_738594,((closureN)self_733667)->elements[3], obj_int2obj(1));
 
-double_type local_738599; object c_738600 = Cyc_fast_sub(data,&local_738599,((closureN)self_733667)->elements[3], obj_int2obj(1));
+complex_num_type local_738599; object c_738600 = Cyc_fast_sub(data,&local_738599,((closureN)self_733667)->elements[3], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733667)->elements[2]),  ((closureN)self_733667)->elements[0], ((closureN)self_733667)->elements[1], ((closureN)self_733667)->elements[1], c_738595, c_738600);; 
 }
 
@@ -3269,7 +3269,7 @@ c_738494.elements[3] = start_731756_732016;
 c_738494.elements[4] = ((closureN)self_733669)->elements[1];
 
 
-double_type local_738520; object c_738521 = Cyc_fast_sub(data,&local_738520,end_731755_732015, start_731756_732016);
+complex_num_type local_738520; object c_738521 = Cyc_fast_sub(data,&local_738520,end_731755_732015, start_731756_732016);
 return_closcall1(data,(closure)&c_738494,  c_738521);; 
 }
 
@@ -3327,7 +3327,7 @@ c_738500.elements[0] = ((closureN)self_733672)->elements[1];
 c_738500.elements[1] = ((closureN)self_733672)->elements[3];
 
 
-double_type local_738508; object c_738509 = Cyc_fast_sub(data,&local_738508,((closureN)self_733672)->elements[2], ((closureN)self_733672)->elements[4]);
+complex_num_type local_738508; object c_738509 = Cyc_fast_sub(data,&local_738508,((closureN)self_733672)->elements[2], ((closureN)self_733672)->elements[4]);
 return_closcall5(data,  __glo__75quick_91sort_67_srfi_132,  &c_738500, ((closureN)self_733672)->elements[0], ((closureN)self_733672)->elements[1], obj_int2obj(0), c_738509);; 
 }
 
@@ -3497,7 +3497,7 @@ return_closcall1(data,(closure)&c_737922,  Cyc_set_cell(data, xor_732031, &c_738
 
 static void __lambda_561(void *data, int argc, object self_733681, object k_732828, object a_731659_732111, object b_731658_732110) {
   
-double_type local_738461; object c_738462 = ((inline_function_type)
+complex_num_type local_738461; object c_738462 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_738461,Cyc_eq(a_731659_732111, b_731658_732110));
 return_closcall1(data,  k_732828,  c_738462);; 
 }
@@ -3731,13 +3731,13 @@ return_closcall1(data,(closure)&c_738416,  Cyc_vector_set(data, ((closureN)self_
 }
 
 static void __lambda_551(void *data, int argc, object self_733691, object r_732822) {
-    double_type local_738422; object c_738423 = Cyc_fast_sum(data,&local_738422,((closureN)self_733691)->elements[2], obj_int2obj(1));
+    complex_num_type local_738422; object c_738423 = Cyc_fast_sum(data,&local_738422,((closureN)self_733691)->elements[2], obj_int2obj(1));
   object c_738419 = Cyc_num_fast_lt_op(data,c_738423, ((closureN)self_733691)->elements[0]);
 if( (boolean_f != c_738419) ){ 
   
-double_type local_738433; object c_738434 = Cyc_fast_sum(data,&local_738433,((closureN)self_733691)->elements[2], obj_int2obj(1));
+complex_num_type local_738433; object c_738434 = Cyc_fast_sum(data,&local_738433,((closureN)self_733691)->elements[2], obj_int2obj(1));
 
-double_type local_738438; object c_738439 = Cyc_fast_sum(data,&local_738438,((closureN)self_733691)->elements[1], obj_int2obj(1));
+complex_num_type local_738438; object c_738439 = Cyc_fast_sum(data,&local_738438,((closureN)self_733691)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733691)->elements[4]),  ((closureN)self_733691)->elements[3], c_738434, c_738439);
 } else { 
   return_closcall1(data,  ((closureN)self_733691)->elements[3],  boolean_f);}
@@ -3769,7 +3769,7 @@ c_738226.elements[7] = ((closureN)self_733693)->elements[8];
 c_738226.elements[8] = ((closureN)self_733693)->elements[9];
 
 
-double_type local_738390; object c_738391 = Cyc_fast_sum(data,&local_738390,((closureN)self_733693)->elements[2], ((closureN)self_733693)->elements[3]);
+complex_num_type local_738390; object c_738391 = Cyc_fast_sum(data,&local_738390,((closureN)self_733693)->elements[2], ((closureN)self_733693)->elements[3]);
 return_closcall1(data,(closure)&c_738226,  c_738391);; 
 }
 
@@ -3794,7 +3794,7 @@ c_738228.elements[7] = ((closureN)self_733694)->elements[7];
 c_738228.elements[8] = ((closureN)self_733694)->elements[8];
 
 
-double_type local_738385; object c_738386 = Cyc_fast_sum(data,&local_738385,r1_731681_732084, ((closureN)self_733694)->elements[3]);
+complex_num_type local_738385; object c_738386 = Cyc_fast_sum(data,&local_738385,r1_731681_732084, ((closureN)self_733694)->elements[3]);
 return_closcall1(data,(closure)&c_738228,  c_738386);; 
 }
 
@@ -4048,41 +4048,41 @@ return_closcall1(data,(closure)&c_738312,  Cyc_vector_set(data, ((closureN)self_
 }
 
 static void __lambda_539(void *data, int argc, object self_733703, object r_732814) {
-    double_type local_738318; object c_738319 = Cyc_fast_sum(data,&local_738318,((closureN)self_733703)->elements[0], obj_int2obj(1));
+    complex_num_type local_738318; object c_738319 = Cyc_fast_sum(data,&local_738318,((closureN)self_733703)->elements[0], obj_int2obj(1));
   object c_738315 = Cyc_num_fast_lt_op(data,c_738319, ((closureN)self_733703)->elements[5]);
 if( (boolean_f != c_738315) ){ 
   
-double_type local_738329; object c_738330 = Cyc_fast_sum(data,&local_738329,((closureN)self_733703)->elements[4], obj_int2obj(1));
+complex_num_type local_738329; object c_738330 = Cyc_fast_sum(data,&local_738329,((closureN)self_733703)->elements[4], obj_int2obj(1));
 
-double_type local_738334; object c_738335 = Cyc_fast_sum(data,&local_738334,((closureN)self_733703)->elements[0], obj_int2obj(1));
+complex_num_type local_738334; object c_738335 = Cyc_fast_sum(data,&local_738334,((closureN)self_733703)->elements[0], obj_int2obj(1));
 
-double_type local_738342; object c_738343 = Cyc_fast_sum(data,&local_738342,((closureN)self_733703)->elements[0], obj_int2obj(1));
+complex_num_type local_738342; object c_738343 = Cyc_fast_sum(data,&local_738342,((closureN)self_733703)->elements[0], obj_int2obj(1));
 return_closcall6(data,  car(((closureN)self_733703)->elements[3]),  ((closureN)self_733703)->elements[2], c_738330, c_738335, Cyc_vector_ref(data, ((closureN)self_733703)->elements[7], c_738343), ((closureN)self_733703)->elements[1], ((closureN)self_733703)->elements[11]);
 } else { 
   if( (boolean_f != ((closureN)self_733703)->elements[9]) ){ 
   return_closcall1(data,  ((closureN)self_733703)->elements[2],  boolean_f);
 } else { 
   
-double_type local_738359; object c_738360 = Cyc_fast_sum(data,&local_738359,((closureN)self_733703)->elements[4], obj_int2obj(1));
+complex_num_type local_738359; object c_738360 = Cyc_fast_sum(data,&local_738359,((closureN)self_733703)->elements[4], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733703)->elements[10]),  ((closureN)self_733703)->elements[2], ((closureN)self_733703)->elements[8], ((closureN)self_733703)->elements[1], c_738360, ((closureN)self_733703)->elements[6]);}
 }
 ; 
 }
 
 static void __lambda_538(void *data, int argc, object self_733704, object r_732810) {
-    double_type local_738264; object c_738265 = Cyc_fast_sum(data,&local_738264,((closureN)self_733704)->elements[1], obj_int2obj(1));
+    complex_num_type local_738264; object c_738265 = Cyc_fast_sum(data,&local_738264,((closureN)self_733704)->elements[1], obj_int2obj(1));
   object c_738261 = Cyc_num_fast_lt_op(data,c_738265, ((closureN)self_733704)->elements[6]);
 if( (boolean_f != c_738261) ){ 
   
-double_type local_738275; object c_738276 = Cyc_fast_sum(data,&local_738275,((closureN)self_733704)->elements[4], obj_int2obj(1));
+complex_num_type local_738275; object c_738276 = Cyc_fast_sum(data,&local_738275,((closureN)self_733704)->elements[4], obj_int2obj(1));
 
-double_type local_738282; object c_738283 = Cyc_fast_sum(data,&local_738282,((closureN)self_733704)->elements[1], obj_int2obj(1));
+complex_num_type local_738282; object c_738283 = Cyc_fast_sum(data,&local_738282,((closureN)self_733704)->elements[1], obj_int2obj(1));
 
-double_type local_738290; object c_738291 = Cyc_fast_sum(data,&local_738290,((closureN)self_733704)->elements[1], obj_int2obj(1));
+complex_num_type local_738290; object c_738291 = Cyc_fast_sum(data,&local_738290,((closureN)self_733704)->elements[1], obj_int2obj(1));
 return_closcall6(data,  car(((closureN)self_733704)->elements[3]),  ((closureN)self_733704)->elements[2], c_738276, ((closureN)self_733704)->elements[0], ((closureN)self_733704)->elements[10], c_738283, Cyc_vector_ref(data, ((closureN)self_733704)->elements[8], c_738291));
 } else { 
   
-double_type local_738302; object c_738303 = Cyc_fast_sum(data,&local_738302,((closureN)self_733704)->elements[4], obj_int2obj(1));
+complex_num_type local_738302; object c_738303 = Cyc_fast_sum(data,&local_738302,((closureN)self_733704)->elements[4], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733704)->elements[9]),  ((closureN)self_733704)->elements[2], ((closureN)self_733704)->elements[7], ((closureN)self_733704)->elements[0], c_738303, ((closureN)self_733704)->elements[5]);}
 ; 
 }
@@ -4201,7 +4201,7 @@ static void __lambda_532(void *data, int argc, object self_733710, object k_7327
     object c_738176 = Cyc_num_fast_gte_op(data,i_731709_732074, ((closureN)self_733710)->elements[3]);
 if( (boolean_f != c_738176) ){ 
   
-double_type local_738181; object c_738182 = Cyc_fast_sub(data,&local_738181,i_731709_732074, ((closureN)self_733710)->elements[1]);
+complex_num_type local_738181; object c_738182 = Cyc_fast_sub(data,&local_738181,i_731709_732074, ((closureN)self_733710)->elements[1]);
 return_closcall1(data,  k_732792,  c_738182);
 } else { 
   
@@ -4226,18 +4226,18 @@ return_closcall3(data,  ((closureN)self_733710)->elements[0],  &c_738186, Cyc_ve
 static void __lambda_531(void *data, int argc, object self_733711, object r_732795) {
   if( (boolean_f != r_732795) ){ 
   
-double_type local_738191; object c_738192 = Cyc_fast_sub(data,&local_738191,((closureN)self_733711)->elements[0], ((closureN)self_733711)->elements[2]);
+complex_num_type local_738191; object c_738192 = Cyc_fast_sub(data,&local_738191,((closureN)self_733711)->elements[0], ((closureN)self_733711)->elements[2]);
 return_closcall1(data,  ((closureN)self_733711)->elements[1],  c_738192);
 } else { 
   
-double_type local_738202; object c_738203 = Cyc_fast_sum(data,&local_738202,((closureN)self_733711)->elements[0], obj_int2obj(1));
+complex_num_type local_738202; object c_738203 = Cyc_fast_sum(data,&local_738202,((closureN)self_733711)->elements[0], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733711)->elements[3]),  ((closureN)self_733711)->elements[1], c_738203, Cyc_vector_ref(data, ((closureN)self_733711)->elements[4], ((closureN)self_733711)->elements[0]));}
 ; 
 }
 
 static void __lambda_530(void *data, int argc, object self_733712, object r_732790) {
   
-double_type local_738164; object c_738165 = Cyc_fast_sum(data,&local_738164,((closureN)self_733712)->elements[1], obj_int2obj(1));
+complex_num_type local_738164; object c_738165 = Cyc_fast_sum(data,&local_738164,((closureN)self_733712)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733712)->elements[2]),  ((closureN)self_733712)->elements[0], c_738165, Cyc_vector_ref(data, ((closureN)self_733712)->elements[3], ((closureN)self_733712)->elements[1]));; 
 }
 
@@ -4332,7 +4332,7 @@ c_737933.elements[6] = ((closureN)self_733716)->elements[5];
 c_737933.elements[7] = ((closureN)self_733716)->elements[6];
 
 
-double_type local_738128; object c_738129 = Cyc_fast_sub(data,&local_738128,((closureN)self_733716)->elements[3], ((closureN)self_733716)->elements[1]);
+complex_num_type local_738128; object c_738129 = Cyc_fast_sub(data,&local_738128,((closureN)self_733716)->elements[3], ((closureN)self_733716)->elements[1]);
 return_closcall1(data,(closure)&c_737933,  c_738129);; 
 }
 
@@ -4462,7 +4462,7 @@ c_737953.elements[8] = want_731718_732043;
 c_737953.elements[9] = ((closureN)self_733721)->elements[6];
 
 
-double_type local_738119; object c_738120 = Cyc_fast_sub(data,&local_738119,((closureN)self_733721)->elements[2], l_731719_732044);
+complex_num_type local_738119; object c_738120 = Cyc_fast_sub(data,&local_738119,((closureN)self_733721)->elements[2], l_731719_732044);
 return_closcall1(data,(closure)&c_737953,  c_738120);; 
 }
 
@@ -4807,7 +4807,7 @@ return_closcall1(data,(closure)&c_738082,  c_738099);;
 static void __lambda_508(void *data, int argc, object self_733734, object r_732783) {
   if( (boolean_f != r_732783) ){ 
   
-double_type local_738090; object c_738091 = Cyc_fast_sum(data,&local_738090,((closureN)self_733734)->elements[0], ((closureN)self_733734)->elements[0]);
+complex_num_type local_738090; object c_738091 = Cyc_fast_sum(data,&local_738090,((closureN)self_733734)->elements[0], ((closureN)self_733734)->elements[0]);
 return_closcall2(data,  car(((closureN)self_733734)->elements[2]),  ((closureN)self_733734)->elements[1], c_738091);
 } else { 
   return_closcall1(data,  ((closureN)self_733734)->elements[1],  ((closureN)self_733734)->elements[0]);}
@@ -4862,7 +4862,7 @@ c_738011.elements[9] = ((closureN)self_733736)->elements[9];
 c_738011.elements[10] = ((closureN)self_733736)->elements[10];
 
 
-double_type local_738073; object c_738074 = Cyc_fast_sub(data,&local_738073,((closureN)self_733736)->elements[2], ((closureN)self_733736)->elements[5]);
+complex_num_type local_738073; object c_738074 = Cyc_fast_sub(data,&local_738073,((closureN)self_733736)->elements[2], ((closureN)self_733736)->elements[5]);
 return_closcall1(data,(closure)&c_738011,  c_738074);; 
 }
 
@@ -4976,18 +4976,18 @@ return_closcall8(data,  car(((closureN)self_733740)->elements[3]),  &c_738038, (
 
 static void __lambda_501(void *data, int argc, object self_733741, object r_732772) {
   
-double_type local_738046; object c_738047 = Cyc_fast_sum(data,&local_738046,((closureN)self_733741)->elements[3], ((closureN)self_733741)->elements[2]);
+complex_num_type local_738046; object c_738047 = Cyc_fast_sum(data,&local_738046,((closureN)self_733741)->elements[3], ((closureN)self_733741)->elements[2]);
 
-double_type local_738052; object c_738053 = Cyc_fast_sum(data,&local_738052,((closureN)self_733741)->elements[4], ((closureN)self_733741)->elements[4]);
+complex_num_type local_738052; object c_738053 = Cyc_fast_sum(data,&local_738052,((closureN)self_733741)->elements[4], ((closureN)self_733741)->elements[4]);
 
-double_type local_738060; object c_738061 = ((inline_function_type)
+complex_num_type local_738060; object c_738061 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_738060,((closureN)self_733741)->elements[7]);
 return_closcall6(data,  car(((closureN)self_733741)->elements[1]),  ((closureN)self_733741)->elements[0], c_738047, c_738053, ((closureN)self_733741)->elements[5], ((closureN)self_733741)->elements[6], c_738061);; 
 }
 
 static void __lambda_500(void *data, int argc, object self_733742, object k_732777) {
   
-double_type local_738023; object c_738024 = Cyc_fast_sum(data,&local_738023,((closureN)self_733742)->elements[1], ((closureN)self_733742)->elements[0]);
+complex_num_type local_738023; object c_738024 = Cyc_fast_sum(data,&local_738023,((closureN)self_733742)->elements[1], ((closureN)self_733742)->elements[0]);
 return_closcall3(data,  car(((closureN)self_733742)->elements[3]),  k_732777, c_738024, ((closureN)self_733742)->elements[2]);; 
 }
 
@@ -5396,13 +5396,13 @@ return_closcall1(data,(closure)&c_737814,  Cyc_vector_set(data, ((closureN)self_
 }
 
 static void __lambda_476(void *data, int argc, object self_733763, object r_732881) {
-    double_type local_737820; object c_737821 = Cyc_fast_sum(data,&local_737820,((closureN)self_733763)->elements[2], obj_int2obj(1));
+    complex_num_type local_737820; object c_737821 = Cyc_fast_sum(data,&local_737820,((closureN)self_733763)->elements[2], obj_int2obj(1));
   object c_737817 = Cyc_num_fast_lt_op(data,c_737821, ((closureN)self_733763)->elements[0]);
 if( (boolean_f != c_737817) ){ 
   
-double_type local_737831; object c_737832 = Cyc_fast_sum(data,&local_737831,((closureN)self_733763)->elements[2], obj_int2obj(1));
+complex_num_type local_737831; object c_737832 = Cyc_fast_sum(data,&local_737831,((closureN)self_733763)->elements[2], obj_int2obj(1));
 
-double_type local_737836; object c_737837 = Cyc_fast_sum(data,&local_737836,((closureN)self_733763)->elements[1], obj_int2obj(1));
+complex_num_type local_737836; object c_737837 = Cyc_fast_sum(data,&local_737836,((closureN)self_733763)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733763)->elements[4]),  ((closureN)self_733763)->elements[3], c_737832, c_737837);
 } else { 
   return_closcall1(data,  ((closureN)self_733763)->elements[3],  boolean_f);}
@@ -5739,37 +5739,37 @@ return_closcall1(data,(closure)&c_737714,  Cyc_vector_set(data, ((closureN)self_
 }
 
 static void __lambda_464(void *data, int argc, object self_733775, object r_732873) {
-    double_type local_737720; object c_737721 = Cyc_fast_sum(data,&local_737720,((closureN)self_733775)->elements[3], obj_int2obj(1));
+    complex_num_type local_737720; object c_737721 = Cyc_fast_sum(data,&local_737720,((closureN)self_733775)->elements[3], obj_int2obj(1));
   object c_737717 = Cyc_num_fast_lt_op(data,c_737721, ((closureN)self_733775)->elements[0]);
 if( (boolean_f != c_737717) ){ 
   
-double_type local_737731; object c_737732 = Cyc_fast_sum(data,&local_737731,((closureN)self_733775)->elements[2], obj_int2obj(1));
+complex_num_type local_737731; object c_737732 = Cyc_fast_sum(data,&local_737731,((closureN)self_733775)->elements[2], obj_int2obj(1));
 
-double_type local_737736; object c_737737 = Cyc_fast_sum(data,&local_737736,((closureN)self_733775)->elements[3], obj_int2obj(1));
+complex_num_type local_737736; object c_737737 = Cyc_fast_sum(data,&local_737736,((closureN)self_733775)->elements[3], obj_int2obj(1));
 
-double_type local_737744; object c_737745 = Cyc_fast_sum(data,&local_737744,((closureN)self_733775)->elements[3], obj_int2obj(1));
+complex_num_type local_737744; object c_737745 = Cyc_fast_sum(data,&local_737744,((closureN)self_733775)->elements[3], obj_int2obj(1));
 return_closcall6(data,  car(((closureN)self_733775)->elements[6]),  ((closureN)self_733775)->elements[5], c_737732, c_737737, Cyc_vector_ref(data, ((closureN)self_733775)->elements[7], c_737745), ((closureN)self_733775)->elements[4], ((closureN)self_733775)->elements[10]);
 } else { 
   
-double_type local_737758; object c_737759 = Cyc_fast_sum(data,&local_737758,((closureN)self_733775)->elements[2], obj_int2obj(1));
+complex_num_type local_737758; object c_737759 = Cyc_fast_sum(data,&local_737758,((closureN)self_733775)->elements[2], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733775)->elements[9]),  ((closureN)self_733775)->elements[5], ((closureN)self_733775)->elements[8], ((closureN)self_733775)->elements[4], c_737759, ((closureN)self_733775)->elements[1]);}
 ; 
 }
 
 static void __lambda_463(void *data, int argc, object self_733776, object r_732869) {
-    double_type local_737666; object c_737667 = Cyc_fast_sum(data,&local_737666,((closureN)self_733776)->elements[4], obj_int2obj(1));
+    complex_num_type local_737666; object c_737667 = Cyc_fast_sum(data,&local_737666,((closureN)self_733776)->elements[4], obj_int2obj(1));
   object c_737663 = Cyc_num_fast_lt_op(data,c_737667, ((closureN)self_733776)->elements[1]);
 if( (boolean_f != c_737663) ){ 
   
-double_type local_737677; object c_737678 = Cyc_fast_sum(data,&local_737677,((closureN)self_733776)->elements[2], obj_int2obj(1));
+complex_num_type local_737677; object c_737678 = Cyc_fast_sum(data,&local_737677,((closureN)self_733776)->elements[2], obj_int2obj(1));
 
-double_type local_737684; object c_737685 = Cyc_fast_sum(data,&local_737684,((closureN)self_733776)->elements[4], obj_int2obj(1));
+complex_num_type local_737684; object c_737685 = Cyc_fast_sum(data,&local_737684,((closureN)self_733776)->elements[4], obj_int2obj(1));
 
-double_type local_737692; object c_737693 = Cyc_fast_sum(data,&local_737692,((closureN)self_733776)->elements[4], obj_int2obj(1));
+complex_num_type local_737692; object c_737693 = Cyc_fast_sum(data,&local_737692,((closureN)self_733776)->elements[4], obj_int2obj(1));
 return_closcall6(data,  car(((closureN)self_733776)->elements[6]),  ((closureN)self_733776)->elements[5], c_737678, ((closureN)self_733776)->elements[3], ((closureN)self_733776)->elements[10], c_737685, Cyc_vector_ref(data, ((closureN)self_733776)->elements[8], c_737693));
 } else { 
   
-double_type local_737704; object c_737705 = Cyc_fast_sum(data,&local_737704,((closureN)self_733776)->elements[2], obj_int2obj(1));
+complex_num_type local_737704; object c_737705 = Cyc_fast_sum(data,&local_737704,((closureN)self_733776)->elements[2], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733776)->elements[9]),  ((closureN)self_733776)->elements[5], ((closureN)self_733776)->elements[7], ((closureN)self_733776)->elements[3], c_737705, ((closureN)self_733776)->elements[0]);}
 ; 
 }
@@ -5917,7 +5917,7 @@ c_737530.elements[6] = ((closureN)self_733783)->elements[1];
 c_737530.elements[7] = ((closureN)self_733783)->elements[2];
 
 
-double_type local_737563; object c_737564 = Cyc_fast_sub(data,&local_737563,end1_731582_732175, start1_731583_732176);
+complex_num_type local_737563; object c_737564 = Cyc_fast_sub(data,&local_737563,end1_731582_732175, start1_731583_732176);
 return_closcall1(data,(closure)&c_737530,  c_737564);; 
 }
 
@@ -5942,7 +5942,7 @@ c_737532.elements[7] = ((closureN)self_733784)->elements[6];
 c_737532.elements[8] = ((closureN)self_733784)->elements[7];
 
 
-double_type local_737557; object c_737558 = Cyc_fast_sub(data,&local_737557,((closureN)self_733784)->elements[2], ((closureN)self_733784)->elements[5]);
+complex_num_type local_737557; object c_737558 = Cyc_fast_sub(data,&local_737557,((closureN)self_733784)->elements[2], ((closureN)self_733784)->elements[5]);
 return_closcall1(data,(closure)&c_737532,  c_737558);; 
 }
 
@@ -5966,7 +5966,7 @@ c_737534.elements[6] = ((closureN)self_733785)->elements[7];
 c_737534.elements[7] = ((closureN)self_733785)->elements[8];
 
 
-double_type local_737552; object c_737553 = Cyc_fast_sum(data,&local_737552,((closureN)self_733785)->elements[4], r_732911);
+complex_num_type local_737552; object c_737553 = Cyc_fast_sum(data,&local_737552,((closureN)self_733785)->elements[4], r_732911);
 
 object c_737549 = Cyc_make_vector(data,(closure)&c_737534,1,c_737553);
 return_closcall1(data,(closure)&c_737534,  c_737549);; 
@@ -6240,7 +6240,7 @@ c_737474.elements[4] = ((closureN)self_733797)->elements[3];
 c_737474.elements[5] = ((closureN)self_733797)->elements[4];
 
 
-double_type local_737504; object c_737505 = Cyc_fast_sub(data,&local_737504,j_731564_732189, obj_int2obj(1));
+complex_num_type local_737504; object c_737505 = Cyc_fast_sub(data,&local_737504,j_731564_732189, obj_int2obj(1));
 return_closcall1(data,(closure)&c_737474,  Cyc_vector_ref(data, ((closureN)self_733797)->elements[3], c_737505));}
 ; 
 }
@@ -6287,7 +6287,7 @@ return_closcall1(data,(closure)&c_737479,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_436(void *data, int argc, object self_733800, object r_732932) {
   
-double_type local_737487; object c_737488 = Cyc_fast_sub(data,&local_737487,((closureN)self_733800)->elements[0], obj_int2obj(1));
+complex_num_type local_737487; object c_737488 = Cyc_fast_sub(data,&local_737487,((closureN)self_733800)->elements[0], obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733800)->elements[2]),  ((closureN)self_733800)->elements[1], c_737488);; 
 }
 
@@ -6329,13 +6329,13 @@ return_closcall1(data,(closure)&c_737448,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_433(void *data, int argc, object self_733803, object r_732921) {
   
-double_type local_737456; object c_737457 = Cyc_fast_sum(data,&local_737456,((closureN)self_733803)->elements[0], obj_int2obj(1));
+complex_num_type local_737456; object c_737457 = Cyc_fast_sum(data,&local_737456,((closureN)self_733803)->elements[0], obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733803)->elements[2]),  ((closureN)self_733803)->elements[1], c_737457);; 
 }
 
 static void __lambda_432(void *data, int argc, object self_733804, object r_732917) {
   
-double_type local_737422; object c_737423 = Cyc_fast_sum(data,&local_737422,obj_int2obj(1), ((closureN)self_733804)->elements[2]);
+complex_num_type local_737422; object c_737423 = Cyc_fast_sum(data,&local_737422,obj_int2obj(1), ((closureN)self_733804)->elements[2]);
 return_closcall2(data,  car(((closureN)self_733804)->elements[1]),  ((closureN)self_733804)->elements[0], c_737423);; 
 }
 
@@ -6570,8 +6570,8 @@ return_closcall1(data,(closure)&c_737242,  Cyc_set_cell(data, lp_731484_732219, 
 }
 
 static void __lambda_420(void *data, int argc, object self_733814, object k_732972, object k_731485_732220) {
-    double_type local_737267; object c_737268 = Cyc_fast_sum(data,&local_737267,((closureN)self_733814)->elements[3], ((closureN)self_733814)->elements[1]);
-  double_type local_737263; object c_737264 = ((inline_function_type)
+    complex_num_type local_737267; object c_737268 = Cyc_fast_sum(data,&local_737267,((closureN)self_733814)->elements[3], ((closureN)self_733814)->elements[1]);
+  complex_num_type local_737263; object c_737264 = ((inline_function_type)
                    ((closure)__glo_quotient_191_191inline_191_191_scheme_base)->fn)(data,&local_737263,c_737268, obj_int2obj(2));
   object c_737260 = Cyc_num_fast_gte_op(data,k_731485_732220, c_737264);
 if( (boolean_f != c_737260) ){ 
@@ -6595,7 +6595,7 @@ c_737273.elements[5] = ((closureN)self_733814)->elements[4];
 c_737273.elements[6] = ((closureN)self_733814)->elements[5];
 
 
-double_type local_737385; object c_737386 = Cyc_fast_sub(data,&local_737385,k_731485_732220, ((closureN)self_733814)->elements[3]);
+complex_num_type local_737385; object c_737386 = Cyc_fast_sub(data,&local_737385,k_731485_732220, ((closureN)self_733814)->elements[3]);
 return_closcall1(data,(closure)&c_737273,  c_737386);}
 ; 
 }
@@ -6620,9 +6620,9 @@ c_737275.elements[6] = ((closureN)self_733815)->elements[5];
 c_737275.elements[7] = ((closureN)self_733815)->elements[6];
 
 
-double_type local_737380; object c_737381 = Cyc_fast_sum(data,&local_737380,((closureN)self_733815)->elements[2], r_732987);
+complex_num_type local_737380; object c_737381 = Cyc_fast_sum(data,&local_737380,((closureN)self_733815)->elements[2], r_732987);
 
-double_type local_737376; object c_737377 = Cyc_fast_sum(data,&local_737376,obj_int2obj(1), c_737381);
+complex_num_type local_737376; object c_737377 = Cyc_fast_sum(data,&local_737376,obj_int2obj(1), c_737381);
 return_closcall1(data,(closure)&c_737275,  Cyc_vector_ref(data, ((closureN)self_733815)->elements[5], c_737377));; 
 }
 
@@ -6707,8 +6707,8 @@ static void __lambda_415(void *data, int argc, object self_733819, object r_7329
 }
 
 static void __lambda_414(void *data, int argc, object self_733820, object k_732983) {
-    double_type local_737288; object c_737289 = Cyc_fast_sum(data,&local_737288,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
-  double_type local_737284; object c_737285 = Cyc_fast_sum(data,&local_737284,obj_int2obj(2), c_737289);
+    complex_num_type local_737288; object c_737289 = Cyc_fast_sum(data,&local_737288,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
+  complex_num_type local_737284; object c_737285 = Cyc_fast_sum(data,&local_737284,obj_int2obj(2), c_737289);
   object c_737281 = Cyc_num_fast_lt_op(data,c_737285, ((closureN)self_733820)->elements[2]);
 if( (boolean_f != c_737281) ){ 
   
@@ -6727,15 +6727,15 @@ c_737294.elements[3] = k_732983;
 c_737294.elements[4] = ((closureN)self_733820)->elements[4];
 
 
-double_type local_737334; object c_737335 = Cyc_fast_sum(data,&local_737334,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
+complex_num_type local_737334; object c_737335 = Cyc_fast_sum(data,&local_737334,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
 
-double_type local_737330; object c_737331 = Cyc_fast_sum(data,&local_737330,obj_int2obj(2), c_737335);
+complex_num_type local_737330; object c_737331 = Cyc_fast_sum(data,&local_737330,obj_int2obj(2), c_737335);
 return_closcall1(data,(closure)&c_737294,  Cyc_vector_ref(data, ((closureN)self_733820)->elements[5], c_737331));
 } else { 
   
-double_type local_737345; object c_737346 = Cyc_fast_sum(data,&local_737345,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
+complex_num_type local_737345; object c_737346 = Cyc_fast_sum(data,&local_737345,((closureN)self_733820)->elements[3], ((closureN)self_733820)->elements[4]);
 
-double_type local_737341; object c_737342 = Cyc_fast_sum(data,&local_737341,obj_int2obj(1), c_737346);
+complex_num_type local_737341; object c_737342 = Cyc_fast_sum(data,&local_737341,obj_int2obj(1), c_737346);
 return_closcall3(data,  __glo_values_scheme_base,  k_732983, c_737342, ((closureN)self_733820)->elements[0]);}
 ; 
 }
@@ -6762,15 +6762,15 @@ return_closcall3(data,  ((closureN)self_733821)->elements[1],  &c_737297, child2
 static void __lambda_412(void *data, int argc, object self_733822, object r_732986) {
   if( (boolean_f != r_732986) ){ 
   
-double_type local_737306; object c_737307 = Cyc_fast_sum(data,&local_737306,((closureN)self_733822)->elements[2], ((closureN)self_733822)->elements[4]);
+complex_num_type local_737306; object c_737307 = Cyc_fast_sum(data,&local_737306,((closureN)self_733822)->elements[2], ((closureN)self_733822)->elements[4]);
 
-double_type local_737302; object c_737303 = Cyc_fast_sum(data,&local_737302,obj_int2obj(1), c_737307);
+complex_num_type local_737302; object c_737303 = Cyc_fast_sum(data,&local_737302,obj_int2obj(1), c_737307);
 return_closcall3(data,  __glo_values_scheme_base,  ((closureN)self_733822)->elements[3], c_737303, ((closureN)self_733822)->elements[0]);
 } else { 
   
-double_type local_737319; object c_737320 = Cyc_fast_sum(data,&local_737319,((closureN)self_733822)->elements[2], ((closureN)self_733822)->elements[4]);
+complex_num_type local_737319; object c_737320 = Cyc_fast_sum(data,&local_737319,((closureN)self_733822)->elements[2], ((closureN)self_733822)->elements[4]);
 
-double_type local_737315; object c_737316 = Cyc_fast_sum(data,&local_737315,obj_int2obj(2), c_737320);
+complex_num_type local_737315; object c_737316 = Cyc_fast_sum(data,&local_737315,obj_int2obj(2), c_737320);
 return_closcall3(data,  __glo_values_scheme_base,  ((closureN)self_733822)->elements[3], c_737316, ((closureN)self_733822)->elements[1]);}
 ; 
 }
@@ -6813,7 +6813,7 @@ c_737100.elements[3] = ((closureN)self_733825)->elements[3];
 c_737100.elements[4] = ((closureN)self_733825)->elements[4];
 
 
-double_type local_737226; object c_737227 = Cyc_fast_sum(data,&local_737226,((closureN)self_733825)->elements[3], ((closureN)self_733825)->elements[0]);
+complex_num_type local_737226; object c_737227 = Cyc_fast_sum(data,&local_737226,((closureN)self_733825)->elements[3], ((closureN)self_733825)->elements[0]);
 return_closcall1(data,(closure)&c_737100,  c_737227);; 
 }
 
@@ -6938,7 +6938,7 @@ return_closcall3(data,  car(((closureN)self_733830)->elements[4]),  &c_737204, (
 
 static void __lambda_403(void *data, int argc, object self_733831, object r_732962) {
   
-double_type local_737212; object c_737213 = Cyc_fast_sub(data,&local_737212,((closureN)self_733831)->elements[0], obj_int2obj(1));
+complex_num_type local_737212; object c_737213 = Cyc_fast_sub(data,&local_737212,((closureN)self_733831)->elements[0], obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733831)->elements[2]),  ((closureN)self_733831)->elements[1], c_737213);; 
 }
 
@@ -6959,10 +6959,10 @@ c_737111.elements[3] = ((closureN)self_733832)->elements[5];
 c_737111.elements[4] = ((closureN)self_733832)->elements[6];
 
 
-double_type local_737190; object c_737191 = ((inline_function_type)
+complex_num_type local_737190; object c_737191 = ((inline_function_type)
                    ((closure)__glo_quotient_191_191inline_191_191_scheme_base)->fn)(data,&local_737190,((closureN)self_733832)->elements[3], obj_int2obj(2));
 
-double_type local_737186; object c_737187 = Cyc_fast_sub(data,&local_737186,c_737191, obj_int2obj(1));
+complex_num_type local_737186; object c_737187 = Cyc_fast_sub(data,&local_737186,c_737191, obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733832)->elements[2]),  &c_737111, c_737187);; 
 }
 
@@ -7163,13 +7163,13 @@ return_closcall3(data,  car(((closureN)self_733841)->elements[3]),  &c_737147, (
 
 static void __lambda_392(void *data, int argc, object self_733842, object r_732950) {
   
-double_type local_737155; object c_737156 = Cyc_fast_sub(data,&local_737155,((closureN)self_733842)->elements[0], obj_int2obj(1));
+complex_num_type local_737155; object c_737156 = Cyc_fast_sub(data,&local_737155,((closureN)self_733842)->elements[0], obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733842)->elements[2]),  ((closureN)self_733842)->elements[1], c_737156);; 
 }
 
 static void __lambda_391(void *data, int argc, object self_733843, object r_732946) {
   
-double_type local_737125; object c_737126 = Cyc_fast_sub(data,&local_737125,((closureN)self_733843)->elements[0], obj_int2obj(1));
+complex_num_type local_737125; object c_737126 = Cyc_fast_sub(data,&local_737125,((closureN)self_733843)->elements[0], obj_int2obj(1));
 return_closcall2(data,  car(((closureN)self_733843)->elements[2]),  ((closureN)self_733843)->elements[1], c_737126);; 
 }
 
@@ -7361,7 +7361,7 @@ static void __lambda_378(void *data, int argc, object self_733853, object k_7330
 
 static void __lambda_377(void *data, int argc, closure _,object k_733013, object list_731444_732246, object index_731443_732245) {
   Cyc_st_add(data, "srfi/132.sld:has-element");
-  double_type local_737025; object c_737026 = ((inline_function_type)
+  complex_num_type local_737025; object c_737026 = ((inline_function_type)
                    ((closure)__glo_zero_127_191_191inline_191_191_scheme_base)->fn)(data,&local_737025,index_731443_732245);
 if( (boolean_f != c_737026) ){ 
   if( (boolean_f != Cyc_is_pair(list_731444_732246)) ){ 
@@ -7374,7 +7374,7 @@ if( (boolean_f != c_737026) ){
   return_closcall3(data,  __glo_values_scheme_base,  k_733013, boolean_f, boolean_f);
 } else { 
   
-double_type local_737041; object c_737042 = Cyc_fast_sub(data,&local_737041,index_731443_732245, obj_int2obj(1));
+complex_num_type local_737041; object c_737042 = Cyc_fast_sub(data,&local_737041,index_731443_732245, obj_int2obj(1));
 return_closcall3(data,  __glo_has_91element_srfi_132,  k_733013, Cyc_cdr(data, list_731444_732246), c_737042);}
 }
 ; 
@@ -7479,19 +7479,19 @@ return_closcall1(data,(closure)&c_736997,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_372(void *data, int argc, object self_733857, object r_733030) {
   
-double_type local_737005; object c_737006 = Cyc_fast_sub(data,&local_737005,((closureN)self_733857)->elements[0], obj_int2obj(1));
+complex_num_type local_737005; object c_737006 = Cyc_fast_sub(data,&local_737005,((closureN)self_733857)->elements[0], obj_int2obj(1));
 
-double_type local_737010; object c_737011 = Cyc_fast_sub(data,&local_737010,((closureN)self_733857)->elements[1], obj_int2obj(1));
+complex_num_type local_737010; object c_737011 = Cyc_fast_sub(data,&local_737010,((closureN)self_733857)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733857)->elements[3]),  ((closureN)self_733857)->elements[2], c_737006, c_737011);; 
 }
 
 static void __lambda_371(void *data, int argc, object self_733858, object r_733026) {
   
-double_type local_736977; object c_736978 = Cyc_fast_sub(data,&local_736977,((closureN)self_733858)->elements[0], ((closureN)self_733858)->elements[3]);
+complex_num_type local_736977; object c_736978 = Cyc_fast_sub(data,&local_736977,((closureN)self_733858)->elements[0], ((closureN)self_733858)->elements[3]);
 
-double_type local_736973; object c_736974 = Cyc_fast_sub(data,&local_736973,c_736978, obj_int2obj(1));
+complex_num_type local_736973; object c_736974 = Cyc_fast_sub(data,&local_736973,c_736978, obj_int2obj(1));
 
-double_type local_736983; object c_736984 = Cyc_fast_sub(data,&local_736983,((closureN)self_733858)->elements[0], obj_int2obj(1));
+complex_num_type local_736983; object c_736984 = Cyc_fast_sub(data,&local_736983,((closureN)self_733858)->elements[0], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733858)->elements[2]),  ((closureN)self_733858)->elements[1], c_736974, c_736984);; 
 }
 
@@ -7551,7 +7551,7 @@ c_736887.elements[2] = ((closureN)self_733860)->elements[2];
 c_736887.elements[3] = ((closureN)self_733860)->elements[3];
 
 
-double_type local_736945; object c_736946 = Cyc_fast_sub(data,&local_736945,((closureN)self_733860)->elements[0], ((closureN)self_733860)->elements[2]);
+complex_num_type local_736945; object c_736946 = Cyc_fast_sub(data,&local_736945,((closureN)self_733860)->elements[0], ((closureN)self_733860)->elements[2]);
 return_closcall1(data,(closure)&c_736887,  c_736946);; 
 }
 
@@ -7689,9 +7689,9 @@ return_closcall1(data,(closure)&c_736914,  Cyc_vector_set(data, ((closureN)self_
 
 static void __lambda_360(void *data, int argc, object self_733867, object r_733048) {
   
-double_type local_736922; object c_736923 = Cyc_fast_sum(data,&local_736922,((closureN)self_733867)->elements[0], obj_int2obj(1));
+complex_num_type local_736922; object c_736923 = Cyc_fast_sum(data,&local_736922,((closureN)self_733867)->elements[0], obj_int2obj(1));
 
-double_type local_736927; object c_736928 = Cyc_fast_sum(data,&local_736927,((closureN)self_733867)->elements[1], obj_int2obj(1));
+complex_num_type local_736927; object c_736928 = Cyc_fast_sum(data,&local_736927,((closureN)self_733867)->elements[1], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733867)->elements[3]),  ((closureN)self_733867)->elements[2], c_736923, c_736928);; 
 }
 
@@ -7838,14 +7838,14 @@ static void __lambda_353(void *data, int argc, object self_733873, object r_7330
   return_closcall1(data,  ((closureN)self_733873)->elements[1],  boolean_f);
 } else { 
   
-double_type local_736870; object c_736871 = Cyc_fast_sum(data,&local_736870,((closureN)self_733873)->elements[0], obj_int2obj(1));
+complex_num_type local_736870; object c_736871 = Cyc_fast_sum(data,&local_736870,((closureN)self_733873)->elements[0], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733873)->elements[2]),  ((closureN)self_733873)->elements[1], c_736871, Cyc_vector_ref(data, ((closureN)self_733873)->elements[3], ((closureN)self_733873)->elements[0]));}
 ; 
 }
 
 static void __lambda_352(void *data, int argc, object self_733874, object r_733061) {
   
-double_type local_736839; object c_736840 = Cyc_fast_sum(data,&local_736839,((closureN)self_733874)->elements[2], obj_int2obj(1));
+complex_num_type local_736839; object c_736840 = Cyc_fast_sum(data,&local_736839,((closureN)self_733874)->elements[2], obj_int2obj(1));
 return_closcall3(data,  car(((closureN)self_733874)->elements[1]),  ((closureN)self_733874)->elements[0], c_736840, Cyc_vector_ref(data, ((closureN)self_733874)->elements[3], ((closureN)self_733874)->elements[2]));; 
 }
 
@@ -7855,11 +7855,11 @@ static void __lambda_351(void *data, int argc, object self_733875, object k_7330
 
 static void __lambda_350(void *data, int argc, closure _,object k_733071, object _121_731368_732284, object list_731367_732283) {
   Cyc_st_add(data, "srfi/132.sld:list-sorted?");
-  double_type local_736747; object c_736748 = ((inline_function_type)
+  complex_num_type local_736747; object c_736748 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_736747,Cyc_is_pair(list_731367_732283));
 if( (boolean_f != c_736748) ){ 
   
-double_type local_736754; object c_736755 = ((inline_function_type)
+complex_num_type local_736754; object c_736755 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_736754,Cyc_is_pair(list_731367_732283));
 return_closcall1(data,  k_733071,  c_736755);
 } else { 
@@ -7929,11 +7929,11 @@ return_closcall1(data,(closure)&c_736763,  Cyc_set_cell(data, lp_731376_732288, 
 }
 
 static void __lambda_347(void *data, int argc, object self_733878, object k_733077, object prev_731378_732290, object tail_731377_732289) {
-    double_type local_736780; object c_736781 = ((inline_function_type)
+    complex_num_type local_736780; object c_736781 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_736780,Cyc_is_pair(tail_731377_732289));
 if( (boolean_f != c_736781) ){ 
   
-double_type local_736787; object c_736788 = ((inline_function_type)
+complex_num_type local_736787; object c_736788 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_736787,Cyc_is_pair(tail_731377_732289));
 return_closcall1(data,  k_733077,  c_736788);
 } else { 
@@ -9368,7 +9368,7 @@ return_closcall1(data,(closure)&c_736301,  Cyc_cdr(data, ((closureN)self_733946)
 
 static void __lambda_275(void *data, int argc, object self_733947, object r_733246) {
   
-double_type local_736311; object c_736312 = Cyc_fast_sum(data,&local_736311,((closureN)self_733947)->elements[0], obj_int2obj(1));
+complex_num_type local_736311; object c_736312 = Cyc_fast_sum(data,&local_736311,((closureN)self_733947)->elements[0], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_733947)->elements[2]),  ((closureN)self_733947)->elements[1], ((closureN)self_733947)->elements[3], ((closureN)self_733947)->elements[4], c_736312, r_733246);; 
 }
 
@@ -10573,11 +10573,11 @@ return_closcall1(data,(closure)&c_735870,  Cyc_set_cell(data, lp_73878_732354, &
 }
 
 static void __lambda_218(void *data, int argc, object self_734004, object k_733182, object ls2_73879_732355) {
-    double_type local_735935; object c_735936 = Cyc_fast_sum(data,&local_735935,ls2_73879_732355, ls2_73879_732355);
+    complex_num_type local_735935; object c_735936 = Cyc_fast_sum(data,&local_735935,ls2_73879_732355, ls2_73879_732355);
   object c_735932 = Cyc_num_fast_lte_op(data,c_735936, ((closureN)self_734004)->elements[1]);
 if( (boolean_f != c_735932) ){ 
   
-double_type local_735944; object c_735945 = Cyc_fast_sum(data,&local_735944,ls2_73879_732355, ls2_73879_732355);
+complex_num_type local_735944; object c_735945 = Cyc_fast_sum(data,&local_735944,ls2_73879_732355, ls2_73879_732355);
 return_closcall2(data,  car(((closureN)self_734004)->elements[0]),  k_733182, c_735945);
 } else { 
   return_closcall1(data,  k_733182,  ls2_73879_732355);}
@@ -10715,9 +10715,9 @@ return_closcall3(data,  __glo_call_91with_91values_scheme_base,  k_733171, &c_73
 
 static void __lambda_213(void *data, int argc, object self_734009, object k_733174, object st_731046_732366, object end_91st_731045_732365) {
   
-double_type local_735914; object c_735915 = Cyc_fast_sum(data,&local_735914,((closureN)self_734009)->elements[1], ((closureN)self_734009)->elements[3]);
+complex_num_type local_735914; object c_735915 = Cyc_fast_sum(data,&local_735914,((closureN)self_734009)->elements[1], ((closureN)self_734009)->elements[3]);
 
-double_type local_735920; object c_735921 = Cyc_fast_sum(data,&local_735920,((closureN)self_734009)->elements[2], ((closureN)self_734009)->elements[2]);
+complex_num_type local_735920; object c_735921 = Cyc_fast_sum(data,&local_735920,((closureN)self_734009)->elements[2], ((closureN)self_734009)->elements[2]);
 return_closcall7(data,  car(((closureN)self_734009)->elements[0]),  k_733174, st_731046_732366, end_91st_731045_732365, c_735915, c_735921, ((closureN)self_734009)->elements[5], ((closureN)self_734009)->elements[4]);; 
 }
 
@@ -11211,7 +11211,7 @@ return_closcall3(data,  car(((closureN)self_734035)->elements[1]),  &c_735722, (
   
 make_pair(c_735739,((closureN)self_734035)->elements[5], ((closureN)self_734035)->elements[0]);
 
-double_type local_735744; object c_735745 = Cyc_fast_sum(data,&local_735744,((closureN)self_734035)->elements[2], obj_int2obj(1));
+complex_num_type local_735744; object c_735745 = Cyc_fast_sum(data,&local_735744,((closureN)self_734035)->elements[2], obj_int2obj(1));
 return_closcall5(data,  car(((closureN)self_734035)->elements[4]),  ((closureN)self_734035)->elements[3], &c_735739, c_735745, ((closureN)self_734035)->elements[6], Cyc_cdr(data, ((closureN)self_734035)->elements[7]));}
 ; 
 }
@@ -11911,11 +11911,11 @@ return_closcall1(data,(closure)&c_735438,  Cyc_set_cell(data, lp_73384_732435, &
 }
 
 static void __lambda_150(void *data, int argc, object self_734071, object k_733281, object ls2_73385_732436) {
-    double_type local_735498; object c_735499 = Cyc_fast_sum(data,&local_735498,ls2_73385_732436, ls2_73385_732436);
+    complex_num_type local_735498; object c_735499 = Cyc_fast_sum(data,&local_735498,ls2_73385_732436, ls2_73385_732436);
   object c_735495 = Cyc_num_fast_lte_op(data,c_735499, ((closureN)self_734071)->elements[1]);
 if( (boolean_f != c_735495) ){ 
   
-double_type local_735507; object c_735508 = Cyc_fast_sum(data,&local_735507,ls2_73385_732436, ls2_73385_732436);
+complex_num_type local_735507; object c_735508 = Cyc_fast_sum(data,&local_735507,ls2_73385_732436, ls2_73385_732436);
 return_closcall2(data,  car(((closureN)self_734071)->elements[0]),  k_733281, c_735508);
 } else { 
   return_closcall1(data,  k_733281,  ls2_73385_732436);}
@@ -12034,9 +12034,9 @@ return_closcall3(data,  car(((closureN)self_734075)->elements[4]),  &c_735468, (
 
 static void __lambda_145(void *data, int argc, object self_734076, object r_733274) {
   
-double_type local_735476; object c_735477 = Cyc_fast_sum(data,&local_735476,((closureN)self_734076)->elements[2], ((closureN)self_734076)->elements[4]);
+complex_num_type local_735476; object c_735477 = Cyc_fast_sum(data,&local_735476,((closureN)self_734076)->elements[2], ((closureN)self_734076)->elements[4]);
 
-double_type local_735482; object c_735483 = Cyc_fast_sum(data,&local_735482,((closureN)self_734076)->elements[3], ((closureN)self_734076)->elements[3]);
+complex_num_type local_735482; object c_735483 = Cyc_fast_sum(data,&local_735482,((closureN)self_734076)->elements[3], ((closureN)self_734076)->elements[3]);
 return_closcall6(data,  car(((closureN)self_734076)->elements[0]),  ((closureN)self_734076)->elements[1], r_733274, c_735477, c_735483, ((closureN)self_734076)->elements[6], ((closureN)self_734076)->elements[5]);; 
 }
 
@@ -12053,7 +12053,7 @@ static void __lambda_142(void *data, int argc, object self_734079, object k_7332
   return_closcall1(data,  k_733285,  ((closureN)self_734079)->elements[0]);
 } else { 
   
-double_type local_735420; object c_735421 = ((inline_function_type)
+complex_num_type local_735420; object c_735421 = ((inline_function_type)
                    ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_735420,Cyc_is_pair(((closureN)self_734079)->elements[1]));
 return_closcall1(data,  k_733285,  c_735421);}
 ; 
@@ -13751,7 +13751,7 @@ c_734592.elements[5] = ((closureN)self_734148)->elements[3];
 c_734592.elements[6] = vj_7372_732537;
 
 
-double_type local_734727; object c_734728 = Cyc_fast_sum(data,&local_734727,j_7373_732538, obj_int2obj(1));
+complex_num_type local_734727; object c_734728 = Cyc_fast_sum(data,&local_734727,j_7373_732538, obj_int2obj(1));
 return_closcall1(data,(closure)&c_734592,  c_734728);; 
 }
 
@@ -13847,7 +13847,7 @@ c_734604.elements[4] = ((closureN)self_734152)->elements[6];
 c_734604.elements[5] = ((closureN)self_734152)->elements[7];
 
 
-double_type local_734706; object c_734707 = Cyc_fast_sum(data,&local_734706,((closureN)self_734152)->elements[2], obj_int2obj(2));
+complex_num_type local_734706; object c_734707 = Cyc_fast_sum(data,&local_734706,((closureN)self_734152)->elements[2], obj_int2obj(2));
 return_closcall1(data,(closure)&c_734604,  c_734707);
 } else { 
   return_closcall3(data,  car(((closureN)self_734152)->elements[5]),  ((closureN)self_734152)->elements[4], ((closureN)self_734152)->elements[3], ((closureN)self_734152)->elements[8]);}
@@ -14054,7 +14054,7 @@ static void __lambda_58(void *data, int argc, object self_734161, object k_73350
     object c_734643 = Cyc_num_fast_gte_op(data,k_7387_732550, ((closureN)self_734161)->elements[1]);
 if( (boolean_f != c_734643) ){ 
   
-double_type local_734648; object c_734649 = Cyc_fast_sum(data,&local_734648,((closureN)self_734161)->elements[2], obj_int2obj(1));
+complex_num_type local_734648; object c_734649 = Cyc_fast_sum(data,&local_734648,((closureN)self_734161)->elements[2], obj_int2obj(1));
 return_closcall1(data,  k_733508,  c_734649);
 } else { 
   
@@ -14098,7 +14098,7 @@ c_734654.elements[5] = ((closureN)self_734162)->elements[6];
 c_734654.elements[6] = ((closureN)self_734162)->elements[7];
 
 
-double_type local_734690; object c_734691 = Cyc_fast_sum(data,&local_734690,((closureN)self_734162)->elements[3], obj_int2obj(1));
+complex_num_type local_734690; object c_734691 = Cyc_fast_sum(data,&local_734690,((closureN)self_734162)->elements[3], obj_int2obj(1));
 return_closcall2(data,(closure)&c_734654,  r_733510, c_734691);; 
 }
 
@@ -14143,14 +14143,14 @@ c_734665.elements[3] = ((closureN)self_734164)->elements[3];
 c_734665.elements[4] = ((closureN)self_734164)->elements[6];
 
 
-double_type local_734683; object c_734684 = Cyc_fast_sum(data,&local_734683,((closureN)self_734164)->elements[0], obj_int2obj(1));
+complex_num_type local_734683; object c_734684 = Cyc_fast_sum(data,&local_734683,((closureN)self_734164)->elements[0], obj_int2obj(1));
 return_closcall1(data,(closure)&c_734665,  Cyc_vector_set(data, ((closureN)self_734164)->elements[5], c_734684, ((closureN)self_734164)->elements[6]));}
 ; 
 }
 
 static void __lambda_54(void *data, int argc, object self_734165, object r_733514) {
   
-double_type local_734673; object c_734674 = Cyc_fast_sum(data,&local_734673,((closureN)self_734165)->elements[0], obj_int2obj(1));
+complex_num_type local_734673; object c_734674 = Cyc_fast_sum(data,&local_734673,((closureN)self_734165)->elements[0], obj_int2obj(1));
 return_closcall4(data,  car(((closureN)self_734165)->elements[3]),  ((closureN)self_734165)->elements[1], c_734674, ((closureN)self_734165)->elements[4], ((closureN)self_734165)->elements[2]);; 
 }
 
@@ -14372,7 +14372,7 @@ return_closcall1(data,  k_733528,  c_734544);}
 static void __lambda_41(void *data, int argc, object self_734177, object r_733532) {
   if( (boolean_f != r_733532) ){ 
   
-double_type local_734503; object c_734504 = Cyc_fast_sum(data,&local_734503,((closureN)self_734177)->elements[0], obj_int2obj(1));
+complex_num_type local_734503; object c_734504 = Cyc_fast_sum(data,&local_734503,((closureN)self_734177)->elements[0], obj_int2obj(1));
 return_closcall4(data,  car(((closureN)self_734177)->elements[3]),  ((closureN)self_734177)->elements[2], ((closureN)self_734177)->elements[5], c_734504, ((closureN)self_734177)->elements[1]);
 } else { 
   
@@ -14390,9 +14390,9 @@ c_734511.elements[2] = ((closureN)self_734177)->elements[2];
 c_734511.elements[3] = ((closureN)self_734177)->elements[4];
 
 
-double_type local_734530; object c_734531 = Cyc_fast_sum(data,&local_734530,((closureN)self_734177)->elements[0], obj_int2obj(1));
+complex_num_type local_734530; object c_734531 = Cyc_fast_sum(data,&local_734530,((closureN)self_734177)->elements[0], obj_int2obj(1));
 
-double_type local_734535; object c_734536 = Cyc_fast_sum(data,&local_734535,((closureN)self_734177)->elements[1], obj_int2obj(1));
+complex_num_type local_734535; object c_734536 = Cyc_fast_sum(data,&local_734535,((closureN)self_734177)->elements[1], obj_int2obj(1));
 return_closcall4(data,  car(((closureN)self_734177)->elements[3]),  &c_734511, Cyc_vector_ref(data, ((closureN)self_734177)->elements[4], ((closureN)self_734177)->elements[0]), c_734531, c_734536);}
 ; 
 }
