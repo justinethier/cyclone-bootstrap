@@ -15,6 +15,7 @@
           (scheme cyclone ast)
           (scheme cyclone primitives)
           (scheme cyclone transforms)
+          (srfi 2)
           (srfi 69))
   (export
       closure-convert 
@@ -22,6 +23,8 @@
       inlinable-top-level-lambda?
       optimize-cps 
       analyze-cps
+      analyze-find-lambdas
+      analyze:find-named-lets
       ;analyze-lambda-side-effects
       opt:add-inlinable-functions
       opt:contract
@@ -54,6 +57,10 @@
       adbv:set-ref-count!
       adbv:ref-by
       adbv:set-ref-by!
+      adbv:def-in-loop? 
+      adbv:set-def-in-loop!
+      adbv:ref-in-loop? 
+      adbv:set-ref-in-loop!
       ;; Analyze functions
       adb:make-fnc
       %adb:make-fnc
@@ -98,7 +105,10 @@
         reassigned assigned-value 
         app-fnc-count app-arg-count
         inlinable mutated-indirectly
-        cont)
+        cont
+        def-in-loop
+        ref-in-loop
+      )
       adb:variable?
       (global adbv:global? adbv:set-global!)
       (defined-by adbv:defined-by adbv:set-defined-by!)
@@ -121,6 +131,8 @@
       ;; Is the variable mutated indirectly? (EG: set-car! of a cdr)
       (mutated-indirectly adbv:mutated-indirectly? adbv:set-mutated-indirectly!)
       (cont adbv:cont? adbv:set-cont!)
+      (def-in-loop adbv:def-in-loop? adbv:set-def-in-loop!)
+      (ref-in-loop adbv:ref-in-loop? adbv:set-ref-in-loop!)
     )
 
     (define (adbv-set-assigned-value-helper! sym var value)
@@ -149,7 +161,7 @@
     )
 
     (define (adb:make-var)
-      (%adb:make-var '? '? #f #f #f 0 '() #f #f 0 0 #t #f #f))
+      (%adb:make-var '? '? #f #f #f 0 '() #f #f 0 0 #t #f #f #f #f))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params assigned-to-var side-effects)
@@ -852,6 +864,10 @@
                       (with-var param (lambda (var)
 ;(trace:error `(DEBUG ,param ,(adbv:ref-by var)))
                         (and 
+                          ;; If param is referenced in a loop (but defined outside)
+                          ;; do not inline function into the loop
+                          (or (not (adbv:ref-in-loop? var))
+                              (adbv:def-in-loop? var))
                           ;; If param is never referenced, then prim is being
                           ;; called for side effects, possibly on a global
                           (not (null? (adbv:ref-by var)))
@@ -1449,6 +1465,7 @@
        (else exp)))
 
     (define (analyze-cps exp)
+      (analyze:find-named-lets exp)
       (analyze-find-lambdas exp -1)
       (analyze-lambda-side-effects exp -1)
       (analyze-lambda-side-effects exp -1) ;; 2nd pass guarantees lambda purity
@@ -1605,5 +1622,79 @@
 
  `(lambda ()
     ,(convert exp #f '())))
+
+(define (analyze:find-named-lets exp)
+  (define (scan exp lp)
+    (cond
+     ((ast:lambda? exp)
+      (let* ((id (ast:lambda-id exp))
+             (has-cont (ast:lambda-has-cont exp))
+             (sym (string->symbol 
+                    (string-append
+                       "lambda-"
+                       (number->string id)
+                       (if has-cont "-cont" ""))))
+             (args* (ast:lambda-args exp))
+             (args (if (null? args*) 
+                       '() 
+                       (formals->list args*)))
+            )
+        (when lp
+          (for-each
+            (lambda (a)
+              (with-var! a (lambda (var)
+                (adbv:set-def-in-loop! var #t))))
+            args))
+        `(,sym ,(ast:lambda-args exp)
+           ,@(map (lambda (e) (scan e lp)) (ast:lambda-body exp))))
+     )
+     ((quote? exp) exp)
+     ((const? exp) exp)
+     ((ref? exp) 
+      (when lp
+(trace:error `(found var ref ,exp in loop))
+        (with-var! exp (lambda (var)
+          (adbv:set-ref-in-loop! var #t))))
+      exp)
+     ((define? exp)
+      `(define ,(define->var exp)
+               ,@(scan (define->exp exp) lp)))
+     ((set!? exp)
+      `(set! ,(set!->var exp)
+             ,(scan (set!->exp exp) lp)))
+     ((if? exp)       
+      `(if ,(scan (if->condition exp) lp)
+           ,(scan (if->then exp) lp)
+           ,(scan (if->else exp) lp)))
+     ((app? exp)
+      (cond
+        ((and-let* ( 
+           ;; Find lambda with initial #f assignment
+           ((ast:lambda? (car exp)))
+           ((pair? (cdr exp)))
+           ((not (cadr exp)))
+           (= 1 (length (ast:lambda-args (car exp))))
+           ;; Get information for continuation
+           (loop-sym (car (ast:lambda-args (car exp))))
+           (inner-exp (car (ast:lambda-body (car exp))))
+           ((app? inner-exp))
+           ((ast:lambda? (car inner-exp)))
+           ;; Find the set (assumes CPS conversion)
+           ((pair? (cdr inner-exp)))
+           ((set!? (cadr inner-exp)))
+           ((equal? (set!->var (cadr inner-exp)) loop-sym))
+           ;; Check the set's continuation
+           ((app? (car (ast:lambda-body (car inner-exp)))))
+           ((equal? (caar (ast:lambda-body (car inner-exp))) loop-sym))
+          )
+(trace:error `(found loop in ,exp))
+         ;; TODO: do we want to record the lambda that is a loop?
+         ;; Continue scanning, indicating we are in a loop
+         (map (lambda (e) (scan e #t)) exp)
+        ))
+        (else
+          (map (lambda (e) (scan e lp)) exp))))
+     (else exp)))
+  (scan exp #f))
 
 ))
