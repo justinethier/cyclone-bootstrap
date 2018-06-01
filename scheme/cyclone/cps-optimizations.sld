@@ -25,6 +25,7 @@
       analyze-cps
       analyze-find-lambdas
       analyze:find-named-lets
+      analyze:find-direct-recursive-calls
       ;analyze-lambda-side-effects
       opt:add-inlinable-functions
       opt:contract
@@ -61,6 +62,8 @@
       adbv:set-def-in-loop!
       adbv:ref-in-loop? 
       adbv:set-ref-in-loop!
+      adbv:direct-rec-call? 
+      adbv:set-direct-rec-call!
       ;; Analyze functions
       adb:make-fnc
       %adb:make-fnc
@@ -108,6 +111,7 @@
         cont
         def-in-loop
         ref-in-loop
+        direct-rec-call
       )
       adb:variable?
       (global adbv:global? adbv:set-global!)
@@ -131,8 +135,11 @@
       ;; Is the variable mutated indirectly? (EG: set-car! of a cdr)
       (mutated-indirectly adbv:mutated-indirectly? adbv:set-mutated-indirectly!)
       (cont adbv:cont? adbv:set-cont!)
+      ;; Following two indicate if a variable is defined/referenced in a loop
       (def-in-loop adbv:def-in-loop? adbv:set-def-in-loop!)
       (ref-in-loop adbv:ref-in-loop? adbv:set-ref-in-loop!)
+      ;; Does a top-level function directly call itself?
+      (direct-rec-call adbv:direct-rec-call? adbv:set-direct-rec-call!)
     )
 
     (define (adbv-set-assigned-value-helper! sym var value)
@@ -161,7 +168,25 @@
     )
 
     (define (adb:make-var)
-      (%adb:make-var '? '? #f #f #f 0 '() #f #f 0 0 #t #f #f #f #f))
+      (%adb:make-var 
+        '?  ; global 
+        '?  ; defined-by 
+        #f  ; defines-lambda-id
+        #f  ; const 
+        #f  ; const-value  
+        0   ; ref-count 
+        '() ; ref-by             
+        #f  ; reassigned 
+        #f  ; assigned-value 
+        0   ; app-fnc-count 
+        0   ; app-arg-count
+        #t  ; inlinable 
+        #f  ; mutated-indirectly
+        #f  ; cont
+        #f  ; def-in-loop
+        #f  ; ref-in-loop
+        #f  ; direct-rec-call
+      ))
 
     (define-record-type <analysis-db-function>
       (%adb:make-fnc simple unused-params assigned-to-var side-effects)
@@ -1466,6 +1491,7 @@
 
     (define (analyze-cps exp)
       (analyze:find-named-lets exp)
+      (analyze:find-direct-recursive-calls exp)
       (analyze-find-lambdas exp -1)
       (analyze-lambda-side-effects exp -1)
       (analyze-lambda-side-effects exp -1) ;; 2nd pass guarantees lambda purity
@@ -1696,5 +1722,63 @@
           (map (lambda (e) (scan e lp)) exp))))
      (else exp)))
   (scan exp #f))
+
+;; Find any top-level functions that call themselves directly
+(define (analyze:find-direct-recursive-calls exp)
+  ;; Check arguments to the top level function to make sure 
+  ;; they are "safe" for further optimizations.
+  ;; Right now this is very conservative.
+  (define (check-args args)
+    (define (check exp)
+      (cond
+        ((quote? exp) #t)
+        ((const? exp) #t)
+        ((ref? exp) #t)
+        ((app? exp)
+         (and 
+           ;; TODO: Very conservative right now, could include more
+           (member (car exp) '(car cdr))
+           (check-args (cdr exp))))
+        (else #f)))
+    (every check args))
+
+  (define (scan exp def-sym)
+    ;(trace:info `(analyze:find-direct-recursive-calls scan ,def-sym ,exp))
+    (cond
+     ((ast:lambda? exp)
+      ;; Reject if there are nested functions
+      #f)
+     ((quote? exp) exp)
+     ((const? exp) exp)
+     ((ref? exp) 
+      exp)
+     ((define? exp) #f)
+     ((set!? exp) #f)
+     ((if? exp)       
+      (scan (if->condition exp) def-sym) ;; OK to check??
+      (scan (if->then exp) def-sym)
+      (scan (if->else exp) def-sym))
+     ((app? exp)
+      (when (equal? (car exp) def-sym)
+        (cond
+         ((check-args (cddr exp)) ;; Skip func and continuation
+          (trace:info `("direct recursive call" ,exp))
+          (with-var! def-sym (lambda (var)
+            (adbv:set-direct-rec-call! var #t))))
+         (else
+          (trace:info `("not a direct recursive call" ,exp))))))
+     (else #f)))
+  (if (pair? exp)
+      (for-each
+        (lambda (exp)
+          ;;(write exp) (newline)
+          (and-let* (((define? exp))
+                      (def-exps (define->exp exp))
+                     ((vector? (car def-exps)))
+                     ((ast:lambda? (car def-exps)))
+                     )
+           (scan (car (ast:lambda-body (car def-exps))) (define->var exp))))
+          exp))
+)
 
 ))
