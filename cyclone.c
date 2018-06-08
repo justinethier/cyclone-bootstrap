@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.8 
+ ** Version 0.8.1 
  **
  **/
 
@@ -681,6 +681,7 @@ extern object __glo_optimize_91cps_scheme_cyclone_cps_91optimizations;
 extern object __glo_analyze_91cps_scheme_cyclone_cps_91optimizations;
 extern object __glo_analyze_91find_91lambdas_scheme_cyclone_cps_91optimizations;
 extern object __glo_analyze_117find_91named_91lets_scheme_cyclone_cps_91optimizations;
+extern object __glo_analyze_117find_91direct_91recursive_91calls_scheme_cyclone_cps_91optimizations;
 extern object __glo_opt_117add_91inlinable_91functions_scheme_cyclone_cps_91optimizations;
 extern object __glo_opt_117contract_scheme_cyclone_cps_91optimizations;
 extern object __glo_opt_117inline_91prims_scheme_cyclone_cps_91optimizations;
@@ -715,6 +716,8 @@ extern object __glo_adbv_117def_91in_91loop_127_scheme_cyclone_cps_91optimizatio
 extern object __glo_adbv_117set_91def_91in_91loop_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117ref_91in_91loop_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbv_117set_91ref_91in_91loop_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117direct_91rec_91call_127_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbv_117set_91direct_91rec_91call_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adb_117make_91fnc_scheme_cyclone_cps_91optimizations;
 extern object __glo__75adb_117make_91fnc_scheme_cyclone_cps_91optimizations;
 extern object __glo_adb_117function_127_scheme_cyclone_cps_91optimizations;
