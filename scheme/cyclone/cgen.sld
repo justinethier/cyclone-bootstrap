@@ -15,6 +15,8 @@
           (scheme write)
           (scheme cyclone primitives)
           (scheme cyclone transforms)
+          (scheme cyclone ast)
+          (scheme cyclone cps-optimizations)
           (scheme cyclone util)
           (scheme cyclone libraries)
   )
@@ -710,11 +712,76 @@
 
 ;; c-compile-app : app-exp (string -> void) -> string
 (define (c-compile-app exp append-preamble cont trace cps?)
-  ;(trace:debug `(c-compile-app: ,exp))
+  ;;(trace:info `(c-compile-app: ,exp ,trace))
   (let (($tmp (mangle (gensym 'tmp))))
     (let* ((args     (app->args exp))
            (fun      (app->fun exp)))
       (cond
+        ;; Direct recursive call of top-level function
+        ((and (pair? trace)
+              (not (null? (cdr trace)))
+              (adbv:direct-rec-call? (adb:get (cdr trace)))
+              (tagged-list? '%closure-ref fun)
+              (equal? (cadr fun) (cdr trace)) ;; Needed?
+              (equal? (car args) (cdr trace))
+         )
+         (let* ((cgen-lis
+                  ;; TODO: need a way to get the original args to the top-level function
+                  ;; TODO: probably need a specilized function here instead
+                  
+                  ;(c-compile-args
+                  ;   (cddr args) ;; Skip the closure
+                  ;   append-preamble 
+                  ;   ""
+                  ;   "" ;;this-cont
+                  ;   trace
+                  ;   cps?)
+                  (map 
+                    (lambda (e)
+                     (c-compile-exp e append-preamble "" "" cps?))
+                    (cddr args)) ;; Skip the closure
+                  )
+                (cgen-allocs 
+                  (apply string-append 
+                    (map (lambda (a) (c:allocs->str (c:allocs a))) cgen-lis)))
+
+                (parent-fnc (adbv:assigned-value (adb:get (cdr trace))))
+                (parent-args 
+                  (cdr ;; Skip continuation
+                    (ast:lambda-args 
+                      (if (pair? parent-fnc) 
+                          (car parent-fnc)
+                          parent-fnc))))
+                (cgen-body
+                  (apply
+                    string-append
+                    (map
+                      (lambda (arg body-exp)
+                        (string-append
+                          (mangle arg)
+                          " = "
+                          (c:body body-exp)
+                          ";"
+                        )
+                      )
+                      parent-args
+                      cgen-lis)))
+               )
+           ;;(trace:info `(loop ,cgen-lis ,parent-args))
+;; Output so far on ntakl:
+;;(loop (("Cyc_cdr(data, x_736_73133)" ())
+;;       ("Cyc_cdr(data, y_735_73132)" ()))
+;;      (k$241 x$6$133 y$5$132))
+
+           (c-code
+             (string-append
+               cgen-allocs ;(c:allocs->str (c:allocs cgen))
+               "\n"
+               cgen-body ;; TODO: (c:body cgen) ;; TODO: re-assign function args, longer-term using temp variables
+               "\n"
+               "goto loop;")))
+        )
+         
         ((lambda? fun)
          (let* ((lid (allocate-lambda (c-compile-lambda fun trace #t))) ;; TODO: pass in free vars? may be needed to track closures
                                                                ;; properly, wait until this comes up in an example
@@ -1218,6 +1285,11 @@
              (and
                (> (string-length tmp-ident) 3)
                (equal? "self" (substring tmp-ident 0 4))))
+           (has-loop?
+             (and (not has-closure?) ;; Only top-level functions for now
+                  (pair? trace)
+                  (not (null? (cdr trace)))
+                  (adbv:direct-rec-call? (adb:get (cdr trace)))))
            (formals*
              (string-append
                 (if has-closure? 
@@ -1260,7 +1332,14 @@
                          (c:append
                            (c-code 
                              ;; Only trace when entering initial defined function
-                             (if has-closure? "" (st:->code trace)))
+                             (cond
+                               (has-closure? "")
+                               (else
+                                 (string-append
+                                   (st:->code trace)
+                                   ;; TODO: probably needs brackets afterwards...
+                                   (if has-loop? "\nloop:\n" "")
+                                 ))))
                            body)
                          "  ")
                        "; \n"
