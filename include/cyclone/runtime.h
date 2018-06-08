@@ -440,29 +440,42 @@ int equal(object, object);
 object equalp(object, object);
 object Cyc_has_cycle(object lst);
 object Cyc_is_boolean(object o);
-//object Cyc_is_pair(object o);
-//object Cyc_is_null(object o);
 #define Cyc_is_pair(o) ((is_object_type(o) && ((list) o)->tag == pair_tag) ? boolean_t : boolean_f)
-#define Cyc_is_null(o) make_boolean(o == NULL)
+#define Cyc_is_null(o) (make_boolean(o == NULL))
+//TODO: convert all of these to macros (if it makes sense, most should), and remove them from runtime.c:
 object Cyc_is_number(object o);
 object Cyc_is_complex(object o);
 object Cyc_is_real(object o);
 object Cyc_is_integer(object o);
-object Cyc_is_fixnum(object o);
-object Cyc_is_bignum(object o);
-object Cyc_is_vector(object o);
-object Cyc_is_bytevector(object o);
-object Cyc_is_port(object o);
-object Cyc_is_mutex(object o);
-object Cyc_is_cond_var(object o);
-object Cyc_is_symbol(object o);
-object Cyc_is_string(object o);
-object Cyc_is_char(object o);
+#define Cyc_is_fixnum(o) (make_boolean(obj_is_int(o)))
+//object Cyc_is_fixnum(object o);
+#define Cyc_is_bignum(o)     (make_boolean(is_object_type(o) && ((list) o)->tag == bignum_tag))
+//object Cyc_is_bignum(object o);
+//object Cyc_is_vector(object o);
+//object Cyc_is_bytevector(object o);
+//object Cyc_is_port(object o);
+//object Cyc_is_mutex(object o);
+//object Cyc_is_cond_var(object o);
+//object Cyc_is_symbol(object o);
+//object Cyc_is_string(object o);
+#define Cyc_is_vector(o)     (make_boolean(is_object_type(o) && ((list) o)->tag == vector_tag))
+#define Cyc_is_bytevector(o) (make_boolean(is_object_type(o) && ((list) o)->tag == bytevector_tag))
+#define Cyc_is_port(o)       (make_boolean(is_object_type(o) && ((list) o)->tag == port_tag))
+#define Cyc_is_mutex(o)      (make_boolean(is_object_type(o) && ((list) o)->tag == mutex_tag))
+#define Cyc_is_cond_var(o)   (make_boolean(is_object_type(o) && ((list) o)->tag == cond_var_tag))
+#define Cyc_is_symbol(o)     (make_boolean(is_object_type(o) && ((list) o)->tag == symbol_tag))
+#define Cyc_is_string(o)     (make_boolean(is_object_type(o) && ((list) o)->tag == string_tag))
+//object Cyc_is_char(object o);
+#define Cyc_is_char(o) (make_boolean(obj_is_char(o)))
 object Cyc_is_procedure(void *data, object o);
-object Cyc_is_macro(object o);
-object Cyc_is_eof_object(object o);
-object Cyc_is_cvar(object o);
-object Cyc_is_opaque(object o);
+//object Cyc_is_macro(object o);
+//object Cyc_is_eof_object(object o);
+//object Cyc_is_cvar(object o);
+//object Cyc_is_opaque(object o);
+#define Cyc_is_macro(o)       (make_boolean(is_object_type(o) && ((list) o)->tag == macro_tag))
+#define Cyc_is_eof_object(o)  (make_boolean(is_object_type(o) && ((list) o)->tag == eof_tag))
+#define Cyc_is_cvar(o)        (make_boolean(is_object_type(o) && ((list) o)->tag == cvar_tag))
+#define Cyc_is_opaque(o)      (make_boolean(is_object_type(o) && ((list) o)->tag == c_opaque_tag))
 /**@}*/
 
 /**
