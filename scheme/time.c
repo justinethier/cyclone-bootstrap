@@ -65,6 +65,7 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
  }}
 
+#include <sys/time.h>
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemetime_scheme_time = NULL;
 object __glo_jiffies_91per_91second_scheme_time = NULL;
@@ -272,11 +273,28 @@ static void __lambda_3(void *data, int argc, closure _,object k_733) {
 return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _, object k) { int n = CLOCKS_PER_SEC;
+static void __lambda_2(void *data, int argc, closure _, object k) { int n = 1000000;
         object obj = obj_int2obj(n);
         return_closcall1(data, k, obj);  }
-static void __lambda_1(void *data, int argc, closure _, object k) { make_double(box, 0.0);
-        clock_t jiffy = clock();
+static void __lambda_1(void *data, int argc, closure _, object k) { struct timeval tv;
+        make_double(box, 0.0);
+        gettimeofday(&tv, NULL); /* TODO: longer-term use clock_gettime instead */
+        long long jiffy = (tv.tv_sec)*1000000LL + tv.tv_usec;
+        /* TODO: future consideration
+        mp_int bn_tmp, bn_tmp2, bn_tmp3;
+        mp_init(&bn_tmp);
+        mp_init(&bn_tmp2);
+        mp_init(&bn_tmp3);
+        Cyc_int2bignum(tv.tv_sec, &bn_tmp);
+        Cyc_int2bignum(1000000LL, &bn_tmp2);
+        Cyc_int2bignum(tv.tv_usec, &bn_tmp3);
+        alloc_bignum(data, box);
+        mp_mul(&bn_tmp, &bn_tmp2, &bn_tmp);
+        mp_add(&bn_tmp, &bn_tmp3, &bignum_value(box)); 
+        mp_clear(&bn_tmp);
+        mp_clear(&bn_tmp2);
+        mp_clear(&bn_tmp3);
+        */
         double_value(&box) = jiffy;
         return_closcall1(data, k, &box);  }
 static void __lambda_0(void *data, int argc, closure _, object k) { make_double(box, 0.0);
