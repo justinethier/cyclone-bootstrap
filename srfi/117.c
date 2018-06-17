@@ -2876,7 +2876,7 @@ static void __lambda_1(void *data, int argc, object self_73699, object r_73559) 
 static void __lambda_0(void *data, int argc, closure _,object k_73569, object ls_731_73271) {
   Cyc_st_add(data, "srfi/117.sld:last-pair");
 
-loop:
+loop: {
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ls_731_73271))) ){ 
   return_closcall1(data,  k_73569,  ls_731_73271);
 } else { 
@@ -2884,6 +2884,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ls_731_73271))) ){
 ls_731_73271 = Cyc_cdr(data, ls_731_73271);
 goto loop;}
 ; 
+}
 }
 
 void c_srfi117_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
