@@ -244,6 +244,8 @@ extern object __glo__list_scheme_base;
 extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
+extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -1171,7 +1173,7 @@ c_73844.elements[1] = ((closureN)self_73415)->elements[1];
 
 complex_num_type local_73854; object c_73855 = ((inline_function_type)
                    ((closure)__glo_lambda_91_125exp_191_191inline_191_191_scheme_cyclone_util)->fn)(data,&local_73854,((closureN)self_73415)->elements[0]);
-return_closcall3(data,  __glo_map_scheme_base,  &c_73844, __glo_sexp_91_125ast_scheme_cyclone_ast, c_73855);
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_73844, __glo_sexp_91_125ast_scheme_cyclone_ast, c_73855);
 } else { 
   
 closureN_type c_73858;
@@ -1359,7 +1361,7 @@ return_closcall1(data,(closure)&c_73958,  c_73968);}
 
 static void __lambda_59(void *data, int argc, object self_73422, object r_73254) {
   if( (boolean_f != r_73254) ){ 
-  return_closcall3(data,  __glo_map_scheme_base,  ((closureN)self_73422)->elements[1], __glo_sexp_91_125ast_scheme_cyclone_ast, ((closureN)self_73422)->elements[0]);
+  return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  ((closureN)self_73422)->elements[1], __glo_sexp_91_125ast_scheme_cyclone_ast, ((closureN)self_73422)->elements[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_73422)->elements[1],  ((closureN)self_73422)->elements[0]);}
 ; 
@@ -1683,7 +1685,7 @@ return_closcall1(data,(closure)&c_73818,  c_73828);}
 
 static void __lambda_43(void *data, int argc, object self_73437, object r_73295) {
   if( (boolean_f != r_73295) ){ 
-  return_closcall3(data,  __glo_map_scheme_base,  ((closureN)self_73437)->elements[1], __glo_ast_91_125sexp_scheme_cyclone_ast, ((closureN)self_73437)->elements[0]);
+  return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  ((closureN)self_73437)->elements[1], __glo_ast_91_125sexp_scheme_cyclone_ast, ((closureN)self_73437)->elements[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_73437)->elements[1],  ((closureN)self_73437)->elements[0]);}
 ; 
@@ -1842,7 +1844,7 @@ c_73703.elements = (object *)alloca(sizeof(object) * 2);
 c_73703.elements[0] = ((closureN)self_73447)->elements[0];
 c_73703.elements[1] = ((closureN)self_73447)->elements[1];
 
-return_closcall3(data,  __glo_map_scheme_base,  &c_73703, __glo_ast_91_125sexp_scheme_cyclone_ast, r_73265);; 
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_73703, __glo_ast_91_125sexp_scheme_cyclone_ast, r_73265);; 
 }
 
 static void __lambda_32(void *data, int argc, object self_73448, object r_73264) {
@@ -2072,7 +2074,7 @@ return_closcall1(data,(closure)&c_73669,  c_73679);}
 
 static void __lambda_23(void *data, int argc, object self_73456, object r_73340) {
   if( (boolean_f != r_73340) ){ 
-  return_closcall3(data,  __glo_map_scheme_base,  ((closureN)self_73456)->elements[1], __glo_ast_117ast_91_125pp_91sexp_scheme_cyclone_ast, ((closureN)self_73456)->elements[0]);
+  return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  ((closureN)self_73456)->elements[1], __glo_ast_117ast_91_125pp_91sexp_scheme_cyclone_ast, ((closureN)self_73456)->elements[0]);
 } else { 
   return_closcall1(data,  ((closureN)self_73456)->elements[1],  ((closureN)self_73456)->elements[0]);}
 ; 
@@ -2302,7 +2304,7 @@ c_73542.elements[0] = ((closureN)self_73469)->elements[0];
 c_73542.elements[1] = ((closureN)self_73469)->elements[1];
 c_73542.elements[2] = ((closureN)self_73469)->elements[2];
 
-return_closcall3(data,  __glo_map_scheme_base,  &c_73542, __glo_ast_117ast_91_125pp_91sexp_scheme_cyclone_ast, r_73306);; 
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_73542, __glo_ast_117ast_91_125pp_91sexp_scheme_cyclone_ast, r_73306);; 
 }
 
 static void __lambda_9(void *data, int argc, object self_73470, object r_73305) {

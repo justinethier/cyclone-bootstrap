@@ -170,6 +170,8 @@ extern object __glo__list_scheme_base;
 extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
+extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -706,7 +708,7 @@ return_closcall1(data,(closure)&c_73167,  &c_73213);
 static void __lambda_18(void *data, int argc, object self_7394, object r_7359) {
   
 mclosure0(c_73216, (function_type)__lambda_17);c_73216.num_args = 1;
-return_closcall3(data,  __glo_for_91each_scheme_base,  ((closureN)self_7394)->elements[0], &c_73216, car(((closureN)self_7394)->elements[1]));; 
+return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7394)->elements[0], &c_73216, car(((closureN)self_7394)->elements[1]));; 
 }
 
 static void __lambda_17(void *data, int argc, object self_7395, object k_7361, object o_7316_7322) {
@@ -900,7 +902,7 @@ return_closcall2(data,  __glo_error_91object_91irritants_scheme_base,  &c_73149,
 static void __lambda_5(void *data, int argc, object self_73107, object r_7351) {
   
 mclosure0(c_73152, (function_type)__lambda_4);c_73152.num_args = 1;
-return_closcall3(data,  __glo_for_91each_scheme_base,  ((closureN)self_73107)->elements[0], &c_73152, r_7351);; 
+return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_73107)->elements[0], &c_73152, r_7351);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_73108, object k_7352, object o_7312_7323) {

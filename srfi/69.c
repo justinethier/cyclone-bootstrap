@@ -307,6 +307,8 @@ extern object __glo__list_scheme_base;
 extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
+extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -1841,7 +1843,7 @@ c_732327.num_elements = 1;
 c_732327.elements = (object *)alloca(sizeof(object) * 1);
 c_732327.elements[0] = hash_91table_73297_73363;
 
-return_closcall3(data,  __glo_for_91each_scheme_base,  &c_732323, &c_732327, ((closureN)self_731026)->elements[0]);; 
+return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_732323, &c_732327, ((closureN)self_731026)->elements[0]);; 
 }
 
 static void __lambda_193(void *data, int argc, object self_731027, object k_73600, object elem_73299_73364) {
@@ -3126,7 +3128,7 @@ c_731926.elements[0] = index_73191_73415;
 c_731926.elements[1] = k_73723;
 c_731926.elements[2] = ((closureN)self_731095)->elements[1];
 
-return_closcall3(data,  __glo_for_91each_scheme_base,  &c_731926, ((closureN)self_731095)->elements[2], Cyc_vector_ref(data, ((closureN)self_731095)->elements[0], index_73191_73415));}
+return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_731926, ((closureN)self_731095)->elements[2], Cyc_vector_ref(data, ((closureN)self_731095)->elements[0], index_73191_73415));}
 ; 
 }
 

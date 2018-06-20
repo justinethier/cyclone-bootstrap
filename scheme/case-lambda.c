@@ -199,6 +199,8 @@ extern object __glo__list_scheme_base;
 extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
+extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -1897,7 +1899,7 @@ c_731573.elements[6] = ((closureN)self_73758)->elements[5];
 
 
 mmacro(c_731760, (function_type)__lambda_67);c_731760.num_args = 1;
-return_closcall3(data,  __glo_map_scheme_base,  &c_731573, &c_731760, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_73758)->elements[5])))));; 
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_731573, &c_731760, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_73758)->elements[5])))));; 
 }
 
 static void __lambda_67(void *data, int argc, object self_73759, object k_73551, object p_73163_73256_73375) {
@@ -2565,7 +2567,7 @@ c_731305.elements[3] = ((closureN)self_73783)->elements[2];
 
 
 mmacro(c_731451, (function_type)__lambda_42);c_731451.num_args = 1;
-return_closcall3(data,  __glo_map_scheme_base,  &c_731305, &c_731451, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_73783)->elements[2])))));; 
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_731305, &c_731451, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_73783)->elements[2])))));; 
 }
 
 static void __lambda_42(void *data, int argc, object self_73784, object k_73609, object p_73131_73234_73353) {
