@@ -284,7 +284,7 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(define_91c);
-static void __lambda_26(void *data, int argc, closure _,object k_7333) ;
+static void __lambda_26(void *data, int argc, closure _,object k_7359) ;
 static object __lambda_25(void *data, object ptr, object z) ;
 static void __lambda_24(void *data, int argc, closure _, object k, object z) ;
 static object __lambda_23(void *data, object ptr, object z) ;
@@ -303,18 +303,18 @@ static object __lambda_11(void *data, object ptr, object z) ;
 static void __lambda_10(void *data, int argc, closure _, object k, object z) ;
 static object __lambda_9(void *data, object ptr, object z) ;
 static void __lambda_8(void *data, int argc, closure _, object k, object z) ;
-static void __lambda_7(void *data, int argc, closure _,object k_7336, object z1_7319_7322, object z2_7318_7321_raw, ...) ;
-static void __lambda_6(void *data, int argc, closure _,object k_7343, object z_7317_7324) ;
-static void __lambda_5(void *data, int argc, object self_7360, object r_7344) ;
+static void __lambda_7(void *data, int argc, closure _,object k_7352, object z1_7318_7328, object z2_7319_7329_raw, ...) ;
+static void __lambda_6(void *data, int argc, closure _,object k_7348, object z_7317_7327) ;
+static void __lambda_5(void *data, int argc, object self_7362, object r_7349) ;
 static void __lambda_4(void *data, int argc, closure _, object k, object z) ;
 static void __lambda_3(void *data, int argc, closure _, object k, object z) ;
-static void __lambda_2(void *data, int argc, closure _,object k_7347, object expr_733_7327, object rename_732_7326, object compare_731_7325) ;
-static void __lambda_1(void *data, int argc, object self_7361, object r_7355) ;
-static void __lambda_0(void *data, int argc, object self_7362, object r_7358) ;
+static void __lambda_2(void *data, int argc, closure _,object k_7333, object expr_731_7321, object rename_732_7322, object compare_733_7323) ;
+static void __lambda_1(void *data, int argc, object self_7360, object r_7341) ;
+static void __lambda_0(void *data, int argc, object self_7361, object r_7344) ;
 
-static void __lambda_26(void *data, int argc, closure _,object k_7333) {
+static void __lambda_26(void *data, int argc, closure _,object k_7359) {
   Cyc_st_add(data, "scheme/inexact.sld:lib-init:schemeinexact");
-return_closcall1(data,  k_7333,  obj_int2obj(0));; 
+return_closcall1(data,  k_7359,  obj_int2obj(0));; 
 }
 
 static object __lambda_25(void *data, object ptr, object z) { return_inexact_double_or_cplx_op_no_cps(data, ptr, atan, catan, z); }
@@ -335,28 +335,28 @@ static object __lambda_11(void *data, object ptr, object z) { return_inexact_dou
 static void __lambda_10(void *data, int argc, closure _, object k, object z) { return_inexact_double_or_cplx_op(data, k, exp, cexp, z); }
 static object __lambda_9(void *data, object ptr, object z) { return_inexact_double_or_cplx_op_no_cps(data, ptr, log, clog, z); }
 static void __lambda_8(void *data, int argc, closure _, object k, object z) { return_inexact_double_or_cplx_op(data, k, log, clog, z); }
-static void __lambda_7(void *data, int argc, closure _,object k_7336, object z1_7319_7322, object z2_7318_7321_raw, ...) {
-load_varargs(z2_7318_7321, z2_7318_7321_raw, argc - 2);
+static void __lambda_7(void *data, int argc, closure _,object k_7352, object z1_7318_7328, object z2_7319_7329_raw, ...) {
+load_varargs(z2_7319_7329, z2_7319_7329_raw, argc - 2);
   Cyc_st_add(data, "scheme/inexact.sld:log");
-if( (boolean_f != Cyc_is_null(z2_7318_7321)) ){ 
+if( (boolean_f != Cyc_is_null(z2_7319_7329)) ){ 
   
 complex_num_type local_73131; object c_73132 = ((inline_function_type)
-                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73131,z1_7319_7322);
-return_closcall1(data,  k_7336,  c_73132);
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73131,z1_7318_7328);
+return_closcall1(data,  k_7352,  c_73132);
 } else { 
   
 complex_num_type local_73140; object c_73141 = ((inline_function_type)
-                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73140,z1_7319_7322);
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73140,z1_7318_7328);
 
 complex_num_type local_73144; object c_73145 = ((inline_function_type)
-                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73144,Cyc_car(data, z2_7318_7321));
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73144,Cyc_car(data, z2_7319_7329));
 
 complex_num_type local_73136; object c_73137 = Cyc_fast_div(data,&local_73136,c_73141, c_73145);
-return_closcall1(data,  k_7336,  c_73137);}
+return_closcall1(data,  k_7352,  c_73137);}
 ; 
 }
 
-static void __lambda_6(void *data, int argc, closure _,object k_7343, object z_7317_7324) {
+static void __lambda_6(void *data, int argc, closure _,object k_7348, object z_7317_7327) {
   Cyc_st_add(data, "scheme/inexact.sld:finite?");
 
 closureN_type c_73120;
@@ -367,16 +367,16 @@ c_73120.tag = closureN_tag;
 c_73120.num_args = 1;
 c_73120.num_elements = 1;
 c_73120.elements = (object *)alloca(sizeof(object) * 1);
-c_73120.elements[0] = k_7343;
+c_73120.elements[0] = k_7348;
 
-return_closcall2(data,  __glo_infinite_127_scheme_inexact,  &c_73120, z_7317_7324);; 
+return_closcall2(data,  __glo_infinite_127_scheme_inexact,  &c_73120, z_7317_7327);; 
 }
 
-static void __lambda_5(void *data, int argc, object self_7360, object r_7344) {
-  if( (boolean_f != r_7344) ){ 
-  return_closcall1(data,  ((closureN)self_7360)->elements[0],  boolean_f);
+static void __lambda_5(void *data, int argc, object self_7362, object r_7349) {
+  if( (boolean_f != r_7349) ){ 
+  return_closcall1(data,  ((closureN)self_7362)->elements[0],  boolean_f);
 } else { 
-  return_closcall1(data,  ((closureN)self_7360)->elements[0],  boolean_t);}
+  return_closcall1(data,  ((closureN)self_7362)->elements[0],  boolean_t);}
 ; 
 }
 
@@ -398,7 +398,7 @@ static void __lambda_3(void *data, int argc, closure _, object k, object z) { Cy
           return_closcall1(data, k, boolean_f);
         }
         return_closcall1(data, k, boolean_t); }
-static void __lambda_2(void *data, int argc, closure _,object k_7347, object expr_733_7327, object rename_732_7326, object compare_731_7325) {
+static void __lambda_2(void *data, int argc, closure _,object k_7333, object expr_731_7321, object rename_732_7322, object compare_733_7323) {
   Cyc_st_add(data, "scheme/inexact.sld:define-inexact-op");
 
 closureN_type c_7365;
@@ -409,8 +409,8 @@ c_7365.tag = closureN_tag;
 c_7365.num_args = 1;
 c_7365.num_elements = 2;
 c_7365.elements = (object *)alloca(sizeof(object) * 2);
-c_7365.elements[0] = expr_733_7327;
-c_7365.elements[1] = k_7347;
+c_7365.elements[0] = expr_731_7321;
+c_7365.elements[1] = k_7333;
 
 
 make_utf8_string_with_len(c_73109, " return_inexact_double_or_cplx_op(data, k, ", 43, 43);
@@ -419,11 +419,11 @@ make_utf8_string_with_len(c_73112, ", ", 2, 2);
 
 make_utf8_string_with_len(c_73115, ", z);", 5, 5);
 
-object c_73108 = Cyc_string_append(data,(closure)&c_7365,5,&c_73109, Cyc_caddr(data, expr_733_7327), &c_73112, Cyc_cadddr(data, expr_733_7327), &c_73115);
+object c_73108 = Cyc_string_append(data,(closure)&c_7365,5,&c_73109, Cyc_caddr(data, expr_731_7321), &c_73112, Cyc_cadddr(data, expr_731_7321), &c_73115);
 return_closcall1(data,(closure)&c_7365,  c_73108);; 
 }
 
-static void __lambda_1(void *data, int argc, object self_7361, object r_7355) {
+static void __lambda_1(void *data, int argc, object self_7360, object r_7341) {
   
 closureN_type c_7367;
 c_7367.hdr.mark = gc_color_red;
@@ -433,9 +433,9 @@ c_7367.tag = closureN_tag;
 c_7367.num_args = 1;
 c_7367.num_elements = 3;
 c_7367.elements = (object *)alloca(sizeof(object) * 3);
-c_7367.elements[0] = ((closureN)self_7361)->elements[0];
-c_7367.elements[1] = ((closureN)self_7361)->elements[1];
-c_7367.elements[2] = r_7355;
+c_7367.elements[0] = ((closureN)self_7360)->elements[0];
+c_7367.elements[1] = ((closureN)self_7360)->elements[1];
+c_7367.elements[2] = r_7341;
 
 
 make_utf8_string_with_len(c_7397, " return_inexact_double_or_cplx_op_no_cps(data, ptr, ", 52, 52);
@@ -444,28 +444,28 @@ make_utf8_string_with_len(c_73101, ", ", 2, 2);
 
 make_utf8_string_with_len(c_73105, ", z);", 5, 5);
 
-object c_7396 = Cyc_string_append(data,(closure)&c_7367,5,&c_7397, Cyc_caddr(data, ((closureN)self_7361)->elements[0]), &c_73101, Cyc_cadddr(data, ((closureN)self_7361)->elements[0]), &c_73105);
+object c_7396 = Cyc_string_append(data,(closure)&c_7367,5,&c_7397, Cyc_caddr(data, ((closureN)self_7360)->elements[0]), &c_73101, Cyc_cadddr(data, ((closureN)self_7360)->elements[0]), &c_73105);
 return_closcall1(data,(closure)&c_7367,  c_7396);; 
 }
 
-static void __lambda_0(void *data, int argc, object self_7362, object r_7358) {
+static void __lambda_0(void *data, int argc, object self_7361, object r_7344) {
   
 make_utf8_string_with_len(c_7382, "(void *data, int argc, closure _, object k, object z)", 53, 53);
 
 make_utf8_string_with_len(c_7390, "(void *data, object ptr, object z)", 34, 34);
 
-make_pair(c_7393,r_7358, NULL);
+make_pair(c_7393,r_7344, NULL);
 
 make_pair(c_7389,&c_7390, &c_7393);
 
-make_pair(c_7385,((closureN)self_7362)->elements[2], &c_7389);
+make_pair(c_7385,((closureN)self_7361)->elements[2], &c_7389);
 
 make_pair(c_7381,&c_7382, &c_7385);
 
-make_pair(c_7375,Cyc_cadr(data, ((closureN)self_7362)->elements[0]), &c_7381);
+make_pair(c_7375,Cyc_cadr(data, ((closureN)self_7361)->elements[0]), &c_7381);
 
 make_pair(c_7372,quote_define_91c, &c_7375);
-return_closcall1(data,  ((closureN)self_7362)->elements[1],  &c_7372);; 
+return_closcall1(data,  ((closureN)self_7361)->elements[1],  &c_7372);; 
 }
 
 void c_schemeinexact_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
@@ -478,16 +478,16 @@ make_pair(pair_73173, find_or_add_symbol("sin"), find_or_add_symbol("sin__inline
 make_pair(pair_73174, find_or_add_symbol("sqrt"), find_or_add_symbol("sqrt__inline__"));
 make_pair(pair_73175, find_or_add_symbol("exp"), find_or_add_symbol("exp__inline__"));
 make_pair(pair_73176, find_or_add_symbol("c-log"), find_or_add_symbol("c-log__inline__"));
-make_pair(c_73177, &pair_73168, NULL);
-make_pair(c_73178, &pair_73169, &c_73177);
-make_pair(c_73179, &pair_73170, &c_73178);
-make_pair(c_73180, &pair_73171, &c_73179);
-make_pair(c_73181, &pair_73172, &c_73180);
-make_pair(c_73182, &pair_73173, &c_73181);
-make_pair(c_73183, &pair_73174, &c_73182);
-make_pair(c_73184, &pair_73175, &c_73183);
-make_pair(c_73185, &pair_73176, &c_73184);
-(((closure)cont)->fn)(data, 1, cont, &c_73185);
+make_pair(c_73185, &pair_73168, NULL);
+make_pair(c_73184, &pair_73169, &c_73185);
+make_pair(c_73183, &pair_73170, &c_73184);
+make_pair(c_73182, &pair_73171, &c_73183);
+make_pair(c_73181, &pair_73172, &c_73182);
+make_pair(c_73180, &pair_73173, &c_73181);
+make_pair(c_73179, &pair_73174, &c_73180);
+make_pair(c_73178, &pair_73175, &c_73179);
+make_pair(c_73177, &pair_73176, &c_73178);
+(((closure)cont)->fn)(data, 1, cont, &c_73177);
  } 
 void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
@@ -592,32 +592,32 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_73230, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73231, find_or_add_symbol("infinite?"), &cvar_73230);
   make_cvar(cvar_73232, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73233, find_or_add_symbol("nan?"), &cvar_73232);
   make_cvar(cvar_73234, (object *)&__glo_define_91inexact_91op_scheme_inexact);make_pair(pair_73235, find_or_add_symbol("define-inexact-op"), &cvar_73234);
-make_pair(c_73236, &pair_73186,Cyc_global_variables);
-make_pair(c_73237, &pair_73189, &c_73236);
-make_pair(c_73238, &pair_73191, &c_73237);
-make_pair(c_73239, &pair_73193, &c_73238);
-make_pair(c_73240, &pair_73195, &c_73239);
-make_pair(c_73241, &pair_73197, &c_73240);
-make_pair(c_73242, &pair_73199, &c_73241);
-make_pair(c_73243, &pair_73201, &c_73242);
-make_pair(c_73244, &pair_73203, &c_73243);
-make_pair(c_73245, &pair_73205, &c_73244);
-make_pair(c_73246, &pair_73207, &c_73245);
-make_pair(c_73247, &pair_73209, &c_73246);
-make_pair(c_73248, &pair_73211, &c_73247);
-make_pair(c_73249, &pair_73213, &c_73248);
-make_pair(c_73250, &pair_73215, &c_73249);
-make_pair(c_73251, &pair_73217, &c_73250);
-make_pair(c_73252, &pair_73219, &c_73251);
-make_pair(c_73253, &pair_73221, &c_73252);
-make_pair(c_73254, &pair_73223, &c_73253);
-make_pair(c_73255, &pair_73225, &c_73254);
-make_pair(c_73256, &pair_73227, &c_73255);
-make_pair(c_73257, &pair_73229, &c_73256);
-make_pair(c_73258, &pair_73231, &c_73257);
-make_pair(c_73259, &pair_73233, &c_73258);
-make_pair(c_73260, &pair_73235, &c_73259);
-Cyc_global_variables = &c_73260;
+make_pair(c_73260, &pair_73186,Cyc_global_variables);
+make_pair(c_73259, &pair_73189, &c_73260);
+make_pair(c_73258, &pair_73191, &c_73259);
+make_pair(c_73257, &pair_73193, &c_73258);
+make_pair(c_73256, &pair_73195, &c_73257);
+make_pair(c_73255, &pair_73197, &c_73256);
+make_pair(c_73254, &pair_73199, &c_73255);
+make_pair(c_73253, &pair_73201, &c_73254);
+make_pair(c_73252, &pair_73203, &c_73253);
+make_pair(c_73251, &pair_73205, &c_73252);
+make_pair(c_73250, &pair_73207, &c_73251);
+make_pair(c_73249, &pair_73209, &c_73250);
+make_pair(c_73248, &pair_73211, &c_73249);
+make_pair(c_73247, &pair_73213, &c_73248);
+make_pair(c_73246, &pair_73215, &c_73247);
+make_pair(c_73245, &pair_73217, &c_73246);
+make_pair(c_73244, &pair_73219, &c_73245);
+make_pair(c_73243, &pair_73221, &c_73244);
+make_pair(c_73242, &pair_73223, &c_73243);
+make_pair(c_73241, &pair_73225, &c_73242);
+make_pair(c_73240, &pair_73227, &c_73241);
+make_pair(c_73239, &pair_73229, &c_73240);
+make_pair(c_73238, &pair_73231, &c_73239);
+make_pair(c_73237, &pair_73233, &c_73238);
+make_pair(c_73236, &pair_73235, &c_73237);
+Cyc_global_variables = &c_73236;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }

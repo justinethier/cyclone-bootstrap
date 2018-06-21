@@ -403,9 +403,9 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   mclosure0(clo_738, c_schemecyclonemacros_inlinable_lambdas); make_pair(pair_737, find_or_add_symbol("c_schemecyclonemacros_inlinable_lambdas"), &clo_738);
   make_cvar(cvar_739, (object *)&__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);make_pair(pair_7310, find_or_add_symbol("lib-init:schemecyclonemacros"), &cvar_739);
-make_pair(c_7311, &pair_737,Cyc_global_variables);
-make_pair(c_7312, &pair_7310, &c_7311);
-Cyc_global_variables = &c_7312;
+make_pair(c_7312, &pair_737,Cyc_global_variables);
+make_pair(c_7311, &pair_7310, &c_7312);
+Cyc_global_variables = &c_7311;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros)->fn)(data, 1, cont, cont);
 }

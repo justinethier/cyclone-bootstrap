@@ -327,12 +327,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_7313, (object *)&__glo_jiffies_91per_91second_scheme_time);make_pair(pair_7314, find_or_add_symbol("jiffies-per-second"), &cvar_7313);
   make_cvar(cvar_7315, (object *)&__glo_current_91jiffy_scheme_time);make_pair(pair_7316, find_or_add_symbol("current-jiffy"), &cvar_7315);
   make_cvar(cvar_7317, (object *)&__glo_current_91second_scheme_time);make_pair(pair_7318, find_or_add_symbol("current-second"), &cvar_7317);
-make_pair(c_7319, &pair_739,Cyc_global_variables);
-make_pair(c_7320, &pair_7312, &c_7319);
-make_pair(c_7321, &pair_7314, &c_7320);
-make_pair(c_7322, &pair_7316, &c_7321);
-make_pair(c_7323, &pair_7318, &c_7322);
-Cyc_global_variables = &c_7323;
+make_pair(c_7323, &pair_739,Cyc_global_variables);
+make_pair(c_7322, &pair_7312, &c_7323);
+make_pair(c_7321, &pair_7314, &c_7322);
+make_pair(c_7320, &pair_7316, &c_7321);
+make_pair(c_7319, &pair_7318, &c_7320);
+Cyc_global_variables = &c_7319;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);
 }
