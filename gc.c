@@ -386,6 +386,7 @@ gc_heap *gc_heap_create(int heap_type, size_t size, size_t max_size,
     h->remaining = size - (size % h->block_size);
     h->data_end = h->data + h->remaining;
     h->free_list = NULL; // No free lists with bump&pop
+// This is for starting with a free list, but we want bump&pop instead
 //    h->remaining = 0;
 //    h->data_end = NULL;
 //    gc_init_fixed_size_free_list(h);
@@ -444,7 +445,7 @@ void gc_print_fixed_size_free_list(gc_heap *h)
  * @brief Essentially this is half of the sweep code, for sweeping bump&pop
  * @param h Heap page to convert
  */
-size_t gc_convert_heap_page_to_free_list(gc_heap *h) 
+size_t gc_convert_heap_page_to_free_list(gc_heap *h, gc_thread_data *thd) 
 {
   size_t freed = 0;
   object p;
@@ -459,8 +460,8 @@ size_t gc_convert_heap_page_to_free_list(gc_heap *h)
     int color = mark(p);
 //    printf("found object %d color %d at %p with remaining=%lu\n", tag, color, p, remaining);
     // free space, add it to the free list
-// TODO: no good anymore, need to check for purple instead (see gc_sweep)
-    if (color == gc_color_clear) {
+    if (color != thd->gc_alloc_color &&
+        color != thd->gc_trace_color) { //gc_color_clear) 
       // Run any finalizers
       if (type_of(p) == mutex_tag) {
 #if GC_DEBUG_VERBOSE
@@ -527,8 +528,6 @@ size_t gc_convert_heap_page_to_free_list(gc_heap *h)
  * @brief Sweep portion of the GC algorithm
  * @param h           Heap to sweep
  * @param heap_type   Type of heap, based on object sizes allocated on it
- * @param sum_freed_ptr Out parameter tracking the sum of freed data, in bytes.
- *                      This parameter is ignored if NULL is passed.
  * @param thd           Thread data object for the mutator using this heap
  * @return Return the size of the largest object freed, in bytes
  *
@@ -536,17 +535,18 @@ size_t gc_convert_heap_page_to_free_list(gc_heap *h)
  * memory slots to the heap. It is only called by the collector thread after
  * the heap has been traced to identify live objects.
  */
-void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_thread_data *thd)
+gc_heap *gc_sweep_fixed_size(gc_heap * h, int heap_type, gc_thread_data *thd)
 {
 // TODO: all of this needs to be reworked, see gc_sweep
-  size_t heap_freed = 0, sum_freed = 0;
+  //size_t heap_freed = 0, sum_freed = 0;
   short heap_is_empty;
   object p;
   gc_free_list *q, *r, *s;
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   gc_heap *orig_heap_ptr = h;
 #endif
-  gc_heap *prev_h = NULL;
+  //gc_heap *prev_h = NULL;
+  gc_heap *rv = h;
 
   h->next_free = h;
 
@@ -555,11 +555,11 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
   fprintf(stderr, "Heap %d diagnostics:\n", heap_type);
   gc_print_stats(orig_heap_ptr);
 #endif
-  for (; h; prev_h = h, h = h->next) {      // All heaps
+  //for (; h; prev_h = h, h = h->next) {      // All heaps
 
     if (h->data_end != NULL) {
       // Special case, bump&pop heap
-      heap_freed = gc_convert_heap_page_to_free_list(h);
+      gc_convert_heap_page_to_free_list(h, thd);
       heap_is_empty = 0; // For now, don't try to free bump&pop
     } else {
       //gc_free_list *next;
@@ -576,25 +576,18 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
           remaining -= h->block_size;
           continue;
         }
-//  #if GC_SAFETY_CHECKS
+  #if GC_SAFETY_CHECKS
         if (!is_object_type(p)) {
           fprintf(stderr, "sweep: invalid object at %p", p);
           exit(1);
         }
-        if (type_of(p) > 20) {
+        if (type_of(p) > 21) {
           fprintf(stderr, "sweep: invalid object tag %d at %p", type_of(p), p);
           exit(1);
         }
-  //      if ((char *)q + h->block_size > (char *)p) {
-  //        fprintf(stderr, "bad size at %p < %p + %u", p, q, h->block_size);
-  //        exit(1);
-  //      }
-  //      if (r && ((char *)p) + size > (char *)r) {
-  //        fprintf(stderr, "sweep: bad size at %p + %zu > %p", p, size, r);
-  //        exit(1);
-  //      }
-//  #endif
-        if (mark(p) == gc_color_clear) {
+  #endif
+        if (mark(p) != thd->gc_alloc_color && 
+            mark(p) != thd->gc_trace_color) { //gc_color_clear) 
   #if GC_DEBUG_VERBOSE
           fprintf(stderr, "sweep is freeing unmarked obj: %p with tag %d\n", p,
                   type_of(p));
@@ -626,7 +619,7 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
           }
 
           // free p
-          heap_freed += h->block_size;
+          //heap_freed += h->block_size;
           if (h->free_list == NULL) {
             // No free list, start one at p
             q = h->free_list = p;
@@ -647,7 +640,7 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
             q->next = s;
             //printf("sweep reclaimed remaining=%d, %p, q=%p, r=%p\n", remaining, p, q, r);
           }
-
+          h->free_size += h->block_size;
         } else {
           //printf("sweep block is still used remaining=%d p = %p\n", remaining, p);
         }
@@ -658,7 +651,7 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
       }
     }
 
-    ck_pr_add_ptr(&(thd->cached_heap_free_sizes[heap_type]), heap_freed);
+//    ck_pr_add_ptr(&(thd->cached_heap_free_sizes[heap_type]), heap_freed);
     // Free the heap page if possible.
     //
     // With huge heaps, this becomes more important. one of the huge
@@ -678,18 +671,22 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
 //  printf("heap %d %p is empty\n", h->type, h);
 //}
 
-    if (heap_is_empty && !(h->ttl--)) {
-        unsigned int h_size = h->size;
-        gc_heap *new_h = gc_heap_free(h, prev_h);
-        if (new_h) { // Ensure free succeeded
-          h = new_h;
-          ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type] ), h_size);
-          thd->cached_heap_total_sizes[heap_type] -= h_size;
-        }
+    if (heap_is_empty && 
+          (h->type == HEAP_HUGE || (h->ttl--) <= 0)) {
+      rv = NULL; // Let caller know heap needs to be freed
     }
-    sum_freed += heap_freed;
-    heap_freed = 0;
-  }
+//    if (heap_is_empty && !(h->ttl--)) {
+//        unsigned int h_size = h->size;
+//        gc_heap *new_h = gc_heap_free(h, prev_h);
+//        if (new_h) { // Ensure free succeeded
+//          h = new_h;
+//          ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type] ), h_size);
+//          thd->cached_heap_total_sizes[heap_type] -= h_size;
+//        }
+//    }
+//    sum_freed += heap_freed;
+//    heap_freed = 0;
+//  }
 
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   fprintf(stderr, "\nAfter sweep -------------------------\n");
@@ -697,8 +694,9 @@ void gc_sweep_fixed_size(gc_heap * h, int heap_type, size_t * sum_freed_ptr, gc_
   gc_print_stats(orig_heap_ptr);
 #endif
 
-  if (sum_freed_ptr)
-    *sum_freed_ptr = sum_freed;
+//  if (sum_freed_ptr)
+//    *sum_freed_ptr = sum_freed;
+  return rv;
 }
 
 gc_heap *gc_find_heap_with_chunk_size(gc_heap *h, size_t chunk_size) 
@@ -741,7 +739,13 @@ gc_heap *gc_heap_free(gc_heap *page, gc_heap *prev_page)
 int gc_is_heap_empty(gc_heap *h) 
 {
   gc_free_list *f;
-  if (!h || !h->free_list) return 0;
+  if (!h) return 0;
+
+  if (h->data_end) { // Bump&pop
+    return (h->remaining == (h->size - (h->size % h->block_size)));
+  }
+
+  if (!h->free_list) return 0;
 
   f = h->free_list;
   if (f->size != 0 || !f->next) return 0;
@@ -1221,13 +1225,64 @@ void *gc_try_alloc_fixed_size(gc_heap * h, int heap_type, size_t size, char *obj
       }
       #endif
       gc_copy_obj(result, obj, thd);
-      ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type]), size);
+      //ck_pr_sub_ptr(&(thd->cached_heap_free_sizes[heap_type]), size);
 
       h_passed->next_free = h;
+      h->free_size -= size;
       return result;
     }
   }
   return NULL;
+}
+
+void *gc_try_alloc_slow_fixed_size(gc_heap *h_passed, gc_heap *h, int heap_type, size_t size, char *obj, gc_thread_data *thd)
+{
+  gc_heap *h_start = h, *h_prev;
+  void *result = NULL;
+  // Find next heap
+  while (result == NULL) {
+    h_prev = h;
+    h = h->next;
+    if (h == NULL) {
+      // Wrap around to the first heap block
+      h_prev = NULL;
+      h = h_passed;
+    }
+    if (h == h_start) {
+      // Tried all and no heap exists with free space
+      break;
+    }
+    // check allocation status to make sure we can use it
+    if (h->is_full) {
+      continue; // Cannot sweep until next GC cycle
+    } else if (h->cached_free_size_status == 1 && !gc_is_heap_empty(h)) {
+      unsigned int h_size = h->size;
+      gc_heap *keep = gc_sweep_fixed_size(h, heap_type, thd); // Clean up garbage objects
+      if (!keep) {
+        // Heap marked for deletion, remove it and keep searching
+        gc_heap *freed = gc_heap_free(h, h_prev);
+        if (freed) {
+          if (h_prev) {
+            h = h_prev;
+          } else {
+            h = h_passed;
+          }
+          //thd->cached_heap_free_sizes[heap_type] -= prev_free_size;
+          thd->cached_heap_total_sizes[heap_type] -= h_size;
+          continue;
+        }
+      }
+    }
+    result = gc_try_alloc_fixed_size(h, heap_type, size, obj, thd);
+    if (result) {
+      h_passed->next_free = h;
+      h_passed->last_alloc_size = size;
+    } else {
+      // TODO: else, assign heap full? YES for fixed-size, for REST maybe not??
+      h->is_full = 1;
+    }
+  }
+  return result;
 }
 
 /**
@@ -1286,34 +1341,42 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
   gc_heap *h_passed, *h = NULL;
   int heap_type;
   void *(*try_alloc)(gc_heap * h, int heap_type, size_t size, char *obj, gc_thread_data * thd);
-  // TODO: check return value, if null (could not alloc) then 
-  // run a collection and check how much free space there is. if less
-  // the allowed ratio, try growing heap.
-  // then try realloc. if cannot alloc now, then throw out of memory error
+  void *(*try_alloc_slow)(gc_heap *h_passed, gc_heap *h, int heap_type, size_t size, char *obj, gc_thread_data *thd);
   size = gc_heap_align(size);
   if (size <= 32) {
     heap_type = HEAP_SM;
-    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
+    //try_alloc = &gc_try_alloc;
+    //try_alloc_slow = &gc_try_alloc_slow;
+    // TODO:
+    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc_slow = &gc_try_alloc_slow_fixed_size;
   } else if (size <= 64) {
     heap_type = HEAP_64;
-    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
+    //try_alloc = &gc_try_alloc;
+    //try_alloc_slow = &gc_try_alloc_slow;
+    // TODO:
+    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc_slow = &gc_try_alloc_slow_fixed_size;
 // Only use this heap on 64-bit platforms, where larger objs are used more often
 // Code from http://stackoverflow.com/a/32717129/101258
 #if INTPTR_MAX == INT64_MAX
   } else if (size <= 96) {
     heap_type = HEAP_96;
-    try_alloc = &gc_try_alloc; // TODO: disabled for now: &gc_try_alloc_fixed_size;
+    //try_alloc = &gc_try_alloc;
+    //try_alloc_slow = &gc_try_alloc_slow;
+    // TODO:
+    try_alloc = &gc_try_alloc_fixed_size;
+    try_alloc_slow = &gc_try_alloc_slow_fixed_size;
 #endif
   } else if (size >= MAX_STACK_OBJ) {
     heap_type = HEAP_HUGE;
     try_alloc = &gc_try_alloc;
+    try_alloc_slow = &gc_try_alloc_slow;
   } else {
     heap_type = HEAP_REST;
     try_alloc = &gc_try_alloc;
+    try_alloc_slow = &gc_try_alloc_slow;
   }
-//TODO: convert fixed-size heap code and use that here. BUT, create a version of gc_alloc (maybe using macros?)
-//that accepts heap type as an arg and can assume free lists. we can modify gc_move to use the proper new
-//version of gc_alloc (just ifdef if need be for 32 vs 64 bit. this might speed things up a bit
   h = hrt->heap[heap_type];
   h_passed = h;
   // Start searching from the last heap page we had a successful
@@ -1331,7 +1394,7 @@ void *gc_alloc(gc_heap_root * hrt, size_t size, char *obj, gc_thread_data * thd,
   } else {
     // Slow path, find another heap block
     h->is_full = 1;
-    result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
+    result = try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
 #if GC_DEBUG_VERBOSE
 fprintf(stderr, "slow alloc of %p\n", result);
 #endif
@@ -1347,11 +1410,10 @@ fprintf(stderr, "slow alloc of %p\n", result);
       /* of which are asynchronous. So... no choice but to grow the heap. */
       gc_grow_heap(h, heap_type, size, 0, thd);
       *heap_grown = 1;
-      //result = (*try_alloc)(h, heap_type, size, obj, thd);
   // TODO: would be nice if gc_grow_heap returns new page (maybe it does) then we can start from there
   // otherwise will be a bit of a bottleneck since with lazy sweeping there is no guarantee we are at 
   // the end of the heap anymore
-      result = gc_try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
+      result = try_alloc_slow(h_passed, h, heap_type, size, obj, thd);
 #if GC_DEBUG_VERBOSE
 fprintf(stderr, "slowest alloc of %p\n", result);
 #endif
@@ -1473,69 +1535,11 @@ void gc_collector_sweep()
 {
   ck_array_iterator_t iterator;
   gc_thread_data *m;
-//#if GC_DEBUG_TRACE
-//  size_t total_size;
-//  size_t total_free;
-//  time_t gc_collector_start = time(NULL);
-//#endif
-
   CK_ARRAY_FOREACH(&Cyc_mutators, &iterator, &m) {
-
-// TODO: what to update in each heap? probably want to reset back to first heap in each mutator
-// may also need to set other things, clear color?
-
-//    for (heap_type = 0; heap_type < NUM_HEAP_TYPES; heap_type++) {
-//      h = m->heap->heap[heap_type];
-//      if (h) {
-////        if (heap_type <= LAST_FIXED_SIZE_HEAP_TYPE) {
-////          gc_sweep_fixed_size(h, heap_type, &freed_tmp, m);
-////          freed += freed_tmp;
-////        } else {
-////          gc_sweep(h, heap_type, &freed_tmp, m);
-////          freed += freed_tmp;
-////        }
-//      }
-//    }
-//
-//    // TODO: this loop only includes smallest 2 heaps, is that sufficient??
-//    for (heap_type = 0; heap_type < 2; heap_type++) {
-//      while ( ck_pr_load_ptr(&(m->cached_heap_free_sizes[heap_type])) <
-//             (ck_pr_load_ptr(&(m->cached_heap_total_sizes[heap_type])) * GC_FREE_THRESHOLD)) {
-//#if GC_DEBUG_TRACE
-//        fprintf(stderr, "Less than %f%% of the heap %d is free, growing it\n",
-//                100.0 * GC_FREE_THRESHOLD, heap_type);
-//#endif
-//        if (heap_type == HEAP_SM) {
-//          gc_grow_heap(m->heap->heap[heap_type], heap_type, 0, 0, m);
-//        } else if (heap_type == HEAP_64) {
-//          gc_grow_heap(m->heap->heap[heap_type], heap_type, 0, 0, m);
-//        } else if (heap_type == HEAP_REST) {
-//          gc_grow_heap(m->heap->heap[heap_type], heap_type, 0, 0, m);
-//        }
-//      }
-//    }
     // Tracing is done, remove the trace color
     m->gc_trace_color = m->gc_alloc_color;
     // Let mutator know we are done tracing
     ck_pr_cas_8(&(m->gc_done_tracing), 0, 1);
-//#if GC_DEBUG_TRACE
-//    total_size = ck_pr_load_ptr(&(m->cached_heap_total_sizes[HEAP_SM])) +
-//                 ck_pr_load_ptr(&(m->cached_heap_total_sizes[HEAP_64])) + 
-//#if INTPTR_MAX == INT64_MAX
-//                 ck_pr_load_ptr(&(m->cached_heap_total_sizes[HEAP_96])) + 
-//#endif
-//                 ck_pr_load_ptr(&(m->cached_heap_total_sizes[HEAP_REST]));
-//    total_free = ck_pr_load_ptr(&(m->cached_heap_free_sizes[HEAP_SM])) +
-//                 ck_pr_load_ptr(&(m->cached_heap_free_sizes[HEAP_64])) + 
-//#if INTPTR_MAX == INT64_MAX
-//                 ck_pr_load_ptr(&(m->cached_heap_free_sizes[HEAP_96])) + 
-//#endif
-//                 ck_pr_load_ptr(&(m->cached_heap_free_sizes[HEAP_REST]));
-//    fprintf(stderr,
-//            "sweep done, total_size = %zu, total_free = %zu, freed = %zu, elapsed = %ld\n",
-//            total_size, total_free, freed,
-//            (time(NULL) - gc_collector_start));
-//#endif
   }
 #if GC_DEBUG_TRACE
   fprintf(stderr, "all thread heap sweeps done\n");
