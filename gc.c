@@ -537,8 +537,6 @@ size_t gc_convert_heap_page_to_free_list(gc_heap *h, gc_thread_data *thd)
  */
 gc_heap *gc_sweep_fixed_size(gc_heap * h, int heap_type, gc_thread_data *thd)
 {
-// TODO: all of this needs to be reworked, see gc_sweep
-  //size_t heap_freed = 0, sum_freed = 0;
   short heap_is_empty;
   object p;
   gc_free_list *q, *r, *s;
@@ -1363,7 +1361,8 @@ fprintf(stderr, "slow alloc of %p\n", result);
 #endif
     if (result) {
       // Check if we need to start a major collection
-      if (heap_type != HEAP_HUGE && gc_num_unswept_heaps(h_passed) < 2) {
+      if (heap_type != HEAP_HUGE && gc_num_unswept_heaps(h_passed) < 
+                                    GC_COLLECT_UNDER_UNSWEPT_HEAP_COUNT) {
         gc_start_major_collection(thd);
       }
     } else {
