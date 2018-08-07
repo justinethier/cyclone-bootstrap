@@ -7,13 +7,13 @@
  *
  * Heap garbage collector used by the Cyclone runtime for major collections.
  *
- * Tracing GC algorithm is based on the one from "Implementing an on-the-fly 
- * garbage collector for Java", by Domani et al.
+ * Concurrent Mark-Sweep GC algorithm is based on the one from 
+ * "Implementing an on-the-fly * garbage collector for Java", by Domani et al.
  *
- * The heap implementation (alloc / sweep, etc) is based on code from Chibi Scheme.
+ * Data structures for the heap implementation are based on code from Chibi Scheme.
  *
  * Note there is also a minor GC (in runtime.c) that collects objects allocated 
- * on the stack, based on "Cheney on the MTA" (but without the copying collector). 
+ * on the stack, based on "Cheney on the MTA".
  */
 
 #include <ck_array.h>
@@ -541,7 +541,7 @@ size_t gc_convert_heap_page_to_free_list(gc_heap *h, gc_thread_data *thd)
 gc_heap *gc_sweep_fixed_size(gc_heap * h, int heap_type, gc_thread_data *thd)
 {
   short heap_is_empty;
-  object p;
+  object p, end;
   gc_free_list *q, *r, *s;
 #if GC_DEBUG_SHOW_SWEEP_DIAG
   gc_heap *orig_heap_ptr = h;
@@ -567,14 +567,15 @@ gc_heap *gc_sweep_fixed_size(gc_heap * h, int heap_type, gc_thread_data *thd)
     size_t remaining = h->size - (h->size % h->block_size); // - h->block_size; // Remove first one??
     char *data_end = h->data + remaining;
     heap_is_empty = 1; // Base case is an empty heap
+    end = (object)data_end;
+    p = h->data;
     q = h->free_list;
-    while (remaining) {
-      p = data_end - remaining;
+    while (p < end) {
       // find preceding/succeeding free list pointers for p
       for (r = (q?q->next:NULL); r && ((char *)r < (char *)p); q = r, r = r->next) ;
       if ((char *)q == (char *)p || (char *)r == (char *)p) {     // this is a free block, skip it
         //printf("Sweep skip free block %p remaining=%lu\n", p, remaining);
-        remaining -= h->block_size;
+        p = (object) (((char *)p) + h->block_size);
         continue;
       }
 #if GC_SAFETY_CHECKS
@@ -648,7 +649,7 @@ gc_heap *gc_sweep_fixed_size(gc_heap * h, int heap_type, gc_thread_data *thd)
       }
       //next->next = (gc_free_list *)(((char *) next) + h->block_size);
       //next = next->next;
-      remaining -= h->block_size;
+      p = (object) (((char *)p) + h->block_size);
     }
   }
   // Free the heap page if possible.
@@ -2444,7 +2445,9 @@ void gc_wait_handshake()
               ) {
 //printf("DEBUG - update mutator GC status\n");            
             ck_pr_cas_int(&(m->gc_status), statusm, statusc);
-//printf("DEBUG - collector is cooperating for blocked mutator\n");            
+            #if GC_DEBUG_TRACE
+            fprintf(stderr, "DEBUG - collector is cooperating for blocked mutator\n");            
+            #endif
             buf_len =
                 gc_minor(m, m->stack_limit, m->stack_start, m->gc_cont, NULL,
                          0);
@@ -2816,18 +2819,26 @@ void gc_mutator_thread_blocked(gc_thread_data * thd, object cont)
 
 void Cyc_apply_from_buf(void *data, int argc, object prim, object * buf);
 
+/**
+ * @brief While a mutator has declared itself blocked, it is possible
+ *        that an object on its stack may be copied to the heap by
+ *        the collector. The purpose of this function is to copy
+ *        such an object again to ensure all fields are updated
+ *        to their latest values.
+ * @param obj   Object to copy
+ * @param thd   Thread data object for the applicable mutator
+ */
 void gc_recopy_obj(object obj, gc_thread_data *thd) 
 {
   // Temporarily change obj type so we can copy it
   object fwd = forward(obj);
   tag_type tag = type_of(fwd);
   type_of(obj) = tag;
-
-fprintf(stderr, "\n!!! Recopying object %p with tag %d !!!\n\n", obj, tag);
-  // Copy it again
-  gc_copy_obj(fwd, obj, thd);
-  // Restore forwarding pointer tag
-  type_of(obj) = forward_tag;
+  #if GC_DEBUG_TRACE
+  fprintf(stderr, "\n!!! Recopying object %p with tag %d !!!\n\n", obj, tag);
+  #endif
+  gc_copy_obj(fwd, obj, thd); // Copy it again
+  type_of(obj) = forward_tag; // Restore forwarding pointer tag on stack obj
 }
 
 /**

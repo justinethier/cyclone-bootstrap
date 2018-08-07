@@ -134,7 +134,7 @@
 
 (define (parse fp)
   (let ((token (read-token fp)))
-    ;(write `(token ,token))
+    ;;(display "//")(write `(token ,token)) (newline)
     (cond
       ((Cyc-opaque? token)
        (cond
