@@ -104,7 +104,8 @@
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
       (%adb:make-var 
-        global defined-by 
+        global 
+        defined-by 
         defines-lambda-id
         const const-value  
         ref-count ref-by
@@ -137,7 +138,7 @@
       ;; Can a ref be safely inlined?
       (inlinable adbv:inlinable adbv:set-inlinable!)
       ;; Is the variable mutated indirectly? (EG: set-car! of a cdr)
-      (mutated-indirectly adbv:mutated-indirectly? adbv:set-mutated-indirectly!)
+      (mutated-indirectly adbv:mutated-indirectly adbv:set-mutated-indirectly!)
       (cont adbv:cont? adbv:set-cont!)
       ;; Following two indicate if a variable is defined/referenced in a loop
       (def-in-loop adbv:def-in-loop? adbv:set-def-in-loop!)
@@ -187,7 +188,7 @@
         0   ; app-fnc-count 
         0   ; app-arg-count
         #t  ; inlinable 
-        #f  ; mutated-indirectly
+        '() ; mutated-indirectly
         #f  ; cont
         #f  ; def-in-loop
         #f  ; ref-in-loop
@@ -451,8 +452,8 @@
 
 ;; TODO: check app for const/const-value, also (for now) reset them
 ;; if the variable is modified via set/define
-    (define (analyze exp lid)
-;(trace:error `(analyze ,lid ,exp ,(app? exp)))
+    (define (analyze exp scope-sym lid)
+;(trace:error `(analyze ,scope-sym ,lid ,exp ,(app? exp)))
       (cond
         ; Core forms:
         ((ast:lambda? exp)
@@ -472,7 +473,7 @@
             (ast:lambda-formals->list exp))
            (for-each
              (lambda (expr)
-               (analyze expr id))
+               (analyze expr scope-sym id))
              (ast:lambda-body exp))))
         ((const? exp) #f)
         ((quote? exp) #f)
@@ -490,7 +491,7 @@
            (adbv-set-assigned-value-helper! (define->var exp) var (define->exp exp))
            (adbv:set-const! var #f)
            (adbv:set-const-value! var #f)))
-         (analyze (define->exp exp) lid))
+         (analyze (define->exp exp) (define->var exp) lid))
         ((set!? exp)
          ;(let ((var (adb:get/default (set!->var exp) (adb:make-var))))
          (with-var! (set!->var exp) (lambda (var)
@@ -501,10 +502,10 @@
            (adbv:set-ref-by! var (cons lid (adbv:ref-by var)))
            (adbv:set-const! var #f)
            (adbv:set-const-value! var #f)))
-         (analyze (set!->exp exp) lid))
-        ((if? exp)       `(if ,(analyze (if->condition exp) lid)
-                              ,(analyze (if->then exp) lid)
-                              ,(analyze (if->else exp) lid)))
+         (analyze (set!->exp exp) scope-sym lid))
+        ((if? exp)       `(if ,(analyze (if->condition exp) scope-sym lid)
+                              ,(analyze (if->then exp) scope-sym lid)
+                              ,(analyze (if->else exp) scope-sym lid)))
         
         ; Application:
         ((app? exp)
@@ -528,7 +529,7 @@
                 (if (adbv:assigned-value var)
                     (set! e (adbv:assigned-value var))))))
            ;(trace:error `(find-indirect-mutations ,e))
-           (find-indirect-mutations e))))
+           (find-indirect-mutations e scope-sym))))
 
          ;; TODO: if ast-lambda (car),
          ;; for each arg
@@ -554,7 +555,7 @@
               (app->args exp)))))
          (for-each
            (lambda (e)
-             (analyze e lid))
+             (analyze e scope-sym lid))
            exp))
 ;TODO         ((app? exp)      (map (lambda (e) (wrap-mutables e globals)) exp))
 
@@ -601,7 +602,7 @@
          (for-each (lambda (e) (analyze2 e)) exp))
         (else #f)))
 
-    (define (find-indirect-mutations exp)
+    (define (find-indirect-mutations exp scope-sym)
       (cond
         ; Core forms:
         ;((ast:lambda? exp)
@@ -616,19 +617,24 @@
         ((quote? exp) #f)
         ((ref? exp)
          (with-var! exp (lambda (var)
-           (adbv:set-mutated-indirectly! var #t))))
+           (adbv:set-mutated-indirectly! 
+             var 
+             (cons scope-sym (adbv:mutated-indirectly var))))))
         ;((define? exp)
         ; ;(let ((var (adb:get/default (define->var exp) (adb:make-var))))
         ;   (analyze2 (define->exp exp)))
         ;((set!? exp)
         ; ;(let ((var (adb:get/default (set!->var exp) (adb:make-var))))
         ;   (analyze2 (set!->exp exp)))
-        ((if? exp)       `(if ,(find-indirect-mutations (if->condition exp))
-                              ,(find-indirect-mutations (if->then exp))
-                              ,(find-indirect-mutations (if->else exp))))
+        ((if? exp)       `(if ,(find-indirect-mutations (if->condition exp) scope-sym)
+                              ,(find-indirect-mutations (if->then exp) scope-sym)
+                              ,(find-indirect-mutations (if->else exp) scope-sym)))
         ; Application:
         ((app? exp)
-         (for-each find-indirect-mutations (cdr exp)))
+         (for-each
+           (lambda (e)
+             (find-indirect-mutations e scope-sym))
+           (cdr exp)))
         (else #f)))
 
     ;; TODO: make another pass for simple lambda's
@@ -784,42 +790,42 @@
     ;; Uses analysis DB, so must be executed after analysis phase
     ;;
     ;; TBD: better to enhance CPS conversion to do this??
-    (define (opt:inline-prims exp . refs*)
+    (define (opt:inline-prims exp scope-sym . refs*)
       (let ((refs (if (null? refs*)
                       (make-hash-table)
                       (car refs*))))
-;(trace:error `(opt:inline-prims ,exp))
+;(trace:error `(opt:inline-prims ,exp ,scope-sym))
         (cond
           ((ref? exp) 
            ;; Replace lambda variables, if necessary
            (let ((key (hash-table-ref/default refs exp #f)))
              (if key
-                 (opt:inline-prims key refs)
+                 (opt:inline-prims key scope-sym refs)
                  exp)))
           ((ast:lambda? exp)
            (ast:%make-lambda
             (ast:lambda-id exp)
             (ast:lambda-args exp)
-            (map (lambda (b) (opt:inline-prims b refs)) (ast:lambda-body exp))
+            (map (lambda (b) (opt:inline-prims b scope-sym refs)) (ast:lambda-body exp))
             (ast:lambda-has-cont exp)))
           ((const? exp) exp)
           ((quote? exp) exp)
           ((define? exp)
            `(define ,(define->var exp)
-                    ,@(opt:inline-prims (define->exp exp) refs))) ;; TODO: map????
+                    ,@(opt:inline-prims (define->exp exp) (define->var exp) refs))) ;; TODO: map????
           ((set!? exp)
            `(set! ,(set!->var exp)
-                  ,(opt:inline-prims (set!->exp exp) refs)))
+                  ,(opt:inline-prims (set!->exp exp) scope-sym refs)))
           ((if? exp)       
            (cond
             ((not (if->condition exp))
-             (opt:inline-prims (if->else exp) refs)) ;; Always false, so replace with else
+             (opt:inline-prims (if->else exp) scope-sym refs)) ;; Always false, so replace with else
             ((const? (if->condition exp))
-             (opt:inline-prims (if->then exp) refs)) ;; Always true, replace with then
+             (opt:inline-prims (if->then exp) scope-sym refs)) ;; Always true, replace with then
             (else
-              `(if ,(opt:inline-prims (if->condition exp) refs)
-                   ,(opt:inline-prims (if->then exp) refs)
-                   ,(opt:inline-prims (if->else exp) refs)))))
+              `(if ,(opt:inline-prims (if->condition exp) scope-sym refs)
+                   ,(opt:inline-prims (if->then exp) scope-sym refs)
+                   ,(opt:inline-prims (if->else exp) scope-sym refs)))))
           ; Application:
           ((app? exp)
 ;(trace:error `(app? ,exp ,(ast:lambda? (car exp))
@@ -887,6 +893,7 @@
                     (ast:lambda-formals->list (car exp)))
                   ,(inline-prim-call? 
                     (ast:lambda-body (car exp))
+                    scope-sym
                     (prim-calls->arg-variables (cdr exp))
                     (ast:lambda-formals->list (car exp)))))
                     #t)
@@ -945,6 +952,7 @@
 
                     (inline-prim-call? 
                       (ast:lambda-body (car exp))
+                      scope-sym
                       (prim-calls->arg-variables (cdr exp))
                       (ast:lambda-formals->list (car exp))))))
              )
@@ -954,7 +962,7 @@
                   (hash-table-set! refs param (car args))
                   (set! args (cdr args)))
                 (ast:lambda-formals->list (car exp))))
-             (opt:inline-prims (car (ast:lambda-body (car exp))) refs))
+             (opt:inline-prims (car (ast:lambda-body (car exp))) scope-sym refs))
             ;; Issue #201 - Attempt to identify case where an if can be inlined
             ((and #f ;; TODO: Disabling for now, see issue for more info
                   (= (length exp) 2)
@@ -1011,13 +1019,13 @@
                (cond
                 (new-if
                   (hash-table-set! refs old-arg new-if)
-                  (opt:inline-prims new-exp refs))
+                  (opt:inline-prims new-exp scope-sym refs))
                 (else
                   ;; Could not inline
-                  (map (lambda (e) (opt:inline-prims e refs)) exp)))
+                  (map (lambda (e) (opt:inline-prims e scope-sym refs)) exp)))
             )) ;;
             (else
-              (map (lambda (e) (opt:inline-prims e refs)) exp))))
+              (map (lambda (e) (opt:inline-prims e scope-sym refs)) exp))))
           (else 
             (error `(Unexpected expression passed to opt:inline-prims ,exp))))))
 
@@ -1110,7 +1118,7 @@
       (filter symbol? (cdr exp)))
 
     ;; Helper for the next function
-    (define (inline-prim-call? exp ivars args)
+    (define (inline-prim-call? exp scope-sym ivars args)
       (let ((fast-inline #t)
             (cannot-inline #f))
         ;; faster and safer but (at least for now) misses some
@@ -1120,7 +1128,7 @@
         (for-each
           (lambda (v)
             (with-var v (lambda (var)
-              (if (adbv:mutated-indirectly? var)
+              (if (member scope-sym (adbv:mutated-indirectly var))
                   (set! cannot-inline #t))
               (if (not (adbv:inlinable var))
                   (set! fast-inline #f)))))
@@ -1511,7 +1519,7 @@
       (analyze-find-lambdas exp -1)
       (analyze-lambda-side-effects exp -1)
       (analyze-lambda-side-effects exp -1) ;; 2nd pass guarantees lambda purity
-      (analyze exp -1) ;; Top-level is lambda ID -1
+      (analyze exp -1 -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
       (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
     )
@@ -1536,7 +1544,8 @@
       (trace:info (adb:get-db))
       (opt:beta-expand
         (opt:inline-prims 
-          (opt:contract ast)))
+          (opt:contract ast)
+          -1))
     )
 
 ;; Closure-conversion.
