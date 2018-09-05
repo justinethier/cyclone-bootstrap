@@ -1573,7 +1573,24 @@
 (define (_closure-convert exp globals optimization-level)
  (define (convert exp self-var free-var-lst)
   (define (cc exp)
+;(trace:error `(cc ,exp))
    (cond
+    ((ast:lambda? exp)
+     (let* ((new-self-var (gensym 'self))
+            (body  (ast:lambda-body exp))
+            (new-free-vars 
+              (difference 
+                (difference (free-vars body) (ast:lambda-formals->list exp))
+                globals)))
+       `(%closure
+          (lambda
+            ,(list->lambda-formals
+               (cons new-self-var (ast:lambda-formals->list exp))
+               (ast:lambda-formals-type exp))
+            ,(convert (car body) new-self-var new-free-vars)) ;; TODO: should this be a map??? was a list in 90-min-scc.
+          ,@(map (lambda (v) ;; TODO: splice here?
+                    (cc v))
+            new-free-vars))))
     ((const? exp)        exp)
     ((quote? exp)        exp)
     ((ref? exp)
@@ -1591,22 +1608,7 @@
           ,@(map cc (cdr exp)))) ;; TODO: need to splice?
     ((set!? exp)  `(set! ,(set!->var exp)
                          ,(cc (set!->exp exp))))
-    ((lambda? exp)
-     (let* ((new-self-var (gensym 'self))
-            (body  (lambda->exp exp))
-            (new-free-vars 
-              (difference 
-                (difference (free-vars body) (lambda-formals->list exp))
-                globals)))
-       `(%closure
-          (lambda
-            ,(list->lambda-formals
-               (cons new-self-var (lambda-formals->list exp))
-               (lambda-formals-type exp))
-            ,(convert (car body) new-self-var new-free-vars)) ;; TODO: should this be a map??? was a list in 90-min-scc.
-          ,@(map (lambda (v) ;; TODO: splice here?
-                    (cc v))
-            new-free-vars))))
+    ((lambda? exp)   (error `(Unexpected lambda in closure-convert ,exp)))
     ((if? exp)  `(if ,@(map cc (cdr exp))))
     ((cell? exp)       `(cell ,(cc (cell->value exp))))
     ((cell-get? exp)   `(cell-get ,(cc (cell-get->cell exp))))
@@ -1616,16 +1618,16 @@
      (let ((fn (car exp))
            (args (map cc (cdr exp))))
        (cond
-         ((lambda? fn)
+         ((ast:lambda? fn)
           (cond
             ;; If the lambda argument is not used, flag so the C code is 
             ;; all generated within the same function
             ((and #f
                   (> optimization-level 0)
-                  (eq? (lambda-formals-type fn) 'args:fixed)
-                  (pair? (lambda-formals->list fn))
+                  (eq? (ast:lambda-formals-type fn) 'args:fixed)
+                  (pair? (ast:lambda-formals->list fn))
                   (with-var 
-                    (car (lambda-formals->list fn))
+                    (car (ast:lambda-formals->list fn))
                     (lambda (var)
                       (zero? (adbv:ref-count var))))
                   ;; Non-CPS args
@@ -1638,12 +1640,12 @@
                     args))
              `(Cyc-seq
                ,@args
-               ,@(map cc (lambda->exp fn))))
+               ,@(map cc (ast:lambda-body fn))))
             (else
-              (let* ((body  (lambda->exp fn))
+              (let* ((body  (ast:lambda-body fn))
                      (new-free-vars 
                        (difference
-                         (difference (free-vars body) (lambda-formals->list fn))
+                         (difference (free-vars body) (ast:lambda-formals->list fn))
                          globals))
                      (new-free-vars? (> (length new-free-vars) 0)))
                   (if new-free-vars?
@@ -1652,16 +1654,17 @@
                       `((%closure 
                            (lambda
                              ,(list->lambda-formals
-                                (cons new-self-var (lambda-formals->list fn))
-                                (lambda-formals-type fn))
+                                (cons new-self-var (ast:lambda-formals->list fn))
+                                (ast:lambda-formals-type fn))
                              ,(convert (car body) new-self-var new-free-vars))
                            ,@(map (lambda (v) (cc v))
                                   new-free-vars))
                         ,@args))
                     ; No free vars, just create simple lambda
-                    `((lambda ,(lambda->formals fn)
+                    `((lambda ,(ast:lambda-args fn)
                               ,@(map cc body))
                       ,@args))))))
+         ((lambda? fn)   (error `(Unexpected lambda in closure-convert ,exp)))
          (else
            (let ((f (cc fn)))
             `((%closure-ref ,f 0)
