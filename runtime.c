@@ -3053,9 +3053,22 @@ static int Cyc_checked_sub(int x, int y, int *result)
 // Code from http://stackoverflow.com/q/1815367/101258
 static int Cyc_checked_mul(int x, int y, int *result)
 {
+//  *result = x * y;
+//  return (*result != 0 && (*result)/x != y) || // Overflow
+//         (*result > CYC_FIXNUM_MAX) ||
+//         (*result < CYC_FIXNUM_MIN);
+  // Avoid undefined behavior by detecting overflow prior to multiplication
+  // Based on code from Hacker's Delight and CHICKEN scheme
+  uint xu, yu, c;
+  c = (1UL<<30UL) - 1;
+  xu = x < 0 ? -x : x;
+  yu = y < 0 ? -y : y;
+
+  if (yu != 0 && xu > (c / yu)) return 1; // Overflow
+
   *result = x * y;
-  return (*result != 0 && (*result)/x != y) || // Overflow
-         (*result > CYC_FIXNUM_MAX) ||
+
+  return (*result > CYC_FIXNUM_MAX) ||
          (*result < CYC_FIXNUM_MIN);
 }
 
