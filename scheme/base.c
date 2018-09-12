@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.2 
+ ** Version 0.9.3 
  **
  **/
 
@@ -14846,25 +14846,33 @@ static void __lambda_802(void *data, int argc, closure _, object k) { port_type 
 static void __lambda_801(void *data, int argc, closure _, object k, object str) { port_type *p = Cyc_io_open_input_string(data, str);
       return_closcall1(data, k, p);  }
 static void __lambda_800(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
-      Cyc_check_port(data, port);
+      if (boolean_f == Cyc_is_port(port)) {
+        return_closcall1(data, k, boolean_f);
+      }
       return_closcall1(
         data, 
         k, 
        ((p->mode == 0 && p->fp != NULL) ? boolean_t : boolean_f));  }
 static void __lambda_799(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
-      Cyc_check_port(data, port);
+      if (boolean_f == Cyc_is_port(port)) {
+        return_closcall1(data, k, boolean_f);
+      }
       return_closcall1(
         data, 
         k, 
        ((p->mode == 1 && p->fp != NULL) ? boolean_t : boolean_f));  }
 static void __lambda_798(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
-      Cyc_check_port(data, port);
+      if (boolean_f == Cyc_is_port(port)) {
+        return_closcall1(data, k, boolean_f);
+      }
       return_closcall1(
         data, 
         k, 
        ((p->mode == 0) ? boolean_t : boolean_f));  }
 static void __lambda_797(void *data, int argc, closure _, object k, object port) { port_type *p = (port_type *)port;
-      Cyc_check_port(data, port);
+      if (boolean_f == Cyc_is_port(port)) {
+        return_closcall1(data, k, boolean_f);
+      }
       return_closcall1(
         data, 
         k, 
