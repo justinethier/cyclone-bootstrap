@@ -364,7 +364,7 @@ object __glo_with_91var_67_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_const_91atomic_127_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_adb_117make_91fnc_scheme_cyclone_cps_91optimizations = NULL;
 object __glo__75adb_117make_91fnc_scheme_cyclone_cps_91optimizations = NULL;
-object __glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations = NULL;
+object __glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_adbf_117set_91well_91known_67_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_adbf_117set_91assigned_91to_91var_67_scheme_cyclone_cps_91optimizations = NULL;
@@ -5410,7 +5410,7 @@ c_7312463.elements = (object *)alloca(sizeof(object) * 1);
 c_7312463.elements[0] = ((closureN)self_735634)->elements[0];
 
 
-make_utf8_string_with_len(c_7312505, "adbf:cgen-id!", 13, 13);
+make_utf8_string_with_len(c_7312505, "adbf:set-cgen-id!", 17, 17);
 return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_7312463, &c_7312505, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations, r_734068);; 
 }
 
@@ -5426,7 +5426,7 @@ c_7312465.num_elements = 1;
 c_7312465.elements = (object *)alloca(sizeof(object) * 1);
 c_7312465.elements[0] = ((closureN)self_735635)->elements[0];
 
-return_closcall1(data,(closure)&c_7312465,  global_set(__glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations, r_734067));; 
+return_closcall1(data,(closure)&c_7312465,  global_set(__glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations, r_734067));; 
 }
 
 static void __lambda_1028(void *data, int argc, object self_735636, object r_734056) {
@@ -5500,7 +5500,7 @@ c_7312477.elements[4] = ((closureN)self_735639)->elements[4];
 c_7312477.elements[5] = ((closureN)self_735639)->elements[5];
 c_7312477.elements[6] = ((closureN)self_735639)->elements[6];
 
-return_closcall3(data,  __glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations,  &c_7312477, res_7352_731594_732060, ((closureN)self_735639)->elements[1]);; 
+return_closcall3(data,  __glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations,  &c_7312477, res_7352_731594_732060, ((closureN)self_735639)->elements[1]);; 
 }
 
 static void __lambda_1024(void *data, int argc, object self_735640, object r_734061) {
@@ -24934,7 +24934,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_const_91atomic_127_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_adb_117make_91fnc_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo__75adb_117make_91fnc_scheme_cyclone_cps_91optimizations);
-  add_global((object *) &__glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations);
+  add_global((object *) &__glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_adbf_117set_91well_91known_67_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_adbf_117set_91assigned_91to_91var_67_scheme_cyclone_cps_91optimizations);
@@ -25196,7 +25196,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_opt_117add_91inlinable_91functions_scheme_cyclone_cps_91optimizations = &c_735646; 
   __glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations = boolean_f; 
   __glo__75adb_117make_91fnc_scheme_cyclone_cps_91optimizations = boolean_f; 
-  __glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations = boolean_f; 
+  __glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations = boolean_f; 
   __glo_adbf_117set_91well_91known_67_scheme_cyclone_cps_91optimizations = boolean_f; 
   __glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations = boolean_f; 
   __glo_adbf_117set_91assigned_91to_91var_67_scheme_cyclone_cps_91optimizations = boolean_f; 
@@ -25298,7 +25298,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_7312888, (object *)&__glo_const_91atomic_127_scheme_cyclone_cps_91optimizations);make_pair(pair_7312889, find_or_add_symbol("const-atomic?"), &cvar_7312888);
   make_cvar(cvar_7312890, (object *)&__glo_adb_117make_91fnc_scheme_cyclone_cps_91optimizations);make_pair(pair_7312891, find_or_add_symbol("adb:make-fnc"), &cvar_7312890);
   make_cvar(cvar_7312892, (object *)&__glo__75adb_117make_91fnc_scheme_cyclone_cps_91optimizations);make_pair(pair_7312893, find_or_add_symbol("%adb:make-fnc"), &cvar_7312892);
-  make_cvar(cvar_7312894, (object *)&__glo_adbf_117cgen_91id_67_scheme_cyclone_cps_91optimizations);make_pair(pair_7312895, find_or_add_symbol("adbf:cgen-id!"), &cvar_7312894);
+  make_cvar(cvar_7312894, (object *)&__glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations);make_pair(pair_7312895, find_or_add_symbol("adbf:set-cgen-id!"), &cvar_7312894);
   make_cvar(cvar_7312896, (object *)&__glo_adbf_117set_91well_91known_67_scheme_cyclone_cps_91optimizations);make_pair(pair_7312897, find_or_add_symbol("adbf:set-well-known!"), &cvar_7312896);
   make_cvar(cvar_7312898, (object *)&__glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations);make_pair(pair_7312899, find_or_add_symbol("adbf:set-side-effects!"), &cvar_7312898);
   make_cvar(cvar_7312900, (object *)&__glo_adbf_117set_91assigned_91to_91var_67_scheme_cyclone_cps_91optimizations);make_pair(pair_7312901, find_or_add_symbol("adbf:set-assigned-to-var!"), &cvar_7312900);
