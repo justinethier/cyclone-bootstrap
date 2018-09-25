@@ -178,12 +178,9 @@
       "#define return_direct_with_clo" n "(td, clo, _clo_fn, _fn" args ") { \\\n"
       " char top; \\\n"
       " if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \\\n"
-;;      "     object buf[" n "]; " arry-assign " \\\n"
-;;      "     mclosure0(c1, (function_type) _clo_fn); \\\n"
-;;      "     GC(td, &c1, buf, " n "); \\\n"
-;;      "     return; \\\n"
       "     object buf[" n "]; " arry-assign "\\\n"
-      "     GC(td, clo, buf, " n "); \\\n"
+      "     mclosure1(c1, (function_type) _clo_fn, clo); \\\n"
+      "     GC(td, (closure)(&c1), buf, " n "); \\\n"
       "     return; \\\n"
       " } else { \\\n"
       "     (_fn)(td, " n ", (closure)(clo)" args "); \\\n"
@@ -359,7 +356,7 @@
 
     ; IR (2):
     ((tagged-list? '%closure exp)
-     (c-compile-closure exp append-preamble cont trace cps?))
+     (c-compile-closure exp append-preamble cont ast-id trace cps?))
     ; Global definition
     ((define? exp)
      (c-compile-global exp append-preamble cont trace))
@@ -910,7 +907,7 @@
 
         ((tagged-list? '%closure fun)
          (let* ((cfun (c-compile-closure 
-                        fun append-preamble cont trace cps?))
+                        fun append-preamble cont ast-id trace cps?))
                 (this-cont (string-append "(closure)" (c:body cfun)))
                 (cargs (c-compile-args
                          args append-preamble "  " this-cont ast-id trace cps?))
@@ -927,9 +924,12 @@
              (else ;; CPS, IE normal behavior
                (set-c-call-arity! num-cargs)
                (with-fnc (ast:lambda-id (closure->lam fun)) (lambda (fnc)
-                 (if (adbf:well-known fnc)
+                 (if (and #f
+                          (adbf:well-known fnc)
+                          (equal? (adbf:closure-size fnc) 1))
                    (let* ((lid (adbf:cgen-id fnc))
                           (c-lambda-fnc-str (string-append "__lambda_" (number->string lid)))
+                          (c-lambda-fnc-gc-ret-str (string-append "__lambda_gc_ret_" (number->string lid)))
                          )
                      (c-code
                        (string-append
@@ -939,7 +939,7 @@
                           "(data,"
                           this-cont
                           ","
-                          c-lambda-fnc-str
+                          c-lambda-fnc-gc-ret-str
                           ","
                           c-lambda-fnc-str
                           (if (> num-cargs 0) "," "")
@@ -1141,7 +1141,7 @@
 (define (allocate-lambda ast:lam lam . cps?)
   (let ((id num-lambdas))
     (set! num-lambdas (+ 1 num-lambdas))
-    (set! lambdas (cons (list id lam) lambdas))
+    (set! lambdas (cons (list id lam ast:lam) lambdas))
     (if (equal? cps? '(#f))
         (set! inline-lambdas (cons id inline-lambdas)))
     (when ast:lam
@@ -1223,8 +1223,17 @@
 ;;
 ;; Compile a reference to an element of a closure.
 (define (c-compile-closure-element-ref ast-id var idx)
-  (string-append 
-    "((closureN)" (mangle var) ")->elements[" idx "]"))
+  (with-fnc ast-id (lambda (fnc)
+    (trace:info `(c-compile-closure-element-ref ,ast-id ,var ,idx ,fnc))
+    (cond
+      ((and #f
+            (adbf:well-known fnc)
+            (pair? (adbf:all-params fnc))
+            (equal? (adbf:closure-size fnc) 1))
+       (mangle (car (adbf:all-params fnc))))
+      (else
+        (string-append 
+          "((closureN)" (mangle var) ")->elements[" idx "]"))))))
 
 
 ;; c-compile-closure : closure-exp (string -> void) -> string
@@ -1241,7 +1250,7 @@
 ;;    the closure. The closure conversion phase tags each access
 ;;    to one with the corresponding index so `lambda` can use them.
 ;;
-(define (c-compile-closure exp append-preamble cont trace cps?)
+(define (c-compile-closure exp append-preamble cont ast-id trace cps?)
   (let* ((lam (closure->lam exp))
          (free-vars
            (map
@@ -1249,7 +1258,7 @@
                 (if (tagged-list? '%closure-ref free-var)
                     (let ((var (cadr free-var))
                           (idx (number->string (- (caddr free-var) 1))))
-                        (c-compile-closure-element-ref (ast:lambda-id lam) var idx)
+                        (c-compile-closure-element-ref ast-id var idx)
                         ;(string-append 
                         ;    "((closureN)" (mangle var) ")->elements[" idx "]")
                     )
@@ -1259,7 +1268,8 @@
          (lid (allocate-lambda lam (c-compile-lambda lam trace cps?) cps?))
          (use-obj-instead-of-closure? 
            (with-fnc (ast:lambda-id lam) (lambda (fnc)
-             (and (adbf:well-known fnc) ;; Only optimize well-known functions
+             (and #f
+                  (adbf:well-known fnc) ;; Only optimize well-known functions
                   (equal? (length free-vars) 1) ;; Sanity check
                   (equal? (adbf:closure-size fnc) 1) ;; From closure conv
              ))))
@@ -1319,7 +1329,7 @@
               )))))
   ;(trace:info (list 'JAE-DEBUG trace macro?))
   (cond
-    (#f ;;TODO: use-obj-instead-of-closure?
+    (use-obj-instead-of-closure?
       (create-object))
     (else
       (c-code/vars
@@ -1612,6 +1622,43 @@
     
     (emit "")
     
+    ; Print GC return wrappers
+    (for-each
+     (lambda (l)
+      (let ((ast (caddr l)))
+        (when (ast:lambda? ast)
+          (with-fnc (ast:lambda-id ast) (lambda (fnc)
+            (when (and #f
+                       (adbf:well-known fnc)
+                       (equal? (adbf:closure-size fnc) 1))
+;(trace:error `(JAE ,l ,fnc))
+           (let* ((params-str (cdadr l))
+                  (args-str
+                    (string-join
+                      (cdr
+                        (string-split
+                          (string-replace-all params-str "object" "")
+                          #\,))
+                      #\,))
+                 )
+             (emit*
+               "static void __lambda_gc_ret_"
+               (number->string (car l))
+               "(void *data, int argc,"
+               params-str
+               ")"
+               "{"
+                  "\nobject obj = "
+                  "((closure1)" (mangle (car (adbf:all-params fnc))) ")->element;\n"
+                  "__lambda_"
+                  (number->string (car l))
+                  "(data, argc, obj"
+                  (if (> (string-length args-str) 0)
+                      (string-append "," args-str))
+                  ");"
+               "}"))))))))
+     lambdas)
+
     ; Print the definitions:
     (for-each
      (lambda (l)
