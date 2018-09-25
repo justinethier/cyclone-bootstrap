@@ -25606,7 +25606,7 @@ return_closcall1(data,  __glo_adb_117lambda_91ids_scheme_cyclone_cps_91optimizat
 }
 
 static void __lambda_8(void *data, int argc, object self_734590, object r_732134) {
-  return_closcall3(data,  __glo_foldl_scheme_base,  ((closureN)self_734590)->elements[0], __glo_max_scheme_base, r_732134);; 
+  return_closcall4(data,  __glo_foldl_scheme_base,  ((closureN)self_734590)->elements[0], __glo_max_scheme_base, obj_int2obj(0), r_732134);; 
 }
 
 static void __lambda_7(void *data, int argc, closure _,object k_732129) {
