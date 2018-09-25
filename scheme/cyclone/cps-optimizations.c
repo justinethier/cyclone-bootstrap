@@ -331,7 +331,7 @@ if (type_is_pair_prim(clo)) { \
 object __glo_lib_91init_117schemecyclonecps_19191optimizations_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_analyze_117find_91known_91lambdas_scheme_cyclone_cps_91optimizations = NULL;
 object __glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations = NULL;
-object __glo_well_91known_91lambda_127_scheme_cyclone_cps_91optimizations = NULL;
+object __glo_well_91known_91lambda_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_analyze_117find_91recursive_91calls_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_analyze_117find_91direct_91recursive_91calls_scheme_cyclone_cps_91optimizations = NULL;
 object __glo_analyze_117find_91named_91lets_scheme_cyclone_cps_91optimizations = NULL;
@@ -6888,7 +6888,7 @@ static void __lambda_995(void *data, int argc, object self_735576, object r_7339
 }
 
 static void __lambda_994(void *data, int argc, closure _,object k_733977, object sym_731541_732044) {
-  Cyc_st_add(data, "scheme/cyclone/cps-optimizations.sld:well-known-lambda?");
+  Cyc_st_add(data, "scheme/cyclone/cps-optimizations.sld:well-known-lambda");
 if( (boolean_f != __glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations) ){ 
   return_closcall4(data,  __glo_hash_91table_91ref_95default_srfi_69,  k_733977, __glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations, sym_731541_732044, boolean_f);
 } else { 
@@ -25730,7 +25730,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_lib_91init_117schemecyclonecps_19191optimizations_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_analyze_117find_91known_91lambdas_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations);
-  add_global((object *) &__glo_well_91known_91lambda_127_scheme_cyclone_cps_91optimizations);
+  add_global((object *) &__glo_well_91known_91lambda_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_analyze_117find_91recursive_91calls_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_analyze_117find_91direct_91recursive_91calls_scheme_cyclone_cps_91optimizations);
   add_global((object *) &__glo_analyze_117find_91named_91lets_scheme_cyclone_cps_91optimizations);
@@ -25943,7 +25943,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_7312049, (function_type)__lambda_1047);c_7312049.num_args = 1; 
   __glo_analyze_117find_91known_91lambdas_scheme_cyclone_cps_91optimizations = &c_7312049; 
   mclosure0(c_7312046, (function_type)__lambda_994);c_7312046.num_args = 1; 
-  __glo_well_91known_91lambda_127_scheme_cyclone_cps_91optimizations = &c_7312046; 
+  __glo_well_91known_91lambda_scheme_cyclone_cps_91optimizations = &c_7312046; 
   mclosure0(c_7311870, (function_type)__lambda_993);c_7311870.num_args = 1; 
   __glo_analyze_117find_91recursive_91calls_scheme_cyclone_cps_91optimizations = &c_7311870; 
   mclosure0(c_7311566, (function_type)__lambda_968);c_7311566.num_args = 1; 
@@ -26107,7 +26107,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_7313121, (object *)&__glo_lib_91init_117schemecyclonecps_19191optimizations_scheme_cyclone_cps_91optimizations);make_pair(pair_7313122, find_or_add_symbol("lib-init:schemecyclonecps_91optimizations"), &cvar_7313121);
   make_cvar(cvar_7313123, (object *)&__glo_analyze_117find_91known_91lambdas_scheme_cyclone_cps_91optimizations);make_pair(pair_7313124, find_or_add_symbol("analyze:find-known-lambdas"), &cvar_7313123);
   make_cvar(cvar_7313125, (object *)&__glo__85well_91known_91lambda_91sym_91lookup_91tbl_85_scheme_cyclone_cps_91optimizations);make_pair(pair_7313126, find_or_add_symbol("*well-known-lambda-sym-lookup-tbl*"), &cvar_7313125);
-  make_cvar(cvar_7313127, (object *)&__glo_well_91known_91lambda_127_scheme_cyclone_cps_91optimizations);make_pair(pair_7313128, find_or_add_symbol("well-known-lambda?"), &cvar_7313127);
+  make_cvar(cvar_7313127, (object *)&__glo_well_91known_91lambda_scheme_cyclone_cps_91optimizations);make_pair(pair_7313128, find_or_add_symbol("well-known-lambda"), &cvar_7313127);
   make_cvar(cvar_7313129, (object *)&__glo_analyze_117find_91recursive_91calls_scheme_cyclone_cps_91optimizations);make_pair(pair_7313130, find_or_add_symbol("analyze:find-recursive-calls"), &cvar_7313129);
   make_cvar(cvar_7313131, (object *)&__glo_analyze_117find_91direct_91recursive_91calls_scheme_cyclone_cps_91optimizations);make_pair(pair_7313132, find_or_add_symbol("analyze:find-direct-recursive-calls"), &cvar_7313131);
   make_cvar(cvar_7313133, (object *)&__glo_analyze_117find_91named_91lets_scheme_cyclone_cps_91optimizations);make_pair(pair_7313134, find_or_add_symbol("analyze:find-named-lets"), &cvar_7313133);
