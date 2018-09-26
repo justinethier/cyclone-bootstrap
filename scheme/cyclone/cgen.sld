@@ -893,6 +893,22 @@
                   (c:body cargs)
                   ");")))
              (else
+;;TODO: need to handle well-known functions:
+;              (let* ((wkf (well-known-lambda (car args)))
+;                     (fnc (if wkf (adb:get/default (ast:lambda-id wkf) #f) #f))
+;                    )
+;                (when (and wkf fnc
+;                           (adbf:well-known fnc) ;; not really needed
+;                           (equal? (adbf:closure-size fnc) 1))
+;                  (trace:error `(JAE found well-known lambda in closure-ref call 
+;                    ,(car args) 
+;                    ,wkf
+;;TODO: this is not going to work, we are going to need to use ast:lambda-id instead of
+;;an allocation ID. make that change in allocate-lambda, disable all WKL code, and make
+;;sure it is stable before proceeding...
+;                    cgen id ,(adbf:cgen-id fnc)
+;                    )))
+;              )
               (set-c-call-arity! (c:num-args cargs))
               (c-code 
                 (string-append
@@ -923,6 +939,9 @@
                    ");")))
              (else ;; CPS, IE normal behavior
                (set-c-call-arity! num-cargs)
+;TODO: see corresponding code in %closure-ref that outputs return_closcall.
+;need to use (well-known-lambda) to check the ref to see if it is a WKL.
+;if so, lookup ast and use cgen-id to map back to emit the lambda_gc_ret there
                (with-fnc (ast:lambda-id (closure->lam fun)) (lambda (fnc)
                  (if (and #f
                           (adbf:well-known fnc)
@@ -1140,13 +1159,17 @@
 ;; Create/store/return a unique lambda-id for the given function.
 (define (allocate-lambda ast:lam lam . cps?)
   (let ((id num-lambdas))
-    (set! num-lambdas (+ 1 num-lambdas))
+    (cond
+      ((and ast:lam (equal? cps? '(#f)))
+        (set! id (ast:lambda-id ast:lam)))
+      (else
+        (set! num-lambdas (+ 1 num-lambdas))))
     (set! lambdas (cons (list id lam ast:lam) lambdas))
     (if (equal? cps? '(#f))
         (set! inline-lambdas (cons id inline-lambdas)))
-    (when ast:lam
-      (with-fnc! (ast:lambda-id ast:lam) (lambda (fnc)
-        (adbf:set-cgen-id! fnc id))))
+    ;(when ast:lam
+    ;  (with-fnc! (ast:lambda-id ast:lam) (lambda (fnc)
+    ;    (adbf:set-cgen-id! fnc id))))
     id))
 
 ; get-lambda : lambda-id -> (symbol -> string)
@@ -1228,7 +1251,7 @@
     (cond
       ((and #f
             (adbf:well-known fnc)
-            (pair? (adbf:all-params fnc))
+            ;(pair? (adbf:all-params fnc))
             (equal? (adbf:closure-size fnc) 1))
        (mangle (car (adbf:all-params fnc))))
       (else
@@ -1270,7 +1293,7 @@
            (with-fnc (ast:lambda-id lam) (lambda (fnc)
              (and #f
                   (adbf:well-known fnc) ;; Only optimize well-known functions
-                  (equal? (length free-vars) 1) ;; Sanity check
+                  ;(equal? (length free-vars) 1) ;; Sanity check
                   (equal? (adbf:closure-size fnc) 1) ;; From closure conv
              ))))
          (macro? (assoc (st:->var trace) (get-macros)))
@@ -1496,6 +1519,7 @@
                       required-libs
                       src-file)
   (set! *global-syms* (append globals (lib:idb:ids import-db)))
+  (set! num-lambdas (+ (adb:max-lambda-id) 1))
   (set! cgen:mangle-global
     (lambda (ident)
       (cond
@@ -1628,10 +1652,15 @@
       (let ((ast (caddr l)))
         (when (ast:lambda? ast)
           (with-fnc (ast:lambda-id ast) (lambda (fnc)
+            ;;(when (and 
+            ;;           (adbf:well-known fnc)
+            ;;           (equal? (adbf:closure-size fnc) 1))
+            ;;  (trace:error `(JAE ,(car l) ,l ,fnc)))
+
             (when (and #f
                        (adbf:well-known fnc)
                        (equal? (adbf:closure-size fnc) 1))
-;(trace:error `(JAE ,l ,fnc))
+;(trace:error `(JAE ,(car l) ,l ,fnc))
            (let* ((params-str (cdadr l))
                   (args-str
                     (string-join

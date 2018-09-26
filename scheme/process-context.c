@@ -94,19 +94,19 @@ object __glo_get_91environment_91variable_scheme_process_91context = NULL;
 object __glo_command_91line_scheme_process_91context = NULL;
 object __glo_emergency_91exit_scheme_process_91context = NULL;
 #include "cyclone/runtime.h"
-static void __lambda_3(void *data, int argc, closure _,object k_735) ;
+static void __lambda_5(void *data, int argc, closure _,object k_735) ;
+static void __lambda_4(void *data, int argc, closure _, object k) ;
+static void __lambda_3(void *data, int argc, closure _, object k, object env_var) ;
 static void __lambda_2(void *data, int argc, closure _, object k) ;
-static void __lambda_1(void *data, int argc, closure _, object k, object env_var) ;
-static void __lambda_0(void *data, int argc, closure _, object k) ;
 
-static void __lambda_3(void *data, int argc, closure _,object k_735) {
+static void __lambda_5(void *data, int argc, closure _,object k_735) {
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 return_closcall1(data,  k_735,  global_set(__glo_emergency_91exit_scheme_process_91context, primitive_exit));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _, object k) {pack_env_variables(data, k); 
+static void __lambda_4(void *data, int argc, closure _, object k) {pack_env_variables(data, k); 
        }
-static void __lambda_1(void *data, int argc, closure _, object k, object env_var) { 
+static void __lambda_3(void *data, int argc, closure _, object k, object env_var) { 
         const char *v = NULL;
         Cyc_check_str(data, env_var);
         v = getenv(string_str(env_var));
@@ -117,7 +117,7 @@ static void __lambda_1(void *data, int argc, closure _, object k, object env_var
           return_closcall1(data, k, &str);
         }
        }
-static void __lambda_0(void *data, int argc, closure _, object k) { int i;
+static void __lambda_2(void *data, int argc, closure _, object k) { int i;
         object lis = NULL;
         for (i = _cyc_argc; i > 0; i--) {
           object ps = alloca(sizeof(string_type));
@@ -143,13 +143,13 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_get_91environment_91variable_scheme_process_91context);
   add_global((object *) &__glo_command_91line_scheme_process_91context);
   add_global((object *) &__glo_emergency_91exit_scheme_process_91context);
-  mclosure0(c_7310, (function_type)__lambda_3);c_7310.num_args = 0; 
+  mclosure0(c_7310, (function_type)__lambda_5);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 
-  mclosure0(c_739, (function_type)__lambda_2);c_739.num_args = 0; 
+  mclosure0(c_739, (function_type)__lambda_4);c_739.num_args = 0; 
   __glo_get_91environment_91variables_scheme_process_91context = &c_739; 
-  mclosure0(c_738, (function_type)__lambda_1);c_738.num_args = 1; 
+  mclosure0(c_738, (function_type)__lambda_3);c_738.num_args = 1; 
   __glo_get_91environment_91variable_scheme_process_91context = &c_738; 
-  mclosure0(c_737, (function_type)__lambda_0);c_737.num_args = 0; 
+  mclosure0(c_737, (function_type)__lambda_2);c_737.num_args = 0; 
   __glo_command_91line_scheme_process_91context = &c_737; 
   __glo_emergency_91exit_scheme_process_91context = boolean_f; 
 

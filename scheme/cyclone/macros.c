@@ -406,9 +406,9 @@ extern object __glo_env_117first_91frame_191_191inline_191_191_scheme_cyclone_ut
 extern object __glo_env_117frame_91variables_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_env_117frame_91values_191_191inline_191_191_scheme_cyclone_util;
 #include "cyclone/runtime.h"
-static void __lambda_0(void *data, int argc, closure _,object k_733) ;
+static void __lambda_2(void *data, int argc, closure _,object k_733) ;
 
-static void __lambda_0(void *data, int argc, closure _,object k_733) {
+static void __lambda_2(void *data, int argc, closure _,object k_733) {
   Cyc_st_add(data, "scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 return_closcall1(data,  k_733,  boolean_f);; 
 }
@@ -420,7 +420,7 @@ void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *d
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);
-  mclosure0(c_735, (function_type)__lambda_0);c_735.num_args = 0; 
+  mclosure0(c_735, (function_type)__lambda_2);c_735.num_args = 0; 
   __glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros = &c_735; 
 
   mclosure0(clo_738, c_schemecyclonemacros_inlinable_lambdas); make_pair(pair_737, find_or_add_symbol("c_schemecyclonemacros_inlinable_lambdas"), &clo_738);
