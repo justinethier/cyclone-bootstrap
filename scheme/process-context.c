@@ -36,17 +36,6 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
-#define return_direct_with_clo1(td, clo, _clo_fn, _fn,a1) { \
- char top; \
- if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
-     mclosure1(c1, (function_type) _clo_fn, clo); \
-     GC(td, (closure)(&c1), buf, 1); \
-     return; \
- } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
- }}
-
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -76,17 +65,6 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
  }}
 
-#define return_direct_with_clo2(td, clo, _clo_fn, _fn,a1,a2) { \
- char top; \
- if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
-     mclosure1(c1, (function_type) _clo_fn, clo); \
-     GC(td, (closure)(&c1), buf, 2); \
-     return; \
- } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
- }}
-
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = NULL;
 object __glo_get_91environment_91variables_scheme_process_91context = NULL;
@@ -94,12 +72,12 @@ object __glo_get_91environment_91variable_scheme_process_91context = NULL;
 object __glo_command_91line_scheme_process_91context = NULL;
 object __glo_emergency_91exit_scheme_process_91context = NULL;
 #include "cyclone/runtime.h"
-static void __lambda_5(void *data, int argc, closure _,object k_735) ;
+static void __lambda_1(void *data, int argc, closure _,object k_735) ;
 static void __lambda_4(void *data, int argc, closure _, object k) ;
 static void __lambda_3(void *data, int argc, closure _, object k, object env_var) ;
 static void __lambda_2(void *data, int argc, closure _, object k) ;
 
-static void __lambda_5(void *data, int argc, closure _,object k_735) {
+static void __lambda_1(void *data, int argc, closure _,object k_735) {
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 return_closcall1(data,  k_735,  global_set(__glo_emergency_91exit_scheme_process_91context, primitive_exit));; 
 }
@@ -143,7 +121,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_get_91environment_91variable_scheme_process_91context);
   add_global((object *) &__glo_command_91line_scheme_process_91context);
   add_global((object *) &__glo_emergency_91exit_scheme_process_91context);
-  mclosure0(c_7310, (function_type)__lambda_5);c_7310.num_args = 0; 
+  mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 
   mclosure0(c_739, (function_type)__lambda_4);c_739.num_args = 0; 
   __glo_get_91environment_91variables_scheme_process_91context = &c_739; 

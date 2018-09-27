@@ -36,17 +36,6 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
-#define return_direct_with_clo1(td, clo, _clo_fn, _fn,a1) { \
- char top; \
- if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
-     mclosure1(c1, (function_type) _clo_fn, clo); \
-     GC(td, (closure)(&c1), buf, 1); \
-     return; \
- } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
- }}
-
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -74,17 +63,6 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
- }}
-
-#define return_direct_with_clo2(td, clo, _clo_fn, _fn,a1,a2) { \
- char top; \
- if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
-     mclosure1(c1, (function_type) _clo_fn, clo); \
-     GC(td, (closure)(&c1), buf, 2); \
-     return; \
- } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
 #include "cyclone/types.h"
@@ -406,9 +384,9 @@ extern object __glo_env_117first_91frame_191_191inline_191_191_scheme_cyclone_ut
 extern object __glo_env_117frame_91variables_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_env_117frame_91values_191_191inline_191_191_scheme_cyclone_util;
 #include "cyclone/runtime.h"
-static void __lambda_2(void *data, int argc, closure _,object k_733) ;
+static void __lambda_1(void *data, int argc, closure _,object k_733) ;
 
-static void __lambda_2(void *data, int argc, closure _,object k_733) {
+static void __lambda_1(void *data, int argc, closure _,object k_733) {
   Cyc_st_add(data, "scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
 return_closcall1(data,  k_733,  boolean_f);; 
 }
@@ -420,7 +398,7 @@ void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *d
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);
-  mclosure0(c_735, (function_type)__lambda_2);c_735.num_args = 0; 
+  mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 0; 
   __glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros = &c_735; 
 
   mclosure0(clo_738, c_schemecyclonemacros_inlinable_lambdas); make_pair(pair_737, find_or_add_symbol("c_schemecyclonemacros_inlinable_lambdas"), &clo_738);
