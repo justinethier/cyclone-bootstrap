@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -63,6 +73,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
+ }}
+
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
 #include "cyclone/types.h"
@@ -285,7 +305,7 @@ c_7365.num_elements = 1;
 c_7365.elements = (object *)alloca(sizeof(object) * 1);
 c_7365.elements[0] = k_7327;
 
-return_closcall1(data,(closure)&c_7365,  global_set(__glo_write_91shared_scheme_write, __glo_write_scheme_write));; 
+return_direct_with_clo1(data,(closure)&c_7365,__lambda_6,  global_set(__glo_write_91shared_scheme_write, __glo_write_scheme_write));; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7332, object r_7329) {

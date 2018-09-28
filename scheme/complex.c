@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -65,6 +75,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
  }}
 
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
+ }}
+
 #define closcall3(td, clo,a1,a2,a3) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
@@ -92,6 +112,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 3, (closure)_fn,a1,a2,a3); \
+ }}
+
+#define return_direct_with_clo3(td, clo, _fn,a1,a2,a3) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else { \
+     (_fn)(td, 3, (closure)(clo),a1,a2,a3); \
  }}
 
 #include "cyclone/types.h"
@@ -529,7 +559,7 @@ c_7378.elements[1] = x_732_7310;
 
 complex_num_type local_7386; object c_7387 = ((inline_function_type)
                    ((closure)__glo_complex_127_191_191inline_191_191_scheme_base)->fn)(data,&local_7386,x_732_7310);
-return_closcall1(data,(closure)&c_7378,  c_7387);; 
+return_direct_with_clo1(data,(closure)&c_7378,__lambda_4,  c_7387);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7354, object r_7324) {
@@ -557,7 +587,7 @@ c_7365.elements[1] = x_731_739;
 
 complex_num_type local_7374; object c_7375 = ((inline_function_type)
                    ((closure)__glo_complex_127_191_191inline_191_191_scheme_base)->fn)(data,&local_7374,x_731_739);
-return_closcall1(data,(closure)&c_7365,  c_7375);; 
+return_direct_with_clo1(data,(closure)&c_7365,__lambda_2,  c_7375);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7353, object r_7320) {

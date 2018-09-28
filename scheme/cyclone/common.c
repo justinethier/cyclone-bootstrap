@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -63,6 +73,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
+ }}
+
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
 #include "cyclone/types.h"
@@ -116,7 +136,7 @@ c_7335.num_elements = 1;
 c_7335.elements = (object *)alloca(sizeof(object) * 1);
 c_7335.elements[0] = ((closureN)self_7323)->elements[0];
 
-return_closcall1(data,(closure)&c_7335,  global_set(__glo__85version_85_scheme_cyclone_common, r_7322));; 
+return_direct_with_clo1(data,(closure)&c_7335,__lambda_3,  global_set(__glo__85version_85_scheme_cyclone_common, r_7322));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_7324, object r_7317) {
@@ -152,7 +172,7 @@ c_7339.num_elements = 1;
 c_7339.elements = (object *)alloca(sizeof(object) * 1);
 c_7339.elements[0] = ((closureN)self_7325)->elements[0];
 
-return_closcall1(data,(closure)&c_7339,  global_set(__glo__85version_91banner_85_scheme_cyclone_common, r_7321));; 
+return_direct_with_clo1(data,(closure)&c_7339,__lambda_5,  global_set(__glo__85version_91banner_85_scheme_cyclone_common, r_7321));; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7326, object r_7318) {
@@ -167,7 +187,7 @@ c_7341.num_elements = 1;
 c_7341.elements = (object *)alloca(sizeof(object) * 1);
 c_7341.elements[0] = ((closureN)self_7326)->elements[0];
 
-return_closcall1(data,(closure)&c_7341,  global_set(__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common));; 
+return_direct_with_clo1(data,(closure)&c_7341,__lambda_6,  global_set(__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common));; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7327, object r_7319) {

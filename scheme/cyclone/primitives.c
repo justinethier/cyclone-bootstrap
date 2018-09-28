@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -63,6 +73,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
+ }}
+
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
 #define closcall3(td, clo,a1,a2,a3) \
@@ -94,6 +114,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 3, (closure)_fn,a1,a2,a3); \
  }}
 
+#define return_direct_with_clo3(td, clo, _fn,a1,a2,a3) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else { \
+     (_fn)(td, 3, (closure)(clo),a1,a2,a3); \
+ }}
+
 #define closcall4(td, clo,a1,a2,a3,a4) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 3, (closure)(a1), clo,a2,a3,a4); \
@@ -121,6 +151,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 4, (closure)_fn,a1,a2,a3,a4); \
+ }}
+
+#define return_direct_with_clo4(td, clo, _fn,a1,a2,a3,a4) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
+     GC(td, clo, buf, 4); \
+     return; \
+ } else { \
+     (_fn)(td, 4, (closure)(clo),a1,a2,a3,a4); \
  }}
 
 #include "cyclone/types.h"
@@ -740,7 +780,7 @@ c_734457.num_elements = 1;
 c_734457.elements = (object *)alloca(sizeof(object) * 1);
 c_734457.elements[0] = k_731473;
 
-return_closcall1(data,(closure)&c_734457,  global_set(__glo__85udf_91prims_85_scheme_cyclone_primitives, NULL));; 
+return_direct_with_clo1(data,(closure)&c_734457,__lambda_218,  global_set(__glo__85udf_91prims_85_scheme_cyclone_primitives, NULL));; 
 }
 
 static void __lambda_218(void *data, int argc, object self_731690, object r_731475) {
@@ -755,7 +795,7 @@ c_734459.num_elements = 1;
 c_734459.elements = (object *)alloca(sizeof(object) * 1);
 c_734459.elements[0] = ((closureN)self_731690)->elements[0];
 
-return_closcall1(data,(closure)&c_734459,  global_set(__glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives, NULL));; 
+return_direct_with_clo1(data,(closure)&c_734459,__lambda_219,  global_set(__glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives, NULL));; 
 }
 
 static void __lambda_219(void *data, int argc, object self_731691, object r_731476) {
@@ -1080,7 +1120,7 @@ make_pair(c_735078,quote_Cyc_91set_91cvar_67,&c_735079);
 make_pair(c_735077,quote_Cyc_91get_91cvar,&c_735078);
 
 make_pair(c_735076,quote_Cyc_91global_91vars,&c_735077);
-return_closcall1(data,(closure)&c_734461,  global_set(__glo__85primitives_85_scheme_cyclone_primitives, &c_735076));; 
+return_direct_with_clo1(data,(closure)&c_734461,__lambda_220,  global_set(__glo__85primitives_85_scheme_cyclone_primitives, &c_735076));; 
 }
 
 static void __lambda_220(void *data, int argc, object self_731692, object r_731477) {
@@ -2318,7 +2358,7 @@ c_734377.elements[0] = func_91sym_73768_73811;
 c_734377.elements[1] = k_731463;
 c_734377.elements[2] = num_91args_73769_73812;
 
-return_closcall1(data,(closure)&c_734377,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_734377,__lambda_211,  boolean_f);; 
 }
 
 static void __lambda_211(void *data, int argc, object self_731683, object mappings_73814) {
@@ -2337,7 +2377,7 @@ c_734379.elements[2] = ((closureN)self_731683)->elements[2];
 
 
 make_cell(c_734454,mappings_73814);
-return_closcall1(data,(closure)&c_734379,  &c_734454);; 
+return_direct_with_clo1(data,(closure)&c_734379,__lambda_221,  &c_734454);; 
 }
 
 static void __lambda_221(void *data, int argc, object self_731684, object mappings_73814) {
@@ -2411,7 +2451,7 @@ make_pair(c_734432,&c_734433,&c_734436);
 make_pair(c_734428,&c_734429,&c_734432);
 
 make_pair(c_734424,&c_734425,&c_734428);
-return_closcall1(data,(closure)&c_734381,  Cyc_set_cell(data, mappings_73814, &c_734424));; 
+return_direct_with_clo1(data,(closure)&c_734381,__lambda_212,  Cyc_set_cell(data, mappings_73814, &c_734424));; 
 }
 
 static void __lambda_212(void *data, int argc, object self_731685, object r_731464) {
@@ -2429,7 +2469,7 @@ c_734383.elements[1] = ((closureN)self_731685)->elements[1];
 c_734383.elements[2] = ((closureN)self_731685)->elements[2];
 c_734383.elements[3] = ((closureN)self_731685)->elements[3];
 
-return_closcall1(data,(closure)&c_734383,  assoc(data, ((closureN)self_731685)->elements[0], __glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives));; 
+return_direct_with_clo1(data,(closure)&c_734383,__lambda_213,  assoc(data, ((closureN)self_731685)->elements[0], __glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives));; 
 }
 
 static void __lambda_213(void *data, int argc, object self_731686, object r_731466) {
@@ -2446,7 +2486,7 @@ c_734385.elements[0] = ((closureN)self_731686)->elements[0];
 c_734385.elements[1] = ((closureN)self_731686)->elements[1];
 c_734385.elements[2] = ((closureN)self_731686)->elements[3];
 
-return_closcall2(data,(closure)&c_734385,  assoc(data, ((closureN)self_731686)->elements[0], car(((closureN)self_731686)->elements[2])), r_731466);; 
+return_direct_with_clo2(data,(closure)&c_734385,__lambda_214,  assoc(data, ((closureN)self_731686)->elements[0], car(((closureN)self_731686)->elements[2])), r_731466);; 
 }
 
 static void __lambda_214(void *data, int argc, object self_731687, object m_73770_73816, object udf_73771_73817) {
@@ -2476,7 +2516,7 @@ c_734398.elements[1] = ((closureN)self_731687)->elements[1];
 c_734398.elements[2] = m_73770_73816;
 c_734398.elements[3] = udf_73771_73817;
 
-return_closcall1(data,(closure)&c_734387,  &c_734398);; 
+return_direct_with_clo1(data,(closure)&c_734387,__lambda_215,  &c_734398);; 
 }
 
 static void __lambda_216(void *data, int argc, object self_731688, object r_731467) {
@@ -2495,9 +2535,9 @@ static void __lambda_215(void *data, int argc, object self_731689, object k_7314
   if( (boolean_f != ((closureN)self_731689)->elements[0]) ){ 
   
 object c_734392 = Cyc_num_fast_eq_op(data,Cyc_cadr(data, ((closureN)self_731689)->elements[0]), ((closureN)self_731689)->elements[1]);
-return_closcall1(data,  k_731468,  c_734392);
+return_direct_with_clo1(data,  k_731468,__lambda_216,  c_734392);
 } else { 
-  return_closcall1(data,  k_731468,  boolean_f);}
+  return_direct_with_clo1(data,  k_731468,__lambda_216,  boolean_f);}
 ; 
 }
 
@@ -2559,7 +2599,7 @@ c_734050.elements = (object *)alloca(sizeof(object) * 2);
 c_734050.elements[0] = k_731337;
 c_734050.elements[1] = prim_91call_73691_73806;
 
-return_closcall1(data,(closure)&c_734036,  &c_734050);; 
+return_direct_with_clo1(data,(closure)&c_734036,__lambda_188,  &c_734050);; 
 }
 
 static void __lambda_189(void *data, int argc, object self_731662, object r_731338) {
@@ -2593,7 +2633,7 @@ c_734077.elements = (object *)alloca(sizeof(object) * 2);
 c_734077.elements[0] = ((closureN)self_731662)->elements[0];
 c_734077.elements[1] = ((closureN)self_731662)->elements[1];
 
-return_closcall1(data,(closure)&c_734063,  &c_734077);}
+return_direct_with_clo1(data,(closure)&c_734063,__lambda_190,  &c_734077);}
 ; 
 }
 
@@ -2638,7 +2678,7 @@ c_734130.elements = (object *)alloca(sizeof(object) * 2);
 c_734130.elements[0] = ((closureN)self_731663)->elements[0];
 c_734130.elements[1] = ((closureN)self_731663)->elements[1];
 
-return_closcall1(data,(closure)&c_734116,  &c_734130);}
+return_direct_with_clo1(data,(closure)&c_734116,__lambda_192,  &c_734130);}
 }
 }
 ; 
@@ -2680,7 +2720,7 @@ c_734170.elements = (object *)alloca(sizeof(object) * 2);
 c_734170.elements[0] = ((closureN)self_731664)->elements[0];
 c_734170.elements[1] = ((closureN)self_731664)->elements[1];
 
-return_closcall1(data,(closure)&c_734156,  &c_734170);}
+return_direct_with_clo1(data,(closure)&c_734156,__lambda_194,  &c_734170);}
 }
 ; 
 }
@@ -2721,7 +2761,7 @@ c_734210.elements = (object *)alloca(sizeof(object) * 2);
 c_734210.elements[0] = ((closureN)self_731665)->elements[0];
 c_734210.elements[1] = ((closureN)self_731665)->elements[1];
 
-return_closcall1(data,(closure)&c_734196,  &c_734210);}
+return_direct_with_clo1(data,(closure)&c_734196,__lambda_196,  &c_734210);}
 }
 ; 
 }
@@ -2755,7 +2795,7 @@ c_734234.elements = (object *)alloca(sizeof(object) * 2);
 c_734234.elements[0] = ((closureN)self_731666)->elements[0];
 c_734234.elements[1] = ((closureN)self_731666)->elements[1];
 
-return_closcall1(data,(closure)&c_734220,  &c_734234);}
+return_direct_with_clo1(data,(closure)&c_734220,__lambda_198,  &c_734234);}
 ; 
 }
 
@@ -2788,7 +2828,7 @@ c_734258.elements = (object *)alloca(sizeof(object) * 2);
 c_734258.elements[0] = ((closureN)self_731667)->elements[0];
 c_734258.elements[1] = ((closureN)self_731667)->elements[1];
 
-return_closcall1(data,(closure)&c_734244,  &c_734258);}
+return_direct_with_clo1(data,(closure)&c_734244,__lambda_200,  &c_734258);}
 ; 
 }
 
@@ -2821,7 +2861,7 @@ c_734282.elements = (object *)alloca(sizeof(object) * 2);
 c_734282.elements[0] = ((closureN)self_731668)->elements[0];
 c_734282.elements[1] = ((closureN)self_731668)->elements[1];
 
-return_closcall1(data,(closure)&c_734268,  &c_734282);}
+return_direct_with_clo1(data,(closure)&c_734268,__lambda_202,  &c_734282);}
 ; 
 }
 
@@ -2854,7 +2894,7 @@ c_734306.elements = (object *)alloca(sizeof(object) * 2);
 c_734306.elements[0] = ((closureN)self_731669)->elements[0];
 c_734306.elements[1] = ((closureN)self_731669)->elements[1];
 
-return_closcall1(data,(closure)&c_734292,  &c_734306);}
+return_direct_with_clo1(data,(closure)&c_734292,__lambda_204,  &c_734306);}
 ; 
 }
 
@@ -2887,7 +2927,7 @@ c_734330.elements = (object *)alloca(sizeof(object) * 2);
 c_734330.elements[0] = ((closureN)self_731670)->elements[0];
 c_734330.elements[1] = ((closureN)self_731670)->elements[1];
 
-return_closcall1(data,(closure)&c_734316,  &c_734330);}
+return_direct_with_clo1(data,(closure)&c_734316,__lambda_206,  &c_734330);}
 ; 
 }
 
@@ -2905,9 +2945,9 @@ static void __lambda_206(void *data, int argc, object self_731672, object k_7313
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731672)->elements[0]), quote_apply)) ){ 
   
 object c_734325 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731672)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731388,  c_734325);
+return_direct_with_clo1(data,  k_731388,__lambda_207,  c_734325);
 } else { 
-  return_closcall1(data,  k_731388,  boolean_f);}
+  return_direct_with_clo1(data,  k_731388,__lambda_207,  boolean_f);}
 ; 
 }
 
@@ -2915,9 +2955,9 @@ static void __lambda_204(void *data, int argc, object self_731673, object k_7313
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731673)->elements[0]), quote__121_123)) ){ 
   
 object c_734301 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731673)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731393,  c_734301);
+return_direct_with_clo1(data,  k_731393,__lambda_205,  c_734301);
 } else { 
-  return_closcall1(data,  k_731393,  boolean_f);}
+  return_direct_with_clo1(data,  k_731393,__lambda_205,  boolean_f);}
 ; 
 }
 
@@ -2925,9 +2965,9 @@ static void __lambda_202(void *data, int argc, object self_731674, object k_7313
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731674)->elements[0]), quote__125_123)) ){ 
   
 object c_734277 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731674)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731398,  c_734277);
+return_direct_with_clo1(data,  k_731398,__lambda_203,  c_734277);
 } else { 
-  return_closcall1(data,  k_731398,  boolean_f);}
+  return_direct_with_clo1(data,  k_731398,__lambda_203,  boolean_f);}
 ; 
 }
 
@@ -2935,9 +2975,9 @@ static void __lambda_200(void *data, int argc, object self_731675, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731675)->elements[0]), quote__121)) ){ 
   
 object c_734253 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731675)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731403,  c_734253);
+return_direct_with_clo1(data,  k_731403,__lambda_201,  c_734253);
 } else { 
-  return_closcall1(data,  k_731403,  boolean_f);}
+  return_direct_with_clo1(data,  k_731403,__lambda_201,  boolean_f);}
 ; 
 }
 
@@ -2945,9 +2985,9 @@ static void __lambda_198(void *data, int argc, object self_731676, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731676)->elements[0]), quote__125)) ){ 
   
 object c_734229 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731676)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731408,  c_734229);
+return_direct_with_clo1(data,  k_731408,__lambda_199,  c_734229);
 } else { 
-  return_closcall1(data,  k_731408,  boolean_f);}
+  return_direct_with_clo1(data,  k_731408,__lambda_199,  boolean_f);}
 ; 
 }
 
@@ -2955,9 +2995,9 @@ static void __lambda_196(void *data, int argc, object self_731677, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731677)->elements[0]), quote__123)) ){ 
   
 object c_734205 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731677)->elements[0]), obj_int2obj(3));
-return_closcall1(data,  k_731413,  c_734205);
+return_direct_with_clo1(data,  k_731413,__lambda_197,  c_734205);
 } else { 
-  return_closcall1(data,  k_731413,  boolean_f);}
+  return_direct_with_clo1(data,  k_731413,__lambda_197,  boolean_f);}
 ; 
 }
 
@@ -2965,9 +3005,9 @@ static void __lambda_194(void *data, int argc, object self_731678, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731678)->elements[0]), quote__95)) ){ 
   
 object c_734165 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731678)->elements[0]), obj_int2obj(2));
-return_closcall1(data,  k_731420,  c_734165);
+return_direct_with_clo1(data,  k_731420,__lambda_195,  c_734165);
 } else { 
-  return_closcall1(data,  k_731420,  boolean_f);}
+  return_direct_with_clo1(data,  k_731420,__lambda_195,  boolean_f);}
 ; 
 }
 
@@ -2975,9 +3015,9 @@ static void __lambda_192(void *data, int argc, object self_731679, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731679)->elements[0]), quote__91)) ){ 
   
 object c_734125 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731679)->elements[0]), obj_int2obj(2));
-return_closcall1(data,  k_731427,  c_734125);
+return_direct_with_clo1(data,  k_731427,__lambda_193,  c_734125);
 } else { 
-  return_closcall1(data,  k_731427,  boolean_f);}
+  return_direct_with_clo1(data,  k_731427,__lambda_193,  boolean_f);}
 ; 
 }
 
@@ -2985,9 +3025,9 @@ static void __lambda_190(void *data, int argc, object self_731680, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731680)->elements[0]), quote__85)) ){ 
   
 object c_734072 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731680)->elements[0]), obj_int2obj(2));
-return_closcall1(data,  k_731436,  c_734072);
+return_direct_with_clo1(data,  k_731436,__lambda_191,  c_734072);
 } else { 
-  return_closcall1(data,  k_731436,  boolean_f);}
+  return_direct_with_clo1(data,  k_731436,__lambda_191,  boolean_f);}
 ; 
 }
 
@@ -2995,9 +3035,9 @@ static void __lambda_188(void *data, int argc, object self_731681, object k_7314
   if( (boolean_f != equalp(Cyc_car(data, ((closureN)self_731681)->elements[0]), quote__87)) ){ 
   
 object c_734045 = Cyc_num_fast_eq_op(data,Cyc_length(data, ((closureN)self_731681)->elements[0]), obj_int2obj(2));
-return_closcall1(data,  k_731441,  c_734045);
+return_direct_with_clo1(data,  k_731441,__lambda_189,  c_734045);
 } else { 
-  return_closcall1(data,  k_731441,  boolean_f);}
+  return_direct_with_clo1(data,  k_731441,__lambda_189,  boolean_f);}
 ; 
 }
 
@@ -4453,7 +4493,7 @@ c_731861.elements = (object *)alloca(sizeof(object) * 2);
 c_731861.elements[0] = k_73873;
 c_731861.elements[1] = p_7332_73794;
 
-return_closcall1(data,(closure)&c_731861,  Cyc_eq(p_7332_73794, quote_Cyc_91global_91vars));; 
+return_direct_with_clo1(data,(closure)&c_731861,__lambda_23,  Cyc_eq(p_7332_73794, quote_Cyc_91global_91vars));; 
 }
 
 static void __lambda_23(void *data, int argc, object self_731507, object r_73874) {
@@ -4474,7 +4514,7 @@ c_731866.elements = (object *)alloca(sizeof(object) * 2);
 c_731866.elements[0] = ((closureN)self_731507)->elements[0];
 c_731866.elements[1] = ((closureN)self_731507)->elements[1];
 
-return_closcall1(data,(closure)&c_731866,  Cyc_eq(((closureN)self_731507)->elements[1], quote_Cyc_91get_91cvar));}
+return_direct_with_clo1(data,(closure)&c_731866,__lambda_24,  Cyc_eq(((closureN)self_731507)->elements[1], quote_Cyc_91get_91cvar));}
 ; 
 }
 
@@ -4496,7 +4536,7 @@ c_731871.elements = (object *)alloca(sizeof(object) * 2);
 c_731871.elements[0] = ((closureN)self_731508)->elements[0];
 c_731871.elements[1] = ((closureN)self_731508)->elements[1];
 
-return_closcall1(data,(closure)&c_731871,  Cyc_eq(((closureN)self_731508)->elements[1], quote_Cyc_91set_91cvar_67));}
+return_direct_with_clo1(data,(closure)&c_731871,__lambda_25,  Cyc_eq(((closureN)self_731508)->elements[1], quote_Cyc_91set_91cvar_67));}
 ; 
 }
 
@@ -4518,7 +4558,7 @@ c_731876.elements = (object *)alloca(sizeof(object) * 2);
 c_731876.elements[0] = ((closureN)self_731509)->elements[0];
 c_731876.elements[1] = ((closureN)self_731509)->elements[1];
 
-return_closcall1(data,(closure)&c_731876,  Cyc_eq(((closureN)self_731509)->elements[1], quote_Cyc_91cvar_127));}
+return_direct_with_clo1(data,(closure)&c_731876,__lambda_26,  Cyc_eq(((closureN)self_731509)->elements[1], quote_Cyc_91cvar_127));}
 ; 
 }
 
@@ -4540,7 +4580,7 @@ c_731881.elements = (object *)alloca(sizeof(object) * 2);
 c_731881.elements[0] = ((closureN)self_731510)->elements[0];
 c_731881.elements[1] = ((closureN)self_731510)->elements[1];
 
-return_closcall1(data,(closure)&c_731881,  Cyc_eq(((closureN)self_731510)->elements[1], quote_Cyc_91opaque_127));}
+return_direct_with_clo1(data,(closure)&c_731881,__lambda_27,  Cyc_eq(((closureN)self_731510)->elements[1], quote_Cyc_91opaque_127));}
 ; 
 }
 
@@ -4562,7 +4602,7 @@ c_731886.elements = (object *)alloca(sizeof(object) * 2);
 c_731886.elements[0] = ((closureN)self_731511)->elements[0];
 c_731886.elements[1] = ((closureN)self_731511)->elements[1];
 
-return_closcall1(data,(closure)&c_731886,  Cyc_eq(((closureN)self_731511)->elements[1], quote_Cyc_91has_91cycle_127));}
+return_direct_with_clo1(data,(closure)&c_731886,__lambda_28,  Cyc_eq(((closureN)self_731511)->elements[1], quote_Cyc_91has_91cycle_127));}
 ; 
 }
 
@@ -4584,7 +4624,7 @@ c_731891.elements = (object *)alloca(sizeof(object) * 2);
 c_731891.elements[0] = ((closureN)self_731512)->elements[0];
 c_731891.elements[1] = ((closureN)self_731512)->elements[1];
 
-return_closcall1(data,(closure)&c_731891,  Cyc_eq(((closureN)self_731512)->elements[1], quote_Cyc_91spawn_91thread_67));}
+return_direct_with_clo1(data,(closure)&c_731891,__lambda_29,  Cyc_eq(((closureN)self_731512)->elements[1], quote_Cyc_91spawn_91thread_67));}
 ; 
 }
 
@@ -4606,7 +4646,7 @@ c_731896.elements = (object *)alloca(sizeof(object) * 2);
 c_731896.elements[0] = ((closureN)self_731513)->elements[0];
 c_731896.elements[1] = ((closureN)self_731513)->elements[1];
 
-return_closcall1(data,(closure)&c_731896,  Cyc_eq(((closureN)self_731513)->elements[1], quote_Cyc_91end_91thread_67));}
+return_direct_with_clo1(data,(closure)&c_731896,__lambda_30,  Cyc_eq(((closureN)self_731513)->elements[1], quote_Cyc_91end_91thread_67));}
 ; 
 }
 
@@ -4628,7 +4668,7 @@ c_731901.elements = (object *)alloca(sizeof(object) * 2);
 c_731901.elements[0] = ((closureN)self_731514)->elements[0];
 c_731901.elements[1] = ((closureN)self_731514)->elements[1];
 
-return_closcall1(data,(closure)&c_731901,  Cyc_eq(((closureN)self_731514)->elements[1], quote_Cyc_91stdout));}
+return_direct_with_clo1(data,(closure)&c_731901,__lambda_31,  Cyc_eq(((closureN)self_731514)->elements[1], quote_Cyc_91stdout));}
 ; 
 }
 
@@ -4650,7 +4690,7 @@ c_731906.elements = (object *)alloca(sizeof(object) * 2);
 c_731906.elements[0] = ((closureN)self_731515)->elements[0];
 c_731906.elements[1] = ((closureN)self_731515)->elements[1];
 
-return_closcall1(data,(closure)&c_731906,  Cyc_eq(((closureN)self_731515)->elements[1], quote_Cyc_91stdin));}
+return_direct_with_clo1(data,(closure)&c_731906,__lambda_32,  Cyc_eq(((closureN)self_731515)->elements[1], quote_Cyc_91stdin));}
 ; 
 }
 
@@ -4672,7 +4712,7 @@ c_731911.elements = (object *)alloca(sizeof(object) * 2);
 c_731911.elements[0] = ((closureN)self_731516)->elements[0];
 c_731911.elements[1] = ((closureN)self_731516)->elements[1];
 
-return_closcall1(data,(closure)&c_731911,  Cyc_eq(((closureN)self_731516)->elements[1], quote_Cyc_91stderr));}
+return_direct_with_clo1(data,(closure)&c_731911,__lambda_33,  Cyc_eq(((closureN)self_731516)->elements[1], quote_Cyc_91stderr));}
 ; 
 }
 
@@ -4694,7 +4734,7 @@ c_731916.elements = (object *)alloca(sizeof(object) * 2);
 c_731916.elements[0] = ((closureN)self_731517)->elements[0];
 c_731916.elements[1] = ((closureN)self_731517)->elements[1];
 
-return_closcall1(data,(closure)&c_731916,  Cyc_eq(((closureN)self_731517)->elements[1], quote_Cyc_91list));}
+return_direct_with_clo1(data,(closure)&c_731916,__lambda_34,  Cyc_eq(((closureN)self_731517)->elements[1], quote_Cyc_91list));}
 ; 
 }
 
@@ -4716,7 +4756,7 @@ c_731921.elements = (object *)alloca(sizeof(object) * 2);
 c_731921.elements[0] = ((closureN)self_731518)->elements[0];
 c_731921.elements[1] = ((closureN)self_731518)->elements[1];
 
-return_closcall1(data,(closure)&c_731921,  Cyc_eq(((closureN)self_731518)->elements[1], quote_Cyc_91if));}
+return_direct_with_clo1(data,(closure)&c_731921,__lambda_35,  Cyc_eq(((closureN)self_731518)->elements[1], quote_Cyc_91if));}
 ; 
 }
 
@@ -4738,7 +4778,7 @@ c_731926.elements = (object *)alloca(sizeof(object) * 2);
 c_731926.elements[0] = ((closureN)self_731519)->elements[0];
 c_731926.elements[1] = ((closureN)self_731519)->elements[1];
 
-return_closcall1(data,(closure)&c_731926,  Cyc_eq(((closureN)self_731519)->elements[1], quote_Cyc_91fast_91plus));}
+return_direct_with_clo1(data,(closure)&c_731926,__lambda_36,  Cyc_eq(((closureN)self_731519)->elements[1], quote_Cyc_91fast_91plus));}
 ; 
 }
 
@@ -4760,7 +4800,7 @@ c_731931.elements = (object *)alloca(sizeof(object) * 2);
 c_731931.elements[0] = ((closureN)self_731520)->elements[0];
 c_731931.elements[1] = ((closureN)self_731520)->elements[1];
 
-return_closcall1(data,(closure)&c_731931,  Cyc_eq(((closureN)self_731520)->elements[1], quote_Cyc_91fast_91sub));}
+return_direct_with_clo1(data,(closure)&c_731931,__lambda_37,  Cyc_eq(((closureN)self_731520)->elements[1], quote_Cyc_91fast_91sub));}
 ; 
 }
 
@@ -4782,7 +4822,7 @@ c_731936.elements = (object *)alloca(sizeof(object) * 2);
 c_731936.elements[0] = ((closureN)self_731521)->elements[0];
 c_731936.elements[1] = ((closureN)self_731521)->elements[1];
 
-return_closcall1(data,(closure)&c_731936,  Cyc_eq(((closureN)self_731521)->elements[1], quote_Cyc_91fast_91mul));}
+return_direct_with_clo1(data,(closure)&c_731936,__lambda_38,  Cyc_eq(((closureN)self_731521)->elements[1], quote_Cyc_91fast_91mul));}
 ; 
 }
 
@@ -4804,7 +4844,7 @@ c_731941.elements = (object *)alloca(sizeof(object) * 2);
 c_731941.elements[0] = ((closureN)self_731522)->elements[0];
 c_731941.elements[1] = ((closureN)self_731522)->elements[1];
 
-return_closcall1(data,(closure)&c_731941,  Cyc_eq(((closureN)self_731522)->elements[1], quote_Cyc_91fast_91div));}
+return_direct_with_clo1(data,(closure)&c_731941,__lambda_39,  Cyc_eq(((closureN)self_731522)->elements[1], quote_Cyc_91fast_91div));}
 ; 
 }
 
@@ -4826,7 +4866,7 @@ c_731946.elements = (object *)alloca(sizeof(object) * 2);
 c_731946.elements[0] = ((closureN)self_731523)->elements[0];
 c_731946.elements[1] = ((closureN)self_731523)->elements[1];
 
-return_closcall1(data,(closure)&c_731946,  Cyc_eq(((closureN)self_731523)->elements[1], quote__87));}
+return_direct_with_clo1(data,(closure)&c_731946,__lambda_40,  Cyc_eq(((closureN)self_731523)->elements[1], quote__87));}
 ; 
 }
 
@@ -4848,7 +4888,7 @@ c_731951.elements = (object *)alloca(sizeof(object) * 2);
 c_731951.elements[0] = ((closureN)self_731524)->elements[0];
 c_731951.elements[1] = ((closureN)self_731524)->elements[1];
 
-return_closcall1(data,(closure)&c_731951,  Cyc_eq(((closureN)self_731524)->elements[1], quote__91));}
+return_direct_with_clo1(data,(closure)&c_731951,__lambda_41,  Cyc_eq(((closureN)self_731524)->elements[1], quote__91));}
 ; 
 }
 
@@ -4870,7 +4910,7 @@ c_731956.elements = (object *)alloca(sizeof(object) * 2);
 c_731956.elements[0] = ((closureN)self_731525)->elements[0];
 c_731956.elements[1] = ((closureN)self_731525)->elements[1];
 
-return_closcall1(data,(closure)&c_731956,  Cyc_eq(((closureN)self_731525)->elements[1], quote__85));}
+return_direct_with_clo1(data,(closure)&c_731956,__lambda_42,  Cyc_eq(((closureN)self_731525)->elements[1], quote__85));}
 ; 
 }
 
@@ -4892,7 +4932,7 @@ c_731961.elements = (object *)alloca(sizeof(object) * 2);
 c_731961.elements[0] = ((closureN)self_731526)->elements[0];
 c_731961.elements[1] = ((closureN)self_731526)->elements[1];
 
-return_closcall1(data,(closure)&c_731961,  Cyc_eq(((closureN)self_731526)->elements[1], quote__95));}
+return_direct_with_clo1(data,(closure)&c_731961,__lambda_43,  Cyc_eq(((closureN)self_731526)->elements[1], quote__95));}
 ; 
 }
 
@@ -4914,7 +4954,7 @@ c_731966.elements = (object *)alloca(sizeof(object) * 2);
 c_731966.elements[0] = ((closureN)self_731527)->elements[0];
 c_731966.elements[1] = ((closureN)self_731527)->elements[1];
 
-return_closcall1(data,(closure)&c_731966,  Cyc_eq(((closureN)self_731527)->elements[1], quote_Cyc_91fast_91eq));}
+return_direct_with_clo1(data,(closure)&c_731966,__lambda_44,  Cyc_eq(((closureN)self_731527)->elements[1], quote_Cyc_91fast_91eq));}
 ; 
 }
 
@@ -4936,7 +4976,7 @@ c_731971.elements = (object *)alloca(sizeof(object) * 2);
 c_731971.elements[0] = ((closureN)self_731528)->elements[0];
 c_731971.elements[1] = ((closureN)self_731528)->elements[1];
 
-return_closcall1(data,(closure)&c_731971,  Cyc_eq(((closureN)self_731528)->elements[1], quote_Cyc_91fast_91gt));}
+return_direct_with_clo1(data,(closure)&c_731971,__lambda_45,  Cyc_eq(((closureN)self_731528)->elements[1], quote_Cyc_91fast_91gt));}
 ; 
 }
 
@@ -4958,7 +4998,7 @@ c_731976.elements = (object *)alloca(sizeof(object) * 2);
 c_731976.elements[0] = ((closureN)self_731529)->elements[0];
 c_731976.elements[1] = ((closureN)self_731529)->elements[1];
 
-return_closcall1(data,(closure)&c_731976,  Cyc_eq(((closureN)self_731529)->elements[1], quote_Cyc_91fast_91lt));}
+return_direct_with_clo1(data,(closure)&c_731976,__lambda_46,  Cyc_eq(((closureN)self_731529)->elements[1], quote_Cyc_91fast_91lt));}
 ; 
 }
 
@@ -4980,7 +5020,7 @@ c_731981.elements = (object *)alloca(sizeof(object) * 2);
 c_731981.elements[0] = ((closureN)self_731530)->elements[0];
 c_731981.elements[1] = ((closureN)self_731530)->elements[1];
 
-return_closcall1(data,(closure)&c_731981,  Cyc_eq(((closureN)self_731530)->elements[1], quote_Cyc_91fast_91gte));}
+return_direct_with_clo1(data,(closure)&c_731981,__lambda_47,  Cyc_eq(((closureN)self_731530)->elements[1], quote_Cyc_91fast_91gte));}
 ; 
 }
 
@@ -5002,7 +5042,7 @@ c_731986.elements = (object *)alloca(sizeof(object) * 2);
 c_731986.elements[0] = ((closureN)self_731531)->elements[0];
 c_731986.elements[1] = ((closureN)self_731531)->elements[1];
 
-return_closcall1(data,(closure)&c_731986,  Cyc_eq(((closureN)self_731531)->elements[1], quote_Cyc_91fast_91lte));}
+return_direct_with_clo1(data,(closure)&c_731986,__lambda_48,  Cyc_eq(((closureN)self_731531)->elements[1], quote_Cyc_91fast_91lte));}
 ; 
 }
 
@@ -5024,7 +5064,7 @@ c_731991.elements = (object *)alloca(sizeof(object) * 2);
 c_731991.elements[0] = ((closureN)self_731532)->elements[0];
 c_731991.elements[1] = ((closureN)self_731532)->elements[1];
 
-return_closcall1(data,(closure)&c_731991,  Cyc_eq(((closureN)self_731532)->elements[1], quote_Cyc_91fast_91char_91eq));}
+return_direct_with_clo1(data,(closure)&c_731991,__lambda_49,  Cyc_eq(((closureN)self_731532)->elements[1], quote_Cyc_91fast_91char_91eq));}
 ; 
 }
 
@@ -5046,7 +5086,7 @@ c_731996.elements = (object *)alloca(sizeof(object) * 2);
 c_731996.elements[0] = ((closureN)self_731533)->elements[0];
 c_731996.elements[1] = ((closureN)self_731533)->elements[1];
 
-return_closcall1(data,(closure)&c_731996,  Cyc_eq(((closureN)self_731533)->elements[1], quote_Cyc_91fast_91char_91gt));}
+return_direct_with_clo1(data,(closure)&c_731996,__lambda_50,  Cyc_eq(((closureN)self_731533)->elements[1], quote_Cyc_91fast_91char_91gt));}
 ; 
 }
 
@@ -5068,7 +5108,7 @@ c_732001.elements = (object *)alloca(sizeof(object) * 2);
 c_732001.elements[0] = ((closureN)self_731534)->elements[0];
 c_732001.elements[1] = ((closureN)self_731534)->elements[1];
 
-return_closcall1(data,(closure)&c_732001,  Cyc_eq(((closureN)self_731534)->elements[1], quote_Cyc_91fast_91char_91lt));}
+return_direct_with_clo1(data,(closure)&c_732001,__lambda_51,  Cyc_eq(((closureN)self_731534)->elements[1], quote_Cyc_91fast_91char_91lt));}
 ; 
 }
 
@@ -5090,7 +5130,7 @@ c_732006.elements = (object *)alloca(sizeof(object) * 2);
 c_732006.elements[0] = ((closureN)self_731535)->elements[0];
 c_732006.elements[1] = ((closureN)self_731535)->elements[1];
 
-return_closcall1(data,(closure)&c_732006,  Cyc_eq(((closureN)self_731535)->elements[1], quote_Cyc_91fast_91char_91gte));}
+return_direct_with_clo1(data,(closure)&c_732006,__lambda_52,  Cyc_eq(((closureN)self_731535)->elements[1], quote_Cyc_91fast_91char_91gte));}
 ; 
 }
 
@@ -5112,7 +5152,7 @@ c_732011.elements = (object *)alloca(sizeof(object) * 2);
 c_732011.elements[0] = ((closureN)self_731536)->elements[0];
 c_732011.elements[1] = ((closureN)self_731536)->elements[1];
 
-return_closcall1(data,(closure)&c_732011,  Cyc_eq(((closureN)self_731536)->elements[1], quote_Cyc_91fast_91char_91lte));}
+return_direct_with_clo1(data,(closure)&c_732011,__lambda_53,  Cyc_eq(((closureN)self_731536)->elements[1], quote_Cyc_91fast_91char_91lte));}
 ; 
 }
 
@@ -5134,7 +5174,7 @@ c_732016.elements = (object *)alloca(sizeof(object) * 2);
 c_732016.elements[0] = ((closureN)self_731537)->elements[0];
 c_732016.elements[1] = ((closureN)self_731537)->elements[1];
 
-return_closcall1(data,(closure)&c_732016,  Cyc_eq(((closureN)self_731537)->elements[1], quote__123));}
+return_direct_with_clo1(data,(closure)&c_732016,__lambda_54,  Cyc_eq(((closureN)self_731537)->elements[1], quote__123));}
 ; 
 }
 
@@ -5156,7 +5196,7 @@ c_732021.elements = (object *)alloca(sizeof(object) * 2);
 c_732021.elements[0] = ((closureN)self_731538)->elements[0];
 c_732021.elements[1] = ((closureN)self_731538)->elements[1];
 
-return_closcall1(data,(closure)&c_732021,  Cyc_eq(((closureN)self_731538)->elements[1], quote__125));}
+return_direct_with_clo1(data,(closure)&c_732021,__lambda_55,  Cyc_eq(((closureN)self_731538)->elements[1], quote__125));}
 ; 
 }
 
@@ -5178,7 +5218,7 @@ c_732026.elements = (object *)alloca(sizeof(object) * 2);
 c_732026.elements[0] = ((closureN)self_731539)->elements[0];
 c_732026.elements[1] = ((closureN)self_731539)->elements[1];
 
-return_closcall1(data,(closure)&c_732026,  Cyc_eq(((closureN)self_731539)->elements[1], quote__121));}
+return_direct_with_clo1(data,(closure)&c_732026,__lambda_56,  Cyc_eq(((closureN)self_731539)->elements[1], quote__121));}
 ; 
 }
 
@@ -5200,7 +5240,7 @@ c_732031.elements = (object *)alloca(sizeof(object) * 2);
 c_732031.elements[0] = ((closureN)self_731540)->elements[0];
 c_732031.elements[1] = ((closureN)self_731540)->elements[1];
 
-return_closcall1(data,(closure)&c_732031,  Cyc_eq(((closureN)self_731540)->elements[1], quote__125_123));}
+return_direct_with_clo1(data,(closure)&c_732031,__lambda_57,  Cyc_eq(((closureN)self_731540)->elements[1], quote__125_123));}
 ; 
 }
 
@@ -5222,7 +5262,7 @@ c_732036.elements = (object *)alloca(sizeof(object) * 2);
 c_732036.elements[0] = ((closureN)self_731541)->elements[0];
 c_732036.elements[1] = ((closureN)self_731541)->elements[1];
 
-return_closcall1(data,(closure)&c_732036,  Cyc_eq(((closureN)self_731541)->elements[1], quote__121_123));}
+return_direct_with_clo1(data,(closure)&c_732036,__lambda_58,  Cyc_eq(((closureN)self_731541)->elements[1], quote__121_123));}
 ; 
 }
 
@@ -5244,7 +5284,7 @@ c_732041.elements = (object *)alloca(sizeof(object) * 2);
 c_732041.elements[0] = ((closureN)self_731542)->elements[0];
 c_732041.elements[1] = ((closureN)self_731542)->elements[1];
 
-return_closcall1(data,(closure)&c_732041,  Cyc_eq(((closureN)self_731542)->elements[1], quote_apply));}
+return_direct_with_clo1(data,(closure)&c_732041,__lambda_59,  Cyc_eq(((closureN)self_731542)->elements[1], quote_apply));}
 ; 
 }
 
@@ -5266,7 +5306,7 @@ c_732046.elements = (object *)alloca(sizeof(object) * 2);
 c_732046.elements[0] = ((closureN)self_731543)->elements[0];
 c_732046.elements[1] = ((closureN)self_731543)->elements[1];
 
-return_closcall1(data,(closure)&c_732046,  Cyc_eq(((closureN)self_731543)->elements[1], quote_Cyc_91fast_91apply));}
+return_direct_with_clo1(data,(closure)&c_732046,__lambda_60,  Cyc_eq(((closureN)self_731543)->elements[1], quote_Cyc_91fast_91apply));}
 ; 
 }
 
@@ -5288,7 +5328,7 @@ c_732051.elements = (object *)alloca(sizeof(object) * 2);
 c_732051.elements[0] = ((closureN)self_731544)->elements[0];
 c_732051.elements[1] = ((closureN)self_731544)->elements[1];
 
-return_closcall1(data,(closure)&c_732051,  Cyc_eq(((closureN)self_731544)->elements[1], quote__75halt));}
+return_direct_with_clo1(data,(closure)&c_732051,__lambda_61,  Cyc_eq(((closureN)self_731544)->elements[1], quote__75halt));}
 ; 
 }
 
@@ -5310,7 +5350,7 @@ c_732056.elements = (object *)alloca(sizeof(object) * 2);
 c_732056.elements[0] = ((closureN)self_731545)->elements[0];
 c_732056.elements[1] = ((closureN)self_731545)->elements[1];
 
-return_closcall1(data,(closure)&c_732056,  Cyc_eq(((closureN)self_731545)->elements[1], quote_exit));}
+return_direct_with_clo1(data,(closure)&c_732056,__lambda_62,  Cyc_eq(((closureN)self_731545)->elements[1], quote_exit));}
 ; 
 }
 
@@ -5332,7 +5372,7 @@ c_732061.elements = (object *)alloca(sizeof(object) * 2);
 c_732061.elements[0] = ((closureN)self_731546)->elements[0];
 c_732061.elements[1] = ((closureN)self_731546)->elements[1];
 
-return_closcall1(data,(closure)&c_732061,  Cyc_eq(((closureN)self_731546)->elements[1], quote_Cyc_91default_91exception_91handler));}
+return_direct_with_clo1(data,(closure)&c_732061,__lambda_63,  Cyc_eq(((closureN)self_731546)->elements[1], quote_Cyc_91default_91exception_91handler));}
 ; 
 }
 
@@ -5354,7 +5394,7 @@ c_732066.elements = (object *)alloca(sizeof(object) * 2);
 c_732066.elements[0] = ((closureN)self_731547)->elements[0];
 c_732066.elements[1] = ((closureN)self_731547)->elements[1];
 
-return_closcall1(data,(closure)&c_732066,  Cyc_eq(((closureN)self_731547)->elements[1], quote_Cyc_91current_91exception_91handler));}
+return_direct_with_clo1(data,(closure)&c_732066,__lambda_64,  Cyc_eq(((closureN)self_731547)->elements[1], quote_Cyc_91current_91exception_91handler));}
 ; 
 }
 
@@ -5376,7 +5416,7 @@ c_732071.elements = (object *)alloca(sizeof(object) * 2);
 c_732071.elements[0] = ((closureN)self_731548)->elements[0];
 c_732071.elements[1] = ((closureN)self_731548)->elements[1];
 
-return_closcall1(data,(closure)&c_732071,  Cyc_eq(((closureN)self_731548)->elements[1], quote_open_91input_91file));}
+return_direct_with_clo1(data,(closure)&c_732071,__lambda_65,  Cyc_eq(((closureN)self_731548)->elements[1], quote_open_91input_91file));}
 ; 
 }
 
@@ -5398,7 +5438,7 @@ c_732076.elements = (object *)alloca(sizeof(object) * 2);
 c_732076.elements[0] = ((closureN)self_731549)->elements[0];
 c_732076.elements[1] = ((closureN)self_731549)->elements[1];
 
-return_closcall1(data,(closure)&c_732076,  Cyc_eq(((closureN)self_731549)->elements[1], quote_open_91output_91file));}
+return_direct_with_clo1(data,(closure)&c_732076,__lambda_66,  Cyc_eq(((closureN)self_731549)->elements[1], quote_open_91output_91file));}
 ; 
 }
 
@@ -5420,7 +5460,7 @@ c_732081.elements = (object *)alloca(sizeof(object) * 2);
 c_732081.elements[0] = ((closureN)self_731550)->elements[0];
 c_732081.elements[1] = ((closureN)self_731550)->elements[1];
 
-return_closcall1(data,(closure)&c_732081,  Cyc_eq(((closureN)self_731550)->elements[1], quote_close_91port));}
+return_direct_with_clo1(data,(closure)&c_732081,__lambda_67,  Cyc_eq(((closureN)self_731550)->elements[1], quote_close_91port));}
 ; 
 }
 
@@ -5442,7 +5482,7 @@ c_732086.elements = (object *)alloca(sizeof(object) * 2);
 c_732086.elements[0] = ((closureN)self_731551)->elements[0];
 c_732086.elements[1] = ((closureN)self_731551)->elements[1];
 
-return_closcall1(data,(closure)&c_732086,  Cyc_eq(((closureN)self_731551)->elements[1], quote_close_91input_91port));}
+return_direct_with_clo1(data,(closure)&c_732086,__lambda_68,  Cyc_eq(((closureN)self_731551)->elements[1], quote_close_91input_91port));}
 ; 
 }
 
@@ -5464,7 +5504,7 @@ c_732091.elements = (object *)alloca(sizeof(object) * 2);
 c_732091.elements[0] = ((closureN)self_731552)->elements[0];
 c_732091.elements[1] = ((closureN)self_731552)->elements[1];
 
-return_closcall1(data,(closure)&c_732091,  Cyc_eq(((closureN)self_731552)->elements[1], quote_close_91output_91port));}
+return_direct_with_clo1(data,(closure)&c_732091,__lambda_69,  Cyc_eq(((closureN)self_731552)->elements[1], quote_close_91output_91port));}
 ; 
 }
 
@@ -5486,7 +5526,7 @@ c_732096.elements = (object *)alloca(sizeof(object) * 2);
 c_732096.elements[0] = ((closureN)self_731553)->elements[0];
 c_732096.elements[1] = ((closureN)self_731553)->elements[1];
 
-return_closcall1(data,(closure)&c_732096,  Cyc_eq(((closureN)self_731553)->elements[1], quote_Cyc_91flush_91output_91port));}
+return_direct_with_clo1(data,(closure)&c_732096,__lambda_70,  Cyc_eq(((closureN)self_731553)->elements[1], quote_Cyc_91flush_91output_91port));}
 ; 
 }
 
@@ -5508,7 +5548,7 @@ c_732101.elements = (object *)alloca(sizeof(object) * 2);
 c_732101.elements[0] = ((closureN)self_731554)->elements[0];
 c_732101.elements[1] = ((closureN)self_731554)->elements[1];
 
-return_closcall1(data,(closure)&c_732101,  Cyc_eq(((closureN)self_731554)->elements[1], quote_file_91exists_127));}
+return_direct_with_clo1(data,(closure)&c_732101,__lambda_71,  Cyc_eq(((closureN)self_731554)->elements[1], quote_file_91exists_127));}
 ; 
 }
 
@@ -5530,7 +5570,7 @@ c_732106.elements = (object *)alloca(sizeof(object) * 2);
 c_732106.elements[0] = ((closureN)self_731555)->elements[0];
 c_732106.elements[1] = ((closureN)self_731555)->elements[1];
 
-return_closcall1(data,(closure)&c_732106,  Cyc_eq(((closureN)self_731555)->elements[1], quote_delete_91file));}
+return_direct_with_clo1(data,(closure)&c_732106,__lambda_72,  Cyc_eq(((closureN)self_731555)->elements[1], quote_delete_91file));}
 ; 
 }
 
@@ -5552,7 +5592,7 @@ c_732111.elements = (object *)alloca(sizeof(object) * 2);
 c_732111.elements[0] = ((closureN)self_731556)->elements[0];
 c_732111.elements[1] = ((closureN)self_731556)->elements[1];
 
-return_closcall1(data,(closure)&c_732111,  Cyc_eq(((closureN)self_731556)->elements[1], quote_Cyc_91read_91char));}
+return_direct_with_clo1(data,(closure)&c_732111,__lambda_73,  Cyc_eq(((closureN)self_731556)->elements[1], quote_Cyc_91read_91char));}
 ; 
 }
 
@@ -5574,7 +5614,7 @@ c_732116.elements = (object *)alloca(sizeof(object) * 2);
 c_732116.elements[0] = ((closureN)self_731557)->elements[0];
 c_732116.elements[1] = ((closureN)self_731557)->elements[1];
 
-return_closcall1(data,(closure)&c_732116,  Cyc_eq(((closureN)self_731557)->elements[1], quote_Cyc_91peek_91char));}
+return_direct_with_clo1(data,(closure)&c_732116,__lambda_74,  Cyc_eq(((closureN)self_731557)->elements[1], quote_Cyc_91peek_91char));}
 ; 
 }
 
@@ -5596,7 +5636,7 @@ c_732121.elements = (object *)alloca(sizeof(object) * 2);
 c_732121.elements[0] = ((closureN)self_731558)->elements[0];
 c_732121.elements[1] = ((closureN)self_731558)->elements[1];
 
-return_closcall1(data,(closure)&c_732121,  Cyc_eq(((closureN)self_731558)->elements[1], quote_Cyc_91read_91line));}
+return_direct_with_clo1(data,(closure)&c_732121,__lambda_75,  Cyc_eq(((closureN)self_731558)->elements[1], quote_Cyc_91read_91line));}
 ; 
 }
 
@@ -5618,7 +5658,7 @@ c_732126.elements = (object *)alloca(sizeof(object) * 2);
 c_732126.elements[0] = ((closureN)self_731559)->elements[0];
 c_732126.elements[1] = ((closureN)self_731559)->elements[1];
 
-return_closcall1(data,(closure)&c_732126,  Cyc_eq(((closureN)self_731559)->elements[1], quote_Cyc_91display));}
+return_direct_with_clo1(data,(closure)&c_732126,__lambda_76,  Cyc_eq(((closureN)self_731559)->elements[1], quote_Cyc_91display));}
 ; 
 }
 
@@ -5640,7 +5680,7 @@ c_732131.elements = (object *)alloca(sizeof(object) * 2);
 c_732131.elements[0] = ((closureN)self_731560)->elements[0];
 c_732131.elements[1] = ((closureN)self_731560)->elements[1];
 
-return_closcall1(data,(closure)&c_732131,  Cyc_eq(((closureN)self_731560)->elements[1], quote_Cyc_91write));}
+return_direct_with_clo1(data,(closure)&c_732131,__lambda_77,  Cyc_eq(((closureN)self_731560)->elements[1], quote_Cyc_91write));}
 ; 
 }
 
@@ -5662,7 +5702,7 @@ c_732136.elements = (object *)alloca(sizeof(object) * 2);
 c_732136.elements[0] = ((closureN)self_731561)->elements[0];
 c_732136.elements[1] = ((closureN)self_731561)->elements[1];
 
-return_closcall1(data,(closure)&c_732136,  Cyc_eq(((closureN)self_731561)->elements[1], quote_Cyc_91write_91char));}
+return_direct_with_clo1(data,(closure)&c_732136,__lambda_78,  Cyc_eq(((closureN)self_731561)->elements[1], quote_Cyc_91write_91char));}
 ; 
 }
 
@@ -5684,7 +5724,7 @@ c_732141.elements = (object *)alloca(sizeof(object) * 2);
 c_732141.elements[0] = ((closureN)self_731562)->elements[0];
 c_732141.elements[1] = ((closureN)self_731562)->elements[1];
 
-return_closcall1(data,(closure)&c_732141,  Cyc_eq(((closureN)self_731562)->elements[1], quote_Cyc_91unsafe_91car));}
+return_direct_with_clo1(data,(closure)&c_732141,__lambda_79,  Cyc_eq(((closureN)self_731562)->elements[1], quote_Cyc_91unsafe_91car));}
 ; 
 }
 
@@ -5706,7 +5746,7 @@ c_732146.elements = (object *)alloca(sizeof(object) * 2);
 c_732146.elements[0] = ((closureN)self_731563)->elements[0];
 c_732146.elements[1] = ((closureN)self_731563)->elements[1];
 
-return_closcall1(data,(closure)&c_732146,  Cyc_eq(((closureN)self_731563)->elements[1], quote_Cyc_91unsafe_91cdr));}
+return_direct_with_clo1(data,(closure)&c_732146,__lambda_80,  Cyc_eq(((closureN)self_731563)->elements[1], quote_Cyc_91unsafe_91cdr));}
 ; 
 }
 
@@ -5728,7 +5768,7 @@ c_732151.elements = (object *)alloca(sizeof(object) * 2);
 c_732151.elements[0] = ((closureN)self_731564)->elements[0];
 c_732151.elements[1] = ((closureN)self_731564)->elements[1];
 
-return_closcall1(data,(closure)&c_732151,  Cyc_eq(((closureN)self_731564)->elements[1], quote_car));}
+return_direct_with_clo1(data,(closure)&c_732151,__lambda_81,  Cyc_eq(((closureN)self_731564)->elements[1], quote_car));}
 ; 
 }
 
@@ -5750,7 +5790,7 @@ c_732156.elements = (object *)alloca(sizeof(object) * 2);
 c_732156.elements[0] = ((closureN)self_731565)->elements[0];
 c_732156.elements[1] = ((closureN)self_731565)->elements[1];
 
-return_closcall1(data,(closure)&c_732156,  Cyc_eq(((closureN)self_731565)->elements[1], quote_cdr));}
+return_direct_with_clo1(data,(closure)&c_732156,__lambda_82,  Cyc_eq(((closureN)self_731565)->elements[1], quote_cdr));}
 ; 
 }
 
@@ -5772,7 +5812,7 @@ c_732161.elements = (object *)alloca(sizeof(object) * 2);
 c_732161.elements[0] = ((closureN)self_731566)->elements[0];
 c_732161.elements[1] = ((closureN)self_731566)->elements[1];
 
-return_closcall1(data,(closure)&c_732161,  Cyc_eq(((closureN)self_731566)->elements[1], quote_caar));}
+return_direct_with_clo1(data,(closure)&c_732161,__lambda_83,  Cyc_eq(((closureN)self_731566)->elements[1], quote_caar));}
 ; 
 }
 
@@ -5794,7 +5834,7 @@ c_732166.elements = (object *)alloca(sizeof(object) * 2);
 c_732166.elements[0] = ((closureN)self_731567)->elements[0];
 c_732166.elements[1] = ((closureN)self_731567)->elements[1];
 
-return_closcall1(data,(closure)&c_732166,  Cyc_eq(((closureN)self_731567)->elements[1], quote_cadr));}
+return_direct_with_clo1(data,(closure)&c_732166,__lambda_84,  Cyc_eq(((closureN)self_731567)->elements[1], quote_cadr));}
 ; 
 }
 
@@ -5816,7 +5856,7 @@ c_732171.elements = (object *)alloca(sizeof(object) * 2);
 c_732171.elements[0] = ((closureN)self_731568)->elements[0];
 c_732171.elements[1] = ((closureN)self_731568)->elements[1];
 
-return_closcall1(data,(closure)&c_732171,  Cyc_eq(((closureN)self_731568)->elements[1], quote_cdar));}
+return_direct_with_clo1(data,(closure)&c_732171,__lambda_85,  Cyc_eq(((closureN)self_731568)->elements[1], quote_cdar));}
 ; 
 }
 
@@ -5838,7 +5878,7 @@ c_732176.elements = (object *)alloca(sizeof(object) * 2);
 c_732176.elements[0] = ((closureN)self_731569)->elements[0];
 c_732176.elements[1] = ((closureN)self_731569)->elements[1];
 
-return_closcall1(data,(closure)&c_732176,  Cyc_eq(((closureN)self_731569)->elements[1], quote_cddr));}
+return_direct_with_clo1(data,(closure)&c_732176,__lambda_86,  Cyc_eq(((closureN)self_731569)->elements[1], quote_cddr));}
 ; 
 }
 
@@ -5860,7 +5900,7 @@ c_732181.elements = (object *)alloca(sizeof(object) * 2);
 c_732181.elements[0] = ((closureN)self_731570)->elements[0];
 c_732181.elements[1] = ((closureN)self_731570)->elements[1];
 
-return_closcall1(data,(closure)&c_732181,  Cyc_eq(((closureN)self_731570)->elements[1], quote_caaar));}
+return_direct_with_clo1(data,(closure)&c_732181,__lambda_87,  Cyc_eq(((closureN)self_731570)->elements[1], quote_caaar));}
 ; 
 }
 
@@ -5882,7 +5922,7 @@ c_732186.elements = (object *)alloca(sizeof(object) * 2);
 c_732186.elements[0] = ((closureN)self_731571)->elements[0];
 c_732186.elements[1] = ((closureN)self_731571)->elements[1];
 
-return_closcall1(data,(closure)&c_732186,  Cyc_eq(((closureN)self_731571)->elements[1], quote_caadr));}
+return_direct_with_clo1(data,(closure)&c_732186,__lambda_88,  Cyc_eq(((closureN)self_731571)->elements[1], quote_caadr));}
 ; 
 }
 
@@ -5904,7 +5944,7 @@ c_732191.elements = (object *)alloca(sizeof(object) * 2);
 c_732191.elements[0] = ((closureN)self_731572)->elements[0];
 c_732191.elements[1] = ((closureN)self_731572)->elements[1];
 
-return_closcall1(data,(closure)&c_732191,  Cyc_eq(((closureN)self_731572)->elements[1], quote_cadar));}
+return_direct_with_clo1(data,(closure)&c_732191,__lambda_89,  Cyc_eq(((closureN)self_731572)->elements[1], quote_cadar));}
 ; 
 }
 
@@ -5926,7 +5966,7 @@ c_732196.elements = (object *)alloca(sizeof(object) * 2);
 c_732196.elements[0] = ((closureN)self_731573)->elements[0];
 c_732196.elements[1] = ((closureN)self_731573)->elements[1];
 
-return_closcall1(data,(closure)&c_732196,  Cyc_eq(((closureN)self_731573)->elements[1], quote_caddr));}
+return_direct_with_clo1(data,(closure)&c_732196,__lambda_90,  Cyc_eq(((closureN)self_731573)->elements[1], quote_caddr));}
 ; 
 }
 
@@ -5948,7 +5988,7 @@ c_732201.elements = (object *)alloca(sizeof(object) * 2);
 c_732201.elements[0] = ((closureN)self_731574)->elements[0];
 c_732201.elements[1] = ((closureN)self_731574)->elements[1];
 
-return_closcall1(data,(closure)&c_732201,  Cyc_eq(((closureN)self_731574)->elements[1], quote_cdaar));}
+return_direct_with_clo1(data,(closure)&c_732201,__lambda_91,  Cyc_eq(((closureN)self_731574)->elements[1], quote_cdaar));}
 ; 
 }
 
@@ -5970,7 +6010,7 @@ c_732206.elements = (object *)alloca(sizeof(object) * 2);
 c_732206.elements[0] = ((closureN)self_731575)->elements[0];
 c_732206.elements[1] = ((closureN)self_731575)->elements[1];
 
-return_closcall1(data,(closure)&c_732206,  Cyc_eq(((closureN)self_731575)->elements[1], quote_cdadr));}
+return_direct_with_clo1(data,(closure)&c_732206,__lambda_92,  Cyc_eq(((closureN)self_731575)->elements[1], quote_cdadr));}
 ; 
 }
 
@@ -5992,7 +6032,7 @@ c_732211.elements = (object *)alloca(sizeof(object) * 2);
 c_732211.elements[0] = ((closureN)self_731576)->elements[0];
 c_732211.elements[1] = ((closureN)self_731576)->elements[1];
 
-return_closcall1(data,(closure)&c_732211,  Cyc_eq(((closureN)self_731576)->elements[1], quote_cddar));}
+return_direct_with_clo1(data,(closure)&c_732211,__lambda_93,  Cyc_eq(((closureN)self_731576)->elements[1], quote_cddar));}
 ; 
 }
 
@@ -6014,7 +6054,7 @@ c_732216.elements = (object *)alloca(sizeof(object) * 2);
 c_732216.elements[0] = ((closureN)self_731577)->elements[0];
 c_732216.elements[1] = ((closureN)self_731577)->elements[1];
 
-return_closcall1(data,(closure)&c_732216,  Cyc_eq(((closureN)self_731577)->elements[1], quote_cdddr));}
+return_direct_with_clo1(data,(closure)&c_732216,__lambda_94,  Cyc_eq(((closureN)self_731577)->elements[1], quote_cdddr));}
 ; 
 }
 
@@ -6036,7 +6076,7 @@ c_732221.elements = (object *)alloca(sizeof(object) * 2);
 c_732221.elements[0] = ((closureN)self_731578)->elements[0];
 c_732221.elements[1] = ((closureN)self_731578)->elements[1];
 
-return_closcall1(data,(closure)&c_732221,  Cyc_eq(((closureN)self_731578)->elements[1], quote_caaaar));}
+return_direct_with_clo1(data,(closure)&c_732221,__lambda_95,  Cyc_eq(((closureN)self_731578)->elements[1], quote_caaaar));}
 ; 
 }
 
@@ -6058,7 +6098,7 @@ c_732226.elements = (object *)alloca(sizeof(object) * 2);
 c_732226.elements[0] = ((closureN)self_731579)->elements[0];
 c_732226.elements[1] = ((closureN)self_731579)->elements[1];
 
-return_closcall1(data,(closure)&c_732226,  Cyc_eq(((closureN)self_731579)->elements[1], quote_caaadr));}
+return_direct_with_clo1(data,(closure)&c_732226,__lambda_96,  Cyc_eq(((closureN)self_731579)->elements[1], quote_caaadr));}
 ; 
 }
 
@@ -6080,7 +6120,7 @@ c_732231.elements = (object *)alloca(sizeof(object) * 2);
 c_732231.elements[0] = ((closureN)self_731580)->elements[0];
 c_732231.elements[1] = ((closureN)self_731580)->elements[1];
 
-return_closcall1(data,(closure)&c_732231,  Cyc_eq(((closureN)self_731580)->elements[1], quote_caadar));}
+return_direct_with_clo1(data,(closure)&c_732231,__lambda_97,  Cyc_eq(((closureN)self_731580)->elements[1], quote_caadar));}
 ; 
 }
 
@@ -6102,7 +6142,7 @@ c_732236.elements = (object *)alloca(sizeof(object) * 2);
 c_732236.elements[0] = ((closureN)self_731581)->elements[0];
 c_732236.elements[1] = ((closureN)self_731581)->elements[1];
 
-return_closcall1(data,(closure)&c_732236,  Cyc_eq(((closureN)self_731581)->elements[1], quote_caaddr));}
+return_direct_with_clo1(data,(closure)&c_732236,__lambda_98,  Cyc_eq(((closureN)self_731581)->elements[1], quote_caaddr));}
 ; 
 }
 
@@ -6124,7 +6164,7 @@ c_732241.elements = (object *)alloca(sizeof(object) * 2);
 c_732241.elements[0] = ((closureN)self_731582)->elements[0];
 c_732241.elements[1] = ((closureN)self_731582)->elements[1];
 
-return_closcall1(data,(closure)&c_732241,  Cyc_eq(((closureN)self_731582)->elements[1], quote_cadaar));}
+return_direct_with_clo1(data,(closure)&c_732241,__lambda_99,  Cyc_eq(((closureN)self_731582)->elements[1], quote_cadaar));}
 ; 
 }
 
@@ -6146,7 +6186,7 @@ c_732246.elements = (object *)alloca(sizeof(object) * 2);
 c_732246.elements[0] = ((closureN)self_731583)->elements[0];
 c_732246.elements[1] = ((closureN)self_731583)->elements[1];
 
-return_closcall1(data,(closure)&c_732246,  Cyc_eq(((closureN)self_731583)->elements[1], quote_cadadr));}
+return_direct_with_clo1(data,(closure)&c_732246,__lambda_100,  Cyc_eq(((closureN)self_731583)->elements[1], quote_cadadr));}
 ; 
 }
 
@@ -6168,7 +6208,7 @@ c_732251.elements = (object *)alloca(sizeof(object) * 2);
 c_732251.elements[0] = ((closureN)self_731584)->elements[0];
 c_732251.elements[1] = ((closureN)self_731584)->elements[1];
 
-return_closcall1(data,(closure)&c_732251,  Cyc_eq(((closureN)self_731584)->elements[1], quote_caddar));}
+return_direct_with_clo1(data,(closure)&c_732251,__lambda_101,  Cyc_eq(((closureN)self_731584)->elements[1], quote_caddar));}
 ; 
 }
 
@@ -6190,7 +6230,7 @@ c_732256.elements = (object *)alloca(sizeof(object) * 2);
 c_732256.elements[0] = ((closureN)self_731585)->elements[0];
 c_732256.elements[1] = ((closureN)self_731585)->elements[1];
 
-return_closcall1(data,(closure)&c_732256,  Cyc_eq(((closureN)self_731585)->elements[1], quote_cadddr));}
+return_direct_with_clo1(data,(closure)&c_732256,__lambda_102,  Cyc_eq(((closureN)self_731585)->elements[1], quote_cadddr));}
 ; 
 }
 
@@ -6212,7 +6252,7 @@ c_732261.elements = (object *)alloca(sizeof(object) * 2);
 c_732261.elements[0] = ((closureN)self_731586)->elements[0];
 c_732261.elements[1] = ((closureN)self_731586)->elements[1];
 
-return_closcall1(data,(closure)&c_732261,  Cyc_eq(((closureN)self_731586)->elements[1], quote_cdaaar));}
+return_direct_with_clo1(data,(closure)&c_732261,__lambda_103,  Cyc_eq(((closureN)self_731586)->elements[1], quote_cdaaar));}
 ; 
 }
 
@@ -6234,7 +6274,7 @@ c_732266.elements = (object *)alloca(sizeof(object) * 2);
 c_732266.elements[0] = ((closureN)self_731587)->elements[0];
 c_732266.elements[1] = ((closureN)self_731587)->elements[1];
 
-return_closcall1(data,(closure)&c_732266,  Cyc_eq(((closureN)self_731587)->elements[1], quote_cdaadr));}
+return_direct_with_clo1(data,(closure)&c_732266,__lambda_104,  Cyc_eq(((closureN)self_731587)->elements[1], quote_cdaadr));}
 ; 
 }
 
@@ -6256,7 +6296,7 @@ c_732271.elements = (object *)alloca(sizeof(object) * 2);
 c_732271.elements[0] = ((closureN)self_731588)->elements[0];
 c_732271.elements[1] = ((closureN)self_731588)->elements[1];
 
-return_closcall1(data,(closure)&c_732271,  Cyc_eq(((closureN)self_731588)->elements[1], quote_cdadar));}
+return_direct_with_clo1(data,(closure)&c_732271,__lambda_105,  Cyc_eq(((closureN)self_731588)->elements[1], quote_cdadar));}
 ; 
 }
 
@@ -6278,7 +6318,7 @@ c_732276.elements = (object *)alloca(sizeof(object) * 2);
 c_732276.elements[0] = ((closureN)self_731589)->elements[0];
 c_732276.elements[1] = ((closureN)self_731589)->elements[1];
 
-return_closcall1(data,(closure)&c_732276,  Cyc_eq(((closureN)self_731589)->elements[1], quote_cdaddr));}
+return_direct_with_clo1(data,(closure)&c_732276,__lambda_106,  Cyc_eq(((closureN)self_731589)->elements[1], quote_cdaddr));}
 ; 
 }
 
@@ -6300,7 +6340,7 @@ c_732281.elements = (object *)alloca(sizeof(object) * 2);
 c_732281.elements[0] = ((closureN)self_731590)->elements[0];
 c_732281.elements[1] = ((closureN)self_731590)->elements[1];
 
-return_closcall1(data,(closure)&c_732281,  Cyc_eq(((closureN)self_731590)->elements[1], quote_cddaar));}
+return_direct_with_clo1(data,(closure)&c_732281,__lambda_107,  Cyc_eq(((closureN)self_731590)->elements[1], quote_cddaar));}
 ; 
 }
 
@@ -6322,7 +6362,7 @@ c_732286.elements = (object *)alloca(sizeof(object) * 2);
 c_732286.elements[0] = ((closureN)self_731591)->elements[0];
 c_732286.elements[1] = ((closureN)self_731591)->elements[1];
 
-return_closcall1(data,(closure)&c_732286,  Cyc_eq(((closureN)self_731591)->elements[1], quote_cddadr));}
+return_direct_with_clo1(data,(closure)&c_732286,__lambda_108,  Cyc_eq(((closureN)self_731591)->elements[1], quote_cddadr));}
 ; 
 }
 
@@ -6344,7 +6384,7 @@ c_732291.elements = (object *)alloca(sizeof(object) * 2);
 c_732291.elements[0] = ((closureN)self_731592)->elements[0];
 c_732291.elements[1] = ((closureN)self_731592)->elements[1];
 
-return_closcall1(data,(closure)&c_732291,  Cyc_eq(((closureN)self_731592)->elements[1], quote_cdddar));}
+return_direct_with_clo1(data,(closure)&c_732291,__lambda_109,  Cyc_eq(((closureN)self_731592)->elements[1], quote_cdddar));}
 ; 
 }
 
@@ -6366,7 +6406,7 @@ c_732296.elements = (object *)alloca(sizeof(object) * 2);
 c_732296.elements[0] = ((closureN)self_731593)->elements[0];
 c_732296.elements[1] = ((closureN)self_731593)->elements[1];
 
-return_closcall1(data,(closure)&c_732296,  Cyc_eq(((closureN)self_731593)->elements[1], quote_cddddr));}
+return_direct_with_clo1(data,(closure)&c_732296,__lambda_110,  Cyc_eq(((closureN)self_731593)->elements[1], quote_cddddr));}
 ; 
 }
 
@@ -6388,7 +6428,7 @@ c_732301.elements = (object *)alloca(sizeof(object) * 2);
 c_732301.elements[0] = ((closureN)self_731594)->elements[0];
 c_732301.elements[1] = ((closureN)self_731594)->elements[1];
 
-return_closcall1(data,(closure)&c_732301,  Cyc_eq(((closureN)self_731594)->elements[1], quote_char_91_125integer));}
+return_direct_with_clo1(data,(closure)&c_732301,__lambda_111,  Cyc_eq(((closureN)self_731594)->elements[1], quote_char_91_125integer));}
 ; 
 }
 
@@ -6410,7 +6450,7 @@ c_732306.elements = (object *)alloca(sizeof(object) * 2);
 c_732306.elements[0] = ((closureN)self_731595)->elements[0];
 c_732306.elements[1] = ((closureN)self_731595)->elements[1];
 
-return_closcall1(data,(closure)&c_732306,  Cyc_eq(((closureN)self_731595)->elements[1], quote_integer_91_125char));}
+return_direct_with_clo1(data,(closure)&c_732306,__lambda_112,  Cyc_eq(((closureN)self_731595)->elements[1], quote_integer_91_125char));}
 ; 
 }
 
@@ -6432,7 +6472,7 @@ c_732311.elements = (object *)alloca(sizeof(object) * 2);
 c_732311.elements[0] = ((closureN)self_731596)->elements[0];
 c_732311.elements[1] = ((closureN)self_731596)->elements[1];
 
-return_closcall1(data,(closure)&c_732311,  Cyc_eq(((closureN)self_731596)->elements[1], quote_string_91_125number));}
+return_direct_with_clo1(data,(closure)&c_732311,__lambda_113,  Cyc_eq(((closureN)self_731596)->elements[1], quote_string_91_125number));}
 ; 
 }
 
@@ -6454,7 +6494,7 @@ c_732316.elements = (object *)alloca(sizeof(object) * 2);
 c_732316.elements[0] = ((closureN)self_731597)->elements[0];
 c_732316.elements[1] = ((closureN)self_731597)->elements[1];
 
-return_closcall1(data,(closure)&c_732316,  Cyc_eq(((closureN)self_731597)->elements[1], quote_list_91_125string));}
+return_direct_with_clo1(data,(closure)&c_732316,__lambda_114,  Cyc_eq(((closureN)self_731597)->elements[1], quote_list_91_125string));}
 ; 
 }
 
@@ -6476,7 +6516,7 @@ c_732321.elements = (object *)alloca(sizeof(object) * 2);
 c_732321.elements[0] = ((closureN)self_731598)->elements[0];
 c_732321.elements[1] = ((closureN)self_731598)->elements[1];
 
-return_closcall1(data,(closure)&c_732321,  Cyc_eq(((closureN)self_731598)->elements[1], quote_make_91bytevector));}
+return_direct_with_clo1(data,(closure)&c_732321,__lambda_115,  Cyc_eq(((closureN)self_731598)->elements[1], quote_make_91bytevector));}
 ; 
 }
 
@@ -6498,7 +6538,7 @@ c_732326.elements = (object *)alloca(sizeof(object) * 2);
 c_732326.elements[0] = ((closureN)self_731599)->elements[0];
 c_732326.elements[1] = ((closureN)self_731599)->elements[1];
 
-return_closcall1(data,(closure)&c_732326,  Cyc_eq(((closureN)self_731599)->elements[1], quote_bytevector_91length));}
+return_direct_with_clo1(data,(closure)&c_732326,__lambda_116,  Cyc_eq(((closureN)self_731599)->elements[1], quote_bytevector_91length));}
 ; 
 }
 
@@ -6520,7 +6560,7 @@ c_732331.elements = (object *)alloca(sizeof(object) * 2);
 c_732331.elements[0] = ((closureN)self_731600)->elements[0];
 c_732331.elements[1] = ((closureN)self_731600)->elements[1];
 
-return_closcall1(data,(closure)&c_732331,  Cyc_eq(((closureN)self_731600)->elements[1], quote_bytevector));}
+return_direct_with_clo1(data,(closure)&c_732331,__lambda_117,  Cyc_eq(((closureN)self_731600)->elements[1], quote_bytevector));}
 ; 
 }
 
@@ -6542,7 +6582,7 @@ c_732336.elements = (object *)alloca(sizeof(object) * 2);
 c_732336.elements[0] = ((closureN)self_731601)->elements[0];
 c_732336.elements[1] = ((closureN)self_731601)->elements[1];
 
-return_closcall1(data,(closure)&c_732336,  Cyc_eq(((closureN)self_731601)->elements[1], quote_bytevector_91append));}
+return_direct_with_clo1(data,(closure)&c_732336,__lambda_118,  Cyc_eq(((closureN)self_731601)->elements[1], quote_bytevector_91append));}
 ; 
 }
 
@@ -6564,7 +6604,7 @@ c_732341.elements = (object *)alloca(sizeof(object) * 2);
 c_732341.elements[0] = ((closureN)self_731602)->elements[0];
 c_732341.elements[1] = ((closureN)self_731602)->elements[1];
 
-return_closcall1(data,(closure)&c_732341,  Cyc_eq(((closureN)self_731602)->elements[1], quote_Cyc_91bytevector_91copy));}
+return_direct_with_clo1(data,(closure)&c_732341,__lambda_119,  Cyc_eq(((closureN)self_731602)->elements[1], quote_Cyc_91bytevector_91copy));}
 ; 
 }
 
@@ -6586,7 +6626,7 @@ c_732346.elements = (object *)alloca(sizeof(object) * 2);
 c_732346.elements[0] = ((closureN)self_731603)->elements[0];
 c_732346.elements[1] = ((closureN)self_731603)->elements[1];
 
-return_closcall1(data,(closure)&c_732346,  Cyc_eq(((closureN)self_731603)->elements[1], quote_Cyc_91utf8_91_125string));}
+return_direct_with_clo1(data,(closure)&c_732346,__lambda_120,  Cyc_eq(((closureN)self_731603)->elements[1], quote_Cyc_91utf8_91_125string));}
 ; 
 }
 
@@ -6608,7 +6648,7 @@ c_732351.elements = (object *)alloca(sizeof(object) * 2);
 c_732351.elements[0] = ((closureN)self_731604)->elements[0];
 c_732351.elements[1] = ((closureN)self_731604)->elements[1];
 
-return_closcall1(data,(closure)&c_732351,  Cyc_eq(((closureN)self_731604)->elements[1], quote_Cyc_91string_91_125utf8));}
+return_direct_with_clo1(data,(closure)&c_732351,__lambda_121,  Cyc_eq(((closureN)self_731604)->elements[1], quote_Cyc_91string_91_125utf8));}
 ; 
 }
 
@@ -6630,7 +6670,7 @@ c_732356.elements = (object *)alloca(sizeof(object) * 2);
 c_732356.elements[0] = ((closureN)self_731605)->elements[0];
 c_732356.elements[1] = ((closureN)self_731605)->elements[1];
 
-return_closcall1(data,(closure)&c_732356,  Cyc_eq(((closureN)self_731605)->elements[1], quote_bytevector_91u8_91ref));}
+return_direct_with_clo1(data,(closure)&c_732356,__lambda_122,  Cyc_eq(((closureN)self_731605)->elements[1], quote_bytevector_91u8_91ref));}
 ; 
 }
 
@@ -6652,7 +6692,7 @@ c_732361.elements = (object *)alloca(sizeof(object) * 2);
 c_732361.elements[0] = ((closureN)self_731606)->elements[0];
 c_732361.elements[1] = ((closureN)self_731606)->elements[1];
 
-return_closcall1(data,(closure)&c_732361,  Cyc_eq(((closureN)self_731606)->elements[1], quote_bytevector_91u8_91set_67));}
+return_direct_with_clo1(data,(closure)&c_732361,__lambda_123,  Cyc_eq(((closureN)self_731606)->elements[1], quote_bytevector_91u8_91set_67));}
 ; 
 }
 
@@ -6674,7 +6714,7 @@ c_732366.elements = (object *)alloca(sizeof(object) * 2);
 c_732366.elements[0] = ((closureN)self_731607)->elements[0];
 c_732366.elements[1] = ((closureN)self_731607)->elements[1];
 
-return_closcall1(data,(closure)&c_732366,  Cyc_eq(((closureN)self_731607)->elements[1], quote_make_91vector));}
+return_direct_with_clo1(data,(closure)&c_732366,__lambda_124,  Cyc_eq(((closureN)self_731607)->elements[1], quote_make_91vector));}
 ; 
 }
 
@@ -6696,7 +6736,7 @@ c_732371.elements = (object *)alloca(sizeof(object) * 2);
 c_732371.elements[0] = ((closureN)self_731608)->elements[0];
 c_732371.elements[1] = ((closureN)self_731608)->elements[1];
 
-return_closcall1(data,(closure)&c_732371,  Cyc_eq(((closureN)self_731608)->elements[1], quote_list_91_125vector));}
+return_direct_with_clo1(data,(closure)&c_732371,__lambda_125,  Cyc_eq(((closureN)self_731608)->elements[1], quote_list_91_125vector));}
 ; 
 }
 
@@ -6718,7 +6758,7 @@ c_732376.elements = (object *)alloca(sizeof(object) * 2);
 c_732376.elements[0] = ((closureN)self_731609)->elements[0];
 c_732376.elements[1] = ((closureN)self_731609)->elements[1];
 
-return_closcall1(data,(closure)&c_732376,  Cyc_eq(((closureN)self_731609)->elements[1], quote_vector_91length));}
+return_direct_with_clo1(data,(closure)&c_732376,__lambda_126,  Cyc_eq(((closureN)self_731609)->elements[1], quote_vector_91length));}
 ; 
 }
 
@@ -6740,7 +6780,7 @@ c_732381.elements = (object *)alloca(sizeof(object) * 2);
 c_732381.elements[0] = ((closureN)self_731610)->elements[0];
 c_732381.elements[1] = ((closureN)self_731610)->elements[1];
 
-return_closcall1(data,(closure)&c_732381,  Cyc_eq(((closureN)self_731610)->elements[1], quote_vector_91ref));}
+return_direct_with_clo1(data,(closure)&c_732381,__lambda_127,  Cyc_eq(((closureN)self_731610)->elements[1], quote_vector_91ref));}
 ; 
 }
 
@@ -6762,7 +6802,7 @@ c_732386.elements = (object *)alloca(sizeof(object) * 2);
 c_732386.elements[0] = ((closureN)self_731611)->elements[0];
 c_732386.elements[1] = ((closureN)self_731611)->elements[1];
 
-return_closcall1(data,(closure)&c_732386,  Cyc_eq(((closureN)self_731611)->elements[1], quote_vector_91set_67));}
+return_direct_with_clo1(data,(closure)&c_732386,__lambda_128,  Cyc_eq(((closureN)self_731611)->elements[1], quote_vector_91set_67));}
 ; 
 }
 
@@ -6784,7 +6824,7 @@ c_732391.elements = (object *)alloca(sizeof(object) * 2);
 c_732391.elements[0] = ((closureN)self_731612)->elements[0];
 c_732391.elements[1] = ((closureN)self_731612)->elements[1];
 
-return_closcall1(data,(closure)&c_732391,  Cyc_eq(((closureN)self_731612)->elements[1], quote_string_91append));}
+return_direct_with_clo1(data,(closure)&c_732391,__lambda_129,  Cyc_eq(((closureN)self_731612)->elements[1], quote_string_91append));}
 ; 
 }
 
@@ -6806,7 +6846,7 @@ c_732396.elements = (object *)alloca(sizeof(object) * 2);
 c_732396.elements[0] = ((closureN)self_731613)->elements[0];
 c_732396.elements[1] = ((closureN)self_731613)->elements[1];
 
-return_closcall1(data,(closure)&c_732396,  Cyc_eq(((closureN)self_731613)->elements[1], quote_string_91cmp));}
+return_direct_with_clo1(data,(closure)&c_732396,__lambda_130,  Cyc_eq(((closureN)self_731613)->elements[1], quote_string_91cmp));}
 ; 
 }
 
@@ -6828,7 +6868,7 @@ c_732401.elements = (object *)alloca(sizeof(object) * 2);
 c_732401.elements[0] = ((closureN)self_731614)->elements[0];
 c_732401.elements[1] = ((closureN)self_731614)->elements[1];
 
-return_closcall1(data,(closure)&c_732401,  Cyc_eq(((closureN)self_731614)->elements[1], quote_string_91_125symbol));}
+return_direct_with_clo1(data,(closure)&c_732401,__lambda_131,  Cyc_eq(((closureN)self_731614)->elements[1], quote_string_91_125symbol));}
 ; 
 }
 
@@ -6850,7 +6890,7 @@ c_732406.elements = (object *)alloca(sizeof(object) * 2);
 c_732406.elements[0] = ((closureN)self_731615)->elements[0];
 c_732406.elements[1] = ((closureN)self_731615)->elements[1];
 
-return_closcall1(data,(closure)&c_732406,  Cyc_eq(((closureN)self_731615)->elements[1], quote_symbol_91_125string));}
+return_direct_with_clo1(data,(closure)&c_732406,__lambda_132,  Cyc_eq(((closureN)self_731615)->elements[1], quote_symbol_91_125string));}
 ; 
 }
 
@@ -6872,7 +6912,7 @@ c_732411.elements = (object *)alloca(sizeof(object) * 2);
 c_732411.elements[0] = ((closureN)self_731616)->elements[0];
 c_732411.elements[1] = ((closureN)self_731616)->elements[1];
 
-return_closcall1(data,(closure)&c_732411,  Cyc_eq(((closureN)self_731616)->elements[1], quote_number_91_125string));}
+return_direct_with_clo1(data,(closure)&c_732411,__lambda_133,  Cyc_eq(((closureN)self_731616)->elements[1], quote_number_91_125string));}
 ; 
 }
 
@@ -6894,7 +6934,7 @@ c_732416.elements = (object *)alloca(sizeof(object) * 2);
 c_732416.elements[0] = ((closureN)self_731617)->elements[0];
 c_732416.elements[1] = ((closureN)self_731617)->elements[1];
 
-return_closcall1(data,(closure)&c_732416,  Cyc_eq(((closureN)self_731617)->elements[1], quote_string_91length));}
+return_direct_with_clo1(data,(closure)&c_732416,__lambda_134,  Cyc_eq(((closureN)self_731617)->elements[1], quote_string_91length));}
 ; 
 }
 
@@ -6916,7 +6956,7 @@ c_732421.elements = (object *)alloca(sizeof(object) * 2);
 c_732421.elements[0] = ((closureN)self_731618)->elements[0];
 c_732421.elements[1] = ((closureN)self_731618)->elements[1];
 
-return_closcall1(data,(closure)&c_732421,  Cyc_eq(((closureN)self_731618)->elements[1], quote_string_91ref));}
+return_direct_with_clo1(data,(closure)&c_732421,__lambda_135,  Cyc_eq(((closureN)self_731618)->elements[1], quote_string_91ref));}
 ; 
 }
 
@@ -6938,7 +6978,7 @@ c_732426.elements = (object *)alloca(sizeof(object) * 2);
 c_732426.elements[0] = ((closureN)self_731619)->elements[0];
 c_732426.elements[1] = ((closureN)self_731619)->elements[1];
 
-return_closcall1(data,(closure)&c_732426,  Cyc_eq(((closureN)self_731619)->elements[1], quote_string_91set_67));}
+return_direct_with_clo1(data,(closure)&c_732426,__lambda_136,  Cyc_eq(((closureN)self_731619)->elements[1], quote_string_91set_67));}
 ; 
 }
 
@@ -6960,7 +7000,7 @@ c_732431.elements = (object *)alloca(sizeof(object) * 2);
 c_732431.elements[0] = ((closureN)self_731620)->elements[0];
 c_732431.elements[1] = ((closureN)self_731620)->elements[1];
 
-return_closcall1(data,(closure)&c_732431,  Cyc_eq(((closureN)self_731620)->elements[1], quote_substring));}
+return_direct_with_clo1(data,(closure)&c_732431,__lambda_137,  Cyc_eq(((closureN)self_731620)->elements[1], quote_substring));}
 ; 
 }
 
@@ -6982,7 +7022,7 @@ c_732436.elements = (object *)alloca(sizeof(object) * 2);
 c_732436.elements[0] = ((closureN)self_731621)->elements[0];
 c_732436.elements[1] = ((closureN)self_731621)->elements[1];
 
-return_closcall1(data,(closure)&c_732436,  Cyc_eq(((closureN)self_731621)->elements[1], quote_Cyc_91installation_91dir));}
+return_direct_with_clo1(data,(closure)&c_732436,__lambda_138,  Cyc_eq(((closureN)self_731621)->elements[1], quote_Cyc_91installation_91dir));}
 ; 
 }
 
@@ -7004,7 +7044,7 @@ c_732441.elements = (object *)alloca(sizeof(object) * 2);
 c_732441.elements[0] = ((closureN)self_731622)->elements[0];
 c_732441.elements[1] = ((closureN)self_731622)->elements[1];
 
-return_closcall1(data,(closure)&c_732441,  Cyc_eq(((closureN)self_731622)->elements[1], quote_Cyc_91compilation_91environment));}
+return_direct_with_clo1(data,(closure)&c_732441,__lambda_139,  Cyc_eq(((closureN)self_731622)->elements[1], quote_Cyc_91compilation_91environment));}
 ; 
 }
 
@@ -7026,7 +7066,7 @@ c_732446.elements = (object *)alloca(sizeof(object) * 2);
 c_732446.elements[0] = ((closureN)self_731623)->elements[0];
 c_732446.elements[1] = ((closureN)self_731623)->elements[1];
 
-return_closcall1(data,(closure)&c_732446,  Cyc_eq(((closureN)self_731623)->elements[1], quote_command_91line_91arguments));}
+return_direct_with_clo1(data,(closure)&c_732446,__lambda_140,  Cyc_eq(((closureN)self_731623)->elements[1], quote_command_91line_91arguments));}
 ; 
 }
 
@@ -7048,7 +7088,7 @@ c_732451.elements = (object *)alloca(sizeof(object) * 2);
 c_732451.elements[0] = ((closureN)self_731624)->elements[0];
 c_732451.elements[1] = ((closureN)self_731624)->elements[1];
 
-return_closcall1(data,(closure)&c_732451,  Cyc_eq(((closureN)self_731624)->elements[1], quote_system));}
+return_direct_with_clo1(data,(closure)&c_732451,__lambda_141,  Cyc_eq(((closureN)self_731624)->elements[1], quote_system));}
 ; 
 }
 
@@ -7070,7 +7110,7 @@ c_732456.elements = (object *)alloca(sizeof(object) * 2);
 c_732456.elements[0] = ((closureN)self_731625)->elements[0];
 c_732456.elements[1] = ((closureN)self_731625)->elements[1];
 
-return_closcall1(data,(closure)&c_732456,  Cyc_eq(((closureN)self_731625)->elements[1], quote_length));}
+return_direct_with_clo1(data,(closure)&c_732456,__lambda_142,  Cyc_eq(((closureN)self_731625)->elements[1], quote_length));}
 ; 
 }
 
@@ -7092,7 +7132,7 @@ c_732461.elements = (object *)alloca(sizeof(object) * 2);
 c_732461.elements[0] = ((closureN)self_731626)->elements[0];
 c_732461.elements[1] = ((closureN)self_731626)->elements[1];
 
-return_closcall1(data,(closure)&c_732461,  Cyc_eq(((closureN)self_731626)->elements[1], quote_set_91car_67));}
+return_direct_with_clo1(data,(closure)&c_732461,__lambda_143,  Cyc_eq(((closureN)self_731626)->elements[1], quote_set_91car_67));}
 ; 
 }
 
@@ -7114,7 +7154,7 @@ c_732466.elements = (object *)alloca(sizeof(object) * 2);
 c_732466.elements[0] = ((closureN)self_731627)->elements[0];
 c_732466.elements[1] = ((closureN)self_731627)->elements[1];
 
-return_closcall1(data,(closure)&c_732466,  Cyc_eq(((closureN)self_731627)->elements[1], quote_set_91cdr_67));}
+return_direct_with_clo1(data,(closure)&c_732466,__lambda_144,  Cyc_eq(((closureN)self_731627)->elements[1], quote_set_91cdr_67));}
 ; 
 }
 
@@ -7136,7 +7176,7 @@ c_732471.elements = (object *)alloca(sizeof(object) * 2);
 c_732471.elements[0] = ((closureN)self_731628)->elements[0];
 c_732471.elements[1] = ((closureN)self_731628)->elements[1];
 
-return_closcall1(data,(closure)&c_732471,  Cyc_eq(((closureN)self_731628)->elements[1], quote_eq_127));}
+return_direct_with_clo1(data,(closure)&c_732471,__lambda_145,  Cyc_eq(((closureN)self_731628)->elements[1], quote_eq_127));}
 ; 
 }
 
@@ -7158,7 +7198,7 @@ c_732476.elements = (object *)alloca(sizeof(object) * 2);
 c_732476.elements[0] = ((closureN)self_731629)->elements[0];
 c_732476.elements[1] = ((closureN)self_731629)->elements[1];
 
-return_closcall1(data,(closure)&c_732476,  Cyc_eq(((closureN)self_731629)->elements[1], quote_eqv_127));}
+return_direct_with_clo1(data,(closure)&c_732476,__lambda_146,  Cyc_eq(((closureN)self_731629)->elements[1], quote_eqv_127));}
 ; 
 }
 
@@ -7180,7 +7220,7 @@ c_732481.elements = (object *)alloca(sizeof(object) * 2);
 c_732481.elements[0] = ((closureN)self_731630)->elements[0];
 c_732481.elements[1] = ((closureN)self_731630)->elements[1];
 
-return_closcall1(data,(closure)&c_732481,  Cyc_eq(((closureN)self_731630)->elements[1], quote_equal_127));}
+return_direct_with_clo1(data,(closure)&c_732481,__lambda_147,  Cyc_eq(((closureN)self_731630)->elements[1], quote_equal_127));}
 ; 
 }
 
@@ -7202,7 +7242,7 @@ c_732486.elements = (object *)alloca(sizeof(object) * 2);
 c_732486.elements[0] = ((closureN)self_731631)->elements[0];
 c_732486.elements[1] = ((closureN)self_731631)->elements[1];
 
-return_closcall1(data,(closure)&c_732486,  Cyc_eq(((closureN)self_731631)->elements[1], quote_Cyc_91fast_91member));}
+return_direct_with_clo1(data,(closure)&c_732486,__lambda_148,  Cyc_eq(((closureN)self_731631)->elements[1], quote_Cyc_91fast_91member));}
 ; 
 }
 
@@ -7224,7 +7264,7 @@ c_732491.elements = (object *)alloca(sizeof(object) * 2);
 c_732491.elements[0] = ((closureN)self_731632)->elements[0];
 c_732491.elements[1] = ((closureN)self_731632)->elements[1];
 
-return_closcall1(data,(closure)&c_732491,  Cyc_eq(((closureN)self_731632)->elements[1], quote_Cyc_91fast_91assoc));}
+return_direct_with_clo1(data,(closure)&c_732491,__lambda_149,  Cyc_eq(((closureN)self_731632)->elements[1], quote_Cyc_91fast_91assoc));}
 ; 
 }
 
@@ -7246,7 +7286,7 @@ c_732496.elements = (object *)alloca(sizeof(object) * 2);
 c_732496.elements[0] = ((closureN)self_731633)->elements[0];
 c_732496.elements[1] = ((closureN)self_731633)->elements[1];
 
-return_closcall1(data,(closure)&c_732496,  Cyc_eq(((closureN)self_731633)->elements[1], quote_assq));}
+return_direct_with_clo1(data,(closure)&c_732496,__lambda_150,  Cyc_eq(((closureN)self_731633)->elements[1], quote_assq));}
 ; 
 }
 
@@ -7268,7 +7308,7 @@ c_732501.elements = (object *)alloca(sizeof(object) * 2);
 c_732501.elements[0] = ((closureN)self_731634)->elements[0];
 c_732501.elements[1] = ((closureN)self_731634)->elements[1];
 
-return_closcall1(data,(closure)&c_732501,  Cyc_eq(((closureN)self_731634)->elements[1], quote_assv));}
+return_direct_with_clo1(data,(closure)&c_732501,__lambda_151,  Cyc_eq(((closureN)self_731634)->elements[1], quote_assv));}
 ; 
 }
 
@@ -7290,7 +7330,7 @@ c_732506.elements = (object *)alloca(sizeof(object) * 2);
 c_732506.elements[0] = ((closureN)self_731635)->elements[0];
 c_732506.elements[1] = ((closureN)self_731635)->elements[1];
 
-return_closcall1(data,(closure)&c_732506,  Cyc_eq(((closureN)self_731635)->elements[1], quote_memq));}
+return_direct_with_clo1(data,(closure)&c_732506,__lambda_152,  Cyc_eq(((closureN)self_731635)->elements[1], quote_memq));}
 ; 
 }
 
@@ -7312,7 +7352,7 @@ c_732511.elements = (object *)alloca(sizeof(object) * 2);
 c_732511.elements[0] = ((closureN)self_731636)->elements[0];
 c_732511.elements[1] = ((closureN)self_731636)->elements[1];
 
-return_closcall1(data,(closure)&c_732511,  Cyc_eq(((closureN)self_731636)->elements[1], quote_memv));}
+return_direct_with_clo1(data,(closure)&c_732511,__lambda_153,  Cyc_eq(((closureN)self_731636)->elements[1], quote_memv));}
 ; 
 }
 
@@ -7334,7 +7374,7 @@ c_732516.elements = (object *)alloca(sizeof(object) * 2);
 c_732516.elements[0] = ((closureN)self_731637)->elements[0];
 c_732516.elements[1] = ((closureN)self_731637)->elements[1];
 
-return_closcall1(data,(closure)&c_732516,  Cyc_eq(((closureN)self_731637)->elements[1], quote_boolean_127));}
+return_direct_with_clo1(data,(closure)&c_732516,__lambda_154,  Cyc_eq(((closureN)self_731637)->elements[1], quote_boolean_127));}
 ; 
 }
 
@@ -7356,7 +7396,7 @@ c_732521.elements = (object *)alloca(sizeof(object) * 2);
 c_732521.elements[0] = ((closureN)self_731638)->elements[0];
 c_732521.elements[1] = ((closureN)self_731638)->elements[1];
 
-return_closcall1(data,(closure)&c_732521,  Cyc_eq(((closureN)self_731638)->elements[1], quote_char_127));}
+return_direct_with_clo1(data,(closure)&c_732521,__lambda_155,  Cyc_eq(((closureN)self_731638)->elements[1], quote_char_127));}
 ; 
 }
 
@@ -7378,7 +7418,7 @@ c_732526.elements = (object *)alloca(sizeof(object) * 2);
 c_732526.elements[0] = ((closureN)self_731639)->elements[0];
 c_732526.elements[1] = ((closureN)self_731639)->elements[1];
 
-return_closcall1(data,(closure)&c_732526,  Cyc_eq(((closureN)self_731639)->elements[1], quote_null_127));}
+return_direct_with_clo1(data,(closure)&c_732526,__lambda_156,  Cyc_eq(((closureN)self_731639)->elements[1], quote_null_127));}
 ; 
 }
 
@@ -7400,7 +7440,7 @@ c_732531.elements = (object *)alloca(sizeof(object) * 2);
 c_732531.elements[0] = ((closureN)self_731640)->elements[0];
 c_732531.elements[1] = ((closureN)self_731640)->elements[1];
 
-return_closcall1(data,(closure)&c_732531,  Cyc_eq(((closureN)self_731640)->elements[1], quote_number_127));}
+return_direct_with_clo1(data,(closure)&c_732531,__lambda_157,  Cyc_eq(((closureN)self_731640)->elements[1], quote_number_127));}
 ; 
 }
 
@@ -7422,7 +7462,7 @@ c_732536.elements = (object *)alloca(sizeof(object) * 2);
 c_732536.elements[0] = ((closureN)self_731641)->elements[0];
 c_732536.elements[1] = ((closureN)self_731641)->elements[1];
 
-return_closcall1(data,(closure)&c_732536,  Cyc_eq(((closureN)self_731641)->elements[1], quote_real_127));}
+return_direct_with_clo1(data,(closure)&c_732536,__lambda_158,  Cyc_eq(((closureN)self_731641)->elements[1], quote_real_127));}
 ; 
 }
 
@@ -7444,7 +7484,7 @@ c_732541.elements = (object *)alloca(sizeof(object) * 2);
 c_732541.elements[0] = ((closureN)self_731642)->elements[0];
 c_732541.elements[1] = ((closureN)self_731642)->elements[1];
 
-return_closcall1(data,(closure)&c_732541,  Cyc_eq(((closureN)self_731642)->elements[1], quote_integer_127));}
+return_direct_with_clo1(data,(closure)&c_732541,__lambda_159,  Cyc_eq(((closureN)self_731642)->elements[1], quote_integer_127));}
 ; 
 }
 
@@ -7466,7 +7506,7 @@ c_732546.elements = (object *)alloca(sizeof(object) * 2);
 c_732546.elements[0] = ((closureN)self_731643)->elements[0];
 c_732546.elements[1] = ((closureN)self_731643)->elements[1];
 
-return_closcall1(data,(closure)&c_732546,  Cyc_eq(((closureN)self_731643)->elements[1], quote_pair_127));}
+return_direct_with_clo1(data,(closure)&c_732546,__lambda_160,  Cyc_eq(((closureN)self_731643)->elements[1], quote_pair_127));}
 ; 
 }
 
@@ -7488,7 +7528,7 @@ c_732551.elements = (object *)alloca(sizeof(object) * 2);
 c_732551.elements[0] = ((closureN)self_731644)->elements[0];
 c_732551.elements[1] = ((closureN)self_731644)->elements[1];
 
-return_closcall1(data,(closure)&c_732551,  Cyc_eq(((closureN)self_731644)->elements[1], quote_procedure_127));}
+return_direct_with_clo1(data,(closure)&c_732551,__lambda_161,  Cyc_eq(((closureN)self_731644)->elements[1], quote_procedure_127));}
 ; 
 }
 
@@ -7510,7 +7550,7 @@ c_732556.elements = (object *)alloca(sizeof(object) * 2);
 c_732556.elements[0] = ((closureN)self_731645)->elements[0];
 c_732556.elements[1] = ((closureN)self_731645)->elements[1];
 
-return_closcall1(data,(closure)&c_732556,  Cyc_eq(((closureN)self_731645)->elements[1], quote_Cyc_91macro_127));}
+return_direct_with_clo1(data,(closure)&c_732556,__lambda_162,  Cyc_eq(((closureN)self_731645)->elements[1], quote_Cyc_91macro_127));}
 ; 
 }
 
@@ -7532,7 +7572,7 @@ c_732561.elements = (object *)alloca(sizeof(object) * 2);
 c_732561.elements[0] = ((closureN)self_731646)->elements[0];
 c_732561.elements[1] = ((closureN)self_731646)->elements[1];
 
-return_closcall1(data,(closure)&c_732561,  Cyc_eq(((closureN)self_731646)->elements[1], quote_port_127));}
+return_direct_with_clo1(data,(closure)&c_732561,__lambda_163,  Cyc_eq(((closureN)self_731646)->elements[1], quote_port_127));}
 ; 
 }
 
@@ -7554,7 +7594,7 @@ c_732566.elements = (object *)alloca(sizeof(object) * 2);
 c_732566.elements[0] = ((closureN)self_731647)->elements[0];
 c_732566.elements[1] = ((closureN)self_731647)->elements[1];
 
-return_closcall1(data,(closure)&c_732566,  Cyc_eq(((closureN)self_731647)->elements[1], quote_vector_127));}
+return_direct_with_clo1(data,(closure)&c_732566,__lambda_164,  Cyc_eq(((closureN)self_731647)->elements[1], quote_vector_127));}
 ; 
 }
 
@@ -7576,7 +7616,7 @@ c_732571.elements = (object *)alloca(sizeof(object) * 2);
 c_732571.elements[0] = ((closureN)self_731648)->elements[0];
 c_732571.elements[1] = ((closureN)self_731648)->elements[1];
 
-return_closcall1(data,(closure)&c_732571,  Cyc_eq(((closureN)self_731648)->elements[1], quote_bytevector_127));}
+return_direct_with_clo1(data,(closure)&c_732571,__lambda_165,  Cyc_eq(((closureN)self_731648)->elements[1], quote_bytevector_127));}
 ; 
 }
 
@@ -7598,7 +7638,7 @@ c_732576.elements = (object *)alloca(sizeof(object) * 2);
 c_732576.elements[0] = ((closureN)self_731649)->elements[0];
 c_732576.elements[1] = ((closureN)self_731649)->elements[1];
 
-return_closcall1(data,(closure)&c_732576,  Cyc_eq(((closureN)self_731649)->elements[1], quote_string_127));}
+return_direct_with_clo1(data,(closure)&c_732576,__lambda_166,  Cyc_eq(((closureN)self_731649)->elements[1], quote_string_127));}
 ; 
 }
 
@@ -7620,7 +7660,7 @@ c_732581.elements = (object *)alloca(sizeof(object) * 2);
 c_732581.elements[0] = ((closureN)self_731650)->elements[0];
 c_732581.elements[1] = ((closureN)self_731650)->elements[1];
 
-return_closcall1(data,(closure)&c_732581,  Cyc_eq(((closureN)self_731650)->elements[1], quote_eof_91object_127));}
+return_direct_with_clo1(data,(closure)&c_732581,__lambda_167,  Cyc_eq(((closureN)self_731650)->elements[1], quote_eof_91object_127));}
 ; 
 }
 
@@ -7642,7 +7682,7 @@ c_732586.elements = (object *)alloca(sizeof(object) * 2);
 c_732586.elements[0] = ((closureN)self_731651)->elements[0];
 c_732586.elements[1] = ((closureN)self_731651)->elements[1];
 
-return_closcall1(data,(closure)&c_732586,  Cyc_eq(((closureN)self_731651)->elements[1], quote_symbol_127));}
+return_direct_with_clo1(data,(closure)&c_732586,__lambda_168,  Cyc_eq(((closureN)self_731651)->elements[1], quote_symbol_127));}
 ; 
 }
 
@@ -7664,7 +7704,7 @@ c_732591.elements = (object *)alloca(sizeof(object) * 2);
 c_732591.elements[0] = ((closureN)self_731652)->elements[0];
 c_732591.elements[1] = ((closureN)self_731652)->elements[1];
 
-return_closcall1(data,(closure)&c_732591,  Cyc_eq(((closureN)self_731652)->elements[1], quote_cons));}
+return_direct_with_clo1(data,(closure)&c_732591,__lambda_169,  Cyc_eq(((closureN)self_731652)->elements[1], quote_cons));}
 ; 
 }
 
@@ -7686,7 +7726,7 @@ c_732596.elements = (object *)alloca(sizeof(object) * 2);
 c_732596.elements[0] = ((closureN)self_731653)->elements[0];
 c_732596.elements[1] = ((closureN)self_731653)->elements[1];
 
-return_closcall1(data,(closure)&c_732596,  Cyc_eq(((closureN)self_731653)->elements[1], quote_Cyc_91fast_91list_911));}
+return_direct_with_clo1(data,(closure)&c_732596,__lambda_170,  Cyc_eq(((closureN)self_731653)->elements[1], quote_Cyc_91fast_91list_911));}
 ; 
 }
 
@@ -7708,7 +7748,7 @@ c_732601.elements = (object *)alloca(sizeof(object) * 2);
 c_732601.elements[0] = ((closureN)self_731654)->elements[0];
 c_732601.elements[1] = ((closureN)self_731654)->elements[1];
 
-return_closcall1(data,(closure)&c_732601,  Cyc_eq(((closureN)self_731654)->elements[1], quote_Cyc_91fast_91list_912));}
+return_direct_with_clo1(data,(closure)&c_732601,__lambda_171,  Cyc_eq(((closureN)self_731654)->elements[1], quote_Cyc_91fast_91list_912));}
 ; 
 }
 
@@ -7730,7 +7770,7 @@ c_732606.elements = (object *)alloca(sizeof(object) * 2);
 c_732606.elements[0] = ((closureN)self_731655)->elements[0];
 c_732606.elements[1] = ((closureN)self_731655)->elements[1];
 
-return_closcall1(data,(closure)&c_732606,  Cyc_eq(((closureN)self_731655)->elements[1], quote_Cyc_91fast_91list_913));}
+return_direct_with_clo1(data,(closure)&c_732606,__lambda_172,  Cyc_eq(((closureN)self_731655)->elements[1], quote_Cyc_91fast_91list_913));}
 ; 
 }
 
@@ -7752,7 +7792,7 @@ c_732611.elements = (object *)alloca(sizeof(object) * 2);
 c_732611.elements[0] = ((closureN)self_731656)->elements[0];
 c_732611.elements[1] = ((closureN)self_731656)->elements[1];
 
-return_closcall1(data,(closure)&c_732611,  Cyc_eq(((closureN)self_731656)->elements[1], quote_Cyc_91fast_91list_914));}
+return_direct_with_clo1(data,(closure)&c_732611,__lambda_173,  Cyc_eq(((closureN)self_731656)->elements[1], quote_Cyc_91fast_91list_914));}
 ; 
 }
 
@@ -7774,7 +7814,7 @@ c_732616.elements = (object *)alloca(sizeof(object) * 2);
 c_732616.elements[0] = ((closureN)self_731657)->elements[0];
 c_732616.elements[1] = ((closureN)self_731657)->elements[1];
 
-return_closcall1(data,(closure)&c_732616,  Cyc_eq(((closureN)self_731657)->elements[1], quote_cell));}
+return_direct_with_clo1(data,(closure)&c_732616,__lambda_174,  Cyc_eq(((closureN)self_731657)->elements[1], quote_cell));}
 ; 
 }
 
@@ -7796,7 +7836,7 @@ c_732621.elements = (object *)alloca(sizeof(object) * 2);
 c_732621.elements[0] = ((closureN)self_731658)->elements[0];
 c_732621.elements[1] = ((closureN)self_731658)->elements[1];
 
-return_closcall1(data,(closure)&c_732621,  Cyc_eq(((closureN)self_731658)->elements[1], quote_cell_91get));}
+return_direct_with_clo1(data,(closure)&c_732621,__lambda_175,  Cyc_eq(((closureN)self_731658)->elements[1], quote_cell_91get));}
 ; 
 }
 
@@ -7818,7 +7858,7 @@ c_732626.elements = (object *)alloca(sizeof(object) * 2);
 c_732626.elements[0] = ((closureN)self_731659)->elements[0];
 c_732626.elements[1] = ((closureN)self_731659)->elements[1];
 
-return_closcall1(data,(closure)&c_732626,  Cyc_eq(((closureN)self_731659)->elements[1], quote_set_91cell_67));}
+return_direct_with_clo1(data,(closure)&c_732626,__lambda_176,  Cyc_eq(((closureN)self_731659)->elements[1], quote_set_91cell_67));}
 ; 
 }
 
@@ -7840,7 +7880,7 @@ c_732631.elements = (object *)alloca(sizeof(object) * 2);
 c_732631.elements[0] = ((closureN)self_731660)->elements[0];
 c_732631.elements[1] = ((closureN)self_731660)->elements[1];
 
-return_closcall1(data,(closure)&c_732631,  Cyc_eq(((closureN)self_731660)->elements[1], quote_set_91global_67));}
+return_direct_with_clo1(data,(closure)&c_732631,__lambda_177,  Cyc_eq(((closureN)self_731660)->elements[1], quote_set_91global_67));}
 ; 
 }
 
@@ -7911,7 +7951,7 @@ c_731807.num_elements = 1;
 c_731807.elements = (object *)alloca(sizeof(object) * 1);
 c_731807.elements[0] = sym_7310_73786;
 
-return_closcall1(data,(closure)&c_731745,  &c_731807);; 
+return_direct_with_clo1(data,(closure)&c_731745,__lambda_9,  &c_731807);; 
 }
 
 static void __lambda_16(void *data, int argc, object self_731495, object k_73862, object prefix_7327_73790, object expected_7328_73791, object actual_7329_73792) {
@@ -8012,7 +8052,7 @@ c_731767.elements[1] = ((closureN)self_731499)->elements[0];
 c_731767.elements[2] = ((closureN)self_731499)->elements[1];
 c_731767.elements[3] = ((closureN)self_731499)->elements[2];
 
-return_closcall1(data,(closure)&c_731748,  &c_731767);
+return_direct_with_clo1(data,(closure)&c_731748,__lambda_10,  &c_731767);
 } else { 
   return_closcall1(data,  ((closureN)self_731499)->elements[1],  boolean_t);}
 ; 
@@ -8061,7 +8101,7 @@ c_731792.elements[1] = ((closureN)self_731500)->elements[1];
 c_731792.elements[2] = ((closureN)self_731500)->elements[2];
 c_731792.elements[3] = ((closureN)self_731500)->elements[3];
 
-return_closcall1(data,(closure)&c_731779,  &c_731792);}
+return_direct_with_clo1(data,(closure)&c_731779,__lambda_13,  &c_731792);}
 ; 
 }
 
@@ -8094,9 +8134,9 @@ static void __lambda_13(void *data, int argc, object self_731504, object k_73854
   if( (boolean_f != Cyc_car(data, ((closureN)self_731504)->elements[0])) ){ 
   
 object c_731786 = Cyc_num_fast_lt_op(data,((closureN)self_731504)->elements[1], Cyc_car(data, ((closureN)self_731504)->elements[0]));
-return_closcall1(data,  k_73854,  c_731786);
+return_direct_with_clo1(data,  k_73854,__lambda_14,  c_731786);
 } else { 
-  return_closcall1(data,  k_73854,  boolean_f);}
+  return_direct_with_clo1(data,  k_73854,__lambda_14,  boolean_f);}
 ; 
 }
 
@@ -8106,14 +8146,14 @@ static void __lambda_12(void *data, int argc, object self_731501, object r_73849
 
 static void __lambda_10(void *data, int argc, object self_731505, object k_73857) {
   if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_731505)->elements[0]))) ){ 
-  return_closcall1(data,  k_73857,  boolean_f);
+  return_direct_with_clo1(data,  k_73857,__lambda_11,  boolean_f);
 } else { 
   if( (boolean_f != Cyc_cadr(data, ((closureN)self_731505)->elements[0])) ){ 
   
 object c_731761 = Cyc_num_fast_gt_op(data,((closureN)self_731505)->elements[1], Cyc_cadr(data, ((closureN)self_731505)->elements[0]));
-return_closcall1(data,  k_73857,  c_731761);
+return_direct_with_clo1(data,  k_73857,__lambda_11,  c_731761);
 } else { 
-  return_closcall1(data,  k_73857,  boolean_f);}
+  return_direct_with_clo1(data,  k_73857,__lambda_11,  boolean_f);}
 }
 ; 
 }
@@ -8175,7 +8215,7 @@ c_731695.elements[1] = k_73824;
 make_pair(c_731715,cps_91sym_731_73780, inline_91sym_732_73781);
 
 make_pair(c_731712,&c_731715, __glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives);
-return_closcall1(data,(closure)&c_731695,  &c_731712);; 
+return_direct_with_clo1(data,(closure)&c_731695,__lambda_2,  &c_731712);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_731492, object r_73827) {
@@ -8191,7 +8231,7 @@ c_731697.elements = (object *)alloca(sizeof(object) * 2);
 c_731697.elements[0] = ((closureN)self_731492)->elements[0];
 c_731697.elements[1] = ((closureN)self_731492)->elements[1];
 
-return_closcall1(data,(closure)&c_731697,  global_set(__glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives, r_73827));; 
+return_direct_with_clo1(data,(closure)&c_731697,__lambda_3,  global_set(__glo__85udf_91cps_91_125inline_85_scheme_cyclone_primitives, r_73827));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_731493, object r_73825) {
@@ -8208,7 +8248,7 @@ c_731699.elements[0] = ((closureN)self_731493)->elements[1];
 
 
 make_pair(c_731706,((closureN)self_731493)->elements[0], __glo__85udf_91prims_85_scheme_cyclone_primitives);
-return_closcall1(data,(closure)&c_731699,  &c_731706);; 
+return_direct_with_clo1(data,(closure)&c_731699,__lambda_4,  &c_731706);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_731494, object r_73826) {

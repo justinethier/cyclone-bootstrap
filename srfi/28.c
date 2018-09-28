@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -65,6 +75,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
  }}
 
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
+ }}
+
 #define closcall3(td, clo,a1,a2,a3) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
@@ -92,6 +112,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 3, (closure)_fn,a1,a2,a3); \
+ }}
+
+#define return_direct_with_clo3(td, clo, _fn,a1,a2,a3) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else { \
+     (_fn)(td, 3, (closure)(clo),a1,a2,a3); \
  }}
 
 #include "cyclone/types.h"
@@ -337,7 +367,7 @@ c_7397.elements[0] = format_91string_731_7319;
 c_7397.elements[1] = k_7339;
 c_7397.elements[2] = objects_732_7320;
 
-return_closcall2(data,(closure)&c_7397,  boolean_f, boolean_f);; 
+return_direct_with_clo2(data,(closure)&c_7397,__lambda_2,  boolean_f, boolean_f);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7377, object buffer_7323, object fmt_91rec_7325) {
@@ -357,7 +387,7 @@ c_7399.elements[3] = ((closureN)self_7377)->elements[2];
 
 
 make_cell(c_73267,buffer_7323);
-return_closcall1(data,(closure)&c_7399,  &c_73267);; 
+return_direct_with_clo1(data,(closure)&c_7399,__lambda_20,  &c_73267);; 
 }
 
 static void __lambda_20(void *data, int argc, object self_7378, object buffer_7323) {
@@ -377,7 +407,7 @@ c_73101.elements[3] = ((closureN)self_7378)->elements[3];
 
 
 make_cell(c_73263,((closureN)self_7378)->elements[0]);
-return_closcall1(data,(closure)&c_73101,  &c_73263);; 
+return_direct_with_clo1(data,(closure)&c_73101,__lambda_19,  &c_73263);; 
 }
 
 static void __lambda_19(void *data, int argc, object self_7379, object fmt_91rec_7325) {
@@ -415,7 +445,7 @@ c_73105.elements[2] = ((closureN)self_7380)->elements[2];
 c_73105.elements[3] = ((closureN)self_7380)->elements[3];
 c_73105.elements[4] = ((closureN)self_7380)->elements[4];
 
-return_closcall1(data,(closure)&c_73105,  Cyc_set_cell(data, ((closureN)self_7380)->elements[0], r_7373));; 
+return_direct_with_clo1(data,(closure)&c_73105,__lambda_4,  Cyc_set_cell(data, ((closureN)self_7380)->elements[0], r_7373));; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7381, object r_7340) {
@@ -445,7 +475,7 @@ c_73120.elements = (object *)alloca(sizeof(object) * 2);
 c_73120.elements[0] = ((closureN)self_7381)->elements[0];
 c_73120.elements[1] = ((closureN)self_7381)->elements[1];
 
-return_closcall1(data,(closure)&c_73107,  Cyc_set_cell(data, ((closureN)self_7381)->elements[1], &c_73120));; 
+return_direct_with_clo1(data,(closure)&c_73107,__lambda_5,  Cyc_set_cell(data, ((closureN)self_7381)->elements[1], &c_73120));; 
 }
 
 static void __lambda_7(void *data, int argc, object self_7382, object k_7344, object format_91list_733_7329, object objs_734_7330) {
@@ -464,7 +494,7 @@ c_73122.elements[2] = format_91list_733_7329;
 c_73122.elements[3] = k_7344;
 c_73122.elements[4] = objs_734_7330;
 
-return_closcall2(data,(closure)&c_73122,  boolean_f, boolean_f);; 
+return_direct_with_clo2(data,(closure)&c_73122,__lambda_8,  boolean_f, boolean_f);; 
 }
 
 static void __lambda_8(void *data, int argc, object self_7383, object escape_91write_7331, object raw_91write_7332) {
@@ -486,7 +516,7 @@ c_73124.elements[5] = raw_91write_7332;
 
 
 make_cell(c_73257,escape_91write_7331);
-return_closcall1(data,(closure)&c_73124,  &c_73257);; 
+return_direct_with_clo1(data,(closure)&c_73124,__lambda_18,  &c_73257);; 
 }
 
 static void __lambda_18(void *data, int argc, object self_7384, object escape_91write_7331) {
@@ -508,7 +538,7 @@ c_73126.elements[5] = ((closureN)self_7384)->elements[4];
 
 
 make_cell(c_73253,((closureN)self_7384)->elements[5]);
-return_closcall1(data,(closure)&c_73126,  &c_73253);; 
+return_direct_with_clo1(data,(closure)&c_73126,__lambda_17,  &c_73253);; 
 }
 
 static void __lambda_17(void *data, int argc, object self_7385, object raw_91write_7332) {
@@ -543,7 +573,7 @@ c_73226.elements[1] = ((closureN)self_7385)->elements[2];
 c_73226.elements[2] = ((closureN)self_7385)->elements[3];
 c_73226.elements[3] = ((closureN)self_7385)->elements[5];
 
-return_closcall1(data,(closure)&c_73128,  Cyc_set_cell(data, ((closureN)self_7385)->elements[1], &c_73226));; 
+return_direct_with_clo1(data,(closure)&c_73128,__lambda_9,  Cyc_set_cell(data, ((closureN)self_7385)->elements[1], &c_73226));; 
 }
 
 static void __lambda_14(void *data, int argc, object self_7386, object k_7367, object how_735_7333) {
@@ -604,7 +634,7 @@ c_73207.elements[1] = ((closureN)self_7388)->elements[2];
 c_73207.elements[2] = ((closureN)self_7388)->elements[3];
 c_73207.elements[3] = ((closureN)self_7388)->elements[5];
 
-return_closcall1(data,(closure)&c_73130,  Cyc_set_cell(data, ((closureN)self_7388)->elements[6], &c_73207));; 
+return_direct_with_clo1(data,(closure)&c_73130,__lambda_10,  Cyc_set_cell(data, ((closureN)self_7388)->elements[6], &c_73207));; 
 }
 
 static void __lambda_11(void *data, int argc, object self_7389, object k_7363, object what_736_7334, object next_737_7335) {
