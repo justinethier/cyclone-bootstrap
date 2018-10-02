@@ -36,6 +36,16 @@ if (type_is_pair_prim(clo)) { \
      (_fn)(td, 1, (closure)_fn,a1); \
  }}
 
+#define return_direct_with_clo1(td, clo, _fn,a1) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else { \
+     (_fn)(td, 1, (closure)(clo),a1); \
+ }}
+
 #define closcall2(td, clo,a1,a2) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
@@ -63,6 +73,16 @@ if (type_is_pair_prim(clo)) { \
      return; \
  } else { \
      (_fn)(td, 2, (closure)_fn,a1,a2); \
+ }}
+
+#define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else { \
+     (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
 #include <sys/time.h>
@@ -265,20 +285,20 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
-static void __lambda_3(void *data, int argc, closure _,object k_733) ;
+static void __lambda_1(void *data, int argc, closure _,object k_733) ;
+static void __lambda_4(void *data, int argc, closure _, object k) ;
+static void __lambda_3(void *data, int argc, closure _, object k) ;
 static void __lambda_2(void *data, int argc, closure _, object k) ;
-static void __lambda_1(void *data, int argc, closure _, object k) ;
-static void __lambda_0(void *data, int argc, closure _, object k) ;
 
-static void __lambda_3(void *data, int argc, closure _,object k_733) {
+static void __lambda_1(void *data, int argc, closure _,object k_733) {
   Cyc_st_add(data, "scheme/time.sld:lib-init:schemetime");
 return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _, object k) { int n = 1000000;
+static void __lambda_4(void *data, int argc, closure _, object k) { int n = 1000000;
         object obj = obj_int2obj(n);
         return_closcall1(data, k, obj);  }
-static void __lambda_1(void *data, int argc, closure _, object k) { struct timeval tv;
+static void __lambda_3(void *data, int argc, closure _, object k) { struct timeval tv;
         make_double(box, 0.0);
         gettimeofday(&tv, NULL); /* TODO: longer-term consider using clock_gettime instead */
         long long jiffy = (tv.tv_sec)*1000000LL + tv.tv_usec;
@@ -299,7 +319,7 @@ static void __lambda_1(void *data, int argc, closure _, object k) { struct timev
         */
         double_value(&box) = jiffy;
         return_closcall1(data, k, &box);  }
-static void __lambda_0(void *data, int argc, closure _, object k) { make_double(box, 0.0);
+static void __lambda_2(void *data, int argc, closure _, object k) { make_double(box, 0.0);
         time_t t = time(NULL);
         double_value(&box) = t;
         return_closcall1(data, k, &box);  }
@@ -313,13 +333,13 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_jiffies_91per_91second_scheme_time);
   add_global((object *) &__glo_current_91jiffy_scheme_time);
   add_global((object *) &__glo_current_91second_scheme_time);
-  mclosure0(c_737, (function_type)__lambda_3);c_737.num_args = 0; 
+  mclosure0(c_737, (function_type)__lambda_1);c_737.num_args = 0; 
   __glo_lib_91init_117schemetime_scheme_time = &c_737; 
-  mclosure0(c_736, (function_type)__lambda_2);c_736.num_args = 0; 
+  mclosure0(c_736, (function_type)__lambda_4);c_736.num_args = 0; 
   __glo_jiffies_91per_91second_scheme_time = &c_736; 
-  mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 0; 
+  mclosure0(c_735, (function_type)__lambda_3);c_735.num_args = 0; 
   __glo_current_91jiffy_scheme_time = &c_735; 
-  mclosure0(c_734, (function_type)__lambda_0);c_734.num_args = 0; 
+  mclosure0(c_734, (function_type)__lambda_2);c_734.num_args = 0; 
   __glo_current_91second_scheme_time = &c_734; 
 
   mclosure0(clo_7310, c_schemetime_inlinable_lambdas); make_pair(pair_739, find_or_add_symbol("c_schemetime_inlinable_lambdas"), &clo_7310);

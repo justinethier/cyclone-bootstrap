@@ -27,7 +27,9 @@
       analyze-find-lambdas
       analyze:find-named-lets
       analyze:find-direct-recursive-calls
+      analyze:find-known-lambdas
       ;analyze-lambda-side-effects
+      opt:renumber-lambdas!
       opt:add-inlinable-functions
       opt:contract
       opt:inline-prims
@@ -37,8 +39,13 @@
       adb:get/default
       adb:set!
       adb:get-db
+      adb:lambda-ids
+      adb:max-lambda-id
       simple-lambda?
       one-instance-of-new-mutable-obj?
+      ;; Analysis - well-known lambdas
+      well-known-lambda
+      analyze:find-known-lambdas
       ;; Analyze variables
       adb:make-var
       %adb:make-var
@@ -67,13 +74,21 @@
       adbv:set-direct-rec-call!
       adbv:self-rec-call? 
       adbv:set-self-rec-call!
+      with-var
+      with-var!
       ;; Analyze functions
       adb:make-fnc
       %adb:make-fnc
       adb:function?
       adbf:simple adbf:set-simple!
+      adbf:all-params adbf:set-all-params!
       adbf:unused-params adbf:set-unused-params!
       adbf:side-effects adbf:set-side-effects!
+      adbf:well-known adbf:set-well-known!
+      adbf:cgen-id adbf:set-cgen-id!
+      adbf:closure-size adbf:set-closure-size!
+      with-fnc
+      with-fnc!
   )
   (begin
     ;; The following two defines allow non-CPS functions to still be considered
@@ -101,6 +116,10 @@
       (set! *adb* (make-hash-table)))
     (define (adb:get key) (hash-table-ref *adb* key))
     (define (adb:get/default key default) (hash-table-ref/default *adb* key default))
+    (define (adb:lambda-ids)
+      (filter number? (hash-table-keys *adb*)))
+    (define (adb:max-lambda-id)
+      (foldl max 0 (adb:lambda-ids)))
     (define (adb:set! key val) (hash-table-set! *adb* key val))
     (define-record-type <analysis-db-variable>
       (%adb:make-var 
@@ -197,16 +216,43 @@
       ))
 
     (define-record-type <analysis-db-function>
-      (%adb:make-fnc simple unused-params assigned-to-var side-effects)
+      (%adb:make-fnc 
+       simple 
+       all-params
+       unused-params 
+       assigned-to-var 
+       side-effects
+       well-known
+       cgen-id
+      )
       adb:function?
       (simple adbf:simple adbf:set-simple!)
+      (all-params adbf:all-params adbf:set-all-params!)
       (unused-params adbf:unused-params adbf:set-unused-params!)
       (assigned-to-var adbf:assigned-to-var adbf:set-assigned-to-var!)
       (side-effects adbf:side-effects adbf:set-side-effects!)
-      ;; TODO: top-level-define ?
+      ;; From Dybvig's Optimizing Closures in O(0) Time paper:
+      ;; A procedure is known at a call site if the call site provably invokes
+      ;; that procedure's lambda-expression and only that lambda-expression. A
+      ;; well-known procedure is one whose value is never used except at call
+      ;; sites where it is known.
+      (well-known adbf:well-known adbf:set-well-known!)
+      ;; Store internal ID generated for the lambda by the cgen module
+      (cgen-id adbf:cgen-id adbf:set-cgen-id!)
+      ;; Number of elements in the function's closure
+      (closure-size adbf:closure-size adbf:set-closure-size!)
     )
     (define (adb:make-fnc)
-      (%adb:make-fnc '? '? '() #f))
+      (%adb:make-fnc 
+       '?   ;; simple
+       #f   ;; all-params
+       '?   ;; unused-params
+       '()  ;; assigned-to-var
+       #f   ;; side-effects
+       #f   ;; well-known
+       #f   ;; cgen-id
+       -1   ;; closure-size
+      ))
 
     ;; A constant value that cannot be mutated
     ;; A variable only ever assigned to one of these could have all
@@ -699,8 +745,8 @@
         ; Core forms:
         ((ast:lambda? exp)
          (let* ((id (ast:lambda-id exp))
-                (fnc (adb:get id)))
-           (if (adbf:simple fnc)
+                (fnc (adb:get/default id #f)))
+           (if (and fnc (adbf:simple fnc))
                (opt:contract (caar (ast:lambda-body exp))) ;; Optimize-out the lambda
                (ast:%make-lambda
                  (ast:lambda-id exp)
@@ -1548,6 +1594,28 @@
           -1))
     )
 
+;; Renumber lambdas and re-run analysis
+(define (opt:renumber-lambdas! exp)
+  (define (scan exp)
+    (cond
+     ((ast:lambda? exp)
+      (ast:%make-lambda
+        (ast:get-next-lambda-id!)
+        (ast:lambda-args exp)
+        (scan (ast:lambda-body exp))
+        (ast:lambda-has-cont exp)))
+     ((quote? exp)
+      exp)
+     ((app? exp)
+      (map (lambda (e) (scan e)) exp))
+     (else exp)))
+
+  (ast:reset-lambda-ids!) ;; Convenient to start back from 1
+  (let ((result (scan exp)))
+    (adb:clear!)
+    (analyze-cps result)
+    result))
+
 ;; Closure-conversion.
 ;;
 ;; Closure conversion eliminates all of the free variables from every
@@ -1571,6 +1639,10 @@
    (_closure-convert exp globals optimization-level)))
 
 (define (_closure-convert exp globals optimization-level)
+ (define (set-adb-info! id formals size)
+  (with-fnc! id (lambda (fnc)
+    (adbf:set-all-params! fnc formals)
+    (adbf:set-closure-size! fnc size))))
  (define (convert exp self-var free-var-lst)
   (define (cc exp)
 ;(trace:error `(cc ,exp))
@@ -1581,13 +1653,19 @@
             (new-free-vars 
               (difference 
                 (difference (free-vars body) (ast:lambda-formals->list exp))
-                globals)))
+                globals))
+            (formals (list->lambda-formals
+                       (cons new-self-var (ast:lambda-formals->list exp))
+                       (ast:lambda-formals-type exp)))
+           )
+       (set-adb-info!
+         (ast:lambda-id exp)
+         formals
+         (length new-free-vars))
        `(%closure
           ,(ast:%make-lambda
              (ast:lambda-id exp)
-             (list->lambda-formals
-               (cons new-self-var (ast:lambda-formals->list exp))
-               (ast:lambda-formals-type exp))
+             formals
              (list (convert (car body) new-self-var new-free-vars))
              (ast:lambda-has-cont exp))
           ,@(map (lambda (v) ;; TODO: splice here?
@@ -1652,13 +1730,20 @@
                      (new-free-vars? (> (length new-free-vars) 0)))
                   (if new-free-vars?
                     ; Free vars, create a closure for them
-                    (let* ((new-self-var (gensym 'self)))
+                    (let* ((new-self-var (gensym 'self))
+                           (formals
+                             (list->lambda-formals
+                                (cons new-self-var (ast:lambda-formals->list fn))
+                                (ast:lambda-formals-type fn)))
+                          )
+                      (set-adb-info!
+                        (ast:lambda-id fn)
+                        formals
+                        (length new-free-vars))
                       `((%closure 
                           ,(ast:%make-lambda
                              (ast:lambda-id fn)
-                             (list->lambda-formals
-                                (cons new-self-var (ast:lambda-formals->list fn))
-                                (ast:lambda-formals-type fn))
+                             formals
                              (list (convert (car body) new-self-var new-free-vars))
                              (ast:lambda-has-cont fn)
                            )
@@ -1905,6 +1990,134 @@
                      )
            (scan (car (ast:lambda-body (car def-exps))) (define->var exp))))
           exp))
+)
+
+;; well-known-lambda :: symbol -> Either (AST Lambda | Boolean)
+;; Does the given symbol refer to a well-known lambda?
+;; If so the corresponding lambda object is returned, else #f.
+(define (well-known-lambda sym)
+  (and *well-known-lambda-sym-lookup-tbl*
+       (hash-table-ref/default *well-known-lambda-sym-lookup-tbl* sym #f)))
+
+(define *well-known-lambda-sym-lookup-tbl* #f)
+
+;; Scan for well-known lambdas:
+;; - app of a lambda is well-known, that's easy
+;; - lambda passed as a cont. If we can identify all the places the cont is
+;;   called and it is not used for anything but calls, then I suppose that
+;;   also qualifies as well-known.
+;; - ?? must be other cases
+(define (analyze:find-known-lambdas exp)
+  ;; Lambda conts that are candidates for well-known functions,
+  ;; we won't know until we check exactly how the cont is used...
+  (define candidates (make-hash-table))
+  (define scopes (make-hash-table))
+
+  ;; Add given lambda to candidate table
+  ;; ast:lam - AST Lambda object
+  ;; scope-ast:lam - Lambda that is calling ast:lam
+  ;; param-sym - Symbol of the parameter that the lambda is passed as
+  (define (add-candidate! ast:lam scope-ast:lam param-sym)
+    (hash-table-set! candidates param-sym ast:lam)
+    (hash-table-set! scopes param-sym scope-ast:lam)
+  )
+
+  ;; Remove given lambda from candidate table
+  ;; param-sym - Symbol representing the lambda to remove
+  (define (remove-candidate param-sym)
+    (hash-table-delete! candidates param-sym)
+    (hash-table-delete! scopes param-sym)
+  )
+
+  ;; Determine if the expression is a call to a primitive that receives
+  ;; a continuation. This is important since well-known functions cannot
+  ;; be passed as such a cont.
+  (define (prim-call/cont? exp)
+    (let ((result (and (app? exp)
+                       (prim:cont? (car exp)))))
+      ;(trace:info `(prim-call/cont? ,exp ,result))
+      result))
+
+  (define (found exp . sym)
+    (let ((lid (ast:lambda-id exp)))
+      (if (null? sym)
+          (trace:info `(found known lambda with id ,lid))
+          (trace:info `(found known lambda with id ,lid sym ,(car sym))))
+      (with-fnc! lid (lambda (fnc)
+        (adbf:set-well-known! fnc #t)))))
+
+  (define (scan exp scope)
+    (cond
+     ((ast:lambda? exp)
+      (for-each
+        (lambda (e)
+          (scan e (ast:lambda-id exp)))
+        (ast:lambda-body exp)))
+     ((quote? exp) exp)
+     ((const? exp) exp)
+     ((ref? exp) 
+      (remove-candidate exp)
+      exp)
+     ((define? exp) 
+      (for-each
+        (lambda (e)
+          (scan e -1))
+        (define->exp exp)))
+     ;((set!? exp) #f) ;; TODO ??
+     ((if? exp)       
+      (scan (if->condition exp) scope)
+      (scan (if->then exp) scope)
+      (scan (if->else exp) scope))
+     ((app? exp)
+      (cond
+        ((ast:lambda? (car exp))
+         (when (not (any prim-call/cont? (cdr exp)))
+           (found (car exp))) ;; We immediately know these lambdas are well-known
+         (let ((formals (ast:lambda-formals->list (car exp))))
+           (when (and (pair? formals)
+                      (pair? (cdr exp))
+                      (ast:lambda? (cadr exp))
+                      ;; Lambda is not well-known when called from a runtime prim
+                      ;;(not (any prim-call/cont? (cdr exp)))
+                 )
+             (add-candidate! (cadr exp) (car exp) (car formals)))
+         )
+         ;; Scan the rest of the args
+         (for-each
+           (lambda (e)
+             (scan e scope))
+           exp))
+        (else 
+          (for-each
+            (lambda (e)
+              (scan e scope))
+            (cond
+             ((ref? (car exp))
+              (let ((cand (hash-table-ref/default scopes (car exp) #f)))
+                (cond
+                  ;; Allow candidates to remain if they are just function calls
+                  ;; and they are called by the same function that defines them
+                  ((and cand
+                        (equal? (ast:lambda-id cand) scope)
+                        (not (any prim-call/cont? (cdr exp)))
+                   )
+                   (cdr exp))
+                  (else 
+                    exp))))
+             (else
+               exp))))))
+     (else #f)))
+
+;(trace:error `(update-lambda-atv! ,syms ,value))
+  (scan exp -1)
+  ;; Record all well-known lambdas that were found indirectly
+  (for-each
+    (lambda (sym/lamb)
+      (found (cdr sym/lamb) (car sym/lamb)))
+    (hash-table->alist candidates))
+  ;; Save the candidate list so we can use it to lookup
+  ;; well-known lambda's by var references to them.
+  (set! *well-known-lambda-sym-lookup-tbl* candidates)
 )
 
 ))
