@@ -1078,12 +1078,12 @@ c_733609.elements[0] = ((closureN)self_731606)->elements[0];
 
 make_utf8_string_with_len(c_733721, "<syn-clo>", 9, 9);
 
-make_pair(c_733724,quote_expr,NULL);
+alloca_pair(c_733724,quote_expr,NULL);
 
-make_pair(c_733723,quote_free_91names,&c_733724);
+alloca_pair(c_733723,quote_free_91names,c_733724);
 
-make_pair(c_733722,quote_env,&c_733723);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_733609, &c_733721, boolean_f, &c_733722);; 
+alloca_pair(c_733722,quote_env,c_733723);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_733609, &c_733721, boolean_f, c_733722);; 
 }
 
 static void __lambda_272(void *data, int argc, object self_731607, object r_731325) {
@@ -1444,82 +1444,82 @@ static void __lambda_294(void *data, int argc, object self_731628, object r_7313
 
 static void __lambda_286(void *data, int argc, object self_731629, object r_731300) {
   
-make_pair(c_733679,quote__list,NULL);
+alloca_pair(c_733679,quote__list,NULL);
 
-make_pair(c_733678,quote__while,&c_733679);
+alloca_pair(c_733678,quote__while,c_733679);
 
-make_pair(c_733677,quote__volatile,&c_733678);
+alloca_pair(c_733677,quote__volatile,c_733678);
 
-make_pair(c_733676,quote__void,&c_733677);
+alloca_pair(c_733676,quote__void,c_733677);
 
-make_pair(c_733675,quote__unsigned,&c_733676);
+alloca_pair(c_733675,quote__unsigned,c_733676);
 
-make_pair(c_733674,quote__union,&c_733675);
+alloca_pair(c_733674,quote__union,c_733675);
 
-make_pair(c_733673,quote__typedef,&c_733674);
+alloca_pair(c_733673,quote__typedef,c_733674);
 
-make_pair(c_733672,quote__switch,&c_733673);
+alloca_pair(c_733672,quote__switch,c_733673);
 
-make_pair(c_733671,quote__struct,&c_733672);
+alloca_pair(c_733671,quote__struct,c_733672);
 
-make_pair(c_733670,quote__static,&c_733671);
+alloca_pair(c_733670,quote__static,c_733671);
 
-make_pair(c_733669,quote__sizeof,&c_733670);
+alloca_pair(c_733669,quote__sizeof,c_733670);
 
-make_pair(c_733668,quote__signed,&c_733669);
+alloca_pair(c_733668,quote__signed,c_733669);
 
-make_pair(c_733667,quote__short,&c_733668);
+alloca_pair(c_733667,quote__short,c_733668);
 
-make_pair(c_733666,quote__return,&c_733667);
+alloca_pair(c_733666,quote__return,c_733667);
 
-make_pair(c_733665,quote__restrict,&c_733666);
+alloca_pair(c_733665,quote__restrict,c_733666);
 
-make_pair(c_733664,quote__register,&c_733665);
+alloca_pair(c_733664,quote__register,c_733665);
 
-make_pair(c_733663,quote__long,&c_733664);
+alloca_pair(c_733663,quote__long,c_733664);
 
-make_pair(c_733662,quote__int,&c_733663);
+alloca_pair(c_733662,quote__int,c_733663);
 
-make_pair(c_733661,quote__inline,&c_733662);
+alloca_pair(c_733661,quote__inline,c_733662);
 
-make_pair(c_733660,quote__191Imaginary,&c_733661);
+alloca_pair(c_733660,quote__191Imaginary,c_733661);
 
-make_pair(c_733659,quote__if,&c_733660);
+alloca_pair(c_733659,quote__if,c_733660);
 
-make_pair(c_733658,quote__goto,&c_733659);
+alloca_pair(c_733658,quote__goto,c_733659);
 
-make_pair(c_733657,quote__for,&c_733658);
+alloca_pair(c_733657,quote__for,c_733658);
 
-make_pair(c_733656,quote__float,&c_733657);
+alloca_pair(c_733656,quote__float,c_733657);
 
-make_pair(c_733655,quote__extern,&c_733656);
+alloca_pair(c_733655,quote__extern,c_733656);
 
-make_pair(c_733654,quote__enum,&c_733655);
+alloca_pair(c_733654,quote__enum,c_733655);
 
-make_pair(c_733653,quote__else,&c_733654);
+alloca_pair(c_733653,quote__else,c_733654);
 
-make_pair(c_733652,quote__double,&c_733653);
+alloca_pair(c_733652,quote__double,c_733653);
 
-make_pair(c_733651,quote__do,&c_733652);
+alloca_pair(c_733651,quote__do,c_733652);
 
-make_pair(c_733650,quote__default,&c_733651);
+alloca_pair(c_733650,quote__default,c_733651);
 
-make_pair(c_733649,quote__continue,&c_733650);
+alloca_pair(c_733649,quote__continue,c_733650);
 
-make_pair(c_733648,quote__const,&c_733649);
+alloca_pair(c_733648,quote__const,c_733649);
 
-make_pair(c_733647,quote__191Complex,&c_733648);
+alloca_pair(c_733647,quote__191Complex,c_733648);
 
-make_pair(c_733646,quote__char,&c_733647);
+alloca_pair(c_733646,quote__char,c_733647);
 
-make_pair(c_733645,quote__case,&c_733646);
+alloca_pair(c_733645,quote__case,c_733646);
 
-make_pair(c_733644,quote__break,&c_733645);
+alloca_pair(c_733644,quote__break,c_733645);
 
-make_pair(c_733643,quote__191Bool,&c_733644);
+alloca_pair(c_733643,quote__191Bool,c_733644);
 
-make_pair(c_733642,quote__auto,&c_733643);
-return_closcall1(data,  ((closureN)self_731629)->elements[0],  global_set(__glo__85c_91keywords_85_scheme_cyclone_util, &c_733642));; 
+alloca_pair(c_733642,quote__auto,c_733643);
+return_closcall1(data,  ((closureN)self_731629)->elements[0],  global_set(__glo__85c_91keywords_85_scheme_cyclone_util, c_733642));; 
 }
 
 static void __lambda_256(void *data, int argc, closure _,object k_731264, object str_73404_73648, object delim_73405_73649) {
@@ -2484,46 +2484,46 @@ c_733132.elements[2] = mac_91env_73344_73617;
 c_733132.elements[3] = use_91env_73343_73616;
 
 
-make_pair(c_733229,quote_define,quote_define);
+alloca_pair(c_733229,quote_define,quote_define);
 
-make_pair(c_733231,quote_define_91syntax,quote_define_91syntax);
+alloca_pair(c_733231,quote_define_91syntax,quote_define_91syntax);
 
-make_pair(c_733233,quote_let_91syntax,quote_let_91syntax);
+alloca_pair(c_733233,quote_let_91syntax,quote_let_91syntax);
 
-make_pair(c_733235,quote_letrec_91syntax,quote_letrec_91syntax);
+alloca_pair(c_733235,quote_letrec_91syntax,quote_letrec_91syntax);
 
-make_pair(c_733237,quote_define_91c,quote_define_91c);
+alloca_pair(c_733237,quote_define_91c,quote_define_91c);
 
-make_pair(c_733239,quote__if,quote__if);
+alloca_pair(c_733239,quote__if,quote__if);
 
-make_pair(c_733241,quote_lambda,quote_lambda);
+alloca_pair(c_733241,quote_lambda,quote_lambda);
 
-make_pair(c_733243,quote_quote,quote_quote);
+alloca_pair(c_733243,quote_quote,quote_quote);
 
-make_pair(c_733245,quote_set_67,quote_set_67);
+alloca_pair(c_733245,quote_set_67,quote_set_67);
 
-make_pair(c_733247,quote_begin,quote_begin);
+alloca_pair(c_733247,quote_begin,quote_begin);
 
-make_pair(c_733246,&c_733247,NULL);
+alloca_pair(c_733246,c_733247,NULL);
 
-make_pair(c_733244,&c_733245,&c_733246);
+alloca_pair(c_733244,c_733245,c_733246);
 
-make_pair(c_733242,&c_733243,&c_733244);
+alloca_pair(c_733242,c_733243,c_733244);
 
-make_pair(c_733240,&c_733241,&c_733242);
+alloca_pair(c_733240,c_733241,c_733242);
 
-make_pair(c_733238,&c_733239,&c_733240);
+alloca_pair(c_733238,c_733239,c_733240);
 
-make_pair(c_733236,&c_733237,&c_733238);
+alloca_pair(c_733236,c_733237,c_733238);
 
-make_pair(c_733234,&c_733235,&c_733236);
+alloca_pair(c_733234,c_733235,c_733236);
 
-make_pair(c_733232,&c_733233,&c_733234);
+alloca_pair(c_733232,c_733233,c_733234);
 
-make_pair(c_733230,&c_733231,&c_733232);
+alloca_pair(c_733230,c_733231,c_733232);
 
-make_pair(c_733228,&c_733229,&c_733230);
-return_direct_with_clo1(data,(closure)&c_733132,__lambda_201,  &c_733228);; 
+alloca_pair(c_733228,c_733229,c_733230);
+return_direct_with_clo1(data,(closure)&c_733132,__lambda_201,  c_733228);; 
 }
 
 static void __lambda_201(void *data, int argc, object self_731530, object renames_73346_73619) {

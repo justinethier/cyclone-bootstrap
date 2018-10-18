@@ -1599,9 +1599,9 @@ static void __lambda_4(void *data, int argc, object self_73332, object k_73200, 
 
 static void __lambda_2(void *data, int argc, object self_73330, object r_73194) {
   
-make_pair(c_73397,quote_begin,NULL);
+alloca_pair(c_73397,quote_begin,NULL);
 
-make_pair(c_73396,&c_73397, r_73194);
+make_pair(c_73396,c_73397, r_73194);
 
 object c_73393 = apply(data,  ((closureN)self_73330)->elements[0],__glo_append_scheme_base, &c_73396);
 return_closcall1(data,  ((closureN)self_73330)->elements[0],  c_73393);; 

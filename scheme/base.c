@@ -28689,15 +28689,15 @@ return_closcall1(data,(closure)&c_7312008,  c_7312025);;
 
 static void __lambda_4(void *data, int argc, object self_7310918, object r_733671) {
   
-make_pair(c_7312022,quote_posix,NULL);
+alloca_pair(c_7312022,quote_posix,NULL);
 
-make_pair(c_7312021,quote_full_91unicode,&c_7312022);
+alloca_pair(c_7312021,quote_full_91unicode,c_7312022);
 
-make_pair(c_7312020,quote_ieee_91float,&c_7312021);
+alloca_pair(c_7312020,quote_ieee_91float,c_7312021);
 
-make_pair(c_7312019,quote_r7rs,&c_7312020);
+alloca_pair(c_7312019,quote_r7rs,c_7312020);
 
-make_pair(c_7312016,Cyc_string2symbol(data, r_733671), &c_7312019);
+make_pair(c_7312016,Cyc_string2symbol(data, r_733671), c_7312019);
 
 make_pair(c_7312013,quote_cyclone, &c_7312016);
 return_closcall1(data,  ((closureN)self_7310918)->elements[0],  &c_7312013);; 

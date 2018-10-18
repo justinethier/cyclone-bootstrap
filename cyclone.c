@@ -8936,8 +8936,8 @@ c_732187.elements[3] = ((closureN)self_731178)->elements[3];
 c_732187.elements[4] = ((closureN)self_731178)->elements[4];
 
 
-make_pair(c_732241,quote_call_95cc,NULL);
-return_closcall3(data,  __glo_append_scheme_base,  &c_732187, &c_732241, car(((closureN)self_731178)->elements[1]));
+alloca_pair(c_732241,quote_call_95cc,NULL);
+return_closcall3(data,  __glo_append_scheme_base,  &c_732187, c_732241, car(((closureN)self_731178)->elements[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_731178)->elements[3],  Cyc_set_cell(data, ((closureN)self_731178)->elements[2], ((closureN)self_731178)->elements[0]));}
 ; 
@@ -8977,8 +8977,8 @@ c_732191.elements[2] = ((closureN)self_731180)->elements[2];
 c_732191.elements[3] = ((closureN)self_731180)->elements[3];
 
 
-make_pair(c_732234,quote_call_95cc,NULL);
-return_closcall3(data,  __glo_append_scheme_base,  &c_732191, &c_732234, car(((closureN)self_731180)->elements[3]));; 
+alloca_pair(c_732234,quote_call_95cc,NULL);
+return_closcall3(data,  __glo_append_scheme_base,  &c_732191, c_732234, car(((closureN)self_731180)->elements[3]));; 
 }
 
 static void __lambda_173(void *data, int argc, object self_731181, object r_73590) {
@@ -9013,16 +9013,16 @@ c_732195.elements[1] = ((closureN)self_731182)->elements[1];
 c_732195.elements[2] = ((closureN)self_731182)->elements[2];
 
 
-make_pair(c_732225,quote_result,NULL);
+alloca_pair(c_732225,quote_result,NULL);
 
-make_pair(c_732224,quote__191,&c_732225);
+alloca_pair(c_732224,quote__191,c_732225);
 
-make_pair(c_732230,quote_result,NULL);
+alloca_pair(c_732230,quote_result,NULL);
 
-make_pair(c_732229,quote_k,&c_732230);
+alloca_pair(c_732229,quote_k,c_732230);
 
-make_list_1(c_732228,&c_732229);
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732195, &c_732224, &c_732228);; 
+make_list_1(c_732228,c_732229);
+return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732195, c_732224, &c_732228);; 
 }
 
 static void __lambda_175(void *data, int argc, object self_731183, object r_73586) {
@@ -9040,14 +9040,14 @@ c_732197.elements[1] = ((closureN)self_731183)->elements[1];
 c_732197.elements[2] = ((closureN)self_731183)->elements[2];
 
 
-make_pair(c_732217,quote_f,NULL);
+alloca_pair(c_732217,quote_f,NULL);
 
-make_pair(c_732216,quote_k,&c_732217);
+alloca_pair(c_732216,quote_k,c_732217);
 
 make_list_3(c_732223,quote_f, quote_k, r_73586);
 
 make_list_1(c_732220,&c_732223);
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732197, &c_732216, &c_732220);; 
+return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732197, c_732216, &c_732220);; 
 }
 
 static void __lambda_176(void *data, int argc, object self_731184, object r_73579) {
@@ -9065,10 +9065,10 @@ return_closcall1(data,  ((closureN)self_731184)->elements[2],  Cyc_set_cell(data
 static void __lambda_169(void *data, int argc, object self_731185, object k_73594) {
   if( (boolean_f != __glo_library_127_scheme_cyclone_libraries) ){ 
   
-make_pair(c_732183,quote_base,NULL);
+alloca_pair(c_732183,quote_base,NULL);
 
-make_pair(c_732182,quote_scheme,&c_732183);
-return_direct_with_clo1(data,  k_73594,__lambda_170,  equalp(car(((closureN)self_731185)->elements[0]), &c_732182));
+alloca_pair(c_732182,quote_scheme,c_732183);
+return_direct_with_clo1(data,  k_73594,__lambda_170,  equalp(car(((closureN)self_731185)->elements[0]), c_732182));
 } else { 
   return_direct_with_clo1(data,  k_73594,__lambda_170,  boolean_f);}
 ; 

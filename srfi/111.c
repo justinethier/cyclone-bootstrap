@@ -397,8 +397,8 @@ c_7359.elements[0] = k_7323;
 
 make_utf8_string_with_len(c_73105, "box-type", 8, 8);
 
-make_pair(c_73106,quote_value,NULL);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7359, &c_73105, boolean_f, &c_73106);; 
+alloca_pair(c_73106,quote_value,NULL);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7359, &c_73105, boolean_f, c_73106);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7343, object r_7341) {

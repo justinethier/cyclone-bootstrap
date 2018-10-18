@@ -1214,9 +1214,9 @@ return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_732665, prim
 
 static void __lambda_238(void *data, int argc, object self_731189, object r_73979) {
   
-make_pair(c_732671,boolean_f,NULL);
+alloca_pair(c_732671,boolean_f,NULL);
 
-make_pair(c_732670,&c_732671, r_73979);
+make_pair(c_732670,c_732671, r_73979);
 return_closcall1(data,  ((closureN)self_731189)->elements[0],  &c_732670);; 
 }
 
@@ -1600,8 +1600,8 @@ c_732540.elements[2] = ((closureN)self_731208)->elements[2];
 c_732540.elements[3] = ((closureN)self_731208)->elements[3];
 
 
-make_pair(c_732569,boolean_f,NULL);
-return_closcall2(data,  car(((closureN)self_731208)->elements[4]),  &c_732540, &c_732569);; 
+alloca_pair(c_732569,boolean_f,NULL);
+return_closcall2(data,  car(((closureN)self_731208)->elements[4]),  &c_732540, c_732569);; 
 }
 
 static void __lambda_217(void *data, int argc, object self_731209, object r_73953) {

@@ -1042,10 +1042,10 @@ static void __lambda_36(void *data, int argc, object self_73174, object r_73133)
   
 make_utf8_string_with_len(c_73363, "-s", 2, 2);
 
-make_pair(c_73362,&c_73363,NULL);
+alloca_pair(c_73362,&c_73363,NULL);
 
 complex_num_type local_73356; object c_73357 = ((inline_function_type)
-                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73356,memberp(data, Cyc_car(data, r_73133), &c_73362));
+                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_73356,memberp(data, Cyc_car(data, r_73133), c_73362));
 return_closcall1(data,  ((closureN)self_73174)->elements[0],  c_73357);; 
 }
 

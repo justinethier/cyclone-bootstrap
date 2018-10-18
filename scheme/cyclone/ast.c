@@ -665,14 +665,14 @@ c_73993.elements[0] = ((closureN)self_73447)->elements[0];
 
 make_utf8_string_with_len(c_731098, "<lambda-ast>", 12, 12);
 
-make_pair(c_731102,quote_has_91cont,NULL);
+alloca_pair(c_731102,quote_has_91cont,NULL);
 
-make_pair(c_731101,quote_body,&c_731102);
+alloca_pair(c_731101,quote_body,c_731102);
 
-make_pair(c_731100,quote_args,&c_731101);
+alloca_pair(c_731100,quote_args,c_731101);
 
-make_pair(c_731099,quote_id,&c_731100);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73993, &c_731098, boolean_f, &c_731099);; 
+alloca_pair(c_731099,quote_id,c_731100);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73993, &c_731098, boolean_f, c_731099);; 
 }
 
 static void __lambda_73(void *data, int argc, object self_73448, object r_73381) {

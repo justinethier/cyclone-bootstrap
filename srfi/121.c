@@ -1524,8 +1524,8 @@ static void __lambda_287(void *data, int argc, object self_731541, object r_7311
 static void __lambda_280(void *data, int argc, closure _,object k_731164, object args_73352_73356_73621_raw, ...) {
 load_varargs(args_73352_73356_73621, args_73352_73356_73621_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator->string");
-  make_pair(c_733686,quote_gen,NULL);
-  object c_733681 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733686));
+  alloca_pair(c_733686,quote_gen,NULL);
+  object c_733681 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73352_73356_73621), Cyc_length(data, c_733686));
 if( (boolean_f != c_733681) ){ 
   
 mclosure0(c_733691, (function_type)__lambda_281);c_733691.num_args = 1;
@@ -1533,9 +1533,9 @@ mclosure0(c_733691, (function_type)__lambda_281);c_733691.num_args = 1;
 object c_733690 = apply(data,  k_731164,&c_733691, args_73352_73356_73621);
 return_closcall1(data,  k_731164,  c_733690);
 } else { 
-    make_pair(c_733707,quote_n,NULL);
-  make_pair(c_733706,quote_gen,&c_733707);
-  object c_733701 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733706));
+    alloca_pair(c_733707,quote_n,NULL);
+  alloca_pair(c_733706,quote_gen,c_733707);
+  object c_733701 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73352_73356_73621), Cyc_length(data, c_733706));
 if( (boolean_f != c_733701) ){ 
   
 mclosure0(c_733712, (function_type)__lambda_283);c_733712.num_args = 2;
@@ -1781,8 +1781,8 @@ static void __lambda_275(void *data, int argc, object self_731528, object r_7311
 static void __lambda_266(void *data, int argc, closure _,object k_731134, object args_73323_73327_73606_raw, ...) {
 load_varargs(args_73323_73327_73606, args_73323_73327_73606_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator->vector");
-  make_pair(c_733577,quote_gen,NULL);
-  object c_733572 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733577));
+  alloca_pair(c_733577,quote_gen,NULL);
+  object c_733572 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73323_73327_73606), Cyc_length(data, c_733577));
 if( (boolean_f != c_733572) ){ 
   
 mclosure0(c_733582, (function_type)__lambda_267);c_733582.num_args = 1;
@@ -1790,9 +1790,9 @@ mclosure0(c_733582, (function_type)__lambda_267);c_733582.num_args = 1;
 object c_733581 = apply(data,  k_731134,&c_733582, args_73323_73327_73606);
 return_closcall1(data,  k_731134,  c_733581);
 } else { 
-    make_pair(c_733598,quote_n,NULL);
-  make_pair(c_733597,quote_gen,&c_733598);
-  object c_733592 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733597));
+    alloca_pair(c_733598,quote_n,NULL);
+  alloca_pair(c_733597,quote_gen,c_733598);
+  object c_733592 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73323_73327_73606), Cyc_length(data, c_733597));
 if( (boolean_f != c_733592) ){ 
   
 mclosure0(c_733603, (function_type)__lambda_269);c_733603.num_args = 2;
@@ -1852,9 +1852,9 @@ return_closcall1(data,  ((closureN)self_731517)->elements[0],  c_733589);;
 static void __lambda_262(void *data, int argc, closure _,object k_731118, object args_73312_73316_73601_raw, ...) {
 load_varargs(args_73312_73316_73601, args_73312_73316_73601_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator->reverse-list");
-  make_pair(c_733543,quote_n,NULL);
-  make_pair(c_733542,quote_gen,&c_733543);
-  object c_733537 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733542));
+  alloca_pair(c_733543,quote_n,NULL);
+  alloca_pair(c_733542,quote_gen,c_733543);
+  object c_733537 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73312_73316_73601), Cyc_length(data, c_733542));
 if( (boolean_f != c_733537) ){ 
   
 mclosure0(c_733548, (function_type)__lambda_263);c_733548.num_args = 2;
@@ -1862,8 +1862,8 @@ mclosure0(c_733548, (function_type)__lambda_263);c_733548.num_args = 2;
 object c_733547 = apply(data,  k_731118,&c_733548, args_73312_73316_73601);
 return_closcall1(data,  k_731118,  c_733547);
 } else { 
-    make_pair(c_733560,quote_gen,NULL);
-  object c_733555 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733560));
+    alloca_pair(c_733560,quote_gen,NULL);
+  object c_733555 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73312_73316_73601), Cyc_length(data, c_733560));
 if( (boolean_f != c_733555) ){ 
   
 mclosure0(c_733565, (function_type)__lambda_265);c_733565.num_args = 1;
@@ -1904,9 +1904,9 @@ static void __lambda_264(void *data, int argc, object self_731514, object r_7311
 static void __lambda_257(void *data, int argc, closure _,object k_731102, object args_73301_73305_73596_raw, ...) {
 load_varargs(args_73301_73305_73596, args_73301_73305_73596_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator->list");
-  make_pair(c_733505,quote_n,NULL);
-  make_pair(c_733504,quote_gen,&c_733505);
-  object c_733499 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733504));
+  alloca_pair(c_733505,quote_n,NULL);
+  alloca_pair(c_733504,quote_gen,c_733505);
+  object c_733499 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73301_73305_73596), Cyc_length(data, c_733504));
 if( (boolean_f != c_733499) ){ 
   
 mclosure0(c_733510, (function_type)__lambda_258);c_733510.num_args = 2;
@@ -1914,8 +1914,8 @@ mclosure0(c_733510, (function_type)__lambda_258);c_733510.num_args = 2;
 object c_733509 = apply(data,  k_731102,&c_733510, args_73301_73305_73596);
 return_closcall1(data,  k_731102,  c_733509);
 } else { 
-    make_pair(c_733522,quote_gen,NULL);
-  object c_733517 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733522));
+    alloca_pair(c_733522,quote_gen,NULL);
+  object c_733517 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73301_73305_73596), Cyc_length(data, c_733522));
 if( (boolean_f != c_733517) ){ 
   
 mclosure0(c_733527, (function_type)__lambda_260);c_733527.num_args = 1;
@@ -2671,8 +2671,8 @@ static void __lambda_232(void *data, int argc, object self_731493, object r_7310
 static void __lambda_207(void *data, int argc, closure _,object k_731040, object args_73238_73242_73565_raw, ...) {
 load_varargs(args_73238_73242_73565, args_73238_73242_73565_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:gdelete-neighbor-dups");
-  make_pair(c_733159,quote_gen,NULL);
-  object c_733154 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733159));
+  alloca_pair(c_733159,quote_gen,NULL);
+  object c_733154 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73238_73242_73565), Cyc_length(data, c_733159));
 if( (boolean_f != c_733154) ){ 
   
 mclosure0(c_733164, (function_type)__lambda_208);c_733164.num_args = 1;
@@ -2680,9 +2680,9 @@ mclosure0(c_733164, (function_type)__lambda_208);c_733164.num_args = 1;
 object c_733163 = apply(data,  k_731040,&c_733164, args_73238_73242_73565);
 return_closcall1(data,  k_731040,  c_733163);
 } else { 
-    make_pair(c_733174,quote__123_123,NULL);
-  make_pair(c_733173,quote_gen,&c_733174);
-  object c_733168 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733173));
+    alloca_pair(c_733174,quote__123_123,NULL);
+  alloca_pair(c_733173,quote_gen,c_733174);
+  object c_733168 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73238_73242_73565), Cyc_length(data, c_733173));
 if( (boolean_f != c_733168) ){ 
   
 mclosure0(c_733179, (function_type)__lambda_209);c_733179.num_args = 2;
@@ -3046,9 +3046,9 @@ static void __lambda_208(void *data, int argc, object self_731454, object k_7310
 static void __lambda_196(void *data, int argc, closure _,object k_731018, object args_73214_73218_73555_raw, ...) {
 load_varargs(args_73214_73218_73555, args_73214_73218_73555_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:gdelete");
-  make_pair(c_733078,quote_gen,NULL);
-  make_pair(c_733077,quote_item,&c_733078);
-  object c_733072 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733077));
+  alloca_pair(c_733078,quote_gen,NULL);
+  alloca_pair(c_733077,quote_item,c_733078);
+  object c_733072 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73214_73218_73555), Cyc_length(data, c_733077));
 if( (boolean_f != c_733072) ){ 
   
 mclosure0(c_733083, (function_type)__lambda_197);c_733083.num_args = 2;
@@ -3056,10 +3056,10 @@ mclosure0(c_733083, (function_type)__lambda_197);c_733083.num_args = 2;
 object c_733082 = apply(data,  k_731018,&c_733083, args_73214_73218_73555);
 return_closcall1(data,  k_731018,  c_733082);
 } else { 
-    make_pair(c_733094,quote__123_123,NULL);
-  make_pair(c_733093,quote_gen,&c_733094);
-  make_pair(c_733092,quote_item,&c_733093);
-  object c_733087 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733092));
+    alloca_pair(c_733094,quote__123_123,NULL);
+  alloca_pair(c_733093,quote_gen,c_733094);
+  alloca_pair(c_733092,quote_item,c_733093);
+  object c_733087 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73214_73218_73555), Cyc_length(data, c_733092));
 if( (boolean_f != c_733087) ){ 
   
 mclosure0(c_733099, (function_type)__lambda_198);c_733099.num_args = 3;
@@ -3838,9 +3838,9 @@ static void __lambda_171(void *data, int argc, object self_731422, object r_7398
 static void __lambda_155(void *data, int argc, closure _,object k_73955, object args_73170_73174_73528_raw, ...) {
 load_varargs(args_73170_73174_73528, args_73170_73174_73528_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:gtake");
-  make_pair(c_732797,quote_k,NULL);
-  make_pair(c_732796,quote_gen,&c_732797);
-  object c_732791 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732796));
+  alloca_pair(c_732797,quote_k,NULL);
+  alloca_pair(c_732796,quote_gen,c_732797);
+  object c_732791 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73170_73174_73528), Cyc_length(data, c_732796));
 if( (boolean_f != c_732791) ){ 
   
 mclosure0(c_732802, (function_type)__lambda_156);c_732802.num_args = 2;
@@ -3848,10 +3848,10 @@ mclosure0(c_732802, (function_type)__lambda_156);c_732802.num_args = 2;
 object c_732801 = apply(data,  k_73955,&c_732802, args_73170_73174_73528);
 return_closcall1(data,  k_73955,  c_732801);
 } else { 
-    make_pair(c_732817,quote_padding,NULL);
-  make_pair(c_732816,quote_k,&c_732817);
-  make_pair(c_732815,quote_gen,&c_732816);
-  object c_732810 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732815));
+    alloca_pair(c_732817,quote_padding,NULL);
+  alloca_pair(c_732816,quote_k,c_732817);
+  alloca_pair(c_732815,quote_gen,c_732816);
+  object c_732810 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73170_73174_73528), Cyc_length(data, c_732815));
 if( (boolean_f != c_732810) ){ 
   
 mclosure0(c_732822, (function_type)__lambda_157);c_732822.num_args = 3;
@@ -5079,8 +5079,8 @@ static void __lambda_103(void *data, int argc, object self_731347, object k_7388
 static void __lambda_91(void *data, int argc, closure _,object k_73852, object args_73110_73114_73486_raw, ...) {
 load_varargs(args_73110_73114_73486, args_73110_73114_73486_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:bytevector->generator");
-  make_pair(c_732368,quote_str,NULL);
-  object c_732363 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732368));
+  alloca_pair(c_732368,quote_str,NULL);
+  object c_732363 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, c_732368));
 if( (boolean_f != c_732363) ){ 
   
 mclosure0(c_732373, (function_type)__lambda_92);c_732373.num_args = 1;
@@ -5088,9 +5088,9 @@ mclosure0(c_732373, (function_type)__lambda_92);c_732373.num_args = 1;
 object c_732372 = apply(data,  k_73852,&c_732373, args_73110_73114_73486);
 return_closcall1(data,  k_73852,  c_732372);
 } else { 
-    make_pair(c_732389,quote_start,NULL);
-  make_pair(c_732388,quote_str,&c_732389);
-  object c_732383 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732388));
+    alloca_pair(c_732389,quote_start,NULL);
+  alloca_pair(c_732388,quote_str,c_732389);
+  object c_732383 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, c_732388));
 if( (boolean_f != c_732383) ){ 
   
 mclosure0(c_732394, (function_type)__lambda_94);c_732394.num_args = 2;
@@ -5098,10 +5098,10 @@ mclosure0(c_732394, (function_type)__lambda_94);c_732394.num_args = 2;
 object c_732393 = apply(data,  k_73852,&c_732394, args_73110_73114_73486);
 return_closcall1(data,  k_73852,  c_732393);
 } else { 
-    make_pair(c_732412,quote_end,NULL);
-  make_pair(c_732411,quote_start,&c_732412);
-  make_pair(c_732410,quote_str,&c_732411);
-  object c_732405 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732410));
+    alloca_pair(c_732412,quote_end,NULL);
+  alloca_pair(c_732411,quote_start,c_732412);
+  alloca_pair(c_732410,quote_str,c_732411);
+  object c_732405 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73110_73114_73486), Cyc_length(data, c_732410));
 if( (boolean_f != c_732405) ){ 
   
 mclosure0(c_732417, (function_type)__lambda_96);c_732417.num_args = 3;
@@ -5278,8 +5278,8 @@ static void __lambda_93(void *data, int argc, object self_731337, object r_73857
 static void __lambda_80(void *data, int argc, closure _,object k_73826, object args_7394_7398_73477_raw, ...) {
 load_varargs(args_7394_7398_73477, args_7394_7398_73477_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:string->generator");
-  make_pair(c_732260,quote_str,NULL);
-  object c_732255 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732260));
+  alloca_pair(c_732260,quote_str,NULL);
+  object c_732255 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, c_732260));
 if( (boolean_f != c_732255) ){ 
   
 mclosure0(c_732265, (function_type)__lambda_81);c_732265.num_args = 1;
@@ -5287,9 +5287,9 @@ mclosure0(c_732265, (function_type)__lambda_81);c_732265.num_args = 1;
 object c_732264 = apply(data,  k_73826,&c_732265, args_7394_7398_73477);
 return_closcall1(data,  k_73826,  c_732264);
 } else { 
-    make_pair(c_732281,quote_start,NULL);
-  make_pair(c_732280,quote_str,&c_732281);
-  object c_732275 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732280));
+    alloca_pair(c_732281,quote_start,NULL);
+  alloca_pair(c_732280,quote_str,c_732281);
+  object c_732275 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, c_732280));
 if( (boolean_f != c_732275) ){ 
   
 mclosure0(c_732286, (function_type)__lambda_83);c_732286.num_args = 2;
@@ -5297,10 +5297,10 @@ mclosure0(c_732286, (function_type)__lambda_83);c_732286.num_args = 2;
 object c_732285 = apply(data,  k_73826,&c_732286, args_7394_7398_73477);
 return_closcall1(data,  k_73826,  c_732285);
 } else { 
-    make_pair(c_732304,quote_end,NULL);
-  make_pair(c_732303,quote_start,&c_732304);
-  make_pair(c_732302,quote_str,&c_732303);
-  object c_732297 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732302));
+    alloca_pair(c_732304,quote_end,NULL);
+  alloca_pair(c_732303,quote_start,c_732304);
+  alloca_pair(c_732302,quote_str,c_732303);
+  object c_732297 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7394_7398_73477), Cyc_length(data, c_732302));
 if( (boolean_f != c_732297) ){ 
   
 mclosure0(c_732309, (function_type)__lambda_85);c_732309.num_args = 3;
@@ -5477,8 +5477,8 @@ static void __lambda_82(void *data, int argc, object self_731326, object r_73831
 static void __lambda_69(void *data, int argc, closure _,object k_73799, object args_7378_7382_73468_raw, ...) {
 load_varargs(args_7378_7382_73468, args_7378_7382_73468_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:reverse-vector->generator");
-  make_pair(c_732148,quote_vec,NULL);
-  object c_732143 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732148));
+  alloca_pair(c_732148,quote_vec,NULL);
+  object c_732143 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, c_732148));
 if( (boolean_f != c_732143) ){ 
   
 mclosure0(c_732153, (function_type)__lambda_70);c_732153.num_args = 1;
@@ -5486,9 +5486,9 @@ mclosure0(c_732153, (function_type)__lambda_70);c_732153.num_args = 1;
 object c_732152 = apply(data,  k_73799,&c_732153, args_7378_7382_73468);
 return_closcall1(data,  k_73799,  c_732152);
 } else { 
-    make_pair(c_732169,quote_start,NULL);
-  make_pair(c_732168,quote_vec,&c_732169);
-  object c_732163 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732168));
+    alloca_pair(c_732169,quote_start,NULL);
+  alloca_pair(c_732168,quote_vec,c_732169);
+  object c_732163 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, c_732168));
 if( (boolean_f != c_732163) ){ 
   
 mclosure0(c_732174, (function_type)__lambda_72);c_732174.num_args = 2;
@@ -5496,10 +5496,10 @@ mclosure0(c_732174, (function_type)__lambda_72);c_732174.num_args = 2;
 object c_732173 = apply(data,  k_73799,&c_732174, args_7378_7382_73468);
 return_closcall1(data,  k_73799,  c_732173);
 } else { 
-    make_pair(c_732192,quote_end,NULL);
-  make_pair(c_732191,quote_start,&c_732192);
-  make_pair(c_732190,quote_vec,&c_732191);
-  object c_732185 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732190));
+    alloca_pair(c_732192,quote_end,NULL);
+  alloca_pair(c_732191,quote_start,c_732192);
+  alloca_pair(c_732190,quote_vec,c_732191);
+  object c_732185 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7378_7382_73468), Cyc_length(data, c_732190));
 if( (boolean_f != c_732185) ){ 
   
 mclosure0(c_732197, (function_type)__lambda_74);c_732197.num_args = 3;
@@ -5681,8 +5681,8 @@ static void __lambda_71(void *data, int argc, object self_731315, object r_73804
 static void __lambda_58(void *data, int argc, closure _,object k_73773, object args_7362_7366_73459_raw, ...) {
 load_varargs(args_7362_7366_73459, args_7362_7366_73459_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:vector->generator");
-  make_pair(c_732040,quote_vec,NULL);
-  object c_732035 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732040));
+  alloca_pair(c_732040,quote_vec,NULL);
+  object c_732035 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, c_732040));
 if( (boolean_f != c_732035) ){ 
   
 mclosure0(c_732045, (function_type)__lambda_59);c_732045.num_args = 1;
@@ -5690,9 +5690,9 @@ mclosure0(c_732045, (function_type)__lambda_59);c_732045.num_args = 1;
 object c_732044 = apply(data,  k_73773,&c_732045, args_7362_7366_73459);
 return_closcall1(data,  k_73773,  c_732044);
 } else { 
-    make_pair(c_732061,quote_start,NULL);
-  make_pair(c_732060,quote_vec,&c_732061);
-  object c_732055 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732060));
+    alloca_pair(c_732061,quote_start,NULL);
+  alloca_pair(c_732060,quote_vec,c_732061);
+  object c_732055 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, c_732060));
 if( (boolean_f != c_732055) ){ 
   
 mclosure0(c_732066, (function_type)__lambda_61);c_732066.num_args = 2;
@@ -5700,10 +5700,10 @@ mclosure0(c_732066, (function_type)__lambda_61);c_732066.num_args = 2;
 object c_732065 = apply(data,  k_73773,&c_732066, args_7362_7366_73459);
 return_closcall1(data,  k_73773,  c_732065);
 } else { 
-    make_pair(c_732084,quote_end,NULL);
-  make_pair(c_732083,quote_start,&c_732084);
-  make_pair(c_732082,quote_vec,&c_732083);
-  object c_732077 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732082));
+    alloca_pair(c_732084,quote_end,NULL);
+  alloca_pair(c_732083,quote_start,c_732084);
+  alloca_pair(c_732082,quote_vec,c_732083);
+  object c_732077 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7362_7366_73459), Cyc_length(data, c_732082));
 if( (boolean_f != c_732077) ){ 
   
 mclosure0(c_732089, (function_type)__lambda_63);c_732089.num_args = 3;
@@ -6537,8 +6537,8 @@ static void __lambda_32(void *data, int argc, object self_731275, object r_73730
 static void __lambda_21(void *data, int argc, closure _,object k_73707, object args_7334_7338_73429_raw, ...) {
 load_varargs(args_7334_7338_73429, args_7334_7338_73429_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:make-range-generator");
-  make_pair(c_731755,quote_start,NULL);
-  object c_731750 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731755));
+  alloca_pair(c_731755,quote_start,NULL);
+  object c_731750 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, c_731755));
 if( (boolean_f != c_731750) ){ 
   
 mclosure0(c_731760, (function_type)__lambda_22);c_731760.num_args = 1;
@@ -6546,9 +6546,9 @@ mclosure0(c_731760, (function_type)__lambda_22);c_731760.num_args = 1;
 object c_731759 = apply(data,  k_73707,&c_731760, args_7334_7338_73429);
 return_closcall1(data,  k_73707,  c_731759);
 } else { 
-    make_pair(c_731770,quote_end,NULL);
-  make_pair(c_731769,quote_start,&c_731770);
-  object c_731764 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731769));
+    alloca_pair(c_731770,quote_end,NULL);
+  alloca_pair(c_731769,quote_start,c_731770);
+  object c_731764 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, c_731769));
 if( (boolean_f != c_731764) ){ 
   
 mclosure0(c_731775, (function_type)__lambda_23);c_731775.num_args = 2;
@@ -6556,10 +6556,10 @@ mclosure0(c_731775, (function_type)__lambda_23);c_731775.num_args = 2;
 object c_731774 = apply(data,  k_73707,&c_731775, args_7334_7338_73429);
 return_closcall1(data,  k_73707,  c_731774);
 } else { 
-    make_pair(c_731786,quote_step,NULL);
-  make_pair(c_731785,quote_end,&c_731786);
-  make_pair(c_731784,quote_start,&c_731785);
-  object c_731779 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731784));
+    alloca_pair(c_731786,quote_step,NULL);
+  alloca_pair(c_731785,quote_end,c_731786);
+  alloca_pair(c_731784,quote_start,c_731785);
+  object c_731779 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7334_7338_73429), Cyc_length(data, c_731784));
 if( (boolean_f != c_731779) ){ 
   
 mclosure0(c_731791, (function_type)__lambda_24);c_731791.num_args = 3;
@@ -6769,8 +6769,8 @@ static void __lambda_20(void *data, int argc, object self_731264, object r_73702
 static void __lambda_9(void *data, int argc, closure _,object k_73679, object args_7315_7319_73417_raw, ...) {
 load_varargs(args_7315_7319_73417, args_7315_7319_73417_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:make-iota-generator");
-  make_pair(c_731641,quote_count,NULL);
-  object c_731636 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731641));
+  alloca_pair(c_731641,quote_count,NULL);
+  object c_731636 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, c_731641));
 if( (boolean_f != c_731636) ){ 
   
 mclosure0(c_731646, (function_type)__lambda_10);c_731646.num_args = 1;
@@ -6778,9 +6778,9 @@ mclosure0(c_731646, (function_type)__lambda_10);c_731646.num_args = 1;
 object c_731645 = apply(data,  k_73679,&c_731646, args_7315_7319_73417);
 return_closcall1(data,  k_73679,  c_731645);
 } else { 
-    make_pair(c_731656,quote_start,NULL);
-  make_pair(c_731655,quote_count,&c_731656);
-  object c_731650 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731655));
+    alloca_pair(c_731656,quote_start,NULL);
+  alloca_pair(c_731655,quote_count,c_731656);
+  object c_731650 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, c_731655));
 if( (boolean_f != c_731650) ){ 
   
 mclosure0(c_731661, (function_type)__lambda_11);c_731661.num_args = 2;
@@ -6788,10 +6788,10 @@ mclosure0(c_731661, (function_type)__lambda_11);c_731661.num_args = 2;
 object c_731660 = apply(data,  k_73679,&c_731661, args_7315_7319_73417);
 return_closcall1(data,  k_73679,  c_731660);
 } else { 
-    make_pair(c_731672,quote_step,NULL);
-  make_pair(c_731671,quote_start,&c_731672);
-  make_pair(c_731670,quote_count,&c_731671);
-  object c_731665 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731670));
+    alloca_pair(c_731672,quote_step,NULL);
+  alloca_pair(c_731671,quote_start,c_731672);
+  alloca_pair(c_731670,quote_count,c_731671);
+  object c_731665 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7315_7319_73417), Cyc_length(data, c_731670));
 if( (boolean_f != c_731665) ){ 
   
 mclosure0(c_731677, (function_type)__lambda_12);c_731677.num_args = 3;

@@ -615,10 +615,10 @@ c_731384.elements[0] = k_73544;
 
 make_utf8_string_with_len(c_731452, "<list-queue>", 12, 12);
 
-make_pair(c_731454,quote_last,NULL);
+alloca_pair(c_731454,quote_last,NULL);
 
-make_pair(c_731453,quote_first,&c_731454);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_731384, &c_731452, boolean_f, &c_731453);; 
+alloca_pair(c_731453,quote_first,c_731454);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_731384, &c_731452, boolean_f, c_731453);; 
 }
 
 static void __lambda_131(void *data, int argc, object self_73678, object r_73571) {
@@ -943,9 +943,9 @@ static void __lambda_151(void *data, int argc, object self_73698, object r_73557
 static void __lambda_124(void *data, int argc, closure _,object k_73525, object args_73150_73154_73261_raw, ...) {
 load_varargs(args_73150_73154_73261, args_73150_73154_73261_raw, argc - 1);
   Cyc_st_add(data, "srfi/117.sld:list-queue-set-list!");
-  make_pair(c_731339,quote_first,NULL);
-  make_pair(c_731338,quote_list_91queue,&c_731339);
-  object c_731333 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73150_73154_73261), Cyc_length(data, &c_731338));
+  alloca_pair(c_731339,quote_first,NULL);
+  alloca_pair(c_731338,quote_list_91queue,c_731339);
+  object c_731333 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73150_73154_73261), Cyc_length(data, c_731338));
 if( (boolean_f != c_731333) ){ 
   
 mclosure0(c_731344, (function_type)__lambda_125);c_731344.num_args = 2;
@@ -953,10 +953,10 @@ mclosure0(c_731344, (function_type)__lambda_125);c_731344.num_args = 2;
 object c_731343 = apply(data,  k_73525,&c_731344, args_73150_73154_73261);
 return_closcall1(data,  k_73525,  c_731343);
 } else { 
-    make_pair(c_731368,quote_last,NULL);
-  make_pair(c_731367,quote_first,&c_731368);
-  make_pair(c_731366,quote_list_91queue,&c_731367);
-  object c_731361 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73150_73154_73261), Cyc_length(data, &c_731366));
+    alloca_pair(c_731368,quote_last,NULL);
+  alloca_pair(c_731367,quote_first,c_731368);
+  alloca_pair(c_731366,quote_list_91queue,c_731367);
+  object c_731361 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73150_73154_73261), Cyc_length(data, c_731366));
 if( (boolean_f != c_731361) ){ 
   
 mclosure0(c_731373, (function_type)__lambda_128);c_731373.num_args = 3;
@@ -1331,12 +1331,12 @@ static void __lambda_108(void *data, int argc, object self_73668, object r_73498
 static void __lambda_101(void *data, int argc, closure _,object k_73482, object args_73118_73122_73236_raw, ...) {
 load_varargs(args_73118_73122_73236, args_73118_73122_73236_raw, argc - 1);
   Cyc_st_add(data, "srfi/117.sld:list-queue-unfold-right");
-  make_pair(c_731225,quote_queue,NULL);
-  make_pair(c_731224,quote_seed,&c_731225);
-  make_pair(c_731223,quote_successor,&c_731224);
-  make_pair(c_731222,quote_mapper,&c_731223);
-  make_pair(c_731221,quote_stop_127,&c_731222);
-  object c_731216 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73118_73122_73236), Cyc_length(data, &c_731221));
+  alloca_pair(c_731225,quote_queue,NULL);
+  alloca_pair(c_731224,quote_seed,c_731225);
+  alloca_pair(c_731223,quote_successor,c_731224);
+  alloca_pair(c_731222,quote_mapper,c_731223);
+  alloca_pair(c_731221,quote_stop_127,c_731222);
+  object c_731216 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73118_73122_73236), Cyc_length(data, c_731221));
 if( (boolean_f != c_731216) ){ 
   
 mclosure0(c_731230, (function_type)__lambda_102);c_731230.num_args = 5;
@@ -1344,11 +1344,11 @@ mclosure0(c_731230, (function_type)__lambda_102);c_731230.num_args = 5;
 object c_731229 = apply(data,  k_73482,&c_731230, args_73118_73122_73236);
 return_closcall1(data,  k_73482,  c_731229);
 } else { 
-    make_pair(c_731242,quote_seed,NULL);
-  make_pair(c_731241,quote_successor,&c_731242);
-  make_pair(c_731240,quote_mapper,&c_731241);
-  make_pair(c_731239,quote_stop_127,&c_731240);
-  object c_731234 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73118_73122_73236), Cyc_length(data, &c_731239));
+    alloca_pair(c_731242,quote_seed,NULL);
+  alloca_pair(c_731241,quote_successor,c_731242);
+  alloca_pair(c_731240,quote_mapper,c_731241);
+  alloca_pair(c_731239,quote_stop_127,c_731240);
+  object c_731234 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_73118_73122_73236), Cyc_length(data, c_731239));
 if( (boolean_f != c_731234) ){ 
   
 mclosure0(c_731247, (function_type)__lambda_103);c_731247.num_args = 4;
@@ -1604,12 +1604,12 @@ static void __lambda_93(void *data, int argc, object self_73654, object r_73471)
 static void __lambda_86(void *data, int argc, closure _,object k_73455, object args_7392_7396_73217_raw, ...) {
 load_varargs(args_7392_7396_73217, args_7392_7396_73217_raw, argc - 1);
   Cyc_st_add(data, "srfi/117.sld:list-queue-unfold");
-  make_pair(c_731131,quote_queue,NULL);
-  make_pair(c_731130,quote_seed,&c_731131);
-  make_pair(c_731129,quote_successor,&c_731130);
-  make_pair(c_731128,quote_mapper,&c_731129);
-  make_pair(c_731127,quote_stop_127,&c_731128);
-  object c_731122 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7392_7396_73217), Cyc_length(data, &c_731127));
+  alloca_pair(c_731131,quote_queue,NULL);
+  alloca_pair(c_731130,quote_seed,c_731131);
+  alloca_pair(c_731129,quote_successor,c_731130);
+  alloca_pair(c_731128,quote_mapper,c_731129);
+  alloca_pair(c_731127,quote_stop_127,c_731128);
+  object c_731122 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7392_7396_73217), Cyc_length(data, c_731127));
 if( (boolean_f != c_731122) ){ 
   
 mclosure0(c_731136, (function_type)__lambda_87);c_731136.num_args = 5;
@@ -1617,11 +1617,11 @@ mclosure0(c_731136, (function_type)__lambda_87);c_731136.num_args = 5;
 object c_731135 = apply(data,  k_73455,&c_731136, args_7392_7396_73217);
 return_closcall1(data,  k_73455,  c_731135);
 } else { 
-    make_pair(c_731148,quote_seed,NULL);
-  make_pair(c_731147,quote_successor,&c_731148);
-  make_pair(c_731146,quote_mapper,&c_731147);
-  make_pair(c_731145,quote_stop_127,&c_731146);
-  object c_731140 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7392_7396_73217), Cyc_length(data, &c_731145));
+    alloca_pair(c_731148,quote_seed,NULL);
+  alloca_pair(c_731147,quote_successor,c_731148);
+  alloca_pair(c_731146,quote_mapper,c_731147);
+  alloca_pair(c_731145,quote_stop_127,c_731146);
+  object c_731140 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7392_7396_73217), Cyc_length(data, c_731145));
 if( (boolean_f != c_731140) ){ 
   
 mclosure0(c_731153, (function_type)__lambda_88);c_731153.num_args = 4;
@@ -1747,8 +1747,8 @@ mclosure0(c_731058, (function_type)__lambda_75);c_731058.num_args = 0;
 object c_731057 = apply(data,  k_73423,&c_731058, args_7376_7380_73208);
 return_closcall1(data,  k_73423,  c_731057);
 } else { 
-    make_pair(c_731067,quote_queue,NULL);
-  object c_731062 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7376_7380_73208), Cyc_length(data, &c_731067));
+    alloca_pair(c_731067,quote_queue,NULL);
+  object c_731062 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7376_7380_73208), Cyc_length(data, c_731067));
 if( (boolean_f != c_731062) ){ 
   
 mclosure0(c_731072, (function_type)__lambda_76);c_731072.num_args = 1;
@@ -2680,8 +2680,8 @@ return_closcall2(data,  __glo_make_91list_91queue_srfi_117,  k_73323, objs_7324_
 static void __lambda_12(void *data, int argc, closure _,object k_73305, object args_7313_7317_73173_raw, ...) {
 load_varargs(args_7313_7317_73173, args_7313_7317_73173_raw, argc - 1);
   Cyc_st_add(data, "srfi/117.sld:make-list-queue");
-  make_pair(c_73766,quote__list,NULL);
-  object c_73761 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7313_7317_73173), Cyc_length(data, &c_73766));
+  alloca_pair(c_73766,quote__list,NULL);
+  object c_73761 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7313_7317_73173), Cyc_length(data, c_73766));
 if( (boolean_f != c_73761) ){ 
   
 mclosure0(c_73771, (function_type)__lambda_13);c_73771.num_args = 1;
@@ -2689,9 +2689,9 @@ mclosure0(c_73771, (function_type)__lambda_13);c_73771.num_args = 1;
 object c_73770 = apply(data,  k_73305,&c_73771, args_7313_7317_73173);
 return_closcall1(data,  k_73305,  c_73770);
 } else { 
-    make_pair(c_73788,quote_last,NULL);
-  make_pair(c_73787,quote__list,&c_73788);
-  object c_73782 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7313_7317_73173), Cyc_length(data, &c_73787));
+    alloca_pair(c_73788,quote_last,NULL);
+  alloca_pair(c_73787,quote__list,c_73788);
+  object c_73782 = Cyc_num_fast_eq_op(data,Cyc_length(data, args_7313_7317_73173), Cyc_length(data, c_73787));
 if( (boolean_f != c_73782) ){ 
   
 mclosure0(c_73793, (function_type)__lambda_15);c_73793.num_args = 2;

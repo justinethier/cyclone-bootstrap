@@ -865,16 +865,16 @@ c_732413.elements[0] = ((closureN)self_731151)->elements[0];
 
 make_utf8_string_with_len(c_732550, "<srfi-hash-table>", 17, 17);
 
-make_pair(c_732555,quote_entries,NULL);
+alloca_pair(c_732555,quote_entries,NULL);
 
-make_pair(c_732554,quote_associate,&c_732555);
+alloca_pair(c_732554,quote_associate,c_732555);
 
-make_pair(c_732553,quote_compare,&c_732554);
+alloca_pair(c_732553,quote_compare,c_732554);
 
-make_pair(c_732552,quote_hash,&c_732553);
+alloca_pair(c_732552,quote_hash,c_732553);
 
-make_pair(c_732551,quote_size,&c_732552);
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_732413, &c_732550, boolean_f, &c_732551);; 
+alloca_pair(c_732551,quote_size,c_732552);
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_732413, &c_732550, boolean_f, c_732551);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_731152, object r_73945) {

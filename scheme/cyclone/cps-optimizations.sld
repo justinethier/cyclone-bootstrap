@@ -1568,6 +1568,7 @@
       (analyze exp -1 -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
       (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
+      (analyze:find-recursive-calls2 exp)
     )
 
     ;; NOTES:
@@ -1992,6 +1993,96 @@
           exp))
 )
 
+;; Does given symbol refer to a recursive call to given lambda ID?
+(define (rec-call? sym lid)
+  (cond
+   ((ref? sym)
+    (let ((var (adb:get/default sym #f)))
+      ;(trace:info 
+      ;  `(rec-call? ,sym ,lid
+      ;       ;; TODO: crap, these are not set yet!!!
+      ;       ;; may need to consider keeping out original version of find-recursive-calls and
+      ;       ;; adding a new version that does a deeper analysis
+      ;       ,(if var (not (adbv:reassigned? var)) #f)
+      ;       ,(if var (adbv:assigned-value var) #f)
+      ;       ;,((ast:lambda? var-lam))
+      ;       ,(adb:get/default lid #f)
+      ;       )
+      ;     )
+      (and-let* (
+                 ((not (equal? var #f)))
+                 ((not (adbv:reassigned? var)))
+                 (var-lam (adbv:assigned-value var))
+                 ((ast:lambda? var-lam))
+                 (fnc (adb:get/default lid #f))
+                )
+        ;(trace:info `(equal? ,lid ,(ast:lambda-id var-lam)))
+        (equal? lid (ast:lambda-id var-lam)))))
+   (else
+    #f)))
+
+;; Same as the original function, but this one is called at the end of analysis and 
+;; uses data that was previously not available.
+;;
+;; The reason for having two versions of this is that the original is necessary for
+;; beta expansion (and must remain, at least for now) and this one will provide useful
+;; data for code generation.
+;;
+;; TODO: is the above true? not so sure anymore, need to verify that, look at optimize-cps
+(define (analyze:find-recursive-calls2 exp)
+
+  (define (scan exp def-sym lid)
+    ;(trace:info `(analyze:find-recursive-calls2 scan ,def-sym ,exp ,lid))
+    (cond
+     ((ast:lambda? exp)
+      (for-each
+        (lambda (e)
+          (scan e def-sym (ast:lambda-id exp)))
+        (ast:lambda-body exp)))
+     ((quote? exp) exp)
+     ((const? exp) exp)
+     ((ref? exp) 
+      exp)
+     ((define? exp) #f) ;; TODO ??
+     ((set!? exp)
+      (for-each
+        (lambda (e)
+          (scan e def-sym lid))
+        (cdr exp))
+     )
+     ((if? exp)       
+      (scan (if->condition exp) def-sym lid)
+      (scan (if->then exp) def-sym lid)
+      (scan (if->else exp) def-sym lid))
+     ((app? exp)
+      (when (or ;(equal? (car exp) def-sym) TODO: def-sym is obsolete, remove it
+                (rec-call? (car exp) lid))
+        ;(trace:info `("recursive call" ,exp))
+        (with-var! (car exp) (lambda (var)
+          (adbv:set-self-rec-call! var #t))))
+      (for-each
+        (lambda (e)
+          (scan e def-sym lid))
+        exp)
+     )
+     (else #f)))
+
+  ;; TODO: probably not good enough, what about recursive functions that are not top-level??
+;TODO: need to address those now, I think we have the support now via (rec-call?)
+  (if (pair? exp)
+      (for-each
+        (lambda (exp)
+          ;(trace:info `(analyze:find-recursive-calls ,exp))
+          (and-let* (((define? exp))
+                      (def-exps (define->exp exp))
+                     ((vector? (car def-exps)))
+                     ((ast:lambda? (car def-exps)))
+                     (id (ast:lambda-id (car def-exps)))
+                     )
+           (scan (car (ast:lambda-body (car def-exps))) (define->var exp) id)
+        ))
+        exp))
+)
 ;; well-known-lambda :: symbol -> Either (AST Lambda | Boolean)
 ;; Does the given symbol refer to a well-known lambda?
 ;; If so the corresponding lambda object is returned, else #f.

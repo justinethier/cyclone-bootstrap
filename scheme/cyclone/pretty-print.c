@@ -1424,11 +1424,11 @@ static void __lambda_198(void *data, int argc, object self_73877, object k_73822
 }
 
 static void __lambda_197(void *data, int argc, object self_73878, object r_73816) {
-    make_pair(c_732926,quote_unquote_91splicing,NULL);
-  make_pair(c_732925,quote_unquote,&c_732926);
-  make_pair(c_732924,quote_quasiquote,&c_732925);
-  make_pair(c_732923,quote_quote,&c_732924);
-if( (boolean_f != memqp(data, Cyc_car(data, ((closureN)self_73878)->elements[1]), &c_732923)) ){ 
+    alloca_pair(c_732926,quote_unquote_91splicing,NULL);
+  alloca_pair(c_732925,quote_unquote,c_732926);
+  alloca_pair(c_732924,quote_quasiquote,c_732925);
+  alloca_pair(c_732923,quote_quote,c_732924);
+if( (boolean_f != memqp(data, Cyc_car(data, ((closureN)self_73878)->elements[1]), c_732923)) ){ 
   return_closcall2(data,  car(((closureN)self_73878)->elements[2]),  ((closureN)self_73878)->elements[0], Cyc_cdr(data, ((closureN)self_73878)->elements[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_73878)->elements[0],  boolean_f);}
@@ -7014,16 +7014,16 @@ return_direct_with_clo1(data,(closure)&c_731271,__lambda_34,  head_73259_73499);
 }
 
 static void __lambda_34(void *data, int argc, object self_731098, object tmp_73260_73263_73500) {
-    make_pair(c_731277,quote_define,NULL);
-  make_pair(c_731276,quote_letrec,&c_731277);
-  make_pair(c_731275,quote_let_85,&c_731276);
-  make_pair(c_731274,quote_lambda,&c_731275);
-if( (boolean_f != memqp(data, tmp_73260_73263_73500, &c_731274)) ){ 
+    alloca_pair(c_731277,quote_define,NULL);
+  alloca_pair(c_731276,quote_letrec,c_731277);
+  alloca_pair(c_731275,quote_let_85,c_731276);
+  alloca_pair(c_731274,quote_lambda,c_731275);
+if( (boolean_f != memqp(data, tmp_73260_73263_73500, c_731274)) ){ 
   return_closcall1(data,  ((closureN)self_731098)->elements[0],  car(((closureN)self_731098)->elements[7]));
 } else { 
-    make_pair(c_731286,quote_set_67,NULL);
-  make_pair(c_731285,quote__if,&c_731286);
-if( (boolean_f != memqp(data, tmp_73260_73263_73500, &c_731285)) ){ 
+    alloca_pair(c_731286,quote_set_67,NULL);
+  alloca_pair(c_731285,quote__if,c_731286);
+if( (boolean_f != memqp(data, tmp_73260_73263_73500, c_731285)) ){ 
   return_closcall1(data,  ((closureN)self_731098)->elements[0],  car(((closureN)self_731098)->elements[6]));
 } else { 
   if( (boolean_f != Cyc_eq(tmp_73260_73263_73500, quote_cond)) ){ 
@@ -7032,9 +7032,9 @@ if( (boolean_f != memqp(data, tmp_73260_73263_73500, &c_731285)) ){
   if( (boolean_f != Cyc_eq(tmp_73260_73263_73500, quote__case)) ){ 
   return_closcall1(data,  ((closureN)self_731098)->elements[0],  car(((closureN)self_731098)->elements[3]));
 } else { 
-    make_pair(c_731309,quote_or,NULL);
-  make_pair(c_731308,quote_and,&c_731309);
-if( (boolean_f != memqp(data, tmp_73260_73263_73500, &c_731308)) ){ 
+    alloca_pair(c_731309,quote_or,NULL);
+  alloca_pair(c_731308,quote_and,c_731309);
+if( (boolean_f != memqp(data, tmp_73260_73263_73500, c_731308)) ){ 
   return_closcall1(data,  ((closureN)self_731098)->elements[0],  car(((closureN)self_731098)->elements[1]));
 } else { 
   if( (boolean_f != Cyc_eq(tmp_73260_73263_73500, quote_let)) ){ 

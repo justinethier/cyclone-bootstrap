@@ -811,1536 +811,1536 @@ c_734461.elements = (object *)alloca(sizeof(object) * 1);
 c_734461.elements[0] = ((closureN)self_731691)->elements[0];
 
 
-make_pair(c_735230,quote_Cyc_91unsafe_91cdr,NULL);
+alloca_pair(c_735230,quote_Cyc_91unsafe_91cdr,NULL);
 
-make_pair(c_735229,quote_Cyc_91unsafe_91car,&c_735230);
+alloca_pair(c_735229,quote_Cyc_91unsafe_91car,c_735230);
 
-make_pair(c_735228,quote_Cyc_91display,&c_735229);
+alloca_pair(c_735228,quote_Cyc_91display,c_735229);
 
-make_pair(c_735227,quote_Cyc_91write,&c_735228);
+alloca_pair(c_735227,quote_Cyc_91write,c_735228);
 
-make_pair(c_735226,quote_Cyc_91write_91char,&c_735227);
+alloca_pair(c_735226,quote_Cyc_91write_91char,c_735227);
 
-make_pair(c_735225,quote_Cyc_91read_91line,&c_735226);
+alloca_pair(c_735225,quote_Cyc_91read_91line,c_735226);
 
-make_pair(c_735224,quote_Cyc_91peek_91char,&c_735225);
+alloca_pair(c_735224,quote_Cyc_91peek_91char,c_735225);
 
-make_pair(c_735223,quote_Cyc_91read_91char,&c_735224);
+alloca_pair(c_735223,quote_Cyc_91read_91char,c_735224);
 
-make_pair(c_735222,quote_delete_91file,&c_735223);
+alloca_pair(c_735222,quote_delete_91file,c_735223);
 
-make_pair(c_735221,quote_file_91exists_127,&c_735222);
+alloca_pair(c_735221,quote_file_91exists_127,c_735222);
 
-make_pair(c_735220,quote_Cyc_91flush_91output_91port,&c_735221);
+alloca_pair(c_735220,quote_Cyc_91flush_91output_91port,c_735221);
 
-make_pair(c_735219,quote_close_91output_91port,&c_735220);
+alloca_pair(c_735219,quote_close_91output_91port,c_735220);
 
-make_pair(c_735218,quote_close_91input_91port,&c_735219);
+alloca_pair(c_735218,quote_close_91input_91port,c_735219);
 
-make_pair(c_735217,quote_close_91port,&c_735218);
+alloca_pair(c_735217,quote_close_91port,c_735218);
 
-make_pair(c_735216,quote_open_91output_91file,&c_735217);
+alloca_pair(c_735216,quote_open_91output_91file,c_735217);
 
-make_pair(c_735215,quote_open_91input_91file,&c_735216);
+alloca_pair(c_735215,quote_open_91input_91file,c_735216);
 
-make_pair(c_735214,quote_symbol_127,&c_735215);
+alloca_pair(c_735214,quote_symbol_127,c_735215);
 
-make_pair(c_735213,quote_string_127,&c_735214);
+alloca_pair(c_735213,quote_string_127,c_735214);
 
-make_pair(c_735212,quote_vector_127,&c_735213);
+alloca_pair(c_735212,quote_vector_127,c_735213);
 
-make_pair(c_735211,quote_Cyc_91macro_127,&c_735212);
+alloca_pair(c_735211,quote_Cyc_91macro_127,c_735212);
 
-make_pair(c_735210,quote_procedure_127,&c_735211);
+alloca_pair(c_735210,quote_procedure_127,c_735211);
 
-make_pair(c_735209,quote_port_127,&c_735210);
+alloca_pair(c_735209,quote_port_127,c_735210);
 
-make_pair(c_735208,quote_pair_127,&c_735209);
+alloca_pair(c_735208,quote_pair_127,c_735209);
 
-make_pair(c_735207,quote_integer_127,&c_735208);
+alloca_pair(c_735207,quote_integer_127,c_735208);
 
-make_pair(c_735206,quote_real_127,&c_735207);
+alloca_pair(c_735206,quote_real_127,c_735207);
 
-make_pair(c_735205,quote_number_127,&c_735206);
+alloca_pair(c_735205,quote_number_127,c_735206);
 
-make_pair(c_735204,quote_null_127,&c_735205);
+alloca_pair(c_735204,quote_null_127,c_735205);
 
-make_pair(c_735203,quote_eof_91object_127,&c_735204);
+alloca_pair(c_735203,quote_eof_91object_127,c_735204);
 
-make_pair(c_735202,quote_char_127,&c_735203);
+alloca_pair(c_735202,quote_char_127,c_735203);
 
-make_pair(c_735201,quote_boolean_127,&c_735202);
+alloca_pair(c_735201,quote_boolean_127,c_735202);
 
-make_pair(c_735200,quote_vector_91set_67,&c_735201);
+alloca_pair(c_735200,quote_vector_91set_67,c_735201);
 
-make_pair(c_735199,quote_vector_91ref,&c_735200);
+alloca_pair(c_735199,quote_vector_91ref,c_735200);
 
-make_pair(c_735198,quote_vector_91length,&c_735199);
+alloca_pair(c_735198,quote_vector_91length,c_735199);
 
-make_pair(c_735197,quote_list_91_125vector,&c_735198);
+alloca_pair(c_735197,quote_list_91_125vector,c_735198);
 
-make_pair(c_735196,quote_make_91vector,&c_735197);
+alloca_pair(c_735196,quote_make_91vector,c_735197);
 
-make_pair(c_735195,quote_bytevector_127,&c_735196);
+alloca_pair(c_735195,quote_bytevector_127,c_735196);
 
-make_pair(c_735194,quote_bytevector_91u8_91set_67,&c_735195);
+alloca_pair(c_735194,quote_bytevector_91u8_91set_67,c_735195);
 
-make_pair(c_735193,quote_bytevector_91u8_91ref,&c_735194);
+alloca_pair(c_735193,quote_bytevector_91u8_91ref,c_735194);
 
-make_pair(c_735192,quote_Cyc_91string_91_125utf8,&c_735193);
+alloca_pair(c_735192,quote_Cyc_91string_91_125utf8,c_735193);
 
-make_pair(c_735191,quote_Cyc_91utf8_91_125string,&c_735192);
+alloca_pair(c_735191,quote_Cyc_91utf8_91_125string,c_735192);
 
-make_pair(c_735190,quote_Cyc_91bytevector_91copy,&c_735191);
+alloca_pair(c_735190,quote_Cyc_91bytevector_91copy,c_735191);
 
-make_pair(c_735189,quote_bytevector_91append,&c_735190);
+alloca_pair(c_735189,quote_bytevector_91append,c_735190);
 
-make_pair(c_735188,quote_bytevector,&c_735189);
+alloca_pair(c_735188,quote_bytevector,c_735189);
 
-make_pair(c_735187,quote_bytevector_91length,&c_735188);
+alloca_pair(c_735187,quote_bytevector_91length,c_735188);
 
-make_pair(c_735186,quote_make_91bytevector,&c_735187);
+alloca_pair(c_735186,quote_make_91bytevector,c_735187);
 
-make_pair(c_735185,quote_substring,&c_735186);
+alloca_pair(c_735185,quote_substring,c_735186);
 
-make_pair(c_735184,quote_string_91set_67,&c_735185);
+alloca_pair(c_735184,quote_string_91set_67,c_735185);
 
-make_pair(c_735183,quote_string_91ref,&c_735184);
+alloca_pair(c_735183,quote_string_91ref,c_735184);
 
-make_pair(c_735182,quote_string_91length,&c_735183);
+alloca_pair(c_735182,quote_string_91length,c_735183);
 
-make_pair(c_735181,quote_number_91_125string,&c_735182);
+alloca_pair(c_735181,quote_number_91_125string,c_735182);
 
-make_pair(c_735180,quote_symbol_91_125string,&c_735181);
+alloca_pair(c_735180,quote_symbol_91_125string,c_735181);
 
-make_pair(c_735179,quote_string_91_125symbol,&c_735180);
+alloca_pair(c_735179,quote_string_91_125symbol,c_735180);
 
-make_pair(c_735178,quote_list_91_125string,&c_735179);
+alloca_pair(c_735178,quote_list_91_125string,c_735179);
 
-make_pair(c_735177,quote_string_91cmp,&c_735178);
+alloca_pair(c_735177,quote_string_91cmp,c_735178);
 
-make_pair(c_735176,quote_string_91append,&c_735177);
+alloca_pair(c_735176,quote_string_91append,c_735177);
 
-make_pair(c_735175,quote_string_91_125number,&c_735176);
+alloca_pair(c_735175,quote_string_91_125number,c_735176);
 
-make_pair(c_735174,quote_integer_91_125char,&c_735175);
+alloca_pair(c_735174,quote_integer_91_125char,c_735175);
 
-make_pair(c_735173,quote_char_91_125integer,&c_735174);
+alloca_pair(c_735173,quote_char_91_125integer,c_735174);
 
-make_pair(c_735172,quote_cddddr,&c_735173);
+alloca_pair(c_735172,quote_cddddr,c_735173);
 
-make_pair(c_735171,quote_cdddar,&c_735172);
+alloca_pair(c_735171,quote_cdddar,c_735172);
 
-make_pair(c_735170,quote_cddadr,&c_735171);
+alloca_pair(c_735170,quote_cddadr,c_735171);
 
-make_pair(c_735169,quote_cddaar,&c_735170);
+alloca_pair(c_735169,quote_cddaar,c_735170);
 
-make_pair(c_735168,quote_cdaddr,&c_735169);
+alloca_pair(c_735168,quote_cdaddr,c_735169);
 
-make_pair(c_735167,quote_cdadar,&c_735168);
+alloca_pair(c_735167,quote_cdadar,c_735168);
 
-make_pair(c_735166,quote_cdaadr,&c_735167);
+alloca_pair(c_735166,quote_cdaadr,c_735167);
 
-make_pair(c_735165,quote_cdaaar,&c_735166);
+alloca_pair(c_735165,quote_cdaaar,c_735166);
 
-make_pair(c_735164,quote_cadddr,&c_735165);
+alloca_pair(c_735164,quote_cadddr,c_735165);
 
-make_pair(c_735163,quote_caddar,&c_735164);
+alloca_pair(c_735163,quote_caddar,c_735164);
 
-make_pair(c_735162,quote_cadadr,&c_735163);
+alloca_pair(c_735162,quote_cadadr,c_735163);
 
-make_pair(c_735161,quote_cadaar,&c_735162);
+alloca_pair(c_735161,quote_cadaar,c_735162);
 
-make_pair(c_735160,quote_caaddr,&c_735161);
+alloca_pair(c_735160,quote_caaddr,c_735161);
 
-make_pair(c_735159,quote_caadar,&c_735160);
+alloca_pair(c_735159,quote_caadar,c_735160);
 
-make_pair(c_735158,quote_caaadr,&c_735159);
+alloca_pair(c_735158,quote_caaadr,c_735159);
 
-make_pair(c_735157,quote_caaaar,&c_735158);
+alloca_pair(c_735157,quote_caaaar,c_735158);
 
-make_pair(c_735156,quote_cdddr,&c_735157);
+alloca_pair(c_735156,quote_cdddr,c_735157);
 
-make_pair(c_735155,quote_cddar,&c_735156);
+alloca_pair(c_735155,quote_cddar,c_735156);
 
-make_pair(c_735154,quote_cdadr,&c_735155);
+alloca_pair(c_735154,quote_cdadr,c_735155);
 
-make_pair(c_735153,quote_cdaar,&c_735154);
+alloca_pair(c_735153,quote_cdaar,c_735154);
 
-make_pair(c_735152,quote_caddr,&c_735153);
+alloca_pair(c_735152,quote_caddr,c_735153);
 
-make_pair(c_735151,quote_cadar,&c_735152);
+alloca_pair(c_735151,quote_cadar,c_735152);
 
-make_pair(c_735150,quote_caadr,&c_735151);
+alloca_pair(c_735150,quote_caadr,c_735151);
 
-make_pair(c_735149,quote_caaar,&c_735150);
+alloca_pair(c_735149,quote_caaar,c_735150);
 
-make_pair(c_735148,quote_cddr,&c_735149);
+alloca_pair(c_735148,quote_cddr,c_735149);
 
-make_pair(c_735147,quote_cdar,&c_735148);
+alloca_pair(c_735147,quote_cdar,c_735148);
 
-make_pair(c_735146,quote_cadr,&c_735147);
+alloca_pair(c_735146,quote_cadr,c_735147);
 
-make_pair(c_735145,quote_caar,&c_735146);
+alloca_pair(c_735145,quote_caar,c_735146);
 
-make_pair(c_735144,quote_cdr,&c_735145);
+alloca_pair(c_735144,quote_cdr,c_735145);
 
-make_pair(c_735143,quote_car,&c_735144);
+alloca_pair(c_735143,quote_car,c_735144);
 
-make_pair(c_735142,quote_set_91cdr_67,&c_735143);
+alloca_pair(c_735142,quote_set_91cdr_67,c_735143);
 
-make_pair(c_735141,quote_set_91car_67,&c_735142);
+alloca_pair(c_735141,quote_set_91car_67,c_735142);
 
-make_pair(c_735140,quote_length,&c_735141);
+alloca_pair(c_735140,quote_length,c_735141);
 
-make_pair(c_735139,quote_memv,&c_735140);
+alloca_pair(c_735139,quote_memv,c_735140);
 
-make_pair(c_735138,quote_memq,&c_735139);
+alloca_pair(c_735138,quote_memq,c_735139);
 
-make_pair(c_735137,quote_assq,&c_735138);
+alloca_pair(c_735137,quote_assq,c_735138);
 
-make_pair(c_735136,quote_assv,&c_735137);
+alloca_pair(c_735136,quote_assv,c_735137);
 
-make_pair(c_735135,quote_Cyc_91fast_91assoc,&c_735136);
+alloca_pair(c_735135,quote_Cyc_91fast_91assoc,c_735136);
 
-make_pair(c_735134,quote_Cyc_91fast_91member,&c_735135);
+alloca_pair(c_735134,quote_Cyc_91fast_91member,c_735135);
 
-make_pair(c_735133,quote_equal_127,&c_735134);
+alloca_pair(c_735133,quote_equal_127,c_735134);
 
-make_pair(c_735132,quote_eqv_127,&c_735133);
+alloca_pair(c_735132,quote_eqv_127,c_735133);
 
-make_pair(c_735131,quote_eq_127,&c_735132);
+alloca_pair(c_735131,quote_eq_127,c_735132);
 
-make_pair(c_735130,quote_cell,&c_735131);
+alloca_pair(c_735130,quote_cell,c_735131);
 
-make_pair(c_735129,quote_set_91cell_67,&c_735130);
+alloca_pair(c_735129,quote_set_91cell_67,c_735130);
 
-make_pair(c_735128,quote_set_91global_67,&c_735129);
+alloca_pair(c_735128,quote_set_91global_67,c_735129);
 
-make_pair(c_735127,quote_cell_91get,&c_735128);
+alloca_pair(c_735127,quote_cell_91get,c_735128);
 
-make_pair(c_735126,quote_Cyc_91fast_91list_914,&c_735127);
+alloca_pair(c_735126,quote_Cyc_91fast_91list_914,c_735127);
 
-make_pair(c_735125,quote_Cyc_91fast_91list_913,&c_735126);
+alloca_pair(c_735125,quote_Cyc_91fast_91list_913,c_735126);
 
-make_pair(c_735124,quote_Cyc_91fast_91list_912,&c_735125);
+alloca_pair(c_735124,quote_Cyc_91fast_91list_912,c_735125);
 
-make_pair(c_735123,quote_Cyc_91fast_91list_911,&c_735124);
+alloca_pair(c_735123,quote_Cyc_91fast_91list_911,c_735124);
 
-make_pair(c_735122,quote_cons,&c_735123);
+alloca_pair(c_735122,quote_cons,c_735123);
 
-make_pair(c_735121,quote_Cyc_91current_91exception_91handler,&c_735122);
+alloca_pair(c_735121,quote_Cyc_91current_91exception_91handler,c_735122);
 
-make_pair(c_735120,quote_Cyc_91default_91exception_91handler,&c_735121);
+alloca_pair(c_735120,quote_Cyc_91default_91exception_91handler,c_735121);
 
-make_pair(c_735119,quote_Cyc_91compilation_91environment,&c_735120);
+alloca_pair(c_735119,quote_Cyc_91compilation_91environment,c_735120);
 
-make_pair(c_735118,quote_Cyc_91installation_91dir,&c_735119);
+alloca_pair(c_735118,quote_Cyc_91installation_91dir,c_735119);
 
-make_pair(c_735117,quote_command_91line_91arguments,&c_735118);
+alloca_pair(c_735117,quote_command_91line_91arguments,c_735118);
 
-make_pair(c_735116,quote_system,&c_735117);
+alloca_pair(c_735116,quote_system,c_735117);
 
-make_pair(c_735115,quote_exit,&c_735116);
+alloca_pair(c_735115,quote_exit,c_735116);
 
-make_pair(c_735114,quote__75halt,&c_735115);
+alloca_pair(c_735114,quote__75halt,c_735115);
 
-make_pair(c_735113,quote_Cyc_91fast_91apply,&c_735114);
+alloca_pair(c_735113,quote_Cyc_91fast_91apply,c_735114);
 
-make_pair(c_735112,quote_apply,&c_735113);
+alloca_pair(c_735112,quote_apply,c_735113);
 
-make_pair(c_735111,quote__121_123,&c_735112);
+alloca_pair(c_735111,quote__121_123,c_735112);
 
-make_pair(c_735110,quote__125_123,&c_735111);
+alloca_pair(c_735110,quote__125_123,c_735111);
 
-make_pair(c_735109,quote__121,&c_735110);
+alloca_pair(c_735109,quote__121,c_735110);
 
-make_pair(c_735108,quote__125,&c_735109);
+alloca_pair(c_735108,quote__125,c_735109);
 
-make_pair(c_735107,quote__123,&c_735108);
+alloca_pair(c_735107,quote__123,c_735108);
 
-make_pair(c_735106,quote_Cyc_91fast_91char_91lte,&c_735107);
+alloca_pair(c_735106,quote_Cyc_91fast_91char_91lte,c_735107);
 
-make_pair(c_735105,quote_Cyc_91fast_91char_91gte,&c_735106);
+alloca_pair(c_735105,quote_Cyc_91fast_91char_91gte,c_735106);
 
-make_pair(c_735104,quote_Cyc_91fast_91char_91lt,&c_735105);
+alloca_pair(c_735104,quote_Cyc_91fast_91char_91lt,c_735105);
 
-make_pair(c_735103,quote_Cyc_91fast_91char_91gt,&c_735104);
+alloca_pair(c_735103,quote_Cyc_91fast_91char_91gt,c_735104);
 
-make_pair(c_735102,quote_Cyc_91fast_91char_91eq,&c_735103);
+alloca_pair(c_735102,quote_Cyc_91fast_91char_91eq,c_735103);
 
-make_pair(c_735101,quote_Cyc_91fast_91lte,&c_735102);
+alloca_pair(c_735101,quote_Cyc_91fast_91lte,c_735102);
 
-make_pair(c_735100,quote_Cyc_91fast_91gte,&c_735101);
+alloca_pair(c_735100,quote_Cyc_91fast_91gte,c_735101);
 
-make_pair(c_735099,quote_Cyc_91fast_91lt,&c_735100);
+alloca_pair(c_735099,quote_Cyc_91fast_91lt,c_735100);
 
-make_pair(c_735098,quote_Cyc_91fast_91gt,&c_735099);
+alloca_pair(c_735098,quote_Cyc_91fast_91gt,c_735099);
 
-make_pair(c_735097,quote_Cyc_91fast_91eq,&c_735098);
+alloca_pair(c_735097,quote_Cyc_91fast_91eq,c_735098);
 
-make_pair(c_735096,quote__95,&c_735097);
+alloca_pair(c_735096,quote__95,c_735097);
 
-make_pair(c_735095,quote__85,&c_735096);
+alloca_pair(c_735095,quote__85,c_735096);
 
-make_pair(c_735094,quote__91,&c_735095);
+alloca_pair(c_735094,quote__91,c_735095);
 
-make_pair(c_735093,quote__87,&c_735094);
+alloca_pair(c_735093,quote__87,c_735094);
 
-make_pair(c_735092,quote_Cyc_91fast_91div,&c_735093);
+alloca_pair(c_735092,quote_Cyc_91fast_91div,c_735093);
 
-make_pair(c_735091,quote_Cyc_91fast_91mul,&c_735092);
+alloca_pair(c_735091,quote_Cyc_91fast_91mul,c_735092);
 
-make_pair(c_735090,quote_Cyc_91fast_91sub,&c_735091);
+alloca_pair(c_735090,quote_Cyc_91fast_91sub,c_735091);
 
-make_pair(c_735089,quote_Cyc_91fast_91plus,&c_735090);
+alloca_pair(c_735089,quote_Cyc_91fast_91plus,c_735090);
 
-make_pair(c_735088,quote_Cyc_91if,&c_735089);
+alloca_pair(c_735088,quote_Cyc_91if,c_735089);
 
-make_pair(c_735087,quote_Cyc_91list,&c_735088);
+alloca_pair(c_735087,quote_Cyc_91list,c_735088);
 
-make_pair(c_735086,quote_Cyc_91stderr,&c_735087);
+alloca_pair(c_735086,quote_Cyc_91stderr,c_735087);
 
-make_pair(c_735085,quote_Cyc_91stdin,&c_735086);
+alloca_pair(c_735085,quote_Cyc_91stdin,c_735086);
 
-make_pair(c_735084,quote_Cyc_91stdout,&c_735085);
+alloca_pair(c_735084,quote_Cyc_91stdout,c_735085);
 
-make_pair(c_735083,quote_Cyc_91end_91thread_67,&c_735084);
+alloca_pair(c_735083,quote_Cyc_91end_91thread_67,c_735084);
 
-make_pair(c_735082,quote_Cyc_91spawn_91thread_67,&c_735083);
+alloca_pair(c_735082,quote_Cyc_91spawn_91thread_67,c_735083);
 
-make_pair(c_735081,quote_Cyc_91has_91cycle_127,&c_735082);
+alloca_pair(c_735081,quote_Cyc_91has_91cycle_127,c_735082);
 
-make_pair(c_735080,quote_Cyc_91opaque_127,&c_735081);
+alloca_pair(c_735080,quote_Cyc_91opaque_127,c_735081);
 
-make_pair(c_735079,quote_Cyc_91cvar_127,&c_735080);
+alloca_pair(c_735079,quote_Cyc_91cvar_127,c_735080);
 
-make_pair(c_735078,quote_Cyc_91set_91cvar_67,&c_735079);
+alloca_pair(c_735078,quote_Cyc_91set_91cvar_67,c_735079);
 
-make_pair(c_735077,quote_Cyc_91get_91cvar,&c_735078);
+alloca_pair(c_735077,quote_Cyc_91get_91cvar,c_735078);
 
-make_pair(c_735076,quote_Cyc_91global_91vars,&c_735077);
-return_direct_with_clo1(data,(closure)&c_734461,__lambda_220,  global_set(__glo__85primitives_85_scheme_cyclone_primitives, &c_735076));; 
+alloca_pair(c_735076,quote_Cyc_91global_91vars,c_735077);
+return_direct_with_clo1(data,(closure)&c_734461,__lambda_220,  global_set(__glo__85primitives_85_scheme_cyclone_primitives, c_735076));; 
 }
 
 static void __lambda_220(void *data, int argc, object self_731692, object r_731477) {
   
-make_pair(c_734469,obj_int2obj(0),NULL);
+alloca_pair(c_734469,obj_int2obj(0),NULL);
 
-make_pair(c_734468,obj_int2obj(0),&c_734469);
+alloca_pair(c_734468,obj_int2obj(0),c_734469);
 
-make_pair(c_734467,quote_Cyc_91global_91vars,&c_734468);
+alloca_pair(c_734467,quote_Cyc_91global_91vars,c_734468);
 
-make_pair(c_734473,obj_int2obj(1),NULL);
+alloca_pair(c_734473,obj_int2obj(1),NULL);
 
-make_pair(c_734472,obj_int2obj(1),&c_734473);
+alloca_pair(c_734472,obj_int2obj(1),c_734473);
 
-make_pair(c_734471,quote_Cyc_91get_91cvar,&c_734472);
+alloca_pair(c_734471,quote_Cyc_91get_91cvar,c_734472);
 
-make_pair(c_734477,obj_int2obj(2),NULL);
+alloca_pair(c_734477,obj_int2obj(2),NULL);
 
-make_pair(c_734476,obj_int2obj(2),&c_734477);
+alloca_pair(c_734476,obj_int2obj(2),c_734477);
 
-make_pair(c_734475,quote_Cyc_91set_91cvar_67,&c_734476);
+alloca_pair(c_734475,quote_Cyc_91set_91cvar_67,c_734476);
 
-make_pair(c_734481,obj_int2obj(1),NULL);
+alloca_pair(c_734481,obj_int2obj(1),NULL);
 
-make_pair(c_734480,obj_int2obj(1),&c_734481);
+alloca_pair(c_734480,obj_int2obj(1),c_734481);
 
-make_pair(c_734479,quote_Cyc_91cvar_127,&c_734480);
+alloca_pair(c_734479,quote_Cyc_91cvar_127,c_734480);
 
-make_pair(c_734485,obj_int2obj(1),NULL);
+alloca_pair(c_734485,obj_int2obj(1),NULL);
 
-make_pair(c_734484,obj_int2obj(1),&c_734485);
+alloca_pair(c_734484,obj_int2obj(1),c_734485);
 
-make_pair(c_734483,quote_Cyc_91opaque_127,&c_734484);
+alloca_pair(c_734483,quote_Cyc_91opaque_127,c_734484);
 
-make_pair(c_734489,obj_int2obj(1),NULL);
+alloca_pair(c_734489,obj_int2obj(1),NULL);
 
-make_pair(c_734488,obj_int2obj(1),&c_734489);
+alloca_pair(c_734488,obj_int2obj(1),c_734489);
 
-make_pair(c_734487,quote_Cyc_91has_91cycle_127,&c_734488);
+alloca_pair(c_734487,quote_Cyc_91has_91cycle_127,c_734488);
 
-make_pair(c_734493,obj_int2obj(1),NULL);
+alloca_pair(c_734493,obj_int2obj(1),NULL);
 
-make_pair(c_734492,obj_int2obj(1),&c_734493);
+alloca_pair(c_734492,obj_int2obj(1),c_734493);
 
-make_pair(c_734491,quote_Cyc_91spawn_91thread_67,&c_734492);
+alloca_pair(c_734491,quote_Cyc_91spawn_91thread_67,c_734492);
 
-make_pair(c_734497,obj_int2obj(0),NULL);
+alloca_pair(c_734497,obj_int2obj(0),NULL);
 
-make_pair(c_734496,obj_int2obj(0),&c_734497);
+alloca_pair(c_734496,obj_int2obj(0),c_734497);
 
-make_pair(c_734495,quote_Cyc_91end_91thread_67,&c_734496);
+alloca_pair(c_734495,quote_Cyc_91end_91thread_67,c_734496);
 
-make_pair(c_734501,obj_int2obj(0),NULL);
+alloca_pair(c_734501,obj_int2obj(0),NULL);
 
-make_pair(c_734500,obj_int2obj(0),&c_734501);
+alloca_pair(c_734500,obj_int2obj(0),c_734501);
 
-make_pair(c_734499,quote_Cyc_91stdout,&c_734500);
+alloca_pair(c_734499,quote_Cyc_91stdout,c_734500);
 
-make_pair(c_734505,obj_int2obj(0),NULL);
+alloca_pair(c_734505,obj_int2obj(0),NULL);
 
-make_pair(c_734504,obj_int2obj(0),&c_734505);
+alloca_pair(c_734504,obj_int2obj(0),c_734505);
 
-make_pair(c_734503,quote_Cyc_91stdin,&c_734504);
+alloca_pair(c_734503,quote_Cyc_91stdin,c_734504);
 
-make_pair(c_734509,obj_int2obj(0),NULL);
+alloca_pair(c_734509,obj_int2obj(0),NULL);
 
-make_pair(c_734508,obj_int2obj(0),&c_734509);
+alloca_pair(c_734508,obj_int2obj(0),c_734509);
 
-make_pair(c_734507,quote_Cyc_91stderr,&c_734508);
+alloca_pair(c_734507,quote_Cyc_91stderr,c_734508);
 
-make_pair(c_734513,obj_int2obj(3),NULL);
+alloca_pair(c_734513,obj_int2obj(3),NULL);
 
-make_pair(c_734512,obj_int2obj(3),&c_734513);
+alloca_pair(c_734512,obj_int2obj(3),c_734513);
 
-make_pair(c_734511,quote_Cyc_91if,&c_734512);
+alloca_pair(c_734511,quote_Cyc_91if,c_734512);
 
-make_pair(c_734517,obj_int2obj(2),NULL);
+alloca_pair(c_734517,obj_int2obj(2),NULL);
 
-make_pair(c_734516,obj_int2obj(2),&c_734517);
+alloca_pair(c_734516,obj_int2obj(2),c_734517);
 
-make_pair(c_734515,quote_Cyc_91fast_91plus,&c_734516);
+alloca_pair(c_734515,quote_Cyc_91fast_91plus,c_734516);
 
-make_pair(c_734521,obj_int2obj(2),NULL);
+alloca_pair(c_734521,obj_int2obj(2),NULL);
 
-make_pair(c_734520,obj_int2obj(2),&c_734521);
+alloca_pair(c_734520,obj_int2obj(2),c_734521);
 
-make_pair(c_734519,quote_Cyc_91fast_91sub,&c_734520);
+alloca_pair(c_734519,quote_Cyc_91fast_91sub,c_734520);
 
-make_pair(c_734525,obj_int2obj(2),NULL);
+alloca_pair(c_734525,obj_int2obj(2),NULL);
 
-make_pair(c_734524,obj_int2obj(2),&c_734525);
+alloca_pair(c_734524,obj_int2obj(2),c_734525);
 
-make_pair(c_734523,quote_Cyc_91fast_91mul,&c_734524);
+alloca_pair(c_734523,quote_Cyc_91fast_91mul,c_734524);
 
-make_pair(c_734529,obj_int2obj(2),NULL);
+alloca_pair(c_734529,obj_int2obj(2),NULL);
 
-make_pair(c_734528,obj_int2obj(2),&c_734529);
+alloca_pair(c_734528,obj_int2obj(2),c_734529);
 
-make_pair(c_734527,quote_Cyc_91fast_91div,&c_734528);
+alloca_pair(c_734527,quote_Cyc_91fast_91div,c_734528);
 
-make_pair(c_734533,obj_int2obj(2),NULL);
+alloca_pair(c_734533,obj_int2obj(2),NULL);
 
-make_pair(c_734532,obj_int2obj(2),&c_734533);
+alloca_pair(c_734532,obj_int2obj(2),c_734533);
 
-make_pair(c_734531,quote_Cyc_91fast_91eq,&c_734532);
+alloca_pair(c_734531,quote_Cyc_91fast_91eq,c_734532);
 
-make_pair(c_734537,obj_int2obj(2),NULL);
+alloca_pair(c_734537,obj_int2obj(2),NULL);
 
-make_pair(c_734536,obj_int2obj(2),&c_734537);
+alloca_pair(c_734536,obj_int2obj(2),c_734537);
 
-make_pair(c_734535,quote_Cyc_91fast_91gt,&c_734536);
+alloca_pair(c_734535,quote_Cyc_91fast_91gt,c_734536);
 
-make_pair(c_734541,obj_int2obj(2),NULL);
+alloca_pair(c_734541,obj_int2obj(2),NULL);
 
-make_pair(c_734540,obj_int2obj(2),&c_734541);
+alloca_pair(c_734540,obj_int2obj(2),c_734541);
 
-make_pair(c_734539,quote_Cyc_91fast_91lt,&c_734540);
+alloca_pair(c_734539,quote_Cyc_91fast_91lt,c_734540);
 
-make_pair(c_734545,obj_int2obj(2),NULL);
+alloca_pair(c_734545,obj_int2obj(2),NULL);
 
-make_pair(c_734544,obj_int2obj(2),&c_734545);
+alloca_pair(c_734544,obj_int2obj(2),c_734545);
 
-make_pair(c_734543,quote_Cyc_91fast_91gte,&c_734544);
+alloca_pair(c_734543,quote_Cyc_91fast_91gte,c_734544);
 
-make_pair(c_734549,obj_int2obj(2),NULL);
+alloca_pair(c_734549,obj_int2obj(2),NULL);
 
-make_pair(c_734548,obj_int2obj(2),&c_734549);
+alloca_pair(c_734548,obj_int2obj(2),c_734549);
 
-make_pair(c_734547,quote_Cyc_91fast_91lte,&c_734548);
+alloca_pair(c_734547,quote_Cyc_91fast_91lte,c_734548);
 
-make_pair(c_734553,obj_int2obj(2),NULL);
+alloca_pair(c_734553,obj_int2obj(2),NULL);
 
-make_pair(c_734552,obj_int2obj(2),&c_734553);
+alloca_pair(c_734552,obj_int2obj(2),c_734553);
 
-make_pair(c_734551,quote_Cyc_91fast_91char_91eq,&c_734552);
+alloca_pair(c_734551,quote_Cyc_91fast_91char_91eq,c_734552);
 
-make_pair(c_734557,obj_int2obj(2),NULL);
+alloca_pair(c_734557,obj_int2obj(2),NULL);
 
-make_pair(c_734556,obj_int2obj(2),&c_734557);
+alloca_pair(c_734556,obj_int2obj(2),c_734557);
 
-make_pair(c_734555,quote_Cyc_91fast_91char_91gt,&c_734556);
+alloca_pair(c_734555,quote_Cyc_91fast_91char_91gt,c_734556);
 
-make_pair(c_734561,obj_int2obj(2),NULL);
+alloca_pair(c_734561,obj_int2obj(2),NULL);
 
-make_pair(c_734560,obj_int2obj(2),&c_734561);
+alloca_pair(c_734560,obj_int2obj(2),c_734561);
 
-make_pair(c_734559,quote_Cyc_91fast_91char_91lt,&c_734560);
+alloca_pair(c_734559,quote_Cyc_91fast_91char_91lt,c_734560);
 
-make_pair(c_734565,obj_int2obj(2),NULL);
+alloca_pair(c_734565,obj_int2obj(2),NULL);
 
-make_pair(c_734564,obj_int2obj(2),&c_734565);
+alloca_pair(c_734564,obj_int2obj(2),c_734565);
 
-make_pair(c_734563,quote_Cyc_91fast_91char_91gte,&c_734564);
+alloca_pair(c_734563,quote_Cyc_91fast_91char_91gte,c_734564);
 
-make_pair(c_734569,obj_int2obj(2),NULL);
+alloca_pair(c_734569,obj_int2obj(2),NULL);
 
-make_pair(c_734568,obj_int2obj(2),&c_734569);
+alloca_pair(c_734568,obj_int2obj(2),c_734569);
 
-make_pair(c_734567,quote_Cyc_91fast_91char_91lte,&c_734568);
+alloca_pair(c_734567,quote_Cyc_91fast_91char_91lte,c_734568);
 
-make_pair(c_734573,boolean_f,NULL);
+alloca_pair(c_734573,boolean_f,NULL);
 
-make_pair(c_734572,obj_int2obj(1),&c_734573);
+alloca_pair(c_734572,obj_int2obj(1),c_734573);
 
-make_pair(c_734571,quote__91,&c_734572);
+alloca_pair(c_734571,quote__91,c_734572);
 
-make_pair(c_734577,boolean_f,NULL);
+alloca_pair(c_734577,boolean_f,NULL);
 
-make_pair(c_734576,obj_int2obj(1),&c_734577);
+alloca_pair(c_734576,obj_int2obj(1),c_734577);
 
-make_pair(c_734575,quote__95,&c_734576);
+alloca_pair(c_734575,quote__95,c_734576);
 
-make_pair(c_734581,boolean_f,NULL);
+alloca_pair(c_734581,boolean_f,NULL);
 
-make_pair(c_734580,obj_int2obj(2),&c_734581);
+alloca_pair(c_734580,obj_int2obj(2),c_734581);
 
-make_pair(c_734579,quote__123,&c_734580);
+alloca_pair(c_734579,quote__123,c_734580);
 
-make_pair(c_734585,boolean_f,NULL);
+alloca_pair(c_734585,boolean_f,NULL);
 
-make_pair(c_734584,obj_int2obj(2),&c_734585);
+alloca_pair(c_734584,obj_int2obj(2),c_734585);
 
-make_pair(c_734583,quote__125,&c_734584);
+alloca_pair(c_734583,quote__125,c_734584);
 
-make_pair(c_734589,boolean_f,NULL);
+alloca_pair(c_734589,boolean_f,NULL);
 
-make_pair(c_734588,obj_int2obj(2),&c_734589);
+alloca_pair(c_734588,obj_int2obj(2),c_734589);
 
-make_pair(c_734587,quote__121,&c_734588);
+alloca_pair(c_734587,quote__121,c_734588);
 
-make_pair(c_734593,boolean_f,NULL);
+alloca_pair(c_734593,boolean_f,NULL);
 
-make_pair(c_734592,obj_int2obj(2),&c_734593);
+alloca_pair(c_734592,obj_int2obj(2),c_734593);
 
-make_pair(c_734591,quote__125_123,&c_734592);
+alloca_pair(c_734591,quote__125_123,c_734592);
 
-make_pair(c_734597,boolean_f,NULL);
+alloca_pair(c_734597,boolean_f,NULL);
 
-make_pair(c_734596,obj_int2obj(2),&c_734597);
+alloca_pair(c_734596,obj_int2obj(2),c_734597);
 
-make_pair(c_734595,quote__121_123,&c_734596);
+alloca_pair(c_734595,quote__121_123,c_734596);
 
-make_pair(c_734601,boolean_f,NULL);
+alloca_pair(c_734601,boolean_f,NULL);
 
-make_pair(c_734600,obj_int2obj(1),&c_734601);
+alloca_pair(c_734600,obj_int2obj(1),c_734601);
 
-make_pair(c_734599,quote_apply,&c_734600);
+alloca_pair(c_734599,quote_apply,c_734600);
 
-make_pair(c_734605,boolean_f,NULL);
+alloca_pair(c_734605,boolean_f,NULL);
 
-make_pair(c_734604,obj_int2obj(2),&c_734605);
+alloca_pair(c_734604,obj_int2obj(2),c_734605);
 
-make_pair(c_734603,quote_Cyc_91fast_91apply,&c_734604);
+alloca_pair(c_734603,quote_Cyc_91fast_91apply,c_734604);
 
-make_pair(c_734609,obj_int2obj(1),NULL);
+alloca_pair(c_734609,obj_int2obj(1),NULL);
 
-make_pair(c_734608,obj_int2obj(1),&c_734609);
+alloca_pair(c_734608,obj_int2obj(1),c_734609);
 
-make_pair(c_734607,quote__75halt,&c_734608);
+alloca_pair(c_734607,quote__75halt,c_734608);
 
-make_pair(c_734613,obj_int2obj(1),NULL);
+alloca_pair(c_734613,obj_int2obj(1),NULL);
 
-make_pair(c_734612,obj_int2obj(1),&c_734613);
+alloca_pair(c_734612,obj_int2obj(1),c_734613);
 
-make_pair(c_734611,quote_exit,&c_734612);
+alloca_pair(c_734611,quote_exit,c_734612);
 
-make_pair(c_734617,obj_int2obj(1),NULL);
+alloca_pair(c_734617,obj_int2obj(1),NULL);
 
-make_pair(c_734616,obj_int2obj(1),&c_734617);
+alloca_pair(c_734616,obj_int2obj(1),c_734617);
 
-make_pair(c_734615,quote_system,&c_734616);
+alloca_pair(c_734615,quote_system,c_734616);
 
-make_pair(c_734621,obj_int2obj(0),NULL);
+alloca_pair(c_734621,obj_int2obj(0),NULL);
 
-make_pair(c_734620,obj_int2obj(0),&c_734621);
+alloca_pair(c_734620,obj_int2obj(0),c_734621);
 
-make_pair(c_734619,quote_command_91line_91arguments,&c_734620);
+alloca_pair(c_734619,quote_command_91line_91arguments,c_734620);
 
-make_pair(c_734625,obj_int2obj(1),NULL);
+alloca_pair(c_734625,obj_int2obj(1),NULL);
 
-make_pair(c_734624,obj_int2obj(1),&c_734625);
+alloca_pair(c_734624,obj_int2obj(1),c_734625);
 
-make_pair(c_734623,quote_Cyc_91installation_91dir,&c_734624);
+alloca_pair(c_734623,quote_Cyc_91installation_91dir,c_734624);
 
-make_pair(c_734629,obj_int2obj(1),NULL);
+alloca_pair(c_734629,obj_int2obj(1),NULL);
 
-make_pair(c_734628,obj_int2obj(1),&c_734629);
+alloca_pair(c_734628,obj_int2obj(1),c_734629);
 
-make_pair(c_734627,quote_Cyc_91compilation_91environment,&c_734628);
+alloca_pair(c_734627,quote_Cyc_91compilation_91environment,c_734628);
 
-make_pair(c_734633,obj_int2obj(1),NULL);
+alloca_pair(c_734633,obj_int2obj(1),NULL);
 
-make_pair(c_734632,obj_int2obj(1),&c_734633);
+alloca_pair(c_734632,obj_int2obj(1),c_734633);
 
-make_pair(c_734631,quote_Cyc_91default_91exception_91handler,&c_734632);
+alloca_pair(c_734631,quote_Cyc_91default_91exception_91handler,c_734632);
 
-make_pair(c_734637,obj_int2obj(0),NULL);
+alloca_pair(c_734637,obj_int2obj(0),NULL);
 
-make_pair(c_734636,obj_int2obj(0),&c_734637);
+alloca_pair(c_734636,obj_int2obj(0),c_734637);
 
-make_pair(c_734635,quote_Cyc_91current_91exception_91handler,&c_734636);
+alloca_pair(c_734635,quote_Cyc_91current_91exception_91handler,c_734636);
 
-make_pair(c_734641,obj_int2obj(2),NULL);
+alloca_pair(c_734641,obj_int2obj(2),NULL);
 
-make_pair(c_734640,obj_int2obj(2),&c_734641);
+alloca_pair(c_734640,obj_int2obj(2),c_734641);
 
-make_pair(c_734639,quote_cons,&c_734640);
+alloca_pair(c_734639,quote_cons,c_734640);
 
-make_pair(c_734645,obj_int2obj(1),NULL);
+alloca_pair(c_734645,obj_int2obj(1),NULL);
 
-make_pair(c_734644,obj_int2obj(1),&c_734645);
+alloca_pair(c_734644,obj_int2obj(1),c_734645);
 
-make_pair(c_734643,quote_Cyc_91fast_91list_911,&c_734644);
+alloca_pair(c_734643,quote_Cyc_91fast_91list_911,c_734644);
 
-make_pair(c_734649,obj_int2obj(2),NULL);
+alloca_pair(c_734649,obj_int2obj(2),NULL);
 
-make_pair(c_734648,obj_int2obj(2),&c_734649);
+alloca_pair(c_734648,obj_int2obj(2),c_734649);
 
-make_pair(c_734647,quote_Cyc_91fast_91list_912,&c_734648);
+alloca_pair(c_734647,quote_Cyc_91fast_91list_912,c_734648);
 
-make_pair(c_734653,obj_int2obj(3),NULL);
+alloca_pair(c_734653,obj_int2obj(3),NULL);
 
-make_pair(c_734652,obj_int2obj(3),&c_734653);
+alloca_pair(c_734652,obj_int2obj(3),c_734653);
 
-make_pair(c_734651,quote_Cyc_91fast_91list_913,&c_734652);
+alloca_pair(c_734651,quote_Cyc_91fast_91list_913,c_734652);
 
-make_pair(c_734657,obj_int2obj(4),NULL);
+alloca_pair(c_734657,obj_int2obj(4),NULL);
 
-make_pair(c_734656,obj_int2obj(4),&c_734657);
+alloca_pair(c_734656,obj_int2obj(4),c_734657);
 
-make_pair(c_734655,quote_Cyc_91fast_91list_914,&c_734656);
+alloca_pair(c_734655,quote_Cyc_91fast_91list_914,c_734656);
 
-make_pair(c_734661,obj_int2obj(1),NULL);
+alloca_pair(c_734661,obj_int2obj(1),NULL);
 
-make_pair(c_734660,obj_int2obj(1),&c_734661);
+alloca_pair(c_734660,obj_int2obj(1),c_734661);
 
-make_pair(c_734659,quote_cell_91get,&c_734660);
+alloca_pair(c_734659,quote_cell_91get,c_734660);
 
-make_pair(c_734665,obj_int2obj(2),NULL);
+alloca_pair(c_734665,obj_int2obj(2),NULL);
 
-make_pair(c_734664,obj_int2obj(2),&c_734665);
+alloca_pair(c_734664,obj_int2obj(2),c_734665);
 
-make_pair(c_734663,quote_set_91global_67,&c_734664);
+alloca_pair(c_734663,quote_set_91global_67,c_734664);
 
-make_pair(c_734669,obj_int2obj(2),NULL);
+alloca_pair(c_734669,obj_int2obj(2),NULL);
 
-make_pair(c_734668,obj_int2obj(2),&c_734669);
+alloca_pair(c_734668,obj_int2obj(2),c_734669);
 
-make_pair(c_734667,quote_set_91cell_67,&c_734668);
+alloca_pair(c_734667,quote_set_91cell_67,c_734668);
 
-make_pair(c_734673,obj_int2obj(1),NULL);
+alloca_pair(c_734673,obj_int2obj(1),NULL);
 
-make_pair(c_734672,obj_int2obj(1),&c_734673);
+alloca_pair(c_734672,obj_int2obj(1),c_734673);
 
-make_pair(c_734671,quote_cell,&c_734672);
+alloca_pair(c_734671,quote_cell,c_734672);
 
-make_pair(c_734677,obj_int2obj(2),NULL);
+alloca_pair(c_734677,obj_int2obj(2),NULL);
 
-make_pair(c_734676,obj_int2obj(2),&c_734677);
+alloca_pair(c_734676,obj_int2obj(2),c_734677);
 
-make_pair(c_734675,quote_eq_127,&c_734676);
+alloca_pair(c_734675,quote_eq_127,c_734676);
 
-make_pair(c_734681,obj_int2obj(2),NULL);
+alloca_pair(c_734681,obj_int2obj(2),NULL);
 
-make_pair(c_734680,obj_int2obj(2),&c_734681);
+alloca_pair(c_734680,obj_int2obj(2),c_734681);
 
-make_pair(c_734679,quote_eqv_127,&c_734680);
+alloca_pair(c_734679,quote_eqv_127,c_734680);
 
-make_pair(c_734685,obj_int2obj(2),NULL);
+alloca_pair(c_734685,obj_int2obj(2),NULL);
 
-make_pair(c_734684,obj_int2obj(2),&c_734685);
+alloca_pair(c_734684,obj_int2obj(2),c_734685);
 
-make_pair(c_734683,quote_equal_127,&c_734684);
+alloca_pair(c_734683,quote_equal_127,c_734684);
 
-make_pair(c_734689,obj_int2obj(2),NULL);
+alloca_pair(c_734689,obj_int2obj(2),NULL);
 
-make_pair(c_734688,obj_int2obj(2),&c_734689);
+alloca_pair(c_734688,obj_int2obj(2),c_734689);
 
-make_pair(c_734687,quote_Cyc_91fast_91member,&c_734688);
+alloca_pair(c_734687,quote_Cyc_91fast_91member,c_734688);
 
-make_pair(c_734693,obj_int2obj(2),NULL);
+alloca_pair(c_734693,obj_int2obj(2),NULL);
 
-make_pair(c_734692,obj_int2obj(2),&c_734693);
+alloca_pair(c_734692,obj_int2obj(2),c_734693);
 
-make_pair(c_734691,quote_Cyc_91fast_91assoc,&c_734692);
+alloca_pair(c_734691,quote_Cyc_91fast_91assoc,c_734692);
 
-make_pair(c_734697,obj_int2obj(2),NULL);
+alloca_pair(c_734697,obj_int2obj(2),NULL);
 
-make_pair(c_734696,obj_int2obj(2),&c_734697);
+alloca_pair(c_734696,obj_int2obj(2),c_734697);
 
-make_pair(c_734695,quote_assq,&c_734696);
+alloca_pair(c_734695,quote_assq,c_734696);
 
-make_pair(c_734701,obj_int2obj(2),NULL);
+alloca_pair(c_734701,obj_int2obj(2),NULL);
 
-make_pair(c_734700,obj_int2obj(2),&c_734701);
+alloca_pair(c_734700,obj_int2obj(2),c_734701);
 
-make_pair(c_734699,quote_assv,&c_734700);
+alloca_pair(c_734699,quote_assv,c_734700);
 
-make_pair(c_734705,obj_int2obj(2),NULL);
+alloca_pair(c_734705,obj_int2obj(2),NULL);
 
-make_pair(c_734704,obj_int2obj(2),&c_734705);
+alloca_pair(c_734704,obj_int2obj(2),c_734705);
 
-make_pair(c_734703,quote_memq,&c_734704);
+alloca_pair(c_734703,quote_memq,c_734704);
 
-make_pair(c_734709,obj_int2obj(2),NULL);
+alloca_pair(c_734709,obj_int2obj(2),NULL);
 
-make_pair(c_734708,obj_int2obj(2),&c_734709);
+alloca_pair(c_734708,obj_int2obj(2),c_734709);
 
-make_pair(c_734707,quote_memv,&c_734708);
+alloca_pair(c_734707,quote_memv,c_734708);
 
-make_pair(c_734713,obj_int2obj(1),NULL);
+alloca_pair(c_734713,obj_int2obj(1),NULL);
 
-make_pair(c_734712,obj_int2obj(1),&c_734713);
+alloca_pair(c_734712,obj_int2obj(1),c_734713);
 
-make_pair(c_734711,quote_length,&c_734712);
+alloca_pair(c_734711,quote_length,c_734712);
 
-make_pair(c_734717,obj_int2obj(2),NULL);
+alloca_pair(c_734717,obj_int2obj(2),NULL);
 
-make_pair(c_734716,obj_int2obj(2),&c_734717);
+alloca_pair(c_734716,obj_int2obj(2),c_734717);
 
-make_pair(c_734715,quote_set_91car_67,&c_734716);
+alloca_pair(c_734715,quote_set_91car_67,c_734716);
 
-make_pair(c_734721,obj_int2obj(2),NULL);
+alloca_pair(c_734721,obj_int2obj(2),NULL);
 
-make_pair(c_734720,obj_int2obj(2),&c_734721);
+alloca_pair(c_734720,obj_int2obj(2),c_734721);
 
-make_pair(c_734719,quote_set_91cdr_67,&c_734720);
+alloca_pair(c_734719,quote_set_91cdr_67,c_734720);
 
-make_pair(c_734725,obj_int2obj(1),NULL);
+alloca_pair(c_734725,obj_int2obj(1),NULL);
 
-make_pair(c_734724,obj_int2obj(1),&c_734725);
+alloca_pair(c_734724,obj_int2obj(1),c_734725);
 
-make_pair(c_734723,quote_Cyc_91unsafe_91car,&c_734724);
+alloca_pair(c_734723,quote_Cyc_91unsafe_91car,c_734724);
 
-make_pair(c_734729,obj_int2obj(1),NULL);
+alloca_pair(c_734729,obj_int2obj(1),NULL);
 
-make_pair(c_734728,obj_int2obj(1),&c_734729);
+alloca_pair(c_734728,obj_int2obj(1),c_734729);
 
-make_pair(c_734727,quote_Cyc_91unsafe_91cdr,&c_734728);
+alloca_pair(c_734727,quote_Cyc_91unsafe_91cdr,c_734728);
 
-make_pair(c_734733,obj_int2obj(1),NULL);
+alloca_pair(c_734733,obj_int2obj(1),NULL);
 
-make_pair(c_734732,obj_int2obj(1),&c_734733);
+alloca_pair(c_734732,obj_int2obj(1),c_734733);
 
-make_pair(c_734731,quote_car,&c_734732);
+alloca_pair(c_734731,quote_car,c_734732);
 
-make_pair(c_734737,obj_int2obj(1),NULL);
+alloca_pair(c_734737,obj_int2obj(1),NULL);
 
-make_pair(c_734736,obj_int2obj(1),&c_734737);
+alloca_pair(c_734736,obj_int2obj(1),c_734737);
 
-make_pair(c_734735,quote_cdr,&c_734736);
+alloca_pair(c_734735,quote_cdr,c_734736);
 
-make_pair(c_734741,obj_int2obj(1),NULL);
+alloca_pair(c_734741,obj_int2obj(1),NULL);
 
-make_pair(c_734740,obj_int2obj(1),&c_734741);
+alloca_pair(c_734740,obj_int2obj(1),c_734741);
 
-make_pair(c_734739,quote_caar,&c_734740);
+alloca_pair(c_734739,quote_caar,c_734740);
 
-make_pair(c_734745,obj_int2obj(1),NULL);
+alloca_pair(c_734745,obj_int2obj(1),NULL);
 
-make_pair(c_734744,obj_int2obj(1),&c_734745);
+alloca_pair(c_734744,obj_int2obj(1),c_734745);
 
-make_pair(c_734743,quote_cadr,&c_734744);
+alloca_pair(c_734743,quote_cadr,c_734744);
 
-make_pair(c_734749,obj_int2obj(1),NULL);
+alloca_pair(c_734749,obj_int2obj(1),NULL);
 
-make_pair(c_734748,obj_int2obj(1),&c_734749);
+alloca_pair(c_734748,obj_int2obj(1),c_734749);
 
-make_pair(c_734747,quote_cdar,&c_734748);
+alloca_pair(c_734747,quote_cdar,c_734748);
 
-make_pair(c_734753,obj_int2obj(1),NULL);
+alloca_pair(c_734753,obj_int2obj(1),NULL);
 
-make_pair(c_734752,obj_int2obj(1),&c_734753);
+alloca_pair(c_734752,obj_int2obj(1),c_734753);
 
-make_pair(c_734751,quote_cddr,&c_734752);
+alloca_pair(c_734751,quote_cddr,c_734752);
 
-make_pair(c_734757,obj_int2obj(1),NULL);
+alloca_pair(c_734757,obj_int2obj(1),NULL);
 
-make_pair(c_734756,obj_int2obj(1),&c_734757);
+alloca_pair(c_734756,obj_int2obj(1),c_734757);
 
-make_pair(c_734755,quote_caaar,&c_734756);
+alloca_pair(c_734755,quote_caaar,c_734756);
 
-make_pair(c_734761,obj_int2obj(1),NULL);
+alloca_pair(c_734761,obj_int2obj(1),NULL);
 
-make_pair(c_734760,obj_int2obj(1),&c_734761);
+alloca_pair(c_734760,obj_int2obj(1),c_734761);
 
-make_pair(c_734759,quote_caadr,&c_734760);
+alloca_pair(c_734759,quote_caadr,c_734760);
 
-make_pair(c_734765,obj_int2obj(1),NULL);
+alloca_pair(c_734765,obj_int2obj(1),NULL);
 
-make_pair(c_734764,obj_int2obj(1),&c_734765);
+alloca_pair(c_734764,obj_int2obj(1),c_734765);
 
-make_pair(c_734763,quote_cadar,&c_734764);
+alloca_pair(c_734763,quote_cadar,c_734764);
 
-make_pair(c_734769,obj_int2obj(1),NULL);
+alloca_pair(c_734769,obj_int2obj(1),NULL);
 
-make_pair(c_734768,obj_int2obj(1),&c_734769);
+alloca_pair(c_734768,obj_int2obj(1),c_734769);
 
-make_pair(c_734767,quote_caddr,&c_734768);
+alloca_pair(c_734767,quote_caddr,c_734768);
 
-make_pair(c_734773,obj_int2obj(1),NULL);
+alloca_pair(c_734773,obj_int2obj(1),NULL);
 
-make_pair(c_734772,obj_int2obj(1),&c_734773);
+alloca_pair(c_734772,obj_int2obj(1),c_734773);
 
-make_pair(c_734771,quote_cdaar,&c_734772);
+alloca_pair(c_734771,quote_cdaar,c_734772);
 
-make_pair(c_734777,obj_int2obj(1),NULL);
+alloca_pair(c_734777,obj_int2obj(1),NULL);
 
-make_pair(c_734776,obj_int2obj(1),&c_734777);
+alloca_pair(c_734776,obj_int2obj(1),c_734777);
 
-make_pair(c_734775,quote_cdadr,&c_734776);
+alloca_pair(c_734775,quote_cdadr,c_734776);
 
-make_pair(c_734781,obj_int2obj(1),NULL);
+alloca_pair(c_734781,obj_int2obj(1),NULL);
 
-make_pair(c_734780,obj_int2obj(1),&c_734781);
+alloca_pair(c_734780,obj_int2obj(1),c_734781);
 
-make_pair(c_734779,quote_cddar,&c_734780);
+alloca_pair(c_734779,quote_cddar,c_734780);
 
-make_pair(c_734785,obj_int2obj(1),NULL);
+alloca_pair(c_734785,obj_int2obj(1),NULL);
 
-make_pair(c_734784,obj_int2obj(1),&c_734785);
+alloca_pair(c_734784,obj_int2obj(1),c_734785);
 
-make_pair(c_734783,quote_cdddr,&c_734784);
+alloca_pair(c_734783,quote_cdddr,c_734784);
 
-make_pair(c_734789,obj_int2obj(1),NULL);
+alloca_pair(c_734789,obj_int2obj(1),NULL);
 
-make_pair(c_734788,obj_int2obj(1),&c_734789);
+alloca_pair(c_734788,obj_int2obj(1),c_734789);
 
-make_pair(c_734787,quote_caaaar,&c_734788);
+alloca_pair(c_734787,quote_caaaar,c_734788);
 
-make_pair(c_734793,obj_int2obj(1),NULL);
+alloca_pair(c_734793,obj_int2obj(1),NULL);
 
-make_pair(c_734792,obj_int2obj(1),&c_734793);
+alloca_pair(c_734792,obj_int2obj(1),c_734793);
 
-make_pair(c_734791,quote_caaadr,&c_734792);
+alloca_pair(c_734791,quote_caaadr,c_734792);
 
-make_pair(c_734797,obj_int2obj(1),NULL);
+alloca_pair(c_734797,obj_int2obj(1),NULL);
 
-make_pair(c_734796,obj_int2obj(1),&c_734797);
+alloca_pair(c_734796,obj_int2obj(1),c_734797);
 
-make_pair(c_734795,quote_caadar,&c_734796);
+alloca_pair(c_734795,quote_caadar,c_734796);
 
-make_pair(c_734801,obj_int2obj(1),NULL);
+alloca_pair(c_734801,obj_int2obj(1),NULL);
 
-make_pair(c_734800,obj_int2obj(1),&c_734801);
+alloca_pair(c_734800,obj_int2obj(1),c_734801);
 
-make_pair(c_734799,quote_caaddr,&c_734800);
+alloca_pair(c_734799,quote_caaddr,c_734800);
 
-make_pair(c_734805,obj_int2obj(1),NULL);
+alloca_pair(c_734805,obj_int2obj(1),NULL);
 
-make_pair(c_734804,obj_int2obj(1),&c_734805);
+alloca_pair(c_734804,obj_int2obj(1),c_734805);
 
-make_pair(c_734803,quote_cadaar,&c_734804);
+alloca_pair(c_734803,quote_cadaar,c_734804);
 
-make_pair(c_734809,obj_int2obj(1),NULL);
+alloca_pair(c_734809,obj_int2obj(1),NULL);
 
-make_pair(c_734808,obj_int2obj(1),&c_734809);
+alloca_pair(c_734808,obj_int2obj(1),c_734809);
 
-make_pair(c_734807,quote_cadadr,&c_734808);
+alloca_pair(c_734807,quote_cadadr,c_734808);
 
-make_pair(c_734813,obj_int2obj(1),NULL);
+alloca_pair(c_734813,obj_int2obj(1),NULL);
 
-make_pair(c_734812,obj_int2obj(1),&c_734813);
+alloca_pair(c_734812,obj_int2obj(1),c_734813);
 
-make_pair(c_734811,quote_caddar,&c_734812);
+alloca_pair(c_734811,quote_caddar,c_734812);
 
-make_pair(c_734817,obj_int2obj(1),NULL);
+alloca_pair(c_734817,obj_int2obj(1),NULL);
 
-make_pair(c_734816,obj_int2obj(1),&c_734817);
+alloca_pair(c_734816,obj_int2obj(1),c_734817);
 
-make_pair(c_734815,quote_cadddr,&c_734816);
+alloca_pair(c_734815,quote_cadddr,c_734816);
 
-make_pair(c_734821,obj_int2obj(1),NULL);
+alloca_pair(c_734821,obj_int2obj(1),NULL);
 
-make_pair(c_734820,obj_int2obj(1),&c_734821);
+alloca_pair(c_734820,obj_int2obj(1),c_734821);
 
-make_pair(c_734819,quote_cdaaar,&c_734820);
+alloca_pair(c_734819,quote_cdaaar,c_734820);
 
-make_pair(c_734825,obj_int2obj(1),NULL);
+alloca_pair(c_734825,obj_int2obj(1),NULL);
 
-make_pair(c_734824,obj_int2obj(1),&c_734825);
+alloca_pair(c_734824,obj_int2obj(1),c_734825);
 
-make_pair(c_734823,quote_cdaadr,&c_734824);
+alloca_pair(c_734823,quote_cdaadr,c_734824);
 
-make_pair(c_734829,obj_int2obj(1),NULL);
+alloca_pair(c_734829,obj_int2obj(1),NULL);
 
-make_pair(c_734828,obj_int2obj(1),&c_734829);
+alloca_pair(c_734828,obj_int2obj(1),c_734829);
 
-make_pair(c_734827,quote_cdadar,&c_734828);
+alloca_pair(c_734827,quote_cdadar,c_734828);
 
-make_pair(c_734833,obj_int2obj(1),NULL);
+alloca_pair(c_734833,obj_int2obj(1),NULL);
 
-make_pair(c_734832,obj_int2obj(1),&c_734833);
+alloca_pair(c_734832,obj_int2obj(1),c_734833);
 
-make_pair(c_734831,quote_cdaddr,&c_734832);
+alloca_pair(c_734831,quote_cdaddr,c_734832);
 
-make_pair(c_734837,obj_int2obj(1),NULL);
+alloca_pair(c_734837,obj_int2obj(1),NULL);
 
-make_pair(c_734836,obj_int2obj(1),&c_734837);
+alloca_pair(c_734836,obj_int2obj(1),c_734837);
 
-make_pair(c_734835,quote_cddaar,&c_734836);
+alloca_pair(c_734835,quote_cddaar,c_734836);
 
-make_pair(c_734841,obj_int2obj(1),NULL);
+alloca_pair(c_734841,obj_int2obj(1),NULL);
 
-make_pair(c_734840,obj_int2obj(1),&c_734841);
+alloca_pair(c_734840,obj_int2obj(1),c_734841);
 
-make_pair(c_734839,quote_cddadr,&c_734840);
+alloca_pair(c_734839,quote_cddadr,c_734840);
 
-make_pair(c_734845,obj_int2obj(1),NULL);
+alloca_pair(c_734845,obj_int2obj(1),NULL);
 
-make_pair(c_734844,obj_int2obj(1),&c_734845);
+alloca_pair(c_734844,obj_int2obj(1),c_734845);
 
-make_pair(c_734843,quote_cdddar,&c_734844);
+alloca_pair(c_734843,quote_cdddar,c_734844);
 
-make_pair(c_734849,obj_int2obj(1),NULL);
+alloca_pair(c_734849,obj_int2obj(1),NULL);
 
-make_pair(c_734848,obj_int2obj(1),&c_734849);
+alloca_pair(c_734848,obj_int2obj(1),c_734849);
 
-make_pair(c_734847,quote_cddddr,&c_734848);
+alloca_pair(c_734847,quote_cddddr,c_734848);
 
-make_pair(c_734853,obj_int2obj(1),NULL);
+alloca_pair(c_734853,obj_int2obj(1),NULL);
 
-make_pair(c_734852,obj_int2obj(1),&c_734853);
+alloca_pair(c_734852,obj_int2obj(1),c_734853);
 
-make_pair(c_734851,quote_char_91_125integer,&c_734852);
+alloca_pair(c_734851,quote_char_91_125integer,c_734852);
 
-make_pair(c_734857,obj_int2obj(1),NULL);
+alloca_pair(c_734857,obj_int2obj(1),NULL);
 
-make_pair(c_734856,obj_int2obj(1),&c_734857);
+alloca_pair(c_734856,obj_int2obj(1),c_734857);
 
-make_pair(c_734855,quote_integer_91_125char,&c_734856);
+alloca_pair(c_734855,quote_integer_91_125char,c_734856);
 
-make_pair(c_734861,obj_int2obj(2),NULL);
+alloca_pair(c_734861,obj_int2obj(2),NULL);
 
-make_pair(c_734860,obj_int2obj(1),&c_734861);
+alloca_pair(c_734860,obj_int2obj(1),c_734861);
 
-make_pair(c_734859,quote_string_91_125number,&c_734860);
+alloca_pair(c_734859,quote_string_91_125number,c_734860);
 
-make_pair(c_734865,boolean_f,NULL);
+alloca_pair(c_734865,boolean_f,NULL);
 
-make_pair(c_734864,boolean_f,&c_734865);
+alloca_pair(c_734864,boolean_f,c_734865);
 
-make_pair(c_734863,quote_string_91append,&c_734864);
+alloca_pair(c_734863,quote_string_91append,c_734864);
 
-make_pair(c_734869,obj_int2obj(2),NULL);
+alloca_pair(c_734869,obj_int2obj(2),NULL);
 
-make_pair(c_734868,obj_int2obj(2),&c_734869);
+alloca_pair(c_734868,obj_int2obj(2),c_734869);
 
-make_pair(c_734867,quote_string_91cmp,&c_734868);
+alloca_pair(c_734867,quote_string_91cmp,c_734868);
 
-make_pair(c_734873,obj_int2obj(1),NULL);
+alloca_pair(c_734873,obj_int2obj(1),NULL);
 
-make_pair(c_734872,obj_int2obj(1),&c_734873);
+alloca_pair(c_734872,obj_int2obj(1),c_734873);
 
-make_pair(c_734871,quote_list_91_125string,&c_734872);
+alloca_pair(c_734871,quote_list_91_125string,c_734872);
 
-make_pair(c_734877,obj_int2obj(1),NULL);
+alloca_pair(c_734877,obj_int2obj(1),NULL);
 
-make_pair(c_734876,obj_int2obj(1),&c_734877);
+alloca_pair(c_734876,obj_int2obj(1),c_734877);
 
-make_pair(c_734875,quote_string_91_125symbol,&c_734876);
+alloca_pair(c_734875,quote_string_91_125symbol,c_734876);
 
-make_pair(c_734881,obj_int2obj(1),NULL);
+alloca_pair(c_734881,obj_int2obj(1),NULL);
 
-make_pair(c_734880,obj_int2obj(1),&c_734881);
+alloca_pair(c_734880,obj_int2obj(1),c_734881);
 
-make_pair(c_734879,quote_symbol_91_125string,&c_734880);
+alloca_pair(c_734879,quote_symbol_91_125string,c_734880);
 
-make_pair(c_734885,obj_int2obj(2),NULL);
+alloca_pair(c_734885,obj_int2obj(2),NULL);
 
-make_pair(c_734884,obj_int2obj(1),&c_734885);
+alloca_pair(c_734884,obj_int2obj(1),c_734885);
 
-make_pair(c_734883,quote_number_91_125string,&c_734884);
+alloca_pair(c_734883,quote_number_91_125string,c_734884);
 
-make_pair(c_734889,obj_int2obj(1),NULL);
+alloca_pair(c_734889,obj_int2obj(1),NULL);
 
-make_pair(c_734888,obj_int2obj(1),&c_734889);
+alloca_pair(c_734888,obj_int2obj(1),c_734889);
 
-make_pair(c_734887,quote_string_91length,&c_734888);
+alloca_pair(c_734887,quote_string_91length,c_734888);
 
-make_pair(c_734893,obj_int2obj(2),NULL);
+alloca_pair(c_734893,obj_int2obj(2),NULL);
 
-make_pair(c_734892,obj_int2obj(2),&c_734893);
+alloca_pair(c_734892,obj_int2obj(2),c_734893);
 
-make_pair(c_734891,quote_string_91ref,&c_734892);
+alloca_pair(c_734891,quote_string_91ref,c_734892);
 
-make_pair(c_734897,obj_int2obj(3),NULL);
+alloca_pair(c_734897,obj_int2obj(3),NULL);
 
-make_pair(c_734896,obj_int2obj(3),&c_734897);
+alloca_pair(c_734896,obj_int2obj(3),c_734897);
 
-make_pair(c_734895,quote_string_91set_67,&c_734896);
+alloca_pair(c_734895,quote_string_91set_67,c_734896);
 
-make_pair(c_734901,obj_int2obj(3),NULL);
+alloca_pair(c_734901,obj_int2obj(3),NULL);
 
-make_pair(c_734900,obj_int2obj(3),&c_734901);
+alloca_pair(c_734900,obj_int2obj(3),c_734901);
 
-make_pair(c_734899,quote_substring,&c_734900);
+alloca_pair(c_734899,quote_substring,c_734900);
 
-make_pair(c_734905,boolean_f,NULL);
+alloca_pair(c_734905,boolean_f,NULL);
 
-make_pair(c_734904,obj_int2obj(1),&c_734905);
+alloca_pair(c_734904,obj_int2obj(1),c_734905);
 
-make_pair(c_734903,quote_make_91bytevector,&c_734904);
+alloca_pair(c_734903,quote_make_91bytevector,c_734904);
 
-make_pair(c_734909,obj_int2obj(1),NULL);
+alloca_pair(c_734909,obj_int2obj(1),NULL);
 
-make_pair(c_734908,obj_int2obj(1),&c_734909);
+alloca_pair(c_734908,obj_int2obj(1),c_734909);
 
-make_pair(c_734907,quote_bytevector_91length,&c_734908);
+alloca_pair(c_734907,quote_bytevector_91length,c_734908);
 
-make_pair(c_734913,boolean_f,NULL);
+alloca_pair(c_734913,boolean_f,NULL);
 
-make_pair(c_734912,boolean_f,&c_734913);
+alloca_pair(c_734912,boolean_f,c_734913);
 
-make_pair(c_734911,quote_bytevector,&c_734912);
+alloca_pair(c_734911,quote_bytevector,c_734912);
 
-make_pair(c_734917,boolean_f,NULL);
+alloca_pair(c_734917,boolean_f,NULL);
 
-make_pair(c_734916,boolean_f,&c_734917);
+alloca_pair(c_734916,boolean_f,c_734917);
 
-make_pair(c_734915,quote_bytevector_91append,&c_734916);
+alloca_pair(c_734915,quote_bytevector_91append,c_734916);
 
-make_pair(c_734921,obj_int2obj(3),NULL);
+alloca_pair(c_734921,obj_int2obj(3),NULL);
 
-make_pair(c_734920,obj_int2obj(3),&c_734921);
+alloca_pair(c_734920,obj_int2obj(3),c_734921);
 
-make_pair(c_734919,quote_Cyc_91bytevector_91copy,&c_734920);
+alloca_pair(c_734919,quote_Cyc_91bytevector_91copy,c_734920);
 
-make_pair(c_734925,obj_int2obj(3),NULL);
+alloca_pair(c_734925,obj_int2obj(3),NULL);
 
-make_pair(c_734924,obj_int2obj(3),&c_734925);
+alloca_pair(c_734924,obj_int2obj(3),c_734925);
 
-make_pair(c_734923,quote_Cyc_91utf8_91_125string,&c_734924);
+alloca_pair(c_734923,quote_Cyc_91utf8_91_125string,c_734924);
 
-make_pair(c_734929,obj_int2obj(3),NULL);
+alloca_pair(c_734929,obj_int2obj(3),NULL);
 
-make_pair(c_734928,obj_int2obj(3),&c_734929);
+alloca_pair(c_734928,obj_int2obj(3),c_734929);
 
-make_pair(c_734927,quote_Cyc_91string_91_125utf8,&c_734928);
+alloca_pair(c_734927,quote_Cyc_91string_91_125utf8,c_734928);
 
-make_pair(c_734933,obj_int2obj(2),NULL);
+alloca_pair(c_734933,obj_int2obj(2),NULL);
 
-make_pair(c_734932,obj_int2obj(2),&c_734933);
+alloca_pair(c_734932,obj_int2obj(2),c_734933);
 
-make_pair(c_734931,quote_bytevector_91u8_91ref,&c_734932);
+alloca_pair(c_734931,quote_bytevector_91u8_91ref,c_734932);
 
-make_pair(c_734937,obj_int2obj(3),NULL);
+alloca_pair(c_734937,obj_int2obj(3),NULL);
 
-make_pair(c_734936,obj_int2obj(3),&c_734937);
+alloca_pair(c_734936,obj_int2obj(3),c_734937);
 
-make_pair(c_734935,quote_bytevector_91u8_91set_67,&c_734936);
+alloca_pair(c_734935,quote_bytevector_91u8_91set_67,c_734936);
 
-make_pair(c_734941,obj_int2obj(1),NULL);
+alloca_pair(c_734941,obj_int2obj(1),NULL);
 
-make_pair(c_734940,obj_int2obj(1),&c_734941);
+alloca_pair(c_734940,obj_int2obj(1),c_734941);
 
-make_pair(c_734939,quote_bytevector_127,&c_734940);
+alloca_pair(c_734939,quote_bytevector_127,c_734940);
 
-make_pair(c_734945,boolean_f,NULL);
+alloca_pair(c_734945,boolean_f,NULL);
 
-make_pair(c_734944,obj_int2obj(1),&c_734945);
+alloca_pair(c_734944,obj_int2obj(1),c_734945);
 
-make_pair(c_734943,quote_make_91vector,&c_734944);
+alloca_pair(c_734943,quote_make_91vector,c_734944);
 
-make_pair(c_734949,obj_int2obj(1),NULL);
+alloca_pair(c_734949,obj_int2obj(1),NULL);
 
-make_pair(c_734948,obj_int2obj(1),&c_734949);
+alloca_pair(c_734948,obj_int2obj(1),c_734949);
 
-make_pair(c_734947,quote_list_91_125vector,&c_734948);
+alloca_pair(c_734947,quote_list_91_125vector,c_734948);
 
-make_pair(c_734953,obj_int2obj(1),NULL);
+alloca_pair(c_734953,obj_int2obj(1),NULL);
 
-make_pair(c_734952,obj_int2obj(1),&c_734953);
+alloca_pair(c_734952,obj_int2obj(1),c_734953);
 
-make_pair(c_734951,quote_vector_91length,&c_734952);
+alloca_pair(c_734951,quote_vector_91length,c_734952);
 
-make_pair(c_734957,obj_int2obj(2),NULL);
+alloca_pair(c_734957,obj_int2obj(2),NULL);
 
-make_pair(c_734956,obj_int2obj(2),&c_734957);
+alloca_pair(c_734956,obj_int2obj(2),c_734957);
 
-make_pair(c_734955,quote_vector_91ref,&c_734956);
+alloca_pair(c_734955,quote_vector_91ref,c_734956);
 
-make_pair(c_734961,obj_int2obj(3),NULL);
+alloca_pair(c_734961,obj_int2obj(3),NULL);
 
-make_pair(c_734960,obj_int2obj(3),&c_734961);
+alloca_pair(c_734960,obj_int2obj(3),c_734961);
 
-make_pair(c_734959,quote_vector_91set_67,&c_734960);
+alloca_pair(c_734959,quote_vector_91set_67,c_734960);
 
-make_pair(c_734965,obj_int2obj(1),NULL);
+alloca_pair(c_734965,obj_int2obj(1),NULL);
 
-make_pair(c_734964,obj_int2obj(1),&c_734965);
+alloca_pair(c_734964,obj_int2obj(1),c_734965);
 
-make_pair(c_734963,quote_boolean_127,&c_734964);
+alloca_pair(c_734963,quote_boolean_127,c_734964);
 
-make_pair(c_734969,obj_int2obj(1),NULL);
+alloca_pair(c_734969,obj_int2obj(1),NULL);
 
-make_pair(c_734968,obj_int2obj(1),&c_734969);
+alloca_pair(c_734968,obj_int2obj(1),c_734969);
 
-make_pair(c_734967,quote_char_127,&c_734968);
+alloca_pair(c_734967,quote_char_127,c_734968);
 
-make_pair(c_734973,obj_int2obj(1),NULL);
+alloca_pair(c_734973,obj_int2obj(1),NULL);
 
-make_pair(c_734972,obj_int2obj(1),&c_734973);
+alloca_pair(c_734972,obj_int2obj(1),c_734973);
 
-make_pair(c_734971,quote_eof_91object_127,&c_734972);
+alloca_pair(c_734971,quote_eof_91object_127,c_734972);
 
-make_pair(c_734977,obj_int2obj(1),NULL);
+alloca_pair(c_734977,obj_int2obj(1),NULL);
 
-make_pair(c_734976,obj_int2obj(1),&c_734977);
+alloca_pair(c_734976,obj_int2obj(1),c_734977);
 
-make_pair(c_734975,quote_null_127,&c_734976);
+alloca_pair(c_734975,quote_null_127,c_734976);
 
-make_pair(c_734981,obj_int2obj(1),NULL);
+alloca_pair(c_734981,obj_int2obj(1),NULL);
 
-make_pair(c_734980,obj_int2obj(1),&c_734981);
+alloca_pair(c_734980,obj_int2obj(1),c_734981);
 
-make_pair(c_734979,quote_number_127,&c_734980);
+alloca_pair(c_734979,quote_number_127,c_734980);
 
-make_pair(c_734985,obj_int2obj(1),NULL);
+alloca_pair(c_734985,obj_int2obj(1),NULL);
 
-make_pair(c_734984,obj_int2obj(1),&c_734985);
+alloca_pair(c_734984,obj_int2obj(1),c_734985);
 
-make_pair(c_734983,quote_real_127,&c_734984);
+alloca_pair(c_734983,quote_real_127,c_734984);
 
-make_pair(c_734989,obj_int2obj(1),NULL);
+alloca_pair(c_734989,obj_int2obj(1),NULL);
 
-make_pair(c_734988,obj_int2obj(1),&c_734989);
+alloca_pair(c_734988,obj_int2obj(1),c_734989);
 
-make_pair(c_734987,quote_integer_127,&c_734988);
+alloca_pair(c_734987,quote_integer_127,c_734988);
 
-make_pair(c_734993,obj_int2obj(1),NULL);
+alloca_pair(c_734993,obj_int2obj(1),NULL);
 
-make_pair(c_734992,obj_int2obj(1),&c_734993);
+alloca_pair(c_734992,obj_int2obj(1),c_734993);
 
-make_pair(c_734991,quote_pair_127,&c_734992);
+alloca_pair(c_734991,quote_pair_127,c_734992);
 
-make_pair(c_734997,obj_int2obj(1),NULL);
+alloca_pair(c_734997,obj_int2obj(1),NULL);
 
-make_pair(c_734996,obj_int2obj(1),&c_734997);
+alloca_pair(c_734996,obj_int2obj(1),c_734997);
 
-make_pair(c_734995,quote_port_127,&c_734996);
+alloca_pair(c_734995,quote_port_127,c_734996);
 
-make_pair(c_735001,obj_int2obj(1),NULL);
+alloca_pair(c_735001,obj_int2obj(1),NULL);
 
-make_pair(c_735000,obj_int2obj(1),&c_735001);
+alloca_pair(c_735000,obj_int2obj(1),c_735001);
 
-make_pair(c_734999,quote_procedure_127,&c_735000);
+alloca_pair(c_734999,quote_procedure_127,c_735000);
 
-make_pair(c_735005,obj_int2obj(1),NULL);
+alloca_pair(c_735005,obj_int2obj(1),NULL);
 
-make_pair(c_735004,obj_int2obj(1),&c_735005);
+alloca_pair(c_735004,obj_int2obj(1),c_735005);
 
-make_pair(c_735003,quote_Cyc_91macro_127,&c_735004);
+alloca_pair(c_735003,quote_Cyc_91macro_127,c_735004);
 
-make_pair(c_735009,obj_int2obj(1),NULL);
+alloca_pair(c_735009,obj_int2obj(1),NULL);
 
-make_pair(c_735008,obj_int2obj(1),&c_735009);
+alloca_pair(c_735008,obj_int2obj(1),c_735009);
 
-make_pair(c_735007,quote_vector_127,&c_735008);
+alloca_pair(c_735007,quote_vector_127,c_735008);
 
-make_pair(c_735013,obj_int2obj(1),NULL);
+alloca_pair(c_735013,obj_int2obj(1),NULL);
 
-make_pair(c_735012,obj_int2obj(1),&c_735013);
+alloca_pair(c_735012,obj_int2obj(1),c_735013);
 
-make_pair(c_735011,quote_string_127,&c_735012);
+alloca_pair(c_735011,quote_string_127,c_735012);
 
-make_pair(c_735017,obj_int2obj(1),NULL);
+alloca_pair(c_735017,obj_int2obj(1),NULL);
 
-make_pair(c_735016,obj_int2obj(1),&c_735017);
+alloca_pair(c_735016,obj_int2obj(1),c_735017);
 
-make_pair(c_735015,quote_symbol_127,&c_735016);
+alloca_pair(c_735015,quote_symbol_127,c_735016);
 
-make_pair(c_735021,obj_int2obj(1),NULL);
+alloca_pair(c_735021,obj_int2obj(1),NULL);
 
-make_pair(c_735020,obj_int2obj(1),&c_735021);
+alloca_pair(c_735020,obj_int2obj(1),c_735021);
 
-make_pair(c_735019,quote_open_91input_91file,&c_735020);
+alloca_pair(c_735019,quote_open_91input_91file,c_735020);
 
-make_pair(c_735025,obj_int2obj(1),NULL);
+alloca_pair(c_735025,obj_int2obj(1),NULL);
 
-make_pair(c_735024,obj_int2obj(1),&c_735025);
+alloca_pair(c_735024,obj_int2obj(1),c_735025);
 
-make_pair(c_735023,quote_open_91output_91file,&c_735024);
+alloca_pair(c_735023,quote_open_91output_91file,c_735024);
 
-make_pair(c_735029,obj_int2obj(1),NULL);
+alloca_pair(c_735029,obj_int2obj(1),NULL);
 
-make_pair(c_735028,obj_int2obj(1),&c_735029);
+alloca_pair(c_735028,obj_int2obj(1),c_735029);
 
-make_pair(c_735027,quote_close_91port,&c_735028);
+alloca_pair(c_735027,quote_close_91port,c_735028);
 
-make_pair(c_735033,obj_int2obj(1),NULL);
+alloca_pair(c_735033,obj_int2obj(1),NULL);
 
-make_pair(c_735032,obj_int2obj(1),&c_735033);
+alloca_pair(c_735032,obj_int2obj(1),c_735033);
 
-make_pair(c_735031,quote_close_91input_91port,&c_735032);
+alloca_pair(c_735031,quote_close_91input_91port,c_735032);
 
-make_pair(c_735037,obj_int2obj(1),NULL);
+alloca_pair(c_735037,obj_int2obj(1),NULL);
 
-make_pair(c_735036,obj_int2obj(1),&c_735037);
+alloca_pair(c_735036,obj_int2obj(1),c_735037);
 
-make_pair(c_735035,quote_close_91output_91port,&c_735036);
+alloca_pair(c_735035,quote_close_91output_91port,c_735036);
 
-make_pair(c_735041,obj_int2obj(1),NULL);
+alloca_pair(c_735041,obj_int2obj(1),NULL);
 
-make_pair(c_735040,obj_int2obj(1),&c_735041);
+alloca_pair(c_735040,obj_int2obj(1),c_735041);
 
-make_pair(c_735039,quote_Cyc_91flush_91output_91port,&c_735040);
+alloca_pair(c_735039,quote_Cyc_91flush_91output_91port,c_735040);
 
-make_pair(c_735045,obj_int2obj(1),NULL);
+alloca_pair(c_735045,obj_int2obj(1),NULL);
 
-make_pair(c_735044,obj_int2obj(1),&c_735045);
+alloca_pair(c_735044,obj_int2obj(1),c_735045);
 
-make_pair(c_735043,quote_file_91exists_127,&c_735044);
+alloca_pair(c_735043,quote_file_91exists_127,c_735044);
 
-make_pair(c_735049,obj_int2obj(1),NULL);
+alloca_pair(c_735049,obj_int2obj(1),NULL);
 
-make_pair(c_735048,obj_int2obj(1),&c_735049);
+alloca_pair(c_735048,obj_int2obj(1),c_735049);
 
-make_pair(c_735047,quote_delete_91file,&c_735048);
+alloca_pair(c_735047,quote_delete_91file,c_735048);
 
-make_pair(c_735053,obj_int2obj(1),NULL);
+alloca_pair(c_735053,obj_int2obj(1),NULL);
 
-make_pair(c_735052,obj_int2obj(1),&c_735053);
+alloca_pair(c_735052,obj_int2obj(1),c_735053);
 
-make_pair(c_735051,quote_Cyc_91read_91char,&c_735052);
+alloca_pair(c_735051,quote_Cyc_91read_91char,c_735052);
 
-make_pair(c_735057,obj_int2obj(1),NULL);
+alloca_pair(c_735057,obj_int2obj(1),NULL);
 
-make_pair(c_735056,obj_int2obj(1),&c_735057);
+alloca_pair(c_735056,obj_int2obj(1),c_735057);
 
-make_pair(c_735055,quote_Cyc_91peek_91char,&c_735056);
+alloca_pair(c_735055,quote_Cyc_91peek_91char,c_735056);
 
-make_pair(c_735061,obj_int2obj(1),NULL);
+alloca_pair(c_735061,obj_int2obj(1),NULL);
 
-make_pair(c_735060,obj_int2obj(1),&c_735061);
+alloca_pair(c_735060,obj_int2obj(1),c_735061);
 
-make_pair(c_735059,quote_Cyc_91read_91line,&c_735060);
+alloca_pair(c_735059,quote_Cyc_91read_91line,c_735060);
 
-make_pair(c_735065,obj_int2obj(2),NULL);
+alloca_pair(c_735065,obj_int2obj(2),NULL);
 
-make_pair(c_735064,obj_int2obj(1),&c_735065);
+alloca_pair(c_735064,obj_int2obj(1),c_735065);
 
-make_pair(c_735063,quote_Cyc_91write_91char,&c_735064);
+alloca_pair(c_735063,quote_Cyc_91write_91char,c_735064);
 
-make_pair(c_735069,obj_int2obj(2),NULL);
+alloca_pair(c_735069,obj_int2obj(2),NULL);
 
-make_pair(c_735068,obj_int2obj(1),&c_735069);
+alloca_pair(c_735068,obj_int2obj(1),c_735069);
 
-make_pair(c_735067,quote_Cyc_91write,&c_735068);
+alloca_pair(c_735067,quote_Cyc_91write,c_735068);
 
-make_pair(c_735073,obj_int2obj(2),NULL);
+alloca_pair(c_735073,obj_int2obj(2),NULL);
 
-make_pair(c_735072,obj_int2obj(1),&c_735073);
+alloca_pair(c_735072,obj_int2obj(1),c_735073);
 
-make_pair(c_735071,quote_Cyc_91display,&c_735072);
+alloca_pair(c_735071,quote_Cyc_91display,c_735072);
 
-make_pair(c_735070,&c_735071,NULL);
+alloca_pair(c_735070,c_735071,NULL);
 
-make_pair(c_735066,&c_735067,&c_735070);
+alloca_pair(c_735066,c_735067,c_735070);
 
-make_pair(c_735062,&c_735063,&c_735066);
+alloca_pair(c_735062,c_735063,c_735066);
 
-make_pair(c_735058,&c_735059,&c_735062);
+alloca_pair(c_735058,c_735059,c_735062);
 
-make_pair(c_735054,&c_735055,&c_735058);
+alloca_pair(c_735054,c_735055,c_735058);
 
-make_pair(c_735050,&c_735051,&c_735054);
+alloca_pair(c_735050,c_735051,c_735054);
 
-make_pair(c_735046,&c_735047,&c_735050);
+alloca_pair(c_735046,c_735047,c_735050);
 
-make_pair(c_735042,&c_735043,&c_735046);
+alloca_pair(c_735042,c_735043,c_735046);
 
-make_pair(c_735038,&c_735039,&c_735042);
+alloca_pair(c_735038,c_735039,c_735042);
 
-make_pair(c_735034,&c_735035,&c_735038);
+alloca_pair(c_735034,c_735035,c_735038);
 
-make_pair(c_735030,&c_735031,&c_735034);
+alloca_pair(c_735030,c_735031,c_735034);
 
-make_pair(c_735026,&c_735027,&c_735030);
+alloca_pair(c_735026,c_735027,c_735030);
 
-make_pair(c_735022,&c_735023,&c_735026);
+alloca_pair(c_735022,c_735023,c_735026);
 
-make_pair(c_735018,&c_735019,&c_735022);
+alloca_pair(c_735018,c_735019,c_735022);
 
-make_pair(c_735014,&c_735015,&c_735018);
+alloca_pair(c_735014,c_735015,c_735018);
 
-make_pair(c_735010,&c_735011,&c_735014);
+alloca_pair(c_735010,c_735011,c_735014);
 
-make_pair(c_735006,&c_735007,&c_735010);
+alloca_pair(c_735006,c_735007,c_735010);
 
-make_pair(c_735002,&c_735003,&c_735006);
+alloca_pair(c_735002,c_735003,c_735006);
 
-make_pair(c_734998,&c_734999,&c_735002);
+alloca_pair(c_734998,c_734999,c_735002);
 
-make_pair(c_734994,&c_734995,&c_734998);
+alloca_pair(c_734994,c_734995,c_734998);
 
-make_pair(c_734990,&c_734991,&c_734994);
+alloca_pair(c_734990,c_734991,c_734994);
 
-make_pair(c_734986,&c_734987,&c_734990);
+alloca_pair(c_734986,c_734987,c_734990);
 
-make_pair(c_734982,&c_734983,&c_734986);
+alloca_pair(c_734982,c_734983,c_734986);
 
-make_pair(c_734978,&c_734979,&c_734982);
+alloca_pair(c_734978,c_734979,c_734982);
 
-make_pair(c_734974,&c_734975,&c_734978);
+alloca_pair(c_734974,c_734975,c_734978);
 
-make_pair(c_734970,&c_734971,&c_734974);
+alloca_pair(c_734970,c_734971,c_734974);
 
-make_pair(c_734966,&c_734967,&c_734970);
+alloca_pair(c_734966,c_734967,c_734970);
 
-make_pair(c_734962,&c_734963,&c_734966);
+alloca_pair(c_734962,c_734963,c_734966);
 
-make_pair(c_734958,&c_734959,&c_734962);
+alloca_pair(c_734958,c_734959,c_734962);
 
-make_pair(c_734954,&c_734955,&c_734958);
+alloca_pair(c_734954,c_734955,c_734958);
 
-make_pair(c_734950,&c_734951,&c_734954);
+alloca_pair(c_734950,c_734951,c_734954);
 
-make_pair(c_734946,&c_734947,&c_734950);
+alloca_pair(c_734946,c_734947,c_734950);
 
-make_pair(c_734942,&c_734943,&c_734946);
+alloca_pair(c_734942,c_734943,c_734946);
 
-make_pair(c_734938,&c_734939,&c_734942);
+alloca_pair(c_734938,c_734939,c_734942);
 
-make_pair(c_734934,&c_734935,&c_734938);
+alloca_pair(c_734934,c_734935,c_734938);
 
-make_pair(c_734930,&c_734931,&c_734934);
+alloca_pair(c_734930,c_734931,c_734934);
 
-make_pair(c_734926,&c_734927,&c_734930);
+alloca_pair(c_734926,c_734927,c_734930);
 
-make_pair(c_734922,&c_734923,&c_734926);
+alloca_pair(c_734922,c_734923,c_734926);
 
-make_pair(c_734918,&c_734919,&c_734922);
+alloca_pair(c_734918,c_734919,c_734922);
 
-make_pair(c_734914,&c_734915,&c_734918);
+alloca_pair(c_734914,c_734915,c_734918);
 
-make_pair(c_734910,&c_734911,&c_734914);
+alloca_pair(c_734910,c_734911,c_734914);
 
-make_pair(c_734906,&c_734907,&c_734910);
+alloca_pair(c_734906,c_734907,c_734910);
 
-make_pair(c_734902,&c_734903,&c_734906);
+alloca_pair(c_734902,c_734903,c_734906);
 
-make_pair(c_734898,&c_734899,&c_734902);
+alloca_pair(c_734898,c_734899,c_734902);
 
-make_pair(c_734894,&c_734895,&c_734898);
+alloca_pair(c_734894,c_734895,c_734898);
 
-make_pair(c_734890,&c_734891,&c_734894);
+alloca_pair(c_734890,c_734891,c_734894);
 
-make_pair(c_734886,&c_734887,&c_734890);
+alloca_pair(c_734886,c_734887,c_734890);
 
-make_pair(c_734882,&c_734883,&c_734886);
+alloca_pair(c_734882,c_734883,c_734886);
 
-make_pair(c_734878,&c_734879,&c_734882);
+alloca_pair(c_734878,c_734879,c_734882);
 
-make_pair(c_734874,&c_734875,&c_734878);
+alloca_pair(c_734874,c_734875,c_734878);
 
-make_pair(c_734870,&c_734871,&c_734874);
+alloca_pair(c_734870,c_734871,c_734874);
 
-make_pair(c_734866,&c_734867,&c_734870);
+alloca_pair(c_734866,c_734867,c_734870);
 
-make_pair(c_734862,&c_734863,&c_734866);
+alloca_pair(c_734862,c_734863,c_734866);
 
-make_pair(c_734858,&c_734859,&c_734862);
+alloca_pair(c_734858,c_734859,c_734862);
 
-make_pair(c_734854,&c_734855,&c_734858);
+alloca_pair(c_734854,c_734855,c_734858);
 
-make_pair(c_734850,&c_734851,&c_734854);
+alloca_pair(c_734850,c_734851,c_734854);
 
-make_pair(c_734846,&c_734847,&c_734850);
+alloca_pair(c_734846,c_734847,c_734850);
 
-make_pair(c_734842,&c_734843,&c_734846);
+alloca_pair(c_734842,c_734843,c_734846);
 
-make_pair(c_734838,&c_734839,&c_734842);
+alloca_pair(c_734838,c_734839,c_734842);
 
-make_pair(c_734834,&c_734835,&c_734838);
+alloca_pair(c_734834,c_734835,c_734838);
 
-make_pair(c_734830,&c_734831,&c_734834);
+alloca_pair(c_734830,c_734831,c_734834);
 
-make_pair(c_734826,&c_734827,&c_734830);
+alloca_pair(c_734826,c_734827,c_734830);
 
-make_pair(c_734822,&c_734823,&c_734826);
+alloca_pair(c_734822,c_734823,c_734826);
 
-make_pair(c_734818,&c_734819,&c_734822);
+alloca_pair(c_734818,c_734819,c_734822);
 
-make_pair(c_734814,&c_734815,&c_734818);
+alloca_pair(c_734814,c_734815,c_734818);
 
-make_pair(c_734810,&c_734811,&c_734814);
+alloca_pair(c_734810,c_734811,c_734814);
 
-make_pair(c_734806,&c_734807,&c_734810);
+alloca_pair(c_734806,c_734807,c_734810);
 
-make_pair(c_734802,&c_734803,&c_734806);
+alloca_pair(c_734802,c_734803,c_734806);
 
-make_pair(c_734798,&c_734799,&c_734802);
+alloca_pair(c_734798,c_734799,c_734802);
 
-make_pair(c_734794,&c_734795,&c_734798);
+alloca_pair(c_734794,c_734795,c_734798);
 
-make_pair(c_734790,&c_734791,&c_734794);
+alloca_pair(c_734790,c_734791,c_734794);
 
-make_pair(c_734786,&c_734787,&c_734790);
+alloca_pair(c_734786,c_734787,c_734790);
 
-make_pair(c_734782,&c_734783,&c_734786);
+alloca_pair(c_734782,c_734783,c_734786);
 
-make_pair(c_734778,&c_734779,&c_734782);
+alloca_pair(c_734778,c_734779,c_734782);
 
-make_pair(c_734774,&c_734775,&c_734778);
+alloca_pair(c_734774,c_734775,c_734778);
 
-make_pair(c_734770,&c_734771,&c_734774);
+alloca_pair(c_734770,c_734771,c_734774);
 
-make_pair(c_734766,&c_734767,&c_734770);
+alloca_pair(c_734766,c_734767,c_734770);
 
-make_pair(c_734762,&c_734763,&c_734766);
+alloca_pair(c_734762,c_734763,c_734766);
 
-make_pair(c_734758,&c_734759,&c_734762);
+alloca_pair(c_734758,c_734759,c_734762);
 
-make_pair(c_734754,&c_734755,&c_734758);
+alloca_pair(c_734754,c_734755,c_734758);
 
-make_pair(c_734750,&c_734751,&c_734754);
+alloca_pair(c_734750,c_734751,c_734754);
 
-make_pair(c_734746,&c_734747,&c_734750);
+alloca_pair(c_734746,c_734747,c_734750);
 
-make_pair(c_734742,&c_734743,&c_734746);
+alloca_pair(c_734742,c_734743,c_734746);
 
-make_pair(c_734738,&c_734739,&c_734742);
+alloca_pair(c_734738,c_734739,c_734742);
 
-make_pair(c_734734,&c_734735,&c_734738);
+alloca_pair(c_734734,c_734735,c_734738);
 
-make_pair(c_734730,&c_734731,&c_734734);
+alloca_pair(c_734730,c_734731,c_734734);
 
-make_pair(c_734726,&c_734727,&c_734730);
+alloca_pair(c_734726,c_734727,c_734730);
 
-make_pair(c_734722,&c_734723,&c_734726);
+alloca_pair(c_734722,c_734723,c_734726);
 
-make_pair(c_734718,&c_734719,&c_734722);
+alloca_pair(c_734718,c_734719,c_734722);
 
-make_pair(c_734714,&c_734715,&c_734718);
+alloca_pair(c_734714,c_734715,c_734718);
 
-make_pair(c_734710,&c_734711,&c_734714);
+alloca_pair(c_734710,c_734711,c_734714);
 
-make_pair(c_734706,&c_734707,&c_734710);
+alloca_pair(c_734706,c_734707,c_734710);
 
-make_pair(c_734702,&c_734703,&c_734706);
+alloca_pair(c_734702,c_734703,c_734706);
 
-make_pair(c_734698,&c_734699,&c_734702);
+alloca_pair(c_734698,c_734699,c_734702);
 
-make_pair(c_734694,&c_734695,&c_734698);
+alloca_pair(c_734694,c_734695,c_734698);
 
-make_pair(c_734690,&c_734691,&c_734694);
+alloca_pair(c_734690,c_734691,c_734694);
 
-make_pair(c_734686,&c_734687,&c_734690);
+alloca_pair(c_734686,c_734687,c_734690);
 
-make_pair(c_734682,&c_734683,&c_734686);
+alloca_pair(c_734682,c_734683,c_734686);
 
-make_pair(c_734678,&c_734679,&c_734682);
+alloca_pair(c_734678,c_734679,c_734682);
 
-make_pair(c_734674,&c_734675,&c_734678);
+alloca_pair(c_734674,c_734675,c_734678);
 
-make_pair(c_734670,&c_734671,&c_734674);
+alloca_pair(c_734670,c_734671,c_734674);
 
-make_pair(c_734666,&c_734667,&c_734670);
+alloca_pair(c_734666,c_734667,c_734670);
 
-make_pair(c_734662,&c_734663,&c_734666);
+alloca_pair(c_734662,c_734663,c_734666);
 
-make_pair(c_734658,&c_734659,&c_734662);
+alloca_pair(c_734658,c_734659,c_734662);
 
-make_pair(c_734654,&c_734655,&c_734658);
+alloca_pair(c_734654,c_734655,c_734658);
 
-make_pair(c_734650,&c_734651,&c_734654);
+alloca_pair(c_734650,c_734651,c_734654);
 
-make_pair(c_734646,&c_734647,&c_734650);
+alloca_pair(c_734646,c_734647,c_734650);
 
-make_pair(c_734642,&c_734643,&c_734646);
+alloca_pair(c_734642,c_734643,c_734646);
 
-make_pair(c_734638,&c_734639,&c_734642);
+alloca_pair(c_734638,c_734639,c_734642);
 
-make_pair(c_734634,&c_734635,&c_734638);
+alloca_pair(c_734634,c_734635,c_734638);
 
-make_pair(c_734630,&c_734631,&c_734634);
+alloca_pair(c_734630,c_734631,c_734634);
 
-make_pair(c_734626,&c_734627,&c_734630);
+alloca_pair(c_734626,c_734627,c_734630);
 
-make_pair(c_734622,&c_734623,&c_734626);
+alloca_pair(c_734622,c_734623,c_734626);
 
-make_pair(c_734618,&c_734619,&c_734622);
+alloca_pair(c_734618,c_734619,c_734622);
 
-make_pair(c_734614,&c_734615,&c_734618);
+alloca_pair(c_734614,c_734615,c_734618);
 
-make_pair(c_734610,&c_734611,&c_734614);
+alloca_pair(c_734610,c_734611,c_734614);
 
-make_pair(c_734606,&c_734607,&c_734610);
+alloca_pair(c_734606,c_734607,c_734610);
 
-make_pair(c_734602,&c_734603,&c_734606);
+alloca_pair(c_734602,c_734603,c_734606);
 
-make_pair(c_734598,&c_734599,&c_734602);
+alloca_pair(c_734598,c_734599,c_734602);
 
-make_pair(c_734594,&c_734595,&c_734598);
+alloca_pair(c_734594,c_734595,c_734598);
 
-make_pair(c_734590,&c_734591,&c_734594);
+alloca_pair(c_734590,c_734591,c_734594);
 
-make_pair(c_734586,&c_734587,&c_734590);
+alloca_pair(c_734586,c_734587,c_734590);
 
-make_pair(c_734582,&c_734583,&c_734586);
+alloca_pair(c_734582,c_734583,c_734586);
 
-make_pair(c_734578,&c_734579,&c_734582);
+alloca_pair(c_734578,c_734579,c_734582);
 
-make_pair(c_734574,&c_734575,&c_734578);
+alloca_pair(c_734574,c_734575,c_734578);
 
-make_pair(c_734570,&c_734571,&c_734574);
+alloca_pair(c_734570,c_734571,c_734574);
 
-make_pair(c_734566,&c_734567,&c_734570);
+alloca_pair(c_734566,c_734567,c_734570);
 
-make_pair(c_734562,&c_734563,&c_734566);
+alloca_pair(c_734562,c_734563,c_734566);
 
-make_pair(c_734558,&c_734559,&c_734562);
+alloca_pair(c_734558,c_734559,c_734562);
 
-make_pair(c_734554,&c_734555,&c_734558);
+alloca_pair(c_734554,c_734555,c_734558);
 
-make_pair(c_734550,&c_734551,&c_734554);
+alloca_pair(c_734550,c_734551,c_734554);
 
-make_pair(c_734546,&c_734547,&c_734550);
+alloca_pair(c_734546,c_734547,c_734550);
 
-make_pair(c_734542,&c_734543,&c_734546);
+alloca_pair(c_734542,c_734543,c_734546);
 
-make_pair(c_734538,&c_734539,&c_734542);
+alloca_pair(c_734538,c_734539,c_734542);
 
-make_pair(c_734534,&c_734535,&c_734538);
+alloca_pair(c_734534,c_734535,c_734538);
 
-make_pair(c_734530,&c_734531,&c_734534);
+alloca_pair(c_734530,c_734531,c_734534);
 
-make_pair(c_734526,&c_734527,&c_734530);
+alloca_pair(c_734526,c_734527,c_734530);
 
-make_pair(c_734522,&c_734523,&c_734526);
+alloca_pair(c_734522,c_734523,c_734526);
 
-make_pair(c_734518,&c_734519,&c_734522);
+alloca_pair(c_734518,c_734519,c_734522);
 
-make_pair(c_734514,&c_734515,&c_734518);
+alloca_pair(c_734514,c_734515,c_734518);
 
-make_pair(c_734510,&c_734511,&c_734514);
+alloca_pair(c_734510,c_734511,c_734514);
 
-make_pair(c_734506,&c_734507,&c_734510);
+alloca_pair(c_734506,c_734507,c_734510);
 
-make_pair(c_734502,&c_734503,&c_734506);
+alloca_pair(c_734502,c_734503,c_734506);
 
-make_pair(c_734498,&c_734499,&c_734502);
+alloca_pair(c_734498,c_734499,c_734502);
 
-make_pair(c_734494,&c_734495,&c_734498);
+alloca_pair(c_734494,c_734495,c_734498);
 
-make_pair(c_734490,&c_734491,&c_734494);
+alloca_pair(c_734490,c_734491,c_734494);
 
-make_pair(c_734486,&c_734487,&c_734490);
+alloca_pair(c_734486,c_734487,c_734490);
 
-make_pair(c_734482,&c_734483,&c_734486);
+alloca_pair(c_734482,c_734483,c_734486);
 
-make_pair(c_734478,&c_734479,&c_734482);
+alloca_pair(c_734478,c_734479,c_734482);
 
-make_pair(c_734474,&c_734475,&c_734478);
+alloca_pair(c_734474,c_734475,c_734478);
 
-make_pair(c_734470,&c_734471,&c_734474);
+alloca_pair(c_734470,c_734471,c_734474);
 
-make_pair(c_734466,&c_734467,&c_734470);
-return_closcall1(data,  ((closureN)self_731692)->elements[0],  global_set(__glo__85primitives_91num_91args_85_scheme_cyclone_primitives, &c_734466));; 
+alloca_pair(c_734466,c_734467,c_734470);
+return_closcall1(data,  ((closureN)self_731692)->elements[0],  global_set(__glo__85primitives_91num_91args_85_scheme_cyclone_primitives, c_734466));; 
 }
 
 static void __lambda_210(void *data, int argc, closure _,object k_731463, object func_91sym_73768_73811, object num_91args_73769_73812) {
@@ -2396,62 +2396,62 @@ c_734381.elements[2] = mappings_73814;
 c_734381.elements[3] = ((closureN)self_731684)->elements[2];
 
 
-make_pair(c_734427,quote_Cyc_91fast_91char_91eq,NULL);
+alloca_pair(c_734427,quote_Cyc_91fast_91char_91eq,NULL);
 
-make_pair(c_734426,obj_int2obj(2),&c_734427);
+alloca_pair(c_734426,obj_int2obj(2),c_734427);
 
-make_pair(c_734425,quote_char_123_127,&c_734426);
+alloca_pair(c_734425,quote_char_123_127,c_734426);
 
-make_pair(c_734431,quote_Cyc_91fast_91char_91gt,NULL);
+alloca_pair(c_734431,quote_Cyc_91fast_91char_91gt,NULL);
 
-make_pair(c_734430,obj_int2obj(2),&c_734431);
+alloca_pair(c_734430,obj_int2obj(2),c_734431);
 
-make_pair(c_734429,quote_char_125_127,&c_734430);
+alloca_pair(c_734429,quote_char_125_127,c_734430);
 
-make_pair(c_734435,quote_Cyc_91fast_91char_91lt,NULL);
+alloca_pair(c_734435,quote_Cyc_91fast_91char_91lt,NULL);
 
-make_pair(c_734434,obj_int2obj(2),&c_734435);
+alloca_pair(c_734434,obj_int2obj(2),c_734435);
 
-make_pair(c_734433,quote_char_121_127,&c_734434);
+alloca_pair(c_734433,quote_char_121_127,c_734434);
 
-make_pair(c_734439,quote_Cyc_91fast_91char_91gte,NULL);
+alloca_pair(c_734439,quote_Cyc_91fast_91char_91gte,NULL);
 
-make_pair(c_734438,obj_int2obj(2),&c_734439);
+alloca_pair(c_734438,obj_int2obj(2),c_734439);
 
-make_pair(c_734437,quote_char_125_123_127,&c_734438);
+alloca_pair(c_734437,quote_char_125_123_127,c_734438);
 
-make_pair(c_734443,quote_Cyc_91fast_91char_91lte,NULL);
+alloca_pair(c_734443,quote_Cyc_91fast_91char_91lte,NULL);
 
-make_pair(c_734442,obj_int2obj(2),&c_734443);
+alloca_pair(c_734442,obj_int2obj(2),c_734443);
 
-make_pair(c_734441,quote_char_121_123_127,&c_734442);
+alloca_pair(c_734441,quote_char_121_123_127,c_734442);
 
-make_pair(c_734447,quote_Cyc_91read_91char,NULL);
+alloca_pair(c_734447,quote_Cyc_91read_91char,NULL);
 
-make_pair(c_734446,obj_int2obj(1),&c_734447);
+alloca_pair(c_734446,obj_int2obj(1),c_734447);
 
-make_pair(c_734445,quote_read_91char,&c_734446);
+alloca_pair(c_734445,quote_read_91char,c_734446);
 
-make_pair(c_734451,quote_Cyc_91peek_91char,NULL);
+alloca_pair(c_734451,quote_Cyc_91peek_91char,NULL);
 
-make_pair(c_734450,obj_int2obj(1),&c_734451);
+alloca_pair(c_734450,obj_int2obj(1),c_734451);
 
-make_pair(c_734449,quote_peek_91char,&c_734450);
+alloca_pair(c_734449,quote_peek_91char,c_734450);
 
-make_pair(c_734448,&c_734449,NULL);
+alloca_pair(c_734448,c_734449,NULL);
 
-make_pair(c_734444,&c_734445,&c_734448);
+alloca_pair(c_734444,c_734445,c_734448);
 
-make_pair(c_734440,&c_734441,&c_734444);
+alloca_pair(c_734440,c_734441,c_734444);
 
-make_pair(c_734436,&c_734437,&c_734440);
+alloca_pair(c_734436,c_734437,c_734440);
 
-make_pair(c_734432,&c_734433,&c_734436);
+alloca_pair(c_734432,c_734433,c_734436);
 
-make_pair(c_734428,&c_734429,&c_734432);
+alloca_pair(c_734428,c_734429,c_734432);
 
-make_pair(c_734424,&c_734425,&c_734428);
-return_direct_with_clo1(data,(closure)&c_734381,__lambda_212,  Cyc_set_cell(data, mappings_73814, &c_734424));; 
+alloca_pair(c_734424,c_734425,c_734428);
+return_direct_with_clo1(data,(closure)&c_734381,__lambda_212,  Cyc_set_cell(data, mappings_73814, c_734424));; 
 }
 
 static void __lambda_212(void *data, int argc, object self_731685, object r_731464) {
@@ -3044,88 +3044,88 @@ return_direct_with_clo1(data,  k_731441,__lambda_189,  c_734045);
 static void __lambda_186(void *data, int argc, closure _,object k_731333, object sym_73690_73805) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:immutable-args/result?");
 
-make_pair(c_734033,quote_symbol_127,NULL);
+alloca_pair(c_734033,quote_symbol_127,NULL);
 
-make_pair(c_734032,quote_string_127,&c_734033);
+alloca_pair(c_734032,quote_string_127,c_734033);
 
-make_pair(c_734031,quote_vector_127,&c_734032);
+alloca_pair(c_734031,quote_vector_127,c_734032);
 
-make_pair(c_734030,quote_Cyc_91macro_127,&c_734031);
+alloca_pair(c_734030,quote_Cyc_91macro_127,c_734031);
 
-make_pair(c_734029,quote_procedure_127,&c_734030);
+alloca_pair(c_734029,quote_procedure_127,c_734030);
 
-make_pair(c_734028,quote_port_127,&c_734029);
+alloca_pair(c_734028,quote_port_127,c_734029);
 
-make_pair(c_734027,quote_pair_127,&c_734028);
+alloca_pair(c_734027,quote_pair_127,c_734028);
 
-make_pair(c_734026,quote_integer_127,&c_734027);
+alloca_pair(c_734026,quote_integer_127,c_734027);
 
-make_pair(c_734025,quote_real_127,&c_734026);
+alloca_pair(c_734025,quote_real_127,c_734026);
 
-make_pair(c_734024,quote_number_127,&c_734025);
+alloca_pair(c_734024,quote_number_127,c_734025);
 
-make_pair(c_734023,quote_null_127,&c_734024);
+alloca_pair(c_734023,quote_null_127,c_734024);
 
-make_pair(c_734022,quote_eof_91object_127,&c_734023);
+alloca_pair(c_734022,quote_eof_91object_127,c_734023);
 
-make_pair(c_734021,quote_char_127,&c_734022);
+alloca_pair(c_734021,quote_char_127,c_734022);
 
-make_pair(c_734020,quote_boolean_127,&c_734021);
+alloca_pair(c_734020,quote_boolean_127,c_734021);
 
-make_pair(c_734019,quote_Cyc_91opaque_127,&c_734020);
+alloca_pair(c_734019,quote_Cyc_91opaque_127,c_734020);
 
-make_pair(c_734018,quote_Cyc_91cvar_127,&c_734019);
+alloca_pair(c_734018,quote_Cyc_91cvar_127,c_734019);
 
-make_pair(c_734017,quote_integer_91_125char,&c_734018);
+alloca_pair(c_734017,quote_integer_91_125char,c_734018);
 
-make_pair(c_734016,quote_char_91_125integer,&c_734017);
+alloca_pair(c_734016,quote_char_91_125integer,c_734017);
 
-make_pair(c_734015,quote_Cyc_91fast_91char_91lte,&c_734016);
+alloca_pair(c_734015,quote_Cyc_91fast_91char_91lte,c_734016);
 
-make_pair(c_734014,quote_Cyc_91fast_91char_91gte,&c_734015);
+alloca_pair(c_734014,quote_Cyc_91fast_91char_91gte,c_734015);
 
-make_pair(c_734013,quote_Cyc_91fast_91char_91lt,&c_734014);
+alloca_pair(c_734013,quote_Cyc_91fast_91char_91lt,c_734014);
 
-make_pair(c_734012,quote_Cyc_91fast_91char_91gt,&c_734013);
+alloca_pair(c_734012,quote_Cyc_91fast_91char_91gt,c_734013);
 
-make_pair(c_734011,quote_Cyc_91fast_91char_91eq,&c_734012);
+alloca_pair(c_734011,quote_Cyc_91fast_91char_91eq,c_734012);
 
-make_pair(c_734010,quote_Cyc_91fast_91lte,&c_734011);
+alloca_pair(c_734010,quote_Cyc_91fast_91lte,c_734011);
 
-make_pair(c_734009,quote_Cyc_91fast_91gte,&c_734010);
+alloca_pair(c_734009,quote_Cyc_91fast_91gte,c_734010);
 
-make_pair(c_734008,quote_Cyc_91fast_91lt,&c_734009);
+alloca_pair(c_734008,quote_Cyc_91fast_91lt,c_734009);
 
-make_pair(c_734007,quote_Cyc_91fast_91gt,&c_734008);
+alloca_pair(c_734007,quote_Cyc_91fast_91gt,c_734008);
 
-make_pair(c_734006,quote_Cyc_91fast_91eq,&c_734007);
+alloca_pair(c_734006,quote_Cyc_91fast_91eq,c_734007);
 
-make_pair(c_734005,quote_Cyc_91fast_91div,&c_734006);
+alloca_pair(c_734005,quote_Cyc_91fast_91div,c_734006);
 
-make_pair(c_734004,quote_Cyc_91fast_91mul,&c_734005);
+alloca_pair(c_734004,quote_Cyc_91fast_91mul,c_734005);
 
-make_pair(c_734003,quote_Cyc_91fast_91sub,&c_734004);
+alloca_pair(c_734003,quote_Cyc_91fast_91sub,c_734004);
 
-make_pair(c_734002,quote_Cyc_91fast_91plus,&c_734003);
+alloca_pair(c_734002,quote_Cyc_91fast_91plus,c_734003);
 
-make_pair(c_734001,quote__95,&c_734002);
+alloca_pair(c_734001,quote__95,c_734002);
 
-make_pair(c_734000,quote__85,&c_734001);
+alloca_pair(c_734000,quote__85,c_734001);
 
-make_pair(c_733999,quote__91,&c_734000);
+alloca_pair(c_733999,quote__91,c_734000);
 
-make_pair(c_733998,quote__87,&c_733999);
+alloca_pair(c_733998,quote__87,c_733999);
 
-make_pair(c_733997,quote__121_123,&c_733998);
+alloca_pair(c_733997,quote__121_123,c_733998);
 
-make_pair(c_733996,quote__125_123,&c_733997);
+alloca_pair(c_733996,quote__125_123,c_733997);
 
-make_pair(c_733995,quote__121,&c_733996);
+alloca_pair(c_733995,quote__121,c_733996);
 
-make_pair(c_733994,quote__125,&c_733995);
+alloca_pair(c_733994,quote__125,c_733995);
 
-make_pair(c_733993,quote__123,&c_733994);
-return_closcall1(data,  k_731333,  memberp(data, sym_73690_73805, &c_733993));; 
+alloca_pair(c_733993,quote__123,c_733994);
+return_closcall1(data,  k_731333,  memberp(data, sym_73690_73805, c_733993));; 
 }
 
 static void __lambda_185(void *data, int argc, closure _,object k_731328, object exp_73688_73804) {
@@ -3150,96 +3150,96 @@ static void __lambda_184(void *data, int argc, closure _,object k_731323, object
 if( (boolean_f != memberp(data, exp_73686_73803, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != memberp(data, exp_73686_73803, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733945,quote__95,NULL);
+alloca_pair(c_733945,quote__95,NULL);
 
-make_pair(c_733944,quote__85,&c_733945);
+alloca_pair(c_733944,quote__85,c_733945);
 
-make_pair(c_733943,quote__91,&c_733944);
+alloca_pair(c_733943,quote__91,c_733944);
 
-make_pair(c_733942,quote__87,&c_733943);
+alloca_pair(c_733942,quote__87,c_733943);
 
-make_pair(c_733941,quote__121_123,&c_733942);
+alloca_pair(c_733941,quote__121_123,c_733942);
 
-make_pair(c_733940,quote__125_123,&c_733941);
+alloca_pair(c_733940,quote__125_123,c_733941);
 
-make_pair(c_733939,quote__121,&c_733940);
+alloca_pair(c_733939,quote__121,c_733940);
 
-make_pair(c_733938,quote__125,&c_733939);
+alloca_pair(c_733938,quote__125,c_733939);
 
-make_pair(c_733937,quote__123,&c_733938);
+alloca_pair(c_733937,quote__123,c_733938);
 
-make_pair(c_733936,quote_Cyc_91list,&c_733937);
+alloca_pair(c_733936,quote_Cyc_91list,c_733937);
 
-make_pair(c_733935,quote_make_91vector,&c_733936);
+alloca_pair(c_733935,quote_make_91vector,c_733936);
 
-make_pair(c_733934,quote_bytevector_91append,&c_733935);
+alloca_pair(c_733934,quote_bytevector_91append,c_733935);
 
-make_pair(c_733933,quote_bytevector,&c_733934);
+alloca_pair(c_733933,quote_bytevector,c_733934);
 
-make_pair(c_733932,quote_make_91bytevector,&c_733933);
+alloca_pair(c_733932,quote_make_91bytevector,c_733933);
 
-make_pair(c_733931,quote_apply,&c_733932);
+alloca_pair(c_733931,quote_apply,c_733932);
 
-make_pair(c_733930,quote_string_91append,&c_733931);
+alloca_pair(c_733930,quote_string_91append,c_733931);
 
-make_pair(c_733929,quote_string_91_125number,&c_733930);
+alloca_pair(c_733929,quote_string_91_125number,c_733930);
 
-make_pair(c_733928,quote_number_91_125string,&c_733929);
+alloca_pair(c_733928,quote_number_91_125string,c_733929);
 
-make_pair(c_733927,quote_Cyc_91display,&c_733928);
+alloca_pair(c_733927,quote_Cyc_91display,c_733928);
 
-make_pair(c_733926,quote_Cyc_91write,&c_733927);
+alloca_pair(c_733926,quote_Cyc_91write,c_733927);
 
-make_pair(c_733925,quote_error,&c_733926);
-return_closcall1(data,  k_731323,  memberp(data, exp_73686_73803, &c_733925));
+alloca_pair(c_733925,quote_error,c_733926);
+return_closcall1(data,  k_731323,  memberp(data, exp_73686_73803, c_733925));
 } else { 
   return_closcall1(data,  k_731323,  boolean_f);}
 
 } else { 
   if( (boolean_f != memberp(data, exp_73686_73803, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733972,quote__95,NULL);
+alloca_pair(c_733972,quote__95,NULL);
 
-make_pair(c_733971,quote__85,&c_733972);
+alloca_pair(c_733971,quote__85,c_733972);
 
-make_pair(c_733970,quote__91,&c_733971);
+alloca_pair(c_733970,quote__91,c_733971);
 
-make_pair(c_733969,quote__87,&c_733970);
+alloca_pair(c_733969,quote__87,c_733970);
 
-make_pair(c_733968,quote__121_123,&c_733969);
+alloca_pair(c_733968,quote__121_123,c_733969);
 
-make_pair(c_733967,quote__125_123,&c_733968);
+alloca_pair(c_733967,quote__125_123,c_733968);
 
-make_pair(c_733966,quote__121,&c_733967);
+alloca_pair(c_733966,quote__121,c_733967);
 
-make_pair(c_733965,quote__125,&c_733966);
+alloca_pair(c_733965,quote__125,c_733966);
 
-make_pair(c_733964,quote__123,&c_733965);
+alloca_pair(c_733964,quote__123,c_733965);
 
-make_pair(c_733963,quote_Cyc_91list,&c_733964);
+alloca_pair(c_733963,quote_Cyc_91list,c_733964);
 
-make_pair(c_733962,quote_make_91vector,&c_733963);
+alloca_pair(c_733962,quote_make_91vector,c_733963);
 
-make_pair(c_733961,quote_bytevector_91append,&c_733962);
+alloca_pair(c_733961,quote_bytevector_91append,c_733962);
 
-make_pair(c_733960,quote_bytevector,&c_733961);
+alloca_pair(c_733960,quote_bytevector,c_733961);
 
-make_pair(c_733959,quote_make_91bytevector,&c_733960);
+alloca_pair(c_733959,quote_make_91bytevector,c_733960);
 
-make_pair(c_733958,quote_apply,&c_733959);
+alloca_pair(c_733958,quote_apply,c_733959);
 
-make_pair(c_733957,quote_string_91append,&c_733958);
+alloca_pair(c_733957,quote_string_91append,c_733958);
 
-make_pair(c_733956,quote_string_91_125number,&c_733957);
+alloca_pair(c_733956,quote_string_91_125number,c_733957);
 
-make_pair(c_733955,quote_number_91_125string,&c_733956);
+alloca_pair(c_733955,quote_number_91_125string,c_733956);
 
-make_pair(c_733954,quote_Cyc_91display,&c_733955);
+alloca_pair(c_733954,quote_Cyc_91display,c_733955);
 
-make_pair(c_733953,quote_Cyc_91write,&c_733954);
+alloca_pair(c_733953,quote_Cyc_91write,c_733954);
 
-make_pair(c_733952,quote_error,&c_733953);
-return_closcall1(data,  k_731323,  memberp(data, exp_73686_73803, &c_733952));
+alloca_pair(c_733952,quote_error,c_733953);
+return_closcall1(data,  k_731323,  memberp(data, exp_73686_73803, c_733952));
 } else { 
   return_closcall1(data,  k_731323,  boolean_f);}
 }
@@ -3251,20 +3251,20 @@ static void __lambda_183(void *data, int argc, closure _,object k_731318, object
 if( (boolean_f != memberp(data, exp_73684_73802, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != memberp(data, exp_73684_73802, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733907,quote_Cyc_91current_91exception_91handler,NULL);
+alloca_pair(c_733907,quote_Cyc_91current_91exception_91handler,NULL);
 
-make_pair(c_733906,quote_command_91line_91arguments,&c_733907);
-return_closcall1(data,  k_731318,  memberp(data, exp_73684_73802, &c_733906));
+alloca_pair(c_733906,quote_command_91line_91arguments,c_733907);
+return_closcall1(data,  k_731318,  memberp(data, exp_73684_73802, c_733906));
 } else { 
   return_closcall1(data,  k_731318,  boolean_f);}
 
 } else { 
   if( (boolean_f != memberp(data, exp_73684_73802, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733915,quote_Cyc_91current_91exception_91handler,NULL);
+alloca_pair(c_733915,quote_Cyc_91current_91exception_91handler,NULL);
 
-make_pair(c_733914,quote_command_91line_91arguments,&c_733915);
-return_closcall1(data,  k_731318,  memberp(data, exp_73684_73802, &c_733914));
+alloca_pair(c_733914,quote_command_91line_91arguments,c_733915);
+return_closcall1(data,  k_731318,  memberp(data, exp_73684_73802, c_733914));
 } else { 
   return_closcall1(data,  k_731318,  boolean_f);}
 }
@@ -3276,148 +3276,148 @@ static void __lambda_182(void *data, int argc, closure _,object k_731313, object
 if( (boolean_f != memberp(data, exp_73682_73801, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != memberp(data, exp_73682_73801, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733856,quote_Cyc_91installation_91dir,NULL);
+alloca_pair(c_733856,quote_Cyc_91installation_91dir,NULL);
 
-make_pair(c_733855,quote_Cyc_91compilation_91environment,&c_733856);
+alloca_pair(c_733855,quote_Cyc_91compilation_91environment,c_733856);
 
-make_pair(c_733854,quote_list_91_125vector,&c_733855);
+alloca_pair(c_733854,quote_list_91_125vector,c_733855);
 
-make_pair(c_733853,quote_make_91vector,&c_733854);
+alloca_pair(c_733853,quote_make_91vector,c_733854);
 
-make_pair(c_733852,quote_bytevector_91u8_91set_67,&c_733853);
+alloca_pair(c_733852,quote_bytevector_91u8_91set_67,c_733853);
 
-make_pair(c_733851,quote_bytevector_91u8_91ref,&c_733852);
+alloca_pair(c_733851,quote_bytevector_91u8_91ref,c_733852);
 
-make_pair(c_733850,quote_bytevector,&c_733851);
+alloca_pair(c_733850,quote_bytevector,c_733851);
 
-make_pair(c_733849,quote_Cyc_91string_91_125utf8,&c_733850);
+alloca_pair(c_733849,quote_Cyc_91string_91_125utf8,c_733850);
 
-make_pair(c_733848,quote_Cyc_91utf8_91_125string,&c_733849);
+alloca_pair(c_733848,quote_Cyc_91utf8_91_125string,c_733849);
 
-make_pair(c_733847,quote_Cyc_91bytevector_91copy,&c_733848);
+alloca_pair(c_733847,quote_Cyc_91bytevector_91copy,c_733848);
 
-make_pair(c_733846,quote_bytevector_91append,&c_733847);
+alloca_pair(c_733846,quote_bytevector_91append,c_733847);
 
-make_pair(c_733845,quote_make_91bytevector,&c_733846);
+alloca_pair(c_733845,quote_make_91bytevector,c_733846);
 
-make_pair(c_733844,quote_string_91_125number,&c_733845);
+alloca_pair(c_733844,quote_string_91_125number,c_733845);
 
-make_pair(c_733843,quote_string_91append,&c_733844);
+alloca_pair(c_733843,quote_string_91append,c_733844);
 
-make_pair(c_733842,quote_substring,&c_733843);
+alloca_pair(c_733842,quote_substring,c_733843);
 
-make_pair(c_733841,quote_list_91_125string,&c_733842);
+alloca_pair(c_733841,quote_list_91_125string,c_733842);
 
-make_pair(c_733840,quote_symbol_91_125string,&c_733841);
+alloca_pair(c_733840,quote_symbol_91_125string,c_733841);
 
-make_pair(c_733839,quote_Cyc_91peek_91char,&c_733840);
+alloca_pair(c_733839,quote_Cyc_91peek_91char,c_733840);
 
-make_pair(c_733838,quote_Cyc_91read_91char,&c_733839);
+alloca_pair(c_733838,quote_Cyc_91read_91char,c_733839);
 
-make_pair(c_733837,quote_Cyc_91list,&c_733838);
+alloca_pair(c_733837,quote_Cyc_91list,c_733838);
 
-make_pair(c_733836,quote__121_123,&c_733837);
+alloca_pair(c_733836,quote__121_123,c_733837);
 
-make_pair(c_733835,quote__125_123,&c_733836);
+alloca_pair(c_733835,quote__125_123,c_733836);
 
-make_pair(c_733834,quote__121,&c_733835);
+alloca_pair(c_733834,quote__121,c_733835);
 
-make_pair(c_733833,quote__125,&c_733834);
+alloca_pair(c_733833,quote__125,c_733834);
 
-make_pair(c_733832,quote__123,&c_733833);
+alloca_pair(c_733832,quote__123,c_733833);
 
-make_pair(c_733831,quote__95,&c_733832);
+alloca_pair(c_733831,quote__95,c_733832);
 
-make_pair(c_733830,quote__85,&c_733831);
+alloca_pair(c_733830,quote__85,c_733831);
 
-make_pair(c_733829,quote__91,&c_733830);
+alloca_pair(c_733829,quote__91,c_733830);
 
-make_pair(c_733828,quote__87,&c_733829);
+alloca_pair(c_733828,quote__87,c_733829);
 
-make_pair(c_733827,quote_Cyc_91fast_91apply,&c_733828);
+alloca_pair(c_733827,quote_Cyc_91fast_91apply,c_733828);
 
-make_pair(c_733826,quote_number_91_125string,&c_733827);
+alloca_pair(c_733826,quote_number_91_125string,c_733827);
 
-make_pair(c_733825,quote_command_91line_91arguments,&c_733826);
+alloca_pair(c_733825,quote_command_91line_91arguments,c_733826);
 
-make_pair(c_733824,quote_apply,&c_733825);
+alloca_pair(c_733824,quote_apply,c_733825);
 
-make_pair(c_733823,quote_Cyc_91read_91line,&c_733824);
-return_closcall1(data,  k_731313,  memberp(data, exp_73682_73801, &c_733823));
+alloca_pair(c_733823,quote_Cyc_91read_91line,c_733824);
+return_closcall1(data,  k_731313,  memberp(data, exp_73682_73801, c_733823));
 } else { 
   return_closcall1(data,  k_731313,  boolean_f);}
 
 } else { 
   if( (boolean_f != memberp(data, exp_73682_73801, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
-make_pair(c_733896,quote_Cyc_91installation_91dir,NULL);
+alloca_pair(c_733896,quote_Cyc_91installation_91dir,NULL);
 
-make_pair(c_733895,quote_Cyc_91compilation_91environment,&c_733896);
+alloca_pair(c_733895,quote_Cyc_91compilation_91environment,c_733896);
 
-make_pair(c_733894,quote_list_91_125vector,&c_733895);
+alloca_pair(c_733894,quote_list_91_125vector,c_733895);
 
-make_pair(c_733893,quote_make_91vector,&c_733894);
+alloca_pair(c_733893,quote_make_91vector,c_733894);
 
-make_pair(c_733892,quote_bytevector_91u8_91set_67,&c_733893);
+alloca_pair(c_733892,quote_bytevector_91u8_91set_67,c_733893);
 
-make_pair(c_733891,quote_bytevector_91u8_91ref,&c_733892);
+alloca_pair(c_733891,quote_bytevector_91u8_91ref,c_733892);
 
-make_pair(c_733890,quote_bytevector,&c_733891);
+alloca_pair(c_733890,quote_bytevector,c_733891);
 
-make_pair(c_733889,quote_Cyc_91string_91_125utf8,&c_733890);
+alloca_pair(c_733889,quote_Cyc_91string_91_125utf8,c_733890);
 
-make_pair(c_733888,quote_Cyc_91utf8_91_125string,&c_733889);
+alloca_pair(c_733888,quote_Cyc_91utf8_91_125string,c_733889);
 
-make_pair(c_733887,quote_Cyc_91bytevector_91copy,&c_733888);
+alloca_pair(c_733887,quote_Cyc_91bytevector_91copy,c_733888);
 
-make_pair(c_733886,quote_bytevector_91append,&c_733887);
+alloca_pair(c_733886,quote_bytevector_91append,c_733887);
 
-make_pair(c_733885,quote_make_91bytevector,&c_733886);
+alloca_pair(c_733885,quote_make_91bytevector,c_733886);
 
-make_pair(c_733884,quote_string_91_125number,&c_733885);
+alloca_pair(c_733884,quote_string_91_125number,c_733885);
 
-make_pair(c_733883,quote_string_91append,&c_733884);
+alloca_pair(c_733883,quote_string_91append,c_733884);
 
-make_pair(c_733882,quote_substring,&c_733883);
+alloca_pair(c_733882,quote_substring,c_733883);
 
-make_pair(c_733881,quote_list_91_125string,&c_733882);
+alloca_pair(c_733881,quote_list_91_125string,c_733882);
 
-make_pair(c_733880,quote_symbol_91_125string,&c_733881);
+alloca_pair(c_733880,quote_symbol_91_125string,c_733881);
 
-make_pair(c_733879,quote_Cyc_91peek_91char,&c_733880);
+alloca_pair(c_733879,quote_Cyc_91peek_91char,c_733880);
 
-make_pair(c_733878,quote_Cyc_91read_91char,&c_733879);
+alloca_pair(c_733878,quote_Cyc_91read_91char,c_733879);
 
-make_pair(c_733877,quote_Cyc_91list,&c_733878);
+alloca_pair(c_733877,quote_Cyc_91list,c_733878);
 
-make_pair(c_733876,quote__121_123,&c_733877);
+alloca_pair(c_733876,quote__121_123,c_733877);
 
-make_pair(c_733875,quote__125_123,&c_733876);
+alloca_pair(c_733875,quote__125_123,c_733876);
 
-make_pair(c_733874,quote__121,&c_733875);
+alloca_pair(c_733874,quote__121,c_733875);
 
-make_pair(c_733873,quote__125,&c_733874);
+alloca_pair(c_733873,quote__125,c_733874);
 
-make_pair(c_733872,quote__123,&c_733873);
+alloca_pair(c_733872,quote__123,c_733873);
 
-make_pair(c_733871,quote__95,&c_733872);
+alloca_pair(c_733871,quote__95,c_733872);
 
-make_pair(c_733870,quote__85,&c_733871);
+alloca_pair(c_733870,quote__85,c_733871);
 
-make_pair(c_733869,quote__91,&c_733870);
+alloca_pair(c_733869,quote__91,c_733870);
 
-make_pair(c_733868,quote__87,&c_733869);
+alloca_pair(c_733868,quote__87,c_733869);
 
-make_pair(c_733867,quote_Cyc_91fast_91apply,&c_733868);
+alloca_pair(c_733867,quote_Cyc_91fast_91apply,c_733868);
 
-make_pair(c_733866,quote_number_91_125string,&c_733867);
+alloca_pair(c_733866,quote_number_91_125string,c_733867);
 
-make_pair(c_733865,quote_command_91line_91arguments,&c_733866);
+alloca_pair(c_733865,quote_command_91line_91arguments,c_733866);
 
-make_pair(c_733864,quote_apply,&c_733865);
+alloca_pair(c_733864,quote_apply,c_733865);
 
-make_pair(c_733863,quote_Cyc_91read_91line,&c_733864);
-return_closcall1(data,  k_731313,  memberp(data, exp_73682_73801, &c_733863));
+alloca_pair(c_733863,quote_Cyc_91read_91line,c_733864);
+return_closcall1(data,  k_731313,  memberp(data, exp_73682_73801, c_733863));
 } else { 
   return_closcall1(data,  k_731313,  boolean_f);}
 }
@@ -3428,176 +3428,176 @@ static void __lambda_181(void *data, int argc, closure _,object k_731307, object
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/cvar?");
 if( (boolean_f != memberp(data, exp_73676_73799, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != memberp(data, exp_73676_73799, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
-    make_pair(c_733628,quote_cell,NULL);
-  make_pair(c_733627,quote_cons,&c_733628);
-  make_pair(c_733626,quote_Cyc_91fast_91list_914,&c_733627);
-  make_pair(c_733625,quote_Cyc_91fast_91list_913,&c_733626);
-  make_pair(c_733624,quote_Cyc_91fast_91list_912,&c_733625);
-  make_pair(c_733623,quote_Cyc_91fast_91list_911,&c_733624);
-  make_pair(c_733622,quote_Cyc_91peek_91char,&c_733623);
-  make_pair(c_733621,quote_Cyc_91read_91char,&c_733622);
-  make_pair(c_733620,quote_Cyc_91read_91line,&c_733621);
-  make_pair(c_733619,quote_command_91line_91arguments,&c_733620);
-  make_pair(c_733618,quote__121_123,&c_733619);
-  make_pair(c_733617,quote__125_123,&c_733618);
-  make_pair(c_733616,quote__121,&c_733617);
-  make_pair(c_733615,quote__125,&c_733616);
-  make_pair(c_733614,quote__123,&c_733615);
-  make_pair(c_733613,quote_Cyc_91fast_91apply,&c_733614);
-  make_pair(c_733612,quote_apply,&c_733613);
-  make_pair(c_733611,quote__95,&c_733612);
-  make_pair(c_733610,quote__85,&c_733611);
-  make_pair(c_733609,quote__91,&c_733610);
-  make_pair(c_733608,quote__87,&c_733609);
-  make_pair(c_733607,quote_Cyc_91fast_91char_91lte,&c_733608);
-  make_pair(c_733606,quote_Cyc_91fast_91char_91gte,&c_733607);
-  make_pair(c_733605,quote_Cyc_91fast_91char_91lt,&c_733606);
-  make_pair(c_733604,quote_Cyc_91fast_91char_91gt,&c_733605);
-  make_pair(c_733603,quote_Cyc_91fast_91char_91eq,&c_733604);
-  make_pair(c_733602,quote_Cyc_91fast_91lte,&c_733603);
-  make_pair(c_733601,quote_Cyc_91fast_91gte,&c_733602);
-  make_pair(c_733600,quote_Cyc_91fast_91lt,&c_733601);
-  make_pair(c_733599,quote_Cyc_91fast_91gt,&c_733600);
-  make_pair(c_733598,quote_Cyc_91fast_91eq,&c_733599);
-  make_pair(c_733597,quote_Cyc_91fast_91div,&c_733598);
-  make_pair(c_733596,quote_Cyc_91fast_91mul,&c_733597);
-  make_pair(c_733595,quote_Cyc_91fast_91sub,&c_733596);
-  make_pair(c_733594,quote_Cyc_91fast_91plus,&c_733595);
-  make_pair(c_733593,quote_substring,&c_733594);
-  make_pair(c_733592,quote_number_91_125string,&c_733593);
-  make_pair(c_733591,quote_symbol_91_125string,&c_733592);
-  make_pair(c_733590,quote_list_91_125vector,&c_733591);
-  make_pair(c_733589,quote_make_91vector,&c_733590);
-  make_pair(c_733588,quote_Cyc_91string_91_125utf8,&c_733589);
-  make_pair(c_733587,quote_Cyc_91utf8_91_125string,&c_733588);
-  make_pair(c_733586,quote_Cyc_91bytevector_91copy,&c_733587);
-  make_pair(c_733585,quote_bytevector_91append,&c_733586);
-  make_pair(c_733584,quote_bytevector,&c_733585);
-  make_pair(c_733583,quote_make_91bytevector,&c_733584);
-  make_pair(c_733582,quote_list_91_125string,&c_733583);
-  make_pair(c_733581,quote_string_91append,&c_733582);
-  make_pair(c_733580,quote_string_91_125number,&c_733581);
-  make_pair(c_733579,quote_Cyc_91compilation_91environment,&c_733580);
-  make_pair(c_733578,quote_Cyc_91installation_91dir,&c_733579);
-  make_pair(c_733577,quote_open_91output_91file,&c_733578);
-  make_pair(c_733576,quote_open_91input_91file,&c_733577);
-  make_pair(c_733575,quote_Cyc_91stderr,&c_733576);
-  make_pair(c_733574,quote_Cyc_91stdin,&c_733575);
-  make_pair(c_733573,quote_Cyc_91stdout,&c_733574);
-if( (boolean_f != memberp(data, exp_73676_73799, &c_733573)) ){ 
+    alloca_pair(c_733628,quote_cell,NULL);
+  alloca_pair(c_733627,quote_cons,c_733628);
+  alloca_pair(c_733626,quote_Cyc_91fast_91list_914,c_733627);
+  alloca_pair(c_733625,quote_Cyc_91fast_91list_913,c_733626);
+  alloca_pair(c_733624,quote_Cyc_91fast_91list_912,c_733625);
+  alloca_pair(c_733623,quote_Cyc_91fast_91list_911,c_733624);
+  alloca_pair(c_733622,quote_Cyc_91peek_91char,c_733623);
+  alloca_pair(c_733621,quote_Cyc_91read_91char,c_733622);
+  alloca_pair(c_733620,quote_Cyc_91read_91line,c_733621);
+  alloca_pair(c_733619,quote_command_91line_91arguments,c_733620);
+  alloca_pair(c_733618,quote__121_123,c_733619);
+  alloca_pair(c_733617,quote__125_123,c_733618);
+  alloca_pair(c_733616,quote__121,c_733617);
+  alloca_pair(c_733615,quote__125,c_733616);
+  alloca_pair(c_733614,quote__123,c_733615);
+  alloca_pair(c_733613,quote_Cyc_91fast_91apply,c_733614);
+  alloca_pair(c_733612,quote_apply,c_733613);
+  alloca_pair(c_733611,quote__95,c_733612);
+  alloca_pair(c_733610,quote__85,c_733611);
+  alloca_pair(c_733609,quote__91,c_733610);
+  alloca_pair(c_733608,quote__87,c_733609);
+  alloca_pair(c_733607,quote_Cyc_91fast_91char_91lte,c_733608);
+  alloca_pair(c_733606,quote_Cyc_91fast_91char_91gte,c_733607);
+  alloca_pair(c_733605,quote_Cyc_91fast_91char_91lt,c_733606);
+  alloca_pair(c_733604,quote_Cyc_91fast_91char_91gt,c_733605);
+  alloca_pair(c_733603,quote_Cyc_91fast_91char_91eq,c_733604);
+  alloca_pair(c_733602,quote_Cyc_91fast_91lte,c_733603);
+  alloca_pair(c_733601,quote_Cyc_91fast_91gte,c_733602);
+  alloca_pair(c_733600,quote_Cyc_91fast_91lt,c_733601);
+  alloca_pair(c_733599,quote_Cyc_91fast_91gt,c_733600);
+  alloca_pair(c_733598,quote_Cyc_91fast_91eq,c_733599);
+  alloca_pair(c_733597,quote_Cyc_91fast_91div,c_733598);
+  alloca_pair(c_733596,quote_Cyc_91fast_91mul,c_733597);
+  alloca_pair(c_733595,quote_Cyc_91fast_91sub,c_733596);
+  alloca_pair(c_733594,quote_Cyc_91fast_91plus,c_733595);
+  alloca_pair(c_733593,quote_substring,c_733594);
+  alloca_pair(c_733592,quote_number_91_125string,c_733593);
+  alloca_pair(c_733591,quote_symbol_91_125string,c_733592);
+  alloca_pair(c_733590,quote_list_91_125vector,c_733591);
+  alloca_pair(c_733589,quote_make_91vector,c_733590);
+  alloca_pair(c_733588,quote_Cyc_91string_91_125utf8,c_733589);
+  alloca_pair(c_733587,quote_Cyc_91utf8_91_125string,c_733588);
+  alloca_pair(c_733586,quote_Cyc_91bytevector_91copy,c_733587);
+  alloca_pair(c_733585,quote_bytevector_91append,c_733586);
+  alloca_pair(c_733584,quote_bytevector,c_733585);
+  alloca_pair(c_733583,quote_make_91bytevector,c_733584);
+  alloca_pair(c_733582,quote_list_91_125string,c_733583);
+  alloca_pair(c_733581,quote_string_91append,c_733582);
+  alloca_pair(c_733580,quote_string_91_125number,c_733581);
+  alloca_pair(c_733579,quote_Cyc_91compilation_91environment,c_733580);
+  alloca_pair(c_733578,quote_Cyc_91installation_91dir,c_733579);
+  alloca_pair(c_733577,quote_open_91output_91file,c_733578);
+  alloca_pair(c_733576,quote_open_91input_91file,c_733577);
+  alloca_pair(c_733575,quote_Cyc_91stderr,c_733576);
+  alloca_pair(c_733574,quote_Cyc_91stdin,c_733575);
+  alloca_pair(c_733573,quote_Cyc_91stdout,c_733574);
+if( (boolean_f != memberp(data, exp_73676_73799, c_733573)) ){ 
   
-make_pair(c_733687,quote_cell,NULL);
+alloca_pair(c_733687,quote_cell,NULL);
 
-make_pair(c_733686,quote_cons,&c_733687);
+alloca_pair(c_733686,quote_cons,c_733687);
 
-make_pair(c_733685,quote_Cyc_91fast_91list_914,&c_733686);
+alloca_pair(c_733685,quote_Cyc_91fast_91list_914,c_733686);
 
-make_pair(c_733684,quote_Cyc_91fast_91list_913,&c_733685);
+alloca_pair(c_733684,quote_Cyc_91fast_91list_913,c_733685);
 
-make_pair(c_733683,quote_Cyc_91fast_91list_912,&c_733684);
+alloca_pair(c_733683,quote_Cyc_91fast_91list_912,c_733684);
 
-make_pair(c_733682,quote_Cyc_91fast_91list_911,&c_733683);
+alloca_pair(c_733682,quote_Cyc_91fast_91list_911,c_733683);
 
-make_pair(c_733681,quote_Cyc_91peek_91char,&c_733682);
+alloca_pair(c_733681,quote_Cyc_91peek_91char,c_733682);
 
-make_pair(c_733680,quote_Cyc_91read_91char,&c_733681);
+alloca_pair(c_733680,quote_Cyc_91read_91char,c_733681);
 
-make_pair(c_733679,quote_Cyc_91read_91line,&c_733680);
+alloca_pair(c_733679,quote_Cyc_91read_91line,c_733680);
 
-make_pair(c_733678,quote_command_91line_91arguments,&c_733679);
+alloca_pair(c_733678,quote_command_91line_91arguments,c_733679);
 
-make_pair(c_733677,quote__121_123,&c_733678);
+alloca_pair(c_733677,quote__121_123,c_733678);
 
-make_pair(c_733676,quote__125_123,&c_733677);
+alloca_pair(c_733676,quote__125_123,c_733677);
 
-make_pair(c_733675,quote__121,&c_733676);
+alloca_pair(c_733675,quote__121,c_733676);
 
-make_pair(c_733674,quote__125,&c_733675);
+alloca_pair(c_733674,quote__125,c_733675);
 
-make_pair(c_733673,quote__123,&c_733674);
+alloca_pair(c_733673,quote__123,c_733674);
 
-make_pair(c_733672,quote_Cyc_91fast_91apply,&c_733673);
+alloca_pair(c_733672,quote_Cyc_91fast_91apply,c_733673);
 
-make_pair(c_733671,quote_apply,&c_733672);
+alloca_pair(c_733671,quote_apply,c_733672);
 
-make_pair(c_733670,quote__95,&c_733671);
+alloca_pair(c_733670,quote__95,c_733671);
 
-make_pair(c_733669,quote__85,&c_733670);
+alloca_pair(c_733669,quote__85,c_733670);
 
-make_pair(c_733668,quote__91,&c_733669);
+alloca_pair(c_733668,quote__91,c_733669);
 
-make_pair(c_733667,quote__87,&c_733668);
+alloca_pair(c_733667,quote__87,c_733668);
 
-make_pair(c_733666,quote_Cyc_91fast_91char_91lte,&c_733667);
+alloca_pair(c_733666,quote_Cyc_91fast_91char_91lte,c_733667);
 
-make_pair(c_733665,quote_Cyc_91fast_91char_91gte,&c_733666);
+alloca_pair(c_733665,quote_Cyc_91fast_91char_91gte,c_733666);
 
-make_pair(c_733664,quote_Cyc_91fast_91char_91lt,&c_733665);
+alloca_pair(c_733664,quote_Cyc_91fast_91char_91lt,c_733665);
 
-make_pair(c_733663,quote_Cyc_91fast_91char_91gt,&c_733664);
+alloca_pair(c_733663,quote_Cyc_91fast_91char_91gt,c_733664);
 
-make_pair(c_733662,quote_Cyc_91fast_91char_91eq,&c_733663);
+alloca_pair(c_733662,quote_Cyc_91fast_91char_91eq,c_733663);
 
-make_pair(c_733661,quote_Cyc_91fast_91lte,&c_733662);
+alloca_pair(c_733661,quote_Cyc_91fast_91lte,c_733662);
 
-make_pair(c_733660,quote_Cyc_91fast_91gte,&c_733661);
+alloca_pair(c_733660,quote_Cyc_91fast_91gte,c_733661);
 
-make_pair(c_733659,quote_Cyc_91fast_91lt,&c_733660);
+alloca_pair(c_733659,quote_Cyc_91fast_91lt,c_733660);
 
-make_pair(c_733658,quote_Cyc_91fast_91gt,&c_733659);
+alloca_pair(c_733658,quote_Cyc_91fast_91gt,c_733659);
 
-make_pair(c_733657,quote_Cyc_91fast_91eq,&c_733658);
+alloca_pair(c_733657,quote_Cyc_91fast_91eq,c_733658);
 
-make_pair(c_733656,quote_Cyc_91fast_91div,&c_733657);
+alloca_pair(c_733656,quote_Cyc_91fast_91div,c_733657);
 
-make_pair(c_733655,quote_Cyc_91fast_91mul,&c_733656);
+alloca_pair(c_733655,quote_Cyc_91fast_91mul,c_733656);
 
-make_pair(c_733654,quote_Cyc_91fast_91sub,&c_733655);
+alloca_pair(c_733654,quote_Cyc_91fast_91sub,c_733655);
 
-make_pair(c_733653,quote_Cyc_91fast_91plus,&c_733654);
+alloca_pair(c_733653,quote_Cyc_91fast_91plus,c_733654);
 
-make_pair(c_733652,quote_substring,&c_733653);
+alloca_pair(c_733652,quote_substring,c_733653);
 
-make_pair(c_733651,quote_number_91_125string,&c_733652);
+alloca_pair(c_733651,quote_number_91_125string,c_733652);
 
-make_pair(c_733650,quote_symbol_91_125string,&c_733651);
+alloca_pair(c_733650,quote_symbol_91_125string,c_733651);
 
-make_pair(c_733649,quote_list_91_125vector,&c_733650);
+alloca_pair(c_733649,quote_list_91_125vector,c_733650);
 
-make_pair(c_733648,quote_make_91vector,&c_733649);
+alloca_pair(c_733648,quote_make_91vector,c_733649);
 
-make_pair(c_733647,quote_Cyc_91string_91_125utf8,&c_733648);
+alloca_pair(c_733647,quote_Cyc_91string_91_125utf8,c_733648);
 
-make_pair(c_733646,quote_Cyc_91utf8_91_125string,&c_733647);
+alloca_pair(c_733646,quote_Cyc_91utf8_91_125string,c_733647);
 
-make_pair(c_733645,quote_Cyc_91bytevector_91copy,&c_733646);
+alloca_pair(c_733645,quote_Cyc_91bytevector_91copy,c_733646);
 
-make_pair(c_733644,quote_bytevector_91append,&c_733645);
+alloca_pair(c_733644,quote_bytevector_91append,c_733645);
 
-make_pair(c_733643,quote_bytevector,&c_733644);
+alloca_pair(c_733643,quote_bytevector,c_733644);
 
-make_pair(c_733642,quote_make_91bytevector,&c_733643);
+alloca_pair(c_733642,quote_make_91bytevector,c_733643);
 
-make_pair(c_733641,quote_list_91_125string,&c_733642);
+alloca_pair(c_733641,quote_list_91_125string,c_733642);
 
-make_pair(c_733640,quote_string_91append,&c_733641);
+alloca_pair(c_733640,quote_string_91append,c_733641);
 
-make_pair(c_733639,quote_string_91_125number,&c_733640);
+alloca_pair(c_733639,quote_string_91_125number,c_733640);
 
-make_pair(c_733638,quote_Cyc_91compilation_91environment,&c_733639);
+alloca_pair(c_733638,quote_Cyc_91compilation_91environment,c_733639);
 
-make_pair(c_733637,quote_Cyc_91installation_91dir,&c_733638);
+alloca_pair(c_733637,quote_Cyc_91installation_91dir,c_733638);
 
-make_pair(c_733636,quote_open_91output_91file,&c_733637);
+alloca_pair(c_733636,quote_open_91output_91file,c_733637);
 
-make_pair(c_733635,quote_open_91input_91file,&c_733636);
+alloca_pair(c_733635,quote_open_91input_91file,c_733636);
 
-make_pair(c_733634,quote_Cyc_91stderr,&c_733635);
+alloca_pair(c_733634,quote_Cyc_91stderr,c_733635);
 
-make_pair(c_733633,quote_Cyc_91stdin,&c_733634);
+alloca_pair(c_733633,quote_Cyc_91stdin,c_733634);
 
-make_pair(c_733632,quote_Cyc_91stdout,&c_733633);
-return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, &c_733632));
+alloca_pair(c_733632,quote_Cyc_91stdout,c_733633);
+return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, c_733632));
 } else { 
   return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 
@@ -3606,176 +3606,176 @@ return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, &c_733632));
 
 } else { 
   if( (boolean_f != memberp(data, exp_73676_73799, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
-    make_pair(c_733751,quote_cell,NULL);
-  make_pair(c_733750,quote_cons,&c_733751);
-  make_pair(c_733749,quote_Cyc_91fast_91list_914,&c_733750);
-  make_pair(c_733748,quote_Cyc_91fast_91list_913,&c_733749);
-  make_pair(c_733747,quote_Cyc_91fast_91list_912,&c_733748);
-  make_pair(c_733746,quote_Cyc_91fast_91list_911,&c_733747);
-  make_pair(c_733745,quote_Cyc_91peek_91char,&c_733746);
-  make_pair(c_733744,quote_Cyc_91read_91char,&c_733745);
-  make_pair(c_733743,quote_Cyc_91read_91line,&c_733744);
-  make_pair(c_733742,quote_command_91line_91arguments,&c_733743);
-  make_pair(c_733741,quote__121_123,&c_733742);
-  make_pair(c_733740,quote__125_123,&c_733741);
-  make_pair(c_733739,quote__121,&c_733740);
-  make_pair(c_733738,quote__125,&c_733739);
-  make_pair(c_733737,quote__123,&c_733738);
-  make_pair(c_733736,quote_Cyc_91fast_91apply,&c_733737);
-  make_pair(c_733735,quote_apply,&c_733736);
-  make_pair(c_733734,quote__95,&c_733735);
-  make_pair(c_733733,quote__85,&c_733734);
-  make_pair(c_733732,quote__91,&c_733733);
-  make_pair(c_733731,quote__87,&c_733732);
-  make_pair(c_733730,quote_Cyc_91fast_91char_91lte,&c_733731);
-  make_pair(c_733729,quote_Cyc_91fast_91char_91gte,&c_733730);
-  make_pair(c_733728,quote_Cyc_91fast_91char_91lt,&c_733729);
-  make_pair(c_733727,quote_Cyc_91fast_91char_91gt,&c_733728);
-  make_pair(c_733726,quote_Cyc_91fast_91char_91eq,&c_733727);
-  make_pair(c_733725,quote_Cyc_91fast_91lte,&c_733726);
-  make_pair(c_733724,quote_Cyc_91fast_91gte,&c_733725);
-  make_pair(c_733723,quote_Cyc_91fast_91lt,&c_733724);
-  make_pair(c_733722,quote_Cyc_91fast_91gt,&c_733723);
-  make_pair(c_733721,quote_Cyc_91fast_91eq,&c_733722);
-  make_pair(c_733720,quote_Cyc_91fast_91div,&c_733721);
-  make_pair(c_733719,quote_Cyc_91fast_91mul,&c_733720);
-  make_pair(c_733718,quote_Cyc_91fast_91sub,&c_733719);
-  make_pair(c_733717,quote_Cyc_91fast_91plus,&c_733718);
-  make_pair(c_733716,quote_substring,&c_733717);
-  make_pair(c_733715,quote_number_91_125string,&c_733716);
-  make_pair(c_733714,quote_symbol_91_125string,&c_733715);
-  make_pair(c_733713,quote_list_91_125vector,&c_733714);
-  make_pair(c_733712,quote_make_91vector,&c_733713);
-  make_pair(c_733711,quote_Cyc_91string_91_125utf8,&c_733712);
-  make_pair(c_733710,quote_Cyc_91utf8_91_125string,&c_733711);
-  make_pair(c_733709,quote_Cyc_91bytevector_91copy,&c_733710);
-  make_pair(c_733708,quote_bytevector_91append,&c_733709);
-  make_pair(c_733707,quote_bytevector,&c_733708);
-  make_pair(c_733706,quote_make_91bytevector,&c_733707);
-  make_pair(c_733705,quote_list_91_125string,&c_733706);
-  make_pair(c_733704,quote_string_91append,&c_733705);
-  make_pair(c_733703,quote_string_91_125number,&c_733704);
-  make_pair(c_733702,quote_Cyc_91compilation_91environment,&c_733703);
-  make_pair(c_733701,quote_Cyc_91installation_91dir,&c_733702);
-  make_pair(c_733700,quote_open_91output_91file,&c_733701);
-  make_pair(c_733699,quote_open_91input_91file,&c_733700);
-  make_pair(c_733698,quote_Cyc_91stderr,&c_733699);
-  make_pair(c_733697,quote_Cyc_91stdin,&c_733698);
-  make_pair(c_733696,quote_Cyc_91stdout,&c_733697);
-if( (boolean_f != memberp(data, exp_73676_73799, &c_733696)) ){ 
+    alloca_pair(c_733751,quote_cell,NULL);
+  alloca_pair(c_733750,quote_cons,c_733751);
+  alloca_pair(c_733749,quote_Cyc_91fast_91list_914,c_733750);
+  alloca_pair(c_733748,quote_Cyc_91fast_91list_913,c_733749);
+  alloca_pair(c_733747,quote_Cyc_91fast_91list_912,c_733748);
+  alloca_pair(c_733746,quote_Cyc_91fast_91list_911,c_733747);
+  alloca_pair(c_733745,quote_Cyc_91peek_91char,c_733746);
+  alloca_pair(c_733744,quote_Cyc_91read_91char,c_733745);
+  alloca_pair(c_733743,quote_Cyc_91read_91line,c_733744);
+  alloca_pair(c_733742,quote_command_91line_91arguments,c_733743);
+  alloca_pair(c_733741,quote__121_123,c_733742);
+  alloca_pair(c_733740,quote__125_123,c_733741);
+  alloca_pair(c_733739,quote__121,c_733740);
+  alloca_pair(c_733738,quote__125,c_733739);
+  alloca_pair(c_733737,quote__123,c_733738);
+  alloca_pair(c_733736,quote_Cyc_91fast_91apply,c_733737);
+  alloca_pair(c_733735,quote_apply,c_733736);
+  alloca_pair(c_733734,quote__95,c_733735);
+  alloca_pair(c_733733,quote__85,c_733734);
+  alloca_pair(c_733732,quote__91,c_733733);
+  alloca_pair(c_733731,quote__87,c_733732);
+  alloca_pair(c_733730,quote_Cyc_91fast_91char_91lte,c_733731);
+  alloca_pair(c_733729,quote_Cyc_91fast_91char_91gte,c_733730);
+  alloca_pair(c_733728,quote_Cyc_91fast_91char_91lt,c_733729);
+  alloca_pair(c_733727,quote_Cyc_91fast_91char_91gt,c_733728);
+  alloca_pair(c_733726,quote_Cyc_91fast_91char_91eq,c_733727);
+  alloca_pair(c_733725,quote_Cyc_91fast_91lte,c_733726);
+  alloca_pair(c_733724,quote_Cyc_91fast_91gte,c_733725);
+  alloca_pair(c_733723,quote_Cyc_91fast_91lt,c_733724);
+  alloca_pair(c_733722,quote_Cyc_91fast_91gt,c_733723);
+  alloca_pair(c_733721,quote_Cyc_91fast_91eq,c_733722);
+  alloca_pair(c_733720,quote_Cyc_91fast_91div,c_733721);
+  alloca_pair(c_733719,quote_Cyc_91fast_91mul,c_733720);
+  alloca_pair(c_733718,quote_Cyc_91fast_91sub,c_733719);
+  alloca_pair(c_733717,quote_Cyc_91fast_91plus,c_733718);
+  alloca_pair(c_733716,quote_substring,c_733717);
+  alloca_pair(c_733715,quote_number_91_125string,c_733716);
+  alloca_pair(c_733714,quote_symbol_91_125string,c_733715);
+  alloca_pair(c_733713,quote_list_91_125vector,c_733714);
+  alloca_pair(c_733712,quote_make_91vector,c_733713);
+  alloca_pair(c_733711,quote_Cyc_91string_91_125utf8,c_733712);
+  alloca_pair(c_733710,quote_Cyc_91utf8_91_125string,c_733711);
+  alloca_pair(c_733709,quote_Cyc_91bytevector_91copy,c_733710);
+  alloca_pair(c_733708,quote_bytevector_91append,c_733709);
+  alloca_pair(c_733707,quote_bytevector,c_733708);
+  alloca_pair(c_733706,quote_make_91bytevector,c_733707);
+  alloca_pair(c_733705,quote_list_91_125string,c_733706);
+  alloca_pair(c_733704,quote_string_91append,c_733705);
+  alloca_pair(c_733703,quote_string_91_125number,c_733704);
+  alloca_pair(c_733702,quote_Cyc_91compilation_91environment,c_733703);
+  alloca_pair(c_733701,quote_Cyc_91installation_91dir,c_733702);
+  alloca_pair(c_733700,quote_open_91output_91file,c_733701);
+  alloca_pair(c_733699,quote_open_91input_91file,c_733700);
+  alloca_pair(c_733698,quote_Cyc_91stderr,c_733699);
+  alloca_pair(c_733697,quote_Cyc_91stdin,c_733698);
+  alloca_pair(c_733696,quote_Cyc_91stdout,c_733697);
+if( (boolean_f != memberp(data, exp_73676_73799, c_733696)) ){ 
   
-make_pair(c_733810,quote_cell,NULL);
+alloca_pair(c_733810,quote_cell,NULL);
 
-make_pair(c_733809,quote_cons,&c_733810);
+alloca_pair(c_733809,quote_cons,c_733810);
 
-make_pair(c_733808,quote_Cyc_91fast_91list_914,&c_733809);
+alloca_pair(c_733808,quote_Cyc_91fast_91list_914,c_733809);
 
-make_pair(c_733807,quote_Cyc_91fast_91list_913,&c_733808);
+alloca_pair(c_733807,quote_Cyc_91fast_91list_913,c_733808);
 
-make_pair(c_733806,quote_Cyc_91fast_91list_912,&c_733807);
+alloca_pair(c_733806,quote_Cyc_91fast_91list_912,c_733807);
 
-make_pair(c_733805,quote_Cyc_91fast_91list_911,&c_733806);
+alloca_pair(c_733805,quote_Cyc_91fast_91list_911,c_733806);
 
-make_pair(c_733804,quote_Cyc_91peek_91char,&c_733805);
+alloca_pair(c_733804,quote_Cyc_91peek_91char,c_733805);
 
-make_pair(c_733803,quote_Cyc_91read_91char,&c_733804);
+alloca_pair(c_733803,quote_Cyc_91read_91char,c_733804);
 
-make_pair(c_733802,quote_Cyc_91read_91line,&c_733803);
+alloca_pair(c_733802,quote_Cyc_91read_91line,c_733803);
 
-make_pair(c_733801,quote_command_91line_91arguments,&c_733802);
+alloca_pair(c_733801,quote_command_91line_91arguments,c_733802);
 
-make_pair(c_733800,quote__121_123,&c_733801);
+alloca_pair(c_733800,quote__121_123,c_733801);
 
-make_pair(c_733799,quote__125_123,&c_733800);
+alloca_pair(c_733799,quote__125_123,c_733800);
 
-make_pair(c_733798,quote__121,&c_733799);
+alloca_pair(c_733798,quote__121,c_733799);
 
-make_pair(c_733797,quote__125,&c_733798);
+alloca_pair(c_733797,quote__125,c_733798);
 
-make_pair(c_733796,quote__123,&c_733797);
+alloca_pair(c_733796,quote__123,c_733797);
 
-make_pair(c_733795,quote_Cyc_91fast_91apply,&c_733796);
+alloca_pair(c_733795,quote_Cyc_91fast_91apply,c_733796);
 
-make_pair(c_733794,quote_apply,&c_733795);
+alloca_pair(c_733794,quote_apply,c_733795);
 
-make_pair(c_733793,quote__95,&c_733794);
+alloca_pair(c_733793,quote__95,c_733794);
 
-make_pair(c_733792,quote__85,&c_733793);
+alloca_pair(c_733792,quote__85,c_733793);
 
-make_pair(c_733791,quote__91,&c_733792);
+alloca_pair(c_733791,quote__91,c_733792);
 
-make_pair(c_733790,quote__87,&c_733791);
+alloca_pair(c_733790,quote__87,c_733791);
 
-make_pair(c_733789,quote_Cyc_91fast_91char_91lte,&c_733790);
+alloca_pair(c_733789,quote_Cyc_91fast_91char_91lte,c_733790);
 
-make_pair(c_733788,quote_Cyc_91fast_91char_91gte,&c_733789);
+alloca_pair(c_733788,quote_Cyc_91fast_91char_91gte,c_733789);
 
-make_pair(c_733787,quote_Cyc_91fast_91char_91lt,&c_733788);
+alloca_pair(c_733787,quote_Cyc_91fast_91char_91lt,c_733788);
 
-make_pair(c_733786,quote_Cyc_91fast_91char_91gt,&c_733787);
+alloca_pair(c_733786,quote_Cyc_91fast_91char_91gt,c_733787);
 
-make_pair(c_733785,quote_Cyc_91fast_91char_91eq,&c_733786);
+alloca_pair(c_733785,quote_Cyc_91fast_91char_91eq,c_733786);
 
-make_pair(c_733784,quote_Cyc_91fast_91lte,&c_733785);
+alloca_pair(c_733784,quote_Cyc_91fast_91lte,c_733785);
 
-make_pair(c_733783,quote_Cyc_91fast_91gte,&c_733784);
+alloca_pair(c_733783,quote_Cyc_91fast_91gte,c_733784);
 
-make_pair(c_733782,quote_Cyc_91fast_91lt,&c_733783);
+alloca_pair(c_733782,quote_Cyc_91fast_91lt,c_733783);
 
-make_pair(c_733781,quote_Cyc_91fast_91gt,&c_733782);
+alloca_pair(c_733781,quote_Cyc_91fast_91gt,c_733782);
 
-make_pair(c_733780,quote_Cyc_91fast_91eq,&c_733781);
+alloca_pair(c_733780,quote_Cyc_91fast_91eq,c_733781);
 
-make_pair(c_733779,quote_Cyc_91fast_91div,&c_733780);
+alloca_pair(c_733779,quote_Cyc_91fast_91div,c_733780);
 
-make_pair(c_733778,quote_Cyc_91fast_91mul,&c_733779);
+alloca_pair(c_733778,quote_Cyc_91fast_91mul,c_733779);
 
-make_pair(c_733777,quote_Cyc_91fast_91sub,&c_733778);
+alloca_pair(c_733777,quote_Cyc_91fast_91sub,c_733778);
 
-make_pair(c_733776,quote_Cyc_91fast_91plus,&c_733777);
+alloca_pair(c_733776,quote_Cyc_91fast_91plus,c_733777);
 
-make_pair(c_733775,quote_substring,&c_733776);
+alloca_pair(c_733775,quote_substring,c_733776);
 
-make_pair(c_733774,quote_number_91_125string,&c_733775);
+alloca_pair(c_733774,quote_number_91_125string,c_733775);
 
-make_pair(c_733773,quote_symbol_91_125string,&c_733774);
+alloca_pair(c_733773,quote_symbol_91_125string,c_733774);
 
-make_pair(c_733772,quote_list_91_125vector,&c_733773);
+alloca_pair(c_733772,quote_list_91_125vector,c_733773);
 
-make_pair(c_733771,quote_make_91vector,&c_733772);
+alloca_pair(c_733771,quote_make_91vector,c_733772);
 
-make_pair(c_733770,quote_Cyc_91string_91_125utf8,&c_733771);
+alloca_pair(c_733770,quote_Cyc_91string_91_125utf8,c_733771);
 
-make_pair(c_733769,quote_Cyc_91utf8_91_125string,&c_733770);
+alloca_pair(c_733769,quote_Cyc_91utf8_91_125string,c_733770);
 
-make_pair(c_733768,quote_Cyc_91bytevector_91copy,&c_733769);
+alloca_pair(c_733768,quote_Cyc_91bytevector_91copy,c_733769);
 
-make_pair(c_733767,quote_bytevector_91append,&c_733768);
+alloca_pair(c_733767,quote_bytevector_91append,c_733768);
 
-make_pair(c_733766,quote_bytevector,&c_733767);
+alloca_pair(c_733766,quote_bytevector,c_733767);
 
-make_pair(c_733765,quote_make_91bytevector,&c_733766);
+alloca_pair(c_733765,quote_make_91bytevector,c_733766);
 
-make_pair(c_733764,quote_list_91_125string,&c_733765);
+alloca_pair(c_733764,quote_list_91_125string,c_733765);
 
-make_pair(c_733763,quote_string_91append,&c_733764);
+alloca_pair(c_733763,quote_string_91append,c_733764);
 
-make_pair(c_733762,quote_string_91_125number,&c_733763);
+alloca_pair(c_733762,quote_string_91_125number,c_733763);
 
-make_pair(c_733761,quote_Cyc_91compilation_91environment,&c_733762);
+alloca_pair(c_733761,quote_Cyc_91compilation_91environment,c_733762);
 
-make_pair(c_733760,quote_Cyc_91installation_91dir,&c_733761);
+alloca_pair(c_733760,quote_Cyc_91installation_91dir,c_733761);
 
-make_pair(c_733759,quote_open_91output_91file,&c_733760);
+alloca_pair(c_733759,quote_open_91output_91file,c_733760);
 
-make_pair(c_733758,quote_open_91input_91file,&c_733759);
+alloca_pair(c_733758,quote_open_91input_91file,c_733759);
 
-make_pair(c_733757,quote_Cyc_91stderr,&c_733758);
+alloca_pair(c_733757,quote_Cyc_91stderr,c_733758);
 
-make_pair(c_733756,quote_Cyc_91stdin,&c_733757);
+alloca_pair(c_733756,quote_Cyc_91stdin,c_733757);
 
-make_pair(c_733755,quote_Cyc_91stdout,&c_733756);
-return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, &c_733755));
+alloca_pair(c_733755,quote_Cyc_91stdout,c_733756);
+return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, c_733755));
 } else { 
   return_closcall1(data,  k_731307,  memberp(data, exp_73676_73799, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 
@@ -4133,347 +4133,347 @@ return_closcall1(data,  k_731191,  &c_733358);
 
 static void __lambda_178(void *data, int argc, closure _,object k_731186, object p_73499_73795) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/data-arg?");
-  make_pair(c_733218,quote_set_91cell_67,NULL);
-  make_pair(c_733217,quote_procedure_127,&c_733218);
-  make_pair(c_733216,quote_set_91cdr_67,&c_733217);
-  make_pair(c_733215,quote_set_91car_67,&c_733216);
-  make_pair(c_733214,quote_length,&c_733215);
-  make_pair(c_733213,quote_memv,&c_733214);
-  make_pair(c_733212,quote_memq,&c_733213);
-  make_pair(c_733211,quote_assv,&c_733212);
-  make_pair(c_733210,quote_assq,&c_733211);
-  make_pair(c_733209,quote_command_91line_91arguments,&c_733210);
-  make_pair(c_733208,quote_Cyc_91compilation_91environment,&c_733209);
-  make_pair(c_733207,quote_Cyc_91installation_91dir,&c_733208);
-  make_pair(c_733206,quote_substring,&c_733207);
-  make_pair(c_733205,quote_string_91set_67,&c_733206);
-  make_pair(c_733204,quote_string_91ref,&c_733205);
-  make_pair(c_733203,quote_string_91length,&c_733204);
-  make_pair(c_733202,quote_number_91_125string,&c_733203);
-  make_pair(c_733201,quote_symbol_91_125string,&c_733202);
-  make_pair(c_733200,quote_string_91_125symbol,&c_733201);
-  make_pair(c_733199,quote_string_91cmp,&c_733200);
-  make_pair(c_733198,quote_string_91append,&c_733199);
-  make_pair(c_733197,quote_vector_91set_67,&c_733198);
-  make_pair(c_733196,quote_vector_91ref,&c_733197);
-  make_pair(c_733195,quote_vector_91length,&c_733196);
-  make_pair(c_733194,quote_list_91_125vector,&c_733195);
-  make_pair(c_733193,quote_make_91vector,&c_733194);
-  make_pair(c_733192,quote_bytevector_91u8_91set_67,&c_733193);
-  make_pair(c_733191,quote_bytevector_91u8_91ref,&c_733192);
-  make_pair(c_733190,quote_bytevector,&c_733191);
-  make_pair(c_733189,quote_Cyc_91string_91_125utf8,&c_733190);
-  make_pair(c_733188,quote_Cyc_91utf8_91_125string,&c_733189);
-  make_pair(c_733187,quote_Cyc_91bytevector_91copy,&c_733188);
-  make_pair(c_733186,quote_bytevector_91append,&c_733187);
-  make_pair(c_733185,quote_bytevector_91length,&c_733186);
-  make_pair(c_733184,quote_make_91bytevector,&c_733185);
-  make_pair(c_733183,quote_list_91_125string,&c_733184);
-  make_pair(c_733182,quote_string_91_125number,&c_733183);
-  make_pair(c_733181,quote_integer_91_125char,&c_733182);
-  make_pair(c_733180,quote_Cyc_91write_91char,&c_733181);
-  make_pair(c_733179,quote_Cyc_91read_91line,&c_733180);
-  make_pair(c_733178,quote_Cyc_91peek_91char,&c_733179);
-  make_pair(c_733177,quote_Cyc_91read_91char,&c_733178);
-  make_pair(c_733176,quote_delete_91file,&c_733177);
-  make_pair(c_733175,quote_file_91exists_127,&c_733176);
-  make_pair(c_733174,quote_Cyc_91write,&c_733175);
-  make_pair(c_733173,quote_Cyc_91display,&c_733174);
-  make_pair(c_733172,quote_Cyc_91flush_91output_91port,&c_733173);
-  make_pair(c_733171,quote_close_91output_91port,&c_733172);
-  make_pair(c_733170,quote_close_91input_91port,&c_733171);
-  make_pair(c_733169,quote_close_91port,&c_733170);
-  make_pair(c_733168,quote_open_91output_91file,&c_733169);
-  make_pair(c_733167,quote_open_91input_91file,&c_733168);
-  make_pair(c_733166,quote_Cyc_91end_91thread_67,&c_733167);
-  make_pair(c_733165,quote_Cyc_91current_91exception_91handler,&c_733166);
-  make_pair(c_733164,quote_Cyc_91default_91exception_91handler,&c_733165);
-  make_pair(c_733163,quote_cddddr,&c_733164);
-  make_pair(c_733162,quote_cdddar,&c_733163);
-  make_pair(c_733161,quote_cddadr,&c_733162);
-  make_pair(c_733160,quote_cddaar,&c_733161);
-  make_pair(c_733159,quote_cdaddr,&c_733160);
-  make_pair(c_733158,quote_cdadar,&c_733159);
-  make_pair(c_733157,quote_cdaadr,&c_733158);
-  make_pair(c_733156,quote_cdaaar,&c_733157);
-  make_pair(c_733155,quote_cadddr,&c_733156);
-  make_pair(c_733154,quote_caddar,&c_733155);
-  make_pair(c_733153,quote_cadadr,&c_733154);
-  make_pair(c_733152,quote_cadaar,&c_733153);
-  make_pair(c_733151,quote_caaddr,&c_733152);
-  make_pair(c_733150,quote_caadar,&c_733151);
-  make_pair(c_733149,quote_caaadr,&c_733150);
-  make_pair(c_733148,quote_caaaar,&c_733149);
-  make_pair(c_733147,quote_cdddr,&c_733148);
-  make_pair(c_733146,quote_cddar,&c_733147);
-  make_pair(c_733145,quote_cdadr,&c_733146);
-  make_pair(c_733144,quote_cdaar,&c_733145);
-  make_pair(c_733143,quote_caddr,&c_733144);
-  make_pair(c_733142,quote_cadar,&c_733143);
-  make_pair(c_733141,quote_caadr,&c_733142);
-  make_pair(c_733140,quote_caaar,&c_733141);
-  make_pair(c_733139,quote_cddr,&c_733140);
-  make_pair(c_733138,quote_cdar,&c_733139);
-  make_pair(c_733137,quote_cadr,&c_733138);
-  make_pair(c_733136,quote_caar,&c_733137);
-  make_pair(c_733135,quote_cdr,&c_733136);
-  make_pair(c_733134,quote_car,&c_733135);
-  make_pair(c_733133,quote_apply,&c_733134);
-  make_pair(c_733132,quote_Cyc_91fast_91apply,&c_733133);
-  make_pair(c_733131,quote_Cyc_91fast_91assoc,&c_733132);
-  make_pair(c_733130,quote_Cyc_91fast_91member,&c_733131);
-  make_pair(c_733129,quote__121_123,&c_733130);
-  make_pair(c_733128,quote__125_123,&c_733129);
-  make_pair(c_733127,quote__121,&c_733128);
-  make_pair(c_733126,quote__125,&c_733127);
-  make_pair(c_733125,quote__123,&c_733126);
-  make_pair(c_733124,quote_Cyc_91fast_91char_91lte,&c_733125);
-  make_pair(c_733123,quote_Cyc_91fast_91char_91gte,&c_733124);
-  make_pair(c_733122,quote_Cyc_91fast_91char_91lt,&c_733123);
-  make_pair(c_733121,quote_Cyc_91fast_91char_91gt,&c_733122);
-  make_pair(c_733120,quote_Cyc_91fast_91char_91eq,&c_733121);
-  make_pair(c_733119,quote_Cyc_91fast_91lte,&c_733120);
-  make_pair(c_733118,quote_Cyc_91fast_91gte,&c_733119);
-  make_pair(c_733117,quote_Cyc_91fast_91lt,&c_733118);
-  make_pair(c_733116,quote_Cyc_91fast_91gt,&c_733117);
-  make_pair(c_733115,quote_Cyc_91fast_91eq,&c_733116);
-  make_pair(c_733114,quote__95,&c_733115);
-  make_pair(c_733113,quote__85,&c_733114);
-  make_pair(c_733112,quote__91,&c_733113);
-  make_pair(c_733111,quote__87,&c_733112);
-  make_pair(c_733110,quote_Cyc_91fast_91div,&c_733111);
-  make_pair(c_733109,quote_Cyc_91fast_91mul,&c_733110);
-  make_pair(c_733108,quote_Cyc_91fast_91sub,&c_733109);
-  make_pair(c_733107,quote_Cyc_91fast_91plus,&c_733108);
-  make_pair(c_733106,quote_Cyc_91list,&c_733107);
-if( (boolean_f != memberp(data, p_73499_73795, &c_733106)) ){ 
+  alloca_pair(c_733218,quote_set_91cell_67,NULL);
+  alloca_pair(c_733217,quote_procedure_127,c_733218);
+  alloca_pair(c_733216,quote_set_91cdr_67,c_733217);
+  alloca_pair(c_733215,quote_set_91car_67,c_733216);
+  alloca_pair(c_733214,quote_length,c_733215);
+  alloca_pair(c_733213,quote_memv,c_733214);
+  alloca_pair(c_733212,quote_memq,c_733213);
+  alloca_pair(c_733211,quote_assv,c_733212);
+  alloca_pair(c_733210,quote_assq,c_733211);
+  alloca_pair(c_733209,quote_command_91line_91arguments,c_733210);
+  alloca_pair(c_733208,quote_Cyc_91compilation_91environment,c_733209);
+  alloca_pair(c_733207,quote_Cyc_91installation_91dir,c_733208);
+  alloca_pair(c_733206,quote_substring,c_733207);
+  alloca_pair(c_733205,quote_string_91set_67,c_733206);
+  alloca_pair(c_733204,quote_string_91ref,c_733205);
+  alloca_pair(c_733203,quote_string_91length,c_733204);
+  alloca_pair(c_733202,quote_number_91_125string,c_733203);
+  alloca_pair(c_733201,quote_symbol_91_125string,c_733202);
+  alloca_pair(c_733200,quote_string_91_125symbol,c_733201);
+  alloca_pair(c_733199,quote_string_91cmp,c_733200);
+  alloca_pair(c_733198,quote_string_91append,c_733199);
+  alloca_pair(c_733197,quote_vector_91set_67,c_733198);
+  alloca_pair(c_733196,quote_vector_91ref,c_733197);
+  alloca_pair(c_733195,quote_vector_91length,c_733196);
+  alloca_pair(c_733194,quote_list_91_125vector,c_733195);
+  alloca_pair(c_733193,quote_make_91vector,c_733194);
+  alloca_pair(c_733192,quote_bytevector_91u8_91set_67,c_733193);
+  alloca_pair(c_733191,quote_bytevector_91u8_91ref,c_733192);
+  alloca_pair(c_733190,quote_bytevector,c_733191);
+  alloca_pair(c_733189,quote_Cyc_91string_91_125utf8,c_733190);
+  alloca_pair(c_733188,quote_Cyc_91utf8_91_125string,c_733189);
+  alloca_pair(c_733187,quote_Cyc_91bytevector_91copy,c_733188);
+  alloca_pair(c_733186,quote_bytevector_91append,c_733187);
+  alloca_pair(c_733185,quote_bytevector_91length,c_733186);
+  alloca_pair(c_733184,quote_make_91bytevector,c_733185);
+  alloca_pair(c_733183,quote_list_91_125string,c_733184);
+  alloca_pair(c_733182,quote_string_91_125number,c_733183);
+  alloca_pair(c_733181,quote_integer_91_125char,c_733182);
+  alloca_pair(c_733180,quote_Cyc_91write_91char,c_733181);
+  alloca_pair(c_733179,quote_Cyc_91read_91line,c_733180);
+  alloca_pair(c_733178,quote_Cyc_91peek_91char,c_733179);
+  alloca_pair(c_733177,quote_Cyc_91read_91char,c_733178);
+  alloca_pair(c_733176,quote_delete_91file,c_733177);
+  alloca_pair(c_733175,quote_file_91exists_127,c_733176);
+  alloca_pair(c_733174,quote_Cyc_91write,c_733175);
+  alloca_pair(c_733173,quote_Cyc_91display,c_733174);
+  alloca_pair(c_733172,quote_Cyc_91flush_91output_91port,c_733173);
+  alloca_pair(c_733171,quote_close_91output_91port,c_733172);
+  alloca_pair(c_733170,quote_close_91input_91port,c_733171);
+  alloca_pair(c_733169,quote_close_91port,c_733170);
+  alloca_pair(c_733168,quote_open_91output_91file,c_733169);
+  alloca_pair(c_733167,quote_open_91input_91file,c_733168);
+  alloca_pair(c_733166,quote_Cyc_91end_91thread_67,c_733167);
+  alloca_pair(c_733165,quote_Cyc_91current_91exception_91handler,c_733166);
+  alloca_pair(c_733164,quote_Cyc_91default_91exception_91handler,c_733165);
+  alloca_pair(c_733163,quote_cddddr,c_733164);
+  alloca_pair(c_733162,quote_cdddar,c_733163);
+  alloca_pair(c_733161,quote_cddadr,c_733162);
+  alloca_pair(c_733160,quote_cddaar,c_733161);
+  alloca_pair(c_733159,quote_cdaddr,c_733160);
+  alloca_pair(c_733158,quote_cdadar,c_733159);
+  alloca_pair(c_733157,quote_cdaadr,c_733158);
+  alloca_pair(c_733156,quote_cdaaar,c_733157);
+  alloca_pair(c_733155,quote_cadddr,c_733156);
+  alloca_pair(c_733154,quote_caddar,c_733155);
+  alloca_pair(c_733153,quote_cadadr,c_733154);
+  alloca_pair(c_733152,quote_cadaar,c_733153);
+  alloca_pair(c_733151,quote_caaddr,c_733152);
+  alloca_pair(c_733150,quote_caadar,c_733151);
+  alloca_pair(c_733149,quote_caaadr,c_733150);
+  alloca_pair(c_733148,quote_caaaar,c_733149);
+  alloca_pair(c_733147,quote_cdddr,c_733148);
+  alloca_pair(c_733146,quote_cddar,c_733147);
+  alloca_pair(c_733145,quote_cdadr,c_733146);
+  alloca_pair(c_733144,quote_cdaar,c_733145);
+  alloca_pair(c_733143,quote_caddr,c_733144);
+  alloca_pair(c_733142,quote_cadar,c_733143);
+  alloca_pair(c_733141,quote_caadr,c_733142);
+  alloca_pair(c_733140,quote_caaar,c_733141);
+  alloca_pair(c_733139,quote_cddr,c_733140);
+  alloca_pair(c_733138,quote_cdar,c_733139);
+  alloca_pair(c_733137,quote_cadr,c_733138);
+  alloca_pair(c_733136,quote_caar,c_733137);
+  alloca_pair(c_733135,quote_cdr,c_733136);
+  alloca_pair(c_733134,quote_car,c_733135);
+  alloca_pair(c_733133,quote_apply,c_733134);
+  alloca_pair(c_733132,quote_Cyc_91fast_91apply,c_733133);
+  alloca_pair(c_733131,quote_Cyc_91fast_91assoc,c_733132);
+  alloca_pair(c_733130,quote_Cyc_91fast_91member,c_733131);
+  alloca_pair(c_733129,quote__121_123,c_733130);
+  alloca_pair(c_733128,quote__125_123,c_733129);
+  alloca_pair(c_733127,quote__121,c_733128);
+  alloca_pair(c_733126,quote__125,c_733127);
+  alloca_pair(c_733125,quote__123,c_733126);
+  alloca_pair(c_733124,quote_Cyc_91fast_91char_91lte,c_733125);
+  alloca_pair(c_733123,quote_Cyc_91fast_91char_91gte,c_733124);
+  alloca_pair(c_733122,quote_Cyc_91fast_91char_91lt,c_733123);
+  alloca_pair(c_733121,quote_Cyc_91fast_91char_91gt,c_733122);
+  alloca_pair(c_733120,quote_Cyc_91fast_91char_91eq,c_733121);
+  alloca_pair(c_733119,quote_Cyc_91fast_91lte,c_733120);
+  alloca_pair(c_733118,quote_Cyc_91fast_91gte,c_733119);
+  alloca_pair(c_733117,quote_Cyc_91fast_91lt,c_733118);
+  alloca_pair(c_733116,quote_Cyc_91fast_91gt,c_733117);
+  alloca_pair(c_733115,quote_Cyc_91fast_91eq,c_733116);
+  alloca_pair(c_733114,quote__95,c_733115);
+  alloca_pair(c_733113,quote__85,c_733114);
+  alloca_pair(c_733112,quote__91,c_733113);
+  alloca_pair(c_733111,quote__87,c_733112);
+  alloca_pair(c_733110,quote_Cyc_91fast_91div,c_733111);
+  alloca_pair(c_733109,quote_Cyc_91fast_91mul,c_733110);
+  alloca_pair(c_733108,quote_Cyc_91fast_91sub,c_733109);
+  alloca_pair(c_733107,quote_Cyc_91fast_91plus,c_733108);
+  alloca_pair(c_733106,quote_Cyc_91list,c_733107);
+if( (boolean_f != memberp(data, p_73499_73795, c_733106)) ){ 
   
-make_pair(c_733334,quote_set_91cell_67,NULL);
+alloca_pair(c_733334,quote_set_91cell_67,NULL);
 
-make_pair(c_733333,quote_procedure_127,&c_733334);
+alloca_pair(c_733333,quote_procedure_127,c_733334);
 
-make_pair(c_733332,quote_set_91cdr_67,&c_733333);
+alloca_pair(c_733332,quote_set_91cdr_67,c_733333);
 
-make_pair(c_733331,quote_set_91car_67,&c_733332);
+alloca_pair(c_733331,quote_set_91car_67,c_733332);
 
-make_pair(c_733330,quote_length,&c_733331);
+alloca_pair(c_733330,quote_length,c_733331);
 
-make_pair(c_733329,quote_memv,&c_733330);
+alloca_pair(c_733329,quote_memv,c_733330);
 
-make_pair(c_733328,quote_memq,&c_733329);
+alloca_pair(c_733328,quote_memq,c_733329);
 
-make_pair(c_733327,quote_assv,&c_733328);
+alloca_pair(c_733327,quote_assv,c_733328);
 
-make_pair(c_733326,quote_assq,&c_733327);
+alloca_pair(c_733326,quote_assq,c_733327);
 
-make_pair(c_733325,quote_command_91line_91arguments,&c_733326);
+alloca_pair(c_733325,quote_command_91line_91arguments,c_733326);
 
-make_pair(c_733324,quote_Cyc_91compilation_91environment,&c_733325);
+alloca_pair(c_733324,quote_Cyc_91compilation_91environment,c_733325);
 
-make_pair(c_733323,quote_Cyc_91installation_91dir,&c_733324);
+alloca_pair(c_733323,quote_Cyc_91installation_91dir,c_733324);
 
-make_pair(c_733322,quote_substring,&c_733323);
+alloca_pair(c_733322,quote_substring,c_733323);
 
-make_pair(c_733321,quote_string_91set_67,&c_733322);
+alloca_pair(c_733321,quote_string_91set_67,c_733322);
 
-make_pair(c_733320,quote_string_91ref,&c_733321);
+alloca_pair(c_733320,quote_string_91ref,c_733321);
 
-make_pair(c_733319,quote_string_91length,&c_733320);
+alloca_pair(c_733319,quote_string_91length,c_733320);
 
-make_pair(c_733318,quote_number_91_125string,&c_733319);
+alloca_pair(c_733318,quote_number_91_125string,c_733319);
 
-make_pair(c_733317,quote_symbol_91_125string,&c_733318);
+alloca_pair(c_733317,quote_symbol_91_125string,c_733318);
 
-make_pair(c_733316,quote_string_91_125symbol,&c_733317);
+alloca_pair(c_733316,quote_string_91_125symbol,c_733317);
 
-make_pair(c_733315,quote_string_91cmp,&c_733316);
+alloca_pair(c_733315,quote_string_91cmp,c_733316);
 
-make_pair(c_733314,quote_string_91append,&c_733315);
+alloca_pair(c_733314,quote_string_91append,c_733315);
 
-make_pair(c_733313,quote_vector_91set_67,&c_733314);
+alloca_pair(c_733313,quote_vector_91set_67,c_733314);
 
-make_pair(c_733312,quote_vector_91ref,&c_733313);
+alloca_pair(c_733312,quote_vector_91ref,c_733313);
 
-make_pair(c_733311,quote_vector_91length,&c_733312);
+alloca_pair(c_733311,quote_vector_91length,c_733312);
 
-make_pair(c_733310,quote_list_91_125vector,&c_733311);
+alloca_pair(c_733310,quote_list_91_125vector,c_733311);
 
-make_pair(c_733309,quote_make_91vector,&c_733310);
+alloca_pair(c_733309,quote_make_91vector,c_733310);
 
-make_pair(c_733308,quote_bytevector_91u8_91set_67,&c_733309);
+alloca_pair(c_733308,quote_bytevector_91u8_91set_67,c_733309);
 
-make_pair(c_733307,quote_bytevector_91u8_91ref,&c_733308);
+alloca_pair(c_733307,quote_bytevector_91u8_91ref,c_733308);
 
-make_pair(c_733306,quote_bytevector,&c_733307);
+alloca_pair(c_733306,quote_bytevector,c_733307);
 
-make_pair(c_733305,quote_Cyc_91string_91_125utf8,&c_733306);
+alloca_pair(c_733305,quote_Cyc_91string_91_125utf8,c_733306);
 
-make_pair(c_733304,quote_Cyc_91utf8_91_125string,&c_733305);
+alloca_pair(c_733304,quote_Cyc_91utf8_91_125string,c_733305);
 
-make_pair(c_733303,quote_Cyc_91bytevector_91copy,&c_733304);
+alloca_pair(c_733303,quote_Cyc_91bytevector_91copy,c_733304);
 
-make_pair(c_733302,quote_bytevector_91append,&c_733303);
+alloca_pair(c_733302,quote_bytevector_91append,c_733303);
 
-make_pair(c_733301,quote_bytevector_91length,&c_733302);
+alloca_pair(c_733301,quote_bytevector_91length,c_733302);
 
-make_pair(c_733300,quote_make_91bytevector,&c_733301);
+alloca_pair(c_733300,quote_make_91bytevector,c_733301);
 
-make_pair(c_733299,quote_list_91_125string,&c_733300);
+alloca_pair(c_733299,quote_list_91_125string,c_733300);
 
-make_pair(c_733298,quote_string_91_125number,&c_733299);
+alloca_pair(c_733298,quote_string_91_125number,c_733299);
 
-make_pair(c_733297,quote_integer_91_125char,&c_733298);
+alloca_pair(c_733297,quote_integer_91_125char,c_733298);
 
-make_pair(c_733296,quote_Cyc_91write_91char,&c_733297);
+alloca_pair(c_733296,quote_Cyc_91write_91char,c_733297);
 
-make_pair(c_733295,quote_Cyc_91read_91line,&c_733296);
+alloca_pair(c_733295,quote_Cyc_91read_91line,c_733296);
 
-make_pair(c_733294,quote_Cyc_91peek_91char,&c_733295);
+alloca_pair(c_733294,quote_Cyc_91peek_91char,c_733295);
 
-make_pair(c_733293,quote_Cyc_91read_91char,&c_733294);
+alloca_pair(c_733293,quote_Cyc_91read_91char,c_733294);
 
-make_pair(c_733292,quote_delete_91file,&c_733293);
+alloca_pair(c_733292,quote_delete_91file,c_733293);
 
-make_pair(c_733291,quote_file_91exists_127,&c_733292);
+alloca_pair(c_733291,quote_file_91exists_127,c_733292);
 
-make_pair(c_733290,quote_Cyc_91write,&c_733291);
+alloca_pair(c_733290,quote_Cyc_91write,c_733291);
 
-make_pair(c_733289,quote_Cyc_91display,&c_733290);
+alloca_pair(c_733289,quote_Cyc_91display,c_733290);
 
-make_pair(c_733288,quote_Cyc_91flush_91output_91port,&c_733289);
+alloca_pair(c_733288,quote_Cyc_91flush_91output_91port,c_733289);
 
-make_pair(c_733287,quote_close_91output_91port,&c_733288);
+alloca_pair(c_733287,quote_close_91output_91port,c_733288);
 
-make_pair(c_733286,quote_close_91input_91port,&c_733287);
+alloca_pair(c_733286,quote_close_91input_91port,c_733287);
 
-make_pair(c_733285,quote_close_91port,&c_733286);
+alloca_pair(c_733285,quote_close_91port,c_733286);
 
-make_pair(c_733284,quote_open_91output_91file,&c_733285);
+alloca_pair(c_733284,quote_open_91output_91file,c_733285);
 
-make_pair(c_733283,quote_open_91input_91file,&c_733284);
+alloca_pair(c_733283,quote_open_91input_91file,c_733284);
 
-make_pair(c_733282,quote_Cyc_91end_91thread_67,&c_733283);
+alloca_pair(c_733282,quote_Cyc_91end_91thread_67,c_733283);
 
-make_pair(c_733281,quote_Cyc_91current_91exception_91handler,&c_733282);
+alloca_pair(c_733281,quote_Cyc_91current_91exception_91handler,c_733282);
 
-make_pair(c_733280,quote_Cyc_91default_91exception_91handler,&c_733281);
+alloca_pair(c_733280,quote_Cyc_91default_91exception_91handler,c_733281);
 
-make_pair(c_733279,quote_cddddr,&c_733280);
+alloca_pair(c_733279,quote_cddddr,c_733280);
 
-make_pair(c_733278,quote_cdddar,&c_733279);
+alloca_pair(c_733278,quote_cdddar,c_733279);
 
-make_pair(c_733277,quote_cddadr,&c_733278);
+alloca_pair(c_733277,quote_cddadr,c_733278);
 
-make_pair(c_733276,quote_cddaar,&c_733277);
+alloca_pair(c_733276,quote_cddaar,c_733277);
 
-make_pair(c_733275,quote_cdaddr,&c_733276);
+alloca_pair(c_733275,quote_cdaddr,c_733276);
 
-make_pair(c_733274,quote_cdadar,&c_733275);
+alloca_pair(c_733274,quote_cdadar,c_733275);
 
-make_pair(c_733273,quote_cdaadr,&c_733274);
+alloca_pair(c_733273,quote_cdaadr,c_733274);
 
-make_pair(c_733272,quote_cdaaar,&c_733273);
+alloca_pair(c_733272,quote_cdaaar,c_733273);
 
-make_pair(c_733271,quote_cadddr,&c_733272);
+alloca_pair(c_733271,quote_cadddr,c_733272);
 
-make_pair(c_733270,quote_caddar,&c_733271);
+alloca_pair(c_733270,quote_caddar,c_733271);
 
-make_pair(c_733269,quote_cadadr,&c_733270);
+alloca_pair(c_733269,quote_cadadr,c_733270);
 
-make_pair(c_733268,quote_cadaar,&c_733269);
+alloca_pair(c_733268,quote_cadaar,c_733269);
 
-make_pair(c_733267,quote_caaddr,&c_733268);
+alloca_pair(c_733267,quote_caaddr,c_733268);
 
-make_pair(c_733266,quote_caadar,&c_733267);
+alloca_pair(c_733266,quote_caadar,c_733267);
 
-make_pair(c_733265,quote_caaadr,&c_733266);
+alloca_pair(c_733265,quote_caaadr,c_733266);
 
-make_pair(c_733264,quote_caaaar,&c_733265);
+alloca_pair(c_733264,quote_caaaar,c_733265);
 
-make_pair(c_733263,quote_cdddr,&c_733264);
+alloca_pair(c_733263,quote_cdddr,c_733264);
 
-make_pair(c_733262,quote_cddar,&c_733263);
+alloca_pair(c_733262,quote_cddar,c_733263);
 
-make_pair(c_733261,quote_cdadr,&c_733262);
+alloca_pair(c_733261,quote_cdadr,c_733262);
 
-make_pair(c_733260,quote_cdaar,&c_733261);
+alloca_pair(c_733260,quote_cdaar,c_733261);
 
-make_pair(c_733259,quote_caddr,&c_733260);
+alloca_pair(c_733259,quote_caddr,c_733260);
 
-make_pair(c_733258,quote_cadar,&c_733259);
+alloca_pair(c_733258,quote_cadar,c_733259);
 
-make_pair(c_733257,quote_caadr,&c_733258);
+alloca_pair(c_733257,quote_caadr,c_733258);
 
-make_pair(c_733256,quote_caaar,&c_733257);
+alloca_pair(c_733256,quote_caaar,c_733257);
 
-make_pair(c_733255,quote_cddr,&c_733256);
+alloca_pair(c_733255,quote_cddr,c_733256);
 
-make_pair(c_733254,quote_cdar,&c_733255);
+alloca_pair(c_733254,quote_cdar,c_733255);
 
-make_pair(c_733253,quote_cadr,&c_733254);
+alloca_pair(c_733253,quote_cadr,c_733254);
 
-make_pair(c_733252,quote_caar,&c_733253);
+alloca_pair(c_733252,quote_caar,c_733253);
 
-make_pair(c_733251,quote_cdr,&c_733252);
+alloca_pair(c_733251,quote_cdr,c_733252);
 
-make_pair(c_733250,quote_car,&c_733251);
+alloca_pair(c_733250,quote_car,c_733251);
 
-make_pair(c_733249,quote_apply,&c_733250);
+alloca_pair(c_733249,quote_apply,c_733250);
 
-make_pair(c_733248,quote_Cyc_91fast_91apply,&c_733249);
+alloca_pair(c_733248,quote_Cyc_91fast_91apply,c_733249);
 
-make_pair(c_733247,quote_Cyc_91fast_91assoc,&c_733248);
+alloca_pair(c_733247,quote_Cyc_91fast_91assoc,c_733248);
 
-make_pair(c_733246,quote_Cyc_91fast_91member,&c_733247);
+alloca_pair(c_733246,quote_Cyc_91fast_91member,c_733247);
 
-make_pair(c_733245,quote__121_123,&c_733246);
+alloca_pair(c_733245,quote__121_123,c_733246);
 
-make_pair(c_733244,quote__125_123,&c_733245);
+alloca_pair(c_733244,quote__125_123,c_733245);
 
-make_pair(c_733243,quote__121,&c_733244);
+alloca_pair(c_733243,quote__121,c_733244);
 
-make_pair(c_733242,quote__125,&c_733243);
+alloca_pair(c_733242,quote__125,c_733243);
 
-make_pair(c_733241,quote__123,&c_733242);
+alloca_pair(c_733241,quote__123,c_733242);
 
-make_pair(c_733240,quote_Cyc_91fast_91char_91lte,&c_733241);
+alloca_pair(c_733240,quote_Cyc_91fast_91char_91lte,c_733241);
 
-make_pair(c_733239,quote_Cyc_91fast_91char_91gte,&c_733240);
+alloca_pair(c_733239,quote_Cyc_91fast_91char_91gte,c_733240);
 
-make_pair(c_733238,quote_Cyc_91fast_91char_91lt,&c_733239);
+alloca_pair(c_733238,quote_Cyc_91fast_91char_91lt,c_733239);
 
-make_pair(c_733237,quote_Cyc_91fast_91char_91gt,&c_733238);
+alloca_pair(c_733237,quote_Cyc_91fast_91char_91gt,c_733238);
 
-make_pair(c_733236,quote_Cyc_91fast_91char_91eq,&c_733237);
+alloca_pair(c_733236,quote_Cyc_91fast_91char_91eq,c_733237);
 
-make_pair(c_733235,quote_Cyc_91fast_91lte,&c_733236);
+alloca_pair(c_733235,quote_Cyc_91fast_91lte,c_733236);
 
-make_pair(c_733234,quote_Cyc_91fast_91gte,&c_733235);
+alloca_pair(c_733234,quote_Cyc_91fast_91gte,c_733235);
 
-make_pair(c_733233,quote_Cyc_91fast_91lt,&c_733234);
+alloca_pair(c_733233,quote_Cyc_91fast_91lt,c_733234);
 
-make_pair(c_733232,quote_Cyc_91fast_91gt,&c_733233);
+alloca_pair(c_733232,quote_Cyc_91fast_91gt,c_733233);
 
-make_pair(c_733231,quote_Cyc_91fast_91eq,&c_733232);
+alloca_pair(c_733231,quote_Cyc_91fast_91eq,c_733232);
 
-make_pair(c_733230,quote__95,&c_733231);
+alloca_pair(c_733230,quote__95,c_733231);
 
-make_pair(c_733229,quote__85,&c_733230);
+alloca_pair(c_733229,quote__85,c_733230);
 
-make_pair(c_733228,quote__91,&c_733229);
+alloca_pair(c_733228,quote__91,c_733229);
 
-make_pair(c_733227,quote__87,&c_733228);
+alloca_pair(c_733227,quote__87,c_733228);
 
-make_pair(c_733226,quote_Cyc_91fast_91div,&c_733227);
+alloca_pair(c_733226,quote_Cyc_91fast_91div,c_733227);
 
-make_pair(c_733225,quote_Cyc_91fast_91mul,&c_733226);
+alloca_pair(c_733225,quote_Cyc_91fast_91mul,c_733226);
 
-make_pair(c_733224,quote_Cyc_91fast_91sub,&c_733225);
+alloca_pair(c_733224,quote_Cyc_91fast_91sub,c_733225);
 
-make_pair(c_733223,quote_Cyc_91fast_91plus,&c_733224);
+alloca_pair(c_733223,quote_Cyc_91fast_91plus,c_733224);
 
-make_pair(c_733222,quote_Cyc_91list,&c_733223);
-return_closcall1(data,  k_731186,  memberp(data, p_73499_73795, &c_733222));
+alloca_pair(c_733222,quote_Cyc_91list,c_733223);
+return_closcall1(data,  k_731186,  memberp(data, p_73499_73795, c_733222));
 } else { 
   return_closcall1(data,  k_731186,  memberp(data, p_73499_73795, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 ; 
@@ -8161,26 +8161,26 @@ return_direct_with_clo1(data,  k_73857,__lambda_11,  c_731761);
 static void __lambda_7(void *data, int argc, closure _,object k_73838, object exp_739_73785) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:mutates?");
 
-make_pair(c_731742,quote_vector_91set_67,NULL);
+alloca_pair(c_731742,quote_vector_91set_67,NULL);
 
-make_pair(c_731741,quote_bytevector_91u8_91set_67,&c_731742);
+alloca_pair(c_731741,quote_bytevector_91u8_91set_67,c_731742);
 
-make_pair(c_731740,quote_string_91set_67,&c_731741);
+alloca_pair(c_731740,quote_string_91set_67,c_731741);
 
-make_pair(c_731739,quote_set_91cdr_67,&c_731740);
+alloca_pair(c_731739,quote_set_91cdr_67,c_731740);
 
-make_pair(c_731738,quote_set_91car_67,&c_731739);
+alloca_pair(c_731738,quote_set_91car_67,c_731739);
 
-make_pair(c_731737,quote_set_91cell_67,&c_731738);
+alloca_pair(c_731737,quote_set_91cell_67,c_731738);
 
-make_pair(c_731736,quote_set_91global_67,&c_731737);
+alloca_pair(c_731736,quote_set_91global_67,c_731737);
 
-make_pair(c_731735,quote_Cyc_91end_91thread_67,&c_731736);
+alloca_pair(c_731735,quote_Cyc_91end_91thread_67,c_731736);
 
-make_pair(c_731734,quote_Cyc_91spawn_91thread_67,&c_731735);
+alloca_pair(c_731734,quote_Cyc_91spawn_91thread_67,c_731735);
 
-make_pair(c_731733,quote_Cyc_91set_91cvar_67,&c_731734);
-return_closcall1(data,  k_73838,  memberp(data, exp_739_73785, &c_731733));; 
+alloca_pair(c_731733,quote_Cyc_91set_91cvar_67,c_731734);
+return_closcall1(data,  k_73838,  memberp(data, exp_739_73785, c_731733));; 
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_73834, object exp_734_73783) {

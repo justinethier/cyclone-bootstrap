@@ -397,17 +397,17 @@ return_closcall3(data,  __glo_string_91map_scheme_base,  k_73185, __glo_char_91u
 
 static void __lambda_28(void *data, int argc, closure _,object k_73179, object c_7339_7376) {
   Cyc_st_add(data, "scheme/char.sld:digit-value");
-  make_pair(c_73454,obj_char2obj(57),NULL);
-  make_pair(c_73453,obj_char2obj(56),&c_73454);
-  make_pair(c_73452,obj_char2obj(55),&c_73453);
-  make_pair(c_73451,obj_char2obj(54),&c_73452);
-  make_pair(c_73450,obj_char2obj(53),&c_73451);
-  make_pair(c_73449,obj_char2obj(52),&c_73450);
-  make_pair(c_73448,obj_char2obj(51),&c_73449);
-  make_pair(c_73447,obj_char2obj(50),&c_73448);
-  make_pair(c_73446,obj_char2obj(49),&c_73447);
-  make_pair(c_73445,obj_char2obj(48),&c_73446);
-if( (boolean_f != memberp(data, c_7339_7376, &c_73445)) ){ 
+  alloca_pair(c_73454,obj_char2obj(57),NULL);
+  alloca_pair(c_73453,obj_char2obj(56),c_73454);
+  alloca_pair(c_73452,obj_char2obj(55),c_73453);
+  alloca_pair(c_73451,obj_char2obj(54),c_73452);
+  alloca_pair(c_73450,obj_char2obj(53),c_73451);
+  alloca_pair(c_73449,obj_char2obj(52),c_73450);
+  alloca_pair(c_73448,obj_char2obj(51),c_73449);
+  alloca_pair(c_73447,obj_char2obj(50),c_73448);
+  alloca_pair(c_73446,obj_char2obj(49),c_73447);
+  alloca_pair(c_73445,obj_char2obj(48),c_73446);
+if( (boolean_f != memberp(data, c_7339_7376, c_73445)) ){ 
   
 complex_num_type local_73458; object c_73459 = Cyc_fast_sub(data,&local_73458,Cyc_char2integer(c_7339_7376), obj_int2obj(48));
 return_closcall1(data,  k_73179,  c_73459);
@@ -420,11 +420,11 @@ return_closcall1(data,  k_73179,  c_73466);}
 
 static void __lambda_27(void *data, int argc, closure _,object k_73174, object c_7338_7375) {
   Cyc_st_add(data, "scheme/char.sld:char-whitespace?");
-  make_pair(c_73439,obj_char2obj(10),NULL);
-  make_pair(c_73438,obj_char2obj(13),&c_73439);
-  make_pair(c_73437,obj_char2obj(32),&c_73438);
-  make_pair(c_73436,obj_char2obj(9),&c_73437);
-if( (boolean_f != memberp(data, c_7338_7375, &c_73436)) ){ 
+  alloca_pair(c_73439,obj_char2obj(10),NULL);
+  alloca_pair(c_73438,obj_char2obj(13),c_73439);
+  alloca_pair(c_73437,obj_char2obj(32),c_73438);
+  alloca_pair(c_73436,obj_char2obj(9),c_73437);
+if( (boolean_f != memberp(data, c_7338_7375, c_73436)) ){ 
   return_closcall1(data,  k_73174,  boolean_t);
 } else { 
   return_closcall1(data,  k_73174,  boolean_f);}
@@ -433,17 +433,17 @@ if( (boolean_f != memberp(data, c_7338_7375, &c_73436)) ){
 
 static void __lambda_26(void *data, int argc, closure _,object k_73169, object c_7337_7374) {
   Cyc_st_add(data, "scheme/char.sld:char-numeric?");
-  make_pair(c_73430,obj_char2obj(57),NULL);
-  make_pair(c_73429,obj_char2obj(56),&c_73430);
-  make_pair(c_73428,obj_char2obj(55),&c_73429);
-  make_pair(c_73427,obj_char2obj(54),&c_73428);
-  make_pair(c_73426,obj_char2obj(53),&c_73427);
-  make_pair(c_73425,obj_char2obj(52),&c_73426);
-  make_pair(c_73424,obj_char2obj(51),&c_73425);
-  make_pair(c_73423,obj_char2obj(50),&c_73424);
-  make_pair(c_73422,obj_char2obj(49),&c_73423);
-  make_pair(c_73421,obj_char2obj(48),&c_73422);
-if( (boolean_f != memberp(data, c_7337_7374, &c_73421)) ){ 
+  alloca_pair(c_73430,obj_char2obj(57),NULL);
+  alloca_pair(c_73429,obj_char2obj(56),c_73430);
+  alloca_pair(c_73428,obj_char2obj(55),c_73429);
+  alloca_pair(c_73427,obj_char2obj(54),c_73428);
+  alloca_pair(c_73426,obj_char2obj(53),c_73427);
+  alloca_pair(c_73425,obj_char2obj(52),c_73426);
+  alloca_pair(c_73424,obj_char2obj(51),c_73425);
+  alloca_pair(c_73423,obj_char2obj(50),c_73424);
+  alloca_pair(c_73422,obj_char2obj(49),c_73423);
+  alloca_pair(c_73421,obj_char2obj(48),c_73422);
+if( (boolean_f != memberp(data, c_7337_7374, c_73421)) ){ 
   return_closcall1(data,  k_73169,  boolean_t);
 } else { 
   return_closcall1(data,  k_73169,  boolean_f);}
