@@ -7,6 +7,17 @@
  **
  **/
 
+/* 
+(JAE (%closure-ref
+       (cell-get (%closure-ref self$5643 1))
+       0)
+     737
+     ("k_733731" "lst_73978_732073" "i_73979_732074")
+     ("k_733731"
+      "Cyc_cdr(data, lst_73978_732073)"
+      "c_7310776")
+     (c:num-args cargs))
+ */
 #define closcall1(td, clo,a1) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
@@ -22,6 +33,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall1(td, (closure) (clo),a1); \
      return;\
+ } \
+}
+
+#define continue_or_gc1(td, clo,a1) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -64,6 +86,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc2(td, clo,a1,a2) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -100,6 +133,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall3(td, (closure) (clo),a1,a2,a3); \
      return;\
+ } \
+}
+
+#define continue_or_gc3(td, clo,a1,a2,a3) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -142,6 +186,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc4(td, clo,a1,a2,a3,a4) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
+     GC(td, clo, buf, 4); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct4(td, _fn,a1,a2,a3,a4) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -178,6 +233,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall5(td, (closure) (clo),a1,a2,a3,a4,a5); \
      return;\
+ } \
+}
+
+#define continue_or_gc5(td, clo,a1,a2,a3,a4,a5) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
+     GC(td, clo, buf, 5); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -220,6 +286,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc6(td, clo,a1,a2,a3,a4,a5,a6) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[6]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;\
+     GC(td, clo, buf, 6); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct6(td, _fn,a1,a2,a3,a4,a5,a6) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -256,6 +333,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall7(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7); \
      return;\
+ } \
+}
+
+#define continue_or_gc7(td, clo,a1,a2,a3,a4,a5,a6,a7) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
+     GC(td, clo, buf, 7); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -298,6 +386,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc10(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[10]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;\
+     GC(td, clo, buf, 10); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct10(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -334,6 +433,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall19(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19); \
      return;\
+ } \
+}
+
+#define continue_or_gc19(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[19]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;buf[13] = a14;buf[14] = a15;buf[15] = a16;buf[16] = a17;buf[17] = a18;buf[18] = a19;\
+     GC(td, clo, buf, 19); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -13390,8 +13500,10 @@ if( (boolean_f != Cyc_is_pair(lst_73978_732073)) ){
   return_closcall1(data,  k_733731,  i_73979_732074);
 } else { 
   
-complex_num_type local_7310775; object c_7310776 = Cyc_fast_sum(data,&local_7310775,i_73979_732074, obj_int2obj(1));
-/* TODO: call self */ return_closcall3(data,  car(((closureN)self_735643)->elements[0]),  k_733731, Cyc_cdr(data, lst_73978_732073), c_7310776);}
+object local_7310775 = alloca(sizeof(complex_num_type)); object c_7310776 = Cyc_fast_sum(data,local_7310775,i_73979_732074, obj_int2obj(1));
+lst_73978_732073 = Cyc_cdr(data, lst_73978_732073);
+i_73979_732074 = c_7310776;
+continue_or_gc3(data,self_735643,k_733731, lst_73978_732073, i_73979_732074);}
 
 } else { 
   return_closcall1(data,  k_733731,  boolean_f);}
