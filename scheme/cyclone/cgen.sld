@@ -31,6 +31,8 @@
     emits
     emits*
     emit-newline
+    ;; Helpers
+    self-closure-call?
   )
   (inline
     global-not-lambda?
@@ -127,6 +129,7 @@
            (vector-ref *c-call-arity* arity))
        (emit (c-macro-closcall arity))
        (emit (c-macro-return-closcall arity))
+       (emit (c-macro-continue-or-gc arity))
        (emit (c-macro-return-direct arity))
        (emit (c-macro-return-direct-with-closure arity))
        (when *optimize-well-known-lambdas*
@@ -151,6 +154,25 @@
       " } else {\\\n"
       "     closcall" n "(td, (closure) (clo)" args "); \\\n"
       "     return;\\\n"
+      " } \\\n"
+      "}\n")))
+
+;; Generate macros invoke a GC if necessary, otherwise do nothing.
+;; This will be used to support C iteration.
+(define (c-macro-continue-or-gc num-args)
+  (let ((args (c-macro-n-prefix num-args ",a"))
+        (n (number->string num-args))
+        (arry-assign (c-macro-array-assign num-args "buf" "a")))
+    (string-append
+      ;"/* Check for GC, then call given continuation closure */\n"
+      "#define continue_or_gc" n "(td, clo" args ") { \\\n"
+      " char *top = alloca(sizeof(char)); \\\n" ;; TODO: consider speeding up by passing in a var already allocated
+      " if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \\\n"
+      "     object buf[" n "]; " arry-assign "\\\n"
+      "     GC(td, clo, buf, " n "); \\\n"
+      "     return; \\\n"
+      " } else {\\\n"
+      "     continue;\\\n"
       " } \\\n"
       "}\n")))
 
@@ -398,7 +420,7 @@
     (create-cons
       (lambda (cvar a b)
         (c-code/vars
-          (string-append "alloca_pair(" cvar "," (c:body a) "," (c:body b) ");")
+          (string-append "make_pair(" cvar "," (c:body a) "," (c:body b) ");")
           (append (c:allocs a) (c:allocs b))))
     )
     (_c-compile-scalars 
@@ -416,7 +438,8 @@
                           (_c-compile-scalars (cdr args)))))
              (set! num-args (+ 1 num-args))
              (c-code/vars
-                cvar-name ;; Not needed with alloca - (string-append "&" cvar-name)
+                ;;cvar-name ;; Not needed with alloca - (string-append "&" cvar-name)
+                (string-append "&" cvar-name)
                 (append
                   (c:allocs cell)
                   (list (c:body cell))))))))))
@@ -629,16 +652,23 @@
     (and (> len 0)
          (equal? end (substring str (- len 1) len)))))
 
+;; Use alloca() for stack allocations?
+(define (alloca? ast-id)
+  (let ((ast-fnc (adb:get/default ast-id #f)))
+    (and ast-fnc 
+         (adbf:calls-self? ast-fnc))))
+
 ;; c-compile-prim : prim-exp -> string -> string
-(define (c-compile-prim p cont)
-  (let* ((c-func 
+(define (c-compile-prim p cont ast-id)
+  (let* ((use-alloca? (alloca? ast-id))
+         (c-func 
            (if (prim:udf? p)
                (string-append
                  "((inline_function_type)
                    ((closure)"
                     (cgen:mangle-global p)
                  ")->fn)")
-               (prim->c-func p)))
+               (prim->c-func p use-alloca?)))
          ;; Following closure defs are only used for prim:cont? to
          ;; create a new closure for the continuation, if needed.
          ;;
@@ -661,12 +691,17 @@
                  (else "")))
          (tdata-comma (if (> (string-length tdata) 0) "," ""))
          (tptr-type (prim/c-var-pointer p))
-         (tptr-comma (if tptr-type ",&" ""))
+         (tptr-comma 
+          (cond
+           ((and tptr-type use-alloca?) ",")
+           (tptr-type ",&")
+           (else "")))
          (tptr (cond
                 (tptr-type (mangle (gensym 'local)))
                 (else "")))
          (tptr-decl
           (cond 
+            ((and tptr-type use-alloca?) (string-append "object " tptr " = alloca(sizeof(" tptr-type ")); "))
             (tptr-type (string-append tptr-type " " tptr "; "))
             (else "")))
          (c-var-assign 
@@ -719,7 +754,7 @@
         ;;
         (let ((cv-name (mangle (gensym 'c))))
            (c-code/vars
-            (if (prim:allocates-object? p)
+            (if (prim:allocates-object? p use-alloca?)
                 cv-name ;; Already a pointer
                 (string-append "&" cv-name)) ;; Point to data
             (list
@@ -729,6 +764,22 @@
 
 ;; END primitives
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;
+
+;; Detect closure call of the form:
+;;  (%closure-ref
+;;     (cell-get (%closure-ref self$249 1))
+;;     0)
+;;TODO: need adbf, only a closure call if inner-cref's index matches adbf:self-closure-index
+(define (self-closure-call? ast self)
+  (and-let* (((tagged-list? '%closure-ref ast))
+             ((tagged-list? 'cell-get (cadr ast)))
+             (inner-cref (cadadr ast))
+             ((tagged-list? '%closure-ref inner-cref))
+             (equal? self (cadr inner-cref))
+             ((equal? 0 (caddr ast)))
+             ((equal? 1 (caddr inner-cref)))
+            )
+    #t))
 
 ; c-compile-ref : ref-exp -> string
 (define (c-compile-ref exp)
@@ -740,6 +791,7 @@
 ; c-compile-args : list[exp] (string -> void) -> string
 (define (c-compile-args args append-preamble prefix cont ast-id trace cps?)
   (letrec ((num-args 0)
+           (cp-lis '())
          (_c-compile-args 
           (lambda (args append-preamble prefix cont)
             (cond
@@ -747,17 +799,26 @@
               (c-code ""))
              (else
               ;(trace:debug `(c-compile-args ,(car args)))
-              (set! num-args (+ 1 num-args))
-              (c:append/prefix
-                prefix 
-                (c-compile-exp (car args) 
-                  append-preamble cont ast-id trace cps?)
-                (_c-compile-args (cdr args) 
-                  append-preamble ", " cont)))))))
-  (c:tuple/args
-    (_c-compile-args args 
-      append-preamble prefix cont)
-    num-args)))
+              (let ((cp (c-compile-exp (car args) 
+                          append-preamble cont ast-id trace cps?)))
+                (set! num-args (+ 1 num-args))
+                (set! cp-lis (cons cp cp-lis))
+                (c:append/prefix
+                  prefix 
+                  cp
+                  (_c-compile-args (cdr args) 
+                    append-preamble ", " cont))))))))
+  ;; Pass back a container with:
+  ;; - Appened body (string)
+  ;; - Appended allocs (string)
+  ;; - Number of args (numeric)
+  ;; - Remaining args - Actual CP objects (lists of body/alloc) from above
+  (append
+    (c:tuple/args
+      (_c-compile-args args 
+        append-preamble prefix cont)
+      num-args)
+    (reverse cp-lis))))
 
 ;; c-compile-app : app-exp (string -> void) -> string
 (define (c-compile-app exp append-preamble cont ast-id trace cps?)
@@ -844,7 +905,7 @@
          
         ((prim? fun)
          (let* ((c-fun 
-                 (c-compile-prim fun cont))
+                 (c-compile-prim fun cont ast-id))
                 (c-args
                  (c-compile-args args append-preamble "" "" ast-id trace cps?))
                 (num-args (length args))
@@ -904,6 +965,7 @@
          (let* ((cfun (c-compile-args (list (car args)) append-preamble "  " cont ast-id trace cps?))
                 (this-cont (c:body cfun))
                 (cargs (c-compile-args (cdr args) append-preamble "  " this-cont ast-id trace cps?))
+                (raw-cargs (cdddr cargs)) ;; Same as above but with lists instead of appended strings
                 (num-cargs (c:num-args cargs)))
            (cond
              ((not cps?)
@@ -924,19 +986,42 @@
                 (cond
                   ;; Handle recursive calls via iteration, if possible
                   ((and ast-fnc
+                        #f ;; TODO: temporarily disabled
                         (adbf:calls-self? ast-fnc)
                         (self-closure-call? fun (car (adbf:all-params ast-fnc)))
                     )
+                    (let* ((params (map mangle (cdr (adbf:all-params ast-fnc))))
+                           (args (map car raw-cargs))
+                           (reassignments 
+                             ;; TODO: may need to detect cases where an arg is reassigned before
+                             ;; another one is assigned to that arg's old value, for example:
+                             ;;   a = 1, b = 2, c = a
+                             ;; In this case the code would need to assign to a temporary variable
+                             (apply string-append
+                              (map
+                                (lambda (param arg)
+                                  (cond
+                                    ((equal? param arg) "") ;; No need to reassign
+                                    (else
+                                      (string-append
+                                        param " = " arg ";\n"))))
+                                params
+                                args))))
+(trace:error `(JAE ,fun ,ast-id ,params ,args (c:num-args cargs)))
                     (c-code 
                       (string-append
                         (c:allocs->str (c:allocs cfun) "\n")
                         (c:allocs->str (c:allocs cargs) "\n")
-                        "/* TODO: call self */ return_closcall" (number->string (c:num-args cargs))
+                        reassignments
+                        ;; TODO: consider passing in a "top" instead of always calling alloca in macro below:
+                        "continue_or_gc" (number->string (c:num-args cargs))
                         "(data,"
-                        this-cont
+                        (mangle (car (adbf:all-params ast-fnc))) ;; Call back into self after GC
                         (if (> (c:num-args cargs) 0) "," "")
-                        (c:body cargs)
-                        ");")))
+                        (string-join params ", ")
+                        ");"
+                      )))
+                  )
                         
                   ((and wkf fnc
                         *optimize-well-known-lambdas*
@@ -1338,7 +1423,7 @@
 ;; Compile a reference to an element of a closure.
 (define (c-compile-closure-element-ref ast-id var idx)
   (with-fnc ast-id (lambda (fnc)
-    (trace:info `(c-compile-closure-element-ref ,ast-id ,var ,idx ,fnc))
+    ;(trace:info `(c-compile-closure-element-ref ,ast-id ,var ,idx ,fnc))
     (cond
       ((and *optimize-well-known-lambdas*
             (adbf:well-known fnc)
@@ -1349,6 +1434,24 @@
         (string-append 
           "((closureN)" (mangle var) ")->elements[" idx "]"))))))
 
+(define (find-closure-assigned-var-index! ast-fnc closure-args)
+  (let ((index 0)
+        (fnc (adb:get/default (ast:lambda-id ast-fnc) #f)))
+    ;(trace:info `(find-closure-assigned-var-index! ,ast-fnc ,fnc ,closure-args))
+    (cond
+      ((and fnc 
+            (pair? (adbf:assigned-to-var fnc)))
+       (for-each
+        (lambda (arg)
+          (when (and (ref? arg) (member arg (adbf:assigned-to-var fnc)))
+            ;(trace:error `(JAE closure for ,(ast:lambda-id ast-fnc) self ref is index ,index))
+            (adbf:set-self-closure-index! fnc index)
+          )
+          (set! index (+ index 1))
+        )
+        closure-args)
+      )
+      (else #f))))
 
 ;; c-compile-closure : closure-exp (string -> void) -> string
 ;;
@@ -1366,6 +1469,7 @@
 ;;
 (define (c-compile-closure exp append-preamble cont ast-id trace cps?)
   (let* ((lam (closure->lam exp))
+         (use-alloca? (alloca? ast-id))
          (free-vars
            (map
              (lambda (free-var)
@@ -1401,26 +1505,31 @@
              (car free-vars)
              (list))))
          (create-nclosure (lambda ()
-           (string-append
-             "closureN_type " cv-name ";\n"
-             ;; Not ideal, but one more special case to type check call/cc
-             (if call/cc?  "Cyc_check_proc(data, f);\n" "")
-             cv-name ".hdr.mark = gc_color_red;\n "
-             cv-name ".hdr.grayed = 0;\n"
-             cv-name ".tag = closureN_tag;\n "
-             cv-name ".fn = (function_type)__lambda_" (number->string lid) ";\n"
-             cv-name ".num_args = " num-args-str ";\n"
-             cv-name ".num_elements = " (number->string (length free-vars)) ";\n"
-             cv-name ".elements = (object *)alloca(sizeof(object) * " 
-                     (number->string (length free-vars)) ");\n"
-             (let loop ((i 0) 
-                        (vars free-vars))
-               (if  (null? vars)
-                 ""
-                 (string-append 
-                   cv-name ".elements[" (number->string i) "] = " 
-                           (car vars) ";\n"
-                   (loop (+ i 1) (cdr vars))))))))
+           (let ((decl (if use-alloca?
+                           (string-append "closureN_type * " cv-name " = alloca(sizeof(closureN_type));\n")
+                           (string-append "closureN_type " cv-name ";\n")))
+                 (sep (if use-alloca? "->" "."))
+                )
+             (string-append
+               decl
+               ;; Not ideal, but one more special case to type check call/cc
+               (if call/cc?  "Cyc_check_proc(data, f);\n" "")
+               cv-name sep "hdr.mark = gc_color_red;\n "
+               cv-name sep "hdr.grayed = 0;\n"
+               cv-name sep "tag = closureN_tag;\n "
+               cv-name sep "fn = (function_type)__lambda_" (number->string lid) ";\n"
+               cv-name sep "num_args = " num-args-str ";\n"
+               cv-name sep "num_elements = " (number->string (length free-vars)) ";\n"
+               cv-name sep "elements = (object *)alloca(sizeof(object) * " 
+                       (number->string (length free-vars)) ");\n"
+               (let loop ((i 0) 
+                          (vars free-vars))
+                 (if  (null? vars)
+                   ""
+                   (string-append 
+                     cv-name sep "elements[" (number->string i) "] = " 
+                             (car vars) ";\n"
+                     (loop (+ i 1) (cdr vars)))))))))
          (create-mclosure (lambda () 
            (let ((prefix 
                     (if macro?
@@ -1442,12 +1551,16 @@
               cv-name ".num_args = " (number->string (compute-num-args lam)) ";"
               )))))
   ;(trace:info (list 'JAE-DEBUG trace macro?))
+  (find-closure-assigned-var-index! lam (cdr exp))
   (cond
     (use-obj-instead-of-closure?
       (create-object))
     (else
       (c-code/vars
-        (string-append "&" cv-name)
+        (if (and use-alloca?
+                 (> (length free-vars) 0))
+            cv-name
+            (string-append "&" cv-name))
         (list 
           (if (> (length free-vars) 0)
             (create-nclosure)
