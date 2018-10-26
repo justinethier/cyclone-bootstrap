@@ -13581,7 +13581,9 @@ if( (boolean_f != Cyc_is_pair(lst_73979_732032)) ){
 } else { 
   
 object local_7310729 = alloca(sizeof(complex_num_type)); object c_7310730 = Cyc_fast_sum(data,local_7310729,i_73980_732033, obj_int2obj(1));
-return_closcall3(data,  car(((closureN)self_735590)->elements[0]),  k_733686, Cyc_cdr(data, lst_73979_732032), c_7310730);}
+lst_73979_732032 = Cyc_cdr(data, lst_73979_732032);
+i_73980_732033 = c_7310730;
+continue_or_gc3(data,self_735590,k_733686, lst_73979_732032, i_73980_732033);}
 
 } else { 
   return_closcall1(data,  k_733686,  boolean_f);}

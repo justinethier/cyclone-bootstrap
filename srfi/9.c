@@ -25,6 +25,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc1(td, clo,a1) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct1(td, _fn,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -64,6 +75,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc2(td, clo,a1,a2) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -100,6 +122,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall3(td, (closure) (clo),a1,a2,a3); \
      return;\
+ } \
+}
+
+#define continue_or_gc3(td, clo,a1,a2,a3) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -1392,61 +1425,67 @@ return_direct_with_clo1(data,(closure)&c_73787,__lambda_55,  Cyc_set_cell(data, 
 }
 
 static void __lambda_59(void *data, int argc, object self_73508, object k_73297, object ls_73113_73192, object sets_73114_73193) {
-  if( (boolean_f != Cyc_is_null(ls_73113_73192)) ){ 
   
-closureN_type c_73836;
-c_73836.hdr.mark = gc_color_red;
- c_73836.hdr.grayed = 0;
-c_73836.tag = closureN_tag;
- c_73836.fn = (function_type)__lambda_60;
-c_73836.num_args = 1;
-c_73836.num_elements = 7;
-c_73836.elements = (object *)alloca(sizeof(object) * 7);
-c_73836.elements[0] = ((closureN)self_73508)->elements[0];
-c_73836.elements[1] = ((closureN)self_73508)->elements[1];
-c_73836.elements[2] = k_73297;
-c_73836.elements[3] = ((closureN)self_73508)->elements[6];
-c_73836.elements[4] = ((closureN)self_73508)->elements[7];
-c_73836.elements[5] = ((closureN)self_73508)->elements[8];
-c_73836.elements[6] = sets_73114_73193;
+ while(1) {
+if( (boolean_f != Cyc_is_null(ls_73113_73192)) ){ 
+  
+closureN_type * c_73836 = alloca(sizeof(closureN_type));
+c_73836->hdr.mark = gc_color_red;
+ c_73836->hdr.grayed = 0;
+c_73836->tag = closureN_tag;
+ c_73836->fn = (function_type)__lambda_60;
+c_73836->num_args = 1;
+c_73836->num_elements = 7;
+c_73836->elements = (object *)alloca(sizeof(object) * 7);
+c_73836->elements[0] = ((closureN)self_73508)->elements[0];
+c_73836->elements[1] = ((closureN)self_73508)->elements[1];
+c_73836->elements[2] = k_73297;
+c_73836->elements[3] = ((closureN)self_73508)->elements[6];
+c_73836->elements[4] = ((closureN)self_73508)->elements[7];
+c_73836->elements[5] = ((closureN)self_73508)->elements[8];
+c_73836->elements[6] = sets_73114_73193;
 
-return_closcall2(data,  ((closureN)self_73508)->elements[9],  &c_73836, quote_make_91constructor);
+return_closcall2(data,  ((closureN)self_73508)->elements[9],  c_73836, quote_make_91constructor);
 } else { 
   if( (boolean_f != assq(data, Cyc_car(data, ls_73113_73192), ((closureN)self_73508)->elements[4])) ){ 
   if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, assq(data, Cyc_car(data, ls_73113_73192), ((closureN)self_73508)->elements[4])))) ){ 
   
-make_pair(c_73952,Cyc_car(data, ls_73113_73192), NULL);
+alloca_pair(c_73952,Cyc_car(data, ls_73113_73192), NULL);
 
-make_pair(c_73949,quote_res, &c_73952);
+alloca_pair(c_73949,quote_res, c_73952);
 
-make_pair(c_73937,Cyc_car(data, Cyc_cddr(data, assq(data, Cyc_car(data, ls_73113_73192), ((closureN)self_73508)->elements[4]))), &c_73949);
+alloca_pair(c_73937,Cyc_car(data, Cyc_cddr(data, assq(data, Cyc_car(data, ls_73113_73192), ((closureN)self_73508)->elements[4]))), c_73949);
 
-make_pair(c_73934,&c_73937, sets_73114_73193);
-return_closcall3(data,  car(((closureN)self_73508)->elements[5]),  k_73297, Cyc_cdr(data, ls_73113_73192), &c_73934);
+alloca_pair(c_73934,c_73937, sets_73114_73193);
+ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
+sets_73114_73193 = c_73934;
+continue_or_gc3(data,self_73508,k_73297, ls_73113_73192, sets_73114_73193);
 } else { 
   
-make_pair(c_73994,Cyc_car(data, ls_73113_73192), NULL);
+alloca_pair(c_73994,Cyc_car(data, ls_73113_73192), NULL);
 
-make_pair(c_73991,quote_quote, &c_73994);
+alloca_pair(c_73991,quote_quote, c_73994);
 
-make_pair(c_73988,&c_73991, NULL);
+alloca_pair(c_73988,c_73991, NULL);
 
-make_pair(c_73984,((closureN)self_73508)->elements[8], &c_73988);
+alloca_pair(c_73984,((closureN)self_73508)->elements[8], c_73988);
 
-make_pair(c_73980,((closureN)self_73508)->elements[3], &c_73984);
+alloca_pair(c_73980,((closureN)self_73508)->elements[3], c_73984);
 
-make_pair(c_73999,Cyc_car(data, ls_73113_73192), NULL);
+alloca_pair(c_73999,Cyc_car(data, ls_73113_73192), NULL);
 
-make_pair(c_73977,&c_73980, &c_73999);
+alloca_pair(c_73977,c_73980, c_73999);
 
-make_pair(c_73974,quote_res, &c_73977);
+alloca_pair(c_73974,quote_res, c_73977);
 
-make_pair(c_73970,((closureN)self_73508)->elements[8], &c_73974);
+alloca_pair(c_73970,((closureN)self_73508)->elements[8], c_73974);
 
-make_pair(c_73966,((closureN)self_73508)->elements[2], &c_73970);
+alloca_pair(c_73966,((closureN)self_73508)->elements[2], c_73970);
 
-make_pair(c_73963,&c_73966, sets_73114_73193);
-return_closcall3(data,  car(((closureN)self_73508)->elements[5]),  k_73297, Cyc_cdr(data, ls_73113_73192), &c_73963);}
+alloca_pair(c_73963,c_73966, sets_73114_73193);
+ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
+sets_73114_73193 = c_73963;
+continue_or_gc3(data,self_73508,k_73297, ls_73113_73192, sets_73114_73193);}
 
 } else { 
   
@@ -1454,6 +1493,7 @@ make_utf8_string_with_len(c_731003, "unknown record field in constructor", 35, 3
 return_closcall3(data,  __glo_error_scheme_base,  k_73297, &c_731003, Cyc_car(data, ls_73113_73192));}
 }
 ; 
+}
 }
 
 static void __lambda_60(void *data, int argc, object self_73509, object r_73328) {

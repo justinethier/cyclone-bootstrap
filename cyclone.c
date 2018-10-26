@@ -25,6 +25,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc1(td, clo,a1) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[1]; buf[0] = a1;\
+     GC(td, clo, buf, 1); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct1(td, _fn,a1) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -61,6 +72,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall2(td, (closure) (clo),a1,a2); \
      return;\
+ } \
+}
+
+#define continue_or_gc2(td, clo,a1,a2) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[2]; buf[0] = a1;buf[1] = a2;\
+     GC(td, clo, buf, 2); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -103,6 +125,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc3(td, clo,a1,a2,a3) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
+     GC(td, clo, buf, 3); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct3(td, _fn,a1,a2,a3) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -139,6 +172,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall4(td, (closure) (clo),a1,a2,a3,a4); \
      return;\
+ } \
+}
+
+#define continue_or_gc4(td, clo,a1,a2,a3,a4) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
+     GC(td, clo, buf, 4); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -181,6 +225,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc5(td, clo,a1,a2,a3,a4,a5) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
+     GC(td, clo, buf, 5); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct5(td, _fn,a1,a2,a3,a4,a5) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -217,6 +272,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall8(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8); \
      return;\
+ } \
+}
+
+#define continue_or_gc8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
+     GC(td, clo, buf, 8); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -259,6 +325,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc9(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[9]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;\
+     GC(td, clo, buf, 9); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct9(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8,a9) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -298,6 +375,17 @@ if (type_is_pair_prim(clo)) { \
  } \
 }
 
+#define continue_or_gc10(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[10]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;\
+     GC(td, clo, buf, 10); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
 #define return_direct10(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10) { \
  char top; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
@@ -334,6 +422,17 @@ if (type_is_pair_prim(clo)) { \
  } else {\
      closcall13(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13); \
      return;\
+ } \
+}
+
+#define continue_or_gc13(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[13]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;\
+     GC(td, clo, buf, 13); \
+     return; \
+ } else {\
+     continue;\
  } \
 }
 
@@ -675,6 +774,7 @@ extern object __glo_emit_85_scheme_cyclone_cgen;
 extern object __glo_emits_scheme_cyclone_cgen;
 extern object __glo_emits_85_scheme_cyclone_cgen;
 extern object __glo_emit_91newline_scheme_cyclone_cgen;
+extern object __glo_self_91closure_91call_127_scheme_cyclone_cgen;
 extern object __glo_prim_127_scheme_cyclone_primitives;
 extern object __glo__85primitives_85_scheme_cyclone_primitives;
 extern object __glo__85primitives_91num_91args_85_scheme_cyclone_primitives;
@@ -830,6 +930,8 @@ extern object __glo_adbf_117all_91params_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91all_91params_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117unused_91params_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91unused_91params_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117assigned_91to_91var_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117set_91assigned_91to_91var_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117side_91effects_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91side_91effects_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117well_91known_scheme_cyclone_cps_91optimizations;
@@ -838,6 +940,10 @@ extern object __glo_adbf_117cgen_91id_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91cgen_91id_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117closure_91size_scheme_cyclone_cps_91optimizations;
 extern object __glo_adbf_117set_91closure_91size_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117self_91closure_91index_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117set_91self_91closure_91index_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117calls_91self_127_scheme_cyclone_cps_91optimizations;
+extern object __glo_adbf_117set_91calls_91self_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_with_91fnc_scheme_cyclone_cps_91optimizations;
 extern object __glo_with_91fnc_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_library_127_scheme_cyclone_libraries;
@@ -8936,8 +9042,8 @@ c_732187.elements[3] = ((closureN)self_731178)->elements[3];
 c_732187.elements[4] = ((closureN)self_731178)->elements[4];
 
 
-alloca_pair(c_732241,quote_call_95cc,NULL);
-return_closcall3(data,  __glo_append_scheme_base,  &c_732187, c_732241, car(((closureN)self_731178)->elements[1]));
+make_pair(c_732241,quote_call_95cc,NULL);
+return_closcall3(data,  __glo_append_scheme_base,  &c_732187, &c_732241, car(((closureN)self_731178)->elements[1]));
 } else { 
   return_closcall1(data,  ((closureN)self_731178)->elements[3],  Cyc_set_cell(data, ((closureN)self_731178)->elements[2], ((closureN)self_731178)->elements[0]));}
 ; 
@@ -8977,8 +9083,8 @@ c_732191.elements[2] = ((closureN)self_731180)->elements[2];
 c_732191.elements[3] = ((closureN)self_731180)->elements[3];
 
 
-alloca_pair(c_732234,quote_call_95cc,NULL);
-return_closcall3(data,  __glo_append_scheme_base,  &c_732191, c_732234, car(((closureN)self_731180)->elements[3]));; 
+make_pair(c_732234,quote_call_95cc,NULL);
+return_closcall3(data,  __glo_append_scheme_base,  &c_732191, &c_732234, car(((closureN)self_731180)->elements[3]));; 
 }
 
 static void __lambda_173(void *data, int argc, object self_731181, object r_73590) {
@@ -9013,16 +9119,16 @@ c_732195.elements[1] = ((closureN)self_731182)->elements[1];
 c_732195.elements[2] = ((closureN)self_731182)->elements[2];
 
 
-alloca_pair(c_732225,quote_result,NULL);
+make_pair(c_732225,quote_result,NULL);
 
-alloca_pair(c_732224,quote__191,c_732225);
+make_pair(c_732224,quote__191,&c_732225);
 
-alloca_pair(c_732230,quote_result,NULL);
+make_pair(c_732230,quote_result,NULL);
 
-alloca_pair(c_732229,quote_k,c_732230);
+make_pair(c_732229,quote_k,&c_732230);
 
-make_list_1(c_732228,c_732229);
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732195, c_732224, &c_732228);; 
+make_list_1(c_732228,&c_732229);
+return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732195, &c_732224, &c_732228);; 
 }
 
 static void __lambda_175(void *data, int argc, object self_731183, object r_73586) {
@@ -9040,14 +9146,14 @@ c_732197.elements[1] = ((closureN)self_731183)->elements[1];
 c_732197.elements[2] = ((closureN)self_731183)->elements[2];
 
 
-alloca_pair(c_732217,quote_f,NULL);
+make_pair(c_732217,quote_f,NULL);
 
-alloca_pair(c_732216,quote_k,c_732217);
+make_pair(c_732216,quote_k,&c_732217);
 
 make_list_3(c_732223,quote_f, quote_k, r_73586);
 
 make_list_1(c_732220,&c_732223);
-return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732197, c_732216, &c_732220);; 
+return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732197, &c_732216, &c_732220);; 
 }
 
 static void __lambda_176(void *data, int argc, object self_731184, object r_73579) {
@@ -9065,10 +9171,10 @@ return_closcall1(data,  ((closureN)self_731184)->elements[2],  Cyc_set_cell(data
 static void __lambda_169(void *data, int argc, object self_731185, object k_73594) {
   if( (boolean_f != __glo_library_127_scheme_cyclone_libraries) ){ 
   
-alloca_pair(c_732183,quote_base,NULL);
+make_pair(c_732183,quote_base,NULL);
 
-alloca_pair(c_732182,quote_scheme,c_732183);
-return_direct_with_clo1(data,  k_73594,__lambda_170,  equalp(car(((closureN)self_731185)->elements[0]), c_732182));
+make_pair(c_732182,quote_scheme,&c_732183);
+return_direct_with_clo1(data,  k_73594,__lambda_170,  equalp(car(((closureN)self_731185)->elements[0]), &c_732182));
 } else { 
   return_direct_with_clo1(data,  k_73594,__lambda_170,  boolean_f);}
 ; 
