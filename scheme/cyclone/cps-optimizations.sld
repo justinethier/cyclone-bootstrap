@@ -353,7 +353,8 @@
                (lambda-body (lambda->exp define-body))
                (fv (filter 
                      (lambda (v)
-                       (not (prim? v)))
+                       (and (not (equal? 'Cyc-seq v))
+                            (not (prim? v))))
                      (free-vars expr)))
               )
 ;(trace:error `(JAE DEBUG ,(define->var expr) ,fv))
@@ -1082,6 +1083,25 @@
                   ;; Could not inline
                   (map (lambda (e) (opt:inline-prims e scope-sym refs)) exp)))
             )) ;;
+            ;; Lambda with a parameter that is never used; sequence code instead to avoid lambda
+            ((and (ast:lambda? (car exp))
+                  (every
+                    (lambda (arg)
+                      (or (not (prim-call? arg))
+                          (not (prim:cont? (car arg)))))
+                    (cdr exp))
+                  (every
+                    (lambda (param)
+                      (with-var param (lambda (var)
+                        (null? (adbv:ref-by var)))))
+                    (ast:lambda-formals->list (car exp)))
+             )
+             (opt:inline-prims 
+               `(Cyc-seq 
+                  ,@(cdr exp)
+                  ,@(ast:lambda-body (car exp))) 
+               scope-sym 
+               refs))
             (else
               (map (lambda (e) (opt:inline-prims e scope-sym refs)) exp))))
           (else 
@@ -1665,7 +1685,7 @@
             (body  (ast:lambda-body exp))
             (new-free-vars 
               (difference 
-                (difference (free-vars body) (ast:lambda-formals->list exp))
+                (difference (free-vars body) (cons 'Cyc-seq (ast:lambda-formals->list exp)))
                 globals))
             (formals (list->lambda-formals
                        (cons new-self-var (ast:lambda-formals->list exp))
@@ -1711,6 +1731,13 @@
      (let ((fn (car exp))
            (args (map cc (cdr exp))))
        (cond
+         ;TODO: what about application of cyc-seq? does this only occur as a nested form? can we combine here or earlier??
+         ;      I think that is what is causing cc printing to explode exponentially!
+         ;((tagged-list? 'Cyc-seq fnc)
+        ; (foldl (lambda (sexp acc) (cons sexp acc)) '() (reverse '(a b c (cyc-seq 1) (cyc-seq 2 ((cyc-seq 3))))))
+        ; TODO: maybe just call a function to 'flatten' seq's
+         ((equal? 'Cyc-seq fn)
+          `(Cyc-seq ,@args))
          ((ast:lambda? fn)
           (cond
             ;; If the lambda argument is not used, flag so the C code is 
@@ -1738,7 +1765,7 @@
               (let* ((body  (ast:lambda-body fn))
                      (new-free-vars 
                        (difference
-                         (difference (free-vars body) (ast:lambda-formals->list fn))
+                         (difference (free-vars body) (cons 'Cyc-seq (ast:lambda-formals->list fn)))
                          globals))
                      (new-free-vars? (> (length new-free-vars) 0)))
                   (if new-free-vars?
