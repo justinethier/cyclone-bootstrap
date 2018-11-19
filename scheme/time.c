@@ -247,6 +247,7 @@ extern object __glo_get_91output_91bytevector_scheme_base;
 extern object __glo_open_91input_91bytevector_scheme_base;
 extern object __glo_open_91output_91bytevector_scheme_base;
 extern object __glo_features_scheme_base;
+extern object __glo_Cyc_91add_91feature_67_scheme_base;
 extern object __glo_Cyc_91version_scheme_base;
 extern object __glo_any_scheme_base;
 extern object __glo_every_scheme_base;
