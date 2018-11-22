@@ -450,6 +450,9 @@
 (define (c-compile-vector exp use-alloca)
   (letrec ((cvar-name (mangle (gensym 'vec)))
            (len (vector-length exp))
+           (addr-op (if use-alloca "" "&"))
+           (deref-op (if use-alloca "->" "."))
+           (c-make-macro (if use-alloca "alloca_empty_vector" "make_empty_vector"))
            ;; Generate code for each member of the vector 
            (loop 
             (lambda (i code)
@@ -467,32 +470,35 @@
                         (c:allocs idx-code) ;; Member alloc at index i
                         (list ;; Assign this member to vector
                           (string-append 
-                            cvar-name ".elements[" (number->string i) "] = "
+                            cvar-name deref-op "elements[" (number->string i) "] = "
                             (c:body idx-code)
                             ";")))))))))
           )
     (cond
       ((zero? len)
         (c-code/vars
-            (string-append "&" cvar-name) ; Code is just the variable name
+            (string-append addr-op cvar-name) ; Code is just the variable name
             (list ; Allocate empty vector
               (string-append 
-                "make_empty_vector(" cvar-name ");"))))
+                c-make-macro "(" cvar-name ");"))))
       (else
         (let ((code
                 (c-code/vars
-                  (string-append "&" cvar-name) ; Code body is just var name
+                  (string-append addr-op cvar-name) ; Code body is just var name
                   (list ; Allocate the vector
                     (string-append 
-                      "make_empty_vector(" cvar-name ");"
-                      cvar-name ".num_elements = " (number->string len) ";"
-                      cvar-name ".elements = (object *)alloca(sizeof(object) * " 
+                      c-make-macro "(" cvar-name ");"
+                      cvar-name deref-op "num_elements = " (number->string len) ";"
+                      cvar-name deref-op "elements = (object *)alloca(sizeof(object) * " 
                                          (number->string len) ");")))))
         (loop 0 code))))))
 
 (define (c-compile-bytevector exp use-alloca)
   (letrec ((cvar-name (mangle (gensym 'vec)))
            (len (bytevector-length exp))
+           (addr-op (if use-alloca "" "&"))
+           (deref-op (if use-alloca "->" "."))
+           (c-make-macro (if use-alloca "alloca_empty_bytevector" "make_empty_bytevector"))
            ;; Generate code for each member of the vector 
            (loop 
             (lambda (i code)
@@ -509,7 +515,7 @@
                         (c:allocs code) ;; Vector alloc
                         (list ;; Assign this member to vector
                           (string-append 
-                            cvar-name ".data[" (number->string i) "] = (unsigned char)"
+                            cvar-name deref-op "data[" (number->string i) "] = (unsigned char)"
                             byte-val
                             ";"))))
                     ))))
@@ -518,19 +524,19 @@
     (cond
       ((zero? len)
         (c-code/vars
-            (string-append "&" cvar-name) ; Code is just the variable name
+            (string-append addr-op cvar-name) ; Code is just the variable name
             (list ; Allocate empty vector
               (string-append 
-                "make_empty_bytevector(" cvar-name ");"))))
+                c-make-macro "(" cvar-name ");"))))
       (else
         (let ((code
                 (c-code/vars
-                  (string-append "&" cvar-name) ; Code body is just var name
+                  (string-append addr-op cvar-name) ; Code body is just var name
                   (list ; Allocate the vector
                     (string-append 
-                      "make_empty_bytevector(" cvar-name ");"
-                      cvar-name ".len = " (number->string len) ";"
-                      cvar-name ".data = alloca(sizeof(char) * " 
+                      c-make-macro "(" cvar-name ");"
+                      cvar-name deref-op "len = " (number->string len) ";"
+                      cvar-name deref-op "data = alloca(sizeof(char) * " 
                                          (number->string len) ");")))))
         (loop 0 code))))))
 
@@ -584,9 +590,10 @@
     ((null? exp)
      (c-code "NULL"))
     ((pair? exp)
+;; TODO: use-alloc support
      (c-compile-scalars exp use-alloca))
     ((vector? exp)
-     (c-compile-vector exp use-alloca))
+     (c-compile-vector exp #t)) ;;use-alloca))
     ((bytevector? exp)
      (c-compile-bytevector exp use-alloca))
     ((bignum? exp)
@@ -614,19 +621,15 @@
                             (number->string n)))))
              (rnum (num2str (real-part exp)))
              (inum (num2str (imag-part exp)))
+             (addr-op (if use-alloca "" "&"))
+             (c-make-macro (if use-alloca "alloca_complex_num" "make_complex_num"))
             )
         (c-code/vars
-            (string-append "&" cvar-name) ; Code is just the variable name
+            (string-append addr-op cvar-name) ; Code is just the variable name
             (list     ; Allocate on the C stack
               (string-append 
-                "make_complex_num(" cvar-name ", " rnum ", " inum ");")))))
+                c-make-macro "(" cvar-name ", " rnum ", " inum ");")))))
     ((integer? exp) 
-;     (let ((cvar-name (mangle (gensym 'c))))
-;        (c-code/vars
-;            (string-append "&" cvar-name) ; Code is just the variable name
-;            (list     ; Allocate integer on the C stack
-;              (string-append 
-;                "make_int(" cvar-name ", " (number->string exp) ");")))))
      (c-code (string-append "obj_int2obj(" 
                (number->string exp) ")")))
     ((real? exp)
@@ -637,12 +640,15 @@
                        ((nan? exp) "(0./0.)")
                        ((infinite? exp) "(1./0.)")
                        (else
-                         (number->string exp)))))
+                         (number->string exp))))
+            (addr-op (if use-alloca "" "&"))
+            (c-make-macro (if use-alloca "alloca_double" "make_double"))
+           )
         (c-code/vars
-            (string-append "&" cvar-name) ; Code is just the variable name
+            (string-append addr-op cvar-name) ; Code is just the variable name
             (list     ; Allocate on the C stack
               (string-append 
-                "make_double(" cvar-name ", " num2str ");")))))
+                c-make-macro "(" cvar-name ", " num2str ");")))))
     ((boolean? exp) 
       (c-code (string-append
                 (if exp "boolean_t" "boolean_f"))))
