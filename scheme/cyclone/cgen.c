@@ -18659,7 +18659,7 @@ return_closcall2(data,  __glo_c_91code_scheme_cyclone_cgen,  k_732137, &c_737306
   return_closcall3(data,  __glo_c_91compile_91scalars_scheme_cyclone_cgen,  k_732137, exp_73240_731345, use_91alloca_73241_731346);
 } else { 
   if( (boolean_f != Cyc_is_vector(exp_73240_731345)) ){ 
-  return_closcall3(data,  __glo_c_91compile_91vector_scheme_cyclone_cgen,  k_732137, exp_73240_731345, boolean_t);
+  return_closcall3(data,  __glo_c_91compile_91vector_scheme_cyclone_cgen,  k_732137, exp_73240_731345, use_91alloca_73241_731346);
 } else { 
   
 closureN_type c_737314;
