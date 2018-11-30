@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -324,6 +324,8 @@ static void __lambda_1(void *data, int argc, closure _,object k_7331, object obj
 
 static void __lambda_8(void *data, int argc, closure _,object k_7369) {
   Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
+
+
 return_closcall1(data,  k_7369,  global_set(__glo_promise_127_scheme_lazy, primitive_procedure_127));; 
 }
 
@@ -400,8 +402,11 @@ return_closcall1(data,  ((closureN)self_7373)->elements[0],  &c_73125);;
 }
 
 static void __lambda_6(void *data, int argc, object self_7374, object k_7361) {
-  if( (boolean_f != car(((closureN)self_7374)->elements[2])) ){ 
-  return_closcall1(data,  k_7361,  car(((closureN)self_7374)->elements[1]));
+    
+if( (boolean_f != car(((closureN)self_7374)->elements[2])) ){ 
+  
+
+return_closcall1(data,  k_7361,  car(((closureN)self_7374)->elements[1]));
 } else { 
   
 closureN_type c_73135;
@@ -421,15 +426,24 @@ return_closcall1(data,  ((closureN)self_7374)->elements[0],  &c_73135);}
 }
 
 static void __lambda_7(void *data, int argc, object self_7375, object x_7317_7328) {
-  if( (boolean_f != car(((closureN)self_7375)->elements[2])) ){ 
-  return_closcall1(data,  ((closureN)self_7375)->elements[0],  car(((closureN)self_7375)->elements[1]));
+    
+if( (boolean_f != car(((closureN)self_7375)->elements[2])) ){ 
+  
+
+return_closcall1(data,  ((closureN)self_7375)->elements[0],  car(((closureN)self_7375)->elements[1]));
 } else { 
-  Cyc_set_cell(data, ((closureN)self_7375)->elements[1], x_7317_7328);Cyc_set_cell(data, ((closureN)self_7375)->elements[2], boolean_t);return_closcall1(data,  ((closureN)self_7375)->elements[0],  car(((closureN)self_7375)->elements[1]));;}
+  
+  
+  Cyc_set_cell(data, ((closureN)self_7375)->elements[1], x_7317_7328);Cyc_set_cell(data, ((closureN)self_7375)->elements[2], boolean_t);
+
+return_closcall1(data,  ((closureN)self_7375)->elements[0],  car(((closureN)self_7375)->elements[1]));;}
 ; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_7347, object expr_738_7322, object rename_739_7323, object compare_7310_7324) {
   Cyc_st_add(data, "scheme/lazy.sld:delay-force");
+
+
 
 make_pair(c_73113,Cyc_cadr(data, expr_738_7322), NULL);
 
@@ -445,6 +459,8 @@ return_closcall1(data,  k_7347,  &c_73101);;
 
 static void __lambda_2(void *data, int argc, closure _,object k_7334, object expr_732_7319, object rename_733_7320, object compare_734_7321) {
   Cyc_st_add(data, "scheme/lazy.sld:delay");
+
+
 
 make_pair(c_7394,Cyc_cadr(data, expr_732_7319), NULL);
 

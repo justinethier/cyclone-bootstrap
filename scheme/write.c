@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -315,13 +315,17 @@ static void __lambda_1(void *data, int argc, closure _,object k_7311, object obj
 static void __lambda_2(void *data, int argc, object self_7330, object r_7313) ;
 
 static void __lambda_5(void *data, int argc, closure _,object k_7327) {
+  
   Cyc_st_add(data, "scheme/write.sld:lib-init:schemewrite");
-global_set(__glo_write_91shared_scheme_write, __glo_write_scheme_write);return_closcall1(data,  k_7327,  global_set(__glo_write_91simple_scheme_write, __glo_write_scheme_write));;; 
+global_set(__glo_write_91shared_scheme_write, __glo_write_scheme_write);
+
+return_closcall1(data,  k_7327,  global_set(__glo_write_91simple_scheme_write, __glo_write_scheme_write));;; 
 }
 
 static void __lambda_3(void *data, int argc, closure _,object k_7317, object obj_733_737, object port_734_738_raw, ...) {
 load_varargs(port_734_738, port_734_738_raw, argc - 2);
   Cyc_st_add(data, "scheme/write.sld:write");
+  
 if( (boolean_f != Cyc_is_null(port_734_738)) ){ 
   
 closureN_type c_7351;
@@ -337,17 +341,24 @@ c_7351.elements[1] = obj_733_737;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7351);
 } else { 
-  return_closcall1(data,  k_7317,  Cyc_write_va(data, 2,obj_733_737, Cyc_car(data, port_734_738)));}
+  
+
+
+
+return_closcall1(data,  k_7317,  Cyc_write_va(data, 2,obj_733_737, Cyc_car(data, port_734_738)));}
 ; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7331, object r_7319) {
-  return_closcall1(data,  ((closureN)self_7331)->elements[0],  Cyc_write_va(data, 2,((closureN)self_7331)->elements[1], r_7319));; 
+  
+
+return_closcall1(data,  ((closureN)self_7331)->elements[0],  Cyc_write_va(data, 2,((closureN)self_7331)->elements[1], r_7319));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7311, object obj_731_735, object port_732_736_raw, ...) {
 load_varargs(port_732_736, port_732_736_raw, argc - 2);
   Cyc_st_add(data, "scheme/write.sld:display");
+  
 if( (boolean_f != Cyc_is_null(port_732_736)) ){ 
   
 closureN_type c_7336;
@@ -363,12 +374,18 @@ c_7336.elements[1] = obj_731_735;
 
 return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7336);
 } else { 
-  return_closcall1(data,  k_7311,  Cyc_display_va(data, 2,obj_731_735, Cyc_car(data, port_732_736)));}
+  
+
+
+
+return_closcall1(data,  k_7311,  Cyc_display_va(data, 2,obj_731_735, Cyc_car(data, port_732_736)));}
 ; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7330, object r_7313) {
-  return_closcall1(data,  ((closureN)self_7330)->elements[0],  Cyc_display_va(data, 2,((closureN)self_7330)->elements[1], r_7313));; 
+  
+
+return_closcall1(data,  ((closureN)self_7330)->elements[0],  Cyc_display_va(data, 2,((closureN)self_7330)->elements[1], r_7313));; 
 }
 
 void c_schemewrite_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

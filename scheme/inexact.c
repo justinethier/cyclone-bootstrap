@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -381,6 +381,7 @@ static void __lambda_10(void *data, int argc, closure _, object k, object z) { r
 static void __lambda_6(void *data, int argc, closure _,object k_7352, object z1_7318_7328, object z2_7319_7329_raw, ...) {
 load_varargs(z2_7319_7329, z2_7319_7329_raw, argc - 2);
   Cyc_st_add(data, "scheme/inexact.sld:log");
+  
 if( (boolean_f != Cyc_is_null(z2_7319_7329)) ){ 
   
 complex_num_type local_73131; object c_73132 = ((inline_function_type)
@@ -388,14 +389,16 @@ complex_num_type local_73131; object c_73132 = ((inline_function_type)
 return_closcall1(data,  k_7352,  c_73132);
 } else { 
   
-complex_num_type local_73140; object c_73141 = ((inline_function_type)
-                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73140,z1_7318_7328);
+complex_num_type local_73136; 
 
-complex_num_type local_73144; object c_73145 = ((inline_function_type)
-                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73144,Cyc_car(data, z2_7319_7329));
+complex_num_type local_73139; object c_73140 = ((inline_function_type)
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73139,z1_7318_7328);
 
-complex_num_type local_73136; object c_73137 = Cyc_fast_div(data,&local_73136,c_73141, c_73145);
-return_closcall1(data,  k_7352,  c_73137);}
+
+
+complex_num_type local_73143; object c_73144 = ((inline_function_type)
+                   ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73143,Cyc_car(data, z2_7319_7329));
+return_closcall1(data,  k_7352,  Cyc_fast_div(data,&local_73136, c_73140, c_73144));}
 ; 
 }
 
@@ -458,7 +461,11 @@ c_7365.elements[1] = k_7333;
 
 make_utf8_string_with_len(c_73109, " return_inexact_double_or_cplx_op(data, k, ", 43, 43);
 
+
+
 make_utf8_string_with_len(c_73112, ", ", 2, 2);
+
+
 
 make_utf8_string_with_len(c_73115, ", z);", 5, 5);
 
@@ -483,7 +490,11 @@ c_7367.elements[2] = r_7341;
 
 make_utf8_string_with_len(c_7397, " return_inexact_double_or_cplx_op_no_cps(data, ptr, ", 52, 52);
 
+
+
 make_utf8_string_with_len(c_73101, ", ", 2, 2);
+
+
 
 make_utf8_string_with_len(c_73105, ", z);", 5, 5);
 
@@ -493,6 +504,8 @@ return_closcall1(data,(closure)&c_7367,  c_7396);;
 
 static void __lambda_3(void *data, int argc, object self_7361, object r_7344) {
   
+
+
 make_utf8_string_with_len(c_7382, "(void *data, int argc, closure _, object k, object z)", 53, 53);
 
 make_utf8_string_with_len(c_7390, "(void *data, object ptr, object z)", 34, 34);
@@ -512,25 +525,25 @@ return_closcall1(data,  ((closureN)self_7361)->elements[1],  &c_7372);;
 }
 
 void c_schemeinexact_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-make_pair(pair_73168, find_or_add_symbol("atan"), find_or_add_symbol("atan__inline__"));
-make_pair(pair_73169, find_or_add_symbol("acos"), find_or_add_symbol("acos__inline__"));
-make_pair(pair_73170, find_or_add_symbol("asin"), find_or_add_symbol("asin__inline__"));
-make_pair(pair_73171, find_or_add_symbol("tan"), find_or_add_symbol("tan__inline__"));
-make_pair(pair_73172, find_or_add_symbol("cos"), find_or_add_symbol("cos__inline__"));
-make_pair(pair_73173, find_or_add_symbol("sin"), find_or_add_symbol("sin__inline__"));
-make_pair(pair_73174, find_or_add_symbol("sqrt"), find_or_add_symbol("sqrt__inline__"));
-make_pair(pair_73175, find_or_add_symbol("exp"), find_or_add_symbol("exp__inline__"));
-make_pair(pair_73176, find_or_add_symbol("c-log"), find_or_add_symbol("c-log__inline__"));
-make_pair(c_73185, &pair_73168, NULL);
-make_pair(c_73184, &pair_73169, &c_73185);
-make_pair(c_73183, &pair_73170, &c_73184);
-make_pair(c_73182, &pair_73171, &c_73183);
-make_pair(c_73181, &pair_73172, &c_73182);
-make_pair(c_73180, &pair_73173, &c_73181);
-make_pair(c_73179, &pair_73174, &c_73180);
-make_pair(c_73178, &pair_73175, &c_73179);
-make_pair(c_73177, &pair_73176, &c_73178);
-(((closure)cont)->fn)(data, 1, cont, &c_73177);
+make_pair(pair_73167, find_or_add_symbol("atan"), find_or_add_symbol("atan__inline__"));
+make_pair(pair_73168, find_or_add_symbol("acos"), find_or_add_symbol("acos__inline__"));
+make_pair(pair_73169, find_or_add_symbol("asin"), find_or_add_symbol("asin__inline__"));
+make_pair(pair_73170, find_or_add_symbol("tan"), find_or_add_symbol("tan__inline__"));
+make_pair(pair_73171, find_or_add_symbol("cos"), find_or_add_symbol("cos__inline__"));
+make_pair(pair_73172, find_or_add_symbol("sin"), find_or_add_symbol("sin__inline__"));
+make_pair(pair_73173, find_or_add_symbol("sqrt"), find_or_add_symbol("sqrt__inline__"));
+make_pair(pair_73174, find_or_add_symbol("exp"), find_or_add_symbol("exp__inline__"));
+make_pair(pair_73175, find_or_add_symbol("c-log"), find_or_add_symbol("c-log__inline__"));
+make_pair(c_73184, &pair_73167, NULL);
+make_pair(c_73183, &pair_73168, &c_73184);
+make_pair(c_73182, &pair_73169, &c_73183);
+make_pair(c_73181, &pair_73170, &c_73182);
+make_pair(c_73180, &pair_73171, &c_73181);
+make_pair(c_73179, &pair_73172, &c_73180);
+make_pair(c_73178, &pair_73173, &c_73179);
+make_pair(c_73177, &pair_73174, &c_73178);
+make_pair(c_73176, &pair_73175, &c_73177);
+(((closure)cont)->fn)(data, 1, cont, &c_73176);
  } 
 void c_schemeinexact_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
@@ -561,44 +574,44 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_nan_127_scheme_inexact);
   add_global((object *) &__glo_define_91inexact_91op_scheme_inexact);
   add_symbol(quote_define_91c);
-  mclosure0(c_73166, (function_type)__lambda_7);c_73166.num_args = 0; 
-  __glo_lib_91init_117schemeinexact_scheme_inexact = &c_73166; 
-  mclosure0(c_73165, (function_type)__lambda_26);c_73165.num_args = 1; 
-  __glo_atan_scheme_inexact = &c_73165; 
-  mclosure0(c_73164, (function_type)__lambda_27);c_73164.num_args = -1; 
-  __glo_atan_191_191inline_191_191_scheme_inexact = &c_73164; 
-  mclosure0(c_73163, (function_type)__lambda_24);c_73163.num_args = 1; 
-  __glo_acos_scheme_inexact = &c_73163; 
-  mclosure0(c_73162, (function_type)__lambda_25);c_73162.num_args = -1; 
-  __glo_acos_191_191inline_191_191_scheme_inexact = &c_73162; 
-  mclosure0(c_73161, (function_type)__lambda_22);c_73161.num_args = 1; 
-  __glo_asin_scheme_inexact = &c_73161; 
-  mclosure0(c_73160, (function_type)__lambda_23);c_73160.num_args = -1; 
-  __glo_asin_191_191inline_191_191_scheme_inexact = &c_73160; 
-  mclosure0(c_73159, (function_type)__lambda_20);c_73159.num_args = 1; 
-  __glo_tan_scheme_inexact = &c_73159; 
-  mclosure0(c_73158, (function_type)__lambda_21);c_73158.num_args = -1; 
-  __glo_tan_191_191inline_191_191_scheme_inexact = &c_73158; 
-  mclosure0(c_73157, (function_type)__lambda_18);c_73157.num_args = 1; 
-  __glo_cos_scheme_inexact = &c_73157; 
-  mclosure0(c_73156, (function_type)__lambda_19);c_73156.num_args = -1; 
-  __glo_cos_191_191inline_191_191_scheme_inexact = &c_73156; 
-  mclosure0(c_73155, (function_type)__lambda_16);c_73155.num_args = 1; 
-  __glo_sin_scheme_inexact = &c_73155; 
-  mclosure0(c_73154, (function_type)__lambda_17);c_73154.num_args = -1; 
-  __glo_sin_191_191inline_191_191_scheme_inexact = &c_73154; 
-  mclosure0(c_73153, (function_type)__lambda_14);c_73153.num_args = 1; 
-  __glo_sqrt_scheme_inexact = &c_73153; 
-  mclosure0(c_73152, (function_type)__lambda_15);c_73152.num_args = -1; 
-  __glo_sqrt_191_191inline_191_191_scheme_inexact = &c_73152; 
-  mclosure0(c_73151, (function_type)__lambda_12);c_73151.num_args = 1; 
-  __glo_exp_scheme_inexact = &c_73151; 
-  mclosure0(c_73150, (function_type)__lambda_13);c_73150.num_args = -1; 
-  __glo_exp_191_191inline_191_191_scheme_inexact = &c_73150; 
-  mclosure0(c_73149, (function_type)__lambda_10);c_73149.num_args = 1; 
-  __glo_c_91log_scheme_inexact = &c_73149; 
-  mclosure0(c_73148, (function_type)__lambda_11);c_73148.num_args = -1; 
-  __glo_c_91log_191_191inline_191_191_scheme_inexact = &c_73148; 
+  mclosure0(c_73165, (function_type)__lambda_7);c_73165.num_args = 0; 
+  __glo_lib_91init_117schemeinexact_scheme_inexact = &c_73165; 
+  mclosure0(c_73164, (function_type)__lambda_26);c_73164.num_args = 1; 
+  __glo_atan_scheme_inexact = &c_73164; 
+  mclosure0(c_73163, (function_type)__lambda_27);c_73163.num_args = -1; 
+  __glo_atan_191_191inline_191_191_scheme_inexact = &c_73163; 
+  mclosure0(c_73162, (function_type)__lambda_24);c_73162.num_args = 1; 
+  __glo_acos_scheme_inexact = &c_73162; 
+  mclosure0(c_73161, (function_type)__lambda_25);c_73161.num_args = -1; 
+  __glo_acos_191_191inline_191_191_scheme_inexact = &c_73161; 
+  mclosure0(c_73160, (function_type)__lambda_22);c_73160.num_args = 1; 
+  __glo_asin_scheme_inexact = &c_73160; 
+  mclosure0(c_73159, (function_type)__lambda_23);c_73159.num_args = -1; 
+  __glo_asin_191_191inline_191_191_scheme_inexact = &c_73159; 
+  mclosure0(c_73158, (function_type)__lambda_20);c_73158.num_args = 1; 
+  __glo_tan_scheme_inexact = &c_73158; 
+  mclosure0(c_73157, (function_type)__lambda_21);c_73157.num_args = -1; 
+  __glo_tan_191_191inline_191_191_scheme_inexact = &c_73157; 
+  mclosure0(c_73156, (function_type)__lambda_18);c_73156.num_args = 1; 
+  __glo_cos_scheme_inexact = &c_73156; 
+  mclosure0(c_73155, (function_type)__lambda_19);c_73155.num_args = -1; 
+  __glo_cos_191_191inline_191_191_scheme_inexact = &c_73155; 
+  mclosure0(c_73154, (function_type)__lambda_16);c_73154.num_args = 1; 
+  __glo_sin_scheme_inexact = &c_73154; 
+  mclosure0(c_73153, (function_type)__lambda_17);c_73153.num_args = -1; 
+  __glo_sin_191_191inline_191_191_scheme_inexact = &c_73153; 
+  mclosure0(c_73152, (function_type)__lambda_14);c_73152.num_args = 1; 
+  __glo_sqrt_scheme_inexact = &c_73152; 
+  mclosure0(c_73151, (function_type)__lambda_15);c_73151.num_args = -1; 
+  __glo_sqrt_191_191inline_191_191_scheme_inexact = &c_73151; 
+  mclosure0(c_73150, (function_type)__lambda_12);c_73150.num_args = 1; 
+  __glo_exp_scheme_inexact = &c_73150; 
+  mclosure0(c_73149, (function_type)__lambda_13);c_73149.num_args = -1; 
+  __glo_exp_191_191inline_191_191_scheme_inexact = &c_73149; 
+  mclosure0(c_73148, (function_type)__lambda_10);c_73148.num_args = 1; 
+  __glo_c_91log_scheme_inexact = &c_73148; 
+  mclosure0(c_73147, (function_type)__lambda_11);c_73147.num_args = -1; 
+  __glo_c_91log_191_191inline_191_191_scheme_inexact = &c_73147; 
   mclosure0(c_73125, (function_type)__lambda_6);c_73125.num_args = 1; 
   __glo_log_scheme_inexact = &c_73125; 
   mclosure0(c_73118, (function_type)__lambda_4);c_73118.num_args = 1; 
@@ -610,57 +623,57 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mmacro(c_7363, (function_type)__lambda_1);c_7363.num_args = 3; 
   __glo_define_91inexact_91op_scheme_inexact = &c_7363; 
 
-  mclosure0(clo_73187, c_schemeinexact_inlinable_lambdas); make_pair(pair_73186, find_or_add_symbol("c_schemeinexact_inlinable_lambdas"), &clo_73187);
-  make_cvar(cvar_73188, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_73189, find_or_add_symbol("lib-init:schemeinexact"), &cvar_73188);
-  make_cvar(cvar_73190, (object *)&__glo_atan_scheme_inexact);make_pair(pair_73191, find_or_add_symbol("atan"), &cvar_73190);
-  make_cvar(cvar_73192, (object *)&__glo_atan_191_191inline_191_191_scheme_inexact);make_pair(pair_73193, find_or_add_symbol("atan__inline__"), &cvar_73192);
-  make_cvar(cvar_73194, (object *)&__glo_acos_scheme_inexact);make_pair(pair_73195, find_or_add_symbol("acos"), &cvar_73194);
-  make_cvar(cvar_73196, (object *)&__glo_acos_191_191inline_191_191_scheme_inexact);make_pair(pair_73197, find_or_add_symbol("acos__inline__"), &cvar_73196);
-  make_cvar(cvar_73198, (object *)&__glo_asin_scheme_inexact);make_pair(pair_73199, find_or_add_symbol("asin"), &cvar_73198);
-  make_cvar(cvar_73200, (object *)&__glo_asin_191_191inline_191_191_scheme_inexact);make_pair(pair_73201, find_or_add_symbol("asin__inline__"), &cvar_73200);
-  make_cvar(cvar_73202, (object *)&__glo_tan_scheme_inexact);make_pair(pair_73203, find_or_add_symbol("tan"), &cvar_73202);
-  make_cvar(cvar_73204, (object *)&__glo_tan_191_191inline_191_191_scheme_inexact);make_pair(pair_73205, find_or_add_symbol("tan__inline__"), &cvar_73204);
-  make_cvar(cvar_73206, (object *)&__glo_cos_scheme_inexact);make_pair(pair_73207, find_or_add_symbol("cos"), &cvar_73206);
-  make_cvar(cvar_73208, (object *)&__glo_cos_191_191inline_191_191_scheme_inexact);make_pair(pair_73209, find_or_add_symbol("cos__inline__"), &cvar_73208);
-  make_cvar(cvar_73210, (object *)&__glo_sin_scheme_inexact);make_pair(pair_73211, find_or_add_symbol("sin"), &cvar_73210);
-  make_cvar(cvar_73212, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_73213, find_or_add_symbol("sin__inline__"), &cvar_73212);
-  make_cvar(cvar_73214, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_73215, find_or_add_symbol("sqrt"), &cvar_73214);
-  make_cvar(cvar_73216, (object *)&__glo_sqrt_191_191inline_191_191_scheme_inexact);make_pair(pair_73217, find_or_add_symbol("sqrt__inline__"), &cvar_73216);
-  make_cvar(cvar_73218, (object *)&__glo_exp_scheme_inexact);make_pair(pair_73219, find_or_add_symbol("exp"), &cvar_73218);
-  make_cvar(cvar_73220, (object *)&__glo_exp_191_191inline_191_191_scheme_inexact);make_pair(pair_73221, find_or_add_symbol("exp__inline__"), &cvar_73220);
-  make_cvar(cvar_73222, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_73223, find_or_add_symbol("c-log"), &cvar_73222);
-  make_cvar(cvar_73224, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_73225, find_or_add_symbol("c-log__inline__"), &cvar_73224);
-  make_cvar(cvar_73226, (object *)&__glo_log_scheme_inexact);make_pair(pair_73227, find_or_add_symbol("log"), &cvar_73226);
-  make_cvar(cvar_73228, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_73229, find_or_add_symbol("finite?"), &cvar_73228);
-  make_cvar(cvar_73230, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73231, find_or_add_symbol("infinite?"), &cvar_73230);
-  make_cvar(cvar_73232, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73233, find_or_add_symbol("nan?"), &cvar_73232);
-  make_cvar(cvar_73234, (object *)&__glo_define_91inexact_91op_scheme_inexact);make_pair(pair_73235, find_or_add_symbol("define-inexact-op"), &cvar_73234);
-make_pair(c_73260, &pair_73186,Cyc_global_variables);
-make_pair(c_73259, &pair_73189, &c_73260);
-make_pair(c_73258, &pair_73191, &c_73259);
-make_pair(c_73257, &pair_73193, &c_73258);
-make_pair(c_73256, &pair_73195, &c_73257);
-make_pair(c_73255, &pair_73197, &c_73256);
-make_pair(c_73254, &pair_73199, &c_73255);
-make_pair(c_73253, &pair_73201, &c_73254);
-make_pair(c_73252, &pair_73203, &c_73253);
-make_pair(c_73251, &pair_73205, &c_73252);
-make_pair(c_73250, &pair_73207, &c_73251);
-make_pair(c_73249, &pair_73209, &c_73250);
-make_pair(c_73248, &pair_73211, &c_73249);
-make_pair(c_73247, &pair_73213, &c_73248);
-make_pair(c_73246, &pair_73215, &c_73247);
-make_pair(c_73245, &pair_73217, &c_73246);
-make_pair(c_73244, &pair_73219, &c_73245);
-make_pair(c_73243, &pair_73221, &c_73244);
-make_pair(c_73242, &pair_73223, &c_73243);
-make_pair(c_73241, &pair_73225, &c_73242);
-make_pair(c_73240, &pair_73227, &c_73241);
-make_pair(c_73239, &pair_73229, &c_73240);
-make_pair(c_73238, &pair_73231, &c_73239);
-make_pair(c_73237, &pair_73233, &c_73238);
-make_pair(c_73236, &pair_73235, &c_73237);
-Cyc_global_variables = &c_73236;
+  mclosure0(clo_73186, c_schemeinexact_inlinable_lambdas); make_pair(pair_73185, find_or_add_symbol("c_schemeinexact_inlinable_lambdas"), &clo_73186);
+  make_cvar(cvar_73187, (object *)&__glo_lib_91init_117schemeinexact_scheme_inexact);make_pair(pair_73188, find_or_add_symbol("lib-init:schemeinexact"), &cvar_73187);
+  make_cvar(cvar_73189, (object *)&__glo_atan_scheme_inexact);make_pair(pair_73190, find_or_add_symbol("atan"), &cvar_73189);
+  make_cvar(cvar_73191, (object *)&__glo_atan_191_191inline_191_191_scheme_inexact);make_pair(pair_73192, find_or_add_symbol("atan__inline__"), &cvar_73191);
+  make_cvar(cvar_73193, (object *)&__glo_acos_scheme_inexact);make_pair(pair_73194, find_or_add_symbol("acos"), &cvar_73193);
+  make_cvar(cvar_73195, (object *)&__glo_acos_191_191inline_191_191_scheme_inexact);make_pair(pair_73196, find_or_add_symbol("acos__inline__"), &cvar_73195);
+  make_cvar(cvar_73197, (object *)&__glo_asin_scheme_inexact);make_pair(pair_73198, find_or_add_symbol("asin"), &cvar_73197);
+  make_cvar(cvar_73199, (object *)&__glo_asin_191_191inline_191_191_scheme_inexact);make_pair(pair_73200, find_or_add_symbol("asin__inline__"), &cvar_73199);
+  make_cvar(cvar_73201, (object *)&__glo_tan_scheme_inexact);make_pair(pair_73202, find_or_add_symbol("tan"), &cvar_73201);
+  make_cvar(cvar_73203, (object *)&__glo_tan_191_191inline_191_191_scheme_inexact);make_pair(pair_73204, find_or_add_symbol("tan__inline__"), &cvar_73203);
+  make_cvar(cvar_73205, (object *)&__glo_cos_scheme_inexact);make_pair(pair_73206, find_or_add_symbol("cos"), &cvar_73205);
+  make_cvar(cvar_73207, (object *)&__glo_cos_191_191inline_191_191_scheme_inexact);make_pair(pair_73208, find_or_add_symbol("cos__inline__"), &cvar_73207);
+  make_cvar(cvar_73209, (object *)&__glo_sin_scheme_inexact);make_pair(pair_73210, find_or_add_symbol("sin"), &cvar_73209);
+  make_cvar(cvar_73211, (object *)&__glo_sin_191_191inline_191_191_scheme_inexact);make_pair(pair_73212, find_or_add_symbol("sin__inline__"), &cvar_73211);
+  make_cvar(cvar_73213, (object *)&__glo_sqrt_scheme_inexact);make_pair(pair_73214, find_or_add_symbol("sqrt"), &cvar_73213);
+  make_cvar(cvar_73215, (object *)&__glo_sqrt_191_191inline_191_191_scheme_inexact);make_pair(pair_73216, find_or_add_symbol("sqrt__inline__"), &cvar_73215);
+  make_cvar(cvar_73217, (object *)&__glo_exp_scheme_inexact);make_pair(pair_73218, find_or_add_symbol("exp"), &cvar_73217);
+  make_cvar(cvar_73219, (object *)&__glo_exp_191_191inline_191_191_scheme_inexact);make_pair(pair_73220, find_or_add_symbol("exp__inline__"), &cvar_73219);
+  make_cvar(cvar_73221, (object *)&__glo_c_91log_scheme_inexact);make_pair(pair_73222, find_or_add_symbol("c-log"), &cvar_73221);
+  make_cvar(cvar_73223, (object *)&__glo_c_91log_191_191inline_191_191_scheme_inexact);make_pair(pair_73224, find_or_add_symbol("c-log__inline__"), &cvar_73223);
+  make_cvar(cvar_73225, (object *)&__glo_log_scheme_inexact);make_pair(pair_73226, find_or_add_symbol("log"), &cvar_73225);
+  make_cvar(cvar_73227, (object *)&__glo_finite_127_scheme_inexact);make_pair(pair_73228, find_or_add_symbol("finite?"), &cvar_73227);
+  make_cvar(cvar_73229, (object *)&__glo_infinite_127_scheme_inexact);make_pair(pair_73230, find_or_add_symbol("infinite?"), &cvar_73229);
+  make_cvar(cvar_73231, (object *)&__glo_nan_127_scheme_inexact);make_pair(pair_73232, find_or_add_symbol("nan?"), &cvar_73231);
+  make_cvar(cvar_73233, (object *)&__glo_define_91inexact_91op_scheme_inexact);make_pair(pair_73234, find_or_add_symbol("define-inexact-op"), &cvar_73233);
+make_pair(c_73259, &pair_73185,Cyc_global_variables);
+make_pair(c_73258, &pair_73188, &c_73259);
+make_pair(c_73257, &pair_73190, &c_73258);
+make_pair(c_73256, &pair_73192, &c_73257);
+make_pair(c_73255, &pair_73194, &c_73256);
+make_pair(c_73254, &pair_73196, &c_73255);
+make_pair(c_73253, &pair_73198, &c_73254);
+make_pair(c_73252, &pair_73200, &c_73253);
+make_pair(c_73251, &pair_73202, &c_73252);
+make_pair(c_73250, &pair_73204, &c_73251);
+make_pair(c_73249, &pair_73206, &c_73250);
+make_pair(c_73248, &pair_73208, &c_73249);
+make_pair(c_73247, &pair_73210, &c_73248);
+make_pair(c_73246, &pair_73212, &c_73247);
+make_pair(c_73245, &pair_73214, &c_73246);
+make_pair(c_73244, &pair_73216, &c_73245);
+make_pair(c_73243, &pair_73218, &c_73244);
+make_pair(c_73242, &pair_73220, &c_73243);
+make_pair(c_73241, &pair_73222, &c_73242);
+make_pair(c_73240, &pair_73224, &c_73241);
+make_pair(c_73239, &pair_73226, &c_73240);
+make_pair(c_73238, &pair_73228, &c_73239);
+make_pair(c_73237, &pair_73230, &c_73238);
+make_pair(c_73236, &pair_73232, &c_73237);
+make_pair(c_73235, &pair_73234, &c_73236);
+Cyc_global_variables = &c_73235;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeinexact_scheme_inexact)->fn)(data, 1, cont, cont);
 }

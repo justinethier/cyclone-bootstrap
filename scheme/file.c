@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -549,6 +549,7 @@ return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_73138);;
 }
 
 static void __lambda_18(void *data, int argc, object self_7381, object r_7359) {
+  
   Cyc_io_close_port(data, r_7359);return_closcall3(data,  __glo_current_91output_91port_scheme_base,  ((closureN)self_7381)->elements[0], quote__121param_91set_67_125, ((closureN)self_7381)->elements[1]);;; 
 }
 
@@ -670,6 +671,7 @@ return_closcall1(data,  __glo_current_91input_91port_scheme_base,  &c_73109);;
 }
 
 static void __lambda_10(void *data, int argc, object self_7374, object r_7343) {
+  
   Cyc_io_close_port(data, r_7343);return_closcall3(data,  __glo_current_91input_91port_scheme_base,  ((closureN)self_7374)->elements[0], quote__121param_91set_67_125, ((closureN)self_7374)->elements[1]);;; 
 }
 

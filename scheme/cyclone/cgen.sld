@@ -733,8 +733,8 @@
          (tptr-type (prim/c-var-pointer p))
          (tptr-comma 
           (cond
-           ((and tptr-type use-alloca?) ",")
-           (tptr-type ",&")
+           ((and tptr-type use-alloca?) tdata-comma)
+           (tptr-type (string-append tdata-comma "&"))
            (else "")))
          (tptr (cond
                 (tptr-type (mangle (gensym 'local)))
@@ -803,7 +803,9 @@
             (list
                 (string-append c-func "(" cv-name tdata-comma tdata)))))
      (else
-        (c-code (string-append c-func "(" tdata))))))
+        (c-code/vars 
+          (string-append c-func "(" tdata tptr-comma tptr)
+          (list tptr-decl))))))
 
 ;; END primitives
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

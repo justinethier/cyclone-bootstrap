@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -121,6 +121,8 @@ static void __lambda_2(void *data, int argc, closure _, object k) ;
 
 static void __lambda_1(void *data, int argc, closure _,object k_735) {
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
+
+
 return_closcall1(data,  k_735,  global_set(__glo_emergency_91exit_scheme_process_91context, primitive_exit));; 
 }
 

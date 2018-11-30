@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -443,6 +443,7 @@ return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7355, &c
 }
 
 static void __lambda_2(void *data, int argc, object self_7343, object r_7341) {
+  
   global_set(__glo_box_91type_srfi_111, r_7341);
 closureN_type c_7358;
 c_7358.hdr.mark = gc_color_red;
@@ -458,6 +459,7 @@ return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7358, __g
 }
 
 static void __lambda_3(void *data, int argc, object self_7344, object r_7340) {
+  
   global_set(__glo_box_127_srfi_111, r_7340);
 closureN_type c_7361;
 c_7361.hdr.mark = gc_color_red;
@@ -490,6 +492,7 @@ return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_7363, &c_7392, __gl
 }
 
 static void __lambda_5(void *data, int argc, object self_7346, object r_7337) {
+  
   global_set(__glo_unbox_srfi_111, r_7337);
 closureN_type c_7366;
 c_7366.hdr.mark = gc_color_red;
@@ -522,6 +525,7 @@ return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_7368, &c_7389, __gl
 }
 
 static void __lambda_7(void *data, int argc, object self_7348, object r_7334) {
+  
   global_set(__glo_set_91box_67_srfi_111, r_7334);
 closureN_type c_7371;
 c_7371.hdr.mark = gc_color_red;
@@ -540,6 +544,8 @@ return_closcall3(data,  __glo_make_91constructor_scheme_base,  &c_7371, &c_7386,
 
 static void __lambda_8(void *data, int argc, object self_7349, object _75make_732_735_738) {
   
+
+
 closureN_type c_7376;
 c_7376.hdr.mark = gc_color_red;
  c_7376.hdr.grayed = 0;

@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.5 
+ ** Version 0.9.6 
  **
  **/
 
@@ -144,6 +144,7 @@ return_closcall1(data,(closure)&c_7330,  c_7359);;
 }
 
 static void __lambda_2(void *data, int argc, object self_7323, object r_7322) {
+  
   global_set(__glo__85version_85_scheme_cyclone_common, r_7322);
 closureN_type c_7333;
 c_7333.hdr.mark = gc_color_red;
@@ -165,6 +166,8 @@ return_closcall1(data,(closure)&c_7333,  c_7352);;;
 }
 
 static void __lambda_3(void *data, int argc, object self_7324, object r_7321) {
+  
+  
   global_set(__glo__85version_91banner_85_scheme_cyclone_common, r_7321);global_set(__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
 closureN_type c_7336;
 c_7336.hdr.mark = gc_color_red;
@@ -186,7 +189,9 @@ return_closcall1(data,(closure)&c_7336,  c_7343);;;
 }
 
 static void __lambda_4(void *data, int argc, object self_7325, object r_7320) {
-  return_closcall1(data,  ((closureN)self_7325)->elements[0],  global_set(__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320));; 
+  
+
+return_closcall1(data,  ((closureN)self_7325)->elements[0],  global_set(__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320));; 
 }
 
 void c_schemecyclonecommon_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
