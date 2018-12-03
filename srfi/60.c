@@ -652,6 +652,9 @@ if( (boolean_f != Cyc_is_null(bs_73171_73261)) ){
   return_closcall1(data,  k_73458,  acc_73172_73262);
 } else { 
   object r_73463;
+   object tmp_k_73458; 
+   object tmp_bs_73171_73261; 
+   object tmp_acc_73172_73262; 
     
 if( (boolean_f != Cyc_car(data, bs_73171_73261)) ){ 
   r_73463 = obj_int2obj(1);
@@ -665,9 +668,10 @@ if( (boolean_f != Cyc_car(data, bs_73171_73261)) ){
 object local_731201 = alloca(sizeof(complex_num_type)); 
 
 object local_731204 = alloca(sizeof(complex_num_type)); 
-bs_73171_73261 = Cyc_cdr(data, bs_73171_73261);
-acc_73172_73262 = Cyc_fast_sum(data,local_731201, Cyc_fast_sum(data,local_731204, acc_73172_73262, acc_73172_73262), r_73463);
-continue_or_gc3(data,self_73571,k_73458, bs_73171_73261, acc_73172_73262);}
+tmp_k_73458 = k_73458;
+tmp_bs_73171_73261 = Cyc_cdr(data, bs_73171_73261);
+tmp_acc_73172_73262 = Cyc_fast_sum(data,local_731201, Cyc_fast_sum(data,local_731204, acc_73172_73262, acc_73172_73262), r_73463);
+ k_73458 = tmp_k_73458;  bs_73171_73261 = tmp_bs_73171_73261;  acc_73172_73262 = tmp_acc_73172_73262; continue_or_gc3(data,self_73571,k_73458, bs_73171_73261, acc_73172_73262);}
 ; 
 }
 }

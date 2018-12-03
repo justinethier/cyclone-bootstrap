@@ -3132,15 +3132,19 @@ static void __lambda_361(void *data, int argc, object self_733955, object k_7334
 Cyc_vector_set(data, ((closureN)self_733955)->elements[3], i_731677_732472, Cyc_vector_ref(data, ((closureN)self_733955)->elements[1], j_731676_732471));  
   object local_737875 = alloca(sizeof(complex_num_type)); 
 if( (boolean_f != Cyc_num_fast_lt_op(data, Cyc_fast_sum(data,local_737875, j_731676_732471, obj_int2obj(1)), ((closureN)self_733955)->elements[0])) ){ 
+   object tmp_k_733422; 
+   object tmp_j_731676_732471; 
+   object tmp_i_731677_732472; 
   
 
 
 object local_737883 = alloca(sizeof(complex_num_type)); 
 
 object local_737886 = alloca(sizeof(complex_num_type)); 
-j_731676_732471 = Cyc_fast_sum(data,local_737883, j_731676_732471, obj_int2obj(1));
-i_731677_732472 = Cyc_fast_sum(data,local_737886, i_731677_732472, obj_int2obj(1));
-continue_or_gc3(data,self_733955,k_733422, j_731676_732471, i_731677_732472);
+tmp_k_733422 = k_733422;
+tmp_j_731676_732471 = Cyc_fast_sum(data,local_737883, j_731676_732471, obj_int2obj(1));
+tmp_i_731677_732472 = Cyc_fast_sum(data,local_737886, i_731677_732472, obj_int2obj(1));
+ k_733422 = tmp_k_733422;  j_731676_732471 = tmp_j_731676_732471;  i_731677_732472 = tmp_i_731677_732472; continue_or_gc3(data,self_733955,k_733422, j_731676_732471, i_731677_732472);
 } else { 
   return_closcall1(data,  k_733422,  boolean_f);}
 ;; 
@@ -3846,12 +3850,15 @@ static void __lambda_382(void *data, int argc, object self_733981, object k_7333
  while(1) {
   
 if( (boolean_f != Cyc_num_fast_lte_op(data, j_731742_732524, ((closureN)self_733981)->elements[1])) ){ 
+   object tmp_k_733382; 
+   object tmp_j_731742_732524; 
   
 
 
 object local_737580 = alloca(sizeof(complex_num_type)); 
-j_731742_732524 = Cyc_fast_sum(data,local_737580, j_731742_732524, j_731742_732524);
-continue_or_gc2(data,self_733981,k_733382, j_731742_732524);
+tmp_k_733382 = k_733382;
+tmp_j_731742_732524 = Cyc_fast_sum(data,local_737580, j_731742_732524, j_731742_732524);
+ k_733382 = tmp_k_733382;  j_731742_732524 = tmp_j_731742_732524; continue_or_gc2(data,self_733981,k_733382, j_731742_732524);
 } else { 
   return_closcall1(data,  k_733382,  j_731742_732524);}
 ; 
@@ -4355,15 +4362,19 @@ static void __lambda_336(void *data, int argc, object self_733927, object k_7333
 Cyc_vector_set(data, ((closureN)self_733927)->elements[3], i_731615_732412, Cyc_vector_ref(data, ((closureN)self_733927)->elements[1], j_731614_732411));  
   object local_737340 = alloca(sizeof(complex_num_type)); 
 if( (boolean_f != Cyc_num_fast_lt_op(data, Cyc_fast_sum(data,local_737340, j_731614_732411, obj_int2obj(1)), ((closureN)self_733927)->elements[0])) ){ 
+   object tmp_k_733317; 
+   object tmp_j_731614_732411; 
+   object tmp_i_731615_732412; 
   
 
 
 object local_737348 = alloca(sizeof(complex_num_type)); 
 
 object local_737351 = alloca(sizeof(complex_num_type)); 
-j_731614_732411 = Cyc_fast_sum(data,local_737348, j_731614_732411, obj_int2obj(1));
-i_731615_732412 = Cyc_fast_sum(data,local_737351, i_731615_732412, obj_int2obj(1));
-continue_or_gc3(data,self_733927,k_733317, j_731614_732411, i_731615_732412);
+tmp_k_733317 = k_733317;
+tmp_j_731614_732411 = Cyc_fast_sum(data,local_737348, j_731614_732411, obj_int2obj(1));
+tmp_i_731615_732412 = Cyc_fast_sum(data,local_737351, i_731615_732412, obj_int2obj(1));
+ k_733317 = tmp_k_733317;  j_731614_732411 = tmp_j_731614_732411;  i_731615_732412 = tmp_i_731615_732412; continue_or_gc3(data,self_733927,k_733317, j_731614_732411, i_731615_732412);
 } else { 
   return_closcall1(data,  k_733317,  boolean_f);}
 ;; 
@@ -5971,15 +5982,19 @@ return_closcall1(data,  k_733151,  Cyc_num_fast_lt_op(data, i_731440_732302, obj
 } else { 
   
   
+   object tmp_k_733151; 
+   object tmp_i_731440_732302; 
+   object tmp_j_731441_732303; 
   Cyc_vector_set(data, ((closureN)self_733863)->elements[2], i_731440_732302, Cyc_vector_ref(data, ((closureN)self_733863)->elements[1], j_731441_732303));
 
 
 object local_736606 = alloca(sizeof(complex_num_type)); 
 
 object local_736609 = alloca(sizeof(complex_num_type)); 
-i_731440_732302 = Cyc_fast_sub(data,local_736606, i_731440_732302, obj_int2obj(1));
-j_731441_732303 = Cyc_fast_sub(data,local_736609, j_731441_732303, obj_int2obj(1));
-continue_or_gc3(data,self_733863,k_733151, i_731440_732302, j_731441_732303);;}
+tmp_k_733151 = k_733151;
+tmp_i_731440_732302 = Cyc_fast_sub(data,local_736606, i_731440_732302, obj_int2obj(1));
+tmp_j_731441_732303 = Cyc_fast_sub(data,local_736609, j_731441_732303, obj_int2obj(1));
+ k_733151 = tmp_k_733151;  i_731440_732302 = tmp_i_731440_732302;  j_731441_732303 = tmp_j_731441_732303; continue_or_gc3(data,self_733863,k_733151, i_731440_732302, j_731441_732303);;}
 ; 
 }
 }
@@ -6118,15 +6133,19 @@ if( (boolean_f != Cyc_num_fast_eq_op(data, i_731425_732291, ((closureN)self_7338
 } else { 
   
   
+   object tmp_k_733133; 
+   object tmp_i_731425_732291; 
+   object tmp_j_731426_732292; 
   Cyc_vector_set(data, ((closureN)self_733859)->elements[2], j_731426_732292, Cyc_vector_ref(data, ((closureN)self_733859)->elements[3], i_731425_732291));
 
 
 object local_736539 = alloca(sizeof(complex_num_type)); 
 
 object local_736542 = alloca(sizeof(complex_num_type)); 
-i_731425_732291 = Cyc_fast_sum(data,local_736539, i_731425_732291, obj_int2obj(1));
-j_731426_732292 = Cyc_fast_sum(data,local_736542, j_731426_732292, obj_int2obj(1));
-continue_or_gc3(data,self_733859,k_733133, i_731425_732291, j_731426_732292);;}
+tmp_k_733133 = k_733133;
+tmp_i_731425_732291 = Cyc_fast_sum(data,local_736539, i_731425_732291, obj_int2obj(1));
+tmp_j_731426_732292 = Cyc_fast_sum(data,local_736542, j_731426_732292, obj_int2obj(1));
+ k_733133 = tmp_k_733133;  i_731425_732291 = tmp_i_731425_732291;  j_731426_732292 = tmp_j_731426_732292; continue_or_gc3(data,self_733859,k_733133, i_731425_732291, j_731426_732292);;}
 ; 
 }
 }
@@ -8632,12 +8651,15 @@ static void __lambda_203(void *data, int argc, object self_733796, object k_7329
   
   object local_735642 = alloca(sizeof(complex_num_type)); 
 if( (boolean_f != Cyc_num_fast_lte_op(data, Cyc_fast_sum(data,local_735642, ls2_731096_732214, ls2_731096_732214), ((closureN)self_733796)->elements[1])) ){ 
+   object tmp_k_732967; 
+   object tmp_ls2_731096_732214; 
   
 
 
 object local_735650 = alloca(sizeof(complex_num_type)); 
-ls2_731096_732214 = Cyc_fast_sum(data,local_735650, ls2_731096_732214, ls2_731096_732214);
-continue_or_gc2(data,self_733796,k_732967, ls2_731096_732214);
+tmp_k_732967 = k_732967;
+tmp_ls2_731096_732214 = Cyc_fast_sum(data,local_735650, ls2_731096_732214, ls2_731096_732214);
+ k_732967 = tmp_k_732967;  ls2_731096_732214 = tmp_ls2_731096_732214; continue_or_gc2(data,self_733796,k_732967, ls2_731096_732214);
 } else { 
   return_closcall1(data,  k_732967,  ls2_731096_732214);}
 ; 
@@ -9716,12 +9738,15 @@ static void __lambda_141(void *data, int argc, object self_733727, object k_7328
   
   object local_735254 = alloca(sizeof(complex_num_type)); 
 if( (boolean_f != Cyc_num_fast_lte_op(data, Cyc_fast_sum(data,local_735254, ls2_73547_732138, ls2_73547_732138), ((closureN)self_733727)->elements[1])) ){ 
+   object tmp_k_732873; 
+   object tmp_ls2_73547_732138; 
   
 
 
 object local_735262 = alloca(sizeof(complex_num_type)); 
-ls2_73547_732138 = Cyc_fast_sum(data,local_735262, ls2_73547_732138, ls2_73547_732138);
-continue_or_gc2(data,self_733727,k_732873, ls2_73547_732138);
+tmp_k_732873 = k_732873;
+tmp_ls2_73547_732138 = Cyc_fast_sum(data,local_735262, ls2_73547_732138, ls2_73547_732138);
+ k_732873 = tmp_k_732873;  ls2_73547_732138 = tmp_ls2_73547_732138; continue_or_gc2(data,self_733727,k_732873, ls2_73547_732138);
 } else { 
   return_closcall1(data,  k_732873,  ls2_73547_732138);}
 ; 

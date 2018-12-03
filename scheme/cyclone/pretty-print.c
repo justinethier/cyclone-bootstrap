@@ -986,6 +986,9 @@ static void __lambda_129(void *data, int argc, object self_731032, object k_7383
  while(1) {
   
 if( (boolean_f != Cyc_is_pair(l_73265_73505)) ){ 
+   object tmp_k_73830; 
+   object tmp_l_73265_73505; 
+   object tmp_i_73266_73506; 
   
 
 
@@ -1009,10 +1012,10 @@ object local_732789 = alloca(sizeof(complex_num_type));
 
 
 
-k_73830 = c_732724;
-l_73265_73505 = Cyc_cdr(data, l_73265_73505);
-i_73266_73506 = Cyc_fast_sum(data,local_732789, i_73266_73506, Cyc_string_length(data, Cyc_car(data, l_73265_73505)));
-continue_or_gc3(data,self_731032,k_73830, l_73265_73505, i_73266_73506);
+tmp_k_73830 = c_732724;
+tmp_l_73265_73505 = Cyc_cdr(data, l_73265_73505);
+tmp_i_73266_73506 = Cyc_fast_sum(data,local_732789, i_73266_73506, Cyc_string_length(data, Cyc_car(data, l_73265_73505)));
+ k_73830 = tmp_k_73830;  l_73265_73505 = tmp_l_73265_73505;  i_73266_73506 = tmp_i_73266_73506; continue_or_gc3(data,self_731032,k_73830, l_73265_73505, i_73266_73506);
 } else { 
   return_closcall2(data,  __glo_make_91string_scheme_base,  k_73830, i_73266_73506);}
 ; 
@@ -1116,15 +1119,19 @@ if( (boolean_f != Cyc_num_fast_lt_op(data, j_73281_73513, Cyc_string_length(data
   
   
   
+   object tmp_k_73838; 
+   object tmp_j_73281_73513; 
+   object tmp_k_73282_73514; 
   Cyc_string_set(data, ((closureN)self_731037)->elements[2], k_73282_73514, Cyc_string_ref(data, Cyc_car(data, ((closureN)self_731037)->elements[0]), j_73281_73513));
 
 
 object local_732766 = alloca(sizeof(complex_num_type)); 
 
 object local_732769 = alloca(sizeof(complex_num_type)); 
-j_73281_73513 = Cyc_fast_sum(data,local_732766, j_73281_73513, obj_int2obj(1));
-k_73282_73514 = Cyc_fast_sum(data,local_732769, k_73282_73514, obj_int2obj(1));
-continue_or_gc3(data,self_731037,k_73838, j_73281_73513, k_73282_73514);;
+tmp_k_73838 = k_73838;
+tmp_j_73281_73513 = Cyc_fast_sum(data,local_732766, j_73281_73513, obj_int2obj(1));
+tmp_k_73282_73514 = Cyc_fast_sum(data,local_732769, k_73282_73514, obj_int2obj(1));
+ k_73838 = tmp_k_73838;  j_73281_73513 = tmp_j_73281_73513;  k_73282_73514 = tmp_k_73282_73514; continue_or_gc3(data,self_731037,k_73838, j_73281_73513, k_73282_73514);;
 } else { 
   return_closcall1(data,  k_73838,  ((closureN)self_731037)->elements[2]);}
 ; 

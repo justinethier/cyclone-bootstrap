@@ -1298,6 +1298,9 @@ if( (boolean_f != assq(data, Cyc_car(data, ls_73113_73192), Cyc_cddr(data, Cyc_c
   
   
 if( (boolean_f != Cyc_is_pair(Cyc_cddr(data, assq(data, Cyc_car(data, ls_73113_73192), Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73496)->elements[4])))))) ){ 
+   object tmp_k_73297; 
+   object tmp_ls_73113_73192; 
+   object tmp_sets_73114_73193; 
   
 
 
@@ -1324,10 +1327,14 @@ alloca_pair(c_73989,quote_res, c_73992);
 alloca_pair(c_73973,Cyc_car(data, Cyc_cddr(data, assq(data, Cyc_car(data, ls_73113_73192), Cyc_cddr(data, Cyc_cddr(data, ((closureN)self_73496)->elements[4]))))), c_73989);
 
 alloca_pair(c_73970,c_73973, sets_73114_73193);
-ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
-sets_73114_73193 = c_73970;
-continue_or_gc3(data,self_73496,k_73297, ls_73113_73192, sets_73114_73193);
+tmp_k_73297 = k_73297;
+tmp_ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
+tmp_sets_73114_73193 = c_73970;
+ k_73297 = tmp_k_73297;  ls_73113_73192 = tmp_ls_73113_73192;  sets_73114_73193 = tmp_sets_73114_73193; continue_or_gc3(data,self_73496,k_73297, ls_73113_73192, sets_73114_73193);
 } else { 
+   object tmp_k_73297; 
+   object tmp_ls_73113_73192; 
+   object tmp_sets_73114_73193; 
   
 
 
@@ -1358,9 +1365,10 @@ alloca_pair(c_731010,((closureN)self_73496)->elements[6], c_731014);
 alloca_pair(c_731006,((closureN)self_73496)->elements[2], c_731010);
 
 alloca_pair(c_731003,c_731006, sets_73114_73193);
-ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
-sets_73114_73193 = c_731003;
-continue_or_gc3(data,self_73496,k_73297, ls_73113_73192, sets_73114_73193);}
+tmp_k_73297 = k_73297;
+tmp_ls_73113_73192 = Cyc_cdr(data, ls_73113_73192);
+tmp_sets_73114_73193 = c_731003;
+ k_73297 = tmp_k_73297;  ls_73113_73192 = tmp_ls_73113_73192;  sets_73114_73193 = tmp_sets_73114_73193; continue_or_gc3(data,self_73496,k_73297, ls_73113_73192, sets_73114_73193);}
 
 } else { 
   

@@ -1622,12 +1622,19 @@ return_closcall3(data,  ((closureN)self_731565)->elements[0],  c_733424, current
 if( (boolean_f != Cyc_char_eq_op(data, Cyc_car(data, input_73412_73655), ((closureN)self_731565)->elements[1])) ){ 
     
 if( (boolean_f != Cyc_is_null(current_73414_73657)) ){ 
+   object tmp_k_731271; 
+   object tmp_input_73412_73655; 
+   object tmp_output_73413_73656; 
+   object tmp_current_73414_73657; 
   
 
 
 
-input_73412_73655 = Cyc_cdr(data, input_73412_73655);
-continue_or_gc4(data,self_731565,k_731271, input_73412_73655, output_73413_73656, current_73414_73657);
+tmp_k_731271 = k_731271;
+tmp_input_73412_73655 = Cyc_cdr(data, input_73412_73655);
+tmp_output_73413_73656 = output_73413_73656;
+tmp_current_73414_73657 = current_73414_73657;
+ k_731271 = tmp_k_731271;  input_73412_73655 = tmp_input_73412_73655;  output_73413_73656 = tmp_output_73413_73656;  current_73414_73657 = tmp_current_73414_73657; continue_or_gc4(data,self_731565,k_731271, input_73412_73655, output_73413_73656, current_73414_73657);
 } else { 
   
 closureN_type * c_733442 = alloca(sizeof(closureN_type));
@@ -1645,6 +1652,10 @@ c_733442->elements[2] = ((closureN)self_731565)->elements[2];
 return_closcall3(data,  ((closureN)self_731565)->elements[0],  c_733442, current_73414_73657, output_73413_73656);}
 
 } else { 
+   object tmp_k_731271; 
+   object tmp_input_73412_73655; 
+   object tmp_output_73413_73656; 
+   object tmp_current_73414_73657; 
   
 
 
@@ -1653,9 +1664,11 @@ return_closcall3(data,  ((closureN)self_731565)->elements[0],  c_733442, current
 
 
 alloca_pair(c_733459,Cyc_car(data, input_73412_73655), current_73414_73657);
-input_73412_73655 = Cyc_cdr(data, input_73412_73655);
-current_73414_73657 = c_733459;
-continue_or_gc4(data,self_731565,k_731271, input_73412_73655, output_73413_73656, current_73414_73657);}
+tmp_k_731271 = k_731271;
+tmp_input_73412_73655 = Cyc_cdr(data, input_73412_73655);
+tmp_output_73413_73656 = output_73413_73656;
+tmp_current_73414_73657 = c_733459;
+ k_731271 = tmp_k_731271;  input_73412_73655 = tmp_input_73412_73655;  output_73413_73656 = tmp_output_73413_73656;  current_73414_73657 = tmp_current_73414_73657; continue_or_gc4(data,self_731565,k_731271, input_73412_73655, output_73413_73656, current_73414_73657);}
 }
 ; 
 }
@@ -3411,15 +3424,19 @@ if( (boolean_f != Cyc_eq(((closureN)self_731485)->elements[3], Cyc_car(data, var
 
 return_closcall1(data,  k_731092,  Cyc_get_cvar(Cyc_car(data, vals_73275_73578)));
 } else { 
+   object tmp_k_731092; 
+   object tmp_vars_73274_73577; 
+   object tmp_vals_73275_73578; 
   
 
 
 
 
 
-vars_73274_73577 = Cyc_cdr(data, vars_73274_73577);
-vals_73275_73578 = Cyc_cdr(data, vals_73275_73578);
-continue_or_gc3(data,self_731485,k_731092, vars_73274_73577, vals_73275_73578);}
+tmp_k_731092 = k_731092;
+tmp_vars_73274_73577 = Cyc_cdr(data, vars_73274_73577);
+tmp_vals_73275_73578 = Cyc_cdr(data, vals_73275_73578);
+ k_731092 = tmp_k_731092;  vars_73274_73577 = tmp_vars_73274_73577;  vals_73275_73578 = tmp_vals_73275_73578; continue_or_gc3(data,self_731485,k_731092, vars_73274_73577, vals_73275_73578);}
 }
 ; 
 }
@@ -4808,6 +4825,9 @@ static void __lambda_75(void *data, int argc, object self_731425, object k_73896
 if( (boolean_f != c_732161) ){ 
   return_closcall1(data,  k_73896,  NULL);
 } else { 
+   object tmp_k_73896; 
+   object tmp_lis_73170_73502; 
+   object tmp_k_73171_73503; 
   
 
 
@@ -4826,10 +4846,10 @@ c_732167->elements[1] = lis_73170_73502;
 
 
 object local_732180 = alloca(sizeof(complex_num_type)); 
-k_73896 = c_732167;
-lis_73170_73502 = Cyc_cdr(data, lis_73170_73502);
-k_73171_73503 = Cyc_fast_sub(data,local_732180, k_73171_73503, obj_int2obj(1));
-continue_or_gc3(data,self_731425,k_73896, lis_73170_73502, k_73171_73503);}
+tmp_k_73896 = c_732167;
+tmp_lis_73170_73502 = Cyc_cdr(data, lis_73170_73502);
+tmp_k_73171_73503 = Cyc_fast_sub(data,local_732180, k_73171_73503, obj_int2obj(1));
+ k_73896 = tmp_k_73896;  lis_73170_73502 = tmp_lis_73170_73502;  k_73171_73503 = tmp_k_73171_73503; continue_or_gc3(data,self_731425,k_73896, lis_73170_73502, k_73171_73503);}
 ; 
 }
 }
@@ -4914,15 +4934,19 @@ static void __lambda_71(void *data, int argc, object self_731421, object k_73887
  while(1) {
   
 if( (boolean_f != Cyc_is_pair(lis_73158_73495)) ){ 
+   object tmp_k_73887; 
+   object tmp_lis_73158_73495; 
+   object tmp_len_73159_73496; 
   
 
 
 
 
 object local_732136 = alloca(sizeof(complex_num_type)); 
-lis_73158_73495 = Cyc_cdr(data, lis_73158_73495);
-len_73159_73496 = Cyc_fast_sum(data,local_732136, len_73159_73496, obj_int2obj(1));
-continue_or_gc3(data,self_731421,k_73887, lis_73158_73495, len_73159_73496);
+tmp_k_73887 = k_73887;
+tmp_lis_73158_73495 = Cyc_cdr(data, lis_73158_73495);
+tmp_len_73159_73496 = Cyc_fast_sum(data,local_732136, len_73159_73496, obj_int2obj(1));
+ k_73887 = tmp_k_73887;  lis_73158_73495 = tmp_lis_73158_73495;  len_73159_73496 = tmp_len_73159_73496; continue_or_gc3(data,self_731421,k_73887, lis_73158_73495, len_73159_73496);
 } else { 
   return_closcall1(data,  k_73887,  len_73159_73496);}
 ; 
@@ -5426,6 +5450,8 @@ static void __lambda_42(void *data, int argc, object self_731400, object k_73811
  while(1) {
   
 if( (boolean_f != Cyc_is_pair(lst_7387_73475)) ){ 
+   object tmp_k_73811; 
+   object tmp_lst_7387_73475; 
   
 
 
@@ -5442,9 +5468,9 @@ c_731907->elements[1] = lst_7387_73475;
 
 
 
-k_73811 = c_731907;
-lst_7387_73475 = Cyc_cdr(data, lst_7387_73475);
-continue_or_gc2(data,self_731400,k_73811, lst_7387_73475);
+tmp_k_73811 = c_731907;
+tmp_lst_7387_73475 = Cyc_cdr(data, lst_7387_73475);
+ k_73811 = tmp_k_73811;  lst_7387_73475 = tmp_lst_7387_73475; continue_or_gc2(data,self_731400,k_73811, lst_7387_73475);
 } else { 
   
 alloca_pair(c_731921,lst_7387_73475, NULL);

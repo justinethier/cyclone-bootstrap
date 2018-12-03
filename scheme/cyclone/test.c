@@ -16884,6 +16884,10 @@ if( (boolean_f != Cyc_is_pair(w_9311_73666_73706_73744_731714)) ){
     
   
 if( (boolean_f != Cyc_is_pair(Cyc_car(data, w_9311_73666_73706_73744_731714))) ){ 
+   object tmp_k_732649; 
+   object tmp_w_9311_73666_73706_73744_731714; 
+   object tmp_key_91ls13_73668_73707_73745_731715; 
+   object tmp_val_91ls14_73669_73708_73746_731716; 
   
 
 
@@ -16900,10 +16904,11 @@ alloca_pair(c_737533,Cyc_car(data, Cyc_car(data, w_9311_73666_73706_73744_731714
 
 
 alloca_pair(c_737540,Cyc_cdr(data, Cyc_car(data, w_9311_73666_73706_73744_731714)), val_91ls14_73669_73708_73746_731716);
-w_9311_73666_73706_73744_731714 = Cyc_cdr(data, w_9311_73666_73706_73744_731714);
-key_91ls13_73668_73707_73745_731715 = c_737533;
-val_91ls14_73669_73708_73746_731716 = c_737540;
-continue_or_gc4(data,self_734320,k_732649, w_9311_73666_73706_73744_731714, key_91ls13_73668_73707_73745_731715, val_91ls14_73669_73708_73746_731716);
+tmp_k_732649 = k_732649;
+tmp_w_9311_73666_73706_73744_731714 = Cyc_cdr(data, w_9311_73666_73706_73744_731714);
+tmp_key_91ls13_73668_73707_73745_731715 = c_737533;
+tmp_val_91ls14_73669_73708_73746_731716 = c_737540;
+ k_732649 = tmp_k_732649;  w_9311_73666_73706_73744_731714 = tmp_w_9311_73666_73706_73744_731714;  key_91ls13_73668_73707_73745_731715 = tmp_key_91ls13_73668_73707_73745_731715;  val_91ls14_73669_73708_73746_731716 = tmp_val_91ls14_73669_73708_73746_731716; continue_or_gc4(data,self_734320,k_732649, w_9311_73666_73706_73744_731714, key_91ls13_73668_73707_73745_731715, val_91ls14_73669_73708_73746_731716);
 } else { 
   return_closcall1(data,  k_732649,  boolean_f);}
 
@@ -24542,15 +24547,19 @@ if( (boolean_f != Cyc_num_fast_gte_op(data, k_7326_731527, Cyc_string_length(dat
   
   
 if( (boolean_f != Cyc_eq(Cyc_string_ref(data, ((closureN)self_734057)->elements[4], j_7325_731526), Cyc_string_ref(data, ((closureN)self_734057)->elements[3], k_7326_731527))) ){ 
+   object tmp_k_732012; 
+   object tmp_j_7325_731526; 
+   object tmp_k_7326_731527; 
   
 
 
 object local_735115 = alloca(sizeof(complex_num_type)); 
 
 object local_735118 = alloca(sizeof(complex_num_type)); 
-j_7325_731526 = Cyc_fast_sum(data,local_735115, j_7325_731526, obj_int2obj(1));
-k_7326_731527 = Cyc_fast_sum(data,local_735118, k_7326_731527, obj_int2obj(1));
-continue_or_gc3(data,self_734057,k_732012, j_7325_731526, k_7326_731527);
+tmp_k_732012 = k_732012;
+tmp_j_7325_731526 = Cyc_fast_sum(data,local_735115, j_7325_731526, obj_int2obj(1));
+tmp_k_7326_731527 = Cyc_fast_sum(data,local_735118, k_7326_731527, obj_int2obj(1));
+ k_732012 = tmp_k_732012;  j_7325_731526 = tmp_j_7325_731526;  k_7326_731527 = tmp_k_7326_731527; continue_or_gc3(data,self_734057,k_732012, j_7325_731526, k_7326_731527);
 } else { 
   
 
