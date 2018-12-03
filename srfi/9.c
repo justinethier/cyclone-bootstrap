@@ -1214,8 +1214,8 @@ c_73741.elements[16] = ((closureN)self_73494)->elements[16];
 c_73741.elements[17] = ((closureN)self_73494)->elements[17];
 
 
-make_cell(c_731049,lp_73112_73191);
-return_direct_with_clo1(data,(closure)&c_73741,__lambda_56,  &c_731049);; 
+pair_type local_731049; 
+return_direct_with_clo1(data,(closure)&c_73741,__lambda_56,  set_cell_as_expr(&local_731049, lp_73112_73191));; 
 }
 
 static void __lambda_56(void *data, int argc, object self_73495, object lp_73112_73191) {

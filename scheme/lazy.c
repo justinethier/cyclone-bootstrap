@@ -361,8 +361,8 @@ c_73120.elements[1] = ((closureN)self_7371)->elements[1];
 c_73120.elements[2] = result_7316_7327;
 
 
-make_cell(c_73162,result_91ready_127_7315_7326);
-return_direct_with_clo1(data,(closure)&c_73120,__lambda_10,  &c_73162);; 
+pair_type local_73162; 
+return_direct_with_clo1(data,(closure)&c_73120,__lambda_10,  set_cell_as_expr(&local_73162, result_91ready_127_7315_7326));; 
 }
 
 static void __lambda_10(void *data, int argc, object self_7372, object result_91ready_127_7315_7326) {
@@ -380,8 +380,8 @@ c_73122.elements[1] = ((closureN)self_7372)->elements[1];
 c_73122.elements[2] = result_91ready_127_7315_7326;
 
 
-make_cell(c_73158,((closureN)self_7372)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_73122,__lambda_9,  &c_73158);; 
+pair_type local_73158; 
+return_direct_with_clo1(data,(closure)&c_73122,__lambda_9,  set_cell_as_expr(&local_73158, ((closureN)self_7372)->elements[2]));; 
 }
 
 static void __lambda_9(void *data, int argc, object self_7373, object result_7316_7327) {

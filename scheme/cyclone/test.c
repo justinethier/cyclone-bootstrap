@@ -4116,8 +4116,8 @@ c_7310269.elements[1] = ((closureN)self_734775)->elements[1];
 c_7310269.elements[2] = plural_731901;
 
 
-make_cell(c_7311107,percent_731900);
-return_direct_with_clo1(data,(closure)&c_7310269,__lambda_1049,  &c_7311107);; 
+pair_type local_7311107; 
+return_direct_with_clo1(data,(closure)&c_7310269,__lambda_1049,  set_cell_as_expr(&local_7311107, percent_731900));; 
 }
 
 static void __lambda_1049(void *data, int argc, object self_734776, object percent_731900) {
@@ -4135,8 +4135,8 @@ c_7310271.elements[1] = ((closureN)self_734776)->elements[1];
 c_7310271.elements[2] = percent_731900;
 
 
-make_cell(c_7311103,((closureN)self_734776)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_7310271,__lambda_1048,  &c_7311103);; 
+pair_type local_7311103; 
+return_direct_with_clo1(data,(closure)&c_7310271,__lambda_1048,  set_cell_as_expr(&local_7311103, ((closureN)self_734776)->elements[2]));; 
 }
 
 static void __lambda_1048(void *data, int argc, object self_734777, object plural_731901) {
@@ -7029,8 +7029,8 @@ c_7310016.elements[1] = ((closureN)self_734719)->elements[1];
 c_7310016.elements[2] = ((closureN)self_734719)->elements[2];
 
 
-make_cell(c_7310264,indent_731879);
-return_direct_with_clo1(data,(closure)&c_7310016,__lambda_1047,  &c_7310264);; 
+pair_type local_7310264; 
+return_direct_with_clo1(data,(closure)&c_7310016,__lambda_1047,  set_cell_as_expr(&local_7310264, indent_731879));; 
 }
 
 static void __lambda_1047(void *data, int argc, object self_734720, object indent_731879) {
@@ -11826,8 +11826,8 @@ c_738874.elements[1] = ((closureN)self_734508)->elements[1];
 c_738874.elements[2] = ((closureN)self_734508)->elements[2];
 
 
-make_cell(c_739009,wr_73896_731778);
-return_direct_with_clo1(data,(closure)&c_738874,__lambda_1046,  &c_739009);; 
+pair_type local_739009; 
+return_direct_with_clo1(data,(closure)&c_738874,__lambda_1046,  set_cell_as_expr(&local_739009, wr_73896_731778));; 
 }
 
 static void __lambda_1046(void *data, int argc, object self_734509, object wr_73896_731778) {
@@ -11996,8 +11996,8 @@ c_738948.elements[2] = ((closureN)self_734515)->elements[2];
 c_738948.elements[3] = ((closureN)self_734515)->elements[3];
 
 
-make_cell(c_738999,lp_73907_731783);
-return_direct_with_clo1(data,(closure)&c_738948,__lambda_1045,  &c_738999);; 
+pair_type local_738999; 
+return_direct_with_clo1(data,(closure)&c_738948,__lambda_1045,  set_cell_as_expr(&local_738999, lp_73907_731783));; 
 }
 
 static void __lambda_1045(void *data, int argc, object self_734516, object lp_73907_731783) {
@@ -16835,8 +16835,8 @@ c_737081.elements[4] = ((closureN)self_734318)->elements[4];
 c_737081.elements[5] = ((closureN)self_734318)->elements[5];
 
 
-make_cell(c_737549,lp_9312_73667_73705_73743_731713);
-return_direct_with_clo1(data,(closure)&c_737081,__lambda_1044,  &c_737549);; 
+pair_type local_737549; 
+return_direct_with_clo1(data,(closure)&c_737081,__lambda_1044,  set_cell_as_expr(&local_737549, lp_9312_73667_73705_73743_731713));; 
 }
 
 static void __lambda_1044(void *data, int argc, object self_734319, object lp_9312_73667_73705_73743_731713) {
@@ -24422,8 +24422,8 @@ c_735059.elements[1] = ((closureN)self_734051)->elements[1];
 c_735059.elements[2] = ((closureN)self_734051)->elements[2];
 
 
-make_cell(c_735132,lp1_7315_731521);
-return_direct_with_clo1(data,(closure)&c_735059,__lambda_1043,  &c_735132);; 
+pair_type local_735132; 
+return_direct_with_clo1(data,(closure)&c_735059,__lambda_1043,  set_cell_as_expr(&local_735132, lp1_7315_731521));; 
 }
 
 static void __lambda_1043(void *data, int argc, object self_734052, object lp1_7315_731521) {
@@ -24510,8 +24510,8 @@ c_735085.elements[4] = ((closureN)self_734055)->elements[4];
 c_735085.elements[5] = ((closureN)self_734055)->elements[5];
 
 
-make_cell(c_735129,lp2_7324_731525);
-return_direct_with_clo1(data,(closure)&c_735085,__lambda_1042,  &c_735129);; 
+pair_type local_735129; 
+return_direct_with_clo1(data,(closure)&c_735085,__lambda_1042,  set_cell_as_expr(&local_735129, lp2_7324_731525));; 
 }
 
 static void __lambda_1042(void *data, int argc, object self_734056, object lp2_7324_731525) {

@@ -1768,8 +1768,8 @@ c_73988.elements[3] = ((closureN)self_73579)->elements[3];
 c_73988.elements[4] = ((closureN)self_73579)->elements[4];
 
 
-make_cell(c_731049,resize_67_73196);
-return_direct_with_clo1(data,(closure)&c_73988,__lambda_110,  &c_731049);; 
+pair_type local_731049; 
+return_direct_with_clo1(data,(closure)&c_73988,__lambda_110,  set_cell_as_expr(&local_731049, resize_67_73196));; 
 }
 
 static void __lambda_110(void *data, int argc, object self_73580, object resize_67_73196) {

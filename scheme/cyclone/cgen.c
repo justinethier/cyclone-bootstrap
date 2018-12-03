@@ -2955,8 +2955,8 @@ c_7311248.elements[8] = ((closureN)self_735298)->elements[7];
 c_7311248.elements[9] = ((closureN)self_735298)->elements[8];
 
 
-make_cell(c_7312463,compiled_91program_91lst_731102_731662);
-return_direct_with_clo1(data,(closure)&c_7311248,__lambda_1059,  &c_7312463);; 
+pair_type local_7312463; 
+return_direct_with_clo1(data,(closure)&c_7311248,__lambda_1059,  set_cell_as_expr(&local_7312463, compiled_91program_91lst_731102_731662));; 
 }
 
 static void __lambda_1059(void *data, int argc, object self_735299, object compiled_91program_91lst_731102_731662) {
@@ -2981,8 +2981,8 @@ c_7311250.elements[8] = ((closureN)self_735299)->elements[8];
 c_7311250.elements[9] = ((closureN)self_735299)->elements[9];
 
 
-make_cell(c_7312459,((closureN)self_735299)->elements[1]);
-return_direct_with_clo1(data,(closure)&c_7311250,__lambda_1058,  &c_7312459);; 
+pair_type local_7312459; 
+return_direct_with_clo1(data,(closure)&c_7311250,__lambda_1058,  set_cell_as_expr(&local_7312459, ((closureN)self_735299)->elements[1]));; 
 }
 
 static void __lambda_1058(void *data, int argc, object self_735300, object compiled_91program_731103_731663) {
@@ -5061,8 +5061,8 @@ c_7311564.elements[6] = ((closureN)self_735340)->elements[5];
 c_7311564.elements[7] = ((closureN)self_735340)->elements[6];
 
 
-make_cell(c_7312001,pairs_731194_731698);
-return_direct_with_clo1(data,(closure)&c_7311564,__lambda_1057,  &c_7312001);; 
+pair_type local_7312001; 
+return_direct_with_clo1(data,(closure)&c_7311564,__lambda_1057,  set_cell_as_expr(&local_7312001, pairs_731194_731698));; 
 }
 
 static void __lambda_1057(void *data, int argc, object self_735341, object pairs_731194_731698) {
@@ -5085,8 +5085,8 @@ c_7311566.elements[6] = ((closureN)self_735341)->elements[6];
 c_7311566.elements[7] = ((closureN)self_735341)->elements[7];
 
 
-make_cell(c_7311997,((closureN)self_735341)->elements[1]);
-return_direct_with_clo1(data,(closure)&c_7311566,__lambda_1056,  &c_7311997);; 
+pair_type local_7311997; 
+return_direct_with_clo1(data,(closure)&c_7311566,__lambda_1056,  set_cell_as_expr(&local_7311997, ((closureN)self_735341)->elements[1]));; 
 }
 
 static void __lambda_1056(void *data, int argc, object self_735342, object head_91pair_731195_731699) {
@@ -5574,8 +5574,8 @@ c_7311633.elements[8] = ((closureN)self_735348)->elements[8];
 c_7311633.elements[9] = ((closureN)self_735348)->elements[9];
 
 
-make_cell(c_7311911,loop_731208_731711);
-return_direct_with_clo1(data,(closure)&c_7311633,__lambda_1055,  &c_7311911);; 
+pair_type local_7311911; 
+return_direct_with_clo1(data,(closure)&c_7311633,__lambda_1055,  set_cell_as_expr(&local_7311911, loop_731208_731711));; 
 }
 
 static void __lambda_1055(void *data, int argc, object self_735349, object loop_731208_731711) {
@@ -6149,8 +6149,8 @@ c_7311658.elements[2] = prev_91clo_731225_731718;
 c_7311658.elements[3] = ((closureN)self_735363)->elements[2];
 
 
-make_cell(c_7311744,this_91clo_731224_731717);
-return_direct_with_clo1(data,(closure)&c_7311658,__lambda_1054,  &c_7311744);; 
+pair_type local_7311744; 
+return_direct_with_clo1(data,(closure)&c_7311658,__lambda_1054,  set_cell_as_expr(&local_7311744, this_91clo_731224_731717));; 
 }
 
 static void __lambda_1054(void *data, int argc, object self_735364, object this_91clo_731224_731717) {
@@ -6169,8 +6169,8 @@ c_7311660.elements[2] = ((closureN)self_735364)->elements[3];
 c_7311660.elements[3] = this_91clo_731224_731717;
 
 
-make_cell(c_7311740,((closureN)self_735364)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_7311660,__lambda_1053,  &c_7311740);; 
+pair_type local_7311740; 
+return_direct_with_clo1(data,(closure)&c_7311660,__lambda_1053,  set_cell_as_expr(&local_7311740, ((closureN)self_735364)->elements[2]));; 
 }
 
 static void __lambda_1053(void *data, int argc, object self_735365, object prev_91clo_731225_731718) {
@@ -6791,8 +6791,8 @@ c_7311302.elements[0] = head_91pair_731158_731679;
 c_7311302.elements[1] = ((closureN)self_735435)->elements[0];
 
 
-make_cell(c_7311505,pairs_731157_731678);
-return_direct_with_clo1(data,(closure)&c_7311302,__lambda_1052,  &c_7311505);; 
+pair_type local_7311505; 
+return_direct_with_clo1(data,(closure)&c_7311302,__lambda_1052,  set_cell_as_expr(&local_7311505, pairs_731157_731678));; 
 }
 
 static void __lambda_1052(void *data, int argc, object self_735436, object pairs_731157_731678) {
@@ -6809,8 +6809,8 @@ c_7311304.elements[0] = ((closureN)self_735436)->elements[1];
 c_7311304.elements[1] = pairs_731157_731678;
 
 
-make_cell(c_7311501,((closureN)self_735436)->elements[0]);
-return_direct_with_clo1(data,(closure)&c_7311304,__lambda_1051,  &c_7311501);; 
+pair_type local_7311501; 
+return_direct_with_clo1(data,(closure)&c_7311304,__lambda_1051,  set_cell_as_expr(&local_7311501, ((closureN)self_735436)->elements[0]));; 
 }
 
 static void __lambda_1051(void *data, int argc, object self_735437, object head_91pair_731158_731679) {
@@ -7064,8 +7064,8 @@ c_7311314.elements[3] = ((closureN)self_735441)->elements[3];
 c_7311314.elements[4] = ((closureN)self_735441)->elements[4];
 
 
-make_cell(c_7311444,loop_731165_731685);
-return_direct_with_clo1(data,(closure)&c_7311314,__lambda_1050,  &c_7311444);; 
+pair_type local_7311444; 
+return_direct_with_clo1(data,(closure)&c_7311314,__lambda_1050,  set_cell_as_expr(&local_7311444, loop_731165_731685));; 
 }
 
 static void __lambda_1050(void *data, int argc, object self_735442, object loop_731165_731685) {
@@ -7668,8 +7668,8 @@ c_7310816.elements[2] = ((closureN)self_735208)->elements[2];
 c_7310816.elements[3] = ((closureN)self_735208)->elements[3];
 
 
-make_cell(c_7311132,preamble_73995_731618);
-return_direct_with_clo1(data,(closure)&c_7310816,__lambda_1049,  &c_7311132);; 
+pair_type local_7311132; 
+return_direct_with_clo1(data,(closure)&c_7310816,__lambda_1049,  set_cell_as_expr(&local_7311132, preamble_73995_731618));; 
 }
 
 static void __lambda_1049(void *data, int argc, object self_735209, object preamble_73995_731618) {
@@ -10254,8 +10254,8 @@ c_7310502.elements[8] = ((closureN)self_735171)->elements[8];
 c_7310502.elements[9] = ((closureN)self_735171)->elements[9];
 
 
-make_cell(c_7310585,loop_73963_731606_734462);
-return_direct_with_clo1(data,(closure)&c_7310502,__lambda_1048,  &c_7310585);; 
+pair_type local_7310585; 
+return_direct_with_clo1(data,(closure)&c_7310502,__lambda_1048,  set_cell_as_expr(&local_7310585, loop_73963_731606_734462));; 
 }
 
 static void __lambda_1048(void *data, int argc, object self_735172, object loop_73963_731606_734462) {
@@ -10607,8 +10607,8 @@ c_7310277.elements[2] = fnc_73901_731581;
 c_7310277.elements[3] = ((closureN)self_735126)->elements[2];
 
 
-make_cell(c_7310345,index_73900_731580);
-return_direct_with_clo1(data,(closure)&c_7310277,__lambda_1047,  &c_7310345);; 
+pair_type local_7310345; 
+return_direct_with_clo1(data,(closure)&c_7310277,__lambda_1047,  set_cell_as_expr(&local_7310345, index_73900_731580));; 
 }
 
 static void __lambda_1047(void *data, int argc, object self_735127, object index_73900_731580) {
@@ -11418,8 +11418,8 @@ c_7310007.elements[2] = ((closureN)self_735087)->elements[2];
 c_7310007.elements[3] = ((closureN)self_735087)->elements[3];
 
 
-make_cell(c_7310085,id_73847_731559);
-return_direct_with_clo1(data,(closure)&c_7310007,__lambda_1046,  &c_7310085);; 
+pair_type local_7310085; 
+return_direct_with_clo1(data,(closure)&c_7310007,__lambda_1046,  set_cell_as_expr(&local_7310085, id_73847_731559));; 
 }
 
 static void __lambda_1046(void *data, int argc, object self_735088, object id_73847_731559) {
@@ -11777,8 +11777,8 @@ c_739840.elements[4] = ((closureN)self_735064)->elements[4];
 c_739840.elements[5] = ((closureN)self_735064)->elements[5];
 
 
-make_cell(c_739969,count_73838_731553);
-return_direct_with_clo1(data,(closure)&c_739840,__lambda_1045,  &c_739969);; 
+pair_type local_739969; 
+return_direct_with_clo1(data,(closure)&c_739840,__lambda_1045,  set_cell_as_expr(&local_739969, count_73838_731553));; 
 }
 
 static void __lambda_1045(void *data, int argc, object self_735065, object count_73838_731553) {
@@ -17170,8 +17170,8 @@ c_738137.elements[8] = ((closureN)self_734828)->elements[6];
 c_738137.elements[9] = ((closureN)self_734828)->elements[7];
 
 
-make_cell(c_738237,num_91args_73491_731429);
-return_direct_with_clo1(data,(closure)&c_738137,__lambda_1044,  &c_738237);; 
+pair_type local_738237; 
+return_direct_with_clo1(data,(closure)&c_738137,__lambda_1044,  set_cell_as_expr(&local_738237, num_91args_73491_731429));; 
 }
 
 static void __lambda_1044(void *data, int argc, object self_734829, object num_91args_73491_731429) {
@@ -17196,8 +17196,8 @@ c_738139.elements[8] = ((closureN)self_734829)->elements[8];
 c_738139.elements[9] = ((closureN)self_734829)->elements[9];
 
 
-make_cell(c_738233,((closureN)self_734829)->elements[5]);
-return_direct_with_clo1(data,(closure)&c_738139,__lambda_1043,  &c_738233);; 
+pair_type local_738233; 
+return_direct_with_clo1(data,(closure)&c_738139,__lambda_1043,  set_cell_as_expr(&local_738233, ((closureN)self_734829)->elements[5]));; 
 }
 
 static void __lambda_1043(void *data, int argc, object self_734830, object cp_91lis_73492_731430) {
@@ -17222,8 +17222,8 @@ c_738141.elements[8] = ((closureN)self_734830)->elements[8];
 c_738141.elements[9] = ((closureN)self_734830)->elements[9];
 
 
-make_cell(c_738229,((closureN)self_734830)->elements[0]);
-return_direct_with_clo1(data,(closure)&c_738141,__lambda_1042,  &c_738229);; 
+pair_type local_738229; 
+return_direct_with_clo1(data,(closure)&c_738141,__lambda_1042,  set_cell_as_expr(&local_738229, ((closureN)self_734830)->elements[0]));; 
 }
 
 static void __lambda_1042(void *data, int argc, object self_734831, object _191c_91compile_91args_73493_731431) {
@@ -20302,8 +20302,8 @@ c_736976.elements[6] = loop_73224_731357;
 c_736976.elements[7] = ((closureN)self_734679)->elements[2];
 
 
-make_cell(c_737232,cvar_91name_73219_731352);
-return_direct_with_clo1(data,(closure)&c_736976,__lambda_1041,  &c_737232);; 
+pair_type local_737232; 
+return_direct_with_clo1(data,(closure)&c_736976,__lambda_1041,  set_cell_as_expr(&local_737232, cvar_91name_73219_731352));; 
 }
 
 static void __lambda_1041(void *data, int argc, object self_734680, object cvar_91name_73219_731352) {
@@ -20326,8 +20326,8 @@ c_736978.elements[6] = ((closureN)self_734680)->elements[6];
 c_736978.elements[7] = ((closureN)self_734680)->elements[7];
 
 
-make_cell(c_737228,((closureN)self_734680)->elements[5]);
-return_direct_with_clo1(data,(closure)&c_736978,__lambda_1040,  &c_737228);; 
+pair_type local_737228; 
+return_direct_with_clo1(data,(closure)&c_736978,__lambda_1040,  set_cell_as_expr(&local_737228, ((closureN)self_734680)->elements[5]));; 
 }
 
 static void __lambda_1040(void *data, int argc, object self_734681, object len_73220_731353) {
@@ -20350,8 +20350,8 @@ c_736980.elements[6] = ((closureN)self_734681)->elements[6];
 c_736980.elements[7] = ((closureN)self_734681)->elements[7];
 
 
-make_cell(c_737224,((closureN)self_734681)->elements[0]);
-return_direct_with_clo1(data,(closure)&c_736980,__lambda_1039,  &c_737224);; 
+pair_type local_737224; 
+return_direct_with_clo1(data,(closure)&c_736980,__lambda_1039,  set_cell_as_expr(&local_737224, ((closureN)self_734681)->elements[0]));; 
 }
 
 static void __lambda_1039(void *data, int argc, object self_734682, object addr_91op_73221_731354) {
@@ -20374,8 +20374,8 @@ c_736982.elements[6] = ((closureN)self_734682)->elements[6];
 c_736982.elements[7] = ((closureN)self_734682)->elements[7];
 
 
-make_cell(c_737220,((closureN)self_734682)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_736982,__lambda_1038,  &c_737220);; 
+pair_type local_737220; 
+return_direct_with_clo1(data,(closure)&c_736982,__lambda_1038,  set_cell_as_expr(&local_737220, ((closureN)self_734682)->elements[2]));; 
 }
 
 static void __lambda_1038(void *data, int argc, object self_734683, object deref_91op_73222_731355) {
@@ -20398,8 +20398,8 @@ c_736984.elements[6] = ((closureN)self_734683)->elements[6];
 c_736984.elements[7] = ((closureN)self_734683)->elements[7];
 
 
-make_cell(c_737216,((closureN)self_734683)->elements[1]);
-return_direct_with_clo1(data,(closure)&c_736984,__lambda_1037,  &c_737216);; 
+pair_type local_737216; 
+return_direct_with_clo1(data,(closure)&c_736984,__lambda_1037,  set_cell_as_expr(&local_737216, ((closureN)self_734683)->elements[1]));; 
 }
 
 static void __lambda_1037(void *data, int argc, object self_734684, object c_91make_91macro_73223_731356) {
@@ -20422,8 +20422,8 @@ c_736986.elements[6] = ((closureN)self_734684)->elements[5];
 c_736986.elements[7] = ((closureN)self_734684)->elements[7];
 
 
-make_cell(c_737212,((closureN)self_734684)->elements[6]);
-return_direct_with_clo1(data,(closure)&c_736986,__lambda_1036,  &c_737212);; 
+pair_type local_737212; 
+return_direct_with_clo1(data,(closure)&c_736986,__lambda_1036,  set_cell_as_expr(&local_737212, ((closureN)self_734684)->elements[6]));; 
 }
 
 static void __lambda_1036(void *data, int argc, object self_734685, object loop_73224_731357) {
@@ -20963,8 +20963,8 @@ c_736714.elements[6] = loop_73208_731345;
 c_736714.elements[7] = ((closureN)self_734655)->elements[2];
 
 
-make_cell(c_736971,cvar_91name_73203_731340);
-return_direct_with_clo1(data,(closure)&c_736714,__lambda_1035,  &c_736971);; 
+pair_type local_736971; 
+return_direct_with_clo1(data,(closure)&c_736714,__lambda_1035,  set_cell_as_expr(&local_736971, cvar_91name_73203_731340));; 
 }
 
 static void __lambda_1035(void *data, int argc, object self_734656, object cvar_91name_73203_731340) {
@@ -20987,8 +20987,8 @@ c_736716.elements[6] = ((closureN)self_734656)->elements[6];
 c_736716.elements[7] = ((closureN)self_734656)->elements[7];
 
 
-make_cell(c_736967,((closureN)self_734656)->elements[5]);
-return_direct_with_clo1(data,(closure)&c_736716,__lambda_1034,  &c_736967);; 
+pair_type local_736967; 
+return_direct_with_clo1(data,(closure)&c_736716,__lambda_1034,  set_cell_as_expr(&local_736967, ((closureN)self_734656)->elements[5]));; 
 }
 
 static void __lambda_1034(void *data, int argc, object self_734657, object len_73204_731341) {
@@ -21011,8 +21011,8 @@ c_736718.elements[6] = ((closureN)self_734657)->elements[6];
 c_736718.elements[7] = ((closureN)self_734657)->elements[7];
 
 
-make_cell(c_736963,((closureN)self_734657)->elements[0]);
-return_direct_with_clo1(data,(closure)&c_736718,__lambda_1033,  &c_736963);; 
+pair_type local_736963; 
+return_direct_with_clo1(data,(closure)&c_736718,__lambda_1033,  set_cell_as_expr(&local_736963, ((closureN)self_734657)->elements[0]));; 
 }
 
 static void __lambda_1033(void *data, int argc, object self_734658, object addr_91op_73205_731342) {
@@ -21035,8 +21035,8 @@ c_736720.elements[6] = ((closureN)self_734658)->elements[6];
 c_736720.elements[7] = ((closureN)self_734658)->elements[7];
 
 
-make_cell(c_736959,((closureN)self_734658)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_736720,__lambda_1032,  &c_736959);; 
+pair_type local_736959; 
+return_direct_with_clo1(data,(closure)&c_736720,__lambda_1032,  set_cell_as_expr(&local_736959, ((closureN)self_734658)->elements[2]));; 
 }
 
 static void __lambda_1032(void *data, int argc, object self_734659, object deref_91op_73206_731343) {
@@ -21059,8 +21059,8 @@ c_736722.elements[6] = ((closureN)self_734659)->elements[6];
 c_736722.elements[7] = ((closureN)self_734659)->elements[7];
 
 
-make_cell(c_736955,((closureN)self_734659)->elements[1]);
-return_direct_with_clo1(data,(closure)&c_736722,__lambda_1031,  &c_736955);; 
+pair_type local_736955; 
+return_direct_with_clo1(data,(closure)&c_736722,__lambda_1031,  set_cell_as_expr(&local_736955, ((closureN)self_734659)->elements[1]));; 
 }
 
 static void __lambda_1031(void *data, int argc, object self_734660, object c_91make_91macro_73207_731344) {
@@ -21083,8 +21083,8 @@ c_736724.elements[6] = ((closureN)self_734660)->elements[5];
 c_736724.elements[7] = ((closureN)self_734660)->elements[7];
 
 
-make_cell(c_736951,((closureN)self_734660)->elements[6]);
-return_direct_with_clo1(data,(closure)&c_736724,__lambda_1030,  &c_736951);; 
+pair_type local_736951; 
+return_direct_with_clo1(data,(closure)&c_736724,__lambda_1030,  set_cell_as_expr(&local_736951, ((closureN)self_734660)->elements[6]));; 
 }
 
 static void __lambda_1030(void *data, int argc, object self_734661, object loop_73208_731345) {
@@ -21608,8 +21608,8 @@ c_736532.elements[5] = num_91args_73180_731329;
 c_736532.elements[6] = ((closureN)self_734634)->elements[2];
 
 
-make_cell(c_736709,addr_91op_73178_731327);
-return_direct_with_clo1(data,(closure)&c_736532,__lambda_1029,  &c_736709);; 
+pair_type local_736709; 
+return_direct_with_clo1(data,(closure)&c_736532,__lambda_1029,  set_cell_as_expr(&local_736709, addr_91op_73178_731327));; 
 }
 
 static void __lambda_1029(void *data, int argc, object self_734635, object addr_91op_73178_731327) {
@@ -21631,8 +21631,8 @@ c_736534.elements[5] = ((closureN)self_734635)->elements[5];
 c_736534.elements[6] = ((closureN)self_734635)->elements[6];
 
 
-make_cell(c_736705,((closureN)self_734635)->elements[2]);
-return_direct_with_clo1(data,(closure)&c_736534,__lambda_1028,  &c_736705);; 
+pair_type local_736705; 
+return_direct_with_clo1(data,(closure)&c_736534,__lambda_1028,  set_cell_as_expr(&local_736705, ((closureN)self_734635)->elements[2]));; 
 }
 
 static void __lambda_1028(void *data, int argc, object self_734636, object c_91make_91macro_73179_731328) {
@@ -21654,8 +21654,8 @@ c_736536.elements[5] = ((closureN)self_734636)->elements[4];
 c_736536.elements[6] = ((closureN)self_734636)->elements[6];
 
 
-make_cell(c_736701,((closureN)self_734636)->elements[5]);
-return_direct_with_clo1(data,(closure)&c_736536,__lambda_1027,  &c_736701);; 
+pair_type local_736701; 
+return_direct_with_clo1(data,(closure)&c_736536,__lambda_1027,  set_cell_as_expr(&local_736701, ((closureN)self_734636)->elements[5]));; 
 }
 
 static void __lambda_1027(void *data, int argc, object self_734637, object num_91args_73180_731329) {
@@ -21677,8 +21677,8 @@ c_736538.elements[5] = num_91args_73180_731329;
 c_736538.elements[6] = ((closureN)self_734637)->elements[6];
 
 
-make_cell(c_736697,((closureN)self_734637)->elements[4]);
-return_direct_with_clo1(data,(closure)&c_736538,__lambda_1026,  &c_736697);; 
+pair_type local_736697; 
+return_direct_with_clo1(data,(closure)&c_736538,__lambda_1026,  set_cell_as_expr(&local_736697, ((closureN)self_734637)->elements[4]));; 
 }
 
 static void __lambda_1026(void *data, int argc, object self_734638, object create_91cons_73181_731330) {
@@ -21700,8 +21700,8 @@ c_736540.elements[5] = ((closureN)self_734638)->elements[5];
 c_736540.elements[6] = ((closureN)self_734638)->elements[6];
 
 
-make_cell(c_736693,((closureN)self_734638)->elements[0]);
-return_direct_with_clo1(data,(closure)&c_736540,__lambda_1025,  &c_736693);; 
+pair_type local_736693; 
+return_direct_with_clo1(data,(closure)&c_736540,__lambda_1025,  set_cell_as_expr(&local_736693, ((closureN)self_734638)->elements[0]));; 
 }
 
 static void __lambda_1025(void *data, int argc, object self_734639, object _191c_91compile_91scalars_73182_731331) {
@@ -22451,8 +22451,8 @@ c_736360.elements[1] = ((closureN)self_734614)->elements[1];
 c_736360.elements[2] = ((closureN)self_734614)->elements[2];
 
 
-make_cell(c_736398,preamble_73124_731312);
-return_direct_with_clo1(data,(closure)&c_736360,__lambda_1024,  &c_736398);; 
+pair_type local_736398; 
+return_direct_with_clo1(data,(closure)&c_736360,__lambda_1024,  set_cell_as_expr(&local_736398, preamble_73124_731312));; 
 }
 
 static void __lambda_1024(void *data, int argc, object self_734615, object preamble_73124_731312) {
@@ -24203,8 +24203,8 @@ c_735550.elements[0] = ((closureN)self_734548)->elements[0];
 c_735550.elements[1] = ((closureN)self_734548)->elements[1];
 
 
-make_cell(c_735697,next_736_731243);
-return_direct_with_clo1(data,(closure)&c_735550,__lambda_1023,  &c_735697);; 
+pair_type local_735697; 
+return_direct_with_clo1(data,(closure)&c_735550,__lambda_1023,  set_cell_as_expr(&local_735697, next_736_731243));; 
 }
 
 static void __lambda_1023(void *data, int argc, object self_734549, object next_736_731243) {
