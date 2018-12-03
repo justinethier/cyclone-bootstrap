@@ -443,35 +443,35 @@ return_closcall1(data,  ((closureN)self_7375)->elements[0],  car(((closureN)self
 static void __lambda_3(void *data, int argc, closure _,object k_7347, object expr_738_7322, object rename_739_7323, object compare_7310_7324) {
   Cyc_st_add(data, "scheme/lazy.sld:delay-force");
 
+pair_type local_73101; 
+
+pair_type local_73104; 
+
+pair_type local_73107; 
+
+pair_type local_73110; 
+
+pair_type local_73113; 
 
 
-make_pair(c_73113,Cyc_cadr(data, expr_738_7322), NULL);
-
-make_pair(c_73110,NULL, &c_73113);
-
-make_pair(c_73107,quote_lambda, &c_73110);
-
-make_pair(c_73104,&c_73107, NULL);
-
-make_pair(c_73101,quote_make_91promise, &c_73104);
-return_closcall1(data,  k_7347,  &c_73101);; 
+return_closcall1(data,  k_7347,  set_pair_as_expr(&local_73101, quote_make_91promise, set_pair_as_expr(&local_73104, set_pair_as_expr(&local_73107, quote_lambda, set_pair_as_expr(&local_73110, NULL, set_pair_as_expr(&local_73113, Cyc_cadr(data, expr_738_7322), NULL))), NULL)));; 
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_7334, object expr_732_7319, object rename_733_7320, object compare_734_7321) {
   Cyc_st_add(data, "scheme/lazy.sld:delay");
 
+pair_type local_7382; 
+
+pair_type local_7385; 
+
+pair_type local_7388; 
+
+pair_type local_7391; 
+
+pair_type local_7394; 
 
 
-make_pair(c_7394,Cyc_cadr(data, expr_732_7319), NULL);
-
-make_pair(c_7391,NULL, &c_7394);
-
-make_pair(c_7388,quote_lambda, &c_7391);
-
-make_pair(c_7385,&c_7388, NULL);
-
-make_pair(c_7382,quote_make_91promise, &c_7385);
-return_closcall1(data,  k_7334,  &c_7382);; 
+return_closcall1(data,  k_7334,  set_pair_as_expr(&local_7382, quote_make_91promise, set_pair_as_expr(&local_7385, set_pair_as_expr(&local_7388, quote_lambda, set_pair_as_expr(&local_7391, NULL, set_pair_as_expr(&local_7394, Cyc_cadr(data, expr_732_7319), NULL))), NULL)));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7331, object object_731_7318) {

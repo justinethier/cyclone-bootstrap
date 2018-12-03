@@ -881,58 +881,58 @@ c_731411.elements = (object *)alloca(sizeof(object) * 1);
 c_731411.elements[0] = _75make_732_73160_73218;
 
   global_set(__glo_new_91al_scheme_cyclone_array_91list, &c_731411);
-make_pair(c_731339,quote_array_91list, quote_items);
+pair_type local_731333; 
 
-make_pair(c_731357,quote_items, NULL);
+pair_type local_731336; 
 
-make_pair(c_731354,quote_length, &c_731357);
+pair_type local_731339; 
 
-make_pair(c_731351,&c_731354, NULL);
+pair_type local_731342; 
 
-make_pair(c_731348,quote_len, &c_731351);
+pair_type local_731345; 
 
-make_pair(c_731345,quote_define, &c_731348);
+pair_type local_731348; 
 
-make_pair(c_731375,quote_len, NULL);
+pair_type local_731351; 
 
-make_pair(c_731372,quote_make_91array_91list, &c_731375);
+pair_type local_731354; 
 
-make_pair(c_731369,&c_731372, NULL);
+pair_type local_731357; 
 
-make_pair(c_731366,quote_al, &c_731369);
+pair_type local_731360; 
 
-make_pair(c_731363,quote_define, &c_731366);
+pair_type local_731363; 
 
-make_pair(c_731393,quote_x, NULL);
+pair_type local_731366; 
 
-make_pair(c_731405,quote_x, NULL);
+pair_type local_731369; 
 
-make_pair(c_731402,quote_al, &c_731405);
+pair_type local_731372; 
 
-make_pair(c_731399,quote_array_91list_91insert_67, &c_731402);
+pair_type local_731375; 
 
-make_pair(c_731396,&c_731399, NULL);
+pair_type local_731378; 
 
-make_pair(c_731390,&c_731393, &c_731396);
+pair_type local_731381; 
 
-make_pair(c_731387,quote_lambda, &c_731390);
+pair_type local_731384; 
 
-make_pair(c_731384,&c_731387, NULL);
+pair_type local_731387; 
 
-make_pair(c_731381,quote_for_91each, &c_731384);
+pair_type local_731390; 
 
-make_pair(c_731408,quote_al, NULL);
+pair_type local_731393; 
 
-make_pair(c_731378,&c_731381, &c_731408);
+pair_type local_731396; 
 
-make_pair(c_731360,&c_731363, &c_731378);
+pair_type local_731399; 
 
-make_pair(c_731342,&c_731345, &c_731360);
+pair_type local_731402; 
 
-make_pair(c_731336,&c_731339, &c_731342);
+pair_type local_731405; 
 
-make_pair(c_731333,quote_define, &c_731336);
-return_closcall1(data,  ((closureN)self_73633)->elements[0],  &c_731333);;; 
+pair_type local_731408; 
+return_closcall1(data,  ((closureN)self_73633)->elements[0],  set_pair_as_expr(&local_731333, quote_define, set_pair_as_expr(&local_731336, set_pair_as_expr(&local_731339, quote_array_91list, quote_items), set_pair_as_expr(&local_731342, set_pair_as_expr(&local_731345, quote_define, set_pair_as_expr(&local_731348, quote_len, set_pair_as_expr(&local_731351, set_pair_as_expr(&local_731354, quote_length, set_pair_as_expr(&local_731357, quote_items, NULL)), NULL))), set_pair_as_expr(&local_731360, set_pair_as_expr(&local_731363, quote_define, set_pair_as_expr(&local_731366, quote_al, set_pair_as_expr(&local_731369, set_pair_as_expr(&local_731372, quote_make_91array_91list, set_pair_as_expr(&local_731375, quote_len, NULL)), NULL))), set_pair_as_expr(&local_731378, set_pair_as_expr(&local_731381, quote_for_91each, set_pair_as_expr(&local_731384, set_pair_as_expr(&local_731387, quote_lambda, set_pair_as_expr(&local_731390, set_pair_as_expr(&local_731393, quote_x, NULL), set_pair_as_expr(&local_731396, set_pair_as_expr(&local_731399, quote_array_91list_91insert_67, set_pair_as_expr(&local_731402, quote_al, set_pair_as_expr(&local_731405, quote_x, NULL))), NULL))), NULL)), set_pair_as_expr(&local_731408, quote_al, NULL)))))));;; 
 }
 
 static void __lambda_105(void *data, int argc, object self_73634, object k_73515, object x_733_73161_73219, object y_734_73162_73220, object z_735_73163_73221) {
@@ -2074,8 +2074,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_73920, &c_73926, ((closureN
 
 static void __lambda_31(void *data, int argc, object self_73545, object r_73247) {
   
-make_pair(c_73925,r_73247, boolean_f);
-return_closcall1(data,  ((closureN)self_73545)->elements[0],  &c_73925);; 
+pair_type local_73925; 
+return_closcall1(data,  ((closureN)self_73545)->elements[0],  set_pair_as_expr(&local_73925, r_73247, boolean_f));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_73546, object k_73249) {
@@ -2841,8 +2841,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_73738, ((closureN)s
 
 static void __lambda_28(void *data, int argc, object self_73571, object r_73267) {
   
-make_pair(c_73743,r_73267, boolean_f);
-return_closcall1(data,  ((closureN)self_73571)->elements[0],  &c_73743);; 
+pair_type local_73743; 
+return_closcall1(data,  ((closureN)self_73571)->elements[0],  set_pair_as_expr(&local_73743, r_73267, boolean_f));; 
 }
 
 void c_schemecyclonearray_91list_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

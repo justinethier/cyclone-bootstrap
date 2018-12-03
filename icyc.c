@@ -1272,26 +1272,26 @@ static void __lambda_3(void *data, int argc, object self_73147, object k_7392, o
     
 if( (boolean_f != equalp(arg_733_7374, ((closureN)self_73147)->elements[0])) ){ 
   
+pair_type local_73191; 
 
 
-make_pair(c_73191,((closureN)self_73147)->elements[0], Cyc_cdr(data, accum_734_7375));
-return_closcall1(data,  k_7392,  &c_73191);
+return_closcall1(data,  k_7392,  set_pair_as_expr(&local_73191, ((closureN)self_73147)->elements[0], Cyc_cdr(data, accum_734_7375)));
 } else { 
     
 if( (boolean_f != Cyc_car(data, accum_734_7375)) ){ 
   
+pair_type local_73200; 
+
+pair_type local_73203; 
 
 
-make_pair(c_73203,arg_733_7374, Cyc_cdr(data, accum_734_7375));
-
-make_pair(c_73200,boolean_f, &c_73203);
-return_closcall1(data,  k_7392,  &c_73200);
+return_closcall1(data,  k_7392,  set_pair_as_expr(&local_73200, boolean_f, set_pair_as_expr(&local_73203, arg_733_7374, Cyc_cdr(data, accum_734_7375))));
 } else { 
   
+pair_type local_73209; 
 
 
-make_pair(c_73209,boolean_f, Cyc_cdr(data, accum_734_7375));
-return_closcall1(data,  k_7392,  &c_73209);}
+return_closcall1(data,  k_7392,  set_pair_as_expr(&local_73209, boolean_f, Cyc_cdr(data, accum_734_7375)));}
 }
 ; 
 }

@@ -864,8 +864,8 @@ static void __lambda_50(void *data, int argc, object self_73377, object r_73320)
   
 
 
-make_pair(c_73879,((closureN)self_73377)->elements[3], ((closureN)self_73377)->elements[1]);
-return_closcall3(data,  car(((closureN)self_73377)->elements[2]),  ((closureN)self_73377)->elements[0], &c_73879, r_73320);; 
+pair_type local_73879; 
+return_closcall3(data,  car(((closureN)self_73377)->elements[2]),  ((closureN)self_73377)->elements[0], set_pair_as_expr(&local_73879, ((closureN)self_73377)->elements[3], ((closureN)self_73377)->elements[1]), r_73320);; 
 }
 
 static void __lambda_49(void *data, int argc, object self_73376, object r_73318) {
@@ -992,8 +992,8 @@ static void __lambda_44(void *data, int argc, object self_73370, object r_73306)
   
 
 
-make_pair(c_73826,((closureN)self_73370)->elements[3], ((closureN)self_73370)->elements[1]);
-return_closcall3(data,  car(((closureN)self_73370)->elements[2]),  ((closureN)self_73370)->elements[0], &c_73826, r_73306);; 
+pair_type local_73826; 
+return_closcall3(data,  car(((closureN)self_73370)->elements[2]),  ((closureN)self_73370)->elements[0], set_pair_as_expr(&local_73826, ((closureN)self_73370)->elements[3], ((closureN)self_73370)->elements[1]), r_73306);; 
 }
 
 static void __lambda_43(void *data, int argc, object self_73369, object r_73304) {
@@ -1291,8 +1291,8 @@ static void __lambda_25(void *data, int argc, object self_73350, object r_73257)
   
 
 
-make_pair(c_73573,((closureN)self_73350)->elements[3], ((closureN)self_73350)->elements[1]);
-return_closcall3(data,  car(((closureN)self_73350)->elements[2]),  ((closureN)self_73350)->elements[0], &c_73573, r_73257);; 
+pair_type local_73573; 
+return_closcall3(data,  car(((closureN)self_73350)->elements[2]),  ((closureN)self_73350)->elements[0], set_pair_as_expr(&local_73573, ((closureN)self_73350)->elements[3], ((closureN)self_73350)->elements[1]), r_73257);; 
 }
 
 static void __lambda_24(void *data, int argc, object self_73349, object r_73251) {
@@ -1425,8 +1425,8 @@ if( (boolean_f != Cyc_is_eof_object(obj_7327_73157)) ){
   
 
 
-make_pair(c_73491,obj_7327_73157, ((closureN)self_73341)->elements[3]);
-return_closcall3(data,  car(((closureN)self_73341)->elements[2]),  ((closureN)self_73341)->elements[1], ((closureN)self_73341)->elements[0], &c_73491);}
+pair_type local_73491; 
+return_closcall3(data,  car(((closureN)self_73341)->elements[2]),  ((closureN)self_73341)->elements[1], ((closureN)self_73341)->elements[0], set_pair_as_expr(&local_73491, obj_7327_73157, ((closureN)self_73341)->elements[3]));}
 ; 
 }
 
@@ -1541,19 +1541,19 @@ return_closcall2(data,  __glo__91_125dotted_91list_scheme_read,  &c_73418, Cyc_c
 
 static void __lambda_7(void *data, int argc, object self_73333, object r_73212) {
   
+pair_type local_73423; 
 
 
-make_pair(c_73423,Cyc_car(data, ((closureN)self_73333)->elements[1]), r_73212);
-return_closcall1(data,  ((closureN)self_73333)->elements[0],  &c_73423);; 
+return_closcall1(data,  ((closureN)self_73333)->elements[0],  set_pair_as_expr(&local_73423, Cyc_car(data, ((closureN)self_73333)->elements[1]), r_73212));; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_73203, object expr_736_73144, object rename_737_73145, object compare_738_73146) {
   Cyc_st_add(data, "scheme/read.sld:include-ci");
 
+pair_type local_73403; 
 
 
-make_pair(c_73403,quote_include, Cyc_cdr(data, expr_736_73144));
-return_closcall1(data,  k_73203,  &c_73403);; 
+return_closcall1(data,  k_73203,  set_pair_as_expr(&local_73403, quote_include, Cyc_cdr(data, expr_736_73144)));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73191, object expr_731_73139, object rename_732_73140, object compare_733_73141) {
@@ -1590,11 +1590,11 @@ static void __lambda_4(void *data, int argc, object self_73332, object k_73200, 
 
 static void __lambda_2(void *data, int argc, object self_73330, object r_73194) {
   
+pair_type local_73388; 
+
 make_pair(c_73389,quote_begin,NULL);
 
-make_pair(c_73388,&c_73389, r_73194);
-
-object c_73385 = apply(data,  ((closureN)self_73330)->elements[0],__glo_append_scheme_base, &c_73388);
+object c_73385 = apply(data,  ((closureN)self_73330)->elements[0],__glo_append_scheme_base, set_pair_as_expr(&local_73388, &c_73389, r_73194));
 return_closcall1(data,  ((closureN)self_73330)->elements[0],  c_73385);; 
 }
 

@@ -1147,14 +1147,14 @@ static void __lambda_180(void *data, int argc, object self_731152, object r_7398
   
 
 
-make_pair(c_732581,((closureN)self_731152)->elements[2], r_73988);
-return_closcall1(data,  ((closureN)self_731152)->elements[1],  Cyc_set_cdr(data, ((closureN)self_731152)->elements[0], &c_732581));; 
+pair_type local_732581; 
+return_closcall1(data,  ((closureN)self_731152)->elements[1],  Cyc_set_cdr(data, ((closureN)self_731152)->elements[0], set_pair_as_expr(&local_732581, ((closureN)self_731152)->elements[2], r_73988)));; 
 }
 
 static void __lambda_181(void *data, int argc, object self_731153, object k_73983) {
   
-make_pair(c_732567,boolean_f, NULL);
-return_closcall1(data,  k_73983,  &c_732567);; 
+pair_type local_732567; 
+return_closcall1(data,  k_73983,  set_pair_as_expr(&local_732567, boolean_f, NULL));; 
 }
 
 static void __lambda_182(void *data, int argc, object self_731154, object k_73981, object name_73322_73509) {
@@ -1184,10 +1184,10 @@ return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_732538, prim
 
 static void __lambda_184(void *data, int argc, object self_731156, object r_73979) {
   
-make_pair(c_732544,boolean_f,NULL);
+pair_type local_732543; 
 
-make_pair(c_732543,&c_732544, r_73979);
-return_closcall1(data,  ((closureN)self_731156)->elements[0],  &c_732543);; 
+make_pair(c_732544,boolean_f,NULL);
+return_closcall1(data,  ((closureN)self_731156)->elements[0],  set_pair_as_expr(&local_732543, &c_732544, r_73979));; 
 }
 
 static void __lambda_185(void *data, int argc, object self_731157, object k_73960, object node_73323_73510, object resolved_73324_73511, object seen_73325_73512) {
@@ -1498,10 +1498,10 @@ c_732407.elements[4] = ((closureN)self_731171)->elements[4];
 c_732407.elements[5] = ((closureN)self_731171)->elements[5];
 
 
+pair_type local_732448; 
 
 
-make_pair(c_732448,r_73958, car(((closureN)self_731171)->elements[5]));
-return_direct_with_clo1(data,(closure)&c_732407,__lambda_200,  &c_732448);; 
+return_direct_with_clo1(data,(closure)&c_732407,__lambda_200,  set_pair_as_expr(&local_732448, r_73958, car(((closureN)self_731171)->elements[5])));; 
 }
 
 static void __lambda_200(void *data, int argc, object self_731172, object r_73957) {
@@ -1857,8 +1857,8 @@ c_732342.elements[2] = ((closureN)self_731139)->elements[1];
 c_732342.elements[3] = ((closureN)self_731139)->elements[3];
 
 
-make_pair(c_732363,((closureN)self_731139)->elements[2], dep_91libs_73317_73487);
-return_direct_with_clo1(data,(closure)&c_732342,__lambda_174,  &c_732363);; 
+pair_type local_732363; 
+return_direct_with_clo1(data,(closure)&c_732342,__lambda_174,  set_pair_as_expr(&local_732363, ((closureN)self_731139)->elements[2], dep_91libs_73317_73487));; 
 }
 
 static void __lambda_174(void *data, int argc, object self_731140, object r_73935) {
@@ -1877,10 +1877,10 @@ c_732344.elements[2] = ((closureN)self_731140)->elements[2];
 c_732344.elements[3] = ((closureN)self_731140)->elements[3];
 
 
+pair_type local_732357; 
 
 
-make_pair(c_732357,r_73935, car(((closureN)self_731140)->elements[3]));
-return_direct_with_clo1(data,(closure)&c_732344,__lambda_175,  &c_732357);; 
+return_direct_with_clo1(data,(closure)&c_732344,__lambda_175,  set_pair_as_expr(&local_732357, r_73935, car(((closureN)self_731140)->elements[3])));; 
 }
 
 static void __lambda_175(void *data, int argc, object self_731141, object r_73934) {
@@ -2261,8 +2261,8 @@ if( (boolean_f != Cyc_is_pair(Cyc_car(data, i_73251_73457))) ){
   
   id_73253_73459 = Cyc_car(data, i_73251_73457);}
 ;
-make_pair(c_732168,id_73253_73459, is_73252_73458);
-return_closcall1(data,  k_73869,  &c_732168);; 
+pair_type local_732168; 
+return_closcall1(data,  k_73869,  set_pair_as_expr(&local_732168, id_73253_73459, is_73252_73458));; 
 }
 
 static void __lambda_138(void *data, int argc, closure _,object k_73853, object imports_73243_73449, object append_91dirs_73244_73450, object prepend_91dirs_73245_73451) {
@@ -2361,10 +2361,10 @@ return_closcall4(data,  __glo_foldr_scheme_base,  ((closureN)self_731112)->eleme
 
 static void __lambda_144(void *data, int argc, object self_731113, object k_73862, object id_73248_73454, object ids_73249_73455) {
   
-make_pair(c_732146,id_73248_73454, ((closureN)self_731113)->elements[0]);
+pair_type local_732143; 
 
-make_pair(c_732143,&c_732146, ids_73249_73455);
-return_closcall1(data,  k_73862,  &c_732143);; 
+pair_type local_732146; 
+return_closcall1(data,  k_73862,  set_pair_as_expr(&local_732143, set_pair_as_expr(&local_732146, id_73248_73454, ((closureN)self_731113)->elements[0]), ids_73249_73455));; 
 }
 
 static void __lambda_140(void *data, int argc, object self_731109, object r_73854) {
@@ -2549,14 +2549,14 @@ return_direct_with_clo1(data,(closure)&c_732086,__lambda_136,  &c_732096);
 
 static void __lambda_137(void *data, int argc, object self_731103, object r_73837) {
   
+pair_type local_732101; 
 
 
 
 
 
 
-make_pair(c_732101,Cyc_cadr(data, assoc(data, ((closureN)self_731103)->elements[2], Cyc_cddr(data, ((closureN)self_731103)->elements[0]))), r_73837);
-return_closcall1(data,  ((closureN)self_731103)->elements[1],  &c_732101);; 
+return_closcall1(data,  ((closureN)self_731103)->elements[1],  set_pair_as_expr(&local_732101, Cyc_cadr(data, assoc(data, ((closureN)self_731103)->elements[2], Cyc_cddr(data, ((closureN)self_731103)->elements[0]))), r_73837));; 
 }
 
 static void __lambda_136(void *data, int argc, object self_731104, object k_73838) {
@@ -2660,10 +2660,10 @@ return_direct_with_clo1(data,(closure)&c_732030,__lambda_133,  &c_732040);;
 
 static void __lambda_134(void *data, int argc, object self_731100, object r_73823) {
   
+pair_type local_732045; 
 
 
-make_pair(c_732045,Cyc_string2symbol(data, ((closureN)self_731100)->elements[1]), r_73823);
-return_closcall1(data,  ((closureN)self_731100)->elements[0],  &c_732045);; 
+return_closcall1(data,  ((closureN)self_731100)->elements[0],  set_pair_as_expr(&local_732045, Cyc_string2symbol(data, ((closureN)self_731100)->elements[1]), r_73823));; 
 }
 
 static void __lambda_133(void *data, int argc, object self_731101, object k_73824) {
@@ -4030,15 +4030,15 @@ c_731491.elements[1] = ((closureN)self_731032)->elements[3];
 return_closcall2(data,  ((closureN)self_731032)->elements[2],  &c_731491, ((closureN)self_731032)->elements[1]);
 } else { 
   
-make_pair(c_731503,((closureN)self_731032)->elements[1], ((closureN)self_731032)->elements[0]);
-return_closcall1(data,  ((closureN)self_731032)->elements[3],  &c_731503);}
+pair_type local_731503; 
+return_closcall1(data,  ((closureN)self_731032)->elements[3],  set_pair_as_expr(&local_731503, ((closureN)self_731032)->elements[1], ((closureN)self_731032)->elements[0]));}
 ; 
 }
 
 static void __lambda_57(void *data, int argc, object self_731033, object r_73674) {
   
-make_pair(c_731496,r_73674, ((closureN)self_731033)->elements[0]);
-return_closcall1(data,  ((closureN)self_731033)->elements[1],  &c_731496);; 
+pair_type local_731496; 
+return_closcall1(data,  ((closureN)self_731033)->elements[1],  set_pair_as_expr(&local_731496, r_73674, ((closureN)self_731033)->elements[0]));; 
 }
 
 static void __lambda_54(void *data, int argc, object self_731030, object r_73669) {
@@ -4083,10 +4083,10 @@ return_direct_with_clo2(data,(closure)&c_731467,__lambda_52,  Cyc_cadr(data, ((c
 
 static void __lambda_52(void *data, int argc, object self_731029, object name_7372_73379, object decls_7373_73380) {
   
-make_pair(c_731475,name_7372_73379, decls_7373_73380);
+pair_type local_731472; 
 
-make_pair(c_731472,quote_define_91library, &c_731475);
-return_closcall1(data,  ((closureN)self_731029)->elements[0],  &c_731472);; 
+pair_type local_731475; 
+return_closcall1(data,  ((closureN)self_731029)->elements[0],  set_pair_as_expr(&local_731472, quote_define_91library, set_pair_as_expr(&local_731475, name_7372_73379, decls_7373_73380)));; 
 }
 
 static void __lambda_45(void *data, int argc, closure _,object k_73649, object ast_7367_73374) {

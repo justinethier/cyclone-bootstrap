@@ -2427,8 +2427,8 @@ c_73821.elements[0] = ((closureN)self_73590)->elements[1];
 c_73821.elements[1] = ((closureN)self_73590)->elements[2];
 
 
-make_pair(c_73840,((closureN)self_73590)->elements[0], r_73350);
-return_direct_with_clo1(data,(closure)&c_73821,__lambda_27,  &c_73840);; 
+pair_type local_73840; 
+return_direct_with_clo1(data,(closure)&c_73821,__lambda_27,  set_pair_as_expr(&local_73840, ((closureN)self_73590)->elements[0], r_73350));; 
 }
 
 static void __lambda_27(void *data, int argc, object self_73591, object new_91first_7331_73185) {

@@ -818,8 +818,8 @@ static void __lambda_92(void *data, int argc, object self_73567, object r_73451)
 
 complex_num_type local_731153; 
 
-make_pair(c_731158,r_73451, ((closureN)self_73567)->elements[3]);
-return_closcall4(data,  car(((closureN)self_73567)->elements[2]),  ((closureN)self_73567)->elements[1], Cyc_fast_sub(data,&local_731153, ((closureN)self_73567)->elements[0], obj_int2obj(1)), ((closureN)self_73567)->elements[4], &c_731158);; 
+pair_type local_731158; 
+return_closcall4(data,  car(((closureN)self_73567)->elements[2]),  ((closureN)self_73567)->elements[1], Cyc_fast_sub(data,&local_731153, ((closureN)self_73567)->elements[0], obj_int2obj(1)), ((closureN)self_73567)->elements[4], set_pair_as_expr(&local_731158, r_73451, ((closureN)self_73567)->elements[3]));; 
 }
 
 static void __lambda_83(void *data, int argc, object self_73556, object k_73149_73245, object lst_73150_73246) {
@@ -920,8 +920,8 @@ static void __lambda_87(void *data, int argc, object self_73561, object r_73441)
   
 
 
-make_pair(c_731114,r_73441, ((closureN)self_73561)->elements[2]);
-return_closcall3(data,  car(((closureN)self_73561)->elements[1]),  ((closureN)self_73561)->elements[0], ((closureN)self_73561)->elements[3], &c_731114);; 
+pair_type local_731114; 
+return_closcall3(data,  car(((closureN)self_73561)->elements[1]),  ((closureN)self_73561)->elements[0], ((closureN)self_73561)->elements[3], set_pair_as_expr(&local_731114, r_73441, ((closureN)self_73561)->elements[2]));; 
 }
 
 static void __lambda_70(void *data, int argc, closure _,object k_73416, object n_73140_73234, object start_73141_73235, object end_73142_73236) {
@@ -2662,18 +2662,18 @@ return_closcall1(data,(closure)&c_73574,  c_73595);;
 
 static void __lambda_2(void *data, int argc, object self_73482, object body_7318_73181) {
   
+pair_type local_73579; 
 
+pair_type local_73582; 
+
+
+
+pair_type local_73588; 
 
 make_utf8_string_with_len(c_73589, "(void* data, int argc, closure _, object k, object x, object y)", 63, 63);
 
-make_pair(c_73592,body_7318_73181, NULL);
-
-make_pair(c_73588,&c_73589, &c_73592);
-
-make_pair(c_73582,Cyc_cadr(data, ((closureN)self_73482)->elements[0]), &c_73588);
-
-make_pair(c_73579,quote_define_91c, &c_73582);
-return_closcall1(data,  ((closureN)self_73482)->elements[1],  &c_73579);; 
+pair_type local_73592; 
+return_closcall1(data,  ((closureN)self_73482)->elements[1],  set_pair_as_expr(&local_73579, quote_define_91c, set_pair_as_expr(&local_73582, Cyc_cadr(data, ((closureN)self_73482)->elements[0]), set_pair_as_expr(&local_73588, &c_73589, set_pair_as_expr(&local_73592, body_7318_73181, NULL)))));; 
 }
 
 void c_srfi60_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

@@ -809,6 +809,8 @@ c_73190.elements[0] = ((closureN)self_73117)->elements[0];
 c_73190.elements[1] = ((closureN)self_73117)->elements[1];
 
 
+pair_type local_73206; 
+
 closureN_type c_73208;
 c_73208.hdr.mark = gc_color_red;
  c_73208.hdr.grayed = 0;
@@ -820,9 +822,7 @@ c_73208.elements = (object *)alloca(sizeof(object) * 2);
 c_73208.elements[0] = ((closureN)self_73117)->elements[1];
 c_73208.elements[1] = thunk_7315_7342;
 
-
-make_pair(c_73206,((closureN)self_73117)->elements[1], &c_73208);
-return_direct_with_clo1(data,(closure)&c_73190,__lambda_10,  &c_73206);; 
+return_direct_with_clo1(data,(closure)&c_73190,__lambda_10,  set_pair_as_expr(&local_73206, ((closureN)self_73117)->elements[1], &c_73208));; 
 }
 
 static void __lambda_13(void *data, int argc, object self_73118, object k_7388) {

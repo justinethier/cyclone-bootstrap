@@ -1339,11 +1339,11 @@ return_closcall1(data,  ((closureN)self_73818)->elements[0],  Cyc_car(data, r_73
 }
 
 static void __lambda_119(void *data, int argc, object self_73819, object k_73640) {
-    make_pair(c_731986,((closureN)self_73819)->elements[1], boolean_f);
-if( (boolean_f != &c_731986) ){ 
+    pair_type local_731986; 
+if( (boolean_f != set_pair_as_expr(&local_731986, ((closureN)self_73819)->elements[1], boolean_f)) ){ 
   
-make_pair(c_731991,((closureN)self_73819)->elements[1], boolean_f);
-return_closcall1(data,  k_73640,  &c_731991);
+pair_type local_731991; 
+return_closcall1(data,  k_73640,  set_pair_as_expr(&local_731991, ((closureN)self_73819)->elements[1], boolean_f));
 } else { 
   
 closureN_type c_731994;
@@ -1364,8 +1364,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_731994, &c_732000, ((closur
 
 static void __lambda_120(void *data, int argc, object self_73820, object r_73641) {
   
-make_pair(c_731999,r_73641, boolean_f);
-return_closcall1(data,  ((closureN)self_73820)->elements[0],  &c_731999);; 
+pair_type local_731999; 
+return_closcall1(data,  ((closureN)self_73820)->elements[0],  set_pair_as_expr(&local_731999, r_73641, boolean_f));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73393, object expr_735_7363_73187_73300, object rename_736_7364_73188_73301, object compare_737_7365_73189_73302) {
@@ -1629,8 +1629,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_731896, &c_731902, ((closur
 
 static void __lambda_90(void *data, int argc, object self_73712, object r_73400) {
   
-make_pair(c_731901,r_73400, boolean_f);
-return_closcall1(data,  ((closureN)self_73712)->elements[0],  &c_731901);; 
+pair_type local_731901; 
+return_closcall1(data,  ((closureN)self_73712)->elements[0],  set_pair_as_expr(&local_731901, r_73400, boolean_f));; 
 }
 
 static void __lambda_85(void *data, int argc, object self_73713, object k_73402) {
@@ -1738,8 +1738,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_731850, ((closureN)
 
 static void __lambda_88(void *data, int argc, object self_73716, object r_73416) {
   
-make_pair(c_731855,r_73416, boolean_f);
-return_closcall1(data,  ((closureN)self_73716)->elements[0],  &c_731855);; 
+pair_type local_731855; 
+return_closcall1(data,  ((closureN)self_73716)->elements[0],  set_pair_as_expr(&local_731855, r_73416, boolean_f));; 
 }
 
 static void __lambda_56(void *data, int argc, object self_73717, object k_73424) {
@@ -2537,8 +2537,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_731595, ((closureN)
 
 static void __lambda_81(void *data, int argc, object self_73742, object r_73444) {
   
-make_pair(c_731600,r_73444, boolean_f);
-return_closcall1(data,  ((closureN)self_73742)->elements[0],  &c_731600);; 
+pair_type local_731600; 
+return_closcall1(data,  ((closureN)self_73742)->elements[0],  set_pair_as_expr(&local_731600, r_73444, boolean_f));; 
 }
 
 static void __lambda_36(void *data, int argc, object self_73744, object k_73497) {
@@ -3091,8 +3091,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_731312, ((closureN)
 
 static void __lambda_52(void *data, int argc, object self_73760, object r_73520) {
   
-make_pair(c_731317,r_73520, boolean_f);
-return_closcall1(data,  ((closureN)self_73760)->elements[0],  &c_731317);; 
+pair_type local_731317; 
+return_closcall1(data,  ((closureN)self_73760)->elements[0],  set_pair_as_expr(&local_731317, r_73520, boolean_f));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_73762, object k_73553) {
@@ -4066,8 +4066,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_73940, ((closureN)s
 
 static void __lambda_32(void *data, int argc, object self_73791, object r_73573) {
   
-make_pair(c_73945,r_73573, boolean_f);
-return_closcall1(data,  ((closureN)self_73791)->elements[0],  &c_73945);; 
+pair_type local_73945; 
+return_closcall1(data,  ((closureN)self_73791)->elements[0],  set_pair_as_expr(&local_73945, r_73573, boolean_f));; 
 }
 
 void c_schemecase_91lambda_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

@@ -504,24 +504,24 @@ return_closcall1(data,(closure)&c_7367,  c_7396);;
 
 static void __lambda_3(void *data, int argc, object self_7361, object r_7344) {
   
+pair_type local_7372; 
 
+pair_type local_7375; 
+
+
+
+pair_type local_7381; 
 
 make_utf8_string_with_len(c_7382, "(void *data, int argc, closure _, object k, object z)", 53, 53);
 
+pair_type local_7385; 
+
+pair_type local_7389; 
+
 make_utf8_string_with_len(c_7390, "(void *data, object ptr, object z)", 34, 34);
 
-make_pair(c_7393,r_7344, NULL);
-
-make_pair(c_7389,&c_7390, &c_7393);
-
-make_pair(c_7385,((closureN)self_7361)->elements[2], &c_7389);
-
-make_pair(c_7381,&c_7382, &c_7385);
-
-make_pair(c_7375,Cyc_cadr(data, ((closureN)self_7361)->elements[0]), &c_7381);
-
-make_pair(c_7372,quote_define_91c, &c_7375);
-return_closcall1(data,  ((closureN)self_7361)->elements[1],  &c_7372);; 
+pair_type local_7393; 
+return_closcall1(data,  ((closureN)self_7361)->elements[1],  set_pair_as_expr(&local_7372, quote_define_91c, set_pair_as_expr(&local_7375, Cyc_cadr(data, ((closureN)self_7361)->elements[0]), set_pair_as_expr(&local_7381, &c_7382, set_pair_as_expr(&local_7385, ((closureN)self_7361)->elements[2], set_pair_as_expr(&local_7389, &c_7390, set_pair_as_expr(&local_7393, r_7344, NULL)))))));; 
 }
 
 void c_schemeinexact_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

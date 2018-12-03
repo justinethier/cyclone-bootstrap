@@ -453,9 +453,9 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closur
 
 static void __lambda_3(void *data, int argc, object self_7324, object k_7316, object expr_734_739) {
   
-make_pair(c_7338,expr_734_739, ((closureN)self_7324)->elements[0]);
+pair_type local_7338; 
 
-object c_7335 = apply(data,  k_7316,__glo_eval_scheme_eval, &c_7338);
+object c_7335 = apply(data,  k_7316,__glo_eval_scheme_eval, set_pair_as_expr(&local_7338, expr_734_739, ((closureN)self_7324)->elements[0]));
 return_closcall1(data,  k_7316,  c_7335);; 
 }
 

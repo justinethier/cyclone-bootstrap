@@ -1360,8 +1360,8 @@ return_closcall4(data,  __glo_hash_91table_91fold_srfi_69,  k_73876, hash_91tabl
 
 static void __lambda_171(void *data, int argc, object self_731111, object k_73879, object key_73318_73477, object val_73319_73478, object acc_73320_73479) {
   
-make_pair(c_732211,val_73319_73478, acc_73320_73479);
-return_closcall1(data,  k_73879,  &c_732211);; 
+pair_type local_732211; 
+return_closcall1(data,  k_73879,  set_pair_as_expr(&local_732211, val_73319_73478, acc_73320_73479));; 
 }
 
 static void __lambda_168(void *data, int argc, closure _,object k_73870, object hash_91table_73313_73472) {
@@ -1373,8 +1373,8 @@ return_closcall4(data,  __glo_hash_91table_91fold_srfi_69,  k_73870, hash_91tabl
 
 static void __lambda_169(void *data, int argc, object self_731110, object k_73873, object key_73314_73473, object val_73315_73474, object acc_73316_73475) {
   
-make_pair(c_732204,key_73314_73473, acc_73316_73475);
-return_closcall1(data,  k_73873,  &c_732204);; 
+pair_type local_732204; 
+return_closcall1(data,  k_73873,  set_pair_as_expr(&local_732204, key_73314_73473, acc_73316_73475));; 
 }
 
 static void __lambda_165(void *data, int argc, closure _,object k_73864, object hash_91table1_73309_73468, object hash_91table2_73310_73469) {
@@ -1545,10 +1545,10 @@ return_closcall4(data,  __glo_hash_91table_91fold_srfi_69,  k_73845, hash_91tabl
 
 static void __lambda_156(void *data, int argc, object self_731100, object k_73848, object key_73302_73461, object val_73303_73462, object acc_73304_73463) {
   
-make_pair(c_732161,key_73302_73461, val_73303_73462);
+pair_type local_732158; 
 
-make_pair(c_732158,&c_732161, acc_73304_73463);
-return_closcall1(data,  k_73848,  &c_732158);; 
+pair_type local_732161; 
+return_closcall1(data,  k_73848,  set_pair_as_expr(&local_732158, set_pair_as_expr(&local_732161, key_73302_73461, val_73303_73462), acc_73304_73463));; 
 }
 
 static void __lambda_142(void *data, int argc, closure _,object k_73815, object alist_73272_73449, object args_73273_73450_raw, ...) {
@@ -3285,8 +3285,8 @@ static void __lambda_61(void *data, int argc, object self_731016, object r_73685
   
 
 
-make_pair(c_731637,((closureN)self_731016)->elements[3], r_73685);
-return_closcall1(data,  ((closureN)self_731016)->elements[2],  Cyc_vector_set(data, ((closureN)self_731016)->elements[0], ((closureN)self_731016)->elements[1], &c_731637));; 
+pair_type local_731637; 
+return_closcall1(data,  ((closureN)self_731016)->elements[2],  Cyc_vector_set(data, ((closureN)self_731016)->elements[0], ((closureN)self_731016)->elements[1], set_pair_as_expr(&local_731637, ((closureN)self_731016)->elements[3], r_73685)));; 
 }
 
 static void __lambda_58(void *data, int argc, closure _,object k_73678, object entries_73150_73380, object associate_73151_73381, object hash_73152_73382, object key_73153_73383) {
@@ -3357,11 +3357,11 @@ return_closcall1(data,  k_73658,  &c_731595);;
 static void __lambda_54(void *data, int argc, object self_731012, object k_73659, object args_73147_73377_raw, ...) {
 load_varargs(args_73147_73377, args_73147_73377_raw, argc - 1);
   
-make_pair(c_731606,((closureN)self_731012)->elements[1], args_73147_73377);
+pair_type local_731602; 
 
-make_pair(c_731602,((closureN)self_731012)->elements[0], &c_731606);
+pair_type local_731606; 
 
-object c_731599 = apply(data,  k_73659,__glo_make_91hash_91table_srfi_69, &c_731602);
+object c_731599 = apply(data,  k_73659,__glo_make_91hash_91table_srfi_69, set_pair_as_expr(&local_731602, ((closureN)self_731012)->elements[0], set_pair_as_expr(&local_731606, ((closureN)self_731012)->elements[1], args_73147_73377)));
 return_closcall1(data,  k_73659,  c_731599);; 
 }
 

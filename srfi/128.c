@@ -2702,8 +2702,8 @@ c_734313.elements = (object *)alloca(sizeof(object) * 1);
 c_734313.elements[0] = k_731688;
 
 
-make_pair(c_734328,comparator_73637_731024, __glo__85registered_91comparators_85_srfi_128);
-return_direct_with_clo1(data,(closure)&c_734313,__lambda_328,  &c_734328);; 
+pair_type local_734328; 
+return_direct_with_clo1(data,(closure)&c_734313,__lambda_328,  set_pair_as_expr(&local_734328, comparator_73637_731024, __glo__85registered_91comparators_85_srfi_128));; 
 }
 
 static void __lambda_328(void *data, int argc, object self_732200, object r_731691) {
@@ -7592,8 +7592,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_732929, &c_732935, ((closur
 
 static void __lambda_72(void *data, int argc, object self_731963, object r_731218) {
   
-make_pair(c_732934,r_731218, boolean_f);
-return_closcall1(data,  ((closureN)self_731963)->elements[0],  &c_732934);; 
+pair_type local_732934; 
+return_closcall1(data,  ((closureN)self_731963)->elements[0],  set_pair_as_expr(&local_732934, r_731218, boolean_f));; 
 }
 
 static void __lambda_59(void *data, int argc, object self_731964, object k_731220) {
@@ -7859,8 +7859,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_732867, ((closureN)
 
 static void __lambda_69(void *data, int argc, object self_731974, object r_731231) {
   
-make_pair(c_732872,r_731231, boolean_f);
-return_closcall1(data,  ((closureN)self_731974)->elements[0],  &c_732872);; 
+pair_type local_732872; 
+return_closcall1(data,  ((closureN)self_731974)->elements[0],  set_pair_as_expr(&local_732872, r_731231, boolean_f));; 
 }
 
 static void __lambda_48(void *data, int argc, closure _,object k_731199, object expr_73167_73176_73185_73776, object rename_73168_73177_73186_73777, object compare_73169_73178_73187_73778) {
@@ -7967,8 +7967,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_732802, &c_732808, ((closur
 
 static void __lambda_55(void *data, int argc, object self_731955, object r_731203) {
   
-make_pair(c_732807,r_731203, boolean_f);
-return_closcall1(data,  ((closureN)self_731955)->elements[0],  &c_732807);; 
+pair_type local_732807; 
+return_closcall1(data,  ((closureN)self_731955)->elements[0],  set_pair_as_expr(&local_732807, r_731203, boolean_f));; 
 }
 
 static void __lambda_50(void *data, int argc, object self_731956, object k_731205) {
@@ -8010,8 +8010,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_732787, r_731208, N
 
 static void __lambda_52(void *data, int argc, object self_731958, object r_731207) {
   
-make_pair(c_732792,r_731207, boolean_f);
-return_closcall1(data,  ((closureN)self_731958)->elements[0],  &c_732792);; 
+pair_type local_732792; 
+return_closcall1(data,  ((closureN)self_731958)->elements[0],  set_pair_as_expr(&local_732792, r_731207, boolean_f));; 
 }
 
 static void __lambda_43(void *data, int argc, closure _,object k_731187, object expr_73140_73149_73158_73771, object rename_73141_73150_73159_73772, object compare_73142_73151_73160_73773) {
@@ -8037,8 +8037,8 @@ static void __lambda_44(void *data, int argc, object self_731947, object v_931_7
   object tmp_73153_73155_73161_73774;
     
 if( (boolean_f != Cyc_is_null(v_931_73148_73156_73162_73775)) ){ 
-  alloca_pair(c_732752,obj_int2obj(33554432), boolean_f);
-  tmp_73153_73155_73161_73774 = c_732752;
+  object local_732752 = alloca(sizeof(pair_type)); 
+  tmp_73153_73155_73161_73774 = set_pair_as_expr(local_732752, obj_int2obj(33554432), boolean_f);
 } else { 
   tmp_73153_73155_73161_73774 = boolean_f;}
 ;
@@ -8096,8 +8096,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_732760, &c_732766, ((closur
 
 static void __lambda_46(void *data, int argc, object self_731950, object r_731191) {
   
-make_pair(c_732765,r_731191, boolean_f);
-return_closcall1(data,  ((closureN)self_731950)->elements[0],  &c_732765);; 
+pair_type local_732765; 
+return_closcall1(data,  ((closureN)self_731950)->elements[0],  set_pair_as_expr(&local_732765, r_731191, boolean_f));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_731068, object expr_735_7337_7396_73731, object rename_736_7338_7397_73732, object compare_737_7339_7398_73733) {
@@ -8257,8 +8257,8 @@ return_closcall3(data,  __glo_error_scheme_base,  &c_732725, &c_732731, ((closur
 
 static void __lambda_41(void *data, int argc, object self_731912, object r_731073) {
   
-make_pair(c_732730,r_731073, boolean_f);
-return_closcall1(data,  ((closureN)self_731912)->elements[0],  &c_732730);; 
+pair_type local_732730; 
+return_closcall1(data,  ((closureN)self_731912)->elements[0],  set_pair_as_expr(&local_732730, r_731073, boolean_f));; 
 }
 
 static void __lambda_17(void *data, int argc, object self_731913, object k_731075) {
@@ -8949,8 +8949,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_732552, ((closureN)
 
 static void __lambda_39(void *data, int argc, object self_731935, object r_731095) {
   
-make_pair(c_732557,r_731095, boolean_f);
-return_closcall1(data,  ((closureN)self_731935)->elements[0],  &c_732557);; 
+pair_type local_732557; 
+return_closcall1(data,  ((closureN)self_731935)->elements[0],  set_pair_as_expr(&local_732557, r_731095, boolean_f));; 
 }
 
 static void __lambda_3(void *data, int argc, object self_731936, object k_731146) {
@@ -9263,8 +9263,8 @@ return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_732352, ((closureN)
 
 static void __lambda_13(void *data, int argc, object self_731946, object r_731163) {
   
-make_pair(c_732357,r_731163, boolean_f);
-return_closcall1(data,  ((closureN)self_731946)->elements[0],  &c_732357);; 
+pair_type local_732357; 
+return_closcall1(data,  ((closureN)self_731946)->elements[0],  set_pair_as_expr(&local_732357, r_731163, boolean_f));; 
 }
 
 void c_srfi128_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
