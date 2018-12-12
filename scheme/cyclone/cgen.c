@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2018 Justin Ethier
- ** Version 0.9.6 
+ ** Version 0.9.7 
  **
  **/
 
@@ -1140,6 +1140,7 @@ extern object __glo_string_121_123_127_191_191inline_191_191_scheme_base;
 extern object __glo_string_125_127_191_191inline_191_191_scheme_base;
 extern object __glo_string_125_123_127_191_191inline_191_191_scheme_base;
 extern object __glo_not_191_191inline_191_191_scheme_base;
+extern object __glo_list_127_191_191inline_191_191_scheme_base;
 extern object __glo_zero_127_191_191inline_191_191_scheme_base;
 extern object __glo_positive_127_191_191inline_191_191_scheme_base;
 extern object __glo_negative_127_191_191inline_191_191_scheme_base;
