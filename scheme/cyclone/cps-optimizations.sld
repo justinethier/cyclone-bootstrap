@@ -1570,7 +1570,26 @@
       (analyze2 exp) ;; Second pass
       (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
       (analyze:find-recursive-calls2 exp)
+      ;(analyze:set-calls-self)
     )
+
+    (define (analyze:set-calls-self)
+      (let ((idents (filter symbol? (hash-table-keys *adb*))))
+        (for-each
+          (lambda (id)
+            (let ((var (adb:get/default id #f)))
+              (when (and var (adbv:self-rec-call? var))
+                (and-let*
+                  ((a-value (adbv:assigned-value var))
+                   ((pair? a-value))
+                   ((ast:lambda? (car a-value)))
+                   (lid (ast:lambda-id (car a-value))))
+(trace:info `(TODO ,id ,lid ,a-value))
+                  (with-fnc! lid (lambda (fnc)
+                    (adbf:set-calls-self! fnc #t))))
+              ))
+          )
+          idents)))
 
     ;; NOTES:
     ;;
@@ -2006,7 +2025,8 @@
       (when (equal? (car exp) def-sym)
         (trace:info `("recursive call" ,exp))
         (with-var! def-sym (lambda (var)
-          (adbv:set-self-rec-call! var #t)))))
+          (adbv:set-self-rec-call! var #t)))
+        ))
      (else #f)))
 
   ;; TODO: probably not good enough, what about recursive functions that are not top-level??
