@@ -109,13 +109,13 @@ if (type_is_pair_prim(clo)) { \
 
 #include "cyclone/hashset.h"
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91member_127_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91remove_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91add_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91num_91items_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91destroy_scheme_cyclone_pretty_91print = NULL;
-object __glo_hs_91create_scheme_cyclone_pretty_91print = NULL;
+object __glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset = NULL;
+object __glo_hs_91member_127_scheme_cyclone_hashset = NULL;
+object __glo_hs_91remove_scheme_cyclone_hashset = NULL;
+object __glo_hs_91add_scheme_cyclone_hashset = NULL;
+object __glo_hs_91num_91items_scheme_cyclone_hashset = NULL;
+object __glo_hs_91destroy_scheme_cyclone_hashset = NULL;
+object __glo_hs_91create_scheme_cyclone_hashset = NULL;
 extern object __glo_member_scheme_base;
 extern object __glo_assoc_scheme_base;
 extern object __glo_cons_91source_scheme_base;
@@ -325,7 +325,7 @@ static void __lambda_3(void *data, int argc, closure _, object k, object opq ) ;
 static void __lambda_2(void *data, int argc, closure _, object k ) ;
 
 static void __lambda_1(void *data, int argc, closure _,object k_733) {
-  Cyc_st_add(data, "scheme/cyclone/hashset.sld:lib-init:schemecyclonepretty_91print");
+  Cyc_st_add(data, "scheme/cyclone/hashset.sld:lib-init:schemecyclonehashset");
 return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
@@ -359,42 +359,42 @@ static void __lambda_2(void *data, int argc, closure _, object k ) {
     make_c_opaque(opq, hs);
     return_closcall1(data, k, &opq);
    }
-void c_schemecyclonepretty_91print_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+void c_schemecyclonehashset_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
-void c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonehashset_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global((object *) &__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91member_127_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91remove_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91add_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91num_91items_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91destroy_scheme_cyclone_pretty_91print);
-  add_global((object *) &__glo_hs_91create_scheme_cyclone_pretty_91print);
+  add_global((object *) &__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91member_127_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91remove_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91add_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91num_91items_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91destroy_scheme_cyclone_hashset);
+  add_global((object *) &__glo_hs_91create_scheme_cyclone_hashset);
   mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
-  __glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print = &c_7310; 
+  __glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset = &c_7310; 
   mclosure0(c_739, (function_type)__lambda_7);c_739.num_args = 2; 
-  __glo_hs_91member_127_scheme_cyclone_pretty_91print = &c_739; 
+  __glo_hs_91member_127_scheme_cyclone_hashset = &c_739; 
   mclosure0(c_738, (function_type)__lambda_6);c_738.num_args = 2; 
-  __glo_hs_91remove_scheme_cyclone_pretty_91print = &c_738; 
+  __glo_hs_91remove_scheme_cyclone_hashset = &c_738; 
   mclosure0(c_737, (function_type)__lambda_5);c_737.num_args = 2; 
-  __glo_hs_91add_scheme_cyclone_pretty_91print = &c_737; 
+  __glo_hs_91add_scheme_cyclone_hashset = &c_737; 
   mclosure0(c_736, (function_type)__lambda_4);c_736.num_args = 1; 
-  __glo_hs_91num_91items_scheme_cyclone_pretty_91print = &c_736; 
+  __glo_hs_91num_91items_scheme_cyclone_hashset = &c_736; 
   mclosure0(c_735, (function_type)__lambda_3);c_735.num_args = 1; 
-  __glo_hs_91destroy_scheme_cyclone_pretty_91print = &c_735; 
+  __glo_hs_91destroy_scheme_cyclone_hashset = &c_735; 
   mclosure0(c_734, (function_type)__lambda_2);c_734.num_args = 0; 
-  __glo_hs_91create_scheme_cyclone_pretty_91print = &c_734; 
+  __glo_hs_91create_scheme_cyclone_hashset = &c_734; 
 
-  mclosure0(clo_7313, c_schemecyclonepretty_91print_inlinable_lambdas); make_pair(pair_7312, find_or_add_symbol("c_schemecyclonepretty_91print_inlinable_lambdas"), &clo_7313);
-  make_cvar(cvar_7314, (object *)&__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print);make_pair(pair_7315, find_or_add_symbol("lib-init:schemecyclonepretty_91print"), &cvar_7314);
-  make_cvar(cvar_7316, (object *)&__glo_hs_91member_127_scheme_cyclone_pretty_91print);make_pair(pair_7317, find_or_add_symbol("hs-member?"), &cvar_7316);
-  make_cvar(cvar_7318, (object *)&__glo_hs_91remove_scheme_cyclone_pretty_91print);make_pair(pair_7319, find_or_add_symbol("hs-remove"), &cvar_7318);
-  make_cvar(cvar_7320, (object *)&__glo_hs_91add_scheme_cyclone_pretty_91print);make_pair(pair_7321, find_or_add_symbol("hs-add"), &cvar_7320);
-  make_cvar(cvar_7322, (object *)&__glo_hs_91num_91items_scheme_cyclone_pretty_91print);make_pair(pair_7323, find_or_add_symbol("hs-num-items"), &cvar_7322);
-  make_cvar(cvar_7324, (object *)&__glo_hs_91destroy_scheme_cyclone_pretty_91print);make_pair(pair_7325, find_or_add_symbol("hs-destroy"), &cvar_7324);
-  make_cvar(cvar_7326, (object *)&__glo_hs_91create_scheme_cyclone_pretty_91print);make_pair(pair_7327, find_or_add_symbol("hs-create"), &cvar_7326);
+  mclosure0(clo_7313, c_schemecyclonehashset_inlinable_lambdas); make_pair(pair_7312, find_or_add_symbol("c_schemecyclonehashset_inlinable_lambdas"), &clo_7313);
+  make_cvar(cvar_7314, (object *)&__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);make_pair(pair_7315, find_or_add_symbol("lib-init:schemecyclonehashset"), &cvar_7314);
+  make_cvar(cvar_7316, (object *)&__glo_hs_91member_127_scheme_cyclone_hashset);make_pair(pair_7317, find_or_add_symbol("hs-member?"), &cvar_7316);
+  make_cvar(cvar_7318, (object *)&__glo_hs_91remove_scheme_cyclone_hashset);make_pair(pair_7319, find_or_add_symbol("hs-remove"), &cvar_7318);
+  make_cvar(cvar_7320, (object *)&__glo_hs_91add_scheme_cyclone_hashset);make_pair(pair_7321, find_or_add_symbol("hs-add"), &cvar_7320);
+  make_cvar(cvar_7322, (object *)&__glo_hs_91num_91items_scheme_cyclone_hashset);make_pair(pair_7323, find_or_add_symbol("hs-num-items"), &cvar_7322);
+  make_cvar(cvar_7324, (object *)&__glo_hs_91destroy_scheme_cyclone_hashset);make_pair(pair_7325, find_or_add_symbol("hs-destroy"), &cvar_7324);
+  make_cvar(cvar_7326, (object *)&__glo_hs_91create_scheme_cyclone_hashset);make_pair(pair_7327, find_or_add_symbol("hs-create"), &cvar_7326);
 make_pair(c_7335, &pair_7312,Cyc_global_variables);
 make_pair(c_7334, &pair_7315, &c_7335);
 make_pair(c_7333, &pair_7317, &c_7334);
@@ -405,9 +405,9 @@ make_pair(c_7329, &pair_7325, &c_7330);
 make_pair(c_7328, &pair_7327, &c_7329);
 Cyc_global_variables = &c_7328;
 cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemecyclonepretty_19191print_scheme_cyclone_pretty_91print)->fn)(data, 1, cont, cont);
+(((closure)__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset)->fn)(data, 1, cont, cont);
 }
-void c_schemecyclonepretty_91print_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
-  register_library("scheme_cyclone_pretty_91print");
-  c_schemecyclonepretty_91print_entry_pt_first_lambda(data, argc, cont,value);
+void c_schemecyclonehashset_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("scheme_cyclone_hashset");
+  c_schemecyclonehashset_entry_pt_first_lambda(data, argc, cont,value);
 }

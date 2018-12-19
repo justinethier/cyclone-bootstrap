@@ -6,7 +6,7 @@
 
 include Makefile.config
 
-COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/repl scheme/time scheme/cyclone/array-list scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/match scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/test scheme/cyclone/pretty-print scheme/cyclone/primitives srfi/1 srfi/2 srfi/9 srfi/18 srfi/27 srfi/28 srfi/60 srfi/69 srfi/106 srfi/111 srfi/113 srfi/117 srfi/121 srfi/128 srfi/132 srfi/133 srfi/143
+COBJ = scheme/base scheme/read scheme/write scheme/case-lambda scheme/char scheme/complex scheme/cxr scheme/eval scheme/file scheme/inexact scheme/lazy scheme/load scheme/process-context scheme/repl scheme/time scheme/cyclone/array-list scheme/cyclone/common scheme/cyclone/libraries scheme/cyclone/macros scheme/cyclone/match scheme/cyclone/transforms scheme/cyclone/ast scheme/cyclone/cps-optimizations scheme/cyclone/cgen scheme/cyclone/util scheme/cyclone/test scheme/cyclone/pretty-print scheme/cyclone/hashset scheme/cyclone/primitives srfi/1 srfi/2 srfi/9 srfi/18 srfi/27 srfi/28 srfi/60 srfi/69 srfi/106 srfi/111 srfi/113 srfi/117 srfi/121 srfi/128 srfi/132 srfi/133 srfi/143
 CFILES = $(addsuffix .c, $(COBJ))
 COBJECTS=$(CFILES:.c=.o)
 C_SHARED_OBJECTS=$(CFILES:.c=.so)
@@ -19,8 +19,9 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 
 all: cyclone icyc-c
 
-libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c
+libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c hashset.c
 	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
+	$(CC) $(CFLAGS) -c hashset.c -o hashset.o
 	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
 	$(CC) $(CFLAGS) -c \
                   -DCYC_HAVE_OPEN_MEMSTREAM=$(CYC_PLATFORM_HAS_MEMSTREAM) \
@@ -36,7 +37,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c
   -DCYC_CC_LIB=\"$(CC_LIB)\" \
   -DCYC_CC_SO=\"$(CC_SO)\" \
   runtime.c -o runtime.o
-	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o
+	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o hashset.o
 
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
