@@ -2957,19 +2957,19 @@ make_pair(c_733758,quote__121,&c_733759);
 make_pair(c_733757,quote__125,&c_733758);
 
 make_pair(c_733756,quote__123,&c_733757);
-return_closcall1(data,  k_731307,  memberp(data, sym_73671_73790, &c_733756));; 
+return_closcall1(data,  k_731307,  memqp(data, sym_73671_73790, &c_733756));; 
 }
 
 static void __lambda_183(void *data, int argc, closure _,object k_731302, object exp_73667_73788, object use_91alloca_127_73668_73789) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:allocates-object?");
   
-if( (boolean_f != memberp(data, exp_73667_73788, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73667_73788, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
     
-if( (boolean_f != memberp(data, exp_73667_73788, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73667_73788, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != use_91alloca_127_73668_73789) ){ 
   
 
-return_closcall1(data,  k_731302,  memberp(data, exp_73667_73788, NULL));
+return_closcall1(data,  k_731302,  memqp(data, exp_73667_73788, NULL));
 } else { 
   return_closcall1(data,  k_731302,  boolean_f);}
 
@@ -2978,11 +2978,11 @@ return_closcall1(data,  k_731302,  memberp(data, exp_73667_73788, NULL));
 
 } else { 
     
-if( (boolean_f != memberp(data, exp_73667_73788, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73667_73788, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   if( (boolean_f != use_91alloca_127_73668_73789) ){ 
   
 
-return_closcall1(data,  k_731302,  memberp(data, exp_73667_73788, NULL));
+return_closcall1(data,  k_731302,  memqp(data, exp_73667_73788, NULL));
 } else { 
   return_closcall1(data,  k_731302,  boolean_f);}
 
@@ -2995,9 +2995,9 @@ return_closcall1(data,  k_731302,  memberp(data, exp_73667_73788, NULL));
 static void __lambda_182(void *data, int argc, closure _,object k_731297, object exp_73665_73787) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:arg-count?");
   
-if( (boolean_f != memberp(data, exp_73665_73787, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73665_73787, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
     
-if( (boolean_f != memberp(data, exp_73665_73787, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73665_73787, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3042,13 +3042,13 @@ make_pair(c_733688,quote_Cyc_91display,&c_733689);
 make_pair(c_733687,quote_Cyc_91write,&c_733688);
 
 make_pair(c_733686,quote_error,&c_733687);
-return_closcall1(data,  k_731297,  memberp(data, exp_73665_73787, &c_733686));
+return_closcall1(data,  k_731297,  memqp(data, exp_73665_73787, &c_733686));
 } else { 
   return_closcall1(data,  k_731297,  boolean_f);}
 
 } else { 
     
-if( (boolean_f != memberp(data, exp_73665_73787, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73665_73787, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3093,7 +3093,7 @@ make_pair(c_733715,quote_Cyc_91display,&c_733716);
 make_pair(c_733714,quote_Cyc_91write,&c_733715);
 
 make_pair(c_733713,quote_error,&c_733714);
-return_closcall1(data,  k_731297,  memberp(data, exp_73665_73787, &c_733713));
+return_closcall1(data,  k_731297,  memqp(data, exp_73665_73787, &c_733713));
 } else { 
   return_closcall1(data,  k_731297,  boolean_f);}
 }
@@ -3103,29 +3103,29 @@ return_closcall1(data,  k_731297,  memberp(data, exp_73665_73787, &c_733713));
 static void __lambda_181(void *data, int argc, closure _,object k_731292, object exp_73663_73786) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:cont/no-args?");
   
-if( (boolean_f != memberp(data, exp_73663_73786, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73663_73786, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
     
-if( (boolean_f != memberp(data, exp_73663_73786, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73663_73786, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
 
 make_pair(c_733668,quote_Cyc_91current_91exception_91handler,NULL);
 
 make_pair(c_733667,quote_command_91line_91arguments,&c_733668);
-return_closcall1(data,  k_731292,  memberp(data, exp_73663_73786, &c_733667));
+return_closcall1(data,  k_731292,  memqp(data, exp_73663_73786, &c_733667));
 } else { 
   return_closcall1(data,  k_731292,  boolean_f);}
 
 } else { 
     
-if( (boolean_f != memberp(data, exp_73663_73786, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73663_73786, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
 
 
 make_pair(c_733676,quote_Cyc_91current_91exception_91handler,NULL);
 
 make_pair(c_733675,quote_command_91line_91arguments,&c_733676);
-return_closcall1(data,  k_731292,  memberp(data, exp_73663_73786, &c_733675));
+return_closcall1(data,  k_731292,  memqp(data, exp_73663_73786, &c_733675));
 } else { 
   return_closcall1(data,  k_731292,  boolean_f);}
 }
@@ -3135,9 +3135,9 @@ return_closcall1(data,  k_731292,  memberp(data, exp_73663_73786, &c_733675));
 static void __lambda_180(void *data, int argc, closure _,object k_731287, object exp_73661_73785) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:cont?");
   
-if( (boolean_f != memberp(data, exp_73661_73785, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73661_73785, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
     
-if( (boolean_f != memberp(data, exp_73661_73785, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73661_73785, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3208,13 +3208,13 @@ make_pair(c_733586,quote_command_91line_91arguments,&c_733587);
 make_pair(c_733585,quote_apply,&c_733586);
 
 make_pair(c_733584,quote_Cyc_91read_91line,&c_733585);
-return_closcall1(data,  k_731287,  memberp(data, exp_73661_73785, &c_733584));
+return_closcall1(data,  k_731287,  memqp(data, exp_73661_73785, &c_733584));
 } else { 
   return_closcall1(data,  k_731287,  boolean_f);}
 
 } else { 
     
-if( (boolean_f != memberp(data, exp_73661_73785, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73661_73785, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3285,7 +3285,7 @@ make_pair(c_733626,quote_command_91line_91arguments,&c_733627);
 make_pair(c_733625,quote_apply,&c_733626);
 
 make_pair(c_733624,quote_Cyc_91read_91line,&c_733625);
-return_closcall1(data,  k_731287,  memberp(data, exp_73661_73785, &c_733624));
+return_closcall1(data,  k_731287,  memqp(data, exp_73661_73785, &c_733624));
 } else { 
   return_closcall1(data,  k_731287,  boolean_f);}
 }
@@ -3295,9 +3295,9 @@ return_closcall1(data,  k_731287,  memberp(data, exp_73661_73785, &c_733624));
 static void __lambda_179(void *data, int argc, closure _,object k_731282, object exp_73659_73784) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim/cvar?");
   
-if( (boolean_f != memberp(data, exp_73659_73784, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73659_73784, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
     
-if( (boolean_f != memberp(data, exp_73659_73784, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73659_73784, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3372,13 +3372,13 @@ make_pair(c_733499,quote_Cyc_91stderr,&c_733500);
 make_pair(c_733498,quote_Cyc_91stdin,&c_733499);
 
 make_pair(c_733497,quote_Cyc_91stdout,&c_733498);
-return_closcall1(data,  k_731282,  memberp(data, exp_73659_73784, &c_733497));
+return_closcall1(data,  k_731282,  memqp(data, exp_73659_73784, &c_733497));
 } else { 
   return_closcall1(data,  k_731282,  boolean_f);}
 
 } else { 
     
-if( (boolean_f != memberp(data, exp_73659_73784, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_73659_73784, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
 
 
@@ -3453,7 +3453,7 @@ make_pair(c_733541,quote_Cyc_91stderr,&c_733542);
 make_pair(c_733540,quote_Cyc_91stdin,&c_733541);
 
 make_pair(c_733539,quote_Cyc_91stdout,&c_733540);
-return_closcall1(data,  k_731282,  memberp(data, exp_73659_73784, &c_733539));
+return_closcall1(data,  k_731282,  memqp(data, exp_73659_73784, &c_733539));
 } else { 
   return_closcall1(data,  k_731282,  boolean_f);}
 }
@@ -3780,7 +3780,7 @@ make_utf8_string_with_len(c_733337, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731183,  &c_733337);
 } else { 
     
-if( (boolean_f != memberp(data, p_73514_73782, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, p_73514_73782, __glo__85udf_91prims_85_scheme_cyclone_primitives)) ){ 
   
 make_utf8_string_with_len(c_733341, "complex_num_type", 16, 16);
 return_closcall1(data,  k_731183,  &c_733341);
@@ -3915,7 +3915,7 @@ static void __lambda_176(void *data, int argc, closure _,object k_731178, object
   make_pair(c_733067,quote_Cyc_91fast_91sub,&c_733068);
   make_pair(c_733066,quote_Cyc_91fast_91plus,&c_733067);
   make_pair(c_733065,quote_Cyc_91list,&c_733066);
-if( (boolean_f != memberp(data, p_73509_73780, &c_733065)) ){ 
+if( (boolean_f != memqp(data, p_73509_73780, &c_733065)) ){ 
   
 
 
@@ -4144,11 +4144,11 @@ make_pair(c_733183,quote_Cyc_91fast_91sub,&c_733184);
 make_pair(c_733182,quote_Cyc_91fast_91plus,&c_733183);
 
 make_pair(c_733181,quote_Cyc_91list,&c_733182);
-return_closcall1(data,  k_731178,  memberp(data, p_73509_73780, &c_733181));
+return_closcall1(data,  k_731178,  memqp(data, p_73509_73780, &c_733181));
 } else { 
   
 
-return_closcall1(data,  k_731178,  memberp(data, p_73509_73780, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
+return_closcall1(data,  k_731178,  memqp(data, p_73509_73780, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 ; 
 }
 
@@ -7906,18 +7906,18 @@ if( (boolean_f != ((inline_function_type)
                    ((closure)__glo_list_127_191_191inline_191_191_scheme_base)->fn)(data,&local_731794, exp_7330_73774)) ){ 
     
   
-if( (boolean_f != memberp(data, Cyc_car(data, exp_7330_73774), __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, Cyc_car(data, exp_7330_73774), __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
 
 
-return_closcall1(data,  k_73853,  memberp(data, Cyc_car(data, exp_7330_73774), __glo__85primitives_85_scheme_cyclone_primitives));
+return_closcall1(data,  k_73853,  memqp(data, Cyc_car(data, exp_7330_73774), __glo__85primitives_85_scheme_cyclone_primitives));
 } else { 
   
 
 
 
-return_closcall1(data,  k_73853,  memberp(data, Cyc_car(data, exp_7330_73774), __glo__85udf_91prims_85_scheme_cyclone_primitives));}
+return_closcall1(data,  k_73853,  memqp(data, Cyc_car(data, exp_7330_73774), __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 
 } else { 
   return_closcall1(data,  k_73853,  boolean_f);}
@@ -8158,20 +8158,20 @@ make_pair(c_731696,quote_Cyc_91end_91thread_67,&c_731697);
 make_pair(c_731695,quote_Cyc_91spawn_91thread_67,&c_731696);
 
 make_pair(c_731694,quote_Cyc_91set_91cvar_67,&c_731695);
-return_closcall1(data,  k_73823,  memberp(data, exp_739_73766, &c_731694));; 
+return_closcall1(data,  k_73823,  memqp(data, exp_739_73766, &c_731694));; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_73819, object exp_734_73764) {
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim?");
   
-if( (boolean_f != memberp(data, exp_734_73764, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
+if( (boolean_f != memqp(data, exp_734_73764, __glo__85primitives_85_scheme_cyclone_primitives)) ){ 
   
 
-return_closcall1(data,  k_73819,  memberp(data, exp_734_73764, __glo__85primitives_85_scheme_cyclone_primitives));
+return_closcall1(data,  k_73819,  memqp(data, exp_734_73764, __glo__85primitives_85_scheme_cyclone_primitives));
 } else { 
   
 
-return_closcall1(data,  k_73819,  memberp(data, exp_734_73764, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
+return_closcall1(data,  k_73819,  memqp(data, exp_734_73764, __glo__85udf_91prims_85_scheme_cyclone_primitives));}
 ; 
 }
 
@@ -8179,7 +8179,7 @@ static void __lambda_4(void *data, int argc, closure _,object k_73816, object ex
   Cyc_st_add(data, "scheme/cyclone/primitives.sld:prim:udf?");
 
 
-return_closcall1(data,  k_73816,  memberp(data, exp_733_73763, __glo__85udf_91prims_85_scheme_cyclone_primitives));; 
+return_closcall1(data,  k_73816,  memqp(data, exp_733_73763, __glo__85udf_91prims_85_scheme_cyclone_primitives));; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73809, object cps_91sym_731_73761, object inline_91sym_732_73762) {
