@@ -757,6 +757,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_symbol_91hash_191_191inline_191_191_srfi_69;
 #include "cyclone/runtime.h"
 defsymbol(multi_127);
 defsymbol(comparator);

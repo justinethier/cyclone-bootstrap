@@ -667,6 +667,15 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_c_91log_191_191inline_191_191_scheme_inexact;
+extern object __glo_exp_191_191inline_191_191_scheme_inexact;
+extern object __glo_sqrt_191_191inline_191_191_scheme_base;
+extern object __glo_sin_191_191inline_191_191_scheme_inexact;
+extern object __glo_cos_191_191inline_191_191_scheme_inexact;
+extern object __glo_tan_191_191inline_191_191_scheme_inexact;
+extern object __glo_asin_191_191inline_191_191_scheme_inexact;
+extern object __glo_acos_191_191inline_191_191_scheme_inexact;
+extern object __glo_atan_191_191inline_191_191_scheme_inexact;
 #include "cyclone/runtime.h"
 defsymbol(hash_127);
 defsymbol(ordering_127);

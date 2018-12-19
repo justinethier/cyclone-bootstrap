@@ -816,6 +816,7 @@ extern object __glo_env_117enclosing_91environment_191_191inline_191_191_scheme_
 extern object __glo_env_117first_91frame_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_env_117frame_91variables_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_env_117frame_91values_191_191inline_191_191_scheme_cyclone_util;
+extern object __glo_symbol_91hash_191_191inline_191_191_srfi_69;
 #include "cyclone/runtime.h"
 defsymbol(Cyc_91list);
 defsymbol(k);
