@@ -13,13 +13,13 @@
             (scheme write) 
             (scheme cyclone ast) 
             (scheme cyclone primitives)
+            (scheme cyclone transforms)
             (scheme cyclone cps-optimizations)
             (scheme cyclone util) 
             (scheme cyclone pretty-print)
             (srfi 2)
             (srfi 69)
             )
-    (define trace:error write)
     ))
 
 ;; TODO:
@@ -39,7 +39,7 @@
           (lambda (v)
             (and-let* ((adb-var (adb:get/default v #f)))
               (when (not (adbv:inlinable adb-var))
-                (trace:error `(cannot inline ,ref))
+                ;(trace:error `(cannot inline ,ref))
                 (return #f))
             )
           )
@@ -54,13 +54,13 @@
   ;; exp - S-expression to scan
   ;; vars - alist of current set of variables
   (define (scan exp vars)
-    (trace:error `(DEBUG scan ,(ast:ast->pp-sexp exp)))
+    ;(trace:error `(DEBUG scan ,(ast:ast->pp-sexp exp)))
     (cond
      ((ast:lambda? exp)
       (for-each
         (lambda (a)
           (scan a vars))
-        (ast:lambda-args exp))
+        (ast:lambda-formals->list exp))
       (for-each
         (lambda (e)
           (scan e vars))
@@ -88,7 +88,7 @@
         (for-each
           (lambda (e)
             (scan e vars))
-          (ast:lambda-args (car exp)))
+          (ast:lambda-formals->list (car exp)))
 
         ;; Scan body, with reset vars (??)
         (for-each
@@ -122,6 +122,7 @@
 
 (cond-expand
   (program
+    (define trace:error write)
     (define sexp
 '(
 
