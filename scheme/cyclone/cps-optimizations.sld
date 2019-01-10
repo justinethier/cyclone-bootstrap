@@ -109,6 +109,7 @@
       with-fnc!
   )
   (include "cps-opt-local-var-redux.scm")
+  (include "cps-opt-analyze-call-graph.scm")
   (begin
     ;; The following two defines allow non-CPS functions to still be considered
     ;; for certain inlining optimizations.
@@ -130,9 +131,12 @@
         (eval '(define Cyc-fast-lte <=) env)
         env))
     (define *adb* (make-hash-table))
+    (define *adb-call-graph* (make-hash-table))
     (define (adb:get-db) *adb*)
     (define (adb:clear!)
-      (set! *adb* (make-hash-table)))
+      (set! *adb* (make-hash-table))
+      (set! *adb-call-graph* (make-hash-table))
+    )
     (define (adb:get key) (hash-table-ref *adb* key))
     (define (adb:get/default key default) (hash-table-ref/default *adb* key default))
     (define (adb:lambda-ids)
@@ -1000,6 +1004,9 @@
                           (not (null? (adbv:ref-by var)))
                           ;; Need to keep variable because it is mutated
                           (not (adbv:reassigned? var))
+
+                          ;; Make sure param is not computed by vars that may be mutated
+                          (inline-ok-from-call-graph? param *adb-call-graph*)
                     ))))
                     (ast:lambda-formals->list (car exp)))
                   ;; Check all args are valid primitives that can be inlined
@@ -1448,7 +1455,15 @@
                   (not (adbv:reassigned? var))
                   (not (adbv:self-rec-call? var))
                   ;(not (fnc-depth>? (ast:lambda-body fnc) 4))))
-                  (not (fnc-depth>? (ast:lambda-body fnc) 5))))
+                  (not (fnc-depth>? (ast:lambda-body fnc) 5))
+                  ;; Issue here is we can run into code that calls the 
+                  ;; same continuation from both if branches. In this
+                  ;; case we do not want to beta-expand as a contraction
+                  ;; because duplicate instances of the same code may be
+                  ;; introduced, causing problems downstream.
+                  (and called-once?
+                       (not (contains-if? (ast:lambda-body fnc))))
+             ))
            )))
         (else #f)))
 
@@ -1468,6 +1483,19 @@
                 exp))
               (else #f)))
           (scan exp depth)
+          (return #f))))
+
+    (define (contains-if? exp)
+      (call/cc
+        (lambda (return)
+          (define (scan exp)
+            (cond
+              ((ast:lambda? exp)  (scan (ast:lambda-body exp)))
+              ((quote? exp)       #f)
+              ((if? exp)          (return #t))
+              ((app? exp)         (for-each scan exp))
+              (else #f)))
+          (scan exp)
           (return #f))))
 
     ;; Check app and beta expand if possible, else just return given code
@@ -1598,6 +1626,7 @@
       (analyze exp -1 -1) ;; Top-level is lambda ID -1
       (analyze2 exp) ;; Second pass
       (analyze:find-inlinable-vars exp '()) ;; Identify variables safe to inline
+      (set! *adb-call-graph* (analyze:build-call-graph exp))
       (analyze:find-recursive-calls2 exp)
       ;(analyze:set-calls-self)
     )
