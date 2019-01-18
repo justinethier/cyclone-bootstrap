@@ -105,6 +105,8 @@
       adbf:closure-size adbf:set-closure-size!
       adbf:self-closure-index adbf:set-self-closure-index!
       adbf:calls-self? adbf:set-calls-self!
+      adbf:vars-mutated-by-set
+      adbf:set-vars-mutated-by-set!
       with-fnc
       with-fnc!
   )
@@ -257,6 +259,7 @@
        closure-size
        self-closure-index
        calls-self
+       vars-mutated-by-set
       )
       adb:function?
       (simple adbf:simple adbf:set-simple!)
@@ -278,6 +281,8 @@
       (self-closure-index adbf:self-closure-index adbf:set-self-closure-index!)
       ;; Does this function call itself?
       (calls-self adbf:calls-self? adbf:set-calls-self!)
+      ;; Variables this function mutates via (set!)
+      (vars-mutated-by-set adbf:vars-mutated-by-set adbf:set-vars-mutated-by-set!)
     )
     (define (adb:make-fnc)
       (%adb:make-fnc 
@@ -291,6 +296,7 @@
        -1   ;; closure-size
        -1   ;; self-closure-index
        #f   ;; calls-self
+      '()   ;; vars-mutated-by-set
       ))
 
     ;; A constant value that cannot be mutated
@@ -560,7 +566,17 @@
            (for-each
              (lambda (expr)
                (analyze expr scope-sym id))
-             (ast:lambda-body exp))))
+             (ast:lambda-body exp))
+           ;; Keep track of mutations made by child lambda's
+           (when (> lid 0)
+             (with-fnc id (lambda (inner-fnc)
+               (let ((vars-set (adbf:vars-mutated-by-set inner-fnc)))
+                 (when (pair? vars-set)
+                  (with-fnc! lid (lambda (outer-fnc)
+                    (adbf:set-vars-mutated-by-set!
+                      outer-fnc
+                      (append vars-set (adbf:vars-mutated-by-set outer-fnc))))))))))
+        ))
         ((const? exp) #f)
         ((quote? exp) #f)
         ((ref? exp)
@@ -579,6 +595,11 @@
            (adbv:set-const-value! var #f)))
          (analyze (define->exp exp) (define->var exp) lid))
         ((set!? exp)
+         (when (ref? (set!->var exp))
+           (with-fnc! lid (lambda (fnc)
+            (adbf:set-vars-mutated-by-set!
+              fnc
+              (cons (set!->var exp) (adbf:vars-mutated-by-set fnc))))))
          ;(let ((var (adb:get/default (set!->var exp) (adb:make-var))))
          (with-var! (set!->var exp) (lambda (var)
            (if (adbv:assigned-value var)
@@ -1186,18 +1207,19 @@
     (define (inline-prim-call? exp scope-sym ivars args)
       (let ((fast-inline #t)
             (cannot-inline #f))
-        (for-each
-          (lambda (v)
-            (with-var v (lambda (var)
-              (if (adbv:mutated-by-set? var)
-                  (set! cannot-inline #t)))))
-          args)
+        ;; TODO: causes problems doing this here???
+        ;(for-each
+        ;  (lambda (v)
+        ;    (with-var v (lambda (var)
+        ;      (if (adbv:mutated-by-set? var)
+        ;          (set! cannot-inline #t)))))
+        ;  args)
         (for-each
           (lambda (v)
             (with-var v (lambda (var)
               (if (or (member scope-sym (adbv:mutated-indirectly var))
-                      (adbv:mutated-by-set? var)) ;; TOO restrictive, only matters if set! occurs in body we
-                                                  ;; are inlining to. Also, does not catch cases where the
+                     ;(adbv:mutated-by-set? var)  ;; TOO restrictive, only matters if set! occurs in body we
+                  )                               ;; are inlining to. Also, does not catch cases where the
                                                   ;; var might be mutated by a function call outside this
                                                   ;; module (but hopefully we already catch that elsewhere).
                   (set! cannot-inline #t))
@@ -1285,6 +1307,18 @@
           ; (inline-ok? (cadr exp) ivars args arg-used return) 
           ;)
          (else
+           (when (ref? (car exp))
+            (with-var (car exp) (lambda (var)
+              (when (adbv:defines-lambda-id var)
+                ;TODO: return #f if any ivars are members of vars-mutated-by-set from the adbf
+                (with-fnc (adbv:defines-lambda-id var) (lambda (fnc)
+                  (for-each
+                    (lambda (ivar)
+                      (if (member ivar (adbf:vars-mutated-by-set fnc))
+                        (return #f))
+                    )
+                    ivars))))
+            )))
            (for-each
             (lambda (e)
               (inline-ok? e ivars args arg-used return))
@@ -1456,15 +1490,16 @@
                       (= 1 (adbv:app-fnc-count var)))
                   (not (adbv:reassigned? var))
                   (not (adbv:self-rec-call? var))
-                  ;(not (fnc-depth>? (ast:lambda-body fnc) 4))))
-                  (not (fnc-depth>? (ast:lambda-body fnc) 5))
+                  (not (fnc-depth>? (ast:lambda-body fnc) 4))
+                  ;(not (fnc-depth>? (ast:lambda-body fnc) 5))
                   ;; Issue here is we can run into code that calls the 
                   ;; same continuation from both if branches. In this
                   ;; case we do not want to beta-expand as a contraction
                   ;; because duplicate instances of the same code may be
                   ;; introduced, causing problems downstream.
-                  (and called-once?
-                       (not (contains-if? (ast:lambda-body fnc))))
+                  (or (not called-once?)
+                      (and called-once?
+                           (not (contains-if? (ast:lambda-body fnc)))))
              ))
            )))
         (else #f)))
@@ -1669,11 +1704,15 @@
       (analyze-cps ast)
       (trace:info "---------------- cps analysis db:")
       (trace:info (adb:get-db))
-      ;(opt:beta-expand ;; TODO: temporarily disabled, causes problems with massive expansions in compiler benchmark, need to revist how to throttle/limit this (program size? heuristics? what else??)
-        (opt:inline-prims 
-          (opt:contract ast)
-          -1)
-      ;)
+      (let ((new-ast (opt:inline-prims 
+                       (opt:contract ast) -1)))
+        ;; Just a hack for now, need to fix beta expand in compiler benchmark
+        (if (< (length (filter define? new-ast)) 1000)
+          (opt:beta-expand new-ast) ;; TODO: temporarily disabled, causes problems with massive expansions 
+                                    ;; in compiler benchmark, need to revist how to throttle/limit this 
+                                    ;; (program size? heuristics? what else??)
+          new-ast)
+      )
     )
 
 ;; Renumber lambdas and re-run analysis
