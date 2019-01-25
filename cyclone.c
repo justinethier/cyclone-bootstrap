@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.9.7 
+ ** Version 0.9.8 
  **
  **/
 
@@ -11087,18 +11087,29 @@ mclosure1(c_733812, c_schemecyclonecommon_entry_pt, &c_733811);
 }
 static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
   
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
+   ;
+  
 mclosure0(c_733545, (function_type)__lambda_338);c_733545.num_args = 1;
-return_closcall1(data,  __glo_current_91second_scheme_time,  &c_733545);
+return_closcall1(data,  __glo_current_91second_scheme_time,  &c_733545); ;
+
 ;
 }
 int main(int argc, char **argv, char **envp)
