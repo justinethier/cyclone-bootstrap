@@ -29,7 +29,7 @@
   (define cont #f)
   (define (scan exp return locals)
     ;(trace:error `(DEBUG scan ,(ast:ast->pp-sexp exp)))
-    (write `(DEBUG scan ,var ,cont ,(ast:ast->pp-sexp exp))) (newline)
+    ;(write `(DEBUG scan ,var ,cont ,(ast:ast->pp-sexp exp))) (newline)
     (cond
      ;; TODO: reject if a lambda is returned
      ((ast:lambda? exp)
@@ -94,14 +94,14 @@
         (cdr exp)))
      (else exp)
   ))
-(write `(DEBUG ,var ;,body
-      ,(ref? var)
-      ,(ast:lambda? body)
-      ,(eq? (ast:lambda-formals-type body) 'args:fixed)
-      ,(< (length (ast:lambda-args body)) 4) ;; Too many combinations w/more args
-      ,(adb:get/default var #f)
-      ,(adbv:self-rec-call? (adb:get/default var #f))
-)) (newline)
+;;(write `(DEBUG ,var ;,body
+;;      ,(ref? var)
+;;      ,(ast:lambda? body)
+;;      ,(eq? (ast:lambda-formals-type body) 'args:fixed)
+;;      ,(< (length (ast:lambda-args body)) 4) ;; Too many combinations w/more args
+;;      ,(adb:get/default var #f)
+;;      ,(adbv:self-rec-call? (adb:get/default var #f))
+;;)) (newline)
   (cond
     ((and
       (ref? var)
