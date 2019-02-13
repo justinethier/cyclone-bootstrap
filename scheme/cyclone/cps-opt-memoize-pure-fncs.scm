@@ -94,16 +94,23 @@
         (cdr exp)))
      (else exp)
   ))
+(write `(DEBUG ,var ;,body
+      ,(ref? var)
+      ,(ast:lambda? body)
+      ,(eq? (ast:lambda-formals-type body) 'args:fixed)
+      ,(< (length (ast:lambda-args body)) 4) ;; Too many combinations w/more args
+      ,(adb:get/default var #f)
+      ,(adbv:self-rec-call? (adb:get/default var #f))
+)) (newline)
   (cond
-    ((and-let* 
-      ((ref? var)
-       (ast:lambda? body)
-       (eq? (ast:lambda-formals-type body) 'args:fixed)
-       (< (length (ast:lambda-args body)) 4) ;; Too many combinations w/more args
-       (adb:get/default var #f)
-       (adbv:self-rec-call? var)
-      ) 
-      #t)
+    ((and
+      (ref? var)
+      (ast:lambda? body)
+      (eq? (ast:lambda-formals-type body) 'args:fixed)
+      (< (length (ast:lambda-args body)) 4) ;; Too many combinations w/more args
+      (adb:get/default var #f)
+      (adbv:self-rec-call? (adb:get/default var #f))
+     ) 
      (call/cc
       (lambda (return)
         (set! cont (car (ast:lambda-args body)))
@@ -113,7 +120,7 @@
 )
 
 ;; Transformation to memoize simple recursive numeric functions
-(define (opt:memoize-pure-fncs sexp)
+(define (opt:memoize-pure-fncs sexp module-globals)
   (define memo-tbl '())
 
   ;; exp - S-expression to scan
@@ -133,8 +140,8 @@
         (cond
           ((memoizable? var body)
            (let ((new-var (gensym var)))
-            (write `(DEBUG ,var is memoizable))
-            (newline)
+            ;(write `(DEBUG ,var is memoizable))
+            ;(newline)
             ;; TODO: easy to rename function via gensym. however, also
             ;; need to inject this into top-level:
             ;; (define fib #f)
@@ -163,6 +170,10 @@
   (let ((new-exp (scan sexp)))
     (cond
       ((not (null? memo-tbl))
+       (when (pair? module-globals)
+         (set-cdr! 
+          module-globals
+          (append (cdr module-globals) (map cdr memo-tbl))))
        (append
         (map 
           (lambda (var/new-var)
@@ -207,7 +218,6 @@
    (lambda
      (k$41 x$5$21 y$6$22)
      (k$41 (Cyc-fast-plus x$5$21 y$6$22))))
- (define mfnc #f)
  (define ack
    (lambda
      (k$46 m$7$23 n$8$24)
@@ -321,12 +331,13 @@
 
 ))
 
-(let ((ast (ast:sexp->ast sexp)))
+(let ((ast (ast:sexp->ast sexp))
+      (module-globals (list)))
   (analyze-cps ast)
   ;(analyze:find-recursive-calls ast)
   (pretty-print
     (ast:ast->pp-sexp
-      (opt:memoize-pure-fncs ast))))
+      (opt:memoize-pure-fncs ast module-globals))))
 
 ;;    (pretty-print
 ;;      (ast:ast->pp-sexp
