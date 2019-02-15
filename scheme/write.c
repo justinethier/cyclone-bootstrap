@@ -347,7 +347,7 @@ return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7351);
 
 
 return_closcall1(data,  k_7317,  Cyc_write_va(data, 2,obj_733_737, Cyc_car(data, port_734_738)));}
-; 
+;; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7331, object r_7319) {
@@ -380,7 +380,7 @@ return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7336);
 
 
 return_closcall1(data,  k_7311,  Cyc_display_va(data, 2,obj_731_735, Cyc_car(data, port_732_736)));}
-; 
+;; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7330, object r_7313) {

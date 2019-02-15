@@ -400,7 +400,7 @@ complex_num_type local_73141;
 return_closcall1(data,  k_7352,  Cyc_fast_div(data,&local_73135, ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73138, z1_7318_7328), ((inline_function_type)
                    ((closure)__glo_c_91log_191_191inline_191_191_scheme_inexact)->fn)(data,&local_73141, Cyc_car(data, z2_7319_7329))));}
-; 
+;; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_7348, object z_7317_7327) {
@@ -424,7 +424,7 @@ static void __lambda_5(void *data, int argc, object self_7362, object r_7349) {
   return_closcall1(data,  ((closureN)self_7362)->elements[0],  boolean_f);
 } else { 
   return_closcall1(data,  ((closureN)self_7362)->elements[0],  boolean_t);}
-; 
+;; 
 }
 
 static void __lambda_9(void *data, int argc, closure _, object k, object z) { Cyc_check_num(data, z);

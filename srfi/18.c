@@ -619,7 +619,7 @@ c_73258.elements[2] = opts_7323_7346;
 
 
 return_direct_with_clo1(data,(closure)&c_73258,__lambda_21,  Cyc_car(data, opts_7323_7346));}
-; 
+;; 
 }
 
 static void __lambda_21(void *data, int argc, object self_73126, object r_73109) {
@@ -660,7 +660,7 @@ return_closcall3(data,  __glo_condition_91variable_91wait_67_srfi_18,  &c_73262,
   
 make_utf8_string_with_len(c_73272, "mutex-unlock! - unhandled args", 30, 30);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73127)->elements[0], &c_73272, ((closureN)self_73127)->elements[1], ((closureN)self_73127)->elements[2]);}
-; 
+;; 
 }
 
 static void __lambda_23(void *data, int argc, object self_73128, object r_73108) {
@@ -730,7 +730,7 @@ static void __lambda_19(void *data, int argc, object self_73123, object r_7397) 
 return_closcall2(data,  __glo__75thread_91join_67_srfi_18,  ((closureN)self_73123)->elements[0], Cyc_vector_ref(data, ((closureN)self_73123)->elements[1], obj_int2obj(2)));
 } else { 
   return_closcall1(data,  ((closureN)self_73123)->elements[0],  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_17(void *data, int argc, object self_73124, object k_7399) {
@@ -758,7 +758,7 @@ static void __lambda_18(void *data, int argc, object self_73125, object r_73100)
 return_closcall1(data,  ((closureN)self_73125)->elements[0],  Cyc_is_opaque(Cyc_vector_ref(data, ((closureN)self_73125)->elements[1], obj_int2obj(2))));
 } else { 
   return_closcall1(data,  ((closureN)self_73125)->elements[0],  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_31(void *data, int argc, closure _, object k, object thread_data_opaque) { gc_thread_data *td = (gc_thread_data *)(opaque_ptr(thread_data_opaque));
@@ -915,7 +915,7 @@ if( (boolean_f != Cyc_is_null(t_7311_7340)) ){
   return_closcall1(data,  ((closureN)self_73116)->elements[0],  __glo__85primordial_91thread_85_srfi_18);
 } else { 
   return_closcall1(data,  ((closureN)self_73116)->elements[0],  t_7311_7340);}
-; 
+;; 
 }
 
 static void __lambda_5(void *data, int argc, closure _,object k_7371, object t_739_7338, object obj_7310_7339) {
@@ -985,10 +985,10 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_vector_length(data, obj_731_7332)
 return_closcall1(data,  k_7350,  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref(data, obj_731_7332, obj_int2obj(0))));
 } else { 
   return_closcall1(data,  k_7350,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_7350,  boolean_f);}
-; 
+;; 
 }
 
 void c_srfi18_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

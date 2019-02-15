@@ -960,8 +960,8 @@ return_closcall1(data,  k_7393,  c_73276);
   
 make_utf8_string_with_len(c_73335, "case-lambda: no cases matched", 29, 29);
 return_closcall2(data,  __glo_error_scheme_base,  k_7393, &c_73335);}
-}
-; 
+;}
+;; 
 }
 
 static void __lambda_10(void *data, int argc, object self_73179, object k_73101, object s_7316_7337, object unit_7317_7338) {
@@ -1140,7 +1140,7 @@ static void __lambda_12(void *data, int argc, object self_73188, object r_73111)
   
 make_utf8_string_with_len(c_73286, "unit must be between 0.0 and 1.0 (exclusive), but got ", 54, 54);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73188)->elements[0], &c_73286, ((closureN)self_73188)->elements[1]);}
-; 
+;; 
 }
 
 static void __lambda_9(void *data, int argc, object self_73178, object k_7397, object s_7314_7336) {

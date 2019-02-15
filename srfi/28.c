@@ -629,18 +629,18 @@ return_closcall3(data,  car(raw_91write_7332),  ((closureN)self_7384)->elements[
   
 make_utf8_string_with_len(c_73182, "Unrecognized escape sequence", 28, 28);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7384)->elements[4], &c_73182);}
-}
-}
-}
-}
-
+;}
+;}
+;}
+;}
+;
 } else { 
   
 
 
 
 return_closcall3(data,  car(raw_91write_7332),  ((closureN)self_7384)->elements[4], Cyc_car(data, ((closureN)self_7384)->elements[3]), primitive_cdr);}
-}
+;}
 ;; 
 }
 
@@ -670,7 +670,7 @@ c_73218.elements[3] = ((closureN)self_7385)->elements[3];
 
 
 return_closcall3(data,  how_735_7333,  &c_73218, Cyc_car(data, ((closureN)self_7385)->elements[3]), car(((closureN)self_7385)->elements[0]));}
-; 
+;; 
 }
 
 static void __lambda_7(void *data, int argc, object self_7386, object r_7369) {

@@ -1357,7 +1357,7 @@ c_731986.elements[0] = k_73640;
 
 make_utf8_string_with_len(c_731992, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_731986, &c_731992, ((closureN)self_73816)->elements[0]);}
-; 
+;; 
 }
 
 static void __lambda_117(void *data, int argc, object self_73817, object r_73641) {
@@ -1469,7 +1469,7 @@ c_731210.elements[2] = ((closureN)self_73705)->elements[1];
 
 
 return_direct_with_clo1(data,(closure)&c_731210,__lambda_34,  Cyc_cdr(data, ((closureN)self_73705)->elements[0]));}
-; 
+;; 
 }
 
 static void __lambda_34(void *data, int argc, object self_73706, object v_9314_7326_73128_73228_73341) {
@@ -1521,7 +1521,7 @@ c_731484.elements[2] = ((closureN)self_73707)->elements[2];
 
 
 return_direct_with_clo1(data,(closure)&c_731484,__lambda_53,  Cyc_cdr(data, ((closureN)self_73707)->elements[0]));}
-; 
+;; 
 }
 
 static void __lambda_53(void *data, int argc, object self_73708, object v_9329_7341_73100_73207_73320) {
@@ -1573,7 +1573,7 @@ c_731794.elements[2] = ((closureN)self_73709)->elements[2];
 
 
 return_direct_with_clo1(data,(closure)&c_731794,__lambda_81,  Cyc_cdr(data, ((closureN)self_73709)->elements[0]));}
-; 
+;; 
 }
 
 static void __lambda_81(void *data, int argc, object self_73710, object v_9342_7354_7382_73194_73307) {
@@ -1622,7 +1622,7 @@ c_731888.elements[0] = ((closureN)self_73711)->elements[1];
 
 make_utf8_string_with_len(c_731894, "no expansion for", 16, 16);
 return_closcall3(data,  __glo_error_scheme_base,  &c_731888, &c_731894, ((closureN)self_73711)->elements[0]);}
-; 
+;; 
 }
 
 static void __lambda_87(void *data, int argc, object self_73712, object r_73400) {
@@ -1688,7 +1688,7 @@ return_closcall2(data,  ((closureN)self_73713)->elements[0],  &c_731838, quote_e
 ;
 } else { 
   return_closcall1(data,  k_73402,  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_83(void *data, int argc, object self_73714, object r_73417) {
@@ -1791,25 +1791,25 @@ c_731549.elements[2] = ((closureN)self_73717)->elements[1];
 return_closcall2(data,  ((closureN)self_73717)->elements[0],  &c_731549, quote__if);
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73424,  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_55(void *data, int argc, object self_73718, object r_73445) {
@@ -2579,28 +2579,28 @@ c_731290.elements[2] = ((closureN)self_73743)->elements[1];
 return_closcall2(data,  ((closureN)self_73743)->elements[0],  &c_731290, quote__75case);
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73497,  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_36(void *data, int argc, object self_73744, object r_73521) {
@@ -3115,10 +3115,10 @@ c_73891.elements[2] = ((closureN)self_73760)->elements[1];
 return_closcall2(data,  ((closureN)self_73760)->elements[0],  &c_73891, quote__if);
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
 ;
@@ -3127,13 +3127,13 @@ return_closcall2(data,  ((closureN)self_73760)->elements[0],  &c_73891, quote__i
 ;
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
-
+;
 } else { 
   return_closcall1(data,  k_73553,  boolean_f);}
-; 
+;; 
 }
 
 static void __lambda_4(void *data, int argc, object self_73761, object r_73574) {

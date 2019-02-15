@@ -112,6 +112,7 @@
   )
   (include "cps-opt-local-var-redux.scm")
   (include "cps-opt-analyze-call-graph.scm")
+  (include "cps-opt-memoize-pure-fncs.scm")
   (begin
     ;; The following two defines allow non-CPS functions to still be considered
     ;; for certain inlining optimizations.
@@ -1699,7 +1700,7 @@
     ;; TODO: re-run phases again until program is stable (less than n opts made, more than r rounds performed, etc)
     ;; END notes
 
-    (define (optimize-cps ast)
+    (define (optimize-cps ast add-globals! flag-set?)
       (adb:clear!)
       (analyze-cps ast)
       (trace:info "---------------- cps analysis db:")
@@ -1707,11 +1708,18 @@
       (let ((new-ast (opt:inline-prims 
                        (opt:contract ast) -1)))
         ;; Just a hack for now, need to fix beta expand in compiler benchmark
-        (if (< (length (filter define? new-ast)) 1000)
-          (opt:beta-expand new-ast) ;; TODO: temporarily disabled, causes problems with massive expansions 
-                                    ;; in compiler benchmark, need to revist how to throttle/limit this 
-                                    ;; (program size? heuristics? what else??)
-          new-ast)
+        (when (< (length (filter define? new-ast)) 1000)
+          (set! new-ast 
+                (opt:beta-expand new-ast)) ;; TODO: temporarily disabled, causes problems with massive expansions 
+                                           ;; in compiler benchmark, need to revist how to throttle/limit this 
+                                           ;; (program size? heuristics? what else??)
+        )
+
+        ;; Memoize pure functions, if instructed
+        (when (and (procedure? flag-set?) (flag-set? 'memoize-pure-functions))
+          (set! new-ast (opt:memoize-pure-fncs new-ast add-globals!))
+        )
+        new-ast
       )
     )
 
