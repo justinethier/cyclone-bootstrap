@@ -1422,7 +1422,7 @@ object Cyc_num_cmp_va_list(void *data, int argc,
  * Code is from: https://github.com/libtom/libtommath/issues/3
  */
 #define PRECISION 53
-double mp_get_double(mp_int *a)
+double mp_get_double(const mp_int *a)
 {
     static const int NEED_DIGITS = (PRECISION + 2 * DIGIT_BIT - 2) / DIGIT_BIT;
     static const double DIGIT_MULTI = (mp_digit)1 << DIGIT_BIT;
