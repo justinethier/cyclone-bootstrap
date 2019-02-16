@@ -64,9 +64,10 @@ cyclone_sources = [
     ]
 incdir = include_directories('include')
 
-tommath_inc = include_directories('/usr/local/include')
-tommath_lib = static_library('tommath', objects: '/usr/local/lib/libtommath.a')
-tommath_dep = declare_dependency(link_with: tommath_lib, include_directories: tommath_inc)
+libdirs = ['/usr/lib', '/usr/local/lib'] 
+concurrency_kit_dep = compiler.find_library('libck', dirs: libdirs)
+tommath_dep = compiler.find_library('libtommath', dirs: libdirs)
+all_deps = [ concurrency_kit_dep, tommath_dep ]
 
-cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: tommath_dep)
+cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: all_deps)
 executable('icyc', 'icyc.c', link_with: cyclone_lib, include_directories: incdir)
