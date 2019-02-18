@@ -359,11 +359,6 @@
     (lambda (stream) (cdr (force stream))))
   (assert:equal "Lazy #3" (head (tail (tail integers))) 2)))
 
-;; Bignums
-(assert:equal "Bignum addition" (+ 9999999999 9999999999) 19999999998)
-(assert:equal "Bignum/fixnum addition" (+ 1 9999999999) 10000000000)
-(assert:equal "Bignum/fixnum multiplication" (* 2 9999999999) 19999999998)
-
 
 ; TODO: use display, output without surrounding quotes
 (display (list *num-passed* "tests passed with no errors"))
