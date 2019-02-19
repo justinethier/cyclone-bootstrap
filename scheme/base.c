@@ -17927,7 +17927,7 @@ static void __lambda_1032(void *data, int argc, closure _, object k, object coun
         char ch_buf[5];
         char_type c;
         int buflen, num_cp, len;
-        Cyc_check_int(data, count);
+        Cyc_check_fixnum(data, count);
         if (!obj_is_char(fill)) {
           Cyc_rt_raise2(data, "Expected character buf received", fill);
         }
