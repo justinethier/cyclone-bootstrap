@@ -1,13 +1,45 @@
 project('cyclone', 'c')
+
 compiler = meson.get_compiler('c')
-add_global_arguments('-DCYC_INSTALL_SLD=""', language: 'c')
-add_global_arguments('-DCYC_INSTALL_LIB=""', language: 'c')
-add_global_arguments('-DCYC_INSTALL_INC=""', language: 'c')
-add_global_arguments('-DCYC_INSTALL_DIR="."', language: 'c')
-add_global_arguments('-DCYC_CC_PROG=""', language: 'c')
-add_global_arguments('-DCYC_CC_EXEC=""', language: 'c')
-add_global_arguments('-DCYC_CC_LIB=""', language: 'c')
-add_global_arguments('-DCYC_CC_SO=""', language: 'c')
+prefix = '/usr/local'
+datadir = prefix + '/share/cyclone'
+bindir = prefix + '/bin'
+libdir = prefix + '/lib'
+incdir = prefix + '/include/cyclone'
+
+CC = compiler
+LIBS = '-pthread -lcyclone -lck -lm -ltommath'
+
+CYC_PROFILING = ''
+#CYC_PROFILING = '-g -pg'
+
+CYC_GCC_OPT_FLAGS = '-O2'
+#CYC_GCC_OPT_FLAGS = '-g'
+
+# Linker options
+LDFLAGS = '-L. ' + CYC_PROFILING + ' -Wl,-export_dynamic -Wl,-undefined -Wl,dynamic_lookup'
+# Compiler options
+CFLAGS  = CYC_PROFILING + CYC_GCC_OPT_FLAGS + ' -fPIC -Wall -Iinclude'
+COMP_CFLAGS = CYC_PROFILING + CYC_GCC_OPT_FLAGS + ' -fPIC -Wall -I'+ incdir + '-L' + libdir
+# Use these lines instead for debugging or profiling
+#CFLAGS = '-g -Wall'
+#CFLAGS = '-g -pg -Wall'
+
+# Commands "baked into" cyclone for invoking the C compiler
+CC_PROG = '@CC@ ~src-file~ @COMP_CFLAGS@ -c -o ~exec-file~.o'.format(CC, COMP_CFLAGS)
+CC_EXEC = '@CC@ ~exec-file~.o ~obj-files~ @LIBS@ @COMP_CFLAGS@ -o ~exec-file~'.format(CC, LIBS, COMP_CFLAGS)
+CC_LIB  = '@CC@ ~src-file~ @COMP_CFLAGS@ -c -o ~exec-file~.o'.format(CC, COMP_CFLAGS)
+CC_SO   = '@CC@ -shared $@LDFLAGS@ -o ~exec-file~.so ~exec-file~.o'.format(CC, LDFLAGS)
+
+add_global_arguments('-DCYC_INSTALL_SLD="' + datadir + '"', language: 'c')
+add_global_arguments('-DCYC_INSTALL_LIB="' + libdir + '"', language: 'c')
+add_global_arguments('-DCYC_INSTALL_INC="' + incdir + '"', language: 'c')
+add_global_arguments('-DCYC_INSTALL_DIR="' + bindir + '"', language: 'c')
+add_global_arguments('-DCYC_CC_PROG="' + CC_PROG + '"', language: 'c')
+add_global_arguments('-DCYC_CC_EXEC="' + CC_EXEC + '"', language: 'c')
+add_global_arguments('-DCYC_CC_LIB="' + CC_LIB + '"', language: 'c')
+add_global_arguments('-DCYC_CC_SO="' + CC_SO + '"', language: 'c')
+
 cyclone_sources = [
         './cyclone.c',
         './dispatch.c',
