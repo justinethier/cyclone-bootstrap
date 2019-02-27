@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.9.9 
+ ** Version 0.9.10 
  **
  **/
 
@@ -183,6 +183,7 @@ extern object __glo_is_91a_127_scheme_base;
 extern object __glo_register_91simple_91type_srfi_9;
 extern object __glo_make_91type_91predicate_srfi_9;
 extern object __glo_make_91constructor_srfi_9;
+extern object __glo_make_91constructor_95args_scheme_base;
 extern object __glo_make_91getter_srfi_9;
 extern object __glo_make_91setter_srfi_9;
 extern object __glo_slot_91ref_scheme_base;
