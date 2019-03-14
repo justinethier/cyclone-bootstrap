@@ -1866,14 +1866,17 @@
 
 ;; Find index of element in list, or -1 if not found
 (define _list-index
-  (lambda (e lst)
-    (if (null? lst)
-      -1
-      (if (eq? (car lst) e)
-        0
-        (if (= (_list-index e (cdr lst)) -1) 
-          -1
-          (+ 1 (_list-index e (cdr lst))))))))
+  (lambda (e lst1)
+;    (if (null? lst)
+;      -1
+;      (if (eq? (car lst) e)
+;        0
+;        (if (= (_list-index e (cdr lst)) -1) 
+;          -1
+;          (+ 1 (_list-index e (cdr lst))))))))
+      (let lp ((lis lst1) (n 0))
+        (and (not (null? lis))
+             (if (eq? e (car lis)) n (lp (cdr lis) (+ n 1)))))))
 
 (define (record? obj)
   (and (vector? obj)
