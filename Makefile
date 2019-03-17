@@ -30,6 +30,7 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c has
 	$(CC) $(CFLAGS) -c \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
   -DCYC_INSTALL_LIB=\"$(LIBDIR)\" \
+  -DCYC_INSTALL_BIN=\"$(BINDIR)\" \
   -DCYC_INSTALL_INC=\"$(INCDIR)\" \
   -DCYC_INSTALL_SLD=\"$(DATADIR)\" \
   -DCYC_CC_PROG=\"$(CC_PROG)\" \
