@@ -446,6 +446,12 @@
                 `(,(cadr exprs) ,(rename 'tmp)))
                (else
                 `(,(rename 'begin) ,@exprs))))
+            (define (agg-cond tmp-sym lis)
+              (if (null? lis)
+                  #f
+                  `(if (eq? ,tmp-sym (,(rename 'quote) ,(car lis)))
+                       #t
+                       ,(agg-cond tmp-sym (cdr lis)))))
             (define (clause ls)
               (cond
                ((null? ls) #f)
@@ -457,8 +463,10 @@
                   ,(body (cdar ls))
                   ,(clause (cdr ls))))
                (else
-                `(,(rename 'if) (,(rename 'memv) ,(rename 'tmp)
-                                 (,(rename 'quote) ,(caar ls)))
+                `(,(rename 'if) 
+                      ,(agg-cond (rename 'tmp) (caar ls))
+                      ;(,(rename 'memv) ,(rename 'tmp)
+                      ; (,(rename 'quote) ,(caar ls)))
                   ,(body (cdar ls))
                   ,(clause (cdr ls))))))
             `(let ((,(rename 'tmp) ,(cadr expr)))
@@ -1864,19 +1872,12 @@
   (lambda (obj val)
     (vector-set! (vector-ref obj 2) idx val)))
 
-;; Find index of element in list, or -1 if not found
+;; Find index of element in list, or #f if not found
 (define _list-index
   (lambda (e lst1)
-;    (if (null? lst)
-;      -1
-;      (if (eq? (car lst) e)
-;        0
-;        (if (= (_list-index e (cdr lst)) -1) 
-;          -1
-;          (+ 1 (_list-index e (cdr lst))))))))
-      (let lp ((lis lst1) (n 0))
-        (and (not (null? lis))
-             (if (eq? e (car lis)) n (lp (cdr lis) (+ n 1)))))))
+    (let lp ((lis lst1) (n 0))
+      (and (not (null? lis))
+           (if (eq? e (car lis)) n (lp (cdr lis) (+ n 1)))))))
 
 (define (record? obj)
   (and (vector? obj)
