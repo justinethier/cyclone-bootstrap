@@ -12802,21 +12802,20 @@ env_7326_73792 = Cyc_cdr(data, env_7326_73792);key_7327_73793 = key_7327_73793;
 continue;
 } else { 
   
-closureN_type c_733200;
-object e_733209 [2];
-c_733200.hdr.mark = gc_color_red;
- c_733200.hdr.grayed = 0;
-c_733200.tag = closureN_tag;
- c_733200.fn = (function_type)__lambda_33;
-c_733200.num_args = 1;
-c_733200.num_elements = 2;
-c_733200.elements = (object *)e_733209;
-c_733200.elements[0] = env_7326_73792;
-c_733200.elements[1] = k_731151;
+closureN_type * c_733200 = alloca(sizeof(closureN_type));
+object *e_733209 = (object *)alloca(sizeof(object) * 2);c_733200->hdr.mark = gc_color_red;
+ c_733200->hdr.grayed = 0;
+c_733200->tag = closureN_tag;
+ c_733200->fn = (function_type)__lambda_33;
+c_733200->num_args = 1;
+c_733200->num_elements = 2;
+c_733200->elements = (object *)e_733209;
+c_733200->elements[0] = env_7326_73792;
+c_733200->elements[1] = k_731151;
 
 
 
-return_closcall3(data,  __glo_assq_91remove_91key_scheme_cyclone_transforms,  &c_733200, Cyc_cdr(data, env_7326_73792), key_7327_73793);}
+return_closcall3(data,  __glo_assq_91remove_91key_scheme_cyclone_transforms,  c_733200, Cyc_cdr(data, env_7326_73792), key_7327_73793);}
 ;
 } else { 
   return_closcall1(data,  k_731151,  NULL);}
