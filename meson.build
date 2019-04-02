@@ -18,9 +18,11 @@ CYC_GCC_OPT_FLAGS = '-O2'
 
 # Linker options
 LDFLAGS = '-L. ' + CYC_PROFILING + ' -Wl,-export_dynamic -Wl,-undefined -Wl,dynamic_lookup'
+
 # Compiler options
 CFLAGS  = CYC_PROFILING + CYC_GCC_OPT_FLAGS + ' -fPIC -Wall -Iinclude'
 COMP_CFLAGS = CYC_PROFILING + CYC_GCC_OPT_FLAGS + ' -fPIC -Wall -I'+ incdir + '-L' + libdir
+
 # Use these lines instead for debugging or profiling
 #CFLAGS = '-g -Wall'
 #CFLAGS = '-g -pg -Wall'
@@ -101,5 +103,6 @@ concurrency_kit_dep = compiler.find_library('libck', dirs: libdirs)
 tommath_dep = compiler.find_library('libtommath', dirs: libdirs)
 all_deps = [ concurrency_kit_dep, tommath_dep ]
 
-cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: all_deps)
-executable('icyc', 'icyc.c', link_with: cyclone_lib, include_directories: incdir)
+cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: all_deps, install: true)
+executable('icyc', 'icyc.c', link_with: cyclone_lib, include_directories: incdir, install: true)
+executable('cyclone', 'cyclone.c', link_with: cyclone_lib, include_directories: incdir, install: true)
