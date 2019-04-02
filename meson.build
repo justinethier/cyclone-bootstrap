@@ -1,11 +1,16 @@
 project('cyclone', 'c')
 
 compiler = meson.get_compiler('c')
+
 prefix = '/usr/local'
 datadir = prefix + '/share/cyclone'
 bindir = prefix + '/bin'
 libdir = prefix + '/lib'
 incdir = prefix + '/include/cyclone'
+
+if meson.get_compiler('c').get_id() != 'clang'
+    extra_args = [ '-lm', '-ldl' ]
+endif
 
 CC = compiler
 LIBS = '-pthread -lcyclone -lck -lm -ltommath'
@@ -101,8 +106,9 @@ incdir = include_directories('include')
 libdirs = ['/usr/lib', '/usr/local/lib'] 
 concurrency_kit_dep = compiler.find_library('libck', dirs: libdirs)
 tommath_dep = compiler.find_library('libtommath', dirs: libdirs)
-all_deps = [ concurrency_kit_dep, tommath_dep ]
+thread_dep = dependency('threads')
+all_deps = [ concurrency_kit_dep, tommath_dep, thread_dep ]
 
-cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: all_deps, install: true)
-executable('icyc', 'icyc.c', link_with: cyclone_lib, include_directories: incdir, install: true)
-executable('cyclone', 'cyclone.c', link_with: cyclone_lib, include_directories: incdir, install: true)
+cyclone_lib = shared_library('cyclone', cyclone_sources, include_directories: incdir, dependencies: all_deps, install: true, link_args: extra_args)
+executable('icyc', 'icyc.c', link_with: cyclone_lib, include_directories: incdir, install: true, c_args: extra_args)
+executable('cyclone', 'cyclone.c', link_with: cyclone_lib, include_directories: incdir, install: true, c_args: extra_args)
