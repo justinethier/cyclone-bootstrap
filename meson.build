@@ -10,6 +10,8 @@ incdir = prefix + '/include/cyclone'
 
 if meson.get_compiler('c').get_id() != 'clang'
     extra_args = [ '-lm', '-ldl' ]
+else
+    extra_args = [ ]
 endif
 
 CC = compiler
