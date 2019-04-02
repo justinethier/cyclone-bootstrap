@@ -56,6 +56,8 @@ You will have `cyclone` and `icyc` executables generated in the local directory 
 Meson build instruction for Linux
 ---------------------------------
 
+The meson build also works on Linux. 
+
 ### Install the Meson build system and dependencies
 
 1. See the [Meson Quick Guide](https://mesonbuild.com/Quick-guide.html) for how to install it. On Ubuntu Linux you can do: 
