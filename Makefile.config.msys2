@@ -5,11 +5,11 @@
 # Configuration options for the makefile
 
 # Compiler options
+STATIC_CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I$(INSTALL_DIR)/usr/local/include -L$(INSTALL_DIR)/usr/local/lib
 CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I$(INSTALL_DIR)/usr/local/include -L$(INSTALL_DIR)/usr/local/lib
 COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
-# Use these lines instead for debugging or profiling
-#CFLAGS = -g -Wall
-#CFLAGS = -g -pg -Wall
+COMP_PROG_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
+
 CC      ?= cc
 LIBS = -pthread -lcyclone -lck -lm -ltommath -ldl
 

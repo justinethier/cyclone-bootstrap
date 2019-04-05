@@ -24,9 +24,9 @@ md5sums=('751a72f84918d75ded3e3b2f09ce50a5')
 
 build() {
   cd "cyclone-bootstrap-$pkgver"
-  make libcyclone.a PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
-  make cyclone PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
-  make icyc-c PREFIX=/usr CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
+  make libcyclone.a PREFIX=/usr STATIC_CFLAGS="-O2 -Wall -Iinclude -L." CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
+  make cyclone      PREFIX=/usr STATIC_CFLAGS="-O2 -Wall -Iinclude -L." CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
+  make icyc-c       PREFIX=/usr STATIC_CFLAGS="-O2 -Wall -Iinclude -L." CFLAGS="-O2 -fPIC -rdynamic -Wall -Iinclude -L." LDFLAGS="-L. -Wl,--export-dynamic"
 }
 
 package() {

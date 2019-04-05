@@ -20,14 +20,14 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 all: cyclone icyc-c
 
 libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c hashset.c
-	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
-	$(CC) $(CFLAGS) -c hashset.c -o hashset.o
-	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
-	$(CC) $(CFLAGS) -c \
+	$(CC) $(STATIC_CFLAGS) -c dispatch.c -o dispatch.o
+	$(CC) $(STATIC_CFLAGS) -c hashset.c -o hashset.o
+	$(CC) $(STATIC_CFLAGS) -c -std=gnu99 gc.c -o gc.o
+	$(CC) $(STATIC_CFLAGS) -c \
                   -DCYC_HAVE_OPEN_MEMSTREAM=$(CYC_PLATFORM_HAS_MEMSTREAM) \
                   -DCYC_HAVE_FMEMOPEN=$(CYC_PLATFORM_HAS_FMEMOPEN) \
                   mstreams.c -o mstreams.o
-	$(CC) $(CFLAGS) -c \
+	$(CC) $(STATIC_CFLAGS) -c \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
   -DCYC_INSTALL_LIB=\"$(LIBDIR)\" \
   -DCYC_INSTALL_BIN=\"$(BINDIR)\" \
@@ -41,12 +41,12 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c has
 	$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o hashset.o
 
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
-	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
+	$(CC) cyclone.c $(STATIC_CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
 
 .PHONY: icyc-c
 icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
-	$(CC) icyc.c $(CFLAGS) -c -o icyc.o
+	$(CC) icyc.c $(STATIC_CFLAGS) -c -o icyc.o
 	$(CC) icyc.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o icyc
 
 icyc: cyclone
