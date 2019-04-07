@@ -38,8 +38,9 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c has
   -DCYC_CC_LIB=\"$(CC_LIB)\" \
   -DCYC_CC_SO=\"$(CC_SO)\" \
   runtime.c -o runtime.o
-	#$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o hashset.o
-	$(LIBTOOL) -static -o libcyclone.a runtime.o gc.o dispatch.o mstreams.o hashset.o
+	  $(CREATE_LIBRARY_COMMAND) $(CREATE_LIBRARY_FLAGS) $(CREATE_LIBRARY_OUTPUT_FILE) runtime.o gc.o dispatch.o mstreams.o hashset.o
+	  #$(AR) rcs libcyclone.a runtime.o gc.o dispatch.o mstreams.o hashset.o
+	  $(RANLIB) libcyclone.a
 
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
