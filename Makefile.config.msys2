@@ -13,6 +13,10 @@ COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
 CC      ?= cc
 LIBS = -pthread -lcyclone -lck -lm -ltommath -ldl
 
+LIBRARY_OUTPUT_FILE = libcyclone.a
+CREATE_LIBRARY_COMMAND = $(AR)
+CREATE_LIBRARY_FLAGS = rcs
+
 # Commands "baked into" cyclone for invoking the C compiler
 CC_PROG ?= "$(CC) ~src-file~ $(COMP_CFLAGS) -c -o ~exec-file~.o"
 CC_EXEC ?= "$(CC) ~exec-file~.o ~obj-files~ $(LIBS) $(COMP_CFLAGS) -o ~exec-file~"
