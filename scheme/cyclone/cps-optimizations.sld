@@ -11,7 +11,7 @@
 (define-library (scheme cyclone cps-optimizations)
   (import (scheme base)
           (scheme eval)
-          ;(scheme write)
+          (scheme write)
           (scheme cyclone util)
           (scheme cyclone ast)
           (scheme cyclone primitives)
@@ -48,6 +48,8 @@
       ;; Analysis - well-known lambdas
       well-known-lambda
       analyze:find-known-lambdas
+      ;; Analysis - validation
+      validate:num-function-args
       ;; Analyze variables
       adb:make-var
       %adb:make-var
@@ -714,6 +716,7 @@
                               ,(analyze2 (if->else exp))))
         ; Application:
         ((app? exp)
+         (validate:num-function-args exp) ;; Extra validation
          (for-each (lambda (e) (analyze2 e)) exp))
         (else #f)))
 
@@ -2378,5 +2381,65 @@
   ;; well-known lambda's by var references to them.
   (set! *well-known-lambda-sym-lookup-tbl* candidates)
 )
+
+
+;; Analysis - validation section
+
+;; FUTURE (?): Does given symbol define a procedure?
+;(define (avld:procedure? sym) #f)
+
+;; Does the given function call pass enough arguments?
+(define (validate:num-function-args ast)
+  (and-let* (((app? ast))
+             ;; Prims are checked elsewhere
+             ((not (prim? (car ast))))
+             ((ref? (car ast)))
+             ;; Do not validate macros
+             ((not (env:lookup (car ast) (macro:get-env) #f)))
+             (var (adb:get/default (car ast) #f))
+             (lam* (adbv:assigned-value var))
+             ((pair? lam*))
+             ;; Assigned value is boxed in a cell, extract it
+             (lam (car lam*))
+             ((ast:lambda? lam))
+             (formals-type (ast:lambda-formals-type lam))
+             ((equal? 'args:fixed formals-type)) ;; Could validate fixed-with-varargs, too
+             (expected-argc (length (ast:lambda-args lam)))
+             (argc (- (length ast) 1)) )
+     (when (not (= argc expected-argc))
+       (compiler-msg "Compiler Error: ")
+       (compiler-msg ast)
+       (compiler-error 
+        "Expected "
+        (number->string expected-argc)
+        " arguments to "
+        (symbol->string (car ast))
+        " but received "
+        (number->string argc))) ))
+
+;; Declare a compiler error and quit
+;; Preferable to (error) since a stack trace is meaningless here.
+;; Ideally want to supplement this with original line number data and such.
+(define (compiler-error . strs)
+  (display (apply string-append strs) (current-error-port))
+  (newline (current-error-port))
+  (exit 1))
+
+;; Display a compilation message to the user
+(define (compiler-msg . sexp)
+  (display (apply sexp->string sexp) (current-error-port))
+  (newline (current-error-port)))
+
+;; Convert given scheme expressions to a string, via (display)
+;; TODO: move to util module
+(define (sexp->string . sexps)
+  (let ((p (open-output-string)))
+    (for-each
+      (lambda (sexp)
+        (apply display (cons sexp (list p))))
+      sexps)
+    (let ((result (get-output-string p)))
+      (close-port p)
+      result)))
 
 ))
