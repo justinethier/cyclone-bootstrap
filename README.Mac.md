@@ -1,7 +1,20 @@
 Instructions for building on Mac 
 --------------------------------
 
-### Install Homebrew, tools, and dependencies.
+### Installing via Homebrew
+
+This will download the latest release of cyclone-bootstrap, compile it from source, install it,
+and then use it to compile cyclone from source and install that.
+
+1. Follow the instructions at https://brew.sh/ to install the homebrew package manager.
+2. Run the following commands:
+  - brew tap adamfeuer/cyclone
+  - brew install adamfeuer/cyclone/cyclone
+
+
+### Compiling from source
+
+#### Install Homebrew, tools, and dependencies.
 
 1. Follow the instructions at https://brew.sh/ to install the homebrew package manager.
 2. Run the following commands:
