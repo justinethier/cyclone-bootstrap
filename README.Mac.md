@@ -8,8 +8,8 @@ and then use it to compile cyclone from source and install that.
 
 1. Follow the instructions at https://brew.sh/ to install the homebrew package manager.
 2. Run the following commands:
-  - brew tap adamfeuer/cyclone
-  - brew install adamfeuer/cyclone/cyclone
+  - brew tap cyclone-scheme/cyclone
+  - brew install cyclone-scheme/cyclone/cyclone
 
 
 ### Compiling from source
