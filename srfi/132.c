@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.11 
+ ** Version 0.11.1 
  **
  **/
 
@@ -582,8 +582,6 @@ extern object __glo_symbol_123_127_scheme_base;
 extern object __glo_Cyc_91obj_123_127_scheme_base;
 extern object __glo_vector_scheme_base;
 extern object __glo_vector_91append_scheme_base;
-extern object __glo_vector_91copy_srfi_132;
-extern object __glo_vector_91copy_67_scheme_base;
 extern object __glo_vector_91fill_67_scheme_base;
 extern object __glo_vector_91_125list_scheme_base;
 extern object __glo_vector_91_125string_scheme_base;
@@ -669,6 +667,9 @@ extern object __glo_parameterize_scheme_base;
 extern object __glo_peek_91u8_scheme_base;
 extern object __glo_read_91u8_scheme_base;
 extern object __glo_write_91u8_scheme_base;
+extern object __glo_vector_91copy_scheme_base;
+extern object __glo_vector_91copy_67_scheme_base;
+extern object __glo_vector_91fill_67_scheme_base;
 extern object __glo_caar_scheme_cxr;
 extern object __glo_cadr_scheme_cxr;
 extern object __glo_cdar_scheme_cxr;
@@ -698,6 +699,30 @@ extern object __glo_cddadr_scheme_cxr;
 extern object __glo_cdddar_scheme_cxr;
 extern object __glo_cddddr_scheme_cxr;
 extern object __glo_caaaaar_scheme_cxr;
+extern object __glo_string_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_string_121_127_191_191inline_191_191_scheme_base;
+extern object __glo_string_121_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_string_125_127_191_191inline_191_191_scheme_base;
+extern object __glo_string_125_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_not_191_191inline_191_191_scheme_base;
+extern object __glo_list_127_191_191inline_191_191_scheme_base;
+extern object __glo_zero_127_191_191inline_191_191_scheme_base;
+extern object __glo_positive_127_191_191inline_191_191_scheme_base;
+extern object __glo_negative_127_191_191inline_191_191_scheme_base;
+extern object __glo_floor_191_191inline_191_191_scheme_base;
+extern object __glo_ceiling_191_191inline_191_191_scheme_base;
+extern object __glo_truncate_191_191inline_191_191_scheme_base;
+extern object __glo_round_191_191inline_191_191_scheme_base;
+extern object __glo_inexact_191_191inline_191_191_scheme_base;
+extern object __glo_sqrt_191_191inline_191_191_scheme_base;
+extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
+extern object __glo_exact_127_191_191inline_191_191_scheme_base;
+extern object __glo_complex_127_191_191inline_191_191_scheme_base;
+extern object __glo_denominator_191_191inline_191_191_scheme_base;
+extern object __glo_numerator_191_191inline_191_191_scheme_base;
+extern object __glo_quotient_191_191inline_191_191_scheme_base;
+extern object __glo_square_191_191inline_191_191_scheme_base;
+extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_string_123_127_191_191inline_191_191_scheme_base;
 extern object __glo_string_121_127_191_191inline_191_191_scheme_base;
 extern object __glo_string_121_123_127_191_191inline_191_191_scheme_base;
@@ -4155,7 +4180,7 @@ c_737756.elements = (object *)e_737764;
 c_737756.elements[0] = ((closureN)self_733936)->elements[0];
 c_737756.elements[1] = k_733343;
 
-return_closcall4(data,  __glo_vector_91copy_srfi_132,  &c_737756, ((closureN)self_733936)->elements[1], start_731650_732437, end_731651_732438);; 
+return_closcall4(data,  __glo_vector_91copy_scheme_base,  &c_737756, ((closureN)self_733936)->elements[1], start_731650_732437, end_731651_732438);; 
 }
 
 static void __lambda_347(void *data, int argc, object self_733937, object ans_731652_732439) {

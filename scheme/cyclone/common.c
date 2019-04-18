@@ -3,49 +3,10 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.11 
+ ** Version 0.11.1 
  **
  **/
 
-/* 
-(DEBUG k$15 #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG k$15 #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG k$15 #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG Cyc-seq #f #[procedure] #f)
- */
-/* 
-(DEBUG k$15 #f #[procedure] #f)
- */
 #define closcall1(td, clo,a1) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
