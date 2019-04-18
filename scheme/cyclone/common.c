@@ -7,6 +7,45 @@
  **
  **/
 
+/* 
+(DEBUG k$15 #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG k$15 #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG k$15 #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG Cyc-seq #f #[procedure] #f)
+ */
+/* 
+(DEBUG k$15 #f #[procedure] #f)
+ */
 #define closcall1(td, clo,a1) \
 if (type_is_pair_prim(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
@@ -218,7 +257,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85version_85_scheme_cyclone_common = boolean_f; 
   make_utf8_string_with_len(c_7327, "", 0, 0); 
   __glo__85version_91name_85_scheme_cyclone_common = &c_7327; 
-  make_utf8_string_with_len(c_7326, "0.11", 4, 4); 
+  make_utf8_string_with_len(c_7326, "0.11.1", 6, 6); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7326; 
 
   mclosure0(clo_7366, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7365, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7366);
