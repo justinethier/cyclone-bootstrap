@@ -72,6 +72,11 @@ void Cyc_invalid_type_error(void *data, int tag, object found)
   Cyc_rt_raise2(data, buf, found);
 }
 
+void Cyc_immutable_obj_error(void *data, object obj)
+{
+  Cyc_rt_raise2(data, "Unable to modify immutable object ", obj);
+}
+
 void Cyc_check_obj(void *data, int tag, object obj)
 {
   if (!is_object_type(obj)) {
@@ -184,6 +189,7 @@ void pack_env_variables(void *data, object k)
 
     svar->hdr.mark = gc_color_red; 
     svar->hdr.grayed = 0;
+    svar->hdr.immutable = 0;
     svar->tag = string_tag; 
     svar->len = eqpos - e;
     svar->str = alloca(sizeof(char) * (svar->len));
@@ -196,6 +202,7 @@ void pack_env_variables(void *data, object k)
     }
     sval->hdr.mark = gc_color_red; 
     sval->hdr.grayed = 0;
+    sval->hdr.immutable = 0;
     sval->tag = string_tag; 
     sval->len = strlen(eqpos);
     svar->num_cp = Cyc_utf8_count_code_points((uint8_t *)eqpos);
@@ -1310,6 +1317,7 @@ object Cyc_fast_vector_2(object ptr, object a1, object a2)
   vector_2_type *v = (vector_2_type *)ptr;
   v->v.hdr.mark = gc_color_red; 
   v->v.hdr.grayed = 0; 
+  v->v.hdr.immutable = 0; 
   v->v.tag = vector_tag; 
   v->v.num_elements = 2; 
   v->v.elements = v->arr;
@@ -1323,6 +1331,7 @@ object Cyc_fast_vector_3(object ptr, object a1, object a2, object a3)
   vector_3_type *v = (vector_3_type *)ptr;
   v->v.hdr.mark = gc_color_red; 
   v->v.hdr.grayed = 0; 
+  v->v.hdr.immutable = 0; 
   v->v.tag = vector_tag; 
   v->v.num_elements = 3; 
   v->v.elements = v->arr;
@@ -1337,6 +1346,7 @@ object Cyc_fast_vector_4(object ptr, object a1, object a2, object a3, object a4)
   vector_4_type *v = (vector_4_type *)ptr;
   v->v.hdr.mark = gc_color_red; 
   v->v.hdr.grayed = 0; 
+  v->v.hdr.immutable = 0; 
   v->v.tag = vector_tag; 
   v->v.num_elements = 4; 
   v->v.elements = v->arr;
@@ -1869,8 +1879,10 @@ object Cyc_set_cell(void *data, object l, object val)
 
 object Cyc_set_car(void *data, object l, object val)
 {
-  if (Cyc_is_pair(l) == boolean_f)
+  if (Cyc_is_pair(l) == boolean_f) {
     Cyc_invalid_type_error(data, pair_tag, l);
+  }
+  Cyc_verify_mutable(data, l);
   gc_mut_update((gc_thread_data *) data, car(l), val);
   car(l) = val;
   add_mutation(data, l, -1, val);
@@ -1879,8 +1891,10 @@ object Cyc_set_car(void *data, object l, object val)
 
 object Cyc_set_cdr(void *data, object l, object val)
 {
-  if (Cyc_is_pair(l) == boolean_f)
+  if (Cyc_is_pair(l) == boolean_f) {
     Cyc_invalid_type_error(data, pair_tag, l);
+  }
+  Cyc_verify_mutable(data, l);
   gc_mut_update((gc_thread_data *) data, cdr(l), val);
   cdr(l) = val;
   add_mutation(data, l, -1, val);
@@ -1892,6 +1906,7 @@ object Cyc_vector_set(void *data, object v, object k, object obj)
   int idx;
   Cyc_check_vec(data, v);
   Cyc_check_fixnum(data, k);
+  Cyc_verify_mutable(data, v);
   idx = unbox_number(k);
 
   if (idx < 0 || idx >= ((vector) v)->num_elements) {
@@ -2352,6 +2367,7 @@ object Cyc_string_set(void *data, object str, object k, object chr)
 
   Cyc_check_str(data, str);
   Cyc_check_fixnum(data, k);
+  Cyc_verify_mutable(data, str);
 
   if (boolean_t != Cyc_is_char(chr)) {
     Cyc_rt_raise2(data, "Expected char but received", chr);
@@ -2619,6 +2635,7 @@ object Cyc_command_line_arguments(void *data, object cont)
     memcpy(ps, &s, sizeof(string_type));
     ((list) pl)->hdr.mark = gc_color_red;
     ((list) pl)->hdr.grayed = 0;
+    ((list) pl)->hdr.immutable = 0;
     ((list) pl)->tag = pair_tag;
     ((list) pl)->pair_car = ps;
     ((list) pl)->pair_cdr = lis;
@@ -2658,6 +2675,7 @@ object Cyc_make_vector(void *data, object cont, int argc, object len, ...)
                  &heap_grown);
     ((vector) v)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
     ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->hdr.immutable = 0;
     ((vector) v)->tag = vector_tag;
     ((vector) v)->num_elements = ulen;
     ((vector) v)->elements = (object *)(((char *)v) + sizeof(vector_type));
@@ -2672,6 +2690,7 @@ object Cyc_make_vector(void *data, object cont, int argc, object len, ...)
     v = alloca(sizeof(vector_type));
     ((vector) v)->hdr.mark = gc_color_red;
     ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->hdr.immutable = 0;
     ((vector) v)->tag = vector_tag;
     ((vector) v)->num_elements = ulen;
     ((vector) v)->elements = NULL;
@@ -2711,6 +2730,7 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...)
                   &heap_grown);
     ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
     ((bytevector) bv)->hdr.grayed = 0;
+    ((bytevector) bv)->hdr.immutable = 0;
     ((bytevector) bv)->tag = bytevector_tag;
     ((bytevector) bv)->len = length;
     ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
@@ -2718,6 +2738,7 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...)
     bv = alloca(sizeof(bytevector_type));
     ((bytevector) bv)->hdr.mark = gc_color_red;
     ((bytevector) bv)->hdr.grayed = 0;
+    ((bytevector) bv)->hdr.immutable = 0;
     ((bytevector) bv)->tag = bytevector_tag;
     ((bytevector) bv)->len = length;
     ((bytevector) bv)->data = alloca(sizeof(char) * length);
@@ -2844,6 +2865,7 @@ object Cyc_bytevector_copy(void *data, object cont, object bv, object start,
                   &heap_grown);
     ((bytevector) result)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
     ((bytevector) result)->hdr.grayed = 0;
+    ((bytevector) result)->hdr.immutable = 0;
     ((bytevector) result)->tag = bytevector_tag;
     ((bytevector) result)->len = len;
     ((bytevector) result)->data = (char *)(((char *)result) + sizeof(bytevector_type));
@@ -2925,6 +2947,7 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
                     &heap_grown);
       ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
       ((bytevector) bv)->hdr.grayed = 0;
+      ((bytevector) bv)->hdr.immutable = 0;
       ((bytevector) bv)->tag = bytevector_tag;
       ((bytevector) bv)->len = len;
       ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
@@ -2968,6 +2991,7 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
                     &heap_grown);
       ((bytevector) bv)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
       ((bytevector) bv)->hdr.grayed = 0;
+      ((bytevector) bv)->hdr.immutable = 0;
       ((bytevector) bv)->tag = bytevector_tag;
       ((bytevector) bv)->len = len;
       ((bytevector) bv)->data = (char *)(((char *)bv) + sizeof(bytevector_type));
@@ -3011,6 +3035,7 @@ object Cyc_bytevector_u8_set(void *data, object bv, object k, object b)
   Cyc_check_bvec(data, bv);
   Cyc_check_fixnum(data, k);
   Cyc_check_fixnum(data, b);
+  Cyc_verify_mutable(data, bv);
 
   buf = ((bytevector) bv)->data;
   idx = unbox_number(k);
@@ -3054,6 +3079,7 @@ object Cyc_list2vector(void *data, object cont, object l)
                  &heap_grown);
     ((vector) v)->hdr.mark = ((gc_thread_data *)data)->gc_alloc_color;
     ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->hdr.immutable = 0;
     ((vector) v)->tag = vector_tag;
     ((vector) v)->num_elements = len;
     ((vector) v)->elements = (object *)(((char *)v) + sizeof(vector_type));
@@ -3069,6 +3095,7 @@ object Cyc_list2vector(void *data, object cont, object l)
     v = alloca(sizeof(vector_type));
     ((vector) v)->hdr.mark = gc_color_red;
     ((vector) v)->hdr.grayed = 0;
+    ((vector) v)->hdr.immutable = 0;
     ((vector) v)->tag = vector_tag;
     ((vector) v)->num_elements = len;
     ((vector) v)->elements =
@@ -4182,6 +4209,7 @@ list malloc_make_pair(object a, object d)
   pair_type *c = malloc(sizeof(pair_type));
   c->hdr.mark = gc_color_red;
   c->hdr.grayed = 0;
+  c->hdr.immutable = 0;
   c->tag = pair_tag;
   c->pair_car = a;
   c->pair_cdr = d;
@@ -4193,6 +4221,7 @@ cvar_type *mcvar(object * var)
   cvar_type *c = malloc(sizeof(cvar_type));
   c->hdr.mark = gc_color_red;
   c->hdr.grayed = 0;
+  c->hdr.immutable = 0;
   c->tag = cvar_tag;
   c->pvar = var;
   return c;
@@ -5240,6 +5269,7 @@ void Cyc_apply(void *data, int argc, closure cont, object prim, ...)
     tmp = va_arg(ap, object);
     args[i].hdr.mark = gc_color_red;
     args[i].hdr.grayed = 0;
+    args[i].hdr.immutable = 0;
     args[i].tag = pair_tag;
     args[i].pair_car = tmp;
     args[i].pair_cdr = (i == (argc - 1)) ? NULL : &args[i + 1];
@@ -5274,6 +5304,7 @@ void Cyc_apply_from_buf(void *data, int argc, object prim, object * buf)
   for (i = 1; i < argc; i++) {
     args[i - 1].hdr.mark = gc_color_red;
     args[i - 1].hdr.grayed = 0;
+    args[i - 1].hdr.immutable = 0;
     args[i - 1].tag = pair_tag;
     args[i - 1].pair_car = buf[i];
     args[i - 1].pair_cdr = (i == (argc - 1)) ? NULL : &args[i];
@@ -6073,6 +6104,7 @@ void *gc_alloc_pair(gc_thread_data *data, object head, object tail)
   pair_type tmp;
   tmp.hdr.mark = gc_color_red;
   tmp.hdr.grayed = 0;
+  tmp.hdr.immutable = 0;
   tmp.tag = pair_tag;
   tmp.pair_car = head;
   tmp.pair_cdr = tail;
