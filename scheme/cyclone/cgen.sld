@@ -384,7 +384,7 @@
        trace 
        cps?))
     ;; Core forms:
-    ((const? exp)       (c-compile-const exp (alloca? ast-id trace)))
+    ((const? exp)       (c-compile-const exp (alloca? ast-id trace) #f)) ;; TODO: OK to hardcode immutable to false here??
     ((prim?  exp)       
      ;; TODO: this needs to be more refined, probably w/a lookup table
      (c-code (string-append "primitive_" (mangle exp))))
@@ -425,7 +425,7 @@
      (string-append cvar ".hdr.immutable = 1;"))
     (else ""))) ;; Mutable (default), no need to set anything
 
-(define (c-compile-scalars args use-alloca quoted)
+(define (c-compile-scalars args use-alloca immutable)
   (letrec (
     (addr-op (if use-alloca "" "&"))
     ;; (deref-op (if use-alloca "->" "."))
@@ -436,7 +436,7 @@
         (c-code/vars
          (string-append 
            c-make-macro "(" cvar "," (c:body a) "," (c:body b) ");"
-           (c-set-immutable-field cvar use-alloca quoted))
+           (c-set-immutable-field cvar use-alloca immutable))
          (append (c:allocs a) (c:allocs b)))))
     (_c-compile-scalars 
      (lambda (args)
@@ -444,12 +444,12 @@
         ((null? args)
            (c-code "NULL"))
         ((not (pair? args))
-         (c-compile-const args use-alloca))
+         (c-compile-const args use-alloca immutable))
         (else
            (let* ((cvar-name (mangle (gensym 'c)))
                   (cell (create-cons
                           cvar-name
-                          (c-compile-const (car args) use-alloca) 
+                          (c-compile-const (car args) use-alloca immutable) 
                           (_c-compile-scalars (cdr args)))))
              (set! num-args (+ 1 num-args))
              (c-code/vars
@@ -461,7 +461,7 @@
     (_c-compile-scalars args) 
     num-args)))
 
-(define (c-compile-vector exp use-alloca)
+(define (c-compile-vector exp use-alloca immutable)
   (letrec ((cvar-name (mangle (gensym 'vec)))
            (len (vector-length exp))
            (ev-name (mangle (gensym 'e)))
@@ -478,7 +478,7 @@
             (lambda (i code)
               (if (= i len)
                 code
-                (let ((idx-code (c-compile-const (vector-ref exp i) use-alloca)))
+                (let ((idx-code (c-compile-const (vector-ref exp i) use-alloca immutable)))
                   (loop 
                     (+ i 1)
                     (c-code/vars
@@ -499,7 +499,8 @@
             (string-append addr-op cvar-name) ; Code is just the variable name
             (list ; Allocate empty vector
               (string-append 
-                c-make-macro "(" cvar-name ");"))))
+                c-make-macro "(" cvar-name ");"
+                (c-set-immutable-field cvar-name use-alloca immutable)))))
       (else
         (let ((code
                 (c-code/vars
@@ -509,7 +510,9 @@
                       elem-decl
                       c-make-macro "(" cvar-name ");"
                       cvar-name deref-op "num_elements = " (number->string len) ";"
-                      cvar-name deref-op "elements = (object *)" ev-name ";")))))
+                      cvar-name deref-op "elements = (object *)" ev-name ";"
+                      (c-set-immutable-field cvar-name use-alloca immutable)
+                      )))))
         (loop 0 code))))))
 
 (define (c-compile-bytevector exp use-alloca)
@@ -599,14 +602,18 @@
 ;; Typically this function is used to compile constant values such as
 ;; a single number, boolean, etc. However, it can be passed a quoted
 ;; item such as a list, to compile as a literal.
-(define (c-compile-const exp use-alloca)
+;;
+;; exp - Expression to compile
+;; use-alloca - Should C objects be dynamically allocated on the stack?
+;; immutable - Should C object be flagged as immutable?
+(define (c-compile-const exp use-alloca immutable)
   (cond
     ((null? exp)
      (c-code "NULL"))
     ((pair? exp)
-     (c-compile-scalars exp use-alloca #f)) ;; TODO: quoted should be an input param
+     (c-compile-scalars exp use-alloca immutable))
     ((vector? exp)
-     (c-compile-vector exp use-alloca))
+     (c-compile-vector exp use-alloca immutable))
     ((bytevector? exp)
      (c-compile-bytevector exp use-alloca))
     ((bignum? exp)
