@@ -1640,7 +1640,7 @@ static void __lambda_2(void *data, int argc, object self_73330, object r_73194) 
   
 pair_type local_73388; 
 
-make_pair(c_73389,quote_begin,NULL);
+make_pair(c_73389,quote_begin,NULL);c_73389.hdr.immutable = 1;
 
 object c_73385 = apply(data,  ((closureN)self_73330)->elements[0],__glo_append_scheme_base, set_pair_as_expr(&local_73388, &c_73389, r_73194));
 return_closcall1(data,  ((closureN)self_73330)->elements[0],  c_73385);; 

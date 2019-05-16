@@ -486,13 +486,13 @@ c_73426.elements[0] = k_73174;
 
 
 
-make_pair(c_73437,obj_char2obj(10),NULL);
+make_pair(c_73437,obj_char2obj(10),NULL);c_73437.hdr.immutable = 1;
 
-make_pair(c_73436,obj_char2obj(13),&c_73437);
+make_pair(c_73436,obj_char2obj(13),&c_73437);c_73436.hdr.immutable = 1;
 
-make_pair(c_73435,obj_char2obj(32),&c_73436);
+make_pair(c_73435,obj_char2obj(32),&c_73436);c_73435.hdr.immutable = 1;
 
-make_pair(c_73434,obj_char2obj(9),&c_73435);
+make_pair(c_73434,obj_char2obj(9),&c_73435);c_73434.hdr.immutable = 1;
 return_direct_with_clo1(data,(closure)&c_73426,__lambda_32,  memberp(data, c_7338_7375, &c_73434));; 
 }
 
@@ -521,25 +521,25 @@ c_73406.elements[0] = k_73169;
 
 
 
-make_pair(c_73423,obj_char2obj(57),NULL);
+make_pair(c_73423,obj_char2obj(57),NULL);c_73423.hdr.immutable = 1;
 
-make_pair(c_73422,obj_char2obj(56),&c_73423);
+make_pair(c_73422,obj_char2obj(56),&c_73423);c_73422.hdr.immutable = 1;
 
-make_pair(c_73421,obj_char2obj(55),&c_73422);
+make_pair(c_73421,obj_char2obj(55),&c_73422);c_73421.hdr.immutable = 1;
 
-make_pair(c_73420,obj_char2obj(54),&c_73421);
+make_pair(c_73420,obj_char2obj(54),&c_73421);c_73420.hdr.immutable = 1;
 
-make_pair(c_73419,obj_char2obj(53),&c_73420);
+make_pair(c_73419,obj_char2obj(53),&c_73420);c_73419.hdr.immutable = 1;
 
-make_pair(c_73418,obj_char2obj(52),&c_73419);
+make_pair(c_73418,obj_char2obj(52),&c_73419);c_73418.hdr.immutable = 1;
 
-make_pair(c_73417,obj_char2obj(51),&c_73418);
+make_pair(c_73417,obj_char2obj(51),&c_73418);c_73417.hdr.immutable = 1;
 
-make_pair(c_73416,obj_char2obj(50),&c_73417);
+make_pair(c_73416,obj_char2obj(50),&c_73417);c_73416.hdr.immutable = 1;
 
-make_pair(c_73415,obj_char2obj(49),&c_73416);
+make_pair(c_73415,obj_char2obj(49),&c_73416);c_73415.hdr.immutable = 1;
 
-make_pair(c_73414,obj_char2obj(48),&c_73415);
+make_pair(c_73414,obj_char2obj(48),&c_73415);c_73414.hdr.immutable = 1;
 return_direct_with_clo1(data,(closure)&c_73406,__lambda_30,  memberp(data, c_7337_7374, &c_73414));; 
 }
 

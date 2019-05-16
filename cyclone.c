@@ -8707,11 +8707,11 @@ c_732890.elements[3] = ((closureN)self_731253)->elements[3];
 c_732890.elements[4] = ((closureN)self_731253)->elements[4];
 
 
-make_pair(c_732951,quote_common,NULL);
+make_pair(c_732951,quote_common,NULL);c_732951.hdr.immutable = 1;
 
-make_pair(c_732950,quote_cyclone,&c_732951);
+make_pair(c_732950,quote_cyclone,&c_732951);c_732950.hdr.immutable = 1;
 
-make_pair(c_732949,quote_scheme,&c_732950);
+make_pair(c_732949,quote_scheme,&c_732950);c_732949.hdr.immutable = 1;
 return_closcall2(data,  car(((closureN)self_731253)->elements[1]),  &c_732890, &c_732949);; 
 }
 
@@ -8735,9 +8735,9 @@ c_732895.elements[3] = ((closureN)self_731254)->elements[3];
 c_732895.elements[4] = ((closureN)self_731254)->elements[4];
 
 
-make_pair(c_732947,quote_base,NULL);
+make_pair(c_732947,quote_base,NULL);c_732947.hdr.immutable = 1;
 
-make_pair(c_732946,quote_scheme,&c_732947);
+make_pair(c_732946,quote_scheme,&c_732947);c_732946.hdr.immutable = 1;
 return_closcall2(data,  car(((closureN)self_731254)->elements[1]),  &c_732895, &c_732946);; 
 }
 
@@ -8761,9 +8761,9 @@ c_732900.elements[3] = ((closureN)self_731255)->elements[3];
 c_732900.elements[4] = ((closureN)self_731255)->elements[4];
 
 
-make_pair(c_732944,quote__char,NULL);
+make_pair(c_732944,quote__char,NULL);c_732944.hdr.immutable = 1;
 
-make_pair(c_732943,quote_scheme,&c_732944);
+make_pair(c_732943,quote_scheme,&c_732944);c_732943.hdr.immutable = 1;
 return_closcall2(data,  car(((closureN)self_731255)->elements[1]),  &c_732900, &c_732943);; 
 }
 
@@ -8786,9 +8786,9 @@ c_732905.elements[2] = ((closureN)self_731256)->elements[3];
 c_732905.elements[3] = ((closureN)self_731256)->elements[4];
 
 
-make_pair(c_732941,obj_int2obj(69),NULL);
+make_pair(c_732941,obj_int2obj(69),NULL);c_732941.hdr.immutable = 1;
 
-make_pair(c_732940,quote_srfi,&c_732941);
+make_pair(c_732940,quote_srfi,&c_732941);c_732940.hdr.immutable = 1;
 return_closcall2(data,  car(((closureN)self_731256)->elements[1]),  &c_732905, &c_732940);; 
 }
 
@@ -8902,7 +8902,7 @@ c_732848.elements[2] = ((closureN)self_731262)->elements[2];
 
 
 
-make_pair(c_732877,quote_Cyc_91memoize,NULL);
+make_pair(c_732877,quote_Cyc_91memoize,NULL);c_732877.hdr.immutable = 1;
 return_closcall3(data,  __glo_append_scheme_base,  &c_732848, car(((closureN)self_731262)->elements[0]), &c_732877);}
 ;; 
 }
@@ -8923,11 +8923,11 @@ c_732851.elements[0] = ((closureN)self_731263)->elements[1];
 c_732851.elements[1] = ((closureN)self_731263)->elements[2];
 
 
-make_pair(c_732869,obj_int2obj(69),NULL);
+make_pair(c_732869,obj_int2obj(69),NULL);c_732869.hdr.immutable = 1;
 
-make_pair(c_732868,quote_srfi,&c_732869);
+make_pair(c_732868,quote_srfi,&c_732869);c_732868.hdr.immutable = 1;
 
-make_pair(c_732867,quote_Cyc_91memoize,&c_732868);
+make_pair(c_732867,quote_Cyc_91memoize,&c_732868);c_732867.hdr.immutable = 1;
 return_closcall2(data,  __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries,  &c_732851, &c_732867);;; 
 }
 
@@ -10462,8 +10462,8 @@ static void __lambda_144(void *data, int argc, object self_731328, object k_7367
   if( (boolean_f != __glo_library_127_scheme_cyclone_libraries) ){ 
   
   
-  alloca_pair(c_732371,quote_base,NULL);
-  alloca_pair(c_732370,quote_scheme,c_732371);
+  alloca_pair(c_732371,quote_base,NULL);c_732371->hdr.immutable = 1;
+  alloca_pair(c_732370,quote_scheme,c_732371);c_732370->hdr.immutable = 1;
   r_73680 = equalp(car(((closureN)self_731328)->elements[3]), c_732370);
 } else { 
   r_73680 = boolean_f;}
@@ -10485,7 +10485,7 @@ c_732374.elements[3] = k_73679;
 c_732374.elements[4] = ((closureN)self_731328)->elements[4];
 
 
-make_pair(c_732430,quote_call_95cc,NULL);
+make_pair(c_732430,quote_call_95cc,NULL);c_732430.hdr.immutable = 1;
 
 
 return_closcall3(data,  __glo_append_scheme_base,  &c_732374, &c_732430, car(((closureN)self_731328)->elements[1]));
@@ -10514,7 +10514,7 @@ c_732377.elements[2] = ((closureN)self_731329)->elements[3];
 c_732377.elements[3] = ((closureN)self_731329)->elements[4];
 
 
-make_pair(c_732422,quote_call_95cc,NULL);
+make_pair(c_732422,quote_call_95cc,NULL);c_732422.hdr.immutable = 1;
 
 
 return_closcall3(data,  __glo_append_scheme_base,  &c_732377, &c_732422, car(((closureN)self_731329)->elements[4]));;; 
@@ -10537,15 +10537,15 @@ c_732380.elements[1] = ((closureN)self_731330)->elements[1];
 c_732380.elements[2] = ((closureN)self_731330)->elements[2];
 
 
-make_pair(c_732412,quote_result,NULL);
+make_pair(c_732412,quote_result,NULL);c_732412.hdr.immutable = 1;
 
-make_pair(c_732411,quote__191,&c_732412);
+make_pair(c_732411,quote__191,&c_732412);c_732411.hdr.immutable = 1;
 
 pair_type local_732415; 
 
-make_pair(c_732417,quote_result,NULL);
+make_pair(c_732417,quote_result,NULL);c_732417.hdr.immutable = 1;
 
-make_pair(c_732416,quote_k,&c_732417);
+make_pair(c_732416,quote_k,&c_732417);c_732416.hdr.immutable = 1;
 return_closcall3(data,  __glo_ast_117make_91lambda_scheme_cyclone_ast,  &c_732380, &c_732411, set_cell_as_expr(&local_732415, &c_732416));;; 
 }
 
@@ -10565,9 +10565,9 @@ c_732382.elements[1] = ((closureN)self_731331)->elements[1];
 c_732382.elements[2] = ((closureN)self_731331)->elements[2];
 
 
-make_pair(c_732403,quote_f,NULL);
+make_pair(c_732403,quote_f,NULL);c_732403.hdr.immutable = 1;
 
-make_pair(c_732402,quote_k,&c_732403);
+make_pair(c_732402,quote_k,&c_732403);c_732402.hdr.immutable = 1;
 
 pair_type local_732406; 
 

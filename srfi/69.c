@@ -832,15 +832,15 @@ c_732470.elements[0] = k_73904;
 
 make_utf8_string_with_len(c_732587, "<srfi-hash-table>", 17, 17);
 
-make_pair(c_732592,quote_entries,NULL);
+make_pair(c_732592,quote_entries,NULL);c_732592.hdr.immutable = 1;
 
-make_pair(c_732591,quote_associate,&c_732592);
+make_pair(c_732591,quote_associate,&c_732592);c_732591.hdr.immutable = 1;
 
-make_pair(c_732590,quote_compare,&c_732591);
+make_pair(c_732590,quote_compare,&c_732591);c_732590.hdr.immutable = 1;
 
-make_pair(c_732589,quote_hash,&c_732590);
+make_pair(c_732589,quote_hash,&c_732590);c_732589.hdr.immutable = 1;
 
-make_pair(c_732588,quote_size,&c_732589);
+make_pair(c_732588,quote_size,&c_732589);c_732588.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_732470, &c_732587, boolean_f, &c_732588);;; 
 }
 

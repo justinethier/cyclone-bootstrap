@@ -498,7 +498,7 @@ c_73448.elements[0] = k_73143;
 
 make_utf8_string_with_len(c_73509, "<random-source>", 15, 15);
 
-make_pair(c_73510,quote_n,NULL);
+make_pair(c_73510,quote_n,NULL);c_73510.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73448, &c_73509, boolean_f, &c_73510);; 
 }
 
@@ -925,7 +925,7 @@ load_varargs(args_736_7310_7331, args_736_7310_7331_raw, argc - 1);
   
   
   
-  make_pair(c_73253,quote_s,NULL);
+  make_pair(c_73253,quote_s,NULL);c_73253.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_736_7310_7331), Cyc_length(data, &c_73253))) ){ 
   
 mclosure0(c_73258, (function_type)__lambda_9);c_73258.num_args = 1;
@@ -936,8 +936,8 @@ return_closcall1(data,  k_7390,  c_73257);
     
   
   
-  make_pair(c_73271,quote_unit,NULL);
-  make_pair(c_73270,quote_s,&c_73271);
+  make_pair(c_73271,quote_unit,NULL);c_73271.hdr.immutable = 1;
+  make_pair(c_73270,quote_s,&c_73271);c_73270.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_736_7310_7331), Cyc_length(data, &c_73270))) ){ 
   
 mclosure0(c_73276, (function_type)__lambda_10);c_73276.num_args = 2;

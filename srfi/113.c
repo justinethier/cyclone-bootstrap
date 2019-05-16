@@ -1462,11 +1462,11 @@ c_736245.elements[0] = k_732419;
 
 make_utf8_string_with_len(c_736321, "sob", 3, 3);
 
-make_pair(c_736324,quote_multi_127,NULL);
+make_pair(c_736324,quote_multi_127,NULL);c_736324.hdr.immutable = 1;
 
-make_pair(c_736323,quote_comparator,&c_736324);
+make_pair(c_736323,quote_comparator,&c_736324);c_736323.hdr.immutable = 1;
 
-make_pair(c_736322,quote_hash_91table,&c_736323);
+make_pair(c_736322,quote_hash_91table,&c_736323);c_736322.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_736245, &c_736321, boolean_f, &c_736322);;; 
 }
 
@@ -4724,7 +4724,7 @@ load_varargs(args_73450_73454_731048, args_73450_73454_731048_raw, argc - 1);
   
   
   
-  make_pair(c_735273,quote_sob,NULL);
+  make_pair(c_735273,quote_sob,NULL);c_735273.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73450_73454_731048), Cyc_length(data, &c_735273))) ){ 
   
 mclosure0(c_735278, (function_type)__lambda_447);c_735278.num_args = 1;
@@ -4735,8 +4735,8 @@ return_closcall1(data,  k_732057,  c_735277);
     
   
   
-  make_pair(c_735287,quote_sob2,NULL);
-  make_pair(c_735286,quote_sob1,&c_735287);
+  make_pair(c_735287,quote_sob2,NULL);c_735287.hdr.immutable = 1;
+  make_pair(c_735286,quote_sob1,&c_735287);c_735286.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73450_73454_731048), Cyc_length(data, &c_735286))) ){ 
   
 mclosure0(c_735292, (function_type)__lambda_448);c_735292.num_args = 2;
@@ -4859,7 +4859,7 @@ load_varargs(args_73428_73432_731036, args_73428_73432_731036_raw, argc - 1);
   
   
   
-  make_pair(c_735200,quote_sob,NULL);
+  make_pair(c_735200,quote_sob,NULL);c_735200.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73428_73432_731036), Cyc_length(data, &c_735200))) ){ 
   
 mclosure0(c_735205, (function_type)__lambda_437);c_735205.num_args = 1;
@@ -4870,8 +4870,8 @@ return_closcall1(data,  k_732026,  c_735204);
     
   
   
-  make_pair(c_735214,quote_sob2,NULL);
-  make_pair(c_735213,quote_sob1,&c_735214);
+  make_pair(c_735214,quote_sob2,NULL);c_735214.hdr.immutable = 1;
+  make_pair(c_735213,quote_sob1,&c_735214);c_735213.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73428_73432_731036), Cyc_length(data, &c_735213))) ){ 
   
 mclosure0(c_735219, (function_type)__lambda_438);c_735219.num_args = 2;
@@ -5013,7 +5013,7 @@ load_varargs(args_73406_73410_731024, args_73406_73410_731024_raw, argc - 1);
   
   
   
-  make_pair(c_735120,quote_sob,NULL);
+  make_pair(c_735120,quote_sob,NULL);c_735120.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73406_73410_731024), Cyc_length(data, &c_735120))) ){ 
   
 mclosure0(c_735125, (function_type)__lambda_426);c_735125.num_args = 1;
@@ -5024,8 +5024,8 @@ return_closcall1(data,  k_731994,  c_735124);
     
   
   
-  make_pair(c_735134,quote_sob2,NULL);
-  make_pair(c_735133,quote_sob1,&c_735134);
+  make_pair(c_735134,quote_sob2,NULL);c_735134.hdr.immutable = 1;
+  make_pair(c_735133,quote_sob1,&c_735134);c_735133.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73406_73410_731024), Cyc_length(data, &c_735133))) ){ 
   
 mclosure0(c_735139, (function_type)__lambda_427);c_735139.num_args = 2;
@@ -5352,7 +5352,7 @@ load_varargs(args_73379_73383_731007, args_73379_73383_731007_raw, argc - 1);
   
   
   
-  make_pair(c_734992,quote_sob,NULL);
+  make_pair(c_734992,quote_sob,NULL);c_734992.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73379_73383_731007), Cyc_length(data, &c_734992))) ){ 
   
 mclosure0(c_734997, (function_type)__lambda_405);c_734997.num_args = 1;
@@ -5363,8 +5363,8 @@ return_closcall1(data,  k_731949,  c_734996);
     
   
   
-  make_pair(c_735006,quote_sob2,NULL);
-  make_pair(c_735005,quote_sob1,&c_735006);
+  make_pair(c_735006,quote_sob2,NULL);c_735006.hdr.immutable = 1;
+  make_pair(c_735005,quote_sob1,&c_735006);c_735005.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73379_73383_731007), Cyc_length(data, &c_735005))) ){ 
   
 mclosure0(c_735011, (function_type)__lambda_406);c_735011.num_args = 2;
@@ -5691,7 +5691,7 @@ load_varargs(args_73352_73356_73990, args_73352_73356_73990_raw, argc - 1);
   
   
   
-  make_pair(c_734864,quote_sob,NULL);
+  make_pair(c_734864,quote_sob,NULL);c_734864.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73990), Cyc_length(data, &c_734864))) ){ 
   
 mclosure0(c_734869, (function_type)__lambda_384);c_734869.num_args = 1;
@@ -5702,8 +5702,8 @@ return_closcall1(data,  k_731904,  c_734868);
     
   
   
-  make_pair(c_734878,quote_sob2,NULL);
-  make_pair(c_734877,quote_sob1,&c_734878);
+  make_pair(c_734878,quote_sob2,NULL);c_734878.hdr.immutable = 1;
+  make_pair(c_734877,quote_sob1,&c_734878);c_734877.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73990), Cyc_length(data, &c_734877))) ){ 
   
 mclosure0(c_734883, (function_type)__lambda_385);c_734883.num_args = 2;
@@ -11340,7 +11340,7 @@ load_varargs(args_733_737_73650, args_733_737_73650_raw, argc - 1);
     
   
   
-  make_pair(c_733133,quote_obj,NULL);
+  make_pair(c_733133,quote_obj,NULL);c_733133.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_733_737_73650), Cyc_length(data, &c_733133))) ){ 
   
 closureN_type c_733138;
@@ -11361,8 +11361,8 @@ return_closcall1(data,  k_731228,  c_733137);
     
   
   
-  make_pair(c_733149,quote_limit,NULL);
-  make_pair(c_733148,quote_obj,&c_733149);
+  make_pair(c_733149,quote_limit,NULL);c_733149.hdr.immutable = 1;
+  make_pair(c_733148,quote_obj,&c_733149);c_733148.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_733_737_73650), Cyc_length(data, &c_733148))) ){ 
   
 closureN_type c_733154;

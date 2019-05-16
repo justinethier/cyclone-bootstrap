@@ -660,9 +660,9 @@ c_731423.elements[0] = k_73541;
 
 make_utf8_string_with_len(c_731486, "<list-queue>", 12, 12);
 
-make_pair(c_731488,quote_last,NULL);
+make_pair(c_731488,quote_last,NULL);c_731488.hdr.immutable = 1;
 
-make_pair(c_731487,quote_first,&c_731488);
+make_pair(c_731487,quote_first,&c_731488);c_731487.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_731423, &c_731486, boolean_f, &c_731487);; 
 }
 
@@ -870,8 +870,8 @@ load_varargs(args_73149_73153_73259, args_73149_73153_73259_raw, argc - 1);
   
   
   
-  make_pair(c_731376,quote_first,NULL);
-  make_pair(c_731375,quote_list_91queue,&c_731376);
+  make_pair(c_731376,quote_first,NULL);c_731376.hdr.immutable = 1;
+  make_pair(c_731375,quote_list_91queue,&c_731376);c_731375.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73149_73153_73259), Cyc_length(data, &c_731375))) ){ 
   
 mclosure0(c_731381, (function_type)__lambda_120);c_731381.num_args = 2;
@@ -882,9 +882,9 @@ return_closcall1(data,  k_73522,  c_731380);
     
   
   
-  make_pair(c_731406,quote_last,NULL);
-  make_pair(c_731405,quote_first,&c_731406);
-  make_pair(c_731404,quote_list_91queue,&c_731405);
+  make_pair(c_731406,quote_last,NULL);c_731406.hdr.immutable = 1;
+  make_pair(c_731405,quote_first,&c_731406);c_731405.hdr.immutable = 1;
+  make_pair(c_731404,quote_list_91queue,&c_731405);c_731404.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73149_73153_73259), Cyc_length(data, &c_731404))) ){ 
   
 mclosure0(c_731411, (function_type)__lambda_123);c_731411.num_args = 3;
@@ -1267,11 +1267,11 @@ load_varargs(args_73117_73121_73234, args_73117_73121_73234_raw, argc - 1);
   
   
   
-  make_pair(c_731251,quote_queue,NULL);
-  make_pair(c_731250,quote_seed,&c_731251);
-  make_pair(c_731249,quote_successor,&c_731250);
-  make_pair(c_731248,quote_mapper,&c_731249);
-  make_pair(c_731247,quote_stop_127,&c_731248);
+  make_pair(c_731251,quote_queue,NULL);c_731251.hdr.immutable = 1;
+  make_pair(c_731250,quote_seed,&c_731251);c_731250.hdr.immutable = 1;
+  make_pair(c_731249,quote_successor,&c_731250);c_731249.hdr.immutable = 1;
+  make_pair(c_731248,quote_mapper,&c_731249);c_731248.hdr.immutable = 1;
+  make_pair(c_731247,quote_stop_127,&c_731248);c_731247.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73117_73121_73234), Cyc_length(data, &c_731247))) ){ 
   
 mclosure0(c_731256, (function_type)__lambda_98);c_731256.num_args = 5;
@@ -1282,10 +1282,10 @@ return_closcall1(data,  k_73479,  c_731255);
     
   
   
-  make_pair(c_731267,quote_seed,NULL);
-  make_pair(c_731266,quote_successor,&c_731267);
-  make_pair(c_731265,quote_mapper,&c_731266);
-  make_pair(c_731264,quote_stop_127,&c_731265);
+  make_pair(c_731267,quote_seed,NULL);c_731267.hdr.immutable = 1;
+  make_pair(c_731266,quote_successor,&c_731267);c_731266.hdr.immutable = 1;
+  make_pair(c_731265,quote_mapper,&c_731266);c_731265.hdr.immutable = 1;
+  make_pair(c_731264,quote_stop_127,&c_731265);c_731264.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73117_73121_73234), Cyc_length(data, &c_731264))) ){ 
   
 mclosure0(c_731272, (function_type)__lambda_99);c_731272.num_args = 4;
@@ -1542,11 +1542,11 @@ load_varargs(args_7391_7395_73215, args_7391_7395_73215_raw, argc - 1);
   
   
   
-  make_pair(c_731150,quote_queue,NULL);
-  make_pair(c_731149,quote_seed,&c_731150);
-  make_pair(c_731148,quote_successor,&c_731149);
-  make_pair(c_731147,quote_mapper,&c_731148);
-  make_pair(c_731146,quote_stop_127,&c_731147);
+  make_pair(c_731150,quote_queue,NULL);c_731150.hdr.immutable = 1;
+  make_pair(c_731149,quote_seed,&c_731150);c_731149.hdr.immutable = 1;
+  make_pair(c_731148,quote_successor,&c_731149);c_731148.hdr.immutable = 1;
+  make_pair(c_731147,quote_mapper,&c_731148);c_731147.hdr.immutable = 1;
+  make_pair(c_731146,quote_stop_127,&c_731147);c_731146.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7391_7395_73215), Cyc_length(data, &c_731146))) ){ 
   
 mclosure0(c_731155, (function_type)__lambda_84);c_731155.num_args = 5;
@@ -1557,10 +1557,10 @@ return_closcall1(data,  k_73452,  c_731154);
     
   
   
-  make_pair(c_731166,quote_seed,NULL);
-  make_pair(c_731165,quote_successor,&c_731166);
-  make_pair(c_731164,quote_mapper,&c_731165);
-  make_pair(c_731163,quote_stop_127,&c_731164);
+  make_pair(c_731166,quote_seed,NULL);c_731166.hdr.immutable = 1;
+  make_pair(c_731165,quote_successor,&c_731166);c_731165.hdr.immutable = 1;
+  make_pair(c_731164,quote_mapper,&c_731165);c_731164.hdr.immutable = 1;
+  make_pair(c_731163,quote_stop_127,&c_731164);c_731163.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7391_7395_73215), Cyc_length(data, &c_731163))) ){ 
   
 mclosure0(c_731171, (function_type)__lambda_85);c_731171.num_args = 4;
@@ -1698,7 +1698,7 @@ return_closcall1(data,  k_73420,  c_731073);
     
   
   
-  make_pair(c_731082,quote_queue,NULL);
+  make_pair(c_731082,quote_queue,NULL);c_731082.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7375_7379_73206), Cyc_length(data, &c_731082))) ){ 
   
 mclosure0(c_731087, (function_type)__lambda_73);c_731087.num_args = 1;
@@ -2718,7 +2718,7 @@ load_varargs(args_7312_7316_73171, args_7312_7316_73171_raw, argc - 1);
   
   
   
-  make_pair(c_73745,quote__list,NULL);
+  make_pair(c_73745,quote__list,NULL);c_73745.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7312_7316_73171), Cyc_length(data, &c_73745))) ){ 
   
 mclosure0(c_73750, (function_type)__lambda_10);c_73750.num_args = 1;
@@ -2729,8 +2729,8 @@ return_closcall1(data,  k_73302,  c_73749);
     
   
   
-  make_pair(c_73767,quote_last,NULL);
-  make_pair(c_73766,quote__list,&c_73767);
+  make_pair(c_73767,quote_last,NULL);c_73767.hdr.immutable = 1;
+  make_pair(c_73766,quote__list,&c_73767);c_73766.hdr.immutable = 1;
 if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7312_7316_73171), Cyc_length(data, &c_73766))) ){ 
   
 mclosure0(c_73772, (function_type)__lambda_12);c_73772.num_args = 2;

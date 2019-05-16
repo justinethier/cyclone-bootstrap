@@ -1863,10 +1863,10 @@ static void __lambda_2(void *data, int argc, object self_7310879, object _191, o
 
 static void __lambda_929(void *data, int argc, closure _,object k_737380) {
   
-  make_pair(c_7324170,quote_posix,NULL);
-  make_pair(c_7324169,quote_full_91unicode,&c_7324170);
-  make_pair(c_7324168,quote_ieee_91float,&c_7324169);
-  make_pair(c_7324167,quote_r7rs,&c_7324168);
+  make_pair(c_7324170,quote_posix,NULL);c_7324170.hdr.immutable = 1;
+  make_pair(c_7324169,quote_full_91unicode,&c_7324170);c_7324169.hdr.immutable = 1;
+  make_pair(c_7324168,quote_ieee_91float,&c_7324169);c_7324168.hdr.immutable = 1;
+  make_pair(c_7324167,quote_r7rs,&c_7324168);c_7324167.hdr.immutable = 1;
   
   Cyc_st_add(data, "scheme/base.sld:lib-init:schemebase");
 global_set(__glo__85other_91features_85_scheme_base, &c_7324167);global_set(__glo_call_91with_91current_91continuation_scheme_base, __glo_call_95cc_scheme_base);

@@ -439,7 +439,7 @@ c_7348.elements[0] = k_7320;
 
 make_utf8_string_with_len(c_7391, "box-type", 8, 8);
 
-make_pair(c_7392,quote_value,NULL);
+make_pair(c_7392,quote_value,NULL);c_7392.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7348, &c_7391, boolean_f, &c_7392);; 
 }
 

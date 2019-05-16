@@ -675,13 +675,13 @@ c_73987.elements[0] = k_73332;
 
 make_utf8_string_with_len(c_731080, "<lambda-ast>", 12, 12);
 
-make_pair(c_731084,quote_has_91cont,NULL);
+make_pair(c_731084,quote_has_91cont,NULL);c_731084.hdr.immutable = 1;
 
-make_pair(c_731083,quote_body,&c_731084);
+make_pair(c_731083,quote_body,&c_731084);c_731083.hdr.immutable = 1;
 
-make_pair(c_731082,quote_args,&c_731083);
+make_pair(c_731082,quote_args,&c_731083);c_731082.hdr.immutable = 1;
 
-make_pair(c_731081,quote_id,&c_731082);
+make_pair(c_731081,quote_id,&c_731082);c_731081.hdr.immutable = 1;
 return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_73987, &c_731080, boolean_f, &c_731081);;; 
 }
 

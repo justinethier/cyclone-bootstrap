@@ -1204,7 +1204,7 @@ static void __lambda_186(void *data, int argc, object self_731158, object r_7397
   
 pair_type local_732666; 
 
-make_pair(c_732667,boolean_f,NULL);
+make_pair(c_732667,boolean_f,NULL);c_732667.hdr.immutable = 1;
 return_closcall1(data,  ((closureN)self_731158)->elements[0],  set_pair_as_expr(&local_732666, &c_732667, r_73979));; 
 }
 
@@ -1556,7 +1556,7 @@ c_732514.elements[2] = ((closureN)self_731174)->elements[2];
 c_732514.elements[3] = ((closureN)self_731174)->elements[3];
 
 
-make_pair(c_732549,boolean_f,NULL);
+make_pair(c_732549,boolean_f,NULL);c_732549.hdr.immutable = 1;
 return_closcall2(data,  car(((closureN)self_731174)->elements[4]),  &c_732514, &c_732549);;; 
 }
 

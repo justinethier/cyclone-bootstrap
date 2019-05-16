@@ -1117,9 +1117,9 @@ c_73353.elements[0] = ((closureN)self_73173)->elements[0];
 
 
 
-make_utf8_string_with_len(c_73365, "-s", 2, 2);
+make_utf8_string_with_len(c_73365, "-s", 2, 2);c_73365.hdr.immutable = 1;
 
-make_pair(c_73364,&c_73365,NULL);
+make_pair(c_73364,&c_73365,NULL);c_73364.hdr.immutable = 1;
 return_direct_with_clo1(data,(closure)&c_73353,__lambda_33,  memberp(data, Cyc_car(data, r_73133), &c_73364));; 
 }
 

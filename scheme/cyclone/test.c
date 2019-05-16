@@ -7773,9 +7773,9 @@ c_7310932.elements[0] = k_733539;
 
 
 
-make_pair(c_7310942,quote_ERROR,NULL);
+make_pair(c_7310942,quote_ERROR,NULL);c_7310942.hdr.immutable = 1;
 
-make_pair(c_7310941,quote_FAIL,&c_7310942);
+make_pair(c_7310941,quote_FAIL,&c_7310942);c_7310941.hdr.immutable = 1;
 return_direct_with_clo1(data,(closure)&c_7310932,__lambda_761,  memqp(data, ((closureN)self_734754)->elements[0], &c_7310941));; 
 }
 
@@ -9395,9 +9395,9 @@ c_7310422.elements[1] = k_733410;
 
 
 
-make_pair(c_7310433,quote_ERROR,NULL);
+make_pair(c_7310433,quote_ERROR,NULL);c_7310433.hdr.immutable = 1;
 
-make_pair(c_7310432,quote_FAIL,&c_7310433);
+make_pair(c_7310432,quote_FAIL,&c_7310433);c_7310432.hdr.immutable = 1;
 return_direct_with_clo1(data,(closure)&c_7310422,__lambda_660,  memqp(data, ((closureN)self_734663)->elements[1], &c_7310432));; 
 }
 
@@ -12455,30 +12455,30 @@ if( (boolean_f != Cyc_is_null(Cyc_cddr(data, x_73897_731779))) ){
  alloc_string(data,c_739375, 1, 1);
 char tmp_739376[] = "'";
 memcpy(((string_type *)c_739375)->str, tmp_739376,1);
-((string_type *)c_739375)->str[1] = '\0';
-  alloca_pair(c_739374,quote_quote,c_739375);
+((string_type *)c_739375)->str[1] = '\0';((string_type *)c_739375)->hdr.immutable = 1;
+  alloca_pair(c_739374,quote_quote,c_739375);c_739374->hdr.immutable = 1;
   object c_739379;
  alloc_string(data,c_739379, 1, 1);
 char tmp_739380[] = "`";
 memcpy(((string_type *)c_739379)->str, tmp_739380,1);
-((string_type *)c_739379)->str[1] = '\0';
-  alloca_pair(c_739378,quote_quasiquote,c_739379);
+((string_type *)c_739379)->str[1] = '\0';((string_type *)c_739379)->hdr.immutable = 1;
+  alloca_pair(c_739378,quote_quasiquote,c_739379);c_739378->hdr.immutable = 1;
   object c_739383;
  alloc_string(data,c_739383, 1, 1);
 char tmp_739384[] = ",";
 memcpy(((string_type *)c_739383)->str, tmp_739384,1);
-((string_type *)c_739383)->str[1] = '\0';
-  alloca_pair(c_739382,quote_unquote,c_739383);
+((string_type *)c_739383)->str[1] = '\0';((string_type *)c_739383)->hdr.immutable = 1;
+  alloca_pair(c_739382,quote_unquote,c_739383);c_739382->hdr.immutable = 1;
   object c_739387;
  alloc_string(data,c_739387, 2, 2);
 char tmp_739388[] = ",@";
 memcpy(((string_type *)c_739387)->str, tmp_739388,2);
-((string_type *)c_739387)->str[2] = '\0';
-  alloca_pair(c_739386,quote_unquote_91splicing,c_739387);
-  alloca_pair(c_739385,c_739386,NULL);
-  alloca_pair(c_739381,c_739382,c_739385);
-  alloca_pair(c_739377,c_739378,c_739381);
-  alloca_pair(c_739373,c_739374,c_739377);
+((string_type *)c_739387)->str[2] = '\0';((string_type *)c_739387)->hdr.immutable = 1;
+  alloca_pair(c_739386,quote_unquote_91splicing,c_739387);c_739386->hdr.immutable = 1;
+  alloca_pair(c_739385,c_739386,NULL);c_739385->hdr.immutable = 1;
+  alloca_pair(c_739381,c_739382,c_739385);c_739381->hdr.immutable = 1;
+  alloca_pair(c_739377,c_739378,c_739381);c_739377->hdr.immutable = 1;
+  alloca_pair(c_739373,c_739374,c_739377);c_739373->hdr.immutable = 1;
   tmp_73900_73902_731780 = assq(data, Cyc_car(data, x_73897_731779), c_739373);
 } else { 
   tmp_73900_73902_731780 = boolean_f;}
@@ -13778,9 +13778,9 @@ c_738956.elements[1] = r_732984;
 
 make_utf8_string_with_len(c_738970, "invalid use of test-syntax-error", 32, 32);
 
-make_utf8_string_with_len(c_738972, "invalid use of test-syntax-error", 32, 32);
+make_utf8_string_with_len(c_738972, "invalid use of test-syntax-error", 32, 32);c_738972.hdr.immutable = 1;
 
-make_pair(c_738971,&c_738972,NULL);
+make_pair(c_738971,&c_738972,NULL);c_738971.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738956, &c_738970, NULL, &c_738971);; 
 }
 
@@ -13798,11 +13798,11 @@ c_738958.elements = (object *)e_738964;
 c_738958.elements[0] = ((closureN)self_734468)->elements[0];
 
 
-make_utf8_string_with_len(c_738968, "invalid use of test-syntax-error", 32, 32);
+make_utf8_string_with_len(c_738968, "invalid use of test-syntax-error", 32, 32);c_738968.hdr.immutable = 1;
 
-make_pair(c_738967,&c_738968,NULL);
+make_pair(c_738967,&c_738968,NULL);c_738967.hdr.immutable = 1;
 
-make_pair(c_738966,quote_syntax_91error,&c_738967);
+make_pair(c_738966,quote_syntax_91error,&c_738967);c_738966.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738958, ((closureN)self_734468)->elements[1], r_732985, &c_738966);; 
 }
 
@@ -13995,7 +13995,7 @@ c_737952.elements[4] = ((closureN)self_734370)->elements[3];
 
 
 
-make_pair(c_738911,quote_name_91expr,NULL);
+make_pair(c_738911,quote_name_91expr,NULL);c_738911.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737952, Cyc_car(data, ((closureN)self_734370)->elements[3]), NULL, &c_738911);; 
 }
 
@@ -14016,9 +14016,9 @@ c_737954.elements[2] = ((closureN)self_734371)->elements[3];
 c_737954.elements[3] = ((closureN)self_734371)->elements[4];
 
 
-make_pair(c_738906,quote_name_91expr,NULL);
+make_pair(c_738906,quote_name_91expr,NULL);c_738906.hdr.immutable = 1;
 
-make_pair(c_738905,quote_name,&c_738906);
+make_pair(c_738905,quote_name,&c_738906);c_738905.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737954, ((closureN)self_734371)->elements[2], r_732967, &c_738905);; 
 }
 
@@ -14082,7 +14082,7 @@ c_737962.elements[4] = ((closureN)self_734374)->elements[4];
 c_737962.elements[5] = ((closureN)self_734374)->elements[5];
 
 
-make_pair(c_738900,quote_current_91test_91group,NULL);
+make_pair(c_738900,quote_current_91test_91group,NULL);c_738900.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737962, r_732961, NULL, &c_738900);; 
 }
 
@@ -14105,9 +14105,9 @@ c_737964.elements[4] = ((closureN)self_734375)->elements[4];
 c_737964.elements[5] = ((closureN)self_734375)->elements[5];
 
 
-make_pair(c_738898,quote_current_91test_91group,NULL);
+make_pair(c_738898,quote_current_91test_91group,NULL);c_738898.hdr.immutable = 1;
 
-make_pair(c_738897,&c_738898,NULL);
+make_pair(c_738897,&c_738898,NULL);c_738897.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737964, r_732958, NULL, &c_738897);; 
 }
 
@@ -14129,11 +14129,11 @@ c_737966.elements[3] = ((closureN)self_734376)->elements[4];
 c_737966.elements[4] = ((closureN)self_734376)->elements[5];
 
 
-make_pair(c_738895,quote_current_91test_91group,NULL);
+make_pair(c_738895,quote_current_91test_91group,NULL);c_738895.hdr.immutable = 1;
 
-make_pair(c_738894,&c_738895,NULL);
+make_pair(c_738894,&c_738895,NULL);c_738894.hdr.immutable = 1;
 
-make_pair(c_738893,quote_old_91group,&c_738894);
+make_pair(c_738893,quote_old_91group,&c_738894);c_738893.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737966, ((closureN)self_734376)->elements[3], r_732956, &c_738893);; 
 }
 
@@ -14155,13 +14155,13 @@ c_737968.elements[3] = ((closureN)self_734377)->elements[3];
 c_737968.elements[4] = ((closureN)self_734377)->elements[4];
 
 
-make_pair(c_738890,quote_current_91test_91group,NULL);
+make_pair(c_738890,quote_current_91test_91group,NULL);c_738890.hdr.immutable = 1;
 
-make_pair(c_738889,&c_738890,NULL);
+make_pair(c_738889,&c_738890,NULL);c_738889.hdr.immutable = 1;
 
-make_pair(c_738888,quote_old_91group,&c_738889);
+make_pair(c_738888,quote_old_91group,&c_738889);c_738888.hdr.immutable = 1;
 
-make_pair(c_738887,&c_738888,NULL);
+make_pair(c_738887,&c_738888,NULL);c_738887.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737968, r_732952, NULL, &c_738887);; 
 }
 
@@ -14182,19 +14182,19 @@ c_737970.elements[2] = ((closureN)self_734378)->elements[3];
 c_737970.elements[3] = ((closureN)self_734378)->elements[4];
 
 
-make_pair(c_738881,quote_name_91expr,NULL);
+make_pair(c_738881,quote_name_91expr,NULL);c_738881.hdr.immutable = 1;
 
-make_pair(c_738880,quote_name,&c_738881);
+make_pair(c_738880,quote_name,&c_738881);c_738880.hdr.immutable = 1;
 
-make_pair(c_738885,quote_current_91test_91group,NULL);
+make_pair(c_738885,quote_current_91test_91group,NULL);c_738885.hdr.immutable = 1;
 
-make_pair(c_738884,&c_738885,NULL);
+make_pair(c_738884,&c_738885,NULL);c_738884.hdr.immutable = 1;
 
-make_pair(c_738883,quote_old_91group,&c_738884);
+make_pair(c_738883,quote_old_91group,&c_738884);c_738883.hdr.immutable = 1;
 
-make_pair(c_738882,&c_738883,NULL);
+make_pair(c_738882,&c_738883,NULL);c_738882.hdr.immutable = 1;
 
-make_pair(c_738879,&c_738880,&c_738882);
+make_pair(c_738879,&c_738880,&c_738882);c_738879.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737970, ((closureN)self_734378)->elements[2], r_732950, &c_738879);; 
 }
 
@@ -14305,7 +14305,7 @@ c_737984.elements[6] = ((closureN)self_734383)->elements[6];
 c_737984.elements[7] = ((closureN)self_734383)->elements[7];
 
 
-make_pair(c_738872,quote_name,NULL);
+make_pair(c_738872,quote_name,NULL);c_738872.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737984, r_732942, NULL, &c_738872);; 
 }
 
@@ -14329,9 +14329,9 @@ c_737986.elements[5] = ((closureN)self_734384)->elements[6];
 c_737986.elements[6] = ((closureN)self_734384)->elements[7];
 
 
-make_pair(c_738870,quote_name,NULL);
+make_pair(c_738870,quote_name,NULL);c_738870.hdr.immutable = 1;
 
-make_pair(c_738869,quote_string_127,&c_738870);
+make_pair(c_738869,quote_string_127,&c_738870);c_738869.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737986, ((closureN)self_734384)->elements[5], r_732940, &c_738869);; 
 }
 
@@ -14355,11 +14355,11 @@ c_737988.elements[5] = ((closureN)self_734385)->elements[5];
 c_737988.elements[6] = ((closureN)self_734385)->elements[6];
 
 
-make_pair(c_738866,quote_name,NULL);
+make_pair(c_738866,quote_name,NULL);c_738866.hdr.immutable = 1;
 
-make_pair(c_738865,quote_string_127,&c_738866);
+make_pair(c_738865,quote_string_127,&c_738866);c_738865.hdr.immutable = 1;
 
-make_pair(c_738864,&c_738865,NULL);
+make_pair(c_738864,&c_738865,NULL);c_738864.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737988, r_732936, NULL, &c_738864);; 
 }
 
@@ -14382,13 +14382,13 @@ c_737990.elements[4] = ((closureN)self_734386)->elements[5];
 c_737990.elements[5] = ((closureN)self_734386)->elements[6];
 
 
-make_pair(c_738862,quote_name,NULL);
+make_pair(c_738862,quote_name,NULL);c_738862.hdr.immutable = 1;
 
-make_pair(c_738861,quote_string_127,&c_738862);
+make_pair(c_738861,quote_string_127,&c_738862);c_738861.hdr.immutable = 1;
 
-make_pair(c_738860,&c_738861,NULL);
+make_pair(c_738860,&c_738861,NULL);c_738860.hdr.immutable = 1;
 
-make_pair(c_738859,quote_not,&c_738860);
+make_pair(c_738859,quote_not,&c_738860);c_738859.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737990, ((closureN)self_734386)->elements[4], r_732934, &c_738859);; 
 }
 
@@ -14461,7 +14461,7 @@ c_737998.elements[8] = ((closureN)self_734389)->elements[7];
 
 
 
-make_pair(c_738854,quote_name_91expr,NULL);
+make_pair(c_738854,quote_name_91expr,NULL);c_738854.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737998, Cyc_car(data, ((closureN)self_734389)->elements[7]), NULL, &c_738854);; 
 }
 
@@ -14486,9 +14486,9 @@ c_738000.elements[6] = ((closureN)self_734390)->elements[7];
 c_738000.elements[7] = ((closureN)self_734390)->elements[8];
 
 
-make_pair(c_738849,quote_name_91expr,NULL);
+make_pair(c_738849,quote_name_91expr,NULL);c_738849.hdr.immutable = 1;
 
-make_pair(c_738848,quote_quote,&c_738849);
+make_pair(c_738848,quote_quote,&c_738849);c_738848.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738000, ((closureN)self_734390)->elements[6], r_732927, &c_738848);; 
 }
 
@@ -14538,7 +14538,7 @@ c_738005.elements[7] = ((closureN)self_734392)->elements[7];
 c_738005.elements[8] = ((closureN)self_734392)->elements[8];
 
 
-make_pair(c_738844,quote_name,NULL);
+make_pair(c_738844,quote_name,NULL);c_738844.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738005, r_732922, NULL, &c_738844);; 
 }
 
@@ -14563,13 +14563,13 @@ c_738007.elements[6] = ((closureN)self_734393)->elements[7];
 c_738007.elements[7] = ((closureN)self_734393)->elements[8];
 
 
-make_pair(c_738841,quote_name_91expr,NULL);
+make_pair(c_738841,quote_name_91expr,NULL);c_738841.hdr.immutable = 1;
 
-make_pair(c_738840,quote_quote,&c_738841);
+make_pair(c_738840,quote_quote,&c_738841);c_738840.hdr.immutable = 1;
 
-make_pair(c_738842,quote_name,NULL);
+make_pair(c_738842,quote_name,NULL);c_738842.hdr.immutable = 1;
 
-make_pair(c_738839,&c_738840,&c_738842);
+make_pair(c_738839,&c_738840,&c_738842);c_738839.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738007, ((closureN)self_734393)->elements[6], r_732920, &c_738839);; 
 }
 
@@ -14596,17 +14596,17 @@ c_738009.elements[7] = ((closureN)self_734394)->elements[7];
 
 make_utf8_string_with_len(c_738830, "a name is required, got ", 24, 24);
 
-make_utf8_string_with_len(c_738832, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738832, "a name is required, got ", 24, 24);c_738832.hdr.immutable = 1;
 
-make_pair(c_738835,quote_name_91expr,NULL);
+make_pair(c_738835,quote_name_91expr,NULL);c_738835.hdr.immutable = 1;
 
-make_pair(c_738834,quote_quote,&c_738835);
+make_pair(c_738834,quote_quote,&c_738835);c_738834.hdr.immutable = 1;
 
-make_pair(c_738836,quote_name,NULL);
+make_pair(c_738836,quote_name,NULL);c_738836.hdr.immutable = 1;
 
-make_pair(c_738833,&c_738834,&c_738836);
+make_pair(c_738833,&c_738834,&c_738836);c_738833.hdr.immutable = 1;
 
-make_pair(c_738831,&c_738832,&c_738833);
+make_pair(c_738831,&c_738832,&c_738833);c_738831.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738009, &c_738830, r_732917, &c_738831);; 
 }
 
@@ -14630,19 +14630,19 @@ c_738011.elements[5] = ((closureN)self_734395)->elements[6];
 c_738011.elements[6] = ((closureN)self_734395)->elements[7];
 
 
-make_utf8_string_with_len(c_738824, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738824, "a name is required, got ", 24, 24);c_738824.hdr.immutable = 1;
 
-make_pair(c_738827,quote_name_91expr,NULL);
+make_pair(c_738827,quote_name_91expr,NULL);c_738827.hdr.immutable = 1;
 
-make_pair(c_738826,quote_quote,&c_738827);
+make_pair(c_738826,quote_quote,&c_738827);c_738826.hdr.immutable = 1;
 
-make_pair(c_738828,quote_name,NULL);
+make_pair(c_738828,quote_name,NULL);c_738828.hdr.immutable = 1;
 
-make_pair(c_738825,&c_738826,&c_738828);
+make_pair(c_738825,&c_738826,&c_738828);c_738825.hdr.immutable = 1;
 
-make_pair(c_738823,&c_738824,&c_738825);
+make_pair(c_738823,&c_738824,&c_738825);c_738823.hdr.immutable = 1;
 
-make_pair(c_738822,quote_error,&c_738823);
+make_pair(c_738822,quote_error,&c_738823);c_738822.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738011, ((closureN)self_734395)->elements[5], r_732915, &c_738822);; 
 }
 
@@ -14666,21 +14666,21 @@ c_738013.elements[5] = ((closureN)self_734396)->elements[5];
 c_738013.elements[6] = ((closureN)self_734396)->elements[6];
 
 
-make_utf8_string_with_len(c_738815, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738815, "a name is required, got ", 24, 24);c_738815.hdr.immutable = 1;
 
-make_pair(c_738818,quote_name_91expr,NULL);
+make_pair(c_738818,quote_name_91expr,NULL);c_738818.hdr.immutable = 1;
 
-make_pair(c_738817,quote_quote,&c_738818);
+make_pair(c_738817,quote_quote,&c_738818);c_738817.hdr.immutable = 1;
 
-make_pair(c_738819,quote_name,NULL);
+make_pair(c_738819,quote_name,NULL);c_738819.hdr.immutable = 1;
 
-make_pair(c_738816,&c_738817,&c_738819);
+make_pair(c_738816,&c_738817,&c_738819);c_738816.hdr.immutable = 1;
 
-make_pair(c_738814,&c_738815,&c_738816);
+make_pair(c_738814,&c_738815,&c_738816);c_738814.hdr.immutable = 1;
 
-make_pair(c_738813,quote_error,&c_738814);
+make_pair(c_738813,quote_error,&c_738814);c_738813.hdr.immutable = 1;
 
-make_pair(c_738812,&c_738813,NULL);
+make_pair(c_738812,&c_738813,NULL);c_738812.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738013, r_732911, NULL, &c_738812);; 
 }
 
@@ -14703,31 +14703,31 @@ c_738015.elements[4] = ((closureN)self_734397)->elements[5];
 c_738015.elements[5] = ((closureN)self_734397)->elements[6];
 
 
-make_pair(c_738802,quote_name,NULL);
+make_pair(c_738802,quote_name,NULL);c_738802.hdr.immutable = 1;
 
-make_pair(c_738801,quote_string_127,&c_738802);
+make_pair(c_738801,quote_string_127,&c_738802);c_738801.hdr.immutable = 1;
 
-make_pair(c_738800,&c_738801,NULL);
+make_pair(c_738800,&c_738801,NULL);c_738800.hdr.immutable = 1;
 
-make_pair(c_738799,quote_not,&c_738800);
+make_pair(c_738799,quote_not,&c_738800);c_738799.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738806, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738806, "a name is required, got ", 24, 24);c_738806.hdr.immutable = 1;
 
-make_pair(c_738809,quote_name_91expr,NULL);
+make_pair(c_738809,quote_name_91expr,NULL);c_738809.hdr.immutable = 1;
 
-make_pair(c_738808,quote_quote,&c_738809);
+make_pair(c_738808,quote_quote,&c_738809);c_738808.hdr.immutable = 1;
 
-make_pair(c_738810,quote_name,NULL);
+make_pair(c_738810,quote_name,NULL);c_738810.hdr.immutable = 1;
 
-make_pair(c_738807,&c_738808,&c_738810);
+make_pair(c_738807,&c_738808,&c_738810);c_738807.hdr.immutable = 1;
 
-make_pair(c_738805,&c_738806,&c_738807);
+make_pair(c_738805,&c_738806,&c_738807);c_738805.hdr.immutable = 1;
 
-make_pair(c_738804,quote_error,&c_738805);
+make_pair(c_738804,quote_error,&c_738805);c_738804.hdr.immutable = 1;
 
-make_pair(c_738803,&c_738804,NULL);
+make_pair(c_738803,&c_738804,NULL);c_738803.hdr.immutable = 1;
 
-make_pair(c_738798,&c_738799,&c_738803);
+make_pair(c_738798,&c_738799,&c_738803);c_738798.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738015, ((closureN)self_734397)->elements[4], r_732909, &c_738798);; 
 }
 
@@ -14749,33 +14749,33 @@ c_738017.elements[3] = ((closureN)self_734398)->elements[4];
 c_738017.elements[4] = ((closureN)self_734398)->elements[5];
 
 
-make_pair(c_738787,quote_name,NULL);
+make_pair(c_738787,quote_name,NULL);c_738787.hdr.immutable = 1;
 
-make_pair(c_738786,quote_string_127,&c_738787);
+make_pair(c_738786,quote_string_127,&c_738787);c_738786.hdr.immutable = 1;
 
-make_pair(c_738785,&c_738786,NULL);
+make_pair(c_738785,&c_738786,NULL);c_738785.hdr.immutable = 1;
 
-make_pair(c_738784,quote_not,&c_738785);
+make_pair(c_738784,quote_not,&c_738785);c_738784.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738791, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738791, "a name is required, got ", 24, 24);c_738791.hdr.immutable = 1;
 
-make_pair(c_738794,quote_name_91expr,NULL);
+make_pair(c_738794,quote_name_91expr,NULL);c_738794.hdr.immutable = 1;
 
-make_pair(c_738793,quote_quote,&c_738794);
+make_pair(c_738793,quote_quote,&c_738794);c_738793.hdr.immutable = 1;
 
-make_pair(c_738795,quote_name,NULL);
+make_pair(c_738795,quote_name,NULL);c_738795.hdr.immutable = 1;
 
-make_pair(c_738792,&c_738793,&c_738795);
+make_pair(c_738792,&c_738793,&c_738795);c_738792.hdr.immutable = 1;
 
-make_pair(c_738790,&c_738791,&c_738792);
+make_pair(c_738790,&c_738791,&c_738792);c_738790.hdr.immutable = 1;
 
-make_pair(c_738789,quote_error,&c_738790);
+make_pair(c_738789,quote_error,&c_738790);c_738789.hdr.immutable = 1;
 
-make_pair(c_738788,&c_738789,NULL);
+make_pair(c_738788,&c_738789,NULL);c_738788.hdr.immutable = 1;
 
-make_pair(c_738783,&c_738784,&c_738788);
+make_pair(c_738783,&c_738784,&c_738788);c_738783.hdr.immutable = 1;
 
-make_pair(c_738782,quote__if,&c_738783);
+make_pair(c_738782,quote__if,&c_738783);c_738782.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738017, ((closureN)self_734398)->elements[3], r_732906, &c_738782);; 
 }
 
@@ -14842,7 +14842,7 @@ c_738025.elements[5] = ((closureN)self_734401)->elements[5];
 c_738025.elements[6] = ((closureN)self_734401)->elements[6];
 
 
-make_pair(c_738777,quote_name,NULL);
+make_pair(c_738777,quote_name,NULL);c_738777.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738025, r_732900, NULL, &c_738777);; 
 }
 
@@ -14865,9 +14865,9 @@ c_738027.elements[4] = ((closureN)self_734402)->elements[5];
 c_738027.elements[5] = ((closureN)self_734402)->elements[6];
 
 
-make_pair(c_738775,quote_name,NULL);
+make_pair(c_738775,quote_name,NULL);c_738775.hdr.immutable = 1;
 
-make_pair(c_738774,quote_test_91begin,&c_738775);
+make_pair(c_738774,quote_test_91begin,&c_738775);c_738774.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738027, ((closureN)self_734402)->elements[4], r_732898, &c_738774);; 
 }
 
@@ -14991,9 +14991,9 @@ c_738041.elements[10] = ((closureN)self_734407)->elements[9];
 
 make_utf8_string_with_len(c_738765, "error in group outside of tests", 31, 31);
 
-make_utf8_string_with_len(c_738767, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738767, "error in group outside of tests", 31, 31);c_738767.hdr.immutable = 1;
 
-make_pair(c_738766,&c_738767,NULL);
+make_pair(c_738766,&c_738767,NULL);c_738766.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738041, &c_738765, NULL, &c_738766);; 
 }
 
@@ -15020,11 +15020,11 @@ c_738043.elements[8] = ((closureN)self_734408)->elements[9];
 c_738043.elements[9] = ((closureN)self_734408)->elements[10];
 
 
-make_utf8_string_with_len(c_738763, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738763, "error in group outside of tests", 31, 31);c_738763.hdr.immutable = 1;
 
-make_pair(c_738762,&c_738763,NULL);
+make_pair(c_738762,&c_738763,NULL);c_738762.hdr.immutable = 1;
 
-make_pair(c_738761,quote_warning,&c_738762);
+make_pair(c_738761,quote_warning,&c_738762);c_738761.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738043, ((closureN)self_734408)->elements[8], r_732889, &c_738761);; 
 }
 
@@ -15135,7 +15135,7 @@ c_738054.elements[11] = ((closureN)self_734412)->elements[11];
 c_738054.elements[12] = ((closureN)self_734412)->elements[12];
 
 
-make_pair(c_738755,quote_current_91error_91port,NULL);
+make_pair(c_738755,quote_current_91error_91port,NULL);c_738755.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738054, r_732882, NULL, &c_738755);; 
 }
 
@@ -15165,9 +15165,9 @@ c_738056.elements[11] = ((closureN)self_734413)->elements[11];
 c_738056.elements[12] = ((closureN)self_734413)->elements[12];
 
 
-make_pair(c_738753,quote_current_91error_91port,NULL);
+make_pair(c_738753,quote_current_91error_91port,NULL);c_738753.hdr.immutable = 1;
 
-make_pair(c_738752,&c_738753,NULL);
+make_pair(c_738752,&c_738753,NULL);c_738752.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738056, r_732879, NULL, &c_738752);; 
 }
 
@@ -15196,11 +15196,11 @@ c_738058.elements[10] = ((closureN)self_734414)->elements[11];
 c_738058.elements[11] = ((closureN)self_734414)->elements[12];
 
 
-make_pair(c_738750,quote_current_91error_91port,NULL);
+make_pair(c_738750,quote_current_91error_91port,NULL);c_738750.hdr.immutable = 1;
 
-make_pair(c_738749,&c_738750,NULL);
+make_pair(c_738749,&c_738750,NULL);c_738749.hdr.immutable = 1;
 
-make_pair(c_738748,quote_exn,&c_738749);
+make_pair(c_738748,quote_exn,&c_738749);c_738748.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738058, ((closureN)self_734414)->elements[10], r_732877, &c_738748);; 
 }
 
@@ -15228,13 +15228,13 @@ c_738060.elements[9] = ((closureN)self_734415)->elements[10];
 c_738060.elements[10] = ((closureN)self_734415)->elements[11];
 
 
-make_pair(c_738745,quote_current_91error_91port,NULL);
+make_pair(c_738745,quote_current_91error_91port,NULL);c_738745.hdr.immutable = 1;
 
-make_pair(c_738744,&c_738745,NULL);
+make_pair(c_738744,&c_738745,NULL);c_738744.hdr.immutable = 1;
 
-make_pair(c_738743,quote_exn,&c_738744);
+make_pair(c_738743,quote_exn,&c_738744);c_738743.hdr.immutable = 1;
 
-make_pair(c_738742,quote_print_91exception,&c_738743);
+make_pair(c_738742,quote_print_91exception,&c_738743);c_738742.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738060, ((closureN)self_734415)->elements[9], r_732874, &c_738742);; 
 }
 
@@ -15319,7 +15319,7 @@ c_738068.elements[11] = ((closureN)self_734418)->elements[11];
 c_738068.elements[12] = ((closureN)self_734418)->elements[12];
 
 
-make_pair(c_738737,quote_current_91test_91group,NULL);
+make_pair(c_738737,quote_current_91test_91group,NULL);c_738737.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738068, r_732868, NULL, &c_738737);; 
 }
 
@@ -15410,7 +15410,7 @@ c_738076.elements[13] = ((closureN)self_734421)->elements[13];
 c_738076.elements[14] = ((closureN)self_734421)->elements[14];
 
 
-make_pair(c_738733,quote_count,NULL);
+make_pair(c_738733,quote_count,NULL);c_738733.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738076, r_732863, NULL, &c_738733);; 
 }
 
@@ -15441,9 +15441,9 @@ c_738078.elements[12] = ((closureN)self_734422)->elements[13];
 c_738078.elements[13] = ((closureN)self_734422)->elements[14];
 
 
-make_pair(c_738731,quote_count,NULL);
+make_pair(c_738731,quote_count,NULL);c_738731.hdr.immutable = 1;
 
-make_pair(c_738730,quote_quote,&c_738731);
+make_pair(c_738730,quote_quote,&c_738731);c_738730.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738078, ((closureN)self_734422)->elements[12], r_732861, &c_738730);; 
 }
 
@@ -15474,11 +15474,11 @@ c_738080.elements[12] = ((closureN)self_734423)->elements[12];
 c_738080.elements[13] = ((closureN)self_734423)->elements[13];
 
 
-make_pair(c_738727,quote_count,NULL);
+make_pair(c_738727,quote_count,NULL);c_738727.hdr.immutable = 1;
 
-make_pair(c_738726,quote_quote,&c_738727);
+make_pair(c_738726,quote_quote,&c_738727);c_738726.hdr.immutable = 1;
 
-make_pair(c_738725,&c_738726,NULL);
+make_pair(c_738725,&c_738726,NULL);c_738725.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738080, r_732857, NULL, &c_738725);; 
 }
 
@@ -15508,15 +15508,15 @@ c_738082.elements[11] = ((closureN)self_734424)->elements[12];
 c_738082.elements[12] = ((closureN)self_734424)->elements[13];
 
 
-make_pair(c_738720,quote_current_91test_91group,NULL);
+make_pair(c_738720,quote_current_91test_91group,NULL);c_738720.hdr.immutable = 1;
 
-make_pair(c_738723,quote_count,NULL);
+make_pair(c_738723,quote_count,NULL);c_738723.hdr.immutable = 1;
 
-make_pair(c_738722,quote_quote,&c_738723);
+make_pair(c_738722,quote_quote,&c_738723);c_738722.hdr.immutable = 1;
 
-make_pair(c_738721,&c_738722,NULL);
+make_pair(c_738721,&c_738722,NULL);c_738721.hdr.immutable = 1;
 
-make_pair(c_738719,&c_738720,&c_738721);
+make_pair(c_738719,&c_738720,&c_738721);c_738719.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738082, ((closureN)self_734424)->elements[11], r_732855, &c_738719);; 
 }
 
@@ -15545,17 +15545,17 @@ c_738084.elements[10] = ((closureN)self_734425)->elements[11];
 c_738084.elements[11] = ((closureN)self_734425)->elements[12];
 
 
-make_pair(c_738713,quote_current_91test_91group,NULL);
+make_pair(c_738713,quote_current_91test_91group,NULL);c_738713.hdr.immutable = 1;
 
-make_pair(c_738716,quote_count,NULL);
+make_pair(c_738716,quote_count,NULL);c_738716.hdr.immutable = 1;
 
-make_pair(c_738715,quote_quote,&c_738716);
+make_pair(c_738715,quote_quote,&c_738716);c_738715.hdr.immutable = 1;
 
-make_pair(c_738714,&c_738715,NULL);
+make_pair(c_738714,&c_738715,NULL);c_738714.hdr.immutable = 1;
 
-make_pair(c_738712,&c_738713,&c_738714);
+make_pair(c_738712,&c_738713,&c_738714);c_738712.hdr.immutable = 1;
 
-make_pair(c_738711,quote_test_91group_91inc_67,&c_738712);
+make_pair(c_738711,quote_test_91group_91inc_67,&c_738712);c_738711.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738084, ((closureN)self_734425)->elements[10], r_732852, &c_738711);; 
 }
 
@@ -15643,7 +15643,7 @@ c_738092.elements[12] = ((closureN)self_734428)->elements[12];
 c_738092.elements[13] = ((closureN)self_734428)->elements[13];
 
 
-make_pair(c_738706,quote_current_91test_91group,NULL);
+make_pair(c_738706,quote_current_91test_91group,NULL);c_738706.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738092, r_732846, NULL, &c_738706);; 
 }
 
@@ -15737,7 +15737,7 @@ c_738100.elements[14] = ((closureN)self_734431)->elements[14];
 c_738100.elements[15] = ((closureN)self_734431)->elements[15];
 
 
-make_pair(c_738702,quote_ERROR,NULL);
+make_pair(c_738702,quote_ERROR,NULL);c_738702.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738100, r_732841, NULL, &c_738702);; 
 }
 
@@ -15769,9 +15769,9 @@ c_738102.elements[13] = ((closureN)self_734432)->elements[14];
 c_738102.elements[14] = ((closureN)self_734432)->elements[15];
 
 
-make_pair(c_738700,quote_ERROR,NULL);
+make_pair(c_738700,quote_ERROR,NULL);c_738700.hdr.immutable = 1;
 
-make_pair(c_738699,quote_quote,&c_738700);
+make_pair(c_738699,quote_quote,&c_738700);c_738699.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738102, ((closureN)self_734432)->elements[13], r_732839, &c_738699);; 
 }
 
@@ -15803,11 +15803,11 @@ c_738104.elements[13] = ((closureN)self_734433)->elements[13];
 c_738104.elements[14] = ((closureN)self_734433)->elements[14];
 
 
-make_pair(c_738696,quote_ERROR,NULL);
+make_pair(c_738696,quote_ERROR,NULL);c_738696.hdr.immutable = 1;
 
-make_pair(c_738695,quote_quote,&c_738696);
+make_pair(c_738695,quote_quote,&c_738696);c_738695.hdr.immutable = 1;
 
-make_pair(c_738694,&c_738695,NULL);
+make_pair(c_738694,&c_738695,NULL);c_738694.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738104, r_732835, NULL, &c_738694);; 
 }
 
@@ -15838,15 +15838,15 @@ c_738106.elements[12] = ((closureN)self_734434)->elements[13];
 c_738106.elements[13] = ((closureN)self_734434)->elements[14];
 
 
-make_pair(c_738689,quote_current_91test_91group,NULL);
+make_pair(c_738689,quote_current_91test_91group,NULL);c_738689.hdr.immutable = 1;
 
-make_pair(c_738692,quote_ERROR,NULL);
+make_pair(c_738692,quote_ERROR,NULL);c_738692.hdr.immutable = 1;
 
-make_pair(c_738691,quote_quote,&c_738692);
+make_pair(c_738691,quote_quote,&c_738692);c_738691.hdr.immutable = 1;
 
-make_pair(c_738690,&c_738691,NULL);
+make_pair(c_738690,&c_738691,NULL);c_738690.hdr.immutable = 1;
 
-make_pair(c_738688,&c_738689,&c_738690);
+make_pair(c_738688,&c_738689,&c_738690);c_738688.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738106, ((closureN)self_734434)->elements[12], r_732833, &c_738688);; 
 }
 
@@ -15876,17 +15876,17 @@ c_738108.elements[11] = ((closureN)self_734435)->elements[12];
 c_738108.elements[12] = ((closureN)self_734435)->elements[13];
 
 
-make_pair(c_738682,quote_current_91test_91group,NULL);
+make_pair(c_738682,quote_current_91test_91group,NULL);c_738682.hdr.immutable = 1;
 
-make_pair(c_738685,quote_ERROR,NULL);
+make_pair(c_738685,quote_ERROR,NULL);c_738685.hdr.immutable = 1;
 
-make_pair(c_738684,quote_quote,&c_738685);
+make_pair(c_738684,quote_quote,&c_738685);c_738684.hdr.immutable = 1;
 
-make_pair(c_738683,&c_738684,NULL);
+make_pair(c_738683,&c_738684,NULL);c_738683.hdr.immutable = 1;
 
-make_pair(c_738681,&c_738682,&c_738683);
+make_pair(c_738681,&c_738682,&c_738683);c_738681.hdr.immutable = 1;
 
-make_pair(c_738680,quote_test_91group_91inc_67,&c_738681);
+make_pair(c_738680,quote_test_91group_91inc_67,&c_738681);c_738680.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738108, ((closureN)self_734435)->elements[11], r_732830, &c_738680);; 
 }
 
@@ -15916,19 +15916,19 @@ c_738110.elements[11] = ((closureN)self_734436)->elements[11];
 c_738110.elements[12] = ((closureN)self_734436)->elements[12];
 
 
-make_pair(c_738674,quote_current_91test_91group,NULL);
+make_pair(c_738674,quote_current_91test_91group,NULL);c_738674.hdr.immutable = 1;
 
-make_pair(c_738677,quote_ERROR,NULL);
+make_pair(c_738677,quote_ERROR,NULL);c_738677.hdr.immutable = 1;
 
-make_pair(c_738676,quote_quote,&c_738677);
+make_pair(c_738676,quote_quote,&c_738677);c_738676.hdr.immutable = 1;
 
-make_pair(c_738675,&c_738676,NULL);
+make_pair(c_738675,&c_738676,NULL);c_738675.hdr.immutable = 1;
 
-make_pair(c_738673,&c_738674,&c_738675);
+make_pair(c_738673,&c_738674,&c_738675);c_738673.hdr.immutable = 1;
 
-make_pair(c_738672,quote_test_91group_91inc_67,&c_738673);
+make_pair(c_738672,quote_test_91group_91inc_67,&c_738673);c_738672.hdr.immutable = 1;
 
-make_pair(c_738671,&c_738672,NULL);
+make_pair(c_738671,&c_738672,NULL);c_738671.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738110, r_732826, NULL, &c_738671);; 
 }
 
@@ -15957,33 +15957,33 @@ c_738112.elements[10] = ((closureN)self_734437)->elements[11];
 c_738112.elements[11] = ((closureN)self_734437)->elements[12];
 
 
-make_pair(c_738659,quote_current_91test_91group,NULL);
+make_pair(c_738659,quote_current_91test_91group,NULL);c_738659.hdr.immutable = 1;
 
-make_pair(c_738662,quote_count,NULL);
+make_pair(c_738662,quote_count,NULL);c_738662.hdr.immutable = 1;
 
-make_pair(c_738661,quote_quote,&c_738662);
+make_pair(c_738661,quote_quote,&c_738662);c_738661.hdr.immutable = 1;
 
-make_pair(c_738660,&c_738661,NULL);
+make_pair(c_738660,&c_738661,NULL);c_738660.hdr.immutable = 1;
 
-make_pair(c_738658,&c_738659,&c_738660);
+make_pair(c_738658,&c_738659,&c_738660);c_738658.hdr.immutable = 1;
 
-make_pair(c_738657,quote_test_91group_91inc_67,&c_738658);
+make_pair(c_738657,quote_test_91group_91inc_67,&c_738658);c_738657.hdr.immutable = 1;
 
-make_pair(c_738666,quote_current_91test_91group,NULL);
+make_pair(c_738666,quote_current_91test_91group,NULL);c_738666.hdr.immutable = 1;
 
-make_pair(c_738669,quote_ERROR,NULL);
+make_pair(c_738669,quote_ERROR,NULL);c_738669.hdr.immutable = 1;
 
-make_pair(c_738668,quote_quote,&c_738669);
+make_pair(c_738668,quote_quote,&c_738669);c_738668.hdr.immutable = 1;
 
-make_pair(c_738667,&c_738668,NULL);
+make_pair(c_738667,&c_738668,NULL);c_738667.hdr.immutable = 1;
 
-make_pair(c_738665,&c_738666,&c_738667);
+make_pair(c_738665,&c_738666,&c_738667);c_738665.hdr.immutable = 1;
 
-make_pair(c_738664,quote_test_91group_91inc_67,&c_738665);
+make_pair(c_738664,quote_test_91group_91inc_67,&c_738665);c_738664.hdr.immutable = 1;
 
-make_pair(c_738663,&c_738664,NULL);
+make_pair(c_738663,&c_738664,NULL);c_738663.hdr.immutable = 1;
 
-make_pair(c_738656,&c_738657,&c_738663);
+make_pair(c_738656,&c_738657,&c_738663);c_738656.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738112, ((closureN)self_734437)->elements[10], r_732824, &c_738656);; 
 }
 
@@ -16011,43 +16011,43 @@ c_738114.elements[9] = ((closureN)self_734438)->elements[10];
 c_738114.elements[10] = ((closureN)self_734438)->elements[11];
 
 
-make_pair(c_738639,quote_current_91error_91port,NULL);
+make_pair(c_738639,quote_current_91error_91port,NULL);c_738639.hdr.immutable = 1;
 
-make_pair(c_738638,&c_738639,NULL);
+make_pair(c_738638,&c_738639,NULL);c_738638.hdr.immutable = 1;
 
-make_pair(c_738637,quote_exn,&c_738638);
+make_pair(c_738637,quote_exn,&c_738638);c_738637.hdr.immutable = 1;
 
-make_pair(c_738636,quote_print_91exception,&c_738637);
+make_pair(c_738636,quote_print_91exception,&c_738637);c_738636.hdr.immutable = 1;
 
-make_pair(c_738643,quote_current_91test_91group,NULL);
+make_pair(c_738643,quote_current_91test_91group,NULL);c_738643.hdr.immutable = 1;
 
-make_pair(c_738646,quote_count,NULL);
+make_pair(c_738646,quote_count,NULL);c_738646.hdr.immutable = 1;
 
-make_pair(c_738645,quote_quote,&c_738646);
+make_pair(c_738645,quote_quote,&c_738646);c_738645.hdr.immutable = 1;
 
-make_pair(c_738644,&c_738645,NULL);
+make_pair(c_738644,&c_738645,NULL);c_738644.hdr.immutable = 1;
 
-make_pair(c_738642,&c_738643,&c_738644);
+make_pair(c_738642,&c_738643,&c_738644);c_738642.hdr.immutable = 1;
 
-make_pair(c_738641,quote_test_91group_91inc_67,&c_738642);
+make_pair(c_738641,quote_test_91group_91inc_67,&c_738642);c_738641.hdr.immutable = 1;
 
-make_pair(c_738650,quote_current_91test_91group,NULL);
+make_pair(c_738650,quote_current_91test_91group,NULL);c_738650.hdr.immutable = 1;
 
-make_pair(c_738653,quote_ERROR,NULL);
+make_pair(c_738653,quote_ERROR,NULL);c_738653.hdr.immutable = 1;
 
-make_pair(c_738652,quote_quote,&c_738653);
+make_pair(c_738652,quote_quote,&c_738653);c_738652.hdr.immutable = 1;
 
-make_pair(c_738651,&c_738652,NULL);
+make_pair(c_738651,&c_738652,NULL);c_738651.hdr.immutable = 1;
 
-make_pair(c_738649,&c_738650,&c_738651);
+make_pair(c_738649,&c_738650,&c_738651);c_738649.hdr.immutable = 1;
 
-make_pair(c_738648,quote_test_91group_91inc_67,&c_738649);
+make_pair(c_738648,quote_test_91group_91inc_67,&c_738649);c_738648.hdr.immutable = 1;
 
-make_pair(c_738647,&c_738648,NULL);
+make_pair(c_738647,&c_738648,NULL);c_738647.hdr.immutable = 1;
 
-make_pair(c_738640,&c_738641,&c_738647);
+make_pair(c_738640,&c_738641,&c_738647);c_738640.hdr.immutable = 1;
 
-make_pair(c_738635,&c_738636,&c_738640);
+make_pair(c_738635,&c_738636,&c_738640);c_738635.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738114, ((closureN)self_734438)->elements[9], r_732821, &c_738635);; 
 }
 
@@ -16074,51 +16074,51 @@ c_738116.elements[8] = ((closureN)self_734439)->elements[9];
 c_738116.elements[9] = ((closureN)self_734439)->elements[10];
 
 
-make_utf8_string_with_len(c_738613, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738613, "error in group outside of tests", 31, 31);c_738613.hdr.immutable = 1;
 
-make_pair(c_738612,&c_738613,NULL);
+make_pair(c_738612,&c_738613,NULL);c_738612.hdr.immutable = 1;
 
-make_pair(c_738611,quote_warning,&c_738612);
+make_pair(c_738611,quote_warning,&c_738612);c_738611.hdr.immutable = 1;
 
-make_pair(c_738618,quote_current_91error_91port,NULL);
+make_pair(c_738618,quote_current_91error_91port,NULL);c_738618.hdr.immutable = 1;
 
-make_pair(c_738617,&c_738618,NULL);
+make_pair(c_738617,&c_738618,NULL);c_738617.hdr.immutable = 1;
 
-make_pair(c_738616,quote_exn,&c_738617);
+make_pair(c_738616,quote_exn,&c_738617);c_738616.hdr.immutable = 1;
 
-make_pair(c_738615,quote_print_91exception,&c_738616);
+make_pair(c_738615,quote_print_91exception,&c_738616);c_738615.hdr.immutable = 1;
 
-make_pair(c_738622,quote_current_91test_91group,NULL);
+make_pair(c_738622,quote_current_91test_91group,NULL);c_738622.hdr.immutable = 1;
 
-make_pair(c_738625,quote_count,NULL);
+make_pair(c_738625,quote_count,NULL);c_738625.hdr.immutable = 1;
 
-make_pair(c_738624,quote_quote,&c_738625);
+make_pair(c_738624,quote_quote,&c_738625);c_738624.hdr.immutable = 1;
 
-make_pair(c_738623,&c_738624,NULL);
+make_pair(c_738623,&c_738624,NULL);c_738623.hdr.immutable = 1;
 
-make_pair(c_738621,&c_738622,&c_738623);
+make_pair(c_738621,&c_738622,&c_738623);c_738621.hdr.immutable = 1;
 
-make_pair(c_738620,quote_test_91group_91inc_67,&c_738621);
+make_pair(c_738620,quote_test_91group_91inc_67,&c_738621);c_738620.hdr.immutable = 1;
 
-make_pair(c_738629,quote_current_91test_91group,NULL);
+make_pair(c_738629,quote_current_91test_91group,NULL);c_738629.hdr.immutable = 1;
 
-make_pair(c_738632,quote_ERROR,NULL);
+make_pair(c_738632,quote_ERROR,NULL);c_738632.hdr.immutable = 1;
 
-make_pair(c_738631,quote_quote,&c_738632);
+make_pair(c_738631,quote_quote,&c_738632);c_738631.hdr.immutable = 1;
 
-make_pair(c_738630,&c_738631,NULL);
+make_pair(c_738630,&c_738631,NULL);c_738630.hdr.immutable = 1;
 
-make_pair(c_738628,&c_738629,&c_738630);
+make_pair(c_738628,&c_738629,&c_738630);c_738628.hdr.immutable = 1;
 
-make_pair(c_738627,quote_test_91group_91inc_67,&c_738628);
+make_pair(c_738627,quote_test_91group_91inc_67,&c_738628);c_738627.hdr.immutable = 1;
 
-make_pair(c_738626,&c_738627,NULL);
+make_pair(c_738626,&c_738627,NULL);c_738626.hdr.immutable = 1;
 
-make_pair(c_738619,&c_738620,&c_738626);
+make_pair(c_738619,&c_738620,&c_738626);c_738619.hdr.immutable = 1;
 
-make_pair(c_738614,&c_738615,&c_738619);
+make_pair(c_738614,&c_738615,&c_738619);c_738614.hdr.immutable = 1;
 
-make_pair(c_738610,&c_738611,&c_738614);
+make_pair(c_738610,&c_738611,&c_738614);c_738610.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738116, ((closureN)self_734439)->elements[8], r_732818, &c_738610);; 
 }
 
@@ -16144,53 +16144,53 @@ c_738118.elements[7] = ((closureN)self_734440)->elements[8];
 c_738118.elements[8] = ((closureN)self_734440)->elements[9];
 
 
-make_utf8_string_with_len(c_738588, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738588, "error in group outside of tests", 31, 31);c_738588.hdr.immutable = 1;
 
-make_pair(c_738587,&c_738588,NULL);
+make_pair(c_738587,&c_738588,NULL);c_738587.hdr.immutable = 1;
 
-make_pair(c_738586,quote_warning,&c_738587);
+make_pair(c_738586,quote_warning,&c_738587);c_738586.hdr.immutable = 1;
 
-make_pair(c_738593,quote_current_91error_91port,NULL);
+make_pair(c_738593,quote_current_91error_91port,NULL);c_738593.hdr.immutable = 1;
 
-make_pair(c_738592,&c_738593,NULL);
+make_pair(c_738592,&c_738593,NULL);c_738592.hdr.immutable = 1;
 
-make_pair(c_738591,quote_exn,&c_738592);
+make_pair(c_738591,quote_exn,&c_738592);c_738591.hdr.immutable = 1;
 
-make_pair(c_738590,quote_print_91exception,&c_738591);
+make_pair(c_738590,quote_print_91exception,&c_738591);c_738590.hdr.immutable = 1;
 
-make_pair(c_738597,quote_current_91test_91group,NULL);
+make_pair(c_738597,quote_current_91test_91group,NULL);c_738597.hdr.immutable = 1;
 
-make_pair(c_738600,quote_count,NULL);
+make_pair(c_738600,quote_count,NULL);c_738600.hdr.immutable = 1;
 
-make_pair(c_738599,quote_quote,&c_738600);
+make_pair(c_738599,quote_quote,&c_738600);c_738599.hdr.immutable = 1;
 
-make_pair(c_738598,&c_738599,NULL);
+make_pair(c_738598,&c_738599,NULL);c_738598.hdr.immutable = 1;
 
-make_pair(c_738596,&c_738597,&c_738598);
+make_pair(c_738596,&c_738597,&c_738598);c_738596.hdr.immutable = 1;
 
-make_pair(c_738595,quote_test_91group_91inc_67,&c_738596);
+make_pair(c_738595,quote_test_91group_91inc_67,&c_738596);c_738595.hdr.immutable = 1;
 
-make_pair(c_738604,quote_current_91test_91group,NULL);
+make_pair(c_738604,quote_current_91test_91group,NULL);c_738604.hdr.immutable = 1;
 
-make_pair(c_738607,quote_ERROR,NULL);
+make_pair(c_738607,quote_ERROR,NULL);c_738607.hdr.immutable = 1;
 
-make_pair(c_738606,quote_quote,&c_738607);
+make_pair(c_738606,quote_quote,&c_738607);c_738606.hdr.immutable = 1;
 
-make_pair(c_738605,&c_738606,NULL);
+make_pair(c_738605,&c_738606,NULL);c_738605.hdr.immutable = 1;
 
-make_pair(c_738603,&c_738604,&c_738605);
+make_pair(c_738603,&c_738604,&c_738605);c_738603.hdr.immutable = 1;
 
-make_pair(c_738602,quote_test_91group_91inc_67,&c_738603);
+make_pair(c_738602,quote_test_91group_91inc_67,&c_738603);c_738602.hdr.immutable = 1;
 
-make_pair(c_738601,&c_738602,NULL);
+make_pair(c_738601,&c_738602,NULL);c_738601.hdr.immutable = 1;
 
-make_pair(c_738594,&c_738595,&c_738601);
+make_pair(c_738594,&c_738595,&c_738601);c_738594.hdr.immutable = 1;
 
-make_pair(c_738589,&c_738590,&c_738594);
+make_pair(c_738589,&c_738590,&c_738594);c_738589.hdr.immutable = 1;
 
-make_pair(c_738585,&c_738586,&c_738589);
+make_pair(c_738585,&c_738586,&c_738589);c_738585.hdr.immutable = 1;
 
-make_pair(c_738584,quote__else,&c_738585);
+make_pair(c_738584,quote__else,&c_738585);c_738584.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738118, ((closureN)self_734440)->elements[7], r_732815, &c_738584);; 
 }
 
@@ -16216,55 +16216,55 @@ c_738120.elements[7] = ((closureN)self_734441)->elements[7];
 c_738120.elements[8] = ((closureN)self_734441)->elements[8];
 
 
-make_utf8_string_with_len(c_738562, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738562, "error in group outside of tests", 31, 31);c_738562.hdr.immutable = 1;
 
-make_pair(c_738561,&c_738562,NULL);
+make_pair(c_738561,&c_738562,NULL);c_738561.hdr.immutable = 1;
 
-make_pair(c_738560,quote_warning,&c_738561);
+make_pair(c_738560,quote_warning,&c_738561);c_738560.hdr.immutable = 1;
 
-make_pair(c_738567,quote_current_91error_91port,NULL);
+make_pair(c_738567,quote_current_91error_91port,NULL);c_738567.hdr.immutable = 1;
 
-make_pair(c_738566,&c_738567,NULL);
+make_pair(c_738566,&c_738567,NULL);c_738566.hdr.immutable = 1;
 
-make_pair(c_738565,quote_exn,&c_738566);
+make_pair(c_738565,quote_exn,&c_738566);c_738565.hdr.immutable = 1;
 
-make_pair(c_738564,quote_print_91exception,&c_738565);
+make_pair(c_738564,quote_print_91exception,&c_738565);c_738564.hdr.immutable = 1;
 
-make_pair(c_738571,quote_current_91test_91group,NULL);
+make_pair(c_738571,quote_current_91test_91group,NULL);c_738571.hdr.immutable = 1;
 
-make_pair(c_738574,quote_count,NULL);
+make_pair(c_738574,quote_count,NULL);c_738574.hdr.immutable = 1;
 
-make_pair(c_738573,quote_quote,&c_738574);
+make_pair(c_738573,quote_quote,&c_738574);c_738573.hdr.immutable = 1;
 
-make_pair(c_738572,&c_738573,NULL);
+make_pair(c_738572,&c_738573,NULL);c_738572.hdr.immutable = 1;
 
-make_pair(c_738570,&c_738571,&c_738572);
+make_pair(c_738570,&c_738571,&c_738572);c_738570.hdr.immutable = 1;
 
-make_pair(c_738569,quote_test_91group_91inc_67,&c_738570);
+make_pair(c_738569,quote_test_91group_91inc_67,&c_738570);c_738569.hdr.immutable = 1;
 
-make_pair(c_738578,quote_current_91test_91group,NULL);
+make_pair(c_738578,quote_current_91test_91group,NULL);c_738578.hdr.immutable = 1;
 
-make_pair(c_738581,quote_ERROR,NULL);
+make_pair(c_738581,quote_ERROR,NULL);c_738581.hdr.immutable = 1;
 
-make_pair(c_738580,quote_quote,&c_738581);
+make_pair(c_738580,quote_quote,&c_738581);c_738580.hdr.immutable = 1;
 
-make_pair(c_738579,&c_738580,NULL);
+make_pair(c_738579,&c_738580,NULL);c_738579.hdr.immutable = 1;
 
-make_pair(c_738577,&c_738578,&c_738579);
+make_pair(c_738577,&c_738578,&c_738579);c_738577.hdr.immutable = 1;
 
-make_pair(c_738576,quote_test_91group_91inc_67,&c_738577);
+make_pair(c_738576,quote_test_91group_91inc_67,&c_738577);c_738576.hdr.immutable = 1;
 
-make_pair(c_738575,&c_738576,NULL);
+make_pair(c_738575,&c_738576,NULL);c_738575.hdr.immutable = 1;
 
-make_pair(c_738568,&c_738569,&c_738575);
+make_pair(c_738568,&c_738569,&c_738575);c_738568.hdr.immutable = 1;
 
-make_pair(c_738563,&c_738564,&c_738568);
+make_pair(c_738563,&c_738564,&c_738568);c_738563.hdr.immutable = 1;
 
-make_pair(c_738559,&c_738560,&c_738563);
+make_pair(c_738559,&c_738560,&c_738563);c_738559.hdr.immutable = 1;
 
-make_pair(c_738558,quote__else,&c_738559);
+make_pair(c_738558,quote__else,&c_738559);c_738558.hdr.immutable = 1;
 
-make_pair(c_738557,&c_738558,NULL);
+make_pair(c_738557,&c_738558,NULL);c_738557.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738120, r_732811, NULL, &c_738557);; 
 }
 
@@ -16289,57 +16289,57 @@ c_738122.elements[6] = ((closureN)self_734442)->elements[7];
 c_738122.elements[7] = ((closureN)self_734442)->elements[8];
 
 
-make_utf8_string_with_len(c_738536, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738536, "error in group outside of tests", 31, 31);c_738536.hdr.immutable = 1;
 
-make_pair(c_738535,&c_738536,NULL);
+make_pair(c_738535,&c_738536,NULL);c_738535.hdr.immutable = 1;
 
-make_pair(c_738534,quote_warning,&c_738535);
+make_pair(c_738534,quote_warning,&c_738535);c_738534.hdr.immutable = 1;
 
-make_pair(c_738541,quote_current_91error_91port,NULL);
+make_pair(c_738541,quote_current_91error_91port,NULL);c_738541.hdr.immutable = 1;
 
-make_pair(c_738540,&c_738541,NULL);
+make_pair(c_738540,&c_738541,NULL);c_738540.hdr.immutable = 1;
 
-make_pair(c_738539,quote_exn,&c_738540);
+make_pair(c_738539,quote_exn,&c_738540);c_738539.hdr.immutable = 1;
 
-make_pair(c_738538,quote_print_91exception,&c_738539);
+make_pair(c_738538,quote_print_91exception,&c_738539);c_738538.hdr.immutable = 1;
 
-make_pair(c_738545,quote_current_91test_91group,NULL);
+make_pair(c_738545,quote_current_91test_91group,NULL);c_738545.hdr.immutable = 1;
 
-make_pair(c_738548,quote_count,NULL);
+make_pair(c_738548,quote_count,NULL);c_738548.hdr.immutable = 1;
 
-make_pair(c_738547,quote_quote,&c_738548);
+make_pair(c_738547,quote_quote,&c_738548);c_738547.hdr.immutable = 1;
 
-make_pair(c_738546,&c_738547,NULL);
+make_pair(c_738546,&c_738547,NULL);c_738546.hdr.immutable = 1;
 
-make_pair(c_738544,&c_738545,&c_738546);
+make_pair(c_738544,&c_738545,&c_738546);c_738544.hdr.immutable = 1;
 
-make_pair(c_738543,quote_test_91group_91inc_67,&c_738544);
+make_pair(c_738543,quote_test_91group_91inc_67,&c_738544);c_738543.hdr.immutable = 1;
 
-make_pair(c_738552,quote_current_91test_91group,NULL);
+make_pair(c_738552,quote_current_91test_91group,NULL);c_738552.hdr.immutable = 1;
 
-make_pair(c_738555,quote_ERROR,NULL);
+make_pair(c_738555,quote_ERROR,NULL);c_738555.hdr.immutable = 1;
 
-make_pair(c_738554,quote_quote,&c_738555);
+make_pair(c_738554,quote_quote,&c_738555);c_738554.hdr.immutable = 1;
 
-make_pair(c_738553,&c_738554,NULL);
+make_pair(c_738553,&c_738554,NULL);c_738553.hdr.immutable = 1;
 
-make_pair(c_738551,&c_738552,&c_738553);
+make_pair(c_738551,&c_738552,&c_738553);c_738551.hdr.immutable = 1;
 
-make_pair(c_738550,quote_test_91group_91inc_67,&c_738551);
+make_pair(c_738550,quote_test_91group_91inc_67,&c_738551);c_738550.hdr.immutable = 1;
 
-make_pair(c_738549,&c_738550,NULL);
+make_pair(c_738549,&c_738550,NULL);c_738549.hdr.immutable = 1;
 
-make_pair(c_738542,&c_738543,&c_738549);
+make_pair(c_738542,&c_738543,&c_738549);c_738542.hdr.immutable = 1;
 
-make_pair(c_738537,&c_738538,&c_738542);
+make_pair(c_738537,&c_738538,&c_738542);c_738537.hdr.immutable = 1;
 
-make_pair(c_738533,&c_738534,&c_738537);
+make_pair(c_738533,&c_738534,&c_738537);c_738533.hdr.immutable = 1;
 
-make_pair(c_738532,quote__else,&c_738533);
+make_pair(c_738532,quote__else,&c_738533);c_738532.hdr.immutable = 1;
 
-make_pair(c_738531,&c_738532,NULL);
+make_pair(c_738531,&c_738532,NULL);c_738531.hdr.immutable = 1;
 
-make_pair(c_738530,quote_exn,&c_738531);
+make_pair(c_738530,quote_exn,&c_738531);c_738530.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738122, ((closureN)self_734442)->elements[6], r_732809, &c_738530);; 
 }
 
@@ -16365,63 +16365,63 @@ c_738124.elements[6] = ((closureN)self_734443)->elements[6];
 
 
 
-make_utf8_string_with_len(c_738506, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738506, "error in group outside of tests", 31, 31);c_738506.hdr.immutable = 1;
 
-make_pair(c_738505,&c_738506,NULL);
+make_pair(c_738505,&c_738506,NULL);c_738505.hdr.immutable = 1;
 
-make_pair(c_738504,quote_warning,&c_738505);
+make_pair(c_738504,quote_warning,&c_738505);c_738504.hdr.immutable = 1;
 
-make_pair(c_738511,quote_current_91error_91port,NULL);
+make_pair(c_738511,quote_current_91error_91port,NULL);c_738511.hdr.immutable = 1;
 
-make_pair(c_738510,&c_738511,NULL);
+make_pair(c_738510,&c_738511,NULL);c_738510.hdr.immutable = 1;
 
-make_pair(c_738509,quote_exn,&c_738510);
+make_pair(c_738509,quote_exn,&c_738510);c_738509.hdr.immutable = 1;
 
-make_pair(c_738508,quote_print_91exception,&c_738509);
+make_pair(c_738508,quote_print_91exception,&c_738509);c_738508.hdr.immutable = 1;
 
-make_pair(c_738515,quote_current_91test_91group,NULL);
+make_pair(c_738515,quote_current_91test_91group,NULL);c_738515.hdr.immutable = 1;
 
-make_pair(c_738518,quote_count,NULL);
+make_pair(c_738518,quote_count,NULL);c_738518.hdr.immutable = 1;
 
-make_pair(c_738517,quote_quote,&c_738518);
+make_pair(c_738517,quote_quote,&c_738518);c_738517.hdr.immutable = 1;
 
-make_pair(c_738516,&c_738517,NULL);
+make_pair(c_738516,&c_738517,NULL);c_738516.hdr.immutable = 1;
 
-make_pair(c_738514,&c_738515,&c_738516);
+make_pair(c_738514,&c_738515,&c_738516);c_738514.hdr.immutable = 1;
 
-make_pair(c_738513,quote_test_91group_91inc_67,&c_738514);
+make_pair(c_738513,quote_test_91group_91inc_67,&c_738514);c_738513.hdr.immutable = 1;
 
-make_pair(c_738522,quote_current_91test_91group,NULL);
+make_pair(c_738522,quote_current_91test_91group,NULL);c_738522.hdr.immutable = 1;
 
-make_pair(c_738525,quote_ERROR,NULL);
+make_pair(c_738525,quote_ERROR,NULL);c_738525.hdr.immutable = 1;
 
-make_pair(c_738524,quote_quote,&c_738525);
+make_pair(c_738524,quote_quote,&c_738525);c_738524.hdr.immutable = 1;
 
-make_pair(c_738523,&c_738524,NULL);
+make_pair(c_738523,&c_738524,NULL);c_738523.hdr.immutable = 1;
 
-make_pair(c_738521,&c_738522,&c_738523);
+make_pair(c_738521,&c_738522,&c_738523);c_738521.hdr.immutable = 1;
 
-make_pair(c_738520,quote_test_91group_91inc_67,&c_738521);
+make_pair(c_738520,quote_test_91group_91inc_67,&c_738521);c_738520.hdr.immutable = 1;
 
-make_pair(c_738519,&c_738520,NULL);
+make_pair(c_738519,&c_738520,NULL);c_738519.hdr.immutable = 1;
 
-make_pair(c_738512,&c_738513,&c_738519);
+make_pair(c_738512,&c_738513,&c_738519);c_738512.hdr.immutable = 1;
 
-make_pair(c_738507,&c_738508,&c_738512);
+make_pair(c_738507,&c_738508,&c_738512);c_738507.hdr.immutable = 1;
 
-make_pair(c_738503,&c_738504,&c_738507);
+make_pair(c_738503,&c_738504,&c_738507);c_738503.hdr.immutable = 1;
 
-make_pair(c_738502,quote__else,&c_738503);
+make_pair(c_738502,quote__else,&c_738503);c_738502.hdr.immutable = 1;
 
-make_pair(c_738501,&c_738502,NULL);
+make_pair(c_738501,&c_738502,NULL);c_738501.hdr.immutable = 1;
 
-make_pair(c_738500,quote_exn,&c_738501);
+make_pair(c_738500,quote_exn,&c_738501);c_738500.hdr.immutable = 1;
 
-make_pair(c_738527,quote__93_93_93,NULL);
+make_pair(c_738527,quote__93_93_93,NULL);c_738527.hdr.immutable = 1;
 
-make_pair(c_738526,quote_body,&c_738527);
+make_pair(c_738526,quote_body,&c_738527);c_738526.hdr.immutable = 1;
 
-make_pair(c_738499,&c_738500,&c_738526);
+make_pair(c_738499,&c_738500,&c_738526);c_738499.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738124, r_732806, Cyc_cdr(data, ((closureN)self_734443)->elements[7]), &c_738499);; 
 }
 
@@ -16444,65 +16444,65 @@ c_738126.elements[4] = ((closureN)self_734444)->elements[4];
 c_738126.elements[5] = ((closureN)self_734444)->elements[6];
 
 
-make_utf8_string_with_len(c_738473, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738473, "error in group outside of tests", 31, 31);c_738473.hdr.immutable = 1;
 
-make_pair(c_738472,&c_738473,NULL);
+make_pair(c_738472,&c_738473,NULL);c_738472.hdr.immutable = 1;
 
-make_pair(c_738471,quote_warning,&c_738472);
+make_pair(c_738471,quote_warning,&c_738472);c_738471.hdr.immutable = 1;
 
-make_pair(c_738478,quote_current_91error_91port,NULL);
+make_pair(c_738478,quote_current_91error_91port,NULL);c_738478.hdr.immutable = 1;
 
-make_pair(c_738477,&c_738478,NULL);
+make_pair(c_738477,&c_738478,NULL);c_738477.hdr.immutable = 1;
 
-make_pair(c_738476,quote_exn,&c_738477);
+make_pair(c_738476,quote_exn,&c_738477);c_738476.hdr.immutable = 1;
 
-make_pair(c_738475,quote_print_91exception,&c_738476);
+make_pair(c_738475,quote_print_91exception,&c_738476);c_738475.hdr.immutable = 1;
 
-make_pair(c_738482,quote_current_91test_91group,NULL);
+make_pair(c_738482,quote_current_91test_91group,NULL);c_738482.hdr.immutable = 1;
 
-make_pair(c_738485,quote_count,NULL);
+make_pair(c_738485,quote_count,NULL);c_738485.hdr.immutable = 1;
 
-make_pair(c_738484,quote_quote,&c_738485);
+make_pair(c_738484,quote_quote,&c_738485);c_738484.hdr.immutable = 1;
 
-make_pair(c_738483,&c_738484,NULL);
+make_pair(c_738483,&c_738484,NULL);c_738483.hdr.immutable = 1;
 
-make_pair(c_738481,&c_738482,&c_738483);
+make_pair(c_738481,&c_738482,&c_738483);c_738481.hdr.immutable = 1;
 
-make_pair(c_738480,quote_test_91group_91inc_67,&c_738481);
+make_pair(c_738480,quote_test_91group_91inc_67,&c_738481);c_738480.hdr.immutable = 1;
 
-make_pair(c_738489,quote_current_91test_91group,NULL);
+make_pair(c_738489,quote_current_91test_91group,NULL);c_738489.hdr.immutable = 1;
 
-make_pair(c_738492,quote_ERROR,NULL);
+make_pair(c_738492,quote_ERROR,NULL);c_738492.hdr.immutable = 1;
 
-make_pair(c_738491,quote_quote,&c_738492);
+make_pair(c_738491,quote_quote,&c_738492);c_738491.hdr.immutable = 1;
 
-make_pair(c_738490,&c_738491,NULL);
+make_pair(c_738490,&c_738491,NULL);c_738490.hdr.immutable = 1;
 
-make_pair(c_738488,&c_738489,&c_738490);
+make_pair(c_738488,&c_738489,&c_738490);c_738488.hdr.immutable = 1;
 
-make_pair(c_738487,quote_test_91group_91inc_67,&c_738488);
+make_pair(c_738487,quote_test_91group_91inc_67,&c_738488);c_738487.hdr.immutable = 1;
 
-make_pair(c_738486,&c_738487,NULL);
+make_pair(c_738486,&c_738487,NULL);c_738486.hdr.immutable = 1;
 
-make_pair(c_738479,&c_738480,&c_738486);
+make_pair(c_738479,&c_738480,&c_738486);c_738479.hdr.immutable = 1;
 
-make_pair(c_738474,&c_738475,&c_738479);
+make_pair(c_738474,&c_738475,&c_738479);c_738474.hdr.immutable = 1;
 
-make_pair(c_738470,&c_738471,&c_738474);
+make_pair(c_738470,&c_738471,&c_738474);c_738470.hdr.immutable = 1;
 
-make_pair(c_738469,quote__else,&c_738470);
+make_pair(c_738469,quote__else,&c_738470);c_738469.hdr.immutable = 1;
 
-make_pair(c_738468,&c_738469,NULL);
+make_pair(c_738468,&c_738469,NULL);c_738468.hdr.immutable = 1;
 
-make_pair(c_738467,quote_exn,&c_738468);
+make_pair(c_738467,quote_exn,&c_738468);c_738467.hdr.immutable = 1;
 
-make_pair(c_738494,quote__93_93_93,NULL);
+make_pair(c_738494,quote__93_93_93,NULL);c_738494.hdr.immutable = 1;
 
-make_pair(c_738493,quote_body,&c_738494);
+make_pair(c_738493,quote_body,&c_738494);c_738493.hdr.immutable = 1;
 
-make_pair(c_738466,&c_738467,&c_738493);
+make_pair(c_738466,&c_738467,&c_738493);c_738466.hdr.immutable = 1;
 
-make_pair(c_738465,quote_guard,&c_738466);
+make_pair(c_738465,quote_guard,&c_738466);c_738465.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738126, ((closureN)self_734444)->elements[5], r_732804, &c_738465);; 
 }
 
@@ -16572,7 +16572,7 @@ c_738134.elements[6] = ((closureN)self_734447)->elements[6];
 c_738134.elements[7] = ((closureN)self_734447)->elements[7];
 
 
-make_pair(c_738460,quote_name,NULL);
+make_pair(c_738460,quote_name,NULL);c_738460.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738134, r_732798, NULL, &c_738460);; 
 }
 
@@ -16596,9 +16596,9 @@ c_738136.elements[5] = ((closureN)self_734448)->elements[5];
 c_738136.elements[6] = ((closureN)self_734448)->elements[7];
 
 
-make_pair(c_738458,quote_name,NULL);
+make_pair(c_738458,quote_name,NULL);c_738458.hdr.immutable = 1;
 
-make_pair(c_738457,quote_test_91end,&c_738458);
+make_pair(c_738457,quote_test_91end,&c_738458);c_738457.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738136, ((closureN)self_734448)->elements[6], r_732796, &c_738457);; 
 }
 
@@ -16669,7 +16669,7 @@ c_738144.elements[6] = ((closureN)self_734451)->elements[6];
 c_738144.elements[7] = ((closureN)self_734451)->elements[7];
 
 
-make_pair(c_738452,quote_old_91group,NULL);
+make_pair(c_738452,quote_old_91group,NULL);c_738452.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738144, r_732790, NULL, &c_738452);; 
 }
 
@@ -16693,9 +16693,9 @@ c_738146.elements[5] = ((closureN)self_734452)->elements[5];
 c_738146.elements[6] = ((closureN)self_734452)->elements[6];
 
 
-make_pair(c_738450,quote_old_91group,NULL);
+make_pair(c_738450,quote_old_91group,NULL);c_738450.hdr.immutable = 1;
 
-make_pair(c_738449,quote_current_91test_91group,&c_738450);
+make_pair(c_738449,quote_current_91test_91group,&c_738450);c_738449.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738146, ((closureN)self_734452)->elements[7], r_732788, &c_738449);; 
 }
 
@@ -16719,11 +16719,11 @@ c_738148.elements[5] = ((closureN)self_734453)->elements[5];
 c_738148.elements[6] = ((closureN)self_734453)->elements[6];
 
 
-make_pair(c_738446,quote_old_91group,NULL);
+make_pair(c_738446,quote_old_91group,NULL);c_738446.hdr.immutable = 1;
 
-make_pair(c_738445,quote_current_91test_91group,&c_738446);
+make_pair(c_738445,quote_current_91test_91group,&c_738446);c_738445.hdr.immutable = 1;
 
-make_pair(c_738444,&c_738445,NULL);
+make_pair(c_738444,&c_738445,NULL);c_738444.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738148, r_732784, NULL, &c_738444);; 
 }
 
@@ -16746,17 +16746,17 @@ c_738150.elements[4] = ((closureN)self_734454)->elements[4];
 c_738150.elements[5] = ((closureN)self_734454)->elements[5];
 
 
-make_pair(c_738439,quote_name,NULL);
+make_pair(c_738439,quote_name,NULL);c_738439.hdr.immutable = 1;
 
-make_pair(c_738438,quote_test_91end,&c_738439);
+make_pair(c_738438,quote_test_91end,&c_738439);c_738438.hdr.immutable = 1;
 
-make_pair(c_738442,quote_old_91group,NULL);
+make_pair(c_738442,quote_old_91group,NULL);c_738442.hdr.immutable = 1;
 
-make_pair(c_738441,quote_current_91test_91group,&c_738442);
+make_pair(c_738441,quote_current_91test_91group,&c_738442);c_738441.hdr.immutable = 1;
 
-make_pair(c_738440,&c_738441,NULL);
+make_pair(c_738440,&c_738441,NULL);c_738440.hdr.immutable = 1;
 
-make_pair(c_738437,&c_738438,&c_738440);
+make_pair(c_738437,&c_738438,&c_738440);c_738437.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738150, ((closureN)self_734454)->elements[6], r_732782, &c_738437);; 
 }
 
@@ -16778,79 +16778,79 @@ c_738152.elements[3] = ((closureN)self_734455)->elements[3];
 c_738152.elements[4] = ((closureN)self_734455)->elements[4];
 
 
-make_utf8_string_with_len(c_738407, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738407, "error in group outside of tests", 31, 31);c_738407.hdr.immutable = 1;
 
-make_pair(c_738406,&c_738407,NULL);
+make_pair(c_738406,&c_738407,NULL);c_738406.hdr.immutable = 1;
 
-make_pair(c_738405,quote_warning,&c_738406);
+make_pair(c_738405,quote_warning,&c_738406);c_738405.hdr.immutable = 1;
 
-make_pair(c_738412,quote_current_91error_91port,NULL);
+make_pair(c_738412,quote_current_91error_91port,NULL);c_738412.hdr.immutable = 1;
 
-make_pair(c_738411,&c_738412,NULL);
+make_pair(c_738411,&c_738412,NULL);c_738411.hdr.immutable = 1;
 
-make_pair(c_738410,quote_exn,&c_738411);
+make_pair(c_738410,quote_exn,&c_738411);c_738410.hdr.immutable = 1;
 
-make_pair(c_738409,quote_print_91exception,&c_738410);
+make_pair(c_738409,quote_print_91exception,&c_738410);c_738409.hdr.immutable = 1;
 
-make_pair(c_738416,quote_current_91test_91group,NULL);
+make_pair(c_738416,quote_current_91test_91group,NULL);c_738416.hdr.immutable = 1;
 
-make_pair(c_738419,quote_count,NULL);
+make_pair(c_738419,quote_count,NULL);c_738419.hdr.immutable = 1;
 
-make_pair(c_738418,quote_quote,&c_738419);
+make_pair(c_738418,quote_quote,&c_738419);c_738418.hdr.immutable = 1;
 
-make_pair(c_738417,&c_738418,NULL);
+make_pair(c_738417,&c_738418,NULL);c_738417.hdr.immutable = 1;
 
-make_pair(c_738415,&c_738416,&c_738417);
+make_pair(c_738415,&c_738416,&c_738417);c_738415.hdr.immutable = 1;
 
-make_pair(c_738414,quote_test_91group_91inc_67,&c_738415);
+make_pair(c_738414,quote_test_91group_91inc_67,&c_738415);c_738414.hdr.immutable = 1;
 
-make_pair(c_738423,quote_current_91test_91group,NULL);
+make_pair(c_738423,quote_current_91test_91group,NULL);c_738423.hdr.immutable = 1;
 
-make_pair(c_738426,quote_ERROR,NULL);
+make_pair(c_738426,quote_ERROR,NULL);c_738426.hdr.immutable = 1;
 
-make_pair(c_738425,quote_quote,&c_738426);
+make_pair(c_738425,quote_quote,&c_738426);c_738425.hdr.immutable = 1;
 
-make_pair(c_738424,&c_738425,NULL);
+make_pair(c_738424,&c_738425,NULL);c_738424.hdr.immutable = 1;
 
-make_pair(c_738422,&c_738423,&c_738424);
+make_pair(c_738422,&c_738423,&c_738424);c_738422.hdr.immutable = 1;
 
-make_pair(c_738421,quote_test_91group_91inc_67,&c_738422);
+make_pair(c_738421,quote_test_91group_91inc_67,&c_738422);c_738421.hdr.immutable = 1;
 
-make_pair(c_738420,&c_738421,NULL);
+make_pair(c_738420,&c_738421,NULL);c_738420.hdr.immutable = 1;
 
-make_pair(c_738413,&c_738414,&c_738420);
+make_pair(c_738413,&c_738414,&c_738420);c_738413.hdr.immutable = 1;
 
-make_pair(c_738408,&c_738409,&c_738413);
+make_pair(c_738408,&c_738409,&c_738413);c_738408.hdr.immutable = 1;
 
-make_pair(c_738404,&c_738405,&c_738408);
+make_pair(c_738404,&c_738405,&c_738408);c_738404.hdr.immutable = 1;
 
-make_pair(c_738403,quote__else,&c_738404);
+make_pair(c_738403,quote__else,&c_738404);c_738403.hdr.immutable = 1;
 
-make_pair(c_738402,&c_738403,NULL);
+make_pair(c_738402,&c_738403,NULL);c_738402.hdr.immutable = 1;
 
-make_pair(c_738401,quote_exn,&c_738402);
+make_pair(c_738401,quote_exn,&c_738402);c_738401.hdr.immutable = 1;
 
-make_pair(c_738428,quote__93_93_93,NULL);
+make_pair(c_738428,quote__93_93_93,NULL);c_738428.hdr.immutable = 1;
 
-make_pair(c_738427,quote_body,&c_738428);
+make_pair(c_738427,quote_body,&c_738428);c_738427.hdr.immutable = 1;
 
-make_pair(c_738400,&c_738401,&c_738427);
+make_pair(c_738400,&c_738401,&c_738427);c_738400.hdr.immutable = 1;
 
-make_pair(c_738399,quote_guard,&c_738400);
+make_pair(c_738399,quote_guard,&c_738400);c_738399.hdr.immutable = 1;
 
-make_pair(c_738431,quote_name,NULL);
+make_pair(c_738431,quote_name,NULL);c_738431.hdr.immutable = 1;
 
-make_pair(c_738430,quote_test_91end,&c_738431);
+make_pair(c_738430,quote_test_91end,&c_738431);c_738430.hdr.immutable = 1;
 
-make_pair(c_738434,quote_old_91group,NULL);
+make_pair(c_738434,quote_old_91group,NULL);c_738434.hdr.immutable = 1;
 
-make_pair(c_738433,quote_current_91test_91group,&c_738434);
+make_pair(c_738433,quote_current_91test_91group,&c_738434);c_738433.hdr.immutable = 1;
 
-make_pair(c_738432,&c_738433,NULL);
+make_pair(c_738432,&c_738433,NULL);c_738432.hdr.immutable = 1;
 
-make_pair(c_738429,&c_738430,&c_738432);
+make_pair(c_738429,&c_738430,&c_738432);c_738429.hdr.immutable = 1;
 
-make_pair(c_738398,&c_738399,&c_738429);
+make_pair(c_738398,&c_738399,&c_738429);c_738398.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738152, ((closureN)self_734455)->elements[5], r_732779, &c_738398);; 
 }
 
@@ -16871,85 +16871,85 @@ c_738154.elements[2] = ((closureN)self_734456)->elements[2];
 c_738154.elements[3] = ((closureN)self_734456)->elements[3];
 
 
-make_pair(c_738358,quote_name,NULL);
+make_pair(c_738358,quote_name,NULL);c_738358.hdr.immutable = 1;
 
-make_pair(c_738357,quote_test_91begin,&c_738358);
+make_pair(c_738357,quote_test_91begin,&c_738358);c_738357.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738368, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738368, "error in group outside of tests", 31, 31);c_738368.hdr.immutable = 1;
 
-make_pair(c_738367,&c_738368,NULL);
+make_pair(c_738367,&c_738368,NULL);c_738367.hdr.immutable = 1;
 
-make_pair(c_738366,quote_warning,&c_738367);
+make_pair(c_738366,quote_warning,&c_738367);c_738366.hdr.immutable = 1;
 
-make_pair(c_738373,quote_current_91error_91port,NULL);
+make_pair(c_738373,quote_current_91error_91port,NULL);c_738373.hdr.immutable = 1;
 
-make_pair(c_738372,&c_738373,NULL);
+make_pair(c_738372,&c_738373,NULL);c_738372.hdr.immutable = 1;
 
-make_pair(c_738371,quote_exn,&c_738372);
+make_pair(c_738371,quote_exn,&c_738372);c_738371.hdr.immutable = 1;
 
-make_pair(c_738370,quote_print_91exception,&c_738371);
+make_pair(c_738370,quote_print_91exception,&c_738371);c_738370.hdr.immutable = 1;
 
-make_pair(c_738377,quote_current_91test_91group,NULL);
+make_pair(c_738377,quote_current_91test_91group,NULL);c_738377.hdr.immutable = 1;
 
-make_pair(c_738380,quote_count,NULL);
+make_pair(c_738380,quote_count,NULL);c_738380.hdr.immutable = 1;
 
-make_pair(c_738379,quote_quote,&c_738380);
+make_pair(c_738379,quote_quote,&c_738380);c_738379.hdr.immutable = 1;
 
-make_pair(c_738378,&c_738379,NULL);
+make_pair(c_738378,&c_738379,NULL);c_738378.hdr.immutable = 1;
 
-make_pair(c_738376,&c_738377,&c_738378);
+make_pair(c_738376,&c_738377,&c_738378);c_738376.hdr.immutable = 1;
 
-make_pair(c_738375,quote_test_91group_91inc_67,&c_738376);
+make_pair(c_738375,quote_test_91group_91inc_67,&c_738376);c_738375.hdr.immutable = 1;
 
-make_pair(c_738384,quote_current_91test_91group,NULL);
+make_pair(c_738384,quote_current_91test_91group,NULL);c_738384.hdr.immutable = 1;
 
-make_pair(c_738387,quote_ERROR,NULL);
+make_pair(c_738387,quote_ERROR,NULL);c_738387.hdr.immutable = 1;
 
-make_pair(c_738386,quote_quote,&c_738387);
+make_pair(c_738386,quote_quote,&c_738387);c_738386.hdr.immutable = 1;
 
-make_pair(c_738385,&c_738386,NULL);
+make_pair(c_738385,&c_738386,NULL);c_738385.hdr.immutable = 1;
 
-make_pair(c_738383,&c_738384,&c_738385);
+make_pair(c_738383,&c_738384,&c_738385);c_738383.hdr.immutable = 1;
 
-make_pair(c_738382,quote_test_91group_91inc_67,&c_738383);
+make_pair(c_738382,quote_test_91group_91inc_67,&c_738383);c_738382.hdr.immutable = 1;
 
-make_pair(c_738381,&c_738382,NULL);
+make_pair(c_738381,&c_738382,NULL);c_738381.hdr.immutable = 1;
 
-make_pair(c_738374,&c_738375,&c_738381);
+make_pair(c_738374,&c_738375,&c_738381);c_738374.hdr.immutable = 1;
 
-make_pair(c_738369,&c_738370,&c_738374);
+make_pair(c_738369,&c_738370,&c_738374);c_738369.hdr.immutable = 1;
 
-make_pair(c_738365,&c_738366,&c_738369);
+make_pair(c_738365,&c_738366,&c_738369);c_738365.hdr.immutable = 1;
 
-make_pair(c_738364,quote__else,&c_738365);
+make_pair(c_738364,quote__else,&c_738365);c_738364.hdr.immutable = 1;
 
-make_pair(c_738363,&c_738364,NULL);
+make_pair(c_738363,&c_738364,NULL);c_738363.hdr.immutable = 1;
 
-make_pair(c_738362,quote_exn,&c_738363);
+make_pair(c_738362,quote_exn,&c_738363);c_738362.hdr.immutable = 1;
 
-make_pair(c_738389,quote__93_93_93,NULL);
+make_pair(c_738389,quote__93_93_93,NULL);c_738389.hdr.immutable = 1;
 
-make_pair(c_738388,quote_body,&c_738389);
+make_pair(c_738388,quote_body,&c_738389);c_738388.hdr.immutable = 1;
 
-make_pair(c_738361,&c_738362,&c_738388);
+make_pair(c_738361,&c_738362,&c_738388);c_738361.hdr.immutable = 1;
 
-make_pair(c_738360,quote_guard,&c_738361);
+make_pair(c_738360,quote_guard,&c_738361);c_738360.hdr.immutable = 1;
 
-make_pair(c_738392,quote_name,NULL);
+make_pair(c_738392,quote_name,NULL);c_738392.hdr.immutable = 1;
 
-make_pair(c_738391,quote_test_91end,&c_738392);
+make_pair(c_738391,quote_test_91end,&c_738392);c_738391.hdr.immutable = 1;
 
-make_pair(c_738395,quote_old_91group,NULL);
+make_pair(c_738395,quote_old_91group,NULL);c_738395.hdr.immutable = 1;
 
-make_pair(c_738394,quote_current_91test_91group,&c_738395);
+make_pair(c_738394,quote_current_91test_91group,&c_738395);c_738394.hdr.immutable = 1;
 
-make_pair(c_738393,&c_738394,NULL);
+make_pair(c_738393,&c_738394,NULL);c_738393.hdr.immutable = 1;
 
-make_pair(c_738390,&c_738391,&c_738393);
+make_pair(c_738390,&c_738391,&c_738393);c_738390.hdr.immutable = 1;
 
-make_pair(c_738359,&c_738360,&c_738390);
+make_pair(c_738359,&c_738360,&c_738390);c_738359.hdr.immutable = 1;
 
-make_pair(c_738356,&c_738357,&c_738359);
+make_pair(c_738356,&c_738357,&c_738359);c_738356.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738154, ((closureN)self_734456)->elements[4], r_732776, &c_738356);; 
 }
 
@@ -16969,115 +16969,115 @@ c_738156.elements[1] = ((closureN)self_734457)->elements[1];
 c_738156.elements[2] = ((closureN)self_734457)->elements[2];
 
 
-make_pair(c_738305,quote_name,NULL);
+make_pair(c_738305,quote_name,NULL);c_738305.hdr.immutable = 1;
 
-make_pair(c_738304,quote_string_127,&c_738305);
+make_pair(c_738304,quote_string_127,&c_738305);c_738304.hdr.immutable = 1;
 
-make_pair(c_738303,&c_738304,NULL);
+make_pair(c_738303,&c_738304,NULL);c_738303.hdr.immutable = 1;
 
-make_pair(c_738302,quote_not,&c_738303);
+make_pair(c_738302,quote_not,&c_738303);c_738302.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738309, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738309, "a name is required, got ", 24, 24);c_738309.hdr.immutable = 1;
 
-make_pair(c_738312,quote_name_91expr,NULL);
+make_pair(c_738312,quote_name_91expr,NULL);c_738312.hdr.immutable = 1;
 
-make_pair(c_738311,quote_quote,&c_738312);
+make_pair(c_738311,quote_quote,&c_738312);c_738311.hdr.immutable = 1;
 
-make_pair(c_738313,quote_name,NULL);
+make_pair(c_738313,quote_name,NULL);c_738313.hdr.immutable = 1;
 
-make_pair(c_738310,&c_738311,&c_738313);
+make_pair(c_738310,&c_738311,&c_738313);c_738310.hdr.immutable = 1;
 
-make_pair(c_738308,&c_738309,&c_738310);
+make_pair(c_738308,&c_738309,&c_738310);c_738308.hdr.immutable = 1;
 
-make_pair(c_738307,quote_error,&c_738308);
+make_pair(c_738307,quote_error,&c_738308);c_738307.hdr.immutable = 1;
 
-make_pair(c_738306,&c_738307,NULL);
+make_pair(c_738306,&c_738307,NULL);c_738306.hdr.immutable = 1;
 
-make_pair(c_738301,&c_738302,&c_738306);
+make_pair(c_738301,&c_738302,&c_738306);c_738301.hdr.immutable = 1;
 
-make_pair(c_738300,quote__if,&c_738301);
+make_pair(c_738300,quote__if,&c_738301);c_738300.hdr.immutable = 1;
 
-make_pair(c_738316,quote_name,NULL);
+make_pair(c_738316,quote_name,NULL);c_738316.hdr.immutable = 1;
 
-make_pair(c_738315,quote_test_91begin,&c_738316);
+make_pair(c_738315,quote_test_91begin,&c_738316);c_738315.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738326, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738326, "error in group outside of tests", 31, 31);c_738326.hdr.immutable = 1;
 
-make_pair(c_738325,&c_738326,NULL);
+make_pair(c_738325,&c_738326,NULL);c_738325.hdr.immutable = 1;
 
-make_pair(c_738324,quote_warning,&c_738325);
+make_pair(c_738324,quote_warning,&c_738325);c_738324.hdr.immutable = 1;
 
-make_pair(c_738331,quote_current_91error_91port,NULL);
+make_pair(c_738331,quote_current_91error_91port,NULL);c_738331.hdr.immutable = 1;
 
-make_pair(c_738330,&c_738331,NULL);
+make_pair(c_738330,&c_738331,NULL);c_738330.hdr.immutable = 1;
 
-make_pair(c_738329,quote_exn,&c_738330);
+make_pair(c_738329,quote_exn,&c_738330);c_738329.hdr.immutable = 1;
 
-make_pair(c_738328,quote_print_91exception,&c_738329);
+make_pair(c_738328,quote_print_91exception,&c_738329);c_738328.hdr.immutable = 1;
 
-make_pair(c_738335,quote_current_91test_91group,NULL);
+make_pair(c_738335,quote_current_91test_91group,NULL);c_738335.hdr.immutable = 1;
 
-make_pair(c_738338,quote_count,NULL);
+make_pair(c_738338,quote_count,NULL);c_738338.hdr.immutable = 1;
 
-make_pair(c_738337,quote_quote,&c_738338);
+make_pair(c_738337,quote_quote,&c_738338);c_738337.hdr.immutable = 1;
 
-make_pair(c_738336,&c_738337,NULL);
+make_pair(c_738336,&c_738337,NULL);c_738336.hdr.immutable = 1;
 
-make_pair(c_738334,&c_738335,&c_738336);
+make_pair(c_738334,&c_738335,&c_738336);c_738334.hdr.immutable = 1;
 
-make_pair(c_738333,quote_test_91group_91inc_67,&c_738334);
+make_pair(c_738333,quote_test_91group_91inc_67,&c_738334);c_738333.hdr.immutable = 1;
 
-make_pair(c_738342,quote_current_91test_91group,NULL);
+make_pair(c_738342,quote_current_91test_91group,NULL);c_738342.hdr.immutable = 1;
 
-make_pair(c_738345,quote_ERROR,NULL);
+make_pair(c_738345,quote_ERROR,NULL);c_738345.hdr.immutable = 1;
 
-make_pair(c_738344,quote_quote,&c_738345);
+make_pair(c_738344,quote_quote,&c_738345);c_738344.hdr.immutable = 1;
 
-make_pair(c_738343,&c_738344,NULL);
+make_pair(c_738343,&c_738344,NULL);c_738343.hdr.immutable = 1;
 
-make_pair(c_738341,&c_738342,&c_738343);
+make_pair(c_738341,&c_738342,&c_738343);c_738341.hdr.immutable = 1;
 
-make_pair(c_738340,quote_test_91group_91inc_67,&c_738341);
+make_pair(c_738340,quote_test_91group_91inc_67,&c_738341);c_738340.hdr.immutable = 1;
 
-make_pair(c_738339,&c_738340,NULL);
+make_pair(c_738339,&c_738340,NULL);c_738339.hdr.immutable = 1;
 
-make_pair(c_738332,&c_738333,&c_738339);
+make_pair(c_738332,&c_738333,&c_738339);c_738332.hdr.immutable = 1;
 
-make_pair(c_738327,&c_738328,&c_738332);
+make_pair(c_738327,&c_738328,&c_738332);c_738327.hdr.immutable = 1;
 
-make_pair(c_738323,&c_738324,&c_738327);
+make_pair(c_738323,&c_738324,&c_738327);c_738323.hdr.immutable = 1;
 
-make_pair(c_738322,quote__else,&c_738323);
+make_pair(c_738322,quote__else,&c_738323);c_738322.hdr.immutable = 1;
 
-make_pair(c_738321,&c_738322,NULL);
+make_pair(c_738321,&c_738322,NULL);c_738321.hdr.immutable = 1;
 
-make_pair(c_738320,quote_exn,&c_738321);
+make_pair(c_738320,quote_exn,&c_738321);c_738320.hdr.immutable = 1;
 
-make_pair(c_738347,quote__93_93_93,NULL);
+make_pair(c_738347,quote__93_93_93,NULL);c_738347.hdr.immutable = 1;
 
-make_pair(c_738346,quote_body,&c_738347);
+make_pair(c_738346,quote_body,&c_738347);c_738346.hdr.immutable = 1;
 
-make_pair(c_738319,&c_738320,&c_738346);
+make_pair(c_738319,&c_738320,&c_738346);c_738319.hdr.immutable = 1;
 
-make_pair(c_738318,quote_guard,&c_738319);
+make_pair(c_738318,quote_guard,&c_738319);c_738318.hdr.immutable = 1;
 
-make_pair(c_738350,quote_name,NULL);
+make_pair(c_738350,quote_name,NULL);c_738350.hdr.immutable = 1;
 
-make_pair(c_738349,quote_test_91end,&c_738350);
+make_pair(c_738349,quote_test_91end,&c_738350);c_738349.hdr.immutable = 1;
 
-make_pair(c_738353,quote_old_91group,NULL);
+make_pair(c_738353,quote_old_91group,NULL);c_738353.hdr.immutable = 1;
 
-make_pair(c_738352,quote_current_91test_91group,&c_738353);
+make_pair(c_738352,quote_current_91test_91group,&c_738353);c_738352.hdr.immutable = 1;
 
-make_pair(c_738351,&c_738352,NULL);
+make_pair(c_738351,&c_738352,NULL);c_738351.hdr.immutable = 1;
 
-make_pair(c_738348,&c_738349,&c_738351);
+make_pair(c_738348,&c_738349,&c_738351);c_738348.hdr.immutable = 1;
 
-make_pair(c_738317,&c_738318,&c_738348);
+make_pair(c_738317,&c_738318,&c_738348);c_738317.hdr.immutable = 1;
 
-make_pair(c_738314,&c_738315,&c_738317);
+make_pair(c_738314,&c_738315,&c_738317);c_738314.hdr.immutable = 1;
 
-make_pair(c_738299,&c_738300,&c_738314);
+make_pair(c_738299,&c_738300,&c_738314);c_738299.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738156, ((closureN)self_734457)->elements[3], r_732773, &c_738299);; 
 }
 
@@ -17096,131 +17096,131 @@ c_738158.elements[0] = ((closureN)self_734458)->elements[0];
 c_738158.elements[1] = ((closureN)self_734458)->elements[1];
 
 
-make_pair(c_738237,quote_name_91expr,NULL);
+make_pair(c_738237,quote_name_91expr,NULL);c_738237.hdr.immutable = 1;
 
-make_pair(c_738236,quote_name,&c_738237);
+make_pair(c_738236,quote_name,&c_738237);c_738236.hdr.immutable = 1;
 
-make_pair(c_738241,quote_current_91test_91group,NULL);
+make_pair(c_738241,quote_current_91test_91group,NULL);c_738241.hdr.immutable = 1;
 
-make_pair(c_738240,&c_738241,NULL);
+make_pair(c_738240,&c_738241,NULL);c_738240.hdr.immutable = 1;
 
-make_pair(c_738239,quote_old_91group,&c_738240);
+make_pair(c_738239,quote_old_91group,&c_738240);c_738239.hdr.immutable = 1;
 
-make_pair(c_738238,&c_738239,NULL);
+make_pair(c_738238,&c_738239,NULL);c_738238.hdr.immutable = 1;
 
-make_pair(c_738235,&c_738236,&c_738238);
+make_pair(c_738235,&c_738236,&c_738238);c_738235.hdr.immutable = 1;
 
-make_pair(c_738248,quote_name,NULL);
+make_pair(c_738248,quote_name,NULL);c_738248.hdr.immutable = 1;
 
-make_pair(c_738247,quote_string_127,&c_738248);
+make_pair(c_738247,quote_string_127,&c_738248);c_738247.hdr.immutable = 1;
 
-make_pair(c_738246,&c_738247,NULL);
+make_pair(c_738246,&c_738247,NULL);c_738246.hdr.immutable = 1;
 
-make_pair(c_738245,quote_not,&c_738246);
+make_pair(c_738245,quote_not,&c_738246);c_738245.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738252, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738252, "a name is required, got ", 24, 24);c_738252.hdr.immutable = 1;
 
-make_pair(c_738255,quote_name_91expr,NULL);
+make_pair(c_738255,quote_name_91expr,NULL);c_738255.hdr.immutable = 1;
 
-make_pair(c_738254,quote_quote,&c_738255);
+make_pair(c_738254,quote_quote,&c_738255);c_738254.hdr.immutable = 1;
 
-make_pair(c_738256,quote_name,NULL);
+make_pair(c_738256,quote_name,NULL);c_738256.hdr.immutable = 1;
 
-make_pair(c_738253,&c_738254,&c_738256);
+make_pair(c_738253,&c_738254,&c_738256);c_738253.hdr.immutable = 1;
 
-make_pair(c_738251,&c_738252,&c_738253);
+make_pair(c_738251,&c_738252,&c_738253);c_738251.hdr.immutable = 1;
 
-make_pair(c_738250,quote_error,&c_738251);
+make_pair(c_738250,quote_error,&c_738251);c_738250.hdr.immutable = 1;
 
-make_pair(c_738249,&c_738250,NULL);
+make_pair(c_738249,&c_738250,NULL);c_738249.hdr.immutable = 1;
 
-make_pair(c_738244,&c_738245,&c_738249);
+make_pair(c_738244,&c_738245,&c_738249);c_738244.hdr.immutable = 1;
 
-make_pair(c_738243,quote__if,&c_738244);
+make_pair(c_738243,quote__if,&c_738244);c_738243.hdr.immutable = 1;
 
-make_pair(c_738259,quote_name,NULL);
+make_pair(c_738259,quote_name,NULL);c_738259.hdr.immutable = 1;
 
-make_pair(c_738258,quote_test_91begin,&c_738259);
+make_pair(c_738258,quote_test_91begin,&c_738259);c_738258.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738269, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738269, "error in group outside of tests", 31, 31);c_738269.hdr.immutable = 1;
 
-make_pair(c_738268,&c_738269,NULL);
+make_pair(c_738268,&c_738269,NULL);c_738268.hdr.immutable = 1;
 
-make_pair(c_738267,quote_warning,&c_738268);
+make_pair(c_738267,quote_warning,&c_738268);c_738267.hdr.immutable = 1;
 
-make_pair(c_738274,quote_current_91error_91port,NULL);
+make_pair(c_738274,quote_current_91error_91port,NULL);c_738274.hdr.immutable = 1;
 
-make_pair(c_738273,&c_738274,NULL);
+make_pair(c_738273,&c_738274,NULL);c_738273.hdr.immutable = 1;
 
-make_pair(c_738272,quote_exn,&c_738273);
+make_pair(c_738272,quote_exn,&c_738273);c_738272.hdr.immutable = 1;
 
-make_pair(c_738271,quote_print_91exception,&c_738272);
+make_pair(c_738271,quote_print_91exception,&c_738272);c_738271.hdr.immutable = 1;
 
-make_pair(c_738278,quote_current_91test_91group,NULL);
+make_pair(c_738278,quote_current_91test_91group,NULL);c_738278.hdr.immutable = 1;
 
-make_pair(c_738281,quote_count,NULL);
+make_pair(c_738281,quote_count,NULL);c_738281.hdr.immutable = 1;
 
-make_pair(c_738280,quote_quote,&c_738281);
+make_pair(c_738280,quote_quote,&c_738281);c_738280.hdr.immutable = 1;
 
-make_pair(c_738279,&c_738280,NULL);
+make_pair(c_738279,&c_738280,NULL);c_738279.hdr.immutable = 1;
 
-make_pair(c_738277,&c_738278,&c_738279);
+make_pair(c_738277,&c_738278,&c_738279);c_738277.hdr.immutable = 1;
 
-make_pair(c_738276,quote_test_91group_91inc_67,&c_738277);
+make_pair(c_738276,quote_test_91group_91inc_67,&c_738277);c_738276.hdr.immutable = 1;
 
-make_pair(c_738285,quote_current_91test_91group,NULL);
+make_pair(c_738285,quote_current_91test_91group,NULL);c_738285.hdr.immutable = 1;
 
-make_pair(c_738288,quote_ERROR,NULL);
+make_pair(c_738288,quote_ERROR,NULL);c_738288.hdr.immutable = 1;
 
-make_pair(c_738287,quote_quote,&c_738288);
+make_pair(c_738287,quote_quote,&c_738288);c_738287.hdr.immutable = 1;
 
-make_pair(c_738286,&c_738287,NULL);
+make_pair(c_738286,&c_738287,NULL);c_738286.hdr.immutable = 1;
 
-make_pair(c_738284,&c_738285,&c_738286);
+make_pair(c_738284,&c_738285,&c_738286);c_738284.hdr.immutable = 1;
 
-make_pair(c_738283,quote_test_91group_91inc_67,&c_738284);
+make_pair(c_738283,quote_test_91group_91inc_67,&c_738284);c_738283.hdr.immutable = 1;
 
-make_pair(c_738282,&c_738283,NULL);
+make_pair(c_738282,&c_738283,NULL);c_738282.hdr.immutable = 1;
 
-make_pair(c_738275,&c_738276,&c_738282);
+make_pair(c_738275,&c_738276,&c_738282);c_738275.hdr.immutable = 1;
 
-make_pair(c_738270,&c_738271,&c_738275);
+make_pair(c_738270,&c_738271,&c_738275);c_738270.hdr.immutable = 1;
 
-make_pair(c_738266,&c_738267,&c_738270);
+make_pair(c_738266,&c_738267,&c_738270);c_738266.hdr.immutable = 1;
 
-make_pair(c_738265,quote__else,&c_738266);
+make_pair(c_738265,quote__else,&c_738266);c_738265.hdr.immutable = 1;
 
-make_pair(c_738264,&c_738265,NULL);
+make_pair(c_738264,&c_738265,NULL);c_738264.hdr.immutable = 1;
 
-make_pair(c_738263,quote_exn,&c_738264);
+make_pair(c_738263,quote_exn,&c_738264);c_738263.hdr.immutable = 1;
 
-make_pair(c_738290,quote__93_93_93,NULL);
+make_pair(c_738290,quote__93_93_93,NULL);c_738290.hdr.immutable = 1;
 
-make_pair(c_738289,quote_body,&c_738290);
+make_pair(c_738289,quote_body,&c_738290);c_738289.hdr.immutable = 1;
 
-make_pair(c_738262,&c_738263,&c_738289);
+make_pair(c_738262,&c_738263,&c_738289);c_738262.hdr.immutable = 1;
 
-make_pair(c_738261,quote_guard,&c_738262);
+make_pair(c_738261,quote_guard,&c_738262);c_738261.hdr.immutable = 1;
 
-make_pair(c_738293,quote_name,NULL);
+make_pair(c_738293,quote_name,NULL);c_738293.hdr.immutable = 1;
 
-make_pair(c_738292,quote_test_91end,&c_738293);
+make_pair(c_738292,quote_test_91end,&c_738293);c_738292.hdr.immutable = 1;
 
-make_pair(c_738296,quote_old_91group,NULL);
+make_pair(c_738296,quote_old_91group,NULL);c_738296.hdr.immutable = 1;
 
-make_pair(c_738295,quote_current_91test_91group,&c_738296);
+make_pair(c_738295,quote_current_91test_91group,&c_738296);c_738295.hdr.immutable = 1;
 
-make_pair(c_738294,&c_738295,NULL);
+make_pair(c_738294,&c_738295,NULL);c_738294.hdr.immutable = 1;
 
-make_pair(c_738291,&c_738292,&c_738294);
+make_pair(c_738291,&c_738292,&c_738294);c_738291.hdr.immutable = 1;
 
-make_pair(c_738260,&c_738261,&c_738291);
+make_pair(c_738260,&c_738261,&c_738291);c_738260.hdr.immutable = 1;
 
-make_pair(c_738257,&c_738258,&c_738260);
+make_pair(c_738257,&c_738258,&c_738260);c_738257.hdr.immutable = 1;
 
-make_pair(c_738242,&c_738243,&c_738257);
+make_pair(c_738242,&c_738243,&c_738257);c_738242.hdr.immutable = 1;
 
-make_pair(c_738234,&c_738235,&c_738242);
+make_pair(c_738234,&c_738235,&c_738242);c_738234.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738158, ((closureN)self_734458)->elements[2], r_732770, &c_738234);; 
 }
 
@@ -17238,133 +17238,133 @@ c_738160.elements = (object *)e_738166;
 c_738160.elements[0] = ((closureN)self_734459)->elements[0];
 
 
-make_pair(c_738172,quote_name_91expr,NULL);
+make_pair(c_738172,quote_name_91expr,NULL);c_738172.hdr.immutable = 1;
 
-make_pair(c_738171,quote_name,&c_738172);
+make_pair(c_738171,quote_name,&c_738172);c_738171.hdr.immutable = 1;
 
-make_pair(c_738176,quote_current_91test_91group,NULL);
+make_pair(c_738176,quote_current_91test_91group,NULL);c_738176.hdr.immutable = 1;
 
-make_pair(c_738175,&c_738176,NULL);
+make_pair(c_738175,&c_738176,NULL);c_738175.hdr.immutable = 1;
 
-make_pair(c_738174,quote_old_91group,&c_738175);
+make_pair(c_738174,quote_old_91group,&c_738175);c_738174.hdr.immutable = 1;
 
-make_pair(c_738173,&c_738174,NULL);
+make_pair(c_738173,&c_738174,NULL);c_738173.hdr.immutable = 1;
 
-make_pair(c_738170,&c_738171,&c_738173);
+make_pair(c_738170,&c_738171,&c_738173);c_738170.hdr.immutable = 1;
 
-make_pair(c_738183,quote_name,NULL);
+make_pair(c_738183,quote_name,NULL);c_738183.hdr.immutable = 1;
 
-make_pair(c_738182,quote_string_127,&c_738183);
+make_pair(c_738182,quote_string_127,&c_738183);c_738182.hdr.immutable = 1;
 
-make_pair(c_738181,&c_738182,NULL);
+make_pair(c_738181,&c_738182,NULL);c_738181.hdr.immutable = 1;
 
-make_pair(c_738180,quote_not,&c_738181);
+make_pair(c_738180,quote_not,&c_738181);c_738180.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738187, "a name is required, got ", 24, 24);
+make_utf8_string_with_len(c_738187, "a name is required, got ", 24, 24);c_738187.hdr.immutable = 1;
 
-make_pair(c_738190,quote_name_91expr,NULL);
+make_pair(c_738190,quote_name_91expr,NULL);c_738190.hdr.immutable = 1;
 
-make_pair(c_738189,quote_quote,&c_738190);
+make_pair(c_738189,quote_quote,&c_738190);c_738189.hdr.immutable = 1;
 
-make_pair(c_738191,quote_name,NULL);
+make_pair(c_738191,quote_name,NULL);c_738191.hdr.immutable = 1;
 
-make_pair(c_738188,&c_738189,&c_738191);
+make_pair(c_738188,&c_738189,&c_738191);c_738188.hdr.immutable = 1;
 
-make_pair(c_738186,&c_738187,&c_738188);
+make_pair(c_738186,&c_738187,&c_738188);c_738186.hdr.immutable = 1;
 
-make_pair(c_738185,quote_error,&c_738186);
+make_pair(c_738185,quote_error,&c_738186);c_738185.hdr.immutable = 1;
 
-make_pair(c_738184,&c_738185,NULL);
+make_pair(c_738184,&c_738185,NULL);c_738184.hdr.immutable = 1;
 
-make_pair(c_738179,&c_738180,&c_738184);
+make_pair(c_738179,&c_738180,&c_738184);c_738179.hdr.immutable = 1;
 
-make_pair(c_738178,quote__if,&c_738179);
+make_pair(c_738178,quote__if,&c_738179);c_738178.hdr.immutable = 1;
 
-make_pair(c_738194,quote_name,NULL);
+make_pair(c_738194,quote_name,NULL);c_738194.hdr.immutable = 1;
 
-make_pair(c_738193,quote_test_91begin,&c_738194);
+make_pair(c_738193,quote_test_91begin,&c_738194);c_738193.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_738204, "error in group outside of tests", 31, 31);
+make_utf8_string_with_len(c_738204, "error in group outside of tests", 31, 31);c_738204.hdr.immutable = 1;
 
-make_pair(c_738203,&c_738204,NULL);
+make_pair(c_738203,&c_738204,NULL);c_738203.hdr.immutable = 1;
 
-make_pair(c_738202,quote_warning,&c_738203);
+make_pair(c_738202,quote_warning,&c_738203);c_738202.hdr.immutable = 1;
 
-make_pair(c_738209,quote_current_91error_91port,NULL);
+make_pair(c_738209,quote_current_91error_91port,NULL);c_738209.hdr.immutable = 1;
 
-make_pair(c_738208,&c_738209,NULL);
+make_pair(c_738208,&c_738209,NULL);c_738208.hdr.immutable = 1;
 
-make_pair(c_738207,quote_exn,&c_738208);
+make_pair(c_738207,quote_exn,&c_738208);c_738207.hdr.immutable = 1;
 
-make_pair(c_738206,quote_print_91exception,&c_738207);
+make_pair(c_738206,quote_print_91exception,&c_738207);c_738206.hdr.immutable = 1;
 
-make_pair(c_738213,quote_current_91test_91group,NULL);
+make_pair(c_738213,quote_current_91test_91group,NULL);c_738213.hdr.immutable = 1;
 
-make_pair(c_738216,quote_count,NULL);
+make_pair(c_738216,quote_count,NULL);c_738216.hdr.immutable = 1;
 
-make_pair(c_738215,quote_quote,&c_738216);
+make_pair(c_738215,quote_quote,&c_738216);c_738215.hdr.immutable = 1;
 
-make_pair(c_738214,&c_738215,NULL);
+make_pair(c_738214,&c_738215,NULL);c_738214.hdr.immutable = 1;
 
-make_pair(c_738212,&c_738213,&c_738214);
+make_pair(c_738212,&c_738213,&c_738214);c_738212.hdr.immutable = 1;
 
-make_pair(c_738211,quote_test_91group_91inc_67,&c_738212);
+make_pair(c_738211,quote_test_91group_91inc_67,&c_738212);c_738211.hdr.immutable = 1;
 
-make_pair(c_738220,quote_current_91test_91group,NULL);
+make_pair(c_738220,quote_current_91test_91group,NULL);c_738220.hdr.immutable = 1;
 
-make_pair(c_738223,quote_ERROR,NULL);
+make_pair(c_738223,quote_ERROR,NULL);c_738223.hdr.immutable = 1;
 
-make_pair(c_738222,quote_quote,&c_738223);
+make_pair(c_738222,quote_quote,&c_738223);c_738222.hdr.immutable = 1;
 
-make_pair(c_738221,&c_738222,NULL);
+make_pair(c_738221,&c_738222,NULL);c_738221.hdr.immutable = 1;
 
-make_pair(c_738219,&c_738220,&c_738221);
+make_pair(c_738219,&c_738220,&c_738221);c_738219.hdr.immutable = 1;
 
-make_pair(c_738218,quote_test_91group_91inc_67,&c_738219);
+make_pair(c_738218,quote_test_91group_91inc_67,&c_738219);c_738218.hdr.immutable = 1;
 
-make_pair(c_738217,&c_738218,NULL);
+make_pair(c_738217,&c_738218,NULL);c_738217.hdr.immutable = 1;
 
-make_pair(c_738210,&c_738211,&c_738217);
+make_pair(c_738210,&c_738211,&c_738217);c_738210.hdr.immutable = 1;
 
-make_pair(c_738205,&c_738206,&c_738210);
+make_pair(c_738205,&c_738206,&c_738210);c_738205.hdr.immutable = 1;
 
-make_pair(c_738201,&c_738202,&c_738205);
+make_pair(c_738201,&c_738202,&c_738205);c_738201.hdr.immutable = 1;
 
-make_pair(c_738200,quote__else,&c_738201);
+make_pair(c_738200,quote__else,&c_738201);c_738200.hdr.immutable = 1;
 
-make_pair(c_738199,&c_738200,NULL);
+make_pair(c_738199,&c_738200,NULL);c_738199.hdr.immutable = 1;
 
-make_pair(c_738198,quote_exn,&c_738199);
+make_pair(c_738198,quote_exn,&c_738199);c_738198.hdr.immutable = 1;
 
-make_pair(c_738225,quote__93_93_93,NULL);
+make_pair(c_738225,quote__93_93_93,NULL);c_738225.hdr.immutable = 1;
 
-make_pair(c_738224,quote_body,&c_738225);
+make_pair(c_738224,quote_body,&c_738225);c_738224.hdr.immutable = 1;
 
-make_pair(c_738197,&c_738198,&c_738224);
+make_pair(c_738197,&c_738198,&c_738224);c_738197.hdr.immutable = 1;
 
-make_pair(c_738196,quote_guard,&c_738197);
+make_pair(c_738196,quote_guard,&c_738197);c_738196.hdr.immutable = 1;
 
-make_pair(c_738228,quote_name,NULL);
+make_pair(c_738228,quote_name,NULL);c_738228.hdr.immutable = 1;
 
-make_pair(c_738227,quote_test_91end,&c_738228);
+make_pair(c_738227,quote_test_91end,&c_738228);c_738227.hdr.immutable = 1;
 
-make_pair(c_738231,quote_old_91group,NULL);
+make_pair(c_738231,quote_old_91group,NULL);c_738231.hdr.immutable = 1;
 
-make_pair(c_738230,quote_current_91test_91group,&c_738231);
+make_pair(c_738230,quote_current_91test_91group,&c_738231);c_738230.hdr.immutable = 1;
 
-make_pair(c_738229,&c_738230,NULL);
+make_pair(c_738229,&c_738230,NULL);c_738229.hdr.immutable = 1;
 
-make_pair(c_738226,&c_738227,&c_738229);
+make_pair(c_738226,&c_738227,&c_738229);c_738226.hdr.immutable = 1;
 
-make_pair(c_738195,&c_738196,&c_738226);
+make_pair(c_738195,&c_738196,&c_738226);c_738195.hdr.immutable = 1;
 
-make_pair(c_738192,&c_738193,&c_738195);
+make_pair(c_738192,&c_738193,&c_738195);c_738192.hdr.immutable = 1;
 
-make_pair(c_738177,&c_738178,&c_738192);
+make_pair(c_738177,&c_738178,&c_738192);c_738177.hdr.immutable = 1;
 
-make_pair(c_738169,&c_738170,&c_738177);
+make_pair(c_738169,&c_738170,&c_738177);c_738169.hdr.immutable = 1;
 
-make_pair(c_738168,quote_let,&c_738169);
+make_pair(c_738168,quote_let,&c_738169);c_738168.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_738160, ((closureN)self_734459)->elements[1], r_732767, &c_738168);; 
 }
 
@@ -17823,7 +17823,7 @@ c_737402.elements[6] = ((closureN)self_734325)->elements[5];
 
 
 
-make_pair(c_737830,quote_expect,NULL);
+make_pair(c_737830,quote_expect,NULL);c_737830.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737402, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734325)->elements[4]))), NULL, &c_737830);; 
 }
 
@@ -17847,9 +17847,9 @@ c_737404.elements[5] = ((closureN)self_734326)->elements[5];
 c_737404.elements[6] = ((closureN)self_734326)->elements[6];
 
 
-make_pair(c_737821,quote_expect,NULL);
+make_pair(c_737821,quote_expect,NULL);c_737821.hdr.immutable = 1;
 
-make_pair(c_737820,NULL,&c_737821);
+make_pair(c_737820,NULL,&c_737821);c_737820.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737404, NULL, r_732733, &c_737820);; 
 }
 
@@ -17872,11 +17872,11 @@ c_737406.elements[4] = ((closureN)self_734327)->elements[5];
 c_737406.elements[5] = ((closureN)self_734327)->elements[6];
 
 
-make_pair(c_737818,quote_expect,NULL);
+make_pair(c_737818,quote_expect,NULL);c_737818.hdr.immutable = 1;
 
-make_pair(c_737817,NULL,&c_737818);
+make_pair(c_737817,NULL,&c_737818);c_737817.hdr.immutable = 1;
 
-make_pair(c_737816,quote_lambda,&c_737817);
+make_pair(c_737816,quote_lambda,&c_737817);c_737816.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737406, ((closureN)self_734327)->elements[3], r_732730, &c_737816);; 
 }
 
@@ -17931,7 +17931,7 @@ c_737411.elements[7] = ((closureN)self_734329)->elements[6];
 
 
 
-make_pair(c_737812,quote_expr,NULL);
+make_pair(c_737812,quote_expr,NULL);c_737812.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737411, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734329)->elements[5])))), NULL, &c_737812);; 
 }
 
@@ -17956,9 +17956,9 @@ c_737413.elements[6] = ((closureN)self_734330)->elements[6];
 c_737413.elements[7] = ((closureN)self_734330)->elements[7];
 
 
-make_pair(c_737801,quote_expr,NULL);
+make_pair(c_737801,quote_expr,NULL);c_737801.hdr.immutable = 1;
 
-make_pair(c_737800,NULL,&c_737801);
+make_pair(c_737800,NULL,&c_737801);c_737800.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737413, NULL, r_732724, &c_737800);; 
 }
 
@@ -17982,11 +17982,11 @@ c_737415.elements[5] = ((closureN)self_734331)->elements[6];
 c_737415.elements[6] = ((closureN)self_734331)->elements[7];
 
 
-make_pair(c_737798,quote_expr,NULL);
+make_pair(c_737798,quote_expr,NULL);c_737798.hdr.immutable = 1;
 
-make_pair(c_737797,NULL,&c_737798);
+make_pair(c_737797,NULL,&c_737798);c_737797.hdr.immutable = 1;
 
-make_pair(c_737796,quote_lambda,&c_737797);
+make_pair(c_737796,quote_lambda,&c_737797);c_737796.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737415, ((closureN)self_734331)->elements[4], r_732721, &c_737796);; 
 }
 
@@ -18090,7 +18090,7 @@ c_737426.elements[10] = ((closureN)self_734335)->elements[9];
 
 
 
-make_pair(c_737790,quote_n,NULL);
+make_pair(c_737790,quote_n,NULL);c_737790.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737426, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734335)->elements[8])), NULL, &c_737790);; 
 }
 
@@ -18117,9 +18117,9 @@ c_737428.elements[8] = ((closureN)self_734336)->elements[9];
 c_737428.elements[9] = ((closureN)self_734336)->elements[10];
 
 
-make_pair(c_737783,quote_n,NULL);
+make_pair(c_737783,quote_n,NULL);c_737783.hdr.immutable = 1;
 
-make_pair(c_737782,quote_unquote,&c_737783);
+make_pair(c_737782,quote_unquote,&c_737783);c_737782.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737428, ((closureN)self_734336)->elements[7], r_732713, &c_737782);; 
 }
 
@@ -18145,11 +18145,11 @@ c_737430.elements[7] = ((closureN)self_734337)->elements[8];
 c_737430.elements[8] = ((closureN)self_734337)->elements[9];
 
 
-make_pair(c_737779,quote_n,NULL);
+make_pair(c_737779,quote_n,NULL);c_737779.hdr.immutable = 1;
 
-make_pair(c_737778,quote_unquote,&c_737779);
+make_pair(c_737778,quote_unquote,&c_737779);c_737778.hdr.immutable = 1;
 
-make_pair(c_737777,quote_name,&c_737778);
+make_pair(c_737777,quote_name,&c_737778);c_737777.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737430, ((closureN)self_734337)->elements[6], r_732710, &c_737777);; 
 }
 
@@ -18209,7 +18209,7 @@ c_737435.elements[9] = ((closureN)self_734339)->elements[9];
 
 
 
-make_pair(c_737773,quote_source,quote_expr);
+make_pair(c_737773,quote_source,quote_expr);c_737773.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737435, r_732706, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734339)->elements[8])))), &c_737773);; 
 }
 
@@ -18265,11 +18265,11 @@ c_737440.elements[10] = ((closureN)self_734341)->elements[10];
 
 
 
-make_pair(c_737761,quote__93_93_93,NULL);
+make_pair(c_737761,quote__93_93_93,NULL);c_737761.hdr.immutable = 1;
 
-make_pair(c_737760,quote_vars,&c_737761);
+make_pair(c_737760,quote_vars,&c_737761);c_737760.hdr.immutable = 1;
 
-make_pair(c_737759,quote_var_91names,&c_737760);
+make_pair(c_737759,quote_var_91names,&c_737760);c_737759.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737440, r_732703, Cyc_car(data, ((closureN)self_734341)->elements[9]), &c_737759);; 
 }
 
@@ -18383,11 +18383,11 @@ c_737451.elements[11] = ((closureN)self_734345)->elements[12];
 
 
 
-make_pair(c_737751,quote__93_93_93,NULL);
+make_pair(c_737751,quote__93_93_93,NULL);c_737751.hdr.immutable = 1;
 
-make_pair(c_737750,quote_vars,&c_737751);
+make_pair(c_737750,quote_vars,&c_737751);c_737750.hdr.immutable = 1;
 
-make_pair(c_737749,quote__list,&c_737750);
+make_pair(c_737749,quote__list,&c_737750);c_737749.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737451, r_732698, Cyc_car(data, ((closureN)self_734345)->elements[11]), &c_737749);; 
 }
 
@@ -18416,13 +18416,13 @@ c_737453.elements[10] = ((closureN)self_734346)->elements[10];
 c_737453.elements[11] = ((closureN)self_734346)->elements[11];
 
 
-make_pair(c_737744,quote__93_93_93,NULL);
+make_pair(c_737744,quote__93_93_93,NULL);c_737744.hdr.immutable = 1;
 
-make_pair(c_737743,quote_vars,&c_737744);
+make_pair(c_737743,quote_vars,&c_737744);c_737743.hdr.immutable = 1;
 
-make_pair(c_737742,quote__list,&c_737743);
+make_pair(c_737742,quote__list,&c_737743);c_737742.hdr.immutable = 1;
 
-make_pair(c_737741,&c_737742,NULL);
+make_pair(c_737741,&c_737742,NULL);c_737741.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737453, r_732695, NULL, &c_737741);; 
 }
 
@@ -18450,15 +18450,15 @@ c_737455.elements[9] = ((closureN)self_734347)->elements[9];
 c_737455.elements[10] = ((closureN)self_734347)->elements[11];
 
 
-make_pair(c_737739,quote__93_93_93,NULL);
+make_pair(c_737739,quote__93_93_93,NULL);c_737739.hdr.immutable = 1;
 
-make_pair(c_737738,quote_vars,&c_737739);
+make_pair(c_737738,quote_vars,&c_737739);c_737738.hdr.immutable = 1;
 
-make_pair(c_737737,quote__list,&c_737738);
+make_pair(c_737737,quote__list,&c_737738);c_737737.hdr.immutable = 1;
 
-make_pair(c_737736,&c_737737,NULL);
+make_pair(c_737736,&c_737737,NULL);c_737736.hdr.immutable = 1;
 
-make_pair(c_737735,quote_unquote,&c_737736);
+make_pair(c_737735,quote_unquote,&c_737736);c_737735.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737455, ((closureN)self_734347)->elements[10], r_732693, &c_737735);; 
 }
 
@@ -18485,17 +18485,17 @@ c_737457.elements[8] = ((closureN)self_734348)->elements[8];
 c_737457.elements[9] = ((closureN)self_734348)->elements[10];
 
 
-make_pair(c_737732,quote__93_93_93,NULL);
+make_pair(c_737732,quote__93_93_93,NULL);c_737732.hdr.immutable = 1;
 
-make_pair(c_737731,quote_vars,&c_737732);
+make_pair(c_737731,quote_vars,&c_737732);c_737731.hdr.immutable = 1;
 
-make_pair(c_737730,quote__list,&c_737731);
+make_pair(c_737730,quote__list,&c_737731);c_737730.hdr.immutable = 1;
 
-make_pair(c_737729,&c_737730,NULL);
+make_pair(c_737729,&c_737730,NULL);c_737729.hdr.immutable = 1;
 
-make_pair(c_737728,quote_unquote,&c_737729);
+make_pair(c_737728,quote_unquote,&c_737729);c_737728.hdr.immutable = 1;
 
-make_pair(c_737727,quote_var_91values,&c_737728);
+make_pair(c_737727,quote_var_91values,&c_737728);c_737727.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737457, ((closureN)self_734348)->elements[9], r_732690, &c_737727);; 
 }
 
@@ -18527,7 +18527,7 @@ return_closcall4(data,  __glo_map_scheme_base,  &c_737459, &c_737720, ((closureN
 
 static void __lambda_319(void *data, int argc, object self_734361, object k_732687, object key_73713_73750_731720, object val_73714_73751_731721) {
   
-make_pair(c_737722,quote_key,quote_val);
+make_pair(c_737722,quote_key,quote_val);c_737722.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  k_732687, key_73713_73750_731720, val_73714_73751_731721, &c_737722);; 
 }
 
@@ -18552,25 +18552,25 @@ c_737461.elements[6] = ((closureN)self_734350)->elements[6];
 c_737461.elements[7] = ((closureN)self_734350)->elements[7];
 
 
-make_pair(c_737715,quote__93_93_93,NULL);
+make_pair(c_737715,quote__93_93_93,NULL);c_737715.hdr.immutable = 1;
 
-make_pair(c_737714,quote_vars,&c_737715);
+make_pair(c_737714,quote_vars,&c_737715);c_737714.hdr.immutable = 1;
 
-make_pair(c_737713,quote__list,&c_737714);
+make_pair(c_737713,quote__list,&c_737714);c_737713.hdr.immutable = 1;
 
-make_pair(c_737712,&c_737713,NULL);
+make_pair(c_737712,&c_737713,NULL);c_737712.hdr.immutable = 1;
 
-make_pair(c_737711,quote_unquote,&c_737712);
+make_pair(c_737711,quote_unquote,&c_737712);c_737711.hdr.immutable = 1;
 
-make_pair(c_737710,quote_var_91values,&c_737711);
+make_pair(c_737710,quote_var_91values,&c_737711);c_737710.hdr.immutable = 1;
 
-make_pair(c_737717,quote_key,quote_val);
+make_pair(c_737717,quote_key,quote_val);c_737717.hdr.immutable = 1;
 
-make_pair(c_737718,quote__93_93_93,NULL);
+make_pair(c_737718,quote__93_93_93,NULL);c_737718.hdr.immutable = 1;
 
-make_pair(c_737716,&c_737717,&c_737718);
+make_pair(c_737716,&c_737717,&c_737718);c_737716.hdr.immutable = 1;
 
-make_pair(c_737709,&c_737710,&c_737716);
+make_pair(c_737709,&c_737710,&c_737716);c_737709.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737461, ((closureN)self_734350)->elements[8], r_732684, &c_737709);; 
 }
 
@@ -18594,33 +18594,33 @@ c_737463.elements[5] = ((closureN)self_734351)->elements[5];
 c_737463.elements[6] = ((closureN)self_734351)->elements[6];
 
 
-make_pair(c_737696,quote__93_93_93,NULL);
+make_pair(c_737696,quote__93_93_93,NULL);c_737696.hdr.immutable = 1;
 
-make_pair(c_737695,quote_vars,&c_737696);
+make_pair(c_737695,quote_vars,&c_737696);c_737695.hdr.immutable = 1;
 
-make_pair(c_737694,quote_var_91names,&c_737695);
+make_pair(c_737694,quote_var_91names,&c_737695);c_737694.hdr.immutable = 1;
 
-make_pair(c_737703,quote__93_93_93,NULL);
+make_pair(c_737703,quote__93_93_93,NULL);c_737703.hdr.immutable = 1;
 
-make_pair(c_737702,quote_vars,&c_737703);
+make_pair(c_737702,quote_vars,&c_737703);c_737702.hdr.immutable = 1;
 
-make_pair(c_737701,quote__list,&c_737702);
+make_pair(c_737701,quote__list,&c_737702);c_737701.hdr.immutable = 1;
 
-make_pair(c_737700,&c_737701,NULL);
+make_pair(c_737700,&c_737701,NULL);c_737700.hdr.immutable = 1;
 
-make_pair(c_737699,quote_unquote,&c_737700);
+make_pair(c_737699,quote_unquote,&c_737700);c_737699.hdr.immutable = 1;
 
-make_pair(c_737698,quote_var_91values,&c_737699);
+make_pair(c_737698,quote_var_91values,&c_737699);c_737698.hdr.immutable = 1;
 
-make_pair(c_737705,quote_key,quote_val);
+make_pair(c_737705,quote_key,quote_val);c_737705.hdr.immutable = 1;
 
-make_pair(c_737706,quote__93_93_93,NULL);
+make_pair(c_737706,quote__93_93_93,NULL);c_737706.hdr.immutable = 1;
 
-make_pair(c_737704,&c_737705,&c_737706);
+make_pair(c_737704,&c_737705,&c_737706);c_737704.hdr.immutable = 1;
 
-make_pair(c_737697,&c_737698,&c_737704);
+make_pair(c_737697,&c_737698,&c_737704);c_737697.hdr.immutable = 1;
 
-make_pair(c_737693,&c_737694,&c_737697);
+make_pair(c_737693,&c_737694,&c_737697);c_737693.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737463, ((closureN)self_734351)->elements[7], r_732681, &c_737693);; 
 }
 
@@ -18643,37 +18643,37 @@ c_737465.elements[4] = ((closureN)self_734352)->elements[4];
 c_737465.elements[5] = ((closureN)self_734352)->elements[5];
 
 
-make_pair(c_737676,quote_source,quote_expr);
+make_pair(c_737676,quote_source,quote_expr);c_737676.hdr.immutable = 1;
 
-make_pair(c_737680,quote__93_93_93,NULL);
+make_pair(c_737680,quote__93_93_93,NULL);c_737680.hdr.immutable = 1;
 
-make_pair(c_737679,quote_vars,&c_737680);
+make_pair(c_737679,quote_vars,&c_737680);c_737679.hdr.immutable = 1;
 
-make_pair(c_737678,quote_var_91names,&c_737679);
+make_pair(c_737678,quote_var_91names,&c_737679);c_737678.hdr.immutable = 1;
 
-make_pair(c_737687,quote__93_93_93,NULL);
+make_pair(c_737687,quote__93_93_93,NULL);c_737687.hdr.immutable = 1;
 
-make_pair(c_737686,quote_vars,&c_737687);
+make_pair(c_737686,quote_vars,&c_737687);c_737686.hdr.immutable = 1;
 
-make_pair(c_737685,quote__list,&c_737686);
+make_pair(c_737685,quote__list,&c_737686);c_737685.hdr.immutable = 1;
 
-make_pair(c_737684,&c_737685,NULL);
+make_pair(c_737684,&c_737685,NULL);c_737684.hdr.immutable = 1;
 
-make_pair(c_737683,quote_unquote,&c_737684);
+make_pair(c_737683,quote_unquote,&c_737684);c_737683.hdr.immutable = 1;
 
-make_pair(c_737682,quote_var_91values,&c_737683);
+make_pair(c_737682,quote_var_91values,&c_737683);c_737682.hdr.immutable = 1;
 
-make_pair(c_737689,quote_key,quote_val);
+make_pair(c_737689,quote_key,quote_val);c_737689.hdr.immutable = 1;
 
-make_pair(c_737690,quote__93_93_93,NULL);
+make_pair(c_737690,quote__93_93_93,NULL);c_737690.hdr.immutable = 1;
 
-make_pair(c_737688,&c_737689,&c_737690);
+make_pair(c_737688,&c_737689,&c_737690);c_737688.hdr.immutable = 1;
 
-make_pair(c_737681,&c_737682,&c_737688);
+make_pair(c_737681,&c_737682,&c_737688);c_737681.hdr.immutable = 1;
 
-make_pair(c_737677,&c_737678,&c_737681);
+make_pair(c_737677,&c_737678,&c_737681);c_737677.hdr.immutable = 1;
 
-make_pair(c_737675,&c_737676,&c_737677);
+make_pair(c_737675,&c_737676,&c_737677);c_737675.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737465, ((closureN)self_734352)->elements[6], r_732678, &c_737675);; 
 }
 
@@ -18695,45 +18695,45 @@ c_737467.elements[3] = ((closureN)self_734353)->elements[3];
 c_737467.elements[4] = ((closureN)self_734353)->elements[4];
 
 
-make_pair(c_737656,quote_n,NULL);
+make_pair(c_737656,quote_n,NULL);c_737656.hdr.immutable = 1;
 
-make_pair(c_737655,quote_unquote,&c_737656);
+make_pair(c_737655,quote_unquote,&c_737656);c_737655.hdr.immutable = 1;
 
-make_pair(c_737654,quote_name,&c_737655);
+make_pair(c_737654,quote_name,&c_737655);c_737654.hdr.immutable = 1;
 
-make_pair(c_737658,quote_source,quote_expr);
+make_pair(c_737658,quote_source,quote_expr);c_737658.hdr.immutable = 1;
 
-make_pair(c_737662,quote__93_93_93,NULL);
+make_pair(c_737662,quote__93_93_93,NULL);c_737662.hdr.immutable = 1;
 
-make_pair(c_737661,quote_vars,&c_737662);
+make_pair(c_737661,quote_vars,&c_737662);c_737661.hdr.immutable = 1;
 
-make_pair(c_737660,quote_var_91names,&c_737661);
+make_pair(c_737660,quote_var_91names,&c_737661);c_737660.hdr.immutable = 1;
 
-make_pair(c_737669,quote__93_93_93,NULL);
+make_pair(c_737669,quote__93_93_93,NULL);c_737669.hdr.immutable = 1;
 
-make_pair(c_737668,quote_vars,&c_737669);
+make_pair(c_737668,quote_vars,&c_737669);c_737668.hdr.immutable = 1;
 
-make_pair(c_737667,quote__list,&c_737668);
+make_pair(c_737667,quote__list,&c_737668);c_737667.hdr.immutable = 1;
 
-make_pair(c_737666,&c_737667,NULL);
+make_pair(c_737666,&c_737667,NULL);c_737666.hdr.immutable = 1;
 
-make_pair(c_737665,quote_unquote,&c_737666);
+make_pair(c_737665,quote_unquote,&c_737666);c_737665.hdr.immutable = 1;
 
-make_pair(c_737664,quote_var_91values,&c_737665);
+make_pair(c_737664,quote_var_91values,&c_737665);c_737664.hdr.immutable = 1;
 
-make_pair(c_737671,quote_key,quote_val);
+make_pair(c_737671,quote_key,quote_val);c_737671.hdr.immutable = 1;
 
-make_pair(c_737672,quote__93_93_93,NULL);
+make_pair(c_737672,quote__93_93_93,NULL);c_737672.hdr.immutable = 1;
 
-make_pair(c_737670,&c_737671,&c_737672);
+make_pair(c_737670,&c_737671,&c_737672);c_737670.hdr.immutable = 1;
 
-make_pair(c_737663,&c_737664,&c_737670);
+make_pair(c_737663,&c_737664,&c_737670);c_737663.hdr.immutable = 1;
 
-make_pair(c_737659,&c_737660,&c_737663);
+make_pair(c_737659,&c_737660,&c_737663);c_737659.hdr.immutable = 1;
 
-make_pair(c_737657,&c_737658,&c_737659);
+make_pair(c_737657,&c_737658,&c_737659);c_737657.hdr.immutable = 1;
 
-make_pair(c_737653,&c_737654,&c_737657);
+make_pair(c_737653,&c_737654,&c_737657);c_737653.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737467, ((closureN)self_734353)->elements[5], r_732675, &c_737653);; 
 }
 
@@ -18755,47 +18755,47 @@ c_737469.elements[3] = ((closureN)self_734354)->elements[3];
 c_737469.elements[4] = ((closureN)self_734354)->elements[4];
 
 
-make_pair(c_737634,quote_n,NULL);
+make_pair(c_737634,quote_n,NULL);c_737634.hdr.immutable = 1;
 
-make_pair(c_737633,quote_unquote,&c_737634);
+make_pair(c_737633,quote_unquote,&c_737634);c_737633.hdr.immutable = 1;
 
-make_pair(c_737632,quote_name,&c_737633);
+make_pair(c_737632,quote_name,&c_737633);c_737632.hdr.immutable = 1;
 
-make_pair(c_737636,quote_source,quote_expr);
+make_pair(c_737636,quote_source,quote_expr);c_737636.hdr.immutable = 1;
 
-make_pair(c_737640,quote__93_93_93,NULL);
+make_pair(c_737640,quote__93_93_93,NULL);c_737640.hdr.immutable = 1;
 
-make_pair(c_737639,quote_vars,&c_737640);
+make_pair(c_737639,quote_vars,&c_737640);c_737639.hdr.immutable = 1;
 
-make_pair(c_737638,quote_var_91names,&c_737639);
+make_pair(c_737638,quote_var_91names,&c_737639);c_737638.hdr.immutable = 1;
 
-make_pair(c_737647,quote__93_93_93,NULL);
+make_pair(c_737647,quote__93_93_93,NULL);c_737647.hdr.immutable = 1;
 
-make_pair(c_737646,quote_vars,&c_737647);
+make_pair(c_737646,quote_vars,&c_737647);c_737646.hdr.immutable = 1;
 
-make_pair(c_737645,quote__list,&c_737646);
+make_pair(c_737645,quote__list,&c_737646);c_737645.hdr.immutable = 1;
 
-make_pair(c_737644,&c_737645,NULL);
+make_pair(c_737644,&c_737645,NULL);c_737644.hdr.immutable = 1;
 
-make_pair(c_737643,quote_unquote,&c_737644);
+make_pair(c_737643,quote_unquote,&c_737644);c_737643.hdr.immutable = 1;
 
-make_pair(c_737642,quote_var_91values,&c_737643);
+make_pair(c_737642,quote_var_91values,&c_737643);c_737642.hdr.immutable = 1;
 
-make_pair(c_737649,quote_key,quote_val);
+make_pair(c_737649,quote_key,quote_val);c_737649.hdr.immutable = 1;
 
-make_pair(c_737650,quote__93_93_93,NULL);
+make_pair(c_737650,quote__93_93_93,NULL);c_737650.hdr.immutable = 1;
 
-make_pair(c_737648,&c_737649,&c_737650);
+make_pair(c_737648,&c_737649,&c_737650);c_737648.hdr.immutable = 1;
 
-make_pair(c_737641,&c_737642,&c_737648);
+make_pair(c_737641,&c_737642,&c_737648);c_737641.hdr.immutable = 1;
 
-make_pair(c_737637,&c_737638,&c_737641);
+make_pair(c_737637,&c_737638,&c_737641);c_737637.hdr.immutable = 1;
 
-make_pair(c_737635,&c_737636,&c_737637);
+make_pair(c_737635,&c_737636,&c_737637);c_737635.hdr.immutable = 1;
 
-make_pair(c_737631,&c_737632,&c_737635);
+make_pair(c_737631,&c_737632,&c_737635);c_737631.hdr.immutable = 1;
 
-make_pair(c_737630,&c_737631,NULL);
+make_pair(c_737630,&c_737631,NULL);c_737630.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737469, r_732671, NULL, &c_737630);; 
 }
 
@@ -18816,49 +18816,49 @@ c_737471.elements[2] = ((closureN)self_734355)->elements[2];
 c_737471.elements[3] = ((closureN)self_734355)->elements[3];
 
 
-make_pair(c_737612,quote_n,NULL);
+make_pair(c_737612,quote_n,NULL);c_737612.hdr.immutable = 1;
 
-make_pair(c_737611,quote_unquote,&c_737612);
+make_pair(c_737611,quote_unquote,&c_737612);c_737611.hdr.immutable = 1;
 
-make_pair(c_737610,quote_name,&c_737611);
+make_pair(c_737610,quote_name,&c_737611);c_737610.hdr.immutable = 1;
 
-make_pair(c_737614,quote_source,quote_expr);
+make_pair(c_737614,quote_source,quote_expr);c_737614.hdr.immutable = 1;
 
-make_pair(c_737618,quote__93_93_93,NULL);
+make_pair(c_737618,quote__93_93_93,NULL);c_737618.hdr.immutable = 1;
 
-make_pair(c_737617,quote_vars,&c_737618);
+make_pair(c_737617,quote_vars,&c_737618);c_737617.hdr.immutable = 1;
 
-make_pair(c_737616,quote_var_91names,&c_737617);
+make_pair(c_737616,quote_var_91names,&c_737617);c_737616.hdr.immutable = 1;
 
-make_pair(c_737625,quote__93_93_93,NULL);
+make_pair(c_737625,quote__93_93_93,NULL);c_737625.hdr.immutable = 1;
 
-make_pair(c_737624,quote_vars,&c_737625);
+make_pair(c_737624,quote_vars,&c_737625);c_737624.hdr.immutable = 1;
 
-make_pair(c_737623,quote__list,&c_737624);
+make_pair(c_737623,quote__list,&c_737624);c_737623.hdr.immutable = 1;
 
-make_pair(c_737622,&c_737623,NULL);
+make_pair(c_737622,&c_737623,NULL);c_737622.hdr.immutable = 1;
 
-make_pair(c_737621,quote_unquote,&c_737622);
+make_pair(c_737621,quote_unquote,&c_737622);c_737621.hdr.immutable = 1;
 
-make_pair(c_737620,quote_var_91values,&c_737621);
+make_pair(c_737620,quote_var_91values,&c_737621);c_737620.hdr.immutable = 1;
 
-make_pair(c_737627,quote_key,quote_val);
+make_pair(c_737627,quote_key,quote_val);c_737627.hdr.immutable = 1;
 
-make_pair(c_737628,quote__93_93_93,NULL);
+make_pair(c_737628,quote__93_93_93,NULL);c_737628.hdr.immutable = 1;
 
-make_pair(c_737626,&c_737627,&c_737628);
+make_pair(c_737626,&c_737627,&c_737628);c_737626.hdr.immutable = 1;
 
-make_pair(c_737619,&c_737620,&c_737626);
+make_pair(c_737619,&c_737620,&c_737626);c_737619.hdr.immutable = 1;
 
-make_pair(c_737615,&c_737616,&c_737619);
+make_pair(c_737615,&c_737616,&c_737619);c_737615.hdr.immutable = 1;
 
-make_pair(c_737613,&c_737614,&c_737615);
+make_pair(c_737613,&c_737614,&c_737615);c_737613.hdr.immutable = 1;
 
-make_pair(c_737609,&c_737610,&c_737613);
+make_pair(c_737609,&c_737610,&c_737613);c_737609.hdr.immutable = 1;
 
-make_pair(c_737608,&c_737609,NULL);
+make_pair(c_737608,&c_737609,NULL);c_737608.hdr.immutable = 1;
 
-make_pair(c_737607,quote_quasiquote,&c_737608);
+make_pair(c_737607,quote_quasiquote,&c_737608);c_737607.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737471, ((closureN)self_734355)->elements[4], r_732669, &c_737607);; 
 }
 
@@ -18879,51 +18879,51 @@ c_737473.elements[2] = ((closureN)self_734356)->elements[2];
 c_737473.elements[3] = ((closureN)self_734356)->elements[3];
 
 
-make_pair(c_737588,quote_n,NULL);
+make_pair(c_737588,quote_n,NULL);c_737588.hdr.immutable = 1;
 
-make_pair(c_737587,quote_unquote,&c_737588);
+make_pair(c_737587,quote_unquote,&c_737588);c_737587.hdr.immutable = 1;
 
-make_pair(c_737586,quote_name,&c_737587);
+make_pair(c_737586,quote_name,&c_737587);c_737586.hdr.immutable = 1;
 
-make_pair(c_737590,quote_source,quote_expr);
+make_pair(c_737590,quote_source,quote_expr);c_737590.hdr.immutable = 1;
 
-make_pair(c_737594,quote__93_93_93,NULL);
+make_pair(c_737594,quote__93_93_93,NULL);c_737594.hdr.immutable = 1;
 
-make_pair(c_737593,quote_vars,&c_737594);
+make_pair(c_737593,quote_vars,&c_737594);c_737593.hdr.immutable = 1;
 
-make_pair(c_737592,quote_var_91names,&c_737593);
+make_pair(c_737592,quote_var_91names,&c_737593);c_737592.hdr.immutable = 1;
 
-make_pair(c_737601,quote__93_93_93,NULL);
+make_pair(c_737601,quote__93_93_93,NULL);c_737601.hdr.immutable = 1;
 
-make_pair(c_737600,quote_vars,&c_737601);
+make_pair(c_737600,quote_vars,&c_737601);c_737600.hdr.immutable = 1;
 
-make_pair(c_737599,quote__list,&c_737600);
+make_pair(c_737599,quote__list,&c_737600);c_737599.hdr.immutable = 1;
 
-make_pair(c_737598,&c_737599,NULL);
+make_pair(c_737598,&c_737599,NULL);c_737598.hdr.immutable = 1;
 
-make_pair(c_737597,quote_unquote,&c_737598);
+make_pair(c_737597,quote_unquote,&c_737598);c_737597.hdr.immutable = 1;
 
-make_pair(c_737596,quote_var_91values,&c_737597);
+make_pair(c_737596,quote_var_91values,&c_737597);c_737596.hdr.immutable = 1;
 
-make_pair(c_737603,quote_key,quote_val);
+make_pair(c_737603,quote_key,quote_val);c_737603.hdr.immutable = 1;
 
-make_pair(c_737604,quote__93_93_93,NULL);
+make_pair(c_737604,quote__93_93_93,NULL);c_737604.hdr.immutable = 1;
 
-make_pair(c_737602,&c_737603,&c_737604);
+make_pair(c_737602,&c_737603,&c_737604);c_737602.hdr.immutable = 1;
 
-make_pair(c_737595,&c_737596,&c_737602);
+make_pair(c_737595,&c_737596,&c_737602);c_737595.hdr.immutable = 1;
 
-make_pair(c_737591,&c_737592,&c_737595);
+make_pair(c_737591,&c_737592,&c_737595);c_737591.hdr.immutable = 1;
 
-make_pair(c_737589,&c_737590,&c_737591);
+make_pair(c_737589,&c_737590,&c_737591);c_737589.hdr.immutable = 1;
 
-make_pair(c_737585,&c_737586,&c_737589);
+make_pair(c_737585,&c_737586,&c_737589);c_737585.hdr.immutable = 1;
 
-make_pair(c_737584,&c_737585,NULL);
+make_pair(c_737584,&c_737585,NULL);c_737584.hdr.immutable = 1;
 
-make_pair(c_737583,quote_quasiquote,&c_737584);
+make_pair(c_737583,quote_quasiquote,&c_737584);c_737583.hdr.immutable = 1;
 
-make_pair(c_737582,&c_737583,NULL);
+make_pair(c_737582,&c_737583,NULL);c_737582.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737473, r_732665, NULL, &c_737582);; 
 }
 
@@ -18943,59 +18943,59 @@ c_737475.elements[1] = ((closureN)self_734357)->elements[1];
 c_737475.elements[2] = ((closureN)self_734357)->elements[2];
 
 
-make_pair(c_737557,quote_expr,NULL);
+make_pair(c_737557,quote_expr,NULL);c_737557.hdr.immutable = 1;
 
-make_pair(c_737556,NULL,&c_737557);
+make_pair(c_737556,NULL,&c_737557);c_737556.hdr.immutable = 1;
 
-make_pair(c_737555,quote_lambda,&c_737556);
+make_pair(c_737555,quote_lambda,&c_737556);c_737555.hdr.immutable = 1;
 
-make_pair(c_737564,quote_n,NULL);
+make_pair(c_737564,quote_n,NULL);c_737564.hdr.immutable = 1;
 
-make_pair(c_737563,quote_unquote,&c_737564);
+make_pair(c_737563,quote_unquote,&c_737564);c_737563.hdr.immutable = 1;
 
-make_pair(c_737562,quote_name,&c_737563);
+make_pair(c_737562,quote_name,&c_737563);c_737562.hdr.immutable = 1;
 
-make_pair(c_737566,quote_source,quote_expr);
+make_pair(c_737566,quote_source,quote_expr);c_737566.hdr.immutable = 1;
 
-make_pair(c_737570,quote__93_93_93,NULL);
+make_pair(c_737570,quote__93_93_93,NULL);c_737570.hdr.immutable = 1;
 
-make_pair(c_737569,quote_vars,&c_737570);
+make_pair(c_737569,quote_vars,&c_737570);c_737569.hdr.immutable = 1;
 
-make_pair(c_737568,quote_var_91names,&c_737569);
+make_pair(c_737568,quote_var_91names,&c_737569);c_737568.hdr.immutable = 1;
 
-make_pair(c_737577,quote__93_93_93,NULL);
+make_pair(c_737577,quote__93_93_93,NULL);c_737577.hdr.immutable = 1;
 
-make_pair(c_737576,quote_vars,&c_737577);
+make_pair(c_737576,quote_vars,&c_737577);c_737576.hdr.immutable = 1;
 
-make_pair(c_737575,quote__list,&c_737576);
+make_pair(c_737575,quote__list,&c_737576);c_737575.hdr.immutable = 1;
 
-make_pair(c_737574,&c_737575,NULL);
+make_pair(c_737574,&c_737575,NULL);c_737574.hdr.immutable = 1;
 
-make_pair(c_737573,quote_unquote,&c_737574);
+make_pair(c_737573,quote_unquote,&c_737574);c_737573.hdr.immutable = 1;
 
-make_pair(c_737572,quote_var_91values,&c_737573);
+make_pair(c_737572,quote_var_91values,&c_737573);c_737572.hdr.immutable = 1;
 
-make_pair(c_737579,quote_key,quote_val);
+make_pair(c_737579,quote_key,quote_val);c_737579.hdr.immutable = 1;
 
-make_pair(c_737580,quote__93_93_93,NULL);
+make_pair(c_737580,quote__93_93_93,NULL);c_737580.hdr.immutable = 1;
 
-make_pair(c_737578,&c_737579,&c_737580);
+make_pair(c_737578,&c_737579,&c_737580);c_737578.hdr.immutable = 1;
 
-make_pair(c_737571,&c_737572,&c_737578);
+make_pair(c_737571,&c_737572,&c_737578);c_737571.hdr.immutable = 1;
 
-make_pair(c_737567,&c_737568,&c_737571);
+make_pair(c_737567,&c_737568,&c_737571);c_737567.hdr.immutable = 1;
 
-make_pair(c_737565,&c_737566,&c_737567);
+make_pair(c_737565,&c_737566,&c_737567);c_737565.hdr.immutable = 1;
 
-make_pair(c_737561,&c_737562,&c_737565);
+make_pair(c_737561,&c_737562,&c_737565);c_737561.hdr.immutable = 1;
 
-make_pair(c_737560,&c_737561,NULL);
+make_pair(c_737560,&c_737561,NULL);c_737560.hdr.immutable = 1;
 
-make_pair(c_737559,quote_quasiquote,&c_737560);
+make_pair(c_737559,quote_quasiquote,&c_737560);c_737559.hdr.immutable = 1;
 
-make_pair(c_737558,&c_737559,NULL);
+make_pair(c_737558,&c_737559,NULL);c_737558.hdr.immutable = 1;
 
-make_pair(c_737554,&c_737555,&c_737558);
+make_pair(c_737554,&c_737555,&c_737558);c_737554.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737475, ((closureN)self_734357)->elements[3], r_732663, &c_737554);; 
 }
 
@@ -19014,67 +19014,67 @@ c_737477.elements[0] = ((closureN)self_734358)->elements[0];
 c_737477.elements[1] = ((closureN)self_734358)->elements[1];
 
 
-make_pair(c_737524,quote_expect,NULL);
+make_pair(c_737524,quote_expect,NULL);c_737524.hdr.immutable = 1;
 
-make_pair(c_737523,NULL,&c_737524);
+make_pair(c_737523,NULL,&c_737524);c_737523.hdr.immutable = 1;
 
-make_pair(c_737522,quote_lambda,&c_737523);
+make_pair(c_737522,quote_lambda,&c_737523);c_737522.hdr.immutable = 1;
 
-make_pair(c_737528,quote_expr,NULL);
+make_pair(c_737528,quote_expr,NULL);c_737528.hdr.immutable = 1;
 
-make_pair(c_737527,NULL,&c_737528);
+make_pair(c_737527,NULL,&c_737528);c_737527.hdr.immutable = 1;
 
-make_pair(c_737526,quote_lambda,&c_737527);
+make_pair(c_737526,quote_lambda,&c_737527);c_737526.hdr.immutable = 1;
 
-make_pair(c_737535,quote_n,NULL);
+make_pair(c_737535,quote_n,NULL);c_737535.hdr.immutable = 1;
 
-make_pair(c_737534,quote_unquote,&c_737535);
+make_pair(c_737534,quote_unquote,&c_737535);c_737534.hdr.immutable = 1;
 
-make_pair(c_737533,quote_name,&c_737534);
+make_pair(c_737533,quote_name,&c_737534);c_737533.hdr.immutable = 1;
 
-make_pair(c_737537,quote_source,quote_expr);
+make_pair(c_737537,quote_source,quote_expr);c_737537.hdr.immutable = 1;
 
-make_pair(c_737541,quote__93_93_93,NULL);
+make_pair(c_737541,quote__93_93_93,NULL);c_737541.hdr.immutable = 1;
 
-make_pair(c_737540,quote_vars,&c_737541);
+make_pair(c_737540,quote_vars,&c_737541);c_737540.hdr.immutable = 1;
 
-make_pair(c_737539,quote_var_91names,&c_737540);
+make_pair(c_737539,quote_var_91names,&c_737540);c_737539.hdr.immutable = 1;
 
-make_pair(c_737548,quote__93_93_93,NULL);
+make_pair(c_737548,quote__93_93_93,NULL);c_737548.hdr.immutable = 1;
 
-make_pair(c_737547,quote_vars,&c_737548);
+make_pair(c_737547,quote_vars,&c_737548);c_737547.hdr.immutable = 1;
 
-make_pair(c_737546,quote__list,&c_737547);
+make_pair(c_737546,quote__list,&c_737547);c_737546.hdr.immutable = 1;
 
-make_pair(c_737545,&c_737546,NULL);
+make_pair(c_737545,&c_737546,NULL);c_737545.hdr.immutable = 1;
 
-make_pair(c_737544,quote_unquote,&c_737545);
+make_pair(c_737544,quote_unquote,&c_737545);c_737544.hdr.immutable = 1;
 
-make_pair(c_737543,quote_var_91values,&c_737544);
+make_pair(c_737543,quote_var_91values,&c_737544);c_737543.hdr.immutable = 1;
 
-make_pair(c_737550,quote_key,quote_val);
+make_pair(c_737550,quote_key,quote_val);c_737550.hdr.immutable = 1;
 
-make_pair(c_737551,quote__93_93_93,NULL);
+make_pair(c_737551,quote__93_93_93,NULL);c_737551.hdr.immutable = 1;
 
-make_pair(c_737549,&c_737550,&c_737551);
+make_pair(c_737549,&c_737550,&c_737551);c_737549.hdr.immutable = 1;
 
-make_pair(c_737542,&c_737543,&c_737549);
+make_pair(c_737542,&c_737543,&c_737549);c_737542.hdr.immutable = 1;
 
-make_pair(c_737538,&c_737539,&c_737542);
+make_pair(c_737538,&c_737539,&c_737542);c_737538.hdr.immutable = 1;
 
-make_pair(c_737536,&c_737537,&c_737538);
+make_pair(c_737536,&c_737537,&c_737538);c_737536.hdr.immutable = 1;
 
-make_pair(c_737532,&c_737533,&c_737536);
+make_pair(c_737532,&c_737533,&c_737536);c_737532.hdr.immutable = 1;
 
-make_pair(c_737531,&c_737532,NULL);
+make_pair(c_737531,&c_737532,NULL);c_737531.hdr.immutable = 1;
 
-make_pair(c_737530,quote_quasiquote,&c_737531);
+make_pair(c_737530,quote_quasiquote,&c_737531);c_737530.hdr.immutable = 1;
 
-make_pair(c_737529,&c_737530,NULL);
+make_pair(c_737529,&c_737530,NULL);c_737529.hdr.immutable = 1;
 
-make_pair(c_737525,&c_737526,&c_737529);
+make_pair(c_737525,&c_737526,&c_737529);c_737525.hdr.immutable = 1;
 
-make_pair(c_737521,&c_737522,&c_737525);
+make_pair(c_737521,&c_737522,&c_737525);c_737521.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737477, ((closureN)self_734358)->elements[2], r_732660, &c_737521);; 
 }
 
@@ -19092,69 +19092,69 @@ c_737479.elements = (object *)e_737485;
 c_737479.elements[0] = ((closureN)self_734359)->elements[0];
 
 
-make_pair(c_737491,quote_expect,NULL);
+make_pair(c_737491,quote_expect,NULL);c_737491.hdr.immutable = 1;
 
-make_pair(c_737490,NULL,&c_737491);
+make_pair(c_737490,NULL,&c_737491);c_737490.hdr.immutable = 1;
 
-make_pair(c_737489,quote_lambda,&c_737490);
+make_pair(c_737489,quote_lambda,&c_737490);c_737489.hdr.immutable = 1;
 
-make_pair(c_737495,quote_expr,NULL);
+make_pair(c_737495,quote_expr,NULL);c_737495.hdr.immutable = 1;
 
-make_pair(c_737494,NULL,&c_737495);
+make_pair(c_737494,NULL,&c_737495);c_737494.hdr.immutable = 1;
 
-make_pair(c_737493,quote_lambda,&c_737494);
+make_pair(c_737493,quote_lambda,&c_737494);c_737493.hdr.immutable = 1;
 
-make_pair(c_737502,quote_n,NULL);
+make_pair(c_737502,quote_n,NULL);c_737502.hdr.immutable = 1;
 
-make_pair(c_737501,quote_unquote,&c_737502);
+make_pair(c_737501,quote_unquote,&c_737502);c_737501.hdr.immutable = 1;
 
-make_pair(c_737500,quote_name,&c_737501);
+make_pair(c_737500,quote_name,&c_737501);c_737500.hdr.immutable = 1;
 
-make_pair(c_737504,quote_source,quote_expr);
+make_pair(c_737504,quote_source,quote_expr);c_737504.hdr.immutable = 1;
 
-make_pair(c_737508,quote__93_93_93,NULL);
+make_pair(c_737508,quote__93_93_93,NULL);c_737508.hdr.immutable = 1;
 
-make_pair(c_737507,quote_vars,&c_737508);
+make_pair(c_737507,quote_vars,&c_737508);c_737507.hdr.immutable = 1;
 
-make_pair(c_737506,quote_var_91names,&c_737507);
+make_pair(c_737506,quote_var_91names,&c_737507);c_737506.hdr.immutable = 1;
 
-make_pair(c_737515,quote__93_93_93,NULL);
+make_pair(c_737515,quote__93_93_93,NULL);c_737515.hdr.immutable = 1;
 
-make_pair(c_737514,quote_vars,&c_737515);
+make_pair(c_737514,quote_vars,&c_737515);c_737514.hdr.immutable = 1;
 
-make_pair(c_737513,quote__list,&c_737514);
+make_pair(c_737513,quote__list,&c_737514);c_737513.hdr.immutable = 1;
 
-make_pair(c_737512,&c_737513,NULL);
+make_pair(c_737512,&c_737513,NULL);c_737512.hdr.immutable = 1;
 
-make_pair(c_737511,quote_unquote,&c_737512);
+make_pair(c_737511,quote_unquote,&c_737512);c_737511.hdr.immutable = 1;
 
-make_pair(c_737510,quote_var_91values,&c_737511);
+make_pair(c_737510,quote_var_91values,&c_737511);c_737510.hdr.immutable = 1;
 
-make_pair(c_737517,quote_key,quote_val);
+make_pair(c_737517,quote_key,quote_val);c_737517.hdr.immutable = 1;
 
-make_pair(c_737518,quote__93_93_93,NULL);
+make_pair(c_737518,quote__93_93_93,NULL);c_737518.hdr.immutable = 1;
 
-make_pair(c_737516,&c_737517,&c_737518);
+make_pair(c_737516,&c_737517,&c_737518);c_737516.hdr.immutable = 1;
 
-make_pair(c_737509,&c_737510,&c_737516);
+make_pair(c_737509,&c_737510,&c_737516);c_737509.hdr.immutable = 1;
 
-make_pair(c_737505,&c_737506,&c_737509);
+make_pair(c_737505,&c_737506,&c_737509);c_737505.hdr.immutable = 1;
 
-make_pair(c_737503,&c_737504,&c_737505);
+make_pair(c_737503,&c_737504,&c_737505);c_737503.hdr.immutable = 1;
 
-make_pair(c_737499,&c_737500,&c_737503);
+make_pair(c_737499,&c_737500,&c_737503);c_737499.hdr.immutable = 1;
 
-make_pair(c_737498,&c_737499,NULL);
+make_pair(c_737498,&c_737499,NULL);c_737498.hdr.immutable = 1;
 
-make_pair(c_737497,quote_quasiquote,&c_737498);
+make_pair(c_737497,quote_quasiquote,&c_737498);c_737497.hdr.immutable = 1;
 
-make_pair(c_737496,&c_737497,NULL);
+make_pair(c_737496,&c_737497,NULL);c_737496.hdr.immutable = 1;
 
-make_pair(c_737492,&c_737493,&c_737496);
+make_pair(c_737492,&c_737493,&c_737496);c_737492.hdr.immutable = 1;
 
-make_pair(c_737488,&c_737489,&c_737492);
+make_pair(c_737488,&c_737489,&c_737492);c_737488.hdr.immutable = 1;
 
-make_pair(c_737487,quote_test_91run,&c_737488);
+make_pair(c_737487,quote_test_91run,&c_737488);c_737487.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737479, ((closureN)self_734359)->elements[1], r_732657, &c_737487);; 
 }
 
@@ -19354,7 +19354,7 @@ c_737209.elements[2] = ((closureN)self_734304)->elements[1];
 
 
 
-make_pair(c_737276,quote_info,NULL);
+make_pair(c_737276,quote_info,NULL);c_737276.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737209, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734304)->elements[1])))), NULL, &c_737276);; 
 }
 
@@ -19380,9 +19380,9 @@ c_737211.elements[2] = ((closureN)self_734305)->elements[2];
 
 
 
-make_pair(c_737265,quote_info,NULL);
+make_pair(c_737265,quote_info,NULL);c_737265.hdr.immutable = 1;
 
-make_pair(c_737264,quote_expr,&c_737265);
+make_pair(c_737264,quote_expr,&c_737265);c_737264.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737211, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734305)->elements[2]))), r_732616, &c_737264);; 
 }
 
@@ -19406,11 +19406,11 @@ c_737213.elements[2] = ((closureN)self_734306)->elements[2];
 
 
 
-make_pair(c_737255,quote_info,NULL);
+make_pair(c_737255,quote_info,NULL);c_737255.hdr.immutable = 1;
 
-make_pair(c_737254,quote_expr,&c_737255);
+make_pair(c_737254,quote_expr,&c_737255);c_737254.hdr.immutable = 1;
 
-make_pair(c_737253,quote_expect,&c_737254);
+make_pair(c_737253,quote_expect,&c_737254);c_737253.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737213, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734306)->elements[2])), r_732614, &c_737253);; 
 }
 
@@ -19431,13 +19431,13 @@ c_737215.elements[1] = ((closureN)self_734307)->elements[1];
 
 
 
-make_pair(c_737246,quote_info,NULL);
+make_pair(c_737246,quote_info,NULL);c_737246.hdr.immutable = 1;
 
-make_pair(c_737245,quote_expr,&c_737246);
+make_pair(c_737245,quote_expr,&c_737246);c_737245.hdr.immutable = 1;
 
-make_pair(c_737244,quote_expect,&c_737245);
+make_pair(c_737244,quote_expect,&c_737245);c_737244.hdr.immutable = 1;
 
-make_pair(c_737243,quote_name,&c_737244);
+make_pair(c_737243,quote_name,&c_737244);c_737243.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737215, Cyc_car(data, ((closureN)self_734307)->elements[2]), r_732612, &c_737243);; 
 }
 
@@ -19456,15 +19456,15 @@ c_737217.elements[0] = ((closureN)self_734308)->elements[0];
 c_737217.elements[1] = ((closureN)self_734308)->elements[1];
 
 
-make_pair(c_737238,quote_info,NULL);
+make_pair(c_737238,quote_info,NULL);c_737238.hdr.immutable = 1;
 
-make_pair(c_737237,quote_expr,&c_737238);
+make_pair(c_737237,quote_expr,&c_737238);c_737237.hdr.immutable = 1;
 
-make_pair(c_737236,quote_expect,&c_737237);
+make_pair(c_737236,quote_expect,&c_737237);c_737236.hdr.immutable = 1;
 
-make_pair(c_737235,quote_name,&c_737236);
+make_pair(c_737235,quote_name,&c_737236);c_737235.hdr.immutable = 1;
 
-make_pair(c_737234,NULL,&c_737235);
+make_pair(c_737234,NULL,&c_737235);c_737234.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737217, NULL, r_732610, &c_737234);; 
 }
 
@@ -19482,17 +19482,17 @@ c_737219.elements = (object *)e_737225;
 c_737219.elements[0] = ((closureN)self_734309)->elements[0];
 
 
-make_pair(c_737232,quote_info,NULL);
+make_pair(c_737232,quote_info,NULL);c_737232.hdr.immutable = 1;
 
-make_pair(c_737231,quote_expr,&c_737232);
+make_pair(c_737231,quote_expr,&c_737232);c_737231.hdr.immutable = 1;
 
-make_pair(c_737230,quote_expect,&c_737231);
+make_pair(c_737230,quote_expect,&c_737231);c_737230.hdr.immutable = 1;
 
-make_pair(c_737229,quote_name,&c_737230);
+make_pair(c_737229,quote_name,&c_737230);c_737229.hdr.immutable = 1;
 
-make_pair(c_737228,NULL,&c_737229);
+make_pair(c_737228,NULL,&c_737229);c_737228.hdr.immutable = 1;
 
-make_pair(c_737227,quote_test_91vars,&c_737228);
+make_pair(c_737227,quote_test_91vars,&c_737228);c_737227.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737219, ((closureN)self_734309)->elements[1], r_732607, &c_737227);; 
 }
 
@@ -19844,7 +19844,7 @@ c_737049.elements[3] = ((closureN)self_734274)->elements[3];
 c_737049.elements[4] = ((closureN)self_734274)->elements[4];
 
 
-make_pair(c_737117,quote_test_91error,NULL);
+make_pair(c_737117,quote_test_91error,NULL);c_737117.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737049, r_732533, NULL, &c_737117);; 
 }
 
@@ -19865,9 +19865,9 @@ c_737051.elements[2] = ((closureN)self_734275)->elements[2];
 c_737051.elements[3] = ((closureN)self_734275)->elements[4];
 
 
-make_pair(c_737115,quote_test_91error,NULL);
+make_pair(c_737115,quote_test_91error,NULL);c_737115.hdr.immutable = 1;
 
-make_pair(c_737114,quote_quote,&c_737115);
+make_pair(c_737114,quote_quote,&c_737115);c_737114.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737051, ((closureN)self_734275)->elements[3], r_732531, &c_737114);; 
 }
 
@@ -19906,11 +19906,11 @@ c_737056.elements[1] = ((closureN)self_734277)->elements[2];
 c_737056.elements[2] = ((closureN)self_734277)->elements[3];
 
 
-make_pair(c_737110,quote__93_93_93,NULL);
+make_pair(c_737110,quote__93_93_93,NULL);c_737110.hdr.immutable = 1;
 
-make_pair(c_737109,quote_a,&c_737110);
+make_pair(c_737109,quote_a,&c_737110);c_737109.hdr.immutable = 1;
 
-make_pair(c_737108,quote_test,&c_737109);
+make_pair(c_737108,quote_test,&c_737109);c_737108.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737056, r_732527, ((closureN)self_734277)->elements[0], &c_737108);; 
 }
 
@@ -19930,13 +19930,13 @@ c_737058.elements[1] = ((closureN)self_734278)->elements[1];
 c_737058.elements[2] = ((closureN)self_734278)->elements[2];
 
 
-make_pair(c_737105,quote__93_93_93,NULL);
+make_pair(c_737105,quote__93_93_93,NULL);c_737105.hdr.immutable = 1;
 
-make_pair(c_737104,quote_a,&c_737105);
+make_pair(c_737104,quote_a,&c_737105);c_737104.hdr.immutable = 1;
 
-make_pair(c_737103,quote_test,&c_737104);
+make_pair(c_737103,quote_test,&c_737104);c_737103.hdr.immutable = 1;
 
-make_pair(c_737102,&c_737103,NULL);
+make_pair(c_737102,&c_737103,NULL);c_737102.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737058, r_732524, NULL, &c_737102);; 
 }
 
@@ -19958,17 +19958,17 @@ c_737060.elements[2] = ((closureN)self_734279)->elements[2];
 
 make_utf8_string_with_len(c_737094, "1 or 2 arguments required", 25, 25);
 
-make_utf8_string_with_len(c_737096, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_737096, "1 or 2 arguments required", 25, 25);c_737096.hdr.immutable = 1;
 
-make_pair(c_737100,quote__93_93_93,NULL);
+make_pair(c_737100,quote__93_93_93,NULL);c_737100.hdr.immutable = 1;
 
-make_pair(c_737099,quote_a,&c_737100);
+make_pair(c_737099,quote_a,&c_737100);c_737099.hdr.immutable = 1;
 
-make_pair(c_737098,quote_test,&c_737099);
+make_pair(c_737098,quote_test,&c_737099);c_737098.hdr.immutable = 1;
 
-make_pair(c_737097,&c_737098,NULL);
+make_pair(c_737097,&c_737098,NULL);c_737097.hdr.immutable = 1;
 
-make_pair(c_737095,&c_737096,&c_737097);
+make_pair(c_737095,&c_737096,&c_737097);c_737095.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737060, &c_737094, r_732522, &c_737095);; 
 }
 
@@ -19987,23 +19987,23 @@ c_737062.elements[0] = ((closureN)self_734280)->elements[0];
 c_737062.elements[1] = ((closureN)self_734280)->elements[1];
 
 
-make_pair(c_737086,quote_test_91error,NULL);
+make_pair(c_737086,quote_test_91error,NULL);c_737086.hdr.immutable = 1;
 
-make_pair(c_737085,quote_quote,&c_737086);
+make_pair(c_737085,quote_quote,&c_737086);c_737085.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_737088, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_737088, "1 or 2 arguments required", 25, 25);c_737088.hdr.immutable = 1;
 
-make_pair(c_737092,quote__93_93_93,NULL);
+make_pair(c_737092,quote__93_93_93,NULL);c_737092.hdr.immutable = 1;
 
-make_pair(c_737091,quote_a,&c_737092);
+make_pair(c_737091,quote_a,&c_737092);c_737091.hdr.immutable = 1;
 
-make_pair(c_737090,quote_test,&c_737091);
+make_pair(c_737090,quote_test,&c_737091);c_737090.hdr.immutable = 1;
 
-make_pair(c_737089,&c_737090,NULL);
+make_pair(c_737089,&c_737090,NULL);c_737089.hdr.immutable = 1;
 
-make_pair(c_737087,&c_737088,&c_737089);
+make_pair(c_737087,&c_737088,&c_737089);c_737087.hdr.immutable = 1;
 
-make_pair(c_737084,&c_737085,&c_737087);
+make_pair(c_737084,&c_737085,&c_737087);c_737084.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737062, ((closureN)self_734280)->elements[2], r_732520, &c_737084);; 
 }
 
@@ -20021,25 +20021,25 @@ c_737064.elements = (object *)e_737070;
 c_737064.elements[0] = ((closureN)self_734281)->elements[0];
 
 
-make_pair(c_737075,quote_test_91error,NULL);
+make_pair(c_737075,quote_test_91error,NULL);c_737075.hdr.immutable = 1;
 
-make_pair(c_737074,quote_quote,&c_737075);
+make_pair(c_737074,quote_quote,&c_737075);c_737074.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_737077, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_737077, "1 or 2 arguments required", 25, 25);c_737077.hdr.immutable = 1;
 
-make_pair(c_737081,quote__93_93_93,NULL);
+make_pair(c_737081,quote__93_93_93,NULL);c_737081.hdr.immutable = 1;
 
-make_pair(c_737080,quote_a,&c_737081);
+make_pair(c_737080,quote_a,&c_737081);c_737080.hdr.immutable = 1;
 
-make_pair(c_737079,quote_test,&c_737080);
+make_pair(c_737079,quote_test,&c_737080);c_737079.hdr.immutable = 1;
 
-make_pair(c_737078,&c_737079,NULL);
+make_pair(c_737078,&c_737079,NULL);c_737078.hdr.immutable = 1;
 
-make_pair(c_737076,&c_737077,&c_737078);
+make_pair(c_737076,&c_737077,&c_737078);c_737076.hdr.immutable = 1;
 
-make_pair(c_737073,&c_737074,&c_737076);
+make_pair(c_737073,&c_737074,&c_737076);c_737073.hdr.immutable = 1;
 
-make_pair(c_737072,quote_test_91syntax_91error,&c_737073);
+make_pair(c_737072,quote_test_91syntax_91error,&c_737073);c_737072.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_737064, ((closureN)self_734281)->elements[1], r_732517, &c_737072);; 
 }
 
@@ -20119,7 +20119,7 @@ c_736960.elements[1] = ((closureN)self_734285)->elements[1];
 c_736960.elements[2] = ((closureN)self_734285)->elements[2];
 
 
-make_pair(c_737021,quote_expect_91error,boolean_t);
+make_pair(c_737021,quote_expect_91error,boolean_t);c_737021.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736960, r_732564, boolean_t, &c_737021);; 
 }
 
@@ -20139,9 +20139,9 @@ c_736962.elements[1] = ((closureN)self_734286)->elements[1];
 c_736962.elements[2] = ((closureN)self_734286)->elements[2];
 
 
-make_pair(c_737019,quote_expect_91error,boolean_t);
+make_pair(c_737019,quote_expect_91error,boolean_t);c_737019.hdr.immutable = 1;
 
-make_pair(c_737018,&c_737019,NULL);
+make_pair(c_737018,&c_737019,NULL);c_737018.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736962, r_732561, NULL, &c_737018);; 
 }
 
@@ -20161,11 +20161,11 @@ c_736964.elements[1] = ((closureN)self_734287)->elements[1];
 c_736964.elements[2] = ((closureN)self_734287)->elements[2];
 
 
-make_pair(c_737016,quote_expect_91error,boolean_t);
+make_pair(c_737016,quote_expect_91error,boolean_t);c_737016.hdr.immutable = 1;
 
-make_pair(c_737015,&c_737016,NULL);
+make_pair(c_737015,&c_737016,NULL);c_737015.hdr.immutable = 1;
 
-make_pair(c_737014,&c_737015,NULL);
+make_pair(c_737014,&c_737015,NULL);c_737014.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736964, r_732558, NULL, &c_737014);; 
 }
 
@@ -20189,13 +20189,13 @@ c_736966.elements[2] = ((closureN)self_734288)->elements[2];
 
 
 
-make_pair(c_737012,quote_expect_91error,boolean_t);
+make_pair(c_737012,quote_expect_91error,boolean_t);c_737012.hdr.immutable = 1;
 
-make_pair(c_737011,&c_737012,NULL);
+make_pair(c_737011,&c_737012,NULL);c_737011.hdr.immutable = 1;
 
-make_pair(c_737010,&c_737011,NULL);
+make_pair(c_737010,&c_737011,NULL);c_737010.hdr.immutable = 1;
 
-make_pair(c_737009,quote_expr,&c_737010);
+make_pair(c_737009,quote_expr,&c_737010);c_737009.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736966, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734288)->elements[2])), r_732556, &c_737009);; 
 }
 
@@ -20215,15 +20215,15 @@ c_736968.elements[1] = ((closureN)self_734289)->elements[1];
 c_736968.elements[2] = ((closureN)self_734289)->elements[2];
 
 
-make_pair(c_737002,quote_expect_91error,boolean_t);
+make_pair(c_737002,quote_expect_91error,boolean_t);c_737002.hdr.immutable = 1;
 
-make_pair(c_737001,&c_737002,NULL);
+make_pair(c_737001,&c_737002,NULL);c_737001.hdr.immutable = 1;
 
-make_pair(c_737000,&c_737001,NULL);
+make_pair(c_737000,&c_737001,NULL);c_737000.hdr.immutable = 1;
 
-make_pair(c_736999,quote_expr,&c_737000);
+make_pair(c_736999,quote_expr,&c_737000);c_736999.hdr.immutable = 1;
 
-make_pair(c_736998,boolean_f,&c_736999);
+make_pair(c_736998,boolean_f,&c_736999);c_736998.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736968, boolean_f, r_732554, &c_736998);; 
 }
 
@@ -20244,17 +20244,17 @@ c_736970.elements[1] = ((closureN)self_734290)->elements[1];
 
 
 
-make_pair(c_736996,quote_expect_91error,boolean_t);
+make_pair(c_736996,quote_expect_91error,boolean_t);c_736996.hdr.immutable = 1;
 
-make_pair(c_736995,&c_736996,NULL);
+make_pair(c_736995,&c_736996,NULL);c_736995.hdr.immutable = 1;
 
-make_pair(c_736994,&c_736995,NULL);
+make_pair(c_736994,&c_736995,NULL);c_736994.hdr.immutable = 1;
 
-make_pair(c_736993,quote_expr,&c_736994);
+make_pair(c_736993,quote_expr,&c_736994);c_736993.hdr.immutable = 1;
 
-make_pair(c_736992,boolean_f,&c_736993);
+make_pair(c_736992,boolean_f,&c_736993);c_736992.hdr.immutable = 1;
 
-make_pair(c_736991,quote_name,&c_736992);
+make_pair(c_736991,quote_name,&c_736992);c_736991.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736970, Cyc_car(data, ((closureN)self_734290)->elements[2]), r_732552, &c_736991);; 
 }
 
@@ -20272,19 +20272,19 @@ c_736972.elements = (object *)e_736978;
 c_736972.elements[0] = ((closureN)self_734291)->elements[0];
 
 
-make_pair(c_736986,quote_expect_91error,boolean_t);
+make_pair(c_736986,quote_expect_91error,boolean_t);c_736986.hdr.immutable = 1;
 
-make_pair(c_736985,&c_736986,NULL);
+make_pair(c_736985,&c_736986,NULL);c_736985.hdr.immutable = 1;
 
-make_pair(c_736984,&c_736985,NULL);
+make_pair(c_736984,&c_736985,NULL);c_736984.hdr.immutable = 1;
 
-make_pair(c_736983,quote_expr,&c_736984);
+make_pair(c_736983,quote_expr,&c_736984);c_736983.hdr.immutable = 1;
 
-make_pair(c_736982,boolean_f,&c_736983);
+make_pair(c_736982,boolean_f,&c_736983);c_736982.hdr.immutable = 1;
 
-make_pair(c_736981,quote_name,&c_736982);
+make_pair(c_736981,quote_name,&c_736982);c_736981.hdr.immutable = 1;
 
-make_pair(c_736980,quote_test_91propagate_91info,&c_736981);
+make_pair(c_736980,quote_test_91propagate_91info,&c_736981);c_736980.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736972, ((closureN)self_734291)->elements[1], r_732550, &c_736980);; 
 }
 
@@ -20339,7 +20339,7 @@ c_736901.elements[1] = r_732575;
 
 
 
-make_pair(c_736923,quote_expr,NULL);
+make_pair(c_736923,quote_expr,NULL);c_736923.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736901, Cyc_car(data, ((closureN)self_734294)->elements[1]), NULL, &c_736923);; 
 }
 
@@ -20358,9 +20358,9 @@ c_736903.elements[0] = ((closureN)self_734295)->elements[0];
 c_736903.elements[1] = ((closureN)self_734295)->elements[1];
 
 
-make_pair(c_736918,quote_expr,NULL);
+make_pair(c_736918,quote_expr,NULL);c_736918.hdr.immutable = 1;
 
-make_pair(c_736917,boolean_f,&c_736918);
+make_pair(c_736917,boolean_f,&c_736918);c_736917.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736903, boolean_f, r_732578, &c_736917);; 
 }
 
@@ -20378,11 +20378,11 @@ c_736905.elements = (object *)e_736911;
 c_736905.elements[0] = ((closureN)self_734296)->elements[0];
 
 
-make_pair(c_736915,quote_expr,NULL);
+make_pair(c_736915,quote_expr,NULL);c_736915.hdr.immutable = 1;
 
-make_pair(c_736914,boolean_f,&c_736915);
+make_pair(c_736914,boolean_f,&c_736915);c_736914.hdr.immutable = 1;
 
-make_pair(c_736913,quote_test_91error,&c_736914);
+make_pair(c_736913,quote_test_91error,&c_736914);c_736913.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736905, ((closureN)self_734296)->elements[1], r_732576, &c_736913);; 
 }
 
@@ -20668,7 +20668,7 @@ c_736579.elements[5] = ((closureN)self_734223)->elements[4];
 
 
 
-make_pair(c_736846,quote_expect,NULL);
+make_pair(c_736846,quote_expect,NULL);c_736846.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736579, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734223)->elements[4])), NULL, &c_736846);; 
 }
 
@@ -20691,9 +20691,9 @@ c_736581.elements[4] = ((closureN)self_734224)->elements[4];
 c_736581.elements[5] = ((closureN)self_734224)->elements[5];
 
 
-make_pair(c_736839,quote_expect,NULL);
+make_pair(c_736839,quote_expect,NULL);c_736839.hdr.immutable = 1;
 
-make_pair(c_736838,NULL,&c_736839);
+make_pair(c_736838,NULL,&c_736839);c_736838.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736581, NULL, r_732476, &c_736838);; 
 }
 
@@ -20715,11 +20715,11 @@ c_736583.elements[3] = ((closureN)self_734225)->elements[4];
 c_736583.elements[4] = ((closureN)self_734225)->elements[5];
 
 
-make_pair(c_736836,quote_expect,NULL);
+make_pair(c_736836,quote_expect,NULL);c_736836.hdr.immutable = 1;
 
-make_pair(c_736835,NULL,&c_736836);
+make_pair(c_736835,NULL,&c_736836);c_736835.hdr.immutable = 1;
 
-make_pair(c_736834,quote_lambda,&c_736835);
+make_pair(c_736834,quote_lambda,&c_736835);c_736834.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736583, ((closureN)self_734225)->elements[3], r_732473, &c_736834);; 
 }
 
@@ -20810,7 +20810,7 @@ c_736594.elements[6] = ((closureN)self_734229)->elements[6];
 c_736594.elements[7] = ((closureN)self_734229)->elements[7];
 
 
-make_pair(c_736828,quote_results,NULL);
+make_pair(c_736828,quote_results,NULL);c_736828.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736594, r_732466, NULL, &c_736828);; 
 }
 
@@ -20834,9 +20834,9 @@ c_736596.elements[5] = ((closureN)self_734230)->elements[6];
 c_736596.elements[6] = ((closureN)self_734230)->elements[7];
 
 
-make_pair(c_736826,quote_results,NULL);
+make_pair(c_736826,quote_results,NULL);c_736826.hdr.immutable = 1;
 
-make_pair(c_736825,quote_results,&c_736826);
+make_pair(c_736825,quote_results,&c_736826);c_736825.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736596, ((closureN)self_734230)->elements[5], r_732464, &c_736825);; 
 }
 
@@ -20859,11 +20859,11 @@ c_736598.elements[4] = ((closureN)self_734231)->elements[5];
 c_736598.elements[5] = ((closureN)self_734231)->elements[6];
 
 
-make_pair(c_736822,quote_results,NULL);
+make_pair(c_736822,quote_results,NULL);c_736822.hdr.immutable = 1;
 
-make_pair(c_736821,quote_results,&c_736822);
+make_pair(c_736821,quote_results,&c_736822);c_736821.hdr.immutable = 1;
 
-make_pair(c_736820,quote_lambda,&c_736821);
+make_pair(c_736820,quote_lambda,&c_736821);c_736820.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736598, ((closureN)self_734231)->elements[4], r_732461, &c_736820);; 
 }
 
@@ -20886,13 +20886,13 @@ c_736600.elements[4] = ((closureN)self_734232)->elements[4];
 c_736600.elements[5] = ((closureN)self_734232)->elements[5];
 
 
-make_pair(c_736817,quote_results,NULL);
+make_pair(c_736817,quote_results,NULL);c_736817.hdr.immutable = 1;
 
-make_pair(c_736816,quote_results,&c_736817);
+make_pair(c_736816,quote_results,&c_736817);c_736816.hdr.immutable = 1;
 
-make_pair(c_736815,quote_lambda,&c_736816);
+make_pair(c_736815,quote_lambda,&c_736816);c_736815.hdr.immutable = 1;
 
-make_pair(c_736814,&c_736815,NULL);
+make_pair(c_736814,&c_736815,NULL);c_736814.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736600, r_732457, NULL, &c_736814);; 
 }
 
@@ -20914,21 +20914,21 @@ c_736602.elements[3] = ((closureN)self_734233)->elements[4];
 c_736602.elements[4] = ((closureN)self_734233)->elements[5];
 
 
-make_pair(c_736808,quote_expect,NULL);
+make_pair(c_736808,quote_expect,NULL);c_736808.hdr.immutable = 1;
 
-make_pair(c_736807,NULL,&c_736808);
+make_pair(c_736807,NULL,&c_736808);c_736807.hdr.immutable = 1;
 
-make_pair(c_736806,quote_lambda,&c_736807);
+make_pair(c_736806,quote_lambda,&c_736807);c_736806.hdr.immutable = 1;
 
-make_pair(c_736812,quote_results,NULL);
+make_pair(c_736812,quote_results,NULL);c_736812.hdr.immutable = 1;
 
-make_pair(c_736811,quote_results,&c_736812);
+make_pair(c_736811,quote_results,&c_736812);c_736811.hdr.immutable = 1;
 
-make_pair(c_736810,quote_lambda,&c_736811);
+make_pair(c_736810,quote_lambda,&c_736811);c_736810.hdr.immutable = 1;
 
-make_pair(c_736809,&c_736810,NULL);
+make_pair(c_736809,&c_736810,NULL);c_736809.hdr.immutable = 1;
 
-make_pair(c_736805,&c_736806,&c_736809);
+make_pair(c_736805,&c_736806,&c_736809);c_736805.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736602, ((closureN)self_734233)->elements[3], r_732455, &c_736805);; 
 }
 
@@ -20949,23 +20949,23 @@ c_736604.elements[2] = ((closureN)self_734234)->elements[3];
 c_736604.elements[3] = ((closureN)self_734234)->elements[4];
 
 
-make_pair(c_736798,quote_expect,NULL);
+make_pair(c_736798,quote_expect,NULL);c_736798.hdr.immutable = 1;
 
-make_pair(c_736797,NULL,&c_736798);
+make_pair(c_736797,NULL,&c_736798);c_736797.hdr.immutable = 1;
 
-make_pair(c_736796,quote_lambda,&c_736797);
+make_pair(c_736796,quote_lambda,&c_736797);c_736796.hdr.immutable = 1;
 
-make_pair(c_736802,quote_results,NULL);
+make_pair(c_736802,quote_results,NULL);c_736802.hdr.immutable = 1;
 
-make_pair(c_736801,quote_results,&c_736802);
+make_pair(c_736801,quote_results,&c_736802);c_736801.hdr.immutable = 1;
 
-make_pair(c_736800,quote_lambda,&c_736801);
+make_pair(c_736800,quote_lambda,&c_736801);c_736800.hdr.immutable = 1;
 
-make_pair(c_736799,&c_736800,NULL);
+make_pair(c_736799,&c_736800,NULL);c_736799.hdr.immutable = 1;
 
-make_pair(c_736795,&c_736796,&c_736799);
+make_pair(c_736795,&c_736796,&c_736799);c_736795.hdr.immutable = 1;
 
-make_pair(c_736794,quote_call_91with_91values,&c_736795);
+make_pair(c_736794,quote_call_91with_91values,&c_736795);c_736794.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736604, ((closureN)self_734234)->elements[2], r_732452, &c_736794);; 
 }
 
@@ -21036,7 +21036,7 @@ c_736612.elements[6] = ((closureN)self_734237)->elements[5];
 
 
 
-make_pair(c_736789,quote_expr,NULL);
+make_pair(c_736789,quote_expr,NULL);c_736789.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736612, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734237)->elements[5]))), NULL, &c_736789);; 
 }
 
@@ -21060,9 +21060,9 @@ c_736614.elements[5] = ((closureN)self_734238)->elements[5];
 c_736614.elements[6] = ((closureN)self_734238)->elements[6];
 
 
-make_pair(c_736780,quote_expr,NULL);
+make_pair(c_736780,quote_expr,NULL);c_736780.hdr.immutable = 1;
 
-make_pair(c_736779,NULL,&c_736780);
+make_pair(c_736779,NULL,&c_736780);c_736779.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736614, NULL, r_732445, &c_736779);; 
 }
 
@@ -21085,11 +21085,11 @@ c_736616.elements[4] = ((closureN)self_734239)->elements[5];
 c_736616.elements[5] = ((closureN)self_734239)->elements[6];
 
 
-make_pair(c_736777,quote_expr,NULL);
+make_pair(c_736777,quote_expr,NULL);c_736777.hdr.immutable = 1;
 
-make_pair(c_736776,NULL,&c_736777);
+make_pair(c_736776,NULL,&c_736777);c_736776.hdr.immutable = 1;
 
-make_pair(c_736775,quote_lambda,&c_736776);
+make_pair(c_736775,quote_lambda,&c_736776);c_736775.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736616, ((closureN)self_734239)->elements[4], r_732442, &c_736775);; 
 }
 
@@ -21182,7 +21182,7 @@ c_736627.elements[6] = ((closureN)self_734243)->elements[6];
 c_736627.elements[7] = ((closureN)self_734243)->elements[7];
 
 
-make_pair(c_736769,quote_results,NULL);
+make_pair(c_736769,quote_results,NULL);c_736769.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736627, r_732435, NULL, &c_736769);; 
 }
 
@@ -21206,9 +21206,9 @@ c_736629.elements[5] = ((closureN)self_734244)->elements[5];
 c_736629.elements[6] = ((closureN)self_734244)->elements[7];
 
 
-make_pair(c_736767,quote_results,NULL);
+make_pair(c_736767,quote_results,NULL);c_736767.hdr.immutable = 1;
 
-make_pair(c_736766,quote_results,&c_736767);
+make_pair(c_736766,quote_results,&c_736767);c_736766.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736629, ((closureN)self_734244)->elements[6], r_732433, &c_736766);; 
 }
 
@@ -21231,11 +21231,11 @@ c_736631.elements[4] = ((closureN)self_734245)->elements[4];
 c_736631.elements[5] = ((closureN)self_734245)->elements[6];
 
 
-make_pair(c_736763,quote_results,NULL);
+make_pair(c_736763,quote_results,NULL);c_736763.hdr.immutable = 1;
 
-make_pair(c_736762,quote_results,&c_736763);
+make_pair(c_736762,quote_results,&c_736763);c_736762.hdr.immutable = 1;
 
-make_pair(c_736761,quote_lambda,&c_736762);
+make_pair(c_736761,quote_lambda,&c_736762);c_736761.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736631, ((closureN)self_734245)->elements[5], r_732430, &c_736761);; 
 }
 
@@ -21258,13 +21258,13 @@ c_736633.elements[4] = ((closureN)self_734246)->elements[4];
 c_736633.elements[5] = ((closureN)self_734246)->elements[5];
 
 
-make_pair(c_736758,quote_results,NULL);
+make_pair(c_736758,quote_results,NULL);c_736758.hdr.immutable = 1;
 
-make_pair(c_736757,quote_results,&c_736758);
+make_pair(c_736757,quote_results,&c_736758);c_736757.hdr.immutable = 1;
 
-make_pair(c_736756,quote_lambda,&c_736757);
+make_pair(c_736756,quote_lambda,&c_736757);c_736756.hdr.immutable = 1;
 
-make_pair(c_736755,&c_736756,NULL);
+make_pair(c_736755,&c_736756,NULL);c_736755.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736633, r_732426, NULL, &c_736755);; 
 }
 
@@ -21286,21 +21286,21 @@ c_736635.elements[3] = ((closureN)self_734247)->elements[3];
 c_736635.elements[4] = ((closureN)self_734247)->elements[5];
 
 
-make_pair(c_736749,quote_expr,NULL);
+make_pair(c_736749,quote_expr,NULL);c_736749.hdr.immutable = 1;
 
-make_pair(c_736748,NULL,&c_736749);
+make_pair(c_736748,NULL,&c_736749);c_736748.hdr.immutable = 1;
 
-make_pair(c_736747,quote_lambda,&c_736748);
+make_pair(c_736747,quote_lambda,&c_736748);c_736747.hdr.immutable = 1;
 
-make_pair(c_736753,quote_results,NULL);
+make_pair(c_736753,quote_results,NULL);c_736753.hdr.immutable = 1;
 
-make_pair(c_736752,quote_results,&c_736753);
+make_pair(c_736752,quote_results,&c_736753);c_736752.hdr.immutable = 1;
 
-make_pair(c_736751,quote_lambda,&c_736752);
+make_pair(c_736751,quote_lambda,&c_736752);c_736751.hdr.immutable = 1;
 
-make_pair(c_736750,&c_736751,NULL);
+make_pair(c_736750,&c_736751,NULL);c_736750.hdr.immutable = 1;
 
-make_pair(c_736746,&c_736747,&c_736750);
+make_pair(c_736746,&c_736747,&c_736750);c_736746.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736635, ((closureN)self_734247)->elements[4], r_732424, &c_736746);; 
 }
 
@@ -21321,23 +21321,23 @@ c_736637.elements[2] = ((closureN)self_734248)->elements[2];
 c_736637.elements[3] = ((closureN)self_734248)->elements[4];
 
 
-make_pair(c_736739,quote_expr,NULL);
+make_pair(c_736739,quote_expr,NULL);c_736739.hdr.immutable = 1;
 
-make_pair(c_736738,NULL,&c_736739);
+make_pair(c_736738,NULL,&c_736739);c_736738.hdr.immutable = 1;
 
-make_pair(c_736737,quote_lambda,&c_736738);
+make_pair(c_736737,quote_lambda,&c_736738);c_736737.hdr.immutable = 1;
 
-make_pair(c_736743,quote_results,NULL);
+make_pair(c_736743,quote_results,NULL);c_736743.hdr.immutable = 1;
 
-make_pair(c_736742,quote_results,&c_736743);
+make_pair(c_736742,quote_results,&c_736743);c_736742.hdr.immutable = 1;
 
-make_pair(c_736741,quote_lambda,&c_736742);
+make_pair(c_736741,quote_lambda,&c_736742);c_736741.hdr.immutable = 1;
 
-make_pair(c_736740,&c_736741,NULL);
+make_pair(c_736740,&c_736741,NULL);c_736740.hdr.immutable = 1;
 
-make_pair(c_736736,&c_736737,&c_736740);
+make_pair(c_736736,&c_736737,&c_736740);c_736736.hdr.immutable = 1;
 
-make_pair(c_736735,quote_call_91with_91values,&c_736736);
+make_pair(c_736735,quote_call_91with_91values,&c_736736);c_736735.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736637, ((closureN)self_734248)->elements[3], r_732421, &c_736735);; 
 }
 
@@ -21358,25 +21358,25 @@ c_736639.elements[2] = ((closureN)self_734249)->elements[2];
 c_736639.elements[3] = ((closureN)self_734249)->elements[3];
 
 
-make_pair(c_736728,quote_expr,NULL);
+make_pair(c_736728,quote_expr,NULL);c_736728.hdr.immutable = 1;
 
-make_pair(c_736727,NULL,&c_736728);
+make_pair(c_736727,NULL,&c_736728);c_736727.hdr.immutable = 1;
 
-make_pair(c_736726,quote_lambda,&c_736727);
+make_pair(c_736726,quote_lambda,&c_736727);c_736726.hdr.immutable = 1;
 
-make_pair(c_736732,quote_results,NULL);
+make_pair(c_736732,quote_results,NULL);c_736732.hdr.immutable = 1;
 
-make_pair(c_736731,quote_results,&c_736732);
+make_pair(c_736731,quote_results,&c_736732);c_736731.hdr.immutable = 1;
 
-make_pair(c_736730,quote_lambda,&c_736731);
+make_pair(c_736730,quote_lambda,&c_736731);c_736730.hdr.immutable = 1;
 
-make_pair(c_736729,&c_736730,NULL);
+make_pair(c_736729,&c_736730,NULL);c_736729.hdr.immutable = 1;
 
-make_pair(c_736725,&c_736726,&c_736729);
+make_pair(c_736725,&c_736726,&c_736729);c_736725.hdr.immutable = 1;
 
-make_pair(c_736724,quote_call_91with_91values,&c_736725);
+make_pair(c_736724,quote_call_91with_91values,&c_736725);c_736724.hdr.immutable = 1;
 
-make_pair(c_736723,&c_736724,NULL);
+make_pair(c_736723,&c_736724,NULL);c_736723.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736639, r_732417, NULL, &c_736723);; 
 }
 
@@ -21396,45 +21396,45 @@ c_736641.elements[1] = ((closureN)self_734250)->elements[1];
 c_736641.elements[2] = ((closureN)self_734250)->elements[3];
 
 
-make_pair(c_736707,quote_expect,NULL);
+make_pair(c_736707,quote_expect,NULL);c_736707.hdr.immutable = 1;
 
-make_pair(c_736706,NULL,&c_736707);
+make_pair(c_736706,NULL,&c_736707);c_736706.hdr.immutable = 1;
 
-make_pair(c_736705,quote_lambda,&c_736706);
+make_pair(c_736705,quote_lambda,&c_736706);c_736705.hdr.immutable = 1;
 
-make_pair(c_736711,quote_results,NULL);
+make_pair(c_736711,quote_results,NULL);c_736711.hdr.immutable = 1;
 
-make_pair(c_736710,quote_results,&c_736711);
+make_pair(c_736710,quote_results,&c_736711);c_736710.hdr.immutable = 1;
 
-make_pair(c_736709,quote_lambda,&c_736710);
+make_pair(c_736709,quote_lambda,&c_736710);c_736709.hdr.immutable = 1;
 
-make_pair(c_736708,&c_736709,NULL);
+make_pair(c_736708,&c_736709,NULL);c_736708.hdr.immutable = 1;
 
-make_pair(c_736704,&c_736705,&c_736708);
+make_pair(c_736704,&c_736705,&c_736708);c_736704.hdr.immutable = 1;
 
-make_pair(c_736703,quote_call_91with_91values,&c_736704);
+make_pair(c_736703,quote_call_91with_91values,&c_736704);c_736703.hdr.immutable = 1;
 
-make_pair(c_736717,quote_expr,NULL);
+make_pair(c_736717,quote_expr,NULL);c_736717.hdr.immutable = 1;
 
-make_pair(c_736716,NULL,&c_736717);
+make_pair(c_736716,NULL,&c_736717);c_736716.hdr.immutable = 1;
 
-make_pair(c_736715,quote_lambda,&c_736716);
+make_pair(c_736715,quote_lambda,&c_736716);c_736715.hdr.immutable = 1;
 
-make_pair(c_736721,quote_results,NULL);
+make_pair(c_736721,quote_results,NULL);c_736721.hdr.immutable = 1;
 
-make_pair(c_736720,quote_results,&c_736721);
+make_pair(c_736720,quote_results,&c_736721);c_736720.hdr.immutable = 1;
 
-make_pair(c_736719,quote_lambda,&c_736720);
+make_pair(c_736719,quote_lambda,&c_736720);c_736719.hdr.immutable = 1;
 
-make_pair(c_736718,&c_736719,NULL);
+make_pair(c_736718,&c_736719,NULL);c_736718.hdr.immutable = 1;
 
-make_pair(c_736714,&c_736715,&c_736718);
+make_pair(c_736714,&c_736715,&c_736718);c_736714.hdr.immutable = 1;
 
-make_pair(c_736713,quote_call_91with_91values,&c_736714);
+make_pair(c_736713,quote_call_91with_91values,&c_736714);c_736713.hdr.immutable = 1;
 
-make_pair(c_736712,&c_736713,NULL);
+make_pair(c_736712,&c_736713,NULL);c_736712.hdr.immutable = 1;
 
-make_pair(c_736702,&c_736703,&c_736712);
+make_pair(c_736702,&c_736703,&c_736712);c_736702.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736641, ((closureN)self_734250)->elements[2], r_732415, &c_736702);; 
 }
 
@@ -21455,47 +21455,47 @@ c_736643.elements[1] = ((closureN)self_734251)->elements[1];
 
 
 
-make_pair(c_736685,quote_expect,NULL);
+make_pair(c_736685,quote_expect,NULL);c_736685.hdr.immutable = 1;
 
-make_pair(c_736684,NULL,&c_736685);
+make_pair(c_736684,NULL,&c_736685);c_736684.hdr.immutable = 1;
 
-make_pair(c_736683,quote_lambda,&c_736684);
+make_pair(c_736683,quote_lambda,&c_736684);c_736683.hdr.immutable = 1;
 
-make_pair(c_736689,quote_results,NULL);
+make_pair(c_736689,quote_results,NULL);c_736689.hdr.immutable = 1;
 
-make_pair(c_736688,quote_results,&c_736689);
+make_pair(c_736688,quote_results,&c_736689);c_736688.hdr.immutable = 1;
 
-make_pair(c_736687,quote_lambda,&c_736688);
+make_pair(c_736687,quote_lambda,&c_736688);c_736687.hdr.immutable = 1;
 
-make_pair(c_736686,&c_736687,NULL);
+make_pair(c_736686,&c_736687,NULL);c_736686.hdr.immutable = 1;
 
-make_pair(c_736682,&c_736683,&c_736686);
+make_pair(c_736682,&c_736683,&c_736686);c_736682.hdr.immutable = 1;
 
-make_pair(c_736681,quote_call_91with_91values,&c_736682);
+make_pair(c_736681,quote_call_91with_91values,&c_736682);c_736681.hdr.immutable = 1;
 
-make_pair(c_736695,quote_expr,NULL);
+make_pair(c_736695,quote_expr,NULL);c_736695.hdr.immutable = 1;
 
-make_pair(c_736694,NULL,&c_736695);
+make_pair(c_736694,NULL,&c_736695);c_736694.hdr.immutable = 1;
 
-make_pair(c_736693,quote_lambda,&c_736694);
+make_pair(c_736693,quote_lambda,&c_736694);c_736693.hdr.immutable = 1;
 
-make_pair(c_736699,quote_results,NULL);
+make_pair(c_736699,quote_results,NULL);c_736699.hdr.immutable = 1;
 
-make_pair(c_736698,quote_results,&c_736699);
+make_pair(c_736698,quote_results,&c_736699);c_736698.hdr.immutable = 1;
 
-make_pair(c_736697,quote_lambda,&c_736698);
+make_pair(c_736697,quote_lambda,&c_736698);c_736697.hdr.immutable = 1;
 
-make_pair(c_736696,&c_736697,NULL);
+make_pair(c_736696,&c_736697,NULL);c_736696.hdr.immutable = 1;
 
-make_pair(c_736692,&c_736693,&c_736696);
+make_pair(c_736692,&c_736693,&c_736696);c_736692.hdr.immutable = 1;
 
-make_pair(c_736691,quote_call_91with_91values,&c_736692);
+make_pair(c_736691,quote_call_91with_91values,&c_736692);c_736691.hdr.immutable = 1;
 
-make_pair(c_736690,&c_736691,NULL);
+make_pair(c_736690,&c_736691,NULL);c_736690.hdr.immutable = 1;
 
-make_pair(c_736680,&c_736681,&c_736690);
+make_pair(c_736680,&c_736681,&c_736690);c_736680.hdr.immutable = 1;
 
-make_pair(c_736679,quote_name,&c_736680);
+make_pair(c_736679,quote_name,&c_736680);c_736679.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736643, Cyc_car(data, ((closureN)self_734251)->elements[2]), r_732412, &c_736679);; 
 }
 
@@ -21513,49 +21513,49 @@ c_736645.elements = (object *)e_736651;
 c_736645.elements[0] = ((closureN)self_734252)->elements[0];
 
 
-make_pair(c_736660,quote_expect,NULL);
+make_pair(c_736660,quote_expect,NULL);c_736660.hdr.immutable = 1;
 
-make_pair(c_736659,NULL,&c_736660);
+make_pair(c_736659,NULL,&c_736660);c_736659.hdr.immutable = 1;
 
-make_pair(c_736658,quote_lambda,&c_736659);
+make_pair(c_736658,quote_lambda,&c_736659);c_736658.hdr.immutable = 1;
 
-make_pair(c_736664,quote_results,NULL);
+make_pair(c_736664,quote_results,NULL);c_736664.hdr.immutable = 1;
 
-make_pair(c_736663,quote_results,&c_736664);
+make_pair(c_736663,quote_results,&c_736664);c_736663.hdr.immutable = 1;
 
-make_pair(c_736662,quote_lambda,&c_736663);
+make_pair(c_736662,quote_lambda,&c_736663);c_736662.hdr.immutable = 1;
 
-make_pair(c_736661,&c_736662,NULL);
+make_pair(c_736661,&c_736662,NULL);c_736661.hdr.immutable = 1;
 
-make_pair(c_736657,&c_736658,&c_736661);
+make_pair(c_736657,&c_736658,&c_736661);c_736657.hdr.immutable = 1;
 
-make_pair(c_736656,quote_call_91with_91values,&c_736657);
+make_pair(c_736656,quote_call_91with_91values,&c_736657);c_736656.hdr.immutable = 1;
 
-make_pair(c_736670,quote_expr,NULL);
+make_pair(c_736670,quote_expr,NULL);c_736670.hdr.immutable = 1;
 
-make_pair(c_736669,NULL,&c_736670);
+make_pair(c_736669,NULL,&c_736670);c_736669.hdr.immutable = 1;
 
-make_pair(c_736668,quote_lambda,&c_736669);
+make_pair(c_736668,quote_lambda,&c_736669);c_736668.hdr.immutable = 1;
 
-make_pair(c_736674,quote_results,NULL);
+make_pair(c_736674,quote_results,NULL);c_736674.hdr.immutable = 1;
 
-make_pair(c_736673,quote_results,&c_736674);
+make_pair(c_736673,quote_results,&c_736674);c_736673.hdr.immutable = 1;
 
-make_pair(c_736672,quote_lambda,&c_736673);
+make_pair(c_736672,quote_lambda,&c_736673);c_736672.hdr.immutable = 1;
 
-make_pair(c_736671,&c_736672,NULL);
+make_pair(c_736671,&c_736672,NULL);c_736671.hdr.immutable = 1;
 
-make_pair(c_736667,&c_736668,&c_736671);
+make_pair(c_736667,&c_736668,&c_736671);c_736667.hdr.immutable = 1;
 
-make_pair(c_736666,quote_call_91with_91values,&c_736667);
+make_pair(c_736666,quote_call_91with_91values,&c_736667);c_736666.hdr.immutable = 1;
 
-make_pair(c_736665,&c_736666,NULL);
+make_pair(c_736665,&c_736666,NULL);c_736665.hdr.immutable = 1;
 
-make_pair(c_736655,&c_736656,&c_736665);
+make_pair(c_736655,&c_736656,&c_736665);c_736655.hdr.immutable = 1;
 
-make_pair(c_736654,quote_name,&c_736655);
+make_pair(c_736654,quote_name,&c_736655);c_736654.hdr.immutable = 1;
 
-make_pair(c_736653,quote_test,&c_736654);
+make_pair(c_736653,quote_test,&c_736654);c_736653.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736645, ((closureN)self_734252)->elements[1], r_732410, &c_736653);; 
 }
 
@@ -21620,7 +21620,7 @@ c_736495.elements[2] = ((closureN)self_734255)->elements[1];
 
 
 
-make_pair(c_736529,quote_expr,NULL);
+make_pair(c_736529,quote_expr,NULL);c_736529.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736495, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734255)->elements[1])), NULL, &c_736529);; 
 }
 
@@ -21641,9 +21641,9 @@ c_736497.elements[1] = ((closureN)self_734256)->elements[1];
 
 
 
-make_pair(c_736522,quote_expr,NULL);
+make_pair(c_736522,quote_expr,NULL);c_736522.hdr.immutable = 1;
 
-make_pair(c_736521,quote_expect,&c_736522);
+make_pair(c_736521,quote_expect,&c_736522);c_736521.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736497, Cyc_car(data, ((closureN)self_734256)->elements[2]), r_732498, &c_736521);; 
 }
 
@@ -21662,11 +21662,11 @@ c_736499.elements[0] = ((closureN)self_734257)->elements[0];
 c_736499.elements[1] = ((closureN)self_734257)->elements[1];
 
 
-make_pair(c_736516,quote_expr,NULL);
+make_pair(c_736516,quote_expr,NULL);c_736516.hdr.immutable = 1;
 
-make_pair(c_736515,quote_expect,&c_736516);
+make_pair(c_736515,quote_expect,&c_736516);c_736515.hdr.immutable = 1;
 
-make_pair(c_736514,boolean_f,&c_736515);
+make_pair(c_736514,boolean_f,&c_736515);c_736514.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736499, boolean_f, r_732496, &c_736514);; 
 }
 
@@ -21684,13 +21684,13 @@ c_736501.elements = (object *)e_736507;
 c_736501.elements[0] = ((closureN)self_734258)->elements[0];
 
 
-make_pair(c_736512,quote_expr,NULL);
+make_pair(c_736512,quote_expr,NULL);c_736512.hdr.immutable = 1;
 
-make_pair(c_736511,quote_expect,&c_736512);
+make_pair(c_736511,quote_expect,&c_736512);c_736511.hdr.immutable = 1;
 
-make_pair(c_736510,boolean_f,&c_736511);
+make_pair(c_736510,boolean_f,&c_736511);c_736510.hdr.immutable = 1;
 
-make_pair(c_736509,quote_test_91values,&c_736510);
+make_pair(c_736509,quote_test_91values,&c_736510);c_736509.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736501, ((closureN)self_734258)->elements[1], r_732494, &c_736509);; 
 }
 
@@ -21945,7 +21945,7 @@ c_736392.elements[3] = ((closureN)self_734200)->elements[2];
 
 
 
-make_pair(c_736435,quote_expr,NULL);
+make_pair(c_736435,quote_expr,NULL);c_736435.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736392, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734200)->elements[2])), NULL, &c_736435);; 
 }
 
@@ -21965,9 +21965,9 @@ c_736394.elements[1] = ((closureN)self_734201)->elements[1];
 c_736394.elements[2] = ((closureN)self_734201)->elements[3];
 
 
-make_pair(c_736428,quote_expr,NULL);
+make_pair(c_736428,quote_expr,NULL);c_736428.hdr.immutable = 1;
 
-make_pair(c_736427,quote_not,&c_736428);
+make_pair(c_736427,quote_not,&c_736428);c_736427.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736394, ((closureN)self_734201)->elements[2], r_732362, &c_736427);; 
 }
 
@@ -21987,11 +21987,11 @@ c_736396.elements[1] = ((closureN)self_734202)->elements[1];
 c_736396.elements[2] = ((closureN)self_734202)->elements[2];
 
 
-make_pair(c_736424,quote_expr,NULL);
+make_pair(c_736424,quote_expr,NULL);c_736424.hdr.immutable = 1;
 
-make_pair(c_736423,quote_not,&c_736424);
+make_pair(c_736423,quote_not,&c_736424);c_736423.hdr.immutable = 1;
 
-make_pair(c_736422,&c_736423,NULL);
+make_pair(c_736422,&c_736423,NULL);c_736422.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736396, r_732358, NULL, &c_736422);; 
 }
 
@@ -22012,13 +22012,13 @@ c_736398.elements[1] = ((closureN)self_734203)->elements[1];
 
 
 
-make_pair(c_736420,quote_expr,NULL);
+make_pair(c_736420,quote_expr,NULL);c_736420.hdr.immutable = 1;
 
-make_pair(c_736419,quote_not,&c_736420);
+make_pair(c_736419,quote_not,&c_736420);c_736419.hdr.immutable = 1;
 
-make_pair(c_736418,&c_736419,NULL);
+make_pair(c_736418,&c_736419,NULL);c_736418.hdr.immutable = 1;
 
-make_pair(c_736417,quote_name,&c_736418);
+make_pair(c_736417,quote_name,&c_736418);c_736417.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736398, Cyc_car(data, ((closureN)self_734203)->elements[2]), r_732356, &c_736417);; 
 }
 
@@ -22036,15 +22036,15 @@ c_736400.elements = (object *)e_736406;
 c_736400.elements[0] = ((closureN)self_734204)->elements[0];
 
 
-make_pair(c_736412,quote_expr,NULL);
+make_pair(c_736412,quote_expr,NULL);c_736412.hdr.immutable = 1;
 
-make_pair(c_736411,quote_not,&c_736412);
+make_pair(c_736411,quote_not,&c_736412);c_736411.hdr.immutable = 1;
 
-make_pair(c_736410,&c_736411,NULL);
+make_pair(c_736410,&c_736411,NULL);c_736410.hdr.immutable = 1;
 
-make_pair(c_736409,quote_name,&c_736410);
+make_pair(c_736409,quote_name,&c_736410);c_736409.hdr.immutable = 1;
 
-make_pair(c_736408,quote_test_91assert,&c_736409);
+make_pair(c_736408,quote_test_91assert,&c_736409);c_736408.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736400, ((closureN)self_734204)->elements[1], r_732354, &c_736408);; 
 }
 
@@ -22119,7 +22119,7 @@ c_736324.elements[2] = r_732381;
 
 
 
-make_pair(c_736354,quote_expr,NULL);
+make_pair(c_736354,quote_expr,NULL);c_736354.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736324, Cyc_car(data, ((closureN)self_734208)->elements[2]), NULL, &c_736354);; 
 }
 
@@ -22138,9 +22138,9 @@ c_736326.elements[0] = ((closureN)self_734209)->elements[0];
 c_736326.elements[1] = ((closureN)self_734209)->elements[1];
 
 
-make_pair(c_736349,quote_expr,NULL);
+make_pair(c_736349,quote_expr,NULL);c_736349.hdr.immutable = 1;
 
-make_pair(c_736348,quote_not,&c_736349);
+make_pair(c_736348,quote_not,&c_736349);c_736348.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736326, ((closureN)self_734209)->elements[2], r_732382, &c_736348);; 
 }
 
@@ -22159,11 +22159,11 @@ c_736328.elements[0] = ((closureN)self_734210)->elements[0];
 c_736328.elements[1] = ((closureN)self_734210)->elements[1];
 
 
-make_pair(c_736345,quote_expr,NULL);
+make_pair(c_736345,quote_expr,NULL);c_736345.hdr.immutable = 1;
 
-make_pair(c_736344,quote_not,&c_736345);
+make_pair(c_736344,quote_not,&c_736345);c_736344.hdr.immutable = 1;
 
-make_pair(c_736343,&c_736344,NULL);
+make_pair(c_736343,&c_736344,NULL);c_736343.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736328, r_732378, NULL, &c_736343);; 
 }
 
@@ -22181,13 +22181,13 @@ c_736330.elements = (object *)e_736336;
 c_736330.elements[0] = ((closureN)self_734211)->elements[0];
 
 
-make_pair(c_736341,quote_expr,NULL);
+make_pair(c_736341,quote_expr,NULL);c_736341.hdr.immutable = 1;
 
-make_pair(c_736340,quote_not,&c_736341);
+make_pair(c_736340,quote_not,&c_736341);c_736340.hdr.immutable = 1;
 
-make_pair(c_736339,&c_736340,NULL);
+make_pair(c_736339,&c_736340,NULL);c_736339.hdr.immutable = 1;
 
-make_pair(c_736338,quote_test_91assert,&c_736339);
+make_pair(c_736338,quote_test_91assert,&c_736339);c_736338.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736330, ((closureN)self_734211)->elements[1], r_732376, &c_736338);; 
 }
 
@@ -22539,7 +22539,7 @@ c_736188.elements[3] = ((closureN)self_734167)->elements[3];
 c_736188.elements[4] = ((closureN)self_734167)->elements[4];
 
 
-make_pair(c_736256,quote_test_91assert,NULL);
+make_pair(c_736256,quote_test_91assert,NULL);c_736256.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736188, r_732285, NULL, &c_736256);; 
 }
 
@@ -22560,9 +22560,9 @@ c_736190.elements[2] = ((closureN)self_734168)->elements[2];
 c_736190.elements[3] = ((closureN)self_734168)->elements[4];
 
 
-make_pair(c_736254,quote_test_91assert,NULL);
+make_pair(c_736254,quote_test_91assert,NULL);c_736254.hdr.immutable = 1;
 
-make_pair(c_736253,quote_quote,&c_736254);
+make_pair(c_736253,quote_quote,&c_736254);c_736253.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736190, ((closureN)self_734168)->elements[3], r_732283, &c_736253);; 
 }
 
@@ -22601,11 +22601,11 @@ c_736195.elements[1] = ((closureN)self_734170)->elements[2];
 c_736195.elements[2] = ((closureN)self_734170)->elements[3];
 
 
-make_pair(c_736249,quote__93_93_93,NULL);
+make_pair(c_736249,quote__93_93_93,NULL);c_736249.hdr.immutable = 1;
 
-make_pair(c_736248,quote_a,&c_736249);
+make_pair(c_736248,quote_a,&c_736249);c_736248.hdr.immutable = 1;
 
-make_pair(c_736247,quote_test,&c_736248);
+make_pair(c_736247,quote_test,&c_736248);c_736247.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736195, r_732279, ((closureN)self_734170)->elements[0], &c_736247);; 
 }
 
@@ -22625,13 +22625,13 @@ c_736197.elements[1] = ((closureN)self_734171)->elements[1];
 c_736197.elements[2] = ((closureN)self_734171)->elements[2];
 
 
-make_pair(c_736244,quote__93_93_93,NULL);
+make_pair(c_736244,quote__93_93_93,NULL);c_736244.hdr.immutable = 1;
 
-make_pair(c_736243,quote_a,&c_736244);
+make_pair(c_736243,quote_a,&c_736244);c_736243.hdr.immutable = 1;
 
-make_pair(c_736242,quote_test,&c_736243);
+make_pair(c_736242,quote_test,&c_736243);c_736242.hdr.immutable = 1;
 
-make_pair(c_736241,&c_736242,NULL);
+make_pair(c_736241,&c_736242,NULL);c_736241.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736197, r_732276, NULL, &c_736241);; 
 }
 
@@ -22653,17 +22653,17 @@ c_736199.elements[2] = ((closureN)self_734172)->elements[2];
 
 make_utf8_string_with_len(c_736233, "1 or 2 arguments required", 25, 25);
 
-make_utf8_string_with_len(c_736235, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_736235, "1 or 2 arguments required", 25, 25);c_736235.hdr.immutable = 1;
 
-make_pair(c_736239,quote__93_93_93,NULL);
+make_pair(c_736239,quote__93_93_93,NULL);c_736239.hdr.immutable = 1;
 
-make_pair(c_736238,quote_a,&c_736239);
+make_pair(c_736238,quote_a,&c_736239);c_736238.hdr.immutable = 1;
 
-make_pair(c_736237,quote_test,&c_736238);
+make_pair(c_736237,quote_test,&c_736238);c_736237.hdr.immutable = 1;
 
-make_pair(c_736236,&c_736237,NULL);
+make_pair(c_736236,&c_736237,NULL);c_736236.hdr.immutable = 1;
 
-make_pair(c_736234,&c_736235,&c_736236);
+make_pair(c_736234,&c_736235,&c_736236);c_736234.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736199, &c_736233, r_732274, &c_736234);; 
 }
 
@@ -22682,23 +22682,23 @@ c_736201.elements[0] = ((closureN)self_734173)->elements[0];
 c_736201.elements[1] = ((closureN)self_734173)->elements[1];
 
 
-make_pair(c_736225,quote_test_91assert,NULL);
+make_pair(c_736225,quote_test_91assert,NULL);c_736225.hdr.immutable = 1;
 
-make_pair(c_736224,quote_quote,&c_736225);
+make_pair(c_736224,quote_quote,&c_736225);c_736224.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_736227, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_736227, "1 or 2 arguments required", 25, 25);c_736227.hdr.immutable = 1;
 
-make_pair(c_736231,quote__93_93_93,NULL);
+make_pair(c_736231,quote__93_93_93,NULL);c_736231.hdr.immutable = 1;
 
-make_pair(c_736230,quote_a,&c_736231);
+make_pair(c_736230,quote_a,&c_736231);c_736230.hdr.immutable = 1;
 
-make_pair(c_736229,quote_test,&c_736230);
+make_pair(c_736229,quote_test,&c_736230);c_736229.hdr.immutable = 1;
 
-make_pair(c_736228,&c_736229,NULL);
+make_pair(c_736228,&c_736229,NULL);c_736228.hdr.immutable = 1;
 
-make_pair(c_736226,&c_736227,&c_736228);
+make_pair(c_736226,&c_736227,&c_736228);c_736226.hdr.immutable = 1;
 
-make_pair(c_736223,&c_736224,&c_736226);
+make_pair(c_736223,&c_736224,&c_736226);c_736223.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736201, ((closureN)self_734173)->elements[2], r_732272, &c_736223);; 
 }
 
@@ -22716,25 +22716,25 @@ c_736203.elements = (object *)e_736209;
 c_736203.elements[0] = ((closureN)self_734174)->elements[0];
 
 
-make_pair(c_736214,quote_test_91assert,NULL);
+make_pair(c_736214,quote_test_91assert,NULL);c_736214.hdr.immutable = 1;
 
-make_pair(c_736213,quote_quote,&c_736214);
+make_pair(c_736213,quote_quote,&c_736214);c_736213.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_736216, "1 or 2 arguments required", 25, 25);
+make_utf8_string_with_len(c_736216, "1 or 2 arguments required", 25, 25);c_736216.hdr.immutable = 1;
 
-make_pair(c_736220,quote__93_93_93,NULL);
+make_pair(c_736220,quote__93_93_93,NULL);c_736220.hdr.immutable = 1;
 
-make_pair(c_736219,quote_a,&c_736220);
+make_pair(c_736219,quote_a,&c_736220);c_736219.hdr.immutable = 1;
 
-make_pair(c_736218,quote_test,&c_736219);
+make_pair(c_736218,quote_test,&c_736219);c_736218.hdr.immutable = 1;
 
-make_pair(c_736217,&c_736218,NULL);
+make_pair(c_736217,&c_736218,NULL);c_736217.hdr.immutable = 1;
 
-make_pair(c_736215,&c_736216,&c_736217);
+make_pair(c_736215,&c_736216,&c_736217);c_736215.hdr.immutable = 1;
 
-make_pair(c_736212,&c_736213,&c_736215);
+make_pair(c_736212,&c_736213,&c_736215);c_736212.hdr.immutable = 1;
 
-make_pair(c_736211,quote_test_91syntax_91error,&c_736212);
+make_pair(c_736211,quote_test_91syntax_91error,&c_736212);c_736211.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736203, ((closureN)self_734174)->elements[1], r_732269, &c_736211);; 
 }
 
@@ -22814,7 +22814,7 @@ c_736099.elements[1] = ((closureN)self_734178)->elements[1];
 c_736099.elements[2] = ((closureN)self_734178)->elements[2];
 
 
-make_pair(c_736160,quote_assertion,boolean_t);
+make_pair(c_736160,quote_assertion,boolean_t);c_736160.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736099, r_732316, boolean_t, &c_736160);; 
 }
 
@@ -22834,9 +22834,9 @@ c_736101.elements[1] = ((closureN)self_734179)->elements[1];
 c_736101.elements[2] = ((closureN)self_734179)->elements[2];
 
 
-make_pair(c_736158,quote_assertion,boolean_t);
+make_pair(c_736158,quote_assertion,boolean_t);c_736158.hdr.immutable = 1;
 
-make_pair(c_736157,&c_736158,NULL);
+make_pair(c_736157,&c_736158,NULL);c_736157.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736101, r_732313, NULL, &c_736157);; 
 }
 
@@ -22856,11 +22856,11 @@ c_736103.elements[1] = ((closureN)self_734180)->elements[1];
 c_736103.elements[2] = ((closureN)self_734180)->elements[2];
 
 
-make_pair(c_736155,quote_assertion,boolean_t);
+make_pair(c_736155,quote_assertion,boolean_t);c_736155.hdr.immutable = 1;
 
-make_pair(c_736154,&c_736155,NULL);
+make_pair(c_736154,&c_736155,NULL);c_736154.hdr.immutable = 1;
 
-make_pair(c_736153,&c_736154,NULL);
+make_pair(c_736153,&c_736154,NULL);c_736153.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736103, r_732310, NULL, &c_736153);; 
 }
 
@@ -22884,13 +22884,13 @@ c_736105.elements[2] = ((closureN)self_734181)->elements[2];
 
 
 
-make_pair(c_736151,quote_assertion,boolean_t);
+make_pair(c_736151,quote_assertion,boolean_t);c_736151.hdr.immutable = 1;
 
-make_pair(c_736150,&c_736151,NULL);
+make_pair(c_736150,&c_736151,NULL);c_736150.hdr.immutable = 1;
 
-make_pair(c_736149,&c_736150,NULL);
+make_pair(c_736149,&c_736150,NULL);c_736149.hdr.immutable = 1;
 
-make_pair(c_736148,quote_expr,&c_736149);
+make_pair(c_736148,quote_expr,&c_736149);c_736148.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736105, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734181)->elements[2])), r_732308, &c_736148);; 
 }
 
@@ -22910,15 +22910,15 @@ c_736107.elements[1] = ((closureN)self_734182)->elements[1];
 c_736107.elements[2] = ((closureN)self_734182)->elements[2];
 
 
-make_pair(c_736141,quote_assertion,boolean_t);
+make_pair(c_736141,quote_assertion,boolean_t);c_736141.hdr.immutable = 1;
 
-make_pair(c_736140,&c_736141,NULL);
+make_pair(c_736140,&c_736141,NULL);c_736140.hdr.immutable = 1;
 
-make_pair(c_736139,&c_736140,NULL);
+make_pair(c_736139,&c_736140,NULL);c_736139.hdr.immutable = 1;
 
-make_pair(c_736138,quote_expr,&c_736139);
+make_pair(c_736138,quote_expr,&c_736139);c_736138.hdr.immutable = 1;
 
-make_pair(c_736137,boolean_f,&c_736138);
+make_pair(c_736137,boolean_f,&c_736138);c_736137.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736107, boolean_f, r_732306, &c_736137);; 
 }
 
@@ -22939,17 +22939,17 @@ c_736109.elements[1] = ((closureN)self_734183)->elements[1];
 
 
 
-make_pair(c_736135,quote_assertion,boolean_t);
+make_pair(c_736135,quote_assertion,boolean_t);c_736135.hdr.immutable = 1;
 
-make_pair(c_736134,&c_736135,NULL);
+make_pair(c_736134,&c_736135,NULL);c_736134.hdr.immutable = 1;
 
-make_pair(c_736133,&c_736134,NULL);
+make_pair(c_736133,&c_736134,NULL);c_736133.hdr.immutable = 1;
 
-make_pair(c_736132,quote_expr,&c_736133);
+make_pair(c_736132,quote_expr,&c_736133);c_736132.hdr.immutable = 1;
 
-make_pair(c_736131,boolean_f,&c_736132);
+make_pair(c_736131,boolean_f,&c_736132);c_736131.hdr.immutable = 1;
 
-make_pair(c_736130,quote_name,&c_736131);
+make_pair(c_736130,quote_name,&c_736131);c_736130.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736109, Cyc_car(data, ((closureN)self_734183)->elements[2]), r_732304, &c_736130);; 
 }
 
@@ -22967,19 +22967,19 @@ c_736111.elements = (object *)e_736117;
 c_736111.elements[0] = ((closureN)self_734184)->elements[0];
 
 
-make_pair(c_736125,quote_assertion,boolean_t);
+make_pair(c_736125,quote_assertion,boolean_t);c_736125.hdr.immutable = 1;
 
-make_pair(c_736124,&c_736125,NULL);
+make_pair(c_736124,&c_736125,NULL);c_736124.hdr.immutable = 1;
 
-make_pair(c_736123,&c_736124,NULL);
+make_pair(c_736123,&c_736124,NULL);c_736123.hdr.immutable = 1;
 
-make_pair(c_736122,quote_expr,&c_736123);
+make_pair(c_736122,quote_expr,&c_736123);c_736122.hdr.immutable = 1;
 
-make_pair(c_736121,boolean_f,&c_736122);
+make_pair(c_736121,boolean_f,&c_736122);c_736121.hdr.immutable = 1;
 
-make_pair(c_736120,quote_name,&c_736121);
+make_pair(c_736120,quote_name,&c_736121);c_736120.hdr.immutable = 1;
 
-make_pair(c_736119,quote_test_91propagate_91info,&c_736120);
+make_pair(c_736119,quote_test_91propagate_91info,&c_736120);c_736119.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736111, ((closureN)self_734184)->elements[1], r_732302, &c_736119);; 
 }
 
@@ -23034,7 +23034,7 @@ c_736040.elements[1] = r_732327;
 
 
 
-make_pair(c_736062,quote_expr,NULL);
+make_pair(c_736062,quote_expr,NULL);c_736062.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736040, Cyc_car(data, ((closureN)self_734187)->elements[1]), NULL, &c_736062);; 
 }
 
@@ -23053,9 +23053,9 @@ c_736042.elements[0] = ((closureN)self_734188)->elements[0];
 c_736042.elements[1] = ((closureN)self_734188)->elements[1];
 
 
-make_pair(c_736057,quote_expr,NULL);
+make_pair(c_736057,quote_expr,NULL);c_736057.hdr.immutable = 1;
 
-make_pair(c_736056,boolean_f,&c_736057);
+make_pair(c_736056,boolean_f,&c_736057);c_736056.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736042, boolean_f, r_732330, &c_736056);; 
 }
 
@@ -23073,11 +23073,11 @@ c_736044.elements = (object *)e_736050;
 c_736044.elements[0] = ((closureN)self_734189)->elements[0];
 
 
-make_pair(c_736054,quote_expr,NULL);
+make_pair(c_736054,quote_expr,NULL);c_736054.hdr.immutable = 1;
 
-make_pair(c_736053,boolean_f,&c_736054);
+make_pair(c_736053,boolean_f,&c_736054);c_736053.hdr.immutable = 1;
 
-make_pair(c_736052,quote_test_91assert,&c_736053);
+make_pair(c_736052,quote_test_91assert,&c_736053);c_736052.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_736044, ((closureN)self_734189)->elements[1], r_732328, &c_736052);; 
 }
 
@@ -23263,7 +23263,7 @@ c_735932.elements[4] = ((closureN)self_734144)->elements[3];
 
 
 
-make_pair(c_735991,quote_equal,NULL);
+make_pair(c_735991,quote_equal,NULL);c_735991.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735932, Cyc_car(data, ((closureN)self_734144)->elements[3]), NULL, &c_735991);; 
 }
 
@@ -23284,9 +23284,9 @@ c_735934.elements[2] = ((closureN)self_734145)->elements[3];
 c_735934.elements[3] = ((closureN)self_734145)->elements[4];
 
 
-make_pair(c_735986,quote_equal,NULL);
+make_pair(c_735986,quote_equal,NULL);c_735986.hdr.immutable = 1;
 
-make_pair(c_735985,quote_current_91test_91comparator,&c_735986);
+make_pair(c_735985,quote_current_91test_91comparator,&c_735986);c_735985.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735934, ((closureN)self_734145)->elements[2], r_732249, &c_735985);; 
 }
 
@@ -23307,11 +23307,11 @@ c_735936.elements[2] = ((closureN)self_734146)->elements[2];
 c_735936.elements[3] = ((closureN)self_734146)->elements[3];
 
 
-make_pair(c_735982,quote_equal,NULL);
+make_pair(c_735982,quote_equal,NULL);c_735982.hdr.immutable = 1;
 
-make_pair(c_735981,quote_current_91test_91comparator,&c_735982);
+make_pair(c_735981,quote_current_91test_91comparator,&c_735982);c_735981.hdr.immutable = 1;
 
-make_pair(c_735980,&c_735981,NULL);
+make_pair(c_735980,&c_735981,NULL);c_735980.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735936, r_732245, NULL, &c_735980);; 
 }
 
@@ -23352,7 +23352,7 @@ c_735941.elements[2] = ((closureN)self_734148)->elements[2];
 
 
 
-make_pair(c_735977,quote_test,quote_args);
+make_pair(c_735977,quote_test,quote_args);c_735977.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735941, r_732242, Cyc_cdr(data, ((closureN)self_734148)->elements[3]), &c_735977);; 
 }
 
@@ -23372,9 +23372,9 @@ c_735943.elements[1] = ((closureN)self_734149)->elements[1];
 c_735943.elements[2] = ((closureN)self_734149)->elements[2];
 
 
-make_pair(c_735972,quote_test,quote_args);
+make_pair(c_735972,quote_test,quote_args);c_735972.hdr.immutable = 1;
 
-make_pair(c_735971,&c_735972,NULL);
+make_pair(c_735971,&c_735972,NULL);c_735971.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735943, r_732239, NULL, &c_735971);; 
 }
 
@@ -23393,17 +23393,17 @@ c_735945.elements[0] = ((closureN)self_734150)->elements[0];
 c_735945.elements[1] = ((closureN)self_734150)->elements[1];
 
 
-make_pair(c_735967,quote_equal,NULL);
+make_pair(c_735967,quote_equal,NULL);c_735967.hdr.immutable = 1;
 
-make_pair(c_735966,quote_current_91test_91comparator,&c_735967);
+make_pair(c_735966,quote_current_91test_91comparator,&c_735967);c_735966.hdr.immutable = 1;
 
-make_pair(c_735965,&c_735966,NULL);
+make_pair(c_735965,&c_735966,NULL);c_735965.hdr.immutable = 1;
 
-make_pair(c_735969,quote_test,quote_args);
+make_pair(c_735969,quote_test,quote_args);c_735969.hdr.immutable = 1;
 
-make_pair(c_735968,&c_735969,NULL);
+make_pair(c_735968,&c_735969,NULL);c_735968.hdr.immutable = 1;
 
-make_pair(c_735964,&c_735965,&c_735968);
+make_pair(c_735964,&c_735965,&c_735968);c_735964.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735945, ((closureN)self_734150)->elements[2], r_732237, &c_735964);; 
 }
 
@@ -23421,19 +23421,19 @@ c_735947.elements = (object *)e_735953;
 c_735947.elements[0] = ((closureN)self_734151)->elements[0];
 
 
-make_pair(c_735959,quote_equal,NULL);
+make_pair(c_735959,quote_equal,NULL);c_735959.hdr.immutable = 1;
 
-make_pair(c_735958,quote_current_91test_91comparator,&c_735959);
+make_pair(c_735958,quote_current_91test_91comparator,&c_735959);c_735958.hdr.immutable = 1;
 
-make_pair(c_735957,&c_735958,NULL);
+make_pair(c_735957,&c_735958,NULL);c_735957.hdr.immutable = 1;
 
-make_pair(c_735961,quote_test,quote_args);
+make_pair(c_735961,quote_test,quote_args);c_735961.hdr.immutable = 1;
 
-make_pair(c_735960,&c_735961,NULL);
+make_pair(c_735960,&c_735961,NULL);c_735960.hdr.immutable = 1;
 
-make_pair(c_735956,&c_735957,&c_735960);
+make_pair(c_735956,&c_735957,&c_735960);c_735956.hdr.immutable = 1;
 
-make_pair(c_735955,quote_parameterize,&c_735956);
+make_pair(c_735955,quote_parameterize,&c_735956);c_735955.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735947, ((closureN)self_734151)->elements[1], r_732234, &c_735955);; 
 }
 
@@ -23957,7 +23957,7 @@ c_735786.elements[3] = ((closureN)self_734081)->elements[3];
 c_735786.elements[4] = ((closureN)self_734081)->elements[4];
 
 
-make_pair(c_735854,quote_test,NULL);
+make_pair(c_735854,quote_test,NULL);c_735854.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735786, r_732054, NULL, &c_735854);; 
 }
 
@@ -23978,9 +23978,9 @@ c_735788.elements[2] = ((closureN)self_734082)->elements[2];
 c_735788.elements[3] = ((closureN)self_734082)->elements[4];
 
 
-make_pair(c_735852,quote_test,NULL);
+make_pair(c_735852,quote_test,NULL);c_735852.hdr.immutable = 1;
 
-make_pair(c_735851,quote_quote,&c_735852);
+make_pair(c_735851,quote_quote,&c_735852);c_735851.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735788, ((closureN)self_734082)->elements[3], r_732052, &c_735851);; 
 }
 
@@ -24019,11 +24019,11 @@ c_735793.elements[1] = ((closureN)self_734084)->elements[2];
 c_735793.elements[2] = ((closureN)self_734084)->elements[3];
 
 
-make_pair(c_735847,quote__93_93_93,NULL);
+make_pair(c_735847,quote__93_93_93,NULL);c_735847.hdr.immutable = 1;
 
-make_pair(c_735846,quote_a,&c_735847);
+make_pair(c_735846,quote_a,&c_735847);c_735846.hdr.immutable = 1;
 
-make_pair(c_735845,quote_test,&c_735846);
+make_pair(c_735845,quote_test,&c_735846);c_735845.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735793, r_732048, ((closureN)self_734084)->elements[0], &c_735845);; 
 }
 
@@ -24043,13 +24043,13 @@ c_735795.elements[1] = ((closureN)self_734085)->elements[1];
 c_735795.elements[2] = ((closureN)self_734085)->elements[2];
 
 
-make_pair(c_735842,quote__93_93_93,NULL);
+make_pair(c_735842,quote__93_93_93,NULL);c_735842.hdr.immutable = 1;
 
-make_pair(c_735841,quote_a,&c_735842);
+make_pair(c_735841,quote_a,&c_735842);c_735841.hdr.immutable = 1;
 
-make_pair(c_735840,quote_test,&c_735841);
+make_pair(c_735840,quote_test,&c_735841);c_735840.hdr.immutable = 1;
 
-make_pair(c_735839,&c_735840,NULL);
+make_pair(c_735839,&c_735840,NULL);c_735839.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735795, r_732045, NULL, &c_735839);; 
 }
 
@@ -24071,17 +24071,17 @@ c_735797.elements[2] = ((closureN)self_734086)->elements[2];
 
 make_utf8_string_with_len(c_735831, "test requires 2 or 3 arguments", 30, 30);
 
-make_utf8_string_with_len(c_735833, "test requires 2 or 3 arguments", 30, 30);
+make_utf8_string_with_len(c_735833, "test requires 2 or 3 arguments", 30, 30);c_735833.hdr.immutable = 1;
 
-make_pair(c_735837,quote__93_93_93,NULL);
+make_pair(c_735837,quote__93_93_93,NULL);c_735837.hdr.immutable = 1;
 
-make_pair(c_735836,quote_a,&c_735837);
+make_pair(c_735836,quote_a,&c_735837);c_735836.hdr.immutable = 1;
 
-make_pair(c_735835,quote_test,&c_735836);
+make_pair(c_735835,quote_test,&c_735836);c_735835.hdr.immutable = 1;
 
-make_pair(c_735834,&c_735835,NULL);
+make_pair(c_735834,&c_735835,NULL);c_735834.hdr.immutable = 1;
 
-make_pair(c_735832,&c_735833,&c_735834);
+make_pair(c_735832,&c_735833,&c_735834);c_735832.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735797, &c_735831, r_732043, &c_735832);; 
 }
 
@@ -24100,23 +24100,23 @@ c_735799.elements[0] = ((closureN)self_734087)->elements[0];
 c_735799.elements[1] = ((closureN)self_734087)->elements[1];
 
 
-make_pair(c_735823,quote_test,NULL);
+make_pair(c_735823,quote_test,NULL);c_735823.hdr.immutable = 1;
 
-make_pair(c_735822,quote_quote,&c_735823);
+make_pair(c_735822,quote_quote,&c_735823);c_735822.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_735825, "test requires 2 or 3 arguments", 30, 30);
+make_utf8_string_with_len(c_735825, "test requires 2 or 3 arguments", 30, 30);c_735825.hdr.immutable = 1;
 
-make_pair(c_735829,quote__93_93_93,NULL);
+make_pair(c_735829,quote__93_93_93,NULL);c_735829.hdr.immutable = 1;
 
-make_pair(c_735828,quote_a,&c_735829);
+make_pair(c_735828,quote_a,&c_735829);c_735828.hdr.immutable = 1;
 
-make_pair(c_735827,quote_test,&c_735828);
+make_pair(c_735827,quote_test,&c_735828);c_735827.hdr.immutable = 1;
 
-make_pair(c_735826,&c_735827,NULL);
+make_pair(c_735826,&c_735827,NULL);c_735826.hdr.immutable = 1;
 
-make_pair(c_735824,&c_735825,&c_735826);
+make_pair(c_735824,&c_735825,&c_735826);c_735824.hdr.immutable = 1;
 
-make_pair(c_735821,&c_735822,&c_735824);
+make_pair(c_735821,&c_735822,&c_735824);c_735821.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735799, ((closureN)self_734087)->elements[2], r_732041, &c_735821);; 
 }
 
@@ -24134,25 +24134,25 @@ c_735801.elements = (object *)e_735807;
 c_735801.elements[0] = ((closureN)self_734088)->elements[0];
 
 
-make_pair(c_735812,quote_test,NULL);
+make_pair(c_735812,quote_test,NULL);c_735812.hdr.immutable = 1;
 
-make_pair(c_735811,quote_quote,&c_735812);
+make_pair(c_735811,quote_quote,&c_735812);c_735811.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_735814, "test requires 2 or 3 arguments", 30, 30);
+make_utf8_string_with_len(c_735814, "test requires 2 or 3 arguments", 30, 30);c_735814.hdr.immutable = 1;
 
-make_pair(c_735818,quote__93_93_93,NULL);
+make_pair(c_735818,quote__93_93_93,NULL);c_735818.hdr.immutable = 1;
 
-make_pair(c_735817,quote_a,&c_735818);
+make_pair(c_735817,quote_a,&c_735818);c_735817.hdr.immutable = 1;
 
-make_pair(c_735816,quote_test,&c_735817);
+make_pair(c_735816,quote_test,&c_735817);c_735816.hdr.immutable = 1;
 
-make_pair(c_735815,&c_735816,NULL);
+make_pair(c_735815,&c_735816,NULL);c_735815.hdr.immutable = 1;
 
-make_pair(c_735813,&c_735814,&c_735815);
+make_pair(c_735813,&c_735814,&c_735815);c_735813.hdr.immutable = 1;
 
-make_pair(c_735810,&c_735811,&c_735813);
+make_pair(c_735810,&c_735811,&c_735813);c_735810.hdr.immutable = 1;
 
-make_pair(c_735809,quote_test_91syntax_91error,&c_735810);
+make_pair(c_735809,quote_test_91syntax_91error,&c_735810);c_735809.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735801, ((closureN)self_734088)->elements[1], r_732038, &c_735809);; 
 }
 
@@ -24221,7 +24221,7 @@ c_735709.elements[1] = r_732073;
 c_735709.elements[2] = ((closureN)self_734091)->elements[1];
 
 
-make_pair(c_735758,NULL,NULL);
+make_pair(c_735758,NULL,NULL);c_735758.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735709, NULL, NULL, &c_735758);; 
 }
 
@@ -24247,9 +24247,9 @@ c_735711.elements[2] = ((closureN)self_734092)->elements[2];
 
 
 
-make_pair(c_735756,NULL,NULL);
+make_pair(c_735756,NULL,NULL);c_735756.hdr.immutable = 1;
 
-make_pair(c_735755,quote_expr,&c_735756);
+make_pair(c_735755,quote_expr,&c_735756);c_735755.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735711, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734092)->elements[2]))), r_732080, &c_735755);; 
 }
 
@@ -24273,11 +24273,11 @@ c_735713.elements[2] = ((closureN)self_734093)->elements[2];
 
 
 
-make_pair(c_735746,NULL,NULL);
+make_pair(c_735746,NULL,NULL);c_735746.hdr.immutable = 1;
 
-make_pair(c_735745,quote_expr,&c_735746);
+make_pair(c_735745,quote_expr,&c_735746);c_735745.hdr.immutable = 1;
 
-make_pair(c_735744,quote_expect,&c_735745);
+make_pair(c_735744,quote_expect,&c_735745);c_735744.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735713, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734093)->elements[2])), r_732078, &c_735744);; 
 }
 
@@ -24298,13 +24298,13 @@ c_735715.elements[1] = ((closureN)self_734094)->elements[1];
 
 
 
-make_pair(c_735737,NULL,NULL);
+make_pair(c_735737,NULL,NULL);c_735737.hdr.immutable = 1;
 
-make_pair(c_735736,quote_expr,&c_735737);
+make_pair(c_735736,quote_expr,&c_735737);c_735736.hdr.immutable = 1;
 
-make_pair(c_735735,quote_expect,&c_735736);
+make_pair(c_735735,quote_expect,&c_735736);c_735735.hdr.immutable = 1;
 
-make_pair(c_735734,quote_name,&c_735735);
+make_pair(c_735734,quote_name,&c_735735);c_735734.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735715, Cyc_car(data, ((closureN)self_734094)->elements[2]), r_732076, &c_735734);; 
 }
 
@@ -24322,15 +24322,15 @@ c_735717.elements = (object *)e_735723;
 c_735717.elements[0] = ((closureN)self_734095)->elements[0];
 
 
-make_pair(c_735729,NULL,NULL);
+make_pair(c_735729,NULL,NULL);c_735729.hdr.immutable = 1;
 
-make_pair(c_735728,quote_expr,&c_735729);
+make_pair(c_735728,quote_expr,&c_735729);c_735728.hdr.immutable = 1;
 
-make_pair(c_735727,quote_expect,&c_735728);
+make_pair(c_735727,quote_expect,&c_735728);c_735727.hdr.immutable = 1;
 
-make_pair(c_735726,quote_name,&c_735727);
+make_pair(c_735726,quote_name,&c_735727);c_735726.hdr.immutable = 1;
 
-make_pair(c_735725,quote_test_91propagate_91info,&c_735726);
+make_pair(c_735725,quote_test_91propagate_91info,&c_735726);c_735725.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735717, ((closureN)self_734095)->elements[1], r_732074, &c_735725);; 
 }
 
@@ -24449,7 +24449,7 @@ c_735547.elements[3] = ((closureN)self_734100)->elements[3];
 c_735547.elements[4] = ((closureN)self_734100)->elements[4];
 
 
-make_pair(c_735664,quote_test,NULL);
+make_pair(c_735664,quote_test,NULL);c_735664.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735547, r_732124, NULL, &c_735664);; 
 }
 
@@ -24470,9 +24470,9 @@ c_735549.elements[2] = ((closureN)self_734101)->elements[3];
 c_735549.elements[3] = ((closureN)self_734101)->elements[4];
 
 
-make_pair(c_735662,quote_test,NULL);
+make_pair(c_735662,quote_test,NULL);c_735662.hdr.immutable = 1;
 
-make_pair(c_735661,quote_quote,&c_735662);
+make_pair(c_735661,quote_quote,&c_735662);c_735661.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735549, ((closureN)self_734101)->elements[2], r_732122, &c_735661);; 
 }
 
@@ -24519,7 +24519,7 @@ c_735554.elements[4] = ((closureN)self_734103)->elements[3];
 
 
 
-make_pair(c_735657,quote_expr,NULL);
+make_pair(c_735657,quote_expr,NULL);c_735657.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735554, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734103)->elements[3]))), NULL, &c_735657);; 
 }
 
@@ -24545,13 +24545,13 @@ c_735556.elements[4] = ((closureN)self_734104)->elements[4];
 
 
 
-make_pair(c_735647,quote__93_93_93,NULL);
+make_pair(c_735647,quote__93_93_93,NULL);c_735647.hdr.immutable = 1;
 
-make_pair(c_735646,quote_expect,&c_735647);
+make_pair(c_735646,quote_expect,&c_735647);c_735646.hdr.immutable = 1;
 
-make_pair(c_735648,quote_expr,NULL);
+make_pair(c_735648,quote_expr,NULL);c_735648.hdr.immutable = 1;
 
-make_pair(c_735645,&c_735646,&c_735648);
+make_pair(c_735645,&c_735646,&c_735648);c_735645.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735556, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734104)->elements[4])), r_732116, &c_735645);; 
 }
 
@@ -24574,15 +24574,15 @@ c_735558.elements[3] = ((closureN)self_734105)->elements[3];
 
 
 
-make_pair(c_735637,quote__93_93_93,NULL);
+make_pair(c_735637,quote__93_93_93,NULL);c_735637.hdr.immutable = 1;
 
-make_pair(c_735636,quote_expect,&c_735637);
+make_pair(c_735636,quote_expect,&c_735637);c_735636.hdr.immutable = 1;
 
-make_pair(c_735638,quote_expr,NULL);
+make_pair(c_735638,quote_expr,NULL);c_735638.hdr.immutable = 1;
 
-make_pair(c_735635,&c_735636,&c_735638);
+make_pair(c_735635,&c_735636,&c_735638);c_735635.hdr.immutable = 1;
 
-make_pair(c_735634,quote_name,&c_735635);
+make_pair(c_735634,quote_name,&c_735635);c_735634.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735558, Cyc_car(data, ((closureN)self_734105)->elements[4]), r_732114, &c_735634);; 
 }
 
@@ -24602,17 +24602,17 @@ c_735560.elements[1] = ((closureN)self_734106)->elements[1];
 c_735560.elements[2] = ((closureN)self_734106)->elements[2];
 
 
-make_pair(c_735628,quote__93_93_93,NULL);
+make_pair(c_735628,quote__93_93_93,NULL);c_735628.hdr.immutable = 1;
 
-make_pair(c_735627,quote_expect,&c_735628);
+make_pair(c_735627,quote_expect,&c_735628);c_735627.hdr.immutable = 1;
 
-make_pair(c_735629,quote_expr,NULL);
+make_pair(c_735629,quote_expr,NULL);c_735629.hdr.immutable = 1;
 
-make_pair(c_735626,&c_735627,&c_735629);
+make_pair(c_735626,&c_735627,&c_735629);c_735626.hdr.immutable = 1;
 
-make_pair(c_735625,quote_name,&c_735626);
+make_pair(c_735625,quote_name,&c_735626);c_735625.hdr.immutable = 1;
 
-make_pair(c_735624,quote_test,&c_735625);
+make_pair(c_735624,quote_test,&c_735625);c_735624.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735560, ((closureN)self_734106)->elements[3], r_732112, &c_735624);; 
 }
 
@@ -24632,19 +24632,19 @@ c_735562.elements[1] = ((closureN)self_734107)->elements[1];
 c_735562.elements[2] = ((closureN)self_734107)->elements[2];
 
 
-make_pair(c_735620,quote__93_93_93,NULL);
+make_pair(c_735620,quote__93_93_93,NULL);c_735620.hdr.immutable = 1;
 
-make_pair(c_735619,quote_expect,&c_735620);
+make_pair(c_735619,quote_expect,&c_735620);c_735619.hdr.immutable = 1;
 
-make_pair(c_735621,quote_expr,NULL);
+make_pair(c_735621,quote_expr,NULL);c_735621.hdr.immutable = 1;
 
-make_pair(c_735618,&c_735619,&c_735621);
+make_pair(c_735618,&c_735619,&c_735621);c_735618.hdr.immutable = 1;
 
-make_pair(c_735617,quote_name,&c_735618);
+make_pair(c_735617,quote_name,&c_735618);c_735617.hdr.immutable = 1;
 
-make_pair(c_735616,quote_test,&c_735617);
+make_pair(c_735616,quote_test,&c_735617);c_735616.hdr.immutable = 1;
 
-make_pair(c_735615,&c_735616,NULL);
+make_pair(c_735615,&c_735616,NULL);c_735615.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735562, r_732108, NULL, &c_735615);; 
 }
 
@@ -24666,23 +24666,23 @@ c_735564.elements[2] = ((closureN)self_734108)->elements[2];
 
 make_utf8_string_with_len(c_735604, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
 
-make_utf8_string_with_len(c_735606, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
+make_utf8_string_with_len(c_735606, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);c_735606.hdr.immutable = 1;
 
-make_pair(c_735612,quote__93_93_93,NULL);
+make_pair(c_735612,quote__93_93_93,NULL);c_735612.hdr.immutable = 1;
 
-make_pair(c_735611,quote_expect,&c_735612);
+make_pair(c_735611,quote_expect,&c_735612);c_735611.hdr.immutable = 1;
 
-make_pair(c_735613,quote_expr,NULL);
+make_pair(c_735613,quote_expr,NULL);c_735613.hdr.immutable = 1;
 
-make_pair(c_735610,&c_735611,&c_735613);
+make_pair(c_735610,&c_735611,&c_735613);c_735610.hdr.immutable = 1;
 
-make_pair(c_735609,quote_name,&c_735610);
+make_pair(c_735609,quote_name,&c_735610);c_735609.hdr.immutable = 1;
 
-make_pair(c_735608,quote_test,&c_735609);
+make_pair(c_735608,quote_test,&c_735609);c_735608.hdr.immutable = 1;
 
-make_pair(c_735607,&c_735608,NULL);
+make_pair(c_735607,&c_735608,NULL);c_735607.hdr.immutable = 1;
 
-make_pair(c_735605,&c_735606,&c_735607);
+make_pair(c_735605,&c_735606,&c_735607);c_735605.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735564, &c_735604, r_732106, &c_735605);; 
 }
 
@@ -24701,29 +24701,29 @@ c_735566.elements[0] = ((closureN)self_734109)->elements[0];
 c_735566.elements[1] = ((closureN)self_734109)->elements[1];
 
 
-make_pair(c_735593,quote_test,NULL);
+make_pair(c_735593,quote_test,NULL);c_735593.hdr.immutable = 1;
 
-make_pair(c_735592,quote_quote,&c_735593);
+make_pair(c_735592,quote_quote,&c_735593);c_735592.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_735595, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
+make_utf8_string_with_len(c_735595, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);c_735595.hdr.immutable = 1;
 
-make_pair(c_735601,quote__93_93_93,NULL);
+make_pair(c_735601,quote__93_93_93,NULL);c_735601.hdr.immutable = 1;
 
-make_pair(c_735600,quote_expect,&c_735601);
+make_pair(c_735600,quote_expect,&c_735601);c_735600.hdr.immutable = 1;
 
-make_pair(c_735602,quote_expr,NULL);
+make_pair(c_735602,quote_expr,NULL);c_735602.hdr.immutable = 1;
 
-make_pair(c_735599,&c_735600,&c_735602);
+make_pair(c_735599,&c_735600,&c_735602);c_735599.hdr.immutable = 1;
 
-make_pair(c_735598,quote_name,&c_735599);
+make_pair(c_735598,quote_name,&c_735599);c_735598.hdr.immutable = 1;
 
-make_pair(c_735597,quote_test,&c_735598);
+make_pair(c_735597,quote_test,&c_735598);c_735597.hdr.immutable = 1;
 
-make_pair(c_735596,&c_735597,NULL);
+make_pair(c_735596,&c_735597,NULL);c_735596.hdr.immutable = 1;
 
-make_pair(c_735594,&c_735595,&c_735596);
+make_pair(c_735594,&c_735595,&c_735596);c_735594.hdr.immutable = 1;
 
-make_pair(c_735591,&c_735592,&c_735594);
+make_pair(c_735591,&c_735592,&c_735594);c_735591.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735566, ((closureN)self_734109)->elements[2], r_732104, &c_735591);; 
 }
 
@@ -24741,31 +24741,31 @@ c_735568.elements = (object *)e_735574;
 c_735568.elements[0] = ((closureN)self_734110)->elements[0];
 
 
-make_pair(c_735579,quote_test,NULL);
+make_pair(c_735579,quote_test,NULL);c_735579.hdr.immutable = 1;
 
-make_pair(c_735578,quote_quote,&c_735579);
+make_pair(c_735578,quote_quote,&c_735579);c_735578.hdr.immutable = 1;
 
-make_utf8_string_with_len(c_735581, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);
+make_utf8_string_with_len(c_735581, "the test expression should come last: (test <expected> (<expr> ...)) ", 69, 69);c_735581.hdr.immutable = 1;
 
-make_pair(c_735587,quote__93_93_93,NULL);
+make_pair(c_735587,quote__93_93_93,NULL);c_735587.hdr.immutable = 1;
 
-make_pair(c_735586,quote_expect,&c_735587);
+make_pair(c_735586,quote_expect,&c_735587);c_735586.hdr.immutable = 1;
 
-make_pair(c_735588,quote_expr,NULL);
+make_pair(c_735588,quote_expr,NULL);c_735588.hdr.immutable = 1;
 
-make_pair(c_735585,&c_735586,&c_735588);
+make_pair(c_735585,&c_735586,&c_735588);c_735585.hdr.immutable = 1;
 
-make_pair(c_735584,quote_name,&c_735585);
+make_pair(c_735584,quote_name,&c_735585);c_735584.hdr.immutable = 1;
 
-make_pair(c_735583,quote_test,&c_735584);
+make_pair(c_735583,quote_test,&c_735584);c_735583.hdr.immutable = 1;
 
-make_pair(c_735582,&c_735583,NULL);
+make_pair(c_735582,&c_735583,NULL);c_735582.hdr.immutable = 1;
 
-make_pair(c_735580,&c_735581,&c_735582);
+make_pair(c_735580,&c_735581,&c_735582);c_735580.hdr.immutable = 1;
 
-make_pair(c_735577,&c_735578,&c_735580);
+make_pair(c_735577,&c_735578,&c_735580);c_735577.hdr.immutable = 1;
 
-make_pair(c_735576,quote_test_91syntax_91error,&c_735577);
+make_pair(c_735576,quote_test_91syntax_91error,&c_735577);c_735576.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735568, ((closureN)self_734110)->elements[1], r_732101, &c_735576);; 
 }
 
@@ -24933,7 +24933,7 @@ c_735402.elements[3] = ((closureN)self_734116)->elements[2];
 
 
 
-make_pair(c_735472,quote_expect,NULL);
+make_pair(c_735472,quote_expect,NULL);c_735472.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735402, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734116)->elements[2])))), NULL, &c_735472);; 
 }
 
@@ -24953,9 +24953,9 @@ c_735404.elements[1] = ((closureN)self_734117)->elements[1];
 c_735404.elements[2] = ((closureN)self_734117)->elements[3];
 
 
-make_pair(c_735461,quote_expect,NULL);
+make_pair(c_735461,quote_expect,NULL);c_735461.hdr.immutable = 1;
 
-make_pair(c_735460,quote_quote,&c_735461);
+make_pair(c_735460,quote_quote,&c_735461);c_735460.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735404, ((closureN)self_734117)->elements[2], r_732165, &c_735460);; 
 }
 
@@ -24976,7 +24976,7 @@ c_735406.elements[2] = r_732156;
 c_735406.elements[3] = ((closureN)self_734118)->elements[2];
 
 
-make_pair(c_735457,NULL,NULL);
+make_pair(c_735457,NULL,NULL);c_735457.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735406, NULL, NULL, &c_735457);; 
 }
 
@@ -25003,9 +25003,9 @@ c_735408.elements[3] = ((closureN)self_734119)->elements[3];
 
 
 
-make_pair(c_735455,NULL,NULL);
+make_pair(c_735455,NULL,NULL);c_735455.hdr.immutable = 1;
 
-make_pair(c_735454,quote_expr,&c_735455);
+make_pair(c_735454,quote_expr,&c_735455);c_735454.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735408, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734119)->elements[3]))), r_732159, &c_735454);; 
 }
 
@@ -25025,15 +25025,15 @@ c_735410.elements[1] = ((closureN)self_734120)->elements[1];
 c_735410.elements[2] = ((closureN)self_734120)->elements[3];
 
 
-make_pair(c_735443,quote_expect,NULL);
+make_pair(c_735443,quote_expect,NULL);c_735443.hdr.immutable = 1;
 
-make_pair(c_735442,quote_quote,&c_735443);
+make_pair(c_735442,quote_quote,&c_735443);c_735442.hdr.immutable = 1;
 
-make_pair(c_735445,NULL,NULL);
+make_pair(c_735445,NULL,NULL);c_735445.hdr.immutable = 1;
 
-make_pair(c_735444,quote_expr,&c_735445);
+make_pair(c_735444,quote_expr,&c_735445);c_735444.hdr.immutable = 1;
 
-make_pair(c_735441,&c_735442,&c_735444);
+make_pair(c_735441,&c_735442,&c_735444);c_735441.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735410, ((closureN)self_734120)->elements[2], r_732157, &c_735441);; 
 }
 
@@ -25054,17 +25054,17 @@ c_735412.elements[1] = ((closureN)self_734121)->elements[1];
 
 
 
-make_pair(c_735436,quote_expect,NULL);
+make_pair(c_735436,quote_expect,NULL);c_735436.hdr.immutable = 1;
 
-make_pair(c_735435,quote_quote,&c_735436);
+make_pair(c_735435,quote_quote,&c_735436);c_735435.hdr.immutable = 1;
 
-make_pair(c_735438,NULL,NULL);
+make_pair(c_735438,NULL,NULL);c_735438.hdr.immutable = 1;
 
-make_pair(c_735437,quote_expr,&c_735438);
+make_pair(c_735437,quote_expr,&c_735438);c_735437.hdr.immutable = 1;
 
-make_pair(c_735434,&c_735435,&c_735437);
+make_pair(c_735434,&c_735435,&c_735437);c_735434.hdr.immutable = 1;
 
-make_pair(c_735433,quote_name,&c_735434);
+make_pair(c_735433,quote_name,&c_735434);c_735433.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735412, Cyc_car(data, ((closureN)self_734121)->elements[2]), r_732154, &c_735433);; 
 }
 
@@ -25082,19 +25082,19 @@ c_735414.elements = (object *)e_735420;
 c_735414.elements[0] = ((closureN)self_734122)->elements[0];
 
 
-make_pair(c_735426,quote_expect,NULL);
+make_pair(c_735426,quote_expect,NULL);c_735426.hdr.immutable = 1;
 
-make_pair(c_735425,quote_quote,&c_735426);
+make_pair(c_735425,quote_quote,&c_735426);c_735425.hdr.immutable = 1;
 
-make_pair(c_735428,NULL,NULL);
+make_pair(c_735428,NULL,NULL);c_735428.hdr.immutable = 1;
 
-make_pair(c_735427,quote_expr,&c_735428);
+make_pair(c_735427,quote_expr,&c_735428);c_735427.hdr.immutable = 1;
 
-make_pair(c_735424,&c_735425,&c_735427);
+make_pair(c_735424,&c_735425,&c_735427);c_735424.hdr.immutable = 1;
 
-make_pair(c_735423,quote_name,&c_735424);
+make_pair(c_735423,quote_name,&c_735424);c_735423.hdr.immutable = 1;
 
-make_pair(c_735422,quote_test_91propagate_91info,&c_735423);
+make_pair(c_735422,quote_test_91propagate_91info,&c_735423);c_735422.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735414, ((closureN)self_734122)->elements[1], r_732152, &c_735422);; 
 }
 
@@ -25172,7 +25172,7 @@ c_735266.elements[1] = r_732187;
 c_735266.elements[2] = ((closureN)self_734125)->elements[1];
 
 
-make_pair(c_735323,NULL,NULL);
+make_pair(c_735323,NULL,NULL);c_735323.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735266, NULL, NULL, &c_735323);; 
 }
 
@@ -25198,13 +25198,13 @@ c_735268.elements[2] = ((closureN)self_734126)->elements[2];
 
 
 
-make_pair(c_735320,quote__93_93_93,NULL);
+make_pair(c_735320,quote__93_93_93,NULL);c_735320.hdr.immutable = 1;
 
-make_pair(c_735319,quote_expr,&c_735320);
+make_pair(c_735319,quote_expr,&c_735320);c_735319.hdr.immutable = 1;
 
-make_pair(c_735321,NULL,NULL);
+make_pair(c_735321,NULL,NULL);c_735321.hdr.immutable = 1;
 
-make_pair(c_735318,&c_735319,&c_735321);
+make_pair(c_735318,&c_735319,&c_735321);c_735318.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735268, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, ((closureN)self_734126)->elements[2]))), r_732194, &c_735318);; 
 }
 
@@ -25228,15 +25228,15 @@ c_735270.elements[2] = ((closureN)self_734127)->elements[2];
 
 
 
-make_pair(c_735308,quote__93_93_93,NULL);
+make_pair(c_735308,quote__93_93_93,NULL);c_735308.hdr.immutable = 1;
 
-make_pair(c_735307,quote_expr,&c_735308);
+make_pair(c_735307,quote_expr,&c_735308);c_735307.hdr.immutable = 1;
 
-make_pair(c_735309,NULL,NULL);
+make_pair(c_735309,NULL,NULL);c_735309.hdr.immutable = 1;
 
-make_pair(c_735306,&c_735307,&c_735309);
+make_pair(c_735306,&c_735307,&c_735309);c_735306.hdr.immutable = 1;
 
-make_pair(c_735305,quote_expect,&c_735306);
+make_pair(c_735305,quote_expect,&c_735306);c_735305.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735270, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734127)->elements[2])), r_732192, &c_735305);; 
 }
 
@@ -25257,17 +25257,17 @@ c_735272.elements[1] = ((closureN)self_734128)->elements[1];
 
 
 
-make_pair(c_735297,quote__93_93_93,NULL);
+make_pair(c_735297,quote__93_93_93,NULL);c_735297.hdr.immutable = 1;
 
-make_pair(c_735296,quote_expr,&c_735297);
+make_pair(c_735296,quote_expr,&c_735297);c_735296.hdr.immutable = 1;
 
-make_pair(c_735298,NULL,NULL);
+make_pair(c_735298,NULL,NULL);c_735298.hdr.immutable = 1;
 
-make_pair(c_735295,&c_735296,&c_735298);
+make_pair(c_735295,&c_735296,&c_735298);c_735295.hdr.immutable = 1;
 
-make_pair(c_735294,quote_expect,&c_735295);
+make_pair(c_735294,quote_expect,&c_735295);c_735294.hdr.immutable = 1;
 
-make_pair(c_735293,quote_name,&c_735294);
+make_pair(c_735293,quote_name,&c_735294);c_735293.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735272, Cyc_car(data, ((closureN)self_734128)->elements[2]), r_732190, &c_735293);; 
 }
 
@@ -25285,19 +25285,19 @@ c_735274.elements = (object *)e_735280;
 c_735274.elements[0] = ((closureN)self_734129)->elements[0];
 
 
-make_pair(c_735287,quote__93_93_93,NULL);
+make_pair(c_735287,quote__93_93_93,NULL);c_735287.hdr.immutable = 1;
 
-make_pair(c_735286,quote_expr,&c_735287);
+make_pair(c_735286,quote_expr,&c_735287);c_735286.hdr.immutable = 1;
 
-make_pair(c_735288,NULL,NULL);
+make_pair(c_735288,NULL,NULL);c_735288.hdr.immutable = 1;
 
-make_pair(c_735285,&c_735286,&c_735288);
+make_pair(c_735285,&c_735286,&c_735288);c_735285.hdr.immutable = 1;
 
-make_pair(c_735284,quote_expect,&c_735285);
+make_pair(c_735284,quote_expect,&c_735285);c_735284.hdr.immutable = 1;
 
-make_pair(c_735283,quote_name,&c_735284);
+make_pair(c_735283,quote_name,&c_735284);c_735283.hdr.immutable = 1;
 
-make_pair(c_735282,quote_test_91propagate_91info,&c_735283);
+make_pair(c_735282,quote_test_91propagate_91info,&c_735283);c_735282.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735274, ((closureN)self_734129)->elements[1], r_732188, &c_735282);; 
 }
 
@@ -25362,7 +25362,7 @@ c_735178.elements[2] = ((closureN)self_734132)->elements[1];
 
 
 
-make_pair(c_735212,quote_expr,NULL);
+make_pair(c_735212,quote_expr,NULL);c_735212.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735178, Cyc_car(data, Cyc_cdr(data, ((closureN)self_734132)->elements[1])), NULL, &c_735212);; 
 }
 
@@ -25383,9 +25383,9 @@ c_735180.elements[1] = ((closureN)self_734133)->elements[1];
 
 
 
-make_pair(c_735205,quote_expr,NULL);
+make_pair(c_735205,quote_expr,NULL);c_735205.hdr.immutable = 1;
 
-make_pair(c_735204,quote_expect,&c_735205);
+make_pair(c_735204,quote_expect,&c_735205);c_735204.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735180, Cyc_car(data, ((closureN)self_734133)->elements[2]), r_732215, &c_735204);; 
 }
 
@@ -25404,11 +25404,11 @@ c_735182.elements[0] = ((closureN)self_734134)->elements[0];
 c_735182.elements[1] = ((closureN)self_734134)->elements[1];
 
 
-make_pair(c_735199,quote_expr,NULL);
+make_pair(c_735199,quote_expr,NULL);c_735199.hdr.immutable = 1;
 
-make_pair(c_735198,quote_expect,&c_735199);
+make_pair(c_735198,quote_expect,&c_735199);c_735198.hdr.immutable = 1;
 
-make_pair(c_735197,boolean_f,&c_735198);
+make_pair(c_735197,boolean_f,&c_735198);c_735197.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735182, boolean_f, r_732213, &c_735197);; 
 }
 
@@ -25426,13 +25426,13 @@ c_735184.elements = (object *)e_735190;
 c_735184.elements[0] = ((closureN)self_734135)->elements[0];
 
 
-make_pair(c_735195,quote_expr,NULL);
+make_pair(c_735195,quote_expr,NULL);c_735195.hdr.immutable = 1;
 
-make_pair(c_735194,quote_expect,&c_735195);
+make_pair(c_735194,quote_expect,&c_735195);c_735194.hdr.immutable = 1;
 
-make_pair(c_735193,boolean_f,&c_735194);
+make_pair(c_735193,boolean_f,&c_735194);c_735193.hdr.immutable = 1;
 
-make_pair(c_735192,quote_test,&c_735193);
+make_pair(c_735192,quote_test,&c_735193);c_735192.hdr.immutable = 1;
 return_closcall4(data,  __glo_cons_91source_scheme_base,  &c_735184, ((closureN)self_734135)->elements[1], r_732211, &c_735192);; 
 }
 
