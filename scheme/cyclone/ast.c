@@ -510,6 +510,8 @@ extern object __glo_mangle_scheme_cyclone_util;
 extern object __glo_mangle_91global_scheme_cyclone_util;
 extern object __glo_define_91c_91inline_127_scheme_cyclone_util;
 extern object __glo_define_91c_91_125inline_91var_scheme_cyclone_util;
+extern object __glo_immutable_127_scheme_cyclone_util;
+extern object __glo_Cyc_91set_91immutable_67_scheme_cyclone_util;
 extern object __glo_string_91join_scheme_cyclone_util;
 extern object __glo_string_91split_scheme_cyclone_util;
 extern object __glo_gensym_scheme_cyclone_util;
