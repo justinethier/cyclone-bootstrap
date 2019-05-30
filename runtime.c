@@ -57,6 +57,7 @@ const char *tag_names[] = {
       /*symbol_tag    */ , "symbol"
       /*vector_tag    */ , "vector"
       /*complex_num_tag*/ , "complex number"
+      /*atomic_tag*/ , "atomic"
   , "Reserved for future use"
 };
 
@@ -917,6 +918,9 @@ object Cyc_display(void *data, object x, FILE * port)
     break;
   case cond_var_tag:
     fprintf(port, "<condition variable %p>", x);
+    break;
+  case atomic_tag:
+    fprintf(port, "<atom %p>", x);
     break;
   case boolean_tag:
     fprintf(port, "#%s", ((boolean_type *) x)->desc);
@@ -6260,6 +6264,8 @@ object copy2heap(void *data, object obj)
   return gc_alloc(((gc_thread_data *)data)->heap, gc_allocated_bytes(obj, NULL, NULL), obj, data,
                   &on_stack);
 }
+
+// TODO: version of above that will perform a deep copy (via GC) if necessary
 
 // Generic buffer functions
 void **vpbuffer_realloc(void **buf, int *len)
