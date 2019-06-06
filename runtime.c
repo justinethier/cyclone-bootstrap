@@ -5719,40 +5719,6 @@ void Cyc_make_shared_object(void *data, object k, object obj)
     object hp = gc_alloc(heap, gc_allocated_bytes(obj, NULL, NULL), obj, thd, heap_grown);
     return_closcall1(data, k, hp);
   }
-
-  //case string_tag:{
-  //    string_type *hp = gc_alloc(heap,
-  //                               sizeof(string_type) + ((string_len(obj) + 1)),
-  //                               obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
-  //case double_tag:{
-  //    double_type *hp =
-  //        gc_alloc(heap, sizeof(double_type), obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
-  //case bytevector_tag:{
-  //    bytevector_type *hp = gc_alloc(heap,
-  //                                   sizeof(bytevector_type) +
-  //                                   sizeof(char) * (((bytevector) obj)->len),
-  //                                   obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
-  //case port_tag:{
-  //    port_type *hp =
-  //        gc_alloc(heap, sizeof(port_type), obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
-  //case c_opaque_tag:{
-  //    c_opaque_type *hp =
-  //        gc_alloc(heap, sizeof(c_opaque_type), obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
-  //case complex_num_tag:{
-  //    complex_num_type *hp =
-  //        gc_alloc(heap, sizeof(complex_num_type), obj, thd, heap_grown);
-  //    return_closcall1(data, k, hp);
-  //  }
   // Objs w/children force minor GC to guarantee everything is relocated:
   case cvar_tag:
   case closure1_tag:
