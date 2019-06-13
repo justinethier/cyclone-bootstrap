@@ -164,7 +164,7 @@ object __glo_compare_91and_91set_67_cyclone_concurrency = NULL;
 object __glo_share_91all_67_cyclone_concurrency = NULL;
 object __glo_make_91shared_cyclone_concurrency = NULL;
 object __glo_swap_67_cyclone_concurrency = NULL;
-object __glo_ref_cyclone_concurrency = NULL;
+object __glo_deref_cyclone_concurrency = NULL;
 object __glo_atom_cyclone_concurrency = NULL;
 object __glo_make_91atom_cyclone_concurrency = NULL;
 object __glo__75make_91atom_cyclone_concurrency = NULL;
@@ -418,7 +418,7 @@ c_7368.elements[1] = atom_733_7315;
 c_7368.elements[2] = f_734_7316;
 c_7368.elements[3] = k_7332;
 
-return_closcall2(data,  __glo_ref_cyclone_concurrency,  &c_7368, atom_733_7315);; 
+return_closcall2(data,  __glo_deref_cyclone_concurrency,  &c_7368, atom_733_7315);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7342, object oldval_738_7318) {
@@ -574,7 +574,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_share_91all_67_cyclone_concurrency);
   add_global((object *) &__glo_make_91shared_cyclone_concurrency);
   add_global((object *) &__glo_swap_67_cyclone_concurrency);
-  add_global((object *) &__glo_ref_cyclone_concurrency);
+  add_global((object *) &__glo_deref_cyclone_concurrency);
   add_global((object *) &__glo_atom_cyclone_concurrency);
   add_global((object *) &__glo_make_91atom_cyclone_concurrency);
   add_global((object *) &__glo__75make_91atom_cyclone_concurrency);
@@ -590,7 +590,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_7366, (function_type)__lambda_5);c_7366.num_args = 2; 
   __glo_swap_67_cyclone_concurrency = &c_7366; 
   mclosure0(c_7365, (function_type)__lambda_13);c_7365.num_args = 1; 
-  __glo_ref_cyclone_concurrency = &c_7365; 
+  __glo_deref_cyclone_concurrency = &c_7365; 
   mclosure0(c_7354, (function_type)__lambda_3);c_7354.num_args = 0; 
   __glo_atom_cyclone_concurrency = &c_7354; 
   mclosure0(c_7348, (function_type)__lambda_1);c_7348.num_args = 1; 
@@ -606,7 +606,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_73108, (object *)&__glo_share_91all_67_cyclone_concurrency);make_pair(pair_73109, find_or_add_symbol("share-all!"), &cvar_73108);
   make_cvar(cvar_73110, (object *)&__glo_make_91shared_cyclone_concurrency);make_pair(pair_73111, find_or_add_symbol("make-shared"), &cvar_73110);
   make_cvar(cvar_73112, (object *)&__glo_swap_67_cyclone_concurrency);make_pair(pair_73113, find_or_add_symbol("swap!"), &cvar_73112);
-  make_cvar(cvar_73114, (object *)&__glo_ref_cyclone_concurrency);make_pair(pair_73115, find_or_add_symbol("ref"), &cvar_73114);
+  make_cvar(cvar_73114, (object *)&__glo_deref_cyclone_concurrency);make_pair(pair_73115, find_or_add_symbol("deref"), &cvar_73114);
   make_cvar(cvar_73116, (object *)&__glo_atom_cyclone_concurrency);make_pair(pair_73117, find_or_add_symbol("atom"), &cvar_73116);
   make_cvar(cvar_73118, (object *)&__glo_make_91atom_cyclone_concurrency);make_pair(pair_73119, find_or_add_symbol("make-atom"), &cvar_73118);
   make_cvar(cvar_73120, (object *)&__glo__75make_91atom_cyclone_concurrency);make_pair(pair_73121, find_or_add_symbol("%make-atom"), &cvar_73120);
