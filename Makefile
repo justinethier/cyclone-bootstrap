@@ -35,7 +35,7 @@ COBJ = scheme/base \
  scheme/cyclone/pretty-print \
  scheme/cyclone/hashset \
  scheme/cyclone/primitives \
- libs/cyclone/concurrency \
+ libs/cyclone/concurrent \
  srfi/1 \
  srfi/2 \
  srfi/9 \
