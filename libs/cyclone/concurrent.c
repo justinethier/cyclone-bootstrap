@@ -160,9 +160,10 @@ if (type_is_pair_prim(clo)) { \
 #include <ck_pr.h>
 #include "cyclone/types.h"
 object __glo_lib_91init_117cycloneconcurrent_cyclone_concurrent = NULL;
-object __glo_compare_91and_91set_67_cyclone_concurrent = NULL;
+object __glo_immutable_127_cyclone_concurrent = NULL;
 object __glo_share_91all_67_cyclone_concurrent = NULL;
 object __glo_make_91shared_cyclone_concurrent = NULL;
+object __glo_compare_91and_91set_67_cyclone_concurrent = NULL;
 object __glo_swap_67_cyclone_concurrent = NULL;
 object __glo_deref_cyclone_concurrent = NULL;
 object __glo_atom_cyclone_concurrent = NULL;
@@ -367,9 +368,10 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 static void __lambda_10(void *data, int argc, closure _,object k_7339) ;
-static void __lambda_16(void *data, int argc, closure _, object k, object obj, object oldval, object newval) ;
-static void __lambda_15(void *data, int argc, closure _, object k) ;
-static void __lambda_14(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_17(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_16(void *data, int argc, closure _, object k) ;
+static void __lambda_15(void *data, int argc, closure _, object k, object obj) ;
+static void __lambda_14(void *data, int argc, closure _, object k, object obj, object oldval, object newval) ;
 static void __lambda_5(void *data, int argc, closure _,object k_7332, object atom_733_7315, object f_734_7316, object args_735_7317_raw, ...) ;
 static void __lambda_6(void *data, int argc, object self_7342, object oldval_738_7318) ;
 static void __lambda_7(void *data, int argc, object self_7343, object r_7336) ;
@@ -388,7 +390,20 @@ static void __lambda_10(void *data, int argc, closure _,object k_7339) {
 return_closcall1(data,  k_7339,  obj_int2obj(0));; 
 }
 
-static void __lambda_16(void *data, int argc, closure _, object k, object obj, object oldval, object newval) { atomic a;
+static void __lambda_17(void *data, int argc, closure _, object k, object obj) {object result = boolean_t;
+   if (is_object_type(obj) &&
+       (type_of(obj) == pair_tag ||
+        type_of(obj) == vector_tag ||
+        type_of(obj) == bytevector_tag ||
+        type_of(obj) == string_tag
+       ) &&
+       !immutable(obj) ) {
+     result = boolean_f;
+   }
+   return_closcall1(data, k, result);  }
+static void __lambda_16(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
+static void __lambda_15(void *data, int argc, closure _, object k, object obj) { Cyc_make_shared_object(data, k, obj);  }
+static void __lambda_14(void *data, int argc, closure _, object k, object obj, object oldval, object newval) { atomic a;
     Cyc_check_atomic(data, obj);
     Cyc_verify_immutable(data, newval);
     if (gc_is_stack_obj(data, obj)){
@@ -398,8 +413,6 @@ static void __lambda_16(void *data, int argc, closure _, object k, object obj, o
     bool result = ck_pr_cas_ptr(&(a->obj), oldval, newval);
     object rv = result ? boolean_t : boolean_f;
     return_closcall1(data, k, rv);  }
-static void __lambda_15(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
-static void __lambda_14(void *data, int argc, closure _, object k, object obj) { Cyc_make_shared_object(data, k, obj);  }
 static void __lambda_5(void *data, int argc, closure _,object k_7332, object atom_733_7315, object f_734_7316, object args_735_7317_raw, ...) {
 load_varargs(args_735_7317, args_735_7317_raw, argc - 3);
   Cyc_st_add(data, "libs/cyclone/concurrent.sld:swap!");
@@ -570,23 +583,26 @@ void c_cycloneconcurrent_entry_pt_first_lambda(data, argc, cont,value) void *dat
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global((object *) &__glo_lib_91init_117cycloneconcurrent_cyclone_concurrent);
-  add_global((object *) &__glo_compare_91and_91set_67_cyclone_concurrent);
+  add_global((object *) &__glo_immutable_127_cyclone_concurrent);
   add_global((object *) &__glo_share_91all_67_cyclone_concurrent);
   add_global((object *) &__glo_make_91shared_cyclone_concurrent);
+  add_global((object *) &__glo_compare_91and_91set_67_cyclone_concurrent);
   add_global((object *) &__glo_swap_67_cyclone_concurrent);
   add_global((object *) &__glo_deref_cyclone_concurrent);
   add_global((object *) &__glo_atom_cyclone_concurrent);
   add_global((object *) &__glo_make_91atom_cyclone_concurrent);
   add_global((object *) &__glo__75make_91atom_cyclone_concurrent);
   add_global((object *) &__glo_atom_127_cyclone_concurrent);
-  mclosure0(c_73100, (function_type)__lambda_10);c_73100.num_args = 0; 
-  __glo_lib_91init_117cycloneconcurrent_cyclone_concurrent = &c_73100; 
-  mclosure0(c_7399, (function_type)__lambda_16);c_7399.num_args = 3; 
-  __glo_compare_91and_91set_67_cyclone_concurrent = &c_7399; 
-  mclosure0(c_7398, (function_type)__lambda_15);c_7398.num_args = 0; 
-  __glo_share_91all_67_cyclone_concurrent = &c_7398; 
-  mclosure0(c_7397, (function_type)__lambda_14);c_7397.num_args = 1; 
-  __glo_make_91shared_cyclone_concurrent = &c_7397; 
+  mclosure0(c_73101, (function_type)__lambda_10);c_73101.num_args = 0; 
+  __glo_lib_91init_117cycloneconcurrent_cyclone_concurrent = &c_73101; 
+  mclosure0(c_73100, (function_type)__lambda_17);c_73100.num_args = 1; 
+  __glo_immutable_127_cyclone_concurrent = &c_73100; 
+  mclosure0(c_7399, (function_type)__lambda_16);c_7399.num_args = 0; 
+  __glo_share_91all_67_cyclone_concurrent = &c_7399; 
+  mclosure0(c_7398, (function_type)__lambda_15);c_7398.num_args = 1; 
+  __glo_make_91shared_cyclone_concurrent = &c_7398; 
+  mclosure0(c_7397, (function_type)__lambda_14);c_7397.num_args = 3; 
+  __glo_compare_91and_91set_67_cyclone_concurrent = &c_7397; 
   mclosure0(c_7366, (function_type)__lambda_5);c_7366.num_args = 2; 
   __glo_swap_67_cyclone_concurrent = &c_7366; 
   mclosure0(c_7365, (function_type)__lambda_13);c_7365.num_args = 1; 
@@ -600,29 +616,31 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_7346, (function_type)__lambda_11);c_7346.num_args = 1; 
   __glo_atom_127_cyclone_concurrent = &c_7346; 
 
-  mclosure0(clo_73103, c_cycloneconcurrent_inlinable_lambdas); make_pair(pair_73102, find_or_add_symbol("c_cycloneconcurrent_inlinable_lambdas"), &clo_73103);
-  make_cvar(cvar_73104, (object *)&__glo_lib_91init_117cycloneconcurrent_cyclone_concurrent);make_pair(pair_73105, find_or_add_symbol("lib-init:cycloneconcurrent"), &cvar_73104);
-  make_cvar(cvar_73106, (object *)&__glo_compare_91and_91set_67_cyclone_concurrent);make_pair(pair_73107, find_or_add_symbol("compare-and-set!"), &cvar_73106);
-  make_cvar(cvar_73108, (object *)&__glo_share_91all_67_cyclone_concurrent);make_pair(pair_73109, find_or_add_symbol("share-all!"), &cvar_73108);
-  make_cvar(cvar_73110, (object *)&__glo_make_91shared_cyclone_concurrent);make_pair(pair_73111, find_or_add_symbol("make-shared"), &cvar_73110);
-  make_cvar(cvar_73112, (object *)&__glo_swap_67_cyclone_concurrent);make_pair(pair_73113, find_or_add_symbol("swap!"), &cvar_73112);
-  make_cvar(cvar_73114, (object *)&__glo_deref_cyclone_concurrent);make_pair(pair_73115, find_or_add_symbol("deref"), &cvar_73114);
-  make_cvar(cvar_73116, (object *)&__glo_atom_cyclone_concurrent);make_pair(pair_73117, find_or_add_symbol("atom"), &cvar_73116);
-  make_cvar(cvar_73118, (object *)&__glo_make_91atom_cyclone_concurrent);make_pair(pair_73119, find_or_add_symbol("make-atom"), &cvar_73118);
-  make_cvar(cvar_73120, (object *)&__glo__75make_91atom_cyclone_concurrent);make_pair(pair_73121, find_or_add_symbol("%make-atom"), &cvar_73120);
-  make_cvar(cvar_73122, (object *)&__glo_atom_127_cyclone_concurrent);make_pair(pair_73123, find_or_add_symbol("atom?"), &cvar_73122);
-make_pair(c_73134, &pair_73102,Cyc_global_variables);
-make_pair(c_73133, &pair_73105, &c_73134);
-make_pair(c_73132, &pair_73107, &c_73133);
-make_pair(c_73131, &pair_73109, &c_73132);
-make_pair(c_73130, &pair_73111, &c_73131);
-make_pair(c_73129, &pair_73113, &c_73130);
-make_pair(c_73128, &pair_73115, &c_73129);
-make_pair(c_73127, &pair_73117, &c_73128);
-make_pair(c_73126, &pair_73119, &c_73127);
-make_pair(c_73125, &pair_73121, &c_73126);
-make_pair(c_73124, &pair_73123, &c_73125);
-Cyc_global_variables = &c_73124;
+  mclosure0(clo_73104, c_cycloneconcurrent_inlinable_lambdas); make_pair(pair_73103, find_or_add_symbol("c_cycloneconcurrent_inlinable_lambdas"), &clo_73104);
+  make_cvar(cvar_73105, (object *)&__glo_lib_91init_117cycloneconcurrent_cyclone_concurrent);make_pair(pair_73106, find_or_add_symbol("lib-init:cycloneconcurrent"), &cvar_73105);
+  make_cvar(cvar_73107, (object *)&__glo_immutable_127_cyclone_concurrent);make_pair(pair_73108, find_or_add_symbol("immutable?"), &cvar_73107);
+  make_cvar(cvar_73109, (object *)&__glo_share_91all_67_cyclone_concurrent);make_pair(pair_73110, find_or_add_symbol("share-all!"), &cvar_73109);
+  make_cvar(cvar_73111, (object *)&__glo_make_91shared_cyclone_concurrent);make_pair(pair_73112, find_or_add_symbol("make-shared"), &cvar_73111);
+  make_cvar(cvar_73113, (object *)&__glo_compare_91and_91set_67_cyclone_concurrent);make_pair(pair_73114, find_or_add_symbol("compare-and-set!"), &cvar_73113);
+  make_cvar(cvar_73115, (object *)&__glo_swap_67_cyclone_concurrent);make_pair(pair_73116, find_or_add_symbol("swap!"), &cvar_73115);
+  make_cvar(cvar_73117, (object *)&__glo_deref_cyclone_concurrent);make_pair(pair_73118, find_or_add_symbol("deref"), &cvar_73117);
+  make_cvar(cvar_73119, (object *)&__glo_atom_cyclone_concurrent);make_pair(pair_73120, find_or_add_symbol("atom"), &cvar_73119);
+  make_cvar(cvar_73121, (object *)&__glo_make_91atom_cyclone_concurrent);make_pair(pair_73122, find_or_add_symbol("make-atom"), &cvar_73121);
+  make_cvar(cvar_73123, (object *)&__glo__75make_91atom_cyclone_concurrent);make_pair(pair_73124, find_or_add_symbol("%make-atom"), &cvar_73123);
+  make_cvar(cvar_73125, (object *)&__glo_atom_127_cyclone_concurrent);make_pair(pair_73126, find_or_add_symbol("atom?"), &cvar_73125);
+make_pair(c_73138, &pair_73103,Cyc_global_variables);
+make_pair(c_73137, &pair_73106, &c_73138);
+make_pair(c_73136, &pair_73108, &c_73137);
+make_pair(c_73135, &pair_73110, &c_73136);
+make_pair(c_73134, &pair_73112, &c_73135);
+make_pair(c_73133, &pair_73114, &c_73134);
+make_pair(c_73132, &pair_73116, &c_73133);
+make_pair(c_73131, &pair_73118, &c_73132);
+make_pair(c_73130, &pair_73120, &c_73131);
+make_pair(c_73129, &pair_73122, &c_73130);
+make_pair(c_73128, &pair_73124, &c_73129);
+make_pair(c_73127, &pair_73126, &c_73128);
+Cyc_global_variables = &c_73127;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117cycloneconcurrent_cyclone_concurrent)->fn)(data, 1, cont, cont);
 }
