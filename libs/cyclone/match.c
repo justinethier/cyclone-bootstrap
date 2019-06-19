@@ -258,43 +258,43 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #include "cyclone/types.h"
-object __glo_lib_91init_117schemecyclonematch_scheme_cyclone_match = NULL;
-object __glo_match_91check_91identifier_scheme_cyclone_match = NULL;
-object __glo_match_91check_91ellipsis_scheme_cyclone_match = NULL;
-object __glo_match_91let_85_scheme_cyclone_match = NULL;
-object __glo_match_91named_91let_scheme_cyclone_match = NULL;
-object __glo_match_91let_95helper_scheme_cyclone_match = NULL;
-object __glo_match_91letrec_scheme_cyclone_match = NULL;
-object __glo_match_91let_scheme_cyclone_match = NULL;
-object __glo_match_91lambda_85_scheme_cyclone_match = NULL;
-object __glo_match_91lambda_scheme_cyclone_match = NULL;
-object __glo_match_91extract_91quasiquote_91vars_91step_scheme_cyclone_match = NULL;
-object __glo_match_91extract_91quasiquote_91vars_scheme_cyclone_match = NULL;
-object __glo_match_91extract_91vars_91step_scheme_cyclone_match = NULL;
-object __glo_match_91extract_91vars_scheme_cyclone_match = NULL;
-object __glo_match_91record_91named_91refs_scheme_cyclone_match = NULL;
-object __glo_match_91record_91refs_scheme_cyclone_match = NULL;
-object __glo_match_91vector_91tail_91two_scheme_cyclone_match = NULL;
-object __glo_match_91vector_91tail_scheme_cyclone_match = NULL;
-object __glo_match_91gen_91vector_91ellipsis_scheme_cyclone_match = NULL;
-object __glo_match_91vector_91step_scheme_cyclone_match = NULL;
-object __glo_match_91vector_91two_scheme_cyclone_match = NULL;
-object __glo_match_91vector_scheme_cyclone_match = NULL;
-object __glo_match_91gen_91search_scheme_cyclone_match = NULL;
-object __glo_match_91verify_91no_91ellipsis_scheme_cyclone_match = NULL;
-object __glo_match_91gen_91ellipsis_scheme_cyclone_match = NULL;
-object __glo_match_91gen_91or_91step_scheme_cyclone_match = NULL;
-object __glo_match_91gen_91or_scheme_cyclone_match = NULL;
-object __glo_match_91drop_91first_91arg_scheme_cyclone_match = NULL;
-object __glo_match_91tuck_91ids_scheme_cyclone_match = NULL;
-object __glo_match_91drop_91ids_scheme_cyclone_match = NULL;
-object __glo_match_91quasiquote_91step_scheme_cyclone_match = NULL;
-object __glo_match_91quasiquote_scheme_cyclone_match = NULL;
-object __glo_match_91two_scheme_cyclone_match = NULL;
-object __glo_match_91one_scheme_cyclone_match = NULL;
-object __glo_match_91next_scheme_cyclone_match = NULL;
-object __glo_match_scheme_cyclone_match = NULL;
-object __glo_match_91syntax_91error_scheme_cyclone_match = NULL;
+object __glo_lib_91init_117cyclonematch_cyclone_match = NULL;
+object __glo_match_91check_91identifier_cyclone_match = NULL;
+object __glo_match_91check_91ellipsis_cyclone_match = NULL;
+object __glo_match_91let_85_cyclone_match = NULL;
+object __glo_match_91named_91let_cyclone_match = NULL;
+object __glo_match_91let_95helper_cyclone_match = NULL;
+object __glo_match_91letrec_cyclone_match = NULL;
+object __glo_match_91let_cyclone_match = NULL;
+object __glo_match_91lambda_85_cyclone_match = NULL;
+object __glo_match_91lambda_cyclone_match = NULL;
+object __glo_match_91extract_91quasiquote_91vars_91step_cyclone_match = NULL;
+object __glo_match_91extract_91quasiquote_91vars_cyclone_match = NULL;
+object __glo_match_91extract_91vars_91step_cyclone_match = NULL;
+object __glo_match_91extract_91vars_cyclone_match = NULL;
+object __glo_match_91record_91named_91refs_cyclone_match = NULL;
+object __glo_match_91record_91refs_cyclone_match = NULL;
+object __glo_match_91vector_91tail_91two_cyclone_match = NULL;
+object __glo_match_91vector_91tail_cyclone_match = NULL;
+object __glo_match_91gen_91vector_91ellipsis_cyclone_match = NULL;
+object __glo_match_91vector_91step_cyclone_match = NULL;
+object __glo_match_91vector_91two_cyclone_match = NULL;
+object __glo_match_91vector_cyclone_match = NULL;
+object __glo_match_91gen_91search_cyclone_match = NULL;
+object __glo_match_91verify_91no_91ellipsis_cyclone_match = NULL;
+object __glo_match_91gen_91ellipsis_cyclone_match = NULL;
+object __glo_match_91gen_91or_91step_cyclone_match = NULL;
+object __glo_match_91gen_91or_cyclone_match = NULL;
+object __glo_match_91drop_91first_91arg_cyclone_match = NULL;
+object __glo_match_91tuck_91ids_cyclone_match = NULL;
+object __glo_match_91drop_91ids_cyclone_match = NULL;
+object __glo_match_91quasiquote_91step_cyclone_match = NULL;
+object __glo_match_91quasiquote_cyclone_match = NULL;
+object __glo_match_91two_cyclone_match = NULL;
+object __glo_match_91one_cyclone_match = NULL;
+object __glo_match_91next_cyclone_match = NULL;
+object __glo_match_cyclone_match = NULL;
+object __glo_match_91syntax_91error_cyclone_match = NULL;
 extern object __glo_member_scheme_base;
 extern object __glo_assoc_scheme_base;
 extern object __glo_cons_91source_scheme_base;
@@ -3522,12 +3522,12 @@ static void __lambda_5(void *data, int argc, object self_7318703, object r_73109
 static void __lambda_6(void *data, int argc, object self_7318704, object r_7310899) ;
 
 static void __lambda_2854(void *data, int argc, closure _,object k_7318695) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:lib-init:schemecyclonematch");
+  Cyc_st_add(data, "libs/cyclone/match.sld:lib-init:cyclonematch");
 return_closcall1(data,  k_7318695,  obj_int2obj(0));; 
 }
 
 static void __lambda_2853(void *data, int argc, closure _,object k_7318688, object expr_738333_7310886, object rename_738334_7310887, object compare_738335_7310888) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-check-identifier");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-check-identifier");
   
   
 if( (boolean_f != Cyc_is_symbol(Cyc_cadr(data, expr_738333_7310886))) ){ 
@@ -3546,7 +3546,7 @@ return_closcall1(data,  k_7318688,  Cyc_cadr(data, Cyc_cddr(data, expr_738333_73
 }
 
 static void __lambda_2851(void *data, int argc, closure _,object k_7318680, object expr_738330_7310883, object rename_738331_7310884, object compare_738332_7310885) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-check-ellipsis");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-check-ellipsis");
 
 closureN_type c_7363017;
 object e_7363032 [2];
@@ -3582,7 +3582,7 @@ return_closcall1(data,  ((closureN)self_7321535)->elements[1],  Cyc_cadr(data, C
 }
 
 static void __lambda_2829(void *data, int argc, closure _,object k_7318624, object expr_738253_738273_738308_7310861, object rename_738254_738274_738309_7310862, object compare_738255_738275_738310_7310863) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-let*");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-let*");
 
 closureN_type c_7362811;
 object e_7363012 [3];
@@ -4104,7 +4104,7 @@ return_closcall1(data,  ((closureN)self_7321534)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2785(void *data, int argc, closure _,object k_7318499, object expr_738065_738105_738189_7310801, object rename_738066_738106_738190_7310802, object compare_738067_738107_738191_7310803) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-named-let");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-named-let");
 
 closureN_type c_7362275;
 object e_7362806 [3];
@@ -5338,7 +5338,7 @@ return_closcall1(data,  ((closureN)self_7321509)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2674(void *data, int argc, closure _,object k_7318168, object expr_737568_737669_737902_7310642, object rename_737569_737670_737903_7310643, object compare_737570_737671_737904_7310644) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-let/helper");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-let/helper");
 
 closureN_type c_7360703;
 object e_7362270 [3];
@@ -8696,7 +8696,7 @@ return_closcall1(data,  ((closureN)self_7321467)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2651(void *data, int argc, closure _,object k_7318113, object expr_737483_737503_737538_7310616, object rename_737484_737504_737539_7310617, object compare_737485_737505_737540_7310618) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-letrec");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-letrec");
 
 closureN_type c_7360497;
 object e_7360698 [3];
@@ -9267,7 +9267,7 @@ return_closcall1(data,  ((closureN)self_7321354)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2611(void *data, int argc, closure _,object k_7318011, object expr_737322_737356_737427_7310564, object rename_737323_737357_737428_7310565, object compare_737324_737358_737429_7310566) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-let");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-let");
 
 closureN_type c_7360109;
 object e_7360492 [3];
@@ -10305,7 +10305,7 @@ return_closcall1(data,  ((closureN)self_7321331)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2588(void *data, int argc, closure _,object k_7317964, object expr_737254_737270_737297_7310543, object rename_737255_737271_737298_7310544, object compare_737256_737272_737299_7310545) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-lambda*");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-lambda*");
 
 closureN_type c_7359937;
 object e_7360104 [3];
@@ -10841,7 +10841,7 @@ return_closcall1(data,  ((closureN)self_7321292)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2564(void *data, int argc, closure _,object k_7317914, object expr_737186_737202_737229_7310522, object rename_737187_737203_737230_7310523, object compare_737188_737204_737231_7310524) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-lambda");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-lambda");
 
 closureN_type c_7359759;
 object e_7359932 [3];
@@ -11403,7 +11403,7 @@ return_closcall1(data,  ((closureN)self_7321269)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2537(void *data, int argc, closure _,object k_7317839, object expr_737055_737085_737141_7310481, object rename_737056_737086_737142_7310482, object compare_737057_737087_737143_7310483) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-extract-quasiquote-vars-step");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-extract-quasiquote-vars-step");
 
 closureN_type c_7359418;
 object e_7359754 [3];
@@ -12156,7 +12156,7 @@ return_closcall1(data,  ((closureN)self_7321242)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2445(void *data, int argc, closure _,object k_7317524, object expr_736563_736671_736905_7310335, object rename_736564_736672_736906_7310336, object compare_736565_736673_736907_7310337) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-extract-quasiquote-vars");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-extract-quasiquote-vars");
 
 closureN_type c_7357943;
 object e_7359413 [4];
@@ -14939,7 +14939,7 @@ return_closcall1(data,  ((closureN)self_7321218)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2419(void *data, int argc, closure _,object k_7317454, object expr_736441_736469_736521_7310297, object rename_736442_736470_736522_7310298, object compare_736443_736471_736523_7310299) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-extract-vars-step");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-extract-vars-step");
 
 closureN_type c_7357641;
 object e_7357938 [3];
@@ -15637,7 +15637,7 @@ return_closcall1(data,  ((closureN)self_7321124)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2166(void *data, int argc, closure _,object k_7316770, object expr_735525_735709_736159_7310019, object rename_735526_735710_736160_7310020, object compare_735527_735711_736161_7310021) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-extract-vars");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-extract-vars");
 
 closureN_type c_7354663;
 object e_7357636 [4];
@@ -22766,7 +22766,7 @@ return_closcall1(data,  ((closureN)self_7321101)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2101(void *data, int argc, closure _,object k_7316581, object expr_735335_735379_735464_739962, object rename_735336_735380_735465_739963, object compare_735337_735381_735466_739964) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-record-named-refs");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-record-named-refs");
 
 closureN_type c_7353591;
 object e_7354658 [3];
@@ -25189,7 +25189,7 @@ return_closcall1(data,  ((closureN)self_7320847)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_2040(void *data, int argc, closure _,object k_7316403, object expr_735144_735188_735273_739904, object rename_735145_735189_735274_739905, object compare_735146_735190_735275_739906) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-record-refs");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-record-refs");
 
 closureN_type c_7352528;
 object e_7353586 [3];
@@ -27501,7 +27501,7 @@ return_closcall1(data,  ((closureN)self_7320783)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1937(void *data, int argc, closure _,object k_7316148, object expr_734988_735022_735090_739854, object rename_734989_735023_735091_739855, object compare_734990_735024_735092_739856) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-vector-tail-two");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-vector-tail-two");
 
 closureN_type c_7351007;
 object e_7352523 [3];
@@ -31926,7 +31926,7 @@ return_closcall1(data,  ((closureN)self_7320708)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1915(void *data, int argc, closure _,object k_7316084, object expr_734898_734921_734958_739828, object rename_734899_734922_734959_739829, object compare_734900_734923_734960_739830) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-vector-tail");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-vector-tail");
 
 closureN_type c_7350673;
 object e_7351002 [3];
@@ -32614,7 +32614,7 @@ return_closcall1(data,  ((closureN)self_7320620)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1854(void *data, int argc, closure _,object k_7315926, object expr_734760_734792_734851_739785, object rename_734761_734793_734852_739786, object compare_734762_734794_734853_739787) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-gen-vector-ellipsis");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-gen-vector-ellipsis");
 
 closureN_type c_7349786;
 object e_7350668 [3];
@@ -34965,7 +34965,7 @@ return_closcall1(data,  ((closureN)self_7320597)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1803(void *data, int argc, closure _,object k_7315780, object expr_734606_734642_734711_739740, object rename_734607_734643_734712_739741, object compare_734608_734644_734713_739742) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-vector-step");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-vector-step");
 
 closureN_type c_7349063;
 object e_7349781 [3];
@@ -36675,7 +36675,7 @@ return_closcall1(data,  ((closureN)self_7320537)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1732(void *data, int argc, closure _,object k_7315588, object expr_734411_734454_734541_739679, object rename_734412_734455_734542_739680, object compare_734413_734456_734543_739681) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-vector-two");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-vector-two");
 
 closureN_type c_7348114;
 object e_7349058 [3];
@@ -39080,7 +39080,7 @@ return_closcall1(data,  ((closureN)self_7320486)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1689(void *data, int argc, closure _,object k_7315460, object expr_734232_734273_734354_739626, object rename_734233_734274_734355_739627, object compare_734234_734275_734356_739628) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-vector");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-vector");
 
 closureN_type c_7347421;
 object e_7348109 [4];
@@ -40467,7 +40467,7 @@ return_closcall1(data,  ((closureN)self_7320417)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1497(void *data, int argc, closure _,object k_7315002, object expr_734079_734113_734179_739577, object rename_734080_734114_734180_739578, object compare_734081_734115_734181_739579) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-gen-search");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-gen-search");
 
 closureN_type c_7343890;
 object e_7347416 [3];
@@ -51232,7 +51232,7 @@ return_closcall1(data,  ((closureN)self_7320359)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1470(void *data, int argc, closure _,object k_7314926, object expr_733972_733997_734046_739548, object rename_733973_733998_734047_739549, object compare_733974_733999_734048_739550) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-verify-no-ellipsis");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-verify-no-ellipsis");
 
 closureN_type c_7343622;
 object e_7343885 [3];
@@ -51919,7 +51919,7 @@ return_closcall1(data,  ((closureN)self_7320183)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1154(void *data, int argc, closure _,object k_7314160, object expr_733679_733739_733872_739452, object rename_733680_733740_733873_739453, object compare_733681_733741_733874_739454) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-gen-ellipsis");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-gen-ellipsis");
 
 closureN_type c_7338102;
 object e_7343617 [3];
@@ -68202,7 +68202,7 @@ return_closcall1(data,  ((closureN)self_7320141)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1107(void *data, int argc, closure _,object k_7314021, object expr_733499_733540_733621_739398, object rename_733500_733541_733622_739399, object compare_733501_733542_733623_739400) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-gen-or-step");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-gen-or-step");
 
 closureN_type c_7337421;
 object e_7338097 [3];
@@ -69732,7 +69732,7 @@ return_direct_with_clo1(data,  k_7314141,__lambda_1110,  set_pair_as_expr(&local
 }
 
 static void __lambda_1062(void *data, int argc, closure _,object k_7313901, object expr_733359_733391_733452_739355, object rename_733360_733392_733453_739356, object compare_733361_733393_733454_739357) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-gen-or");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-gen-or");
 
 closureN_type c_7336759;
 object e_7337416 [3];
@@ -71305,7 +71305,7 @@ return_closcall1(data,  ((closureN)self_7319792)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1055(void *data, int argc, closure _,object k_7313885, object expr_733314_733327_733344_739344, object rename_733315_733328_733345_739345, object compare_733316_733329_733346_739346) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-drop-first-arg");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-drop-first-arg");
 
 closureN_type c_7336695;
 object e_7336754 [2];
@@ -71446,7 +71446,7 @@ return_direct_with_clo1(data,  k_7313891,__lambda_1058,  set_pair_as_expr(&local
 }
 
 static void __lambda_1042(void *data, int argc, closure _,object k_7313850, object expr_733247_733264_733292_739326, object rename_733248_733265_733293_739327, object compare_733249_733266_733294_739328) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-tuck-ids");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-tuck-ids");
 
 closureN_type c_7336538;
 object e_7336690 [2];
@@ -71762,7 +71762,7 @@ return_closcall1(data,  ((closureN)self_7319742)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1035(void *data, int argc, closure _,object k_7313837, object expr_733209_733220_733234_739317, object rename_733210_733221_733235_739318, object compare_733211_733222_733236_739319) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-drop-ids");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-drop-ids");
 
 closureN_type c_7336483;
 object e_7336533 [2];
@@ -71895,7 +71895,7 @@ return_direct_with_clo1(data,  k_7313843,__lambda_1038,  set_pair_as_expr(&local
 }
 
 static void __lambda_1020(void *data, int argc, closure _,object k_7313790, object expr_733119_733142_733179_739291, object rename_733120_733143_733180_739292, object compare_733121_733144_733181_739293) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-quasiquote-step");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-quasiquote-step");
 
 closureN_type c_7336240;
 object e_7336478 [3];
@@ -72335,7 +72335,7 @@ return_closcall1(data,  ((closureN)self_7319725)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_838(void *data, int argc, closure _,object k_7313245, object expr_732470_732611_732913_739089, object rename_732471_732612_732914_739090, object compare_732472_732613_732915_739091) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-quasiquote");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-quasiquote");
 
 closureN_type c_7333405;
 object e_7336235 [4];
@@ -78596,7 +78596,7 @@ return_closcall1(data,  ((closureN)self_7319711)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_223(void *data, int argc, closure _,object k_7311421, object expr_73531_73938_731872_738495, object rename_73532_73939_731873_738496, object compare_73533_73940_731874_738497) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-two");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-two");
 
 closureN_type c_7323903;
 object e_7333400 [4];
@@ -99752,7 +99752,7 @@ return_closcall1(data,  ((closureN)self_7319529)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_183(void *data, int argc, closure _,object k_7311316, object expr_73422_73448_73495_738463, object rename_73423_73449_73496_738464, object compare_73424_73450_73497_738465) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-one");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-one");
 
 closureN_type c_7323300;
 object e_7323898 [3];
@@ -101138,7 +101138,7 @@ return_closcall1(data,  ((closureN)self_7318916)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_120(void *data, int argc, closure _,object k_7311149, object expr_73260_73297_73370_738415, object rename_73261_73298_73371_738416, object compare_73262_73299_73372_738417) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-next");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-next");
 
 closureN_type c_7322571;
 object e_7323295 [4];
@@ -102976,7 +102976,7 @@ return_closcall1(data,  ((closureN)self_7318877)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_11(void *data, int argc, closure _,object k_7310908, object expr_7332_7375_73182_738341, object rename_7333_7376_73183_738342, object compare_7334_7377_73184_738343) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match");
 
 closureN_type c_7321597;
 object e_7322566 [3];
@@ -106035,7 +106035,7 @@ return_closcall1(data,  ((closureN)self_7318815)->elements[0],  set_pair_as_expr
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7310891, object expr_735_7314_7323_738336, object rename_736_7315_7324_738337, object compare_737_7316_7325_738338) {
-  Cyc_st_add(data, "scheme/cyclone/match.sld:match-syntax-error");
+  Cyc_st_add(data, "libs/cyclone/match.sld:match-syntax-error");
 
 closureN_type c_7321538;
 object e_7321592 [3];
@@ -106220,10 +106220,10 @@ pair_type local_7321555;
 return_closcall1(data,  ((closureN)self_7318704)->elements[0],  set_pair_as_expr(&local_7321555, r_7310899, boolean_f));; 
 }
 
-void c_schemecyclonematch_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+void c_cyclonematch_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
 (((closure)cont)->fn)(data, 1, cont, NULL);
  } 
-void c_schemecyclonematch_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_cyclonematch_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote_match_91let = find_or_add_symbol("match-let");
   quote_b = find_or_add_symbol("b");
@@ -106377,43 +106377,43 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_let = find_or_add_symbol("let");
   quote_match_91syntax_91error = find_or_add_symbol("match-syntax-error");
 
-  add_global((object *) &__glo_lib_91init_117schemecyclonematch_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91check_91identifier_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91check_91ellipsis_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91let_85_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91named_91let_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91let_95helper_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91letrec_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91let_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91lambda_85_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91lambda_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91extract_91quasiquote_91vars_91step_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91extract_91quasiquote_91vars_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91extract_91vars_91step_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91extract_91vars_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91record_91named_91refs_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91record_91refs_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91vector_91tail_91two_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91vector_91tail_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91gen_91vector_91ellipsis_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91vector_91step_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91vector_91two_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91vector_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91gen_91search_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91verify_91no_91ellipsis_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91gen_91ellipsis_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91gen_91or_91step_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91gen_91or_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91drop_91first_91arg_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91tuck_91ids_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91drop_91ids_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91quasiquote_91step_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91quasiquote_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91two_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91one_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91next_scheme_cyclone_match);
-  add_global((object *) &__glo_match_scheme_cyclone_match);
-  add_global((object *) &__glo_match_91syntax_91error_scheme_cyclone_match);
+  add_global((object *) &__glo_lib_91init_117cyclonematch_cyclone_match);
+  add_global((object *) &__glo_match_91check_91identifier_cyclone_match);
+  add_global((object *) &__glo_match_91check_91ellipsis_cyclone_match);
+  add_global((object *) &__glo_match_91let_85_cyclone_match);
+  add_global((object *) &__glo_match_91named_91let_cyclone_match);
+  add_global((object *) &__glo_match_91let_95helper_cyclone_match);
+  add_global((object *) &__glo_match_91letrec_cyclone_match);
+  add_global((object *) &__glo_match_91let_cyclone_match);
+  add_global((object *) &__glo_match_91lambda_85_cyclone_match);
+  add_global((object *) &__glo_match_91lambda_cyclone_match);
+  add_global((object *) &__glo_match_91extract_91quasiquote_91vars_91step_cyclone_match);
+  add_global((object *) &__glo_match_91extract_91quasiquote_91vars_cyclone_match);
+  add_global((object *) &__glo_match_91extract_91vars_91step_cyclone_match);
+  add_global((object *) &__glo_match_91extract_91vars_cyclone_match);
+  add_global((object *) &__glo_match_91record_91named_91refs_cyclone_match);
+  add_global((object *) &__glo_match_91record_91refs_cyclone_match);
+  add_global((object *) &__glo_match_91vector_91tail_91two_cyclone_match);
+  add_global((object *) &__glo_match_91vector_91tail_cyclone_match);
+  add_global((object *) &__glo_match_91gen_91vector_91ellipsis_cyclone_match);
+  add_global((object *) &__glo_match_91vector_91step_cyclone_match);
+  add_global((object *) &__glo_match_91vector_91two_cyclone_match);
+  add_global((object *) &__glo_match_91vector_cyclone_match);
+  add_global((object *) &__glo_match_91gen_91search_cyclone_match);
+  add_global((object *) &__glo_match_91verify_91no_91ellipsis_cyclone_match);
+  add_global((object *) &__glo_match_91gen_91ellipsis_cyclone_match);
+  add_global((object *) &__glo_match_91gen_91or_91step_cyclone_match);
+  add_global((object *) &__glo_match_91gen_91or_cyclone_match);
+  add_global((object *) &__glo_match_91drop_91first_91arg_cyclone_match);
+  add_global((object *) &__glo_match_91tuck_91ids_cyclone_match);
+  add_global((object *) &__glo_match_91drop_91ids_cyclone_match);
+  add_global((object *) &__glo_match_91quasiquote_91step_cyclone_match);
+  add_global((object *) &__glo_match_91quasiquote_cyclone_match);
+  add_global((object *) &__glo_match_91two_cyclone_match);
+  add_global((object *) &__glo_match_91one_cyclone_match);
+  add_global((object *) &__glo_match_91next_cyclone_match);
+  add_global((object *) &__glo_match_cyclone_match);
+  add_global((object *) &__glo_match_91syntax_91error_cyclone_match);
   add_symbol(quote_match_91let);
   add_symbol(quote_b);
   add_symbol(quote_a);
@@ -106566,118 +106566,118 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_let);
   add_symbol(quote_match_91syntax_91error);
   mclosure0(c_7363050, (function_type)__lambda_2854);c_7363050.num_args = 0; 
-  __glo_lib_91init_117schemecyclonematch_scheme_cyclone_match = &c_7363050; 
+  __glo_lib_91init_117cyclonematch_cyclone_match = &c_7363050; 
   mmacro(c_7363035, (function_type)__lambda_2853);c_7363035.num_args = 3; 
-  __glo_match_91check_91identifier_scheme_cyclone_match = &c_7363035; 
+  __glo_match_91check_91identifier_cyclone_match = &c_7363035; 
   mmacro(c_7363015, (function_type)__lambda_2851);c_7363015.num_args = 3; 
-  __glo_match_91check_91ellipsis_scheme_cyclone_match = &c_7363015; 
+  __glo_match_91check_91ellipsis_cyclone_match = &c_7363015; 
   mmacro(c_7362809, (function_type)__lambda_2829);c_7362809.num_args = 3; 
-  __glo_match_91let_85_scheme_cyclone_match = &c_7362809; 
+  __glo_match_91let_85_cyclone_match = &c_7362809; 
   mmacro(c_7362273, (function_type)__lambda_2785);c_7362273.num_args = 3; 
-  __glo_match_91named_91let_scheme_cyclone_match = &c_7362273; 
+  __glo_match_91named_91let_cyclone_match = &c_7362273; 
   mmacro(c_7360701, (function_type)__lambda_2674);c_7360701.num_args = 3; 
-  __glo_match_91let_95helper_scheme_cyclone_match = &c_7360701; 
+  __glo_match_91let_95helper_cyclone_match = &c_7360701; 
   mmacro(c_7360495, (function_type)__lambda_2651);c_7360495.num_args = 3; 
-  __glo_match_91letrec_scheme_cyclone_match = &c_7360495; 
+  __glo_match_91letrec_cyclone_match = &c_7360495; 
   mmacro(c_7360107, (function_type)__lambda_2611);c_7360107.num_args = 3; 
-  __glo_match_91let_scheme_cyclone_match = &c_7360107; 
+  __glo_match_91let_cyclone_match = &c_7360107; 
   mmacro(c_7359935, (function_type)__lambda_2588);c_7359935.num_args = 3; 
-  __glo_match_91lambda_85_scheme_cyclone_match = &c_7359935; 
+  __glo_match_91lambda_85_cyclone_match = &c_7359935; 
   mmacro(c_7359757, (function_type)__lambda_2564);c_7359757.num_args = 3; 
-  __glo_match_91lambda_scheme_cyclone_match = &c_7359757; 
+  __glo_match_91lambda_cyclone_match = &c_7359757; 
   mmacro(c_7359416, (function_type)__lambda_2537);c_7359416.num_args = 3; 
-  __glo_match_91extract_91quasiquote_91vars_91step_scheme_cyclone_match = &c_7359416; 
+  __glo_match_91extract_91quasiquote_91vars_91step_cyclone_match = &c_7359416; 
   mmacro(c_7357941, (function_type)__lambda_2445);c_7357941.num_args = 3; 
-  __glo_match_91extract_91quasiquote_91vars_scheme_cyclone_match = &c_7357941; 
+  __glo_match_91extract_91quasiquote_91vars_cyclone_match = &c_7357941; 
   mmacro(c_7357639, (function_type)__lambda_2419);c_7357639.num_args = 3; 
-  __glo_match_91extract_91vars_91step_scheme_cyclone_match = &c_7357639; 
+  __glo_match_91extract_91vars_91step_cyclone_match = &c_7357639; 
   mmacro(c_7354661, (function_type)__lambda_2166);c_7354661.num_args = 3; 
-  __glo_match_91extract_91vars_scheme_cyclone_match = &c_7354661; 
+  __glo_match_91extract_91vars_cyclone_match = &c_7354661; 
   mmacro(c_7353589, (function_type)__lambda_2101);c_7353589.num_args = 3; 
-  __glo_match_91record_91named_91refs_scheme_cyclone_match = &c_7353589; 
+  __glo_match_91record_91named_91refs_cyclone_match = &c_7353589; 
   mmacro(c_7352526, (function_type)__lambda_2040);c_7352526.num_args = 3; 
-  __glo_match_91record_91refs_scheme_cyclone_match = &c_7352526; 
+  __glo_match_91record_91refs_cyclone_match = &c_7352526; 
   mmacro(c_7351005, (function_type)__lambda_1937);c_7351005.num_args = 3; 
-  __glo_match_91vector_91tail_91two_scheme_cyclone_match = &c_7351005; 
+  __glo_match_91vector_91tail_91two_cyclone_match = &c_7351005; 
   mmacro(c_7350671, (function_type)__lambda_1915);c_7350671.num_args = 3; 
-  __glo_match_91vector_91tail_scheme_cyclone_match = &c_7350671; 
+  __glo_match_91vector_91tail_cyclone_match = &c_7350671; 
   mmacro(c_7349784, (function_type)__lambda_1854);c_7349784.num_args = 3; 
-  __glo_match_91gen_91vector_91ellipsis_scheme_cyclone_match = &c_7349784; 
+  __glo_match_91gen_91vector_91ellipsis_cyclone_match = &c_7349784; 
   mmacro(c_7349061, (function_type)__lambda_1803);c_7349061.num_args = 3; 
-  __glo_match_91vector_91step_scheme_cyclone_match = &c_7349061; 
+  __glo_match_91vector_91step_cyclone_match = &c_7349061; 
   mmacro(c_7348112, (function_type)__lambda_1732);c_7348112.num_args = 3; 
-  __glo_match_91vector_91two_scheme_cyclone_match = &c_7348112; 
+  __glo_match_91vector_91two_cyclone_match = &c_7348112; 
   mmacro(c_7347419, (function_type)__lambda_1689);c_7347419.num_args = 3; 
-  __glo_match_91vector_scheme_cyclone_match = &c_7347419; 
+  __glo_match_91vector_cyclone_match = &c_7347419; 
   mmacro(c_7343888, (function_type)__lambda_1497);c_7343888.num_args = 3; 
-  __glo_match_91gen_91search_scheme_cyclone_match = &c_7343888; 
+  __glo_match_91gen_91search_cyclone_match = &c_7343888; 
   mmacro(c_7343620, (function_type)__lambda_1470);c_7343620.num_args = 3; 
-  __glo_match_91verify_91no_91ellipsis_scheme_cyclone_match = &c_7343620; 
+  __glo_match_91verify_91no_91ellipsis_cyclone_match = &c_7343620; 
   mmacro(c_7338100, (function_type)__lambda_1154);c_7338100.num_args = 3; 
-  __glo_match_91gen_91ellipsis_scheme_cyclone_match = &c_7338100; 
+  __glo_match_91gen_91ellipsis_cyclone_match = &c_7338100; 
   mmacro(c_7337419, (function_type)__lambda_1107);c_7337419.num_args = 3; 
-  __glo_match_91gen_91or_91step_scheme_cyclone_match = &c_7337419; 
+  __glo_match_91gen_91or_91step_cyclone_match = &c_7337419; 
   mmacro(c_7336757, (function_type)__lambda_1062);c_7336757.num_args = 3; 
-  __glo_match_91gen_91or_scheme_cyclone_match = &c_7336757; 
+  __glo_match_91gen_91or_cyclone_match = &c_7336757; 
   mmacro(c_7336693, (function_type)__lambda_1055);c_7336693.num_args = 3; 
-  __glo_match_91drop_91first_91arg_scheme_cyclone_match = &c_7336693; 
+  __glo_match_91drop_91first_91arg_cyclone_match = &c_7336693; 
   mmacro(c_7336536, (function_type)__lambda_1042);c_7336536.num_args = 3; 
-  __glo_match_91tuck_91ids_scheme_cyclone_match = &c_7336536; 
+  __glo_match_91tuck_91ids_cyclone_match = &c_7336536; 
   mmacro(c_7336481, (function_type)__lambda_1035);c_7336481.num_args = 3; 
-  __glo_match_91drop_91ids_scheme_cyclone_match = &c_7336481; 
+  __glo_match_91drop_91ids_cyclone_match = &c_7336481; 
   mmacro(c_7336238, (function_type)__lambda_1020);c_7336238.num_args = 3; 
-  __glo_match_91quasiquote_91step_scheme_cyclone_match = &c_7336238; 
+  __glo_match_91quasiquote_91step_cyclone_match = &c_7336238; 
   mmacro(c_7333403, (function_type)__lambda_838);c_7333403.num_args = 3; 
-  __glo_match_91quasiquote_scheme_cyclone_match = &c_7333403; 
+  __glo_match_91quasiquote_cyclone_match = &c_7333403; 
   mmacro(c_7323901, (function_type)__lambda_223);c_7323901.num_args = 3; 
-  __glo_match_91two_scheme_cyclone_match = &c_7323901; 
+  __glo_match_91two_cyclone_match = &c_7323901; 
   mmacro(c_7323298, (function_type)__lambda_183);c_7323298.num_args = 3; 
-  __glo_match_91one_scheme_cyclone_match = &c_7323298; 
+  __glo_match_91one_cyclone_match = &c_7323298; 
   mmacro(c_7322569, (function_type)__lambda_120);c_7322569.num_args = 3; 
-  __glo_match_91next_scheme_cyclone_match = &c_7322569; 
+  __glo_match_91next_cyclone_match = &c_7322569; 
   mmacro(c_7321595, (function_type)__lambda_11);c_7321595.num_args = 3; 
-  __glo_match_scheme_cyclone_match = &c_7321595; 
+  __glo_match_cyclone_match = &c_7321595; 
   mmacro(c_7321536, (function_type)__lambda_1);c_7321536.num_args = 3; 
-  __glo_match_91syntax_91error_scheme_cyclone_match = &c_7321536; 
+  __glo_match_91syntax_91error_cyclone_match = &c_7321536; 
 
-  mclosure0(clo_7363053, c_schemecyclonematch_inlinable_lambdas); make_pair(pair_7363052, find_or_add_symbol("c_schemecyclonematch_inlinable_lambdas"), &clo_7363053);
-  make_cvar(cvar_7363054, (object *)&__glo_lib_91init_117schemecyclonematch_scheme_cyclone_match);make_pair(pair_7363055, find_or_add_symbol("lib-init:schemecyclonematch"), &cvar_7363054);
-  make_cvar(cvar_7363056, (object *)&__glo_match_91check_91identifier_scheme_cyclone_match);make_pair(pair_7363057, find_or_add_symbol("match-check-identifier"), &cvar_7363056);
-  make_cvar(cvar_7363058, (object *)&__glo_match_91check_91ellipsis_scheme_cyclone_match);make_pair(pair_7363059, find_or_add_symbol("match-check-ellipsis"), &cvar_7363058);
-  make_cvar(cvar_7363060, (object *)&__glo_match_91let_85_scheme_cyclone_match);make_pair(pair_7363061, find_or_add_symbol("match-let*"), &cvar_7363060);
-  make_cvar(cvar_7363062, (object *)&__glo_match_91named_91let_scheme_cyclone_match);make_pair(pair_7363063, find_or_add_symbol("match-named-let"), &cvar_7363062);
-  make_cvar(cvar_7363064, (object *)&__glo_match_91let_95helper_scheme_cyclone_match);make_pair(pair_7363065, find_or_add_symbol("match-let/helper"), &cvar_7363064);
-  make_cvar(cvar_7363066, (object *)&__glo_match_91letrec_scheme_cyclone_match);make_pair(pair_7363067, find_or_add_symbol("match-letrec"), &cvar_7363066);
-  make_cvar(cvar_7363068, (object *)&__glo_match_91let_scheme_cyclone_match);make_pair(pair_7363069, find_or_add_symbol("match-let"), &cvar_7363068);
-  make_cvar(cvar_7363070, (object *)&__glo_match_91lambda_85_scheme_cyclone_match);make_pair(pair_7363071, find_or_add_symbol("match-lambda*"), &cvar_7363070);
-  make_cvar(cvar_7363072, (object *)&__glo_match_91lambda_scheme_cyclone_match);make_pair(pair_7363073, find_or_add_symbol("match-lambda"), &cvar_7363072);
-  make_cvar(cvar_7363074, (object *)&__glo_match_91extract_91quasiquote_91vars_91step_scheme_cyclone_match);make_pair(pair_7363075, find_or_add_symbol("match-extract-quasiquote-vars-step"), &cvar_7363074);
-  make_cvar(cvar_7363076, (object *)&__glo_match_91extract_91quasiquote_91vars_scheme_cyclone_match);make_pair(pair_7363077, find_or_add_symbol("match-extract-quasiquote-vars"), &cvar_7363076);
-  make_cvar(cvar_7363078, (object *)&__glo_match_91extract_91vars_91step_scheme_cyclone_match);make_pair(pair_7363079, find_or_add_symbol("match-extract-vars-step"), &cvar_7363078);
-  make_cvar(cvar_7363080, (object *)&__glo_match_91extract_91vars_scheme_cyclone_match);make_pair(pair_7363081, find_or_add_symbol("match-extract-vars"), &cvar_7363080);
-  make_cvar(cvar_7363082, (object *)&__glo_match_91record_91named_91refs_scheme_cyclone_match);make_pair(pair_7363083, find_or_add_symbol("match-record-named-refs"), &cvar_7363082);
-  make_cvar(cvar_7363084, (object *)&__glo_match_91record_91refs_scheme_cyclone_match);make_pair(pair_7363085, find_or_add_symbol("match-record-refs"), &cvar_7363084);
-  make_cvar(cvar_7363086, (object *)&__glo_match_91vector_91tail_91two_scheme_cyclone_match);make_pair(pair_7363087, find_or_add_symbol("match-vector-tail-two"), &cvar_7363086);
-  make_cvar(cvar_7363088, (object *)&__glo_match_91vector_91tail_scheme_cyclone_match);make_pair(pair_7363089, find_or_add_symbol("match-vector-tail"), &cvar_7363088);
-  make_cvar(cvar_7363090, (object *)&__glo_match_91gen_91vector_91ellipsis_scheme_cyclone_match);make_pair(pair_7363091, find_or_add_symbol("match-gen-vector-ellipsis"), &cvar_7363090);
-  make_cvar(cvar_7363092, (object *)&__glo_match_91vector_91step_scheme_cyclone_match);make_pair(pair_7363093, find_or_add_symbol("match-vector-step"), &cvar_7363092);
-  make_cvar(cvar_7363094, (object *)&__glo_match_91vector_91two_scheme_cyclone_match);make_pair(pair_7363095, find_or_add_symbol("match-vector-two"), &cvar_7363094);
-  make_cvar(cvar_7363096, (object *)&__glo_match_91vector_scheme_cyclone_match);make_pair(pair_7363097, find_or_add_symbol("match-vector"), &cvar_7363096);
-  make_cvar(cvar_7363098, (object *)&__glo_match_91gen_91search_scheme_cyclone_match);make_pair(pair_7363099, find_or_add_symbol("match-gen-search"), &cvar_7363098);
-  make_cvar(cvar_7363100, (object *)&__glo_match_91verify_91no_91ellipsis_scheme_cyclone_match);make_pair(pair_7363101, find_or_add_symbol("match-verify-no-ellipsis"), &cvar_7363100);
-  make_cvar(cvar_7363102, (object *)&__glo_match_91gen_91ellipsis_scheme_cyclone_match);make_pair(pair_7363103, find_or_add_symbol("match-gen-ellipsis"), &cvar_7363102);
-  make_cvar(cvar_7363104, (object *)&__glo_match_91gen_91or_91step_scheme_cyclone_match);make_pair(pair_7363105, find_or_add_symbol("match-gen-or-step"), &cvar_7363104);
-  make_cvar(cvar_7363106, (object *)&__glo_match_91gen_91or_scheme_cyclone_match);make_pair(pair_7363107, find_or_add_symbol("match-gen-or"), &cvar_7363106);
-  make_cvar(cvar_7363108, (object *)&__glo_match_91drop_91first_91arg_scheme_cyclone_match);make_pair(pair_7363109, find_or_add_symbol("match-drop-first-arg"), &cvar_7363108);
-  make_cvar(cvar_7363110, (object *)&__glo_match_91tuck_91ids_scheme_cyclone_match);make_pair(pair_7363111, find_or_add_symbol("match-tuck-ids"), &cvar_7363110);
-  make_cvar(cvar_7363112, (object *)&__glo_match_91drop_91ids_scheme_cyclone_match);make_pair(pair_7363113, find_or_add_symbol("match-drop-ids"), &cvar_7363112);
-  make_cvar(cvar_7363114, (object *)&__glo_match_91quasiquote_91step_scheme_cyclone_match);make_pair(pair_7363115, find_or_add_symbol("match-quasiquote-step"), &cvar_7363114);
-  make_cvar(cvar_7363116, (object *)&__glo_match_91quasiquote_scheme_cyclone_match);make_pair(pair_7363117, find_or_add_symbol("match-quasiquote"), &cvar_7363116);
-  make_cvar(cvar_7363118, (object *)&__glo_match_91two_scheme_cyclone_match);make_pair(pair_7363119, find_or_add_symbol("match-two"), &cvar_7363118);
-  make_cvar(cvar_7363120, (object *)&__glo_match_91one_scheme_cyclone_match);make_pair(pair_7363121, find_or_add_symbol("match-one"), &cvar_7363120);
-  make_cvar(cvar_7363122, (object *)&__glo_match_91next_scheme_cyclone_match);make_pair(pair_7363123, find_or_add_symbol("match-next"), &cvar_7363122);
-  make_cvar(cvar_7363124, (object *)&__glo_match_scheme_cyclone_match);make_pair(pair_7363125, find_or_add_symbol("match"), &cvar_7363124);
-  make_cvar(cvar_7363126, (object *)&__glo_match_91syntax_91error_scheme_cyclone_match);make_pair(pair_7363127, find_or_add_symbol("match-syntax-error"), &cvar_7363126);
+  mclosure0(clo_7363053, c_cyclonematch_inlinable_lambdas); make_pair(pair_7363052, find_or_add_symbol("c_cyclonematch_inlinable_lambdas"), &clo_7363053);
+  make_cvar(cvar_7363054, (object *)&__glo_lib_91init_117cyclonematch_cyclone_match);make_pair(pair_7363055, find_or_add_symbol("lib-init:cyclonematch"), &cvar_7363054);
+  make_cvar(cvar_7363056, (object *)&__glo_match_91check_91identifier_cyclone_match);make_pair(pair_7363057, find_or_add_symbol("match-check-identifier"), &cvar_7363056);
+  make_cvar(cvar_7363058, (object *)&__glo_match_91check_91ellipsis_cyclone_match);make_pair(pair_7363059, find_or_add_symbol("match-check-ellipsis"), &cvar_7363058);
+  make_cvar(cvar_7363060, (object *)&__glo_match_91let_85_cyclone_match);make_pair(pair_7363061, find_or_add_symbol("match-let*"), &cvar_7363060);
+  make_cvar(cvar_7363062, (object *)&__glo_match_91named_91let_cyclone_match);make_pair(pair_7363063, find_or_add_symbol("match-named-let"), &cvar_7363062);
+  make_cvar(cvar_7363064, (object *)&__glo_match_91let_95helper_cyclone_match);make_pair(pair_7363065, find_or_add_symbol("match-let/helper"), &cvar_7363064);
+  make_cvar(cvar_7363066, (object *)&__glo_match_91letrec_cyclone_match);make_pair(pair_7363067, find_or_add_symbol("match-letrec"), &cvar_7363066);
+  make_cvar(cvar_7363068, (object *)&__glo_match_91let_cyclone_match);make_pair(pair_7363069, find_or_add_symbol("match-let"), &cvar_7363068);
+  make_cvar(cvar_7363070, (object *)&__glo_match_91lambda_85_cyclone_match);make_pair(pair_7363071, find_or_add_symbol("match-lambda*"), &cvar_7363070);
+  make_cvar(cvar_7363072, (object *)&__glo_match_91lambda_cyclone_match);make_pair(pair_7363073, find_or_add_symbol("match-lambda"), &cvar_7363072);
+  make_cvar(cvar_7363074, (object *)&__glo_match_91extract_91quasiquote_91vars_91step_cyclone_match);make_pair(pair_7363075, find_or_add_symbol("match-extract-quasiquote-vars-step"), &cvar_7363074);
+  make_cvar(cvar_7363076, (object *)&__glo_match_91extract_91quasiquote_91vars_cyclone_match);make_pair(pair_7363077, find_or_add_symbol("match-extract-quasiquote-vars"), &cvar_7363076);
+  make_cvar(cvar_7363078, (object *)&__glo_match_91extract_91vars_91step_cyclone_match);make_pair(pair_7363079, find_or_add_symbol("match-extract-vars-step"), &cvar_7363078);
+  make_cvar(cvar_7363080, (object *)&__glo_match_91extract_91vars_cyclone_match);make_pair(pair_7363081, find_or_add_symbol("match-extract-vars"), &cvar_7363080);
+  make_cvar(cvar_7363082, (object *)&__glo_match_91record_91named_91refs_cyclone_match);make_pair(pair_7363083, find_or_add_symbol("match-record-named-refs"), &cvar_7363082);
+  make_cvar(cvar_7363084, (object *)&__glo_match_91record_91refs_cyclone_match);make_pair(pair_7363085, find_or_add_symbol("match-record-refs"), &cvar_7363084);
+  make_cvar(cvar_7363086, (object *)&__glo_match_91vector_91tail_91two_cyclone_match);make_pair(pair_7363087, find_or_add_symbol("match-vector-tail-two"), &cvar_7363086);
+  make_cvar(cvar_7363088, (object *)&__glo_match_91vector_91tail_cyclone_match);make_pair(pair_7363089, find_or_add_symbol("match-vector-tail"), &cvar_7363088);
+  make_cvar(cvar_7363090, (object *)&__glo_match_91gen_91vector_91ellipsis_cyclone_match);make_pair(pair_7363091, find_or_add_symbol("match-gen-vector-ellipsis"), &cvar_7363090);
+  make_cvar(cvar_7363092, (object *)&__glo_match_91vector_91step_cyclone_match);make_pair(pair_7363093, find_or_add_symbol("match-vector-step"), &cvar_7363092);
+  make_cvar(cvar_7363094, (object *)&__glo_match_91vector_91two_cyclone_match);make_pair(pair_7363095, find_or_add_symbol("match-vector-two"), &cvar_7363094);
+  make_cvar(cvar_7363096, (object *)&__glo_match_91vector_cyclone_match);make_pair(pair_7363097, find_or_add_symbol("match-vector"), &cvar_7363096);
+  make_cvar(cvar_7363098, (object *)&__glo_match_91gen_91search_cyclone_match);make_pair(pair_7363099, find_or_add_symbol("match-gen-search"), &cvar_7363098);
+  make_cvar(cvar_7363100, (object *)&__glo_match_91verify_91no_91ellipsis_cyclone_match);make_pair(pair_7363101, find_or_add_symbol("match-verify-no-ellipsis"), &cvar_7363100);
+  make_cvar(cvar_7363102, (object *)&__glo_match_91gen_91ellipsis_cyclone_match);make_pair(pair_7363103, find_or_add_symbol("match-gen-ellipsis"), &cvar_7363102);
+  make_cvar(cvar_7363104, (object *)&__glo_match_91gen_91or_91step_cyclone_match);make_pair(pair_7363105, find_or_add_symbol("match-gen-or-step"), &cvar_7363104);
+  make_cvar(cvar_7363106, (object *)&__glo_match_91gen_91or_cyclone_match);make_pair(pair_7363107, find_or_add_symbol("match-gen-or"), &cvar_7363106);
+  make_cvar(cvar_7363108, (object *)&__glo_match_91drop_91first_91arg_cyclone_match);make_pair(pair_7363109, find_or_add_symbol("match-drop-first-arg"), &cvar_7363108);
+  make_cvar(cvar_7363110, (object *)&__glo_match_91tuck_91ids_cyclone_match);make_pair(pair_7363111, find_or_add_symbol("match-tuck-ids"), &cvar_7363110);
+  make_cvar(cvar_7363112, (object *)&__glo_match_91drop_91ids_cyclone_match);make_pair(pair_7363113, find_or_add_symbol("match-drop-ids"), &cvar_7363112);
+  make_cvar(cvar_7363114, (object *)&__glo_match_91quasiquote_91step_cyclone_match);make_pair(pair_7363115, find_or_add_symbol("match-quasiquote-step"), &cvar_7363114);
+  make_cvar(cvar_7363116, (object *)&__glo_match_91quasiquote_cyclone_match);make_pair(pair_7363117, find_or_add_symbol("match-quasiquote"), &cvar_7363116);
+  make_cvar(cvar_7363118, (object *)&__glo_match_91two_cyclone_match);make_pair(pair_7363119, find_or_add_symbol("match-two"), &cvar_7363118);
+  make_cvar(cvar_7363120, (object *)&__glo_match_91one_cyclone_match);make_pair(pair_7363121, find_or_add_symbol("match-one"), &cvar_7363120);
+  make_cvar(cvar_7363122, (object *)&__glo_match_91next_cyclone_match);make_pair(pair_7363123, find_or_add_symbol("match-next"), &cvar_7363122);
+  make_cvar(cvar_7363124, (object *)&__glo_match_cyclone_match);make_pair(pair_7363125, find_or_add_symbol("match"), &cvar_7363124);
+  make_cvar(cvar_7363126, (object *)&__glo_match_91syntax_91error_cyclone_match);make_pair(pair_7363127, find_or_add_symbol("match-syntax-error"), &cvar_7363126);
 make_pair(c_7363165, &pair_7363052,Cyc_global_variables);
 make_pair(c_7363164, &pair_7363055, &c_7363165);
 make_pair(c_7363163, &pair_7363057, &c_7363164);
@@ -106718,9 +106718,9 @@ make_pair(c_7363129, &pair_7363125, &c_7363130);
 make_pair(c_7363128, &pair_7363127, &c_7363129);
 Cyc_global_variables = &c_7363128;
 cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemecyclonematch_scheme_cyclone_match)->fn)(data, 1, cont, cont);
+(((closure)__glo_lib_91init_117cyclonematch_cyclone_match)->fn)(data, 1, cont, cont);
 }
-void c_schemecyclonematch_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
-  register_library("scheme_cyclone_match");
-  c_schemecyclonematch_entry_pt_first_lambda(data, argc, cont,value);
+void c_cyclonematch_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+  register_library("cyclone_match");
+  c_cyclonematch_entry_pt_first_lambda(data, argc, cont,value);
 }
