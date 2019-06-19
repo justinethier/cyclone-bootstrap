@@ -1734,7 +1734,7 @@ static void __lambda_5(void *data, int argc, object self_734049, object r_731994
 
 static void __lambda_1007(void *data, int argc, closure _,object k_733980) {
   
-  Cyc_st_add(data, "scheme/cyclone/test.sld:lib-init:schemecyclonetest");
+  Cyc_st_add(data, "libs/cyclone/test.sld:lib-init:schemecyclonetest");
 global_set(__glo_test_91group_91name_scheme_cyclone_test, primitive_car);
 closureN_type c_7312500;
 object e_7312705 [1];
@@ -2425,12 +2425,12 @@ return_closcall1(data,  ((closureN)self_735038)->elements[0],  ((inline_function
 }
 
 static void __lambda_1006(void *data, int argc, closure _,object k_733975, object x_731504_731980) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:pair-source");
+  Cyc_st_add(data, "libs/cyclone/test.sld:pair-source");
 return_closcall1(data,  k_733975,  boolean_f);; 
 }
 
 static void __lambda_1003(void *data, int argc, closure _,object k_733970, object x_731503_731979) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:green");
+  Cyc_st_add(data, "libs/cyclone/test.sld:green");
 
 closureN_type c_7312483;
 object e_7312494 [2];
@@ -2472,7 +2472,7 @@ return_closcall1(data,  ((closureN)self_735000)->elements[0],  c_7312490);;
 }
 
 static void __lambda_1000(void *data, int argc, closure _,object k_733965, object x_731502_731978) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:yellow");
+  Cyc_st_add(data, "libs/cyclone/test.sld:yellow");
 
 closureN_type c_7312469;
 object e_7312480 [2];
@@ -2514,7 +2514,7 @@ return_closcall1(data,  ((closureN)self_734998)->elements[0],  c_7312476);;
 }
 
 static void __lambda_997(void *data, int argc, closure _,object k_733960, object x_731501_731977) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:red");
+  Cyc_st_add(data, "libs/cyclone/test.sld:red");
 
 closureN_type c_7312455;
 object e_7312466 [2];
@@ -2556,7 +2556,7 @@ return_closcall1(data,  ((closureN)self_734996)->elements[0],  c_7312462);;
 }
 
 static void __lambda_994(void *data, int argc, closure _,object k_733955, object x_731500_731976) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:underline");
+  Cyc_st_add(data, "libs/cyclone/test.sld:underline");
 
 closureN_type c_7312441;
 object e_7312452 [2];
@@ -2598,7 +2598,7 @@ return_closcall1(data,  ((closureN)self_734994)->elements[0],  c_7312448);;
 }
 
 static void __lambda_991(void *data, int argc, closure _,object k_733950, object x_731499_731975) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:bold");
+  Cyc_st_add(data, "libs/cyclone/test.sld:bold");
 
 closureN_type c_7312427;
 object e_7312438 [2];
@@ -2640,43 +2640,43 @@ return_closcall1(data,  ((closureN)self_734992)->elements[0],  c_7312434);;
 }
 
 static void __lambda_990(void *data, int argc, closure _,object k_733947) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:fg:yellow");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:fg:yellow");
 return_closcall6(data,  __glo_string_scheme_base,  k_733947, obj_char2obj(27), obj_char2obj(91), obj_char2obj(51), obj_char2obj(51), obj_char2obj(109));; 
 }
 
 static void __lambda_989(void *data, int argc, closure _,object k_733944) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:fg:green");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:fg:green");
 return_closcall6(data,  __glo_string_scheme_base,  k_733944, obj_char2obj(27), obj_char2obj(91), obj_char2obj(51), obj_char2obj(50), obj_char2obj(109));; 
 }
 
 static void __lambda_988(void *data, int argc, closure _,object k_733941) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:fg:red");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:fg:red");
 return_closcall6(data,  __glo_string_scheme_base,  k_733941, obj_char2obj(27), obj_char2obj(91), obj_char2obj(51), obj_char2obj(49), obj_char2obj(109));; 
 }
 
 static void __lambda_987(void *data, int argc, closure _,object k_733938) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:fg:normal");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:fg:normal");
 return_closcall6(data,  __glo_string_scheme_base,  k_733938, obj_char2obj(27), obj_char2obj(91), obj_char2obj(51), obj_char2obj(57), obj_char2obj(109));; 
 }
 
 static void __lambda_986(void *data, int argc, closure _,object k_733935) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:underline");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:underline");
 return_closcall5(data,  __glo_string_scheme_base,  k_733935, obj_char2obj(27), obj_char2obj(91), obj_char2obj(50), obj_char2obj(109));; 
 }
 
 static void __lambda_985(void *data, int argc, closure _,object k_733932) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:bold");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:bold");
 return_closcall5(data,  __glo_string_scheme_base,  k_733932, obj_char2obj(27), obj_char2obj(91), obj_char2obj(49), obj_char2obj(109));; 
 }
 
 static void __lambda_984(void *data, int argc, closure _,object k_733929) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:vt100:normal");
+  Cyc_st_add(data, "libs/cyclone/test.sld:vt100:normal");
 return_closcall5(data,  __glo_string_scheme_base,  k_733929, obj_char2obj(27), obj_char2obj(91), obj_char2obj(48), obj_char2obj(109));; 
 }
 
 static void __lambda_963(void *data, int argc, closure _,object k_733892, object proc_731464_731963, object name_731465_731964, object o_731466_731965_raw, ...) {
 load_varargs(o_731466_731965, o_731466_731965_raw, argc - 3);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:getenv-filter-list");
+  Cyc_st_add(data, "libs/cyclone/test.sld:getenv-filter-list");
 
 closureN_type c_7312312;
 object e_7312410 [4];
@@ -3055,7 +3055,7 @@ static void __lambda_966(void *data, int argc, object self_734973, object r_7338
 }
 
 static void __lambda_961(void *data, int argc, closure _,object k_733887, object str_731462_731961) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:string->group-matcher");
+  Cyc_st_add(data, "libs/cyclone/test.sld:string->group-matcher");
 
 closureN_type c_7312304;
 object e_7312309 [1];
@@ -3078,7 +3078,7 @@ return_closcall3(data,  __glo_string_91search_scheme_cyclone_test,  k_733888, ((
 }
 
 static void __lambda_957(void *data, int argc, closure _,object k_733882, object str_731453_731957) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:string->info-matcher");
+  Cyc_st_add(data, "libs/cyclone/test.sld:string->info-matcher");
 
 closureN_type c_7312289;
 object e_7312301 [1];
@@ -3138,7 +3138,7 @@ static void __lambda_960(void *data, int argc, object self_734969, object n_7314
 
 static void __lambda_934(void *data, int argc, closure _,object k_733822, object o_731406_731953_raw, ...) {
 load_varargs(o_731406_731953, o_731406_731953_raw, argc - 1);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-end");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-end");
 
 closureN_type c_7312163;
 object e_7312286 [2];
@@ -3574,7 +3574,7 @@ return_closcall1(data,  ((closureN)self_734966)->elements[0],  ((inline_function
 static void __lambda_912(void *data, int argc, closure _,object k_733793, object o_731379_731947_raw, ...) {
 load_varargs(o_731379_731947, o_731379_731947_raw, argc - 1);
   object name_731382_731948;
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-begin");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-begin");
   
 if( (boolean_f != Cyc_is_pair(o_731379_731947)) ){ 
   
@@ -3973,7 +3973,7 @@ return_closcall1(data,  ((closureN)self_734944)->elements[0],  ((inline_function
 }
 
 static void __lambda_900(void *data, int argc, closure _,object k_733777, object expect_731367_731944, object res_731368_731945) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-equal?");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-equal?");
 
 closureN_type c_7311975;
 object e_7312048 [3];
@@ -4217,7 +4217,7 @@ static void __lambda_904(void *data, int argc, object self_734916, object r_7337
 }
 
 static void __lambda_770(void *data, int argc, closure _,object k_733594, object group_731220_731897) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-default-group-reporter");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-default-group-reporter");
 
 closureN_type c_7311014;
 object e_7311972 [2];
@@ -7256,7 +7256,7 @@ static void __lambda_779(void *data, int argc, object self_734912, object k_7337
 }
 
 static void __lambda_713(void *data, int argc, closure _,object k_733513, object status_731158_731876, object info_731159_731877) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-default-handler");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-default-handler");
 
 closureN_type c_7310702;
 object e_7311011 [3];
@@ -8404,7 +8404,7 @@ static void __lambda_718(void *data, int argc, object self_734781, object tmp_73
 static void __lambda_704(void *data, int argc, closure _,object k_733497, object str_731149_731872, object indent_731150_731873_raw, ...) {
 load_varargs(indent_731150_731873, indent_731150_731873_raw, argc - 2);
   object r_733508;
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-print-header-line");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-print-header-line");
   
 if( (boolean_f != Cyc_is_pair(indent_731150_731873)) ){ 
   
@@ -8557,7 +8557,7 @@ static void __lambda_712(void *data, int argc, object self_734724, object r_7335
 }
 
 static void __lambda_702(void *data, int argc, closure _,object k_733493, object indent_731146_731869, object status_731147_731870, object info_731148_731871) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-print-failure");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-print-failure");
 
 closureN_type c_7310647;
 object e_7310653 [4];
@@ -8581,7 +8581,7 @@ static void __lambda_703(void *data, int argc, object self_734716, object r_7334
 }
 
 static void __lambda_671(void *data, int argc, closure _,object k_733451, object indent_731107_731855, object status_731108_731856, object info_731109_731857) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-print-source");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-print-source");
 
 closureN_type c_7310501;
 object e_7310644 [2];
@@ -9127,7 +9127,7 @@ static void __lambda_681(void *data, int argc, object self_734715, object r_7334
 }
 
 static void __lambda_636(void *data, int argc, closure _,object k_733391, object indent_731071_731844, object status_731072_731845, object info_731073_731846) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-print-explanation");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-print-explanation");
 
 closureN_type c_7310311;
 object e_7310417 [3];
@@ -9795,7 +9795,7 @@ return_closcall3(data,  __glo_print_91exception_scheme_cyclone_test,  ((closureN
 }
 
 static void __lambda_633(void *data, int argc, closure _,object k_733379, object status_731066_731842) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-status-code");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-status-code");
 
 closureN_type c_7310281;
 object e_7310308 [2];
@@ -9870,7 +9870,7 @@ memcpy(((string_type *)c_7310301)->str, tmp_7310302,1);
 }
 
 static void __lambda_631(void *data, int argc, closure _,object k_733375, object status_731065_731841) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-status-message");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-status-message");
 
 closureN_type c_7310274;
 object e_7310278 [2];
@@ -9892,7 +9892,7 @@ static void __lambda_632(void *data, int argc, object self_734649, object r_7333
 }
 
 static void __lambda_626(void *data, int argc, closure _,object k_733363, object status_731058_731837) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-status-color");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-status-color");
 
 closureN_type c_7310248;
 object e_7310271 [1];
@@ -9956,7 +9956,7 @@ static void __lambda_629(void *data, int argc, object self_734647, object r_7333
 }
 
 static void __lambda_624(void *data, int argc, closure _,object k_733358, object info_731057_731836) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-default-skipper");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-default-skipper");
 
 closureN_type c_7310241;
 object e_7310245 [2];
@@ -9978,7 +9978,7 @@ static void __lambda_625(void *data, int argc, object self_734644, object r_7333
 }
 
 static void __lambda_575(void *data, int argc, closure _,object k_733282, object expect_731007_731817, object expr_731008_731818, object info_731009_731819) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-default-applier");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-default-applier");
 
 closureN_type c_7310012;
 object e_7310238 [4];
@@ -10865,7 +10865,7 @@ static void __lambda_577(void *data, int argc, object self_734643, object k_7333
 }
 
 static void __lambda_562(void *data, int argc, closure _,object k_733266, object expect_73994_731810, object expr_73995_731811, object info_73996_731812) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-run");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-run");
 
 closureN_type c_739956;
 object e_7310009 [3];
@@ -11089,7 +11089,7 @@ return_closcall1(data,  ((closureN)self_734595)->elements[0],  ((inline_function
 }
 
 static void __lambda_560(void *data, int argc, closure _,object k_733246, object info_73987_731808) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-expand-info");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-expand-info");
 
 closureN_type c_739925;
 object e_739953 [2];
@@ -11133,7 +11133,7 @@ return_closcall1(data,  ((closureN)self_734583)->elements[1],  set_pair_as_expr(
 }
 
 static void __lambda_554(void *data, int argc, closure _,object k_733235, object group_73985_731806) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group-indent-width");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group-indent-width");
 
 closureN_type c_739896;
 object e_739922 [1];
@@ -11227,7 +11227,7 @@ return_closcall1(data,  ((closureN)self_734582)->elements[0],  Cyc_fast_mul(data
 
 static void __lambda_542(void *data, int argc, closure _,object k_733214, object info_73972_731800, object indent_73973_731801_raw, ...) {
 load_varargs(indent_73973_731801, indent_73973_731801_raw, argc - 2);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-print-name");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-print-name");
 
 closureN_type c_739815;
 object e_739893 [3];
@@ -11451,7 +11451,7 @@ static void __lambda_544(void *data, int argc, object self_734577, object k_7332
 }
 
 static void __lambda_521(void *data, int argc, closure _,object k_733183, object info_73949_731792) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-get-name!");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-get-name!");
 
 closureN_type c_739700;
 object e_739812 [2];
@@ -11845,7 +11845,7 @@ return_closcall3(data,  __glo_truncate_91source_scheme_cyclone_test,  ((closureN
 
 static void __lambda_499(void *data, int argc, closure _,object k_733129, object x_73920_731787, object width_73921_731788, object o_73922_731789_raw, ...) {
 load_varargs(o_73922_731789, o_73922_731789_raw, argc - 3);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:truncate-source");
+  Cyc_st_add(data, "libs/cyclone/test.sld:truncate-source");
 
 closureN_type c_739507;
 object e_739697 [4];
@@ -12320,7 +12320,7 @@ return_direct_with_clo1(data,  k_733141,__lambda_502,  Cyc_car(data, ((closureN)
 }
 
 static void __lambda_497(void *data, int argc, closure _,object k_733123, object x_73918_731785) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:display-to-string");
+  Cyc_st_add(data, "libs/cyclone/test.sld:display-to-string");
   
 if( (boolean_f != Cyc_is_string(x_73918_731785)) ){ 
   return_closcall1(data,  k_733123,  x_73918_731785);
@@ -12346,7 +12346,7 @@ static void __lambda_498(void *data, int argc, object self_734525, object k_7331
 }
 
 static void __lambda_482(void *data, int argc, closure _,object k_733086, object x_73892_731775) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:write-to-string");
+  Cyc_st_add(data, "libs/cyclone/test.sld:write-to-string");
 
 closureN_type c_739337;
 object e_739495 [1];
@@ -12744,7 +12744,7 @@ return_closcall2(data,  car(((closureN)self_734515)->elements[1]),  ((closureN)s
 }
 
 static void __lambda_479(void *data, int argc, closure _,object k_733081, object proc_73890_731773) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:call-with-output-string");
+  Cyc_st_add(data, "libs/cyclone/test.sld:call-with-output-string");
 
 closureN_type c_739326;
 object e_739334 [2];
@@ -12783,7 +12783,7 @@ static void __lambda_481(void *data, int argc, object self_734508, object r_7330
 }
 
 static void __lambda_474(void *data, int argc, closure _,object k_733070, object a_73880_731770, object b_73881_731771, object epsilon_73882_731772) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:approx-equal?");
+  Cyc_st_add(data, "libs/cyclone/test.sld:approx-equal?");
 
 closureN_type c_739280;
 object e_739323 [4];
@@ -12881,7 +12881,7 @@ return_closcall1(data,  ((closureN)self_734505)->elements[1],  Cyc_num_fast_lt_o
 
 static void __lambda_472(void *data, int argc, closure _,object k_733065, object ls_73868_731766, object key_73869_731767, object o_73870_731768_raw, ...) {
 load_varargs(o_73870_731768, o_73870_731768_raw, argc - 3);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:assq-ref");
+  Cyc_st_add(data, "libs/cyclone/test.sld:assq-ref");
 
 closureN_type c_739260;
 object e_739275 [2];
@@ -12918,7 +12918,7 @@ return_closcall1(data,  ((closureN)self_734502)->elements[0],  Cyc_car(data, ((c
 }
 
 static void __lambda_466(void *data, int argc, closure _,object k_733054, object group_73858_731761, object field_73859_731762, object value_73860_731763) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group-push!");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group-push!");
 
 closureN_type c_739209;
 object e_739255 [4];
@@ -13041,7 +13041,7 @@ return_closcall1(data,  ((closureN)self_734500)->elements[0],  Cyc_set_cdr(data,
 static void __lambda_460(void *data, int argc, closure _,object k_733041, object group_73847_731755, object field_73848_731756, object o_73849_731757_raw, ...) {
 load_varargs(o_73849_731757, o_73849_731757_raw, argc - 3);
   object amount_73850_731758;
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group-inc!");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group-inc!");
   
 if( (boolean_f != Cyc_is_pair(o_73849_731757)) ){ 
   
@@ -13166,7 +13166,7 @@ return_closcall1(data,  ((closureN)self_734495)->elements[1],  Cyc_set_cdr(data,
 }
 
 static void __lambda_455(void *data, int argc, closure _,object k_733033, object group_73837_731750, object field_73838_731751, object value_73839_731752) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group-set!");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group-set!");
 
 closureN_type c_739115;
 object e_739149 [4];
@@ -13264,7 +13264,7 @@ return_closcall1(data,  ((closureN)self_734490)->elements[0],  Cyc_set_cdr(data,
 
 static void __lambda_454(void *data, int argc, closure _,object k_733028, object group_73833_731747, object field_73834_731748, object o_73835_731749_raw, ...) {
 load_varargs(o_73835_731749, o_73835_731749_raw, argc - 3);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group-ref");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group-ref");
 if( (boolean_f != group_73833_731747) ){ 
   
 
@@ -13286,7 +13286,7 @@ return_closcall1(data,  k_733028,  Cyc_car(data, o_73835_731749));
 static void __lambda_435(void *data, int argc, closure _,object k_732992, object name_73822_731741, object o_73823_731742_raw, ...) {
 load_varargs(o_73823_731742, o_73823_731742_raw, argc - 2);
   object r_732993;
-  Cyc_st_add(data, "scheme/cyclone/test.sld:make-test-group");
+  Cyc_st_add(data, "libs/cyclone/test.sld:make-test-group");
   
 if( (boolean_f != Cyc_is_pair(o_73823_731742)) ){ 
   
@@ -13627,7 +13627,7 @@ static void __lambda_439(void *data, int argc, object self_734487, object k_7330
 }
 
 static void __lambda_425(void *data, int argc, closure _,object k_732975, object expr_73799_73808_73817_731736, object rename_73800_73809_73818_731737, object compare_73801_73810_73819_731738) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-syntax-error");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-syntax-error");
 
 closureN_type c_738946;
 object e_739000 [3];
@@ -13813,7 +13813,7 @@ return_closcall1(data,  ((closureN)self_734469)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_326(void *data, int argc, closure _,object k_732754, object expr_73761_73772_73786_731727, object rename_73762_73773_73787_731728, object compare_73763_73774_73788_731729) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-group");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-group");
 
 closureN_type c_737933;
 object e_738941 [3];
@@ -17375,7 +17375,7 @@ return_closcall1(data,  ((closureN)self_734460)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_324(void *data, int argc, closure _,object k_732749) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-exit");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-exit");
 
 closureN_type c_737922;
 object e_737930 [1];
@@ -17401,7 +17401,7 @@ return_closcall1(data,  ((closureN)self_734362)->elements[0],  __halt(((inline_f
 }
 
 static void __lambda_273(void *data, int argc, closure _,object k_732623, object expr_73648_73674_73722_731692, object rename_73649_73675_73723_731693, object compare_73650_73676_73724_731694) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-vars");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-vars");
 
 closureN_type c_737313;
 object e_737917 [3];
@@ -19165,7 +19165,7 @@ return_closcall1(data,  ((closureN)self_734360)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_259(void *data, int argc, closure _,object k_732585, object expr_73585_73602_73627_731675, object rename_73586_73603_73628_731676, object compare_73587_73604_73629_731677) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-propagate-info");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-propagate-info");
 
 closureN_type c_737167;
 object e_737308 [3];
@@ -19503,7 +19503,7 @@ return_closcall1(data,  ((closureN)self_734310)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_220(void *data, int argc, closure _,object k_732505, object expr_73511_73528_73562_731656, object rename_73512_73529_73563_731657, object compare_73513_73530_73564_731658) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-error");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-error");
 
 closureN_type c_736886;
 object e_737162 [3];
@@ -20393,7 +20393,7 @@ return_closcall1(data,  ((closureN)self_734297)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_172(void *data, int argc, closure _,object k_732390, object expr_73430_73450_73485_731634, object rename_73431_73451_73486_731635, object compare_73432_73452_73487_731636) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-values");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-values");
 
 closureN_type c_736473;
 object e_736881 [3];
@@ -21701,7 +21701,7 @@ return_closcall1(data,  ((closureN)self_734259)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_149(void *data, int argc, closure _,object k_732337, object expr_73367_73383_73410_731618, object rename_73368_73384_73411_731619, object compare_73369_73385_73412_731620) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-not");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-not");
 
 closureN_type c_736306;
 object e_736468 [3];
@@ -22198,7 +22198,7 @@ return_closcall1(data,  ((closureN)self_734212)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_110(void *data, int argc, closure _,object k_732257, object expr_73293_73310_73344_731599, object rename_73294_73311_73345_731600, object compare_73295_73312_73346_731601) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-assert");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-assert");
 
 closureN_type c_736025;
 object e_736301 [3];
@@ -23088,7 +23088,7 @@ return_closcall1(data,  ((closureN)self_734190)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_93(void *data, int argc, closure _,object k_732222, object expr_73256_73267_73280_731590, object rename_73257_73268_73281_731591, object compare_73258_73269_73282_731592) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test-equal");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test-equal");
 
 closureN_type c_735919;
 object e_736020 [3];
@@ -23444,7 +23444,7 @@ return_closcall1(data,  ((closureN)self_734152)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_16(void *data, int argc, closure _,object k_732023, object expr_7338_7384_73190_731528, object rename_7339_7385_73191_731529, object compare_7340_7386_73192_731530) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:test");
+  Cyc_st_add(data, "libs/cyclone/test.sld:test");
 
 closureN_type c_735156;
 object e_735914 [4];
@@ -25443,7 +25443,7 @@ return_closcall1(data,  ((closureN)self_734136)->elements[0],  set_pair_as_expr(
 }
 
 static void __lambda_10(void *data, int argc, closure _,object k_732003, object pat_734_731516, object str_735_731517) {
-  Cyc_st_add(data, "scheme/cyclone/test.sld:string-search");
+  Cyc_st_add(data, "libs/cyclone/test.sld:string-search");
 
 closureN_type c_735071;
 object e_735153 [3];
@@ -25633,7 +25633,7 @@ return_closcall2(data,  car(((closureN)self_734060)->elements[1]),  k_732012, Cy
 
 static void __lambda_1(void *data, int argc, closure _,object k_731991, object msg_731_731513, object args_732_731514_raw, ...) {
 load_varargs(args_732_731514, args_732_731514_raw, argc - 2);
-  Cyc_st_add(data, "scheme/cyclone/test.sld:warning");
+  Cyc_st_add(data, "libs/cyclone/test.sld:warning");
 
 closureN_type c_735041;
 object e_735068 [3];
