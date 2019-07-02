@@ -220,17 +220,14 @@
         Cyc_check_mutex(data, obj);
         Cyc_check_num(data, timeout);
         value = unbox_number(timeout);
-//printf(\"tv_sec = %ld\\n\", tim.tv_sec);
-//printf(\"tv_nsec = %ld\\n\", tim.tv_nsec);
         set_thread_blocked(data, k);
         clock_gettime(CLOCK_REALTIME, &tim);
-//        clock_gettime(CLOCK_MONOTONIC, &tim);
-//        gettimeofday(&tim, NULL);
+        //clock_gettime(CLOCK_MONOTONIC, &tim);
+        //gettimeofday(&tim, NULL);
         tim.tv_sec += (long)value;
         tim.tv_nsec += (long)((value - ((long)value)) * 1000 * NANOSECONDS_PER_MILLISECOND);
         int result = pthread_mutex_timedlock(&(m->lock), &tim);
         if (result != 0) {
-//printf(\"result = %d\\n\", result);
           return_thread_runnable(data, boolean_f);
         }
         return_thread_runnable(data, boolean_t); ")
