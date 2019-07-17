@@ -6,6 +6,7 @@
 
 # Compiler options
 CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I$(INSTALL_DIR)/usr/local/include -L$(INSTALL_DIR)/usr/local/lib
+LDFLAGS       ?= -L. -L$(INSTALL_DIR)/usr/local/lib
 COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
 # Use these lines instead for debugging or profiling
 #CFLAGS = -g -Wall
@@ -21,7 +22,8 @@ CREATE_LIBRARY_FLAGS = rcs
 CC_PROG ?= "$(CC) ~src-file~ $(COMP_CFLAGS) -c -o ~exec-file~.o"
 CC_EXEC ?= "$(CC) ~exec-file~.o ~obj-files~ $(LIBS) $(COMP_CFLAGS) -o ~exec-file~"
 CC_LIB  ?= "$(CC) ~src-file~ $(COMP_CFLAGS) -c -o ~exec-file~.o"
-CC_SO   ?= "$(CC) -shared -rdynamic -o ~exec-file~.so ~exec-file~.o"
+#CC_SO   ?= "$(CC) -shared -rdynamic -o ~exec-file~.so ~exec-file~.o"
+CC_SO   ?= "$(CC) -Wl,-undefined -shared -rdynamic -o ~exec-file~.so ~exec-file~.o"
 
 AR        ?= ar
 #CD        ?= cd
