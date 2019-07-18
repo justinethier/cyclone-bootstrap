@@ -18,4 +18,4 @@ Instructions for building on Windows using MSYS
 3. `cd cyclone-bootstrap`
 4. `./setup.mysys.sh` - this will fetch and build all the dependencies.
 
-You will have `cyclone.exe` and `icyc.exe` generated at `$(HOME)/CYCLONE_ROOT/INSTALL/usr/local/bin`!
+You will have `cyclone.exe` and `icyc.exe` generated at `/usr/local/bin`!
