@@ -6,12 +6,14 @@ CYCLONE_BOOTSTRAP_SRC=$PWD
 # Root directory where everthing related
 # to cyclone-bootstrap will reside.
 export CYCLONE_ROOT=$HOME/CYCLONE_ROOT
-export INSTALL_DIR=$CYCLONE_ROOT/INSTALL
+export INSTALL_DIR=/
+#export INSTALL_DIR=$CYCLONE_ROOT/INSTALL
 export INSTALL_RELATIVE=/usr/local
 
 
 # Create the necessary directories
-mkdir $CYCLONE_ROOT $INSTALL_DIR
+#mkdir $CYCLONE_ROOT $INSTALL_DIR
+mkdir $CYCLONE_ROOT
 
 # Build and install libtommath
 cd $CYCLONE_ROOT
@@ -42,4 +44,5 @@ cp -v Makefile.config.msys2 Makefile.config
 # Fixing up the Makefile - this is a temporary crude workaround
 perl -pi -e 's/-shared /-Wl,-undefined -shared /' Makefile
 make
-DESTDIR=$INSTALL_DIR make install
+#DESTDIR=$INSTALL_DIR make install
+make install
