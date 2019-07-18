@@ -10,7 +10,7 @@ Instructions for building on Windows using MSYS
 ### Install necessary tools in MSYS2
 1. Run `C:\msys64\msys2.exe` and execute the following commands in the msys terminal:
 2. `pacman -Su` (Hit 'Y' when asked - Proceed with installation?)
-3. `pacman -S gcc make autoconf git` (Hit 'Y' when asked - Proceed with installation?)
+3. `pacman -S gcc make autoconf git mingw-w64-i686-libtommath` (Hit 'Y' when asked - Proceed with installation?)
 
 ### Build and install cyclone-bootstrap
 1. Run the following commands:
