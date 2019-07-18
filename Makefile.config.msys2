@@ -5,8 +5,8 @@
 # Configuration options for the makefile
 
 # Compiler options
-CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I$(INSTALL_DIR)/usr/local/include -L$(INSTALL_DIR)/usr/local/lib
-LDFLAGS       ?= -L. -L$(INSTALL_DIR)/usr/local/lib
+CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I/usr/local/include -L/usr/local/lib
+LDFLAGS       ?= -L. -L/usr/local/lib
 COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
 # Use these lines instead for debugging or profiling
 #CFLAGS = -g -Wall
