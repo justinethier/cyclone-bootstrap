@@ -9,11 +9,13 @@ Cyclone cannot be built directly on a system that does not have Cyclone binaries
 Supported Platforms
 -------------------
 
-Cyclone has been built and tested on Linux, Mac, and Windows (using MSYS).
+Cyclone has been built and tested on Linux, Mac, Windows (using MSYS), and FreeBSD 12.0 (with clang 6.0.1).
 
 - **Mac Users** - please read [Instructions for building on Mac](README.Mac.md).
 
 - **Windows Users** - please read [Instructions for building on Windows using MSYS](README.Windows.md).
+
+- **FreeBSD Users** - please read [Instructions for building on FreeBSD](README.FreeBSD.md).
 
 Otherwise please follow the instructions below to build and install Cyclone.
 
@@ -46,12 +48,16 @@ The following command can be used to install dependencies on Fedora, though `lib
 
     sudo yum install libtommath-devel gcc make
 
+On FreeBSD 12 use the following command:
+
+    sudo pkg install libtommath concurrencykit gmake
+
 Installation
 ------------
 
 First, [download the latest release](https://github.com/justinethier/cyclone-bootstrap/releases) in either `zip` or `tar.gz` format and unpack the archive.
 
-Use `make` without arguments to install in the default location (`/usr/local`):
+Use `make` (or `gmake` on FreeBSD) without arguments to install in the default location (`/usr/local`):
 
     make
     sudo make install
@@ -69,7 +75,7 @@ Note:
 
 - If you are building on a platform that requires special compiler commands, such as a Raspberry Pi, copy the appropriate `Makefile.config.X` file to `Makefile.config` before doing a build.
 
-At the moment, Cyclone has only been tested on Linux using GCC. Other platforms may be added in the future.
+At the moment, Cyclone has been tested on Linux using GCC and on FreeBSD 12 with clang 6.0.1. Other platforms may be added in the future.
 
 Documentation
 -------------

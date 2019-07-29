@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/sh
 # Cyclone Scheme
 # http://github.com/justinethier/cyclone
 # Copyright (c) 2014, Justin Ethier
@@ -31,7 +31,12 @@ else
   PREFIX=""
 fi
 
-make $PREFIX && \
-sudo make $PREFIX install && \
-make $PREFIX test
+if [ $(uname) = 'FreeBSD' ]; then
+    MAKE=gmake
+else
+    MAKE=make
+fi
 
+$MAKE $PREFIX && \
+sudo $MAKE $PREFIX install && \
+$MAKE $PREFIX test
