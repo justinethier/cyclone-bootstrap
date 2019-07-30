@@ -44,9 +44,9 @@ On a Debian variant such as Ubuntu the necessary packages may be installed via t
 
     sudo apt-get install libtommath-dev libck-dev make gcc
 
-The following command can be used to install dependencies on Fedora, though `libck` will also need to be built from source:
+The following command can be used to install dependencies on Fedora:
 
-    sudo yum install libtommath-devel gcc make
+    sudo dnf install libtommath-devel ck-devel gcc make
 
 On FreeBSD 12 use the following command:
 
