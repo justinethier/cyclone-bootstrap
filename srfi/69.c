@@ -858,7 +858,7 @@ c_732473.num_elements = 1;
 c_732473.elements = (object *)e_732583;
 c_732473.elements[0] = ((closureN)self_731139)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732473, __glo_hash_91table_127_srfi_69, __glo__121srfi_91hash_91table_125_srfi_69);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732473, obj_int2obj(0), __glo__121srfi_91hash_91table_125_srfi_69);;; 
 }
 
 static void __lambda_190(void *data, int argc, object self_731140, object r_73954) {

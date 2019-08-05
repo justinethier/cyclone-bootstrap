@@ -700,7 +700,7 @@ c_73990.num_elements = 1;
 c_73990.elements = (object *)e_731076;
 c_73990.elements[0] = ((closureN)self_73432)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_73990, __glo_ast_117lambda_127_scheme_cyclone_ast, __glo__121lambda_91ast_125_scheme_cyclone_ast);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_73990, obj_int2obj(0), __glo__121lambda_91ast_125_scheme_cyclone_ast);;; 
 }
 
 static void __lambda_68(void *data, int argc, object self_73433, object r_73370) {

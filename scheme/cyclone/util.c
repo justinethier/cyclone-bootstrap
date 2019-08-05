@@ -916,7 +916,7 @@ c_733642.num_elements = 1;
 c_733642.elements = (object *)e_733729;
 c_733642.elements[0] = ((closureN)self_731525)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_733642, __glo_sc_127_scheme_cyclone_util, __glo__121syn_91clo_125_scheme_cyclone_util);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_733642, obj_int2obj(0), __glo__121syn_91clo_125_scheme_cyclone_util);;; 
 }
 
 static void __lambda_246(void *data, int argc, object self_731526, object r_731304) {

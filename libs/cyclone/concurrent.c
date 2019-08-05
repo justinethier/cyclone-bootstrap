@@ -1052,7 +1052,7 @@ c_732667.num_elements = 1;
 c_732667.elements = (object *)e_733154;
 c_732667.elements[0] = ((closureN)self_731258)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732667, __glo_shared_91delay_127_cyclone_concurrent, __glo__121shared_91delay_125_cyclone_concurrent);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732667, obj_int2obj(0), __glo__121shared_91delay_125_cyclone_concurrent);;; 
 }
 
 static void __lambda_260(void *data, int argc, object self_731259, object r_731025) {
@@ -1340,7 +1340,7 @@ c_732706.num_elements = 1;
 c_732706.elements = (object *)e_733105;
 c_732706.elements[0] = ((closureN)self_731274)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732706, __glo_shared_91promise_127_cyclone_concurrent, __glo__121shared_91promise_125_cyclone_concurrent);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732706, obj_int2obj(0), __glo__121shared_91promise_125_cyclone_concurrent);;; 
 }
 
 static void __lambda_276(void *data, int argc, object self_731275, object r_731001) {
@@ -1696,7 +1696,7 @@ c_732755.num_elements = 1;
 c_732755.elements = (object *)e_733047;
 c_732755.elements[0] = ((closureN)self_731294)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732755, __glo_future_127_cyclone_concurrent, __glo__121future_125_cyclone_concurrent);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732755, obj_int2obj(0), __glo__121future_125_cyclone_concurrent);;; 
 }
 
 static void __lambda_296(void *data, int argc, object self_731295, object r_73971) {
@@ -1988,7 +1988,7 @@ c_732794.num_elements = 1;
 c_732794.elements = (object *)e_732996;
 c_732794.elements[0] = ((closureN)self_731310)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732794, __glo_shared_91queue_127_cyclone_concurrent, __glo__121shared_91queue_125_cyclone_concurrent);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732794, obj_int2obj(0), __glo__121shared_91queue_125_cyclone_concurrent);;; 
 }
 
 static void __lambda_312(void *data, int argc, object self_731311, object r_73947) {
@@ -2482,7 +2482,7 @@ c_732863.num_elements = 1;
 c_732863.elements = (object *)e_732919;
 c_732863.elements[0] = ((closureN)self_731338)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732863, __glo_thread_91pool_127_cyclone_concurrent, __glo__121thread_91pool_125_cyclone_concurrent);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732863, obj_int2obj(0), __glo__121thread_91pool_125_cyclone_concurrent);;; 
 }
 
 static void __lambda_340(void *data, int argc, object self_731339, object r_73905) {

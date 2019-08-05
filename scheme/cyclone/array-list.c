@@ -654,7 +654,7 @@ c_731379.num_elements = 1;
 c_731379.elements = (object *)e_731534;
 c_731379.elements[0] = ((closureN)self_73617)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_731379, __glo_array_91list_127_scheme_cyclone_array_91list, __glo__121array_91list_125_scheme_cyclone_array_91list);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_731379, obj_int2obj(0), __glo__121array_91list_125_scheme_cyclone_array_91list);;; 
 }
 
 static void __lambda_96(void *data, int argc, object self_73618, object r_73531) {

@@ -3078,7 +3078,7 @@ c_7317644.num_elements = 1;
 c_7317644.elements = (object *)e_7318315;
 c_7317644.elements[0] = ((closureN)self_737419)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7317644, __glo_adb_117variable_127_scheme_cyclone_cps_91optimizations, __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7317644, obj_int2obj(0), __glo__121analysis_91db_91variable_125_scheme_cyclone_cps_91optimizations);;; 
 }
 
 static void __lambda_1356(void *data, int argc, object self_737420, object r_735784) {
@@ -4570,7 +4570,7 @@ c_7317853.num_elements = 1;
 c_7317853.elements = (object *)e_7318089;
 c_7317853.elements[0] = ((closureN)self_737503)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7317853, __glo_adb_117function_127_scheme_cyclone_cps_91optimizations, __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations);;; 
+return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7317853, obj_int2obj(0), __glo__121analysis_91db_91function_125_scheme_cyclone_cps_91optimizations);;; 
 }
 
 static void __lambda_1440(void *data, int argc, object self_737504, object r_735658) {
