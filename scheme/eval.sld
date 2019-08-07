@@ -614,6 +614,19 @@
                    rename-env
                    local-renamed))))))
     (cond
+      ;; special case - a begin can splice in definitions, so we can't use the
+      ;; built-in macro that just expands them in a new lambda scope. Instead
+      ;; we nest them below within the same lexical environment.
+      ((eq? 'begin op)
+;(newline)
+;(display "/* ")
+;(write (list exp))
+;(display "*/ ")
+       (let ((fncs (map (lambda (expr) 
+                          (analyze expr a-env rename-env local-renamed))
+                        (cdr exp))))
+         (lambda (env)
+           (foldl (lambda (fnc _) (fnc env)) #f fncs))))
       ;; compiled macro
       ((Cyc-macro? var)
        (expand var))
@@ -797,7 +810,7 @@
              (result #f))
         ;(newline)
         ;(display "/* ")
-        ;(display (list 'macro:expand exp macro compiled-macro? local-renamed))
+        ;(write (list 'macro:expand exp macro compiled-macro? local-renamed))
         ;(display "*/ ")
 
           ;; Invoke ER macro
@@ -818,12 +831,12 @@
                   (Cyc-er-rename use-env mac-env local-renamed)
                   (Cyc-er-compare? use-env rename-env))
                 mac-env))))
-;        (newline)
-;        (display "/* ")
-;        (display (list 'macro:expand exp macro compiled-macro?))
-;        (newline)
-;        (display (list result))
-;        (display "*/ ")
+        ;(newline)
+        ;(display "/* ")
+        ;(write (list 'macro:expand exp macro compiled-macro?))
+        ;(newline)
+        ;(write (list result))
+        ;(display "*/ ")
           (macro:add-renamed-vars! use-env rename-env)
           result))
 
