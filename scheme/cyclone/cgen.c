@@ -677,7 +677,9 @@ extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
 extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91map_91loop_912_scheme_base;
 extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_912_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -16565,7 +16567,7 @@ c_739476.elements[5] = ((closureN)self_735074)->elements[5];
 
 
 mclosure0(c_739585, (function_type)__lambda_440);c_739585.num_args = 2;
-return_closcall4(data,  __glo_map_scheme_base,  &c_739476, &c_739585, ((closureN)self_735074)->elements[5], args_73682_731542_733936_734031_734125);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_739476, &c_739585, ((closureN)self_735074)->elements[5], args_73682_731542_733936_734031_734125);; 
 }
 
 static void __lambda_440(void *data, int argc, object self_735089, object k_732619_733960_734055_734149, object param_73693_731548_733961_734056_734150, object arg_73694_731549_733962_734057_734151) {
@@ -16629,7 +16631,7 @@ c_739480.elements[6] = ((closureN)self_735076)->elements[5];
 
 
 mclosure0(c_739570, (function_type)__lambda_439);c_739570.num_args = 2;
-return_closcall4(data,  __glo_map_scheme_base,  &c_739480, &c_739570, ((closureN)self_735076)->elements[4], ((closureN)self_735076)->elements[5]);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_739480, &c_739570, ((closureN)self_735076)->elements[4], ((closureN)self_735076)->elements[5]);; 
 }
 
 static void __lambda_439(void *data, int argc, object self_735088, object k_732616_733957_734052_734146, object p_73691_731546_733958_734053_734147, object tmp_73692_731547_733959_734054_734148) {
@@ -17814,7 +17816,7 @@ c_739099.elements[1] = ((closureN)self_735020)->elements[2];
 mclosure0(c_739119, (function_type)__lambda_368);c_739119.num_args = 2;
 
 
-return_closcall4(data,  __glo_map_scheme_base,  &c_739099, &c_739119, Cyc_cdr(data, r_732516), ((closureN)self_735020)->elements[1]);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_739099, &c_739119, Cyc_cdr(data, r_732516), ((closureN)self_735020)->elements[1]);; 
 }
 
 static void __lambda_368(void *data, int argc, object self_735024, object k_732513, object arg_73592_731519, object body_91exp_73593_731520) {

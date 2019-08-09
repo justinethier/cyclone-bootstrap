@@ -770,7 +770,9 @@ extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
 extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91map_91loop_912_scheme_base;
 extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_912_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -5925,7 +5927,7 @@ c_734463.num_elements = 1;
 c_734463.elements = (object *)e_734469;
 c_734463.elements[0] = ((closureN)self_732632)->elements[2];
 
-return_closcall4(data,  __glo_for_91each_scheme_base,  ((closureN)self_732632)->elements[0], &c_734463, ((closureN)self_732632)->elements[1], r_731675);; 
+return_closcall4(data,  __glo_Cyc_91for_91each_91loop_912_scheme_base,  ((closureN)self_732632)->elements[0], &c_734463, ((closureN)self_732632)->elements[1], r_731675);; 
 }
 
 static void __lambda_243(void *data, int argc, object self_732633, object k_731676, object var_73412_73997, object val_73413_73998) {

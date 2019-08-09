@@ -674,7 +674,9 @@ extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
 extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91map_91loop_912_scheme_base;
 extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_912_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -15462,7 +15464,7 @@ c_7313888.elements[5] = ((closureN)self_736934)->elements[6];
 
 
 
-return_closcall4(data,  __glo_map_scheme_base,  &c_7313888, primitive_cons, r_734630, Cyc_cdr(data, ((closureN)self_736934)->elements[0]));; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_7313888, primitive_cons, r_734630, Cyc_cdr(data, ((closureN)self_736934)->elements[0]));; 
 }
 
 static void __lambda_871(void *data, int argc, object self_736935, object r_734629) {
@@ -18282,7 +18284,7 @@ c_7313280.elements[0] = ((closureN)self_736842)->elements[0];
 
 
 
-return_closcall4(data,  __glo_for_91each_scheme_base,  ((closureN)self_736842)->elements[2], &c_7313280, Cyc_cdr(data, ((closureN)self_736842)->elements[1]), car(((closureN)self_736842)->elements[3]));; 
+return_closcall4(data,  __glo_Cyc_91for_91each_91loop_912_scheme_base,  ((closureN)self_736842)->elements[2], &c_7313280, Cyc_cdr(data, ((closureN)self_736842)->elements[1]), car(((closureN)self_736842)->elements[3]));; 
 }
 
 static void __lambda_796(void *data, int argc, object self_736843, object k_734413_735967, object e_731145_732566_735968, object a_731146_732567_735969) {
@@ -20167,7 +20169,7 @@ c_7312422.num_elements = 1;
 c_7312422.elements = (object *)e_7312508;
 c_7312422.elements[0] = k_734242;
 
-return_closcall4(data,  __glo_map_scheme_base,  &c_7312422, __glo__list_scheme_base, prim_91calls_73986_732514, lam_91formals_73987_732515);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_7312422, __glo__list_scheme_base, prim_91calls_73986_732514, lam_91formals_73987_732515);; 
 }
 
 static void __lambda_669(void *data, int argc, object self_736733, object calls_95args_73988_732516) {

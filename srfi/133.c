@@ -539,7 +539,9 @@ extern object __glo_make_91list_scheme_base;
 extern object __glo_list_91copy_scheme_base;
 extern object __glo_map_scheme_base;
 extern object __glo_Cyc_91map_91loop_911_scheme_base;
+extern object __glo_Cyc_91map_91loop_912_scheme_base;
 extern object __glo_Cyc_91for_91each_91loop_911_scheme_base;
+extern object __glo_Cyc_91for_91each_91loop_912_scheme_base;
 extern object __glo_for_91each_scheme_base;
 extern object __glo_list_91tail_scheme_base;
 extern object __glo_list_91ref_scheme_base;
@@ -14395,7 +14397,7 @@ c_735491.elements[2] = ((closureN)self_734608)->elements[3];
 
 
 mmacro(c_735576, (function_type)__lambda_44);c_735576.num_args = 2;
-return_closcall4(data,  __glo_map_scheme_base,  &c_735491, &c_735576, ((closureN)self_734608)->elements[1], ((closureN)self_734608)->elements[0]);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_735491, &c_735576, ((closureN)self_734608)->elements[1], ((closureN)self_734608)->elements[0]);; 
 }
 
 static void __lambda_44(void *data, int argc, object self_734615, object k_733056, object _127var_7380_73155_732371, object _127default_7381_73156_732372) {
@@ -15047,7 +15049,7 @@ c_735198.elements[5] = ((closureN)self_734631)->elements[6];
 
 
 mmacro(c_735321, (function_type)__lambda_25);c_735321.num_args = 2;
-return_closcall4(data,  __glo_map_scheme_base,  &c_735198, &c_735321, ((closureN)self_734631)->elements[1], ((closureN)self_734631)->elements[0]);; 
+return_closcall4(data,  __glo_Cyc_91map_91loop_912_scheme_base,  &c_735198, &c_735321, ((closureN)self_734631)->elements[1], ((closureN)self_734631)->elements[0]);; 
 }
 
 static void __lambda_25(void *data, int argc, object self_734640, object k_733116, object _127var_73118_73183_732399, object _127default_73119_73184_732400) {
