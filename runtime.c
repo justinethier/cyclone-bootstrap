@@ -35,12 +35,13 @@ object Cyc_global_set(void *thd, object * glo, object value)
 /* Error checking section - type mismatch, num args, etc */
 /* Type names to use for error messages */
 const char *tag_names[] = {
-  /*boolean_tag   */ "boolean"
-      /*bytevector_tag */ , "bytevector"
-      /*c_opaque_tag  */ , "opaque"
-      /*closure0_tag  */ , "procedure"
+      /*closure0_tag  */   "procedure"
       /*closure1_tag  */ , "procedure"
       /*closureN_tag  */ , "procedure"
+      /*macro_tag     */ , "macro"
+      /*boolean_tag   */ , "boolean"
+      /*bytevector_tag */ , "bytevector"
+      /*c_opaque_tag  */ , "opaque"
       /*cond_var_tag  */ , "condition variable"
       /*cvar_tag      */ , "C primitive"
       /*double_tag    */ , "number"
@@ -48,7 +49,6 @@ const char *tag_names[] = {
       /*forward_tag   */ , ""
       /*integer_tag   */ , "number"
       /*bignum_tag    */ , "bignum"
-      /*macro_tag     */ , "macro"
       /*mutex_tag     */ , "mutex"
       /*pair_tag      */ , "pair"
       /*port_tag      */ , "port"
@@ -5314,9 +5314,9 @@ object apply(void *data, object cont, object func, object args)
       }
     }
 
-  default:
-    printf("Invalid object type %d\n", type_of(func));
-    exit(1);
+  default: {
+      Cyc_rt_raise2(data, "Call of non-procedure: ", func);
+    }
   }
   return NULL;                  // Never reached
 }
