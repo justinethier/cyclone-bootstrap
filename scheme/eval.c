@@ -8,7 +8,7 @@
  **/
 
 #define closcall1(td, clo,a1) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 0, (closure)(a1), clo); \
 } else { \
    ((clo)->fn)(td, 1, clo,a1);\
@@ -58,7 +58,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall2(td, clo,a1,a2) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 1, (closure)(a1), clo,a2); \
 } else { \
    ((clo)->fn)(td, 2, clo,a1,a2);\
@@ -108,7 +108,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall3(td, clo,a1,a2,a3) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
 } else { \
    ((clo)->fn)(td, 3, clo,a1,a2,a3);\
@@ -158,7 +158,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall4(td, clo,a1,a2,a3,a4) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 3, (closure)(a1), clo,a2,a3,a4); \
 } else { \
    ((clo)->fn)(td, 4, clo,a1,a2,a3,a4);\
@@ -208,7 +208,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall5(td, clo,a1,a2,a3,a4,a5) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 4, (closure)(a1), clo,a2,a3,a4,a5); \
 } else { \
    ((clo)->fn)(td, 5, clo,a1,a2,a3,a4,a5);\
@@ -258,7 +258,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall6(td, clo,a1,a2,a3,a4,a5,a6) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 5, (closure)(a1), clo,a2,a3,a4,a5,a6); \
 } else { \
    ((clo)->fn)(td, 6, clo,a1,a2,a3,a4,a5,a6);\
@@ -308,7 +308,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall7(td, clo,a1,a2,a3,a4,a5,a6,a7) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 6, (closure)(a1), clo,a2,a3,a4,a5,a6,a7); \
 } else { \
    ((clo)->fn)(td, 7, clo,a1,a2,a3,a4,a5,a6,a7);\
@@ -358,7 +358,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall56(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 55, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56); \
 } else { \
    ((clo)->fn)(td, 56, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56);\
@@ -408,7 +408,7 @@ if (type_is_pair_prim(clo)) { \
  }}
 
 #define closcall74(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74) \
-if (type_is_pair_prim(clo)) { \
+if (obj_is_not_closure(clo)) { \
    Cyc_apply(td, 73, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74); \
 } else { \
    ((clo)->fn)(td, 74, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16,a17,a18,a19,a20,a21,a22,a23,a24,a25,a26,a27,a28,a29,a30,a31,a32,a33,a34,a35,a36,a37,a38,a39,a40,a41,a42,a43,a44,a45,a46,a47,a48,a49,a50,a51,a52,a53,a54,a55,a56,a57,a58,a59,a60,a61,a62,a63,a64,a65,a66,a67,a68,a69,a70,a71,a72,a73,a74);\
