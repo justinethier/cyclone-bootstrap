@@ -979,6 +979,7 @@ extern object __glo_wrap_91mutables_scheme_cyclone_transforms;
 extern object __glo_alpha_91convert_scheme_cyclone_transforms;
 extern object __glo_cps_91convert_scheme_cyclone_transforms;
 extern object __glo_prim_91convert_scheme_cyclone_transforms;
+extern object __glo_validate_91keyword_91syntax_scheme_cyclone_transforms;
 extern object __glo_and_91let_85_srfi_2;
 extern object __glo_make_91hash_91table_srfi_69;
 extern object __glo_hash_91table_127_srfi_69;
