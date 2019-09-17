@@ -872,11 +872,6 @@ extern object __glo_has_91global_127_scheme_cyclone_transforms;
 extern object __glo_global_91vars_scheme_cyclone_transforms;
 extern object __glo_filter_91unused_91variables_scheme_cyclone_transforms;
 extern object __glo_free_91vars_scheme_cyclone_transforms;
-extern object __glo_clear_91mutables_scheme_cyclone_transforms;
-extern object __glo_mark_91mutable_scheme_cyclone_transforms;
-extern object __glo_is_91mutable_127_scheme_cyclone_transforms;
-extern object __glo_analyze_91mutable_91variables_scheme_cyclone_transforms;
-extern object __glo_wrap_91mutables_scheme_cyclone_transforms;
 extern object __glo_alpha_91convert_scheme_cyclone_transforms;
 extern object __glo_cps_91convert_scheme_cyclone_transforms;
 extern object __glo_prim_91convert_scheme_cyclone_transforms;
@@ -978,6 +973,11 @@ extern object __glo_adbf_117vars_91mutated_91by_91set_scheme_cyclone_cps_91optim
 extern object __glo_adbf_117set_91vars_91mutated_91by_91set_67_scheme_cyclone_cps_91optimizations;
 extern object __glo_with_91fnc_scheme_cyclone_cps_91optimizations;
 extern object __glo_with_91fnc_67_scheme_cyclone_cps_91optimizations;
+extern object __glo_clear_91mutables_scheme_cyclone_cps_91optimizations;
+extern object __glo_mark_91mutable_scheme_cyclone_cps_91optimizations;
+extern object __glo_is_91mutable_127_scheme_cyclone_cps_91optimizations;
+extern object __glo_analyze_91mutable_91variables_scheme_cyclone_cps_91optimizations;
+extern object __glo_wrap_91mutables_scheme_cyclone_cps_91optimizations;
 extern object __glo_library_127_scheme_cyclone_libraries;
 extern object __glo_library_91exists_127_scheme_cyclone_libraries;
 extern object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries;
@@ -9358,7 +9358,7 @@ c_732779.elements[0] = expr_73130_73403;
 c_732779.elements[1] = ((closureN)self_731312)->elements[0];
 c_732779.elements[2] = k_73615;
 
-return_closcall1(data,  __glo_clear_91mutables_scheme_cyclone_transforms,  &c_732779);; 
+return_closcall1(data,  __glo_clear_91mutables_scheme_cyclone_cps_91optimizations,  &c_732779);; 
 }
 
 static void __lambda_234(void *data, int argc, object self_731313, object r_73616) {
@@ -9376,13 +9376,13 @@ c_732781.elements[0] = ((closureN)self_731313)->elements[0];
 c_732781.elements[1] = ((closureN)self_731313)->elements[1];
 c_732781.elements[2] = ((closureN)self_731313)->elements[2];
 
-return_closcall2(data,  __glo_analyze_91mutable_91variables_scheme_cyclone_transforms,  &c_732781, ((closureN)self_731313)->elements[0]);; 
+return_closcall2(data,  __glo_analyze_91mutable_91variables_scheme_cyclone_cps_91optimizations,  &c_732781, ((closureN)self_731313)->elements[0]);; 
 }
 
 static void __lambda_235(void *data, int argc, object self_731314, object r_73617) {
   
 
-return_closcall3(data,  __glo_wrap_91mutables_scheme_cyclone_transforms,  ((closureN)self_731314)->elements[2], ((closureN)self_731314)->elements[0], car(((closureN)self_731314)->elements[1]));; 
+return_closcall3(data,  __glo_wrap_91mutables_scheme_cyclone_cps_91optimizations,  ((closureN)self_731314)->elements[2], ((closureN)self_731314)->elements[0], car(((closureN)self_731314)->elements[1]));; 
 }
 
 static void __lambda_200(void *data, int argc, object self_731280, object r_73613) {
