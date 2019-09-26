@@ -6844,9 +6844,10 @@ static void __lambda_368(void *data, int argc, closure _, object k, object obj) 
 static void __lambda_367(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
 static void __lambda_366(void *data, int argc, closure _, object k, object obj) { Cyc_make_shared_object(data, k, obj);  }
 static void __lambda_365(void *data, int argc, closure _, object k, object obj, object oldval, object newval) { atomic a;
+    char tmp;
     Cyc_check_atomic(data, obj);
     Cyc_verify_immutable(data, newval);
-    if (gc_is_stack_obj(data, obj)){
+    if (gc_is_stack_obj(&tmp, data, obj)){
       Cyc_rt_raise2(data, "Atom cannot contain a thread-local object", obj);
     }
     a = (atomic) obj;
@@ -7004,7 +7005,7 @@ static void __lambda_363(void *data, int argc, closure _, object k, object obj) 
     atomic atm;
     atomic_type tmp;
     Cyc_verify_immutable(data, obj); // TODO: verify obj is not on local stack???
-    if (gc_is_stack_obj(data, obj)){
+    if (gc_is_stack_obj(&tmp, data, obj)){
       Cyc_rt_raise2(data, "Atom cannot contain a thread-local object", obj);
     }
     tmp.hdr.mark = gc_color_red;
