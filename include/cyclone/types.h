@@ -20,7 +20,7 @@
 #include <pthread.h>
 #include <stdint.h>
 #include <dlfcn.h>
-#include "tommath.h"
+#include "cyclone/bignum.h"
 
 /**
  * Generic object type
@@ -1428,13 +1428,22 @@ typedef union {
 /**@}*/
 /**@}*/
 
+typedef struct vpbuffer_t vpbuffer;
+struct vpbuffer_t {
+  void **buf;
+  int len;
+  int count;
+};
+
+vpbuffer *vp_create(void);
+void vp_add(vpbuffer *v, void *obj);
+
 /* Utility functions */
 void **vpbuffer_realloc(void **buf, int *len);
 void **vpbuffer_add(void **buf, int *len, int i, void *obj);
 void vpbuffer_free(void **buf);
 
 /* Bignum utility functions */
-double mp_get_double(const mp_int *a);
 int Cyc_bignum_cmp(bn_cmp_type type, object x, int tx, object y, int ty);
 void Cyc_int2bignum(int n, mp_int *bn);
 
