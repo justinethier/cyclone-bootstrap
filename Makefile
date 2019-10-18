@@ -6,6 +6,12 @@
 
 include Makefile.config
 
+# Libraries
+CYC_RT_LIB = libcyclone.a
+CYC_BN_LIB = libcyclonebn.a
+CYC_BN_LIB_SUBDIR = third-party/libtommath-1.1.0
+CYC_LIBS = $(CYC_RT_LIB) $(CYC_BN_LIB)
+
 COBJ = scheme/base \
  scheme/read \
  scheme/write \
@@ -66,7 +72,7 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 
 all: cyclone icyc-c
 
-libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c hashset.c
+$(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c hashset.c $(CYC_BN_LIB)
 	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
 	$(CC) $(CFLAGS) -c hashset.c -o hashset.o
 	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
@@ -89,12 +95,15 @@ libcyclone.a: runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c has
 	  $(CREATE_LIBRARY_COMMAND) $(CREATE_LIBRARY_FLAGS) $(LIBRARY_OUTPUT_FILE) runtime.o gc.o dispatch.o mstreams.o hashset.o
 	  $(RANLIB_COMMAND)
 
-cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
+$(CYC_BN_LIB) : $(CYC_BN_LIB_SUBDIR)/*.c
+	cd $(CYC_BN_LIB_SUBDIR) ; make LIBNAME=$(CYC_BN_LIB) && cp $(CYC_BN_LIB) ../..
+
+cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
 
 .PHONY: icyc-c
-icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) libcyclone.a
+icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) icyc.c $(CFLAGS) -c -o icyc.o
 	$(CC) icyc.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o icyc
 
@@ -112,6 +121,7 @@ unit-tests: unit-tests.scm
 clean:
 	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
 	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so
+	cd $(CYC_BN_LIB_SUBDIR) ; make clean
 
 install:
 #make install-deps
@@ -134,7 +144,8 @@ install:
 	$(INSTALL) -m0644 srfi/sorting/*.scm $(DESTDIR)$(DATADIR)/srfi/sorting
 #install-libs:
 	$(MKDIR) $(DESTDIR)$(LIBDIR)
-	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
+	$(INSTALL) -m0644 $(CYC_RT_LIB) $(DESTDIR)$(LIBDIR)/
+	$(INSTALL) -m0644 $(CYC_BN_LIB) $(DESTDIR)$(LIBDIR)/
 #install-cyclone:
 	$(MKDIR) $(DESTDIR)$(BINDIR)
 	$(MKDIR) $(DESTDIR)$(DATADIR)/scheme/cyclone
@@ -157,7 +168,8 @@ install:
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0755 cyclone $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0755 icyc $(DESTDIR)$(BINDIR)/
-	$(INSTALL) -m0644 libcyclone.a $(DESTDIR)$(LIBDIR)/
+	$(INSTALL) -m0644 $(CYC_RT_LIB) $(DESTDIR)$(LIBDIR)/
+	$(INSTALL) -m0644 $(CYC_BN_LIB) $(DESTDIR)$(LIBDIR)/
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
 	$(INSTALL) -m0644 scheme/*.sld $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/*.o $(DESTDIR)$(DATADIR)/scheme
@@ -184,7 +196,8 @@ install:
 uninstall:
 	$(RM) $(DESTDIR)$(BINDIR)/cyclone
 	$(RM) $(DESTDIR)$(BINDIR)/icyc
-	$(RM) $(DESTDIR)$(LIBDIR)/libcyclone.a
+	$(RM) $(DESTDIR)$(LIBDIR)/$(CYC_RT_LIB)
+	$(RM) $(DESTDIR)$(LIBDIR)/$(CYC_BN_LIB)
 	$(RM) $(DESTDIR)$(INCDIR)/*.*
 	$(RMDIR) $(DESTDIR)$(INCDIR)
 	$(RM) $(DESTDIR)$(DATADIR)/scheme/cyclone/*.*
