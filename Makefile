@@ -9,7 +9,7 @@ include Makefile.config
 # Libraries
 CYC_RT_LIB = libcyclone.a
 CYC_BN_LIB = libcyclonebn.a
-CYC_BN_LIB_SUBDIR = third-party/libtommath-1.1.0
+CYC_BN_LIB_SUBDIR = third-party/libtommath-1.2.0
 CYC_LIBS = $(CYC_RT_LIB) $(CYC_BN_LIB)
 
 COBJ = scheme/base \
