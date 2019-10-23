@@ -1004,7 +1004,6 @@ object Cyc_display(void *data, object x, FILE * port)
     char *buf;
     size_t written;
 
-    // TODO: check return value
     BIGNUM_CALL(mp_radix_size(&bignum_value(x), 10, &bufsz));
 
     buf = alloca(bufsz);
