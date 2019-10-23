@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.11.4 
+ ** Version 0.11.5 
  **
  **/
 
@@ -1890,7 +1890,7 @@ static void __lambda_117(void* data, int argc, closure _, object k, object x, ob
     alloc_bignum(data, bn);
  
     if (Cyc_is_bignum(x) == boolean_t){
-      mp_copy(&bignum_value(x), &bignum_value(bn));
+      BIGNUM_CALL(mp_copy(&bignum_value(x), &bignum_value(bn)));
     } else {
       Cyc_int2bignum((int)unbox_number(x), &bignum_value(bn));
     }
@@ -1900,11 +1900,11 @@ static void __lambda_117(void* data, int argc, closure _, object k, object x, ob
     shift = (int)unbox_number(y);
     if (shift > 0) {
       for (i = 0; i < shift; i++) {
-         mp_mul_2(&bignum_value(bn), &bignum_value(bn));
+         BIGNUM_CALL(mp_mul_2(&bignum_value(bn), &bignum_value(bn)));
       }
     } else {
       for (i = 0; i < abs(shift); i++) {
-         mp_div_2(&bignum_value(bn), &bignum_value(bn));
+         BIGNUM_CALL(mp_div_2(&bignum_value(bn), &bignum_value(bn)));
       }
     }
 
@@ -2179,7 +2179,7 @@ return_closcall1(data,  ((closureN)self_73502)->elements[0],  Cyc_fast_sub(data,
 static void __lambda_116(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
    if (Cyc_is_bignum(x) == boolean_t) {
      int res;
-     mp_radix_size(&bignum_value(x), 2, &res);
+     BIGNUM_CALL(mp_radix_size(&bignum_value(x), 2, &res));
      return_closcall1(data, k, obj_int2obj((res - 1)));
    } else {
      int input = (int)unbox_number(x);
@@ -2543,7 +2543,7 @@ static void __lambda_12(void *data, int argc, object self_73488, object r_73309)
 static void __lambda_115(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
    alloc_bignum(data, bn);
    if (Cyc_is_bignum(x) == boolean_t) {
-     mp_copy(&bignum_value(x), &bignum_value(bn));
+     BIGNUM_CALL(mp_copy(&bignum_value(x), &bignum_value(bn)));
    } else {
      Cyc_int2bignum((int)unbox_number(x), &bignum_value(bn));
    }
@@ -2552,8 +2552,8 @@ static void __lambda_115(void* data, int argc, closure _, object k, object x) {C
    /* A one's complement, aka bitwise NOT, is actually just -a - 1 */
    //CHECK_ERROR(mp_neg(&op->mp, &out->mp));
    //CHECK_ERROR(mp_sub_d(&out->mp, 1, &out->mp));
-   mp_neg(&bignum_value(bn), &bignum_value(bn));
-   mp_sub_d(&bignum_value(bn), 1, &bignum_value(bn));
+   BIGNUM_CALL(mp_neg(&bignum_value(bn), &bignum_value(bn)));
+   BIGNUM_CALL(mp_sub_d(&bignum_value(bn), 1, &bignum_value(bn)));
    return_closcall1(data, k, Cyc_bignum_normalize(data, bn));
     }
 static void __lambda_7(void *data, int argc, closure _,object k_73296, object x_7393_73186, object rest_7394_73187_raw, ...) {
@@ -2669,7 +2669,7 @@ static void __lambda_114(void* data, int argc, closure _, object k, object x, ob
      mp_int tmpx, tmpy;
 
      if (obj_is_int(x)) {
-       mp_init(&tmpx);
+       BIGNUM_CALL(mp_init(&tmpx));
        Cyc_int2bignum(obj_obj2int(x), &tmpx);
        xx = &tmpx;
      } else {
@@ -2677,7 +2677,7 @@ static void __lambda_114(void* data, int argc, closure _, object k, object x, ob
      }
 
      if (obj_is_int(y)) {
-       mp_init(&tmpy);
+       BIGNUM_CALL(mp_init(&tmpy));
        Cyc_int2bignum(obj_obj2int(y), &tmpy);
        yy = &tmpy;
      } else {
@@ -2704,7 +2704,7 @@ static void __lambda_113(void* data, int argc, closure _, object k, object x, ob
      mp_int tmpx, tmpy;
 
      if (obj_is_int(x)) {
-       mp_init(&tmpx);
+       BIGNUM_CALL(mp_init(&tmpx));
        Cyc_int2bignum(obj_obj2int(x), &tmpx);
        xx = &tmpx;
      } else {
@@ -2712,7 +2712,7 @@ static void __lambda_113(void* data, int argc, closure _, object k, object x, ob
      }
 
      if (obj_is_int(y)) {
-       mp_init(&tmpy);
+       BIGNUM_CALL(mp_init(&tmpy));
        Cyc_int2bignum(obj_obj2int(y), &tmpy);
        yy = &tmpy;
      } else {
@@ -2739,7 +2739,7 @@ static void __lambda_112(void* data, int argc, closure _, object k, object x, ob
      mp_int tmpx, tmpy;
 
      if (obj_is_int(x)) {
-       mp_init(&tmpx);
+       BIGNUM_CALL(mp_init(&tmpx));
        Cyc_int2bignum(obj_obj2int(x), &tmpx);
        xx = &tmpx;
      } else {
@@ -2747,7 +2747,7 @@ static void __lambda_112(void* data, int argc, closure _, object k, object x, ob
      }
 
      if (obj_is_int(y)) {
-       mp_init(&tmpy);
+       BIGNUM_CALL(mp_init(&tmpy));
        Cyc_int2bignum(obj_obj2int(y), &tmpy);
        yy = &tmpy;
      } else {
@@ -2783,7 +2783,7 @@ make_utf8_string_with_len(c_73599, "Cyc_check_int(data, x);\n   Cyc_check_int(da
 
 
 
-make_utf8_string_with_len(c_73602, "} else {\n     int result;\n     alloc_bignum(data, bn);\n     mp_int *xx, *yy;\n     mp_int tmpx, tmpy;\n\n     if (obj_is_int(x)) {\n       mp_init(&tmpx);\n       Cyc_int2bignum(obj_obj2int(x), &tmpx);\n       xx = &tmpx;\n     } else {\n       xx = &bignum_value(x);\n     }\n\n     if (obj_is_int(y)) {\n       mp_init(&tmpy);\n       Cyc_int2bignum(obj_obj2int(y), &tmpy);\n       yy = &tmpy;\n     } else {\n       yy = &bignum_value(y);\n     }\n\n     ", 439, 439);
+make_utf8_string_with_len(c_73602, "} else {\n     int result;\n     alloc_bignum(data, bn);\n     mp_int *xx, *yy;\n     mp_int tmpx, tmpy;\n\n     if (obj_is_int(x)) {\n       BIGNUM_CALL(mp_init(&tmpx));\n       Cyc_int2bignum(obj_obj2int(x), &tmpx);\n       xx = &tmpx;\n     } else {\n       xx = &bignum_value(x);\n     }\n\n     if (obj_is_int(y)) {\n       BIGNUM_CALL(mp_init(&tmpy));\n       Cyc_int2bignum(obj_obj2int(y), &tmpy);\n       yy = &tmpy;\n     } else {\n       yy = &bignum_value(y);\n     }\n\n     ", 465, 465);
 
 
 

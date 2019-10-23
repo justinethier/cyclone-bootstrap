@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.11.4 
+ ** Version 0.11.5 
  **
  **/
 
@@ -15587,7 +15587,7 @@ static void __lambda_1052(void *data, int argc, closure _, object k, object num)
         return_closcall1(data, k, obj_int2obj( labs( obj_obj2int(num))));
       } else if (is_object_type(num) && type_of(num) == bignum_tag){
         alloc_bignum(data, bn);
-        mp_abs(&bignum_value(num), &bignum_value(bn));
+        BIGNUM_CALL(mp_abs(&bignum_value(num), &bignum_value(bn)));
         return_closcall1(data, k, bn);
       } else {
         make_double(d, fabs(((double_type *)num)->value));
