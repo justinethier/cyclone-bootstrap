@@ -21110,11 +21110,11 @@ make_utf8_string_with_len(c_737978, "alloc_bignum(data, ", 19, 19);
 
 make_utf8_string_with_len(c_737980, "); ", 3, 3);
 
-make_utf8_string_with_len(c_737981, "mp_read_radix(&bignum_value(", 28, 28);
+make_utf8_string_with_len(c_737981, "BIGNUM_CALL(mp_read_radix(&bignum_value(", 40, 40);
 
 make_utf8_string_with_len(c_737983, "), \"", 4, 4);
 
-make_utf8_string_with_len(c_737985, "\", 10);", 7, 7);
+make_utf8_string_with_len(c_737985, "\", 10));", 8, 8);
 
 object c_737977 = Cyc_string_append(data,(closure)&c_737964,8,&c_737978, ((closureN)self_734898)->elements[0], &c_737980, &c_737981, ((closureN)self_734898)->elements[0], &c_737983, ((closureN)self_734898)->elements[2], &c_737985);
 return_closcall1(data,(closure)&c_737964,  c_737977);; 
