@@ -3204,16 +3204,17 @@ return_closcall1(data,(closure)&c_7323600,  c_7323630);;
 static void __lambda_881(void *data, int argc, object self_7311746, object field_91values_732445_733622) {
   
 closureN_type c_7323602;
-object e_7323617 [2];
+object e_7323617 [3];
 c_7323602.hdr.mark = gc_color_red;
  c_7323602.hdr.grayed = 0;
 c_7323602.tag = closureN_tag;
  c_7323602.fn = (function_type)__lambda_882;
 c_7323602.num_args = 0;
-c_7323602.num_elements = 2;
+c_7323602.num_elements = 3;
 c_7323602.elements = (object *)e_7323617;
 c_7323602.elements[0] = ((closureN)self_7311746)->elements[0];
-c_7323602.elements[1] = ((closureN)self_7311746)->elements[2];
+c_7323602.elements[1] = field_91values_732445_733622;
+c_7323602.elements[2] = ((closureN)self_7311746)->elements[2];
 
 
 closureN_type c_7323618;
@@ -3243,7 +3244,7 @@ static void __lambda_882(void *data, int argc, object self_7311748, object k_737
   
   
   
-if( (boolean_f != equalp(Cyc_length(data, Cyc_vector_ref(data, ((closureN)self_7311748)->elements[1], obj_int2obj(2))), Cyc_length(data, ((closureN)self_7311748)->elements[0]))) ){ 
+if( (boolean_f != equalp(Cyc_length(data, Cyc_vector_ref(data, ((closureN)self_7311748)->elements[2], obj_int2obj(2))), Cyc_vector_length(data, ((closureN)self_7311748)->elements[1]))) ){ 
   return_closcall1(data,  k_737224,  boolean_f);
 } else { 
   
