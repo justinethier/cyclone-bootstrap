@@ -1963,7 +1963,7 @@
          ;                   ,name)))
          ;     (,_lambda ,make-fields
          ;       (%make ,@make-fields))))
-         ; Possible alternate version that inlines make-constructor/args
+         ; Alternate version that inlines make-constructor/args
          (,_define ,make
             (,_lambda ,make-fields
               (,(rename 'vector)
