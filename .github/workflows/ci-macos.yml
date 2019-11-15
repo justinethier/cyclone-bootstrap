@@ -1,0 +1,19 @@
+name: CI MacOS
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install ck
+      run:  brew update; brew install -v concurrencykit;
+    - name: make
+      run: make
+    - name: make install
+      run: sudo make install
+    - name: make test
+      run: make test
