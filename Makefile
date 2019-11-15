@@ -115,7 +115,7 @@ test:
 	$(MAKE) unit-tests
 
 unit-tests: unit-tests.scm
-	./cyclone -I . unit-tests.scm && ./unit-tests
+	./cyclone unit-tests.scm && ./unit-tests
 
 .PHONY: clean
 clean:

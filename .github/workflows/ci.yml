@@ -13,5 +13,7 @@ jobs:
       run: sudo apt-get install libck-dev
     - name: make
       run: make
+    - name: make install
+      run: make install
     - name: make test
       run: make test
