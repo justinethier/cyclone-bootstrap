@@ -2,6 +2,10 @@
 
 [![Travis CI](https://travis-ci.org/justinethier/cyclone.svg?branch=master)](https://travis-ci.org/justinethier/cyclone)
 
+[![Github CI](https://github.com/justinethier/cyclone-bootstrap/workflows/CI/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+
+[![Github CI - MacOS](https://github.com/justinethier/cyclone-bootstrap/workflows/CI%20MacOS/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+
 Cyclone is a brand-new, R<sup>7</sup>RS Scheme-to-C compiler that uses a variant of [Cheney on the MTA](http://www.pipeline.com/~hbaker1/CheneyMTA.html) to implement full tail recursion, continuations, and generational garbage collection.
 
 Cyclone cannot be built directly on a system that does not have Cyclone binaries installed because the compiler is [self-hosting](https://en.wikipedia.org/wiki/Self-hosting). Instead, this repository uses pre-generated C code to build and install Cyclone Scheme on a fresh system. 
