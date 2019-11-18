@@ -5,11 +5,19 @@ on: [push]
 jobs:
   build:
 
-    runs-on: macos-latest
+    runs-on: macOS-latest
     
     steps:
     - uses: actions/checkout@v1
     - name: Install ck
       run:  brew update; brew install -v concurrencykit;
+    - uses: actions/cache@v1
+      id:   cache
+      with:
+        path: $HOME/local/cyclone/cyclone
+        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
     - name: make
-      run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install ; make PREFIX=$HOME/local/cyclone/cyclone test
+      if: steps.cache.outputs.cache-hit != 'true'
+      run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install 
+    - name: test
+      run: make PREFIX=$HOME/local/cyclone/cyclone test
