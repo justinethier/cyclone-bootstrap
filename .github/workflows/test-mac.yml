@@ -1,0 +1,15 @@
+name: CI MacOS
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install ck
+      run:  brew update; brew install -v concurrencykit;
+    - name: make
+      run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install ; make PREFIX=$HOME/local/cyclone/cyclone test
