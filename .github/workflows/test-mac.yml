@@ -20,4 +20,4 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install 
     - name: test
-      run: make PREFIX=$HOME/local/cyclone/cyclone test
+      run: make PREFIX=$HOME/local/cyclone/cyclone test 
