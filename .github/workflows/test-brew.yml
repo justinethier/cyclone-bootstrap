@@ -1,0 +1,15 @@
+name: Test Brew
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macOS-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install
+      run:  brew update; brew tap cyclone-scheme/cyclone ; brew install cyclone-scheme/cyclone/cyclone
+    - name: test
+      run: cyclone unit-tests.scm ; ./unit-tests
