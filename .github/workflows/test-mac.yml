@@ -15,7 +15,7 @@ jobs:
       id:   cache
       with:
         path: $HOME/local/cyclone/cyclone
-        key: ${{ runner.os }}-${{ hashFiles('**/lockfiles') }}
+        key: ${{ runner.os }}-install
     - name: make
       if: steps.cache.outputs.cache-hit != 'true'
       run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install 
