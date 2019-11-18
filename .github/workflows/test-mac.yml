@@ -20,4 +20,4 @@ jobs:
       if: steps.cache.outputs.cache-hit != 'true'
       run: make PREFIX=tmp ; make PREFIX=tmp install
     - name: test
-      run: make PREFIX=tmp test 
+      run: make PREFIX=tmp test
