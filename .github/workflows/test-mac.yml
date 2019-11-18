@@ -14,10 +14,10 @@ jobs:
     - uses: actions/cache@v1
       id:   cache
       with:
-        path: $HOME/local/cyclone/cyclone
+        path: tmp
         key: ${{ runner.os }}-install
     - name: make
       if: steps.cache.outputs.cache-hit != 'true'
-      run: make PREFIX=$HOME/local/cyclone/cyclone ; make PREFIX=$HOME/local/cyclone/cyclone install ; touch $HOME/local/cyclone/cyclone/macOS-install
+      run: make PREFIX=tmp ; make PREFIX=tmp install
     - name: test
-      run: make PREFIX=$HOME/local/cyclone/cyclone test 
+      run: make PREFIX=tmp test
