@@ -96,7 +96,7 @@ $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c ha
 	  $(RANLIB_COMMAND)
 
 $(CYC_BN_LIB) : $(CYC_BN_LIB_SUBDIR)/*.c
-	cd $(CYC_BN_LIB_SUBDIR) ; make LIBNAME=$(CYC_BN_LIB) && cp $(CYC_BN_LIB) ../..
+	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) LIBNAME=$(CYC_BN_LIB) && cp $(CYC_BN_LIB) ../..
 
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
@@ -121,7 +121,7 @@ unit-tests: unit-tests.scm
 clean:
 	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
 	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so
-	cd $(CYC_BN_LIB_SUBDIR) ; make clean
+	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) clean
 
 install:
 #make install-deps
