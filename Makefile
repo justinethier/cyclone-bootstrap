@@ -36,12 +36,12 @@ COBJ = scheme/base \
  scheme/cyclone/cps-optimizations \
  scheme/cyclone/cgen \
  scheme/cyclone/util \
- libs/cyclone/test \
  scheme/cyclone/pretty-print \
  scheme/cyclone/hashset \
  scheme/cyclone/primitives \
  libs/cyclone/concurrent \
  libs/cyclone/match \
+ libs/cyclone/test \
  srfi/1 \
  srfi/2 \
  srfi/9 \
