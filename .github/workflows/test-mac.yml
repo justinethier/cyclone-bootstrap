@@ -11,13 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install ck
       run:  brew update; brew install -v concurrencykit;
-    - uses: actions/cache@v1
-      id:   cache
-      with:
-        path: tmp
-        key: ${{ runner.os }}-install
     - name: make
-      if: steps.cache.outputs.cache-hit != 'true'
       run: make PREFIX=tmp ; make PREFIX=tmp install
     - name: test
       run: ./cyclone -d unit-tests.scm ; make PREFIX=tmp test
