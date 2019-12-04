@@ -13,6 +13,6 @@ jobs:
       run:  make -v; brew update; brew tap cyclone-scheme/cyclone ; brew -v install cyclone-scheme/cyclone/cyclone
       continue-on-error: true
     - name: logs
-      run: cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/01.make ; cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/00.options.out ; cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/01.make.cc ; cat Makefile
+      run: ls -l * ; cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/01.make ; cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/00.options.out ; cat /Users/runner/Library/Logs/Homebrew/cyclone-bootstrap/01.make.cc ; cat Makefile
     - name: test
       run: cyclone unit-tests.scm ; ./unit-tests 
