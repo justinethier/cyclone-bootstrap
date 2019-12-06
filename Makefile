@@ -39,9 +39,9 @@ COBJ = scheme/base \
  scheme/cyclone/pretty-print \
  scheme/cyclone/hashset \
  scheme/cyclone/primitives \
- libs/cyclone/concurrent \
- libs/cyclone/match \
- libs/cyclone/test \
+ cyc-libs/cyclone/concurrent \
+ cyc-libs/cyclone/match \
+ cyc-libs/cyclone/test \
  srfi/1 \
  srfi/2 \
  srfi/9 \
@@ -119,8 +119,8 @@ unit-tests: unit-tests.scm
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
-	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so
+	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o cyc-libs/cyclone/*.o srfi/*.o unit-tests.c
+	rm -rf *.so scheme/*.so scheme/cyclone/*.so cyc-libs/cyclone/*.so srfi/*.so
 	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) clean
 
 install:
@@ -176,15 +176,15 @@ install:
 	$(INSTALL) -m0755 scheme/*.so $(DESTDIR)$(DATADIR)/scheme
 	$(INSTALL) -m0644 scheme/cyclone/*.sld $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/*.scm $(DESTDIR)$(DATADIR)/scheme/cyclone
-	$(INSTALL) -m0644 libs/cyclone/test.meta $(DESTDIR)$(DATADIR)/cyclone
-	$(INSTALL) -m0644 libs/cyclone/match.meta $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0644 cyc-libs/cyclone/test.meta $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0644 cyc-libs/cyclone/match.meta $(DESTDIR)$(DATADIR)/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/array-list.meta $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0644 scheme/cyclone/*.o $(DESTDIR)$(DATADIR)/scheme/cyclone
 	$(INSTALL) -m0755 scheme/cyclone/*.so $(DESTDIR)$(DATADIR)/scheme/cyclone
-	$(INSTALL) -m0644 libs/cyclone/*.sld $(DESTDIR)$(DATADIR)/cyclone
-	$(INSTALL) -m0644 libs/cyclone/*.scm $(DESTDIR)$(DATADIR)/cyclone
-	$(INSTALL) -m0644 libs/cyclone/*.o $(DESTDIR)$(DATADIR)/cyclone
-	$(INSTALL) -m0755 libs/cyclone/*.so $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0644 cyc-libs/cyclone/*.sld $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0644 cyc-libs/cyclone/*.scm $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0644 cyc-libs/cyclone/*.o $(DESTDIR)$(DATADIR)/cyclone
+	$(INSTALL) -m0755 cyc-libs/cyclone/*.so $(DESTDIR)$(DATADIR)/cyclone
 	$(INSTALL) -m0644 srfi/*.sld $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/*.scm $(DESTDIR)$(DATADIR)/srfi
 	$(INSTALL) -m0644 srfi/list-queues/*.scm $(DESTDIR)$(DATADIR)/srfi/list-queues
