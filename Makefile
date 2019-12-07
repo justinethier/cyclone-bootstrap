@@ -120,7 +120,7 @@ unit-tests: unit-tests.scm
 .PHONY: clean
 clean:
 	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
-	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so
+	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so tmp DEBIAN/*.deb
 	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) clean
 
 install:
@@ -214,7 +214,13 @@ uninstall:
 	$(RMDIR) $(DESTDIR)$(DATADIR)/scheme
 	$(RMDIR) $(DESTDIR)$(DATADIR)
 
-.PHONY: debug
+.PHONY: debug deb
 debug:
 	./cyclone icyc.scm > debug.out 2>&1
 
+# Package for debian
+deb: cyclone icyc $(CYC_BN_LIB) $(CYC_RT_LIB) $(COBJECTS)
+	rm -rf tmp
+	make install PREFIX=tmp
+	cp -r DEBIAN tmp
+	dpkg-deb --build tmp DEBIAN
