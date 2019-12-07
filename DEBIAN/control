@@ -1,4 +1,4 @@
-Package: cyclone
+Package: cyclone-scheme
 Version: 0.11.7
 Priority: optional
 Section: devel
