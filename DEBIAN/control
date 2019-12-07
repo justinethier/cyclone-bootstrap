@@ -1,0 +1,9 @@
+Package: cyclone
+Version: 0.11.7
+Priority: optional
+Section: devel
+Maintainer: Justin Ethier <justin.ethier@gmail.com>
+Architecture: amd64
+Depends: libck-dev, make, gcc
+Description: A brand-new compiler that allows practical application development using R7RS Scheme.
+Homepage: http://justinethier.github.io/cyclone/
