@@ -221,6 +221,6 @@ debug:
 # Package for debian
 deb: cyclone icyc $(CYC_BN_LIB) $(CYC_RT_LIB) $(COBJECTS)
 	rm -rf tmp
-	make install PREFIX=tmp
+	$(MAKE) install PREFIX=tmp$(PREFIX)
 	cp -r DEBIAN tmp
 	dpkg-deb --build tmp DEBIAN
