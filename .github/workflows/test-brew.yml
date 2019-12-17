@@ -1,6 +1,6 @@
 name: Test Brew
 
-on: [push]
+on: [tag]
 
 jobs:
   build:
