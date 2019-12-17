@@ -50,7 +50,7 @@ jobs:
             else
               pacman --noconfirm -S mingw64/mingw-w64-x86_64-gcc
             fi
-            pacman --noconfirm -S make autoconf git
+            pacman --noconfirm -S make autoconf git libck libck-dev
           '@
           & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
       - name: Build
