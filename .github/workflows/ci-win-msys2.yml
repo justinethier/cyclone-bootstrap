@@ -8,7 +8,8 @@ jobs:
     strategy:
       fail-fast: false
       matrix:
-        arch: [32, 64]
+        arch: [64]
+#        arch: [32, 64]
     steps:
       - uses: actions/checkout@v1
       - name: Test
@@ -49,7 +50,7 @@ jobs:
             else
               pacman --noconfirm -S mingw64/mingw-w64-x86_64-gcc
             fi
-            pacman --noconfirm -S make
+            pacman --noconfirm -S make autoconf git
           '@
           & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
       - name: Build
