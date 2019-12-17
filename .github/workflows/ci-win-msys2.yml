@@ -43,16 +43,17 @@ jobs:
           $env:MSYSTEM = "MINGW${{ matrix.arch }}"
           $env:MSYS2_PATH_TYPE = "strict"
           $script = @'
+            pacman --noconfirm -S gcc make autoconf git
+          '@
+          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+#          $script = @'
 #            # pacman --noconfirm -Syu
 #            pacman --noconfirm -S msys/gcc
 #            if [ "$MSYSTEM" = "MINGW32" ]; then
 #              pacman --noconfirm -S mingw32/mingw-w64-i686-gcc
 #            else
 #              pacman --noconfirm -S mingw64/mingw-w64-x86_64-gcc
-#            fi
-            pacman --noconfirm -S gcc make autoconf git
-          '@
-          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+#            fi          
       - name: Build
         run: |
           $env:MSYSTEM = "MINGW${{ matrix.arch }}"
