@@ -11,6 +11,8 @@ jobs:
         arch: [32, 64]
     steps:
       - uses: actions/checkout@v1
+      - name: Test
+        run: dir
       - name: Cache msys2
         id: cache-msys2
         uses: actions/cache@v1
