@@ -55,7 +55,7 @@ jobs:
           $env:MSYSTEM = "MINGW${{ matrix.arch }}"
           $env:MSYS2_PATH_TYPE = "strict"
           $script = @'
-            ./setup.mysys.sh
+            setup.mysys.sh
           '@
           & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
           
