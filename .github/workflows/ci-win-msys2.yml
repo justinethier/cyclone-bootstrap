@@ -54,11 +54,11 @@ jobs:
         run: |
           $env:MSYSTEM = "MINGW${{ matrix.arch }}"
           $env:MSYS2_PATH_TYPE = "strict"
-          ./setup.mysys.sh
+          $script = @'
+            ./setup.mysys.sh
+          '@
+          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
           
-#          $script = @'
-#            ./setup.mysys.sh
-#          '@
 #          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
 #          tar czvf winpty.tar.gz dist --transform s/dist/winpty/
 # From: 
