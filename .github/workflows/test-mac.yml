@@ -1,6 +1,6 @@
 name: Test MacOS
 
-on: [tag]
+on: [fork]
 
 jobs:
   build:

@@ -1,6 +1,6 @@
 name: Test Brew
 
-on: [tag]
+on: [fork]
 
 jobs:
   build:

@@ -1,6 +1,6 @@
 name: CI MacOS
 
-on: [tag]
+on: [fork]
 
 jobs:
   build:
