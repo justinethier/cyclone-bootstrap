@@ -2,9 +2,13 @@
 
 [![Travis CI](https://travis-ci.org/justinethier/cyclone.svg?branch=master)](https://travis-ci.org/justinethier/cyclone)
 
-[![Github CI](https://github.com/justinethier/cyclone-bootstrap/workflows/CI/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+[![Github CI - Linux](https://github.com/justinethier/cyclone-bootstrap/workflows/Ubuntu%20Linux%20Build/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
 
-[![Github CI - MacOS](https://github.com/justinethier/cyclone-bootstrap/workflows/CI%20MacOS/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+[![Github CI - MacOS](https://github.com/justinethier/cyclone-bootstrap/workflows/MacOS%20Build/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+
+[![Github CI - MacOS Homebrew](https://github.com/justinethier/cyclone-bootstrap/workflows/MacOS%20Homebrew%20Build/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
+
+[![Github CI - Windows](https://github.com/justinethier/cyclone-bootstrap/workflows/Windows%20MSYS2%Build/badge.svg)](https://github.com/justinethier/cyclone-bootstrap)
 
 Cyclone Scheme is a brand-new, R<sup>7</sup>RS Scheme-to-C compiler that uses a variant of [Cheney on the MTA](http://www.pipeline.com/~hbaker1/CheneyMTA.html) to implement full tail recursion, continuations, and generational garbage collection.
 
