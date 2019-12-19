@@ -1,0 +1,26 @@
+name: CI Windows MSYS2 (Test #2)
+
+on: [push]
+
+jobs:
+  build:
+    runs-on: windows-latest
+    strategy:
+      fail-fast: false
+      matrix:
+        arch: [64]
+#        arch: [32, 64]
+    steps:
+      - uses: actions/checkout@v1
+      - uses: numworks/setup-msys2@v1
+      - run: msys2do uname -a
+      - name: Pacman
+        run: |
+          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
+          $env:MSYS2_PATH_TYPE = "strict"
+          $script = @'
+            pacman --noconfirm -S gcc make autoconf git
+          '@
+          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+      - name: Build
+        run: setup.mysys.sh
