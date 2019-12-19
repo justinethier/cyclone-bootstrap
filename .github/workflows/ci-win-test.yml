@@ -15,12 +15,6 @@ jobs:
       - uses: numworks/setup-msys2@v1
       - run: msys2do uname -a
       - name: Pacman
-        run: |
-          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
-          $env:MSYS2_PATH_TYPE = "strict"
-          $script = @'
-            pacman --noconfirm -S gcc make autoconf git
-          '@
-          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+        run: msys2do pacman --noconfirm -S gcc make autoconf git
       - name: Build
-        run: setup.mysys.sh
+        run: msys2do ./setup.mysys.sh
