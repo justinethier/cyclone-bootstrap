@@ -1,6 +1,6 @@
 name: Test MacOS
 
-on: [push]
+on: [fork]
 
 jobs:
   build:
