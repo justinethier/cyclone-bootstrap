@@ -3,79 +3,95 @@ name: CI Windows MSYS2
 on: [push]
 
 jobs:
-  msys2:
+  build:
     runs-on: windows-latest
     strategy:
       fail-fast: false
       matrix:
-        arch: [32]
+        arch: [64]
 #        arch: [32, 64]
     steps:
       - uses: actions/checkout@v1
-      - name: Test
-        run: dir
-      - name: Cache msys2
-        id: cache-msys2
-        uses: actions/cache@v1
-        with:
-          path: msys${{ matrix.arch }}
-          key: msys2-x${{ matrix.arch }}
-      - name: Install msys2
-        if: steps.cache-msys2.outputs.cache-hit != 'true'
-        run: |
-          if ( "${{ matrix.arch }}" -eq "32" ) {
-            (New-Object net.webclient).DownloadFile("http://repo.msys2.org/distrib/i686/msys2-base-i686-20190524.tar.xz","msys2.tar.xz")
-          } else {
-            (New-Object net.webclient).DownloadFile("http://repo.msys2.org/distrib/x86_64/msys2-base-x86_64-20190524.tar.xz","msys2.tar.xz")
-          }
-          tar xf msys2.tar.xz -C $env:GITHUB_WORKSPACE.Replace("\", "/")
-      - run: |
-          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
-          $env:MSYS2_PATH_TYPE = "strict"
-          $script = @'
-            uname -m
-            uname -a
-            echo $PATH
-          '@
-          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+      - uses: numworks/setup-msys2@v1
+      - run: msys2do uname -a
       - name: Pacman
-        run: |
-          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
-          $env:MSYS2_PATH_TYPE = "strict"
-          $script = @'
-            pacman --noconfirm -S gcc make autoconf git
-          '@
-          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
-#          $script = @'
-#            # pacman --noconfirm -Syu
-#            pacman --noconfirm -S msys/gcc
-#            if [ "$MSYSTEM" = "MINGW32" ]; then
-#              pacman --noconfirm -S mingw32/mingw-w64-i686-gcc
-#            else
-#              pacman --noconfirm -S mingw64/mingw-w64-x86_64-gcc
-#            fi          
+        run: msys2do pacman --noconfirm -S gcc make autoconf git
       - name: Build
-        run: |
-          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
-          $env:MSYS2_PATH_TYPE = "strict"
-          $script = @'
-            ./setup.mysys.sh
-          '@
-          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c $script
-          
+        run: msys2do ./setup.mysys.sh
+
+#  msys2:
+#    runs-on: windows-latest
+#    strategy:
+#      fail-fast: false
+#      matrix:
+#        arch: [32]
+##        arch: [32, 64]
+#    steps:
+#      - uses: actions/checkout@v1
+#      - name: Test
+#        run: dir
+#      - name: Cache msys2
+#        id: cache-msys2
+#        uses: actions/cache@v1
+#        with:
+#          path: msys${{ matrix.arch }}
+#          key: msys2-x${{ matrix.arch }}
+#      - name: Install msys2
+#        if: steps.cache-msys2.outputs.cache-hit != 'true'
+#        run: |
+#          if ( "${{ matrix.arch }}" -eq "32" ) {
+#            (New-Object net.webclient).DownloadFile("http://repo.msys2.org/distrib/i686/msys2-base-i686-20190524.tar.xz","msys2.tar.xz")
+#          } else {
+#            (New-Object net.webclient).DownloadFile("http://repo.msys2.org/distrib/x86_64/msys2-base-x86_64-20190524.tar.xz","msys2.tar.xz")
+#          }
+#          tar xf msys2.tar.xz -C $env:GITHUB_WORKSPACE.Replace("\", "/")
+#      - run: |
+#          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
+#          $env:MSYS2_PATH_TYPE = "strict"
+#          $script = @'
+#            uname -m
+#            uname -a
+#            echo $PATH
+#          '@
 #          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
-#          tar czvf winpty.tar.gz dist --transform s/dist/winpty/
-# From: 
-# https://github.com/randy3k/winpty/blob/b3be9209ae7fc8597a34a256583dc3c01ff08391/.github/workflows/build.yml#L20-L28
-#      - uses: actions/upload-artifact@v1
-#        with:
-#          name: winpty-x${{ matrix.arch }}
-#          path: dist
-#      - name: Upload binaries to release
-#        if: startsWith(github.event.ref, 'refs/tags/')
-#        uses: svenstaro/upload-release-action@v1-release
-#        with:
-#          repo_token: ${{ secrets.GITHUB_TOKEN }}
-#          file:  winpty.tar.gz
-#          asset_name: winpty-x${{ matrix.arch }}.tar.gz
-#          tag: ${{ github.ref }}
+#      - name: Pacman
+#        run: |
+#          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
+#          $env:MSYS2_PATH_TYPE = "strict"
+#          $script = @'
+#            pacman --noconfirm -S gcc make autoconf git
+#          '@
+#          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+##          $script = @'
+##            # pacman --noconfirm -Syu
+##            pacman --noconfirm -S msys/gcc
+##            if [ "$MSYSTEM" = "MINGW32" ]; then
+##              pacman --noconfirm -S mingw32/mingw-w64-i686-gcc
+##            else
+##              pacman --noconfirm -S mingw64/mingw-w64-x86_64-gcc
+##            fi          
+#      - name: Build
+#        run: |
+#          $env:MSYSTEM = "MINGW${{ matrix.arch }}"
+#          $env:MSYS2_PATH_TYPE = "strict"
+#          $script = @'
+#            ./setup.mysys.sh
+#          '@
+#          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c $script
+#          
+##          & "$env:GITHUB_WORKSPACE\msys${{ matrix.arch }}\usr\bin\bash" -c -l $script
+##          tar czvf winpty.tar.gz dist --transform s/dist/winpty/
+## From: 
+## https://github.com/randy3k/winpty/blob/b3be9209ae7fc8597a34a256583dc3c01ff08391/.github/workflows/build.yml#L20-L28
+##      - uses: actions/upload-artifact@v1
+##        with:
+##          name: winpty-x${{ matrix.arch }}
+##          path: dist
+##      - name: Upload binaries to release
+##        if: startsWith(github.event.ref, 'refs/tags/')
+##        uses: svenstaro/upload-release-action@v1-release
+##        with:
+##          repo_token: ${{ secrets.GITHUB_TOKEN }}
+##          file:  winpty.tar.gz
+##          asset_name: winpty-x${{ matrix.arch }}.tar.gz
+##          tag: ${{ github.ref }}
