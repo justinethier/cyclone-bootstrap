@@ -4,15 +4,29 @@
 #
 # Configuration options for the makefile
 
+& = $(filter-out %.h %.d,$^)
+
+CYC_PROFILING ?= 
+#CYC_PROFILING ?= -g -pg
+
+CYC_GCC_OPT_FLAGS ?= -O2
+#CYC_GCC_OPT_FLAGS ?= -g
+
+OS = $(shell uname)
+CC ?= cc
+
+LIBS = -pthread -lcyclone -lck -lm -lcyclonebn -ldl
+
 # Compiler options
-CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I/usr/local/include -L/usr/local/lib
+#CFLAGS       ?= -O2 -fPIC -rdynamic -Wall -Iinclude -L. -I/usr/local/include -L/usr/local/lib
 LDFLAGS       ?= -L. -L/usr/local/lib
-COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
-# Use these lines instead for debugging or profiling
-#CFLAGS = -g -Wall
-#CFLAGS = -g -pg -Wall
-CC      ?= cc
-LIBS = -pthread -lcyclone -lck -lm -ltommath -ldl
+#COMP_CFLAGS  ?= -O2 -fPIC -rdynamic -Wall -I$(PREFIX)/include -L$(PREFIX)/lib
+CFLAGS       ?= $(CYC_PROFILING) $(CYC_GCC_OPT_FLAGS) -fPIC -rdynamic -Wall -Iinclude -L. -I/usr/local/include -L/usr/local/lib
+BASE_CFLAGS  ?= $(CYC_PROFILING) $(CYC_GCC_OPT_FLAGS) -fPIC -rdynamic -Wall -I$(PREFIX)/include -L. -I/usr/local/include -L/usr/local/lib
+# Used by Cyclone to compile programs, no need for PIC there
+BASE_PROG_CFLAGS  ?= $(CYC_PROFILING) $(CYC_GCC_OPT_FLAGS) -Wall -I$(PREFIX)/include
+COMP_CFLAGS  ?= $(BASE_CFLAGS) -L$(PREFIX)/lib
+COMP_PROG_CFLAGS  ?= $(BASE_PROG_CFLAGS) -L$(PREFIX)/lib
 
 LIBRARY_OUTPUT_FILE = libcyclone.a
 CREATE_LIBRARY_COMMAND = $(AR)
