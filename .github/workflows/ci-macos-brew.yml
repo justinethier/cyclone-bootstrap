@@ -1,4 +1,4 @@
-name: Test Brew
+name: MacOS Homebrew Build
 
 on: [push]
 
