@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2019 Justin Ethier
- ** Version 0.11.7 
+ ** Version 0.11.8 
  **
  **/
 
@@ -13192,7 +13192,7 @@ if( (boolean_f != Cyc_is_pair(env_7387_73906)) ){
 if( (boolean_f != Cyc_eq(Cyc_car(data, Cyc_car(data, env_7387_73906)), key_7388_73907)) ){ 
   
 
-env_7387_73906 = Cyc_cdr(data, env_7387_73906);key_7388_73907 = key_7388_73907;
+env_7387_73906 = Cyc_cdr(data, env_7387_73906);
 continue;
 } else { 
   
