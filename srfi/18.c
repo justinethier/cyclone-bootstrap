@@ -681,14 +681,13 @@ static void __lambda_24(void *data, int argc, object self_73137, object r_73117)
 }
 
 static void __lambda_40(void *data, int argc, closure _, object k, object obj, object timeout) { mutex m = (mutex) obj;
-        struct timespec tim;
-        double value;
         Cyc_check_mutex(data, obj);
         Cyc_check_num(data, timeout);
 #ifdef __APPLE__
         int result = pthread_mutex_lock(&(m->lock));
 #else
-        value = unbox_number(timeout);
+        struct timespec tim;
+        double value = unbox_number(timeout);
         set_thread_blocked(data, k);
         clock_gettime(CLOCK_REALTIME, &tim);
         //clock_gettime(CLOCK_MONOTONIC, &tim);
