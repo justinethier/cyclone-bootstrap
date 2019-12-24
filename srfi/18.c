@@ -685,6 +685,9 @@ static void __lambda_40(void *data, int argc, closure _, object k, object obj, o
         double value;
         Cyc_check_mutex(data, obj);
         Cyc_check_num(data, timeout);
+#ifdef __APPLE__
+        int result = pthread_mutex_lock(&(m->lock);
+#else
         value = unbox_number(timeout);
         set_thread_blocked(data, k);
         clock_gettime(CLOCK_REALTIME, &tim);
@@ -693,6 +696,7 @@ static void __lambda_40(void *data, int argc, closure _, object k, object obj, o
         tim.tv_sec += (long)value;
         tim.tv_nsec += (long)((value - ((long)value)) * 1000 * NANOSECONDS_PER_MILLISECOND);
         int result = pthread_mutex_timedlock(&(m->lock), &tim);
+#endif
         if (result != 0) {
           return_thread_runnable(data, boolean_f);
         }
