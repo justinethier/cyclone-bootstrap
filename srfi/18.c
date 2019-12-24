@@ -686,7 +686,7 @@ static void __lambda_40(void *data, int argc, closure _, object k, object obj, o
         Cyc_check_mutex(data, obj);
         Cyc_check_num(data, timeout);
 #ifdef __APPLE__
-        int result = pthread_mutex_lock(&(m->lock);
+        int result = pthread_mutex_lock(&(m->lock));
 #else
         value = unbox_number(timeout);
         set_thread_blocked(data, k);
