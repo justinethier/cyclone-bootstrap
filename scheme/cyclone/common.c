@@ -218,7 +218,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85version_85_scheme_cyclone_common = boolean_f; 
   make_utf8_string_with_len(c_7327, "", 0, 0); 
   __glo__85version_91name_85_scheme_cyclone_common = &c_7327; 
-  make_utf8_string_with_len(c_7326, "0.11.9", 6, 6); 
+  make_utf8_string_with_len(c_7326, "0.12", 4, 4); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7326; 
 
   mclosure0(clo_7366, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7365, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7366);
