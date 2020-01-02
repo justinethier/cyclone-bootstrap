@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.11.8 
+ ** Version 0.12 
  **
  **/
 
@@ -326,6 +326,7 @@ extern object __glo_let_85_scheme_base;
 extern object __glo_letrec_scheme_base;
 extern object __glo_let_85_91values_scheme_base;
 extern object __glo_let_91values_scheme_base;
+extern object __glo_define_91values_scheme_base;
 extern object __glo_begin_scheme_base;
 extern object __glo__case_scheme_base;
 extern object __glo_cond_scheme_base;
