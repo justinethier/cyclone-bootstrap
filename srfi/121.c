@@ -468,63 +468,64 @@ defsymbol(end);
 defsymbol(step);
 defsymbol(start);
 defsymbol(count);
-static void __lambda_268(void *data, int argc, closure _,object k_731245) ;
-static void __lambda_264(void *data, int argc, closure _,object k_731237, object g_73408_73657, object unfold_73409_73658, object args_73410_73659_raw, ...) ;
-static void __lambda_265(void *data, int argc, object self_731510, object r_731240) ;
-static void __lambda_267(void *data, int argc, object self_731512, object k_731241, object x_73412_73661) ;
-static void __lambda_266(void *data, int argc, object self_731511, object k_731242, object x_73411_73660) ;
-static void __lambda_260(void *data, int argc, closure _,object k_731230, object pred_73405_73654, object g_73406_73655) ;
-static void __lambda_262(void *data, int argc, object self_731508, object k_731233, object x_73407_73656) ;
-static void __lambda_263(void *data, int argc, object self_731509, object r_731234) ;
-static void __lambda_261(void *data, int argc, object self_731507, object r_731231) ;
-static void __lambda_254(void *data, int argc, closure _,object k_731220, object pred_73392_73649, object g_73393_73650) ;
-static void __lambda_255(void *data, int argc, object self_731501, object v_73395_73651) ;
-static void __lambda_256(void *data, int argc, object self_731502, object loop_73396_73652) ;
-static void __lambda_308(void *data, int argc, object self_731503, object loop_73396_73652) ;
-static void __lambda_257(void *data, int argc, object self_731504, object k_731224, object v_73397_73653) ;
-static void __lambda_258(void *data, int argc, object self_731505, object r_731226) ;
-static void __lambda_259(void *data, int argc, object self_731506, object r_731227) ;
-static void __lambda_251(void *data, int argc, closure _,object k_731214, object pred_73388_73645, object g_73389_73646) ;
-static void __lambda_252(void *data, int argc, object self_731499, object k_731216, object v_73390_73647, object n_73391_73648) ;
-static void __lambda_253(void *data, int argc, object self_731500, object r_731217) ;
-static void __lambda_245(void *data, int argc, closure _,object k_731204, object pred_73375_73640, object g_73376_73641) ;
-static void __lambda_246(void *data, int argc, object self_731493, object v_73378_73642) ;
-static void __lambda_247(void *data, int argc, object self_731494, object loop_73379_73643) ;
-static void __lambda_307(void *data, int argc, object self_731495, object loop_73379_73643) ;
-static void __lambda_248(void *data, int argc, object self_731496, object k_731208, object v_73380_73644) ;
-static void __lambda_249(void *data, int argc, object self_731497, object r_731209) ;
-static void __lambda_250(void *data, int argc, object self_731498, object r_731211) ;
-static void __lambda_238(void *data, int argc, closure _,object k_731193, object f_73369_73635, object gs_73370_73636_raw, ...) ;
-static void __lambda_239(void *data, int argc, object self_731486, object loop_73372_73637) ;
-static void __lambda_306(void *data, int argc, object self_731487, object loop_73372_73637) ;
-static void __lambda_240(void *data, int argc, object self_731488, object k_731196) ;
-static void __lambda_244(void *data, int argc, object self_731492, object k_731201, object g_73374_73639) ;
-static void __lambda_241(void *data, int argc, object self_731489, object vs_73373_73638) ;
-static void __lambda_242(void *data, int argc, object self_731490, object r_731198) ;
-static void __lambda_243(void *data, int argc, object self_731491, object r_731199) ;
-static void __lambda_229(void *data, int argc, closure _,object k_731180, object f_73363_73626, object seed_73364_73627, object gs_73365_73628_raw, ...) ;
-static void __lambda_230(void *data, int argc, object self_731477, object inner_91fold_73630) ;
-static void __lambda_305(void *data, int argc, object self_731478, object inner_91fold_73630) ;
-static void __lambda_231(void *data, int argc, object self_731479, object k_731183, object seed_73366_73632) ;
-static void __lambda_237(void *data, int argc, object self_731485, object k_731190, object g_73368_73634) ;
-static void __lambda_232(void *data, int argc, object self_731480, object vs_73367_73633) ;
-static void __lambda_233(void *data, int argc, object self_731481, object r_731185) ;
-static void __lambda_234(void *data, int argc, object self_731482, object r_731188) ;
-static void __lambda_235(void *data, int argc, object self_731483, object r_731187) ;
-static void __lambda_236(void *data, int argc, object self_731484, object r_731186) ;
-static void __lambda_224(void *data, int argc, closure _,object k_731164, object args_73352_73356_73621_raw, ...) ;
-static void __lambda_227(void *data, int argc, object self_731475, object k_731172, object gen_73361_73624, object n_73362_73625) ;
-static void __lambda_228(void *data, int argc, object self_731476, object r_731173) ;
-static void __lambda_225(void *data, int argc, object self_731473, object k_731168, object gen_73359_73623) ;
-static void __lambda_226(void *data, int argc, object self_731474, object r_731169) ;
+static void __lambda_269(void *data, int argc, closure _,object k_731245) ;
+static void __lambda_265(void *data, int argc, closure _,object k_731237, object g_73408_73657, object unfold_73409_73658, object args_73410_73659_raw, ...) ;
+static void __lambda_266(void *data, int argc, object self_731511, object r_731240) ;
+static void __lambda_268(void *data, int argc, object self_731513, object k_731241, object x_73412_73661) ;
+static void __lambda_267(void *data, int argc, object self_731512, object k_731242, object x_73411_73660) ;
+static void __lambda_261(void *data, int argc, closure _,object k_731230, object pred_73405_73654, object g_73406_73655) ;
+static void __lambda_263(void *data, int argc, object self_731509, object k_731233, object x_73407_73656) ;
+static void __lambda_264(void *data, int argc, object self_731510, object r_731234) ;
+static void __lambda_262(void *data, int argc, object self_731508, object r_731231) ;
+static void __lambda_255(void *data, int argc, closure _,object k_731220, object pred_73392_73649, object g_73393_73650) ;
+static void __lambda_256(void *data, int argc, object self_731502, object v_73395_73651) ;
+static void __lambda_257(void *data, int argc, object self_731503, object loop_73396_73652) ;
+static void __lambda_309(void *data, int argc, object self_731504, object loop_73396_73652) ;
+static void __lambda_258(void *data, int argc, object self_731505, object k_731224, object v_73397_73653) ;
+static void __lambda_259(void *data, int argc, object self_731506, object r_731226) ;
+static void __lambda_260(void *data, int argc, object self_731507, object r_731227) ;
+static void __lambda_252(void *data, int argc, closure _,object k_731214, object pred_73388_73645, object g_73389_73646) ;
+static void __lambda_253(void *data, int argc, object self_731500, object k_731216, object v_73390_73647, object n_73391_73648) ;
+static void __lambda_254(void *data, int argc, object self_731501, object r_731217) ;
+static void __lambda_246(void *data, int argc, closure _,object k_731204, object pred_73375_73640, object g_73376_73641) ;
+static void __lambda_247(void *data, int argc, object self_731494, object v_73378_73642) ;
+static void __lambda_248(void *data, int argc, object self_731495, object loop_73379_73643) ;
+static void __lambda_308(void *data, int argc, object self_731496, object loop_73379_73643) ;
+static void __lambda_249(void *data, int argc, object self_731497, object k_731208, object v_73380_73644) ;
+static void __lambda_250(void *data, int argc, object self_731498, object r_731209) ;
+static void __lambda_251(void *data, int argc, object self_731499, object r_731211) ;
+static void __lambda_239(void *data, int argc, closure _,object k_731193, object f_73369_73635, object gs_73370_73636_raw, ...) ;
+static void __lambda_240(void *data, int argc, object self_731487, object loop_73372_73637) ;
+static void __lambda_307(void *data, int argc, object self_731488, object loop_73372_73637) ;
+static void __lambda_241(void *data, int argc, object self_731489, object k_731196) ;
+static void __lambda_245(void *data, int argc, object self_731493, object k_731201, object g_73374_73639) ;
+static void __lambda_242(void *data, int argc, object self_731490, object vs_73373_73638) ;
+static void __lambda_243(void *data, int argc, object self_731491, object r_731198) ;
+static void __lambda_244(void *data, int argc, object self_731492, object r_731199) ;
+static void __lambda_230(void *data, int argc, closure _,object k_731180, object f_73363_73626, object seed_73364_73627, object gs_73365_73628_raw, ...) ;
+static void __lambda_231(void *data, int argc, object self_731478, object inner_91fold_73630) ;
+static void __lambda_306(void *data, int argc, object self_731479, object inner_91fold_73630) ;
+static void __lambda_232(void *data, int argc, object self_731480, object k_731183, object seed_73366_73632) ;
+static void __lambda_238(void *data, int argc, object self_731486, object k_731190, object g_73368_73634) ;
+static void __lambda_233(void *data, int argc, object self_731481, object vs_73367_73633) ;
+static void __lambda_234(void *data, int argc, object self_731482, object r_731185) ;
+static void __lambda_235(void *data, int argc, object self_731483, object r_731188) ;
+static void __lambda_236(void *data, int argc, object self_731484, object r_731187) ;
+static void __lambda_237(void *data, int argc, object self_731485, object r_731186) ;
+static void __lambda_225(void *data, int argc, closure _,object k_731164, object args_73352_73356_73621_raw, ...) ;
+static void __lambda_228(void *data, int argc, object self_731476, object k_731172, object gen_73361_73624, object n_73362_73625) ;
+static void __lambda_229(void *data, int argc, object self_731477, object r_731173) ;
+static void __lambda_226(void *data, int argc, object self_731474, object k_731168, object gen_73359_73623) ;
+static void __lambda_227(void *data, int argc, object self_731475, object r_731169) ;
 static void __lambda_217(void *data, int argc, closure _,object k_731150, object vector_73334_73611, object at_73335_73612, object gen_73336_73613) ;
 static void __lambda_218(void *data, int argc, object self_731466, object r_731151) ;
 static void __lambda_219(void *data, int argc, object self_731467, object value_73338_73614, object at_73340_73616) ;
 static void __lambda_220(void *data, int argc, object self_731468, object loop_73341_73617) ;
-static void __lambda_304(void *data, int argc, object self_731469, object loop_73341_73617) ;
+static void __lambda_305(void *data, int argc, object self_731469, object loop_73341_73617) ;
 static void __lambda_221(void *data, int argc, object self_731470, object k_731154, object value_73342_73618, object count_73343_73619, object at_73344_73620) ;
 static void __lambda_222(void *data, int argc, object self_731471, object r_731161) ;
-static void __lambda_223(void *data, int argc, object self_731472, object r_731158) ;
+static void __lambda_223(void *data, int argc, object self_731472, object r_731157) ;
+static void __lambda_224(void *data, int argc, object self_731473, object r_731158) ;
 static void __lambda_212(void *data, int argc, closure _,object k_731134, object args_73323_73327_73606_raw, ...) ;
 static void __lambda_215(void *data, int argc, object self_731464, object k_731142, object gen_73332_73609, object n_73333_73610) ;
 static void __lambda_216(void *data, int argc, object self_731465, object r_731143) ;
@@ -541,26 +542,26 @@ static void __lambda_204(void *data, int argc, object self_731455, object k_7311
 static void __lambda_205(void *data, int argc, object self_731456, object r_731107) ;
 static void __lambda_193(void *data, int argc, closure _,object k_731087, object value_91gen_73281_73587, object truth_91gen_73282_73588) ;
 static void __lambda_194(void *data, int argc, object self_731444, object done_127_73283_73589) ;
-static void __lambda_303(void *data, int argc, object self_731445, object done_127_73283_73589) ;
+static void __lambda_304(void *data, int argc, object self_731445, object done_127_73283_73589) ;
 static void __lambda_195(void *data, int argc, object self_731446, object k_731088) ;
 static void __lambda_196(void *data, int argc, object self_731447, object r_731089) ;
 static void __lambda_197(void *data, int argc, object self_731448, object r_731090) ;
 static void __lambda_198(void *data, int argc, object self_731449, object value_73285_73590, object truth_73286_73591) ;
 static void __lambda_199(void *data, int argc, object self_731450, object loop_73287_73592) ;
-static void __lambda_302(void *data, int argc, object self_731451, object loop_73287_73592) ;
+static void __lambda_303(void *data, int argc, object self_731451, object loop_73287_73592) ;
 static void __lambda_200(void *data, int argc, object self_731452, object k_731093, object value_73288_73593, object truth_73289_73594) ;
 static void __lambda_201(void *data, int argc, object self_731453, object r_731096) ;
 static void __lambda_202(void *data, int argc, object self_731454, object r_731097) ;
 static void __lambda_181(void *data, int argc, closure _,object k_731068, object value_91gen_73260_73577, object index_91gen_73261_73578) ;
 static void __lambda_182(void *data, int argc, object self_731430, object done_127_73262_73579, object count_73263_73580) ;
-static void __lambda_301(void *data, int argc, object self_731431, object done_127_73262_73579) ;
-static void __lambda_300(void *data, int argc, object self_731432, object count_73263_73580) ;
+static void __lambda_302(void *data, int argc, object self_731431, object done_127_73262_73579) ;
+static void __lambda_301(void *data, int argc, object self_731432, object count_73263_73580) ;
 static void __lambda_183(void *data, int argc, object self_731433, object k_731069) ;
 static void __lambda_184(void *data, int argc, object self_731434, object r_731070) ;
 static void __lambda_185(void *data, int argc, object self_731435, object r_731071) ;
 static void __lambda_186(void *data, int argc, object self_731436, object value_73265_73581, object index_73266_73582) ;
 static void __lambda_187(void *data, int argc, object self_731437, object loop_73267_73583) ;
-static void __lambda_299(void *data, int argc, object self_731438, object loop_73267_73583) ;
+static void __lambda_300(void *data, int argc, object self_731438, object loop_73267_73583) ;
 static void __lambda_188(void *data, int argc, object self_731439, object k_731074, object value_73268_73584, object index_73269_73585) ;
 static void __lambda_189(void *data, int argc, object self_731440, object r_731077) ;
 static void __lambda_191(void *data, int argc, object self_731442, object r_731082) ;
@@ -569,12 +570,12 @@ static void __lambda_190(void *data, int argc, object self_731441, object r_7310
 static void __lambda_170(void *data, int argc, closure _,object k_731040, object args_73238_73242_73565_raw, ...) ;
 static void __lambda_172(void *data, int argc, object self_731418, object k_731047, object gen_73247_73570, object _123_123_73248_73571) ;
 static void __lambda_173(void *data, int argc, object self_731419, object firsttime_73572, object prev_73573) ;
-static void __lambda_298(void *data, int argc, object self_731420, object firsttime_73572) ;
-static void __lambda_297(void *data, int argc, object self_731421, object prev_73573) ;
+static void __lambda_299(void *data, int argc, object self_731420, object firsttime_73572) ;
+static void __lambda_298(void *data, int argc, object self_731421, object prev_73573) ;
 static void __lambda_174(void *data, int argc, object self_731422, object k_731050) ;
 static void __lambda_176(void *data, int argc, object self_731424, object v_73250_73574) ;
 static void __lambda_177(void *data, int argc, object self_731425, object loop_73251_73575) ;
-static void __lambda_296(void *data, int argc, object self_731426, object loop_73251_73575) ;
+static void __lambda_297(void *data, int argc, object self_731426, object loop_73251_73575) ;
 static void __lambda_178(void *data, int argc, object self_731427, object k_731057, object v_73252_73576) ;
 static void __lambda_179(void *data, int argc, object self_731428, object r_731059) ;
 static void __lambda_180(void *data, int argc, object self_731429, object r_731060) ;
@@ -585,32 +586,32 @@ static void __lambda_163(void *data, int argc, object self_731409, object k_7310
 static void __lambda_164(void *data, int argc, object self_731410, object k_731026) ;
 static void __lambda_165(void *data, int argc, object self_731411, object v_73228_73562) ;
 static void __lambda_166(void *data, int argc, object self_731412, object loop_73229_73563) ;
-static void __lambda_295(void *data, int argc, object self_731413, object loop_73229_73563) ;
+static void __lambda_296(void *data, int argc, object self_731413, object loop_73229_73563) ;
 static void __lambda_167(void *data, int argc, object self_731414, object k_731030, object v_73230_73564) ;
 static void __lambda_168(void *data, int argc, object self_731415, object r_731032) ;
 static void __lambda_169(void *data, int argc, object self_731416, object r_731033) ;
 static void __lambda_162(void *data, int argc, object self_731408, object k_731022, object item_73221_73557, object gen_73222_73558) ;
 static void __lambda_156(void *data, int argc, closure _,object k_731009, object pred_73211_73552, object gen_73212_73553) ;
-static void __lambda_294(void *data, int argc, object self_731403, object gen_73212_73553) ;
+static void __lambda_295(void *data, int argc, object self_731403, object gen_73212_73553) ;
 static void __lambda_157(void *data, int argc, object self_731404, object k_731010) ;
 static void __lambda_158(void *data, int argc, object self_731405, object next_73213_73554) ;
 static void __lambda_159(void *data, int argc, object self_731406, object r_731013) ;
 static void __lambda_160(void *data, int argc, object self_731407, object r_731015) ;
 static void __lambda_148(void *data, int argc, closure _,object k_73996, object pred_73198_73545, object gen_73199_73546) ;
 static void __lambda_149(void *data, int argc, object self_731394, object found_73548) ;
-static void __lambda_293(void *data, int argc, object self_731395, object found_73548) ;
+static void __lambda_294(void *data, int argc, object self_731395, object found_73548) ;
 static void __lambda_150(void *data, int argc, object self_731396, object k_73998) ;
 static void __lambda_151(void *data, int argc, object self_731397, object loop_73201_73550) ;
-static void __lambda_292(void *data, int argc, object self_731398, object loop_73201_73550) ;
+static void __lambda_293(void *data, int argc, object self_731398, object loop_73201_73550) ;
 static void __lambda_152(void *data, int argc, object self_731399, object k_731001) ;
 static void __lambda_153(void *data, int argc, object self_731400, object val_73202_73551) ;
 static void __lambda_155(void *data, int argc, object self_731401, object r_731003) ;
 static void __lambda_154(void *data, int argc, object self_731402, object k_731005) ;
 static void __lambda_140(void *data, int argc, closure _,object k_73984, object gen_73190_73541, object k_73191_73542) ;
-static void __lambda_291(void *data, int argc, object self_731385, object k_73191_73542) ;
+static void __lambda_292(void *data, int argc, object self_731385, object k_73191_73542) ;
 static void __lambda_141(void *data, int argc, object self_731386, object k_73985) ;
 static void __lambda_142(void *data, int argc, object self_731387, object lp_73192_73196_73543) ;
-static void __lambda_290(void *data, int argc, object self_731388, object lp_73192_73196_73543) ;
+static void __lambda_291(void *data, int argc, object self_731388, object lp_73192_73196_73543) ;
 static void __lambda_143(void *data, int argc, object self_731389, object k_73989) ;
 static void __lambda_144(void *data, int argc, object self_731390, object tmp_73194_73197_73544) ;
 static void __lambda_145(void *data, int argc, object self_731391, object r_73993) ;
@@ -621,7 +622,7 @@ static void __lambda_132(void *data, int argc, object self_731376, object k_7396
 static void __lambda_133(void *data, int argc, object self_731377, object k_73965, object yield_73183_73535) ;
 static void __lambda_134(void *data, int argc, object self_731378, object v_73186_73537) ;
 static void __lambda_135(void *data, int argc, object self_731379, object loop_73187_73538) ;
-static void __lambda_289(void *data, int argc, object self_731380, object loop_73187_73538) ;
+static void __lambda_290(void *data, int argc, object self_731380, object loop_73187_73538) ;
 static void __lambda_136(void *data, int argc, object self_731381, object k_73970, object i_73188_73539, object v_73189_73540) ;
 static void __lambda_138(void *data, int argc, object self_731382, object r_73971) ;
 static void __lambda_139(void *data, int argc, object self_731383, object r_73974) ;
@@ -633,16 +634,16 @@ static void __lambda_129(void *data, int argc, object self_731374, object r_7395
 static void __lambda_120(void *data, int argc, closure _,object k_73938, object pred_73158_73520, object gen_73159_73521) ;
 static void __lambda_121(void *data, int argc, object self_731366, object k_73939) ;
 static void __lambda_122(void *data, int argc, object self_731367, object loop_73161_73522) ;
-static void __lambda_288(void *data, int argc, object self_731368, object loop_73161_73522) ;
+static void __lambda_289(void *data, int argc, object self_731368, object loop_73161_73522) ;
 static void __lambda_123(void *data, int argc, object self_731369, object k_73942) ;
 static void __lambda_124(void *data, int argc, object self_731370, object next_73162_73523) ;
 static void __lambda_126(void *data, int argc, object self_731371, object r_73944) ;
 static void __lambda_125(void *data, int argc, object self_731372, object k_73946) ;
 static void __lambda_111(void *data, int argc, closure _,object k_73922, object proc_73152_73512, object seed_73153_73513, object gens_73154_73514_raw, ...) ;
-static void __lambda_287(void *data, int argc, object self_731356, object seed_73153_73513) ;
+static void __lambda_288(void *data, int argc, object self_731356, object seed_73153_73513) ;
 static void __lambda_112(void *data, int argc, object self_731357, object k_73923) ;
 static void __lambda_113(void *data, int argc, object self_731358, object items_73516) ;
-static void __lambda_286(void *data, int argc, object self_731359, object items_73516) ;
+static void __lambda_287(void *data, int argc, object self_731359, object items_73516) ;
 static void __lambda_119(void *data, int argc, object self_731365, object k_73935, object x_73155_73517) ;
 static void __lambda_114(void *data, int argc, object self_731360, object r_73933) ;
 static void __lambda_115(void *data, int argc, object self_731361, object r_73925) ;
@@ -650,18 +651,18 @@ static void __lambda_118(void *data, int argc, object self_731364, object k_7392
 static void __lambda_116(void *data, int argc, object self_731362, object k_73930) ;
 static void __lambda_117(void *data, int argc, object self_731363, object r_73931) ;
 static void __lambda_102(void *data, int argc, closure _,object k_73906, object args_73147_73508_raw, ...) ;
-static void __lambda_285(void *data, int argc, object self_731346, object args_73147_73508) ;
+static void __lambda_286(void *data, int argc, object self_731346, object args_73147_73508) ;
 static void __lambda_103(void *data, int argc, object self_731347, object k_73907) ;
 static void __lambda_104(void *data, int argc, object self_731348, object r_73908) ;
 static void __lambda_105(void *data, int argc, object self_731349, object r_73919) ;
 static void __lambda_106(void *data, int argc, object self_731350, object v_73149_73509) ;
 static void __lambda_107(void *data, int argc, object self_731351, object loop_73150_73510) ;
-static void __lambda_284(void *data, int argc, object self_731352, object loop_73150_73510) ;
+static void __lambda_285(void *data, int argc, object self_731352, object loop_73150_73510) ;
 static void __lambda_108(void *data, int argc, object self_731353, object k_73912, object v_73151_73511) ;
 static void __lambda_109(void *data, int argc, object self_731354, object r_73918) ;
 static void __lambda_110(void *data, int argc, object self_731355, object r_73916) ;
 static void __lambda_96(void *data, int argc, closure _,object k_73895, object args_73138_73506_raw, ...) ;
-static void __lambda_283(void *data, int argc, object self_731340, object args_73138_73506) ;
+static void __lambda_284(void *data, int argc, object self_731340, object args_73138_73506) ;
 static void __lambda_97(void *data, int argc, object self_731341, object k_73896) ;
 static void __lambda_98(void *data, int argc, object self_731342, object r_73897) ;
 static void __lambda_99(void *data, int argc, object self_731343, object r_73903) ;
@@ -671,7 +672,7 @@ static void __lambda_87(void *data, int argc, closure _,object k_73883, object s
 static void __lambda_88(void *data, int argc, object self_731331, object k_73885, object yield_73133_73502) ;
 static void __lambda_89(void *data, int argc, object self_731332, object s_73135_73503) ;
 static void __lambda_90(void *data, int argc, object self_731333, object loop_73136_73504) ;
-static void __lambda_282(void *data, int argc, object self_731334, object loop_73136_73504) ;
+static void __lambda_283(void *data, int argc, object self_731334, object loop_73136_73504) ;
 static void __lambda_91(void *data, int argc, object self_731335, object k_73888, object s_73137_73505) ;
 static void __lambda_92(void *data, int argc, object self_731336, object r_73889) ;
 static void __lambda_93(void *data, int argc, object self_731337, object r_73892) ;
@@ -681,7 +682,7 @@ static void __lambda_85(void *data, int argc, closure _,object k_73878, object f
 static void __lambda_86(void *data, int argc, object self_731330, object k_73880, object yield_73128_73497) ;
 static void __lambda_75(void *data, int argc, closure _,object k_73852, object args_73110_73114_73486_raw, ...) ;
 static void __lambda_80(void *data, int argc, object self_731324, object k_73864, object str_73122_73491, object start_73123_73492, object end_73124_73493) ;
-static void __lambda_281(void *data, int argc, object self_731325, object start_73123_73492) ;
+static void __lambda_282(void *data, int argc, object self_731325, object start_73123_73492) ;
 static void __lambda_81(void *data, int argc, object self_731326, object k_73865) ;
 static void __lambda_82(void *data, int argc, object self_731327, object r_73866) ;
 static void __lambda_83(void *data, int argc, object self_731328, object next_73125_73494) ;
@@ -692,7 +693,7 @@ static void __lambda_76(void *data, int argc, object self_731320, object k_73856
 static void __lambda_77(void *data, int argc, object self_731321, object r_73857) ;
 static void __lambda_65(void *data, int argc, closure _,object k_73826, object args_7394_7398_73477_raw, ...) ;
 static void __lambda_70(void *data, int argc, object self_731314, object k_73838, object str_73106_73482, object start_73107_73483, object end_73108_73484) ;
-static void __lambda_280(void *data, int argc, object self_731315, object start_73107_73483) ;
+static void __lambda_281(void *data, int argc, object self_731315, object start_73107_73483) ;
 static void __lambda_71(void *data, int argc, object self_731316, object k_73839) ;
 static void __lambda_72(void *data, int argc, object self_731317, object r_73840) ;
 static void __lambda_73(void *data, int argc, object self_731318, object next_73109_73485) ;
@@ -703,7 +704,7 @@ static void __lambda_66(void *data, int argc, object self_731310, object k_73830
 static void __lambda_67(void *data, int argc, object self_731311, object r_73831) ;
 static void __lambda_55(void *data, int argc, closure _,object k_73799, object args_7378_7382_73468_raw, ...) ;
 static void __lambda_60(void *data, int argc, object self_731304, object k_73811, object vec_7390_73473, object start_7391_73474, object end_7392_73475) ;
-static void __lambda_279(void *data, int argc, object self_731305, object end_7392_73475) ;
+static void __lambda_280(void *data, int argc, object self_731305, object end_7392_73475) ;
 static void __lambda_61(void *data, int argc, object self_731306, object k_73812) ;
 static void __lambda_62(void *data, int argc, object self_731307, object r_73813) ;
 static void __lambda_63(void *data, int argc, object self_731308, object r_73817) ;
@@ -714,7 +715,7 @@ static void __lambda_56(void *data, int argc, object self_731300, object k_73803
 static void __lambda_57(void *data, int argc, object self_731301, object r_73804) ;
 static void __lambda_45(void *data, int argc, closure _,object k_73773, object args_7362_7366_73459_raw, ...) ;
 static void __lambda_50(void *data, int argc, object self_731294, object k_73785, object vec_7374_73464, object start_7375_73465, object end_7376_73466) ;
-static void __lambda_278(void *data, int argc, object self_731295, object start_7375_73465) ;
+static void __lambda_279(void *data, int argc, object self_731295, object start_7375_73465) ;
 static void __lambda_51(void *data, int argc, object self_731296, object k_73786) ;
 static void __lambda_52(void *data, int argc, object self_731297, object r_73787) ;
 static void __lambda_53(void *data, int argc, object self_731298, object next_7377_73467) ;
@@ -724,16 +725,16 @@ static void __lambda_49(void *data, int argc, object self_731293, object r_73782
 static void __lambda_46(void *data, int argc, object self_731290, object k_73777, object vec_7369_73461) ;
 static void __lambda_47(void *data, int argc, object self_731291, object r_73778) ;
 static void __lambda_40(void *data, int argc, closure _,object k_73765, object lst_7360_73457) ;
-static void __lambda_277(void *data, int argc, object self_731285, object lst_7360_73457) ;
+static void __lambda_278(void *data, int argc, object self_731285, object lst_7360_73457) ;
 static void __lambda_41(void *data, int argc, object self_731286, object k_73766) ;
 static void __lambda_42(void *data, int argc, object self_731287, object r_73767) ;
 static void __lambda_43(void *data, int argc, object self_731288, object next_7361_73458) ;
 static void __lambda_44(void *data, int argc, object self_731289, object r_73770) ;
 static void __lambda_32(void *data, int argc, closure _,object k_73742, object proc_7355_73443) ;
 static void __lambda_33(void *data, int argc, object self_731275, object resume_73447, object return_73448, object yield_73449) ;
-static void __lambda_276(void *data, int argc, object self_731276, object resume_73447) ;
-static void __lambda_275(void *data, int argc, object self_731277, object return_73448) ;
-static void __lambda_274(void *data, int argc, object self_731278, object yield_73449) ;
+static void __lambda_277(void *data, int argc, object self_731276, object resume_73447) ;
+static void __lambda_276(void *data, int argc, object self_731277, object return_73448) ;
+static void __lambda_275(void *data, int argc, object self_731278, object yield_73449) ;
 static void __lambda_34(void *data, int argc, object self_731279, object k_73759, object v_7356_73453) ;
 static void __lambda_35(void *data, int argc, object self_731280, object k_73761, object r_7357_73454) ;
 static void __lambda_36(void *data, int argc, object self_731281, object k_73746) ;
@@ -741,12 +742,12 @@ static void __lambda_37(void *data, int argc, object self_731282, object k_73748
 static void __lambda_38(void *data, int argc, object self_731283, object r_73752) ;
 static void __lambda_39(void *data, int argc, object self_731284, object k_73756, object v_7359_73456) ;
 static void __lambda_28(void *data, int argc, closure _,object k_73736, object start_7353_73441) ;
-static void __lambda_273(void *data, int argc, object self_731271, object start_7353_73441) ;
+static void __lambda_274(void *data, int argc, object self_731271, object start_7353_73441) ;
 static void __lambda_29(void *data, int argc, object self_731272, object k_73737) ;
 static void __lambda_30(void *data, int argc, object self_731273, object result_7354_73442) ;
 static void __lambda_31(void *data, int argc, object self_731274, object r_73739) ;
 static void __lambda_22(void *data, int argc, closure _,object k_73726, object start_7349_73437, object end_7350_73438, object step_7351_73439) ;
-static void __lambda_272(void *data, int argc, object self_731265, object start_7349_73437) ;
+static void __lambda_273(void *data, int argc, object self_731265, object start_7349_73437) ;
 static void __lambda_23(void *data, int argc, object self_731266, object r_73733) ;
 static void __lambda_24(void *data, int argc, object self_731267, object k_73728) ;
 static void __lambda_25(void *data, int argc, object self_731268, object r_73729) ;
@@ -757,8 +758,8 @@ static void __lambda_21(void *data, int argc, object self_731264, object k_73717
 static void __lambda_20(void *data, int argc, object self_731263, object k_73714, object start_7343_73432, object end_7344_73433) ;
 static void __lambda_19(void *data, int argc, object self_731262, object k_73711, object start_7341_73431) ;
 static void __lambda_12(void *data, int argc, closure _,object k_73698, object count_7330_73425, object start_7331_73426, object step_7332_73427) ;
-static void __lambda_271(void *data, int argc, object self_731255, object count_7330_73425) ;
-static void __lambda_270(void *data, int argc, object self_731256, object start_7331_73426) ;
+static void __lambda_272(void *data, int argc, object self_731255, object count_7330_73425) ;
+static void __lambda_271(void *data, int argc, object self_731256, object start_7331_73426) ;
 static void __lambda_13(void *data, int argc, object self_731257, object k_73699) ;
 static void __lambda_14(void *data, int argc, object self_731258, object r_73700) ;
 static void __lambda_15(void *data, int argc, object self_731259, object result_7333_73428) ;
@@ -769,7 +770,7 @@ static void __lambda_11(void *data, int argc, object self_731254, object k_73689
 static void __lambda_10(void *data, int argc, object self_731253, object k_73686, object count_7324_73420, object start_7325_73421) ;
 static void __lambda_9(void *data, int argc, object self_731252, object k_73683, object count_7322_73419) ;
 static void __lambda_3(void *data, int argc, closure _,object k_73671, object args_7313_73415_raw, ...) ;
-static void __lambda_269(void *data, int argc, object self_731247, object args_7313_73415) ;
+static void __lambda_270(void *data, int argc, object self_731247, object args_7313_73415) ;
 static void __lambda_4(void *data, int argc, object self_731248, object k_73672) ;
 static void __lambda_5(void *data, int argc, object self_731249, object r_73673) ;
 static void __lambda_6(void *data, int argc, object self_731250, object next_7314_73416) ;
@@ -777,902 +778,902 @@ static void __lambda_7(void *data, int argc, object self_731251, object r_73676)
 static void __lambda_1(void *data, int argc, closure _,object k_73664, object pred_731_73413, object ls_732_73414) ;
 static void __lambda_2(void *data, int argc, object self_731246, object r_73666) ;
 
-static void __lambda_268(void *data, int argc, closure _,object k_731245) {
+static void __lambda_269(void *data, int argc, closure _,object k_731245) {
   Cyc_st_add(data, "srfi/121.sld:lib-init:srfi121");
 return_closcall1(data,  k_731245,  obj_int2obj(0));; 
 }
 
-static void __lambda_264(void *data, int argc, closure _,object k_731237, object g_73408_73657, object unfold_73409_73658, object args_73410_73659_raw, ...) {
+static void __lambda_265(void *data, int argc, closure _,object k_731237, object g_73408_73657, object unfold_73409_73658, object args_73410_73659_raw, ...) {
 load_varargs(args_73410_73659, args_73410_73659_raw, argc - 3);
   Cyc_st_add(data, "srfi/121.sld:generator-unfold");
 
-closureN_type c_733895;
-object e_733909 [4];
-c_733895.hdr.mark = gc_color_red;
- c_733895.hdr.grayed = 0;
-c_733895.tag = closureN_tag;
- c_733895.fn = (function_type)__lambda_265;
-c_733895.num_args = 1;
-c_733895.num_elements = 4;
-c_733895.elements = (object *)e_733909;
-c_733895.elements[0] = args_73410_73659;
-c_733895.elements[1] = g_73408_73657;
-c_733895.elements[2] = k_731237;
-c_733895.elements[3] = unfold_73409_73658;
+closureN_type c_733899;
+object e_733913 [4];
+c_733899.hdr.mark = gc_color_red;
+ c_733899.hdr.grayed = 0;
+c_733899.tag = closureN_tag;
+ c_733899.fn = (function_type)__lambda_266;
+c_733899.num_args = 1;
+c_733899.num_elements = 4;
+c_733899.elements = (object *)e_733913;
+c_733899.elements[0] = args_73410_73659;
+c_733899.elements[1] = g_73408_73657;
+c_733899.elements[2] = k_731237;
+c_733899.elements[3] = unfold_73409_73658;
 
-return_closcall1(data,  g_73408_73657,  &c_733895);; 
+return_closcall1(data,  g_73408_73657,  &c_733899);; 
 }
 
-static void __lambda_265(void *data, int argc, object self_731510, object r_731240) {
+static void __lambda_266(void *data, int argc, object self_731511, object r_731240) {
   
-mclosure0(c_733902, (function_type)__lambda_266);c_733902.num_args = 1;
+mclosure0(c_733906, (function_type)__lambda_267);c_733906.num_args = 1;
 
-closureN_type c_733904;
-object e_733907 [1];
-c_733904.hdr.mark = gc_color_red;
- c_733904.hdr.grayed = 0;
-c_733904.tag = closureN_tag;
- c_733904.fn = (function_type)__lambda_267;
-c_733904.num_args = 1;
-c_733904.num_elements = 1;
-c_733904.elements = (object *)e_733907;
-c_733904.elements[0] = ((closureN)self_731510)->elements[1];
+closureN_type c_733908;
+object e_733911 [1];
+c_733908.hdr.mark = gc_color_red;
+ c_733908.hdr.grayed = 0;
+c_733908.tag = closureN_tag;
+ c_733908.fn = (function_type)__lambda_268;
+c_733908.num_args = 1;
+c_733908.num_elements = 1;
+c_733908.elements = (object *)e_733911;
+c_733908.elements[0] = ((closureN)self_731511)->elements[1];
 
 
-object c_733900 = apply_va(data,  ((closureN)self_731510)->elements[2],6,((closureN)self_731510)->elements[3], primitive_eof_91object_127, &c_733902, &c_733904, r_731240, ((closureN)self_731510)->elements[0]);
-return_closcall1(data,  ((closureN)self_731510)->elements[2],  c_733900);; 
+object c_733904 = apply_va(data,  ((closureN)self_731511)->elements[2],6,((closureN)self_731511)->elements[3], primitive_eof_91object_127, &c_733906, &c_733908, r_731240, ((closureN)self_731511)->elements[0]);
+return_closcall1(data,  ((closureN)self_731511)->elements[2],  c_733904);; 
 }
 
-static void __lambda_267(void *data, int argc, object self_731512, object k_731241, object x_73412_73661) {
-  return_closcall1(data,  ((closureN)self_731512)->elements[0],  k_731241);; 
+static void __lambda_268(void *data, int argc, object self_731513, object k_731241, object x_73412_73661) {
+  return_closcall1(data,  ((closureN)self_731513)->elements[0],  k_731241);; 
 }
 
-static void __lambda_266(void *data, int argc, object self_731511, object k_731242, object x_73411_73660) {
+static void __lambda_267(void *data, int argc, object self_731512, object k_731242, object x_73411_73660) {
   return_closcall1(data,  k_731242,  x_73411_73660);; 
 }
 
-static void __lambda_260(void *data, int argc, closure _,object k_731230, object pred_73405_73654, object g_73406_73655) {
+static void __lambda_261(void *data, int argc, closure _,object k_731230, object pred_73405_73654, object g_73406_73655) {
   Cyc_st_add(data, "srfi/121.sld:generator-every");
 
-closureN_type c_733875;
-object e_733881 [1];
-c_733875.hdr.mark = gc_color_red;
- c_733875.hdr.grayed = 0;
-c_733875.tag = closureN_tag;
- c_733875.fn = (function_type)__lambda_261;
-c_733875.num_args = 1;
-c_733875.num_elements = 1;
-c_733875.elements = (object *)e_733881;
-c_733875.elements[0] = k_731230;
+closureN_type c_733879;
+object e_733885 [1];
+c_733879.hdr.mark = gc_color_red;
+ c_733879.hdr.grayed = 0;
+c_733879.tag = closureN_tag;
+ c_733879.fn = (function_type)__lambda_262;
+c_733879.num_args = 1;
+c_733879.num_elements = 1;
+c_733879.elements = (object *)e_733885;
+c_733879.elements[0] = k_731230;
 
 
-closureN_type c_733882;
-object e_733892 [1];
-c_733882.hdr.mark = gc_color_red;
- c_733882.hdr.grayed = 0;
-c_733882.tag = closureN_tag;
- c_733882.fn = (function_type)__lambda_262;
-c_733882.num_args = 1;
-c_733882.num_elements = 1;
-c_733882.elements = (object *)e_733892;
-c_733882.elements[0] = pred_73405_73654;
+closureN_type c_733886;
+object e_733896 [1];
+c_733886.hdr.mark = gc_color_red;
+ c_733886.hdr.grayed = 0;
+c_733886.tag = closureN_tag;
+ c_733886.fn = (function_type)__lambda_263;
+c_733886.num_args = 1;
+c_733886.num_elements = 1;
+c_733886.elements = (object *)e_733896;
+c_733886.elements[0] = pred_73405_73654;
 
-return_closcall3(data,  __glo_generator_91any_srfi_121,  &c_733875, &c_733882, g_73406_73655);; 
+return_closcall3(data,  __glo_generator_91any_srfi_121,  &c_733879, &c_733886, g_73406_73655);; 
 }
 
-static void __lambda_262(void *data, int argc, object self_731508, object k_731233, object x_73407_73656) {
+static void __lambda_263(void *data, int argc, object self_731509, object k_731233, object x_73407_73656) {
   
-closureN_type c_733885;
-object e_733891 [1];
-c_733885.hdr.mark = gc_color_red;
- c_733885.hdr.grayed = 0;
-c_733885.tag = closureN_tag;
- c_733885.fn = (function_type)__lambda_263;
-c_733885.num_args = 1;
-c_733885.num_elements = 1;
-c_733885.elements = (object *)e_733891;
-c_733885.elements[0] = k_731233;
+closureN_type c_733889;
+object e_733895 [1];
+c_733889.hdr.mark = gc_color_red;
+ c_733889.hdr.grayed = 0;
+c_733889.tag = closureN_tag;
+ c_733889.fn = (function_type)__lambda_264;
+c_733889.num_args = 1;
+c_733889.num_elements = 1;
+c_733889.elements = (object *)e_733895;
+c_733889.elements[0] = k_731233;
 
-return_closcall2(data,  ((closureN)self_731508)->elements[0],  &c_733885, x_73407_73656);; 
+return_closcall2(data,  ((closureN)self_731509)->elements[0],  &c_733889, x_73407_73656);; 
 }
 
-static void __lambda_263(void *data, int argc, object self_731509, object r_731234) {
+static void __lambda_264(void *data, int argc, object self_731510, object r_731234) {
   
-complex_num_type local_733890; 
-return_closcall1(data,  ((closureN)self_731509)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_733890, r_731234));; 
+complex_num_type local_733894; 
+return_closcall1(data,  ((closureN)self_731510)->elements[0],  ((inline_function_type)
+                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_733894, r_731234));; 
 }
 
-static void __lambda_261(void *data, int argc, object self_731507, object r_731231) {
+static void __lambda_262(void *data, int argc, object self_731508, object r_731231) {
   
-complex_num_type local_733880; 
-return_closcall1(data,  ((closureN)self_731507)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_733880, r_731231));; 
+complex_num_type local_733884; 
+return_closcall1(data,  ((closureN)self_731508)->elements[0],  ((inline_function_type)
+                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_733884, r_731231));; 
 }
 
-static void __lambda_254(void *data, int argc, closure _,object k_731220, object pred_73392_73649, object g_73393_73650) {
+static void __lambda_255(void *data, int argc, closure _,object k_731220, object pred_73392_73649, object g_73393_73650) {
   Cyc_st_add(data, "srfi/121.sld:generator-any");
 
-closureN_type c_733834;
-object e_733872 [3];
-c_733834.hdr.mark = gc_color_red;
- c_733834.hdr.grayed = 0;
-c_733834.tag = closureN_tag;
- c_733834.fn = (function_type)__lambda_255;
-c_733834.num_args = 1;
-c_733834.num_elements = 3;
-c_733834.elements = (object *)e_733872;
-c_733834.elements[0] = g_73393_73650;
-c_733834.elements[1] = k_731220;
-c_733834.elements[2] = pred_73392_73649;
-
-return_closcall1(data,  g_73393_73650,  &c_733834);; 
-}
-
-static void __lambda_255(void *data, int argc, object self_731501, object v_73395_73651) {
-  
-closureN_type c_733836;
-object e_733871 [4];
-c_733836.hdr.mark = gc_color_red;
- c_733836.hdr.grayed = 0;
-c_733836.tag = closureN_tag;
- c_733836.fn = (function_type)__lambda_256;
-c_733836.num_args = 1;
-c_733836.num_elements = 4;
-c_733836.elements = (object *)e_733871;
-c_733836.elements[0] = ((closureN)self_731501)->elements[0];
-c_733836.elements[1] = ((closureN)self_731501)->elements[1];
-c_733836.elements[2] = ((closureN)self_731501)->elements[2];
-c_733836.elements[3] = v_73395_73651;
-
-return_direct_with_clo1(data,(closure)&c_733836,__lambda_256,  boolean_f);; 
-}
-
-static void __lambda_256(void *data, int argc, object self_731502, object loop_73396_73652) {
-  
 closureN_type c_733838;
-object e_733867 [4];
+object e_733876 [3];
 c_733838.hdr.mark = gc_color_red;
  c_733838.hdr.grayed = 0;
 c_733838.tag = closureN_tag;
- c_733838.fn = (function_type)__lambda_308;
+ c_733838.fn = (function_type)__lambda_256;
 c_733838.num_args = 1;
-c_733838.num_elements = 4;
-c_733838.elements = (object *)e_733867;
-c_733838.elements[0] = ((closureN)self_731502)->elements[0];
-c_733838.elements[1] = ((closureN)self_731502)->elements[1];
-c_733838.elements[2] = ((closureN)self_731502)->elements[2];
-c_733838.elements[3] = ((closureN)self_731502)->elements[3];
+c_733838.num_elements = 3;
+c_733838.elements = (object *)e_733876;
+c_733838.elements[0] = g_73393_73650;
+c_733838.elements[1] = k_731220;
+c_733838.elements[2] = pred_73392_73649;
 
-
-pair_type local_733870; 
-return_direct_with_clo1(data,(closure)&c_733838,__lambda_308,  set_cell_as_expr(&local_733870, loop_73396_73652));; 
+return_closcall1(data,  g_73393_73650,  &c_733838);; 
 }
 
-static void __lambda_308(void *data, int argc, object self_731503, object loop_73396_73652) {
+static void __lambda_256(void *data, int argc, object self_731502, object v_73395_73651) {
   
-  closureN_type c_733847;
-object e_733866 [3];
-c_733847.hdr.mark = gc_color_red;
- c_733847.hdr.grayed = 0;
-c_733847.tag = closureN_tag;
- c_733847.fn = (function_type)__lambda_257;
-c_733847.num_args = 1;
-c_733847.num_elements = 3;
-c_733847.elements = (object *)e_733866;
-c_733847.elements[0] = ((closureN)self_731503)->elements[0];
-c_733847.elements[1] = loop_73396_73652;
-c_733847.elements[2] = ((closureN)self_731503)->elements[2];
+closureN_type c_733840;
+object e_733875 [4];
+c_733840.hdr.mark = gc_color_red;
+ c_733840.hdr.grayed = 0;
+c_733840.tag = closureN_tag;
+ c_733840.fn = (function_type)__lambda_257;
+c_733840.num_args = 1;
+c_733840.num_elements = 4;
+c_733840.elements = (object *)e_733875;
+c_733840.elements[0] = ((closureN)self_731502)->elements[0];
+c_733840.elements[1] = ((closureN)self_731502)->elements[1];
+c_733840.elements[2] = ((closureN)self_731502)->elements[2];
+c_733840.elements[3] = v_73395_73651;
 
-  Cyc_set_cell(data, loop_73396_73652, &c_733847);
-
-return_closcall2(data,  car(loop_73396_73652),  ((closureN)self_731503)->elements[1], ((closureN)self_731503)->elements[3]);;; 
+return_direct_with_clo1(data,(closure)&c_733840,__lambda_257,  boolean_f);; 
 }
 
-static void __lambda_257(void *data, int argc, object self_731504, object k_731224, object v_73397_73653) {
+static void __lambda_257(void *data, int argc, object self_731503, object loop_73396_73652) {
+  
+closureN_type c_733842;
+object e_733871 [4];
+c_733842.hdr.mark = gc_color_red;
+ c_733842.hdr.grayed = 0;
+c_733842.tag = closureN_tag;
+ c_733842.fn = (function_type)__lambda_309;
+c_733842.num_args = 1;
+c_733842.num_elements = 4;
+c_733842.elements = (object *)e_733871;
+c_733842.elements[0] = ((closureN)self_731503)->elements[0];
+c_733842.elements[1] = ((closureN)self_731503)->elements[1];
+c_733842.elements[2] = ((closureN)self_731503)->elements[2];
+c_733842.elements[3] = ((closureN)self_731503)->elements[3];
+
+
+pair_type local_733874; 
+return_direct_with_clo1(data,(closure)&c_733842,__lambda_309,  set_cell_as_expr(&local_733874, loop_73396_73652));; 
+}
+
+static void __lambda_309(void *data, int argc, object self_731504, object loop_73396_73652) {
+  
+  closureN_type c_733851;
+object e_733870 [3];
+c_733851.hdr.mark = gc_color_red;
+ c_733851.hdr.grayed = 0;
+c_733851.tag = closureN_tag;
+ c_733851.fn = (function_type)__lambda_258;
+c_733851.num_args = 1;
+c_733851.num_elements = 3;
+c_733851.elements = (object *)e_733870;
+c_733851.elements[0] = ((closureN)self_731504)->elements[0];
+c_733851.elements[1] = loop_73396_73652;
+c_733851.elements[2] = ((closureN)self_731504)->elements[2];
+
+  Cyc_set_cell(data, loop_73396_73652, &c_733851);
+
+return_closcall2(data,  car(loop_73396_73652),  ((closureN)self_731504)->elements[1], ((closureN)self_731504)->elements[3]);;; 
+}
+
+static void __lambda_258(void *data, int argc, object self_731505, object k_731224, object v_73397_73653) {
     
 if( (boolean_f != Cyc_is_eof_object(v_73397_73653)) ){ 
   return_closcall1(data,  k_731224,  boolean_f);
 } else { 
   
-closureN_type c_733853;
-object e_733865 [3];
-c_733853.hdr.mark = gc_color_red;
- c_733853.hdr.grayed = 0;
-c_733853.tag = closureN_tag;
- c_733853.fn = (function_type)__lambda_258;
-c_733853.num_args = 1;
-c_733853.num_elements = 3;
-c_733853.elements = (object *)e_733865;
-c_733853.elements[0] = ((closureN)self_731504)->elements[0];
-c_733853.elements[1] = k_731224;
-c_733853.elements[2] = ((closureN)self_731504)->elements[1];
+closureN_type c_733857;
+object e_733869 [3];
+c_733857.hdr.mark = gc_color_red;
+ c_733857.hdr.grayed = 0;
+c_733857.tag = closureN_tag;
+ c_733857.fn = (function_type)__lambda_259;
+c_733857.num_args = 1;
+c_733857.num_elements = 3;
+c_733857.elements = (object *)e_733869;
+c_733857.elements[0] = ((closureN)self_731505)->elements[0];
+c_733857.elements[1] = k_731224;
+c_733857.elements[2] = ((closureN)self_731505)->elements[1];
 
-return_closcall2(data,  ((closureN)self_731504)->elements[2],  &c_733853, v_73397_73653);}
+return_closcall2(data,  ((closureN)self_731505)->elements[2],  &c_733857, v_73397_73653);}
 ;; 
 }
 
-static void __lambda_258(void *data, int argc, object self_731505, object r_731226) {
+static void __lambda_259(void *data, int argc, object self_731506, object r_731226) {
   if( (boolean_f != r_731226) ){ 
-  return_closcall1(data,  ((closureN)self_731505)->elements[1],  boolean_t);
+  return_closcall1(data,  ((closureN)self_731506)->elements[1],  boolean_t);
 } else { 
   
-closureN_type c_733858;
-object e_733864 [2];
-c_733858.hdr.mark = gc_color_red;
- c_733858.hdr.grayed = 0;
-c_733858.tag = closureN_tag;
- c_733858.fn = (function_type)__lambda_259;
-c_733858.num_args = 1;
-c_733858.num_elements = 2;
-c_733858.elements = (object *)e_733864;
-c_733858.elements[0] = ((closureN)self_731505)->elements[1];
-c_733858.elements[1] = ((closureN)self_731505)->elements[2];
+closureN_type c_733862;
+object e_733868 [2];
+c_733862.hdr.mark = gc_color_red;
+ c_733862.hdr.grayed = 0;
+c_733862.tag = closureN_tag;
+ c_733862.fn = (function_type)__lambda_260;
+c_733862.num_args = 1;
+c_733862.num_elements = 2;
+c_733862.elements = (object *)e_733868;
+c_733862.elements[0] = ((closureN)self_731506)->elements[1];
+c_733862.elements[1] = ((closureN)self_731506)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731505)->elements[0],  &c_733858);}
+return_closcall1(data,  ((closureN)self_731506)->elements[0],  &c_733862);}
 ;; 
 }
 
-static void __lambda_259(void *data, int argc, object self_731506, object r_731227) {
+static void __lambda_260(void *data, int argc, object self_731507, object r_731227) {
   
 
-return_closcall2(data,  car(((closureN)self_731506)->elements[1]),  ((closureN)self_731506)->elements[0], r_731227);; 
+return_closcall2(data,  car(((closureN)self_731507)->elements[1]),  ((closureN)self_731507)->elements[0], r_731227);; 
 }
 
-static void __lambda_251(void *data, int argc, closure _,object k_731214, object pred_73388_73645, object g_73389_73646) {
+static void __lambda_252(void *data, int argc, closure _,object k_731214, object pred_73388_73645, object g_73389_73646) {
   Cyc_st_add(data, "srfi/121.sld:generator-count");
 
-closureN_type c_733817;
-object e_733831 [1];
-c_733817.hdr.mark = gc_color_red;
- c_733817.hdr.grayed = 0;
-c_733817.tag = closureN_tag;
- c_733817.fn = (function_type)__lambda_252;
-c_733817.num_args = 2;
-c_733817.num_elements = 1;
-c_733817.elements = (object *)e_733831;
-c_733817.elements[0] = pred_73388_73645;
+closureN_type c_733821;
+object e_733835 [1];
+c_733821.hdr.mark = gc_color_red;
+ c_733821.hdr.grayed = 0;
+c_733821.tag = closureN_tag;
+ c_733821.fn = (function_type)__lambda_253;
+c_733821.num_args = 2;
+c_733821.num_elements = 1;
+c_733821.elements = (object *)e_733835;
+c_733821.elements[0] = pred_73388_73645;
 
-return_closcall4(data,  __glo_generator_91fold_srfi_121,  k_731214, &c_733817, obj_int2obj(0), g_73389_73646);; 
+return_closcall4(data,  __glo_generator_91fold_srfi_121,  k_731214, &c_733821, obj_int2obj(0), g_73389_73646);; 
 }
 
-static void __lambda_252(void *data, int argc, object self_731499, object k_731216, object v_73390_73647, object n_73391_73648) {
+static void __lambda_253(void *data, int argc, object self_731500, object k_731216, object v_73390_73647, object n_73391_73648) {
   
-closureN_type c_733820;
-object e_733830 [2];
-c_733820.hdr.mark = gc_color_red;
- c_733820.hdr.grayed = 0;
-c_733820.tag = closureN_tag;
- c_733820.fn = (function_type)__lambda_253;
-c_733820.num_args = 1;
-c_733820.num_elements = 2;
-c_733820.elements = (object *)e_733830;
-c_733820.elements[0] = k_731216;
-c_733820.elements[1] = n_73391_73648;
+closureN_type c_733824;
+object e_733834 [2];
+c_733824.hdr.mark = gc_color_red;
+ c_733824.hdr.grayed = 0;
+c_733824.tag = closureN_tag;
+ c_733824.fn = (function_type)__lambda_254;
+c_733824.num_args = 1;
+c_733824.num_elements = 2;
+c_733824.elements = (object *)e_733834;
+c_733824.elements[0] = k_731216;
+c_733824.elements[1] = n_73391_73648;
 
-return_closcall2(data,  ((closureN)self_731499)->elements[0],  &c_733820, v_73390_73647);; 
+return_closcall2(data,  ((closureN)self_731500)->elements[0],  &c_733824, v_73390_73647);; 
 }
 
-static void __lambda_253(void *data, int argc, object self_731500, object r_731217) {
+static void __lambda_254(void *data, int argc, object self_731501, object r_731217) {
   if( (boolean_f != r_731217) ){ 
   
-complex_num_type local_733825; 
-return_closcall1(data,  ((closureN)self_731500)->elements[0],  Cyc_fast_sum(data,&local_733825, obj_int2obj(1), ((closureN)self_731500)->elements[1]));
+complex_num_type local_733829; 
+return_closcall1(data,  ((closureN)self_731501)->elements[0],  Cyc_fast_sum(data,&local_733829, obj_int2obj(1), ((closureN)self_731501)->elements[1]));
 } else { 
-  return_closcall1(data,  ((closureN)self_731500)->elements[0],  ((closureN)self_731500)->elements[1]);}
+  return_closcall1(data,  ((closureN)self_731501)->elements[0],  ((closureN)self_731501)->elements[1]);}
 ;; 
 }
 
-static void __lambda_245(void *data, int argc, closure _,object k_731204, object pred_73375_73640, object g_73376_73641) {
+static void __lambda_246(void *data, int argc, closure _,object k_731204, object pred_73375_73640, object g_73376_73641) {
   Cyc_st_add(data, "srfi/121.sld:generator-find");
 
-closureN_type c_733773;
-object e_733814 [3];
-c_733773.hdr.mark = gc_color_red;
- c_733773.hdr.grayed = 0;
-c_733773.tag = closureN_tag;
- c_733773.fn = (function_type)__lambda_246;
-c_733773.num_args = 1;
-c_733773.num_elements = 3;
-c_733773.elements = (object *)e_733814;
-c_733773.elements[0] = g_73376_73641;
-c_733773.elements[1] = k_731204;
-c_733773.elements[2] = pred_73375_73640;
-
-return_closcall1(data,  g_73376_73641,  &c_733773);; 
-}
-
-static void __lambda_246(void *data, int argc, object self_731493, object v_73378_73642) {
-  
-closureN_type c_733775;
-object e_733813 [4];
-c_733775.hdr.mark = gc_color_red;
- c_733775.hdr.grayed = 0;
-c_733775.tag = closureN_tag;
- c_733775.fn = (function_type)__lambda_247;
-c_733775.num_args = 1;
-c_733775.num_elements = 4;
-c_733775.elements = (object *)e_733813;
-c_733775.elements[0] = ((closureN)self_731493)->elements[0];
-c_733775.elements[1] = ((closureN)self_731493)->elements[1];
-c_733775.elements[2] = ((closureN)self_731493)->elements[2];
-c_733775.elements[3] = v_73378_73642;
-
-return_direct_with_clo1(data,(closure)&c_733775,__lambda_247,  boolean_f);; 
-}
-
-static void __lambda_247(void *data, int argc, object self_731494, object loop_73379_73643) {
-  
 closureN_type c_733777;
-object e_733809 [4];
+object e_733818 [3];
 c_733777.hdr.mark = gc_color_red;
  c_733777.hdr.grayed = 0;
 c_733777.tag = closureN_tag;
- c_733777.fn = (function_type)__lambda_307;
+ c_733777.fn = (function_type)__lambda_247;
 c_733777.num_args = 1;
-c_733777.num_elements = 4;
-c_733777.elements = (object *)e_733809;
-c_733777.elements[0] = ((closureN)self_731494)->elements[0];
-c_733777.elements[1] = ((closureN)self_731494)->elements[1];
-c_733777.elements[2] = ((closureN)self_731494)->elements[2];
-c_733777.elements[3] = ((closureN)self_731494)->elements[3];
+c_733777.num_elements = 3;
+c_733777.elements = (object *)e_733818;
+c_733777.elements[0] = g_73376_73641;
+c_733777.elements[1] = k_731204;
+c_733777.elements[2] = pred_73375_73640;
 
-
-pair_type local_733812; 
-return_direct_with_clo1(data,(closure)&c_733777,__lambda_307,  set_cell_as_expr(&local_733812, loop_73379_73643));; 
+return_closcall1(data,  g_73376_73641,  &c_733777);; 
 }
 
-static void __lambda_307(void *data, int argc, object self_731495, object loop_73379_73643) {
+static void __lambda_247(void *data, int argc, object self_731494, object v_73378_73642) {
   
-  closureN_type c_733786;
-object e_733808 [3];
-c_733786.hdr.mark = gc_color_red;
- c_733786.hdr.grayed = 0;
-c_733786.tag = closureN_tag;
- c_733786.fn = (function_type)__lambda_248;
-c_733786.num_args = 1;
-c_733786.num_elements = 3;
-c_733786.elements = (object *)e_733808;
-c_733786.elements[0] = ((closureN)self_731495)->elements[0];
-c_733786.elements[1] = loop_73379_73643;
-c_733786.elements[2] = ((closureN)self_731495)->elements[2];
+closureN_type c_733779;
+object e_733817 [4];
+c_733779.hdr.mark = gc_color_red;
+ c_733779.hdr.grayed = 0;
+c_733779.tag = closureN_tag;
+ c_733779.fn = (function_type)__lambda_248;
+c_733779.num_args = 1;
+c_733779.num_elements = 4;
+c_733779.elements = (object *)e_733817;
+c_733779.elements[0] = ((closureN)self_731494)->elements[0];
+c_733779.elements[1] = ((closureN)self_731494)->elements[1];
+c_733779.elements[2] = ((closureN)self_731494)->elements[2];
+c_733779.elements[3] = v_73378_73642;
 
-  Cyc_set_cell(data, loop_73379_73643, &c_733786);
-
-return_closcall2(data,  car(loop_73379_73643),  ((closureN)self_731495)->elements[1], ((closureN)self_731495)->elements[3]);;; 
+return_direct_with_clo1(data,(closure)&c_733779,__lambda_248,  boolean_f);; 
 }
 
-static void __lambda_248(void *data, int argc, object self_731496, object k_731208, object v_73380_73644) {
+static void __lambda_248(void *data, int argc, object self_731495, object loop_73379_73643) {
   
-closureN_type c_733789;
-object e_733807 [4];
-c_733789.hdr.mark = gc_color_red;
- c_733789.hdr.grayed = 0;
-c_733789.tag = closureN_tag;
- c_733789.fn = (function_type)__lambda_249;
-c_733789.num_args = 1;
-c_733789.num_elements = 4;
-c_733789.elements = (object *)e_733807;
-c_733789.elements[0] = ((closureN)self_731496)->elements[0];
-c_733789.elements[1] = k_731208;
-c_733789.elements[2] = ((closureN)self_731496)->elements[1];
-c_733789.elements[3] = v_73380_73644;
+closureN_type c_733781;
+object e_733813 [4];
+c_733781.hdr.mark = gc_color_red;
+ c_733781.hdr.grayed = 0;
+c_733781.tag = closureN_tag;
+ c_733781.fn = (function_type)__lambda_308;
+c_733781.num_args = 1;
+c_733781.num_elements = 4;
+c_733781.elements = (object *)e_733813;
+c_733781.elements[0] = ((closureN)self_731495)->elements[0];
+c_733781.elements[1] = ((closureN)self_731495)->elements[1];
+c_733781.elements[2] = ((closureN)self_731495)->elements[2];
+c_733781.elements[3] = ((closureN)self_731495)->elements[3];
 
-return_closcall2(data,  ((closureN)self_731496)->elements[2],  &c_733789, v_73380_73644);; 
+
+pair_type local_733816; 
+return_direct_with_clo1(data,(closure)&c_733781,__lambda_308,  set_cell_as_expr(&local_733816, loop_73379_73643));; 
 }
 
-static void __lambda_249(void *data, int argc, object self_731497, object r_731209) {
+static void __lambda_308(void *data, int argc, object self_731496, object loop_73379_73643) {
+  
+  closureN_type c_733790;
+object e_733812 [3];
+c_733790.hdr.mark = gc_color_red;
+ c_733790.hdr.grayed = 0;
+c_733790.tag = closureN_tag;
+ c_733790.fn = (function_type)__lambda_249;
+c_733790.num_args = 1;
+c_733790.num_elements = 3;
+c_733790.elements = (object *)e_733812;
+c_733790.elements[0] = ((closureN)self_731496)->elements[0];
+c_733790.elements[1] = loop_73379_73643;
+c_733790.elements[2] = ((closureN)self_731496)->elements[2];
+
+  Cyc_set_cell(data, loop_73379_73643, &c_733790);
+
+return_closcall2(data,  car(loop_73379_73643),  ((closureN)self_731496)->elements[1], ((closureN)self_731496)->elements[3]);;; 
+}
+
+static void __lambda_249(void *data, int argc, object self_731497, object k_731208, object v_73380_73644) {
+  
+closureN_type c_733793;
+object e_733811 [4];
+c_733793.hdr.mark = gc_color_red;
+ c_733793.hdr.grayed = 0;
+c_733793.tag = closureN_tag;
+ c_733793.fn = (function_type)__lambda_250;
+c_733793.num_args = 1;
+c_733793.num_elements = 4;
+c_733793.elements = (object *)e_733811;
+c_733793.elements[0] = ((closureN)self_731497)->elements[0];
+c_733793.elements[1] = k_731208;
+c_733793.elements[2] = ((closureN)self_731497)->elements[1];
+c_733793.elements[3] = v_73380_73644;
+
+return_closcall2(data,  ((closureN)self_731497)->elements[2],  &c_733793, v_73380_73644);; 
+}
+
+static void __lambda_250(void *data, int argc, object self_731498, object r_731209) {
   if( (boolean_f != r_731209) ){ 
-  return_closcall1(data,  ((closureN)self_731497)->elements[1],  ((closureN)self_731497)->elements[3]);
+  return_closcall1(data,  ((closureN)self_731498)->elements[1],  ((closureN)self_731498)->elements[3]);
 } else { 
     
-if( (boolean_f != Cyc_is_eof_object(((closureN)self_731497)->elements[3])) ){ 
-  return_closcall1(data,  ((closureN)self_731497)->elements[1],  boolean_f);
+if( (boolean_f != Cyc_is_eof_object(((closureN)self_731498)->elements[3])) ){ 
+  return_closcall1(data,  ((closureN)self_731498)->elements[1],  boolean_f);
 } else { 
   
-closureN_type c_733800;
-object e_733806 [2];
-c_733800.hdr.mark = gc_color_red;
- c_733800.hdr.grayed = 0;
-c_733800.tag = closureN_tag;
- c_733800.fn = (function_type)__lambda_250;
-c_733800.num_args = 1;
-c_733800.num_elements = 2;
-c_733800.elements = (object *)e_733806;
-c_733800.elements[0] = ((closureN)self_731497)->elements[1];
-c_733800.elements[1] = ((closureN)self_731497)->elements[2];
+closureN_type c_733804;
+object e_733810 [2];
+c_733804.hdr.mark = gc_color_red;
+ c_733804.hdr.grayed = 0;
+c_733804.tag = closureN_tag;
+ c_733804.fn = (function_type)__lambda_251;
+c_733804.num_args = 1;
+c_733804.num_elements = 2;
+c_733804.elements = (object *)e_733810;
+c_733804.elements[0] = ((closureN)self_731498)->elements[1];
+c_733804.elements[1] = ((closureN)self_731498)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731497)->elements[0],  &c_733800);}
+return_closcall1(data,  ((closureN)self_731498)->elements[0],  &c_733804);}
 ;}
 ;; 
 }
 
-static void __lambda_250(void *data, int argc, object self_731498, object r_731211) {
+static void __lambda_251(void *data, int argc, object self_731499, object r_731211) {
   
 
-return_closcall2(data,  car(((closureN)self_731498)->elements[1]),  ((closureN)self_731498)->elements[0], r_731211);; 
+return_closcall2(data,  car(((closureN)self_731499)->elements[1]),  ((closureN)self_731499)->elements[0], r_731211);; 
 }
 
-static void __lambda_238(void *data, int argc, closure _,object k_731193, object f_73369_73635, object gs_73370_73636_raw, ...) {
+static void __lambda_239(void *data, int argc, closure _,object k_731193, object f_73369_73635, object gs_73370_73636_raw, ...) {
 load_varargs(gs_73370_73636, gs_73370_73636_raw, argc - 2);
   Cyc_st_add(data, "srfi/121.sld:generator-for-each");
 
-closureN_type c_733730;
+closureN_type c_733734;
+object e_733774 [3];
+c_733734.hdr.mark = gc_color_red;
+ c_733734.hdr.grayed = 0;
+c_733734.tag = closureN_tag;
+ c_733734.fn = (function_type)__lambda_240;
+c_733734.num_args = 1;
+c_733734.num_elements = 3;
+c_733734.elements = (object *)e_733774;
+c_733734.elements[0] = f_73369_73635;
+c_733734.elements[1] = gs_73370_73636;
+c_733734.elements[2] = k_731193;
+
+return_direct_with_clo1(data,(closure)&c_733734,__lambda_240,  boolean_f);; 
+}
+
+static void __lambda_240(void *data, int argc, object self_731487, object loop_73372_73637) {
+  
+closureN_type c_733736;
 object e_733770 [3];
-c_733730.hdr.mark = gc_color_red;
- c_733730.hdr.grayed = 0;
-c_733730.tag = closureN_tag;
- c_733730.fn = (function_type)__lambda_239;
-c_733730.num_args = 1;
-c_733730.num_elements = 3;
-c_733730.elements = (object *)e_733770;
-c_733730.elements[0] = f_73369_73635;
-c_733730.elements[1] = gs_73370_73636;
-c_733730.elements[2] = k_731193;
+c_733736.hdr.mark = gc_color_red;
+ c_733736.hdr.grayed = 0;
+c_733736.tag = closureN_tag;
+ c_733736.fn = (function_type)__lambda_307;
+c_733736.num_args = 1;
+c_733736.num_elements = 3;
+c_733736.elements = (object *)e_733770;
+c_733736.elements[0] = ((closureN)self_731487)->elements[0];
+c_733736.elements[1] = ((closureN)self_731487)->elements[1];
+c_733736.elements[2] = ((closureN)self_731487)->elements[2];
 
-return_direct_with_clo1(data,(closure)&c_733730,__lambda_239,  boolean_f);; 
+
+pair_type local_733773; 
+return_direct_with_clo1(data,(closure)&c_733736,__lambda_307,  set_cell_as_expr(&local_733773, loop_73372_73637));; 
 }
 
-static void __lambda_239(void *data, int argc, object self_731486, object loop_73372_73637) {
+static void __lambda_307(void *data, int argc, object self_731488, object loop_73372_73637) {
   
-closureN_type c_733732;
-object e_733766 [3];
-c_733732.hdr.mark = gc_color_red;
- c_733732.hdr.grayed = 0;
-c_733732.tag = closureN_tag;
- c_733732.fn = (function_type)__lambda_306;
-c_733732.num_args = 1;
-c_733732.num_elements = 3;
-c_733732.elements = (object *)e_733766;
-c_733732.elements[0] = ((closureN)self_731486)->elements[0];
-c_733732.elements[1] = ((closureN)self_731486)->elements[1];
-c_733732.elements[2] = ((closureN)self_731486)->elements[2];
-
-
-pair_type local_733769; 
-return_direct_with_clo1(data,(closure)&c_733732,__lambda_306,  set_cell_as_expr(&local_733769, loop_73372_73637));; 
-}
-
-static void __lambda_306(void *data, int argc, object self_731487, object loop_73372_73637) {
-  
-  closureN_type c_733740;
-object e_733765 [3];
-c_733740.hdr.mark = gc_color_red;
- c_733740.hdr.grayed = 0;
-c_733740.tag = closureN_tag;
- c_733740.fn = (function_type)__lambda_240;
-c_733740.num_args = 0;
-c_733740.num_elements = 3;
-c_733740.elements = (object *)e_733765;
-c_733740.elements[0] = ((closureN)self_731487)->elements[0];
-c_733740.elements[1] = ((closureN)self_731487)->elements[1];
-c_733740.elements[2] = loop_73372_73637;
-
-  Cyc_set_cell(data, loop_73372_73637, &c_733740);
-
-return_closcall1(data,  car(loop_73372_73637),  ((closureN)self_731487)->elements[2]);;; 
-}
-
-static void __lambda_240(void *data, int argc, object self_731488, object k_731196) {
-  
-closureN_type c_733742;
-object e_733761 [3];
-c_733742.hdr.mark = gc_color_red;
- c_733742.hdr.grayed = 0;
-c_733742.tag = closureN_tag;
- c_733742.fn = (function_type)__lambda_241;
-c_733742.num_args = 1;
-c_733742.num_elements = 3;
-c_733742.elements = (object *)e_733761;
-c_733742.elements[0] = ((closureN)self_731488)->elements[0];
-c_733742.elements[1] = k_731196;
-c_733742.elements[2] = ((closureN)self_731488)->elements[2];
-
-
-mclosure0(c_733762, (function_type)__lambda_244);c_733762.num_args = 1;
-return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_733742, &c_733762, ((closureN)self_731488)->elements[1]);; 
-}
-
-static void __lambda_244(void *data, int argc, object self_731492, object k_731201, object g_73374_73639) {
-  return_closcall1(data,  g_73374_73639,  k_731201);; 
-}
-
-static void __lambda_241(void *data, int argc, object self_731489, object vs_73373_73638) {
-  
-closureN_type c_733744;
-object e_733760 [4];
+  closureN_type c_733744;
+object e_733769 [3];
 c_733744.hdr.mark = gc_color_red;
  c_733744.hdr.grayed = 0;
 c_733744.tag = closureN_tag;
- c_733744.fn = (function_type)__lambda_242;
-c_733744.num_args = 1;
-c_733744.num_elements = 4;
-c_733744.elements = (object *)e_733760;
-c_733744.elements[0] = ((closureN)self_731489)->elements[0];
-c_733744.elements[1] = ((closureN)self_731489)->elements[1];
-c_733744.elements[2] = ((closureN)self_731489)->elements[2];
-c_733744.elements[3] = vs_73373_73638;
+ c_733744.fn = (function_type)__lambda_241;
+c_733744.num_args = 0;
+c_733744.num_elements = 3;
+c_733744.elements = (object *)e_733769;
+c_733744.elements[0] = ((closureN)self_731488)->elements[0];
+c_733744.elements[1] = ((closureN)self_731488)->elements[1];
+c_733744.elements[2] = loop_73372_73637;
 
-return_closcall3(data,  __glo_any_srfi_121,  &c_733744, primitive_eof_91object_127, vs_73373_73638);; 
+  Cyc_set_cell(data, loop_73372_73637, &c_733744);
+
+return_closcall1(data,  car(loop_73372_73637),  ((closureN)self_731488)->elements[2]);;; 
 }
 
-static void __lambda_242(void *data, int argc, object self_731490, object r_731198) {
-  if( (boolean_f != r_731198) ){ 
-  return_closcall1(data,  ((closureN)self_731490)->elements[1],  boolean_f);
-} else { 
+static void __lambda_241(void *data, int argc, object self_731489, object k_731196) {
+  
+closureN_type c_733746;
+object e_733765 [3];
+c_733746.hdr.mark = gc_color_red;
+ c_733746.hdr.grayed = 0;
+c_733746.tag = closureN_tag;
+ c_733746.fn = (function_type)__lambda_242;
+c_733746.num_args = 1;
+c_733746.num_elements = 3;
+c_733746.elements = (object *)e_733765;
+c_733746.elements[0] = ((closureN)self_731489)->elements[0];
+c_733746.elements[1] = k_731196;
+c_733746.elements[2] = ((closureN)self_731489)->elements[2];
+
+
+mclosure0(c_733766, (function_type)__lambda_245);c_733766.num_args = 1;
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_733746, &c_733766, ((closureN)self_731489)->elements[1]);; 
+}
+
+static void __lambda_245(void *data, int argc, object self_731493, object k_731201, object g_73374_73639) {
+  return_closcall1(data,  g_73374_73639,  k_731201);; 
+}
+
+static void __lambda_242(void *data, int argc, object self_731490, object vs_73373_73638) {
   
 closureN_type c_733748;
-object e_733754 [2];
+object e_733764 [4];
 c_733748.hdr.mark = gc_color_red;
  c_733748.hdr.grayed = 0;
 c_733748.tag = closureN_tag;
  c_733748.fn = (function_type)__lambda_243;
 c_733748.num_args = 1;
-c_733748.num_elements = 2;
-c_733748.elements = (object *)e_733754;
-c_733748.elements[0] = ((closureN)self_731490)->elements[1];
-c_733748.elements[1] = ((closureN)self_731490)->elements[2];
+c_733748.num_elements = 4;
+c_733748.elements = (object *)e_733764;
+c_733748.elements[0] = ((closureN)self_731490)->elements[0];
+c_733748.elements[1] = ((closureN)self_731490)->elements[1];
+c_733748.elements[2] = ((closureN)self_731490)->elements[2];
+c_733748.elements[3] = vs_73373_73638;
+
+return_closcall3(data,  __glo_any_srfi_121,  &c_733748, primitive_eof_91object_127, vs_73373_73638);; 
+}
+
+static void __lambda_243(void *data, int argc, object self_731491, object r_731198) {
+  if( (boolean_f != r_731198) ){ 
+  return_closcall1(data,  ((closureN)self_731491)->elements[1],  boolean_f);
+} else { 
+  
+closureN_type c_733752;
+object e_733758 [2];
+c_733752.hdr.mark = gc_color_red;
+ c_733752.hdr.grayed = 0;
+c_733752.tag = closureN_tag;
+ c_733752.fn = (function_type)__lambda_244;
+c_733752.num_args = 1;
+c_733752.num_elements = 2;
+c_733752.elements = (object *)e_733758;
+c_733752.elements[0] = ((closureN)self_731491)->elements[1];
+c_733752.elements[1] = ((closureN)self_731491)->elements[2];
 
 
-object c_733757 = apply(data,(closure)&c_733748,((closureN)self_731490)->elements[0], ((closureN)self_731490)->elements[3]);
-return_closcall1(data,(closure)&c_733748,  c_733757);}
+object c_733761 = apply(data,(closure)&c_733752,((closureN)self_731491)->elements[0], ((closureN)self_731491)->elements[3]);
+return_closcall1(data,(closure)&c_733752,  c_733761);}
 ;; 
 }
 
-static void __lambda_243(void *data, int argc, object self_731491, object r_731199) {
+static void __lambda_244(void *data, int argc, object self_731492, object r_731199) {
   
 
-return_closcall1(data,  car(((closureN)self_731491)->elements[1]),  ((closureN)self_731491)->elements[0]);; 
+return_closcall1(data,  car(((closureN)self_731492)->elements[1]),  ((closureN)self_731492)->elements[0]);; 
 }
 
-static void __lambda_229(void *data, int argc, closure _,object k_731180, object f_73363_73626, object seed_73364_73627, object gs_73365_73628_raw, ...) {
+static void __lambda_230(void *data, int argc, closure _,object k_731180, object f_73363_73626, object seed_73364_73627, object gs_73365_73628_raw, ...) {
 load_varargs(gs_73365_73628, gs_73365_73628_raw, argc - 3);
   Cyc_st_add(data, "srfi/121.sld:generator-fold");
 
-closureN_type c_733675;
+closureN_type c_733679;
+object e_733731 [4];
+c_733679.hdr.mark = gc_color_red;
+ c_733679.hdr.grayed = 0;
+c_733679.tag = closureN_tag;
+ c_733679.fn = (function_type)__lambda_231;
+c_733679.num_args = 1;
+c_733679.num_elements = 4;
+c_733679.elements = (object *)e_733731;
+c_733679.elements[0] = f_73363_73626;
+c_733679.elements[1] = gs_73365_73628;
+c_733679.elements[2] = k_731180;
+c_733679.elements[3] = seed_73364_73627;
+
+return_direct_with_clo1(data,(closure)&c_733679,__lambda_231,  boolean_f);; 
+}
+
+static void __lambda_231(void *data, int argc, object self_731478, object inner_91fold_73630) {
+  
+closureN_type c_733681;
 object e_733727 [4];
-c_733675.hdr.mark = gc_color_red;
- c_733675.hdr.grayed = 0;
-c_733675.tag = closureN_tag;
- c_733675.fn = (function_type)__lambda_230;
-c_733675.num_args = 1;
-c_733675.num_elements = 4;
-c_733675.elements = (object *)e_733727;
-c_733675.elements[0] = f_73363_73626;
-c_733675.elements[1] = gs_73365_73628;
-c_733675.elements[2] = k_731180;
-c_733675.elements[3] = seed_73364_73627;
+c_733681.hdr.mark = gc_color_red;
+ c_733681.hdr.grayed = 0;
+c_733681.tag = closureN_tag;
+ c_733681.fn = (function_type)__lambda_306;
+c_733681.num_args = 1;
+c_733681.num_elements = 4;
+c_733681.elements = (object *)e_733727;
+c_733681.elements[0] = ((closureN)self_731478)->elements[0];
+c_733681.elements[1] = ((closureN)self_731478)->elements[1];
+c_733681.elements[2] = ((closureN)self_731478)->elements[2];
+c_733681.elements[3] = ((closureN)self_731478)->elements[3];
 
-return_direct_with_clo1(data,(closure)&c_733675,__lambda_230,  boolean_f);; 
+
+pair_type local_733730; 
+return_direct_with_clo1(data,(closure)&c_733681,__lambda_306,  set_cell_as_expr(&local_733730, inner_91fold_73630));; 
 }
 
-static void __lambda_230(void *data, int argc, object self_731477, object inner_91fold_73630) {
+static void __lambda_306(void *data, int argc, object self_731479, object inner_91fold_73630) {
   
-closureN_type c_733677;
-object e_733723 [4];
-c_733677.hdr.mark = gc_color_red;
- c_733677.hdr.grayed = 0;
-c_733677.tag = closureN_tag;
- c_733677.fn = (function_type)__lambda_305;
-c_733677.num_args = 1;
-c_733677.num_elements = 4;
-c_733677.elements = (object *)e_733723;
-c_733677.elements[0] = ((closureN)self_731477)->elements[0];
-c_733677.elements[1] = ((closureN)self_731477)->elements[1];
-c_733677.elements[2] = ((closureN)self_731477)->elements[2];
-c_733677.elements[3] = ((closureN)self_731477)->elements[3];
-
-
-pair_type local_733726; 
-return_direct_with_clo1(data,(closure)&c_733677,__lambda_305,  set_cell_as_expr(&local_733726, inner_91fold_73630));; 
-}
-
-static void __lambda_305(void *data, int argc, object self_731478, object inner_91fold_73630) {
-  
-  closureN_type c_733686;
-object e_733722 [3];
-c_733686.hdr.mark = gc_color_red;
- c_733686.hdr.grayed = 0;
-c_733686.tag = closureN_tag;
- c_733686.fn = (function_type)__lambda_231;
-c_733686.num_args = 1;
-c_733686.num_elements = 3;
-c_733686.elements = (object *)e_733722;
-c_733686.elements[0] = ((closureN)self_731478)->elements[0];
-c_733686.elements[1] = ((closureN)self_731478)->elements[1];
-c_733686.elements[2] = inner_91fold_73630;
-
-  Cyc_set_cell(data, inner_91fold_73630, &c_733686);
-
-return_closcall2(data,  car(inner_91fold_73630),  ((closureN)self_731478)->elements[2], ((closureN)self_731478)->elements[3]);;; 
-}
-
-static void __lambda_231(void *data, int argc, object self_731479, object k_731183, object seed_73366_73632) {
-  
-closureN_type c_733688;
-object e_733718 [4];
-c_733688.hdr.mark = gc_color_red;
- c_733688.hdr.grayed = 0;
-c_733688.tag = closureN_tag;
- c_733688.fn = (function_type)__lambda_232;
-c_733688.num_args = 1;
-c_733688.num_elements = 4;
-c_733688.elements = (object *)e_733718;
-c_733688.elements[0] = ((closureN)self_731479)->elements[0];
-c_733688.elements[1] = ((closureN)self_731479)->elements[2];
-c_733688.elements[2] = k_731183;
-c_733688.elements[3] = seed_73366_73632;
-
-
-mclosure0(c_733719, (function_type)__lambda_237);c_733719.num_args = 1;
-return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_733688, &c_733719, ((closureN)self_731479)->elements[1]);; 
-}
-
-static void __lambda_237(void *data, int argc, object self_731485, object k_731190, object g_73368_73634) {
-  return_closcall1(data,  g_73368_73634,  k_731190);; 
-}
-
-static void __lambda_232(void *data, int argc, object self_731480, object vs_73367_73633) {
-  
-closureN_type c_733690;
-object e_733717 [5];
+  closureN_type c_733690;
+object e_733726 [3];
 c_733690.hdr.mark = gc_color_red;
  c_733690.hdr.grayed = 0;
 c_733690.tag = closureN_tag;
- c_733690.fn = (function_type)__lambda_233;
+ c_733690.fn = (function_type)__lambda_232;
 c_733690.num_args = 1;
-c_733690.num_elements = 5;
-c_733690.elements = (object *)e_733717;
-c_733690.elements[0] = ((closureN)self_731480)->elements[0];
-c_733690.elements[1] = ((closureN)self_731480)->elements[1];
-c_733690.elements[2] = ((closureN)self_731480)->elements[2];
-c_733690.elements[3] = ((closureN)self_731480)->elements[3];
-c_733690.elements[4] = vs_73367_73633;
+c_733690.num_elements = 3;
+c_733690.elements = (object *)e_733726;
+c_733690.elements[0] = ((closureN)self_731479)->elements[0];
+c_733690.elements[1] = ((closureN)self_731479)->elements[1];
+c_733690.elements[2] = inner_91fold_73630;
 
-return_closcall3(data,  __glo_any_srfi_121,  &c_733690, primitive_eof_91object_127, vs_73367_73633);; 
+  Cyc_set_cell(data, inner_91fold_73630, &c_733690);
+
+return_closcall2(data,  car(inner_91fold_73630),  ((closureN)self_731479)->elements[2], ((closureN)self_731479)->elements[3]);;; 
 }
 
-static void __lambda_233(void *data, int argc, object self_731481, object r_731185) {
+static void __lambda_232(void *data, int argc, object self_731480, object k_731183, object seed_73366_73632) {
+  
+closureN_type c_733692;
+object e_733722 [4];
+c_733692.hdr.mark = gc_color_red;
+ c_733692.hdr.grayed = 0;
+c_733692.tag = closureN_tag;
+ c_733692.fn = (function_type)__lambda_233;
+c_733692.num_args = 1;
+c_733692.num_elements = 4;
+c_733692.elements = (object *)e_733722;
+c_733692.elements[0] = ((closureN)self_731480)->elements[0];
+c_733692.elements[1] = ((closureN)self_731480)->elements[2];
+c_733692.elements[2] = k_731183;
+c_733692.elements[3] = seed_73366_73632;
+
+
+mclosure0(c_733723, (function_type)__lambda_238);c_733723.num_args = 1;
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_733692, &c_733723, ((closureN)self_731480)->elements[1]);; 
+}
+
+static void __lambda_238(void *data, int argc, object self_731486, object k_731190, object g_73368_73634) {
+  return_closcall1(data,  g_73368_73634,  k_731190);; 
+}
+
+static void __lambda_233(void *data, int argc, object self_731481, object vs_73367_73633) {
+  
+closureN_type c_733694;
+object e_733721 [5];
+c_733694.hdr.mark = gc_color_red;
+ c_733694.hdr.grayed = 0;
+c_733694.tag = closureN_tag;
+ c_733694.fn = (function_type)__lambda_234;
+c_733694.num_args = 1;
+c_733694.num_elements = 5;
+c_733694.elements = (object *)e_733721;
+c_733694.elements[0] = ((closureN)self_731481)->elements[0];
+c_733694.elements[1] = ((closureN)self_731481)->elements[1];
+c_733694.elements[2] = ((closureN)self_731481)->elements[2];
+c_733694.elements[3] = ((closureN)self_731481)->elements[3];
+c_733694.elements[4] = vs_73367_73633;
+
+return_closcall3(data,  __glo_any_srfi_121,  &c_733694, primitive_eof_91object_127, vs_73367_73633);; 
+}
+
+static void __lambda_234(void *data, int argc, object self_731482, object r_731185) {
   if( (boolean_f != r_731185) ){ 
-  return_closcall1(data,  ((closureN)self_731481)->elements[2],  ((closureN)self_731481)->elements[3]);
+  return_closcall1(data,  ((closureN)self_731482)->elements[2],  ((closureN)self_731482)->elements[3]);
 } else { 
   
-closureN_type c_733695;
-object e_733712 [4];
-c_733695.hdr.mark = gc_color_red;
- c_733695.hdr.grayed = 0;
-c_733695.tag = closureN_tag;
- c_733695.fn = (function_type)__lambda_234;
-c_733695.num_args = 1;
-c_733695.num_elements = 4;
-c_733695.elements = (object *)e_733712;
-c_733695.elements[0] = ((closureN)self_731481)->elements[0];
-c_733695.elements[1] = ((closureN)self_731481)->elements[1];
-c_733695.elements[2] = ((closureN)self_731481)->elements[2];
-c_733695.elements[3] = ((closureN)self_731481)->elements[4];
-
-
-pair_type local_733715; 
-return_direct_with_clo1(data,(closure)&c_733695,__lambda_234,  set_cell_as_expr(&local_733715, ((closureN)self_731481)->elements[3]));}
-;; 
-}
-
-static void __lambda_234(void *data, int argc, object self_731482, object r_731188) {
-  
-closureN_type c_733697;
-object e_733710 [3];
-c_733697.hdr.mark = gc_color_red;
- c_733697.hdr.grayed = 0;
-c_733697.tag = closureN_tag;
- c_733697.fn = (function_type)__lambda_235;
-c_733697.num_args = 1;
-c_733697.num_elements = 3;
-c_733697.elements = (object *)e_733710;
-c_733697.elements[0] = ((closureN)self_731482)->elements[0];
-c_733697.elements[1] = ((closureN)self_731482)->elements[1];
-c_733697.elements[2] = ((closureN)self_731482)->elements[2];
-
-return_closcall3(data,  __glo_append_scheme_base,  &c_733697, ((closureN)self_731482)->elements[3], r_731188);; 
-}
-
-static void __lambda_235(void *data, int argc, object self_731483, object r_731187) {
-  
 closureN_type c_733699;
-object e_733705 [2];
+object e_733716 [4];
 c_733699.hdr.mark = gc_color_red;
  c_733699.hdr.grayed = 0;
 c_733699.tag = closureN_tag;
- c_733699.fn = (function_type)__lambda_236;
+ c_733699.fn = (function_type)__lambda_235;
 c_733699.num_args = 1;
-c_733699.num_elements = 2;
-c_733699.elements = (object *)e_733705;
-c_733699.elements[0] = ((closureN)self_731483)->elements[1];
-c_733699.elements[1] = ((closureN)self_731483)->elements[2];
+c_733699.num_elements = 4;
+c_733699.elements = (object *)e_733716;
+c_733699.elements[0] = ((closureN)self_731482)->elements[0];
+c_733699.elements[1] = ((closureN)self_731482)->elements[1];
+c_733699.elements[2] = ((closureN)self_731482)->elements[2];
+c_733699.elements[3] = ((closureN)self_731482)->elements[4];
 
 
-object c_733708 = apply(data,(closure)&c_733699,((closureN)self_731483)->elements[0], r_731187);
-return_closcall1(data,(closure)&c_733699,  c_733708);; 
+pair_type local_733719; 
+return_direct_with_clo1(data,(closure)&c_733699,__lambda_235,  set_cell_as_expr(&local_733719, ((closureN)self_731482)->elements[3]));}
+;; 
 }
 
-static void __lambda_236(void *data, int argc, object self_731484, object r_731186) {
+static void __lambda_235(void *data, int argc, object self_731483, object r_731188) {
+  
+closureN_type c_733701;
+object e_733714 [3];
+c_733701.hdr.mark = gc_color_red;
+ c_733701.hdr.grayed = 0;
+c_733701.tag = closureN_tag;
+ c_733701.fn = (function_type)__lambda_236;
+c_733701.num_args = 1;
+c_733701.num_elements = 3;
+c_733701.elements = (object *)e_733714;
+c_733701.elements[0] = ((closureN)self_731483)->elements[0];
+c_733701.elements[1] = ((closureN)self_731483)->elements[1];
+c_733701.elements[2] = ((closureN)self_731483)->elements[2];
+
+return_closcall3(data,  __glo_append_scheme_base,  &c_733701, ((closureN)self_731483)->elements[3], r_731188);; 
+}
+
+static void __lambda_236(void *data, int argc, object self_731484, object r_731187) {
+  
+closureN_type c_733703;
+object e_733709 [2];
+c_733703.hdr.mark = gc_color_red;
+ c_733703.hdr.grayed = 0;
+c_733703.tag = closureN_tag;
+ c_733703.fn = (function_type)__lambda_237;
+c_733703.num_args = 1;
+c_733703.num_elements = 2;
+c_733703.elements = (object *)e_733709;
+c_733703.elements[0] = ((closureN)self_731484)->elements[1];
+c_733703.elements[1] = ((closureN)self_731484)->elements[2];
+
+
+object c_733712 = apply(data,(closure)&c_733703,((closureN)self_731484)->elements[0], r_731187);
+return_closcall1(data,(closure)&c_733703,  c_733712);; 
+}
+
+static void __lambda_237(void *data, int argc, object self_731485, object r_731186) {
   
 
-return_closcall2(data,  car(((closureN)self_731484)->elements[0]),  ((closureN)self_731484)->elements[1], r_731186);; 
+return_closcall2(data,  car(((closureN)self_731485)->elements[0]),  ((closureN)self_731485)->elements[1], r_731186);; 
 }
 
-static void __lambda_224(void *data, int argc, closure _,object k_731164, object args_73352_73356_73621_raw, ...) {
+static void __lambda_225(void *data, int argc, closure _,object k_731164, object args_73352_73356_73621_raw, ...) {
 load_varargs(args_73352_73356_73621, args_73352_73356_73621_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator->string");
   
   
   
-  make_pair(c_733636,quote_gen,NULL);c_733636.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733636))) ){ 
+  make_pair(c_733640,quote_gen,NULL);c_733640.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733640))) ){ 
   
-mclosure0(c_733641, (function_type)__lambda_225);c_733641.num_args = 1;
+mclosure0(c_733645, (function_type)__lambda_226);c_733645.num_args = 1;
 
-object c_733640 = apply(data,  k_731164,&c_733641, args_73352_73356_73621);
-return_closcall1(data,  k_731164,  c_733640);
+object c_733644 = apply(data,  k_731164,&c_733645, args_73352_73356_73621);
+return_closcall1(data,  k_731164,  c_733644);
 } else { 
     
   
   
-  make_pair(c_733657,quote_n,NULL);c_733657.hdr.immutable = 1;
-  make_pair(c_733656,quote_gen,&c_733657);c_733656.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733656))) ){ 
+  make_pair(c_733661,quote_n,NULL);c_733661.hdr.immutable = 1;
+  make_pair(c_733660,quote_gen,&c_733661);c_733660.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73352_73356_73621), Cyc_length(data, &c_733660))) ){ 
   
-mclosure0(c_733662, (function_type)__lambda_227);c_733662.num_args = 2;
+mclosure0(c_733666, (function_type)__lambda_228);c_733666.num_args = 2;
 
-object c_733661 = apply(data,  k_731164,&c_733662, args_73352_73356_73621);
-return_closcall1(data,  k_731164,  c_733661);
+object c_733665 = apply(data,  k_731164,&c_733666, args_73352_73356_73621);
+return_closcall1(data,  k_731164,  c_733665);
 } else { 
   
-make_utf8_string_with_len(c_733672, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731164, &c_733672);}
+make_utf8_string_with_len(c_733676, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731164, &c_733676);}
 ;}
 ;; 
 }
 
-static void __lambda_227(void *data, int argc, object self_731475, object k_731172, object gen_73361_73624, object n_73362_73625) {
+static void __lambda_228(void *data, int argc, object self_731476, object k_731172, object gen_73361_73624, object n_73362_73625) {
   
-closureN_type c_733664;
-object e_733670 [1];
-c_733664.hdr.mark = gc_color_red;
- c_733664.hdr.grayed = 0;
-c_733664.tag = closureN_tag;
- c_733664.fn = (function_type)__lambda_228;
-c_733664.num_args = 1;
-c_733664.num_elements = 1;
-c_733664.elements = (object *)e_733670;
-c_733664.elements[0] = k_731172;
+closureN_type c_733668;
+object e_733674 [1];
+c_733668.hdr.mark = gc_color_red;
+ c_733668.hdr.grayed = 0;
+c_733668.tag = closureN_tag;
+ c_733668.fn = (function_type)__lambda_229;
+c_733668.num_args = 1;
+c_733668.num_elements = 1;
+c_733668.elements = (object *)e_733674;
+c_733668.elements[0] = k_731172;
 
-return_closcall3(data,  __glo_generator_91_125list_srfi_121,  &c_733664, gen_73361_73624, n_73362_73625);; 
+return_closcall3(data,  __glo_generator_91_125list_srfi_121,  &c_733668, gen_73361_73624, n_73362_73625);; 
 }
 
-static void __lambda_228(void *data, int argc, object self_731476, object r_731173) {
+static void __lambda_229(void *data, int argc, object self_731477, object r_731173) {
   
-object c_733669 = Cyc_list2string(data,  ((closureN)self_731476)->elements[0],r_731173);
-return_closcall1(data,  ((closureN)self_731476)->elements[0],  c_733669);; 
+object c_733673 = Cyc_list2string(data,  ((closureN)self_731477)->elements[0],r_731173);
+return_closcall1(data,  ((closureN)self_731477)->elements[0],  c_733673);; 
 }
 
-static void __lambda_225(void *data, int argc, object self_731473, object k_731168, object gen_73359_73623) {
+static void __lambda_226(void *data, int argc, object self_731474, object k_731168, object gen_73359_73623) {
   
-closureN_type c_733643;
-object e_733649 [1];
-c_733643.hdr.mark = gc_color_red;
- c_733643.hdr.grayed = 0;
-c_733643.tag = closureN_tag;
- c_733643.fn = (function_type)__lambda_226;
-c_733643.num_args = 1;
-c_733643.num_elements = 1;
-c_733643.elements = (object *)e_733649;
-c_733643.elements[0] = k_731168;
+closureN_type c_733647;
+object e_733653 [1];
+c_733647.hdr.mark = gc_color_red;
+ c_733647.hdr.grayed = 0;
+c_733647.tag = closureN_tag;
+ c_733647.fn = (function_type)__lambda_227;
+c_733647.num_args = 1;
+c_733647.num_elements = 1;
+c_733647.elements = (object *)e_733653;
+c_733647.elements[0] = k_731168;
 
-return_closcall2(data,  __glo_generator_91_125list_srfi_121,  &c_733643, gen_73359_73623);; 
+return_closcall2(data,  __glo_generator_91_125list_srfi_121,  &c_733647, gen_73359_73623);; 
 }
 
-static void __lambda_226(void *data, int argc, object self_731474, object r_731169) {
+static void __lambda_227(void *data, int argc, object self_731475, object r_731169) {
   
-object c_733648 = Cyc_list2string(data,  ((closureN)self_731474)->elements[0],r_731169);
-return_closcall1(data,  ((closureN)self_731474)->elements[0],  c_733648);; 
+object c_733652 = Cyc_list2string(data,  ((closureN)self_731475)->elements[0],r_731169);
+return_closcall1(data,  ((closureN)self_731475)->elements[0],  c_733652);; 
 }
 
 static void __lambda_217(void *data, int argc, closure _,object k_731150, object vector_73334_73611, object at_73335_73612, object gen_73336_73613) {
   Cyc_st_add(data, "srfi/121.sld:generator->vector!");
 
-closureN_type c_733565;
-object e_733628 [4];
-c_733565.hdr.mark = gc_color_red;
- c_733565.hdr.grayed = 0;
-c_733565.tag = closureN_tag;
- c_733565.fn = (function_type)__lambda_218;
-c_733565.num_args = 1;
-c_733565.num_elements = 4;
-c_733565.elements = (object *)e_733628;
-c_733565.elements[0] = at_73335_73612;
-c_733565.elements[1] = gen_73336_73613;
-c_733565.elements[2] = k_731150;
-c_733565.elements[3] = vector_73334_73611;
+closureN_type c_733566;
+object e_733632 [4];
+c_733566.hdr.mark = gc_color_red;
+ c_733566.hdr.grayed = 0;
+c_733566.tag = closureN_tag;
+ c_733566.fn = (function_type)__lambda_218;
+c_733566.num_args = 1;
+c_733566.num_elements = 4;
+c_733566.elements = (object *)e_733632;
+c_733566.elements[0] = at_73335_73612;
+c_733566.elements[1] = gen_73336_73613;
+c_733566.elements[2] = k_731150;
+c_733566.elements[3] = vector_73334_73611;
 
-return_closcall1(data,  gen_73336_73613,  &c_733565);; 
+return_closcall1(data,  gen_73336_73613,  &c_733566);; 
 }
 
 static void __lambda_218(void *data, int argc, object self_731466, object r_731151) {
   
-closureN_type c_733567;
-object e_733626 [3];
-c_733567.hdr.mark = gc_color_red;
- c_733567.hdr.grayed = 0;
-c_733567.tag = closureN_tag;
- c_733567.fn = (function_type)__lambda_219;
-c_733567.num_args = 2;
-c_733567.num_elements = 3;
-c_733567.elements = (object *)e_733626;
-c_733567.elements[0] = ((closureN)self_731466)->elements[1];
-c_733567.elements[1] = ((closureN)self_731466)->elements[2];
-c_733567.elements[2] = ((closureN)self_731466)->elements[3];
+closureN_type c_733568;
+object e_733630 [3];
+c_733568.hdr.mark = gc_color_red;
+ c_733568.hdr.grayed = 0;
+c_733568.tag = closureN_tag;
+ c_733568.fn = (function_type)__lambda_219;
+c_733568.num_args = 2;
+c_733568.num_elements = 3;
+c_733568.elements = (object *)e_733630;
+c_733568.elements[0] = ((closureN)self_731466)->elements[1];
+c_733568.elements[1] = ((closureN)self_731466)->elements[2];
+c_733568.elements[2] = ((closureN)self_731466)->elements[3];
 
-return_direct_with_clo2(data,(closure)&c_733567,__lambda_219,  r_731151, ((closureN)self_731466)->elements[0]);; 
+return_direct_with_clo2(data,(closure)&c_733568,__lambda_219,  r_731151, ((closureN)self_731466)->elements[0]);; 
 }
 
 static void __lambda_219(void *data, int argc, object self_731467, object value_73338_73614, object at_73340_73616) {
   
-closureN_type c_733569;
-object e_733625 [5];
-c_733569.hdr.mark = gc_color_red;
- c_733569.hdr.grayed = 0;
-c_733569.tag = closureN_tag;
- c_733569.fn = (function_type)__lambda_220;
-c_733569.num_args = 1;
-c_733569.num_elements = 5;
-c_733569.elements = (object *)e_733625;
-c_733569.elements[0] = at_73340_73616;
-c_733569.elements[1] = ((closureN)self_731467)->elements[0];
-c_733569.elements[2] = ((closureN)self_731467)->elements[1];
-c_733569.elements[3] = value_73338_73614;
-c_733569.elements[4] = ((closureN)self_731467)->elements[2];
+closureN_type c_733570;
+object e_733629 [5];
+c_733570.hdr.mark = gc_color_red;
+ c_733570.hdr.grayed = 0;
+c_733570.tag = closureN_tag;
+ c_733570.fn = (function_type)__lambda_220;
+c_733570.num_args = 1;
+c_733570.num_elements = 5;
+c_733570.elements = (object *)e_733629;
+c_733570.elements[0] = at_73340_73616;
+c_733570.elements[1] = ((closureN)self_731467)->elements[0];
+c_733570.elements[2] = ((closureN)self_731467)->elements[1];
+c_733570.elements[3] = value_73338_73614;
+c_733570.elements[4] = ((closureN)self_731467)->elements[2];
 
-return_direct_with_clo1(data,(closure)&c_733569,__lambda_220,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733570,__lambda_220,  boolean_f);; 
 }
 
 static void __lambda_220(void *data, int argc, object self_731468, object loop_73341_73617) {
   
-closureN_type c_733571;
-object e_733621 [5];
-c_733571.hdr.mark = gc_color_red;
- c_733571.hdr.grayed = 0;
-c_733571.tag = closureN_tag;
- c_733571.fn = (function_type)__lambda_304;
-c_733571.num_args = 1;
-c_733571.num_elements = 5;
-c_733571.elements = (object *)e_733621;
-c_733571.elements[0] = ((closureN)self_731468)->elements[0];
-c_733571.elements[1] = ((closureN)self_731468)->elements[1];
-c_733571.elements[2] = ((closureN)self_731468)->elements[2];
-c_733571.elements[3] = ((closureN)self_731468)->elements[3];
-c_733571.elements[4] = ((closureN)self_731468)->elements[4];
+closureN_type c_733572;
+object e_733625 [5];
+c_733572.hdr.mark = gc_color_red;
+ c_733572.hdr.grayed = 0;
+c_733572.tag = closureN_tag;
+ c_733572.fn = (function_type)__lambda_305;
+c_733572.num_args = 1;
+c_733572.num_elements = 5;
+c_733572.elements = (object *)e_733625;
+c_733572.elements[0] = ((closureN)self_731468)->elements[0];
+c_733572.elements[1] = ((closureN)self_731468)->elements[1];
+c_733572.elements[2] = ((closureN)self_731468)->elements[2];
+c_733572.elements[3] = ((closureN)self_731468)->elements[3];
+c_733572.elements[4] = ((closureN)self_731468)->elements[4];
 
 
-pair_type local_733624; 
-return_direct_with_clo1(data,(closure)&c_733571,__lambda_304,  set_cell_as_expr(&local_733624, loop_73341_73617));; 
+pair_type local_733628; 
+return_direct_with_clo1(data,(closure)&c_733572,__lambda_305,  set_cell_as_expr(&local_733628, loop_73341_73617));; 
 }
 
-static void __lambda_304(void *data, int argc, object self_731469, object loop_73341_73617) {
+static void __lambda_305(void *data, int argc, object self_731469, object loop_73341_73617) {
   
-  closureN_type c_733581;
-object e_733620 [3];
-c_733581.hdr.mark = gc_color_red;
- c_733581.hdr.grayed = 0;
-c_733581.tag = closureN_tag;
- c_733581.fn = (function_type)__lambda_221;
-c_733581.num_args = 3;
-c_733581.num_elements = 3;
-c_733581.elements = (object *)e_733620;
-c_733581.elements[0] = ((closureN)self_731469)->elements[1];
-c_733581.elements[1] = loop_73341_73617;
-c_733581.elements[2] = ((closureN)self_731469)->elements[4];
+  closureN_type c_733582;
+object e_733624 [3];
+c_733582.hdr.mark = gc_color_red;
+ c_733582.hdr.grayed = 0;
+c_733582.tag = closureN_tag;
+ c_733582.fn = (function_type)__lambda_221;
+c_733582.num_args = 3;
+c_733582.num_elements = 3;
+c_733582.elements = (object *)e_733624;
+c_733582.elements[0] = ((closureN)self_731469)->elements[1];
+c_733582.elements[1] = loop_73341_73617;
+c_733582.elements[2] = ((closureN)self_731469)->elements[4];
 
-  Cyc_set_cell(data, loop_73341_73617, &c_733581);
+  Cyc_set_cell(data, loop_73341_73617, &c_733582);
 
 return_closcall4(data,  car(loop_73341_73617),  ((closureN)self_731469)->elements[2], ((closureN)self_731469)->elements[3], obj_int2obj(0), ((closureN)self_731469)->elements[0]);;; 
 }
@@ -1683,26 +1684,26 @@ if( (boolean_f != Cyc_is_eof_object(value_73342_73618)) ){
   return_closcall1(data,  k_731154,  count_73343_73619);
 } else { 
   
-closureN_type c_733586;
-object e_733616 [7];
-c_733586.hdr.mark = gc_color_red;
- c_733586.hdr.grayed = 0;
-c_733586.tag = closureN_tag;
- c_733586.fn = (function_type)__lambda_222;
-c_733586.num_args = 1;
-c_733586.num_elements = 7;
-c_733586.elements = (object *)e_733616;
-c_733586.elements[0] = at_73344_73620;
-c_733586.elements[1] = count_73343_73619;
-c_733586.elements[2] = ((closureN)self_731470)->elements[0];
-c_733586.elements[3] = k_731154;
-c_733586.elements[4] = ((closureN)self_731470)->elements[1];
-c_733586.elements[5] = value_73342_73618;
-c_733586.elements[6] = ((closureN)self_731470)->elements[2];
+closureN_type c_733587;
+object e_733620 [7];
+c_733587.hdr.mark = gc_color_red;
+ c_733587.hdr.grayed = 0;
+c_733587.tag = closureN_tag;
+ c_733587.fn = (function_type)__lambda_222;
+c_733587.num_args = 1;
+c_733587.num_elements = 7;
+c_733587.elements = (object *)e_733620;
+c_733587.elements[0] = at_73344_73620;
+c_733587.elements[1] = count_73343_73619;
+c_733587.elements[2] = ((closureN)self_731470)->elements[0];
+c_733587.elements[3] = k_731154;
+c_733587.elements[4] = ((closureN)self_731470)->elements[1];
+c_733587.elements[5] = value_73342_73618;
+c_733587.elements[6] = ((closureN)self_731470)->elements[2];
 
 
 
-return_direct_with_clo1(data,(closure)&c_733586,__lambda_222,  Cyc_vector_length(data, ((closureN)self_731470)->elements[2]));}
+return_direct_with_clo1(data,(closure)&c_733587,__lambda_222,  Cyc_vector_length(data, ((closureN)self_731470)->elements[2]));}
 ;; 
 }
 
@@ -1712,33 +1713,54 @@ if( (boolean_f != Cyc_num_fast_gte_op(data, ((closureN)self_731471)->elements[0]
   return_closcall1(data,  ((closureN)self_731471)->elements[3],  ((closureN)self_731471)->elements[1]);
 } else { 
   
-  Cyc_vector_set(data, ((closureN)self_731471)->elements[6], ((closureN)self_731471)->elements[0], ((closureN)self_731471)->elements[5]);
-closureN_type c_733596;
-object e_733610 [4];
-c_733596.hdr.mark = gc_color_red;
- c_733596.hdr.grayed = 0;
-c_733596.tag = closureN_tag;
- c_733596.fn = (function_type)__lambda_223;
-c_733596.num_args = 1;
-c_733596.num_elements = 4;
-c_733596.elements = (object *)e_733610;
-c_733596.elements[0] = ((closureN)self_731471)->elements[0];
-c_733596.elements[1] = ((closureN)self_731471)->elements[1];
-c_733596.elements[2] = ((closureN)self_731471)->elements[3];
-c_733596.elements[3] = ((closureN)self_731471)->elements[4];
+closureN_type c_733595;
+object e_733613 [5];
+c_733595.hdr.mark = gc_color_red;
+ c_733595.hdr.grayed = 0;
+c_733595.tag = closureN_tag;
+ c_733595.fn = (function_type)__lambda_223;
+c_733595.num_args = 1;
+c_733595.num_elements = 5;
+c_733595.elements = (object *)e_733613;
+c_733595.elements[0] = ((closureN)self_731471)->elements[0];
+c_733595.elements[1] = ((closureN)self_731471)->elements[1];
+c_733595.elements[2] = ((closureN)self_731471)->elements[2];
+c_733595.elements[3] = ((closureN)self_731471)->elements[3];
+c_733595.elements[4] = ((closureN)self_731471)->elements[4];
 
-return_closcall1(data,  ((closureN)self_731471)->elements[2],  &c_733596);;}
+
+object c_733616 = Cyc_vector_set2(data,(closure)&c_733595,((closureN)self_731471)->elements[6], ((closureN)self_731471)->elements[0], ((closureN)self_731471)->elements[5]);
+return_closcall1(data,(closure)&c_733595,  c_733616);}
 ;; 
 }
 
-static void __lambda_223(void *data, int argc, object self_731472, object r_731158) {
+static void __lambda_223(void *data, int argc, object self_731472, object r_731157) {
+  
+closureN_type c_733598;
+object e_733612 [4];
+c_733598.hdr.mark = gc_color_red;
+ c_733598.hdr.grayed = 0;
+c_733598.tag = closureN_tag;
+ c_733598.fn = (function_type)__lambda_224;
+c_733598.num_args = 1;
+c_733598.num_elements = 4;
+c_733598.elements = (object *)e_733612;
+c_733598.elements[0] = ((closureN)self_731472)->elements[0];
+c_733598.elements[1] = ((closureN)self_731472)->elements[1];
+c_733598.elements[2] = ((closureN)self_731472)->elements[3];
+c_733598.elements[3] = ((closureN)self_731472)->elements[4];
+
+return_closcall1(data,  ((closureN)self_731472)->elements[2],  &c_733598);; 
+}
+
+static void __lambda_224(void *data, int argc, object self_731473, object r_731158) {
   
 
 
-complex_num_type local_733604; 
+complex_num_type local_733606; 
 
-complex_num_type local_733608; 
-return_closcall4(data,  car(((closureN)self_731472)->elements[3]),  ((closureN)self_731472)->elements[2], r_731158, Cyc_fast_sum(data,&local_733604, ((closureN)self_731472)->elements[1], obj_int2obj(1)), Cyc_fast_sum(data,&local_733608, ((closureN)self_731472)->elements[0], obj_int2obj(1)));; 
+complex_num_type local_733610; 
+return_closcall4(data,  car(((closureN)self_731473)->elements[3]),  ((closureN)self_731473)->elements[2], r_731158, Cyc_fast_sum(data,&local_733606, ((closureN)self_731473)->elements[1], obj_int2obj(1)), Cyc_fast_sum(data,&local_733610, ((closureN)self_731473)->elements[0], obj_int2obj(1)));; 
 }
 
 static void __lambda_212(void *data, int argc, closure _,object k_731134, object args_73323_73327_73606_raw, ...) {
@@ -1747,75 +1769,75 @@ load_varargs(args_73323_73327_73606, args_73323_73327_73606_raw, argc - 1);
   
   
   
-  make_pair(c_733526,quote_gen,NULL);c_733526.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733526))) ){ 
+  make_pair(c_733527,quote_gen,NULL);c_733527.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733527))) ){ 
   
-mclosure0(c_733531, (function_type)__lambda_213);c_733531.num_args = 1;
+mclosure0(c_733532, (function_type)__lambda_213);c_733532.num_args = 1;
 
-object c_733530 = apply(data,  k_731134,&c_733531, args_73323_73327_73606);
-return_closcall1(data,  k_731134,  c_733530);
+object c_733531 = apply(data,  k_731134,&c_733532, args_73323_73327_73606);
+return_closcall1(data,  k_731134,  c_733531);
 } else { 
     
   
   
-  make_pair(c_733547,quote_n,NULL);c_733547.hdr.immutable = 1;
-  make_pair(c_733546,quote_gen,&c_733547);c_733546.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733546))) ){ 
+  make_pair(c_733548,quote_n,NULL);c_733548.hdr.immutable = 1;
+  make_pair(c_733547,quote_gen,&c_733548);c_733547.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73323_73327_73606), Cyc_length(data, &c_733547))) ){ 
   
-mclosure0(c_733552, (function_type)__lambda_215);c_733552.num_args = 2;
+mclosure0(c_733553, (function_type)__lambda_215);c_733553.num_args = 2;
 
-object c_733551 = apply(data,  k_731134,&c_733552, args_73323_73327_73606);
-return_closcall1(data,  k_731134,  c_733551);
+object c_733552 = apply(data,  k_731134,&c_733553, args_73323_73327_73606);
+return_closcall1(data,  k_731134,  c_733552);
 } else { 
   
-make_utf8_string_with_len(c_733562, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731134, &c_733562);}
+make_utf8_string_with_len(c_733563, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731134, &c_733563);}
 ;}
 ;; 
 }
 
 static void __lambda_215(void *data, int argc, object self_731464, object k_731142, object gen_73332_73609, object n_73333_73610) {
   
-closureN_type c_733554;
-object e_733560 [1];
-c_733554.hdr.mark = gc_color_red;
- c_733554.hdr.grayed = 0;
-c_733554.tag = closureN_tag;
- c_733554.fn = (function_type)__lambda_216;
-c_733554.num_args = 1;
-c_733554.num_elements = 1;
-c_733554.elements = (object *)e_733560;
-c_733554.elements[0] = k_731142;
+closureN_type c_733555;
+object e_733561 [1];
+c_733555.hdr.mark = gc_color_red;
+ c_733555.hdr.grayed = 0;
+c_733555.tag = closureN_tag;
+ c_733555.fn = (function_type)__lambda_216;
+c_733555.num_args = 1;
+c_733555.num_elements = 1;
+c_733555.elements = (object *)e_733561;
+c_733555.elements[0] = k_731142;
 
-return_closcall3(data,  __glo_generator_91_125list_srfi_121,  &c_733554, gen_73332_73609, n_73333_73610);; 
+return_closcall3(data,  __glo_generator_91_125list_srfi_121,  &c_733555, gen_73332_73609, n_73333_73610);; 
 }
 
 static void __lambda_216(void *data, int argc, object self_731465, object r_731143) {
   
-object c_733559 = Cyc_list2vector(data,  ((closureN)self_731465)->elements[0],r_731143);
-return_closcall1(data,  ((closureN)self_731465)->elements[0],  c_733559);; 
+object c_733560 = Cyc_list2vector(data,  ((closureN)self_731465)->elements[0],r_731143);
+return_closcall1(data,  ((closureN)self_731465)->elements[0],  c_733560);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_731462, object k_731138, object gen_73330_73608) {
   
-closureN_type c_733533;
-object e_733539 [1];
-c_733533.hdr.mark = gc_color_red;
- c_733533.hdr.grayed = 0;
-c_733533.tag = closureN_tag;
- c_733533.fn = (function_type)__lambda_214;
-c_733533.num_args = 1;
-c_733533.num_elements = 1;
-c_733533.elements = (object *)e_733539;
-c_733533.elements[0] = k_731138;
+closureN_type c_733534;
+object e_733540 [1];
+c_733534.hdr.mark = gc_color_red;
+ c_733534.hdr.grayed = 0;
+c_733534.tag = closureN_tag;
+ c_733534.fn = (function_type)__lambda_214;
+c_733534.num_args = 1;
+c_733534.num_elements = 1;
+c_733534.elements = (object *)e_733540;
+c_733534.elements[0] = k_731138;
 
-return_closcall2(data,  __glo_generator_91_125list_srfi_121,  &c_733533, gen_73330_73608);; 
+return_closcall2(data,  __glo_generator_91_125list_srfi_121,  &c_733534, gen_73330_73608);; 
 }
 
 static void __lambda_214(void *data, int argc, object self_731463, object r_731139) {
   
-object c_733538 = Cyc_list2vector(data,  ((closureN)self_731463)->elements[0],r_731139);
-return_closcall1(data,  ((closureN)self_731463)->elements[0],  c_733538);; 
+object c_733539 = Cyc_list2vector(data,  ((closureN)self_731463)->elements[0],r_731139);
+return_closcall1(data,  ((closureN)self_731463)->elements[0],  c_733539);; 
 }
 
 static void __lambda_208(void *data, int argc, closure _,object k_731118, object args_73312_73316_73601_raw, ...) {
@@ -1824,29 +1846,29 @@ load_varargs(args_73312_73316_73601, args_73312_73316_73601_raw, argc - 1);
   
   
   
-  make_pair(c_733493,quote_n,NULL);c_733493.hdr.immutable = 1;
-  make_pair(c_733492,quote_gen,&c_733493);c_733492.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733492))) ){ 
+  make_pair(c_733494,quote_n,NULL);c_733494.hdr.immutable = 1;
+  make_pair(c_733493,quote_gen,&c_733494);c_733493.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733493))) ){ 
   
-mclosure0(c_733498, (function_type)__lambda_209);c_733498.num_args = 2;
+mclosure0(c_733499, (function_type)__lambda_209);c_733499.num_args = 2;
 
-object c_733497 = apply(data,  k_731118,&c_733498, args_73312_73316_73601);
-return_closcall1(data,  k_731118,  c_733497);
+object c_733498 = apply(data,  k_731118,&c_733499, args_73312_73316_73601);
+return_closcall1(data,  k_731118,  c_733498);
 } else { 
     
   
   
-  make_pair(c_733510,quote_gen,NULL);c_733510.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733510))) ){ 
+  make_pair(c_733511,quote_gen,NULL);c_733511.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73312_73316_73601), Cyc_length(data, &c_733511))) ){ 
   
-mclosure0(c_733515, (function_type)__lambda_211);c_733515.num_args = 1;
+mclosure0(c_733516, (function_type)__lambda_211);c_733516.num_args = 1;
 
-object c_733514 = apply(data,  k_731118,&c_733515, args_73312_73316_73601);
-return_closcall1(data,  k_731118,  c_733514);
+object c_733515 = apply(data,  k_731118,&c_733516, args_73312_73316_73601);
+return_closcall1(data,  k_731118,  c_733515);
 } else { 
   
-make_utf8_string_with_len(c_733518, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731118, &c_733518);}
+make_utf8_string_with_len(c_733519, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731118, &c_733519);}
 ;}
 ;; 
 }
@@ -1857,18 +1879,18 @@ static void __lambda_211(void *data, int argc, object self_731461, object k_7311
 
 static void __lambda_209(void *data, int argc, object self_731459, object k_731122, object gen_73319_73603, object n_73320_73604) {
   
-closureN_type c_733500;
-object e_733503 [1];
-c_733500.hdr.mark = gc_color_red;
- c_733500.hdr.grayed = 0;
-c_733500.tag = closureN_tag;
- c_733500.fn = (function_type)__lambda_210;
-c_733500.num_args = 1;
-c_733500.num_elements = 1;
-c_733500.elements = (object *)e_733503;
-c_733500.elements[0] = k_731122;
+closureN_type c_733501;
+object e_733504 [1];
+c_733501.hdr.mark = gc_color_red;
+ c_733501.hdr.grayed = 0;
+c_733501.tag = closureN_tag;
+ c_733501.fn = (function_type)__lambda_210;
+c_733501.num_args = 1;
+c_733501.num_elements = 1;
+c_733501.elements = (object *)e_733504;
+c_733501.elements[0] = k_731122;
 
-return_closcall3(data,  __glo_gtake_srfi_121,  &c_733500, gen_73319_73603, n_73320_73604);; 
+return_closcall3(data,  __glo_gtake_srfi_121,  &c_733501, gen_73319_73603, n_73320_73604);; 
 }
 
 static void __lambda_210(void *data, int argc, object self_731460, object r_731123) {
@@ -1881,47 +1903,47 @@ load_varargs(args_73301_73305_73596, args_73301_73305_73596_raw, argc - 1);
   
   
   
-  make_pair(c_733455,quote_n,NULL);c_733455.hdr.immutable = 1;
-  make_pair(c_733454,quote_gen,&c_733455);c_733454.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733454))) ){ 
+  make_pair(c_733456,quote_n,NULL);c_733456.hdr.immutable = 1;
+  make_pair(c_733455,quote_gen,&c_733456);c_733455.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733455))) ){ 
   
-mclosure0(c_733460, (function_type)__lambda_204);c_733460.num_args = 2;
+mclosure0(c_733461, (function_type)__lambda_204);c_733461.num_args = 2;
 
-object c_733459 = apply(data,  k_731102,&c_733460, args_73301_73305_73596);
-return_closcall1(data,  k_731102,  c_733459);
+object c_733460 = apply(data,  k_731102,&c_733461, args_73301_73305_73596);
+return_closcall1(data,  k_731102,  c_733460);
 } else { 
     
   
   
-  make_pair(c_733472,quote_gen,NULL);c_733472.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733472))) ){ 
+  make_pair(c_733473,quote_gen,NULL);c_733473.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73301_73305_73596), Cyc_length(data, &c_733473))) ){ 
   
-mclosure0(c_733477, (function_type)__lambda_206);c_733477.num_args = 1;
+mclosure0(c_733478, (function_type)__lambda_206);c_733478.num_args = 1;
 
-object c_733476 = apply(data,  k_731102,&c_733477, args_73301_73305_73596);
-return_closcall1(data,  k_731102,  c_733476);
+object c_733477 = apply(data,  k_731102,&c_733478, args_73301_73305_73596);
+return_closcall1(data,  k_731102,  c_733477);
 } else { 
   
-make_utf8_string_with_len(c_733484, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731102, &c_733484);}
+make_utf8_string_with_len(c_733485, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731102, &c_733485);}
 ;}
 ;; 
 }
 
 static void __lambda_206(void *data, int argc, object self_731457, object k_731110, object gen_73311_73600) {
   
-closureN_type c_733479;
-object e_733482 [1];
-c_733479.hdr.mark = gc_color_red;
- c_733479.hdr.grayed = 0;
-c_733479.tag = closureN_tag;
- c_733479.fn = (function_type)__lambda_207;
-c_733479.num_args = 1;
-c_733479.num_elements = 1;
-c_733479.elements = (object *)e_733482;
-c_733479.elements[0] = k_731110;
+closureN_type c_733480;
+object e_733483 [1];
+c_733480.hdr.mark = gc_color_red;
+ c_733480.hdr.grayed = 0;
+c_733480.tag = closureN_tag;
+ c_733480.fn = (function_type)__lambda_207;
+c_733480.num_args = 1;
+c_733480.num_elements = 1;
+c_733480.elements = (object *)e_733483;
+c_733480.elements[0] = k_731110;
 
-return_closcall2(data,  __glo_generator_91_125reverse_91list_srfi_121,  &c_733479, gen_73311_73600);; 
+return_closcall2(data,  __glo_generator_91_125reverse_91list_srfi_121,  &c_733480, gen_73311_73600);; 
 }
 
 static void __lambda_207(void *data, int argc, object self_731458, object r_731111) {
@@ -1930,18 +1952,18 @@ static void __lambda_207(void *data, int argc, object self_731458, object r_7311
 
 static void __lambda_204(void *data, int argc, object self_731455, object k_731106, object gen_73308_73598, object n_73309_73599) {
   
-closureN_type c_733462;
-object e_733465 [1];
-c_733462.hdr.mark = gc_color_red;
- c_733462.hdr.grayed = 0;
-c_733462.tag = closureN_tag;
- c_733462.fn = (function_type)__lambda_205;
-c_733462.num_args = 1;
-c_733462.num_elements = 1;
-c_733462.elements = (object *)e_733465;
-c_733462.elements[0] = k_731106;
+closureN_type c_733463;
+object e_733466 [1];
+c_733463.hdr.mark = gc_color_red;
+ c_733463.hdr.grayed = 0;
+c_733463.tag = closureN_tag;
+ c_733463.fn = (function_type)__lambda_205;
+c_733463.num_args = 1;
+c_733463.num_elements = 1;
+c_733463.elements = (object *)e_733466;
+c_733463.elements[0] = k_731106;
 
-return_closcall3(data,  __glo_gtake_srfi_121,  &c_733462, gen_73308_73598, n_73309_73599);; 
+return_closcall3(data,  __glo_gtake_srfi_121,  &c_733463, gen_73308_73598, n_73309_73599);; 
 }
 
 static void __lambda_205(void *data, int argc, object self_731456, object r_731107) {
@@ -1951,187 +1973,187 @@ static void __lambda_205(void *data, int argc, object self_731456, object r_7311
 static void __lambda_193(void *data, int argc, closure _,object k_731087, object value_91gen_73281_73587, object truth_91gen_73282_73588) {
   Cyc_st_add(data, "srfi/121.sld:gselect");
 
-closureN_type c_733364;
-object e_733446 [3];
-c_733364.hdr.mark = gc_color_red;
- c_733364.hdr.grayed = 0;
-c_733364.tag = closureN_tag;
- c_733364.fn = (function_type)__lambda_194;
-c_733364.num_args = 1;
-c_733364.num_elements = 3;
-c_733364.elements = (object *)e_733446;
-c_733364.elements[0] = k_731087;
-c_733364.elements[1] = truth_91gen_73282_73588;
-c_733364.elements[2] = value_91gen_73281_73587;
+closureN_type c_733365;
+object e_733447 [3];
+c_733365.hdr.mark = gc_color_red;
+ c_733365.hdr.grayed = 0;
+c_733365.tag = closureN_tag;
+ c_733365.fn = (function_type)__lambda_194;
+c_733365.num_args = 1;
+c_733365.num_elements = 3;
+c_733365.elements = (object *)e_733447;
+c_733365.elements[0] = k_731087;
+c_733365.elements[1] = truth_91gen_73282_73588;
+c_733365.elements[2] = value_91gen_73281_73587;
 
-return_direct_with_clo1(data,(closure)&c_733364,__lambda_194,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733365,__lambda_194,  boolean_f);; 
 }
 
 static void __lambda_194(void *data, int argc, object self_731444, object done_127_73283_73589) {
   
-closureN_type c_733366;
-object e_733442 [3];
-c_733366.hdr.mark = gc_color_red;
- c_733366.hdr.grayed = 0;
-c_733366.tag = closureN_tag;
- c_733366.fn = (function_type)__lambda_303;
-c_733366.num_args = 1;
-c_733366.num_elements = 3;
-c_733366.elements = (object *)e_733442;
-c_733366.elements[0] = ((closureN)self_731444)->elements[0];
-c_733366.elements[1] = ((closureN)self_731444)->elements[1];
-c_733366.elements[2] = ((closureN)self_731444)->elements[2];
+closureN_type c_733367;
+object e_733443 [3];
+c_733367.hdr.mark = gc_color_red;
+ c_733367.hdr.grayed = 0;
+c_733367.tag = closureN_tag;
+ c_733367.fn = (function_type)__lambda_304;
+c_733367.num_args = 1;
+c_733367.num_elements = 3;
+c_733367.elements = (object *)e_733443;
+c_733367.elements[0] = ((closureN)self_731444)->elements[0];
+c_733367.elements[1] = ((closureN)self_731444)->elements[1];
+c_733367.elements[2] = ((closureN)self_731444)->elements[2];
 
 
-pair_type local_733445; 
-return_direct_with_clo1(data,(closure)&c_733366,__lambda_303,  set_cell_as_expr(&local_733445, done_127_73283_73589));; 
+pair_type local_733446; 
+return_direct_with_clo1(data,(closure)&c_733367,__lambda_304,  set_cell_as_expr(&local_733446, done_127_73283_73589));; 
 }
 
-static void __lambda_303(void *data, int argc, object self_731445, object done_127_73283_73589) {
+static void __lambda_304(void *data, int argc, object self_731445, object done_127_73283_73589) {
   
-closureN_type c_733369;
-object e_733441 [3];
-c_733369.hdr.mark = gc_color_red;
- c_733369.hdr.grayed = 0;
-c_733369.tag = closureN_tag;
- c_733369.fn = (function_type)__lambda_195;
-c_733369.num_args = 0;
-c_733369.num_elements = 3;
-c_733369.elements = (object *)e_733441;
-c_733369.elements[0] = done_127_73283_73589;
-c_733369.elements[1] = ((closureN)self_731445)->elements[1];
-c_733369.elements[2] = ((closureN)self_731445)->elements[2];
+closureN_type c_733370;
+object e_733442 [3];
+c_733370.hdr.mark = gc_color_red;
+ c_733370.hdr.grayed = 0;
+c_733370.tag = closureN_tag;
+ c_733370.fn = (function_type)__lambda_195;
+c_733370.num_args = 0;
+c_733370.num_elements = 3;
+c_733370.elements = (object *)e_733442;
+c_733370.elements[0] = done_127_73283_73589;
+c_733370.elements[1] = ((closureN)self_731445)->elements[1];
+c_733370.elements[2] = ((closureN)self_731445)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731445)->elements[0],  &c_733369);; 
+return_closcall1(data,  ((closureN)self_731445)->elements[0],  &c_733370);; 
 }
 
 static void __lambda_195(void *data, int argc, object self_731446, object k_731088) {
     
 if( (boolean_f != car(((closureN)self_731446)->elements[0])) ){ 
   
-complex_num_type local_733376; 
+complex_num_type local_733377; 
 return_closcall1(data,  k_731088,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733376));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733377));
 } else { 
   
-closureN_type c_733379;
-object e_733440 [4];
-c_733379.hdr.mark = gc_color_red;
- c_733379.hdr.grayed = 0;
-c_733379.tag = closureN_tag;
- c_733379.fn = (function_type)__lambda_196;
-c_733379.num_args = 1;
-c_733379.num_elements = 4;
-c_733379.elements = (object *)e_733440;
-c_733379.elements[0] = ((closureN)self_731446)->elements[0];
-c_733379.elements[1] = k_731088;
-c_733379.elements[2] = ((closureN)self_731446)->elements[1];
-c_733379.elements[3] = ((closureN)self_731446)->elements[2];
+closureN_type c_733380;
+object e_733441 [4];
+c_733380.hdr.mark = gc_color_red;
+ c_733380.hdr.grayed = 0;
+c_733380.tag = closureN_tag;
+ c_733380.fn = (function_type)__lambda_196;
+c_733380.num_args = 1;
+c_733380.num_elements = 4;
+c_733380.elements = (object *)e_733441;
+c_733380.elements[0] = ((closureN)self_731446)->elements[0];
+c_733380.elements[1] = k_731088;
+c_733380.elements[2] = ((closureN)self_731446)->elements[1];
+c_733380.elements[3] = ((closureN)self_731446)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731446)->elements[2],  &c_733379);}
+return_closcall1(data,  ((closureN)self_731446)->elements[2],  &c_733380);}
 ;; 
 }
 
 static void __lambda_196(void *data, int argc, object self_731447, object r_731089) {
   
-closureN_type c_733382;
-object e_733439 [5];
-c_733382.hdr.mark = gc_color_red;
- c_733382.hdr.grayed = 0;
-c_733382.tag = closureN_tag;
- c_733382.fn = (function_type)__lambda_197;
-c_733382.num_args = 1;
-c_733382.num_elements = 5;
-c_733382.elements = (object *)e_733439;
-c_733382.elements[0] = ((closureN)self_731447)->elements[0];
-c_733382.elements[1] = ((closureN)self_731447)->elements[1];
-c_733382.elements[2] = r_731089;
-c_733382.elements[3] = ((closureN)self_731447)->elements[2];
-c_733382.elements[4] = ((closureN)self_731447)->elements[3];
+closureN_type c_733383;
+object e_733440 [5];
+c_733383.hdr.mark = gc_color_red;
+ c_733383.hdr.grayed = 0;
+c_733383.tag = closureN_tag;
+ c_733383.fn = (function_type)__lambda_197;
+c_733383.num_args = 1;
+c_733383.num_elements = 5;
+c_733383.elements = (object *)e_733440;
+c_733383.elements[0] = ((closureN)self_731447)->elements[0];
+c_733383.elements[1] = ((closureN)self_731447)->elements[1];
+c_733383.elements[2] = r_731089;
+c_733383.elements[3] = ((closureN)self_731447)->elements[2];
+c_733383.elements[4] = ((closureN)self_731447)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731447)->elements[2],  &c_733382);; 
+return_closcall1(data,  ((closureN)self_731447)->elements[2],  &c_733383);; 
 }
 
 static void __lambda_197(void *data, int argc, object self_731448, object r_731090) {
   
-closureN_type c_733384;
-object e_733437 [4];
-c_733384.hdr.mark = gc_color_red;
- c_733384.hdr.grayed = 0;
-c_733384.tag = closureN_tag;
- c_733384.fn = (function_type)__lambda_198;
-c_733384.num_args = 2;
-c_733384.num_elements = 4;
-c_733384.elements = (object *)e_733437;
-c_733384.elements[0] = ((closureN)self_731448)->elements[0];
-c_733384.elements[1] = ((closureN)self_731448)->elements[1];
-c_733384.elements[2] = ((closureN)self_731448)->elements[3];
-c_733384.elements[3] = ((closureN)self_731448)->elements[4];
+closureN_type c_733385;
+object e_733438 [4];
+c_733385.hdr.mark = gc_color_red;
+ c_733385.hdr.grayed = 0;
+c_733385.tag = closureN_tag;
+ c_733385.fn = (function_type)__lambda_198;
+c_733385.num_args = 2;
+c_733385.num_elements = 4;
+c_733385.elements = (object *)e_733438;
+c_733385.elements[0] = ((closureN)self_731448)->elements[0];
+c_733385.elements[1] = ((closureN)self_731448)->elements[1];
+c_733385.elements[2] = ((closureN)self_731448)->elements[3];
+c_733385.elements[3] = ((closureN)self_731448)->elements[4];
 
-return_direct_with_clo2(data,(closure)&c_733384,__lambda_198,  ((closureN)self_731448)->elements[2], r_731090);; 
+return_direct_with_clo2(data,(closure)&c_733385,__lambda_198,  ((closureN)self_731448)->elements[2], r_731090);; 
 }
 
 static void __lambda_198(void *data, int argc, object self_731449, object value_73285_73590, object truth_73286_73591) {
   
-closureN_type c_733386;
-object e_733436 [6];
-c_733386.hdr.mark = gc_color_red;
- c_733386.hdr.grayed = 0;
-c_733386.tag = closureN_tag;
- c_733386.fn = (function_type)__lambda_199;
-c_733386.num_args = 1;
-c_733386.num_elements = 6;
-c_733386.elements = (object *)e_733436;
-c_733386.elements[0] = ((closureN)self_731449)->elements[0];
-c_733386.elements[1] = ((closureN)self_731449)->elements[1];
-c_733386.elements[2] = truth_73286_73591;
-c_733386.elements[3] = ((closureN)self_731449)->elements[2];
-c_733386.elements[4] = value_73285_73590;
-c_733386.elements[5] = ((closureN)self_731449)->elements[3];
+closureN_type c_733387;
+object e_733437 [6];
+c_733387.hdr.mark = gc_color_red;
+ c_733387.hdr.grayed = 0;
+c_733387.tag = closureN_tag;
+ c_733387.fn = (function_type)__lambda_199;
+c_733387.num_args = 1;
+c_733387.num_elements = 6;
+c_733387.elements = (object *)e_733437;
+c_733387.elements[0] = ((closureN)self_731449)->elements[0];
+c_733387.elements[1] = ((closureN)self_731449)->elements[1];
+c_733387.elements[2] = truth_73286_73591;
+c_733387.elements[3] = ((closureN)self_731449)->elements[2];
+c_733387.elements[4] = value_73285_73590;
+c_733387.elements[5] = ((closureN)self_731449)->elements[3];
 
-return_direct_with_clo1(data,(closure)&c_733386,__lambda_199,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733387,__lambda_199,  boolean_f);; 
 }
 
 static void __lambda_199(void *data, int argc, object self_731450, object loop_73287_73592) {
   
-closureN_type c_733388;
-object e_733432 [6];
-c_733388.hdr.mark = gc_color_red;
- c_733388.hdr.grayed = 0;
-c_733388.tag = closureN_tag;
- c_733388.fn = (function_type)__lambda_302;
-c_733388.num_args = 1;
-c_733388.num_elements = 6;
-c_733388.elements = (object *)e_733432;
-c_733388.elements[0] = ((closureN)self_731450)->elements[0];
-c_733388.elements[1] = ((closureN)self_731450)->elements[1];
-c_733388.elements[2] = ((closureN)self_731450)->elements[2];
-c_733388.elements[3] = ((closureN)self_731450)->elements[3];
-c_733388.elements[4] = ((closureN)self_731450)->elements[4];
-c_733388.elements[5] = ((closureN)self_731450)->elements[5];
+closureN_type c_733389;
+object e_733433 [6];
+c_733389.hdr.mark = gc_color_red;
+ c_733389.hdr.grayed = 0;
+c_733389.tag = closureN_tag;
+ c_733389.fn = (function_type)__lambda_303;
+c_733389.num_args = 1;
+c_733389.num_elements = 6;
+c_733389.elements = (object *)e_733433;
+c_733389.elements[0] = ((closureN)self_731450)->elements[0];
+c_733389.elements[1] = ((closureN)self_731450)->elements[1];
+c_733389.elements[2] = ((closureN)self_731450)->elements[2];
+c_733389.elements[3] = ((closureN)self_731450)->elements[3];
+c_733389.elements[4] = ((closureN)self_731450)->elements[4];
+c_733389.elements[5] = ((closureN)self_731450)->elements[5];
 
 
-pair_type local_733435; 
-return_direct_with_clo1(data,(closure)&c_733388,__lambda_302,  set_cell_as_expr(&local_733435, loop_73287_73592));; 
+pair_type local_733436; 
+return_direct_with_clo1(data,(closure)&c_733389,__lambda_303,  set_cell_as_expr(&local_733436, loop_73287_73592));; 
 }
 
-static void __lambda_302(void *data, int argc, object self_731451, object loop_73287_73592) {
+static void __lambda_303(void *data, int argc, object self_731451, object loop_73287_73592) {
   
-  closureN_type c_733398;
-object e_733431 [4];
-c_733398.hdr.mark = gc_color_red;
- c_733398.hdr.grayed = 0;
-c_733398.tag = closureN_tag;
- c_733398.fn = (function_type)__lambda_200;
-c_733398.num_args = 2;
-c_733398.num_elements = 4;
-c_733398.elements = (object *)e_733431;
-c_733398.elements[0] = ((closureN)self_731451)->elements[0];
-c_733398.elements[1] = loop_73287_73592;
-c_733398.elements[2] = ((closureN)self_731451)->elements[3];
-c_733398.elements[3] = ((closureN)self_731451)->elements[5];
+  closureN_type c_733399;
+object e_733432 [4];
+c_733399.hdr.mark = gc_color_red;
+ c_733399.hdr.grayed = 0;
+c_733399.tag = closureN_tag;
+ c_733399.fn = (function_type)__lambda_200;
+c_733399.num_args = 2;
+c_733399.num_elements = 4;
+c_733399.elements = (object *)e_733432;
+c_733399.elements[0] = ((closureN)self_731451)->elements[0];
+c_733399.elements[1] = loop_73287_73592;
+c_733399.elements[2] = ((closureN)self_731451)->elements[3];
+c_733399.elements[3] = ((closureN)self_731451)->elements[5];
 
-  Cyc_set_cell(data, loop_73287_73592, &c_733398);
+  Cyc_set_cell(data, loop_73287_73592, &c_733399);
 
 return_closcall3(data,  car(loop_73287_73592),  ((closureN)self_731451)->elements[1], ((closureN)self_731451)->elements[4], ((closureN)self_731451)->elements[2]);;; 
 }
@@ -2148,48 +2170,48 @@ if( (boolean_f != Cyc_is_eof_object(value_73288_73593)) ){
 ;if( (boolean_f != r_731094) ){ 
   
   Cyc_set_cell(data, ((closureN)self_731452)->elements[0], boolean_t);
-complex_num_type local_733412; 
+complex_num_type local_733413; 
 return_closcall1(data,  k_731093,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733412));;
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733413));;
 } else { 
   if( (boolean_f != truth_73289_73594) ){ 
   return_closcall1(data,  k_731093,  value_73288_73593);
 } else { 
   
-closureN_type c_733419;
-object e_733430 [3];
-c_733419.hdr.mark = gc_color_red;
- c_733419.hdr.grayed = 0;
-c_733419.tag = closureN_tag;
- c_733419.fn = (function_type)__lambda_201;
-c_733419.num_args = 1;
-c_733419.num_elements = 3;
-c_733419.elements = (object *)e_733430;
-c_733419.elements[0] = k_731093;
-c_733419.elements[1] = ((closureN)self_731452)->elements[1];
-c_733419.elements[2] = ((closureN)self_731452)->elements[2];
+closureN_type c_733420;
+object e_733431 [3];
+c_733420.hdr.mark = gc_color_red;
+ c_733420.hdr.grayed = 0;
+c_733420.tag = closureN_tag;
+ c_733420.fn = (function_type)__lambda_201;
+c_733420.num_args = 1;
+c_733420.num_elements = 3;
+c_733420.elements = (object *)e_733431;
+c_733420.elements[0] = k_731093;
+c_733420.elements[1] = ((closureN)self_731452)->elements[1];
+c_733420.elements[2] = ((closureN)self_731452)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731452)->elements[3],  &c_733419);}
+return_closcall1(data,  ((closureN)self_731452)->elements[3],  &c_733420);}
 ;}
 ;; 
 }
 
 static void __lambda_201(void *data, int argc, object self_731453, object r_731096) {
   
-closureN_type c_733422;
-object e_733429 [3];
-c_733422.hdr.mark = gc_color_red;
- c_733422.hdr.grayed = 0;
-c_733422.tag = closureN_tag;
- c_733422.fn = (function_type)__lambda_202;
-c_733422.num_args = 1;
-c_733422.num_elements = 3;
-c_733422.elements = (object *)e_733429;
-c_733422.elements[0] = ((closureN)self_731453)->elements[0];
-c_733422.elements[1] = ((closureN)self_731453)->elements[1];
-c_733422.elements[2] = r_731096;
+closureN_type c_733423;
+object e_733430 [3];
+c_733423.hdr.mark = gc_color_red;
+ c_733423.hdr.grayed = 0;
+c_733423.tag = closureN_tag;
+ c_733423.fn = (function_type)__lambda_202;
+c_733423.num_args = 1;
+c_733423.num_elements = 3;
+c_733423.elements = (object *)e_733430;
+c_733423.elements[0] = ((closureN)self_731453)->elements[0];
+c_733423.elements[1] = ((closureN)self_731453)->elements[1];
+c_733423.elements[2] = r_731096;
 
-return_closcall1(data,  ((closureN)self_731453)->elements[2],  &c_733422);; 
+return_closcall1(data,  ((closureN)self_731453)->elements[2],  &c_733423);; 
 }
 
 static void __lambda_202(void *data, int argc, object self_731454, object r_731097) {
@@ -2201,211 +2223,211 @@ return_closcall3(data,  car(((closureN)self_731454)->elements[1]),  ((closureN)s
 static void __lambda_181(void *data, int argc, closure _,object k_731068, object value_91gen_73260_73577, object index_91gen_73261_73578) {
   Cyc_st_add(data, "srfi/121.sld:gindex");
 
-closureN_type c_733240;
-object e_733361 [3];
-c_733240.hdr.mark = gc_color_red;
- c_733240.hdr.grayed = 0;
-c_733240.tag = closureN_tag;
- c_733240.fn = (function_type)__lambda_182;
-c_733240.num_args = 2;
-c_733240.num_elements = 3;
-c_733240.elements = (object *)e_733361;
-c_733240.elements[0] = index_91gen_73261_73578;
-c_733240.elements[1] = k_731068;
-c_733240.elements[2] = value_91gen_73260_73577;
+closureN_type c_733241;
+object e_733362 [3];
+c_733241.hdr.mark = gc_color_red;
+ c_733241.hdr.grayed = 0;
+c_733241.tag = closureN_tag;
+ c_733241.fn = (function_type)__lambda_182;
+c_733241.num_args = 2;
+c_733241.num_elements = 3;
+c_733241.elements = (object *)e_733362;
+c_733241.elements[0] = index_91gen_73261_73578;
+c_733241.elements[1] = k_731068;
+c_733241.elements[2] = value_91gen_73260_73577;
 
-return_direct_with_clo2(data,(closure)&c_733240,__lambda_182,  boolean_f, obj_int2obj(0));; 
+return_direct_with_clo2(data,(closure)&c_733241,__lambda_182,  boolean_f, obj_int2obj(0));; 
 }
 
 static void __lambda_182(void *data, int argc, object self_731430, object done_127_73262_73579, object count_73263_73580) {
   
-closureN_type c_733242;
-object e_733357 [4];
-c_733242.hdr.mark = gc_color_red;
- c_733242.hdr.grayed = 0;
-c_733242.tag = closureN_tag;
- c_733242.fn = (function_type)__lambda_301;
-c_733242.num_args = 1;
-c_733242.num_elements = 4;
-c_733242.elements = (object *)e_733357;
-c_733242.elements[0] = count_73263_73580;
-c_733242.elements[1] = ((closureN)self_731430)->elements[0];
-c_733242.elements[2] = ((closureN)self_731430)->elements[1];
-c_733242.elements[3] = ((closureN)self_731430)->elements[2];
+closureN_type c_733243;
+object e_733358 [4];
+c_733243.hdr.mark = gc_color_red;
+ c_733243.hdr.grayed = 0;
+c_733243.tag = closureN_tag;
+ c_733243.fn = (function_type)__lambda_302;
+c_733243.num_args = 1;
+c_733243.num_elements = 4;
+c_733243.elements = (object *)e_733358;
+c_733243.elements[0] = count_73263_73580;
+c_733243.elements[1] = ((closureN)self_731430)->elements[0];
+c_733243.elements[2] = ((closureN)self_731430)->elements[1];
+c_733243.elements[3] = ((closureN)self_731430)->elements[2];
 
 
-pair_type local_733360; 
-return_direct_with_clo1(data,(closure)&c_733242,__lambda_301,  set_cell_as_expr(&local_733360, done_127_73262_73579));; 
+pair_type local_733361; 
+return_direct_with_clo1(data,(closure)&c_733243,__lambda_302,  set_cell_as_expr(&local_733361, done_127_73262_73579));; 
 }
 
-static void __lambda_301(void *data, int argc, object self_731431, object done_127_73262_73579) {
+static void __lambda_302(void *data, int argc, object self_731431, object done_127_73262_73579) {
   
-closureN_type c_733244;
+closureN_type c_733245;
+object e_733353 [4];
+c_733245.hdr.mark = gc_color_red;
+ c_733245.hdr.grayed = 0;
+c_733245.tag = closureN_tag;
+ c_733245.fn = (function_type)__lambda_301;
+c_733245.num_args = 1;
+c_733245.num_elements = 4;
+c_733245.elements = (object *)e_733353;
+c_733245.elements[0] = done_127_73262_73579;
+c_733245.elements[1] = ((closureN)self_731431)->elements[1];
+c_733245.elements[2] = ((closureN)self_731431)->elements[2];
+c_733245.elements[3] = ((closureN)self_731431)->elements[3];
+
+
+pair_type local_733356; 
+return_direct_with_clo1(data,(closure)&c_733245,__lambda_301,  set_cell_as_expr(&local_733356, ((closureN)self_731431)->elements[0]));; 
+}
+
+static void __lambda_301(void *data, int argc, object self_731432, object count_73263_73580) {
+  
+closureN_type c_733248;
 object e_733352 [4];
-c_733244.hdr.mark = gc_color_red;
- c_733244.hdr.grayed = 0;
-c_733244.tag = closureN_tag;
- c_733244.fn = (function_type)__lambda_300;
-c_733244.num_args = 1;
-c_733244.num_elements = 4;
-c_733244.elements = (object *)e_733352;
-c_733244.elements[0] = done_127_73262_73579;
-c_733244.elements[1] = ((closureN)self_731431)->elements[1];
-c_733244.elements[2] = ((closureN)self_731431)->elements[2];
-c_733244.elements[3] = ((closureN)self_731431)->elements[3];
+c_733248.hdr.mark = gc_color_red;
+ c_733248.hdr.grayed = 0;
+c_733248.tag = closureN_tag;
+ c_733248.fn = (function_type)__lambda_183;
+c_733248.num_args = 0;
+c_733248.num_elements = 4;
+c_733248.elements = (object *)e_733352;
+c_733248.elements[0] = count_73263_73580;
+c_733248.elements[1] = ((closureN)self_731432)->elements[0];
+c_733248.elements[2] = ((closureN)self_731432)->elements[1];
+c_733248.elements[3] = ((closureN)self_731432)->elements[3];
 
-
-pair_type local_733355; 
-return_direct_with_clo1(data,(closure)&c_733244,__lambda_300,  set_cell_as_expr(&local_733355, ((closureN)self_731431)->elements[0]));; 
-}
-
-static void __lambda_300(void *data, int argc, object self_731432, object count_73263_73580) {
-  
-closureN_type c_733247;
-object e_733351 [4];
-c_733247.hdr.mark = gc_color_red;
- c_733247.hdr.grayed = 0;
-c_733247.tag = closureN_tag;
- c_733247.fn = (function_type)__lambda_183;
-c_733247.num_args = 0;
-c_733247.num_elements = 4;
-c_733247.elements = (object *)e_733351;
-c_733247.elements[0] = count_73263_73580;
-c_733247.elements[1] = ((closureN)self_731432)->elements[0];
-c_733247.elements[2] = ((closureN)self_731432)->elements[1];
-c_733247.elements[3] = ((closureN)self_731432)->elements[3];
-
-return_closcall1(data,  ((closureN)self_731432)->elements[2],  &c_733247);; 
+return_closcall1(data,  ((closureN)self_731432)->elements[2],  &c_733248);; 
 }
 
 static void __lambda_183(void *data, int argc, object self_731433, object k_731069) {
     
 if( (boolean_f != car(((closureN)self_731433)->elements[1])) ){ 
   
-complex_num_type local_733254; 
+complex_num_type local_733255; 
 return_closcall1(data,  k_731069,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733254));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733255));
 } else { 
   
-closureN_type c_733257;
-object e_733350 [5];
-c_733257.hdr.mark = gc_color_red;
- c_733257.hdr.grayed = 0;
-c_733257.tag = closureN_tag;
- c_733257.fn = (function_type)__lambda_184;
-c_733257.num_args = 1;
-c_733257.num_elements = 5;
-c_733257.elements = (object *)e_733350;
-c_733257.elements[0] = ((closureN)self_731433)->elements[0];
-c_733257.elements[1] = ((closureN)self_731433)->elements[1];
-c_733257.elements[2] = ((closureN)self_731433)->elements[2];
-c_733257.elements[3] = k_731069;
-c_733257.elements[4] = ((closureN)self_731433)->elements[3];
+closureN_type c_733258;
+object e_733351 [5];
+c_733258.hdr.mark = gc_color_red;
+ c_733258.hdr.grayed = 0;
+c_733258.tag = closureN_tag;
+ c_733258.fn = (function_type)__lambda_184;
+c_733258.num_args = 1;
+c_733258.num_elements = 5;
+c_733258.elements = (object *)e_733351;
+c_733258.elements[0] = ((closureN)self_731433)->elements[0];
+c_733258.elements[1] = ((closureN)self_731433)->elements[1];
+c_733258.elements[2] = ((closureN)self_731433)->elements[2];
+c_733258.elements[3] = k_731069;
+c_733258.elements[4] = ((closureN)self_731433)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731433)->elements[3],  &c_733257);}
+return_closcall1(data,  ((closureN)self_731433)->elements[3],  &c_733258);}
 ;; 
 }
 
 static void __lambda_184(void *data, int argc, object self_731434, object r_731070) {
   
-closureN_type c_733260;
-object e_733349 [5];
-c_733260.hdr.mark = gc_color_red;
- c_733260.hdr.grayed = 0;
-c_733260.tag = closureN_tag;
- c_733260.fn = (function_type)__lambda_185;
-c_733260.num_args = 1;
-c_733260.num_elements = 5;
-c_733260.elements = (object *)e_733349;
-c_733260.elements[0] = ((closureN)self_731434)->elements[0];
-c_733260.elements[1] = ((closureN)self_731434)->elements[1];
-c_733260.elements[2] = ((closureN)self_731434)->elements[3];
-c_733260.elements[3] = r_731070;
-c_733260.elements[4] = ((closureN)self_731434)->elements[4];
+closureN_type c_733261;
+object e_733350 [5];
+c_733261.hdr.mark = gc_color_red;
+ c_733261.hdr.grayed = 0;
+c_733261.tag = closureN_tag;
+ c_733261.fn = (function_type)__lambda_185;
+c_733261.num_args = 1;
+c_733261.num_elements = 5;
+c_733261.elements = (object *)e_733350;
+c_733261.elements[0] = ((closureN)self_731434)->elements[0];
+c_733261.elements[1] = ((closureN)self_731434)->elements[1];
+c_733261.elements[2] = ((closureN)self_731434)->elements[3];
+c_733261.elements[3] = r_731070;
+c_733261.elements[4] = ((closureN)self_731434)->elements[4];
 
-return_closcall1(data,  ((closureN)self_731434)->elements[2],  &c_733260);; 
+return_closcall1(data,  ((closureN)self_731434)->elements[2],  &c_733261);; 
 }
 
 static void __lambda_185(void *data, int argc, object self_731435, object r_731071) {
   
-closureN_type c_733262;
-object e_733347 [4];
-c_733262.hdr.mark = gc_color_red;
- c_733262.hdr.grayed = 0;
-c_733262.tag = closureN_tag;
- c_733262.fn = (function_type)__lambda_186;
-c_733262.num_args = 2;
-c_733262.num_elements = 4;
-c_733262.elements = (object *)e_733347;
-c_733262.elements[0] = ((closureN)self_731435)->elements[0];
-c_733262.elements[1] = ((closureN)self_731435)->elements[1];
-c_733262.elements[2] = ((closureN)self_731435)->elements[2];
-c_733262.elements[3] = ((closureN)self_731435)->elements[4];
+closureN_type c_733263;
+object e_733348 [4];
+c_733263.hdr.mark = gc_color_red;
+ c_733263.hdr.grayed = 0;
+c_733263.tag = closureN_tag;
+ c_733263.fn = (function_type)__lambda_186;
+c_733263.num_args = 2;
+c_733263.num_elements = 4;
+c_733263.elements = (object *)e_733348;
+c_733263.elements[0] = ((closureN)self_731435)->elements[0];
+c_733263.elements[1] = ((closureN)self_731435)->elements[1];
+c_733263.elements[2] = ((closureN)self_731435)->elements[2];
+c_733263.elements[3] = ((closureN)self_731435)->elements[4];
 
-return_direct_with_clo2(data,(closure)&c_733262,__lambda_186,  ((closureN)self_731435)->elements[3], r_731071);; 
+return_direct_with_clo2(data,(closure)&c_733263,__lambda_186,  ((closureN)self_731435)->elements[3], r_731071);; 
 }
 
 static void __lambda_186(void *data, int argc, object self_731436, object value_73265_73581, object index_73266_73582) {
   
-closureN_type c_733264;
-object e_733346 [6];
-c_733264.hdr.mark = gc_color_red;
- c_733264.hdr.grayed = 0;
-c_733264.tag = closureN_tag;
- c_733264.fn = (function_type)__lambda_187;
-c_733264.num_args = 1;
-c_733264.num_elements = 6;
-c_733264.elements = (object *)e_733346;
-c_733264.elements[0] = ((closureN)self_731436)->elements[0];
-c_733264.elements[1] = ((closureN)self_731436)->elements[1];
-c_733264.elements[2] = index_73266_73582;
-c_733264.elements[3] = ((closureN)self_731436)->elements[2];
-c_733264.elements[4] = value_73265_73581;
-c_733264.elements[5] = ((closureN)self_731436)->elements[3];
+closureN_type c_733265;
+object e_733347 [6];
+c_733265.hdr.mark = gc_color_red;
+ c_733265.hdr.grayed = 0;
+c_733265.tag = closureN_tag;
+ c_733265.fn = (function_type)__lambda_187;
+c_733265.num_args = 1;
+c_733265.num_elements = 6;
+c_733265.elements = (object *)e_733347;
+c_733265.elements[0] = ((closureN)self_731436)->elements[0];
+c_733265.elements[1] = ((closureN)self_731436)->elements[1];
+c_733265.elements[2] = index_73266_73582;
+c_733265.elements[3] = ((closureN)self_731436)->elements[2];
+c_733265.elements[4] = value_73265_73581;
+c_733265.elements[5] = ((closureN)self_731436)->elements[3];
 
-return_direct_with_clo1(data,(closure)&c_733264,__lambda_187,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733265,__lambda_187,  boolean_f);; 
 }
 
 static void __lambda_187(void *data, int argc, object self_731437, object loop_73267_73583) {
   
-closureN_type c_733266;
-object e_733342 [6];
-c_733266.hdr.mark = gc_color_red;
- c_733266.hdr.grayed = 0;
-c_733266.tag = closureN_tag;
- c_733266.fn = (function_type)__lambda_299;
-c_733266.num_args = 1;
-c_733266.num_elements = 6;
-c_733266.elements = (object *)e_733342;
-c_733266.elements[0] = ((closureN)self_731437)->elements[0];
-c_733266.elements[1] = ((closureN)self_731437)->elements[1];
-c_733266.elements[2] = ((closureN)self_731437)->elements[2];
-c_733266.elements[3] = ((closureN)self_731437)->elements[3];
-c_733266.elements[4] = ((closureN)self_731437)->elements[4];
-c_733266.elements[5] = ((closureN)self_731437)->elements[5];
+closureN_type c_733267;
+object e_733343 [6];
+c_733267.hdr.mark = gc_color_red;
+ c_733267.hdr.grayed = 0;
+c_733267.tag = closureN_tag;
+ c_733267.fn = (function_type)__lambda_300;
+c_733267.num_args = 1;
+c_733267.num_elements = 6;
+c_733267.elements = (object *)e_733343;
+c_733267.elements[0] = ((closureN)self_731437)->elements[0];
+c_733267.elements[1] = ((closureN)self_731437)->elements[1];
+c_733267.elements[2] = ((closureN)self_731437)->elements[2];
+c_733267.elements[3] = ((closureN)self_731437)->elements[3];
+c_733267.elements[4] = ((closureN)self_731437)->elements[4];
+c_733267.elements[5] = ((closureN)self_731437)->elements[5];
 
 
-pair_type local_733345; 
-return_direct_with_clo1(data,(closure)&c_733266,__lambda_299,  set_cell_as_expr(&local_733345, loop_73267_73583));; 
+pair_type local_733346; 
+return_direct_with_clo1(data,(closure)&c_733267,__lambda_300,  set_cell_as_expr(&local_733346, loop_73267_73583));; 
 }
 
-static void __lambda_299(void *data, int argc, object self_731438, object loop_73267_73583) {
+static void __lambda_300(void *data, int argc, object self_731438, object loop_73267_73583) {
   
-  closureN_type c_733276;
-object e_733341 [4];
-c_733276.hdr.mark = gc_color_red;
- c_733276.hdr.grayed = 0;
-c_733276.tag = closureN_tag;
- c_733276.fn = (function_type)__lambda_188;
-c_733276.num_args = 2;
-c_733276.num_elements = 4;
-c_733276.elements = (object *)e_733341;
-c_733276.elements[0] = ((closureN)self_731438)->elements[0];
-c_733276.elements[1] = ((closureN)self_731438)->elements[1];
-c_733276.elements[2] = loop_73267_73583;
-c_733276.elements[3] = ((closureN)self_731438)->elements[5];
+  closureN_type c_733277;
+object e_733342 [4];
+c_733277.hdr.mark = gc_color_red;
+ c_733277.hdr.grayed = 0;
+c_733277.tag = closureN_tag;
+ c_733277.fn = (function_type)__lambda_188;
+c_733277.num_args = 2;
+c_733277.num_elements = 4;
+c_733277.elements = (object *)e_733342;
+c_733277.elements[0] = ((closureN)self_731438)->elements[0];
+c_733277.elements[1] = ((closureN)self_731438)->elements[1];
+c_733277.elements[2] = loop_73267_73583;
+c_733277.elements[3] = ((closureN)self_731438)->elements[5];
 
-  Cyc_set_cell(data, loop_73267_73583, &c_733276);
+  Cyc_set_cell(data, loop_73267_73583, &c_733277);
 
 return_closcall3(data,  car(loop_73267_73583),  ((closureN)self_731438)->elements[3], ((closureN)self_731438)->elements[4], ((closureN)self_731438)->elements[2]);;; 
 }
@@ -2422,98 +2444,98 @@ if( (boolean_f != Cyc_is_eof_object(value_73268_73584)) ){
 ;if( (boolean_f != r_731075) ){ 
   
   Cyc_set_cell(data, ((closureN)self_731439)->elements[1], boolean_t);
-complex_num_type local_733290; 
+complex_num_type local_733291; 
 return_closcall1(data,  k_731074,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733290));;
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733291));;
 } else { 
   
-closureN_type c_733295;
-object e_733335 [6];
-c_733295.hdr.mark = gc_color_red;
- c_733295.hdr.grayed = 0;
-c_733295.tag = closureN_tag;
- c_733295.fn = (function_type)__lambda_189;
-c_733295.num_args = 1;
-c_733295.num_elements = 6;
-c_733295.elements = (object *)e_733335;
-c_733295.elements[0] = ((closureN)self_731439)->elements[0];
-c_733295.elements[1] = index_73269_73585;
-c_733295.elements[2] = k_731074;
-c_733295.elements[3] = ((closureN)self_731439)->elements[2];
-c_733295.elements[4] = value_73268_73584;
-c_733295.elements[5] = ((closureN)self_731439)->elements[3];
+closureN_type c_733296;
+object e_733336 [6];
+c_733296.hdr.mark = gc_color_red;
+ c_733296.hdr.grayed = 0;
+c_733296.tag = closureN_tag;
+ c_733296.fn = (function_type)__lambda_189;
+c_733296.num_args = 1;
+c_733296.num_elements = 6;
+c_733296.elements = (object *)e_733336;
+c_733296.elements[0] = ((closureN)self_731439)->elements[0];
+c_733296.elements[1] = index_73269_73585;
+c_733296.elements[2] = k_731074;
+c_733296.elements[3] = ((closureN)self_731439)->elements[2];
+c_733296.elements[4] = value_73268_73584;
+c_733296.elements[5] = ((closureN)self_731439)->elements[3];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_733295,__lambda_189,  Cyc_num_fast_eq_op(data, index_73269_73585, car(((closureN)self_731439)->elements[0])));}
+return_direct_with_clo1(data,(closure)&c_733296,__lambda_189,  Cyc_num_fast_eq_op(data, index_73269_73585, car(((closureN)self_731439)->elements[0])));}
 ;; 
 }
 
 static void __lambda_189(void *data, int argc, object self_731440, object r_731077) {
   if( (boolean_f != r_731077) ){ 
   
-closureN_type c_733297;
-object e_733305 [3];
-c_733297.hdr.mark = gc_color_red;
- c_733297.hdr.grayed = 0;
-c_733297.tag = closureN_tag;
- c_733297.fn = (function_type)__lambda_190;
-c_733297.num_args = 1;
-c_733297.num_elements = 3;
-c_733297.elements = (object *)e_733305;
-c_733297.elements[0] = ((closureN)self_731440)->elements[0];
-c_733297.elements[1] = ((closureN)self_731440)->elements[2];
-c_733297.elements[2] = ((closureN)self_731440)->elements[4];
+closureN_type c_733298;
+object e_733306 [3];
+c_733298.hdr.mark = gc_color_red;
+ c_733298.hdr.grayed = 0;
+c_733298.tag = closureN_tag;
+ c_733298.fn = (function_type)__lambda_190;
+c_733298.num_args = 1;
+c_733298.num_elements = 3;
+c_733298.elements = (object *)e_733306;
+c_733298.elements[0] = ((closureN)self_731440)->elements[0];
+c_733298.elements[1] = ((closureN)self_731440)->elements[2];
+c_733298.elements[2] = ((closureN)self_731440)->elements[4];
 
 
-complex_num_type local_733308; 
+complex_num_type local_733309; 
 
 
-return_direct_with_clo1(data,(closure)&c_733297,__lambda_190,  Cyc_fast_sum(data,&local_733308, car(((closureN)self_731440)->elements[0]), obj_int2obj(1)));
+return_direct_with_clo1(data,(closure)&c_733298,__lambda_190,  Cyc_fast_sum(data,&local_733309, car(((closureN)self_731440)->elements[0]), obj_int2obj(1)));
 } else { 
   
-closureN_type c_733313;
-object e_733328 [5];
-c_733313.hdr.mark = gc_color_red;
- c_733313.hdr.grayed = 0;
-c_733313.tag = closureN_tag;
- c_733313.fn = (function_type)__lambda_191;
-c_733313.num_args = 1;
-c_733313.num_elements = 5;
-c_733313.elements = (object *)e_733328;
-c_733313.elements[0] = ((closureN)self_731440)->elements[0];
-c_733313.elements[1] = ((closureN)self_731440)->elements[1];
-c_733313.elements[2] = ((closureN)self_731440)->elements[2];
-c_733313.elements[3] = ((closureN)self_731440)->elements[3];
-c_733313.elements[4] = ((closureN)self_731440)->elements[5];
+closureN_type c_733314;
+object e_733329 [5];
+c_733314.hdr.mark = gc_color_red;
+ c_733314.hdr.grayed = 0;
+c_733314.tag = closureN_tag;
+ c_733314.fn = (function_type)__lambda_191;
+c_733314.num_args = 1;
+c_733314.num_elements = 5;
+c_733314.elements = (object *)e_733329;
+c_733314.elements[0] = ((closureN)self_731440)->elements[0];
+c_733314.elements[1] = ((closureN)self_731440)->elements[1];
+c_733314.elements[2] = ((closureN)self_731440)->elements[2];
+c_733314.elements[3] = ((closureN)self_731440)->elements[3];
+c_733314.elements[4] = ((closureN)self_731440)->elements[5];
 
 
-complex_num_type local_733331; 
+complex_num_type local_733332; 
 
 
-return_direct_with_clo1(data,(closure)&c_733313,__lambda_191,  Cyc_fast_sum(data,&local_733331, car(((closureN)self_731440)->elements[0]), obj_int2obj(1)));}
+return_direct_with_clo1(data,(closure)&c_733314,__lambda_191,  Cyc_fast_sum(data,&local_733332, car(((closureN)self_731440)->elements[0]), obj_int2obj(1)));}
 ;; 
 }
 
 static void __lambda_191(void *data, int argc, object self_731442, object r_731082) {
   
   Cyc_set_cell(data, ((closureN)self_731442)->elements[0], r_731082);
-closureN_type c_733317;
-object e_733324 [3];
-c_733317.hdr.mark = gc_color_red;
- c_733317.hdr.grayed = 0;
-c_733317.tag = closureN_tag;
- c_733317.fn = (function_type)__lambda_192;
-c_733317.num_args = 1;
-c_733317.num_elements = 3;
-c_733317.elements = (object *)e_733324;
-c_733317.elements[0] = ((closureN)self_731442)->elements[1];
-c_733317.elements[1] = ((closureN)self_731442)->elements[2];
-c_733317.elements[2] = ((closureN)self_731442)->elements[3];
+closureN_type c_733318;
+object e_733325 [3];
+c_733318.hdr.mark = gc_color_red;
+ c_733318.hdr.grayed = 0;
+c_733318.tag = closureN_tag;
+ c_733318.fn = (function_type)__lambda_192;
+c_733318.num_args = 1;
+c_733318.num_elements = 3;
+c_733318.elements = (object *)e_733325;
+c_733318.elements[0] = ((closureN)self_731442)->elements[1];
+c_733318.elements[1] = ((closureN)self_731442)->elements[2];
+c_733318.elements[2] = ((closureN)self_731442)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731442)->elements[4],  &c_733317);;; 
+return_closcall1(data,  ((closureN)self_731442)->elements[4],  &c_733318);;; 
 }
 
 static void __lambda_192(void *data, int argc, object self_731443, object r_731081) {
@@ -2533,112 +2555,112 @@ load_varargs(args_73238_73242_73565, args_73238_73242_73565_raw, argc - 1);
   
   
   
-  make_pair(c_733120,quote_gen,NULL);c_733120.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733120))) ){ 
+  make_pair(c_733121,quote_gen,NULL);c_733121.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733121))) ){ 
   
-mclosure0(c_733125, (function_type)__lambda_171);c_733125.num_args = 1;
+mclosure0(c_733126, (function_type)__lambda_171);c_733126.num_args = 1;
 
-object c_733124 = apply(data,  k_731040,&c_733125, args_73238_73242_73565);
-return_closcall1(data,  k_731040,  c_733124);
+object c_733125 = apply(data,  k_731040,&c_733126, args_73238_73242_73565);
+return_closcall1(data,  k_731040,  c_733125);
 } else { 
     
   
   
-  make_pair(c_733134,quote__123_123,NULL);c_733134.hdr.immutable = 1;
-  make_pair(c_733133,quote_gen,&c_733134);c_733133.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733133))) ){ 
+  make_pair(c_733135,quote__123_123,NULL);c_733135.hdr.immutable = 1;
+  make_pair(c_733134,quote_gen,&c_733135);c_733134.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73238_73242_73565), Cyc_length(data, &c_733134))) ){ 
   
-mclosure0(c_733139, (function_type)__lambda_172);c_733139.num_args = 2;
+mclosure0(c_733140, (function_type)__lambda_172);c_733140.num_args = 2;
 
-object c_733138 = apply(data,  k_731040,&c_733139, args_73238_73242_73565);
-return_closcall1(data,  k_731040,  c_733138);
+object c_733139 = apply(data,  k_731040,&c_733140, args_73238_73242_73565);
+return_closcall1(data,  k_731040,  c_733139);
 } else { 
   
-make_utf8_string_with_len(c_733237, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731040, &c_733237);}
+make_utf8_string_with_len(c_733238, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731040, &c_733238);}
 ;}
 ;; 
 }
 
 static void __lambda_172(void *data, int argc, object self_731418, object k_731047, object gen_73247_73570, object _123_123_73248_73571) {
   
-closureN_type c_733141;
-object e_733235 [3];
-c_733141.hdr.mark = gc_color_red;
- c_733141.hdr.grayed = 0;
-c_733141.tag = closureN_tag;
- c_733141.fn = (function_type)__lambda_173;
-c_733141.num_args = 2;
-c_733141.num_elements = 3;
-c_733141.elements = (object *)e_733235;
-c_733141.elements[0] = _123_123_73248_73571;
-c_733141.elements[1] = gen_73247_73570;
-c_733141.elements[2] = k_731047;
+closureN_type c_733142;
+object e_733236 [3];
+c_733142.hdr.mark = gc_color_red;
+ c_733142.hdr.grayed = 0;
+c_733142.tag = closureN_tag;
+ c_733142.fn = (function_type)__lambda_173;
+c_733142.num_args = 2;
+c_733142.num_elements = 3;
+c_733142.elements = (object *)e_733236;
+c_733142.elements[0] = _123_123_73248_73571;
+c_733142.elements[1] = gen_73247_73570;
+c_733142.elements[2] = k_731047;
 
-return_direct_with_clo2(data,(closure)&c_733141,__lambda_173,  boolean_f, boolean_f);; 
+return_direct_with_clo2(data,(closure)&c_733142,__lambda_173,  boolean_f, boolean_f);; 
 }
 
 static void __lambda_173(void *data, int argc, object self_731419, object firsttime_73572, object prev_73573) {
   
-closureN_type c_733143;
-object e_733231 [4];
-c_733143.hdr.mark = gc_color_red;
- c_733143.hdr.grayed = 0;
-c_733143.tag = closureN_tag;
- c_733143.fn = (function_type)__lambda_298;
-c_733143.num_args = 1;
-c_733143.num_elements = 4;
-c_733143.elements = (object *)e_733231;
-c_733143.elements[0] = ((closureN)self_731419)->elements[0];
-c_733143.elements[1] = ((closureN)self_731419)->elements[1];
-c_733143.elements[2] = ((closureN)self_731419)->elements[2];
-c_733143.elements[3] = prev_73573;
+closureN_type c_733144;
+object e_733232 [4];
+c_733144.hdr.mark = gc_color_red;
+ c_733144.hdr.grayed = 0;
+c_733144.tag = closureN_tag;
+ c_733144.fn = (function_type)__lambda_299;
+c_733144.num_args = 1;
+c_733144.num_elements = 4;
+c_733144.elements = (object *)e_733232;
+c_733144.elements[0] = ((closureN)self_731419)->elements[0];
+c_733144.elements[1] = ((closureN)self_731419)->elements[1];
+c_733144.elements[2] = ((closureN)self_731419)->elements[2];
+c_733144.elements[3] = prev_73573;
 
 
-pair_type local_733234; 
-return_direct_with_clo1(data,(closure)&c_733143,__lambda_298,  set_cell_as_expr(&local_733234, firsttime_73572));; 
+pair_type local_733235; 
+return_direct_with_clo1(data,(closure)&c_733144,__lambda_299,  set_cell_as_expr(&local_733235, firsttime_73572));; 
 }
 
-static void __lambda_298(void *data, int argc, object self_731420, object firsttime_73572) {
+static void __lambda_299(void *data, int argc, object self_731420, object firsttime_73572) {
   
-closureN_type c_733145;
-object e_733226 [4];
-c_733145.hdr.mark = gc_color_red;
- c_733145.hdr.grayed = 0;
-c_733145.tag = closureN_tag;
- c_733145.fn = (function_type)__lambda_297;
-c_733145.num_args = 1;
-c_733145.num_elements = 4;
-c_733145.elements = (object *)e_733226;
-c_733145.elements[0] = ((closureN)self_731420)->elements[0];
-c_733145.elements[1] = firsttime_73572;
-c_733145.elements[2] = ((closureN)self_731420)->elements[1];
-c_733145.elements[3] = ((closureN)self_731420)->elements[2];
+closureN_type c_733146;
+object e_733227 [4];
+c_733146.hdr.mark = gc_color_red;
+ c_733146.hdr.grayed = 0;
+c_733146.tag = closureN_tag;
+ c_733146.fn = (function_type)__lambda_298;
+c_733146.num_args = 1;
+c_733146.num_elements = 4;
+c_733146.elements = (object *)e_733227;
+c_733146.elements[0] = ((closureN)self_731420)->elements[0];
+c_733146.elements[1] = firsttime_73572;
+c_733146.elements[2] = ((closureN)self_731420)->elements[1];
+c_733146.elements[3] = ((closureN)self_731420)->elements[2];
 
 
-pair_type local_733229; 
-return_direct_with_clo1(data,(closure)&c_733145,__lambda_297,  set_cell_as_expr(&local_733229, ((closureN)self_731420)->elements[3]));; 
+pair_type local_733230; 
+return_direct_with_clo1(data,(closure)&c_733146,__lambda_298,  set_cell_as_expr(&local_733230, ((closureN)self_731420)->elements[3]));; 
 }
 
-static void __lambda_297(void *data, int argc, object self_731421, object prev_73573) {
+static void __lambda_298(void *data, int argc, object self_731421, object prev_73573) {
   
   
   Cyc_set_cell(data, ((closureN)self_731421)->elements[1], boolean_t);Cyc_set_cell(data, prev_73573, boolean_f);
-closureN_type c_733149;
-object e_733220 [4];
-c_733149.hdr.mark = gc_color_red;
- c_733149.hdr.grayed = 0;
-c_733149.tag = closureN_tag;
- c_733149.fn = (function_type)__lambda_174;
-c_733149.num_args = 0;
-c_733149.num_elements = 4;
-c_733149.elements = (object *)e_733220;
-c_733149.elements[0] = ((closureN)self_731421)->elements[0];
-c_733149.elements[1] = ((closureN)self_731421)->elements[1];
-c_733149.elements[2] = ((closureN)self_731421)->elements[2];
-c_733149.elements[3] = prev_73573;
+closureN_type c_733150;
+object e_733221 [4];
+c_733150.hdr.mark = gc_color_red;
+ c_733150.hdr.grayed = 0;
+c_733150.tag = closureN_tag;
+ c_733150.fn = (function_type)__lambda_174;
+c_733150.num_args = 0;
+c_733150.num_elements = 4;
+c_733150.elements = (object *)e_733221;
+c_733150.elements[0] = ((closureN)self_731421)->elements[0];
+c_733150.elements[1] = ((closureN)self_731421)->elements[1];
+c_733150.elements[2] = ((closureN)self_731421)->elements[2];
+c_733150.elements[3] = prev_73573;
 
-return_closcall1(data,  ((closureN)self_731421)->elements[3],  &c_733149);;; 
+return_closcall1(data,  ((closureN)self_731421)->elements[3],  &c_733150);;; 
 }
 
 static void __lambda_174(void *data, int argc, object self_731422, object k_731050) {
@@ -2646,98 +2668,98 @@ static void __lambda_174(void *data, int argc, object self_731422, object k_7310
 if( (boolean_f != car(((closureN)self_731422)->elements[1])) ){ 
   
   Cyc_set_cell(data, ((closureN)self_731422)->elements[1], boolean_f);
-closureN_type c_733156;
-object e_733166 [2];
-c_733156.hdr.mark = gc_color_red;
- c_733156.hdr.grayed = 0;
-c_733156.tag = closureN_tag;
- c_733156.fn = (function_type)__lambda_175;
-c_733156.num_args = 1;
-c_733156.num_elements = 2;
-c_733156.elements = (object *)e_733166;
-c_733156.elements[0] = k_731050;
-c_733156.elements[1] = ((closureN)self_731422)->elements[3];
+closureN_type c_733157;
+object e_733167 [2];
+c_733157.hdr.mark = gc_color_red;
+ c_733157.hdr.grayed = 0;
+c_733157.tag = closureN_tag;
+ c_733157.fn = (function_type)__lambda_175;
+c_733157.num_args = 1;
+c_733157.num_elements = 2;
+c_733157.elements = (object *)e_733167;
+c_733157.elements[0] = k_731050;
+c_733157.elements[1] = ((closureN)self_731422)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731422)->elements[2],  &c_733156);;
+return_closcall1(data,  ((closureN)self_731422)->elements[2],  &c_733157);;
 } else { 
   
-closureN_type c_733172;
-object e_733219 [4];
-c_733172.hdr.mark = gc_color_red;
- c_733172.hdr.grayed = 0;
-c_733172.tag = closureN_tag;
- c_733172.fn = (function_type)__lambda_176;
-c_733172.num_args = 1;
-c_733172.num_elements = 4;
-c_733172.elements = (object *)e_733219;
-c_733172.elements[0] = ((closureN)self_731422)->elements[0];
-c_733172.elements[1] = ((closureN)self_731422)->elements[2];
-c_733172.elements[2] = k_731050;
-c_733172.elements[3] = ((closureN)self_731422)->elements[3];
+closureN_type c_733173;
+object e_733220 [4];
+c_733173.hdr.mark = gc_color_red;
+ c_733173.hdr.grayed = 0;
+c_733173.tag = closureN_tag;
+ c_733173.fn = (function_type)__lambda_176;
+c_733173.num_args = 1;
+c_733173.num_elements = 4;
+c_733173.elements = (object *)e_733220;
+c_733173.elements[0] = ((closureN)self_731422)->elements[0];
+c_733173.elements[1] = ((closureN)self_731422)->elements[2];
+c_733173.elements[2] = k_731050;
+c_733173.elements[3] = ((closureN)self_731422)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731422)->elements[2],  &c_733172);}
+return_closcall1(data,  ((closureN)self_731422)->elements[2],  &c_733173);}
 ;; 
 }
 
 static void __lambda_176(void *data, int argc, object self_731424, object v_73250_73574) {
   
-closureN_type c_733174;
-object e_733218 [5];
-c_733174.hdr.mark = gc_color_red;
- c_733174.hdr.grayed = 0;
-c_733174.tag = closureN_tag;
- c_733174.fn = (function_type)__lambda_177;
-c_733174.num_args = 1;
-c_733174.num_elements = 5;
-c_733174.elements = (object *)e_733218;
-c_733174.elements[0] = ((closureN)self_731424)->elements[0];
-c_733174.elements[1] = ((closureN)self_731424)->elements[1];
-c_733174.elements[2] = ((closureN)self_731424)->elements[2];
-c_733174.elements[3] = ((closureN)self_731424)->elements[3];
-c_733174.elements[4] = v_73250_73574;
+closureN_type c_733175;
+object e_733219 [5];
+c_733175.hdr.mark = gc_color_red;
+ c_733175.hdr.grayed = 0;
+c_733175.tag = closureN_tag;
+ c_733175.fn = (function_type)__lambda_177;
+c_733175.num_args = 1;
+c_733175.num_elements = 5;
+c_733175.elements = (object *)e_733219;
+c_733175.elements[0] = ((closureN)self_731424)->elements[0];
+c_733175.elements[1] = ((closureN)self_731424)->elements[1];
+c_733175.elements[2] = ((closureN)self_731424)->elements[2];
+c_733175.elements[3] = ((closureN)self_731424)->elements[3];
+c_733175.elements[4] = v_73250_73574;
 
-return_direct_with_clo1(data,(closure)&c_733174,__lambda_177,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733175,__lambda_177,  boolean_f);; 
 }
 
 static void __lambda_177(void *data, int argc, object self_731425, object loop_73251_73575) {
   
-closureN_type c_733176;
-object e_733214 [5];
-c_733176.hdr.mark = gc_color_red;
- c_733176.hdr.grayed = 0;
-c_733176.tag = closureN_tag;
- c_733176.fn = (function_type)__lambda_296;
-c_733176.num_args = 1;
-c_733176.num_elements = 5;
-c_733176.elements = (object *)e_733214;
-c_733176.elements[0] = ((closureN)self_731425)->elements[0];
-c_733176.elements[1] = ((closureN)self_731425)->elements[1];
-c_733176.elements[2] = ((closureN)self_731425)->elements[2];
-c_733176.elements[3] = ((closureN)self_731425)->elements[3];
-c_733176.elements[4] = ((closureN)self_731425)->elements[4];
+closureN_type c_733177;
+object e_733215 [5];
+c_733177.hdr.mark = gc_color_red;
+ c_733177.hdr.grayed = 0;
+c_733177.tag = closureN_tag;
+ c_733177.fn = (function_type)__lambda_297;
+c_733177.num_args = 1;
+c_733177.num_elements = 5;
+c_733177.elements = (object *)e_733215;
+c_733177.elements[0] = ((closureN)self_731425)->elements[0];
+c_733177.elements[1] = ((closureN)self_731425)->elements[1];
+c_733177.elements[2] = ((closureN)self_731425)->elements[2];
+c_733177.elements[3] = ((closureN)self_731425)->elements[3];
+c_733177.elements[4] = ((closureN)self_731425)->elements[4];
 
 
-pair_type local_733217; 
-return_direct_with_clo1(data,(closure)&c_733176,__lambda_296,  set_cell_as_expr(&local_733217, loop_73251_73575));; 
+pair_type local_733218; 
+return_direct_with_clo1(data,(closure)&c_733177,__lambda_297,  set_cell_as_expr(&local_733218, loop_73251_73575));; 
 }
 
-static void __lambda_296(void *data, int argc, object self_731426, object loop_73251_73575) {
+static void __lambda_297(void *data, int argc, object self_731426, object loop_73251_73575) {
   
-  closureN_type c_733185;
-object e_733213 [4];
-c_733185.hdr.mark = gc_color_red;
- c_733185.hdr.grayed = 0;
-c_733185.tag = closureN_tag;
- c_733185.fn = (function_type)__lambda_178;
-c_733185.num_args = 1;
-c_733185.num_elements = 4;
-c_733185.elements = (object *)e_733213;
-c_733185.elements[0] = ((closureN)self_731426)->elements[0];
-c_733185.elements[1] = ((closureN)self_731426)->elements[1];
-c_733185.elements[2] = loop_73251_73575;
-c_733185.elements[3] = ((closureN)self_731426)->elements[3];
+  closureN_type c_733186;
+object e_733214 [4];
+c_733186.hdr.mark = gc_color_red;
+ c_733186.hdr.grayed = 0;
+c_733186.tag = closureN_tag;
+ c_733186.fn = (function_type)__lambda_178;
+c_733186.num_args = 1;
+c_733186.num_elements = 4;
+c_733186.elements = (object *)e_733214;
+c_733186.elements[0] = ((closureN)self_731426)->elements[0];
+c_733186.elements[1] = ((closureN)self_731426)->elements[1];
+c_733186.elements[2] = loop_73251_73575;
+c_733186.elements[3] = ((closureN)self_731426)->elements[3];
 
-  Cyc_set_cell(data, loop_73251_73575, &c_733185);
+  Cyc_set_cell(data, loop_73251_73575, &c_733186);
 
 return_closcall2(data,  car(loop_73251_73575),  ((closureN)self_731426)->elements[2], ((closureN)self_731426)->elements[4]);;; 
 }
@@ -2748,43 +2770,43 @@ if( (boolean_f != Cyc_is_eof_object(v_73252_73576)) ){
   return_closcall1(data,  k_731057,  v_73252_73576);
 } else { 
   
-closureN_type c_733191;
-object e_733209 [5];
-c_733191.hdr.mark = gc_color_red;
- c_733191.hdr.grayed = 0;
-c_733191.tag = closureN_tag;
- c_733191.fn = (function_type)__lambda_179;
-c_733191.num_args = 1;
-c_733191.num_elements = 5;
-c_733191.elements = (object *)e_733209;
-c_733191.elements[0] = ((closureN)self_731427)->elements[1];
-c_733191.elements[1] = k_731057;
-c_733191.elements[2] = ((closureN)self_731427)->elements[2];
-c_733191.elements[3] = ((closureN)self_731427)->elements[3];
-c_733191.elements[4] = v_73252_73576;
+closureN_type c_733192;
+object e_733210 [5];
+c_733192.hdr.mark = gc_color_red;
+ c_733192.hdr.grayed = 0;
+c_733192.tag = closureN_tag;
+ c_733192.fn = (function_type)__lambda_179;
+c_733192.num_args = 1;
+c_733192.num_elements = 5;
+c_733192.elements = (object *)e_733210;
+c_733192.elements[0] = ((closureN)self_731427)->elements[1];
+c_733192.elements[1] = k_731057;
+c_733192.elements[2] = ((closureN)self_731427)->elements[2];
+c_733192.elements[3] = ((closureN)self_731427)->elements[3];
+c_733192.elements[4] = v_73252_73576;
 
 
 
-return_closcall3(data,  ((closureN)self_731427)->elements[0],  &c_733191, car(((closureN)self_731427)->elements[3]), v_73252_73576);}
+return_closcall3(data,  ((closureN)self_731427)->elements[0],  &c_733192, car(((closureN)self_731427)->elements[3]), v_73252_73576);}
 ;; 
 }
 
 static void __lambda_179(void *data, int argc, object self_731428, object r_731059) {
   if( (boolean_f != r_731059) ){ 
   
-closureN_type c_733194;
-object e_733200 [2];
-c_733194.hdr.mark = gc_color_red;
- c_733194.hdr.grayed = 0;
-c_733194.tag = closureN_tag;
- c_733194.fn = (function_type)__lambda_180;
-c_733194.num_args = 1;
-c_733194.num_elements = 2;
-c_733194.elements = (object *)e_733200;
-c_733194.elements[0] = ((closureN)self_731428)->elements[1];
-c_733194.elements[1] = ((closureN)self_731428)->elements[2];
+closureN_type c_733195;
+object e_733201 [2];
+c_733195.hdr.mark = gc_color_red;
+ c_733195.hdr.grayed = 0;
+c_733195.tag = closureN_tag;
+ c_733195.fn = (function_type)__lambda_180;
+c_733195.num_args = 1;
+c_733195.num_elements = 2;
+c_733195.elements = (object *)e_733201;
+c_733195.elements[0] = ((closureN)self_731428)->elements[1];
+c_733195.elements[1] = ((closureN)self_731428)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731428)->elements[0],  &c_733194);
+return_closcall1(data,  ((closureN)self_731428)->elements[0],  &c_733195);
 } else { 
   
   Cyc_set_cell(data, ((closureN)self_731428)->elements[3], ((closureN)self_731428)->elements[4]);return_closcall1(data,  ((closureN)self_731428)->elements[1],  ((closureN)self_731428)->elements[4]);;}
@@ -2814,131 +2836,131 @@ load_varargs(args_73214_73218_73555, args_73214_73218_73555_raw, argc - 1);
   
   
   
-  make_pair(c_733041,quote_gen,NULL);c_733041.hdr.immutable = 1;
-  make_pair(c_733040,quote_item,&c_733041);c_733040.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733040))) ){ 
+  make_pair(c_733042,quote_gen,NULL);c_733042.hdr.immutable = 1;
+  make_pair(c_733041,quote_item,&c_733042);c_733041.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733041))) ){ 
   
-mclosure0(c_733046, (function_type)__lambda_162);c_733046.num_args = 2;
+mclosure0(c_733047, (function_type)__lambda_162);c_733047.num_args = 2;
 
-object c_733045 = apply(data,  k_731018,&c_733046, args_73214_73218_73555);
-return_closcall1(data,  k_731018,  c_733045);
+object c_733046 = apply(data,  k_731018,&c_733047, args_73214_73218_73555);
+return_closcall1(data,  k_731018,  c_733046);
 } else { 
     
   
   
-  make_pair(c_733056,quote__123_123,NULL);c_733056.hdr.immutable = 1;
-  make_pair(c_733055,quote_gen,&c_733056);c_733055.hdr.immutable = 1;
-  make_pair(c_733054,quote_item,&c_733055);c_733054.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733054))) ){ 
+  make_pair(c_733057,quote__123_123,NULL);c_733057.hdr.immutable = 1;
+  make_pair(c_733056,quote_gen,&c_733057);c_733056.hdr.immutable = 1;
+  make_pair(c_733055,quote_item,&c_733056);c_733055.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73214_73218_73555), Cyc_length(data, &c_733055))) ){ 
   
-mclosure0(c_733061, (function_type)__lambda_163);c_733061.num_args = 3;
+mclosure0(c_733062, (function_type)__lambda_163);c_733062.num_args = 3;
 
-object c_733060 = apply(data,  k_731018,&c_733061, args_73214_73218_73555);
-return_closcall1(data,  k_731018,  c_733060);
+object c_733061 = apply(data,  k_731018,&c_733062, args_73214_73218_73555);
+return_closcall1(data,  k_731018,  c_733061);
 } else { 
   
-make_utf8_string_with_len(c_733112, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_731018, &c_733112);}
+make_utf8_string_with_len(c_733113, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_731018, &c_733113);}
 ;}
 ;; 
 }
 
 static void __lambda_163(void *data, int argc, object self_731409, object k_731025, object item_73224_73559, object gen_73225_73560, object _123_123_73226_73561) {
   
-closureN_type c_733063;
-object e_733110 [3];
-c_733063.hdr.mark = gc_color_red;
- c_733063.hdr.grayed = 0;
-c_733063.tag = closureN_tag;
- c_733063.fn = (function_type)__lambda_164;
-c_733063.num_args = 0;
-c_733063.num_elements = 3;
-c_733063.elements = (object *)e_733110;
-c_733063.elements[0] = _123_123_73226_73561;
-c_733063.elements[1] = gen_73225_73560;
-c_733063.elements[2] = item_73224_73559;
+closureN_type c_733064;
+object e_733111 [3];
+c_733064.hdr.mark = gc_color_red;
+ c_733064.hdr.grayed = 0;
+c_733064.tag = closureN_tag;
+ c_733064.fn = (function_type)__lambda_164;
+c_733064.num_args = 0;
+c_733064.num_elements = 3;
+c_733064.elements = (object *)e_733111;
+c_733064.elements[0] = _123_123_73226_73561;
+c_733064.elements[1] = gen_73225_73560;
+c_733064.elements[2] = item_73224_73559;
 
-return_closcall1(data,  k_731025,  &c_733063);; 
+return_closcall1(data,  k_731025,  &c_733064);; 
 }
 
 static void __lambda_164(void *data, int argc, object self_731410, object k_731026) {
   
-closureN_type c_733066;
-object e_733109 [4];
-c_733066.hdr.mark = gc_color_red;
- c_733066.hdr.grayed = 0;
-c_733066.tag = closureN_tag;
- c_733066.fn = (function_type)__lambda_165;
-c_733066.num_args = 1;
-c_733066.num_elements = 4;
-c_733066.elements = (object *)e_733109;
-c_733066.elements[0] = ((closureN)self_731410)->elements[0];
-c_733066.elements[1] = ((closureN)self_731410)->elements[1];
-c_733066.elements[2] = ((closureN)self_731410)->elements[2];
-c_733066.elements[3] = k_731026;
+closureN_type c_733067;
+object e_733110 [4];
+c_733067.hdr.mark = gc_color_red;
+ c_733067.hdr.grayed = 0;
+c_733067.tag = closureN_tag;
+ c_733067.fn = (function_type)__lambda_165;
+c_733067.num_args = 1;
+c_733067.num_elements = 4;
+c_733067.elements = (object *)e_733110;
+c_733067.elements[0] = ((closureN)self_731410)->elements[0];
+c_733067.elements[1] = ((closureN)self_731410)->elements[1];
+c_733067.elements[2] = ((closureN)self_731410)->elements[2];
+c_733067.elements[3] = k_731026;
 
-return_closcall1(data,  ((closureN)self_731410)->elements[1],  &c_733066);; 
+return_closcall1(data,  ((closureN)self_731410)->elements[1],  &c_733067);; 
 }
 
 static void __lambda_165(void *data, int argc, object self_731411, object v_73228_73562) {
   
-closureN_type c_733068;
-object e_733108 [5];
-c_733068.hdr.mark = gc_color_red;
- c_733068.hdr.grayed = 0;
-c_733068.tag = closureN_tag;
- c_733068.fn = (function_type)__lambda_166;
-c_733068.num_args = 1;
-c_733068.num_elements = 5;
-c_733068.elements = (object *)e_733108;
-c_733068.elements[0] = ((closureN)self_731411)->elements[0];
-c_733068.elements[1] = ((closureN)self_731411)->elements[1];
-c_733068.elements[2] = ((closureN)self_731411)->elements[2];
-c_733068.elements[3] = ((closureN)self_731411)->elements[3];
-c_733068.elements[4] = v_73228_73562;
+closureN_type c_733069;
+object e_733109 [5];
+c_733069.hdr.mark = gc_color_red;
+ c_733069.hdr.grayed = 0;
+c_733069.tag = closureN_tag;
+ c_733069.fn = (function_type)__lambda_166;
+c_733069.num_args = 1;
+c_733069.num_elements = 5;
+c_733069.elements = (object *)e_733109;
+c_733069.elements[0] = ((closureN)self_731411)->elements[0];
+c_733069.elements[1] = ((closureN)self_731411)->elements[1];
+c_733069.elements[2] = ((closureN)self_731411)->elements[2];
+c_733069.elements[3] = ((closureN)self_731411)->elements[3];
+c_733069.elements[4] = v_73228_73562;
 
-return_direct_with_clo1(data,(closure)&c_733068,__lambda_166,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_733069,__lambda_166,  boolean_f);; 
 }
 
 static void __lambda_166(void *data, int argc, object self_731412, object loop_73229_73563) {
   
-closureN_type c_733070;
-object e_733104 [5];
-c_733070.hdr.mark = gc_color_red;
- c_733070.hdr.grayed = 0;
-c_733070.tag = closureN_tag;
- c_733070.fn = (function_type)__lambda_295;
-c_733070.num_args = 1;
-c_733070.num_elements = 5;
-c_733070.elements = (object *)e_733104;
-c_733070.elements[0] = ((closureN)self_731412)->elements[0];
-c_733070.elements[1] = ((closureN)self_731412)->elements[1];
-c_733070.elements[2] = ((closureN)self_731412)->elements[2];
-c_733070.elements[3] = ((closureN)self_731412)->elements[3];
-c_733070.elements[4] = ((closureN)self_731412)->elements[4];
+closureN_type c_733071;
+object e_733105 [5];
+c_733071.hdr.mark = gc_color_red;
+ c_733071.hdr.grayed = 0;
+c_733071.tag = closureN_tag;
+ c_733071.fn = (function_type)__lambda_296;
+c_733071.num_args = 1;
+c_733071.num_elements = 5;
+c_733071.elements = (object *)e_733105;
+c_733071.elements[0] = ((closureN)self_731412)->elements[0];
+c_733071.elements[1] = ((closureN)self_731412)->elements[1];
+c_733071.elements[2] = ((closureN)self_731412)->elements[2];
+c_733071.elements[3] = ((closureN)self_731412)->elements[3];
+c_733071.elements[4] = ((closureN)self_731412)->elements[4];
 
 
-pair_type local_733107; 
-return_direct_with_clo1(data,(closure)&c_733070,__lambda_295,  set_cell_as_expr(&local_733107, loop_73229_73563));; 
+pair_type local_733108; 
+return_direct_with_clo1(data,(closure)&c_733071,__lambda_296,  set_cell_as_expr(&local_733108, loop_73229_73563));; 
 }
 
-static void __lambda_295(void *data, int argc, object self_731413, object loop_73229_73563) {
+static void __lambda_296(void *data, int argc, object self_731413, object loop_73229_73563) {
   
-  closureN_type c_733079;
-object e_733103 [4];
-c_733079.hdr.mark = gc_color_red;
- c_733079.hdr.grayed = 0;
-c_733079.tag = closureN_tag;
- c_733079.fn = (function_type)__lambda_167;
-c_733079.num_args = 1;
-c_733079.num_elements = 4;
-c_733079.elements = (object *)e_733103;
-c_733079.elements[0] = ((closureN)self_731413)->elements[0];
-c_733079.elements[1] = ((closureN)self_731413)->elements[1];
-c_733079.elements[2] = ((closureN)self_731413)->elements[2];
-c_733079.elements[3] = loop_73229_73563;
+  closureN_type c_733080;
+object e_733104 [4];
+c_733080.hdr.mark = gc_color_red;
+ c_733080.hdr.grayed = 0;
+c_733080.tag = closureN_tag;
+ c_733080.fn = (function_type)__lambda_167;
+c_733080.num_args = 1;
+c_733080.num_elements = 4;
+c_733080.elements = (object *)e_733104;
+c_733080.elements[0] = ((closureN)self_731413)->elements[0];
+c_733080.elements[1] = ((closureN)self_731413)->elements[1];
+c_733080.elements[2] = ((closureN)self_731413)->elements[2];
+c_733080.elements[3] = loop_73229_73563;
 
-  Cyc_set_cell(data, loop_73229_73563, &c_733079);
+  Cyc_set_cell(data, loop_73229_73563, &c_733080);
 
 return_closcall2(data,  car(loop_73229_73563),  ((closureN)self_731413)->elements[3], ((closureN)self_731413)->elements[4]);;; 
 }
@@ -2947,45 +2969,45 @@ static void __lambda_167(void *data, int argc, object self_731414, object k_7310
     
 if( (boolean_f != Cyc_is_eof_object(v_73230_73564)) ){ 
   
-complex_num_type local_733085; 
+complex_num_type local_733086; 
 return_closcall1(data,  k_731030,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733085));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_733086));
 } else { 
   
-closureN_type c_733088;
-object e_733101 [4];
-c_733088.hdr.mark = gc_color_red;
- c_733088.hdr.grayed = 0;
-c_733088.tag = closureN_tag;
- c_733088.fn = (function_type)__lambda_168;
-c_733088.num_args = 1;
-c_733088.num_elements = 4;
-c_733088.elements = (object *)e_733101;
-c_733088.elements[0] = ((closureN)self_731414)->elements[1];
-c_733088.elements[1] = k_731030;
-c_733088.elements[2] = ((closureN)self_731414)->elements[3];
-c_733088.elements[3] = v_73230_73564;
+closureN_type c_733089;
+object e_733102 [4];
+c_733089.hdr.mark = gc_color_red;
+ c_733089.hdr.grayed = 0;
+c_733089.tag = closureN_tag;
+ c_733089.fn = (function_type)__lambda_168;
+c_733089.num_args = 1;
+c_733089.num_elements = 4;
+c_733089.elements = (object *)e_733102;
+c_733089.elements[0] = ((closureN)self_731414)->elements[1];
+c_733089.elements[1] = k_731030;
+c_733089.elements[2] = ((closureN)self_731414)->elements[3];
+c_733089.elements[3] = v_73230_73564;
 
-return_closcall3(data,  ((closureN)self_731414)->elements[0],  &c_733088, ((closureN)self_731414)->elements[2], v_73230_73564);}
+return_closcall3(data,  ((closureN)self_731414)->elements[0],  &c_733089, ((closureN)self_731414)->elements[2], v_73230_73564);}
 ;; 
 }
 
 static void __lambda_168(void *data, int argc, object self_731415, object r_731032) {
   if( (boolean_f != r_731032) ){ 
   
-closureN_type c_733091;
-object e_733097 [2];
-c_733091.hdr.mark = gc_color_red;
- c_733091.hdr.grayed = 0;
-c_733091.tag = closureN_tag;
- c_733091.fn = (function_type)__lambda_169;
-c_733091.num_args = 1;
-c_733091.num_elements = 2;
-c_733091.elements = (object *)e_733097;
-c_733091.elements[0] = ((closureN)self_731415)->elements[1];
-c_733091.elements[1] = ((closureN)self_731415)->elements[2];
+closureN_type c_733092;
+object e_733098 [2];
+c_733092.hdr.mark = gc_color_red;
+ c_733092.hdr.grayed = 0;
+c_733092.tag = closureN_tag;
+ c_733092.fn = (function_type)__lambda_169;
+c_733092.num_args = 1;
+c_733092.num_elements = 2;
+c_733092.elements = (object *)e_733098;
+c_733092.elements[0] = ((closureN)self_731415)->elements[1];
+c_733092.elements[1] = ((closureN)self_731415)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731415)->elements[0],  &c_733091);
+return_closcall1(data,  ((closureN)self_731415)->elements[0],  &c_733092);
 } else { 
   return_closcall1(data,  ((closureN)self_731415)->elements[1],  ((closureN)self_731415)->elements[3]);}
 ;; 
@@ -3004,58 +3026,58 @@ static void __lambda_162(void *data, int argc, object self_731408, object k_7310
 static void __lambda_156(void *data, int argc, closure _,object k_731009, object pred_73211_73552, object gen_73212_73553) {
   Cyc_st_add(data, "srfi/121.sld:gtake-while");
 
-closureN_type c_732995;
-object e_733029 [2];
-c_732995.hdr.mark = gc_color_red;
- c_732995.hdr.grayed = 0;
-c_732995.tag = closureN_tag;
- c_732995.fn = (function_type)__lambda_294;
-c_732995.num_args = 1;
-c_732995.num_elements = 2;
-c_732995.elements = (object *)e_733029;
-c_732995.elements[0] = k_731009;
-c_732995.elements[1] = pred_73211_73552;
+closureN_type c_732996;
+object e_733030 [2];
+c_732996.hdr.mark = gc_color_red;
+ c_732996.hdr.grayed = 0;
+c_732996.tag = closureN_tag;
+ c_732996.fn = (function_type)__lambda_295;
+c_732996.num_args = 1;
+c_732996.num_elements = 2;
+c_732996.elements = (object *)e_733030;
+c_732996.elements[0] = k_731009;
+c_732996.elements[1] = pred_73211_73552;
 
 
-pair_type local_733032; 
-return_direct_with_clo1(data,(closure)&c_732995,__lambda_294,  set_cell_as_expr(&local_733032, gen_73212_73553));; 
+pair_type local_733033; 
+return_direct_with_clo1(data,(closure)&c_732996,__lambda_295,  set_cell_as_expr(&local_733033, gen_73212_73553));; 
 }
 
-static void __lambda_294(void *data, int argc, object self_731403, object gen_73212_73553) {
+static void __lambda_295(void *data, int argc, object self_731403, object gen_73212_73553) {
   
-closureN_type c_732998;
-object e_733028 [2];
-c_732998.hdr.mark = gc_color_red;
- c_732998.hdr.grayed = 0;
-c_732998.tag = closureN_tag;
- c_732998.fn = (function_type)__lambda_157;
-c_732998.num_args = 0;
-c_732998.num_elements = 2;
-c_732998.elements = (object *)e_733028;
-c_732998.elements[0] = gen_73212_73553;
-c_732998.elements[1] = ((closureN)self_731403)->elements[1];
+closureN_type c_732999;
+object e_733029 [2];
+c_732999.hdr.mark = gc_color_red;
+ c_732999.hdr.grayed = 0;
+c_732999.tag = closureN_tag;
+ c_732999.fn = (function_type)__lambda_157;
+c_732999.num_args = 0;
+c_732999.num_elements = 2;
+c_732999.elements = (object *)e_733029;
+c_732999.elements[0] = gen_73212_73553;
+c_732999.elements[1] = ((closureN)self_731403)->elements[1];
 
-return_closcall1(data,  ((closureN)self_731403)->elements[0],  &c_732998);; 
+return_closcall1(data,  ((closureN)self_731403)->elements[0],  &c_732999);; 
 }
 
 static void __lambda_157(void *data, int argc, object self_731404, object k_731010) {
   
 
 
-closureN_type c_733003;
-object e_733027 [3];
-c_733003.hdr.mark = gc_color_red;
- c_733003.hdr.grayed = 0;
-c_733003.tag = closureN_tag;
- c_733003.fn = (function_type)__lambda_158;
-c_733003.num_args = 1;
-c_733003.num_elements = 3;
-c_733003.elements = (object *)e_733027;
-c_733003.elements[0] = ((closureN)self_731404)->elements[0];
-c_733003.elements[1] = k_731010;
-c_733003.elements[2] = ((closureN)self_731404)->elements[1];
+closureN_type c_733004;
+object e_733028 [3];
+c_733004.hdr.mark = gc_color_red;
+ c_733004.hdr.grayed = 0;
+c_733004.tag = closureN_tag;
+ c_733004.fn = (function_type)__lambda_158;
+c_733004.num_args = 1;
+c_733004.num_elements = 3;
+c_733004.elements = (object *)e_733028;
+c_733004.elements[0] = ((closureN)self_731404)->elements[0];
+c_733004.elements[1] = k_731010;
+c_733004.elements[2] = ((closureN)self_731404)->elements[1];
 
-return_closcall1(data,  car(((closureN)self_731404)->elements[0]),  &c_733003);; 
+return_closcall1(data,  car(((closureN)self_731404)->elements[0]),  &c_733004);; 
 }
 
 static void __lambda_158(void *data, int argc, object self_731405, object next_73213_73554) {
@@ -3064,20 +3086,20 @@ if( (boolean_f != Cyc_is_eof_object(next_73213_73554)) ){
   return_closcall1(data,  ((closureN)self_731405)->elements[1],  next_73213_73554);
 } else { 
   
-closureN_type c_733010;
-object e_733026 [3];
-c_733010.hdr.mark = gc_color_red;
- c_733010.hdr.grayed = 0;
-c_733010.tag = closureN_tag;
- c_733010.fn = (function_type)__lambda_159;
-c_733010.num_args = 1;
-c_733010.num_elements = 3;
-c_733010.elements = (object *)e_733026;
-c_733010.elements[0] = ((closureN)self_731405)->elements[0];
-c_733010.elements[1] = ((closureN)self_731405)->elements[1];
-c_733010.elements[2] = next_73213_73554;
+closureN_type c_733011;
+object e_733027 [3];
+c_733011.hdr.mark = gc_color_red;
+ c_733011.hdr.grayed = 0;
+c_733011.tag = closureN_tag;
+ c_733011.fn = (function_type)__lambda_159;
+c_733011.num_args = 1;
+c_733011.num_elements = 3;
+c_733011.elements = (object *)e_733027;
+c_733011.elements[0] = ((closureN)self_731405)->elements[0];
+c_733011.elements[1] = ((closureN)self_731405)->elements[1];
+c_733011.elements[2] = next_73213_73554;
 
-return_closcall2(data,  ((closureN)self_731405)->elements[2],  &c_733010, next_73213_73554);}
+return_closcall2(data,  ((closureN)self_731405)->elements[2],  &c_733011, next_73213_73554);}
 ;; 
 }
 
@@ -3086,19 +3108,19 @@ static void __lambda_159(void *data, int argc, object self_731406, object r_7310
   return_closcall1(data,  ((closureN)self_731406)->elements[1],  ((closureN)self_731406)->elements[2]);
 } else { 
   
-closureN_type c_733015;
-object e_733025 [2];
-c_733015.hdr.mark = gc_color_red;
- c_733015.hdr.grayed = 0;
-c_733015.tag = closureN_tag;
- c_733015.fn = (function_type)__lambda_160;
-c_733015.num_args = 1;
-c_733015.num_elements = 2;
-c_733015.elements = (object *)e_733025;
-c_733015.elements[0] = ((closureN)self_731406)->elements[0];
-c_733015.elements[1] = ((closureN)self_731406)->elements[1];
+closureN_type c_733016;
+object e_733026 [2];
+c_733016.hdr.mark = gc_color_red;
+ c_733016.hdr.grayed = 0;
+c_733016.tag = closureN_tag;
+ c_733016.fn = (function_type)__lambda_160;
+c_733016.num_args = 1;
+c_733016.num_elements = 2;
+c_733016.elements = (object *)e_733026;
+c_733016.elements[0] = ((closureN)self_731406)->elements[0];
+c_733016.elements[1] = ((closureN)self_731406)->elements[1];
 
-return_closcall1(data,  __glo_generator_srfi_121,  &c_733015);}
+return_closcall1(data,  __glo_generator_srfi_121,  &c_733016);}
 ;; 
 }
 
@@ -3112,139 +3134,139 @@ return_closcall1(data,  car(((closureN)self_731407)->elements[0]),  ((closureN)s
 static void __lambda_148(void *data, int argc, closure _,object k_73996, object pred_73198_73545, object gen_73199_73546) {
   Cyc_st_add(data, "srfi/121.sld:gdrop-while");
 
-closureN_type c_732927;
-object e_732992 [3];
-c_732927.hdr.mark = gc_color_red;
- c_732927.hdr.grayed = 0;
-c_732927.tag = closureN_tag;
- c_732927.fn = (function_type)__lambda_149;
-c_732927.num_args = 1;
-c_732927.num_elements = 3;
-c_732927.elements = (object *)e_732992;
-c_732927.elements[0] = gen_73199_73546;
-c_732927.elements[1] = k_73996;
-c_732927.elements[2] = pred_73198_73545;
+closureN_type c_732928;
+object e_732993 [3];
+c_732928.hdr.mark = gc_color_red;
+ c_732928.hdr.grayed = 0;
+c_732928.tag = closureN_tag;
+ c_732928.fn = (function_type)__lambda_149;
+c_732928.num_args = 1;
+c_732928.num_elements = 3;
+c_732928.elements = (object *)e_732993;
+c_732928.elements[0] = gen_73199_73546;
+c_732928.elements[1] = k_73996;
+c_732928.elements[2] = pred_73198_73545;
 
-return_direct_with_clo1(data,(closure)&c_732927,__lambda_149,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732928,__lambda_149,  boolean_f);; 
 }
 
 static void __lambda_149(void *data, int argc, object self_731394, object found_73548) {
   
-closureN_type c_732929;
-object e_732988 [3];
-c_732929.hdr.mark = gc_color_red;
- c_732929.hdr.grayed = 0;
-c_732929.tag = closureN_tag;
- c_732929.fn = (function_type)__lambda_293;
-c_732929.num_args = 1;
-c_732929.num_elements = 3;
-c_732929.elements = (object *)e_732988;
-c_732929.elements[0] = ((closureN)self_731394)->elements[0];
-c_732929.elements[1] = ((closureN)self_731394)->elements[1];
-c_732929.elements[2] = ((closureN)self_731394)->elements[2];
+closureN_type c_732930;
+object e_732989 [3];
+c_732930.hdr.mark = gc_color_red;
+ c_732930.hdr.grayed = 0;
+c_732930.tag = closureN_tag;
+ c_732930.fn = (function_type)__lambda_294;
+c_732930.num_args = 1;
+c_732930.num_elements = 3;
+c_732930.elements = (object *)e_732989;
+c_732930.elements[0] = ((closureN)self_731394)->elements[0];
+c_732930.elements[1] = ((closureN)self_731394)->elements[1];
+c_732930.elements[2] = ((closureN)self_731394)->elements[2];
 
 
-pair_type local_732991; 
-return_direct_with_clo1(data,(closure)&c_732929,__lambda_293,  set_cell_as_expr(&local_732991, found_73548));; 
+pair_type local_732992; 
+return_direct_with_clo1(data,(closure)&c_732930,__lambda_294,  set_cell_as_expr(&local_732992, found_73548));; 
 }
 
-static void __lambda_293(void *data, int argc, object self_731395, object found_73548) {
+static void __lambda_294(void *data, int argc, object self_731395, object found_73548) {
   
   Cyc_set_cell(data, found_73548, boolean_f);
-closureN_type c_732933;
-object e_732985 [3];
-c_732933.hdr.mark = gc_color_red;
- c_732933.hdr.grayed = 0;
-c_732933.tag = closureN_tag;
- c_732933.fn = (function_type)__lambda_150;
-c_732933.num_args = 0;
-c_732933.num_elements = 3;
-c_732933.elements = (object *)e_732985;
-c_732933.elements[0] = found_73548;
-c_732933.elements[1] = ((closureN)self_731395)->elements[0];
-c_732933.elements[2] = ((closureN)self_731395)->elements[2];
+closureN_type c_732934;
+object e_732986 [3];
+c_732934.hdr.mark = gc_color_red;
+ c_732934.hdr.grayed = 0;
+c_732934.tag = closureN_tag;
+ c_732934.fn = (function_type)__lambda_150;
+c_732934.num_args = 0;
+c_732934.num_elements = 3;
+c_732934.elements = (object *)e_732986;
+c_732934.elements[0] = found_73548;
+c_732934.elements[1] = ((closureN)self_731395)->elements[0];
+c_732934.elements[2] = ((closureN)self_731395)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731395)->elements[1],  &c_732933);;; 
+return_closcall1(data,  ((closureN)self_731395)->elements[1],  &c_732934);;; 
 }
 
 static void __lambda_150(void *data, int argc, object self_731396, object k_73998) {
   
-closureN_type c_732935;
-object e_732984 [4];
-c_732935.hdr.mark = gc_color_red;
- c_732935.hdr.grayed = 0;
-c_732935.tag = closureN_tag;
- c_732935.fn = (function_type)__lambda_151;
-c_732935.num_args = 1;
-c_732935.num_elements = 4;
-c_732935.elements = (object *)e_732984;
-c_732935.elements[0] = ((closureN)self_731396)->elements[0];
-c_732935.elements[1] = ((closureN)self_731396)->elements[1];
-c_732935.elements[2] = k_73998;
-c_732935.elements[3] = ((closureN)self_731396)->elements[2];
+closureN_type c_732936;
+object e_732985 [4];
+c_732936.hdr.mark = gc_color_red;
+ c_732936.hdr.grayed = 0;
+c_732936.tag = closureN_tag;
+ c_732936.fn = (function_type)__lambda_151;
+c_732936.num_args = 1;
+c_732936.num_elements = 4;
+c_732936.elements = (object *)e_732985;
+c_732936.elements[0] = ((closureN)self_731396)->elements[0];
+c_732936.elements[1] = ((closureN)self_731396)->elements[1];
+c_732936.elements[2] = k_73998;
+c_732936.elements[3] = ((closureN)self_731396)->elements[2];
 
-return_direct_with_clo1(data,(closure)&c_732935,__lambda_151,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732936,__lambda_151,  boolean_f);; 
 }
 
 static void __lambda_151(void *data, int argc, object self_731397, object loop_73201_73550) {
   
-closureN_type c_732937;
-object e_732980 [4];
-c_732937.hdr.mark = gc_color_red;
- c_732937.hdr.grayed = 0;
-c_732937.tag = closureN_tag;
- c_732937.fn = (function_type)__lambda_292;
-c_732937.num_args = 1;
-c_732937.num_elements = 4;
-c_732937.elements = (object *)e_732980;
-c_732937.elements[0] = ((closureN)self_731397)->elements[0];
-c_732937.elements[1] = ((closureN)self_731397)->elements[1];
-c_732937.elements[2] = ((closureN)self_731397)->elements[2];
-c_732937.elements[3] = ((closureN)self_731397)->elements[3];
+closureN_type c_732938;
+object e_732981 [4];
+c_732938.hdr.mark = gc_color_red;
+ c_732938.hdr.grayed = 0;
+c_732938.tag = closureN_tag;
+ c_732938.fn = (function_type)__lambda_293;
+c_732938.num_args = 1;
+c_732938.num_elements = 4;
+c_732938.elements = (object *)e_732981;
+c_732938.elements[0] = ((closureN)self_731397)->elements[0];
+c_732938.elements[1] = ((closureN)self_731397)->elements[1];
+c_732938.elements[2] = ((closureN)self_731397)->elements[2];
+c_732938.elements[3] = ((closureN)self_731397)->elements[3];
 
 
-pair_type local_732983; 
-return_direct_with_clo1(data,(closure)&c_732937,__lambda_292,  set_cell_as_expr(&local_732983, loop_73201_73550));; 
+pair_type local_732984; 
+return_direct_with_clo1(data,(closure)&c_732938,__lambda_293,  set_cell_as_expr(&local_732984, loop_73201_73550));; 
 }
 
-static void __lambda_292(void *data, int argc, object self_731398, object loop_73201_73550) {
+static void __lambda_293(void *data, int argc, object self_731398, object loop_73201_73550) {
   
-  closureN_type c_732945;
-object e_732979 [4];
-c_732945.hdr.mark = gc_color_red;
- c_732945.hdr.grayed = 0;
-c_732945.tag = closureN_tag;
- c_732945.fn = (function_type)__lambda_152;
-c_732945.num_args = 0;
-c_732945.num_elements = 4;
-c_732945.elements = (object *)e_732979;
-c_732945.elements[0] = ((closureN)self_731398)->elements[0];
-c_732945.elements[1] = ((closureN)self_731398)->elements[1];
-c_732945.elements[2] = loop_73201_73550;
-c_732945.elements[3] = ((closureN)self_731398)->elements[3];
+  closureN_type c_732946;
+object e_732980 [4];
+c_732946.hdr.mark = gc_color_red;
+ c_732946.hdr.grayed = 0;
+c_732946.tag = closureN_tag;
+ c_732946.fn = (function_type)__lambda_152;
+c_732946.num_args = 0;
+c_732946.num_elements = 4;
+c_732946.elements = (object *)e_732980;
+c_732946.elements[0] = ((closureN)self_731398)->elements[0];
+c_732946.elements[1] = ((closureN)self_731398)->elements[1];
+c_732946.elements[2] = loop_73201_73550;
+c_732946.elements[3] = ((closureN)self_731398)->elements[3];
 
-  Cyc_set_cell(data, loop_73201_73550, &c_732945);
+  Cyc_set_cell(data, loop_73201_73550, &c_732946);
 
 return_closcall1(data,  car(loop_73201_73550),  ((closureN)self_731398)->elements[2]);;; 
 }
 
 static void __lambda_152(void *data, int argc, object self_731399, object k_731001) {
   
-closureN_type c_732948;
-object e_732978 [4];
-c_732948.hdr.mark = gc_color_red;
- c_732948.hdr.grayed = 0;
-c_732948.tag = closureN_tag;
- c_732948.fn = (function_type)__lambda_153;
-c_732948.num_args = 1;
-c_732948.num_elements = 4;
-c_732948.elements = (object *)e_732978;
-c_732948.elements[0] = ((closureN)self_731399)->elements[0];
-c_732948.elements[1] = k_731001;
-c_732948.elements[2] = ((closureN)self_731399)->elements[2];
-c_732948.elements[3] = ((closureN)self_731399)->elements[3];
+closureN_type c_732949;
+object e_732979 [4];
+c_732949.hdr.mark = gc_color_red;
+ c_732949.hdr.grayed = 0;
+c_732949.tag = closureN_tag;
+ c_732949.fn = (function_type)__lambda_153;
+c_732949.num_args = 1;
+c_732949.num_elements = 4;
+c_732949.elements = (object *)e_732979;
+c_732949.elements[0] = ((closureN)self_731399)->elements[0];
+c_732949.elements[1] = k_731001;
+c_732949.elements[2] = ((closureN)self_731399)->elements[2];
+c_732949.elements[3] = ((closureN)self_731399)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731399)->elements[1],  &c_732948);; 
+return_closcall1(data,  ((closureN)self_731399)->elements[1],  &c_732949);; 
 }
 
 static void __lambda_153(void *data, int argc, object self_731400, object val_73202_73551) {
@@ -3253,34 +3275,34 @@ if( (boolean_f != car(((closureN)self_731400)->elements[0])) ){
   return_closcall1(data,  ((closureN)self_731400)->elements[1],  val_73202_73551);
 } else { 
   
-closureN_type c_732955;
-object e_732963 [2];
-c_732955.hdr.mark = gc_color_red;
- c_732955.hdr.grayed = 0;
-c_732955.tag = closureN_tag;
- c_732955.fn = (function_type)__lambda_154;
-c_732955.num_args = 0;
-c_732955.num_elements = 2;
-c_732955.elements = (object *)e_732963;
-c_732955.elements[0] = ((closureN)self_731400)->elements[3];
-c_732955.elements[1] = val_73202_73551;
+closureN_type c_732956;
+object e_732964 [2];
+c_732956.hdr.mark = gc_color_red;
+ c_732956.hdr.grayed = 0;
+c_732956.tag = closureN_tag;
+ c_732956.fn = (function_type)__lambda_154;
+c_732956.num_args = 0;
+c_732956.num_elements = 2;
+c_732956.elements = (object *)e_732964;
+c_732956.elements[0] = ((closureN)self_731400)->elements[3];
+c_732956.elements[1] = val_73202_73551;
 
 
-closureN_type c_732964;
-object e_732977 [4];
-c_732964.hdr.mark = gc_color_red;
- c_732964.hdr.grayed = 0;
-c_732964.tag = closureN_tag;
- c_732964.fn = (function_type)__lambda_155;
-c_732964.num_args = 1;
-c_732964.num_elements = 4;
-c_732964.elements = (object *)e_732977;
-c_732964.elements[0] = ((closureN)self_731400)->elements[0];
-c_732964.elements[1] = ((closureN)self_731400)->elements[1];
-c_732964.elements[2] = ((closureN)self_731400)->elements[2];
-c_732964.elements[3] = val_73202_73551;
+closureN_type c_732965;
+object e_732978 [4];
+c_732965.hdr.mark = gc_color_red;
+ c_732965.hdr.grayed = 0;
+c_732965.tag = closureN_tag;
+ c_732965.fn = (function_type)__lambda_155;
+c_732965.num_args = 1;
+c_732965.num_elements = 4;
+c_732965.elements = (object *)e_732978;
+c_732965.elements[0] = ((closureN)self_731400)->elements[0];
+c_732965.elements[1] = ((closureN)self_731400)->elements[1];
+c_732965.elements[2] = ((closureN)self_731400)->elements[2];
+c_732965.elements[3] = val_73202_73551;
 
-return_direct_with_clo1(data,(closure)&c_732955,__lambda_154,  &c_732964);}
+return_direct_with_clo1(data,(closure)&c_732956,__lambda_154,  &c_732965);}
 ;; 
 }
 
@@ -3307,132 +3329,132 @@ if( (boolean_f != Cyc_is_eof_object(((closureN)self_731402)->elements[1])) ){
 static void __lambda_140(void *data, int argc, closure _,object k_73984, object gen_73190_73541, object k_73191_73542) {
   Cyc_st_add(data, "srfi/121.sld:gdrop");
 
-closureN_type c_732862;
-object e_732921 [2];
-c_732862.hdr.mark = gc_color_red;
- c_732862.hdr.grayed = 0;
-c_732862.tag = closureN_tag;
- c_732862.fn = (function_type)__lambda_291;
-c_732862.num_args = 0;
-c_732862.num_elements = 2;
-c_732862.elements = (object *)e_732921;
-c_732862.elements[0] = gen_73190_73541;
-c_732862.elements[1] = k_73984;
+closureN_type c_732863;
+object e_732922 [2];
+c_732863.hdr.mark = gc_color_red;
+ c_732863.hdr.grayed = 0;
+c_732863.tag = closureN_tag;
+ c_732863.fn = (function_type)__lambda_292;
+c_732863.num_args = 0;
+c_732863.num_elements = 2;
+c_732863.elements = (object *)e_732922;
+c_732863.elements[0] = gen_73190_73541;
+c_732863.elements[1] = k_73984;
 
 
-pair_type local_732924; 
-return_direct_with_clo1(data,(closure)&c_732862,__lambda_291,  set_cell_as_expr(&local_732924, k_73191_73542));; 
+pair_type local_732925; 
+return_direct_with_clo1(data,(closure)&c_732863,__lambda_292,  set_cell_as_expr(&local_732925, k_73191_73542));; 
 }
 
-static void __lambda_291(void *data, int argc, object self_731385, object k_73191_73542) {
+static void __lambda_292(void *data, int argc, object self_731385, object k_73191_73542) {
   
-closureN_type c_732865;
-object e_732920 [2];
-c_732865.hdr.mark = gc_color_red;
- c_732865.hdr.grayed = 0;
-c_732865.tag = closureN_tag;
- c_732865.fn = (function_type)__lambda_141;
-c_732865.num_args = 0;
-c_732865.num_elements = 2;
-c_732865.elements = (object *)e_732920;
-c_732865.elements[0] = ((closureN)self_731385)->elements[0];
-c_732865.elements[1] = k_73191_73542;
+closureN_type c_732866;
+object e_732921 [2];
+c_732866.hdr.mark = gc_color_red;
+ c_732866.hdr.grayed = 0;
+c_732866.tag = closureN_tag;
+ c_732866.fn = (function_type)__lambda_141;
+c_732866.num_args = 0;
+c_732866.num_elements = 2;
+c_732866.elements = (object *)e_732921;
+c_732866.elements[0] = ((closureN)self_731385)->elements[0];
+c_732866.elements[1] = k_73191_73542;
 
-return_closcall1(data,  ((closureN)self_731385)->elements[1],  &c_732865);; 
+return_closcall1(data,  ((closureN)self_731385)->elements[1],  &c_732866);; 
 }
 
 static void __lambda_141(void *data, int argc, object self_731386, object k_73985) {
   
-closureN_type c_732867;
-object e_732919 [3];
-c_732867.hdr.mark = gc_color_red;
- c_732867.hdr.grayed = 0;
-c_732867.tag = closureN_tag;
- c_732867.fn = (function_type)__lambda_142;
-c_732867.num_args = 1;
-c_732867.num_elements = 3;
-c_732867.elements = (object *)e_732919;
-c_732867.elements[0] = ((closureN)self_731386)->elements[0];
-c_732867.elements[1] = ((closureN)self_731386)->elements[1];
-c_732867.elements[2] = k_73985;
+closureN_type c_732868;
+object e_732920 [3];
+c_732868.hdr.mark = gc_color_red;
+ c_732868.hdr.grayed = 0;
+c_732868.tag = closureN_tag;
+ c_732868.fn = (function_type)__lambda_142;
+c_732868.num_args = 1;
+c_732868.num_elements = 3;
+c_732868.elements = (object *)e_732920;
+c_732868.elements[0] = ((closureN)self_731386)->elements[0];
+c_732868.elements[1] = ((closureN)self_731386)->elements[1];
+c_732868.elements[2] = k_73985;
 
-return_direct_with_clo1(data,(closure)&c_732867,__lambda_142,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732868,__lambda_142,  boolean_f);; 
 }
 
 static void __lambda_142(void *data, int argc, object self_731387, object lp_73192_73196_73543) {
   
-closureN_type c_732869;
-object e_732915 [3];
-c_732869.hdr.mark = gc_color_red;
- c_732869.hdr.grayed = 0;
-c_732869.tag = closureN_tag;
- c_732869.fn = (function_type)__lambda_290;
-c_732869.num_args = 1;
-c_732869.num_elements = 3;
-c_732869.elements = (object *)e_732915;
-c_732869.elements[0] = ((closureN)self_731387)->elements[0];
-c_732869.elements[1] = ((closureN)self_731387)->elements[1];
-c_732869.elements[2] = ((closureN)self_731387)->elements[2];
+closureN_type c_732870;
+object e_732916 [3];
+c_732870.hdr.mark = gc_color_red;
+ c_732870.hdr.grayed = 0;
+c_732870.tag = closureN_tag;
+ c_732870.fn = (function_type)__lambda_291;
+c_732870.num_args = 1;
+c_732870.num_elements = 3;
+c_732870.elements = (object *)e_732916;
+c_732870.elements[0] = ((closureN)self_731387)->elements[0];
+c_732870.elements[1] = ((closureN)self_731387)->elements[1];
+c_732870.elements[2] = ((closureN)self_731387)->elements[2];
 
 
-pair_type local_732918; 
-return_direct_with_clo1(data,(closure)&c_732869,__lambda_290,  set_cell_as_expr(&local_732918, lp_73192_73196_73543));; 
+pair_type local_732919; 
+return_direct_with_clo1(data,(closure)&c_732870,__lambda_291,  set_cell_as_expr(&local_732919, lp_73192_73196_73543));; 
 }
 
-static void __lambda_290(void *data, int argc, object self_731388, object lp_73192_73196_73543) {
+static void __lambda_291(void *data, int argc, object self_731388, object lp_73192_73196_73543) {
   
-  closureN_type c_732881;
-object e_732914 [3];
-c_732881.hdr.mark = gc_color_red;
- c_732881.hdr.grayed = 0;
-c_732881.tag = closureN_tag;
- c_732881.fn = (function_type)__lambda_143;
-c_732881.num_args = 0;
-c_732881.num_elements = 3;
-c_732881.elements = (object *)e_732914;
-c_732881.elements[0] = ((closureN)self_731388)->elements[0];
-c_732881.elements[1] = ((closureN)self_731388)->elements[1];
-c_732881.elements[2] = lp_73192_73196_73543;
+  closureN_type c_732882;
+object e_732915 [3];
+c_732882.hdr.mark = gc_color_red;
+ c_732882.hdr.grayed = 0;
+c_732882.tag = closureN_tag;
+ c_732882.fn = (function_type)__lambda_143;
+c_732882.num_args = 0;
+c_732882.num_elements = 3;
+c_732882.elements = (object *)e_732915;
+c_732882.elements[0] = ((closureN)self_731388)->elements[0];
+c_732882.elements[1] = ((closureN)self_731388)->elements[1];
+c_732882.elements[2] = lp_73192_73196_73543;
 
-  Cyc_set_cell(data, lp_73192_73196_73543, &c_732881);
+  Cyc_set_cell(data, lp_73192_73196_73543, &c_732882);
 
 
-closureN_type c_732874;
-object e_732878 [2];
-c_732874.hdr.mark = gc_color_red;
- c_732874.hdr.grayed = 0;
-c_732874.tag = closureN_tag;
- c_732874.fn = (function_type)__lambda_147;
-c_732874.num_args = 1;
-c_732874.num_elements = 2;
-c_732874.elements = (object *)e_732878;
-c_732874.elements[0] = ((closureN)self_731388)->elements[0];
-c_732874.elements[1] = ((closureN)self_731388)->elements[2];
+closureN_type c_732875;
+object e_732879 [2];
+c_732875.hdr.mark = gc_color_red;
+ c_732875.hdr.grayed = 0;
+c_732875.tag = closureN_tag;
+ c_732875.fn = (function_type)__lambda_147;
+c_732875.num_args = 1;
+c_732875.num_elements = 2;
+c_732875.elements = (object *)e_732879;
+c_732875.elements[0] = ((closureN)self_731388)->elements[0];
+c_732875.elements[1] = ((closureN)self_731388)->elements[2];
 
-return_closcall1(data,  car(lp_73192_73196_73543),  &c_732874);;; 
+return_closcall1(data,  car(lp_73192_73196_73543),  &c_732875);;; 
 }
 
 static void __lambda_143(void *data, int argc, object self_731389, object k_73989) {
   
-closureN_type c_732883;
-object e_732908 [4];
-c_732883.hdr.mark = gc_color_red;
- c_732883.hdr.grayed = 0;
-c_732883.tag = closureN_tag;
- c_732883.fn = (function_type)__lambda_144;
-c_732883.num_args = 1;
-c_732883.num_elements = 4;
-c_732883.elements = (object *)e_732908;
-c_732883.elements[0] = ((closureN)self_731389)->elements[0];
-c_732883.elements[1] = ((closureN)self_731389)->elements[1];
-c_732883.elements[2] = k_73989;
-c_732883.elements[3] = ((closureN)self_731389)->elements[2];
+closureN_type c_732884;
+object e_732909 [4];
+c_732884.hdr.mark = gc_color_red;
+ c_732884.hdr.grayed = 0;
+c_732884.tag = closureN_tag;
+ c_732884.fn = (function_type)__lambda_144;
+c_732884.num_args = 1;
+c_732884.num_elements = 4;
+c_732884.elements = (object *)e_732909;
+c_732884.elements[0] = ((closureN)self_731389)->elements[0];
+c_732884.elements[1] = ((closureN)self_731389)->elements[1];
+c_732884.elements[2] = k_73989;
+c_732884.elements[3] = ((closureN)self_731389)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732883,__lambda_144,  Cyc_num_fast_lte_op(data, car(((closureN)self_731389)->elements[1]), obj_int2obj(0)));; 
+return_direct_with_clo1(data,(closure)&c_732884,__lambda_144,  Cyc_num_fast_lte_op(data, car(((closureN)self_731389)->elements[1]), obj_int2obj(0)));; 
 }
 
 static void __lambda_144(void *data, int argc, object self_731390, object tmp_73194_73197_73544) {
@@ -3440,44 +3462,44 @@ static void __lambda_144(void *data, int argc, object self_731390, object tmp_73
   return_closcall1(data,  ((closureN)self_731390)->elements[2],  tmp_73194_73197_73544);
 } else { 
   
-closureN_type c_732887;
-object e_732901 [4];
-c_732887.hdr.mark = gc_color_red;
- c_732887.hdr.grayed = 0;
-c_732887.tag = closureN_tag;
- c_732887.fn = (function_type)__lambda_145;
-c_732887.num_args = 1;
-c_732887.num_elements = 4;
-c_732887.elements = (object *)e_732901;
-c_732887.elements[0] = ((closureN)self_731390)->elements[0];
-c_732887.elements[1] = ((closureN)self_731390)->elements[1];
-c_732887.elements[2] = ((closureN)self_731390)->elements[2];
-c_732887.elements[3] = ((closureN)self_731390)->elements[3];
+closureN_type c_732888;
+object e_732902 [4];
+c_732888.hdr.mark = gc_color_red;
+ c_732888.hdr.grayed = 0;
+c_732888.tag = closureN_tag;
+ c_732888.fn = (function_type)__lambda_145;
+c_732888.num_args = 1;
+c_732888.num_elements = 4;
+c_732888.elements = (object *)e_732902;
+c_732888.elements[0] = ((closureN)self_731390)->elements[0];
+c_732888.elements[1] = ((closureN)self_731390)->elements[1];
+c_732888.elements[2] = ((closureN)self_731390)->elements[2];
+c_732888.elements[3] = ((closureN)self_731390)->elements[3];
 
 
-complex_num_type local_732904; 
+complex_num_type local_732905; 
 
 
-return_direct_with_clo1(data,(closure)&c_732887,__lambda_145,  Cyc_fast_sub(data,&local_732904, car(((closureN)self_731390)->elements[1]), obj_int2obj(1)));}
+return_direct_with_clo1(data,(closure)&c_732888,__lambda_145,  Cyc_fast_sub(data,&local_732905, car(((closureN)self_731390)->elements[1]), obj_int2obj(1)));}
 ;; 
 }
 
 static void __lambda_145(void *data, int argc, object self_731391, object r_73993) {
   
   Cyc_set_cell(data, ((closureN)self_731391)->elements[1], r_73993);
-closureN_type c_732891;
-object e_732897 [2];
-c_732891.hdr.mark = gc_color_red;
- c_732891.hdr.grayed = 0;
-c_732891.tag = closureN_tag;
- c_732891.fn = (function_type)__lambda_146;
-c_732891.num_args = 1;
-c_732891.num_elements = 2;
-c_732891.elements = (object *)e_732897;
-c_732891.elements[0] = ((closureN)self_731391)->elements[2];
-c_732891.elements[1] = ((closureN)self_731391)->elements[3];
+closureN_type c_732892;
+object e_732898 [2];
+c_732892.hdr.mark = gc_color_red;
+ c_732892.hdr.grayed = 0;
+c_732892.tag = closureN_tag;
+ c_732892.fn = (function_type)__lambda_146;
+c_732892.num_args = 1;
+c_732892.num_elements = 2;
+c_732892.elements = (object *)e_732898;
+c_732892.elements[0] = ((closureN)self_731391)->elements[2];
+c_732892.elements[1] = ((closureN)self_731391)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731391)->elements[0],  &c_732891);;; 
+return_closcall1(data,  ((closureN)self_731391)->elements[0],  &c_732892);;; 
 }
 
 static void __lambda_146(void *data, int argc, object self_731392, object r_73992) {
@@ -3496,205 +3518,205 @@ load_varargs(args_73170_73174_73528, args_73170_73174_73528_raw, argc - 1);
   
   
   
-  make_pair(c_732762,quote_k,NULL);c_732762.hdr.immutable = 1;
-  make_pair(c_732761,quote_gen,&c_732762);c_732761.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732761))) ){ 
+  make_pair(c_732763,quote_k,NULL);c_732763.hdr.immutable = 1;
+  make_pair(c_732762,quote_gen,&c_732763);c_732762.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732762))) ){ 
   
-mclosure0(c_732767, (function_type)__lambda_131);c_732767.num_args = 2;
+mclosure0(c_732768, (function_type)__lambda_131);c_732768.num_args = 2;
 
-object c_732766 = apply(data,  k_73955,&c_732767, args_73170_73174_73528);
-return_closcall1(data,  k_73955,  c_732766);
+object c_732767 = apply(data,  k_73955,&c_732768, args_73170_73174_73528);
+return_closcall1(data,  k_73955,  c_732767);
 } else { 
     
   
   
-  make_pair(c_732780,quote_padding,NULL);c_732780.hdr.immutable = 1;
-  make_pair(c_732779,quote_k,&c_732780);c_732779.hdr.immutable = 1;
-  make_pair(c_732778,quote_gen,&c_732779);c_732778.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732778))) ){ 
+  make_pair(c_732781,quote_padding,NULL);c_732781.hdr.immutable = 1;
+  make_pair(c_732780,quote_k,&c_732781);c_732780.hdr.immutable = 1;
+  make_pair(c_732779,quote_gen,&c_732780);c_732779.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73170_73174_73528), Cyc_length(data, &c_732779))) ){ 
   
-mclosure0(c_732785, (function_type)__lambda_132);c_732785.num_args = 3;
+mclosure0(c_732786, (function_type)__lambda_132);c_732786.num_args = 3;
 
-object c_732784 = apply(data,  k_73955,&c_732785, args_73170_73174_73528);
-return_closcall1(data,  k_73955,  c_732784);
+object c_732785 = apply(data,  k_73955,&c_732786, args_73170_73174_73528);
+return_closcall1(data,  k_73955,  c_732785);
 } else { 
   
-make_utf8_string_with_len(c_732859, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73955, &c_732859);}
+make_utf8_string_with_len(c_732860, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73955, &c_732860);}
 ;}
 ;; 
 }
 
 static void __lambda_132(void *data, int argc, object self_731376, object k_73963, object gen_73180_73532, object k_73181_73533, object padding_73182_73534) {
   
-closureN_type c_732787;
-object e_732857 [3];
-c_732787.hdr.mark = gc_color_red;
- c_732787.hdr.grayed = 0;
-c_732787.tag = closureN_tag;
- c_732787.fn = (function_type)__lambda_133;
-c_732787.num_args = 1;
-c_732787.num_elements = 3;
-c_732787.elements = (object *)e_732857;
-c_732787.elements[0] = gen_73180_73532;
-c_732787.elements[1] = k_73181_73533;
-c_732787.elements[2] = padding_73182_73534;
+closureN_type c_732788;
+object e_732858 [3];
+c_732788.hdr.mark = gc_color_red;
+ c_732788.hdr.grayed = 0;
+c_732788.tag = closureN_tag;
+ c_732788.fn = (function_type)__lambda_133;
+c_732788.num_args = 1;
+c_732788.num_elements = 3;
+c_732788.elements = (object *)e_732858;
+c_732788.elements[0] = gen_73180_73532;
+c_732788.elements[1] = k_73181_73533;
+c_732788.elements[2] = padding_73182_73534;
 
-return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73963, &c_732787);; 
+return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73963, &c_732788);; 
 }
 
 static void __lambda_133(void *data, int argc, object self_731377, object k_73965, object yield_73183_73535) {
     
 if( (boolean_f != Cyc_num_fast_gt_op(data, ((closureN)self_731377)->elements[1], obj_int2obj(0))) ){ 
   
-closureN_type c_732793;
-object e_732852 [5];
-c_732793.hdr.mark = gc_color_red;
- c_732793.hdr.grayed = 0;
-c_732793.tag = closureN_tag;
- c_732793.fn = (function_type)__lambda_134;
-c_732793.num_args = 1;
-c_732793.num_elements = 5;
-c_732793.elements = (object *)e_732852;
-c_732793.elements[0] = ((closureN)self_731377)->elements[0];
-c_732793.elements[1] = ((closureN)self_731377)->elements[1];
-c_732793.elements[2] = k_73965;
-c_732793.elements[3] = ((closureN)self_731377)->elements[2];
-c_732793.elements[4] = yield_73183_73535;
+closureN_type c_732794;
+object e_732853 [5];
+c_732794.hdr.mark = gc_color_red;
+ c_732794.hdr.grayed = 0;
+c_732794.tag = closureN_tag;
+ c_732794.fn = (function_type)__lambda_134;
+c_732794.num_args = 1;
+c_732794.num_elements = 5;
+c_732794.elements = (object *)e_732853;
+c_732794.elements[0] = ((closureN)self_731377)->elements[0];
+c_732794.elements[1] = ((closureN)self_731377)->elements[1];
+c_732794.elements[2] = k_73965;
+c_732794.elements[3] = ((closureN)self_731377)->elements[2];
+c_732794.elements[4] = yield_73183_73535;
 
-return_closcall1(data,  ((closureN)self_731377)->elements[0],  &c_732793);
+return_closcall1(data,  ((closureN)self_731377)->elements[0],  &c_732794);
 } else { 
   
-complex_num_type local_732856; 
+complex_num_type local_732857; 
 return_closcall1(data,  k_73965,  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732856));}
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732857));}
 ;; 
 }
 
 static void __lambda_134(void *data, int argc, object self_731378, object v_73186_73537) {
   
-closureN_type c_732795;
-object e_732851 [6];
-c_732795.hdr.mark = gc_color_red;
- c_732795.hdr.grayed = 0;
-c_732795.tag = closureN_tag;
- c_732795.fn = (function_type)__lambda_135;
-c_732795.num_args = 1;
-c_732795.num_elements = 6;
-c_732795.elements = (object *)e_732851;
-c_732795.elements[0] = ((closureN)self_731378)->elements[0];
-c_732795.elements[1] = ((closureN)self_731378)->elements[1];
-c_732795.elements[2] = ((closureN)self_731378)->elements[2];
-c_732795.elements[3] = ((closureN)self_731378)->elements[3];
-c_732795.elements[4] = v_73186_73537;
-c_732795.elements[5] = ((closureN)self_731378)->elements[4];
+closureN_type c_732796;
+object e_732852 [6];
+c_732796.hdr.mark = gc_color_red;
+ c_732796.hdr.grayed = 0;
+c_732796.tag = closureN_tag;
+ c_732796.fn = (function_type)__lambda_135;
+c_732796.num_args = 1;
+c_732796.num_elements = 6;
+c_732796.elements = (object *)e_732852;
+c_732796.elements[0] = ((closureN)self_731378)->elements[0];
+c_732796.elements[1] = ((closureN)self_731378)->elements[1];
+c_732796.elements[2] = ((closureN)self_731378)->elements[2];
+c_732796.elements[3] = ((closureN)self_731378)->elements[3];
+c_732796.elements[4] = v_73186_73537;
+c_732796.elements[5] = ((closureN)self_731378)->elements[4];
 
-return_direct_with_clo1(data,(closure)&c_732795,__lambda_135,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732796,__lambda_135,  boolean_f);; 
 }
 
 static void __lambda_135(void *data, int argc, object self_731379, object loop_73187_73538) {
   
-closureN_type c_732797;
-object e_732847 [6];
-c_732797.hdr.mark = gc_color_red;
- c_732797.hdr.grayed = 0;
-c_732797.tag = closureN_tag;
- c_732797.fn = (function_type)__lambda_289;
-c_732797.num_args = 1;
-c_732797.num_elements = 6;
-c_732797.elements = (object *)e_732847;
-c_732797.elements[0] = ((closureN)self_731379)->elements[0];
-c_732797.elements[1] = ((closureN)self_731379)->elements[1];
-c_732797.elements[2] = ((closureN)self_731379)->elements[2];
-c_732797.elements[3] = ((closureN)self_731379)->elements[3];
-c_732797.elements[4] = ((closureN)self_731379)->elements[4];
-c_732797.elements[5] = ((closureN)self_731379)->elements[5];
+closureN_type c_732798;
+object e_732848 [6];
+c_732798.hdr.mark = gc_color_red;
+ c_732798.hdr.grayed = 0;
+c_732798.tag = closureN_tag;
+ c_732798.fn = (function_type)__lambda_290;
+c_732798.num_args = 1;
+c_732798.num_elements = 6;
+c_732798.elements = (object *)e_732848;
+c_732798.elements[0] = ((closureN)self_731379)->elements[0];
+c_732798.elements[1] = ((closureN)self_731379)->elements[1];
+c_732798.elements[2] = ((closureN)self_731379)->elements[2];
+c_732798.elements[3] = ((closureN)self_731379)->elements[3];
+c_732798.elements[4] = ((closureN)self_731379)->elements[4];
+c_732798.elements[5] = ((closureN)self_731379)->elements[5];
 
 
-pair_type local_732850; 
-return_direct_with_clo1(data,(closure)&c_732797,__lambda_289,  set_cell_as_expr(&local_732850, loop_73187_73538));; 
+pair_type local_732851; 
+return_direct_with_clo1(data,(closure)&c_732798,__lambda_290,  set_cell_as_expr(&local_732851, loop_73187_73538));; 
 }
 
-static void __lambda_289(void *data, int argc, object self_731380, object loop_73187_73538) {
+static void __lambda_290(void *data, int argc, object self_731380, object loop_73187_73538) {
   
-  closureN_type c_732806;
-object e_732846 [5];
-c_732806.hdr.mark = gc_color_red;
- c_732806.hdr.grayed = 0;
-c_732806.tag = closureN_tag;
- c_732806.fn = (function_type)__lambda_136;
-c_732806.num_args = 2;
-c_732806.num_elements = 5;
-c_732806.elements = (object *)e_732846;
-c_732806.elements[0] = ((closureN)self_731380)->elements[0];
-c_732806.elements[1] = ((closureN)self_731380)->elements[1];
-c_732806.elements[2] = loop_73187_73538;
-c_732806.elements[3] = ((closureN)self_731380)->elements[3];
-c_732806.elements[4] = ((closureN)self_731380)->elements[5];
+  closureN_type c_732807;
+object e_732847 [5];
+c_732807.hdr.mark = gc_color_red;
+ c_732807.hdr.grayed = 0;
+c_732807.tag = closureN_tag;
+ c_732807.fn = (function_type)__lambda_136;
+c_732807.num_args = 2;
+c_732807.num_elements = 5;
+c_732807.elements = (object *)e_732847;
+c_732807.elements[0] = ((closureN)self_731380)->elements[0];
+c_732807.elements[1] = ((closureN)self_731380)->elements[1];
+c_732807.elements[2] = loop_73187_73538;
+c_732807.elements[3] = ((closureN)self_731380)->elements[3];
+c_732807.elements[4] = ((closureN)self_731380)->elements[5];
 
-  Cyc_set_cell(data, loop_73187_73538, &c_732806);
+  Cyc_set_cell(data, loop_73187_73538, &c_732807);
 
 return_closcall3(data,  car(loop_73187_73538),  ((closureN)self_731380)->elements[2], obj_int2obj(0), ((closureN)self_731380)->elements[4]);;; 
 }
 
 static void __lambda_136(void *data, int argc, object self_731381, object k_73970, object i_73188_73539, object v_73189_73540) {
   
-closureN_type c_732808;
-object e_732818 [3];
-c_732808.hdr.mark = gc_color_red;
- c_732808.hdr.grayed = 0;
-c_732808.tag = closureN_tag;
- c_732808.fn = (function_type)__lambda_137;
-c_732808.num_args = 0;
-c_732808.num_elements = 3;
-c_732808.elements = (object *)e_732818;
-c_732808.elements[0] = ((closureN)self_731381)->elements[3];
-c_732808.elements[1] = v_73189_73540;
-c_732808.elements[2] = ((closureN)self_731381)->elements[4];
+closureN_type c_732809;
+object e_732819 [3];
+c_732809.hdr.mark = gc_color_red;
+ c_732809.hdr.grayed = 0;
+c_732809.tag = closureN_tag;
+ c_732809.fn = (function_type)__lambda_137;
+c_732809.num_args = 0;
+c_732809.num_elements = 3;
+c_732809.elements = (object *)e_732819;
+c_732809.elements[0] = ((closureN)self_731381)->elements[3];
+c_732809.elements[1] = v_73189_73540;
+c_732809.elements[2] = ((closureN)self_731381)->elements[4];
 
 
-closureN_type c_732819;
-object e_732845 [5];
-c_732819.hdr.mark = gc_color_red;
- c_732819.hdr.grayed = 0;
-c_732819.tag = closureN_tag;
- c_732819.fn = (function_type)__lambda_138;
-c_732819.num_args = 1;
-c_732819.num_elements = 5;
-c_732819.elements = (object *)e_732845;
-c_732819.elements[0] = ((closureN)self_731381)->elements[0];
-c_732819.elements[1] = i_73188_73539;
-c_732819.elements[2] = ((closureN)self_731381)->elements[1];
-c_732819.elements[3] = k_73970;
-c_732819.elements[4] = ((closureN)self_731381)->elements[2];
+closureN_type c_732820;
+object e_732846 [5];
+c_732820.hdr.mark = gc_color_red;
+ c_732820.hdr.grayed = 0;
+c_732820.tag = closureN_tag;
+ c_732820.fn = (function_type)__lambda_138;
+c_732820.num_args = 1;
+c_732820.num_elements = 5;
+c_732820.elements = (object *)e_732846;
+c_732820.elements[0] = ((closureN)self_731381)->elements[0];
+c_732820.elements[1] = i_73188_73539;
+c_732820.elements[2] = ((closureN)self_731381)->elements[1];
+c_732820.elements[3] = k_73970;
+c_732820.elements[4] = ((closureN)self_731381)->elements[2];
 
-return_direct_with_clo1(data,(closure)&c_732808,__lambda_137,  &c_732819);; 
+return_direct_with_clo1(data,(closure)&c_732809,__lambda_137,  &c_732820);; 
 }
 
 static void __lambda_138(void *data, int argc, object self_731382, object r_73971) {
     
-  complex_num_type local_732824; 
-if( (boolean_f != Cyc_num_fast_lt_op(data, Cyc_fast_sum(data,&local_732824, obj_int2obj(1), ((closureN)self_731382)->elements[1]), ((closureN)self_731382)->elements[2])) ){ 
+  complex_num_type local_732825; 
+if( (boolean_f != Cyc_num_fast_lt_op(data, Cyc_fast_sum(data,&local_732825, obj_int2obj(1), ((closureN)self_731382)->elements[1]), ((closureN)self_731382)->elements[2])) ){ 
   
-closureN_type c_732829;
-object e_732839 [3];
-c_732829.hdr.mark = gc_color_red;
- c_732829.hdr.grayed = 0;
-c_732829.tag = closureN_tag;
- c_732829.fn = (function_type)__lambda_139;
-c_732829.num_args = 1;
-c_732829.num_elements = 3;
-c_732829.elements = (object *)e_732839;
-c_732829.elements[0] = ((closureN)self_731382)->elements[1];
-c_732829.elements[1] = ((closureN)self_731382)->elements[3];
-c_732829.elements[2] = ((closureN)self_731382)->elements[4];
+closureN_type c_732830;
+object e_732840 [3];
+c_732830.hdr.mark = gc_color_red;
+ c_732830.hdr.grayed = 0;
+c_732830.tag = closureN_tag;
+ c_732830.fn = (function_type)__lambda_139;
+c_732830.num_args = 1;
+c_732830.num_elements = 3;
+c_732830.elements = (object *)e_732840;
+c_732830.elements[0] = ((closureN)self_731382)->elements[1];
+c_732830.elements[1] = ((closureN)self_731382)->elements[3];
+c_732830.elements[2] = ((closureN)self_731382)->elements[4];
 
-return_closcall1(data,  ((closureN)self_731382)->elements[0],  &c_732829);
+return_closcall1(data,  ((closureN)self_731382)->elements[0],  &c_732830);
 } else { 
   
-complex_num_type local_732844; 
+complex_num_type local_732845; 
 return_closcall1(data,  ((closureN)self_731382)->elements[3],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732844));}
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732845));}
 ;; 
 }
 
@@ -3702,8 +3724,8 @@ static void __lambda_139(void *data, int argc, object self_731383, object r_7397
   
 
 
-complex_num_type local_732837; 
-return_closcall3(data,  car(((closureN)self_731383)->elements[2]),  ((closureN)self_731383)->elements[1], Cyc_fast_sum(data,&local_732837, obj_int2obj(1), ((closureN)self_731383)->elements[0]), r_73974);; 
+complex_num_type local_732838; 
+return_closcall3(data,  car(((closureN)self_731383)->elements[2]),  ((closureN)self_731383)->elements[1], Cyc_fast_sum(data,&local_732838, obj_int2obj(1), ((closureN)self_731383)->elements[0]), r_73974);; 
 }
 
 static void __lambda_137(void *data, int argc, object self_731384, object k_73976) {
@@ -3717,174 +3739,174 @@ if( (boolean_f != Cyc_is_eof_object(((closureN)self_731384)->elements[1])) ){
 
 static void __lambda_131(void *data, int argc, object self_731375, object k_73959, object gen_73177_73530, object k_73178_73531) {
   
-complex_num_type local_732771; 
+complex_num_type local_732772; 
 return_closcall4(data,  __glo_gtake_srfi_121,  k_73959, gen_73177_73530, k_73178_73531, ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732771));; 
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732772));; 
 }
 
 static void __lambda_127(void *data, int argc, closure _,object k_73949, object pred_73167_73525, object gen_73168_73526) {
   Cyc_st_add(data, "srfi/121.sld:gremove");
 
-closureN_type c_732743;
-object e_732753 [1];
-c_732743.hdr.mark = gc_color_red;
- c_732743.hdr.grayed = 0;
-c_732743.tag = closureN_tag;
- c_732743.fn = (function_type)__lambda_128;
-c_732743.num_args = 1;
-c_732743.num_elements = 1;
-c_732743.elements = (object *)e_732753;
-c_732743.elements[0] = pred_73167_73525;
+closureN_type c_732744;
+object e_732754 [1];
+c_732744.hdr.mark = gc_color_red;
+ c_732744.hdr.grayed = 0;
+c_732744.tag = closureN_tag;
+ c_732744.fn = (function_type)__lambda_128;
+c_732744.num_args = 1;
+c_732744.num_elements = 1;
+c_732744.elements = (object *)e_732754;
+c_732744.elements[0] = pred_73167_73525;
 
-return_closcall3(data,  __glo_gfilter_srfi_121,  k_73949, &c_732743, gen_73168_73526);; 
+return_closcall3(data,  __glo_gfilter_srfi_121,  k_73949, &c_732744, gen_73168_73526);; 
 }
 
 static void __lambda_128(void *data, int argc, object self_731373, object k_73951, object v_73169_73527) {
   
-closureN_type c_732746;
-object e_732752 [1];
-c_732746.hdr.mark = gc_color_red;
- c_732746.hdr.grayed = 0;
-c_732746.tag = closureN_tag;
- c_732746.fn = (function_type)__lambda_129;
-c_732746.num_args = 1;
-c_732746.num_elements = 1;
-c_732746.elements = (object *)e_732752;
-c_732746.elements[0] = k_73951;
+closureN_type c_732747;
+object e_732753 [1];
+c_732747.hdr.mark = gc_color_red;
+ c_732747.hdr.grayed = 0;
+c_732747.tag = closureN_tag;
+ c_732747.fn = (function_type)__lambda_129;
+c_732747.num_args = 1;
+c_732747.num_elements = 1;
+c_732747.elements = (object *)e_732753;
+c_732747.elements[0] = k_73951;
 
-return_closcall2(data,  ((closureN)self_731373)->elements[0],  &c_732746, v_73169_73527);; 
+return_closcall2(data,  ((closureN)self_731373)->elements[0],  &c_732747, v_73169_73527);; 
 }
 
 static void __lambda_129(void *data, int argc, object self_731374, object r_73952) {
   
-complex_num_type local_732751; 
+complex_num_type local_732752; 
 return_closcall1(data,  ((closureN)self_731374)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_732751, r_73952));; 
+                   ((closure)__glo_not_191_191inline_191_191_scheme_base)->fn)(data,&local_732752, r_73952));; 
 }
 
 static void __lambda_120(void *data, int argc, closure _,object k_73938, object pred_73158_73520, object gen_73159_73521) {
   Cyc_st_add(data, "srfi/121.sld:gfilter");
 
-closureN_type c_732694;
-object e_732740 [2];
-c_732694.hdr.mark = gc_color_red;
- c_732694.hdr.grayed = 0;
-c_732694.tag = closureN_tag;
- c_732694.fn = (function_type)__lambda_121;
-c_732694.num_args = 0;
-c_732694.num_elements = 2;
-c_732694.elements = (object *)e_732740;
-c_732694.elements[0] = gen_73159_73521;
-c_732694.elements[1] = pred_73158_73520;
+closureN_type c_732695;
+object e_732741 [2];
+c_732695.hdr.mark = gc_color_red;
+ c_732695.hdr.grayed = 0;
+c_732695.tag = closureN_tag;
+ c_732695.fn = (function_type)__lambda_121;
+c_732695.num_args = 0;
+c_732695.num_elements = 2;
+c_732695.elements = (object *)e_732741;
+c_732695.elements[0] = gen_73159_73521;
+c_732695.elements[1] = pred_73158_73520;
 
-return_closcall1(data,  k_73938,  &c_732694);; 
+return_closcall1(data,  k_73938,  &c_732695);; 
 }
 
 static void __lambda_121(void *data, int argc, object self_731366, object k_73939) {
   
-closureN_type c_732696;
-object e_732739 [3];
-c_732696.hdr.mark = gc_color_red;
- c_732696.hdr.grayed = 0;
-c_732696.tag = closureN_tag;
- c_732696.fn = (function_type)__lambda_122;
-c_732696.num_args = 1;
-c_732696.num_elements = 3;
-c_732696.elements = (object *)e_732739;
-c_732696.elements[0] = ((closureN)self_731366)->elements[0];
-c_732696.elements[1] = k_73939;
-c_732696.elements[2] = ((closureN)self_731366)->elements[1];
+closureN_type c_732697;
+object e_732740 [3];
+c_732697.hdr.mark = gc_color_red;
+ c_732697.hdr.grayed = 0;
+c_732697.tag = closureN_tag;
+ c_732697.fn = (function_type)__lambda_122;
+c_732697.num_args = 1;
+c_732697.num_elements = 3;
+c_732697.elements = (object *)e_732740;
+c_732697.elements[0] = ((closureN)self_731366)->elements[0];
+c_732697.elements[1] = k_73939;
+c_732697.elements[2] = ((closureN)self_731366)->elements[1];
 
-return_direct_with_clo1(data,(closure)&c_732696,__lambda_122,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732697,__lambda_122,  boolean_f);; 
 }
 
 static void __lambda_122(void *data, int argc, object self_731367, object loop_73161_73522) {
   
-closureN_type c_732698;
-object e_732735 [3];
-c_732698.hdr.mark = gc_color_red;
- c_732698.hdr.grayed = 0;
-c_732698.tag = closureN_tag;
- c_732698.fn = (function_type)__lambda_288;
-c_732698.num_args = 1;
-c_732698.num_elements = 3;
-c_732698.elements = (object *)e_732735;
-c_732698.elements[0] = ((closureN)self_731367)->elements[0];
-c_732698.elements[1] = ((closureN)self_731367)->elements[1];
-c_732698.elements[2] = ((closureN)self_731367)->elements[2];
+closureN_type c_732699;
+object e_732736 [3];
+c_732699.hdr.mark = gc_color_red;
+ c_732699.hdr.grayed = 0;
+c_732699.tag = closureN_tag;
+ c_732699.fn = (function_type)__lambda_289;
+c_732699.num_args = 1;
+c_732699.num_elements = 3;
+c_732699.elements = (object *)e_732736;
+c_732699.elements[0] = ((closureN)self_731367)->elements[0];
+c_732699.elements[1] = ((closureN)self_731367)->elements[1];
+c_732699.elements[2] = ((closureN)self_731367)->elements[2];
 
 
-pair_type local_732738; 
-return_direct_with_clo1(data,(closure)&c_732698,__lambda_288,  set_cell_as_expr(&local_732738, loop_73161_73522));; 
+pair_type local_732739; 
+return_direct_with_clo1(data,(closure)&c_732699,__lambda_289,  set_cell_as_expr(&local_732739, loop_73161_73522));; 
 }
 
-static void __lambda_288(void *data, int argc, object self_731368, object loop_73161_73522) {
+static void __lambda_289(void *data, int argc, object self_731368, object loop_73161_73522) {
   
-  closureN_type c_732706;
-object e_732734 [3];
-c_732706.hdr.mark = gc_color_red;
- c_732706.hdr.grayed = 0;
-c_732706.tag = closureN_tag;
- c_732706.fn = (function_type)__lambda_123;
-c_732706.num_args = 0;
-c_732706.num_elements = 3;
-c_732706.elements = (object *)e_732734;
-c_732706.elements[0] = ((closureN)self_731368)->elements[0];
-c_732706.elements[1] = loop_73161_73522;
-c_732706.elements[2] = ((closureN)self_731368)->elements[2];
+  closureN_type c_732707;
+object e_732735 [3];
+c_732707.hdr.mark = gc_color_red;
+ c_732707.hdr.grayed = 0;
+c_732707.tag = closureN_tag;
+ c_732707.fn = (function_type)__lambda_123;
+c_732707.num_args = 0;
+c_732707.num_elements = 3;
+c_732707.elements = (object *)e_732735;
+c_732707.elements[0] = ((closureN)self_731368)->elements[0];
+c_732707.elements[1] = loop_73161_73522;
+c_732707.elements[2] = ((closureN)self_731368)->elements[2];
 
-  Cyc_set_cell(data, loop_73161_73522, &c_732706);
+  Cyc_set_cell(data, loop_73161_73522, &c_732707);
 
 return_closcall1(data,  car(loop_73161_73522),  ((closureN)self_731368)->elements[1]);;; 
 }
 
 static void __lambda_123(void *data, int argc, object self_731369, object k_73942) {
   
-closureN_type c_732709;
-object e_732733 [3];
-c_732709.hdr.mark = gc_color_red;
- c_732709.hdr.grayed = 0;
-c_732709.tag = closureN_tag;
- c_732709.fn = (function_type)__lambda_124;
-c_732709.num_args = 1;
-c_732709.num_elements = 3;
-c_732709.elements = (object *)e_732733;
-c_732709.elements[0] = k_73942;
-c_732709.elements[1] = ((closureN)self_731369)->elements[1];
-c_732709.elements[2] = ((closureN)self_731369)->elements[2];
+closureN_type c_732710;
+object e_732734 [3];
+c_732710.hdr.mark = gc_color_red;
+ c_732710.hdr.grayed = 0;
+c_732710.tag = closureN_tag;
+ c_732710.fn = (function_type)__lambda_124;
+c_732710.num_args = 1;
+c_732710.num_elements = 3;
+c_732710.elements = (object *)e_732734;
+c_732710.elements[0] = k_73942;
+c_732710.elements[1] = ((closureN)self_731369)->elements[1];
+c_732710.elements[2] = ((closureN)self_731369)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731369)->elements[0],  &c_732709);; 
+return_closcall1(data,  ((closureN)self_731369)->elements[0],  &c_732710);; 
 }
 
 static void __lambda_124(void *data, int argc, object self_731370, object next_73162_73523) {
   
-closureN_type c_732711;
-object e_732722 [2];
-c_732711.hdr.mark = gc_color_red;
- c_732711.hdr.grayed = 0;
-c_732711.tag = closureN_tag;
- c_732711.fn = (function_type)__lambda_125;
-c_732711.num_args = 0;
-c_732711.num_elements = 2;
-c_732711.elements = (object *)e_732722;
-c_732711.elements[0] = next_73162_73523;
-c_732711.elements[1] = ((closureN)self_731370)->elements[2];
+closureN_type c_732712;
+object e_732723 [2];
+c_732712.hdr.mark = gc_color_red;
+ c_732712.hdr.grayed = 0;
+c_732712.tag = closureN_tag;
+ c_732712.fn = (function_type)__lambda_125;
+c_732712.num_args = 0;
+c_732712.num_elements = 2;
+c_732712.elements = (object *)e_732723;
+c_732712.elements[0] = next_73162_73523;
+c_732712.elements[1] = ((closureN)self_731370)->elements[2];
 
 
-closureN_type c_732723;
-object e_732732 [3];
-c_732723.hdr.mark = gc_color_red;
- c_732723.hdr.grayed = 0;
-c_732723.tag = closureN_tag;
- c_732723.fn = (function_type)__lambda_126;
-c_732723.num_args = 1;
-c_732723.num_elements = 3;
-c_732723.elements = (object *)e_732732;
-c_732723.elements[0] = ((closureN)self_731370)->elements[0];
-c_732723.elements[1] = ((closureN)self_731370)->elements[1];
-c_732723.elements[2] = next_73162_73523;
+closureN_type c_732724;
+object e_732733 [3];
+c_732724.hdr.mark = gc_color_red;
+ c_732724.hdr.grayed = 0;
+c_732724.tag = closureN_tag;
+ c_732724.fn = (function_type)__lambda_126;
+c_732724.num_args = 1;
+c_732724.num_elements = 3;
+c_732724.elements = (object *)e_732733;
+c_732724.elements[0] = ((closureN)self_731370)->elements[0];
+c_732724.elements[1] = ((closureN)self_731370)->elements[1];
+c_732724.elements[2] = next_73162_73523;
 
-return_direct_with_clo1(data,(closure)&c_732711,__lambda_125,  &c_732723);; 
+return_direct_with_clo1(data,(closure)&c_732712,__lambda_125,  &c_732724);; 
 }
 
 static void __lambda_126(void *data, int argc, object self_731371, object r_73944) {
@@ -3912,101 +3934,101 @@ static void __lambda_111(void *data, int argc, closure _,object k_73922, object 
 load_varargs(gens_73154_73514, gens_73154_73514_raw, argc - 3);
   Cyc_st_add(data, "srfi/121.sld:gcombine");
 
-closureN_type c_732624;
-object e_732688 [3];
-c_732624.hdr.mark = gc_color_red;
- c_732624.hdr.grayed = 0;
-c_732624.tag = closureN_tag;
- c_732624.fn = (function_type)__lambda_287;
-c_732624.num_args = 1;
-c_732624.num_elements = 3;
-c_732624.elements = (object *)e_732688;
-c_732624.elements[0] = gens_73154_73514;
-c_732624.elements[1] = k_73922;
-c_732624.elements[2] = proc_73152_73512;
+closureN_type c_732625;
+object e_732689 [3];
+c_732625.hdr.mark = gc_color_red;
+ c_732625.hdr.grayed = 0;
+c_732625.tag = closureN_tag;
+ c_732625.fn = (function_type)__lambda_288;
+c_732625.num_args = 1;
+c_732625.num_elements = 3;
+c_732625.elements = (object *)e_732689;
+c_732625.elements[0] = gens_73154_73514;
+c_732625.elements[1] = k_73922;
+c_732625.elements[2] = proc_73152_73512;
 
 
-pair_type local_732691; 
-return_direct_with_clo1(data,(closure)&c_732624,__lambda_287,  set_cell_as_expr(&local_732691, seed_73153_73513));; 
+pair_type local_732692; 
+return_direct_with_clo1(data,(closure)&c_732625,__lambda_288,  set_cell_as_expr(&local_732692, seed_73153_73513));; 
 }
 
-static void __lambda_287(void *data, int argc, object self_731356, object seed_73153_73513) {
+static void __lambda_288(void *data, int argc, object self_731356, object seed_73153_73513) {
   
-closureN_type c_732627;
-object e_732687 [3];
-c_732627.hdr.mark = gc_color_red;
- c_732627.hdr.grayed = 0;
-c_732627.tag = closureN_tag;
- c_732627.fn = (function_type)__lambda_112;
-c_732627.num_args = 0;
-c_732627.num_elements = 3;
-c_732627.elements = (object *)e_732687;
-c_732627.elements[0] = ((closureN)self_731356)->elements[0];
-c_732627.elements[1] = ((closureN)self_731356)->elements[2];
-c_732627.elements[2] = seed_73153_73513;
+closureN_type c_732628;
+object e_732688 [3];
+c_732628.hdr.mark = gc_color_red;
+ c_732628.hdr.grayed = 0;
+c_732628.tag = closureN_tag;
+ c_732628.fn = (function_type)__lambda_112;
+c_732628.num_args = 0;
+c_732628.num_elements = 3;
+c_732628.elements = (object *)e_732688;
+c_732628.elements[0] = ((closureN)self_731356)->elements[0];
+c_732628.elements[1] = ((closureN)self_731356)->elements[2];
+c_732628.elements[2] = seed_73153_73513;
 
-return_closcall1(data,  ((closureN)self_731356)->elements[1],  &c_732627);; 
+return_closcall1(data,  ((closureN)self_731356)->elements[1],  &c_732628);; 
 }
 
 static void __lambda_112(void *data, int argc, object self_731357, object k_73923) {
   
-closureN_type c_732629;
-object e_732686 [4];
-c_732629.hdr.mark = gc_color_red;
- c_732629.hdr.grayed = 0;
-c_732629.tag = closureN_tag;
- c_732629.fn = (function_type)__lambda_113;
-c_732629.num_args = 1;
-c_732629.num_elements = 4;
-c_732629.elements = (object *)e_732686;
-c_732629.elements[0] = ((closureN)self_731357)->elements[0];
-c_732629.elements[1] = k_73923;
-c_732629.elements[2] = ((closureN)self_731357)->elements[1];
-c_732629.elements[3] = ((closureN)self_731357)->elements[2];
+closureN_type c_732630;
+object e_732687 [4];
+c_732630.hdr.mark = gc_color_red;
+ c_732630.hdr.grayed = 0;
+c_732630.tag = closureN_tag;
+ c_732630.fn = (function_type)__lambda_113;
+c_732630.num_args = 1;
+c_732630.num_elements = 4;
+c_732630.elements = (object *)e_732687;
+c_732630.elements[0] = ((closureN)self_731357)->elements[0];
+c_732630.elements[1] = k_73923;
+c_732630.elements[2] = ((closureN)self_731357)->elements[1];
+c_732630.elements[3] = ((closureN)self_731357)->elements[2];
 
-return_direct_with_clo1(data,(closure)&c_732629,__lambda_113,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732630,__lambda_113,  boolean_f);; 
 }
 
 static void __lambda_113(void *data, int argc, object self_731358, object items_73516) {
   
-closureN_type c_732631;
-object e_732682 [4];
-c_732631.hdr.mark = gc_color_red;
- c_732631.hdr.grayed = 0;
-c_732631.tag = closureN_tag;
- c_732631.fn = (function_type)__lambda_286;
-c_732631.num_args = 1;
-c_732631.num_elements = 4;
-c_732631.elements = (object *)e_732682;
-c_732631.elements[0] = ((closureN)self_731358)->elements[0];
-c_732631.elements[1] = ((closureN)self_731358)->elements[1];
-c_732631.elements[2] = ((closureN)self_731358)->elements[2];
-c_732631.elements[3] = ((closureN)self_731358)->elements[3];
+closureN_type c_732632;
+object e_732683 [4];
+c_732632.hdr.mark = gc_color_red;
+ c_732632.hdr.grayed = 0;
+c_732632.tag = closureN_tag;
+ c_732632.fn = (function_type)__lambda_287;
+c_732632.num_args = 1;
+c_732632.num_elements = 4;
+c_732632.elements = (object *)e_732683;
+c_732632.elements[0] = ((closureN)self_731358)->elements[0];
+c_732632.elements[1] = ((closureN)self_731358)->elements[1];
+c_732632.elements[2] = ((closureN)self_731358)->elements[2];
+c_732632.elements[3] = ((closureN)self_731358)->elements[3];
 
 
-pair_type local_732685; 
-return_direct_with_clo1(data,(closure)&c_732631,__lambda_286,  set_cell_as_expr(&local_732685, items_73516));; 
+pair_type local_732686; 
+return_direct_with_clo1(data,(closure)&c_732632,__lambda_287,  set_cell_as_expr(&local_732686, items_73516));; 
 }
 
-static void __lambda_286(void *data, int argc, object self_731359, object items_73516) {
+static void __lambda_287(void *data, int argc, object self_731359, object items_73516) {
   
-closureN_type c_732633;
-object e_732678 [4];
-c_732633.hdr.mark = gc_color_red;
- c_732633.hdr.grayed = 0;
-c_732633.tag = closureN_tag;
- c_732633.fn = (function_type)__lambda_114;
-c_732633.num_args = 1;
-c_732633.num_elements = 4;
-c_732633.elements = (object *)e_732678;
-c_732633.elements[0] = items_73516;
-c_732633.elements[1] = ((closureN)self_731359)->elements[1];
-c_732633.elements[2] = ((closureN)self_731359)->elements[2];
-c_732633.elements[3] = ((closureN)self_731359)->elements[3];
+closureN_type c_732634;
+object e_732679 [4];
+c_732634.hdr.mark = gc_color_red;
+ c_732634.hdr.grayed = 0;
+c_732634.tag = closureN_tag;
+ c_732634.fn = (function_type)__lambda_114;
+c_732634.num_args = 1;
+c_732634.num_elements = 4;
+c_732634.elements = (object *)e_732679;
+c_732634.elements[0] = items_73516;
+c_732634.elements[1] = ((closureN)self_731359)->elements[1];
+c_732634.elements[2] = ((closureN)self_731359)->elements[2];
+c_732634.elements[3] = ((closureN)self_731359)->elements[3];
 
 
-mclosure0(c_732679, (function_type)__lambda_119);c_732679.num_args = 1;
-return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_732633, &c_732679, ((closureN)self_731359)->elements[0]);; 
+mclosure0(c_732680, (function_type)__lambda_119);c_732680.num_args = 1;
+return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_732634, &c_732680, ((closureN)self_731359)->elements[0]);; 
 }
 
 static void __lambda_119(void *data, int argc, object self_731365, object k_73935, object x_73155_73517) {
@@ -4016,59 +4038,59 @@ static void __lambda_119(void *data, int argc, object self_731365, object k_7393
 static void __lambda_114(void *data, int argc, object self_731360, object r_73933) {
   
   Cyc_set_cell(data, ((closureN)self_731360)->elements[0], r_73933);
-closureN_type c_732636;
-object e_732671 [4];
-c_732636.hdr.mark = gc_color_red;
- c_732636.hdr.grayed = 0;
-c_732636.tag = closureN_tag;
- c_732636.fn = (function_type)__lambda_115;
-c_732636.num_args = 1;
-c_732636.num_elements = 4;
-c_732636.elements = (object *)e_732671;
-c_732636.elements[0] = ((closureN)self_731360)->elements[0];
-c_732636.elements[1] = ((closureN)self_731360)->elements[1];
-c_732636.elements[2] = ((closureN)self_731360)->elements[2];
-c_732636.elements[3] = ((closureN)self_731360)->elements[3];
+closureN_type c_732637;
+object e_732672 [4];
+c_732637.hdr.mark = gc_color_red;
+ c_732637.hdr.grayed = 0;
+c_732637.tag = closureN_tag;
+ c_732637.fn = (function_type)__lambda_115;
+c_732637.num_args = 1;
+c_732637.num_elements = 4;
+c_732637.elements = (object *)e_732672;
+c_732637.elements[0] = ((closureN)self_731360)->elements[0];
+c_732637.elements[1] = ((closureN)self_731360)->elements[1];
+c_732637.elements[2] = ((closureN)self_731360)->elements[2];
+c_732637.elements[3] = ((closureN)self_731360)->elements[3];
 
 
 
-return_closcall3(data,  __glo_any_srfi_121,  &c_732636, primitive_eof_91object_127, car(((closureN)self_731360)->elements[0]));;; 
+return_closcall3(data,  __glo_any_srfi_121,  &c_732637, primitive_eof_91object_127, car(((closureN)self_731360)->elements[0]));;; 
 }
 
 static void __lambda_115(void *data, int argc, object self_731361, object r_73925) {
   if( (boolean_f != r_73925) ){ 
   
-complex_num_type local_732641; 
+complex_num_type local_732642; 
 return_closcall1(data,  ((closureN)self_731361)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732641));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732642));
 } else { 
   
-closureN_type c_732644;
-object e_732663 [3];
-c_732644.hdr.mark = gc_color_red;
- c_732644.hdr.grayed = 0;
-c_732644.tag = closureN_tag;
- c_732644.fn = (function_type)__lambda_116;
-c_732644.num_args = 0;
-c_732644.num_elements = 3;
-c_732644.elements = (object *)e_732663;
-c_732644.elements[0] = ((closureN)self_731361)->elements[0];
-c_732644.elements[1] = ((closureN)self_731361)->elements[2];
-c_732644.elements[2] = ((closureN)self_731361)->elements[3];
+closureN_type c_732645;
+object e_732664 [3];
+c_732645.hdr.mark = gc_color_red;
+ c_732645.hdr.grayed = 0;
+c_732645.tag = closureN_tag;
+ c_732645.fn = (function_type)__lambda_116;
+c_732645.num_args = 0;
+c_732645.num_elements = 3;
+c_732645.elements = (object *)e_732664;
+c_732645.elements[0] = ((closureN)self_731361)->elements[0];
+c_732645.elements[1] = ((closureN)self_731361)->elements[2];
+c_732645.elements[2] = ((closureN)self_731361)->elements[3];
 
 
-closureN_type c_732664;
-object e_732670 [1];
-c_732664.hdr.mark = gc_color_red;
- c_732664.hdr.grayed = 0;
-c_732664.tag = closureN_tag;
- c_732664.fn = (function_type)__lambda_118;
-c_732664.num_args = 2;
-c_732664.num_elements = 1;
-c_732664.elements = (object *)e_732670;
-c_732664.elements[0] = ((closureN)self_731361)->elements[3];
+closureN_type c_732665;
+object e_732671 [1];
+c_732665.hdr.mark = gc_color_red;
+ c_732665.hdr.grayed = 0;
+c_732665.tag = closureN_tag;
+ c_732665.fn = (function_type)__lambda_118;
+c_732665.num_args = 2;
+c_732665.num_elements = 1;
+c_732665.elements = (object *)e_732671;
+c_732665.elements[0] = ((closureN)self_731361)->elements[3];
 
-return_closcall3(data,  __glo_call_91with_91values_scheme_base,  ((closureN)self_731361)->elements[1], &c_732644, &c_732664);}
+return_closcall3(data,  __glo_call_91with_91values_scheme_base,  ((closureN)self_731361)->elements[1], &c_732645, &c_732665);}
 ;; 
 }
 
@@ -4079,188 +4101,188 @@ static void __lambda_118(void *data, int argc, object self_731364, object k_7392
 
 static void __lambda_116(void *data, int argc, object self_731362, object k_73930) {
   
-closureN_type c_732646;
-object e_732653 [2];
-c_732646.hdr.mark = gc_color_red;
- c_732646.hdr.grayed = 0;
-c_732646.tag = closureN_tag;
- c_732646.fn = (function_type)__lambda_117;
-c_732646.num_args = 1;
-c_732646.num_elements = 2;
-c_732646.elements = (object *)e_732653;
-c_732646.elements[0] = k_73930;
-c_732646.elements[1] = ((closureN)self_731362)->elements[1];
+closureN_type c_732647;
+object e_732654 [2];
+c_732647.hdr.mark = gc_color_red;
+ c_732647.hdr.grayed = 0;
+c_732647.tag = closureN_tag;
+ c_732647.fn = (function_type)__lambda_117;
+c_732647.num_args = 1;
+c_732647.num_elements = 2;
+c_732647.elements = (object *)e_732654;
+c_732647.elements[0] = k_73930;
+c_732647.elements[1] = ((closureN)self_731362)->elements[1];
 
 
 
 
-pair_type local_732659; 
+pair_type local_732660; 
 
 
-return_closcall3(data,  __glo_append_scheme_base,  &c_732646, car(((closureN)self_731362)->elements[0]), set_cell_as_expr(&local_732659, car(((closureN)self_731362)->elements[2])));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_732647, car(((closureN)self_731362)->elements[0]), set_cell_as_expr(&local_732660, car(((closureN)self_731362)->elements[2])));; 
 }
 
 static void __lambda_117(void *data, int argc, object self_731363, object r_73931) {
   
-object c_732651 = apply(data,  ((closureN)self_731363)->elements[0],((closureN)self_731363)->elements[1], r_73931);
-return_closcall1(data,  ((closureN)self_731363)->elements[0],  c_732651);; 
+object c_732652 = apply(data,  ((closureN)self_731363)->elements[0],((closureN)self_731363)->elements[1], r_73931);
+return_closcall1(data,  ((closureN)self_731363)->elements[0],  c_732652);; 
 }
 
 static void __lambda_102(void *data, int argc, closure _,object k_73906, object args_73147_73508_raw, ...) {
 load_varargs(args_73147_73508, args_73147_73508_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:gappend");
 
-closureN_type c_732532;
-object e_732618 [1];
-c_732532.hdr.mark = gc_color_red;
- c_732532.hdr.grayed = 0;
-c_732532.tag = closureN_tag;
- c_732532.fn = (function_type)__lambda_285;
-c_732532.num_args = 1;
-c_732532.num_elements = 1;
-c_732532.elements = (object *)e_732618;
-c_732532.elements[0] = k_73906;
+closureN_type c_732533;
+object e_732619 [1];
+c_732533.hdr.mark = gc_color_red;
+ c_732533.hdr.grayed = 0;
+c_732533.tag = closureN_tag;
+ c_732533.fn = (function_type)__lambda_286;
+c_732533.num_args = 1;
+c_732533.num_elements = 1;
+c_732533.elements = (object *)e_732619;
+c_732533.elements[0] = k_73906;
 
 
-pair_type local_732621; 
-return_direct_with_clo1(data,(closure)&c_732532,__lambda_285,  set_cell_as_expr(&local_732621, args_73147_73508));; 
+pair_type local_732622; 
+return_direct_with_clo1(data,(closure)&c_732533,__lambda_286,  set_cell_as_expr(&local_732622, args_73147_73508));; 
 }
 
-static void __lambda_285(void *data, int argc, object self_731346, object args_73147_73508) {
+static void __lambda_286(void *data, int argc, object self_731346, object args_73147_73508) {
   
-closureN_type c_732535;
-object e_732617 [1];
-c_732535.hdr.mark = gc_color_red;
- c_732535.hdr.grayed = 0;
-c_732535.tag = closureN_tag;
- c_732535.fn = (function_type)__lambda_103;
-c_732535.num_args = 0;
-c_732535.num_elements = 1;
-c_732535.elements = (object *)e_732617;
-c_732535.elements[0] = args_73147_73508;
+closureN_type c_732536;
+object e_732618 [1];
+c_732536.hdr.mark = gc_color_red;
+ c_732536.hdr.grayed = 0;
+c_732536.tag = closureN_tag;
+ c_732536.fn = (function_type)__lambda_103;
+c_732536.num_args = 0;
+c_732536.num_elements = 1;
+c_732536.elements = (object *)e_732618;
+c_732536.elements[0] = args_73147_73508;
 
-return_closcall1(data,  ((closureN)self_731346)->elements[0],  &c_732535);; 
+return_closcall1(data,  ((closureN)self_731346)->elements[0],  &c_732536);; 
 }
 
 static void __lambda_103(void *data, int argc, object self_731347, object k_73907) {
   
-closureN_type c_732537;
-object e_732611 [2];
-c_732537.hdr.mark = gc_color_red;
- c_732537.hdr.grayed = 0;
-c_732537.tag = closureN_tag;
- c_732537.fn = (function_type)__lambda_104;
-c_732537.num_args = 1;
-c_732537.num_elements = 2;
-c_732537.elements = (object *)e_732611;
-c_732537.elements[0] = ((closureN)self_731347)->elements[0];
-c_732537.elements[1] = k_73907;
+closureN_type c_732538;
+object e_732612 [2];
+c_732538.hdr.mark = gc_color_red;
+ c_732538.hdr.grayed = 0;
+c_732538.tag = closureN_tag;
+ c_732538.fn = (function_type)__lambda_104;
+c_732538.num_args = 1;
+c_732538.num_elements = 2;
+c_732538.elements = (object *)e_732612;
+c_732538.elements[0] = ((closureN)self_731347)->elements[0];
+c_732538.elements[1] = k_73907;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732537,__lambda_104,  Cyc_is_null(car(((closureN)self_731347)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_732538,__lambda_104,  Cyc_is_null(car(((closureN)self_731347)->elements[0])));; 
 }
 
 static void __lambda_104(void *data, int argc, object self_731348, object r_73908) {
   if( (boolean_f != r_73908) ){ 
   
-complex_num_type local_732542; 
+complex_num_type local_732543; 
 return_closcall1(data,  ((closureN)self_731348)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732542));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732543));
 } else { 
   
-closureN_type c_732544;
-object e_732605 [2];
-c_732544.hdr.mark = gc_color_red;
- c_732544.hdr.grayed = 0;
-c_732544.tag = closureN_tag;
- c_732544.fn = (function_type)__lambda_105;
-c_732544.num_args = 1;
-c_732544.num_elements = 2;
-c_732544.elements = (object *)e_732605;
-c_732544.elements[0] = ((closureN)self_731348)->elements[0];
-c_732544.elements[1] = ((closureN)self_731348)->elements[1];
+closureN_type c_732545;
+object e_732606 [2];
+c_732545.hdr.mark = gc_color_red;
+ c_732545.hdr.grayed = 0;
+c_732545.tag = closureN_tag;
+ c_732545.fn = (function_type)__lambda_105;
+c_732545.num_args = 1;
+c_732545.num_elements = 2;
+c_732545.elements = (object *)e_732606;
+c_732545.elements[0] = ((closureN)self_731348)->elements[0];
+c_732545.elements[1] = ((closureN)self_731348)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732544,__lambda_105,  Cyc_car(data, car(((closureN)self_731348)->elements[0])));}
+return_direct_with_clo1(data,(closure)&c_732545,__lambda_105,  Cyc_car(data, car(((closureN)self_731348)->elements[0])));}
 ;; 
 }
 
 static void __lambda_105(void *data, int argc, object self_731349, object r_73919) {
   
-closureN_type c_732546;
-object e_732604 [2];
-c_732546.hdr.mark = gc_color_red;
- c_732546.hdr.grayed = 0;
-c_732546.tag = closureN_tag;
- c_732546.fn = (function_type)__lambda_106;
-c_732546.num_args = 1;
-c_732546.num_elements = 2;
-c_732546.elements = (object *)e_732604;
-c_732546.elements[0] = ((closureN)self_731349)->elements[0];
-c_732546.elements[1] = ((closureN)self_731349)->elements[1];
+closureN_type c_732547;
+object e_732605 [2];
+c_732547.hdr.mark = gc_color_red;
+ c_732547.hdr.grayed = 0;
+c_732547.tag = closureN_tag;
+ c_732547.fn = (function_type)__lambda_106;
+c_732547.num_args = 1;
+c_732547.num_elements = 2;
+c_732547.elements = (object *)e_732605;
+c_732547.elements[0] = ((closureN)self_731349)->elements[0];
+c_732547.elements[1] = ((closureN)self_731349)->elements[1];
 
-return_closcall1(data,  r_73919,  &c_732546);; 
+return_closcall1(data,  r_73919,  &c_732547);; 
 }
 
 static void __lambda_106(void *data, int argc, object self_731350, object v_73149_73509) {
   
-closureN_type c_732548;
-object e_732603 [3];
-c_732548.hdr.mark = gc_color_red;
- c_732548.hdr.grayed = 0;
-c_732548.tag = closureN_tag;
- c_732548.fn = (function_type)__lambda_107;
-c_732548.num_args = 1;
-c_732548.num_elements = 3;
-c_732548.elements = (object *)e_732603;
-c_732548.elements[0] = ((closureN)self_731350)->elements[0];
-c_732548.elements[1] = ((closureN)self_731350)->elements[1];
-c_732548.elements[2] = v_73149_73509;
+closureN_type c_732549;
+object e_732604 [3];
+c_732549.hdr.mark = gc_color_red;
+ c_732549.hdr.grayed = 0;
+c_732549.tag = closureN_tag;
+ c_732549.fn = (function_type)__lambda_107;
+c_732549.num_args = 1;
+c_732549.num_elements = 3;
+c_732549.elements = (object *)e_732604;
+c_732549.elements[0] = ((closureN)self_731350)->elements[0];
+c_732549.elements[1] = ((closureN)self_731350)->elements[1];
+c_732549.elements[2] = v_73149_73509;
 
-return_direct_with_clo1(data,(closure)&c_732548,__lambda_107,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732549,__lambda_107,  boolean_f);; 
 }
 
 static void __lambda_107(void *data, int argc, object self_731351, object loop_73150_73510) {
   
-closureN_type c_732550;
-object e_732599 [3];
-c_732550.hdr.mark = gc_color_red;
- c_732550.hdr.grayed = 0;
-c_732550.tag = closureN_tag;
- c_732550.fn = (function_type)__lambda_284;
-c_732550.num_args = 1;
-c_732550.num_elements = 3;
-c_732550.elements = (object *)e_732599;
-c_732550.elements[0] = ((closureN)self_731351)->elements[0];
-c_732550.elements[1] = ((closureN)self_731351)->elements[1];
-c_732550.elements[2] = ((closureN)self_731351)->elements[2];
+closureN_type c_732551;
+object e_732600 [3];
+c_732551.hdr.mark = gc_color_red;
+ c_732551.hdr.grayed = 0;
+c_732551.tag = closureN_tag;
+ c_732551.fn = (function_type)__lambda_285;
+c_732551.num_args = 1;
+c_732551.num_elements = 3;
+c_732551.elements = (object *)e_732600;
+c_732551.elements[0] = ((closureN)self_731351)->elements[0];
+c_732551.elements[1] = ((closureN)self_731351)->elements[1];
+c_732551.elements[2] = ((closureN)self_731351)->elements[2];
 
 
-pair_type local_732602; 
-return_direct_with_clo1(data,(closure)&c_732550,__lambda_284,  set_cell_as_expr(&local_732602, loop_73150_73510));; 
+pair_type local_732603; 
+return_direct_with_clo1(data,(closure)&c_732551,__lambda_285,  set_cell_as_expr(&local_732603, loop_73150_73510));; 
 }
 
-static void __lambda_284(void *data, int argc, object self_731352, object loop_73150_73510) {
+static void __lambda_285(void *data, int argc, object self_731352, object loop_73150_73510) {
   
-  closureN_type c_732559;
-object e_732598 [2];
-c_732559.hdr.mark = gc_color_red;
- c_732559.hdr.grayed = 0;
-c_732559.tag = closureN_tag;
- c_732559.fn = (function_type)__lambda_108;
-c_732559.num_args = 1;
-c_732559.num_elements = 2;
-c_732559.elements = (object *)e_732598;
-c_732559.elements[0] = ((closureN)self_731352)->elements[0];
-c_732559.elements[1] = loop_73150_73510;
+  closureN_type c_732560;
+object e_732599 [2];
+c_732560.hdr.mark = gc_color_red;
+ c_732560.hdr.grayed = 0;
+c_732560.tag = closureN_tag;
+ c_732560.fn = (function_type)__lambda_108;
+c_732560.num_args = 1;
+c_732560.num_elements = 2;
+c_732560.elements = (object *)e_732599;
+c_732560.elements[0] = ((closureN)self_731352)->elements[0];
+c_732560.elements[1] = loop_73150_73510;
 
-  Cyc_set_cell(data, loop_73150_73510, &c_732559);
+  Cyc_set_cell(data, loop_73150_73510, &c_732560);
 
 return_closcall2(data,  car(loop_73150_73510),  ((closureN)self_731352)->elements[1], ((closureN)self_731352)->elements[2]);;; 
 }
@@ -4269,24 +4291,24 @@ static void __lambda_108(void *data, int argc, object self_731353, object k_7391
     
 if( (boolean_f != Cyc_is_eof_object(v_73151_73511)) ){ 
   
-closureN_type c_732563;
-object e_732591 [3];
-c_732563.hdr.mark = gc_color_red;
- c_732563.hdr.grayed = 0;
-c_732563.tag = closureN_tag;
- c_732563.fn = (function_type)__lambda_109;
-c_732563.num_args = 1;
-c_732563.num_elements = 3;
-c_732563.elements = (object *)e_732591;
-c_732563.elements[0] = ((closureN)self_731353)->elements[0];
-c_732563.elements[1] = k_73912;
-c_732563.elements[2] = ((closureN)self_731353)->elements[1];
+closureN_type c_732564;
+object e_732592 [3];
+c_732564.hdr.mark = gc_color_red;
+ c_732564.hdr.grayed = 0;
+c_732564.tag = closureN_tag;
+ c_732564.fn = (function_type)__lambda_109;
+c_732564.num_args = 1;
+c_732564.num_elements = 3;
+c_732564.elements = (object *)e_732592;
+c_732564.elements[0] = ((closureN)self_731353)->elements[0];
+c_732564.elements[1] = k_73912;
+c_732564.elements[2] = ((closureN)self_731353)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732563,__lambda_109,  Cyc_cdr(data, car(((closureN)self_731353)->elements[0])));
+return_direct_with_clo1(data,(closure)&c_732564,__lambda_109,  Cyc_cdr(data, car(((closureN)self_731353)->elements[0])));
 } else { 
   return_closcall1(data,  k_73912,  v_73151_73511);}
 ;; 
@@ -4298,28 +4320,28 @@ static void __lambda_109(void *data, int argc, object self_731354, object r_7391
   
 if( (boolean_f != Cyc_is_null(car(((closureN)self_731354)->elements[0]))) ){ 
   
-complex_num_type local_732574; 
+complex_num_type local_732575; 
 return_closcall1(data,  ((closureN)self_731354)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732574));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732575));
 } else { 
   
 
 
 
 
-closureN_type c_732581;
-object e_732587 [2];
-c_732581.hdr.mark = gc_color_red;
- c_732581.hdr.grayed = 0;
-c_732581.tag = closureN_tag;
- c_732581.fn = (function_type)__lambda_110;
-c_732581.num_args = 1;
-c_732581.num_elements = 2;
-c_732581.elements = (object *)e_732587;
-c_732581.elements[0] = ((closureN)self_731354)->elements[1];
-c_732581.elements[1] = ((closureN)self_731354)->elements[2];
+closureN_type c_732582;
+object e_732588 [2];
+c_732582.hdr.mark = gc_color_red;
+ c_732582.hdr.grayed = 0;
+c_732582.tag = closureN_tag;
+ c_732582.fn = (function_type)__lambda_110;
+c_732582.num_args = 1;
+c_732582.num_elements = 2;
+c_732582.elements = (object *)e_732588;
+c_732582.elements[0] = ((closureN)self_731354)->elements[1];
+c_732582.elements[1] = ((closureN)self_731354)->elements[2];
 
-return_closcall1(data,  Cyc_car(data, car(((closureN)self_731354)->elements[0])),  &c_732581);}
+return_closcall1(data,  Cyc_car(data, car(((closureN)self_731354)->elements[0])),  &c_732582);}
 ;; 
 }
 
@@ -4333,84 +4355,84 @@ static void __lambda_96(void *data, int argc, closure _,object k_73895, object a
 load_varargs(args_73138_73506, args_73138_73506_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:gcons*");
 
-closureN_type c_732468;
-object e_732526 [1];
-c_732468.hdr.mark = gc_color_red;
- c_732468.hdr.grayed = 0;
-c_732468.tag = closureN_tag;
- c_732468.fn = (function_type)__lambda_283;
-c_732468.num_args = 1;
-c_732468.num_elements = 1;
-c_732468.elements = (object *)e_732526;
-c_732468.elements[0] = k_73895;
+closureN_type c_732469;
+object e_732527 [1];
+c_732469.hdr.mark = gc_color_red;
+ c_732469.hdr.grayed = 0;
+c_732469.tag = closureN_tag;
+ c_732469.fn = (function_type)__lambda_284;
+c_732469.num_args = 1;
+c_732469.num_elements = 1;
+c_732469.elements = (object *)e_732527;
+c_732469.elements[0] = k_73895;
 
 
-pair_type local_732529; 
-return_direct_with_clo1(data,(closure)&c_732468,__lambda_283,  set_cell_as_expr(&local_732529, args_73138_73506));; 
+pair_type local_732530; 
+return_direct_with_clo1(data,(closure)&c_732469,__lambda_284,  set_cell_as_expr(&local_732530, args_73138_73506));; 
 }
 
-static void __lambda_283(void *data, int argc, object self_731340, object args_73138_73506) {
+static void __lambda_284(void *data, int argc, object self_731340, object args_73138_73506) {
   
-closureN_type c_732471;
-object e_732525 [1];
-c_732471.hdr.mark = gc_color_red;
- c_732471.hdr.grayed = 0;
-c_732471.tag = closureN_tag;
- c_732471.fn = (function_type)__lambda_97;
-c_732471.num_args = 0;
-c_732471.num_elements = 1;
-c_732471.elements = (object *)e_732525;
-c_732471.elements[0] = args_73138_73506;
+closureN_type c_732472;
+object e_732526 [1];
+c_732472.hdr.mark = gc_color_red;
+ c_732472.hdr.grayed = 0;
+c_732472.tag = closureN_tag;
+ c_732472.fn = (function_type)__lambda_97;
+c_732472.num_args = 0;
+c_732472.num_elements = 1;
+c_732472.elements = (object *)e_732526;
+c_732472.elements[0] = args_73138_73506;
 
-return_closcall1(data,  ((closureN)self_731340)->elements[0],  &c_732471);; 
+return_closcall1(data,  ((closureN)self_731340)->elements[0],  &c_732472);; 
 }
 
 static void __lambda_97(void *data, int argc, object self_731341, object k_73896) {
   
-closureN_type c_732473;
-object e_732519 [2];
-c_732473.hdr.mark = gc_color_red;
- c_732473.hdr.grayed = 0;
-c_732473.tag = closureN_tag;
- c_732473.fn = (function_type)__lambda_98;
-c_732473.num_args = 1;
-c_732473.num_elements = 2;
-c_732473.elements = (object *)e_732519;
-c_732473.elements[0] = ((closureN)self_731341)->elements[0];
-c_732473.elements[1] = k_73896;
+closureN_type c_732474;
+object e_732520 [2];
+c_732474.hdr.mark = gc_color_red;
+ c_732474.hdr.grayed = 0;
+c_732474.tag = closureN_tag;
+ c_732474.fn = (function_type)__lambda_98;
+c_732474.num_args = 1;
+c_732474.num_elements = 2;
+c_732474.elements = (object *)e_732520;
+c_732474.elements[0] = ((closureN)self_731341)->elements[0];
+c_732474.elements[1] = k_73896;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732473,__lambda_98,  Cyc_is_null(car(((closureN)self_731341)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_732474,__lambda_98,  Cyc_is_null(car(((closureN)self_731341)->elements[0])));; 
 }
 
 static void __lambda_98(void *data, int argc, object self_731342, object r_73897) {
   if( (boolean_f != r_73897) ){ 
   
-complex_num_type local_732478; 
+complex_num_type local_732479; 
 return_closcall1(data,  ((closureN)self_731342)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732478));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732479));
 } else { 
   
-closureN_type c_732480;
-object e_732513 [2];
-c_732480.hdr.mark = gc_color_red;
- c_732480.hdr.grayed = 0;
-c_732480.tag = closureN_tag;
- c_732480.fn = (function_type)__lambda_99;
-c_732480.num_args = 1;
-c_732480.num_elements = 2;
-c_732480.elements = (object *)e_732513;
-c_732480.elements[0] = ((closureN)self_731342)->elements[0];
-c_732480.elements[1] = ((closureN)self_731342)->elements[1];
+closureN_type c_732481;
+object e_732514 [2];
+c_732481.hdr.mark = gc_color_red;
+ c_732481.hdr.grayed = 0;
+c_732481.tag = closureN_tag;
+ c_732481.fn = (function_type)__lambda_99;
+c_732481.num_args = 1;
+c_732481.num_elements = 2;
+c_732481.elements = (object *)e_732514;
+c_732481.elements[0] = ((closureN)self_731342)->elements[0];
+c_732481.elements[1] = ((closureN)self_731342)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732480,__lambda_99,  Cyc_cdr(data, car(((closureN)self_731342)->elements[0])));}
+return_direct_with_clo1(data,(closure)&c_732481,__lambda_99,  Cyc_cdr(data, car(((closureN)self_731342)->elements[0])));}
 ;; 
 }
 
@@ -4424,46 +4446,46 @@ if( (boolean_f != Cyc_is_null(r_73903)) ){
 return_closcall1(data,  Cyc_car(data, car(((closureN)self_731343)->elements[0])),  ((closureN)self_731343)->elements[1]);
 } else { 
   
-closureN_type c_732491;
-object e_732507 [2];
-c_732491.hdr.mark = gc_color_red;
- c_732491.hdr.grayed = 0;
-c_732491.tag = closureN_tag;
- c_732491.fn = (function_type)__lambda_100;
-c_732491.num_args = 1;
-c_732491.num_elements = 2;
-c_732491.elements = (object *)e_732507;
-c_732491.elements[0] = ((closureN)self_731343)->elements[0];
-c_732491.elements[1] = ((closureN)self_731343)->elements[1];
+closureN_type c_732492;
+object e_732508 [2];
+c_732492.hdr.mark = gc_color_red;
+ c_732492.hdr.grayed = 0;
+c_732492.tag = closureN_tag;
+ c_732492.fn = (function_type)__lambda_100;
+c_732492.num_args = 1;
+c_732492.num_elements = 2;
+c_732492.elements = (object *)e_732508;
+c_732492.elements[0] = ((closureN)self_731343)->elements[0];
+c_732492.elements[1] = ((closureN)self_731343)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732491,__lambda_100,  Cyc_car(data, car(((closureN)self_731343)->elements[0])));}
+return_direct_with_clo1(data,(closure)&c_732492,__lambda_100,  Cyc_car(data, car(((closureN)self_731343)->elements[0])));}
 ;; 
 }
 
 static void __lambda_100(void *data, int argc, object self_731344, object v_73146_73507) {
   
-closureN_type c_732493;
-object e_732501 [3];
-c_732493.hdr.mark = gc_color_red;
- c_732493.hdr.grayed = 0;
-c_732493.tag = closureN_tag;
- c_732493.fn = (function_type)__lambda_101;
-c_732493.num_args = 1;
-c_732493.num_elements = 3;
-c_732493.elements = (object *)e_732501;
-c_732493.elements[0] = ((closureN)self_731344)->elements[0];
-c_732493.elements[1] = ((closureN)self_731344)->elements[1];
-c_732493.elements[2] = v_73146_73507;
+closureN_type c_732494;
+object e_732502 [3];
+c_732494.hdr.mark = gc_color_red;
+ c_732494.hdr.grayed = 0;
+c_732494.tag = closureN_tag;
+ c_732494.fn = (function_type)__lambda_101;
+c_732494.num_args = 1;
+c_732494.num_elements = 3;
+c_732494.elements = (object *)e_732502;
+c_732494.elements[0] = ((closureN)self_731344)->elements[0];
+c_732494.elements[1] = ((closureN)self_731344)->elements[1];
+c_732494.elements[2] = v_73146_73507;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732493,__lambda_101,  Cyc_cdr(data, car(((closureN)self_731344)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_732494,__lambda_101,  Cyc_cdr(data, car(((closureN)self_731344)->elements[0])));; 
 }
 
 static void __lambda_101(void *data, int argc, object self_731345, object r_73902) {
@@ -4474,128 +4496,128 @@ static void __lambda_101(void *data, int argc, object self_731345, object r_7390
 static void __lambda_87(void *data, int argc, closure _,object k_73883, object stop_127_73129_73498, object mapper_73130_73499, object successor_73131_73500, object seed_73132_73501) {
   Cyc_st_add(data, "srfi/121.sld:make-unfold-generator");
 
-closureN_type c_732416;
-object e_732465 [4];
-c_732416.hdr.mark = gc_color_red;
- c_732416.hdr.grayed = 0;
-c_732416.tag = closureN_tag;
- c_732416.fn = (function_type)__lambda_88;
-c_732416.num_args = 1;
-c_732416.num_elements = 4;
-c_732416.elements = (object *)e_732465;
-c_732416.elements[0] = mapper_73130_73499;
-c_732416.elements[1] = seed_73132_73501;
-c_732416.elements[2] = stop_127_73129_73498;
-c_732416.elements[3] = successor_73131_73500;
+closureN_type c_732417;
+object e_732466 [4];
+c_732417.hdr.mark = gc_color_red;
+ c_732417.hdr.grayed = 0;
+c_732417.tag = closureN_tag;
+ c_732417.fn = (function_type)__lambda_88;
+c_732417.num_args = 1;
+c_732417.num_elements = 4;
+c_732417.elements = (object *)e_732466;
+c_732417.elements[0] = mapper_73130_73499;
+c_732417.elements[1] = seed_73132_73501;
+c_732417.elements[2] = stop_127_73129_73498;
+c_732417.elements[3] = successor_73131_73500;
 
-return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73883, &c_732416);; 
+return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73883, &c_732417);; 
 }
 
 static void __lambda_88(void *data, int argc, object self_731331, object k_73885, object yield_73133_73502) {
   
-closureN_type c_732418;
-object e_732463 [5];
-c_732418.hdr.mark = gc_color_red;
- c_732418.hdr.grayed = 0;
-c_732418.tag = closureN_tag;
- c_732418.fn = (function_type)__lambda_89;
-c_732418.num_args = 1;
-c_732418.num_elements = 5;
-c_732418.elements = (object *)e_732463;
-c_732418.elements[0] = k_73885;
-c_732418.elements[1] = ((closureN)self_731331)->elements[0];
-c_732418.elements[2] = ((closureN)self_731331)->elements[2];
-c_732418.elements[3] = ((closureN)self_731331)->elements[3];
-c_732418.elements[4] = yield_73133_73502;
+closureN_type c_732419;
+object e_732464 [5];
+c_732419.hdr.mark = gc_color_red;
+ c_732419.hdr.grayed = 0;
+c_732419.tag = closureN_tag;
+ c_732419.fn = (function_type)__lambda_89;
+c_732419.num_args = 1;
+c_732419.num_elements = 5;
+c_732419.elements = (object *)e_732464;
+c_732419.elements[0] = k_73885;
+c_732419.elements[1] = ((closureN)self_731331)->elements[0];
+c_732419.elements[2] = ((closureN)self_731331)->elements[2];
+c_732419.elements[3] = ((closureN)self_731331)->elements[3];
+c_732419.elements[4] = yield_73133_73502;
 
-return_direct_with_clo1(data,(closure)&c_732418,__lambda_89,  ((closureN)self_731331)->elements[1]);; 
+return_direct_with_clo1(data,(closure)&c_732419,__lambda_89,  ((closureN)self_731331)->elements[1]);; 
 }
 
 static void __lambda_89(void *data, int argc, object self_731332, object s_73135_73503) {
   
-closureN_type c_732420;
-object e_732462 [6];
-c_732420.hdr.mark = gc_color_red;
- c_732420.hdr.grayed = 0;
-c_732420.tag = closureN_tag;
- c_732420.fn = (function_type)__lambda_90;
-c_732420.num_args = 1;
-c_732420.num_elements = 6;
-c_732420.elements = (object *)e_732462;
-c_732420.elements[0] = ((closureN)self_731332)->elements[0];
-c_732420.elements[1] = ((closureN)self_731332)->elements[1];
-c_732420.elements[2] = s_73135_73503;
-c_732420.elements[3] = ((closureN)self_731332)->elements[2];
-c_732420.elements[4] = ((closureN)self_731332)->elements[3];
-c_732420.elements[5] = ((closureN)self_731332)->elements[4];
+closureN_type c_732421;
+object e_732463 [6];
+c_732421.hdr.mark = gc_color_red;
+ c_732421.hdr.grayed = 0;
+c_732421.tag = closureN_tag;
+ c_732421.fn = (function_type)__lambda_90;
+c_732421.num_args = 1;
+c_732421.num_elements = 6;
+c_732421.elements = (object *)e_732463;
+c_732421.elements[0] = ((closureN)self_731332)->elements[0];
+c_732421.elements[1] = ((closureN)self_731332)->elements[1];
+c_732421.elements[2] = s_73135_73503;
+c_732421.elements[3] = ((closureN)self_731332)->elements[2];
+c_732421.elements[4] = ((closureN)self_731332)->elements[3];
+c_732421.elements[5] = ((closureN)self_731332)->elements[4];
 
-return_direct_with_clo1(data,(closure)&c_732420,__lambda_90,  boolean_f);; 
+return_direct_with_clo1(data,(closure)&c_732421,__lambda_90,  boolean_f);; 
 }
 
 static void __lambda_90(void *data, int argc, object self_731333, object loop_73136_73504) {
   
-closureN_type c_732422;
-object e_732458 [6];
-c_732422.hdr.mark = gc_color_red;
- c_732422.hdr.grayed = 0;
-c_732422.tag = closureN_tag;
- c_732422.fn = (function_type)__lambda_282;
-c_732422.num_args = 1;
-c_732422.num_elements = 6;
-c_732422.elements = (object *)e_732458;
-c_732422.elements[0] = ((closureN)self_731333)->elements[0];
-c_732422.elements[1] = ((closureN)self_731333)->elements[1];
-c_732422.elements[2] = ((closureN)self_731333)->elements[2];
-c_732422.elements[3] = ((closureN)self_731333)->elements[3];
-c_732422.elements[4] = ((closureN)self_731333)->elements[4];
-c_732422.elements[5] = ((closureN)self_731333)->elements[5];
+closureN_type c_732423;
+object e_732459 [6];
+c_732423.hdr.mark = gc_color_red;
+ c_732423.hdr.grayed = 0;
+c_732423.tag = closureN_tag;
+ c_732423.fn = (function_type)__lambda_283;
+c_732423.num_args = 1;
+c_732423.num_elements = 6;
+c_732423.elements = (object *)e_732459;
+c_732423.elements[0] = ((closureN)self_731333)->elements[0];
+c_732423.elements[1] = ((closureN)self_731333)->elements[1];
+c_732423.elements[2] = ((closureN)self_731333)->elements[2];
+c_732423.elements[3] = ((closureN)self_731333)->elements[3];
+c_732423.elements[4] = ((closureN)self_731333)->elements[4];
+c_732423.elements[5] = ((closureN)self_731333)->elements[5];
 
 
-pair_type local_732461; 
-return_direct_with_clo1(data,(closure)&c_732422,__lambda_282,  set_cell_as_expr(&local_732461, loop_73136_73504));; 
+pair_type local_732462; 
+return_direct_with_clo1(data,(closure)&c_732423,__lambda_283,  set_cell_as_expr(&local_732462, loop_73136_73504));; 
 }
 
-static void __lambda_282(void *data, int argc, object self_731334, object loop_73136_73504) {
+static void __lambda_283(void *data, int argc, object self_731334, object loop_73136_73504) {
   
-  closureN_type c_732431;
-object e_732457 [5];
-c_732431.hdr.mark = gc_color_red;
- c_732431.hdr.grayed = 0;
-c_732431.tag = closureN_tag;
- c_732431.fn = (function_type)__lambda_91;
-c_732431.num_args = 1;
-c_732431.num_elements = 5;
-c_732431.elements = (object *)e_732457;
-c_732431.elements[0] = loop_73136_73504;
-c_732431.elements[1] = ((closureN)self_731334)->elements[1];
-c_732431.elements[2] = ((closureN)self_731334)->elements[3];
-c_732431.elements[3] = ((closureN)self_731334)->elements[4];
-c_732431.elements[4] = ((closureN)self_731334)->elements[5];
+  closureN_type c_732432;
+object e_732458 [5];
+c_732432.hdr.mark = gc_color_red;
+ c_732432.hdr.grayed = 0;
+c_732432.tag = closureN_tag;
+ c_732432.fn = (function_type)__lambda_91;
+c_732432.num_args = 1;
+c_732432.num_elements = 5;
+c_732432.elements = (object *)e_732458;
+c_732432.elements[0] = loop_73136_73504;
+c_732432.elements[1] = ((closureN)self_731334)->elements[1];
+c_732432.elements[2] = ((closureN)self_731334)->elements[3];
+c_732432.elements[3] = ((closureN)self_731334)->elements[4];
+c_732432.elements[4] = ((closureN)self_731334)->elements[5];
 
-  Cyc_set_cell(data, loop_73136_73504, &c_732431);
+  Cyc_set_cell(data, loop_73136_73504, &c_732432);
 
 return_closcall2(data,  car(loop_73136_73504),  ((closureN)self_731334)->elements[0], ((closureN)self_731334)->elements[2]);;; 
 }
 
 static void __lambda_91(void *data, int argc, object self_731335, object k_73888, object s_73137_73505) {
   
-closureN_type c_732434;
-object e_732456 [6];
-c_732434.hdr.mark = gc_color_red;
- c_732434.hdr.grayed = 0;
-c_732434.tag = closureN_tag;
- c_732434.fn = (function_type)__lambda_92;
-c_732434.num_args = 1;
-c_732434.num_elements = 6;
-c_732434.elements = (object *)e_732456;
-c_732434.elements[0] = k_73888;
-c_732434.elements[1] = ((closureN)self_731335)->elements[0];
-c_732434.elements[2] = ((closureN)self_731335)->elements[1];
-c_732434.elements[3] = s_73137_73505;
-c_732434.elements[4] = ((closureN)self_731335)->elements[3];
-c_732434.elements[5] = ((closureN)self_731335)->elements[4];
+closureN_type c_732435;
+object e_732457 [6];
+c_732435.hdr.mark = gc_color_red;
+ c_732435.hdr.grayed = 0;
+c_732435.tag = closureN_tag;
+ c_732435.fn = (function_type)__lambda_92;
+c_732435.num_args = 1;
+c_732435.num_elements = 6;
+c_732435.elements = (object *)e_732457;
+c_732435.elements[0] = k_73888;
+c_732435.elements[1] = ((closureN)self_731335)->elements[0];
+c_732435.elements[2] = ((closureN)self_731335)->elements[1];
+c_732435.elements[3] = s_73137_73505;
+c_732435.elements[4] = ((closureN)self_731335)->elements[3];
+c_732435.elements[5] = ((closureN)self_731335)->elements[4];
 
-return_closcall2(data,  ((closureN)self_731335)->elements[2],  &c_732434, s_73137_73505);; 
+return_closcall2(data,  ((closureN)self_731335)->elements[2],  &c_732435, s_73137_73505);; 
 }
 
 static void __lambda_92(void *data, int argc, object self_731336, object r_73889) {
@@ -4603,59 +4625,59 @@ static void __lambda_92(void *data, int argc, object self_731336, object r_73889
   return_closcall1(data,  ((closureN)self_731336)->elements[0],  boolean_f);
 } else { 
   
-closureN_type c_732439;
-object e_732454 [5];
-c_732439.hdr.mark = gc_color_red;
- c_732439.hdr.grayed = 0;
-c_732439.tag = closureN_tag;
- c_732439.fn = (function_type)__lambda_93;
-c_732439.num_args = 1;
-c_732439.num_elements = 5;
-c_732439.elements = (object *)e_732454;
-c_732439.elements[0] = ((closureN)self_731336)->elements[0];
-c_732439.elements[1] = ((closureN)self_731336)->elements[1];
-c_732439.elements[2] = ((closureN)self_731336)->elements[3];
-c_732439.elements[3] = ((closureN)self_731336)->elements[4];
-c_732439.elements[4] = ((closureN)self_731336)->elements[5];
+closureN_type c_732440;
+object e_732455 [5];
+c_732440.hdr.mark = gc_color_red;
+ c_732440.hdr.grayed = 0;
+c_732440.tag = closureN_tag;
+ c_732440.fn = (function_type)__lambda_93;
+c_732440.num_args = 1;
+c_732440.num_elements = 5;
+c_732440.elements = (object *)e_732455;
+c_732440.elements[0] = ((closureN)self_731336)->elements[0];
+c_732440.elements[1] = ((closureN)self_731336)->elements[1];
+c_732440.elements[2] = ((closureN)self_731336)->elements[3];
+c_732440.elements[3] = ((closureN)self_731336)->elements[4];
+c_732440.elements[4] = ((closureN)self_731336)->elements[5];
 
-return_closcall2(data,  ((closureN)self_731336)->elements[2],  &c_732439, ((closureN)self_731336)->elements[3]);}
+return_closcall2(data,  ((closureN)self_731336)->elements[2],  &c_732440, ((closureN)self_731336)->elements[3]);}
 ;; 
 }
 
 static void __lambda_93(void *data, int argc, object self_731337, object r_73892) {
   
-closureN_type c_732442;
-object e_732453 [4];
-c_732442.hdr.mark = gc_color_red;
- c_732442.hdr.grayed = 0;
-c_732442.tag = closureN_tag;
- c_732442.fn = (function_type)__lambda_94;
-c_732442.num_args = 1;
-c_732442.num_elements = 4;
-c_732442.elements = (object *)e_732453;
-c_732442.elements[0] = ((closureN)self_731337)->elements[0];
-c_732442.elements[1] = ((closureN)self_731337)->elements[1];
-c_732442.elements[2] = ((closureN)self_731337)->elements[2];
-c_732442.elements[3] = ((closureN)self_731337)->elements[3];
+closureN_type c_732443;
+object e_732454 [4];
+c_732443.hdr.mark = gc_color_red;
+ c_732443.hdr.grayed = 0;
+c_732443.tag = closureN_tag;
+ c_732443.fn = (function_type)__lambda_94;
+c_732443.num_args = 1;
+c_732443.num_elements = 4;
+c_732443.elements = (object *)e_732454;
+c_732443.elements[0] = ((closureN)self_731337)->elements[0];
+c_732443.elements[1] = ((closureN)self_731337)->elements[1];
+c_732443.elements[2] = ((closureN)self_731337)->elements[2];
+c_732443.elements[3] = ((closureN)self_731337)->elements[3];
 
-return_closcall2(data,  ((closureN)self_731337)->elements[4],  &c_732442, r_73892);; 
+return_closcall2(data,  ((closureN)self_731337)->elements[4],  &c_732443, r_73892);; 
 }
 
 static void __lambda_94(void *data, int argc, object self_731338, object r_73890) {
   
-closureN_type c_732445;
-object e_732451 [2];
-c_732445.hdr.mark = gc_color_red;
- c_732445.hdr.grayed = 0;
-c_732445.tag = closureN_tag;
- c_732445.fn = (function_type)__lambda_95;
-c_732445.num_args = 1;
-c_732445.num_elements = 2;
-c_732445.elements = (object *)e_732451;
-c_732445.elements[0] = ((closureN)self_731338)->elements[0];
-c_732445.elements[1] = ((closureN)self_731338)->elements[1];
+closureN_type c_732446;
+object e_732452 [2];
+c_732446.hdr.mark = gc_color_red;
+ c_732446.hdr.grayed = 0;
+c_732446.tag = closureN_tag;
+ c_732446.fn = (function_type)__lambda_95;
+c_732446.num_args = 1;
+c_732446.num_elements = 2;
+c_732446.elements = (object *)e_732452;
+c_732446.elements[0] = ((closureN)self_731338)->elements[0];
+c_732446.elements[1] = ((closureN)self_731338)->elements[1];
 
-return_closcall2(data,  ((closureN)self_731338)->elements[3],  &c_732445, ((closureN)self_731338)->elements[2]);; 
+return_closcall2(data,  ((closureN)self_731338)->elements[3],  &c_732446, ((closureN)self_731338)->elements[2]);; 
 }
 
 static void __lambda_95(void *data, int argc, object self_731339, object r_73891) {
@@ -4667,19 +4689,19 @@ return_closcall2(data,  car(((closureN)self_731339)->elements[1]),  ((closureN)s
 static void __lambda_85(void *data, int argc, closure _,object k_73878, object for_91each_73126_73495, object obj_73127_73496) {
   Cyc_st_add(data, "srfi/121.sld:make-for-each-generator");
 
-closureN_type c_732409;
-object e_732413 [2];
-c_732409.hdr.mark = gc_color_red;
- c_732409.hdr.grayed = 0;
-c_732409.tag = closureN_tag;
- c_732409.fn = (function_type)__lambda_86;
-c_732409.num_args = 1;
-c_732409.num_elements = 2;
-c_732409.elements = (object *)e_732413;
-c_732409.elements[0] = for_91each_73126_73495;
-c_732409.elements[1] = obj_73127_73496;
+closureN_type c_732410;
+object e_732414 [2];
+c_732410.hdr.mark = gc_color_red;
+ c_732410.hdr.grayed = 0;
+c_732410.tag = closureN_tag;
+ c_732410.fn = (function_type)__lambda_86;
+c_732410.num_args = 1;
+c_732410.num_elements = 2;
+c_732410.elements = (object *)e_732414;
+c_732410.elements[0] = for_91each_73126_73495;
+c_732410.elements[1] = obj_73127_73496;
 
-return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73878, &c_732409);; 
+return_closcall2(data,  __glo_make_91coroutine_91generator_srfi_121,  k_73878, &c_732410);; 
 }
 
 static void __lambda_86(void *data, int argc, object self_731330, object k_73880, object yield_73128_73497) {
@@ -4692,42 +4714,42 @@ load_varargs(args_73110_73114_73486, args_73110_73114_73486_raw, argc - 1);
   
   
   
-  make_pair(c_732306,quote_str,NULL);c_732306.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732306))) ){ 
+  make_pair(c_732307,quote_str,NULL);c_732307.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732307))) ){ 
   
-mclosure0(c_732311, (function_type)__lambda_76);c_732311.num_args = 1;
+mclosure0(c_732312, (function_type)__lambda_76);c_732312.num_args = 1;
 
-object c_732310 = apply(data,  k_73852,&c_732311, args_73110_73114_73486);
-return_closcall1(data,  k_73852,  c_732310);
+object c_732311 = apply(data,  k_73852,&c_732312, args_73110_73114_73486);
+return_closcall1(data,  k_73852,  c_732311);
 } else { 
     
   
   
-  make_pair(c_732327,quote_start,NULL);c_732327.hdr.immutable = 1;
-  make_pair(c_732326,quote_str,&c_732327);c_732326.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732326))) ){ 
+  make_pair(c_732328,quote_start,NULL);c_732328.hdr.immutable = 1;
+  make_pair(c_732327,quote_str,&c_732328);c_732327.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732327))) ){ 
   
-mclosure0(c_732332, (function_type)__lambda_78);c_732332.num_args = 2;
+mclosure0(c_732333, (function_type)__lambda_78);c_732333.num_args = 2;
 
-object c_732331 = apply(data,  k_73852,&c_732332, args_73110_73114_73486);
-return_closcall1(data,  k_73852,  c_732331);
+object c_732332 = apply(data,  k_73852,&c_732333, args_73110_73114_73486);
+return_closcall1(data,  k_73852,  c_732332);
 } else { 
     
   
   
-  make_pair(c_732350,quote_end,NULL);c_732350.hdr.immutable = 1;
-  make_pair(c_732349,quote_start,&c_732350);c_732349.hdr.immutable = 1;
-  make_pair(c_732348,quote_str,&c_732349);c_732348.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732348))) ){ 
+  make_pair(c_732351,quote_end,NULL);c_732351.hdr.immutable = 1;
+  make_pair(c_732350,quote_start,&c_732351);c_732350.hdr.immutable = 1;
+  make_pair(c_732349,quote_str,&c_732350);c_732349.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_73110_73114_73486), Cyc_length(data, &c_732349))) ){ 
   
-mclosure0(c_732355, (function_type)__lambda_80);c_732355.num_args = 3;
+mclosure0(c_732356, (function_type)__lambda_80);c_732356.num_args = 3;
 
-object c_732354 = apply(data,  k_73852,&c_732355, args_73110_73114_73486);
-return_closcall1(data,  k_73852,  c_732354);
+object c_732355 = apply(data,  k_73852,&c_732356, args_73110_73114_73486);
+return_closcall1(data,  k_73852,  c_732355);
 } else { 
   
-make_utf8_string_with_len(c_732406, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73852, &c_732406);}
+make_utf8_string_with_len(c_732407, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73852, &c_732407);}
 ;}
 ;}
 ;; 
@@ -4735,112 +4757,112 @@ return_closcall2(data,  __glo_error_scheme_base,  k_73852, &c_732406);}
 
 static void __lambda_80(void *data, int argc, object self_731324, object k_73864, object str_73122_73491, object start_73123_73492, object end_73124_73493) {
   
-closureN_type c_732357;
-object e_732401 [3];
-c_732357.hdr.mark = gc_color_red;
- c_732357.hdr.grayed = 0;
-c_732357.tag = closureN_tag;
- c_732357.fn = (function_type)__lambda_281;
-c_732357.num_args = 1;
-c_732357.num_elements = 3;
-c_732357.elements = (object *)e_732401;
-c_732357.elements[0] = end_73124_73493;
-c_732357.elements[1] = k_73864;
-c_732357.elements[2] = str_73122_73491;
+closureN_type c_732358;
+object e_732402 [3];
+c_732358.hdr.mark = gc_color_red;
+ c_732358.hdr.grayed = 0;
+c_732358.tag = closureN_tag;
+ c_732358.fn = (function_type)__lambda_282;
+c_732358.num_args = 1;
+c_732358.num_elements = 3;
+c_732358.elements = (object *)e_732402;
+c_732358.elements[0] = end_73124_73493;
+c_732358.elements[1] = k_73864;
+c_732358.elements[2] = str_73122_73491;
 
 
-pair_type local_732404; 
-return_direct_with_clo1(data,(closure)&c_732357,__lambda_281,  set_cell_as_expr(&local_732404, start_73123_73492));; 
+pair_type local_732405; 
+return_direct_with_clo1(data,(closure)&c_732358,__lambda_282,  set_cell_as_expr(&local_732405, start_73123_73492));; 
 }
 
-static void __lambda_281(void *data, int argc, object self_731325, object start_73123_73492) {
+static void __lambda_282(void *data, int argc, object self_731325, object start_73123_73492) {
   
-closureN_type c_732360;
-object e_732400 [3];
-c_732360.hdr.mark = gc_color_red;
- c_732360.hdr.grayed = 0;
-c_732360.tag = closureN_tag;
- c_732360.fn = (function_type)__lambda_81;
-c_732360.num_args = 0;
-c_732360.num_elements = 3;
-c_732360.elements = (object *)e_732400;
-c_732360.elements[0] = ((closureN)self_731325)->elements[0];
-c_732360.elements[1] = start_73123_73492;
-c_732360.elements[2] = ((closureN)self_731325)->elements[2];
+closureN_type c_732361;
+object e_732401 [3];
+c_732361.hdr.mark = gc_color_red;
+ c_732361.hdr.grayed = 0;
+c_732361.tag = closureN_tag;
+ c_732361.fn = (function_type)__lambda_81;
+c_732361.num_args = 0;
+c_732361.num_elements = 3;
+c_732361.elements = (object *)e_732401;
+c_732361.elements[0] = ((closureN)self_731325)->elements[0];
+c_732361.elements[1] = start_73123_73492;
+c_732361.elements[2] = ((closureN)self_731325)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731325)->elements[1],  &c_732360);; 
+return_closcall1(data,  ((closureN)self_731325)->elements[1],  &c_732361);; 
 }
 
 static void __lambda_81(void *data, int argc, object self_731326, object k_73865) {
   
-closureN_type c_732362;
-object e_732393 [3];
-c_732362.hdr.mark = gc_color_red;
- c_732362.hdr.grayed = 0;
-c_732362.tag = closureN_tag;
- c_732362.fn = (function_type)__lambda_82;
-c_732362.num_args = 1;
-c_732362.num_elements = 3;
-c_732362.elements = (object *)e_732393;
-c_732362.elements[0] = k_73865;
-c_732362.elements[1] = ((closureN)self_731326)->elements[1];
-c_732362.elements[2] = ((closureN)self_731326)->elements[2];
+closureN_type c_732363;
+object e_732394 [3];
+c_732363.hdr.mark = gc_color_red;
+ c_732363.hdr.grayed = 0;
+c_732363.tag = closureN_tag;
+ c_732363.fn = (function_type)__lambda_82;
+c_732363.num_args = 1;
+c_732363.num_elements = 3;
+c_732363.elements = (object *)e_732394;
+c_732363.elements[0] = k_73865;
+c_732363.elements[1] = ((closureN)self_731326)->elements[1];
+c_732363.elements[2] = ((closureN)self_731326)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732362,__lambda_82,  Cyc_num_fast_gte_op(data, car(((closureN)self_731326)->elements[1]), ((closureN)self_731326)->elements[0]));; 
+return_direct_with_clo1(data,(closure)&c_732363,__lambda_82,  Cyc_num_fast_gte_op(data, car(((closureN)self_731326)->elements[1]), ((closureN)self_731326)->elements[0]));; 
 }
 
 static void __lambda_82(void *data, int argc, object self_731327, object r_73866) {
   if( (boolean_f != r_73866) ){ 
   
-complex_num_type local_732367; 
+complex_num_type local_732368; 
 return_closcall1(data,  ((closureN)self_731327)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732367));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732368));
 } else { 
   
-closureN_type c_732369;
-object e_732386 [2];
-c_732369.hdr.mark = gc_color_red;
- c_732369.hdr.grayed = 0;
-c_732369.tag = closureN_tag;
- c_732369.fn = (function_type)__lambda_83;
-c_732369.num_args = 1;
-c_732369.num_elements = 2;
-c_732369.elements = (object *)e_732386;
-c_732369.elements[0] = ((closureN)self_731327)->elements[0];
-c_732369.elements[1] = ((closureN)self_731327)->elements[1];
+closureN_type c_732370;
+object e_732387 [2];
+c_732370.hdr.mark = gc_color_red;
+ c_732370.hdr.grayed = 0;
+c_732370.tag = closureN_tag;
+ c_732370.fn = (function_type)__lambda_83;
+c_732370.num_args = 1;
+c_732370.num_elements = 2;
+c_732370.elements = (object *)e_732387;
+c_732370.elements[0] = ((closureN)self_731327)->elements[0];
+c_732370.elements[1] = ((closureN)self_731327)->elements[1];
 
 
 
 
 
-return_closcall1(data,(closure)&c_732369,  Cyc_bytevector_u8_ref(data, ((closureN)self_731327)->elements[2], car(((closureN)self_731327)->elements[1])));}
+return_closcall1(data,(closure)&c_732370,  Cyc_bytevector_u8_ref(data, ((closureN)self_731327)->elements[2], car(((closureN)self_731327)->elements[1])));}
 ;; 
 }
 
 static void __lambda_83(void *data, int argc, object self_731328, object next_73125_73494) {
   
-closureN_type c_732371;
-object e_732379 [3];
-c_732371.hdr.mark = gc_color_red;
- c_732371.hdr.grayed = 0;
-c_732371.tag = closureN_tag;
- c_732371.fn = (function_type)__lambda_84;
-c_732371.num_args = 1;
-c_732371.num_elements = 3;
-c_732371.elements = (object *)e_732379;
-c_732371.elements[0] = ((closureN)self_731328)->elements[0];
-c_732371.elements[1] = next_73125_73494;
-c_732371.elements[2] = ((closureN)self_731328)->elements[1];
+closureN_type c_732372;
+object e_732380 [3];
+c_732372.hdr.mark = gc_color_red;
+ c_732372.hdr.grayed = 0;
+c_732372.tag = closureN_tag;
+ c_732372.fn = (function_type)__lambda_84;
+c_732372.num_args = 1;
+c_732372.num_elements = 3;
+c_732372.elements = (object *)e_732380;
+c_732372.elements[0] = ((closureN)self_731328)->elements[0];
+c_732372.elements[1] = next_73125_73494;
+c_732372.elements[2] = ((closureN)self_731328)->elements[1];
 
 
-complex_num_type local_732382; 
+complex_num_type local_732383; 
 
 
-return_direct_with_clo1(data,(closure)&c_732371,__lambda_84,  Cyc_fast_sum(data,&local_732382, car(((closureN)self_731328)->elements[1]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_732372,__lambda_84,  Cyc_fast_sum(data,&local_732383, car(((closureN)self_731328)->elements[1]), obj_int2obj(1)));; 
 }
 
 static void __lambda_84(void *data, int argc, object self_731329, object r_73869) {
@@ -4850,22 +4872,22 @@ static void __lambda_84(void *data, int argc, object self_731329, object r_73869
 
 static void __lambda_78(void *data, int argc, object self_731322, object k_73860, object str_73119_73489, object start_73120_73490) {
   
-closureN_type c_732334;
-object e_732339 [3];
-c_732334.hdr.mark = gc_color_red;
- c_732334.hdr.grayed = 0;
-c_732334.tag = closureN_tag;
- c_732334.fn = (function_type)__lambda_79;
-c_732334.num_args = 1;
-c_732334.num_elements = 3;
-c_732334.elements = (object *)e_732339;
-c_732334.elements[0] = k_73860;
-c_732334.elements[1] = start_73120_73490;
-c_732334.elements[2] = str_73119_73489;
+closureN_type c_732335;
+object e_732340 [3];
+c_732335.hdr.mark = gc_color_red;
+ c_732335.hdr.grayed = 0;
+c_732335.tag = closureN_tag;
+ c_732335.fn = (function_type)__lambda_79;
+c_732335.num_args = 1;
+c_732335.num_elements = 3;
+c_732335.elements = (object *)e_732340;
+c_732335.elements[0] = k_73860;
+c_732335.elements[1] = start_73120_73490;
+c_732335.elements[2] = str_73119_73489;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732334,__lambda_79,  Cyc_bytevector_length(data, str_73119_73489));; 
+return_direct_with_clo1(data,(closure)&c_732335,__lambda_79,  Cyc_bytevector_length(data, str_73119_73489));; 
 }
 
 static void __lambda_79(void *data, int argc, object self_731323, object r_73861) {
@@ -4874,21 +4896,21 @@ static void __lambda_79(void *data, int argc, object self_731323, object r_73861
 
 static void __lambda_76(void *data, int argc, object self_731320, object k_73856, object str_73117_73488) {
   
-closureN_type c_732313;
-object e_732317 [2];
-c_732313.hdr.mark = gc_color_red;
- c_732313.hdr.grayed = 0;
-c_732313.tag = closureN_tag;
- c_732313.fn = (function_type)__lambda_77;
-c_732313.num_args = 1;
-c_732313.num_elements = 2;
-c_732313.elements = (object *)e_732317;
-c_732313.elements[0] = k_73856;
-c_732313.elements[1] = str_73117_73488;
+closureN_type c_732314;
+object e_732318 [2];
+c_732314.hdr.mark = gc_color_red;
+ c_732314.hdr.grayed = 0;
+c_732314.tag = closureN_tag;
+ c_732314.fn = (function_type)__lambda_77;
+c_732314.num_args = 1;
+c_732314.num_elements = 2;
+c_732314.elements = (object *)e_732318;
+c_732314.elements[0] = k_73856;
+c_732314.elements[1] = str_73117_73488;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732313,__lambda_77,  Cyc_bytevector_length(data, str_73117_73488));; 
+return_direct_with_clo1(data,(closure)&c_732314,__lambda_77,  Cyc_bytevector_length(data, str_73117_73488));; 
 }
 
 static void __lambda_77(void *data, int argc, object self_731321, object r_73857) {
@@ -4901,42 +4923,42 @@ load_varargs(args_7394_7398_73477, args_7394_7398_73477_raw, argc - 1);
   
   
   
-  make_pair(c_732198,quote_str,NULL);c_732198.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732198))) ){ 
+  make_pair(c_732199,quote_str,NULL);c_732199.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732199))) ){ 
   
-mclosure0(c_732203, (function_type)__lambda_66);c_732203.num_args = 1;
+mclosure0(c_732204, (function_type)__lambda_66);c_732204.num_args = 1;
 
-object c_732202 = apply(data,  k_73826,&c_732203, args_7394_7398_73477);
-return_closcall1(data,  k_73826,  c_732202);
+object c_732203 = apply(data,  k_73826,&c_732204, args_7394_7398_73477);
+return_closcall1(data,  k_73826,  c_732203);
 } else { 
     
   
   
-  make_pair(c_732219,quote_start,NULL);c_732219.hdr.immutable = 1;
-  make_pair(c_732218,quote_str,&c_732219);c_732218.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732218))) ){ 
+  make_pair(c_732220,quote_start,NULL);c_732220.hdr.immutable = 1;
+  make_pair(c_732219,quote_str,&c_732220);c_732219.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732219))) ){ 
   
-mclosure0(c_732224, (function_type)__lambda_68);c_732224.num_args = 2;
+mclosure0(c_732225, (function_type)__lambda_68);c_732225.num_args = 2;
 
-object c_732223 = apply(data,  k_73826,&c_732224, args_7394_7398_73477);
-return_closcall1(data,  k_73826,  c_732223);
+object c_732224 = apply(data,  k_73826,&c_732225, args_7394_7398_73477);
+return_closcall1(data,  k_73826,  c_732224);
 } else { 
     
   
   
-  make_pair(c_732242,quote_end,NULL);c_732242.hdr.immutable = 1;
-  make_pair(c_732241,quote_start,&c_732242);c_732241.hdr.immutable = 1;
-  make_pair(c_732240,quote_str,&c_732241);c_732240.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732240))) ){ 
+  make_pair(c_732243,quote_end,NULL);c_732243.hdr.immutable = 1;
+  make_pair(c_732242,quote_start,&c_732243);c_732242.hdr.immutable = 1;
+  make_pair(c_732241,quote_str,&c_732242);c_732241.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7394_7398_73477), Cyc_length(data, &c_732241))) ){ 
   
-mclosure0(c_732247, (function_type)__lambda_70);c_732247.num_args = 3;
+mclosure0(c_732248, (function_type)__lambda_70);c_732248.num_args = 3;
 
-object c_732246 = apply(data,  k_73826,&c_732247, args_7394_7398_73477);
-return_closcall1(data,  k_73826,  c_732246);
+object c_732247 = apply(data,  k_73826,&c_732248, args_7394_7398_73477);
+return_closcall1(data,  k_73826,  c_732247);
 } else { 
   
-make_utf8_string_with_len(c_732298, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73826, &c_732298);}
+make_utf8_string_with_len(c_732299, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73826, &c_732299);}
 ;}
 ;}
 ;; 
@@ -4944,112 +4966,112 @@ return_closcall2(data,  __glo_error_scheme_base,  k_73826, &c_732298);}
 
 static void __lambda_70(void *data, int argc, object self_731314, object k_73838, object str_73106_73482, object start_73107_73483, object end_73108_73484) {
   
-closureN_type c_732249;
-object e_732293 [3];
-c_732249.hdr.mark = gc_color_red;
- c_732249.hdr.grayed = 0;
-c_732249.tag = closureN_tag;
- c_732249.fn = (function_type)__lambda_280;
-c_732249.num_args = 1;
-c_732249.num_elements = 3;
-c_732249.elements = (object *)e_732293;
-c_732249.elements[0] = end_73108_73484;
-c_732249.elements[1] = k_73838;
-c_732249.elements[2] = str_73106_73482;
+closureN_type c_732250;
+object e_732294 [3];
+c_732250.hdr.mark = gc_color_red;
+ c_732250.hdr.grayed = 0;
+c_732250.tag = closureN_tag;
+ c_732250.fn = (function_type)__lambda_281;
+c_732250.num_args = 1;
+c_732250.num_elements = 3;
+c_732250.elements = (object *)e_732294;
+c_732250.elements[0] = end_73108_73484;
+c_732250.elements[1] = k_73838;
+c_732250.elements[2] = str_73106_73482;
 
 
-pair_type local_732296; 
-return_direct_with_clo1(data,(closure)&c_732249,__lambda_280,  set_cell_as_expr(&local_732296, start_73107_73483));; 
+pair_type local_732297; 
+return_direct_with_clo1(data,(closure)&c_732250,__lambda_281,  set_cell_as_expr(&local_732297, start_73107_73483));; 
 }
 
-static void __lambda_280(void *data, int argc, object self_731315, object start_73107_73483) {
+static void __lambda_281(void *data, int argc, object self_731315, object start_73107_73483) {
   
-closureN_type c_732252;
-object e_732292 [3];
-c_732252.hdr.mark = gc_color_red;
- c_732252.hdr.grayed = 0;
-c_732252.tag = closureN_tag;
- c_732252.fn = (function_type)__lambda_71;
-c_732252.num_args = 0;
-c_732252.num_elements = 3;
-c_732252.elements = (object *)e_732292;
-c_732252.elements[0] = ((closureN)self_731315)->elements[0];
-c_732252.elements[1] = start_73107_73483;
-c_732252.elements[2] = ((closureN)self_731315)->elements[2];
+closureN_type c_732253;
+object e_732293 [3];
+c_732253.hdr.mark = gc_color_red;
+ c_732253.hdr.grayed = 0;
+c_732253.tag = closureN_tag;
+ c_732253.fn = (function_type)__lambda_71;
+c_732253.num_args = 0;
+c_732253.num_elements = 3;
+c_732253.elements = (object *)e_732293;
+c_732253.elements[0] = ((closureN)self_731315)->elements[0];
+c_732253.elements[1] = start_73107_73483;
+c_732253.elements[2] = ((closureN)self_731315)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731315)->elements[1],  &c_732252);; 
+return_closcall1(data,  ((closureN)self_731315)->elements[1],  &c_732253);; 
 }
 
 static void __lambda_71(void *data, int argc, object self_731316, object k_73839) {
   
-closureN_type c_732254;
-object e_732285 [3];
-c_732254.hdr.mark = gc_color_red;
- c_732254.hdr.grayed = 0;
-c_732254.tag = closureN_tag;
- c_732254.fn = (function_type)__lambda_72;
-c_732254.num_args = 1;
-c_732254.num_elements = 3;
-c_732254.elements = (object *)e_732285;
-c_732254.elements[0] = k_73839;
-c_732254.elements[1] = ((closureN)self_731316)->elements[1];
-c_732254.elements[2] = ((closureN)self_731316)->elements[2];
+closureN_type c_732255;
+object e_732286 [3];
+c_732255.hdr.mark = gc_color_red;
+ c_732255.hdr.grayed = 0;
+c_732255.tag = closureN_tag;
+ c_732255.fn = (function_type)__lambda_72;
+c_732255.num_args = 1;
+c_732255.num_elements = 3;
+c_732255.elements = (object *)e_732286;
+c_732255.elements[0] = k_73839;
+c_732255.elements[1] = ((closureN)self_731316)->elements[1];
+c_732255.elements[2] = ((closureN)self_731316)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732254,__lambda_72,  Cyc_num_fast_gte_op(data, car(((closureN)self_731316)->elements[1]), ((closureN)self_731316)->elements[0]));; 
+return_direct_with_clo1(data,(closure)&c_732255,__lambda_72,  Cyc_num_fast_gte_op(data, car(((closureN)self_731316)->elements[1]), ((closureN)self_731316)->elements[0]));; 
 }
 
 static void __lambda_72(void *data, int argc, object self_731317, object r_73840) {
   if( (boolean_f != r_73840) ){ 
   
-complex_num_type local_732259; 
+complex_num_type local_732260; 
 return_closcall1(data,  ((closureN)self_731317)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732259));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732260));
 } else { 
   
-closureN_type c_732261;
-object e_732278 [2];
-c_732261.hdr.mark = gc_color_red;
- c_732261.hdr.grayed = 0;
-c_732261.tag = closureN_tag;
- c_732261.fn = (function_type)__lambda_73;
-c_732261.num_args = 1;
-c_732261.num_elements = 2;
-c_732261.elements = (object *)e_732278;
-c_732261.elements[0] = ((closureN)self_731317)->elements[0];
-c_732261.elements[1] = ((closureN)self_731317)->elements[1];
+closureN_type c_732262;
+object e_732279 [2];
+c_732262.hdr.mark = gc_color_red;
+ c_732262.hdr.grayed = 0;
+c_732262.tag = closureN_tag;
+ c_732262.fn = (function_type)__lambda_73;
+c_732262.num_args = 1;
+c_732262.num_elements = 2;
+c_732262.elements = (object *)e_732279;
+c_732262.elements[0] = ((closureN)self_731317)->elements[0];
+c_732262.elements[1] = ((closureN)self_731317)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732261,__lambda_73,  Cyc_string_ref(data, ((closureN)self_731317)->elements[2], car(((closureN)self_731317)->elements[1])));}
+return_direct_with_clo1(data,(closure)&c_732262,__lambda_73,  Cyc_string_ref(data, ((closureN)self_731317)->elements[2], car(((closureN)self_731317)->elements[1])));}
 ;; 
 }
 
 static void __lambda_73(void *data, int argc, object self_731318, object next_73109_73485) {
   
-closureN_type c_732263;
-object e_732271 [3];
-c_732263.hdr.mark = gc_color_red;
- c_732263.hdr.grayed = 0;
-c_732263.tag = closureN_tag;
- c_732263.fn = (function_type)__lambda_74;
-c_732263.num_args = 1;
-c_732263.num_elements = 3;
-c_732263.elements = (object *)e_732271;
-c_732263.elements[0] = ((closureN)self_731318)->elements[0];
-c_732263.elements[1] = next_73109_73485;
-c_732263.elements[2] = ((closureN)self_731318)->elements[1];
+closureN_type c_732264;
+object e_732272 [3];
+c_732264.hdr.mark = gc_color_red;
+ c_732264.hdr.grayed = 0;
+c_732264.tag = closureN_tag;
+ c_732264.fn = (function_type)__lambda_74;
+c_732264.num_args = 1;
+c_732264.num_elements = 3;
+c_732264.elements = (object *)e_732272;
+c_732264.elements[0] = ((closureN)self_731318)->elements[0];
+c_732264.elements[1] = next_73109_73485;
+c_732264.elements[2] = ((closureN)self_731318)->elements[1];
 
 
-complex_num_type local_732274; 
+complex_num_type local_732275; 
 
 
-return_direct_with_clo1(data,(closure)&c_732263,__lambda_74,  Cyc_fast_sum(data,&local_732274, car(((closureN)self_731318)->elements[1]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_732264,__lambda_74,  Cyc_fast_sum(data,&local_732275, car(((closureN)self_731318)->elements[1]), obj_int2obj(1)));; 
 }
 
 static void __lambda_74(void *data, int argc, object self_731319, object r_73843) {
@@ -5059,22 +5081,22 @@ static void __lambda_74(void *data, int argc, object self_731319, object r_73843
 
 static void __lambda_68(void *data, int argc, object self_731312, object k_73834, object str_73103_73480, object start_73104_73481) {
   
-closureN_type c_732226;
-object e_732231 [3];
-c_732226.hdr.mark = gc_color_red;
- c_732226.hdr.grayed = 0;
-c_732226.tag = closureN_tag;
- c_732226.fn = (function_type)__lambda_69;
-c_732226.num_args = 1;
-c_732226.num_elements = 3;
-c_732226.elements = (object *)e_732231;
-c_732226.elements[0] = k_73834;
-c_732226.elements[1] = start_73104_73481;
-c_732226.elements[2] = str_73103_73480;
+closureN_type c_732227;
+object e_732232 [3];
+c_732227.hdr.mark = gc_color_red;
+ c_732227.hdr.grayed = 0;
+c_732227.tag = closureN_tag;
+ c_732227.fn = (function_type)__lambda_69;
+c_732227.num_args = 1;
+c_732227.num_elements = 3;
+c_732227.elements = (object *)e_732232;
+c_732227.elements[0] = k_73834;
+c_732227.elements[1] = start_73104_73481;
+c_732227.elements[2] = str_73103_73480;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732226,__lambda_69,  Cyc_string_length(data, str_73103_73480));; 
+return_direct_with_clo1(data,(closure)&c_732227,__lambda_69,  Cyc_string_length(data, str_73103_73480));; 
 }
 
 static void __lambda_69(void *data, int argc, object self_731313, object r_73835) {
@@ -5083,21 +5105,21 @@ static void __lambda_69(void *data, int argc, object self_731313, object r_73835
 
 static void __lambda_66(void *data, int argc, object self_731310, object k_73830, object str_73101_73479) {
   
-closureN_type c_732205;
-object e_732209 [2];
-c_732205.hdr.mark = gc_color_red;
- c_732205.hdr.grayed = 0;
-c_732205.tag = closureN_tag;
- c_732205.fn = (function_type)__lambda_67;
-c_732205.num_args = 1;
-c_732205.num_elements = 2;
-c_732205.elements = (object *)e_732209;
-c_732205.elements[0] = k_73830;
-c_732205.elements[1] = str_73101_73479;
+closureN_type c_732206;
+object e_732210 [2];
+c_732206.hdr.mark = gc_color_red;
+ c_732206.hdr.grayed = 0;
+c_732206.tag = closureN_tag;
+ c_732206.fn = (function_type)__lambda_67;
+c_732206.num_args = 1;
+c_732206.num_elements = 2;
+c_732206.elements = (object *)e_732210;
+c_732206.elements[0] = k_73830;
+c_732206.elements[1] = str_73101_73479;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732205,__lambda_67,  Cyc_string_length(data, str_73101_73479));; 
+return_direct_with_clo1(data,(closure)&c_732206,__lambda_67,  Cyc_string_length(data, str_73101_73479));; 
 }
 
 static void __lambda_67(void *data, int argc, object self_731311, object r_73831) {
@@ -5110,42 +5132,42 @@ load_varargs(args_7378_7382_73468, args_7378_7382_73468_raw, argc - 1);
   
   
   
-  make_pair(c_732087,quote_vec,NULL);c_732087.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732087))) ){ 
+  make_pair(c_732088,quote_vec,NULL);c_732088.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732088))) ){ 
   
-mclosure0(c_732092, (function_type)__lambda_56);c_732092.num_args = 1;
+mclosure0(c_732093, (function_type)__lambda_56);c_732093.num_args = 1;
 
-object c_732091 = apply(data,  k_73799,&c_732092, args_7378_7382_73468);
-return_closcall1(data,  k_73799,  c_732091);
+object c_732092 = apply(data,  k_73799,&c_732093, args_7378_7382_73468);
+return_closcall1(data,  k_73799,  c_732092);
 } else { 
     
   
   
-  make_pair(c_732108,quote_start,NULL);c_732108.hdr.immutable = 1;
-  make_pair(c_732107,quote_vec,&c_732108);c_732107.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732107))) ){ 
+  make_pair(c_732109,quote_start,NULL);c_732109.hdr.immutable = 1;
+  make_pair(c_732108,quote_vec,&c_732109);c_732108.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732108))) ){ 
   
-mclosure0(c_732113, (function_type)__lambda_58);c_732113.num_args = 2;
+mclosure0(c_732114, (function_type)__lambda_58);c_732114.num_args = 2;
 
-object c_732112 = apply(data,  k_73799,&c_732113, args_7378_7382_73468);
-return_closcall1(data,  k_73799,  c_732112);
+object c_732113 = apply(data,  k_73799,&c_732114, args_7378_7382_73468);
+return_closcall1(data,  k_73799,  c_732113);
 } else { 
     
   
   
-  make_pair(c_732131,quote_end,NULL);c_732131.hdr.immutable = 1;
-  make_pair(c_732130,quote_start,&c_732131);c_732130.hdr.immutable = 1;
-  make_pair(c_732129,quote_vec,&c_732130);c_732129.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732129))) ){ 
+  make_pair(c_732132,quote_end,NULL);c_732132.hdr.immutable = 1;
+  make_pair(c_732131,quote_start,&c_732132);c_732131.hdr.immutable = 1;
+  make_pair(c_732130,quote_vec,&c_732131);c_732130.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7378_7382_73468), Cyc_length(data, &c_732130))) ){ 
   
-mclosure0(c_732136, (function_type)__lambda_60);c_732136.num_args = 3;
+mclosure0(c_732137, (function_type)__lambda_60);c_732137.num_args = 3;
 
-object c_732135 = apply(data,  k_73799,&c_732136, args_7378_7382_73468);
-return_closcall1(data,  k_73799,  c_732135);
+object c_732136 = apply(data,  k_73799,&c_732137, args_7378_7382_73468);
+return_closcall1(data,  k_73799,  c_732136);
 } else { 
   
-make_utf8_string_with_len(c_732190, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73799, &c_732190);}
+make_utf8_string_with_len(c_732191, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73799, &c_732191);}
 ;}
 ;}
 ;; 
@@ -5153,114 +5175,114 @@ return_closcall2(data,  __glo_error_scheme_base,  k_73799, &c_732190);}
 
 static void __lambda_60(void *data, int argc, object self_731304, object k_73811, object vec_7390_73473, object start_7391_73474, object end_7392_73475) {
   
-closureN_type c_732138;
-object e_732185 [3];
-c_732138.hdr.mark = gc_color_red;
- c_732138.hdr.grayed = 0;
-c_732138.tag = closureN_tag;
- c_732138.fn = (function_type)__lambda_279;
-c_732138.num_args = 1;
-c_732138.num_elements = 3;
-c_732138.elements = (object *)e_732185;
-c_732138.elements[0] = k_73811;
-c_732138.elements[1] = start_7391_73474;
-c_732138.elements[2] = vec_7390_73473;
+closureN_type c_732139;
+object e_732186 [3];
+c_732139.hdr.mark = gc_color_red;
+ c_732139.hdr.grayed = 0;
+c_732139.tag = closureN_tag;
+ c_732139.fn = (function_type)__lambda_280;
+c_732139.num_args = 1;
+c_732139.num_elements = 3;
+c_732139.elements = (object *)e_732186;
+c_732139.elements[0] = k_73811;
+c_732139.elements[1] = start_7391_73474;
+c_732139.elements[2] = vec_7390_73473;
 
 
-pair_type local_732188; 
-return_direct_with_clo1(data,(closure)&c_732138,__lambda_279,  set_cell_as_expr(&local_732188, end_7392_73475));; 
+pair_type local_732189; 
+return_direct_with_clo1(data,(closure)&c_732139,__lambda_280,  set_cell_as_expr(&local_732189, end_7392_73475));; 
 }
 
-static void __lambda_279(void *data, int argc, object self_731305, object end_7392_73475) {
+static void __lambda_280(void *data, int argc, object self_731305, object end_7392_73475) {
   
-closureN_type c_732141;
-object e_732184 [3];
-c_732141.hdr.mark = gc_color_red;
- c_732141.hdr.grayed = 0;
-c_732141.tag = closureN_tag;
- c_732141.fn = (function_type)__lambda_61;
-c_732141.num_args = 0;
-c_732141.num_elements = 3;
-c_732141.elements = (object *)e_732184;
-c_732141.elements[0] = end_7392_73475;
-c_732141.elements[1] = ((closureN)self_731305)->elements[1];
-c_732141.elements[2] = ((closureN)self_731305)->elements[2];
+closureN_type c_732142;
+object e_732185 [3];
+c_732142.hdr.mark = gc_color_red;
+ c_732142.hdr.grayed = 0;
+c_732142.tag = closureN_tag;
+ c_732142.fn = (function_type)__lambda_61;
+c_732142.num_args = 0;
+c_732142.num_elements = 3;
+c_732142.elements = (object *)e_732185;
+c_732142.elements[0] = end_7392_73475;
+c_732142.elements[1] = ((closureN)self_731305)->elements[1];
+c_732142.elements[2] = ((closureN)self_731305)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731305)->elements[0],  &c_732141);; 
+return_closcall1(data,  ((closureN)self_731305)->elements[0],  &c_732142);; 
 }
 
 static void __lambda_61(void *data, int argc, object self_731306, object k_73812) {
   
-closureN_type c_732143;
-object e_732177 [3];
-c_732143.hdr.mark = gc_color_red;
- c_732143.hdr.grayed = 0;
-c_732143.tag = closureN_tag;
- c_732143.fn = (function_type)__lambda_62;
-c_732143.num_args = 1;
-c_732143.num_elements = 3;
-c_732143.elements = (object *)e_732177;
-c_732143.elements[0] = ((closureN)self_731306)->elements[0];
-c_732143.elements[1] = k_73812;
-c_732143.elements[2] = ((closureN)self_731306)->elements[2];
+closureN_type c_732144;
+object e_732178 [3];
+c_732144.hdr.mark = gc_color_red;
+ c_732144.hdr.grayed = 0;
+c_732144.tag = closureN_tag;
+ c_732144.fn = (function_type)__lambda_62;
+c_732144.num_args = 1;
+c_732144.num_elements = 3;
+c_732144.elements = (object *)e_732178;
+c_732144.elements[0] = ((closureN)self_731306)->elements[0];
+c_732144.elements[1] = k_73812;
+c_732144.elements[2] = ((closureN)self_731306)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732143,__lambda_62,  Cyc_num_fast_gte_op(data, ((closureN)self_731306)->elements[1], car(((closureN)self_731306)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_732144,__lambda_62,  Cyc_num_fast_gte_op(data, ((closureN)self_731306)->elements[1], car(((closureN)self_731306)->elements[0])));; 
 }
 
 static void __lambda_62(void *data, int argc, object self_731307, object r_73813) {
   if( (boolean_f != r_73813) ){ 
   
-complex_num_type local_732148; 
+complex_num_type local_732149; 
 return_closcall1(data,  ((closureN)self_731307)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732148));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732149));
 } else { 
   
-closureN_type c_732150;
-object e_732170 [3];
-c_732150.hdr.mark = gc_color_red;
- c_732150.hdr.grayed = 0;
-c_732150.tag = closureN_tag;
- c_732150.fn = (function_type)__lambda_63;
-c_732150.num_args = 1;
-c_732150.num_elements = 3;
-c_732150.elements = (object *)e_732170;
-c_732150.elements[0] = ((closureN)self_731307)->elements[0];
-c_732150.elements[1] = ((closureN)self_731307)->elements[1];
-c_732150.elements[2] = ((closureN)self_731307)->elements[2];
+closureN_type c_732151;
+object e_732171 [3];
+c_732151.hdr.mark = gc_color_red;
+ c_732151.hdr.grayed = 0;
+c_732151.tag = closureN_tag;
+ c_732151.fn = (function_type)__lambda_63;
+c_732151.num_args = 1;
+c_732151.num_elements = 3;
+c_732151.elements = (object *)e_732171;
+c_732151.elements[0] = ((closureN)self_731307)->elements[0];
+c_732151.elements[1] = ((closureN)self_731307)->elements[1];
+c_732151.elements[2] = ((closureN)self_731307)->elements[2];
 
 
-complex_num_type local_732173; 
+complex_num_type local_732174; 
 
 
-return_direct_with_clo1(data,(closure)&c_732150,__lambda_63,  Cyc_fast_sub(data,&local_732173, car(((closureN)self_731307)->elements[0]), obj_int2obj(1)));}
+return_direct_with_clo1(data,(closure)&c_732151,__lambda_63,  Cyc_fast_sub(data,&local_732174, car(((closureN)self_731307)->elements[0]), obj_int2obj(1)));}
 ;; 
 }
 
 static void __lambda_63(void *data, int argc, object self_731308, object r_73817) {
   
-closureN_type c_732152;
-object e_732163 [4];
-c_732152.hdr.mark = gc_color_red;
- c_732152.hdr.grayed = 0;
-c_732152.tag = closureN_tag;
- c_732152.fn = (function_type)__lambda_64;
-c_732152.num_args = 1;
-c_732152.num_elements = 4;
-c_732152.elements = (object *)e_732163;
-c_732152.elements[0] = ((closureN)self_731308)->elements[0];
-c_732152.elements[1] = ((closureN)self_731308)->elements[1];
-c_732152.elements[2] = r_73817;
-c_732152.elements[3] = ((closureN)self_731308)->elements[2];
+closureN_type c_732153;
+object e_732164 [4];
+c_732153.hdr.mark = gc_color_red;
+ c_732153.hdr.grayed = 0;
+c_732153.tag = closureN_tag;
+ c_732153.fn = (function_type)__lambda_64;
+c_732153.num_args = 1;
+c_732153.num_elements = 4;
+c_732153.elements = (object *)e_732164;
+c_732153.elements[0] = ((closureN)self_731308)->elements[0];
+c_732153.elements[1] = ((closureN)self_731308)->elements[1];
+c_732153.elements[2] = r_73817;
+c_732153.elements[3] = ((closureN)self_731308)->elements[2];
 
 
-complex_num_type local_732166; 
+complex_num_type local_732167; 
 
 
-return_direct_with_clo1(data,(closure)&c_732152,__lambda_64,  Cyc_fast_sub(data,&local_732166, car(((closureN)self_731308)->elements[0]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_732153,__lambda_64,  Cyc_fast_sub(data,&local_732167, car(((closureN)self_731308)->elements[0]), obj_int2obj(1)));; 
 }
 
 static void __lambda_64(void *data, int argc, object self_731309, object r_73816) {
@@ -5272,22 +5294,22 @@ return_closcall1(data,  ((closureN)self_731309)->elements[1],  Cyc_vector_ref(da
 
 static void __lambda_58(void *data, int argc, object self_731302, object k_73807, object vec_7387_73471, object start_7388_73472) {
   
-closureN_type c_732115;
-object e_732120 [3];
-c_732115.hdr.mark = gc_color_red;
- c_732115.hdr.grayed = 0;
-c_732115.tag = closureN_tag;
- c_732115.fn = (function_type)__lambda_59;
-c_732115.num_args = 1;
-c_732115.num_elements = 3;
-c_732115.elements = (object *)e_732120;
-c_732115.elements[0] = k_73807;
-c_732115.elements[1] = start_7388_73472;
-c_732115.elements[2] = vec_7387_73471;
+closureN_type c_732116;
+object e_732121 [3];
+c_732116.hdr.mark = gc_color_red;
+ c_732116.hdr.grayed = 0;
+c_732116.tag = closureN_tag;
+ c_732116.fn = (function_type)__lambda_59;
+c_732116.num_args = 1;
+c_732116.num_elements = 3;
+c_732116.elements = (object *)e_732121;
+c_732116.elements[0] = k_73807;
+c_732116.elements[1] = start_7388_73472;
+c_732116.elements[2] = vec_7387_73471;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732115,__lambda_59,  Cyc_vector_length(data, vec_7387_73471));; 
+return_direct_with_clo1(data,(closure)&c_732116,__lambda_59,  Cyc_vector_length(data, vec_7387_73471));; 
 }
 
 static void __lambda_59(void *data, int argc, object self_731303, object r_73808) {
@@ -5296,21 +5318,21 @@ static void __lambda_59(void *data, int argc, object self_731303, object r_73808
 
 static void __lambda_56(void *data, int argc, object self_731300, object k_73803, object vec_7385_73470) {
   
-closureN_type c_732094;
-object e_732098 [2];
-c_732094.hdr.mark = gc_color_red;
- c_732094.hdr.grayed = 0;
-c_732094.tag = closureN_tag;
- c_732094.fn = (function_type)__lambda_57;
-c_732094.num_args = 1;
-c_732094.num_elements = 2;
-c_732094.elements = (object *)e_732098;
-c_732094.elements[0] = k_73803;
-c_732094.elements[1] = vec_7385_73470;
+closureN_type c_732095;
+object e_732099 [2];
+c_732095.hdr.mark = gc_color_red;
+ c_732095.hdr.grayed = 0;
+c_732095.tag = closureN_tag;
+ c_732095.fn = (function_type)__lambda_57;
+c_732095.num_args = 1;
+c_732095.num_elements = 2;
+c_732095.elements = (object *)e_732099;
+c_732095.elements[0] = k_73803;
+c_732095.elements[1] = vec_7385_73470;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732094,__lambda_57,  Cyc_vector_length(data, vec_7385_73470));; 
+return_direct_with_clo1(data,(closure)&c_732095,__lambda_57,  Cyc_vector_length(data, vec_7385_73470));; 
 }
 
 static void __lambda_57(void *data, int argc, object self_731301, object r_73804) {
@@ -5323,42 +5345,42 @@ load_varargs(args_7362_7366_73459, args_7362_7366_73459_raw, argc - 1);
   
   
   
-  make_pair(c_731979,quote_vec,NULL);c_731979.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_731979))) ){ 
+  make_pair(c_731980,quote_vec,NULL);c_731980.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_731980))) ){ 
   
-mclosure0(c_731984, (function_type)__lambda_46);c_731984.num_args = 1;
+mclosure0(c_731985, (function_type)__lambda_46);c_731985.num_args = 1;
 
-object c_731983 = apply(data,  k_73773,&c_731984, args_7362_7366_73459);
-return_closcall1(data,  k_73773,  c_731983);
+object c_731984 = apply(data,  k_73773,&c_731985, args_7362_7366_73459);
+return_closcall1(data,  k_73773,  c_731984);
 } else { 
     
   
   
-  make_pair(c_732000,quote_start,NULL);c_732000.hdr.immutable = 1;
-  make_pair(c_731999,quote_vec,&c_732000);c_731999.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_731999))) ){ 
+  make_pair(c_732001,quote_start,NULL);c_732001.hdr.immutable = 1;
+  make_pair(c_732000,quote_vec,&c_732001);c_732000.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732000))) ){ 
   
-mclosure0(c_732005, (function_type)__lambda_48);c_732005.num_args = 2;
+mclosure0(c_732006, (function_type)__lambda_48);c_732006.num_args = 2;
 
-object c_732004 = apply(data,  k_73773,&c_732005, args_7362_7366_73459);
-return_closcall1(data,  k_73773,  c_732004);
+object c_732005 = apply(data,  k_73773,&c_732006, args_7362_7366_73459);
+return_closcall1(data,  k_73773,  c_732005);
 } else { 
     
   
   
-  make_pair(c_732023,quote_end,NULL);c_732023.hdr.immutable = 1;
-  make_pair(c_732022,quote_start,&c_732023);c_732022.hdr.immutable = 1;
-  make_pair(c_732021,quote_vec,&c_732022);c_732021.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732021))) ){ 
+  make_pair(c_732024,quote_end,NULL);c_732024.hdr.immutable = 1;
+  make_pair(c_732023,quote_start,&c_732024);c_732023.hdr.immutable = 1;
+  make_pair(c_732022,quote_vec,&c_732023);c_732022.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7362_7366_73459), Cyc_length(data, &c_732022))) ){ 
   
-mclosure0(c_732028, (function_type)__lambda_50);c_732028.num_args = 3;
+mclosure0(c_732029, (function_type)__lambda_50);c_732029.num_args = 3;
 
-object c_732027 = apply(data,  k_73773,&c_732028, args_7362_7366_73459);
-return_closcall1(data,  k_73773,  c_732027);
+object c_732028 = apply(data,  k_73773,&c_732029, args_7362_7366_73459);
+return_closcall1(data,  k_73773,  c_732028);
 } else { 
   
-make_utf8_string_with_len(c_732079, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73773, &c_732079);}
+make_utf8_string_with_len(c_732080, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73773, &c_732080);}
 ;}
 ;}
 ;; 
@@ -5366,112 +5388,112 @@ return_closcall2(data,  __glo_error_scheme_base,  k_73773, &c_732079);}
 
 static void __lambda_50(void *data, int argc, object self_731294, object k_73785, object vec_7374_73464, object start_7375_73465, object end_7376_73466) {
   
-closureN_type c_732030;
-object e_732074 [3];
-c_732030.hdr.mark = gc_color_red;
- c_732030.hdr.grayed = 0;
-c_732030.tag = closureN_tag;
- c_732030.fn = (function_type)__lambda_278;
-c_732030.num_args = 1;
-c_732030.num_elements = 3;
-c_732030.elements = (object *)e_732074;
-c_732030.elements[0] = end_7376_73466;
-c_732030.elements[1] = k_73785;
-c_732030.elements[2] = vec_7374_73464;
+closureN_type c_732031;
+object e_732075 [3];
+c_732031.hdr.mark = gc_color_red;
+ c_732031.hdr.grayed = 0;
+c_732031.tag = closureN_tag;
+ c_732031.fn = (function_type)__lambda_279;
+c_732031.num_args = 1;
+c_732031.num_elements = 3;
+c_732031.elements = (object *)e_732075;
+c_732031.elements[0] = end_7376_73466;
+c_732031.elements[1] = k_73785;
+c_732031.elements[2] = vec_7374_73464;
 
 
-pair_type local_732077; 
-return_direct_with_clo1(data,(closure)&c_732030,__lambda_278,  set_cell_as_expr(&local_732077, start_7375_73465));; 
+pair_type local_732078; 
+return_direct_with_clo1(data,(closure)&c_732031,__lambda_279,  set_cell_as_expr(&local_732078, start_7375_73465));; 
 }
 
-static void __lambda_278(void *data, int argc, object self_731295, object start_7375_73465) {
+static void __lambda_279(void *data, int argc, object self_731295, object start_7375_73465) {
   
-closureN_type c_732033;
-object e_732073 [3];
-c_732033.hdr.mark = gc_color_red;
- c_732033.hdr.grayed = 0;
-c_732033.tag = closureN_tag;
- c_732033.fn = (function_type)__lambda_51;
-c_732033.num_args = 0;
-c_732033.num_elements = 3;
-c_732033.elements = (object *)e_732073;
-c_732033.elements[0] = ((closureN)self_731295)->elements[0];
-c_732033.elements[1] = start_7375_73465;
-c_732033.elements[2] = ((closureN)self_731295)->elements[2];
+closureN_type c_732034;
+object e_732074 [3];
+c_732034.hdr.mark = gc_color_red;
+ c_732034.hdr.grayed = 0;
+c_732034.tag = closureN_tag;
+ c_732034.fn = (function_type)__lambda_51;
+c_732034.num_args = 0;
+c_732034.num_elements = 3;
+c_732034.elements = (object *)e_732074;
+c_732034.elements[0] = ((closureN)self_731295)->elements[0];
+c_732034.elements[1] = start_7375_73465;
+c_732034.elements[2] = ((closureN)self_731295)->elements[2];
 
-return_closcall1(data,  ((closureN)self_731295)->elements[1],  &c_732033);; 
+return_closcall1(data,  ((closureN)self_731295)->elements[1],  &c_732034);; 
 }
 
 static void __lambda_51(void *data, int argc, object self_731296, object k_73786) {
   
-closureN_type c_732035;
-object e_732066 [3];
-c_732035.hdr.mark = gc_color_red;
- c_732035.hdr.grayed = 0;
-c_732035.tag = closureN_tag;
- c_732035.fn = (function_type)__lambda_52;
-c_732035.num_args = 1;
-c_732035.num_elements = 3;
-c_732035.elements = (object *)e_732066;
-c_732035.elements[0] = k_73786;
-c_732035.elements[1] = ((closureN)self_731296)->elements[1];
-c_732035.elements[2] = ((closureN)self_731296)->elements[2];
+closureN_type c_732036;
+object e_732067 [3];
+c_732036.hdr.mark = gc_color_red;
+ c_732036.hdr.grayed = 0;
+c_732036.tag = closureN_tag;
+ c_732036.fn = (function_type)__lambda_52;
+c_732036.num_args = 1;
+c_732036.num_elements = 3;
+c_732036.elements = (object *)e_732067;
+c_732036.elements[0] = k_73786;
+c_732036.elements[1] = ((closureN)self_731296)->elements[1];
+c_732036.elements[2] = ((closureN)self_731296)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732035,__lambda_52,  Cyc_num_fast_gte_op(data, car(((closureN)self_731296)->elements[1]), ((closureN)self_731296)->elements[0]));; 
+return_direct_with_clo1(data,(closure)&c_732036,__lambda_52,  Cyc_num_fast_gte_op(data, car(((closureN)self_731296)->elements[1]), ((closureN)self_731296)->elements[0]));; 
 }
 
 static void __lambda_52(void *data, int argc, object self_731297, object r_73787) {
   if( (boolean_f != r_73787) ){ 
   
-complex_num_type local_732040; 
+complex_num_type local_732041; 
 return_closcall1(data,  ((closureN)self_731297)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732040));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_732041));
 } else { 
   
-closureN_type c_732042;
-object e_732059 [2];
-c_732042.hdr.mark = gc_color_red;
- c_732042.hdr.grayed = 0;
-c_732042.tag = closureN_tag;
- c_732042.fn = (function_type)__lambda_53;
-c_732042.num_args = 1;
-c_732042.num_elements = 2;
-c_732042.elements = (object *)e_732059;
-c_732042.elements[0] = ((closureN)self_731297)->elements[0];
-c_732042.elements[1] = ((closureN)self_731297)->elements[1];
+closureN_type c_732043;
+object e_732060 [2];
+c_732043.hdr.mark = gc_color_red;
+ c_732043.hdr.grayed = 0;
+c_732043.tag = closureN_tag;
+ c_732043.fn = (function_type)__lambda_53;
+c_732043.num_args = 1;
+c_732043.num_elements = 2;
+c_732043.elements = (object *)e_732060;
+c_732043.elements[0] = ((closureN)self_731297)->elements[0];
+c_732043.elements[1] = ((closureN)self_731297)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_732042,__lambda_53,  Cyc_vector_ref(data, ((closureN)self_731297)->elements[2], car(((closureN)self_731297)->elements[1])));}
+return_direct_with_clo1(data,(closure)&c_732043,__lambda_53,  Cyc_vector_ref(data, ((closureN)self_731297)->elements[2], car(((closureN)self_731297)->elements[1])));}
 ;; 
 }
 
 static void __lambda_53(void *data, int argc, object self_731298, object next_7377_73467) {
   
-closureN_type c_732044;
-object e_732052 [3];
-c_732044.hdr.mark = gc_color_red;
- c_732044.hdr.grayed = 0;
-c_732044.tag = closureN_tag;
- c_732044.fn = (function_type)__lambda_54;
-c_732044.num_args = 1;
-c_732044.num_elements = 3;
-c_732044.elements = (object *)e_732052;
-c_732044.elements[0] = ((closureN)self_731298)->elements[0];
-c_732044.elements[1] = next_7377_73467;
-c_732044.elements[2] = ((closureN)self_731298)->elements[1];
+closureN_type c_732045;
+object e_732053 [3];
+c_732045.hdr.mark = gc_color_red;
+ c_732045.hdr.grayed = 0;
+c_732045.tag = closureN_tag;
+ c_732045.fn = (function_type)__lambda_54;
+c_732045.num_args = 1;
+c_732045.num_elements = 3;
+c_732045.elements = (object *)e_732053;
+c_732045.elements[0] = ((closureN)self_731298)->elements[0];
+c_732045.elements[1] = next_7377_73467;
+c_732045.elements[2] = ((closureN)self_731298)->elements[1];
 
 
-complex_num_type local_732055; 
+complex_num_type local_732056; 
 
 
-return_direct_with_clo1(data,(closure)&c_732044,__lambda_54,  Cyc_fast_sum(data,&local_732055, car(((closureN)self_731298)->elements[1]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_732045,__lambda_54,  Cyc_fast_sum(data,&local_732056, car(((closureN)self_731298)->elements[1]), obj_int2obj(1)));; 
 }
 
 static void __lambda_54(void *data, int argc, object self_731299, object r_73790) {
@@ -5481,22 +5503,22 @@ static void __lambda_54(void *data, int argc, object self_731299, object r_73790
 
 static void __lambda_48(void *data, int argc, object self_731292, object k_73781, object vec_7371_73462, object start_7372_73463) {
   
-closureN_type c_732007;
-object e_732012 [3];
-c_732007.hdr.mark = gc_color_red;
- c_732007.hdr.grayed = 0;
-c_732007.tag = closureN_tag;
- c_732007.fn = (function_type)__lambda_49;
-c_732007.num_args = 1;
-c_732007.num_elements = 3;
-c_732007.elements = (object *)e_732012;
-c_732007.elements[0] = k_73781;
-c_732007.elements[1] = start_7372_73463;
-c_732007.elements[2] = vec_7371_73462;
+closureN_type c_732008;
+object e_732013 [3];
+c_732008.hdr.mark = gc_color_red;
+ c_732008.hdr.grayed = 0;
+c_732008.tag = closureN_tag;
+ c_732008.fn = (function_type)__lambda_49;
+c_732008.num_args = 1;
+c_732008.num_elements = 3;
+c_732008.elements = (object *)e_732013;
+c_732008.elements[0] = k_73781;
+c_732008.elements[1] = start_7372_73463;
+c_732008.elements[2] = vec_7371_73462;
 
 
 
-return_direct_with_clo1(data,(closure)&c_732007,__lambda_49,  Cyc_vector_length(data, vec_7371_73462));; 
+return_direct_with_clo1(data,(closure)&c_732008,__lambda_49,  Cyc_vector_length(data, vec_7371_73462));; 
 }
 
 static void __lambda_49(void *data, int argc, object self_731293, object r_73782) {
@@ -5505,21 +5527,21 @@ static void __lambda_49(void *data, int argc, object self_731293, object r_73782
 
 static void __lambda_46(void *data, int argc, object self_731290, object k_73777, object vec_7369_73461) {
   
-closureN_type c_731986;
-object e_731990 [2];
-c_731986.hdr.mark = gc_color_red;
- c_731986.hdr.grayed = 0;
-c_731986.tag = closureN_tag;
- c_731986.fn = (function_type)__lambda_47;
-c_731986.num_args = 1;
-c_731986.num_elements = 2;
-c_731986.elements = (object *)e_731990;
-c_731986.elements[0] = k_73777;
-c_731986.elements[1] = vec_7369_73461;
+closureN_type c_731987;
+object e_731991 [2];
+c_731987.hdr.mark = gc_color_red;
+ c_731987.hdr.grayed = 0;
+c_731987.tag = closureN_tag;
+ c_731987.fn = (function_type)__lambda_47;
+c_731987.num_args = 1;
+c_731987.num_elements = 2;
+c_731987.elements = (object *)e_731991;
+c_731987.elements[0] = k_73777;
+c_731987.elements[1] = vec_7369_73461;
 
 
 
-return_direct_with_clo1(data,(closure)&c_731986,__lambda_47,  Cyc_vector_length(data, vec_7369_73461));; 
+return_direct_with_clo1(data,(closure)&c_731987,__lambda_47,  Cyc_vector_length(data, vec_7369_73461));; 
 }
 
 static void __lambda_47(void *data, int argc, object self_731291, object r_73778) {
@@ -5529,107 +5551,107 @@ static void __lambda_47(void *data, int argc, object self_731291, object r_73778
 static void __lambda_40(void *data, int argc, closure _,object k_73765, object lst_7360_73457) {
   Cyc_st_add(data, "srfi/121.sld:list->generator");
 
-closureN_type c_731927;
-object e_731968 [1];
-c_731927.hdr.mark = gc_color_red;
- c_731927.hdr.grayed = 0;
-c_731927.tag = closureN_tag;
- c_731927.fn = (function_type)__lambda_277;
-c_731927.num_args = 1;
-c_731927.num_elements = 1;
-c_731927.elements = (object *)e_731968;
-c_731927.elements[0] = k_73765;
+closureN_type c_731928;
+object e_731969 [1];
+c_731928.hdr.mark = gc_color_red;
+ c_731928.hdr.grayed = 0;
+c_731928.tag = closureN_tag;
+ c_731928.fn = (function_type)__lambda_278;
+c_731928.num_args = 1;
+c_731928.num_elements = 1;
+c_731928.elements = (object *)e_731969;
+c_731928.elements[0] = k_73765;
 
 
-pair_type local_731971; 
-return_direct_with_clo1(data,(closure)&c_731927,__lambda_277,  set_cell_as_expr(&local_731971, lst_7360_73457));; 
+pair_type local_731972; 
+return_direct_with_clo1(data,(closure)&c_731928,__lambda_278,  set_cell_as_expr(&local_731972, lst_7360_73457));; 
 }
 
-static void __lambda_277(void *data, int argc, object self_731285, object lst_7360_73457) {
+static void __lambda_278(void *data, int argc, object self_731285, object lst_7360_73457) {
   
-closureN_type c_731930;
-object e_731967 [1];
-c_731930.hdr.mark = gc_color_red;
- c_731930.hdr.grayed = 0;
-c_731930.tag = closureN_tag;
- c_731930.fn = (function_type)__lambda_41;
-c_731930.num_args = 0;
-c_731930.num_elements = 1;
-c_731930.elements = (object *)e_731967;
-c_731930.elements[0] = lst_7360_73457;
+closureN_type c_731931;
+object e_731968 [1];
+c_731931.hdr.mark = gc_color_red;
+ c_731931.hdr.grayed = 0;
+c_731931.tag = closureN_tag;
+ c_731931.fn = (function_type)__lambda_41;
+c_731931.num_args = 0;
+c_731931.num_elements = 1;
+c_731931.elements = (object *)e_731968;
+c_731931.elements[0] = lst_7360_73457;
 
-return_closcall1(data,  ((closureN)self_731285)->elements[0],  &c_731930);; 
+return_closcall1(data,  ((closureN)self_731285)->elements[0],  &c_731931);; 
 }
 
 static void __lambda_41(void *data, int argc, object self_731286, object k_73766) {
   
-closureN_type c_731932;
-object e_731961 [2];
-c_731932.hdr.mark = gc_color_red;
- c_731932.hdr.grayed = 0;
-c_731932.tag = closureN_tag;
- c_731932.fn = (function_type)__lambda_42;
-c_731932.num_args = 1;
-c_731932.num_elements = 2;
-c_731932.elements = (object *)e_731961;
-c_731932.elements[0] = k_73766;
-c_731932.elements[1] = ((closureN)self_731286)->elements[0];
+closureN_type c_731933;
+object e_731962 [2];
+c_731933.hdr.mark = gc_color_red;
+ c_731933.hdr.grayed = 0;
+c_731933.tag = closureN_tag;
+ c_731933.fn = (function_type)__lambda_42;
+c_731933.num_args = 1;
+c_731933.num_elements = 2;
+c_731933.elements = (object *)e_731962;
+c_731933.elements[0] = k_73766;
+c_731933.elements[1] = ((closureN)self_731286)->elements[0];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731932,__lambda_42,  Cyc_is_null(car(((closureN)self_731286)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_731933,__lambda_42,  Cyc_is_null(car(((closureN)self_731286)->elements[0])));; 
 }
 
 static void __lambda_42(void *data, int argc, object self_731287, object r_73767) {
   if( (boolean_f != r_73767) ){ 
   
-complex_num_type local_731937; 
+complex_num_type local_731938; 
 return_closcall1(data,  ((closureN)self_731287)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731937));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731938));
 } else { 
   
-closureN_type c_731939;
-object e_731955 [2];
-c_731939.hdr.mark = gc_color_red;
- c_731939.hdr.grayed = 0;
-c_731939.tag = closureN_tag;
- c_731939.fn = (function_type)__lambda_43;
-c_731939.num_args = 1;
-c_731939.num_elements = 2;
-c_731939.elements = (object *)e_731955;
-c_731939.elements[0] = ((closureN)self_731287)->elements[0];
-c_731939.elements[1] = ((closureN)self_731287)->elements[1];
+closureN_type c_731940;
+object e_731956 [2];
+c_731940.hdr.mark = gc_color_red;
+ c_731940.hdr.grayed = 0;
+c_731940.tag = closureN_tag;
+ c_731940.fn = (function_type)__lambda_43;
+c_731940.num_args = 1;
+c_731940.num_elements = 2;
+c_731940.elements = (object *)e_731956;
+c_731940.elements[0] = ((closureN)self_731287)->elements[0];
+c_731940.elements[1] = ((closureN)self_731287)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731939,__lambda_43,  Cyc_car(data, car(((closureN)self_731287)->elements[1])));}
+return_direct_with_clo1(data,(closure)&c_731940,__lambda_43,  Cyc_car(data, car(((closureN)self_731287)->elements[1])));}
 ;; 
 }
 
 static void __lambda_43(void *data, int argc, object self_731288, object next_7361_73458) {
   
-closureN_type c_731941;
-object e_731949 [3];
-c_731941.hdr.mark = gc_color_red;
- c_731941.hdr.grayed = 0;
-c_731941.tag = closureN_tag;
- c_731941.fn = (function_type)__lambda_44;
-c_731941.num_args = 1;
-c_731941.num_elements = 3;
-c_731941.elements = (object *)e_731949;
-c_731941.elements[0] = ((closureN)self_731288)->elements[0];
-c_731941.elements[1] = ((closureN)self_731288)->elements[1];
-c_731941.elements[2] = next_7361_73458;
+closureN_type c_731942;
+object e_731950 [3];
+c_731942.hdr.mark = gc_color_red;
+ c_731942.hdr.grayed = 0;
+c_731942.tag = closureN_tag;
+ c_731942.fn = (function_type)__lambda_44;
+c_731942.num_args = 1;
+c_731942.num_elements = 3;
+c_731942.elements = (object *)e_731950;
+c_731942.elements[0] = ((closureN)self_731288)->elements[0];
+c_731942.elements[1] = ((closureN)self_731288)->elements[1];
+c_731942.elements[2] = next_7361_73458;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731941,__lambda_44,  Cyc_cdr(data, car(((closureN)self_731288)->elements[1])));; 
+return_direct_with_clo1(data,(closure)&c_731942,__lambda_44,  Cyc_cdr(data, car(((closureN)self_731288)->elements[1])));; 
 }
 
 static void __lambda_44(void *data, int argc, object self_731289, object r_73770) {
@@ -5640,134 +5662,134 @@ static void __lambda_44(void *data, int argc, object self_731289, object r_73770
 static void __lambda_32(void *data, int argc, closure _,object k_73742, object proc_7355_73443) {
   Cyc_st_add(data, "srfi/121.sld:make-coroutine-generator");
 
-closureN_type c_731834;
-object e_731924 [2];
-c_731834.hdr.mark = gc_color_red;
- c_731834.hdr.grayed = 0;
-c_731834.tag = closureN_tag;
- c_731834.fn = (function_type)__lambda_33;
-c_731834.num_args = 3;
-c_731834.num_elements = 2;
-c_731834.elements = (object *)e_731924;
-c_731834.elements[0] = k_73742;
-c_731834.elements[1] = proc_7355_73443;
+closureN_type c_731835;
+object e_731925 [2];
+c_731835.hdr.mark = gc_color_red;
+ c_731835.hdr.grayed = 0;
+c_731835.tag = closureN_tag;
+ c_731835.fn = (function_type)__lambda_33;
+c_731835.num_args = 3;
+c_731835.num_elements = 2;
+c_731835.elements = (object *)e_731925;
+c_731835.elements[0] = k_73742;
+c_731835.elements[1] = proc_7355_73443;
 
-return_direct_with_clo3(data,(closure)&c_731834,__lambda_33,  boolean_f, boolean_f, boolean_f);; 
+return_direct_with_clo3(data,(closure)&c_731835,__lambda_33,  boolean_f, boolean_f, boolean_f);; 
 }
 
 static void __lambda_33(void *data, int argc, object self_731275, object resume_73447, object return_73448, object yield_73449) {
   
-closureN_type c_731836;
-object e_731920 [4];
-c_731836.hdr.mark = gc_color_red;
- c_731836.hdr.grayed = 0;
-c_731836.tag = closureN_tag;
- c_731836.fn = (function_type)__lambda_276;
-c_731836.num_args = 1;
-c_731836.num_elements = 4;
-c_731836.elements = (object *)e_731920;
-c_731836.elements[0] = ((closureN)self_731275)->elements[0];
-c_731836.elements[1] = ((closureN)self_731275)->elements[1];
-c_731836.elements[2] = return_73448;
-c_731836.elements[3] = yield_73449;
+closureN_type c_731837;
+object e_731921 [4];
+c_731837.hdr.mark = gc_color_red;
+ c_731837.hdr.grayed = 0;
+c_731837.tag = closureN_tag;
+ c_731837.fn = (function_type)__lambda_277;
+c_731837.num_args = 1;
+c_731837.num_elements = 4;
+c_731837.elements = (object *)e_731921;
+c_731837.elements[0] = ((closureN)self_731275)->elements[0];
+c_731837.elements[1] = ((closureN)self_731275)->elements[1];
+c_731837.elements[2] = return_73448;
+c_731837.elements[3] = yield_73449;
 
 
-pair_type local_731923; 
-return_direct_with_clo1(data,(closure)&c_731836,__lambda_276,  set_cell_as_expr(&local_731923, resume_73447));; 
+pair_type local_731924; 
+return_direct_with_clo1(data,(closure)&c_731837,__lambda_277,  set_cell_as_expr(&local_731924, resume_73447));; 
 }
 
-static void __lambda_276(void *data, int argc, object self_731276, object resume_73447) {
+static void __lambda_277(void *data, int argc, object self_731276, object resume_73447) {
   
-closureN_type c_731838;
-object e_731915 [4];
-c_731838.hdr.mark = gc_color_red;
- c_731838.hdr.grayed = 0;
-c_731838.tag = closureN_tag;
- c_731838.fn = (function_type)__lambda_275;
-c_731838.num_args = 1;
-c_731838.num_elements = 4;
-c_731838.elements = (object *)e_731915;
-c_731838.elements[0] = ((closureN)self_731276)->elements[0];
-c_731838.elements[1] = ((closureN)self_731276)->elements[1];
-c_731838.elements[2] = resume_73447;
-c_731838.elements[3] = ((closureN)self_731276)->elements[3];
+closureN_type c_731839;
+object e_731916 [4];
+c_731839.hdr.mark = gc_color_red;
+ c_731839.hdr.grayed = 0;
+c_731839.tag = closureN_tag;
+ c_731839.fn = (function_type)__lambda_276;
+c_731839.num_args = 1;
+c_731839.num_elements = 4;
+c_731839.elements = (object *)e_731916;
+c_731839.elements[0] = ((closureN)self_731276)->elements[0];
+c_731839.elements[1] = ((closureN)self_731276)->elements[1];
+c_731839.elements[2] = resume_73447;
+c_731839.elements[3] = ((closureN)self_731276)->elements[3];
 
 
-pair_type local_731918; 
-return_direct_with_clo1(data,(closure)&c_731838,__lambda_275,  set_cell_as_expr(&local_731918, ((closureN)self_731276)->elements[2]));; 
+pair_type local_731919; 
+return_direct_with_clo1(data,(closure)&c_731839,__lambda_276,  set_cell_as_expr(&local_731919, ((closureN)self_731276)->elements[2]));; 
 }
 
-static void __lambda_275(void *data, int argc, object self_731277, object return_73448) {
+static void __lambda_276(void *data, int argc, object self_731277, object return_73448) {
   
-closureN_type c_731840;
-object e_731910 [4];
-c_731840.hdr.mark = gc_color_red;
- c_731840.hdr.grayed = 0;
-c_731840.tag = closureN_tag;
- c_731840.fn = (function_type)__lambda_274;
-c_731840.num_args = 1;
-c_731840.num_elements = 4;
-c_731840.elements = (object *)e_731910;
-c_731840.elements[0] = ((closureN)self_731277)->elements[0];
-c_731840.elements[1] = ((closureN)self_731277)->elements[1];
-c_731840.elements[2] = ((closureN)self_731277)->elements[2];
-c_731840.elements[3] = return_73448;
+closureN_type c_731841;
+object e_731911 [4];
+c_731841.hdr.mark = gc_color_red;
+ c_731841.hdr.grayed = 0;
+c_731841.tag = closureN_tag;
+ c_731841.fn = (function_type)__lambda_275;
+c_731841.num_args = 1;
+c_731841.num_elements = 4;
+c_731841.elements = (object *)e_731911;
+c_731841.elements[0] = ((closureN)self_731277)->elements[0];
+c_731841.elements[1] = ((closureN)self_731277)->elements[1];
+c_731841.elements[2] = ((closureN)self_731277)->elements[2];
+c_731841.elements[3] = return_73448;
 
 
-pair_type local_731913; 
-return_direct_with_clo1(data,(closure)&c_731840,__lambda_274,  set_cell_as_expr(&local_731913, ((closureN)self_731277)->elements[3]));; 
+pair_type local_731914; 
+return_direct_with_clo1(data,(closure)&c_731841,__lambda_275,  set_cell_as_expr(&local_731914, ((closureN)self_731277)->elements[3]));; 
 }
 
-static void __lambda_274(void *data, int argc, object self_731278, object yield_73449) {
+static void __lambda_275(void *data, int argc, object self_731278, object yield_73449) {
   
   
   
-  closureN_type c_731890;
-object e_731903 [2];
-c_731890.hdr.mark = gc_color_red;
- c_731890.hdr.grayed = 0;
-c_731890.tag = closureN_tag;
- c_731890.fn = (function_type)__lambda_34;
-c_731890.num_args = 1;
-c_731890.num_elements = 2;
-c_731890.elements = (object *)e_731903;
-c_731890.elements[0] = ((closureN)self_731278)->elements[2];
-c_731890.elements[1] = ((closureN)self_731278)->elements[3];
+  closureN_type c_731891;
+object e_731904 [2];
+c_731891.hdr.mark = gc_color_red;
+ c_731891.hdr.grayed = 0;
+c_731891.tag = closureN_tag;
+ c_731891.fn = (function_type)__lambda_34;
+c_731891.num_args = 1;
+c_731891.num_elements = 2;
+c_731891.elements = (object *)e_731904;
+c_731891.elements[0] = ((closureN)self_731278)->elements[2];
+c_731891.elements[1] = ((closureN)self_731278)->elements[3];
 
-  Cyc_set_cell(data, ((closureN)self_731278)->elements[3], boolean_f);Cyc_set_cell(data, ((closureN)self_731278)->elements[2], boolean_f);Cyc_set_cell(data, yield_73449, &c_731890);
-closureN_type c_731844;
-object e_731887 [4];
-c_731844.hdr.mark = gc_color_red;
- c_731844.hdr.grayed = 0;
-c_731844.tag = closureN_tag;
- c_731844.fn = (function_type)__lambda_36;
-c_731844.num_args = 0;
-c_731844.num_elements = 4;
-c_731844.elements = (object *)e_731887;
-c_731844.elements[0] = ((closureN)self_731278)->elements[1];
-c_731844.elements[1] = ((closureN)self_731278)->elements[2];
-c_731844.elements[2] = ((closureN)self_731278)->elements[3];
-c_731844.elements[3] = yield_73449;
+  Cyc_set_cell(data, ((closureN)self_731278)->elements[3], boolean_f);Cyc_set_cell(data, ((closureN)self_731278)->elements[2], boolean_f);Cyc_set_cell(data, yield_73449, &c_731891);
+closureN_type c_731845;
+object e_731888 [4];
+c_731845.hdr.mark = gc_color_red;
+ c_731845.hdr.grayed = 0;
+c_731845.tag = closureN_tag;
+ c_731845.fn = (function_type)__lambda_36;
+c_731845.num_args = 0;
+c_731845.num_elements = 4;
+c_731845.elements = (object *)e_731888;
+c_731845.elements[0] = ((closureN)self_731278)->elements[1];
+c_731845.elements[1] = ((closureN)self_731278)->elements[2];
+c_731845.elements[2] = ((closureN)self_731278)->elements[3];
+c_731845.elements[3] = yield_73449;
 
-return_closcall1(data,  ((closureN)self_731278)->elements[0],  &c_731844);;; 
+return_closcall1(data,  ((closureN)self_731278)->elements[0],  &c_731845);;; 
 }
 
 static void __lambda_34(void *data, int argc, object self_731279, object k_73759, object v_7356_73453) {
   
-closureN_type c_731892;
-object e_731902 [3];
-c_731892.hdr.mark = gc_color_red;
- c_731892.hdr.grayed = 0;
-c_731892.tag = closureN_tag;
- c_731892.fn = (function_type)__lambda_35;
-c_731892.num_args = 1;
-c_731892.num_elements = 3;
-c_731892.elements = (object *)e_731902;
-c_731892.elements[0] = ((closureN)self_731279)->elements[0];
-c_731892.elements[1] = ((closureN)self_731279)->elements[1];
-c_731892.elements[2] = v_7356_73453;
+closureN_type c_731893;
+object e_731903 [3];
+c_731893.hdr.mark = gc_color_red;
+ c_731893.hdr.grayed = 0;
+c_731893.tag = closureN_tag;
+ c_731893.fn = (function_type)__lambda_35;
+c_731893.num_args = 1;
+c_731893.num_elements = 3;
+c_731893.elements = (object *)e_731903;
+c_731893.elements[0] = ((closureN)self_731279)->elements[0];
+c_731893.elements[1] = ((closureN)self_731279)->elements[1];
+c_731893.elements[2] = v_7356_73453;
 
-return_closcall2(data,  __glo_call_95cc_scheme_base,  k_73759, &c_731892);; 
+return_closcall2(data,  __glo_call_95cc_scheme_base,  k_73759, &c_731893);; 
 }
 
 static void __lambda_35(void *data, int argc, object self_731280, object k_73761, object r_7357_73454) {
@@ -5779,21 +5801,21 @@ return_closcall2(data,  car(((closureN)self_731280)->elements[1]),  k_73761, ((c
 
 static void __lambda_36(void *data, int argc, object self_731281, object k_73746) {
   
-closureN_type c_731846;
-object e_731886 [4];
-c_731846.hdr.mark = gc_color_red;
- c_731846.hdr.grayed = 0;
-c_731846.tag = closureN_tag;
- c_731846.fn = (function_type)__lambda_37;
-c_731846.num_args = 1;
-c_731846.num_elements = 4;
-c_731846.elements = (object *)e_731886;
-c_731846.elements[0] = ((closureN)self_731281)->elements[0];
-c_731846.elements[1] = ((closureN)self_731281)->elements[1];
-c_731846.elements[2] = ((closureN)self_731281)->elements[2];
-c_731846.elements[3] = ((closureN)self_731281)->elements[3];
+closureN_type c_731847;
+object e_731887 [4];
+c_731847.hdr.mark = gc_color_red;
+ c_731847.hdr.grayed = 0;
+c_731847.tag = closureN_tag;
+ c_731847.fn = (function_type)__lambda_37;
+c_731847.num_args = 1;
+c_731847.num_elements = 4;
+c_731847.elements = (object *)e_731887;
+c_731847.elements[0] = ((closureN)self_731281)->elements[0];
+c_731847.elements[1] = ((closureN)self_731281)->elements[1];
+c_731847.elements[2] = ((closureN)self_731281)->elements[2];
+c_731847.elements[3] = ((closureN)self_731281)->elements[3];
 
-return_closcall2(data,  __glo_call_95cc_scheme_base,  k_73746, &c_731846);; 
+return_closcall2(data,  __glo_call_95cc_scheme_base,  k_73746, &c_731847);; 
 }
 
 static void __lambda_37(void *data, int argc, object self_731282, object k_73748, object cc_7358_73455) {
@@ -5805,129 +5827,129 @@ if( (boolean_f != car(((closureN)self_731282)->elements[1])) ){
 return_closcall2(data,  car(((closureN)self_731282)->elements[1]),  k_73748, boolean_f);
 } else { 
   
-closureN_type c_731857;
-object e_731879 [3];
-c_731857.hdr.mark = gc_color_red;
- c_731857.hdr.grayed = 0;
-c_731857.tag = closureN_tag;
- c_731857.fn = (function_type)__lambda_38;
-c_731857.num_args = 1;
-c_731857.num_elements = 3;
-c_731857.elements = (object *)e_731879;
-c_731857.elements[0] = k_73748;
-c_731857.elements[1] = ((closureN)self_731282)->elements[1];
-c_731857.elements[2] = ((closureN)self_731282)->elements[2];
+closureN_type c_731858;
+object e_731880 [3];
+c_731858.hdr.mark = gc_color_red;
+ c_731858.hdr.grayed = 0;
+c_731858.tag = closureN_tag;
+ c_731858.fn = (function_type)__lambda_38;
+c_731858.num_args = 1;
+c_731858.num_elements = 3;
+c_731858.elements = (object *)e_731880;
+c_731858.elements[0] = k_73748;
+c_731858.elements[1] = ((closureN)self_731282)->elements[1];
+c_731858.elements[2] = ((closureN)self_731282)->elements[2];
 
 
 
-return_closcall2(data,  ((closureN)self_731282)->elements[0],  &c_731857, car(((closureN)self_731282)->elements[3]));}
+return_closcall2(data,  ((closureN)self_731282)->elements[0],  &c_731858, car(((closureN)self_731282)->elements[3]));}
 ;; 
 }
 
 static void __lambda_38(void *data, int argc, object self_731283, object r_73752) {
   
-  closureN_type c_731870;
-object e_731878 [1];
-c_731870.hdr.mark = gc_color_red;
- c_731870.hdr.grayed = 0;
-c_731870.tag = closureN_tag;
- c_731870.fn = (function_type)__lambda_39;
-c_731870.num_args = 1;
-c_731870.num_elements = 1;
-c_731870.elements = (object *)e_731878;
-c_731870.elements[0] = ((closureN)self_731283)->elements[2];
+  closureN_type c_731871;
+object e_731879 [1];
+c_731871.hdr.mark = gc_color_red;
+ c_731871.hdr.grayed = 0;
+c_731871.tag = closureN_tag;
+ c_731871.fn = (function_type)__lambda_39;
+c_731871.num_args = 1;
+c_731871.num_elements = 1;
+c_731871.elements = (object *)e_731879;
+c_731871.elements[0] = ((closureN)self_731283)->elements[2];
 
-  Cyc_set_cell(data, ((closureN)self_731283)->elements[1], &c_731870);
+  Cyc_set_cell(data, ((closureN)self_731283)->elements[1], &c_731871);
 
 
-complex_num_type local_731866; 
+complex_num_type local_731867; 
 return_closcall2(data,  car(((closureN)self_731283)->elements[2]),  ((closureN)self_731283)->elements[0], ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731866));;; 
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731867));;; 
 }
 
 static void __lambda_39(void *data, int argc, object self_731284, object k_73756, object v_7359_73456) {
   
 
 
-complex_num_type local_731877; 
+complex_num_type local_731878; 
 return_closcall2(data,  car(((closureN)self_731284)->elements[0]),  k_73756, ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731877));; 
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731878));; 
 }
 
 static void __lambda_28(void *data, int argc, closure _,object k_73736, object start_7353_73441) {
   Cyc_st_add(data, "srfi/121.sld:make-infinite-range");
 
-closureN_type c_731801;
-object e_731828 [1];
-c_731801.hdr.mark = gc_color_red;
- c_731801.hdr.grayed = 0;
-c_731801.tag = closureN_tag;
- c_731801.fn = (function_type)__lambda_273;
-c_731801.num_args = 1;
-c_731801.num_elements = 1;
-c_731801.elements = (object *)e_731828;
-c_731801.elements[0] = k_73736;
+closureN_type c_731802;
+object e_731829 [1];
+c_731802.hdr.mark = gc_color_red;
+ c_731802.hdr.grayed = 0;
+c_731802.tag = closureN_tag;
+ c_731802.fn = (function_type)__lambda_274;
+c_731802.num_args = 1;
+c_731802.num_elements = 1;
+c_731802.elements = (object *)e_731829;
+c_731802.elements[0] = k_73736;
 
 
-pair_type local_731831; 
-return_direct_with_clo1(data,(closure)&c_731801,__lambda_273,  set_cell_as_expr(&local_731831, start_7353_73441));; 
+pair_type local_731832; 
+return_direct_with_clo1(data,(closure)&c_731802,__lambda_274,  set_cell_as_expr(&local_731832, start_7353_73441));; 
 }
 
-static void __lambda_273(void *data, int argc, object self_731271, object start_7353_73441) {
+static void __lambda_274(void *data, int argc, object self_731271, object start_7353_73441) {
   
-closureN_type c_731804;
-object e_731827 [1];
-c_731804.hdr.mark = gc_color_red;
- c_731804.hdr.grayed = 0;
-c_731804.tag = closureN_tag;
- c_731804.fn = (function_type)__lambda_29;
-c_731804.num_args = 0;
-c_731804.num_elements = 1;
-c_731804.elements = (object *)e_731827;
-c_731804.elements[0] = start_7353_73441;
+closureN_type c_731805;
+object e_731828 [1];
+c_731805.hdr.mark = gc_color_red;
+ c_731805.hdr.grayed = 0;
+c_731805.tag = closureN_tag;
+ c_731805.fn = (function_type)__lambda_29;
+c_731805.num_args = 0;
+c_731805.num_elements = 1;
+c_731805.elements = (object *)e_731828;
+c_731805.elements[0] = start_7353_73441;
 
-return_closcall1(data,  ((closureN)self_731271)->elements[0],  &c_731804);; 
+return_closcall1(data,  ((closureN)self_731271)->elements[0],  &c_731805);; 
 }
 
 static void __lambda_29(void *data, int argc, object self_731272, object k_73737) {
   
-closureN_type c_731806;
-object e_731823 [2];
-c_731806.hdr.mark = gc_color_red;
- c_731806.hdr.grayed = 0;
-c_731806.tag = closureN_tag;
- c_731806.fn = (function_type)__lambda_30;
-c_731806.num_args = 1;
-c_731806.num_elements = 2;
-c_731806.elements = (object *)e_731823;
-c_731806.elements[0] = k_73737;
-c_731806.elements[1] = ((closureN)self_731272)->elements[0];
+closureN_type c_731807;
+object e_731824 [2];
+c_731807.hdr.mark = gc_color_red;
+ c_731807.hdr.grayed = 0;
+c_731807.tag = closureN_tag;
+ c_731807.fn = (function_type)__lambda_30;
+c_731807.num_args = 1;
+c_731807.num_elements = 2;
+c_731807.elements = (object *)e_731824;
+c_731807.elements[0] = k_73737;
+c_731807.elements[1] = ((closureN)self_731272)->elements[0];
 
 
 
-return_direct_with_clo1(data,(closure)&c_731806,__lambda_30,  car(((closureN)self_731272)->elements[0]));; 
+return_direct_with_clo1(data,(closure)&c_731807,__lambda_30,  car(((closureN)self_731272)->elements[0]));; 
 }
 
 static void __lambda_30(void *data, int argc, object self_731273, object result_7354_73442) {
   
-closureN_type c_731808;
-object e_731816 [3];
-c_731808.hdr.mark = gc_color_red;
- c_731808.hdr.grayed = 0;
-c_731808.tag = closureN_tag;
- c_731808.fn = (function_type)__lambda_31;
-c_731808.num_args = 1;
-c_731808.num_elements = 3;
-c_731808.elements = (object *)e_731816;
-c_731808.elements[0] = ((closureN)self_731273)->elements[0];
-c_731808.elements[1] = result_7354_73442;
-c_731808.elements[2] = ((closureN)self_731273)->elements[1];
+closureN_type c_731809;
+object e_731817 [3];
+c_731809.hdr.mark = gc_color_red;
+ c_731809.hdr.grayed = 0;
+c_731809.tag = closureN_tag;
+ c_731809.fn = (function_type)__lambda_31;
+c_731809.num_args = 1;
+c_731809.num_elements = 3;
+c_731809.elements = (object *)e_731817;
+c_731809.elements[0] = ((closureN)self_731273)->elements[0];
+c_731809.elements[1] = result_7354_73442;
+c_731809.elements[2] = ((closureN)self_731273)->elements[1];
 
 
-complex_num_type local_731819; 
+complex_num_type local_731820; 
 
 
-return_direct_with_clo1(data,(closure)&c_731808,__lambda_31,  Cyc_fast_sum(data,&local_731819, car(((closureN)self_731273)->elements[1]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_731809,__lambda_31,  Cyc_fast_sum(data,&local_731820, car(((closureN)self_731273)->elements[1]), obj_int2obj(1)));; 
 }
 
 static void __lambda_31(void *data, int argc, object self_731274, object r_73739) {
@@ -5938,136 +5960,136 @@ static void __lambda_31(void *data, int argc, object self_731274, object r_73739
 static void __lambda_22(void *data, int argc, closure _,object k_73726, object start_7349_73437, object end_7350_73438, object step_7351_73439) {
   Cyc_st_add(data, "srfi/121.sld:make-range");
 
-closureN_type c_731736;
-object e_731795 [3];
-c_731736.hdr.mark = gc_color_red;
- c_731736.hdr.grayed = 0;
-c_731736.tag = closureN_tag;
- c_731736.fn = (function_type)__lambda_272;
-c_731736.num_args = 1;
-c_731736.num_elements = 3;
-c_731736.elements = (object *)e_731795;
-c_731736.elements[0] = end_7350_73438;
-c_731736.elements[1] = k_73726;
-c_731736.elements[2] = step_7351_73439;
+closureN_type c_731737;
+object e_731796 [3];
+c_731737.hdr.mark = gc_color_red;
+ c_731737.hdr.grayed = 0;
+c_731737.tag = closureN_tag;
+ c_731737.fn = (function_type)__lambda_273;
+c_731737.num_args = 1;
+c_731737.num_elements = 3;
+c_731737.elements = (object *)e_731796;
+c_731737.elements[0] = end_7350_73438;
+c_731737.elements[1] = k_73726;
+c_731737.elements[2] = step_7351_73439;
 
 
-pair_type local_731798; 
-return_direct_with_clo1(data,(closure)&c_731736,__lambda_272,  set_cell_as_expr(&local_731798, start_7349_73437));; 
+pair_type local_731799; 
+return_direct_with_clo1(data,(closure)&c_731737,__lambda_273,  set_cell_as_expr(&local_731799, start_7349_73437));; 
 }
 
-static void __lambda_272(void *data, int argc, object self_731265, object start_7349_73437) {
+static void __lambda_273(void *data, int argc, object self_731265, object start_7349_73437) {
   
-closureN_type c_731738;
-object e_731788 [4];
-c_731738.hdr.mark = gc_color_red;
- c_731738.hdr.grayed = 0;
-c_731738.tag = closureN_tag;
- c_731738.fn = (function_type)__lambda_23;
-c_731738.num_args = 1;
-c_731738.num_elements = 4;
-c_731738.elements = (object *)e_731788;
-c_731738.elements[0] = ((closureN)self_731265)->elements[0];
-c_731738.elements[1] = ((closureN)self_731265)->elements[1];
-c_731738.elements[2] = start_7349_73437;
-c_731738.elements[3] = ((closureN)self_731265)->elements[2];
+closureN_type c_731739;
+object e_731789 [4];
+c_731739.hdr.mark = gc_color_red;
+ c_731739.hdr.grayed = 0;
+c_731739.tag = closureN_tag;
+ c_731739.fn = (function_type)__lambda_23;
+c_731739.num_args = 1;
+c_731739.num_elements = 4;
+c_731739.elements = (object *)e_731789;
+c_731739.elements[0] = ((closureN)self_731265)->elements[0];
+c_731739.elements[1] = ((closureN)self_731265)->elements[1];
+c_731739.elements[2] = start_7349_73437;
+c_731739.elements[3] = ((closureN)self_731265)->elements[2];
 
 
-complex_num_type local_731791; 
+complex_num_type local_731792; 
 
 
-return_direct_with_clo1(data,(closure)&c_731738,__lambda_23,  Cyc_fast_sum(data,&local_731791, car(start_7349_73437), ((closureN)self_731265)->elements[2]));; 
+return_direct_with_clo1(data,(closure)&c_731739,__lambda_23,  Cyc_fast_sum(data,&local_731792, car(start_7349_73437), ((closureN)self_731265)->elements[2]));; 
 }
 
 static void __lambda_23(void *data, int argc, object self_731266, object r_73733) {
   
-  complex_num_type local_731786; 
-  Cyc_set_cell(data, ((closureN)self_731266)->elements[2], Cyc_fast_sub(data,&local_731786, r_73733, ((closureN)self_731266)->elements[3]));
-closureN_type c_731742;
-object e_731780 [3];
-c_731742.hdr.mark = gc_color_red;
- c_731742.hdr.grayed = 0;
-c_731742.tag = closureN_tag;
- c_731742.fn = (function_type)__lambda_24;
-c_731742.num_args = 0;
-c_731742.num_elements = 3;
-c_731742.elements = (object *)e_731780;
-c_731742.elements[0] = ((closureN)self_731266)->elements[0];
-c_731742.elements[1] = ((closureN)self_731266)->elements[2];
-c_731742.elements[2] = ((closureN)self_731266)->elements[3];
+  complex_num_type local_731787; 
+  Cyc_set_cell(data, ((closureN)self_731266)->elements[2], Cyc_fast_sub(data,&local_731787, r_73733, ((closureN)self_731266)->elements[3]));
+closureN_type c_731743;
+object e_731781 [3];
+c_731743.hdr.mark = gc_color_red;
+ c_731743.hdr.grayed = 0;
+c_731743.tag = closureN_tag;
+ c_731743.fn = (function_type)__lambda_24;
+c_731743.num_args = 0;
+c_731743.num_elements = 3;
+c_731743.elements = (object *)e_731781;
+c_731743.elements[0] = ((closureN)self_731266)->elements[0];
+c_731743.elements[1] = ((closureN)self_731266)->elements[2];
+c_731743.elements[2] = ((closureN)self_731266)->elements[3];
 
-return_closcall1(data,  ((closureN)self_731266)->elements[1],  &c_731742);;; 
+return_closcall1(data,  ((closureN)self_731266)->elements[1],  &c_731743);;; 
 }
 
 static void __lambda_24(void *data, int argc, object self_731267, object k_73728) {
   
-closureN_type c_731744;
-object e_731773 [3];
-c_731744.hdr.mark = gc_color_red;
- c_731744.hdr.grayed = 0;
-c_731744.tag = closureN_tag;
- c_731744.fn = (function_type)__lambda_25;
-c_731744.num_args = 1;
-c_731744.num_elements = 3;
-c_731744.elements = (object *)e_731773;
-c_731744.elements[0] = k_73728;
-c_731744.elements[1] = ((closureN)self_731267)->elements[1];
-c_731744.elements[2] = ((closureN)self_731267)->elements[2];
+closureN_type c_731745;
+object e_731774 [3];
+c_731745.hdr.mark = gc_color_red;
+ c_731745.hdr.grayed = 0;
+c_731745.tag = closureN_tag;
+ c_731745.fn = (function_type)__lambda_25;
+c_731745.num_args = 1;
+c_731745.num_elements = 3;
+c_731745.elements = (object *)e_731774;
+c_731745.elements[0] = k_73728;
+c_731745.elements[1] = ((closureN)self_731267)->elements[1];
+c_731745.elements[2] = ((closureN)self_731267)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731744,__lambda_25,  Cyc_num_fast_lt_op(data, car(((closureN)self_731267)->elements[1]), ((closureN)self_731267)->elements[0]));; 
+return_direct_with_clo1(data,(closure)&c_731745,__lambda_25,  Cyc_num_fast_lt_op(data, car(((closureN)self_731267)->elements[1]), ((closureN)self_731267)->elements[0]));; 
 }
 
 static void __lambda_25(void *data, int argc, object self_731268, object r_73729) {
   if( (boolean_f != r_73729) ){ 
   
-closureN_type c_731746;
-object e_731764 [3];
-c_731746.hdr.mark = gc_color_red;
- c_731746.hdr.grayed = 0;
-c_731746.tag = closureN_tag;
- c_731746.fn = (function_type)__lambda_26;
-c_731746.num_args = 1;
-c_731746.num_elements = 3;
-c_731746.elements = (object *)e_731764;
-c_731746.elements[0] = ((closureN)self_731268)->elements[0];
-c_731746.elements[1] = ((closureN)self_731268)->elements[1];
-c_731746.elements[2] = ((closureN)self_731268)->elements[2];
+closureN_type c_731747;
+object e_731765 [3];
+c_731747.hdr.mark = gc_color_red;
+ c_731747.hdr.grayed = 0;
+c_731747.tag = closureN_tag;
+ c_731747.fn = (function_type)__lambda_26;
+c_731747.num_args = 1;
+c_731747.num_elements = 3;
+c_731747.elements = (object *)e_731765;
+c_731747.elements[0] = ((closureN)self_731268)->elements[0];
+c_731747.elements[1] = ((closureN)self_731268)->elements[1];
+c_731747.elements[2] = ((closureN)self_731268)->elements[2];
 
 
 
-return_direct_with_clo1(data,(closure)&c_731746,__lambda_26,  car(((closureN)self_731268)->elements[1]));
+return_direct_with_clo1(data,(closure)&c_731747,__lambda_26,  car(((closureN)self_731268)->elements[1]));
 } else { 
   
-complex_num_type local_731772; 
+complex_num_type local_731773; 
 return_closcall1(data,  ((closureN)self_731268)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731772));}
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731773));}
 ;; 
 }
 
 static void __lambda_26(void *data, int argc, object self_731269, object v_7352_73440) {
   
-closureN_type c_731748;
-object e_731756 [3];
-c_731748.hdr.mark = gc_color_red;
- c_731748.hdr.grayed = 0;
-c_731748.tag = closureN_tag;
- c_731748.fn = (function_type)__lambda_27;
-c_731748.num_args = 1;
-c_731748.num_elements = 3;
-c_731748.elements = (object *)e_731756;
-c_731748.elements[0] = ((closureN)self_731269)->elements[0];
-c_731748.elements[1] = ((closureN)self_731269)->elements[1];
-c_731748.elements[2] = v_7352_73440;
+closureN_type c_731749;
+object e_731757 [3];
+c_731749.hdr.mark = gc_color_red;
+ c_731749.hdr.grayed = 0;
+c_731749.tag = closureN_tag;
+ c_731749.fn = (function_type)__lambda_27;
+c_731749.num_args = 1;
+c_731749.num_elements = 3;
+c_731749.elements = (object *)e_731757;
+c_731749.elements[0] = ((closureN)self_731269)->elements[0];
+c_731749.elements[1] = ((closureN)self_731269)->elements[1];
+c_731749.elements[2] = v_7352_73440;
 
 
-complex_num_type local_731759; 
+complex_num_type local_731760; 
 
 
-return_direct_with_clo1(data,(closure)&c_731748,__lambda_27,  Cyc_fast_sum(data,&local_731759, car(((closureN)self_731269)->elements[1]), ((closureN)self_731269)->elements[2]));; 
+return_direct_with_clo1(data,(closure)&c_731749,__lambda_27,  Cyc_fast_sum(data,&local_731760, car(((closureN)self_731269)->elements[1]), ((closureN)self_731269)->elements[2]));; 
 }
 
 static void __lambda_27(void *data, int argc, object self_731270, object r_73731) {
@@ -6081,42 +6103,42 @@ load_varargs(args_7334_7338_73429, args_7334_7338_73429_raw, argc - 1);
   
   
   
-  make_pair(c_731696,quote_start,NULL);c_731696.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731696))) ){ 
+  make_pair(c_731697,quote_start,NULL);c_731697.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731697))) ){ 
   
-mclosure0(c_731701, (function_type)__lambda_19);c_731701.num_args = 1;
+mclosure0(c_731702, (function_type)__lambda_19);c_731702.num_args = 1;
 
-object c_731700 = apply(data,  k_73707,&c_731701, args_7334_7338_73429);
-return_closcall1(data,  k_73707,  c_731700);
+object c_731701 = apply(data,  k_73707,&c_731702, args_7334_7338_73429);
+return_closcall1(data,  k_73707,  c_731701);
 } else { 
     
   
   
-  make_pair(c_731710,quote_end,NULL);c_731710.hdr.immutable = 1;
-  make_pair(c_731709,quote_start,&c_731710);c_731709.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731709))) ){ 
+  make_pair(c_731711,quote_end,NULL);c_731711.hdr.immutable = 1;
+  make_pair(c_731710,quote_start,&c_731711);c_731710.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731710))) ){ 
   
-mclosure0(c_731715, (function_type)__lambda_20);c_731715.num_args = 2;
+mclosure0(c_731716, (function_type)__lambda_20);c_731716.num_args = 2;
 
-object c_731714 = apply(data,  k_73707,&c_731715, args_7334_7338_73429);
-return_closcall1(data,  k_73707,  c_731714);
+object c_731715 = apply(data,  k_73707,&c_731716, args_7334_7338_73429);
+return_closcall1(data,  k_73707,  c_731715);
 } else { 
     
   
   
-  make_pair(c_731725,quote_step,NULL);c_731725.hdr.immutable = 1;
-  make_pair(c_731724,quote_end,&c_731725);c_731724.hdr.immutable = 1;
-  make_pair(c_731723,quote_start,&c_731724);c_731723.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731723))) ){ 
+  make_pair(c_731726,quote_step,NULL);c_731726.hdr.immutable = 1;
+  make_pair(c_731725,quote_end,&c_731726);c_731725.hdr.immutable = 1;
+  make_pair(c_731724,quote_start,&c_731725);c_731724.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7334_7338_73429), Cyc_length(data, &c_731724))) ){ 
   
-mclosure0(c_731730, (function_type)__lambda_21);c_731730.num_args = 3;
+mclosure0(c_731731, (function_type)__lambda_21);c_731731.num_args = 3;
 
-object c_731729 = apply(data,  k_73707,&c_731730, args_7334_7338_73429);
-return_closcall1(data,  k_73707,  c_731729);
+object c_731730 = apply(data,  k_73707,&c_731731, args_7334_7338_73429);
+return_closcall1(data,  k_73707,  c_731730);
 } else { 
   
-make_utf8_string_with_len(c_731733, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73707, &c_731733);}
+make_utf8_string_with_len(c_731734, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73707, &c_731734);}
 ;}
 ;}
 ;; 
@@ -6137,158 +6159,158 @@ static void __lambda_19(void *data, int argc, object self_731262, object k_73711
 static void __lambda_12(void *data, int argc, closure _,object k_73698, object count_7330_73425, object start_7331_73426, object step_7332_73427) {
   Cyc_st_add(data, "srfi/121.sld:make-iota");
 
-closureN_type c_731624;
-object e_731685 [3];
-c_731624.hdr.mark = gc_color_red;
- c_731624.hdr.grayed = 0;
-c_731624.tag = closureN_tag;
- c_731624.fn = (function_type)__lambda_271;
-c_731624.num_args = 1;
-c_731624.num_elements = 3;
-c_731624.elements = (object *)e_731685;
-c_731624.elements[0] = k_73698;
-c_731624.elements[1] = start_7331_73426;
-c_731624.elements[2] = step_7332_73427;
+closureN_type c_731625;
+object e_731686 [3];
+c_731625.hdr.mark = gc_color_red;
+ c_731625.hdr.grayed = 0;
+c_731625.tag = closureN_tag;
+ c_731625.fn = (function_type)__lambda_272;
+c_731625.num_args = 1;
+c_731625.num_elements = 3;
+c_731625.elements = (object *)e_731686;
+c_731625.elements[0] = k_73698;
+c_731625.elements[1] = start_7331_73426;
+c_731625.elements[2] = step_7332_73427;
 
 
-pair_type local_731688; 
-return_direct_with_clo1(data,(closure)&c_731624,__lambda_271,  set_cell_as_expr(&local_731688, count_7330_73425));; 
+pair_type local_731689; 
+return_direct_with_clo1(data,(closure)&c_731625,__lambda_272,  set_cell_as_expr(&local_731689, count_7330_73425));; 
 }
 
-static void __lambda_271(void *data, int argc, object self_731255, object count_7330_73425) {
+static void __lambda_272(void *data, int argc, object self_731255, object count_7330_73425) {
   
-closureN_type c_731626;
+closureN_type c_731627;
+object e_731681 [3];
+c_731627.hdr.mark = gc_color_red;
+ c_731627.hdr.grayed = 0;
+c_731627.tag = closureN_tag;
+ c_731627.fn = (function_type)__lambda_271;
+c_731627.num_args = 1;
+c_731627.num_elements = 3;
+c_731627.elements = (object *)e_731681;
+c_731627.elements[0] = count_7330_73425;
+c_731627.elements[1] = ((closureN)self_731255)->elements[0];
+c_731627.elements[2] = ((closureN)self_731255)->elements[2];
+
+
+pair_type local_731684; 
+return_direct_with_clo1(data,(closure)&c_731627,__lambda_271,  set_cell_as_expr(&local_731684, ((closureN)self_731255)->elements[1]));; 
+}
+
+static void __lambda_271(void *data, int argc, object self_731256, object start_7331_73426) {
+  
+closureN_type c_731630;
 object e_731680 [3];
-c_731626.hdr.mark = gc_color_red;
- c_731626.hdr.grayed = 0;
-c_731626.tag = closureN_tag;
- c_731626.fn = (function_type)__lambda_270;
-c_731626.num_args = 1;
-c_731626.num_elements = 3;
-c_731626.elements = (object *)e_731680;
-c_731626.elements[0] = count_7330_73425;
-c_731626.elements[1] = ((closureN)self_731255)->elements[0];
-c_731626.elements[2] = ((closureN)self_731255)->elements[2];
+c_731630.hdr.mark = gc_color_red;
+ c_731630.hdr.grayed = 0;
+c_731630.tag = closureN_tag;
+ c_731630.fn = (function_type)__lambda_13;
+c_731630.num_args = 0;
+c_731630.num_elements = 3;
+c_731630.elements = (object *)e_731680;
+c_731630.elements[0] = ((closureN)self_731256)->elements[0];
+c_731630.elements[1] = start_7331_73426;
+c_731630.elements[2] = ((closureN)self_731256)->elements[2];
 
-
-pair_type local_731683; 
-return_direct_with_clo1(data,(closure)&c_731626,__lambda_270,  set_cell_as_expr(&local_731683, ((closureN)self_731255)->elements[1]));; 
-}
-
-static void __lambda_270(void *data, int argc, object self_731256, object start_7331_73426) {
-  
-closureN_type c_731629;
-object e_731679 [3];
-c_731629.hdr.mark = gc_color_red;
- c_731629.hdr.grayed = 0;
-c_731629.tag = closureN_tag;
- c_731629.fn = (function_type)__lambda_13;
-c_731629.num_args = 0;
-c_731629.num_elements = 3;
-c_731629.elements = (object *)e_731679;
-c_731629.elements[0] = ((closureN)self_731256)->elements[0];
-c_731629.elements[1] = start_7331_73426;
-c_731629.elements[2] = ((closureN)self_731256)->elements[2];
-
-return_closcall1(data,  ((closureN)self_731256)->elements[1],  &c_731629);; 
+return_closcall1(data,  ((closureN)self_731256)->elements[1],  &c_731630);; 
 }
 
 static void __lambda_13(void *data, int argc, object self_731257, object k_73699) {
   
-closureN_type c_731631;
-object e_731673 [4];
-c_731631.hdr.mark = gc_color_red;
- c_731631.hdr.grayed = 0;
-c_731631.tag = closureN_tag;
- c_731631.fn = (function_type)__lambda_14;
-c_731631.num_args = 1;
-c_731631.num_elements = 4;
-c_731631.elements = (object *)e_731673;
-c_731631.elements[0] = ((closureN)self_731257)->elements[0];
-c_731631.elements[1] = k_73699;
-c_731631.elements[2] = ((closureN)self_731257)->elements[1];
-c_731631.elements[3] = ((closureN)self_731257)->elements[2];
+closureN_type c_731632;
+object e_731674 [4];
+c_731632.hdr.mark = gc_color_red;
+ c_731632.hdr.grayed = 0;
+c_731632.tag = closureN_tag;
+ c_731632.fn = (function_type)__lambda_14;
+c_731632.num_args = 1;
+c_731632.num_elements = 4;
+c_731632.elements = (object *)e_731674;
+c_731632.elements[0] = ((closureN)self_731257)->elements[0];
+c_731632.elements[1] = k_73699;
+c_731632.elements[2] = ((closureN)self_731257)->elements[1];
+c_731632.elements[3] = ((closureN)self_731257)->elements[2];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731631,__lambda_14,  Cyc_num_fast_lte_op(data, car(((closureN)self_731257)->elements[0]), obj_int2obj(0)));; 
+return_direct_with_clo1(data,(closure)&c_731632,__lambda_14,  Cyc_num_fast_lte_op(data, car(((closureN)self_731257)->elements[0]), obj_int2obj(0)));; 
 }
 
 static void __lambda_14(void *data, int argc, object self_731258, object r_73700) {
   if( (boolean_f != r_73700) ){ 
   
-complex_num_type local_731636; 
+complex_num_type local_731637; 
 return_closcall1(data,  ((closureN)self_731258)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731636));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731637));
 } else { 
   
-closureN_type c_731638;
-object e_731669 [4];
-c_731638.hdr.mark = gc_color_red;
- c_731638.hdr.grayed = 0;
-c_731638.tag = closureN_tag;
- c_731638.fn = (function_type)__lambda_15;
-c_731638.num_args = 1;
-c_731638.num_elements = 4;
-c_731638.elements = (object *)e_731669;
-c_731638.elements[0] = ((closureN)self_731258)->elements[0];
-c_731638.elements[1] = ((closureN)self_731258)->elements[1];
-c_731638.elements[2] = ((closureN)self_731258)->elements[2];
-c_731638.elements[3] = ((closureN)self_731258)->elements[3];
+closureN_type c_731639;
+object e_731670 [4];
+c_731639.hdr.mark = gc_color_red;
+ c_731639.hdr.grayed = 0;
+c_731639.tag = closureN_tag;
+ c_731639.fn = (function_type)__lambda_15;
+c_731639.num_args = 1;
+c_731639.num_elements = 4;
+c_731639.elements = (object *)e_731670;
+c_731639.elements[0] = ((closureN)self_731258)->elements[0];
+c_731639.elements[1] = ((closureN)self_731258)->elements[1];
+c_731639.elements[2] = ((closureN)self_731258)->elements[2];
+c_731639.elements[3] = ((closureN)self_731258)->elements[3];
 
 
 
-return_direct_with_clo1(data,(closure)&c_731638,__lambda_15,  car(((closureN)self_731258)->elements[2]));}
+return_direct_with_clo1(data,(closure)&c_731639,__lambda_15,  car(((closureN)self_731258)->elements[2]));}
 ;; 
 }
 
 static void __lambda_15(void *data, int argc, object self_731259, object result_7333_73428) {
   
-closureN_type c_731640;
-object e_731662 [5];
-c_731640.hdr.mark = gc_color_red;
- c_731640.hdr.grayed = 0;
-c_731640.tag = closureN_tag;
- c_731640.fn = (function_type)__lambda_16;
-c_731640.num_args = 1;
-c_731640.num_elements = 5;
-c_731640.elements = (object *)e_731662;
-c_731640.elements[0] = ((closureN)self_731259)->elements[0];
-c_731640.elements[1] = ((closureN)self_731259)->elements[1];
-c_731640.elements[2] = result_7333_73428;
-c_731640.elements[3] = ((closureN)self_731259)->elements[2];
-c_731640.elements[4] = ((closureN)self_731259)->elements[3];
+closureN_type c_731641;
+object e_731663 [5];
+c_731641.hdr.mark = gc_color_red;
+ c_731641.hdr.grayed = 0;
+c_731641.tag = closureN_tag;
+ c_731641.fn = (function_type)__lambda_16;
+c_731641.num_args = 1;
+c_731641.num_elements = 5;
+c_731641.elements = (object *)e_731663;
+c_731641.elements[0] = ((closureN)self_731259)->elements[0];
+c_731641.elements[1] = ((closureN)self_731259)->elements[1];
+c_731641.elements[2] = result_7333_73428;
+c_731641.elements[3] = ((closureN)self_731259)->elements[2];
+c_731641.elements[4] = ((closureN)self_731259)->elements[3];
 
 
-complex_num_type local_731665; 
+complex_num_type local_731666; 
 
 
-return_direct_with_clo1(data,(closure)&c_731640,__lambda_16,  Cyc_fast_sub(data,&local_731665, car(((closureN)self_731259)->elements[0]), obj_int2obj(1)));; 
+return_direct_with_clo1(data,(closure)&c_731641,__lambda_16,  Cyc_fast_sub(data,&local_731666, car(((closureN)self_731259)->elements[0]), obj_int2obj(1)));; 
 }
 
 static void __lambda_16(void *data, int argc, object self_731260, object r_73704) {
   
   Cyc_set_cell(data, ((closureN)self_731260)->elements[0], r_73704);
-closureN_type c_731643;
-object e_731651 [3];
-c_731643.hdr.mark = gc_color_red;
- c_731643.hdr.grayed = 0;
-c_731643.tag = closureN_tag;
- c_731643.fn = (function_type)__lambda_17;
-c_731643.num_args = 1;
-c_731643.num_elements = 3;
-c_731643.elements = (object *)e_731651;
-c_731643.elements[0] = ((closureN)self_731260)->elements[1];
-c_731643.elements[1] = ((closureN)self_731260)->elements[2];
-c_731643.elements[2] = ((closureN)self_731260)->elements[3];
+closureN_type c_731644;
+object e_731652 [3];
+c_731644.hdr.mark = gc_color_red;
+ c_731644.hdr.grayed = 0;
+c_731644.tag = closureN_tag;
+ c_731644.fn = (function_type)__lambda_17;
+c_731644.num_args = 1;
+c_731644.num_elements = 3;
+c_731644.elements = (object *)e_731652;
+c_731644.elements[0] = ((closureN)self_731260)->elements[1];
+c_731644.elements[1] = ((closureN)self_731260)->elements[2];
+c_731644.elements[2] = ((closureN)self_731260)->elements[3];
 
 
-complex_num_type local_731654; 
+complex_num_type local_731655; 
 
 
-return_direct_with_clo1(data,(closure)&c_731643,__lambda_17,  Cyc_fast_sum(data,&local_731654, car(((closureN)self_731260)->elements[3]), ((closureN)self_731260)->elements[4]));;; 
+return_direct_with_clo1(data,(closure)&c_731644,__lambda_17,  Cyc_fast_sum(data,&local_731655, car(((closureN)self_731260)->elements[3]), ((closureN)self_731260)->elements[4]));;; 
 }
 
 static void __lambda_17(void *data, int argc, object self_731261, object r_73703) {
@@ -6302,42 +6324,42 @@ load_varargs(args_7315_7319_73417, args_7315_7319_73417_raw, argc - 1);
   
   
   
-  make_pair(c_731584,quote_count,NULL);c_731584.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731584))) ){ 
+  make_pair(c_731585,quote_count,NULL);c_731585.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731585))) ){ 
   
-mclosure0(c_731589, (function_type)__lambda_9);c_731589.num_args = 1;
+mclosure0(c_731590, (function_type)__lambda_9);c_731590.num_args = 1;
 
-object c_731588 = apply(data,  k_73679,&c_731589, args_7315_7319_73417);
-return_closcall1(data,  k_73679,  c_731588);
+object c_731589 = apply(data,  k_73679,&c_731590, args_7315_7319_73417);
+return_closcall1(data,  k_73679,  c_731589);
 } else { 
     
   
   
-  make_pair(c_731598,quote_start,NULL);c_731598.hdr.immutable = 1;
-  make_pair(c_731597,quote_count,&c_731598);c_731597.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731597))) ){ 
+  make_pair(c_731599,quote_start,NULL);c_731599.hdr.immutable = 1;
+  make_pair(c_731598,quote_count,&c_731599);c_731598.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731598))) ){ 
   
-mclosure0(c_731603, (function_type)__lambda_10);c_731603.num_args = 2;
+mclosure0(c_731604, (function_type)__lambda_10);c_731604.num_args = 2;
 
-object c_731602 = apply(data,  k_73679,&c_731603, args_7315_7319_73417);
-return_closcall1(data,  k_73679,  c_731602);
+object c_731603 = apply(data,  k_73679,&c_731604, args_7315_7319_73417);
+return_closcall1(data,  k_73679,  c_731603);
 } else { 
     
   
   
-  make_pair(c_731613,quote_step,NULL);c_731613.hdr.immutable = 1;
-  make_pair(c_731612,quote_start,&c_731613);c_731612.hdr.immutable = 1;
-  make_pair(c_731611,quote_count,&c_731612);c_731611.hdr.immutable = 1;
-if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731611))) ){ 
+  make_pair(c_731614,quote_step,NULL);c_731614.hdr.immutable = 1;
+  make_pair(c_731613,quote_start,&c_731614);c_731613.hdr.immutable = 1;
+  make_pair(c_731612,quote_count,&c_731613);c_731612.hdr.immutable = 1;
+if( (boolean_f != Cyc_num_fast_eq_op(data, Cyc_length(data, args_7315_7319_73417), Cyc_length(data, &c_731612))) ){ 
   
-mclosure0(c_731618, (function_type)__lambda_11);c_731618.num_args = 3;
+mclosure0(c_731619, (function_type)__lambda_11);c_731619.num_args = 3;
 
-object c_731617 = apply(data,  k_73679,&c_731618, args_7315_7319_73417);
-return_closcall1(data,  k_73679,  c_731617);
+object c_731618 = apply(data,  k_73679,&c_731619, args_7315_7319_73417);
+return_closcall1(data,  k_73679,  c_731618);
 } else { 
   
-make_utf8_string_with_len(c_731621, "case-lambda: no cases matched", 29, 29);
-return_closcall2(data,  __glo_error_scheme_base,  k_73679, &c_731621);}
+make_utf8_string_with_len(c_731622, "case-lambda: no cases matched", 29, 29);
+return_closcall2(data,  __glo_error_scheme_base,  k_73679, &c_731622);}
 ;}
 ;}
 ;; 
@@ -6359,107 +6381,107 @@ static void __lambda_3(void *data, int argc, closure _,object k_73671, object ar
 load_varargs(args_7313_73415, args_7313_73415_raw, argc - 1);
   Cyc_st_add(data, "srfi/121.sld:generator");
 
-closureN_type c_731532;
-object e_731573 [1];
-c_731532.hdr.mark = gc_color_red;
- c_731532.hdr.grayed = 0;
-c_731532.tag = closureN_tag;
- c_731532.fn = (function_type)__lambda_269;
-c_731532.num_args = 1;
-c_731532.num_elements = 1;
-c_731532.elements = (object *)e_731573;
-c_731532.elements[0] = k_73671;
+closureN_type c_731533;
+object e_731574 [1];
+c_731533.hdr.mark = gc_color_red;
+ c_731533.hdr.grayed = 0;
+c_731533.tag = closureN_tag;
+ c_731533.fn = (function_type)__lambda_270;
+c_731533.num_args = 1;
+c_731533.num_elements = 1;
+c_731533.elements = (object *)e_731574;
+c_731533.elements[0] = k_73671;
 
 
-pair_type local_731576; 
-return_direct_with_clo1(data,(closure)&c_731532,__lambda_269,  set_cell_as_expr(&local_731576, args_7313_73415));; 
+pair_type local_731577; 
+return_direct_with_clo1(data,(closure)&c_731533,__lambda_270,  set_cell_as_expr(&local_731577, args_7313_73415));; 
 }
 
-static void __lambda_269(void *data, int argc, object self_731247, object args_7313_73415) {
+static void __lambda_270(void *data, int argc, object self_731247, object args_7313_73415) {
   
-closureN_type c_731535;
-object e_731572 [1];
-c_731535.hdr.mark = gc_color_red;
- c_731535.hdr.grayed = 0;
-c_731535.tag = closureN_tag;
- c_731535.fn = (function_type)__lambda_4;
-c_731535.num_args = 0;
-c_731535.num_elements = 1;
-c_731535.elements = (object *)e_731572;
-c_731535.elements[0] = args_7313_73415;
+closureN_type c_731536;
+object e_731573 [1];
+c_731536.hdr.mark = gc_color_red;
+ c_731536.hdr.grayed = 0;
+c_731536.tag = closureN_tag;
+ c_731536.fn = (function_type)__lambda_4;
+c_731536.num_args = 0;
+c_731536.num_elements = 1;
+c_731536.elements = (object *)e_731573;
+c_731536.elements[0] = args_7313_73415;
 
-return_closcall1(data,  ((closureN)self_731247)->elements[0],  &c_731535);; 
+return_closcall1(data,  ((closureN)self_731247)->elements[0],  &c_731536);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_731248, object k_73672) {
   
-closureN_type c_731537;
-object e_731566 [2];
-c_731537.hdr.mark = gc_color_red;
- c_731537.hdr.grayed = 0;
-c_731537.tag = closureN_tag;
- c_731537.fn = (function_type)__lambda_5;
-c_731537.num_args = 1;
-c_731537.num_elements = 2;
-c_731537.elements = (object *)e_731566;
-c_731537.elements[0] = ((closureN)self_731248)->elements[0];
-c_731537.elements[1] = k_73672;
+closureN_type c_731538;
+object e_731567 [2];
+c_731538.hdr.mark = gc_color_red;
+ c_731538.hdr.grayed = 0;
+c_731538.tag = closureN_tag;
+ c_731538.fn = (function_type)__lambda_5;
+c_731538.num_args = 1;
+c_731538.num_elements = 2;
+c_731538.elements = (object *)e_731567;
+c_731538.elements[0] = ((closureN)self_731248)->elements[0];
+c_731538.elements[1] = k_73672;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731537,__lambda_5,  Cyc_is_null(car(((closureN)self_731248)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_731538,__lambda_5,  Cyc_is_null(car(((closureN)self_731248)->elements[0])));; 
 }
 
 static void __lambda_5(void *data, int argc, object self_731249, object r_73673) {
   if( (boolean_f != r_73673) ){ 
   
-complex_num_type local_731542; 
+complex_num_type local_731543; 
 return_closcall1(data,  ((closureN)self_731249)->elements[1],  ((inline_function_type)
-                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731542));
+                   ((closure)__glo_eof_91object_191_191inline_191_191_scheme_base)->fn)(data,&local_731543));
 } else { 
   
-closureN_type c_731544;
-object e_731560 [2];
-c_731544.hdr.mark = gc_color_red;
- c_731544.hdr.grayed = 0;
-c_731544.tag = closureN_tag;
- c_731544.fn = (function_type)__lambda_6;
-c_731544.num_args = 1;
-c_731544.num_elements = 2;
-c_731544.elements = (object *)e_731560;
-c_731544.elements[0] = ((closureN)self_731249)->elements[0];
-c_731544.elements[1] = ((closureN)self_731249)->elements[1];
+closureN_type c_731545;
+object e_731561 [2];
+c_731545.hdr.mark = gc_color_red;
+ c_731545.hdr.grayed = 0;
+c_731545.tag = closureN_tag;
+ c_731545.fn = (function_type)__lambda_6;
+c_731545.num_args = 1;
+c_731545.num_elements = 2;
+c_731545.elements = (object *)e_731561;
+c_731545.elements[0] = ((closureN)self_731249)->elements[0];
+c_731545.elements[1] = ((closureN)self_731249)->elements[1];
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731544,__lambda_6,  Cyc_car(data, car(((closureN)self_731249)->elements[0])));}
+return_direct_with_clo1(data,(closure)&c_731545,__lambda_6,  Cyc_car(data, car(((closureN)self_731249)->elements[0])));}
 ;; 
 }
 
 static void __lambda_6(void *data, int argc, object self_731250, object next_7314_73416) {
   
-closureN_type c_731546;
-object e_731554 [3];
-c_731546.hdr.mark = gc_color_red;
- c_731546.hdr.grayed = 0;
-c_731546.tag = closureN_tag;
- c_731546.fn = (function_type)__lambda_7;
-c_731546.num_args = 1;
-c_731546.num_elements = 3;
-c_731546.elements = (object *)e_731554;
-c_731546.elements[0] = ((closureN)self_731250)->elements[0];
-c_731546.elements[1] = ((closureN)self_731250)->elements[1];
-c_731546.elements[2] = next_7314_73416;
+closureN_type c_731547;
+object e_731555 [3];
+c_731547.hdr.mark = gc_color_red;
+ c_731547.hdr.grayed = 0;
+c_731547.tag = closureN_tag;
+ c_731547.fn = (function_type)__lambda_7;
+c_731547.num_args = 1;
+c_731547.num_elements = 3;
+c_731547.elements = (object *)e_731555;
+c_731547.elements[0] = ((closureN)self_731250)->elements[0];
+c_731547.elements[1] = ((closureN)self_731250)->elements[1];
+c_731547.elements[2] = next_7314_73416;
 
 
 
 
 
-return_direct_with_clo1(data,(closure)&c_731546,__lambda_7,  Cyc_cdr(data, car(((closureN)self_731250)->elements[0])));; 
+return_direct_with_clo1(data,(closure)&c_731547,__lambda_7,  Cyc_cdr(data, car(((closureN)self_731250)->elements[0])));; 
 }
 
 static void __lambda_7(void *data, int argc, object self_731251, object r_73676) {
@@ -6474,22 +6496,22 @@ if( (boolean_f != Cyc_is_null(ls_732_73414)) ){
   return_closcall1(data,  k_73664,  boolean_f);
 } else { 
   
-closureN_type c_731518;
-object e_731527 [3];
-c_731518.hdr.mark = gc_color_red;
- c_731518.hdr.grayed = 0;
-c_731518.tag = closureN_tag;
- c_731518.fn = (function_type)__lambda_2;
-c_731518.num_args = 1;
-c_731518.num_elements = 3;
-c_731518.elements = (object *)e_731527;
-c_731518.elements[0] = k_73664;
-c_731518.elements[1] = ls_732_73414;
-c_731518.elements[2] = pred_731_73413;
+closureN_type c_731519;
+object e_731528 [3];
+c_731519.hdr.mark = gc_color_red;
+ c_731519.hdr.grayed = 0;
+c_731519.tag = closureN_tag;
+ c_731519.fn = (function_type)__lambda_2;
+c_731519.num_args = 1;
+c_731519.num_elements = 3;
+c_731519.elements = (object *)e_731528;
+c_731519.elements[0] = k_73664;
+c_731519.elements[1] = ls_732_73414;
+c_731519.elements[2] = pred_731_73413;
 
 
 
-return_closcall2(data,  pred_731_73413,  &c_731518, Cyc_car(data, ls_732_73414));}
+return_closcall2(data,  pred_731_73413,  &c_731519, Cyc_car(data, ls_732_73414));}
 ;; 
 }
 
@@ -6574,174 +6596,174 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_step);
   add_symbol(quote_start);
   add_symbol(quote_count);
-  mclosure0(c_733910, (function_type)__lambda_268);c_733910.num_args = 0; 
-  __glo_lib_91init_117srfi121_srfi_121 = &c_733910; 
-  mclosure0(c_733893, (function_type)__lambda_264);c_733893.num_args = 2; 
-  __glo_generator_91unfold_srfi_121 = &c_733893; 
-  mclosure0(c_733873, (function_type)__lambda_260);c_733873.num_args = 2; 
-  __glo_generator_91every_srfi_121 = &c_733873; 
-  mclosure0(c_733832, (function_type)__lambda_254);c_733832.num_args = 2; 
-  __glo_generator_91any_srfi_121 = &c_733832; 
-  mclosure0(c_733815, (function_type)__lambda_251);c_733815.num_args = 2; 
-  __glo_generator_91count_srfi_121 = &c_733815; 
-  mclosure0(c_733771, (function_type)__lambda_245);c_733771.num_args = 2; 
-  __glo_generator_91find_srfi_121 = &c_733771; 
-  mclosure0(c_733728, (function_type)__lambda_238);c_733728.num_args = 1; 
-  __glo_generator_91for_91each_srfi_121 = &c_733728; 
-  mclosure0(c_733673, (function_type)__lambda_229);c_733673.num_args = 2; 
-  __glo_generator_91fold_srfi_121 = &c_733673; 
-  mclosure0(c_733629, (function_type)__lambda_224);c_733629.num_args = 0; 
-  __glo_generator_91_125string_srfi_121 = &c_733629; 
-  mclosure0(c_733563, (function_type)__lambda_217);c_733563.num_args = 3; 
-  __glo_generator_91_125vector_67_srfi_121 = &c_733563; 
-  mclosure0(c_733519, (function_type)__lambda_212);c_733519.num_args = 0; 
-  __glo_generator_91_125vector_srfi_121 = &c_733519; 
-  mclosure0(c_733485, (function_type)__lambda_208);c_733485.num_args = 0; 
-  __glo_generator_91_125reverse_91list_srfi_121 = &c_733485; 
-  mclosure0(c_733447, (function_type)__lambda_203);c_733447.num_args = 0; 
-  __glo_generator_91_125list_srfi_121 = &c_733447; 
-  mclosure0(c_733362, (function_type)__lambda_193);c_733362.num_args = 2; 
-  __glo_gselect_srfi_121 = &c_733362; 
-  mclosure0(c_733238, (function_type)__lambda_181);c_733238.num_args = 2; 
-  __glo_gindex_srfi_121 = &c_733238; 
-  mclosure0(c_733113, (function_type)__lambda_170);c_733113.num_args = 0; 
-  __glo_gdelete_91neighbor_91dups_srfi_121 = &c_733113; 
-  mclosure0(c_733033, (function_type)__lambda_161);c_733033.num_args = 0; 
-  __glo_gdelete_srfi_121 = &c_733033; 
-  mclosure0(c_732993, (function_type)__lambda_156);c_732993.num_args = 2; 
-  __glo_gtake_91while_srfi_121 = &c_732993; 
-  mclosure0(c_732925, (function_type)__lambda_148);c_732925.num_args = 2; 
-  __glo_gdrop_91while_srfi_121 = &c_732925; 
-  mclosure0(c_732860, (function_type)__lambda_140);c_732860.num_args = 2; 
-  __glo_gdrop_srfi_121 = &c_732860; 
-  mclosure0(c_732754, (function_type)__lambda_130);c_732754.num_args = 0; 
-  __glo_gtake_srfi_121 = &c_732754; 
-  mclosure0(c_732741, (function_type)__lambda_127);c_732741.num_args = 2; 
-  __glo_gremove_srfi_121 = &c_732741; 
-  mclosure0(c_732692, (function_type)__lambda_120);c_732692.num_args = 2; 
-  __glo_gfilter_srfi_121 = &c_732692; 
-  mclosure0(c_732622, (function_type)__lambda_111);c_732622.num_args = 2; 
-  __glo_gcombine_srfi_121 = &c_732622; 
-  mclosure0(c_732530, (function_type)__lambda_102);c_732530.num_args = 0; 
-  __glo_gappend_srfi_121 = &c_732530; 
-  mclosure0(c_732466, (function_type)__lambda_96);c_732466.num_args = 0; 
-  __glo_gcons_85_srfi_121 = &c_732466; 
-  mclosure0(c_732414, (function_type)__lambda_87);c_732414.num_args = 4; 
-  __glo_make_91unfold_91generator_srfi_121 = &c_732414; 
-  mclosure0(c_732407, (function_type)__lambda_85);c_732407.num_args = 2; 
-  __glo_make_91for_91each_91generator_srfi_121 = &c_732407; 
-  mclosure0(c_732299, (function_type)__lambda_75);c_732299.num_args = 0; 
-  __glo_bytevector_91_125generator_srfi_121 = &c_732299; 
-  mclosure0(c_732191, (function_type)__lambda_65);c_732191.num_args = 0; 
-  __glo_string_91_125generator_srfi_121 = &c_732191; 
-  mclosure0(c_732080, (function_type)__lambda_55);c_732080.num_args = 0; 
-  __glo_reverse_91vector_91_125generator_srfi_121 = &c_732080; 
-  mclosure0(c_731972, (function_type)__lambda_45);c_731972.num_args = 0; 
-  __glo_vector_91_125generator_srfi_121 = &c_731972; 
-  mclosure0(c_731925, (function_type)__lambda_40);c_731925.num_args = 1; 
-  __glo_list_91_125generator_srfi_121 = &c_731925; 
-  mclosure0(c_731832, (function_type)__lambda_32);c_731832.num_args = 1; 
-  __glo_make_91coroutine_91generator_srfi_121 = &c_731832; 
-  mclosure0(c_731799, (function_type)__lambda_28);c_731799.num_args = 1; 
-  __glo_make_91infinite_91range_srfi_121 = &c_731799; 
-  mclosure0(c_731734, (function_type)__lambda_22);c_731734.num_args = 3; 
-  __glo_make_91range_srfi_121 = &c_731734; 
-  mclosure0(c_731689, (function_type)__lambda_18);c_731689.num_args = 0; 
-  __glo_make_91range_91generator_srfi_121 = &c_731689; 
-  mclosure0(c_731622, (function_type)__lambda_12);c_731622.num_args = 3; 
-  __glo_make_91iota_srfi_121 = &c_731622; 
-  mclosure0(c_731577, (function_type)__lambda_8);c_731577.num_args = 0; 
-  __glo_make_91iota_91generator_srfi_121 = &c_731577; 
-  mclosure0(c_731530, (function_type)__lambda_3);c_731530.num_args = 0; 
-  __glo_generator_srfi_121 = &c_731530; 
-  mclosure0(c_731513, (function_type)__lambda_1);c_731513.num_args = 2; 
-  __glo_any_srfi_121 = &c_731513; 
+  mclosure0(c_733914, (function_type)__lambda_269);c_733914.num_args = 0; 
+  __glo_lib_91init_117srfi121_srfi_121 = &c_733914; 
+  mclosure0(c_733897, (function_type)__lambda_265);c_733897.num_args = 2; 
+  __glo_generator_91unfold_srfi_121 = &c_733897; 
+  mclosure0(c_733877, (function_type)__lambda_261);c_733877.num_args = 2; 
+  __glo_generator_91every_srfi_121 = &c_733877; 
+  mclosure0(c_733836, (function_type)__lambda_255);c_733836.num_args = 2; 
+  __glo_generator_91any_srfi_121 = &c_733836; 
+  mclosure0(c_733819, (function_type)__lambda_252);c_733819.num_args = 2; 
+  __glo_generator_91count_srfi_121 = &c_733819; 
+  mclosure0(c_733775, (function_type)__lambda_246);c_733775.num_args = 2; 
+  __glo_generator_91find_srfi_121 = &c_733775; 
+  mclosure0(c_733732, (function_type)__lambda_239);c_733732.num_args = 1; 
+  __glo_generator_91for_91each_srfi_121 = &c_733732; 
+  mclosure0(c_733677, (function_type)__lambda_230);c_733677.num_args = 2; 
+  __glo_generator_91fold_srfi_121 = &c_733677; 
+  mclosure0(c_733633, (function_type)__lambda_225);c_733633.num_args = 0; 
+  __glo_generator_91_125string_srfi_121 = &c_733633; 
+  mclosure0(c_733564, (function_type)__lambda_217);c_733564.num_args = 3; 
+  __glo_generator_91_125vector_67_srfi_121 = &c_733564; 
+  mclosure0(c_733520, (function_type)__lambda_212);c_733520.num_args = 0; 
+  __glo_generator_91_125vector_srfi_121 = &c_733520; 
+  mclosure0(c_733486, (function_type)__lambda_208);c_733486.num_args = 0; 
+  __glo_generator_91_125reverse_91list_srfi_121 = &c_733486; 
+  mclosure0(c_733448, (function_type)__lambda_203);c_733448.num_args = 0; 
+  __glo_generator_91_125list_srfi_121 = &c_733448; 
+  mclosure0(c_733363, (function_type)__lambda_193);c_733363.num_args = 2; 
+  __glo_gselect_srfi_121 = &c_733363; 
+  mclosure0(c_733239, (function_type)__lambda_181);c_733239.num_args = 2; 
+  __glo_gindex_srfi_121 = &c_733239; 
+  mclosure0(c_733114, (function_type)__lambda_170);c_733114.num_args = 0; 
+  __glo_gdelete_91neighbor_91dups_srfi_121 = &c_733114; 
+  mclosure0(c_733034, (function_type)__lambda_161);c_733034.num_args = 0; 
+  __glo_gdelete_srfi_121 = &c_733034; 
+  mclosure0(c_732994, (function_type)__lambda_156);c_732994.num_args = 2; 
+  __glo_gtake_91while_srfi_121 = &c_732994; 
+  mclosure0(c_732926, (function_type)__lambda_148);c_732926.num_args = 2; 
+  __glo_gdrop_91while_srfi_121 = &c_732926; 
+  mclosure0(c_732861, (function_type)__lambda_140);c_732861.num_args = 2; 
+  __glo_gdrop_srfi_121 = &c_732861; 
+  mclosure0(c_732755, (function_type)__lambda_130);c_732755.num_args = 0; 
+  __glo_gtake_srfi_121 = &c_732755; 
+  mclosure0(c_732742, (function_type)__lambda_127);c_732742.num_args = 2; 
+  __glo_gremove_srfi_121 = &c_732742; 
+  mclosure0(c_732693, (function_type)__lambda_120);c_732693.num_args = 2; 
+  __glo_gfilter_srfi_121 = &c_732693; 
+  mclosure0(c_732623, (function_type)__lambda_111);c_732623.num_args = 2; 
+  __glo_gcombine_srfi_121 = &c_732623; 
+  mclosure0(c_732531, (function_type)__lambda_102);c_732531.num_args = 0; 
+  __glo_gappend_srfi_121 = &c_732531; 
+  mclosure0(c_732467, (function_type)__lambda_96);c_732467.num_args = 0; 
+  __glo_gcons_85_srfi_121 = &c_732467; 
+  mclosure0(c_732415, (function_type)__lambda_87);c_732415.num_args = 4; 
+  __glo_make_91unfold_91generator_srfi_121 = &c_732415; 
+  mclosure0(c_732408, (function_type)__lambda_85);c_732408.num_args = 2; 
+  __glo_make_91for_91each_91generator_srfi_121 = &c_732408; 
+  mclosure0(c_732300, (function_type)__lambda_75);c_732300.num_args = 0; 
+  __glo_bytevector_91_125generator_srfi_121 = &c_732300; 
+  mclosure0(c_732192, (function_type)__lambda_65);c_732192.num_args = 0; 
+  __glo_string_91_125generator_srfi_121 = &c_732192; 
+  mclosure0(c_732081, (function_type)__lambda_55);c_732081.num_args = 0; 
+  __glo_reverse_91vector_91_125generator_srfi_121 = &c_732081; 
+  mclosure0(c_731973, (function_type)__lambda_45);c_731973.num_args = 0; 
+  __glo_vector_91_125generator_srfi_121 = &c_731973; 
+  mclosure0(c_731926, (function_type)__lambda_40);c_731926.num_args = 1; 
+  __glo_list_91_125generator_srfi_121 = &c_731926; 
+  mclosure0(c_731833, (function_type)__lambda_32);c_731833.num_args = 1; 
+  __glo_make_91coroutine_91generator_srfi_121 = &c_731833; 
+  mclosure0(c_731800, (function_type)__lambda_28);c_731800.num_args = 1; 
+  __glo_make_91infinite_91range_srfi_121 = &c_731800; 
+  mclosure0(c_731735, (function_type)__lambda_22);c_731735.num_args = 3; 
+  __glo_make_91range_srfi_121 = &c_731735; 
+  mclosure0(c_731690, (function_type)__lambda_18);c_731690.num_args = 0; 
+  __glo_make_91range_91generator_srfi_121 = &c_731690; 
+  mclosure0(c_731623, (function_type)__lambda_12);c_731623.num_args = 3; 
+  __glo_make_91iota_srfi_121 = &c_731623; 
+  mclosure0(c_731578, (function_type)__lambda_8);c_731578.num_args = 0; 
+  __glo_make_91iota_91generator_srfi_121 = &c_731578; 
+  mclosure0(c_731531, (function_type)__lambda_3);c_731531.num_args = 0; 
+  __glo_generator_srfi_121 = &c_731531; 
+  mclosure0(c_731514, (function_type)__lambda_1);c_731514.num_args = 2; 
+  __glo_any_srfi_121 = &c_731514; 
 
-  mclosure0(clo_733913, c_srfi121_inlinable_lambdas); make_pair(pair_733912, find_or_add_symbol("c_srfi121_inlinable_lambdas"), &clo_733913);
-  make_cvar(cvar_733914, (object *)&__glo_lib_91init_117srfi121_srfi_121);make_pair(pair_733915, find_or_add_symbol("lib-init:srfi121"), &cvar_733914);
-  make_cvar(cvar_733916, (object *)&__glo_generator_91unfold_srfi_121);make_pair(pair_733917, find_or_add_symbol("generator-unfold"), &cvar_733916);
-  make_cvar(cvar_733918, (object *)&__glo_generator_91every_srfi_121);make_pair(pair_733919, find_or_add_symbol("generator-every"), &cvar_733918);
-  make_cvar(cvar_733920, (object *)&__glo_generator_91any_srfi_121);make_pair(pair_733921, find_or_add_symbol("generator-any"), &cvar_733920);
-  make_cvar(cvar_733922, (object *)&__glo_generator_91count_srfi_121);make_pair(pair_733923, find_or_add_symbol("generator-count"), &cvar_733922);
-  make_cvar(cvar_733924, (object *)&__glo_generator_91find_srfi_121);make_pair(pair_733925, find_or_add_symbol("generator-find"), &cvar_733924);
-  make_cvar(cvar_733926, (object *)&__glo_generator_91for_91each_srfi_121);make_pair(pair_733927, find_or_add_symbol("generator-for-each"), &cvar_733926);
-  make_cvar(cvar_733928, (object *)&__glo_generator_91fold_srfi_121);make_pair(pair_733929, find_or_add_symbol("generator-fold"), &cvar_733928);
-  make_cvar(cvar_733930, (object *)&__glo_generator_91_125string_srfi_121);make_pair(pair_733931, find_or_add_symbol("generator->string"), &cvar_733930);
-  make_cvar(cvar_733932, (object *)&__glo_generator_91_125vector_67_srfi_121);make_pair(pair_733933, find_or_add_symbol("generator->vector!"), &cvar_733932);
-  make_cvar(cvar_733934, (object *)&__glo_generator_91_125vector_srfi_121);make_pair(pair_733935, find_or_add_symbol("generator->vector"), &cvar_733934);
-  make_cvar(cvar_733936, (object *)&__glo_generator_91_125reverse_91list_srfi_121);make_pair(pair_733937, find_or_add_symbol("generator->reverse-list"), &cvar_733936);
-  make_cvar(cvar_733938, (object *)&__glo_generator_91_125list_srfi_121);make_pair(pair_733939, find_or_add_symbol("generator->list"), &cvar_733938);
-  make_cvar(cvar_733940, (object *)&__glo_gselect_srfi_121);make_pair(pair_733941, find_or_add_symbol("gselect"), &cvar_733940);
-  make_cvar(cvar_733942, (object *)&__glo_gindex_srfi_121);make_pair(pair_733943, find_or_add_symbol("gindex"), &cvar_733942);
-  make_cvar(cvar_733944, (object *)&__glo_gdelete_91neighbor_91dups_srfi_121);make_pair(pair_733945, find_or_add_symbol("gdelete-neighbor-dups"), &cvar_733944);
-  make_cvar(cvar_733946, (object *)&__glo_gdelete_srfi_121);make_pair(pair_733947, find_or_add_symbol("gdelete"), &cvar_733946);
-  make_cvar(cvar_733948, (object *)&__glo_gtake_91while_srfi_121);make_pair(pair_733949, find_or_add_symbol("gtake-while"), &cvar_733948);
-  make_cvar(cvar_733950, (object *)&__glo_gdrop_91while_srfi_121);make_pair(pair_733951, find_or_add_symbol("gdrop-while"), &cvar_733950);
-  make_cvar(cvar_733952, (object *)&__glo_gdrop_srfi_121);make_pair(pair_733953, find_or_add_symbol("gdrop"), &cvar_733952);
-  make_cvar(cvar_733954, (object *)&__glo_gtake_srfi_121);make_pair(pair_733955, find_or_add_symbol("gtake"), &cvar_733954);
-  make_cvar(cvar_733956, (object *)&__glo_gremove_srfi_121);make_pair(pair_733957, find_or_add_symbol("gremove"), &cvar_733956);
-  make_cvar(cvar_733958, (object *)&__glo_gfilter_srfi_121);make_pair(pair_733959, find_or_add_symbol("gfilter"), &cvar_733958);
-  make_cvar(cvar_733960, (object *)&__glo_gcombine_srfi_121);make_pair(pair_733961, find_or_add_symbol("gcombine"), &cvar_733960);
-  make_cvar(cvar_733962, (object *)&__glo_gappend_srfi_121);make_pair(pair_733963, find_or_add_symbol("gappend"), &cvar_733962);
-  make_cvar(cvar_733964, (object *)&__glo_gcons_85_srfi_121);make_pair(pair_733965, find_or_add_symbol("gcons*"), &cvar_733964);
-  make_cvar(cvar_733966, (object *)&__glo_make_91unfold_91generator_srfi_121);make_pair(pair_733967, find_or_add_symbol("make-unfold-generator"), &cvar_733966);
-  make_cvar(cvar_733968, (object *)&__glo_make_91for_91each_91generator_srfi_121);make_pair(pair_733969, find_or_add_symbol("make-for-each-generator"), &cvar_733968);
-  make_cvar(cvar_733970, (object *)&__glo_bytevector_91_125generator_srfi_121);make_pair(pair_733971, find_or_add_symbol("bytevector->generator"), &cvar_733970);
-  make_cvar(cvar_733972, (object *)&__glo_string_91_125generator_srfi_121);make_pair(pair_733973, find_or_add_symbol("string->generator"), &cvar_733972);
-  make_cvar(cvar_733974, (object *)&__glo_reverse_91vector_91_125generator_srfi_121);make_pair(pair_733975, find_or_add_symbol("reverse-vector->generator"), &cvar_733974);
-  make_cvar(cvar_733976, (object *)&__glo_vector_91_125generator_srfi_121);make_pair(pair_733977, find_or_add_symbol("vector->generator"), &cvar_733976);
-  make_cvar(cvar_733978, (object *)&__glo_list_91_125generator_srfi_121);make_pair(pair_733979, find_or_add_symbol("list->generator"), &cvar_733978);
-  make_cvar(cvar_733980, (object *)&__glo_make_91coroutine_91generator_srfi_121);make_pair(pair_733981, find_or_add_symbol("make-coroutine-generator"), &cvar_733980);
-  make_cvar(cvar_733982, (object *)&__glo_make_91infinite_91range_srfi_121);make_pair(pair_733983, find_or_add_symbol("make-infinite-range"), &cvar_733982);
-  make_cvar(cvar_733984, (object *)&__glo_make_91range_srfi_121);make_pair(pair_733985, find_or_add_symbol("make-range"), &cvar_733984);
-  make_cvar(cvar_733986, (object *)&__glo_make_91range_91generator_srfi_121);make_pair(pair_733987, find_or_add_symbol("make-range-generator"), &cvar_733986);
-  make_cvar(cvar_733988, (object *)&__glo_make_91iota_srfi_121);make_pair(pair_733989, find_or_add_symbol("make-iota"), &cvar_733988);
-  make_cvar(cvar_733990, (object *)&__glo_make_91iota_91generator_srfi_121);make_pair(pair_733991, find_or_add_symbol("make-iota-generator"), &cvar_733990);
-  make_cvar(cvar_733992, (object *)&__glo_generator_srfi_121);make_pair(pair_733993, find_or_add_symbol("generator"), &cvar_733992);
-  make_cvar(cvar_733994, (object *)&__glo_any_srfi_121);make_pair(pair_733995, find_or_add_symbol("any"), &cvar_733994);
-make_pair(c_734037, &pair_733912,Cyc_global_variables);
-make_pair(c_734036, &pair_733915, &c_734037);
-make_pair(c_734035, &pair_733917, &c_734036);
-make_pair(c_734034, &pair_733919, &c_734035);
-make_pair(c_734033, &pair_733921, &c_734034);
-make_pair(c_734032, &pair_733923, &c_734033);
-make_pair(c_734031, &pair_733925, &c_734032);
-make_pair(c_734030, &pair_733927, &c_734031);
-make_pair(c_734029, &pair_733929, &c_734030);
-make_pair(c_734028, &pair_733931, &c_734029);
-make_pair(c_734027, &pair_733933, &c_734028);
-make_pair(c_734026, &pair_733935, &c_734027);
-make_pair(c_734025, &pair_733937, &c_734026);
-make_pair(c_734024, &pair_733939, &c_734025);
-make_pair(c_734023, &pair_733941, &c_734024);
-make_pair(c_734022, &pair_733943, &c_734023);
-make_pair(c_734021, &pair_733945, &c_734022);
-make_pair(c_734020, &pair_733947, &c_734021);
-make_pair(c_734019, &pair_733949, &c_734020);
-make_pair(c_734018, &pair_733951, &c_734019);
-make_pair(c_734017, &pair_733953, &c_734018);
-make_pair(c_734016, &pair_733955, &c_734017);
-make_pair(c_734015, &pair_733957, &c_734016);
-make_pair(c_734014, &pair_733959, &c_734015);
-make_pair(c_734013, &pair_733961, &c_734014);
-make_pair(c_734012, &pair_733963, &c_734013);
-make_pair(c_734011, &pair_733965, &c_734012);
-make_pair(c_734010, &pair_733967, &c_734011);
-make_pair(c_734009, &pair_733969, &c_734010);
-make_pair(c_734008, &pair_733971, &c_734009);
-make_pair(c_734007, &pair_733973, &c_734008);
-make_pair(c_734006, &pair_733975, &c_734007);
-make_pair(c_734005, &pair_733977, &c_734006);
-make_pair(c_734004, &pair_733979, &c_734005);
-make_pair(c_734003, &pair_733981, &c_734004);
-make_pair(c_734002, &pair_733983, &c_734003);
-make_pair(c_734001, &pair_733985, &c_734002);
-make_pair(c_734000, &pair_733987, &c_734001);
-make_pair(c_733999, &pair_733989, &c_734000);
-make_pair(c_733998, &pair_733991, &c_733999);
-make_pair(c_733997, &pair_733993, &c_733998);
-make_pair(c_733996, &pair_733995, &c_733997);
-Cyc_global_variables = &c_733996;
+  mclosure0(clo_733917, c_srfi121_inlinable_lambdas); make_pair(pair_733916, find_or_add_symbol("c_srfi121_inlinable_lambdas"), &clo_733917);
+  make_cvar(cvar_733918, (object *)&__glo_lib_91init_117srfi121_srfi_121);make_pair(pair_733919, find_or_add_symbol("lib-init:srfi121"), &cvar_733918);
+  make_cvar(cvar_733920, (object *)&__glo_generator_91unfold_srfi_121);make_pair(pair_733921, find_or_add_symbol("generator-unfold"), &cvar_733920);
+  make_cvar(cvar_733922, (object *)&__glo_generator_91every_srfi_121);make_pair(pair_733923, find_or_add_symbol("generator-every"), &cvar_733922);
+  make_cvar(cvar_733924, (object *)&__glo_generator_91any_srfi_121);make_pair(pair_733925, find_or_add_symbol("generator-any"), &cvar_733924);
+  make_cvar(cvar_733926, (object *)&__glo_generator_91count_srfi_121);make_pair(pair_733927, find_or_add_symbol("generator-count"), &cvar_733926);
+  make_cvar(cvar_733928, (object *)&__glo_generator_91find_srfi_121);make_pair(pair_733929, find_or_add_symbol("generator-find"), &cvar_733928);
+  make_cvar(cvar_733930, (object *)&__glo_generator_91for_91each_srfi_121);make_pair(pair_733931, find_or_add_symbol("generator-for-each"), &cvar_733930);
+  make_cvar(cvar_733932, (object *)&__glo_generator_91fold_srfi_121);make_pair(pair_733933, find_or_add_symbol("generator-fold"), &cvar_733932);
+  make_cvar(cvar_733934, (object *)&__glo_generator_91_125string_srfi_121);make_pair(pair_733935, find_or_add_symbol("generator->string"), &cvar_733934);
+  make_cvar(cvar_733936, (object *)&__glo_generator_91_125vector_67_srfi_121);make_pair(pair_733937, find_or_add_symbol("generator->vector!"), &cvar_733936);
+  make_cvar(cvar_733938, (object *)&__glo_generator_91_125vector_srfi_121);make_pair(pair_733939, find_or_add_symbol("generator->vector"), &cvar_733938);
+  make_cvar(cvar_733940, (object *)&__glo_generator_91_125reverse_91list_srfi_121);make_pair(pair_733941, find_or_add_symbol("generator->reverse-list"), &cvar_733940);
+  make_cvar(cvar_733942, (object *)&__glo_generator_91_125list_srfi_121);make_pair(pair_733943, find_or_add_symbol("generator->list"), &cvar_733942);
+  make_cvar(cvar_733944, (object *)&__glo_gselect_srfi_121);make_pair(pair_733945, find_or_add_symbol("gselect"), &cvar_733944);
+  make_cvar(cvar_733946, (object *)&__glo_gindex_srfi_121);make_pair(pair_733947, find_or_add_symbol("gindex"), &cvar_733946);
+  make_cvar(cvar_733948, (object *)&__glo_gdelete_91neighbor_91dups_srfi_121);make_pair(pair_733949, find_or_add_symbol("gdelete-neighbor-dups"), &cvar_733948);
+  make_cvar(cvar_733950, (object *)&__glo_gdelete_srfi_121);make_pair(pair_733951, find_or_add_symbol("gdelete"), &cvar_733950);
+  make_cvar(cvar_733952, (object *)&__glo_gtake_91while_srfi_121);make_pair(pair_733953, find_or_add_symbol("gtake-while"), &cvar_733952);
+  make_cvar(cvar_733954, (object *)&__glo_gdrop_91while_srfi_121);make_pair(pair_733955, find_or_add_symbol("gdrop-while"), &cvar_733954);
+  make_cvar(cvar_733956, (object *)&__glo_gdrop_srfi_121);make_pair(pair_733957, find_or_add_symbol("gdrop"), &cvar_733956);
+  make_cvar(cvar_733958, (object *)&__glo_gtake_srfi_121);make_pair(pair_733959, find_or_add_symbol("gtake"), &cvar_733958);
+  make_cvar(cvar_733960, (object *)&__glo_gremove_srfi_121);make_pair(pair_733961, find_or_add_symbol("gremove"), &cvar_733960);
+  make_cvar(cvar_733962, (object *)&__glo_gfilter_srfi_121);make_pair(pair_733963, find_or_add_symbol("gfilter"), &cvar_733962);
+  make_cvar(cvar_733964, (object *)&__glo_gcombine_srfi_121);make_pair(pair_733965, find_or_add_symbol("gcombine"), &cvar_733964);
+  make_cvar(cvar_733966, (object *)&__glo_gappend_srfi_121);make_pair(pair_733967, find_or_add_symbol("gappend"), &cvar_733966);
+  make_cvar(cvar_733968, (object *)&__glo_gcons_85_srfi_121);make_pair(pair_733969, find_or_add_symbol("gcons*"), &cvar_733968);
+  make_cvar(cvar_733970, (object *)&__glo_make_91unfold_91generator_srfi_121);make_pair(pair_733971, find_or_add_symbol("make-unfold-generator"), &cvar_733970);
+  make_cvar(cvar_733972, (object *)&__glo_make_91for_91each_91generator_srfi_121);make_pair(pair_733973, find_or_add_symbol("make-for-each-generator"), &cvar_733972);
+  make_cvar(cvar_733974, (object *)&__glo_bytevector_91_125generator_srfi_121);make_pair(pair_733975, find_or_add_symbol("bytevector->generator"), &cvar_733974);
+  make_cvar(cvar_733976, (object *)&__glo_string_91_125generator_srfi_121);make_pair(pair_733977, find_or_add_symbol("string->generator"), &cvar_733976);
+  make_cvar(cvar_733978, (object *)&__glo_reverse_91vector_91_125generator_srfi_121);make_pair(pair_733979, find_or_add_symbol("reverse-vector->generator"), &cvar_733978);
+  make_cvar(cvar_733980, (object *)&__glo_vector_91_125generator_srfi_121);make_pair(pair_733981, find_or_add_symbol("vector->generator"), &cvar_733980);
+  make_cvar(cvar_733982, (object *)&__glo_list_91_125generator_srfi_121);make_pair(pair_733983, find_or_add_symbol("list->generator"), &cvar_733982);
+  make_cvar(cvar_733984, (object *)&__glo_make_91coroutine_91generator_srfi_121);make_pair(pair_733985, find_or_add_symbol("make-coroutine-generator"), &cvar_733984);
+  make_cvar(cvar_733986, (object *)&__glo_make_91infinite_91range_srfi_121);make_pair(pair_733987, find_or_add_symbol("make-infinite-range"), &cvar_733986);
+  make_cvar(cvar_733988, (object *)&__glo_make_91range_srfi_121);make_pair(pair_733989, find_or_add_symbol("make-range"), &cvar_733988);
+  make_cvar(cvar_733990, (object *)&__glo_make_91range_91generator_srfi_121);make_pair(pair_733991, find_or_add_symbol("make-range-generator"), &cvar_733990);
+  make_cvar(cvar_733992, (object *)&__glo_make_91iota_srfi_121);make_pair(pair_733993, find_or_add_symbol("make-iota"), &cvar_733992);
+  make_cvar(cvar_733994, (object *)&__glo_make_91iota_91generator_srfi_121);make_pair(pair_733995, find_or_add_symbol("make-iota-generator"), &cvar_733994);
+  make_cvar(cvar_733996, (object *)&__glo_generator_srfi_121);make_pair(pair_733997, find_or_add_symbol("generator"), &cvar_733996);
+  make_cvar(cvar_733998, (object *)&__glo_any_srfi_121);make_pair(pair_733999, find_or_add_symbol("any"), &cvar_733998);
+make_pair(c_734041, &pair_733916,Cyc_global_variables);
+make_pair(c_734040, &pair_733919, &c_734041);
+make_pair(c_734039, &pair_733921, &c_734040);
+make_pair(c_734038, &pair_733923, &c_734039);
+make_pair(c_734037, &pair_733925, &c_734038);
+make_pair(c_734036, &pair_733927, &c_734037);
+make_pair(c_734035, &pair_733929, &c_734036);
+make_pair(c_734034, &pair_733931, &c_734035);
+make_pair(c_734033, &pair_733933, &c_734034);
+make_pair(c_734032, &pair_733935, &c_734033);
+make_pair(c_734031, &pair_733937, &c_734032);
+make_pair(c_734030, &pair_733939, &c_734031);
+make_pair(c_734029, &pair_733941, &c_734030);
+make_pair(c_734028, &pair_733943, &c_734029);
+make_pair(c_734027, &pair_733945, &c_734028);
+make_pair(c_734026, &pair_733947, &c_734027);
+make_pair(c_734025, &pair_733949, &c_734026);
+make_pair(c_734024, &pair_733951, &c_734025);
+make_pair(c_734023, &pair_733953, &c_734024);
+make_pair(c_734022, &pair_733955, &c_734023);
+make_pair(c_734021, &pair_733957, &c_734022);
+make_pair(c_734020, &pair_733959, &c_734021);
+make_pair(c_734019, &pair_733961, &c_734020);
+make_pair(c_734018, &pair_733963, &c_734019);
+make_pair(c_734017, &pair_733965, &c_734018);
+make_pair(c_734016, &pair_733967, &c_734017);
+make_pair(c_734015, &pair_733969, &c_734016);
+make_pair(c_734014, &pair_733971, &c_734015);
+make_pair(c_734013, &pair_733973, &c_734014);
+make_pair(c_734012, &pair_733975, &c_734013);
+make_pair(c_734011, &pair_733977, &c_734012);
+make_pair(c_734010, &pair_733979, &c_734011);
+make_pair(c_734009, &pair_733981, &c_734010);
+make_pair(c_734008, &pair_733983, &c_734009);
+make_pair(c_734007, &pair_733985, &c_734008);
+make_pair(c_734006, &pair_733987, &c_734007);
+make_pair(c_734005, &pair_733989, &c_734006);
+make_pair(c_734004, &pair_733991, &c_734005);
+make_pair(c_734003, &pair_733993, &c_734004);
+make_pair(c_734002, &pair_733995, &c_734003);
+make_pair(c_734001, &pair_733997, &c_734002);
+make_pair(c_734000, &pair_733999, &c_734001);
+Cyc_global_variables = &c_734000;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi121_srfi_121)->fn)(data, 1, cont, cont);
 }
