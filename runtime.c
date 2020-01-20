@@ -462,6 +462,70 @@ void Cyc_set_globals_changed(gc_thread_data *thd)
 
 /* END Global table */
 
+/** new write barrier
+ * This function determines if a mutation introduces a pointer to a stack
+ * object from a heap object, and if so, either copies the object to the
+ * heap or lets the caller know a minor GC must be performed.
+ *
+ * @param data   Current thread's data object
+ * @param var    Object being mutated
+ * @param value  New value being associated to var
+ * @param run_gc OUT parameter, returns 1 if minor GC needs to be invoked
+ * @return Pointer to `var` object
+ */
+object share_object(gc_thread_data *data, object var, object value, int *run_gc) 
+{
+  char tmp;
+  int inttmp, *heap_grown = &inttmp;
+  gc_heap_root *heap = data->heap;
+
+  // Nothing needs to be done unless we are mutating
+  // a heap variable to point to a stack var.
+  if (!gc_is_stack_obj(&tmp, data, var) && gc_is_stack_obj(&tmp, data, value)) {
+    /* TODO: 
+    - need to transport value to heap
+      - if value is mutable or has children, may need to do minor GC to transport
+      - else can just copy it
+    return obj (copied) or boolean_f (need minor GC;
+    */
+
+    switch(type_of(value)) {
+      case string_tag:
+      case bytevector_tag:
+        if (immutable(value)) {
+          // Safe to transport
+          object hp = gc_alloc(heap, gc_allocated_bytes(value, NULL, NULL), value, data, heap_grown);
+          return hp;
+        }
+        // Need to GC if obj is mutable, EG: a string could be mutated so we can't
+        // have multiple copies of the object running around
+        return boolean_f;
+      case double_tag:
+      case port_tag:
+      case c_opaque_tag:
+      case complex_num_tag: {
+        object hp = gc_alloc(heap, gc_allocated_bytes(value, NULL, NULL), value, data, heap_grown);
+        return hp;
+      }
+      // Objs w/children force minor GC to guarantee everything is relocated:
+      case cvar_tag:
+      case closure1_tag:
+      case closureN_tag:
+      case pair_tag:
+      case vector_tag:
+        *run_gc = 1;
+        return value;
+      default:
+        // Other object types are not stack-allocated so should never get here
+        printf("Invalid shared object type %d\n", type_of(value));
+        exit(1);
+    }
+  }
+
+  return value;
+}
+
+
 /* Mutation table functions
  *
  * Keep track of mutations (EG: set-car!) so we can avoid having heap
@@ -1930,67 +1994,79 @@ object Cyc_set_cell(void *data, object l, object val)
   return l;
 }
 
-object Cyc_set_car(void *data, object l, object val)
-{
-  if (Cyc_is_pair(l) == boolean_f) {
-    Cyc_invalid_type_error(data, pair_tag, l);
-  }
-  Cyc_verify_mutable(data, l);
-  gc_mut_update((gc_thread_data *) data, car(l), val);
-  car(l) = val;
-  add_mutation(data, l, -1, val);
-  return l;
-}
+//object Cyc_set_car(void *data, object l, object val)
+//{
+//  if (Cyc_is_pair(l) == boolean_f) {
+//    Cyc_invalid_type_error(data, pair_tag, l);
+//  }
+//  Cyc_verify_mutable(data, l);
+//  gc_mut_update((gc_thread_data *) data, car(l), val);
+//  car(l) = val;
+//  add_mutation(data, l, -1, val);
+//  return l;
+//}
+//
+//object Cyc_set_cdr(void *data, object l, object val)
+//{
+//  if (Cyc_is_pair(l) == boolean_f) {
+//    Cyc_invalid_type_error(data, pair_tag, l);
+//  }
+//  Cyc_verify_mutable(data, l);
+//  gc_mut_update((gc_thread_data *) data, cdr(l), val);
+//  cdr(l) = val;
+//  add_mutation(data, l, -1, val);
+//  return l;
+//}
+//
+//object Cyc_vector_set(void *data, object v, object k, object obj)
+//{
+//  int idx;
+//  Cyc_check_vec(data, v);
+//  Cyc_check_fixnum(data, k);
+//  Cyc_verify_mutable(data, v);
+//  idx = unbox_number(k);
+//
+//  if (idx < 0 || idx >= ((vector) v)->num_elements) {
+//    Cyc_rt_raise2(data, "vector-set! - invalid index", k);
+//  }
+//
+//  gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
+//
+//  ((vector) v)->elements[idx] = obj;
+//  add_mutation(data, v, idx, obj);
+//  return v;
+//}
+//
+//object Cyc_vector_set_unsafe(void *data, object v, object k, object obj)
+//{
+//  int idx = unbox_number(k);
+//  gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
+//  ((vector) v)->elements[idx] = obj;
+//  add_mutation(data, v, idx, obj);
+//  return v;
+//}
 
-object Cyc_set_cdr(void *data, object l, object val)
-{
-  if (Cyc_is_pair(l) == boolean_f) {
-    Cyc_invalid_type_error(data, pair_tag, l);
-  }
-  Cyc_verify_mutable(data, l);
-  gc_mut_update((gc_thread_data *) data, cdr(l), val);
-  cdr(l) = val;
-  add_mutation(data, l, -1, val);
-  return l;
-}
-
-object Cyc_vector_set(void *data, object v, object k, object obj)
-{
-  int idx;
-  Cyc_check_vec(data, v);
-  Cyc_check_fixnum(data, k);
-  Cyc_verify_mutable(data, v);
-  idx = unbox_number(k);
-
-  if (idx < 0 || idx >= ((vector) v)->num_elements) {
-    Cyc_rt_raise2(data, "vector-set! - invalid index", k);
-  }
-
-  gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
-
-  ((vector) v)->elements[idx] = obj;
-  add_mutation(data, v, idx, obj);
-  return v;
-}
-
-object Cyc_vector_set_unsafe(void *data, object v, object k, object obj)
-{
-  int idx = unbox_number(k);
-  gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
-  ((vector) v)->elements[idx] = obj;
-  add_mutation(data, v, idx, obj);
-  return v;
-}
 object Cyc_set_car2(void *data, object cont, object l, object val)
 {
   if (Cyc_is_pair(l) == boolean_f) {
     Cyc_invalid_type_error(data, pair_tag, l);
   }
   Cyc_verify_mutable(data, l);
+
+  // Alternate write barrier
+  int do_gc = 0;
+  val = share_object(data, l, val, &do_gc);
+
   gc_mut_update((gc_thread_data *) data, car(l), val);
   car(l) = val;
-  add_mutation(data, l, -1, val);
-  _return_closcall1(data, cont, l);
+  add_mutation(data, l, -1, val); // Ensure val is transported
+  if (do_gc) {
+    object buf[1]; buf[0] = l;
+    GC(data, cont, buf, 1);
+    return NULL;
+  } else {
+    _return_closcall1(data, cont, l);
+  }
 }
 
 object Cyc_set_cdr2(void *data, object cont, object l, object val)
@@ -1999,10 +2075,21 @@ object Cyc_set_cdr2(void *data, object cont, object l, object val)
     Cyc_invalid_type_error(data, pair_tag, l);
   }
   Cyc_verify_mutable(data, l);
+
+  // Alternate write barrier
+  int do_gc = 0;
+  val = share_object(data, l, val, &do_gc);
+
   gc_mut_update((gc_thread_data *) data, cdr(l), val);
   cdr(l) = val;
-  add_mutation(data, l, -1, val);
-  _return_closcall1(data, cont, l);
+  add_mutation(data, l, -1, val); // Ensure val is transported
+  if (do_gc) {
+    object buf[1]; buf[0] = l;
+    GC(data, cont, buf, 1);
+    return NULL;
+  } else {
+    _return_closcall1(data, cont, l);
+  }
 }
 
 object Cyc_vector_set2(void *data, object cont, object v, object k, object obj)
@@ -2017,20 +2104,37 @@ object Cyc_vector_set2(void *data, object cont, object v, object k, object obj)
     Cyc_rt_raise2(data, "vector-set! - invalid index", k);
   }
 
+  int do_gc = 0;
+  obj = share_object(data, v, obj, &do_gc);
+
   gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
 
   ((vector) v)->elements[idx] = obj;
   add_mutation(data, v, idx, obj);
-  _return_closcall1(data, cont, v);
+  if (do_gc) {
+    object buf[1]; buf[0] = v;
+    GC(data, cont, buf, 1);
+    return NULL;
+  } else {
+    _return_closcall1(data, cont, v);
+  }
 }
 
 object Cyc_vector_set_unsafe2(void *data, object cont, object v, object k, object obj)
 {
   int idx = unbox_number(k);
+  int do_gc = 0;
+  obj = share_object(data, v, obj, &do_gc);
   gc_mut_update((gc_thread_data *) data, ((vector) v)->elements[idx], obj);
   ((vector) v)->elements[idx] = obj;
   add_mutation(data, v, idx, obj);
-  _return_closcall1(data, cont, v);
+  if (do_gc) {
+    object buf[1]; buf[0] = v;
+    GC(data, cont, buf, 1);
+    return NULL;
+  } else {
+    _return_closcall1(data, cont, v);
+  }
 }
 
 object Cyc_vector_ref(void *data, object v, object k)
@@ -4727,14 +4831,18 @@ void _null_127(void *data, object cont, object args)
 
 void _set_91car_67(void *data, object cont, object args)
 {
+  //Cyc_check_num_args(data, "set-car!", 2, args);
+  //return_closcall1(data, cont, Cyc_set_car(data, car(args), cadr(args)));
   Cyc_check_num_args(data, "set-car!", 2, args);
-  return_closcall1(data, cont, Cyc_set_car(data, car(args), cadr(args)));
+  Cyc_set_car2(data, cont, car(args), cadr(args));
 }
 
 void _set_91cdr_67(void *data, object cont, object args)
 {
+  //Cyc_check_num_args(data, "set-cdr!", 2, args);
+  //return_closcall1(data, cont, Cyc_set_cdr(data, car(args), cadr(args)));
   Cyc_check_num_args(data, "set-cdr!", 2, args);
-  return_closcall1(data, cont, Cyc_set_cdr(data, car(args), cadr(args)));
+  Cyc_set_cdr2(data, cont, car(args), cadr(args));
 }
 
 void _Cyc_91has_91cycle_127(void *data, object cont, object args)
@@ -5154,8 +5262,9 @@ void _vector_91set_67(void *data, object cont, object args)
 {
   Cyc_check_num_args(data, "vector-set!", 3, args);
   {
-    object ref = Cyc_vector_set(data, car(args), cadr(args), caddr(args));
-    return_closcall1(data, cont, ref);
+    //object ref = Cyc_vector_set(data, car(args), cadr(args), caddr(args));
+    //return_closcall1(data, cont, ref);
+    Cyc_vector_set2(data, cont, car(args), cadr(args), caddr(args));
 }}
 
 void _list_91_125vector(void *data, object cont, object args)
