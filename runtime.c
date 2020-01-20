@@ -99,6 +99,32 @@ void Cyc_check_bounds(void *data, const char *label, int len, int index)
 
 /* END error checking */
 
+#ifdef CYC_HIGH_RES_TIMERS
+/* High resolution timers */
+#include <sys/time.h>
+long long hrt_get_current() 
+{
+  struct timeval tv;
+  gettimeofday(&tv, NULL); /* TODO: longer-term consider using clock_gettime instead */
+  long long jiffy = (tv.tv_sec)*1000000LL + tv.tv_usec;
+  return jiffy;
+}
+
+long long hrt_cmp_current(long long tstamp) 
+{
+  long long now = hrt_get_current();
+  return (now - tstamp);
+}
+
+void hrt_log_delta(long long tstamp) 
+{
+  long long delta = hrt_cmp_current(tstamp);
+  fprintf(stdout, "[%llu]\n", delta);
+}
+
+/* END High resolution timers */
+#endif
+
 /* These macros are hardcoded here to support functions in this module. */
 #define closcall1(td, clo, a1) \
 if (obj_is_not_closure(clo)) { \
@@ -482,28 +508,24 @@ object share_object(gc_thread_data *data, object var, object value, int *run_gc)
   // Nothing needs to be done unless we are mutating
   // a heap variable to point to a stack var.
   if (!gc_is_stack_obj(&tmp, data, var) && gc_is_stack_obj(&tmp, data, value)) {
-    /* TODO: 
-    - need to transport value to heap
-      - if value is mutable or has children, may need to do minor GC to transport
-      - else can just copy it
-    return obj (copied) or boolean_f (need minor GC;
-    */
-
+    // Must move `value` to the heap to allow use by other threads
     switch(type_of(value)) {
       case string_tag:
       case bytevector_tag:
         if (immutable(value)) {
-          // Safe to transport
+          // Safe to transport now
           object hp = gc_alloc(heap, gc_allocated_bytes(value, NULL, NULL), value, data, heap_grown);
           return hp;
         }
         // Need to GC if obj is mutable, EG: a string could be mutated so we can't
         // have multiple copies of the object running around
-        return boolean_f;
+        *run_gc = 1;
+        return value;
       case double_tag:
       case port_tag:
       case c_opaque_tag:
       case complex_num_tag: {
+        // These objects are immutable, transport now
         object hp = gc_alloc(heap, gc_allocated_bytes(value, NULL, NULL), value, data, heap_grown);
         return hp;
       }
@@ -5951,9 +5973,15 @@ void GC(void *data, closure cont, object * args, int num_args)
   char tmp;
   object low_limit = &tmp;      // This is one end of the stack...
   object high_limit = ((gc_thread_data *) data)->stack_start;
+#ifdef CYC_HIGH_RES_TIMERS
+long long tstamp = hrt_get_current();
+#endif
   int alloci = gc_minor(data, low_limit, high_limit, cont, args, num_args);
   // Cooperate with the collector thread
   gc_mut_cooperate((gc_thread_data *) data, alloci);
+#ifdef CYC_HIGH_RES_TIMERS
+hrt_log_delta(tstamp);
+#endif
   // Let it all go, Neo...
   longjmp(*(((gc_thread_data *) data)->jmp_start), 1);
 }
