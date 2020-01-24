@@ -128,127 +128,127 @@ static void __lambda_1(void *data, int argc, closure _,object k_7315) {
   Cyc_st_add(data, "scheme/cyclone/common.sld:lib-init:schemecyclonecommon");
 
 closureN_type c_7333;
-object e_7369 [1];
+object e_7373 [1];
 c_7333.hdr.mark = gc_color_red;
  c_7333.hdr.grayed = 0;
 c_7333.tag = closureN_tag;
  c_7333.fn = (function_type)__lambda_2;
 c_7333.num_args = 1;
 c_7333.num_elements = 1;
-c_7333.elements = (object *)e_7369;
+c_7333.elements = (object *)e_7373;
 c_7333.elements[0] = k_7315;
 
 
-make_utf8_string_with_len(c_7373, " ", 1, 1);
+make_utf8_string_with_len(c_7377, " ", 1, 1);
 
-make_utf8_string_with_len(c_7374, "", 0, 0);
+make_utf8_string_with_len(c_7378, "", 0, 0);
 
-object c_7372 = Cyc_string_append(data,(closure)&c_7333,4,__glo__85version_91number_85_scheme_cyclone_common, &c_7373, __glo__85version_91name_85_scheme_cyclone_common, &c_7374);
-return_closcall1(data,(closure)&c_7333,  c_7372);; 
+object c_7376 = Cyc_string_append(data,(closure)&c_7333,4,__glo__85version_91number_85_scheme_cyclone_common, &c_7377, __glo__85version_91name_85_scheme_cyclone_common, &c_7378);
+return_closcall1(data,(closure)&c_7333,  c_7376);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7323, object r_7322) {
   
 closureN_type c_7335;
-object e_7366 [1];
+object e_7369 [1];
 c_7335.hdr.mark = gc_color_red;
  c_7335.hdr.grayed = 0;
 c_7335.tag = closureN_tag;
  c_7335.fn = (function_type)__lambda_3;
 c_7335.num_args = 1;
 c_7335.num_elements = 1;
-c_7335.elements = (object *)e_7366;
+c_7335.elements = (object *)e_7369;
 c_7335.elements[0] = ((closureN)self_7323)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_7335,__lambda_3,  global_set(__glo__85version_85_scheme_cyclone_common, r_7322));; 
+object c_7372 = global_set2(data,(closure)&c_7335,__glo__85version_85_scheme_cyclone_common, r_7322);
+return_closcall1(data,(closure)&c_7335,  c_7372);; 
 }
 
 static void __lambda_3(void *data, int argc, object self_7324, object r_7317) {
   
 closureN_type c_7337;
-object e_7360 [1];
+object e_7363 [1];
 c_7337.hdr.mark = gc_color_red;
  c_7337.hdr.grayed = 0;
 c_7337.tag = closureN_tag;
  c_7337.fn = (function_type)__lambda_4;
 c_7337.num_args = 1;
 c_7337.num_elements = 1;
-c_7337.elements = (object *)e_7360;
+c_7337.elements = (object *)e_7363;
 c_7337.elements[0] = ((closureN)self_7324)->elements[0];
 
 
-make_utf8_string_with_len(c_7364, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2020 Justin Ethier\n       @@     #@     Version ", 293, 293);
+make_utf8_string_with_len(c_7367, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2020 Justin Ethier\n       @@     #@     Version ", 293, 293);
 
-make_utf8_string_with_len(c_7365, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n", 90, 90);
+make_utf8_string_with_len(c_7368, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n", 90, 90);
 
-object c_7363 = Cyc_string_append(data,(closure)&c_7337,3,&c_7364, __glo__85version_85_scheme_cyclone_common, &c_7365);
-return_closcall1(data,(closure)&c_7337,  c_7363);; 
+object c_7366 = Cyc_string_append(data,(closure)&c_7337,3,&c_7367, __glo__85version_85_scheme_cyclone_common, &c_7368);
+return_closcall1(data,(closure)&c_7337,  c_7366);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7325, object r_7321) {
   
 closureN_type c_7339;
-object e_7357 [1];
+object e_7359 [1];
 c_7339.hdr.mark = gc_color_red;
  c_7339.hdr.grayed = 0;
 c_7339.tag = closureN_tag;
  c_7339.fn = (function_type)__lambda_5;
 c_7339.num_args = 1;
 c_7339.num_elements = 1;
-c_7339.elements = (object *)e_7357;
+c_7339.elements = (object *)e_7359;
 c_7339.elements[0] = ((closureN)self_7325)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_7339,__lambda_5,  global_set(__glo__85version_91banner_85_scheme_cyclone_common, r_7321));; 
+object c_7362 = global_set2(data,(closure)&c_7339,__glo__85version_91banner_85_scheme_cyclone_common, r_7321);
+return_closcall1(data,(closure)&c_7339,  c_7362);; 
 }
 
 static void __lambda_5(void *data, int argc, object self_7326, object r_7318) {
   
 closureN_type c_7341;
-object e_7354 [1];
+object e_7355 [1];
 c_7341.hdr.mark = gc_color_red;
  c_7341.hdr.grayed = 0;
 c_7341.tag = closureN_tag;
  c_7341.fn = (function_type)__lambda_6;
 c_7341.num_args = 1;
 c_7341.num_elements = 1;
-c_7341.elements = (object *)e_7354;
+c_7341.elements = (object *)e_7355;
 c_7341.elements[0] = ((closureN)self_7326)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_7341,__lambda_6,  global_set(__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common));; 
+object c_7358 = global_set2(data,(closure)&c_7341,__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
+return_closcall1(data,(closure)&c_7341,  c_7358);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7327, object r_7319) {
   
 closureN_type c_7343;
-object e_7348 [1];
+object e_7349 [1];
 c_7343.hdr.mark = gc_color_red;
  c_7343.hdr.grayed = 0;
 c_7343.tag = closureN_tag;
  c_7343.fn = (function_type)__lambda_7;
 c_7343.num_args = 1;
 c_7343.num_elements = 1;
-c_7343.elements = (object *)e_7348;
+c_7343.elements = (object *)e_7349;
 c_7343.elements[0] = ((closureN)self_7327)->elements[0];
 
 
-make_utf8_string_with_len(c_7352, "/**\n ** This file was automatically generated by the Cyclone scheme compiler\n ** http://justinethier.github.io/cyclone/\n **\n ** (c) 2014-2020 Justin Ethier\n ** Version ", 168, 168);
+make_utf8_string_with_len(c_7353, "/**\n ** This file was automatically generated by the Cyclone scheme compiler\n ** http://justinethier.github.io/cyclone/\n **\n ** (c) 2014-2020 Justin Ethier\n ** Version ", 168, 168);
 
-make_utf8_string_with_len(c_7353, "\n **\n **/\n", 10, 10);
+make_utf8_string_with_len(c_7354, "\n **\n **/\n", 10, 10);
 
-object c_7351 = Cyc_string_append(data,(closure)&c_7343,3,&c_7352, __glo__85version_85_scheme_cyclone_common, &c_7353);
-return_closcall1(data,(closure)&c_7343,  c_7351);; 
+object c_7352 = Cyc_string_append(data,(closure)&c_7343,3,&c_7353, __glo__85version_85_scheme_cyclone_common, &c_7354);
+return_closcall1(data,(closure)&c_7343,  c_7352);; 
 }
 
 static void __lambda_7(void *data, int argc, object self_7328, object r_7320) {
   
-
-return_closcall1(data,  ((closureN)self_7328)->elements[0],  global_set(__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320));; 
+object c_7348 = global_set2(data,  ((closureN)self_7328)->elements[0],__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320);
+return_closcall1(data,  ((closureN)self_7328)->elements[0],  c_7348);; 
 }
 
 void c_schemecyclonecommon_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
@@ -275,23 +275,23 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_utf8_string_with_len(c_7329, "0.12", 4, 4); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7329; 
 
-  mclosure0(clo_7376, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7375, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7376);
-  make_cvar(cvar_7377, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7378, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7377);
-  make_cvar(cvar_7379, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_pair(pair_7380, find_or_add_symbol("*c-file-header-comment*"), &cvar_7379);
-  make_cvar(cvar_7381, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_pair(pair_7382, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7381);
-  make_cvar(cvar_7383, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_pair(pair_7384, find_or_add_symbol("*version-banner*"), &cvar_7383);
-  make_cvar(cvar_7385, (object *)&__glo__85version_85_scheme_cyclone_common);make_pair(pair_7386, find_or_add_symbol("*version*"), &cvar_7385);
-  make_cvar(cvar_7387, (object *)&__glo__85version_91name_85_scheme_cyclone_common);make_pair(pair_7388, find_or_add_symbol("*version-name*"), &cvar_7387);
-  make_cvar(cvar_7389, (object *)&__glo__85version_91number_85_scheme_cyclone_common);make_pair(pair_7390, find_or_add_symbol("*version-number*"), &cvar_7389);
-make_pair(c_7398, &pair_7375,Cyc_global_variables);
-make_pair(c_7397, &pair_7378, &c_7398);
-make_pair(c_7396, &pair_7380, &c_7397);
-make_pair(c_7395, &pair_7382, &c_7396);
-make_pair(c_7394, &pair_7384, &c_7395);
-make_pair(c_7393, &pair_7386, &c_7394);
-make_pair(c_7392, &pair_7388, &c_7393);
-make_pair(c_7391, &pair_7390, &c_7392);
-Cyc_global_variables = &c_7391;
+  mclosure0(clo_7380, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7379, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7380);
+  make_cvar(cvar_7381, (object *)&__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);make_pair(pair_7382, find_or_add_symbol("lib-init:schemecyclonecommon"), &cvar_7381);
+  make_cvar(cvar_7383, (object *)&__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);make_pair(pair_7384, find_or_add_symbol("*c-file-header-comment*"), &cvar_7383);
+  make_cvar(cvar_7385, (object *)&__glo__85Cyc_91version_91banner_85_scheme_cyclone_common);make_pair(pair_7386, find_or_add_symbol("*Cyc-version-banner*"), &cvar_7385);
+  make_cvar(cvar_7387, (object *)&__glo__85version_91banner_85_scheme_cyclone_common);make_pair(pair_7388, find_or_add_symbol("*version-banner*"), &cvar_7387);
+  make_cvar(cvar_7389, (object *)&__glo__85version_85_scheme_cyclone_common);make_pair(pair_7390, find_or_add_symbol("*version*"), &cvar_7389);
+  make_cvar(cvar_7391, (object *)&__glo__85version_91name_85_scheme_cyclone_common);make_pair(pair_7392, find_or_add_symbol("*version-name*"), &cvar_7391);
+  make_cvar(cvar_7393, (object *)&__glo__85version_91number_85_scheme_cyclone_common);make_pair(pair_7394, find_or_add_symbol("*version-number*"), &cvar_7393);
+make_pair(c_73102, &pair_7379,Cyc_global_variables);
+make_pair(c_73101, &pair_7382, &c_73102);
+make_pair(c_73100, &pair_7384, &c_73101);
+make_pair(c_7399, &pair_7386, &c_73100);
+make_pair(c_7398, &pair_7388, &c_7399);
+make_pair(c_7397, &pair_7390, &c_7398);
+make_pair(c_7396, &pair_7392, &c_7397);
+make_pair(c_7395, &pair_7394, &c_7396);
+Cyc_global_variables = &c_7395;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common)->fn)(data, 1, cont, cont);
 }

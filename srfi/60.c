@@ -593,169 +593,169 @@ static void __lambda_112(void *data, int argc, closure _,object k_73471) {
   Cyc_st_add(data, "srfi/60.sld:lib-init:srfi60");
 
 closureN_type c_731353;
-object e_731398 [1];
+object e_731407 [1];
 c_731353.hdr.mark = gc_color_red;
  c_731353.hdr.grayed = 0;
 c_731353.tag = closureN_tag;
  c_731353.fn = (function_type)__lambda_113;
 c_731353.num_args = 1;
 c_731353.num_elements = 1;
-c_731353.elements = (object *)e_731398;
+c_731353.elements = (object *)e_731407;
 c_731353.elements[0] = k_73471;
 
 
-
-return_direct_with_clo1(data,(closure)&c_731353,__lambda_113,  global_set(__glo_bitwise_91and_srfi_60, __glo_logand_srfi_60));; 
+object c_731410 = global_set2(data,(closure)&c_731353,__glo_bitwise_91and_srfi_60, __glo_logand_srfi_60);
+return_closcall1(data,(closure)&c_731353,  c_731410);; 
 }
 
 static void __lambda_113(void *data, int argc, object self_73586, object r_73473) {
   
 closureN_type c_731355;
-object e_731395 [1];
+object e_731403 [1];
 c_731355.hdr.mark = gc_color_red;
  c_731355.hdr.grayed = 0;
 c_731355.tag = closureN_tag;
  c_731355.fn = (function_type)__lambda_114;
 c_731355.num_args = 1;
 c_731355.num_elements = 1;
-c_731355.elements = (object *)e_731395;
+c_731355.elements = (object *)e_731403;
 c_731355.elements[0] = ((closureN)self_73586)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731355,__lambda_114,  global_set(__glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60));; 
+object c_731406 = global_set2(data,(closure)&c_731355,__glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60);
+return_closcall1(data,(closure)&c_731355,  c_731406);; 
 }
 
 static void __lambda_114(void *data, int argc, object self_73587, object r_73474) {
   
 closureN_type c_731357;
-object e_731392 [1];
+object e_731399 [1];
 c_731357.hdr.mark = gc_color_red;
  c_731357.hdr.grayed = 0;
 c_731357.tag = closureN_tag;
  c_731357.fn = (function_type)__lambda_115;
 c_731357.num_args = 1;
 c_731357.num_elements = 1;
-c_731357.elements = (object *)e_731392;
+c_731357.elements = (object *)e_731399;
 c_731357.elements[0] = ((closureN)self_73587)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731357,__lambda_115,  global_set(__glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60));; 
+object c_731402 = global_set2(data,(closure)&c_731357,__glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60);
+return_closcall1(data,(closure)&c_731357,  c_731402);; 
 }
 
 static void __lambda_115(void *data, int argc, object self_73588, object r_73475) {
   
 closureN_type c_731359;
-object e_731389 [1];
+object e_731395 [1];
 c_731359.hdr.mark = gc_color_red;
  c_731359.hdr.grayed = 0;
 c_731359.tag = closureN_tag;
  c_731359.fn = (function_type)__lambda_116;
 c_731359.num_args = 1;
 c_731359.num_elements = 1;
-c_731359.elements = (object *)e_731389;
+c_731359.elements = (object *)e_731395;
 c_731359.elements[0] = ((closureN)self_73588)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731359,__lambda_116,  global_set(__glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60));; 
+object c_731398 = global_set2(data,(closure)&c_731359,__glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60);
+return_closcall1(data,(closure)&c_731359,  c_731398);; 
 }
 
 static void __lambda_116(void *data, int argc, object self_73589, object r_73476) {
   
 closureN_type c_731361;
-object e_731386 [1];
+object e_731391 [1];
 c_731361.hdr.mark = gc_color_red;
  c_731361.hdr.grayed = 0;
 c_731361.tag = closureN_tag;
  c_731361.fn = (function_type)__lambda_117;
 c_731361.num_args = 1;
 c_731361.num_elements = 1;
-c_731361.elements = (object *)e_731386;
+c_731361.elements = (object *)e_731391;
 c_731361.elements[0] = ((closureN)self_73589)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731361,__lambda_117,  global_set(__glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60));; 
+object c_731394 = global_set2(data,(closure)&c_731361,__glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60);
+return_closcall1(data,(closure)&c_731361,  c_731394);; 
 }
 
 static void __lambda_117(void *data, int argc, object self_73590, object r_73477) {
   
 closureN_type c_731363;
-object e_731383 [1];
+object e_731387 [1];
 c_731363.hdr.mark = gc_color_red;
  c_731363.hdr.grayed = 0;
 c_731363.tag = closureN_tag;
  c_731363.fn = (function_type)__lambda_118;
 c_731363.num_args = 1;
 c_731363.num_elements = 1;
-c_731363.elements = (object *)e_731383;
+c_731363.elements = (object *)e_731387;
 c_731363.elements[0] = ((closureN)self_73590)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731363,__lambda_118,  global_set(__glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60));; 
+object c_731390 = global_set2(data,(closure)&c_731363,__glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60);
+return_closcall1(data,(closure)&c_731363,  c_731390);; 
 }
 
 static void __lambda_118(void *data, int argc, object self_73591, object r_73478) {
   
 closureN_type c_731365;
-object e_731380 [1];
+object e_731383 [1];
 c_731365.hdr.mark = gc_color_red;
  c_731365.hdr.grayed = 0;
 c_731365.tag = closureN_tag;
  c_731365.fn = (function_type)__lambda_119;
 c_731365.num_args = 1;
 c_731365.num_elements = 1;
-c_731365.elements = (object *)e_731380;
+c_731365.elements = (object *)e_731383;
 c_731365.elements[0] = ((closureN)self_73591)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731365,__lambda_119,  global_set(__glo_bit_91count_srfi_60, __glo_logcount_srfi_60));; 
+object c_731386 = global_set2(data,(closure)&c_731365,__glo_bit_91count_srfi_60, __glo_logcount_srfi_60);
+return_closcall1(data,(closure)&c_731365,  c_731386);; 
 }
 
 static void __lambda_119(void *data, int argc, object self_73592, object r_73479) {
   
 closureN_type c_731367;
-object e_731377 [1];
+object e_731379 [1];
 c_731367.hdr.mark = gc_color_red;
  c_731367.hdr.grayed = 0;
 c_731367.tag = closureN_tag;
  c_731367.fn = (function_type)__lambda_120;
 c_731367.num_args = 1;
 c_731367.num_elements = 1;
-c_731367.elements = (object *)e_731377;
+c_731367.elements = (object *)e_731379;
 c_731367.elements[0] = ((closureN)self_73592)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731367,__lambda_120,  global_set(__glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60));; 
+object c_731382 = global_set2(data,(closure)&c_731367,__glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60);
+return_closcall1(data,(closure)&c_731367,  c_731382);; 
 }
 
 static void __lambda_120(void *data, int argc, object self_73593, object r_73480) {
   
 closureN_type c_731369;
-object e_731374 [1];
+object e_731375 [1];
 c_731369.hdr.mark = gc_color_red;
  c_731369.hdr.grayed = 0;
 c_731369.tag = closureN_tag;
  c_731369.fn = (function_type)__lambda_121;
 c_731369.num_args = 1;
 c_731369.num_elements = 1;
-c_731369.elements = (object *)e_731374;
+c_731369.elements = (object *)e_731375;
 c_731369.elements[0] = ((closureN)self_73593)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_731369,__lambda_121,  global_set(__glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60));; 
+object c_731378 = global_set2(data,(closure)&c_731369,__glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60);
+return_closcall1(data,(closure)&c_731369,  c_731378);; 
 }
 
 static void __lambda_121(void *data, int argc, object self_73594, object r_73481) {
   
-
-return_closcall1(data,  ((closureN)self_73594)->elements[0],  global_set(__glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60));; 
+object c_731374 = global_set2(data,  ((closureN)self_73594)->elements[0],__glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60);
+return_closcall1(data,  ((closureN)self_73594)->elements[0],  c_731374);; 
 }
 
 static void __lambda_111(void *data, int argc, closure _,object k_73468, object bools_73173_73263_raw, ...) {
@@ -3365,79 +3365,79 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_bitwise_91ior_srfi_60 = boolean_f; 
   __glo_bitwise_91and_srfi_60 = boolean_f; 
 
-  mclosure0(clo_731402, c_srfi60_inlinable_lambdas); make_pair(pair_731401, find_or_add_symbol("c_srfi60_inlinable_lambdas"), &clo_731402);
-  make_cvar(cvar_731403, (object *)&__glo_lib_91init_117srfi60_srfi_60);make_pair(pair_731404, find_or_add_symbol("lib-init:srfi60"), &cvar_731403);
-  make_cvar(cvar_731405, (object *)&__glo_booleans_91_125integer_srfi_60);make_pair(pair_731406, find_or_add_symbol("booleans->integer"), &cvar_731405);
-  make_cvar(cvar_731407, (object *)&__glo_list_91_125integer_srfi_60);make_pair(pair_731408, find_or_add_symbol("list->integer"), &cvar_731407);
-  make_cvar(cvar_731409, (object *)&__glo_integer_91_125list_srfi_60);make_pair(pair_731410, find_or_add_symbol("integer->list"), &cvar_731409);
-  make_cvar(cvar_731411, (object *)&__glo_reverse_91bit_91field_srfi_60);make_pair(pair_731412, find_or_add_symbol("reverse-bit-field"), &cvar_731411);
-  make_cvar(cvar_731413, (object *)&__glo_bit_91reverse_srfi_60);make_pair(pair_731414, find_or_add_symbol("bit-reverse"), &cvar_731413);
-  make_cvar(cvar_731415, (object *)&__glo_rotate_91bit_91field_srfi_60);make_pair(pair_731416, find_or_add_symbol("rotate-bit-field"), &cvar_731415);
-  make_cvar(cvar_731417, (object *)&__glo_arithmetic_91shift_srfi_60);make_pair(pair_731418, find_or_add_symbol("arithmetic-shift"), &cvar_731417);
-  make_cvar(cvar_731419, (object *)&__glo_ash_srfi_60);make_pair(pair_731420, find_or_add_symbol("ash"), &cvar_731419);
-  make_cvar(cvar_731421, (object *)&__glo_copy_91bit_91field_srfi_60);make_pair(pair_731422, find_or_add_symbol("copy-bit-field"), &cvar_731421);
-  make_cvar(cvar_731423, (object *)&__glo_bit_91field_srfi_60);make_pair(pair_731424, find_or_add_symbol("bit-field"), &cvar_731423);
-  make_cvar(cvar_731425, (object *)&__glo_copy_91bit_srfi_60);make_pair(pair_731426, find_or_add_symbol("copy-bit"), &cvar_731425);
-  make_cvar(cvar_731427, (object *)&__glo_bit_91set_127_srfi_60);make_pair(pair_731428, find_or_add_symbol("bit-set?"), &cvar_731427);
-  make_cvar(cvar_731429, (object *)&__glo_logbit_127_srfi_60);make_pair(pair_731430, find_or_add_symbol("logbit?"), &cvar_731429);
-  make_cvar(cvar_731431, (object *)&__glo_first_91set_91bit_srfi_60);make_pair(pair_731432, find_or_add_symbol("first-set-bit"), &cvar_731431);
-  make_cvar(cvar_731433, (object *)&__glo_log2_91binary_91factors_srfi_60);make_pair(pair_731434, find_or_add_symbol("log2-binary-factors"), &cvar_731433);
-  make_cvar(cvar_731435, (object *)&__glo_integer_91length_srfi_60);make_pair(pair_731436, find_or_add_symbol("integer-length"), &cvar_731435);
-  make_cvar(cvar_731437, (object *)&__glo_bit_91count_srfi_60);make_pair(pair_731438, find_or_add_symbol("bit-count"), &cvar_731437);
-  make_cvar(cvar_731439, (object *)&__glo_logcount_srfi_60);make_pair(pair_731440, find_or_add_symbol("logcount"), &cvar_731439);
-  make_cvar(cvar_731441, (object *)&__glo_any_91bits_91set_127_srfi_60);make_pair(pair_731442, find_or_add_symbol("any-bits-set?"), &cvar_731441);
-  make_cvar(cvar_731443, (object *)&__glo_logtest_srfi_60);make_pair(pair_731444, find_or_add_symbol("logtest"), &cvar_731443);
-  make_cvar(cvar_731445, (object *)&__glo_bitwise_91merge_srfi_60);make_pair(pair_731446, find_or_add_symbol("bitwise-merge"), &cvar_731445);
-  make_cvar(cvar_731447, (object *)&__glo_bitwise_91if_srfi_60);make_pair(pair_731448, find_or_add_symbol("bitwise-if"), &cvar_731447);
-  make_cvar(cvar_731449, (object *)&__glo_bitwise_91not_srfi_60);make_pair(pair_731450, find_or_add_symbol("bitwise-not"), &cvar_731449);
-  make_cvar(cvar_731451, (object *)&__glo_lognot_srfi_60);make_pair(pair_731452, find_or_add_symbol("lognot"), &cvar_731451);
-  make_cvar(cvar_731453, (object *)&__glo_bitwise_91xor_srfi_60);make_pair(pair_731454, find_or_add_symbol("bitwise-xor"), &cvar_731453);
-  make_cvar(cvar_731455, (object *)&__glo_logxor_srfi_60);make_pair(pair_731456, find_or_add_symbol("logxor"), &cvar_731455);
-  make_cvar(cvar_731457, (object *)&__glo_bitwise_91ior_srfi_60);make_pair(pair_731458, find_or_add_symbol("bitwise-ior"), &cvar_731457);
-  make_cvar(cvar_731459, (object *)&__glo_logior_srfi_60);make_pair(pair_731460, find_or_add_symbol("logior"), &cvar_731459);
-  make_cvar(cvar_731461, (object *)&__glo_bitwise_91and_srfi_60);make_pair(pair_731462, find_or_add_symbol("bitwise-and"), &cvar_731461);
-  make_cvar(cvar_731463, (object *)&__glo_logand_srfi_60);make_pair(pair_731464, find_or_add_symbol("logand"), &cvar_731463);
-  make_cvar(cvar_731465, (object *)&__glo_raw_91logxor_srfi_60);make_pair(pair_731466, find_or_add_symbol("raw-logxor"), &cvar_731465);
-  make_cvar(cvar_731467, (object *)&__glo_raw_91logior_srfi_60);make_pair(pair_731468, find_or_add_symbol("raw-logior"), &cvar_731467);
-  make_cvar(cvar_731469, (object *)&__glo_raw_91logand_srfi_60);make_pair(pair_731470, find_or_add_symbol("raw-logand"), &cvar_731469);
-  make_cvar(cvar_731471, (object *)&__glo_binop_srfi_60);make_pair(pair_731472, find_or_add_symbol("binop"), &cvar_731471);
-make_pair(c_731508, &pair_731401,Cyc_global_variables);
-make_pair(c_731507, &pair_731404, &c_731508);
-make_pair(c_731506, &pair_731406, &c_731507);
-make_pair(c_731505, &pair_731408, &c_731506);
-make_pair(c_731504, &pair_731410, &c_731505);
-make_pair(c_731503, &pair_731412, &c_731504);
-make_pair(c_731502, &pair_731414, &c_731503);
-make_pair(c_731501, &pair_731416, &c_731502);
-make_pair(c_731500, &pair_731418, &c_731501);
-make_pair(c_731499, &pair_731420, &c_731500);
-make_pair(c_731498, &pair_731422, &c_731499);
-make_pair(c_731497, &pair_731424, &c_731498);
-make_pair(c_731496, &pair_731426, &c_731497);
-make_pair(c_731495, &pair_731428, &c_731496);
-make_pair(c_731494, &pair_731430, &c_731495);
-make_pair(c_731493, &pair_731432, &c_731494);
-make_pair(c_731492, &pair_731434, &c_731493);
-make_pair(c_731491, &pair_731436, &c_731492);
-make_pair(c_731490, &pair_731438, &c_731491);
-make_pair(c_731489, &pair_731440, &c_731490);
-make_pair(c_731488, &pair_731442, &c_731489);
-make_pair(c_731487, &pair_731444, &c_731488);
-make_pair(c_731486, &pair_731446, &c_731487);
-make_pair(c_731485, &pair_731448, &c_731486);
-make_pair(c_731484, &pair_731450, &c_731485);
-make_pair(c_731483, &pair_731452, &c_731484);
-make_pair(c_731482, &pair_731454, &c_731483);
-make_pair(c_731481, &pair_731456, &c_731482);
-make_pair(c_731480, &pair_731458, &c_731481);
-make_pair(c_731479, &pair_731460, &c_731480);
-make_pair(c_731478, &pair_731462, &c_731479);
-make_pair(c_731477, &pair_731464, &c_731478);
-make_pair(c_731476, &pair_731466, &c_731477);
-make_pair(c_731475, &pair_731468, &c_731476);
-make_pair(c_731474, &pair_731470, &c_731475);
-make_pair(c_731473, &pair_731472, &c_731474);
-Cyc_global_variables = &c_731473;
+  mclosure0(clo_731412, c_srfi60_inlinable_lambdas); make_pair(pair_731411, find_or_add_symbol("c_srfi60_inlinable_lambdas"), &clo_731412);
+  make_cvar(cvar_731413, (object *)&__glo_lib_91init_117srfi60_srfi_60);make_pair(pair_731414, find_or_add_symbol("lib-init:srfi60"), &cvar_731413);
+  make_cvar(cvar_731415, (object *)&__glo_booleans_91_125integer_srfi_60);make_pair(pair_731416, find_or_add_symbol("booleans->integer"), &cvar_731415);
+  make_cvar(cvar_731417, (object *)&__glo_list_91_125integer_srfi_60);make_pair(pair_731418, find_or_add_symbol("list->integer"), &cvar_731417);
+  make_cvar(cvar_731419, (object *)&__glo_integer_91_125list_srfi_60);make_pair(pair_731420, find_or_add_symbol("integer->list"), &cvar_731419);
+  make_cvar(cvar_731421, (object *)&__glo_reverse_91bit_91field_srfi_60);make_pair(pair_731422, find_or_add_symbol("reverse-bit-field"), &cvar_731421);
+  make_cvar(cvar_731423, (object *)&__glo_bit_91reverse_srfi_60);make_pair(pair_731424, find_or_add_symbol("bit-reverse"), &cvar_731423);
+  make_cvar(cvar_731425, (object *)&__glo_rotate_91bit_91field_srfi_60);make_pair(pair_731426, find_or_add_symbol("rotate-bit-field"), &cvar_731425);
+  make_cvar(cvar_731427, (object *)&__glo_arithmetic_91shift_srfi_60);make_pair(pair_731428, find_or_add_symbol("arithmetic-shift"), &cvar_731427);
+  make_cvar(cvar_731429, (object *)&__glo_ash_srfi_60);make_pair(pair_731430, find_or_add_symbol("ash"), &cvar_731429);
+  make_cvar(cvar_731431, (object *)&__glo_copy_91bit_91field_srfi_60);make_pair(pair_731432, find_or_add_symbol("copy-bit-field"), &cvar_731431);
+  make_cvar(cvar_731433, (object *)&__glo_bit_91field_srfi_60);make_pair(pair_731434, find_or_add_symbol("bit-field"), &cvar_731433);
+  make_cvar(cvar_731435, (object *)&__glo_copy_91bit_srfi_60);make_pair(pair_731436, find_or_add_symbol("copy-bit"), &cvar_731435);
+  make_cvar(cvar_731437, (object *)&__glo_bit_91set_127_srfi_60);make_pair(pair_731438, find_or_add_symbol("bit-set?"), &cvar_731437);
+  make_cvar(cvar_731439, (object *)&__glo_logbit_127_srfi_60);make_pair(pair_731440, find_or_add_symbol("logbit?"), &cvar_731439);
+  make_cvar(cvar_731441, (object *)&__glo_first_91set_91bit_srfi_60);make_pair(pair_731442, find_or_add_symbol("first-set-bit"), &cvar_731441);
+  make_cvar(cvar_731443, (object *)&__glo_log2_91binary_91factors_srfi_60);make_pair(pair_731444, find_or_add_symbol("log2-binary-factors"), &cvar_731443);
+  make_cvar(cvar_731445, (object *)&__glo_integer_91length_srfi_60);make_pair(pair_731446, find_or_add_symbol("integer-length"), &cvar_731445);
+  make_cvar(cvar_731447, (object *)&__glo_bit_91count_srfi_60);make_pair(pair_731448, find_or_add_symbol("bit-count"), &cvar_731447);
+  make_cvar(cvar_731449, (object *)&__glo_logcount_srfi_60);make_pair(pair_731450, find_or_add_symbol("logcount"), &cvar_731449);
+  make_cvar(cvar_731451, (object *)&__glo_any_91bits_91set_127_srfi_60);make_pair(pair_731452, find_or_add_symbol("any-bits-set?"), &cvar_731451);
+  make_cvar(cvar_731453, (object *)&__glo_logtest_srfi_60);make_pair(pair_731454, find_or_add_symbol("logtest"), &cvar_731453);
+  make_cvar(cvar_731455, (object *)&__glo_bitwise_91merge_srfi_60);make_pair(pair_731456, find_or_add_symbol("bitwise-merge"), &cvar_731455);
+  make_cvar(cvar_731457, (object *)&__glo_bitwise_91if_srfi_60);make_pair(pair_731458, find_or_add_symbol("bitwise-if"), &cvar_731457);
+  make_cvar(cvar_731459, (object *)&__glo_bitwise_91not_srfi_60);make_pair(pair_731460, find_or_add_symbol("bitwise-not"), &cvar_731459);
+  make_cvar(cvar_731461, (object *)&__glo_lognot_srfi_60);make_pair(pair_731462, find_or_add_symbol("lognot"), &cvar_731461);
+  make_cvar(cvar_731463, (object *)&__glo_bitwise_91xor_srfi_60);make_pair(pair_731464, find_or_add_symbol("bitwise-xor"), &cvar_731463);
+  make_cvar(cvar_731465, (object *)&__glo_logxor_srfi_60);make_pair(pair_731466, find_or_add_symbol("logxor"), &cvar_731465);
+  make_cvar(cvar_731467, (object *)&__glo_bitwise_91ior_srfi_60);make_pair(pair_731468, find_or_add_symbol("bitwise-ior"), &cvar_731467);
+  make_cvar(cvar_731469, (object *)&__glo_logior_srfi_60);make_pair(pair_731470, find_or_add_symbol("logior"), &cvar_731469);
+  make_cvar(cvar_731471, (object *)&__glo_bitwise_91and_srfi_60);make_pair(pair_731472, find_or_add_symbol("bitwise-and"), &cvar_731471);
+  make_cvar(cvar_731473, (object *)&__glo_logand_srfi_60);make_pair(pair_731474, find_or_add_symbol("logand"), &cvar_731473);
+  make_cvar(cvar_731475, (object *)&__glo_raw_91logxor_srfi_60);make_pair(pair_731476, find_or_add_symbol("raw-logxor"), &cvar_731475);
+  make_cvar(cvar_731477, (object *)&__glo_raw_91logior_srfi_60);make_pair(pair_731478, find_or_add_symbol("raw-logior"), &cvar_731477);
+  make_cvar(cvar_731479, (object *)&__glo_raw_91logand_srfi_60);make_pair(pair_731480, find_or_add_symbol("raw-logand"), &cvar_731479);
+  make_cvar(cvar_731481, (object *)&__glo_binop_srfi_60);make_pair(pair_731482, find_or_add_symbol("binop"), &cvar_731481);
+make_pair(c_731518, &pair_731411,Cyc_global_variables);
+make_pair(c_731517, &pair_731414, &c_731518);
+make_pair(c_731516, &pair_731416, &c_731517);
+make_pair(c_731515, &pair_731418, &c_731516);
+make_pair(c_731514, &pair_731420, &c_731515);
+make_pair(c_731513, &pair_731422, &c_731514);
+make_pair(c_731512, &pair_731424, &c_731513);
+make_pair(c_731511, &pair_731426, &c_731512);
+make_pair(c_731510, &pair_731428, &c_731511);
+make_pair(c_731509, &pair_731430, &c_731510);
+make_pair(c_731508, &pair_731432, &c_731509);
+make_pair(c_731507, &pair_731434, &c_731508);
+make_pair(c_731506, &pair_731436, &c_731507);
+make_pair(c_731505, &pair_731438, &c_731506);
+make_pair(c_731504, &pair_731440, &c_731505);
+make_pair(c_731503, &pair_731442, &c_731504);
+make_pair(c_731502, &pair_731444, &c_731503);
+make_pair(c_731501, &pair_731446, &c_731502);
+make_pair(c_731500, &pair_731448, &c_731501);
+make_pair(c_731499, &pair_731450, &c_731500);
+make_pair(c_731498, &pair_731452, &c_731499);
+make_pair(c_731497, &pair_731454, &c_731498);
+make_pair(c_731496, &pair_731456, &c_731497);
+make_pair(c_731495, &pair_731458, &c_731496);
+make_pair(c_731494, &pair_731460, &c_731495);
+make_pair(c_731493, &pair_731462, &c_731494);
+make_pair(c_731492, &pair_731464, &c_731493);
+make_pair(c_731491, &pair_731466, &c_731492);
+make_pair(c_731490, &pair_731468, &c_731491);
+make_pair(c_731489, &pair_731470, &c_731490);
+make_pair(c_731488, &pair_731472, &c_731489);
+make_pair(c_731487, &pair_731474, &c_731488);
+make_pair(c_731486, &pair_731476, &c_731487);
+make_pair(c_731485, &pair_731478, &c_731486);
+make_pair(c_731484, &pair_731480, &c_731485);
+make_pair(c_731483, &pair_731482, &c_731484);
+Cyc_global_variables = &c_731483;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi60_srfi_60)->fn)(data, 1, cont, cont);
 }

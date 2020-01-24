@@ -1473,74 +1473,74 @@ static void __lambda_657(void *data, int argc, closure _,object k_732416) {
   Cyc_st_add(data, "srfi/113.sld:lib-init:srfi113");
 
 closureN_type c_736280;
-object e_736367 [1];
+object e_736375 [1];
 c_736280.hdr.mark = gc_color_red;
  c_736280.hdr.grayed = 0;
 c_736280.tag = closureN_tag;
  c_736280.fn = (function_type)__lambda_658;
 c_736280.num_args = 1;
 c_736280.num_elements = 1;
-c_736280.elements = (object *)e_736367;
+c_736280.elements = (object *)e_736375;
 c_736280.elements[0] = k_732416;
 
 
-
-return_direct_with_clo1(data,(closure)&c_736280,__lambda_658,  global_set(__glo_hash_91table_91contains_127_srfi_113, __glo_hash_91table_91exists_127_srfi_69));; 
+object c_736378 = global_set2(data,(closure)&c_736280,__glo_hash_91table_91contains_127_srfi_113, __glo_hash_91table_91exists_127_srfi_69);
+return_closcall1(data,(closure)&c_736280,  c_736378);; 
 }
 
 static void __lambda_658(void *data, int argc, object self_733096, object r_732418) {
   
 closureN_type c_736282;
-object e_736362 [1];
+object e_736370 [1];
 c_736282.hdr.mark = gc_color_red;
  c_736282.hdr.grayed = 0;
 c_736282.tag = closureN_tag;
  c_736282.fn = (function_type)__lambda_659;
 c_736282.num_args = 1;
 c_736282.num_elements = 1;
-c_736282.elements = (object *)e_736362;
+c_736282.elements = (object *)e_736370;
 c_736282.elements[0] = ((closureN)self_733096)->elements[0];
 
 
-make_utf8_string_with_len(c_736363, "sob", 3, 3);
+make_utf8_string_with_len(c_736371, "sob", 3, 3);
 
-make_pair(c_736366,quote_multi_127,NULL);c_736366.hdr.immutable = 1;
+make_pair(c_736374,quote_multi_127,NULL);c_736374.hdr.immutable = 1;
 
-make_pair(c_736365,quote_comparator,&c_736366);c_736365.hdr.immutable = 1;
+make_pair(c_736373,quote_comparator,&c_736374);c_736373.hdr.immutable = 1;
 
-make_pair(c_736364,quote_hash_91table,&c_736365);c_736364.hdr.immutable = 1;
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_736282, &c_736363, boolean_f, &c_736364);; 
+make_pair(c_736372,quote_hash_91table,&c_736373);c_736372.hdr.immutable = 1;
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_736282, &c_736371, boolean_f, &c_736372);; 
 }
 
 static void __lambda_659(void *data, int argc, object self_733097, object r_732444) {
   
 closureN_type c_736284;
-object e_736359 [1];
+object e_736366 [1];
 c_736284.hdr.mark = gc_color_red;
  c_736284.hdr.grayed = 0;
 c_736284.tag = closureN_tag;
  c_736284.fn = (function_type)__lambda_660;
 c_736284.num_args = 1;
 c_736284.num_elements = 1;
-c_736284.elements = (object *)e_736359;
+c_736284.elements = (object *)e_736366;
 c_736284.elements[0] = ((closureN)self_733097)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736284,__lambda_660,  global_set(__glo_sob_srfi_113, r_732444));; 
+object c_736369 = global_set2(data,(closure)&c_736284,__glo_sob_srfi_113, r_732444);
+return_closcall1(data,(closure)&c_736284,  c_736369);; 
 }
 
 static void __lambda_660(void *data, int argc, object self_733098, object r_732419) {
   
 closureN_type c_736286;
-object e_736358 [1];
+object e_736365 [1];
 c_736286.hdr.mark = gc_color_red;
  c_736286.hdr.grayed = 0;
 c_736286.tag = closureN_tag;
  c_736286.fn = (function_type)__lambda_661;
 c_736286.num_args = 1;
 c_736286.num_elements = 1;
-c_736286.elements = (object *)e_736358;
+c_736286.elements = (object *)e_736365;
 c_736286.elements[0] = ((closureN)self_733098)->elements[0];
 
 return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_736286, obj_int2obj(0), __glo_sob_srfi_113);; 
@@ -1549,32 +1549,32 @@ return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_736286, o
 static void __lambda_661(void *data, int argc, object self_733099, object r_732443) {
   
 closureN_type c_736288;
-object e_736355 [1];
+object e_736361 [1];
 c_736288.hdr.mark = gc_color_red;
  c_736288.hdr.grayed = 0;
 c_736288.tag = closureN_tag;
  c_736288.fn = (function_type)__lambda_662;
 c_736288.num_args = 1;
 c_736288.num_elements = 1;
-c_736288.elements = (object *)e_736355;
+c_736288.elements = (object *)e_736361;
 c_736288.elements[0] = ((closureN)self_733099)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736288,__lambda_662,  global_set(__glo_sob_127_srfi_113, r_732443));; 
+object c_736364 = global_set2(data,(closure)&c_736288,__glo_sob_127_srfi_113, r_732443);
+return_closcall1(data,(closure)&c_736288,  c_736364);; 
 }
 
 static void __lambda_662(void *data, int argc, object self_733100, object r_732420) {
   
 closureN_type c_736290;
-object e_736354 [1];
+object e_736360 [1];
 c_736290.hdr.mark = gc_color_red;
  c_736290.hdr.grayed = 0;
 c_736290.tag = closureN_tag;
  c_736290.fn = (function_type)__lambda_663;
 c_736290.num_args = 1;
 c_736290.num_elements = 1;
-c_736290.elements = (object *)e_736354;
+c_736290.elements = (object *)e_736360;
 c_736290.elements[0] = ((closureN)self_733100)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736290, __glo_sob_srfi_113, quote_hash_91table);; 
@@ -1583,50 +1583,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736290, __gl
 static void __lambda_663(void *data, int argc, object self_733101, object r_732441) {
   
 closureN_type c_736292;
-object e_736352 [1];
+object e_736358 [1];
 c_736292.hdr.mark = gc_color_red;
  c_736292.hdr.grayed = 0;
 c_736292.tag = closureN_tag;
  c_736292.fn = (function_type)__lambda_664;
 c_736292.num_args = 1;
 c_736292.num_elements = 1;
-c_736292.elements = (object *)e_736352;
+c_736292.elements = (object *)e_736358;
 c_736292.elements[0] = ((closureN)self_733101)->elements[0];
 
 
-make_utf8_string_with_len(c_736353, "sob-hash-table", 14, 14);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736292, &c_736353, __glo_sob_srfi_113, r_732441);; 
+make_utf8_string_with_len(c_736359, "sob-hash-table", 14, 14);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736292, &c_736359, __glo_sob_srfi_113, r_732441);; 
 }
 
 static void __lambda_664(void *data, int argc, object self_733102, object r_732440) {
   
 closureN_type c_736294;
-object e_736349 [1];
+object e_736354 [1];
 c_736294.hdr.mark = gc_color_red;
  c_736294.hdr.grayed = 0;
 c_736294.tag = closureN_tag;
  c_736294.fn = (function_type)__lambda_665;
 c_736294.num_args = 1;
 c_736294.num_elements = 1;
-c_736294.elements = (object *)e_736349;
+c_736294.elements = (object *)e_736354;
 c_736294.elements[0] = ((closureN)self_733102)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736294,__lambda_665,  global_set(__glo_sob_91hash_91table_srfi_113, r_732440));; 
+object c_736357 = global_set2(data,(closure)&c_736294,__glo_sob_91hash_91table_srfi_113, r_732440);
+return_closcall1(data,(closure)&c_736294,  c_736357);; 
 }
 
 static void __lambda_665(void *data, int argc, object self_733103, object r_732421) {
   
 closureN_type c_736296;
-object e_736348 [1];
+object e_736353 [1];
 c_736296.hdr.mark = gc_color_red;
  c_736296.hdr.grayed = 0;
 c_736296.tag = closureN_tag;
  c_736296.fn = (function_type)__lambda_666;
 c_736296.num_args = 1;
 c_736296.num_elements = 1;
-c_736296.elements = (object *)e_736348;
+c_736296.elements = (object *)e_736353;
 c_736296.elements[0] = ((closureN)self_733103)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736296, __glo_sob_srfi_113, quote_comparator);; 
@@ -1635,50 +1635,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736296, __gl
 static void __lambda_666(void *data, int argc, object self_733104, object r_732438) {
   
 closureN_type c_736298;
-object e_736346 [1];
+object e_736351 [1];
 c_736298.hdr.mark = gc_color_red;
  c_736298.hdr.grayed = 0;
 c_736298.tag = closureN_tag;
  c_736298.fn = (function_type)__lambda_667;
 c_736298.num_args = 1;
 c_736298.num_elements = 1;
-c_736298.elements = (object *)e_736346;
+c_736298.elements = (object *)e_736351;
 c_736298.elements[0] = ((closureN)self_733104)->elements[0];
 
 
-make_utf8_string_with_len(c_736347, "sob-comparator", 14, 14);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736298, &c_736347, __glo_sob_srfi_113, r_732438);; 
+make_utf8_string_with_len(c_736352, "sob-comparator", 14, 14);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736298, &c_736352, __glo_sob_srfi_113, r_732438);; 
 }
 
 static void __lambda_667(void *data, int argc, object self_733105, object r_732437) {
   
 closureN_type c_736300;
-object e_736343 [1];
+object e_736347 [1];
 c_736300.hdr.mark = gc_color_red;
  c_736300.hdr.grayed = 0;
 c_736300.tag = closureN_tag;
  c_736300.fn = (function_type)__lambda_668;
 c_736300.num_args = 1;
 c_736300.num_elements = 1;
-c_736300.elements = (object *)e_736343;
+c_736300.elements = (object *)e_736347;
 c_736300.elements[0] = ((closureN)self_733105)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736300,__lambda_668,  global_set(__glo_sob_91comparator_srfi_113, r_732437));; 
+object c_736350 = global_set2(data,(closure)&c_736300,__glo_sob_91comparator_srfi_113, r_732437);
+return_closcall1(data,(closure)&c_736300,  c_736350);; 
 }
 
 static void __lambda_668(void *data, int argc, object self_733106, object r_732422) {
   
 closureN_type c_736302;
-object e_736342 [1];
+object e_736346 [1];
 c_736302.hdr.mark = gc_color_red;
  c_736302.hdr.grayed = 0;
 c_736302.tag = closureN_tag;
  c_736302.fn = (function_type)__lambda_669;
 c_736302.num_args = 1;
 c_736302.num_elements = 1;
-c_736302.elements = (object *)e_736342;
+c_736302.elements = (object *)e_736346;
 c_736302.elements[0] = ((closureN)self_733106)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736302, __glo_sob_srfi_113, quote_multi_127);; 
@@ -1687,86 +1687,86 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_736302, __gl
 static void __lambda_669(void *data, int argc, object self_733107, object r_732435) {
   
 closureN_type c_736304;
-object e_736340 [1];
+object e_736344 [1];
 c_736304.hdr.mark = gc_color_red;
  c_736304.hdr.grayed = 0;
 c_736304.tag = closureN_tag;
  c_736304.fn = (function_type)__lambda_670;
 c_736304.num_args = 1;
 c_736304.num_elements = 1;
-c_736304.elements = (object *)e_736340;
+c_736304.elements = (object *)e_736344;
 c_736304.elements[0] = ((closureN)self_733107)->elements[0];
 
 
-make_utf8_string_with_len(c_736341, "sob-multi?", 10, 10);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736304, &c_736341, __glo_sob_srfi_113, r_732435);; 
+make_utf8_string_with_len(c_736345, "sob-multi?", 10, 10);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_736304, &c_736345, __glo_sob_srfi_113, r_732435);; 
 }
 
 static void __lambda_670(void *data, int argc, object self_733108, object r_732434) {
   
 closureN_type c_736306;
-object e_736337 [1];
+object e_736340 [1];
 c_736306.hdr.mark = gc_color_red;
  c_736306.hdr.grayed = 0;
 c_736306.tag = closureN_tag;
  c_736306.fn = (function_type)__lambda_671;
 c_736306.num_args = 1;
 c_736306.num_elements = 1;
-c_736306.elements = (object *)e_736337;
+c_736306.elements = (object *)e_736340;
 c_736306.elements[0] = ((closureN)self_733108)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736306,__lambda_671,  global_set(__glo_sob_91multi_127_srfi_113, r_732434));; 
+object c_736343 = global_set2(data,(closure)&c_736306,__glo_sob_91multi_127_srfi_113, r_732434);
+return_closcall1(data,(closure)&c_736306,  c_736343);; 
 }
 
 static void __lambda_671(void *data, int argc, object self_733109, object r_732423) {
   
 closureN_type c_736308;
-object e_736335 [1];
+object e_736338 [1];
 c_736308.hdr.mark = gc_color_red;
  c_736308.hdr.grayed = 0;
 c_736308.tag = closureN_tag;
  c_736308.fn = (function_type)__lambda_672;
 c_736308.num_args = 1;
 c_736308.num_elements = 1;
-c_736308.elements = (object *)e_736335;
+c_736308.elements = (object *)e_736338;
 c_736308.elements[0] = ((closureN)self_733109)->elements[0];
 
 
-make_utf8_string_with_len(c_736336, "missing", 7, 7);
-return_closcall2(data,  __glo_string_91copy_scheme_base,  &c_736308, &c_736336);; 
+make_utf8_string_with_len(c_736339, "missing", 7, 7);
+return_closcall2(data,  __glo_string_91copy_scheme_base,  &c_736308, &c_736339);; 
 }
 
 static void __lambda_672(void *data, int argc, object self_733110, object r_732433) {
   
 closureN_type c_736310;
-object e_736332 [1];
+object e_736334 [1];
 c_736310.hdr.mark = gc_color_red;
  c_736310.hdr.grayed = 0;
 c_736310.tag = closureN_tag;
  c_736310.fn = (function_type)__lambda_673;
 c_736310.num_args = 1;
 c_736310.num_elements = 1;
-c_736310.elements = (object *)e_736332;
+c_736310.elements = (object *)e_736334;
 c_736310.elements[0] = ((closureN)self_733110)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736310,__lambda_673,  global_set(__glo_missing_srfi_113, r_732433));; 
+object c_736337 = global_set2(data,(closure)&c_736310,__glo_missing_srfi_113, r_732433);
+return_closcall1(data,(closure)&c_736310,  c_736337);; 
 }
 
 static void __lambda_673(void *data, int argc, object self_733111, object r_732427) {
   
 closureN_type c_736312;
-object e_736331 [1];
+object e_736333 [1];
 c_736312.hdr.mark = gc_color_red;
  c_736312.hdr.grayed = 0;
 c_736312.tag = closureN_tag;
  c_736312.fn = (function_type)__lambda_674;
 c_736312.num_args = 1;
 c_736312.num_elements = 1;
-c_736312.elements = (object *)e_736331;
+c_736312.elements = (object *)e_736333;
 c_736312.elements[0] = ((closureN)self_733111)->elements[0];
 
 return_closcall5(data,  __glo_make_91comparator_srfi_128,  &c_736312, __glo_set_127_srfi_113, __glo_set_123_127_srfi_113, boolean_f, __glo_sob_91hash_srfi_113);; 
@@ -1775,32 +1775,32 @@ return_closcall5(data,  __glo_make_91comparator_srfi_128,  &c_736312, __glo_set_
 static void __lambda_674(void *data, int argc, object self_733112, object r_732432) {
   
 closureN_type c_736314;
-object e_736328 [1];
+object e_736329 [1];
 c_736314.hdr.mark = gc_color_red;
  c_736314.hdr.grayed = 0;
 c_736314.tag = closureN_tag;
  c_736314.fn = (function_type)__lambda_675;
 c_736314.num_args = 1;
 c_736314.num_elements = 1;
-c_736314.elements = (object *)e_736328;
+c_736314.elements = (object *)e_736329;
 c_736314.elements[0] = ((closureN)self_733112)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736314,__lambda_675,  global_set(__glo_set_91comparator_srfi_113, r_732432));; 
+object c_736332 = global_set2(data,(closure)&c_736314,__glo_set_91comparator_srfi_113, r_732432);
+return_closcall1(data,(closure)&c_736314,  c_736332);; 
 }
 
 static void __lambda_675(void *data, int argc, object self_733113, object r_732428) {
   
 closureN_type c_736316;
-object e_736327 [1];
+object e_736328 [1];
 c_736316.hdr.mark = gc_color_red;
  c_736316.hdr.grayed = 0;
 c_736316.tag = closureN_tag;
  c_736316.fn = (function_type)__lambda_676;
 c_736316.num_args = 1;
 c_736316.num_elements = 1;
-c_736316.elements = (object *)e_736327;
+c_736316.elements = (object *)e_736328;
 c_736316.elements[0] = ((closureN)self_733113)->elements[0];
 
 return_closcall5(data,  __glo_make_91comparator_srfi_128,  &c_736316, __glo_bag_127_srfi_113, __glo_bag_123_127_srfi_113, boolean_f, __glo_sob_91hash_srfi_113);; 
@@ -1820,8 +1820,8 @@ c_736318.elements = (object *)e_736324;
 c_736318.elements[0] = ((closureN)self_733114)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_736318,__lambda_677,  global_set(__glo_bag_91comparator_srfi_113, r_732431));; 
+object c_736327 = global_set2(data,(closure)&c_736318,__glo_bag_91comparator_srfi_113, r_732431);
+return_closcall1(data,(closure)&c_736318,  c_736327);; 
 }
 
 static void __lambda_677(void *data, int argc, object self_733115, object r_732429) {
@@ -12372,387 +12372,387 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_sob_srfi_113 = boolean_f; 
   __glo_hash_91table_91contains_127_srfi_113 = boolean_f; 
 
-  mclosure0(clo_736371, c_srfi113_inlinable_lambdas); make_pair(pair_736370, find_or_add_symbol("c_srfi113_inlinable_lambdas"), &clo_736371);
-  make_cvar(cvar_736372, (object *)&__glo_lib_91init_117srfi113_srfi_113);make_pair(pair_736373, find_or_add_symbol("lib-init:srfi113"), &cvar_736372);
-  make_cvar(cvar_736374, (object *)&__glo_bag_91comparator_srfi_113);make_pair(pair_736375, find_or_add_symbol("bag-comparator"), &cvar_736374);
-  make_cvar(cvar_736376, (object *)&__glo_set_91comparator_srfi_113);make_pair(pair_736377, find_or_add_symbol("set-comparator"), &cvar_736376);
-  make_cvar(cvar_736378, (object *)&__glo_sob_91hash_srfi_113);make_pair(pair_736379, find_or_add_symbol("sob-hash"), &cvar_736378);
-  make_cvar(cvar_736380, (object *)&__glo_alist_91_125bag_srfi_113);make_pair(pair_736381, find_or_add_symbol("alist->bag"), &cvar_736380);
-  make_cvar(cvar_736382, (object *)&__glo_bag_91_125alist_srfi_113);make_pair(pair_736383, find_or_add_symbol("bag->alist"), &cvar_736382);
-  make_cvar(cvar_736384, (object *)&__glo_set_91_125bag_67_srfi_113);make_pair(pair_736385, find_or_add_symbol("set->bag!"), &cvar_736384);
-  make_cvar(cvar_736386, (object *)&__glo_set_91_125bag_srfi_113);make_pair(pair_736387, find_or_add_symbol("set->bag"), &cvar_736386);
-  make_cvar(cvar_736388, (object *)&__glo_bag_91_125set_srfi_113);make_pair(pair_736389, find_or_add_symbol("bag->set"), &cvar_736388);
-  make_cvar(cvar_736390, (object *)&__glo_bag_91fold_91unique_srfi_113);make_pair(pair_736391, find_or_add_symbol("bag-fold-unique"), &cvar_736390);
-  make_cvar(cvar_736392, (object *)&__glo_bag_91for_91each_91unique_srfi_113);make_pair(pair_736393, find_or_add_symbol("bag-for-each-unique"), &cvar_736392);
-  make_cvar(cvar_736394, (object *)&__glo_bag_91element_91count_srfi_113);make_pair(pair_736395, find_or_add_symbol("bag-element-count"), &cvar_736394);
-  make_cvar(cvar_736396, (object *)&__glo_bag_91unique_91size_srfi_113);make_pair(pair_736397, find_or_add_symbol("bag-unique-size"), &cvar_736396);
-  make_cvar(cvar_736398, (object *)&__glo_bag_91product_67_srfi_113);make_pair(pair_736399, find_or_add_symbol("bag-product!"), &cvar_736398);
-  make_cvar(cvar_736400, (object *)&__glo_bag_91product_srfi_113);make_pair(pair_736401, find_or_add_symbol("bag-product"), &cvar_736400);
-  make_cvar(cvar_736402, (object *)&__glo_valid_91n_srfi_113);make_pair(pair_736403, find_or_add_symbol("valid-n"), &cvar_736402);
-  make_cvar(cvar_736404, (object *)&__glo_sob_91product_67_srfi_113);make_pair(pair_736405, find_or_add_symbol("sob-product!"), &cvar_736404);
-  make_cvar(cvar_736406, (object *)&__glo_bag_91xor_67_srfi_113);make_pair(pair_736407, find_or_add_symbol("bag-xor!"), &cvar_736406);
-  make_cvar(cvar_736408, (object *)&__glo_set_91xor_67_srfi_113);make_pair(pair_736409, find_or_add_symbol("set-xor!"), &cvar_736408);
-  make_cvar(cvar_736410, (object *)&__glo_bag_91xor_srfi_113);make_pair(pair_736411, find_or_add_symbol("bag-xor"), &cvar_736410);
-  make_cvar(cvar_736412, (object *)&__glo_set_91xor_srfi_113);make_pair(pair_736413, find_or_add_symbol("set-xor"), &cvar_736412);
-  make_cvar(cvar_736414, (object *)&__glo_sob_91xor_67_srfi_113);make_pair(pair_736415, find_or_add_symbol("sob-xor!"), &cvar_736414);
-  make_cvar(cvar_736416, (object *)&__glo_bag_91sum_67_srfi_113);make_pair(pair_736417, find_or_add_symbol("bag-sum!"), &cvar_736416);
-  make_cvar(cvar_736418, (object *)&__glo_sob_91sum_67_srfi_113);make_pair(pair_736419, find_or_add_symbol("sob-sum!"), &cvar_736418);
-  make_cvar(cvar_736420, (object *)&__glo_bag_91sum_srfi_113);make_pair(pair_736421, find_or_add_symbol("bag-sum"), &cvar_736420);
-  make_cvar(cvar_736422, (object *)&__glo_dyadic_91sob_91sum_67_srfi_113);make_pair(pair_736423, find_or_add_symbol("dyadic-sob-sum!"), &cvar_736422);
-  make_cvar(cvar_736424, (object *)&__glo_sob_91sum_srfi_113);make_pair(pair_736425, find_or_add_symbol("sob-sum"), &cvar_736424);
-  make_cvar(cvar_736426, (object *)&__glo_bag_91difference_67_srfi_113);make_pair(pair_736427, find_or_add_symbol("bag-difference!"), &cvar_736426);
-  make_cvar(cvar_736428, (object *)&__glo_set_91difference_67_srfi_113);make_pair(pair_736429, find_or_add_symbol("set-difference!"), &cvar_736428);
-  make_cvar(cvar_736430, (object *)&__glo_sob_91difference_67_srfi_113);make_pair(pair_736431, find_or_add_symbol("sob-difference!"), &cvar_736430);
-  make_cvar(cvar_736432, (object *)&__glo_bag_91difference_srfi_113);make_pair(pair_736433, find_or_add_symbol("bag-difference"), &cvar_736432);
-  make_cvar(cvar_736434, (object *)&__glo_set_91difference_srfi_113);make_pair(pair_736435, find_or_add_symbol("set-difference"), &cvar_736434);
-  make_cvar(cvar_736436, (object *)&__glo_dyadic_91sob_91difference_67_srfi_113);make_pair(pair_736437, find_or_add_symbol("dyadic-sob-difference!"), &cvar_736436);
-  make_cvar(cvar_736438, (object *)&__glo_sob_91difference_srfi_113);make_pair(pair_736439, find_or_add_symbol("sob-difference"), &cvar_736438);
-  make_cvar(cvar_736440, (object *)&__glo_bag_91intersection_67_srfi_113);make_pair(pair_736441, find_or_add_symbol("bag-intersection!"), &cvar_736440);
-  make_cvar(cvar_736442, (object *)&__glo_set_91intersection_67_srfi_113);make_pair(pair_736443, find_or_add_symbol("set-intersection!"), &cvar_736442);
-  make_cvar(cvar_736444, (object *)&__glo_sob_91intersection_67_srfi_113);make_pair(pair_736445, find_or_add_symbol("sob-intersection!"), &cvar_736444);
-  make_cvar(cvar_736446, (object *)&__glo_bag_91intersection_srfi_113);make_pair(pair_736447, find_or_add_symbol("bag-intersection"), &cvar_736446);
-  make_cvar(cvar_736448, (object *)&__glo_set_91intersection_srfi_113);make_pair(pair_736449, find_or_add_symbol("set-intersection"), &cvar_736448);
-  make_cvar(cvar_736450, (object *)&__glo_dyadic_91sob_91intersection_67_srfi_113);make_pair(pair_736451, find_or_add_symbol("dyadic-sob-intersection!"), &cvar_736450);
-  make_cvar(cvar_736452, (object *)&__glo_sob_91intersection_srfi_113);make_pair(pair_736453, find_or_add_symbol("sob-intersection"), &cvar_736452);
-  make_cvar(cvar_736454, (object *)&__glo_bag_91union_67_srfi_113);make_pair(pair_736455, find_or_add_symbol("bag-union!"), &cvar_736454);
-  make_cvar(cvar_736456, (object *)&__glo_set_91union_67_srfi_113);make_pair(pair_736457, find_or_add_symbol("set-union!"), &cvar_736456);
-  make_cvar(cvar_736458, (object *)&__glo_sob_91union_67_srfi_113);make_pair(pair_736459, find_or_add_symbol("sob-union!"), &cvar_736458);
-  make_cvar(cvar_736460, (object *)&__glo_bag_91union_srfi_113);make_pair(pair_736461, find_or_add_symbol("bag-union"), &cvar_736460);
-  make_cvar(cvar_736462, (object *)&__glo_set_91union_srfi_113);make_pair(pair_736463, find_or_add_symbol("set-union"), &cvar_736462);
-  make_cvar(cvar_736464, (object *)&__glo_dyadic_91sob_91union_67_srfi_113);make_pair(pair_736465, find_or_add_symbol("dyadic-sob-union!"), &cvar_736464);
-  make_cvar(cvar_736466, (object *)&__glo_sob_91union_srfi_113);make_pair(pair_736467, find_or_add_symbol("sob-union"), &cvar_736466);
-  make_cvar(cvar_736468, (object *)&__glo_dyadic_91sob_125_123_127_srfi_113);make_pair(pair_736469, find_or_add_symbol("dyadic-sob>=?"), &cvar_736468);
-  make_cvar(cvar_736470, (object *)&__glo_bag_125_123_127_srfi_113);make_pair(pair_736471, find_or_add_symbol("bag>=?"), &cvar_736470);
-  make_cvar(cvar_736472, (object *)&__glo_set_125_123_127_srfi_113);make_pair(pair_736473, find_or_add_symbol("set>=?"), &cvar_736472);
-  make_cvar(cvar_736474, (object *)&__glo_sob_125_123_127_srfi_113);make_pair(pair_736475, find_or_add_symbol("sob>=?"), &cvar_736474);
-  make_cvar(cvar_736476, (object *)&__glo_dyadic_91sob_121_127_srfi_113);make_pair(pair_736477, find_or_add_symbol("dyadic-sob<?"), &cvar_736476);
-  make_cvar(cvar_736478, (object *)&__glo_bag_121_127_srfi_113);make_pair(pair_736479, find_or_add_symbol("bag<?"), &cvar_736478);
-  make_cvar(cvar_736480, (object *)&__glo_set_121_127_srfi_113);make_pair(pair_736481, find_or_add_symbol("set<?"), &cvar_736480);
-  make_cvar(cvar_736482, (object *)&__glo_sob_121_127_srfi_113);make_pair(pair_736483, find_or_add_symbol("sob<?"), &cvar_736482);
-  make_cvar(cvar_736484, (object *)&__glo_dyadic_91sob_125_127_srfi_113);make_pair(pair_736485, find_or_add_symbol("dyadic-sob>?"), &cvar_736484);
-  make_cvar(cvar_736486, (object *)&__glo_bag_125_127_srfi_113);make_pair(pair_736487, find_or_add_symbol("bag>?"), &cvar_736486);
-  make_cvar(cvar_736488, (object *)&__glo_set_125_127_srfi_113);make_pair(pair_736489, find_or_add_symbol("set>?"), &cvar_736488);
-  make_cvar(cvar_736490, (object *)&__glo_sob_125_127_srfi_113);make_pair(pair_736491, find_or_add_symbol("sob>?"), &cvar_736490);
-  make_cvar(cvar_736492, (object *)&__glo_dyadic_91sob_121_123_127_srfi_113);make_pair(pair_736493, find_or_add_symbol("dyadic-sob<=?"), &cvar_736492);
-  make_cvar(cvar_736494, (object *)&__glo_bag_121_123_127_srfi_113);make_pair(pair_736495, find_or_add_symbol("bag<=?"), &cvar_736494);
-  make_cvar(cvar_736496, (object *)&__glo_set_121_123_127_srfi_113);make_pair(pair_736497, find_or_add_symbol("set<=?"), &cvar_736496);
-  make_cvar(cvar_736498, (object *)&__glo_sob_121_123_127_srfi_113);make_pair(pair_736499, find_or_add_symbol("sob<=?"), &cvar_736498);
-  make_cvar(cvar_736500, (object *)&__glo_dyadic_91sob_123_127_srfi_113);make_pair(pair_736501, find_or_add_symbol("dyadic-sob=?"), &cvar_736500);
-  make_cvar(cvar_736502, (object *)&__glo_bag_123_127_srfi_113);make_pair(pair_736503, find_or_add_symbol("bag=?"), &cvar_736502);
-  make_cvar(cvar_736504, (object *)&__glo_set_123_127_srfi_113);make_pair(pair_736505, find_or_add_symbol("set=?"), &cvar_736504);
-  make_cvar(cvar_736506, (object *)&__glo_sob_123_127_srfi_113);make_pair(pair_736507, find_or_add_symbol("sob=?"), &cvar_736506);
-  make_cvar(cvar_736508, (object *)&__glo_list_91_125bag_67_srfi_113);make_pair(pair_736509, find_or_add_symbol("list->bag!"), &cvar_736508);
-  make_cvar(cvar_736510, (object *)&__glo_list_91_125set_67_srfi_113);make_pair(pair_736511, find_or_add_symbol("list->set!"), &cvar_736510);
-  make_cvar(cvar_736512, (object *)&__glo_list_91_125bag_srfi_113);make_pair(pair_736513, find_or_add_symbol("list->bag"), &cvar_736512);
-  make_cvar(cvar_736514, (object *)&__glo_list_91_125set_srfi_113);make_pair(pair_736515, find_or_add_symbol("list->set"), &cvar_736514);
-  make_cvar(cvar_736516, (object *)&__glo_list_91_125sob_67_srfi_113);make_pair(pair_736517, find_or_add_symbol("list->sob!"), &cvar_736516);
-  make_cvar(cvar_736518, (object *)&__glo_bag_91_125list_srfi_113);make_pair(pair_736519, find_or_add_symbol("bag->list"), &cvar_736518);
-  make_cvar(cvar_736520, (object *)&__glo_set_91_125list_srfi_113);make_pair(pair_736521, find_or_add_symbol("set->list"), &cvar_736520);
-  make_cvar(cvar_736522, (object *)&__glo_sob_91_125list_srfi_113);make_pair(pair_736523, find_or_add_symbol("sob->list"), &cvar_736522);
-  make_cvar(cvar_736524, (object *)&__glo_bag_91partition_67_srfi_113);make_pair(pair_736525, find_or_add_symbol("bag-partition!"), &cvar_736524);
-  make_cvar(cvar_736526, (object *)&__glo_set_91partition_67_srfi_113);make_pair(pair_736527, find_or_add_symbol("set-partition!"), &cvar_736526);
-  make_cvar(cvar_736528, (object *)&__glo_sob_91partition_67_srfi_113);make_pair(pair_736529, find_or_add_symbol("sob-partition!"), &cvar_736528);
-  make_cvar(cvar_736530, (object *)&__glo_bag_91partition_srfi_113);make_pair(pair_736531, find_or_add_symbol("bag-partition"), &cvar_736530);
-  make_cvar(cvar_736532, (object *)&__glo_set_91partition_srfi_113);make_pair(pair_736533, find_or_add_symbol("set-partition"), &cvar_736532);
-  make_cvar(cvar_736534, (object *)&__glo_sob_91partition_srfi_113);make_pair(pair_736535, find_or_add_symbol("sob-partition"), &cvar_736534);
-  make_cvar(cvar_736536, (object *)&__glo_bag_91remove_67_srfi_113);make_pair(pair_736537, find_or_add_symbol("bag-remove!"), &cvar_736536);
-  make_cvar(cvar_736538, (object *)&__glo_set_91remove_67_srfi_113);make_pair(pair_736539, find_or_add_symbol("set-remove!"), &cvar_736538);
-  make_cvar(cvar_736540, (object *)&__glo_bag_91filter_67_srfi_113);make_pair(pair_736541, find_or_add_symbol("bag-filter!"), &cvar_736540);
-  make_cvar(cvar_736542, (object *)&__glo_set_91filter_67_srfi_113);make_pair(pair_736543, find_or_add_symbol("set-filter!"), &cvar_736542);
-  make_cvar(cvar_736544, (object *)&__glo_sob_91filter_67_srfi_113);make_pair(pair_736545, find_or_add_symbol("sob-filter!"), &cvar_736544);
-  make_cvar(cvar_736546, (object *)&__glo_bag_91remove_srfi_113);make_pair(pair_736547, find_or_add_symbol("bag-remove"), &cvar_736546);
-  make_cvar(cvar_736548, (object *)&__glo_set_91remove_srfi_113);make_pair(pair_736549, find_or_add_symbol("set-remove"), &cvar_736548);
-  make_cvar(cvar_736550, (object *)&__glo_bag_91filter_srfi_113);make_pair(pair_736551, find_or_add_symbol("bag-filter"), &cvar_736550);
-  make_cvar(cvar_736552, (object *)&__glo_set_91filter_srfi_113);make_pair(pair_736553, find_or_add_symbol("set-filter"), &cvar_736552);
-  make_cvar(cvar_736554, (object *)&__glo_sob_91filter_srfi_113);make_pair(pair_736555, find_or_add_symbol("sob-filter"), &cvar_736554);
-  make_cvar(cvar_736556, (object *)&__glo_bag_91fold_srfi_113);make_pair(pair_736557, find_or_add_symbol("bag-fold"), &cvar_736556);
-  make_cvar(cvar_736558, (object *)&__glo_set_91fold_srfi_113);make_pair(pair_736559, find_or_add_symbol("set-fold"), &cvar_736558);
-  make_cvar(cvar_736560, (object *)&__glo_sob_91fold_srfi_113);make_pair(pair_736561, find_or_add_symbol("sob-fold"), &cvar_736560);
-  make_cvar(cvar_736562, (object *)&__glo_bag_91map_srfi_113);make_pair(pair_736563, find_or_add_symbol("bag-map"), &cvar_736562);
-  make_cvar(cvar_736564, (object *)&__glo_set_91map_srfi_113);make_pair(pair_736565, find_or_add_symbol("set-map"), &cvar_736564);
-  make_cvar(cvar_736566, (object *)&__glo_sob_91map_srfi_113);make_pair(pair_736567, find_or_add_symbol("sob-map"), &cvar_736566);
-  make_cvar(cvar_736568, (object *)&__glo_bag_91for_91each_srfi_113);make_pair(pair_736569, find_or_add_symbol("bag-for-each"), &cvar_736568);
-  make_cvar(cvar_736570, (object *)&__glo_set_91for_91each_srfi_113);make_pair(pair_736571, find_or_add_symbol("set-for-each"), &cvar_736570);
-  make_cvar(cvar_736572, (object *)&__glo_sob_91for_91each_srfi_113);make_pair(pair_736573, find_or_add_symbol("sob-for-each"), &cvar_736572);
-  make_cvar(cvar_736574, (object *)&__glo_do_91n_91times_srfi_113);make_pair(pair_736575, find_or_add_symbol("do-n-times"), &cvar_736574);
-  make_cvar(cvar_736576, (object *)&__glo_bag_91every_127_srfi_113);make_pair(pair_736577, find_or_add_symbol("bag-every?"), &cvar_736576);
-  make_cvar(cvar_736578, (object *)&__glo_set_91every_127_srfi_113);make_pair(pair_736579, find_or_add_symbol("set-every?"), &cvar_736578);
-  make_cvar(cvar_736580, (object *)&__glo_sob_91every_127_srfi_113);make_pair(pair_736581, find_or_add_symbol("sob-every?"), &cvar_736580);
-  make_cvar(cvar_736582, (object *)&__glo_bag_91any_127_srfi_113);make_pair(pair_736583, find_or_add_symbol("bag-any?"), &cvar_736582);
-  make_cvar(cvar_736584, (object *)&__glo_set_91any_127_srfi_113);make_pair(pair_736585, find_or_add_symbol("set-any?"), &cvar_736584);
-  make_cvar(cvar_736586, (object *)&__glo_sob_91any_127_srfi_113);make_pair(pair_736587, find_or_add_symbol("sob-any?"), &cvar_736586);
-  make_cvar(cvar_736588, (object *)&__glo_bag_91count_srfi_113);make_pair(pair_736589, find_or_add_symbol("bag-count"), &cvar_736588);
-  make_cvar(cvar_736590, (object *)&__glo_set_91count_srfi_113);make_pair(pair_736591, find_or_add_symbol("set-count"), &cvar_736590);
-  make_cvar(cvar_736592, (object *)&__glo_sob_91count_srfi_113);make_pair(pair_736593, find_or_add_symbol("sob-count"), &cvar_736592);
-  make_cvar(cvar_736594, (object *)&__glo_bag_91find_srfi_113);make_pair(pair_736595, find_or_add_symbol("bag-find"), &cvar_736594);
-  make_cvar(cvar_736596, (object *)&__glo_set_91find_srfi_113);make_pair(pair_736597, find_or_add_symbol("set-find"), &cvar_736596);
-  make_cvar(cvar_736598, (object *)&__glo_sob_91find_srfi_113);make_pair(pair_736599, find_or_add_symbol("sob-find"), &cvar_736598);
-  make_cvar(cvar_736600, (object *)&__glo_bag_91size_srfi_113);make_pair(pair_736601, find_or_add_symbol("bag-size"), &cvar_736600);
-  make_cvar(cvar_736602, (object *)&__glo_set_91size_srfi_113);make_pair(pair_736603, find_or_add_symbol("set-size"), &cvar_736602);
-  make_cvar(cvar_736604, (object *)&__glo_sob_91size_srfi_113);make_pair(pair_736605, find_or_add_symbol("sob-size"), &cvar_736604);
-  make_cvar(cvar_736606, (object *)&__glo_bag_91search_67_srfi_113);make_pair(pair_736607, find_or_add_symbol("bag-search!"), &cvar_736606);
-  make_cvar(cvar_736608, (object *)&__glo_set_91search_67_srfi_113);make_pair(pair_736609, find_or_add_symbol("set-search!"), &cvar_736608);
-  make_cvar(cvar_736610, (object *)&__glo_sob_91search_67_srfi_113);make_pair(pair_736611, find_or_add_symbol("sob-search!"), &cvar_736610);
-  make_cvar(cvar_736612, (object *)&__glo_missing_srfi_113);make_pair(pair_736613, find_or_add_symbol("missing"), &cvar_736612);
-  make_cvar(cvar_736614, (object *)&__glo_bag_91delete_91all_srfi_113);make_pair(pair_736615, find_or_add_symbol("bag-delete-all"), &cvar_736614);
-  make_cvar(cvar_736616, (object *)&__glo_set_91delete_91all_srfi_113);make_pair(pair_736617, find_or_add_symbol("set-delete-all"), &cvar_736616);
-  make_cvar(cvar_736618, (object *)&__glo_bag_91delete_srfi_113);make_pair(pair_736619, find_or_add_symbol("bag-delete"), &cvar_736618);
-  make_cvar(cvar_736620, (object *)&__glo_set_91delete_srfi_113);make_pair(pair_736621, find_or_add_symbol("set-delete"), &cvar_736620);
-  make_cvar(cvar_736622, (object *)&__glo_bag_91delete_91all_67_srfi_113);make_pair(pair_736623, find_or_add_symbol("bag-delete-all!"), &cvar_736622);
-  make_cvar(cvar_736624, (object *)&__glo_set_91delete_91all_67_srfi_113);make_pair(pair_736625, find_or_add_symbol("set-delete-all!"), &cvar_736624);
-  make_cvar(cvar_736626, (object *)&__glo_bag_91delete_67_srfi_113);make_pair(pair_736627, find_or_add_symbol("bag-delete!"), &cvar_736626);
-  make_cvar(cvar_736628, (object *)&__glo_set_91delete_67_srfi_113);make_pair(pair_736629, find_or_add_symbol("set-delete!"), &cvar_736628);
-  make_cvar(cvar_736630, (object *)&__glo_sob_91delete_91all_67_srfi_113);make_pair(pair_736631, find_or_add_symbol("sob-delete-all!"), &cvar_736630);
-  make_cvar(cvar_736632, (object *)&__glo_bag_91replace_srfi_113);make_pair(pair_736633, find_or_add_symbol("bag-replace"), &cvar_736632);
-  make_cvar(cvar_736634, (object *)&__glo_set_91replace_srfi_113);make_pair(pair_736635, find_or_add_symbol("set-replace"), &cvar_736634);
-  make_cvar(cvar_736636, (object *)&__glo_bag_91replace_67_srfi_113);make_pair(pair_736637, find_or_add_symbol("bag-replace!"), &cvar_736636);
-  make_cvar(cvar_736638, (object *)&__glo_set_91replace_67_srfi_113);make_pair(pair_736639, find_or_add_symbol("set-replace!"), &cvar_736638);
-  make_cvar(cvar_736640, (object *)&__glo_sob_91replace_67_srfi_113);make_pair(pair_736641, find_or_add_symbol("sob-replace!"), &cvar_736640);
-  make_cvar(cvar_736642, (object *)&__glo_bag_91adjoin_srfi_113);make_pair(pair_736643, find_or_add_symbol("bag-adjoin"), &cvar_736642);
-  make_cvar(cvar_736644, (object *)&__glo_set_91adjoin_srfi_113);make_pair(pair_736645, find_or_add_symbol("set-adjoin"), &cvar_736644);
-  make_cvar(cvar_736646, (object *)&__glo_bag_91adjoin_67_srfi_113);make_pair(pair_736647, find_or_add_symbol("bag-adjoin!"), &cvar_736646);
-  make_cvar(cvar_736648, (object *)&__glo_set_91adjoin_67_srfi_113);make_pair(pair_736649, find_or_add_symbol("set-adjoin!"), &cvar_736648);
-  make_cvar(cvar_736650, (object *)&__glo_sob_91adjoin_91all_67_srfi_113);make_pair(pair_736651, find_or_add_symbol("sob-adjoin-all!"), &cvar_736650);
-  make_cvar(cvar_736652, (object *)&__glo_bag_91decrement_67_srfi_113);make_pair(pair_736653, find_or_add_symbol("bag-decrement!"), &cvar_736652);
-  make_cvar(cvar_736654, (object *)&__glo_bag_91increment_67_srfi_113);make_pair(pair_736655, find_or_add_symbol("bag-increment!"), &cvar_736654);
-  make_cvar(cvar_736656, (object *)&__glo_nonpositive_91keys_srfi_113);make_pair(pair_736657, find_or_add_symbol("nonpositive-keys"), &cvar_736656);
-  make_cvar(cvar_736658, (object *)&__glo_sob_91cleanup_67_srfi_113);make_pair(pair_736659, find_or_add_symbol("sob-cleanup!"), &cvar_736658);
-  make_cvar(cvar_736660, (object *)&__glo_sob_91decrement_67_srfi_113);make_pair(pair_736661, find_or_add_symbol("sob-decrement!"), &cvar_736660);
-  make_cvar(cvar_736662, (object *)&__glo_sob_91increment_67_srfi_113);make_pair(pair_736663, find_or_add_symbol("sob-increment!"), &cvar_736662);
-  make_cvar(cvar_736664, (object *)&__glo_bag_91element_91comparator_srfi_113);make_pair(pair_736665, find_or_add_symbol("bag-element-comparator"), &cvar_736664);
-  make_cvar(cvar_736666, (object *)&__glo_set_91element_91comparator_srfi_113);make_pair(pair_736667, find_or_add_symbol("set-element-comparator"), &cvar_736666);
-  make_cvar(cvar_736668, (object *)&__glo_bag_91member_srfi_113);make_pair(pair_736669, find_or_add_symbol("bag-member"), &cvar_736668);
-  make_cvar(cvar_736670, (object *)&__glo_set_91member_srfi_113);make_pair(pair_736671, find_or_add_symbol("set-member"), &cvar_736670);
-  make_cvar(cvar_736672, (object *)&__glo_sob_91member_srfi_113);make_pair(pair_736673, find_or_add_symbol("sob-member"), &cvar_736672);
-  make_cvar(cvar_736674, (object *)&__glo_bag_91disjoint_127_srfi_113);make_pair(pair_736675, find_or_add_symbol("bag-disjoint?"), &cvar_736674);
-  make_cvar(cvar_736676, (object *)&__glo_set_91disjoint_127_srfi_113);make_pair(pair_736677, find_or_add_symbol("set-disjoint?"), &cvar_736676);
-  make_cvar(cvar_736678, (object *)&__glo_sob_91half_91disjoint_127_srfi_113);make_pair(pair_736679, find_or_add_symbol("sob-half-disjoint?"), &cvar_736678);
-  make_cvar(cvar_736680, (object *)&__glo_bag_91empty_127_srfi_113);make_pair(pair_736681, find_or_add_symbol("bag-empty?"), &cvar_736680);
-  make_cvar(cvar_736682, (object *)&__glo_set_91empty_127_srfi_113);make_pair(pair_736683, find_or_add_symbol("set-empty?"), &cvar_736682);
-  make_cvar(cvar_736684, (object *)&__glo_sob_91empty_127_srfi_113);make_pair(pair_736685, find_or_add_symbol("sob-empty?"), &cvar_736684);
-  make_cvar(cvar_736686, (object *)&__glo_bag_91contains_127_srfi_113);make_pair(pair_736687, find_or_add_symbol("bag-contains?"), &cvar_736686);
-  make_cvar(cvar_736688, (object *)&__glo_set_91contains_127_srfi_113);make_pair(pair_736689, find_or_add_symbol("set-contains?"), &cvar_736688);
-  make_cvar(cvar_736690, (object *)&__glo_sob_91contains_127_srfi_113);make_pair(pair_736691, find_or_add_symbol("sob-contains?"), &cvar_736690);
-  make_cvar(cvar_736692, (object *)&__glo_bag_91unfold_srfi_113);make_pair(pair_736693, find_or_add_symbol("bag-unfold"), &cvar_736692);
-  make_cvar(cvar_736694, (object *)&__glo_set_91unfold_srfi_113);make_pair(pair_736695, find_or_add_symbol("set-unfold"), &cvar_736694);
-  make_cvar(cvar_736696, (object *)&__glo_sob_91unfold_srfi_113);make_pair(pair_736697, find_or_add_symbol("sob-unfold"), &cvar_736696);
-  make_cvar(cvar_736698, (object *)&__glo_bag_srfi_113);make_pair(pair_736699, find_or_add_symbol("bag"), &cvar_736698);
-  make_cvar(cvar_736700, (object *)&__glo_set_srfi_113);make_pair(pair_736701, find_or_add_symbol("set"), &cvar_736700);
-  make_cvar(cvar_736702, (object *)&__glo_sob_91empty_91copy_srfi_113);make_pair(pair_736703, find_or_add_symbol("sob-empty-copy"), &cvar_736702);
-  make_cvar(cvar_736704, (object *)&__glo_bag_91copy_srfi_113);make_pair(pair_736705, find_or_add_symbol("bag-copy"), &cvar_736704);
-  make_cvar(cvar_736706, (object *)&__glo_set_91copy_srfi_113);make_pair(pair_736707, find_or_add_symbol("set-copy"), &cvar_736706);
-  make_cvar(cvar_736708, (object *)&__glo_sob_91copy_srfi_113);make_pair(pair_736709, find_or_add_symbol("sob-copy"), &cvar_736708);
-  make_cvar(cvar_736710, (object *)&__glo_make_91sob_srfi_113);make_pair(pair_736711, find_or_add_symbol("make-sob"), &cvar_736710);
-  make_cvar(cvar_736712, (object *)&__glo_check_91element_srfi_113);make_pair(pair_736713, find_or_add_symbol("check-element"), &cvar_736712);
-  make_cvar(cvar_736714, (object *)&__glo_check_91same_91comparator_srfi_113);make_pair(pair_736715, find_or_add_symbol("check-same-comparator"), &cvar_736714);
-  make_cvar(cvar_736716, (object *)&__glo_sob_91check_91comparators_srfi_113);make_pair(pair_736717, find_or_add_symbol("sob-check-comparators"), &cvar_736716);
-  make_cvar(cvar_736718, (object *)&__glo_check_91all_91bags_srfi_113);make_pair(pair_736719, find_or_add_symbol("check-all-bags"), &cvar_736718);
-  make_cvar(cvar_736720, (object *)&__glo_check_91all_91sets_srfi_113);make_pair(pair_736721, find_or_add_symbol("check-all-sets"), &cvar_736720);
-  make_cvar(cvar_736722, (object *)&__glo_check_91bag_srfi_113);make_pair(pair_736723, find_or_add_symbol("check-bag"), &cvar_736722);
-  make_cvar(cvar_736724, (object *)&__glo_check_91set_srfi_113);make_pair(pair_736725, find_or_add_symbol("check-set"), &cvar_736724);
-  make_cvar(cvar_736726, (object *)&__glo_bag_127_srfi_113);make_pair(pair_736727, find_or_add_symbol("bag?"), &cvar_736726);
-  make_cvar(cvar_736728, (object *)&__glo_set_127_srfi_113);make_pair(pair_736729, find_or_add_symbol("set?"), &cvar_736728);
-  make_cvar(cvar_736730, (object *)&__glo_raw_91make_91sob_srfi_113);make_pair(pair_736731, find_or_add_symbol("raw-make-sob"), &cvar_736730);
-  make_cvar(cvar_736732, (object *)&__glo_sob_91multi_127_srfi_113);make_pair(pair_736733, find_or_add_symbol("sob-multi?"), &cvar_736732);
-  make_cvar(cvar_736734, (object *)&__glo_sob_91comparator_srfi_113);make_pair(pair_736735, find_or_add_symbol("sob-comparator"), &cvar_736734);
-  make_cvar(cvar_736736, (object *)&__glo_sob_91hash_91table_srfi_113);make_pair(pair_736737, find_or_add_symbol("sob-hash-table"), &cvar_736736);
-  make_cvar(cvar_736738, (object *)&__glo_sob_127_srfi_113);make_pair(pair_736739, find_or_add_symbol("sob?"), &cvar_736738);
-  make_cvar(cvar_736740, (object *)&__glo_sob_srfi_113);make_pair(pair_736741, find_or_add_symbol("sob"), &cvar_736740);
-  make_cvar(cvar_736742, (object *)&__glo_hash_91table_91for_91each_srfi_113);make_pair(pair_736743, find_or_add_symbol("hash-table-for-each"), &cvar_736742);
-  make_cvar(cvar_736744, (object *)&__glo_hash_91table_91contains_127_srfi_113);make_pair(pair_736745, find_or_add_symbol("hash-table-contains?"), &cvar_736744);
-  make_cvar(cvar_736746, (object *)&__glo_modulizer_srfi_113);make_pair(pair_736747, find_or_add_symbol("modulizer"), &cvar_736746);
-  make_cvar(cvar_736748, (object *)&__glo_make_91hash_91table_95comparator_srfi_113);make_pair(pair_736749, find_or_add_symbol("make-hash-table/comparator"), &cvar_736748);
-make_pair(c_736939, &pair_736370,Cyc_global_variables);
-make_pair(c_736938, &pair_736373, &c_736939);
-make_pair(c_736937, &pair_736375, &c_736938);
-make_pair(c_736936, &pair_736377, &c_736937);
-make_pair(c_736935, &pair_736379, &c_736936);
-make_pair(c_736934, &pair_736381, &c_736935);
-make_pair(c_736933, &pair_736383, &c_736934);
-make_pair(c_736932, &pair_736385, &c_736933);
-make_pair(c_736931, &pair_736387, &c_736932);
-make_pair(c_736930, &pair_736389, &c_736931);
-make_pair(c_736929, &pair_736391, &c_736930);
-make_pair(c_736928, &pair_736393, &c_736929);
-make_pair(c_736927, &pair_736395, &c_736928);
-make_pair(c_736926, &pair_736397, &c_736927);
-make_pair(c_736925, &pair_736399, &c_736926);
-make_pair(c_736924, &pair_736401, &c_736925);
-make_pair(c_736923, &pair_736403, &c_736924);
-make_pair(c_736922, &pair_736405, &c_736923);
-make_pair(c_736921, &pair_736407, &c_736922);
-make_pair(c_736920, &pair_736409, &c_736921);
-make_pair(c_736919, &pair_736411, &c_736920);
-make_pair(c_736918, &pair_736413, &c_736919);
-make_pair(c_736917, &pair_736415, &c_736918);
-make_pair(c_736916, &pair_736417, &c_736917);
-make_pair(c_736915, &pair_736419, &c_736916);
-make_pair(c_736914, &pair_736421, &c_736915);
-make_pair(c_736913, &pair_736423, &c_736914);
-make_pair(c_736912, &pair_736425, &c_736913);
-make_pair(c_736911, &pair_736427, &c_736912);
-make_pair(c_736910, &pair_736429, &c_736911);
-make_pair(c_736909, &pair_736431, &c_736910);
-make_pair(c_736908, &pair_736433, &c_736909);
-make_pair(c_736907, &pair_736435, &c_736908);
-make_pair(c_736906, &pair_736437, &c_736907);
-make_pair(c_736905, &pair_736439, &c_736906);
-make_pair(c_736904, &pair_736441, &c_736905);
-make_pair(c_736903, &pair_736443, &c_736904);
-make_pair(c_736902, &pair_736445, &c_736903);
-make_pair(c_736901, &pair_736447, &c_736902);
-make_pair(c_736900, &pair_736449, &c_736901);
-make_pair(c_736899, &pair_736451, &c_736900);
-make_pair(c_736898, &pair_736453, &c_736899);
-make_pair(c_736897, &pair_736455, &c_736898);
-make_pair(c_736896, &pair_736457, &c_736897);
-make_pair(c_736895, &pair_736459, &c_736896);
-make_pair(c_736894, &pair_736461, &c_736895);
-make_pair(c_736893, &pair_736463, &c_736894);
-make_pair(c_736892, &pair_736465, &c_736893);
-make_pair(c_736891, &pair_736467, &c_736892);
-make_pair(c_736890, &pair_736469, &c_736891);
-make_pair(c_736889, &pair_736471, &c_736890);
-make_pair(c_736888, &pair_736473, &c_736889);
-make_pair(c_736887, &pair_736475, &c_736888);
-make_pair(c_736886, &pair_736477, &c_736887);
-make_pair(c_736885, &pair_736479, &c_736886);
-make_pair(c_736884, &pair_736481, &c_736885);
-make_pair(c_736883, &pair_736483, &c_736884);
-make_pair(c_736882, &pair_736485, &c_736883);
-make_pair(c_736881, &pair_736487, &c_736882);
-make_pair(c_736880, &pair_736489, &c_736881);
-make_pair(c_736879, &pair_736491, &c_736880);
-make_pair(c_736878, &pair_736493, &c_736879);
-make_pair(c_736877, &pair_736495, &c_736878);
-make_pair(c_736876, &pair_736497, &c_736877);
-make_pair(c_736875, &pair_736499, &c_736876);
-make_pair(c_736874, &pair_736501, &c_736875);
-make_pair(c_736873, &pair_736503, &c_736874);
-make_pair(c_736872, &pair_736505, &c_736873);
-make_pair(c_736871, &pair_736507, &c_736872);
-make_pair(c_736870, &pair_736509, &c_736871);
-make_pair(c_736869, &pair_736511, &c_736870);
-make_pair(c_736868, &pair_736513, &c_736869);
-make_pair(c_736867, &pair_736515, &c_736868);
-make_pair(c_736866, &pair_736517, &c_736867);
-make_pair(c_736865, &pair_736519, &c_736866);
-make_pair(c_736864, &pair_736521, &c_736865);
-make_pair(c_736863, &pair_736523, &c_736864);
-make_pair(c_736862, &pair_736525, &c_736863);
-make_pair(c_736861, &pair_736527, &c_736862);
-make_pair(c_736860, &pair_736529, &c_736861);
-make_pair(c_736859, &pair_736531, &c_736860);
-make_pair(c_736858, &pair_736533, &c_736859);
-make_pair(c_736857, &pair_736535, &c_736858);
-make_pair(c_736856, &pair_736537, &c_736857);
-make_pair(c_736855, &pair_736539, &c_736856);
-make_pair(c_736854, &pair_736541, &c_736855);
-make_pair(c_736853, &pair_736543, &c_736854);
-make_pair(c_736852, &pair_736545, &c_736853);
-make_pair(c_736851, &pair_736547, &c_736852);
-make_pair(c_736850, &pair_736549, &c_736851);
-make_pair(c_736849, &pair_736551, &c_736850);
-make_pair(c_736848, &pair_736553, &c_736849);
-make_pair(c_736847, &pair_736555, &c_736848);
-make_pair(c_736846, &pair_736557, &c_736847);
-make_pair(c_736845, &pair_736559, &c_736846);
-make_pair(c_736844, &pair_736561, &c_736845);
-make_pair(c_736843, &pair_736563, &c_736844);
-make_pair(c_736842, &pair_736565, &c_736843);
-make_pair(c_736841, &pair_736567, &c_736842);
-make_pair(c_736840, &pair_736569, &c_736841);
-make_pair(c_736839, &pair_736571, &c_736840);
-make_pair(c_736838, &pair_736573, &c_736839);
-make_pair(c_736837, &pair_736575, &c_736838);
-make_pair(c_736836, &pair_736577, &c_736837);
-make_pair(c_736835, &pair_736579, &c_736836);
-make_pair(c_736834, &pair_736581, &c_736835);
-make_pair(c_736833, &pair_736583, &c_736834);
-make_pair(c_736832, &pair_736585, &c_736833);
-make_pair(c_736831, &pair_736587, &c_736832);
-make_pair(c_736830, &pair_736589, &c_736831);
-make_pair(c_736829, &pair_736591, &c_736830);
-make_pair(c_736828, &pair_736593, &c_736829);
-make_pair(c_736827, &pair_736595, &c_736828);
-make_pair(c_736826, &pair_736597, &c_736827);
-make_pair(c_736825, &pair_736599, &c_736826);
-make_pair(c_736824, &pair_736601, &c_736825);
-make_pair(c_736823, &pair_736603, &c_736824);
-make_pair(c_736822, &pair_736605, &c_736823);
-make_pair(c_736821, &pair_736607, &c_736822);
-make_pair(c_736820, &pair_736609, &c_736821);
-make_pair(c_736819, &pair_736611, &c_736820);
-make_pair(c_736818, &pair_736613, &c_736819);
-make_pair(c_736817, &pair_736615, &c_736818);
-make_pair(c_736816, &pair_736617, &c_736817);
-make_pair(c_736815, &pair_736619, &c_736816);
-make_pair(c_736814, &pair_736621, &c_736815);
-make_pair(c_736813, &pair_736623, &c_736814);
-make_pair(c_736812, &pair_736625, &c_736813);
-make_pair(c_736811, &pair_736627, &c_736812);
-make_pair(c_736810, &pair_736629, &c_736811);
-make_pair(c_736809, &pair_736631, &c_736810);
-make_pair(c_736808, &pair_736633, &c_736809);
-make_pair(c_736807, &pair_736635, &c_736808);
-make_pair(c_736806, &pair_736637, &c_736807);
-make_pair(c_736805, &pair_736639, &c_736806);
-make_pair(c_736804, &pair_736641, &c_736805);
-make_pair(c_736803, &pair_736643, &c_736804);
-make_pair(c_736802, &pair_736645, &c_736803);
-make_pair(c_736801, &pair_736647, &c_736802);
-make_pair(c_736800, &pair_736649, &c_736801);
-make_pair(c_736799, &pair_736651, &c_736800);
-make_pair(c_736798, &pair_736653, &c_736799);
-make_pair(c_736797, &pair_736655, &c_736798);
-make_pair(c_736796, &pair_736657, &c_736797);
-make_pair(c_736795, &pair_736659, &c_736796);
-make_pair(c_736794, &pair_736661, &c_736795);
-make_pair(c_736793, &pair_736663, &c_736794);
-make_pair(c_736792, &pair_736665, &c_736793);
-make_pair(c_736791, &pair_736667, &c_736792);
-make_pair(c_736790, &pair_736669, &c_736791);
-make_pair(c_736789, &pair_736671, &c_736790);
-make_pair(c_736788, &pair_736673, &c_736789);
-make_pair(c_736787, &pair_736675, &c_736788);
-make_pair(c_736786, &pair_736677, &c_736787);
-make_pair(c_736785, &pair_736679, &c_736786);
-make_pair(c_736784, &pair_736681, &c_736785);
-make_pair(c_736783, &pair_736683, &c_736784);
-make_pair(c_736782, &pair_736685, &c_736783);
-make_pair(c_736781, &pair_736687, &c_736782);
-make_pair(c_736780, &pair_736689, &c_736781);
-make_pair(c_736779, &pair_736691, &c_736780);
-make_pair(c_736778, &pair_736693, &c_736779);
-make_pair(c_736777, &pair_736695, &c_736778);
-make_pair(c_736776, &pair_736697, &c_736777);
-make_pair(c_736775, &pair_736699, &c_736776);
-make_pair(c_736774, &pair_736701, &c_736775);
-make_pair(c_736773, &pair_736703, &c_736774);
-make_pair(c_736772, &pair_736705, &c_736773);
-make_pair(c_736771, &pair_736707, &c_736772);
-make_pair(c_736770, &pair_736709, &c_736771);
-make_pair(c_736769, &pair_736711, &c_736770);
-make_pair(c_736768, &pair_736713, &c_736769);
-make_pair(c_736767, &pair_736715, &c_736768);
-make_pair(c_736766, &pair_736717, &c_736767);
-make_pair(c_736765, &pair_736719, &c_736766);
-make_pair(c_736764, &pair_736721, &c_736765);
-make_pair(c_736763, &pair_736723, &c_736764);
-make_pair(c_736762, &pair_736725, &c_736763);
-make_pair(c_736761, &pair_736727, &c_736762);
-make_pair(c_736760, &pair_736729, &c_736761);
-make_pair(c_736759, &pair_736731, &c_736760);
-make_pair(c_736758, &pair_736733, &c_736759);
-make_pair(c_736757, &pair_736735, &c_736758);
-make_pair(c_736756, &pair_736737, &c_736757);
-make_pair(c_736755, &pair_736739, &c_736756);
-make_pair(c_736754, &pair_736741, &c_736755);
-make_pair(c_736753, &pair_736743, &c_736754);
-make_pair(c_736752, &pair_736745, &c_736753);
-make_pair(c_736751, &pair_736747, &c_736752);
-make_pair(c_736750, &pair_736749, &c_736751);
-Cyc_global_variables = &c_736750;
+  mclosure0(clo_736380, c_srfi113_inlinable_lambdas); make_pair(pair_736379, find_or_add_symbol("c_srfi113_inlinable_lambdas"), &clo_736380);
+  make_cvar(cvar_736381, (object *)&__glo_lib_91init_117srfi113_srfi_113);make_pair(pair_736382, find_or_add_symbol("lib-init:srfi113"), &cvar_736381);
+  make_cvar(cvar_736383, (object *)&__glo_bag_91comparator_srfi_113);make_pair(pair_736384, find_or_add_symbol("bag-comparator"), &cvar_736383);
+  make_cvar(cvar_736385, (object *)&__glo_set_91comparator_srfi_113);make_pair(pair_736386, find_or_add_symbol("set-comparator"), &cvar_736385);
+  make_cvar(cvar_736387, (object *)&__glo_sob_91hash_srfi_113);make_pair(pair_736388, find_or_add_symbol("sob-hash"), &cvar_736387);
+  make_cvar(cvar_736389, (object *)&__glo_alist_91_125bag_srfi_113);make_pair(pair_736390, find_or_add_symbol("alist->bag"), &cvar_736389);
+  make_cvar(cvar_736391, (object *)&__glo_bag_91_125alist_srfi_113);make_pair(pair_736392, find_or_add_symbol("bag->alist"), &cvar_736391);
+  make_cvar(cvar_736393, (object *)&__glo_set_91_125bag_67_srfi_113);make_pair(pair_736394, find_or_add_symbol("set->bag!"), &cvar_736393);
+  make_cvar(cvar_736395, (object *)&__glo_set_91_125bag_srfi_113);make_pair(pair_736396, find_or_add_symbol("set->bag"), &cvar_736395);
+  make_cvar(cvar_736397, (object *)&__glo_bag_91_125set_srfi_113);make_pair(pair_736398, find_or_add_symbol("bag->set"), &cvar_736397);
+  make_cvar(cvar_736399, (object *)&__glo_bag_91fold_91unique_srfi_113);make_pair(pair_736400, find_or_add_symbol("bag-fold-unique"), &cvar_736399);
+  make_cvar(cvar_736401, (object *)&__glo_bag_91for_91each_91unique_srfi_113);make_pair(pair_736402, find_or_add_symbol("bag-for-each-unique"), &cvar_736401);
+  make_cvar(cvar_736403, (object *)&__glo_bag_91element_91count_srfi_113);make_pair(pair_736404, find_or_add_symbol("bag-element-count"), &cvar_736403);
+  make_cvar(cvar_736405, (object *)&__glo_bag_91unique_91size_srfi_113);make_pair(pair_736406, find_or_add_symbol("bag-unique-size"), &cvar_736405);
+  make_cvar(cvar_736407, (object *)&__glo_bag_91product_67_srfi_113);make_pair(pair_736408, find_or_add_symbol("bag-product!"), &cvar_736407);
+  make_cvar(cvar_736409, (object *)&__glo_bag_91product_srfi_113);make_pair(pair_736410, find_or_add_symbol("bag-product"), &cvar_736409);
+  make_cvar(cvar_736411, (object *)&__glo_valid_91n_srfi_113);make_pair(pair_736412, find_or_add_symbol("valid-n"), &cvar_736411);
+  make_cvar(cvar_736413, (object *)&__glo_sob_91product_67_srfi_113);make_pair(pair_736414, find_or_add_symbol("sob-product!"), &cvar_736413);
+  make_cvar(cvar_736415, (object *)&__glo_bag_91xor_67_srfi_113);make_pair(pair_736416, find_or_add_symbol("bag-xor!"), &cvar_736415);
+  make_cvar(cvar_736417, (object *)&__glo_set_91xor_67_srfi_113);make_pair(pair_736418, find_or_add_symbol("set-xor!"), &cvar_736417);
+  make_cvar(cvar_736419, (object *)&__glo_bag_91xor_srfi_113);make_pair(pair_736420, find_or_add_symbol("bag-xor"), &cvar_736419);
+  make_cvar(cvar_736421, (object *)&__glo_set_91xor_srfi_113);make_pair(pair_736422, find_or_add_symbol("set-xor"), &cvar_736421);
+  make_cvar(cvar_736423, (object *)&__glo_sob_91xor_67_srfi_113);make_pair(pair_736424, find_or_add_symbol("sob-xor!"), &cvar_736423);
+  make_cvar(cvar_736425, (object *)&__glo_bag_91sum_67_srfi_113);make_pair(pair_736426, find_or_add_symbol("bag-sum!"), &cvar_736425);
+  make_cvar(cvar_736427, (object *)&__glo_sob_91sum_67_srfi_113);make_pair(pair_736428, find_or_add_symbol("sob-sum!"), &cvar_736427);
+  make_cvar(cvar_736429, (object *)&__glo_bag_91sum_srfi_113);make_pair(pair_736430, find_or_add_symbol("bag-sum"), &cvar_736429);
+  make_cvar(cvar_736431, (object *)&__glo_dyadic_91sob_91sum_67_srfi_113);make_pair(pair_736432, find_or_add_symbol("dyadic-sob-sum!"), &cvar_736431);
+  make_cvar(cvar_736433, (object *)&__glo_sob_91sum_srfi_113);make_pair(pair_736434, find_or_add_symbol("sob-sum"), &cvar_736433);
+  make_cvar(cvar_736435, (object *)&__glo_bag_91difference_67_srfi_113);make_pair(pair_736436, find_or_add_symbol("bag-difference!"), &cvar_736435);
+  make_cvar(cvar_736437, (object *)&__glo_set_91difference_67_srfi_113);make_pair(pair_736438, find_or_add_symbol("set-difference!"), &cvar_736437);
+  make_cvar(cvar_736439, (object *)&__glo_sob_91difference_67_srfi_113);make_pair(pair_736440, find_or_add_symbol("sob-difference!"), &cvar_736439);
+  make_cvar(cvar_736441, (object *)&__glo_bag_91difference_srfi_113);make_pair(pair_736442, find_or_add_symbol("bag-difference"), &cvar_736441);
+  make_cvar(cvar_736443, (object *)&__glo_set_91difference_srfi_113);make_pair(pair_736444, find_or_add_symbol("set-difference"), &cvar_736443);
+  make_cvar(cvar_736445, (object *)&__glo_dyadic_91sob_91difference_67_srfi_113);make_pair(pair_736446, find_or_add_symbol("dyadic-sob-difference!"), &cvar_736445);
+  make_cvar(cvar_736447, (object *)&__glo_sob_91difference_srfi_113);make_pair(pair_736448, find_or_add_symbol("sob-difference"), &cvar_736447);
+  make_cvar(cvar_736449, (object *)&__glo_bag_91intersection_67_srfi_113);make_pair(pair_736450, find_or_add_symbol("bag-intersection!"), &cvar_736449);
+  make_cvar(cvar_736451, (object *)&__glo_set_91intersection_67_srfi_113);make_pair(pair_736452, find_or_add_symbol("set-intersection!"), &cvar_736451);
+  make_cvar(cvar_736453, (object *)&__glo_sob_91intersection_67_srfi_113);make_pair(pair_736454, find_or_add_symbol("sob-intersection!"), &cvar_736453);
+  make_cvar(cvar_736455, (object *)&__glo_bag_91intersection_srfi_113);make_pair(pair_736456, find_or_add_symbol("bag-intersection"), &cvar_736455);
+  make_cvar(cvar_736457, (object *)&__glo_set_91intersection_srfi_113);make_pair(pair_736458, find_or_add_symbol("set-intersection"), &cvar_736457);
+  make_cvar(cvar_736459, (object *)&__glo_dyadic_91sob_91intersection_67_srfi_113);make_pair(pair_736460, find_or_add_symbol("dyadic-sob-intersection!"), &cvar_736459);
+  make_cvar(cvar_736461, (object *)&__glo_sob_91intersection_srfi_113);make_pair(pair_736462, find_or_add_symbol("sob-intersection"), &cvar_736461);
+  make_cvar(cvar_736463, (object *)&__glo_bag_91union_67_srfi_113);make_pair(pair_736464, find_or_add_symbol("bag-union!"), &cvar_736463);
+  make_cvar(cvar_736465, (object *)&__glo_set_91union_67_srfi_113);make_pair(pair_736466, find_or_add_symbol("set-union!"), &cvar_736465);
+  make_cvar(cvar_736467, (object *)&__glo_sob_91union_67_srfi_113);make_pair(pair_736468, find_or_add_symbol("sob-union!"), &cvar_736467);
+  make_cvar(cvar_736469, (object *)&__glo_bag_91union_srfi_113);make_pair(pair_736470, find_or_add_symbol("bag-union"), &cvar_736469);
+  make_cvar(cvar_736471, (object *)&__glo_set_91union_srfi_113);make_pair(pair_736472, find_or_add_symbol("set-union"), &cvar_736471);
+  make_cvar(cvar_736473, (object *)&__glo_dyadic_91sob_91union_67_srfi_113);make_pair(pair_736474, find_or_add_symbol("dyadic-sob-union!"), &cvar_736473);
+  make_cvar(cvar_736475, (object *)&__glo_sob_91union_srfi_113);make_pair(pair_736476, find_or_add_symbol("sob-union"), &cvar_736475);
+  make_cvar(cvar_736477, (object *)&__glo_dyadic_91sob_125_123_127_srfi_113);make_pair(pair_736478, find_or_add_symbol("dyadic-sob>=?"), &cvar_736477);
+  make_cvar(cvar_736479, (object *)&__glo_bag_125_123_127_srfi_113);make_pair(pair_736480, find_or_add_symbol("bag>=?"), &cvar_736479);
+  make_cvar(cvar_736481, (object *)&__glo_set_125_123_127_srfi_113);make_pair(pair_736482, find_or_add_symbol("set>=?"), &cvar_736481);
+  make_cvar(cvar_736483, (object *)&__glo_sob_125_123_127_srfi_113);make_pair(pair_736484, find_or_add_symbol("sob>=?"), &cvar_736483);
+  make_cvar(cvar_736485, (object *)&__glo_dyadic_91sob_121_127_srfi_113);make_pair(pair_736486, find_or_add_symbol("dyadic-sob<?"), &cvar_736485);
+  make_cvar(cvar_736487, (object *)&__glo_bag_121_127_srfi_113);make_pair(pair_736488, find_or_add_symbol("bag<?"), &cvar_736487);
+  make_cvar(cvar_736489, (object *)&__glo_set_121_127_srfi_113);make_pair(pair_736490, find_or_add_symbol("set<?"), &cvar_736489);
+  make_cvar(cvar_736491, (object *)&__glo_sob_121_127_srfi_113);make_pair(pair_736492, find_or_add_symbol("sob<?"), &cvar_736491);
+  make_cvar(cvar_736493, (object *)&__glo_dyadic_91sob_125_127_srfi_113);make_pair(pair_736494, find_or_add_symbol("dyadic-sob>?"), &cvar_736493);
+  make_cvar(cvar_736495, (object *)&__glo_bag_125_127_srfi_113);make_pair(pair_736496, find_or_add_symbol("bag>?"), &cvar_736495);
+  make_cvar(cvar_736497, (object *)&__glo_set_125_127_srfi_113);make_pair(pair_736498, find_or_add_symbol("set>?"), &cvar_736497);
+  make_cvar(cvar_736499, (object *)&__glo_sob_125_127_srfi_113);make_pair(pair_736500, find_or_add_symbol("sob>?"), &cvar_736499);
+  make_cvar(cvar_736501, (object *)&__glo_dyadic_91sob_121_123_127_srfi_113);make_pair(pair_736502, find_or_add_symbol("dyadic-sob<=?"), &cvar_736501);
+  make_cvar(cvar_736503, (object *)&__glo_bag_121_123_127_srfi_113);make_pair(pair_736504, find_or_add_symbol("bag<=?"), &cvar_736503);
+  make_cvar(cvar_736505, (object *)&__glo_set_121_123_127_srfi_113);make_pair(pair_736506, find_or_add_symbol("set<=?"), &cvar_736505);
+  make_cvar(cvar_736507, (object *)&__glo_sob_121_123_127_srfi_113);make_pair(pair_736508, find_or_add_symbol("sob<=?"), &cvar_736507);
+  make_cvar(cvar_736509, (object *)&__glo_dyadic_91sob_123_127_srfi_113);make_pair(pair_736510, find_or_add_symbol("dyadic-sob=?"), &cvar_736509);
+  make_cvar(cvar_736511, (object *)&__glo_bag_123_127_srfi_113);make_pair(pair_736512, find_or_add_symbol("bag=?"), &cvar_736511);
+  make_cvar(cvar_736513, (object *)&__glo_set_123_127_srfi_113);make_pair(pair_736514, find_or_add_symbol("set=?"), &cvar_736513);
+  make_cvar(cvar_736515, (object *)&__glo_sob_123_127_srfi_113);make_pair(pair_736516, find_or_add_symbol("sob=?"), &cvar_736515);
+  make_cvar(cvar_736517, (object *)&__glo_list_91_125bag_67_srfi_113);make_pair(pair_736518, find_or_add_symbol("list->bag!"), &cvar_736517);
+  make_cvar(cvar_736519, (object *)&__glo_list_91_125set_67_srfi_113);make_pair(pair_736520, find_or_add_symbol("list->set!"), &cvar_736519);
+  make_cvar(cvar_736521, (object *)&__glo_list_91_125bag_srfi_113);make_pair(pair_736522, find_or_add_symbol("list->bag"), &cvar_736521);
+  make_cvar(cvar_736523, (object *)&__glo_list_91_125set_srfi_113);make_pair(pair_736524, find_or_add_symbol("list->set"), &cvar_736523);
+  make_cvar(cvar_736525, (object *)&__glo_list_91_125sob_67_srfi_113);make_pair(pair_736526, find_or_add_symbol("list->sob!"), &cvar_736525);
+  make_cvar(cvar_736527, (object *)&__glo_bag_91_125list_srfi_113);make_pair(pair_736528, find_or_add_symbol("bag->list"), &cvar_736527);
+  make_cvar(cvar_736529, (object *)&__glo_set_91_125list_srfi_113);make_pair(pair_736530, find_or_add_symbol("set->list"), &cvar_736529);
+  make_cvar(cvar_736531, (object *)&__glo_sob_91_125list_srfi_113);make_pair(pair_736532, find_or_add_symbol("sob->list"), &cvar_736531);
+  make_cvar(cvar_736533, (object *)&__glo_bag_91partition_67_srfi_113);make_pair(pair_736534, find_or_add_symbol("bag-partition!"), &cvar_736533);
+  make_cvar(cvar_736535, (object *)&__glo_set_91partition_67_srfi_113);make_pair(pair_736536, find_or_add_symbol("set-partition!"), &cvar_736535);
+  make_cvar(cvar_736537, (object *)&__glo_sob_91partition_67_srfi_113);make_pair(pair_736538, find_or_add_symbol("sob-partition!"), &cvar_736537);
+  make_cvar(cvar_736539, (object *)&__glo_bag_91partition_srfi_113);make_pair(pair_736540, find_or_add_symbol("bag-partition"), &cvar_736539);
+  make_cvar(cvar_736541, (object *)&__glo_set_91partition_srfi_113);make_pair(pair_736542, find_or_add_symbol("set-partition"), &cvar_736541);
+  make_cvar(cvar_736543, (object *)&__glo_sob_91partition_srfi_113);make_pair(pair_736544, find_or_add_symbol("sob-partition"), &cvar_736543);
+  make_cvar(cvar_736545, (object *)&__glo_bag_91remove_67_srfi_113);make_pair(pair_736546, find_or_add_symbol("bag-remove!"), &cvar_736545);
+  make_cvar(cvar_736547, (object *)&__glo_set_91remove_67_srfi_113);make_pair(pair_736548, find_or_add_symbol("set-remove!"), &cvar_736547);
+  make_cvar(cvar_736549, (object *)&__glo_bag_91filter_67_srfi_113);make_pair(pair_736550, find_or_add_symbol("bag-filter!"), &cvar_736549);
+  make_cvar(cvar_736551, (object *)&__glo_set_91filter_67_srfi_113);make_pair(pair_736552, find_or_add_symbol("set-filter!"), &cvar_736551);
+  make_cvar(cvar_736553, (object *)&__glo_sob_91filter_67_srfi_113);make_pair(pair_736554, find_or_add_symbol("sob-filter!"), &cvar_736553);
+  make_cvar(cvar_736555, (object *)&__glo_bag_91remove_srfi_113);make_pair(pair_736556, find_or_add_symbol("bag-remove"), &cvar_736555);
+  make_cvar(cvar_736557, (object *)&__glo_set_91remove_srfi_113);make_pair(pair_736558, find_or_add_symbol("set-remove"), &cvar_736557);
+  make_cvar(cvar_736559, (object *)&__glo_bag_91filter_srfi_113);make_pair(pair_736560, find_or_add_symbol("bag-filter"), &cvar_736559);
+  make_cvar(cvar_736561, (object *)&__glo_set_91filter_srfi_113);make_pair(pair_736562, find_or_add_symbol("set-filter"), &cvar_736561);
+  make_cvar(cvar_736563, (object *)&__glo_sob_91filter_srfi_113);make_pair(pair_736564, find_or_add_symbol("sob-filter"), &cvar_736563);
+  make_cvar(cvar_736565, (object *)&__glo_bag_91fold_srfi_113);make_pair(pair_736566, find_or_add_symbol("bag-fold"), &cvar_736565);
+  make_cvar(cvar_736567, (object *)&__glo_set_91fold_srfi_113);make_pair(pair_736568, find_or_add_symbol("set-fold"), &cvar_736567);
+  make_cvar(cvar_736569, (object *)&__glo_sob_91fold_srfi_113);make_pair(pair_736570, find_or_add_symbol("sob-fold"), &cvar_736569);
+  make_cvar(cvar_736571, (object *)&__glo_bag_91map_srfi_113);make_pair(pair_736572, find_or_add_symbol("bag-map"), &cvar_736571);
+  make_cvar(cvar_736573, (object *)&__glo_set_91map_srfi_113);make_pair(pair_736574, find_or_add_symbol("set-map"), &cvar_736573);
+  make_cvar(cvar_736575, (object *)&__glo_sob_91map_srfi_113);make_pair(pair_736576, find_or_add_symbol("sob-map"), &cvar_736575);
+  make_cvar(cvar_736577, (object *)&__glo_bag_91for_91each_srfi_113);make_pair(pair_736578, find_or_add_symbol("bag-for-each"), &cvar_736577);
+  make_cvar(cvar_736579, (object *)&__glo_set_91for_91each_srfi_113);make_pair(pair_736580, find_or_add_symbol("set-for-each"), &cvar_736579);
+  make_cvar(cvar_736581, (object *)&__glo_sob_91for_91each_srfi_113);make_pair(pair_736582, find_or_add_symbol("sob-for-each"), &cvar_736581);
+  make_cvar(cvar_736583, (object *)&__glo_do_91n_91times_srfi_113);make_pair(pair_736584, find_or_add_symbol("do-n-times"), &cvar_736583);
+  make_cvar(cvar_736585, (object *)&__glo_bag_91every_127_srfi_113);make_pair(pair_736586, find_or_add_symbol("bag-every?"), &cvar_736585);
+  make_cvar(cvar_736587, (object *)&__glo_set_91every_127_srfi_113);make_pair(pair_736588, find_or_add_symbol("set-every?"), &cvar_736587);
+  make_cvar(cvar_736589, (object *)&__glo_sob_91every_127_srfi_113);make_pair(pair_736590, find_or_add_symbol("sob-every?"), &cvar_736589);
+  make_cvar(cvar_736591, (object *)&__glo_bag_91any_127_srfi_113);make_pair(pair_736592, find_or_add_symbol("bag-any?"), &cvar_736591);
+  make_cvar(cvar_736593, (object *)&__glo_set_91any_127_srfi_113);make_pair(pair_736594, find_or_add_symbol("set-any?"), &cvar_736593);
+  make_cvar(cvar_736595, (object *)&__glo_sob_91any_127_srfi_113);make_pair(pair_736596, find_or_add_symbol("sob-any?"), &cvar_736595);
+  make_cvar(cvar_736597, (object *)&__glo_bag_91count_srfi_113);make_pair(pair_736598, find_or_add_symbol("bag-count"), &cvar_736597);
+  make_cvar(cvar_736599, (object *)&__glo_set_91count_srfi_113);make_pair(pair_736600, find_or_add_symbol("set-count"), &cvar_736599);
+  make_cvar(cvar_736601, (object *)&__glo_sob_91count_srfi_113);make_pair(pair_736602, find_or_add_symbol("sob-count"), &cvar_736601);
+  make_cvar(cvar_736603, (object *)&__glo_bag_91find_srfi_113);make_pair(pair_736604, find_or_add_symbol("bag-find"), &cvar_736603);
+  make_cvar(cvar_736605, (object *)&__glo_set_91find_srfi_113);make_pair(pair_736606, find_or_add_symbol("set-find"), &cvar_736605);
+  make_cvar(cvar_736607, (object *)&__glo_sob_91find_srfi_113);make_pair(pair_736608, find_or_add_symbol("sob-find"), &cvar_736607);
+  make_cvar(cvar_736609, (object *)&__glo_bag_91size_srfi_113);make_pair(pair_736610, find_or_add_symbol("bag-size"), &cvar_736609);
+  make_cvar(cvar_736611, (object *)&__glo_set_91size_srfi_113);make_pair(pair_736612, find_or_add_symbol("set-size"), &cvar_736611);
+  make_cvar(cvar_736613, (object *)&__glo_sob_91size_srfi_113);make_pair(pair_736614, find_or_add_symbol("sob-size"), &cvar_736613);
+  make_cvar(cvar_736615, (object *)&__glo_bag_91search_67_srfi_113);make_pair(pair_736616, find_or_add_symbol("bag-search!"), &cvar_736615);
+  make_cvar(cvar_736617, (object *)&__glo_set_91search_67_srfi_113);make_pair(pair_736618, find_or_add_symbol("set-search!"), &cvar_736617);
+  make_cvar(cvar_736619, (object *)&__glo_sob_91search_67_srfi_113);make_pair(pair_736620, find_or_add_symbol("sob-search!"), &cvar_736619);
+  make_cvar(cvar_736621, (object *)&__glo_missing_srfi_113);make_pair(pair_736622, find_or_add_symbol("missing"), &cvar_736621);
+  make_cvar(cvar_736623, (object *)&__glo_bag_91delete_91all_srfi_113);make_pair(pair_736624, find_or_add_symbol("bag-delete-all"), &cvar_736623);
+  make_cvar(cvar_736625, (object *)&__glo_set_91delete_91all_srfi_113);make_pair(pair_736626, find_or_add_symbol("set-delete-all"), &cvar_736625);
+  make_cvar(cvar_736627, (object *)&__glo_bag_91delete_srfi_113);make_pair(pair_736628, find_or_add_symbol("bag-delete"), &cvar_736627);
+  make_cvar(cvar_736629, (object *)&__glo_set_91delete_srfi_113);make_pair(pair_736630, find_or_add_symbol("set-delete"), &cvar_736629);
+  make_cvar(cvar_736631, (object *)&__glo_bag_91delete_91all_67_srfi_113);make_pair(pair_736632, find_or_add_symbol("bag-delete-all!"), &cvar_736631);
+  make_cvar(cvar_736633, (object *)&__glo_set_91delete_91all_67_srfi_113);make_pair(pair_736634, find_or_add_symbol("set-delete-all!"), &cvar_736633);
+  make_cvar(cvar_736635, (object *)&__glo_bag_91delete_67_srfi_113);make_pair(pair_736636, find_or_add_symbol("bag-delete!"), &cvar_736635);
+  make_cvar(cvar_736637, (object *)&__glo_set_91delete_67_srfi_113);make_pair(pair_736638, find_or_add_symbol("set-delete!"), &cvar_736637);
+  make_cvar(cvar_736639, (object *)&__glo_sob_91delete_91all_67_srfi_113);make_pair(pair_736640, find_or_add_symbol("sob-delete-all!"), &cvar_736639);
+  make_cvar(cvar_736641, (object *)&__glo_bag_91replace_srfi_113);make_pair(pair_736642, find_or_add_symbol("bag-replace"), &cvar_736641);
+  make_cvar(cvar_736643, (object *)&__glo_set_91replace_srfi_113);make_pair(pair_736644, find_or_add_symbol("set-replace"), &cvar_736643);
+  make_cvar(cvar_736645, (object *)&__glo_bag_91replace_67_srfi_113);make_pair(pair_736646, find_or_add_symbol("bag-replace!"), &cvar_736645);
+  make_cvar(cvar_736647, (object *)&__glo_set_91replace_67_srfi_113);make_pair(pair_736648, find_or_add_symbol("set-replace!"), &cvar_736647);
+  make_cvar(cvar_736649, (object *)&__glo_sob_91replace_67_srfi_113);make_pair(pair_736650, find_or_add_symbol("sob-replace!"), &cvar_736649);
+  make_cvar(cvar_736651, (object *)&__glo_bag_91adjoin_srfi_113);make_pair(pair_736652, find_or_add_symbol("bag-adjoin"), &cvar_736651);
+  make_cvar(cvar_736653, (object *)&__glo_set_91adjoin_srfi_113);make_pair(pair_736654, find_or_add_symbol("set-adjoin"), &cvar_736653);
+  make_cvar(cvar_736655, (object *)&__glo_bag_91adjoin_67_srfi_113);make_pair(pair_736656, find_or_add_symbol("bag-adjoin!"), &cvar_736655);
+  make_cvar(cvar_736657, (object *)&__glo_set_91adjoin_67_srfi_113);make_pair(pair_736658, find_or_add_symbol("set-adjoin!"), &cvar_736657);
+  make_cvar(cvar_736659, (object *)&__glo_sob_91adjoin_91all_67_srfi_113);make_pair(pair_736660, find_or_add_symbol("sob-adjoin-all!"), &cvar_736659);
+  make_cvar(cvar_736661, (object *)&__glo_bag_91decrement_67_srfi_113);make_pair(pair_736662, find_or_add_symbol("bag-decrement!"), &cvar_736661);
+  make_cvar(cvar_736663, (object *)&__glo_bag_91increment_67_srfi_113);make_pair(pair_736664, find_or_add_symbol("bag-increment!"), &cvar_736663);
+  make_cvar(cvar_736665, (object *)&__glo_nonpositive_91keys_srfi_113);make_pair(pair_736666, find_or_add_symbol("nonpositive-keys"), &cvar_736665);
+  make_cvar(cvar_736667, (object *)&__glo_sob_91cleanup_67_srfi_113);make_pair(pair_736668, find_or_add_symbol("sob-cleanup!"), &cvar_736667);
+  make_cvar(cvar_736669, (object *)&__glo_sob_91decrement_67_srfi_113);make_pair(pair_736670, find_or_add_symbol("sob-decrement!"), &cvar_736669);
+  make_cvar(cvar_736671, (object *)&__glo_sob_91increment_67_srfi_113);make_pair(pair_736672, find_or_add_symbol("sob-increment!"), &cvar_736671);
+  make_cvar(cvar_736673, (object *)&__glo_bag_91element_91comparator_srfi_113);make_pair(pair_736674, find_or_add_symbol("bag-element-comparator"), &cvar_736673);
+  make_cvar(cvar_736675, (object *)&__glo_set_91element_91comparator_srfi_113);make_pair(pair_736676, find_or_add_symbol("set-element-comparator"), &cvar_736675);
+  make_cvar(cvar_736677, (object *)&__glo_bag_91member_srfi_113);make_pair(pair_736678, find_or_add_symbol("bag-member"), &cvar_736677);
+  make_cvar(cvar_736679, (object *)&__glo_set_91member_srfi_113);make_pair(pair_736680, find_or_add_symbol("set-member"), &cvar_736679);
+  make_cvar(cvar_736681, (object *)&__glo_sob_91member_srfi_113);make_pair(pair_736682, find_or_add_symbol("sob-member"), &cvar_736681);
+  make_cvar(cvar_736683, (object *)&__glo_bag_91disjoint_127_srfi_113);make_pair(pair_736684, find_or_add_symbol("bag-disjoint?"), &cvar_736683);
+  make_cvar(cvar_736685, (object *)&__glo_set_91disjoint_127_srfi_113);make_pair(pair_736686, find_or_add_symbol("set-disjoint?"), &cvar_736685);
+  make_cvar(cvar_736687, (object *)&__glo_sob_91half_91disjoint_127_srfi_113);make_pair(pair_736688, find_or_add_symbol("sob-half-disjoint?"), &cvar_736687);
+  make_cvar(cvar_736689, (object *)&__glo_bag_91empty_127_srfi_113);make_pair(pair_736690, find_or_add_symbol("bag-empty?"), &cvar_736689);
+  make_cvar(cvar_736691, (object *)&__glo_set_91empty_127_srfi_113);make_pair(pair_736692, find_or_add_symbol("set-empty?"), &cvar_736691);
+  make_cvar(cvar_736693, (object *)&__glo_sob_91empty_127_srfi_113);make_pair(pair_736694, find_or_add_symbol("sob-empty?"), &cvar_736693);
+  make_cvar(cvar_736695, (object *)&__glo_bag_91contains_127_srfi_113);make_pair(pair_736696, find_or_add_symbol("bag-contains?"), &cvar_736695);
+  make_cvar(cvar_736697, (object *)&__glo_set_91contains_127_srfi_113);make_pair(pair_736698, find_or_add_symbol("set-contains?"), &cvar_736697);
+  make_cvar(cvar_736699, (object *)&__glo_sob_91contains_127_srfi_113);make_pair(pair_736700, find_or_add_symbol("sob-contains?"), &cvar_736699);
+  make_cvar(cvar_736701, (object *)&__glo_bag_91unfold_srfi_113);make_pair(pair_736702, find_or_add_symbol("bag-unfold"), &cvar_736701);
+  make_cvar(cvar_736703, (object *)&__glo_set_91unfold_srfi_113);make_pair(pair_736704, find_or_add_symbol("set-unfold"), &cvar_736703);
+  make_cvar(cvar_736705, (object *)&__glo_sob_91unfold_srfi_113);make_pair(pair_736706, find_or_add_symbol("sob-unfold"), &cvar_736705);
+  make_cvar(cvar_736707, (object *)&__glo_bag_srfi_113);make_pair(pair_736708, find_or_add_symbol("bag"), &cvar_736707);
+  make_cvar(cvar_736709, (object *)&__glo_set_srfi_113);make_pair(pair_736710, find_or_add_symbol("set"), &cvar_736709);
+  make_cvar(cvar_736711, (object *)&__glo_sob_91empty_91copy_srfi_113);make_pair(pair_736712, find_or_add_symbol("sob-empty-copy"), &cvar_736711);
+  make_cvar(cvar_736713, (object *)&__glo_bag_91copy_srfi_113);make_pair(pair_736714, find_or_add_symbol("bag-copy"), &cvar_736713);
+  make_cvar(cvar_736715, (object *)&__glo_set_91copy_srfi_113);make_pair(pair_736716, find_or_add_symbol("set-copy"), &cvar_736715);
+  make_cvar(cvar_736717, (object *)&__glo_sob_91copy_srfi_113);make_pair(pair_736718, find_or_add_symbol("sob-copy"), &cvar_736717);
+  make_cvar(cvar_736719, (object *)&__glo_make_91sob_srfi_113);make_pair(pair_736720, find_or_add_symbol("make-sob"), &cvar_736719);
+  make_cvar(cvar_736721, (object *)&__glo_check_91element_srfi_113);make_pair(pair_736722, find_or_add_symbol("check-element"), &cvar_736721);
+  make_cvar(cvar_736723, (object *)&__glo_check_91same_91comparator_srfi_113);make_pair(pair_736724, find_or_add_symbol("check-same-comparator"), &cvar_736723);
+  make_cvar(cvar_736725, (object *)&__glo_sob_91check_91comparators_srfi_113);make_pair(pair_736726, find_or_add_symbol("sob-check-comparators"), &cvar_736725);
+  make_cvar(cvar_736727, (object *)&__glo_check_91all_91bags_srfi_113);make_pair(pair_736728, find_or_add_symbol("check-all-bags"), &cvar_736727);
+  make_cvar(cvar_736729, (object *)&__glo_check_91all_91sets_srfi_113);make_pair(pair_736730, find_or_add_symbol("check-all-sets"), &cvar_736729);
+  make_cvar(cvar_736731, (object *)&__glo_check_91bag_srfi_113);make_pair(pair_736732, find_or_add_symbol("check-bag"), &cvar_736731);
+  make_cvar(cvar_736733, (object *)&__glo_check_91set_srfi_113);make_pair(pair_736734, find_or_add_symbol("check-set"), &cvar_736733);
+  make_cvar(cvar_736735, (object *)&__glo_bag_127_srfi_113);make_pair(pair_736736, find_or_add_symbol("bag?"), &cvar_736735);
+  make_cvar(cvar_736737, (object *)&__glo_set_127_srfi_113);make_pair(pair_736738, find_or_add_symbol("set?"), &cvar_736737);
+  make_cvar(cvar_736739, (object *)&__glo_raw_91make_91sob_srfi_113);make_pair(pair_736740, find_or_add_symbol("raw-make-sob"), &cvar_736739);
+  make_cvar(cvar_736741, (object *)&__glo_sob_91multi_127_srfi_113);make_pair(pair_736742, find_or_add_symbol("sob-multi?"), &cvar_736741);
+  make_cvar(cvar_736743, (object *)&__glo_sob_91comparator_srfi_113);make_pair(pair_736744, find_or_add_symbol("sob-comparator"), &cvar_736743);
+  make_cvar(cvar_736745, (object *)&__glo_sob_91hash_91table_srfi_113);make_pair(pair_736746, find_or_add_symbol("sob-hash-table"), &cvar_736745);
+  make_cvar(cvar_736747, (object *)&__glo_sob_127_srfi_113);make_pair(pair_736748, find_or_add_symbol("sob?"), &cvar_736747);
+  make_cvar(cvar_736749, (object *)&__glo_sob_srfi_113);make_pair(pair_736750, find_or_add_symbol("sob"), &cvar_736749);
+  make_cvar(cvar_736751, (object *)&__glo_hash_91table_91for_91each_srfi_113);make_pair(pair_736752, find_or_add_symbol("hash-table-for-each"), &cvar_736751);
+  make_cvar(cvar_736753, (object *)&__glo_hash_91table_91contains_127_srfi_113);make_pair(pair_736754, find_or_add_symbol("hash-table-contains?"), &cvar_736753);
+  make_cvar(cvar_736755, (object *)&__glo_modulizer_srfi_113);make_pair(pair_736756, find_or_add_symbol("modulizer"), &cvar_736755);
+  make_cvar(cvar_736757, (object *)&__glo_make_91hash_91table_95comparator_srfi_113);make_pair(pair_736758, find_or_add_symbol("make-hash-table/comparator"), &cvar_736757);
+make_pair(c_736948, &pair_736379,Cyc_global_variables);
+make_pair(c_736947, &pair_736382, &c_736948);
+make_pair(c_736946, &pair_736384, &c_736947);
+make_pair(c_736945, &pair_736386, &c_736946);
+make_pair(c_736944, &pair_736388, &c_736945);
+make_pair(c_736943, &pair_736390, &c_736944);
+make_pair(c_736942, &pair_736392, &c_736943);
+make_pair(c_736941, &pair_736394, &c_736942);
+make_pair(c_736940, &pair_736396, &c_736941);
+make_pair(c_736939, &pair_736398, &c_736940);
+make_pair(c_736938, &pair_736400, &c_736939);
+make_pair(c_736937, &pair_736402, &c_736938);
+make_pair(c_736936, &pair_736404, &c_736937);
+make_pair(c_736935, &pair_736406, &c_736936);
+make_pair(c_736934, &pair_736408, &c_736935);
+make_pair(c_736933, &pair_736410, &c_736934);
+make_pair(c_736932, &pair_736412, &c_736933);
+make_pair(c_736931, &pair_736414, &c_736932);
+make_pair(c_736930, &pair_736416, &c_736931);
+make_pair(c_736929, &pair_736418, &c_736930);
+make_pair(c_736928, &pair_736420, &c_736929);
+make_pair(c_736927, &pair_736422, &c_736928);
+make_pair(c_736926, &pair_736424, &c_736927);
+make_pair(c_736925, &pair_736426, &c_736926);
+make_pair(c_736924, &pair_736428, &c_736925);
+make_pair(c_736923, &pair_736430, &c_736924);
+make_pair(c_736922, &pair_736432, &c_736923);
+make_pair(c_736921, &pair_736434, &c_736922);
+make_pair(c_736920, &pair_736436, &c_736921);
+make_pair(c_736919, &pair_736438, &c_736920);
+make_pair(c_736918, &pair_736440, &c_736919);
+make_pair(c_736917, &pair_736442, &c_736918);
+make_pair(c_736916, &pair_736444, &c_736917);
+make_pair(c_736915, &pair_736446, &c_736916);
+make_pair(c_736914, &pair_736448, &c_736915);
+make_pair(c_736913, &pair_736450, &c_736914);
+make_pair(c_736912, &pair_736452, &c_736913);
+make_pair(c_736911, &pair_736454, &c_736912);
+make_pair(c_736910, &pair_736456, &c_736911);
+make_pair(c_736909, &pair_736458, &c_736910);
+make_pair(c_736908, &pair_736460, &c_736909);
+make_pair(c_736907, &pair_736462, &c_736908);
+make_pair(c_736906, &pair_736464, &c_736907);
+make_pair(c_736905, &pair_736466, &c_736906);
+make_pair(c_736904, &pair_736468, &c_736905);
+make_pair(c_736903, &pair_736470, &c_736904);
+make_pair(c_736902, &pair_736472, &c_736903);
+make_pair(c_736901, &pair_736474, &c_736902);
+make_pair(c_736900, &pair_736476, &c_736901);
+make_pair(c_736899, &pair_736478, &c_736900);
+make_pair(c_736898, &pair_736480, &c_736899);
+make_pair(c_736897, &pair_736482, &c_736898);
+make_pair(c_736896, &pair_736484, &c_736897);
+make_pair(c_736895, &pair_736486, &c_736896);
+make_pair(c_736894, &pair_736488, &c_736895);
+make_pair(c_736893, &pair_736490, &c_736894);
+make_pair(c_736892, &pair_736492, &c_736893);
+make_pair(c_736891, &pair_736494, &c_736892);
+make_pair(c_736890, &pair_736496, &c_736891);
+make_pair(c_736889, &pair_736498, &c_736890);
+make_pair(c_736888, &pair_736500, &c_736889);
+make_pair(c_736887, &pair_736502, &c_736888);
+make_pair(c_736886, &pair_736504, &c_736887);
+make_pair(c_736885, &pair_736506, &c_736886);
+make_pair(c_736884, &pair_736508, &c_736885);
+make_pair(c_736883, &pair_736510, &c_736884);
+make_pair(c_736882, &pair_736512, &c_736883);
+make_pair(c_736881, &pair_736514, &c_736882);
+make_pair(c_736880, &pair_736516, &c_736881);
+make_pair(c_736879, &pair_736518, &c_736880);
+make_pair(c_736878, &pair_736520, &c_736879);
+make_pair(c_736877, &pair_736522, &c_736878);
+make_pair(c_736876, &pair_736524, &c_736877);
+make_pair(c_736875, &pair_736526, &c_736876);
+make_pair(c_736874, &pair_736528, &c_736875);
+make_pair(c_736873, &pair_736530, &c_736874);
+make_pair(c_736872, &pair_736532, &c_736873);
+make_pair(c_736871, &pair_736534, &c_736872);
+make_pair(c_736870, &pair_736536, &c_736871);
+make_pair(c_736869, &pair_736538, &c_736870);
+make_pair(c_736868, &pair_736540, &c_736869);
+make_pair(c_736867, &pair_736542, &c_736868);
+make_pair(c_736866, &pair_736544, &c_736867);
+make_pair(c_736865, &pair_736546, &c_736866);
+make_pair(c_736864, &pair_736548, &c_736865);
+make_pair(c_736863, &pair_736550, &c_736864);
+make_pair(c_736862, &pair_736552, &c_736863);
+make_pair(c_736861, &pair_736554, &c_736862);
+make_pair(c_736860, &pair_736556, &c_736861);
+make_pair(c_736859, &pair_736558, &c_736860);
+make_pair(c_736858, &pair_736560, &c_736859);
+make_pair(c_736857, &pair_736562, &c_736858);
+make_pair(c_736856, &pair_736564, &c_736857);
+make_pair(c_736855, &pair_736566, &c_736856);
+make_pair(c_736854, &pair_736568, &c_736855);
+make_pair(c_736853, &pair_736570, &c_736854);
+make_pair(c_736852, &pair_736572, &c_736853);
+make_pair(c_736851, &pair_736574, &c_736852);
+make_pair(c_736850, &pair_736576, &c_736851);
+make_pair(c_736849, &pair_736578, &c_736850);
+make_pair(c_736848, &pair_736580, &c_736849);
+make_pair(c_736847, &pair_736582, &c_736848);
+make_pair(c_736846, &pair_736584, &c_736847);
+make_pair(c_736845, &pair_736586, &c_736846);
+make_pair(c_736844, &pair_736588, &c_736845);
+make_pair(c_736843, &pair_736590, &c_736844);
+make_pair(c_736842, &pair_736592, &c_736843);
+make_pair(c_736841, &pair_736594, &c_736842);
+make_pair(c_736840, &pair_736596, &c_736841);
+make_pair(c_736839, &pair_736598, &c_736840);
+make_pair(c_736838, &pair_736600, &c_736839);
+make_pair(c_736837, &pair_736602, &c_736838);
+make_pair(c_736836, &pair_736604, &c_736837);
+make_pair(c_736835, &pair_736606, &c_736836);
+make_pair(c_736834, &pair_736608, &c_736835);
+make_pair(c_736833, &pair_736610, &c_736834);
+make_pair(c_736832, &pair_736612, &c_736833);
+make_pair(c_736831, &pair_736614, &c_736832);
+make_pair(c_736830, &pair_736616, &c_736831);
+make_pair(c_736829, &pair_736618, &c_736830);
+make_pair(c_736828, &pair_736620, &c_736829);
+make_pair(c_736827, &pair_736622, &c_736828);
+make_pair(c_736826, &pair_736624, &c_736827);
+make_pair(c_736825, &pair_736626, &c_736826);
+make_pair(c_736824, &pair_736628, &c_736825);
+make_pair(c_736823, &pair_736630, &c_736824);
+make_pair(c_736822, &pair_736632, &c_736823);
+make_pair(c_736821, &pair_736634, &c_736822);
+make_pair(c_736820, &pair_736636, &c_736821);
+make_pair(c_736819, &pair_736638, &c_736820);
+make_pair(c_736818, &pair_736640, &c_736819);
+make_pair(c_736817, &pair_736642, &c_736818);
+make_pair(c_736816, &pair_736644, &c_736817);
+make_pair(c_736815, &pair_736646, &c_736816);
+make_pair(c_736814, &pair_736648, &c_736815);
+make_pair(c_736813, &pair_736650, &c_736814);
+make_pair(c_736812, &pair_736652, &c_736813);
+make_pair(c_736811, &pair_736654, &c_736812);
+make_pair(c_736810, &pair_736656, &c_736811);
+make_pair(c_736809, &pair_736658, &c_736810);
+make_pair(c_736808, &pair_736660, &c_736809);
+make_pair(c_736807, &pair_736662, &c_736808);
+make_pair(c_736806, &pair_736664, &c_736807);
+make_pair(c_736805, &pair_736666, &c_736806);
+make_pair(c_736804, &pair_736668, &c_736805);
+make_pair(c_736803, &pair_736670, &c_736804);
+make_pair(c_736802, &pair_736672, &c_736803);
+make_pair(c_736801, &pair_736674, &c_736802);
+make_pair(c_736800, &pair_736676, &c_736801);
+make_pair(c_736799, &pair_736678, &c_736800);
+make_pair(c_736798, &pair_736680, &c_736799);
+make_pair(c_736797, &pair_736682, &c_736798);
+make_pair(c_736796, &pair_736684, &c_736797);
+make_pair(c_736795, &pair_736686, &c_736796);
+make_pair(c_736794, &pair_736688, &c_736795);
+make_pair(c_736793, &pair_736690, &c_736794);
+make_pair(c_736792, &pair_736692, &c_736793);
+make_pair(c_736791, &pair_736694, &c_736792);
+make_pair(c_736790, &pair_736696, &c_736791);
+make_pair(c_736789, &pair_736698, &c_736790);
+make_pair(c_736788, &pair_736700, &c_736789);
+make_pair(c_736787, &pair_736702, &c_736788);
+make_pair(c_736786, &pair_736704, &c_736787);
+make_pair(c_736785, &pair_736706, &c_736786);
+make_pair(c_736784, &pair_736708, &c_736785);
+make_pair(c_736783, &pair_736710, &c_736784);
+make_pair(c_736782, &pair_736712, &c_736783);
+make_pair(c_736781, &pair_736714, &c_736782);
+make_pair(c_736780, &pair_736716, &c_736781);
+make_pair(c_736779, &pair_736718, &c_736780);
+make_pair(c_736778, &pair_736720, &c_736779);
+make_pair(c_736777, &pair_736722, &c_736778);
+make_pair(c_736776, &pair_736724, &c_736777);
+make_pair(c_736775, &pair_736726, &c_736776);
+make_pair(c_736774, &pair_736728, &c_736775);
+make_pair(c_736773, &pair_736730, &c_736774);
+make_pair(c_736772, &pair_736732, &c_736773);
+make_pair(c_736771, &pair_736734, &c_736772);
+make_pair(c_736770, &pair_736736, &c_736771);
+make_pair(c_736769, &pair_736738, &c_736770);
+make_pair(c_736768, &pair_736740, &c_736769);
+make_pair(c_736767, &pair_736742, &c_736768);
+make_pair(c_736766, &pair_736744, &c_736767);
+make_pair(c_736765, &pair_736746, &c_736766);
+make_pair(c_736764, &pair_736748, &c_736765);
+make_pair(c_736763, &pair_736750, &c_736764);
+make_pair(c_736762, &pair_736752, &c_736763);
+make_pair(c_736761, &pair_736754, &c_736762);
+make_pair(c_736760, &pair_736756, &c_736761);
+make_pair(c_736759, &pair_736758, &c_736760);
+Cyc_global_variables = &c_736759;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi113_srfi_113)->fn)(data, 1, cont, cont);
 }

@@ -850,132 +850,132 @@ static void __lambda_199(void *data, int argc, closure _,object k_73899) {
   Cyc_st_add(data, "srfi/69.sld:lib-init:srfi69");
 
 closureN_type c_732522;
-object e_732675 [1];
+object e_732691 [1];
 c_732522.hdr.mark = gc_color_red;
  c_732522.hdr.grayed = 0;
 c_732522.tag = closureN_tag;
  c_732522.fn = (function_type)__lambda_200;
 c_732522.num_args = 1;
 c_732522.num_elements = 1;
-c_732522.elements = (object *)e_732675;
+c_732522.elements = (object *)e_732691;
 c_732522.elements[0] = k_73899;
 
 
-
-return_direct_with_clo1(data,(closure)&c_732522,__lambda_200,  global_set(__glo__75make_91hash_91node_srfi_69, primitive_cons));; 
+object c_732694 = global_set2(data,(closure)&c_732522,__glo__75make_91hash_91node_srfi_69, primitive_cons);
+return_closcall1(data,(closure)&c_732522,  c_732694);; 
 }
 
 static void __lambda_200(void *data, int argc, object self_731140, object r_73901) {
   
 closureN_type c_732524;
-object e_732672 [1];
+object e_732687 [1];
 c_732524.hdr.mark = gc_color_red;
  c_732524.hdr.grayed = 0;
 c_732524.tag = closureN_tag;
  c_732524.fn = (function_type)__lambda_201;
 c_732524.num_args = 1;
 c_732524.num_elements = 1;
-c_732524.elements = (object *)e_732672;
+c_732524.elements = (object *)e_732687;
 c_732524.elements[0] = ((closureN)self_731140)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732524,__lambda_201,  global_set(__glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67));; 
+object c_732690 = global_set2(data,(closure)&c_732524,__glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67);
+return_closcall1(data,(closure)&c_732524,  c_732690);; 
 }
 
 static void __lambda_201(void *data, int argc, object self_731141, object r_73902) {
   
 closureN_type c_732526;
-object e_732669 [1];
+object e_732683 [1];
 c_732526.hdr.mark = gc_color_red;
  c_732526.hdr.grayed = 0;
 c_732526.tag = closureN_tag;
  c_732526.fn = (function_type)__lambda_202;
 c_732526.num_args = 1;
 c_732526.num_elements = 1;
-c_732526.elements = (object *)e_732669;
+c_732526.elements = (object *)e_732683;
 c_732526.elements[0] = ((closureN)self_731141)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732526,__lambda_202,  global_set(__glo__75hash_91node_91key_srfi_69, primitive_car));; 
+object c_732686 = global_set2(data,(closure)&c_732526,__glo__75hash_91node_91key_srfi_69, primitive_car);
+return_closcall1(data,(closure)&c_732526,  c_732686);; 
 }
 
 static void __lambda_202(void *data, int argc, object self_731142, object r_73903) {
   
 closureN_type c_732528;
-object e_732666 [1];
+object e_732679 [1];
 c_732528.hdr.mark = gc_color_red;
  c_732528.hdr.grayed = 0;
 c_732528.tag = closureN_tag;
  c_732528.fn = (function_type)__lambda_203;
 c_732528.num_args = 1;
 c_732528.num_elements = 1;
-c_732528.elements = (object *)e_732666;
+c_732528.elements = (object *)e_732679;
 c_732528.elements[0] = ((closureN)self_731142)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732528,__lambda_203,  global_set(__glo__75hash_91node_91value_srfi_69, primitive_cdr));; 
+object c_732682 = global_set2(data,(closure)&c_732528,__glo__75hash_91node_91value_srfi_69, primitive_cdr);
+return_closcall1(data,(closure)&c_732528,  c_732682);; 
 }
 
 static void __lambda_203(void *data, int argc, object self_731143, object r_73904) {
   
 closureN_type c_732530;
-object e_732659 [1];
+object e_732672 [1];
 c_732530.hdr.mark = gc_color_red;
  c_732530.hdr.grayed = 0;
 c_732530.tag = closureN_tag;
  c_732530.fn = (function_type)__lambda_204;
 c_732530.num_args = 1;
 c_732530.num_elements = 1;
-c_732530.elements = (object *)e_732659;
+c_732530.elements = (object *)e_732672;
 c_732530.elements[0] = ((closureN)self_731143)->elements[0];
 
 
-make_utf8_string_with_len(c_732660, "<srfi-hash-table>", 17, 17);
+make_utf8_string_with_len(c_732673, "<srfi-hash-table>", 17, 17);
 
-make_pair(c_732665,quote_entries,NULL);c_732665.hdr.immutable = 1;
+make_pair(c_732678,quote_entries,NULL);c_732678.hdr.immutable = 1;
 
-make_pair(c_732664,quote_associate,&c_732665);c_732664.hdr.immutable = 1;
+make_pair(c_732677,quote_associate,&c_732678);c_732677.hdr.immutable = 1;
 
-make_pair(c_732663,quote_compare,&c_732664);c_732663.hdr.immutable = 1;
+make_pair(c_732676,quote_compare,&c_732677);c_732676.hdr.immutable = 1;
 
-make_pair(c_732662,quote_hash,&c_732663);c_732662.hdr.immutable = 1;
+make_pair(c_732675,quote_hash,&c_732676);c_732675.hdr.immutable = 1;
 
-make_pair(c_732661,quote_size,&c_732662);c_732661.hdr.immutable = 1;
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_732530, &c_732660, boolean_f, &c_732661);; 
+make_pair(c_732674,quote_size,&c_732675);c_732674.hdr.immutable = 1;
+return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_732530, &c_732673, boolean_f, &c_732674);; 
 }
 
 static void __lambda_204(void *data, int argc, object self_731144, object r_73946) {
   
 closureN_type c_732532;
-object e_732656 [1];
+object e_732668 [1];
 c_732532.hdr.mark = gc_color_red;
  c_732532.hdr.grayed = 0;
 c_732532.tag = closureN_tag;
  c_732532.fn = (function_type)__lambda_205;
 c_732532.num_args = 1;
 c_732532.num_elements = 1;
-c_732532.elements = (object *)e_732656;
+c_732532.elements = (object *)e_732668;
 c_732532.elements[0] = ((closureN)self_731144)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732532,__lambda_205,  global_set(__glo__121srfi_91hash_91table_125_srfi_69, r_73946));; 
+object c_732671 = global_set2(data,(closure)&c_732532,__glo__121srfi_91hash_91table_125_srfi_69, r_73946);
+return_closcall1(data,(closure)&c_732532,  c_732671);; 
 }
 
 static void __lambda_205(void *data, int argc, object self_731145, object r_73905) {
   
 closureN_type c_732534;
-object e_732655 [1];
+object e_732667 [1];
 c_732534.hdr.mark = gc_color_red;
  c_732534.hdr.grayed = 0;
 c_732534.tag = closureN_tag;
  c_732534.fn = (function_type)__lambda_206;
 c_732534.num_args = 1;
 c_732534.num_elements = 1;
-c_732534.elements = (object *)e_732655;
+c_732534.elements = (object *)e_732667;
 c_732534.elements[0] = ((closureN)self_731145)->elements[0];
 
 return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732534, obj_int2obj(0), __glo__121srfi_91hash_91table_125_srfi_69);; 
@@ -984,32 +984,32 @@ return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_732534, o
 static void __lambda_206(void *data, int argc, object self_731146, object r_73945) {
   
 closureN_type c_732536;
-object e_732652 [1];
+object e_732663 [1];
 c_732536.hdr.mark = gc_color_red;
  c_732536.hdr.grayed = 0;
 c_732536.tag = closureN_tag;
  c_732536.fn = (function_type)__lambda_207;
 c_732536.num_args = 1;
 c_732536.num_elements = 1;
-c_732536.elements = (object *)e_732652;
+c_732536.elements = (object *)e_732663;
 c_732536.elements[0] = ((closureN)self_731146)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732536,__lambda_207,  global_set(__glo_hash_91table_127_srfi_69, r_73945));; 
+object c_732666 = global_set2(data,(closure)&c_732536,__glo_hash_91table_127_srfi_69, r_73945);
+return_closcall1(data,(closure)&c_732536,  c_732666);; 
 }
 
 static void __lambda_207(void *data, int argc, object self_731147, object r_73906) {
   
 closureN_type c_732538;
-object e_732651 [1];
+object e_732662 [1];
 c_732538.hdr.mark = gc_color_red;
  c_732538.hdr.grayed = 0;
 c_732538.tag = closureN_tag;
  c_732538.fn = (function_type)__lambda_208;
 c_732538.num_args = 1;
 c_732538.num_elements = 1;
-c_732538.elements = (object *)e_732651;
+c_732538.elements = (object *)e_732662;
 c_732538.elements[0] = ((closureN)self_731147)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732538, __glo__121srfi_91hash_91table_125_srfi_69, quote_size);; 
@@ -1018,50 +1018,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732538, __gl
 static void __lambda_208(void *data, int argc, object self_731148, object r_73943) {
   
 closureN_type c_732540;
-object e_732649 [1];
+object e_732660 [1];
 c_732540.hdr.mark = gc_color_red;
  c_732540.hdr.grayed = 0;
 c_732540.tag = closureN_tag;
  c_732540.fn = (function_type)__lambda_209;
 c_732540.num_args = 1;
 c_732540.num_elements = 1;
-c_732540.elements = (object *)e_732649;
+c_732540.elements = (object *)e_732660;
 c_732540.elements[0] = ((closureN)self_731148)->elements[0];
 
 
-make_utf8_string_with_len(c_732650, "hash-table-size", 15, 15);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732540, &c_732650, __glo__121srfi_91hash_91table_125_srfi_69, r_73943);; 
+make_utf8_string_with_len(c_732661, "hash-table-size", 15, 15);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732540, &c_732661, __glo__121srfi_91hash_91table_125_srfi_69, r_73943);; 
 }
 
 static void __lambda_209(void *data, int argc, object self_731149, object r_73942) {
   
 closureN_type c_732542;
-object e_732646 [1];
+object e_732656 [1];
 c_732542.hdr.mark = gc_color_red;
  c_732542.hdr.grayed = 0;
 c_732542.tag = closureN_tag;
  c_732542.fn = (function_type)__lambda_210;
 c_732542.num_args = 1;
 c_732542.num_elements = 1;
-c_732542.elements = (object *)e_732646;
+c_732542.elements = (object *)e_732656;
 c_732542.elements[0] = ((closureN)self_731149)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732542,__lambda_210,  global_set(__glo_hash_91table_91size_srfi_69, r_73942));; 
+object c_732659 = global_set2(data,(closure)&c_732542,__glo_hash_91table_91size_srfi_69, r_73942);
+return_closcall1(data,(closure)&c_732542,  c_732659);; 
 }
 
 static void __lambda_210(void *data, int argc, object self_731150, object r_73907) {
   
 closureN_type c_732544;
-object e_732645 [1];
+object e_732655 [1];
 c_732544.hdr.mark = gc_color_red;
  c_732544.hdr.grayed = 0;
 c_732544.tag = closureN_tag;
  c_732544.fn = (function_type)__lambda_211;
 c_732544.num_args = 1;
 c_732544.num_elements = 1;
-c_732544.elements = (object *)e_732645;
+c_732544.elements = (object *)e_732655;
 c_732544.elements[0] = ((closureN)self_731150)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732544, __glo__121srfi_91hash_91table_125_srfi_69, quote_hash);; 
@@ -1070,50 +1070,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732544, __gl
 static void __lambda_211(void *data, int argc, object self_731151, object r_73940) {
   
 closureN_type c_732546;
-object e_732643 [1];
+object e_732653 [1];
 c_732546.hdr.mark = gc_color_red;
  c_732546.hdr.grayed = 0;
 c_732546.tag = closureN_tag;
  c_732546.fn = (function_type)__lambda_212;
 c_732546.num_args = 1;
 c_732546.num_elements = 1;
-c_732546.elements = (object *)e_732643;
+c_732546.elements = (object *)e_732653;
 c_732546.elements[0] = ((closureN)self_731151)->elements[0];
 
 
-make_utf8_string_with_len(c_732644, "hash-table-hash-function", 24, 24);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732546, &c_732644, __glo__121srfi_91hash_91table_125_srfi_69, r_73940);; 
+make_utf8_string_with_len(c_732654, "hash-table-hash-function", 24, 24);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732546, &c_732654, __glo__121srfi_91hash_91table_125_srfi_69, r_73940);; 
 }
 
 static void __lambda_212(void *data, int argc, object self_731152, object r_73939) {
   
 closureN_type c_732548;
-object e_732640 [1];
+object e_732649 [1];
 c_732548.hdr.mark = gc_color_red;
  c_732548.hdr.grayed = 0;
 c_732548.tag = closureN_tag;
  c_732548.fn = (function_type)__lambda_213;
 c_732548.num_args = 1;
 c_732548.num_elements = 1;
-c_732548.elements = (object *)e_732640;
+c_732548.elements = (object *)e_732649;
 c_732548.elements[0] = ((closureN)self_731152)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732548,__lambda_213,  global_set(__glo_hash_91table_91hash_91function_srfi_69, r_73939));; 
+object c_732652 = global_set2(data,(closure)&c_732548,__glo_hash_91table_91hash_91function_srfi_69, r_73939);
+return_closcall1(data,(closure)&c_732548,  c_732652);; 
 }
 
 static void __lambda_213(void *data, int argc, object self_731153, object r_73908) {
   
 closureN_type c_732550;
-object e_732639 [1];
+object e_732648 [1];
 c_732550.hdr.mark = gc_color_red;
  c_732550.hdr.grayed = 0;
 c_732550.tag = closureN_tag;
  c_732550.fn = (function_type)__lambda_214;
 c_732550.num_args = 1;
 c_732550.num_elements = 1;
-c_732550.elements = (object *)e_732639;
+c_732550.elements = (object *)e_732648;
 c_732550.elements[0] = ((closureN)self_731153)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732550, __glo__121srfi_91hash_91table_125_srfi_69, quote_compare);; 
@@ -1122,50 +1122,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732550, __gl
 static void __lambda_214(void *data, int argc, object self_731154, object r_73937) {
   
 closureN_type c_732552;
-object e_732637 [1];
+object e_732646 [1];
 c_732552.hdr.mark = gc_color_red;
  c_732552.hdr.grayed = 0;
 c_732552.tag = closureN_tag;
  c_732552.fn = (function_type)__lambda_215;
 c_732552.num_args = 1;
 c_732552.num_elements = 1;
-c_732552.elements = (object *)e_732637;
+c_732552.elements = (object *)e_732646;
 c_732552.elements[0] = ((closureN)self_731154)->elements[0];
 
 
-make_utf8_string_with_len(c_732638, "hash-table-equivalence-function", 31, 31);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732552, &c_732638, __glo__121srfi_91hash_91table_125_srfi_69, r_73937);; 
+make_utf8_string_with_len(c_732647, "hash-table-equivalence-function", 31, 31);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732552, &c_732647, __glo__121srfi_91hash_91table_125_srfi_69, r_73937);; 
 }
 
 static void __lambda_215(void *data, int argc, object self_731155, object r_73936) {
   
 closureN_type c_732554;
-object e_732634 [1];
+object e_732642 [1];
 c_732554.hdr.mark = gc_color_red;
  c_732554.hdr.grayed = 0;
 c_732554.tag = closureN_tag;
  c_732554.fn = (function_type)__lambda_216;
 c_732554.num_args = 1;
 c_732554.num_elements = 1;
-c_732554.elements = (object *)e_732634;
+c_732554.elements = (object *)e_732642;
 c_732554.elements[0] = ((closureN)self_731155)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732554,__lambda_216,  global_set(__glo_hash_91table_91equivalence_91function_srfi_69, r_73936));; 
+object c_732645 = global_set2(data,(closure)&c_732554,__glo_hash_91table_91equivalence_91function_srfi_69, r_73936);
+return_closcall1(data,(closure)&c_732554,  c_732645);; 
 }
 
 static void __lambda_216(void *data, int argc, object self_731156, object r_73909) {
   
 closureN_type c_732556;
-object e_732633 [1];
+object e_732641 [1];
 c_732556.hdr.mark = gc_color_red;
  c_732556.hdr.grayed = 0;
 c_732556.tag = closureN_tag;
  c_732556.fn = (function_type)__lambda_217;
 c_732556.num_args = 1;
 c_732556.num_elements = 1;
-c_732556.elements = (object *)e_732633;
+c_732556.elements = (object *)e_732641;
 c_732556.elements[0] = ((closureN)self_731156)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732556, __glo__121srfi_91hash_91table_125_srfi_69, quote_associate);; 
@@ -1174,50 +1174,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732556, __gl
 static void __lambda_217(void *data, int argc, object self_731157, object r_73934) {
   
 closureN_type c_732558;
-object e_732631 [1];
+object e_732639 [1];
 c_732558.hdr.mark = gc_color_red;
  c_732558.hdr.grayed = 0;
 c_732558.tag = closureN_tag;
  c_732558.fn = (function_type)__lambda_218;
 c_732558.num_args = 1;
 c_732558.num_elements = 1;
-c_732558.elements = (object *)e_732631;
+c_732558.elements = (object *)e_732639;
 c_732558.elements[0] = ((closureN)self_731157)->elements[0];
 
 
-make_utf8_string_with_len(c_732632, "hash-table-association-function", 31, 31);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732558, &c_732632, __glo__121srfi_91hash_91table_125_srfi_69, r_73934);; 
+make_utf8_string_with_len(c_732640, "hash-table-association-function", 31, 31);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732558, &c_732640, __glo__121srfi_91hash_91table_125_srfi_69, r_73934);; 
 }
 
 static void __lambda_218(void *data, int argc, object self_731158, object r_73933) {
   
 closureN_type c_732560;
-object e_732628 [1];
+object e_732635 [1];
 c_732560.hdr.mark = gc_color_red;
  c_732560.hdr.grayed = 0;
 c_732560.tag = closureN_tag;
  c_732560.fn = (function_type)__lambda_219;
 c_732560.num_args = 1;
 c_732560.num_elements = 1;
-c_732560.elements = (object *)e_732628;
+c_732560.elements = (object *)e_732635;
 c_732560.elements[0] = ((closureN)self_731158)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732560,__lambda_219,  global_set(__glo_hash_91table_91association_91function_srfi_69, r_73933));; 
+object c_732638 = global_set2(data,(closure)&c_732560,__glo_hash_91table_91association_91function_srfi_69, r_73933);
+return_closcall1(data,(closure)&c_732560,  c_732638);; 
 }
 
 static void __lambda_219(void *data, int argc, object self_731159, object r_73910) {
   
 closureN_type c_732562;
-object e_732627 [1];
+object e_732634 [1];
 c_732562.hdr.mark = gc_color_red;
  c_732562.hdr.grayed = 0;
 c_732562.tag = closureN_tag;
  c_732562.fn = (function_type)__lambda_220;
 c_732562.num_args = 1;
 c_732562.num_elements = 1;
-c_732562.elements = (object *)e_732627;
+c_732562.elements = (object *)e_732634;
 c_732562.elements[0] = ((closureN)self_731159)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732562, __glo__121srfi_91hash_91table_125_srfi_69, quote_entries);; 
@@ -1226,50 +1226,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732562, __gl
 static void __lambda_220(void *data, int argc, object self_731160, object r_73931) {
   
 closureN_type c_732564;
-object e_732625 [1];
+object e_732632 [1];
 c_732564.hdr.mark = gc_color_red;
  c_732564.hdr.grayed = 0;
 c_732564.tag = closureN_tag;
  c_732564.fn = (function_type)__lambda_221;
 c_732564.num_args = 1;
 c_732564.num_elements = 1;
-c_732564.elements = (object *)e_732625;
+c_732564.elements = (object *)e_732632;
 c_732564.elements[0] = ((closureN)self_731160)->elements[0];
 
 
-make_utf8_string_with_len(c_732626, "hash-table-entries", 18, 18);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732564, &c_732626, __glo__121srfi_91hash_91table_125_srfi_69, r_73931);; 
+make_utf8_string_with_len(c_732633, "hash-table-entries", 18, 18);
+return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_732564, &c_732633, __glo__121srfi_91hash_91table_125_srfi_69, r_73931);; 
 }
 
 static void __lambda_221(void *data, int argc, object self_731161, object r_73930) {
   
 closureN_type c_732566;
-object e_732622 [1];
+object e_732628 [1];
 c_732566.hdr.mark = gc_color_red;
  c_732566.hdr.grayed = 0;
 c_732566.tag = closureN_tag;
  c_732566.fn = (function_type)__lambda_222;
 c_732566.num_args = 1;
 c_732566.num_elements = 1;
-c_732566.elements = (object *)e_732622;
+c_732566.elements = (object *)e_732628;
 c_732566.elements[0] = ((closureN)self_731161)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732566,__lambda_222,  global_set(__glo_hash_91table_91entries_srfi_69, r_73930));; 
+object c_732631 = global_set2(data,(closure)&c_732566,__glo_hash_91table_91entries_srfi_69, r_73930);
+return_closcall1(data,(closure)&c_732566,  c_732631);; 
 }
 
 static void __lambda_222(void *data, int argc, object self_731162, object r_73911) {
   
 closureN_type c_732568;
-object e_732621 [1];
+object e_732627 [1];
 c_732568.hdr.mark = gc_color_red;
  c_732568.hdr.grayed = 0;
 c_732568.tag = closureN_tag;
  c_732568.fn = (function_type)__lambda_223;
 c_732568.num_args = 1;
 c_732568.num_elements = 1;
-c_732568.elements = (object *)e_732621;
+c_732568.elements = (object *)e_732627;
 c_732568.elements[0] = ((closureN)self_731162)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732568, __glo__121srfi_91hash_91table_125_srfi_69, quote_size);; 
@@ -1278,50 +1278,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732568, __gl
 static void __lambda_223(void *data, int argc, object self_731163, object r_73928) {
   
 closureN_type c_732570;
-object e_732619 [1];
+object e_732625 [1];
 c_732570.hdr.mark = gc_color_red;
  c_732570.hdr.grayed = 0;
 c_732570.tag = closureN_tag;
  c_732570.fn = (function_type)__lambda_224;
 c_732570.num_args = 1;
 c_732570.num_elements = 1;
-c_732570.elements = (object *)e_732619;
+c_732570.elements = (object *)e_732625;
 c_732570.elements[0] = ((closureN)self_731163)->elements[0];
 
 
-make_utf8_string_with_len(c_732620, "hash-table-set-size!", 20, 20);
-return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732570, &c_732620, __glo__121srfi_91hash_91table_125_srfi_69, r_73928);; 
+make_utf8_string_with_len(c_732626, "hash-table-set-size!", 20, 20);
+return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732570, &c_732626, __glo__121srfi_91hash_91table_125_srfi_69, r_73928);; 
 }
 
 static void __lambda_224(void *data, int argc, object self_731164, object r_73927) {
   
 closureN_type c_732572;
-object e_732616 [1];
+object e_732621 [1];
 c_732572.hdr.mark = gc_color_red;
  c_732572.hdr.grayed = 0;
 c_732572.tag = closureN_tag;
  c_732572.fn = (function_type)__lambda_225;
 c_732572.num_args = 1;
 c_732572.num_elements = 1;
-c_732572.elements = (object *)e_732616;
+c_732572.elements = (object *)e_732621;
 c_732572.elements[0] = ((closureN)self_731164)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732572,__lambda_225,  global_set(__glo_hash_91table_91set_91size_67_srfi_69, r_73927));; 
+object c_732624 = global_set2(data,(closure)&c_732572,__glo_hash_91table_91set_91size_67_srfi_69, r_73927);
+return_closcall1(data,(closure)&c_732572,  c_732624);; 
 }
 
 static void __lambda_225(void *data, int argc, object self_731165, object r_73912) {
   
 closureN_type c_732574;
-object e_732615 [1];
+object e_732620 [1];
 c_732574.hdr.mark = gc_color_red;
  c_732574.hdr.grayed = 0;
 c_732574.tag = closureN_tag;
  c_732574.fn = (function_type)__lambda_226;
 c_732574.num_args = 1;
 c_732574.num_elements = 1;
-c_732574.elements = (object *)e_732615;
+c_732574.elements = (object *)e_732620;
 c_732574.elements[0] = ((closureN)self_731165)->elements[0];
 
 return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732574, __glo__121srfi_91hash_91table_125_srfi_69, quote_entries);; 
@@ -1330,50 +1330,50 @@ return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_732574, __gl
 static void __lambda_226(void *data, int argc, object self_731166, object r_73925) {
   
 closureN_type c_732576;
-object e_732613 [1];
+object e_732618 [1];
 c_732576.hdr.mark = gc_color_red;
  c_732576.hdr.grayed = 0;
 c_732576.tag = closureN_tag;
  c_732576.fn = (function_type)__lambda_227;
 c_732576.num_args = 1;
 c_732576.num_elements = 1;
-c_732576.elements = (object *)e_732613;
+c_732576.elements = (object *)e_732618;
 c_732576.elements[0] = ((closureN)self_731166)->elements[0];
 
 
-make_utf8_string_with_len(c_732614, "hash-table-set-entries!", 23, 23);
-return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732576, &c_732614, __glo__121srfi_91hash_91table_125_srfi_69, r_73925);; 
+make_utf8_string_with_len(c_732619, "hash-table-set-entries!", 23, 23);
+return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_732576, &c_732619, __glo__121srfi_91hash_91table_125_srfi_69, r_73925);; 
 }
 
 static void __lambda_227(void *data, int argc, object self_731167, object r_73924) {
   
 closureN_type c_732578;
-object e_732610 [1];
+object e_732614 [1];
 c_732578.hdr.mark = gc_color_red;
  c_732578.hdr.grayed = 0;
 c_732578.tag = closureN_tag;
  c_732578.fn = (function_type)__lambda_228;
 c_732578.num_args = 1;
 c_732578.num_elements = 1;
-c_732578.elements = (object *)e_732610;
+c_732578.elements = (object *)e_732614;
 c_732578.elements[0] = ((closureN)self_731167)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732578,__lambda_228,  global_set(__glo_hash_91table_91set_91entries_67_srfi_69, r_73924));; 
+object c_732617 = global_set2(data,(closure)&c_732578,__glo_hash_91table_91set_91entries_67_srfi_69, r_73924);
+return_closcall1(data,(closure)&c_732578,  c_732617);; 
 }
 
 static void __lambda_228(void *data, int argc, object self_731168, object r_73916) {
   
 closureN_type c_732580;
-object e_732609 [1];
+object e_732613 [1];
 c_732580.hdr.mark = gc_color_red;
  c_732580.hdr.grayed = 0;
 c_732580.tag = closureN_tag;
  c_732580.fn = (function_type)__lambda_229;
 c_732580.num_args = 1;
 c_732580.num_elements = 1;
-c_732580.elements = (object *)e_732609;
+c_732580.elements = (object *)e_732613;
 c_732580.elements[0] = ((closureN)self_731168)->elements[0];
 
 return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732580, primitive_eq_127, __glo_symbol_91hash_srfi_69);; 
@@ -1382,32 +1382,32 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732580, p
 static void __lambda_229(void *data, int argc, object self_731169, object r_73923) {
   
 closureN_type c_732582;
-object e_732606 [1];
+object e_732609 [1];
 c_732582.hdr.mark = gc_color_red;
  c_732582.hdr.grayed = 0;
 c_732582.tag = closureN_tag;
  c_732582.fn = (function_type)__lambda_230;
 c_732582.num_args = 1;
 c_732582.num_elements = 1;
-c_732582.elements = (object *)e_732606;
+c_732582.elements = (object *)e_732609;
 c_732582.elements[0] = ((closureN)self_731169)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732582,__lambda_230,  global_set(__glo_make_91symbol_91hash_91table_srfi_69, r_73923));; 
+object c_732612 = global_set2(data,(closure)&c_732582,__glo_make_91symbol_91hash_91table_srfi_69, r_73923);
+return_closcall1(data,(closure)&c_732582,  c_732612);; 
 }
 
 static void __lambda_230(void *data, int argc, object self_731170, object r_73917) {
   
 closureN_type c_732584;
-object e_732605 [1];
+object e_732608 [1];
 c_732584.hdr.mark = gc_color_red;
  c_732584.hdr.grayed = 0;
 c_732584.tag = closureN_tag;
  c_732584.fn = (function_type)__lambda_231;
 c_732584.num_args = 1;
 c_732584.num_elements = 1;
-c_732584.elements = (object *)e_732605;
+c_732584.elements = (object *)e_732608;
 c_732584.elements[0] = ((closureN)self_731170)->elements[0];
 
 return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732584, __glo_string_123_127_scheme_base, __glo_string_91hash_srfi_69);; 
@@ -1416,32 +1416,32 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732584, _
 static void __lambda_231(void *data, int argc, object self_731171, object r_73922) {
   
 closureN_type c_732586;
-object e_732602 [1];
+object e_732604 [1];
 c_732586.hdr.mark = gc_color_red;
  c_732586.hdr.grayed = 0;
 c_732586.tag = closureN_tag;
  c_732586.fn = (function_type)__lambda_232;
 c_732586.num_args = 1;
 c_732586.num_elements = 1;
-c_732586.elements = (object *)e_732602;
+c_732586.elements = (object *)e_732604;
 c_732586.elements[0] = ((closureN)self_731171)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732586,__lambda_232,  global_set(__glo_make_91string_91hash_91table_srfi_69, r_73922));; 
+object c_732607 = global_set2(data,(closure)&c_732586,__glo_make_91string_91hash_91table_srfi_69, r_73922);
+return_closcall1(data,(closure)&c_732586,  c_732607);; 
 }
 
 static void __lambda_232(void *data, int argc, object self_731172, object r_73918) {
   
 closureN_type c_732588;
-object e_732601 [1];
+object e_732603 [1];
 c_732588.hdr.mark = gc_color_red;
  c_732588.hdr.grayed = 0;
 c_732588.tag = closureN_tag;
  c_732588.fn = (function_type)__lambda_233;
 c_732588.num_args = 1;
 c_732588.num_elements = 1;
-c_732588.elements = (object *)e_732601;
+c_732588.elements = (object *)e_732603;
 c_732588.elements[0] = ((closureN)self_731172)->elements[0];
 
 return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732588, __glo_string_91ci_123_127_scheme__char, __glo_string_91ci_91hash_srfi_69);; 
@@ -1450,32 +1450,32 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732588, _
 static void __lambda_233(void *data, int argc, object self_731173, object r_73921) {
   
 closureN_type c_732590;
-object e_732598 [1];
+object e_732599 [1];
 c_732590.hdr.mark = gc_color_red;
  c_732590.hdr.grayed = 0;
 c_732590.tag = closureN_tag;
  c_732590.fn = (function_type)__lambda_234;
 c_732590.num_args = 1;
 c_732590.num_elements = 1;
-c_732590.elements = (object *)e_732598;
+c_732590.elements = (object *)e_732599;
 c_732590.elements[0] = ((closureN)self_731173)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_732590,__lambda_234,  global_set(__glo_make_91string_91ci_91hash_91table_srfi_69, r_73921));; 
+object c_732602 = global_set2(data,(closure)&c_732590,__glo_make_91string_91ci_91hash_91table_srfi_69, r_73921);
+return_closcall1(data,(closure)&c_732590,  c_732602);; 
 }
 
 static void __lambda_234(void *data, int argc, object self_731174, object r_73919) {
   
 closureN_type c_732592;
-object e_732597 [1];
+object e_732598 [1];
 c_732592.hdr.mark = gc_color_red;
  c_732592.hdr.grayed = 0;
 c_732592.tag = closureN_tag;
  c_732592.fn = (function_type)__lambda_235;
 c_732592.num_args = 1;
 c_732592.num_elements = 1;
-c_732592.elements = (object *)e_732597;
+c_732592.elements = (object *)e_732598;
 c_732592.elements[0] = ((closureN)self_731174)->elements[0];
 
 return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732592, primitive__123, __glo_modulo_scheme_base);; 
@@ -1483,8 +1483,8 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732592, p
 
 static void __lambda_235(void *data, int argc, object self_731175, object r_73920) {
   
-
-return_closcall1(data,  ((closureN)self_731175)->elements[0],  global_set(__glo_make_91integer_91hash_91table_srfi_69, r_73920));; 
+object c_732597 = global_set2(data,  ((closureN)self_731175)->elements[0],__glo_make_91integer_91hash_91table_srfi_69, r_73920);
+return_closcall1(data,  ((closureN)self_731175)->elements[0],  c_732597);; 
 }
 
 static void __lambda_191(void *data, int argc, closure _,object k_73886, object function_73320_73481) {
@@ -5314,9 +5314,9 @@ return_closcall2(data,  car(((closureN)self_73975)->elements[1]),  ((closureN)se
 }
 
 void c_srfi69_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-make_pair(pair_732678, find_or_add_symbol("symbol-hash"), find_or_add_symbol("symbol-hash__inline__"));
-make_pair(c_732679, &pair_732678, NULL);
-(((closure)cont)->fn)(data, 1, cont, &c_732679);
+make_pair(pair_732695, find_or_add_symbol("symbol-hash"), find_or_add_symbol("symbol-hash__inline__"));
+make_pair(c_732696, &pair_732695, NULL);
+(((closure)cont)->fn)(data, 1, cont, &c_732696);
  } 
 void c_srfi69_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
@@ -5483,121 +5483,121 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__75make_91hash_91node_srfi_69 = boolean_f; 
   __glo__85default_91bound_85_srfi_69 = obj_int2obj(1073741823); 
 
-  mclosure0(clo_732681, c_srfi69_inlinable_lambdas); make_pair(pair_732680, find_or_add_symbol("c_srfi69_inlinable_lambdas"), &clo_732681);
-  make_cvar(cvar_732682, (object *)&__glo_lib_91init_117srfi69_srfi_69);make_pair(pair_732683, find_or_add_symbol("lib-init:srfi69"), &cvar_732682);
-  make_cvar(cvar_732684, (object *)&__glo_Cyc_91memoize_srfi_69);make_pair(pair_732685, find_or_add_symbol("Cyc-memoize"), &cvar_732684);
-  make_cvar(cvar_732686, (object *)&__glo_hash_91table_91values_srfi_69);make_pair(pair_732687, find_or_add_symbol("hash-table-values"), &cvar_732686);
-  make_cvar(cvar_732688, (object *)&__glo_hash_91table_91keys_srfi_69);make_pair(pair_732689, find_or_add_symbol("hash-table-keys"), &cvar_732688);
-  make_cvar(cvar_732690, (object *)&__glo_hash_91table_91merge_67_srfi_69);make_pair(pair_732691, find_or_add_symbol("hash-table-merge!"), &cvar_732690);
-  make_cvar(cvar_732692, (object *)&__glo_hash_91table_91copy_srfi_69);make_pair(pair_732693, find_or_add_symbol("hash-table-copy"), &cvar_732692);
-  make_cvar(cvar_732694, (object *)&__glo_hash_91table_91_125alist_srfi_69);make_pair(pair_732695, find_or_add_symbol("hash-table->alist"), &cvar_732694);
-  make_cvar(cvar_732696, (object *)&__glo_alist_91_125hash_91table_srfi_69);make_pair(pair_732697, find_or_add_symbol("alist->hash-table"), &cvar_732696);
-  make_cvar(cvar_732698, (object *)&__glo_hash_91table_91fold_srfi_69);make_pair(pair_732699, find_or_add_symbol("hash-table-fold"), &cvar_732698);
-  make_cvar(cvar_732700, (object *)&__glo_hash_91table_91walk_srfi_69);make_pair(pair_732701, find_or_add_symbol("hash-table-walk"), &cvar_732700);
-  make_cvar(cvar_732702, (object *)&__glo_hash_91table_91exists_127_srfi_69);make_pair(pair_732703, find_or_add_symbol("hash-table-exists?"), &cvar_732702);
-  make_cvar(cvar_732704, (object *)&__glo_hash_91table_91delete_67_srfi_69);make_pair(pair_732705, find_or_add_symbol("hash-table-delete!"), &cvar_732704);
-  make_cvar(cvar_732706, (object *)&__glo_hash_91table_91update_67_95default_srfi_69);make_pair(pair_732707, find_or_add_symbol("hash-table-update!/default"), &cvar_732706);
-  make_cvar(cvar_732708, (object *)&__glo_hash_91table_91update_67_srfi_69);make_pair(pair_732709, find_or_add_symbol("hash-table-update!"), &cvar_732708);
-  make_cvar(cvar_732710, (object *)&__glo_hash_91table_91set_67_srfi_69);make_pair(pair_732711, find_or_add_symbol("hash-table-set!"), &cvar_732710);
-  make_cvar(cvar_732712, (object *)&__glo_hash_91table_91ref_95default_srfi_69);make_pair(pair_732713, find_or_add_symbol("hash-table-ref/default"), &cvar_732712);
-  make_cvar(cvar_732714, (object *)&__glo_hash_91table_91ref_srfi_69);make_pair(pair_732715, find_or_add_symbol("hash-table-ref"), &cvar_732714);
-  make_cvar(cvar_732716, (object *)&__glo__75hash_91table_91maybe_91resize_67_srfi_69);make_pair(pair_732717, find_or_add_symbol("%hash-table-maybe-resize!"), &cvar_732716);
-  make_cvar(cvar_732718, (object *)&__glo__75hash_91table_91walk_srfi_69);make_pair(pair_732719, find_or_add_symbol("%hash-table-walk"), &cvar_732718);
-  make_cvar(cvar_732720, (object *)&__glo__75hash_91table_91delete_67_srfi_69);make_pair(pair_732721, find_or_add_symbol("%hash-table-delete!"), &cvar_732720);
-  make_cvar(cvar_732722, (object *)&__glo__75hash_91table_91add_67_srfi_69);make_pair(pair_732723, find_or_add_symbol("%hash-table-add!"), &cvar_732722);
-  make_cvar(cvar_732724, (object *)&__glo__75hash_91table_91find_srfi_69);make_pair(pair_732725, find_or_add_symbol("%hash-table-find"), &cvar_732724);
-  make_cvar(cvar_732726, (object *)&__glo__75hash_91table_91hash_srfi_69);make_pair(pair_732727, find_or_add_symbol("%hash-table-hash"), &cvar_732726);
-  make_cvar(cvar_732728, (object *)&__glo_make_91integer_91hash_91table_srfi_69);make_pair(pair_732729, find_or_add_symbol("make-integer-hash-table"), &cvar_732728);
-  make_cvar(cvar_732730, (object *)&__glo_make_91string_91ci_91hash_91table_srfi_69);make_pair(pair_732731, find_or_add_symbol("make-string-ci-hash-table"), &cvar_732730);
-  make_cvar(cvar_732732, (object *)&__glo_make_91string_91hash_91table_srfi_69);make_pair(pair_732733, find_or_add_symbol("make-string-hash-table"), &cvar_732732);
-  make_cvar(cvar_732734, (object *)&__glo_make_91symbol_91hash_91table_srfi_69);make_pair(pair_732735, find_or_add_symbol("make-symbol-hash-table"), &cvar_732734);
-  make_cvar(cvar_732736, (object *)&__glo_make_91hash_91table_91maker_srfi_69);make_pair(pair_732737, find_or_add_symbol("make-hash-table-maker"), &cvar_732736);
-  make_cvar(cvar_732738, (object *)&__glo_make_91hash_91table_srfi_69);make_pair(pair_732739, find_or_add_symbol("make-hash-table"), &cvar_732738);
-  make_cvar(cvar_732740, (object *)&__glo_appropriate_91hash_91function_91for_srfi_69);make_pair(pair_732741, find_or_add_symbol("appropriate-hash-function-for"), &cvar_732740);
-  make_cvar(cvar_732742, (object *)&__glo__85default_91table_91size_85_srfi_69);make_pair(pair_732743, find_or_add_symbol("*default-table-size*"), &cvar_732742);
-  make_cvar(cvar_732744, (object *)&__glo__75make_91hash_91table_srfi_69);make_pair(pair_732745, find_or_add_symbol("%make-hash-table"), &cvar_732744);
-  make_cvar(cvar_732746, (object *)&__glo_hash_91table_91set_91entries_67_srfi_69);make_pair(pair_732747, find_or_add_symbol("hash-table-set-entries!"), &cvar_732746);
-  make_cvar(cvar_732748, (object *)&__glo_hash_91table_91set_91size_67_srfi_69);make_pair(pair_732749, find_or_add_symbol("hash-table-set-size!"), &cvar_732748);
-  make_cvar(cvar_732750, (object *)&__glo_hash_91table_91entries_srfi_69);make_pair(pair_732751, find_or_add_symbol("hash-table-entries"), &cvar_732750);
-  make_cvar(cvar_732752, (object *)&__glo_hash_91table_91association_91function_srfi_69);make_pair(pair_732753, find_or_add_symbol("hash-table-association-function"), &cvar_732752);
-  make_cvar(cvar_732754, (object *)&__glo_hash_91table_91equivalence_91function_srfi_69);make_pair(pair_732755, find_or_add_symbol("hash-table-equivalence-function"), &cvar_732754);
-  make_cvar(cvar_732756, (object *)&__glo_hash_91table_91hash_91function_srfi_69);make_pair(pair_732757, find_or_add_symbol("hash-table-hash-function"), &cvar_732756);
-  make_cvar(cvar_732758, (object *)&__glo_hash_91table_91size_srfi_69);make_pair(pair_732759, find_or_add_symbol("hash-table-size"), &cvar_732758);
-  make_cvar(cvar_732760, (object *)&__glo_hash_91table_127_srfi_69);make_pair(pair_732761, find_or_add_symbol("hash-table?"), &cvar_732760);
-  make_cvar(cvar_732762, (object *)&__glo__121srfi_91hash_91table_125_srfi_69);make_pair(pair_732763, find_or_add_symbol("<srfi-hash-table>"), &cvar_732762);
-  make_cvar(cvar_732764, (object *)&__glo__75hash_91node_91value_srfi_69);make_pair(pair_732765, find_or_add_symbol("%hash-node-value"), &cvar_732764);
-  make_cvar(cvar_732766, (object *)&__glo__75hash_91node_91key_srfi_69);make_pair(pair_732767, find_or_add_symbol("%hash-node-key"), &cvar_732766);
-  make_cvar(cvar_732768, (object *)&__glo__75hash_91node_91set_91value_67_srfi_69);make_pair(pair_732769, find_or_add_symbol("%hash-node-set-value!"), &cvar_732768);
-  make_cvar(cvar_732770, (object *)&__glo__75make_91hash_91node_srfi_69);make_pair(pair_732771, find_or_add_symbol("%make-hash-node"), &cvar_732770);
-  make_cvar(cvar_732772, (object *)&__glo_vector_91hash_srfi_69);make_pair(pair_732773, find_or_add_symbol("vector-hash"), &cvar_732772);
-  make_cvar(cvar_732774, (object *)&__glo_hash_91by_91identity_srfi_69);make_pair(pair_732775, find_or_add_symbol("hash-by-identity"), &cvar_732774);
-  make_cvar(cvar_732776, (object *)&__glo_hash_srfi_69);make_pair(pair_732777, find_or_add_symbol("hash"), &cvar_732776);
-  make_cvar(cvar_732778, (object *)&__glo__75imag_91part_srfi_69);make_pair(pair_732779, find_or_add_symbol("%imag-part"), &cvar_732778);
-  make_cvar(cvar_732780, (object *)&__glo__75real_91part_srfi_69);make_pair(pair_732781, find_or_add_symbol("%real-part"), &cvar_732780);
-  make_cvar(cvar_732782, (object *)&__glo_symbol_91hash_srfi_69);make_pair(pair_732783, find_or_add_symbol("symbol-hash"), &cvar_732782);
-  make_cvar(cvar_732784, (object *)&__glo_symbol_91hash_191_191inline_191_191_srfi_69);make_pair(pair_732785, find_or_add_symbol("symbol-hash__inline__"), &cvar_732784);
-  make_cvar(cvar_732786, (object *)&__glo_string_91ci_91hash_srfi_69);make_pair(pair_732787, find_or_add_symbol("string-ci-hash"), &cvar_732786);
-  make_cvar(cvar_732788, (object *)&__glo_string_91hash_srfi_69);make_pair(pair_732789, find_or_add_symbol("string-hash"), &cvar_732788);
-  make_cvar(cvar_732790, (object *)&__glo__75string_91hash_srfi_69);make_pair(pair_732791, find_or_add_symbol("%string-hash"), &cvar_732790);
-  make_cvar(cvar_732792, (object *)&__glo__85default_91bound_85_srfi_69);make_pair(pair_732793, find_or_add_symbol("*default-bound*"), &cvar_732792);
-make_pair(c_732850, &pair_732680,Cyc_global_variables);
-make_pair(c_732849, &pair_732683, &c_732850);
-make_pair(c_732848, &pair_732685, &c_732849);
-make_pair(c_732847, &pair_732687, &c_732848);
-make_pair(c_732846, &pair_732689, &c_732847);
-make_pair(c_732845, &pair_732691, &c_732846);
-make_pair(c_732844, &pair_732693, &c_732845);
-make_pair(c_732843, &pair_732695, &c_732844);
-make_pair(c_732842, &pair_732697, &c_732843);
-make_pair(c_732841, &pair_732699, &c_732842);
-make_pair(c_732840, &pair_732701, &c_732841);
-make_pair(c_732839, &pair_732703, &c_732840);
-make_pair(c_732838, &pair_732705, &c_732839);
-make_pair(c_732837, &pair_732707, &c_732838);
-make_pair(c_732836, &pair_732709, &c_732837);
-make_pair(c_732835, &pair_732711, &c_732836);
-make_pair(c_732834, &pair_732713, &c_732835);
-make_pair(c_732833, &pair_732715, &c_732834);
-make_pair(c_732832, &pair_732717, &c_732833);
-make_pair(c_732831, &pair_732719, &c_732832);
-make_pair(c_732830, &pair_732721, &c_732831);
-make_pair(c_732829, &pair_732723, &c_732830);
-make_pair(c_732828, &pair_732725, &c_732829);
-make_pair(c_732827, &pair_732727, &c_732828);
-make_pair(c_732826, &pair_732729, &c_732827);
-make_pair(c_732825, &pair_732731, &c_732826);
-make_pair(c_732824, &pair_732733, &c_732825);
-make_pair(c_732823, &pair_732735, &c_732824);
-make_pair(c_732822, &pair_732737, &c_732823);
-make_pair(c_732821, &pair_732739, &c_732822);
-make_pair(c_732820, &pair_732741, &c_732821);
-make_pair(c_732819, &pair_732743, &c_732820);
-make_pair(c_732818, &pair_732745, &c_732819);
-make_pair(c_732817, &pair_732747, &c_732818);
-make_pair(c_732816, &pair_732749, &c_732817);
-make_pair(c_732815, &pair_732751, &c_732816);
-make_pair(c_732814, &pair_732753, &c_732815);
-make_pair(c_732813, &pair_732755, &c_732814);
-make_pair(c_732812, &pair_732757, &c_732813);
-make_pair(c_732811, &pair_732759, &c_732812);
-make_pair(c_732810, &pair_732761, &c_732811);
-make_pair(c_732809, &pair_732763, &c_732810);
-make_pair(c_732808, &pair_732765, &c_732809);
-make_pair(c_732807, &pair_732767, &c_732808);
-make_pair(c_732806, &pair_732769, &c_732807);
-make_pair(c_732805, &pair_732771, &c_732806);
-make_pair(c_732804, &pair_732773, &c_732805);
-make_pair(c_732803, &pair_732775, &c_732804);
-make_pair(c_732802, &pair_732777, &c_732803);
-make_pair(c_732801, &pair_732779, &c_732802);
-make_pair(c_732800, &pair_732781, &c_732801);
-make_pair(c_732799, &pair_732783, &c_732800);
-make_pair(c_732798, &pair_732785, &c_732799);
-make_pair(c_732797, &pair_732787, &c_732798);
-make_pair(c_732796, &pair_732789, &c_732797);
-make_pair(c_732795, &pair_732791, &c_732796);
-make_pair(c_732794, &pair_732793, &c_732795);
-Cyc_global_variables = &c_732794;
+  mclosure0(clo_732698, c_srfi69_inlinable_lambdas); make_pair(pair_732697, find_or_add_symbol("c_srfi69_inlinable_lambdas"), &clo_732698);
+  make_cvar(cvar_732699, (object *)&__glo_lib_91init_117srfi69_srfi_69);make_pair(pair_732700, find_or_add_symbol("lib-init:srfi69"), &cvar_732699);
+  make_cvar(cvar_732701, (object *)&__glo_Cyc_91memoize_srfi_69);make_pair(pair_732702, find_or_add_symbol("Cyc-memoize"), &cvar_732701);
+  make_cvar(cvar_732703, (object *)&__glo_hash_91table_91values_srfi_69);make_pair(pair_732704, find_or_add_symbol("hash-table-values"), &cvar_732703);
+  make_cvar(cvar_732705, (object *)&__glo_hash_91table_91keys_srfi_69);make_pair(pair_732706, find_or_add_symbol("hash-table-keys"), &cvar_732705);
+  make_cvar(cvar_732707, (object *)&__glo_hash_91table_91merge_67_srfi_69);make_pair(pair_732708, find_or_add_symbol("hash-table-merge!"), &cvar_732707);
+  make_cvar(cvar_732709, (object *)&__glo_hash_91table_91copy_srfi_69);make_pair(pair_732710, find_or_add_symbol("hash-table-copy"), &cvar_732709);
+  make_cvar(cvar_732711, (object *)&__glo_hash_91table_91_125alist_srfi_69);make_pair(pair_732712, find_or_add_symbol("hash-table->alist"), &cvar_732711);
+  make_cvar(cvar_732713, (object *)&__glo_alist_91_125hash_91table_srfi_69);make_pair(pair_732714, find_or_add_symbol("alist->hash-table"), &cvar_732713);
+  make_cvar(cvar_732715, (object *)&__glo_hash_91table_91fold_srfi_69);make_pair(pair_732716, find_or_add_symbol("hash-table-fold"), &cvar_732715);
+  make_cvar(cvar_732717, (object *)&__glo_hash_91table_91walk_srfi_69);make_pair(pair_732718, find_or_add_symbol("hash-table-walk"), &cvar_732717);
+  make_cvar(cvar_732719, (object *)&__glo_hash_91table_91exists_127_srfi_69);make_pair(pair_732720, find_or_add_symbol("hash-table-exists?"), &cvar_732719);
+  make_cvar(cvar_732721, (object *)&__glo_hash_91table_91delete_67_srfi_69);make_pair(pair_732722, find_or_add_symbol("hash-table-delete!"), &cvar_732721);
+  make_cvar(cvar_732723, (object *)&__glo_hash_91table_91update_67_95default_srfi_69);make_pair(pair_732724, find_or_add_symbol("hash-table-update!/default"), &cvar_732723);
+  make_cvar(cvar_732725, (object *)&__glo_hash_91table_91update_67_srfi_69);make_pair(pair_732726, find_or_add_symbol("hash-table-update!"), &cvar_732725);
+  make_cvar(cvar_732727, (object *)&__glo_hash_91table_91set_67_srfi_69);make_pair(pair_732728, find_or_add_symbol("hash-table-set!"), &cvar_732727);
+  make_cvar(cvar_732729, (object *)&__glo_hash_91table_91ref_95default_srfi_69);make_pair(pair_732730, find_or_add_symbol("hash-table-ref/default"), &cvar_732729);
+  make_cvar(cvar_732731, (object *)&__glo_hash_91table_91ref_srfi_69);make_pair(pair_732732, find_or_add_symbol("hash-table-ref"), &cvar_732731);
+  make_cvar(cvar_732733, (object *)&__glo__75hash_91table_91maybe_91resize_67_srfi_69);make_pair(pair_732734, find_or_add_symbol("%hash-table-maybe-resize!"), &cvar_732733);
+  make_cvar(cvar_732735, (object *)&__glo__75hash_91table_91walk_srfi_69);make_pair(pair_732736, find_or_add_symbol("%hash-table-walk"), &cvar_732735);
+  make_cvar(cvar_732737, (object *)&__glo__75hash_91table_91delete_67_srfi_69);make_pair(pair_732738, find_or_add_symbol("%hash-table-delete!"), &cvar_732737);
+  make_cvar(cvar_732739, (object *)&__glo__75hash_91table_91add_67_srfi_69);make_pair(pair_732740, find_or_add_symbol("%hash-table-add!"), &cvar_732739);
+  make_cvar(cvar_732741, (object *)&__glo__75hash_91table_91find_srfi_69);make_pair(pair_732742, find_or_add_symbol("%hash-table-find"), &cvar_732741);
+  make_cvar(cvar_732743, (object *)&__glo__75hash_91table_91hash_srfi_69);make_pair(pair_732744, find_or_add_symbol("%hash-table-hash"), &cvar_732743);
+  make_cvar(cvar_732745, (object *)&__glo_make_91integer_91hash_91table_srfi_69);make_pair(pair_732746, find_or_add_symbol("make-integer-hash-table"), &cvar_732745);
+  make_cvar(cvar_732747, (object *)&__glo_make_91string_91ci_91hash_91table_srfi_69);make_pair(pair_732748, find_or_add_symbol("make-string-ci-hash-table"), &cvar_732747);
+  make_cvar(cvar_732749, (object *)&__glo_make_91string_91hash_91table_srfi_69);make_pair(pair_732750, find_or_add_symbol("make-string-hash-table"), &cvar_732749);
+  make_cvar(cvar_732751, (object *)&__glo_make_91symbol_91hash_91table_srfi_69);make_pair(pair_732752, find_or_add_symbol("make-symbol-hash-table"), &cvar_732751);
+  make_cvar(cvar_732753, (object *)&__glo_make_91hash_91table_91maker_srfi_69);make_pair(pair_732754, find_or_add_symbol("make-hash-table-maker"), &cvar_732753);
+  make_cvar(cvar_732755, (object *)&__glo_make_91hash_91table_srfi_69);make_pair(pair_732756, find_or_add_symbol("make-hash-table"), &cvar_732755);
+  make_cvar(cvar_732757, (object *)&__glo_appropriate_91hash_91function_91for_srfi_69);make_pair(pair_732758, find_or_add_symbol("appropriate-hash-function-for"), &cvar_732757);
+  make_cvar(cvar_732759, (object *)&__glo__85default_91table_91size_85_srfi_69);make_pair(pair_732760, find_or_add_symbol("*default-table-size*"), &cvar_732759);
+  make_cvar(cvar_732761, (object *)&__glo__75make_91hash_91table_srfi_69);make_pair(pair_732762, find_or_add_symbol("%make-hash-table"), &cvar_732761);
+  make_cvar(cvar_732763, (object *)&__glo_hash_91table_91set_91entries_67_srfi_69);make_pair(pair_732764, find_or_add_symbol("hash-table-set-entries!"), &cvar_732763);
+  make_cvar(cvar_732765, (object *)&__glo_hash_91table_91set_91size_67_srfi_69);make_pair(pair_732766, find_or_add_symbol("hash-table-set-size!"), &cvar_732765);
+  make_cvar(cvar_732767, (object *)&__glo_hash_91table_91entries_srfi_69);make_pair(pair_732768, find_or_add_symbol("hash-table-entries"), &cvar_732767);
+  make_cvar(cvar_732769, (object *)&__glo_hash_91table_91association_91function_srfi_69);make_pair(pair_732770, find_or_add_symbol("hash-table-association-function"), &cvar_732769);
+  make_cvar(cvar_732771, (object *)&__glo_hash_91table_91equivalence_91function_srfi_69);make_pair(pair_732772, find_or_add_symbol("hash-table-equivalence-function"), &cvar_732771);
+  make_cvar(cvar_732773, (object *)&__glo_hash_91table_91hash_91function_srfi_69);make_pair(pair_732774, find_or_add_symbol("hash-table-hash-function"), &cvar_732773);
+  make_cvar(cvar_732775, (object *)&__glo_hash_91table_91size_srfi_69);make_pair(pair_732776, find_or_add_symbol("hash-table-size"), &cvar_732775);
+  make_cvar(cvar_732777, (object *)&__glo_hash_91table_127_srfi_69);make_pair(pair_732778, find_or_add_symbol("hash-table?"), &cvar_732777);
+  make_cvar(cvar_732779, (object *)&__glo__121srfi_91hash_91table_125_srfi_69);make_pair(pair_732780, find_or_add_symbol("<srfi-hash-table>"), &cvar_732779);
+  make_cvar(cvar_732781, (object *)&__glo__75hash_91node_91value_srfi_69);make_pair(pair_732782, find_or_add_symbol("%hash-node-value"), &cvar_732781);
+  make_cvar(cvar_732783, (object *)&__glo__75hash_91node_91key_srfi_69);make_pair(pair_732784, find_or_add_symbol("%hash-node-key"), &cvar_732783);
+  make_cvar(cvar_732785, (object *)&__glo__75hash_91node_91set_91value_67_srfi_69);make_pair(pair_732786, find_or_add_symbol("%hash-node-set-value!"), &cvar_732785);
+  make_cvar(cvar_732787, (object *)&__glo__75make_91hash_91node_srfi_69);make_pair(pair_732788, find_or_add_symbol("%make-hash-node"), &cvar_732787);
+  make_cvar(cvar_732789, (object *)&__glo_vector_91hash_srfi_69);make_pair(pair_732790, find_or_add_symbol("vector-hash"), &cvar_732789);
+  make_cvar(cvar_732791, (object *)&__glo_hash_91by_91identity_srfi_69);make_pair(pair_732792, find_or_add_symbol("hash-by-identity"), &cvar_732791);
+  make_cvar(cvar_732793, (object *)&__glo_hash_srfi_69);make_pair(pair_732794, find_or_add_symbol("hash"), &cvar_732793);
+  make_cvar(cvar_732795, (object *)&__glo__75imag_91part_srfi_69);make_pair(pair_732796, find_or_add_symbol("%imag-part"), &cvar_732795);
+  make_cvar(cvar_732797, (object *)&__glo__75real_91part_srfi_69);make_pair(pair_732798, find_or_add_symbol("%real-part"), &cvar_732797);
+  make_cvar(cvar_732799, (object *)&__glo_symbol_91hash_srfi_69);make_pair(pair_732800, find_or_add_symbol("symbol-hash"), &cvar_732799);
+  make_cvar(cvar_732801, (object *)&__glo_symbol_91hash_191_191inline_191_191_srfi_69);make_pair(pair_732802, find_or_add_symbol("symbol-hash__inline__"), &cvar_732801);
+  make_cvar(cvar_732803, (object *)&__glo_string_91ci_91hash_srfi_69);make_pair(pair_732804, find_or_add_symbol("string-ci-hash"), &cvar_732803);
+  make_cvar(cvar_732805, (object *)&__glo_string_91hash_srfi_69);make_pair(pair_732806, find_or_add_symbol("string-hash"), &cvar_732805);
+  make_cvar(cvar_732807, (object *)&__glo__75string_91hash_srfi_69);make_pair(pair_732808, find_or_add_symbol("%string-hash"), &cvar_732807);
+  make_cvar(cvar_732809, (object *)&__glo__85default_91bound_85_srfi_69);make_pair(pair_732810, find_or_add_symbol("*default-bound*"), &cvar_732809);
+make_pair(c_732867, &pair_732697,Cyc_global_variables);
+make_pair(c_732866, &pair_732700, &c_732867);
+make_pair(c_732865, &pair_732702, &c_732866);
+make_pair(c_732864, &pair_732704, &c_732865);
+make_pair(c_732863, &pair_732706, &c_732864);
+make_pair(c_732862, &pair_732708, &c_732863);
+make_pair(c_732861, &pair_732710, &c_732862);
+make_pair(c_732860, &pair_732712, &c_732861);
+make_pair(c_732859, &pair_732714, &c_732860);
+make_pair(c_732858, &pair_732716, &c_732859);
+make_pair(c_732857, &pair_732718, &c_732858);
+make_pair(c_732856, &pair_732720, &c_732857);
+make_pair(c_732855, &pair_732722, &c_732856);
+make_pair(c_732854, &pair_732724, &c_732855);
+make_pair(c_732853, &pair_732726, &c_732854);
+make_pair(c_732852, &pair_732728, &c_732853);
+make_pair(c_732851, &pair_732730, &c_732852);
+make_pair(c_732850, &pair_732732, &c_732851);
+make_pair(c_732849, &pair_732734, &c_732850);
+make_pair(c_732848, &pair_732736, &c_732849);
+make_pair(c_732847, &pair_732738, &c_732848);
+make_pair(c_732846, &pair_732740, &c_732847);
+make_pair(c_732845, &pair_732742, &c_732846);
+make_pair(c_732844, &pair_732744, &c_732845);
+make_pair(c_732843, &pair_732746, &c_732844);
+make_pair(c_732842, &pair_732748, &c_732843);
+make_pair(c_732841, &pair_732750, &c_732842);
+make_pair(c_732840, &pair_732752, &c_732841);
+make_pair(c_732839, &pair_732754, &c_732840);
+make_pair(c_732838, &pair_732756, &c_732839);
+make_pair(c_732837, &pair_732758, &c_732838);
+make_pair(c_732836, &pair_732760, &c_732837);
+make_pair(c_732835, &pair_732762, &c_732836);
+make_pair(c_732834, &pair_732764, &c_732835);
+make_pair(c_732833, &pair_732766, &c_732834);
+make_pair(c_732832, &pair_732768, &c_732833);
+make_pair(c_732831, &pair_732770, &c_732832);
+make_pair(c_732830, &pair_732772, &c_732831);
+make_pair(c_732829, &pair_732774, &c_732830);
+make_pair(c_732828, &pair_732776, &c_732829);
+make_pair(c_732827, &pair_732778, &c_732828);
+make_pair(c_732826, &pair_732780, &c_732827);
+make_pair(c_732825, &pair_732782, &c_732826);
+make_pair(c_732824, &pair_732784, &c_732825);
+make_pair(c_732823, &pair_732786, &c_732824);
+make_pair(c_732822, &pair_732788, &c_732823);
+make_pair(c_732821, &pair_732790, &c_732822);
+make_pair(c_732820, &pair_732792, &c_732821);
+make_pair(c_732819, &pair_732794, &c_732820);
+make_pair(c_732818, &pair_732796, &c_732819);
+make_pair(c_732817, &pair_732798, &c_732818);
+make_pair(c_732816, &pair_732800, &c_732817);
+make_pair(c_732815, &pair_732802, &c_732816);
+make_pair(c_732814, &pair_732804, &c_732815);
+make_pair(c_732813, &pair_732806, &c_732814);
+make_pair(c_732812, &pair_732808, &c_732813);
+make_pair(c_732811, &pair_732810, &c_732812);
+Cyc_global_variables = &c_732811;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi69_srfi_69)->fn)(data, 1, cont, cont);
 }

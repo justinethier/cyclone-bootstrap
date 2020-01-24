@@ -338,8 +338,8 @@ static void __lambda_1(void *data, int argc, closure _,object k_7331, object obj
 static void __lambda_10(void *data, int argc, closure _,object k_7369) {
   Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
 
-
-return_closcall1(data,  k_7369,  global_set(__glo_promise_127_scheme_lazy, primitive_procedure_127));; 
+object c_73179 = global_set2(data,  k_7369,__glo_promise_127_scheme_lazy, primitive_procedure_127);
+return_closcall1(data,  k_7369,  c_73179);; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_7360, object proc_7314_7325) {
@@ -562,21 +562,21 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_force_scheme_lazy = &c_7378; 
   __glo_promise_127_scheme_lazy = boolean_f; 
 
-  mclosure0(clo_73180, c_schemelazy_inlinable_lambdas); make_pair(pair_73179, find_or_add_symbol("c_schemelazy_inlinable_lambdas"), &clo_73180);
-  make_cvar(cvar_73181, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_pair(pair_73182, find_or_add_symbol("lib-init:schemelazy"), &cvar_73181);
-  make_cvar(cvar_73183, (object *)&__glo_promise_127_scheme_lazy);make_pair(pair_73184, find_or_add_symbol("promise?"), &cvar_73183);
-  make_cvar(cvar_73185, (object *)&__glo_make_91promise_scheme_lazy);make_pair(pair_73186, find_or_add_symbol("make-promise"), &cvar_73185);
-  make_cvar(cvar_73187, (object *)&__glo_delay_91force_scheme_lazy);make_pair(pair_73188, find_or_add_symbol("delay-force"), &cvar_73187);
-  make_cvar(cvar_73189, (object *)&__glo_delay_scheme_lazy);make_pair(pair_73190, find_or_add_symbol("delay"), &cvar_73189);
-  make_cvar(cvar_73191, (object *)&__glo_force_scheme_lazy);make_pair(pair_73192, find_or_add_symbol("force"), &cvar_73191);
-make_pair(c_73199, &pair_73179,Cyc_global_variables);
-make_pair(c_73198, &pair_73182, &c_73199);
-make_pair(c_73197, &pair_73184, &c_73198);
-make_pair(c_73196, &pair_73186, &c_73197);
-make_pair(c_73195, &pair_73188, &c_73196);
-make_pair(c_73194, &pair_73190, &c_73195);
-make_pair(c_73193, &pair_73192, &c_73194);
-Cyc_global_variables = &c_73193;
+  mclosure0(clo_73181, c_schemelazy_inlinable_lambdas); make_pair(pair_73180, find_or_add_symbol("c_schemelazy_inlinable_lambdas"), &clo_73181);
+  make_cvar(cvar_73182, (object *)&__glo_lib_91init_117schemelazy_scheme_lazy);make_pair(pair_73183, find_or_add_symbol("lib-init:schemelazy"), &cvar_73182);
+  make_cvar(cvar_73184, (object *)&__glo_promise_127_scheme_lazy);make_pair(pair_73185, find_or_add_symbol("promise?"), &cvar_73184);
+  make_cvar(cvar_73186, (object *)&__glo_make_91promise_scheme_lazy);make_pair(pair_73187, find_or_add_symbol("make-promise"), &cvar_73186);
+  make_cvar(cvar_73188, (object *)&__glo_delay_91force_scheme_lazy);make_pair(pair_73189, find_or_add_symbol("delay-force"), &cvar_73188);
+  make_cvar(cvar_73190, (object *)&__glo_delay_scheme_lazy);make_pair(pair_73191, find_or_add_symbol("delay"), &cvar_73190);
+  make_cvar(cvar_73192, (object *)&__glo_force_scheme_lazy);make_pair(pair_73193, find_or_add_symbol("force"), &cvar_73192);
+make_pair(c_73200, &pair_73180,Cyc_global_variables);
+make_pair(c_73199, &pair_73183, &c_73200);
+make_pair(c_73198, &pair_73185, &c_73199);
+make_pair(c_73197, &pair_73187, &c_73198);
+make_pair(c_73196, &pair_73189, &c_73197);
+make_pair(c_73195, &pair_73191, &c_73196);
+make_pair(c_73194, &pair_73193, &c_73195);
+Cyc_global_variables = &c_73194;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemelazy_scheme_lazy)->fn)(data, 1, cont, cont);
 }

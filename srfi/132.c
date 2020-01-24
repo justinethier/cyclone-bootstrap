@@ -1388,115 +1388,115 @@ static void __lambda_550(void *data, int argc, closure _,object k_733569) {
   Cyc_st_add(data, "srfi/132.sld:lib-init:srfi132");
 
 closureN_type c_739380;
-object e_739410 [1];
+object e_739416 [1];
 c_739380.hdr.mark = gc_color_red;
  c_739380.hdr.grayed = 0;
 c_739380.tag = closureN_tag;
  c_739380.fn = (function_type)__lambda_551;
 c_739380.num_args = 1;
 c_739380.num_elements = 1;
-c_739380.elements = (object *)e_739410;
+c_739380.elements = (object *)e_739416;
 c_739380.elements[0] = k_733569;
 
 
-
-return_direct_with_clo1(data,(closure)&c_739380,__lambda_551,  global_set(__glo_list_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132));; 
+object c_739419 = global_set2(data,(closure)&c_739380,__glo_list_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
+return_closcall1(data,(closure)&c_739380,  c_739419);; 
 }
 
 static void __lambda_551(void *data, int argc, object self_734153, object r_733571) {
   
 closureN_type c_739382;
-object e_739407 [1];
+object e_739412 [1];
 c_739382.hdr.mark = gc_color_red;
  c_739382.hdr.grayed = 0;
 c_739382.tag = closureN_tag;
  c_739382.fn = (function_type)__lambda_552;
 c_739382.num_args = 1;
 c_739382.num_elements = 1;
-c_739382.elements = (object *)e_739407;
+c_739382.elements = (object *)e_739412;
 c_739382.elements[0] = ((closureN)self_734153)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_739382,__lambda_552,  global_set(__glo_list_91stable_91sort_srfi_132, __glo_list_91merge_91sort_srfi_132));; 
+object c_739415 = global_set2(data,(closure)&c_739382,__glo_list_91stable_91sort_srfi_132, __glo_list_91merge_91sort_srfi_132);
+return_closcall1(data,(closure)&c_739382,  c_739415);; 
 }
 
 static void __lambda_552(void *data, int argc, object self_734154, object r_733572) {
   
 closureN_type c_739384;
-object e_739404 [1];
+object e_739408 [1];
 c_739384.hdr.mark = gc_color_red;
  c_739384.hdr.grayed = 0;
 c_739384.tag = closureN_tag;
  c_739384.fn = (function_type)__lambda_553;
 c_739384.num_args = 1;
 c_739384.num_elements = 1;
-c_739384.elements = (object *)e_739404;
+c_739384.elements = (object *)e_739408;
 c_739384.elements[0] = ((closureN)self_734154)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_739384,__lambda_553,  global_set(__glo_list_91stable_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132));; 
+object c_739411 = global_set2(data,(closure)&c_739384,__glo_list_91stable_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
+return_closcall1(data,(closure)&c_739384,  c_739411);; 
 }
 
 static void __lambda_553(void *data, int argc, object self_734155, object r_733573) {
   
 closureN_type c_739386;
-object e_739401 [1];
+object e_739404 [1];
 c_739386.hdr.mark = gc_color_red;
  c_739386.hdr.grayed = 0;
 c_739386.tag = closureN_tag;
  c_739386.fn = (function_type)__lambda_554;
 c_739386.num_args = 1;
 c_739386.num_elements = 1;
-c_739386.elements = (object *)e_739401;
+c_739386.elements = (object *)e_739404;
 c_739386.elements[0] = ((closureN)self_734155)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_739386,__lambda_554,  global_set(__glo_vector_91sort_srfi_132, __glo_vector_91quick_91sort_srfi_132));; 
+object c_739407 = global_set2(data,(closure)&c_739386,__glo_vector_91sort_srfi_132, __glo_vector_91quick_91sort_srfi_132);
+return_closcall1(data,(closure)&c_739386,  c_739407);; 
 }
 
 static void __lambda_554(void *data, int argc, object self_734156, object r_733574) {
   
 closureN_type c_739388;
-object e_739398 [1];
+object e_739400 [1];
 c_739388.hdr.mark = gc_color_red;
  c_739388.hdr.grayed = 0;
 c_739388.tag = closureN_tag;
  c_739388.fn = (function_type)__lambda_555;
 c_739388.num_args = 1;
 c_739388.num_elements = 1;
-c_739388.elements = (object *)e_739398;
+c_739388.elements = (object *)e_739400;
 c_739388.elements[0] = ((closureN)self_734156)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_739388,__lambda_555,  global_set(__glo_vector_91sort_67_srfi_132, __glo_vector_91quick_91sort_67_srfi_132));; 
+object c_739403 = global_set2(data,(closure)&c_739388,__glo_vector_91sort_67_srfi_132, __glo_vector_91quick_91sort_67_srfi_132);
+return_closcall1(data,(closure)&c_739388,  c_739403);; 
 }
 
 static void __lambda_555(void *data, int argc, object self_734157, object r_733575) {
   
 closureN_type c_739390;
-object e_739395 [1];
+object e_739396 [1];
 c_739390.hdr.mark = gc_color_red;
  c_739390.hdr.grayed = 0;
 c_739390.tag = closureN_tag;
  c_739390.fn = (function_type)__lambda_556;
 c_739390.num_args = 1;
 c_739390.num_elements = 1;
-c_739390.elements = (object *)e_739395;
+c_739390.elements = (object *)e_739396;
 c_739390.elements[0] = ((closureN)self_734157)->elements[0];
 
 
-
-return_direct_with_clo1(data,(closure)&c_739390,__lambda_556,  global_set(__glo_vector_91stable_91sort_srfi_132, __glo_vector_91merge_91sort_srfi_132));; 
+object c_739399 = global_set2(data,(closure)&c_739390,__glo_vector_91stable_91sort_srfi_132, __glo_vector_91merge_91sort_srfi_132);
+return_closcall1(data,(closure)&c_739390,  c_739399);; 
 }
 
 static void __lambda_556(void *data, int argc, object self_734158, object r_733576) {
   
-
-return_closcall1(data,  ((closureN)self_734158)->elements[0],  global_set(__glo_vector_91stable_91sort_67_srfi_132, __glo_vector_91merge_91sort_67_srfi_132));; 
+object c_739395 = global_set2(data,  ((closureN)self_734158)->elements[0],__glo_vector_91stable_91sort_67_srfi_132, __glo_vector_91merge_91sort_67_srfi_132);
+return_closcall1(data,  ((closureN)self_734158)->elements[0],  c_739395);; 
 }
 
 static void __lambda_547(void *data, int argc, closure _,object k_733550, object _121_731949_732597, object l_731950_732598) {
@@ -15823,87 +15823,87 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_list_91stable_91sort_srfi_132 = boolean_f; 
   __glo_list_91sort_67_srfi_132 = boolean_f; 
 
-  mclosure0(clo_739414, c_srfi132_inlinable_lambdas); make_pair(pair_739413, find_or_add_symbol("c_srfi132_inlinable_lambdas"), &clo_739414);
-  make_cvar(cvar_739415, (object *)&__glo_lib_91init_117srfi132_srfi_132);make_pair(pair_739416, find_or_add_symbol("lib-init:srfi132"), &cvar_739415);
-  make_cvar(cvar_739417, (object *)&__glo_vector_91stable_91sort_67_srfi_132);make_pair(pair_739418, find_or_add_symbol("vector-stable-sort!"), &cvar_739417);
-  make_cvar(cvar_739419, (object *)&__glo_vector_91stable_91sort_srfi_132);make_pair(pair_739420, find_or_add_symbol("vector-stable-sort"), &cvar_739419);
-  make_cvar(cvar_739421, (object *)&__glo_vector_91sort_67_srfi_132);make_pair(pair_739422, find_or_add_symbol("vector-sort!"), &cvar_739421);
-  make_cvar(cvar_739423, (object *)&__glo_vector_91sort_srfi_132);make_pair(pair_739424, find_or_add_symbol("vector-sort"), &cvar_739423);
-  make_cvar(cvar_739425, (object *)&__glo_list_91stable_91sort_67_srfi_132);make_pair(pair_739426, find_or_add_symbol("list-stable-sort!"), &cvar_739425);
-  make_cvar(cvar_739427, (object *)&__glo_list_91stable_91sort_srfi_132);make_pair(pair_739428, find_or_add_symbol("list-stable-sort"), &cvar_739427);
-  make_cvar(cvar_739429, (object *)&__glo_list_91sort_67_srfi_132);make_pair(pair_739430, find_or_add_symbol("list-sort!"), &cvar_739429);
-  make_cvar(cvar_739431, (object *)&__glo_list_91sort_srfi_132);make_pair(pair_739432, find_or_add_symbol("list-sort"), &cvar_739431);
-  make_cvar(cvar_739433, (object *)&__glo__75quick_91sort_67_srfi_132);make_pair(pair_739434, find_or_add_symbol("%quick-sort!"), &cvar_739433);
-  make_cvar(cvar_739435, (object *)&__glo_vector_91quick_91sort_srfi_132);make_pair(pair_739436, find_or_add_symbol("vector-quick-sort"), &cvar_739435);
-  make_cvar(cvar_739437, (object *)&__glo_vector_91quick_91sort_67_srfi_132);make_pair(pair_739438, find_or_add_symbol("vector-quick-sort!"), &cvar_739437);
-  make_cvar(cvar_739439, (object *)&__glo__75vector_91merge_91sort_67_srfi_132);make_pair(pair_739440, find_or_add_symbol("%vector-merge-sort!"), &cvar_739439);
-  make_cvar(cvar_739441, (object *)&__glo_vector_91merge_91sort_srfi_132);make_pair(pair_739442, find_or_add_symbol("vector-merge-sort"), &cvar_739441);
-  make_cvar(cvar_739443, (object *)&__glo_vector_91merge_91sort_67_srfi_132);make_pair(pair_739444, find_or_add_symbol("vector-merge-sort!"), &cvar_739443);
-  make_cvar(cvar_739445, (object *)&__glo__75vector_91merge_67_srfi_132);make_pair(pair_739446, find_or_add_symbol("%vector-merge!"), &cvar_739445);
-  make_cvar(cvar_739447, (object *)&__glo_vector_91merge_67_srfi_132);make_pair(pair_739448, find_or_add_symbol("vector-merge!"), &cvar_739447);
-  make_cvar(cvar_739449, (object *)&__glo_vector_91merge_srfi_132);make_pair(pair_739450, find_or_add_symbol("vector-merge"), &cvar_739449);
-  make_cvar(cvar_739451, (object *)&__glo__75vector_91insert_91sort_67_srfi_132);make_pair(pair_739452, find_or_add_symbol("%vector-insert-sort!"), &cvar_739451);
-  make_cvar(cvar_739453, (object *)&__glo_vector_91heap_91sort_67_srfi_132);make_pair(pair_739454, find_or_add_symbol("vector-heap-sort!"), &cvar_739453);
-  make_cvar(cvar_739455, (object *)&__glo_really_91vector_91heap_91sort_67_srfi_132);make_pair(pair_739456, find_or_add_symbol("really-vector-heap-sort!"), &cvar_739455);
-  make_cvar(cvar_739457, (object *)&__glo_vectors_91start_87end_912_srfi_132);make_pair(pair_739458, find_or_add_symbol("vectors-start+end-2"), &cvar_739457);
-  make_cvar(cvar_739459, (object *)&__glo_vector_91start_87end_srfi_132);make_pair(pair_739460, find_or_add_symbol("vector-start+end"), &cvar_739459);
-  make_cvar(cvar_739461, (object *)&__glo_list_91ref_91or_91default_srfi_132);make_pair(pair_739462, find_or_add_symbol("list-ref-or-default"), &cvar_739461);
-  make_cvar(cvar_739463, (object *)&__glo_has_91element_srfi_132);make_pair(pair_739464, find_or_add_symbol("has-element"), &cvar_739463);
-  make_cvar(cvar_739465, (object *)&__glo_vector_91portion_91copy_67_srfi_132);make_pair(pair_739466, find_or_add_symbol("vector-portion-copy!"), &cvar_739465);
-  make_cvar(cvar_739467, (object *)&__glo_vector_91copy_srfi_132);make_pair(pair_739468, find_or_add_symbol("vector-copy"), &cvar_739467);
-  make_cvar(cvar_739469, (object *)&__glo_vector_91portion_91copy_srfi_132);make_pair(pair_739470, find_or_add_symbol("vector-portion-copy"), &cvar_739469);
-  make_cvar(cvar_739471, (object *)&__glo_vector_91sorted_127_srfi_132);make_pair(pair_739472, find_or_add_symbol("vector-sorted?"), &cvar_739471);
-  make_cvar(cvar_739473, (object *)&__glo_list_91sorted_127_srfi_132);make_pair(pair_739474, find_or_add_symbol("list-sorted?"), &cvar_739473);
-  make_cvar(cvar_739475, (object *)&__glo_list_91merge_67_srfi_132);make_pair(pair_739476, find_or_add_symbol("list-merge!"), &cvar_739475);
-  make_cvar(cvar_739477, (object *)&__glo_list_91merge_srfi_132);make_pair(pair_739478, find_or_add_symbol("list-merge"), &cvar_739477);
-  make_cvar(cvar_739479, (object *)&__glo_list_91merge_91sort_67_srfi_132);make_pair(pair_739480, find_or_add_symbol("list-merge-sort!"), &cvar_739479);
-  make_cvar(cvar_739481, (object *)&__glo_list_91merge_91sort_srfi_132);make_pair(pair_739482, find_or_add_symbol("list-merge-sort"), &cvar_739481);
-  make_cvar(cvar_739483, (object *)&__glo_mlet_srfi_132);make_pair(pair_739484, find_or_add_symbol("mlet"), &cvar_739483);
-  make_cvar(cvar_739485, (object *)&__glo_vector_91delete_91neighbor_91dups_67_srfi_132);make_pair(pair_739486, find_or_add_symbol("vector-delete-neighbor-dups!"), &cvar_739485);
-  make_cvar(cvar_739487, (object *)&__glo_vector_91delete_91neighbor_91dups_srfi_132);make_pair(pair_739488, find_or_add_symbol("vector-delete-neighbor-dups"), &cvar_739487);
-  make_cvar(cvar_739489, (object *)&__glo_list_91delete_91neighbor_91dups_67_srfi_132);make_pair(pair_739490, find_or_add_symbol("list-delete-neighbor-dups!"), &cvar_739489);
-  make_cvar(cvar_739491, (object *)&__glo_list_91delete_91neighbor_91dups_srfi_132);make_pair(pair_739492, find_or_add_symbol("list-delete-neighbor-dups"), &cvar_739491);
-make_pair(c_739532, &pair_739413,Cyc_global_variables);
-make_pair(c_739531, &pair_739416, &c_739532);
-make_pair(c_739530, &pair_739418, &c_739531);
-make_pair(c_739529, &pair_739420, &c_739530);
-make_pair(c_739528, &pair_739422, &c_739529);
-make_pair(c_739527, &pair_739424, &c_739528);
-make_pair(c_739526, &pair_739426, &c_739527);
-make_pair(c_739525, &pair_739428, &c_739526);
-make_pair(c_739524, &pair_739430, &c_739525);
-make_pair(c_739523, &pair_739432, &c_739524);
-make_pair(c_739522, &pair_739434, &c_739523);
-make_pair(c_739521, &pair_739436, &c_739522);
-make_pair(c_739520, &pair_739438, &c_739521);
-make_pair(c_739519, &pair_739440, &c_739520);
-make_pair(c_739518, &pair_739442, &c_739519);
-make_pair(c_739517, &pair_739444, &c_739518);
-make_pair(c_739516, &pair_739446, &c_739517);
-make_pair(c_739515, &pair_739448, &c_739516);
-make_pair(c_739514, &pair_739450, &c_739515);
-make_pair(c_739513, &pair_739452, &c_739514);
-make_pair(c_739512, &pair_739454, &c_739513);
-make_pair(c_739511, &pair_739456, &c_739512);
-make_pair(c_739510, &pair_739458, &c_739511);
-make_pair(c_739509, &pair_739460, &c_739510);
-make_pair(c_739508, &pair_739462, &c_739509);
-make_pair(c_739507, &pair_739464, &c_739508);
-make_pair(c_739506, &pair_739466, &c_739507);
-make_pair(c_739505, &pair_739468, &c_739506);
-make_pair(c_739504, &pair_739470, &c_739505);
-make_pair(c_739503, &pair_739472, &c_739504);
-make_pair(c_739502, &pair_739474, &c_739503);
-make_pair(c_739501, &pair_739476, &c_739502);
-make_pair(c_739500, &pair_739478, &c_739501);
-make_pair(c_739499, &pair_739480, &c_739500);
-make_pair(c_739498, &pair_739482, &c_739499);
-make_pair(c_739497, &pair_739484, &c_739498);
-make_pair(c_739496, &pair_739486, &c_739497);
-make_pair(c_739495, &pair_739488, &c_739496);
-make_pair(c_739494, &pair_739490, &c_739495);
-make_pair(c_739493, &pair_739492, &c_739494);
-Cyc_global_variables = &c_739493;
+  mclosure0(clo_739421, c_srfi132_inlinable_lambdas); make_pair(pair_739420, find_or_add_symbol("c_srfi132_inlinable_lambdas"), &clo_739421);
+  make_cvar(cvar_739422, (object *)&__glo_lib_91init_117srfi132_srfi_132);make_pair(pair_739423, find_or_add_symbol("lib-init:srfi132"), &cvar_739422);
+  make_cvar(cvar_739424, (object *)&__glo_vector_91stable_91sort_67_srfi_132);make_pair(pair_739425, find_or_add_symbol("vector-stable-sort!"), &cvar_739424);
+  make_cvar(cvar_739426, (object *)&__glo_vector_91stable_91sort_srfi_132);make_pair(pair_739427, find_or_add_symbol("vector-stable-sort"), &cvar_739426);
+  make_cvar(cvar_739428, (object *)&__glo_vector_91sort_67_srfi_132);make_pair(pair_739429, find_or_add_symbol("vector-sort!"), &cvar_739428);
+  make_cvar(cvar_739430, (object *)&__glo_vector_91sort_srfi_132);make_pair(pair_739431, find_or_add_symbol("vector-sort"), &cvar_739430);
+  make_cvar(cvar_739432, (object *)&__glo_list_91stable_91sort_67_srfi_132);make_pair(pair_739433, find_or_add_symbol("list-stable-sort!"), &cvar_739432);
+  make_cvar(cvar_739434, (object *)&__glo_list_91stable_91sort_srfi_132);make_pair(pair_739435, find_or_add_symbol("list-stable-sort"), &cvar_739434);
+  make_cvar(cvar_739436, (object *)&__glo_list_91sort_67_srfi_132);make_pair(pair_739437, find_or_add_symbol("list-sort!"), &cvar_739436);
+  make_cvar(cvar_739438, (object *)&__glo_list_91sort_srfi_132);make_pair(pair_739439, find_or_add_symbol("list-sort"), &cvar_739438);
+  make_cvar(cvar_739440, (object *)&__glo__75quick_91sort_67_srfi_132);make_pair(pair_739441, find_or_add_symbol("%quick-sort!"), &cvar_739440);
+  make_cvar(cvar_739442, (object *)&__glo_vector_91quick_91sort_srfi_132);make_pair(pair_739443, find_or_add_symbol("vector-quick-sort"), &cvar_739442);
+  make_cvar(cvar_739444, (object *)&__glo_vector_91quick_91sort_67_srfi_132);make_pair(pair_739445, find_or_add_symbol("vector-quick-sort!"), &cvar_739444);
+  make_cvar(cvar_739446, (object *)&__glo__75vector_91merge_91sort_67_srfi_132);make_pair(pair_739447, find_or_add_symbol("%vector-merge-sort!"), &cvar_739446);
+  make_cvar(cvar_739448, (object *)&__glo_vector_91merge_91sort_srfi_132);make_pair(pair_739449, find_or_add_symbol("vector-merge-sort"), &cvar_739448);
+  make_cvar(cvar_739450, (object *)&__glo_vector_91merge_91sort_67_srfi_132);make_pair(pair_739451, find_or_add_symbol("vector-merge-sort!"), &cvar_739450);
+  make_cvar(cvar_739452, (object *)&__glo__75vector_91merge_67_srfi_132);make_pair(pair_739453, find_or_add_symbol("%vector-merge!"), &cvar_739452);
+  make_cvar(cvar_739454, (object *)&__glo_vector_91merge_67_srfi_132);make_pair(pair_739455, find_or_add_symbol("vector-merge!"), &cvar_739454);
+  make_cvar(cvar_739456, (object *)&__glo_vector_91merge_srfi_132);make_pair(pair_739457, find_or_add_symbol("vector-merge"), &cvar_739456);
+  make_cvar(cvar_739458, (object *)&__glo__75vector_91insert_91sort_67_srfi_132);make_pair(pair_739459, find_or_add_symbol("%vector-insert-sort!"), &cvar_739458);
+  make_cvar(cvar_739460, (object *)&__glo_vector_91heap_91sort_67_srfi_132);make_pair(pair_739461, find_or_add_symbol("vector-heap-sort!"), &cvar_739460);
+  make_cvar(cvar_739462, (object *)&__glo_really_91vector_91heap_91sort_67_srfi_132);make_pair(pair_739463, find_or_add_symbol("really-vector-heap-sort!"), &cvar_739462);
+  make_cvar(cvar_739464, (object *)&__glo_vectors_91start_87end_912_srfi_132);make_pair(pair_739465, find_or_add_symbol("vectors-start+end-2"), &cvar_739464);
+  make_cvar(cvar_739466, (object *)&__glo_vector_91start_87end_srfi_132);make_pair(pair_739467, find_or_add_symbol("vector-start+end"), &cvar_739466);
+  make_cvar(cvar_739468, (object *)&__glo_list_91ref_91or_91default_srfi_132);make_pair(pair_739469, find_or_add_symbol("list-ref-or-default"), &cvar_739468);
+  make_cvar(cvar_739470, (object *)&__glo_has_91element_srfi_132);make_pair(pair_739471, find_or_add_symbol("has-element"), &cvar_739470);
+  make_cvar(cvar_739472, (object *)&__glo_vector_91portion_91copy_67_srfi_132);make_pair(pair_739473, find_or_add_symbol("vector-portion-copy!"), &cvar_739472);
+  make_cvar(cvar_739474, (object *)&__glo_vector_91copy_srfi_132);make_pair(pair_739475, find_or_add_symbol("vector-copy"), &cvar_739474);
+  make_cvar(cvar_739476, (object *)&__glo_vector_91portion_91copy_srfi_132);make_pair(pair_739477, find_or_add_symbol("vector-portion-copy"), &cvar_739476);
+  make_cvar(cvar_739478, (object *)&__glo_vector_91sorted_127_srfi_132);make_pair(pair_739479, find_or_add_symbol("vector-sorted?"), &cvar_739478);
+  make_cvar(cvar_739480, (object *)&__glo_list_91sorted_127_srfi_132);make_pair(pair_739481, find_or_add_symbol("list-sorted?"), &cvar_739480);
+  make_cvar(cvar_739482, (object *)&__glo_list_91merge_67_srfi_132);make_pair(pair_739483, find_or_add_symbol("list-merge!"), &cvar_739482);
+  make_cvar(cvar_739484, (object *)&__glo_list_91merge_srfi_132);make_pair(pair_739485, find_or_add_symbol("list-merge"), &cvar_739484);
+  make_cvar(cvar_739486, (object *)&__glo_list_91merge_91sort_67_srfi_132);make_pair(pair_739487, find_or_add_symbol("list-merge-sort!"), &cvar_739486);
+  make_cvar(cvar_739488, (object *)&__glo_list_91merge_91sort_srfi_132);make_pair(pair_739489, find_or_add_symbol("list-merge-sort"), &cvar_739488);
+  make_cvar(cvar_739490, (object *)&__glo_mlet_srfi_132);make_pair(pair_739491, find_or_add_symbol("mlet"), &cvar_739490);
+  make_cvar(cvar_739492, (object *)&__glo_vector_91delete_91neighbor_91dups_67_srfi_132);make_pair(pair_739493, find_or_add_symbol("vector-delete-neighbor-dups!"), &cvar_739492);
+  make_cvar(cvar_739494, (object *)&__glo_vector_91delete_91neighbor_91dups_srfi_132);make_pair(pair_739495, find_or_add_symbol("vector-delete-neighbor-dups"), &cvar_739494);
+  make_cvar(cvar_739496, (object *)&__glo_list_91delete_91neighbor_91dups_67_srfi_132);make_pair(pair_739497, find_or_add_symbol("list-delete-neighbor-dups!"), &cvar_739496);
+  make_cvar(cvar_739498, (object *)&__glo_list_91delete_91neighbor_91dups_srfi_132);make_pair(pair_739499, find_or_add_symbol("list-delete-neighbor-dups"), &cvar_739498);
+make_pair(c_739539, &pair_739420,Cyc_global_variables);
+make_pair(c_739538, &pair_739423, &c_739539);
+make_pair(c_739537, &pair_739425, &c_739538);
+make_pair(c_739536, &pair_739427, &c_739537);
+make_pair(c_739535, &pair_739429, &c_739536);
+make_pair(c_739534, &pair_739431, &c_739535);
+make_pair(c_739533, &pair_739433, &c_739534);
+make_pair(c_739532, &pair_739435, &c_739533);
+make_pair(c_739531, &pair_739437, &c_739532);
+make_pair(c_739530, &pair_739439, &c_739531);
+make_pair(c_739529, &pair_739441, &c_739530);
+make_pair(c_739528, &pair_739443, &c_739529);
+make_pair(c_739527, &pair_739445, &c_739528);
+make_pair(c_739526, &pair_739447, &c_739527);
+make_pair(c_739525, &pair_739449, &c_739526);
+make_pair(c_739524, &pair_739451, &c_739525);
+make_pair(c_739523, &pair_739453, &c_739524);
+make_pair(c_739522, &pair_739455, &c_739523);
+make_pair(c_739521, &pair_739457, &c_739522);
+make_pair(c_739520, &pair_739459, &c_739521);
+make_pair(c_739519, &pair_739461, &c_739520);
+make_pair(c_739518, &pair_739463, &c_739519);
+make_pair(c_739517, &pair_739465, &c_739518);
+make_pair(c_739516, &pair_739467, &c_739517);
+make_pair(c_739515, &pair_739469, &c_739516);
+make_pair(c_739514, &pair_739471, &c_739515);
+make_pair(c_739513, &pair_739473, &c_739514);
+make_pair(c_739512, &pair_739475, &c_739513);
+make_pair(c_739511, &pair_739477, &c_739512);
+make_pair(c_739510, &pair_739479, &c_739511);
+make_pair(c_739509, &pair_739481, &c_739510);
+make_pair(c_739508, &pair_739483, &c_739509);
+make_pair(c_739507, &pair_739485, &c_739508);
+make_pair(c_739506, &pair_739487, &c_739507);
+make_pair(c_739505, &pair_739489, &c_739506);
+make_pair(c_739504, &pair_739491, &c_739505);
+make_pair(c_739503, &pair_739493, &c_739504);
+make_pair(c_739502, &pair_739495, &c_739503);
+make_pair(c_739501, &pair_739497, &c_739502);
+make_pair(c_739500, &pair_739499, &c_739501);
+Cyc_global_variables = &c_739500;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117srfi132_srfi_132)->fn)(data, 1, cont, cont);
 }
