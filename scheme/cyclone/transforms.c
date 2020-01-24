@@ -14324,7 +14324,7 @@ static void __lambda_70(void *data, int argc, closure _,object k_731295, object 
   Cyc_st_add(data, "scheme/cyclone/transforms.sld:trace:debug");
 
 make_utf8_string_with_len(c_733858, "DEBUG: ", 7, 7);
-return_closcall5(data,  __glo_trace_scheme_cyclone_transforms,  k_731295, obj_int2obj(4), msg_7369_73896, __glo_display_scheme_write, &c_733858);; 
+return_closcall5(data,  __glo_trace_scheme_cyclone_transforms,  k_731295, obj_int2obj(4), msg_7369_73896, __glo_write_scheme_write, &c_733858);; 
 }
 
 static void __lambda_69(void *data, int argc, closure _,object k_731292, object msg_7368_73895) {
