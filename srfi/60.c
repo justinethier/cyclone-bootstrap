@@ -449,6 +449,16 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(bitwise_91and);
+defsymbol(bitwise_91ior);
+defsymbol(bitwise_91xor);
+defsymbol(bitwise_91not);
+defsymbol(bitwise_91merge);
+defsymbol(any_91bits_91set_127);
+defsymbol(bit_91count);
+defsymbol(first_91set_91bit);
+defsymbol(bit_91set_127);
+defsymbol(arithmetic_91shift);
 defsymbol(define_91c);
 static void __lambda_112(void *data, int argc, closure _,object k_73471) ;
 static void __lambda_113(void *data, int argc, object self_73586, object r_73473) ;
@@ -604,7 +614,7 @@ c_731353.elements = (object *)e_731407;
 c_731353.elements[0] = k_73471;
 
 
-object c_731410 = global_set2(data,(closure)&c_731353,__glo_bitwise_91and_srfi_60, __glo_logand_srfi_60);
+object c_731410 = global_set2_id(data,(closure)&c_731353,quote_bitwise_91and, __glo_bitwise_91and_srfi_60, __glo_logand_srfi_60);
 return_closcall1(data,(closure)&c_731353,  c_731410);; 
 }
 
@@ -622,7 +632,7 @@ c_731355.elements = (object *)e_731403;
 c_731355.elements[0] = ((closureN)self_73586)->elements[0];
 
 
-object c_731406 = global_set2(data,(closure)&c_731355,__glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60);
+object c_731406 = global_set2_id(data,(closure)&c_731355,quote_bitwise_91ior, __glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60);
 return_closcall1(data,(closure)&c_731355,  c_731406);; 
 }
 
@@ -640,7 +650,7 @@ c_731357.elements = (object *)e_731399;
 c_731357.elements[0] = ((closureN)self_73587)->elements[0];
 
 
-object c_731402 = global_set2(data,(closure)&c_731357,__glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60);
+object c_731402 = global_set2_id(data,(closure)&c_731357,quote_bitwise_91xor, __glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60);
 return_closcall1(data,(closure)&c_731357,  c_731402);; 
 }
 
@@ -658,7 +668,7 @@ c_731359.elements = (object *)e_731395;
 c_731359.elements[0] = ((closureN)self_73588)->elements[0];
 
 
-object c_731398 = global_set2(data,(closure)&c_731359,__glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60);
+object c_731398 = global_set2_id(data,(closure)&c_731359,quote_bitwise_91not, __glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60);
 return_closcall1(data,(closure)&c_731359,  c_731398);; 
 }
 
@@ -676,7 +686,7 @@ c_731361.elements = (object *)e_731391;
 c_731361.elements[0] = ((closureN)self_73589)->elements[0];
 
 
-object c_731394 = global_set2(data,(closure)&c_731361,__glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60);
+object c_731394 = global_set2_id(data,(closure)&c_731361,quote_bitwise_91merge, __glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60);
 return_closcall1(data,(closure)&c_731361,  c_731394);; 
 }
 
@@ -694,7 +704,7 @@ c_731363.elements = (object *)e_731387;
 c_731363.elements[0] = ((closureN)self_73590)->elements[0];
 
 
-object c_731390 = global_set2(data,(closure)&c_731363,__glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60);
+object c_731390 = global_set2_id(data,(closure)&c_731363,quote_any_91bits_91set_127, __glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60);
 return_closcall1(data,(closure)&c_731363,  c_731390);; 
 }
 
@@ -712,7 +722,7 @@ c_731365.elements = (object *)e_731383;
 c_731365.elements[0] = ((closureN)self_73591)->elements[0];
 
 
-object c_731386 = global_set2(data,(closure)&c_731365,__glo_bit_91count_srfi_60, __glo_logcount_srfi_60);
+object c_731386 = global_set2_id(data,(closure)&c_731365,quote_bit_91count, __glo_bit_91count_srfi_60, __glo_logcount_srfi_60);
 return_closcall1(data,(closure)&c_731365,  c_731386);; 
 }
 
@@ -730,7 +740,7 @@ c_731367.elements = (object *)e_731379;
 c_731367.elements[0] = ((closureN)self_73592)->elements[0];
 
 
-object c_731382 = global_set2(data,(closure)&c_731367,__glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60);
+object c_731382 = global_set2_id(data,(closure)&c_731367,quote_first_91set_91bit, __glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60);
 return_closcall1(data,(closure)&c_731367,  c_731382);; 
 }
 
@@ -748,13 +758,13 @@ c_731369.elements = (object *)e_731375;
 c_731369.elements[0] = ((closureN)self_73593)->elements[0];
 
 
-object c_731378 = global_set2(data,(closure)&c_731369,__glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60);
+object c_731378 = global_set2_id(data,(closure)&c_731369,quote_bit_91set_127, __glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60);
 return_closcall1(data,(closure)&c_731369,  c_731378);; 
 }
 
 static void __lambda_121(void *data, int argc, object self_73594, object r_73481) {
   
-object c_731374 = global_set2(data,  ((closureN)self_73594)->elements[0],__glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60);
+object c_731374 = global_set2_id(data,  ((closureN)self_73594)->elements[0],quote_arithmetic_91shift, __glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60);
 return_closcall1(data,  ((closureN)self_73594)->elements[0],  c_731374);; 
 }
 
@@ -3266,6 +3276,16 @@ void c_srfi60_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi60_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_bitwise_91and = find_or_add_symbol("bitwise-and");
+  quote_bitwise_91ior = find_or_add_symbol("bitwise-ior");
+  quote_bitwise_91xor = find_or_add_symbol("bitwise-xor");
+  quote_bitwise_91not = find_or_add_symbol("bitwise-not");
+  quote_bitwise_91merge = find_or_add_symbol("bitwise-merge");
+  quote_any_91bits_91set_127 = find_or_add_symbol("any-bits-set?");
+  quote_bit_91count = find_or_add_symbol("bit-count");
+  quote_first_91set_91bit = find_or_add_symbol("first-set-bit");
+  quote_bit_91set_127 = find_or_add_symbol("bit-set?");
+  quote_arithmetic_91shift = find_or_add_symbol("arithmetic-shift");
   quote_define_91c = find_or_add_symbol("define-c");
 
   add_global((object *) &__glo_lib_91init_117srfi60_srfi_60);
@@ -3303,6 +3323,16 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_raw_91logior_srfi_60);
   add_global((object *) &__glo_raw_91logand_srfi_60);
   add_global((object *) &__glo_binop_srfi_60);
+  add_symbol(quote_bitwise_91and);
+  add_symbol(quote_bitwise_91ior);
+  add_symbol(quote_bitwise_91xor);
+  add_symbol(quote_bitwise_91not);
+  add_symbol(quote_bitwise_91merge);
+  add_symbol(quote_any_91bits_91set_127);
+  add_symbol(quote_bit_91count);
+  add_symbol(quote_first_91set_91bit);
+  add_symbol(quote_bit_91set_127);
+  add_symbol(quote_arithmetic_91shift);
   add_symbol(quote_define_91c);
   mclosure0(c_731351, (function_type)__lambda_112);c_731351.num_args = 0; 
   __glo_lib_91init_117srfi60_srfi_60 = &c_731351; 

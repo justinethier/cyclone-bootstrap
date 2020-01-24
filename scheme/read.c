@@ -406,6 +406,9 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(_85sym_91dot_85);
+defsymbol(_85sym_91unquote_91splicing_85);
+defsymbol(_85sym_91datum_91comment_85);
 defsymbol(unquote_91splicing);
 defsymbol(unquote);
 defsymbol(quasiquote);
@@ -503,7 +506,7 @@ c_73946.elements[0] = k_73323;
 
 make_utf8_string_with_len(c_73970, ".", 1, 1);
 
-object c_73967 = global_set2(data,(closure)&c_73946,__glo__85sym_91dot_85_scheme_read, Cyc_string2symbol(data, &c_73970));
+object c_73967 = global_set2_id(data,(closure)&c_73946,quote__85sym_91dot_85, __glo__85sym_91dot_85_scheme_read, Cyc_string2symbol(data, &c_73970));
 return_closcall1(data,(closure)&c_73946,  c_73967);; 
 }
 
@@ -525,7 +528,7 @@ c_73948.elements[0] = ((closureN)self_73382)->elements[0];
 
 make_utf8_string_with_len(c_73963, ",@", 2, 2);
 
-object c_73960 = global_set2(data,(closure)&c_73948,__glo__85sym_91unquote_91splicing_85_scheme_read, Cyc_string2symbol(data, &c_73963));
+object c_73960 = global_set2_id(data,(closure)&c_73948,quote__85sym_91unquote_91splicing_85, __glo__85sym_91unquote_91splicing_85_scheme_read, Cyc_string2symbol(data, &c_73963));
 return_closcall1(data,(closure)&c_73948,  c_73960);; 
 }
 
@@ -535,7 +538,7 @@ static void __lambda_57(void *data, int argc, object self_73383, object r_73326)
 
 make_utf8_string_with_len(c_73956, "#;", 2, 2);
 
-object c_73953 = global_set2(data,  ((closureN)self_73383)->elements[0],__glo__85sym_91datum_91comment_85_scheme_read, Cyc_string2symbol(data, &c_73956));
+object c_73953 = global_set2_id(data,  ((closureN)self_73383)->elements[0],quote__85sym_91datum_91comment_85, __glo__85sym_91datum_91comment_85_scheme_read, Cyc_string2symbol(data, &c_73956));
 return_closcall1(data,  ((closureN)self_73383)->elements[0],  c_73953);; 
 }
 
@@ -1793,6 +1796,9 @@ make_pair(c_73974, &pair_73973, &c_73975);
  } 
 void c_schemeread_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote__85sym_91dot_85 = find_or_add_symbol("*sym-dot*");
+  quote__85sym_91unquote_91splicing_85 = find_or_add_symbol("*sym-unquote-splicing*");
+  quote__85sym_91datum_91comment_85 = find_or_add_symbol("*sym-datum-comment*");
   quote_unquote_91splicing = find_or_add_symbol("unquote-splicing");
   quote_unquote = find_or_add_symbol("unquote");
   quote_quasiquote = find_or_add_symbol("quasiquote");
@@ -1820,6 +1826,9 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo__85sym_91datum_91comment_85_scheme_read);
   add_global((object *) &__glo__85sym_91unquote_91splicing_85_scheme_read);
   add_global((object *) &__glo__85sym_91dot_85_scheme_read);
+  add_symbol(quote__85sym_91dot_85);
+  add_symbol(quote__85sym_91unquote_91splicing_85);
+  add_symbol(quote__85sym_91datum_91comment_85);
   add_symbol(quote_unquote_91splicing);
   add_symbol(quote_unquote);
   add_symbol(quote_quasiquote);

@@ -114,6 +114,7 @@ object __glo_get_91environment_91variable_scheme_process_91context = NULL;
 object __glo_command_91line_scheme_process_91context = NULL;
 object __glo_emergency_91exit_scheme_process_91context = NULL;
 #include "cyclone/runtime.h"
+defsymbol(emergency_91exit);
 static void __lambda_1(void *data, int argc, closure _,object k_735) ;
 static void __lambda_4(void *data, int argc, closure _, object k) ;
 static void __lambda_3(void *data, int argc, closure _, object k, object env_var) ;
@@ -122,7 +123,7 @@ static void __lambda_2(void *data, int argc, closure _, object k) ;
 static void __lambda_1(void *data, int argc, closure _,object k_735) {
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 
-object c_7314 = global_set2(data,  k_735,__glo_emergency_91exit_scheme_process_91context, primitive_exit);
+object c_7314 = global_set2_id(data,  k_735,quote_emergency_91exit, __glo_emergency_91exit_scheme_process_91context, primitive_exit);
 return_closcall1(data,  k_735,  c_7314);; 
 }
 
@@ -160,12 +161,14 @@ void c_schemeprocess_91context_inlinable_lambdas(void *data, int argc, closure _
  } 
 void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_emergency_91exit = find_or_add_symbol("emergency-exit");
 
   add_global((object *) &__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);
   add_global((object *) &__glo_get_91environment_91variables_scheme_process_91context);
   add_global((object *) &__glo_get_91environment_91variable_scheme_process_91context);
   add_global((object *) &__glo_command_91line_scheme_process_91context);
   add_global((object *) &__glo_emergency_91exit_scheme_process_91context);
+  add_symbol(quote_emergency_91exit);
   mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 
   mclosure0(c_739, (function_type)__lambda_4);c_739.num_args = 0; 

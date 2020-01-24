@@ -475,6 +475,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(fxsqrt);
 defsymbol(define_91c);
 static void __lambda_101(void *data, int argc, closure _,object k_73661) ;
 static void __lambda_87(void *data, int argc, closure _,object k_73646, object n_73414_73481, object start_73415_73482, object end_73416_73483) ;
@@ -611,7 +612,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_73492) ;
 static void __lambda_101(void *data, int argc, closure _,object k_73661) {
   Cyc_st_add(data, "srfi/143.sld:lib-init:srfi143");
 
-object c_731349 = global_set2(data,  k_73661,__glo_fxsqrt_srfi_143, __glo_exact_91integer_91sqrt_scheme_base);
+object c_731349 = global_set2_id(data,  k_73661,quote_fxsqrt, __glo_fxsqrt_srfi_143, __glo_exact_91integer_91sqrt_scheme_base);
 return_closcall1(data,  k_73661,  c_731349);; 
 }
 
@@ -2521,6 +2522,7 @@ make_pair(c_731353, &pair_731352, &c_731354);
  } 
 void c_srfi143_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_fxsqrt = find_or_add_symbol("fxsqrt");
   quote_define_91c = find_or_add_symbol("define-c");
 
   add_global((object *) &__glo_lib_91init_117srfi143_srfi_143);
@@ -2572,6 +2574,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_fx_91greatest_srfi_143);
   add_global((object *) &__glo_fx_91width_191_191inline_191_191_srfi_143);
   add_global((object *) &__glo_fx_91width_srfi_143);
+  add_symbol(quote_fxsqrt);
   add_symbol(quote_define_91c);
   mclosure0(c_731345, (function_type)__lambda_101);c_731345.num_args = 0; 
   __glo_lib_91init_117srfi143_srfi_143 = &c_731345; 

@@ -758,6 +758,13 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(list_91sort_67);
+defsymbol(list_91stable_91sort);
+defsymbol(list_91stable_91sort_67);
+defsymbol(vector_91sort);
+defsymbol(vector_91sort_67);
+defsymbol(vector_91stable_91sort);
+defsymbol(vector_91stable_91sort_67);
 defsymbol(vars);
 defsymbol(lambda);
 defsymbol(call_91with_91values);
@@ -1399,7 +1406,7 @@ c_739380.elements = (object *)e_739416;
 c_739380.elements[0] = k_733569;
 
 
-object c_739419 = global_set2(data,(closure)&c_739380,__glo_list_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
+object c_739419 = global_set2_id(data,(closure)&c_739380,quote_list_91sort_67, __glo_list_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
 return_closcall1(data,(closure)&c_739380,  c_739419);; 
 }
 
@@ -1417,7 +1424,7 @@ c_739382.elements = (object *)e_739412;
 c_739382.elements[0] = ((closureN)self_734153)->elements[0];
 
 
-object c_739415 = global_set2(data,(closure)&c_739382,__glo_list_91stable_91sort_srfi_132, __glo_list_91merge_91sort_srfi_132);
+object c_739415 = global_set2_id(data,(closure)&c_739382,quote_list_91stable_91sort, __glo_list_91stable_91sort_srfi_132, __glo_list_91merge_91sort_srfi_132);
 return_closcall1(data,(closure)&c_739382,  c_739415);; 
 }
 
@@ -1435,7 +1442,7 @@ c_739384.elements = (object *)e_739408;
 c_739384.elements[0] = ((closureN)self_734154)->elements[0];
 
 
-object c_739411 = global_set2(data,(closure)&c_739384,__glo_list_91stable_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
+object c_739411 = global_set2_id(data,(closure)&c_739384,quote_list_91stable_91sort_67, __glo_list_91stable_91sort_67_srfi_132, __glo_list_91merge_91sort_67_srfi_132);
 return_closcall1(data,(closure)&c_739384,  c_739411);; 
 }
 
@@ -1453,7 +1460,7 @@ c_739386.elements = (object *)e_739404;
 c_739386.elements[0] = ((closureN)self_734155)->elements[0];
 
 
-object c_739407 = global_set2(data,(closure)&c_739386,__glo_vector_91sort_srfi_132, __glo_vector_91quick_91sort_srfi_132);
+object c_739407 = global_set2_id(data,(closure)&c_739386,quote_vector_91sort, __glo_vector_91sort_srfi_132, __glo_vector_91quick_91sort_srfi_132);
 return_closcall1(data,(closure)&c_739386,  c_739407);; 
 }
 
@@ -1471,7 +1478,7 @@ c_739388.elements = (object *)e_739400;
 c_739388.elements[0] = ((closureN)self_734156)->elements[0];
 
 
-object c_739403 = global_set2(data,(closure)&c_739388,__glo_vector_91sort_67_srfi_132, __glo_vector_91quick_91sort_67_srfi_132);
+object c_739403 = global_set2_id(data,(closure)&c_739388,quote_vector_91sort_67, __glo_vector_91sort_67_srfi_132, __glo_vector_91quick_91sort_67_srfi_132);
 return_closcall1(data,(closure)&c_739388,  c_739403);; 
 }
 
@@ -1489,13 +1496,13 @@ c_739390.elements = (object *)e_739396;
 c_739390.elements[0] = ((closureN)self_734157)->elements[0];
 
 
-object c_739399 = global_set2(data,(closure)&c_739390,__glo_vector_91stable_91sort_srfi_132, __glo_vector_91merge_91sort_srfi_132);
+object c_739399 = global_set2_id(data,(closure)&c_739390,quote_vector_91stable_91sort, __glo_vector_91stable_91sort_srfi_132, __glo_vector_91merge_91sort_srfi_132);
 return_closcall1(data,(closure)&c_739390,  c_739399);; 
 }
 
 static void __lambda_556(void *data, int argc, object self_734158, object r_733576) {
   
-object c_739395 = global_set2(data,  ((closureN)self_734158)->elements[0],__glo_vector_91stable_91sort_67_srfi_132, __glo_vector_91merge_91sort_67_srfi_132);
+object c_739395 = global_set2_id(data,  ((closureN)self_734158)->elements[0],quote_vector_91stable_91sort_67, __glo_vector_91stable_91sort_67_srfi_132, __glo_vector_91merge_91sort_67_srfi_132);
 return_closcall1(data,  ((closureN)self_734158)->elements[0],  c_739395);; 
 }
 
@@ -15689,6 +15696,13 @@ void c_srfi132_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi132_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_list_91sort_67 = find_or_add_symbol("list-sort!");
+  quote_list_91stable_91sort = find_or_add_symbol("list-stable-sort");
+  quote_list_91stable_91sort_67 = find_or_add_symbol("list-stable-sort!");
+  quote_vector_91sort = find_or_add_symbol("vector-sort");
+  quote_vector_91sort_67 = find_or_add_symbol("vector-sort!");
+  quote_vector_91stable_91sort = find_or_add_symbol("vector-stable-sort");
+  quote_vector_91stable_91sort_67 = find_or_add_symbol("vector-stable-sort!");
   quote_vars = find_or_add_symbol("vars");
   quote_lambda = find_or_add_symbol("lambda");
   quote_call_91with_91values = find_or_add_symbol("call-with-values");
@@ -15740,6 +15754,13 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_vector_91delete_91neighbor_91dups_srfi_132);
   add_global((object *) &__glo_list_91delete_91neighbor_91dups_67_srfi_132);
   add_global((object *) &__glo_list_91delete_91neighbor_91dups_srfi_132);
+  add_symbol(quote_list_91sort_67);
+  add_symbol(quote_list_91stable_91sort);
+  add_symbol(quote_list_91stable_91sort_67);
+  add_symbol(quote_vector_91sort);
+  add_symbol(quote_vector_91sort_67);
+  add_symbol(quote_vector_91stable_91sort);
+  add_symbol(quote_vector_91stable_91sort_67);
   add_symbol(quote_vars);
   add_symbol(quote_lambda);
   add_symbol(quote_call_91with_91values);

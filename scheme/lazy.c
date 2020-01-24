@@ -320,6 +320,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(promise_127);
 defsymbol(lambda);
 defsymbol(make_91promise);
 static void __lambda_10(void *data, int argc, closure _,object k_7369) ;
@@ -338,7 +339,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_7331, object obj
 static void __lambda_10(void *data, int argc, closure _,object k_7369) {
   Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
 
-object c_73179 = global_set2(data,  k_7369,__glo_promise_127_scheme_lazy, primitive_procedure_127);
+object c_73179 = global_set2_id(data,  k_7369,quote_promise_127, __glo_promise_127_scheme_lazy, primitive_procedure_127);
 return_closcall1(data,  k_7369,  c_73179);; 
 }
 
@@ -539,6 +540,7 @@ void c_schemelazy_inlinable_lambdas(void *data, int argc, closure _, object cont
  } 
 void c_schemelazy_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_promise_127 = find_or_add_symbol("promise?");
   quote_lambda = find_or_add_symbol("lambda");
   quote_make_91promise = find_or_add_symbol("make-promise");
 
@@ -548,6 +550,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_delay_91force_scheme_lazy);
   add_global((object *) &__glo_delay_scheme_lazy);
   add_global((object *) &__glo_force_scheme_lazy);
+  add_symbol(quote_promise_127);
   add_symbol(quote_lambda);
   add_symbol(quote_make_91promise);
   mclosure0(c_73175, (function_type)__lambda_10);c_73175.num_args = 0; 

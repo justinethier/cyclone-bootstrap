@@ -592,11 +592,28 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(_75make_91hash_91node);
+defsymbol(_75hash_91node_91set_91value_67);
+defsymbol(_75hash_91node_91key);
+defsymbol(_75hash_91node_91value);
+defsymbol(_121srfi_91hash_91table_125);
+defsymbol(hash_91table_127);
+defsymbol(hash_91table_91size);
 defsymbol(hash);
+defsymbol(hash_91table_91hash_91function);
 defsymbol(compare);
+defsymbol(hash_91table_91equivalence_91function);
 defsymbol(associate);
+defsymbol(hash_91table_91association_91function);
+defsymbol(hash_91table_91entries);
 defsymbol(size);
+defsymbol(hash_91table_91set_91size_67);
 defsymbol(entries);
+defsymbol(hash_91table_91set_91entries_67);
+defsymbol(make_91symbol_91hash_91table);
+defsymbol(make_91string_91hash_91table);
+defsymbol(make_91string_91ci_91hash_91table);
+defsymbol(make_91integer_91hash_91table);
 defsymbol(record_91marker);
 static void __lambda_199(void *data, int argc, closure _,object k_73899) ;
 static void __lambda_200(void *data, int argc, object self_731140, object r_73901) ;
@@ -861,7 +878,7 @@ c_732522.elements = (object *)e_732691;
 c_732522.elements[0] = k_73899;
 
 
-object c_732694 = global_set2(data,(closure)&c_732522,__glo__75make_91hash_91node_srfi_69, primitive_cons);
+object c_732694 = global_set2_id(data,(closure)&c_732522,quote__75make_91hash_91node, __glo__75make_91hash_91node_srfi_69, primitive_cons);
 return_closcall1(data,(closure)&c_732522,  c_732694);; 
 }
 
@@ -879,7 +896,7 @@ c_732524.elements = (object *)e_732687;
 c_732524.elements[0] = ((closureN)self_731140)->elements[0];
 
 
-object c_732690 = global_set2(data,(closure)&c_732524,__glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67);
+object c_732690 = global_set2_id(data,(closure)&c_732524,quote__75hash_91node_91set_91value_67, __glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67);
 return_closcall1(data,(closure)&c_732524,  c_732690);; 
 }
 
@@ -897,7 +914,7 @@ c_732526.elements = (object *)e_732683;
 c_732526.elements[0] = ((closureN)self_731141)->elements[0];
 
 
-object c_732686 = global_set2(data,(closure)&c_732526,__glo__75hash_91node_91key_srfi_69, primitive_car);
+object c_732686 = global_set2_id(data,(closure)&c_732526,quote__75hash_91node_91key, __glo__75hash_91node_91key_srfi_69, primitive_car);
 return_closcall1(data,(closure)&c_732526,  c_732686);; 
 }
 
@@ -915,7 +932,7 @@ c_732528.elements = (object *)e_732679;
 c_732528.elements[0] = ((closureN)self_731142)->elements[0];
 
 
-object c_732682 = global_set2(data,(closure)&c_732528,__glo__75hash_91node_91value_srfi_69, primitive_cdr);
+object c_732682 = global_set2_id(data,(closure)&c_732528,quote__75hash_91node_91value, __glo__75hash_91node_91value_srfi_69, primitive_cdr);
 return_closcall1(data,(closure)&c_732528,  c_732682);; 
 }
 
@@ -961,7 +978,7 @@ c_732532.elements = (object *)e_732668;
 c_732532.elements[0] = ((closureN)self_731144)->elements[0];
 
 
-object c_732671 = global_set2(data,(closure)&c_732532,__glo__121srfi_91hash_91table_125_srfi_69, r_73946);
+object c_732671 = global_set2_id(data,(closure)&c_732532,quote__121srfi_91hash_91table_125, __glo__121srfi_91hash_91table_125_srfi_69, r_73946);
 return_closcall1(data,(closure)&c_732532,  c_732671);; 
 }
 
@@ -995,7 +1012,7 @@ c_732536.elements = (object *)e_732663;
 c_732536.elements[0] = ((closureN)self_731146)->elements[0];
 
 
-object c_732666 = global_set2(data,(closure)&c_732536,__glo_hash_91table_127_srfi_69, r_73945);
+object c_732666 = global_set2_id(data,(closure)&c_732536,quote_hash_91table_127, __glo_hash_91table_127_srfi_69, r_73945);
 return_closcall1(data,(closure)&c_732536,  c_732666);; 
 }
 
@@ -1047,7 +1064,7 @@ c_732542.elements = (object *)e_732656;
 c_732542.elements[0] = ((closureN)self_731149)->elements[0];
 
 
-object c_732659 = global_set2(data,(closure)&c_732542,__glo_hash_91table_91size_srfi_69, r_73942);
+object c_732659 = global_set2_id(data,(closure)&c_732542,quote_hash_91table_91size, __glo_hash_91table_91size_srfi_69, r_73942);
 return_closcall1(data,(closure)&c_732542,  c_732659);; 
 }
 
@@ -1099,7 +1116,7 @@ c_732548.elements = (object *)e_732649;
 c_732548.elements[0] = ((closureN)self_731152)->elements[0];
 
 
-object c_732652 = global_set2(data,(closure)&c_732548,__glo_hash_91table_91hash_91function_srfi_69, r_73939);
+object c_732652 = global_set2_id(data,(closure)&c_732548,quote_hash_91table_91hash_91function, __glo_hash_91table_91hash_91function_srfi_69, r_73939);
 return_closcall1(data,(closure)&c_732548,  c_732652);; 
 }
 
@@ -1151,7 +1168,7 @@ c_732554.elements = (object *)e_732642;
 c_732554.elements[0] = ((closureN)self_731155)->elements[0];
 
 
-object c_732645 = global_set2(data,(closure)&c_732554,__glo_hash_91table_91equivalence_91function_srfi_69, r_73936);
+object c_732645 = global_set2_id(data,(closure)&c_732554,quote_hash_91table_91equivalence_91function, __glo_hash_91table_91equivalence_91function_srfi_69, r_73936);
 return_closcall1(data,(closure)&c_732554,  c_732645);; 
 }
 
@@ -1203,7 +1220,7 @@ c_732560.elements = (object *)e_732635;
 c_732560.elements[0] = ((closureN)self_731158)->elements[0];
 
 
-object c_732638 = global_set2(data,(closure)&c_732560,__glo_hash_91table_91association_91function_srfi_69, r_73933);
+object c_732638 = global_set2_id(data,(closure)&c_732560,quote_hash_91table_91association_91function, __glo_hash_91table_91association_91function_srfi_69, r_73933);
 return_closcall1(data,(closure)&c_732560,  c_732638);; 
 }
 
@@ -1255,7 +1272,7 @@ c_732566.elements = (object *)e_732628;
 c_732566.elements[0] = ((closureN)self_731161)->elements[0];
 
 
-object c_732631 = global_set2(data,(closure)&c_732566,__glo_hash_91table_91entries_srfi_69, r_73930);
+object c_732631 = global_set2_id(data,(closure)&c_732566,quote_hash_91table_91entries, __glo_hash_91table_91entries_srfi_69, r_73930);
 return_closcall1(data,(closure)&c_732566,  c_732631);; 
 }
 
@@ -1307,7 +1324,7 @@ c_732572.elements = (object *)e_732621;
 c_732572.elements[0] = ((closureN)self_731164)->elements[0];
 
 
-object c_732624 = global_set2(data,(closure)&c_732572,__glo_hash_91table_91set_91size_67_srfi_69, r_73927);
+object c_732624 = global_set2_id(data,(closure)&c_732572,quote_hash_91table_91set_91size_67, __glo_hash_91table_91set_91size_67_srfi_69, r_73927);
 return_closcall1(data,(closure)&c_732572,  c_732624);; 
 }
 
@@ -1359,7 +1376,7 @@ c_732578.elements = (object *)e_732614;
 c_732578.elements[0] = ((closureN)self_731167)->elements[0];
 
 
-object c_732617 = global_set2(data,(closure)&c_732578,__glo_hash_91table_91set_91entries_67_srfi_69, r_73924);
+object c_732617 = global_set2_id(data,(closure)&c_732578,quote_hash_91table_91set_91entries_67, __glo_hash_91table_91set_91entries_67_srfi_69, r_73924);
 return_closcall1(data,(closure)&c_732578,  c_732617);; 
 }
 
@@ -1393,7 +1410,7 @@ c_732582.elements = (object *)e_732609;
 c_732582.elements[0] = ((closureN)self_731169)->elements[0];
 
 
-object c_732612 = global_set2(data,(closure)&c_732582,__glo_make_91symbol_91hash_91table_srfi_69, r_73923);
+object c_732612 = global_set2_id(data,(closure)&c_732582,quote_make_91symbol_91hash_91table, __glo_make_91symbol_91hash_91table_srfi_69, r_73923);
 return_closcall1(data,(closure)&c_732582,  c_732612);; 
 }
 
@@ -1427,7 +1444,7 @@ c_732586.elements = (object *)e_732604;
 c_732586.elements[0] = ((closureN)self_731171)->elements[0];
 
 
-object c_732607 = global_set2(data,(closure)&c_732586,__glo_make_91string_91hash_91table_srfi_69, r_73922);
+object c_732607 = global_set2_id(data,(closure)&c_732586,quote_make_91string_91hash_91table, __glo_make_91string_91hash_91table_srfi_69, r_73922);
 return_closcall1(data,(closure)&c_732586,  c_732607);; 
 }
 
@@ -1461,7 +1478,7 @@ c_732590.elements = (object *)e_732599;
 c_732590.elements[0] = ((closureN)self_731173)->elements[0];
 
 
-object c_732602 = global_set2(data,(closure)&c_732590,__glo_make_91string_91ci_91hash_91table_srfi_69, r_73921);
+object c_732602 = global_set2_id(data,(closure)&c_732590,quote_make_91string_91ci_91hash_91table, __glo_make_91string_91ci_91hash_91table_srfi_69, r_73921);
 return_closcall1(data,(closure)&c_732590,  c_732602);; 
 }
 
@@ -1483,7 +1500,7 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732592, p
 
 static void __lambda_235(void *data, int argc, object self_731175, object r_73920) {
   
-object c_732597 = global_set2(data,  ((closureN)self_731175)->elements[0],__glo_make_91integer_91hash_91table_srfi_69, r_73920);
+object c_732597 = global_set2_id(data,  ((closureN)self_731175)->elements[0],quote_make_91integer_91hash_91table, __glo_make_91integer_91hash_91table_srfi_69, r_73920);
 return_closcall1(data,  ((closureN)self_731175)->elements[0],  c_732597);; 
 }
 
@@ -5320,11 +5337,28 @@ make_pair(c_732696, &pair_732695, NULL);
  } 
 void c_srfi69_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote__75make_91hash_91node = find_or_add_symbol("%make-hash-node");
+  quote__75hash_91node_91set_91value_67 = find_or_add_symbol("%hash-node-set-value!");
+  quote__75hash_91node_91key = find_or_add_symbol("%hash-node-key");
+  quote__75hash_91node_91value = find_or_add_symbol("%hash-node-value");
+  quote__121srfi_91hash_91table_125 = find_or_add_symbol("<srfi-hash-table>");
+  quote_hash_91table_127 = find_or_add_symbol("hash-table?");
+  quote_hash_91table_91size = find_or_add_symbol("hash-table-size");
   quote_hash = find_or_add_symbol("hash");
+  quote_hash_91table_91hash_91function = find_or_add_symbol("hash-table-hash-function");
   quote_compare = find_or_add_symbol("compare");
+  quote_hash_91table_91equivalence_91function = find_or_add_symbol("hash-table-equivalence-function");
   quote_associate = find_or_add_symbol("associate");
+  quote_hash_91table_91association_91function = find_or_add_symbol("hash-table-association-function");
+  quote_hash_91table_91entries = find_or_add_symbol("hash-table-entries");
   quote_size = find_or_add_symbol("size");
+  quote_hash_91table_91set_91size_67 = find_or_add_symbol("hash-table-set-size!");
   quote_entries = find_or_add_symbol("entries");
+  quote_hash_91table_91set_91entries_67 = find_or_add_symbol("hash-table-set-entries!");
+  quote_make_91symbol_91hash_91table = find_or_add_symbol("make-symbol-hash-table");
+  quote_make_91string_91hash_91table = find_or_add_symbol("make-string-hash-table");
+  quote_make_91string_91ci_91hash_91table = find_or_add_symbol("make-string-ci-hash-table");
+  quote_make_91integer_91hash_91table = find_or_add_symbol("make-integer-hash-table");
   quote_record_91marker = find_or_add_symbol("record-marker");
 
   add_global((object *) &__glo_lib_91init_117srfi69_srfi_69);
@@ -5383,11 +5417,28 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_string_91hash_srfi_69);
   add_global((object *) &__glo__75string_91hash_srfi_69);
   add_global((object *) &__glo__85default_91bound_85_srfi_69);
+  add_symbol(quote__75make_91hash_91node);
+  add_symbol(quote__75hash_91node_91set_91value_67);
+  add_symbol(quote__75hash_91node_91key);
+  add_symbol(quote__75hash_91node_91value);
+  add_symbol(quote__121srfi_91hash_91table_125);
+  add_symbol(quote_hash_91table_127);
+  add_symbol(quote_hash_91table_91size);
   add_symbol(quote_hash);
+  add_symbol(quote_hash_91table_91hash_91function);
   add_symbol(quote_compare);
+  add_symbol(quote_hash_91table_91equivalence_91function);
   add_symbol(quote_associate);
+  add_symbol(quote_hash_91table_91association_91function);
+  add_symbol(quote_hash_91table_91entries);
   add_symbol(quote_size);
+  add_symbol(quote_hash_91table_91set_91size_67);
   add_symbol(quote_entries);
+  add_symbol(quote_hash_91table_91set_91entries_67);
+  add_symbol(quote_make_91symbol_91hash_91table);
+  add_symbol(quote_make_91string_91hash_91table);
+  add_symbol(quote_make_91string_91ci_91hash_91table);
+  add_symbol(quote_make_91integer_91hash_91table);
   add_symbol(quote_record_91marker);
   mclosure0(c_732520, (function_type)__lambda_199);c_732520.num_args = 0; 
   __glo_lib_91init_117srfi69_srfi_69 = &c_732520; 

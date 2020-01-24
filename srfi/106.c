@@ -622,6 +622,8 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_75socket_91object_91type_75);
+defsymbol(_85socket_91object_91type_85);
+defsymbol(_85shut_91rdwr_85);
 defsymbol(define_91c);
 defsymbol(define);
 defsymbol(begin);
@@ -836,7 +838,7 @@ c_731750.elements = (object *)e_731894;
 c_731750.elements[0] = k_73809;
 
 
-object c_731897 = global_set2(data,(closure)&c_731750,__glo__85socket_91object_91type_85_srfi_106, quote__75socket_91object_91type_75);
+object c_731897 = global_set2_id(data,(closure)&c_731750,quote__85socket_91object_91type_85, __glo__85socket_91object_91type_85_srfi_106, quote__75socket_91object_91type_75);
 return_closcall1(data,(closure)&c_731750,  c_731897);; 
 }
 
@@ -870,7 +872,7 @@ c_731754.elements = (object *)e_731889;
 c_731754.elements[0] = ((closureN)self_73906)->elements[0];
 
 
-object c_731892 = global_set2(data,(closure)&c_731754,__glo__85af_91unspec_85_srfi_106, r_73842);
+object c_731892 = global_set2_id(data,(closure)&c_731754,quote__85af_91unspec_85, __glo__85af_91unspec_85_srfi_106, r_73842);
 return_closcall1(data,(closure)&c_731754,  c_731892);; 
 }
 
@@ -904,7 +906,7 @@ c_731758.elements = (object *)e_731884;
 c_731758.elements[0] = ((closureN)self_73908)->elements[0];
 
 
-object c_731887 = global_set2(data,(closure)&c_731758,__glo__85af_91inet_85_srfi_106, r_73841);
+object c_731887 = global_set2_id(data,(closure)&c_731758,quote__85af_91inet_85, __glo__85af_91inet_85_srfi_106, r_73841);
 return_closcall1(data,(closure)&c_731758,  c_731887);; 
 }
 
@@ -938,7 +940,7 @@ c_731762.elements = (object *)e_731879;
 c_731762.elements[0] = ((closureN)self_73910)->elements[0];
 
 
-object c_731882 = global_set2(data,(closure)&c_731762,__glo__85af_91inet6_85_srfi_106, r_73840);
+object c_731882 = global_set2_id(data,(closure)&c_731762,quote__85af_91inet6_85, __glo__85af_91inet6_85_srfi_106, r_73840);
 return_closcall1(data,(closure)&c_731762,  c_731882);; 
 }
 
@@ -972,7 +974,7 @@ c_731766.elements = (object *)e_731874;
 c_731766.elements[0] = ((closureN)self_73912)->elements[0];
 
 
-object c_731877 = global_set2(data,(closure)&c_731766,__glo__85sock_91stream_85_srfi_106, r_73839);
+object c_731877 = global_set2_id(data,(closure)&c_731766,quote__85sock_91stream_85, __glo__85sock_91stream_85_srfi_106, r_73839);
 return_closcall1(data,(closure)&c_731766,  c_731877);; 
 }
 
@@ -1006,7 +1008,7 @@ c_731770.elements = (object *)e_731869;
 c_731770.elements[0] = ((closureN)self_73914)->elements[0];
 
 
-object c_731872 = global_set2(data,(closure)&c_731770,__glo__85sock_91dgram_85_srfi_106, r_73838);
+object c_731872 = global_set2_id(data,(closure)&c_731770,quote__85sock_91dgram_85, __glo__85sock_91dgram_85_srfi_106, r_73838);
 return_closcall1(data,(closure)&c_731770,  c_731872);; 
 }
 
@@ -1040,7 +1042,7 @@ c_731774.elements = (object *)e_731864;
 c_731774.elements[0] = ((closureN)self_73916)->elements[0];
 
 
-object c_731867 = global_set2(data,(closure)&c_731774,__glo__85ai_91canonname_85_srfi_106, r_73837);
+object c_731867 = global_set2_id(data,(closure)&c_731774,quote__85ai_91canonname_85, __glo__85ai_91canonname_85_srfi_106, r_73837);
 return_closcall1(data,(closure)&c_731774,  c_731867);; 
 }
 
@@ -1074,7 +1076,7 @@ c_731778.elements = (object *)e_731859;
 c_731778.elements[0] = ((closureN)self_73918)->elements[0];
 
 
-object c_731862 = global_set2(data,(closure)&c_731778,__glo__85ai_91numerichost_85_srfi_106, r_73836);
+object c_731862 = global_set2_id(data,(closure)&c_731778,quote__85ai_91numerichost_85, __glo__85ai_91numerichost_85_srfi_106, r_73836);
 return_closcall1(data,(closure)&c_731778,  c_731862);; 
 }
 
@@ -1108,7 +1110,7 @@ c_731782.elements = (object *)e_731854;
 c_731782.elements[0] = ((closureN)self_73920)->elements[0];
 
 
-object c_731857 = global_set2(data,(closure)&c_731782,__glo__85ai_91v4mapped_85_srfi_106, r_73835);
+object c_731857 = global_set2_id(data,(closure)&c_731782,quote__85ai_91v4mapped_85, __glo__85ai_91v4mapped_85_srfi_106, r_73835);
 return_closcall1(data,(closure)&c_731782,  c_731857);; 
 }
 
@@ -1142,7 +1144,7 @@ c_731786.elements = (object *)e_731849;
 c_731786.elements[0] = ((closureN)self_73922)->elements[0];
 
 
-object c_731852 = global_set2(data,(closure)&c_731786,__glo__85ai_91all_85_srfi_106, r_73834);
+object c_731852 = global_set2_id(data,(closure)&c_731786,quote__85ai_91all_85, __glo__85ai_91all_85_srfi_106, r_73834);
 return_closcall1(data,(closure)&c_731786,  c_731852);; 
 }
 
@@ -1176,7 +1178,7 @@ c_731790.elements = (object *)e_731844;
 c_731790.elements[0] = ((closureN)self_73924)->elements[0];
 
 
-object c_731847 = global_set2(data,(closure)&c_731790,__glo__85ai_91addrconfig_85_srfi_106, r_73833);
+object c_731847 = global_set2_id(data,(closure)&c_731790,quote__85ai_91addrconfig_85, __glo__85ai_91addrconfig_85_srfi_106, r_73833);
 return_closcall1(data,(closure)&c_731790,  c_731847);; 
 }
 
@@ -1210,7 +1212,7 @@ c_731794.elements = (object *)e_731839;
 c_731794.elements[0] = ((closureN)self_73926)->elements[0];
 
 
-object c_731842 = global_set2(data,(closure)&c_731794,__glo__85msg_91peek_85_srfi_106, r_73832);
+object c_731842 = global_set2_id(data,(closure)&c_731794,quote__85msg_91peek_85, __glo__85msg_91peek_85_srfi_106, r_73832);
 return_closcall1(data,(closure)&c_731794,  c_731842);; 
 }
 
@@ -1244,7 +1246,7 @@ c_731798.elements = (object *)e_731834;
 c_731798.elements[0] = ((closureN)self_73928)->elements[0];
 
 
-object c_731837 = global_set2(data,(closure)&c_731798,__glo__85msg_91oob_85_srfi_106, r_73831);
+object c_731837 = global_set2_id(data,(closure)&c_731798,quote__85msg_91oob_85, __glo__85msg_91oob_85_srfi_106, r_73831);
 return_closcall1(data,(closure)&c_731798,  c_731837);; 
 }
 
@@ -1278,7 +1280,7 @@ c_731802.elements = (object *)e_731829;
 c_731802.elements[0] = ((closureN)self_73930)->elements[0];
 
 
-object c_731832 = global_set2(data,(closure)&c_731802,__glo__85msg_91waitall_85_srfi_106, r_73830);
+object c_731832 = global_set2_id(data,(closure)&c_731802,quote__85msg_91waitall_85, __glo__85msg_91waitall_85_srfi_106, r_73830);
 return_closcall1(data,(closure)&c_731802,  c_731832);; 
 }
 
@@ -1312,7 +1314,7 @@ c_731806.elements = (object *)e_731824;
 c_731806.elements[0] = ((closureN)self_73932)->elements[0];
 
 
-object c_731827 = global_set2(data,(closure)&c_731806,__glo__85shut_91rd_85_srfi_106, r_73829);
+object c_731827 = global_set2_id(data,(closure)&c_731806,quote__85shut_91rd_85, __glo__85shut_91rd_85_srfi_106, r_73829);
 return_closcall1(data,(closure)&c_731806,  c_731827);; 
 }
 
@@ -1346,7 +1348,7 @@ c_731810.elements = (object *)e_731819;
 c_731810.elements[0] = ((closureN)self_73934)->elements[0];
 
 
-object c_731822 = global_set2(data,(closure)&c_731810,__glo__85shut_91wr_85_srfi_106, r_73828);
+object c_731822 = global_set2_id(data,(closure)&c_731810,quote__85shut_91wr_85, __glo__85shut_91wr_85_srfi_106, r_73828);
 return_closcall1(data,(closure)&c_731810,  c_731822);; 
 }
 
@@ -1368,7 +1370,7 @@ return_closcall1(data,  __glo__75shut_91rdwr_75_srfi_106,  &c_731812);;
 
 static void __lambda_97(void *data, int argc, object self_73936, object r_73827) {
   
-object c_731817 = global_set2(data,  ((closureN)self_73936)->elements[0],__glo__85shut_91rdwr_85_srfi_106, r_73827);
+object c_731817 = global_set2_id(data,  ((closureN)self_73936)->elements[0],quote__85shut_91rdwr_85, __glo__85shut_91rdwr_85_srfi_106, r_73827);
 return_closcall1(data,  ((closureN)self_73936)->elements[0],  c_731817);; 
 }
 
@@ -3115,6 +3117,8 @@ make_pair(c_731899, &pair_731898, NULL);
 void c_srfi106_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote__75socket_91object_91type_75 = find_or_add_symbol("%socket-object-type%");
+  quote__85socket_91object_91type_85 = find_or_add_symbol("*socket-object-type*");
+  quote__85shut_91rdwr_85 = find_or_add_symbol("*shut-rdwr*");
   quote_define_91c = find_or_add_symbol("define-c");
   quote_define = find_or_add_symbol("define");
   quote_begin = find_or_add_symbol("begin");
@@ -3246,6 +3250,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_socket_91_125fd_srfi_106);
   add_global((object *) &__glo__85socket_91object_91type_85_srfi_106);
   add_symbol(quote__75socket_91object_91type_75);
+  add_symbol(quote__85socket_91object_91type_85);
+  add_symbol(quote__85shut_91rdwr_85);
   add_symbol(quote_define_91c);
   add_symbol(quote_define);
   add_symbol(quote_begin);

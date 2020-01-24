@@ -438,7 +438,15 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(incr);
+defsymbol(_121random_91source_125);
+defsymbol(random_91souce_127);
+defsymbol(random_91source_91val);
 defsymbol(n);
+defsymbol(set_91random_91source_91val_67);
+defsymbol(default_91random_91source);
+defsymbol(random_91integer);
+defsymbol(random_91real);
 defsymbol(unit);
 defsymbol(s);
 defsymbol(record_91marker);
@@ -554,7 +562,7 @@ c_73490.elements = (object *)e_73563;
 c_73490.elements[0] = ((closureN)self_73201)->elements[0];
 
 
-object c_73566 = global_set2(data,(closure)&c_73490,__glo_incr_srfi_27, r_73163);
+object c_73566 = global_set2_id(data,(closure)&c_73490,quote_incr, __glo_incr_srfi_27, r_73163);
 return_closcall1(data,(closure)&c_73490,  c_73566);; 
 }
 
@@ -592,7 +600,7 @@ c_73494.elements = (object *)e_73556;
 c_73494.elements[0] = ((closureN)self_73203)->elements[0];
 
 
-object c_73559 = global_set2(data,(closure)&c_73494,__glo__121random_91source_125_srfi_27, r_73161);
+object c_73559 = global_set2_id(data,(closure)&c_73494,quote__121random_91source_125, __glo__121random_91source_125_srfi_27, r_73161);
 return_closcall1(data,(closure)&c_73494,  c_73559);; 
 }
 
@@ -626,7 +634,7 @@ c_73498.elements = (object *)e_73551;
 c_73498.elements[0] = ((closureN)self_73205)->elements[0];
 
 
-object c_73554 = global_set2(data,(closure)&c_73498,__glo_random_91souce_127_srfi_27, r_73160);
+object c_73554 = global_set2_id(data,(closure)&c_73498,quote_random_91souce_127, __glo_random_91souce_127_srfi_27, r_73160);
 return_closcall1(data,(closure)&c_73498,  c_73554);; 
 }
 
@@ -678,7 +686,7 @@ c_73504.elements = (object *)e_73544;
 c_73504.elements[0] = ((closureN)self_73208)->elements[0];
 
 
-object c_73547 = global_set2(data,(closure)&c_73504,__glo_random_91source_91val_srfi_27, r_73157);
+object c_73547 = global_set2_id(data,(closure)&c_73504,quote_random_91source_91val, __glo_random_91source_91val_srfi_27, r_73157);
 return_closcall1(data,(closure)&c_73504,  c_73547);; 
 }
 
@@ -730,7 +738,7 @@ c_73510.elements = (object *)e_73537;
 c_73510.elements[0] = ((closureN)self_73211)->elements[0];
 
 
-object c_73540 = global_set2(data,(closure)&c_73510,__glo_set_91random_91source_91val_67_srfi_27, r_73154);
+object c_73540 = global_set2_id(data,(closure)&c_73510,quote_set_91random_91source_91val_67, __glo_set_91random_91source_91val_67_srfi_27, r_73154);
 return_closcall1(data,(closure)&c_73510,  c_73540);; 
 }
 
@@ -764,7 +772,7 @@ c_73514.elements = (object *)e_73532;
 c_73514.elements[0] = ((closureN)self_73213)->elements[0];
 
 
-object c_73535 = global_set2(data,(closure)&c_73514,__glo_default_91random_91source_srfi_27, r_73153);
+object c_73535 = global_set2_id(data,(closure)&c_73514,quote_default_91random_91source, __glo_default_91random_91source_srfi_27, r_73153);
 return_closcall1(data,(closure)&c_73514,  c_73535);; 
 }
 
@@ -798,7 +806,7 @@ c_73518.elements = (object *)e_73527;
 c_73518.elements[0] = ((closureN)self_73215)->elements[0];
 
 
-object c_73530 = global_set2(data,(closure)&c_73518,__glo_random_91integer_srfi_27, r_73152);
+object c_73530 = global_set2_id(data,(closure)&c_73518,quote_random_91integer, __glo_random_91integer_srfi_27, r_73152);
 return_closcall1(data,(closure)&c_73518,  c_73530);; 
 }
 
@@ -820,7 +828,7 @@ return_closcall2(data,  __glo_random_91source_91make_91reals_srfi_27,  &c_73520,
 
 static void __lambda_55(void *data, int argc, object self_73217, object r_73151) {
   
-object c_73525 = global_set2(data,  ((closureN)self_73217)->elements[0],__glo_random_91real_srfi_27, r_73151);
+object c_73525 = global_set2_id(data,  ((closureN)self_73217)->elements[0],quote_random_91real, __glo_random_91real_srfi_27, r_73151);
 return_closcall1(data,  ((closureN)self_73217)->elements[0],  c_73525);; 
 }
 
@@ -1603,7 +1611,15 @@ void c_srfi27_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi27_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_incr = find_or_add_symbol("incr");
+  quote__121random_91source_125 = find_or_add_symbol("<random-source>");
+  quote_random_91souce_127 = find_or_add_symbol("random-souce?");
+  quote_random_91source_91val = find_or_add_symbol("random-source-val");
   quote_n = find_or_add_symbol("n");
+  quote_set_91random_91source_91val_67 = find_or_add_symbol("set-random-source-val!");
+  quote_default_91random_91source = find_or_add_symbol("default-random-source");
+  quote_random_91integer = find_or_add_symbol("random-integer");
+  quote_random_91real = find_or_add_symbol("random-real");
   quote_unit = find_or_add_symbol("unit");
   quote_s = find_or_add_symbol("s");
   quote_record_91marker = find_or_add_symbol("record-marker");
@@ -1628,7 +1644,15 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_next_91lcg_srfi_27);
   add_global((object *) &__glo_m_srfi_27);
   add_global((object *) &__glo_incr_srfi_27);
+  add_symbol(quote_incr);
+  add_symbol(quote__121random_91source_125);
+  add_symbol(quote_random_91souce_127);
+  add_symbol(quote_random_91source_91val);
   add_symbol(quote_n);
+  add_symbol(quote_set_91random_91source_91val_67);
+  add_symbol(quote_default_91random_91source);
+  add_symbol(quote_random_91integer);
+  add_symbol(quote_random_91real);
   add_symbol(quote_unit);
   add_symbol(quote_s);
   add_symbol(quote_record_91marker);

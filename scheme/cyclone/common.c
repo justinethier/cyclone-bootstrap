@@ -116,6 +116,10 @@ object __glo__85version_85_scheme_cyclone_common = NULL;
 object __glo__85version_91name_85_scheme_cyclone_common = NULL;
 object __glo__85version_91number_85_scheme_cyclone_common = NULL;
 #include "cyclone/runtime.h"
+defsymbol(_85version_85);
+defsymbol(_85version_91banner_85);
+defsymbol(_85Cyc_91version_91banner_85);
+defsymbol(_85c_91file_91header_91comment_85);
 static void __lambda_1(void *data, int argc, closure _,object k_7315) ;
 static void __lambda_2(void *data, int argc, object self_7323, object r_7322) ;
 static void __lambda_3(void *data, int argc, object self_7324, object r_7317) ;
@@ -161,7 +165,7 @@ c_7335.elements = (object *)e_7369;
 c_7335.elements[0] = ((closureN)self_7323)->elements[0];
 
 
-object c_7372 = global_set2(data,(closure)&c_7335,__glo__85version_85_scheme_cyclone_common, r_7322);
+object c_7372 = global_set2_id(data,(closure)&c_7335,quote__85version_85, __glo__85version_85_scheme_cyclone_common, r_7322);
 return_closcall1(data,(closure)&c_7335,  c_7372);; 
 }
 
@@ -201,7 +205,7 @@ c_7339.elements = (object *)e_7359;
 c_7339.elements[0] = ((closureN)self_7325)->elements[0];
 
 
-object c_7362 = global_set2(data,(closure)&c_7339,__glo__85version_91banner_85_scheme_cyclone_common, r_7321);
+object c_7362 = global_set2_id(data,(closure)&c_7339,quote__85version_91banner_85, __glo__85version_91banner_85_scheme_cyclone_common, r_7321);
 return_closcall1(data,(closure)&c_7339,  c_7362);; 
 }
 
@@ -219,7 +223,7 @@ c_7341.elements = (object *)e_7355;
 c_7341.elements[0] = ((closureN)self_7326)->elements[0];
 
 
-object c_7358 = global_set2(data,(closure)&c_7341,__glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
+object c_7358 = global_set2_id(data,(closure)&c_7341,quote__85Cyc_91version_91banner_85, __glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
 return_closcall1(data,(closure)&c_7341,  c_7358);; 
 }
 
@@ -247,7 +251,7 @@ return_closcall1(data,(closure)&c_7343,  c_7352);;
 
 static void __lambda_7(void *data, int argc, object self_7328, object r_7320) {
   
-object c_7348 = global_set2(data,  ((closureN)self_7328)->elements[0],__glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320);
+object c_7348 = global_set2_id(data,  ((closureN)self_7328)->elements[0],quote__85c_91file_91header_91comment_85, __glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320);
 return_closcall1(data,  ((closureN)self_7328)->elements[0],  c_7348);; 
 }
 
@@ -256,6 +260,10 @@ void c_schemecyclonecommon_inlinable_lambdas(void *data, int argc, closure _, ob
  } 
 void c_schemecyclonecommon_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote__85version_85 = find_or_add_symbol("*version*");
+  quote__85version_91banner_85 = find_or_add_symbol("*version-banner*");
+  quote__85Cyc_91version_91banner_85 = find_or_add_symbol("*Cyc-version-banner*");
+  quote__85c_91file_91header_91comment_85 = find_or_add_symbol("*c-file-header-comment*");
 
   add_global((object *) &__glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common);
   add_global((object *) &__glo__85c_91file_91header_91comment_85_scheme_cyclone_common);
@@ -264,6 +272,10 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo__85version_85_scheme_cyclone_common);
   add_global((object *) &__glo__85version_91name_85_scheme_cyclone_common);
   add_global((object *) &__glo__85version_91number_85_scheme_cyclone_common);
+  add_symbol(quote__85version_85);
+  add_symbol(quote__85version_91banner_85);
+  add_symbol(quote__85Cyc_91version_91banner_85);
+  add_symbol(quote__85c_91file_91header_91comment_85);
   mclosure0(c_7331, (function_type)__lambda_1);c_7331.num_args = 0; 
   __glo_lib_91init_117schemecyclonecommon_scheme_cyclone_common = &c_7331; 
   __glo__85c_91file_91header_91comment_85_scheme_cyclone_common = boolean_f; 

@@ -936,6 +936,8 @@ extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_
 extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
 #include "cyclone/runtime.h"
 defsymbol(procedure);
+defsymbol(procedure_91tag);
+defsymbol(macro_91tag);
 defsymbol(cddddr);
 defsymbol(cdddar);
 defsymbol(cddadr);
@@ -1064,6 +1066,8 @@ defsymbol(string_91cmp);
 defsymbol(string_91_125number);
 defsymbol(integer_91_125char);
 defsymbol(char_91_125integer);
+defsymbol(primitive_91procedures);
+defsymbol(_85initial_91environment_85);
 defsymbol(type);
 defsymbol(Unexpected);
 defsymbol(varargs);
@@ -1077,6 +1081,12 @@ defsymbol(args_117fixed);
 defsymbol(expand_91body);
 defsymbol(env);
 defsymbol(expand);
+defsymbol(_85defined_91macros_85);
+defsymbol(_85macro_117env_85);
+defsymbol(_85macro_117defined_91macros_85);
+defsymbol(_85global_91environment_85);
+defsymbol(_85append_91dirs_85);
+defsymbol(_85prepend_91dirs_85);
 defsymbol(begin);
 defsymbol(er_91macro_91transformer);
 defsymbol(macro);
@@ -1590,7 +1600,7 @@ c_736216.elements = (object *)e_736676;
 c_736216.elements[0] = k_732082;
 
 
-object c_736679 = global_set2(data,(closure)&c_736216,__glo_procedure_91tag_scheme_eval, quote_procedure);
+object c_736679 = global_set2_id(data,(closure)&c_736216,quote_procedure_91tag, __glo_procedure_91tag_scheme_eval, quote_procedure);
 return_closcall1(data,(closure)&c_736216,  c_736679);; 
 }
 
@@ -1608,7 +1618,7 @@ c_736218.elements = (object *)e_736672;
 c_736218.elements[0] = ((closureN)self_732835)->elements[0];
 
 
-object c_736675 = global_set2(data,(closure)&c_736218,__glo_macro_91tag_scheme_eval, quote_macro);
+object c_736675 = global_set2_id(data,(closure)&c_736218,quote_macro_91tag, __glo_macro_91tag_scheme_eval, quote_macro);
 return_closcall1(data,(closure)&c_736218,  c_736675);; 
 }
 
@@ -1931,7 +1941,7 @@ c_736226.elements = (object *)e_736280;
 c_736226.elements[0] = ((closureN)self_732839)->elements[0];
 
 
-object c_736283 = global_set2(data,(closure)&c_736226,__glo_primitive_91procedures_scheme_eval, r_732101);
+object c_736283 = global_set2_id(data,(closure)&c_736226,quote_primitive_91procedures, __glo_primitive_91procedures_scheme_eval, r_732101);
 return_closcall1(data,(closure)&c_736226,  c_736283);; 
 }
 
@@ -1965,7 +1975,7 @@ c_736230.elements = (object *)e_736275;
 c_736230.elements[0] = ((closureN)self_732841)->elements[0];
 
 
-object c_736278 = global_set2(data,(closure)&c_736230,__glo__85initial_91environment_85_scheme_eval, r_732100);
+object c_736278 = global_set2_id(data,(closure)&c_736230,quote__85initial_91environment_85, __glo__85initial_91environment_85_scheme_eval, r_732100);
 return_closcall1(data,(closure)&c_736230,  c_736278);; 
 }
 
@@ -2015,7 +2025,7 @@ c_736236.elements = (object *)e_736269;
 c_736236.elements[0] = ((closureN)self_732844)->elements[0];
 
 
-object c_736272 = global_set2(data,(closure)&c_736236,__glo__85global_91environment_85_scheme_eval, r_732098);
+object c_736272 = global_set2_id(data,(closure)&c_736236,quote__85global_91environment_85, __glo__85global_91environment_85_scheme_eval, r_732098);
 return_closcall1(data,(closure)&c_736236,  c_736272);; 
 }
 
@@ -2033,7 +2043,7 @@ c_736238.elements = (object *)e_736265;
 c_736238.elements[0] = ((closureN)self_732845)->elements[0];
 
 
-object c_736268 = global_set2(data,(closure)&c_736238,__glo__85append_91dirs_85_scheme_eval, NULL);
+object c_736268 = global_set2_id(data,(closure)&c_736238,quote__85append_91dirs_85, __glo__85append_91dirs_85_scheme_eval, NULL);
 return_closcall1(data,(closure)&c_736238,  c_736268);; 
 }
 
@@ -2051,7 +2061,7 @@ c_736240.elements = (object *)e_736261;
 c_736240.elements[0] = ((closureN)self_732846)->elements[0];
 
 
-object c_736264 = global_set2(data,(closure)&c_736240,__glo__85prepend_91dirs_85_scheme_eval, NULL);
+object c_736264 = global_set2_id(data,(closure)&c_736240,quote__85prepend_91dirs_85, __glo__85prepend_91dirs_85_scheme_eval, NULL);
 return_closcall1(data,(closure)&c_736240,  c_736264);; 
 }
 
@@ -2069,7 +2079,7 @@ c_736242.elements = (object *)e_736257;
 c_736242.elements[0] = ((closureN)self_732847)->elements[0];
 
 
-object c_736260 = global_set2(data,(closure)&c_736242,__glo__85macro_117env_85_scheme_eval, NULL);
+object c_736260 = global_set2_id(data,(closure)&c_736242,quote__85macro_117env_85, __glo__85macro_117env_85_scheme_eval, NULL);
 return_closcall1(data,(closure)&c_736242,  c_736260);; 
 }
 
@@ -2087,7 +2097,7 @@ c_736244.elements = (object *)e_736253;
 c_736244.elements[0] = ((closureN)self_732848)->elements[0];
 
 
-object c_736256 = global_set2(data,(closure)&c_736244,__glo__85macro_117defined_91macros_85_scheme_eval, NULL);
+object c_736256 = global_set2_id(data,(closure)&c_736244,quote__85macro_117defined_91macros_85, __glo__85macro_117defined_91macros_85_scheme_eval, NULL);
 return_closcall1(data,(closure)&c_736244,  c_736256);; 
 }
 
@@ -2109,7 +2119,7 @@ return_closcall1(data,  __glo__list_scheme_base,  &c_736246);;
 
 static void __lambda_455(void *data, int argc, object self_732850, object r_732093) {
   
-object c_736251 = global_set2(data,  ((closureN)self_732850)->elements[0],__glo__85defined_91macros_85_scheme_eval, r_732093);
+object c_736251 = global_set2_id(data,  ((closureN)self_732850)->elements[0],quote__85defined_91macros_85, __glo__85defined_91macros_85_scheme_eval, r_732093);
 return_closcall1(data,  ((closureN)self_732850)->elements[0],  c_736251);; 
 }
 
@@ -4815,7 +4825,7 @@ c_735260.elements[3] = ((closureN)self_732753)->elements[3];
 c_735260.elements[4] = ((closureN)self_732753)->elements[4];
 
 
-object c_735282 = global_set2(data,(closure)&c_735260,__glo__85defined_91macros_85_scheme_eval, r_731849);
+object c_735282 = global_set2_id(data,(closure)&c_735260,quote__85defined_91macros_85, __glo__85defined_91macros_85_scheme_eval, r_731849);
 return_closcall1(data,(closure)&c_735260,  c_735282);; 
 }
 
@@ -6816,7 +6826,7 @@ return_closcall4(data,  __glo_env_117extend_91environment_scheme_cyclone_util,  
 
 static void __lambda_233(void *data, int argc, object self_732641, object r_731627) {
   
-object c_734394 = global_set2(data,  ((closureN)self_732641)->elements[0],__glo__85macro_117env_85_scheme_eval, r_731627);
+object c_734394 = global_set2_id(data,  ((closureN)self_732641)->elements[0],quote__85macro_117env_85, __glo__85macro_117env_85_scheme_eval, r_731627);
 return_closcall1(data,  ((closureN)self_732641)->elements[0],  c_734394);; 
 }
 
@@ -6855,7 +6865,7 @@ c_734369.elements = (object *)e_734372;
 c_734369.elements[0] = ((closureN)self_732637)->elements[0];
 
 
-object c_734375 = global_set2(data,(closure)&c_734369,__glo__85macro_117defined_91macros_85_scheme_eval, r_731622);
+object c_734375 = global_set2_id(data,(closure)&c_734369,quote__85macro_117defined_91macros_85, __glo__85macro_117defined_91macros_85_scheme_eval, r_731622);
 return_closcall1(data,(closure)&c_734369,  c_734375);; 
 }
 
@@ -7143,7 +7153,7 @@ c_734296.elements = (object *)e_734299;
 c_734296.elements[0] = ((closureN)self_732627)->elements[0];
 
 
-object c_734302 = global_set2(data,(closure)&c_734296,__glo__85global_91environment_85_scheme_eval, r_731597);
+object c_734302 = global_set2_id(data,(closure)&c_734296,quote__85global_91environment_85, __glo__85global_91environment_85_scheme_eval, r_731597);
 return_closcall1(data,(closure)&c_734296,  c_734302);; 
 }
 
@@ -7167,13 +7177,13 @@ c_734271.elements[0] = k_731588;
 c_734271.elements[1] = prepend_91dirs_73360_73974;
 
 
-object c_734281 = global_set2(data,(closure)&c_734271,__glo__85append_91dirs_85_scheme_eval, append_91dirs_73359_73973);
+object c_734281 = global_set2_id(data,(closure)&c_734271,quote__85append_91dirs_85, __glo__85append_91dirs_85_scheme_eval, append_91dirs_73359_73973);
 return_closcall1(data,(closure)&c_734271,  c_734281);; 
 }
 
 static void __lambda_209(void *data, int argc, object self_732621, object r_731589) {
   
-object c_734276 = global_set2(data,  ((closureN)self_732621)->elements[0],__glo__85prepend_91dirs_85_scheme_eval, ((closureN)self_732621)->elements[1]);
+object c_734276 = global_set2_id(data,  ((closureN)self_732621)->elements[0],quote__85prepend_91dirs_85, __glo__85prepend_91dirs_85_scheme_eval, ((closureN)self_732621)->elements[1]);
 return_closcall1(data,  ((closureN)self_732621)->elements[0],  c_734276);; 
 }
 
@@ -10871,6 +10881,8 @@ make_pair(c_736697, &pair_736696, &c_736698);
 void c_schemeeval_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote_procedure = find_or_add_symbol("procedure");
+  quote_procedure_91tag = find_or_add_symbol("procedure-tag");
+  quote_macro_91tag = find_or_add_symbol("macro-tag");
   quote_cddddr = find_or_add_symbol("cddddr");
   quote_cdddar = find_or_add_symbol("cdddar");
   quote_cddadr = find_or_add_symbol("cddadr");
@@ -10999,6 +11011,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_string_91_125number = find_or_add_symbol("string->number");
   quote_integer_91_125char = find_or_add_symbol("integer->char");
   quote_char_91_125integer = find_or_add_symbol("char->integer");
+  quote_primitive_91procedures = find_or_add_symbol("primitive-procedures");
+  quote__85initial_91environment_85 = find_or_add_symbol("*initial-environment*");
   quote_type = find_or_add_symbol("type");
   quote_Unexpected = find_or_add_symbol("Unexpected");
   quote_varargs = find_or_add_symbol("varargs");
@@ -11012,6 +11026,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_expand_91body = find_or_add_symbol("expand-body");
   quote_env = find_or_add_symbol("env");
   quote_expand = find_or_add_symbol("expand");
+  quote__85defined_91macros_85 = find_or_add_symbol("*defined-macros*");
+  quote__85macro_117env_85 = find_or_add_symbol("*macro:env*");
+  quote__85macro_117defined_91macros_85 = find_or_add_symbol("*macro:defined-macros*");
+  quote__85global_91environment_85 = find_or_add_symbol("*global-environment*");
+  quote__85append_91dirs_85 = find_or_add_symbol("*append-dirs*");
+  quote__85prepend_91dirs_85 = find_or_add_symbol("*prepend-dirs*");
   quote_begin = find_or_add_symbol("begin");
   quote_er_91macro_91transformer = find_or_add_symbol("er-macro-transformer");
   quote_macro = find_or_add_symbol("macro");
@@ -11135,6 +11155,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_eval_scheme_eval);
   add_global((object *) &__glo_create_91environment_scheme_eval);
   add_symbol(quote_procedure);
+  add_symbol(quote_procedure_91tag);
+  add_symbol(quote_macro_91tag);
   add_symbol(quote_cddddr);
   add_symbol(quote_cdddar);
   add_symbol(quote_cddadr);
@@ -11263,6 +11285,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_string_91_125number);
   add_symbol(quote_integer_91_125char);
   add_symbol(quote_char_91_125integer);
+  add_symbol(quote_primitive_91procedures);
+  add_symbol(quote__85initial_91environment_85);
   add_symbol(quote_type);
   add_symbol(quote_Unexpected);
   add_symbol(quote_varargs);
@@ -11276,6 +11300,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_expand_91body);
   add_symbol(quote_env);
   add_symbol(quote_expand);
+  add_symbol(quote__85defined_91macros_85);
+  add_symbol(quote__85macro_117env_85);
+  add_symbol(quote__85macro_117defined_91macros_85);
+  add_symbol(quote__85global_91environment_85);
+  add_symbol(quote__85append_91dirs_85);
+  add_symbol(quote__85prepend_91dirs_85);
   add_symbol(quote_begin);
   add_symbol(quote_er_91macro_91transformer);
   add_symbol(quote_macro);

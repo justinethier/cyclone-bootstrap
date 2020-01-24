@@ -319,6 +319,8 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(write_91shared);
+defsymbol(write_91simple);
 static void __lambda_5(void *data, int argc, closure _,object k_7327) ;
 static void __lambda_6(void *data, int argc, object self_7332, object r_7329) ;
 static void __lambda_3(void *data, int argc, closure _,object k_7317, object obj_733_737, object port_734_738_raw, ...) ;
@@ -341,13 +343,13 @@ c_7367.elements = (object *)e_7373;
 c_7367.elements[0] = k_7327;
 
 
-object c_7376 = global_set2(data,(closure)&c_7367,__glo_write_91shared_scheme_write, __glo_write_scheme_write);
+object c_7376 = global_set2_id(data,(closure)&c_7367,quote_write_91shared, __glo_write_91shared_scheme_write, __glo_write_scheme_write);
 return_closcall1(data,(closure)&c_7367,  c_7376);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7332, object r_7329) {
   
-object c_7372 = global_set2(data,  ((closureN)self_7332)->elements[0],__glo_write_91simple_scheme_write, __glo_write_scheme_write);
+object c_7372 = global_set2_id(data,  ((closureN)self_7332)->elements[0],quote_write_91simple, __glo_write_91simple_scheme_write, __glo_write_scheme_write);
 return_closcall1(data,  ((closureN)self_7332)->elements[0],  c_7372);; 
 }
 
@@ -424,12 +426,16 @@ void c_schemewrite_inlinable_lambdas(void *data, int argc, closure _, object con
  } 
 void c_schemewrite_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_write_91shared = find_or_add_symbol("write-shared");
+  quote_write_91simple = find_or_add_symbol("write-simple");
 
   add_global((object *) &__glo_lib_91init_117schemewrite_scheme_write);
   add_global((object *) &__glo_write_91simple_scheme_write);
   add_global((object *) &__glo_write_91shared_scheme_write);
   add_global((object *) &__glo_write_scheme_write);
   add_global((object *) &__glo_display_scheme_write);
+  add_symbol(quote_write_91shared);
+  add_symbol(quote_write_91simple);
   mclosure0(c_7365, (function_type)__lambda_5);c_7365.num_args = 0; 
   __glo_lib_91init_117schemewrite_scheme_write = &c_7365; 
   mclosure0(c_7349, (function_type)__lambda_3);c_7349.num_args = 1; 

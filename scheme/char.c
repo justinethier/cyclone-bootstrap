@@ -387,6 +387,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(char_91foldcase);
 static void __lambda_38(void *data, int argc, closure _,object k_73194) ;
 static void __lambda_37(void *data, int argc, closure _,object k_73191, object str_7342_7379) ;
 static void __lambda_36(void *data, int argc, closure _,object k_73188, object str_7341_7378) ;
@@ -429,7 +430,7 @@ static void __lambda_2(void *data, int argc, object self_73196, object r_7383) ;
 static void __lambda_38(void *data, int argc, closure _,object k_73194) {
   Cyc_st_add(data, "scheme/char.sld:lib-init:scheme_char");
 
-object c_73462 = global_set2(data,  k_73194,__glo_char_91foldcase_scheme__char, __glo_char_91downcase_scheme__char);
+object c_73462 = global_set2_id(data,  k_73194,quote_char_91foldcase, __glo_char_91foldcase_scheme__char, __glo_char_91downcase_scheme__char);
 return_closcall1(data,  k_73194,  c_73462);; 
 }
 
@@ -944,6 +945,7 @@ void c_scheme_char_inlinable_lambdas(void *data, int argc, closure _, object con
  } 
 void c_scheme_char_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_char_91foldcase = find_or_add_symbol("char-foldcase");
 
   add_global((object *) &__glo_lib_91init_117scheme_191char_scheme__char);
   add_global((object *) &__glo_string_91foldcase_scheme__char);
@@ -968,6 +970,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_char_91foldcase_scheme__char);
   add_global((object *) &__glo_char_91downcase_scheme__char);
   add_global((object *) &__glo_char_91upcase_scheme__char);
+  add_symbol(quote_char_91foldcase);
   mclosure0(c_73458, (function_type)__lambda_38);c_73458.num_args = 0; 
   __glo_lib_91init_117scheme_191char_scheme__char = &c_73458; 
   mclosure0(c_73456, (function_type)__lambda_37);c_73456.num_args = 1; 

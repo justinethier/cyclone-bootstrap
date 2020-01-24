@@ -497,6 +497,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(_85primordial_91thread_85);
 defsymbol(cyc_91thread_91obj);
 static void __lambda_27(void *data, int argc, closure _,object k_73121) ;
 static void __lambda_28(void *data, int argc, object self_73140, object r_73123) ;
@@ -568,7 +569,7 @@ return_closcall7(data,  __glo_vector_scheme_base,  &c_73328, quote_cyc_91thread_
 
 static void __lambda_28(void *data, int argc, object self_73140, object r_73123) {
   
-object c_73333 = global_set2(data,  ((closureN)self_73140)->elements[0],__glo__85primordial_91thread_85_srfi_18, r_73123);
+object c_73333 = global_set2_id(data,  ((closureN)self_73140)->elements[0],quote__85primordial_91thread_85, __glo__85primordial_91thread_85_srfi_18, r_73123);
 return_closcall1(data,  ((closureN)self_73140)->elements[0],  c_73333);; 
 }
 
@@ -1106,6 +1107,7 @@ make_pair(c_73338, &pair_73337, &c_73339);
  } 
 void c_srfi18_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote__85primordial_91thread_85 = find_or_add_symbol("*primordial-thread*");
   quote_cyc_91thread_91obj = find_or_add_symbol("cyc-thread-obj");
 
   add_global((object *) &__glo_lib_91init_117srfi18_srfi_18);
@@ -1141,6 +1143,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_thread_91name_srfi_18);
   add_global((object *) &__glo_make_91thread_srfi_18);
   add_global((object *) &__glo_thread_127_srfi_18);
+  add_symbol(quote__85primordial_91thread_85);
   add_symbol(quote_cyc_91thread_91obj);
   mclosure0(c_73326, (function_type)__lambda_27);c_73326.num_args = 0; 
   __glo_lib_91init_117srfi18_srfi_18 = &c_73326; 

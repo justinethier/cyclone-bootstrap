@@ -770,9 +770,17 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_symbol_91hash_191_191inline_191_191_srfi_69;
 #include "cyclone/runtime.h"
+defsymbol(hash_91table_91contains_127);
+defsymbol(sob_127);
 defsymbol(hash_91table);
+defsymbol(sob_91hash_91table);
 defsymbol(comparator);
+defsymbol(sob_91comparator);
 defsymbol(multi_127);
+defsymbol(sob_91multi_127);
+defsymbol(missing);
+defsymbol(set_91comparator);
+defsymbol(bag_91comparator);
 defsymbol(sob2);
 defsymbol(sob1);
 defsymbol(sob);
@@ -1484,7 +1492,7 @@ c_736280.elements = (object *)e_736375;
 c_736280.elements[0] = k_732416;
 
 
-object c_736378 = global_set2(data,(closure)&c_736280,__glo_hash_91table_91contains_127_srfi_113, __glo_hash_91table_91exists_127_srfi_69);
+object c_736378 = global_set2_id(data,(closure)&c_736280,quote_hash_91table_91contains_127, __glo_hash_91table_91contains_127_srfi_113, __glo_hash_91table_91exists_127_srfi_69);
 return_closcall1(data,(closure)&c_736280,  c_736378);; 
 }
 
@@ -1526,7 +1534,7 @@ c_736284.elements = (object *)e_736366;
 c_736284.elements[0] = ((closureN)self_733097)->elements[0];
 
 
-object c_736369 = global_set2(data,(closure)&c_736284,__glo_sob_srfi_113, r_732444);
+object c_736369 = global_set2_id(data,(closure)&c_736284,quote_sob, __glo_sob_srfi_113, r_732444);
 return_closcall1(data,(closure)&c_736284,  c_736369);; 
 }
 
@@ -1560,7 +1568,7 @@ c_736288.elements = (object *)e_736361;
 c_736288.elements[0] = ((closureN)self_733099)->elements[0];
 
 
-object c_736364 = global_set2(data,(closure)&c_736288,__glo_sob_127_srfi_113, r_732443);
+object c_736364 = global_set2_id(data,(closure)&c_736288,quote_sob_127, __glo_sob_127_srfi_113, r_732443);
 return_closcall1(data,(closure)&c_736288,  c_736364);; 
 }
 
@@ -1612,7 +1620,7 @@ c_736294.elements = (object *)e_736354;
 c_736294.elements[0] = ((closureN)self_733102)->elements[0];
 
 
-object c_736357 = global_set2(data,(closure)&c_736294,__glo_sob_91hash_91table_srfi_113, r_732440);
+object c_736357 = global_set2_id(data,(closure)&c_736294,quote_sob_91hash_91table, __glo_sob_91hash_91table_srfi_113, r_732440);
 return_closcall1(data,(closure)&c_736294,  c_736357);; 
 }
 
@@ -1664,7 +1672,7 @@ c_736300.elements = (object *)e_736347;
 c_736300.elements[0] = ((closureN)self_733105)->elements[0];
 
 
-object c_736350 = global_set2(data,(closure)&c_736300,__glo_sob_91comparator_srfi_113, r_732437);
+object c_736350 = global_set2_id(data,(closure)&c_736300,quote_sob_91comparator, __glo_sob_91comparator_srfi_113, r_732437);
 return_closcall1(data,(closure)&c_736300,  c_736350);; 
 }
 
@@ -1716,7 +1724,7 @@ c_736306.elements = (object *)e_736340;
 c_736306.elements[0] = ((closureN)self_733108)->elements[0];
 
 
-object c_736343 = global_set2(data,(closure)&c_736306,__glo_sob_91multi_127_srfi_113, r_732434);
+object c_736343 = global_set2_id(data,(closure)&c_736306,quote_sob_91multi_127, __glo_sob_91multi_127_srfi_113, r_732434);
 return_closcall1(data,(closure)&c_736306,  c_736343);; 
 }
 
@@ -1752,7 +1760,7 @@ c_736310.elements = (object *)e_736334;
 c_736310.elements[0] = ((closureN)self_733110)->elements[0];
 
 
-object c_736337 = global_set2(data,(closure)&c_736310,__glo_missing_srfi_113, r_732433);
+object c_736337 = global_set2_id(data,(closure)&c_736310,quote_missing, __glo_missing_srfi_113, r_732433);
 return_closcall1(data,(closure)&c_736310,  c_736337);; 
 }
 
@@ -1786,7 +1794,7 @@ c_736314.elements = (object *)e_736329;
 c_736314.elements[0] = ((closureN)self_733112)->elements[0];
 
 
-object c_736332 = global_set2(data,(closure)&c_736314,__glo_set_91comparator_srfi_113, r_732432);
+object c_736332 = global_set2_id(data,(closure)&c_736314,quote_set_91comparator, __glo_set_91comparator_srfi_113, r_732432);
 return_closcall1(data,(closure)&c_736314,  c_736332);; 
 }
 
@@ -1820,7 +1828,7 @@ c_736318.elements = (object *)e_736324;
 c_736318.elements[0] = ((closureN)self_733114)->elements[0];
 
 
-object c_736327 = global_set2(data,(closure)&c_736318,__glo_bag_91comparator_srfi_113, r_732431);
+object c_736327 = global_set2_id(data,(closure)&c_736318,quote_bag_91comparator, __glo_bag_91comparator_srfi_113, r_732431);
 return_closcall1(data,(closure)&c_736318,  c_736327);; 
 }
 
@@ -11794,9 +11802,17 @@ void c_srfi113_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi113_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_hash_91table_91contains_127 = find_or_add_symbol("hash-table-contains?");
+  quote_sob_127 = find_or_add_symbol("sob?");
   quote_hash_91table = find_or_add_symbol("hash-table");
+  quote_sob_91hash_91table = find_or_add_symbol("sob-hash-table");
   quote_comparator = find_or_add_symbol("comparator");
+  quote_sob_91comparator = find_or_add_symbol("sob-comparator");
   quote_multi_127 = find_or_add_symbol("multi?");
+  quote_sob_91multi_127 = find_or_add_symbol("sob-multi?");
+  quote_missing = find_or_add_symbol("missing");
+  quote_set_91comparator = find_or_add_symbol("set-comparator");
+  quote_bag_91comparator = find_or_add_symbol("bag-comparator");
   quote_sob2 = find_or_add_symbol("sob2");
   quote_sob1 = find_or_add_symbol("sob1");
   quote_sob = find_or_add_symbol("sob");
@@ -11993,9 +12009,17 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_hash_91table_91contains_127_srfi_113);
   add_global((object *) &__glo_modulizer_srfi_113);
   add_global((object *) &__glo_make_91hash_91table_95comparator_srfi_113);
+  add_symbol(quote_hash_91table_91contains_127);
+  add_symbol(quote_sob_127);
   add_symbol(quote_hash_91table);
+  add_symbol(quote_sob_91hash_91table);
   add_symbol(quote_comparator);
+  add_symbol(quote_sob_91comparator);
   add_symbol(quote_multi_127);
+  add_symbol(quote_sob_91multi_127);
+  add_symbol(quote_missing);
+  add_symbol(quote_set_91comparator);
+  add_symbol(quote_bag_91comparator);
   add_symbol(quote_sob2);
   add_symbol(quote_sob1);
   add_symbol(quote_sob);

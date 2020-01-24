@@ -657,6 +657,7 @@ extern object __glo_env_117first_91frame_191_191inline_191_191_scheme_cyclone_ut
 extern object __glo_env_117frame_91variables_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_env_117frame_91values_191_191inline_191_191_scheme_cyclone_util;
 #include "cyclone/runtime.h"
+defsymbol(lib_117get_91dep_91list);
 defsymbol(sld);
 defsymbol(cyclone);
 defsymbol(srfi);
@@ -917,7 +918,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_73545, object as
 static void __lambda_226(void *data, int argc, closure _,object k_731028) {
   Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib-init:schemecyclonelibraries");
 
-object c_732872 = global_set2(data,  k_731028,__glo_lib_117get_91dep_91list_scheme_cyclone_libraries, __glo_resolve_91dependencies_scheme_cyclone_libraries);
+object c_732872 = global_set2_id(data,  k_731028,quote_lib_117get_91dep_91list, __glo_lib_117get_91dep_91list_scheme_cyclone_libraries, __glo_resolve_91dependencies_scheme_cyclone_libraries);
 return_closcall1(data,  k_731028,  c_732872);; 
 }
 
@@ -5296,6 +5297,7 @@ make_pair(c_732875, &pair_732874, &c_732876);
  } 
 void c_schemecyclonelibraries_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_lib_117get_91dep_91list = find_or_add_symbol("lib:get-dep-list");
   quote_sld = find_or_add_symbol("sld");
   quote_cyclone = find_or_add_symbol("cyclone");
   quote_srfi = find_or_add_symbol("srfi");
@@ -5356,6 +5358,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_lib_117list_91_125import_91set_scheme_cyclone_libraries);
   add_global((object *) &__glo_library_91exists_127_scheme_cyclone_libraries);
   add_global((object *) &__glo_library_127_scheme_cyclone_libraries);
+  add_symbol(quote_lib_117get_91dep_91list);
   add_symbol(quote_sld);
   add_symbol(quote_cyclone);
   add_symbol(quote_srfi);

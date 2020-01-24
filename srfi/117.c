@@ -501,6 +501,12 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(_121list_91queue_125);
+defsymbol(list_91queue_127);
+defsymbol(get_91first);
+defsymbol(get_91last);
+defsymbol(set_91first_67);
+defsymbol(set_91last_67);
 defsymbol(first);
 defsymbol(list_91queue);
 defsymbol(seed);
@@ -699,7 +705,7 @@ c_731454.elements = (object *)e_731515;
 c_731454.elements[0] = ((closureN)self_73666)->elements[0];
 
 
-object c_731518 = global_set2(data,(closure)&c_731454,__glo__121list_91queue_125_srfi_117, r_73559);
+object c_731518 = global_set2_id(data,(closure)&c_731454,quote__121list_91queue_125, __glo__121list_91queue_125_srfi_117, r_73559);
 return_closcall1(data,(closure)&c_731454,  c_731518);; 
 }
 
@@ -733,7 +739,7 @@ c_731458.elements = (object *)e_731510;
 c_731458.elements[0] = ((closureN)self_73668)->elements[0];
 
 
-object c_731513 = global_set2(data,(closure)&c_731458,__glo_list_91queue_127_srfi_117, r_73558);
+object c_731513 = global_set2_id(data,(closure)&c_731458,quote_list_91queue_127, __glo_list_91queue_127_srfi_117, r_73558);
 return_closcall1(data,(closure)&c_731458,  c_731513);; 
 }
 
@@ -785,7 +791,7 @@ c_731464.elements = (object *)e_731503;
 c_731464.elements[0] = ((closureN)self_73671)->elements[0];
 
 
-object c_731506 = global_set2(data,(closure)&c_731464,__glo_get_91first_srfi_117, r_73555);
+object c_731506 = global_set2_id(data,(closure)&c_731464,quote_get_91first, __glo_get_91first_srfi_117, r_73555);
 return_closcall1(data,(closure)&c_731464,  c_731506);; 
 }
 
@@ -837,7 +843,7 @@ c_731470.elements = (object *)e_731496;
 c_731470.elements[0] = ((closureN)self_73674)->elements[0];
 
 
-object c_731499 = global_set2(data,(closure)&c_731470,__glo_get_91last_srfi_117, r_73552);
+object c_731499 = global_set2_id(data,(closure)&c_731470,quote_get_91last, __glo_get_91last_srfi_117, r_73552);
 return_closcall1(data,(closure)&c_731470,  c_731499);; 
 }
 
@@ -889,7 +895,7 @@ c_731476.elements = (object *)e_731489;
 c_731476.elements[0] = ((closureN)self_73677)->elements[0];
 
 
-object c_731492 = global_set2(data,(closure)&c_731476,__glo_set_91first_67_srfi_117, r_73549);
+object c_731492 = global_set2_id(data,(closure)&c_731476,quote_set_91first_67, __glo_set_91first_67_srfi_117, r_73549);
 return_closcall1(data,(closure)&c_731476,  c_731492);; 
 }
 
@@ -929,7 +935,7 @@ return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_731480, &c_731487, 
 
 static void __lambda_146(void *data, int argc, object self_73680, object r_73546) {
   
-object c_731485 = global_set2(data,  ((closureN)self_73680)->elements[0],__glo_set_91last_67_srfi_117, r_73546);
+object c_731485 = global_set2_id(data,  ((closureN)self_73680)->elements[0],quote_set_91last_67, __glo_set_91last_67_srfi_117, r_73546);
 return_closcall1(data,  ((closureN)self_73680)->elements[0],  c_731485);; 
 }
 
@@ -3121,6 +3127,12 @@ void c_srfi117_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi117_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote__121list_91queue_125 = find_or_add_symbol("<list-queue>");
+  quote_list_91queue_127 = find_or_add_symbol("list-queue?");
+  quote_get_91first = find_or_add_symbol("get-first");
+  quote_get_91last = find_or_add_symbol("get-last");
+  quote_set_91first_67 = find_or_add_symbol("set-first!");
+  quote_set_91last_67 = find_or_add_symbol("set-last!");
   quote_first = find_or_add_symbol("first");
   quote_list_91queue = find_or_add_symbol("list-queue");
   quote_seed = find_or_add_symbol("seed");
@@ -3168,6 +3180,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo__121list_91queue_125_srfi_117);
   add_global((object *) &__glo_map_67_srfi_117);
   add_global((object *) &__glo_last_91pair_srfi_117);
+  add_symbol(quote__121list_91queue_125);
+  add_symbol(quote_list_91queue_127);
+  add_symbol(quote_get_91first);
+  add_symbol(quote_get_91last);
+  add_symbol(quote_set_91first_67);
+  add_symbol(quote_set_91last_67);
   add_symbol(quote_first);
   add_symbol(quote_list_91queue);
   add_symbol(quote_seed);

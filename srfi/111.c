@@ -420,7 +420,11 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(box_91type);
+defsymbol(box_127);
+defsymbol(unbox);
 defsymbol(value);
+defsymbol(set_91box_67);
 defsymbol(record_91marker);
 static void __lambda_3(void *data, int argc, closure _,object k_7319) ;
 static void __lambda_4(void *data, int argc, object self_7334, object r_7331) ;
@@ -470,7 +474,7 @@ c_7357.elements = (object *)e_7392;
 c_7357.elements[0] = ((closureN)self_7334)->elements[0];
 
 
-object c_7395 = global_set2(data,(closure)&c_7357,__glo_box_91type_srfi_111, r_7331);
+object c_7395 = global_set2_id(data,(closure)&c_7357,quote_box_91type, __glo_box_91type_srfi_111, r_7331);
 return_closcall1(data,(closure)&c_7357,  c_7395);; 
 }
 
@@ -504,7 +508,7 @@ c_7361.elements = (object *)e_7387;
 c_7361.elements[0] = ((closureN)self_7336)->elements[0];
 
 
-object c_7390 = global_set2(data,(closure)&c_7361,__glo_box_127_srfi_111, r_7330);
+object c_7390 = global_set2_id(data,(closure)&c_7361,quote_box_127, __glo_box_127_srfi_111, r_7330);
 return_closcall1(data,(closure)&c_7361,  c_7390);; 
 }
 
@@ -556,7 +560,7 @@ c_7367.elements = (object *)e_7380;
 c_7367.elements[0] = ((closureN)self_7339)->elements[0];
 
 
-object c_7383 = global_set2(data,(closure)&c_7367,__glo_unbox_srfi_111, r_7327);
+object c_7383 = global_set2_id(data,(closure)&c_7367,quote_unbox, __glo_unbox_srfi_111, r_7327);
 return_closcall1(data,(closure)&c_7367,  c_7383);; 
 }
 
@@ -596,7 +600,7 @@ return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_7371, &c_7378, __gl
 
 static void __lambda_12(void *data, int argc, object self_7342, object r_7324) {
   
-object c_7376 = global_set2(data,  ((closureN)self_7342)->elements[0],__glo_set_91box_67_srfi_111, r_7324);
+object c_7376 = global_set2_id(data,  ((closureN)self_7342)->elements[0],quote_set_91box_67, __glo_set_91box_67_srfi_111, r_7324);
 return_closcall1(data,  ((closureN)self_7342)->elements[0],  c_7376);; 
 }
 
@@ -630,7 +634,11 @@ void c_srfi111_inlinable_lambdas(void *data, int argc, closure _, object cont){
  } 
 void c_srfi111_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_box_91type = find_or_add_symbol("box-type");
+  quote_box_127 = find_or_add_symbol("box?");
+  quote_unbox = find_or_add_symbol("unbox");
   quote_value = find_or_add_symbol("value");
+  quote_set_91box_67 = find_or_add_symbol("set-box!");
   quote_record_91marker = find_or_add_symbol("record-marker");
 
   add_global((object *) &__glo_lib_91init_117srfi111_srfi_111);
@@ -639,7 +647,11 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_unbox_srfi_111);
   add_global((object *) &__glo_box_127_srfi_111);
   add_global((object *) &__glo_box_91type_srfi_111);
+  add_symbol(quote_box_91type);
+  add_symbol(quote_box_127);
+  add_symbol(quote_unbox);
   add_symbol(quote_value);
+  add_symbol(quote_set_91box_67);
   add_symbol(quote_record_91marker);
   mclosure0(c_7353, (function_type)__lambda_3);c_7353.num_args = 0; 
   __glo_lib_91init_117srfi111_srfi_111 = &c_7353; 

@@ -678,12 +678,22 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(comparator_127);
 defsymbol(type_91test);
+defsymbol(comparator_91type_91test_91predicate);
 defsymbol(equality);
+defsymbol(comparator_91equality_91predicate);
 defsymbol(ordering);
+defsymbol(comparator_91ordering_91predicate);
 defsymbol(hash);
+defsymbol(comparator_91hash_91function);
 defsymbol(ordering_127);
+defsymbol(comparator_91ordered_127);
 defsymbol(hash_127);
+defsymbol(comparator_91hashable_127);
+defsymbol(unknown_91object_91comparator);
+defsymbol(_85registered_91comparators_85);
+defsymbol(_85next_91comparator_91index_85);
 defsymbol(n);
 defsymbol(record_91marker);
 defsymbol(obj);
@@ -1182,7 +1192,7 @@ c_735090.elements = (object *)e_735219;
 c_735090.elements[0] = ((closureN)self_732231)->elements[0];
 
 
-object c_735222 = global_set2(data,(closure)&c_735090,__glo__75salt_75_srfi_128, r_731868);
+object c_735222 = global_set2_id(data,(closure)&c_735090,quote__75salt_75, __glo__75salt_75_srfi_128, r_731868);
 return_closcall1(data,(closure)&c_735090,  c_735222);; 
 }
 
@@ -1230,7 +1240,7 @@ c_735094.elements = (object *)e_735207;
 c_735094.elements[0] = ((closureN)self_732233)->elements[0];
 
 
-object c_735210 = global_set2(data,(closure)&c_735094,__glo_comparator_srfi_128, r_731866);
+object c_735210 = global_set2_id(data,(closure)&c_735094,quote_comparator, __glo_comparator_srfi_128, r_731866);
 return_closcall1(data,(closure)&c_735094,  c_735210);; 
 }
 
@@ -1264,7 +1274,7 @@ c_735098.elements = (object *)e_735202;
 c_735098.elements[0] = ((closureN)self_732235)->elements[0];
 
 
-object c_735205 = global_set2(data,(closure)&c_735098,__glo_comparator_127_srfi_128, r_731865);
+object c_735205 = global_set2_id(data,(closure)&c_735098,quote_comparator_127, __glo_comparator_127_srfi_128, r_731865);
 return_closcall1(data,(closure)&c_735098,  c_735205);; 
 }
 
@@ -1316,7 +1326,7 @@ c_735104.elements = (object *)e_735195;
 c_735104.elements[0] = ((closureN)self_732238)->elements[0];
 
 
-object c_735198 = global_set2(data,(closure)&c_735104,__glo_comparator_91type_91test_91predicate_srfi_128, r_731862);
+object c_735198 = global_set2_id(data,(closure)&c_735104,quote_comparator_91type_91test_91predicate, __glo_comparator_91type_91test_91predicate_srfi_128, r_731862);
 return_closcall1(data,(closure)&c_735104,  c_735198);; 
 }
 
@@ -1368,7 +1378,7 @@ c_735110.elements = (object *)e_735188;
 c_735110.elements[0] = ((closureN)self_732241)->elements[0];
 
 
-object c_735191 = global_set2(data,(closure)&c_735110,__glo_comparator_91equality_91predicate_srfi_128, r_731859);
+object c_735191 = global_set2_id(data,(closure)&c_735110,quote_comparator_91equality_91predicate, __glo_comparator_91equality_91predicate_srfi_128, r_731859);
 return_closcall1(data,(closure)&c_735110,  c_735191);; 
 }
 
@@ -1420,7 +1430,7 @@ c_735116.elements = (object *)e_735181;
 c_735116.elements[0] = ((closureN)self_732244)->elements[0];
 
 
-object c_735184 = global_set2(data,(closure)&c_735116,__glo_comparator_91ordering_91predicate_srfi_128, r_731856);
+object c_735184 = global_set2_id(data,(closure)&c_735116,quote_comparator_91ordering_91predicate, __glo_comparator_91ordering_91predicate_srfi_128, r_731856);
 return_closcall1(data,(closure)&c_735116,  c_735184);; 
 }
 
@@ -1472,7 +1482,7 @@ c_735122.elements = (object *)e_735174;
 c_735122.elements[0] = ((closureN)self_732247)->elements[0];
 
 
-object c_735177 = global_set2(data,(closure)&c_735122,__glo_comparator_91hash_91function_srfi_128, r_731853);
+object c_735177 = global_set2_id(data,(closure)&c_735122,quote_comparator_91hash_91function, __glo_comparator_91hash_91function_srfi_128, r_731853);
 return_closcall1(data,(closure)&c_735122,  c_735177);; 
 }
 
@@ -1524,7 +1534,7 @@ c_735128.elements = (object *)e_735167;
 c_735128.elements[0] = ((closureN)self_732250)->elements[0];
 
 
-object c_735170 = global_set2(data,(closure)&c_735128,__glo_comparator_91ordered_127_srfi_128, r_731850);
+object c_735170 = global_set2_id(data,(closure)&c_735128,quote_comparator_91ordered_127, __glo_comparator_91ordered_127_srfi_128, r_731850);
 return_closcall1(data,(closure)&c_735128,  c_735170);; 
 }
 
@@ -1576,7 +1586,7 @@ c_735134.elements = (object *)e_735160;
 c_735134.elements[0] = ((closureN)self_732253)->elements[0];
 
 
-object c_735163 = global_set2(data,(closure)&c_735134,__glo_comparator_91hashable_127_srfi_128, r_731847);
+object c_735163 = global_set2_id(data,(closure)&c_735134,quote_comparator_91hashable_127, __glo_comparator_91hashable_127_srfi_128, r_731847);
 return_closcall1(data,(closure)&c_735134,  c_735163);; 
 }
 
@@ -1634,7 +1644,7 @@ c_735138.elements = (object *)e_735147;
 c_735138.elements[0] = ((closureN)self_732255)->elements[0];
 
 
-object c_735150 = global_set2(data,(closure)&c_735138,__glo_unknown_91object_91comparator_srfi_128, r_731838);
+object c_735150 = global_set2_id(data,(closure)&c_735138,quote_unknown_91object_91comparator, __glo_unknown_91object_91comparator_srfi_128, r_731838);
 return_closcall1(data,(closure)&c_735138,  c_735150);; 
 }
 
@@ -1642,7 +1652,7 @@ static void __lambda_426(void *data, int argc, object self_732256, object r_7318
   
 pair_type local_735146; 
 
-object c_735143 = global_set2(data,  ((closureN)self_732256)->elements[0],__glo__85registered_91comparators_85_srfi_128, set_cell_as_expr(&local_735146, __glo_unknown_91object_91comparator_srfi_128));
+object c_735143 = global_set2_id(data,  ((closureN)self_732256)->elements[0],quote__85registered_91comparators_85, __glo__85registered_91comparators_85_srfi_128, set_cell_as_expr(&local_735146, __glo_unknown_91object_91comparator_srfi_128));
 return_closcall1(data,  ((closureN)self_732256)->elements[0],  c_735143);; 
 }
 
@@ -2714,7 +2724,7 @@ c_734645.elements = (object *)e_734657;
 c_734645.elements[0] = ((closureN)self_732186)->elements[0];
 
 
-object c_734660 = global_set2(data,(closure)&c_734645,__glo__85registered_91comparators_85_srfi_128, r_731682);
+object c_734660 = global_set2_id(data,(closure)&c_734645,quote__85registered_91comparators_85, __glo__85registered_91comparators_85_srfi_128, r_731682);
 return_closcall1(data,(closure)&c_734645,  c_734660);; 
 }
 
@@ -2738,7 +2748,7 @@ return_direct_with_clo1(data,(closure)&c_734647,__lambda_349,  Cyc_fast_sum(data
 
 static void __lambda_349(void *data, int argc, object self_732188, object r_731681) {
   
-object c_734652 = global_set2(data,  ((closureN)self_732188)->elements[0],__glo__85next_91comparator_91index_85_srfi_128, r_731681);
+object c_734652 = global_set2_id(data,  ((closureN)self_732188)->elements[0],quote__85next_91comparator_91index_85, __glo__85next_91comparator_91index_85_srfi_128, r_731681);
 return_closcall1(data,  ((closureN)self_732188)->elements[0],  c_734652);; 
 }
 
@@ -9943,12 +9953,22 @@ make_pair(c_735225, &pair_735224, NULL);
  } 
 void c_srfi128_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_comparator_127 = find_or_add_symbol("comparator?");
   quote_type_91test = find_or_add_symbol("type-test");
+  quote_comparator_91type_91test_91predicate = find_or_add_symbol("comparator-type-test-predicate");
   quote_equality = find_or_add_symbol("equality");
+  quote_comparator_91equality_91predicate = find_or_add_symbol("comparator-equality-predicate");
   quote_ordering = find_or_add_symbol("ordering");
+  quote_comparator_91ordering_91predicate = find_or_add_symbol("comparator-ordering-predicate");
   quote_hash = find_or_add_symbol("hash");
+  quote_comparator_91hash_91function = find_or_add_symbol("comparator-hash-function");
   quote_ordering_127 = find_or_add_symbol("ordering?");
+  quote_comparator_91ordered_127 = find_or_add_symbol("comparator-ordered?");
   quote_hash_127 = find_or_add_symbol("hash?");
+  quote_comparator_91hashable_127 = find_or_add_symbol("comparator-hashable?");
+  quote_unknown_91object_91comparator = find_or_add_symbol("unknown-object-comparator");
+  quote__85registered_91comparators_85 = find_or_add_symbol("*registered-comparators*");
+  quote__85next_91comparator_91index_85 = find_or_add_symbol("*next-comparator-index*");
   quote_n = find_or_add_symbol("n");
   quote_record_91marker = find_or_add_symbol("record-marker");
   quote_obj = find_or_add_symbol("obj");
@@ -10042,12 +10062,22 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo__75salt_75_srfi_128);
   add_global((object *) &__glo_hash_91bound_srfi_128);
   add_global((object *) &__glo_comparator_91if_121_123_125_srfi_128);
+  add_symbol(quote_comparator_127);
   add_symbol(quote_type_91test);
+  add_symbol(quote_comparator_91type_91test_91predicate);
   add_symbol(quote_equality);
+  add_symbol(quote_comparator_91equality_91predicate);
   add_symbol(quote_ordering);
+  add_symbol(quote_comparator_91ordering_91predicate);
   add_symbol(quote_hash);
+  add_symbol(quote_comparator_91hash_91function);
   add_symbol(quote_ordering_127);
+  add_symbol(quote_comparator_91ordered_127);
   add_symbol(quote_hash_127);
+  add_symbol(quote_comparator_91hashable_127);
+  add_symbol(quote_unknown_91object_91comparator);
+  add_symbol(quote__85registered_91comparators_85);
+  add_symbol(quote__85next_91comparator_91index_85);
   add_symbol(quote_n);
   add_symbol(quote_record_91marker);
   add_symbol(quote_obj);

@@ -538,9 +538,15 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
+defsymbol(env_117the_91empty_91environment);
+defsymbol(_121syn_91clo_125);
+defsymbol(sc_127);
 defsymbol(env);
+defsymbol(sc_91env);
 defsymbol(free_91names);
+defsymbol(sc_91free_91names);
 defsymbol(expr);
+defsymbol(sc_91expr);
 defsymbol(_while);
 defsymbol(_volatile);
 defsymbol(_void);
@@ -577,9 +583,11 @@ defsymbol(_case);
 defsymbol(_break);
 defsymbol(_191Bool);
 defsymbol(_auto);
+defsymbol(_85c_91keywords_85);
 defsymbol(macro);
 defsymbol(not_91defined);
 defsymbol(record_91marker);
+defsymbol(gensym_91count);
 defsymbol(lambda_91formals_91type_117);
 defsymbol(in);
 defsymbol(_list);
@@ -926,7 +934,7 @@ c_733726.elements = (object *)e_733831;
 c_733726.elements[0] = k_731276;
 
 
-object c_733834 = global_set2(data,(closure)&c_733726,__glo_env_117the_91empty_91environment_scheme_cyclone_util, NULL);
+object c_733834 = global_set2_id(data,(closure)&c_733726,quote_env_117the_91empty_91environment, __glo_env_117the_91empty_91environment_scheme_cyclone_util, NULL);
 return_closcall1(data,(closure)&c_733726,  c_733834);; 
 }
 
@@ -968,7 +976,7 @@ c_733730.elements = (object *)e_733822;
 c_733730.elements[0] = ((closureN)self_731540)->elements[0];
 
 
-object c_733825 = global_set2(data,(closure)&c_733730,__glo__121syn_91clo_125_scheme_cyclone_util, r_731298);
+object c_733825 = global_set2_id(data,(closure)&c_733730,quote__121syn_91clo_125, __glo__121syn_91clo_125_scheme_cyclone_util, r_731298);
 return_closcall1(data,(closure)&c_733730,  c_733825);; 
 }
 
@@ -1002,7 +1010,7 @@ c_733734.elements = (object *)e_733817;
 c_733734.elements[0] = ((closureN)self_731542)->elements[0];
 
 
-object c_733820 = global_set2(data,(closure)&c_733734,__glo_sc_127_scheme_cyclone_util, r_731297);
+object c_733820 = global_set2_id(data,(closure)&c_733734,quote_sc_127, __glo_sc_127_scheme_cyclone_util, r_731297);
 return_closcall1(data,(closure)&c_733734,  c_733820);; 
 }
 
@@ -1054,7 +1062,7 @@ c_733740.elements = (object *)e_733810;
 c_733740.elements[0] = ((closureN)self_731545)->elements[0];
 
 
-object c_733813 = global_set2(data,(closure)&c_733740,__glo_sc_91env_scheme_cyclone_util, r_731294);
+object c_733813 = global_set2_id(data,(closure)&c_733740,quote_sc_91env, __glo_sc_91env_scheme_cyclone_util, r_731294);
 return_closcall1(data,(closure)&c_733740,  c_733813);; 
 }
 
@@ -1106,7 +1114,7 @@ c_733746.elements = (object *)e_733803;
 c_733746.elements[0] = ((closureN)self_731548)->elements[0];
 
 
-object c_733806 = global_set2(data,(closure)&c_733746,__glo_sc_91free_91names_scheme_cyclone_util, r_731291);
+object c_733806 = global_set2_id(data,(closure)&c_733746,quote_sc_91free_91names, __glo_sc_91free_91names_scheme_cyclone_util, r_731291);
 return_closcall1(data,(closure)&c_733746,  c_733806);; 
 }
 
@@ -1158,7 +1166,7 @@ c_733752.elements = (object *)e_733796;
 c_733752.elements[0] = ((closureN)self_731551)->elements[0];
 
 
-object c_733799 = global_set2(data,(closure)&c_733752,__glo_sc_91expr_scheme_cyclone_util, r_731288);
+object c_733799 = global_set2_id(data,(closure)&c_733752,quote_sc_91expr, __glo_sc_91expr_scheme_cyclone_util, r_731288);
 return_closcall1(data,(closure)&c_733752,  c_733799);; 
 }
 
@@ -1240,7 +1248,7 @@ make_pair(c_733759,quote__191Bool,&c_733760);c_733759.hdr.immutable = 1;
 
 make_pair(c_733758,quote__auto,&c_733759);c_733758.hdr.immutable = 1;
 
-object c_733757 = global_set2(data,  ((closureN)self_731552)->elements[0],__glo__85c_91keywords_85_scheme_cyclone_util, &c_733758);
+object c_733757 = global_set2_id(data,  ((closureN)self_731552)->elements[0],quote__85c_91keywords_85, __glo__85c_91keywords_85_scheme_cyclone_util, &c_733758);
 return_closcall1(data,  ((closureN)self_731552)->elements[0],  c_733757);; 
 }
 
@@ -3993,7 +4001,7 @@ c_732638.elements[0] = ((closureN)self_731422)->elements[0];
 c_732638.elements[1] = ((closureN)self_731422)->elements[1];
 
 
-object c_732681 = global_set2(data,(closure)&c_732638,__glo_gensym_91count_scheme_cyclone_util, r_731004);
+object c_732681 = global_set2_id(data,(closure)&c_732638,quote_gensym_91count, __glo_gensym_91count_scheme_cyclone_util, r_731004);
 return_closcall1(data,(closure)&c_732638,  c_732681);; 
 }
 
@@ -4100,7 +4108,7 @@ c_732609.elements = (object *)e_732627;
 c_732609.elements[0] = ((closureN)self_731418)->elements[0];
 
 
-object c_732630 = global_set2(data,(closure)&c_732609,__glo_gensym_91count_scheme_cyclone_util, r_73995);
+object c_732630 = global_set2_id(data,(closure)&c_732609,quote_gensym_91count, __glo_gensym_91count_scheme_cyclone_util, r_73995);
 return_closcall1(data,(closure)&c_732609,  c_732630);; 
 }
 
@@ -6539,9 +6547,15 @@ make_pair(c_733850, &pair_733849, &c_733851);
  } 
 void c_schemecycloneutil_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
+  quote_env_117the_91empty_91environment = find_or_add_symbol("env:the-empty-environment");
+  quote__121syn_91clo_125 = find_or_add_symbol("<syn-clo>");
+  quote_sc_127 = find_or_add_symbol("sc?");
   quote_env = find_or_add_symbol("env");
+  quote_sc_91env = find_or_add_symbol("sc-env");
   quote_free_91names = find_or_add_symbol("free-names");
+  quote_sc_91free_91names = find_or_add_symbol("sc-free-names");
   quote_expr = find_or_add_symbol("expr");
+  quote_sc_91expr = find_or_add_symbol("sc-expr");
   quote__while = find_or_add_symbol("while");
   quote__volatile = find_or_add_symbol("volatile");
   quote__void = find_or_add_symbol("void");
@@ -6578,9 +6592,11 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote__break = find_or_add_symbol("break");
   quote__191Bool = find_or_add_symbol("_Bool");
   quote__auto = find_or_add_symbol("auto");
+  quote__85c_91keywords_85 = find_or_add_symbol("*c-keywords*");
   quote_macro = find_or_add_symbol("macro");
   quote_not_91defined = find_or_add_symbol("not-defined");
   quote_record_91marker = find_or_add_symbol("record-marker");
+  quote_gensym_91count = find_or_add_symbol("gensym-count");
   quote_lambda_91formals_91type_117 = find_or_add_symbol("lambda-formals-type:");
   quote_in = find_or_add_symbol("in");
   quote__list = find_or_add_symbol("list");
@@ -6702,9 +6718,15 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global((object *) &__glo_if_127_scheme_cyclone_util);
   add_global((object *) &__glo_tagged_91list_127_191_191inline_191_191_scheme_cyclone_util);
   add_global((object *) &__glo_tagged_91list_127_scheme_cyclone_util);
+  add_symbol(quote_env_117the_91empty_91environment);
+  add_symbol(quote__121syn_91clo_125);
+  add_symbol(quote_sc_127);
   add_symbol(quote_env);
+  add_symbol(quote_sc_91env);
   add_symbol(quote_free_91names);
+  add_symbol(quote_sc_91free_91names);
   add_symbol(quote_expr);
+  add_symbol(quote_sc_91expr);
   add_symbol(quote__while);
   add_symbol(quote__volatile);
   add_symbol(quote__void);
@@ -6741,9 +6763,11 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote__break);
   add_symbol(quote__191Bool);
   add_symbol(quote__auto);
+  add_symbol(quote__85c_91keywords_85);
   add_symbol(quote_macro);
   add_symbol(quote_not_91defined);
   add_symbol(quote_record_91marker);
+  add_symbol(quote_gensym_91count);
   add_symbol(quote_lambda_91formals_91type_117);
   add_symbol(quote_in);
   add_symbol(quote__list);
