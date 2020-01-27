@@ -478,8 +478,8 @@ void c_schemeload_inlinable_lambdas(void *data, int argc, closure _, object cont
 void c_schemeload_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global2("__glo_lib_91init_117schemeload_scheme_load", (object *) &__glo_lib_91init_117schemeload_scheme_load);
-  add_global2("__glo_load_scheme_load", (object *) &__glo_load_scheme_load);
+  add_global("__glo_lib_91init_117schemeload_scheme_load", (object *) &__glo_lib_91init_117schemeload_scheme_load);
+  add_global("__glo_load_scheme_load", (object *) &__glo_load_scheme_load);
   mclosure0(c_7344, (function_type)__lambda_5);c_7344.num_args = 0; 
   __glo_lib_91init_117schemeload_scheme_load = &c_7344; 
   mclosure0(c_7326, (function_type)__lambda_1);c_7326.num_args = 1; 

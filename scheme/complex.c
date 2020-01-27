@@ -659,16 +659,16 @@ void c_schemecomplex_inlinable_lambdas(void *data, int argc, closure _, object c
 void c_schemecomplex_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global2("__glo_lib_91init_117schemecomplex_scheme_complex", (object *) &__glo_lib_91init_117schemecomplex_scheme_complex);
-  add_global2("__glo__75make_91rect_scheme_complex", (object *) &__glo__75make_91rect_scheme_complex);
-  add_global2("__glo__75imag_91part_scheme_complex", (object *) &__glo__75imag_91part_scheme_complex);
-  add_global2("__glo__75real_91part_scheme_complex", (object *) &__glo__75real_91part_scheme_complex);
-  add_global2("__glo_make_91rectangular_scheme_complex", (object *) &__glo_make_91rectangular_scheme_complex);
-  add_global2("__glo_make_91polar_scheme_complex", (object *) &__glo_make_91polar_scheme_complex);
-  add_global2("__glo_angle_scheme_complex", (object *) &__glo_angle_scheme_complex);
-  add_global2("__glo_magnitude_scheme_complex", (object *) &__glo_magnitude_scheme_complex);
-  add_global2("__glo_imag_91part_scheme_complex", (object *) &__glo_imag_91part_scheme_complex);
-  add_global2("__glo_real_91part_scheme_complex", (object *) &__glo_real_91part_scheme_complex);
+  add_global("__glo_lib_91init_117schemecomplex_scheme_complex", (object *) &__glo_lib_91init_117schemecomplex_scheme_complex);
+  add_global("__glo__75make_91rect_scheme_complex", (object *) &__glo__75make_91rect_scheme_complex);
+  add_global("__glo__75imag_91part_scheme_complex", (object *) &__glo__75imag_91part_scheme_complex);
+  add_global("__glo__75real_91part_scheme_complex", (object *) &__glo__75real_91part_scheme_complex);
+  add_global("__glo_make_91rectangular_scheme_complex", (object *) &__glo_make_91rectangular_scheme_complex);
+  add_global("__glo_make_91polar_scheme_complex", (object *) &__glo_make_91polar_scheme_complex);
+  add_global("__glo_angle_scheme_complex", (object *) &__glo_angle_scheme_complex);
+  add_global("__glo_magnitude_scheme_complex", (object *) &__glo_magnitude_scheme_complex);
+  add_global("__glo_imag_91part_scheme_complex", (object *) &__glo_imag_91part_scheme_complex);
+  add_global("__glo_real_91part_scheme_complex", (object *) &__glo_real_91part_scheme_complex);
   mclosure0(c_73156, (function_type)__lambda_17);c_73156.num_args = 0; 
   __glo_lib_91init_117schemecomplex_scheme_complex = &c_73156; 
   mclosure0(c_73155, (function_type)__lambda_20);c_73155.num_args = 2; 

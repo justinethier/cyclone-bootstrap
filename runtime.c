@@ -556,7 +556,7 @@ object register_library(const char *name)
 /* Global table */
 list global_table = NULL;
 
-void add_global(object * glo)
+void add_global(const char *identifier, object * glo)
 {
   // Tried using a vpbuffer for this and the benchmark
   // results were the same or worse.
@@ -568,11 +568,6 @@ void add_global(object * glo)
 //  pthread_mutex_lock(&symbol_table_lock);       // Only 1 "writer" allowed
 //  set_insert(&lib_table, psym);
 //  pthread_mutex_unlock(&symbol_table_lock);
-}
-
-void add_global2(object identifier, object * glo)
-{
-  global_table = malloc_make_pair(mcvar(glo), global_table);
 }
 
 void debug_dump_globals()

@@ -4161,9 +4161,9 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote__123 = find_or_add_symbol("=");
   quote__if = find_or_add_symbol("if");
 
-  add_global2("__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda", (object *) &__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda);
-  add_global2("__glo_case_91lambda_scheme_case_91lambda", (object *) &__glo_case_91lambda_scheme_case_91lambda);
-  add_global2("__glo__75case_scheme_case_91lambda", (object *) &__glo__75case_scheme_case_91lambda);
+  add_global("__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda", (object *) &__glo_lib_91init_117schemecase_19191lambda_scheme_case_91lambda);
+  add_global("__glo_case_91lambda_scheme_case_91lambda", (object *) &__glo_case_91lambda_scheme_case_91lambda);
+  add_global("__glo__75case_scheme_case_91lambda", (object *) &__glo__75case_scheme_case_91lambda);
   add_symbol(quote_clauses);
   add_symbol(quote_let);
   add_symbol(quote_error);

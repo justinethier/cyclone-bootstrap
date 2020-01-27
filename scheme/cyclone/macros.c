@@ -452,7 +452,7 @@ void c_schemecyclonemacros_inlinable_lambdas(void *data, int argc, closure _, ob
 void c_schemecyclonemacros_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global2("__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros", (object *) &__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);
+  add_global("__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros", (object *) &__glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros);
   mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 0; 
   __glo_lib_91init_117schemecyclonemacros_scheme_cyclone_macros = &c_735; 
 

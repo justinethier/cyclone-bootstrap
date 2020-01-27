@@ -1087,9 +1087,9 @@ void c_schemerepl_inlinable_lambdas(void *data, int argc, closure _, object cont
 void c_schemerepl_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global2("__glo_lib_91init_117schemerepl_scheme_repl", (object *) &__glo_lib_91init_117schemerepl_scheme_repl);
-  add_global2("__glo_repl_scheme_repl", (object *) &__glo_repl_scheme_repl);
-  add_global2("__glo_interaction_91environment_scheme_repl", (object *) &__glo_interaction_91environment_scheme_repl);
+  add_global("__glo_lib_91init_117schemerepl_scheme_repl", (object *) &__glo_lib_91init_117schemerepl_scheme_repl);
+  add_global("__glo_repl_scheme_repl", (object *) &__glo_repl_scheme_repl);
+  add_global("__glo_interaction_91environment_scheme_repl", (object *) &__glo_interaction_91environment_scheme_repl);
   mclosure0(c_73299, (function_type)__lambda_37);c_73299.num_args = 0; 
   __glo_lib_91init_117schemerepl_scheme_repl = &c_73299; 
   mclosure0(c_73113, (function_type)__lambda_2);c_73113.num_args = 0; 
