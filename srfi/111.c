@@ -641,12 +641,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_set_91box_67 = find_or_add_symbol("set-box!");
   quote_record_91marker = find_or_add_symbol("record-marker");
 
-  add_global((object *) &__glo_lib_91init_117srfi111_srfi_111);
-  add_global((object *) &__glo_box_srfi_111);
-  add_global((object *) &__glo_set_91box_67_srfi_111);
-  add_global((object *) &__glo_unbox_srfi_111);
-  add_global((object *) &__glo_box_127_srfi_111);
-  add_global((object *) &__glo_box_91type_srfi_111);
+  add_global2("__glo_lib_91init_117srfi111_srfi_111", (object *) &__glo_lib_91init_117srfi111_srfi_111);
+  add_global2("__glo_box_srfi_111", (object *) &__glo_box_srfi_111);
+  add_global2("__glo_set_91box_67_srfi_111", (object *) &__glo_set_91box_67_srfi_111);
+  add_global2("__glo_unbox_srfi_111", (object *) &__glo_unbox_srfi_111);
+  add_global2("__glo_box_127_srfi_111", (object *) &__glo_box_127_srfi_111);
+  add_global2("__glo_box_91type_srfi_111", (object *) &__glo_box_91type_srfi_111);
   add_symbol(quote_box_91type);
   add_symbol(quote_box_127);
   add_symbol(quote_unbox);

@@ -544,12 +544,12 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_lambda = find_or_add_symbol("lambda");
   quote_make_91promise = find_or_add_symbol("make-promise");
 
-  add_global((object *) &__glo_lib_91init_117schemelazy_scheme_lazy);
-  add_global((object *) &__glo_promise_127_scheme_lazy);
-  add_global((object *) &__glo_make_91promise_scheme_lazy);
-  add_global((object *) &__glo_delay_91force_scheme_lazy);
-  add_global((object *) &__glo_delay_scheme_lazy);
-  add_global((object *) &__glo_force_scheme_lazy);
+  add_global2("__glo_lib_91init_117schemelazy_scheme_lazy", (object *) &__glo_lib_91init_117schemelazy_scheme_lazy);
+  add_global2("__glo_promise_127_scheme_lazy", (object *) &__glo_promise_127_scheme_lazy);
+  add_global2("__glo_make_91promise_scheme_lazy", (object *) &__glo_make_91promise_scheme_lazy);
+  add_global2("__glo_delay_91force_scheme_lazy", (object *) &__glo_delay_91force_scheme_lazy);
+  add_global2("__glo_delay_scheme_lazy", (object *) &__glo_delay_scheme_lazy);
+  add_global2("__glo_force_scheme_lazy", (object *) &__glo_force_scheme_lazy);
   add_symbol(quote_promise_127);
   add_symbol(quote_lambda);
   add_symbol(quote_make_91promise);

@@ -855,8 +855,8 @@ void c_srfi28_inlinable_lambdas(void *data, int argc, closure _, object cont){
 void c_srfi28_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global((object *) &__glo_lib_91init_117srfi28_srfi_28);
-  add_global((object *) &__glo_format_srfi_28);
+  add_global2("__glo_lib_91init_117srfi28_srfi_28", (object *) &__glo_lib_91init_117srfi28_srfi_28);
+  add_global2("__glo_format_srfi_28", (object *) &__glo_format_srfi_28);
   mclosure0(c_73285, (function_type)__lambda_16);c_73285.num_args = 0; 
   __glo_lib_91init_117srfi28_srfi_28 = &c_73285; 
   mclosure0(c_7395, (function_type)__lambda_1);c_7395.num_args = 1; 

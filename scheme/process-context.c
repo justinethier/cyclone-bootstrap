@@ -163,11 +163,11 @@ void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) voi
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote_emergency_91exit = find_or_add_symbol("emergency-exit");
 
-  add_global((object *) &__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);
-  add_global((object *) &__glo_get_91environment_91variables_scheme_process_91context);
-  add_global((object *) &__glo_get_91environment_91variable_scheme_process_91context);
-  add_global((object *) &__glo_command_91line_scheme_process_91context);
-  add_global((object *) &__glo_emergency_91exit_scheme_process_91context);
+  add_global2("__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context", (object *) &__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context);
+  add_global2("__glo_get_91environment_91variables_scheme_process_91context", (object *) &__glo_get_91environment_91variables_scheme_process_91context);
+  add_global2("__glo_get_91environment_91variable_scheme_process_91context", (object *) &__glo_get_91environment_91variable_scheme_process_91context);
+  add_global2("__glo_command_91line_scheme_process_91context", (object *) &__glo_command_91line_scheme_process_91context);
+  add_global2("__glo_emergency_91exit_scheme_process_91context", (object *) &__glo_emergency_91exit_scheme_process_91context);
   add_symbol(quote_emergency_91exit);
   mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 

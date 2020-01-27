@@ -449,14 +449,14 @@ void c_schemecyclonehashset_inlinable_lambdas(void *data, int argc, closure _, o
 void c_schemecyclonehashset_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global((object *) &__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91member_127_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91remove_67_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91add_91all_67_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91add_67_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91num_91items_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91destroy_67_scheme_cyclone_hashset);
-  add_global((object *) &__glo_hs_91create_scheme_cyclone_hashset);
+  add_global2("__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset", (object *) &__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91member_127_scheme_cyclone_hashset", (object *) &__glo_hs_91member_127_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91remove_67_scheme_cyclone_hashset", (object *) &__glo_hs_91remove_67_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91add_91all_67_scheme_cyclone_hashset", (object *) &__glo_hs_91add_91all_67_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91add_67_scheme_cyclone_hashset", (object *) &__glo_hs_91add_67_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91num_91items_scheme_cyclone_hashset", (object *) &__glo_hs_91num_91items_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91destroy_67_scheme_cyclone_hashset", (object *) &__glo_hs_91destroy_67_scheme_cyclone_hashset);
+  add_global2("__glo_hs_91create_scheme_cyclone_hashset", (object *) &__glo_hs_91create_scheme_cyclone_hashset);
   mclosure0(c_7328, (function_type)__lambda_3);c_7328.num_args = 0; 
   __glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset = &c_7328; 
   mclosure0(c_7327, (function_type)__lambda_9);c_7327.num_args = 2; 

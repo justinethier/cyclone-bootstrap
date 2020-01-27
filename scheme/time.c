@@ -363,10 +363,10 @@ void c_schemetime_inlinable_lambdas(void *data, int argc, closure _, object cont
 void c_schemetime_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global((object *) &__glo_lib_91init_117schemetime_scheme_time);
-  add_global((object *) &__glo_jiffies_91per_91second_scheme_time);
-  add_global((object *) &__glo_current_91jiffy_scheme_time);
-  add_global((object *) &__glo_current_91second_scheme_time);
+  add_global2("__glo_lib_91init_117schemetime_scheme_time", (object *) &__glo_lib_91init_117schemetime_scheme_time);
+  add_global2("__glo_jiffies_91per_91second_scheme_time", (object *) &__glo_jiffies_91per_91second_scheme_time);
+  add_global2("__glo_current_91jiffy_scheme_time", (object *) &__glo_current_91jiffy_scheme_time);
+  add_global2("__glo_current_91second_scheme_time", (object *) &__glo_current_91second_scheme_time);
   mclosure0(c_737, (function_type)__lambda_1);c_737.num_args = 0; 
   __glo_lib_91init_117schemetime_scheme_time = &c_737; 
   mclosure0(c_736, (function_type)__lambda_4);c_736.num_args = 0; 

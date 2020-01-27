@@ -726,11 +726,11 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote__121param_91convert_125 = find_or_add_symbol("<param-convert>");
   quote__121param_91set_67_125 = find_or_add_symbol("<param-set!>");
 
-  add_global((object *) &__glo_lib_91init_117schemefile_scheme_file);
-  add_global((object *) &__glo_with_91output_91to_91file_scheme_file);
-  add_global((object *) &__glo_with_91input_91from_91file_scheme_file);
-  add_global((object *) &__glo_call_91with_91output_91file_scheme_file);
-  add_global((object *) &__glo_call_91with_91input_91file_scheme_file);
+  add_global2("__glo_lib_91init_117schemefile_scheme_file", (object *) &__glo_lib_91init_117schemefile_scheme_file);
+  add_global2("__glo_with_91output_91to_91file_scheme_file", (object *) &__glo_with_91output_91to_91file_scheme_file);
+  add_global2("__glo_with_91input_91from_91file_scheme_file", (object *) &__glo_with_91input_91from_91file_scheme_file);
+  add_global2("__glo_call_91with_91output_91file_scheme_file", (object *) &__glo_call_91with_91output_91file_scheme_file);
+  add_global2("__glo_call_91with_91input_91file_scheme_file", (object *) &__glo_call_91with_91input_91file_scheme_file);
   add_symbol(quote__121param_91convert_125);
   add_symbol(quote__121param_91set_67_125);
   mclosure0(c_73164, (function_type)__lambda_19);c_73164.num_args = 0; 

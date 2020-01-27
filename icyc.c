@@ -1404,8 +1404,8 @@ extern void c_schemecyclonepretty_91print_entry_pt(void *data, int argc, closure
 static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
-  add_global((object *) &__glo_usage);
-  add_global((object *) &__glo_collect_91opt_91values);
+  add_global2("__glo_usage", (object *) &__glo_usage);
+  add_global2("__glo_collect_91opt_91values", (object *) &__glo_collect_91opt_91values);
   mclosure0(c_73219, (function_type)__lambda_4);c_73219.num_args = 0; 
   __glo_usage = &c_73219; 
   mclosure0(c_73179, (function_type)__lambda_1);c_73179.num_args = 2; 
