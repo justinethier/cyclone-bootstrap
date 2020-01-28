@@ -430,7 +430,7 @@ static void __lambda_2(void *data, int argc, object self_73196, object r_7383) ;
 static void __lambda_38(void *data, int argc, closure _,object k_73194) {
   Cyc_st_add(data, "scheme/char.sld:lib-init:scheme_char");
 
-object c_73462 = global_set2_id(data,  k_73194,quote_char_91foldcase, __glo_char_91foldcase_scheme__char, __glo_char_91downcase_scheme__char);
+object c_73462 = global_set2_id(data,  k_73194,"__glo_char_91foldcase_scheme__char", __glo_char_91foldcase_scheme__char, __glo_char_91downcase_scheme__char);
 return_closcall1(data,  k_73194,  c_73462);; 
 }
 

@@ -934,7 +934,7 @@ c_733726.elements = (object *)e_733831;
 c_733726.elements[0] = k_731276;
 
 
-object c_733834 = global_set2_id(data,(closure)&c_733726,quote_env_117the_91empty_91environment, __glo_env_117the_91empty_91environment_scheme_cyclone_util, NULL);
+object c_733834 = global_set2_id(data,(closure)&c_733726,"__glo_env_117the_91empty_91environment_scheme_cyclone_util", __glo_env_117the_91empty_91environment_scheme_cyclone_util, NULL);
 return_closcall1(data,(closure)&c_733726,  c_733834);; 
 }
 
@@ -976,7 +976,7 @@ c_733730.elements = (object *)e_733822;
 c_733730.elements[0] = ((closureN)self_731540)->elements[0];
 
 
-object c_733825 = global_set2_id(data,(closure)&c_733730,quote__121syn_91clo_125, __glo__121syn_91clo_125_scheme_cyclone_util, r_731298);
+object c_733825 = global_set2_id(data,(closure)&c_733730,"__glo__121syn_91clo_125_scheme_cyclone_util", __glo__121syn_91clo_125_scheme_cyclone_util, r_731298);
 return_closcall1(data,(closure)&c_733730,  c_733825);; 
 }
 
@@ -1010,7 +1010,7 @@ c_733734.elements = (object *)e_733817;
 c_733734.elements[0] = ((closureN)self_731542)->elements[0];
 
 
-object c_733820 = global_set2_id(data,(closure)&c_733734,quote_sc_127, __glo_sc_127_scheme_cyclone_util, r_731297);
+object c_733820 = global_set2_id(data,(closure)&c_733734,"__glo_sc_127_scheme_cyclone_util", __glo_sc_127_scheme_cyclone_util, r_731297);
 return_closcall1(data,(closure)&c_733734,  c_733820);; 
 }
 
@@ -1062,7 +1062,7 @@ c_733740.elements = (object *)e_733810;
 c_733740.elements[0] = ((closureN)self_731545)->elements[0];
 
 
-object c_733813 = global_set2_id(data,(closure)&c_733740,quote_sc_91env, __glo_sc_91env_scheme_cyclone_util, r_731294);
+object c_733813 = global_set2_id(data,(closure)&c_733740,"__glo_sc_91env_scheme_cyclone_util", __glo_sc_91env_scheme_cyclone_util, r_731294);
 return_closcall1(data,(closure)&c_733740,  c_733813);; 
 }
 
@@ -1114,7 +1114,7 @@ c_733746.elements = (object *)e_733803;
 c_733746.elements[0] = ((closureN)self_731548)->elements[0];
 
 
-object c_733806 = global_set2_id(data,(closure)&c_733746,quote_sc_91free_91names, __glo_sc_91free_91names_scheme_cyclone_util, r_731291);
+object c_733806 = global_set2_id(data,(closure)&c_733746,"__glo_sc_91free_91names_scheme_cyclone_util", __glo_sc_91free_91names_scheme_cyclone_util, r_731291);
 return_closcall1(data,(closure)&c_733746,  c_733806);; 
 }
 
@@ -1166,7 +1166,7 @@ c_733752.elements = (object *)e_733796;
 c_733752.elements[0] = ((closureN)self_731551)->elements[0];
 
 
-object c_733799 = global_set2_id(data,(closure)&c_733752,quote_sc_91expr, __glo_sc_91expr_scheme_cyclone_util, r_731288);
+object c_733799 = global_set2_id(data,(closure)&c_733752,"__glo_sc_91expr_scheme_cyclone_util", __glo_sc_91expr_scheme_cyclone_util, r_731288);
 return_closcall1(data,(closure)&c_733752,  c_733799);; 
 }
 
@@ -1248,7 +1248,7 @@ make_pair(c_733759,quote__191Bool,&c_733760);c_733759.hdr.immutable = 1;
 
 make_pair(c_733758,quote__auto,&c_733759);c_733758.hdr.immutable = 1;
 
-object c_733757 = global_set2_id(data,  ((closureN)self_731552)->elements[0],quote__85c_91keywords_85, __glo__85c_91keywords_85_scheme_cyclone_util, &c_733758);
+object c_733757 = global_set2_id(data,  ((closureN)self_731552)->elements[0],"__glo__85c_91keywords_85_scheme_cyclone_util", __glo__85c_91keywords_85_scheme_cyclone_util, &c_733758);
 return_closcall1(data,  ((closureN)self_731552)->elements[0],  c_733757);; 
 }
 
@@ -4001,7 +4001,7 @@ c_732638.elements[0] = ((closureN)self_731422)->elements[0];
 c_732638.elements[1] = ((closureN)self_731422)->elements[1];
 
 
-object c_732681 = global_set2_id(data,(closure)&c_732638,quote_gensym_91count, __glo_gensym_91count_scheme_cyclone_util, r_731004);
+object c_732681 = global_set2_id(data,(closure)&c_732638,"__glo_gensym_91count_scheme_cyclone_util", __glo_gensym_91count_scheme_cyclone_util, r_731004);
 return_closcall1(data,(closure)&c_732638,  c_732681);; 
 }
 
@@ -4108,7 +4108,7 @@ c_732609.elements = (object *)e_732627;
 c_732609.elements[0] = ((closureN)self_731418)->elements[0];
 
 
-object c_732630 = global_set2_id(data,(closure)&c_732609,quote_gensym_91count, __glo_gensym_91count_scheme_cyclone_util, r_73995);
+object c_732630 = global_set2_id(data,(closure)&c_732609,"__glo_gensym_91count_scheme_cyclone_util", __glo_gensym_91count_scheme_cyclone_util, r_73995);
 return_closcall1(data,(closure)&c_732609,  c_732630);; 
 }
 

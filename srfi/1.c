@@ -1721,7 +1721,7 @@ c_7311579.elements = (object *)e_7311603;
 c_7311579.elements[0] = k_733699;
 
 
-object c_7311606 = global_set2_id(data,(closure)&c_7311579,quote_first, __glo_first_srfi_1, primitive_car);
+object c_7311606 = global_set2_id(data,(closure)&c_7311579,"__glo_first_srfi_1", __glo_first_srfi_1, primitive_car);
 return_closcall1(data,(closure)&c_7311579,  c_7311606);; 
 }
 
@@ -1739,7 +1739,7 @@ c_7311581.elements = (object *)e_7311599;
 c_7311581.elements[0] = ((closureN)self_734615)->elements[0];
 
 
-object c_7311602 = global_set2_id(data,(closure)&c_7311581,quote_second, __glo_second_srfi_1, primitive_cadr);
+object c_7311602 = global_set2_id(data,(closure)&c_7311581,"__glo_second_srfi_1", __glo_second_srfi_1, primitive_cadr);
 return_closcall1(data,(closure)&c_7311581,  c_7311602);; 
 }
 
@@ -1757,7 +1757,7 @@ c_7311583.elements = (object *)e_7311595;
 c_7311583.elements[0] = ((closureN)self_734616)->elements[0];
 
 
-object c_7311598 = global_set2_id(data,(closure)&c_7311583,quote_third, __glo_third_srfi_1, primitive_caddr);
+object c_7311598 = global_set2_id(data,(closure)&c_7311583,"__glo_third_srfi_1", __glo_third_srfi_1, primitive_caddr);
 return_closcall1(data,(closure)&c_7311583,  c_7311598);; 
 }
 
@@ -1775,13 +1775,13 @@ c_7311585.elements = (object *)e_7311591;
 c_7311585.elements[0] = ((closureN)self_734617)->elements[0];
 
 
-object c_7311594 = global_set2_id(data,(closure)&c_7311585,quote_fourth, __glo_fourth_srfi_1, primitive_cadddr);
+object c_7311594 = global_set2_id(data,(closure)&c_7311585,"__glo_fourth_srfi_1", __glo_fourth_srfi_1, primitive_cadddr);
 return_closcall1(data,(closure)&c_7311585,  c_7311594);; 
 }
 
 static void __lambda_935(void *data, int argc, object self_734618, object r_733704) {
   
-object c_7311590 = global_set2_id(data,  ((closureN)self_734618)->elements[0],quote_map, __glo_map_srfi_1, __glo_map_91in_91order_srfi_1);
+object c_7311590 = global_set2_id(data,  ((closureN)self_734618)->elements[0],"__glo_map_srfi_1", __glo_map_srfi_1, __glo_map_91in_91order_srfi_1);
 return_closcall1(data,  ((closureN)self_734618)->elements[0],  c_7311590);; 
 }
 

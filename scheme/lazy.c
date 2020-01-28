@@ -339,7 +339,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_7331, object obj
 static void __lambda_10(void *data, int argc, closure _,object k_7369) {
   Cyc_st_add(data, "scheme/lazy.sld:lib-init:schemelazy");
 
-object c_73179 = global_set2_id(data,  k_7369,quote_promise_127, __glo_promise_127_scheme_lazy, primitive_procedure_127);
+object c_73179 = global_set2_id(data,  k_7369,"__glo_promise_127_scheme_lazy", __glo_promise_127_scheme_lazy, primitive_procedure_127);
 return_closcall1(data,  k_7369,  c_73179);; 
 }
 

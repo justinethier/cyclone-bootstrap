@@ -556,7 +556,7 @@ static void __lambda_69(void *data, int argc, closure _,object k_73463) {
 
 pair_type local_731312; 
 
-object c_731309 = global_set2_id(data,  k_73463,quote_record_91marker, __glo_record_91marker_srfi_9, set_cell_as_expr(&local_731312, quote_record_91marker));
+object c_731309 = global_set2_id(data,  k_73463,"__glo_record_91marker_srfi_9", __glo_record_91marker_srfi_9, set_cell_as_expr(&local_731312, quote_record_91marker));
 return_closcall1(data,  k_73463,  c_731309);; 
 }
 

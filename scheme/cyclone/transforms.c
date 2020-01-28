@@ -1727,7 +1727,7 @@ c_738646.elements = (object *)e_738655;
 c_738646.elements[0] = k_732590;
 
 
-object c_738658 = global_set2_id(data,(closure)&c_738646,quote_mutable_91variables, __glo_mutable_91variables_scheme_cyclone_transforms, NULL);
+object c_738658 = global_set2_id(data,(closure)&c_738646,"__glo_mutable_91variables_scheme_cyclone_transforms", __glo_mutable_91variables_scheme_cyclone_transforms, NULL);
 return_closcall1(data,(closure)&c_738646,  c_738658);; 
 }
 
@@ -1749,7 +1749,7 @@ return_closcall2(data,  __glo_alist_91_125hash_91table_srfi_69,  &c_738648, __gl
 
 static void __lambda_646(void *data, int argc, object self_733340, object r_732595) {
   
-object c_738653 = global_set2_id(data,  ((closureN)self_733340)->elements[0],quote__85prim_91args_91table_85, __glo__85prim_91args_91table_85_scheme_cyclone_transforms, r_732595);
+object c_738653 = global_set2_id(data,  ((closureN)self_733340)->elements[0],"__glo__85prim_91args_91table_85_scheme_cyclone_transforms", __glo__85prim_91args_91table_85_scheme_cyclone_transforms, r_732595);
 return_closcall1(data,  ((closureN)self_733340)->elements[0],  c_738653);; 
 }
 
@@ -10494,14 +10494,14 @@ return_direct_with_clo1(data,(closure)&c_735434,__lambda_261,  set_pair_as_expr(
 
 static void __lambda_261(void *data, int argc, object self_732948, object r_731804) {
   
-object c_735439 = global_set2_id(data,  ((closureN)self_732948)->elements[0],quote_mutable_91variables, __glo_mutable_91variables_scheme_cyclone_transforms, r_731804);
+object c_735439 = global_set2_id(data,  ((closureN)self_732948)->elements[0],"__glo_mutable_91variables_scheme_cyclone_transforms", __glo_mutable_91variables_scheme_cyclone_transforms, r_731804);
 return_closcall1(data,  ((closureN)self_732948)->elements[0],  c_735439);; 
 }
 
 static void __lambda_259(void *data, int argc, closure _,object k_731799) {
   Cyc_st_add(data, "scheme/cyclone/transforms.sld:clear-mutables");
 
-object c_735431 = global_set2_id(data,  k_731799,quote_mutable_91variables, __glo_mutable_91variables_scheme_cyclone_transforms, NULL);
+object c_735431 = global_set2_id(data,  k_731799,"__glo_mutable_91variables_scheme_cyclone_transforms", __glo_mutable_91variables_scheme_cyclone_transforms, NULL);
 return_closcall1(data,  k_731799,  c_735431);; 
 }
 

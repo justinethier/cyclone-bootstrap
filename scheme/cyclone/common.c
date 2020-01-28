@@ -165,7 +165,7 @@ c_7335.elements = (object *)e_7369;
 c_7335.elements[0] = ((closureN)self_7323)->elements[0];
 
 
-object c_7372 = global_set2_id(data,(closure)&c_7335,quote__85version_85, __glo__85version_85_scheme_cyclone_common, r_7322);
+object c_7372 = global_set2_id(data,(closure)&c_7335,"__glo__85version_85_scheme_cyclone_common", __glo__85version_85_scheme_cyclone_common, r_7322);
 return_closcall1(data,(closure)&c_7335,  c_7372);; 
 }
 
@@ -205,7 +205,7 @@ c_7339.elements = (object *)e_7359;
 c_7339.elements[0] = ((closureN)self_7325)->elements[0];
 
 
-object c_7362 = global_set2_id(data,(closure)&c_7339,quote__85version_91banner_85, __glo__85version_91banner_85_scheme_cyclone_common, r_7321);
+object c_7362 = global_set2_id(data,(closure)&c_7339,"__glo__85version_91banner_85_scheme_cyclone_common", __glo__85version_91banner_85_scheme_cyclone_common, r_7321);
 return_closcall1(data,(closure)&c_7339,  c_7362);; 
 }
 
@@ -223,7 +223,7 @@ c_7341.elements = (object *)e_7355;
 c_7341.elements[0] = ((closureN)self_7326)->elements[0];
 
 
-object c_7358 = global_set2_id(data,(closure)&c_7341,quote__85Cyc_91version_91banner_85, __glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
+object c_7358 = global_set2_id(data,(closure)&c_7341,"__glo__85Cyc_91version_91banner_85_scheme_cyclone_common", __glo__85Cyc_91version_91banner_85_scheme_cyclone_common, __glo__85version_91banner_85_scheme_cyclone_common);
 return_closcall1(data,(closure)&c_7341,  c_7358);; 
 }
 
@@ -251,7 +251,7 @@ return_closcall1(data,(closure)&c_7343,  c_7352);;
 
 static void __lambda_7(void *data, int argc, object self_7328, object r_7320) {
   
-object c_7348 = global_set2_id(data,  ((closureN)self_7328)->elements[0],quote__85c_91file_91header_91comment_85, __glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320);
+object c_7348 = global_set2_id(data,  ((closureN)self_7328)->elements[0],"__glo__85c_91file_91header_91comment_85_scheme_cyclone_common", __glo__85c_91file_91header_91comment_85_scheme_cyclone_common, r_7320);
 return_closcall1(data,  ((closureN)self_7328)->elements[0],  c_7348);; 
 }
 
