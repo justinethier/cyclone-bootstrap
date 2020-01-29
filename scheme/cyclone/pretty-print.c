@@ -905,7 +905,7 @@ c_733230.elements = (object *)e_733242;
 c_733230.elements[0] = ((closureN)self_731107)->elements[0];
 
 
-object c_733245 = global_set2_id(data,(closure)&c_733230,"__glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print", __glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print, r_73886);
+object c_733245 = global_set_cps_id(data,(closure)&c_733230,"__glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print", __glo_genwrite_117newline_91str_scheme_cyclone_pretty_91print, r_73886);
 return_closcall1(data,(closure)&c_733230,  c_733245);; 
 }
 
@@ -923,13 +923,13 @@ c_733232.elements = (object *)e_733238;
 c_733232.elements[0] = ((closureN)self_731108)->elements[0];
 
 
-object c_733241 = global_set2_id(data,(closure)&c_733232,"__glo_spp_scheme_cyclone_pretty_91print", __glo_spp_scheme_cyclone_pretty_91print, __glo_sexp_91pretty_91print_scheme_cyclone_pretty_91print);
+object c_733241 = global_set_cps_id(data,(closure)&c_733232,"__glo_spp_scheme_cyclone_pretty_91print", __glo_spp_scheme_cyclone_pretty_91print, __glo_sexp_91pretty_91print_scheme_cyclone_pretty_91print);
 return_closcall1(data,(closure)&c_733232,  c_733241);; 
 }
 
 static void __lambda_187(void *data, int argc, object self_731109, object r_73885) {
   
-object c_733237 = global_set2_id(data,  ((closureN)self_731109)->elements[0],"__glo_pretty_91print_scheme_cyclone_pretty_91print", __glo_pretty_91print_scheme_cyclone_pretty_91print, __glo_spp_scheme_cyclone_pretty_91print);
+object c_733237 = global_set_cps_id(data,  ((closureN)self_731109)->elements[0],"__glo_pretty_91print_scheme_cyclone_pretty_91print", __glo_pretty_91print_scheme_cyclone_pretty_91print, __glo_spp_scheme_cyclone_pretty_91print);
 return_closcall1(data,  ((closureN)self_731109)->elements[0],  c_733237);; 
 }
 

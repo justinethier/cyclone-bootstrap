@@ -343,13 +343,13 @@ c_7367.elements = (object *)e_7373;
 c_7367.elements[0] = k_7327;
 
 
-object c_7376 = global_set2_id(data,(closure)&c_7367,"__glo_write_91shared_scheme_write", __glo_write_91shared_scheme_write, __glo_write_scheme_write);
+object c_7376 = global_set_cps_id(data,(closure)&c_7367,"__glo_write_91shared_scheme_write", __glo_write_91shared_scheme_write, __glo_write_scheme_write);
 return_closcall1(data,(closure)&c_7367,  c_7376);; 
 }
 
 static void __lambda_6(void *data, int argc, object self_7332, object r_7329) {
   
-object c_7372 = global_set2_id(data,  ((closureN)self_7332)->elements[0],"__glo_write_91simple_scheme_write", __glo_write_91simple_scheme_write, __glo_write_scheme_write);
+object c_7372 = global_set_cps_id(data,  ((closureN)self_7332)->elements[0],"__glo_write_91simple_scheme_write", __glo_write_91simple_scheme_write, __glo_write_scheme_write);
 return_closcall1(data,  ((closureN)self_7332)->elements[0],  c_7372);; 
 }
 

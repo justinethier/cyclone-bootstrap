@@ -612,7 +612,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_73492) ;
 static void __lambda_101(void *data, int argc, closure _,object k_73661) {
   Cyc_st_add(data, "srfi/143.sld:lib-init:srfi143");
 
-object c_731349 = global_set2_id(data,  k_73661,"__glo_fxsqrt_srfi_143", __glo_fxsqrt_srfi_143, __glo_exact_91integer_91sqrt_scheme_base);
+object c_731349 = global_set_cps_id(data,  k_73661,"__glo_fxsqrt_srfi_143", __glo_fxsqrt_srfi_143, __glo_exact_91integer_91sqrt_scheme_base);
 return_closcall1(data,  k_73661,  c_731349);; 
 }
 

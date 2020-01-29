@@ -569,7 +569,7 @@ return_closcall7(data,  __glo_vector_scheme_base,  &c_73328, quote_cyc_91thread_
 
 static void __lambda_28(void *data, int argc, object self_73140, object r_73123) {
   
-object c_73333 = global_set2_id(data,  ((closureN)self_73140)->elements[0],"__glo__85primordial_91thread_85_srfi_18", __glo__85primordial_91thread_85_srfi_18, r_73123);
+object c_73333 = global_set_cps_id(data,  ((closureN)self_73140)->elements[0],"__glo__85primordial_91thread_85_srfi_18", __glo__85primordial_91thread_85_srfi_18, r_73123);
 return_closcall1(data,  ((closureN)self_73140)->elements[0],  c_73333);; 
 }
 

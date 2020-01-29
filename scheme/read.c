@@ -506,7 +506,7 @@ c_73946.elements[0] = k_73323;
 
 make_utf8_string_with_len(c_73970, ".", 1, 1);
 
-object c_73967 = global_set2_id(data,(closure)&c_73946,"__glo__85sym_91dot_85_scheme_read", __glo__85sym_91dot_85_scheme_read, Cyc_string2symbol(data, &c_73970));
+object c_73967 = global_set_cps_id(data,(closure)&c_73946,"__glo__85sym_91dot_85_scheme_read", __glo__85sym_91dot_85_scheme_read, Cyc_string2symbol(data, &c_73970));
 return_closcall1(data,(closure)&c_73946,  c_73967);; 
 }
 
@@ -528,7 +528,7 @@ c_73948.elements[0] = ((closureN)self_73382)->elements[0];
 
 make_utf8_string_with_len(c_73963, ",@", 2, 2);
 
-object c_73960 = global_set2_id(data,(closure)&c_73948,"__glo__85sym_91unquote_91splicing_85_scheme_read", __glo__85sym_91unquote_91splicing_85_scheme_read, Cyc_string2symbol(data, &c_73963));
+object c_73960 = global_set_cps_id(data,(closure)&c_73948,"__glo__85sym_91unquote_91splicing_85_scheme_read", __glo__85sym_91unquote_91splicing_85_scheme_read, Cyc_string2symbol(data, &c_73963));
 return_closcall1(data,(closure)&c_73948,  c_73960);; 
 }
 
@@ -538,7 +538,7 @@ static void __lambda_57(void *data, int argc, object self_73383, object r_73326)
 
 make_utf8_string_with_len(c_73956, "#;", 2, 2);
 
-object c_73953 = global_set2_id(data,  ((closureN)self_73383)->elements[0],"__glo__85sym_91datum_91comment_85_scheme_read", __glo__85sym_91datum_91comment_85_scheme_read, Cyc_string2symbol(data, &c_73956));
+object c_73953 = global_set_cps_id(data,  ((closureN)self_73383)->elements[0],"__glo__85sym_91datum_91comment_85_scheme_read", __glo__85sym_91datum_91comment_85_scheme_read, Cyc_string2symbol(data, &c_73956));
 return_closcall1(data,  ((closureN)self_73383)->elements[0],  c_73953);; 
 }
 

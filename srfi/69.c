@@ -878,7 +878,7 @@ c_732522.elements = (object *)e_732691;
 c_732522.elements[0] = k_73899;
 
 
-object c_732694 = global_set2_id(data,(closure)&c_732522,"__glo__75make_91hash_91node_srfi_69", __glo__75make_91hash_91node_srfi_69, primitive_cons);
+object c_732694 = global_set_cps_id(data,(closure)&c_732522,"__glo__75make_91hash_91node_srfi_69", __glo__75make_91hash_91node_srfi_69, primitive_cons);
 return_closcall1(data,(closure)&c_732522,  c_732694);; 
 }
 
@@ -896,7 +896,7 @@ c_732524.elements = (object *)e_732687;
 c_732524.elements[0] = ((closureN)self_731140)->elements[0];
 
 
-object c_732690 = global_set2_id(data,(closure)&c_732524,"__glo__75hash_91node_91set_91value_67_srfi_69", __glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67);
+object c_732690 = global_set_cps_id(data,(closure)&c_732524,"__glo__75hash_91node_91set_91value_67_srfi_69", __glo__75hash_91node_91set_91value_67_srfi_69, primitive_set_91cdr_67);
 return_closcall1(data,(closure)&c_732524,  c_732690);; 
 }
 
@@ -914,7 +914,7 @@ c_732526.elements = (object *)e_732683;
 c_732526.elements[0] = ((closureN)self_731141)->elements[0];
 
 
-object c_732686 = global_set2_id(data,(closure)&c_732526,"__glo__75hash_91node_91key_srfi_69", __glo__75hash_91node_91key_srfi_69, primitive_car);
+object c_732686 = global_set_cps_id(data,(closure)&c_732526,"__glo__75hash_91node_91key_srfi_69", __glo__75hash_91node_91key_srfi_69, primitive_car);
 return_closcall1(data,(closure)&c_732526,  c_732686);; 
 }
 
@@ -932,7 +932,7 @@ c_732528.elements = (object *)e_732679;
 c_732528.elements[0] = ((closureN)self_731142)->elements[0];
 
 
-object c_732682 = global_set2_id(data,(closure)&c_732528,"__glo__75hash_91node_91value_srfi_69", __glo__75hash_91node_91value_srfi_69, primitive_cdr);
+object c_732682 = global_set_cps_id(data,(closure)&c_732528,"__glo__75hash_91node_91value_srfi_69", __glo__75hash_91node_91value_srfi_69, primitive_cdr);
 return_closcall1(data,(closure)&c_732528,  c_732682);; 
 }
 
@@ -978,7 +978,7 @@ c_732532.elements = (object *)e_732668;
 c_732532.elements[0] = ((closureN)self_731144)->elements[0];
 
 
-object c_732671 = global_set2_id(data,(closure)&c_732532,"__glo__121srfi_91hash_91table_125_srfi_69", __glo__121srfi_91hash_91table_125_srfi_69, r_73946);
+object c_732671 = global_set_cps_id(data,(closure)&c_732532,"__glo__121srfi_91hash_91table_125_srfi_69", __glo__121srfi_91hash_91table_125_srfi_69, r_73946);
 return_closcall1(data,(closure)&c_732532,  c_732671);; 
 }
 
@@ -1012,7 +1012,7 @@ c_732536.elements = (object *)e_732663;
 c_732536.elements[0] = ((closureN)self_731146)->elements[0];
 
 
-object c_732666 = global_set2_id(data,(closure)&c_732536,"__glo_hash_91table_127_srfi_69", __glo_hash_91table_127_srfi_69, r_73945);
+object c_732666 = global_set_cps_id(data,(closure)&c_732536,"__glo_hash_91table_127_srfi_69", __glo_hash_91table_127_srfi_69, r_73945);
 return_closcall1(data,(closure)&c_732536,  c_732666);; 
 }
 
@@ -1064,7 +1064,7 @@ c_732542.elements = (object *)e_732656;
 c_732542.elements[0] = ((closureN)self_731149)->elements[0];
 
 
-object c_732659 = global_set2_id(data,(closure)&c_732542,"__glo_hash_91table_91size_srfi_69", __glo_hash_91table_91size_srfi_69, r_73942);
+object c_732659 = global_set_cps_id(data,(closure)&c_732542,"__glo_hash_91table_91size_srfi_69", __glo_hash_91table_91size_srfi_69, r_73942);
 return_closcall1(data,(closure)&c_732542,  c_732659);; 
 }
 
@@ -1116,7 +1116,7 @@ c_732548.elements = (object *)e_732649;
 c_732548.elements[0] = ((closureN)self_731152)->elements[0];
 
 
-object c_732652 = global_set2_id(data,(closure)&c_732548,"__glo_hash_91table_91hash_91function_srfi_69", __glo_hash_91table_91hash_91function_srfi_69, r_73939);
+object c_732652 = global_set_cps_id(data,(closure)&c_732548,"__glo_hash_91table_91hash_91function_srfi_69", __glo_hash_91table_91hash_91function_srfi_69, r_73939);
 return_closcall1(data,(closure)&c_732548,  c_732652);; 
 }
 
@@ -1168,7 +1168,7 @@ c_732554.elements = (object *)e_732642;
 c_732554.elements[0] = ((closureN)self_731155)->elements[0];
 
 
-object c_732645 = global_set2_id(data,(closure)&c_732554,"__glo_hash_91table_91equivalence_91function_srfi_69", __glo_hash_91table_91equivalence_91function_srfi_69, r_73936);
+object c_732645 = global_set_cps_id(data,(closure)&c_732554,"__glo_hash_91table_91equivalence_91function_srfi_69", __glo_hash_91table_91equivalence_91function_srfi_69, r_73936);
 return_closcall1(data,(closure)&c_732554,  c_732645);; 
 }
 
@@ -1220,7 +1220,7 @@ c_732560.elements = (object *)e_732635;
 c_732560.elements[0] = ((closureN)self_731158)->elements[0];
 
 
-object c_732638 = global_set2_id(data,(closure)&c_732560,"__glo_hash_91table_91association_91function_srfi_69", __glo_hash_91table_91association_91function_srfi_69, r_73933);
+object c_732638 = global_set_cps_id(data,(closure)&c_732560,"__glo_hash_91table_91association_91function_srfi_69", __glo_hash_91table_91association_91function_srfi_69, r_73933);
 return_closcall1(data,(closure)&c_732560,  c_732638);; 
 }
 
@@ -1272,7 +1272,7 @@ c_732566.elements = (object *)e_732628;
 c_732566.elements[0] = ((closureN)self_731161)->elements[0];
 
 
-object c_732631 = global_set2_id(data,(closure)&c_732566,"__glo_hash_91table_91entries_srfi_69", __glo_hash_91table_91entries_srfi_69, r_73930);
+object c_732631 = global_set_cps_id(data,(closure)&c_732566,"__glo_hash_91table_91entries_srfi_69", __glo_hash_91table_91entries_srfi_69, r_73930);
 return_closcall1(data,(closure)&c_732566,  c_732631);; 
 }
 
@@ -1324,7 +1324,7 @@ c_732572.elements = (object *)e_732621;
 c_732572.elements[0] = ((closureN)self_731164)->elements[0];
 
 
-object c_732624 = global_set2_id(data,(closure)&c_732572,"__glo_hash_91table_91set_91size_67_srfi_69", __glo_hash_91table_91set_91size_67_srfi_69, r_73927);
+object c_732624 = global_set_cps_id(data,(closure)&c_732572,"__glo_hash_91table_91set_91size_67_srfi_69", __glo_hash_91table_91set_91size_67_srfi_69, r_73927);
 return_closcall1(data,(closure)&c_732572,  c_732624);; 
 }
 
@@ -1376,7 +1376,7 @@ c_732578.elements = (object *)e_732614;
 c_732578.elements[0] = ((closureN)self_731167)->elements[0];
 
 
-object c_732617 = global_set2_id(data,(closure)&c_732578,"__glo_hash_91table_91set_91entries_67_srfi_69", __glo_hash_91table_91set_91entries_67_srfi_69, r_73924);
+object c_732617 = global_set_cps_id(data,(closure)&c_732578,"__glo_hash_91table_91set_91entries_67_srfi_69", __glo_hash_91table_91set_91entries_67_srfi_69, r_73924);
 return_closcall1(data,(closure)&c_732578,  c_732617);; 
 }
 
@@ -1410,7 +1410,7 @@ c_732582.elements = (object *)e_732609;
 c_732582.elements[0] = ((closureN)self_731169)->elements[0];
 
 
-object c_732612 = global_set2_id(data,(closure)&c_732582,"__glo_make_91symbol_91hash_91table_srfi_69", __glo_make_91symbol_91hash_91table_srfi_69, r_73923);
+object c_732612 = global_set_cps_id(data,(closure)&c_732582,"__glo_make_91symbol_91hash_91table_srfi_69", __glo_make_91symbol_91hash_91table_srfi_69, r_73923);
 return_closcall1(data,(closure)&c_732582,  c_732612);; 
 }
 
@@ -1444,7 +1444,7 @@ c_732586.elements = (object *)e_732604;
 c_732586.elements[0] = ((closureN)self_731171)->elements[0];
 
 
-object c_732607 = global_set2_id(data,(closure)&c_732586,"__glo_make_91string_91hash_91table_srfi_69", __glo_make_91string_91hash_91table_srfi_69, r_73922);
+object c_732607 = global_set_cps_id(data,(closure)&c_732586,"__glo_make_91string_91hash_91table_srfi_69", __glo_make_91string_91hash_91table_srfi_69, r_73922);
 return_closcall1(data,(closure)&c_732586,  c_732607);; 
 }
 
@@ -1478,7 +1478,7 @@ c_732590.elements = (object *)e_732599;
 c_732590.elements[0] = ((closureN)self_731173)->elements[0];
 
 
-object c_732602 = global_set2_id(data,(closure)&c_732590,"__glo_make_91string_91ci_91hash_91table_srfi_69", __glo_make_91string_91ci_91hash_91table_srfi_69, r_73921);
+object c_732602 = global_set_cps_id(data,(closure)&c_732590,"__glo_make_91string_91ci_91hash_91table_srfi_69", __glo_make_91string_91ci_91hash_91table_srfi_69, r_73921);
 return_closcall1(data,(closure)&c_732590,  c_732602);; 
 }
 
@@ -1500,7 +1500,7 @@ return_closcall3(data,  __glo_make_91hash_91table_91maker_srfi_69,  &c_732592, p
 
 static void __lambda_235(void *data, int argc, object self_731175, object r_73920) {
   
-object c_732597 = global_set2_id(data,  ((closureN)self_731175)->elements[0],"__glo_make_91integer_91hash_91table_srfi_69", __glo_make_91integer_91hash_91table_srfi_69, r_73920);
+object c_732597 = global_set_cps_id(data,  ((closureN)self_731175)->elements[0],"__glo_make_91integer_91hash_91table_srfi_69", __glo_make_91integer_91hash_91table_srfi_69, r_73920);
 return_closcall1(data,  ((closureN)self_731175)->elements[0],  c_732597);; 
 }
 

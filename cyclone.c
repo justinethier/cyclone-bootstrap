@@ -1677,7 +1677,7 @@ static void __lambda_9(void *data, int argc, object self_731311, object r_73556)
 static void __lambda_10(void *data, int argc, object self_731312, object r_73557) ;
 
 static void __lambda_451(void *data, int argc, object self_731767, object r_731303) {
-  mclosure0(c_735202,__lambda_452); object c_735203 = global_set2_id(data,&c_735202,"__glo__85start_85", __glo__85start_85, r_731303);
+  mclosure0(c_735202,__lambda_452); object c_735203 = global_set_cps_id(data,&c_735202,"__glo__85start_85", __glo__85start_85, r_731303);
 return_direct1(data,__lambda_452,c_735203);; 
 }
 
@@ -2748,7 +2748,7 @@ return_direct_with_clo1(data,(closure)&c_735011,__lambda_497,  memberp(data, &c_
 static void __lambda_497(void *data, int argc, object self_731808, object r_731274) {
   if( (boolean_f != r_731274) ){ 
   
-object c_735016 = global_set2_id(data,  ((closureN)self_731808)->elements[0],"__glo__85trace_91level_85_scheme_cyclone_transforms", __glo__85trace_91level_85_scheme_cyclone_transforms, obj_int2obj(4));
+object c_735016 = global_set_cps_id(data,  ((closureN)self_731808)->elements[0],"__glo__85trace_91level_85_scheme_cyclone_transforms", __glo__85trace_91level_85_scheme_cyclone_transforms, obj_int2obj(4));
 return_closcall1(data,  ((closureN)self_731808)->elements[0],  c_735016);
 } else { 
   return_closcall1(data,  ((closureN)self_731808)->elements[0],  boolean_f);}
@@ -2778,7 +2778,7 @@ return_direct_with_clo1(data,(closure)&c_734993,__lambda_494,  memberp(data, &c_
 static void __lambda_494(void *data, int argc, object self_731810, object r_731276) {
   if( (boolean_f != r_731276) ){ 
   
-object c_734998 = global_set2_id(data,  ((closureN)self_731810)->elements[0],"__glo__85cgen_117track_91call_91history_85", __glo__85cgen_117track_91call_91history_85, boolean_f);
+object c_734998 = global_set_cps_id(data,  ((closureN)self_731810)->elements[0],"__glo__85cgen_117track_91call_91history_85", __glo__85cgen_117track_91call_91history_85, boolean_f);
 return_closcall1(data,  ((closureN)self_731810)->elements[0],  c_734998);
 } else { 
   return_closcall1(data,  ((closureN)self_731810)->elements[0],  boolean_f);}
@@ -2808,7 +2808,7 @@ return_direct_with_clo1(data,(closure)&c_734975,__lambda_491,  memberp(data, &c_
 static void __lambda_491(void *data, int argc, object self_731812, object r_731278) {
   if( (boolean_f != r_731278) ){ 
   
-object c_734980 = global_set2_id(data,  ((closureN)self_731812)->elements[0],"__glo__85cgen_117use_91unsafe_91prims_85", __glo__85cgen_117use_91unsafe_91prims_85, boolean_t);
+object c_734980 = global_set_cps_id(data,  ((closureN)self_731812)->elements[0],"__glo__85cgen_117use_91unsafe_91prims_85", __glo__85cgen_117use_91unsafe_91prims_85, boolean_t);
 return_closcall1(data,  ((closureN)self_731812)->elements[0],  c_734980);
 } else { 
   return_closcall1(data,  ((closureN)self_731812)->elements[0],  boolean_f);}
@@ -2838,7 +2838,7 @@ return_direct_with_clo1(data,(closure)&c_734957,__lambda_488,  memberp(data, &c_
 static void __lambda_488(void *data, int argc, object self_731814, object r_731280) {
   if( (boolean_f != r_731280) ){ 
   
-object c_734962 = global_set2_id(data,  ((closureN)self_731814)->elements[0],"__glo__85optimize_117memoize_91pure_91functions_85", __glo__85optimize_117memoize_91pure_91functions_85, boolean_f);
+object c_734962 = global_set_cps_id(data,  ((closureN)self_731814)->elements[0],"__glo__85optimize_117memoize_91pure_91functions_85", __glo__85optimize_117memoize_91pure_91functions_85, boolean_f);
 return_closcall1(data,  ((closureN)self_731814)->elements[0],  c_734962);
 } else { 
   return_closcall1(data,  ((closureN)self_731814)->elements[0],  boolean_f);}
@@ -2868,7 +2868,7 @@ return_direct_with_clo1(data,(closure)&c_734939,__lambda_485,  memberp(data, &c_
 static void __lambda_485(void *data, int argc, object self_731816, object r_731282) {
   if( (boolean_f != r_731282) ){ 
   
-object c_734944 = global_set2_id(data,  ((closureN)self_731816)->elements[0],"__glo__85optimize_117memoize_91pure_91functions_85", __glo__85optimize_117memoize_91pure_91functions_85, boolean_t);
+object c_734944 = global_set_cps_id(data,  ((closureN)self_731816)->elements[0],"__glo__85optimize_117memoize_91pure_91functions_85", __glo__85optimize_117memoize_91pure_91functions_85, boolean_t);
 return_closcall1(data,  ((closureN)self_731816)->elements[0],  c_734944);
 } else { 
   return_closcall1(data,  ((closureN)self_731816)->elements[0],  boolean_f);}
@@ -2898,7 +2898,7 @@ return_direct_with_clo1(data,(closure)&c_734921,__lambda_482,  memberp(data, &c_
 static void __lambda_482(void *data, int argc, object self_731818, object r_731284) {
   if( (boolean_f != r_731284) ){ 
   
-object c_734926 = global_set2_id(data,  ((closureN)self_731818)->elements[0],"__glo__85optimize_117inline_91unsafe_85", __glo__85optimize_117inline_91unsafe_85, boolean_t);
+object c_734926 = global_set_cps_id(data,  ((closureN)self_731818)->elements[0],"__glo__85optimize_117inline_91unsafe_85", __glo__85optimize_117inline_91unsafe_85, boolean_t);
 return_closcall1(data,  ((closureN)self_731818)->elements[0],  c_734926);
 } else { 
   return_closcall1(data,  ((closureN)self_731818)->elements[0],  boolean_f);}
@@ -2932,7 +2932,7 @@ return_closcall1(data,(closure)&c_734902,  c_734911);
 
 static void __lambda_479(void *data, int argc, object self_731820, object r_731287) {
   
-object c_734907 = global_set2_id(data,  ((closureN)self_731820)->elements[0],"__glo__85optimize_117beta_91expand_91threshold_85", __glo__85optimize_117beta_91expand_91threshold_85, r_731287);
+object c_734907 = global_set_cps_id(data,  ((closureN)self_731820)->elements[0],"__glo__85optimize_117beta_91expand_91threshold_85", __glo__85optimize_117beta_91expand_91threshold_85, r_731287);
 return_closcall1(data,  ((closureN)self_731820)->elements[0],  c_734907);; 
 }
 
@@ -2959,7 +2959,7 @@ return_direct_with_clo1(data,(closure)&c_734881,__lambda_476,  memberp(data, &c_
 static void __lambda_476(void *data, int argc, object self_731822, object r_731290) {
   if( (boolean_f != r_731290) ){ 
   
-object c_734886 = global_set2_id(data,  ((closureN)self_731822)->elements[0],"__glo__85optimization_91level_85", __glo__85optimization_91level_85, obj_int2obj(0));
+object c_734886 = global_set_cps_id(data,  ((closureN)self_731822)->elements[0],"__glo__85optimization_91level_85", __glo__85optimization_91level_85, obj_int2obj(0));
 return_closcall1(data,  ((closureN)self_731822)->elements[0],  c_734886);
 } else { 
   return_closcall1(data,  ((closureN)self_731822)->elements[0],  boolean_f);}
@@ -2989,7 +2989,7 @@ return_direct_with_clo1(data,(closure)&c_734863,__lambda_473,  memberp(data, &c_
 static void __lambda_473(void *data, int argc, object self_731824, object r_731292) {
   if( (boolean_f != r_731292) ){ 
   
-object c_734868 = global_set2_id(data,  ((closureN)self_731824)->elements[0],"__glo__85fe_117batch_91compile_85", __glo__85fe_117batch_91compile_85, boolean_f);
+object c_734868 = global_set_cps_id(data,  ((closureN)self_731824)->elements[0],"__glo__85fe_117batch_91compile_85", __glo__85fe_117batch_91compile_85, boolean_f);
 return_closcall1(data,  ((closureN)self_731824)->elements[0],  c_734868);
 } else { 
   return_closcall1(data,  ((closureN)self_731824)->elements[0],  boolean_f);}
@@ -3019,7 +3019,7 @@ return_direct_with_clo1(data,(closure)&c_734845,__lambda_470,  memberp(data, &c_
 static void __lambda_470(void *data, int argc, object self_731826, object r_731294) {
   if( (boolean_f != r_731294) ){ 
   
-object c_734850 = global_set2_id(data,  ((closureN)self_731826)->elements[0],"__glo__85fe_117batch_91compile_85", __glo__85fe_117batch_91compile_85, boolean_t);
+object c_734850 = global_set_cps_id(data,  ((closureN)self_731826)->elements[0],"__glo__85fe_117batch_91compile_85", __glo__85fe_117batch_91compile_85, boolean_t);
 return_closcall1(data,  ((closureN)self_731826)->elements[0],  c_734850);
 } else { 
   return_closcall1(data,  ((closureN)self_731826)->elements[0],  boolean_f);}
@@ -6973,7 +6973,7 @@ c_732437.elements[22] = ((closureN)self_731376)->elements[22];
 c_732437.elements[23] = ((closureN)self_731376)->elements[23];
 
 
-object c_734042 = global_set2_id(data,(closure)&c_732437,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73989);
+object c_734042 = global_set_cps_id(data,(closure)&c_732437,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73989);
 return_closcall1(data,(closure)&c_732437,  c_734042);; 
 }
 
@@ -7182,7 +7182,7 @@ c_732447.elements[21] = ((closureN)self_731381)->elements[21];
 c_732447.elements[22] = ((closureN)self_731381)->elements[22];
 
 
-object c_734022 = global_set2_id(data,(closure)&c_732447,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73980);
+object c_734022 = global_set_cps_id(data,(closure)&c_732447,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73980);
 return_closcall1(data,(closure)&c_732447,  c_734022);; 
 }
 
@@ -13534,7 +13534,7 @@ c_732586.elements[6] = ((closureN)self_731617)->elements[6];
 c_732586.elements[7] = ((closureN)self_731617)->elements[7];
 
 
-object c_732657 = global_set2_id(data,(closure)&c_732586,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73947);
+object c_732657 = global_set_cps_id(data,(closure)&c_732586,"__glo__85defined_91macros_85_scheme_eval", __glo__85defined_91macros_85_scheme_eval, r_73947);
 return_closcall1(data,(closure)&c_732586,  c_732657);; 
 }
 

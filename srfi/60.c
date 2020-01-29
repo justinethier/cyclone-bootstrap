@@ -614,7 +614,7 @@ c_731353.elements = (object *)e_731407;
 c_731353.elements[0] = k_73471;
 
 
-object c_731410 = global_set2_id(data,(closure)&c_731353,"__glo_bitwise_91and_srfi_60", __glo_bitwise_91and_srfi_60, __glo_logand_srfi_60);
+object c_731410 = global_set_cps_id(data,(closure)&c_731353,"__glo_bitwise_91and_srfi_60", __glo_bitwise_91and_srfi_60, __glo_logand_srfi_60);
 return_closcall1(data,(closure)&c_731353,  c_731410);; 
 }
 
@@ -632,7 +632,7 @@ c_731355.elements = (object *)e_731403;
 c_731355.elements[0] = ((closureN)self_73586)->elements[0];
 
 
-object c_731406 = global_set2_id(data,(closure)&c_731355,"__glo_bitwise_91ior_srfi_60", __glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60);
+object c_731406 = global_set_cps_id(data,(closure)&c_731355,"__glo_bitwise_91ior_srfi_60", __glo_bitwise_91ior_srfi_60, __glo_logior_srfi_60);
 return_closcall1(data,(closure)&c_731355,  c_731406);; 
 }
 
@@ -650,7 +650,7 @@ c_731357.elements = (object *)e_731399;
 c_731357.elements[0] = ((closureN)self_73587)->elements[0];
 
 
-object c_731402 = global_set2_id(data,(closure)&c_731357,"__glo_bitwise_91xor_srfi_60", __glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60);
+object c_731402 = global_set_cps_id(data,(closure)&c_731357,"__glo_bitwise_91xor_srfi_60", __glo_bitwise_91xor_srfi_60, __glo_logxor_srfi_60);
 return_closcall1(data,(closure)&c_731357,  c_731402);; 
 }
 
@@ -668,7 +668,7 @@ c_731359.elements = (object *)e_731395;
 c_731359.elements[0] = ((closureN)self_73588)->elements[0];
 
 
-object c_731398 = global_set2_id(data,(closure)&c_731359,"__glo_bitwise_91not_srfi_60", __glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60);
+object c_731398 = global_set_cps_id(data,(closure)&c_731359,"__glo_bitwise_91not_srfi_60", __glo_bitwise_91not_srfi_60, __glo_lognot_srfi_60);
 return_closcall1(data,(closure)&c_731359,  c_731398);; 
 }
 
@@ -686,7 +686,7 @@ c_731361.elements = (object *)e_731391;
 c_731361.elements[0] = ((closureN)self_73589)->elements[0];
 
 
-object c_731394 = global_set2_id(data,(closure)&c_731361,"__glo_bitwise_91merge_srfi_60", __glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60);
+object c_731394 = global_set_cps_id(data,(closure)&c_731361,"__glo_bitwise_91merge_srfi_60", __glo_bitwise_91merge_srfi_60, __glo_bitwise_91if_srfi_60);
 return_closcall1(data,(closure)&c_731361,  c_731394);; 
 }
 
@@ -704,7 +704,7 @@ c_731363.elements = (object *)e_731387;
 c_731363.elements[0] = ((closureN)self_73590)->elements[0];
 
 
-object c_731390 = global_set2_id(data,(closure)&c_731363,"__glo_any_91bits_91set_127_srfi_60", __glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60);
+object c_731390 = global_set_cps_id(data,(closure)&c_731363,"__glo_any_91bits_91set_127_srfi_60", __glo_any_91bits_91set_127_srfi_60, __glo_logtest_srfi_60);
 return_closcall1(data,(closure)&c_731363,  c_731390);; 
 }
 
@@ -722,7 +722,7 @@ c_731365.elements = (object *)e_731383;
 c_731365.elements[0] = ((closureN)self_73591)->elements[0];
 
 
-object c_731386 = global_set2_id(data,(closure)&c_731365,"__glo_bit_91count_srfi_60", __glo_bit_91count_srfi_60, __glo_logcount_srfi_60);
+object c_731386 = global_set_cps_id(data,(closure)&c_731365,"__glo_bit_91count_srfi_60", __glo_bit_91count_srfi_60, __glo_logcount_srfi_60);
 return_closcall1(data,(closure)&c_731365,  c_731386);; 
 }
 
@@ -740,7 +740,7 @@ c_731367.elements = (object *)e_731379;
 c_731367.elements[0] = ((closureN)self_73592)->elements[0];
 
 
-object c_731382 = global_set2_id(data,(closure)&c_731367,"__glo_first_91set_91bit_srfi_60", __glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60);
+object c_731382 = global_set_cps_id(data,(closure)&c_731367,"__glo_first_91set_91bit_srfi_60", __glo_first_91set_91bit_srfi_60, __glo_log2_91binary_91factors_srfi_60);
 return_closcall1(data,(closure)&c_731367,  c_731382);; 
 }
 
@@ -758,13 +758,13 @@ c_731369.elements = (object *)e_731375;
 c_731369.elements[0] = ((closureN)self_73593)->elements[0];
 
 
-object c_731378 = global_set2_id(data,(closure)&c_731369,"__glo_bit_91set_127_srfi_60", __glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60);
+object c_731378 = global_set_cps_id(data,(closure)&c_731369,"__glo_bit_91set_127_srfi_60", __glo_bit_91set_127_srfi_60, __glo_logbit_127_srfi_60);
 return_closcall1(data,(closure)&c_731369,  c_731378);; 
 }
 
 static void __lambda_121(void *data, int argc, object self_73594, object r_73481) {
   
-object c_731374 = global_set2_id(data,  ((closureN)self_73594)->elements[0],"__glo_arithmetic_91shift_srfi_60", __glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60);
+object c_731374 = global_set_cps_id(data,  ((closureN)self_73594)->elements[0],"__glo_arithmetic_91shift_srfi_60", __glo_arithmetic_91shift_srfi_60, __glo_ash_srfi_60);
 return_closcall1(data,  ((closureN)self_73594)->elements[0],  c_731374);; 
 }
 

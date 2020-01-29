@@ -123,7 +123,7 @@ static void __lambda_2(void *data, int argc, closure _, object k) ;
 static void __lambda_1(void *data, int argc, closure _,object k_735) {
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 
-object c_7314 = global_set2_id(data,  k_735,"__glo_emergency_91exit_scheme_process_91context", __glo_emergency_91exit_scheme_process_91context, primitive_exit);
+object c_7314 = global_set_cps_id(data,  k_735,"__glo_emergency_91exit_scheme_process_91context", __glo_emergency_91exit_scheme_process_91context, primitive_exit);
 return_closcall1(data,  k_735,  c_7314);; 
 }
 

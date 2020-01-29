@@ -918,7 +918,7 @@ static void __lambda_1(void *data, int argc, closure _,object k_73545, object as
 static void __lambda_226(void *data, int argc, closure _,object k_731028) {
   Cyc_st_add(data, "scheme/cyclone/libraries.sld:lib-init:schemecyclonelibraries");
 
-object c_732872 = global_set2_id(data,  k_731028,"__glo_lib_117get_91dep_91list_scheme_cyclone_libraries", __glo_lib_117get_91dep_91list_scheme_cyclone_libraries, __glo_resolve_91dependencies_scheme_cyclone_libraries);
+object c_732872 = global_set_cps_id(data,  k_731028,"__glo_lib_117get_91dep_91list_scheme_cyclone_libraries", __glo_lib_117get_91dep_91list_scheme_cyclone_libraries, __glo_resolve_91dependencies_scheme_cyclone_libraries);
 return_closcall1(data,  k_731028,  c_732872);; 
 }
 

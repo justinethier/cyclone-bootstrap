@@ -1166,7 +1166,7 @@ c_732766.elements = (object *)e_733334;
 c_732766.elements[0] = ((closureN)self_731238)->elements[0];
 
 
-object c_733337 = global_set2_id(data,(closure)&c_732766,"__glo__121shared_91delay_125_cyclone_concurrent", __glo__121shared_91delay_125_cyclone_concurrent, r_73988);
+object c_733337 = global_set_cps_id(data,(closure)&c_732766,"__glo__121shared_91delay_125_cyclone_concurrent", __glo__121shared_91delay_125_cyclone_concurrent, r_73988);
 return_closcall1(data,(closure)&c_732766,  c_733337);; 
 }
 
@@ -1200,7 +1200,7 @@ c_732770.elements = (object *)e_733329;
 c_732770.elements[0] = ((closureN)self_731240)->elements[0];
 
 
-object c_733332 = global_set2_id(data,(closure)&c_732770,"__glo_shared_91delay_127_cyclone_concurrent", __glo_shared_91delay_127_cyclone_concurrent, r_73987);
+object c_733332 = global_set_cps_id(data,(closure)&c_732770,"__glo_shared_91delay_127_cyclone_concurrent", __glo_shared_91delay_127_cyclone_concurrent, r_73987);
 return_closcall1(data,(closure)&c_732770,  c_733332);; 
 }
 
@@ -1252,7 +1252,7 @@ c_732776.elements = (object *)e_733322;
 c_732776.elements[0] = ((closureN)self_731243)->elements[0];
 
 
-object c_733325 = global_set2_id(data,(closure)&c_732776,"__glo_sd_117done_cyclone_concurrent", __glo_sd_117done_cyclone_concurrent, r_73984);
+object c_733325 = global_set_cps_id(data,(closure)&c_732776,"__glo_sd_117done_cyclone_concurrent", __glo_sd_117done_cyclone_concurrent, r_73984);
 return_closcall1(data,(closure)&c_732776,  c_733325);; 
 }
 
@@ -1304,7 +1304,7 @@ c_732782.elements = (object *)e_733315;
 c_732782.elements[0] = ((closureN)self_731246)->elements[0];
 
 
-object c_733318 = global_set2_id(data,(closure)&c_732782,"__glo_sd_117value_cyclone_concurrent", __glo_sd_117value_cyclone_concurrent, r_73981);
+object c_733318 = global_set_cps_id(data,(closure)&c_732782,"__glo_sd_117value_cyclone_concurrent", __glo_sd_117value_cyclone_concurrent, r_73981);
 return_closcall1(data,(closure)&c_732782,  c_733318);; 
 }
 
@@ -1356,7 +1356,7 @@ c_732788.elements = (object *)e_733308;
 c_732788.elements[0] = ((closureN)self_731249)->elements[0];
 
 
-object c_733311 = global_set2_id(data,(closure)&c_732788,"__glo_sd_117lock_cyclone_concurrent", __glo_sd_117lock_cyclone_concurrent, r_73978);
+object c_733311 = global_set_cps_id(data,(closure)&c_732788,"__glo_sd_117lock_cyclone_concurrent", __glo_sd_117lock_cyclone_concurrent, r_73978);
 return_closcall1(data,(closure)&c_732788,  c_733311);; 
 }
 
@@ -1408,7 +1408,7 @@ c_732794.elements = (object *)e_733301;
 c_732794.elements[0] = ((closureN)self_731252)->elements[0];
 
 
-object c_733304 = global_set2_id(data,(closure)&c_732794,"__glo_sd_117set_91done_67_cyclone_concurrent", __glo_sd_117set_91done_67_cyclone_concurrent, r_73975);
+object c_733304 = global_set_cps_id(data,(closure)&c_732794,"__glo_sd_117set_91done_67_cyclone_concurrent", __glo_sd_117set_91done_67_cyclone_concurrent, r_73975);
 return_closcall1(data,(closure)&c_732794,  c_733304);; 
 }
 
@@ -1460,7 +1460,7 @@ c_732800.elements = (object *)e_733294;
 c_732800.elements[0] = ((closureN)self_731255)->elements[0];
 
 
-object c_733297 = global_set2_id(data,(closure)&c_732800,"__glo_sd_117set_91value_67_cyclone_concurrent", __glo_sd_117set_91value_67_cyclone_concurrent, r_73972);
+object c_733297 = global_set_cps_id(data,(closure)&c_732800,"__glo_sd_117set_91value_67_cyclone_concurrent", __glo_sd_117set_91value_67_cyclone_concurrent, r_73972);
 return_closcall1(data,(closure)&c_732800,  c_733297);; 
 }
 
@@ -1512,7 +1512,7 @@ c_732806.elements = (object *)e_733287;
 c_732806.elements[0] = ((closureN)self_731258)->elements[0];
 
 
-object c_733290 = global_set2_id(data,(closure)&c_732806,"__glo_sd_117set_91lock_67_cyclone_concurrent", __glo_sd_117set_91lock_67_cyclone_concurrent, r_73969);
+object c_733290 = global_set_cps_id(data,(closure)&c_732806,"__glo_sd_117set_91lock_67_cyclone_concurrent", __glo_sd_117set_91lock_67_cyclone_concurrent, r_73969);
 return_closcall1(data,(closure)&c_732806,  c_733290);; 
 }
 
@@ -1556,7 +1556,7 @@ c_732810.elements = (object *)e_733277;
 c_732810.elements[0] = ((closureN)self_731260)->elements[0];
 
 
-object c_733280 = global_set2_id(data,(closure)&c_732810,"__glo__121shared_91promise_125_cyclone_concurrent", __glo__121shared_91promise_125_cyclone_concurrent, r_73967);
+object c_733280 = global_set_cps_id(data,(closure)&c_732810,"__glo__121shared_91promise_125_cyclone_concurrent", __glo__121shared_91promise_125_cyclone_concurrent, r_73967);
 return_closcall1(data,(closure)&c_732810,  c_733280);; 
 }
 
@@ -1590,7 +1590,7 @@ c_732814.elements = (object *)e_733272;
 c_732814.elements[0] = ((closureN)self_731262)->elements[0];
 
 
-object c_733275 = global_set2_id(data,(closure)&c_732814,"__glo_shared_91promise_127_cyclone_concurrent", __glo_shared_91promise_127_cyclone_concurrent, r_73966);
+object c_733275 = global_set_cps_id(data,(closure)&c_732814,"__glo_shared_91promise_127_cyclone_concurrent", __glo_shared_91promise_127_cyclone_concurrent, r_73966);
 return_closcall1(data,(closure)&c_732814,  c_733275);; 
 }
 
@@ -1642,7 +1642,7 @@ c_732820.elements = (object *)e_733265;
 c_732820.elements[0] = ((closureN)self_731265)->elements[0];
 
 
-object c_733268 = global_set2_id(data,(closure)&c_732820,"__glo_sp_117done_cyclone_concurrent", __glo_sp_117done_cyclone_concurrent, r_73963);
+object c_733268 = global_set_cps_id(data,(closure)&c_732820,"__glo_sp_117done_cyclone_concurrent", __glo_sp_117done_cyclone_concurrent, r_73963);
 return_closcall1(data,(closure)&c_732820,  c_733268);; 
 }
 
@@ -1694,7 +1694,7 @@ c_732826.elements = (object *)e_733258;
 c_732826.elements[0] = ((closureN)self_731268)->elements[0];
 
 
-object c_733261 = global_set2_id(data,(closure)&c_732826,"__glo_sp_117value_cyclone_concurrent", __glo_sp_117value_cyclone_concurrent, r_73960);
+object c_733261 = global_set_cps_id(data,(closure)&c_732826,"__glo_sp_117value_cyclone_concurrent", __glo_sp_117value_cyclone_concurrent, r_73960);
 return_closcall1(data,(closure)&c_732826,  c_733261);; 
 }
 
@@ -1746,7 +1746,7 @@ c_732832.elements = (object *)e_733251;
 c_732832.elements[0] = ((closureN)self_731271)->elements[0];
 
 
-object c_733254 = global_set2_id(data,(closure)&c_732832,"__glo_sp_117lock_cyclone_concurrent", __glo_sp_117lock_cyclone_concurrent, r_73957);
+object c_733254 = global_set_cps_id(data,(closure)&c_732832,"__glo_sp_117lock_cyclone_concurrent", __glo_sp_117lock_cyclone_concurrent, r_73957);
 return_closcall1(data,(closure)&c_732832,  c_733254);; 
 }
 
@@ -1798,7 +1798,7 @@ c_732838.elements = (object *)e_733244;
 c_732838.elements[0] = ((closureN)self_731274)->elements[0];
 
 
-object c_733247 = global_set2_id(data,(closure)&c_732838,"__glo_sp_117cv_cyclone_concurrent", __glo_sp_117cv_cyclone_concurrent, r_73954);
+object c_733247 = global_set_cps_id(data,(closure)&c_732838,"__glo_sp_117cv_cyclone_concurrent", __glo_sp_117cv_cyclone_concurrent, r_73954);
 return_closcall1(data,(closure)&c_732838,  c_733247);; 
 }
 
@@ -1850,7 +1850,7 @@ c_732844.elements = (object *)e_733237;
 c_732844.elements[0] = ((closureN)self_731277)->elements[0];
 
 
-object c_733240 = global_set2_id(data,(closure)&c_732844,"__glo_sp_117set_91done_67_cyclone_concurrent", __glo_sp_117set_91done_67_cyclone_concurrent, r_73951);
+object c_733240 = global_set_cps_id(data,(closure)&c_732844,"__glo_sp_117set_91done_67_cyclone_concurrent", __glo_sp_117set_91done_67_cyclone_concurrent, r_73951);
 return_closcall1(data,(closure)&c_732844,  c_733240);; 
 }
 
@@ -1902,7 +1902,7 @@ c_732850.elements = (object *)e_733230;
 c_732850.elements[0] = ((closureN)self_731280)->elements[0];
 
 
-object c_733233 = global_set2_id(data,(closure)&c_732850,"__glo_sp_117set_91value_67_cyclone_concurrent", __glo_sp_117set_91value_67_cyclone_concurrent, r_73948);
+object c_733233 = global_set_cps_id(data,(closure)&c_732850,"__glo_sp_117set_91value_67_cyclone_concurrent", __glo_sp_117set_91value_67_cyclone_concurrent, r_73948);
 return_closcall1(data,(closure)&c_732850,  c_733233);; 
 }
 
@@ -1954,7 +1954,7 @@ c_732856.elements = (object *)e_733223;
 c_732856.elements[0] = ((closureN)self_731283)->elements[0];
 
 
-object c_733226 = global_set2_id(data,(closure)&c_732856,"__glo_sp_117set_91lock_67_cyclone_concurrent", __glo_sp_117set_91lock_67_cyclone_concurrent, r_73945);
+object c_733226 = global_set_cps_id(data,(closure)&c_732856,"__glo_sp_117set_91lock_67_cyclone_concurrent", __glo_sp_117set_91lock_67_cyclone_concurrent, r_73945);
 return_closcall1(data,(closure)&c_732856,  c_733226);; 
 }
 
@@ -2006,7 +2006,7 @@ c_732862.elements = (object *)e_733216;
 c_732862.elements[0] = ((closureN)self_731286)->elements[0];
 
 
-object c_733219 = global_set2_id(data,(closure)&c_732862,"__glo_sp_117set_91cv_67_cyclone_concurrent", __glo_sp_117set_91cv_67_cyclone_concurrent, r_73942);
+object c_733219 = global_set_cps_id(data,(closure)&c_732862,"__glo_sp_117set_91cv_67_cyclone_concurrent", __glo_sp_117set_91cv_67_cyclone_concurrent, r_73942);
 return_closcall1(data,(closure)&c_732862,  c_733219);; 
 }
 
@@ -2048,7 +2048,7 @@ c_732866.elements = (object *)e_733207;
 c_732866.elements[0] = ((closureN)self_731288)->elements[0];
 
 
-object c_733210 = global_set2_id(data,(closure)&c_732866,"__glo__121future_125_cyclone_concurrent", __glo__121future_125_cyclone_concurrent, r_73940);
+object c_733210 = global_set_cps_id(data,(closure)&c_732866,"__glo__121future_125_cyclone_concurrent", __glo__121future_125_cyclone_concurrent, r_73940);
 return_closcall1(data,(closure)&c_732866,  c_733210);; 
 }
 
@@ -2082,7 +2082,7 @@ c_732870.elements = (object *)e_733202;
 c_732870.elements[0] = ((closureN)self_731290)->elements[0];
 
 
-object c_733205 = global_set2_id(data,(closure)&c_732870,"__glo_future_127_cyclone_concurrent", __glo_future_127_cyclone_concurrent, r_73939);
+object c_733205 = global_set_cps_id(data,(closure)&c_732870,"__glo_future_127_cyclone_concurrent", __glo_future_127_cyclone_concurrent, r_73939);
 return_closcall1(data,(closure)&c_732870,  c_733205);; 
 }
 
@@ -2134,7 +2134,7 @@ c_732876.elements = (object *)e_733195;
 c_732876.elements[0] = ((closureN)self_731293)->elements[0];
 
 
-object c_733198 = global_set2_id(data,(closure)&c_732876,"__glo_get_91done_cyclone_concurrent", __glo_get_91done_cyclone_concurrent, r_73936);
+object c_733198 = global_set_cps_id(data,(closure)&c_732876,"__glo_get_91done_cyclone_concurrent", __glo_get_91done_cyclone_concurrent, r_73936);
 return_closcall1(data,(closure)&c_732876,  c_733198);; 
 }
 
@@ -2186,7 +2186,7 @@ c_732882.elements = (object *)e_733188;
 c_732882.elements[0] = ((closureN)self_731296)->elements[0];
 
 
-object c_733191 = global_set2_id(data,(closure)&c_732882,"__glo_get_91result_cyclone_concurrent", __glo_get_91result_cyclone_concurrent, r_73933);
+object c_733191 = global_set_cps_id(data,(closure)&c_732882,"__glo_get_91result_cyclone_concurrent", __glo_get_91result_cyclone_concurrent, r_73933);
 return_closcall1(data,(closure)&c_732882,  c_733191);; 
 }
 
@@ -2238,7 +2238,7 @@ c_732888.elements = (object *)e_733181;
 c_732888.elements[0] = ((closureN)self_731299)->elements[0];
 
 
-object c_733184 = global_set2_id(data,(closure)&c_732888,"__glo_get_91lock_cyclone_concurrent", __glo_get_91lock_cyclone_concurrent, r_73930);
+object c_733184 = global_set_cps_id(data,(closure)&c_732888,"__glo_get_91lock_cyclone_concurrent", __glo_get_91lock_cyclone_concurrent, r_73930);
 return_closcall1(data,(closure)&c_732888,  c_733184);; 
 }
 
@@ -2290,7 +2290,7 @@ c_732894.elements = (object *)e_733174;
 c_732894.elements[0] = ((closureN)self_731302)->elements[0];
 
 
-object c_733177 = global_set2_id(data,(closure)&c_732894,"__glo_set_91done_67_cyclone_concurrent", __glo_set_91done_67_cyclone_concurrent, r_73927);
+object c_733177 = global_set_cps_id(data,(closure)&c_732894,"__glo_set_91done_67_cyclone_concurrent", __glo_set_91done_67_cyclone_concurrent, r_73927);
 return_closcall1(data,(closure)&c_732894,  c_733177);; 
 }
 
@@ -2342,7 +2342,7 @@ c_732900.elements = (object *)e_733167;
 c_732900.elements[0] = ((closureN)self_731305)->elements[0];
 
 
-object c_733170 = global_set2_id(data,(closure)&c_732900,"__glo_set_91result_67_cyclone_concurrent", __glo_set_91result_67_cyclone_concurrent, r_73924);
+object c_733170 = global_set_cps_id(data,(closure)&c_732900,"__glo_set_91result_67_cyclone_concurrent", __glo_set_91result_67_cyclone_concurrent, r_73924);
 return_closcall1(data,(closure)&c_732900,  c_733170);; 
 }
 
@@ -2394,7 +2394,7 @@ c_732906.elements = (object *)e_733160;
 c_732906.elements[0] = ((closureN)self_731308)->elements[0];
 
 
-object c_733163 = global_set2_id(data,(closure)&c_732906,"__glo_set_91lock_67_cyclone_concurrent", __glo_set_91lock_67_cyclone_concurrent, r_73921);
+object c_733163 = global_set_cps_id(data,(closure)&c_732906,"__glo_set_91lock_67_cyclone_concurrent", __glo_set_91lock_67_cyclone_concurrent, r_73921);
 return_closcall1(data,(closure)&c_732906,  c_733163);; 
 }
 
@@ -2442,7 +2442,7 @@ c_732910.elements = (object *)e_733148;
 c_732910.elements[0] = ((closureN)self_731310)->elements[0];
 
 
-object c_733151 = global_set2_id(data,(closure)&c_732910,"__glo__121shared_91queue_125_cyclone_concurrent", __glo__121shared_91queue_125_cyclone_concurrent, r_73919);
+object c_733151 = global_set_cps_id(data,(closure)&c_732910,"__glo__121shared_91queue_125_cyclone_concurrent", __glo__121shared_91queue_125_cyclone_concurrent, r_73919);
 return_closcall1(data,(closure)&c_732910,  c_733151);; 
 }
 
@@ -2476,7 +2476,7 @@ c_732914.elements = (object *)e_733143;
 c_732914.elements[0] = ((closureN)self_731312)->elements[0];
 
 
-object c_733146 = global_set2_id(data,(closure)&c_732914,"__glo_shared_91queue_127_cyclone_concurrent", __glo_shared_91queue_127_cyclone_concurrent, r_73918);
+object c_733146 = global_set_cps_id(data,(closure)&c_732914,"__glo_shared_91queue_127_cyclone_concurrent", __glo_shared_91queue_127_cyclone_concurrent, r_73918);
 return_closcall1(data,(closure)&c_732914,  c_733146);; 
 }
 
@@ -2528,7 +2528,7 @@ c_732920.elements = (object *)e_733136;
 c_732920.elements[0] = ((closureN)self_731315)->elements[0];
 
 
-object c_733139 = global_set2_id(data,(closure)&c_732920,"__glo_q_117store_cyclone_concurrent", __glo_q_117store_cyclone_concurrent, r_73915);
+object c_733139 = global_set_cps_id(data,(closure)&c_732920,"__glo_q_117store_cyclone_concurrent", __glo_q_117store_cyclone_concurrent, r_73915);
 return_closcall1(data,(closure)&c_732920,  c_733139);; 
 }
 
@@ -2580,7 +2580,7 @@ c_732926.elements = (object *)e_733129;
 c_732926.elements[0] = ((closureN)self_731318)->elements[0];
 
 
-object c_733132 = global_set2_id(data,(closure)&c_732926,"__glo_q_117start_cyclone_concurrent", __glo_q_117start_cyclone_concurrent, r_73912);
+object c_733132 = global_set_cps_id(data,(closure)&c_732926,"__glo_q_117start_cyclone_concurrent", __glo_q_117start_cyclone_concurrent, r_73912);
 return_closcall1(data,(closure)&c_732926,  c_733132);; 
 }
 
@@ -2632,7 +2632,7 @@ c_732932.elements = (object *)e_733122;
 c_732932.elements[0] = ((closureN)self_731321)->elements[0];
 
 
-object c_733125 = global_set2_id(data,(closure)&c_732932,"__glo_q_117end_cyclone_concurrent", __glo_q_117end_cyclone_concurrent, r_73909);
+object c_733125 = global_set_cps_id(data,(closure)&c_732932,"__glo_q_117end_cyclone_concurrent", __glo_q_117end_cyclone_concurrent, r_73909);
 return_closcall1(data,(closure)&c_732932,  c_733125);; 
 }
 
@@ -2684,7 +2684,7 @@ c_732938.elements = (object *)e_733115;
 c_732938.elements[0] = ((closureN)self_731324)->elements[0];
 
 
-object c_733118 = global_set2_id(data,(closure)&c_732938,"__glo_q_117wait_91count_cyclone_concurrent", __glo_q_117wait_91count_cyclone_concurrent, r_73906);
+object c_733118 = global_set_cps_id(data,(closure)&c_732938,"__glo_q_117wait_91count_cyclone_concurrent", __glo_q_117wait_91count_cyclone_concurrent, r_73906);
 return_closcall1(data,(closure)&c_732938,  c_733118);; 
 }
 
@@ -2736,7 +2736,7 @@ c_732944.elements = (object *)e_733108;
 c_732944.elements[0] = ((closureN)self_731327)->elements[0];
 
 
-object c_733111 = global_set2_id(data,(closure)&c_732944,"__glo_q_117lock_cyclone_concurrent", __glo_q_117lock_cyclone_concurrent, r_73903);
+object c_733111 = global_set_cps_id(data,(closure)&c_732944,"__glo_q_117lock_cyclone_concurrent", __glo_q_117lock_cyclone_concurrent, r_73903);
 return_closcall1(data,(closure)&c_732944,  c_733111);; 
 }
 
@@ -2788,7 +2788,7 @@ c_732950.elements = (object *)e_733101;
 c_732950.elements[0] = ((closureN)self_731330)->elements[0];
 
 
-object c_733104 = global_set2_id(data,(closure)&c_732950,"__glo_q_117cv_cyclone_concurrent", __glo_q_117cv_cyclone_concurrent, r_73900);
+object c_733104 = global_set_cps_id(data,(closure)&c_732950,"__glo_q_117cv_cyclone_concurrent", __glo_q_117cv_cyclone_concurrent, r_73900);
 return_closcall1(data,(closure)&c_732950,  c_733104);; 
 }
 
@@ -2840,7 +2840,7 @@ c_732956.elements = (object *)e_733094;
 c_732956.elements[0] = ((closureN)self_731333)->elements[0];
 
 
-object c_733097 = global_set2_id(data,(closure)&c_732956,"__glo_q_117set_91store_67_cyclone_concurrent", __glo_q_117set_91store_67_cyclone_concurrent, r_73897);
+object c_733097 = global_set_cps_id(data,(closure)&c_732956,"__glo_q_117set_91store_67_cyclone_concurrent", __glo_q_117set_91store_67_cyclone_concurrent, r_73897);
 return_closcall1(data,(closure)&c_732956,  c_733097);; 
 }
 
@@ -2892,7 +2892,7 @@ c_732962.elements = (object *)e_733087;
 c_732962.elements[0] = ((closureN)self_731336)->elements[0];
 
 
-object c_733090 = global_set2_id(data,(closure)&c_732962,"__glo_q_117set_91start_67_cyclone_concurrent", __glo_q_117set_91start_67_cyclone_concurrent, r_73894);
+object c_733090 = global_set_cps_id(data,(closure)&c_732962,"__glo_q_117set_91start_67_cyclone_concurrent", __glo_q_117set_91start_67_cyclone_concurrent, r_73894);
 return_closcall1(data,(closure)&c_732962,  c_733090);; 
 }
 
@@ -2944,7 +2944,7 @@ c_732968.elements = (object *)e_733080;
 c_732968.elements[0] = ((closureN)self_731339)->elements[0];
 
 
-object c_733083 = global_set2_id(data,(closure)&c_732968,"__glo_q_117set_91end_67_cyclone_concurrent", __glo_q_117set_91end_67_cyclone_concurrent, r_73891);
+object c_733083 = global_set_cps_id(data,(closure)&c_732968,"__glo_q_117set_91end_67_cyclone_concurrent", __glo_q_117set_91end_67_cyclone_concurrent, r_73891);
 return_closcall1(data,(closure)&c_732968,  c_733083);; 
 }
 
@@ -2996,7 +2996,7 @@ c_732974.elements = (object *)e_733073;
 c_732974.elements[0] = ((closureN)self_731342)->elements[0];
 
 
-object c_733076 = global_set2_id(data,(closure)&c_732974,"__glo_q_117set_91wait_91count_cyclone_concurrent", __glo_q_117set_91wait_91count_cyclone_concurrent, r_73888);
+object c_733076 = global_set_cps_id(data,(closure)&c_732974,"__glo_q_117set_91wait_91count_cyclone_concurrent", __glo_q_117set_91wait_91count_cyclone_concurrent, r_73888);
 return_closcall1(data,(closure)&c_732974,  c_733076);; 
 }
 
@@ -3048,7 +3048,7 @@ c_732980.elements = (object *)e_733066;
 c_732980.elements[0] = ((closureN)self_731345)->elements[0];
 
 
-object c_733069 = global_set2_id(data,(closure)&c_732980,"__glo_q_117set_91lock_67_cyclone_concurrent", __glo_q_117set_91lock_67_cyclone_concurrent, r_73885);
+object c_733069 = global_set_cps_id(data,(closure)&c_732980,"__glo_q_117set_91lock_67_cyclone_concurrent", __glo_q_117set_91lock_67_cyclone_concurrent, r_73885);
 return_closcall1(data,(closure)&c_732980,  c_733069);; 
 }
 
@@ -3100,7 +3100,7 @@ c_732986.elements = (object *)e_733059;
 c_732986.elements[0] = ((closureN)self_731348)->elements[0];
 
 
-object c_733062 = global_set2_id(data,(closure)&c_732986,"__glo_q_117set_91cv_67_cyclone_concurrent", __glo_q_117set_91cv_67_cyclone_concurrent, r_73882);
+object c_733062 = global_set_cps_id(data,(closure)&c_732986,"__glo_q_117set_91cv_67_cyclone_concurrent", __glo_q_117set_91cv_67_cyclone_concurrent, r_73882);
 return_closcall1(data,(closure)&c_732986,  c_733062);; 
 }
 
@@ -3140,7 +3140,7 @@ c_732990.elements = (object *)e_733051;
 c_732990.elements[0] = ((closureN)self_731350)->elements[0];
 
 
-object c_733054 = global_set2_id(data,(closure)&c_732990,"__glo__121thread_91pool_125_cyclone_concurrent", __glo__121thread_91pool_125_cyclone_concurrent, r_73880);
+object c_733054 = global_set_cps_id(data,(closure)&c_732990,"__glo__121thread_91pool_125_cyclone_concurrent", __glo__121thread_91pool_125_cyclone_concurrent, r_73880);
 return_closcall1(data,(closure)&c_732990,  c_733054);; 
 }
 
@@ -3174,7 +3174,7 @@ c_732994.elements = (object *)e_733046;
 c_732994.elements[0] = ((closureN)self_731352)->elements[0];
 
 
-object c_733049 = global_set2_id(data,(closure)&c_732994,"__glo_thread_91pool_127_cyclone_concurrent", __glo_thread_91pool_127_cyclone_concurrent, r_73879);
+object c_733049 = global_set_cps_id(data,(closure)&c_732994,"__glo_thread_91pool_127_cyclone_concurrent", __glo_thread_91pool_127_cyclone_concurrent, r_73879);
 return_closcall1(data,(closure)&c_732994,  c_733049);; 
 }
 
@@ -3226,7 +3226,7 @@ c_733000.elements = (object *)e_733039;
 c_733000.elements[0] = ((closureN)self_731355)->elements[0];
 
 
-object c_733042 = global_set2_id(data,(closure)&c_733000,"__glo_tp_117jobq_cyclone_concurrent", __glo_tp_117jobq_cyclone_concurrent, r_73876);
+object c_733042 = global_set_cps_id(data,(closure)&c_733000,"__glo_tp_117jobq_cyclone_concurrent", __glo_tp_117jobq_cyclone_concurrent, r_73876);
 return_closcall1(data,(closure)&c_733000,  c_733042);; 
 }
 
@@ -3278,7 +3278,7 @@ c_733006.elements = (object *)e_733032;
 c_733006.elements[0] = ((closureN)self_731358)->elements[0];
 
 
-object c_733035 = global_set2_id(data,(closure)&c_733006,"__glo_tp_117threads_cyclone_concurrent", __glo_tp_117threads_cyclone_concurrent, r_73873);
+object c_733035 = global_set_cps_id(data,(closure)&c_733006,"__glo_tp_117threads_cyclone_concurrent", __glo_tp_117threads_cyclone_concurrent, r_73873);
 return_closcall1(data,(closure)&c_733006,  c_733035);; 
 }
 
@@ -3330,7 +3330,7 @@ c_733012.elements = (object *)e_733025;
 c_733012.elements[0] = ((closureN)self_731361)->elements[0];
 
 
-object c_733028 = global_set2_id(data,(closure)&c_733012,"__glo_tp_91set_91jobq_67_cyclone_concurrent", __glo_tp_91set_91jobq_67_cyclone_concurrent, r_73870);
+object c_733028 = global_set_cps_id(data,(closure)&c_733012,"__glo_tp_91set_91jobq_67_cyclone_concurrent", __glo_tp_91set_91jobq_67_cyclone_concurrent, r_73870);
 return_closcall1(data,(closure)&c_733012,  c_733028);; 
 }
 
@@ -3370,7 +3370,7 @@ return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_733016, &c_733023, 
 
 static void __lambda_408(void *data, int argc, object self_731364, object r_73867) {
   
-object c_733021 = global_set2_id(data,  ((closureN)self_731364)->elements[0],"__glo_tp_117set_91threads_67_cyclone_concurrent", __glo_tp_117set_91threads_67_cyclone_concurrent, r_73867);
+object c_733021 = global_set_cps_id(data,  ((closureN)self_731364)->elements[0],"__glo_tp_117set_91threads_67_cyclone_concurrent", __glo_tp_117set_91threads_67_cyclone_concurrent, r_73867);
 return_closcall1(data,  ((closureN)self_731364)->elements[0],  c_733021);; 
 }
 
