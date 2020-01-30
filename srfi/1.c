@@ -2190,7 +2190,7 @@ c_7311475.elements[0] = ((closureN)self_734601)->elements[1];
 c_7311475.elements[1] = ((closureN)self_734601)->elements[2];
 
 
-object c_7311482 = Cyc_set_cdr2(data,(closure)&c_7311475,((closureN)self_734601)->elements[1], ((closureN)self_734601)->elements[0]);
+object c_7311482 = Cyc_set_cdr_cps(data,(closure)&c_7311475,((closureN)self_734601)->elements[1], ((closureN)self_734601)->elements[0]);
 return_closcall1(data,(closure)&c_7311475,  c_7311482);}
 ;; 
 }
@@ -2953,7 +2953,7 @@ c_7311219.elements[0] = ((closureN)self_734564)->elements[1];
 c_7311219.elements[1] = ((closureN)self_734564)->elements[2];
 
 
-object c_7311226 = Cyc_set_cdr2(data,(closure)&c_7311219,((closureN)self_734564)->elements[2], ((closureN)self_734564)->elements[0]);
+object c_7311226 = Cyc_set_cdr_cps(data,(closure)&c_7311219,((closureN)self_734564)->elements[2], ((closureN)self_734564)->elements[0]);
 return_closcall1(data,(closure)&c_7311219,  c_7311226);}
 ;; 
 }
@@ -3807,7 +3807,7 @@ c_7310886.elements[2] = ((closureN)self_734527)->elements[3];
 c_7310886.elements[3] = tail_731094_731999;
 
 
-object c_7310897 = Cyc_set_cdr2(data,(closure)&c_7310886,((closureN)self_734527)->elements[2], ((closureN)self_734527)->elements[0]);
+object c_7310897 = Cyc_set_cdr_cps(data,(closure)&c_7310886,((closureN)self_734527)->elements[2], ((closureN)self_734527)->elements[0]);
 return_closcall1(data,(closure)&c_7310886,  c_7310897);; 
 }
 
@@ -5360,7 +5360,7 @@ c_7310387.elements[0] = ((closureN)self_734457)->elements[0];
 c_7310387.elements[1] = ((closureN)self_734457)->elements[3];
 
 
-object c_7310394 = Cyc_set_cdr2(data,(closure)&c_7310387,((closureN)self_734457)->elements[2], NULL);
+object c_7310394 = Cyc_set_cdr_cps(data,(closure)&c_7310387,((closureN)self_734457)->elements[2], NULL);
 return_closcall1(data,(closure)&c_7310387,  c_7310394);}
 ;; 
 }
@@ -5905,7 +5905,7 @@ c_7310208.elements[2] = ((closureN)self_734430)->elements[3];
 return_direct_with_clo1(data,(closure)&c_7310208,__lambda_740,  Cyc_cdr(data, ((closureN)self_734430)->elements[3]));
 } else { 
   
-object c_7310223 = Cyc_set_cdr2(data,  ((closureN)self_734430)->elements[0],((closureN)self_734430)->elements[2], NULL);
+object c_7310223 = Cyc_set_cdr_cps(data,  ((closureN)self_734430)->elements[0],((closureN)self_734430)->elements[2], NULL);
 return_closcall1(data,  ((closureN)self_734430)->elements[0],  c_7310223);}
 ;; 
 }
@@ -7948,7 +7948,7 @@ c_739482.elements[6] = ((closureN)self_734296)->elements[3];
 return_direct_with_clo1(data,(closure)&c_739482,__lambda_631,  Cyc_car(data, lis_73701_731814));
 } else { 
   
-object c_739526 = Cyc_set_cdr2(data,  k_733194,((closureN)self_734296)->elements[1], lis_73701_731814);
+object c_739526 = Cyc_set_cdr_cps(data,  k_733194,((closureN)self_734296)->elements[1], lis_73701_731814);
 return_closcall1(data,  k_733194,  c_739526);}
 ;; 
 }
@@ -8010,7 +8010,7 @@ c_739499.elements[2] = ((closureN)self_734298)->elements[2];
 c_739499.elements[3] = ((closureN)self_734298)->elements[5];
 
 
-object c_739516 = Cyc_set_cdr2(data,(closure)&c_739499,((closureN)self_734298)->elements[4], ((closureN)self_734298)->elements[2]);
+object c_739516 = Cyc_set_cdr_cps(data,(closure)&c_739499,((closureN)self_734298)->elements[4], ((closureN)self_734298)->elements[2]);
 return_closcall1(data,(closure)&c_739499,  c_739516);}
 ;; 
 }
@@ -8214,7 +8214,7 @@ c_739401.elements[6] = ((closureN)self_734308)->elements[3];
 return_direct_with_clo1(data,(closure)&c_739401,__lambda_621,  Cyc_car(data, lis_73710_731822));
 } else { 
   
-object c_739445 = Cyc_set_cdr2(data,  k_733183,((closureN)self_734308)->elements[0], lis_73710_731822);
+object c_739445 = Cyc_set_cdr_cps(data,  k_733183,((closureN)self_734308)->elements[0], lis_73710_731822);
 return_closcall1(data,  k_733183,  c_739445);}
 ;; 
 }
@@ -8258,7 +8258,7 @@ c_739406.elements[2] = ((closureN)self_734310)->elements[4];
 c_739406.elements[3] = ((closureN)self_734310)->elements[5];
 
 
-object c_739423 = Cyc_set_cdr2(data,(closure)&c_739406,((closureN)self_734310)->elements[0], ((closureN)self_734310)->elements[2]);
+object c_739423 = Cyc_set_cdr_cps(data,(closure)&c_739406,((closureN)self_734310)->elements[0], ((closureN)self_734310)->elements[2]);
 return_closcall1(data,(closure)&c_739406,  c_739423);
 } else { 
   
@@ -9586,7 +9586,7 @@ c_738987.elements[4] = ((closureN)self_734267)->elements[3];
 return_closcall2(data,  ((closureN)self_734267)->elements[1],  &c_738987, Cyc_car(data, lis_73678_731793));
 } else { 
   
-object c_739019 = Cyc_set_cdr2(data,  k_733113,((closureN)self_734267)->elements[2], lis_73678_731793);
+object c_739019 = Cyc_set_cdr_cps(data,  k_733113,((closureN)self_734267)->elements[2], lis_73678_731793);
 return_closcall1(data,  k_733113,  c_739019);}
 ;; 
 }
@@ -9608,7 +9608,7 @@ c_738989.elements[1] = ((closureN)self_734268)->elements[1];
 c_738989.elements[2] = ((closureN)self_734268)->elements[4];
 
 
-object c_739002 = Cyc_set_cdr2(data,(closure)&c_738989,((closureN)self_734268)->elements[3], ((closureN)self_734268)->elements[1]);
+object c_739002 = Cyc_set_cdr_cps(data,(closure)&c_738989,((closureN)self_734268)->elements[3], ((closureN)self_734268)->elements[1]);
 return_closcall1(data,(closure)&c_738989,  c_739002);
 } else { 
   
@@ -10784,7 +10784,7 @@ return_closcall2(data,  ((closureN)self_734200)->elements[0],  &c_738552, r_7330
 
 static void __lambda_506(void *data, int argc, object self_734201, object r_733031) {
   
-object c_738557 = Cyc_set_car2(data,  ((closureN)self_734201)->elements[0],((closureN)self_734201)->elements[1], r_733031);
+object c_738557 = Cyc_set_car_cps(data,  ((closureN)self_734201)->elements[0],((closureN)self_734201)->elements[1], r_733031);
 return_closcall1(data,  ((closureN)self_734201)->elements[0],  c_738557);; 
 }
 
@@ -10977,7 +10977,7 @@ c_738507.elements[2] = ((closureN)self_734195)->elements[2];
 c_738507.elements[3] = ((closureN)self_734195)->elements[3];
 
 
-object c_738523 = Cyc_set_car2(data,(closure)&c_738507,((closureN)self_734195)->elements[1], r_733026);
+object c_738523 = Cyc_set_car_cps(data,(closure)&c_738507,((closureN)self_734195)->elements[1], r_733026);
 return_closcall1(data,(closure)&c_738507,  c_738523);; 
 }
 
@@ -15936,7 +15936,7 @@ c_736900.elements[2] = next_91rev_73355_731540;
 c_736900.elements[3] = ((closureN)self_733957)->elements[2];
 
 
-object c_736911 = Cyc_set_cdr2(data,(closure)&c_736900,((closureN)self_733957)->elements[2], ((closureN)self_733957)->elements[3]);
+object c_736911 = Cyc_set_cdr_cps(data,(closure)&c_736900,((closureN)self_733957)->elements[2], ((closureN)self_733957)->elements[3]);
 return_closcall1(data,(closure)&c_736900,  c_736911);; 
 }
 
@@ -16328,7 +16328,7 @@ c_736760.elements[3] = tail_91cons_73335_731522;
 
 
 
-object c_736788 = Cyc_set_cdr2(data,(closure)&c_736760,tail_91cons_73335_731522, Cyc_car(data, rest_73336_731523));
+object c_736788 = Cyc_set_cdr_cps(data,(closure)&c_736760,tail_91cons_73335_731522, Cyc_car(data, rest_73336_731523));
 return_closcall1(data,(closure)&c_736760,  c_736788);
 } else { 
   
@@ -17339,7 +17339,7 @@ c_736331.elements[1] = suffix_73274_731469;
 c_736331.elements[2] = ((closureN)self_733891)->elements[2];
 
 
-object c_736339 = Cyc_set_cdr2(data,(closure)&c_736331,((closureN)self_733891)->elements[1], NULL);
+object c_736339 = Cyc_set_cdr_cps(data,(closure)&c_736331,((closureN)self_733891)->elements[1], NULL);
 return_closcall1(data,(closure)&c_736331,  c_736339);; 
 }
 
@@ -17682,7 +17682,7 @@ c_736233.elements[0] = k_732497;
 c_736233.elements[1] = ((closureN)self_733877)->elements[0];
 
 
-object c_736240 = Cyc_set_cdr2(data,(closure)&c_736233,lag_73255_731455, NULL);
+object c_736240 = Cyc_set_cdr_cps(data,(closure)&c_736233,lag_73255_731455, NULL);
 return_closcall1(data,(closure)&c_736233,  c_736240);}
 ;; 
 }
@@ -18090,7 +18090,7 @@ c_736072.elements[0] = ((closureN)self_733855)->elements[0];
 c_736072.elements[1] = ((closureN)self_733855)->elements[1];
 
 
-object c_736079 = Cyc_set_cdr2(data,(closure)&c_736072,r_732461, NULL);
+object c_736079 = Cyc_set_cdr_cps(data,(closure)&c_736072,r_732461, NULL);
 return_closcall1(data,(closure)&c_736072,  c_736079);; 
 }
 
@@ -19556,7 +19556,7 @@ c_735445.elements[0] = ((closureN)self_733804)->elements[0];
 c_735445.elements[1] = ((closureN)self_733804)->elements[1];
 
 
-object c_735452 = Cyc_set_cdr2(data,(closure)&c_735445,r_732305, ((closureN)self_733804)->elements[0]);
+object c_735452 = Cyc_set_cdr_cps(data,(closure)&c_735445,r_732305, ((closureN)self_733804)->elements[0]);
 return_closcall1(data,(closure)&c_735445,  c_735452);; 
 }
 

@@ -1872,7 +1872,7 @@ c_733756.elements[3] = ((closureN)self_731515)->elements[3];
 c_733756.elements[4] = ((closureN)self_731515)->elements[4];
 
 
-object c_733777 = Cyc_vector_set2(data,(closure)&c_733756,((closureN)self_731515)->elements[6], ((closureN)self_731515)->elements[0], ((closureN)self_731515)->elements[5]);
+object c_733777 = Cyc_vector_set_cps(data,(closure)&c_733756,((closureN)self_731515)->elements[6], ((closureN)self_731515)->elements[0], ((closureN)self_731515)->elements[5]);
 return_closcall1(data,(closure)&c_733756,  c_733777);}
 ;; 
 }

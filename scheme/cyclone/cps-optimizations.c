@@ -21936,7 +21936,7 @@ static void __lambda_721(void *data, int argc, object self_736756, object k_7342
 static void __lambda_715(void *data, int argc, object self_736750, object r_734252) {
   if( (boolean_f != r_734252) ){ 
   
-object c_7312768 = Cyc_set_car2(data,  ((closureN)self_736750)->elements[3],((closureN)self_736750)->elements[0], boolean_t);
+object c_7312768 = Cyc_set_car_cps(data,  ((closureN)self_736750)->elements[3],((closureN)self_736750)->elements[0], boolean_t);
 return_closcall1(data,  ((closureN)self_736750)->elements[3],  c_7312768);
 } else { 
   

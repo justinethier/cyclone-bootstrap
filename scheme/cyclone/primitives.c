@@ -7319,11 +7319,11 @@ static void __lambda_130(void *data, int argc, object self_731670, object r_7310
   if( (boolean_f != r_731030) ){ 
   if( (boolean_f != ((closureN)self_731670)->elements[0]) ){ 
   
-make_utf8_string_with_len(c_732488, "Cyc_vector_set_unsafe2", 22, 22);
+make_utf8_string_with_len(c_732488, "Cyc_vector_set_unsafe_cps", 25, 25);
 return_closcall1(data,  ((closureN)self_731670)->elements[1],  &c_732488);
 } else { 
   
-make_utf8_string_with_len(c_732491, "Cyc_vector_set2", 15, 15);
+make_utf8_string_with_len(c_732491, "Cyc_vector_set_cps", 18, 18);
 return_closcall1(data,  ((closureN)self_731670)->elements[1],  &c_732491);}
 ;
 } else { 
@@ -7719,7 +7719,7 @@ return_direct_with_clo1(data,(closure)&c_732567,__lambda_145,  Cyc_eq(((closureN
 static void __lambda_145(void *data, int argc, object self_731685, object r_731045) {
   if( (boolean_f != r_731045) ){ 
   
-make_utf8_string_with_len(c_732570, "Cyc_set_car2", 12, 12);
+make_utf8_string_with_len(c_732570, "Cyc_set_car_cps", 15, 15);
 return_closcall1(data,  ((closureN)self_731685)->elements[0],  &c_732570);
 } else { 
   
@@ -7744,7 +7744,7 @@ return_direct_with_clo1(data,(closure)&c_732572,__lambda_146,  Cyc_eq(((closureN
 static void __lambda_146(void *data, int argc, object self_731686, object r_731046) {
   if( (boolean_f != r_731046) ){ 
   
-make_utf8_string_with_len(c_732575, "Cyc_set_cdr2", 12, 12);
+make_utf8_string_with_len(c_732575, "Cyc_set_cdr_cps", 15, 15);
 return_closcall1(data,  ((closureN)self_731686)->elements[0],  &c_732575);
 } else { 
   

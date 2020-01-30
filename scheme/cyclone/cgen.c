@@ -18473,7 +18473,7 @@ c_739444.elements[1] = ((closureN)self_735156)->elements[1];
 c_739444.elements[2] = ((closureN)self_735156)->elements[2];
 
 
-object c_739460 = Cyc_set_car2(data,(closure)&c_739444,((closureN)self_735156)->elements[0], new_91all_91args_73631_731552);
+object c_739460 = Cyc_set_car_cps(data,(closure)&c_739444,((closureN)self_735156)->elements[0], new_91all_91args_73631_731552);
 return_closcall1(data,(closure)&c_739444,  c_739460);; 
 }
 
@@ -18498,7 +18498,7 @@ return_direct_with_clo1(data,(closure)&c_739446,__lambda_419,  Cyc_cadddr(data, 
 
 static void __lambda_419(void *data, int argc, object self_735158, object r_732610) {
   
-object c_739451 = Cyc_set_car2(data,  ((closureN)self_735158)->elements[0],r_732610, ((closureN)self_735158)->elements[1]);
+object c_739451 = Cyc_set_car_cps(data,  ((closureN)self_735158)->elements[0],r_732610, ((closureN)self_735158)->elements[1]);
 return_closcall1(data,  ((closureN)self_735158)->elements[0],  c_739451);; 
 }
 
@@ -27808,7 +27808,7 @@ make_utf8_string_with_len(c_736015, "Only support up to 128 arguments. Received:
 return_closcall3(data,  __glo_error_scheme_base,  k_731900, &c_736015, arity_7334_731316);
 } else { 
   
-object c_736019 = Cyc_vector_set2(data,  k_731900,__glo__85c_91call_91arity_85_scheme_cyclone_cgen, arity_7334_731316, boolean_t);
+object c_736019 = Cyc_vector_set_cps(data,  k_731900,__glo__85c_91call_91arity_85_scheme_cyclone_cgen, arity_7334_731316, boolean_t);
 return_closcall1(data,  k_731900,  c_736019);}
 ;
 } else { 

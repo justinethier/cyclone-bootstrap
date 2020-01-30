@@ -1692,7 +1692,7 @@ c_7311583.elements[6] = target_73542_732124_732792;
 
 
 
-object c_7311603 = Cyc_vector_set2(data,(closure)&c_7311583,target_73542_732124_732792, j_73546_732128_732796, Cyc_vector_ref(data, source_73543_732125_732793, i_73545_732127_732795));
+object c_7311603 = Cyc_vector_set_cps(data,(closure)&c_7311583,target_73542_732124_732792, j_73546_732128_732796, Cyc_vector_ref(data, source_73543_732125_732793, i_73545_732127_732795));
 return_closcall1(data,(closure)&c_7311583,  c_7311603);
 } else { 
   return_closcall1(data,  k_734571,  boolean_f);}
@@ -1765,7 +1765,7 @@ c_7311550.elements[6] = target_73550_732129_732797;
 
 
 
-object c_7311570 = Cyc_vector_set2(data,(closure)&c_7311550,target_73550_732129_732797, j_73554_732133_732801, Cyc_vector_ref(data, source_73551_732130_732798, i_73553_732132_732800));
+object c_7311570 = Cyc_vector_set_cps(data,(closure)&c_7311550,target_73550_732129_732797, j_73554_732133_732801, Cyc_vector_ref(data, source_73551_732130_732798, i_73553_732132_732800));
 return_closcall1(data,(closure)&c_7311550,  c_7311570);
 } else { 
   return_closcall1(data,  k_734564,  boolean_f);}
@@ -1925,7 +1925,7 @@ c_7311481.elements[6] = target_73564_732140_732808;
 
 
 
-object c_7311501 = Cyc_vector_set2(data,(closure)&c_7311481,target_73564_732140_732808, j_73568_732144_732812, Cyc_vector_ref(data, source_73565_732141_732809, i_73567_732143_732811));
+object c_7311501 = Cyc_vector_set_cps(data,(closure)&c_7311481,target_73564_732140_732808, j_73568_732144_732812, Cyc_vector_ref(data, source_73565_732141_732809, i_73567_732143_732811));
 return_closcall1(data,(closure)&c_7311481,  c_7311501);
 } else { 
   return_closcall1(data,  k_734547,  boolean_f);}
@@ -2114,7 +2114,7 @@ c_7311416.elements[4] = ((closureN)self_735023)->elements[4];
 c_7311416.elements[5] = ((closureN)self_735023)->elements[5];
 
 
-object c_7311443 = Cyc_vector_set2(data,(closure)&c_7311416,((closureN)self_735023)->elements[5], ((closureN)self_735023)->elements[0], r_734541);
+object c_7311443 = Cyc_vector_set_cps(data,(closure)&c_7311416,((closureN)self_735023)->elements[5], ((closureN)self_735023)->elements[0], r_734541);
 return_closcall1(data,(closure)&c_7311416,  c_7311443);; 
 }
 
@@ -2136,7 +2136,7 @@ c_7311418.elements[3] = ((closureN)self_735024)->elements[3];
 c_7311418.elements[4] = ((closureN)self_735024)->elements[5];
 
 
-object c_7311436 = Cyc_vector_set2(data,(closure)&c_7311418,((closureN)self_735024)->elements[5], ((closureN)self_735024)->elements[1], ((closureN)self_735024)->elements[4]);
+object c_7311436 = Cyc_vector_set_cps(data,(closure)&c_7311418,((closureN)self_735024)->elements[5], ((closureN)self_735024)->elements[1], ((closureN)self_735024)->elements[4]);
 return_closcall1(data,(closure)&c_7311418,  c_7311436);; 
 }
 
@@ -2601,7 +2601,7 @@ c_7311272.elements[5] = ((closureN)self_735047)->elements[5];
 
 complex_num_type local_7311292; 
 
-object c_7311288 = Cyc_vector_set2(data,(closure)&c_7311272,((closureN)self_735047)->elements[4], Cyc_fast_sub(data,&local_7311292, ((closureN)self_735047)->elements[1], obj_int2obj(1)), r_734509);
+object c_7311288 = Cyc_vector_set_cps(data,(closure)&c_7311272,((closureN)self_735047)->elements[4], Cyc_fast_sub(data,&local_7311292, ((closureN)self_735047)->elements[1], obj_int2obj(1)), r_734509);
 return_closcall1(data,(closure)&c_7311272,  c_7311288);; 
 }
 
@@ -2787,7 +2787,7 @@ c_7311214.elements[5] = ((closureN)self_735056)->elements[5];
 
 complex_num_type local_7311234; 
 
-object c_7311230 = Cyc_vector_set2(data,(closure)&c_7311214,((closureN)self_735056)->elements[4], Cyc_fast_sub(data,&local_7311234, ((closureN)self_735056)->elements[1], obj_int2obj(1)), r_734499);
+object c_7311230 = Cyc_vector_set_cps(data,(closure)&c_7311214,((closureN)self_735056)->elements[4], Cyc_fast_sub(data,&local_7311234, ((closureN)self_735056)->elements[1], obj_int2obj(1)), r_734499);
 return_closcall1(data,(closure)&c_7311214,  c_7311230);; 
 }
 
@@ -2989,7 +2989,7 @@ c_7311154.elements[4] = ((closureN)self_735066)->elements[4];
 c_7311154.elements[5] = ((closureN)self_735066)->elements[5];
 
 
-object c_7311170 = Cyc_vector_set2(data,(closure)&c_7311154,((closureN)self_735066)->elements[5], ((closureN)self_735066)->elements[1], r_734490);
+object c_7311170 = Cyc_vector_set_cps(data,(closure)&c_7311154,((closureN)self_735066)->elements[5], ((closureN)self_735066)->elements[1], r_734490);
 return_closcall1(data,(closure)&c_7311154,  c_7311170);; 
 }
 
@@ -3093,7 +3093,7 @@ c_7311121.elements[5] = ((closureN)self_735071)->elements[3];
 c_7311121.elements[6] = ((closureN)self_735071)->elements[4];
 
 
-object c_7311138 = Cyc_vector_set2(data,(closure)&c_7311121,((closureN)self_735071)->elements[4], ((closureN)self_735071)->elements[1], elt_73646_732210_732878);
+object c_7311138 = Cyc_vector_set_cps(data,(closure)&c_7311121,((closureN)self_735071)->elements[4], ((closureN)self_735071)->elements[1], elt_73646_732210_732878);
 return_closcall1(data,(closure)&c_7311121,  c_7311138);; 
 }
 
@@ -3202,7 +3202,7 @@ c_7311082.elements[5] = ((closureN)self_735076)->elements[3];
 c_7311082.elements[6] = ((closureN)self_735076)->elements[4];
 
 
-object c_7311099 = Cyc_vector_set2(data,(closure)&c_7311082,((closureN)self_735076)->elements[4], ((closureN)self_735076)->elements[1], elt_73653_732217_732885);
+object c_7311099 = Cyc_vector_set_cps(data,(closure)&c_7311082,((closureN)self_735076)->elements[4], ((closureN)self_735076)->elements[1], elt_73653_732217_732885);
 return_closcall1(data,(closure)&c_7311082,  c_7311099);; 
 }
 
@@ -7409,13 +7409,13 @@ c_739227.elements[2] = ((closureN)self_734945)->elements[3];
 c_739227.elements[3] = ((closureN)self_734945)->elements[4];
 
 
-object c_739239 = Cyc_vector_set2(data,(closure)&c_739227,((closureN)self_734945)->elements[3], ((closureN)self_734945)->elements[0], r_733994);
+object c_739239 = Cyc_vector_set_cps(data,(closure)&c_739227,((closureN)self_734945)->elements[3], ((closureN)self_734945)->elements[0], r_733994);
 return_closcall1(data,(closure)&c_739227,  c_739239);; 
 }
 
 static void __lambda_366(void *data, int argc, object self_734946, object r_733993) {
   
-object c_739232 = Cyc_vector_set2(data,  ((closureN)self_734946)->elements[1],((closureN)self_734946)->elements[2], ((closureN)self_734946)->elements[0], ((closureN)self_734946)->elements[3]);
+object c_739232 = Cyc_vector_set_cps(data,  ((closureN)self_734946)->elements[1],((closureN)self_734946)->elements[2], ((closureN)self_734946)->elements[0], ((closureN)self_734946)->elements[3]);
 return_closcall1(data,  ((closureN)self_734946)->elements[1],  c_739232);; 
 }
 
@@ -7635,7 +7635,7 @@ c_739139.elements[4] = ((closureN)self_734936)->elements[6];
 
 
 
-object c_739157 = Cyc_vector_set2(data,(closure)&c_739139,((closureN)self_734936)->elements[4], ((closureN)self_734936)->elements[6], Cyc_vector_ref(data, ((closureN)self_734936)->elements[5], ((closureN)self_734936)->elements[0]));
+object c_739157 = Cyc_vector_set_cps(data,(closure)&c_739139,((closureN)self_734936)->elements[4], ((closureN)self_734936)->elements[6], Cyc_vector_ref(data, ((closureN)self_734936)->elements[5], ((closureN)self_734936)->elements[0]));
 return_closcall1(data,(closure)&c_739139,  c_739157);
 } else { 
   
@@ -7657,7 +7657,7 @@ c_739165.elements[4] = ((closureN)self_734936)->elements[6];
 
 
 
-object c_739183 = Cyc_vector_set2(data,(closure)&c_739165,((closureN)self_734936)->elements[4], ((closureN)self_734936)->elements[3], Cyc_vector_ref(data, ((closureN)self_734936)->elements[5], ((closureN)self_734936)->elements[0]));
+object c_739183 = Cyc_vector_set_cps(data,(closure)&c_739165,((closureN)self_734936)->elements[4], ((closureN)self_734936)->elements[3], Cyc_vector_ref(data, ((closureN)self_734936)->elements[5], ((closureN)self_734936)->elements[0]));
 return_closcall1(data,(closure)&c_739165,  c_739183);}
 ;; 
 }
@@ -8271,7 +8271,7 @@ c_738885.elements[2] = ((closureN)self_734911)->elements[2];
 c_738885.elements[3] = r_731008_732679;
 
 
-object c_738899 = Cyc_vector_set2(data,(closure)&c_738885,((closureN)self_734911)->elements[3], ((closureN)self_734911)->elements[0], r_731008_732679);
+object c_738899 = Cyc_vector_set_cps(data,(closure)&c_738885,((closureN)self_734911)->elements[3], ((closureN)self_734911)->elements[0], r_731008_732679);
 return_closcall1(data,(closure)&c_738885,  c_738899);; 
 }
 
@@ -10730,7 +10730,7 @@ c_737926.elements[3] = ((closureN)self_734787)->elements[3];
 c_737926.elements[4] = ((closureN)self_734787)->elements[4];
 
 
-object c_737941 = Cyc_vector_set2(data,(closure)&c_737926,((closureN)self_734787)->elements[4], ((closureN)self_734787)->elements[1], r_733668);
+object c_737941 = Cyc_vector_set_cps(data,(closure)&c_737926,((closureN)self_734787)->elements[4], ((closureN)self_734787)->elements[1], r_733668);
 return_closcall1(data,(closure)&c_737926,  c_737941);; 
 }
 
@@ -10838,7 +10838,7 @@ c_737893.elements[4] = ((closureN)self_734792)->elements[2];
 c_737893.elements[5] = ((closureN)self_734792)->elements[3];
 
 
-object c_737909 = Cyc_vector_set2(data,(closure)&c_737893,((closureN)self_734792)->elements[3], ((closureN)self_734792)->elements[1], elt_73691_732533);
+object c_737909 = Cyc_vector_set_cps(data,(closure)&c_737893,((closureN)self_734792)->elements[3], ((closureN)self_734792)->elements[1], elt_73691_732533);
 return_closcall1(data,(closure)&c_737893,  c_737909);; 
 }
 
@@ -10951,7 +10951,7 @@ c_737854.elements[4] = ((closureN)self_734797)->elements[2];
 c_737854.elements[5] = ((closureN)self_734797)->elements[3];
 
 
-object c_737870 = Cyc_vector_set2(data,(closure)&c_737854,((closureN)self_734797)->elements[3], ((closureN)self_734797)->elements[1], elt_73697_732539);
+object c_737870 = Cyc_vector_set_cps(data,(closure)&c_737854,((closureN)self_734797)->elements[3], ((closureN)self_734797)->elements[1], elt_73697_732539);
 return_closcall1(data,(closure)&c_737854,  c_737870);; 
 }
 

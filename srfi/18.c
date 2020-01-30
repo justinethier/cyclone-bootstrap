@@ -904,7 +904,7 @@ c_73236.elements[0] = k_7393;
 c_73236.elements[1] = ((closureN)self_73128)->elements[1];
 
 
-object c_73243 = Cyc_vector_set2(data,(closure)&c_73236,((closureN)self_73128)->elements[0], obj_int2obj(5), boolean_f);
+object c_73243 = Cyc_vector_set_cps(data,(closure)&c_73236,((closureN)self_73128)->elements[0], obj_int2obj(5), boolean_f);
 return_closcall1(data,(closure)&c_73236,  c_73243);; 
 }
 
@@ -945,7 +945,7 @@ c_73214.elements[0] = ((closureN)self_73131)->elements[0];
 c_73214.elements[1] = ((closureN)self_73131)->elements[2];
 
 
-object c_73226 = Cyc_vector_set2(data,(closure)&c_73214,((closureN)self_73131)->elements[1], obj_int2obj(5), r_7391);
+object c_73226 = Cyc_vector_set_cps(data,(closure)&c_73214,((closureN)self_73131)->elements[1], obj_int2obj(5), r_7391);
 return_closcall1(data,(closure)&c_73214,  c_73226);; 
 }
 
@@ -1010,7 +1010,7 @@ if( (boolean_f != Cyc_is_null(t_7311_7342)) ){
 static void __lambda_6(void *data, int argc, closure _,object k_7376, object t_739_7340, object obj_7310_7341) {
   Cyc_st_add(data, "srfi/18.sld:thread-specific-set!");
 
-object c_73192 = Cyc_vector_set2(data,  k_7376,t_739_7340, obj_int2obj(4), obj_7310_7341);
+object c_73192 = Cyc_vector_set_cps(data,  k_7376,t_739_7340, obj_int2obj(4), obj_7310_7341);
 return_closcall1(data,  k_7376,  c_73192);; 
 }
 

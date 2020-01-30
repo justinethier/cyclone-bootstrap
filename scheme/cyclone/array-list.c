@@ -1107,7 +1107,7 @@ return_closcall2(data,  __glo_store_scheme_cyclone_array_91list,  &c_731391, al_
 
 static void __lambda_98(void *data, int argc, object self_73613, object r_73441) {
   
-object c_731396 = Cyc_vector_set2(data,  ((closureN)self_73613)->elements[1],r_73441, ((closureN)self_73613)->elements[0], ((closureN)self_73613)->elements[2]);
+object c_731396 = Cyc_vector_set_cps(data,  ((closureN)self_73613)->elements[1],r_73441, ((closureN)self_73613)->elements[0], ((closureN)self_73613)->elements[2]);
 return_closcall1(data,  ((closureN)self_73613)->elements[1],  c_731396);; 
 }
 
@@ -1518,7 +1518,7 @@ c_731263.elements[0] = ((closureN)self_73595)->elements[0];
 c_731263.elements[1] = ((closureN)self_73595)->elements[1];
 
 
-object c_731277 = Cyc_vector_set2(data,(closure)&c_731263,((closureN)self_73595)->elements[2], r_73405, boolean_f);
+object c_731277 = Cyc_vector_set_cps(data,(closure)&c_731263,((closureN)self_73595)->elements[2], r_73405, boolean_f);
 return_closcall1(data,(closure)&c_731263,  c_731277);; 
 }
 
@@ -1800,7 +1800,7 @@ c_731194.elements[0] = ((closureN)self_73588)->elements[0];
 c_731194.elements[1] = ((closureN)self_73588)->elements[2];
 
 
-object c_731208 = Cyc_vector_set2(data,(closure)&c_731194,r_73381, ((closureN)self_73588)->elements[1], ((closureN)self_73588)->elements[3]);
+object c_731208 = Cyc_vector_set_cps(data,(closure)&c_731194,r_73381, ((closureN)self_73588)->elements[1], ((closureN)self_73588)->elements[3]);
 return_closcall1(data,(closure)&c_731194,  c_731208);; 
 }
 
@@ -1897,7 +1897,7 @@ c_731130.elements[0] = ((closureN)self_73575)->elements[0];
 c_731130.elements[1] = ((closureN)self_73575)->elements[1];
 
 
-object c_731144 = Cyc_vector_set2(data,(closure)&c_731130,((closureN)self_73575)->elements[2], r_73370, ((closureN)self_73575)->elements[3]);
+object c_731144 = Cyc_vector_set_cps(data,(closure)&c_731130,((closureN)self_73575)->elements[2], r_73370, ((closureN)self_73575)->elements[3]);
 return_closcall1(data,(closure)&c_731130,  c_731144);; 
 }
 

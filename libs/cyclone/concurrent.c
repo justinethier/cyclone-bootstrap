@@ -5934,7 +5934,7 @@ c_732014.elements[0] = ((closureN)self_731102)->elements[0];
 c_732014.elements[1] = ((closureN)self_731102)->elements[1];
 
 
-object c_732055 = Cyc_vector_set2(data,(closure)&c_732014,((closureN)self_731102)->elements[2], ((closureN)self_731102)->elements[3], r_73610);
+object c_732055 = Cyc_vector_set_cps(data,(closure)&c_732014,((closureN)self_731102)->elements[2], ((closureN)self_731102)->elements[3], r_73610);
 return_closcall1(data,(closure)&c_732014,  c_732055);; 
 }
 

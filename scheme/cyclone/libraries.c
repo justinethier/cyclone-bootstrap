@@ -1153,7 +1153,7 @@ static void __lambda_225(void *data, int argc, object self_731200, object r_7310
   
 pair_type local_732829; 
 
-object c_732825 = Cyc_set_cdr2(data,  ((closureN)self_731200)->elements[1],((closureN)self_731200)->elements[0], set_pair_as_expr(&local_732829, ((closureN)self_731200)->elements[2], r_731025));
+object c_732825 = Cyc_set_cdr_cps(data,  ((closureN)self_731200)->elements[1],((closureN)self_731200)->elements[0], set_pair_as_expr(&local_732829, ((closureN)self_731200)->elements[2], r_731025));
 return_closcall1(data,  ((closureN)self_731200)->elements[1],  c_732825);; 
 }
 

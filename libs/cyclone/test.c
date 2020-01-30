@@ -11976,7 +11976,7 @@ pair_type local_739841;
 
 pair_type local_739844; 
 
-object c_739837 = Cyc_set_cdr2(data,  ((closureN)self_734565)->elements[1],((closureN)self_734565)->elements[0], set_pair_as_expr(&local_739841, set_pair_as_expr(&local_739844, quote_gen_91name, ((closureN)self_734565)->elements[2]), r_733192));
+object c_739837 = Cyc_set_cdr_cps(data,  ((closureN)self_734565)->elements[1],((closureN)self_734565)->elements[0], set_pair_as_expr(&local_739841, set_pair_as_expr(&local_739844, quote_gen_91name, ((closureN)self_734565)->elements[2]), r_733192));
 return_closcall1(data,  ((closureN)self_734565)->elements[1],  c_739837);; 
 }
 
@@ -13416,7 +13416,7 @@ pair_type local_739286;
 
 pair_type local_739290; 
 
-object c_739279 = Cyc_set_cdr2(data,  ((closureN)self_734511)->elements[2],((closureN)self_734511)->elements[1], set_pair_as_expr(&local_739283, set_pair_as_expr(&local_739286, ((closureN)self_734511)->elements[0], set_cell_as_expr(&local_739290, ((closureN)self_734511)->elements[3])), r_733060));
+object c_739279 = Cyc_set_cdr_cps(data,  ((closureN)self_734511)->elements[2],((closureN)self_734511)->elements[1], set_pair_as_expr(&local_739283, set_pair_as_expr(&local_739286, ((closureN)self_734511)->elements[0], set_cell_as_expr(&local_739290, ((closureN)self_734511)->elements[3])), r_733060));
 return_closcall1(data,  ((closureN)self_734511)->elements[2],  c_739279);; 
 }
 
@@ -13444,7 +13444,7 @@ static void __lambda_480(void *data, int argc, object self_734510, object r_7330
   
 pair_type local_739267; 
 
-object c_739263 = Cyc_set_cdr2(data,  ((closureN)self_734510)->elements[0],((closureN)self_734510)->elements[2], set_pair_as_expr(&local_739267, ((closureN)self_734510)->elements[1], r_733057));
+object c_739263 = Cyc_set_cdr_cps(data,  ((closureN)self_734510)->elements[0],((closureN)self_734510)->elements[2], set_pair_as_expr(&local_739267, ((closureN)self_734510)->elements[1], r_733057));
 return_closcall1(data,  ((closureN)self_734510)->elements[0],  c_739263);; 
 }
 
@@ -13543,7 +13543,7 @@ pair_type local_739233;
 
 pair_type local_739236; 
 
-object c_739229 = Cyc_set_cdr2(data,  ((closureN)self_734506)->elements[3],((closureN)self_734506)->elements[2], set_pair_as_expr(&local_739233, set_pair_as_expr(&local_739236, ((closureN)self_734506)->elements[1], ((closureN)self_734506)->elements[0]), r_733048));
+object c_739229 = Cyc_set_cdr_cps(data,  ((closureN)self_734506)->elements[3],((closureN)self_734506)->elements[2], set_pair_as_expr(&local_739233, set_pair_as_expr(&local_739236, ((closureN)self_734506)->elements[1], ((closureN)self_734506)->elements[0]), r_733048));
 return_closcall1(data,  ((closureN)self_734506)->elements[3],  c_739229);; 
 }
 
@@ -13571,7 +13571,7 @@ static void __lambda_474(void *data, int argc, object self_734505, object r_7330
   
 complex_num_type local_739217; 
 
-object c_739213 = Cyc_set_cdr2(data,  ((closureN)self_734505)->elements[1],((closureN)self_734505)->elements[2], Cyc_fast_sum(data,&local_739217, ((closureN)self_734505)->elements[0], r_733045));
+object c_739213 = Cyc_set_cdr_cps(data,  ((closureN)self_734505)->elements[1],((closureN)self_734505)->elements[2], Cyc_fast_sum(data,&local_739217, ((closureN)self_734505)->elements[0], r_733045));
 return_closcall1(data,  ((closureN)self_734505)->elements[1],  c_739213);; 
 }
 
@@ -13662,13 +13662,13 @@ pair_type local_739176;
 
 pair_type local_739179; 
 
-object c_739172 = Cyc_set_cdr2(data,  ((closureN)self_734501)->elements[2],((closureN)self_734501)->elements[1], set_pair_as_expr(&local_739176, set_pair_as_expr(&local_739179, ((closureN)self_734501)->elements[0], ((closureN)self_734501)->elements[3]), r_733037));
+object c_739172 = Cyc_set_cdr_cps(data,  ((closureN)self_734501)->elements[2],((closureN)self_734501)->elements[1], set_pair_as_expr(&local_739176, set_pair_as_expr(&local_739179, ((closureN)self_734501)->elements[0], ((closureN)self_734501)->elements[3]), r_733037));
 return_closcall1(data,  ((closureN)self_734501)->elements[2],  c_739172);; 
 }
 
 static void __lambda_468(void *data, int argc, object self_734500, object x_73845_731754) {
   
-object c_739163 = Cyc_set_cdr2(data,  ((closureN)self_734500)->elements[0],x_73845_731754, ((closureN)self_734500)->elements[1]);
+object c_739163 = Cyc_set_cdr_cps(data,  ((closureN)self_734500)->elements[0],x_73845_731754, ((closureN)self_734500)->elements[1]);
 return_closcall1(data,  ((closureN)self_734500)->elements[0],  c_739163);; 
 }
 
