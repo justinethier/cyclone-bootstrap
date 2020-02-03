@@ -2184,6 +2184,8 @@ object Cyc_vector_set_unsafe(void *data, object v, object k, object obj)
   return v;
 }
 
+// Prevent the possibility of a race condition by doing the actual mutation
+// after all relevant objects have been relocated to the heap
 static void Cyc_set_car_cps_gc_return(void *data, int argc, object cont, object l, object val, object next)
 {
   car(l) = val;
@@ -2200,16 +2202,7 @@ object Cyc_set_car_cps(void *data, object cont, object l, object val)
   // Alternate write barrier
   int do_gc = 0;
   val = transport_stack_value(data, l, val, &do_gc);
-
   gc_mut_update((gc_thread_data *) data, car(l), val);
-// TODO: is there a race condition here between the collector (potentially with a stack value here) and the mutator (which is doing GC next?)
-// maybe we need to wait until after gc is finished before doing the actual mutation. that implies we need to create another continuation (that will do the mutation) and 
-// return to there from GC.
-// NOTE set-cdr and vector-set are also affected. probably global_set too
-// once this change is made need to retest maze benchmark extensively in particular (as it was crashing previously) as well as entire suite. need to make sure this is
-// rock solid before it goes back to master
-  
-//  car(l) = val;
   add_mutation(data, l, -1, val); // Ensure val is transported
   if (do_gc) {
     mclosure0(clo, (function_type)Cyc_set_car_cps_gc_return);
