@@ -22,6 +22,17 @@
 #include <dlfcn.h>
 #include "cyclone/bignum.h"
 
+#ifdef CYC_HIGH_RES_TIMERS
+/**
+ * \defgroup hrt High resolution timers
+ */
+/**@{*/
+long long hrt_get_current();
+long long hrt_cmp_current(long long tstamp);
+void hrt_log_delta(const char *label, long long tstamp);
+/**@}*/
+#endif
+
 /**
  * Generic object type
  * \ingroup objects
@@ -135,7 +146,7 @@ typedef unsigned char tag_type;
 #define GC_DEBUG_SHOW_SWEEP_DIAG 0
 
 /** GC debugging flag */
-#define GC_DEBUG_TRACE 0
+#define GC_DEBUG_TRACE 1
 
 /** GC debugging flag */
 #define GC_DEBUG_VERBOSE 0
