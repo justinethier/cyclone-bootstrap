@@ -146,7 +146,7 @@ typedef unsigned char tag_type;
 #define GC_DEBUG_SHOW_SWEEP_DIAG 0
 
 /** GC debugging flag */
-#define GC_DEBUG_TRACE 1
+#define GC_DEBUG_TRACE 0
 
 /** GC debugging flag */
 #define GC_DEBUG_VERBOSE 0
