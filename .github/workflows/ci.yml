@@ -27,5 +27,5 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: create deb
-        path: DEBIAN/*.deb
+        path: DEBIAN/cyclone-scheme_0.15_amd64.deb
     
