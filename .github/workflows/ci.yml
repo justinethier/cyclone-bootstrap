@@ -27,5 +27,6 @@ jobs:
     - uses: actions/upload-artifact@v1
       with:
         name: create deb
+        if: matrix.arch == '64'
         path: DEBIAN/cyclone-scheme_0.15_amd64.deb
     
