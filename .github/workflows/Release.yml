@@ -1,0 +1,33 @@
+name: Release
+
+on: [create]
+
+jobs:
+  build:
+
+    runs-on: ubuntu-latest
+    
+    strategy:    
+      matrix:
+        arch: [64]
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install ck
+      run: sudo apt-get install libck-dev
+    - name: make
+      run: make
+    - name: make install
+      run: sudo make install
+    - name: make test
+      run: make test
+    - name: make deb
+      run: make deb
+            
+    - name: upload deb
+      if: matrix.arch == '64'
+      uses: actions/upload-artifact@v1
+      with:
+        name: cyclone-scheme deb
+        path: DEBIAN/cyclone-scheme_0.15_amd64.deb
+    
