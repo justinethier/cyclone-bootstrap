@@ -1,6 +1,6 @@
-name: Ubuntu Linux Build
+name: Release
 
-on: [push]
+on: [create]
 
 jobs:
   build:
@@ -9,7 +9,7 @@ jobs:
     
     strategy:    
       matrix:
-        arch: [32, 64]
+        arch: [64]
     
     steps:
     - uses: actions/checkout@v1
@@ -24,10 +24,10 @@ jobs:
     - name: make deb
       run: make deb
             
-    #- name: upload deb
-    #  if: matrix.arch == '64'
-    #  uses: actions/upload-artifact@v1
-    #  with:
-    #    name: cyclone-scheme deb
-    #    path: DEBIAN/cyclone-scheme_0.15_amd64.deb
+    - name: upload deb
+      if: matrix.arch == '64'
+      uses: actions/upload-artifact@v1
+      with:
+        name: cyclone-scheme deb
+        path: DEBIAN/cyclone-scheme_0.15_amd64.deb
     
