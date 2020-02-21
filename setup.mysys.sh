@@ -42,3 +42,4 @@ cp -v Makefile.config.msys2 Makefile.config
 perl -pi -e 's/-shared /-Wl,-undefined -shared /' Makefile
 make
 make install
+make test
