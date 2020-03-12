@@ -1,6 +1,7 @@
 name: Release
 
-on: [create]
+#on: [create]
+on: [push]
 
 jobs:
   build:
@@ -29,5 +30,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: cyclone-scheme deb
-        path: DEBIAN/cyclone-scheme_0.15_amd64.deb
+        path: DEBIAN/cyclone-scheme_0.16_amd64.deb
     
