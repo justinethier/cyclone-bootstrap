@@ -14428,7 +14428,7 @@ static void __lambda_404(void *data, int argc, object self_735135, object r_7325
   
 list_2_type local_739414; 
 
-make_utf8_string_with_len(c_739415, "boolean_f", 9, 9);
+make_utf8_string_with_len(c_739415, "", 0, 0);
 return_closcall1(data,  ((closureN)self_735135)->elements[7],  Cyc_fast_list_2(&local_739414, &c_739415, ((closureN)self_735135)->elements[1]));
 } else { 
   
