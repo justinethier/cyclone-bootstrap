@@ -209,7 +209,7 @@ if (obj_is_not_closure(clo)) { \
 
 #include "cyclone/types.h"
 object __glo_lib_91init_117cycloneforeign_cyclone_foreign = NULL;
-object __glo_c_91defun_cyclone_foreign = NULL;
+object __glo_c_91define_cyclone_foreign = NULL;
 object __glo_c_91_125scm_cyclone_foreign = NULL;
 object __glo_scm_91_125c_cyclone_foreign = NULL;
 object __glo_c_91code_cyclone_foreign = NULL;
@@ -576,7 +576,7 @@ return_closcall1(data,  k_73405,  obj_int2obj(0));;
 }
 
 static void __lambda_7(void *data, int argc, closure _,object k_73337, object expr_7337_73121, object rename_7338_73122, object compare_7339_73123) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-defun");
+  Cyc_st_add(data, "cyclone/foreign.sld:c-define");
 
 closureN_type c_73810;
 object e_731030 [2];
@@ -1618,7 +1618,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_lambda = find_or_add_symbol("lambda");
 
   add_global("__glo_lib_91init_117cycloneforeign_cyclone_foreign", (object *) &__glo_lib_91init_117cycloneforeign_cyclone_foreign);
-  add_global("__glo_c_91defun_cyclone_foreign", (object *) &__glo_c_91defun_cyclone_foreign);
+  add_global("__glo_c_91define_cyclone_foreign", (object *) &__glo_c_91define_cyclone_foreign);
   add_global("__glo_c_91_125scm_cyclone_foreign", (object *) &__glo_c_91_125scm_cyclone_foreign);
   add_global("__glo_scm_91_125c_cyclone_foreign", (object *) &__glo_scm_91_125c_cyclone_foreign);
   add_global("__glo_c_91code_cyclone_foreign", (object *) &__glo_c_91code_cyclone_foreign);
@@ -1647,7 +1647,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_731094, (function_type)__lambda_39);c_731094.num_args = 0; 
   __glo_lib_91init_117cycloneforeign_cyclone_foreign = &c_731094; 
   mmacro(c_73808, (function_type)__lambda_7);c_73808.num_args = 3; 
-  __glo_c_91defun_cyclone_foreign = &c_73808; 
+  __glo_c_91define_cyclone_foreign = &c_73808; 
   mmacro(c_73605, (function_type)__lambda_6);c_73605.num_args = 3; 
   __glo_c_91_125scm_cyclone_foreign = &c_73605; 
   mmacro(c_73487, (function_type)__lambda_5);c_73487.num_args = 3; 
@@ -1659,7 +1659,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   mclosure0(clo_731097, c_cycloneforeign_inlinable_lambdas); make_pair(pair_731096, find_or_add_symbol("c_cycloneforeign_inlinable_lambdas"), &clo_731097);
   make_cvar(cvar_731098, (object *)&__glo_lib_91init_117cycloneforeign_cyclone_foreign);make_pair(pair_731099, find_or_add_symbol("lib-init:cycloneforeign"), &cvar_731098);
-  make_cvar(cvar_731100, (object *)&__glo_c_91defun_cyclone_foreign);make_pair(pair_731101, find_or_add_symbol("c-defun"), &cvar_731100);
+  make_cvar(cvar_731100, (object *)&__glo_c_91define_cyclone_foreign);make_pair(pair_731101, find_or_add_symbol("c-define"), &cvar_731100);
   make_cvar(cvar_731102, (object *)&__glo_c_91_125scm_cyclone_foreign);make_pair(pair_731103, find_or_add_symbol("c->scm"), &cvar_731102);
   make_cvar(cvar_731104, (object *)&__glo_scm_91_125c_cyclone_foreign);make_pair(pair_731105, find_or_add_symbol("scm->c"), &cvar_731104);
   make_cvar(cvar_731106, (object *)&__glo_c_91code_cyclone_foreign);make_pair(pair_731107, find_or_add_symbol("c-code"), &cvar_731106);
