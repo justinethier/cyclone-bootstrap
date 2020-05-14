@@ -2201,7 +2201,7 @@ c_732194.elements[0] = ((closureN)self_73988)->elements[0];
 c_732194.elements[1] = ((closureN)self_73988)->elements[1];
 
 
-make_utf8_string_with_len(c_732213, "make_double(", 12, 12);
+make_utf8_string_with_len(c_732213, "make_utf8_string(data,", 22, 22);
 
 make_utf8_string_with_len(c_732215, ", ", 2, 2);
 
@@ -2914,7 +2914,7 @@ pair_type local_731874;
 
 pair_type local_731877; 
 
-make_utf8_string_with_len(c_731878, "make_double(", 12, 12);
+make_utf8_string_with_len(c_731878, "make_utf8_string(data,", 22, 22);
 
 pair_type local_731881; 
 

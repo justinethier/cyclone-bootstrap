@@ -161,7 +161,7 @@
            (let ((var (mangle (gensym 'var))))
            (cons
              (string-append 
-               "make_double(" var ", " ,code ");")
+               "make_utf8_string(data," var ", " ,code ");")
              (string-append "&" var)
            )))
 ;TODO:

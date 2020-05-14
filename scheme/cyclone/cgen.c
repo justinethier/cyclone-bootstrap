@@ -852,6 +852,7 @@ extern object __glo_c_91value_cyclone_foreign;
 extern object __glo_c_91define_cyclone_foreign;
 extern object __glo_c_91_125scm_cyclone_foreign;
 extern object __glo_scm_91_125c_cyclone_foreign;
+extern object __glo_c_91define_91type_cyclone_foreign;
 extern object __glo_prim_127_scheme_cyclone_primitives;
 extern object __glo__85primitives_85_scheme_cyclone_primitives;
 extern object __glo__85primitives_91num_91args_85_scheme_cyclone_primitives;
@@ -18902,7 +18903,7 @@ c_739634.elements[0] = ((closureN)self_735210)->elements[1];
 c_739634.elements[1] = var_73621_731568;
 
 
-make_utf8_string_with_len(c_739653, "make_double(", 12, 12);
+make_utf8_string_with_len(c_739653, "make_utf8_string(data,", 22, 22);
 
 make_utf8_string_with_len(c_739654, ", ", 2, 2);
 
