@@ -2355,7 +2355,7 @@ return_closcall2(data,  car(((closureN)self_731497)->elements[0]),  ((closureN)s
 static void __lambda_218(void *data, int argc, object self_731498, object k_731195) {
     
 if( (boolean_f != car(((closureN)self_731498)->elements[2])) ){ 
-  return_closcall1(data,  k_731195,  boolean_f);
+  return_closcall1(data,  k_731195,  Cyc_VOID);
 } else { 
   
 closureN_type c_733354;
@@ -4208,7 +4208,7 @@ return_closcall4(data,  __glo_Cyc_91for_91each_91loop_912_scheme_base,  &c_73260
 static void __lambda_126(void *data, int argc, object self_731424, object k_73991, object x_73235_73534, object y_73236_73535) {
     
 if( (boolean_f != equalp(x_73235_73534, y_73236_73535)) ){ 
-  return_closcall1(data,  k_73991,  boolean_f);
+  return_closcall1(data,  k_73991,  Cyc_VOID);
 } else { 
   return_closcall2(data,  ((closureN)self_731424)->elements[0],  k_73991, boolean_f);}
 ;; 
@@ -5601,7 +5601,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, ((closureN)self_731371)->elements[3],
 make_utf8_string_with_len(c_732083, "Too few arguments supplied", 26, 26);
 return_closcall4(data,  __glo_error_scheme_base,  k_73862, &c_732083, ((closureN)self_731371)->elements[1], ((closureN)self_731371)->elements[0]);
 } else { 
-  return_closcall1(data,  k_73862,  boolean_f);}
+  return_closcall1(data,  k_73862,  Cyc_VOID);}
 ;; 
 }
 

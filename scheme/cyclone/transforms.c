@@ -2778,7 +2778,7 @@ static void __lambda_619(void *data, int argc, object self_733316, object r_7325
 make_utf8_string_with_len(c_738408, "Call of non-procedure: ", 23, 23);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_733316)->elements[1], &c_738408, ((closureN)self_733316)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_733316)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_733316)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -7073,7 +7073,7 @@ return_direct_with_clo1(data,(closure)&c_736878,__lambda_438,  equalp(r_732139, 
 
 static void __lambda_438(void *data, int argc, object self_733105, object r_732138) {
   if( (boolean_f != r_732138) ){ 
-  return_closcall1(data,  ((closureN)self_733105)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_733105)->elements[1],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_736883, "duplicate lambda parameter(s)", 29, 29);
@@ -7540,7 +7540,7 @@ c_736613.elements[2] = ((closureN)self_733076)->elements[3];
 
 
 pair_type local_736624; 
-return_closcall3(data,  __glo_append_scheme_base,  &c_736613, ((closureN)self_733076)->elements[0], set_cell_as_expr(&local_736624, boolean_f));}
+return_closcall3(data,  __glo_append_scheme_base,  &c_736613, ((closureN)self_733076)->elements[0], set_cell_as_expr(&local_736624, Cyc_VOID));}
 ;; 
 }
 
@@ -10094,7 +10094,7 @@ return_closcall2(data,  __glo_const_127_scheme_cyclone_util,  &c_735499, ((closu
 
 static void __lambda_270(void *data, int argc, object self_732961, object r_731821) {
   if( (boolean_f != r_731821) ){ 
-  return_closcall1(data,  ((closureN)self_732961)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732961)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_735503;
@@ -10115,7 +10115,7 @@ return_closcall2(data,  __glo_prim_127_scheme_cyclone_primitives,  &c_735503, ((
 
 static void __lambda_271(void *data, int argc, object self_732962, object r_731822) {
   if( (boolean_f != r_731822) ){ 
-  return_closcall1(data,  ((closureN)self_732962)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732962)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_735507;
@@ -10139,7 +10139,7 @@ return_direct_with_clo1(data,(closure)&c_735507,__lambda_272,  ((inline_function
 
 static void __lambda_272(void *data, int argc, object self_732963, object r_731823) {
   if( (boolean_f != r_731823) ){ 
-  return_closcall1(data,  ((closureN)self_732963)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732963)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_735511;
@@ -10160,7 +10160,7 @@ return_closcall2(data,  __glo_quote_127_scheme_cyclone_util,  &c_735511, ((closu
 
 static void __lambda_273(void *data, int argc, object self_732964, object r_731824) {
   if( (boolean_f != r_731824) ){ 
-  return_closcall1(data,  ((closureN)self_732964)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732964)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_735515;
@@ -10315,7 +10315,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_732972)->eleme
 }
 
 static void __lambda_282(void *data, int argc, object self_732973, object r_731839) {
-  return_closcall1(data,  ((closureN)self_732973)->elements[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_732973)->elements[0],  Cyc_VOID);; 
 }
 
 static void __lambda_279(void *data, int argc, object self_732970, object r_731833) {
@@ -10353,7 +10353,7 @@ return_closcall2(data,  __glo_analyze_91mutable_91variables_scheme_cyclone_trans
 }
 
 static void __lambda_275(void *data, int argc, object self_732966, object r_731826) {
-  return_closcall1(data,  ((closureN)self_732966)->elements[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_732966)->elements[0],  Cyc_VOID);; 
 }
 
 static void __lambda_268(void *data, int argc, object self_732959, object r_731820) {
@@ -10373,7 +10373,7 @@ return_closcall3(data,  __glo_Cyc_91map_91loop_911_scheme_base,  &c_735492, __gl
 }
 
 static void __lambda_269(void *data, int argc, object self_732960, object r_731819) {
-  return_closcall1(data,  ((closureN)self_732960)->elements[0],  boolean_f);; 
+  return_closcall1(data,  ((closureN)self_732960)->elements[0],  Cyc_VOID);; 
 }
 
 static void __lambda_262(void *data, int argc, closure _,object k_731807, object symbol_73315_731018) {
@@ -12010,7 +12010,7 @@ c_734945.elements[1] = ((closureN)self_732879)->elements[2];
 
 return_closcall2(data,  __glo_define_91c_91_125inline_91var_scheme_cyclone_util,  &c_734945, ((closureN)self_732879)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_732879)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_732879)->elements[2],  Cyc_VOID);}
 ;; 
 }
 
@@ -12107,7 +12107,7 @@ c_734918.elements[1] = ((closureN)self_732884)->elements[2];
 
 return_closcall2(data,  __glo_define_91_125var_scheme_cyclone_util,  &c_734918, ((closureN)self_732884)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_732884)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_732884)->elements[2],  Cyc_VOID);}
 ;; 
 }
 
@@ -12233,7 +12233,7 @@ static void __lambda_182(void *data, int argc, object self_732870, object r_7316
   if( (boolean_f != r_731678) ){ 
   return_closcall2(data,  ((closureN)self_732870)->elements[1],  ((closureN)self_732870)->elements[0], boolean_t);
 } else { 
-  return_closcall1(data,  ((closureN)self_732870)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_732870)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -13367,7 +13367,7 @@ static void __lambda_131(void *data, int argc, object self_732841, object r_7315
   if( (boolean_f != r_731506) ){ 
   return_closcall2(data,  ((closureN)self_732841)->elements[1],  ((closureN)self_732841)->elements[0], boolean_f);
 } else { 
-  return_closcall1(data,  ((closureN)self_732841)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_732841)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -14163,12 +14163,12 @@ static void __lambda_678(void *data, int argc, closure _, object k, object sym1,
    }
 static object __lambda_677(void *data, object ptr) {
   Cyc_st_add(data, "scheme/cyclone/transforms.sld:void");
-return_copy(ptr,  boolean_f);; 
+return_copy(ptr,  Cyc_VOID);; 
 }
 
 static void __lambda_80(void *data, int argc, closure _,object k_731323) {
   Cyc_st_add(data, "scheme/cyclone/transforms.sld:void");
-return_closcall1(data,  k_731323,  boolean_f);; 
+return_closcall1(data,  k_731323,  Cyc_VOID);; 
 }
 
 static void __lambda_77(void *data, int argc, closure _,object k_731312, object e_7373_73900, object lst_7374_73901) {
@@ -15540,7 +15540,7 @@ return_direct_with_clo1(data,(closure)&c_733585,__lambda_41,  memberp(data, quot
 
 static void __lambda_41(void *data, int argc, object self_732799, object r_731234) {
   if( (boolean_f != r_731234) ){ 
-  return_closcall1(data,  ((closureN)self_732799)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732799)->elements[2],  Cyc_VOID);
 } else { 
   
 
@@ -15682,7 +15682,7 @@ return_direct_with_clo1(data,(closure)&c_733521,__lambda_31,  memberp(data, quot
 
 static void __lambda_31(void *data, int argc, object self_732792, object r_731222) {
   if( (boolean_f != r_731222) ){ 
-  return_closcall1(data,  ((closureN)self_732792)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732792)->elements[2],  Cyc_VOID);
 } else { 
   
 
@@ -15908,7 +15908,7 @@ return_direct_with_clo1(data,(closure)&c_733405,__lambda_16,  memberp(data, quot
 
 static void __lambda_16(void *data, int argc, object self_732778, object r_731200) {
   if( (boolean_f != r_731200) ){ 
-  return_closcall1(data,  ((closureN)self_732778)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_732778)->elements[2],  Cyc_VOID);
 } else { 
   
 

@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -591,6 +591,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -661,6 +662,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(first);
 defsymbol(second);
@@ -5861,7 +5863,7 @@ c_7310203.elements[4] = rest_73979_731914;
 
 return_direct_with_clo1(data,(closure)&c_7310203,__lambda_738,  Cyc_car(data, rest_73979_731914));
 } else { 
-  return_closcall1(data,  k_733353,  boolean_f);}
+  return_closcall1(data,  k_733353,  Cyc_VOID);}
 ;; 
 }
 
@@ -9413,7 +9415,7 @@ c_739038.elements[4] = ((closureN)self_734260)->elements[2];
 
 return_closcall2(data,  ((closureN)self_734260)->elements[0],  &c_739038, Cyc_car(data, lis_73672_731788));
 } else { 
-  return_closcall1(data,  k_733121,  boolean_f);}
+  return_closcall1(data,  k_733121,  Cyc_VOID);}
 ;; 
 }
 
@@ -10884,7 +10886,7 @@ return_closcall2(data,  __glo_null_91list_127_srfi_1,  &c_738492, lis1_73598_731
 
 static void __lambda_497(void *data, int argc, object self_734191, object r_733020) {
   if( (boolean_f != r_733020) ){ 
-  return_closcall1(data,  ((closureN)self_734191)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_734191)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_738497;
@@ -11167,7 +11169,7 @@ return_closcall2(data,  __glo_null_91list_127_srfi_1,  &c_738434, lis_73589_7317
 
 static void __lambda_487(void *data, int argc, object self_734180, object r_733007) {
   if( (boolean_f != r_733007) ){ 
-  return_closcall1(data,  ((closureN)self_734180)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_734180)->elements[0],  Cyc_VOID);
 } else { 
   
 closureN_type c_738438;
@@ -11331,7 +11333,7 @@ c_738387.elements[2] = tails_73585_731726;
 object c_738397 = apply(data,(closure)&c_738387,((closureN)self_734173)->elements[3], ((closureN)self_734173)->elements[1]);
 return_closcall1(data,(closure)&c_738387,  c_738397);
 } else { 
-  return_closcall1(data,  ((closureN)self_734173)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_734173)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -19892,7 +19894,7 @@ static void __lambda_92(void *data, int argc, object self_733801, object r_73229
     
   
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_733801)->elements[1]))) ){ 
-  return_closcall1(data,  ((closureN)self_733801)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_733801)->elements[0],  Cyc_VOID);
 } else { 
   
 
@@ -19909,7 +19911,7 @@ if( (boolean_f != Cyc_num_fast_lt_op(data, ((closureN)self_733802)->elements[0],
 make_utf8_string_with_len(c_735324, "Negative step count", 19, 19);
 return_closcall4(data,  __glo_error_scheme_base,  k_732298, &c_735324, __glo_iota_srfi_1, ((closureN)self_733802)->elements[0]);
 } else { 
-  return_closcall1(data,  k_732298,  boolean_f);}
+  return_closcall1(data,  k_732298,  Cyc_VOID);}
 ;; 
 }
 

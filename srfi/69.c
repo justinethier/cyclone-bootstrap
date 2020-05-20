@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -528,6 +528,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -591,6 +592,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_75make_91hash_91node);
 defsymbol(_75hash_91node_91set_91value_67);
@@ -2454,7 +2456,7 @@ c_732204.elements[1] = ((closureN)self_731093)->elements[1];
 
 return_closcall2(data,  __glo_hash_91table_91size_srfi_69,  &c_732204, ((closureN)self_731093)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731093)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731093)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -3189,7 +3191,7 @@ complex_num_type local_732006;
 object c_732003 = Cyc_make_vector(data,(closure)&c_731961,2,Cyc_fast_mul(data,&local_732006, obj_int2obj(2), ((closureN)self_731051)->elements[0]), NULL);
 return_closcall1(data,(closure)&c_731961,  c_732003);
 } else { 
-  return_closcall1(data,  ((closureN)self_731051)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731051)->elements[2],  Cyc_VOID);}
 ;; 
 }
 

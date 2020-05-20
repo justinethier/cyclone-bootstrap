@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -379,6 +379,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -512,6 +513,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_variable_127_191_191inline_191_191_scheme_eval;
 extern object __glo_assignment_91variable_191_191inline_191_191_scheme_eval;
 extern object __glo_assignment_91value_191_191inline_191_191_scheme_eval;
@@ -706,12 +708,12 @@ static void __lambda_2(void *data, int argc, closure _,object k_73267) ;
 static void __lambda_3(void *data, int argc, object self_731051, object r_73268) ;
 
 static void __lambda_116(void *data, int argc, closure _,object k_731048) {
-  Cyc_st_add(data, "cyclone/foreign.sld:lib-init:cycloneforeign");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:lib-init:cycloneforeign");
 return_closcall1(data,  k_731048,  obj_int2obj(0));; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_73792, object expr_7360_73212, object rename_7361_73213, object compare_7362_73214) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define");
 
 closureN_type c_732261;
 object e_733219 [2];
@@ -1339,7 +1341,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_length(data, ((closureN)self_7311
 
 return_direct_with_clo1(data,  k_73971,__lambda_113,  Cyc_set_cell(data, ((closureN)self_731154)->elements[0], boolean_t));
 } else { 
-  return_direct_with_clo1(data,  k_73971,__lambda_113,  boolean_f);}
+  return_direct_with_clo1(data,  k_73971,__lambda_113,  Cyc_VOID);}
 ;; 
 }
 
@@ -1413,7 +1415,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_length(data, ((closureN)self_7311
 
 return_direct_with_clo1(data,  k_73994,__lambda_104,  Cyc_set_cell(data, ((closureN)self_731159)->elements[0], boolean_t));
 } else { 
-  return_direct_with_clo1(data,  k_73994,__lambda_104,  boolean_f);}
+  return_direct_with_clo1(data,  k_73994,__lambda_104,  Cyc_VOID);}
 ;; 
 }
 
@@ -1935,7 +1937,7 @@ return_closcall1(data,  ((closureN)self_731082)->elements[3],  set_pair_as_expr(
 static void __lambda_83(void *data, int argc, object self_731090, object k_73865) {
     
 if( (boolean_f != car(((closureN)self_731090)->elements[0])) ){ 
-  return_direct_with_clo1(data,  k_73865,__lambda_84,  boolean_f);
+  return_direct_with_clo1(data,  k_73865,__lambda_84,  Cyc_VOID);
 } else { 
   
 
@@ -3006,7 +3008,7 @@ return_direct_with_clo1(data,  k_731020,__lambda_25,  Cyc_caddr(data, ((closureN
 }
 
 static void __lambda_20(void *data, int argc, closure _,object k_73495, object expr_7352_73207, object rename_7353_73208, object compare_7354_73209) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c->scm");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c->scm");
 
 pair_type local_731717; 
 
@@ -3417,7 +3419,7 @@ return_closcall1(data,  k_73495,  set_pair_as_expr(&local_731717, quote__case, s
 }
 
 static void __lambda_19(void *data, int argc, closure _,object k_73354, object expr_7344_73202, object rename_7345_73203, object compare_7346_73204) {
-  Cyc_st_add(data, "cyclone/foreign.sld:scm->c");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:scm->c");
 
 pair_type local_731425; 
 
@@ -3648,7 +3650,7 @@ return_closcall1(data,  k_73354,  set_pair_as_expr(&local_731425, quote__case, s
 }
 
 static void __lambda_16(void *data, int argc, closure _,object k_73344, object expr_7337_73198, object rename_7338_73199, object compare_7339_73200) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-code");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-code");
 
 closureN_type c_731402;
 object e_731411 [2];
@@ -3672,7 +3674,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73140
 static void __lambda_18(void *data, int argc, object self_731064, object k_73350, object arg_7340_73201) {
     
 if( (boolean_f != Cyc_is_string(arg_7340_73201)) ){ 
-  return_closcall1(data,  k_73350,  boolean_f);
+  return_closcall1(data,  k_73350,  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731417, "c-code", 6, 6);
@@ -3691,7 +3693,7 @@ return_closcall1(data,  ((closureN)self_731063)->elements[1],  set_pair_as_expr(
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_73281, object expr_7312_73191, object rename_7313_73192, object compare_7314_73193) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-value");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-value");
 
 closureN_type c_731227;
 object e_731397 [2];
@@ -3988,12 +3990,12 @@ if( (boolean_f != Cyc_num_fast_eq_op(data, obj_int2obj(3), Cyc_length(data, ((cl
 
 return_closcall1(data,  ((closureN)self_731062)->elements[2],  Cyc_set_cell(data, ((closureN)self_731062)->elements[0], Cyc_caddr(data, ((closureN)self_731062)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_731062)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731062)->elements[2],  Cyc_VOID);}
 ;; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73247, object expr_731_73186, object rename_732_73187, object compare_733_73188) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define-type");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define-type");
 closureN_type c_731188;
 object e_731224 [2];
 c_731188.hdr.mark = gc_color_red;
@@ -4050,7 +4052,7 @@ static void __lambda_5(void *data, int argc, object self_731050, object r_73251)
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_73267) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define-type");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define-type");
 
 closureN_type c_731164;
 object e_731181 [1];

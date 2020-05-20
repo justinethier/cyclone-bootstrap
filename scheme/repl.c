@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -325,6 +325,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -392,6 +393,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_variable_127_191_191inline_191_191_scheme_eval;
 extern object __glo_assignment_91variable_191_191inline_191_191_scheme_eval;
 extern object __glo_assignment_91value_191_191inline_191_191_scheme_eval;
@@ -947,7 +949,7 @@ static void __lambda_22(void *data, int argc, object self_73104, object k_7368) 
   
   
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, car(((closureN)self_73104)->elements[0])))) ){ 
-  return_closcall1(data,  k_7368,  boolean_f);
+  return_closcall1(data,  k_7368,  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_73193, ": ", 2, 2);
@@ -1068,7 +1070,7 @@ return_closcall2(data,  __glo_error_91object_91irritants_scheme_base,  &c_73135,
 static void __lambda_12(void *data, int argc, object self_7393, object r_7356) {
     
 if( (boolean_f != Cyc_is_null(r_7356)) ){ 
-  return_closcall1(data,  ((closureN)self_7393)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_7393)->elements[0],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_73142, ": ", 2, 2);

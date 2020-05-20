@@ -4829,7 +4829,7 @@ if( (boolean_f != Cyc_eq(((closureN)self_7313765)->elements[1], Cyc_caar(data, C
 make_utf8_string_with_len(c_7326561, "same binding for record rtd and constructor", 43, 43);
 return_closcall3(data,  __glo_error_scheme_base,  k_737824, &c_7326561, ((closureN)self_7313765)->elements[1]);
 } else { 
-  return_closcall1(data,  k_737824,  boolean_f);}
+  return_closcall1(data,  k_737824,  Cyc_VOID);}
 ;; 
 }
 
@@ -21403,7 +21403,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73191
 static void __lambda_528(void *data, int argc, object self_7313244, object k_735518, object o_73721_733245) {
     
 if( (boolean_f != Cyc_eq(o_73721_733245, ((closureN)self_7313244)->elements[0])) ){ 
-  return_closcall1(data,  k_735518,  boolean_f);
+  return_closcall1(data,  k_735518,  Cyc_VOID);
 } else { 
   return_closcall2(data,  ((closureN)self_7313244)->elements[1],  k_735518, boolean_f);}
 ;; 
@@ -25549,7 +25549,7 @@ load_varargs(lists_73528_733102, lists_73528_733102_raw, argc - 3);
   Cyc_st_add(data, "scheme/base.sld:for-each");
   
 if( (boolean_f != Cyc_is_null(lis1_73527_733101)) ){ 
-  return_closcall1(data,  k_735161,  boolean_f);
+  return_closcall1(data,  k_735161,  Cyc_VOID);
 } else { 
     
 if( (boolean_f != Cyc_is_pair(lists_73528_733102)) ){ 
@@ -25726,7 +25726,7 @@ c_7317479.elements[2] = ((closureN)self_7313072)->elements[1];
 object c_7317489 = apply(data,(closure)&c_7317479,((closureN)self_7313072)->elements[0], cars_73533_733106);
 return_closcall1(data,(closure)&c_7317479,  c_7317489);
 } else { 
-  return_closcall1(data,  k_735170,  boolean_f);}
+  return_closcall1(data,  k_735170,  Cyc_VOID);}
 ;; 
 }
 
@@ -30407,7 +30407,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_7312889)->elements[
 make_utf8_string_with_len(c_7315443, "no unless body", 14, 14);
 return_closcall3(data,  __glo_error_scheme_base,  k_734528, &c_7315443, ((closureN)self_7312889)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734528,  boolean_f);}
+  return_closcall1(data,  k_734528,  Cyc_VOID);}
 ;; 
 }
 
@@ -30419,7 +30419,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7312890)->elements[0
 make_utf8_string_with_len(c_7315430, "empty unless", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_734531, &c_7315430, ((closureN)self_7312890)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734531,  boolean_f);}
+  return_closcall1(data,  k_734531,  Cyc_VOID);}
 ;; 
 }
 
@@ -30512,7 +30512,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_7312885)->elements[
 make_utf8_string_with_len(c_7315385, "no when body", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_734504, &c_7315385, ((closureN)self_7312885)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734504,  boolean_f);}
+  return_closcall1(data,  k_734504,  Cyc_VOID);}
 ;; 
 }
 
@@ -30524,7 +30524,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7312886)->elements[0
 make_utf8_string_with_len(c_7315372, "empty when", 10, 10);
 return_closcall3(data,  __glo_error_scheme_base,  k_734507, &c_7315372, ((closureN)self_7312886)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734507,  boolean_f);}
+  return_closcall1(data,  k_734507,  Cyc_VOID);}
 ;; 
 }
 
@@ -33153,7 +33153,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_7312783)->elements[
 make_utf8_string_with_len(c_7314195, "no let* body", 12, 12);
 return_closcall3(data,  __glo_error_scheme_base,  k_734163, &c_7314195, ((closureN)self_7312783)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734163,  boolean_f);}
+  return_closcall1(data,  k_734163,  Cyc_VOID);}
 ;; 
 }
 
@@ -33165,7 +33165,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7312784)->elements[0
 make_utf8_string_with_len(c_7314182, "empty let*", 10, 10);
 return_closcall3(data,  __glo_error_scheme_base,  k_734166, &c_7314182, ((closureN)self_7312784)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734166,  boolean_f);}
+  return_closcall1(data,  k_734166,  Cyc_VOID);}
 ;; 
 }
 
@@ -33526,7 +33526,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cddr(data, ((closureN)self_7312773)->elements[
 make_utf8_string_with_len(c_7314009, "no let body", 11, 11);
 return_closcall3(data,  __glo_error_scheme_base,  k_734118, &c_7314009, ((closureN)self_7312773)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734118,  boolean_f);}
+  return_closcall1(data,  k_734118,  Cyc_VOID);}
 ;; 
 }
 
@@ -33538,7 +33538,7 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7312774)->elements[0
 make_utf8_string_with_len(c_7313996, "empty let", 9, 9);
 return_closcall3(data,  __glo_error_scheme_base,  k_734121, &c_7313996, ((closureN)self_7312774)->elements[0]);
 } else { 
-  return_closcall1(data,  k_734121,  boolean_f);}
+  return_closcall1(data,  k_734121,  Cyc_VOID);}
 ;; 
 }
 

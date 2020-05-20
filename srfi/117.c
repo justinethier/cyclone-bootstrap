@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -458,6 +458,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -500,6 +501,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_121list_91queue_125);
 defsymbol(list_91queue_127);
@@ -1288,7 +1290,7 @@ return_closcall2(data,  ((closureN)self_73651)->elements[3],  &c_731333, ((closu
 
 static void __lambda_112(void *data, int argc, object self_73652, object r_73498) {
   if( (boolean_f != r_73498) ){ 
-  return_closcall1(data,  ((closureN)self_73652)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_73652)->elements[0],  Cyc_VOID);
 } else { 
   
 closureN_type c_731338;
@@ -1583,7 +1585,7 @@ return_closcall2(data,  ((closureN)self_73637)->elements[3],  &c_731229, ((closu
 
 static void __lambda_97(void *data, int argc, object self_73638, object r_73471) {
   if( (boolean_f != r_73471) ){ 
-  return_closcall1(data,  ((closureN)self_73638)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_73638)->elements[0],  Cyc_VOID);
 } else { 
   
 closureN_type c_731234;
@@ -2347,7 +2349,7 @@ static void __lambda_50(void *data, int argc, object self_73606, object r_73383)
 make_utf8_string_with_len(c_73957, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73606)->elements[0], &c_73957);
 } else { 
-  return_closcall1(data,  ((closureN)self_73606)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73606)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -2460,7 +2462,7 @@ static void __lambda_45(void *data, int argc, object self_73594, object k_73363)
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_73594)->elements[1]))) ){ 
   return_closcall3(data,  __glo_set_91last_67_srfi_117,  k_73363, ((closureN)self_73594)->elements[0], NULL);
 } else { 
-  return_closcall1(data,  k_73363,  boolean_f);}
+  return_closcall1(data,  k_73363,  Cyc_VOID);}
 ;; 
 }
 
@@ -2486,7 +2488,7 @@ static void __lambda_42(void *data, int argc, object self_73596, object r_73367)
 make_utf8_string_with_len(c_73913, "Empty list-queue", 16, 16);
 return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_73596)->elements[0], &c_73913);
 } else { 
-  return_closcall1(data,  ((closureN)self_73596)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73596)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -2685,7 +2687,7 @@ static void __lambda_32(void *data, int argc, object self_73584, object r_73344)
   if( (boolean_f != r_73344) ){ 
   return_closcall3(data,  __glo_set_91last_67_srfi_117,  ((closureN)self_73584)->elements[0], ((closureN)self_73584)->elements[1], ((closureN)self_73584)->elements[2]);
 } else { 
-  return_closcall1(data,  ((closureN)self_73584)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73584)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -3032,7 +3034,7 @@ c_73712.elements[3] = ((closureN)self_73564)->elements[1];
 
 return_direct_with_clo1(data,(closure)&c_73712,__lambda_7,  Cyc_car(data, lis_737_73166));
 } else { 
-  return_closcall1(data,  k_73275,  boolean_f);}
+  return_closcall1(data,  k_73275,  Cyc_VOID);}
 ;; 
 }
 

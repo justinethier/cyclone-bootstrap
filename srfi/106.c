@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -550,6 +550,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -620,6 +621,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_75socket_91object_91type_75);
 defsymbol(_85socket_91object_91type_85);
@@ -2080,7 +2082,7 @@ static void __lambda_37(void *data, int argc, object self_73888, object r_73568)
 
 return_closcall2(data,  __glo__75socket_91close_srfi_106,  ((closureN)self_73888)->elements[0], Cyc_cdr(data, ((closureN)self_73888)->elements[1]));
 } else { 
-  return_closcall1(data,  ((closureN)self_73888)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73888)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -2124,7 +2126,7 @@ static void __lambda_35(void *data, int argc, object self_73885, object r_73561)
 
 return_closcall3(data,  __glo__75socket_91shutdown_srfi_106,  ((closureN)self_73885)->elements[1], Cyc_cdr(data, ((closureN)self_73885)->elements[2]), ((closureN)self_73885)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_73885)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73885)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -2250,7 +2252,7 @@ return_closcall4(data,  __glo__75socket_91recv_srfi_106,  ((closureN)self_73883)
 static void __lambda_30(void *data, int argc, object self_73884, object k_73555) {
     
 if( (boolean_f != Cyc_is_null(((closureN)self_73884)->elements[1])) ){ 
-  return_direct_with_clo1(data,  k_73555,__lambda_31,  boolean_f);
+  return_direct_with_clo1(data,  k_73555,__lambda_31,  Cyc_VOID);
 } else { 
   
 
@@ -2350,7 +2352,7 @@ return_closcall4(data,  __glo__75socket_91send_srfi_106,  ((closureN)self_73879)
 static void __lambda_26(void *data, int argc, object self_73880, object k_73547) {
     
 if( (boolean_f != Cyc_is_null(((closureN)self_73880)->elements[1])) ){ 
-  return_direct_with_clo1(data,  k_73547,__lambda_27,  boolean_f);
+  return_direct_with_clo1(data,  k_73547,__lambda_27,  Cyc_VOID);
 } else { 
   
 

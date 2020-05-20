@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -334,6 +334,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -449,6 +450,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_tagged_91list_127_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_if_91_125condition_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_if_91_125then_191_191inline_191_191_scheme_cyclone_util;
@@ -1827,7 +1829,7 @@ static void __lambda_42(void *data, int argc, object self_73524, object r_73450)
 make_utf8_string_with_len(c_73774, "same binding for record rtd and constructor", 43, 43);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73524)->elements[0], &c_73774, ((closureN)self_73524)->elements[1]);
 } else { 
-  return_closcall1(data,  ((closureN)self_73524)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73524)->elements[0],  Cyc_VOID);}
 ;; 
 }
 

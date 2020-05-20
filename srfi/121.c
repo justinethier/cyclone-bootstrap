@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -413,6 +413,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -455,6 +456,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(n);
 defsymbol(_123_123);
@@ -1401,7 +1403,7 @@ return_closcall3(data,  __glo_any_srfi_121,  &c_733915, primitive_eof_91object_1
 
 static void __lambda_290(void *data, int argc, object self_731537, object r_731198) {
   if( (boolean_f != r_731198) ){ 
-  return_closcall1(data,  ((closureN)self_731537)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731537)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_733919;
@@ -5284,7 +5286,7 @@ return_closcall2(data,  ((closureN)self_731352)->elements[2],  &c_732526, s_7313
 
 static void __lambda_110(void *data, int argc, object self_731353, object r_73889) {
   if( (boolean_f != r_73889) ){ 
-  return_closcall1(data,  ((closureN)self_731353)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731353)->elements[0],  Cyc_VOID);
 } else { 
   
 closureN_type c_732531;
@@ -6687,7 +6689,7 @@ static void __lambda_45(void *data, int argc, object self_731293, object r_73749
 if( (boolean_f != car(((closureN)self_731293)->elements[2])) ){ 
   
 
-return_closcall2(data,  car(((closureN)self_731293)->elements[2]),  ((closureN)self_731293)->elements[0], boolean_f);
+return_closcall2(data,  car(((closureN)self_731293)->elements[2]),  ((closureN)self_731293)->elements[0], Cyc_VOID);
 } else { 
   
 closureN_type c_731926;

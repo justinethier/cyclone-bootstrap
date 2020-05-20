@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -571,6 +571,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -638,6 +639,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_121shared_91delay_125);
 defsymbol(shared_91delay_127);
@@ -6566,7 +6568,7 @@ c_731878.elements[0] = k_73525;
 
 return_closcall2(data,  __glo_get_91lock_cyclone_concurrent,  &c_731878, ((closureN)self_731077)->elements[0]);
 } else { 
-  return_closcall1(data,  k_73525,  boolean_f);}
+  return_closcall1(data,  k_73525,  Cyc_VOID);}
 ;; 
 }
 

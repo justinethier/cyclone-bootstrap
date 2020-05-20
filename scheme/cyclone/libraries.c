@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.17 
+ ** Version 0.18 
  **
  **/
 
@@ -518,6 +518,7 @@ extern object __glo_round_scheme_base;
 extern object __glo_exact_scheme_base;
 extern object __glo_inexact_scheme_base;
 extern object __glo_eof_91object_scheme_base;
+extern object __glo__void_scheme_base;
 extern object __glo_syntax_91error_scheme_base;
 extern object __glo_bytevector_91copy_scheme_base;
 extern object __glo_bytevector_91copy_67_scheme_base;
@@ -641,6 +642,7 @@ extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
+extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
@@ -1654,7 +1656,7 @@ static void __lambda_229(void *data, int argc, object self_731299, object r_7310
 make_utf8_string_with_len(c_732863, "Circular dependency detected", 28, 28);
 return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_731299)->elements[1], &c_732863, ((closureN)self_731299)->elements[2], ((closureN)self_731299)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731299)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731299)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -3947,7 +3949,7 @@ static void __lambda_107(void *data, int argc, object self_731181, object r_7383
   if( (boolean_f != r_73831) ){ 
   return_closcall2(data,  ((closureN)self_731181)->elements[2],  ((closureN)self_731181)->elements[1], ((closureN)self_731181)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731181)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731181)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -4384,7 +4386,7 @@ static void __lambda_88(void *data, int argc, object self_731155, object r_73780
   if( (boolean_f != r_73780) ){ 
   return_closcall2(data,  ((closureN)self_731155)->elements[2],  ((closureN)self_731155)->elements[1], ((closureN)self_731155)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731155)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731155)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
