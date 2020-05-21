@@ -18103,7 +18103,7 @@ static void __lambda_657(void *data, int argc, closure _,object k_736065, object
 load_varargs(nums_731155_733413, nums_731155_733413_raw, argc - 1);
   Cyc_st_add(data, "scheme/base.sld:lcm/entry");
   
-if( (boolean_f != Cyc_eq(nums_731155_733413, NULL)) ){ 
+if( (boolean_f != Cyc_eqv(nums_731155_733413, NULL)) ){ 
   return_closcall1(data,  k_736065,  obj_int2obj(1));
 } else { 
   
@@ -18145,7 +18145,7 @@ static void __lambda_654(void *data, int argc, closure _,object k_736052, object
 load_varargs(nums_731152_733410, nums_731152_733410_raw, argc - 1);
   Cyc_st_add(data, "scheme/base.sld:gcd/entry");
   
-if( (boolean_f != Cyc_eq(nums_731152_733410, NULL)) ){ 
+if( (boolean_f != Cyc_eqv(nums_731152_733410, NULL)) ){ 
   return_closcall1(data,  k_736052,  obj_int2obj(0));
 } else { 
   
@@ -32328,7 +32328,7 @@ static void __lambda_74(void *data, int argc, object self_7312823, object k_7342
 if( (boolean_f != Cyc_is_pair(x_73135_732870)) ){ 
     
   
-if( (boolean_f != Cyc_eq(Cyc_car(data, x_73135_732870), quote_and)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_car(data, x_73135_732870), quote_and)) ){ 
   
 
 
@@ -32337,7 +32337,7 @@ return_closcall3(data,  __glo_every_scheme_base,  k_734242, car(((closureN)self_
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_car(data, x_73135_732870), quote_or)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_car(data, x_73135_732870), quote_or)) ){ 
   
 
 
@@ -32346,7 +32346,7 @@ return_closcall3(data,  __glo_any_scheme_base,  k_734242, car(((closureN)self_73
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_car(data, x_73135_732870), quote_not)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_car(data, x_73135_732870), quote_not)) ){ 
   
 
 
@@ -32366,7 +32366,7 @@ return_closcall2(data,  car(((closureN)self_7312823)->elements[1]),  c_7314576, 
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_car(data, x_73135_732870), quote_library)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_car(data, x_73135_732870), quote_library)) ){ 
   
 
 

@@ -1824,11 +1824,11 @@ return_closcall2(data,  __glo_object_91type_srfi_128,  &c_734955, obj_73694_7310
 
 static void __lambda_380(void *data, int argc, object self_732214, object tmp_73695_73698_731038) {
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(0))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(0))) ){ 
   return_closcall1(data,  ((closureN)self_732214)->elements[0],  obj_int2obj(0));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(1))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(1))) ){ 
   
 closureN_type c_734963;
 object e_734974 [2];
@@ -1845,7 +1845,7 @@ c_734963.elements[1] = ((closureN)self_732214)->elements[1];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_734963);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(2))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(2))) ){ 
   if( (boolean_f != ((closureN)self_732214)->elements[1]) ){ 
   return_closcall1(data,  __glo__75salt_75_srfi_128,  ((closureN)self_732214)->elements[0]);
 } else { 
@@ -1853,23 +1853,23 @@ if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(2))) ){
 ;
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(3))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(3))) ){ 
   return_closcall2(data,  __glo_char_91hash_srfi_128,  ((closureN)self_732214)->elements[0], ((closureN)self_732214)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(4))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(4))) ){ 
   return_closcall2(data,  __glo_string_91hash_srfi_128,  ((closureN)self_732214)->elements[0], ((closureN)self_732214)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(5))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(5))) ){ 
   return_closcall2(data,  __glo_symbol_91hash_srfi_128,  ((closureN)self_732214)->elements[0], ((closureN)self_732214)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(6))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(6))) ){ 
   return_closcall2(data,  __glo_number_91hash_srfi_128,  ((closureN)self_732214)->elements[0], ((closureN)self_732214)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(7))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(7))) ){ 
   
 closureN_type c_735005;
 object e_735012 [2];
@@ -1886,7 +1886,7 @@ c_735005.elements[1] = ((closureN)self_732214)->elements[1];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_735005);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73695_73698_731038, obj_int2obj(8))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73695_73698_731038, obj_int2obj(8))) ){ 
   
 closureN_type c_735016;
 object e_735023 [2];
@@ -2053,11 +2053,11 @@ return_direct_with_clo1(data,(closure)&c_734859,__lambda_370,  type_73687_731033
 
 static void __lambda_370(void *data, int argc, object self_732205, object tmp_73690_73693_731036) {
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(0))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(0))) ){ 
   return_closcall1(data,  ((closureN)self_732205)->elements[2],  obj_int2obj(0));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(1))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(1))) ){ 
   
 closureN_type c_734867;
 object e_734879 [3];
@@ -2075,7 +2075,7 @@ c_734867.elements[2] = ((closureN)self_732205)->elements[2];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_734867);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(2))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(2))) ){ 
   if( (boolean_f != ((closureN)self_732205)->elements[0]) ){ 
   return_closcall1(data,  ((closureN)self_732205)->elements[2],  boolean_f);
 } else { 
@@ -2083,28 +2083,28 @@ if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(2))) ){
 ;
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(3))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(3))) ){ 
   
 
 return_closcall1(data,  ((closureN)self_732205)->elements[2],  Cyc_char_lt_op(data, ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(4))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(4))) ){ 
   
 complex_num_type local_734902; 
 return_closcall1(data,  ((closureN)self_732205)->elements[2],  ((inline_function_type)
                    ((closure)__glo_string_121_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734902, ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(5))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(5))) ){ 
   return_closcall3(data,  __glo_symbol_121_127_srfi_128,  ((closureN)self_732205)->elements[2], ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(6))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(6))) ){ 
   return_closcall3(data,  __glo_complex_121_127_srfi_128,  ((closureN)self_732205)->elements[2], ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(7))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(7))) ){ 
   
 closureN_type c_734920;
 object e_734928 [3];
@@ -2122,7 +2122,7 @@ c_734920.elements[2] = ((closureN)self_732205)->elements[2];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_734920);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73690_73693_731036, obj_int2obj(8))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(8))) ){ 
   
 closureN_type c_734932;
 object e_734940 [3];
@@ -2278,11 +2278,11 @@ return_direct_with_clo1(data,(closure)&c_734763,__lambda_360,  type_73680_731029
 
 static void __lambda_360(void *data, int argc, object self_732196, object tmp_73683_73686_731032) {
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(0))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(0))) ){ 
   return_closcall1(data,  ((closureN)self_732196)->elements[2],  boolean_t);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(1))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(1))) ){ 
   
 closureN_type c_734771;
 object e_734783 [3];
@@ -2300,34 +2300,34 @@ c_734771.elements[2] = ((closureN)self_732196)->elements[2];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_734771);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(2))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(2))) ){ 
   return_closcall3(data,  __glo_boolean_123_127_scheme_base,  ((closureN)self_732196)->elements[2], ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(3))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(3))) ){ 
   
 
 return_closcall1(data,  ((closureN)self_732196)->elements[2],  Cyc_char_eq_op(data, ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(4))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(4))) ){ 
   
 complex_num_type local_734804; 
 return_closcall1(data,  ((closureN)self_732196)->elements[2],  ((inline_function_type)
                    ((closure)__glo_string_123_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734804, ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(5))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(5))) ){ 
   return_closcall3(data,  __glo_symbol_123_127_scheme_base,  ((closureN)self_732196)->elements[2], ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(6))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(6))) ){ 
   
 
 return_closcall1(data,  ((closureN)self_732196)->elements[2],  Cyc_num_fast_eq_op(data, ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]));
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(7))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(7))) ){ 
   
 closureN_type c_734824;
 object e_734832 [3];
@@ -2345,7 +2345,7 @@ c_734824.elements[2] = ((closureN)self_732196)->elements[2];
 return_closcall1(data,  __glo_make_91default_91comparator_srfi_128,  &c_734824);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_73683_73686_731032, obj_int2obj(8))) ){ 
+if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(8))) ){ 
   
 closureN_type c_734836;
 object e_734844 [3];
@@ -8057,7 +8057,7 @@ return_closcall3(data,  ((closureN)self_731955)->elements[0],  &c_733028, x_7325
 static void __lambda_82(void *data, int argc, object self_731956, object r_731282) {
   
 
-return_closcall1(data,  ((closureN)self_731956)->elements[0],  Cyc_eq(r_731282, obj_int2obj(0)));; 
+return_closcall1(data,  ((closureN)self_731956)->elements[0],  Cyc_eqv(r_731282, obj_int2obj(0)));; 
 }
 
 static void __lambda_77(void *data, int argc, object self_731957, object k_731283) {

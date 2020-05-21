@@ -556,7 +556,7 @@ if( (boolean_f != ((inline_function_type)
 } else { 
   
   alloca_double(c_73330, -0.0);
-  r_7390 = Cyc_eq(((closureN)self_73124)->elements[2], c_73330);}
+  r_7390 = Cyc_eqv(((closureN)self_73124)->elements[2], c_73330);}
 ;if( (boolean_f != r_7390) ){ 
   
 complex_num_type local_73335; 
@@ -689,7 +689,7 @@ static void __lambda_17(void *data, int argc, object self_73129, object k_73101)
   complex_num_type local_73404; 
   
   make_double(c_73408, -0.0);
-if( (boolean_f != Cyc_eq(((inline_function_type)
+if( (boolean_f != Cyc_eqv(((inline_function_type)
                    ((closure)__glo_inexact_191_191inline_191_191_scheme_base)->fn)(data,&local_73404, Cyc_car(data, ((closureN)self_73129)->elements[0])), &c_73408)) ){ 
   
 make_double(c_73410, 3.14159265358979);
@@ -707,7 +707,7 @@ return_direct_with_clo1(data,  k_73101,__lambda_18,  ((inline_function_type)
 static void __lambda_15(void *data, int argc, object self_73130, object k_73103) {
     
   make_double(c_73393, -0.0);
-if( (boolean_f != Cyc_eq(((closureN)self_73130)->elements[0], &c_73393)) ){ 
+if( (boolean_f != Cyc_eqv(((closureN)self_73130)->elements[0], &c_73393)) ){ 
   return_direct_with_clo1(data,  k_73103,__lambda_16,  obj_int2obj(-1));
 } else { 
   return_direct_with_clo1(data,  k_73103,__lambda_16,  obj_int2obj(1));}

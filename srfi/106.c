@@ -1735,12 +1735,12 @@ static void __lambda_50(void *data, int argc, closure _,object k_73714, object e
   Cyc_st_add(data, "srfi/106.sld:shutdown-method");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73114_73469), quote_read)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73114_73469), quote_read)) ){ 
   return_closcall1(data,  k_73714,  quote__85shut_91rd_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73114_73469), quote_write)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73114_73469), quote_write)) ){ 
   return_closcall1(data,  k_73714,  quote__85shut_91wr_85);
 } else { 
   
@@ -1758,22 +1758,22 @@ static void __lambda_49(void *data, int argc, closure _,object k_73699, object e
   Cyc_st_add(data, "srfi/106.sld:message-type");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73101_73465), quote_none)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73101_73465), quote_none)) ){ 
   return_closcall1(data,  k_73699,  obj_int2obj(0));
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73101_73465), quote_peek)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73101_73465), quote_peek)) ){ 
   return_closcall1(data,  k_73699,  quote__85msg_91peek_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73101_73465), quote_oob)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73101_73465), quote_oob)) ){ 
   return_closcall1(data,  k_73699,  quote__85msg_91oob_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_73101_73465), quote_wait_91all)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_73101_73465), quote_wait_91all)) ){ 
   return_closcall1(data,  k_73699,  quote__85msg_91waitall_85);
 } else { 
   
@@ -1793,17 +1793,17 @@ static void __lambda_48(void *data, int argc, closure _,object k_73686, object e
   Cyc_st_add(data, "srfi/106.sld:ip-protocol");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7388_73461), quote_ip)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7388_73461), quote_ip)) ){ 
   return_closcall1(data,  k_73686,  quote__85ipproto_91ip_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7388_73461), quote_tcp)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7388_73461), quote_tcp)) ){ 
   return_closcall1(data,  k_73686,  quote__85ipproto_91tcp_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7388_73461), quote_udp)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7388_73461), quote_udp)) ){ 
   return_closcall1(data,  k_73686,  quote__85ipproto_91udp_85);
 } else { 
   
@@ -1822,12 +1822,12 @@ static void __lambda_47(void *data, int argc, closure _,object k_73675, object e
   Cyc_st_add(data, "srfi/106.sld:socket-domain");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7375_73457), quote_stream)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7375_73457), quote_stream)) ){ 
   return_closcall1(data,  k_73675,  quote__85sock_91stream_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7375_73457), quote_datagram)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7375_73457), quote_datagram)) ){ 
   return_closcall1(data,  k_73675,  quote__85sock_91dgram_85);
 } else { 
   
@@ -1845,27 +1845,27 @@ static void __lambda_46(void *data, int argc, closure _,object k_73658, object e
   Cyc_st_add(data, "srfi/106.sld:address-info");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7362_73453), quote_canoname)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7362_73453), quote_canoname)) ){ 
   return_closcall1(data,  k_73658,  quote__85ai_91canonname_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7362_73453), quote_numerichost)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7362_73453), quote_numerichost)) ){ 
   return_closcall1(data,  k_73658,  quote__85ai_91numerichost_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7362_73453), quote_v4mapped)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7362_73453), quote_v4mapped)) ){ 
   return_closcall1(data,  k_73658,  quote__85ai_91v4mapped_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7362_73453), quote_all)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7362_73453), quote_all)) ){ 
   return_closcall1(data,  k_73658,  quote__85ai_91all_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7362_73453), quote_addrconfig)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7362_73453), quote_addrconfig)) ){ 
   return_closcall1(data,  k_73658,  quote__85ai_91addrconfig_85);
 } else { 
   
@@ -1886,17 +1886,17 @@ static void __lambda_45(void *data, int argc, closure _,object k_73645, object e
   Cyc_st_add(data, "srfi/106.sld:address-family");
   
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7349_73449), quote_inet)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7349_73449), quote_inet)) ){ 
   return_closcall1(data,  k_73645,  quote__85af_91inet_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7349_73449), quote_inet6)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7349_73449), quote_inet6)) ){ 
   return_closcall1(data,  k_73645,  quote__85af_91inet6_85);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, expr_7349_73449), quote_unspec)) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, expr_7349_73449), quote_unspec)) ){ 
   return_closcall1(data,  k_73645,  quote__85af_91unspec_85);
 } else { 
   

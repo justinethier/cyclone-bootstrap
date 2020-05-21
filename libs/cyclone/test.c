@@ -10203,7 +10203,7 @@ return_direct_with_clo1(data,(closure)&c_7310335,__lambda_647,  ((closureN)self_
 static void __lambda_647(void *data, int argc, object self_734663, object tmp_731067_731070_731843) {
   object r_733381;
     
-if( (boolean_f != Cyc_eq(tmp_731067_731070_731843, quote_ERROR)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731067_731070_731843, quote_ERROR)) ){ 
   object c_7310340;
  alloc_string(data,c_7310340, 1, 1);
 char tmp_7310341[] = "!";
@@ -10212,7 +10212,7 @@ memcpy(((string_type *)c_7310340)->str, tmp_7310341,1);
   r_733381 = c_7310340;
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_731067_731070_731843, quote_FAIL)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731067_731070_731843, quote_FAIL)) ){ 
   object c_7310345;
  alloc_string(data,c_7310345, 1, 1);
 char tmp_7310346[] = "x";
@@ -10221,7 +10221,7 @@ memcpy(((string_type *)c_7310345)->str, tmp_7310346,1);
   r_733381 = c_7310345;
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_731067_731070_731843, quote_SKIP)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731067_731070_731843, quote_SKIP)) ){ 
   object c_7310350;
  alloc_string(data,c_7310350, 1, 1);
 char tmp_7310351[] = "-";
@@ -10281,17 +10281,17 @@ return_direct_with_clo1(data,(closure)&c_7310300,__lambda_639,  status_731058_73
 
 static void __lambda_639(void *data, int argc, object self_734657, object tmp_731059_731062_731838) {
     
-if( (boolean_f != Cyc_eq(tmp_731059_731062_731838, quote_ERROR)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731059_731062_731838, quote_ERROR)) ){ 
   
 mclosure0(c_7310305, (function_type)__lambda_640);c_7310305.num_args = 1;
 return_closcall1(data,  ((closureN)self_734657)->elements[0],  &c_7310305);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_731059_731062_731838, quote_FAIL)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731059_731062_731838, quote_FAIL)) ){ 
   return_closcall1(data,  ((closureN)self_734657)->elements[0],  __glo_red_cyclone_test);
 } else { 
     
-if( (boolean_f != Cyc_eq(tmp_731059_731062_731838, quote_SKIP)) ){ 
+if( (boolean_f != Cyc_eqv(tmp_731059_731062_731838, quote_SKIP)) ){ 
   return_closcall1(data,  ((closureN)self_734657)->elements[0],  __glo_yellow_cyclone_test);
 } else { 
   
@@ -26255,7 +26255,7 @@ if( (boolean_f != Cyc_num_fast_gte_op(data, k_7326_731527, ((closureN)self_73406
     
   
   
-if( (boolean_f != Cyc_eq(Cyc_string_ref(data, ((closureN)self_734062)->elements[5], j_7325_731526), Cyc_string_ref(data, ((closureN)self_734062)->elements[3], k_7326_731527))) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_string_ref(data, ((closureN)self_734062)->elements[5], j_7325_731526), Cyc_string_ref(data, ((closureN)self_734062)->elements[3], k_7326_731527))) ){ 
    object tmp_k_732012; 
    object tmp_j_7325_731526; 
    object tmp_k_7326_731527; 

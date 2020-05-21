@@ -77,6 +77,7 @@
     (define-inexact-op acos  "acos"  "cacos")
     (define-inexact-op atan1 "atan"  "catan")
 
+    ;; Support for two-argument atan, from Chibi Scheme
     (define (atan y . o)
       (define (inf? z) (if (= +inf.0 z) #t (= -inf.0 z)))
       (if (null? o)
@@ -92,19 +93,4 @@
                         (* (if (eqv? y -0.0) -1 1)
                            (if (eqv? x -0.0) 3.141592653589793 x))
                         (atan1 (/ y x))))))))
-
-    ;(define-c atan2
-    ;  "(void *data, int argc, closure _, object k, object y, object x)"
-    ;  " make_double(d, 0.0);
-    ;    double_value(d) = atan2( double_value(y), double_value(x) );
-    ;    return_closcall1(data, k, &d);")
-
-    ;(define (atan arg1 . args)
-    ;  (cond
-    ;    ((pair? args)
-    ;     (let ((y (->inexact arg1))
-    ;           (x))
-    ;       (atan2 y x)))
-    ;     (else
-    ;       (atan1 arg1))))
 ))

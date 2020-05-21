@@ -783,28 +783,28 @@ return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7392)->element
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(97))) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(97))) ){ 
   
 
 return_closcall2(data,  car(((closureN)self_7392)->elements[1]),  ((closureN)self_7392)->elements[3], __glo_display_scheme_write);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(115))) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(115))) ){ 
   
 
 return_closcall2(data,  car(((closureN)self_7392)->elements[1]),  ((closureN)self_7392)->elements[3], __glo_write_scheme_write);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(37))) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(37))) ){ 
   
 
 return_closcall3(data,  car(((closureN)self_7392)->elements[4]),  ((closureN)self_7392)->elements[3], obj_char2obj(10), primitive_cddr);
 } else { 
     
   
-if( (boolean_f != Cyc_eq(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(126))) ){ 
+if( (boolean_f != Cyc_eqv(Cyc_cadr(data, ((closureN)self_7392)->elements[2]), obj_char2obj(126))) ){ 
   
 
 return_closcall3(data,  car(((closureN)self_7392)->elements[4]),  ((closureN)self_7392)->elements[3], obj_char2obj(126), primitive_cddr);
