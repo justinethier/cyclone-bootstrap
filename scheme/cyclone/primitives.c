@@ -7876,7 +7876,7 @@ return_direct_with_clo1(data,(closure)&c_732604,__lambda_150,  Cyc_eq(((closureN
 static void __lambda_150(void *data, int argc, object self_731700, object r_731056) {
   if( (boolean_f != r_731056) ){ 
   
-make_utf8_string_with_len(c_732607, "Cyc_eq", 6, 6);
+make_utf8_string_with_len(c_732607, "Cyc_eqv", 7, 7);
 return_closcall1(data,  ((closureN)self_731700)->elements[0],  &c_732607);
 } else { 
   
