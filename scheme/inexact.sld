@@ -75,5 +75,36 @@
     (define-inexact-op tan   "tan"   "ctan")
     (define-inexact-op asin  "asin"  "casin")
     (define-inexact-op acos  "acos"  "cacos")
-    (define-inexact-op atan  "atan"  "catan")
+    (define-inexact-op atan1 "atan"  "catan")
+
+    (define (atan y . o)
+      (define (inf? z) (if (= +inf.0 z) #t (= -inf.0 z)))
+      (if (null? o)
+          (atan1 y)
+          (let ((x (inexact (car o))))
+            (if (and (inf? x) (inf? y))
+                (* (if (< y 0) -1 1) (if (= x -inf.0) 3 1) 0.7853981633974483)
+                (if (negative? x)
+                    (if (or (negative? y) (eqv? y -0.0))
+                        (- (atan1 (/ y x)) 3.141592653589793)
+                        (- 3.141592653589793 (atan1 (/ y (- x)))))
+                    (if (and (zero? x) (zero? y))
+                        (* (if (eqv? y -0.0) -1 1)
+                           (if (eqv? x -0.0) 3.141592653589793 x))
+                        (atan1 (/ y x))))))))
+
+    ;(define-c atan2
+    ;  "(void *data, int argc, closure _, object k, object y, object x)"
+    ;  " make_double(d, 0.0);
+    ;    double_value(d) = atan2( double_value(y), double_value(x) );
+    ;    return_closcall1(data, k, &d);")
+
+    ;(define (atan arg1 . args)
+    ;  (cond
+    ;    ((pair? args)
+    ;     (let ((y (->inexact arg1))
+    ;           (x))
+    ;       (atan2 y x)))
+    ;     (else
+    ;       (atan1 arg1))))
 ))
