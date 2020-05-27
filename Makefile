@@ -70,7 +70,7 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 %.so: %.o
 	$(CC) -shared $(LDFLAGS) -o $@ $<
 
-all: cyclone icyc-c
+all: cyclone icyc-c cyclone-winds
 
 $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c mstreams.c hashset.c $(CYC_BN_LIB)
 	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
@@ -101,6 +101,10 @@ $(CYC_BN_LIB) : $(CYC_BN_LIB_SUBDIR)/*.c
 cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
+
+cyclone-winds: cyclone
+	$(CC) cyclone-winds.c $(CFLAGS) -c -o cyclone-winds.o
+	$(CC) cyclone-winds.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone-winds
 
 .PHONY: icyc-c
 icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
