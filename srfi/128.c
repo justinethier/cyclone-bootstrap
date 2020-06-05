@@ -492,6 +492,11 @@ extern object __glo_string_121_127_scheme_base;
 extern object __glo_string_121_123_127_scheme_base;
 extern object __glo_string_125_127_scheme_base;
 extern object __glo_string_125_123_127_scheme_base;
+extern object __glo_fast_91string_123_127_scheme_base;
+extern object __glo_fast_91string_121_127_scheme_base;
+extern object __glo_fast_91string_121_123_127_scheme_base;
+extern object __glo_fast_91string_125_127_scheme_base;
+extern object __glo_fast_91string_125_123_127_scheme_base;
 extern object __glo_foldl_scheme_base;
 extern object __glo_foldr_scheme_base;
 extern object __glo_not_scheme_base;
@@ -552,6 +557,8 @@ extern object __glo_Cyc_91remove_91exception_91handler_scheme_base;
 extern object __glo_newline_scheme_base;
 extern object __glo_write_91char_scheme_base;
 extern object __glo_write_91string_scheme_base;
+extern object __glo_write_91string_911_scheme_base;
+extern object __glo_write_91string_912_scheme_base;
 extern object __glo_flush_91output_91port_scheme_base;
 extern object __glo_peek_91char_scheme_base;
 extern object __glo_read_91char_scheme_base;
@@ -653,11 +660,11 @@ extern object __glo_nan_127_scheme_inexact;
 extern object __glo_sin_scheme_inexact;
 extern object __glo_sqrt_scheme_inexact;
 extern object __glo_tan_scheme_inexact;
-extern object __glo_string_123_127_191_191inline_191_191_scheme_base;
-extern object __glo_string_121_127_191_191inline_191_191_scheme_base;
-extern object __glo_string_121_123_127_191_191inline_191_191_scheme_base;
-extern object __glo_string_125_127_191_191inline_191_191_scheme_base;
-extern object __glo_string_125_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_fast_91string_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_fast_91string_121_127_191_191inline_191_191_scheme_base;
+extern object __glo_fast_91string_121_123_127_191_191inline_191_191_scheme_base;
+extern object __glo_fast_91string_125_127_191_191inline_191_191_scheme_base;
+extern object __glo_fast_91string_125_123_127_191_191inline_191_191_scheme_base;
 extern object __glo__75write_91bytevector_191_191inline_191_191_scheme_base;
 extern object __glo_not_191_191inline_191_191_scheme_base;
 extern object __glo_list_127_191_191inline_191_191_scheme_base;
@@ -2093,7 +2100,7 @@ if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(4))) ){
   
 complex_num_type local_734902; 
 return_closcall1(data,  ((closureN)self_732205)->elements[2],  ((inline_function_type)
-                   ((closure)__glo_string_121_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734902, ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]));
+                   ((closure)__glo_fast_91string_121_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734902, ((closureN)self_732205)->elements[0], ((closureN)self_732205)->elements[1]));
 } else { 
     
 if( (boolean_f != Cyc_eqv(tmp_73690_73693_731036, obj_int2obj(5))) ){ 
@@ -2314,7 +2321,7 @@ if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(4))) ){
   
 complex_num_type local_734804; 
 return_closcall1(data,  ((closureN)self_732196)->elements[2],  ((inline_function_type)
-                   ((closure)__glo_string_123_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734804, ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]));
+                   ((closure)__glo_fast_91string_123_127_191_191inline_191_191_scheme_base)->fn)(data,&local_734804, ((closureN)self_732196)->elements[0], ((closureN)self_732196)->elements[1]));
 } else { 
     
 if( (boolean_f != Cyc_eqv(tmp_73683_73686_731032, obj_int2obj(5))) ){ 
@@ -6457,7 +6464,7 @@ static void __lambda_168(void *data, int argc, object self_732019, object r_7314
   
 complex_num_type local_733564; 
 return_closcall1(data,  ((closureN)self_732019)->elements[0],  ((inline_function_type)
-                   ((closure)__glo_string_121_127_191_191inline_191_191_scheme_base)->fn)(data,&local_733564, ((closureN)self_732019)->elements[1], r_731421));; 
+                   ((closure)__glo_fast_91string_121_127_191_191inline_191_191_scheme_base)->fn)(data,&local_733564, ((closureN)self_732019)->elements[1], r_731421));; 
 }
 
 static void __lambda_164(void *data, int argc, closure _,object k_731415, object obj_73381_73886) {
