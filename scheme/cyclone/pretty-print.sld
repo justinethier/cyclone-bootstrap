@@ -288,6 +288,8 @@
       
       (define (reverse-string-append l)
         (apply string-append (reverse l)))
+        ;; JAE - Avoid issue with string-set and multibyte chars.
+        ;;       This should be more efficient as well
         ;(define (rev-string-append l i)
         ;  (if (pair? l)
         ;    (let* ((str (car l))
