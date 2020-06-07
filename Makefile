@@ -102,9 +102,24 @@ cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
 
-cyclone-winds: cyclone
-	$(CC) cyclone-winds.c $(CFLAGS) -c -o cyclone-winds.o
-	$(CC) cyclone-winds.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone-winds
+WINDS_OBJ= \
+ winds/libs/common \
+ winds/libs/file \
+ winds/libs/index \
+ winds/libs/metadata \
+ winds/libs/package \
+ winds/libs/system-calls \
+ winds/libs/util \
+ winds/cyclone-winds
+
+WINDS_CFILES = $(addsuffix .c, $(WINDS_OBJ))
+WINDS_OBJECTS = $(addsuffix .o, $(WINDS_OBJ))
+
+winds/libs/%.o: %.c %.h
+	$(CC) $(CFLAGS) $< -c -o $@
+
+cyclone-winds: $(WINDS_OBJECTS) cyclone
+	$(CC) $(COBJECTS) $(WINDS_OBJECTS) $(LIBS) $(LDFLAGS) -o cyclone-winds
 
 .PHONY: icyc-c
 icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
