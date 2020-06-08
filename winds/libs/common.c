@@ -731,7 +731,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85internal_91cyclone_91libs_85_libs_common = boolean_f; 
   __glo__85library_91installable_91extensions_85_libs_common = boolean_f; 
   __glo__85default_91code_91directory_85_libs_common = boolean_f; 
-  make_utf8_string_with_len(c_7396, "0.1", 3, 3); 
+  make_utf8_string_with_len(c_7396, "0.18", 4, 4); 
   __glo__85cyclone_91winds_91version_85_libs_common = &c_7396; 
 
   mclosure0(clo_73233, c_libscommon_inlinable_lambdas); make_pair(pair_73232, find_or_add_symbol("c_libscommon_inlinable_lambdas"), &clo_73233);
