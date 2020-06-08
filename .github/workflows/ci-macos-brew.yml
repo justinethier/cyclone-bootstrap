@@ -12,4 +12,4 @@ jobs:
     - name: Install
       run:  brew update; brew tap cyclone-scheme/cyclone ; brew -v install cyclone-scheme/cyclone/cyclone-bootstrap
     - name: test
-      run: cyclone unit-tests.scm ; ./unit-tests 
+      run: cyclone unit-tests.scm ; ./unit-tests
