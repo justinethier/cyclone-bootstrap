@@ -712,6 +712,7 @@ extern object __glo_lset_91diff_87intersection_67_srfi_1;
 extern object __glo_format_srfi_28;
 extern object __glo__85cyclone_91winds_91version_85_libs_common;
 extern object __glo__85default_91code_91directory_85_libs_common;
+extern object __glo__85default_91lock_91file_85_libs_common;
 extern object __glo__85default_91doc_91url_85_libs_common;
 extern object __glo__85default_91doc_91file_85_libs_common;
 extern object __glo__85doc_91candidates_85_libs_common;
