@@ -106,6 +106,7 @@ WINDS_OBJ= \
  winds/libs/common \
  winds/libs/file \
  winds/libs/index \
+ winds/libs/lock \
  winds/libs/metadata \
  winds/libs/package \
  winds/libs/system-calls \
