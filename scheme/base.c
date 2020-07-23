@@ -34674,7 +34674,7 @@ c_7314149.elements = (object *)e_7314155;
 c_7314149.elements[0] = k_734105;
 
 
-object c_7314158 = Cyc_substring(data,(closure)&c_7314149,reason_734_732854, obj_int2obj(0), obj_int2obj(9));
+object c_7314158 = Cyc_substring(data,(closure)&c_7314149,reason_734_732854, obj_int2obj(0), obj_int2obj(8));
 return_closcall1(data,(closure)&c_7314149,  c_7314158);
 } else { 
   return_closcall1(data,  k_734105,  boolean_f);}
@@ -34685,7 +34685,7 @@ static void __lambda_15(void *data, int argc, object self_7312901, object r_7341
   
 
 
-make_utf8_string_with_len(c_7314154, "(at line ", 9, 9);
+make_utf8_string_with_len(c_7314154, "at line ", 8, 8);
 return_closcall1(data,  ((closureN)self_7312901)->elements[0],  equalp(r_734107, &c_7314154));; 
 }
 
@@ -34845,7 +34845,7 @@ return_closcall1(data,(closure)&c_7314087,  c_7314105);;
 
 static void __lambda_12(void *data, int argc, object self_7312908, object r_734097) {
   
-make_utf8_string_with_len(c_7314093, "(at line ", 9, 9);
+make_utf8_string_with_len(c_7314093, "at line ", 8, 8);
 
 make_utf8_string_with_len(c_7314095, ", column ", 9, 9);
 
@@ -34853,7 +34853,7 @@ make_utf8_string_with_len(c_7314096, " of ", 4, 4);
 
 
 
-make_utf8_string_with_len(c_7314100, ") ", 2, 2);
+make_utf8_string_with_len(c_7314100, ": ", 2, 2);
 
 object c_7314092 = Cyc_string_append(data,  ((closureN)self_7312908)->elements[0],8,&c_7314093, ((closureN)self_7312908)->elements[2], &c_7314095, r_734097, &c_7314096, Cyc_vector_ref(data, ((closureN)self_7312908)->elements[1], obj_int2obj(0)), &c_7314100, ((closureN)self_7312908)->elements[3]);
 return_closcall1(data,  ((closureN)self_7312908)->elements[0],  c_7314092);; 
