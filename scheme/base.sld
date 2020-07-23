@@ -235,26 +235,31 @@
   )
   (begin
     (define *source-loc-lis* '())
-    (define (error/loc reason expr)
+    (define (error/loc reason expr . args)
+      ;; Does reason already include line/file location info?
+      (define (reason/line-loc? reason)
+        (and (string? reason)
+             (equal? (substring reason 0 9)
+                     "(at line ")))
       (let* ((found (assoc expr *source-loc-lis*))
              (loc-vec (if found 
                           (cdr found) ;; Get value
-                          #f)))
-        (if loc-vec
-           (error 
-              (string-append
-                "("
-                (vector-ref loc-vec 0)
-                " line "
-                (number->string (vector-ref loc-vec 1))
-                ", column "
-                (number->string (vector-ref loc-vec 2))
-                ") "
-                reason)
-              expr) 
-           (error 
-              reason
-              expr))))
+                          #f))
+             (msg (if (and loc-vec ;; Have line info
+                           (not (reason/line-loc? reason))) ;; Not there yet
+                      (string-append
+                        "(at line "
+                        (number->string (vector-ref loc-vec 1))
+                        ", column "
+                        (number->string (vector-ref loc-vec 2))
+                        " of "
+                        (vector-ref loc-vec 0)
+                        ") "
+                        reason)
+                      reason)))
+      (if (pair? args)
+        (apply error (cons msg args))
+        (error msg expr))))
 
     ;; Features implemented by this Scheme
     (define (features) 
@@ -401,7 +406,7 @@
                               (cond
                                 ((symbol? i) (symbol->string i))
                                 ((number? i) (number->string i))
-                                (else (error "Unexpected type in import set")))))
+                                (else (error/loc "Unexpected type in import set" expr)))))
                           import))
                       file-ext))
                    (filename
@@ -1595,7 +1600,7 @@
            (_append (rename 'append))      (_map (rename 'map))
            (_vector? (rename 'vector?))    (_list? (rename 'list?))
            (_len (rename'len))             (_length (rename 'length))
-           (_- (rename '-))   (_>= (rename '>=))   (_error (rename 'error))
+           (_- (rename '-))   (_>= (rename '>=))   (_error (rename 'error/loc))
            (_ls (rename 'ls)) (_res (rename 'res)) (_i (rename 'i))
            (_reverse (rename 'reverse))
            (_vector->list (rename 'vector->list))
@@ -1771,7 +1776,7 @@
                       (ell-vars (free-vars (car t) vars ell-dim)))
                  (cond
                   ((null? ell-vars)
-                   (error "too many ...'s"))
+                   (error/loc "too many ...'s" expr))
                   ((and (null? (cdr (cdr t))) (identifier? (car t)))
                    ;; shortcut for (var ...)
                    (lp (car t) ell-dim))
