@@ -160,6 +160,8 @@ if (obj_is_not_closure(clo)) { \
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemeload_scheme_load = NULL;
 object __glo_load_scheme_load = NULL;
+extern object __glo__85source_91loc_91lis_85_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_member_scheme_base;
 extern object __glo_assoc_scheme_base;
 extern object __glo_cons_91source_scheme_base;
@@ -372,6 +374,7 @@ extern object __glo_with_91input_91from_91file_scheme_file;
 extern object __glo_with_91output_91to_91file_scheme_file;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
+extern object __glo_read_91all_95source_scheme_read;
 extern object __glo_include_scheme_read;
 extern object __glo_include_91ci_scheme_read;
 extern object __glo_fast_91string_123_127_191_191inline_191_191_scheme_base;
@@ -449,12 +452,22 @@ c_7328.elements[0] = env_732_737;
 c_7328.elements[1] = k_7313;
 
 
-mclosure0(c_7342, (function_type)__lambda_4);c_7342.num_args = 1;
+closureN_type c_7342;
+object e_7345 [1];
+c_7342.hdr.mark = gc_color_red;
+ c_7342.hdr.grayed = 0;
+c_7342.tag = closureN_tag;
+ c_7342.fn = (function_type)__lambda_4;
+c_7342.num_args = 1;
+c_7342.num_elements = 1;
+c_7342.elements = (object *)e_7345;
+c_7342.elements[0] = filename_731_736;
+
 return_closcall3(data,  __glo_call_91with_91input_91file_scheme_file,  &c_7328, filename_731_736, &c_7342);; 
 }
 
 static void __lambda_4(void *data, int argc, object self_7325, object k_7319, object port_735_7310) {
-  return_closcall2(data,  __glo_read_91all_scheme_read,  k_7319, port_735_7310);; 
+  return_closcall3(data,  __glo_read_91all_95source_scheme_read,  k_7319, port_735_7310, ((closureN)self_7325)->elements[0]);; 
 }
 
 static void __lambda_2(void *data, int argc, object self_7323, object exprs_733_738) {
@@ -489,18 +502,18 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117schemeload_scheme_load", (object *) &__glo_lib_91init_117schemeload_scheme_load);
   add_global("__glo_load_scheme_load", (object *) &__glo_load_scheme_load);
-  mclosure0(c_7344, (function_type)__lambda_5);c_7344.num_args = 0; 
-  __glo_lib_91init_117schemeload_scheme_load = &c_7344; 
+  mclosure0(c_7346, (function_type)__lambda_5);c_7346.num_args = 0; 
+  __glo_lib_91init_117schemeload_scheme_load = &c_7346; 
   mclosure0(c_7326, (function_type)__lambda_1);c_7326.num_args = 1; 
   __glo_load_scheme_load = &c_7326; 
 
-  mclosure0(clo_7347, c_schemeload_inlinable_lambdas); make_pair(pair_7346, find_or_add_symbol("c_schemeload_inlinable_lambdas"), &clo_7347);
-  make_cvar(cvar_7348, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7349, find_or_add_symbol("lib-init:schemeload"), &cvar_7348);
-  make_cvar(cvar_7350, (object *)&__glo_load_scheme_load);make_pair(pair_7351, find_or_add_symbol("load"), &cvar_7350);
-make_pair(c_7354, &pair_7346,Cyc_global_variables);
-make_pair(c_7353, &pair_7349, &c_7354);
-make_pair(c_7352, &pair_7351, &c_7353);
-Cyc_global_variables = &c_7352;
+  mclosure0(clo_7349, c_schemeload_inlinable_lambdas); make_pair(pair_7348, find_or_add_symbol("c_schemeload_inlinable_lambdas"), &clo_7349);
+  make_cvar(cvar_7350, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7351, find_or_add_symbol("lib-init:schemeload"), &cvar_7350);
+  make_cvar(cvar_7352, (object *)&__glo_load_scheme_load);make_pair(pair_7353, find_or_add_symbol("load"), &cvar_7352);
+make_pair(c_7356, &pair_7348,Cyc_global_variables);
+make_pair(c_7355, &pair_7351, &c_7356);
+make_pair(c_7354, &pair_7353, &c_7355);
+Cyc_global_variables = &c_7354;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
 }
