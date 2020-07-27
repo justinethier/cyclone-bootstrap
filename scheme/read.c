@@ -472,6 +472,14 @@ extern object __glo_read_91u8_scheme_base;
 extern object __glo_write_91u8_scheme_base;
 extern object __glo_binary_91port_127_scheme_base;
 extern object __glo_textual_91port_127_scheme_base;
+extern object __glo__85Cyc_91version_91banner_85_scheme_cyclone_common;
+extern object __glo__85version_85_scheme_cyclone_common;
+extern object __glo__85version_91number_85_scheme_cyclone_common;
+extern object __glo__85version_91name_85_scheme_cyclone_common;
+extern object __glo__85version_91banner_85_scheme_cyclone_common;
+extern object __glo__85c_91file_91header_91comment_85_scheme_cyclone_common;
+extern object __glo__85reader_91source_91db_85_scheme_cyclone_common;
+extern object __glo_memloc_scheme_cyclone_common;
 extern object __glo_char_91alphabetic_127_scheme__char;
 extern object __glo_char_91downcase_scheme__char;
 extern object __glo_char_91foldcase_scheme__char;
@@ -528,7 +536,7 @@ defsymbol(unquote_91splicing);
 defsymbol(unquote);
 defsymbol(quasiquote);
 defsymbol(quote);
-defsymbol(_85source_91loc_91lis_85);
+defsymbol(_85reader_91source_91db_85);
 defsymbol(include);
 defsymbol(begin);
 static void __lambda_76(void *data, int argc, closure _,object k_73411) ;
@@ -1830,12 +1838,12 @@ pair_type local_73750;
 pair_type local_73753; 
 
 vector_3_type local_73756; 
-return_direct_with_clo1(data,(closure)&c_73741,__lambda_31,  set_pair_as_expr(&local_73750, set_pair_as_expr(&local_73753, obj_7346_73193, Cyc_fast_vector_3(&local_73756, filename_7347_73194, line_7348_73195, col_7349_73196)), __glo__85source_91loc_91lis_85_scheme_base));; 
+return_direct_with_clo1(data,(closure)&c_73741,__lambda_31,  set_pair_as_expr(&local_73750, set_pair_as_expr(&local_73753, obj_7346_73193, Cyc_fast_vector_3(&local_73756, filename_7347_73194, line_7348_73195, col_7349_73196)), __glo__85reader_91source_91db_85_scheme_cyclone_common));; 
 }
 
 static void __lambda_31(void *data, int argc, object self_73442, object r_73311) {
   
-object c_73746 = global_set_cps_id(data,  ((closureN)self_73442)->elements[0],"__glo__85source_91loc_91lis_85_scheme_base", __glo__85source_91loc_91lis_85_scheme_base, r_73311);
+object c_73746 = global_set_cps_id(data,  ((closureN)self_73442)->elements[0],"__glo__85reader_91source_91db_85_scheme_cyclone_common", __glo__85reader_91source_91db_85_scheme_cyclone_common, r_73311);
 return_closcall1(data,  ((closureN)self_73442)->elements[0],  c_73746);; 
 }
 
@@ -2453,7 +2461,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_unquote = find_or_add_symbol("unquote");
   quote_quasiquote = find_or_add_symbol("quasiquote");
   quote_quote = find_or_add_symbol("quote");
-  quote__85source_91loc_91lis_85 = find_or_add_symbol("*source-loc-lis*");
+  quote__85reader_91source_91db_85 = find_or_add_symbol("*reader-source-db*");
   quote_include = find_or_add_symbol("include");
   quote_begin = find_or_add_symbol("begin");
 
@@ -2488,7 +2496,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_unquote);
   add_symbol(quote_quasiquote);
   add_symbol(quote_quote);
-  add_symbol(quote__85source_91loc_91lis_85);
+  add_symbol(quote__85reader_91source_91db_85);
   add_symbol(quote_include);
   add_symbol(quote_begin);
   mclosure0(c_731253, (function_type)__lambda_76);c_731253.num_args = 0; 
