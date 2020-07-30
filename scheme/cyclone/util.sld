@@ -1,4 +1,4 @@
-;;;; Cyclone Scheme
+;;; Cyclone Scheme
 ;;;; https://github.com/justinethier/cyclone
 ;;;;
 ;;;; Copyright (c) 2014-2016, Justin Ethier
@@ -92,6 +92,7 @@
     list-prefix?
     string-replace-all
     take
+    drop
     filter)
   (inline
     env:frame-values
@@ -341,6 +342,11 @@
     (if (zero? k) '()
         (cons (car lis)
               (recur (cdr lis) (- k 1))))))
+
+(define (drop lis k)
+  ;(check-arg integer? k drop)
+  (let iter ((lis lis) (k k))
+    (if (zero? k) lis (iter (cdr lis) (- k 1)))))
 
 ; char->natural : char -> natural
 (define (char->natural c)
