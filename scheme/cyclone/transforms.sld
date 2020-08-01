@@ -1341,9 +1341,31 @@ if (acc) {
                       (list (cps-seq (cddr ast) k)) 
                       #t))))
 
+;; TODO: add test cases
+;(define (test)
+;  ((lambda (a . Y) (write Y)) 'x)
+;  ((lambda (a . Y) (write Y)) 'x 'y)
+;  ((lambda (a . Y) (write Y)) 'x 'y 'z)
+;  ((lambda (a b . Y) (write Y)) 'x 'y 'z)
+;  ((lambda Y (write Y)) 'x 'y 'z)
+;    (lambda X (list X)))
+
           ((and (app? ast)
                 (lambda? (app->fun ast))
                 (equal? 'args:fixed-with-varargs (lambda-formals-type (app->fun ast))))
+           (let ((lam-min-num-args (lambda-num-args (app->fun ast)))
+                 (num-args (length (app->args ast)))
+                 (ltype (lambda-formals-type (app->fun ast))))
+            (cond
+             ((< num-args lam-min-num-args)
+              (error 
+                (string-append
+                  "Not enough arguments passed to anonymous lambda. "
+                  "Expected "
+                  (number->string lam-min-num-args)
+                  " but received "
+                  (number->string num-args))
+                (app->fun ast)))))
            (let* ((fn (app->fun ast))
                   (formals (lambda->formals fn))
                   (formals-lis (pair->list formals)) ;; Formals as proper list
@@ -1390,8 +1412,7 @@ if (acc) {
                       "Expected "
                       (number->string lam-min-num-args)
                       " but received "
-                      (number->string num-args) 
-                      ":")
+                      (number->string num-args))
                     fn))
                  ((and (> num-args lam-min-num-args)
                        (equal? 'args:fixed ltype))
@@ -1401,8 +1422,7 @@ if (acc) {
                       "Expected "
                       (number->string lam-min-num-args)
                       " but received "
-                      (number->string num-args)
-                      ":")
+                      (number->string num-args))
                     fn)))
                 ;; Do conversion
                 (cps-list (app->args ast)
