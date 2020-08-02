@@ -611,6 +611,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -12798,7 +12799,7 @@ c_735351.elements[0] = ((closureN)self_733657)->elements[1];
 
 
 make_utf8_string_with_len(c_735358, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_735351, &c_735358, ((closureN)self_733657)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_735351, &c_735358, ((closureN)self_733657)->elements[0]);}
 ;; 
 }
 

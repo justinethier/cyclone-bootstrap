@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.18 
+ ** Version 0.19 
  **
  **/
 
@@ -433,6 +433,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -507,6 +508,7 @@ extern object __glo_binary_91port_127_scheme_base;
 extern object __glo_textual_91port_127_scheme_base;
 extern object __glo_read_scheme_read;
 extern object __glo_read_91all_scheme_read;
+extern object __glo_read_91all_95source_scheme_read;
 extern object __glo_include_scheme_read;
 extern object __glo_include_91ci_scheme_read;
 extern object __glo_display_scheme_write;
@@ -974,7 +976,7 @@ c_734685.elements = (object *)e_734688;
 c_734685.elements[0] = ((closureN)self_734476)->elements[1];
 
 
-make_utf8_string_with_len(c_734689, "Package ~a (version ~a) successfuly installed with Cyclone ~a.~%", 64, 64);
+make_utf8_string_with_len(c_734689, "Package ~a ~a successfuly installed with Cyclone ~a.~%", 54, 54);
 return_closcall5(data,  __glo_format_srfi_28,  &c_734685, &c_734689, ((closureN)self_734476)->elements[2], ((closureN)self_734476)->elements[3], ((closureN)self_734476)->elements[0]);; 
 }
 
@@ -1519,7 +1521,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_734492, (function_type)__lambda_1);c_734492.num_args = 0; 
   __glo_get_91index_libs_index = &c_734492; 
   __glo__85default_91local_91index_85_libs_index = boolean_f; 
-  make_utf8_string_with_len(c_734491, "https://raw.githubusercontent.com/cyclone-scheme/cyclone-winds/master/index.scm", 79, 79); 
+  make_utf8_string_with_len(c_734491, "https://raw.githubusercontent.com/cyclone-scheme/cyclone-winds/master/indexes/index.scm", 87, 87); 
   __glo__85default_91index_91url_85_libs_index = &c_734491; 
 
   mclosure0(clo_734771, c_libsindex_inlinable_lambdas); make_pair(pair_734770, find_or_add_symbol("c_libsindex_inlinable_lambdas"), &clo_734771);

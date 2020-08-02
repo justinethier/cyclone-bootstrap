@@ -160,8 +160,6 @@ if (obj_is_not_closure(clo)) { \
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemeload_scheme_load = NULL;
 object __glo_load_scheme_load = NULL;
-extern object __glo__85source_91loc_91lis_85_scheme_base;
-extern object __glo_error_95loc_scheme_base;
 extern object __glo_member_scheme_base;
 extern object __glo_assoc_scheme_base;
 extern object __glo_cons_91source_scheme_base;
@@ -278,6 +276,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;

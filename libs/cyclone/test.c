@@ -500,6 +500,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -14149,7 +14150,7 @@ c_739022.elements[0] = k_732978;
 
 
 make_utf8_string_with_len(c_739029, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_739022, &c_739029, ((closureN)self_734474)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_739022, &c_739029, ((closureN)self_734474)->elements[0]);}
 ;; 
 }
 
@@ -14335,7 +14336,7 @@ c_738963.elements[0] = k_732757;
 
 
 make_utf8_string_with_len(c_738970, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_738963, &c_738970, ((closureN)self_734376)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_738963, &c_738970, ((closureN)self_734376)->elements[0]);}
 ;; 
 }
 
@@ -17923,7 +17924,7 @@ c_737939.elements[0] = k_732626;
 
 
 make_utf8_string_with_len(c_737946, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_737939, &c_737946, ((closureN)self_734318)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_737939, &c_737946, ((closureN)self_734318)->elements[0]);}
 ;; 
 }
 
@@ -19848,7 +19849,7 @@ c_737331.elements[0] = k_732588;
 
 
 make_utf8_string_with_len(c_737338, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_737331, &c_737338, ((closureN)self_734305)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_737331, &c_737338, ((closureN)self_734305)->elements[0]);}
 ;; 
 }
 
@@ -20297,7 +20298,7 @@ c_737175.elements[0] = ((closureN)self_734271)->elements[1];
 
 
 make_utf8_string_with_len(c_737182, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_737175, &c_737182, ((closureN)self_734271)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_737175, &c_737182, ((closureN)self_734271)->elements[0]);}
 ;; 
 }
 
@@ -21132,7 +21133,7 @@ c_736899.elements[0] = ((closureN)self_734222)->elements[1];
 
 
 make_utf8_string_with_len(c_736906, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_736899, &c_736906, ((closureN)self_734222)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_736899, &c_736906, ((closureN)self_734222)->elements[0]);}
 ;; 
 }
 
@@ -22440,7 +22441,7 @@ c_736486.elements[0] = ((closureN)self_734200)->elements[1];
 
 
 make_utf8_string_with_len(c_736493, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_736486, &c_736493, ((closureN)self_734200)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_736486, &c_736493, ((closureN)self_734200)->elements[0]);}
 ;; 
 }
 
@@ -22992,7 +22993,7 @@ c_736314.elements[0] = ((closureN)self_734164)->elements[1];
 
 
 make_utf8_string_with_len(c_736321, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_736314, &c_736321, ((closureN)self_734164)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_736314, &c_736321, ((closureN)self_734164)->elements[0]);}
 ;; 
 }
 
@@ -23771,7 +23772,7 @@ c_736043.elements[0] = k_732225;
 
 
 make_utf8_string_with_len(c_736050, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_736043, &c_736050, ((closureN)self_734144)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_736043, &c_736050, ((closureN)self_734144)->elements[0]);}
 ;; 
 }
 
@@ -24410,7 +24411,7 @@ c_735912.elements[0] = ((closureN)self_734078)->elements[1];
 
 
 make_utf8_string_with_len(c_735919, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_735912, &c_735919, ((closureN)self_734078)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_735912, &c_735919, ((closureN)self_734078)->elements[0]);}
 ;; 
 }
 

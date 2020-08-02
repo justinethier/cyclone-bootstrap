@@ -721,6 +721,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -1140,6 +1141,7 @@ extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
 extern object __glo_list_91prefix_127_scheme_cyclone_util;
 extern object __glo_string_91replace_91all_scheme_cyclone_util;
 extern object __glo_take_scheme_cyclone_util;
+extern object __glo_drop_scheme_cyclone_util;
 extern object __glo_filter_scheme_cyclone_util;
 extern object __glo_library_127_scheme_cyclone_libraries;
 extern object __glo_library_91exists_127_scheme_cyclone_libraries;
@@ -1283,7 +1285,7 @@ defsymbol(let);
 defsymbol(Cyc_91local_91set_67);
 defsymbol(Cyc_91seq);
 defsymbol(set_91global_67);
-defsymbol(cvoid);
+defsymbol(c_91void);
 defsymbol(opaque);
 defsymbol(bytevector);
 defsymbol(string);
@@ -18917,7 +18919,7 @@ c_739754.elements[1] = ((closureN)self_735224)->elements[1];
 return_closcall2(data,  __glo_gensym_scheme_cyclone_util,  &c_739754, quote_var);
 } else { 
     
-if( (boolean_f != Cyc_eqv(((closureN)self_735224)->elements[2], quote_cvoid)) ){ 
+if( (boolean_f != Cyc_eqv(((closureN)self_735224)->elements[2], quote_c_91void)) ){ 
   
 closureN_type c_739789;
 object e_739796 [1];
@@ -28995,7 +28997,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_Cyc_91local_91set_67 = find_or_add_symbol("Cyc-local-set!");
   quote_Cyc_91seq = find_or_add_symbol("Cyc-seq");
   quote_set_91global_67 = find_or_add_symbol("set-global!");
-  quote_cvoid = find_or_add_symbol("cvoid");
+  quote_c_91void = find_or_add_symbol("c-void");
   quote_opaque = find_or_add_symbol("opaque");
   quote_bytevector = find_or_add_symbol("bytevector");
   quote_string = find_or_add_symbol("string");
@@ -29159,7 +29161,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_Cyc_91local_91set_67);
   add_symbol(quote_Cyc_91seq);
   add_symbol(quote_set_91global_67);
-  add_symbol(quote_cvoid);
+  add_symbol(quote_c_91void);
   add_symbol(quote_opaque);
   add_symbol(quote_bytevector);
   add_symbol(quote_string);

@@ -1,4 +1,4 @@
-;;; Cyclone Scheme
+;;;; Cyclone Scheme
 ;;;; https://github.com/justinethier/cyclone
 ;;;;
 ;;;; Copyright (c) 2014-2016, Justin Ethier

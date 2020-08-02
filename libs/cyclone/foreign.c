@@ -331,6 +331,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -494,6 +495,7 @@ extern object __glo_list_91insert_91at_67_scheme_cyclone_util;
 extern object __glo_list_91prefix_127_scheme_cyclone_util;
 extern object __glo_string_91replace_91all_scheme_cyclone_util;
 extern object __glo_take_scheme_cyclone_util;
+extern object __glo_drop_scheme_cyclone_util;
 extern object __glo_filter_scheme_cyclone_util;
 extern object __glo_fast_91string_123_127_191_191inline_191_191_scheme_base;
 extern object __glo_fast_91string_121_127_191_191inline_191_191_scheme_base;
@@ -558,7 +560,6 @@ defsymbol(scm_91fnc);
 defsymbol(arg);
 defsymbol(define_91c);
 defsymbol(begin);
-defsymbol(cvoid);
 defsymbol(gensym);
 defsymbol(mangle);
 defsymbol(var);
@@ -721,12 +722,12 @@ static void __lambda_2(void *data, int argc, closure _,object k_73251) ;
 static void __lambda_3(void *data, int argc, object self_731067, object r_73252) ;
 
 static void __lambda_120(void *data, int argc, closure _,object k_731064) {
-  Cyc_st_add(data, "cyclone/foreign.sld:lib-init:cycloneforeign");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:lib-init:cycloneforeign");
 return_closcall1(data,  k_731064,  obj_int2obj(0));; 
 }
 
 static void __lambda_21(void *data, int argc, closure _,object k_73800, object expr_7360_73196, object rename_7361_73197, object compare_7362_73198) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define");
 
 closureN_type c_732328;
 object e_733327 [2];
@@ -1265,7 +1266,7 @@ object c_733183 = Cyc_string_append(data,  ((closureN)self_731170)->elements[2],
 return_closcall1(data,  ((closureN)self_731170)->elements[2],  c_733183);
 } else { 
     
-if( (boolean_f != Cyc_eqv(((closureN)self_731170)->elements[3], quote_cvoid)) ){ 
+if( (boolean_f != Cyc_eqv(((closureN)self_731170)->elements[3], quote_c_91void)) ){ 
   
 make_utf8_string_with_len(c_733192, "Cyc_VOID", 8, 8);
 return_closcall1(data,  ((closureN)self_731170)->elements[2],  &c_733192);
@@ -2128,7 +2129,7 @@ c_732687.elements[2] = ((closureN)self_731113)->elements[2];
 return_closcall2(data,  __glo_gensym_scheme_cyclone_util,  &c_732687, quote_var);
 } else { 
     
-if( (boolean_f != Cyc_eqv(((closureN)self_731113)->elements[4], quote_cvoid)) ){ 
+if( (boolean_f != Cyc_eqv(((closureN)self_731113)->elements[4], quote_c_91void)) ){ 
   
 closureN_type c_732739;
 object e_732768 [2];
@@ -3117,7 +3118,7 @@ return_direct_with_clo1(data,  k_731036,__lambda_25,  Cyc_caddr(data, ((closureN
 }
 
 static void __lambda_20(void *data, int argc, closure _,object k_73486, object expr_7352_73191, object rename_7353_73192, object compare_7354_73193) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c->scm");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c->scm");
 
 pair_type local_731750; 
 
@@ -3554,7 +3555,7 @@ return_closcall1(data,  k_73486,  set_pair_as_expr(&local_731750, quote__case, s
 }
 
 static void __lambda_19(void *data, int argc, closure _,object k_73338, object expr_7344_73186, object rename_7345_73187, object compare_7346_73188) {
-  Cyc_st_add(data, "cyclone/foreign.sld:scm->c");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:scm->c");
 
 pair_type local_731445; 
 
@@ -3795,7 +3796,7 @@ return_closcall1(data,  k_73338,  set_pair_as_expr(&local_731445, quote__case, s
 }
 
 static void __lambda_16(void *data, int argc, closure _,object k_73328, object expr_7337_73182, object rename_7338_73183, object compare_7339_73184) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-code");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-code");
 
 closureN_type c_731422;
 object e_731431 [2];
@@ -3838,7 +3839,7 @@ return_closcall1(data,  ((closureN)self_731079)->elements[1],  set_pair_as_expr(
 }
 
 static void __lambda_6(void *data, int argc, closure _,object k_73265, object expr_7312_73175, object rename_7313_73176, object compare_7314_73177) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-value");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-value");
 
 closureN_type c_731247;
 object e_731417 [2];
@@ -4140,7 +4141,7 @@ return_closcall1(data,  ((closureN)self_731078)->elements[2],  Cyc_set_cell(data
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_73231, object expr_731_73170, object rename_732_73171, object compare_733_73172) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define-type");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define-type");
 closureN_type c_731208;
 object e_731244 [2];
 c_731208.hdr.mark = gc_color_red;
@@ -4197,7 +4198,7 @@ static void __lambda_5(void *data, int argc, object self_731066, object r_73235)
 }
 
 static void __lambda_2(void *data, int argc, closure _,object k_73251) {
-  Cyc_st_add(data, "cyclone/foreign.sld:c-define-type");
+  Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define-type");
 
 closureN_type c_731184;
 object e_731201 [1];
@@ -4250,7 +4251,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_arg = find_or_add_symbol("arg");
   quote_define_91c = find_or_add_symbol("define-c");
   quote_begin = find_or_add_symbol("begin");
-  quote_cvoid = find_or_add_symbol("cvoid");
   quote_gensym = find_or_add_symbol("gensym");
   quote_mangle = find_or_add_symbol("mangle");
   quote_var = find_or_add_symbol("var");
@@ -4299,7 +4299,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_arg);
   add_symbol(quote_define_91c);
   add_symbol(quote_begin);
-  add_symbol(quote_cvoid);
   add_symbol(quote_gensym);
   add_symbol(quote_mangle);
   add_symbol(quote_var);

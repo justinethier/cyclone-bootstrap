@@ -783,6 +783,8 @@
           (cons
             (car *global-environment*)
             (setup-environment *initial-environment*)))
+
+    ;; Load any renamed exports into the environment
     (for-each
       (lambda (rename/base)
         (env:define-variable! 

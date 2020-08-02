@@ -581,6 +581,7 @@ extern object __glo_call_91with_91port_scheme_base;
 extern object __glo_error_91object_127_scheme_base;
 extern object __glo_error_91object_91message_scheme_base;
 extern object __glo_error_91object_91irritants_scheme_base;
+extern object __glo_error_95loc_scheme_base;
 extern object __glo_error_scheme_base;
 extern object __glo_raise_scheme_base;
 extern object __glo_raise_91continuable_scheme_base;
@@ -11450,7 +11451,7 @@ c_737656.elements[0] = k_733500;
 
 
 make_utf8_string_with_len(c_737663, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_737656, &c_737663, ((closureN)self_734736)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_737656, &c_737663, ((closureN)self_734736)->elements[0]);}
 ;; 
 }
 
@@ -13484,7 +13485,7 @@ c_736691.elements[0] = ((closureN)self_734653)->elements[1];
 
 
 make_utf8_string_with_len(c_736698, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_736691, &c_736698, ((closureN)self_734653)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_736691, &c_736698, ((closureN)self_734653)->elements[0]);}
 ;; 
 }
 
@@ -15897,7 +15898,7 @@ c_735749.elements[0] = ((closureN)self_734598)->elements[1];
 
 
 make_utf8_string_with_len(c_735756, "no expansion for", 16, 16);
-return_closcall3(data,  __glo_error_scheme_base,  &c_735749, &c_735756, ((closureN)self_734598)->elements[0]);}
+return_closcall3(data,  __glo_error_95loc_scheme_base,  &c_735749, &c_735756, ((closureN)self_734598)->elements[0]);}
 ;; 
 }
 
