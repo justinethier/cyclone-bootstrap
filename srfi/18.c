@@ -257,6 +257,56 @@ if (obj_is_not_closure(clo)) { \
      (_fn)(td, 7, (closure)(clo),a1,a2,a3,a4,a5,a6,a7); \
  }}
 
+#define closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, 7, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8); \
+} else { \
+   ((clo)->fn)(td, 8, clo,a1,a2,a3,a4,a5,a6,a7,a8);\
+}
+#define return_closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
+     GC(td, clo, buf, 8); \
+     return; \
+ } else {\
+     closcall8(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8); \
+     return;\
+ } \
+}
+
+#define continue_or_gc8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char *top = alloca(sizeof(char)); \
+ if (stack_overflow(top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
+     GC(td, clo, buf, 8); \
+     return; \
+ } else {\
+     continue;\
+ } \
+}
+
+#define return_direct8(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8; \
+     mclosure0(c1, (function_type) _fn); \
+     GC(td, &c1, buf, 8); \
+     return; \
+ } else { \
+     (_fn)(td, 8, (closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8); \
+ }}
+
+#define return_direct_with_clo8(td, clo, _fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
+ char top; \
+ if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
+     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
+     GC(td, clo, buf, 8); \
+     return; \
+ } else { \
+     (_fn)(td, 8, (closure)(clo),a1,a2,a3,a4,a5,a6,a7,a8); \
+ }}
+
 #include "cyclone/types.h"
 object __glo_lib_91init_117srfi18_srfi_18 = NULL;
 object __glo_condition_91variable_91broadcast_67_srfi_18 = NULL;
@@ -1085,7 +1135,7 @@ return_closcall1(data,  __glo__75alloc_91thread_91data_srfi_18,  &c_73166);;
 }
 
 static void __lambda_3(void *data, int argc, object self_73125, object r_7365) {
-  return_closcall7(data,  __glo_vector_scheme_base,  ((closureN)self_73125)->elements[0], quote_cyc_91thread_91obj, ((closureN)self_73125)->elements[2], r_7365, ((closureN)self_73125)->elements[1], boolean_f, boolean_f);; 
+  return_closcall8(data,  __glo_vector_scheme_base,  ((closureN)self_73125)->elements[0], quote_cyc_91thread_91obj, ((closureN)self_73125)->elements[2], r_7365, ((closureN)self_73125)->elements[1], boolean_f, boolean_f, boolean_f);; 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7354, object obj_731_7334) {
