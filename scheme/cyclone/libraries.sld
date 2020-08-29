@@ -239,8 +239,12 @@
       (lambda (d acc) 
         (cond
           ((tagged-list? 'cond-expand d)
-           (cons (expander d) acc))
-           ;(lib:cond-expand-decls (expander d)))
+           (let* ((expr (expander d))
+                  (begin? (and (pair? expr)
+                               (not (member (car expr) '(import export))))))
+             (if begin?
+                 (cons `(begin ,expr) acc)
+                 (cons expr acc))))
           (else
             (cons d acc)) ))
       '() 
