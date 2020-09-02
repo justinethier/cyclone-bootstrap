@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.20 
+ ** Version 0.21 
  **
  **/
 
@@ -1497,10 +1497,10 @@ extern void c_schemetime_entry_pt(void *data, int argc, closure cont, object val
 extern void c_schemeinexact_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_scheme_char_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneutil_entry_pt(void *data, int argc, closure cont, object value);
+extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeread_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemeprocess_91context_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonelibraries_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecyclonehashset_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_srfi69_entry_pt(void *data, int argc, closure cont, object value);
 extern void c_schemecycloneprimitives_entry_pt(void *data, int argc, closure cont, object value);
@@ -1537,10 +1537,10 @@ mclosure1(c_73466, c_schemefile_entry_pt, &c_73465);
 mclosure1(c_73467, c_schemecycloneprimitives_entry_pt, &c_73466);
 mclosure1(c_73468, c_srfi69_entry_pt, &c_73467);
 mclosure1(c_73469, c_schemecyclonehashset_entry_pt, &c_73468);
-mclosure1(c_73470, c_schemewrite_entry_pt, &c_73469);
-mclosure1(c_73471, c_schemecyclonelibraries_entry_pt, &c_73470);
-mclosure1(c_73472, c_schemeprocess_91context_entry_pt, &c_73471);
-mclosure1(c_73473, c_schemeread_entry_pt, &c_73472);
+mclosure1(c_73470, c_schemecyclonelibraries_entry_pt, &c_73469);
+mclosure1(c_73471, c_schemeprocess_91context_entry_pt, &c_73470);
+mclosure1(c_73472, c_schemeread_entry_pt, &c_73471);
+mclosure1(c_73473, c_schemewrite_entry_pt, &c_73472);
 mclosure1(c_73474, c_schemecycloneutil_entry_pt, &c_73473);
 mclosure1(c_73475, c_scheme_char_entry_pt, &c_73474);
 mclosure1(c_73476, c_schemeinexact_entry_pt, &c_73475);
