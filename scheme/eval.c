@@ -7059,7 +7059,7 @@ c_734367.elements[0] = ((closureN)self_732667)->elements[1];
 c_734367.elements[1] = ((closureN)self_732667)->elements[2];
 c_734367.elements[2] = r_731617;
 
-return_closcall4(data,  __glo_lib_117imports_91_125idb_scheme_cyclone_libraries,  &c_734367, ((closureN)self_732667)->elements[0], __glo__85append_91dirs_85_scheme_eval, __glo__85prepend_91dirs_85_scheme_eval);; 
+return_closcall5(data,  __glo_lib_117imports_91_125idb_scheme_cyclone_libraries,  &c_734367, ((closureN)self_732667)->elements[0], __glo__85append_91dirs_85_scheme_eval, __glo__85prepend_91dirs_85_scheme_eval, __glo_base_91expander_scheme_eval);; 
 }
 
 static void __lambda_218(void *data, int argc, object self_732668, object r_731641) {
