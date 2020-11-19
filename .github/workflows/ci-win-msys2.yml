@@ -12,12 +12,12 @@ jobs:
 #        arch: [32, 64]
     steps:
       - uses: actions/checkout@v1
-      - uses: numworks/setup-msys2@v1
-      - run: msys2do uname -a
-      - name: Pacman
-        run: msys2do pacman --noconfirm -S gcc make autoconf git
-      - name: Build
-        run: msys2do ./setup.mysys.sh
+      - uses: msys2/setup-msys2@v2
+      - shell: msys2 {0}
+        run: |
+          uname -a
+          pacman --noconfirm -S gcc make autoconf git
+          ./setup.mysys.sh
 
 #  msys2:
 #    runs-on: windows-latest
