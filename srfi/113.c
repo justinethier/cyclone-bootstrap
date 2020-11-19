@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2020 Justin Ethier
- ** Version 0.22 
+ ** Version 0.23 
  **
  **/
 
@@ -727,6 +727,23 @@ extern object __glo__121_123_127_srfi_128;
 extern object __glo__125_123_127_srfi_128;
 extern object __glo_comparator_91if_121_123_125_srfi_128;
 extern object __glo__75salt_75_srfi_128;
+extern object __glo_comparator_91max_91in_91list_srfi_128;
+extern object __glo_comparator_91min_91in_91list_srfi_128;
+extern object __glo_comparator_91max_srfi_128;
+extern object __glo_comparator_91min_srfi_128;
+extern object __glo_default_91comparator_srfi_128;
+extern object __glo_boolean_91comparator_srfi_128;
+extern object __glo_real_91comparator_srfi_128;
+extern object __glo_char_91comparator_srfi_128;
+extern object __glo_char_91ci_91comparator_srfi_128;
+extern object __glo_string_91comparator_srfi_128;
+extern object __glo_string_91ci_91comparator_srfi_128;
+extern object __glo_pair_91comparator_srfi_128;
+extern object __glo_list_91comparator_srfi_128;
+extern object __glo_vector_91comparator_srfi_128;
+extern object __glo_eq_91comparator_srfi_128;
+extern object __glo_eqv_91comparator_srfi_128;
+extern object __glo_equal_91comparator_srfi_128;
 extern object __glo_make_91hash_91table_srfi_69;
 extern object __glo_hash_91table_127_srfi_69;
 extern object __glo_alist_91_125hash_91table_srfi_69;
