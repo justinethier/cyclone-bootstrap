@@ -188,7 +188,7 @@ c_7343.elements = (object *)e_7375;
 c_7343.elements[0] = ((closureN)self_7328)->elements[0];
 
 
-make_utf8_string_with_len(c_7379, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2020 Justin Ethier\n       @@     #@     Version ", 293, 293);
+make_utf8_string_with_len(c_7379, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2021 Justin Ethier\n       @@     #@     Version ", 293, 293);
 
 make_utf8_string_with_len(c_7380, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n", 90, 90);
 
@@ -318,7 +318,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85version_85_scheme_cyclone_common = boolean_f; 
   make_utf8_string_with_len(c_7335, "", 0, 0); 
   __glo__85version_91name_85_scheme_cyclone_common = &c_7335; 
-  make_utf8_string_with_len(c_7334, "0.23", 4, 4); 
+  make_utf8_string_with_len(c_7334, "0.24", 4, 4); 
   __glo__85version_91number_85_scheme_cyclone_common = &c_7334; 
 
   mclosure0(clo_7392, c_schemecyclonecommon_inlinable_lambdas); make_pair(pair_7391, find_or_add_symbol("c_schemecyclonecommon_inlinable_lambdas"), &clo_7392);
