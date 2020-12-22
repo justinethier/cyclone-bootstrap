@@ -425,13 +425,15 @@ extern object __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91eq_127_191_191inline_191_191_scheme_read;
 extern object __glo_Cyc_91opaque_91unsafe_91string_127_191_191inline_191_191_scheme_read;
 #include "cyclone/runtime.h"
-static void __lambda_5(void *data, int argc, closure _,object k_7322) ;
+static void __lambda_7(void *data, int argc, closure _,object k_7322) ;
 static void __lambda_1(void *data, int argc, closure _,object k_7313, object filename_731_736, object env_732_737_raw, ...) ;
-static void __lambda_4(void *data, int argc, object self_7325, object k_7319, object port_735_7310) ;
-static void __lambda_2(void *data, int argc, object self_7323, object exprs_733_738) ;
-static void __lambda_3(void *data, int argc, object self_7324, object k_7316, object expr_734_739) ;
+static void __lambda_6(void *data, int argc, object self_7323, object k_7319, object port_735_7310) ;
+static void __lambda_2(void *data, int argc, object self_7324, object r_7318) ;
+static void __lambda_3(void *data, int argc, object self_7325, object exprs_733_738) ;
+static void __lambda_5(void *data, int argc, object self_7326, object k_7316, object expr_734_739) ;
+static void __lambda_4(void *data, int argc, object self_7327, object r_7315) ;
 
-static void __lambda_5(void *data, int argc, closure _,object k_7322) {
+static void __lambda_7(void *data, int argc, closure _,object k_7322) {
   Cyc_st_add(data, "scheme/load.sld:lib-init:schemeload");
 return_closcall1(data,  k_7322,  obj_int2obj(0));; 
 }
@@ -440,59 +442,94 @@ static void __lambda_1(void *data, int argc, closure _,object k_7313, object fil
 load_varargs(env_732_737, env_732_737_raw, argc - 2);
   Cyc_st_add(data, "scheme/load.sld:load");
 
-closureN_type c_7328;
-object e_7341 [2];
-c_7328.hdr.mark = gc_color_red;
- c_7328.hdr.grayed = 0;
-c_7328.tag = closureN_tag;
- c_7328.fn = (function_type)__lambda_2;
-c_7328.num_args = 1;
-c_7328.num_elements = 2;
-c_7328.elements = (object *)e_7341;
-c_7328.elements[0] = env_732_737;
-c_7328.elements[1] = k_7313;
+closureN_type c_7330;
+object e_7351 [3];
+c_7330.hdr.mark = gc_color_red;
+ c_7330.hdr.grayed = 0;
+c_7330.tag = closureN_tag;
+ c_7330.fn = (function_type)__lambda_2;
+c_7330.num_args = 1;
+c_7330.num_elements = 3;
+c_7330.elements = (object *)e_7351;
+c_7330.elements[0] = env_732_737;
+c_7330.elements[1] = filename_731_736;
+c_7330.elements[2] = k_7313;
 
 
-closureN_type c_7342;
-object e_7345 [1];
-c_7342.hdr.mark = gc_color_red;
- c_7342.hdr.grayed = 0;
-c_7342.tag = closureN_tag;
- c_7342.fn = (function_type)__lambda_4;
-c_7342.num_args = 1;
-c_7342.num_elements = 1;
-c_7342.elements = (object *)e_7345;
-c_7342.elements[0] = filename_731_736;
+closureN_type c_7352;
+object e_7355 [1];
+c_7352.hdr.mark = gc_color_red;
+ c_7352.hdr.grayed = 0;
+c_7352.tag = closureN_tag;
+ c_7352.fn = (function_type)__lambda_6;
+c_7352.num_args = 1;
+c_7352.num_elements = 1;
+c_7352.elements = (object *)e_7355;
+c_7352.elements[0] = filename_731_736;
 
-return_closcall3(data,  __glo_call_91with_91input_91file_scheme_file,  &c_7328, filename_731_736, &c_7342);; 
+return_direct_with_clo1(data,(closure)&c_7330,__lambda_2,  &c_7352);; 
 }
 
-static void __lambda_4(void *data, int argc, object self_7325, object k_7319, object port_735_7310) {
-  return_closcall3(data,  __glo_read_91all_95source_scheme_read,  k_7319, port_735_7310, ((closureN)self_7325)->elements[0]);; 
+static void __lambda_6(void *data, int argc, object self_7323, object k_7319, object port_735_7310) {
+  return_closcall3(data,  __glo_read_91all_95source_scheme_read,  k_7319, port_735_7310, ((closureN)self_7323)->elements[0]);; 
 }
 
-static void __lambda_2(void *data, int argc, object self_7323, object exprs_733_738) {
+static void __lambda_2(void *data, int argc, object self_7324, object r_7318) {
   
-closureN_type c_7331;
-object e_7340 [1];
-c_7331.hdr.mark = gc_color_red;
- c_7331.hdr.grayed = 0;
-c_7331.tag = closureN_tag;
- c_7331.fn = (function_type)__lambda_3;
-c_7331.num_args = 1;
-c_7331.num_elements = 1;
-c_7331.elements = (object *)e_7340;
-c_7331.elements[0] = ((closureN)self_7323)->elements[0];
+closureN_type c_7332;
+object e_7349 [2];
+c_7332.hdr.mark = gc_color_red;
+ c_7332.hdr.grayed = 0;
+c_7332.tag = closureN_tag;
+ c_7332.fn = (function_type)__lambda_3;
+c_7332.num_args = 1;
+c_7332.num_elements = 2;
+c_7332.elements = (object *)e_7349;
+c_7332.elements[0] = ((closureN)self_7324)->elements[0];
+c_7332.elements[1] = ((closureN)self_7324)->elements[2];
 
-return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7323)->elements[1], &c_7331, exprs_733_738);; 
+return_closcall3(data,  __glo_call_91with_91input_91file_scheme_file,  &c_7332, ((closureN)self_7324)->elements[1], r_7318);; 
 }
 
-static void __lambda_3(void *data, int argc, object self_7324, object k_7316, object expr_734_739) {
+static void __lambda_3(void *data, int argc, object self_7325, object exprs_733_738) {
   
-pair_type local_7338; 
+closureN_type c_7334;
+object e_7338 [2];
+c_7334.hdr.mark = gc_color_red;
+ c_7334.hdr.grayed = 0;
+c_7334.tag = closureN_tag;
+ c_7334.fn = (function_type)__lambda_4;
+c_7334.num_args = 1;
+c_7334.num_elements = 2;
+c_7334.elements = (object *)e_7338;
+c_7334.elements[0] = exprs_733_738;
+c_7334.elements[1] = ((closureN)self_7325)->elements[1];
 
-object c_7335 = apply(data,  k_7316,__glo_eval_scheme_eval, set_pair_as_expr(&local_7338, expr_734_739, ((closureN)self_7324)->elements[0]));
-return_closcall1(data,  k_7316,  c_7335);; 
+
+closureN_type c_7339;
+object e_7348 [1];
+c_7339.hdr.mark = gc_color_red;
+ c_7339.hdr.grayed = 0;
+c_7339.tag = closureN_tag;
+ c_7339.fn = (function_type)__lambda_5;
+c_7339.num_args = 1;
+c_7339.num_elements = 1;
+c_7339.elements = (object *)e_7348;
+c_7339.elements[0] = ((closureN)self_7325)->elements[0];
+
+return_direct_with_clo1(data,(closure)&c_7334,__lambda_4,  &c_7339);; 
+}
+
+static void __lambda_5(void *data, int argc, object self_7326, object k_7316, object expr_734_739) {
+  
+pair_type local_7346; 
+
+object c_7343 = apply(data,  k_7316,__glo_eval_scheme_eval, set_pair_as_expr(&local_7346, expr_734_739, ((closureN)self_7326)->elements[0]));
+return_closcall1(data,  k_7316,  c_7343);; 
+}
+
+static void __lambda_4(void *data, int argc, object self_7327, object r_7315) {
+  return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7327)->elements[1], r_7315, ((closureN)self_7327)->elements[0]);; 
 }
 
 void c_schemeload_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
@@ -503,18 +540,18 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117schemeload_scheme_load", (object *) &__glo_lib_91init_117schemeload_scheme_load);
   add_global("__glo_load_scheme_load", (object *) &__glo_load_scheme_load);
-  mclosure0(c_7346, (function_type)__lambda_5);c_7346.num_args = 0; 
-  __glo_lib_91init_117schemeload_scheme_load = &c_7346; 
-  mclosure0(c_7326, (function_type)__lambda_1);c_7326.num_args = 1; 
-  __glo_load_scheme_load = &c_7326; 
+  mclosure0(c_7356, (function_type)__lambda_7);c_7356.num_args = 0; 
+  __glo_lib_91init_117schemeload_scheme_load = &c_7356; 
+  mclosure0(c_7328, (function_type)__lambda_1);c_7328.num_args = 1; 
+  __glo_load_scheme_load = &c_7328; 
 
-  mclosure0(clo_7349, c_schemeload_inlinable_lambdas); make_pair(pair_7348, find_or_add_symbol("c_schemeload_inlinable_lambdas"), &clo_7349);
-  make_cvar(cvar_7350, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7351, find_or_add_symbol("lib-init:schemeload"), &cvar_7350);
-  make_cvar(cvar_7352, (object *)&__glo_load_scheme_load);make_pair(pair_7353, find_or_add_symbol("load"), &cvar_7352);
-make_pair(c_7356, &pair_7348,Cyc_global_variables);
-make_pair(c_7355, &pair_7351, &c_7356);
-make_pair(c_7354, &pair_7353, &c_7355);
-Cyc_global_variables = &c_7354;
+  mclosure0(clo_7359, c_schemeload_inlinable_lambdas); make_pair(pair_7358, find_or_add_symbol("c_schemeload_inlinable_lambdas"), &clo_7359);
+  make_cvar(cvar_7360, (object *)&__glo_lib_91init_117schemeload_scheme_load);make_pair(pair_7361, find_or_add_symbol("lib-init:schemeload"), &cvar_7360);
+  make_cvar(cvar_7362, (object *)&__glo_load_scheme_load);make_pair(pair_7363, find_or_add_symbol("load"), &cvar_7362);
+make_pair(c_7366, &pair_7358,Cyc_global_variables);
+make_pair(c_7365, &pair_7361, &c_7366);
+make_pair(c_7364, &pair_7363, &c_7365);
+Cyc_global_variables = &c_7364;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemeload_scheme_load)->fn)(data, 1, cont, cont);
 }

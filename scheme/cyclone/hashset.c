@@ -389,27 +389,28 @@ extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_record_91marker2_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
-static void __lambda_3(void *data, int argc, closure _,object k_7314) ;
+static void __lambda_4(void *data, int argc, closure _,object k_7314) ;
+static void __lambda_10(void *data, int argc, closure _, object k, object opq, object item ) ;
 static void __lambda_9(void *data, int argc, closure _, object k, object opq, object item ) ;
-static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) ;
 static void __lambda_1(void *data, int argc, closure _,object k_739, object hs_731_734, object lis_732_735) ;
-static void __lambda_2(void *data, int argc, object self_7315, object k_7311, object p_733_736) ;
-static void __lambda_7(void *data, int argc, closure _, object k, object opq, object item ) ;
+static void __lambda_3(void *data, int argc, object self_7315, object k_7311, object p_733_736) ;
+static void __lambda_2(void *data, int argc, object self_7316, object r_7310) ;
+static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) ;
+static void __lambda_7(void *data, int argc, closure _, object k, object opq ) ;
 static void __lambda_6(void *data, int argc, closure _, object k, object opq ) ;
-static void __lambda_5(void *data, int argc, closure _, object k, object opq ) ;
-static void __lambda_4(void *data, int argc, closure _, object k ) ;
+static void __lambda_5(void *data, int argc, closure _, object k ) ;
 
-static void __lambda_3(void *data, int argc, closure _,object k_7314) {
+static void __lambda_4(void *data, int argc, closure _,object k_7314) {
   Cyc_st_add(data, "scheme/cyclone/hashset.sld:lib-init:schemecyclonehashset");
 return_closcall1(data,  k_7314,  obj_int2obj(0));; 
 }
 
-static void __lambda_9(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_10(void *data, int argc, closure _, object k, object opq, object item ) {
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_is_member(hs, item);
     return_closcall1(data, k, rv ? boolean_t : boolean_f);
    }
-static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_9(void *data, int argc, closure _, object k, object opq, object item ) {
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_remove(hs, item);
     return_closcall1(data, k, obj_int2obj(rv));
@@ -417,40 +418,57 @@ static void __lambda_8(void *data, int argc, closure _, object k, object opq, ob
 static void __lambda_1(void *data, int argc, closure _,object k_739, object hs_731_734, object lis_732_735) {
   Cyc_st_add(data, "scheme/cyclone/hashset.sld:hs-add-all!");
 
-closureN_type c_7322;
-object e_7325 [1];
-c_7322.hdr.mark = gc_color_red;
- c_7322.hdr.grayed = 0;
-c_7322.tag = closureN_tag;
- c_7322.fn = (function_type)__lambda_2;
-c_7322.num_args = 1;
-c_7322.num_elements = 1;
-c_7322.elements = (object *)e_7325;
-c_7322.elements[0] = hs_731_734;
+closureN_type c_7323;
+object e_7327 [2];
+c_7323.hdr.mark = gc_color_red;
+ c_7323.hdr.grayed = 0;
+c_7323.tag = closureN_tag;
+ c_7323.fn = (function_type)__lambda_2;
+c_7323.num_args = 1;
+c_7323.num_elements = 2;
+c_7323.elements = (object *)e_7327;
+c_7323.elements[0] = k_739;
+c_7323.elements[1] = lis_732_735;
 
-return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  k_739, &c_7322, lis_732_735);; 
+
+closureN_type c_7328;
+object e_7331 [1];
+c_7328.hdr.mark = gc_color_red;
+ c_7328.hdr.grayed = 0;
+c_7328.tag = closureN_tag;
+ c_7328.fn = (function_type)__lambda_3;
+c_7328.num_args = 1;
+c_7328.num_elements = 1;
+c_7328.elements = (object *)e_7331;
+c_7328.elements[0] = hs_731_734;
+
+return_direct_with_clo1(data,(closure)&c_7323,__lambda_2,  &c_7328);; 
 }
 
-static void __lambda_2(void *data, int argc, object self_7315, object k_7311, object p_733_736) {
+static void __lambda_3(void *data, int argc, object self_7315, object k_7311, object p_733_736) {
   return_closcall3(data,  __glo_hs_91add_67_scheme_cyclone_hashset,  k_7311, ((closureN)self_7315)->elements[0], p_733_736);; 
 }
 
-static void __lambda_7(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_2(void *data, int argc, object self_7316, object r_7310) {
+  return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7316)->elements[0], r_7310, ((closureN)self_7316)->elements[1]);; 
+}
+
+static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) {
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_add(hs, item);
     return_closcall1(data, k, obj_int2obj(rv));
    }
-static void __lambda_6(void *data, int argc, closure _, object k, object opq ) {
+static void __lambda_7(void *data, int argc, closure _, object k, object opq ) {
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int count = hashset_num_items(hs);
     return_closcall1(data, k, obj_int2obj(count));
    }
-static void __lambda_5(void *data, int argc, closure _, object k, object opq ) {
+static void __lambda_6(void *data, int argc, closure _, object k, object opq ) {
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     hashset_destroy(hs);
     return_closcall1(data, k, boolean_t);
    }
-static void __lambda_4(void *data, int argc, closure _, object k ) {
+static void __lambda_5(void *data, int argc, closure _, object k ) {
     hashset_t hs = hashset_create();
     make_c_opaque(opq, hs);
     return_closcall1(data, k, &opq);
@@ -469,42 +487,42 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_hs_91num_91items_scheme_cyclone_hashset", (object *) &__glo_hs_91num_91items_scheme_cyclone_hashset);
   add_global("__glo_hs_91destroy_67_scheme_cyclone_hashset", (object *) &__glo_hs_91destroy_67_scheme_cyclone_hashset);
   add_global("__glo_hs_91create_scheme_cyclone_hashset", (object *) &__glo_hs_91create_scheme_cyclone_hashset);
-  mclosure0(c_7328, (function_type)__lambda_3);c_7328.num_args = 0; 
-  __glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset = &c_7328; 
-  mclosure0(c_7327, (function_type)__lambda_9);c_7327.num_args = 2; 
-  __glo_hs_91member_127_scheme_cyclone_hashset = &c_7327; 
-  mclosure0(c_7326, (function_type)__lambda_8);c_7326.num_args = 2; 
-  __glo_hs_91remove_67_scheme_cyclone_hashset = &c_7326; 
-  mclosure0(c_7320, (function_type)__lambda_1);c_7320.num_args = 2; 
-  __glo_hs_91add_91all_67_scheme_cyclone_hashset = &c_7320; 
-  mclosure0(c_7319, (function_type)__lambda_7);c_7319.num_args = 2; 
-  __glo_hs_91add_67_scheme_cyclone_hashset = &c_7319; 
+  mclosure0(c_7334, (function_type)__lambda_4);c_7334.num_args = 0; 
+  __glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset = &c_7334; 
+  mclosure0(c_7333, (function_type)__lambda_10);c_7333.num_args = 2; 
+  __glo_hs_91member_127_scheme_cyclone_hashset = &c_7333; 
+  mclosure0(c_7332, (function_type)__lambda_9);c_7332.num_args = 2; 
+  __glo_hs_91remove_67_scheme_cyclone_hashset = &c_7332; 
+  mclosure0(c_7321, (function_type)__lambda_1);c_7321.num_args = 2; 
+  __glo_hs_91add_91all_67_scheme_cyclone_hashset = &c_7321; 
+  mclosure0(c_7320, (function_type)__lambda_8);c_7320.num_args = 2; 
+  __glo_hs_91add_67_scheme_cyclone_hashset = &c_7320; 
+  mclosure0(c_7319, (function_type)__lambda_7);c_7319.num_args = 1; 
+  __glo_hs_91num_91items_scheme_cyclone_hashset = &c_7319; 
   mclosure0(c_7318, (function_type)__lambda_6);c_7318.num_args = 1; 
-  __glo_hs_91num_91items_scheme_cyclone_hashset = &c_7318; 
-  mclosure0(c_7317, (function_type)__lambda_5);c_7317.num_args = 1; 
-  __glo_hs_91destroy_67_scheme_cyclone_hashset = &c_7317; 
-  mclosure0(c_7316, (function_type)__lambda_4);c_7316.num_args = 0; 
-  __glo_hs_91create_scheme_cyclone_hashset = &c_7316; 
+  __glo_hs_91destroy_67_scheme_cyclone_hashset = &c_7318; 
+  mclosure0(c_7317, (function_type)__lambda_5);c_7317.num_args = 0; 
+  __glo_hs_91create_scheme_cyclone_hashset = &c_7317; 
 
-  mclosure0(clo_7331, c_schemecyclonehashset_inlinable_lambdas); make_pair(pair_7330, find_or_add_symbol("c_schemecyclonehashset_inlinable_lambdas"), &clo_7331);
-  make_cvar(cvar_7332, (object *)&__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);make_pair(pair_7333, find_or_add_symbol("lib-init:schemecyclonehashset"), &cvar_7332);
-  make_cvar(cvar_7334, (object *)&__glo_hs_91member_127_scheme_cyclone_hashset);make_pair(pair_7335, find_or_add_symbol("hs-member?"), &cvar_7334);
-  make_cvar(cvar_7336, (object *)&__glo_hs_91remove_67_scheme_cyclone_hashset);make_pair(pair_7337, find_or_add_symbol("hs-remove!"), &cvar_7336);
-  make_cvar(cvar_7338, (object *)&__glo_hs_91add_91all_67_scheme_cyclone_hashset);make_pair(pair_7339, find_or_add_symbol("hs-add-all!"), &cvar_7338);
-  make_cvar(cvar_7340, (object *)&__glo_hs_91add_67_scheme_cyclone_hashset);make_pair(pair_7341, find_or_add_symbol("hs-add!"), &cvar_7340);
-  make_cvar(cvar_7342, (object *)&__glo_hs_91num_91items_scheme_cyclone_hashset);make_pair(pair_7343, find_or_add_symbol("hs-num-items"), &cvar_7342);
-  make_cvar(cvar_7344, (object *)&__glo_hs_91destroy_67_scheme_cyclone_hashset);make_pair(pair_7345, find_or_add_symbol("hs-destroy!"), &cvar_7344);
-  make_cvar(cvar_7346, (object *)&__glo_hs_91create_scheme_cyclone_hashset);make_pair(pair_7347, find_or_add_symbol("hs-create"), &cvar_7346);
-make_pair(c_7356, &pair_7330,Cyc_global_variables);
-make_pair(c_7355, &pair_7333, &c_7356);
-make_pair(c_7354, &pair_7335, &c_7355);
-make_pair(c_7353, &pair_7337, &c_7354);
-make_pair(c_7352, &pair_7339, &c_7353);
-make_pair(c_7351, &pair_7341, &c_7352);
-make_pair(c_7350, &pair_7343, &c_7351);
-make_pair(c_7349, &pair_7345, &c_7350);
-make_pair(c_7348, &pair_7347, &c_7349);
-Cyc_global_variables = &c_7348;
+  mclosure0(clo_7337, c_schemecyclonehashset_inlinable_lambdas); make_pair(pair_7336, find_or_add_symbol("c_schemecyclonehashset_inlinable_lambdas"), &clo_7337);
+  make_cvar(cvar_7338, (object *)&__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);make_pair(pair_7339, find_or_add_symbol("lib-init:schemecyclonehashset"), &cvar_7338);
+  make_cvar(cvar_7340, (object *)&__glo_hs_91member_127_scheme_cyclone_hashset);make_pair(pair_7341, find_or_add_symbol("hs-member?"), &cvar_7340);
+  make_cvar(cvar_7342, (object *)&__glo_hs_91remove_67_scheme_cyclone_hashset);make_pair(pair_7343, find_or_add_symbol("hs-remove!"), &cvar_7342);
+  make_cvar(cvar_7344, (object *)&__glo_hs_91add_91all_67_scheme_cyclone_hashset);make_pair(pair_7345, find_or_add_symbol("hs-add-all!"), &cvar_7344);
+  make_cvar(cvar_7346, (object *)&__glo_hs_91add_67_scheme_cyclone_hashset);make_pair(pair_7347, find_or_add_symbol("hs-add!"), &cvar_7346);
+  make_cvar(cvar_7348, (object *)&__glo_hs_91num_91items_scheme_cyclone_hashset);make_pair(pair_7349, find_or_add_symbol("hs-num-items"), &cvar_7348);
+  make_cvar(cvar_7350, (object *)&__glo_hs_91destroy_67_scheme_cyclone_hashset);make_pair(pair_7351, find_or_add_symbol("hs-destroy!"), &cvar_7350);
+  make_cvar(cvar_7352, (object *)&__glo_hs_91create_scheme_cyclone_hashset);make_pair(pair_7353, find_or_add_symbol("hs-create"), &cvar_7352);
+make_pair(c_7362, &pair_7336,Cyc_global_variables);
+make_pair(c_7361, &pair_7339, &c_7362);
+make_pair(c_7360, &pair_7341, &c_7361);
+make_pair(c_7359, &pair_7343, &c_7360);
+make_pair(c_7358, &pair_7345, &c_7359);
+make_pair(c_7357, &pair_7347, &c_7358);
+make_pair(c_7356, &pair_7349, &c_7357);
+make_pair(c_7355, &pair_7351, &c_7356);
+make_pair(c_7354, &pair_7353, &c_7355);
+Cyc_global_variables = &c_7354;
 cont = ((closure1_type *)cont)->element;
 (((closure)__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset)->fn)(data, 1, cont, cont);
 }
