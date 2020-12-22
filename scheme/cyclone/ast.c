@@ -297,6 +297,7 @@ extern object __glo_make_91setter_scheme_base;
 extern object __glo_slot_91ref_scheme_base;
 extern object __glo_slot_91set_67_scheme_base;
 extern object __glo_type_91slot_91offset_scheme_base;
+extern object __glo_make_91record_91marker_scheme_base;
 extern object __glo_record_91marker2_scheme_base;
 extern object __glo_receive_scheme_base;
 extern object __glo_abs_scheme_base;
@@ -569,6 +570,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
+extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 extern object __glo_record_91marker2_191_191inline_191_191_scheme_base;
 extern object __glo_tagged_91list_127_191_191inline_191_191_scheme_cyclone_util;
 extern object __glo_if_91_125condition_191_191inline_191_191_scheme_cyclone_util;
@@ -2484,7 +2486,7 @@ complex_num_type local_73489;
 
 vector_4_type local_73492; 
 return_closcall1(data,  k_73192,  Cyc_fast_vector_3(&local_73486, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_73489), quote__121lambda_91ast_125, Cyc_fast_vector_4(&local_73492, id_732_73141, args_733_73142, body_734_73143, has_91cont_735_73144)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_73489), quote__121lambda_91ast_125, Cyc_fast_vector_4(&local_73492, id_732_73141, args_733_73142, body_734_73143, has_91cont_735_73144)));; 
 }
 
 static void __lambda_4(void *data, int argc, closure _,object k_73171) {

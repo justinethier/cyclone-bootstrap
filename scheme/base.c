@@ -494,8 +494,8 @@ object __glo_output_91port_91open_127_scheme_base = NULL;
 object __glo_input_91port_91open_127_scheme_base = NULL;
 object __glo_output_91port_127_scheme_base = NULL;
 object __glo_input_91port_127_scheme_base = NULL;
-object __glo_record_91marker2_scheme_base = NULL;
-object __glo_record_91marker2_191_191inline_191_191_scheme_base = NULL;
+object __glo_make_91record_91marker_scheme_base = NULL;
+object __glo_make_91record_91marker_191_191inline_191_191_scheme_base = NULL;
 object __glo__void_scheme_base = NULL;
 object __glo_void_191_191inline_191_191_scheme_base = NULL;
 object __glo_eof_91object_scheme_base = NULL;
@@ -742,7 +742,7 @@ defsymbol(make_91type_91predicate);
 defsymbol(make_91getter);
 defsymbol(make_91setter);
 defsymbol(vector);
-defsymbol(record_91marker2);
+defsymbol(make_91record_91marker);
 defsymbol(expected);
 defsymbol(temp);
 defsymbol(call_91with_91current_91continuation);
@@ -2658,7 +2658,7 @@ static void __lambda_1324(void *data, int argc, object self_7314214, object r_73
 complex_num_type local_7328454; 
 
 object c_7328451 = global_set_cps_id(data,  ((closureN)self_7314214)->elements[0],"__glo_record_91marker_scheme_base", __glo_record_91marker_scheme_base, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_7328454));
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_7328454));
 return_closcall1(data,  ((closureN)self_7314214)->elements[0],  c_7328451);; 
 }
 
@@ -5020,7 +5020,7 @@ pair_type local_7327465;
 
 
 
-return_closcall3(data,  __glo_append_scheme_base,  &c_7327314, ((closureN)self_7314133)->elements[9], set_pair_as_expr(&local_7327409, set_pair_as_expr(&local_7327412, ((closureN)self_7314133)->elements[0], set_pair_as_expr(&local_7327416, Cyc_caar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3])), set_pair_as_expr(&local_7327424, set_pair_as_expr(&local_7327427, ((closureN)self_7314133)->elements[1], set_pair_as_expr(&local_7327431, Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3])), set_pair_as_expr(&local_7327439, set_pair_as_expr(&local_7327442, ((closureN)self_7314133)->elements[10], set_pair_as_expr(&local_7327446, set_pair_as_expr(&local_7327449, quote_record_91marker2, NULL), set_pair_as_expr(&local_7327452, set_pair_as_expr(&local_7327455, quote_quote, set_pair_as_expr(&local_7327458, ((closureN)self_7314133)->elements[5], NULL)), set_pair_as_expr(&local_7327462, set_pair_as_expr(&local_7327465, r_737871, Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3]))), NULL)))), NULL))), NULL))), NULL));; 
+return_closcall3(data,  __glo_append_scheme_base,  &c_7327314, ((closureN)self_7314133)->elements[9], set_pair_as_expr(&local_7327409, set_pair_as_expr(&local_7327412, ((closureN)self_7314133)->elements[0], set_pair_as_expr(&local_7327416, Cyc_caar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3])), set_pair_as_expr(&local_7327424, set_pair_as_expr(&local_7327427, ((closureN)self_7314133)->elements[1], set_pair_as_expr(&local_7327431, Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3])), set_pair_as_expr(&local_7327439, set_pair_as_expr(&local_7327442, ((closureN)self_7314133)->elements[10], set_pair_as_expr(&local_7327446, set_pair_as_expr(&local_7327449, quote_make_91record_91marker, NULL), set_pair_as_expr(&local_7327452, set_pair_as_expr(&local_7327455, quote_quote, set_pair_as_expr(&local_7327458, ((closureN)self_7314133)->elements[5], NULL)), set_pair_as_expr(&local_7327462, set_pair_as_expr(&local_7327465, r_737871, Cyc_cdar(data, Cyc_cddr(data, ((closureN)self_7314133)->elements[3]))), NULL)))), NULL))), NULL))), NULL));; 
 }
 
 static void __lambda_1239(void *data, int argc, object self_7314134, object r_737850) {
@@ -37436,7 +37436,7 @@ static void __lambda_2(void *data, int argc, object self_7312955, object _191, o
 }
 
 void c_schemebase_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-make_pair(pair_7328531, find_or_add_symbol("record-marker2"), find_or_add_symbol("record-marker2__inline__"));
+make_pair(pair_7328531, find_or_add_symbol("make-record-marker"), find_or_add_symbol("make-record-marker__inline__"));
 make_pair(pair_7328532, find_or_add_symbol("void"), find_or_add_symbol("void__inline__"));
 make_pair(pair_7328533, find_or_add_symbol("eof-object"), find_or_add_symbol("eof-object__inline__"));
 make_pair(pair_7328534, find_or_add_symbol("square"), find_or_add_symbol("square__inline__"));
@@ -37525,7 +37525,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   quote_make_91getter = find_or_add_symbol("make-getter");
   quote_make_91setter = find_or_add_symbol("make-setter");
   quote_vector = find_or_add_symbol("vector");
-  quote_record_91marker2 = find_or_add_symbol("record-marker2");
+  quote_make_91record_91marker = find_or_add_symbol("make-record-marker");
   quote_expected = find_or_add_symbol("expected");
   quote_temp = find_or_add_symbol("temp");
   quote_call_91with_91current_91continuation = find_or_add_symbol("call-with-current-continuation");
@@ -37652,8 +37652,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_input_91port_91open_127_scheme_base", (object *) &__glo_input_91port_91open_127_scheme_base);
   add_global("__glo_output_91port_127_scheme_base", (object *) &__glo_output_91port_127_scheme_base);
   add_global("__glo_input_91port_127_scheme_base", (object *) &__glo_input_91port_127_scheme_base);
-  add_global("__glo_record_91marker2_scheme_base", (object *) &__glo_record_91marker2_scheme_base);
-  add_global("__glo_record_91marker2_191_191inline_191_191_scheme_base", (object *) &__glo_record_91marker2_191_191inline_191_191_scheme_base);
+  add_global("__glo_make_91record_91marker_scheme_base", (object *) &__glo_make_91record_91marker_scheme_base);
+  add_global("__glo_make_91record_91marker_191_191inline_191_191_scheme_base", (object *) &__glo_make_91record_91marker_191_191inline_191_191_scheme_base);
   add_global("__glo__void_scheme_base", (object *) &__glo__void_scheme_base);
   add_global("__glo_void_191_191inline_191_191_scheme_base", (object *) &__glo_void_191_191inline_191_191_scheme_base);
   add_global("__glo_eof_91object_scheme_base", (object *) &__glo_eof_91object_scheme_base);
@@ -37891,7 +37891,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_symbol(quote_make_91getter);
   add_symbol(quote_make_91setter);
   add_symbol(quote_vector);
-  add_symbol(quote_record_91marker2);
+  add_symbol(quote_make_91record_91marker);
   add_symbol(quote_expected);
   add_symbol(quote_temp);
   add_symbol(quote_call_91with_91current_91continuation);
@@ -38048,9 +38048,9 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_7321675, (function_type)__lambda_1478);c_7321675.num_args = 1; 
   __glo_input_91port_127_scheme_base = &c_7321675; 
   mclosure0(c_7321674, (function_type)__lambda_1476);c_7321674.num_args = 0; 
-  __glo_record_91marker2_scheme_base = &c_7321674; 
+  __glo_make_91record_91marker_scheme_base = &c_7321674; 
   mclosure0(c_7321673, (function_type)__lambda_1477);c_7321673.num_args = -2; 
-  __glo_record_91marker2_191_191inline_191_191_scheme_base = &c_7321673; 
+  __glo_make_91record_91marker_191_191inline_191_191_scheme_base = &c_7321673; 
   mclosure0(c_7321672, (function_type)__lambda_1474);c_7321672.num_args = 0; 
   __glo__void_scheme_base = &c_7321672; 
   mclosure0(c_7321671, (function_type)__lambda_1475);c_7321671.num_args = -2; 
@@ -38490,8 +38490,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_7328653, (object *)&__glo_input_91port_91open_127_scheme_base);make_pair(pair_7328654, find_or_add_symbol("input-port-open?"), &cvar_7328653);
   make_cvar(cvar_7328655, (object *)&__glo_output_91port_127_scheme_base);make_pair(pair_7328656, find_or_add_symbol("output-port?"), &cvar_7328655);
   make_cvar(cvar_7328657, (object *)&__glo_input_91port_127_scheme_base);make_pair(pair_7328658, find_or_add_symbol("input-port?"), &cvar_7328657);
-  make_cvar(cvar_7328659, (object *)&__glo_record_91marker2_scheme_base);make_pair(pair_7328660, find_or_add_symbol("record-marker2"), &cvar_7328659);
-  make_cvar(cvar_7328661, (object *)&__glo_record_91marker2_191_191inline_191_191_scheme_base);make_pair(pair_7328662, find_or_add_symbol("record-marker2__inline__"), &cvar_7328661);
+  make_cvar(cvar_7328659, (object *)&__glo_make_91record_91marker_scheme_base);make_pair(pair_7328660, find_or_add_symbol("make-record-marker"), &cvar_7328659);
+  make_cvar(cvar_7328661, (object *)&__glo_make_91record_91marker_191_191inline_191_191_scheme_base);make_pair(pair_7328662, find_or_add_symbol("make-record-marker__inline__"), &cvar_7328661);
   make_cvar(cvar_7328663, (object *)&__glo__void_scheme_base);make_pair(pair_7328664, find_or_add_symbol("void"), &cvar_7328663);
   make_cvar(cvar_7328665, (object *)&__glo_void_191_191inline_191_191_scheme_base);make_pair(pair_7328666, find_or_add_symbol("void__inline__"), &cvar_7328665);
   make_cvar(cvar_7328667, (object *)&__glo_eof_91object_scheme_base);make_pair(pair_7328668, find_or_add_symbol("eof-object"), &cvar_7328667);

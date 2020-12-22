@@ -426,6 +426,7 @@ extern object __glo_make_91setter_scheme_base;
 extern object __glo_slot_91ref_scheme_base;
 extern object __glo_slot_91set_67_scheme_base;
 extern object __glo_type_91slot_91offset_scheme_base;
+extern object __glo_make_91record_91marker_scheme_base;
 extern object __glo_record_91marker2_scheme_base;
 extern object __glo_receive_scheme_base;
 extern object __glo_abs_scheme_base;
@@ -649,6 +650,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
+extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 extern object __glo_record_91marker2_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(shared_91delay_127);
@@ -4313,7 +4315,7 @@ complex_num_type local_732640;
 
 vector_2_type local_732643; 
 return_closcall1(data,  k_73747,  Cyc_fast_vector_3(&local_732637, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_732640), quote__121thread_91pool_125, Cyc_fast_vector_2(&local_732643, jobq_73157_73281, threads_73158_73282)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_732640), quote__121thread_91pool_125, Cyc_fast_vector_2(&local_732643, jobq_73157_73281, threads_73158_73282)));; 
 }
 
 static void __lambda_230(void *data, int argc, closure _,object k_73724, object q_73155_73277) {
@@ -6442,7 +6444,7 @@ c_732026.elements[6] = wait_91count_7398_73236;
 
 complex_num_type local_732045; 
 return_direct_with_clo1(data,(closure)&c_732026,__lambda_122,  ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_732045));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_732045));; 
 }
 
 static void __lambda_122(void *data, int argc, object self_731144, object r_73578) {
@@ -7053,7 +7055,7 @@ complex_num_type local_731865;
 
 vector_3_type local_731868; 
 return_closcall1(data,  k_73493,  Cyc_fast_vector_3(&local_731862, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_731865), quote__121future_125, Cyc_fast_vector_3(&local_731868, done_7366_73217, result_7367_73218, lock_7368_73219)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_731865), quote__121future_125, Cyc_fast_vector_3(&local_731868, done_7366_73217, result_7367_73218, lock_7368_73219)));; 
 }
 
 static void __lambda_73(void *data, int argc, closure _,object k_73461, object obj_7363_73215, object value_7364_73216) {
@@ -7707,7 +7709,7 @@ complex_num_type local_731692;
 
 vector_4_type local_731695; 
 return_closcall1(data,  k_73426,  Cyc_fast_vector_3(&local_731689, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_731692), quote__121shared_91promise_125, Cyc_fast_vector_4(&local_731695, done_7356_73208, value_7357_73209, lock_7358_73210, cv_7359_73211)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_731692), quote__121shared_91promise_125, Cyc_fast_vector_4(&local_731695, done_7356_73208, value_7357_73209, lock_7358_73210, cv_7359_73211)));; 
 }
 
 static void __lambda_47(void *data, int argc, closure _,object k_73393, object expr_7349_73205, object rename_7350_73206, object compare_7351_73207) {
@@ -8176,7 +8178,7 @@ complex_num_type local_731552;
 
 vector_3_type local_731555; 
 return_closcall1(data,  k_73356,  Cyc_fast_vector_3(&local_731549, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_731552), quote__121shared_91delay_125, Cyc_fast_vector_3(&local_731555, done_7342_73198, result_7343_73199, lock_7344_73200)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_731552), quote__121shared_91delay_125, Cyc_fast_vector_3(&local_731555, done_7342_73198, result_7343_73199, lock_7344_73200)));; 
 }
 
 static void __lambda_439(void *data, int argc, closure _, object k, object obj) {object result = boolean_t;

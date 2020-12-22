@@ -516,6 +516,7 @@ extern object __glo_make_91setter_scheme_base;
 extern object __glo_slot_91ref_scheme_base;
 extern object __glo_slot_91set_67_scheme_base;
 extern object __glo_type_91slot_91offset_scheme_base;
+extern object __glo_make_91record_91marker_scheme_base;
 extern object __glo_record_91marker2_scheme_base;
 extern object __glo_receive_scheme_base;
 extern object __glo_abs_scheme_base;
@@ -796,6 +797,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
+extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 extern object __glo_record_91marker2_191_191inline_191_191_scheme_base;
 extern object __glo_symbol_91hash_191_191inline_191_191_srfi_69;
 #include "cyclone/runtime.h"
@@ -13332,7 +13334,7 @@ complex_num_type local_733171;
 
 vector_3_type local_733174; 
 return_closcall1(data,  k_731252,  Cyc_fast_vector_3(&local_733168, ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_733171), quote_sob, Cyc_fast_vector_3(&local_733174, hash_91table_7317_73652, comparator_7318_73653, multi_127_7319_73654)));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_733171), quote_sob, Cyc_fast_vector_3(&local_733174, hash_91table_7317_73652, comparator_7318_73653, multi_127_7319_73654)));; 
 }
 
 static void __lambda_12(void *data, int argc, closure _,object k_731239, object proc_7314_73650, object hash_91table_7315_73651) {

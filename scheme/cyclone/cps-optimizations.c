@@ -622,6 +622,7 @@ extern object __glo_make_91setter_scheme_base;
 extern object __glo_slot_91ref_scheme_base;
 extern object __glo_slot_91set_67_scheme_base;
 extern object __glo_type_91slot_91offset_scheme_base;
+extern object __glo_make_91record_91marker_scheme_base;
 extern object __glo_record_91marker2_scheme_base;
 extern object __glo_receive_scheme_base;
 extern object __glo_abs_scheme_base;
@@ -1051,6 +1052,7 @@ extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
+extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 extern object __glo_record_91marker2_191_191inline_191_191_scheme_base;
 extern object __glo_variable_127_191_191inline_191_191_scheme_eval;
 extern object __glo_assignment_91variable_191_191inline_191_191_scheme_eval;
@@ -34540,7 +34542,7 @@ c_739928.elements[11] = well_91known_73391_732355;
 
 complex_num_type local_739952; 
 return_direct_with_clo1(data,(closure)&c_739928,__lambda_269,  ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_739952));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_739952));; 
 }
 
 static void __lambda_269(void *data, int argc, object self_736417, object r_733470) {
@@ -35035,7 +35037,7 @@ c_739763.elements[20] = self_91rec_91call_73366_732335;
 
 complex_num_type local_739796; 
 return_direct_with_clo1(data,(closure)&c_739763,__lambda_243,  ((inline_function_type)
-                   ((closure)__glo_record_91marker2_191_191inline_191_191_scheme_base)->fn)(data,&local_739796));; 
+                   ((closure)__glo_make_91record_91marker_191_191inline_191_191_scheme_base)->fn)(data,&local_739796));; 
 }
 
 static void __lambda_243(void *data, int argc, object self_736394, object r_733381) {
