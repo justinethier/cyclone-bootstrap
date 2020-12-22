@@ -8336,7 +8336,7 @@ return_direct_with_clo1(data,(closure)&c_732694,__lambda_168,  Cyc_eq(((closureN
 static void __lambda_168(void *data, int argc, object self_731718, object r_731074) {
   if( (boolean_f != r_731074) ){ 
   
-make_utf8_string_with_len(c_732697, "Cyc_is_vector", 13, 13);
+make_utf8_string_with_len(c_732697, "Cyc_is_vector_not_record_type", 29, 29);
 return_closcall1(data,  ((closureN)self_731718)->elements[0],  &c_732697);
 } else { 
   
