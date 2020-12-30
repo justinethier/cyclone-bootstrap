@@ -44,7 +44,6 @@ COBJ = scheme/base \
  libs/cyclone/test \
  srfi/1 \
  srfi/2 \
- srfi/9 \
  srfi/18 \
  srfi/27 \
  srfi/28 \
