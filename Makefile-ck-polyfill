@@ -236,7 +236,12 @@ uninstall:
 	$(RMDIR) $(DESTDIR)$(DATADIR)/scheme
 	$(RMDIR) $(DESTDIR)$(DATADIR)
 
-.PHONY: debug deb
+.PHONY: polyfill debug deb
+polyfill:
+	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' *.c
+	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' *.c
+	sed -i -- 's/#include "cyclone\/ck_ht_hash.h"/#include "ck-polyfill.h"/g' *.c
+
 debug:
 	./cyclone icyc.scm > debug.out 2>&1
 
