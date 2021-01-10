@@ -241,6 +241,8 @@ polyfill:
 	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' *.c
 	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' *.c
 	sed -i -- 's/#include "cyclone\/ck_ht_hash.h"/#include "ck-polyfill.h"/g' *.c
+	sed -i -- 's/#include <ck_hs.h>/#include "ck-polyfill.h"/g' *.c
+	sed -i -- 's/#include <ck_ht.h>/#include "ck-polyfill.h"/g' *.c
 	git checkout -- ck-polyfill.c
 	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' libs/cyclone/concurrent.c
 	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' libs/cyclone/concurrent.c
