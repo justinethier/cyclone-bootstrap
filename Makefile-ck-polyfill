@@ -237,6 +237,9 @@ uninstall:
 	$(RMDIR) $(DESTDIR)$(DATADIR)
 
 .PHONY: polyfill debug deb
+
+# Do necessary replacements and file copies to support compiliation without
+# having concurrency kit (libck) installed on the system
 polyfill:
 	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' *.c
 	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' *.c
@@ -250,6 +253,7 @@ polyfill:
 	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' libs/cyclone/concurrent.sld
 	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' libs/cyclone/concurrent.sld
 	sed -i -- 's/#include "cyclone\/ck_ht_hash.h"/#include "ck-polyfill.h"/g' libs/cyclone/concurrent.sld
+	cp ck-polyfill.h include/
 
 debug:
 	./cyclone icyc.scm > debug.out 2>&1
