@@ -3,6 +3,8 @@
 * Load emscripten environment: `source ~/Documents/emsdk/emsdk_env.sh` 
 * Do ck-polyfill replacements: `emmake make -f Makefile-ck-polyfill polyfill`
 * Build libraries and the runtime: `emmake make -f Makefile-ck-polyfill`
+
+start here, need to smooth these out a bit and run through it:
 * TODO, manually modify .c file (EG: hello-world.c):
   #include "ck-polyfill.h"
   // First line of main, after declarations
