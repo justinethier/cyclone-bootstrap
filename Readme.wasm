@@ -1,0 +1,4 @@
+* Get latest cyclone-bootstrap (this repo)
+* Install emscripten sdk: https://emscripten.org/docs/getting_started/downloads.html
+* Load emscripten environment: `source ~/Documents/emsdk/emsdk_env.sh` 
+* emmake make -f Makefile-ck-polyfill 
