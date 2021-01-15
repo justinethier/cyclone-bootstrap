@@ -3,12 +3,18 @@
 * Load emscripten environment: `source ~/Documents/emsdk/emsdk_env.sh` 
 * Do ck-polyfill replacements: `emmake make -f Makefile-ck-polyfill polyfill`
 * Build libraries and the runtime: `emmake make -f Makefile-ck-polyfill`
+  TODO: ran into problems building match.o with debugging enabled
 
 start here, need to smooth these out a bit and run through it:
 * TODO, manually modify .c file (EG: hello-world.c):
   #include "ck-polyfill.h"
   // First line of main, after declarations
   ck_polyfill_init();
+
+for below we have an example script examples/wasm/hello.sh
+can copy results to a folder serving web content
+
 * TODO: compile .c file
 * TODO: deploy output files
 * TODO: run / debug .html / etc files
+
