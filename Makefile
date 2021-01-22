@@ -139,7 +139,7 @@ unit-tests: unit-tests.scm
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.a *.so cyclone icyc unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
+	rm -rf *.o *.a *.so cyclone icyc cyclone-winds unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
 	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so tmp DEBIAN/*.deb
 	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) clean
 
