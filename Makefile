@@ -69,7 +69,7 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 %.so: %.o
 	$(CC) -shared $(LDFLAGS) -o $@ $<
 
-all: cyclone icyc-c cyclone-winds
+all: cyclone icyc-c winds
 
 $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c ffi.c mstreams.c hashset.c $(CYC_BN_LIB)
 	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
@@ -111,7 +111,7 @@ WINDS_OBJ= \
  winds/libs/package \
  winds/libs/system-calls \
  winds/libs/util \
- winds/cyclone-winds
+ winds/winds
 
 WINDS_CFILES = $(addsuffix .c, $(WINDS_OBJ))
 WINDS_OBJECTS = $(addsuffix .o, $(WINDS_OBJ))
@@ -119,8 +119,8 @@ WINDS_OBJECTS = $(addsuffix .o, $(WINDS_OBJ))
 winds/libs/%.o: %.c %.h
 	$(CC) $(CFLAGS) $< -c -o $@
 
-cyclone-winds: $(WINDS_OBJECTS) cyclone
-	$(CC) $(COBJECTS) $(WINDS_OBJECTS) $(LIBS) $(LDFLAGS) -o cyclone-winds
+winds: $(WINDS_OBJECTS) cyclone
+	$(CC) $(COBJECTS) $(WINDS_OBJECTS) $(LIBS) $(LDFLAGS) -o winds
 
 .PHONY: icyc-c
 icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
@@ -188,7 +188,7 @@ install:
 	$(MKDIR) $(DESTDIR)$(DATADIR)/srfi/sorting
 	$(INSTALL) -m0755 cyclone $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0755 icyc $(DESTDIR)$(BINDIR)/
-	$(INSTALL) -m0755 cyclone-winds $(DESTDIR)$(BINDIR)/
+	$(INSTALL) -m0755 winds $(DESTDIR)$(BINDIR)/
 	$(INSTALL) -m0644 $(CYC_RT_LIB) $(DESTDIR)$(LIBDIR)/
 	$(INSTALL) -m0644 $(CYC_BN_LIB) $(DESTDIR)$(LIBDIR)/
 	$(INSTALL) -m0644 include/cyclone/*.h $(DESTDIR)$(INCDIR)/
