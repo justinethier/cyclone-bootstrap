@@ -102,21 +102,23 @@ cyclone: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 	$(CC) cyclone.c $(CFLAGS) -c -o cyclone.o
 	$(CC) cyclone.o $(COBJECTS) $(LIBS) $(LDFLAGS) -o cyclone
 
+WINDS_DIR = tools/winds
+
 WINDS_OBJ= \
- winds/libs/common \
- winds/libs/file \
- winds/libs/index \
- winds/libs/lock \
- winds/libs/metadata \
- winds/libs/package \
- winds/libs/system-calls \
- winds/libs/util \
- winds/winds
+ $(WINDS_DIR)/libs/common \
+ $(WINDS_DIR)/libs/file \
+ $(WINDS_DIR)/libs/index \
+ $(WINDS_DIR)/libs/lock \
+ $(WINDS_DIR)/libs/metadata \
+ $(WINDS_DIR)/libs/package \
+ $(WINDS_DIR)/libs/system-calls \
+ $(WINDS_DIR)/libs/util \
+ $(WINDS_DIR)/winds
 
 WINDS_CFILES = $(addsuffix .c, $(WINDS_OBJ))
 WINDS_OBJECTS = $(addsuffix .o, $(WINDS_OBJ))
 
-winds/libs/%.o: %.c %.h
+$(WINDS_DIR)/libs/%.o: %.c %.h
 	$(CC) $(CFLAGS) $< -c -o $@
 
 winds: $(WINDS_OBJECTS) cyclone
@@ -139,7 +141,7 @@ unit-tests: unit-tests.scm
 
 .PHONY: clean
 clean:
-	rm -rf *.o *.a *.so cyclone icyc cyclone-winds unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
+	rm -rf *.o *.a *.so cyclone icyc cyclone-winds winds unit-tests test.out test.txt scheme/*.o scheme/cyclone/*.o libs/cyclone/*.o srfi/*.o unit-tests.c
 	rm -rf *.so scheme/*.so scheme/cyclone/*.so libs/cyclone/*.so srfi/*.so tmp DEBIAN/*.deb
 	cd $(CYC_BN_LIB_SUBDIR) ; $(MAKE) clean
 
