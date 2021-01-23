@@ -5363,7 +5363,7 @@ static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object v
     
 mclosure0(c_7352533, (function_type)__lambda_216);c_7352533.num_args = 1;
 
-make_utf8_string_with_len(c_7352544, "\n  Winds - a package manager for Cyclone Scheme \n  https://github.com/cyclone-scheme/winds \n  (c) 2020 - Cyclone Team \n  Version ~a~%", 133, 133);
+make_utf8_string_with_len(c_7352544, "\n  Winds - a package manager for Cyclone Scheme \n  https://github.com/cyclone-scheme/winds \n  (c) 2021 - Cyclone Team \n  Version ~a~%", 133, 133);
 return_closcall3(data,  __glo_format_srfi_28,  &c_7352533, &c_7352544, __glo__85winds_91version_85_libs_common);
 ;
 }
