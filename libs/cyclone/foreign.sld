@@ -151,6 +151,13 @@
                "make_double(" var ", " ,code ");")
              (string-append "&" var)
            )))
+          ((bignum bigint)
+            (let ((var (mangle (gensym 'var))))
+              (cons
+               (string-append 
+                "alloc_bignum(data," var ");"
+                var "->bn = " ,code ";")
+               (string-append var))))
           ((bool)
            (cons
              ""
