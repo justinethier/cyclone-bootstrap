@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -1830,7 +1830,7 @@ static void __lambda_50(void *data, int argc, object self_73459, object r_73335)
 complex_num_type local_73872; 
 return_closcall5(data,  ((closureN)self_73459)->elements[5],  ((closureN)self_73459)->elements[2], ((closureN)self_73459)->elements[4], ((closureN)self_73459)->elements[1], ((closureN)self_73459)->elements[3], Cyc_fast_sub(data,&local_73872, ((closureN)self_73459)->elements[0], obj_int2obj(1)));
 } else { 
-  return_closcall1(data,  ((closureN)self_73459)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73459)->elements[2],  Cyc_VOID);}
 ;; 
 }
 

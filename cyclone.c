@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -3987,7 +3987,7 @@ c_735575.elements[0] = k_731461;
 object c_735584 = Cyc_string2number2_(data,(closure)&c_735575,1,Cyc_car(data, ((closureN)self_732111)->elements[0]));
 return_closcall1(data,(closure)&c_735575,  c_735584);
 } else { 
-  return_closcall1(data,  k_731461,  boolean_f);}
+  return_closcall1(data,  k_731461,  Cyc_VOID);}
 ;; 
 }
 
@@ -12367,7 +12367,7 @@ c_734005.elements[3] = ((closureN)self_731665)->elements[3];
 
 return_closcall2(data,  __glo_define_91_125var_scheme_cyclone_util,  &c_734005, ((closureN)self_731665)->elements[0]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731665)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731665)->elements[2],  Cyc_VOID);}
 ;; 
 }
 
@@ -13074,7 +13074,7 @@ return_direct_with_clo1(data,(closure)&c_733904,__lambda_349,  memberp(data, dep
 
 static void __lambda_349(void *data, int argc, object self_731694, object r_73881) {
   if( (boolean_f != r_73881) ){ 
-  return_closcall1(data,  ((closureN)self_731694)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731694)->elements[2],  Cyc_VOID);
 } else { 
   
 closureN_type c_733908;
@@ -13466,7 +13466,7 @@ return_direct_with_clo1(data,(closure)&c_733779,__lambda_332,  memberp(data, quo
 
 static void __lambda_332(void *data, int argc, object self_731711, object r_73870) {
   if( (boolean_f != r_73870) ){ 
-  return_closcall1(data,  ((closureN)self_731711)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731711)->elements[2],  Cyc_VOID);
 } else { 
   
 closureN_type c_733783;
@@ -15113,7 +15113,7 @@ static void __lambda_316(void *data, int argc, object self_731772, object r_7379
 static void __lambda_307(void *data, int argc, closure _,object k_73793) {
   Cyc_st_add(data, "cyclone.scm:c-compile-and-emit");
 if( (boolean_f != __glo__85do_91code_91gen_85_scheme_cyclone_transforms) ){ 
-  return_closcall1(data,  k_73793,  boolean_f);
+  return_closcall1(data,  k_73793,  Cyc_VOID);
 } else { 
   
 closureN_type c_733519;
@@ -15165,7 +15165,7 @@ c_733348.elements[3] = k_73821;
 
 return_closcall4(data,  __glo_optimize_91cps_scheme_cyclone_cps_91optimizations,  &c_733348, car(((closureN)self_731774)->elements[2]), car(((closureN)self_731774)->elements[1]), car(((closureN)self_731774)->elements[0]));
 } else { 
-  return_closcall1(data,  k_73821,  boolean_f);}
+  return_closcall1(data,  k_73821,  Cyc_VOID);}
 ;; 
 }
 
@@ -15754,7 +15754,7 @@ c_733087.elements[1] = ((closureN)self_731802)->elements[2];
 
 return_direct_with_clo1(data,(closure)&c_733080,__lambda_184,  &c_733087);
 } else { 
-  return_closcall1(data,  k_731002,  boolean_f);}
+  return_closcall1(data,  k_731002,  Cyc_VOID);}
 ;; 
 }
 
@@ -15796,7 +15796,7 @@ c_733091.elements[1] = ((closureN)self_731804)->elements[2];
 make_utf8_string_with_len(c_733111, ".sld", 4, 4);
 return_closcall5(data,  __glo_lib_117import_91_125filename_scheme_cyclone_libraries,  &c_733091, ((closureN)self_731804)->elements[2], &c_733111, ((closureN)self_731804)->elements[0], ((closureN)self_731804)->elements[3]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731804)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731804)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -15829,7 +15829,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_system(r_731008), obj_int2obj(0))
 make_utf8_string_with_len(c_733100, "Unable to compile library", 25, 25);
 return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_731806)->elements[0], &c_733100, ((closureN)self_731806)->elements[1]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731806)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731806)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -15863,7 +15863,7 @@ c_732871.elements[7] = ((closureN)self_731808)->elements[6];
 
 return_closcall1(data,  __glo_base_91expander,  &c_732871);
 } else { 
-  return_closcall1(data,  k_731013,  boolean_f);}
+  return_closcall1(data,  k_731013,  Cyc_VOID);}
 ;; 
 }
 
@@ -15896,7 +15896,7 @@ static void __lambda_147(void *data, int argc, object self_731810, object progra
     
   
 if( (boolean_f != Cyc_is_null(Cyc_car(data, program_117imports_95code_7394_73501))) ){ 
-  return_closcall1(data,  ((closureN)self_731810)->elements[5],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731810)->elements[5],  Cyc_VOID);
 } else { 
   
 closureN_type c_732881;
@@ -16444,7 +16444,7 @@ return_direct_with_clo1(data,(closure)&c_732955,__lambda_173,  memberp(data, dep
 
 static void __lambda_173(void *data, int argc, object self_731832, object r_731033) {
   if( (boolean_f != r_731033) ){ 
-  return_closcall1(data,  ((closureN)self_731832)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731832)->elements[2],  Cyc_VOID);
 } else { 
   
 closureN_type c_732959;
@@ -16569,7 +16569,7 @@ c_732931.elements[1] = ((closureN)self_731838)->elements[2];
 
 return_closcall2(data,  ((closureN)self_731838)->elements[0],  &c_732931, car(((closureN)self_731838)->elements[2]));
 } else { 
-  return_closcall1(data,  k_731029,  boolean_f);}
+  return_closcall1(data,  k_731029,  Cyc_VOID);}
 ;; 
 }
 
@@ -17139,7 +17139,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, __glo__85optimization_91level_85, obj
 
 return_direct_with_clo1(data,  k_731159,__lambda_96,  Cyc_set_cell(data, ((closureN)self_731901)->elements[0], ((closureN)self_731901)->elements[1]));
 } else { 
-  return_direct_with_clo1(data,  k_731159,__lambda_96,  boolean_f);}
+  return_direct_with_clo1(data,  k_731159,__lambda_96,  Cyc_VOID);}
 ;; 
 }
 
@@ -18018,7 +18018,7 @@ c_732378.elements[1] = k_731127;
 
 return_closcall2(data,  __glo_lib_117inlines_scheme_cyclone_libraries,  &c_732378, Cyc_car(data, car(((closureN)self_731882)->elements[1])));
 } else { 
-  return_closcall1(data,  k_731127,  boolean_f);}
+  return_closcall1(data,  k_731127,  Cyc_VOID);}
 ;; 
 }
 
@@ -18374,7 +18374,7 @@ c_732123.elements[1] = label_731_73434;
 
 return_closcall1(data,  __glo_current_91error_91port_scheme_base,  &c_732123);
 } else { 
-  return_closcall1(data,  k_73642,  boolean_f);}
+  return_closcall1(data,  k_73642,  Cyc_VOID);}
 ;; 
 }
 

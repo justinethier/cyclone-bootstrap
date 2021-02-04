@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -2503,7 +2503,7 @@ return_closcall2(data,  __glo_socket_127_srfi_106,  &c_731174, ((closureN)self_7
 
 static void __lambda_21(void *data, int argc, object self_73876, object r_73541) {
   if( (boolean_f != r_73541) ){ 
-  return_closcall1(data,  ((closureN)self_73876)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_73876)->elements[0],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731179, "Expected socket but received", 28, 28);
@@ -2710,7 +2710,7 @@ return_closcall1(data,  ((closureN)self_73869)->elements[0],  set_pair_as_expr(&
 static void __lambda_14(void *data, int argc, object self_73870, object k_73522) {
     
 if( (boolean_f != Cyc_is_null(((closureN)self_73870)->elements[1])) ){ 
-  return_closcall1(data,  k_73522,  boolean_f);
+  return_closcall1(data,  k_73522,  Cyc_VOID);
 } else { 
   
 closureN_type c_731094;
@@ -2759,7 +2759,7 @@ c_731101.elements[2] = ((closureN)self_73871)->elements[2];
 
 return_direct_with_clo1(data,(closure)&c_731101,__lambda_16,  Cyc_set_cell(data, ((closureN)self_73871)->elements[3], Cyc_cadr(data, ((closureN)self_73871)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73871)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73871)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -2773,7 +2773,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_length(data, ((closureN)self_7387
 
 return_closcall1(data,  ((closureN)self_73872)->elements[0],  Cyc_set_cell(data, ((closureN)self_73872)->elements[2], Cyc_caddr(data, ((closureN)self_73872)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73872)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73872)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -3034,7 +3034,7 @@ return_closcall1(data,  ((closureN)self_73859)->elements[0],  set_pair_as_expr(&
 static void __lambda_6(void *data, int argc, object self_73860, object k_73502) {
     
 if( (boolean_f != Cyc_is_null(((closureN)self_73860)->elements[2])) ){ 
-  return_closcall1(data,  k_73502,  boolean_f);
+  return_closcall1(data,  k_73502,  Cyc_VOID);
 } else { 
   
 closureN_type c_73976;
@@ -3085,7 +3085,7 @@ c_73983.elements[3] = ((closureN)self_73861)->elements[3];
 
 return_direct_with_clo1(data,(closure)&c_73983,__lambda_8,  Cyc_set_cell(data, ((closureN)self_73861)->elements[4], Cyc_cadr(data, ((closureN)self_73861)->elements[2])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73861)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73861)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -3113,7 +3113,7 @@ c_73990.elements[2] = ((closureN)self_73862)->elements[3];
 
 return_direct_with_clo1(data,(closure)&c_73990,__lambda_9,  Cyc_set_cell(data, ((closureN)self_73862)->elements[0], Cyc_caddr(data, ((closureN)self_73862)->elements[2])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73862)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73862)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -3127,7 +3127,7 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_length(data, ((closureN)self_7386
 
 return_closcall1(data,  ((closureN)self_73863)->elements[0],  Cyc_set_cell(data, ((closureN)self_73863)->elements[2], Cyc_cadddr(data, ((closureN)self_73863)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73863)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73863)->elements[0],  Cyc_VOID);}
 ;; 
 }
 

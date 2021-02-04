@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -3602,7 +3602,7 @@ return_closcall2(data,  __glo_lib_117import_91set_117library_91name_127_scheme_c
 
 static void __lambda_193(void *data, int argc, object self_731410, object r_731089) {
   if( (boolean_f != r_731089) ){ 
-  return_closcall1(data,  ((closureN)self_731410)->elements[2],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731410)->elements[2],  Cyc_VOID);
 } else { 
   
 closureN_type c_732700;

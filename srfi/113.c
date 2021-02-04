@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -8620,7 +8620,7 @@ c_734530.elements[2] = n_73255_73892;
 
 return_closcall1(data,  ((closureN)self_732739)->elements[0],  &c_734530);
 } else { 
-  return_closcall1(data,  k_731713,  boolean_f);}
+  return_closcall1(data,  k_731713,  Cyc_VOID);}
 ;; 
 }
 
@@ -10821,7 +10821,7 @@ c_733912.elements[5] = ((closureN)self_732634)->elements[6];
 
 return_closcall3(data,  __glo_hash_91table_91delete_67_srfi_69,  &c_733912, ((closureN)self_732634)->elements[1], ((closureN)self_732634)->elements[3]);
 } else { 
-  return_closcall1(data,  ((closureN)self_732634)->elements[2],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_732634)->elements[2],  Cyc_VOID);}
 ;; 
 }
 
@@ -11296,7 +11296,7 @@ pair_type local_733776;
 
 return_direct_with_clo1(data,(closure)&c_733767,__lambda_153,  set_pair_as_expr(&local_733776, key_73123_73756, car(((closureN)self_732607)->elements[0])));
 } else { 
-  return_closcall1(data,  k_731468,  boolean_f);}
+  return_closcall1(data,  k_731468,  Cyc_VOID);}
 ;; 
 }
 

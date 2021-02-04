@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -829,7 +829,7 @@ c_73224.elements[1] = ((closureN)self_73101)->elements[1];
 
 return_direct_with_clo1(data,(closure)&c_73224,__lambda_30,  Cyc_car(data, car(((closureN)self_73101)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73101)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_73101)->elements[0],  Cyc_VOID);}
 ;; 
 }
 

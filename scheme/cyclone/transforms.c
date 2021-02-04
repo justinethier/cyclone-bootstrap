@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -11775,7 +11775,7 @@ c_736457.elements[1] = ((closureN)self_733353)->elements[1];
 
 return_closcall2(data,  __glo_flatten_91sequence_scheme_cyclone_transforms,  &c_736457, car(((closureN)self_733353)->elements[0]));
 } else { 
-  return_closcall1(data,  ((closureN)self_733353)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_733353)->elements[1],  Cyc_VOID);}
 ;; 
 }
 
@@ -16485,6 +16485,8 @@ return_closcall3(data,  __glo_assq_91remove_91keys_scheme_cyclone_transforms,  (
 
 static void __lambda_101(void *data, int argc, closure _,object k_731458, object env_7387_73986, object key_7388_73987) {
   Cyc_st_add(data, "scheme/cyclone/transforms.sld:assq-remove-key");
+
+ while(1) {
   
 if( (boolean_f != Cyc_is_pair(env_7387_73986)) ){ 
     
@@ -16493,28 +16495,29 @@ if( (boolean_f != Cyc_is_pair(env_7387_73986)) ){
 if( (boolean_f != Cyc_eq(Cyc_car(data, Cyc_car(data, env_7387_73986)), key_7388_73987)) ){ 
   
 
-return_closcall3(data,  __glo_assq_91remove_91key_scheme_cyclone_transforms,  k_731458, Cyc_cdr(data, env_7387_73986), key_7388_73987);
+env_7387_73986 = Cyc_cdr(data, env_7387_73986);
+continue;
 } else { 
   
-closureN_type c_734512;
-object e_734521 [2];
-c_734512.hdr.mark = gc_color_red;
- c_734512.hdr.grayed = 0;
-c_734512.tag = closureN_tag;
- c_734512.fn = (function_type)__lambda_102;
-c_734512.num_args = 1;
-c_734512.num_elements = 2;
-c_734512.elements = (object *)e_734521;
-c_734512.elements[0] = env_7387_73986;
-c_734512.elements[1] = k_731458;
+closureN_type * c_734512 = alloca(sizeof(closureN_type));
+object *e_734521 = (object *)alloca(sizeof(object) * 2);c_734512->hdr.mark = gc_color_red;
+ c_734512->hdr.grayed = 0;
+c_734512->tag = closureN_tag;
+ c_734512->fn = (function_type)__lambda_102;
+c_734512->num_args = 1;
+c_734512->num_elements = 2;
+c_734512->elements = (object *)e_734521;
+c_734512->elements[0] = env_7387_73986;
+c_734512->elements[1] = k_731458;
 
 
 
-return_closcall3(data,  __glo_assq_91remove_91key_scheme_cyclone_transforms,  &c_734512, Cyc_cdr(data, env_7387_73986), key_7388_73987);}
+return_closcall3(data,  __glo_assq_91remove_91key_scheme_cyclone_transforms,  c_734512, Cyc_cdr(data, env_7387_73986), key_7388_73987);}
 ;
 } else { 
   return_closcall1(data,  k_731458,  NULL);}
 ;; 
+}
 }
 
 static void __lambda_102(void *data, int argc, object self_733133, object r_731463) {
@@ -16983,7 +16986,7 @@ c_734293.elements[3] = prefix_7365_73965;
 make_utf8_string_with_len(c_734313, "/* ", 3, 3);
 return_closcall2(data,  __glo_display_scheme_write,  &c_734293, &c_734313);
 } else { 
-  return_closcall1(data,  k_731367,  boolean_f);}
+  return_closcall1(data,  k_731367,  Cyc_VOID);}
 ;; 
 }
 
@@ -18551,7 +18554,7 @@ complex_num_type local_733947;
 return_closcall3(data,  car(((closureN)self_733091)->elements[2]),  ((closureN)self_733091)->elements[1], ((inline_function_type)
                    ((closure)__glo_if_91_125else_191_191inline_191_191_scheme_cyclone_util)->fn)(data,&local_733947, ((closureN)self_733091)->elements[0]), ((closureN)self_733091)->elements[3]);
 } else { 
-  return_closcall1(data,  ((closureN)self_733091)->elements[1],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_733091)->elements[1],  Cyc_VOID);}
 ;; 
 }
 

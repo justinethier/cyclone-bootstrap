@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -5629,7 +5629,7 @@ static void __lambda_1195(void *data, int argc, object self_7314096, object k_73
   
   
 if( (boolean_f != equalp(Cyc_length(data, Cyc_vector_ref(data, ((closureN)self_7314096)->elements[2], obj_int2obj(2))), Cyc_vector_length(data, ((closureN)self_7314096)->elements[1]))) ){ 
-  return_closcall1(data,  k_737774,  boolean_f);
+  return_closcall1(data,  k_737774,  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_7327050, "invalid number of arguments passed to record type constructor", 61, 61);
@@ -19883,7 +19883,7 @@ if( (boolean_f != Cyc_num_fast_lt_op(data, ((closureN)self_7313668)->elements[0]
 } else { 
   r_736156 = boolean_f;}
 ;if( (boolean_f != r_736156) ){ 
-  return_closcall1(data,  k_736155,  boolean_f);
+  return_closcall1(data,  k_736155,  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_7321457, "exact non-negative integer required", 35, 35);

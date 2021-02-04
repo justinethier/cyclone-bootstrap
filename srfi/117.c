@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -3439,6 +3439,8 @@ return_closcall2(data,  car(((closureN)self_73577)->elements[2]),  ((closureN)se
 
 static void __lambda_1(void *data, int argc, closure _,object k_73266, object ls_731_73161) {
   Cyc_st_add(data, "srfi/117.sld:last-pair");
+
+ while(1) {
   
   
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ls_731_73161))) ){ 
@@ -3446,8 +3448,10 @@ if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ls_731_73161))) ){
 } else { 
   
 
-return_closcall2(data,  __glo_last_91pair_srfi_117,  k_73266, Cyc_cdr(data, ls_731_73161));}
+ls_731_73161 = Cyc_cdr(data, ls_731_73161);
+continue;}
 ;; 
+}
 }
 
 void c_srfi117_inlinable_lambdas(void *data, int argc, closure _, object cont){ 

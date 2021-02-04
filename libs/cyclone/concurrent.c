@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.26 
  **
  **/
 
@@ -607,6 +607,7 @@ extern object __glo_thread_91sleep_67_srfi_18;
 extern object __glo_thread_91yield_67_srfi_18;
 extern object __glo_thread_91terminate_67_srfi_18;
 extern object __glo_current_91thread_srfi_18;
+extern object __glo_current_91thread_91data_srfi_18;
 extern object __glo_thread_91join_67_srfi_18;
 extern object __glo_mutex_127_srfi_18;
 extern object __glo_make_91mutex_srfi_18;
@@ -5563,7 +5564,7 @@ c_732307.elements[1] = ((closureN)self_731212)->elements[0];
 
 return_direct_with_clo1(data,(closure)&c_732307,__lambda_178,  Cyc_set_cell(data, ((closureN)self_731212)->elements[1], boolean_f));
 } else { 
-  return_closcall1(data,  k_73675,  boolean_f);}
+  return_closcall1(data,  k_73675,  Cyc_VOID);}
 ;; 
 }
 
@@ -5847,7 +5848,7 @@ static void __lambda_167(void *data, int argc, object self_731182, object k_7363
     
   
 if( (boolean_f != Cyc_num_fast_eq_op(data, i_73128_73256, Cyc_vector_length(data, ((closureN)self_731182)->elements[1]))) ){ 
-  return_closcall1(data,  k_73637,  boolean_f);
+  return_closcall1(data,  k_73637,  Cyc_VOID);
 } else { 
   
 closureN_type c_732224;
@@ -6255,7 +6256,7 @@ static void __lambda_146(void *data, int argc, object self_731164, object r_7360
 if( (boolean_f != Cyc_num_fast_eq_op(data, ((closureN)self_731164)->elements[2], r_73607)) ){ 
   return_closcall2(data,  __glo__75shared_91queue_91resize_67_cyclone_concurrent,  ((closureN)self_731164)->elements[0], ((closureN)self_731164)->elements[1]);
 } else { 
-  return_closcall1(data,  ((closureN)self_731164)->elements[0],  boolean_f);}
+  return_closcall1(data,  ((closureN)self_731164)->elements[0],  Cyc_VOID);}
 ;; 
 }
 
@@ -6667,7 +6668,7 @@ return_closcall2(data,  __glo_future_127_cyclone_concurrent,  &c_731974, ((closu
 
 static void __lambda_112(void *data, int argc, object self_731143, object r_73544) {
   if( (boolean_f != r_73544) ){ 
-  return_closcall1(data,  ((closureN)self_731143)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731143)->elements[1],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731979, "Expected future but received", 28, 28);
@@ -6822,7 +6823,7 @@ return_closcall2(data,  __glo_future_127_cyclone_concurrent,  &c_731932, ((closu
 
 static void __lambda_103(void *data, int argc, object self_731132, object r_73532) {
   if( (boolean_f != r_73532) ){ 
-  return_closcall1(data,  ((closureN)self_731132)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731132)->elements[1],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731937, "Expected future but received", 28, 28);
@@ -7227,7 +7228,7 @@ return_closcall2(data,  __glo_sp_117done_cyclone_concurrent,  &c_731822, ((closu
 
 static void __lambda_80(void *data, int argc, object self_731109, object r_73469) {
   if( (boolean_f != r_73469) ){ 
-  return_closcall1(data,  ((closureN)self_731109)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731109)->elements[0],  Cyc_VOID);
 } else { 
   
 closureN_type c_731826;
@@ -7286,7 +7287,7 @@ return_closcall2(data,  __glo_shared_91promise_127_cyclone_concurrent,  &c_73180
 
 static void __lambda_75(void *data, int argc, object self_731113, object r_73474) {
   if( (boolean_f != r_73474) ){ 
-  return_closcall1(data,  ((closureN)self_731113)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731113)->elements[0],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731809, "Expected shared promise but received", 36, 36);
@@ -7636,7 +7637,7 @@ return_closcall2(data,  __glo_shared_91promise_127_cyclone_concurrent,  &c_73171
 
 static void __lambda_55(void *data, int argc, object self_731092, object r_73449) {
   if( (boolean_f != r_73449) ){ 
-  return_closcall1(data,  ((closureN)self_731092)->elements[0],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731092)->elements[0],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731718, "Expected shared promise but received", 36, 36);
@@ -8028,7 +8029,7 @@ return_closcall2(data,  __glo_sd_117done_cyclone_concurrent,  &c_731588, ((closu
 
 static void __lambda_31(void *data, int argc, object self_731064, object r_73374) {
   if( (boolean_f != r_73374) ){ 
-  return_closcall1(data,  ((closureN)self_731064)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731064)->elements[1],  Cyc_VOID);
 } else { 
   
 closureN_type c_731592;
@@ -8121,7 +8122,7 @@ return_closcall2(data,  __glo_shared_91delay_127_cyclone_concurrent,  &c_731570,
 
 static void __lambda_26(void *data, int argc, object self_731070, object r_73381) {
   if( (boolean_f != r_73381) ){ 
-  return_closcall1(data,  ((closureN)self_731070)->elements[1],  boolean_f);
+  return_closcall1(data,  ((closureN)self_731070)->elements[1],  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_731575, "Expected future but received", 28, 28);
