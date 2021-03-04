@@ -107,7 +107,7 @@ if (obj_is_not_closure(clo)) { \
      (_fn)(td, 2, (closure)(clo),a1,a2); \
  }}
 
-#include <sys/time.h>
+#include <time.h>
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemetime_scheme_time = NULL;
 object __glo_jiffies_91per_91second_scheme_time = NULL;
@@ -344,10 +344,10 @@ return_closcall1(data,  k_733,  obj_int2obj(0));;
 static void __lambda_4(void *data, int argc, closure _, object k) { int n = 1000000;
         object obj = obj_int2obj(n);
         return_closcall1(data, k, obj);  }
-static void __lambda_3(void *data, int argc, closure _, object k) { struct timeval tv;
+static void __lambda_3(void *data, int argc, closure _, object k) { struct timespec now;
         make_double(box, 0.0);
-        gettimeofday(&tv, NULL); /* TODO: longer-term consider using clock_gettime instead */
-        long long jiffy = (tv.tv_sec)*1000000LL + tv.tv_usec;
+        clock_gettime(CLOCK_MONOTONIC, &now);
+        long long jiffy = (now.tv_sec)*1000000LL + now.tv_nsec/1000; // nano->microseconds
         /* Future consideration:
         mp_int bn_tmp, bn_tmp2, bn_tmp3;
         mp_init(&bn_tmp);
