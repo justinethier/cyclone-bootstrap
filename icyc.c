@@ -592,6 +592,7 @@ extern object __glo_setup_91environment_scheme_eval;
 extern object __glo__75import_scheme_eval;
 extern object __glo_imported_127_scheme_eval;
 extern object __glo__75set_91import_91dirs_67_scheme_eval;
+extern object __glo_import_91shared_91object_scheme_eval;
 extern object __glo__85defined_91macros_85_scheme_eval;
 extern object __glo_get_91macros_scheme_eval;
 extern object __glo_macro_117macro_127_scheme_eval;
@@ -1539,7 +1540,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_usage", (object *) &__glo_usage);
   add_global("__glo_collect_91opt_91values", (object *) &__glo_collect_91opt_91values);
-  add_symbol(quote_begin);
   mclosure0(c_73231, (function_type)__lambda_5);c_73231.num_args = 0; 
   __glo_usage = &c_73231; 
   mclosure0(c_73187, (function_type)__lambda_1);c_73187.num_args = 2; 

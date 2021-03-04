@@ -1019,7 +1019,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_infinite_127_scheme_inexact", (object *) &__glo_infinite_127_scheme_inexact);
   add_global("__glo_nan_127_scheme_inexact", (object *) &__glo_nan_127_scheme_inexact);
   add_global("__glo_define_91inexact_91op_scheme_inexact", (object *) &__glo_define_91inexact_91op_scheme_inexact);
-  add_symbol(quote_define_91c);
   mclosure0(c_73466, (function_type)__lambda_21);c_73466.num_args = 0; 
   __glo_lib_91init_117schemeinexact_scheme_inexact = &c_73466; 
   mclosure0(c_73236, (function_type)__lambda_7);c_73236.num_args = 1; 

@@ -982,7 +982,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_char_91foldcase_scheme__char", (object *) &__glo_char_91foldcase_scheme__char);
   add_global("__glo_char_91downcase_scheme__char", (object *) &__glo_char_91downcase_scheme__char);
   add_global("__glo_char_91upcase_scheme__char", (object *) &__glo_char_91upcase_scheme__char);
-  add_symbol(quote_char_91foldcase);
   mclosure0(c_73458, (function_type)__lambda_38);c_73458.num_args = 0; 
   __glo_lib_91init_117scheme_191char_scheme__char = &c_73458; 
   mclosure0(c_73456, (function_type)__lambda_37);c_73456.num_args = 1; 

@@ -168,7 +168,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_get_91environment_91variable_scheme_process_91context", (object *) &__glo_get_91environment_91variable_scheme_process_91context);
   add_global("__glo_command_91line_scheme_process_91context", (object *) &__glo_command_91line_scheme_process_91context);
   add_global("__glo_emergency_91exit_scheme_process_91context", (object *) &__glo_emergency_91exit_scheme_process_91context);
-  add_symbol(quote_emergency_91exit);
   mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 
   mclosure0(c_739, (function_type)__lambda_4);c_739.num_args = 0; 

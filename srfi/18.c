@@ -1231,8 +1231,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_thread_91name_srfi_18", (object *) &__glo_thread_91name_srfi_18);
   add_global("__glo_make_91thread_srfi_18", (object *) &__glo_make_91thread_srfi_18);
   add_global("__glo_thread_127_srfi_18", (object *) &__glo_thread_127_srfi_18);
-  add_symbol(quote__85primordial_91thread_85);
-  add_symbol(quote_cyc_91thread_91obj);
   mclosure0(c_73335, (function_type)__lambda_29);c_73335.num_args = 0; 
   __glo_lib_91init_117srfi18_srfi_18 = &c_73335; 
   mclosure0(c_73334, (function_type)__lambda_50);c_73334.num_args = 1; 

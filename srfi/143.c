@@ -2644,8 +2644,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_fx_91greatest_srfi_143", (object *) &__glo_fx_91greatest_srfi_143);
   add_global("__glo_fx_91width_191_191inline_191_191_srfi_143", (object *) &__glo_fx_91width_191_191inline_191_191_srfi_143);
   add_global("__glo_fx_91width_srfi_143", (object *) &__glo_fx_91width_srfi_143);
-  add_symbol(quote_fxsqrt);
-  add_symbol(quote_define_91c);
   mclosure0(c_731364, (function_type)__lambda_104);c_731364.num_args = 0; 
   __glo_lib_91init_117srfi143_srfi_143 = &c_731364; 
   mclosure0(c_731283, (function_type)__lambda_90);c_731283.num_args = 3; 

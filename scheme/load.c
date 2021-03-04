@@ -357,6 +357,7 @@ extern object __glo_setup_91environment_scheme_eval;
 extern object __glo__75import_scheme_eval;
 extern object __glo_imported_127_scheme_eval;
 extern object __glo__75set_91import_91dirs_67_scheme_eval;
+extern object __glo_import_91shared_91object_scheme_eval;
 extern object __glo__85defined_91macros_85_scheme_eval;
 extern object __glo_get_91macros_scheme_eval;
 extern object __glo_macro_117macro_127_scheme_eval;

@@ -819,8 +819,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_with_91input_91from_91file_scheme_file", (object *) &__glo_with_91input_91from_91file_scheme_file);
   add_global("__glo_call_91with_91output_91file_scheme_file", (object *) &__glo_call_91with_91output_91file_scheme_file);
   add_global("__glo_call_91with_91input_91file_scheme_file", (object *) &__glo_call_91with_91input_91file_scheme_file);
-  add_symbol(quote__121param_91convert_125);
-  add_symbol(quote__121param_91set_67_125);
   mclosure0(c_73182, (function_type)__lambda_23);c_73182.num_args = 0; 
   __glo_lib_91init_117schemefile_scheme_file = &c_73182; 
   mclosure0(c_73139, (function_type)__lambda_13);c_73139.num_args = 2; 

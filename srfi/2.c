@@ -3365,16 +3365,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117srfi2_srfi_2", (object *) &__glo_lib_91init_117srfi2_srfi_2);
   add_global("__glo_and_91let_85_srfi_2", (object *) &__glo_and_91let_85_srfi_2);
-  add_symbol(quote_rest);
-  add_symbol(quote_and_91let_85);
-  add_symbol(quote_tmp);
-  add_symbol(quote_and);
-  add_symbol(quote_expr);
-  add_symbol(quote_var);
-  add_symbol(quote_let);
-  add_symbol(quote__93_93_93);
-  add_symbol(quote_body);
-  add_symbol(quote_begin);
   mclosure0(c_731752, (function_type)__lambda_109);c_731752.num_args = 0; 
   __glo_lib_91init_117srfi2_srfi_2 = &c_731752; 
   mmacro(c_73743, (function_type)__lambda_1);c_73743.num_args = 3; 

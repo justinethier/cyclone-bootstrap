@@ -446,8 +446,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_write_91shared_scheme_write", (object *) &__glo_write_91shared_scheme_write);
   add_global("__glo_write_scheme_write", (object *) &__glo_write_scheme_write);
   add_global("__glo_display_scheme_write", (object *) &__glo_display_scheme_write);
-  add_symbol(quote_write_91shared);
-  add_symbol(quote_write_91simple);
   mclosure0(c_7365, (function_type)__lambda_5);c_7365.num_args = 0; 
   __glo_lib_91init_117schemewrite_scheme_write = &c_7365; 
   mclosure0(c_7349, (function_type)__lambda_3);c_7349.num_args = 1; 
