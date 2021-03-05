@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.27 
  **
  **/
 
@@ -7954,14 +7954,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_build_91programs_libs_package", (object *) &__glo_build_91programs_libs_package);
   add_global("__glo_install_91libraries_libs_package", (object *) &__glo_install_91libraries_libs_package);
   add_global("__glo_build_91libraries_libs_package", (object *) &__glo_build_91libraries_libs_package);
-  add_symbol(quote_PARAMS);
-  add_symbol(quote_syntax);
-  add_symbol(quote_define_91syntax);
-  add_symbol(quote_variable);
-  add_symbol(quote_case_91lambda);
-  add_symbol(quote_procedure);
-  add_symbol(quote_define);
-  add_symbol(quote_match);
   mclosure0(c_7317120, (function_type)__lambda_346);c_7317120.num_args = 0; 
   __glo_lib_91init_117libspackage_libs_package = &c_7317120; 
   mclosure0(c_7316983, (function_type)__lambda_314);c_7316983.num_args = 0; 

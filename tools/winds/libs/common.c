@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.27 
  **
  **/
 
@@ -788,19 +788,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo__85default_91lock_91file_85_libs_common", (object *) &__glo__85default_91lock_91file_85_libs_common);
   add_global("__glo__85default_91code_91directory_85_libs_common", (object *) &__glo__85default_91code_91directory_85_libs_common);
   add_global("__glo__85winds_91version_85_libs_common", (object *) &__glo__85winds_91version_85_libs_common);
-  add_symbol(quote__85default_91code_91directory_85);
-  add_symbol(quote__85default_91lock_91file_85);
-  add_symbol(quote__85library_91installable_91extensions_85);
-  add_symbol(quote_srfi);
-  add_symbol(quote_test);
-  add_symbol(quote_match);
-  add_symbol(quote_foreign);
-  add_symbol(quote_concurrent);
-  add_symbol(quote_cyclone);
-  add_symbol(quote__85internal_91cyclone_91libs_85);
-  add_symbol(quote__85doc_91candidates_85);
-  add_symbol(quote_bin);
-  add_symbol(quote_sld);
   mclosure0(c_73132, (function_type)__lambda_5);c_73132.num_args = 0; 
   __glo_lib_91init_117libscommon_libs_common = &c_73132; 
   mclosure0(c_73120, (function_type)__lambda_3);c_73120.num_args = 0; 
@@ -816,7 +803,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85library_91installable_91extensions_85_libs_common = boolean_f; 
   __glo__85default_91lock_91file_85_libs_common = boolean_f; 
   __glo__85default_91code_91directory_85_libs_common = boolean_f; 
-  make_utf8_string_with_len(c_73105, "0.25", 4, 4); 
+  make_utf8_string_with_len(c_73105, "0.27", 4, 4); 
   __glo__85winds_91version_85_libs_common = &c_73105; 
 
   mclosure0(clo_73262, c_libscommon_inlinable_lambdas); make_pair(pair_73261, find_or_add_symbol("c_libscommon_inlinable_lambdas"), &clo_73262);

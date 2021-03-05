@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.27 
  **
  **/
 
@@ -2943,7 +2943,7 @@ c_7351680.elements = (object *)e_7351683;
 c_7351680.elements[0] = k_7350606;
 
 
-make_utf8_string_with_len(c_7351684, "~a\n  Usage: winds [-v] COMMAND [PACKAGES]\n  \n  COMMANDS:\n\n    COMMON USE:\n    help  -  print usage\n    retrieve PACKAGE [...]  - downloads and extracts specified PACKAGE(s)\n    install PACKAGE [...] - retrieve and install specified PACKAGE(s)\n    reinstall PACKAGE [...] - retrieve and reinstall specified PACKAGE(s)\n    upgrade [PACKAGE ...] - upgrade all installed packages or specified PACKAGE(s)\n    uninstall PACKAGE [...] - remove specified PACKAGE(s)\n    search TERM - search for packages whose name (partially) match the specified TERM\n    info PACKAGE - list all metadata about specified PACKAGE\n    local-status - list all installed packages\n    index - pretty-prints winds packages index\n\n    PACKAGE AUTHORING:\n    build-local [DIR] - build local package using package.scm from DIR or \".\"\n    test-local [DIR] - test local package using package.scm in DIR or \".\"\n    package [DIR] - scaffold DIR layout and a package.scm stub\n    package-srfi [DIR] - scaffold DIR layout and a package.scm stub for SRFIs\n \n  PACKAGES:\n       Name of the package. Note this can be a symbol or a quoted list of \n       two or more symbols, e.g. \"(cyclone iset)\"~%", 1156, 1156);
+make_utf8_string_with_len(c_7351684, "~a\n  Usage: winds [-v] COMMAND [PACKAGES]\n  \n  COMMANDS:\n\n    COMMON USE:\n    help  -  print usage\n    retrieve PACKAGE [...]  - downloads and extracts specified PACKAGE(s)\n    install PACKAGE [...] - retrieve and install specified PACKAGE(s)\n    reinstall PACKAGE [...] - retrieve and reinstall specified PACKAGE(s)\n    upgrade [PACKAGE ...] - upgrade all installed packages or specified PACKAGE(s)\n    uninstall PACKAGE [...] - remove specified PACKAGE(s)\n    search TERM - search for packages whose name (partially) match the specified TERM\n    info PACKAGE - list all metadata about specified PACKAGE\n    local-status - list all installed packages\n    index - pretty-prints winds packages index\n\n    PACKAGE AUTHORING:\n    build-local [DIR] - build local package using package.scm from DIR or \".\"\n    test-local [DIR] - test local package using package.scm in DIR or \".\"\n    package [DIR] - scaffold DIR layout and a package.scm stub\n    package-srfi [DIR] - scaffold DIR layout and a package.scm stub for SRFIs\n \n  PACKAGES:\n       Name of the package passed as symbols (e.g. iset sxml srfi-197)", 1100, 1100);
 return_closcall3(data,  __glo_format_srfi_28,  &c_7351680, &c_7351684, __glo__85banner_85);; 
 }
 
@@ -5220,30 +5220,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_package", (object *) &__glo_package);
   add_global("__glo_build_91local", (object *) &__glo_build_91local);
   add_global("__glo_test_91local", (object *) &__glo_test_91local);
-  add_symbol(quote__85banner_85);
-  add_symbol(quote_repl);
-  add_symbol(quote_package_91srfi);
-  add_symbol(quote_package);
-  add_symbol(quote_test_91local);
-  add_symbol(quote_build_91local);
-  add_symbol(quote_index);
-  add_symbol(quote_local_91status);
-  add_symbol(quote_info);
-  add_symbol(quote_search);
-  add_symbol(quote_uninstall);
-  add_symbol(quote_upgrade);
-  add_symbol(quote_reinstall);
-  add_symbol(quote_install);
-  add_symbol(quote_retrieve);
-  add_symbol(quote_match);
-  add_symbol(quote__121param_91convert_125);
-  add_symbol(quote_debug);
-  add_symbol(quote__121param_91set_67_125);
-  add_symbol(quote__91v);
-  add_symbol(quote_programs);
-  add_symbol(quote_libraries);
-  add_symbol(quote_cyclone);
-  add_symbol(quote_version);
   mclosure0(c_7351794, (function_type)__lambda_153);c_7351794.num_args = 1; 
   __glo_dispatch = &c_7351794; 
   mclosure0(c_7351685, (function_type)__lambda_132);c_7351685.num_args = 0; 

@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.27 
  **
  **/
 
@@ -5774,80 +5774,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_mandatory_91parameters_libs_metadata", (object *) &__glo_mandatory_91parameters_libs_metadata);
   add_global("__glo_keys_libs_metadata", (object *) &__glo_keys_libs_metadata);
   add_global("__glo__85default_91metadata_91file_85_libs_metadata", (object *) &__glo__85default_91metadata_91file_85_libs_metadata);
-  add_symbol(quote_mandatory_91parameters);
-  add_symbol(quote_optional_91parameters);
-  add_symbol(quote_code_91parameters);
-  add_symbol(quote_essential_91parameters);
-  add_symbol(quote_available_91parameters);
-  add_symbol(quote_pkg_127);
-  add_symbol(quote_get_91name);
-  add_symbol(quote_get_91version);
-  add_symbol(quote_get_91license);
-  add_symbol(quote_get_91authors);
-  add_symbol(quote_get_91maintainers);
-  add_symbol(quote_get_91description);
-  add_symbol(quote_get_91tags);
-  add_symbol(quote_get_91docs);
-  add_symbol(quote_get_91test);
-  add_symbol(quote_get_91dependencies);
-  add_symbol(quote_get_91test_91dependencies);
-  add_symbol(quote_get_91foreign_91dependencies);
-  add_symbol(quote_get_91libraries);
-  add_symbol(quote_get_91programs);
-  add_symbol(quote_get_91libraries_91names);
-  add_symbol(quote_get_91programs_91names);
-  add_symbol(quote_get_91exported_91defines);
-  add_symbol(quote__191name);
-  add_symbol(quote_set_91name_67);
-  add_symbol(quote__191version);
-  add_symbol(quote_set_91version_67);
-  add_symbol(quote__191license);
-  add_symbol(quote_set_91license_67);
-  add_symbol(quote__191authors);
-  add_symbol(quote_set_91authors_67);
-  add_symbol(quote__191maintainers);
-  add_symbol(quote_set_91maintainers_67);
-  add_symbol(quote__191description);
-  add_symbol(quote_set_91description_67);
-  add_symbol(quote__191tags);
-  add_symbol(quote_set_91tags_67);
-  add_symbol(quote__191docs);
-  add_symbol(quote_set_91docs_67);
-  add_symbol(quote__191test);
-  add_symbol(quote_set_91test_67);
-  add_symbol(quote__191dependencies);
-  add_symbol(quote_set_91dependencies_67);
-  add_symbol(quote__191test_91dependencies);
-  add_symbol(quote_set_91test_91dependencies_67);
-  add_symbol(quote__191foreign_91dependencies);
-  add_symbol(quote_set_91foreign_91dependencies_67);
-  add_symbol(quote__191libraries);
-  add_symbol(quote_set_91libraries_67);
-  add_symbol(quote__191programs);
-  add_symbol(quote_set_91programs_67);
-  add_symbol(quote__191libraries_91names);
-  add_symbol(quote_set_91libraries_91names_67);
-  add_symbol(quote__191programs_91names);
-  add_symbol(quote_set_91programs_91names_67);
-  add_symbol(quote__191exported_91defines);
-  add_symbol(quote_set_91exported_91defines_67);
-  add_symbol(quote__191_191_191_191);
-  add_symbol(quote_name);
-  add_symbol(quote_version);
-  add_symbol(quote_license);
-  add_symbol(quote_authors);
-  add_symbol(quote_maintainers);
-  add_symbol(quote_description);
-  add_symbol(quote_tags);
-  add_symbol(quote_docs);
-  add_symbol(quote_test);
-  add_symbol(quote_dependencies);
-  add_symbol(quote_test_91dependencies);
-  add_symbol(quote_foreign_91dependencies);
-  add_symbol(quote_pkg);
-  add_symbol(quote_library);
-  add_symbol(quote_program);
-  add_symbol(quote_package);
   mclosure0(c_731904, (function_type)__lambda_117);c_731904.num_args = 0; 
   __glo_lib_91init_117libsmetadata_libs_metadata = &c_731904; 
   mclosure0(c_731401, (function_type)__lambda_53);c_731401.num_args = 1; 

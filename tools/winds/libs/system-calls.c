@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.27 
  **
  **/
 
@@ -2956,13 +2956,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_DEBUG_127_libs_system_91calls", (object *) &__glo_DEBUG_127_libs_system_91calls);
   add_global("__glo_DEBUG_libs_system_91calls", (object *) &__glo_DEBUG_libs_system_91calls);
   add_global("__glo__85log_91level_85_libs_system_91calls", (object *) &__glo__85log_91level_85_libs_system_91calls);
-  add_symbol(quote_warning);
-  add_symbol(quote_cmd);
-  add_symbol(quote_debug);
-  add_symbol(quote_quote);
-  add_symbol(quote__85log_91level_85);
-  add_symbol(quote_eq_127);
-  add_symbol(quote__if);
   mclosure0(c_731332, (function_type)__lambda_122);c_731332.num_args = 0; 
   __glo_lib_91init_117libssystem_19191calls_libs_system_91calls = &c_731332; 
   mclosure0(c_731291, (function_type)__lambda_115);c_731291.num_args = 1; 
