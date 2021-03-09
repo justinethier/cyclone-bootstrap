@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.26 
+ ** Version 0.27 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,26 +90,26 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
-#include <sys/time.h>
+#include <time.h>
 #include "cyclone/types.h"
 object __glo_lib_91init_117schemetime_scheme_time = NULL;
 object __glo_jiffies_91per_91second_scheme_time = NULL;
@@ -331,48 +333,36 @@ extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
-static void __lambda_1(void *data, int argc, closure _,object k_733) ;
-static void __lambda_4(void *data, int argc, closure _, object k) ;
-static void __lambda_3(void *data, int argc, closure _, object k) ;
-static void __lambda_2(void *data, int argc, closure _, object k) ;
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_733*/
+static void __lambda_4(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_3(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_2(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
 
-static void __lambda_1(void *data, int argc, closure _,object k_733) {
+static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_733 */
+ {
+object k_733 = args[0];
   Cyc_st_add(data, "scheme/time.sld:lib-init:schemetime");
 return_closcall1(data,  k_733,  obj_int2obj(0));; 
 }
 
-static void __lambda_4(void *data, int argc, closure _, object k) { int n = 1000000;
+static void __lambda_4(void *data, object _, int argc, object *args) {object k = args[0]; int n = 1000000;
         object obj = obj_int2obj(n);
         return_closcall1(data, k, obj);  }
-static void __lambda_3(void *data, int argc, closure _, object k) { struct timeval tv;
+static void __lambda_3(void *data, object _, int argc, object *args) {object k = args[0]; struct timespec now;
         make_double(box, 0.0);
-        gettimeofday(&tv, NULL); /* TODO: longer-term consider using clock_gettime instead */
-        long long jiffy = (tv.tv_sec)*1000000LL + tv.tv_usec;
-        /* Future consideration:
-        mp_int bn_tmp, bn_tmp2, bn_tmp3;
-        mp_init(&bn_tmp);
-        mp_init(&bn_tmp2);
-        mp_init(&bn_tmp3);
-        Cyc_int2bignum(tv.tv_sec, &bn_tmp);
-        Cyc_int2bignum(1000000LL, &bn_tmp2);
-        Cyc_int2bignum(tv.tv_usec, &bn_tmp3);
-        alloc_bignum(data, box);
-        mp_mul(&bn_tmp, &bn_tmp2, &bn_tmp);
-        mp_add(&bn_tmp, &bn_tmp3, &bignum_value(box)); 
-        mp_clear(&bn_tmp);
-        mp_clear(&bn_tmp2);
-        mp_clear(&bn_tmp3);
-        */
+        clock_gettime(CLOCK_MONOTONIC, &now);
+        long long jiffy = (now.tv_sec)*1000000LL + now.tv_nsec/1000; // nano->microseconds
         double_value(&box) = jiffy;
         return_closcall1(data, k, &box);  }
-static void __lambda_2(void *data, int argc, closure _, object k) { make_double(box, 0.0);
+static void __lambda_2(void *data, object _, int argc, object *args) {object k = args[0]; make_double(box, 0.0);
         time_t t = time(NULL);
         double_value(&box) = t;
         return_closcall1(data, k, &box);  }
-void c_schemetime_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-(((closure)cont)->fn)(data, 1, cont, NULL);
+void c_schemetime_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
+object buf[1]; object cont = args[0];
+buf[0] = NULL; (((closure)cont)->fn)(data, cont, 1, buf);
  } 
-void c_schemetime_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemetime_entry_pt_first_lambda(void *data, object clo, int argc, object *args){ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117schemetime_scheme_time", (object *) &__glo_lib_91init_117schemetime_scheme_time);
@@ -399,10 +389,10 @@ make_pair(c_7321, &pair_7314, &c_7322);
 make_pair(c_7320, &pair_7316, &c_7321);
 make_pair(c_7319, &pair_7318, &c_7320);
 Cyc_global_variables = &c_7319;
-cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, 1, cont, cont);
+object buf[1]; buf[0] = ((closure1_type *)clo)->element;
+(((closure)__glo_lib_91init_117schemetime_scheme_time)->fn)(data, buf[0], 1, buf);
 }
-void c_schemetime_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemetime_entry_pt(void *data, object cont, int argc, object value){ 
   register_library("scheme_time");
-  c_schemetime_entry_pt_first_lambda(data, argc, cont,value);
+  c_schemetime_entry_pt_first_lambda(data, cont, argc, value);
 }

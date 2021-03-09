@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.26 
+ ** Version 0.27 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,23 +90,23 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
 #include "cyclone/types.h"
@@ -115,21 +117,23 @@ object __glo_command_91line_scheme_process_91context = NULL;
 object __glo_emergency_91exit_scheme_process_91context = NULL;
 #include "cyclone/runtime.h"
 defsymbol(emergency_91exit);
-static void __lambda_1(void *data, int argc, closure _,object k_735) ;
-static void __lambda_4(void *data, int argc, closure _, object k) ;
-static void __lambda_3(void *data, int argc, closure _, object k, object env_var) ;
-static void __lambda_2(void *data, int argc, closure _, object k) ;
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_735*/
+static void __lambda_4(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_3(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object env_var)*/
+static void __lambda_2(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
 
-static void __lambda_1(void *data, int argc, closure _,object k_735) {
+static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_735 */
+ {
+object k_735 = args[0];
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 
 object c_7314 = global_set_cps_id(data,  k_735,"__glo_emergency_91exit_scheme_process_91context", __glo_emergency_91exit_scheme_process_91context, primitive_exit);
 return_closcall1(data,  k_735,  c_7314);; 
 }
 
-static void __lambda_4(void *data, int argc, closure _, object k) {pack_env_variables(data, k); 
+static void __lambda_4(void *data, object _, int argc, object *args) {object k = args[0];pack_env_variables(data, k); 
        }
-static void __lambda_3(void *data, int argc, closure _, object k, object env_var) { 
+static void __lambda_3(void *data, object _, int argc, object *args) {object k = args[0];object env_var = args[1]; 
         const char *v = NULL;
         Cyc_check_str(data, env_var);
         v = getenv(string_str(env_var));
@@ -140,7 +144,7 @@ static void __lambda_3(void *data, int argc, closure _, object k, object env_var
           return_closcall1(data, k, &str);
         }
        }
-static void __lambda_2(void *data, int argc, closure _, object k) { int i;
+static void __lambda_2(void *data, object _, int argc, object *args) {object k = args[0]; int i;
         object lis = NULL;
         for (i = _cyc_argc; i > 0; i--) {
           object ps = alloca(sizeof(string_type));
@@ -156,10 +160,11 @@ static void __lambda_2(void *data, int argc, closure _, object k) { int i;
           lis = pl;
         }
         return_closcall1(data, k, lis);  }
-void c_schemeprocess_91context_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-(((closure)cont)->fn)(data, 1, cont, NULL);
+void c_schemeprocess_91context_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
+object buf[1]; object cont = args[0];
+buf[0] = NULL; (((closure)cont)->fn)(data, cont, 1, buf);
  } 
-void c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeprocess_91context_entry_pt_first_lambda(void *data, object clo, int argc, object *args){ 
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote_emergency_91exit = find_or_add_symbol("emergency-exit");
 
@@ -168,7 +173,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_get_91environment_91variable_scheme_process_91context", (object *) &__glo_get_91environment_91variable_scheme_process_91context);
   add_global("__glo_command_91line_scheme_process_91context", (object *) &__glo_command_91line_scheme_process_91context);
   add_global("__glo_emergency_91exit_scheme_process_91context", (object *) &__glo_emergency_91exit_scheme_process_91context);
-  add_symbol(quote_emergency_91exit);
   mclosure0(c_7310, (function_type)__lambda_1);c_7310.num_args = 0; 
   __glo_lib_91init_117schemeprocess_19191context_scheme_process_91context = &c_7310; 
   mclosure0(c_739, (function_type)__lambda_4);c_739.num_args = 0; 
@@ -192,10 +196,10 @@ make_pair(c_7329, &pair_7322, &c_7330);
 make_pair(c_7328, &pair_7324, &c_7329);
 make_pair(c_7327, &pair_7326, &c_7328);
 Cyc_global_variables = &c_7327;
-cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, 1, cont, cont);
+object buf[1]; buf[0] = ((closure1_type *)clo)->element;
+(((closure)__glo_lib_91init_117schemeprocess_19191context_scheme_process_91context)->fn)(data, buf[0], 1, buf);
 }
-void c_schemeprocess_91context_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemeprocess_91context_entry_pt(void *data, object cont, int argc, object value){ 
   register_library("scheme_process_91context");
-  c_schemeprocess_91context_entry_pt_first_lambda(data, argc, cont,value);
+  c_schemeprocess_91context_entry_pt_first_lambda(data, cont, argc, value);
 }

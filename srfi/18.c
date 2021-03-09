@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.26 
+ ** Version 0.27 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,39 +90,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
-#define closcall3(td, clo,a1,a2,a3) \
+#define closcall3(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
+   Cyc_apply(td, clo, 3, buf ); \
 } else { \
-   ((clo)->fn)(td, 3, clo,a1,a2,a3);\
+   ((clo)->fn)(td, clo, 3, buf); \
+;\
 }
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td, clo, buf, 3); \
      return; \
  } else {\
-     closcall3(td, (closure) (clo),a1,a2,a3); \
+     closcall3(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -138,39 +141,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct3(td, _fn,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 3); \
      return; \
  } else { \
-     (_fn)(td, 3, (closure)_fn,a1,a2,a3); \
+     (_fn)(td, (closure)_fn, 3, buf); \
  }}
 
 #define return_direct_with_clo3(td, clo, _fn,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td, clo, buf, 3); \
      return; \
  } else { \
-     (_fn)(td, 3, (closure)(clo),a1,a2,a3); \
+     (_fn)(td, (closure)(clo), 3, buf); \
  }}
 
-#define closcall4(td, clo,a1,a2,a3,a4) \
+#define closcall4(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 3, (closure)(a1), clo,a2,a3,a4); \
+   Cyc_apply(td, clo, 4, buf ); \
 } else { \
-   ((clo)->fn)(td, 4, clo,a1,a2,a3,a4);\
+   ((clo)->fn)(td, clo, 4, buf); \
+;\
 }
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
+ object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(td, clo, buf, 4); \
      return; \
  } else {\
-     closcall4(td, (closure) (clo),a1,a2,a3,a4); \
+     closcall4(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -188,39 +192,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct4(td, _fn,a1,a2,a3,a4) { \
  char top; \
+ object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 4); \
      return; \
  } else { \
-     (_fn)(td, 4, (closure)_fn,a1,a2,a3,a4); \
+     (_fn)(td, (closure)_fn, 4, buf); \
  }}
 
 #define return_direct_with_clo4(td, clo, _fn,a1,a2,a3,a4) { \
  char top; \
+ object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
      GC(td, clo, buf, 4); \
      return; \
  } else { \
-     (_fn)(td, 4, (closure)(clo),a1,a2,a3,a4); \
+     (_fn)(td, (closure)(clo), 4, buf); \
  }}
 
-#define closcall7(td, clo,a1,a2,a3,a4,a5,a6,a7) \
+#define closcall7(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 6, (closure)(a1), clo,a2,a3,a4,a5,a6,a7); \
+   Cyc_apply(td, clo, 7, buf ); \
 } else { \
-   ((clo)->fn)(td, 7, clo,a1,a2,a3,a4,a5,a6,a7);\
+   ((clo)->fn)(td, clo, 7, buf); \
+;\
 }
 #define return_closcall7(td, clo,a1,a2,a3,a4,a5,a6,a7) { \
  char top; \
+ object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
      GC(td, clo, buf, 7); \
      return; \
  } else {\
-     closcall7(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7); \
+     closcall7(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -238,39 +243,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct7(td, _fn,a1,a2,a3,a4,a5,a6,a7) { \
  char top; \
+ object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 7); \
      return; \
  } else { \
-     (_fn)(td, 7, (closure)_fn,a1,a2,a3,a4,a5,a6,a7); \
+     (_fn)(td, (closure)_fn, 7, buf); \
  }}
 
 #define return_direct_with_clo7(td, clo, _fn,a1,a2,a3,a4,a5,a6,a7) { \
  char top; \
+ object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[7]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;\
      GC(td, clo, buf, 7); \
      return; \
  } else { \
-     (_fn)(td, 7, (closure)(clo),a1,a2,a3,a4,a5,a6,a7); \
+     (_fn)(td, (closure)(clo), 7, buf); \
  }}
 
-#define closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) \
+#define closcall8(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 7, (closure)(a1), clo,a2,a3,a4,a5,a6,a7,a8); \
+   Cyc_apply(td, clo, 8, buf ); \
 } else { \
-   ((clo)->fn)(td, 8, clo,a1,a2,a3,a4,a5,a6,a7,a8);\
+   ((clo)->fn)(td, clo, 8, buf); \
+;\
 }
 #define return_closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) { \
  char top; \
+ object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
      GC(td, clo, buf, 8); \
      return; \
  } else {\
-     closcall8(td, (closure) (clo),a1,a2,a3,a4,a5,a6,a7,a8); \
+     closcall8(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -288,23 +294,23 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct8(td, _fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
  char top; \
+ object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 8); \
      return; \
  } else { \
-     (_fn)(td, 8, (closure)_fn,a1,a2,a3,a4,a5,a6,a7,a8); \
+     (_fn)(td, (closure)_fn, 8, buf); \
  }}
 
 #define return_direct_with_clo8(td, clo, _fn,a1,a2,a3,a4,a5,a6,a7,a8) { \
  char top; \
+ object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
      GC(td, clo, buf, 8); \
      return; \
  } else { \
-     (_fn)(td, 8, (closure)(clo),a1,a2,a3,a4,a5,a6,a7,a8); \
+     (_fn)(td, (closure)(clo), 8, buf); \
  }}
 
 #include "cyclone/types.h"
@@ -562,58 +568,60 @@ extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
 defsymbol(_85primordial_91thread_85);
 defsymbol(cyc_91thread_91obj);
-static void __lambda_29(void *data, int argc, closure _,object k_73124) ;
-static void __lambda_30(void *data, int argc, object self_73144, object r_73126) ;
-static void __lambda_50(void *data, int argc, closure _, object k, object cond) ;
-static void __lambda_49(void *data, int argc, closure _, object k, object cond) ;
-static void __lambda_48(void *data, int argc, closure _, object k, object cond, object lock) ;
-static void __lambda_47(void *data, int argc, closure _, object k) ;
-static void __lambda_46(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_45(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_25(void *data, int argc, closure _,object k_73116, object mutex_7324_7349, object opts_7325_7350_raw, ...) ;
-static void __lambda_26(void *data, int argc, object self_73141, object r_73121) ;
-static void __lambda_27(void *data, int argc, object self_73142, object r_73118) ;
-static void __lambda_28(void *data, int argc, object self_73143, object r_73120) ;
-static void __lambda_44(void *data, int argc, closure _, object k, object obj, object timeout) ;
-static void __lambda_43(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_24(void *data, int argc, closure _,object k_73111, object mutex_7322_7347, object timeout_7323_7348_raw, ...) ;
-static void __lambda_42(void *data, int argc, closure _, object k) ;
-static void __lambda_41(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_40(void *data, int argc, closure _, object k) ;
-static void __lambda_39(void *data, int argc, closure _, object k, object obj) ;
-static void __lambda_38(void *data, int argc, closure _, object k, object timeout) ;
-static void __lambda_20(void *data, int argc, closure _,object k_73103, object t_7320_7346) ;
-static void __lambda_23(void *data, int argc, object self_73138, object r_73104) ;
-static void __lambda_21(void *data, int argc, object self_73139, object k_73106) ;
-static void __lambda_22(void *data, int argc, object self_73140, object r_73107) ;
-static void __lambda_37(void *data, int argc, closure _, object k, object thread_data_opaque) ;
-static void __lambda_36(void *data, int argc, closure _, object k) ;
-static void __lambda_19(void *data, int argc, closure _,object k_73100) ;
-static void __lambda_10(void *data, int argc, closure _,object k_7389, object t_7312_7343) ;
-static void __lambda_11(void *data, int argc, object self_73130, object thunk_7315_7344) ;
-static void __lambda_17(void *data, int argc, object self_73131, object k_7396) ;
-static void __lambda_18(void *data, int argc, object self_73132, object r_7397) ;
-static void __lambda_12(void *data, int argc, object self_73133, object r_7395) ;
-static void __lambda_13(void *data, int argc, object self_73134, object thread_91params_7318_7345) ;
-static void __lambda_14(void *data, int argc, object self_73135, object r_7394) ;
-static void __lambda_15(void *data, int argc, object self_73136, object r_7392) ;
-static void __lambda_16(void *data, int argc, object self_73137, object r_7393) ;
-static void __lambda_35(void *data, int argc, closure _, object k) ;
-static void __lambda_34(void *data, int argc, closure _, object k) ;
-static void __lambda_33(void *data, int argc, closure _, object k) ;
-static void __lambda_9(void *data, int argc, closure _,object k_7384) ;
-static void __lambda_7(void *data, int argc, closure _,object k_7379) ;
-static void __lambda_8(void *data, int argc, object self_73129, object t_7311_7342) ;
-static void __lambda_6(void *data, int argc, closure _,object k_7376, object t_739_7340, object obj_7310_7341) ;
+static void __lambda_29(void *data, object clo, int argc, object *args) ;/*closure _,object k_73124*/
+static void __lambda_30(void *data, object clo, int argc, object *args) ;/*object self_73144, object r_73126*/
+static void __lambda_50(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object cond)*/
+static void __lambda_49(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object cond)*/
+static void __lambda_48(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object cond, object lock)*/
+static void __lambda_47(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_46(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj)*/
+static void __lambda_45(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj)*/
+static void __lambda_25(void *data, object clo, int argc, object *args) ;/*closure _,object k_73116, object mutex_7324_7349, object opts_7325_7350_raw, ...*/
+static void __lambda_26(void *data, object clo, int argc, object *args) ;/*object self_73141, object r_73121*/
+static void __lambda_27(void *data, object clo, int argc, object *args) ;/*object self_73142, object r_73118*/
+static void __lambda_28(void *data, object clo, int argc, object *args) ;/*object self_73143, object r_73120*/
+static void __lambda_44(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj, object timeout)*/
+static void __lambda_43(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj)*/
+static void __lambda_24(void *data, object clo, int argc, object *args) ;/*closure _,object k_73111, object mutex_7322_7347, object timeout_7323_7348_raw, ...*/
+static void __lambda_42(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_41(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj)*/
+static void __lambda_40(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_39(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object obj)*/
+static void __lambda_38(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object timeout)*/
+static void __lambda_20(void *data, object clo, int argc, object *args) ;/*closure _,object k_73103, object t_7320_7346*/
+static void __lambda_23(void *data, object clo, int argc, object *args) ;/*object self_73138, object r_73104*/
+static void __lambda_21(void *data, object clo, int argc, object *args) ;/*object self_73139, object k_73106*/
+static void __lambda_22(void *data, object clo, int argc, object *args) ;/*object self_73140, object r_73107*/
+static void __lambda_37(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object thread_data_opaque)*/
+static void __lambda_36(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_19(void *data, object clo, int argc, object *args) ;/*closure _,object k_73100*/
+static void __lambda_10(void *data, object clo, int argc, object *args) ;/*closure _,object k_7389, object t_7312_7343*/
+static void __lambda_11(void *data, object clo, int argc, object *args) ;/*object self_73130, object thunk_7315_7344*/
+static void __lambda_17(void *data, object clo, int argc, object *args) ;/*object self_73131, object k_7396*/
+static void __lambda_18(void *data, object clo, int argc, object *args) ;/*object self_73132, object r_7397*/
+static void __lambda_12(void *data, object clo, int argc, object *args) ;/*object self_73133, object r_7395*/
+static void __lambda_13(void *data, object clo, int argc, object *args) ;/*object self_73134, object thread_91params_7318_7345*/
+static void __lambda_14(void *data, object clo, int argc, object *args) ;/*object self_73135, object r_7394*/
+static void __lambda_15(void *data, object clo, int argc, object *args) ;/*object self_73136, object r_7392*/
+static void __lambda_16(void *data, object clo, int argc, object *args) ;/*object self_73137, object r_7393*/
+static void __lambda_35(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_34(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_33(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_9(void *data, object clo, int argc, object *args) ;/*closure _,object k_7384*/
+static void __lambda_7(void *data, object clo, int argc, object *args) ;/*closure _,object k_7379*/
+static void __lambda_8(void *data, object clo, int argc, object *args) ;/*object self_73129, object t_7311_7342*/
+static void __lambda_6(void *data, object clo, int argc, object *args) ;/*closure _,object k_7376, object t_739_7340, object obj_7310_7341*/
 static object __lambda_32(void *data, object ptr,object t_738_7339) ;
-static void __lambda_5(void *data, int argc, closure _,object k_7373, object t_738_7339) ;
+static void __lambda_5(void *data, object clo, int argc, object *args) ;/*closure _,object k_7373, object t_738_7339*/
 static object __lambda_31(void *data, object ptr,object t_737_7338) ;
-static void __lambda_4(void *data, int argc, closure _,object k_7370, object t_737_7338) ;
-static void __lambda_2(void *data, int argc, closure _,object k_7362, object thunk_734_7335, object name_735_7336_raw, ...) ;
-static void __lambda_3(void *data, int argc, object self_73128, object r_7365) ;
-static void __lambda_1(void *data, int argc, closure _,object k_7354, object obj_731_7334) ;
+static void __lambda_4(void *data, object clo, int argc, object *args) ;/*closure _,object k_7370, object t_737_7338*/
+static void __lambda_2(void *data, object clo, int argc, object *args) ;/*closure _,object k_7362, object thunk_734_7335, object name_735_7336_raw, ...*/
+static void __lambda_3(void *data, object clo, int argc, object *args) ;/*object self_73128, object r_7365*/
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_7354, object obj_731_7334*/
 
-static void __lambda_29(void *data, int argc, closure _,object k_73124) {
+static void __lambda_29(void *data, object _, int argc, object *args) /* closure _,object k_73124 */
+ {
+object k_73124 = args[0];
   Cyc_st_add(data, "srfi/18.sld:lib-init:srfi18");
 
 closureN_type c_73337;
@@ -632,25 +640,27 @@ make_utf8_string_with_len(c_73344, "main thread", 11, 11);
 return_closcall7(data,  __glo_vector_scheme_base,  &c_73337, quote_cyc_91thread_91obj, boolean_f, boolean_f, &c_73344, boolean_f, boolean_f);; 
 }
 
-static void __lambda_30(void *data, int argc, object self_73144, object r_73126) {
+static void __lambda_30(void *data, object self_73144, int argc, object *args) /* object self_73144, object r_73126 */
+ {
+ object r_73126 = args[0];
   
 object c_73342 = global_set_cps_id(data,  ((closureN)self_73144)->elements[0],"__glo__85primordial_91thread_85_srfi_18", __glo__85primordial_91thread_85_srfi_18, r_73126);
 return_closcall1(data,  ((closureN)self_73144)->elements[0],  c_73342);; 
 }
 
-static void __lambda_50(void *data, int argc, closure _, object k, object cond) { Cyc_check_cond_var(data, cond);
+static void __lambda_50(void *data, object _, int argc, object *args) {object k = args[0];object cond = args[1]; Cyc_check_cond_var(data, cond);
         if (pthread_cond_broadcast(&(((cond_var)cond)->cond)) != 0) {
           fprintf(stderr, "Unable to broadcast condition variable\n");
           exit(1);
         }
         return_closcall1(data, k, boolean_t);  }
-static void __lambda_49(void *data, int argc, closure _, object k, object cond) { Cyc_check_cond_var(data, cond);
+static void __lambda_49(void *data, object _, int argc, object *args) {object k = args[0];object cond = args[1]; Cyc_check_cond_var(data, cond);
         if (pthread_cond_signal(&(((cond_var)cond)->cond)) != 0) {
           fprintf(stderr, "Unable to signal condition variable\n");
           exit(1);
         }
         return_closcall1(data, k, boolean_t);  }
-static void __lambda_48(void *data, int argc, closure _, object k, object cond, object lock) { Cyc_check_cond_var(data, cond);
+static void __lambda_48(void *data, object _, int argc, object *args) {object k = args[0];object cond = args[1];object lock = args[2]; Cyc_check_cond_var(data, cond);
         Cyc_check_mutex(data, lock);
         set_thread_blocked(data, k);
         if (pthread_cond_wait(
@@ -660,7 +670,7 @@ static void __lambda_48(void *data, int argc, closure _, object k, object cond, 
           exit(1);
         }
         return_thread_runnable(data, boolean_t);  }
-static void __lambda_47(void *data, int argc, closure _, object k) { int heap_grown;
+static void __lambda_47(void *data, object _, int argc, object *args) {object k = args[0]; int heap_grown;
         cond_var cond;
         cond_var_type tmp;
         tmp.hdr.mark = gc_color_red;
@@ -672,17 +682,19 @@ static void __lambda_47(void *data, int argc, closure _, object k) { int heap_gr
           exit(1);
         }
         return_closcall1(data, k, cond);  }
-static void __lambda_46(void *data, int argc, closure _, object k, object obj) { object result = Cyc_is_cond_var(obj);
+static void __lambda_46(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; object result = Cyc_is_cond_var(obj);
         return_closcall1(data, k, result);  }
-static void __lambda_45(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
+static void __lambda_45(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; mutex m = (mutex) obj;
         Cyc_check_mutex(data, obj);
         if (pthread_mutex_unlock(&(m->lock)) != 0) {
           fprintf(stderr, "Error unlocking mutex\n");
           exit(1);
         }
         return_closcall1(data, k, boolean_t);  }
-static void __lambda_25(void *data, int argc, closure _,object k_73116, object mutex_7324_7349, object opts_7325_7350_raw, ...) {
-load_varargs(opts_7325_7350, opts_7325_7350_raw, argc - 2);
+static void __lambda_25(void *data, object _, int argc, object *args) /* closure _,object k_73116, object mutex_7324_7349, object opts_7325_7350_raw, ... */
+ {
+object k_73116 = args[0]; object mutex_7324_7349 = args[1];
+load_varargs(opts_7325_7350, args, 2, argc - 2);
   Cyc_st_add(data, "srfi/18.sld:mutex-unlock!");
   
 if( (boolean_f != Cyc_is_null(opts_7325_7350)) ){ 
@@ -708,7 +720,9 @@ return_direct_with_clo1(data,(closure)&c_73307,__lambda_26,  Cyc_car(data, opts_
 ;; 
 }
 
-static void __lambda_26(void *data, int argc, object self_73141, object r_73121) {
+static void __lambda_26(void *data, object self_73141, int argc, object *args) /* object self_73141, object r_73121 */
+ {
+ object r_73121 = args[0];
   
 closureN_type c_73309;
 object e_73325 [3];
@@ -726,7 +740,9 @@ c_73309.elements[2] = ((closureN)self_73141)->elements[2];
 return_closcall2(data,  __glo_condition_91variable_127_srfi_18,  &c_73309, r_73121);; 
 }
 
-static void __lambda_27(void *data, int argc, object self_73142, object r_73118) {
+static void __lambda_27(void *data, object self_73142, int argc, object *args) /* object self_73142, object r_73118 */
+ {
+ object r_73118 = args[0];
   if( (boolean_f != r_73118) ){ 
   
 closureN_type c_73311;
@@ -751,11 +767,13 @@ return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73142)->elemen
 ;; 
 }
 
-static void __lambda_28(void *data, int argc, object self_73143, object r_73120) {
+static void __lambda_28(void *data, object self_73143, int argc, object *args) /* object self_73143, object r_73120 */
+ {
+ object r_73120 = args[0];
   return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73143)->elements[0], ((closureN)self_73143)->elements[1]);; 
 }
 
-static void __lambda_44(void *data, int argc, closure _, object k, object obj, object timeout) { mutex m = (mutex) obj;
+static void __lambda_44(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1];object timeout = args[2]; mutex m = (mutex) obj;
         Cyc_check_mutex(data, obj);
         Cyc_check_num(data, timeout);
 #ifdef __APPLE__
@@ -775,7 +793,7 @@ static void __lambda_44(void *data, int argc, closure _, object k, object obj, o
           return_thread_runnable(data, boolean_f);
         }
         return_thread_runnable(data, boolean_t);  }
-static void __lambda_43(void *data, int argc, closure _, object k, object obj) { mutex m = (mutex) obj;
+static void __lambda_43(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; mutex m = (mutex) obj;
         Cyc_check_mutex(data, obj);
         set_thread_blocked(data, k);
         if (pthread_mutex_lock(&(m->lock)) != 0) {
@@ -783,8 +801,10 @@ static void __lambda_43(void *data, int argc, closure _, object k, object obj) {
           exit(1);
         }
         return_thread_runnable(data, boolean_t);  }
-static void __lambda_24(void *data, int argc, closure _,object k_73111, object mutex_7322_7347, object timeout_7323_7348_raw, ...) {
-load_varargs(timeout_7323_7348, timeout_7323_7348_raw, argc - 2);
+static void __lambda_24(void *data, object _, int argc, object *args) /* closure _,object k_73111, object mutex_7322_7347, object timeout_7323_7348_raw, ... */
+ {
+object k_73111 = args[0]; object mutex_7322_7347 = args[1];
+load_varargs(timeout_7323_7348, args, 2, argc - 2);
   Cyc_st_add(data, "srfi/18.sld:mutex-lock!");
   
 if( (boolean_f != Cyc_is_pair(timeout_7323_7348)) ){ 
@@ -796,7 +816,7 @@ return_closcall3(data,  __glo__75mutex_91timedlock_67_srfi_18,  k_73111, mutex_7
 ;; 
 }
 
-static void __lambda_42(void *data, int argc, closure _, object k) { int heap_grown;
+static void __lambda_42(void *data, object _, int argc, object *args) {object k = args[0]; int heap_grown;
         mutex lock;
         mutex_type tmp;
         tmp.hdr.mark = gc_color_red;
@@ -808,15 +828,17 @@ static void __lambda_42(void *data, int argc, closure _, object k) { int heap_gr
           exit(1);
         }
         return_closcall1(data, k, lock);  }
-static void __lambda_41(void *data, int argc, closure _, object k, object obj) { object result = Cyc_is_mutex(obj);
+static void __lambda_41(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; object result = Cyc_is_mutex(obj);
         return_closcall1(data, k, result);  }
-static void __lambda_40(void *data, int argc, closure _, object k) { Cyc_trigger_minor_gc(data, k);  }
-static void __lambda_39(void *data, int argc, closure _, object k, object obj) { object heap_obj = copy2heap(data, obj);
+static void __lambda_40(void *data, object _, int argc, object *args) {object k = args[0]; Cyc_trigger_minor_gc(data, k);  }
+static void __lambda_39(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; object heap_obj = copy2heap(data, obj);
         return_closcall1(data, k, heap_obj);  }
-static void __lambda_38(void *data, int argc, closure _, object k, object timeout) { set_thread_blocked(data, k);
+static void __lambda_38(void *data, object _, int argc, object *args) {object k = args[0];object timeout = args[1]; set_thread_blocked(data, k);
         Cyc_thread_sleep(data, timeout);
         return_thread_runnable(data, boolean_t);  }
-static void __lambda_20(void *data, int argc, closure _,object k_73103, object t_7320_7346) {
+static void __lambda_20(void *data, object _, int argc, object *args) /* closure _,object k_73103, object t_7320_7346 */
+ {
+object k_73103 = args[0]; object t_7320_7346 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-join!");
 
 closureN_type c_73264;
@@ -846,7 +868,9 @@ c_73279.elements[1] = t_7320_7346;
 return_direct_with_clo1(data,(closure)&c_73264,__lambda_21,  &c_73279);; 
 }
 
-static void __lambda_23(void *data, int argc, object self_73138, object r_73104) {
+static void __lambda_23(void *data, object self_73138, int argc, object *args) /* object self_73138, object r_73104 */
+ {
+ object r_73104 = args[0];
   if( (boolean_f != r_73104) ){ 
   
 
@@ -856,7 +880,9 @@ return_closcall2(data,  __glo__75thread_91join_67_srfi_18,  ((closureN)self_7313
 ;; 
 }
 
-static void __lambda_21(void *data, int argc, object self_73139, object k_73106) {
+static void __lambda_21(void *data, object self_73139, int argc, object *args) /* object self_73139, object k_73106 */
+ {
+ object k_73106 = args[0];
   
 closureN_type c_73266;
 object e_73276 [2];
@@ -873,7 +899,9 @@ c_73266.elements[1] = ((closureN)self_73139)->elements[0];
 return_closcall2(data,  __glo_thread_127_srfi_18,  &c_73266, ((closureN)self_73139)->elements[0]);; 
 }
 
-static void __lambda_22(void *data, int argc, object self_73140, object r_73107) {
+static void __lambda_22(void *data, object self_73140, int argc, object *args) /* object self_73140, object r_73107 */
+ {
+ object r_73107 = args[0];
   if( (boolean_f != r_73107) ){ 
   
 
@@ -885,7 +913,7 @@ return_closcall1(data,  ((closureN)self_73140)->elements[0],  Cyc_is_opaque(Cyc_
 ;; 
 }
 
-static void __lambda_37(void *data, int argc, closure _, object k, object thread_data_opaque) { gc_thread_data *td = (gc_thread_data *)(opaque_ptr(thread_data_opaque));
+static void __lambda_37(void *data, object _, int argc, object *args) {object k = args[0];object thread_data_opaque = args[1]; gc_thread_data *td = (gc_thread_data *)(opaque_ptr(thread_data_opaque));
         set_thread_blocked(data, k);
         /* Cannot join to detached thread! pthread_join(td->thread_id, NULL);*/
         while (1) {
@@ -896,13 +924,17 @@ static void __lambda_37(void *data, int argc, closure _, object k, object thread
           gc_sleep_ms(250);
         }
         return_thread_runnable(data, boolean_t); }
-static void __lambda_36(void *data, int argc, closure _, object k) { Cyc_end_thread(data);  }
-static void __lambda_19(void *data, int argc, closure _,object k_73100) {
+static void __lambda_36(void *data, object _, int argc, object *args) {object k = args[0]; Cyc_end_thread(data);  }
+static void __lambda_19(void *data, object _, int argc, object *args) /* closure _,object k_73100 */
+ {
+object k_73100 = args[0];
   Cyc_st_add(data, "srfi/18.sld:thread-yield!");
 return_closcall2(data,  __glo_thread_91sleep_67_srfi_18,  k_73100, obj_int2obj(1));; 
 }
 
-static void __lambda_10(void *data, int argc, closure _,object k_7389, object t_7312_7343) {
+static void __lambda_10(void *data, object _, int argc, object *args) /* closure _,object k_7389, object t_7312_7343 */
+ {
+object k_7389 = args[0]; object t_7312_7343 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-start!");
 
 closureN_type c_73214;
@@ -922,7 +954,9 @@ c_73214.elements[1] = t_7312_7343;
 return_direct_with_clo1(data,(closure)&c_73214,__lambda_11,  Cyc_vector_ref(data, t_7312_7343, obj_int2obj(1)));; 
 }
 
-static void __lambda_11(void *data, int argc, object self_73130, object thunk_7315_7344) {
+static void __lambda_11(void *data, object self_73130, int argc, object *args) /* object self_73130, object thunk_7315_7344 */
+ {
+ object thunk_7315_7344 = args[0];
   
 closureN_type c_73216;
 object e_73242 [2];
@@ -952,7 +986,9 @@ c_73243.elements[1] = thunk_7315_7344;
 return_direct_with_clo1(data,(closure)&c_73216,__lambda_12,  &c_73243);; 
 }
 
-static void __lambda_17(void *data, int argc, object self_73131, object k_7396) {
+static void __lambda_17(void *data, object self_73131, int argc, object *args) /* object self_73131, object k_7396 */
+ {
+ object k_7396 = args[0];
   
 closureN_type c_73245;
 object e_73249 [2];
@@ -971,11 +1007,15 @@ object c_73252 = Cyc_vector_set_cps(data,(closure)&c_73245,((closureN)self_73131
 return_closcall1(data,(closure)&c_73245,  c_73252);; 
 }
 
-static void __lambda_18(void *data, int argc, object self_73132, object r_7397) {
+static void __lambda_18(void *data, object self_73132, int argc, object *args) /* object self_73132, object r_7397 */
+ {
+ object r_7397 = args[0];
   return_closcall1(data,  ((closureN)self_73132)->elements[1],  ((closureN)self_73132)->elements[0]);; 
 }
 
-static void __lambda_12(void *data, int argc, object self_73133, object r_7395) {
+static void __lambda_12(void *data, object self_73133, int argc, object *args) /* object self_73133, object r_7395 */
+ {
+ object r_7395 = args[0];
   
 closureN_type c_73218;
 object e_73237 [2];
@@ -994,7 +1034,9 @@ pair_type local_73240;
 return_direct_with_clo1(data,(closure)&c_73218,__lambda_13,  set_pair_as_expr(&local_73240, ((closureN)self_73133)->elements[1], r_7395));; 
 }
 
-static void __lambda_13(void *data, int argc, object self_73134, object thread_91params_7318_7345) {
+static void __lambda_13(void *data, object self_73134, int argc, object *args) /* object self_73134, object thread_91params_7318_7345 */
+ {
+ object thread_91params_7318_7345 = args[0];
   
 closureN_type c_73220;
 object e_73236 [3];
@@ -1012,7 +1054,9 @@ c_73220.elements[2] = thread_91params_7318_7345;
 return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  &c_73220);; 
 }
 
-static void __lambda_14(void *data, int argc, object self_73135, object r_7394) {
+static void __lambda_14(void *data, object self_73135, int argc, object *args) /* object self_73135, object r_7394 */
+ {
+ object r_7394 = args[0];
   
 closureN_type c_73222;
 object e_73231 [2];
@@ -1031,7 +1075,9 @@ object c_73234 = Cyc_vector_set_cps(data,(closure)&c_73222,((closureN)self_73135
 return_closcall1(data,(closure)&c_73222,  c_73234);; 
 }
 
-static void __lambda_15(void *data, int argc, object self_73136, object r_7392) {
+static void __lambda_15(void *data, object self_73136, int argc, object *args) /* object self_73136, object r_7392 */
+ {
+ object r_7392 = args[0];
   
 closureN_type c_73224;
 object e_73230 [2];
@@ -1048,27 +1094,33 @@ c_73224.elements[1] = ((closureN)self_73136)->elements[1];
 return_closcall1(data,  __glo_Cyc_91minor_91gc_srfi_18,  &c_73224);; 
 }
 
-static void __lambda_16(void *data, int argc, object self_73137, object r_7393) {
+static void __lambda_16(void *data, object self_73137, int argc, object *args) /* object self_73137, object r_7393 */
+ {
+ object r_7393 = args[0];
   
 
 return_closcall1(data,  ((closureN)self_73137)->elements[0],  Cyc_spawn_thread(((closureN)self_73137)->elements[1]));; 
 }
 
-static void __lambda_35(void *data, int argc, closure _, object k) { gc_thread_data *td = malloc(sizeof(gc_thread_data));
+static void __lambda_35(void *data, object _, int argc, object *args) {object k = args[0]; gc_thread_data *td = malloc(sizeof(gc_thread_data));
         gc_add_new_unrunning_mutator(td); /* Register this thread */
         make_c_opaque(co, td);
         return_closcall1(data, k, &co);  }
-static void __lambda_34(void *data, int argc, closure _, object k) { gc_thread_data *td = (gc_thread_data *)data;
+static void __lambda_34(void *data, object _, int argc, object *args) {object k = args[0]; gc_thread_data *td = (gc_thread_data *)data;
         make_c_opaque(co, td);
         return_closcall1(data, k, &co);  }
-static void __lambda_33(void *data, int argc, closure _, object k) { gc_thread_data *td = (gc_thread_data *)data;
+static void __lambda_33(void *data, object _, int argc, object *args) {object k = args[0]; gc_thread_data *td = (gc_thread_data *)data;
         return_closcall1(data, k, td->scm_thread_obj);  }
-static void __lambda_9(void *data, int argc, closure _,object k_7384) {
+static void __lambda_9(void *data, object _, int argc, object *args) /* closure _,object k_7384 */
+ {
+object k_7384 = args[0];
   Cyc_st_add(data, "srfi/18.sld:current-thread-data");
 return_closcall1(data,  __glo__75get_91thread_91data_srfi_18,  k_7384);; 
 }
 
-static void __lambda_7(void *data, int argc, closure _,object k_7379) {
+static void __lambda_7(void *data, object _, int argc, object *args) /* closure _,object k_7379 */
+ {
+object k_7379 = args[0];
   Cyc_st_add(data, "srfi/18.sld:current-thread");
 
 closureN_type c_73199;
@@ -1085,7 +1137,9 @@ c_73199.elements[0] = k_7379;
 return_closcall1(data,  __glo__75current_91thread_srfi_18,  &c_73199);; 
 }
 
-static void __lambda_8(void *data, int argc, object self_73129, object t_7311_7342) {
+static void __lambda_8(void *data, object self_73129, int argc, object *args) /* object self_73129, object t_7311_7342 */
+ {
+ object t_7311_7342 = args[0];
     
 if( (boolean_f != Cyc_is_null(t_7311_7342)) ){ 
   return_closcall1(data,  ((closureN)self_73129)->elements[0],  __glo__85primordial_91thread_85_srfi_18);
@@ -1094,7 +1148,9 @@ if( (boolean_f != Cyc_is_null(t_7311_7342)) ){
 ;; 
 }
 
-static void __lambda_6(void *data, int argc, closure _,object k_7376, object t_739_7340, object obj_7310_7341) {
+static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_7376, object t_739_7340, object obj_7310_7341 */
+ {
+object k_7376 = args[0]; object t_739_7340 = args[1]; object obj_7310_7341 = args[2];
   Cyc_st_add(data, "srfi/18.sld:thread-specific-set!");
 
 object c_73196 = Cyc_vector_set_cps(data,  k_7376,t_739_7340, obj_int2obj(4), obj_7310_7341);
@@ -1102,13 +1158,16 @@ return_closcall1(data,  k_7376,  c_73196);;
 }
 
 static object __lambda_32(void *data, object ptr,object t_738_7339) {
+
   Cyc_st_add(data, "srfi/18.sld:thread-specific");
 
 
 return_copy(ptr,  Cyc_vector_ref(data, t_738_7339, obj_int2obj(4)));; 
 }
 
-static void __lambda_5(void *data, int argc, closure _,object k_7373, object t_738_7339) {
+static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_7373, object t_738_7339 */
+ {
+object k_7373 = args[0]; object t_738_7339 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-specific");
 
 
@@ -1116,21 +1175,26 @@ return_closcall1(data,  k_7373,  Cyc_vector_ref(data, t_738_7339, obj_int2obj(4)
 }
 
 static object __lambda_31(void *data, object ptr,object t_737_7338) {
+
   Cyc_st_add(data, "srfi/18.sld:thread-name");
 
 
 return_copy(ptr,  Cyc_vector_ref(data, t_737_7338, obj_int2obj(3)));; 
 }
 
-static void __lambda_4(void *data, int argc, closure _,object k_7370, object t_737_7338) {
+static void __lambda_4(void *data, object _, int argc, object *args) /* closure _,object k_7370, object t_737_7338 */
+ {
+object k_7370 = args[0]; object t_737_7338 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-name");
 
 
 return_closcall1(data,  k_7370,  Cyc_vector_ref(data, t_737_7338, obj_int2obj(3)));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _,object k_7362, object thunk_734_7335, object name_735_7336_raw, ...) {
-load_varargs(name_735_7336, name_735_7336_raw, argc - 2);
+static void __lambda_2(void *data, object _, int argc, object *args) /* closure _,object k_7362, object thunk_734_7335, object name_735_7336_raw, ... */
+ {
+object k_7362 = args[0]; object thunk_734_7335 = args[1];
+load_varargs(name_735_7336, args, 2, argc - 2);
   object name_91str_736_7337;
   Cyc_st_add(data, "srfi/18.sld:make-thread");
   
@@ -1161,11 +1225,15 @@ c_73170.elements[2] = thunk_734_7335;
 return_closcall1(data,  __glo__75alloc_91thread_91data_srfi_18,  &c_73170);; 
 }
 
-static void __lambda_3(void *data, int argc, object self_73128, object r_7365) {
+static void __lambda_3(void *data, object self_73128, int argc, object *args) /* object self_73128, object r_7365 */
+ {
+ object r_7365 = args[0];
   return_closcall8(data,  __glo_vector_scheme_base,  ((closureN)self_73128)->elements[0], quote_cyc_91thread_91obj, ((closureN)self_73128)->elements[2], r_7365, ((closureN)self_73128)->elements[1], boolean_f, boolean_f, boolean_f);; 
 }
 
-static void __lambda_1(void *data, int argc, closure _,object k_7354, object obj_731_7334) {
+static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7354, object obj_731_7334 */
+ {
+object k_7354 = args[0]; object obj_731_7334 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread?");
   
 if( (boolean_f != Cyc_is_vector_not_record_type(obj_731_7334)) ){ 
@@ -1185,14 +1253,15 @@ return_closcall1(data,  k_7354,  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref
 ;; 
 }
 
-void c_srfi18_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
+void c_srfi18_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
 make_pair(pair_73345, find_or_add_symbol("thread-specific"), find_or_add_symbol("thread-specific__inline__"));
 make_pair(pair_73346, find_or_add_symbol("thread-name"), find_or_add_symbol("thread-name__inline__"));
 make_pair(c_73348, &pair_73345, NULL);
 make_pair(c_73347, &pair_73346, &c_73348);
-(((closure)cont)->fn)(data, 1, cont, &c_73347);
+object buf[1]; object cont = args[0];
+buf[0] = &c_73347; (((closure)cont)->fn)(data, cont, 1, buf);
  } 
-void c_srfi18_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi18_entry_pt_first_lambda(void *data, object clo, int argc, object *args){ 
 Cyc_set_globals_changed((gc_thread_data *)data);
   quote__85primordial_91thread_85 = find_or_add_symbol("*primordial-thread*");
   quote_cyc_91thread_91obj = find_or_add_symbol("cyc-thread-obj");
@@ -1231,8 +1300,6 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_thread_91name_srfi_18", (object *) &__glo_thread_91name_srfi_18);
   add_global("__glo_make_91thread_srfi_18", (object *) &__glo_make_91thread_srfi_18);
   add_global("__glo_thread_127_srfi_18", (object *) &__glo_thread_127_srfi_18);
-  add_symbol(quote__85primordial_91thread_85);
-  add_symbol(quote_cyc_91thread_91obj);
   mclosure0(c_73335, (function_type)__lambda_29);c_73335.num_args = 0; 
   __glo_lib_91init_117srfi18_srfi_18 = &c_73335; 
   mclosure0(c_73334, (function_type)__lambda_50);c_73334.num_args = 1; 
@@ -1372,10 +1439,10 @@ make_pair(c_73421, &pair_73414, &c_73422);
 make_pair(c_73420, &pair_73416, &c_73421);
 make_pair(c_73419, &pair_73418, &c_73420);
 Cyc_global_variables = &c_73419;
-cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, 1, cont, cont);
+object buf[1]; buf[0] = ((closure1_type *)clo)->element;
+(((closure)__glo_lib_91init_117srfi18_srfi_18)->fn)(data, buf[0], 1, buf);
 }
-void c_srfi18_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_srfi18_entry_pt(void *data, object cont, int argc, object value){ 
   register_library("srfi_18");
-  c_srfi18_entry_pt_first_lambda(data, argc, cont,value);
+  c_srfi18_entry_pt_first_lambda(data, cont, argc, value);
 }
