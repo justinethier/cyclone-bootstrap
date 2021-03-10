@@ -2120,7 +2120,7 @@ static void __lambda_40(void *data, object self_73696, int argc, object *args) /
   return_closcall3(data,  __glo_fxior_srfi_143,  ((closureN)self_73696)->elements[0], ((closureN)self_73696)->elements[1], r_73584);; 
 }
 
-static void __lambda_134(void* data, int argc, closure _, object k, object index, object i) { Cyc_check_fixnum(data, index);
+static void __lambda_134(void *data, object _, int argc, object *args) {object k = args[0];object index = args[1];object i = args[2]; Cyc_check_fixnum(data, index);
          Cyc_check_fixnum(data, i);
          int result = ((obj_obj2int(i)) & (1 << (obj_obj2int(index))));
          return_closcall1(data, k, result ? boolean_t : boolean_f);  }
@@ -2298,7 +2298,7 @@ static void __lambda_31(void *data, object self_73692, int argc, object *args) /
 ;; 
 }
 
-static void __lambda_133(void* data, int argc, closure _, object k, object i) { Cyc_check_fixnum(data, i);
+static void __lambda_133(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1]; Cyc_check_fixnum(data, i);
          unsigned int count = 0;
          int n = obj_obj2int(i);
          while (n) {
@@ -2356,7 +2356,7 @@ static void __lambda_28(void *data, object self_73687, int argc, object *args) /
   return_closcall3(data,  __glo_fxarithmetic_91shift_91right_srfi_143,  ((closureN)self_73687)->elements[1], ((closureN)self_73687)->elements[0], r_73565_73664);; 
 }
 
-static void __lambda_132(void* data, int argc, closure _, object k, object i) { Cyc_check_fixnum(data, i);
+static void __lambda_132(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1]; Cyc_check_fixnum(data, i);
          object result = obj_int2obj(~(int)(obj_obj2int(i)));
          return_closcall1(data, k, result);  }
 static void __lambda_24(void *data, object _, int argc, object *args) /* closure _,object k_73559, object i_73381_73446 */
@@ -2552,7 +2552,7 @@ static void __lambda_13(void *data, object self_73678, int argc, object *args) /
 ;; 
 }
 
-static void __lambda_131(void* data, int argc, closure _, object k, object i) { Cyc_check_fixnum(data, i);
+static void __lambda_131(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1]; Cyc_check_fixnum(data, i);
         return_closcall1(data, k, obj_obj2int(i) % 2 ? boolean_t : boolean_f);  }
 static void __lambda_11(void *data, object _, int argc, object *args) /* closure _,object k_73532, object i_73369_73434 */
  {
@@ -2568,58 +2568,58 @@ object k_73529 = args[0]; object i_73368_73433 = args[1];
 return_closcall3(data,  __glo_fx_125_127_srfi_143,  k_73529, i_73368_73433, obj_int2obj(0));; 
 }
 
-static void __lambda_130(void* data, int argc, closure _, object k, object i) { Cyc_check_fixnum(data, i);
+static void __lambda_130(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1]; Cyc_check_fixnum(data, i);
         return_closcall1(data, k, obj_obj2int(i) == 0 ? boolean_t : boolean_f);  }
 static void __lambda_129(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; return_closcall1(data, k, 
           obj_is_int(obj) ? boolean_t : boolean_f);  }
-static void __lambda_128(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_128(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);
                       object result = (obj_obj2int(i) >= obj_obj2int(j)) ? boolean_t : boolean_f;
                       return_closcall1(data, k, result);  }
-static void __lambda_127(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_127(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);
                       object result = (obj_obj2int(i) <= obj_obj2int(j)) ? boolean_t : boolean_f;
                       return_closcall1(data, k, result);  }
-static void __lambda_126(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_126(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);
                       object result = (obj_obj2int(i) > obj_obj2int(j)) ? boolean_t : boolean_f;
                       return_closcall1(data, k, result);  }
-static void __lambda_125(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_125(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);
                       object result = (obj_obj2int(i) < obj_obj2int(j)) ? boolean_t : boolean_f;
                       return_closcall1(data, k, result);  }
-static void __lambda_124(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_124(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);
                       object result = (obj_obj2int(i) == obj_obj2int(j)) ? boolean_t : boolean_f;
                       return_closcall1(data, k, result);  }
-static void __lambda_123(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_123(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) >> obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_122(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_122(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) << obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_121(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_121(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) ^ obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_120(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_120(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) | obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_119(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_119(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) & obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_118(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_118(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  if (obj_obj2int(j) == 0) { Cyc_rt_raise_msg(data, "Divide by zero");} object result = obj_int2obj(obj_obj2int(i) % obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_117(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_117(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  if (obj_obj2int(j) == 0) { Cyc_rt_raise_msg(data, "Divide by zero");} object result = obj_int2obj(obj_obj2int(i) / obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_116(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_116(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) * obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_115(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_115(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) - obj_obj2int(j));
                       return_closcall1(data, k, result);  }
-static void __lambda_114(void* data, int argc, closure _, object k, object i, object j) { Cyc_check_fixnum(data, i);
+static void __lambda_114(void *data, object _, int argc, object *args) {object k = args[0];object i = args[1];object j = args[2]; Cyc_check_fixnum(data, i);
                       Cyc_check_fixnum(data, j);  object result = obj_int2obj(obj_obj2int(i) + obj_obj2int(j));
                       return_closcall1(data, k, result);  }
 static void __lambda_8(void *data, object _, int argc, object *args) /* closure _,object k_73518, object expr_7324_73426, object rename_7325_73427, object compare_7326_73428 */

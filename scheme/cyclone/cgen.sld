@@ -2136,8 +2136,8 @@
       (cond
        ((equal? 'precompiled-lambda (caadr l))
         (cond
-         ((equal? (substring (cadadr l) 0 42)
-                  "(void *data, int argc, closure _, object k")
+         ((equal? (substring (string-replace-all (cadadr l) " " "") 0 35)
+                  (string-replace-all "(void *data, int argc, closure _, object k" " " ""))
            ;; Backwards compatibility for define-c expressions using
            ;; the old style of all C parameters contained directly
            ;; in the function definition. The above code finds them
@@ -2413,7 +2413,7 @@
   (list->string
     (filter
       (lambda (c)
-        (not (member c '(#\( #\)))))
+        (not (member c '(#\newline #\( #\)))))
       (string->list str))))
 
 ;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;;

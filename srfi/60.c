@@ -2556,7 +2556,7 @@ static void __lambda_65(void *data, object self_73538, int argc, object *args) /
   return_closcall3(data,  __glo_logior_srfi_60,  ((closureN)self_73538)->elements[0], ((closureN)self_73538)->elements[1], r_73383);; 
 }
 
-static void __lambda_143(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
+static void __lambda_143(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];object y = args[2];Cyc_check_int(data, x);
     Cyc_check_fixnum(data,y);
     int shift, i;
     //int result;
@@ -2885,7 +2885,7 @@ complex_num_type local_73827;
 return_closcall1(data,  ((closureN)self_73505)->elements[0],  Cyc_fast_sub(data,&local_73827, r_73340, obj_int2obj(1)));; 
 }
 
-static void __lambda_142(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
+static void __lambda_142(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];Cyc_check_int(data, x);
    if (Cyc_is_bignum(x) == boolean_t) {
      int res;
      BIGNUM_CALL(mp_radix_size(&bignum_value(x), 2, &res));
@@ -3366,7 +3366,7 @@ static void __lambda_12(void *data, object self_73488, int argc, object *args) /
   return_closcall3(data,  __glo_logior_srfi_60,  ((closureN)self_73488)->elements[0], ((closureN)self_73488)->elements[1], r_73309);; 
 }
 
-static void __lambda_141(void* data, int argc, closure _, object k, object x) {Cyc_check_int(data, x);
+static void __lambda_141(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];Cyc_check_int(data, x);
    alloc_bignum(data, bn);
    if (Cyc_is_bignum(x) == boolean_t) {
      BIGNUM_CALL(mp_copy(&bignum_value(x), &bignum_value(bn)));
@@ -3496,7 +3496,7 @@ object c_73645 = apply_va(data,  ((closureN)self_73483)->elements[0],3,__glo_log
 return_closcall1(data,  ((closureN)self_73483)->elements[0],  c_73645);; 
 }
 
-static void __lambda_140(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
+static void __lambda_140(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];object y = args[2];Cyc_check_int(data, x);
    Cyc_check_int(data, y);
 
    if (obj_is_int(x) && obj_is_int(y)) { int result = ((int)unbox_number(x)) ^ ((int)unbox_number(y));
@@ -3531,7 +3531,7 @@ static void __lambda_140(void* data, int argc, closure _, object k, object x, ob
      return_closcall1(data, k, Cyc_bignum_normalize(data, bn));
    }
    }
-static void __lambda_139(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
+static void __lambda_139(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];object y = args[2];Cyc_check_int(data, x);
    Cyc_check_int(data, y);
 
    if (obj_is_int(x) && obj_is_int(y)) { int result = ((int)unbox_number(x)) | ((int)unbox_number(y));
@@ -3566,7 +3566,7 @@ static void __lambda_139(void* data, int argc, closure _, object k, object x, ob
      return_closcall1(data, k, Cyc_bignum_normalize(data, bn));
    }
    }
-static void __lambda_138(void* data, int argc, closure _, object k, object x, object y) {Cyc_check_int(data, x);
+static void __lambda_138(void *data, object _, int argc, object *args) {object k = args[0];object x = args[1];object y = args[2];Cyc_check_int(data, x);
    Cyc_check_int(data, y);
 
    if (obj_is_int(x) && obj_is_int(y)) { int result = ((int)unbox_number(x)) & ((int)unbox_number(y));

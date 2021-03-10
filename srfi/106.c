@@ -2687,7 +2687,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73876)->elemen
 ;; 
 }
 
-static void __lambda_113(void *data, object _, int argc, object *args) {object k = args[0];object object = args[1];object family = args[2];object socktype = args[3];object proto = args[4];
+static void __lambda_113(void *data, object _, int argc, object *args) {object k = args[0];object aservice = args[1];object family = args[2];object socktype = args[3];object proto = args[4];
         int sockfd = 0;
         struct addrinfo hints, *servinfo, *p;
         int rv;
@@ -2972,7 +2972,7 @@ return_closcall1(data,  ((closureN)self_73872)->elements[0],  Cyc_set_cell(data,
 ;; 
 }
 
-static void __lambda_112(void *data, object _, int argc, object *args) {object k = args[0];object object = args[1];object aservice = args[2];object object = args[3];object socktype = args[4];object object = args[5];object protocol = args[6]; int sockfd = 0;
+static void __lambda_112(void *data, object _, int argc, object *args) {object k = args[0];object anode = args[1];object aservice = args[2];object family = args[3];object socktype = args[4];object aflags = args[5];object protocol = args[6]; int sockfd = 0;
         //struct sockaddr_in addr;
         struct addrinfo hints, *servinfo, *p;
         const char *node = string_str(anode),
