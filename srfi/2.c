@@ -561,7 +561,7 @@ return_closcall1(data,  k_73635,  obj_int2obj(0));;
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73343, object expr_735_7361_73193_73267, object rename_736_7362_73194_73268, object compare_737_7363_73195_73269 */
  {
-object k_73343 = args[0]; object expr_735_7361_73193_73267 = args[1]; object rename_736_7362_73194_73268 = args[2]; object compare_737_7363_73195_73269 = args[3];
+object k_73343 = args[0]; object expr_735_7361_73193_73267 = args[1]; object rename_736_7362_73194_73268 = args[2];
   Cyc_st_add(data, "srfi/2.sld:and-let*");
 
 closureN_type c_73745;

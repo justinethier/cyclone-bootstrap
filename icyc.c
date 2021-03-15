@@ -861,7 +861,7 @@ return_direct_with_clo1(data,(closure)&c_73248,__lambda_11,  &c_73264);;
 
 static void __lambda_13(void *data, object self_73158, int argc, object *args) /* object self_73158, object r_73108 */
  {
- object r_73108 = args[0];
+
   
 closureN_type c_73266;
 object e_73292 [2];
@@ -893,7 +893,7 @@ return_direct_with_clo1(data,(closure)&c_73266,__lambda_14,  &c_73293);;
 
 static void __lambda_15(void *data, object self_73159, int argc, object *args) /* object self_73159, object r_73109 */
  {
- object r_73109 = args[0];
+
   
 closureN_type c_73295;
 object e_73439 [2];
@@ -914,7 +914,7 @@ return_direct_with_clo1(data,(closure)&c_73295,__lambda_16,  &c_73440);;
 
 static void __lambda_39(void *data, object self_73160, int argc, object *args) /* object self_73160, object r_73104 */
  {
- object r_73104 = args[0];
+
   
   
   __halt(__halt(obj_int2obj(0)));; 
@@ -1102,7 +1102,7 @@ return_direct_with_clo1(data,(closure)&c_73360,__lambda_29,  &c_73367);}
 
 static void __lambda_30(void *data, object self_73174, int argc, object *args) /* object self_73174, object r_73126 */
  {
- object r_73126 = args[0];
+
   
 closureN_type c_73369;
 object e_73413 [1];
@@ -1132,7 +1132,7 @@ return_direct_with_clo1(data,(closure)&c_73369,__lambda_31,  &c_73414);;
 
 static void __lambda_38(void *data, object self_73175, int argc, object *args) /* object self_73175, object r_73127 */
  {
- object r_73127 = args[0];
+
   return_closcall1(data,  __glo_repl_scheme_repl,  ((closureN)self_73175)->elements[0]);; 
 }
 
@@ -1397,7 +1397,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73313, r_73119);;
 
 static void __lambda_23(void *data, object self_73168, int argc, object *args) /* object self_73168, object r_73117 */
  {
- object r_73117 = args[0];
+
   
 closureN_type c_73315;
 object e_73321 [2];
@@ -1416,7 +1416,7 @@ return_closcall1(data,  __glo_newline_scheme_base,  &c_73315);;
 
 static void __lambda_24(void *data, object self_73169, int argc, object *args) /* object self_73169, object r_73118 */
  {
- object r_73118 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_73169)->elements[1],  Cyc_io_close_port(data, ((closureN)self_73169)->elements[0]));; 
@@ -1504,7 +1504,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73233, &c_73237);;
 
 static void __lambda_6(void *data, object self_73153, int argc, object *args) /* object self_73153, object r_73102 */
  {
- object r_73102 = args[0];
+
   return_closcall1(data,  __glo_newline_scheme_base,  ((closureN)self_73153)->elements[0]);; 
 }
 

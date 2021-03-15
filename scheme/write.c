@@ -365,7 +365,7 @@ return_closcall1(data,(closure)&c_7367,  c_7376);;
 
 static void __lambda_6(void *data, object self_7332, int argc, object *args) /* object self_7332, object r_7329 */
  {
- object r_7329 = args[0];
+
   
 object c_7372 = global_set_cps_id(data,  ((closureN)self_7332)->elements[0],"__glo_write_91simple_scheme_write", __glo_write_91simple_scheme_write, __glo_write_scheme_write);
 return_closcall1(data,  ((closureN)self_7332)->elements[0],  c_7372);; 

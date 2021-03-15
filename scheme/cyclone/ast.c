@@ -730,7 +730,7 @@ return_closcall1(data,(closure)&c_731016,  c_731138);;
 
 static void __lambda_70(void *data, object self_73436, int argc, object *args) /* object self_73436, object r_73331 */
  {
- object r_73331 = args[0];
+
   
 closureN_type c_731018;
 object e_731131 [1];
@@ -750,7 +750,7 @@ return_closcall1(data,(closure)&c_731018,  c_731134);;
 
 static void __lambda_71(void *data, object self_73437, int argc, object *args) /* object self_73437, object r_73332 */
  {
- object r_73332 = args[0];
+
   
 closureN_type c_731020;
 object e_731126 [1];
@@ -796,7 +796,7 @@ return_closcall1(data,(closure)&c_731022,  c_731125);;
 
 static void __lambda_73(void *data, object self_73439, int argc, object *args) /* object self_73439, object r_73333 */
  {
- object r_73333 = args[0];
+
   
 closureN_type c_731024;
 object e_731121 [1];
@@ -834,7 +834,7 @@ return_closcall1(data,(closure)&c_731026,  c_731120);;
 
 static void __lambda_75(void *data, object self_73441, int argc, object *args) /* object self_73441, object r_73334 */
  {
- object r_73334 = args[0];
+
   
 closureN_type c_731028;
 object e_731116 [1];
@@ -892,7 +892,7 @@ return_closcall1(data,(closure)&c_731032,  c_731113);;
 
 static void __lambda_78(void *data, object self_73444, int argc, object *args) /* object self_73444, object r_73335 */
  {
- object r_73335 = args[0];
+
   
 closureN_type c_731034;
 object e_731109 [1];
@@ -950,7 +950,7 @@ return_closcall1(data,(closure)&c_731038,  c_731106);;
 
 static void __lambda_81(void *data, object self_73447, int argc, object *args) /* object self_73447, object r_73336 */
  {
- object r_73336 = args[0];
+
   
 closureN_type c_731040;
 object e_731102 [1];
@@ -1008,7 +1008,7 @@ return_closcall1(data,(closure)&c_731044,  c_731099);;
 
 static void __lambda_84(void *data, object self_73450, int argc, object *args) /* object self_73450, object r_73337 */
  {
- object r_73337 = args[0];
+
   
 closureN_type c_731046;
 object e_731095 [1];
@@ -1066,7 +1066,7 @@ return_closcall1(data,(closure)&c_731050,  c_731092);;
 
 static void __lambda_87(void *data, object self_73453, int argc, object *args) /* object self_73453, object r_73338 */
  {
- object r_73338 = args[0];
+
   
 closureN_type c_731052;
 object e_731088 [1];
@@ -1124,7 +1124,7 @@ return_closcall1(data,(closure)&c_731056,  c_731085);;
 
 static void __lambda_90(void *data, object self_73456, int argc, object *args) /* object self_73456, object r_73340 */
  {
- object r_73340 = args[0];
+
   
 closureN_type c_731058;
 object e_731081 [1];
@@ -1182,7 +1182,7 @@ return_closcall1(data,(closure)&c_731062,  c_731078);;
 
 static void __lambda_93(void *data, object self_73459, int argc, object *args) /* object self_73459, object r_73341 */
  {
- object r_73341 = args[0];
+
   
 closureN_type c_731064;
 object e_731074 [1];
@@ -1964,7 +1964,7 @@ return_closcall1(data,  ((closureN)self_73413)->elements[0],  set_pair_as_expr(&
 
 static void __lambda_34(void *data, object self_73402, int argc, object *args) /* object self_73402, object id_7364_73154 */
  {
- object id_7364_73154 = args[0];
+
   
 closureN_type c_73712;
 object e_73736 [2];
@@ -1983,7 +1983,7 @@ return_closcall2(data,  __glo_ast_117lambda_91has_91cont_scheme_cyclone_ast,  &c
 
 static void __lambda_35(void *data, object self_73403, int argc, object *args) /* object self_73403, object has_91cont_7367_73155 */
  {
- object has_91cont_7367_73155 = args[0];
+
   
 closureN_type c_73714;
 object e_73734 [2];
@@ -2656,7 +2656,7 @@ return_closcall1(data,(closure)&c_73504,  c_73513);;
 
 static void __lambda_8(void *data, object self_73378, int argc, object *args) /* object self_73378, object r_73200 */
  {
- object r_73200 = args[0];
+
   return_closcall5(data,  __glo_ast_117_75make_91lambda_scheme_cyclone_ast,  ((closureN)self_73378)->elements[3], __glo__85lambda_91id_85_scheme_cyclone_ast, ((closureN)self_73378)->elements[0], ((closureN)self_73378)->elements[1], ((closureN)self_73378)->elements[2]);; 
 }
 
@@ -2726,7 +2726,7 @@ return_closcall1(data,(closure)&c_73466,  c_73472);;
 
 static void __lambda_3(void *data, object self_73376, int argc, object *args) /* object self_73376, object r_73167 */
  {
- object r_73167 = args[0];
+
   return_closcall1(data,  ((closureN)self_73376)->elements[0],  __glo__85lambda_91id_85_scheme_cyclone_ast);; 
 }
 

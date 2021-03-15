@@ -596,7 +596,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73164, &c_73316);;
 
 static void __lambda_15(void *data, object self_7380, int argc, object *args) /* object self_7380, object r_7343 */
  {
- object r_7343 = args[0];
+
   
 closureN_type c_73166;
 object e_73303 [1];
@@ -627,7 +627,7 @@ return_direct_with_clo1(data,(closure)&c_73166,__lambda_16,  &c_73304);;
 
 static void __lambda_39(void *data, object self_7381, int argc, object *args) /* object self_7381, object r_7344 */
  {
- object r_7344 = args[0];
+
   
 closureN_type c_73306;
 object e_73313 [2];
@@ -646,7 +646,7 @@ return_closcall1(data,  __glo_newline_scheme_base,  &c_73306);;
 
 static void __lambda_40(void *data, object self_7382, int argc, object *args) /* object self_7382, object r_7345 */
  {
- object r_7345 = args[0];
+
   
 closureN_type c_73308;
 object e_73312 [2];
@@ -771,7 +771,7 @@ return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_7395)->elem
 
 static void __lambda_35(void *data, object self_7396, int argc, object *args) /* object self_7396, object r_7359 */
  {
- object r_7359 = args[0];
+
   
 closureN_type c_73273;
 object e_73279 [2];
@@ -810,7 +810,7 @@ return_closcall2(data,  __glo_write_scheme_write,  &c_73282, o_7311_7322);;
 
 static void __lambda_38(void *data, object self_7398, int argc, object *args) /* object self_7398, object r_7362 */
  {
- object r_7362 = args[0];
+
   
 make_utf8_string_with_len(c_73285, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_7398)->elements[0], &c_73285);; 
@@ -896,7 +896,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73226, r_7371);;
 
 static void __lambda_31(void *data, object self_73103, int argc, object *args) /* object self_73103, object r_7365 */
  {
- object r_7365 = args[0];
+
   
 closureN_type c_73228;
 object e_73239 [1];
@@ -927,7 +927,7 @@ return_direct_with_clo1(data,(closure)&c_73228,__lambda_32,  &c_73240);;
 
 static void __lambda_33(void *data, object self_73104, int argc, object *args) /* object self_73104, object r_7366 */
  {
- object r_7366 = args[0];
+
   
 closureN_type c_73242;
 object e_73248 [2];
@@ -992,7 +992,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73172, r_7357);;
 
 static void __lambda_19(void *data, object self_7387, int argc, object *args) /* object self_7387, object r_7348 */
  {
- object r_7348 = args[0];
+
   
 closureN_type c_73174;
 object e_73188 [1];
@@ -1023,7 +1023,7 @@ return_direct_with_clo1(data,(closure)&c_73174,__lambda_20,  &c_73189);;
 
 static void __lambda_22(void *data, object self_7388, int argc, object *args) /* object self_7388, object r_7349 */
  {
- object r_7349 = args[0];
+
   
 closureN_type c_73191;
 object e_73201 [2];
@@ -1062,7 +1062,7 @@ return_closcall2(data,  __glo_write_scheme_write,  &c_73204, o_737_7321);;
 
 static void __lambda_26(void *data, object self_7390, int argc, object *args) /* object self_7390, object r_7353 */
  {
- object r_7353 = args[0];
+
   
 make_utf8_string_with_len(c_73207, " ", 1, 1);
 return_closcall2(data,  __glo_display_scheme_write,  ((closureN)self_7390)->elements[0], &c_73207);; 
@@ -1171,7 +1171,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73135, &c_73156);;
 
 static void __lambda_8(void *data, object self_73109, int argc, object *args) /* object self_73109, object r_7335 */
  {
- object r_7335 = args[0];
+
   
 closureN_type c_73137;
 object e_73154 [1];
@@ -1232,7 +1232,7 @@ return_closcall2(data,  __glo_write_scheme_write,  &c_73146, c_7313_7323);}
 
 static void __lambda_11(void *data, object self_73112, int argc, object *args) /* object self_73112, object r_7338 */
  {
- object r_7338 = args[0];
+
   
 closureN_type c_73148;
 object e_73151 [1];
@@ -1250,7 +1250,7 @@ return_closcall1(data,  __glo_newline_scheme_base,  &c_73148);;
 
 static void __lambda_12(void *data, object self_73113, int argc, object *args) /* object self_73113, object r_7339 */
  {
- object r_7339 = args[0];
+
   return_closcall1(data,  __glo_repl_scheme_repl,  ((closureN)self_73113)->elements[0]);; 
 }
 

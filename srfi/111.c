@@ -498,7 +498,7 @@ return_closcall1(data,(closure)&c_7370,  c_73108);;
 
 static void __lambda_6(void *data, object self_7341, int argc, object *args) /* object self_7341, object r_7322 */
  {
- object r_7322 = args[0];
+
   
 closureN_type c_7372;
 object e_73104 [1];
@@ -536,7 +536,7 @@ return_closcall1(data,(closure)&c_7374,  c_73103);;
 
 static void __lambda_8(void *data, object self_7343, int argc, object *args) /* object self_7343, object r_7323 */
  {
- object r_7323 = args[0];
+
   
 closureN_type c_7376;
 object e_7399 [1];
@@ -594,7 +594,7 @@ return_closcall1(data,(closure)&c_7380,  c_7396);;
 
 static void __lambda_11(void *data, object self_7346, int argc, object *args) /* object self_7346, object r_7324 */
  {
- object r_7324 = args[0];
+
   
 closureN_type c_7382;
 object e_7392 [1];

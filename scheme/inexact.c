@@ -511,7 +511,7 @@ return_direct_with_clo1(data,(closure)&c_73244,__lambda_10,  Cyc_set_cell(data, 
 
 static void __lambda_10(void *data, object self_73124, int argc, object *args) /* object self_73124, object r_7378 */
  {
- object r_7378 = args[0];
+
     
 if( (boolean_f != Cyc_is_null(((closureN)self_73124)->elements[2])) ){ 
   
@@ -929,7 +929,7 @@ static void __lambda_23(void *data, object _, int argc, object *args) {object k 
         return_closcall1(data, k, boolean_t); }
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7351, object expr_731_7331, object rename_732_7332, object compare_733_7333 */
  {
-object k_7351 = args[0]; object expr_731_7331 = args[1]; object rename_732_7332 = args[2]; object compare_733_7333 = args[3];
+object k_7351 = args[0]; object expr_731_7331 = args[1];
   Cyc_st_add(data, "scheme/inexact.sld:define-inexact-op");
 
 closureN_type c_73136;

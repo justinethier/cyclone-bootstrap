@@ -586,7 +586,7 @@ return_closcall1(data,  k_73701,  obj_int2obj(0));;
 
 static void __lambda_91(void *data, object _, int argc, object *args) /* closure _,object k_73637, object expr_73276_73285_73294_73385, object rename_73277_73286_73295_73386, object compare_73278_73287_73296_73387 */
  {
-object k_73637 = args[0]; object expr_73276_73285_73294_73385 = args[1]; object rename_73277_73286_73295_73386 = args[2]; object compare_73278_73287_73296_73387 = args[3];
+object k_73637 = args[0]; object expr_73276_73285_73294_73385 = args[1]; object rename_73277_73286_73295_73386 = args[2];
   Cyc_st_add(data, "scheme/case-lambda.sld:case-lambda");
 
 closureN_type c_732007;
@@ -1487,7 +1487,7 @@ return_closcall1(data,  ((closureN)self_73819)->elements[0],  set_pair_as_expr(&
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73393, object expr_735_7363_73187_73300, object rename_736_7364_73188_73301, object compare_737_7365_73189_73302 */
  {
-object k_73393 = args[0]; object expr_735_7363_73187_73300 = args[1]; object rename_736_7364_73188_73301 = args[2]; object compare_737_7365_73189_73302 = args[3];
+object k_73393 = args[0]; object expr_735_7363_73187_73300 = args[1]; object rename_736_7364_73188_73301 = args[2];
   Cyc_st_add(data, "scheme/case-lambda.sld:%case");
 
 closureN_type c_73822;

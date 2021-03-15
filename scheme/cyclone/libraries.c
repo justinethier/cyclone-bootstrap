@@ -1334,7 +1334,7 @@ return_direct_with_clo1(data,(closure)&c_733347,__lambda_279,  Cyc_set_cell(data
 
 static void __lambda_279(void *data, object self_731506, int argc, object *args) /* object self_731506, object r_731207 */
  {
- object r_731207 = args[0];
+
   
 closureN_type c_733349;
 object e_733568 [8];
@@ -1396,7 +1396,7 @@ return_direct_with_clo1(data,(closure)&c_733351,__lambda_281,  Cyc_set_cell(data
 
 static void __lambda_281(void *data, object self_731509, int argc, object *args) /* object self_731509, object r_731208 */
  {
- object r_731208 = args[0];
+
   
 closureN_type c_733353;
 object e_733560 [8];
@@ -1423,7 +1423,7 @@ return_direct_with_clo1(data,(closure)&c_733353,__lambda_282,  Cyc_set_cell(data
 
 static void __lambda_282(void *data, object self_731510, int argc, object *args) /* object self_731510, object r_731209 */
  {
- object r_731209 = args[0];
+
   
 closureN_type c_733355;
 object e_733551 [8];
@@ -1497,7 +1497,7 @@ return_direct_with_clo1(data,(closure)&c_733357,__lambda_284,  Cyc_set_cell(data
 
 static void __lambda_284(void *data, object self_731513, int argc, object *args) /* object self_731513, object r_731210 */
  {
- object r_731210 = args[0];
+
   
 closureN_type c_733359;
 object e_733532 [8];
@@ -1591,7 +1591,7 @@ return_direct_with_clo1(data,(closure)&c_733361,__lambda_286,  Cyc_set_cell(data
 
 static void __lambda_286(void *data, object self_731517, int argc, object *args) /* object self_731517, object r_731211 */
  {
- object r_731211 = args[0];
+
   
 closureN_type c_733363;
 object e_733431 [7];
@@ -1657,7 +1657,7 @@ return_closcall3(data,  car(((closureN)self_731518)->elements[0]),  &c_733437, s
 
 static void __lambda_299(void *data, object self_731519, int argc, object *args) /* object self_731519, object r_731226 */
  {
- object r_731226 = args[0];
+
   
 closureN_type c_733439;
 object e_733469 [5];
@@ -1792,7 +1792,7 @@ return_direct_with_clo1(data,(closure)&c_733481,__lambda_308,  &c_733503);}
 
 static void __lambda_311(void *data, object self_731523, int argc, object *args) /* object self_731523, object r_731235 */
  {
- object r_731235 = args[0];
+
   
 
 
@@ -1951,7 +1951,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73344
 
 static void __lambda_303(void *data, object self_731531, int argc, object *args) /* object self_731531, object r_731227 */
  {
- object r_731227 = args[0];
+
   
 
 
@@ -1972,7 +1972,7 @@ return_closcall3(data,  car(((closureN)self_731531)->elements[0]),  &c_733453, (
 
 static void __lambda_304(void *data, object self_731532, int argc, object *args) /* object self_731532, object r_731228 */
  {
- object r_731228 = args[0];
+
   return_closcall1(data,  ((closureN)self_731532)->elements[0],  ((closureN)self_731532)->elements[1]);; 
 }
 
@@ -2004,7 +2004,7 @@ return_direct_with_clo1(data,(closure)&c_733365,__lambda_288,  Cyc_set_cell(data
 
 static void __lambda_288(void *data, object self_731534, int argc, object *args) /* object self_731534, object r_731212 */
  {
- object r_731212 = args[0];
+
   
 
 
@@ -2080,7 +2080,7 @@ return_direct_with_clo1(data,(closure)&c_733374,__lambda_291,  Cyc_set_cell(data
 
 static void __lambda_291(void *data, object self_731537, int argc, object *args) /* object self_731537, object r_731213 */
  {
- object r_731213 = args[0];
+
   
 
 
@@ -2319,7 +2319,7 @@ return_direct_with_clo1(data,(closure)&c_733227,__lambda_261,  Cyc_set_cell(data
 
 static void __lambda_261(void *data, object self_731480, int argc, object *args) /* object self_731480, object r_731186 */
  {
- object r_731186 = args[0];
+
   
 closureN_type c_733229;
 object e_733248 [4];
@@ -2583,7 +2583,7 @@ return_direct_with_clo1(data,(closure)&c_733274,__lambda_275,  Cyc_set_cell(data
 
 static void __lambda_275(void *data, object self_731490, int argc, object *args) /* object self_731490, object r_731198 */
  {
- object r_731198 = args[0];
+
   
 
 return_closcall2(data,  car(((closureN)self_731490)->elements[1]),  ((closureN)self_731490)->elements[2], ((closureN)self_731490)->elements[0]);; 
@@ -2620,7 +2620,7 @@ return_direct_with_clo1(data,(closure)&c_733231,__lambda_263,  Cyc_set_cell(data
 
 static void __lambda_263(void *data, object self_731493, int argc, object *args) /* object self_731493, object r_731187 */
  {
- object r_731187 = args[0];
+
   
 
 
@@ -2641,7 +2641,7 @@ return_closcall2(data,  car(((closureN)self_731493)->elements[0]),  &c_733236, (
 
 static void __lambda_264(void *data, object self_731494, int argc, object *args) /* object self_731494, object r_731188 */
  {
- object r_731188 = args[0];
+
   
 
 return_closcall2(data,  __glo_lib_117get_91dep_91list_scheme_cyclone_libraries,  ((closureN)self_731494)->elements[0], car(((closureN)self_731494)->elements[1]));; 
@@ -2870,7 +2870,7 @@ return_direct_with_clo1(data,(closure)&c_733142,__lambda_250,  &c_733179);;
 
 static void __lambda_254(void *data, object self_731469, int argc, object *args) /* object self_731469, object r_731169 */
  {
- object r_731169 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_731469)->elements[0],  car(((closureN)self_731469)->elements[1]));; 
@@ -2907,7 +2907,7 @@ return_direct_with_clo1(data,(closure)&c_733147,__lambda_251,  Cyc_set_cell(data
 
 static void __lambda_251(void *data, object self_731471, int argc, object *args) /* object self_731471, object r_731172 */
  {
- object r_731172 = args[0];
+
   
 closureN_type c_733149;
 object e_733165 [3];
@@ -2952,7 +2952,7 @@ return_direct_with_clo1(data,(closure)&c_733151,__lambda_253,  Cyc_set_cell(data
 
 static void __lambda_253(void *data, object self_731473, int argc, object *args) /* object self_731473, object r_731173 */
  {
- object r_731173 = args[0];
+
   
 
 
@@ -3140,7 +3140,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73306
 
 static void __lambda_240(void *data, object self_731461, int argc, object *args) /* object self_731461, object r_731144 */
  {
- object r_731144 = args[0];
+
   return_closcall2(data,  ((closureN)self_731461)->elements[1],  ((closureN)self_731461)->elements[0], boolean_f);; 
 }
 
@@ -3422,7 +3422,7 @@ return_direct_with_clo1(data,(closure)&c_732771,__lambda_203,  &c_732793);;
 
 static void __lambda_206(void *data, object self_731426, int argc, object *args) /* object self_731426, object r_731066 */
  {
- object r_731066 = args[0];
+
     complex_num_type local_732796; 
 if( (boolean_f != ((inline_function_type)
                    ((closure)__glo_tagged_91list_127_191_191inline_191_191_scheme_cyclone_util)->fn)(data,&local_732796, quote_only, ((closureN)self_731426)->elements[1])) ){ 
@@ -5354,7 +5354,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73237
 
 static void __lambda_138(void *data, object self_731371, int argc, object *args) /* object self_731371, object r_73949 */
  {
- object r_73949 = args[0];
+
   
 closureN_type c_732376;
 object e_732400 [2];
@@ -5893,7 +5893,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73223
 
 static void __lambda_116(void *data, object self_731342, int argc, object *args) /* object self_731342, object r_73899 */
  {
- object r_73899 = args[0];
+
   
 closureN_type c_732232;
 object e_732249 [2];

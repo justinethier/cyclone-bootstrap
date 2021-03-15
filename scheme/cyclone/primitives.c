@@ -927,7 +927,7 @@ return_closcall1(data,(closure)&c_734438,  c_735278);;
 
 static void __lambda_231(void *data, object self_731764, int argc, object *args) /* object self_731764, object r_731545 */
  {
- object r_731545 = args[0];
+
   
 closureN_type c_734440;
 object e_735271 [1];
@@ -947,7 +947,7 @@ return_closcall1(data,(closure)&c_734440,  c_735274);;
 
 static void __lambda_232(void *data, object self_731765, int argc, object *args) /* object self_731765, object r_731546 */
  {
- object r_731546 = args[0];
+
   
 closureN_type c_734442;
 object e_735270 [1];
@@ -985,7 +985,7 @@ return_closcall1(data,(closure)&c_734444,  c_735269);;
 
 static void __lambda_234(void *data, object self_731767, int argc, object *args) /* object self_731767, object r_731547 */
  {
- object r_731547 = args[0];
+
   
 closureN_type c_734446;
 object e_735099 [1];
@@ -1331,7 +1331,7 @@ return_closcall1(data,(closure)&c_734446,  c_735102);;
 
 static void __lambda_235(void *data, object self_731768, int argc, object *args) /* object self_731768, object r_731548 */
  {
- object r_731548 = args[0];
+
   
 closureN_type c_734448;
 object e_734451 [1];
@@ -2639,7 +2639,7 @@ return_closcall1(data,(closure)&c_734448,  c_734454);;
 
 static void __lambda_236(void *data, object self_731769, int argc, object *args) /* object self_731769, object r_731549 */
  {
- object r_731549 = args[0];
+
   return_closcall3(data,  __glo_hs_91add_91all_67_scheme_cyclone_hashset,  ((closureN)self_731769)->elements[0], __glo__85hs_91prims_85_scheme_cyclone_primitives, __glo__85primitives_85_scheme_cyclone_primitives);; 
 }
 
@@ -2767,7 +2767,7 @@ return_direct_with_clo1(data,(closure)&c_734361,__lambda_226,  Cyc_set_cell(data
 
 static void __lambda_226(void *data, object self_731760, int argc, object *args) /* object self_731760, object r_731534 */
  {
- object r_731534 = args[0];
+
   
 closureN_type c_734363;
 object e_734393 [3];
@@ -9614,7 +9614,7 @@ return_closcall1(data,(closure)&c_731774,  c_731790);;
 
 static void __lambda_3(void *data, object self_731556, int argc, object *args) /* object self_731556, object r_73868 */
  {
- object r_73868 = args[0];
+
   
 closureN_type c_731776;
 object e_731782 [1];

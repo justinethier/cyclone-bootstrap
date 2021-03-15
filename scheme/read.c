@@ -673,7 +673,7 @@ return_closcall1(data,(closure)&c_731285,  c_731306);;
 
 static void __lambda_83(void *data, object self_73495, int argc, object *args) /* object self_73495, object r_73413 */
  {
- object r_73413 = args[0];
+
   
 closureN_type c_731287;
 object e_731296 [1];
@@ -697,7 +697,7 @@ return_closcall1(data,(closure)&c_731287,  c_731299);;
 
 static void __lambda_84(void *data, object self_73496, int argc, object *args) /* object self_73496, object r_73414 */
  {
- object r_73414 = args[0];
+
   
 
 
@@ -1190,7 +1190,7 @@ return_direct_with_clo1(data,(closure)&c_731222,__lambda_78,  Cyc_set_cell(data,
 
 static void __lambda_78(void *data, object self_73494, int argc, object *args) /* object self_73494, object r_73401 */
  {
- object r_73401 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73494)->elements[2]),  ((closureN)self_73494)->elements[0], ((closureN)self_73494)->elements[1], ((closureN)self_73494)->elements[3]);; 
@@ -1390,7 +1390,7 @@ return_direct_with_clo1(data,(closure)&c_731151,__lambda_70,  Cyc_set_cell(data,
 
 static void __lambda_70(void *data, object self_73485, int argc, object *args) /* object self_73485, object r_73387 */
  {
- object r_73387 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73485)->elements[2]),  ((closureN)self_73485)->elements[0], ((closureN)self_73485)->elements[1], ((closureN)self_73485)->elements[3]);; 
@@ -1533,7 +1533,7 @@ return_closcall1(data,  k_73381,  c_731054);}
 
 static void __lambda_59(void *data, object self_73470, int argc, object *args) /* object self_73470, object r_73370 */
  {
- object r_73370 = args[0];
+
   return_closcall4(data,  __glo_parse_scheme_read,  ((closureN)self_73470)->elements[2], ((closureN)self_73470)->elements[1], ((closureN)self_73470)->elements[3], ((closureN)self_73470)->elements[0]);; 
 }
 
@@ -1885,7 +1885,7 @@ return_direct_with_clo1(data,(closure)&c_73847,__lambda_48,  &c_73878);;
 
 static void __lambda_51(void *data, object self_73457, int argc, object *args) /* object self_73457, object r_73333 */
  {
- object r_73333 = args[0];
+
   return_closcall1(data,  ((closureN)self_73457)->elements[0],  ((closureN)self_73457)->elements[1]);; 
 }
 
@@ -1987,7 +1987,7 @@ return_direct_with_clo1(data,(closure)&c_73805,__lambda_44,  Cyc_set_cell(data, 
 
 static void __lambda_44(void *data, object self_73463, int argc, object *args) /* object self_73463, object r_73325 */
  {
- object r_73325 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73463)->elements[2]),  ((closureN)self_73463)->elements[0], ((closureN)self_73463)->elements[1], ((closureN)self_73463)->elements[3]);; 
@@ -2294,7 +2294,7 @@ return_direct_with_clo1(data,(closure)&c_73703,__lambda_30,  Cyc_set_cell(data, 
 
 static void __lambda_30(void *data, object self_73441, int argc, object *args) /* object self_73441, object r_73290 */
  {
- object r_73290 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73441)->elements[2]),  ((closureN)self_73441)->elements[1], ((closureN)self_73441)->elements[0], NULL);; 
@@ -2613,7 +2613,7 @@ return_closcall1(data,  ((closureN)self_73424)->elements[0],  set_pair_as_expr(&
 
 static void __lambda_8(void *data, object _, int argc, object *args) /* closure _,object k_73247, object expr_736_73173, object rename_737_73174, object compare_738_73175 */
  {
-object k_73247 = args[0]; object expr_736_73173 = args[1]; object rename_737_73174 = args[2]; object compare_738_73175 = args[3];
+object k_73247 = args[0]; object expr_736_73173 = args[1];
   Cyc_st_add(data, "scheme/read.sld:include-ci");
 
 pair_type local_73537; 
@@ -2624,7 +2624,7 @@ return_closcall1(data,  k_73247,  set_pair_as_expr(&local_73537, quote_include, 
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73235, object expr_731_73168, object rename_732_73169, object compare_733_73170 */
  {
-object k_73235 = args[0]; object expr_731_73168 = args[1]; object rename_732_73169 = args[2]; object compare_733_73170 = args[3];
+object k_73235 = args[0]; object expr_731_73168 = args[1];
   Cyc_st_add(data, "scheme/read.sld:include");
 
 closureN_type c_73499;

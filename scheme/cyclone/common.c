@@ -182,7 +182,7 @@ return_closcall1(data,(closure)&c_7341,  c_7384);;
 
 static void __lambda_3(void *data, object self_7328, int argc, object *args) /* object self_7328, object r_7319 */
  {
- object r_7319 = args[0];
+
   
 closureN_type c_7343;
 object e_7375 [1];
@@ -226,7 +226,7 @@ return_closcall1(data,(closure)&c_7345,  c_7374);;
 
 static void __lambda_5(void *data, object self_7330, int argc, object *args) /* object self_7330, object r_7320 */
  {
- object r_7320 = args[0];
+
   
 closureN_type c_7347;
 object e_7367 [1];
@@ -246,7 +246,7 @@ return_closcall1(data,(closure)&c_7347,  c_7370);;
 
 static void __lambda_6(void *data, object self_7331, int argc, object *args) /* object self_7331, object r_7321 */
  {
- object r_7321 = args[0];
+
   
 closureN_type c_7349;
 object e_7361 [1];
@@ -290,7 +290,7 @@ return_closcall1(data,(closure)&c_7351,  c_7360);;
 
 static void __lambda_8(void *data, object self_7333, int argc, object *args) /* object self_7333, object r_7322 */
  {
- object r_7322 = args[0];
+
   
 object c_7356 = global_set_cps_id(data,  ((closureN)self_7333)->elements[0],"__glo__85reader_91source_91db_85_scheme_cyclone_common", __glo__85reader_91source_91db_85_scheme_cyclone_common, NULL);
 return_closcall1(data,  ((closureN)self_7333)->elements[0],  c_7356);; 

@@ -770,7 +770,7 @@ return_closcall1(data,  k_731204,  obj_int2obj(0));;
 
 static void __lambda_22(void *data, object _, int argc, object *args) /* closure _,object k_73886, object expr_7360_73209, object rename_7361_73210, object compare_7362_73211 */
  {
-object k_73886 = args[0]; object expr_7360_73209 = args[1]; object rename_7361_73210 = args[2]; object compare_7362_73211 = args[3];
+object k_73886 = args[0]; object expr_7360_73209 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define");
 
 closureN_type c_732611;
@@ -1090,7 +1090,7 @@ return_direct_with_clo1(data,(closure)&c_732617,__lambda_25,  Cyc_set_cell(data,
 
 static void __lambda_25(void *data, object self_731231, int argc, object *args) /* object self_731231, object r_73887 */
  {
- object r_73887 = args[0];
+
   
 closureN_type c_732619;
 object e_733729 [3];
@@ -1763,7 +1763,7 @@ return_direct_with_clo1(data,(closure)&c_733602,__lambda_137,  &c_733614);
 
 static void __lambda_138(void *data, object self_731251, int argc, object *args) /* object self_731251, object r_731093 */
  {
- object r_731093 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_731251)->elements[1],  Cyc_car(data, ((closureN)self_731251)->elements[0]));; 
@@ -1847,7 +1847,7 @@ return_direct_with_clo1(data,(closure)&c_733439,__lambda_128,  &c_733451);
 
 static void __lambda_129(void *data, object self_731256, int argc, object *args) /* object self_731256, object r_731118 */
  {
- object r_731118 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_731256)->elements[1],  Cyc_car(data, ((closureN)self_731256)->elements[0]));; 
@@ -2339,7 +2339,7 @@ return_closcall1(data,  ((closureN)self_731273)->elements[4],  set_pair_as_expr(
 
 static void __lambda_107(void *data, object self_731274, int argc, object *args) /* object self_731274, object r_73903 */
  {
- object r_73903 = args[0];
+
   
 closureN_type c_733185;
 object e_733254 [6];
@@ -4119,7 +4119,7 @@ return_direct_with_clo1(data,  k_731145,__lambda_29,  Cyc_caddr(data, ((closureN
 
 static void __lambda_21(void *data, object _, int argc, object *args) /* closure _,object k_73517, object expr_7352_73204, object rename_7353_73205, object compare_7354_73206 */
  {
-object k_73517 = args[0]; object expr_7352_73204 = args[1]; object rename_7353_73205 = args[2]; object compare_7354_73206 = args[3];
+object k_73517 = args[0]; object expr_7352_73204 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:c->scm");
 
 pair_type local_731937; 
@@ -4628,7 +4628,7 @@ return_closcall1(data,  k_73517,  set_pair_as_expr(&local_731937, quote__case, s
 
 static void __lambda_20(void *data, object _, int argc, object *args) /* closure _,object k_73362, object expr_7344_73199, object rename_7345_73200, object compare_7346_73201 */
  {
-object k_73362 = args[0]; object expr_7344_73199 = args[1]; object rename_7345_73200 = args[2]; object compare_7346_73201 = args[3];
+object k_73362 = args[0]; object expr_7344_73199 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:scm->c");
 
 pair_type local_731619; 
@@ -4881,7 +4881,7 @@ return_closcall1(data,  k_73362,  set_pair_as_expr(&local_731619, quote__case, s
 
 static void __lambda_16(void *data, object _, int argc, object *args) /* closure _,object k_73352, object expr_7337_73195, object rename_7338_73196, object compare_7339_73197 */
  {
-object k_73352 = args[0]; object expr_7337_73195 = args[1]; object rename_7338_73196 = args[2]; object compare_7339_73197 = args[3];
+object k_73352 = args[0]; object expr_7337_73195 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:c-code");
 
 closureN_type c_731592;
@@ -4939,7 +4939,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73159
 
 static void __lambda_18(void *data, object self_731221, int argc, object *args) /* object self_731221, object r_73353 */
  {
- object r_73353 = args[0];
+
   
 pair_type local_731599; 
 
@@ -4949,7 +4949,7 @@ return_closcall1(data,  ((closureN)self_731221)->elements[1],  set_pair_as_expr(
 
 static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_73289, object expr_7312_73188, object rename_7313_73189, object compare_7314_73190 */
  {
-object k_73289 = args[0]; object expr_7312_73188 = args[1]; object rename_7313_73189 = args[2]; object compare_7314_73190 = args[3];
+object k_73289 = args[0]; object expr_7312_73188 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:c-value");
 
 closureN_type c_731417;
@@ -5135,7 +5135,7 @@ return_direct_with_clo1(data,(closure)&c_731429,__lambda_11,  &c_731457);;
 
 static void __lambda_13(void *data, object self_731214, int argc, object *args) /* object self_731214, object r_73293 */
  {
- object r_73293 = args[0];
+
     
 if( (boolean_f != car(((closureN)self_731214)->elements[0])) ){ 
   
@@ -5259,7 +5259,7 @@ return_direct_with_clo1(data,(closure)&c_731432,__lambda_12,  Cyc_set_cell(data,
 
 static void __lambda_12(void *data, object self_731218, int argc, object *args) /* object self_731218, object r_73324 */
  {
- object r_73324 = args[0];
+
     
   
 if( (boolean_f != Cyc_num_fast_eq_op(data, obj_int2obj(3), Cyc_length(data, ((closureN)self_731218)->elements[1]))) ){ 
@@ -5275,7 +5275,7 @@ return_closcall1(data,  ((closureN)self_731218)->elements[2],  Cyc_set_cell(data
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73255, object expr_731_73183, object rename_732_73184, object compare_733_73185 */
  {
-object k_73255 = args[0]; object expr_731_73183 = args[1]; object rename_732_73184 = args[2]; object compare_733_73185 = args[3];
+object k_73255 = args[0]; object expr_731_73183 = args[1];
   Cyc_st_add(data, "libs/cyclone/foreign.sld:c-define-type");
 closureN_type c_731378;
 object e_731414 [2];
@@ -5294,7 +5294,7 @@ return_direct1(data,__lambda_2,&c_731378);;
 
 static void __lambda_4(void *data, object self_731205, int argc, object *args) /* object self_731205, object r_73258 */
  {
- object r_73258 = args[0];
+
   
 closureN_type c_731380;
 object e_731383 [1];
@@ -5332,7 +5332,7 @@ return_closcall2(data,  __glo_eval_scheme_eval,  &c_731380, set_pair_as_expr(&lo
 
 static void __lambda_5(void *data, object self_731206, int argc, object *args) /* object self_731206, object r_73259 */
  {
- object r_73259 = args[0];
+
   return_closcall1(data,  ((closureN)self_731206)->elements[0],  boolean_f);; 
 }
 

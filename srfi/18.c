@@ -769,7 +769,7 @@ return_closcall4(data,  __glo_error_scheme_base,  ((closureN)self_73142)->elemen
 
 static void __lambda_28(void *data, object self_73143, int argc, object *args) /* object self_73143, object r_73120 */
  {
- object r_73120 = args[0];
+
   return_closcall2(data,  __glo_Cyc_91mutex_91unlock_67_srfi_18,  ((closureN)self_73143)->elements[0], ((closureN)self_73143)->elements[1]);; 
 }
 
@@ -1009,7 +1009,7 @@ return_closcall1(data,(closure)&c_73245,  c_73252);;
 
 static void __lambda_18(void *data, object self_73132, int argc, object *args) /* object self_73132, object r_7397 */
  {
- object r_7397 = args[0];
+
   return_closcall1(data,  ((closureN)self_73132)->elements[1],  ((closureN)self_73132)->elements[0]);; 
 }
 
@@ -1077,7 +1077,7 @@ return_closcall1(data,(closure)&c_73222,  c_73234);;
 
 static void __lambda_15(void *data, object self_73136, int argc, object *args) /* object self_73136, object r_7392 */
  {
- object r_7392 = args[0];
+
   
 closureN_type c_73224;
 object e_73230 [2];
@@ -1096,7 +1096,7 @@ return_closcall1(data,  __glo_Cyc_91minor_91gc_srfi_18,  &c_73224);;
 
 static void __lambda_16(void *data, object self_73137, int argc, object *args) /* object self_73137, object r_7393 */
  {
- object r_7393 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_73137)->elements[0],  Cyc_spawn_thread(((closureN)self_73137)->elements[1]));; 

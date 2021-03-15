@@ -558,7 +558,7 @@ return_direct_with_clo1(data,(closure)&c_73209,__lambda_14,  Cyc_set_cell(data, 
 
 static void __lambda_14(void *data, object self_7395, int argc, object *args) /* object self_7395, object r_7378 */
  {
- object r_7378 = args[0];
+
   
 closureN_type c_73211;
 object e_73217 [2];
@@ -579,7 +579,7 @@ return_direct_with_clo1(data,(closure)&c_73211,__lambda_15,  Cyc_set_cell(data, 
 
 static void __lambda_15(void *data, object self_7396, int argc, object *args) /* object self_7396, object r_7379 */
  {
- object r_7379 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_7396)->elements[0],  car(((closureN)self_7396)->elements[1]));; 
@@ -606,7 +606,7 @@ return_closcall1(data,  ((closureN)self_7398)->elements[0],  set_pair_as_expr(&l
 
 static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_7360, object expr_7310_7325, object rename_7311_7326, object compare_7312_7327 */
  {
-object k_7360 = args[0]; object expr_7310_7325 = args[1]; object rename_7311_7326 = args[2]; object compare_7312_7327 = args[3];
+object k_7360 = args[0]; object expr_7310_7325 = args[1];
   Cyc_st_add(data, "scheme/lazy.sld:delay-force");
 
 pair_type local_73146; 
@@ -625,7 +625,7 @@ return_closcall1(data,  k_7360,  set_pair_as_expr(&local_73146, quote_make_91pro
 
 static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_7347, object expr_734_7322, object rename_735_7323, object compare_736_7324 */
  {
-object k_7347 = args[0]; object expr_734_7322 = args[1]; object rename_735_7323 = args[2]; object compare_736_7324 = args[3];
+object k_7347 = args[0]; object expr_734_7322 = args[1];
   Cyc_st_add(data, "scheme/lazy.sld:delay");
 
 pair_type local_73127; 
