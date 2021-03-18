@@ -593,7 +593,7 @@ static void __lambda_23(void *data, object clo, int argc, object *args) ;/*objec
 static void __lambda_21(void *data, object clo, int argc, object *args) ;/*object self_73139, object k_73106*/
 static void __lambda_22(void *data, object clo, int argc, object *args) ;/*object self_73140, object r_73107*/
 static void __lambda_37(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object thread_data_opaque)*/
-static void __lambda_36(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k)*/
+static void __lambda_36(void *data, object clo, int argc, object *args) ;/*(void *data, object _, int argc, object *args)*/
 static void __lambda_19(void *data, object clo, int argc, object *args) ;/*closure _,object k_73100*/
 static void __lambda_10(void *data, object clo, int argc, object *args) ;/*closure _,object k_7389, object t_7312_7343*/
 static void __lambda_11(void *data, object clo, int argc, object *args) ;/*object self_73130, object thunk_7315_7344*/
@@ -924,7 +924,7 @@ static void __lambda_37(void *data, object _, int argc, object *args) {object k 
           gc_sleep_ms(250);
         }
         return_thread_runnable(data, boolean_t); }
-static void __lambda_36(void *data, object _, int argc, object *args) {object k = args[0]; Cyc_end_thread(data);  }
+static void __lambda_36(void *data, object _, int argc, object *args) { Cyc_end_thread(data);  }
 static void __lambda_19(void *data, object _, int argc, object *args) /* closure _,object k_73100 */
  {
 object k_73100 = args[0];

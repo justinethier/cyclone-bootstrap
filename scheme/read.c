@@ -610,7 +610,7 @@ static object __lambda_94(void *data, object ptr, object opq, object obj) ;
 static void __lambda_93(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq, object obj)*/
 static object __lambda_92(void *data, object ptr, object opq, object obj) ;
 static void __lambda_91(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq, object obj)*/
-static void __lambda_90(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object port, object filename, object msg)*/
+static void __lambda_90(void *data, object clo, int argc, object *args) ;/*(void *data, object _, int argc, object *args)*/
 static void __lambda_89(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object port)*/
 static void __lambda_21(void *data, object clo, int argc, object *args) ;/*closure _,object k_73286, object args_7330_73184_raw, ...*/
 static void __lambda_23(void *data, object clo, int argc, object *args) ;/*object self_73433, object fp_7333_73186*/
@@ -2042,7 +2042,10 @@ static object __lambda_92(void *data, object ptr, object opq, object obj) { if (
 static void __lambda_91(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object obj = args[2]; if (Cyc_is_opaque(opq) == boolean_f) 
       return_closcall1(data, k, boolean_f);
     return_closcall1(data, k, equalp( opaque_ptr(opq), obj )); }
-static void __lambda_90(void *data, object _, int argc, object *args) {object k = args[0];object port = args[1];object filename = args[2];object msg = args[3]; char buf[1024];
+static void __lambda_90(void *data, object _, int argc, object *args) { object port = args[1];
+    object filename = args[2];
+    object msg = args[3];
+    char buf[1024];
     port_type *p;
     Cyc_check_port(data, port);
     Cyc_check_str(data, msg);
@@ -2813,7 +2816,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo_Cyc_91opaque_91eq_127_scheme_read = &c_73748; 
   mclosure0(c_73747, (function_type)__lambda_92);c_73747.num_args = 0; 
   __glo_Cyc_91opaque_91eq_127_191_191inline_191_191_scheme_read = &c_73747; 
-  mclosure0(c_73746, (function_type)__lambda_90);c_73746.num_args = 3; 
+  mclosure0(c_73746, (function_type)__lambda_90);c_73746.num_args = 0; 
   __glo_read_91error_scheme_read = &c_73746; 
   mclosure0(c_73745, (function_type)__lambda_89);c_73745.num_args = 1; 
   __glo_read_91token_scheme_read = &c_73745; 
