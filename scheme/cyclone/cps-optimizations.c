@@ -30455,7 +30455,7 @@ return_direct_with_clo1(data,(closure)&c_7312559,__lambda_671,  &c_7312571);;
 
 static void __lambda_674(void *data, object self_736920, int argc, object *args) /* object self_736920, object k_734077, object obj_73855_732531 */
  {
- object k_734077 = args[0]; object obj_73855_732531 = args[1];
+ object k_734077 = args[0];
   
 closureN_type c_7312574;
 object e_7312578 [2];

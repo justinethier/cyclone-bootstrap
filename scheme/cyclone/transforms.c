@@ -4791,7 +4791,7 @@ return_closcall2(data,  __glo_gensym_scheme_cyclone_util,  &c_738880, quote_k);;
 
 static void __lambda_674(void *data, object self_733773, int argc, object *args) /* object self_733773, object r_732609 */
  {
- object r_732609 = args[0];
+
   
 closureN_type c_738882;
 object e_738908 [5];
@@ -4813,7 +4813,7 @@ return_closcall2(data,  __glo_gensym_scheme_cyclone_util,  &c_738882, quote_r);;
 
 static void __lambda_675(void *data, object self_733774, int argc, object *args) /* object self_733774, object r_732610 */
  {
- object r_732610 = args[0];
+
   
 
 

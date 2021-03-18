@@ -923,6 +923,7 @@ extern object __glo_cps_91convert_scheme_cyclone_transforms;
 extern object __glo_prim_91convert_scheme_cyclone_transforms;
 extern object __glo_validate_91keyword_91syntax_scheme_cyclone_transforms;
 extern object __glo_closure_91convert_scheme_cyclone_cps_91optimizations;
+extern object __glo_analyze_117cc_91ast_91_125vars_scheme_cyclone_cps_91optimizations;
 extern object __glo_pos_91in_91list_scheme_cyclone_cps_91optimizations;
 extern object __glo_inlinable_91top_91level_91lambda_127_scheme_cyclone_cps_91optimizations;
 extern object __glo_optimize_91cps_scheme_cyclone_cps_91optimizations;
@@ -12251,7 +12252,7 @@ return_direct_with_clo1(data,(closure)&c_734097,__lambda_372,  &c_734212);;
 
 static void __lambda_394(void *data, object self_731629, int argc, object *args) /* object self_731629, object k_73973, object obj_73118_73516 */
  {
- object k_73973 = args[0]; object obj_73118_73516 = args[1];
+ object k_73973 = args[0];
   return_closcall2(data,  ((closureN)self_731629)->elements[0],  k_73973, boolean_f);;; 
 }
 
