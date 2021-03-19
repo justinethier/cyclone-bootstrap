@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -1218,7 +1218,7 @@ static void __lambda_2(void *data, object clo, int argc, object *args) ;/*object
 static void __lambda_346(void *data, object _, int argc, object *args) /* closure _,object k_7314813 */
  {
 object k_7314813 = args[0];
-  Cyc_st_add(data, "libs/package.sld:lib-init:libspackage");
+  Cyc_st_add(data, ".//libs/package.sld:lib-init:libspackage");
 return_closcall1(data,  k_7314813,  obj_int2obj(0));; 
 }
 
@@ -1226,7 +1226,7 @@ static void __lambda_314(void *data, object _, int argc, object *args) /* closur
  {
 object k_7314774 = args[0];
 load_varargs(dir_7314087_7314290, args, 1, argc - 1);
-  Cyc_st_add(data, "libs/package.sld:libraries+defines+programs");
+  Cyc_st_add(data, ".//libs/package.sld:libraries+defines+programs");
 
 closureN_type c_7316985;
 object e_7316998 [1];
@@ -1854,7 +1854,7 @@ return_closcall3(data,  __glo__91_125path_libs_file,  ((closureN)self_7315139)->
 static void __lambda_311(void *data, object _, int argc, object *args) /* closure _,object k_7314766, object exports_7314083_7314286, object defines_7314084_7314287 */
  {
 object k_7314766 = args[0]; object exports_7314083_7314286 = args[1]; object defines_7314084_7314287 = args[2];
-  Cyc_st_add(data, "libs/package.sld:filter-exported-defines");
+  Cyc_st_add(data, ".//libs/package.sld:filter-exported-defines");
 
 closureN_type c_7316957;
 object e_7316961 [2];
@@ -1915,7 +1915,7 @@ static void __lambda_312(void *data, object self_7315108, int argc, object *args
 static void __lambda_299(void *data, object _, int argc, object *args) /* closure _,object k_7314749, object ast_7314073_7314280, object work_91dir_7314074_7314281 */
  {
 object k_7314749 = args[0]; object ast_7314073_7314280 = args[1]; object work_91dir_7314074_7314281 = args[2];
-  Cyc_st_add(data, "libs/package.sld:get-defines");
+  Cyc_st_add(data, ".//libs/package.sld:get-defines");
 
 closureN_type c_7316902;
 object e_7316954 [3];
@@ -2143,7 +2143,7 @@ static void __lambda_306(void *data, object self_7315106, int argc, object *args
 static void __lambda_296(void *data, object _, int argc, object *args) /* closure _,object k_7314742, object ast_7314072_7314279 */
  {
 object k_7314742 = args[0]; object ast_7314072_7314279 = args[1];
-  Cyc_st_add(data, "libs/package.sld:get-all-defines");
+  Cyc_st_add(data, ".//libs/package.sld:get-all-defines");
 
 closureN_type c_7316891;
 object e_7316899 [2];
@@ -2189,7 +2189,7 @@ static void __lambda_273(void *data, object _, int argc, object *args) /* closur
  {
 object k_7314711 = args[0];
 load_varargs(dir_7314061_7314269, args, 1, argc - 1);
-  Cyc_st_add(data, "libs/package.sld:find-code-files-recursively");
+  Cyc_st_add(data, ".//libs/package.sld:find-code-files-recursively");
 
 closureN_type c_7316777;
 object e_7316786 [1];
@@ -2586,7 +2586,7 @@ return_direct_with_clo1(data,(closure)&c_7316795,__lambda_278,  Cyc_set_cell(dat
 
 static void __lambda_278(void *data, object self_7315089, int argc, object *args) /* object self_7315089, object r_7314713 */
  {
- object r_7314713 = args[0];
+
   
 
 
@@ -2664,7 +2664,7 @@ return_closcall1(data,  k_7314738,  Cyc_car(data, ((closureN)self_7315093)->elem
 static void __lambda_252(void *data, object _, int argc, object *args) /* closure _,object k_7314683, object pkg_7314050_7314261, object dir_7314051_7314262 */
  {
 object k_7314683 = args[0]; object pkg_7314050_7314261 = args[1]; object dir_7314051_7314262 = args[2];
-  Cyc_st_add(data, "libs/package.sld:structure-directory-tree!");
+  Cyc_st_add(data, ".//libs/package.sld:structure-directory-tree!");
 
 closureN_type c_7316678;
 object e_7316774 [3];
@@ -2775,7 +2775,7 @@ return_closcall3(data,  __glo_copy_91dir_91to_91dir_67_libs_system_91calls,  &c_
 
 static void __lambda_272(void *data, object self_7315055, int argc, object *args) /* object self_7315055, object r_7314706 */
  {
- object r_7314706 = args[0];
+
   return_closcall2(data,  __glo_delete_67_libs_system_91calls,  ((closureN)self_7315055)->elements[1], ((closureN)self_7315055)->elements[0]);; 
 }
 
@@ -2888,7 +2888,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  &c_73166
 
 static void __lambda_257(void *data, object self_7315061, int argc, object *args) /* object self_7315061, object r_7314685 */
  {
- object r_7314685 = args[0];
+
   
 closureN_type c_7316688;
 object e_7316712 [3];
@@ -2978,7 +2978,7 @@ return_closcall3(data,  __glo_copy_91file_91to_91dir_67_libs_system_91calls,  &c
 
 static void __lambda_266(void *data, object self_7315065, int argc, object *args) /* object self_7315065, object r_7314694 */
  {
- object r_7314694 = args[0];
+
   return_closcall2(data,  __glo_delete_67_libs_system_91calls,  ((closureN)self_7315065)->elements[1], ((closureN)self_7315065)->elements[0]);; 
 }
 
@@ -3066,7 +3066,7 @@ static void __lambda_164(void *data, object _, int argc, object *args) /* closur
  {
 object k_7314579 = args[0]; object pkg_7313971_7314232 = args[1];
 load_varargs(dir_7313972_7314233, args, 2, argc - 2);
-  Cyc_st_add(data, "libs/package.sld:write-doc-file!");
+  Cyc_st_add(data, ".//libs/package.sld:write-doc-file!");
 
 closureN_type c_7316173;
 object e_7316183 [1];
@@ -4857,7 +4857,7 @@ return_direct_with_clo1(data,(closure)&c_7316416,__lambda_230,  &c_7316441);;
 
 static void __lambda_234(void *data, object self_7315026, int argc, object *args) /* object self_7315026, object r_7314584 */
  {
- object r_7314584 = args[0];
+
   
 closureN_type c_7316443;
 object e_7316451 [3];
@@ -4877,7 +4877,7 @@ return_closcall2(data,  __glo_touch_67_libs_system_91calls,  &c_7316443, ((closu
 
 static void __lambda_235(void *data, object self_7315027, int argc, object *args) /* object self_7315027, object r_7314585 */
  {
- object r_7314585 = args[0];
+
   
 port_type c_7316449 = Cyc_io_open_output_file(data,((closureN)self_7315027)->elements[0]);
 return_closcall3(data,  __glo_display_scheme_write,  ((closureN)self_7315027)->elements[1], ((closureN)self_7315027)->elements[2], &c_7316449);; 
@@ -4952,7 +4952,7 @@ return_closcall3(data,  __glo_copy_91file_67_libs_system_91calls,  &c_7316422, (
 
 static void __lambda_233(void *data, object self_7315031, int argc, object *args) /* object self_7315031, object r_7314589 */
  {
- object r_7314589 = args[0];
+
   return_closcall2(data,  __glo_delete_67_libs_system_91calls,  ((closureN)self_7315031)->elements[1], ((closureN)self_7315031)->elements[0]);; 
 }
 
@@ -5220,7 +5220,7 @@ return_closcall2(data,  __glo__91_125path_libs_file,  k_7314678, Cyc_car(data, (
 static void __lambda_154(void *data, object _, int argc, object *args) /* closure _,object k_7314523, object defines_736181_7314214 */
  {
 object k_7314523 = args[0]; object defines_736181_7314214 = args[1];
-  Cyc_st_add(data, "libs/package.sld:defines->type-and-signature");
+  Cyc_st_add(data, ".//libs/package.sld:defines->type-and-signature");
 
 closureN_type c_7315940;
 object e_7315944 [2];
@@ -5534,7 +5534,7 @@ static void __lambda_155(void *data, object self_7314963, int argc, object *args
 static void __lambda_151(void *data, object _, int argc, object *args) /* closure _,object k_7314517, object pkg_736179_7314212, object metadata_91path_736180_7314213 */
  {
 object k_7314517 = args[0]; object pkg_736179_7314212 = args[1]; object metadata_91path_736180_7314213 = args[2];
-  Cyc_st_add(data, "libs/package.sld:write-metadata-file!");
+  Cyc_st_add(data, ".//libs/package.sld:write-metadata-file!");
 
 closureN_type c_7315926;
 object e_7315937 [3];
@@ -5554,7 +5554,7 @@ return_closcall2(data,  __glo_touch_67_libs_system_91calls,  &c_7315926, metadat
 
 static void __lambda_152(void *data, object self_7314953, int argc, object *args) /* object self_7314953, object r_7314518 */
  {
- object r_7314518 = args[0];
+
   
 closureN_type c_7315928;
 object e_7315935 [2];
@@ -5582,7 +5582,7 @@ return_closcall3(data,  __glo_pretty_91print_scheme_cyclone_pretty_91print,  ((c
 static void __lambda_126(void *data, object _, int argc, object *args) /* closure _,object k_7314486, object index_736169_7314204, object name_736170_7314205 */
  {
 object k_7314486 = args[0]; object index_736169_7314204 = args[1]; object name_736170_7314205 = args[2];
-  Cyc_st_add(data, "libs/package.sld:uninstall-package");
+  Cyc_st_add(data, ".//libs/package.sld:uninstall-package");
 
 closureN_type c_7315807;
 object e_7315921 [2];
@@ -5659,7 +5659,7 @@ static void __lambda_150(void *data, object self_7314952, int argc, object *args
 
 static void __lambda_143(void *data, object self_7314930, int argc, object *args) /* object self_7314930, object r_7314490 */
  {
- object r_7314490 = args[0];
+
   
 closureN_type c_7315880;
 object e_7315907 [1];
@@ -5690,7 +5690,7 @@ return_direct_with_clo1(data,(closure)&c_7315880,__lambda_144,  &c_7315908);;
 
 static void __lambda_149(void *data, object self_7314931, int argc, object *args) /* object self_7314931, object r_7314491 */
  {
- object r_7314491 = args[0];
+
   return_closcall2(data,  __glo_unregister_91installed_91package_67_libs_index,  ((closureN)self_7314931)->elements[0], ((closureN)self_7314931)->elements[1]);; 
 }
 
@@ -5933,7 +5933,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_7315837, r_7314
 
 static void __lambda_137(void *data, object self_7314944, int argc, object *args) /* object self_7314944, object r_7314502 */
  {
- object r_7314502 = args[0];
+
   
 closureN_type c_7315839;
 object e_7315860 [2];
@@ -6055,7 +6055,7 @@ return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closur
 static void __lambda_108(void *data, object _, int argc, object *args) /* closure _,object k_7314466, object index_736154_7314197, object name_736155_7314198 */
  {
 object k_7314466 = args[0]; object index_736154_7314197 = args[1]; object name_736155_7314198 = args[2];
-  Cyc_st_add(data, "libs/package.sld:reinstall-package");
+  Cyc_st_add(data, ".//libs/package.sld:reinstall-package");
 
 closureN_type c_7315730;
 object e_7315804 [3];
@@ -6237,7 +6237,7 @@ return_direct_with_clo1(data,(closure)&c_7315744,__lambda_116,  &c_7315788);;
 
 static void __lambda_125(void *data, object self_7314919, int argc, object *args) /* object self_7314919, object r_7314470 */
  {
- object r_7314470 = args[0];
+
   return_closcall2(data,  __glo_delete_67_libs_system_91calls,  ((closureN)self_7314919)->elements[0], ((closureN)self_7314919)->elements[1]);; 
 }
 
@@ -6303,7 +6303,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_7315773, ((clos
 
 static void __lambda_123(void *data, object self_7314927, int argc, object *args) /* object self_7314927, object r_7314478 */
  {
- object r_7314478 = args[0];
+
   
 closureN_type c_7315775;
 object e_7315778 [1];
@@ -6362,7 +6362,7 @@ return_direct_with_clo1(data,(closure)&c_7315750,__lambda_119,  &c_7315764);;
 
 static void __lambda_122(void *data, object self_7314923, int argc, object *args) /* object self_7314923, object r_7314474 */
  {
- object r_7314474 = args[0];
+
   return_closcall3(data,  __glo_build_91and_91install_libs_package,  ((closureN)self_7314923)->elements[0], ((closureN)self_7314923)->elements[1], ((closureN)self_7314923)->elements[2]);; 
 }
 
@@ -6416,7 +6416,7 @@ static void __lambda_120(void *data, object self_7314926, int argc, object *args
 static void __lambda_86(void *data, object _, int argc, object *args) /* closure _,object k_7314443, object index_736138_7314189, object name_736139_7314190 */
  {
 object k_7314443 = args[0]; object index_736138_7314189 = args[1]; object name_736139_7314190 = args[2];
-  Cyc_st_add(data, "libs/package.sld:install-package");
+  Cyc_st_add(data, ".//libs/package.sld:install-package");
 
 closureN_type c_7315633;
 object e_7315727 [3];
@@ -6636,7 +6636,7 @@ return_direct_with_clo1(data,(closure)&c_7315656,__lambda_96,  &c_7315708);;
 
 static void __lambda_107(void *data, object self_7314900, int argc, object *args) /* object self_7314900, object r_7314449 */
  {
- object r_7314449 = args[0];
+
   return_closcall2(data,  __glo_delete_67_libs_system_91calls,  ((closureN)self_7314900)->elements[0], ((closureN)self_7314900)->elements[1]);; 
 }
 
@@ -6702,7 +6702,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_7315693, ((clos
 
 static void __lambda_105(void *data, object self_7314910, int argc, object *args) /* object self_7314910, object r_7314458 */
  {
- object r_7314458 = args[0];
+
   
 closureN_type c_7315695;
 object e_7315698 [1];
@@ -6771,7 +6771,7 @@ return_direct_with_clo2(data,(closure)&c_7315664,__lambda_100,  ((closureN)self_
 
 static void __lambda_100(void *data, object self_7314905, int argc, object *args) /* object self_7314905, object deps_736150_7314194, object pkg_91ver_736151_7314195 */
  {
- object deps_736150_7314194 = args[0]; object pkg_91ver_736151_7314195 = args[1];
+ object deps_736150_7314194 = args[0];
   
 closureN_type c_7315666;
 object e_7315679 [2];
@@ -6804,7 +6804,7 @@ return_direct_with_clo1(data,(closure)&c_7315666,__lambda_101,  &c_7315680);;
 
 static void __lambda_104(void *data, object self_7314906, int argc, object *args) /* object self_7314906, object r_7314454 */
  {
- object r_7314454 = args[0];
+
   return_closcall3(data,  __glo_build_91and_91install_libs_package,  ((closureN)self_7314906)->elements[0], ((closureN)self_7314906)->elements[1], ((closureN)self_7314906)->elements[2]);; 
 }
 
@@ -6864,7 +6864,7 @@ static void __lambda_88(void *data, object self_7314892, int argc, object *args)
 static void __lambda_82(void *data, object _, int argc, object *args) /* closure _,object k_7314436, object index_736135_7314186, object name_736136_7314187 */
  {
 object k_7314436 = args[0]; object index_736135_7314186 = args[1]; object name_736136_7314187 = args[2];
-  Cyc_st_add(data, "libs/package.sld:installed?");
+  Cyc_st_add(data, ".//libs/package.sld:installed?");
 
 closureN_type c_7315616;
 object e_7315630 [2];
@@ -6934,7 +6934,7 @@ static void __lambda_64(void *data, object _, int argc, object *args) /* closure
  {
 object k_7314415 = args[0]; object pkg_736125_7314179 = args[1];
 load_varargs(dir_736126_7314180, args, 2, argc - 2);
-  Cyc_st_add(data, "libs/package.sld:build-and-install");
+  Cyc_st_add(data, ".//libs/package.sld:build-and-install");
 
 closureN_type c_7315526;
 object e_7315536 [1];
@@ -7140,7 +7140,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_7315553, r_7314429);;
 
 static void __lambda_74(void *data, object self_7314879, int argc, object *args) /* object self_7314879, object r_7314421 */
  {
- object r_7314421 = args[0];
+
   
 closureN_type c_7315555;
 object e_7315567 [2];
@@ -7176,7 +7176,7 @@ return_direct_with_clo1(data,(closure)&c_7315555,__lambda_75,  &c_7315568);;
 
 static void __lambda_77(void *data, object self_7314880, int argc, object *args) /* object self_7314880, object r_7314422 */
  {
- object r_7314422 = args[0];
+
   
 closureN_type c_7315570;
 object e_7315584 [2];
@@ -7211,7 +7211,7 @@ return_direct_with_clo1(data,(closure)&c_7315570,__lambda_78,  &c_7315585);;
 
 static void __lambda_80(void *data, object self_7314881, int argc, object *args) /* object self_7314881, object r_7314423 */
  {
- object r_7314423 = args[0];
+
   
 closureN_type c_7315587;
 object e_7315594 [5];
@@ -7297,7 +7297,7 @@ return_closcall3(data,  __glo_build_91libraries_libs_package,  &c_7315558, ((clo
 
 static void __lambda_76(void *data, object self_7314886, int argc, object *args) /* object self_7314886, object r_7314428 */
  {
- object r_7314428 = args[0];
+
   return_closcall3(data,  __glo_install_91libraries_libs_package,  ((closureN)self_7314886)->elements[0], ((closureN)self_7314886)->elements[1], ((closureN)self_7314886)->elements[2]);; 
 }
 
@@ -7320,7 +7320,7 @@ static void __lambda_50(void *data, object _, int argc, object *args) /* closure
  {
 object k_7314396 = args[0]; object index_736111_7314172 = args[1]; object name_736112_7314173 = args[2];
 load_varargs(dir_736113_7314174, args, 3, argc - 3);
-  Cyc_st_add(data, "libs/package.sld:get-package-remote-metadata");
+  Cyc_st_add(data, ".//libs/package.sld:get-package-remote-metadata");
 
 closureN_type c_7315451;
 object e_7315484 [2];
@@ -7413,7 +7413,7 @@ return_closcall2(data,  __glo_make_91dir_67_libs_system_91calls,  &c_7315491, ((
 
 static void __lambda_59(void *data, object self_7314861, int argc, object *args) /* object self_7314861, object r_7314400 */
  {
- object r_7314400 = args[0];
+
   
 closureN_type c_7315493;
 object e_7315511 [3];
@@ -7435,7 +7435,7 @@ return_closcall3(data,  __glo_download_67_libs_system_91calls,  &c_7315493, Cyc_
 
 static void __lambda_60(void *data, object self_7314862, int argc, object *args) /* object self_7314862, object r_7314401 */
  {
- object r_7314401 = args[0];
+
   
 closureN_type c_7315495;
 object e_7315506 [2];
@@ -7494,7 +7494,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_7315499, ((clos
 
 static void __lambda_63(void *data, object self_7314865, int argc, object *args) /* object self_7314865, object r_7314403 */
  {
- object r_7314403 = args[0];
+
   return_closcall1(data,  ((closureN)self_7314865)->elements[0],  ((closureN)self_7314865)->elements[1]);; 
 }
 
@@ -7597,7 +7597,7 @@ static void __lambda_28(void *data, object _, int argc, object *args) /* closure
  {
 object k_7314355 = args[0]; object index_7323_7314152 = args[1]; object name_7324_7314153 = args[2];
 load_varargs(dir_7325_7314154, args, 3, argc - 3);
-  Cyc_st_add(data, "libs/package.sld:retrieve-package");
+  Cyc_st_add(data, ".//libs/package.sld:retrieve-package");
 
 closureN_type c_7315292;
 object e_7315448 [3];
@@ -7689,7 +7689,7 @@ return_direct_with_clo2(data,(closure)&c_7315304,__lambda_31,  Cyc_car(data, Cyc
 
 static void __lambda_31(void *data, object self_7314840, int argc, object *args) /* object self_7314840, object w_732636_732639_7314161, object x_732637_732640_7314162 */
  {
- object w_732636_732639_7314161 = args[0]; object x_732637_732640_7314162 = args[1];
+ object x_732637_732640_7314162 = args[1];
     
 if( (boolean_f != Cyc_is_pair(x_732637_732640_7314162)) ){ 
   object r_7314367;
@@ -7897,7 +7897,7 @@ return_closcall2(data,  __glo_make_91dir_67_libs_system_91calls,  &c_7315363, ((
 
 static void __lambda_42(void *data, object self_7314847, int argc, object *args) /* object self_7314847, object r_7314373 */
  {
- object r_7314373 = args[0];
+
   
 closureN_type c_7315365;
 object e_7315397 [4];
@@ -7943,7 +7943,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_7315367, r_7314379);;
 
 static void __lambda_44(void *data, object self_7314849, int argc, object *args) /* object self_7314849, object r_7314374 */
  {
- object r_7314374 = args[0];
+
   
 closureN_type c_7315369;
 object e_7315391 [4];
@@ -7966,7 +7966,7 @@ return_closcall3(data,  __glo_download_67_libs_system_91calls,  &c_7315369, Cyc_
 
 static void __lambda_45(void *data, object self_7314850, int argc, object *args) /* object self_7314850, object r_7314375 */
  {
- object r_7314375 = args[0];
+
   
 closureN_type c_7315371;
 object e_7315384 [3];
@@ -7990,7 +7990,7 @@ return_closcall3(data,  __glo_validate_91sha256sum_libs_system_91calls,  &c_7315
 
 static void __lambda_46(void *data, object self_7314851, int argc, object *args) /* object self_7314851, object r_7314376 */
  {
- object r_7314376 = args[0];
+
   
 closureN_type c_7315373;
 object e_7315381 [3];
@@ -8010,7 +8010,7 @@ return_closcall3(data,  __glo_extract_67_libs_system_91calls,  &c_7315373, ((clo
 
 static void __lambda_47(void *data, object self_7314852, int argc, object *args) /* object self_7314852, object r_7314377 */
  {
- object r_7314377 = args[0];
+
   
 closureN_type c_7315375;
 object e_7315379 [2];
@@ -8029,7 +8029,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_7315375, ((clos
 
 static void __lambda_48(void *data, object self_7314853, int argc, object *args) /* object self_7314853, object r_7314378 */
  {
- object r_7314378 = args[0];
+
   return_closcall1(data,  ((closureN)self_7314853)->elements[0],  ((closureN)self_7314853)->elements[1]);; 
 }
 
@@ -8101,7 +8101,7 @@ static void __lambda_23(void *data, object _, int argc, object *args) /* closure
 object k_7314345 = args[0]; object prog_91list_7318_7314147 = args[1];
 load_varargs(dir_7319_7314148, args, 2, argc - 2);
   object dir_7320_7314149;
-  Cyc_st_add(data, "libs/package.sld:install-programs");
+  Cyc_st_add(data, ".//libs/package.sld:install-programs");
   
 if( (boolean_f != Cyc_is_null(dir_7319_7314148)) ){ 
   object c_7315267;
@@ -8195,7 +8195,7 @@ static void __lambda_18(void *data, object _, int argc, object *args) /* closure
 object k_7314335 = args[0]; object prog_91list_7313_7314142 = args[1];
 load_varargs(dir_7314_7314143, args, 2, argc - 2);
   object dir_7315_7314144;
-  Cyc_st_add(data, "libs/package.sld:build-programs");
+  Cyc_st_add(data, ".//libs/package.sld:build-programs");
   
 if( (boolean_f != Cyc_is_null(dir_7314_7314143)) ){ 
   object c_7315235;
@@ -8294,7 +8294,7 @@ static void __lambda_6(void *data, object _, int argc, object *args) /* closure 
 object k_7314319 = args[0]; object lib_91list_736_7314135 = args[1];
 load_varargs(dir_737_7314136, args, 2, argc - 2);
   object dir_738_7314137;
-  Cyc_st_add(data, "libs/package.sld:install-libraries");
+  Cyc_st_add(data, ".//libs/package.sld:install-libraries");
   
 if( (boolean_f != Cyc_is_null(dir_737_7314136)) ){ 
   object c_7315177;
@@ -8525,7 +8525,7 @@ static void __lambda_1(void *data, object _, int argc, object *args) /* closure 
 object k_7314309 = args[0]; object lib_91list_731_7314130 = args[1];
 load_varargs(dir_732_7314131, args, 2, argc - 2);
   object dir_733_7314132;
-  Cyc_st_add(data, "libs/package.sld:build-libraries");
+  Cyc_st_add(data, ".//libs/package.sld:build-libraries");
   
 if( (boolean_f != Cyc_is_null(dir_732_7314131)) ){ 
   object c_7315145;

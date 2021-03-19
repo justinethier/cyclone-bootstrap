@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -467,7 +467,7 @@ return_closcall1(data,(closure)&c_73136,  c_73258);;
 
 static void __lambda_7(void *data, object self_7395, int argc, object *args) /* object self_7395, object r_7350 */
  {
- object r_7350 = args[0];
+
   
 closureN_type c_73138;
 object e_73254 [1];
@@ -529,7 +529,7 @@ return_closcall1(data,(closure)&c_73142,  c_73247);;
 
 static void __lambda_10(void *data, object self_7398, int argc, object *args) /* object self_7398, object r_7351 */
  {
- object r_7351 = args[0];
+
   
 closureN_type c_73144;
 object e_73232 [1];
@@ -565,7 +565,7 @@ return_closcall1(data,(closure)&c_73144,  c_73235);;
 
 static void __lambda_11(void *data, object self_7399, int argc, object *args) /* object self_7399, object r_7352 */
  {
- object r_7352 = args[0];
+
   
 closureN_type c_73146;
 object e_73223 [1];
@@ -709,7 +709,7 @@ return_closcall1(data,(closure)&c_73152,  c_73167);;
 
 static void __lambda_15(void *data, object self_73104, int argc, object *args) /* object self_73104, object r_7353 */
  {
- object r_7353 = args[0];
+
   
 make_utf8_string_with_len(c_73159, "README", 6, 6);c_73159.hdr.immutable = 1;
 
@@ -839,7 +839,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85library_91installable_91extensions_85_libs_common = boolean_f; 
   __glo__85default_91lock_91file_85_libs_common = boolean_f; 
   __glo__85default_91code_91directory_85_libs_common = boolean_f; 
-  make_utf8_string_with_len(c_73105, "0.25", 4, 4); 
+  make_utf8_string_with_len(c_73105, "0.28.0", 6, 6); 
   __glo__85winds_91version_85_libs_common = &c_73105; 
 
   mclosure0(clo_73262, c_libscommon_inlinable_lambdas); make_pair(pair_73261, find_or_add_symbol("c_libscommon_inlinable_lambdas"), &clo_73262);

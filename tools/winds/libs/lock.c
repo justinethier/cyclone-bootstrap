@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -480,14 +480,14 @@ static void __lambda_4(void *data, object clo, int argc, object *args) ;/*object
 static void __lambda_31(void *data, object _, int argc, object *args) /* closure _,object k_73116 */
  {
 object k_73116 = args[0];
-  Cyc_st_add(data, "libs/lock.sld:lib-init:libslock");
+  Cyc_st_add(data, ".//libs/lock.sld:lib-init:libslock");
 return_closcall1(data,  k_73116,  obj_int2obj(0));; 
 }
 
 static void __lambda_15(void *data, object _, int argc, object *args) /* closure _,object k_7382, object expr_7317_7328_7341_7352, object rename_7318_7329_7342_7353, object compare_7319_7330_7343_7354 */
  {
-object k_7382 = args[0]; object expr_7317_7328_7341_7352 = args[1]; object rename_7318_7329_7342_7353 = args[2]; object compare_7319_7330_7343_7354 = args[3];
-  Cyc_st_add(data, "libs/lock.sld:with-file-lock");
+object k_7382 = args[0]; object expr_7317_7328_7341_7352 = args[1]; object rename_7318_7329_7342_7353 = args[2];
+  Cyc_st_add(data, ".//libs/lock.sld:with-file-lock");
 
 closureN_type c_73227;
 object e_73323 [3];
@@ -852,14 +852,14 @@ return_closcall1(data,  ((closureN)self_73144)->elements[0],  set_pair_as_expr(&
 static void __lambda_14(void *data, object _, int argc, object *args) /* closure _,object k_7379 */
  {
 object k_7379 = args[0];
-  Cyc_st_add(data, "libs/lock.sld:unlock-file!");
+  Cyc_st_add(data, ".//libs/lock.sld:unlock-file!");
 return_closcall2(data,  __glo_delete_67_libs_system_91calls,  k_7379, __glo__85default_91lock_91file_85_libs_common);; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7362 */
  {
 object k_7362 = args[0];
-  Cyc_st_add(data, "libs/lock.sld:try-to-lock-file!");
+  Cyc_st_add(data, ".//libs/lock.sld:try-to-lock-file!");
 
 closureN_type c_73147;
 object e_73222 [1];
@@ -1021,7 +1021,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_73192, r_7374);;
 
 static void __lambda_11(void *data, object self_73125, int argc, object *args) /* object self_73125, object r_7371 */
  {
- object r_7371 = args[0];
+
   
 closureN_type c_73194;
 object e_73207 [3];
@@ -1041,7 +1041,7 @@ return_closcall2(data,  __glo_thread_91sleep_67_srfi_18,  &c_73194, obj_int2obj(
 
 static void __lambda_12(void *data, object self_73126, int argc, object *args) /* object self_73126, object r_7372 */
  {
- object r_7372 = args[0];
+
   
 closureN_type c_73196;
 object e_73202 [2];
@@ -1107,7 +1107,7 @@ return_closcall3(data,  __glo_display_scheme_write,  &c_73177, ((closureN)self_7
 
 static void __lambda_8(void *data, object self_73122, int argc, object *args) /* object self_73122, object r_7367 */
  {
- object r_7367 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_73122)->elements[0],  __halt(obj_int2obj(1)));; 
@@ -1136,7 +1136,7 @@ return_direct_with_clo1(data,(closure)&c_73153,__lambda_4,  Cyc_set_cell(data, (
 
 static void __lambda_4(void *data, object self_73129, int argc, object *args) /* object self_73129, object r_7363 */
  {
- object r_7363 = args[0];
+
   
 
 return_closcall2(data,  car(((closureN)self_73129)->elements[1]),  ((closureN)self_73129)->elements[0], obj_int2obj(0));; 

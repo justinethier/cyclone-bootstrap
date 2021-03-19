@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -457,7 +457,7 @@ static void __lambda_2(void *data, object clo, int argc, object *args) ;/*object
 static void __lambda_44(void *data, object _, int argc, object *args) /* closure _,object k_73230 */
  {
 object k_73230 = args[0];
-  Cyc_st_add(data, "libs/util.sld:lib-init:libsutil");
+  Cyc_st_add(data, ".//libs/util.sld:lib-init:libsutil");
 return_closcall1(data,  k_73230,  obj_int2obj(0));; 
 }
 
@@ -465,7 +465,7 @@ static void __lambda_41(void *data, object _, int argc, object *args) /* closure
  {
 object k_73217 = args[0]; object s_7372_73120 = args[1];
   object r_73221;
-  Cyc_st_add(data, "libs/util.sld:string->proper-symbol");
+  Cyc_st_add(data, ".//libs/util.sld:string->proper-symbol");
   
   
 if( (boolean_f != equalp(Cyc_string_ref(data, s_7372_73120, obj_int2obj(0)), obj_char2obj(40))) ){ 
@@ -531,7 +531,7 @@ static void __lambda_34(void *data, object _, int argc, object *args) /* closure
  {
 object k_73200 = args[0]; object a_7362_73112 = args[1]; object b_7363_73113 = args[2];
 load_varargs(o_7364_73114, args, 3, argc - 3);
-  Cyc_st_add(data, "libs/util.sld:string-contains");
+  Cyc_st_add(data, ".//libs/util.sld:string-contains");
 
 closureN_type c_73547;
 object e_73618 [4];
@@ -716,7 +716,7 @@ return_direct_with_clo1(data,(closure)&c_73564,__lambda_38,  Cyc_set_cell(data, 
 
 static void __lambda_38(void *data, object self_73265, int argc, object *args) /* object self_73265, object r_73204 */
  {
- object r_73204 = args[0];
+
   
 
 return_closcall2(data,  car(((closureN)self_73265)->elements[2]),  ((closureN)self_73265)->elements[1], ((closureN)self_73265)->elements[0]);; 
@@ -725,7 +725,7 @@ return_closcall2(data,  car(((closureN)self_73265)->elements[2]),  ((closureN)se
 static void __lambda_28(void *data, object _, int argc, object *args) /* closure _,object k_73186, object str_7346_73104, object char_7347_73105 */
  {
 object k_73186 = args[0]; object str_7346_73104 = args[1]; object char_7347_73105 = args[2];
-  Cyc_st_add(data, "libs/util.sld:string-find-right");
+  Cyc_st_add(data, ".//libs/util.sld:string-find-right");
   
   
 if( (boolean_f != Cyc_num_fast_eq_op(data, obj_int2obj(0), Cyc_string_length(data, str_7346_73104))) ){ 
@@ -876,7 +876,7 @@ return_direct_with_clo1(data,(closure)&c_73503,__lambda_32,  Cyc_set_cell(data, 
 
 static void __lambda_32(void *data, object self_73258, int argc, object *args) /* object self_73258, object r_73190 */
  {
- object r_73190 = args[0];
+
   
 
 return_closcall2(data,  car(((closureN)self_73258)->elements[2]),  ((closureN)self_73258)->elements[1], ((closureN)self_73258)->elements[0]);; 
@@ -887,7 +887,7 @@ static void __lambda_14(void *data, object _, int argc, object *args) /* closure
 object k_73166 = args[0]; object orig_91ls_7334_7397 = args[1];
 load_varargs(o_7335_7398, args, 2, argc - 2);
   object r_73167;
-  Cyc_st_add(data, "libs/util.sld:string-join");
+  Cyc_st_add(data, ".//libs/util.sld:string-join");
   
 if( (boolean_f != Cyc_is_pair(o_7335_7398)) ){ 
   
@@ -1081,7 +1081,7 @@ return_direct_with_clo1(data,(closure)&c_73436,__lambda_23,  &c_73459);
 
 static void __lambda_26(void *data, object self_73245, int argc, object *args) /* object self_73245, object r_73174 */
  {
- object r_73174 = args[0];
+
   
 closureN_type c_73461;
 object e_73470 [3];
@@ -1103,7 +1103,7 @@ return_closcall3(data,  __glo_write_91string_912_scheme_base,  &c_73461, Cyc_car
 
 static void __lambda_27(void *data, object self_73246, int argc, object *args) /* object self_73246, object r_73175 */
  {
- object r_73175 = args[0];
+
   
 
 
@@ -1195,7 +1195,7 @@ return_direct_with_clo1(data,(closure)&c_73416,__lambda_20,  Cyc_set_cell(data, 
 
 static void __lambda_20(void *data, object self_73251, int argc, object *args) /* object self_73251, object r_73170 */
  {
- object r_73170 = args[0];
+
   
 
 
@@ -1216,14 +1216,14 @@ return_closcall2(data,  car(((closureN)self_73251)->elements[1]),  &c_73421, ((c
 
 static void __lambda_21(void *data, object self_73252, int argc, object *args) /* object self_73252, object r_73169 */
  {
- object r_73169 = args[0];
+
   return_closcall2(data,  __glo_get_91output_91string_scheme_base,  ((closureN)self_73252)->elements[0], ((closureN)self_73252)->elements[1]);; 
 }
 
 static void __lambda_13(void *data, object _, int argc, object *args) /* closure _,object k_73159, object x_7320_7396 */
  {
 object k_73159 = args[0]; object x_7320_7396 = args[1];
-  Cyc_st_add(data, "libs/util.sld:->string");
+  Cyc_st_add(data, ".//libs/util.sld:->string");
   
 if( (boolean_f != Cyc_is_string(x_7320_7396)) ){ 
   return_closcall1(data,  k_73159,  x_7320_7396);
@@ -1258,7 +1258,7 @@ return_closcall3(data,  __glo_error_scheme_base,  k_73159, &c_73392, x_7320_7396
 static void __lambda_12(void *data, object _, int argc, object *args) /* closure _,object k_73151, object str_7312_7393 */
  {
 object k_73151 = args[0]; object str_7312_7393 = args[1];
-  Cyc_st_add(data, "libs/util.sld:trim-trailing-slash");
+  Cyc_st_add(data, ".//libs/util.sld:trim-trailing-slash");
   complex_num_type local_73348; 
   make_utf8_string_with_len(c_73349, "", 0, 0);
 if( (boolean_f != ((inline_function_type)
@@ -1288,7 +1288,7 @@ return_closcall1(data,  k_73151,  c_73364);
 static void __lambda_9(void *data, object _, int argc, object *args) /* closure _,object k_73145, object param_739_7390, object metadata_7310_7391 */
  {
 object k_73145 = args[0]; object param_739_7390 = args[1]; object metadata_7310_7391 = args[2];
-  Cyc_st_add(data, "libs/util.sld:get-parameter-all-occurrences");
+  Cyc_st_add(data, ".//libs/util.sld:get-parameter-all-occurrences");
 
 closureN_type c_73332;
 object e_73336 [2];
@@ -1336,7 +1336,7 @@ static void __lambda_10(void *data, object self_73238, int argc, object *args) /
 static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_73132, object param_734_7387, object metadata_735_7388 */
  {
 object k_73132 = args[0]; object param_734_7387 = args[1]; object metadata_735_7388 = args[2];
-  Cyc_st_add(data, "libs/util.sld:get-parameter-value");
+  Cyc_st_add(data, ".//libs/util.sld:get-parameter-value");
 
 closureN_type c_73288;
 object e_73327 [1];
@@ -1432,7 +1432,7 @@ return_direct_with_clo1(data,  k_73137,__lambda_8,  Cyc_is_string(Cyc_cadr(data,
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73126, object pred_731_7384, object lst_732_7385 */
  {
 object k_73126 = args[0]; object pred_731_7384 = args[1]; object lst_732_7385 = args[2];
-  Cyc_st_add(data, "libs/util.sld:remove");
+  Cyc_st_add(data, ".//libs/util.sld:remove");
 
 closureN_type c_73270;
 object e_73274 [2];

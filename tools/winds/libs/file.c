@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -514,14 +514,14 @@ static void __lambda_73(void *data, object clo, int argc, object *args) ;/*(void
 static void __lambda_70(void *data, object _, int argc, object *args) /* closure _,object k_73327 */
  {
 object k_73327 = args[0];
-  Cyc_st_add(data, "libs/file.sld:lib-init:libsfile");
+  Cyc_st_add(data, ".//libs/file.sld:lib-init:libsfile");
 return_closcall1(data,  k_73327,  obj_int2obj(0));; 
 }
 
 static void __lambda_64(void *data, object _, int argc, object *args) /* closure _,object k_73318, object file_73124_73180 */
  {
 object k_73318 = args[0]; object file_73124_73180 = args[1];
-  Cyc_st_add(data, "libs/file.sld:doc-file?");
+  Cyc_st_add(data, ".//libs/file.sld:doc-file?");
 
 closureN_type c_73940;
 object e_73954 [2];
@@ -616,7 +616,7 @@ static void __lambda_67(void *data, object self_73386, int argc, object *args) /
 static void __lambda_60(void *data, object _, int argc, object *args) /* closure _,object k_73312, object files_73122_73178 */
  {
 object k_73312 = args[0]; object files_73122_73178 = args[1];
-  Cyc_st_add(data, "libs/file.sld:scm-files");
+  Cyc_st_add(data, ".//libs/file.sld:scm-files");
 
 closureN_type c_73923;
 object e_73927 [2];
@@ -673,7 +673,7 @@ static void __lambda_61(void *data, object self_73381, int argc, object *args) /
 static void __lambda_56(void *data, object _, int argc, object *args) /* closure _,object k_73306, object files_73120_73176 */
  {
 object k_73306 = args[0]; object files_73120_73176 = args[1];
-  Cyc_st_add(data, "libs/file.sld:sld-files");
+  Cyc_st_add(data, ".//libs/file.sld:sld-files");
 
 closureN_type c_73906;
 object e_73910 [2];
@@ -732,7 +732,7 @@ static void __lambda_50(void *data, object _, int argc, object *args) /* closure
 object k_73292 = args[0]; object files_73110_73171 = args[1];
 load_varargs(pkg_73111_73172, args, 2, argc - 2);
   object pkg_73112_73173;
-  Cyc_st_add(data, "libs/file.sld:code-files");
+  Cyc_st_add(data, ".//libs/file.sld:code-files");
   
 if( (boolean_f != Cyc_is_null(pkg_73111_73172)) ){ 
   pkg_73112_73173 = NULL;
@@ -870,7 +870,7 @@ static void __lambda_51(void *data, object self_73375, int argc, object *args) /
 static void __lambda_47(void *data, object _, int argc, object *args) /* closure _,object k_73284, object file_73100_73167, object pkg_73101_73168 */
  {
 object k_73284 = args[0]; object file_73100_73167 = args[1]; object pkg_73101_73168 = args[2];
-  Cyc_st_add(data, "libs/file.sld:test-file?");
+  Cyc_st_add(data, ".//libs/file.sld:test-file?");
 
 closureN_type c_73824;
 object e_73847 [3];
@@ -941,7 +941,7 @@ static void __lambda_38(void *data, object _, int argc, object *args) /* closure
  {
 object k_73270 = args[0];
 load_varargs(prefix_7386_73162, args, 1, argc - 1);
-  Cyc_st_add(data, "libs/file.sld:random-temp-dir");
+  Cyc_st_add(data, ".//libs/file.sld:random-temp-dir");
 
 closureN_type c_73765;
 object e_73820 [2];
@@ -1138,7 +1138,7 @@ static void __lambda_22(void *data, object _, int argc, object *args) /* closure
  {
 object k_73230 = args[0];
 load_varargs(args_7353_73152, args, 1, argc - 1);
-  Cyc_st_add(data, "libs/file.sld:->path");
+  Cyc_st_add(data, ".//libs/file.sld:->path");
   
 if( (boolean_f != Cyc_is_null(args_7353_73152)) ){ 
   
@@ -1526,7 +1526,7 @@ return_direct_with_clo1(data,(closure)&c_73638,__lambda_30,  Cyc_set_cell(data, 
 
 static void __lambda_30(void *data, object self_73358, int argc, object *args) /* object self_73358, object r_73237 */
  {
- object r_73237 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73358)->elements[1]),  ((closureN)self_73358)->elements[0], ((closureN)self_73358)->elements[2], ((closureN)self_73358)->elements[3]);; 
@@ -1570,7 +1570,7 @@ static void __lambda_24(void *data, object self_73360, int argc, object *args) /
 static void __lambda_19(void *data, object _, int argc, object *args) /* closure _,object k_73225, object path_7350_73149 */
  {
 object k_73225 = args[0]; object path_7350_73149 = args[1];
-  Cyc_st_add(data, "libs/file.sld:path-extension");
+  Cyc_st_add(data, ".//libs/file.sld:path-extension");
 
 closureN_type c_73572;
 object e_73588 [2];
@@ -1625,7 +1625,7 @@ return_closcall1(data,  ((closureN)self_73344)->elements[0],  &c_73583);}
 static void __lambda_17(void *data, object _, int argc, object *args) /* closure _,object k_73220, object path_7348_73147 */
  {
 object k_73220 = args[0]; object path_7348_73147 = args[1];
-  Cyc_st_add(data, "libs/file.sld:path-strip-extension");
+  Cyc_st_add(data, ".//libs/file.sld:path-strip-extension");
 
 closureN_type c_73556;
 object e_73569 [2];
@@ -1659,7 +1659,7 @@ return_closcall1(data,  ((closureN)self_73342)->elements[0],  c_73561);
 static void __lambda_8(void *data, object _, int argc, object *args) /* closure _,object k_73205, object path_7316_73135 */
  {
 object k_73205 = args[0]; object path_7316_73135 = args[1];
-  Cyc_st_add(data, "libs/file.sld:path-extension-pos");
+  Cyc_st_add(data, ".//libs/file.sld:path-extension-pos");
 
 closureN_type c_73467;
 object e_73551 [2];
@@ -1887,7 +1887,7 @@ return_direct_with_clo1(data,(closure)&c_73477,__lambda_13,  Cyc_set_cell(data, 
 
 static void __lambda_13(void *data, object self_73341, int argc, object *args) /* object self_73341, object r_73207 */
  {
- object r_73207 = args[0];
+
   
 
 return_closcall3(data,  car(((closureN)self_73341)->elements[2]),  ((closureN)self_73341)->elements[1], ((closureN)self_73341)->elements[0], boolean_f);; 
@@ -1896,7 +1896,7 @@ return_closcall3(data,  car(((closureN)self_73341)->elements[2]),  ((closureN)se
 static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_73198, object path_7314_73133 */
  {
 object k_73198 = args[0]; object path_7314_73133 = args[1];
-  Cyc_st_add(data, "libs/file.sld:path-strip-directory");
+  Cyc_st_add(data, ".//libs/file.sld:path-strip-directory");
 
 closureN_type c_73446;
 object e_73464 [2];
@@ -1933,7 +1933,7 @@ return_closcall1(data,  ((closureN)self_73332)->elements[0],  c_73456);}
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73185, object path_731_73127 */
  {
 object k_73185 = args[0]; object path_731_73127 = args[1];
-  Cyc_st_add(data, "libs/file.sld:path-dir");
+  Cyc_st_add(data, ".//libs/file.sld:path-dir");
 
 closureN_type c_73390;
 object e_73439 [2];

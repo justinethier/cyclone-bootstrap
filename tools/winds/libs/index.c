@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -693,7 +693,7 @@ static void __lambda_10(void *data, object clo, int argc, object *args) ;/*objec
 static void __lambda_49(void *data, object _, int argc, object *args) /* closure _,object k_734447 */
  {
 object k_734447 = args[0];
-  Cyc_st_add(data, "libs/index.sld:lib-init:libsindex");
+  Cyc_st_add(data, ".//libs/index.sld:lib-init:libsindex");
 
 closureN_type c_734785;
 object e_734799 [1];
@@ -759,7 +759,7 @@ return_closcall1(data,  ((closureN)self_734497)->elements[0],  c_734794);;
 static void __lambda_40(void *data, object _, int argc, object *args) /* closure _,object k_734435, object name_734320_734359 */
  {
 object k_734435 = args[0]; object name_734320_734359 = args[1];
-  Cyc_st_add(data, "libs/index.sld:unregister-installed-package!");
+  Cyc_st_add(data, ".//libs/index.sld:unregister-installed-package!");
 
 closureN_type c_734749;
 object e_734782 [2];
@@ -894,7 +894,7 @@ return_closcall3(data,  __glo_with_91output_91to_91file_scheme_file,  &c_734753,
 
 static void __lambda_43(void *data, object self_734493, int argc, object *args) /* object self_734493, object r_734437 */
  {
- object r_734437 = args[0];
+
   
 closureN_type c_734755;
 object e_734758 [1];
@@ -921,7 +921,7 @@ static void __lambda_44(void *data, object self_734494, int argc, object *args) 
 static void __lambda_29(void *data, object _, int argc, object *args) /* closure _,object k_734421, object name_734313_734352, object version_734314_734353, object cyc_91version_734315_734354, object libs_734316_734355, object progs_734317_734356 */
  {
 object k_734421 = args[0]; object name_734313_734352 = args[1]; object version_734314_734353 = args[2]; object cyc_91version_734315_734354 = args[3]; object libs_734316_734355 = args[4]; object progs_734317_734356 = args[5];
-  Cyc_st_add(data, "libs/index.sld:register-installed-package!");
+  Cyc_st_add(data, ".//libs/index.sld:register-installed-package!");
 
 closureN_type c_734696;
 object e_734746 [6];
@@ -1110,7 +1110,7 @@ return_closcall3(data,  __glo_with_91output_91to_91file_scheme_file,  &c_734700,
 
 static void __lambda_32(void *data, object self_734485, int argc, object *args) /* object self_734485, object r_734423 */
  {
- object r_734423 = args[0];
+
   
 closureN_type c_734702;
 object e_734705 [1];
@@ -1137,7 +1137,7 @@ static void __lambda_33(void *data, object self_734486, int argc, object *args) 
 static void __lambda_28(void *data, object _, int argc, object *args) /* closure _,object k_734416 */
  {
 object k_734416 = args[0];
-  Cyc_st_add(data, "libs/index.sld:get-local-index");
+  Cyc_st_add(data, ".//libs/index.sld:get-local-index");
   
 if( (boolean_f != Cyc_io_file_exists(data, __glo__85default_91local_91index_85_libs_index)) ){ 
   
@@ -1151,7 +1151,7 @@ return_closcall2(data,  __glo_read_scheme_read,  k_734416, &c_734692);
 static void __lambda_18(void *data, object _, int argc, object *args) /* closure _,object k_734399, object index_734293_734341, object name_734294_734342, object pkg_91ver_734295_734343, object cyc_91ver_734296_734344 */
  {
 object k_734399 = args[0]; object index_734293_734341 = args[1]; object name_734294_734342 = args[2]; object pkg_91ver_734295_734343 = args[3]; object cyc_91ver_734296_734344 = args[4];
-  Cyc_st_add(data, "libs/index.sld:local-index-contains?");
+  Cyc_st_add(data, ".//libs/index.sld:local-index-contains?");
 
 closureN_type c_734605;
 object e_734685 [5];
@@ -1267,7 +1267,7 @@ return_direct_with_clo1(data,(closure)&c_734611,__lambda_21,  Cyc_set_cell(data,
 
 static void __lambda_21(void *data, object self_734471, int argc, object *args) /* object self_734471, object r_734400 */
  {
- object r_734400 = args[0];
+
   
 closureN_type c_734613;
 object e_734659 [4];
@@ -1404,7 +1404,7 @@ return_closcall1(data,  ((closureN)self_734476)->elements[0],  Cyc_num_fast_gte_
 static void __lambda_11(void *data, object _, int argc, object *args) /* closure _,object k_734379, object index_739_734329, object pkg_91name_7310_734330 */
  {
 object k_734379 = args[0]; object index_739_734329 = args[1]; object pkg_91name_7310_734330 = args[2];
-  Cyc_st_add(data, "libs/index.sld:pkg-info");
+  Cyc_st_add(data, ".//libs/index.sld:pkg-info");
 
 closureN_type c_734543;
 object e_734600 [2];
@@ -1548,7 +1548,7 @@ static void __lambda_14(void *data, object self_734466, int argc, object *args) 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_734366 */
  {
 object k_734366 = args[0];
-  Cyc_st_add(data, "libs/index.sld:get-index");
+  Cyc_st_add(data, ".//libs/index.sld:get-index");
 
 closureN_type c_734501;
 object e_734540 [1];
@@ -1607,7 +1607,7 @@ return_closcall2(data,  __glo_make_91dir_67_libs_system_91calls,  &c_734505, ((c
 
 static void __lambda_4(void *data, object self_734454, int argc, object *args) /* object self_734454, object r_734369 */
  {
- object r_734369 = args[0];
+
   
 closureN_type c_734507;
 object e_734534 [3];
@@ -1649,7 +1649,7 @@ return_closcall2(data,  __glo_display_scheme_write,  &c_734509, r_734376);;
 
 static void __lambda_6(void *data, object self_734456, int argc, object *args) /* object self_734456, object r_734370 */
  {
- object r_734370 = args[0];
+
   
 closureN_type c_734511;
 object e_734531 [3];
@@ -1669,7 +1669,7 @@ return_closcall3(data,  __glo_download_67_libs_system_91calls,  &c_734511, __glo
 
 static void __lambda_7(void *data, object self_734457, int argc, object *args) /* object self_734457, object r_734371 */
  {
- object r_734371 = args[0];
+
   
 closureN_type c_734513;
 object e_734526 [2];
@@ -1728,7 +1728,7 @@ return_closcall2(data,  __glo_delete_67_libs_system_91calls,  &c_734517, ((closu
 
 static void __lambda_10(void *data, object self_734460, int argc, object *args) /* object self_734460, object r_734373 */
  {
- object r_734373 = args[0];
+
   
 
 return_closcall1(data,  ((closureN)self_734460)->elements[0],  Cyc_cdr(data, ((closureN)self_734460)->elements[1]));; 

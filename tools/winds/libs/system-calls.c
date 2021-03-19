@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28 
+ ** Version 0.28.0 
  **
  **/
 
@@ -634,7 +634,7 @@ static void __lambda_17(void *data, object clo, int argc, object *args) ;/*objec
 static void __lambda_122(void *data, object _, int argc, object *args) /* closure _,object k_73440 */
  {
 object k_73440 = args[0];
-  Cyc_st_add(data, "libs/system-calls.sld:lib-init:libssystem_91calls");
+  Cyc_st_add(data, ".//libs/system-calls.sld:lib-init:libssystem_91calls");
 
 closureN_type c_731334;
 object e_731340 [1];
@@ -661,7 +661,7 @@ return_closcall1(data,  ((closureN)self_73610)->elements[0],  c_731339);;
 static void __lambda_115(void *data, object _, int argc, object *args) /* closure _,object k_73427, object file_73174_73222 */
  {
 object k_73427 = args[0]; object file_73174_73222 = args[1];
-  Cyc_st_add(data, "libs/system-calls.sld:touch!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:touch!");
 
 closureN_type c_731293;
 object e_731330 [2];
@@ -742,7 +742,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73609)->elemen
 
 static void __lambda_120(void *data, object self_73605, int argc, object *args) /* object self_73605, object r_73430_73502 */
  {
- object r_73430_73502 = args[0];
+
   return_closcall1(data,  ((closureN)self_73605)->elements[1],  ((closureN)self_73605)->elements[0]);; 
 }
 
@@ -799,7 +799,7 @@ static void __lambda_119(void *data, object self_73608, int argc, object *args) 
 static void __lambda_108(void *data, object _, int argc, object *args) /* closure _,object k_73414, object file_73161_73219, object to_91file_73162_73220 */
  {
 object k_73414 = args[0]; object file_73161_73219 = args[1]; object to_91file_73162_73220 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:copy-file!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:copy-file!");
 
 closureN_type c_731250;
 object e_731289 [3];
@@ -882,7 +882,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73603)->elemen
 
 static void __lambda_113(void *data, object self_73599, int argc, object *args) /* object self_73599, object r_73417_73496 */
  {
- object r_73417_73496 = args[0];
+
   return_closcall1(data,  ((closureN)self_73599)->elements[1],  ((closureN)self_73599)->elements[0]);; 
 }
 
@@ -940,7 +940,7 @@ static void __lambda_112(void *data, object self_73602, int argc, object *args) 
 static void __lambda_100(void *data, object _, int argc, object *args) /* closure _,object k_73400, object dir_73148_73216, object to_91dir_73149_73217 */
  {
 object k_73400 = args[0]; object dir_73148_73216 = args[1]; object to_91dir_73149_73217 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:copy-dir-to-dir!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:copy-dir-to-dir!");
 
 closureN_type c_731202;
 object e_731247 [3];
@@ -960,7 +960,7 @@ return_closcall2(data,  __glo_make_91dir_67_libs_system_91calls,  &c_731202, to_
 
 static void __lambda_101(void *data, object self_73591, int argc, object *args) /* object self_73591, object r_73401 */
  {
- object r_73401 = args[0];
+
   
 closureN_type c_731204;
 object e_731243 [3];
@@ -1043,7 +1043,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73597)->elemen
 
 static void __lambda_106(void *data, object self_73593, int argc, object *args) /* object self_73593, object r_73404_73490 */
  {
- object r_73404_73490 = args[0];
+
   return_closcall1(data,  ((closureN)self_73593)->elements[1],  ((closureN)self_73593)->elements[0]);; 
 }
 
@@ -1101,7 +1101,7 @@ static void __lambda_105(void *data, object self_73596, int argc, object *args) 
 static void __lambda_92(void *data, object _, int argc, object *args) /* closure _,object k_73386, object file_73135_73213, object to_91dir_73136_73214 */
  {
 object k_73386 = args[0]; object file_73135_73213 = args[1]; object to_91dir_73136_73214 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:copy-file-to-dir!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:copy-file-to-dir!");
 
 closureN_type c_731154;
 object e_731199 [3];
@@ -1121,7 +1121,7 @@ return_closcall2(data,  __glo_make_91dir_67_libs_system_91calls,  &c_731154, to_
 
 static void __lambda_93(void *data, object self_73584, int argc, object *args) /* object self_73584, object r_73387 */
  {
- object r_73387 = args[0];
+
   
 closureN_type c_731156;
 object e_731195 [3];
@@ -1204,7 +1204,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73590)->elemen
 
 static void __lambda_98(void *data, object self_73586, int argc, object *args) /* object self_73586, object r_73390_73484 */
  {
- object r_73390_73484 = args[0];
+
   return_closcall1(data,  ((closureN)self_73586)->elements[1],  ((closureN)self_73586)->elements[0]);; 
 }
 
@@ -1262,7 +1262,7 @@ static void __lambda_97(void *data, object self_73589, int argc, object *args) /
 static void __lambda_85(void *data, object _, int argc, object *args) /* closure _,object k_73373, object path_73123_73211 */
  {
 object k_73373 = args[0]; object path_73123_73211 = args[1];
-  Cyc_st_add(data, "libs/system-calls.sld:make-dir!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:make-dir!");
 
 closureN_type c_731113;
 object e_731150 [2];
@@ -1343,7 +1343,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73583)->elemen
 
 static void __lambda_90(void *data, object self_73579, int argc, object *args) /* object self_73579, object r_73376_73478 */
  {
- object r_73376_73478 = args[0];
+
   return_closcall1(data,  ((closureN)self_73579)->elements[0],  ((closureN)self_73579)->elements[1]);; 
 }
 
@@ -1402,7 +1402,7 @@ static void __lambda_77(void *data, object _, int argc, object *args) /* closure
 object k_73356 = args[0]; object file_73104_73207 = args[1];
 load_varargs(dir_73105_73208, args, 2, argc - 2);
   object dir_73108_73209;
-  Cyc_st_add(data, "libs/system-calls.sld:compile!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:compile!");
   
 if( (boolean_f != Cyc_is_null(dir_73105_73208)) ){ 
   object c_731061;
@@ -1514,7 +1514,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73577)->elemen
 
 static void __lambda_83(void *data, object self_73573, int argc, object *args) /* object self_73573, object r_73360_73472 */
  {
- object r_73360_73472 = args[0];
+
   return_closcall1(data,  ((closureN)self_73573)->elements[1],  ((closureN)self_73573)->elements[0]);; 
 }
 
@@ -1571,7 +1571,7 @@ static void __lambda_82(void *data, object self_73576, int argc, object *args) /
 static void __lambda_70(void *data, object _, int argc, object *args) /* closure _,object k_73343, object file_91or_91dir_7392_73205 */
  {
 object k_73343 = args[0]; object file_91or_91dir_7392_73205 = args[1];
-  Cyc_st_add(data, "libs/system-calls.sld:delete!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:delete!");
 
 closureN_type c_731017;
 object e_731054 [2];
@@ -1652,7 +1652,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73570)->elemen
 
 static void __lambda_75(void *data, object self_73566, int argc, object *args) /* object self_73566, object r_73346_73466 */
  {
- object r_73346_73466 = args[0];
+
   return_closcall1(data,  ((closureN)self_73566)->elements[1],  ((closureN)self_73566)->elements[0]);; 
 }
 
@@ -1709,7 +1709,7 @@ static void __lambda_74(void *data, object self_73569, int argc, object *args) /
 static void __lambda_63(void *data, object _, int argc, object *args) /* closure _,object k_73330, object file_7379_73202, object dir_7380_73203 */
  {
 object k_73330 = args[0]; object file_7379_73202 = args[1]; object dir_7380_73203 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:extract!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:extract!");
 
 closureN_type c_73974;
 object e_731013 [3];
@@ -1792,7 +1792,7 @@ return_closcall3(data,  __glo_error_scheme_base,  ((closureN)self_73564)->elemen
 
 static void __lambda_68(void *data, object self_73560, int argc, object *args) /* object self_73560, object r_73333_73460 */
  {
- object r_73333_73460 = args[0];
+
   return_closcall1(data,  ((closureN)self_73560)->elements[1],  ((closureN)self_73560)->elements[0]);; 
 }
 
@@ -1850,7 +1850,7 @@ static void __lambda_67(void *data, object self_73563, int argc, object *args) /
 static void __lambda_45(void *data, object _, int argc, object *args) /* closure _,object k_73308, object sha256sum_7359_73199, object file_7360_73200 */
  {
 object k_73308 = args[0]; object sha256sum_7359_73199 = args[1]; object file_7360_73200 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:validate-sha256sum");
+  Cyc_st_add(data, ".//libs/system-calls.sld:validate-sha256sum");
 
 closureN_type c_73876;
 object e_73937 [2];
@@ -1947,14 +1947,14 @@ static void __lambda_62(void *data, object self_73548, int argc, object *args) /
 
 static void __lambda_61(void *data, object self_73545, int argc, object *args) /* object self_73545, object r_73311_73454 */
  {
- object r_73311_73454 = args[0];
+
   return_closcall1(data,  ((closureN)self_73545)->elements[1],  ((closureN)self_73545)->elements[0]);; 
 }
 
 static void __lambda_58(void *data, object _, int argc, object *args) /* closure _,object k_73312_73451 */
  {
 object k_73312_73451 = args[0];
-  Cyc_st_add(data, "libs/system-calls.sld:validate-sha256sum");
+  Cyc_st_add(data, ".//libs/system-calls.sld:validate-sha256sum");
 
 closureN_type c_73943;
 object e_73954 [1];
@@ -2218,7 +2218,7 @@ return_closcall1(data,  ((closureN)self_73552)->elements[0],  Cyc_system(r_73321
 static void __lambda_27(void *data, object _, int argc, object *args) /* closure _,object k_73286, object url_7339_73196, object outfile_7340_73197 */
  {
 object k_73286 = args[0]; object url_7339_73196 = args[1]; object outfile_7340_73197 = args[2];
-  Cyc_st_add(data, "libs/system-calls.sld:download!");
+  Cyc_st_add(data, ".//libs/system-calls.sld:download!");
 
 closureN_type c_73775;
 object e_73836 [2];
@@ -2328,7 +2328,7 @@ static void __lambda_44(void *data, object self_73532, int argc, object *args) /
 
 static void __lambda_43(void *data, object self_73528, int argc, object *args) /* object self_73528, object r_73289_73448 */
  {
- object r_73289_73448 = args[0];
+
   return_closcall1(data,  ((closureN)self_73528)->elements[0],  ((closureN)self_73528)->elements[1]);; 
 }
 
@@ -2599,7 +2599,7 @@ return_closcall1(data,  ((closureN)self_73536)->elements[0],  Cyc_system(r_73299
 static void __lambda_25(void *data, object _, int argc, object *args) /* closure _,object k_73281, object command_7338_73195 */
  {
 object k_73281 = args[0]; object command_7338_73195 = args[1];
-  Cyc_st_add(data, "libs/system-calls.sld:command-exists?");
+  Cyc_st_add(data, ".//libs/system-calls.sld:command-exists?");
 
 closureN_type c_73764;
 object e_73771 [1];
@@ -2630,7 +2630,7 @@ return_closcall1(data,  ((closureN)self_73525)->elements[0],  Cyc_eq(obj_int2obj
 static void __lambda_24(void *data, object _, int argc, object *args) /* closure _,object k_73278, object return_91code_7337_73194 */
  {
 object k_73278 = args[0]; object return_91code_7337_73194 = args[1];
-  Cyc_st_add(data, "libs/system-calls.sld:ok?");
+  Cyc_st_add(data, ".//libs/system-calls.sld:ok?");
 
 
 return_closcall1(data,  k_73278,  Cyc_eq(obj_int2obj(0), return_91code_7337_73194));; 
@@ -2639,7 +2639,7 @@ return_closcall1(data,  k_73278,  Cyc_eq(obj_int2obj(0), return_91code_7337_7319
 static void __lambda_22(void *data, object _, int argc, object *args) /* closure _,object k_73273 */
  {
 object k_73273 = args[0];
-  Cyc_st_add(data, "libs/system-calls.sld:DEBUG?");
+  Cyc_st_add(data, ".//libs/system-calls.sld:DEBUG?");
 
 closureN_type c_73752;
 object e_73757 [1];
@@ -2665,8 +2665,8 @@ return_closcall1(data,  ((closureN)self_73524)->elements[0],  Cyc_eq(r_73274, qu
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_73228, object expr_735_7316_7329_73186, object rename_736_7317_7330_73187, object compare_737_7318_7331_73188 */
  {
-object k_73228 = args[0]; object expr_735_7316_7329_73186 = args[1]; object rename_736_7317_7330_73187 = args[2]; object compare_737_7318_7331_73188 = args[3];
-  Cyc_st_add(data, "libs/system-calls.sld:DEBUG");
+object k_73228 = args[0]; object expr_735_7316_7329_73186 = args[1]; object rename_736_7317_7330_73187 = args[2];
+  Cyc_st_add(data, ".//libs/system-calls.sld:DEBUG");
 
 closureN_type c_73613;
 object e_73747 [3];
