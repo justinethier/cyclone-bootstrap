@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.27 
+ ** Version 0.28.0 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,23 +90,23 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
 #include "cyclone/types.h"
@@ -139,43 +141,47 @@ object __glo_cdar_scheme_cxr = NULL;
 object __glo_cadr_scheme_cxr = NULL;
 object __glo_caar_scheme_cxr = NULL;
 #include "cyclone/runtime.h"
-static void __lambda_30(void *data, int argc, closure _,object k_73220) ;
-static void __lambda_29(void *data, int argc, closure _,object k_73213, object lis_7329_7358) ;
-static void __lambda_28(void *data, int argc, closure _,object k_73207, object lis_7328_7357) ;
-static void __lambda_27(void *data, int argc, closure _,object k_73201, object lis_7327_7356) ;
-static void __lambda_26(void *data, int argc, closure _,object k_73195, object lis_7326_7355) ;
-static void __lambda_25(void *data, int argc, closure _,object k_73189, object lis_7325_7354) ;
-static void __lambda_24(void *data, int argc, closure _,object k_73183, object lis_7324_7353) ;
-static void __lambda_23(void *data, int argc, closure _,object k_73177, object lis_7323_7352) ;
-static void __lambda_22(void *data, int argc, closure _,object k_73171, object lis_7322_7351) ;
-static void __lambda_21(void *data, int argc, closure _,object k_73165, object lis_7321_7350) ;
-static void __lambda_20(void *data, int argc, closure _,object k_73159, object lis_7320_7349) ;
-static void __lambda_19(void *data, int argc, closure _,object k_73153, object lis_7319_7348) ;
-static void __lambda_18(void *data, int argc, closure _,object k_73147, object lis_7318_7347) ;
-static void __lambda_17(void *data, int argc, closure _,object k_73141, object lis_7317_7346) ;
-static void __lambda_16(void *data, int argc, closure _,object k_73135, object lis_7316_7345) ;
-static void __lambda_15(void *data, int argc, closure _,object k_73129, object lis_7315_7344) ;
-static void __lambda_14(void *data, int argc, closure _,object k_73123, object lis_7314_7343) ;
-static void __lambda_13(void *data, int argc, closure _,object k_73117, object lis_7313_7342) ;
-static void __lambda_12(void *data, int argc, closure _,object k_73112, object lis_7312_7341) ;
-static void __lambda_11(void *data, int argc, closure _,object k_73107, object lis_7311_7340) ;
-static void __lambda_10(void *data, int argc, closure _,object k_73102, object lis_7310_7339) ;
-static void __lambda_9(void *data, int argc, closure _,object k_7397, object lis_739_7338) ;
-static void __lambda_8(void *data, int argc, closure _,object k_7392, object lis_738_7337) ;
-static void __lambda_7(void *data, int argc, closure _,object k_7387, object lis_737_7336) ;
-static void __lambda_6(void *data, int argc, closure _,object k_7382, object lis_736_7335) ;
-static void __lambda_5(void *data, int argc, closure _,object k_7377, object lis_735_7334) ;
-static void __lambda_4(void *data, int argc, closure _,object k_7373, object lis_734_7333) ;
-static void __lambda_3(void *data, int argc, closure _,object k_7369, object lis_733_7332) ;
-static void __lambda_2(void *data, int argc, closure _,object k_7365, object lis_732_7331) ;
-static void __lambda_1(void *data, int argc, closure _,object k_7361, object lis_731_7330) ;
+static void __lambda_30(void *data, object clo, int argc, object *args) ;/*closure _,object k_73220*/
+static void __lambda_29(void *data, object clo, int argc, object *args) ;/*closure _,object k_73213, object lis_7329_7358*/
+static void __lambda_28(void *data, object clo, int argc, object *args) ;/*closure _,object k_73207, object lis_7328_7357*/
+static void __lambda_27(void *data, object clo, int argc, object *args) ;/*closure _,object k_73201, object lis_7327_7356*/
+static void __lambda_26(void *data, object clo, int argc, object *args) ;/*closure _,object k_73195, object lis_7326_7355*/
+static void __lambda_25(void *data, object clo, int argc, object *args) ;/*closure _,object k_73189, object lis_7325_7354*/
+static void __lambda_24(void *data, object clo, int argc, object *args) ;/*closure _,object k_73183, object lis_7324_7353*/
+static void __lambda_23(void *data, object clo, int argc, object *args) ;/*closure _,object k_73177, object lis_7323_7352*/
+static void __lambda_22(void *data, object clo, int argc, object *args) ;/*closure _,object k_73171, object lis_7322_7351*/
+static void __lambda_21(void *data, object clo, int argc, object *args) ;/*closure _,object k_73165, object lis_7321_7350*/
+static void __lambda_20(void *data, object clo, int argc, object *args) ;/*closure _,object k_73159, object lis_7320_7349*/
+static void __lambda_19(void *data, object clo, int argc, object *args) ;/*closure _,object k_73153, object lis_7319_7348*/
+static void __lambda_18(void *data, object clo, int argc, object *args) ;/*closure _,object k_73147, object lis_7318_7347*/
+static void __lambda_17(void *data, object clo, int argc, object *args) ;/*closure _,object k_73141, object lis_7317_7346*/
+static void __lambda_16(void *data, object clo, int argc, object *args) ;/*closure _,object k_73135, object lis_7316_7345*/
+static void __lambda_15(void *data, object clo, int argc, object *args) ;/*closure _,object k_73129, object lis_7315_7344*/
+static void __lambda_14(void *data, object clo, int argc, object *args) ;/*closure _,object k_73123, object lis_7314_7343*/
+static void __lambda_13(void *data, object clo, int argc, object *args) ;/*closure _,object k_73117, object lis_7313_7342*/
+static void __lambda_12(void *data, object clo, int argc, object *args) ;/*closure _,object k_73112, object lis_7312_7341*/
+static void __lambda_11(void *data, object clo, int argc, object *args) ;/*closure _,object k_73107, object lis_7311_7340*/
+static void __lambda_10(void *data, object clo, int argc, object *args) ;/*closure _,object k_73102, object lis_7310_7339*/
+static void __lambda_9(void *data, object clo, int argc, object *args) ;/*closure _,object k_7397, object lis_739_7338*/
+static void __lambda_8(void *data, object clo, int argc, object *args) ;/*closure _,object k_7392, object lis_738_7337*/
+static void __lambda_7(void *data, object clo, int argc, object *args) ;/*closure _,object k_7387, object lis_737_7336*/
+static void __lambda_6(void *data, object clo, int argc, object *args) ;/*closure _,object k_7382, object lis_736_7335*/
+static void __lambda_5(void *data, object clo, int argc, object *args) ;/*closure _,object k_7377, object lis_735_7334*/
+static void __lambda_4(void *data, object clo, int argc, object *args) ;/*closure _,object k_7373, object lis_734_7333*/
+static void __lambda_3(void *data, object clo, int argc, object *args) ;/*closure _,object k_7369, object lis_733_7332*/
+static void __lambda_2(void *data, object clo, int argc, object *args) ;/*closure _,object k_7365, object lis_732_7331*/
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_7361, object lis_731_7330*/
 
-static void __lambda_30(void *data, int argc, closure _,object k_73220) {
+static void __lambda_30(void *data, object _, int argc, object *args) /* closure _,object k_73220 */
+ {
+object k_73220 = args[0];
   Cyc_st_add(data, "scheme/cxr.sld:lib-init:schemecxr");
 return_closcall1(data,  k_73220,  obj_int2obj(0));; 
 }
 
-static void __lambda_29(void *data, int argc, closure _,object k_73213, object lis_7329_7358) {
+static void __lambda_29(void *data, object _, int argc, object *args) /* closure _,object k_73213, object lis_7329_7358 */
+ {
+object k_73213 = args[0]; object lis_7329_7358 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caaaaar");
 
 
@@ -190,7 +196,9 @@ static void __lambda_29(void *data, int argc, closure _,object k_73213, object l
 return_closcall1(data,  k_73213,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7329_7358))))));; 
 }
 
-static void __lambda_28(void *data, int argc, closure _,object k_73207, object lis_7328_7357) {
+static void __lambda_28(void *data, object _, int argc, object *args) /* closure _,object k_73207, object lis_7328_7357 */
+ {
+object k_73207 = args[0]; object lis_7328_7357 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cddddr");
 
 
@@ -203,7 +211,9 @@ static void __lambda_28(void *data, int argc, closure _,object k_73207, object l
 return_closcall1(data,  k_73207,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7328_7357)))));; 
 }
 
-static void __lambda_27(void *data, int argc, closure _,object k_73201, object lis_7327_7356) {
+static void __lambda_27(void *data, object _, int argc, object *args) /* closure _,object k_73201, object lis_7327_7356 */
+ {
+object k_73201 = args[0]; object lis_7327_7356 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdddar");
 
 
@@ -216,7 +226,9 @@ static void __lambda_27(void *data, int argc, closure _,object k_73201, object l
 return_closcall1(data,  k_73201,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7327_7356)))));; 
 }
 
-static void __lambda_26(void *data, int argc, closure _,object k_73195, object lis_7326_7355) {
+static void __lambda_26(void *data, object _, int argc, object *args) /* closure _,object k_73195, object lis_7326_7355 */
+ {
+object k_73195 = args[0]; object lis_7326_7355 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cddadr");
 
 
@@ -229,7 +241,9 @@ static void __lambda_26(void *data, int argc, closure _,object k_73195, object l
 return_closcall1(data,  k_73195,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7326_7355)))));; 
 }
 
-static void __lambda_25(void *data, int argc, closure _,object k_73189, object lis_7325_7354) {
+static void __lambda_25(void *data, object _, int argc, object *args) /* closure _,object k_73189, object lis_7325_7354 */
+ {
+object k_73189 = args[0]; object lis_7325_7354 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cddaar");
 
 
@@ -242,7 +256,9 @@ static void __lambda_25(void *data, int argc, closure _,object k_73189, object l
 return_closcall1(data,  k_73189,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7325_7354)))));; 
 }
 
-static void __lambda_24(void *data, int argc, closure _,object k_73183, object lis_7324_7353) {
+static void __lambda_24(void *data, object _, int argc, object *args) /* closure _,object k_73183, object lis_7324_7353 */
+ {
+object k_73183 = args[0]; object lis_7324_7353 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdaddr");
 
 
@@ -255,7 +271,9 @@ static void __lambda_24(void *data, int argc, closure _,object k_73183, object l
 return_closcall1(data,  k_73183,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7324_7353)))));; 
 }
 
-static void __lambda_23(void *data, int argc, closure _,object k_73177, object lis_7323_7352) {
+static void __lambda_23(void *data, object _, int argc, object *args) /* closure _,object k_73177, object lis_7323_7352 */
+ {
+object k_73177 = args[0]; object lis_7323_7352 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdadar");
 
 
@@ -268,7 +286,9 @@ static void __lambda_23(void *data, int argc, closure _,object k_73177, object l
 return_closcall1(data,  k_73177,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7323_7352)))));; 
 }
 
-static void __lambda_22(void *data, int argc, closure _,object k_73171, object lis_7322_7351) {
+static void __lambda_22(void *data, object _, int argc, object *args) /* closure _,object k_73171, object lis_7322_7351 */
+ {
+object k_73171 = args[0]; object lis_7322_7351 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdaadr");
 
 
@@ -281,7 +301,9 @@ static void __lambda_22(void *data, int argc, closure _,object k_73171, object l
 return_closcall1(data,  k_73171,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7322_7351)))));; 
 }
 
-static void __lambda_21(void *data, int argc, closure _,object k_73165, object lis_7321_7350) {
+static void __lambda_21(void *data, object _, int argc, object *args) /* closure _,object k_73165, object lis_7321_7350 */
+ {
+object k_73165 = args[0]; object lis_7321_7350 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdaaar");
 
 
@@ -294,7 +316,9 @@ static void __lambda_21(void *data, int argc, closure _,object k_73165, object l
 return_closcall1(data,  k_73165,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7321_7350)))));; 
 }
 
-static void __lambda_20(void *data, int argc, closure _,object k_73159, object lis_7320_7349) {
+static void __lambda_20(void *data, object _, int argc, object *args) /* closure _,object k_73159, object lis_7320_7349 */
+ {
+object k_73159 = args[0]; object lis_7320_7349 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cadddr");
 
 
@@ -307,7 +331,9 @@ static void __lambda_20(void *data, int argc, closure _,object k_73159, object l
 return_closcall1(data,  k_73159,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7320_7349)))));; 
 }
 
-static void __lambda_19(void *data, int argc, closure _,object k_73153, object lis_7319_7348) {
+static void __lambda_19(void *data, object _, int argc, object *args) /* closure _,object k_73153, object lis_7319_7348 */
+ {
+object k_73153 = args[0]; object lis_7319_7348 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caddar");
 
 
@@ -320,7 +346,9 @@ static void __lambda_19(void *data, int argc, closure _,object k_73153, object l
 return_closcall1(data,  k_73153,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7319_7348)))));; 
 }
 
-static void __lambda_18(void *data, int argc, closure _,object k_73147, object lis_7318_7347) {
+static void __lambda_18(void *data, object _, int argc, object *args) /* closure _,object k_73147, object lis_7318_7347 */
+ {
+object k_73147 = args[0]; object lis_7318_7347 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cadadr");
 
 
@@ -333,7 +361,9 @@ static void __lambda_18(void *data, int argc, closure _,object k_73147, object l
 return_closcall1(data,  k_73147,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7318_7347)))));; 
 }
 
-static void __lambda_17(void *data, int argc, closure _,object k_73141, object lis_7317_7346) {
+static void __lambda_17(void *data, object _, int argc, object *args) /* closure _,object k_73141, object lis_7317_7346 */
+ {
+object k_73141 = args[0]; object lis_7317_7346 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cadaar");
 
 
@@ -346,7 +376,9 @@ static void __lambda_17(void *data, int argc, closure _,object k_73141, object l
 return_closcall1(data,  k_73141,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7317_7346)))));; 
 }
 
-static void __lambda_16(void *data, int argc, closure _,object k_73135, object lis_7316_7345) {
+static void __lambda_16(void *data, object _, int argc, object *args) /* closure _,object k_73135, object lis_7316_7345 */
+ {
+object k_73135 = args[0]; object lis_7316_7345 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caaddr");
 
 
@@ -359,7 +391,9 @@ static void __lambda_16(void *data, int argc, closure _,object k_73135, object l
 return_closcall1(data,  k_73135,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7316_7345)))));; 
 }
 
-static void __lambda_15(void *data, int argc, closure _,object k_73129, object lis_7315_7344) {
+static void __lambda_15(void *data, object _, int argc, object *args) /* closure _,object k_73129, object lis_7315_7344 */
+ {
+object k_73129 = args[0]; object lis_7315_7344 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caadar");
 
 
@@ -372,7 +406,9 @@ static void __lambda_15(void *data, int argc, closure _,object k_73129, object l
 return_closcall1(data,  k_73129,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7315_7344)))));; 
 }
 
-static void __lambda_14(void *data, int argc, closure _,object k_73123, object lis_7314_7343) {
+static void __lambda_14(void *data, object _, int argc, object *args) /* closure _,object k_73123, object lis_7314_7343 */
+ {
+object k_73123 = args[0]; object lis_7314_7343 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caaadr");
 
 
@@ -385,7 +421,9 @@ static void __lambda_14(void *data, int argc, closure _,object k_73123, object l
 return_closcall1(data,  k_73123,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7314_7343)))));; 
 }
 
-static void __lambda_13(void *data, int argc, closure _,object k_73117, object lis_7313_7342) {
+static void __lambda_13(void *data, object _, int argc, object *args) /* closure _,object k_73117, object lis_7313_7342 */
+ {
+object k_73117 = args[0]; object lis_7313_7342 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caaaar");
 
 
@@ -398,7 +436,9 @@ static void __lambda_13(void *data, int argc, closure _,object k_73117, object l
 return_closcall1(data,  k_73117,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7313_7342)))));; 
 }
 
-static void __lambda_12(void *data, int argc, closure _,object k_73112, object lis_7312_7341) {
+static void __lambda_12(void *data, object _, int argc, object *args) /* closure _,object k_73112, object lis_7312_7341 */
+ {
+object k_73112 = args[0]; object lis_7312_7341 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdddr");
 
 
@@ -409,7 +449,9 @@ static void __lambda_12(void *data, int argc, closure _,object k_73112, object l
 return_closcall1(data,  k_73112,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7312_7341))));; 
 }
 
-static void __lambda_11(void *data, int argc, closure _,object k_73107, object lis_7311_7340) {
+static void __lambda_11(void *data, object _, int argc, object *args) /* closure _,object k_73107, object lis_7311_7340 */
+ {
+object k_73107 = args[0]; object lis_7311_7340 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cddar");
 
 
@@ -420,7 +462,9 @@ static void __lambda_11(void *data, int argc, closure _,object k_73107, object l
 return_closcall1(data,  k_73107,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7311_7340))));; 
 }
 
-static void __lambda_10(void *data, int argc, closure _,object k_73102, object lis_7310_7339) {
+static void __lambda_10(void *data, object _, int argc, object *args) /* closure _,object k_73102, object lis_7310_7339 */
+ {
+object k_73102 = args[0]; object lis_7310_7339 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdadr");
 
 
@@ -431,7 +475,9 @@ static void __lambda_10(void *data, int argc, closure _,object k_73102, object l
 return_closcall1(data,  k_73102,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7310_7339))));; 
 }
 
-static void __lambda_9(void *data, int argc, closure _,object k_7397, object lis_739_7338) {
+static void __lambda_9(void *data, object _, int argc, object *args) /* closure _,object k_7397, object lis_739_7338 */
+ {
+object k_7397 = args[0]; object lis_739_7338 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdaar");
 
 
@@ -442,7 +488,9 @@ static void __lambda_9(void *data, int argc, closure _,object k_7397, object lis
 return_closcall1(data,  k_7397,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_739_7338))));; 
 }
 
-static void __lambda_8(void *data, int argc, closure _,object k_7392, object lis_738_7337) {
+static void __lambda_8(void *data, object _, int argc, object *args) /* closure _,object k_7392, object lis_738_7337 */
+ {
+object k_7392 = args[0]; object lis_738_7337 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caddr");
 
 
@@ -453,7 +501,9 @@ static void __lambda_8(void *data, int argc, closure _,object k_7392, object lis
 return_closcall1(data,  k_7392,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_738_7337))));; 
 }
 
-static void __lambda_7(void *data, int argc, closure _,object k_7387, object lis_737_7336) {
+static void __lambda_7(void *data, object _, int argc, object *args) /* closure _,object k_7387, object lis_737_7336 */
+ {
+object k_7387 = args[0]; object lis_737_7336 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cadar");
 
 
@@ -464,7 +514,9 @@ static void __lambda_7(void *data, int argc, closure _,object k_7387, object lis
 return_closcall1(data,  k_7387,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_737_7336))));; 
 }
 
-static void __lambda_6(void *data, int argc, closure _,object k_7382, object lis_736_7335) {
+static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_7382, object lis_736_7335 */
+ {
+object k_7382 = args[0]; object lis_736_7335 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caadr");
 
 
@@ -475,7 +527,9 @@ static void __lambda_6(void *data, int argc, closure _,object k_7382, object lis
 return_closcall1(data,  k_7382,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_736_7335))));; 
 }
 
-static void __lambda_5(void *data, int argc, closure _,object k_7377, object lis_735_7334) {
+static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_7377, object lis_735_7334 */
+ {
+object k_7377 = args[0]; object lis_735_7334 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caaar");
 
 
@@ -486,7 +540,9 @@ static void __lambda_5(void *data, int argc, closure _,object k_7377, object lis
 return_closcall1(data,  k_7377,  Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_735_7334))));; 
 }
 
-static void __lambda_4(void *data, int argc, closure _,object k_7373, object lis_734_7333) {
+static void __lambda_4(void *data, object _, int argc, object *args) /* closure _,object k_7373, object lis_734_7333 */
+ {
+object k_7373 = args[0]; object lis_734_7333 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cddr");
 
 
@@ -495,7 +551,9 @@ static void __lambda_4(void *data, int argc, closure _,object k_7373, object lis
 return_closcall1(data,  k_7373,  Cyc_cdr(data, Cyc_cdr(data, lis_734_7333)));; 
 }
 
-static void __lambda_3(void *data, int argc, closure _,object k_7369, object lis_733_7332) {
+static void __lambda_3(void *data, object _, int argc, object *args) /* closure _,object k_7369, object lis_733_7332 */
+ {
+object k_7369 = args[0]; object lis_733_7332 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cdar");
 
 
@@ -504,7 +562,9 @@ static void __lambda_3(void *data, int argc, closure _,object k_7369, object lis
 return_closcall1(data,  k_7369,  Cyc_cdr(data, Cyc_car(data, lis_733_7332)));; 
 }
 
-static void __lambda_2(void *data, int argc, closure _,object k_7365, object lis_732_7331) {
+static void __lambda_2(void *data, object _, int argc, object *args) /* closure _,object k_7365, object lis_732_7331 */
+ {
+object k_7365 = args[0]; object lis_732_7331 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:cadr");
 
 
@@ -513,7 +573,9 @@ static void __lambda_2(void *data, int argc, closure _,object k_7365, object lis
 return_closcall1(data,  k_7365,  Cyc_car(data, Cyc_cdr(data, lis_732_7331)));; 
 }
 
-static void __lambda_1(void *data, int argc, closure _,object k_7361, object lis_731_7330) {
+static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7361, object lis_731_7330 */
+ {
+object k_7361 = args[0]; object lis_731_7330 = args[1];
   Cyc_st_add(data, "scheme/cxr.sld:caar");
 
 
@@ -522,10 +584,11 @@ static void __lambda_1(void *data, int argc, closure _,object k_7361, object lis
 return_closcall1(data,  k_7361,  Cyc_car(data, Cyc_car(data, lis_731_7330)));; 
 }
 
-void c_schemecxr_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-(((closure)cont)->fn)(data, 1, cont, NULL);
+void c_schemecxr_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
+object buf[1]; object cont = args[0];
+buf[0] = NULL; (((closure)cont)->fn)(data, cont, 1, buf);
  } 
-void c_schemecxr_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecxr_entry_pt_first_lambda(void *data, object clo, int argc, object *args){ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117schemecxr_scheme_cxr", (object *) &__glo_lib_91init_117schemecxr_scheme_cxr);
@@ -682,10 +745,10 @@ make_pair(c_73547, &pair_73540, &c_73548);
 make_pair(c_73546, &pair_73542, &c_73547);
 make_pair(c_73545, &pair_73544, &c_73546);
 Cyc_global_variables = &c_73545;
-cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, 1, cont, cont);
+object buf[1]; buf[0] = ((closure1_type *)clo)->element;
+(((closure)__glo_lib_91init_117schemecxr_scheme_cxr)->fn)(data, buf[0], 1, buf);
 }
-void c_schemecxr_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecxr_entry_pt(void *data, object cont, int argc, object value){ 
   register_library("scheme_cxr");
-  c_schemecxr_entry_pt_first_lambda(data, argc, cont,value);
+  c_schemecxr_entry_pt_first_lambda(data, cont, argc, value);
 }

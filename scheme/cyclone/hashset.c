@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.27 
+ ** Version 0.28.0 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,39 +90,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
-#define closcall3(td, clo,a1,a2,a3) \
+#define closcall3(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 2, (closure)(a1), clo,a2,a3); \
+   Cyc_apply(td, clo, 3, buf ); \
 } else { \
-   ((clo)->fn)(td, 3, clo,a1,a2,a3);\
+   ((clo)->fn)(td, clo, 3, buf); \
+;\
 }
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td, clo, buf, 3); \
      return; \
  } else {\
-     closcall3(td, (closure) (clo),a1,a2,a3); \
+     closcall3(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -138,23 +141,23 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct3(td, _fn,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 3); \
      return; \
  } else { \
-     (_fn)(td, 3, (closure)_fn,a1,a2,a3); \
+     (_fn)(td, (closure)_fn, 3, buf); \
  }}
 
 #define return_direct_with_clo3(td, clo, _fn,a1,a2,a3) { \
  char top; \
+ object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
      GC(td, clo, buf, 3); \
      return; \
  } else { \
-     (_fn)(td, 3, (closure)(clo),a1,a2,a3); \
+     (_fn)(td, (closure)(clo), 3, buf); \
  }}
 
 #include "cyclone/hashset.h"
@@ -389,33 +392,37 @@ extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
 #include "cyclone/runtime.h"
-static void __lambda_4(void *data, int argc, closure _,object k_7314) ;
-static void __lambda_10(void *data, int argc, closure _, object k, object opq, object item ) ;
-static void __lambda_9(void *data, int argc, closure _, object k, object opq, object item ) ;
-static void __lambda_1(void *data, int argc, closure _,object k_739, object hs_731_734, object lis_732_735) ;
-static void __lambda_3(void *data, int argc, object self_7315, object k_7311, object p_733_736) ;
-static void __lambda_2(void *data, int argc, object self_7316, object r_7310) ;
-static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) ;
-static void __lambda_7(void *data, int argc, closure _, object k, object opq ) ;
-static void __lambda_6(void *data, int argc, closure _, object k, object opq ) ;
-static void __lambda_5(void *data, int argc, closure _, object k ) ;
+static void __lambda_4(void *data, object clo, int argc, object *args) ;/*closure _,object k_7314*/
+static void __lambda_10(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq, object item )*/
+static void __lambda_9(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq, object item )*/
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_739, object hs_731_734, object lis_732_735*/
+static void __lambda_3(void *data, object clo, int argc, object *args) ;/*object self_7315, object k_7311, object p_733_736*/
+static void __lambda_2(void *data, object clo, int argc, object *args) ;/*object self_7316, object r_7310*/
+static void __lambda_8(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq, object item )*/
+static void __lambda_7(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq )*/
+static void __lambda_6(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k, object opq )*/
+static void __lambda_5(void *data, object clo, int argc, object *args) ;/*(void *data, int argc, closure _, object k )*/
 
-static void __lambda_4(void *data, int argc, closure _,object k_7314) {
+static void __lambda_4(void *data, object _, int argc, object *args) /* closure _,object k_7314 */
+ {
+object k_7314 = args[0];
   Cyc_st_add(data, "scheme/cyclone/hashset.sld:lib-init:schemecyclonehashset");
 return_closcall1(data,  k_7314,  obj_int2obj(0));; 
 }
 
-static void __lambda_10(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_10(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object item = args[2];
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_is_member(hs, item);
     return_closcall1(data, k, rv ? boolean_t : boolean_f);
    }
-static void __lambda_9(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_9(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object item = args[2];
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_remove(hs, item);
     return_closcall1(data, k, obj_int2obj(rv));
    }
-static void __lambda_1(void *data, int argc, closure _,object k_739, object hs_731_734, object lis_732_735) {
+static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_739, object hs_731_734, object lis_732_735 */
+ {
+object k_739 = args[0]; object hs_731_734 = args[1]; object lis_732_735 = args[2];
   Cyc_st_add(data, "scheme/cyclone/hashset.sld:hs-add-all!");
 
 closureN_type c_7323;
@@ -445,38 +452,43 @@ c_7328.elements[0] = hs_731_734;
 return_direct_with_clo1(data,(closure)&c_7323,__lambda_2,  &c_7328);; 
 }
 
-static void __lambda_3(void *data, int argc, object self_7315, object k_7311, object p_733_736) {
+static void __lambda_3(void *data, object self_7315, int argc, object *args) /* object self_7315, object k_7311, object p_733_736 */
+ {
+ object k_7311 = args[0]; object p_733_736 = args[1];
   return_closcall3(data,  __glo_hs_91add_67_scheme_cyclone_hashset,  k_7311, ((closureN)self_7315)->elements[0], p_733_736);; 
 }
 
-static void __lambda_2(void *data, int argc, object self_7316, object r_7310) {
+static void __lambda_2(void *data, object self_7316, int argc, object *args) /* object self_7316, object r_7310 */
+ {
+ object r_7310 = args[0];
   return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7316)->elements[0], r_7310, ((closureN)self_7316)->elements[1]);; 
 }
 
-static void __lambda_8(void *data, int argc, closure _, object k, object opq, object item ) {
+static void __lambda_8(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object item = args[2];
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int rv = hashset_add(hs, item);
     return_closcall1(data, k, obj_int2obj(rv));
    }
-static void __lambda_7(void *data, int argc, closure _, object k, object opq ) {
+static void __lambda_7(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     int count = hashset_num_items(hs);
     return_closcall1(data, k, obj_int2obj(count));
    }
-static void __lambda_6(void *data, int argc, closure _, object k, object opq ) {
+static void __lambda_6(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];
     hashset_t hs = (hashset_t)(opaque_ptr(opq));
     hashset_destroy(hs);
     return_closcall1(data, k, boolean_t);
    }
-static void __lambda_5(void *data, int argc, closure _, object k ) {
+static void __lambda_5(void *data, object _, int argc, object *args) {object k = args[0];
     hashset_t hs = hashset_create();
     make_c_opaque(opq, hs);
     return_closcall1(data, k, &opq);
    }
-void c_schemecyclonehashset_inlinable_lambdas(void *data, int argc, closure _, object cont){ 
-(((closure)cont)->fn)(data, 1, cont, NULL);
+void c_schemecyclonehashset_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
+object buf[1]; object cont = args[0];
+buf[0] = NULL; (((closure)cont)->fn)(data, cont, 1, buf);
  } 
-void c_schemecyclonehashset_entry_pt_first_lambda(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonehashset_entry_pt_first_lambda(void *data, object clo, int argc, object *args){ 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
   add_global("__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset", (object *) &__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset);
@@ -523,10 +535,10 @@ make_pair(c_7356, &pair_7349, &c_7357);
 make_pair(c_7355, &pair_7351, &c_7356);
 make_pair(c_7354, &pair_7353, &c_7355);
 Cyc_global_variables = &c_7354;
-cont = ((closure1_type *)cont)->element;
-(((closure)__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset)->fn)(data, 1, cont, cont);
+object buf[1]; buf[0] = ((closure1_type *)clo)->element;
+(((closure)__glo_lib_91init_117schemecyclonehashset_scheme_cyclone_hashset)->fn)(data, buf[0], 1, buf);
 }
-void c_schemecyclonehashset_entry_pt(data, argc, cont,value) void *data; int argc; closure cont; object value;{ 
+void c_schemecyclonehashset_entry_pt(void *data, object cont, int argc, object value){ 
   register_library("scheme_cyclone_hashset");
-  c_schemecyclonehashset_entry_pt_first_lambda(data, argc, cont,value);
+  c_schemecyclonehashset_entry_pt_first_lambda(data, cont, argc, value);
 }

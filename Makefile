@@ -71,8 +71,7 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 
 all: cyclone icyc-c winds
 
-$(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c ffi.c mstreams.c hashset.c $(CYC_BN_LIB)
-	$(CC) $(CFLAGS) -c dispatch.c -o dispatch.o
+$(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c ffi.c mstreams.c hashset.c $(CYC_BN_LIB)
 	$(CC) $(CFLAGS) -c hashset.c -o hashset.o
 	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
 	$(CC) $(CFLAGS) -c ffi.c -o ffi.o
@@ -92,7 +91,7 @@ $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c dispatch.c ffi.c mstream
   -DCYC_CC_SO=\"$(CC_SO)\" \
   -DCYC_PLATFORM=\"$(PLATFORM)\" \
   runtime.c -o runtime.o
-	  $(CREATE_LIBRARY_COMMAND) $(CREATE_LIBRARY_FLAGS) $(LIBRARY_OUTPUT_FILE) runtime.o gc.o dispatch.o ffi.o mstreams.o hashset.o
+	  $(CREATE_LIBRARY_COMMAND) $(CREATE_LIBRARY_FLAGS) $(LIBRARY_OUTPUT_FILE) runtime.o gc.o ffi.o mstreams.o hashset.o
 	  $(RANLIB_COMMAND)
 
 $(CYC_BN_LIB) : $(CYC_BN_LIB_SUBDIR)/*.c

@@ -76,6 +76,15 @@ void gc_init_heap(long heap_size);
   } \
 }
 
+#define Cyc_check_argc(data, fnc_name, argc, expected) { \
+  if (expected > argc) { \
+    char buf[128]; \
+    snprintf(buf, 127, "Expected %d arguments to %s but received %ld", \
+             expected, fnc_name, argc);  \
+    Cyc_rt_raise_msg(data, buf); \
+  } \
+}
+
 #define Cyc_verify_mutable(data, obj) { \
   if (immutable(obj)) Cyc_immutable_obj_error(data, obj); }
 #define Cyc_verify_immutable(data, obj) { \
@@ -140,28 +149,21 @@ object Cyc_global_set_cps(void *thd, object cont, object sym, object * glo, obje
    our compiler will compute the difference between the number of required
    args and the number of provided ones, and pass the difference as 'count'
  */
-#define load_varargs(var, arg_var, count) \
-  list var = (count > 0) ? alloca(sizeof(pair_type)*count) : NULL; \
+#define load_varargs(var, args_var, start, count) \
+  list var = ((count) > 0) ? alloca(sizeof(pair_type)*(count)) : NULL; \
   { \
     int i; \
     object tmp; \
-    va_list va; \
-    if (count > 0) { \
-      va_start(va, arg_var); \
-      for (i = 0; i < count; i++) { \
-        if (i) { \
-            tmp = va_arg(va, object); \
-        } else { \
-            tmp = arg_var; \
-        } \
+    if ((count) > 0) { \
+      for (i = 0; i < (count); i++) { \
+        tmp = args_var[start + i]; \
         var[i].hdr.mark = gc_color_red; \
         var[i].hdr.grayed = 0; \
         var[i].hdr.immutable = 0; \
         var[i].tag = pair_tag; \
         var[i].pair_car = tmp; \
-        var[i].pair_cdr = (i == (count-1)) ? NULL : &var[i + 1]; \
+        var[i].pair_cdr = (i == ((count)-1)) ? NULL : &var[i + 1]; \
       } \
-      va_end(va); \
     } \
   }
 /* Prototypes for primitive functions. */
@@ -173,15 +175,11 @@ object Cyc_global_set_cps(void *thd, object cont, object sym, object * glo, obje
 
 /**@{*/
 object apply(void *data, object cont, object func, object args);
-void Cyc_apply(void *data, int argc, closure cont, object prim, ...);
-void dispatch_apply_va(void *data, int argc, object clo, object cont, object func, ...);
+void Cyc_apply(void *data, object cont, int argc, object *args);
+void dispatch_apply_va(void *data, object clo, int argc, object *args);
 object apply_va(void *data, object cont, int argc, object func, ...);
 void dispatch(void *data, int argc, function_type func, object clo, object cont,
               object args);
-void dispatch_va(void *data, int argc, function_type_va func, object clo,
-                 object cont, object args);
-void do_dispatch(void *data, int argc, function_type func, object clo,
-                 object * buffer);
 
 /**@}*/
 
@@ -191,8 +189,7 @@ void do_dispatch(void *data, int argc, function_type func, object clo,
  */
 /**@{*/
 object Cyc_string_cmp(void *data, object str1, object str2);
-object dispatch_string_91append(void *data, int argc, object clo, object cont,
-                                object str1, ...);
+void dispatch_string_91append(void *data, object clo, int _argc, object *args);
 object Cyc_string2number_(void *d, object cont, object str);
 object Cyc_string2number2_(void *data, object cont, int argc, object str, ...);
 int binstr2int(const char *str);
@@ -246,16 +243,14 @@ object Cyc_set_cvar(object var, object value);
  */
 /**@{*/
 object Cyc_display(void *data, object, FILE * port);
-void dispatch_display_va(void *data, int argc, object clo, object cont,
-                         object x, ...);
+void dispatch_display_va(void *data, object clo, int argc, object *args);
 object Cyc_display_va(void *data, int argc, object x, ...);
-object Cyc_display_va_list(void *data, int argc, object x, va_list ap);
+object Cyc_display_va_list(void *data, object x, object opts);
 object Cyc_write_char(void *data, object c, object port);
 object Cyc_write(void *data, object, FILE * port);
-void dispatch_write_va(void *data, int argc, object clo, object cont,
-                       object x, ...);
+void dispatch_write_va(void *data, object clo, int argc, object *args);
 object Cyc_write_va(void *data, int argc, object x, ...);
-object Cyc_write_va_list(void *data, int argc, object x, va_list ap);
+object Cyc_write_va_list(void *data, object x, object opts);
 port_type Cyc_stdout(void);
 port_type Cyc_stdin(void);
 port_type Cyc_stderr(void);
@@ -439,6 +434,11 @@ object Cyc_num_op_va_list(void *data, int argc,
                           object(fn_op(void *, common_type *, object)),
                           int default_no_args, int default_one_arg, object n,
                           va_list ns, common_type * buf);
+object Cyc_num_op_args(void *data, int argc,
+                       object(fn_op(void *, common_type *, object)),
+                       int default_no_args, int default_one_arg, 
+                       object *args,
+                       common_type * buf);
 void Cyc_int2bignum(int n, mp_int *bn);
 object Cyc_bignum_normalize(void *data, object n);
 int Cyc_bignum_cmp(bn_cmp_type type, object x, int tx, object y, int ty);
@@ -555,7 +555,7 @@ object Cyc_installation_dir(void *data, object cont, object type);
 object Cyc_compilation_environment(void *data, object cont, object var);
 object Cyc_command_line_arguments(void *data, object cont);
 object Cyc_system(object cmd);
-void Cyc_halt(object obj);
+void Cyc_halt(void *data, object clo, int argc, object *args);
 object __halt(object obj);
 object Cyc_io_delete_file(void *data, object filename);
 object Cyc_io_file_exists(void *data, object filename);
@@ -573,7 +573,7 @@ time_t Cyc_file_last_modified_time(char *path);
 object Cyc_spawn_thread(object thunk);
 void Cyc_start_trampoline(gc_thread_data * thd);
 void Cyc_end_thread(gc_thread_data * thd);
-void Cyc_exit_thread(gc_thread_data * thd);
+void Cyc_exit_thread(void *data, object _, int argc, object *args);
 object Cyc_thread_sleep(void *data, object timeout);
 /**@}*/
 
@@ -774,7 +774,7 @@ extern object Cyc_glo_call_cc;
  * @brief Raise and handle Scheme exceptions
  */
 /**@{*/
-object Cyc_default_exception_handler(void *data, int argc, closure _, object err);
+object Cyc_default_exception_handler(void *data, object _, int argc, object *args);
 
 object Cyc_current_exception_handler(void *data);
 void Cyc_rt_raise(void *data, object err);
@@ -875,7 +875,6 @@ object Cyc_length(void *d, object l);
 object Cyc_length_unsafe(void *d, object l);
 object Cyc_list2vector(void *data, object cont, object l);
 object Cyc_list2string(void *d, object cont, object lst);
-object Cyc_list(void *data, int argc, object cont, ...);
 object memberp(void *data, object x, list l);
 object memqp(void *data, object x, list l);
 list assq(void *data, object x, list l);

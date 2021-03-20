@@ -20,8 +20,10 @@ void *Cyc_init_thread(object thread_and_thunk, int argc, object *args);
  * for the call and perform a minor GC to ensure any returned object
  * is on the heap and safe to use.
  */
-static void Cyc_return_from_scm_call(gc_thread_data *thd, int argc, object k, object result)
+static void Cyc_return_from_scm_call(void *data, object _, int argc, object *args)
 {
+  gc_thread_data *thd = data;
+  object result = args[0];
   // Cleaup thread object per Cyc_exit_thread
   gc_remove_mutator(thd);
   ck_pr_cas_int((int *)&(thd->thread_state), CYC_THREAD_STATE_RUNNABLE,
@@ -39,8 +41,10 @@ static void Cyc_return_from_scm_call(gc_thread_data *thd, int argc, object k, ob
  * We store results and longjmp back to where we started, at the
  * bottom of the trampoline (we only jump once).
  */
-static void Cyc_after_scm_call(gc_thread_data *thd, int argc, object k, object result)
+static void Cyc_after_scm_call(void *data, object _, int argc, object *args)
 {
+  gc_thread_data *thd = data;
+  object result = args[0];
   mclosure0(clo, Cyc_return_from_scm_call);
   object buf[1]; buf[0] = result;
   GC(thd, &clo, buf, 1);
@@ -101,8 +105,9 @@ object Cyc_scm_call(gc_thread_data *parent_thd, object fnc, int argc, object *ar
  * We store results and longjmp back to where we started, at the
  * bottom of the trampoline (we only jump once).
  */
-static void no_gc_after_call_scm(gc_thread_data *thd, int argc, object k, object result)
+static void no_gc_after_call_scm(gc_thread_data *thd, object _, int argc, object *args)
 {
+  object result = args[0];
   thd->gc_cont = result;
   longjmp(*(thd->jmp_start), 1);
 }
@@ -113,7 +118,8 @@ static void no_gc_after_call_scm(gc_thread_data *thd, int argc, object k, object
 static void no_gc_call_scm(gc_thread_data *thd, object fnc, object obj)
 {
   mclosure0(after, (function_type)no_gc_after_call_scm); 
-  ((closure)fnc)->fn(thd, 2, fnc, &after, obj);
+  object buf[2] = {&after, obj};
+  ((closure)fnc)->fn(thd, fnc, 2, buf);
 }
 
 /**
