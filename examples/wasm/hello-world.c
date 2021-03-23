@@ -3,24 +3,25 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.25 
+ ** Version 0.28.0 
  **
  **/
 
-#define closcall1(td, clo,a1) \
+#define closcall1(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 0, (closure)(a1), clo); \
+   Cyc_apply(td, clo, 1, buf ); \
 } else { \
-   ((clo)->fn)(td, 1, clo,a1);\
+   ((clo)->fn)(td, clo, 1, buf); \
+;\
 }
 #define return_closcall1(td, clo,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else {\
-     closcall1(td, (closure) (clo),a1); \
+     closcall1(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -38,39 +39,40 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct1(td, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)_fn,a1); \
+     (_fn)(td, (closure)_fn, 1, buf); \
  }}
 
 #define return_direct_with_clo1(td, clo, _fn,a1) { \
  char top; \
+ object buf[1]; buf[0] = a1;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[1]; buf[0] = a1;\
      GC(td, clo, buf, 1); \
      return; \
  } else { \
-     (_fn)(td, 1, (closure)(clo),a1); \
+     (_fn)(td, (closure)(clo), 1, buf); \
  }}
 
-#define closcall2(td, clo,a1,a2) \
+#define closcall2(td, clo, buf) \
 if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, 1, (closure)(a1), clo,a2); \
+   Cyc_apply(td, clo, 2, buf ); \
 } else { \
-   ((clo)->fn)(td, 2, clo,a1,a2);\
+   ((clo)->fn)(td, clo, 2, buf); \
+;\
 }
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else {\
-     closcall2(td, (closure) (clo),a1,a2); \
+     closcall2(td, (closure) (clo), buf); \
      return;\
  } \
 }
@@ -88,23 +90,23 @@ if (obj_is_not_closure(clo)) { \
 
 #define return_direct2(td, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2; \
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2; \
      mclosure0(c1, (function_type) _fn); \
      GC(td, &c1, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)_fn,a1,a2); \
+     (_fn)(td, (closure)_fn, 2, buf); \
  }}
 
 #define return_direct_with_clo2(td, clo, _fn,a1,a2) { \
  char top; \
+ object buf[2]; buf[0] = a1;buf[1] = a2;\
  if (stack_overflow(&top, (((gc_thread_data *)data)->stack_limit))) { \
-     object buf[2]; buf[0] = a1;buf[1] = a2;\
      GC(td, clo, buf, 2); \
      return; \
  } else { \
-     (_fn)(td, 2, (closure)(clo),a1,a2); \
+     (_fn)(td, (closure)(clo), 2, buf); \
  }}
 
 #include "cyclone/types.h"
@@ -115,21 +117,21 @@ extern object __glo_write_91simple_scheme_write;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
 #include "ck-polyfill.h"
-static void __lambda_1(void *data, int argc, object self_733, object r_732) ;
+static void __lambda_1(void *data, object clo, int argc, object *args) ;/*object self_733, object r_732*/
 
-static void __lambda_1(void *data, int argc, object self_733, object r_732) {
+static void __lambda_1(void *data, object self_733, int argc, object *args) /* object self_733, object r_732 */
+ {
+
   
   
   __halt(__halt(obj_int2obj(0)));; 
 }
 
-static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value);
-extern void c_schemecyclonecommon_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemebase_entry_pt(void *data, int argc, closure cont, object value);
-extern void c_schemewrite_entry_pt(void *data, int argc, closure cont, object value);
-static void c_entry_pt(data, argc, env,cont) void *data; int argc; closure env,cont; { 
-printf(" first entry point\n");
-
+static void c_entry_pt_first_lambda(void *data, object clo, int argc, object *args);
+extern void c_schemecyclonecommon_entry_pt(void *data, object clo, int argc, object* args);
+extern void c_schemebase_entry_pt(void *data, object clo, int argc, object* args);
+extern void c_schemewrite_entry_pt(void *data, object clo, int argc, object* args);
+static void c_entry_pt(void *data, object clo, int argc, object *args) { 
 Cyc_set_globals_changed((gc_thread_data *)data);
 
 
@@ -137,23 +139,10 @@ mclosure1(c_done, c_entry_pt_first_lambda, &c_done);
 mclosure1(c_7311, c_schemewrite_entry_pt, &c_done);
 mclosure1(c_7312, c_schemebase_entry_pt, &c_7311);
 mclosure1(c_7313, c_schemecyclonecommon_entry_pt, &c_7312);
-
-printf("call into init functions\n %p %p", c_schemewrite_entry_pt, c_entry_pt_first_lambda);
-
-//(c_done.fn)(data, 0, &c_done, &c_done);
-(c_7313.fn)(data, 0, &c_7313, &c_7313);
-//(c_7311.fn)(data, 0, &c_7311, &c_7311);
-//c_schemebase_entry_pt(data, 0, &c_7312, &c_7312);
+ object buf[1]; buf[0] = &c_7313; (c_7313.fn)(data, &c_7313, 1, buf);
 }
-static void c_entry_pt_first_lambda(void *data, int argc, closure cont, object value) {
+static void c_entry_pt_first_lambda(void *data, object clo, int argc, object *args) {
   
-  char addr = '\0';
-  gc_thread_data *thd = (gc_thread_data *)data;
-  printf("reached first entry point start - %p limit %p current %p \n",
-    thd->stack_start,
-    thd->stack_limit,
-    &addr);
-
 mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 1;
 
 make_utf8_string_with_len(c_7310, "Hello, world!\n", 14, 14);
