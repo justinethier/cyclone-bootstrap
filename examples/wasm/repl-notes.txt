@@ -1,0 +1,9 @@
+Need to re-write REPL or create a new example that periodically calls into JS to see if a command is ready.
+
+TODO: create an example to retrieve string from JS:
+https://emscripten.org/docs/api_reference/emscripten.h.html
+See EM_ASM_INT
+
+Once that works, can start building out the bigger JS example.
+
+Eventually need to clean everything up so we can build from master, but that is a larger project
