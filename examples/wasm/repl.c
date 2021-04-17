@@ -119,6 +119,7 @@ extern object __glo_repl_scheme_repl;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
 #include "ck-polyfill.h"
+#include <emscripten.h>
 static void __lambda_1(void *data, object clo, int argc, object *args) ;/*object self_733, object r_732*/
 
 static void __lambda_1(void *data, object self_733, int argc, object *args) /* object self_733, object r_732 */
@@ -169,8 +170,14 @@ static void c_entry_pt_first_lambda(void *data, object clo, int argc, object *ar
   
 mclosure0(c_735, (function_type)__lambda_1);c_735.num_args = 1;
 return_closcall1(data,  __glo_repl_scheme_repl,  &c_735);
-;
+
 }
+
+EMSCRIPTEN_KEEPALIVE
+void sayHi() {
+  printf("Hi\n");
+}
+
 int main(int argc, char **argv, char **envp)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
