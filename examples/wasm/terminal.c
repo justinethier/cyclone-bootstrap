@@ -455,6 +455,21 @@ extern object __glo_macro_117macro_127_191_191inline_191_191_scheme_eval;
 #include "cyclone/runtime-main.h"
 #include "ck-polyfill.h"
 #include <emscripten.h>
+
+
+char *glo_sexp = NULL;
+
+EMSCRIPTEN_KEEPALIVE
+void sendToEval(char *sexp) {
+  printf("TODO: eval %s\n", sexp);
+  char *d = malloc(strlen(s) + 1);
+  if (d) {
+    strcpy(d, s);
+  }
+  glo_sexp = d;
+}
+
+
 static void __lambda_47(void *data, object clo, int argc, object *args) ;/*object self_73132, object r_7385*/
 static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_7335*/
 static void __lambda_3(void *data, object clo, int argc, object *args) ;/*object self_7386, object k_7337, object k_731_7323*/
@@ -1455,6 +1470,7 @@ mclosure0(c_73361, (function_type)__lambda_47);c_73361.num_args = 1;
 return_closcall1(data,  __glo_loop,  &c_73361);
 ;
 }
+
 int main(int argc, char **argv, char **envp)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
