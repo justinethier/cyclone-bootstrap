@@ -448,6 +448,8 @@ extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval
 extern object __glo_macro_117macro_127_191_191inline_191_191_scheme_eval;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
+#include "ck-polyfill.h"
+#include <emscripten.h>
 static void __lambda_47(void *data, int argc, object self_73132, object r_7385) ;
 static void __lambda_1(void *data, int argc, closure _,object k_7335) ;
 static void __lambda_3(void *data, int argc, object self_7386, object k_7337, object k_731_7323) ;
@@ -505,7 +507,7 @@ static void __lambda_47(void *data, int argc, object self_73132, object r_7385) 
 }
 
 static void __lambda_1(void *data, int argc, closure _,object k_7335) {
-  Cyc_st_add(data, "terminal.scm:loop");
+  Cyc_st_add(data, "examples/wasm/terminal.scm:loop");
 
 closureN_type c_73136;
 object e_73139 [1];
@@ -1357,6 +1359,7 @@ int main(int argc, char **argv, char **envp)
 {gc_thread_data *thd;
  long stack_size = global_stack_size = STACK_SIZE;
  long heap_size = global_heap_size = HEAP_SIZE;
+ ck_polyfill_init();
  mclosure0(clos_halt,&Cyc_halt);  // Halt if final closure is reached
  mclosure0(entry_pt,&c_entry_pt); // First function to execute
  _cyc_argc = argc;
