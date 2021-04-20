@@ -505,7 +505,7 @@ void Cyc_make_shared_object(void *data, object k, object obj);
  * Size of the stack buffer, in bytes.
  * This is used as the first generation of the GC.
  */
-#define STACK_SIZE 500000
+#define STACK_SIZE 50000
 
 /** 
  * Do not allocate objects larger than this on the stack.

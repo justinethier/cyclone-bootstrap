@@ -10,7 +10,7 @@
 
 #include "cyclone/types.h"
 #include "cyclone/runtime.h"
-#include <ck_pr.h>
+#include "ck-polyfill.h"
 #include <unistd.h>
 
 void *Cyc_init_thread(object thread_and_thunk, int argc, object *args);

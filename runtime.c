@@ -8,12 +8,12 @@
  * This file contains the C runtime used by compiled programs.
  */
 
-#include <ck_hs.h>
-#include <ck_ht.h>
-#include <ck_pr.h>
+#include "ck-polyfill.h"
+#include "ck-polyfill.h"
+#include "ck-polyfill.h"
 #include "cyclone/types.h"
 #include "cyclone/runtime.h"
-#include "cyclone/ck_ht_hash.h"
+#include "ck-polyfill.h"
 #include <errno.h>
 #include <limits.h>
 #include <ctype.h>

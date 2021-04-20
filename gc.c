@@ -16,8 +16,8 @@
  * on the stack, based on "Cheney on the MTA".
  */
 
-#include <ck_array.h>
-#include <ck_pr.h>
+#include "ck-polyfill.h"
+#include "ck-polyfill.h"
 #include "cyclone/types.h"
 #include <stdint.h>
 #include <time.h>

@@ -313,7 +313,7 @@ if (obj_is_not_closure(clo)) { \
      (_fn)(td, (closure)(clo), 7, buf); \
  }}
 
-#include <ck_pr.h>
+#include "ck-polyfill.h"
 #include "cyclone/types.h"
 object __glo_lib_91init_117cycloneconcurrent_cyclone_concurrent = NULL;
 object __glo_thread_91pool_91release_67_cyclone_concurrent = NULL;
