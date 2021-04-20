@@ -453,61 +453,8 @@ extern object __glo_primitive_91implementation_191_191inline_191_191_scheme_eval
 extern object __glo_macro_117macro_127_191_191inline_191_191_scheme_eval;
 #include "cyclone/runtime.h"
 #include "cyclone/runtime-main.h"
-<<<<<<< HEAD
 #include "ck-polyfill.h"
 #include <emscripten.h>
-static void __lambda_47(void *data, int argc, object self_73132, object r_7385) ;
-static void __lambda_1(void *data, int argc, closure _,object k_7335) ;
-static void __lambda_3(void *data, int argc, object self_7386, object k_7337, object k_731_7323) ;
-static void __lambda_18(void *data, int argc, object self_7387, object k_7352, object obj_732_7324) ;
-static void __lambda_19(void *data, int argc, object self_7388, object obj_733_7325) ;
-static void __lambda_48(void *data, int argc, object self_7389, object obj_733_7325) ;
-static void __lambda_20(void *data, int argc, object self_7390, object r_7354) ;
-static void __lambda_44(void *data, int argc, object self_7391, object r_7355) ;
-static void __lambda_45(void *data, int argc, object self_7392, object r_7356) ;
-static void __lambda_46(void *data, int argc, object self_7393, object r_7353) ;
-static void __lambda_21(void *data, int argc, object self_7394, object k_7357) ;
-static void __lambda_22(void *data, int argc, object self_7395, object r_7358) ;
-static void __lambda_32(void *data, int argc, object self_73105, object r_7369) ;
-static void __lambda_40(void *data, int argc, object self_73106, object r_7370) ;
-static void __lambda_42(void *data, int argc, object self_73107, object k_7372, object o_7311_7327) ;
-static void __lambda_43(void *data, int argc, object self_73108, object r_7373) ;
-static void __lambda_41(void *data, int argc, object self_73109, object r_7371) ;
-static void __lambda_33(void *data, int argc, object self_73110, object k_7374) ;
-static void __lambda_34(void *data, int argc, object self_73111, object r_7383) ;
-static void __lambda_35(void *data, int argc, object self_73112, object r_7382) ;
-static void __lambda_36(void *data, int argc, object self_73113, object r_7376) ;
-static void __lambda_38(void *data, int argc, object self_73114, object r_7377) ;
-static void __lambda_39(void *data, int argc, object self_73115, object r_7378) ;
-static void __lambda_37(void *data, int argc, object self_73116, object k_7379) ;
-static void __lambda_23(void *data, int argc, object self_7396, object r_7368) ;
-static void __lambda_24(void *data, int argc, object self_7397, object r_7359) ;
-static void __lambda_27(void *data, int argc, object self_7398, object r_7360) ;
-static void __lambda_30(void *data, int argc, object self_7399, object k_7363, object o_737_7326) ;
-static void __lambda_31(void *data, int argc, object self_73100, object r_7364) ;
-static void __lambda_28(void *data, int argc, object self_73101, object r_7361) ;
-static void __lambda_29(void *data, int argc, object self_73102, object r_7362) ;
-static void __lambda_25(void *data, int argc, object self_73103, object k_7365) ;
-static void __lambda_26(void *data, int argc, object self_73104, object r_7367) ;
-static void __lambda_4(void *data, int argc, object self_73117, object r_7338) ;
-static void __lambda_6(void *data, int argc, object self_73118, object k_7340) ;
-static void __lambda_7(void *data, int argc, object self_73119, object str_7313_7328) ;
-static void __lambda_16(void *data, int argc, object self_73120, object r_7341) ;
-static void __lambda_17(void *data, int argc, object self_73121, object r_7342) ;
-static void __lambda_8(void *data, int argc, object self_73122, object k_7344) ;
-static void __lambda_9(void *data, int argc, object self_73123, object fp_7316_7329) ;
-static void __lambda_10(void *data, int argc, object self_73124, object sexp_91lis_7319_7330) ;
-static void __lambda_13(void *data, int argc, object self_73125, object k_7349, object sexp_7321_7331) ;
-static void __lambda_14(void *data, int argc, object self_73126, object obj_7322_7332) ;
-static void __lambda_15(void *data, int argc, object self_73127, object r_7351) ;
-static void __lambda_11(void *data, int argc, object self_73128, object r_7348) ;
-static void __lambda_12(void *data, int argc, object self_73129, object r_7347) ;
-static void __lambda_5(void *data, int argc, object self_73130, object r_7339) ;
-static void __lambda_2(void *data, int argc, object self_73131, object r_7336) ;
-static void __lambda_49(void *data, int argc, closure _, object k) ;
-
-static void __lambda_47(void *data, int argc, object self_73132, object r_7385) {
-=======
 static void __lambda_47(void *data, object clo, int argc, object *args) ;/*object self_73132, object r_7385*/
 static void __lambda_1(void *data, object clo, int argc, object *args) ;/*closure _,object k_7335*/
 static void __lambda_3(void *data, object clo, int argc, object *args) ;/*object self_7386, object k_7337, object k_731_7323*/
@@ -561,21 +508,14 @@ static void __lambda_49(void *data, object clo, int argc, object *args) ;/*(void
 static void __lambda_47(void *data, object self_73132, int argc, object *args) /* object self_73132, object r_7385 */
  {
 
->>>>>>> origin/wasm2-dev
-  
   
   __halt(__halt(obj_int2obj(0)));; 
 }
 
-<<<<<<< HEAD
-static void __lambda_1(void *data, int argc, closure _,object k_7335) {
-  Cyc_st_add(data, "examples/wasm/terminal.scm:loop");
-=======
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7335 */
  {
 object k_7335 = args[0];
   Cyc_st_add(data, "terminal.scm:loop");
->>>>>>> origin/wasm2-dev
 
 closureN_type c_73136;
 object e_73139 [1];
