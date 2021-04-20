@@ -2,6 +2,7 @@
 * Install emscripten sdk: https://emscripten.org/docs/getting_started/downloads.html
 * Load emscripten environment: `source ~/Documents/emsdk/emsdk_env.sh` 
 * Do ck-polyfill replacements: `emmake make -f Makefile-ck-polyfill polyfill`
+* Remove `#if CYC_HAVE_FMEMOPEN` sections from `mstreams.c`
 * Build libraries and the runtime: `emmake make -f Makefile-ck-polyfill`
   TODO: ran into problems building match.o with debugging enabled
 
