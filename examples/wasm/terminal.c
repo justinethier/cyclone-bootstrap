@@ -462,11 +462,13 @@ char *glo_sexp = NULL;
 EMSCRIPTEN_KEEPALIVE
 void sendToEval(char *sexp) {
   printf("TODO: eval %s\n", sexp);
-  char *d = malloc(strlen(s) + 1);
+  char *d = malloc(strlen(sexp) + 1);
   if (d) {
-    strcpy(d, s);
+    strcpy(d, sexp);
   }
+// TODO: use mutex to lock glo_sexp
   glo_sexp = d;
+// TODO: unlock
 }
 
 
@@ -1413,8 +1415,21 @@ static void __lambda_2(void *data, object self_73131, int argc, object *args) /*
   return_closcall2(data,  __glo_call_95cc_scheme_base,  ((closureN)self_73131)->elements[0], r_7336);; 
 }
 
-static void __lambda_49(void *data, object _, int argc, object *args) {object k = args[0]; make_utf8_string(data, str, "(+ 1 2 3) \"test\" (* 3 5 7)");
-    return_closcall1(data, k, &str); }
+static void __lambda_49(void *data, object _, int argc, object *args) {
+  object k = args[0]; 
+// TODO: use mutex to lock glo_sexp
+  char *s = glo_sexp;
+  glo_sexp = NULL;
+// TODO: unlock
+
+  if (s != NULL) {
+    make_utf8_string(data, str, s);
+    free(s);
+    return_closcall1(data, k, &str); 
+  } else {
+    return_closcall1(data, k, boolean_f);
+  }
+}
 static void c_entry_pt_first_lambda(void *data, object clo, int argc, object *args);
 extern void c_schemecyclonecommon_entry_pt(void *data, object clo, int argc, object* args);
 extern void c_schemebase_entry_pt(void *data, object clo, int argc, object* args);
