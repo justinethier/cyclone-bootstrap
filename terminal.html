@@ -215,7 +215,7 @@
       }
 
       function interpret(command, term) {
-        if(!is_ready) {
+        if(!isReady) {
           term.echo("not ready");
         } else {
           if(command != '') {
@@ -230,10 +230,6 @@
         Module.ccall('sendToEval', null, ['string'], [txt]);
       }
 
-      function interpret(command, term){
-        if
-      }
-
       var termOpts = {
         prompt: 'cyclone> ',
         greetings: '',
@@ -242,8 +238,7 @@
         }
       };
       jQuery(document).ready(function($) {
-        term = $('#term').terminal(interpret, termOpts);
-        $.getScript( "js/eval.js");
+        $('#term').terminal(interpret, termOpts);
       });
     </script>
     <script async type="text/javascript" src="terminal.js"></script>
