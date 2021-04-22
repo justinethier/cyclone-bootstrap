@@ -461,7 +461,6 @@ char *glo_sexp = NULL;
 
 EMSCRIPTEN_KEEPALIVE
 void sendToEval(char *sexp) {
-  printf("TODO: eval %s\n", sexp);
   char *d = malloc(strlen(sexp) + 1);
   if (d) {
     strcpy(d, sexp);
