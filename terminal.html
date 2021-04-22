@@ -113,6 +113,8 @@
     </style>
   </head>
   <body>
+    <br />
+    <br />
     <div id="term"></div>
 <!--
     <div class="spinner" id='spinner'></div>
@@ -248,6 +250,7 @@
       }
 
       var termOpts = {
+        height: 400,
         prompt: 'cyclone> ',
         greetings: '',
         onClear: function(term){
@@ -256,7 +259,7 @@
       };
       jQuery(document).ready(function($) {
         term = $('#term').terminal(interpret, termOpts);
-        $.terminal.syntax('scheme');
+        //$.terminal.syntax('scheme');
       });
     </script>
     <script async type="text/javascript" src="terminal.js"></script>
