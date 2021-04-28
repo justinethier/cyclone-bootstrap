@@ -6,3 +6,4 @@
 * Do ck-polyfill replacements: `emmake make -f Makefile-wasm polyfill`
 * Build libraries and the runtime: `emmake make -f Makefile-wasm`
 
+This is all automated by `build-wasm.sh`.
