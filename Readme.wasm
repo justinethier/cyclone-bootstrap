@@ -1,9 +1,14 @@
+# Build Instructions
+
 * Get latest cyclone-bootstrap (this repo)
 * Install emscripten sdk: https://emscripten.org/docs/getting_started/downloads.html
 * Load emscripten environment: `source ~/Documents/emsdk/emsdk_env.sh` 
-* Do ck-polyfill replacements: `emmake make -f Makefile-ck-polyfill polyfill`
-* Remove `#if CYC_HAVE_FMEMOPEN` sections from `mstreams.c`
-* Build libraries and the runtime: `emmake make -f Makefile-ck-polyfill`
+* Do ck-polyfill replacements: `emmake make -f Makefile-wasm polyfill`
+* Build libraries and the runtime: `emmake make -f Makefile-wasm`
+
+
+# Notes:
+
   TODO: ran into problems building match.o with debugging enabled
 
 start here, need to smooth these out a bit and run through it:
