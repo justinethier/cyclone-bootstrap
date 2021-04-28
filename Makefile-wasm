@@ -4,7 +4,7 @@
 #
 # Makefile for bootstrapping cyclone from generated C files.
 
-include Makefile-ck-polyfill.config
+include Makefile-wasm
 
 # Libraries
 CYC_RT_LIB = libcyclone.a
