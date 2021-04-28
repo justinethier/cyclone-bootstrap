@@ -242,6 +242,7 @@ uninstall:
 # Do necessary replacements and file copies to support compiliation without
 # having concurrency kit (libck) installed on the system
 polyfill:
+	sed -i -- 's/#define STACK_SIZE 50000/#define STACK_SIZE 5000/g' include/cyclone/types.h
 	sed -i -- 's/#include <ck_pr.h>/#include "ck-polyfill.h"/g' *.c
 	sed -i -- 's/#include <ck_array.h>/#include "ck-polyfill.h"/g' *.c
 	sed -i -- 's/#include "cyclone\/ck_ht_hash.h"/#include "ck-polyfill.h"/g' *.c
