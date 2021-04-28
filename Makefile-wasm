@@ -4,7 +4,7 @@
 #
 # Makefile for bootstrapping cyclone from generated C files.
 
-include Makefile-wasm
+include Makefile-wasm.config
 
 # Libraries
 CYC_RT_LIB = libcyclone.a
