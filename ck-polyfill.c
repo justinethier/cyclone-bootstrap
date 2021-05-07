@@ -63,7 +63,7 @@ bool ck_hs_put(ck_hs_t *_hs, unsigned long hash, const void *key)
 
   pthread_mutex_lock(&((*_hs).lock));
 
-  index = simple_hashset_is_member(set, (symbol_type *)key);
+  index = simple_hashset_is_member(hs, (symbol_type *)key);
   if (index <= 0) {
     return false;
   }
