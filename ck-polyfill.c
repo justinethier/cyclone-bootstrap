@@ -65,7 +65,7 @@ bool ck_hs_put(ck_hs_t *_hs, unsigned long hash, const void *key)
 
   index = simple_hashset_is_member(hs, (symbol_type *)key);
  printf("%s index = %d\n", symbol_desc((symbol_type *)key), index);
-  if (index <= 0) {
+  if (index == 0) {
     rv = simple_hashset_add(hs, (symbol_type *)key);
     if (rv >= 0) {
       result = true;
