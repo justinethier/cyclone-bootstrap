@@ -72,17 +72,7 @@ struct ck_malloc {
 
 static inline uint64_t MurmurHash64A(const void *key, int len, uint64_t seed)
 { 
-    uint64_t hash = seed;
-    int c, i = 0;
-    char *str = key;
-
-    while (i < len) {
-        c = *str++;
-        i++;
-        hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
-    }
-
-    return hash;
+   return 0;
 }
 
 ///////////////////////////////////////////////////////////////////////////////
@@ -108,9 +98,7 @@ typedef unsigned long ck_hs_hash_cb_t(const void *, unsigned long);
  */                                                                              
 typedef bool ck_hs_compare_cb_t(const void *, const void *);  
 
-//define CK_HS_HASH(hs, hs_hash, value) 0
-//#define CK_HS_HASH(T, F, K) F((K), (T)->seed)
-#define CK_HS_HASH(T, F, K) F((K), 342332)
+#define CK_HS_HASH(hs, hs_hash, value) 0
 
 bool ck_hs_init(ck_hs_t *, unsigned int, ck_hs_hash_cb_t *,                      
     ck_hs_compare_cb_t *, struct ck_malloc *, unsigned long, unsigned long);     
