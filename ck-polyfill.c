@@ -63,14 +63,13 @@ bool ck_hs_put(ck_hs_t *_hs, unsigned long hash, const void *key)
 
   pthread_mutex_lock(&((*_hs).lock));
 
-  index = simple_hashset_is_member(hs, (symbol_type *)key);
- printf("%s index = %d\n", symbol_desc((symbol_type *)key), index);
-  if (index == 0) {
+  //index = simple_hashset_is_member(hs, (symbol_type *)key);
+  //if (index == 0) {
     rv = simple_hashset_add(hs, (symbol_type *)key);
     if (rv >= 0) {
       result = true;
     }
-  }
+  //}
 
   pthread_mutex_unlock(&((*_hs).lock));
   return result;
@@ -257,11 +256,14 @@ void ck_pr_store_ptr(void *target, void *value)
 static const size_t prime_1 = 73;
 static const size_t prime_2 = 5009;
 
-size_t hash_function(const char* p, size_t len)
-{
-    size_t hash = 0;
-    for (; *p; ++p)
-        hash ^= *p + 0x9e3779b9 + (hash << 6) + (hash >> 2);
+size_t hash_function(const char* str, size_t len) {
+    unsigned long hash = 5381;
+    int c;
+
+    while (c = *str++) {
+        hash = ((hash << 5) + hash) + c; /* hash * 33 + c */
+    }
+
     return hash;
 }
 
