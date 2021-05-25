@@ -3,17 +3,13 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.28.0 
+ ** Version 0.29.0 
  **
  **/
 
 #define closcall1(td, clo, buf) \
-if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, clo, 1, buf ); \
-} else { \
    ((clo)->fn)(td, clo, 1, buf); \
-;\
-}
+
 #define return_closcall1(td, clo,a1) { \
  char top; \
  object buf[1]; buf[0] = a1;\
@@ -59,12 +55,8 @@ if (obj_is_not_closure(clo)) { \
  }}
 
 #define closcall2(td, clo, buf) \
-if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, clo, 2, buf ); \
-} else { \
    ((clo)->fn)(td, clo, 2, buf); \
-;\
-}
+
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  object buf[2]; buf[0] = a1;buf[1] = a2;\
@@ -110,12 +102,8 @@ if (obj_is_not_closure(clo)) { \
  }}
 
 #define closcall3(td, clo, buf) \
-if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, clo, 3, buf ); \
-} else { \
    ((clo)->fn)(td, clo, 3, buf); \
-;\
-}
+
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
@@ -161,12 +149,8 @@ if (obj_is_not_closure(clo)) { \
  }}
 
 #define closcall4(td, clo, buf) \
-if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, clo, 4, buf ); \
-} else { \
    ((clo)->fn)(td, clo, 4, buf); \
-;\
-}
+
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
@@ -212,12 +196,8 @@ if (obj_is_not_closure(clo)) { \
  }}
 
 #define closcall5(td, clo, buf) \
-if (obj_is_not_closure(clo)) { \
-   Cyc_apply(td, clo, 5, buf ); \
-} else { \
    ((clo)->fn)(td, clo, 5, buf); \
-;\
-}
+
 #define return_closcall5(td, clo,a1,a2,a3,a4,a5) { \
  char top; \
  object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
