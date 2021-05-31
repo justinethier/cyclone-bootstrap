@@ -473,7 +473,7 @@ c_7368.elements[0] = k_7320;
 
 
 make_pair(c_73110,quote_value,NULL);c_73110.hdr.immutable = 1;
-return_closcall4(data,  __glo_register_91simple_91type_scheme_base,  &c_7368, quote_box_91type, boolean_f, &c_73110);; 
+return_direct_with_clo4(data,  __glo_register_91simple_91type_scheme_base, (((closure)  __glo_register_91simple_91type_scheme_base)->fn),  &c_7368, quote_box_91type, boolean_f, &c_73110);; 
 }
 
 static void __lambda_5(void *data, object self_7340, int argc, object *args) /* object self_7340, object r_7335 */
@@ -511,7 +511,7 @@ c_7372.num_elements = 1;
 c_7372.elements = (object *)e_73104;
 c_7372.elements[0] = ((closureN)self_7341)->elements[0];
 
-return_closcall3(data,  __glo_make_91type_91predicate_scheme_base,  &c_7372, obj_int2obj(0), quote_box_91type);; 
+return_direct_with_clo3(data,  __glo_make_91type_91predicate_scheme_base, (((closure)  __glo_make_91type_91predicate_scheme_base)->fn),  &c_7372, obj_int2obj(0), quote_box_91type);; 
 }
 
 static void __lambda_7(void *data, object self_7342, int argc, object *args) /* object self_7342, object r_7333 */
@@ -549,7 +549,7 @@ c_7376.num_elements = 1;
 c_7376.elements = (object *)e_7399;
 c_7376.elements[0] = ((closureN)self_7343)->elements[0];
 
-return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_7376, __glo_box_91type_srfi_111, quote_value);; 
+return_direct_with_clo3(data,  __glo_type_91slot_91offset_scheme_base, (((closure)  __glo_type_91slot_91offset_scheme_base)->fn),  &c_7376, __glo_box_91type_srfi_111, quote_value);; 
 }
 
 static void __lambda_9(void *data, object self_7344, int argc, object *args) /* object self_7344, object r_7331 */
@@ -569,7 +569,7 @@ c_7378.elements[0] = ((closureN)self_7344)->elements[0];
 
 
 make_utf8_string_with_len(c_7398, "unbox", 5, 5);
-return_closcall4(data,  __glo_make_91getter_scheme_base,  &c_7378, &c_7398, quote_box_91type, r_7331);; 
+return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7378, &c_7398, quote_box_91type, r_7331);; 
 }
 
 static void __lambda_10(void *data, object self_7345, int argc, object *args) /* object self_7345, object r_7329 */
@@ -607,7 +607,7 @@ c_7382.num_elements = 1;
 c_7382.elements = (object *)e_7392;
 c_7382.elements[0] = ((closureN)self_7346)->elements[0];
 
-return_closcall3(data,  __glo_type_91slot_91offset_scheme_base,  &c_7382, __glo_box_91type_srfi_111, quote_value);; 
+return_direct_with_clo3(data,  __glo_type_91slot_91offset_scheme_base, (((closure)  __glo_type_91slot_91offset_scheme_base)->fn),  &c_7382, __glo_box_91type_srfi_111, quote_value);; 
 }
 
 static void __lambda_12(void *data, object self_7347, int argc, object *args) /* object self_7347, object r_7327 */
@@ -627,7 +627,7 @@ c_7384.elements[0] = ((closureN)self_7347)->elements[0];
 
 
 make_utf8_string_with_len(c_7391, "set-box!", 8, 8);
-return_closcall4(data,  __glo_make_91setter_scheme_base,  &c_7384, &c_7391, quote_box_91type, r_7327);; 
+return_direct_with_clo4(data,  __glo_make_91setter_scheme_base, (((closure)  __glo_make_91setter_scheme_base)->fn),  &c_7384, &c_7391, quote_box_91type, r_7327);; 
 }
 
 static void __lambda_13(void *data, object self_7348, int argc, object *args) /* object self_7348, object r_7325 */
@@ -677,7 +677,7 @@ c_7353.elements = (object *)e_7360;
 c_7353.elements[0] = ((closureN)self_7338)->elements[0];
 c_7353.elements[1] = r_7315;
 
-return_closcall2(data,  __glo_vector_scheme_base,  &c_7353, ((closureN)self_7338)->elements[1]);; 
+return_direct_with_clo2(data,  __glo_vector_scheme_base, (((closure)  __glo_vector_scheme_base)->fn),  &c_7353, ((closureN)self_7338)->elements[1]);; 
 }
 
 static void __lambda_3(void *data, object self_7339, int argc, object *args) /* object self_7339, object r_7317 */

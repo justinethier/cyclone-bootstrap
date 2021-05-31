@@ -481,7 +481,7 @@ return_direct_with_clo1(data,(closure)&c_7330,__lambda_2,  &c_7352);;
 static void __lambda_6(void *data, object self_7323, int argc, object *args) /* object self_7323, object k_7319, object port_735_7310 */
  {
  object k_7319 = args[0]; object port_735_7310 = args[1];
-  return_closcall3(data,  __glo_read_91all_95source_scheme_read,  k_7319, port_735_7310, ((closureN)self_7323)->elements[0]);; 
+  return_direct_with_clo3(data,  __glo_read_91all_95source_scheme_read, (((closure)  __glo_read_91all_95source_scheme_read)->fn),  k_7319, port_735_7310, ((closureN)self_7323)->elements[0]);; 
 }
 
 static void __lambda_2(void *data, object self_7324, int argc, object *args) /* object self_7324, object r_7318 */
@@ -500,7 +500,7 @@ c_7332.elements = (object *)e_7349;
 c_7332.elements[0] = ((closureN)self_7324)->elements[0];
 c_7332.elements[1] = ((closureN)self_7324)->elements[2];
 
-return_closcall3(data,  __glo_call_91with_91input_91file_scheme_file,  &c_7332, ((closureN)self_7324)->elements[1], r_7318);; 
+return_direct_with_clo3(data,  __glo_call_91with_91input_91file_scheme_file, (((closure)  __glo_call_91with_91input_91file_scheme_file)->fn),  &c_7332, ((closureN)self_7324)->elements[1], r_7318);; 
 }
 
 static void __lambda_3(void *data, object self_7325, int argc, object *args) /* object self_7325, object exprs_733_738 */
@@ -547,7 +547,7 @@ return_direct_with_clo1(data,  k_7316, (((closure)  k_7316)->fn),  c_7343);;
 static void __lambda_4(void *data, object self_7327, int argc, object *args) /* object self_7327, object r_7315 */
  {
  object r_7315 = args[0];
-  return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7327)->elements[1], r_7315, ((closureN)self_7327)->elements[0]);; 
+  return_direct_with_clo3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base, (((closure)  __glo_Cyc_91for_91each_91loop_911_scheme_base)->fn),  ((closureN)self_7327)->elements[1], r_7315, ((closureN)self_7327)->elements[0]);; 
 }
 
 void c_schemeload_inlinable_lambdas(void *data, object clo, int argc, object *args){ 

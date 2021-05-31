@@ -391,7 +391,7 @@ c_7353.elements = (object *)e_7359;
 c_7353.elements[0] = k_7317;
 c_7353.elements[1] = obj_733_737;
 
-return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7353);
+return_direct_with_clo1(data,  __glo_current_91output_91port_scheme_base, (((closure)  __glo_current_91output_91port_scheme_base)->fn),  &c_7353);
 } else { 
   
 
@@ -429,7 +429,7 @@ c_7337.elements = (object *)e_7343;
 c_7337.elements[0] = k_7311;
 c_7337.elements[1] = obj_731_735;
 
-return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7337);
+return_direct_with_clo1(data,  __glo_current_91output_91port_scheme_base, (((closure)  __glo_current_91output_91port_scheme_base)->fn),  &c_7337);
 } else { 
   
 

@@ -896,7 +896,7 @@ c_73193.num_elements = 1;
 c_73193.elements = (object *)e_73198;
 c_73193.elements[0] = k_7366;
 
-return_closcall2(data,  __glo_infinite_127_scheme_inexact,  &c_73193, z_7317_7337);; 
+return_direct_with_clo2(data,  __glo_infinite_127_scheme_inexact, (((closure)  __glo_infinite_127_scheme_inexact)->fn),  &c_73193, z_7317_7337);; 
 }
 
 static void __lambda_5(void *data, object self_73119, int argc, object *args) /* object self_73119, object r_7367 */

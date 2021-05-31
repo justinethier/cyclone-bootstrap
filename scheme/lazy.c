@@ -386,7 +386,7 @@ c_73163.elements = (object *)e_73237;
 c_73163.elements[0] = k_7373;
 c_73163.elements[1] = obj_7316_7328;
 
-return_closcall2(data,  __glo_promise_127_scheme_lazy,  &c_73163, obj_7316_7328);; 
+return_direct_with_clo2(data,  __glo_promise_127_scheme_lazy, (((closure)  __glo_promise_127_scheme_lazy)->fn),  &c_73163, obj_7316_7328);; 
 }
 
 static void __lambda_8(void *data, object self_7389, int argc, object *args) /* object self_7389, object r_7374 */
@@ -659,7 +659,7 @@ c_73110.elements = (object *)e_73122;
 c_73110.elements[0] = k_7341;
 c_73110.elements[1] = obj_733_7321;
 
-return_closcall2(data,  __glo_promise_127_scheme_lazy,  &c_73110, obj_733_7321);; 
+return_direct_with_clo2(data,  __glo_promise_127_scheme_lazy, (((closure)  __glo_promise_127_scheme_lazy)->fn),  &c_73110, obj_733_7321);; 
 }
 
 static void __lambda_3(void *data, object self_7387, int argc, object *args) /* object self_7387, object r_7342 */
@@ -689,7 +689,7 @@ return_closcall1(data,  Cyc_cdr(data, ((closureN)self_7387)->elements[1]),  &c_7
 static void __lambda_4(void *data, object self_7388, int argc, object *args) /* object self_7388, object r_7343 */
  {
  object r_7343 = args[0];
-  return_closcall2(data,  __glo_force_scheme_lazy,  ((closureN)self_7388)->elements[0], r_7343);; 
+  return_direct_with_clo2(data,  __glo_force_scheme_lazy, (((closure)  __glo_force_scheme_lazy)->fn),  ((closureN)self_7388)->elements[0], r_7343);; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7336, object obj_731_7320 */

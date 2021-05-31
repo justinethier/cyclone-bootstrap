@@ -503,7 +503,7 @@ c_73106.elements[2] = ((closureN)self_7379)->elements[1];
 c_73106.elements[3] = ((closureN)self_7379)->elements[2];
 c_73106.elements[4] = ((closureN)self_7379)->elements[3];
 
-return_closcall1(data,  __glo_open_91output_91string_scheme_base,  &c_73106);; 
+return_direct_with_clo1(data,  __glo_open_91output_91string_scheme_base, (((closure)  __glo_open_91output_91string_scheme_base)->fn),  &c_73106);; 
 }
 
 static void __lambda_3(void *data, object self_7380, int argc, object *args) /* object self_7380, object r_7373 */
@@ -682,7 +682,7 @@ static void __lambda_17(void *data, object self_7386, int argc, object *args) /*
 if( (boolean_f != Cyc_is_null(((closureN)self_7386)->elements[3])) ){ 
   
 make_utf8_string_with_len(c_73249, "No value for escape sequence", 28, 28);
-return_closcall2(data,  __glo_error_scheme_base,  k_7367, &c_73249);
+return_direct_with_clo2(data,  __glo_error_scheme_base, (((closure)  __glo_error_scheme_base)->fn),  k_7367, &c_73249);
 } else { 
   
 closureN_type c_73251;
@@ -803,7 +803,7 @@ c_73222.elements[4] = ((closureN)self_7390)->elements[3];
 
 
 
-return_closcall3(data,  __glo_write_91char_scheme_base,  &c_73222, what_736_7334, car(((closureN)self_7390)->elements[0]));; 
+return_direct_with_clo3(data,  __glo_write_91char_scheme_base, (((closure)  __glo_write_91char_scheme_base)->fn),  &c_73222, what_736_7334, car(((closureN)self_7390)->elements[0]));; 
 }
 
 static void __lambda_15(void *data, object self_7391, int argc, object *args) /* object self_7391, object r_7364 */
@@ -865,7 +865,7 @@ static void __lambda_13(void *data, object self_7394, int argc, object *args) /*
 if( (boolean_f != Cyc_is_null(((closureN)self_7394)->elements[2])) ){ 
   
 
-return_closcall2(data,  __glo_get_91output_91string_scheme_base,  ((closureN)self_7394)->elements[3], car(((closureN)self_7394)->elements[0]));
+return_direct_with_clo2(data,  __glo_get_91output_91string_scheme_base, (((closure)  __glo_get_91output_91string_scheme_base)->fn),  ((closureN)self_7394)->elements[3], car(((closureN)self_7394)->elements[0]));
 } else { 
     
   
@@ -875,7 +875,7 @@ if( (boolean_f != Cyc_char_eq_op(data, Cyc_car(data, ((closureN)self_7394)->elem
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, ((closureN)self_7394)->elements[2]))) ){ 
   
 make_utf8_string_with_len(c_73163, "Incomplete escape sequence", 26, 26);
-return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7394)->elements[3], &c_73163);
+return_direct_with_clo2(data,  __glo_error_scheme_base, (((closure)  __glo_error_scheme_base)->fn),  ((closureN)self_7394)->elements[3], &c_73163);
 } else { 
     
   
@@ -907,7 +907,7 @@ return_closcall3(data,  car(((closureN)self_7394)->elements[4]),  ((closureN)sel
 } else { 
   
 make_utf8_string_with_len(c_73206, "Unrecognized escape sequence", 28, 28);
-return_closcall2(data,  __glo_error_scheme_base,  ((closureN)self_7394)->elements[3], &c_73206);}
+return_direct_with_clo2(data,  __glo_error_scheme_base, (((closure)  __glo_error_scheme_base)->fn),  ((closureN)self_7394)->elements[3], &c_73206);}
 ;}
 ;}
 ;}
@@ -963,7 +963,7 @@ c_73114.elements[0] = ((closureN)self_7396)->elements[0];
 c_73114.elements[1] = ((closureN)self_7396)->elements[2];
 c_73114.elements[2] = ((closureN)self_7396)->elements[3];
 
-return_closcall2(data,  __glo_string_91_125list_scheme_base,  &c_73114, ((closureN)self_7396)->elements[1]);; 
+return_direct_with_clo2(data,  __glo_string_91_125list_scheme_base, (((closure)  __glo_string_91_125list_scheme_base)->fn),  &c_73114, ((closureN)self_7396)->elements[1]);; 
 }
 
 static void __lambda_7(void *data, object self_7397, int argc, object *args) /* object self_7397, object r_7342 */

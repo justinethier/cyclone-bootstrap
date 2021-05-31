@@ -455,13 +455,13 @@ return_direct_with_clo1(data,(closure)&c_7323,__lambda_2,  &c_7328);;
 static void __lambda_3(void *data, object self_7315, int argc, object *args) /* object self_7315, object k_7311, object p_733_736 */
  {
  object k_7311 = args[0]; object p_733_736 = args[1];
-  return_closcall3(data,  __glo_hs_91add_67_scheme_cyclone_hashset,  k_7311, ((closureN)self_7315)->elements[0], p_733_736);; 
+  return_direct_with_clo3(data,  __glo_hs_91add_67_scheme_cyclone_hashset, (((closure)  __glo_hs_91add_67_scheme_cyclone_hashset)->fn),  k_7311, ((closureN)self_7315)->elements[0], p_733_736);; 
 }
 
 static void __lambda_2(void *data, object self_7316, int argc, object *args) /* object self_7316, object r_7310 */
  {
  object r_7310 = args[0];
-  return_closcall3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base,  ((closureN)self_7316)->elements[0], r_7310, ((closureN)self_7316)->elements[1]);; 
+  return_direct_with_clo3(data,  __glo_Cyc_91for_91each_91loop_911_scheme_base, (((closure)  __glo_Cyc_91for_91each_91loop_911_scheme_base)->fn),  ((closureN)self_7316)->elements[0], r_7310, ((closureN)self_7316)->elements[1]);; 
 }
 
 static void __lambda_8(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object item = args[2];
