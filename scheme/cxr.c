@@ -176,7 +176,7 @@ static void __lambda_30(void *data, object _, int argc, object *args) /* closure
  {
 object k_73220 = args[0];
   Cyc_st_add(data, "scheme/cxr.sld:lib-init:schemecxr");
-return_closcall1(data,  k_73220,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_73220, (((closure)  k_73220)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_29(void *data, object _, int argc, object *args) /* closure _,object k_73213, object lis_7329_7358 */
@@ -193,7 +193,7 @@ object k_73213 = args[0]; object lis_7329_7358 = args[1];
 
 
 
-return_closcall1(data,  k_73213,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7329_7358))))));; 
+return_direct_with_clo1(data,  k_73213, (((closure)  k_73213)->fn),  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7329_7358))))));; 
 }
 
 static void __lambda_28(void *data, object _, int argc, object *args) /* closure _,object k_73207, object lis_7328_7357 */
@@ -208,7 +208,7 @@ object k_73207 = args[0]; object lis_7328_7357 = args[1];
 
 
 
-return_closcall1(data,  k_73207,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7328_7357)))));; 
+return_direct_with_clo1(data,  k_73207, (((closure)  k_73207)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7328_7357)))));; 
 }
 
 static void __lambda_27(void *data, object _, int argc, object *args) /* closure _,object k_73201, object lis_7327_7356 */
@@ -223,7 +223,7 @@ object k_73201 = args[0]; object lis_7327_7356 = args[1];
 
 
 
-return_closcall1(data,  k_73201,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7327_7356)))));; 
+return_direct_with_clo1(data,  k_73201, (((closure)  k_73201)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7327_7356)))));; 
 }
 
 static void __lambda_26(void *data, object _, int argc, object *args) /* closure _,object k_73195, object lis_7326_7355 */
@@ -238,7 +238,7 @@ object k_73195 = args[0]; object lis_7326_7355 = args[1];
 
 
 
-return_closcall1(data,  k_73195,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7326_7355)))));; 
+return_direct_with_clo1(data,  k_73195, (((closure)  k_73195)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7326_7355)))));; 
 }
 
 static void __lambda_25(void *data, object _, int argc, object *args) /* closure _,object k_73189, object lis_7325_7354 */
@@ -253,7 +253,7 @@ object k_73189 = args[0]; object lis_7325_7354 = args[1];
 
 
 
-return_closcall1(data,  k_73189,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7325_7354)))));; 
+return_direct_with_clo1(data,  k_73189, (((closure)  k_73189)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7325_7354)))));; 
 }
 
 static void __lambda_24(void *data, object _, int argc, object *args) /* closure _,object k_73183, object lis_7324_7353 */
@@ -268,7 +268,7 @@ object k_73183 = args[0]; object lis_7324_7353 = args[1];
 
 
 
-return_closcall1(data,  k_73183,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7324_7353)))));; 
+return_direct_with_clo1(data,  k_73183, (((closure)  k_73183)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7324_7353)))));; 
 }
 
 static void __lambda_23(void *data, object _, int argc, object *args) /* closure _,object k_73177, object lis_7323_7352 */
@@ -283,7 +283,7 @@ object k_73177 = args[0]; object lis_7323_7352 = args[1];
 
 
 
-return_closcall1(data,  k_73177,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7323_7352)))));; 
+return_direct_with_clo1(data,  k_73177, (((closure)  k_73177)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7323_7352)))));; 
 }
 
 static void __lambda_22(void *data, object _, int argc, object *args) /* closure _,object k_73171, object lis_7322_7351 */
@@ -298,7 +298,7 @@ object k_73171 = args[0]; object lis_7322_7351 = args[1];
 
 
 
-return_closcall1(data,  k_73171,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7322_7351)))));; 
+return_direct_with_clo1(data,  k_73171, (((closure)  k_73171)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7322_7351)))));; 
 }
 
 static void __lambda_21(void *data, object _, int argc, object *args) /* closure _,object k_73165, object lis_7321_7350 */
@@ -313,7 +313,7 @@ object k_73165 = args[0]; object lis_7321_7350 = args[1];
 
 
 
-return_closcall1(data,  k_73165,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7321_7350)))));; 
+return_direct_with_clo1(data,  k_73165, (((closure)  k_73165)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7321_7350)))));; 
 }
 
 static void __lambda_20(void *data, object _, int argc, object *args) /* closure _,object k_73159, object lis_7320_7349 */
@@ -328,7 +328,7 @@ object k_73159 = args[0]; object lis_7320_7349 = args[1];
 
 
 
-return_closcall1(data,  k_73159,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7320_7349)))));; 
+return_direct_with_clo1(data,  k_73159, (((closure)  k_73159)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7320_7349)))));; 
 }
 
 static void __lambda_19(void *data, object _, int argc, object *args) /* closure _,object k_73153, object lis_7319_7348 */
@@ -343,7 +343,7 @@ object k_73153 = args[0]; object lis_7319_7348 = args[1];
 
 
 
-return_closcall1(data,  k_73153,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7319_7348)))));; 
+return_direct_with_clo1(data,  k_73153, (((closure)  k_73153)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7319_7348)))));; 
 }
 
 static void __lambda_18(void *data, object _, int argc, object *args) /* closure _,object k_73147, object lis_7318_7347 */
@@ -358,7 +358,7 @@ object k_73147 = args[0]; object lis_7318_7347 = args[1];
 
 
 
-return_closcall1(data,  k_73147,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7318_7347)))));; 
+return_direct_with_clo1(data,  k_73147, (((closure)  k_73147)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7318_7347)))));; 
 }
 
 static void __lambda_17(void *data, object _, int argc, object *args) /* closure _,object k_73141, object lis_7317_7346 */
@@ -373,7 +373,7 @@ object k_73141 = args[0]; object lis_7317_7346 = args[1];
 
 
 
-return_closcall1(data,  k_73141,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7317_7346)))));; 
+return_direct_with_clo1(data,  k_73141, (((closure)  k_73141)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_7317_7346)))));; 
 }
 
 static void __lambda_16(void *data, object _, int argc, object *args) /* closure _,object k_73135, object lis_7316_7345 */
@@ -388,7 +388,7 @@ object k_73135 = args[0]; object lis_7316_7345 = args[1];
 
 
 
-return_closcall1(data,  k_73135,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7316_7345)))));; 
+return_direct_with_clo1(data,  k_73135, (((closure)  k_73135)->fn),  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_7316_7345)))));; 
 }
 
 static void __lambda_15(void *data, object _, int argc, object *args) /* closure _,object k_73129, object lis_7315_7344 */
@@ -403,7 +403,7 @@ object k_73129 = args[0]; object lis_7315_7344 = args[1];
 
 
 
-return_closcall1(data,  k_73129,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7315_7344)))));; 
+return_direct_with_clo1(data,  k_73129, (((closure)  k_73129)->fn),  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_7315_7344)))));; 
 }
 
 static void __lambda_14(void *data, object _, int argc, object *args) /* closure _,object k_73123, object lis_7314_7343 */
@@ -418,7 +418,7 @@ object k_73123 = args[0]; object lis_7314_7343 = args[1];
 
 
 
-return_closcall1(data,  k_73123,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7314_7343)))));; 
+return_direct_with_clo1(data,  k_73123, (((closure)  k_73123)->fn),  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_7314_7343)))));; 
 }
 
 static void __lambda_13(void *data, object _, int argc, object *args) /* closure _,object k_73117, object lis_7313_7342 */
@@ -433,7 +433,7 @@ object k_73117 = args[0]; object lis_7313_7342 = args[1];
 
 
 
-return_closcall1(data,  k_73117,  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7313_7342)))));; 
+return_direct_with_clo1(data,  k_73117, (((closure)  k_73117)->fn),  Cyc_car(data, Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_7313_7342)))));; 
 }
 
 static void __lambda_12(void *data, object _, int argc, object *args) /* closure _,object k_73112, object lis_7312_7341 */
@@ -446,7 +446,7 @@ object k_73112 = args[0]; object lis_7312_7341 = args[1];
 
 
 
-return_closcall1(data,  k_73112,  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7312_7341))));; 
+return_direct_with_clo1(data,  k_73112, (((closure)  k_73112)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_cdr(data, lis_7312_7341))));; 
 }
 
 static void __lambda_11(void *data, object _, int argc, object *args) /* closure _,object k_73107, object lis_7311_7340 */
@@ -459,7 +459,7 @@ object k_73107 = args[0]; object lis_7311_7340 = args[1];
 
 
 
-return_closcall1(data,  k_73107,  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7311_7340))));; 
+return_direct_with_clo1(data,  k_73107, (((closure)  k_73107)->fn),  Cyc_cdr(data, Cyc_cdr(data, Cyc_car(data, lis_7311_7340))));; 
 }
 
 static void __lambda_10(void *data, object _, int argc, object *args) /* closure _,object k_73102, object lis_7310_7339 */
@@ -472,7 +472,7 @@ object k_73102 = args[0]; object lis_7310_7339 = args[1];
 
 
 
-return_closcall1(data,  k_73102,  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7310_7339))));; 
+return_direct_with_clo1(data,  k_73102, (((closure)  k_73102)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_cdr(data, lis_7310_7339))));; 
 }
 
 static void __lambda_9(void *data, object _, int argc, object *args) /* closure _,object k_7397, object lis_739_7338 */
@@ -485,7 +485,7 @@ object k_7397 = args[0]; object lis_739_7338 = args[1];
 
 
 
-return_closcall1(data,  k_7397,  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_739_7338))));; 
+return_direct_with_clo1(data,  k_7397, (((closure)  k_7397)->fn),  Cyc_cdr(data, Cyc_car(data, Cyc_car(data, lis_739_7338))));; 
 }
 
 static void __lambda_8(void *data, object _, int argc, object *args) /* closure _,object k_7392, object lis_738_7337 */
@@ -498,7 +498,7 @@ object k_7392 = args[0]; object lis_738_7337 = args[1];
 
 
 
-return_closcall1(data,  k_7392,  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_738_7337))));; 
+return_direct_with_clo1(data,  k_7392, (((closure)  k_7392)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_cdr(data, lis_738_7337))));; 
 }
 
 static void __lambda_7(void *data, object _, int argc, object *args) /* closure _,object k_7387, object lis_737_7336 */
@@ -511,7 +511,7 @@ object k_7387 = args[0]; object lis_737_7336 = args[1];
 
 
 
-return_closcall1(data,  k_7387,  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_737_7336))));; 
+return_direct_with_clo1(data,  k_7387, (((closure)  k_7387)->fn),  Cyc_car(data, Cyc_cdr(data, Cyc_car(data, lis_737_7336))));; 
 }
 
 static void __lambda_6(void *data, object _, int argc, object *args) /* closure _,object k_7382, object lis_736_7335 */
@@ -524,7 +524,7 @@ object k_7382 = args[0]; object lis_736_7335 = args[1];
 
 
 
-return_closcall1(data,  k_7382,  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_736_7335))));; 
+return_direct_with_clo1(data,  k_7382, (((closure)  k_7382)->fn),  Cyc_car(data, Cyc_car(data, Cyc_cdr(data, lis_736_7335))));; 
 }
 
 static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_7377, object lis_735_7334 */
@@ -537,7 +537,7 @@ object k_7377 = args[0]; object lis_735_7334 = args[1];
 
 
 
-return_closcall1(data,  k_7377,  Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_735_7334))));; 
+return_direct_with_clo1(data,  k_7377, (((closure)  k_7377)->fn),  Cyc_car(data, Cyc_car(data, Cyc_car(data, lis_735_7334))));; 
 }
 
 static void __lambda_4(void *data, object _, int argc, object *args) /* closure _,object k_7373, object lis_734_7333 */
@@ -548,7 +548,7 @@ object k_7373 = args[0]; object lis_734_7333 = args[1];
 
 
 
-return_closcall1(data,  k_7373,  Cyc_cdr(data, Cyc_cdr(data, lis_734_7333)));; 
+return_direct_with_clo1(data,  k_7373, (((closure)  k_7373)->fn),  Cyc_cdr(data, Cyc_cdr(data, lis_734_7333)));; 
 }
 
 static void __lambda_3(void *data, object _, int argc, object *args) /* closure _,object k_7369, object lis_733_7332 */
@@ -559,7 +559,7 @@ object k_7369 = args[0]; object lis_733_7332 = args[1];
 
 
 
-return_closcall1(data,  k_7369,  Cyc_cdr(data, Cyc_car(data, lis_733_7332)));; 
+return_direct_with_clo1(data,  k_7369, (((closure)  k_7369)->fn),  Cyc_cdr(data, Cyc_car(data, lis_733_7332)));; 
 }
 
 static void __lambda_2(void *data, object _, int argc, object *args) /* closure _,object k_7365, object lis_732_7331 */
@@ -570,7 +570,7 @@ object k_7365 = args[0]; object lis_732_7331 = args[1];
 
 
 
-return_closcall1(data,  k_7365,  Cyc_car(data, Cyc_cdr(data, lis_732_7331)));; 
+return_direct_with_clo1(data,  k_7365, (((closure)  k_7365)->fn),  Cyc_car(data, Cyc_cdr(data, lis_732_7331)));; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7361, object lis_731_7330 */
@@ -581,7 +581,7 @@ object k_7361 = args[0]; object lis_731_7330 = args[1];
 
 
 
-return_closcall1(data,  k_7361,  Cyc_car(data, Cyc_car(data, lis_731_7330)));; 
+return_direct_with_clo1(data,  k_7361, (((closure)  k_7361)->fn),  Cyc_car(data, Cyc_car(data, lis_731_7330)));; 
 }
 
 void c_schemecxr_inlinable_lambdas(void *data, object clo, int argc, object *args){ 

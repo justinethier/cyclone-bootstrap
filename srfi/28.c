@@ -413,7 +413,7 @@ static void __lambda_19(void *data, object _, int argc, object *args) /* closure
  {
 object k_7376 = args[0];
   Cyc_st_add(data, "srfi/28.sld:lib-init:srfi28");
-return_closcall1(data,  k_7376,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7376, (((closure)  k_7376)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7339, object format_91string_731_7319, object objects_732_7320_raw, ... */

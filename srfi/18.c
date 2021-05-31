@@ -645,7 +645,7 @@ static void __lambda_30(void *data, object self_73144, int argc, object *args) /
  object r_73126 = args[0];
   
 object c_73342 = global_set_cps_id(data,  ((closureN)self_73144)->elements[0],"__glo__85primordial_91thread_85_srfi_18", __glo__85primordial_91thread_85_srfi_18, r_73126);
-return_closcall1(data,  ((closureN)self_73144)->elements[0],  c_73342);; 
+return_direct_with_clo1(data,  ((closureN)self_73144)->elements[0], (((closure)  ((closureN)self_73144)->elements[0])->fn),  c_73342);; 
 }
 
 static void __lambda_50(void *data, object _, int argc, object *args) {object k = args[0];object cond = args[1]; Cyc_check_cond_var(data, cond);
@@ -876,7 +876,7 @@ static void __lambda_23(void *data, object self_73138, int argc, object *args) /
 
 return_closcall2(data,  __glo__75thread_91join_67_srfi_18,  ((closureN)self_73138)->elements[0], Cyc_vector_ref(data, ((closureN)self_73138)->elements[1], obj_int2obj(2)));
 } else { 
-  return_closcall1(data,  ((closureN)self_73138)->elements[0],  boolean_f);}
+  return_direct_with_clo1(data,  ((closureN)self_73138)->elements[0], (((closure)  ((closureN)self_73138)->elements[0])->fn),  boolean_f);}
 ;; 
 }
 
@@ -907,9 +907,9 @@ static void __lambda_22(void *data, object self_73140, int argc, object *args) /
 
 
 
-return_closcall1(data,  ((closureN)self_73140)->elements[0],  Cyc_is_opaque(Cyc_vector_ref(data, ((closureN)self_73140)->elements[1], obj_int2obj(2))));
+return_direct_with_clo1(data,  ((closureN)self_73140)->elements[0], (((closure)  ((closureN)self_73140)->elements[0])->fn),  Cyc_is_opaque(Cyc_vector_ref(data, ((closureN)self_73140)->elements[1], obj_int2obj(2))));
 } else { 
-  return_closcall1(data,  ((closureN)self_73140)->elements[0],  boolean_f);}
+  return_direct_with_clo1(data,  ((closureN)self_73140)->elements[0], (((closure)  ((closureN)self_73140)->elements[0])->fn),  boolean_f);}
 ;; 
 }
 
@@ -1099,7 +1099,7 @@ static void __lambda_16(void *data, object self_73137, int argc, object *args) /
 
   
 
-return_closcall1(data,  ((closureN)self_73137)->elements[0],  Cyc_spawn_thread(((closureN)self_73137)->elements[1]));; 
+return_direct_with_clo1(data,  ((closureN)self_73137)->elements[0], (((closure)  ((closureN)self_73137)->elements[0])->fn),  Cyc_spawn_thread(((closureN)self_73137)->elements[1]));; 
 }
 
 static void __lambda_35(void *data, object _, int argc, object *args) {object k = args[0]; gc_thread_data *td = malloc(sizeof(gc_thread_data));
@@ -1142,9 +1142,9 @@ static void __lambda_8(void *data, object self_73129, int argc, object *args) /*
  object t_7311_7342 = args[0];
     
 if( (boolean_f != Cyc_is_null(t_7311_7342)) ){ 
-  return_closcall1(data,  ((closureN)self_73129)->elements[0],  __glo__85primordial_91thread_85_srfi_18);
+  return_direct_with_clo1(data,  ((closureN)self_73129)->elements[0], (((closure)  ((closureN)self_73129)->elements[0])->fn),  __glo__85primordial_91thread_85_srfi_18);
 } else { 
-  return_closcall1(data,  ((closureN)self_73129)->elements[0],  t_7311_7342);}
+  return_direct_with_clo1(data,  ((closureN)self_73129)->elements[0], (((closure)  ((closureN)self_73129)->elements[0])->fn),  t_7311_7342);}
 ;; 
 }
 
@@ -1154,7 +1154,7 @@ object k_7376 = args[0]; object t_739_7340 = args[1]; object obj_7310_7341 = arg
   Cyc_st_add(data, "srfi/18.sld:thread-specific-set!");
 
 object c_73196 = Cyc_vector_set_cps(data,  k_7376,t_739_7340, obj_int2obj(4), obj_7310_7341);
-return_closcall1(data,  k_7376,  c_73196);; 
+return_direct_with_clo1(data,  k_7376, (((closure)  k_7376)->fn),  c_73196);; 
 }
 
 static object __lambda_32(void *data, object ptr,object t_738_7339) {
@@ -1171,7 +1171,7 @@ object k_7373 = args[0]; object t_738_7339 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-specific");
 
 
-return_closcall1(data,  k_7373,  Cyc_vector_ref(data, t_738_7339, obj_int2obj(4)));; 
+return_direct_with_clo1(data,  k_7373, (((closure)  k_7373)->fn),  Cyc_vector_ref(data, t_738_7339, obj_int2obj(4)));; 
 }
 
 static object __lambda_31(void *data, object ptr,object t_737_7338) {
@@ -1188,7 +1188,7 @@ object k_7370 = args[0]; object t_737_7338 = args[1];
   Cyc_st_add(data, "srfi/18.sld:thread-name");
 
 
-return_closcall1(data,  k_7370,  Cyc_vector_ref(data, t_737_7338, obj_int2obj(3)));; 
+return_direct_with_clo1(data,  k_7370, (((closure)  k_7370)->fn),  Cyc_vector_ref(data, t_737_7338, obj_int2obj(3)));; 
 }
 
 static void __lambda_2(void *data, object _, int argc, object *args) /* closure _,object k_7362, object thunk_734_7335, object name_735_7336_raw, ... */
@@ -1244,12 +1244,12 @@ if( (boolean_f != Cyc_num_fast_gt_op(data, Cyc_vector_length(data, obj_731_7334)
 
 
 
-return_closcall1(data,  k_7354,  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref(data, obj_731_7334, obj_int2obj(0))));
+return_direct_with_clo1(data,  k_7354, (((closure)  k_7354)->fn),  equalp(quote_cyc_91thread_91obj, Cyc_vector_ref(data, obj_731_7334, obj_int2obj(0))));
 } else { 
-  return_closcall1(data,  k_7354,  boolean_f);}
+  return_direct_with_clo1(data,  k_7354, (((closure)  k_7354)->fn),  boolean_f);}
 ;
 } else { 
-  return_closcall1(data,  k_7354,  boolean_f);}
+  return_direct_with_clo1(data,  k_7354, (((closure)  k_7354)->fn),  boolean_f);}
 ;; 
 }
 

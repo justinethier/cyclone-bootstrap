@@ -465,7 +465,7 @@ static void __lambda_23(void *data, object _, int argc, object *args) /* closure
  {
 object k_7367 = args[0];
   Cyc_st_add(data, "scheme/file.sld:lib-init:schemefile");
-return_closcall1(data,  k_7367,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7367, (((closure)  k_7367)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_13(void *data, object _, int argc, object *args) /* closure _,object k_7351, object string_739_7321, object thunk_7310_7322 */

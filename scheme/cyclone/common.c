@@ -293,7 +293,7 @@ static void __lambda_8(void *data, object self_7333, int argc, object *args) /* 
 
   
 object c_7356 = global_set_cps_id(data,  ((closureN)self_7333)->elements[0],"__glo__85reader_91source_91db_85_scheme_cyclone_common", __glo__85reader_91source_91db_85_scheme_cyclone_common, NULL);
-return_closcall1(data,  ((closureN)self_7333)->elements[0],  c_7356);; 
+return_direct_with_clo1(data,  ((closureN)self_7333)->elements[0], (((closure)  ((closureN)self_7333)->elements[0])->fn),  c_7356);; 
 }
 
 static void __lambda_9(void *data, object _, int argc, object *args) {object k = args[0];object obj = args[1]; char str[32];

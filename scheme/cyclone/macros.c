@@ -461,7 +461,7 @@ static void __lambda_1(void *data, object _, int argc, object *args) /* closure 
  {
 object k_733 = args[0];
   Cyc_st_add(data, "scheme/cyclone/macros.sld:lib-init:schemecyclonemacros");
-return_closcall1(data,  k_733,  boolean_f);; 
+return_direct_with_clo1(data,  k_733, (((closure)  k_733)->fn),  boolean_f);; 
 }
 
 void c_schemecyclonemacros_inlinable_lambdas(void *data, object clo, int argc, object *args){ 

@@ -635,7 +635,7 @@ static void __lambda_13(void *data, object self_7348, int argc, object *args) /*
  object r_7325 = args[0];
   
 object c_7389 = global_set_cps_id(data,  ((closureN)self_7348)->elements[0],"__glo_set_91box_67_srfi_111", __glo_set_91box_67_srfi_111, r_7325);
-return_closcall1(data,  ((closureN)self_7348)->elements[0],  c_7389);; 
+return_direct_with_clo1(data,  ((closureN)self_7348)->elements[0], (((closure)  ((closureN)self_7348)->elements[0])->fn),  c_7389);; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7314, object value_732_733 */
@@ -685,7 +685,7 @@ static void __lambda_3(void *data, object self_7339, int argc, object *args) /* 
  object r_7317 = args[0];
   
 vector_3_type local_7358; 
-return_closcall1(data,  ((closureN)self_7339)->elements[0],  Cyc_fast_vector_3(&local_7358, ((closureN)self_7339)->elements[1], quote_box_91type, r_7317));; 
+return_direct_with_clo1(data,  ((closureN)self_7339)->elements[0], (((closure)  ((closureN)self_7339)->elements[0])->fn),  Cyc_fast_vector_3(&local_7358, ((closureN)self_7339)->elements[1], quote_box_91type, r_7317));; 
 }
 
 void c_srfi111_inlinable_lambdas(void *data, object clo, int argc, object *args){ 

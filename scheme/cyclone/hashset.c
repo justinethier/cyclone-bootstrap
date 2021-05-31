@@ -407,7 +407,7 @@ static void __lambda_4(void *data, object _, int argc, object *args) /* closure 
  {
 object k_7314 = args[0];
   Cyc_st_add(data, "scheme/cyclone/hashset.sld:lib-init:schemecyclonehashset");
-return_closcall1(data,  k_7314,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7314, (((closure)  k_7314)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_10(void *data, object _, int argc, object *args) {object k = args[0];object opq = args[1];object item = args[2];

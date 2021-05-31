@@ -128,7 +128,7 @@ object k_735 = args[0];
   Cyc_st_add(data, "scheme/process-context.sld:lib-init:schemeprocess_91context");
 
 object c_7314 = global_set_cps_id(data,  k_735,"__glo_emergency_91exit_scheme_process_91context", __glo_emergency_91exit_scheme_process_91context, primitive_exit);
-return_closcall1(data,  k_735,  c_7314);; 
+return_direct_with_clo1(data,  k_735, (((closure)  k_735)->fn),  c_7314);; 
 }
 
 static void __lambda_4(void *data, object _, int argc, object *args) {object k = args[0];pack_env_variables(data, k); 

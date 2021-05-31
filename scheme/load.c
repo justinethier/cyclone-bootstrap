@@ -441,7 +441,7 @@ static void __lambda_7(void *data, object _, int argc, object *args) /* closure 
  {
 object k_7322 = args[0];
   Cyc_st_add(data, "scheme/load.sld:lib-init:schemeload");
-return_closcall1(data,  k_7322,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7322, (((closure)  k_7322)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7313, object filename_731_736, object env_732_737_raw, ... */
@@ -541,7 +541,7 @@ static void __lambda_5(void *data, object self_7326, int argc, object *args) /* 
 pair_type local_7346; 
 
 object c_7343 = apply(data,  k_7316,__glo_eval_scheme_eval, set_pair_as_expr(&local_7346, expr_734_739, ((closureN)self_7326)->elements[0]));
-return_closcall1(data,  k_7316,  c_7343);; 
+return_direct_with_clo1(data,  k_7316, (((closure)  k_7316)->fn),  c_7343);; 
 }
 
 static void __lambda_4(void *data, object self_7327, int argc, object *args) /* object self_7327, object r_7315 */

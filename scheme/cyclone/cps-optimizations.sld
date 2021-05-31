@@ -1968,6 +1968,7 @@
          (else
            (let ((f (cc fn)))
             `((%closure-ref ,f 0
+                            ;; Indicate if closure refers to a compiled continuation
                             ,@(if (and (symbol? fn)
                                        (if-var fn adbv:cont?))
                                  (list #t)

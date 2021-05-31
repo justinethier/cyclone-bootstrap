@@ -342,7 +342,7 @@ static void __lambda_1(void *data, object _, int argc, object *args) /* closure 
  {
 object k_733 = args[0];
   Cyc_st_add(data, "scheme/time.sld:lib-init:schemetime");
-return_closcall1(data,  k_733,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_733, (((closure)  k_733)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_4(void *data, object _, int argc, object *args) {object k = args[0]; int n = 1000000;

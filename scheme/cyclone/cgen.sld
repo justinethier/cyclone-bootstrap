@@ -1100,7 +1100,7 @@
                 (num-cargs (c:num-args cargs))
                 (is-cont (and (equal? (length fun) 4)
                               (cadddr fun))))
-(trace:error `(JAE DEBUG ,is-cont ,fun))
+;(trace:error `(JAE DEBUG ,is-cont ,fun))
            (cond
              ((not cps?)
               (c:code 

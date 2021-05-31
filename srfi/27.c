@@ -883,7 +883,7 @@ static void __lambda_58(void *data, object self_73225, int argc, object *args) /
  object r_73152 = args[0];
   
 object c_73550 = global_set_cps_id(data,  ((closureN)self_73225)->elements[0],"__glo_random_91real_srfi_27", __glo_random_91real_srfi_27, r_73152);
-return_closcall1(data,  ((closureN)self_73225)->elements[0],  c_73550);; 
+return_direct_with_clo1(data,  ((closureN)self_73225)->elements[0], (((closure)  ((closureN)self_73225)->elements[0])->fn),  c_73550);; 
 }
 
 static void __lambda_34(void *data, object _, int argc, object *args) /* closure _,object k_73135, object s_7323_7352 */
@@ -1484,7 +1484,7 @@ c_73358.elements[0] = ((closureN)self_73187)->elements[1];
 c_73358.elements[1] = ((closureN)self_73187)->elements[2];
 c_73358.elements[2] = ((closureN)self_73187)->elements[3];
 
-return_closcall1(data,  ((closureN)self_73187)->elements[0],  &c_73358);; 
+return_direct_with_clo1(data,  ((closureN)self_73187)->elements[0], (((closure)  ((closureN)self_73187)->elements[0])->fn),  &c_73358);; 
 }
 
 static void __lambda_24(void *data, object self_73188, int argc, object *args) /* object self_73188, object k_73102 */
@@ -1513,7 +1513,7 @@ static void __lambda_25(void *data, object self_73189, int argc, object *args) /
  object r_73103 = args[0];
   
 complex_num_type local_73366; 
-return_closcall1(data,  ((closureN)self_73189)->elements[0],  Cyc_fast_mul(data,&local_73366, r_73103, ((closureN)self_73189)->elements[1]));; 
+return_direct_with_clo1(data,  ((closureN)self_73189)->elements[0], (((closure)  ((closureN)self_73189)->elements[0])->fn),  Cyc_fast_mul(data,&local_73366, r_73103, ((closureN)self_73189)->elements[1]));; 
 }
 
 static void __lambda_17(void *data, object self_73190, int argc, object *args) /* object self_73190, object k_73107 */
@@ -1545,7 +1545,7 @@ static void __lambda_18(void *data, object self_73191, int argc, object *args) /
  {
  object r_73108 = args[0];
   if( (boolean_f != r_73108) ){ 
-  return_closcall1(data,  ((closureN)self_73191)->elements[0],  Cyc_VOID);
+  return_direct_with_clo1(data,  ((closureN)self_73191)->elements[0], (((closure)  ((closureN)self_73191)->elements[0])->fn),  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_73335, "unit must be between 0.0 and 1.0 (exclusive), but got ", 54, 54);
@@ -1558,7 +1558,7 @@ static void __lambda_15(void *data, object self_73192, int argc, object *args) /
  object r_7397 = args[0];
   
 object c_73323 = apply(data,  ((closureN)self_73192)->elements[1],r_7397, ((closureN)self_73192)->elements[0]);
-return_closcall1(data,  ((closureN)self_73192)->elements[1],  c_73323);; 
+return_direct_with_clo1(data,  ((closureN)self_73192)->elements[1], (((closure)  ((closureN)self_73192)->elements[1])->fn),  c_73323);; 
 }
 
 static void __lambda_14(void *data, object self_73179, int argc, object *args) /* object self_73179, object k_7394, object s_7312_7332 */
@@ -1576,7 +1576,7 @@ static void __lambda_13(void *data, object self_73180, int argc, object *args) /
  object r_7393 = args[0];
   
 object c_73300 = apply(data,  ((closureN)self_73180)->elements[1],r_7393, ((closureN)self_73180)->elements[0]);
-return_closcall1(data,  ((closureN)self_73180)->elements[1],  c_73300);; 
+return_direct_with_clo1(data,  ((closureN)self_73180)->elements[1], (((closure)  ((closureN)self_73180)->elements[1])->fn),  c_73300);; 
 }
 
 static void __lambda_5(void *data, object _, int argc, object *args) /* closure _,object k_7382, object s_733_7325 */
@@ -1595,7 +1595,7 @@ c_73249.num_elements = 1;
 c_73249.elements = (object *)e_73285;
 c_73249.elements[0] = s_733_7325;
 
-return_closcall1(data,  k_7382,  &c_73249);; 
+return_direct_with_clo1(data,  k_7382, (((closure)  k_7382)->fn),  &c_73249);; 
 }
 
 static void __lambda_6(void *data, object self_73172, int argc, object *args) /* object self_73172, object k_7383, object n_734_7327 */
@@ -1789,7 +1789,7 @@ static void __lambda_3(void *data, object self_73171, int argc, object *args) /*
  object r_7376 = args[0];
   
 vector_3_type local_73237; 
-return_closcall1(data,  ((closureN)self_73171)->elements[0],  Cyc_fast_vector_3(&local_73237, ((closureN)self_73171)->elements[1], quote__121random_91source_125, r_7376));; 
+return_direct_with_clo1(data,  ((closureN)self_73171)->elements[0], (((closure)  ((closureN)self_73171)->elements[0])->fn),  Cyc_fast_vector_3(&local_73237, ((closureN)self_73171)->elements[1], quote__121random_91source_125, r_7376));; 
 }
 
 static void __lambda_67(void *data, object _, int argc, object *args) {object k = args[0];object seed = args[1];double dval = MRG32k3a( double_value(seed) );

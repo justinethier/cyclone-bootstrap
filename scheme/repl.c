@@ -479,7 +479,7 @@ static void __lambda_43(void *data, object _, int argc, object *args) /* closure
  {
 object k_7375 = args[0];
   Cyc_st_add(data, "scheme/repl.sld:lib-init:schemerepl");
-return_closcall1(data,  k_7375,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7375, (((closure)  k_7375)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_2(void *data, object _, int argc, object *args) /* closure _,object k_7327 */
@@ -872,7 +872,7 @@ c_73233.elements[1] = ((closureN)self_73101)->elements[1];
 
 return_direct_with_clo1(data,(closure)&c_73233,__lambda_31,  Cyc_car(data, car(((closureN)self_73101)->elements[1])));
 } else { 
-  return_closcall1(data,  ((closureN)self_73101)->elements[0],  Cyc_VOID);}
+  return_direct_with_clo1(data,  ((closureN)self_73101)->elements[0], (((closure)  ((closureN)self_73101)->elements[0])->fn),  Cyc_VOID);}
 ;; 
 }
 
@@ -954,7 +954,7 @@ static void __lambda_35(void *data, object self_73105, int argc, object *args) /
  object r_7367 = args[0];
   
 
-return_closcall1(data,  ((closureN)self_73105)->elements[0],  Cyc_set_cell(data, ((closureN)self_73105)->elements[1], r_7367));; 
+return_direct_with_clo1(data,  ((closureN)self_73105)->elements[0], (((closure)  ((closureN)self_73105)->elements[0])->fn),  Cyc_set_cell(data, ((closureN)self_73105)->elements[1], r_7367));; 
 }
 
 static void __lambda_33(void *data, object self_73106, int argc, object *args) /* object self_73106, object k_7368 */
@@ -964,7 +964,7 @@ static void __lambda_33(void *data, object self_73106, int argc, object *args) /
   
   
 if( (boolean_f != Cyc_is_null(Cyc_cdr(data, car(((closureN)self_73106)->elements[0])))) ){ 
-  return_closcall1(data,  k_7368,  Cyc_VOID);
+  return_direct_with_clo1(data,  k_7368, (((closure)  k_7368)->fn),  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_73247, ": ", 2, 2);
@@ -1121,7 +1121,7 @@ static void __lambda_22(void *data, object self_7394, int argc, object *args) /*
  object r_7356 = args[0];
     
 if( (boolean_f != Cyc_is_null(r_7356)) ){ 
-  return_closcall1(data,  ((closureN)self_7394)->elements[0],  Cyc_VOID);
+  return_direct_with_clo1(data,  ((closureN)self_7394)->elements[0], (((closure)  ((closureN)self_7394)->elements[0])->fn),  Cyc_VOID);
 } else { 
   
 make_utf8_string_with_len(c_73192, ": ", 2, 2);

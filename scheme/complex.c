@@ -426,7 +426,7 @@ static void __lambda_17(void *data, object _, int argc, object *args) /* closure
  {
 object k_7352 = args[0];
   Cyc_st_add(data, "scheme/complex.sld:lib-init:schemecomplex");
-return_closcall1(data,  k_7352,  obj_int2obj(0));; 
+return_direct_with_clo1(data,  k_7352, (((closure)  k_7352)->fn),  obj_int2obj(0));; 
 }
 
 static void __lambda_20(void *data, object _, int argc, object *args) {object k = args[0];object r = args[1];object i = args[2]; Cyc_check_num(data, r);
@@ -632,7 +632,7 @@ complex_num_type local_73104;
 complex_num_type local_73107; 
 
 complex_num_type local_73112; 
-return_closcall1(data,  ((closureN)self_7358)->elements[0],  ((inline_function_type)
+return_direct_with_clo1(data,  ((closureN)self_7358)->elements[0], (((closure)  ((closureN)self_7358)->elements[0])->fn),  ((inline_function_type)
                    ((closure)__glo_sqrt_191_191inline_191_191_scheme_base)->fn)(data,&local_73101, Cyc_fast_sum(data,&local_73104, Cyc_fast_mul(data,&local_73107, ((closureN)self_7358)->elements[2], ((closureN)self_7358)->elements[3]), Cyc_fast_mul(data,&local_73112, ((closureN)self_7358)->elements[1], r_7332))));; 
 }
 
@@ -665,7 +665,7 @@ static void __lambda_4(void *data, object self_7354, int argc, object *args) /* 
   if( (boolean_f != r_7324) ){ 
   return_closcall2(data,  __glo__75imag_91part_scheme_complex,  ((closureN)self_7354)->elements[0], ((closureN)self_7354)->elements[1]);
 } else { 
-  return_closcall1(data,  ((closureN)self_7354)->elements[0],  obj_int2obj(0));}
+  return_direct_with_clo1(data,  ((closureN)self_7354)->elements[0], (((closure)  ((closureN)self_7354)->elements[0])->fn),  obj_int2obj(0));}
 ;; 
 }
 
@@ -698,7 +698,7 @@ static void __lambda_2(void *data, object self_7353, int argc, object *args) /* 
   if( (boolean_f != r_7320) ){ 
   return_closcall2(data,  __glo__75real_91part_scheme_complex,  ((closureN)self_7353)->elements[0], ((closureN)self_7353)->elements[1]);
 } else { 
-  return_closcall1(data,  ((closureN)self_7353)->elements[0],  ((closureN)self_7353)->elements[1]);}
+  return_direct_with_clo1(data,  ((closureN)self_7353)->elements[0], (((closure)  ((closureN)self_7353)->elements[0])->fn),  ((closureN)self_7353)->elements[1]);}
 ;; 
 }
 

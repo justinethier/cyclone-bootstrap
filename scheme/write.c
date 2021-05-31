@@ -368,7 +368,7 @@ static void __lambda_6(void *data, object self_7332, int argc, object *args) /* 
 
   
 object c_7372 = global_set_cps_id(data,  ((closureN)self_7332)->elements[0],"__glo_write_91simple_scheme_write", __glo_write_91simple_scheme_write, __glo_write_scheme_write);
-return_closcall1(data,  ((closureN)self_7332)->elements[0],  c_7372);; 
+return_direct_with_clo1(data,  ((closureN)self_7332)->elements[0], (((closure)  ((closureN)self_7332)->elements[0])->fn),  c_7372);; 
 }
 
 static void __lambda_3(void *data, object _, int argc, object *args) /* closure _,object k_7317, object obj_733_737, object port_734_738_raw, ... */
@@ -397,7 +397,7 @@ return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7353);
 
 
 
-return_closcall1(data,  k_7317,  Cyc_write_va(data, 2,obj_733_737, Cyc_car(data, port_734_738)));}
+return_direct_with_clo1(data,  k_7317, (((closure)  k_7317)->fn),  Cyc_write_va(data, 2,obj_733_737, Cyc_car(data, port_734_738)));}
 ;; 
 }
 
@@ -406,7 +406,7 @@ static void __lambda_4(void *data, object self_7331, int argc, object *args) /* 
  object r_7319 = args[0];
   
 
-return_closcall1(data,  ((closureN)self_7331)->elements[0],  Cyc_write_va(data, 2,((closureN)self_7331)->elements[1], r_7319));; 
+return_direct_with_clo1(data,  ((closureN)self_7331)->elements[0], (((closure)  ((closureN)self_7331)->elements[0])->fn),  Cyc_write_va(data, 2,((closureN)self_7331)->elements[1], r_7319));; 
 }
 
 static void __lambda_1(void *data, object _, int argc, object *args) /* closure _,object k_7311, object obj_731_735, object port_732_736_raw, ... */
@@ -435,7 +435,7 @@ return_closcall1(data,  __glo_current_91output_91port_scheme_base,  &c_7337);
 
 
 
-return_closcall1(data,  k_7311,  Cyc_display_va(data, 2,obj_731_735, Cyc_car(data, port_732_736)));}
+return_direct_with_clo1(data,  k_7311, (((closure)  k_7311)->fn),  Cyc_display_va(data, 2,obj_731_735, Cyc_car(data, port_732_736)));}
 ;; 
 }
 
@@ -444,7 +444,7 @@ static void __lambda_2(void *data, object self_7330, int argc, object *args) /* 
  object r_7313 = args[0];
   
 
-return_closcall1(data,  ((closureN)self_7330)->elements[0],  Cyc_display_va(data, 2,((closureN)self_7330)->elements[1], r_7313));; 
+return_direct_with_clo1(data,  ((closureN)self_7330)->elements[0], (((closure)  ((closureN)self_7330)->elements[0])->fn),  Cyc_display_va(data, 2,((closureN)self_7330)->elements[1], r_7313));; 
 }
 
 void c_schemewrite_inlinable_lambdas(void *data, object clo, int argc, object *args){ 
