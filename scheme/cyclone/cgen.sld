@@ -242,13 +242,12 @@
         (wrap (lambda (s) (if (> num-args 0) s ""))))
     (string-append
       "#define closcall" n "(td, clo, buf) \\\n"
-        ;(wrap (string-append "if (obj_is_not_closure(clo)) { \\\n"
-        ;                     "   Cyc_apply(td, clo, " n ", buf ); \\\n"
-        ;                     "}"))
-        ;(wrap " else { \\\n")
+        (wrap (string-append "if (obj_is_not_closure(clo)) { \\\n"
+                             "   Cyc_apply(td, clo, " n ", buf ); \\\n"
+                             "}"))
+        (wrap " else { \\\n")
         "   ((clo)->fn)(td, clo, " n ", buf); \\\n"
-        ;(wrap ";\\\n}")
-        )))
+        (wrap ";\\\n}"))))
 
 (define (c-macro-n-prefix n prefix)
   (if (> n 0)
@@ -1098,7 +1097,10 @@
                 (this-cont (c:body cfun))
                 (cargs (c-compile-args (cdr args) append-preamble "  " this-cont ast-id trace cps?))
                 (raw-cargs (cdddr cargs)) ; Same as above but with lists instead of appended strings
-                (num-cargs (c:num-args cargs)))
+                (num-cargs (c:num-args cargs))
+                (is-cont (and (equal? (length fun) 4)
+                              (cadddr fun))))
+(trace:error `(JAE DEBUG ,is-cont ,fun))
            (cond
              ((not cps?)
               (c:code 
@@ -1215,6 +1217,18 @@
                           (if (> num-cargs 0) "," "")
                           (c:body cargs)
                           ");"))))
+                  (is-cont ;; Compiled continuation, can make a more efficient call
+                   (c:code 
+                     (string-append
+                       (c:allocs->str (c:allocs cfun) "\n")
+                       (c:allocs->str (c:allocs cargs) "\n")
+                       "return_direct_with_clo" (number->string (c:num-args cargs))
+                       "(data,"
+                       this-cont
+                       ", (((closure)" this-cont ")->fn)"
+                       (if (> (c:num-args cargs) 0) "," "")
+                       (c:body cargs)
+                       ");")))
                   (else
                     (c:code 
                       (string-append

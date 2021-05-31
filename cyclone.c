@@ -8,8 +8,12 @@
  **/
 
 #define closcall1(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 1, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 1, buf); \
-
+;\
+}
 #define return_closcall1(td, clo,a1) { \
  char top; \
  object buf[1]; buf[0] = a1;\
@@ -55,8 +59,12 @@
  }}
 
 #define closcall2(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 2, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 2, buf); \
-
+;\
+}
 #define return_closcall2(td, clo,a1,a2) { \
  char top; \
  object buf[2]; buf[0] = a1;buf[1] = a2;\
@@ -102,8 +110,12 @@
  }}
 
 #define closcall3(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 3, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 3, buf); \
-
+;\
+}
 #define return_closcall3(td, clo,a1,a2,a3) { \
  char top; \
  object buf[3]; buf[0] = a1;buf[1] = a2;buf[2] = a3;\
@@ -149,8 +161,12 @@
  }}
 
 #define closcall4(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 4, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 4, buf); \
-
+;\
+}
 #define return_closcall4(td, clo,a1,a2,a3,a4) { \
  char top; \
  object buf[4]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;\
@@ -196,8 +212,12 @@
  }}
 
 #define closcall5(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 5, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 5, buf); \
-
+;\
+}
 #define return_closcall5(td, clo,a1,a2,a3,a4,a5) { \
  char top; \
  object buf[5]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;\
@@ -243,8 +263,12 @@
  }}
 
 #define closcall8(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 8, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 8, buf); \
-
+;\
+}
 #define return_closcall8(td, clo,a1,a2,a3,a4,a5,a6,a7,a8) { \
  char top; \
  object buf[8]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;\
@@ -290,8 +314,12 @@
  }}
 
 #define closcall11(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 11, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 11, buf); \
-
+;\
+}
 #define return_closcall11(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11) { \
  char top; \
  object buf[11]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;\
@@ -337,8 +365,12 @@
  }}
 
 #define closcall12(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 12, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 12, buf); \
-
+;\
+}
 #define return_closcall12(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12) { \
  char top; \
  object buf[12]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;\
@@ -384,8 +416,12 @@
  }}
 
 #define closcall16(td, clo, buf) \
+if (obj_is_not_closure(clo)) { \
+   Cyc_apply(td, clo, 16, buf ); \
+} else { \
    ((clo)->fn)(td, clo, 16, buf); \
-
+;\
+}
 #define return_closcall16(td, clo,a1,a2,a3,a4,a5,a6,a7,a8,a9,a10,a11,a12,a13,a14,a15,a16) { \
  char top; \
  object buf[16]; buf[0] = a1;buf[1] = a2;buf[2] = a3;buf[3] = a4;buf[4] = a5;buf[5] = a6;buf[6] = a7;buf[7] = a8;buf[8] = a9;buf[9] = a10;buf[10] = a11;buf[11] = a12;buf[12] = a13;buf[13] = a14;buf[14] = a15;buf[15] = a16;\
