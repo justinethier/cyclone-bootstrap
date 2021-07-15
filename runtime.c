@@ -7887,19 +7887,105 @@ object Cyc_io_read_u8(void *data, object cont, object port)
   return Cyc_EOF;
 }
 
-/* TODO: this function needs some work, but approximates what is needed */
+// A version of read_line that uses our internal port buffer for
+// compatiblity with other I/O function such as read-char
+object Cyc_io_read_line_slow(void *data, object cont, object port)
+{
+  FILE *stream;
+  port_type *p;
+  char buf[1027];
+  int i, limit = 1024; // Ensure last code point is fully-read
+
+  Cyc_check_port(data, port);
+  stream = ((port_type *) port)->fp;
+  if (stream == NULL) {
+    Cyc_rt_raise2(data, "Unable to read from closed port: ", port);
+  }
+  set_thread_blocked(data, cont);
+
+  p = (port_type *)port;
+  for (i = 0; i < limit; i++) {
+    //_read_next_char(data, NULL, p);
+    if (p->mem_buf_len == 0 || p->mem_buf_len == p->buf_idx) { 
+      int rv = read_from_port(p); 
+      if (!rv) { 
+        if (i == 0) { // Empty buffer, return EOF
+          return_thread_runnable_with_obj(data, Cyc_EOF, p); 
+        } else {
+          break; // Handle buf contents below
+        }
+      }
+    }
+    buf[i] = p->mem_buf[p->buf_idx++];
+    if (buf[i] == '\n') {
+      break;
+    }
+  } 
+
+  // ensure we fully-read last code point
+  {
+    int c, len, num_cp, ii = 0;
+    char_type codepoint;
+    uint32_t state;
+
+    buf[i+1] = '\0';
+    state = Cyc_utf8_count_code_points_and_bytes((uint8_t *)buf, &codepoint, &num_cp, &len);
+    while (state != CYC_UTF8_ACCEPT && ii < 3) {
+      if (p->mem_buf_len == 0 || p->mem_buf_len == p->buf_idx) { 
+        int rv = read_from_port(p); 
+        if (!rv) {
+          break; // At EOF, return what we've got so far
+        }
+      }
+      c = p->mem_buf[p->buf_idx++];
+
+      buf[len] = c;
+      len++;
+      Cyc_utf8_decode(&state, &codepoint, (uint8_t)c);
+      if (state == CYC_UTF8_ACCEPT) {
+        num_cp++;
+        break;
+      }
+      ii++;
+    }
+
+    // Remove any trailing CR / newline chars
+    while (len > 0 && (buf[len - 1] == '\n' ||
+                       buf[len - 1] == '\r')) {
+      len--;
+      num_cp--;
+    }
+    buf[len] = '\0';
+    make_string_noalloc(s, buf, len);
+    s.num_cp = num_cp;
+    return_thread_runnable_with_obj(data, &s, port);
+  }
+  return NULL;
+}
+
 object Cyc_io_read_line(void *data, object cont, object port)
 {
-  FILE *stream = ((port_type *) port)->fp;
+  FILE *stream;
+  port_type *p;
   char buf[1027];
   int len, num_cp, i = 0;
   char_type codepoint;
   uint32_t state;
 
   Cyc_check_port(data, port);
+  stream = ((port_type *) port)->fp;
   if (stream == NULL) {
     Cyc_rt_raise2(data, "Unable to read from closed port: ", port);
   }
+
+  // If there is data in the port buffer we have to use the slow path
+  // for compatibility with other I/O functions
+  p = (port_type *)port;
+  if ( !(p->mem_buf_len == 0 || p->mem_buf_len == p->buf_idx)) { 
+    return Cyc_io_read_line_slow(data, cont, port);
+  }
+
+  // Otherwise, the port buffer is empty so we can use the fast path below:
   set_thread_blocked(data, cont);
   errno = 0;
   if (fgets(buf, 1023, stream) != NULL) {
@@ -7931,13 +8017,7 @@ object Cyc_io_read_line(void *data, object cont, object port)
       return_thread_runnable_with_obj(data, &s, port);
     }
   } else {
-    if (feof(stream)) {
-      return_thread_runnable_with_obj(data, Cyc_EOF, port);
-    } else {
-      // TODO: can't do this because we said thread could be blocked
-      //Cyc_rt_raise2(data, "Error reading from file: ", obj_int2obj(errno));
-      return_thread_runnable_with_obj(data, Cyc_EOF, port);
-    }
+    return_thread_runnable_with_obj(data, Cyc_EOF, port);
   }
   return NULL;
 }
