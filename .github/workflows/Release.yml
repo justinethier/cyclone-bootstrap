@@ -1,7 +1,6 @@
 name: Release
 
-#on: [create]
-on: [push]
+on: [create]
 
 jobs:
   build:
