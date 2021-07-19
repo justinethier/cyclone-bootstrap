@@ -2111,11 +2111,16 @@
          ; Alternate version that inlines make-constructor/args
          (,_define ,make
             (,_lambda ,make-fields
+
               (,(rename 'vector)
                (make-record-marker)
                (quote ,name)
                (,(rename 'vector)
-                ,@make-fields))))
+                ,@make-fields
+                ,@(make-list ;; Include slots for fields not in the constructor
+                    (- (length (cddddr expr))
+                       (length make-fields)))
+                ))))
   )))))
 
 (define-syntax define-values
