@@ -840,9 +840,9 @@
                    (car fill)))
                (make
                  (lambda (n obj)
-                   (if (zero? n)
-                   '()
-                   (cons obj (make (- n 1) obj) )))))
+                   (if (> n 0)
+                   (cons obj (make (- n 1) obj) )
+                   '() ))))
       (make k x)))
     (define (list-copy ls)
       (let lp ((ls ls) (res '()))
@@ -2111,16 +2111,14 @@
          ; Alternate version that inlines make-constructor/args
          (,_define ,make
             (,_lambda ,make-fields
-
               (,(rename 'vector)
                (make-record-marker)
                (quote ,name)
                (,(rename 'vector)
-                ,@make-fields
-                ,@(make-list ;; Include slots for fields not in the constructor
+                ,@make-fields ;; Pass field values sent to constructor
+                ,@(make-list ;; And include empty slots for any other fields
                     (- (length (cddddr expr))
-                       (length make-fields)))
-                ))))
+                       (length make-fields))) ))))
   )))))
 
 (define-syntax define-values
