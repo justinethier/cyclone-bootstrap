@@ -1005,6 +1005,7 @@
                "\n"
                cgen-body ; TODO: (c:body cgen) ; TODO: re-assign function args, longer-term using temp variables
                "\n"
+               (mangle (cadr args)) " = " (mangle (cadr args)) ";"
                "continue;"))))
          
         ((eq? 'Cyc-foreign-code fun)
