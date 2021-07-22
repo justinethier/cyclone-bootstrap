@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -484,8 +484,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -2645,7 +2643,7 @@ make_utf8_string_with_len(c_73847, " Cyc_check_fixnum(data, i);\n               
 
 
 
-make_utf8_string_with_len(c_73850, " obj_obj2int(j)) ? boolean_t : boolean_f;\n                      return_closcall1(data, k, result); ", 99, 99);
+make_utf8_string_with_len(c_73850, " obj_obj2int(j)) \? boolean_t : boolean_f;\n                      return_closcall1(data, k, result); ", 99, 99);
 
 object c_73846 = Cyc_string_append(data,(closure)&c_73824,3,&c_73847, Cyc_caddr(data, expr_7324_73426), &c_73850);
 return_closcall1(data,(closure)&c_73824,  c_73846);; 

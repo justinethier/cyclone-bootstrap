@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -526,8 +526,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -3609,7 +3607,7 @@ c_732870.elements[0] = ((closureN)self_731310)->elements[0];
 
 make_utf8_string_with_len(c_732881, "(", 1, 1);
 
-make_utf8_string_with_len(c_732882, " == 0 ? boolean_f : boolean_t)", 30, 30);
+make_utf8_string_with_len(c_732882, " == 0 \? boolean_f : boolean_t)", 30, 30);
 
 object c_732880 = Cyc_string_append(data,(closure)&c_732870,3,&c_732881, r_731007, &c_732882);
 return_closcall1(data,(closure)&c_732870,  c_732880);; 
@@ -4347,7 +4345,7 @@ pair_type local_732232;
 
 pair_type local_732237; 
 
-make_utf8_string_with_len(c_732238, " == 0 ? boolean_f : boolean_t)", 30, 30);
+make_utf8_string_with_len(c_732238, " == 0 \? boolean_f : boolean_t)", 30, 30);
 
 pair_type local_732241; 
 

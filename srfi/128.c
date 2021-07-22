@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -707,8 +707,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -1679,7 +1677,7 @@ c_735587.elements = (object *)e_735788;
 c_735587.elements[0] = ((closureN)self_732445)->elements[0];
 
 
-make_utf8_string_with_len(c_735789, "comparator-ordered?", 19, 19);
+make_utf8_string_with_len(c_735789, "comparator-ordered\?", 19, 19);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_735587, &c_735789, quote_comparator, r_732006);; 
 }
 
@@ -1737,7 +1735,7 @@ c_735593.elements = (object *)e_735781;
 c_735593.elements[0] = ((closureN)self_732448)->elements[0];
 
 
-make_utf8_string_with_len(c_735782, "comparator-hashable?", 20, 20);
+make_utf8_string_with_len(c_735782, "comparator-hashable\?", 20, 20);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_735593, &c_735782, quote_comparator, r_732002);; 
 }
 

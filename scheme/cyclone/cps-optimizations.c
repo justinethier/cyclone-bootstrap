@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -1058,8 +1058,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -3737,7 +3735,7 @@ c_7319470.elements = (object *)e_7320298;
 c_7319470.elements[0] = ((closureN)self_737943)->elements[0];
 
 
-make_utf8_string_with_len(c_7320299, "adbv:global?", 12, 12);
+make_utf8_string_with_len(c_7320299, "adbv:global\?", 12, 12);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319470, &c_7320299, quote__121analysis_91db_91variable_125, r_735974);; 
 }
 
@@ -3911,7 +3909,7 @@ c_7319488.elements = (object *)e_7320277;
 c_7319488.elements[0] = ((closureN)self_737952)->elements[0];
 
 
-make_utf8_string_with_len(c_7320278, "adbv:const?", 11, 11);
+make_utf8_string_with_len(c_7320278, "adbv:const\?", 11, 11);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319488, &c_7320278, quote__121analysis_91db_91variable_125, r_735962);; 
 }
 
@@ -4143,7 +4141,7 @@ c_7319512.elements = (object *)e_7320249;
 c_7319512.elements[0] = ((closureN)self_737964)->elements[0];
 
 
-make_utf8_string_with_len(c_7320250, "adbv:mutated-by-set?", 20, 20);
+make_utf8_string_with_len(c_7320250, "adbv:mutated-by-set\?", 20, 20);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319512, &c_7320250, quote__121analysis_91db_91variable_125, r_735946);; 
 }
 
@@ -4201,7 +4199,7 @@ c_7319518.elements = (object *)e_7320242;
 c_7319518.elements[0] = ((closureN)self_737967)->elements[0];
 
 
-make_utf8_string_with_len(c_7320243, "adbv:reassigned?", 16, 16);
+make_utf8_string_with_len(c_7320243, "adbv:reassigned\?", 16, 16);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319518, &c_7320243, quote__121analysis_91db_91variable_125, r_735942);; 
 }
 
@@ -4607,7 +4605,7 @@ c_7319560.elements = (object *)e_7320193;
 c_7319560.elements[0] = ((closureN)self_737988)->elements[0];
 
 
-make_utf8_string_with_len(c_7320194, "adbv:cont?", 10, 10);
+make_utf8_string_with_len(c_7320194, "adbv:cont\?", 10, 10);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319560, &c_7320194, quote__121analysis_91db_91variable_125, r_735914);; 
 }
 
@@ -4665,7 +4663,7 @@ c_7319566.elements = (object *)e_7320186;
 c_7319566.elements[0] = ((closureN)self_737991)->elements[0];
 
 
-make_utf8_string_with_len(c_7320187, "adbv:def-in-loop?", 17, 17);
+make_utf8_string_with_len(c_7320187, "adbv:def-in-loop\?", 17, 17);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319566, &c_7320187, quote__121analysis_91db_91variable_125, r_735910);; 
 }
 
@@ -4723,7 +4721,7 @@ c_7319572.elements = (object *)e_7320179;
 c_7319572.elements[0] = ((closureN)self_737994)->elements[0];
 
 
-make_utf8_string_with_len(c_7320180, "adbv:ref-in-loop?", 17, 17);
+make_utf8_string_with_len(c_7320180, "adbv:ref-in-loop\?", 17, 17);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319572, &c_7320180, quote__121analysis_91db_91variable_125, r_735906);; 
 }
 
@@ -4781,7 +4779,7 @@ c_7319578.elements = (object *)e_7320172;
 c_7319578.elements[0] = ((closureN)self_737997)->elements[0];
 
 
-make_utf8_string_with_len(c_7320173, "adbv:direct-rec-call?", 21, 21);
+make_utf8_string_with_len(c_7320173, "adbv:direct-rec-call\?", 21, 21);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319578, &c_7320173, quote__121analysis_91db_91variable_125, r_735902);; 
 }
 
@@ -4839,7 +4837,7 @@ c_7319584.elements = (object *)e_7320165;
 c_7319584.elements[0] = ((closureN)self_738000)->elements[0];
 
 
-make_utf8_string_with_len(c_7320166, "adbv:self-rec-call?", 19, 19);
+make_utf8_string_with_len(c_7320166, "adbv:self-rec-call\?", 19, 19);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319584, &c_7320166, quote__121analysis_91db_91variable_125, r_735898);; 
 }
 
@@ -6677,7 +6675,7 @@ c_7319772.elements = (object *)e_7319934;
 c_7319772.elements[0] = ((closureN)self_738094)->elements[0];
 
 
-make_utf8_string_with_len(c_7319935, "adbf:calls-self?", 16, 16);
+make_utf8_string_with_len(c_7319935, "adbf:calls-self\?", 16, 16);
 return_direct_with_clo4(data,  __glo_make_91getter_scheme_base, (((closure)  __glo_make_91getter_scheme_base)->fn),  &c_7319772, &c_7319935, quote__121analysis_91db_91function_125, r_735773);; 
 }
 

@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -673,8 +673,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -24546,7 +24544,7 @@ if( (boolean_f != Cyc_is_null(l_73155_731380)) ){
   return_direct_with_clo1(data,  k_732350, (((closure)  k_732350)->fn),  boolean_t);
 } else { 
   
-make_utf8_string_with_len(c_735903, "null-list?: argument out of domain", 34, 34);
+make_utf8_string_with_len(c_735903, "null-list\?: argument out of domain", 34, 34);
 return_direct_with_clo3(data,  __glo_error_scheme_base, (((closure)  __glo_error_scheme_base)->fn),  k_732350, &c_735903, l_73155_731380);}
 ;}
 ;; 
