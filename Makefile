@@ -132,12 +132,22 @@ icyc-c: $(CFILES) $(COBJECTS) $(C_SHARED_OBJECTS) $(CYC_LIBS)
 icyc: cyclone
 	./cyclone icyc.scm
 
-.PHONY: test
-test:
-	$(MAKE) unit-tests
+TEST_DIR = tests
+TEST_SRC = $(TEST_DIR)/unit-tests.scm \
+					 $(TEST_DIR)/threading.scm
+TESTS = $(basename $(TEST_SRC))
 
-unit-tests: unit-tests.scm
-	./cyclone unit-tests.scm && ./unit-tests
+.PHONY: test
+test: $(TESTS)
+#	$(MAKE) unit-tests
+
+#unit-tests: unit-tests.scm
+#	./cyclone unit-tests.scm && ./unit-tests
+
+$(TESTS) : %: %.scm
+	./cyclone -I . $<
+	./$@
+	rm -rf $@
 
 .PHONY: clean
 clean:
