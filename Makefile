@@ -142,7 +142,7 @@ test: $(TESTS)
 $(TESTS) : %: %.scm
 	./cyclone -I . $<
 	./$@
-	rm -rf $@
+	rm -rf $@ $@.c $@.o
 
 .PHONY: clean
 clean:
