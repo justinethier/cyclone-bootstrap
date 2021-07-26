@@ -133,16 +133,11 @@ icyc: cyclone
 	./cyclone icyc.scm
 
 TEST_DIR = tests
-TEST_SRC = $(TEST_DIR)/unit-tests.scm \
-					 $(TEST_DIR)/threading.scm
+TEST_SRC = $(shell find $(TEST_DIR) -name '*.scm')
 TESTS = $(basename $(TEST_SRC))
 
 .PHONY: test
 test: $(TESTS)
-#	$(MAKE) unit-tests
-
-#unit-tests: unit-tests.scm
-#	./cyclone unit-tests.scm && ./unit-tests
 
 $(TESTS) : %: %.scm
 	./cyclone -I . $<
