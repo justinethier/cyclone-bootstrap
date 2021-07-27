@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -493,8 +493,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -728,7 +726,7 @@ c_731321.elements[0] = ((closureN)self_73604)->elements[1];
 c_731321.elements[1] = r_73437;
 
 
-make_utf8_string_with_len(c_731328, "Could not touch file ~a. Lack of permissions? Return code", 57, 57);
+make_utf8_string_with_len(c_731328, "Could not touch file ~a. Lack of permissions\? Return code", 57, 57);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731321, &c_731328, ((closureN)self_73604)->elements[0]);}
 ;; 
 }
@@ -868,7 +866,7 @@ c_731279.elements[0] = ((closureN)self_73598)->elements[1];
 c_731279.elements[1] = r_73424;
 
 
-make_utf8_string_with_len(c_731286, "Could not copy file ~a to ~a. Lack of permissions? Return code", 62, 62);
+make_utf8_string_with_len(c_731286, "Could not copy file ~a to ~a. Lack of permissions\? Return code", 62, 62);
 return_direct_with_clo4(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731279, &c_731286, ((closureN)self_73598)->elements[0], ((closureN)self_73598)->elements[2]);}
 ;; 
 }
@@ -1029,7 +1027,7 @@ c_731233.elements[0] = ((closureN)self_73592)->elements[1];
 c_731233.elements[1] = r_73411;
 
 
-make_utf8_string_with_len(c_731240, "Could not copy directory ~a into ~a. Lack of permissions? Return code", 69, 69);
+make_utf8_string_with_len(c_731240, "Could not copy directory ~a into ~a. Lack of permissions\? Return code", 69, 69);
 return_direct_with_clo4(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731233, &c_731240, ((closureN)self_73592)->elements[0], ((closureN)self_73592)->elements[2]);}
 ;; 
 }
@@ -1190,7 +1188,7 @@ c_731185.elements[0] = ((closureN)self_73585)->elements[1];
 c_731185.elements[1] = r_73397;
 
 
-make_utf8_string_with_len(c_731192, "Could not copy file ~a into ~a. Lack of permissions? Return code", 64, 64);
+make_utf8_string_with_len(c_731192, "Could not copy file ~a into ~a. Lack of permissions\? Return code", 64, 64);
 return_direct_with_clo4(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731185, &c_731192, ((closureN)self_73585)->elements[0], ((closureN)self_73585)->elements[2]);}
 ;; 
 }
@@ -1329,7 +1327,7 @@ c_731141.elements[0] = ((closureN)self_73578)->elements[0];
 c_731141.elements[1] = r_73383;
 
 
-make_utf8_string_with_len(c_731148, "Could not create path ~a. Lack of permissions? Return code", 58, 58);
+make_utf8_string_with_len(c_731148, "Could not create path ~a. Lack of permissions\? Return code", 58, 58);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731141, &c_731148, ((closureN)self_73578)->elements[1]);}
 ;; 
 }
@@ -1638,7 +1636,7 @@ c_731045.elements[0] = ((closureN)self_73565)->elements[1];
 c_731045.elements[1] = r_73353;
 
 
-make_utf8_string_with_len(c_731052, "Could not delete ~a. Lack of permissions? Return code", 53, 53);
+make_utf8_string_with_len(c_731052, "Could not delete ~a. Lack of permissions\? Return code", 53, 53);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731045, &c_731052, ((closureN)self_73565)->elements[0]);}
 ;; 
 }
@@ -1778,7 +1776,7 @@ c_731003.elements[0] = ((closureN)self_73559)->elements[2];
 c_731003.elements[1] = r_73340;
 
 
-make_utf8_string_with_len(c_731010, "Could not extract ~a into ~a. Lack of permissions? Return code", 62, 62);
+make_utf8_string_with_len(c_731010, "Could not extract ~a into ~a. Lack of permissions\? Return code", 62, 62);
 return_direct_with_clo4(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_731003, &c_731010, ((closureN)self_73559)->elements[1], ((closureN)self_73559)->elements[0]);}
 ;; 
 }
@@ -2316,7 +2314,7 @@ c_73863.elements[0] = ((closureN)self_73527)->elements[0];
 c_73863.elements[1] = ((closureN)self_73527)->elements[2];
 
 
-make_utf8_string_with_len(c_73868, "Could not download ~a. Lack of permissions? Return code", 55, 55);
+make_utf8_string_with_len(c_73868, "Could not download ~a. Lack of permissions\? Return code", 55, 55);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_73863, &c_73868, ((closureN)self_73527)->elements[1]);}
 ;; 
 }

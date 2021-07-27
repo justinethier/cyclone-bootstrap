@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.30.0 
+ ** Version 0.31.0 
  **
  **/
 
@@ -433,8 +433,6 @@ extern object __glo_sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
-extern object __glo_denominator_191_191inline_191_191_scheme_base;
-extern object __glo_numerator_191_191inline_191_191_scheme_base;
 extern object __glo_quotient_191_191inline_191_191_scheme_base;
 extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
@@ -951,7 +949,7 @@ c_73173.elements = (object *)e_73185;
 c_73173.elements[0] = k_7365;
 
 
-make_utf8_string_with_len(c_73186, "Unable to acquire lock ~a~%Is another instance of Winds still running?~%", 72, 72);
+make_utf8_string_with_len(c_73186, "Unable to acquire lock ~a~%Is another instance of Winds still running\?~%", 72, 72);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_73173, &c_73186, __glo__85default_91lock_91file_85_libs_common);
 } else { 
   
@@ -993,7 +991,7 @@ c_73190.elements[1] = ((closureN)self_73123)->elements[1];
 c_73190.elements[2] = ((closureN)self_73123)->elements[2];
 
 
-make_utf8_string_with_len(c_73210, "Is another instance of Winds running? Retrying...(~a)~%", 55, 55);
+make_utf8_string_with_len(c_73210, "Is another instance of Winds running\? Retrying...(~a)~%", 55, 55);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_73190, &c_73210, ((closureN)self_73123)->elements[2]);
 } else { 
   return_direct_with_clo2(data,  __glo_touch_67_libs_system_91calls, (((closure)  __glo_touch_67_libs_system_91calls)->fn),  ((closureN)self_73123)->elements[0], __glo__85default_91lock_91file_85_libs_common);}
