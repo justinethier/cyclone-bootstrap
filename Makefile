@@ -138,7 +138,6 @@ TESTS = $(basename $(TEST_SRC))
 
 .PHONY: test
 test: $(TESTS)
-	./icyc tests/test.scm
 
 $(TESTS) : %: %.scm
 	./cyclone -I . $<
