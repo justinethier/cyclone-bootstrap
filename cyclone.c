@@ -19973,7 +19973,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85cgen_117track_91call_91history_85 = boolean_t; 
   __glo__85optimize_117inline_91unsafe_85 = boolean_f; 
   __glo__85optimize_117beta_91expand_91threshold_85 = boolean_f; 
-  __glo__85optimize_117memoize_91pure_91functions_85 = boolean_t; 
+  __glo__85optimize_117memoize_91pure_91functions_85 = boolean_f; 
   __glo__85optimization_91level_85 = obj_int2obj(2); 
   __glo__85fe_117batch_91compile_85 = boolean_t; 
 
