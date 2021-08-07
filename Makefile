@@ -140,7 +140,7 @@ TESTS = $(basename $(TEST_SRC))
 test: $(TESTS)
 
 $(TESTS) : %: %.scm
-	./cyclone -I . $<
+	./cyclone -I libs -COPT '-Iinclude' -CLNK '-L.' $<
 	./$@
 	rm -rf $@ $@.c $@.o
 
