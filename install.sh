@@ -38,5 +38,5 @@ else
 fi
 
 $MAKE $PREFIX && \
-sudo $MAKE $PREFIX install && \
-$MAKE $PREFIX test
+$MAKE $PREFIX test && \
+sudo $MAKE $PREFIX install
