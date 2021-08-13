@@ -71,6 +71,12 @@ C_SHARED_OBJECTS=$(CFILES:.c=.so)
 
 all: cyclone icyc-c winds
 
+ifdef CYC_PTHREAD_SET_STACK_SIZE
+  DEF_PTHREAD_SET_STACK_SIZE=-DCYC_PTHREAD_SET_STACK_SIZE=$(CYC_PTHREAD_SET_STACK_SIZE) 
+else
+  DEF_PTHREAD_SET_STACK_SIZE=
+endif
+
 $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c ffi.c mstreams.c hashset.c $(CYC_BN_LIB)
 	$(CC) $(CFLAGS) -c hashset.c -o hashset.o
 	$(CC) $(CFLAGS) -c -std=gnu99 gc.c -o gc.o
@@ -80,6 +86,7 @@ $(CYC_RT_LIB): runtime.c include/cyclone/runtime.h gc.c ffi.c mstreams.c hashset
                   -DCYC_HAVE_FMEMOPEN=$(CYC_PLATFORM_HAS_FMEMOPEN) \
                   mstreams.c -o mstreams.o
 	$(CC) $(CFLAGS) -c \
+  $(DEF_PTHREAD_SET_STACK_SIZE) \
   -DCYC_INSTALL_DIR=\"$(PREFIX)\" \
   -DCYC_INSTALL_LIB=\"$(LIBDIR)\" \
   -DCYC_INSTALL_BIN=\"$(BINDIR)\" \
