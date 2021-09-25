@@ -656,6 +656,8 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
+extern object __glo_thread_91name_191_191inline_191_191_srfi_18;
+extern object __glo_thread_91specific_191_191inline_191_191_srfi_18;
 #include "cyclone/runtime.h"
 defsymbol(shared_91delay_127);
 defsymbol(sd_117done);
