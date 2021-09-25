@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.32.0 
+ ** Version 0.33.0 
  **
  **/
 
@@ -438,6 +438,8 @@ extern object __glo_square_191_191inline_191_191_scheme_base;
 extern object __glo_eof_91object_191_191inline_191_191_scheme_base;
 extern object __glo_void_191_191inline_191_191_scheme_base;
 extern object __glo_make_91record_91marker_191_191inline_191_191_scheme_base;
+extern object __glo_thread_91name_191_191inline_191_191_srfi_18;
+extern object __glo_thread_91specific_191_191inline_191_191_srfi_18;
 #include "cyclone/runtime.h"
 defsymbol(unlock_91file_67);
 defsymbol(body);

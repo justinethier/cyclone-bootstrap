@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2021 Justin Ethier
- ** Version 0.32.0 
+ ** Version 0.33.0 
  **
  **/
 
@@ -3116,7 +3116,7 @@ c_7351687.elements = (object *)e_7351693;
 c_7351687.elements[0] = k_7350609;
 
 
-make_utf8_string_with_len(c_7351694, "~a\n  Usage: winds [-v] COMMAND [PACKAGES]\n  \n  COMMANDS:\n\n    COMMON USE:\n    help  -  print usage\n    retrieve PACKAGE [...]  - downloads and extracts specified PACKAGE(s)\n    install PACKAGE [...] - retrieve and install specified PACKAGE(s)\n    reinstall PACKAGE [...] - retrieve and reinstall specified PACKAGE(s)\n    upgrade [PACKAGE ...] - upgrade all installed packages or specified PACKAGE(s)\n    uninstall PACKAGE [...] - remove specified PACKAGE(s)\n    search TERM - search for packages whose name (partially) match the specified TERM\n    info PACKAGE - list all metadata about specified PACKAGE\n    local-status - list all installed packages\n    index - pretty-prints winds packages index\n\n    PACKAGE AUTHORING:\n    build-local [DIR] - build local package using package.scm from DIR or \".\"\n    test-local [DIR] - test local package using package.scm in DIR or \".\"\n    package [DIR] - scaffold DIR layout and a package.scm stub\n    package-srfi [DIR] - scaffold DIR layout and a package.scm stub for SRFIs\n \n  PACKAGES:\n    Name of the package. Versions can be appended, e.g. dummy-test-package-0.1.2~%", 1112, 1112);
+make_utf8_string_with_len(c_7351694, "~a\n  Usage: winds [-v] COMMAND [PACKAGES]\n  \n  COMMANDS:\n\n    COMMON USE:\n    help  -  print usage\n    retrieve PACKAGE [...]  - downloads and extracts specified PACKAGE(s)\n    install PACKAGE [...] - retrieve and install specified PACKAGE(s)\n    reinstall PACKAGE [...] - retrieve and reinstall specified PACKAGE(s)\n    upgrade [PACKAGE ...] - upgrade all installed packages or specified PACKAGE(s)\n    uninstall PACKAGE [...] - remove specified PACKAGE(s)\n    search TERM - search for packages whose name (partially) match the specified TERM\n    info PACKAGE - list all metadata about specified PACKAGE\n    local-status - list all installed packages\n    index - pretty-prints winds packages index\n\n    PACKAGE AUTHORING:\n    build-local [DIR] - build local package using package.scm from DIR or \".\"\n    test-local [DIR] - test local package using package.scm in DIR or \".\"\n    package [DIR] - scaffold DIR layout and a package.scm stub\n    package-srfi [DIR] - scaffold DIR layout and a package.scm stub for SRFIs\n \n  PACKAGES:\n    Name of the package. Versions can be appended, e.g. dummy-test-package-0.1.2\n    \n  FLAGS:\n    The \"-v\" flag turns on the verbose mode.~%", 1171, 1171);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_7351687, &c_7351694, __glo__85banner_85);; 
 }
 

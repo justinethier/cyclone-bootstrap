@@ -29,5 +29,5 @@ jobs:
       uses: actions/upload-artifact@v1
       with:
         name: cyclone-scheme deb
-        path: DEBIAN/cyclone-scheme_0.32.0_amd64.deb
+        path: DEBIAN/cyclone-scheme_0.33.0_amd64.deb
     
