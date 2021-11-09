@@ -111,6 +111,7 @@ WINDS_OBJ= \
  $(WINDS_DIR)/libs/lock \
  $(WINDS_DIR)/libs/metadata \
  $(WINDS_DIR)/libs/package \
+ $(WINDS_DIR)/libs/semantic \
  $(WINDS_DIR)/libs/system-calls \
  $(WINDS_DIR)/libs/util \
  $(WINDS_DIR)/winds
