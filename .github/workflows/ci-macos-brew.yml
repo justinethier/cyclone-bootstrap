@@ -12,4 +12,4 @@ jobs:
     - name: Install
       run:  brew update; brew tap cyclone-scheme/cyclone ; brew -v install cyclone-scheme/cyclone/cyclone-bootstrap
     - name: test
-      run: ls -l /usr/local/share/cyclone && ls -l /usr/local/share/cyclone/cyclone ; cd tests; cyclone unit-tests.scm ; ./unit-tests && winds && cyclone threading.scm && ./threading && cyclone base.scm && ./base && cyclone test.scm && ./test
+      run: ls -l /usr/local/share/cyclone/* && ls -l /usr/local/share/cyclone/cyclone/* ; cd tests; cyclone unit-tests.scm ; ./unit-tests && winds && cyclone threading.scm && ./threading && cyclone base.scm && ./base && cyclone test.scm && ./test
