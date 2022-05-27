@@ -22,6 +22,8 @@
 #include <sys/stat.h>
 #include <float.h>
 
+static const int MAX_DEPTH = 512;
+
 static uint32_t Cyc_utf8_decode(uint32_t* state, uint32_t* codep, uint32_t byte);
 static int Cyc_utf8_count_code_points_and_bytes(uint8_t* s, char_type *codepoint, int *cpts, int *bytes);
 
@@ -783,7 +785,8 @@ void Cyc_rt_raise_msg(void *data, const char *err)
 
 /* END exception handler */
 
-int equal(object x, object y)
+object _equalp(object x, object y, int depth);
+static int equal(object x, object y, int depth)
 {
   if (x == y)
     return 1;
@@ -816,7 +819,7 @@ int equal(object x, object y)
       int i;
       if (x == y) return 1;
       for (i = 0; i < ((vector) x)->num_elements; i++) {
-        if (equalp(((vector) x)->elements[i], ((vector) y)->elements[i]) ==
+        if (_equalp(((vector) x)->elements[i], ((vector) y)->elements[i], depth + 1) ==
             boolean_f)
           return 0;
       }
@@ -1031,7 +1034,7 @@ object Cyc_display_va_list(void *data, object x, object opts)
   return Cyc_display(data, x, fp);
 }
 
-object Cyc_display(void *data, object x, FILE * port)
+object _Cyc_display(void *data, object x, FILE * port, int depth)
 {
   object tmp = NULL;
   object has_cycle = boolean_f;
@@ -1112,12 +1115,15 @@ object Cyc_display(void *data, object x, FILE * port)
     fprintf(port, "#(");
     if (has_cycle == boolean_t) {
       fprintf(port, "...");
+    } else if (depth == MAX_DEPTH) {
+      fprintf(port, "...");
+      goto done;
     } else {
       for (i = 0; i < ((vector) x)->num_elements; i++) {
         if (i > 0) {
           fprintf(port, " ");
         }
-        Cyc_display(data, ((vector) x)->elements[i], port);
+        _Cyc_display(data, ((vector) x)->elements[i], port, depth + 1);
       }
     }
     fprintf(port, ")");
@@ -1135,7 +1141,11 @@ object Cyc_display(void *data, object x, FILE * port)
   case pair_tag:
     has_cycle = Cyc_has_cycle(x);
     fprintf(port, "(");
-    Cyc_display(data, car(x), port);
+    if (depth == MAX_DEPTH) {
+      fprintf(port, "...");
+      goto done;
+    }
+    _Cyc_display(data, car(x), port, depth + 1);
 
     // Experimenting with displaying lambda defs in REPL
     // not good enough but this is a start. would probably need
@@ -1143,7 +1153,7 @@ object Cyc_display(void *data, object x, FILE * port)
     if (Cyc_is_symbol(car(x)) == boolean_t &&
         strncmp(((symbol) car(x))->desc, "procedure", 10) == 0) {
       fprintf(port, " ");
-      Cyc_display(data, cadr(x), port);
+      _Cyc_display(data, cadr(x), port, depth + 1);
       fprintf(port, " ...)");   /* skip body and env for now */
       break;
     }
@@ -1154,13 +1164,17 @@ object Cyc_display(void *data, object x, FILE * port)
           break;                /* arbitrary number, for now */
       }
       fprintf(port, " ");
-      Cyc_display(data, car(tmp), port);
+      if (depth == MAX_DEPTH) {
+        fprintf(port, "...");
+        goto done;
+      }
+      _Cyc_display(data, car(tmp), port, depth + 1);
     }
     if (has_cycle == boolean_t) {
       fprintf(port, " ...");
     } else if (tmp) {
       fprintf(port, " . ");
-      Cyc_display(data, tmp, port);
+      _Cyc_display(data, tmp, port, depth + 1);
     }
     fprintf(port, ")");
     break;
@@ -1200,7 +1214,13 @@ object Cyc_display(void *data, object x, FILE * port)
     fprintf(port, "Cyc_display: bad tag x=%d\n", ((closure) x)->tag);
     exit(1);
   }
+done:
   return quote_void;
+}
+
+object Cyc_display(void *data, object x, FILE * port) 
+{
+  return _Cyc_display(data, x, port, 0);
 }
 
 void dispatch_write_va(void *data, object clo, int argc, object *args)
@@ -1243,7 +1263,7 @@ object Cyc_write_va_list(void *data, object x, object opts)
   return Cyc_write(data, x, fp);
 }
 
-static object _Cyc_write(void *data, object x, FILE * port)
+static object _Cyc_write(void *data, object x, FILE * port, int depth)
 {
   object tmp = NULL;
   object has_cycle = boolean_f;
@@ -1307,12 +1327,15 @@ static object _Cyc_write(void *data, object x, FILE * port)
     fprintf(port, "#(");
     if (has_cycle == boolean_t) {
       fprintf(port, "...");
+    } else if (depth == MAX_DEPTH) {
+      fprintf(port, "...");
+      goto done;
     } else {
       for (i = 0; i < ((vector) x)->num_elements; i++) {
         if (i > 0) {
           fprintf(port, " ");
         }
-        _Cyc_write(data, ((vector) x)->elements[i], port);
+        _Cyc_write(data, ((vector) x)->elements[i], port, depth + 1);
       }
     }
     fprintf(port, ")");
@@ -1320,7 +1343,11 @@ static object _Cyc_write(void *data, object x, FILE * port)
   case pair_tag:
     has_cycle = Cyc_has_cycle(x);
     fprintf(port, "(");
-    _Cyc_write(data, car(x), port);
+    if (depth == MAX_DEPTH) {
+      fprintf(port, "...");
+      goto done;
+    }
+    _Cyc_write(data, car(x), port, depth + 1);
 
     // Experimenting with displaying lambda defs in REPL
     // not good enough but this is a start. would probably need
@@ -1328,7 +1355,7 @@ static object _Cyc_write(void *data, object x, FILE * port)
     if (Cyc_is_symbol(car(x)) == boolean_t &&
         strncmp(((symbol) car(x))->desc, "procedure", 10) == 0) {
       fprintf(port, " ");
-      _Cyc_write(data, cadr(x), port);
+      _Cyc_write(data, cadr(x), port, depth + 1);
       fprintf(port, " ...)");   /* skip body and env for now */
       break;
     }
@@ -1339,25 +1366,26 @@ static object _Cyc_write(void *data, object x, FILE * port)
           break;                /* arbitrary number, for now */
       }
       fprintf(port, " ");
-      _Cyc_write(data, car(tmp), port);
+      _Cyc_write(data, car(tmp), port, depth + 1);
     }
     if (has_cycle == boolean_t) {
       fprintf(port, " ...");
     } else if (tmp) {
       fprintf(port, " . ");
-      _Cyc_write(data, tmp, port);
+      _Cyc_write(data, tmp, port, depth + 1);
     }
     fprintf(port, ")");
     break;
   default:
     Cyc_display(data, x, port);
   }
+done:
   return quote_void;
 }
 
 object Cyc_write(void *data, object x, FILE * port)
 {
-  object y = _Cyc_write(data, x, port);
+  object y = _Cyc_write(data, x, port, 0);
   //fprintf(port, "\n");
   return y;
 }
@@ -1598,7 +1626,7 @@ object Cyc_heap_alloc_port(void *data, port_type *stack_p)
 /**
  * Check two objects for deep equality
  */
-object equalp(object x, object y)
+object _equalp(object x, object y, int depth)
 {
   int second_cycle = 0;
   object slow_lis = x, fast_lis = NULL;
@@ -1610,7 +1638,7 @@ object equalp(object x, object y)
   }
 
   for (;; x = cdr(x), y = cdr(y)) {
-    if (equal(x, y))
+    if (depth == MAX_DEPTH || equal(x, y, depth))
       return boolean_t;
     if (is_value_type(x) || is_value_type(y) ||
         (x == NULL) || (y == NULL) ||
@@ -1622,7 +1650,7 @@ object equalp(object x, object y)
         pcar_y == car(y)) {
       // do nothing, already equal
     } else {
-      if (boolean_f == equalp(car(x), car(y)))
+      if (boolean_f == _equalp(car(x), car(y), depth + 1))
         return boolean_f;
       pcar_x = car(x);
       pcar_y = car(y);
@@ -1654,6 +1682,11 @@ object equalp(object x, object y)
     slow_lis = cdr(slow_lis);
     fast_lis = cddr(fast_lis);
   }
+}
+
+object equalp(object x, object y)
+{
+  return _equalp(x, y, 0);
 }
 
 object Cyc_num_cmp_va_list(void *data, int argc,
