@@ -145,6 +145,7 @@ TESTS = $(basename $(TEST_SRC))
 
 .PHONY: test
 test: $(TESTS)
+	icyc -p "(begin (define-syntax foo (syntax-rules () ((foo) 123))) (foo))"
 
 $(TESTS) : %: %.scm
 	./cyclone -I libs -COPT '-Iinclude' -CLNK '-L.' $<
