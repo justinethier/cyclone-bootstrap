@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2022 Justin Ethier
- ** Version 0.34.0 
+ ** Version 0.35.0 
  **
  **/
 
@@ -8366,7 +8366,7 @@ static void __lambda_154(void *data, object self_731699, int argc, object *args)
  object r_731057 = args[0];
   if( (boolean_f != r_731057) ){ 
   
-make_utf8_string_with_len(c_732622, "assq", 4, 4);
+make_utf8_string_with_len(c_732622, "assv", 4, 4);
 return_direct_with_clo1(data,  ((closureN)self_731699)->elements[0], (((closure)  ((closureN)self_731699)->elements[0])->fn),  &c_732622);
 } else { 
   
@@ -8420,7 +8420,7 @@ static void __lambda_156(void *data, object self_731701, int argc, object *args)
  object r_731059 = args[0];
   if( (boolean_f != r_731059) ){ 
   
-make_utf8_string_with_len(c_732632, "memqp", 5, 5);
+make_utf8_string_with_len(c_732632, "memvp", 5, 5);
 return_direct_with_clo1(data,  ((closureN)self_731701)->elements[0], (((closure)  ((closureN)self_731701)->elements[0])->fn),  &c_732632);
 } else { 
   
