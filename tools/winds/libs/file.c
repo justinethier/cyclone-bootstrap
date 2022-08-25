@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2022 Justin Ethier
- ** Version 0.34.0 
+ ** Version 0.35.0 
  **
  **/
 
@@ -386,6 +386,7 @@ extern object __glo_random_91source_91make_91reals_srfi_27;
 extern object __glo_chain_libs_util;
 extern object __glo_get_91parameter_91value_libs_util;
 extern object __glo_get_91parameter_91all_91occurrences_libs_util;
+extern object __glo_levenshtein_libs_util;
 extern object __glo_remove_libs_util;
 extern object __glo__91_125string_libs_util;
 extern object __glo_string_91contains_libs_util;

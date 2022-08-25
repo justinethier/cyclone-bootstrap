@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2022 Justin Ethier
- ** Version 0.34.0 
+ ** Version 0.35.0 
  **
  **/
 
@@ -838,7 +838,7 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   __glo__85library_91installable_91extensions_85_libs_common = boolean_f; 
   __glo__85default_91lock_91file_85_libs_common = boolean_f; 
   __glo__85default_91code_91directory_85_libs_common = boolean_f; 
-  make_utf8_string_with_len(c_73105, "0.34.0", 6, 6); 
+  make_utf8_string_with_len(c_73105, "0.35.0", 6, 6); 
   __glo__85winds_91version_85_libs_common = &c_73105; 
 
   mclosure0(clo_73262, c_libscommon_inlinable_lambdas); make_pair(pair_73261, find_or_add_symbol("c_libscommon_inlinable_lambdas"), &clo_73262);
