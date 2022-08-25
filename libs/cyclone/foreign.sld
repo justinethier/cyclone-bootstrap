@@ -14,6 +14,7 @@
   (export
    opaque?
    opaque-null?
+   make-opaque
    
    c-code
    c-value
@@ -30,6 +31,11 @@
       "(void *data, int argc, closure _, object k, object p)"
       "Cyc_check_opaque(data, p);
        return_closcall1(data, k, make_boolean(opaque_ptr(p) == NULL));")
+
+    (define-c make-opaque
+      "(void *data, int argc, closure _, object k)"
+      "make_c_opaque(opq, NULL);
+       return_closcall1(data, k, &opq);")
 
     ;; (c-define-type name type (pack (unpack)))
     (define-syntax c-define-type
@@ -83,7 +89,6 @@
     ;;  - type - Data type of the Scheme object
     ;; Returns:
     ;;  - C code used to unbox the data
-                                        ;(define (scm->c code type)
     (define-syntax scm->c
       (er-macro-transformer
        (lambda (expr rename compare)
