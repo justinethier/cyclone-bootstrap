@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2022 Justin Ethier
- ** Version 0.34.0 
+ ** Version 0.35.0 
  **
  **/
 
@@ -740,6 +740,7 @@ extern object __glo_get_91program_91installation_91dir_libs_common;
 extern object __glo_chain_libs_util;
 extern object __glo_get_91parameter_91value_libs_util;
 extern object __glo_get_91parameter_91all_91occurrences_libs_util;
+extern object __glo_levenshtein_libs_util;
 extern object __glo_remove_srfi_1;
 extern object __glo__91_125string_libs_util;
 extern object __glo_string_91contains_libs_util;
@@ -778,6 +779,8 @@ extern object __glo_get_91local_91index_libs_index;
 extern object __glo_local_91index_91contains_127_libs_index;
 extern object __glo_register_91installed_91package_67_libs_index;
 extern object __glo_unregister_91installed_91package_67_libs_index;
+extern object __glo_get_91definition_91index_libs_index;
+extern object __glo_get_91library_91index_libs_index;
 extern object __glo__85default_91metadata_91file_85_libs_metadata;
 extern object __glo_make_91pkg_libs_metadata;
 extern object __glo_pkg_127_libs_metadata;
