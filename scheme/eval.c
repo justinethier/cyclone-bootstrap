@@ -651,6 +651,7 @@ extern object __glo_string_91replace_91all_scheme_cyclone_util;
 extern object __glo_take_scheme_cyclone_util;
 extern object __glo_drop_scheme_cyclone_util;
 extern object __glo_filter_scheme_cyclone_util;
+extern object __glo_current_91expand_91filepath_scheme_cyclone_util;
 extern object __glo_library_127_scheme_cyclone_libraries;
 extern object __glo_library_91exists_127_scheme_cyclone_libraries;
 extern object __glo_lib_117list_91_125import_91set_scheme_cyclone_libraries;

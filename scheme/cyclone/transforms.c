@@ -821,6 +821,7 @@ extern object __glo_string_91replace_91all_scheme_cyclone_util;
 extern object __glo_take_scheme_cyclone_util;
 extern object __glo_drop_scheme_cyclone_util;
 extern object __glo_filter_scheme_cyclone_util;
+extern object __glo_current_91expand_91filepath_scheme_cyclone_util;
 extern object __glo_make_91hash_91table_srfi_69;
 extern object __glo_hash_91table_127_srfi_69;
 extern object __glo_alist_91_125hash_91table_srfi_69;
