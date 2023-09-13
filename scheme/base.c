@@ -21286,8 +21286,8 @@ static void __lambda_1479(void *data, object _, int argc, object *args) {object 
       }  }
 static object __lambda_1478(void *data, object ptr, object z) { return_inexact_double_or_cplx_op_no_cps(data, ptr, (double), (double complex), z); }
 static void __lambda_1477(void *data, object _, int argc, object *args) {object k = args[0];object z = args[1]; return_inexact_double_or_cplx_op(data, k, (double), (double complex), z);  }
-static object __lambda_1476(void *data, object ptr, object z) { return_exact_op_no_cps(data, ptr, round, z); }
-static void __lambda_1475(void *data, object _, int argc, object *args) {object k = args[0];object z = args[1]; return_exact_op(data, k, round, z);  }
+static object __lambda_1476(void *data, object ptr, object z) { return Cyc_exact_no_cps(data, ptr, z); }
+static void __lambda_1475(void *data, object _, int argc, object *args) {object k = args[0];object z = args[1]; Cyc_exact(data, k, z);  }
 static object __lambda_1474(void *data, object ptr, object z) { return_double_op_no_cps(data, ptr, round, z); }
 static void __lambda_1473(void *data, object _, int argc, object *args) {object k = args[0];object z = args[1]; return_double_op(data, k, round, z);  }
 static object __lambda_1472(void *data, object ptr, object z) { return_double_op_no_cps(data, ptr, trunc, z); }
