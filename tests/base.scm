@@ -55,16 +55,16 @@
 ;       (/ 33333333333333333333333333333333333333333 3.0)
 ;       1.2e+40))
 ;)
-;
-;(test-group
-;  "truncate"
-;  (test -1 (truncate -1))
-;  (test -1.0 (truncate -1.0))
-;  (test -1.0 (truncate -1.1))
-;  (test -1.0 (truncate -1.1))
-;  (test +inf.0 (truncate +inf.0))
-;)
-;
+
+(test-group
+  "truncate"
+  (test -1 (truncate -1))
+  (test -1.0 (truncate -1.0))
+  (test -1.0 (truncate -1.1))
+  (test -1.0 (truncate -1.1))
+  (test +inf.0 (truncate +inf.0))
+)
+
 ;(test-group
 ;  "exact"
 ;  (test -1 (exact -1))
