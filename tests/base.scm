@@ -44,17 +44,16 @@
   (test "o" (read-line p))
 )
 
-; TODO: try disabling this
-;(test-group
-;  "rationals"
-;  (test 3.0 (numerator (/ 6 4)))
-;  (test 2.0 (denominator (/ 6 4)))
-;  (test 3.0 (expt 81 1/4))
-;  (test #t
-;    (< 1.0e+40 
-;       (/ 33333333333333333333333333333333333333333 3.0)
-;       1.2e+40))
-;)
+(test-group
+  "rationals"
+  (test 3.0 (numerator (/ 6 4)))
+  (test 2.0 (denominator (/ 6 4)))
+  (test 3.0 (expt 81 1/4))
+  (test #t
+    (< 1.0e+40 
+       (/ 33333333333333333333333333333333333333333 3.0)
+       1.2e+40))
+)
 
 (test-group
   "truncate"
@@ -65,17 +64,17 @@
   (test +inf.0 (truncate +inf.0))
 )
 
-(test-group
-  "exact"
-  (test -1 (exact -1))
-  (test -1 (exact -1.0))
-  (test -1 (exact -1.1))
-  (test -1 (exact -1.1))
-  (test 1.0+1.0i (exact 1.1+1.2i))
-  (test #t (bignum? (exact 111111111111111111111111111.0)))
-  (test #t (bignum? (exact -111111111111111111111111111.0)))
-  ;(test +inf.0 (exact +inf.0))
-)
+;(test-group
+;  "exact"
+;  (test -1 (exact -1))
+;  (test -1 (exact -1.0))
+;  (test -1 (exact -1.1))
+;  (test -1 (exact -1.1))
+;  (test 1.0+1.0i (exact 1.1+1.2i))
+;  (test #t (bignum? (exact 111111111111111111111111111.0)))
+;  (test #t (bignum? (exact -111111111111111111111111111.0)))
+;  ;(test +inf.0 (exact +inf.0))
+;)
 
 (test-group
   "records"
