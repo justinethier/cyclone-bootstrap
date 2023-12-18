@@ -13,6 +13,10 @@
   (cyclone test))
 
 
+(write (list 'JAE 'debug 
+  (exact 111111111111111111111111111.0)))
+(newline)
+
 (define vec #(1 2))
 
 (test-group
@@ -31,19 +35,22 @@
   (test '() (make-list -2))
 )
 
-(test-group
-  "I/O"
-  (define p (open-input-string "one\ntwo\n"))
-  (test #\o (read-char p))
-  (test "ne" (read-line p))
-  (test "two" (read-line p))
-  (test (eof-object) (read-line p))
-  (define p (open-input-string "one\ntwo\n"))
-  (test "one" (read-line p))
-  (test #\t (read-char p))
-  (test #\w (read-char p))
-  (test "o" (read-line p))
-)
+(cond-expand
+  (memory streams
+    (test-group
+      "I/O"
+      (define p (open-input-string "one\ntwo\n"))
+      (test #\o (read-char p))
+      (test "ne" (read-line p))
+      (test "two" (read-line p))
+      (test (eof-object) (read-line p))
+      (define p (open-input-string "one\ntwo\n"))
+      (test "one" (read-line p))
+      (test #\t (read-char p))
+      (test #\w (read-char p))
+      (test "o" (read-line p))
+    )
+))
 
 (test-group
   "rationals"
@@ -76,10 +83,6 @@
   ;(test #t (bignum? (exact -111111111111111111111111111.0)))
   ;(test +inf.0 (exact +inf.0))
 )
-
-(write (list 'debug 
-  (exact 111111111111111111111111111.0)))
-(newline)
 
 (test-group
   "records"
