@@ -9,13 +9,7 @@
 
 (import 
   (scheme base)
-  (scheme write)
   (cyclone test))
-
-
-(write (list 'JAE 'debug 
-  (exact 111111111111111111111111111.0)))
-(newline)
 
 (define vec #(1 2))
 
