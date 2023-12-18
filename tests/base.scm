@@ -9,6 +9,7 @@
 
 (import 
   (scheme base)
+  (scheme write)
   (cyclone test))
 
 
@@ -75,6 +76,10 @@
   ;(test #t (bignum? (exact -111111111111111111111111111.0)))
   ;(test +inf.0 (exact +inf.0))
 )
+
+(write (list 'debug 
+  (exact 111111111111111111111111111.0)))
+(newline)
 
 (test-group
   "records"
