@@ -233,10 +233,9 @@
        (cond
          ((Cyc-opaque-unsafe-string? token)
           (let ((rv (Cyc-opaque-unsafe-string->number token)))
-            (cond
-              (rv rv)
-              (else
-                (error "Invalid numeric syntax" (Cyc-opaque->string token))))))
+            (if rv
+                rv
+                (error "Invalid numeric syntax" (Cyc-opaque->string token)))))
          ;; Open paren, start read loop
          ((Cyc-opaque-unsafe-eq? token #\()
           (let ((line-num (get-line-num fp))
