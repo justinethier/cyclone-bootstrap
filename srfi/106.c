@@ -1473,14 +1473,14 @@ static void __lambda_131(void *data, object _, int argc, object *args) {object k
 #ifdef AI_ALL
       return_closcall1(data, k, obj_int2obj(AI_ALL)); 
 #else
-      Cyc_rt_raise_msg(data, "AI_ALL is not available on this platform");
+      return_closcall1(data, k, obj_int2obj(0)); 
 #endif
        }
 static void __lambda_130(void *data, object _, int argc, object *args) {object k = args[0]; 
 #ifdef AI_V4MAPPED
       return_closcall1(data, k, obj_int2obj(AI_V4MAPPED)); 
 #else
-      Cyc_rt_raise_msg(data, "AI_V4MAPPED is not available on this platform");
+      return_closcall1(data, k, obj_int2obj(0)); 
 #endif
        }
 static void __lambda_129(void *data, object _, int argc, object *args) {object k = args[0];return_closcall1(data, k, obj_int2obj(AI_NUMERICHOST));  }
