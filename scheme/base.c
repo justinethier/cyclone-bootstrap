@@ -541,8 +541,8 @@ object __glo_exact_127_scheme_base = NULL;
 object __glo_exact_127_191_191inline_191_191_scheme_base = NULL;
 object __glo_exact_91integer_127_scheme_base = NULL;
 object __glo_exact_91integer_127_191_191inline_191_191_scheme_base = NULL;
-object __glo_sqrt_scheme_base = NULL;
-object __glo_sqrt_191_191inline_191_191_scheme_base = NULL;
+object __glo__191sqrt_scheme_base = NULL;
+object __glo__191sqrt_191_191inline_191_191_scheme_base = NULL;
 object __glo_exact_91integer_91sqrt_scheme_base = NULL;
 object __glo_bignum_91sqrt_scheme_base = NULL;
 object __glo_bignum_127_scheme_base = NULL;
@@ -21177,7 +21177,7 @@ complex_num_type local_7321752;
 return_direct_with_clo1(data,  ((closureN)self_7313771)->elements[1], (((closure)  ((closureN)self_7313771)->elements[1])->fn),  ((inline_function_type)
                    ((closure)__glo_exact_191_191inline_191_191_scheme_base)->fn)(data,&local_7321746, ((inline_function_type)
                    ((closure)__glo_truncate_191_191inline_191_191_scheme_base)->fn)(data,&local_7321749, ((inline_function_type)
-                   ((closure)__glo_sqrt_191_191inline_191_191_scheme_base)->fn)(data,&local_7321752, ((closureN)self_7313771)->elements[0]))));}
+                   ((closure)__glo__191sqrt_191_191inline_191_191_scheme_base)->fn)(data,&local_7321752, ((closureN)self_7313771)->elements[0]))));}
 ;; 
 }
 
@@ -40924,7 +40924,7 @@ make_pair(pair_7328873, find_or_add_symbol("fixnum?"), find_or_add_symbol("fixnu
 make_pair(pair_7328874, find_or_add_symbol("complex?"), find_or_add_symbol("complex?__inline__"));
 make_pair(pair_7328875, find_or_add_symbol("exact?"), find_or_add_symbol("exact?__inline__"));
 make_pair(pair_7328876, find_or_add_symbol("exact-integer?"), find_or_add_symbol("exact-integer?__inline__"));
-make_pair(pair_7328877, find_or_add_symbol("sqrt"), find_or_add_symbol("sqrt__inline__"));
+make_pair(pair_7328877, find_or_add_symbol("_sqrt"), find_or_add_symbol("_sqrt__inline__"));
 make_pair(pair_7328878, find_or_add_symbol("inexact"), find_or_add_symbol("inexact__inline__"));
 make_pair(pair_7328879, find_or_add_symbol("exact"), find_or_add_symbol("exact__inline__"));
 make_pair(pair_7328880, find_or_add_symbol("round"), find_or_add_symbol("round__inline__"));
@@ -41170,8 +41170,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   add_global("__glo_exact_127_191_191inline_191_191_scheme_base", (object *) &__glo_exact_127_191_191inline_191_191_scheme_base);
   add_global("__glo_exact_91integer_127_scheme_base", (object *) &__glo_exact_91integer_127_scheme_base);
   add_global("__glo_exact_91integer_127_191_191inline_191_191_scheme_base", (object *) &__glo_exact_91integer_127_191_191inline_191_191_scheme_base);
-  add_global("__glo_sqrt_scheme_base", (object *) &__glo_sqrt_scheme_base);
-  add_global("__glo_sqrt_191_191inline_191_191_scheme_base", (object *) &__glo_sqrt_191_191inline_191_191_scheme_base);
+  add_global("__glo__191sqrt_scheme_base", (object *) &__glo__191sqrt_scheme_base);
+  add_global("__glo__191sqrt_191_191inline_191_191_scheme_base", (object *) &__glo__191sqrt_191_191inline_191_191_scheme_base);
   add_global("__glo_exact_91integer_91sqrt_scheme_base", (object *) &__glo_exact_91integer_91sqrt_scheme_base);
   add_global("__glo_bignum_91sqrt_scheme_base", (object *) &__glo_bignum_91sqrt_scheme_base);
   add_global("__glo_bignum_127_scheme_base", (object *) &__glo_bignum_127_scheme_base);
@@ -41478,9 +41478,9 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   mclosure0(c_7321771, (function_type)__lambda_1487);c_7321771.num_args = -1; 
   __glo_exact_91integer_127_191_191inline_191_191_scheme_base = &c_7321771; 
   mclosure0(c_7321770, (function_type)__lambda_1484);c_7321770.num_args = 1; 
-  __glo_sqrt_scheme_base = &c_7321770; 
+  __glo__191sqrt_scheme_base = &c_7321770; 
   mclosure0(c_7321769, (function_type)__lambda_1485);c_7321769.num_args = -1; 
-  __glo_sqrt_191_191inline_191_191_scheme_base = &c_7321769; 
+  __glo__191sqrt_191_191inline_191_191_scheme_base = &c_7321769; 
   mclosure0(c_7321711, (function_type)__lambda_774);c_7321711.num_args = 1; 
   __glo_exact_91integer_91sqrt_scheme_base = &c_7321711; 
   mclosure0(c_7321710, (function_type)__lambda_1483);c_7321710.num_args = 1; 
@@ -41903,8 +41903,8 @@ Cyc_set_globals_changed((gc_thread_data *)data);
   make_cvar(cvar_7329066, (object *)&__glo_exact_127_191_191inline_191_191_scheme_base);make_pair(pair_7329067, find_or_add_symbol("exact?__inline__"), &cvar_7329066);
   make_cvar(cvar_7329068, (object *)&__glo_exact_91integer_127_scheme_base);make_pair(pair_7329069, find_or_add_symbol("exact-integer?"), &cvar_7329068);
   make_cvar(cvar_7329070, (object *)&__glo_exact_91integer_127_191_191inline_191_191_scheme_base);make_pair(pair_7329071, find_or_add_symbol("exact-integer?__inline__"), &cvar_7329070);
-  make_cvar(cvar_7329072, (object *)&__glo_sqrt_scheme_base);make_pair(pair_7329073, find_or_add_symbol("sqrt"), &cvar_7329072);
-  make_cvar(cvar_7329074, (object *)&__glo_sqrt_191_191inline_191_191_scheme_base);make_pair(pair_7329075, find_or_add_symbol("sqrt__inline__"), &cvar_7329074);
+  make_cvar(cvar_7329072, (object *)&__glo__191sqrt_scheme_base);make_pair(pair_7329073, find_or_add_symbol("_sqrt"), &cvar_7329072);
+  make_cvar(cvar_7329074, (object *)&__glo__191sqrt_191_191inline_191_191_scheme_base);make_pair(pair_7329075, find_or_add_symbol("_sqrt__inline__"), &cvar_7329074);
   make_cvar(cvar_7329076, (object *)&__glo_exact_91integer_91sqrt_scheme_base);make_pair(pair_7329077, find_or_add_symbol("exact-integer-sqrt"), &cvar_7329076);
   make_cvar(cvar_7329078, (object *)&__glo_bignum_91sqrt_scheme_base);make_pair(pair_7329079, find_or_add_symbol("bignum-sqrt"), &cvar_7329078);
   make_cvar(cvar_7329080, (object *)&__glo_bignum_127_scheme_base);make_pair(pair_7329081, find_or_add_symbol("bignum?"), &cvar_7329080);
