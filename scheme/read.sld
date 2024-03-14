@@ -294,7 +294,10 @@
                                    (substring t 0 end)
                                    (substring t end (- len 1))))
                      (real (string->number real-str))
-                     (imag (string->number imag-str))
+                     (imag (cond
+                             ((equal? "+" imag-str) 1)
+                             ((equal? "-" imag-str) -1)
+                             (else (string->number imag-str))))
                     )
                 (Cyc-make-rect real imag)))
              (else
