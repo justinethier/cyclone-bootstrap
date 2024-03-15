@@ -406,28 +406,30 @@ object k_73116 = args[0];
 return_direct_with_clo1(data,  k_73116, (((closure)  k_73116)->fn),  obj_int2obj(0));; 
 }
 
-static object __lambda_42(void *data, object ptr, object z) { double complex unboxed;
+static object __lambda_42(void *data, object ptr, object z) { double complex result;
      Cyc_check_num(data, z);
      if (obj_is_int(z)) {
-       unboxed = csqrt(obj_obj2int(z));
+       result = csqrt(obj_obj2int(z));
      } else if (type_of(z) == integer_tag) {
-       unboxed = csqrt(((integer_type *)z)->value);
+       result = csqrt(((integer_type *)z)->value);
      } else if (type_of(z) == bignum_tag) {
-       unboxed = csqrt(mp_get_double(&bignum_value(z)));
+       result = csqrt(mp_get_double(&bignum_value(z)));
      } else if (type_of(z) == complex_num_tag) {
-       unboxed = csqrt(complex_num_value(z));
-       assign_complex_num(ptr, unboxed);
-       return ptr;
+       result = csqrt(complex_num_value(z));
      } else {
-       unboxed = csqrt(((double_type *)z)->value);
+       result = csqrt(((double_type *)z)->value);
      }
   
-     if (cimag(unboxed) == 0.0) {
-       assign_double(ptr, creal(unboxed));
+     if (cimag(result) == 0.0) {
+       if (obj_is_int(z) && creal(result) == round(creal(result))) {
+         return obj_int2obj(creal(result));
+       }
+       assign_double(ptr, creal(result));
      } else {
-       assign_double(ptr, unboxed);
+       assign_complex_num(ptr, result);
      }
-     return ptr;  }
+     return ptr;
+      }
 static void __lambda_41(void *data, object _, int argc, object *args) {object k = args[0];object z = args[1]; double complex result;
      Cyc_check_num(data, z);
      if (obj_is_int(z)) {
