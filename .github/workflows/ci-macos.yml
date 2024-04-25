@@ -10,7 +10,7 @@ jobs:
     steps:
     - uses: actions/checkout@v1
     - name: Install ck
-      run:  brew update; brew install -v concurrencykit@0.7.0;
+      run:  brew update; brew install -v concurrencykit;
     - name: make
       run: make
     - name: make install
