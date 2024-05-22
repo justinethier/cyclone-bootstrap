@@ -295,8 +295,8 @@
                                    (substring t end (- len 1))))
                      (real (string->number real-str))
                      (imag (cond
-                             ((equal? "+" imag-str) 1)
-                             ((equal? "-" imag-str) -1)
+                             ((equal? "+" imag-str) 1)  ;; Special case, +i w/no number
+                             ((equal? "-" imag-str) -1) ;; Special case, -i
                              (else (string->number imag-str))))
                     )
                 (Cyc-make-rect real imag)))
