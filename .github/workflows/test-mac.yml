@@ -12,6 +12,6 @@ jobs:
     - name: Install ck
       run:  brew update; brew install -v concurrencykit;
     - name: make
-      run: make PREFIX=tmp ; make PREFIX=tmp install
+      run: find / 2>/dev/null | grep ck_pr; make PREFIX=tmp ; make PREFIX=tmp install
     - name: test
       run: ./cyclone -d unit-tests.scm ; make PREFIX=tmp test
