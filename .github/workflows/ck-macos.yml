@@ -1,0 +1,15 @@
+name: MacOS TEST
+
+on: [push]
+
+jobs:
+  build:
+
+    runs-on: macos-latest
+    
+    steps:
+    - uses: actions/checkout@v1
+    - name: Install ck
+      run:  brew update; brew install -v concurrencykit;
+    - name: make runtime.o
+      run: make runtime.o
