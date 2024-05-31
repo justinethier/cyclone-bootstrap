@@ -13,5 +13,7 @@ jobs:
       run:  brew update; brew install -v concurrencykit;
     - name: find ck_pr
       run: find / 2>/dev/null | grep ck_pr
+    - name: check PATH
+      run: echo $PATH
     - name: make runtime.o
       run: make runtime.o
