@@ -15,5 +15,7 @@ jobs:
       run: find / 2>/dev/null | grep ck_pr
     - name: check PATH
       run: echo $PATH
+    - name: check gcc
+      run: which gcc
     - name: make runtime.o
       run: make runtime.o
