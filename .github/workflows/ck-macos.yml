@@ -11,5 +11,7 @@ jobs:
     - uses: actions/checkout@v1
     - name: Install ck
       run:  brew update; brew install -v concurrencykit;
+    - name: find ck_pr
+      run: find / 2>/dev/null | grep ck_pr
     - name: make runtime.o
       run: make runtime.o
