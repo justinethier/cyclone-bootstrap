@@ -16,6 +16,6 @@ jobs:
     - name: check PATH
       run: echo $PATH
     - name: check gcc
-      run: which gcc ; ls -l /opt/homebrew/bin ; sudo ln -s /opt/homebrew/bin/gcc-11 /opt/homebrew/bin/gcc
+      run: ls -l /usr ; ls -l /opt/homebrew/bin ; sudo ln -s /opt/homebrew/bin/gcc-11 /opt/homebrew/bin/gcc ; which gcc
     - name: make runtime.o
       run: make runtime.o
