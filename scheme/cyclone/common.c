@@ -196,7 +196,7 @@ c_7343.elements = (object *)e_7375;
 c_7343.elements[0] = ((closureN)self_7328)->elements[0];
 
 
-make_utf8_string_with_len(c_7379, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2024 Justin Ethier\n       @@     #@     Version ", 293, 293);
+make_utf8_string_with_len(c_7379, "\n              :@ \n            @@@  \n          @@@@:  \n        `@@@@@+  \n       .@@@+@@@ \n       @@     @@     Cyclone Scheme->C compiler\n      ,@             http://justinethier.github.io/cyclone/\n      '@        \n      .@             (c) 2014-2025 Justin Ethier\n       @@     #@     Version ", 293, 293);
 
 make_utf8_string_with_len(c_7380, "\n       `@@@#@@@.\n        #@@@@@   \n        +@@@+    \n        @@#      \n      `@.  \n     \n", 90, 90);
 
