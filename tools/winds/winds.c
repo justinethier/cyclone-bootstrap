@@ -3,7 +3,7 @@
  ** http://justinethier.github.io/cyclone/
  **
  ** (c) 2014-2024 Justin Ethier
- ** Version 0.36.0 
+ ** Version 0.37.0 
  **
  **/
 
@@ -801,7 +801,7 @@ extern object __glo_truncate_191_191inline_191_191_scheme_base;
 extern object __glo_round_191_191inline_191_191_scheme_base;
 extern object __glo_exact_191_191inline_191_191_scheme_base;
 extern object __glo_inexact_191_191inline_191_191_scheme_base;
-extern object __glo_sqrt_191_191inline_191_191_scheme_base;
+extern object __glo__191sqrt_191_191inline_191_191_scheme_base;
 extern object __glo_exact_91integer_127_191_191inline_191_191_scheme_base;
 extern object __glo_exact_127_191_191inline_191_191_scheme_base;
 extern object __glo_complex_127_191_191inline_191_191_scheme_base;
@@ -6260,7 +6260,7 @@ static void c_entry_pt_first_lambda(void *data, object clo, int argc, object *ar
     
 mclosure0(c_7355508, (function_type)__lambda_239);c_7355508.num_args = 1;
 
-make_utf8_string_with_len(c_7355519, "\n  Winds - a package manager for Cyclone Scheme \n  https://github.com/cyclone-scheme/winds \n  (c) 2022-2024 Cyclone Team \n  Version ~a~%", 136, 136);
+make_utf8_string_with_len(c_7355519, "\n  Winds - a package manager for Cyclone Scheme \n  https://github.com/cyclone-scheme/winds \n  (c) 2022-2025 Cyclone Team \n  Version ~a~%", 136, 136);
 return_direct_with_clo3(data,  __glo_format_srfi_28, (((closure)  __glo_format_srfi_28)->fn),  &c_7355508, &c_7355519, __glo__85winds_91version_85_libs_common);
 ;
 }
