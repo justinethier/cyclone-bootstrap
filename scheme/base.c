@@ -24983,7 +24983,8 @@ static void __lambda_1464(void *data, object _, int argc, object *args) {object 
         }
         num_cp = obj_obj2int(count);
         len = num_cp * buflen;
-        if (len >= MAX_STACK_OBJ) {
+        int stack_left = Cyc_stack_remaining(data);
+        if (len >= stack_left) {
           int heap_grown;
           s = gc_alloc(((gc_thread_data *)data)->heap, 
                        sizeof(string_type) + len + 1,

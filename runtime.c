@@ -3184,7 +3184,7 @@ object Cyc_make_vector(void *data, object cont, int argc, object len, ...)
   ulen = unbox_number(len);
   element_vec_size = sizeof(object) * ulen;
 
-  if (element_vec_size >= MAX_STACK_OBJ) {
+  if (element_vec_size >= Cyc_stack_remaining(data)) {
     // If vector is too large to allocate on the stack, allocate on heap
     //
     // TODO: mark this thread as potentially blocking before doing
@@ -3243,7 +3243,7 @@ object Cyc_make_bytevector(void *data, object cont, int argc, object len, ...)
   Cyc_check_num(data, len);
   length = unbox_number(len);
 
-  if (length >= MAX_STACK_OBJ) {
+  if (length >= Cyc_stack_remaining(data)) {
     int heap_grown;
     bv = gc_alloc(((gc_thread_data *) data)->heap, sizeof(bytevector_type) + length, boolean_f, // OK to populate manually over here
                   (gc_thread_data *) data, &heap_grown);
@@ -3411,7 +3411,7 @@ object Cyc_bytevector_copy(void *data, object cont, object bv, object start,
     Cyc_rt_raise2(data, "bytevector-copy - invalid end", end);
   }
 
-  if (len >= MAX_STACK_OBJ) {
+  if (len >= Cyc_stack_remaining(data)) {
     int heap_grown;
     object result = gc_alloc(((gc_thread_data *) data)->heap,
                              sizeof(bytevector_type) + len,
@@ -3495,7 +3495,7 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
   }
   // Fast path
   if (string_num_cp(str) == string_len(str)) {
-    if (len >= MAX_STACK_OBJ) {
+    if (len >= Cyc_stack_remaining(data)) {
       int heap_grown;
       object bv = gc_alloc(((gc_thread_data *) data)->heap,
                            sizeof(bytevector_type) + len,
@@ -3540,7 +3540,7 @@ object Cyc_string2utf8(void *data, object cont, object str, object start,
       }
     }
     len = end_i - start_i;
-    if (len >= MAX_STACK_OBJ) {
+    if (len >= Cyc_stack_remaining(data)) {
       int heap_grown;
       object bv = gc_alloc(((gc_thread_data *) data)->heap,
                            sizeof(bytevector_type) + len,
@@ -3629,7 +3629,7 @@ object Cyc_list2vector(void *data, object cont, object l)
   len_obj = Cyc_length(data, l);
   len = obj_obj2int(len_obj);
   element_vec_size = sizeof(object) * len;
-  if (element_vec_size >= MAX_STACK_OBJ) {
+  if (element_vec_size >= Cyc_stack_remaining(data)) {
     int heap_grown;
     v = gc_alloc(((gc_thread_data *) data)->heap, sizeof(vector_type) + element_vec_size, boolean_f,    // OK to populate manually over here
                  (gc_thread_data *) data, &heap_grown);
@@ -8929,4 +8929,12 @@ object Cyc_exact_no_cps(void *data, object ptr, object z)
     i = (int)round(((double_type *) z)->value);
   }
   return obj_int2obj(i);
+}
+
+int Cyc_stack_remaining(gc_thread_data *td) 
+{
+  int i;
+  int stack_remaining = stack_delta(&i, td->stack_limit);
+  //printf("JAE DEBUG stack remaining = %ld\n", stack_remaining);
+  return stack_remaining;
 }

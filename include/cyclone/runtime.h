@@ -47,6 +47,8 @@ extern const object Cyc_RECORD_MARKER;
  */
 void GC(void *, closure, object *, int);
 
+int Cyc_stack_remaining(gc_thread_data *td);
+
 /**
  * \ingroup gc_major
  */
